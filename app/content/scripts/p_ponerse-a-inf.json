@@ -20,7 +20,7 @@
   },
   {
    "es": "Es hora de ponernos a trabajar.",
-   "en": "It's time for us to get to work."
+   "en": "It's time for us to get down to work."
   },
   {
    "es": "Hernando va a ponerse a cantar.",
@@ -90,8 +90,8 @@
   {
    "es": "Vamos a ponernos a limpiar el café.",
    "options": [
-    "They're going to get cleaning the café.",
-    "We're going to get cleaning the café.",
+    "They're going to get down to cleaning the café.",
+    "We're going to get down to cleaning the café.",
     "We're going to clean up for the café."
    ],
    "answer": 1
@@ -108,7 +108,7 @@
    "prompt": "Type in Spanish: I don't want to start crying.",
    "answer": "No quiero ponerme a llorar.",
    "accept": [],
-   "why": "Start crying, with a sudden feel: *ponerme a llorar*."
+   "why": "A sudden start is *ponerme a* plus the plain verb, *llorar*."
   },
   {
    "prompt": "Type in Spanish: Hernando is going to start singing.",
@@ -140,6 +140,11 @@
    "wrong": "Voy a ponerme estudiar.",
    "right": "Voy a ponerme a estudiar.",
    "why": "Almost. *Ponerse* always takes *a* before the next verb."
+  },
+  {
+   "wrong": "No quiero ponerme a llorando.",
+   "right": "No quiero ponerme a llorar.",
+   "why": "English says start crying, but after *a* Spanish wants the plain verb: *llorar*."
   },
   {
    "wrong": "Hernando va a ponerme a cantar.",

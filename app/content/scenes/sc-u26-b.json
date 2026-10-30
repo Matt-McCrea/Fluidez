@@ -7,8 +7,8 @@
   "turns": [
     {
       "id": "t1",
-      "npc": "Tomás, ¡son las ocho y media! ¿Dónde estabas? Tienes el pelo lleno de agua.",
-      "npcEn": "Tomás, it's half past eight! Where were you? Your hair is full of water.",
+      "npc": "Tomás, ¡son las ocho y media! ¿Dónde estabas? Tienes el pelo mojado.",
+      "npcEn": "Tomás, it's half past eight! Where were you? Your hair is wet.",
       "intent": "Ask her if she knows what happened to you this morning.",
       "accept": [
         "¿Sabes qué me pasó esta mañana?",
@@ -105,9 +105,9 @@
       "npcEn": "Tomás, today is Sunday. The café doesn't open on Sundays.",
       "intent": "Say how embarrassing! So anyway, you came for nothing.",
       "accept": [
-        "¡Qué oso! Total, que vine por nada.",
-        "¡Qué oso! Total, que vine al café por nada.",
-        "¡No me digas! ¡Qué oso! Total, que vine por nada."
+        "¡Qué oso! Total, que vine para nada.",
+        "¡Qué oso! Total, que vine al café para nada.",
+        "¡No me digas! ¡Qué oso! Total, que vine para nada."
       ],
       "require": [
         {
@@ -152,6 +152,7 @@
     "c:claro-listo",
     "c:gracias-de-nada",
     "c:no-me-digas",
+    "c:para-nada",
     "c:por-favor",
     "c:porque",
     "c:que-de-malas",
@@ -172,7 +173,6 @@
     "g:imperfect-states",
     "g:negation-words",
     "g:perfecto-experience",
-    "g:por-para-1",
     "g:present-ar",
     "g:present-er-ir",
     "g:preterite-ar",
@@ -186,7 +186,6 @@
     "g:superlatives",
     "l:abrir",
     "l:acabar",
-    "l:agua",
     "l:bus",
     "l:café",
     "l:caminar",
@@ -204,11 +203,11 @@
     "l:hacer",
     "l:hoy",
     "l:llegar",
-    "l:lleno",
     "l:llover",
     "l:lluvia",
     "l:mala",
     "l:mañana",
+    "l:mojado",
     "l:oso",
     "l:pan",
     "l:pasar",
@@ -231,6 +230,7 @@
     "p:demonstratives-basic",
     "p:es-tiene-lleva",
     "p:horas-y-horas",
+    "p:humedo-mojado",
     "p:me-te-nos-objects",
     "p:para-inf",
     "p:por-la-manana",

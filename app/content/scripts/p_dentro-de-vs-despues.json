@@ -2,8 +2,8 @@
  "node": "p:dentro-de-vs-despues",
  "hook": {
   "line": "English says in two days for the future, and two days later for a story. Spanish keeps the two apart too, and the story version is what Hernando needs for 1983.",
-  "es": "Al día siguiente, el senador volvió con la plata.",
-  "en": "The next day, the senator came back with the money."
+  "es": "Unos días después, el senador volvió con la plata.",
+  "en": "A few days later, the senator came back with the money."
  },
  "examples": [
   {
@@ -104,7 +104,9 @@
   {
    "prompt": "Choose *dentro de* or *después* and type the whole sentence (I'll call you in a while): Te llamo ___ un rato.",
    "answer": "Te llamo dentro de un rato.",
-   "accept": ["Te llamo en un rato."],
+   "accept": [
+    "Te llamo en un rato."
+   ],
    "why": "Counting from now into the future: *dentro de*."
   },
   {
@@ -116,19 +118,25 @@
   {
    "prompt": "Type in Spanish: I'll be back in an hour.",
    "answer": "Vuelvo dentro de una hora.",
-   "accept": ["Vuelvo en una hora."],
+   "accept": [
+    "Vuelvo en una hora."
+   ],
    "why": "From now, forward: *dentro de una hora*."
   },
   {
    "prompt": "Type in Spanish: The next day, everything changed.",
    "answer": "Al día siguiente, todo cambió.",
-   "accept": ["Al día siguiente todo cambió."],
+   "accept": [
+    "Al día siguiente todo cambió."
+   ],
    "why": "In a story, the next day is *al día siguiente*, not *mañana*."
   },
   {
    "prompt": "Type in Spanish: Rosa went to Medellín and came back three months later.",
    "answer": "Rosa se fue a Medellín y tres meses después volvió.",
-   "accept": ["Rosa se fue a Medellín y volvió tres meses después."],
+   "accept": [
+    "Rosa se fue a Medellín y volvió tres meses después."
+   ],
    "why": "Three months later, counted from when she left: *tres meses después*."
   },
   {
@@ -140,7 +148,9 @@
   {
    "prompt": "Move it into a story: *La semana pasada Rosa estaba enferma.*",
    "answer": "La semana anterior, Rosa estaba enferma.",
-   "accept": ["La semana anterior Rosa estaba enferma."],
+   "accept": [
+    "La semana anterior Rosa estaba enferma."
+   ],
    "why": "In a story, last week is *la semana anterior*: the week before that moment."
   }
  ],

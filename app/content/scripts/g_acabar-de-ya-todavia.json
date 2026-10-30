@@ -151,7 +151,7 @@
       "why": "Not yet is *todavía no*; *ya no* would mean not any more."
     },
     {
-      "prompt": "We've just eaten.",
+      "prompt": "Type in Spanish: We've just eaten.",
       "answer": "Acabamos de comer.",
       "accept": [],
       "why": "Just happened: *acabamos de* plus the infinitive *comer*."
@@ -165,7 +165,7 @@
       "why": "In Colombia the everyday way is *ya* plus the preterite: *comiste*."
     },
     {
-      "prompt": "Hernando doesn't drive a taxi any more.",
+      "prompt": "Type in Spanish: Hernando doesn't drive a taxi any more.",
       "answer": "Hernando ya no maneja taxi.",
       "accept": [
         "Hernando ya no maneja un taxi."
@@ -187,8 +187,8 @@
       "why": "For not yet, Spanish likes *todavía no he* plus the participle: *pagado*."
     },
     {
-      "prompt": "Make it still instead of not any more: *Vale ya no trabaja en Medellín.* (Vale still works in Medellín.)",
-      "answer": "Vale todavía trabaja en Medellín.",
+      "prompt": "Make it still instead of not any more: *Simón ya no habla mucho.* (Simón still talks a lot.)",
+      "answer": "Simón todavía habla mucho.",
       "accept": [],
       "why": "Still is plain *todavía*, no *no*, before the present."
     }

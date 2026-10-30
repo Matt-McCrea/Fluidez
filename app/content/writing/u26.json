@@ -47,7 +47,7 @@
   {
     "id": "w-u26-02",
     "unit": "u26",
-    "prompt": "Tell Mariana, a friend your age, what your landlady said this morning: that the apartment was too small for three people and that she was going to call you tomorrow.",
+    "prompt": "Tell Mariana, a friend your age, what your landlady said this morning: that the apartment was too small for three people and that she was going to call you later.",
     "minWords": 25,
     "maxWords": 60,
     "constraints": [
@@ -68,40 +68,37 @@
         "n": 3
       }
     ],
-    "model": "Mariana, hablé con la señora esta mañana. Me dijo que el apartamento era muy pequeño. También me dijo que estaba cansada y ocupada. Ahora no sé qué hacer.",
+    "model": "Mariana, hablé con la señora esta mañana. Me dijo que el apartamento era muy pequeño para tres personas. También me dijo que me iba a llamar más tarde. ¡Qué problema!",
     "focus": "g:reported-past-basic",
     "requires": [
       "c:era",
-      "c:no-se",
-      "g:adjective-agreement",
-      "g:estar-location-states",
       "g:gender-articles",
+      "g:imperfect-habitual",
       "g:imperfect-states",
-      "g:indirect-questions",
+      "g:ir-a-plans",
       "g:pret-vs-imperfect",
       "g:preterite-ar",
       "g:preterite-irregular-strong",
       "g:reported-past-basic",
       "g:ser-identity",
       "g:that-clauses",
-      "g:yo-irregular",
-      "l:ahora",
       "l:apartamento",
-      "l:cansado",
       "l:decir",
-      "l:estar",
       "l:hablar",
-      "l:hacer",
+      "l:irse",
+      "l:llamar",
       "l:mañana",
-      "l:ocupado",
       "l:pequeño",
+      "l:persona",
+      "l:problema",
       "l:qué",
-      "l:saber",
       "l:ser",
       "l:señora",
+      "l:tarde",
       "p:demonstratives-basic",
+      "p:exclamations-basic",
       "p:me-te-nos-objects",
-      "p:no-se-que-hacer",
+      "p:para-inf",
       "p:quantifiers-basic"
     ]
   },
@@ -117,10 +114,12 @@
         "words": [
           "primero",
           "ese día",
-          "al día siguiente",
+          "esa tarde",
+          "esa noche",
+          "luego",
           "al final"
         ],
-        "label": "mark the order: primero, ese día, al día siguiente, al final"
+        "label": "mark the order: primero, luego, esa tarde, al final"
       },
       {
         "type": "anyVerbInTense",
@@ -131,39 +130,38 @@
         "n": 4
       }
     ],
-    "model": "Primero llegamos al hotel y dejamos las maletas. Ese día comimos pescado en la playa. Al día siguiente fuimos a un mercado muy bonito. Al final compré un regalo para mi mamá.",
+    "model": "Primero llegamos al hotel y dejamos las maletas. Esa tarde comimos pescado en la playa. Esa noche caminamos por la ciudad vieja. Al final compré un regalo para mi mamá.",
     "focus": "g:time-sequence",
     "requires": [
       "c:al-final",
       "c:compre-trabaje",
+      "g:adjective-agreement",
       "g:demonstratives",
       "g:gender-articles",
+      "g:por-para-1",
       "g:present-ar",
       "g:preterite-ar",
       "g:preterite-er-ir",
-      "g:preterite-ser-ir-hacer",
-      "l:bonito",
+      "l:caminar",
+      "l:ciudad",
       "l:comer",
       "l:comprar",
       "l:dejar",
-      "l:día",
       "l:final",
       "l:hotel",
-      "l:ir",
       "l:llegar",
       "l:maleta",
       "l:mamá",
-      "l:mercado",
+      "l:noche",
       "l:pescado",
       "l:playa",
       "l:regalo",
-      "l:siguiente",
-      "p:dentro-de-vs-despues",
-      "p:ir-a-venir-de-place",
+      "l:tarde",
+      "l:viejo",
       "p:para-inf",
       "p:possessives-basic",
-      "p:quantifiers-basic",
-      "p:time-sequence-basic"
+      "p:time-sequence-basic",
+      "p:viejo-antiguo-mayor"
     ]
   },
   {
@@ -276,7 +274,7 @@
   {
     "id": "w-u26-06",
     "unit": "u26",
-    "prompt": "Write to your friend Hernando, who is older but speaks to you as tú. Tell him about a bad morning: you went to the bank and it was closed. Use the phrase for an unexpected twist.",
+    "prompt": "Write to your cousin Camila. Tell her about a bad morning: you went to the bank and it was closed. Use the phrase for an unexpected twist.",
     "minWords": 25,
     "maxWords": 60,
     "constraints": [
@@ -290,7 +288,7 @@
         "n": 3
       }
     ],
-    "model": "Hernando, fui al banco esta mañana porque necesitaba plata. Resulta que estaba cerrado por un problema. Esperé una hora afuera con mucha gente. ¡Qué de malas!",
+    "model": "Camila, fui al banco esta mañana porque necesitaba plata. Resulta que estaba cerrado por un problema. Esperé una hora afuera con mucha gente. ¡Qué de malas!",
     "focus": "c:resulta-que",
     "requires": [
       "c:fui",
@@ -341,15 +339,15 @@
       },
       {
         "type": "regex",
-        "pattern": "\\b(con|bien|genial|buenísimo|increíble)\\b",
-        "label": "say with whom"
+        "pattern": "\\bcon\\b",
+        "label": "say who you went with: con..."
       },
       {
         "type": "minSentences",
         "n": 3
       }
     ],
-    "model": "Vale, la pasamos buenísimo en la playa. Fui con mis primos y con mi amigo Simón. Comimos mucho pescado y jugamos fútbol. Quiero ir otra vez.",
+    "model": "Vale, la pasamos buenísimo en la playa. Fui con mis primos y con mi amigo Andrés. Comimos mucho pescado y jugamos fútbol. Quiero ir otra vez.",
     "focus": "p:pasarla-bien",
     "requires": [
       "c:fui",
@@ -387,7 +385,7 @@
   {
     "id": "w-u26-08",
     "unit": "u26",
-    "prompt": "Tell Mariana about the long wait at the doctor's office yesterday. Stress that it was hours and hours, and say what you did while you waited.",
+    "prompt": "Tell Mariana about the long wait at the hospital yesterday. Stress that it was hours and hours, and say what you did while you waited.",
     "minWords": 25,
     "maxWords": 60,
     "constraints": [
@@ -437,7 +435,7 @@
   {
     "id": "w-u26-09",
     "unit": "u26",
-    "prompt": "Write to Hernando, an older friend you call tú. Tell him you no longer work at the bank, that you already sold your car, and that you have not found a new job yet.",
+    "prompt": "Write to Andrés, an old school friend. Tell him you no longer work at the bank, that you already sold your car, and that you have not found a new job yet.",
     "minWords": 25,
     "maxWords": 60,
     "constraints": [
@@ -461,7 +459,7 @@
         "n": 3
       }
     ],
-    "model": "Hernando, ya no trabajo en el banco. Ya vendí mi carro y ahora camino a todas partes. Todavía no encuentro otro trabajo, pero busco todos los días.",
+    "model": "Andrés, ya no trabajo en el banco. Ya vendí mi carro y ahora camino a todas partes. Todavía no encuentro otro trabajo, pero busco todos los días.",
     "focus": "g:acabar-de-ya-todavia",
     "requires": [
       "c:todavia-no",
@@ -473,6 +471,7 @@
       "g:preterite-er-ir",
       "g:stem-boot",
       "l:ahora",
+      "l:andrés",
       "l:banco",
       "l:buscar",
       "l:caminar",
@@ -492,7 +491,7 @@
   {
     "id": "w-u26-10",
     "unit": "u26",
-    "prompt": "Text your friend Vale about plans. The café opens a new menu soon. Say it opens in two days, and the big party is after the weekend.",
+    "prompt": "Text your friend Vale. The new menu starts in two days. Remind her what happened at last year's opening: the café opened on a Monday and three days later there was no coffee left.",
     "minWords": 25,
     "maxWords": 60,
     "constraints": [
@@ -503,41 +502,41 @@
       },
       {
         "type": "regex",
-        "pattern": "\\bdespués d(e|el) \\w+",
-        "label": "use después de for after something"
+        "pattern": "\\b\\w+ (días|semanas|horas|meses) después\\b",
+        "label": "in the story: tres días después"
       },
       {
         "type": "minSentences",
         "n": 3
       }
     ],
-    "model": "Vale, el café abre el menú nuevo dentro de dos días. La fiesta grande es después del fin de semana. Tú vienes, ¿verdad? Necesito tu ayuda.",
+    "model": "Vale, el menú nuevo empieza dentro de dos días. El año pasado abrimos un lunes, y tres días después ya no había café. Esta vez vamos a comprar más.",
     "focus": "p:dentro-de-vs-despues",
     "requires": [
-      "c:no-cierto",
+      "c:vamos-a",
+      "c:ya-no",
       "g:gender-articles",
-      "g:present-ar",
-      "g:present-er-ir",
-      "g:ser-identity",
+      "g:imperfect-states",
+      "g:ir-a-plans",
+      "g:preterite-er-ir",
       "g:stem-boot",
       "l:abrir",
-      "l:ayuda",
+      "l:año",
       "l:café",
+      "l:comprar",
       "l:dentro",
       "l:después",
       "l:día",
-      "l:fiesta",
-      "l:fin",
-      "l:grande",
+      "l:empezar",
+      "l:ir",
+      "l:lunes",
       "l:menú",
-      "l:necesitar",
       "l:nuevo",
-      "l:semana",
-      "l:ser",
-      "l:venir",
-      "l:verdad",
+      "l:pasado",
+      "l:vez",
+      "p:demonstratives-basic",
       "p:dentro-de-vs-despues",
-      "p:possessives-basic",
+      "p:time-pasado-que-viene",
       "p:time-sequence-basic"
     ]
   },
@@ -562,37 +561,37 @@
         "type": "question"
       }
     ],
-    "model": "¡No me digas! ¡Qué oso! ¿Y qué te dijo tu jefe? Yo no sé qué hacer en esa situación. Mañana hablamos con más tiempo. Ahora tengo que salir.",
+    "model": "¡No me digas! ¡Qué oso! ¿Y qué te dijo tu jefe? Tranquila, a todos nos pasa. Yo una vez le tiré jugo a mi profesora. Mañana te invito a un tinto.",
     "focus": "c:no-me-digas",
     "requires": [
       "c:no-me-digas",
-      "c:no-se",
       "c:que-oso",
-      "c:tengo",
-      "c:tengo-que",
-      "g:demonstratives",
-      "g:indirect-questions",
+      "c:tranquilo",
+      "c:una-vez",
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:le-doubling",
       "g:present-ar",
+      "g:preterite-ar",
       "g:preterite-irregular-strong",
       "g:questions",
-      "g:verb-infinitive",
-      "g:yo-irregular",
-      "l:ahora",
       "l:decir",
-      "l:hablar",
-      "l:hacer",
+      "l:invitar",
       "l:jefe",
+      "l:jugo",
       "l:mañana",
       "l:oso",
+      "l:pasar",
+      "l:profesora",
       "l:qué",
-      "l:saber",
-      "l:salir",
-      "l:situación",
-      "l:tener",
-      "l:tiempo",
+      "l:tinto",
+      "l:tirar",
+      "l:tranquilo",
+      "l:vez",
       "p:me-te-nos-objects",
-      "p:no-se-que-hacer",
-      "p:possessives-basic"
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:te-invito-a"
     ]
   },
   {
@@ -616,32 +615,36 @@
         "n": 3
       }
     ],
-    "model": "Mariana, perdí el bus y caminé hasta mi casa bajo la lluvia. Total, que llegué y la puerta estaba cerrada. Mi hermano no contestó el celular. ¡Imagínate!",
+    "model": "Mariana, ¡qué día! Perdí el bus y caminé hasta mi casa bajo la lluvia. Llegué y la puerta estaba cerrada, y mi hermano no contestaba. Total, que esperé una hora en la calle.",
     "focus": "c:total-que",
     "requires": [
-      "c:imaginate",
       "c:total-que",
       "g:estar-participle",
       "g:gender-articles",
+      "g:imperfect-habitual",
       "g:imperfect-states",
       "g:pret-vs-imperfect",
       "g:preterite-ar",
       "g:preterite-er-ir",
       "g:preterite-spelling-stem",
       "l:bus",
+      "l:calle",
       "l:caminar",
       "l:casa",
-      "l:celular",
       "l:cerrar",
       "l:contestar",
+      "l:día",
+      "l:esperar",
       "l:estar",
       "l:hermano",
-      "l:imaginarse",
+      "l:hora",
       "l:llegar",
       "l:lluvia",
       "l:perder",
       "l:puerta",
+      "l:qué",
       "l:total",
+      "p:exclamations-basic",
       "p:possessives-basic"
     ]
   }

@@ -134,25 +134,33 @@
   {
    "prompt": "Choose *va mejorando* or *va a mejorar* and type the whole sentence (the café is slowly getting better): El café ___ poco a poco.",
    "answer": "El café va mejorando poco a poco.",
-   "accept": ["Poco a poco el café va mejorando."],
+   "accept": [
+    "Poco a poco el café va mejorando."
+   ],
    "why": "*Ir* + the *-ando* form is change in progress; *va a mejorar* would be a promise about later."
   },
   {
    "prompt": "Type in Spanish: I learned to cook by watching my mom.",
    "answer": "Aprendí a cocinar mirando a mi mamá.",
-   "accept": ["Aprendí a cocinar viendo a mi mamá."],
+   "accept": [
+    "Aprendí a cocinar viendo a mi mamá."
+   ],
    "why": "No word for by: *mirando* on its own tells how."
   },
   {
    "prompt": "Type in Spanish: Hernando arrived at the café singing.",
    "answer": "Hernando llegó al café cantando.",
-   "accept": ["Hernando llegó cantando al café."],
+   "accept": [
+    "Hernando llegó cantando al café."
+   ],
    "why": "*Cantando* says what he was doing as he came in."
   },
   {
    "prompt": "Type in Spanish: Things are gradually changing in the neighbourhood.",
    "answer": "Las cosas van cambiando en el barrio.",
-   "accept": ["En el barrio las cosas van cambiando."],
+   "accept": [
+    "En el barrio las cosas van cambiando."
+   ],
    "why": "Gradually changing is *van cambiando*: *ir* plus the *-ando* form."
   },
   {

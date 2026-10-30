@@ -101,10 +101,10 @@
    "answer": 0
   },
   {
-   "es": "En ese momento vivía en Toronto.",
+   "es": "En ese momento estaba en Toronto.",
    "options": [
-    "Right now I live in Toronto.",
-    "At that time I was living in Toronto."
+    "Right now I'm in Toronto.",
+    "At that moment I was in Toronto."
    ],
    "answer": 1
   },
@@ -127,25 +127,33 @@
   {
    "prompt": "This is how the story ends. Choose *Al principio* or *Al final* and type the whole sentence: ___, el senador pagó.",
    "answer": "Al final, el senador pagó.",
-   "accept": ["Al final el senador pagó."],
+   "accept": [
+    "Al final el senador pagó."
+   ],
    "why": "*Al final* closes the story; *al principio* is how things were at the start."
   },
   {
    "prompt": "Type in Spanish: That night nobody slept.",
    "answer": "Esa noche nadie durmió.",
-   "accept": ["Esa noche no durmió nadie."],
+   "accept": [
+    "Esa noche no durmió nadie."
+   ],
    "why": "A night in the story is *esa noche*; *esta noche* would be tonight."
   },
   {
    "prompt": "Type in Spanish: First I had breakfast and then I went out.",
    "answer": "Primero desayuné y luego salí.",
-   "accept": ["Primero desayuné y después salí."],
+   "accept": [
+    "Primero desayuné y después salí."
+   ],
    "why": "*Primero* for the first step, *luego* or *después* for the next one."
   },
   {
    "prompt": "Type in Spanish: At that moment the senator came in.",
    "answer": "En ese momento entró el senador.",
-   "accept": ["En ese momento el senador entró."],
+   "accept": [
+    "En ese momento el senador entró."
+   ],
    "why": "In a story, now becomes *en ese momento*."
   },
   {
@@ -169,9 +177,9 @@
  ],
  "pitfalls": [
   {
-   "wrong": "En 1983, hoy Rosa estaba sola en el café.",
-   "right": "En 1983, ese día Rosa estaba sola en el café.",
-   "why": "*Hoy* only ever means today. Inside a story, use *ese día*."
+   "wrong": "En el principio, Rosa no dijo nada.",
+   "right": "Al principio, Rosa no dijo nada.",
+   "why": "At first is *al principio*, with *al*. *En el principio* sounds like the opening of the Bible."
   },
   {
    "wrong": "En el final, el senador pagó.",

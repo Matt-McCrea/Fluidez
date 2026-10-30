@@ -38,7 +38,7 @@
    "options": [
     "I had a great time.",
     "She had a great time.",
-    "I passed her."
+    "I spent it well."
    ],
    "answer": 0
   },
@@ -110,7 +110,10 @@
   {
    "prompt": "Type in Spanish: We had an awful time.",
    "answer": "La pasamos fatal.",
-   "accept": ["La pasamos muy mal."],
+   "accept": [
+    "La pasamos muy mal.",
+    "La pasamos horrible."
+   ],
    "why": "*La* stays; *pasamos* says it was us."
   },
   {
@@ -122,7 +125,10 @@
   {
    "prompt": "Type in Spanish: Hernando had a great time at dinner.",
    "answer": "Hernando la pasó genial en la cena.",
-   "accept": ["Hernando la pasó muy bien en la cena."],
+   "accept": [
+    "Hernando la pasó muy bien en la cena.",
+    "Hernando la pasó buenísimo en la cena."
+   ],
    "why": "*La* goes right before the verb: *la pasó*."
   },
   {
@@ -140,7 +146,10 @@
   {
    "prompt": "Turn it around: *La pasamos genial.* (it was awful)",
    "answer": "La pasamos fatal.",
-   "accept": ["La pasamos muy mal."],
+   "accept": [
+    "La pasamos muy mal.",
+    "La pasamos horrible."
+   ],
    "why": "Swap the how: *genial* becomes *fatal*."
   }
  ],

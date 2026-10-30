@@ -85,18 +85,18 @@
       "id": "t4",
       "npc": "¿Y Rosa qué hizo? ¿Llamó a la policía?",
       "npcEn": "And what did Rosa do? Did she call the police?",
-      "intent": "Say no: she came running out of the kitchen and threw the water at him.",
+      "intent": "Say no: she threw the mop water over him, and he ran out.",
       "accept": [
-        "No. Salió corriendo de la cocina y le tiró el agua.",
-        "No, salió de la cocina corriendo, y le tiró toda el agua encima.",
-        "No. Rosa salió corriendo de la cocina y le tiró el agua."
+        "No. Le tiró el agua del piso, y él salió corriendo.",
+        "No, le tiró toda el agua encima, y el senador salió corriendo.",
+        "No. Rosa le tiró el agua, y él salió corriendo del café."
       ],
       "require": [
         {
           "type": "regex",
           "pattern": "[a-záéíóúñ]+(ando|iendo|yendo)\\b",
           "flags": "i",
-          "label": "say how she came out: salió corriendo"
+          "label": "say how he left: salió corriendo"
         }
       ],
       "focus": "g:gerund-ways",
@@ -108,7 +108,7 @@
       "npcEn": "Just imagine! But the senator never came back to the café, right?",
       "intent": "Say yes, he did: two days later he came back and paid for everything.",
       "accept": [
-        "Sí volvió. Dos días después volvió y pagó todo.",
+        "Sí, sí volvió. Dos días después llegó y pagó todo.",
         "Sí. Dos días después, volvió al café y pagó todo.",
         "Sí, volvió dos días después, y pagó todo."
       ],
@@ -185,7 +185,6 @@
     "l:bueno",
     "l:café",
     "l:casa",
-    "l:cocina",
     "l:comer",
     "l:comida",
     "l:correr",
@@ -205,11 +204,13 @@
     "l:imaginarse",
     "l:jefe",
     "l:llamar",
+    "l:llegar",
     "l:mejor",
     "l:mujer",
     "l:oír",
     "l:pagar",
     "l:pasar",
+    "l:piso",
     "l:policía",
     "l:querer",
     "l:qué",
@@ -228,6 +229,7 @@
     "p:frequency-scale",
     "p:horas-y-horas",
     "p:me-te-nos-objects",
+    "p:no-es-x-es-y",
     "p:pasarla-bien",
     "p:personal-a",
     "p:quantifiers-basic",
