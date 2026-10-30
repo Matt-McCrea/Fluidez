@@ -1,0 +1,243 @@
+{
+  "id": "sc-u59-d",
+  "unit": "u59",
+  "title": "La casa de doña Gloria",
+  "brief": "You're Tomás arriving at Vale's family home in Medellín. Her mother, doña Gloria, is warm but older than you, so use usted with her. Greet her, say how long you're staying, and charm her over a meal.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Doña Gloria: Pase, pase, mijo, que está en su casa. Usted debe de ser Tomás.",
+      "npcEn": "Doña Gloria: Come in, come in, son, make yourself at home. You must be Tomás.",
+      "intent": "Say yes, it's a pleasure, and apologise for arriving late (use: mil disculpas).",
+      "accept": [
+        "Sí, mucho gusto, doña Gloria. Mil disculpas por llegar tarde.",
+        "Con mucho gusto. Mil disculpas por la demora, el bus se atrasó.",
+        "Tomás, para servirle. Mil disculpas por llegar tan tarde."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])mil disculpas(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: mil disculpas"
+        }
+      ],
+      "focus": "c:mil-disculpas",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Doña Gloria: Vale me llama a cada rato para hablarme de usted. ¿Cuánto tiempo se queda?",
+      "npcEn": "Doña Gloria: Vale calls me all the time to tell me about you. How long are you staying?",
+      "intent": "Say you're staying one week, and Vale also talks about her mother all the time (use: a cada rato).",
+      "accept": [
+        "Una semana. Vale también habla de usted a cada rato.",
+        "Me quedo una semana. Y Vale la nombra a cada rato.",
+        "Una semana, si usted me aguanta. Vale habla de usted a cada rato."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])a cada rato(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: a cada rato"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "eres",
+            "tu mamá"
+          ],
+          "label": "use usted"
+        }
+      ],
+      "focus": "c:a-cada-rato",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Doña Gloria: Le preparé una bandeja grande. Coma, coma, que lo veo flaco.",
+      "npcEn": "Doña Gloria: I made you a big platter. Eat, eat, because you look thin to me.",
+      "intent": "Say she shouldn't have gone to the trouble (use: no se hubiera molestado).",
+      "accept": [
+        "No se hubiera molestado, doña Gloria. Todo se ve delicioso.",
+        "Ay, no se hubiera molestado tanto. Huele muy rico.",
+        "No se hubiera molestado, pero se lo agradezco mucho."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])no se hubiera molestado(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: no se hubiera molestado"
+        }
+      ],
+      "focus": "c:no-te-hubieras-molestado",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Doña Gloria: ¿Le sirvo más? Allá en Bogotá nadie come así, ¿verdad?",
+      "npcEn": "Doña Gloria: Shall I serve you more? Nobody eats like this in Bogotá, right?",
+      "intent": "Say yes please, you won't say no to a second helping, and it's better than at the café.",
+      "accept": [
+        "No le voy a decir que no. Está mejor que en el café.",
+        "Sí, por favor. Esto está mejor que lo que hacemos en el café.",
+        "Claro que sí, doña Gloria, no le voy a decir que no."
+      ],
+      "require": [
+        {
+          "type": "avoidsAny",
+          "words": [
+            "quieres",
+            "eres"
+          ],
+          "label": "use usted"
+        }
+      ],
+      "focus": "c:no-te-voy-a-decir-que-no",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Doña Gloria: Qué bueno. Esta noche Vale y sus primos lo llevan a bailar. ¿Se anima?",
+      "npcEn": "Doña Gloria: Wonderful. Tonight Vale and her cousins are taking you out dancing. Are you up for it?",
+      "intent": "Say yes, you're up for it, though you're not a good dancer.",
+      "accept": [
+        "Me animo, aunque no soy buen bailarín.",
+        "Sí, claro. Eso sí, bailo muy mal.",
+        "Con mucho gusto, doña Gloria, pero no sé bailar bien."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "animo",
+            "claro",
+            "gusto",
+            "sí"
+          ],
+          "label": "say yes"
+        }
+      ],
+      "focus": "c:te-animas",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-cada-rato",
+    "c:animo",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:cuanto-tiempo",
+    "c:esta-en-su-casa",
+    "c:mil-disculpas",
+    "c:mucho-gusto",
+    "c:no-cierto",
+    "c:no-se",
+    "c:por-favor",
+    "c:que-bien",
+    "c:siga-siga",
+    "c:voy-a",
+    "g:aunque-indicative",
+    "g:commands-usted",
+    "g:comparatives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:pluperfect-subj",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-e-i",
+    "g:tener-que-hay-que",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:agradecer",
+    "l:aguantar",
+    "l:allá",
+    "l:animar",
+    "l:bailar",
+    "l:bailarín",
+    "l:bandeja",
+    "l:bien",
+    "l:buen",
+    "l:bueno",
+    "l:bus",
+    "l:café",
+    "l:casa",
+    "l:claro",
+    "l:comer",
+    "l:cuánto",
+    "l:deber",
+    "l:decir",
+    "l:delicioso",
+    "l:demora",
+    "l:disculpa",
+    "l:estar",
+    "l:favor",
+    "l:flaco",
+    "l:grande",
+    "l:gusto",
+    "l:hablar",
+    "l:hacer",
+    "l:ir",
+    "l:llamar",
+    "l:llegar",
+    "l:llevar",
+    "l:mal",
+    "l:mejor",
+    "l:mijo",
+    "l:molestar",
+    "l:noche",
+    "l:nombrar",
+    "l:oler",
+    "l:pasar",
+    "l:preparar",
+    "l:primo",
+    "l:quedarse",
+    "l:qué",
+    "l:rato",
+    "l:rico",
+    "l:saber",
+    "l:semana",
+    "l:ser",
+    "l:servir",
+    "l:tarde",
+    "l:tiempo",
+    "l:ver",
+    "l:verdad",
+    "p:aguantar-conservar-la-calma",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:demonstratives-basic",
+    "p:don-dona-nombre",
+    "p:encontrar-ver-adj",
+    "p:hedge-knowledge",
+    "p:llegar-a-tiempo",
+    "p:masculine-plural-mixed",
+    "p:me-te-nos-objects",
+    "p:oler-a-saber-a",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:senor-don-article",
+    "p:te-lo-agradezco"
+  ]
+}

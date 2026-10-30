@@ -1,0 +1,229 @@
+{
+  "id": "sc-u59-c",
+  "unit": "u59",
+  "title": "La nota de Mariana",
+  "brief": "You're Tomás, and your friend Mariana, a journalist, is interviewing you for a piece on the voices of Colombia. She's your age, so use tú. Describe what you've noticed, talk about how you change your register, and have a laugh.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Mariana: Para mi nota sobre las voces de Colombia: ¿qué notaste primero cuando llegaste a Bogotá?",
+      "npcEn": "Mariana: For my piece on the voices of Colombia: what did you notice first when you arrived in Bogotá?",
+      "intent": "Say the rolos speak calmly and politely (use: son or hablan).",
+      "accept": [
+        "Los rolos hablan con calma y son muy amables.",
+        "Me pareció que los rolos son tranquilos y muy educados al hablar.",
+        "Lo primero fue que los rolos hablan despacio y con mucha cortesía."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])rolos?(?![\\p{L}])",
+          "flags": "iu",
+          "label": "mention los rolos"
+        }
+      ],
+      "focus": "g:ser-estar-c1",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Mariana: ¿Y los costeños? En el Carnaval vas a conocer a la familia de Yesid.",
+      "npcEn": "Mariana: And the costeños? At Carnaval you'll meet Yesid's family.",
+      "intent": "Say they speak fast, they are very cheerful, and you hope to understand them.",
+      "accept": [
+        "Dicen que los costeños hablan rápido y son muy alegres. Espero entenderlos.",
+        "Los costeños hablan rápido y son muy alegres, según Yesid. Ojalá los entienda.",
+        "Los costeños hablan rápido y son alegres. Espero entenderlos bien."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])coste[ñn]os?(?![\\p{L}])",
+          "flags": "iu",
+          "label": "mention los costeños"
+        }
+      ],
+      "focus": "g:agreement-tricky",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Mariana: ¿Y cómo cambias tu forma de hablar según con quién estás?",
+      "npcEn": "Mariana: And how do you change the way you speak depending on who you're with?",
+      "intent": "Explain that you say usted to older people and tú to friends.",
+      "accept": [
+        "Con los mayores uso usted, y con mis amigos uso tú.",
+        "A don Hernando le digo usted, pero a ti te digo tú.",
+        "Les digo usted a los mayores y tú a los amigos."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])usted(?![\\p{L}])",
+          "flags": "iu",
+          "label": "mention usted"
+        },
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])t[uú](?![\\p{L}])",
+          "flags": "iu",
+          "label": "mention tú"
+        }
+      ],
+      "focus": "g:ser-estar-c1",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Mariana: Hernando dice que eres todero. Pero también dijo que tienes manos de mantequilla, ¿o fue Vale?",
+      "npcEn": "Mariana: Hernando says you're a jack of all trades. But he also said you have butterfingers, or was it Vale?",
+      "intent": "Laugh and say you are no jack of all trades: you drop everything, so it was probably both of them.",
+      "accept": [
+        "Ja, ja. Yo no soy todero, se me cae todo. Seguro dijeron los dos.",
+        "No soy todero, tengo manos de mantequilla. Seguramente fueron los dos.",
+        "Ja, ja. Todero, no. Se me cae todo, así que fue Vale y fue Hernando."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(no soy todero|todero, no|manos de mantequilla|se me cae)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "say you are no todero"
+        }
+      ],
+      "focus": "c:manos-de-mantequilla",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Mariana: Perfecto, ya tengo mi nota. ¿Te invito un tinto para celebrar?",
+      "npcEn": "Mariana: Perfect, I have my piece. Shall I buy you a tinto to celebrate?",
+      "intent": "Accept, and thank her for the invitation (use: te animas style answer or no te voy a decir que no).",
+      "accept": [
+        "No te voy a decir que no. Gracias por invitarme.",
+        "Claro que sí, gracias. Pero la próxima vez invito yo.",
+        "Me animo, gracias. Con mucho gusto."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "gracias"
+          ],
+          "label": "say thanks"
+        }
+      ],
+      "focus": "c:no-te-voy-a-decir-que-no",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:animo",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:gracias-de-nada",
+    "c:manos-de-mantequilla",
+    "c:mucho-gusto",
+    "c:no-te-voy-a-decir-que-no",
+    "c:ojala",
+    "c:segun",
+    "c:tengo",
+    "c:tienes",
+    "c:voy-a",
+    "c:voy-vas",
+    "g:adjective-agreement",
+    "g:adverbs-mente",
+    "g:cause-result",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:se-accidental",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:alegre",
+    "l:amable",
+    "l:amigo",
+    "l:animar",
+    "l:bien",
+    "l:caerse",
+    "l:calma",
+    "l:cambiar",
+    "l:celebrar",
+    "l:claro",
+    "l:conocer",
+    "l:cortesía",
+    "l:costeño",
+    "l:cómo",
+    "l:decir",
+    "l:despacio",
+    "l:educado",
+    "l:entender",
+    "l:esperar",
+    "l:estar",
+    "l:familia",
+    "l:formar",
+    "l:gusto",
+    "l:hablar",
+    "l:invitar",
+    "l:ir",
+    "l:ja",
+    "l:llegar",
+    "l:mano",
+    "l:mantequilla",
+    "l:mayor",
+    "l:nota",
+    "l:notar",
+    "l:parecer",
+    "l:perfecto",
+    "l:próximo",
+    "l:quién",
+    "l:qué",
+    "l:rolo",
+    "l:rápido",
+    "l:seguramente",
+    "l:seguro",
+    "l:ser",
+    "l:tener",
+    "l:tinto",
+    "l:tranquilo",
+    "l:usar",
+    "l:vez",
+    "l:voz",
+    "p:cuando-basic",
+    "p:gracias-por",
+    "p:mayor-menor",
+    "p:me-contaron-que",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:seguramente-probablemente",
+    "p:senor-don-article",
+    "p:time-pasado-que-viene",
+    "p:time-sequence-basic"
+  ]
+}

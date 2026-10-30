@@ -1,0 +1,262 @@
+{
+  "id": "sc-u59-a",
+  "unit": "u59",
+  "title": "Ruta al Carnaval",
+  "brief": "You're Tomás on the phone with Vale, who is planning the trip to Barranquilla for Carnaval. She's a close friend your age, so use tú. React to the plan, haggle a little, and say thank you.",
+  "spare": false,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Vale: Tomás, ¿supiste lo de Barranquilla? La familia de Yesid nos espera para el Carnaval.",
+      "npcEn": "Vale: Tomás, did you hear about Barranquilla? Yesid's family is expecting us for Carnaval.",
+      "intent": "Say yes, you heard about the Barranquilla trip, and ask what the plan is (use: lo de).",
+      "accept": [
+        "Sí, supe lo de Barranquilla. ¿Cuál es el plan?",
+        "Claro, me contó Yesid lo de la invitación. ¿Cómo lo organizamos?",
+        "Sí, ya supe lo de Barranquilla. ¿Qué vamos a hacer?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])lo de(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: lo de + noun"
+        }
+      ],
+      "focus": "p:lo-de-noun",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Vale: Salimos el viernes. Lo más recomendable es volar, aunque en Carnaval eso cuesta un platal.",
+      "npcEn": "Vale: We leave on Friday. The best thing is to fly, although during Carnaval that costs a fortune.",
+      "intent": "Agree to fly, as long as you buy the tickets today (use: sí, pero que... or siempre que...).",
+      "accept": [
+        "Sí, pero que compremos los tiquetes hoy mismo.",
+        "Está bien, volamos, siempre que los compremos hoy.",
+        "De acuerdo, pero que los tiquetes los compremos hoy, por favor."
+      ],
+      "require": [
+        {
+          "type": "avoidsAny",
+          "words": [
+            "pero porque"
+          ],
+          "label": "after pero, que opens the condition"
+        },
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(pero que|siempre que)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: pero que / siempre que"
+        }
+      ],
+      "focus": "p:si-pero-que",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Vale: Hernando dice que no vendrá, pero la mayoría de la cuadra sí viene. ¿Quién va a llevar las maletas?",
+      "npcEn": "Vale: Hernando says he won't come, but most of the block is coming. Who is going to carry the suitcases?",
+      "intent": "Say that the majority of the group is bringing their own, and you'll help whoever needs it (use: la mayoría de ... + singular verb).",
+      "accept": [
+        "La mayoría del grupo lleva sus maletas, y yo ayudo a quien lo necesite.",
+        "La mayoría de los vecinos trae su maleta. Yo llevo la mía y la de Hernando.",
+        "Creo que la mayoría de la gente lleva la suya. Yo ayudo con lo que haga falta."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])la mayor[ií]a del?(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: la mayoría de ... + verb"
+        }
+      ],
+      "focus": "g:agreement-tricky",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Vale: Qué bueno. Ah, y disculpa que te lo diga tan tarde: Yesid dice que su mamá cocina para veinte. ¿Tú eres bueno con la comida de allá?",
+      "npcEn": "Vale: Great. Oh, and sorry to tell you so late: Yesid says his mother cooks for twenty. Are you good with the food over there?",
+      "intent": "Say you are not good at it yet, but you're hungry and ready to try everything (use: estar con hambre or ser bueno).",
+      "accept": [
+        "Todavía no soy bueno con eso, pero estoy listo para probarlo todo.",
+        "No conozco la comida de allá, pero estoy muy contento de probarla.",
+        "Ni idea, pero estoy listo y con mucha hambre."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(soy|estoy)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use ser or estar"
+        }
+      ],
+      "focus": "g:ser-estar-c1",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Vale: Ja, ja. Entonces nos vemos el viernes en el terminal. Y no llegues a la hora colombiana.",
+      "npcEn": "Vale: Ha ha. Then we'll see each other Friday at the terminal. And don't show up on Colombian time.",
+      "intent": "Promise you'll be on time and say thanks for organizing everything.",
+      "accept": [
+        "Prometido, llego temprano. Gracias por organizarlo todo.",
+        "Ahí estaré a tiempo. Mil gracias por todo, Vale.",
+        "Sin falta, a las siete. Gracias por encargarte de todo."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "gracias"
+          ],
+          "label": "say thanks"
+        }
+      ],
+      "focus": "c:la-hora-colombiana",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:chao-nos-vemos",
+    "c:claro-listo",
+    "c:costar-un-platal",
+    "c:creo-que",
+    "c:entonces-bueno",
+    "c:la-hora-colombiana",
+    "c:ni-idea",
+    "c:por-favor",
+    "c:que-bien",
+    "c:todavia-no",
+    "c:vamos-a",
+    "g:aunque-indicative",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:ir-a-plans",
+    "g:negative-commands",
+    "g:object-pronoun-position",
+    "g:possessives-stressed",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:relatives-donde-lo-que",
+    "g:relatives-prepositions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-cuando-future",
+    "g:subj-emotion",
+    "g:subj-free-relatives",
+    "g:subj-relative",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:acuerdo",
+    "l:ahí",
+    "l:allá",
+    "l:ayudar",
+    "l:bien",
+    "l:bueno",
+    "l:claro",
+    "l:cocinar",
+    "l:colombiano",
+    "l:comida",
+    "l:comprar",
+    "l:conocer",
+    "l:contar",
+    "l:contento",
+    "l:costar",
+    "l:creer",
+    "l:cuadra",
+    "l:cuál",
+    "l:cómo",
+    "l:decir",
+    "l:disculpar",
+    "l:encargar",
+    "l:esperar",
+    "l:estar",
+    "l:falta",
+    "l:familia",
+    "l:favor",
+    "l:gente",
+    "l:grupo",
+    "l:hacer",
+    "l:hambre",
+    "l:hora",
+    "l:hoy",
+    "l:idea",
+    "l:invitación",
+    "l:ir",
+    "l:ja",
+    "l:listo",
+    "l:llegar",
+    "l:llevar",
+    "l:maleta",
+    "l:mamá",
+    "l:mayoría",
+    "l:necesitar",
+    "l:organizar",
+    "l:plan",
+    "l:probarse",
+    "l:prometer",
+    "l:quién",
+    "l:qué",
+    "l:recomendable",
+    "l:saber",
+    "l:salir",
+    "l:ser",
+    "l:siempre",
+    "l:tarde",
+    "l:temprano",
+    "l:terminal",
+    "l:tiempo",
+    "l:tiquete",
+    "l:traer",
+    "l:vecino",
+    "l:venir",
+    "l:ver",
+    "l:viernes",
+    "l:volar",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:concede-pero",
+    "p:contento-con-de",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:el-agua-fria",
+    "p:frequency-scale",
+    "p:gracias-por",
+    "p:la-gente-singular",
+    "p:la-mayoria-de",
+    "p:llegar-a-tiempo",
+    "p:llevar-traer",
+    "p:lo-de",
+    "p:lo-de-noun",
+    "p:lo-de-topic",
+    "p:lo-mas-recomendable",
+    "p:los-de-la-camiseta",
+    "p:me-te-nos-objects",
+    "p:nos-vemos-a-las",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:perdona-que-te-interrumpa",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:saber-conocer",
+    "p:si-pero-que",
+    "p:telling-time",
+    "p:tener-razon-pero"
+  ]
+}

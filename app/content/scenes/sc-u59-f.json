@@ -1,0 +1,247 @@
+{
+  "id": "sc-u59-f",
+  "unit": "u59",
+  "title": "Versos y vallenatos",
+  "brief": "You're Tomás in a little shop in Barranquilla that sells poetry books and vallenato records. The owner is a costeño about your age and relaxed, so tú is fine. Ask for a recommendation, choose, and pay.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Dueño: Quiubo, parce, ¿buscas algo en especial? Tengo poesía y discos de vallenato.",
+      "npcEn": "Owner: Hey, mate, are you looking for something in particular? I have poetry and vallenato records.",
+      "intent": "Say you'd like a book of poems by a Colombian poet, and ask what he recommends (use: lo más recomendable).",
+      "accept": [
+        "Quiero un libro de un poeta colombiano. ¿Qué es lo más recomendable?",
+        "Busco poesía colombiana. ¿Cuál es lo más recomendable para empezar?",
+        "Me gustaría un poemario. ¿Qué me recomiendas?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask what he recommends"
+        }
+      ],
+      "focus": "p:lo-mas-recomendable",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Dueño: Lo más recomendable es empezar por este. La literatura de aquí es emocionante, y la poesía más todavía.",
+      "npcEn": "Owner: The best thing is to start with this one. The literature from here is exciting, and the poetry even more so.",
+      "intent": "Say it looks great, and ask how much it costs.",
+      "accept": [
+        "Se ve genial. ¿Cuánto cuesta?",
+        "Qué bueno. ¿Cuánto vale este libro?",
+        "Me parece perfecto. ¿Cuánto es?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask the price"
+        }
+      ],
+      "focus": "g:agreement-tricky",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Dueño: Para ti, quince mil. Y si llevas el disco de cumbia, te lo dejo regalado.",
+      "npcEn": "Owner: For you, fifteen thousand. And if you take the cumbia record, I'll let you have it for nothing.",
+      "intent": "Say yes to both, but ask if it's better to start with cumbia or with vallenato.",
+      "accept": [
+        "Listo, llevo los dos. ¿Es mejor empezar con cumbia o con vallenato?",
+        "Sí, me animo. Pero ¿cuál es mejor para empezar, la cumbia o el vallenato?",
+        "De acuerdo. Dime, ¿empiezo por la cumbia o por el vallenato?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask a question"
+        },
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(cumbia|vallenato)(?![\\p{L}])",
+          "flags": "iu",
+          "label": "mention the music"
+        }
+      ],
+      "focus": "p:si-pero-que",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Dueño: Si me hubieras dicho antes, te regalaba el bambuco también. Pero no importa, llévate esto.",
+      "npcEn": "Owner: If you had told me before, I'd have given you the bambuco as well. But never mind, take this.",
+      "intent": "Joke that you should have told him earlier, next time you will (use: me hubieras dicho or lo hubiera dicho).",
+      "accept": [
+        "Tenía que haberte dicho antes. La próxima vez te aviso.",
+        "Es verdad, hubiera sido mejor decírtelo antes. La próxima vez vengo más temprano.",
+        "Qué pena, debí avisarte. Mil gracias por el regalo."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "próxima",
+            "antes",
+            "pena",
+            "gracias"
+          ],
+          "label": "react warmly"
+        }
+      ],
+      "focus": "p:me-hubieras-dicho",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Dueño: Todo bien. Que disfrutes el Carnaval y que la poesía te acompañe.",
+      "npcEn": "Owner: All good. Enjoy the Carnaval and may the poetry keep you company.",
+      "intent": "Say thanks and goodbye, and that you'll come back.",
+      "accept": [
+        "Gracias por todo. Vuelvo pronto, hasta luego.",
+        "Mil gracias, parce. Volveré antes de irme, hasta luego.",
+        "Muchas gracias. Nos vemos pronto, que te vaya bien."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "gracias"
+          ],
+          "label": "say thanks"
+        }
+      ],
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:animo",
+    "c:bien-y-tu",
+    "c:buen-viaje",
+    "c:chao-nos-vemos",
+    "c:claro-listo",
+    "c:cuanto-cuesta",
+    "c:gracias-de-nada",
+    "c:hago-salgo-vengo",
+    "c:me-gustaria",
+    "c:me-parece-bien",
+    "c:oye-mira",
+    "c:que-bien",
+    "c:que-pena",
+    "c:quiero",
+    "c:quiubo",
+    "c:tengo",
+    "g:adjective-agreement",
+    "g:commands-tu",
+    "g:commands-with-pronouns",
+    "g:conditional",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:object-pronoun-position",
+    "g:pluperfect-subj",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-hypothetical",
+    "g:si-past-unreal",
+    "g:si-present",
+    "g:stem-boot",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:superlatives",
+    "g:tener-que-hay-que",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:acompañar",
+    "l:acuerdo",
+    "l:animar",
+    "l:antes",
+    "l:aquí",
+    "l:avisar",
+    "l:bambuco",
+    "l:bien",
+    "l:bueno",
+    "l:buscar",
+    "l:colombiano",
+    "l:costar",
+    "l:cumbia",
+    "l:cuál",
+    "l:cuánto",
+    "l:deber",
+    "l:decir",
+    "l:dejar",
+    "l:disco",
+    "l:disfrutar",
+    "l:dueño",
+    "l:emocionante",
+    "l:empezar",
+    "l:especial",
+    "l:genial",
+    "l:gustar",
+    "l:haber",
+    "l:importar",
+    "l:ir",
+    "l:irse",
+    "l:libro",
+    "l:listo",
+    "l:literatura",
+    "l:llevar",
+    "l:llevarse",
+    "l:mejor",
+    "l:parar",
+    "l:parce",
+    "l:parecer",
+    "l:pena",
+    "l:perfecto",
+    "l:poesía",
+    "l:poeta",
+    "l:pronto",
+    "l:próximo",
+    "l:querer",
+    "l:qué",
+    "l:recomendable",
+    "l:recomendar",
+    "l:regalar",
+    "l:regalo",
+    "l:ser",
+    "l:temprano",
+    "l:tener",
+    "l:valer",
+    "l:vallenato",
+    "l:venir",
+    "l:ver",
+    "l:verdad",
+    "l:vez",
+    "l:volver",
+    "p:aqui-ahi-alla",
+    "p:demonstratives-basic",
+    "p:gracias-por",
+    "p:habria-sido-mejor",
+    "p:indefinites-basic",
+    "p:lo-mas-recomendable",
+    "p:me-hubieras-dicho",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:presentation-frame",
+    "p:que-subj-deseo",
+    "p:que-tal-si",
+    "p:question-word-order",
+    "p:time-pasado-que-viene",
+    "p:time-sequence-basic",
+    "p:ya-todavia-basic"
+  ]
+}

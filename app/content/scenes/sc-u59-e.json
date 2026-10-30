@@ -1,0 +1,228 @@
+{
+  "id": "sc-u59-e",
+  "unit": "u59",
+  "title": "Sumercé en la posada",
+  "brief": "You're Tomás in a village in Boyacá, at a small guesthouse. The owner, doña Etelvina, says sumercé to everyone and you're a stranger much younger than she is, so use usted. Ask for a room, ask about the word sumercé, and ask the way.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Doña Etelvina: Buenas tardes, sumercé. ¿En qué le puedo ayudar?",
+      "npcEn": "Doña Etelvina: Good afternoon, sumercé. How can I help you?",
+      "intent": "Greet her and ask whether she has a room for one night.",
+      "accept": [
+        "Buenas tardes. ¿Tiene una habitación para una noche?",
+        "Buenas tardes, señora. ¿Le queda una pieza libre para esta noche?",
+        "Buenas. ¿Tendrá una habitación para una noche, por favor?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask a question"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "tienes",
+            "eres"
+          ],
+          "label": "use usted"
+        }
+      ],
+      "focus": "x:ser-estar-adj",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Doña Etelvina: Claro que sí. Son treinta mil pesos, pero para sumercé está regalado.",
+      "npcEn": "Doña Etelvina: Of course. It's thirty thousand pesos, but for you it's a gift.",
+      "intent": "Say thanks, that is very cheap, you'll take it (use: está regalado).",
+      "accept": [
+        "Gracias, señora. Está regalado, la tomo.",
+        "Qué amable. Eso está regalado, me la quedo.",
+        "Está regalado, doña Etelvina. Se la agradezco mucho."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])regalad[oa](?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: está regalado"
+        }
+      ],
+      "focus": "p:estar-regalado",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Doña Etelvina: Y dígame, sumercé, ¿usted de dónde es?",
+      "npcEn": "Doña Etelvina: And tell me, sumercé, where are you from?",
+      "intent": "Say you're from Toronto but you live in Bogotá now (use: soy de and vivo en).",
+      "accept": [
+        "Soy de Toronto, pero ahora vivo en Bogotá.",
+        "Nací en Toronto, pero vivo en Bogotá desde hace un tiempo.",
+        "Soy canadiense, de Toronto. Ahora vivo en La Candelaria."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])(soy|nac[ií])(?![\\p{L}])",
+          "flags": "iu",
+          "label": "say where you are from"
+        }
+      ],
+      "focus": "g:ser-estar-c1",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Doña Etelvina: Ah, de Canadá. Aquí todos decimos sumercé, no usted.",
+      "npcEn": "Doña Etelvina: Ah, from Canada. Here we all say sumercé, not usted.",
+      "intent": "Ask her what sumercé means exactly, and whether it's like usted (use: ¿me sigue?, ¿es como...?).",
+      "accept": [
+        "¿Qué quiere decir sumercé? ¿Es como usted?",
+        "Disculpe que pregunte: ¿sumercé significa lo mismo que usted?",
+        "¿Sumercé es una forma de decir usted?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask a question"
+        },
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])sumerc[eé](?![\\p{L}])",
+          "flags": "iu",
+          "label": "mention sumercé"
+        }
+      ],
+      "focus": "p:disculpa-que",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Doña Etelvina: Más o menos, mijo. Es más cariñoso. Ahora descanse, que mañana madruga.",
+      "npcEn": "Doña Etelvina: More or less, son. It's warmer. Now rest, because tomorrow you get up early.",
+      "intent": "Thank her and say good night, and that you'll see her tomorrow.",
+      "accept": [
+        "Muchas gracias, doña Etelvina. Buenas noches y hasta mañana.",
+        "Gracias por todo. Que pase buenas noches, nos vemos mañana.",
+        "Se lo agradezco. Buenas noches, hasta mañana."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "gracias",
+            "agradezco"
+          ],
+          "label": "say thanks"
+        }
+      ],
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:alo",
+    "c:chao-nos-vemos",
+    "c:claro-listo",
+    "c:en-que-le-puedo-servir",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:mas-o-menos",
+    "c:muy-amable",
+    "c:perdon-disculpe",
+    "c:por-favor",
+    "c:puedo",
+    "c:soy-de",
+    "c:tienes",
+    "c:vivo-en",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:estar-participle",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:hace-que-desde",
+    "g:parecer-quedar",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-emotion",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:agradecer",
+    "l:ahora",
+    "l:amable",
+    "l:aquí",
+    "l:ayudar",
+    "l:buena",
+    "l:canadiense",
+    "l:cariñoso",
+    "l:claro",
+    "l:decir",
+    "l:descansar",
+    "l:disculpar",
+    "l:dónde",
+    "l:estar",
+    "l:favor",
+    "l:formar",
+    "l:habitación",
+    "l:hace",
+    "l:libre",
+    "l:madrugar",
+    "l:mañana",
+    "l:mijo",
+    "l:nacer",
+    "l:noche",
+    "l:pasar",
+    "l:peso",
+    "l:pieza",
+    "l:poder",
+    "l:preguntar",
+    "l:quedar",
+    "l:quedarse",
+    "l:querer",
+    "l:qué",
+    "l:regalar",
+    "l:ser",
+    "l:señora",
+    "l:significar",
+    "l:sumercé",
+    "l:tarde",
+    "l:tener",
+    "l:tiempo",
+    "l:tomar",
+    "l:ver",
+    "l:vivir",
+    "l:vivo",
+    "p:aqui-ahi-alla",
+    "p:demonstratives-basic",
+    "p:disculpa-que",
+    "p:don-dona-nombre",
+    "p:estar-regalado",
+    "p:gracias-por",
+    "p:madrugar-trasnochar",
+    "p:me-te-nos-objects",
+    "p:naci-en",
+    "p:nos-vemos-a-las",
+    "p:para-inf",
+    "p:perdona-que-te-interrumpa",
+    "p:preguntar-pedir",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:que-subj-deseo",
+    "p:senor-don-article",
+    "p:ser-profession-no-article",
+    "p:te-lo-agradezco"
+  ]
+}
