@@ -1,7 +1,7 @@
 {
   "node": "g:pero-sino",
   "hook": {
-    "line": "Altamira's man keeps calling the café a business. Tomás wants to correct him, not just add a comment, and Spanish has a special word for exactly that: *sino*.",
+    "line": "Altamira keeps calling the café a business. Hernando wants to correct him, not just add a comment, and Spanish has a special word for exactly that: *sino*.",
     "es": "Para mí, el café no es un negocio, sino un hogar.",
     "en": "For me, the café isn't a business, it's a home."
   },
@@ -14,7 +14,7 @@
     { "es": "No es caro, pero no me convence.", "en": "It isn't expensive, but I'm not convinced." },
     { "es": "La reunión no es hoy, sino mañana.", "en": "The meeting isn't today, it's tomorrow." }
   ],
-  "rule": "English uses one word, but, for two different jobs. Spanish splits them.\n\n*pero* adds something. Both halves are true: it's expensive, and it's worth it. *Es caro, pero vale la pena.*\n\n*sino* swaps something. The first half says no, and the second half gives the right answer instead. *No soy de Bogotá, sino de Toronto.* Not Bogotá: Toronto.\n\nSo *sino* only ever comes after a *no*. After *sino*, just name the replacement; you don't repeat the verb.\n\nA quick test: if you could say instead, or it's actually, use *sino*. If you could say but still, or but also, use *pero*.\n\nWatch the middle example with *no*: *No es caro, pero no me convence* keeps both facts (cheap enough, still not convinced), so it's *pero*.",
+  "rule": "English uses one word, but, for two different jobs. Spanish splits them.\n\n*pero* adds something. Both halves are true: it's expensive, and it's worth it. *Es caro, pero vale la pena.*\n\n*sino* swaps something. The first half says no, and the second half gives the right answer instead. *No soy de Bogotá, sino de Toronto.* Not Bogotá: Toronto.\n\nSo *sino* only ever comes after a *no*. After *sino*, just name the replacement; you don't repeat the verb.\n\nA quick test: if you could say instead, or it's actually, use *sino*. If you could say but still, or but also, use *pero*.\n\nWatch the example with two *no*s: *No es caro, pero no me convence* keeps both facts (cheap enough, still not convinced), so it's *pero*.",
   "smallPrint": "Teachers call *sino* a corrective conjunction. When the replacement is a whole new action with its own verb, Spanish says *sino que*; that comes later.",
   "readAndPick": [
     { "es": "No quiero té, sino café.", "options": ["I want coffee instead of tea.", "I want tea and coffee.", "I don't want anything."], "answer": 0 },

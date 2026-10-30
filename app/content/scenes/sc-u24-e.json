@@ -69,7 +69,7 @@
     {
       "id": "t4",
       "npc": "Tercero: dos años sin arriendo. Con esa plata, nos vamos de viaje a Cartagena.",
-      "npcEn": "Third: two years with no rent. With that money, we go on a trip to Cartagena.",
+      "npcEn": "Third: two years with no rent. With that money, we're off on a trip to Cartagena.",
       "intent": "Say the money doesn't matter as much as the customers.",
       "accept": [
         "La plata no importa tanto como los clientes.",

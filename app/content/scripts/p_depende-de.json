@@ -2,7 +2,7 @@
   "node": "p:depende-de",
   "hook": {
     "line": "Doña Gloria asks Tomás straight out if he's moving. The honest answer to most big questions is a shrug and two words.",
-    "es": "¿Te vas a mudar a Chapinero?\nDepende de la oferta.",
+    "es": "¿Se va a mudar a Chapinero?\nDepende de la oferta.",
     "en": "Are you going to move to Chapinero?\nIt depends on the offer."
   },
   "examples": [

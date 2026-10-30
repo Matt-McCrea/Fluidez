@@ -2,7 +2,7 @@
   "id": "ch070",
   "unit": "u24",
   "title": "Dos años sin arriendo",
-  "text": "Esta vez, Ricardo Altamira no mandó una carta. Entró solo, sin sus hombres de traje, y pidió un tinto.\nAltamira: Señor Herrera, ya sé que Joaquín tiene la mitad. Yo también lo estoy buscando. Y tengo más abogados que usted.\nAltamira puso tres fotos en la mesa: un espacio enorme y moderno, con una cocina nueva y una vista maravillosa de la ciudad.\nAltamira: Es en Chapinero, y es mucho más grande que este café. Dos años sin arriendo, y yo cubro la mudanza.\nVale miró la foto de la cocina un rato largo.\nVale: ¿Y a cambio de qué?\nAltamira: A cambio, ustedes dejan la esquina, y usted me vende su mitad.\nTomás: Por un lado, es un regalo. Por otro lado, usted no regala nada.\nAltamira: No es un regalo, sino un negocio. Lo bueno es que no tienen que decidir hoy.\nHernando: Este café no es un negocio, sino un hogar. Rosa trabajó en esta esquina toda la vida.\nAltamira: Lo siento, Hernando, pero Rosa ya no está.\nPor un momento, nadie habló. Altamira pagó el tinto, y no esperó el cambio.\nEn la puerta, miró a Simón.\nAltamira: En Chapinero también hay espacio para el loro.\nSimón: ¡No me convence!\nHernando se rió tanto que tuvo que sentarse.\nEsa noche, Tomás no se durmió. A las tres de la mañana, Vale recibió un mensaje de Tomás: «¿Duermes?».\nVale: «No. Yo tampoco me duermo. La oferta no me convence, pero la cocina de las fotos es maravillosa».\nTomás miró la pared hasta las cinco.",
+  "text": "Esta vez, Ricardo Altamira no mandó una carta. Entró solo, sin sus hombres de traje, y pidió un tinto.\nAltamira: Señor Herrera, ya sé que Joaquín tiene la mitad. Yo también lo estoy buscando. Y tengo más abogados que usted.\nAltamira puso tres fotos en la mesa: un espacio enorme y moderno, con una cocina nueva y una vista maravillosa de la ciudad.\nAltamira: Es en Chapinero, y es mucho más grande que este café. Dos años sin arriendo, y yo cubro la mudanza.\nVale miró la foto de la cocina un rato largo.\nVale: ¿Y a cambio de qué?\nAltamira: A cambio, ustedes dejan la esquina, y usted me vende su mitad.\nTomás: Por un lado, es un regalo. Por otro lado, usted no regala nada.\nAltamira: No es un regalo, sino un negocio. Lo bueno es que no tienen que decidir hoy.\nHernando: Este café no es un negocio, sino un hogar. Rosa trabajó en esta esquina toda la vida.\nAltamira: Lo siento, don Hernando, pero Rosa ya no está.\nPor un momento, nadie habló. Altamira pagó el tinto, y no esperó el cambio.\nEn la puerta, miró a Simón.\nAltamira: En Chapinero también hay espacio para el loro.\nSimón: ¡No me convence!\nHernando se rió tanto que tuvo que sentarse.\nEsa noche, Tomás no se durmió. A las tres de la mañana, Vale recibió un mensaje de Tomás: «¿Duermes?».\nVale: «No. Yo tampoco me puedo dormir. La oferta no me convence, pero la cocina de las fotos es maravillosa».\nTomás miró la pared hasta las cinco.",
   "gloss": [
     {
       "es": "sin sus hombres de traje",
@@ -128,7 +128,7 @@
       "options": [
         "He doesn't pay",
         "With a card",
-        "With a big note, and he doesn't wait for his change",
+        "He pays, and he doesn't wait for his change",
         "Hernando pays for him"
       ],
       "answer": 2
@@ -152,6 +152,7 @@
     "c:no-me-convence",
     "c:no-se",
     "c:por-un-lado",
+    "c:puedo",
     "c:tengo",
     "c:tienes",
     "c:trabajo-en",
@@ -243,6 +244,7 @@
     "l:pagar",
     "l:pared",
     "l:pedir",
+    "l:poder",
     "l:poner",
     "l:puerta",
     "l:qué",

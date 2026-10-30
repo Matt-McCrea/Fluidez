@@ -21,7 +21,7 @@
         "n": 3
       }
     ],
-    "model": "Vale, hoy vi el apartamento en Chapinero. No es grande, sino bonito. Tiene mucha luz, pero es ruidoso. Lo bueno es que queda cerca del trabajo.",
+    "model": "Vale, hoy vi el apartamento en Chapinero. No es grande, sino pequeño. Tiene mucha luz, pero es ruidoso. Lo bueno es que queda cerca del parque.",
     "focus": "g:pero-sino",
     "requires": [
       "c:es-que",
@@ -34,17 +34,17 @@
       "g:ser-identity",
       "g:stem-boot",
       "l:apartamento",
-      "l:bonito",
       "l:bueno",
       "l:cerca",
       "l:grande",
       "l:hoy",
       "l:luz",
+      "l:parque",
+      "l:pequeño",
       "l:quedar",
       "l:ruidoso",
       "l:ser",
       "l:tener",
-      "l:trabajo",
       "l:ver",
       "p:cerca-de",
       "p:position-de",
@@ -166,14 +166,14 @@
   {
     "id": "w-u24-04",
     "unit": "u24",
-    "prompt": "Doña Gloria, an older neighbour you call usted, says the bigger flat is the better choice. Answer her politely: it is bigger, but you are not convinced.",
+    "prompt": "Doña Gloria, your landlady, an older woman you call usted, says the bigger flat is the better choice. Answer her politely: it is bigger, but you are not convinced.",
     "minWords": 25,
     "maxWords": 60,
     "constraints": [
       {
         "type": "containsWord",
         "word": "aunque",
-        "label": "start with aunque"
+        "label": "use aunque"
       },
       {
         "type": "containsWord",
@@ -339,7 +339,7 @@
   {
     "id": "w-u24-07",
     "unit": "u24",
-    "prompt": "Text a friend comparing two flats you saw. Say the first one is as expensive as the second, and the second is as bright as the first.",
+    "prompt": "Text a friend comparing two flats you saw. Say the first one is as expensive as the second and just as bright, and add one thing that isn't the way you expected.",
     "minWords": 25,
     "maxWords": 60,
     "constraints": [
@@ -356,7 +356,7 @@
         "type": "negation"
       }
     ],
-    "model": "El apartamento de Chapinero es tan caro como el apartamento de La Candelaria. El apartamento de La Candelaria es tan luminoso como el otro. No hay tanta diferencia como pensaba.",
+    "model": "El apartamento de Chapinero es tan caro como el apartamento de La Candelaria. También es tan luminoso como el otro. No hay tanta diferencia como pensaba.",
     "focus": "g:tanto-como",
     "requires": [
       "c:hay",
@@ -750,7 +750,7 @@
       }
     ],
     "model": "Señora, el apartamento es caro y queda lejos, pero igual lo quiero. Me gusta la vista y la luz. ¿Cuándo puedo verlo otra vez con mi amiga?",
-    "focus": "c:lo-bueno-es",
+    "focus": "c:igual",
     "requires": [
       "c:igual",
       "c:me-gusta",
@@ -807,7 +807,7 @@
       }
     ],
     "model": "Lo bueno es que el café tiene muchos clientes. Además, Vale está contenta aquí y nosotros trabajamos bien juntos. La oferta de Altamira es grande, pero no me convence nada.",
-    "focus": "c:lo-lo-bueno-es",
+    "focus": "c:lo-bueno-es",
     "requires": [
       "c:ademas",
       "c:bien-y-tu",

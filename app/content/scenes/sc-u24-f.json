@@ -80,14 +80,14 @@
       "accept": [
         "Nadie hace arepas tan buenas como usted.",
         "No, señora. Nadie hace arepas tan buenas como usted.",
-        "Qué va. Nadie hace las arepas tan buenas como usted."
+        "Qué va. Nadie hace unas arepas tan ricas como usted."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "tan buenas como",
+          "pattern": "tan \\w+ como",
           "flags": "i",
-          "label": "as good as: tan buenas como (tan before an adjective)"
+          "label": "as good as: tan + describing word + como"
         }
       ],
       "focus": "x:tan-tanto",
@@ -141,6 +141,7 @@
     "c:que-va",
     "c:tienes",
     "c:tranquilo",
+    "g:adjective-agreement",
     "g:aunque-indicative",
     "g:cause-result",
     "g:comparatives",
@@ -197,6 +198,7 @@
     "l:portero",
     "l:querer",
     "l:qué",
+    "l:rico",
     "l:saber",
     "l:ser",
     "l:señor",

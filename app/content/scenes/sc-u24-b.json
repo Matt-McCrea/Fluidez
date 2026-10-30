@@ -42,8 +42,8 @@
     },
     {
       "id": "t3",
-      "npc": "¿Pan? Ay, mija. Aquí en Medellín tiene su cuarto listo. ¿Y usted cree que ella debe volver?",
-      "npcEn": "Bread? Oh, that girl. Here in Medellín her room is ready for her. And do you think she should come back?",
+      "npc": "¿Pan? Ay, Dios mío. Aquí en Medellín tiene su cuarto listo. ¿Y usted cree que ella debe volver?",
+      "npcEn": "Bread? Oh, my God. Here in Medellín her room is ready for her. And do you think she should come back?",
       "intent": "Say tactfully that it depends on Vale.",
       "accept": [
         "Depende de Vale, señora.",
@@ -145,6 +145,7 @@
     "g:gender-articles",
     "g:indirect-objects",
     "g:pero-sino",
+    "g:possessives-stressed",
     "g:prep-pronouns",
     "g:present-ar",
     "g:present-er-ir",
@@ -181,7 +182,6 @@
     "l:llamar",
     "l:maleta",
     "l:mamá",
-    "l:mija",
     "l:pan",
     "l:peligroso",
     "l:querer",

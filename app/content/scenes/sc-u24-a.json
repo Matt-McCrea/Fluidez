@@ -68,7 +68,7 @@
     {
       "id": "t4",
       "npc": "Muchísima. Tiene vista a los cerros y una cocina amplia. ¿Usted vive cerca?",
-      "npcEn": "Loads. It has a view of the hills and a big kitchen. Do you live nearby?",
+      "npcEn": "Loads. It has a view of the hills and a spacious kitchen. Do you live nearby?",
       "intent": "Say no, you live in La Candelaria, and that even though it's noisy, you like it a lot.",
       "accept": [
         "No, vivo en La Candelaria. Aunque es ruidosa, me gusta mucho.",

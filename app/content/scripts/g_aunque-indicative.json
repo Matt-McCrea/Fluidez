@@ -83,9 +83,9 @@
       "why": "Rain isn't why you walk; it's what you walk in spite of, so *aunque*."
     },
     {
-      "wrong": "Aunque está domingo, trabajamos.",
-      "right": "Aunque es domingo, trabajamos.",
-      "why": "The day of the week takes *es*, with or without *aunque* in front."
+      "wrong": "Incluso aunque es caro, lo compro.",
+      "right": "Aunque es caro, lo compro.",
+      "why": "Even though is just *aunque*; you don't need a separate word for even."
     }
   ],
   "personal": "What do you do even though it isn't easy? Write two true sentences with *aunque*: one starting with it, and one with it in the middle."

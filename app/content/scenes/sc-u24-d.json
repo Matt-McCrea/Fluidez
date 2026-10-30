@@ -69,11 +69,11 @@
       "id": "t4",
       "npc": "¿Y no les da miedo? Altamira tiene mucha plata y muchos abogados.",
       "npcEn": "And aren't you scared? Altamira has a lot of money and a lot of lawyers.",
-      "intent": "Say a little, but you all have as many friends as he has lawyers.",
+      "intent": "Say a little, but you all have as many friends as they have lawyers.",
       "accept": [
-        "Un poco. Pero tenemos tantos amigos como él tiene abogados.",
-        "Un poco, pero nosotros tenemos tantos amigos como él tiene abogados.",
-        "Sí, un poco. Pero tenemos tantos amigos como abogados tiene él."
+        "Un poco. Pero tenemos tantos amigos como ellos tienen abogados.",
+        "Un poco, pero nosotros tenemos tantos amigos como Altamira tiene abogados.",
+        "Sí, un poco. Pero tenemos tantos amigos como abogados tienen ellos."
       ],
       "require": [
         {

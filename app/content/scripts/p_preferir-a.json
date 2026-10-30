@@ -8,7 +8,7 @@
   "examples": [
     { "es": "Prefiero el tinto al café con leche.", "en": "I prefer black coffee to coffee with milk." },
     { "es": "Vale prefiere Bogotá a Medellín.", "en": "Vale prefers Bogotá to Medellín." },
-    { "es": "Hernando prefiere el bus al metro.", "en": "Hernando prefers the bus to the metro." },
+    { "es": "Hernando prefiere el taxi al bus.", "en": "Hernando prefers taxis to the bus." },
     { "es": "Prefiero caminar a manejar.", "en": "I'd rather walk than drive." },
     { "es": "Prefiero que decidas tú.", "en": "I'd rather you decided." },
     { "es": "¿Prefieres la montaña al mar?", "en": "Do you prefer the mountains to the sea?" }
@@ -18,7 +18,7 @@
   "readAndPick": [
     { "es": "Prefiero el tinto al jugo.", "options": ["I like black coffee more.", "I like juice more."], "answer": 0 },
     { "es": "Prefiero el jugo al tinto.", "options": ["I like black coffee more.", "I like juice more."], "answer": 1 },
-    { "es": "Hernando prefiere el bus al metro.", "options": ["Hernando takes the metro.", "Hernando would rather take the bus.", "Hernando takes the bus to the metro."], "answer": 1 },
+    { "es": "Hernando prefiere el taxi al bus.", "options": ["Hernando takes the bus.", "Hernando would rather take a taxi.", "Hernando takes a taxi to the bus."], "answer": 1 },
     { "es": "Prefiero que vengas tú.", "options": ["I'd rather come myself.", "I'd rather you came."], "answer": 1 },
     { "es": "Prefiero ir yo.", "options": ["I'd rather go myself.", "I'd rather you went."], "answer": 0 },
     { "es": "Preferimos la luz al espacio.", "options": ["We'd choose space over light.", "We'd choose light over space.", "We want light and space."], "answer": 1 },
@@ -63,7 +63,7 @@
       "why": "Someone else's action: *que* and the wishing form, *decidas*."
     },
     {
-      "prompt": "Make it about a friend doing it instead of you: *Prefiero ir yo.* (I'd rather you came.)",
+      "prompt": "Make it about a friend doing it instead of you: *Prefiero venir yo.* (I'd rather you came.)",
       "answer": "Prefiero que vengas tú.",
       "accept": ["Prefiero que tú vengas."],
       "why": "Once it's another person's action, you need *que* plus *vengas*."

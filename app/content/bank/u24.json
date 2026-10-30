@@ -370,8 +370,8 @@
   },
   {
     "id": "u24-0016",
-    "es": "El baño no es grande, sino amplio y luminoso.",
-    "en": "The bathroom isn't big, it's roomy and bright.",
+    "es": "El baño no es oscuro, sino amplio y luminoso.",
+    "en": "The bathroom isn't dark, it's roomy and bright.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -380,9 +380,10 @@
       "g:ser-identity",
       "l:amplio",
       "l:baño",
-      "l:grande",
       "l:luminoso",
-      "l:ser"
+      "l:oscuro",
+      "l:ser",
+      "p:tiene-mucha-luz"
     ],
     "targets": [
       "g:pero-sino",
@@ -514,7 +515,7 @@
   },
   {
     "id": "u24-0022",
-    "es": "No es una oferta mala, pero no la acepto.",
+    "es": "No es una mala oferta, pero no la acepto.",
     "en": "It isn't a bad offer, but I'm not accepting it.",
     "accept": [],
     "acceptEn": [],
@@ -526,7 +527,9 @@
       "l:aceptar",
       "l:mala",
       "l:oferta",
-      "l:ser"
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [],
     "kind": "statement",
@@ -797,17 +800,15 @@
   },
   {
     "id": "u24-0034",
-    "es": "Doña Gloria no vive sola, sino con su hija.",
-    "en": "Doña Gloria doesn't live alone, but with her daughter.",
+    "es": "Doña Gloria no vive sola, sino con Tomás.",
+    "en": "Doña Gloria doesn't live alone, but with Tomás.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:pero-sino",
       "g:present-er-ir",
-      "l:hija",
       "l:vivir",
-      "p:possessives-basic",
       "p:senor-don-article"
     ],
     "targets": [
@@ -993,22 +994,18 @@
   },
   {
     "id": "u24-0042",
-    "es": "Vale no quiere irse de Bogotá, sino abrir su propia panadería.",
-    "en": "Vale doesn't want to leave Bogotá, but to open her own bakery.",
+    "es": "Vale no quiere volver a Medellín, sino hacer pan en Bogotá.",
+    "en": "Vale doesn't want to go back to Medellín, but to make bread in Bogotá.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:pero-sino",
-      "g:reflexive-routine",
       "g:stem-boot",
       "g:verb-infinitive",
-      "l:abrir",
-      "l:irse",
-      "l:panadería",
-      "l:propio",
+      "l:hacer",
+      "l:pan",
       "l:querer",
-      "p:possessives-basic"
+      "l:volver"
     ],
     "targets": [
       "g:pero-sino"
@@ -1294,8 +1291,8 @@
   },
   {
     "id": "u24-0054",
-    "es": "¿Vas a vivir en el centro?\nNo, sino en Chapinero.",
-    "en": "Are you going to live downtown? (to a friend)\nNo, in Chapinero.",
+    "es": "¿Vas a vivir en el centro?\nNo, no en el centro, sino en Chapinero.",
+    "en": "Are you going to live downtown? (to a friend)\nNo, not downtown, in Chapinero.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2059,22 +2056,22 @@
   },
   {
     "id": "u24-0086",
-    "es": "Aunque habla poco, Simón siempre dice algo importante.",
-    "en": "Even though he talks little, Simón always says something important.",
+    "es": "Aunque es un loro, Simón siempre dice algo importante.",
+    "en": "Even though he's a parrot, Simón always says something important.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:aunque-indicative",
-      "g:present-ar",
+      "g:gender-articles",
+      "g:ser-identity",
       "g:stem-e-i",
       "l:decir",
-      "l:hablar",
       "l:importante",
+      "l:loro",
+      "l:ser",
       "l:siempre",
       "p:frequency-scale",
-      "p:indefinites-basic",
-      "p:poco-un-poco",
-      "p:quantifiers-basic"
+      "p:indefinites-basic"
     ],
     "targets": [
       "g:aunque-indicative"
@@ -2136,20 +2133,20 @@
   },
   {
     "id": "u24-0089",
-    "es": "Aunque no lo creas, el apartamento tiene un patio.",
-    "en": "Even though you won't believe it, the flat has a patio. (to a friend)",
+    "es": "Aunque es barato, el apartamento tiene un patio.",
+    "en": "Even though it's cheap, the flat has a patio.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
       "g:aunque-indicative",
-      "g:direct-objects",
       "g:gender-articles",
-      "g:present-ar",
+      "g:ser-identity",
       "g:stem-boot",
       "l:apartamento",
-      "l:crear",
+      "l:barato",
       "l:patio",
+      "l:ser",
       "l:tener",
       "p:lugar-tiene"
     ],
@@ -2423,7 +2420,7 @@
   {
     "id": "u24-0100",
     "es": "Aunque Altamira promete mucho, nadie le cree.",
-    "en": "Even though Altamira promises a lot, nobody believes it.",
+    "en": "Even though Altamira promises a lot, nobody believes them.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2444,8 +2441,8 @@
   },
   {
     "id": "u24-0101",
-    "es": "Aunque el cuarto es amplio, no tiene luz.",
-    "en": "Even though the room is spacious, it gets no light.",
+    "es": "Aunque el cuarto es amplio, tiene poca luz.",
+    "en": "Even though the room is spacious, it doesn't get much light.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2458,6 +2455,8 @@
       "l:luz",
       "l:ser",
       "l:tener",
+      "p:poco-un-poco",
+      "p:quantifiers-basic",
       "p:tiene-mucha-luz"
     ],
     "targets": [
@@ -2602,7 +2601,7 @@
   },
   {
     "id": "u24-0107",
-    "es": "Aunque ellos me ofrecieron más, dije que no.",
+    "es": "Aunque me ofrecieron más, dije que no.",
     "en": "Even though they offered me more, I said no.",
     "accept": [],
     "acceptEn": [],
@@ -2931,12 +2930,11 @@
   },
   {
     "id": "u24-0120",
-    "es": "No quiero mudarme.\nAunque quieres más espacio, ¿no?",
-    "en": "I don't want to move.\nEven though you want more space, right?",
+    "es": "No quiero mudarme.\n¿Aunque quieres más espacio?",
+    "en": "I don't want to move.\nEven though you want more space? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:no-cierto",
       "c:quiero",
       "g:aunque-indicative",
       "g:object-pronoun-position",
@@ -2985,12 +2983,13 @@
   },
   {
     "id": "u24-0122",
-    "es": "¿Estás enojada?\nNo, aunque sí un poco cansada.",
-    "en": "Are you angry? (to a woman)\nNo, although a little tired, yes.",
+    "es": "¿Estás enojada?\nNo, aunque sí estoy un poco cansada.",
+    "en": "Are you angry? (to a woman)\nNo, although I am a little tired.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
+      "g:aunque-indicative",
       "g:estar-location-states",
       "g:gender-articles",
       "l:cansado",
@@ -3320,11 +3319,12 @@
   },
   {
     "id": "u24-0135",
-    "es": "Aunque ya vi cinco apartamentos, no escojo ninguno.",
-    "en": "Even though I've already seen five flats, I'm not choosing any.",
+    "es": "Aunque ya vi cinco apartamentos, todavía no escojo ninguno.",
+    "en": "Even though I've already seen five flats, I still haven't chosen one.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:todavia-no",
       "g:aunque-indicative",
       "g:indefinites",
       "g:negation-words",
@@ -3573,17 +3573,21 @@
   },
   {
     "id": "u24-0145",
-    "es": "No me importa aunque tarde un poco.",
-    "en": "I don't mind even though it takes a while.",
+    "es": "Siempre espero el bus, aunque tarda mucho.",
+    "en": "I always wait for the bus, even though it takes ages.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:me-importa-un-comino",
+      "g:aunque-indicative",
       "g:gender-articles",
-      "l:importar",
-      "l:tarde",
-      "p:poco-un-poco",
-      "p:quantifiers-basic"
+      "g:present-ar",
+      "l:bus",
+      "l:esperar",
+      "l:siempre",
+      "l:tardar",
+      "p:frequency-scale",
+      "p:quantifiers-basic",
+      "p:tardar-en"
     ],
     "targets": [],
     "kind": "statement",
@@ -4662,18 +4666,19 @@
   },
   {
     "id": "u24-0192",
-    "es": "¿Es caro el barrio?\nTanto como el centro.",
-    "en": "Is the neighborhood expensive?\nAs much as downtown.",
+    "es": "¿Hay mucho ruido en el barrio?\nTanto como en el centro.",
+    "en": "Is there a lot of noise in the neighborhood?\nAs much as downtown.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
       "g:gender-articles",
-      "g:ser-identity",
+      "g:hay-vs-esta",
       "g:tanto-como",
       "l:barrio",
-      "l:caro",
       "l:centro",
-      "l:ser"
+      "l:ruido",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:tanto-como"
@@ -4791,7 +4796,7 @@
   {
     "id": "u24-0197",
     "es": "¿Es difícil el examen?\nNo tanto como pensaba.",
-    "en": "Is the exam hard?\nNot as much as I thought.",
+    "en": "Is the exam hard?\nNot as hard as I thought.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4835,20 +4840,22 @@
   },
   {
     "id": "u24-0199",
-    "es": "¿Es tan lejos como dices?\nIgual de lejos.",
-    "en": "Is it as far as you say? (to a friend)\nJust as far.",
+    "es": "¿Todavía caminas tanto como antes?\nIgual que antes, todos los días.",
+    "en": "Do you still walk as much as before? (to a friend)\nSame as before, every day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:igual",
-      "g:comparatives",
-      "g:ser-identity",
-      "g:stem-e-i",
+      "g:gender-articles",
+      "g:present-ar",
       "g:tanto-como",
-      "l:decir",
+      "l:antes",
+      "l:caminar",
+      "l:día",
       "l:igual",
-      "l:lejos",
-      "l:ser"
+      "p:todos-los-dias",
+      "p:veces-al",
+      "p:ya-todavia-basic"
     ],
     "targets": [
       "c:igual",
@@ -5035,7 +5042,7 @@
   {
     "id": "u24-0208",
     "es": "¿Los dos viajes duran igual?",
-    "en": "Do the two trips last the same?",
+    "en": "Do the two trips take the same time?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6369,8 +6376,8 @@
   },
   {
     "id": "u24-0265",
-    "es": "Hace un año que Tomás tiene el café.",
-    "en": "Tomás has had the café for a year.",
+    "es": "Hace unos meses que Tomás tiene el café.",
+    "en": "Tomás has had the café for a few months.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6379,9 +6386,9 @@
       "g:hace-que-desde",
       "g:present-er-ir",
       "g:stem-boot",
-      "l:año",
       "l:café",
       "l:hacer",
+      "l:mes",
       "l:tener"
     ],
     "targets": [
@@ -6760,23 +6767,26 @@
   },
   {
     "id": "u24-0281",
-    "es": "¿Hace cuánto trabaja Hernando de taxista?\nHace cuarenta años, pero ya se retiró.",
-    "en": "How long has Hernando been a taxi driver?\nFor forty years, but he's retired now.",
+    "es": "¿Hace cuánto que Hernando tiene su taxi?\nHace cuarenta años, y todavía funciona.",
+    "en": "How long has Hernando had his taxi?\nForty years, and it still works.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:hace-ago",
       "g:present-ar",
       "g:present-er-ir",
-      "g:preterite-ar",
       "g:questions",
-      "g:reflexive-routine",
+      "g:stem-boot",
+      "g:that-clauses",
       "l:año",
       "l:cuánto",
+      "l:funcionar",
       "l:hacer",
-      "l:retirarse",
-      "l:taxista",
-      "l:trabajar"
+      "l:taxi",
+      "l:tener",
+      "p:possessives-basic",
+      "p:ya-todavia-basic"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -7328,21 +7338,20 @@
   },
   {
     "id": "u24-0306",
-    "es": "Hace seis meses que Vale quiere abrir su panadería.",
-    "en": "Vale has wanted to open her bakery for six months.",
+    "es": "Hace seis meses que Vale prueba recetas nuevas.",
+    "en": "Vale has been trying new recipes for six months.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:hace-que-desde",
       "g:present-er-ir",
       "g:stem-boot",
-      "g:verb-infinitive",
-      "l:abrir",
       "l:hacer",
       "l:mes",
-      "l:panadería",
-      "l:querer",
-      "p:possessives-basic"
+      "l:nuevo",
+      "l:probar",
+      "l:receta"
     ],
     "targets": [
       "g:hace-que-desde"
@@ -7499,18 +7508,19 @@
   },
   {
     "id": "u24-0313",
-    "es": "Hace tres años que Simón vive en el café.",
-    "en": "Simón has lived in the café for three years.",
+    "es": "Hace una semana que Simón repite la misma palabra.",
+    "en": "Simón has been repeating the same word for a week.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:hace-que-desde",
       "g:present-er-ir",
-      "l:año",
-      "l:café",
+      "g:stem-e-i",
       "l:hacer",
-      "l:vivir"
+      "l:palabra",
+      "l:repetir",
+      "l:semana"
     ],
     "targets": [
       "g:hace-que-desde"
@@ -8204,7 +8214,7 @@
   },
   {
     "id": "u24-0342",
-    "es": "Tenemos un amigo común, aunque no lo conocemos bien.",
+    "es": "Tenemos un amigo en común, aunque no lo conocemos bien.",
     "en": "We have a friend in common, even though we don't know him well.",
     "accept": [],
     "acceptEn": [],
@@ -9090,20 +9100,22 @@
   },
   {
     "id": "u24-0379",
-    "es": "No destruyas ese papel, sino guárdalo.",
-    "en": "Don't destroy that paper, keep it. (to a friend)",
+    "es": "No quiero destruir ese papel, sino guardarlo.",
+    "en": "I don't want to destroy that paper, but to keep it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:commands-tu",
-      "g:commands-with-pronouns",
+      "c:quiero",
       "g:demonstratives",
       "g:direct-objects",
-      "g:negative-commands",
+      "g:object-pronoun-position",
       "g:pero-sino",
+      "g:stem-boot",
+      "g:verb-infinitive",
       "l:destruir",
       "l:guardar",
-      "l:papel"
+      "l:papel",
+      "l:querer"
     ],
     "targets": [
       "g:pero-sino",
@@ -9116,15 +9128,19 @@
   },
   {
     "id": "u24-0380",
-    "es": "Mi gata parió cuatro gatos.",
-    "en": "My cat gave birth to four kittens.",
+    "es": "Mi gata parió el lunes: tuvo cuatro.",
+    "en": "My cat gave birth on Monday: she had four.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:cuatro-gatos",
+      "g:gender-articles",
       "g:preterite-er-ir",
+      "g:preterite-irregular-strong",
       "l:gato",
+      "l:lunes",
       "l:parir",
+      "l:tener",
+      "p:days-el-lunes",
       "p:possessives-basic"
     ],
     "targets": [
@@ -9713,8 +9729,8 @@
   },
   {
     "id": "u24-0405",
-    "es": "Tomás no quiere mudarse de la Candelaria, sino abrir otra sucursal.",
-    "en": "Tomás doesn't want to move out of La Candelaria, but to open another branch.",
+    "es": "Tomás no quiere mudarse a Chapinero, sino arreglar el café.",
+    "en": "Tomás doesn't want to move to Chapinero, but to fix up the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9723,11 +9739,10 @@
       "g:reflexive-routine",
       "g:stem-boot",
       "g:verb-infinitive",
-      "l:abrir",
+      "l:arreglar",
+      "l:café",
       "l:mudarse",
-      "l:querer",
-      "l:sucursal",
-      "p:otro-no-article"
+      "l:querer"
     ],
     "targets": [
       "g:pero-sino",
@@ -9836,8 +9851,8 @@
   },
   {
     "id": "u24-0410",
-    "es": "Vale no escribe cartas, sino postales de colores.",
-    "en": "Vale doesn't write letters, but colorful postcards.",
+    "es": "Mi mamá no escribe cartas, sino postales de colores.",
+    "en": "My mom doesn't write letters, but colorful postcards.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9846,7 +9861,9 @@
       "l:carta",
       "l:color",
       "l:escribir",
-      "l:postal"
+      "l:mamá",
+      "l:postal",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:pero-sino",
@@ -10017,19 +10034,20 @@
   },
   {
     "id": "u24-0417",
-    "es": "La administración del conjunto no cobra mucho, sino demasiado poco.",
-    "en": "The complex management doesn't charge much, but far too little.",
+    "es": "En este conjunto, la administración no la paga usted, sino el dueño.",
+    "en": "In this complex, you don't pay the building fees, the owner does. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:direct-objects",
       "g:gender-articles",
       "g:pero-sino",
       "g:present-ar",
-      "g:quantifiers",
       "l:administración",
-      "l:cobrar",
       "l:conjunto",
-      "p:quantifiers-basic"
+      "l:dueño",
+      "l:pagar",
+      "p:demonstratives-basic"
     ],
     "targets": [
       "g:pero-sino",
@@ -10090,8 +10108,8 @@
   },
   {
     "id": "u24-0420",
-    "es": "No tomamos el bus, sino el metro de la ciudad.",
-    "en": "We don't take the bus, but the city train.",
+    "es": "No tomamos el bus, sino un taxi.",
+    "en": "We don't take the bus, but a taxi.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10099,8 +10117,7 @@
       "g:pero-sino",
       "g:present-ar",
       "l:bus",
-      "l:ciudad",
-      "l:metro",
+      "l:taxi",
       "l:tomar"
     ],
     "targets": [
@@ -10188,8 +10205,8 @@
   },
   {
     "id": "u24-0424",
-    "es": "Nadie sino Tomás conoce la historia completa.",
-    "en": "Nobody but Tomás knows the whole story.",
+    "es": "Tomás no conoce la historia completa, sino una parte.",
+    "en": "Tomás doesn't know the whole story, just part of it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10200,6 +10217,7 @@
       "l:completar",
       "l:conocer",
       "l:historia",
+      "l:parte",
       "p:saber-conocer"
     ],
     "targets": [
@@ -10212,17 +10230,17 @@
   },
   {
     "id": "u24-0425",
-    "es": "No quiero nada sino un poco de silencio.",
-    "en": "I want nothing but a little silence.",
+    "es": "No quiero más ruido, sino un poco de silencio.",
+    "en": "I don't want more noise, but a little silence.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:quiero",
       "g:gender-articles",
-      "g:negation-words",
       "g:pero-sino",
       "g:stem-boot",
       "l:querer",
+      "l:ruido",
       "l:silencio",
       "p:poco-un-poco",
       "p:quantifiers-basic"
@@ -10237,20 +10255,19 @@
   },
   {
     "id": "u24-0426",
-    "es": "No tengo otra opción sino quedarme.",
-    "en": "I have no other choice but to stay.",
+    "es": "La solución no es irse, sino quedarse.",
+    "en": "The answer isn't to leave, but to stay.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tengo",
-      "g:object-pronoun-position",
+      "g:gender-articles",
       "g:pero-sino",
       "g:reflexive-routine",
-      "g:yo-irregular",
-      "l:opción",
-      "l:quedar",
-      "l:tener",
-      "p:otro-no-article"
+      "g:ser-identity",
+      "l:irse",
+      "l:quedarse",
+      "l:ser",
+      "l:solución"
     ],
     "targets": [
       "g:pero-sino"
@@ -10484,17 +10501,19 @@
   },
   {
     "id": "u24-0437",
-    "es": "No quiero tarde, sino temprano.",
-    "en": "I want it early, not late.",
+    "es": "La cita no es por la tarde, sino por la mañana.",
+    "en": "The appointment isn't in the afternoon, but in the morning.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:quiero",
+      "g:gender-articles",
       "g:pero-sino",
-      "g:stem-boot",
-      "l:querer",
+      "g:ser-identity",
+      "l:cita",
+      "l:mañana",
+      "l:ser",
       "l:tarde",
-      "l:temprano"
+      "p:por-la-manana"
     ],
     "targets": [
       "g:pero-sino"
@@ -10734,17 +10753,16 @@
   },
   {
     "id": "u24-0448",
-    "es": "Doña Gloria no vende flores, sino plantas.",
-    "en": "Doña Gloria doesn't sell flowers, but plants.",
+    "es": "Doña Gloria no hace pan, sino arepas.",
+    "en": "Doña Gloria doesn't make bread, but arepas.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:pero-sino",
-      "g:present-ar",
       "g:present-er-ir",
-      "l:flor",
-      "l:plantar",
-      "l:vender",
+      "l:arepa",
+      "l:hacer",
+      "l:pan",
       "p:senor-don-article"
     ],
     "targets": [
@@ -11291,18 +11309,15 @@
   },
   {
     "id": "u24-0473",
-    "es": "¿No fue Tomás sino Vale quien llamó?",
-    "en": "Wasn't it Tomás but Vale who called?",
+    "es": "¿Entonces no llamó Tomás, sino Vale?",
+    "en": "So it wasn't Tomás who called, but Vale?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:entonces-bueno",
       "g:pero-sino",
       "g:preterite-ar",
-      "g:preterite-ser-ir-hacer",
-      "g:relatives-donde-lo-que",
-      "g:ser-identity",
-      "l:llamar",
-      "l:ser"
+      "l:llamar"
     ],
     "targets": [
       "g:pero-sino"
@@ -11314,11 +11329,12 @@
   },
   {
     "id": "u24-0474",
-    "es": "¿No quieres té, sino café?",
-    "en": "Don't you want tea, but coffee? (to a friend)",
+    "es": "¿Entonces no quieres té, sino café?",
+    "en": "So you don't want tea, you want coffee? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:entonces-bueno",
       "g:pero-sino",
       "g:stem-boot",
       "l:café",
@@ -11335,8 +11351,8 @@
   },
   {
     "id": "u24-0475",
-    "es": "¿No viste a Hernando, sino a su hermano?",
-    "en": "Did you not see Hernando, but his brother? (to a friend)",
+    "es": "¿Tú no viste a Hernando, sino a su hermano?",
+    "en": "You didn't see Hernando, you saw his brother? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11356,18 +11372,16 @@
   },
   {
     "id": "u24-0476",
-    "es": "¿Qué quieres, no un trasteo, sino una fiesta?",
-    "en": "What do you want, not a move, but a party? (to a friend)",
+    "es": "¿Vale no quiere un trasteo, sino una fiesta?",
+    "en": "Vale doesn't want a move, she wants a party?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:pero-sino",
-      "g:questions",
       "g:stem-boot",
       "l:fiesta",
       "l:querer",
-      "l:qué",
       "l:trasteo"
     ],
     "targets": [
@@ -11451,11 +11465,12 @@
   },
   {
     "id": "u24-0480",
-    "es": "¿No vive en Bogotá sino en Soacha?",
-    "en": "Doesn't he live in Bogotá but in Soacha?",
+    "es": "¿Entonces no vive en Bogotá, sino en Soacha?",
+    "en": "So he doesn't live in Bogotá, but in Soacha?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:entonces-bueno",
       "g:pero-sino",
       "g:present-er-ir",
       "l:vivir"
@@ -11470,18 +11485,15 @@
   },
   {
     "id": "u24-0481",
-    "es": "Vale cena tan tarde como Hernando se levanta temprano.",
-    "en": "Vale has dinner as late as Hernando gets up early.",
+    "es": "Vale cena tan tarde como Mariana.",
+    "en": "Vale has dinner as late as Mariana.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparatives",
       "g:present-ar",
-      "g:reflexive-routine",
       "l:cenar",
-      "l:levantarse",
-      "l:tarde",
-      "l:temprano"
+      "l:tarde"
     ],
     "targets": [
       "l:cenar"
@@ -11493,18 +11505,19 @@
   },
   {
     "id": "u24-0482",
-    "es": "Hoy cenamos tantos como ayer, ocho personas.",
-    "en": "Today we had as many for dinner as yesterday, eight people.",
+    "es": "Hoy vinieron a cenar tantas personas como ayer: ocho.",
+    "en": "Today as many people came to dinner as yesterday: eight.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ayer-anoche",
-      "g:preterite-ar",
+      "g:preterite-spelling-stem",
       "g:tanto-como",
       "l:ayer",
       "l:cenar",
       "l:hoy",
-      "l:persona"
+      "l:persona",
+      "l:venir"
     ],
     "targets": [
       "g:tanto-como",
@@ -11517,17 +11530,15 @@
   },
   {
     "id": "u24-0483",
-    "es": "Tomás cena tanto como un niño, y luego pide postre.",
-    "en": "Tomás eats dinner like a child, and then asks for dessert.",
+    "es": "Tomás cena tanto como Hernando, y luego pide postre.",
+    "en": "Tomás eats as much at dinner as Hernando, and then asks for dessert.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:present-ar",
       "g:stem-e-i",
       "g:tanto-como",
       "l:cenar",
-      "l:niño",
       "l:pedir",
       "l:postre",
       "p:time-sequence-basic"
@@ -11598,19 +11609,19 @@
   },
   {
     "id": "u24-0486",
-    "es": "Mi abuela tenía tanta ciencia en la cocina como un chef.",
-    "en": "My grandmother had as much know-how in the kitchen as a chef.",
+    "es": "Para Vale, hacer pan es tanto ciencia como arte.",
+    "en": "For Vale, making bread is as much science as art.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:imperfect-states",
-      "l:abuela",
-      "l:chef",
+      "g:ser-identity",
+      "g:tanto-como",
+      "l:arte",
       "l:ciencia",
-      "l:cocina",
-      "l:tener",
-      "p:possessives-basic"
+      "l:hacer",
+      "l:pan",
+      "l:ser",
+      "p:para-inf"
     ],
     "targets": [
       "l:ciencia"
@@ -11622,12 +11633,11 @@
   },
   {
     "id": "u24-0487",
-    "es": "Esa ciencia me interesa tanto como la historia.",
-    "en": "That science interests me as much as history.",
+    "es": "La ciencia me interesa tanto como la historia.",
+    "en": "Science interests me as much as history.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:demonstratives",
       "g:gender-articles",
       "g:gustar-full",
       "g:present-ar",
@@ -11806,14 +11816,15 @@
   },
   {
     "id": "u24-0494",
-    "es": "Rosa luchó contra su enfermedad tanto como pudo.",
-    "en": "Rosa fought her illness as much as she could.",
+    "es": "Mi abuelo luchó contra su enfermedad tanto como pudo.",
+    "en": "My grandfather fought his illness as hard as he could.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:preterite-ar",
       "g:preterite-irregular-strong",
       "g:tanto-como",
+      "l:abuelo",
       "l:enfermedad",
       "l:luchar",
       "l:poder",
@@ -11931,8 +11942,8 @@
   },
   {
     "id": "u24-0499",
-    "es": "Ese lugar tiene tanta alma como un museo.",
-    "en": "That place has as much soul as a museum.",
+    "es": "Ese café moderno no tiene tanta alma como el café de Rosa.",
+    "en": "That modern café doesn't have as much soul as Rosa's.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11942,8 +11953,8 @@
       "g:stem-boot",
       "g:tanto-como",
       "l:alma",
-      "l:lugar",
-      "l:museo",
+      "l:café",
+      "l:moderno",
       "l:tener"
     ],
     "targets": [
@@ -12107,16 +12118,17 @@
   },
   {
     "id": "u24-0506",
-    "es": "¿Cenaste?\nTanto como pude.",
-    "en": "Did you have dinner? (to a friend)\nAs much as I could.",
+    "es": "¿Cenaste?\nSí, y comí tanto como tú.",
+    "en": "Did you have dinner? (to a friend)\nYes, and I ate as much as you did.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:comi",
       "g:preterite-ar",
-      "g:preterite-irregular-strong",
+      "g:preterite-er-ir",
       "g:tanto-como",
       "l:cenar",
-      "l:poder"
+      "l:comer"
     ],
     "targets": [
       "g:tanto-como",
@@ -12204,18 +12216,18 @@
   },
   {
     "id": "u24-0510",
-    "es": "¿Es difícil la ciencia?\nTanto como la historia.",
-    "en": "Is science hard?\nAs much as history.",
+    "es": "¿Te gusta la ciencia?\nTanto como la historia.",
+    "en": "Do you like science? (to a friend)\nAs much as history.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:me-gusta",
       "g:gender-articles",
-      "g:ser-identity",
+      "g:gustar-basic",
       "g:tanto-como",
       "l:ciencia",
-      "l:difícil",
-      "l:historia",
-      "l:ser"
+      "l:gustar",
+      "l:historia"
     ],
     "targets": [
       "g:tanto-como",
@@ -12257,8 +12269,8 @@
   },
   {
     "id": "u24-0512",
-    "es": "¿Todavía lo niegas?\nIgual que antes.",
-    "en": "Are you still denying it? (to a friend)\nSame as before.",
+    "es": "¿Altamira todavía lo niega?\nSí, igual que siempre.",
+    "en": "Is Altamira still denying it?\nYes, same as always.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12266,9 +12278,10 @@
       "g:direct-objects",
       "g:stem-boot",
       "g:tanto-como",
-      "l:antes",
       "l:igual",
       "l:negar",
+      "l:siempre",
+      "p:frequency-scale",
       "p:ya-todavia-basic"
     ],
     "targets": [
@@ -12332,18 +12345,23 @@
   },
   {
     "id": "u24-0515",
-    "es": "¿Y al cabo de un año?\nIgual de bien.",
-    "en": "And after a year?\nJust as well.",
+    "es": "¿Y cómo estaba al cabo de un año?\nIgual de bien.",
+    "en": "And how was he after a year?\nJust as well.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
       "c:igual",
+      "g:estar-location-states",
       "g:gender-articles",
+      "g:imperfect-states",
+      "g:questions",
       "g:tanto-como",
       "l:año",
       "l:bien",
       "l:cabo",
+      "l:cómo",
+      "l:estar",
       "l:igual"
     ],
     "targets": [
@@ -12501,8 +12519,8 @@
   },
   {
     "id": "u24-0522",
-    "es": "Hace tres años que Hernando no sube a un avión.",
-    "en": "Hernando hasn't boarded a plane for three years.",
+    "es": "Hace treinta años que Hernando no sube a un avión.",
+    "en": "Hernando hasn't boarded a plane for thirty years.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12792,7 +12810,7 @@
   },
   {
     "id": "u24-0534",
-    "es": "Conozco a Doña Gloria desde hace veinte años.",
+    "es": "Conozco a doña Gloria desde hace veinte años.",
     "en": "I've known Doña Gloria for twenty years.",
     "accept": [],
     "acceptEn": [],
@@ -12887,22 +12905,21 @@
   },
   {
     "id": "u24-0538",
-    "es": "Hace mucho tiempo que Rosa no está, pero su café sigue.",
-    "en": "Rosa has been gone a long time, but her café goes on.",
+    "es": "Hace un año que el café abre todos los días.",
+    "en": "The café has opened every day for a year.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
+      "g:gender-articles",
       "g:hace-que-desde",
       "g:present-er-ir",
-      "g:stem-e-i",
+      "l:abrir",
+      "l:año",
       "l:café",
-      "l:estar",
+      "l:día",
       "l:hacer",
-      "l:seguir",
-      "l:tiempo",
-      "p:possessives-basic",
-      "p:quantifiers-basic"
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "g:hace-que-desde"
@@ -13147,8 +13164,8 @@
   },
   {
     "id": "u24-0548",
-    "es": "Hernando se retiró hace quince años.",
-    "en": "Hernando retired fifteen years ago.",
+    "es": "Mi papá se retiró hace quince años.",
+    "en": "My dad retired fifteen years ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13158,7 +13175,9 @@
       "g:reflexive-routine",
       "l:año",
       "l:hacer",
-      "l:retirarse"
+      "l:papá",
+      "l:retirarse",
+      "p:possessives-basic"
     ],
     "targets": [],
     "kind": "statement",
@@ -13168,13 +13187,12 @@
   },
   {
     "id": "u24-0549",
-    "es": "Rosa abrió el café hace cincuenta años.",
-    "en": "Rosa opened the café fifty years ago.",
+    "es": "Rosa abrió el café hace casi cincuenta años.",
+    "en": "Rosa opened the café almost fifty years ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:hace-ago",
       "g:present-er-ir",
       "g:preterite-er-ir",
       "l:abrir",
@@ -13524,17 +13542,18 @@
   },
   {
     "id": "u24-0564",
-    "es": "Hace veinte años que Rosa tenía a Simón.",
-    "en": "Rosa had had Simón for twenty years.",
+    "es": "Hace treinta años que Simón vive en el café.",
+    "en": "Simón has lived in the café for thirty years.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:hace-que-desde",
-      "g:imperfect-states",
       "g:present-er-ir",
       "l:año",
+      "l:café",
       "l:hacer",
-      "l:tener"
+      "l:vivir"
     ],
     "targets": [
       "g:hace-que-desde"
@@ -13730,8 +13749,8 @@
   },
   {
     "id": "u24-0572",
-    "es": "¿Cuándo se retiró Hernando?\nHace diez años.",
-    "en": "When did Hernando retire?\nTen years ago.",
+    "es": "¿Cuándo se retiró tu papá?\nHace diez años.",
+    "en": "When did your dad retire? (to a friend)\nTen years ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13743,7 +13762,9 @@
       "l:año",
       "l:cuándo",
       "l:hacer",
-      "l:retirarse"
+      "l:papá",
+      "l:retirarse",
+      "p:possessives-basic"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -14322,16 +14343,19 @@
   },
   {
     "id": "u24-0598",
-    "es": "El precio depende del tamaño del cuarto.",
-    "en": "The price depends on the size of the room.",
+    "es": "El precio del trasteo depende de la distancia.",
+    "en": "The price of the move depends on the distance.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:depende",
+      "g:direct-objects",
       "g:gender-articles",
+      "g:present-ar",
       "l:depender",
+      "l:distanciar",
       "l:precio",
-      "l:tamaño"
+      "l:trasteo"
     ],
     "targets": [],
     "kind": "statement",
@@ -14627,15 +14651,17 @@
   },
   {
     "id": "u24-0612",
-    "es": "Hernando prefiere caminar a manejar.",
-    "en": "Hernando prefers walking to driving.",
+    "es": "Mi papá prefiere caminar a manejar.",
+    "en": "My dad prefers walking to driving.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:stem-boot",
       "l:caminar",
       "l:manejar",
+      "l:papá",
       "l:preferir",
+      "p:possessives-basic",
       "p:prefieres-x-o-y"
     ],
     "targets": [],
@@ -14956,17 +14982,19 @@
   },
   {
     "id": "u24-0626",
-    "es": "¿Prefieres el barrio o la casa?\nPrefiero la casa al barrio.",
-    "en": "Do you prefer the neighborhood or the house? (to a friend)\nI prefer the house to the neighborhood.",
+    "es": "¿Prefieres el cuarto o la sala para trabajar?\nPrefiero la sala al cuarto.",
+    "en": "Do you prefer the bedroom or the living room for working? (to a friend)\nI prefer the living room to the bedroom.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:stem-boot",
-      "l:barrio",
-      "l:casa",
       "l:preferir",
+      "l:sala",
+      "l:trabajar",
       "p:gustar-mas-que",
+      "p:para-inf",
+      "p:para-inf-purpose",
       "p:preferir-a",
       "p:prefieres-x-o-y"
     ],
@@ -14980,18 +15008,26 @@
   },
   {
     "id": "u24-0627",
-    "es": "¿Cuál prefieres, la vista o el precio?\nPrefiero el precio a la vista.",
-    "en": "Which do you prefer, the view or the price? (to a friend)\nI prefer the price to the view.",
+    "es": "¿Qué es más importante, la vista o el precio?\nEl precio. Prefiero un buen precio a una buena vista.",
+    "en": "What's more important, the view or the price?\nThe price. I prefer a good price to a good view.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:a-cuantas-cuotas",
       "g:gender-articles",
       "g:questions",
+      "g:ser-identity",
       "g:stem-boot",
-      "l:cuál",
+      "l:buen",
+      "l:buena",
+      "l:importante",
       "l:precio",
       "l:preferir",
+      "l:qué",
+      "l:ser",
       "l:vista",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:gustar-mas-que",
       "p:preferir-a",
       "p:prefieres-x-o-y"
@@ -15094,17 +15130,19 @@
   },
   {
     "id": "u24-0632",
-    "es": "¿Prefieres el trasteo en sábado o en domingo?",
-    "en": "Do you prefer the move on Saturday or on Sunday? (to a friend)",
+    "es": "¿Prefieres hacer el trasteo el sábado o el domingo?",
+    "en": "Do you prefer to do the move on Saturday or on Sunday? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:stem-boot",
       "l:domingo",
+      "l:hacer",
       "l:preferir",
       "l:sábado",
       "l:trasteo",
+      "p:days-el-lunes",
       "p:prefieres-x-o-y"
     ],
     "targets": [
@@ -15684,17 +15722,20 @@
   },
   {
     "id": "u24-0654",
-    "es": "El apartamento de Altamira es amplio y luminoso, pero frío.",
-    "en": "Altamira's flat is spacious and bright, but cold.",
+    "es": "El apartamento que ofrece Altamira es amplio y luminoso, pero frío.",
+    "en": "The flat Altamira is offering is spacious and bright, but cold.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:present-er-ir",
+      "g:relative-que",
       "g:ser-identity",
       "l:amplio",
       "l:apartamento",
       "l:frío",
       "l:luminoso",
+      "l:ofrecer",
       "l:ser",
       "p:tiene-mucha-luz"
     ],
@@ -16402,8 +16443,8 @@
   },
   {
     "id": "u24-0682",
-    "es": "Por un lado, el cuarto es amplio; por otro, no tiene luz.",
-    "en": "On the one hand, the room is spacious; on the other, it has no light.",
+    "es": "Por un lado, el cuarto es amplio; por otro, tiene poca luz.",
+    "en": "On the one hand, the room is spacious; on the other, it doesn't get much light.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16418,6 +16459,8 @@
       "l:luz",
       "l:ser",
       "l:tener",
+      "p:poco-un-poco",
+      "p:quantifiers-basic",
       "p:tiene-mucha-luz"
     ],
     "targets": [
@@ -17251,20 +17294,25 @@
   },
   {
     "id": "u24-0716",
-    "es": "¿Y la idea de Vale?\nLa idea es abrir su propia panadería.",
-    "en": "And Vale's idea?\nThe idea is to open her own bakery.",
+    "es": "¿Y Vale qué piensa?\nLa idea es hacer un pan nuevo cada semana.",
+    "en": "And what does Vale think?\nThe idea is to make a new bread every week.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:la-idea-es",
-      "g:adjective-agreement",
+      "g:cada-cualquier",
       "g:gender-articles",
-      "l:abrir",
+      "g:questions",
+      "g:stem-boot",
+      "l:hacer",
       "l:idea",
-      "l:panadería",
-      "l:propio",
+      "l:nuevo",
+      "l:pan",
+      "l:pensar",
+      "l:qué",
+      "l:semana",
       "l:ser",
-      "p:possessives-basic"
+      "p:veces-al"
     ],
     "targets": [
       "c:la-idea-es"
@@ -17523,16 +17571,22 @@
   },
   {
     "id": "u24-0727",
-    "es": "¿Quieres un tinto?\nIgual, gracias.",
-    "en": "Do you want a black coffee? (to a friend)\nNo, thanks anyway.",
+    "es": "Ya no hay pan de Vale.\nBueno, pero igual quiero un tinto.",
+    "en": "There's no more of Vale's bread.\nOK, but I still want a black coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:gracias-de-nada",
+      "c:entonces-bueno",
+      "c:hay",
       "c:igual",
+      "c:quiero",
+      "c:ya-no",
       "g:gender-articles",
+      "g:hay-vs-esta",
       "g:stem-boot",
+      "l:bueno",
       "l:igual",
+      "l:pan",
       "l:querer",
       "l:tinto"
     ],
@@ -17770,8 +17824,8 @@
   },
   {
     "id": "u24-0737",
-    "es": "Vale prefiere Chapinero a la Candelaria.",
-    "en": "Vale prefers Chapinero to La Candelaria.",
+    "es": "Vale prefiere La Candelaria a Chapinero.",
+    "en": "Vale prefers La Candelaria to Chapinero.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17792,14 +17846,14 @@
   },
   {
     "id": "u24-0738",
-    "es": "Prefiero la sopa al jugo.",
-    "en": "I prefer soup to juice.",
+    "es": "Prefiero la sopa a la ensalada.",
+    "en": "I prefer soup to salad.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:stem-boot",
-      "l:jugo",
+      "l:ensalada",
       "l:preferir",
       "l:sopa",
       "p:gustar-mas-que",
@@ -17922,14 +17976,17 @@
   },
   {
     "id": "u24-0743",
-    "es": "Prefiero la vista al balcón.",
-    "en": "I prefer the view to the balcony.",
+    "es": "Prefiero una vista bonita a un balcón grande.",
+    "en": "I prefer a pretty view to a big balcony.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:stem-boot",
       "l:balcón",
+      "l:bonito",
+      "l:grande",
       "l:preferir",
       "l:vista",
       "p:gustar-mas-que",
@@ -18298,16 +18355,16 @@
   },
   {
     "id": "u24-0759",
-    "es": "Prefiero el cuarto con balcón al cuarto con ventana.",
-    "en": "I prefer the room with a balcony to the room with a window.",
+    "es": "Prefiero el cuarto de arriba al cuarto de abajo.",
+    "en": "I prefer the upstairs room to the downstairs one.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:stem-boot",
-      "l:balcón",
+      "l:abajo",
+      "l:arriba",
       "l:preferir",
-      "l:ventana",
       "p:prefieres-x-o-y"
     ],
     "targets": [],
@@ -18318,15 +18375,15 @@
   },
   {
     "id": "u24-0760",
-    "es": "¿Prefieres el bus al metro?",
-    "en": "Do you prefer the bus to the metro? (to a friend)",
+    "es": "¿Prefieres el bus a la bicicleta?",
+    "en": "Do you prefer the bus to the bike? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:stem-boot",
+      "l:bicicleta",
       "l:bus",
-      "l:metro",
       "l:preferir",
       "p:gustar-mas-que",
       "p:preferir-a",
@@ -18342,8 +18399,8 @@
   },
   {
     "id": "u24-0761",
-    "es": "¿Prefiere usted el cuarto con vista al cuarto con luz?",
-    "en": "Do you prefer the room with a view to the room with light? (polite)",
+    "es": "¿Usted prefiere la luz a la vista?",
+    "en": "Do you prefer light to a view? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18352,6 +18409,8 @@
       "l:luz",
       "l:preferir",
       "l:vista",
+      "p:gustar-mas-que",
+      "p:preferir-a",
       "p:prefieres-x-o-y"
     ],
     "targets": [
@@ -18441,21 +18500,18 @@
   },
   {
     "id": "u24-0765",
-    "es": "Aunque el hogar es viejo, todos queremos quedarnos.",
-    "en": "Even though the home is old, we all want to stay.",
+    "es": "Aunque la casa es vieja, es nuestro hogar.",
+    "en": "Even though the house is old, it's our home.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:aunque-indicative",
       "g:gender-articles",
-      "g:object-pronoun-position",
-      "g:present-er-ir",
-      "g:reflexive-routine",
+      "g:possessives",
       "g:ser-identity",
-      "g:verb-infinitive",
+      "l:casa",
       "l:hogar",
-      "l:quedar",
-      "l:querer",
       "l:ser",
       "l:viejo",
       "p:viejo-antiguo-mayor"
@@ -18594,7 +18650,7 @@
   },
   {
     "id": "u24-0771",
-    "es": "Hace dos días parió la perra de Doña Gloria.",
+    "es": "Hace dos días parió la perra de doña Gloria.",
     "en": "Doña Gloria's dog gave birth two days ago.",
     "accept": [],
     "acceptEn": [],
@@ -18619,20 +18675,25 @@
   },
   {
     "id": "u24-0772",
-    "es": "Esta calle es peligrosa de noche, aunque hay luz.",
-    "en": "This street is dangerous at night, even though there's light.",
+    "es": "Esta calle es peligrosa de noche, aunque está bien iluminada.",
+    "en": "This street is dangerous at night, even though it's well lit.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
+      "c:bien-y-tu",
       "g:adjective-agreement",
-      "g:hay-vs-esta",
+      "g:aunque-indicative",
+      "g:estar-location-states",
       "g:ser-identity",
+      "l:bien",
       "l:calle",
-      "l:luz",
+      "l:estar",
+      "l:iluminar",
       "l:noche",
       "l:peligroso",
       "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:demonstratives-basic"
     ],
     "targets": [
@@ -19425,7 +19486,7 @@
   },
   {
     "id": "u24-0805",
-    "es": "Aunque Doña Gloria tiene razón, Tomás no se muda.",
+    "es": "Aunque doña Gloria tiene razón, Tomás no se muda.",
     "en": "Even though Doña Gloria is right, Tomás isn't moving.",
     "accept": [],
     "acceptEn": [],
@@ -19453,20 +19514,21 @@
   },
   {
     "id": "u24-0806",
-    "es": "Aunque escribimos todo en una servilleta, la decisión es difícil.",
-    "en": "Even though we write everything on a napkin, the decision is hard.",
+    "es": "Aunque la lista de ventajas es larga, la decisión es difícil.",
+    "en": "Even though the list of advantages is long, the decision is hard.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:aunque-indicative",
       "g:gender-articles",
-      "g:present-er-ir",
       "g:ser-identity",
       "l:decisión",
       "l:difícil",
-      "l:escribir",
+      "l:largo",
+      "l:listo",
       "l:ser",
-      "l:servilleta"
+      "l:ventaja"
     ],
     "targets": [
       "g:aunque-indicative"
@@ -19529,8 +19591,8 @@
   },
   {
     "id": "u24-0809",
-    "es": "Aunque el piso es amplio, el hogar no se mide en metros.",
-    "en": "Even though the floor is spacious, a home isn't measured in meters.",
+    "es": "Aunque el apartamento es amplio, un hogar no se mide en metros.",
+    "en": "Even though the flat is spacious, a home isn't measured in meters.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19541,10 +19603,10 @@
       "g:ser-identity",
       "g:stem-e-i",
       "l:amplio",
+      "l:apartamento",
       "l:hogar",
       "l:medir",
       "l:metro",
-      "l:piso",
       "l:ser",
       "p:tiene-mucha-luz"
     ],
@@ -19701,8 +19763,8 @@
   },
   {
     "id": "u24-0815",
-    "es": "Aunque la cuenta es larga, la pagamos con gusto.",
-    "en": "Even though the bill is long, we pay it gladly.",
+    "es": "Aunque la cuenta es alta, la pagamos con gusto.",
+    "en": "Even though the bill is high, we pay it gladly.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19713,11 +19775,12 @@
       "g:direct-objects",
       "g:present-ar",
       "g:ser-identity",
+      "l:alto",
       "l:cuenta",
       "l:gusto",
-      "l:largo",
       "l:pagar",
-      "l:ser"
+      "l:ser",
+      "p:es-tiene-lleva"
     ],
     "targets": [
       "g:aunque-indicative"
@@ -19758,24 +19821,22 @@
   },
   {
     "id": "u24-0817",
-    "es": "Aunque nadie la conocía, la iglesia siempre estaba abierta.",
-    "en": "Even though nobody knew her, the church was always open.",
+    "es": "Aunque casi nadie entraba, la iglesia siempre estaba abierta.",
+    "en": "Even though hardly anyone went in, the church was always open.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:aunque-indicative",
-      "g:direct-objects",
       "g:estar-participle",
       "g:gender-articles",
       "g:imperfect-habitual",
       "g:imperfect-states",
       "l:abrir",
-      "l:conocer",
+      "l:entrar",
       "l:estar",
       "l:iglesia",
       "l:siempre",
-      "p:frequency-scale",
-      "p:saber-conocer"
+      "p:frequency-scale"
     ],
     "targets": [
       "g:aunque-indicative",
@@ -19864,19 +19925,21 @@
   },
   {
     "id": "u24-0821",
-    "es": "Aunque tú no me creas, lo vi con mis ojos.",
-    "en": "Even though you don't believe me, I saw it with my own eyes. (to a friend)",
+    "es": "Aunque suena raro, lo vi con mis propios ojos.",
+    "en": "Even though it sounds strange, I saw it with my own eyes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:aunque-indicative",
       "g:direct-objects",
-      "g:present-ar",
       "g:preterite-er-ir",
-      "l:crear",
+      "g:stem-boot",
       "l:ojo",
+      "l:propio",
+      "l:raro",
+      "l:sonar",
       "l:ver",
-      "p:me-te-nos-objects",
       "p:possessives-basic"
     ],
     "targets": [
@@ -20171,17 +20234,19 @@
   },
   {
     "id": "u24-0833",
-    "es": "¿Comiste?\nAunque tengo hambre, no.",
-    "en": "Did you eat? (to a friend)\nEven though I'm hungry, no.",
+    "es": "¿Vas a comer?\nNo, aunque tengo hambre.",
+    "en": "Are you going to eat? (to a friend)\nNo, even though I'm hungry.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tengo",
+      "c:voy-vas",
       "g:aunque-indicative",
-      "g:preterite-er-ir",
+      "g:ir-a-plans",
       "g:yo-irregular",
       "l:comer",
       "l:hambre",
+      "l:ir",
       "l:tener",
       "p:tener-hambre"
     ],
@@ -20464,8 +20529,8 @@
   },
   {
     "id": "u24-0845",
-    "es": "Hay tanta gente nueva en el barrio como obras.",
-    "en": "There are as many new people in the neighborhood as construction sites.",
+    "es": "En el barrio hay tantos edificios nuevos como casas viejas.",
+    "en": "In the neighborhood there are as many new buildings as old houses.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20473,11 +20538,15 @@
       "g:adjective-agreement",
       "g:gender-articles",
       "g:hay-vs-esta",
+      "g:present-ar",
+      "g:tanto-como",
       "l:barrio",
-      "l:gente",
+      "l:casar",
+      "l:edificio",
       "l:nuevo",
-      "l:obra",
-      "p:la-gente-singular"
+      "l:viejo",
+      "p:lugar-tiene",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [],
     "kind": "statement",
@@ -20555,8 +20624,8 @@
   },
   {
     "id": "u24-0849",
-    "es": "El café de Rosa tiene tantos años como la iglesia.",
-    "en": "Rosa's café is as old as the church.",
+    "es": "Esta casa tiene tantos años como la iglesia de la plaza.",
+    "en": "This house is as old as the church on the square.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20565,9 +20634,12 @@
       "g:stem-boot",
       "g:tanto-como",
       "l:año",
-      "l:café",
+      "l:casa",
       "l:iglesia",
-      "l:tener"
+      "l:plaza",
+      "l:tener",
+      "p:demonstratives-basic",
+      "p:lugar-tiene"
     ],
     "targets": [
       "g:tanto-como",
@@ -20840,15 +20912,15 @@
   },
   {
     "id": "u24-0861",
-    "es": "¿Sufres mucho?\nTanto como tú.",
-    "en": "Do you suffer a lot? (to a friend)\nAs much as you.",
+    "es": "¿Quieres a Toronto tanto como a Bogotá?\nCasi.",
+    "en": "Do you love Toronto as much as Bogotá? (to a friend)\nAlmost.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-er-ir",
+      "g:stem-boot",
       "g:tanto-como",
-      "l:sufrir",
-      "p:quantifiers-basic"
+      "l:querer",
+      "p:personal-a"
     ],
     "targets": [
       "g:tanto-como"
@@ -21168,19 +21240,19 @@
   },
   {
     "id": "u24-0875",
-    "es": "Hace quince años que Doña Gloria vende flores en esta esquina.",
-    "en": "Doña Gloria has sold flowers on this corner for fifteen years.",
+    "es": "Hace quince años que doña Gloria arrienda cuartos en su casa.",
+    "en": "Doña Gloria has rented out rooms in her house for fifteen years.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:hace-que-desde",
       "g:present-er-ir",
+      "l:arriendo",
       "l:año",
-      "l:esquina",
-      "l:flor",
+      "l:casa",
+      "l:cuarto",
       "l:hacer",
-      "l:vender",
-      "p:demonstratives-basic",
+      "p:possessives-basic",
       "p:senor-don-article"
     ],
     "targets": [
@@ -21288,19 +21360,18 @@
   },
   {
     "id": "u24-0880",
-    "es": "Vale quiere abrir su panadería desde hace años.",
-    "en": "Vale has wanted to open her bakery for years.",
+    "es": "Vale quiere un horno nuevo desde hace años.",
+    "en": "Vale has wanted a new oven for years.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:stem-boot",
-      "g:verb-infinitive",
-      "l:abrir",
       "l:año",
       "l:hace",
-      "l:panadería",
-      "l:querer",
-      "p:possessives-basic"
+      "l:horno",
+      "l:nuevo",
+      "l:querer"
     ],
     "targets": [],
     "kind": "statement",
@@ -21435,20 +21506,19 @@
   },
   {
     "id": "u24-0886",
-    "es": "¿Desde cuándo quiere Vale irse?\nDesde hace unas semanas.",
-    "en": "Since when has Vale wanted to leave?\nFor a few weeks.",
+    "es": "¿Desde cuándo trabaja Vale de noche?\nDesde hace unas semanas.",
+    "en": "Since when has Vale been working nights?\nFor a few weeks.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:hace-que-desde",
-      "g:reflexive-routine",
-      "g:stem-boot",
+      "g:present-ar",
       "l:cuándo",
       "l:hace",
-      "l:irse",
-      "l:querer",
+      "l:noche",
       "l:semana",
+      "l:trabajar",
       "p:prep-questions-basic",
       "p:question-word-order"
     ],
@@ -21646,16 +21716,18 @@
   },
   {
     "id": "u24-0895",
-    "es": "Vale no quiere más dinero, sino más tiempo.",
-    "en": "Vale doesn't want more money, but more time.",
+    "es": "Vale no quiere una cocina moderna, sino la cocina de Rosa.",
+    "en": "Vale doesn't want a modern kitchen, but Rosa's kitchen.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
+      "g:gender-articles",
       "g:pero-sino",
       "g:stem-boot",
-      "l:dinero",
-      "l:querer",
-      "l:tiempo"
+      "l:cocina",
+      "l:moderno",
+      "l:querer"
     ],
     "targets": [
       "g:pero-sino"
@@ -21947,21 +22019,21 @@
   },
   {
     "id": "u24-0908",
-    "es": "Quieren destruir la casa para hacer un edificio.",
-    "en": "They want to destroy the house to build a building.",
+    "es": "Altamira quiere destruir dos casas viejas de la cuadra.",
+    "en": "Altamira wants to destroy two old houses on the block.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:stem-boot",
       "g:verb-infinitive",
       "l:casa",
+      "l:cuadra",
       "l:destruir",
-      "l:edificio",
-      "l:hacer",
       "l:querer",
-      "p:para-inf",
-      "p:para-inf-purpose"
+      "l:viejo",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "l:destruir"
@@ -22001,7 +22073,7 @@
   },
   {
     "id": "u24-0910",
-    "es": "La perra de Doña Gloria parió seis cachorros.",
+    "es": "La perra de doña Gloria parió seis cachorros.",
     "en": "Doña Gloria's dog gave birth to six puppies.",
     "accept": [],
     "acceptEn": [],
@@ -22069,20 +22141,23 @@
   },
   {
     "id": "u24-0913",
-    "es": "El vecino niega todo, igual que siempre.",
-    "en": "The neighbor denies everything, just like always.",
+    "es": "Mi hermano lo niega tanto como mi papá, pero igual lo sabemos.",
+    "en": "My brother denies it as much as my dad does, but we know anyway.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:igual",
-      "g:gender-articles",
+      "g:direct-objects",
+      "g:present-er-ir",
       "g:stem-boot",
       "g:tanto-como",
+      "l:hermano",
       "l:igual",
       "l:negar",
-      "l:siempre",
-      "l:vecino",
-      "p:frequency-scale"
+      "l:papá",
+      "l:saber",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "c:igual",
@@ -22314,17 +22389,16 @@
   },
   {
     "id": "u24-0923",
-    "es": "Hace siete años que Tomás no veía a su abuela.",
-    "en": "Tomás hadn't seen his grandmother for seven years.",
+    "es": "Hace ocho meses que Tomás no ve a sus amigos de Toronto.",
+    "en": "Tomás hasn't seen his friends from Toronto for eight months.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:hace-que-desde",
-      "g:imperfect-habitual",
       "g:present-er-ir",
-      "l:abuela",
-      "l:año",
+      "l:amigo",
       "l:hacer",
+      "l:mes",
       "l:ver",
       "p:personal-a",
       "p:possessives-basic"
@@ -22339,16 +22413,20 @@
   },
   {
     "id": "u24-0924",
-    "es": "Vivimos con Simón desde hace tres años.",
-    "en": "We've lived with Simón for three years.",
+    "es": "Mi vecina vive con un loro desde hace veinte años.",
+    "en": "My neighbor has lived with a parrot for twenty years.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:hace-que-desde",
-      "g:preterite-er-ir",
+      "g:present-er-ir",
       "l:año",
       "l:hace",
-      "l:vivir"
+      "l:loro",
+      "l:vecino",
+      "l:vivir",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:hace-que-desde"
@@ -22518,7 +22596,7 @@
   },
   {
     "id": "u24-0932",
-    "es": "Dormimos tanto como el gato de Doña Gloria.",
+    "es": "Dormimos tanto como el gato de doña Gloria.",
     "en": "We sleep as much as Doña Gloria's cat.",
     "accept": [],
     "acceptEn": [],
@@ -22784,7 +22862,7 @@
   },
   {
     "id": "u24-0943",
-    "es": "Hace tres años que Vale vive en la Candelaria.",
+    "es": "Hace tres años que Vale vive en La Candelaria.",
     "en": "Vale has lived in La Candelaria for three years.",
     "accept": [],
     "acceptEn": [],
@@ -22975,17 +23053,16 @@
   },
   {
     "id": "u24-0951",
-    "es": "Prefiero la ventana a la puerta del balcón.",
-    "en": "I prefer the window to the balcony door.",
+    "es": "Prefiero el sofá a la silla.",
+    "en": "I prefer the sofa to the chair.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:stem-boot",
-      "l:balcón",
       "l:preferir",
-      "l:puerta",
-      "l:ventana",
+      "l:silla",
+      "l:sofá",
       "p:gustar-mas-que",
       "p:preferir-a",
       "p:prefieres-x-o-y"
