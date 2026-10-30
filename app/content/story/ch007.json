@@ -2,7 +2,7 @@
   "id": "ch007",
   "unit": "u04",
   "title": "Cuarenta libras de mango",
-  "text": "Sábado, cinco de la mañana. Vale abre la cocina del café. Hay mangos aquí, mangos ahí, mangos allá.\nVale: Tomás... ¿qué es esto?\nTomás: Ayer fui a Paloquemao y compré la fruta. ¡Todo listo!\nVale: ¿La fruta? ¿Y las fresas? ¿Y las naranjas? ¿Y los aguacates?\nTomás: Bueno, compré mango. Yo pregunté: «¿A cómo está el mango?». Y el señor: «A dos mil la libra». Y yo: «¿Me hace una rebajita, señor?». Y él: «¿Cuántas libras lleva?». Y yo: «Cuarenta».\nVale: ¿Cuarenta libras de mango?\nTomás: Y una mazorca. Gratis.\nA las seis abren. Tomás pone una flor al lado de la foto de Rosa. Vale mira la flor y no habla.\nA las 7:05, ¡pum! La cafetera no funciona.\nTomás: ¿Y ahora? ¿Un café sin café?\nVale busca el chocolatero viejo de Rosa y hace el tinto en la estufa, como Rosa.\nA las 7:10 llega Hernando. Toma un sorbo. Toma otro. No habla.\nHernando: Es el tinto de Rosa.\nHernando saca el celular y llama a sus amigos taxistas.\nA las ocho llegan cinco taxistas. A las nueve ya son doce. Toman tinto y jugo de mango.\nVale: ¿Y te gusta el mango, Tomás?\nTomás: Hoy me encanta.\nA la hora de pagar, Simón grita: «¡Me hace una rebajita, señor!».\nY los doce taxistas, en coro: «¡A mí también! ¿Me hace una rebajita, Tomás?».\nHernando: Y mañana vienen las señoras.",
+  "text": "Sábado, cinco de la mañana. Vale abre la cocina del café. Hay mangos aquí, mangos ahí, mangos allá.\nVale: Tomás... ¿qué es esto?\nTomás: Ayer fui a Paloquemao y compré la fruta. ¡Todo listo!\nVale: ¿La fruta? ¿Y las fresas? ¿Y las naranjas?\nTomás: Bueno, compré mango. Yo pregunté: «¿Me hace una rebajita, señor?». Y él: «¿Cuántas libras lleva?». Y yo: «Cuarenta».\nVale: ¿Cuarenta libras de mango?\nTomás: Y una mazorca. Gratis.\nA las seis abren. A las 7:05, ¡pum! La cafetera no funciona.\nTomás: ¿Un café sin café?\nVale busca el chocolatero viejo de Rosa y hace el tinto en la estufa, como Rosa.\nA las 7:10 llega Hernando. Toma un sorbo. Toma otro.\nHernando: Es el tinto de Rosa.\nHernando saca el celular y llama a sus amigos taxistas. A las nueve ya hay doce taxistas. Toman tinto y jugo de mango.\nA la hora de pagar, Simón grita: «¡Me hace una rebajita, señor!».\nY los doce taxistas, en coro: «¡A mí también! ¿Me hace una rebajita, Tomás?».\nHernando: Y mañana vienen las señoras.",
   "gloss": [
     {
       "es": "la cocina",
@@ -13,12 +13,8 @@
       "en": "All done!"
     },
     {
-      "es": "Yo pregunté: «¿A cómo está el mango?». Y el señor: «A dos mil la libra».",
-      "en": "I asked: \"How much are the mangoes?\" And the man goes: \"Two thousand a pound.\""
-    },
-    {
-      "es": "¿Me hace una rebajita, señor?",
-      "en": "Can you give me a little discount, sir?"
+      "es": "Yo pregunté: «¿Me hace una rebajita, señor?».",
+      "en": "I asked: \"Can you give me a little discount, sir?\""
     },
     {
       "es": "¿Cuántas libras lleva?",
@@ -27,10 +23,6 @@
     {
       "es": "Gratis",
       "en": "Free"
-    },
-    {
-      "es": "al lado de la foto",
-      "en": "next to the photo"
     },
     {
       "es": "¡pum!",
@@ -81,7 +73,7 @@
     {
       "q": "Why is the café full of mangoes?",
       "options": [
-        "Tomás went to buy fruit, asked for a discount and came back with forty pounds of mango",
+        "Tomás asked for a discount at the market and came back with forty pounds of mango",
         "Vale ordered them for a cake",
         "Hernando brought them from his garden",
         "Simón likes mangoes"
@@ -131,20 +123,20 @@
   "hook": "Twelve taxi drivers want a discount, there are still mangoes everywhere, and tomorrow their wives are coming. Nobody has bought a single vegetable.",
   "rereadQuestions": [
     {
-      "q": "What does Tomás put next to Rosa's photo?",
+      "q": "How does Vale make the coffee when the machine breaks?",
       "options": [
-        "A flower",
-        "A mango",
-        "A coffee",
-        "A letter"
+        "In Rosa's old jug on the stove",
+        "In a new machine",
+        "At the shop on the corner",
+        "She doesn't make any"
       ],
       "answer": 0
     },
     {
-      "q": "¿Cuántos taxistas llegaron a las ocho?",
+      "q": "¿Cuántos taxistas hay en el café a las nueve?",
       "options": [
-        "Cinco",
         "Doce",
+        "Cinco",
         "Dos"
       ],
       "answer": 0
@@ -161,22 +153,16 @@
     }
   ],
   "requires": [
-    "c:a-como-esta",
     "c:a-mi-tambien",
     "c:ayer-anoche",
-    "c:como-estas",
     "c:compre-trabaje",
     "c:entonces-bueno",
     "c:fui",
     "c:hay",
-    "c:me-encanta",
-    "c:me-gusta",
     "c:me-hace-una-rebajita",
     "c:que-es-esto",
     "g:adjective-agreement",
-    "g:estar-location-states",
     "g:gender-articles",
-    "g:gustar-basic",
     "g:present-ar",
     "g:present-er-ir",
     "g:preterite-ar",
@@ -187,8 +173,6 @@
   ],
   "lexemes": [
     "l:abrir",
-    "l:aguacate",
-    "l:ahora",
     "l:ahí",
     "l:allá",
     "l:amigo",
@@ -203,25 +187,16 @@
     "l:comprar",
     "l:coro",
     "l:cuánto",
-    "l:cómo",
-    "l:encantar",
-    "l:estar",
     "l:estufa",
-    "l:flor",
-    "l:foto",
     "l:fresa",
     "l:fruta",
     "l:funcionar",
     "l:gratis",
     "l:gritar",
-    "l:gustar",
-    "l:hablar",
     "l:hacer",
     "l:hora",
-    "l:hoy",
     "l:ir",
     "l:jugo",
-    "l:lado",
     "l:libra",
     "l:listo",
     "l:llamar",
@@ -230,10 +205,8 @@
     "l:mango",
     "l:mazorca",
     "l:mañana",
-    "l:mirar",
     "l:naranja",
     "l:pagar",
-    "l:poner",
     "l:preguntar",
     "l:qué",
     "l:sacar",
