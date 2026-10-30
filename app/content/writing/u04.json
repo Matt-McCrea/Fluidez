@@ -645,5 +645,240 @@
       "p:gracias-por",
       "p:possessives-basic"
     ]
+  },
+  {
+    "id": "w-u04-16",
+    "unit": "u04",
+    "prompt": "Vale texts you: what are you going to do on Saturday? Answer in two short sentences, about yourself (yo).",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bvoy a [a-záéíóúñ]+",
+        "label": "say what you are going to do (voy a + verb)"
+      },
+      {
+        "type": "containsWord",
+        "word": "sábado"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "El sábado voy a comprar fresas. Y el domingo voy a trabajar en el café.",
+    "focus": "g:ir-a-plans",
+    "requires": [
+      "c:voy-a",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "l:café",
+      "l:comprar",
+      "l:domingo",
+      "l:fresa",
+      "l:ir",
+      "l:sábado",
+      "l:trabajar",
+      "p:days-el-lunes"
+    ]
+  },
+  {
+    "id": "w-u04-17",
+    "unit": "u04",
+    "prompt": "Mariana asks what you and a friend are going to do on Sunday. Answer her in two short sentences: one plan for you, one for the two of you (nosotros).",
+    "minWords": 8,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bvoy a [a-záéíóúñ]+",
+        "label": "a plan for you (voy a + verb)"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bvamos a [a-záéíóúñ]+",
+        "label": "a plan for the two of you (vamos a + verb)"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "El domingo voy a trabajar en el café. Mi amiga y yo vamos a comer mango.",
+    "focus": "g:ir-a-plans",
+    "requires": [
+      "c:vamos-a",
+      "c:voy-a",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "l:amiga",
+      "l:café",
+      "l:comer",
+      "l:domingo",
+      "l:ir",
+      "l:mango",
+      "l:trabajar",
+      "p:days-el-lunes",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u04-18",
+    "unit": "u04",
+    "prompt": "Don Hernando, an older man you would call usted, asks what you did yesterday. Write him two short sentences about yourself (yo), with at least one verb in the past for something you ate or drank.",
+    "minWords": 8,
+    "maxWords": 28,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "[a-záéíóúñ]+(í|é|ó)(?![a-záéíóúñ])",
+        "label": "a past verb about you (comí, compré...)"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "comes",
+          "comiste",
+          "comió"
+        ],
+        "label": "talk about yourself, with yo"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Ayer comí ajiaco en un puesto. Y comí un mango.",
+    "focus": "g:preterite-er-ir",
+    "requires": [
+      "c:ayer-anoche",
+      "c:comi",
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "l:ajiaco",
+      "l:ayer",
+      "l:comer",
+      "l:mango",
+      "l:puesto"
+    ]
+  },
+  {
+    "id": "w-u04-19",
+    "unit": "u04",
+    "prompt": "A friend your age missed your party. Write her two questions (tú) about last night: what she did and whether she went out.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "[a-záéíóúñ]+(aste|iste)(?![a-záéíóúñ])",
+        "label": "a past verb with tú (saliste, comiste...)"
+      },
+      {
+        "type": "question"
+      },
+      {
+        "type": "containsWord",
+        "word": "anoche"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "¿Qué comiste anoche? ¿Saliste con Vale?",
+    "focus": "g:preterite-er-ir",
+    "requires": [
+      "c:ayer-anoche",
+      "g:preterite-er-ir",
+      "g:questions",
+      "l:anoche",
+      "l:comer",
+      "l:qué",
+      "l:salir"
+    ]
+  },
+  {
+    "id": "w-u04-20",
+    "unit": "u04",
+    "prompt": "Your coworker Vale asks about your weekend. Tell her two things about yourself: where you went on Saturday, and what you made.",
+    "minWords": 8,
+    "maxWords": 28,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "ir",
+        "tense": "preterito",
+        "person": "yo"
+      },
+      {
+        "type": "verbForm",
+        "inf": "hacer",
+        "tense": "preterito",
+        "person": "yo"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "El sábado fui a Paloquemao. Hice jugo de mango y fue un día muy bueno.",
+    "focus": "g:preterite-ser-ir-hacer",
+    "requires": [
+      "c:fui",
+      "g:gender-articles",
+      "g:preterite-ser-ir-hacer",
+      "g:ser-identity",
+      "l:bueno",
+      "l:día",
+      "l:hacer",
+      "l:ir",
+      "l:jugo",
+      "l:mango",
+      "l:ser",
+      "l:sábado",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:days-el-lunes",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u04-21",
+    "unit": "u04",
+    "prompt": "A friend your age just came back from a trip to Cartagena. Write her two questions (tú): ask how it went, and what she did on Saturday.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "te fue",
+        "label": "ask how it went (¿Cómo te fue...?)"
+      },
+      {
+        "type": "verbForm",
+        "inf": "hacer",
+        "tense": "preterito",
+        "person": "tú"
+      },
+      {
+        "type": "question"
+      }
+    ],
+    "model": "¿Cómo te fue? ¿Qué hiciste el sábado?",
+    "focus": "g:preterite-ser-ir-hacer",
+    "requires": [
+      "c:como-te-fue",
+      "c:que-hiciste",
+      "g:gender-articles",
+      "g:preterite-ser-ir-hacer",
+      "l:cómo",
+      "l:hacer",
+      "l:qué",
+      "l:ser",
+      "l:sábado",
+      "p:days-el-lunes"
+    ]
   }
 ]
