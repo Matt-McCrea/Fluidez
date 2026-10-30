@@ -1,0 +1,210 @@
+{
+  "id": "sc-u05-d",
+  "unit": "u05",
+  "title": "Camila on the screen",
+  "brief": "You're Tomás. Vale is on a video call with her sister Camila in Medellín, and suddenly she turns the phone to you: Camila wants to meet el canadiense. Answer her questions about you and your family. She's your age and very informal, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "¡Hola! Soy Camila, la hermana de Vale. ¿Tú eres el canadiense?",
+      "npcEn": "Hi! I'm Camila, Vale's sister. Are you the Canadian?",
+      "intent": "Say yes, that's you, and your name is Tomás.",
+      "accept": [
+        "Sí, soy yo. Mi nombre es Tomás.",
+        "¡Hola, Camila! Sí, soy yo. Soy Tomás.",
+        "Sí, soy yo, Tomás. Mucho gusto."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "soy yo",
+          "label": "that's me: sí, soy yo"
+        }
+      ],
+      "focus": "c:si-soy-yo",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¡Mucho gusto, Tomás! Y para mi mamá: ¿cómo eres?",
+      "npcEn": "Nice to meet you, Tomás! And for my mom: what do you look like?",
+      "intent": "Say you're tall, dark-haired and slim.",
+      "accept": [
+        "Soy alto, moreno y delgado.",
+        "Bueno, soy alto y delgado. Y soy moreno.",
+        "Soy alto, moreno y delgado, Camila."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "ser",
+          "tense": "presente",
+          "person": "yo",
+          "label": "what you look like: soy alto"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "estoy alto",
+            "estoy moreno",
+            "estoy delgado"
+          ],
+          "label": "how you look for good takes ser: soy alto"
+        }
+      ],
+      "focus": "p:es-tiene-lleva",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¡Alto y moreno! Muy bien. Bueno, ¿tienes novia?",
+      "npcEn": "Tall and dark-haired! Very good. So, do you have a girlfriend?",
+      "intent": "Say no, you don't have a girlfriend, and you don't go out with anybody.",
+      "accept": [
+        "No, no tengo novia. No salgo con nadie.",
+        "No tengo novia, Camila. No salgo con nadie.",
+        "No, no tengo novia, y no salgo con nadie."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "nadie",
+          "label": "anybody, after no: no salgo con nadie"
+        },
+        {
+          "type": "verbForm",
+          "inf": "salir",
+          "tense": "presente",
+          "person": "yo",
+          "label": "I go out: salgo"
+        }
+      ],
+      "focus": "g:negation-words",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¡Uy, qué serio! ¿Y tu familia? ¿Cuántos son?",
+      "npcEn": "Wow, how serious! And your family? How many of you are there?",
+      "intent": "Say there are three of you: your mom, your dad and you.",
+      "accept": [
+        "Somos tres: mi mamá, mi papá y yo.",
+        "Soy hijo único. Somos tres: mi papá, mi mamá y yo.",
+        "Somos tres, Camila: mi mamá, mi papá y yo."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "ser",
+          "tense": "presente",
+          "person": "nosotros",
+          "label": "there are three of us: somos tres"
+        }
+      ],
+      "focus": "p:somos-cuatro",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¿Y mi hermana? ¿Es simpática en el café?",
+      "npcEn": "And my sister? Is she nice at the café?",
+      "intent": "Vale is listening. Say she isn't nice, she's serious, but she's a good person.",
+      "accept": [
+        "No es simpática, es seria. Pero es buena gente.",
+        "Bueno, no es simpática. Es seria, pero es muy buena gente.",
+        "No es simpática, es muy seria. Pero es buena gente, Camila."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "seria",
+          "label": "Vale is a woman: seria, not serio"
+        }
+      ],
+      "focus": "g:adjective-agreement",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "¡Uy, perdón, Vale! ¿Y quién habla? ¿Es tu papá?",
+      "npcEn": "Oops, sorry, Vale! And who's talking? Is that your dad?",
+      "intent": "Say no, it's not your dad. Introduce her to Simón: he's your grandmother Rosa's.",
+      "accept": [
+        "No, no es mi papá. Te presento a Simón. Es de mi abuela Rosa.",
+        "No es mi papá, Camila. Te presento a Simón, es de mi abuela.",
+        "No, es Simón. Te presento a Simón. Es de mi abuela Rosa."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "te presento a",
+          "label": "let me introduce: te presento a Simón"
+        }
+      ],
+      "focus": "p:te-presento-a",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:buena-gente",
+    "c:entonces-bueno",
+    "c:hago-salgo-vengo",
+    "c:hijo-unico",
+    "c:hola-buenos-dias",
+    "c:mucho-gusto",
+    "c:perdon-disculpe",
+    "c:si-soy-yo",
+    "c:tengo",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:gender-articles",
+    "g:negation-words",
+    "g:present-ar",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:yo-irregular",
+    "l:abuela",
+    "l:alto",
+    "l:bien",
+    "l:buena",
+    "l:bueno",
+    "l:café",
+    "l:canadiense",
+    "l:cuánto",
+    "l:cómo",
+    "l:delgado",
+    "l:familia",
+    "l:gente",
+    "l:gusto",
+    "l:hablar",
+    "l:hermana",
+    "l:hijo",
+    "l:mamá",
+    "l:moreno",
+    "l:nombre",
+    "l:novia",
+    "l:papá",
+    "l:perdón",
+    "l:presentar",
+    "l:quién",
+    "l:qué",
+    "l:salir",
+    "l:ser",
+    "l:serio",
+    "l:simpático",
+    "l:tener",
+    "l:único",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:es-tiene-lleva",
+    "p:me-te-nos-objects",
+    "p:no-es-x-es-y",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:somos-cuatro",
+    "p:te-presento-a"
+  ]
+}
