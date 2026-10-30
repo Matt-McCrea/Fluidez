@@ -1,0 +1,179 @@
+{
+  "node": "p:es-una-lastima-que",
+  "hook": {
+    "line": "Someone cancels at the last minute, the rain arrives, the table you wanted is taken. You want a line that says *that's a shame* without drama. In Colombia, *qué pena* can mean *how embarrassing*, so this one is the safe choice.",
+    "es": "¡Qué lástima que llueva hoy!",
+    "en": "What a shame it's raining today!"
+  },
+  "examples": [
+    {
+      "es": "Es una lástima que cierren el café.",
+      "en": "It's a shame they're closing the café."
+    },
+    {
+      "es": "¡Qué lástima que llueva hoy!",
+      "en": "What a shame it's raining today!"
+    },
+    {
+      "es": "Es una lástima que no hayas podido venir.",
+      "en": "It's a shame you couldn't come. (to a friend)"
+    },
+    {
+      "es": "Fue una lástima que no pudieras venir.",
+      "en": "It was a shame you couldn't come. (to a friend)"
+    },
+    {
+      "es": "¡Qué lástima que Vale no se haya quedado!",
+      "en": "What a shame Vale didn't stay!"
+    },
+    {
+      "es": "¡Qué lástima que no hubiéramos reservado a tiempo!",
+      "en": "What a shame we hadn't booked in time!"
+    }
+  ],
+  "rule": "Two frames, same meaning:\n*Es una lástima que...* (calm)\n*¡Qué lástima que...!* (with feeling)\n\nWhat follows *que* takes the wish forms, not the plain ones. For something happening now, use *llueva*, *cierren*. For something that already happened, use *hayas podido*, *se haya quedado*. For something that should have gone differently, use *hubiéramos reservado*.\n\nWith *fue una lástima* the story is in the past, so the verb after it is too: *pudieras*.",
+  "smallPrint": "Teachers call this an expression of feeling that triggers the subjunctive.",
+  "readAndPick": [
+    {
+      "es": "Es una lástima que cierren el café.",
+      "options": [
+        "It's a shame they're closing the café.",
+        "It's a shame they closed the café."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Qué lástima que no hayas podido venir!",
+      "options": [
+        "What a shame I couldn't come!",
+        "What a shame you couldn't come! (to a friend)",
+        "What a shame he couldn't come!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Qué lástima que no hubiéramos reservado a tiempo!",
+      "options": [
+        "What a shame we hadn't booked in time!",
+        "What a shame they hadn't booked in time!",
+        "What a shame I hadn't booked in time!"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Qué lástima que llueva hoy!",
+      "options": [
+        "What a shame it rained today!",
+        "What a shame it's raining today!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Qué lástima que Vale no se haya quedado!",
+      "options": [
+        "What a shame Vale isn't staying!",
+        "What a shame Vale didn't stay!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es una lástima que no estés aquí.",
+      "options": [
+        "It's a shame I'm not here.",
+        "It's a shame he isn't here.",
+        "It's a shame you aren't here. (to a friend)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Es una lástima que no estén aquí.",
+      "options": [
+        "It's a shame they aren't here.",
+        "It's a shame you aren't here. (to a friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Fue una lástima que no pudieras venir.",
+      "options": [
+        "It was a shame you couldn't come. (to a friend)",
+        "It's a shame you can't come. (to a friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Qué lástima que no hubieras venido!",
+      "options": [
+        "What a shame you didn't come! (to a friend)",
+        "What a shame you hadn't come! (to a friend)"
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *llueva* or *llueve* and type the whole sentence: *¡Qué lástima que ___ hoy!* (What a shame it's raining today!)",
+      "answer": "¡Qué lástima que llueva hoy!",
+      "accept": [],
+      "why": "After *qué lástima que*, use the wish form: *llueva*."
+    },
+    {
+      "prompt": "Pick *cierren* or *cierran* and type the whole sentence: *Es una lástima que ___ el café.* (It's a shame they're closing the café.)",
+      "answer": "Es una lástima que cierren el café.",
+      "accept": [],
+      "why": "*Es una lástima que* is followed by the *-en* wish form, not *cierran*."
+    },
+    {
+      "prompt": "Say: It's a shame you couldn't come. (to a friend)",
+      "answer": "Es una lástima que no hayas podido venir.",
+      "accept": [
+        "Es una lástima que no pudieras venir."
+      ],
+      "why": "For something that already happened, use *hayas* plus the participle."
+    },
+    {
+      "prompt": "Say with feeling: What a shame Vale didn't stay!",
+      "answer": "¡Qué lástima que Vale no se haya quedado!",
+      "accept": [
+        "¡Qué lástima que no se haya quedado Vale!"
+      ],
+      "why": "*Qué lástima que* then *se haya quedado*."
+    },
+    {
+      "prompt": "Say: What a shame we hadn't booked in time!",
+      "answer": "¡Qué lástima que no hubiéramos reservado a tiempo!",
+      "accept": [],
+      "why": "For what should have gone differently, use *hubiéramos* plus the participle."
+    },
+    {
+      "prompt": "Make it calm instead of excited: *¡Qué lástima que llueva hoy!*",
+      "answer": "Es una lástima que llueva hoy.",
+      "accept": [],
+      "why": "*Es una lástima que* is the quieter frame, and the verb stays the same."
+    },
+    {
+      "prompt": "Say it was a shame: you (to a friend) couldn't come.",
+      "answer": "Fue una lástima que no pudieras venir.",
+      "accept": [],
+      "why": "With *fue*, the verb after *que* goes back in time too: *pudieras*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Es una lástima que cierran el café.",
+      "right": "Es una lástima que cierren el café.",
+      "why": "Almost. After *una lástima que*, the verb takes its wish form: *cierren*."
+    },
+    {
+      "wrong": "Qué lástima de que llueva.",
+      "right": "Qué lástima que llueva.",
+      "why": "No *de* here: *lástima que* goes straight into the verb."
+    },
+    {
+      "wrong": "Es una lástima no vinieras.",
+      "right": "Es una lástima que no vinieras.",
+      "why": "Don't drop the *que*, or the sentence falls apart."
+    }
+  ],
+  "personal": "Think of one small thing that didn't work out this week. Say it: *Es una lástima que...* or *¡Qué lástima que...!*."
+}

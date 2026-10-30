@@ -1,0 +1,183 @@
+{
+  "node": "p:tener-pensado-previsto",
+  "hook": {
+    "line": "In December the whole café asks everyone the same thing: what are you doing? Spanish has a friendly way and a formal way to ask about plans.",
+    "es": "¿Qué tienes pensado para diciembre?",
+    "en": "What do you have planned for December? (to a friend)"
+  },
+  "examples": [
+    {
+      "es": "¿Qué tienes pensado para diciembre?",
+      "en": "What do you have planned for December? (to a friend)"
+    },
+    {
+      "es": "¿Qué tienes en mente?",
+      "en": "What do you have in mind? (to a friend)"
+    },
+    {
+      "es": "Tengo pensado quedarme en Bogotá.",
+      "en": "I plan to stay in Bogotá."
+    },
+    {
+      "es": "¿Tienen previsto viajar este año?",
+      "en": "Are you planning to travel this year? (you all)"
+    },
+    {
+      "es": "¿Qué tiene pensado para diciembre, don Hernando?",
+      "en": "What do you have planned for December, Don Hernando? (formal)"
+    },
+    {
+      "es": "Tenemos previsto abrir el sábado.",
+      "en": "We plan to open on Saturday."
+    }
+  ],
+  "rule": "*Tener pensado* means *to have it in mind*. *Pensado* is a participle, so it stays the same: *tengo pensado*, *tienes pensado*, *tenemos pensado*.\n\nAsk: *¿Qué tienes pensado para...?* Answer: *Tengo pensado* + infinitive.\n\n*Previsto* works the same way but sounds more official, closer to *scheduled*: *¿Tienen previsto viajar?*\n\nFor a casual chat, *¿Qué tienes en mente?* does the job too. No *de* and no *que* before the infinitive.",
+  "smallPrint": "Teachers call this *tener* plus a participle: it describes a state you are already in.",
+  "readAndPick": [
+    {
+      "es": "¿Qué tienes pensado para diciembre?",
+      "options": [
+        "What do you have planned for December? (to a friend)",
+        "What do I have planned for December?",
+        "What do they have planned for December?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tengo pensado quedarme en Bogotá.",
+      "options": [
+        "I plan to stay in Bogotá.",
+        "You plan to stay in Bogotá. (to a friend)",
+        "We plan to stay in Bogotá."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Tienen previsto viajar este año?",
+      "options": [
+        "Do I plan to travel this year?",
+        "Are you planning to travel this year? (you all)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tenemos previsto abrir el sábado.",
+      "options": [
+        "We plan to open on Saturday.",
+        "They plan to open on Saturday.",
+        "I plan to open on Saturday."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Qué tiene pensado para diciembre, don Hernando?",
+      "options": [
+        "What do you have planned for December, Don Hernando? (formal)",
+        "What does Don Hernando have in mind?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Qué tienes en mente?",
+      "options": [
+        "What do you have in mind? (to a friend)",
+        "What does she have in mind?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tienen pensado vender el café.",
+      "options": [
+        "I plan to sell the café.",
+        "They plan to sell the café."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tengo previsto llegar a las ocho.",
+      "options": [
+        "I plan to arrive at eight.",
+        "You plan to arrive at eight. (to a friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tienes pensado ir con Vale, ¿verdad?",
+      "options": [
+        "You plan to go with Vale, right? (to a friend)",
+        "I plan to go with Vale, right?"
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *pensado* or *pensando* and type the whole sentence: *¿Qué tienes ___ para diciembre?* (What do you have planned for December? To a friend.)",
+      "answer": "¿Qué tienes pensado para diciembre?",
+      "accept": [],
+      "why": "With *tener*, the word that follows is the participle *pensado*."
+    },
+    {
+      "prompt": "Say: I plan to stay in Bogotá.",
+      "answer": "Tengo pensado quedarme en Bogotá.",
+      "accept": [
+        "Tengo previsto quedarme en Bogotá."
+      ],
+      "why": "*Tengo pensado* plus the infinitive, with no *de*."
+    },
+    {
+      "prompt": "Ask your friends: Are you planning to travel this year? (you all)",
+      "answer": "¿Tienen previsto viajar este año?",
+      "accept": [
+        "¿Tienen pensado viajar este año?"
+      ],
+      "why": "*Tienen* for you all, and *previsto* sounds a little official."
+    },
+    {
+      "prompt": "Ask a friend: What do you have in mind?",
+      "answer": "¿Qué tienes en mente?",
+      "accept": [],
+      "why": "*En mente* is the casual way."
+    },
+    {
+      "prompt": "Say it about we: *Tengo pensado quedarme.*",
+      "answer": "Tenemos pensado quedarnos.",
+      "accept": [],
+      "why": "*Tenemos* for we, and *quedarnos* to match."
+    },
+    {
+      "prompt": "Ask Don Hernando, formal: What do you have planned for December?",
+      "answer": "¿Qué tiene pensado para diciembre, don Hernando?",
+      "accept": [
+        "¿Qué tiene pensado para diciembre?"
+      ],
+      "why": "*Tiene* for formal *you*, since Don Hernando gets *usted*."
+    },
+    {
+      "prompt": "Say: We plan to open on Saturday.",
+      "answer": "Tenemos previsto abrir el sábado.",
+      "accept": [
+        "Tenemos pensado abrir el sábado."
+      ],
+      "why": "*Tenemos previsto* plus the infinitive."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Tengo pensando viajar.",
+      "right": "Tengo pensado viajar.",
+      "why": "Almost. After *tener*, the word is the participle *pensado*, not the *-ando* form."
+    },
+    {
+      "wrong": "Tengo pensado de viajar.",
+      "right": "Tengo pensado viajar.",
+      "why": "No *de* before the infinitive."
+    },
+    {
+      "wrong": "¿Qué tienes pensar para diciembre?",
+      "right": "¿Qué tienes pensado para diciembre?",
+      "why": "*Pensado* (the participle) is the word you need here."
+    }
+  ],
+  "personal": "What have you got planned for next month? Say it: *Tengo pensado...* or *Tengo previsto...*."
+}

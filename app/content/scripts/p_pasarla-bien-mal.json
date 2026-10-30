@@ -1,0 +1,181 @@
+{
+  "node": "p:pasarla-bien-mal",
+  "hook": {
+    "line": "Everyone asks how the weekend went. *Fue bien* is flat; Spanish has a little phrase for the whole experience, whether it was great or terrible.",
+    "es": "¿La pasaste bien en la fiesta?",
+    "en": "Did you have a good time at the party? (to a friend)"
+  },
+  "examples": [
+    {
+      "es": "¿La pasaste bien en la fiesta?",
+      "en": "Did you have a good time at the party? (to a friend)"
+    },
+    {
+      "es": "La pasé muy mal cuando nos separamos.",
+      "en": "I had a really hard time when we split up."
+    },
+    {
+      "es": "¡La pasamos delicioso en la finca!",
+      "en": "We had a wonderful time at the farm!"
+    },
+    {
+      "es": "Vale la pasó genial en Medellín.",
+      "en": "Vale had a great time in Medellín."
+    },
+    {
+      "es": "Ayer la pasamos horrible con el tráfico.",
+      "en": "Yesterday we had a horrible time with the traffic."
+    },
+    {
+      "es": "¿Cómo la pasaron en Cartagena?",
+      "en": "How did you all have it in Cartagena? (you all)"
+    }
+  ],
+  "rule": "*Pasar* is *to spend*. *La pasé bien* means *I spent it well*: *la* stands for the time itself (*la vida*, *la fiesta*, *la semana*), and it is always *la*, whatever the person.\n\n*La pasé*, *la pasaste*, *la pasó*, *la pasamos*, *la pasaron*\n\nAdd the verdict: *bien*, *mal*, *genial*, *horrible*, *delicioso* (very Colombian for a great time). *Muy* turns it up.\n\nIt reports a whole stretch of time, not one fact. It is casual, perfect with friends.",
+  "smallPrint": "Teachers call this an idiom with a feminine *la* that refers to nothing in particular.",
+  "readAndPick": [
+    {
+      "es": "¿La pasaste bien en la fiesta?",
+      "options": [
+        "Did you have a good time at the party? (to a friend)",
+        "Did I have a good time at the party?",
+        "Did she have a good time at the party?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La pasé muy mal cuando nos separamos.",
+      "options": [
+        "I had a really hard time when we split up.",
+        "They had a really hard time when we split up.",
+        "You had a really hard time when we split up. (to a friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡La pasamos delicioso en la finca!",
+      "options": [
+        "I had a wonderful time at the farm!",
+        "We had a wonderful time at the farm!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale la pasó genial en Medellín.",
+      "options": [
+        "Vale had a great time in Medellín.",
+        "I had a great time with Vale in Medellín."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ayer la pasamos horrible con el tráfico.",
+      "options": [
+        "We had a horrible time with the traffic yesterday.",
+        "We will have a horrible time with the traffic."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Cómo la pasaron en Cartagena?",
+      "options": [
+        "How did I have it in Cartagena?",
+        "How did you all have it in Cartagena? (you all)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La pasaste mal.",
+      "options": [
+        "You had a bad time. (to a friend)",
+        "I had a bad time.",
+        "She had a bad time."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La pasé delicioso.",
+      "options": [
+        "I had a wonderful time.",
+        "You had a wonderful time. (to a friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Don Hernando la pasó bien.",
+      "options": [
+        "Don Hernando had a good time.",
+        "I had a good time with Don Hernando."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *la* or *lo* and type the whole sentence: *¿___ pasaste bien en la fiesta?* (Did you have a good time at the party? To a friend.)",
+      "answer": "¿La pasaste bien en la fiesta?",
+      "accept": [],
+      "why": "It is always *la*: it stands for the time you spent."
+    },
+    {
+      "prompt": "Say: I had a really hard time when we split up.",
+      "answer": "La pasé muy mal cuando nos separamos.",
+      "accept": [],
+      "why": "*La pasé* plus *muy mal*."
+    },
+    {
+      "prompt": "Say: We had a wonderful time at the farm!",
+      "answer": "¡La pasamos delicioso en la finca!",
+      "accept": [
+        "¡La pasamos genial en la finca!"
+      ],
+      "why": "*La pasamos* for we, plus the Colombian *delicioso*."
+    },
+    {
+      "prompt": "Say: Vale had a great time in Medellín.",
+      "answer": "Vale la pasó genial en Medellín.",
+      "accept": [
+        "Vale la pasó delicioso en Medellín."
+      ],
+      "why": "Her action: *la pasó*."
+    },
+    {
+      "prompt": "Ask a friend: Did you have a good time in Cartagena?",
+      "answer": "¿La pasaste bien en Cartagena?",
+      "accept": [
+        "¿La pasaste genial en Cartagena?"
+      ],
+      "why": "*La pasaste* for one friend."
+    },
+    {
+      "prompt": "Say it about we: *La pasé horrible.*",
+      "answer": "La pasamos horrible.",
+      "accept": [],
+      "why": "Only the verb changes: *pasé* becomes *pasamos*."
+    },
+    {
+      "prompt": "Ask your friends: How did you all have it? (you all)",
+      "answer": "¿Cómo la pasaron?",
+      "accept": [],
+      "why": "*La pasaron* for you all."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Pasé bien en la fiesta.",
+      "right": "La pasé bien en la fiesta.",
+      "why": "Almost. Without *la* it sounds like you walked past something."
+    },
+    {
+      "wrong": "Lo pasé muy bien.",
+      "right": "La pasé muy bien.",
+      "why": "*Lo pasé* is what people say in Spain; in Latin America it's *la pasé*."
+    },
+    {
+      "wrong": "La pasé bueno.",
+      "right": "La pasé bien.",
+      "why": "After the verb you need an adverb: *bien*, not *bueno*."
+    }
+  ],
+  "personal": "Think of your last weekend. Say how it went: *La pasé...* plus *bien*, *mal*, *genial* or *horrible*."
+}

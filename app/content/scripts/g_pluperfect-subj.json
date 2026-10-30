@@ -1,0 +1,186 @@
+{
+  "node": "g:pluperfect-subj",
+  "hook": {
+    "line": "Every café has a *what if* table: the regulars who say they should have bought the building years ago. English says *I wish I had known*. Spanish has a form built for exactly that, and you already own both halves of it.",
+    "es": "Ojalá lo hubiera sabido.",
+    "en": "I wish I had known."
+  },
+  "examples": [
+    {
+      "es": "Ojalá lo hubiera sabido.",
+      "en": "I wish I had known."
+    },
+    {
+      "es": "Ojalá hubieras venido.",
+      "en": "I wish you had come. (to a friend)"
+    },
+    {
+      "es": "Ojalá hubiéramos llegado antes.",
+      "en": "I wish we had arrived earlier."
+    },
+    {
+      "es": "Ojalá Vale se hubiera quedado.",
+      "en": "I wish Vale had stayed."
+    },
+    {
+      "es": "Ojalá no hubiera dicho nada.",
+      "en": "I wish I hadn't said anything."
+    },
+    {
+      "es": "No creí que hubieran vendido el edificio.",
+      "en": "I didn't think they had sold the building."
+    }
+  ],
+  "rule": "You know *había* + participle for what had already happened: *había sabido*. For a wish about the past, swap *había* for *hubiera*:\n*hubiera*, *hubieras*, *hubiera*, *hubiéramos*, *hubieran*\n\nThen add the participle, which never changes: *hubiera sabido*, *hubieras venido*, *hubiéramos llegado*.\n\nSo *Ojalá viniera* wishes for something now (*I wish she were coming*), while *Ojalá hubiera venido* looks back (*I wish she had come*). The past is closed, so the wish can only be a wish.\n\nThe same form follows *no creí que* and other past doubts: *No creí que hubieran vendido*. English just says *had*; Spanish makes you pick the *hubiera* form.",
+  "smallPrint": "Teachers call this the pluperfect subjunctive (*pluscuamperfecto de subjuntivo*). You will also see *hubiese* in books. It means the same.",
+  "readAndPick": [
+    {
+      "es": "Ojalá lo hubiera sabido.",
+      "options": [
+        "I wish I knew it.",
+        "I wish I had known.",
+        "I hope I know it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ojalá hubieras venido.",
+      "options": [
+        "I wish I had come.",
+        "I wish you had come. (to a friend)",
+        "I wish you would come. (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ojalá hubiéramos llegado antes.",
+      "options": [
+        "I wish they had arrived earlier.",
+        "I wish I had arrived earlier.",
+        "I wish we had arrived earlier."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Ojalá Vale se hubiera quedado.",
+      "options": [
+        "I wish Vale had stayed.",
+        "I hope Vale stays.",
+        "I wish Vale were staying."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ojalá Vale viniera.",
+      "options": [
+        "I wish Vale had come.",
+        "I wish Vale were coming."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No creí que hubieran vendido el edificio.",
+      "options": [
+        "I don't think they will sell the building.",
+        "I didn't think they would sell the building.",
+        "I didn't think they had sold the building."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Ojalá no hubiera dicho nada.",
+      "options": [
+        "I wish I hadn't said anything.",
+        "I wish I didn't say anything.",
+        "I hope I don't say anything."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ojalá hubieran llamado.",
+      "options": [
+        "I wish they had called.",
+        "I wish they would call.",
+        "I wish we had called."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ojalá tuviera más tiempo.",
+      "options": [
+        "I wish I had had more time.",
+        "I wish I had more time."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *supiera* or *hubiera sabido* and type the whole sentence: *Ojalá lo ___.* (I wish I had known it back then.)",
+      "answer": "Ojalá lo hubiera sabido.",
+      "accept": [],
+      "why": "Looking back at the past, you need *hubiera* plus the participle."
+    },
+    {
+      "prompt": "Pick *hubieras* or *hubiéramos* and type the whole sentence: *Ojalá ___ venido.* (I wish you had come. To a friend.)",
+      "answer": "Ojalá hubieras venido.",
+      "accept": [],
+      "why": "*Hubieras* is the *tú* form, and the participle stays *venido*."
+    },
+    {
+      "prompt": "Say: I wish we had arrived earlier.",
+      "answer": "Ojalá hubiéramos llegado antes.",
+      "accept": [],
+      "why": "*Hubiéramos* carries the *we*, with an accent on the vowel before *ramos*."
+    },
+    {
+      "prompt": "Say: I wish Vale had stayed.",
+      "answer": "Ojalá Vale se hubiera quedado.",
+      "accept": [
+        "Ojalá se hubiera quedado Vale."
+      ],
+      "why": "*Se hubiera quedado*: the *se* stays in front of the helper."
+    },
+    {
+      "prompt": "Make it negative: *Ojalá lo hubiera dicho.* (I wish I had said it. Now: I wish I hadn't said it.)",
+      "answer": "Ojalá no lo hubiera dicho.",
+      "accept": [],
+      "why": "*No* goes in front of everything, including *lo*."
+    },
+    {
+      "prompt": "Say it about they: *Ojalá hubiera llegado antes.*",
+      "answer": "Ojalá hubieran llegado antes.",
+      "accept": [],
+      "why": "*Hubieran* is the form for *they*; the participle doesn't change."
+    },
+    {
+      "prompt": "Say: I didn't think they had sold the building.",
+      "answer": "No creí que hubieran vendido el edificio.",
+      "accept": [],
+      "why": "After a past doubt, use *hubieran* plus the participle."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Ojalá había sabido.",
+      "right": "Ojalá lo hubiera sabido.",
+      "why": "Almost. *Había* states a fact; a wish about the past needs *hubiera*."
+    },
+    {
+      "wrong": "Ojalá lo habría sabido.",
+      "right": "Ojalá lo hubiera sabido.",
+      "why": "*Habría* is the *would* form; after *ojalá* use *hubiera*."
+    },
+    {
+      "wrong": "Ojalá hubiera vino.",
+      "right": "Ojalá hubiera venido.",
+      "why": "The verb after *hubiera* is the participle: *venido*."
+    },
+    {
+      "wrong": "Ojalá hubiéramos llegar antes.",
+      "right": "Ojalá hubiéramos llegado antes.",
+      "why": "After *hubiéramos* comes the participle, not the infinitive."
+    }
+  ],
+  "personal": "Think of something you'd do differently. Say it: *Ojalá hubiera...* or *Ojalá no hubiera...*."
+}

@@ -1,0 +1,174 @@
+{
+  "node": "p:sonar-con-ganas",
+  "hook": {
+    "line": "Everybody in the café has a dream that doesn't fit in a normal sentence, like a farm in the Coffee Region. And when you can't wait to see a friend, *quiero verte* is too small.",
+    "es": "Sueño con tener una finca en el Eje Cafetero.",
+    "en": "I dream of having a farm in the Coffee Region."
+  },
+  "examples": [
+    {
+      "es": "Sueño con tener una finca en el Eje Cafetero.",
+      "en": "I dream of having a farm in the Coffee Region."
+    },
+    {
+      "es": "Sueño con un viaje a la Patagonia.",
+      "en": "I dream of a trip to Patagonia."
+    },
+    {
+      "es": "¡Tengo unas ganas de verte!",
+      "en": "I'm dying to see you! (to a friend)"
+    },
+    {
+      "es": "¡Qué ganas de viajar!",
+      "en": "I really feel like travelling!"
+    },
+    {
+      "es": "Vale sueña con abrir su propia pastelería.",
+      "en": "Vale dreams of opening her own pastry shop."
+    },
+    {
+      "es": "Mis amigos sueñan con ir a Cartagena.",
+      "en": "My friends dream of going to Cartagena."
+    }
+  ],
+  "rule": "For a long-held hope, use *soñar con*. English says *dream of*; Spanish needs *con*, followed by a noun or an infinitive.\n\n*sueño*, *sueñas*, *sueña*, *soñamos*, *sueñan*\n\nSave it for big wishes. For a coffee, say *quiero*.\n\nFor a wish you can't hold back, use *tener unas ganas de* plus the infinitive, with feeling: *¡Tengo unas ganas de verte!* Or shorter: *¡Qué ganas de viajar!*",
+  "smallPrint": "Teachers call this a verb that needs a fixed preposition (*soñar con*).",
+  "readAndPick": [
+    {
+      "es": "Sueño con tener una finca en el Eje Cafetero.",
+      "options": [
+        "I dream of having a farm in the Coffee Region.",
+        "You dream of having a farm in the Coffee Region. (to a friend)",
+        "We dream of having a farm in the Coffee Region."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Sueño con un viaje a la Patagonia.",
+      "options": [
+        "I dream of a trip to Patagonia.",
+        "I'm taking a trip to Patagonia."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Tengo unas ganas de verte!",
+      "options": [
+        "I'm dying to see you! (to a friend)",
+        "You are dying to see me! (to a friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Qué ganas de viajar!",
+      "options": [
+        "I really feel like travelling!",
+        "I travelled a lot!"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale sueña con abrir su propia pastelería.",
+      "options": [
+        "Vale dreams of opening her own pastry shop.",
+        "I dream of opening Vale's pastry shop."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mis amigos sueñan con ir a Cartagena.",
+      "options": [
+        "My friends dream of going to Cartagena.",
+        "My friend dreams of going to Cartagena."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Soñamos con una casa grande.",
+      "options": [
+        "We dream of a big house.",
+        "I dream of a big house.",
+        "They dream of a big house."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Con qué sueñas?",
+      "options": [
+        "What do you dream of? (to a friend)",
+        "What do I dream of?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tenemos unas ganas de bailar.",
+      "options": [
+        "We're dying to dance.",
+        "They're dying to dance."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *con* or *de* and type the whole sentence: *Sueño ___ tener una finca.* (I dream of having a farm.)",
+      "answer": "Sueño con tener una finca.",
+      "accept": [],
+      "why": "*Soñar* always takes *con*."
+    },
+    {
+      "prompt": "Say: I dream of a trip to Patagonia.",
+      "answer": "Sueño con un viaje a la Patagonia.",
+      "accept": [],
+      "why": "*Sueño con* plus a noun."
+    },
+    {
+      "prompt": "Say to a friend: I'm dying to see you!",
+      "answer": "¡Tengo unas ganas de verte!",
+      "accept": [],
+      "why": "*Tengo unas ganas de* plus the infinitive."
+    },
+    {
+      "prompt": "Say: Vale dreams of opening her own pastry shop.",
+      "answer": "Vale sueña con abrir su propia pastelería.",
+      "accept": [],
+      "why": "*Sueña* for Vale, then *con* plus the infinitive."
+    },
+    {
+      "prompt": "Say: My friends dream of going to Cartagena.",
+      "answer": "Mis amigos sueñan con ir a Cartagena.",
+      "accept": [],
+      "why": "*Sueñan* for more than one person."
+    },
+    {
+      "prompt": "Say it about we: *Sueño con una casa grande.*",
+      "answer": "Soñamos con una casa grande.",
+      "accept": [],
+      "why": "The *o* goes back to *soñ-* for we: *soñamos*."
+    },
+    {
+      "prompt": "Say with feeling: What I'd give to travel!",
+      "answer": "¡Qué ganas de viajar!",
+      "accept": [],
+      "why": "*Qué ganas de* plus the infinitive is the short exclamation."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Sueño de tener una finca.",
+      "right": "Sueño con tener una finca.",
+      "why": "Almost. English says *dream of*, but Spanish says *con*."
+    },
+    {
+      "wrong": "Sueño tener una finca.",
+      "right": "Sueño con tener una finca.",
+      "why": "Don't drop *con*: you dream with it."
+    },
+    {
+      "wrong": "Tengo unas ganas verte.",
+      "right": "Tengo unas ganas de verte.",
+      "why": "*Ganas* needs *de* before the infinitive."
+    }
+  ],
+  "personal": "What's a big dream of yours? Say it: *Sueño con...* or *Tengo unas ganas de...*."
+}

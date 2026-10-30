@@ -1,0 +1,179 @@
+{
+  "node": "p:me-decepciono-que",
+  "hook": {
+    "line": "When the plan falls through, *I'm sad* doesn't say enough. Spanish has a word for being let down, and another for the kind of hurt you feel in the chest.",
+    "es": "Me dolió que no me invitaran.",
+    "en": "It hurt me that they didn't invite me."
+  },
+  "examples": [
+    {
+      "es": "Me dolió que no me invitaran.",
+      "en": "It hurt me that they didn't invite me."
+    },
+    {
+      "es": "Me decepcionó que no cumpliera su palabra.",
+      "en": "I was disappointed that he didn't keep his word."
+    },
+    {
+      "es": "Me desilusionó que cancelaran el concierto.",
+      "en": "I was let down that they cancelled the concert."
+    },
+    {
+      "es": "Me decepciona que Altamira no quiera hablar.",
+      "en": "It disappoints me that Altamira doesn't want to talk."
+    },
+    {
+      "es": "Estoy decepcionado con el resultado.",
+      "en": "I'm disappointed with the result. (a man speaking)"
+    },
+    {
+      "es": "Te dolió que Vale no viniera, ¿verdad?",
+      "en": "It hurt you that Vale didn't come, didn't it? (to a friend)"
+    }
+  ],
+  "rule": "These verbs work like *gustar*: the thing that let you down is the subject, and *me* is you. *Me decepcionó que...* is *it let me down that...*.\n\n*Me dolió* is stronger: it hurt.\n\nAfter *que*, use the wish forms. For something that already happened, use the *-ra* form: *invitaran*, *cancelaran*, *cumpliera*. For something that still bothers you now, use *quiera*.\n\nFor a person or a thing, switch to *estar*: *Estoy decepcionado con...*. A woman says *decepcionada*.",
+  "smallPrint": "Teachers call these verbs of emotion: they trigger the subjunctive after *que*.",
+  "readAndPick": [
+    {
+      "es": "Me dolió que no me invitaran.",
+      "options": [
+        "It hurt me that they didn't invite me.",
+        "It hurt them that I didn't invite them.",
+        "It hurts me that they don't invite me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me decepcionó que no cumpliera su palabra.",
+      "options": [
+        "I disappointed him.",
+        "I was disappointed that he didn't keep his word.",
+        "He was disappointed that I didn't keep my word."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me desilusionó que cancelaran el concierto.",
+      "options": [
+        "I was let down that they cancelled the concert.",
+        "I cancelled the concert and I was let down."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me decepciona que Altamira no quiera hablar.",
+      "options": [
+        "It disappointed me that Altamira didn't want to talk.",
+        "It disappoints me that Altamira doesn't want to talk."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Estoy decepcionado con el resultado.",
+      "options": [
+        "I'm disappointed with the result. (a man speaking)",
+        "The result disappointed me yesterday."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Te dolió que Vale no viniera.",
+      "options": [
+        "It hurt you that Vale didn't come. (to a friend)",
+        "It hurt Vale that you didn't come."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nos decepcionó que no vinieran.",
+      "options": [
+        "It disappointed us that they didn't come.",
+        "It disappointed them that we didn't come."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me dolió que Tomás no llamara.",
+      "options": [
+        "It hurt me that Tomás didn't call.",
+        "It hurt Tomás that I didn't call."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estoy decepcionada con Vale.",
+      "options": [
+        "I'm disappointed with Vale. (a woman speaking)",
+        "Vale is disappointed with me."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *invitaran* or *invitaron* and type the whole sentence: *Me dolió que no me ___.* (It hurt me that they didn't invite me.)",
+      "answer": "Me dolió que no me invitaran.",
+      "accept": [],
+      "why": "After *me dolió que*, use the wish form: *invitaran*."
+    },
+    {
+      "prompt": "Pick *decepcionó* or *decepcioné* and type the whole sentence: *Me ___ que no cumpliera su palabra.* (I was disappointed that he didn't keep his word.)",
+      "answer": "Me decepcionó que no cumpliera su palabra.",
+      "accept": [],
+      "why": "The thing that let you down is the subject, so the verb is *decepcionó*."
+    },
+    {
+      "prompt": "Say: I was let down that they cancelled the concert.",
+      "answer": "Me desilusionó que cancelaran el concierto.",
+      "accept": [],
+      "why": "*Me desilusionó que* then the *-ran* form: *cancelaran*."
+    },
+    {
+      "prompt": "Say: It disappoints me that Altamira doesn't want to talk.",
+      "answer": "Me decepciona que Altamira no quiera hablar.",
+      "accept": [],
+      "why": "Something that bothers you now uses the present forms: *decepciona*, *quiera*."
+    },
+    {
+      "prompt": "Say, a man speaking: I'm disappointed with the result.",
+      "answer": "Estoy decepcionado con el resultado.",
+      "accept": [],
+      "why": "For a thing or person, use *estar decepcionado con*."
+    },
+    {
+      "prompt": "Say it about us: *Me dolió que no me invitaran.*",
+      "answer": "Nos dolió que no nos invitaran.",
+      "accept": [],
+      "why": "*Nos* replaces *me* both times: it hurt us."
+    },
+    {
+      "prompt": "Say to a friend: It hurt you that Vale didn't come.",
+      "answer": "Te dolió que Vale no viniera.",
+      "accept": [],
+      "why": "*Te dolió* for the friend, then *viniera* for the past."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me dolió que no me invitaron.",
+      "right": "Me dolió que no me invitaran.",
+      "why": "Almost. After *que* in a feeling, use the wish form: *invitaran*."
+    },
+    {
+      "wrong": "Me decepcioné que no vinieras.",
+      "right": "Me decepcionó que no vinieras.",
+      "why": "The thing that let you down is the subject: *me decepcionó*."
+    },
+    {
+      "wrong": "Estoy decepcionado en el resultado.",
+      "right": "Estoy decepcionado con el resultado.",
+      "why": "Use *con* for what let you down."
+    },
+    {
+      "wrong": "Decepcioné que no vinieras.",
+      "right": "Me decepcionó que no vinieras.",
+      "why": "English makes you the subject; Spanish puts *me* in front, like *gustar*."
+    }
+  ],
+  "personal": "Remember a time someone let you down. Say it: *Me decepcionó que...* or *Me dolió que...*."
+}
