@@ -1,0 +1,218 @@
+{
+  "id": "sc-u29-b",
+  "unit": "u29",
+  "title": "The permits",
+  "spare": false,
+  "brief": "You're Tomás, talking with Mariana, the journalist. She has checked Altamira's permits and has doubts. She's your age and a friend, so use tú. Agree with her, guess, and push back on a rumour.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Revisé los papeles de Altamira. Dudo que sean legales. ¿Tú qué piensas?",
+      "npcEn": "I checked Altamira's papers. I doubt they're legal. What do you think?",
+      "intent": "Say you agree with her, and that you doubt it too.",
+      "accept": [
+        "Estoy de acuerdo contigo, Mariana. Yo también dudo que sean legales.",
+        "Sí, estoy de acuerdo. Dudo que todo sea legal.",
+        "Estoy de acuerdo contigo. Yo también dudo que estén bien."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "de acuerdo"
+          ],
+          "label": "say you agree: estoy de acuerdo"
+        },
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "dudo que",
+          "within": 3,
+          "label": "after dudo que, the verb changes: sean"
+        }
+      ],
+      "focus": "p:estar-de-acuerdo-con-en",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Alguien firmó todo en un solo día. ¿Quién sería?",
+      "npcEn": "Someone signed everything in a single day. Who could it have been?",
+      "intent": "Guess who it was: say it would be a friend of Altamira.",
+      "accept": [
+        "Sería un amigo de Altamira.",
+        "Sería alguien de la oficina, amigo de él.",
+        "Yo creo que sería algún amigo suyo."
+      ],
+      "require": [
+        {
+          "type": "verbFormAny",
+          "inf": "ser",
+          "tense": "condicional",
+          "label": "to guess about the past, use sería"
+        }
+      ],
+      "focus": "g:conditional-past-guess",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Puede ser. Pero no tengo pruebas todavía. ¿Publico la noticia ya?",
+      "npcEn": "Could be. But I don't have proof yet. Do I publish the story now?",
+      "intent": "Say that maybe it's better to wait (use a lo mejor).",
+      "accept": [
+        "A lo mejor es mejor esperar.",
+        "A lo mejor debemos esperar unos días.",
+        "A lo mejor debes esperar un poco más."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "a lo mejor",
+          "flags": "i",
+          "label": "say maybe with a lo mejor"
+        }
+      ],
+      "focus": "g:quizas-a-lo-mejor",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Vale me dijo que tú ya decidiste vender el café. ¿Es verdad?",
+      "npcEn": "Vale told me you've already decided to sell the café. Is it true?",
+      "intent": "Tell her she's wrong: you don't want to sell the café.",
+      "accept": [
+        "Te equivocas, Mariana. No quiero vender el café.",
+        "Creo que te equivocas. Yo no quiero vender.",
+        "No quiero vender el café. Vale se equivocó, Mariana."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "equivoc",
+          "flags": "i",
+          "label": "say she's wrong: te equivocas, estás equivocada"
+        },
+        {
+          "type": "negation",
+          "label": "say you don't want to sell"
+        }
+      ],
+      "focus": "p:equivocarse",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Entonces fue un error. Gracias, Tomás. ¿Nos vemos mañana en el café?",
+      "npcEn": "Then it was a misunderstanding. Thanks, Tomás. Shall we meet tomorrow at the café?",
+      "intent": "Say that's fine by you and tell her to come at ten for a coffee.",
+      "accept": [
+        "Me parece bien. Ven a las diez y te regalo un tinto.",
+        "Sí, me parece bien. Te espero a las diez con un tinto.",
+        "Me parece bien, Mariana. Nos vemos a las diez en el café."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "me parece bien"
+          ],
+          "label": "say it's fine by you: me parece bien"
+        }
+      ],
+      "focus": "x:dar-igual-parecer-bien",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-lo-mejor",
+    "c:bien-y-tu",
+    "c:chao-nos-vemos",
+    "c:creo-que",
+    "c:entonces-bueno",
+    "c:estoy-de-acuerdo",
+    "c:gracias-de-nada",
+    "c:lo-mejor-es",
+    "c:me-parece-bien",
+    "c:puede-ser",
+    "c:quiero",
+    "c:tengo",
+    "g:adjective-agreement",
+    "g:commands-tu",
+    "g:conditional",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:indefinites",
+    "g:lo-adjective",
+    "g:possessives-stressed",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:quizas-a-lo-mejor",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-doubt",
+    "g:subj-irregulars",
+    "g:subj-wanting",
+    "g:tener-que-hay-que",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:acuerdo",
+    "l:amigo",
+    "l:bien",
+    "l:café",
+    "l:creer",
+    "l:deber",
+    "l:decidir",
+    "l:decir",
+    "l:dudar",
+    "l:día",
+    "l:equivocarse",
+    "l:error",
+    "l:esperar",
+    "l:estar",
+    "l:firmar",
+    "l:legal",
+    "l:mañana",
+    "l:mejor",
+    "l:noticia",
+    "l:oficina",
+    "l:papel",
+    "l:parecer",
+    "l:pensar",
+    "l:poder",
+    "l:prueba",
+    "l:publicar",
+    "l:querer",
+    "l:quién",
+    "l:qué",
+    "l:regalar",
+    "l:revisar",
+    "l:ser",
+    "l:tener",
+    "l:tinto",
+    "l:vender",
+    "l:venir",
+    "l:ver",
+    "l:verdad",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:de-owner",
+    "p:equivocarse",
+    "p:indefinites-basic",
+    "p:me-te-nos-objects",
+    "p:nos-vemos-a-las",
+    "p:poco-un-poco",
+    "p:quantifiers-basic",
+    "p:que-opinas-de",
+    "p:tambien-tampoco",
+    "p:telling-time",
+    "p:ya-todavia-basic"
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "id": "sc-u29-c",
+  "unit": "u29",
+  "title": "Both of you",
+  "spare": true,
+  "brief": "You're Tomás. Don Hernando, the retired taxi driver, has heard you and Vale argued. He is much older and courtly, so use usted with him. Answer his questions and keep the peace.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, ¿qué tal? Usted y Vale discutieron hoy, ¿verdad?",
+      "npcEn": "Tomás, how are you? You and Vale argued today, didn't you?",
+      "intent": "Say yes, you argued, and that you doubt Vale is right.",
+      "accept": [
+        "Sí, señor. Dudo que Vale tenga razón.",
+        "Sí, es cierto. Discutimos, y dudo que ella tenga razón.",
+        "Sí, discutimos sobre Altamira. Yo dudo que ella tenga razón."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "dudo que",
+          "within": 3,
+          "label": "after dudo que, the verb changes: tenga"
+        }
+      ],
+      "focus": "g:subj-doubt",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Yo creo que los dos tienen razón. Es posible que ella vea el dinero y usted vea el café de su abuela.",
+      "npcEn": "I think you're both right. It's possible she sees the money and you see your grandmother's café.",
+      "intent": "Say it's possible he is right (es posible que).",
+      "accept": [
+        "Es posible que tenga razón.",
+        "Sí, es posible que los dos tengamos razón.",
+        "Es posible que usted tenga razón, señor."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "es posible que",
+          "within": 3,
+          "label": "after es posible que, the verb changes: tenga, tengamos"
+        }
+      ],
+      "focus": "g:subj-doubt",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Dudo que ustedes dos almuercen cuando discuten. ¿Ya almorzó usted hoy?",
+      "npcEn": "I doubt you two eat lunch when you argue. Have you had lunch today?",
+      "intent": "Say you haven't had lunch, and guess that Vale would be in the kitchen.",
+      "accept": [
+        "No, no almorcé. Vale estaría en la cocina, creo.",
+        "No almorcé. Y Vale tampoco, estaría en la cocina con sus postres.",
+        "Todavía no almorcé. Vale estaría en la cocina, supongo."
+      ],
+      "require": [
+        {
+          "type": "verbFormAny",
+          "inf": "estar",
+          "tense": "condicional",
+          "label": "to guess, use estaría"
+        },
+        {
+          "type": "negation",
+          "label": "say you haven't eaten"
+        }
+      ],
+      "focus": "g:conditional-past-guess",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Entonces tengo una idea: primero comen y después hablan. ¿Está de acuerdo?",
+      "npcEn": "Then I have an idea: first you eat and then you talk. Do you agree?",
+      "intent": "Say you agree, and that you don't mind where you eat.",
+      "accept": [
+        "Estoy de acuerdo, señor. Me da igual el lugar.",
+        "Sí, estoy de acuerdo con usted. Me da lo mismo el lugar.",
+        "Estoy de acuerdo con usted. Me da igual comer aquí o allá."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "de acuerdo"
+          ],
+          "label": "say you agree: estoy de acuerdo"
+        },
+        {
+          "type": "containsAny",
+          "words": [
+            "me da igual",
+            "me da lo mismo"
+          ],
+          "label": "say you don't mind: me da igual"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "eres",
+            "tú",
+            "tienes"
+          ],
+          "label": "use usted with Hernando"
+        }
+      ],
+      "focus": "p:dar-igual",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Perfecto. Yo invito el primer tinto.",
+      "npcEn": "Perfect. I'll treat you to the first coffee.",
+      "intent": "Thank him warmly, using usted.",
+      "accept": [
+        "Gracias, señor. Es usted muy amable.",
+        "Muy amable, señor. Gracias por el tinto.",
+        "Muchas gracias. Usted siempre tiene razón."
+      ],
+      "require": [
+        {
+          "type": "avoidsAny",
+          "words": [
+            "eres",
+            "tú",
+            "tienes"
+          ],
+          "label": "use usted with Hernando"
+        }
+      ],
+      "focus": "x:supongo-vs-dudo",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:aqui-tiene",
+    "c:bien-y-tu",
+    "c:creo-que",
+    "c:entonces-bueno",
+    "c:es-lo-mismo",
+    "c:estoy-de-acuerdo",
+    "c:gracias-de-nada",
+    "c:me-da-igual",
+    "c:me-regala",
+    "c:muy-amable",
+    "c:no-cierto",
+    "c:supongo-que",
+    "c:tengo",
+    "c:tienes",
+    "c:todavia-no",
+    "g:conditional",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-doubt",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:abuela",
+    "l:acuerdo",
+    "l:allá",
+    "l:almorzar",
+    "l:amable",
+    "l:aquí",
+    "l:café",
+    "l:cocina",
+    "l:comer",
+    "l:creer",
+    "l:dar",
+    "l:después",
+    "l:dinero",
+    "l:discutir",
+    "l:dudar",
+    "l:estar",
+    "l:hablar",
+    "l:hoy",
+    "l:idea",
+    "l:igual",
+    "l:invitar",
+    "l:lugar",
+    "l:perfecto",
+    "l:posible",
+    "l:postre",
+    "l:qué",
+    "l:razón",
+    "l:ser",
+    "l:señor",
+    "l:siempre",
+    "l:suponer",
+    "l:tener",
+    "l:tinto",
+    "l:ver",
+    "l:verdad",
+    "p:aqui-ahi-alla",
+    "p:cuando-basic",
+    "p:dar-igual",
+    "p:estar-de-acuerdo-con-en",
+    "p:frequency-scale",
+    "p:gracias-por",
+    "p:no-es-x-es-y",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:possessives-basic",
+    "p:tener-razon",
+    "p:time-sequence-basic"
+  ]
+}

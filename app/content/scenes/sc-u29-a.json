@@ -1,0 +1,219 @@
+{
+  "id": "sc-u29-a",
+  "unit": "u29",
+  "title": "Not for sale, maybe",
+  "spare": false,
+  "brief": "You're Tomás. Altamira has made an offer for the café, and Vale says no way. She's your friend and works beside you, so use tú. Say what you doubt, concede a point and keep it friendly.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Altamira quiere comprar el café. Yo digo que ni hablar. ¿Tú qué piensas?",
+      "npcEn": "Altamira wants to buy the café. I say no way. What do you think?",
+      "intent": "Tell her you doubt that you can win the fight against Altamira.",
+      "accept": [
+        "Dudo que podamos ganar, Vale.",
+        "Sinceramente, dudo que ganemos contra ellos.",
+        "Yo dudo que ganemos contra Altamira."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "dudo que",
+          "within": 3,
+          "label": "after dudo que, the verb changes: ganemos, podamos"
+        }
+      ],
+      "focus": "g:subj-doubt",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Tú crees? Yo creo que todavía tenemos una oportunidad.",
+      "npcEn": "You think so? I think we still have a chance.",
+      "intent": "Say perhaps she's right (use quizás), but you want to hear the offer.",
+      "accept": [
+        "Quizás tengas razón, pero quiero escuchar la oferta.",
+        "Pues quizás tengas razón, Vale, pero la oferta me interesa.",
+        "Quizás sea así, pero tenemos que escuchar la oferta."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "quizás",
+          "within": 3,
+          "label": "after quizás, the verb changes: tengas, sea"
+        }
+      ],
+      "focus": "g:quizas-a-lo-mejor",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Qué raro. El abogado no contestó ayer. ¿Dónde estaría?",
+      "npcEn": "How strange. The lawyer didn't answer yesterday. Where could he have been?",
+      "intent": "Guess where the lawyer was yesterday: say he would be in another meeting.",
+      "accept": [
+        "Estaría en otra reunión.",
+        "Estaría en su oficina con otro cliente.",
+        "Yo creo que estaría en una reunión."
+      ],
+      "require": [
+        {
+          "type": "verbFormAny",
+          "inf": "estar",
+          "tense": "condicional",
+          "label": "to guess about the past, use estaría"
+        }
+      ],
+      "focus": "g:conditional-past-guess",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Lo peor es que el abogado cobra mucho y casi no tenemos pruebas. Yo creo que debemos vender.",
+      "npcEn": "The worst part is that the lawyer charges a lot and we have almost no proof. I say we sell.",
+      "intent": "Concede that she's right the lawyer costs a lot, but say you don't agree with selling.",
+      "accept": [
+        "Tienes razón, el abogado cobra mucho, pero no estoy de acuerdo con vender.",
+        "Tienes razón, el abogado cuesta mucho. Pero no estoy de acuerdo con vender el café.",
+        "Sí, tienes razón, pero no estoy de acuerdo con vender."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "tienes razón",
+            "es cierto",
+            "es verdad"
+          ],
+          "label": "concede her point first: tienes razón"
+        },
+        {
+          "type": "containsAny",
+          "words": [
+            "no estoy de acuerdo"
+          ],
+          "label": "say you don't agree: no estoy de acuerdo"
+        }
+      ],
+      "focus": "p:tener-razon-pero",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Bueno, no peleemos más. ¿Café con leche o tinto?",
+      "npcEn": "OK, let's not fight any more. Coffee with milk or black coffee?",
+      "intent": "Say you don't mind which one, and thank her.",
+      "accept": [
+        "Me da igual, Vale. Gracias.",
+        "Gracias. Me da lo mismo, tú decides.",
+        "Me da igual, de verdad. Gracias por todo."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "me da igual",
+            "me da lo mismo"
+          ],
+          "label": "say you don't mind: me da igual"
+        }
+      ],
+      "focus": "p:dar-igual",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:ayer-anoche",
+    "c:creo-que",
+    "c:en-serio",
+    "c:entonces-bueno",
+    "c:es-lo-mismo",
+    "c:es-que",
+    "c:estoy-de-acuerdo",
+    "c:gracias-de-nada",
+    "c:me-da-igual",
+    "c:me-regala",
+    "c:ni-hablar",
+    "c:pues",
+    "c:quiero",
+    "c:tienes",
+    "c:tu-crees",
+    "g:adverbs-mente",
+    "g:conditional",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:lo-adjective",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:questions",
+    "g:quizas-a-lo-mejor",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-doubt",
+    "g:subj-irregulars",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:tener-que-hay-que",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:abogado",
+    "l:acuerdo",
+    "l:ayer",
+    "l:bueno",
+    "l:café",
+    "l:cliente",
+    "l:cobrar",
+    "l:comprar",
+    "l:contestar",
+    "l:costar",
+    "l:creer",
+    "l:dar",
+    "l:deber",
+    "l:decidir",
+    "l:decir",
+    "l:dudar",
+    "l:dónde",
+    "l:escuchar",
+    "l:estar",
+    "l:ganar",
+    "l:hablar",
+    "l:igual",
+    "l:interesar",
+    "l:leche",
+    "l:oferta",
+    "l:oficina",
+    "l:oportunidad",
+    "l:pelear",
+    "l:pensar",
+    "l:peor",
+    "l:poder",
+    "l:prueba",
+    "l:querer",
+    "l:quizás",
+    "l:qué",
+    "l:raro",
+    "l:razón",
+    "l:reunión",
+    "l:ser",
+    "l:sinceramente",
+    "l:tener",
+    "l:tinto",
+    "l:vender",
+    "l:verdad",
+    "p:con-sin",
+    "p:dar-igual",
+    "p:gracias-por",
+    "p:otro-no-article",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:que-opinas-de",
+    "p:tener-razon",
+    "p:tener-razon-pero",
+    "p:ya-todavia-basic"
+  ]
+}
