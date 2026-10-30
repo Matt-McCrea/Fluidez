@@ -102,11 +102,10 @@
   {
    "es": "Vale cocina bien.",
    "options": [
-    "Vale is a good cook.",
     "Vale cooks well.",
-    "Vale cooks a good meal."
+    "Vale cooks badly."
    ],
-   "answer": 1
+   "answer": 0
   },
   {
    "es": "Mariana es una persona tranquila.",

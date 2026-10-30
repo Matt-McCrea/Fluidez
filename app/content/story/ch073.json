@@ -2,7 +2,7 @@
   "id": "ch073",
   "unit": "u25",
   "title": "Nueve horas de boleros",
-  "text": "Hernando no quería volar.\nHernando: Un avión no tiene alma, mijo. La Burra sí.\nLa Burra salió de La Candelaria a las cuatro de la mañana, con Simón atrás.\nTomás: Según el celular, en avión es una hora. En carro son nueve.\nHernando: Según el celular, en Bogotá no llueve nunca.\nVale le dio un dulce a Hernando, y otro dulce a Simón.\nEn la primera montaña, Tomás y Vale se pelearon por la música. Él quería salsa, y ella quería rock.\nHernando: En este taxi el líder soy yo. Y el líder pone boleros.\nA las diez llamó Mariana.\nMariana: El juicio de la multa es el lunes. El inspector no tiene todos los papeles.\nTomás: ¿Y Altamira?\nMariana: Altamira sí los tiene.\nTomás le pasó el celular a Vale. Vale le pasó un dulce a Tomás.\nEn Medellín había flores en todas las calles y música en todas las esquinas, y las montañas subían hasta el cielo.\nBeatriz los esperaba en la puerta. Le dio un abrazo a Vale, y otro a Hernando.\nBeatriz: ¡Hernando! Por teléfono usted es un pan de Dios. ¿Y en persona?\nSimón: ¡Pan de Dios! ¡Pan de Dios!\nLa abuela miró a Tomás.\nAbuela: ¿Y usted es el marido de Vale?\nVale: ¡No, abuela! Es mi socio.\nAbuela: Ah. Todavía.\nEsa noche, Beatriz puso un cuaderno viejo en la mesa.\nBeatriz: Es mi diario de 1990. Ahí escribí lo que me dijo Rosa.\nVale: ¿Y qué te dijo?\nBeatriz: Mañana. Hoy están muy cansados.\nHernando miró el diario y no dijo nada.",
+  "text": "Hernando no quería volar.\nHernando: Un avión no tiene alma, mijo. La Burra sí.\nLa Burra salió de La Candelaria a las cuatro de la mañana, con Simón atrás.\nTomás: Según el celular, en avión es una hora. En carro son nueve.\nHernando: Según el celular, en Bogotá no llueve nunca.\nVale le dio un dulce a Hernando, y otro a Simón.\nEn la primera montaña, Tomás y Vale se pelearon por la música. Él quería salsa; ella, rock.\nHernando: En este taxi el líder soy yo. Y el líder pone boleros.\nA las diez llamó Mariana.\nMariana: El juicio por la multa es el lunes. El inspector no tiene todos los papeles.\nTomás: ¿Y Altamira?\nMariana: Altamira sí los tiene.\nTomás le pasó el celular a Vale. Vale le pasó un dulce a Tomás.\nEn Medellín había flores en todas las calles y música en todas las esquinas, y las montañas subían hasta el cielo.\nBeatriz los esperaba en la puerta. Le dio un abrazo a Vale, y otro a Hernando.\nBeatriz: ¡Hernando! Por teléfono usted es un pan de Dios. ¿Y en persona?\nSimón: ¡Pan de Dios! ¡Pan de Dios!\nLa abuela miró a Tomás.\nAbuela: ¡El de la única vuelta! ¿Ya es el marido de Vale?\nVale: ¡No, abuela! Es mi socio.\nAbuela: Ah. Todavía.\nEsa noche, Beatriz puso un cuaderno viejo en la mesa.\nBeatriz: Es mi diario de 1990. Ahí escribí lo que me dijo Rosa.\nVale: ¿Y qué te dijo?\nBeatriz: Mañana. Hoy están muy cansados.\nHernando miró el diario y no dijo nada.",
   "gloss": [
     {
       "es": "Un avión no tiene alma, mijo.",
@@ -79,6 +79,14 @@
     {
       "es": "Hoy están muy cansados.",
       "en": "Today you're all very tired."
+    },
+    {
+      "es": "¡El de la única vuelta!",
+      "en": "The one with the single dance turn!"
+    },
+    {
+      "es": "¿Ya es el marido de Vale?",
+      "en": "And are you Vale's husband now?"
     }
   ],
   "questions": [
@@ -167,7 +175,6 @@
     }
   ],
   "requires": [
-    "c:bien-y-tu",
     "c:pan-de-dios",
     "c:segun",
     "c:si-soy-yo",
@@ -270,6 +277,8 @@
     "l:teléfono",
     "l:tener",
     "l:viejo",
-    "l:volar"
+    "l:volar",
+    "l:volver",
+    "l:único"
   ]
 }

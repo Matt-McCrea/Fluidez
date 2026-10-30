@@ -37,9 +37,9 @@
       "require": [
         {
           "type": "regex",
-          "pattern": "señor (del|de la) ",
+          "pattern": "\\b(del|de la|de los|de las) ",
           "flags": "i",
-          "label": "the man with...: el señor del pelo blanco"
+          "label": "pick him out with de: el señor del pelo blanco"
         }
       ],
       "focus": "p:de-los-ojos-azules",
@@ -96,7 +96,7 @@
     },
     {
       "id": "t5",
-      "npc": "Espere. ¿Un señor del pelo blanco, con una camisa amarilla? Mire allá. Está bailando en el desfile.",
+      "npc": "Espere. ¿Un señor de pelo blanco, con camisa amarilla? Mire allá. Está bailando en el desfile.",
       "npcEn": "Wait. A man with white hair, in a yellow shirt? Look over there. He's dancing in the parade.",
       "intent": "Say it's him and that, honestly, he dances better than you.",
       "accept": [

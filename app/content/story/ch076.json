@@ -2,7 +2,7 @@
   "id": "ch076",
   "unit": "u25",
   "title": "Ni un bolero",
-  "text": "Beatriz abrió el diario en agosto de 1990.\nBeatriz: Rosa me dijo que tenía un hermano menor, Joaquín. Me contó que en 1978 se pelearon muy feo. Ella le gritó cosas horribles, y él golpeó la mesa y se fue. Me dijo que Joaquín se fue para Santa Marta, y que nunca volvió.\nTomás: ¿Santa Marta? ¿Ese era el pueblo?\nBeatriz: Sí. Lo escribí aquí, y lo olvidé treinta y seis años.\nTomás: ¿Y por qué se pelearon?\nBeatriz: Eso no me lo contó. Me dijo que la culpa era de ella, y que nunca se perdonó.\nBeatriz: Rosa llegó a Medellín en 1990 con un solo propósito: la búsqueda de su hermano. Mi papá le dijo que en esos años la costa era un peligro. Y Rosa lloró aquí, en esta cocina.\nVale le tomó la mano a su mamá.\nBeatriz: Otra cosa, mija. Yo te mandé al café de Rosa.\nVale: ¿Tú? ¿Y por qué no me dijiste nada?\nBeatriz: Hace cinco años, Rosa me pidió algo: «Un día va a llegar mi nieto. No lo deje solo».\nVale: ¿Y tú lo sabías, Tomás?\nTomás: No. Bueno, sí. Desde la fiesta.\nSimón: ¡Mentira! ¡Mentira!\nVale no se rio, pero tampoco se fue.\nVale: Todos lo sabían menos yo. Eso me duele.\nEl domingo volvieron a Bogotá. Hernando manejó nueve horas, sin hablar, y no puso ni un bolero.\nA las diez, Hernando paró delante del café, pero no se bajó.\nHernando: Rosa no tenía toda la culpa. Mañana les hago una comida, y les hablo de Rosa.",
+  "text": "Beatriz abrió el diario en agosto de 1990.\nBeatriz: Rosa me dijo que tenía un hermano menor, Joaquín. Me contó que en 1978 se pelearon muy feo. Ella le gritó cosas horribles, y él golpeó la mesa y se fue. Me dijo que Joaquín se fue para Santa Marta, y que nunca volvió.\nTomás: ¿Santa Marta? ¿Ese era el pueblo?\nBeatriz: Sí. Lo escribí aquí, y lo olvidé durante treinta y seis años.\nTomás: ¿Y por qué se pelearon?\nBeatriz: Eso no me lo contó. Me dijo que la culpa era de ella, y que nunca se perdonó.\nBeatriz: Rosa llegó a Medellín en 1990 con un solo propósito: la búsqueda de su hermano. Mi papá le dijo que en esos años la costa era un peligro. Y Rosa lloró aquí, en esta cocina.\nVale le tomó la mano a su mamá.\nBeatriz: Otra cosa, mija. Yo te mandé al café de Rosa.\nVale: ¿Tú? ¿Y por qué no me dijiste nada?\nBeatriz: Hace cinco años, Rosa me pidió algo: «Un día va a llegar mi nieto. No lo deje solo».\nVale: ¿Y tú lo sabías, Tomás?\nTomás: No. Bueno, sí. Desde la fiesta.\nSimón: ¡Mentira! ¡Mentira!\nVale no se rio, pero tampoco se fue.\nVale: Todos lo sabían menos yo. Eso me duele.\nEl domingo volvieron a Bogotá. Hernando manejó nueve horas, sin hablar, y no puso ni un bolero.\nA las diez, Hernando paró delante del café, pero no se bajó.\nHernando: Rosa no tenía toda la culpa. Mañana les hago una comida, y les hablo de Rosa.",
   "gloss": [
     {
       "es": "Beatriz abrió el diario en agosto de 1990.",
@@ -25,7 +25,7 @@
       "en": "She told me Joaquín went off to Santa Marta and never came back."
     },
     {
-      "es": "lo olvidé treinta y seis años",
+      "es": "lo olvidé durante treinta y seis años",
       "en": "I forgot it for thirty-six years"
     },
     {
@@ -206,6 +206,7 @@
     "p:days-el-lunes",
     "p:demonstratives-basic",
     "p:doler",
+    "p:durar-durante",
     "p:frequency-scale",
     "p:indefinites-basic",
     "p:mayor-menor",

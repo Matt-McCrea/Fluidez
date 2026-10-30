@@ -2,15 +2,15 @@
   "id": "ch074",
   "unit": "u25",
   "title": "¡Qué oso!",
-  "text": "El cable subía despacio por encima de la ciudad. Abajo estaba el valle, con todas sus luces.\nHernando cerró los ojos.\nHernando: Cuarenta años en la calle, y nunca subí a un cable.\nBeatriz: Los paisas somos orgullosos, Hernando. Mire: aquí hasta el metro vuela.\nArriba, en el cerro, todo era naturaleza: colinas verdes, vacas, un lago pequeño y cultivos de flores.\nEn una colina vivía don Efraín, un silletero de ochenta años.\nEfraín: Esta es una tradición de mi familia. Mi abuelo bajaba flores a la ciudad, mi papá también, y ahora mis nietos.\nEfraín le puso a Tomás una silleta de sesenta kilos en la espalda.\nTomás caminó un metro y se cayó encima de las flores.\nVale: ¡Tomás! ¿Llamo una ambulancia?\nTomás: No necesito una ambulancia. Necesito otra espalda.\nEfraín: ¡Qué oso, mijo!\nSimón: ¡Qué oso!\nUna vaca miró a Tomás. Hernando se rio hasta llorar.\nEfraín: Pero tiene carácter, el muchacho. Se cayó y sonrió. Ese es el carácter paisa.\nDesde el cerro, Tomás miró todo el valle. Al lado del lago, Efraín les mostró su cultivo.\nEfraín: Una empresa de Bogotá quiere comprar esta colina. Dizque para un hotel con vista al lago.\nTomás: ¿Cuál empresa?\nSimón: ¡Altamira no! ¡Altamira no!\nHernando: Aquí compran la naturaleza, y en Bogotá, las esquinas.\nEfraín: En mi familia hay una costumbre: nadie vende la tierra. Es una tradición más vieja que yo.\nHernando: Rosa tenía la misma costumbre, señor.\nEfraín: Mañana usted baja con nosotros al desfile, mijo. Con una silleta pequeña. Usted también es orgulloso, ¿no?",
+  "text": "El cable subía despacio por encima de la ciudad. Abajo estaba todo el valle, y la ciudad parecía pequeña.\nHernando cerró los ojos.\nHernando: Cuarenta años en la calle, y nunca subí a un cable.\nBeatriz: Los paisas somos orgullosos, Hernando. Mire: aquí hasta el metro vuela.\nArriba, en el cerro, todo era naturaleza: colinas verdes, vacas, un lago pequeño y cultivos de flores.\nEn una colina vivía don Efraín, un silletero de ochenta años.\nEfraín: Esta es una tradición de mi familia. Mi abuelo bajaba flores a la ciudad, mi papá también, y ahora mis nietos.\nEfraín le puso a Tomás una silleta de sesenta kilos en la espalda.\nTomás caminó un metro y se cayó encima de las flores.\nVale: ¡Tomás! ¿Llamo una ambulancia?\nTomás: No necesito una ambulancia. Necesito otra espalda.\nEfraín: ¡Qué oso, mijo!\nSimón: ¡Qué oso!\nTomás: ¿Un oso? ¿Dónde?\nUna vaca miró a Tomás. Hernando se rio hasta llorar.\nEfraín: Pero tiene carácter, el muchacho. Se cayó y sonrió. Ese es el carácter paisa.\nAl lado del lago, Efraín les mostró su cultivo.\nEfraín: Una empresa de Bogotá quiere comprar esta colina. Dizque para un hotel con vista al lago.\nTomás: ¿Cuál empresa?\nSimón: ¡Altamira no! ¡Altamira no!\nHernando: Aquí compran la naturaleza, y en Bogotá, las esquinas.\nEfraín: En mi familia hay una costumbre: nadie vende la tierra. Es una tradición más vieja que yo.\nHernando: Rosa tenía la misma costumbre, señor.\nEfraín: Mañana usted baja con nosotros al desfile, mijo. Con una silleta pequeña. Usted también es orgulloso, ¿no?",
   "gloss": [
     {
       "es": "cable",
       "en": "cable car (Medellín's Metrocable)"
     },
     {
-      "es": "Abajo estaba el valle, con todas sus luces.",
-      "en": "Below lay the valley, with all its lights."
+      "es": "Abajo estaba todo el valle, y la ciudad parecía pequeña.",
+      "en": "Below lay the whole valley, and the city looked small."
     },
     {
       "es": "nunca subí a un cable",
@@ -75,6 +75,10 @@
     {
       "es": "Usted también es orgulloso, ¿no?",
       "en": "You're proud too, aren't you?"
+    },
+    {
+      "es": "¿Un oso? ¿Dónde?",
+      "en": "A bear? Where?"
     }
   ],
   "questions": [
@@ -219,6 +223,7 @@
     "l:cuál",
     "l:desfile",
     "l:despacio",
+    "l:dónde",
     "l:empresa",
     "l:encima",
     "l:espalda",
@@ -232,7 +237,6 @@
     "l:lago",
     "l:llamar",
     "l:llorar",
-    "l:luz",
     "l:mañana",
     "l:metro",
     "l:mijo",
@@ -247,6 +251,7 @@
     "l:oso",
     "l:paisa",
     "l:papá",
+    "l:parecer",
     "l:pequeño",
     "l:poner",
     "l:querer",

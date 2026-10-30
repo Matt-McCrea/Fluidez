@@ -33,14 +33,14 @@
       "accept": [
         "Me parece muy linda. Y no hace tanto frío como en Bogotá.",
         "Es muy bonita, y no hace tanto frío como en Bogotá.",
-        "Muy linda. No hace tanto frío como en Bogotá."
+        "Muy linda. No es tan fría como Bogotá."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "tant[oa]s? [^ ]+ como",
+          "pattern": "\\btan(t[oa]s?)? [^ ]+ como",
           "flags": "i",
-          "label": "not as cold as: no hace tanto frío como..."
+          "label": "not as cold as: no hace tanto frío como..., no es tan fría como..."
         }
       ],
       "focus": "g:tanto-como",
@@ -59,7 +59,7 @@
       "require": [
         {
           "type": "regex",
-          "pattern": "le\\b[^.?!]*\\ba (la mamá|ella)",
+          "pattern": "le\\b[^.?!]*\\ba (la mamá|su mamá|ella|Beatriz)",
           "flags": "i",
           "label": "say who twice: le voy a dar las flores a la mamá de Vale"
         }
@@ -70,7 +70,7 @@
     {
       "id": "t4",
       "npc": "¿Vale, la hija de Beatriz? ¡Usted es el amigo del café en Bogotá! Beatriz es mi vecina. Me habló mucho de usted.",
-      "npcEn": "Vale, Beatriz's daughter? You're the friend with the café in Bogotá! Beatriz is my neighbour. She's told me a lot about you.",
+      "npcEn": "Vale, Beatriz's daughter? You're the friend with the café in Bogotá! Beatriz is my neighbor. She's told me a lot about you.",
       "intent": "Ask her what Beatriz said about you.",
       "accept": [
         "¿En serio? ¿Y qué le dijo de mí?",
@@ -143,6 +143,7 @@
     "g:adjective-agreement",
     "g:adverbs-mente",
     "g:commands-usted",
+    "g:comparatives",
     "g:demonstratives",
     "g:gender-articles",
     "g:imperfect-habitual",

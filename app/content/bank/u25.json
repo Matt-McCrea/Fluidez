@@ -179,18 +179,16 @@
   },
   {
     "id": "u25-0009",
-    "es": "A nosotros nos encanta la comida de allá.",
-    "en": "We love the food there.",
+    "es": "A nosotros nos encantan las arepas de Medellín.",
+    "en": "We love Medellín's arepas.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:gustar-full",
       "g:present-ar",
-      "l:allá",
-      "l:comida",
-      "l:encantar",
-      "p:aqui-ahi-alla"
+      "l:arepa",
+      "l:encantar"
     ],
     "targets": [],
     "kind": "statement",
@@ -640,21 +638,21 @@
   },
   {
     "id": "u25-0029",
-    "es": "A Tomás le duele la espalda después del viaje.",
-    "en": "Tomás's back hurts after the trip.",
+    "es": "Después de nueve horas en carro, a Tomás le duele todo.",
+    "en": "After nine hours in the car, Tomás aches all over.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:gustar-full",
       "g:stem-boot",
+      "l:carro",
       "l:después",
       "l:doler",
-      "l:espalda",
-      "l:viaje",
+      "l:hora",
       "p:doler",
       "p:me-duele",
-      "p:time-sequence-basic"
+      "p:time-sequence-basic",
+      "p:transport-en"
     ],
     "targets": [],
     "kind": "statement",
@@ -846,13 +844,12 @@
   },
   {
     "id": "u25-0038",
-    "es": "A mí me duelen los pies, y a ti, ¿no?",
-    "en": "My feet hurt, and yours, don't they? (to a friend)",
+    "es": "A mí me duelen los pies. ¿Y a ti?",
+    "en": "My feet hurt. What about yours? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:a-mi-tambien",
-      "c:no-cierto",
       "g:gender-articles",
       "g:gustar-full",
       "g:prep-pronouns",
@@ -970,17 +967,19 @@
   },
   {
     "id": "u25-0043",
-    "es": "¿Está lista?\nCompletamente.",
-    "en": "Is she ready?\nCompletely.",
+    "es": "¿Está todo listo para la feria?\nCompletamente.",
+    "en": "Is everything ready for the fair?\nCompletely.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:adverbs-mente",
       "g:estar-location-states",
+      "g:gender-articles",
       "l:completamente",
       "l:estar",
-      "l:listo"
+      "l:feria",
+      "l:listo",
+      "p:para-inf"
     ],
     "targets": [
       "g:adverbs-mente"
@@ -2879,24 +2878,26 @@
   },
   {
     "id": "u25-0122",
-    "es": "Mariana me contó que sus padres vivían en Barranquilla.",
-    "en": "Mariana told me her parents lived in Barranquilla.",
+    "es": "Mariana me contó que sus papás se conocieron en un bus.",
+    "en": "Mariana told me her parents met on a bus.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-conto-que",
-      "g:imperfect-habitual",
-      "g:pret-vs-imperfect",
-      "g:reported-past-basic",
+      "g:gender-articles",
+      "g:passive-se",
+      "g:preterite-er-ir",
+      "l:bus",
+      "l:conocer",
       "l:contar",
-      "l:padres",
-      "l:vivir",
+      "l:papá",
       "p:masculine-plural-mixed",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:saber-conocer",
+      "p:se-reciproco"
     ],
     "targets": [
-      "c:me-conto-que",
-      "g:reported-past-basic"
+      "c:me-conto-que"
     ],
     "kind": "statement",
     "unit": "u25",
@@ -3029,23 +3030,22 @@
   },
   {
     "id": "u25-0128",
-    "es": "Mi tía me contó que el viaje era largo.",
-    "en": "My aunt told me the trip was long.",
+    "es": "Mi tía me contó que de joven vendía empanadas en la calle.",
+    "en": "My aunt told me that when she was young she sold empanadas on the street.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:era",
       "c:me-conto-que",
       "g:gender-articles",
-      "g:imperfect-states",
+      "g:imperfect-habitual",
       "g:pret-vs-imperfect",
       "g:reported-past-basic",
-      "g:ser-identity",
+      "l:calle",
       "l:contar",
-      "l:largo",
-      "l:ser",
+      "l:empanada",
+      "l:joven",
       "l:tía",
-      "l:viaje",
+      "l:vender",
       "p:possessives-basic"
     ],
     "targets": [
@@ -3921,17 +3921,18 @@
   },
   {
     "id": "u25-0163",
-    "es": "Mi casa queda a una hora de Bogotá.",
-    "en": "My house is an hour from Bogotá.",
+    "es": "Sin tráfico, el aeropuerto queda a una hora.",
+    "en": "Without traffic, the airport is an hour away.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:a-cuantas-cuotas",
       "c:queda-a-una-hora",
-      "l:casa",
+      "g:gender-articles",
+      "l:aeropuerto",
       "l:hora",
       "l:quedar",
-      "p:possessives-basic",
+      "l:tráfico",
       "p:quedar-cerca"
     ],
     "targets": [
@@ -4054,7 +4055,7 @@
   {
     "id": "u25-0168",
     "es": "Según la gente, el valle es muy bonito en diciembre.",
-    "en": "According to the people, the valley is very pretty in December.",
+    "en": "According to people, the valley is very pretty in December.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4238,8 +4239,8 @@
   },
   {
     "id": "u25-0176",
-    "es": "Dizque Simón habla inglés.",
-    "en": "Supposedly Simón speaks English.",
+    "es": "Simón dizque habla inglés.",
+    "en": "Simón supposedly speaks English.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4258,8 +4259,8 @@
   },
   {
     "id": "u25-0177",
-    "es": "Dizque mañana cierran la calle.",
-    "en": "Supposedly they close the street tomorrow.",
+    "es": "Mañana dizque cierran la calle.",
+    "en": "Supposedly they're closing the street tomorrow.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4280,8 +4281,8 @@
   },
   {
     "id": "u25-0178",
-    "es": "Dizque hace frío en el cerro.",
-    "en": "Supposedly it's cold on the hill.",
+    "es": "En el cerro dizque hace frío de noche.",
+    "en": "Supposedly it gets cold on the hill at night.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4291,6 +4292,7 @@
       "l:cerro",
       "l:frío",
       "l:hacer",
+      "l:noche",
       "p:hace-frio"
     ],
     "targets": [
@@ -5365,16 +5367,22 @@
   },
   {
     "id": "u25-0224",
-    "es": "Mi vecina es un pan de Dios.",
-    "en": "My neighbor is a real sweetheart.",
+    "es": "La vecina nos cuidó el perro todo el mes. Es un pan de Dios.",
+    "en": "The neighbor looked after our dog all month. She's a real sweetheart.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:pan-de-dios",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:cuidar",
+      "l:mes",
       "l:pan",
+      "l:perro",
       "l:ser",
       "l:vecino",
-      "p:possessives-basic"
+      "p:me-te-nos-objects",
+      "p:todos-los-dias"
     ],
     "targets": [
       "c:pan-de-dios"
@@ -5574,16 +5582,20 @@
   },
   {
     "id": "u25-0233",
-    "es": "Mi marido es un pan de Dios.",
-    "en": "My husband is a real sweetheart.",
+    "es": "Mi marido es un pan de Dios, pero no sabe cocinar.",
+    "en": "My husband is a real sweetheart, but he can't cook.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:pan-de-dios",
+      "g:present-er-ir",
+      "l:cocinar",
       "l:marido",
       "l:pan",
+      "l:saber",
       "l:ser",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "c:pan-de-dios",
@@ -7129,7 +7141,7 @@
   {
     "id": "u25-0297",
     "es": "¿Por qué lloras?\nPor nada, es el humo.",
-    "en": "Why are you crying? (to a friend)\nFor nothing, it's the smoke.",
+    "en": "Why are you crying? (to a friend)\nNo reason, it's the smoke.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7524,17 +7536,20 @@
   },
   {
     "id": "u25-0314",
-    "es": "Hay peligro de lluvia en el valle.",
-    "en": "There is a risk of rain in the valley.",
+    "es": "Cuando llueve, hay peligro en el camino del valle.",
+    "en": "When it rains, there's danger on the valley road.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hay",
       "g:gender-articles",
       "g:hay-vs-esta",
-      "l:lluvia",
+      "g:stem-boot",
+      "l:camino",
+      "l:llover",
       "l:peligro",
-      "l:valle"
+      "l:valle",
+      "p:cuando-basic"
     ],
     "targets": [
       "l:peligro",
@@ -7603,11 +7618,12 @@
   },
   {
     "id": "u25-0317",
-    "es": "Vale corrió peligro cuando bajó solo del cerro.",
+    "es": "Vale corrió peligro cuando bajó sola del cerro.",
     "en": "Vale was in danger when she came down the hill alone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:preterite-ar",
       "g:preterite-er-ir",
@@ -7753,15 +7769,17 @@
   },
   {
     "id": "u25-0323",
-    "es": "La búsqueda de Joaquín llevó a Tomás hasta Santa Marta.",
-    "en": "The search for Joaquín took Tomás as far as Santa Marta.",
+    "es": "La búsqueda de Joaquín puede llevar a Tomás hasta Santa Marta.",
+    "en": "The search for Joaquín could take Tomás all the way to Santa Marta.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ar",
+      "g:stem-boot",
+      "g:verb-infinitive",
       "l:búsqueda",
       "l:llevar",
+      "l:poder",
       "p:personal-a"
     ],
     "targets": [
@@ -8314,15 +8332,19 @@
   },
   {
     "id": "u25-0347",
-    "es": "Perdimos el juicio contra Altamira.",
-    "en": "We lost the trial against Altamira.",
+    "es": "Un juicio contra Altamira puede durar años.",
+    "en": "A trial against Altamira could last years.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-er-ir",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:año",
+      "l:durar",
       "l:juicio",
-      "l:perder"
+      "l:poder",
+      "p:durar-durante"
     ],
     "targets": [
       "l:juicio"
@@ -8428,16 +8450,19 @@
   },
   {
     "id": "u25-0352",
-    "es": "Tomás leyó el diario de Rosa en el avión.",
-    "en": "Tomás read Rosa's diary on the plane.",
+    "es": "Tomás lee el diario todas las mañanas con un tinto.",
+    "en": "Tomás reads the newspaper every morning with a black coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-spelling-stem",
-      "l:avión",
+      "g:present-er-ir",
       "l:diario",
-      "l:leer"
+      "l:leer",
+      "l:mañana",
+      "l:tinto",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "l:diario"
@@ -8449,18 +8474,17 @@
   },
   {
     "id": "u25-0353",
-    "es": "Mi trabajo es de diario, no de fines de semana.",
-    "en": "My work is a daily one, not weekends.",
+    "es": "Esta ropa es de diario, no de fiesta.",
+    "en": "These clothes are for every day, not for parties.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:ser-identity",
       "l:diario",
-      "l:fin",
-      "l:semana",
+      "l:fiesta",
+      "l:ropa",
       "l:ser",
-      "l:trabajo",
-      "p:possessives-basic"
+      "p:demonstratives-basic"
     ],
     "targets": [
       "l:diario"
@@ -9068,21 +9092,23 @@
   },
   {
     "id": "u25-0380",
-    "es": "El caso de Altamira parece relacionarse con otros casos.",
-    "en": "The Altamira case seems related to other cases.",
+    "es": "Ese olor siempre lo relaciono con mi abuela.",
+    "en": "I always link that smell with my grandmother.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:present-er-ir",
-      "g:reflexive-routine",
-      "l:caso",
-      "l:parecer",
-      "l:relacionarse",
-      "p:otro-no-article"
+      "g:demonstratives",
+      "g:direct-objects",
+      "g:present-ar",
+      "l:abuela",
+      "l:olor",
+      "l:relacionar",
+      "l:siempre",
+      "p:frequency-scale",
+      "p:possessives-basic"
     ],
     "targets": [
-      "l:caso"
+      "l:relacionar"
     ],
     "kind": "statement",
     "unit": "u25",
@@ -9240,20 +9266,22 @@
   },
   {
     "id": "u25-0388",
-    "es": "El café ya no me pertenece, ahora es de Tomás.",
-    "en": "The café no longer belongs to me, now it's Tomás's.",
+    "es": "El café ya no le pertenece a Rosa, ahora es de Tomás.",
+    "en": "The café no longer belongs to Rosa, now it's Tomás's.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ya-no",
       "g:gender-articles",
+      "g:indirect-objects",
+      "g:le-doubling",
       "g:present-er-ir",
       "g:ser-identity",
       "l:ahora",
       "l:café",
       "l:pertenecer",
       "l:ser",
-      "p:me-te-nos-objects"
+      "p:formar-parte-de"
     ],
     "targets": [
       "l:pertenecer"
@@ -9305,19 +9333,17 @@
   },
   {
     "id": "u25-0391",
-    "es": "¿A quién pertenece el perro?",
-    "en": "Who does the dog belong to?",
+    "es": "Según Vale, Simón no le pertenece a nadie.",
+    "en": "According to Vale, Simón doesn't belong to anyone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "c:segun",
+      "g:indirect-objects",
+      "g:negation-words",
       "g:present-er-ir",
-      "l:perro",
       "l:pertenecer",
-      "l:quién",
-      "p:personal-a",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:formar-parte-de"
     ],
     "targets": [
       "l:pertenecer"
@@ -9329,19 +9355,19 @@
   },
   {
     "id": "u25-0392",
-    "es": "¿A quién pertenecen estas llaves?",
-    "en": "Who do these keys belong to?",
+    "es": "Siento que pertenezco a este barrio.",
+    "en": "I feel I belong in this neighborhood.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:demonstratives",
-      "g:present-er-ir",
-      "l:llave",
+      "g:stem-boot",
+      "g:that-clauses",
+      "g:yo-irregular",
+      "l:barrio",
       "l:pertenecer",
-      "l:quién",
-      "p:personal-a",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "l:sentir",
+      "p:demonstratives-basic",
+      "p:formar-parte-de"
     ],
     "targets": [
       "l:pertenecer"
@@ -9424,21 +9450,18 @@
   },
   {
     "id": "u25-0396",
-    "es": "Quiero contener la rabia, pero es difícil.",
-    "en": "I want to hold back my anger, but it's difficult.",
+    "es": "Simón no puede contener sus ganas de hablar.",
+    "en": "Simón can't hold back his urge to talk.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:quiero",
-      "g:gender-articles",
-      "g:ser-identity",
       "g:stem-boot",
       "g:verb-infinitive",
       "l:contener",
-      "l:difícil",
-      "l:querer",
-      "l:rabia",
-      "l:ser"
+      "l:ganas",
+      "l:hablar",
+      "l:poder",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:contener"
@@ -9523,21 +9546,20 @@
   },
   {
     "id": "u25-0400",
-    "es": "Tomás sabe contener la rabia mejor que su abuela.",
-    "en": "Tomás knows how to hold back his anger better than his grandmother.",
+    "es": "Esta caja contiene fotos viejas.",
+    "en": "This box contains old photos.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:comparatives",
-      "g:gender-articles",
-      "g:present-er-ir",
-      "l:abuela",
+      "g:adjective-agreement",
+      "g:stem-boot",
+      "l:caja",
       "l:contener",
-      "l:mejor",
-      "l:rabia",
-      "l:saber",
-      "p:possessives-basic",
-      "p:saber-conocer"
+      "l:foto",
+      "l:viejo",
+      "p:demonstratives-basic",
+      "p:fabricado-con-contener",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "l:contener"
@@ -10265,24 +10287,22 @@
   },
   {
     "id": "u25-0432",
-    "es": "Quiero alejar a los niños del cerro.",
-    "en": "I want to move the children away from the hill.",
+    "es": "El trabajo me alejó de mis amigos.",
+    "en": "Work pulled me away from my friends.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:quiero",
       "g:gender-articles",
-      "g:stem-boot",
-      "g:verb-infinitive",
+      "g:preterite-ar",
       "l:alejar",
-      "l:cerro",
-      "l:niño",
-      "l:querer",
-      "p:acercarse-alejarse"
+      "l:amigo",
+      "l:trabajo",
+      "p:acercarse-alejarse",
+      "p:me-te-nos-objects",
+      "p:possessives-basic"
     ],
     "targets": [
-      "l:alejar",
-      "l:cerro"
+      "l:alejar"
     ],
     "kind": "statement",
     "unit": "u25",
@@ -10394,20 +10414,18 @@
   },
   {
     "id": "u25-0437",
-    "es": "Quiero alejar la silla del fuego.",
-    "en": "I want to move the chair away from the fire.",
+    "es": "Los años alejaron a los dos hermanos.",
+    "en": "The years drove the two siblings apart.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:quiero",
       "g:gender-articles",
-      "g:stem-boot",
-      "g:verb-infinitive",
+      "g:preterite-ar",
       "l:alejar",
-      "l:fuego",
-      "l:querer",
-      "l:silla",
-      "p:acercarse-alejarse"
+      "l:año",
+      "l:hermanos",
+      "p:acercarse-alejarse",
+      "p:masculine-plural-mixed"
     ],
     "targets": [
       "l:alejar"
@@ -10419,19 +10437,17 @@
   },
   {
     "id": "u25-0438",
-    "es": "No quiero enamorarme ahora.",
-    "en": "I don't want to fall in love now.",
+    "es": "Hernando se enamoró en un bus, a los veinte años.",
+    "en": "Hernando fell in love on a bus, at twenty.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:quiero",
-      "g:object-pronoun-position",
+      "g:gender-articles",
+      "g:preterite-ar",
       "g:reflexive-routine",
-      "g:stem-boot",
-      "g:verb-infinitive",
-      "l:ahora",
+      "l:año",
+      "l:bus",
       "l:enamorarse",
-      "l:querer",
       "p:enamorarse-de"
     ],
     "targets": [
@@ -10444,21 +10460,19 @@
   },
   {
     "id": "u25-0439",
-    "es": "Quiero enamorarme otra vez.",
-    "en": "I want to fall in love again.",
+    "es": "En Medellín, me enamoré el primer día.",
+    "en": "In Medellín, I fell in love on the first day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:quiero",
-      "g:object-pronoun-position",
+      "g:gender-articles",
+      "g:preterite-ar",
       "g:reflexive-routine",
-      "g:stem-boot",
-      "g:verb-infinitive",
+      "l:día",
       "l:enamorarse",
-      "l:querer",
-      "l:vez",
       "p:enamorarse-de",
-      "p:otro-no-article"
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer"
     ],
     "targets": [
       "l:enamorarse"
@@ -10470,25 +10484,24 @@
   },
   {
     "id": "u25-0440",
-    "es": "Voy a enamorarme de este lugar.",
-    "en": "I'm going to fall in love with this place.",
+    "es": "¿Te enamoraste?\nUn poquito.",
+    "en": "Did you fall in love? (to a friend)\nA little.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:voy-a",
-      "g:ir-a-plans",
-      "g:object-pronoun-position",
+      "g:diminutives",
+      "g:gender-articles",
+      "g:preterite-ar",
       "g:reflexive-routine",
       "l:enamorarse",
-      "l:ir",
-      "l:lugar",
-      "p:demonstratives-basic",
-      "p:enamorarse-de"
+      "l:poquito",
+      "p:enamorarse-de",
+      "p:poco-un-poco"
     ],
     "targets": [
       "l:enamorarse"
     ],
-    "kind": "statement",
+    "kind": "dialogue",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
     "source": "gen"
@@ -10521,8 +10534,8 @@
   },
   {
     "id": "u25-0442",
-    "es": "Le envié la dirección a Vale.",
-    "en": "I sent Vale the address.",
+    "es": "Vale le mandó la dirección del hotel a su mamá.",
+    "en": "Vale sent her mom the hotel's address.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10531,7 +10544,10 @@
       "g:le-doubling",
       "g:preterite-ar",
       "l:dirección",
-      "l:enviar"
+      "l:hotel",
+      "l:mamá",
+      "l:mandar",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:le-doubling"
@@ -10543,8 +10559,8 @@
   },
   {
     "id": "u25-0443",
-    "es": "Le vendí mi carro a un vecino.",
-    "en": "I sold my car to a neighbor.",
+    "es": "Hernando le vendió su taxi a un sobrino.",
+    "en": "Hernando sold his taxi to a nephew.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10552,8 +10568,8 @@
       "g:indirect-objects",
       "g:le-doubling",
       "g:preterite-er-ir",
-      "l:carro",
-      "l:vecino",
+      "l:sobrino",
+      "l:taxi",
       "l:vender",
       "p:possessives-basic"
     ],
@@ -10567,17 +10583,18 @@
   },
   {
     "id": "u25-0444",
-    "es": "Le devolví el libro a Mariana.",
-    "en": "I gave the book back to Mariana.",
+    "es": "Simón nunca le devuelve las llaves a Tomás.",
+    "en": "Simón never gives the keys back to Tomás.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:indirect-objects",
       "g:le-doubling",
-      "g:preterite-er-ir",
+      "g:stem-boot",
       "l:devolver",
-      "l:libro"
+      "l:llave",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:le-doubling"
@@ -10694,7 +10711,7 @@
   {
     "id": "u25-0449",
     "es": "Le respondí a Mariana que sí.",
-    "en": "I answered Mariana yes.",
+    "en": "I told Mariana yes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10714,19 +10731,18 @@
   },
   {
     "id": "u25-0450",
-    "es": "Le sonreí a la señora y ella me sonrió también.",
-    "en": "I smiled at the lady and she smiled back at me.",
+    "es": "La señora de las flores le sonrió a Tomás.",
+    "en": "The flower lady smiled at Tomás.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:indirect-objects",
       "g:le-doubling",
-      "g:preterite-er-ir",
       "g:preterite-irregular-strong",
+      "l:flor",
       "l:señora",
-      "l:sonreír",
-      "p:me-te-nos-objects"
+      "l:sonreír"
     ],
     "targets": [
       "g:le-doubling"
@@ -10738,19 +10754,22 @@
   },
   {
     "id": "u25-0451",
-    "es": "Le canté una canción a mi hija.",
-    "en": "I sang my daughter a song.",
+    "es": "Le canto la misma canción a mi hija todas las noches.",
+    "en": "I sing my daughter the same song every night.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:indirect-objects",
       "g:le-doubling",
-      "g:preterite-ar",
+      "g:present-ar",
       "l:canción",
       "l:cantar",
       "l:hija",
-      "p:possessives-basic"
+      "l:noche",
+      "p:possessives-basic",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "g:le-doubling"
@@ -10762,18 +10781,19 @@
   },
   {
     "id": "u25-0452",
-    "es": "Le leí un cuento a mi sobrino.",
-    "en": "I read my nephew a story.",
+    "es": "Mi papá les leía cuentos a mis hermanos.",
+    "en": "My dad used to read stories to my brothers.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "g:imperfect-habitual",
       "g:indirect-objects",
       "g:le-doubling",
-      "g:preterite-er-ir",
       "l:cuento",
+      "l:hermanos",
       "l:leer",
-      "l:sobrino",
+      "l:papá",
+      "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
     "targets": [
@@ -10834,8 +10854,8 @@
   },
   {
     "id": "u25-0455",
-    "es": "Le ayudé a Tomás con el menú.",
-    "en": "I helped Tomás with the menu.",
+    "es": "Vale le explicó el menú a un turista.",
+    "en": "Vale explained the menu to a tourist.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10843,9 +10863,9 @@
       "g:indirect-objects",
       "g:le-doubling",
       "g:preterite-ar",
-      "l:ayudar",
+      "l:explicar",
       "l:menú",
-      "p:personal-a"
+      "l:turista"
     ],
     "targets": [
       "g:le-doubling"
@@ -10857,18 +10877,18 @@
   },
   {
     "id": "u25-0456",
-    "es": "Le serví más café a la señora.",
-    "en": "I served the lady more coffee.",
+    "es": "Le hicimos mil preguntas al guía.",
+    "en": "We asked the guide a thousand questions.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:indirect-objects",
       "g:le-doubling",
-      "g:preterite-er-ir",
-      "l:café",
-      "l:servir",
-      "l:señora"
+      "g:preterite-ser-ir-hacer",
+      "l:guía",
+      "l:hacer",
+      "l:pregunta"
     ],
     "targets": [
       "g:le-doubling"
@@ -10900,8 +10920,8 @@
   },
   {
     "id": "u25-0458",
-    "es": "Le tomé una foto a la ambulancia.",
-    "en": "I took a picture of the ambulance.",
+    "es": "Le tomé una foto a la señora de las flores.",
+    "en": "I took a picture of the flower lady.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10909,13 +10929,13 @@
       "g:indirect-objects",
       "g:le-doubling",
       "g:preterite-ar",
-      "l:ambulancia",
+      "l:flor",
       "l:foto",
+      "l:señora",
       "l:tomar"
     ],
     "targets": [
-      "g:le-doubling",
-      "l:ambulancia"
+      "g:le-doubling"
     ],
     "kind": "statement",
     "unit": "u25",
@@ -10924,8 +10944,8 @@
   },
   {
     "id": "u25-0459",
-    "es": "Le cambié el nombre a la calle.",
-    "en": "I changed the street's name.",
+    "es": "Le cambié el agua a las flores.",
+    "en": "I changed the flowers' water.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10933,9 +10953,10 @@
       "g:indirect-objects",
       "g:le-doubling",
       "g:preterite-ar",
-      "l:calle",
+      "l:agua",
       "l:cambiar",
-      "l:nombre"
+      "l:flor",
+      "p:el-agua-fria"
     ],
     "targets": [
       "g:le-doubling"
@@ -11113,7 +11134,7 @@
   {
     "id": "u25-0467",
     "es": "Le llamé la atención a un cliente.",
-    "en": "I called a customer to order.",
+    "en": "I told a customer off.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11249,8 +11270,8 @@
   },
   {
     "id": "u25-0473",
-    "es": "Les escribió una carta a los dueños.",
-    "en": "He wrote a letter to the owners.",
+    "es": "Mariana les escribió a los dueños de la cuadra.",
+    "en": "Mariana wrote to the owners on the block.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11258,7 +11279,7 @@
       "g:indirect-objects",
       "g:le-doubling",
       "g:preterite-er-ir",
-      "l:carta",
+      "l:cuadra",
       "l:dueño",
       "l:escribir"
     ],
@@ -11313,8 +11334,8 @@
   },
   {
     "id": "u25-0476",
-    "es": "Les cantamos a los abuelos.",
-    "en": "We sang to the grandparents.",
+    "es": "Les cantamos una canción a las señoras de la feria.",
+    "en": "We sang a song to the ladies at the fair.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11322,9 +11343,10 @@
       "g:indirect-objects",
       "g:le-doubling",
       "g:present-ar",
-      "l:abuelos",
+      "l:canción",
       "l:cantar",
-      "p:masculine-plural-mixed"
+      "l:feria",
+      "l:señora"
     ],
     "targets": [
       "g:le-doubling"
@@ -12790,8 +12812,8 @@
   },
   {
     "id": "u25-0539",
-    "es": "El juez le dio la razón a Mariana.",
-    "en": "The judge sided with Mariana.",
+    "es": "El taxista le dio la razón a Hernando.",
+    "en": "The taxi driver agreed with Hernando.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12800,8 +12822,8 @@
       "g:le-doubling",
       "g:preterite-irregular-strong",
       "l:dar",
-      "l:juez",
-      "l:razón"
+      "l:razón",
+      "l:taxista"
     ],
     "targets": [
       "g:le-doubling"
@@ -13160,8 +13182,8 @@
   },
   {
     "id": "u25-0553",
-    "es": "Hernando contó que Rosa tenía un hermano menor.",
-    "en": "Hernando said Rosa had a younger brother.",
+    "es": "La mamá de Vale contó que Rosa tenía un hermano menor.",
+    "en": "Vale's mom said Rosa had a younger brother.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13173,6 +13195,7 @@
       "g:that-clauses",
       "l:contar",
       "l:hermano",
+      "l:mamá",
       "l:menor",
       "l:tener",
       "p:mayor-menor"
@@ -13242,21 +13265,26 @@
   },
   {
     "id": "u25-0556",
-    "es": "Les dije que estaba cansado.",
-    "en": "I told them I was tired.",
+    "es": "Les dije que estaba cansado y me fui a dormir.",
+    "en": "I told them I was tired and went to bed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:fui",
       "g:estar-location-states",
       "g:imperfect-states",
       "g:indirect-objects",
+      "g:ir-a-plans",
       "g:pret-vs-imperfect",
       "g:preterite-irregular-strong",
+      "g:preterite-ser-ir-hacer",
       "g:reported-past-basic",
       "g:that-clauses",
       "l:cansado",
       "l:decir",
-      "l:estar"
+      "l:dormir",
+      "l:estar",
+      "l:irse"
     ],
     "targets": [
       "g:reported-past-basic"
@@ -13294,23 +13322,27 @@
   },
   {
     "id": "u25-0558",
-    "es": "Le dije a Vale que me gustaba el café.",
-    "en": "I told Vale I liked the café.",
+    "es": "Le escribí a mi jefe que estaba enfermo, pero era mentira.",
+    "en": "I wrote to my boss that I was sick, but it was a lie.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:gustar-basic",
-      "g:gustar-full",
-      "g:imperfect-habitual",
+      "c:era",
+      "g:estar-location-states",
+      "g:imperfect-states",
       "g:indirect-objects",
       "g:le-doubling",
       "g:pret-vs-imperfect",
-      "g:preterite-irregular-strong",
+      "g:preterite-er-ir",
       "g:relative-que",
-      "l:café",
-      "l:decir",
-      "l:gustar"
+      "g:ser-identity",
+      "l:enfermo",
+      "l:escribir",
+      "l:estar",
+      "l:jefe",
+      "l:mentira",
+      "l:ser",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:le-doubling"
@@ -13409,8 +13441,8 @@
   },
   {
     "id": "u25-0562",
-    "es": "Le dije a Vale que no sabía nada.",
-    "en": "I told Vale I didn't know anything.",
+    "es": "Vale le dijo a su mamá que yo no sabía nada.",
+    "en": "Vale told her mom I didn't know anything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13422,7 +13454,9 @@
       "g:preterite-irregular-strong",
       "g:relative-que",
       "l:decir",
+      "l:mamá",
       "l:saber",
+      "p:possessives-basic",
       "p:saber-conocer"
     ],
     "targets": [
@@ -13435,8 +13469,8 @@
   },
   {
     "id": "u25-0563",
-    "es": "Le dije a Mariana que el café estaba abierto.",
-    "en": "I told Mariana the café was open.",
+    "es": "Hernando le dijo a la mesera que el tinto estaba frío.",
+    "en": "Hernando told the waitress the black coffee was cold.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13448,10 +13482,11 @@
       "g:pret-vs-imperfect",
       "g:preterite-irregular-strong",
       "g:relative-que",
-      "l:abrir",
-      "l:café",
       "l:decir",
-      "l:estar"
+      "l:estar",
+      "l:frío",
+      "l:mesero",
+      "l:tinto"
     ],
     "targets": [
       "g:le-doubling"
@@ -13625,7 +13660,7 @@
   },
   {
     "id": "u25-0570",
-    "es": "Nos explicó Vale que el cable era nuevo.",
+    "es": "Vale nos explicó que el cable era nuevo.",
     "en": "Vale explained to us that the cable car was new.",
     "accept": [],
     "acceptEn": [],
@@ -13635,8 +13670,9 @@
       "g:imperfect-states",
       "g:pret-vs-imperfect",
       "g:preterite-ar",
-      "g:relative-que",
+      "g:reported-past-basic",
       "g:ser-identity",
+      "g:that-clauses",
       "l:cable",
       "l:explicar",
       "l:nuevo",
@@ -13703,19 +13739,23 @@
   },
   {
     "id": "u25-0573",
-    "es": "Dijo que no tenía hambre.",
-    "en": "She said she wasn't hungry.",
+    "es": "Dijo que no tenía hambre, pero pidió dos arepas.",
+    "en": "She said she wasn't hungry, but she ordered two arepas.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:imperfect-states",
       "g:pret-vs-imperfect",
       "g:preterite-irregular-strong",
+      "g:preterite-spelling-stem",
       "g:reported-past-basic",
       "g:that-clauses",
+      "l:arepa",
       "l:decir",
       "l:hambre",
+      "l:pedir",
       "l:tener",
+      "p:preguntar-pedir",
       "p:tener-hambre"
     ],
     "targets": [
@@ -13728,19 +13768,23 @@
   },
   {
     "id": "u25-0574",
-    "es": "Dijeron que no tenían más pan.",
-    "en": "They said they had no more bread.",
+    "es": "Dijeron que el concierto era gratis.",
+    "en": "They said the concert was free.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
+      "g:gender-articles",
       "g:imperfect-states",
       "g:pret-vs-imperfect",
       "g:preterite-irregular-strong",
       "g:reported-past-basic",
+      "g:ser-identity",
       "g:that-clauses",
+      "l:concierto",
       "l:decir",
-      "l:pan",
-      "l:tener"
+      "l:gratis",
+      "l:ser"
     ],
     "targets": [
       "g:reported-past-basic"
@@ -13998,8 +14042,8 @@
   },
   {
     "id": "u25-0584",
-    "es": "En la tarjeta decía que la tienda cerraba a las seis.",
-    "en": "The sign said the shop closed at six.",
+    "es": "En la puerta decía que la tienda cerraba a las seis.",
+    "en": "The sign on the door said the shop closed at six.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14008,7 +14052,7 @@
       "g:that-clauses",
       "l:cerrar",
       "l:decir",
-      "l:tarjeta",
+      "l:puerta",
       "l:tienda",
       "p:telling-time"
     ],
@@ -14430,20 +14474,21 @@
   },
   {
     "id": "u25-0600",
-    "es": "Mi vecino dijo que oía ruidos en la noche.",
-    "en": "My neighbor said he heard noises at night.",
+    "es": "Mi vecino me contó que oía ruidos raros en la noche.",
+    "en": "My neighbor told me he heard strange noises at night.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:me-conto-que",
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:imperfect-habitual",
       "g:pret-vs-imperfect",
-      "g:preterite-irregular-strong",
       "g:reported-past-basic",
-      "g:that-clauses",
-      "l:decir",
+      "l:contar",
       "l:noche",
       "l:oír",
+      "l:raro",
       "l:ruido",
       "l:vecino",
       "p:por-la-manana",
@@ -14488,8 +14533,8 @@
   },
   {
     "id": "u25-0602",
-    "es": "Una vecina dijo que la ambulancia llegaba en cinco minutos.",
-    "en": "A neighbor said the ambulance would arrive in five minutes.",
+    "es": "Una vecina nos dijo que la ambulancia ya venía.",
+    "en": "A neighbor told us the ambulance was on its way.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14501,9 +14546,9 @@
       "g:that-clauses",
       "l:ambulancia",
       "l:decir",
-      "l:llegar",
-      "l:minuto",
-      "l:vecino"
+      "l:vecino",
+      "l:venir",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:reported-past-basic",
@@ -14542,24 +14587,26 @@
   },
   {
     "id": "u25-0604",
-    "es": "El conductor dijo que el desierto quedaba lejos.",
-    "en": "The driver said the desert was far away.",
+    "es": "El conductor nos avisó que el desierto todavía quedaba lejos.",
+    "en": "The driver warned us the desert was still far away.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-habitual",
       "g:pret-vs-imperfect",
-      "g:preterite-irregular-strong",
+      "g:preterite-ar",
       "g:reported-past-basic",
       "g:that-clauses",
+      "l:avisar",
       "l:conductor",
-      "l:decir",
       "l:desierto",
       "l:lejos",
       "l:quedar",
       "p:cerca-de",
-      "p:quedar-cerca"
+      "p:me-te-nos-objects",
+      "p:quedar-cerca",
+      "p:ya-todavia-basic"
     ],
     "targets": [
       "g:reported-past-basic",
@@ -14604,24 +14651,24 @@
   },
   {
     "id": "u25-0606",
-    "es": "Mi tío dijo que la tradición era importante.",
-    "en": "My uncle said the tradition was important.",
+    "es": "Mi tío explicó que la tradición de las flores venía de las fincas.",
+    "en": "My uncle explained that the flower tradition came from the farms.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:era",
       "g:gender-articles",
-      "g:imperfect-states",
+      "g:imperfect-habitual",
       "g:pret-vs-imperfect",
-      "g:preterite-irregular-strong",
+      "g:preterite-ar",
       "g:reported-past-basic",
-      "g:ser-identity",
       "g:that-clauses",
-      "l:decir",
-      "l:importante",
-      "l:ser",
+      "l:explicar",
+      "l:finca",
+      "l:flor",
       "l:tradición",
       "l:tío",
+      "l:venir",
+      "p:ir-a-venir-de-place",
       "p:possessives-basic"
     ],
     "targets": [
@@ -14823,19 +14870,28 @@
   },
   {
     "id": "u25-0614",
-    "es": "Hernando repetía que Rosa no se perdonaba.",
-    "en": "Hernando kept repeating that Rosa didn't forgive herself.",
+    "es": "La mamá de Vale nos dijo que la culpa era de Rosa.",
+    "en": "Vale's mom told us it was Rosa's fault.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:no-se",
-      "g:imperfect-habitual",
-      "g:reflexive-routine",
+      "c:era",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-irregular-strong",
+      "g:reported-past-basic",
+      "g:ser-identity",
       "g:that-clauses",
-      "l:perdonar",
-      "l:repetir"
+      "l:culpa",
+      "l:decir",
+      "l:mamá",
+      "l:ser",
+      "p:me-te-nos-objects"
     ],
-    "targets": [],
+    "targets": [
+      "g:reported-past-basic"
+    ],
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
@@ -15021,18 +15077,19 @@
   },
   {
     "id": "u25-0622",
-    "es": "¿Usted vive aquí normalmente?",
-    "en": "Do you normally live here? (polite)",
+    "es": "¿Usted normalmente viene a la feria?",
+    "en": "Do you normally come to the fair? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:normalmente",
       "g:adverbs-mente",
-      "g:present-er-ir",
-      "l:aquí",
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:feria",
       "l:normalmente",
-      "l:vivir",
-      "p:aqui-ahi-alla"
+      "l:venir",
+      "p:ir-venir"
     ],
     "targets": [
       "g:adverbs-mente"
@@ -15276,18 +15333,19 @@
   },
   {
     "id": "u25-0633",
-    "es": "¿Quedó bien el pastel?\nPerfecto.",
+    "es": "¿Quedó bien la torta?\nPerfecta.",
     "en": "Did the cake turn out well?\nPerfect.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:preterite-ar",
       "l:bien",
-      "l:pastel",
       "l:perfecto",
       "l:quedar",
+      "l:torta",
       "p:bien-bueno",
       "p:bien-mal-vs-bueno-malo"
     ],
@@ -15413,8 +15471,8 @@
   },
   {
     "id": "u25-0639",
-    "es": "Nos miramos profundamente y entendimos todo.",
-    "en": "We looked at each other deeply and understood everything.",
+    "es": "Nos miramos y entendimos todo inmediatamente.",
+    "en": "We looked at each other and understood everything immediately.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15422,8 +15480,8 @@
       "g:present-ar",
       "g:preterite-er-ir",
       "l:entender",
+      "l:inmediatamente",
       "l:mirar",
-      "l:profundamente",
       "p:me-te-nos-objects",
       "p:se-reciproco"
     ],
@@ -15437,15 +15495,13 @@
   },
   {
     "id": "u25-0640",
-    "es": "Todos hablaron constantemente, nadie escuchaba.",
-    "en": "Everyone talked constantly, nobody listened.",
+    "es": "Todos hablaban constantemente y nadie escuchaba.",
+    "en": "Everyone talked constantly and nobody listened.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adverbs-mente",
       "g:imperfect-habitual",
-      "g:pret-vs-imperfect",
-      "g:preterite-ar",
       "l:constantemente",
       "l:escuchar",
       "l:hablar"
@@ -15870,8 +15926,8 @@
   },
   {
     "id": "u25-0659",
-    "es": "Directamente desde Medellín, nos trajeron flores.",
-    "en": "Straight from Medellín, they brought us flowers.",
+    "es": "Nos trajeron flores directamente de Medellín.",
+    "en": "They brought us flowers straight from Medellín.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16007,17 +16063,17 @@
   },
   {
     "id": "u25-0665",
-    "es": "El tren llegó puntualmente.",
-    "en": "The train arrived on time.",
+    "es": "El bus llegó puntualmente.",
+    "en": "The bus arrived on time.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adverbs-mente",
       "g:gender-articles",
       "g:preterite-ar",
+      "l:bus",
       "l:llegar",
-      "l:puntualmente",
-      "l:tren"
+      "l:puntualmente"
     ],
     "targets": [
       "g:adverbs-mente"
@@ -16243,23 +16299,24 @@
   },
   {
     "id": "u25-0676",
-    "es": "¿Cuál es el propósito del viaje?\nConocer a la mamá de Vale.",
-    "en": "What is the purpose of the trip?\nTo meet Vale's mom.",
+    "es": "¿Cuál es el propósito del viaje?\nVamos a la Feria de las Flores.",
+    "en": "What is the purpose of the trip?\nWe're going to the Flower Fair.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:vamos-a",
       "g:gender-articles",
+      "g:ir-a-plans",
       "g:questions",
       "g:ser-identity",
-      "l:conocer",
       "l:cuál",
-      "l:mamá",
+      "l:ir",
       "l:propósito",
       "l:ser",
       "l:viaje",
-      "p:personal-a",
-      "p:question-word-order",
-      "p:saber-conocer"
+      "p:ir-a-venir-de-place",
+      "p:los-garcia",
+      "p:question-word-order"
     ],
     "targets": [
       "l:propósito"
@@ -16271,23 +16328,18 @@
   },
   {
     "id": "u25-0677",
-    "es": "¿Y qué haces aquí?\nCon ese propósito vine: hablar con ella.",
-    "en": "And what are you doing here?\nThat's why I came: to talk to her.",
+    "es": "¿Viniste a propósito?\nSí, vine para hablar con ella.",
+    "en": "Did you come on purpose? (to a friend)\nYes, I came to talk to her.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:con-el-ella",
-      "g:demonstratives",
-      "g:present-er-ir",
       "g:preterite-irregular-strong",
-      "g:questions",
-      "l:aquí",
       "l:hablar",
-      "l:hacer",
       "l:propósito",
-      "l:qué",
       "l:venir",
-      "p:aqui-ahi-alla"
+      "p:para-inf",
+      "p:para-inf-purpose"
     ],
     "targets": [
       "l:propósito"
@@ -16380,22 +16432,19 @@
   },
   {
     "id": "u25-0681",
-    "es": "¿Hernando vendría?\nNo es el caso, él prefiere quedarse.",
-    "en": "Would Hernando come?\nThat's not the case, he prefers to stay.",
+    "es": "¿Es un caso difícil?\nMuy difícil, dice Mariana.",
+    "en": "Is it a difficult case?\nVery difficult, Mariana says.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:conditional",
       "g:gender-articles",
-      "g:reflexive-routine",
       "g:ser-identity",
-      "g:stem-boot",
+      "g:stem-e-i",
       "l:caso",
-      "l:preferir",
-      "l:quedarse",
+      "l:decir",
+      "l:difícil",
       "l:ser",
-      "l:venir",
-      "p:prefieres-x-o-y"
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:caso"
@@ -17046,20 +17095,18 @@
   },
   {
     "id": "u25-0706",
-    "es": "¿Te gustan otros planetas?\nMe gusta mirar el cielo, nada más.",
-    "en": "Do you like other planets? (to a friend)\nI like looking at the sky, that's all.",
+    "es": "¿Esa luz es una estrella?\nNo, es un planeta.",
+    "en": "Is that light a star?\nNo, it's a planet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:me-gusta",
+      "g:demonstratives",
       "g:gender-articles",
-      "g:gustar-basic",
-      "g:present-ar",
-      "l:cielo",
-      "l:gustar",
-      "l:mirar",
+      "g:ser-identity",
+      "l:estrella",
+      "l:luz",
       "l:planeta",
-      "p:otro-no-article"
+      "l:ser"
     ],
     "targets": [
       "l:planeta"
@@ -17261,22 +17308,24 @@
   },
   {
     "id": "u25-0715",
-    "es": "¿Se pelearon por plata?\nNo, fue por algo mucho peor.",
-    "en": "Did they fight over money?\nNo, it was over something much worse.",
+    "es": "¿Se pelearon por plata?\nNo sé, eso no me lo contó.",
+    "en": "Did they fight over money?\nI don't know, she didn't tell me that.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-se",
+      "g:direct-objects",
+      "g:double-pronouns",
       "g:por-para-1",
       "g:preterite-ar",
-      "g:preterite-ser-ir-hacer",
       "g:reflexive-routine",
-      "g:ser-identity",
+      "g:yo-irregular",
+      "l:contar",
       "l:pelearse",
-      "l:peor",
       "l:plata",
-      "l:ser",
-      "p:indefinites-basic",
-      "p:quantifiers-basic",
+      "l:saber",
+      "p:demonstratives-basic",
+      "p:me-te-nos-objects",
       "p:se-reciproco"
     ],
     "targets": [
@@ -17289,26 +17338,27 @@
   },
   {
     "id": "u25-0716",
-    "es": "¿Por qué se saltó la fila?\nNo la vio, estaba distraído.",
-    "en": "Why did he skip the line?\nHe didn't see it, he was distracted.",
+    "es": "¿Por qué se saltó la fila?\nDice que tenía mucha prisa.",
+    "en": "Why did he cut in line?\nHe says he was in a big hurry.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
-      "g:estar-participle",
       "g:gender-articles",
       "g:imperfect-states",
       "g:pret-vs-imperfect",
       "g:preterite-ar",
-      "g:preterite-er-ir",
       "g:reflexive-routine",
-      "l:distraerse",
-      "l:estar",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:decir",
       "l:fila",
+      "l:prisa",
       "l:qué",
       "l:saltarse",
-      "l:ver",
-      "p:prep-questions-basic"
+      "l:tener",
+      "p:prep-questions-basic",
+      "p:quantifiers-basic",
+      "p:tener-hambre"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -17318,22 +17368,25 @@
   },
   {
     "id": "u25-0717",
-    "es": "¿Qué relación hay entre los dos casos?\nMariana cree que el mismo dueño.",
-    "en": "What is the connection between the two cases?\nMariana thinks the same owner.",
+    "es": "¿Qué relación hay entre los dos casos?\nMariana cree que tienen el mismo dueño.",
+    "en": "What is the connection between the two cases?\nMariana thinks they have the same owner.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hay",
+      "c:tienes",
       "g:gender-articles",
       "g:hay-vs-esta",
       "g:present-er-ir",
       "g:questions",
+      "g:stem-boot",
       "g:that-clauses",
       "l:caso",
       "l:creer",
       "l:dueño",
       "l:qué",
-      "l:relación"
+      "l:relación",
+      "l:tener"
     ],
     "targets": [
       "l:caso"
@@ -17475,12 +17528,13 @@
   },
   {
     "id": "u25-0723",
-    "es": "¿Qué te preguntó el policía?\nLe preguntó a Vale si tenía los papeles.",
-    "en": "What did the policeman ask you? (to a friend)\nHe asked Vale if she had the papers.",
+    "es": "¿Qué quería el policía?\nLe preguntó a Vale si tenía los papeles.",
+    "en": "What did the policeman want?\nHe asked Vale if she had the papers.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:imperfect-habitual",
       "g:imperfect-states",
       "g:indirect-objects",
       "g:le-doubling",
@@ -17490,9 +17544,9 @@
       "l:papel",
       "l:policía",
       "l:preguntar",
+      "l:querer",
       "l:qué",
       "l:tener",
-      "p:me-te-nos-objects",
       "p:preguntar-pedir"
     ],
     "targets": [
@@ -17897,16 +17951,14 @@
   },
   {
     "id": "u25-0739",
-    "es": "Conozco a una chica de los ojos verdes que habla cuatro idiomas.",
-    "en": "I know a girl with green eyes who speaks four languages.",
+    "es": "Conozco a la chica de los ojos verdes: habla cuatro idiomas.",
+    "en": "I know the girl with green eyes: she speaks four languages.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:a-cuantas-cuotas",
       "g:adjective-agreement",
       "g:gender-articles",
       "g:present-ar",
-      "g:relative-que",
       "g:yo-irregular",
       "l:chica",
       "l:conocer",
@@ -18274,8 +18326,8 @@
   },
   {
     "id": "u25-0754",
-    "es": "Busco a un señor del pelo blanco y la chaqueta gris.",
-    "en": "I'm looking for a man with white hair and a gray jacket.",
+    "es": "Busco al señor del pelo blanco y la chaqueta gris.",
+    "en": "I'm looking for the man with white hair and the gray jacket.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18535,8 +18587,8 @@
   },
   {
     "id": "u25-0764",
-    "es": "¿Quién abrió la puerta?\nUn niño de los ojos tristes.",
-    "en": "Who opened the door?\nA boy with sad eyes.",
+    "es": "¿Quién abrió la puerta?\nEl niño de los ojos tristes.",
+    "en": "Who opened the door?\nThe boy with sad eyes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18563,13 +18615,15 @@
   },
   {
     "id": "u25-0765",
-    "es": "¿Cómo es Joaquín?\nAlto, de pelo negro y mirada seria.",
-    "en": "What's Joaquín like?\nTall, with black hair and a serious look.",
+    "es": "¿Cómo era Joaquín?\nAlto, de pelo negro y mirada seria.",
+    "en": "What was Joaquín like?\nTall, with black hair and a serious look.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:como-es",
+      "c:como-era",
+      "c:era",
       "g:adjective-agreement",
+      "g:imperfect-states",
       "g:ser-identity",
       "l:alto",
       "l:cómo",
@@ -18588,12 +18642,11 @@
   },
   {
     "id": "u25-0766",
-    "es": "¿Me ayuda? Busco a una señora del pelo blanco.\nAh, sí, está en la plaza.",
-    "en": "Can you help me? I'm looking for a lady with white hair.\nAh, yes, she's in the square.",
+    "es": "¿Me ayuda? Busco a la señora del pelo blanco.\nAh, sí, está en la plaza.",
+    "en": "Can you help me? (polite) I'm looking for the lady with white hair.\nAh, yes, she's in the square.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:a-cuantas-cuotas",
       "g:estar-location-states",
       "g:gender-articles",
       "g:present-ar",
@@ -18724,19 +18777,16 @@
   },
   {
     "id": "u25-0771",
-    "es": "Tomás es el chico de los ojos cafés que no habla español.",
-    "en": "Tomás is the boy with brown eyes who doesn't speak Spanish.",
+    "es": "Tomás es el chico de los ojos cafés, el nieto de Rosa.",
+    "en": "Tomás is the guy with brown eyes, Rosa's grandson.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
-      "g:relative-que",
       "g:ser-identity",
       "l:café",
       "l:chico",
-      "l:español",
-      "l:hablar",
+      "l:nieto",
       "l:ojo",
       "l:ser"
     ],
@@ -18800,24 +18850,25 @@
   },
   {
     "id": "u25-0774",
-    "es": "Una niña de las trenzas largas lloraba en el pasillo.",
-    "en": "A girl with long braids was crying in the hallway.",
+    "es": "La niña de las trenzas largas le regaló una flor a Simón.",
+    "en": "The girl with long braids gave Simón a flower.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
-      "g:imperfect-habitual",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:preterite-ar",
+      "l:flor",
       "l:largo",
-      "l:llorar",
       "l:niña",
-      "l:pasillo",
+      "l:regalar",
       "l:trenza",
       "p:de-los-ojos-azules"
     ],
     "targets": [
-      "l:llorar",
-      "l:pasillo",
+      "g:le-doubling",
       "p:de-los-ojos-azules"
     ],
     "kind": "statement",
@@ -18827,30 +18878,29 @@
   },
   {
     "id": "u25-0775",
-    "es": "El conductor del pelo corto dijo que el cable estaba cerrado.",
-    "en": "The driver with short hair said the cable car was closed.",
+    "es": "El conductor del pelo corto dijo que conocía un camino más rápido.",
+    "en": "The driver with short hair said he knew a faster route.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
       "g:gender-articles",
-      "g:imperfect-states",
+      "g:imperfect-habitual",
       "g:pret-vs-imperfect",
       "g:preterite-irregular-strong",
       "g:reported-past-basic",
       "g:that-clauses",
-      "l:cable",
-      "l:cerrar",
+      "l:camino",
       "l:conductor",
+      "l:conocer",
       "l:corto",
       "l:decir",
-      "l:estar",
       "l:pelo",
-      "p:de-los-ojos-azules"
+      "l:rápido",
+      "p:de-los-ojos-azules",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:reported-past-basic",
-      "l:cable",
       "p:de-los-ojos-azules"
     ],
     "kind": "statement",
@@ -18944,26 +18994,24 @@
   },
   {
     "id": "u25-0779",
-    "es": "Les cantó una canción a los niños de los ojos grandes.",
-    "en": "She sang a song to the big-eyed children.",
+    "es": "Les cantó una canción a los niños de la primera fila.",
+    "en": "She sang a song to the children in the front row.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:gender-articles",
       "g:indirect-objects",
       "g:le-doubling",
       "g:preterite-ar",
       "l:canción",
       "l:cantar",
-      "l:grande",
+      "l:fila",
       "l:niño",
-      "l:ojo",
-      "p:de-los-ojos-azules"
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer"
     ],
     "targets": [
-      "g:le-doubling",
-      "p:de-los-ojos-azules"
+      "g:le-doubling"
     ],
     "kind": "statement",
     "unit": "u25",
@@ -19401,20 +19449,22 @@
   },
   {
     "id": "u25-0795",
-    "es": "Les dije a todos que el bus salía a las siete.",
-    "en": "I told everyone the bus left at seven.",
+    "es": "Les dije a todos que la cena era a las siete.",
+    "en": "I told everyone dinner was at seven.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
       "g:gender-articles",
-      "g:imperfect-habitual",
+      "g:imperfect-states",
       "g:indirect-objects",
       "g:pret-vs-imperfect",
       "g:preterite-irregular-strong",
       "g:relative-que",
-      "l:bus",
+      "l:cena",
       "l:decir",
-      "l:salir",
+      "l:ser",
+      "p:event-ser-en",
       "p:telling-time"
     ],
     "targets": [],
@@ -19507,19 +19557,25 @@
   },
   {
     "id": "u25-0799",
-    "es": "Dijo que tenía frío.",
-    "en": "He said he was cold.",
+    "es": "El niño dijo que tenía frío, y le di mi chaqueta.",
+    "en": "The boy said he was cold, and I gave him my jacket.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:imperfect-states",
+      "g:indirect-objects",
       "g:pret-vs-imperfect",
       "g:preterite-irregular-strong",
       "g:reported-past-basic",
       "g:that-clauses",
+      "l:chaqueta",
+      "l:dar",
       "l:decir",
       "l:frío",
+      "l:niño",
       "l:tener",
+      "p:possessives-basic",
       "p:tener-hambre"
     ],
     "targets": [
@@ -19560,22 +19616,26 @@
   },
   {
     "id": "u25-0801",
-    "es": "Dijo que la comida estaba fría.",
-    "en": "He said the food was cold.",
+    "es": "En el restaurante, Tomás dijo que la sopa estaba fría y la devolvió.",
+    "en": "At the restaurant, Tomás said the soup was cold and sent it back.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:direct-objects",
       "g:estar-location-states",
       "g:gender-articles",
       "g:imperfect-states",
       "g:pret-vs-imperfect",
+      "g:preterite-er-ir",
       "g:preterite-irregular-strong",
       "g:reported-past-basic",
       "g:that-clauses",
-      "l:comida",
       "l:decir",
+      "l:devolver",
       "l:estar",
-      "l:frío"
+      "l:frío",
+      "l:restaurante",
+      "l:sopa"
     ],
     "targets": [
       "g:reported-past-basic"
@@ -19717,8 +19777,8 @@
   },
   {
     "id": "u25-0807",
-    "es": "El profesor dijo que mi español era bueno.",
-    "en": "The teacher said my Spanish was good.",
+    "es": "El taxista dijo que mi español era bueno, y después me cobró demasiado.",
+    "en": "The taxi driver said my Spanish was good, and then he charged me too much.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19726,18 +19786,24 @@
       "g:gender-articles",
       "g:imperfect-states",
       "g:pret-vs-imperfect",
+      "g:preterite-ar",
       "g:preterite-irregular-strong",
+      "g:quantifiers",
       "g:reported-past-basic",
       "g:ser-identity",
       "g:that-clauses",
       "l:bueno",
+      "l:cobrar",
       "l:decir",
+      "l:después",
       "l:español",
-      "l:profesor",
       "l:ser",
+      "l:taxista",
       "p:bien-bueno",
       "p:bien-mal-vs-bueno-malo",
-      "p:possessives-basic"
+      "p:me-te-nos-objects",
+      "p:possessives-basic",
+      "p:time-sequence-basic"
     ],
     "targets": [
       "g:reported-past-basic"
@@ -19971,13 +20037,12 @@
   },
   {
     "id": "u25-0816",
-    "es": "Un habitante nos dijo que la región era segura.",
-    "en": "An inhabitant told us the region was safe.",
+    "es": "Un habitante del pueblo nos dijo que el lago era muy frío.",
+    "en": "A local from the town told us the lake was very cold.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:era",
-      "g:adjective-agreement",
       "g:gender-articles",
       "g:imperfect-states",
       "g:pret-vs-imperfect",
@@ -19986,16 +20051,17 @@
       "g:ser-identity",
       "g:that-clauses",
       "l:decir",
+      "l:frío",
       "l:habitante",
-      "l:región",
-      "l:seguro",
+      "l:lago",
+      "l:pueblo",
       "l:ser",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:reported-past-basic",
-      "l:habitante",
-      "l:región"
+      "l:habitante"
     ],
     "kind": "statement",
     "unit": "u25",
@@ -20137,24 +20203,25 @@
   },
   {
     "id": "u25-0822",
-    "es": "El maestro dijo que el planeta tenía mucha agua.",
-    "en": "The teacher said the planet had a lot of water.",
+    "es": "La profesora dijo que Venus era el planeta más caliente.",
+    "en": "The teacher said Venus was the hottest planet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
       "g:gender-articles",
       "g:imperfect-states",
       "g:pret-vs-imperfect",
       "g:preterite-irregular-strong",
       "g:reported-past-basic",
+      "g:ser-identity",
+      "g:superlatives",
       "g:that-clauses",
-      "l:agua",
+      "l:caliente",
       "l:decir",
-      "l:maestro",
       "l:planeta",
-      "l:tener",
-      "p:el-agua-fria",
-      "p:quantifiers-basic"
+      "l:profesora",
+      "l:ser"
     ],
     "targets": [
       "g:reported-past-basic",
@@ -20167,21 +20234,26 @@
   },
   {
     "id": "u25-0823",
-    "es": "Vale dijo que le encantaba la naturaleza.",
-    "en": "Vale said she loved nature.",
+    "es": "Vale dijo que la naturaleza de Antioquia era la más bonita del mundo.",
+    "en": "Vale said the countryside in Antioquia was the most beautiful in the world.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
+      "g:adjective-agreement",
       "g:gender-articles",
-      "g:gustar-full",
-      "g:imperfect-habitual",
+      "g:imperfect-states",
       "g:pret-vs-imperfect",
       "g:preterite-irregular-strong",
       "g:reported-past-basic",
+      "g:ser-identity",
+      "g:superlatives",
       "g:that-clauses",
+      "l:bonito",
       "l:decir",
-      "l:encantar",
-      "l:naturaleza"
+      "l:mundo",
+      "l:naturaleza",
+      "l:ser"
     ],
     "targets": [
       "g:reported-past-basic",
@@ -20430,15 +20502,16 @@
   },
   {
     "id": "u25-0832",
-    "es": "Mi hermano dijo que el propósito era ayudar.",
-    "en": "My brother said the purpose was to help.",
+    "es": "Mi hermano dijo que su propósito era ayudar, pero no ayudó nada.",
+    "en": "My brother said his aim was to help, but he didn't help at all.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:era",
-      "g:gender-articles",
       "g:imperfect-states",
+      "g:negation-words",
       "g:pret-vs-imperfect",
+      "g:preterite-ar",
       "g:preterite-irregular-strong",
       "g:reported-past-basic",
       "g:that-clauses",
@@ -20492,25 +20565,25 @@
   },
   {
     "id": "u25-0834",
-    "es": "Vale dijo que el pasillo era demasiado ancho.",
-    "en": "Vale said the hallway was too wide.",
+    "es": "Vale dijo que el pasillo no era tan ancho como en las fotos.",
+    "en": "Vale said the hallway wasn't as wide as in the photos.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:era",
+      "g:comparatives",
       "g:gender-articles",
       "g:imperfect-states",
       "g:pret-vs-imperfect",
       "g:preterite-irregular-strong",
-      "g:quantifiers",
       "g:reported-past-basic",
       "g:ser-identity",
       "g:that-clauses",
       "l:ancho",
       "l:decir",
+      "l:foto",
       "l:pasillo",
-      "l:ser",
-      "p:no-es-nada-adj"
+      "l:ser"
     ],
     "targets": [
       "g:reported-past-basic",
@@ -20583,8 +20656,8 @@
   },
   {
     "id": "u25-0837",
-    "es": "Mi mamá dijo que el vuelo se retrasaba.",
-    "en": "My mom said the flight was delayed.",
+    "es": "Mi mamá dijo que el almuerzo se retrasaba un poco.",
+    "en": "My mom said lunch was running a bit late.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20595,11 +20668,13 @@
       "g:reflexive-routine",
       "g:reported-past-basic",
       "g:that-clauses",
+      "l:almuerzo",
       "l:decir",
       "l:mamá",
       "l:retrasarse",
-      "l:vuelo",
-      "p:possessives-basic"
+      "p:poco-un-poco",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:reported-past-basic"
@@ -20777,21 +20852,23 @@
   },
   {
     "id": "u25-0844",
-    "es": "La mamá de Vale dijo que Rosa se peleó con Joaquín por una carta.",
-    "en": "Vale's mom said Rosa fell out with Joaquín over a letter.",
+    "es": "La mamá de Vale dijo que Rosa se peleó con Joaquín y nunca más lo vio.",
+    "en": "Vale's mom said Rosa fell out with Joaquín and never saw him again.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:direct-objects",
       "g:gender-articles",
-      "g:por-para-1",
       "g:preterite-ar",
+      "g:preterite-er-ir",
       "g:preterite-irregular-strong",
       "g:reflexive-routine",
       "g:that-clauses",
-      "l:carta",
       "l:decir",
       "l:mamá",
-      "l:pelearse"
+      "l:pelearse",
+      "l:ver",
+      "p:frequency-scale"
     ],
     "targets": [
       "l:pelearse"
@@ -21004,19 +21081,18 @@
   },
   {
     "id": "u25-0854",
-    "es": "Dios mío, ¡qué susto me diste!",
-    "en": "My God, what a fright you gave me! (to a friend)",
+    "es": "Dios mío, ¿dónde está Simón?",
+    "en": "My God, where's Simón?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:que-susto",
+      "c:donde-esta",
+      "g:estar-location-states",
       "g:possessives-stressed",
-      "g:preterite-irregular-strong",
-      "l:dar",
       "l:dios",
-      "l:qué",
-      "l:susto",
-      "p:me-te-nos-objects"
+      "l:dónde",
+      "l:estar",
+      "p:question-word-order"
     ],
     "targets": [
       "l:dios"
@@ -21177,16 +21253,19 @@
   },
   {
     "id": "u25-0861",
-    "es": "Mi costumbre es leer antes de dormir.",
-    "en": "My habit is to read before sleeping.",
+    "es": "Leer antes de dormir es una costumbre de mi familia.",
+    "en": "Reading before bed is a habit in my family.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:prep-infinitive",
       "g:ser-identity",
+      "g:verb-infinitive",
       "l:antes",
       "l:costumbre",
       "l:dormir",
+      "l:familia",
       "l:leer",
       "l:ser",
       "p:possessives-basic"
@@ -21227,19 +21306,23 @@
   },
   {
     "id": "u25-0863",
-    "es": "Una vaca es un animal grande y tranquilo.",
-    "en": "A cow is a big, calm animal.",
+    "es": "La vaca de mi tío se llama Lola y es más tranquila que yo.",
+    "en": "My uncle's cow is called Lola and she's calmer than me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:se-llama",
       "c:tranquilo",
+      "g:comparatives",
       "g:gender-articles",
+      "g:reflexive-routine",
       "g:ser-identity",
-      "l:animal",
-      "l:grande",
+      "l:llamarse",
       "l:ser",
       "l:tranquilo",
-      "l:vaca"
+      "l:tío",
+      "l:vaca",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:vaca"
@@ -21299,21 +21382,20 @@
   },
   {
     "id": "u25-0866",
-    "es": "Los osos duermen en el bosque durante el invierno.",
-    "en": "Bears sleep in the forest during winter.",
+    "es": "Nunca vi un oso de verdad.",
+    "en": "I've never seen a real bear.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:en-serio",
       "g:gender-articles",
-      "g:stem-boot",
-      "l:bosque",
-      "l:dormir",
-      "l:invierno",
+      "g:preterite-er-ir",
       "l:oso",
-      "p:durar-durante"
+      "l:ver",
+      "l:verdad",
+      "p:frequency-scale"
     ],
     "targets": [
-      "l:bosque",
       "l:oso"
     ],
     "kind": "statement",
@@ -21348,18 +21430,17 @@
   },
   {
     "id": "u25-0868",
-    "es": "No quiero retrasar la cena.",
-    "en": "I don't want to delay dinner.",
+    "es": "La lluvia nos retrasó una hora.",
+    "en": "The rain held us up an hour.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:quiero",
       "g:gender-articles",
-      "g:stem-boot",
-      "g:verb-infinitive",
-      "l:cena",
-      "l:querer",
-      "l:retrasar"
+      "g:preterite-ar",
+      "l:hora",
+      "l:lluvia",
+      "l:retrasar",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "l:retrasar"
@@ -21492,18 +21573,18 @@
   },
   {
     "id": "u25-0874",
-    "es": "Venus es un planeta muy caliente.",
-    "en": "Venus is a very hot planet.",
+    "es": "De noche, desde el cerro, se ve un planeta.",
+    "en": "At night, from the hill, you can see a planet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:ser-identity",
-      "l:caliente",
+      "g:present-er-ir",
+      "g:se-impersonal",
+      "l:cerro",
+      "l:noche",
       "l:planeta",
-      "l:ser",
-      "l:venus",
-      "p:quantifiers-basic"
+      "l:ver"
     ],
     "targets": [
       "l:planeta"
@@ -21515,22 +21596,20 @@
   },
   {
     "id": "u25-0875",
-    "es": "Puedo enamorarme de una ciudad, pero no de una persona.",
-    "en": "I can fall in love with a city, but not with a person.",
+    "es": "Es fácil enamorarse en la feria.",
+    "en": "It's easy to fall in love at the fair.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:claro-listo",
-      "c:puedo",
-      "g:object-pronoun-position",
+      "g:gender-articles",
       "g:reflexive-routine",
-      "g:stem-boot",
-      "g:verb-infinitive",
-      "l:ciudad",
+      "g:ser-identity",
       "l:enamorarse",
-      "l:persona",
-      "l:poder",
-      "p:enamorarse-de"
+      "l:feria",
+      "l:fácil",
+      "l:ser",
+      "p:enamorarse-de",
+      "p:es-adj-inf"
     ],
     "targets": [
       "l:enamorarse"
@@ -21542,19 +21621,16 @@
   },
   {
     "id": "u25-0876",
-    "es": "Lo hice con el propósito de ayudarte.",
-    "en": "I did it for the purpose of helping you.",
+    "es": "Simón rompió la taza a propósito.",
+    "en": "Simón broke the cup on purpose.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
       "g:gender-articles",
-      "g:object-pronoun-position",
-      "g:preterite-ser-ir-hacer",
-      "l:ayudar",
-      "l:hacer",
+      "g:preterite-er-ir",
       "l:propósito",
-      "p:me-te-nos-objects"
+      "l:romper",
+      "l:taza"
     ],
     "targets": [
       "l:propósito"
@@ -21566,17 +21642,20 @@
   },
   {
     "id": "u25-0877",
-    "es": "Mi propósito es aprender español en seis meses.",
-    "en": "My purpose is to learn Spanish in six months.",
+    "es": "Mi propósito para este año es aprender a bailar salsa.",
+    "en": "My resolution for this year is to learn to dance salsa.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:ser-identity",
       "l:aprender",
-      "l:español",
-      "l:mes",
+      "l:año",
+      "l:bailar",
       "l:propósito",
+      "l:salsa",
       "l:ser",
+      "p:demonstratives-basic",
+      "p:para-inf",
       "p:possessives-basic"
     ],
     "targets": [
@@ -21657,18 +21736,16 @@
   },
   {
     "id": "u25-0881",
-    "es": "La cantidad de humo era enorme.",
-    "en": "The amount of smoke was huge.",
+    "es": "Esa cantidad de humo no es normal.",
+    "en": "That amount of smoke isn't normal.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:era",
-      "g:gender-articles",
-      "g:imperfect-states",
+      "g:demonstratives",
       "g:ser-identity",
       "l:cantidad",
-      "l:enorme",
       "l:humo",
+      "l:normal",
       "l:ser"
     ],
     "targets": [
@@ -21682,8 +21759,8 @@
   },
   {
     "id": "u25-0882",
-    "es": "Rápidamente, los niños entraron al bosque.",
-    "en": "Quickly, the children went into the forest.",
+    "es": "Los niños entraron tranquilamente al bosque.",
+    "en": "The children calmly went into the forest.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21693,7 +21770,7 @@
       "l:bosque",
       "l:entrar",
       "l:niño",
-      "l:rápidamente"
+      "l:tranquilamente"
     ],
     "targets": [
       "g:adverbs-mente",
@@ -21777,8 +21854,8 @@
   },
   {
     "id": "u25-0886",
-    "es": "Tomás aprendió el español rápidamente.",
-    "en": "Tomás learned Spanish quickly.",
+    "es": "Tomás aprendió las recetas de Vale rápidamente.",
+    "en": "Tomás learned Vale's recipes quickly.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21786,7 +21863,7 @@
       "g:gender-articles",
       "g:preterite-er-ir",
       "l:aprender",
-      "l:español",
+      "l:receta",
       "l:rápidamente"
     ],
     "targets": [
@@ -22007,20 +22084,20 @@
   },
   {
     "id": "u25-0896",
-    "es": "Naturalmente, Vale quiso conocer toda la historia.",
-    "en": "Naturally, Vale wanted to know the whole story.",
+    "es": "Naturalmente, la mamá de Vale nos invitó a almorzar.",
+    "en": "Naturally, Vale's mom invited us to lunch.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adverbs-mente",
       "g:gender-articles",
-      "g:preterite-irregular-strong",
-      "g:verb-infinitive",
-      "l:conocer",
-      "l:historia",
+      "g:preterite-ar",
+      "l:almorzar",
+      "l:invitar",
+      "l:mamá",
       "l:naturalmente",
-      "l:querer",
-      "p:saber-conocer"
+      "p:me-te-nos-objects",
+      "p:te-invito-a"
     ],
     "targets": [
       "g:adverbs-mente"
@@ -22032,8 +22109,8 @@
   },
   {
     "id": "u25-0897",
-    "es": "Necesariamente tenemos que hablar con Hernando.",
-    "en": "We necessarily have to talk to Hernando.",
+    "es": "Tenemos que hablar con Hernando urgentemente.",
+    "en": "We urgently need to talk to Hernando.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22041,8 +22118,8 @@
       "g:adverbs-mente",
       "g:verb-infinitive",
       "l:hablar",
-      "l:necesariamente",
-      "l:tener"
+      "l:tener",
+      "l:urgentemente"
     ],
     "targets": [
       "g:adverbs-mente"
@@ -22104,8 +22181,8 @@
   },
   {
     "id": "u25-0900",
-    "es": "Normalmente, el pan de Vale se acaba a las nueve.",
-    "en": "Normally, Vale's bread runs out at nine.",
+    "es": "El pan de Vale se acaba normalmente a las nueve.",
+    "en": "Vale's bread normally runs out by nine.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22196,18 +22273,15 @@
   },
   {
     "id": "u25-0904",
-    "es": "Vale relaciona el olor de la canela con su infancia.",
-    "en": "Vale associates the smell of cinnamon with her childhood.",
+    "es": "Vale relaciona la canela con la Navidad en Medellín.",
+    "en": "Vale associates cinnamon with Christmas in Medellín.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
       "l:canela",
-      "l:infancia",
-      "l:olor",
-      "l:relacionar",
-      "p:possessives-basic"
+      "l:relacionar"
     ],
     "targets": [
       "l:relacionar"
@@ -22337,20 +22411,18 @@
   },
   {
     "id": "u25-0910",
-    "es": "Mi tío siempre dice un chiste cuando llega.",
-    "en": "My uncle always makes a joke when he arrives.",
+    "es": "Mi tío siempre llega con un chiste nuevo.",
+    "en": "My uncle always arrives with a new joke.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "g:stem-e-i",
       "l:chiste",
-      "l:decir",
       "l:llegar",
+      "l:nuevo",
       "l:siempre",
       "l:tío",
-      "p:cuando-basic",
       "p:frequency-scale",
       "p:possessives-basic"
     ],
@@ -22787,23 +22859,26 @@
   },
   {
     "id": "u25-0927",
-    "es": "¿Quién dijo que hacía frío?\nDijo Hernando que sí.",
-    "en": "Who said it was cold?\nHernando said it was.",
+    "es": "¿Quién dijo que hacía frío?\nHernando. Y tenía razón.",
+    "en": "Who said it was cold?\nHernando. And he was right.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:imperfect-habitual",
+      "g:imperfect-states",
       "g:pret-vs-imperfect",
       "g:preterite-irregular-strong",
       "g:questions",
-      "g:relative-que",
       "g:reported-past-basic",
       "g:that-clauses",
       "l:decir",
       "l:frío",
       "l:hacer",
       "l:quién",
-      "p:hace-frio"
+      "l:razón",
+      "l:tener",
+      "p:hace-frio",
+      "p:tener-razon"
     ],
     "targets": [
       "g:reported-past-basic"
@@ -22815,23 +22890,21 @@
   },
   {
     "id": "u25-0928",
-    "es": "Normalmente me acuesto tarde, pero hoy estoy muy cansado.",
-    "en": "I normally go to bed late, but today I am very tired.",
+    "es": "Llegamos al hotel tarde y nos dormimos inmediatamente.",
+    "en": "We got to the hotel late and fell asleep immediately.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:normalmente",
       "g:adverbs-mente",
-      "g:estar-location-states",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:present-er-ir",
       "g:reflexive-routine",
-      "g:stem-boot",
-      "l:acostarse",
-      "l:cansado",
-      "l:estar",
-      "l:hoy",
-      "l:normalmente",
-      "l:tarde",
-      "p:quantifiers-basic"
+      "l:dormirse",
+      "l:hotel",
+      "l:inmediatamente",
+      "l:llegar",
+      "l:tarde"
     ],
     "targets": [
       "g:adverbs-mente"
@@ -22865,18 +22938,22 @@
   },
   {
     "id": "u25-0930",
-    "es": "Rosa y Joaquín se relacionaban como dos niños.",
-    "en": "Rosa and Joaquín got along like two children.",
+    "es": "No relaciono esa cara con ningún nombre.",
+    "en": "I can't connect that face with any name.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:imperfect-habitual",
-      "g:reflexive-routine",
-      "l:niño",
-      "l:relacionarse",
-      "p:unos-approx"
+      "g:demonstratives",
+      "g:indefinites",
+      "g:negation-words",
+      "g:present-ar",
+      "l:cara",
+      "l:nombre",
+      "l:relacionar"
     ],
-    "targets": [],
+    "targets": [
+      "l:relacionar"
+    ],
     "kind": "statement",
     "unit": "u25",
     "theme": "preguntas sobre lo que dijeron",

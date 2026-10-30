@@ -130,7 +130,9 @@
   {
    "prompt": "Type in Spanish: He told me he was tired.",
    "answer": "Me dijo que estaba cansado.",
-   "accept": [],
+   "accept": [
+    "Me dijo que él estaba cansado."
+   ],
    "why": "Told me is *me dijo*, then *que*, then the shifted *estaba*."
   },
   {

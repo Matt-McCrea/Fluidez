@@ -1,7 +1,7 @@
 {
  "node": "g:le-doubling",
  "hook": {
-  "line": "Tomás and Vale are off to Medellín again, and Vale's mother is expecting them. In Spanish you name the person you told twice: once with *le*, once with their name. It sounds like too much, and it's exactly how people talk.",
+  "line": "Tomás and Vale are off to Medellín again, and Vale's mother is expecting them. When you name the person you gave or told something to, Spanish mentions them twice: once with *le*, once by name. It sounds like too much, and it's exactly how people talk.",
   "es": "¿Le dijiste a tu mamá que llegamos el sábado?",
   "en": "Did you tell your mom we're arriving on Saturday?"
  },
@@ -188,9 +188,9 @@
    "why": "Vale is one person, so *le*. Save *les* for two or more: *les di la llave a los vecinos*."
   },
   {
-   "wrong": "Le di a ella la llave a Vale.",
-   "right": "Le di la llave a Vale.",
-   "why": "Name the person once with *a*: either *a ella* or *a Vale*, not both."
+   "wrong": "Vale le gusta el tinto.",
+   "right": "A Vale le gusta el tinto.",
+   "why": "Close. When you name the person who likes something, put *a* in front: *a Vale le gusta*."
   }
  ],
  "personal": "Who did you last give something to, or write to? Say it with the person's name and *le*: *Le escribí a…*, *Le di… a…*."

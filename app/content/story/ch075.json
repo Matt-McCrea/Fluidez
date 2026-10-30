@@ -2,7 +2,7 @@
   "id": "ch075",
   "unit": "u25",
   "title": "El muchacho de los ojos tristes",
-  "text": "La lluvia retrasó el desfile dos horas, y Tomás esperó con su silleta.\nLa avenida era ancha, y todos los habitantes de la ciudad estaban allí, entre música y humo de parrillas.\nBeatriz: Según la gente de aquí, es el desfile más bonito del planeta.\nVale: Mamá, para ti Medellín es el centro del planeta.\nHernando: ¿Por qué el silletero no tiene novia? Porque ya lleva sesenta kilos de flores.\nLa reacción fue terrible: nadie se rio. La reacción de Simón fue peor.\nSimón: ¡Qué oso!\nTomás caminó con los silleteros. La silleta pequeña era casi tan ancha como él, y una señora de la camisa amarilla le dio un beso.\nTomás: En Toronto hay más habitantes y más bosques, pero menos besos.\nPor la noche, había humo de arepas en toda la casa.\nAbuela: Yo me enamoré en esta feria, en 1962, del muchacho de la camisa blanca. ¿Y usted, Hernando? ¿Usted se enamoró alguna vez?\nHernando: Nunca.\nAbuela: ¡Mentira! Esa es una mentira de taxista.\nHernando salió al pasillo.\nVale: Hernando está muy callado últimamente.\nTomás: Últimamente, todos estamos callados.\nEn el pasillo, Hernando miraba una foto vieja: dos hombres en un bosque, el papá de Beatriz y un muchacho de los ojos tristes.\nBeatriz: Es Joaquín, en 1978. Trabajaba con mi papá en esa región. Era del interior, como ustedes, pero quería conocer otra región: el mar, el desierto.\nHernando: Decía que el interior era muy frío. Que en el desierto, por lo menos, no hay que llevar chaqueta.\nBeatriz: Siéntense. Ya no retraso más el diario.",
+  "text": "La lluvia retrasó el desfile dos horas, y Tomás esperó con su silleta.\nLa avenida era ancha, y todos los habitantes de la ciudad estaban allí, entre música y humo de parrillas.\nBeatriz: Según la gente de aquí, es el desfile más bonito del planeta.\nVale: Mamá, para ti Medellín es el centro del planeta.\nHernando: ¿Por qué el silletero no tiene novia? Porque ya lleva sesenta kilos de flores.\nLa reacción fue terrible: nadie se rio. La reacción de Simón fue peor.\nSimón: ¡Qué oso!\nTomás caminó con los silleteros. La silleta pequeña era casi tan ancha como él, y una señora de camisa amarilla le dio un beso.\nTomás: En Toronto hay más habitantes y más bosques, pero menos besos.\nPor la noche, había humo de arepas en toda la casa.\nAbuela: Yo me enamoré en esta feria, en 1962, del muchacho de la camisa blanca. ¿Y usted, Hernando? ¿Usted se enamoró alguna vez?\nHernando: Nunca.\nAbuela: ¡Mentira! Esa es una mentira de taxista.\nHernando salió al pasillo.\nVale: Hernando está muy callado últimamente.\nTomás: Últimamente, todos estamos callados.\nEn el pasillo, Hernando miraba una foto vieja: dos hombres en un bosque, el papá de Beatriz y un muchacho de ojos tristes.\nBeatriz: Es Joaquín, en 1978. Trabajaba con mi papá en esa región. Era del interior, como ustedes, pero quería conocer otra región: el mar, el desierto.\nHernando: Decía que el interior era muy frío. Que en el desierto, por lo menos, no había que llevar chaqueta.\nBeatriz: Siéntense. Ya no retraso más el diario.",
   "gloss": [
     {
       "es": "La lluvia retrasó el desfile dos horas",
@@ -45,7 +45,7 @@
       "en": "The small silleta was almost as wide as he was"
     },
     {
-      "es": "una señora de la camisa amarilla",
+      "es": "una señora de camisa amarilla",
       "en": "a lady in a yellow shirt"
     },
     {
@@ -73,7 +73,7 @@
       "en": "Lately we've all been quiet."
     },
     {
-      "es": "un muchacho de los ojos tristes",
+      "es": "un muchacho de ojos tristes",
       "en": "a young man with sad eyes"
     },
     {
@@ -85,8 +85,8 @@
       "en": "He was from the interior (the Andean highlands), like you"
     },
     {
-      "es": "no hay que llevar chaqueta",
-      "en": "you don't have to wear a jacket"
+      "es": "no había que llevar chaqueta",
+      "en": "you didn't have to wear a jacket"
     },
     {
       "es": "Ya no retraso más el diario.",
@@ -182,7 +182,6 @@
     "c:bien-y-tu",
     "c:era",
     "c:hay",
-    "c:hay-que",
     "c:porque",
     "c:segun",
     "c:tienes",

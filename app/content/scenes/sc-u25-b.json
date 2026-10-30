@@ -3,7 +3,7 @@
   "unit": "u25",
   "title": "Llamada a Bogotá",
   "spare": true,
-  "brief": "You're Tomás. You're in Medellín for the Feria de las Flores, and Vale's mother Beatriz has just told you about Rosa's brother. Call Mariana in Bogotá and pass on everything you heard. She's your friend, so use tú.",
+  "brief": "You're Tomás. You're in Medellín for the Feria de las Flores, and Vale's mother Beatriz has just read you what Rosa told her about Joaquín in 1990. Call Mariana in Bogotá and pass on what you heard. She's your friend, so use tú.",
   "turns": [
     {
       "id": "t1",
@@ -28,12 +28,12 @@
     {
       "id": "t2",
       "npc": "Qué envidia. ¿Y la mamá de Vale ya les habló de Rosa?",
-      "npcEn": "I'm jealous. And has Vale's mum talked to you about Rosa yet?",
-      "intent": "Say yes: she told you Rosa had a younger brother.",
+      "npcEn": "I'm jealous. And has Vale's mom talked to you about Rosa yet?",
+      "intent": "Say yes: she told you Joaquín was Rosa's younger brother.",
       "accept": [
-        "Sí. Me contó que Rosa tenía un hermano menor.",
-        "Sí, nos dijo que Rosa tenía un hermano menor, Joaquín.",
-        "Sí. La mamá de Vale nos dijo que Rosa tenía un hermano menor."
+        "Sí. Me contó que Joaquín era el hermano menor de Rosa.",
+        "Sí, nos dijo que Joaquín era el hermano menor de Rosa.",
+        "Sí. La mamá de Vale nos dijo que Rosa tenía un hermano menor, Joaquín."
       ],
       "require": [
         {
@@ -43,11 +43,10 @@
           "label": "pass it on: me contó que..."
         },
         {
-          "type": "verbForm",
-          "inf": "tener",
-          "tense": "imperfecto",
-          "person": "él/ella",
-          "label": "in the background past: Rosa tenía"
+          "type": "regex",
+          "pattern": "\\b(era|tenía)\\b",
+          "flags": "i",
+          "label": "in the describing past: era, tenía"
         }
       ],
       "focus": "g:reported-past-basic",
@@ -55,8 +54,8 @@
     },
     {
       "id": "t3",
-      "npc": "¿Un hermano? ¿Y por qué nunca supimos de él?",
-      "npcEn": "A brother? And why did we never hear about him?",
+      "npc": "Claro, los dos Herrera. ¿Y por qué se fue?",
+      "npcEn": "Of course, the two Herreras. And why did he leave?",
       "intent": "Using según, say that according to Beatriz, they had a fight and he went off to Santa Marta.",
       "accept": [
         "Según Beatriz, se pelearon y él se fue a Santa Marta.",
@@ -116,20 +115,20 @@
     },
     {
       "id": "t6",
-      "npc": "Hernando sabe algo, Tomás. Mañana llamo a un amigo en Santa Marta.",
-      "npcEn": "Hernando knows something, Tomás. Tomorrow I'll call a friend in Santa Marta.",
-      "intent": "Thank her and say you're going to tell Vale everything now.",
+      "npc": "Hernando sabe algo, Tomás. Habla con él.",
+      "npcEn": "Hernando knows something, Tomás. Talk to him.",
+      "intent": "Say you're going to ask Hernando tonight.",
       "accept": [
-        "Gracias, Mariana. Ahora le cuento todo a Vale.",
-        "Mil gracias. Voy a contarle todo a Vale.",
-        "Gracias. Ahora mismo le cuento todo a Vale."
+        "Sí. Esta noche le pregunto a Hernando.",
+        "Tienes razón. Le voy a preguntar a Hernando esta noche.",
+        "Listo. Voy a preguntarle a Hernando esta noche."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "le\\b[^.?!]*\\ba Vale",
+          "pattern": "le\\b[^.?!]*\\ba Hernando",
           "flags": "i",
-          "label": "say who twice: le cuento todo a Vale"
+          "label": "say who twice: le pregunto a Hernando"
         }
       ],
       "focus": "g:le-doubling",
@@ -139,8 +138,10 @@
   "requires": [
     "c:bien-y-tu",
     "c:buen-clima",
+    "c:claro-listo",
     "c:como-estas",
-    "c:gracias-de-nada",
+    "c:con-el-ella",
+    "c:era",
     "c:hay",
     "c:me-conto-que",
     "c:que-envidia",
@@ -157,7 +158,6 @@
     "g:le-doubling",
     "g:negation-words",
     "g:object-pronoun-position",
-    "g:prep-pronouns",
     "g:present-ar",
     "g:present-er-ir",
     "g:pret-vs-imperfect",
@@ -168,15 +168,15 @@
     "g:questions",
     "g:reflexive-routine",
     "g:reported-past-basic",
+    "g:ser-identity",
     "g:stem-boot",
     "g:that-clauses",
-    "l:ahora",
-    "l:amigo",
     "l:aquí",
     "l:bien",
     "l:buen",
     "l:callado",
     "l:calle",
+    "l:claro",
     "l:clima",
     "l:contar",
     "l:cómo",
@@ -193,20 +193,24 @@
     "l:hoy",
     "l:ir",
     "l:irse",
-    "l:llamar",
+    "l:listo",
     "l:llover",
     "l:mamá",
-    "l:mañana",
     "l:menor",
+    "l:noche",
     "l:pelearse",
+    "l:preguntar",
     "l:prácticamente",
     "l:qué",
+    "l:razón",
     "l:realmente",
     "l:saber",
+    "l:ser",
     "l:tener",
     "l:triste",
     "l:volver",
     "p:aqui-ahi-alla",
+    "p:demonstratives-basic",
     "p:frequency-scale",
     "p:hace-frio",
     "p:indefinites-basic",
@@ -214,10 +218,11 @@
     "p:mayor-menor",
     "p:me-te-nos-objects",
     "p:no-es-x-es-y",
-    "p:personal-a",
+    "p:preguntar-pedir",
     "p:quantifiers-basic",
     "p:saber-conocer",
     "p:se-reciproco",
+    "p:tener-razon",
     "p:todos-los-dias"
   ]
 }
