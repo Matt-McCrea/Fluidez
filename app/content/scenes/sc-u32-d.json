@@ -1,0 +1,220 @@
+{
+  "id": "sc-u32-d",
+  "unit": "u32",
+  "title": "The article",
+  "spare": true,
+  "brief": "You're Tomás, on the phone with your friend Mariana, a journalist. She wants to write about Altamira and the block, and you are friends, so use tú. Say yes with conditions, explain your reasons and agree on what to publish now.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Hola, Tomás. Soy Mariana. Tengo que pedirte un favor.",
+      "npcEn": "Hi, Tomás. It's Mariana. I have to ask you a favour.",
+      "intent": "Greet her and ask what she needs.",
+      "accept": [
+        "Hola, Mariana. Dime, ¿qué necesitas?",
+        "Claro. ¿Qué pasa?",
+        "Hola. ¿En qué te puedo ayudar?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        }
+      ],
+      "focus": "c:tengo-que-pedirte-un-favor",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Quiero escribir un artículo sobre Altamira y la cuadra. Necesito que me des una entrevista.",
+      "npcEn": "I want to write an article about Altamira and the block. I need you to give me an interview.",
+      "intent": "Say yes, but ask her not to publish it until the trial is over.",
+      "accept": [
+        "Sí, pero te pido que no lo publiques hasta que sea el juicio.",
+        "Con gusto. Te pido que no publiques nada hasta que hablemos con la abogada.",
+        "Claro, pero te pido que no lo publiques todavía."
+      ],
+      "require": [
+        {
+          "type": "negation"
+        },
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "te pido que",
+          "label": "after te pido que, the verb changes: publiques"
+        }
+      ],
+      "focus": "g:subj-influence",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Y por qué esperar? Si sale ya, más gente nos apoya.",
+      "npcEn": "And why wait? If it comes out now, more people support us.",
+      "intent": "Explain that you prefer to wait so that Altamira doesn't know your plan.",
+      "accept": [
+        "Prefiero esperar para que Altamira no sepa nuestro plan.",
+        "Es mejor esperar para que ellos no sepan lo que vamos a hacer.",
+        "Quiero esperar para que Altamira no sepa nada."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "para que",
+          "label": "after para que (so that), the verb changes: sepa"
+        }
+      ],
+      "focus": "g:subj-purpose-full",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Bueno, tienes razón. Pero tengo que mandar algo a mi editor el viernes.",
+      "npcEn": "OK, you're right. But I have to send something to my editor on Friday.",
+      "intent": "Suggest that you could publish only Rosa's story now and the rest after the trial.",
+      "accept": [
+        "Podríamos publicar primero la historia de Rosa y lo otro después del juicio.",
+        "Podríamos publicar ahora la historia del café y lo otro cuando termine el juicio.",
+        "Podríamos sacar primero la historia de Rosa. Lo otro puede esperar."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "podr[ií]amos",
+          "flags": "i",
+          "label": "suggest it softly: podríamos + infinitive"
+        }
+      ],
+      "focus": "p:podriamos-deberiamos",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Me encanta. Una cosa: ¿te importaría salir en una foto con Simón?",
+      "npcEn": "I love it. One thing: would you mind being in a photo with Simón?",
+      "intent": "Agree, and say that Simón has to be in the photo too.",
+      "accept": [
+        "Claro, con gusto. Pero Simón tiene que salir en la foto.",
+        "Sí, con gusto. Pero Simón sale en la foto también.",
+        "No hay problema. Simón también sale, ¿verdad?"
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "Simón",
+          "label": "mention Simón"
+        }
+      ],
+      "focus": "p:te-importaria-inf",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:entonces-bueno",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:me-encanta",
+    "c:no-cierto",
+    "c:no-te-preocupes",
+    "c:oye-mira",
+    "c:puedo",
+    "c:quiero",
+    "c:tengo",
+    "c:tengo-que",
+    "c:tengo-que-pedirte-un-favor",
+    "c:tienes",
+    "c:vamos-a",
+    "g:comparatives",
+    "g:conditional",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:hay-vs-esta",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:para-que",
+    "g:possessives",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:relatives-donde-lo-que",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-cuando-future",
+    "g:subj-influence",
+    "g:subj-irregulars",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:abogado",
+    "l:ahora",
+    "l:apoyar",
+    "l:artículo",
+    "l:ayudar",
+    "l:bueno",
+    "l:café",
+    "l:claro",
+    "l:cosa",
+    "l:cuadra",
+    "l:dar",
+    "l:decir",
+    "l:después",
+    "l:editor",
+    "l:encantar",
+    "l:entrevista",
+    "l:escribir",
+    "l:esperar",
+    "l:favor",
+    "l:foto",
+    "l:gente",
+    "l:gusto",
+    "l:hablar",
+    "l:hacer",
+    "l:historia",
+    "l:importar",
+    "l:ir",
+    "l:juicio",
+    "l:mandar",
+    "l:mejor",
+    "l:necesitar",
+    "l:pasar",
+    "l:pedir",
+    "l:plan",
+    "l:poder",
+    "l:preferir",
+    "l:problema",
+    "l:publicar",
+    "l:querer",
+    "l:qué",
+    "l:razón",
+    "l:saber",
+    "l:sacar",
+    "l:salir",
+    "l:ser",
+    "l:tener",
+    "l:terminar",
+    "l:verdad",
+    "l:viernes",
+    "p:days-el-lunes",
+    "p:indefinites-basic",
+    "p:la-gente-singular",
+    "p:me-te-nos-objects",
+    "p:no-hasta",
+    "p:otro-no-article",
+    "p:podriamos-deberiamos",
+    "p:possessives-basic",
+    "p:prefieres-x-o-y",
+    "p:preguntar-pedir",
+    "p:prep-questions-basic",
+    "p:saber-conocer",
+    "p:te-importaria",
+    "p:te-importaria-inf",
+    "p:tener-razon",
+    "p:time-sequence-basic",
+    "p:ya-todavia-basic"
+  ]
+}

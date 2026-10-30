@@ -1,0 +1,241 @@
+{
+  "id": "sc-u32-b",
+  "unit": "u32",
+  "title": "Rainy-season menu",
+  "spare": false,
+  "brief": "You're Tomás, closing the café with Vale. She has a plan for the rainy season and you are her partner, so use tú. Give your opinion, suggest a fix and agree on timing.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, necesito que me escuches un minuto. Tengo una idea para la temporada de lluvias.",
+      "npcEn": "Tomás, I need you to listen to me for a minute. I have an idea for the rainy season.",
+      "intent": "Say you're listening and ask what the idea is.",
+      "accept": [
+        "Te escucho. ¿Cuál es la idea?",
+        "Claro, Vale. ¿Qué idea tienes?",
+        "Dime. ¿De qué se trata?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        }
+      ],
+      "focus": "g:subj-influence",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Quiero que cambiemos el menú. Pan de queso caliente todo el día y chocolate con queso.",
+      "npcEn": "I want us to change the menu. Hot cheese bread all day and hot chocolate with cheese.",
+      "intent": "Say you like it, but she should do a test so that the regulars can taste it first.",
+      "accept": [
+        "Me gusta, pero haz una prueba para que los clientes la prueben primero.",
+        "Suena bien. Hagamos una prueba para que los clientes habituales la prueben.",
+        "Me parece bien. Primero haz una prueba para que Hernando la pruebe."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "para que",
+          "label": "after para que (so that), the verb changes: prueben"
+        }
+      ],
+      "focus": "g:subj-purpose-full",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Hecho. ¿Y cuándo lo servimos?",
+      "npcEn": "Done. And when do we serve it?",
+      "intent": "Say you will serve it when the rainy season starts.",
+      "accept": [
+        "Lo servimos cuando empiece la temporada de lluvias.",
+        "Cuando empiece la temporada, lo servimos.",
+        "Cuando llueva de verdad, lo servimos."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "cuando",
+          "label": "after cuando, talking about the future, the verb changes: empiece"
+        }
+      ],
+      "focus": "g:subj-cuando-future",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Tengo un problema. El proveedor no trae la harina hasta el lunes, y la prueba es mañana.",
+      "npcEn": "I have a problem. The supplier doesn't bring the flour until Monday, and the test is tomorrow.",
+      "intent": "Suggest that she call another supplier today.",
+      "accept": [
+        "Te propongo que llames a otro proveedor hoy.",
+        "Entonces te propongo que llames al proveedor de la plaza.",
+        "Te propongo que busquemos otro proveedor ahora mismo."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "te propongo que",
+          "label": "after te propongo que, the verb changes: llames"
+        }
+      ],
+      "focus": "p:te-propongo-que",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Qué buena idea. ¿Y sigues cerrando a las seis?",
+      "npcEn": "Good idea. And do you still close at six?",
+      "intent": "Say yes, you still close at six.",
+      "accept": [
+        "Sí, sigo cerrando a las seis.",
+        "Sí, seguimos cerrando a las seis por ahora.",
+        "Sí, sigo cerrando a las seis, pero no por mucho tiempo."
+      ],
+      "require": [
+        {
+          "type": "verbFormAny",
+          "inf": "seguir",
+          "tense": "presente",
+          "label": "use seguir + a gerund: sigo cerrando"
+        }
+      ],
+      "focus": "p:seguir-gerundio",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Qué bueno. Quédate a tomar un tinto, que lo pago yo.",
+      "npcEn": "Great. Stay and have a coffee, it's on me.",
+      "intent": "Accept the coffee with a friendly 'if you insist'.",
+      "accept": [
+        "Bueno, si insistes.",
+        "Bueno, si insistes. Gracias, Vale.",
+        "Bueno, si insistes. Un tinto y nada más."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "si insistes",
+          "flags": "i",
+          "label": "say bueno, si insistes"
+        }
+      ],
+      "focus": "c:bueno-si-insistes",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:bueno-si-insistes",
+    "c:claro-listo",
+    "c:en-serio",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hasta-el-lunes",
+    "c:me-gusta",
+    "c:me-parece-bien",
+    "c:oye-mira",
+    "c:que-bien",
+    "c:quiero",
+    "c:tengo",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:commands-tu",
+    "g:commands-with-pronouns",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:gustar-basic",
+    "g:para-que",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-cuando-future",
+    "g:subj-influence",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:ahora",
+    "l:bien",
+    "l:buena",
+    "l:bueno",
+    "l:buscar",
+    "l:caliente",
+    "l:cambiar",
+    "l:cerrar",
+    "l:chocolate",
+    "l:claro",
+    "l:cliente",
+    "l:cuál",
+    "l:cuándo",
+    "l:decir",
+    "l:día",
+    "l:empezar",
+    "l:escuchar",
+    "l:gustar",
+    "l:habitual",
+    "l:hacer",
+    "l:harina",
+    "l:hoy",
+    "l:idea",
+    "l:insistir",
+    "l:llamar",
+    "l:llover",
+    "l:lluvia",
+    "l:lunes",
+    "l:mañana",
+    "l:menú",
+    "l:minuto",
+    "l:necesitar",
+    "l:pagar",
+    "l:pan",
+    "l:parecer",
+    "l:plaza",
+    "l:probar",
+    "l:problema",
+    "l:proponer",
+    "l:proveedor",
+    "l:prueba",
+    "l:quedarse",
+    "l:querer",
+    "l:queso",
+    "l:qué",
+    "l:seguir",
+    "l:ser",
+    "l:servir",
+    "l:sonar",
+    "l:temporada",
+    "l:tener",
+    "l:tiempo",
+    "l:tinto",
+    "l:tomar",
+    "l:traer",
+    "l:tratarse",
+    "l:verdad",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:con-sin",
+    "p:llevar-traer",
+    "p:me-te-nos-objects",
+    "p:no-hasta",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:personal-a",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:seguir-gerundio",
+    "p:te-propongo-que",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:todos-los-dias"
+  ]
+}

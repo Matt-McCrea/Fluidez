@@ -1,0 +1,229 @@
+{
+  "id": "sc-u32-c",
+  "unit": "u32",
+  "title": "The list",
+  "spare": false,
+  "brief": "You're Tomás, working late on the list of everything to do before the lease ends. Don Hernando, who is much older than you, drops by, so use usted. Ask for his help, make a plan with him and correct a misunderstanding.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Joven Tomás, vi que había luz. ¿Todavía está trabajando a esta hora?",
+      "npcEn": "Young Tomás, I saw there was a light on. Are you still working at this hour?",
+      "intent": "Say yes, you're still working on the list, and ask him with usted to give you a hand.",
+      "accept": [
+        "Sí, señor Hernando. Sigo con la lista. ¿Me echa una mano?",
+        "Sí, estoy terminando la lista. ¿Me echa una mano, señor Hernando?",
+        "Sí. Hay mucho que hacer. ¿Me echa una mano con la lista?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "me echa una mano",
+          "flags": "i",
+          "label": "ask with usted: ¿me echa una mano?"
+        }
+      ],
+      "focus": "c:me-echas-una-mano",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Con mucho gusto. ¿Qué es lo primero?",
+      "npcEn": "With pleasure. What is the first thing?",
+      "intent": "Ask him to ask his taxi friends if anyone knew Joaquín.",
+      "accept": [
+        "Le pido que pregunte a sus amigos taxistas si alguien conoció a Joaquín.",
+        "Le pido que hable con los taxistas. Alguien debe conocer a Joaquín.",
+        "Le pido que pregunte por Joaquín en la parada de taxis."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "le pido que",
+          "label": "after le pido que, the verb changes: pregunte"
+        }
+      ],
+      "focus": "g:subj-influence",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Ya lo hice esta tarde. Un colega me dijo que Joaquín vivía en Tunja. Veré a su hija el viernes.",
+      "npcEn": "I already did it this afternoon. A colleague told me that Joaquín lived in Tunja. I'm seeing his daughter on Friday.",
+      "intent": "Ask if he can give her your number when he sees her on Friday.",
+      "accept": [
+        "Cuando la vea el viernes, ¿le da mi número?",
+        "¿Le puede dar mi número cuando la vea el viernes?",
+        "¿Le da mi número cuando la vea? Es importante."
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "cuando",
+          "label": "after cuando, talking about the future, the verb changes: vea"
+        }
+      ],
+      "focus": "g:subj-cuando-future",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Con gusto. Perdone, ¿el contrato termina este mes?",
+      "npcEn": "Gladly. Excuse me, does the lease end this month?",
+      "intent": "Say no, it ends in November, and you must find Joaquín before it ends.",
+      "accept": [
+        "No, termina en noviembre. Tenemos que encontrar a Joaquín antes de que termine.",
+        "No, señor Hernando. Hay que encontrarlo antes de que termine el contrato.",
+        "No, es en noviembre. Debemos hablar con su familia antes de que termine."
+      ],
+      "require": [
+        {
+          "type": "negation"
+        },
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "antes de que",
+          "label": "after antes de que, the verb changes: termine"
+        }
+      ],
+      "focus": "g:subj-purpose-full",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Para eso estamos, joven. Y ahora, ¿me regala un tinto?",
+      "npcEn": "That's what we're here for, young man. And now, would you give me a coffee?",
+      "intent": "Say of course, thank him, and tell him the coffee is for him, using usted.",
+      "accept": [
+        "Claro, señor Hernando. Gracias por todo. El tinto es para usted.",
+        "Por supuesto. Muchas gracias, señor Hernando.",
+        "Claro que sí. Gracias por su ayuda, señor Hernando."
+      ],
+      "require": [
+        {
+          "type": "avoidsAny",
+          "words": [
+            "tú",
+            "tu",
+            "tienes",
+            "eres",
+            "gracias a ti"
+          ],
+          "label": "use usted with Don Hernando"
+        }
+      ],
+      "focus": "g:subj-influence",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hay-que",
+    "c:me-regala",
+    "c:mucho-gusto",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:commands-usted",
+    "g:direct-objects",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:le-doubling",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:reported-past-basic",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-cuando-future",
+    "g:subj-influence",
+    "g:subj-purpose-full",
+    "g:subj-wanting",
+    "g:tener-que-hay-que",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:ahora",
+    "l:amigo",
+    "l:antes",
+    "l:ayuda",
+    "l:claro",
+    "l:colega",
+    "l:conocer",
+    "l:contrato",
+    "l:dar",
+    "l:deber",
+    "l:decir",
+    "l:echar",
+    "l:encontrar",
+    "l:estar",
+    "l:familia",
+    "l:gusto",
+    "l:hablar",
+    "l:hacer",
+    "l:hija",
+    "l:hora",
+    "l:importante",
+    "l:joven",
+    "l:listo",
+    "l:luz",
+    "l:mano",
+    "l:mes",
+    "l:noviembre",
+    "l:número",
+    "l:parada",
+    "l:pedir",
+    "l:perdonar",
+    "l:poder",
+    "l:preguntar",
+    "l:qué",
+    "l:regalar",
+    "l:seguir",
+    "l:ser",
+    "l:señor",
+    "l:suponer",
+    "l:tarde",
+    "l:taxi",
+    "l:taxista",
+    "l:tener",
+    "l:terminar",
+    "l:tinto",
+    "l:trabajar",
+    "l:ver",
+    "l:viernes",
+    "l:vivir",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:gracias-por",
+    "p:indefinites-basic",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:time-sequence-basic",
+    "p:ya-todavia-basic"
+  ]
+}

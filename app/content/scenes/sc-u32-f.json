@@ -1,0 +1,218 @@
+{
+  "id": "sc-u32-f",
+  "unit": "u32",
+  "title": "Fifty kilos",
+  "spare": true,
+  "brief": "You're Tomás, receiving a flour delivery at the café door. The driver is a stranger, so use usted. Tell him where to put it, spot the mistake in the order, sort it out and be kind about it.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenos días. Le traigo la harina. ¿Dónde la dejo?",
+      "npcEn": "Good morning. I've got your flour. Where do I leave it?",
+      "intent": "Greet him and say you want him to leave it in the kitchen.",
+      "accept": [
+        "Buenos días. Quiero que la deje en la cocina, por favor.",
+        "Hola. Quiero que la deje en la cocina, y gracias.",
+        "Buenos días. Quiero que usted la deje en la cocina, donde está el horno."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "quiero que",
+          "label": "after quiero que, the verb changes: deje"
+        }
+      ],
+      "focus": "g:subj-influence",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Aquí tiene. Son cincuenta kilos.",
+      "npcEn": "Here you are. That's fifty kilos.",
+      "intent": "Say you ordered five kilos, not fifty.",
+      "accept": [
+        "Perdone, pero yo pedí cinco kilos, no cincuenta.",
+        "No, yo pedí cinco kilos. Hay un error.",
+        "Pedí cinco kilos, no cincuenta."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "pedir",
+          "tense": "preterito",
+          "person": "yo",
+          "label": "say what you ordered: pedí"
+        },
+        {
+          "type": "negation"
+        }
+      ],
+      "focus": "g:subj-influence",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Qué pena. Eso pasa cuando la oficina cambia el sistema. ¿Qué hacemos?",
+      "npcEn": "I'm sorry. That happens when the office changes the system. What do we do?",
+      "intent": "Suggest that he take back forty-five kilos today.",
+      "accept": [
+        "Le propongo que se lleve cuarenta y cinco kilos hoy.",
+        "Le propongo que deje cinco kilos y que se lleve lo otro.",
+        "Le propongo que devuelva cuarenta y cinco hoy mismo."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "le propongo que",
+          "label": "after le propongo que, the verb changes: lleve"
+        }
+      ],
+      "focus": "p:te-propongo-que",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Es que no vuelvo a pasar por la Candelaria hasta el lunes.",
+      "npcEn": "The thing is, I won't be coming through La Candelaria again until Monday.",
+      "intent": "Ask him politely to call you when he arrives on Monday.",
+      "accept": [
+        "¿Me hace usted el favor de llamarme cuando llegue el lunes?",
+        "Entonces, ¿me hace usted el favor de avisarme cuando llegue?",
+        "Está bien. ¿Me hace usted el favor de llamarme cuando llegue el lunes?"
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "cuando",
+          "label": "after cuando, talking about the future, the verb changes: llegue"
+        }
+      ],
+      "focus": "p:me-haces-el-favor-de",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Así quedamos. Oiga, hace mucho calor. ¿Me regala un vaso de agua?",
+      "npcEn": "That's settled, then. Listen, it's very hot. Would you give me a glass of water?",
+      "intent": "Say of course, and invite him to have a coffee before he leaves.",
+      "accept": [
+        "Claro. Tome un tinto antes de que se vaya.",
+        "Claro que sí. Y tome un tinto antes de que se vaya.",
+        "Por supuesto. Siéntese un momento antes de que se vaya."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "antes de que",
+          "label": "after antes de que, the verb changes: vaya"
+        }
+      ],
+      "focus": "g:subj-purpose-full",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:aqui-tiene",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:donde-esta",
+    "c:entonces-bueno",
+    "c:es-que",
+    "c:hasta-el-lunes",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:me-hace-una-rebajita",
+    "c:me-regala",
+    "c:oiga-oye",
+    "c:por-favor",
+    "c:que-pena",
+    "c:quiero",
+    "c:tienes",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:indirect-objects",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-cuando-future",
+    "g:subj-influence",
+    "g:subj-irregulars",
+    "g:subj-purpose-full",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:agua",
+    "l:antes",
+    "l:aquí",
+    "l:avisar",
+    "l:bien",
+    "l:bueno",
+    "l:calor",
+    "l:cambiar",
+    "l:claro",
+    "l:cocina",
+    "l:dejar",
+    "l:devolver",
+    "l:día",
+    "l:dónde",
+    "l:error",
+    "l:estar",
+    "l:favor",
+    "l:hacer",
+    "l:harina",
+    "l:horno",
+    "l:hoy",
+    "l:irse",
+    "l:kilo",
+    "l:llamar",
+    "l:llegar",
+    "l:llevarse",
+    "l:lunes",
+    "l:momento",
+    "l:oficina",
+    "l:oír",
+    "l:pasar",
+    "l:pedir",
+    "l:pena",
+    "l:perdonar",
+    "l:proponer",
+    "l:quedar",
+    "l:querer",
+    "l:qué",
+    "l:regalar",
+    "l:sentarse",
+    "l:ser",
+    "l:sistema",
+    "l:suponer",
+    "l:tener",
+    "l:tinto",
+    "l:tomar",
+    "l:traer",
+    "l:vaso",
+    "l:volver",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:container-de",
+    "p:cuando-basic",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:hace-frio",
+    "p:llevar-traer",
+    "p:me-te-nos-objects",
+    "p:me-trae",
+    "p:otro-no-article",
+    "p:quantifiers-basic",
+    "p:te-propongo-que",
+    "p:volver-a-inf"
+  ]
+}
