@@ -1,0 +1,168 @@
+{
+  "node": "p:tener-la-sensacion",
+  "hook": {
+    "line": "When something feels off and you have no proof, you need words that are softer than an accusation. These give you a hunch, and one of them also warns of bad news.",
+    "es": "Me da la sensación de que nos está escondiendo algo.",
+    "en": "I get the feeling he's hiding something from us."
+  },
+  "examples": [
+    {
+      "es": "Me da la sensación de que nos está escondiendo algo.",
+      "en": "I get the feeling he's hiding something from us."
+    },
+    {
+      "es": "Tengo la sospecha de que ya lo sabe.",
+      "en": "I have a suspicion she already knows."
+    },
+    {
+      "es": "Me temo que no va a llegar.",
+      "en": "I'm afraid he isn't going to make it."
+    },
+    {
+      "es": "Tengo la impresión de que nadie dice la verdad.",
+      "en": "I have the impression nobody is telling the truth."
+    },
+    {
+      "es": "Me da la sensación de que Tomás no quiere hablar.",
+      "en": "I get the feeling Tomás doesn't want to talk."
+    },
+    {
+      "es": "¿Tienes la sensación de que algo cambió?",
+      "en": "Do you have the feeling something changed? (to a friend)"
+    }
+  ],
+  "rule": "These openers all say \"I think so, but I can't prove it\":\n\n*Me da la sensación de que...* (I get the feeling)\n*Tengo la sospecha de que...* (I have a suspicion)\n*Tengo la impresión de que...* (I have the impression)\n*Me temo que...* (I'm afraid that), for unwelcome news\n\nAfter them comes a normal sentence with a plain verb: *está escondiendo*, *no va a llegar*.\n\nWatch *de*: it is *de que* after the nouns, but *me temo que* has none.",
+  "smallPrint": "Teachers call these verbs and phrases of opinion and suspicion. They take the plain indicative, because the speaker believes what follows.",
+  "readAndPick": [
+    {
+      "es": "Me temo que el café va a cerrar.",
+      "options": [
+        "I'm afraid the café is going to close.",
+        "I hope the café is going to close.",
+        "The café closed."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me da la sensación de que ya lo sabías.",
+      "options": [
+        "I get the feeling I already knew.",
+        "You get the feeling I already knew.",
+        "I get the feeling you already knew."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tengo la sospecha de que Altamira tiene prisa.",
+      "options": [
+        "I have a suspicion Altamira is in a hurry.",
+        "I have a suspicion Altamira was in a hurry.",
+        "Altamira has a suspicion I am in a hurry."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me temo que es tarde.",
+      "options": [
+        "I'm afraid it's too early.",
+        "I'm afraid it's late.",
+        "I'm afraid it was late."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tenemos la impresión de que nadie dice la verdad.",
+      "options": [
+        "We have the impression nobody is telling the truth.",
+        "I have the impression nobody is telling the truth.",
+        "We have the impression everybody is telling the truth."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Tienes la sensación de que algo cambió?",
+      "options": [
+        "Do I have the feeling something changed?",
+        "Do you have the feeling something changed?",
+        "Did you have the feeling nothing changed?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me da la sensación de que Tomás no quiere hablar.",
+      "options": [
+        "I get the feeling Tomás wants to talk.",
+        "I get the feeling Tomás can't talk.",
+        "I get the feeling Tomás doesn't want to talk."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Me temo que no va a llegar.",
+      "options": [
+        "I'm afraid he isn't going to make it.",
+        "I'm afraid he is going to make it.",
+        "I hope he isn't going to make it."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *que* or *de que* and type the whole sentence: *Me temo ___ no va a llegar.*",
+      "answer": "Me temo que no va a llegar.",
+      "why": "*Me temo* goes straight into *que*, with no *de*."
+    },
+    {
+      "prompt": "Type in Spanish: I get the feeling Tomás doesn't want to talk.",
+      "answer": "Me da la sensación de que Tomás no quiere hablar.",
+      "accept": [
+        "Tengo la sensación de que Tomás no quiere hablar."
+      ],
+      "why": "Plain verb after *de que*: *quiere*."
+    },
+    {
+      "prompt": "Type in Spanish: I have a suspicion Altamira is in a hurry.",
+      "answer": "Tengo la sospecha de que Altamira tiene prisa.",
+      "why": "*Tengo la sospecha de que* then a normal sentence."
+    },
+    {
+      "prompt": "Type in Spanish: I'm afraid the café is going to close.",
+      "answer": "Me temo que el café va a cerrar.",
+      "why": "*Me temo que* also hints that the news is unwelcome."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Do you have the feeling something changed?",
+      "answer": "¿Tienes la sensación de que algo cambió?",
+      "why": "*Tienes* is the *tú* form of *tener*."
+    },
+    {
+      "prompt": "Say it about *we*: We have the impression nobody is telling the truth.",
+      "answer": "Tenemos la impresión de que nadie dice la verdad.",
+      "why": "*Tenemos* is the *nosotros* form of *tener*."
+    },
+    {
+      "prompt": "Type in Spanish: I'm afraid it's late.",
+      "answer": "Me temo que es tarde.",
+      "why": "Plain verb *es* after *me temo que*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me temo de que no va a llegar.",
+      "right": "Me temo que no va a llegar.",
+      "why": "Almost. With *me temo*, go straight to *que*; the *de* belongs to the nouns like *sensación*."
+    },
+    {
+      "wrong": "Me da la sensación de que nos esté escondiendo algo.",
+      "right": "Me da la sensación de que nos está escondiendo algo.",
+      "why": "Almost. You believe it, so the verb stays plain: *está*."
+    },
+    {
+      "wrong": "Tengo miedo que no va a llegar.",
+      "right": "Me temo que no va a llegar.",
+      "why": "Almost. *Tengo miedo* is real fear; \"I'm afraid that\" in the polite sense is *me temo que*."
+    }
+  ],
+  "personal": "Tell a friend a hunch about your week with *Me da la sensación de que* or *Me temo que*."
+}

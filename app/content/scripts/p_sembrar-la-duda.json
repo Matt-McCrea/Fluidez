@@ -1,0 +1,170 @@
+{
+  "node": "p:sembrar-la-duda",
+  "hook": {
+    "line": "Rumours do not just appear: someone plants them. Spanish has a neat set of verbs for creating doubt in others and for questioning what you hear.",
+    "es": "Esa noticia sembró la duda en todo el barrio.",
+    "en": "That news planted doubt across the whole neighbourhood."
+  },
+  "examples": [
+    {
+      "es": "Sus declaraciones sembraron dudas entre los vecinos.",
+      "en": "His statements raised doubts among the neighbours."
+    },
+    {
+      "es": "Nadie pone en duda su honestidad.",
+      "en": "Nobody questions her honesty."
+    },
+    {
+      "es": "Quisiera plantear una duda.",
+      "en": "I'd like to raise a question."
+    },
+    {
+      "es": "Esa noticia sembró la duda en todo el barrio.",
+      "en": "That news planted doubt across the whole neighbourhood."
+    },
+    {
+      "es": "Pongo en duda esa versión.",
+      "en": "I question that version."
+    },
+    {
+      "es": "Vale planteó una duda sobre el contrato.",
+      "en": "Vale raised a doubt about the contract."
+    }
+  ],
+  "rule": "Three phrases, three jobs.\n\n*Sembrar dudas* (to sow doubts) means making other people doubt, often on purpose. It is not about your own doubts.\n\n*Poner en duda* means to question whether something is true: *pongo*, *pone*, *pusieron*.\n\n*Plantear una duda* means to raise a question politely, in a meeting or an interview.\n\nTo say you personally have doubts, use *tener dudas*.",
+  "smallPrint": "Teachers call these collocations: verb and noun that are always found together, so learn each as one block.",
+  "readAndPick": [
+    {
+      "es": "Nadie pone en duda su honestidad.",
+      "options": [
+        "She questions everybody's honesty.",
+        "Nobody questions her honesty.",
+        "Nobody is honest."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Pongo en duda esa versión.",
+      "options": [
+        "I question that version.",
+        "I believe that version.",
+        "I wrote that version."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Quisiera plantear una duda.",
+      "options": [
+        "I'd like to answer a question.",
+        "I have no doubts.",
+        "I'd like to raise a question."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Eso siembra dudas.",
+      "options": [
+        "That removes doubts.",
+        "That plants doubts.",
+        "That's what I doubt."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Pusieron en duda la sentencia.",
+      "options": [
+        "They announced the ruling.",
+        "They questioned the ruling.",
+        "They signed the ruling."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Pones en duda lo que dijo Hernando?",
+      "options": [
+        "Does Hernando question what you said?",
+        "Did Hernando question you?",
+        "Do you question what Hernando said?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Altamira quiere sembrar la duda.",
+      "options": [
+        "Altamira wants to plant doubt.",
+        "Altamira wants to remove doubt.",
+        "Altamira has doubts."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Sus declaraciones sembraron dudas entre los vecinos.",
+      "options": [
+        "His statements settled the neighbours' doubts.",
+        "His statements raised doubts among the neighbours."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *sembraron* or *sembró* and type the whole sentence: *Sus declaraciones ___ dudas entre los vecinos.*",
+      "answer": "Sus declaraciones sembraron dudas entre los vecinos.",
+      "why": "The statements are plural, so the verb is plural: *sembraron*."
+    },
+    {
+      "prompt": "Type in Spanish: Nobody questions her honesty.",
+      "answer": "Nadie pone en duda su honestidad.",
+      "why": "*Nadie* takes a singular verb: *pone*."
+    },
+    {
+      "prompt": "Type in Spanish: I'd like to raise a question.",
+      "answer": "Quisiera plantear una duda.",
+      "why": "*Plantear* is the verb for raising a question."
+    },
+    {
+      "prompt": "Type in Spanish: I question that version.",
+      "answer": "Pongo en duda esa versión.",
+      "why": "*Poner en duda* in the *yo* form is *pongo en duda*."
+    },
+    {
+      "prompt": "Type in Spanish: That news planted doubt across the whole neighbourhood.",
+      "answer": "Esa noticia sembró la duda en todo el barrio.",
+      "accept": [
+        "Esa noticia sembró dudas en todo el barrio."
+      ],
+      "why": "One piece of news, one doubt, so *sembró*."
+    },
+    {
+      "prompt": "Say it about the senator: The senator planted doubt among the neighbours.",
+      "answer": "El senador sembró la duda entre los vecinos.",
+      "accept": [
+        "El senador sembró dudas entre los vecinos."
+      ],
+      "why": "Swap the subject; the verb stays *sembró*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Do you question what Hernando said?",
+      "answer": "¿Pones en duda lo que dijo Hernando?",
+      "why": "*Pones* is the *tú* form of *poner*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Nadie pone duda su honestidad.",
+      "right": "Nadie pone en duda su honestidad.",
+      "why": "Almost. The phrase needs *en*: *poner en duda*."
+    },
+    {
+      "wrong": "Quisiera hacer una duda.",
+      "right": "Quisiera plantear una duda.",
+      "why": "Almost. English says \"make\" or \"ask\", but Spanish raises a doubt with *plantear*."
+    },
+    {
+      "wrong": "Estoy sembrando dudas sobre el contrato.",
+      "right": "Tengo dudas sobre el contrato.",
+      "why": "Almost. *Sembrar* means causing doubt in others; for your own doubts, use *tener dudas*."
+    }
+  ],
+  "personal": "Say whether you question something you heard lately, using *pongo en duda*, or what a headline made people doubt, using *sembró dudas*."
+}

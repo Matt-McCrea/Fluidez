@@ -1,0 +1,180 @@
+{
+  "node": "p:dar-por-sentado",
+  "hook": {
+    "line": "A lot of trouble starts when everybody assumes something nobody checked. Spanish has a tidy way to say \"we took it as settled\" and \"don't assume that\".",
+    "es": "Dimos por hecho que el contrato estaba firmado.",
+    "en": "We took it for granted that the contract was signed."
+  },
+  "examples": [
+    {
+      "es": "Dimos por hecho que el contrato estaba firmado.",
+      "en": "We took it for granted that the contract was signed."
+    },
+    {
+      "es": "No lo des por sentado.",
+      "en": "Don't take it for granted. (to a friend)"
+    },
+    {
+      "es": "Todos dan por hecho que Tomás se va.",
+      "en": "Everyone assumes Tomás is leaving."
+    },
+    {
+      "es": "Doy por hecho que usted ya lo sabe.",
+      "en": "I assume you already know. (to a formal you)"
+    },
+    {
+      "es": "Dieron por perdido el café.",
+      "en": "They gave the café up for lost."
+    },
+    {
+      "es": "¿Das por hecho que Altamira va a ganar?",
+      "en": "Do you take it for granted that Altamira is going to win? (to a friend)"
+    }
+  ],
+  "rule": "*Dar por hecho* and *dar por sentado* both mean \"to take as settled\" or \"to assume\". *Por hecho* is more common in speech; *por sentado* sounds a bit more written.\n\nThe verb is *dar* (*doy*, *das*, *dan*, *dimos*, *dieron*), then *por hecho*, then *que* and a plain sentence: *dan por hecho que Tomás se va*.\n\nThe same frame works with *perdido* (given up for lost) and *terminado* (considered finished).\n\nDon't add *de*: it is *por hecho que*, never *de que*.",
+  "smallPrint": "Teachers call *dar por* plus an adjective a resultative expression: you treat something as already being that way.",
+  "readAndPick": [
+    {
+      "es": "Dimos por hecho que el contrato estaba firmado.",
+      "options": [
+        "They took it for granted that the contract was signed.",
+        "We took it for granted that the contract was signed.",
+        "I took it for granted that the contract was signed."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Todos dan por hecho que Tomás se va.",
+      "options": [
+        "Everyone assumes Tomás is leaving.",
+        "Everyone assumed Tomás left.",
+        "Tomás assumes everyone is leaving."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Doy por hecho que usted ya lo sabe.",
+      "options": [
+        "You assume I already know.",
+        "I assume I already know.",
+        "I assume you already know."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No lo des por sentado.",
+      "options": [
+        "Don't take it for granted.",
+        "You don't take it for granted.",
+        "We don't take it for granted."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Das por hecho que Altamira va a ganar?",
+      "options": [
+        "Does Altamira take it for granted that you will win?",
+        "Do you take it for granted that Altamira is going to win?",
+        "Did you take it for granted that Altamira won?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Dieron por perdido el café.",
+      "options": [
+        "They bought the café.",
+        "They gave the café up for lost.",
+        "They found the café."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Di por sentado que Vale venía.",
+      "options": [
+        "I assumed Vale was coming.",
+        "Vale assumed I was coming.",
+        "I assume Vale is coming."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No des por hecho que el juez está de acuerdo.",
+      "options": [
+        "Don't assume the judge agrees. (to a friend)",
+        "The judge doesn't assume you agree.",
+        "You don't assume the judge agrees."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *doy* or *das* and type the whole sentence: *Yo ___ por hecho que usted ya lo sabe.*",
+      "answer": "Yo doy por hecho que usted ya lo sabe.",
+      "accept": [
+        "Doy por hecho que usted ya lo sabe."
+      ],
+      "why": "*Yo* goes with *doy*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Don't take it for granted.",
+      "answer": "No lo des por sentado.",
+      "why": "A *no* command uses *des* for *tú*."
+    },
+    {
+      "prompt": "Type in Spanish: We took it for granted that the contract was signed.",
+      "answer": "Dimos por hecho que el contrato estaba firmado.",
+      "accept": [
+        "Dimos por sentado que el contrato estaba firmado."
+      ],
+      "why": "*Dimos* is \"we gave\", here \"we took as settled\"."
+    },
+    {
+      "prompt": "Type in Spanish: Everyone assumes Tomás is leaving.",
+      "answer": "Todos dan por hecho que Tomás se va.",
+      "why": "*Todos* is plural, so *dan*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Do you take it for granted that Altamira is going to win?",
+      "answer": "¿Das por hecho que Altamira va a ganar?",
+      "accept": [
+        "¿Das por sentado que Altamira va a ganar?"
+      ],
+      "why": "*Das* is the *tú* form of *dar*."
+    },
+    {
+      "prompt": "Make it negative, to a friend: *Das por hecho que el juez está de acuerdo.* Say: Don't assume the judge agrees.",
+      "answer": "No des por hecho que el juez está de acuerdo.",
+      "accept": [
+        "No des por sentado que el juez está de acuerdo."
+      ],
+      "why": "A negative command changes *das* to *des*."
+    },
+    {
+      "prompt": "Type in Spanish: I assumed Vale was coming.",
+      "answer": "Di por sentado que Vale venía.",
+      "accept": [
+        "Di por hecho que Vale venía."
+      ],
+      "why": "*Di* is the past of *yo doy*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Doy por sentado de que usted ya lo sabe.",
+      "right": "Doy por sentado que usted ya lo sabe.",
+      "why": "Almost. English has no *de* here, and neither does Spanish: *por sentado que*."
+    },
+    {
+      "wrong": "Dimos hecho que el contrato estaba firmado.",
+      "right": "Dimos por hecho que el contrato estaba firmado.",
+      "why": "Almost. The little word *por* is part of the phrase."
+    },
+    {
+      "wrong": "No lo dar por sentado.",
+      "right": "No lo des por sentado.",
+      "why": "Almost. A command to a friend needs *des*, not the infinitive."
+    }
+  ],
+  "personal": "Say something you used to take for granted, or something people around you assume, with *dar por hecho* or *dar por sentado*."
+}

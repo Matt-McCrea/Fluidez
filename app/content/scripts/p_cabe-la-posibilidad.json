@@ -1,0 +1,163 @@
+{
+  "node": "p:cabe-la-posibilidad",
+  "hook": {
+    "line": "The news, the council and Altamira's lawyers all talk in careful chances. This is how to say \"it could happen\" or \"there is no doubt\" in a formal, newsy way.",
+    "es": "Cabe la posibilidad de que el ministro renuncie.",
+    "en": "There is a chance the minister will resign."
+  },
+  "examples": [
+    {
+      "es": "Cabe la posibilidad de que el ministro renuncie.",
+      "en": "There is a chance the minister will resign."
+    },
+    {
+      "es": "No cabe duda de que es la mejor opción.",
+      "en": "There is no doubt it is the best option."
+    },
+    {
+      "es": "Cabe la posibilidad de que Tomás venda el café.",
+      "en": "There is a chance Tomás will sell the café."
+    },
+    {
+      "es": "No cabe duda de que Vale cocina muy bien.",
+      "en": "There is no doubt Vale cooks very well."
+    },
+    {
+      "es": "Cabe la posibilidad de que el juez no esté de acuerdo.",
+      "en": "There is a chance the judge won't agree."
+    },
+    {
+      "es": "¿Cabe la posibilidad de que llueva mañana?",
+      "en": "Is there a chance it will rain tomorrow?"
+    }
+  ],
+  "rule": "*Cabe la posibilidad de que* is \"there's a chance that\". Something is possible but not sure, so the verb after it changes form: *renuncie*, *venda*, *esté*.\n\n*No cabe duda de que* is the opposite: \"there's no doubt that\". Now you are certain, so the verb stays plain: *es*, *cocina*.\n\nNews writers also say *no se descarta que* (\"it isn't ruled out that\") with the same changed verb.\n\nThe pair is formal. Friends say *a lo mejor* or *puede ser que*.",
+  "smallPrint": "Teachers call the changed verb the subjunctive. Possibility asks for it; certainty (*no cabe duda*) takes the plain indicative.",
+  "readAndPick": [
+    {
+      "es": "Cabe la posibilidad de que cierren el café.",
+      "options": [
+        "There is no doubt they are closing the café.",
+        "There is a chance they will close the café.",
+        "They closed the café."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No cabe duda de que esa versión es falsa.",
+      "options": [
+        "There is a chance that version is false.",
+        "There is no doubt that version is false.",
+        "That version might be true."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cabe la posibilidad de que Hernando tenga razón.",
+      "options": [
+        "There is a chance Hernando is right.",
+        "There is no doubt Hernando is right."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No cabe duda de que Rosa quería este café.",
+      "options": [
+        "There is a chance Rosa wanted this café.",
+        "Rosa wants this café.",
+        "There is no doubt Rosa wanted this café."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Cabe la posibilidad de que se equivoquen.",
+      "options": [
+        "There is no doubt they are wrong.",
+        "There is a chance they are wrong."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No cabe duda de que Vale cocina muy bien.",
+      "options": [
+        "There is no doubt Vale cooks very well.",
+        "There is a chance Vale cooks very well.",
+        "There is no doubt Vale cooked well."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Cabe la posibilidad de que llueva mañana?",
+      "options": [
+        "Is it raining tomorrow?",
+        "Is there no doubt it will rain tomorrow?",
+        "Is there a chance it will rain tomorrow?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Cabe la posibilidad de que Tomás venda el café.",
+      "options": [
+        "There is no doubt Tomás sold the café.",
+        "Tomás is selling the café.",
+        "There is a chance Tomás will sell the café."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *venda* or *vende* and type the whole sentence: *Cabe la posibilidad de que Tomás ___ el café.*",
+      "answer": "Cabe la posibilidad de que Tomás venda el café.",
+      "why": "A possibility asks for the changed verb: *venda*."
+    },
+    {
+      "prompt": "Pick *es* or *sea* and type the whole sentence: *No cabe duda de que ___ la mejor opción.*",
+      "answer": "No cabe duda de que es la mejor opción.",
+      "why": "No doubt means certainty, so the verb stays plain: *es*."
+    },
+    {
+      "prompt": "Type in Spanish: There is a chance the judge won't agree.",
+      "answer": "Cabe la posibilidad de que el juez no esté de acuerdo.",
+      "why": "*No* goes before the changed verb *esté*."
+    },
+    {
+      "prompt": "Type in Spanish: There is no doubt Vale cooks very well.",
+      "answer": "No cabe duda de que Vale cocina muy bien.",
+      "why": "Certainty: the verb is plain, *cocina*."
+    },
+    {
+      "prompt": "Type in Spanish: Is there a chance it will rain tomorrow?",
+      "answer": "¿Cabe la posibilidad de que llueva mañana?",
+      "why": "Same frame; just add the question marks."
+    },
+    {
+      "prompt": "Turn it into certainty: *Cabe la posibilidad de que Hernando tenga razón.* Say: There is no doubt Hernando is right.",
+      "answer": "No cabe duda de que Hernando tiene razón.",
+      "why": "With no doubt, the verb goes back to plain: *tiene*."
+    },
+    {
+      "prompt": "Type in Spanish: There is a chance they are wrong.",
+      "answer": "Cabe la posibilidad de que se equivoquen.",
+      "why": "*Se equivoquen* is the changed form after a possibility."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No cabe duda de que sea la mejor opción.",
+      "right": "No cabe duda de que es la mejor opción.",
+      "why": "Almost. When you are sure, the verb stays plain: *es*."
+    },
+    {
+      "wrong": "Cabe la posibilidad de que Tomás vende el café.",
+      "right": "Cabe la posibilidad de que Tomás venda el café.",
+      "why": "Almost. A mere chance needs the changed verb: *venda*."
+    },
+    {
+      "wrong": "Cabe duda de que es la mejor opción.",
+      "right": "No cabe duda de que es la mejor opción.",
+      "why": "Almost. \"No doubt\" needs the *no*: *no cabe duda*."
+    }
+  ],
+  "personal": "Say something that might happen to you this week with *Cabe la posibilidad de que*, and something you are sure of with *No cabe duda de que*."
+}

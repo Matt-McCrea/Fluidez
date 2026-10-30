@@ -1,0 +1,176 @@
+{
+  "node": "p:para-mi-que",
+  "hook": {
+    "line": "In Bogotá, half of all conversation is a hunch you can't prove, and *chismes* travel fast. Tomás needs a way to say \"I suspect\" without swearing to it.",
+    "es": "Para mí que aquí pasa algo raro.",
+    "en": "If you ask me, something odd is going on here."
+  },
+  "examples": [
+    {
+      "es": "Para mí que aquí pasa algo raro.",
+      "en": "If you ask me, something odd is going on here."
+    },
+    {
+      "es": "Para mí que no sabe nada.",
+      "en": "If you ask me, he doesn't know anything."
+    },
+    {
+      "es": "Para mí que Tomás se va a quedar.",
+      "en": "If you ask me, Tomás is going to stay."
+    },
+    {
+      "es": "Para mí que Hernando sabe más de lo que dice.",
+      "en": "If you ask me, Hernando knows more than he says."
+    },
+    {
+      "es": "Para mí que mañana no abren.",
+      "en": "If you ask me, they aren't opening tomorrow."
+    },
+    {
+      "es": "Para mí que Vale está cansada.",
+      "en": "If you ask me, Vale is tired."
+    }
+  ],
+  "rule": "*Para mí que* opens a hunch: something you suspect but can't prove. English says \"If you ask me\" or \"I bet\".\n\nWhat follows is a normal sentence with a normal verb: *no sabe*, *va a quedar*, *está*. No special mood, because you believe it.\n\nIt is casual, friends-at-the-café talk. *Para mí* on its own means \"in my view\"; add *que* when a full sentence follows.",
+  "smallPrint": "Teachers call *para mí que* an opinion marker. It takes the plain verb form (the indicative), since the speaker is fairly sure.",
+  "readAndPick": [
+    {
+      "es": "Para mí que mañana no abren.",
+      "options": [
+        "If you ask me, they are opening tomorrow.",
+        "If you ask me, they aren't opening tomorrow.",
+        "If you ask me, they didn't open yesterday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Para mí que Tomás se va a quedar.",
+      "options": [
+        "If you ask me, Tomás is going to leave.",
+        "If you ask me, Tomás is going to stay."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Para mí que Vale está cansada.",
+      "options": [
+        "If you ask me, Vale was tired.",
+        "If you ask me, Vale isn't tired.",
+        "If you ask me, Vale is tired."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Para mí que aquí pasa algo raro.",
+      "options": [
+        "If you ask me, something odd is going on here.",
+        "If you ask me, nothing odd is going on here.",
+        "If you ask me, something odd happened here."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Para mí que no sabe nada.",
+      "options": [
+        "If you ask me, he knows everything.",
+        "If you ask me, he doesn't know anything.",
+        "If you ask me, he asked nothing."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Para mí que ellos ya lo saben.",
+      "options": [
+        "If you ask me, they already know it.",
+        "If you ask me, I already know it.",
+        "If you ask me, they don't know it yet."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Para mí que ya se fue.",
+      "options": [
+        "If you ask me, he is about to leave.",
+        "If you ask me, he never came.",
+        "If you ask me, he already left."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Para mí que Hernando sabe más de lo que dice.",
+      "options": [
+        "If you ask me, Hernando says more than he knows.",
+        "If you ask me, Hernando knows more than he says.",
+        "If you ask me, Hernando knows less than he says."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *Para mí* or *Para mí que* and type the whole sentence: ___ no sabe nada.",
+      "answer": "Para mí que no sabe nada.",
+      "accept": [
+        "Para mí que no sabe nada"
+      ],
+      "why": "A full sentence after the hunch needs *que*."
+    },
+    {
+      "prompt": "Type in Spanish: If you ask me, Tomás is going to stay.",
+      "answer": "Para mí que Tomás se va a quedar.",
+      "accept": [
+        "Para mí que Tomás va a quedarse."
+      ],
+      "why": "Plain verb after *que*, just as in a normal sentence."
+    },
+    {
+      "prompt": "Type in Spanish: If you ask me, Vale is tired.",
+      "answer": "Para mí que Vale está cansada.",
+      "why": "*Está cansada* stays as it is; the hunch is just the opener."
+    },
+    {
+      "prompt": "Type in Spanish: If you ask me, the café isn't going to close.",
+      "answer": "Para mí que el café no va a cerrar.",
+      "why": "Put *no* before the verb inside the hunch."
+    },
+    {
+      "prompt": "Make it negative: *Para mí que mañana abren.* Say: If you ask me, they aren't opening tomorrow.",
+      "answer": "Para mí que mañana no abren.",
+      "accept": [
+        "Para mí que no abren mañana."
+      ],
+      "why": "*No* goes right before *abren*, and *Para mí que* stays in front."
+    },
+    {
+      "prompt": "Say it about *ellos*: If you ask me, they already know.",
+      "answer": "Para mí que ya lo saben.",
+      "accept": [
+        "Para mí que ellos ya lo saben."
+      ],
+      "why": "Only the verb changes to *saben*; the opener stays."
+    },
+    {
+      "prompt": "Type in Spanish: If you ask me, Hernando knows more than he says.",
+      "answer": "Para mí que Hernando sabe más de lo que dice.",
+      "why": "*Más de lo que dice* is the Spanish way to say \"more than he says\"."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Para yo que no sabe nada.",
+      "right": "Para mí que no sabe nada.",
+      "why": "Almost. After *para* Spanish uses *mí*, not *yo*."
+    },
+    {
+      "wrong": "Por mí que aquí pasa algo raro.",
+      "right": "Para mí que aquí pasa algo raro.",
+      "why": "Almost. The hunch opener is *para mí*; *por mí* means \"as far as I'm concerned\" in a different way."
+    },
+    {
+      "wrong": "Para mí que sea raro.",
+      "right": "Para mí que es raro.",
+      "why": "Almost. It is a hunch you believe, so the verb stays plain: *es*."
+    }
+  ],
+  "personal": "Say a hunch of your own about someone or something near you, starting with *Para mí que*."
+}

@@ -1,0 +1,174 @@
+{
+  "node": "p:cada-quien",
+  "hook": {
+    "line": "In a barrio where every neighbour has a different version of the rumour, you need a short way to say that nobody agrees and everybody is entitled to their own.",
+    "es": "Cada quien tiene su versión.",
+    "en": "Everyone has their own version."
+  },
+  "examples": [
+    {
+      "es": "Cada quien tiene su versión.",
+      "en": "Everyone has their own version."
+    },
+    {
+      "es": "Cada uno paga lo suyo.",
+      "en": "Everyone pays for their own."
+    },
+    {
+      "es": "Cada quien con su cuento.",
+      "en": "Everyone has their own story."
+    },
+    {
+      "es": "Cada una se fue a su casa.",
+      "en": "Each of the women went home."
+    },
+    {
+      "es": "Cada quien escoge su mesa.",
+      "en": "Everyone picks their own table."
+    },
+    {
+      "es": "Cada quien sabe lo que hace.",
+      "en": "Everyone knows what they're doing."
+    }
+  ],
+  "rule": "*Cada quien* means \"everyone, each one on their own\". It is the usual Latin American way; *cada uno* works the same.\n\nThe verb is singular, even though the idea is many people: *cada quien tiene*, not *tienen*. English cheats with \"their\"; Spanish keeps one person: *su*.\n\nFor a group of women, use *cada una*: *Cada una se fue a su casa*. *Lo suyo* means \"their own share\".",
+  "smallPrint": "Teachers call *cada* a distributive quantifier: it picks people out one at a time, so the verb agrees with one person.",
+  "readAndPick": [
+    {
+      "es": "Cada una se fue a su casa.",
+      "options": [
+        "Each of the men went home.",
+        "Each of the women went home.",
+        "Each of them went to my house."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cada uno paga lo suyo.",
+      "options": [
+        "Everyone pays for my share.",
+        "Nobody pays.",
+        "Everyone pays for their own."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Cada quien escoge su mesa.",
+      "options": [
+        "Everyone picks their own table.",
+        "Everyone picks the same table.",
+        "I pick your table."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Cada quien con su cuento.",
+      "options": [
+        "Everyone has the same story.",
+        "Everyone has their own story.",
+        "Nobody tells stories."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cada quien sabe lo que hace.",
+      "options": [
+        "I know what everyone does.",
+        "Nobody knows what to do.",
+        "Everyone knows what they're doing."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Cada quien paga su tinto.",
+      "options": [
+        "Everyone pays for their own tinto.",
+        "Everyone pays for my tinto.",
+        "Nobody drinks tinto."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Cada quien decide.",
+      "options": [
+        "Someone decides for everyone.",
+        "Everyone decides for themselves.",
+        "Nobody decides."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cada quien cuenta lo que vio.",
+      "options": [
+        "Everyone tells what I saw.",
+        "Someone saw everything.",
+        "Everyone tells what they saw."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *tiene* or *tienen* and type the whole sentence: *Cada quien ___ su versión.*",
+      "answer": "Cada quien tiene su versión.",
+      "why": "*Cada quien* is one person at a time, so the verb is singular."
+    },
+    {
+      "prompt": "Type in Spanish: Everyone pays for their own.",
+      "answer": "Cada uno paga lo suyo.",
+      "accept": [
+        "Cada quien paga lo suyo."
+      ],
+      "why": "*Lo suyo* is their own share."
+    },
+    {
+      "prompt": "Type in Spanish: Everyone picks their own table.",
+      "answer": "Cada quien escoge su mesa.",
+      "accept": [
+        "Cada uno escoge su mesa."
+      ],
+      "why": "Singular verb, singular *su*."
+    },
+    {
+      "prompt": "Type in Spanish: Each of the women ordered a juice.",
+      "answer": "Cada una pidió un jugo.",
+      "why": "For a group of women, *cada* takes *una*."
+    },
+    {
+      "prompt": "Type in Spanish: Everyone has their own story.",
+      "answer": "Cada quien con su cuento.",
+      "why": "The short version needs no verb at all."
+    },
+    {
+      "prompt": "Type in Spanish: Everyone decides for themselves.",
+      "answer": "Cada quien decide.",
+      "accept": [
+        "Cada uno decide."
+      ],
+      "why": "Singular verb: *decide*."
+    },
+    {
+      "prompt": "Change it for a group of women: *Cada uno se fue a su casa.* Say: Each of the women went home.",
+      "answer": "Cada una se fue a su casa.",
+      "why": "*Uno* becomes *una* when everyone in the group is a woman."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Cada quien tienen su versión.",
+      "right": "Cada quien tiene su versión.",
+      "why": "Almost. It feels plural in English, but *cada quien* takes a singular verb."
+    },
+    {
+      "wrong": "Todo quien tiene su versión.",
+      "right": "Cada quien tiene su versión.",
+      "why": "Almost. For \"each one on their own\", Spanish uses *cada*."
+    },
+    {
+      "wrong": "Cada uno se fue a su casa.",
+      "right": "Cada una se fue a su casa.",
+      "why": "Almost. When the group is all women, say *cada una*."
+    }
+  ],
+  "personal": "Say something true about your friends or family with *cada quien* or *cada uno*, like who pays, who chooses, or who decides."
+}
