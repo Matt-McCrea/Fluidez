@@ -1,0 +1,258 @@
+{
+  "id": "sc-u42-e",
+  "unit": "u42",
+  "title": "Simón y la cortesía",
+  "spare": true,
+  "brief": "You're Tomás in the café after closing. Don Hernando, courtly as always, is worried: Simón has been bossing the customers around. You are younger and he is older, so use usted with him, and help him teach the parrot some manners.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Hernando: Tomás, Simón le gritó \"dame pan\" a una clienta. Me da vergüenza.",
+      "npcEn": "Hernando: Tomás, Simón shouted \"give me bread\" at a customer. I'm embarrassed.",
+      "intent": "Tell him there is no need for him to worry, she laughed.",
+      "accept": [
+        "No hace falta que se preocupe, Hernando. Ella se rió.",
+        "Tranquilo, don Hernando, no hace falta que se preocupe. Se rió mucho.",
+        "No hace falta que se disculpe, don Hernando. Ella se rió."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bno hace falta que\\b",
+          "flags": "iu",
+          "label": "say: no hace falta que..."
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "p:no-hace-falta-que",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Hernando: Aun así, un loro educado no ordena. A ver, usted que sabe: ¿cómo le pediría un pan a una clienta sin que suene a orden?",
+      "npcEn": "Hernando: Even so, a polite parrot doesn't give orders. Let's see, you who know: how would you ask a customer for a piece of bread without it sounding like an order?",
+      "intent": "Show how: politely ask a customer (usted) for a piece of bread.",
+      "accept": [
+        "¿Me regala un pan, por favor?",
+        "¿Me podría dar un pan, por favor?",
+        "¿Será que me puede dar un pan?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask a question"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "g:register-ladder",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Hernando: Muy bien. ¿Y si el cliente fuera un juez? Hay que subir un escalón más.",
+      "npcEn": "Hernando: Very good. And if the customer were a judge? You have to go up one more rung.",
+      "intent": "Ask a judge for some bread in the most formal way, starting with 'Le agradecería que...'.",
+      "accept": [
+        "Le agradecería que me diera un poco de pan.",
+        "Le agradecería que me regalara un pedazo de pan.",
+        "Le agradecería que me pasara el pan, señor juez."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\ble agradecería que\\s+(?:(?:me|te|se|le|lo|la|nos)\\s+){0,2}\\p{L}*(ara|iera)\\b",
+          "flags": "iu",
+          "label": "start with: le agradecería que + imperfect subjunctive"
+        }
+      ],
+      "focus": "p:le-agradeceria-que",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Simón: ¡Le agradecería que me diera pan! ¡Le agradecería que me diera pan!\nHernando: ¡Lo aprendió! Pero, ¿dónde?",
+      "npcEn": "Simón: I would be grateful if you gave me bread! I would be grateful if you gave me bread!\nHernando: He learned it! But where?",
+      "intent": "Say, with a hedge at the end, that he learned it from listening to you two.",
+      "accept": [
+        "Lo aprendió escuchándonos, supongo.",
+        "Simón escucha todo y aprende rápido, imagino.",
+        "Lo oyó de nosotros, supongo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": ",\\s*(supongo|imagino)\\s*[.!]?$",
+          "flags": "iu",
+          "label": "end with the hedge: ..., supongo / ..., imagino"
+        }
+      ],
+      "focus": "p:supongo-imagino-tag",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Hernando: Así es. Qué raro, los loros aprenden primero lo malo. Pero venga, permítame invitarle un tinto.",
+      "npcEn": "Hernando: That's true. Funny, parrots learn the bad things first. But come, allow me to buy you a black coffee.",
+      "intent": "Say that people in general learn the bad things first too, then accept the coffee and thank him.",
+      "accept": [
+        "Uno también aprende primero lo malo, don Hernando. Con gusto, muchas gracias.",
+        "Uno aprende lo malo primero, es cierto. Acepto el tinto, muy amable.",
+        "Nos pasa a todos: uno aprende lo malo primero. Gracias, don Hernando."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\buno\\b",
+          "flags": "iu",
+          "label": "speak generally with: uno..."
+        },
+        {
+          "type": "containsAny",
+          "words": [
+            "gracias",
+            "amable",
+            "agradezco"
+          ],
+          "label": "thank him"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "p:generic-tu-uno",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-cuantas-cuotas",
+    "c:a-ver",
+    "c:asi-es",
+    "c:bien-y-tu",
+    "c:con-mucho-gusto",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hay-que",
+    "c:me-puede-ayudar",
+    "c:me-regala",
+    "c:muy-amable",
+    "c:perdon-disculpe",
+    "c:por-favor",
+    "c:supongo-que",
+    "c:tranquilo",
+    "g:commands-tu",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:concession-despite",
+    "g:conditional",
+    "g:direct-objects",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:le-doubling",
+    "g:lo-adjective",
+    "g:object-pronoun-position",
+    "g:passive-se",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:subj-past-triggers",
+    "g:subj-purpose-full",
+    "g:subj-relative",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "l:aceptar",
+    "l:agradecer",
+    "l:amable",
+    "l:aprender",
+    "l:bien",
+    "l:cliente",
+    "l:cómo",
+    "l:dar",
+    "l:darse",
+    "l:disculpar",
+    "l:dónde",
+    "l:educado",
+    "l:escalón",
+    "l:escuchar",
+    "l:falta",
+    "l:favor",
+    "l:gritar",
+    "l:gusto",
+    "l:hacer",
+    "l:imaginar",
+    "l:invitar",
+    "l:juez",
+    "l:loro",
+    "l:malo",
+    "l:orden",
+    "l:ordenar",
+    "l:oír",
+    "l:pan",
+    "l:pasar",
+    "l:pasarse",
+    "l:pedazo",
+    "l:pedir",
+    "l:permitir",
+    "l:poder",
+    "l:preocuparse",
+    "l:qué",
+    "l:raro",
+    "l:regalar",
+    "l:reír",
+    "l:rápido",
+    "l:saber",
+    "l:ser",
+    "l:señor",
+    "l:sonar",
+    "l:subir",
+    "l:suponer",
+    "l:tinto",
+    "l:tranquilo",
+    "l:venir",
+    "l:ver",
+    "l:vergüenza",
+    "p:container-de",
+    "p:dejame-que-te-ayude",
+    "p:don-dona-nombre",
+    "p:generic-tu-uno",
+    "p:le-agradeceria-que",
+    "p:me-da-miedo",
+    "p:me-da-verguenza",
+    "p:me-permito",
+    "p:me-te-nos-objects",
+    "p:me-trae",
+    "p:no-hace-falta-que",
+    "p:permitir-inf",
+    "p:poco-un-poco",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:request-ladder",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:supongo-imagino-tag",
+    "p:te-importaria",
+    "p:time-sequence-basic"
+  ]
+}

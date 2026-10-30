@@ -1,0 +1,238 @@
+{
+  "id": "sc-u42-a",
+  "unit": "u42",
+  "title": "Una llamada a la notaría",
+  "spare": false,
+  "brief": "You're Tomás, calling the notary's office about Rosa's house. The receptionist doesn't know you, and the notary is a very formal man, so use usted all the way through. Get put through, leave a message, and say thank you properly.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Marta: Notaría Cuarta, buenos días. ¿En qué le puedo ayudar?",
+      "npcEn": "Marta: Fourth Notary's Office, good morning. How can I help you?",
+      "intent": "Greet her and ask her, politely and formally, to put you through to Dr Barrera.",
+      "accept": [
+        "Buenos días. ¿Me comunica con el doctor Barrera, por favor?",
+        "Buenos días, señorita. ¿Me podría comunicar con el doctor Barrera?",
+        "Buenas. Necesito hablar con el doctor Barrera. ¿Me comunica con él, por favor?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcomunic\\p{L}*\\s+con\\b",
+          "flags": "iu",
+          "label": "ask: ¿me comunica con...?"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "p:me-comunica-con",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Marta: Permítame un momento. El doctor está en reunión. ¿Quiere dejarle un mensaje?",
+      "npcEn": "Marta: Just a moment, please. The doctor is in a meeting. Would you like to leave him a message?",
+      "intent": "Say yes, and ask her to have him call you back as soon as possible.",
+      "accept": [
+        "Sí, dígale que me llame lo antes posible.",
+        "Sí, por favor. Pídale que me llame lo antes posible.",
+        "Sí. Le agradecería que me llamara lo antes posible."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo antes posible\\b",
+          "flags": "iu",
+          "label": "include: lo antes posible"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "p:lo-antes-posible",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Marta: ¿Es por lo de la casa de doña Rosa?",
+      "npcEn": "Marta: Is it about the matter of Doña Rosa's house?",
+      "intent": "Say yes, it's about the house matter, and that Rosa was your grandmother.",
+      "accept": [
+        "Sí, es por lo de la casa. Doña Rosa era mi abuela.",
+        "Sí, señorita, es por lo de la casa de mi abuela Rosa.",
+        "Así es. Lo de la casa de doña Rosa, ella era mi abuela."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo de la\\b",
+          "flags": "iu",
+          "label": "refer to the matter with: lo de..."
+        },
+        {
+          "type": "containsWord",
+          "word": "abuela",
+          "label": "mention your grandmother"
+        }
+      ],
+      "focus": "p:lo-de-topic",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Marta: Lo que pasa es que el doctor viaja mañana, pero yo le paso su mensaje hoy mismo.",
+      "npcEn": "Marta: The thing is, the doctor is travelling tomorrow, but I'll pass your message on to him today.",
+      "intent": "Thank her warmly and formally for her help.",
+      "accept": [
+        "Se lo agradezco mucho, señorita.",
+        "Le agradezco mucho su ayuda.",
+        "Muchas gracias. Se lo agradezco de verdad."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(se lo|le)\\s+agradezco\\b",
+          "flags": "iu",
+          "label": "thank her with usted: se lo agradezco / le agradezco"
+        }
+      ],
+      "focus": "p:te-lo-agradezco",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Marta: Con mucho gusto. Que le vaya bien.",
+      "npcEn": "Marta: My pleasure. Take care.",
+      "intent": "Say goodbye and ask her to pass your greetings to the doctor (formal).",
+      "accept": [
+        "Hasta luego. Salúdelo de mi parte, por favor.",
+        "Adiós, y dele saludos al doctor de mi parte.",
+        "Que esté bien. Dele saludos de mi parte al doctor."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bde mi parte\\b",
+          "flags": "iu",
+          "label": "include: de mi parte"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "p:saludos-de-mi-parte",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:alo",
+    "c:asi-es",
+    "c:bien-y-tu",
+    "c:con-el-ella",
+    "c:con-mucho-gusto",
+    "c:en-que-le-puedo-servir",
+    "c:en-serio",
+    "c:era",
+    "c:es-que",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:le-dejo-razon",
+    "c:mucho-gusto",
+    "c:permitame-un-momento",
+    "c:por-favor",
+    "c:puedo",
+    "c:que-este-bien",
+    "c:que-te-mejores",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:conditional",
+    "g:diminutives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:reported-requests",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-influence",
+    "g:subj-past-triggers",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:abuela",
+    "l:agradecer",
+    "l:antes",
+    "l:ayuda",
+    "l:ayudar",
+    "l:bien",
+    "l:buena",
+    "l:bueno",
+    "l:casa",
+    "l:comunicar",
+    "l:decir",
+    "l:dejar",
+    "l:dele",
+    "l:doctor",
+    "l:día",
+    "l:estar",
+    "l:favor",
+    "l:gusto",
+    "l:hablar",
+    "l:hoy",
+    "l:ir",
+    "l:llamarse",
+    "l:mañana",
+    "l:mensaje",
+    "l:momento",
+    "l:necesitar",
+    "l:notar",
+    "l:parte",
+    "l:pasar",
+    "l:pedir",
+    "l:permitir",
+    "l:poder",
+    "l:posible",
+    "l:querer",
+    "l:qué",
+    "l:reunión",
+    "l:saludar",
+    "l:saludo",
+    "l:ser",
+    "l:señorito",
+    "l:verdad",
+    "l:viajar",
+    "p:le-agradeceria-que",
+    "p:lo-antes-posible",
+    "p:lo-de",
+    "p:lo-de-noun",
+    "p:lo-de-topic",
+    "p:lo-que-pasa-es-que",
+    "p:me-comunica-con",
+    "p:me-te-nos-objects",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:request-ladder",
+    "p:saludos-de-mi-parte",
+    "p:senor-don-article",
+    "p:te-importaria",
+    "p:te-lo-agradezco",
+    "p:time-sequence-basic"
+  ]
+}

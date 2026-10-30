@@ -1,0 +1,309 @@
+{
+  "id": "sc-u42-c",
+  "unit": "u42",
+  "title": "El carro de Yesid",
+  "spare": true,
+  "brief": "You're Tomás at Yesid's garage. He's an old friend, so use tú and keep it warm. You need to borrow his car on Saturday to move the espresso machine, and he is going to make you earn it.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Yesid: ¡Tomás! Cuánto tiempo sin verte por el taller. ¿Pasó algo?",
+      "npcEn": "Yesid: Tomás! It's been so long since I saw you at the garage. Did something happen?",
+      "intent": "Ask him, as a friend, whether he would do you a favour.",
+      "accept": [
+        "Yesid, ¿me harías un favor?",
+        "Hola, Yesid. Necesito pedirte algo. ¿Me harías un favor?",
+        "¿Me harías un favor, Yesid?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bme harías un favor\\b",
+          "flags": "iu",
+          "label": "ask: ¿me harías un favor?"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "usted"
+          ],
+          "label": "use tú with a friend, not usted"
+        }
+      ],
+      "focus": "p:me-harias-un-favor",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Yesid: Depende. ¿De qué se trata?",
+      "npcEn": "Yesid: Depends. What is it about?",
+      "intent": "Say that Vale told you to ask him for the car on Saturday.",
+      "accept": [
+        "Vale me dijo que te pidiera el carro el sábado.",
+        "Es que Vale me dijo que te pidiera el carro prestado para el sábado.",
+        "Vale me pidió que te pidiera el carro, Yesid. Es para el sábado."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bme (dijo|pidió|aconsejó) que\\s+(?:(?:me|te|se|le|lo|la|nos)\\s+){0,2}\\p{L}*(ara|iera)\\b",
+          "flags": "iu",
+          "label": "report it: Vale me dijo que + te pidiera..."
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "usted"
+          ],
+          "label": "use tú with a friend, not usted"
+        }
+      ],
+      "focus": "g:reported-commands-past",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Yesid: ¿Y qué vas a hacer con él?",
+      "npcEn": "Yesid: And what are you going to do with it?",
+      "intent": "Say you need it to move the espresso machine, and ask him to lend it to you.",
+      "accept": [
+        "Necesito llevar la máquina de espresso al café. ¿Me lo prestas?",
+        "Tengo que mover la máquina de café el sábado. ¿Me prestas el carro?",
+        "Es para mover la máquina. Necesito que me prestes el carro."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bprest(as|es|ar)\\b",
+          "flags": "iu",
+          "label": "ask to borrow it: ¿me lo prestas?"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "usted"
+          ],
+          "label": "use tú with a friend, not usted"
+        }
+      ],
+      "focus": "g:register-ladder",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Yesid: Ya veremos. Ese carro huele raro desde el martes, creo que es el combustible.",
+      "npcEn": "Yesid: We'll see. That car has smelled strange since Tuesday, I think it's the fuel.",
+      "intent": "Offer to help him look at it (Déjame que...).",
+      "accept": [
+        "Déjame que te ayude a revisarlo.",
+        "Déjame que te ayude con eso, Yesid.",
+        "Déjame que te ayude, no me cuesta nada."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bdéjame (que te ayude|ayudarte)\\b",
+          "flags": "iu",
+          "label": "offer help: déjame que te ayude"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "usted"
+          ],
+          "label": "use tú with a friend, not usted"
+        }
+      ],
+      "focus": "p:dejame-que-te-ayude",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Yesid: No hace falta, yo lo arreglo. Bueno, si no hay más remedio, te lo presto, pero que sea la última vez que me lo devuelves sin combustible.",
+      "npcEn": "Yesid: There's no need, I'll fix it. Well, if there's no other way, I'll lend it to you, but let it be the last time you give it back to me with no fuel.",
+      "intent": "Promise it's the last time, and say you don't know how to thank him.",
+      "accept": [
+        "Te lo prometo. No sé cómo agradecértelo.",
+        "Palabra. Es la última vez, y no sé cómo agradecértelo, de verdad.",
+        "Prometido, Yesid. No sé cómo agradecértelo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bagradecértelo\\b",
+          "flags": "iu",
+          "label": "say: no sé cómo agradecértelo"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "usted"
+          ],
+          "label": "use tú with a friend, not usted"
+        }
+      ],
+      "focus": "c:no-se-como-agradecertelo",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Yesid: Cuando quieras pasas por las llaves. Tú trae la máquina entera.",
+      "npcEn": "Yesid: Whenever you like, come by for the keys. You just bring the whole machine.",
+      "intent": "Say you'll pick up the keys tomorrow at nine, and wish for it all to go well (crucemos los dedos).",
+      "accept": [
+        "Mañana a las nueve paso por las llaves. Crucemos los dedos para que todo salga bien.",
+        "Paso por ellas mañana a las nueve. Crucemos los dedos para que la máquina llegue entera.",
+        "Mañana temprano paso. Y crucemos los dedos para que todo salga bien."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcrucemos los dedos\\b",
+          "flags": "iu",
+          "label": "include: crucemos los dedos"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "usted"
+          ],
+          "label": "use tú with a friend, not usted"
+        }
+      ],
+      "focus": "c:crucemos-los-dedos",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:con-el-ella",
+    "c:creo-que",
+    "c:crucemos-los-dedos",
+    "c:cuando-quieras",
+    "c:cuanto-tiempo",
+    "c:depende",
+    "c:en-serio",
+    "c:entonces-bueno",
+    "c:es-que",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:no-se",
+    "c:no-se-como-agradecertelo",
+    "c:que-sea-la-ultima-vez",
+    "c:si-no-hay-mas-remedio",
+    "c:te-lo-prometo",
+    "c:tengo",
+    "c:tengo-que",
+    "c:voy-vas",
+    "c:ya-veremos",
+    "g:adjective-agreement",
+    "g:commands-tu",
+    "g:commands-with-pronouns",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:hay-vs-esta",
+    "g:imperfect-subj",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:para-que",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-irregular-strong",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:reported-commands-past",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-influence",
+    "g:subj-past-triggers",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:agradecer",
+    "l:arreglar",
+    "l:ayudar",
+    "l:bien",
+    "l:bueno",
+    "l:café",
+    "l:carro",
+    "l:combustible",
+    "l:costar",
+    "l:creer",
+    "l:cruzar",
+    "l:cuánto",
+    "l:cómo",
+    "l:decir",
+    "l:dedo",
+    "l:dejar",
+    "l:depender",
+    "l:devolver",
+    "l:entero",
+    "l:falta",
+    "l:favor",
+    "l:hacer",
+    "l:ir",
+    "l:llave",
+    "l:llegar",
+    "l:llevar",
+    "l:martes",
+    "l:mañana",
+    "l:mover",
+    "l:máquina",
+    "l:necesitar",
+    "l:oler",
+    "l:palabra",
+    "l:pasar",
+    "l:paso",
+    "l:pedir",
+    "l:prestar",
+    "l:prometer",
+    "l:querer",
+    "l:qué",
+    "l:raro",
+    "l:remedio",
+    "l:revisar",
+    "l:saber",
+    "l:salir",
+    "l:ser",
+    "l:sábado",
+    "l:taller",
+    "l:temprano",
+    "l:tener",
+    "l:tiempo",
+    "l:traer",
+    "l:tratarse",
+    "l:ver",
+    "l:verdad",
+    "l:vez",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:costarle",
+    "p:days-el-lunes",
+    "p:dejame-que-te-ayude",
+    "p:demonstratives-basic",
+    "p:indefinites-basic",
+    "p:llevar-traer",
+    "p:me-haces-el-favor-de",
+    "p:me-harias-un-favor",
+    "p:me-te-nos-objects",
+    "p:me-trae",
+    "p:no-hace-falta-que",
+    "p:oler-a-saber-a",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:preguntar-pedir",
+    "p:prep-questions-basic",
+    "p:telling-time"
+  ]
+}

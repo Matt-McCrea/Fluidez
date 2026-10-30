@@ -1,0 +1,276 @@
+{
+  "id": "sc-u42-d",
+  "unit": "u42",
+  "title": "La grabadora de Altamira",
+  "spare": true,
+  "brief": "You're Tomás, sitting across from Ricardo Altamira's polished assistant, Camila. A recorder sits on the table and everything you say is on the record. Stay formal, stay polite, smile, and still get your point across.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Camila: Buenas tardes, señor Herrera. Le aviso que esta conversación queda grabada. ¿Le parece bien?",
+      "npcEn": "Camila: Good afternoon, Mr Herrera. I should let you know that this conversation is being recorded. Is that all right with you?",
+      "intent": "Say that is fine, and ask permission to make a comment before you begin.",
+      "accept": [
+        "Está bien. Antes de empezar, ¿me permite un comentario?",
+        "Por mí no hay problema. ¿Me permite un comentario primero?",
+        "Claro. ¿Me permite un comentario antes de empezar?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bme permit\\p{L}*\\s+(hacer\\s+)?un comentario\\b",
+          "flags": "iu",
+          "label": "ask: ¿me permite un comentario?"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "p:puedo-hacerte-una-pregunta",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Camila: Por supuesto, dígame.",
+      "npcEn": "Camila: Of course, go ahead.",
+      "intent": "Begin with 'to be honest' (formal) and say you don't find it appropriate to buy the whole block without talking to the neighbours.",
+      "accept": [
+        "Para serle sincero, no me parece apropiado comprar toda la cuadra sin hablar con los vecinos.",
+        "Para serle sincero, creo que no es apropiado comprar la cuadra sin hablar antes con los vecinos.",
+        "Para serle sincero, no es lo más apropiado comprar todo sin hablar con los vecinos."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bpara serle sincer[oa]\\b",
+          "flags": "iu",
+          "label": "start with: para serle sincero"
+        },
+        {
+          "type": "containsAny",
+          "words": [
+            "apropiado",
+            "apropiada",
+            "adecuado"
+          ],
+          "label": "use apropiado"
+        }
+      ],
+      "focus": "c:para-serte-sincero",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Camila: Entiendo su posición. El señor Altamira estaría encantado de recibirlo. ¿Le propongo una reunión con él?",
+      "npcEn": "Camila: I understand your position. Mr Altamira would be delighted to receive you. Shall I suggest a meeting with him?",
+      "intent": "Say yes, and ask her to arrange it soon, starting with 'Le agradecería que...'.",
+      "accept": [
+        "Me parece bien. Le agradecería que organizara la reunión lo antes posible.",
+        "Sí. Le agradecería que me consiguiera una cita con él esta semana.",
+        "Perfecto. Le agradecería que me recibiera con mis vecinos."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\ble agradecería que\\s+(?:(?:me|te|se|le|lo|la|nos)\\s+){0,2}\\p{L}*(ara|iera)\\b",
+          "flags": "iu",
+          "label": "start with: le agradecería que + imperfect subjunctive"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "p:le-agradeceria-que",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Camila: Entonces confirmo que usted viene solo y retira la demanda.",
+      "npcEn": "Camila: Then I'll confirm that you are coming alone and withdrawing the lawsuit.",
+      "intent": "Correct her politely: you did not say that, and you are not withdrawing the lawsuit.",
+      "accept": [
+        "Disculpe, pero yo no dije eso. No voy a retirar la demanda.",
+        "Perdone, pero no he dicho eso, y no pienso retirar la demanda.",
+        "No, señorita, yo no dije eso. La demanda no se retira."
+      ],
+      "require": [
+        {
+          "type": "negation",
+          "label": "correct her with a negative"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bno (he dicho|dije)\\b",
+          "flags": "iu",
+          "label": "say you didn't say it: no dije eso"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "g:register-ladder",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Camila: Tiene razón, me equivoqué. Entonces, el lunes a las diez, ¿le parece bien?",
+      "npcEn": "Camila: You are right, I made a mistake. So, Monday at ten, does that suit you?",
+      "intent": "Accept Monday at ten, thank her, and wish her the best (le deseo lo mejor).",
+      "accept": [
+        "Me parece bien, el lunes a las diez. Muchas gracias, y le deseo lo mejor.",
+        "Perfecto. Hasta el lunes, y le deseo lo mejor.",
+        "El lunes a las diez está bien. Le deseo lo mejor, Camila."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\ble deseo lo mejor\\b",
+          "flags": "iu",
+          "label": "include: le deseo lo mejor"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "c:le-deseo-lo-mejor",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:con-el-ella",
+    "c:creo-que",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hasta-el-lunes",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:le-deseo-lo-mejor",
+    "c:me-parece-bien",
+    "c:no-se",
+    "c:no-te-preocupes",
+    "c:perdon-disculpe",
+    "c:tienes",
+    "c:voy-a",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:conditional",
+    "g:diminutives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:perfecto-experience",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-spelling-stem",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-past-triggers",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:agradecer",
+    "l:antes",
+    "l:apropiado",
+    "l:avisar",
+    "l:bien",
+    "l:buena",
+    "l:cita",
+    "l:claro",
+    "l:comentario",
+    "l:comprar",
+    "l:confirmar",
+    "l:conseguir",
+    "l:conversación",
+    "l:creer",
+    "l:cuadra",
+    "l:decir",
+    "l:demanda",
+    "l:desear",
+    "l:disculpar",
+    "l:empezar",
+    "l:encantado",
+    "l:entender",
+    "l:equivocarse",
+    "l:estar",
+    "l:grabar",
+    "l:hablar",
+    "l:ir",
+    "l:lunes",
+    "l:mejor",
+    "l:organizar",
+    "l:parecer",
+    "l:pensar",
+    "l:perdonar",
+    "l:perfecto",
+    "l:permitir",
+    "l:posible",
+    "l:posición",
+    "l:problema",
+    "l:proponer",
+    "l:quedar",
+    "l:razón",
+    "l:recibir",
+    "l:retirar",
+    "l:retirarse",
+    "l:reunión",
+    "l:semana",
+    "l:ser",
+    "l:señor",
+    "l:señorito",
+    "l:sincero",
+    "l:suponer",
+    "l:tarde",
+    "l:tener",
+    "l:vecino",
+    "l:venir",
+    "p:apropiado-para",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:contento-con-de",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:equivocarse",
+    "p:es-adj-inf",
+    "p:intentar-conseguir",
+    "p:le-agradeceria-que",
+    "p:lo-antes-posible",
+    "p:me-parece-bien-que",
+    "p:me-te-nos-objects",
+    "p:nos-vemos-a-las",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:pensar-en",
+    "p:pensar-inf",
+    "p:possessives-basic",
+    "p:puedo-hacerte-una-pregunta",
+    "p:quedar-grabado",
+    "p:quedar-participio",
+    "p:refuse-es-que",
+    "p:senor-don-article",
+    "p:te-parece-bien-que",
+    "p:telling-time",
+    "p:tener-razon",
+    "p:time-sequence-basic"
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "id": "sc-u42-b",
+  "unit": "u42",
+  "title": "El informe del laboratorio",
+  "spare": false,
+  "brief": "You're Tomás at the counter of the court, speaking to the judge's clerk. Nothing here is casual: you need to be more formal than with the notary, soften every request, and stay friendly. Try to see the lab report, and leave with a plan.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Secretario: Buenas tardes. Dígame, ¿en qué puedo servirle?",
+      "npcEn": "Clerk: Good afternoon. Tell me, how can I help you?",
+      "intent": "Greet him and softly ask whether the lab report has arrived yet (start with 'quería' or '¿será que...?').",
+      "accept": [
+        "Buenas tardes. Quería preguntarle si ya llegó el informe del laboratorio.",
+        "Buenas tardes. Quería saber si el informe del laboratorio ya llegó.",
+        "Buenas tardes. ¿Será que ya llegó el informe del laboratorio?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(quería|será que)\\b",
+          "flags": "iu",
+          "label": "soften it: quería... / ¿será que...?"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "g:softening",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Secretario: Llegó esta mañana, sí. Pero está prohibido que alguien lo vea sin la firma del juez.",
+      "npcEn": "Clerk: It arrived this morning, yes. But it is forbidden for anyone to see it without the judge's signature.",
+      "intent": "Ask whether it would be possible to read it today, here at the counter.",
+      "accept": [
+        "Entiendo. ¿Sería posible leerlo hoy aquí mismo?",
+        "Entiendo. ¿Sería posible leerlo hoy, aquí en el mostrador?",
+        "Claro. ¿Sería posible verlo hoy, sin llevármelo?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsería posible\\b",
+          "flags": "iu",
+          "label": "ask with: ¿sería posible...?"
+        },
+        {
+          "type": "question",
+          "label": "ask a question"
+        }
+      ],
+      "focus": "p:seria-posible",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Secretario: Tendría que pedírselo al juez, y sale de la sala a las cuatro. ¿Puede esperar una hora?",
+      "npcEn": "Clerk: You would have to ask the judge, and he comes out of the courtroom at four. Can you wait an hour?",
+      "intent": "Say politely that you can't, you don't have time today, and give a reason.",
+      "accept": [
+        "Lo siento, hoy no me alcanza el tiempo para esperar tanto. Tengo que abrir el café.",
+        "Qué pena, pero hoy no me da tiempo de esperar una hora.",
+        "Ay, no me alcanza el tiempo hoy. Tengo que estar en el café a las cinco."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bno me (da|alcanza|dio)\\b.*\\btiempo\\b|\\bno me (alcanza|alcanzó) el tiempo\\b",
+          "flags": "iu",
+          "label": "say you don't have time: no me da tiempo / no me alcanza el tiempo"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "p:dar-tiempo",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Secretario: Entonces le anoto una cita con el juez para el jueves a las ocho.",
+      "npcEn": "Clerk: Then I'll put you down for an appointment with the judge on Thursday at eight.",
+      "intent": "Tell him that is very kind of him (formal) and that Thursday at eight works for you.",
+      "accept": [
+        "Muy amable de su parte. El jueves a las ocho me queda perfecto.",
+        "Qué amable de su parte. Ahí estaré el jueves.",
+        "Es muy amable de su parte. Jueves a las ocho, perfecto."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bamable de su parte\\b",
+          "flags": "iu",
+          "label": "say: amable de su parte"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "p:amable-de-su-parte",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Secretario: Una cosa más: está prohibido que entre con el celular a la sala.",
+      "npcEn": "Clerk: One more thing: it is forbidden to bring your mobile phone into the courtroom.",
+      "intent": "Tell him there's no need for him to remind you, you'll leave it at the café, and say see you Thursday.",
+      "accept": [
+        "No hace falta que me lo diga otra vez, señor. Lo dejo en el café. Hasta el jueves.",
+        "No hace falta que me lo repita. Lo dejaré en el café. Nos vemos el jueves.",
+        "Entendido. No hace falta que insista, lo dejo en el café. Hasta el jueves."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bno hace falta que\\b",
+          "flags": "iu",
+          "label": "say: no hace falta que... (no need for you to...)"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "x:no-hace-falta-vs-prohibido",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:chao-nos-vemos",
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:hola-buenos-dias",
+    "c:lo-siento-pero-no-puedo",
+    "c:me-regala",
+    "c:muy-amable",
+    "c:puedo",
+    "c:que-pena",
+    "c:tengo",
+    "c:tengo-que",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:conditional",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:imperfect-habitual",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-relative",
+    "g:subj-value",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:abrir",
+    "l:ahí",
+    "l:alcanzar",
+    "l:amable",
+    "l:anotar",
+    "l:aquí",
+    "l:buena",
+    "l:café",
+    "l:celular",
+    "l:cita",
+    "l:claro",
+    "l:cosa",
+    "l:dar",
+    "l:decir",
+    "l:dejar",
+    "l:entender",
+    "l:esperar",
+    "l:estar",
+    "l:falta",
+    "l:firma",
+    "l:hacer",
+    "l:hora",
+    "l:hoy",
+    "l:informe",
+    "l:insistir",
+    "l:jueves",
+    "l:juez",
+    "l:laboratorio",
+    "l:leer",
+    "l:llegar",
+    "l:llevar",
+    "l:mañana",
+    "l:mostrador",
+    "l:parte",
+    "l:pedir",
+    "l:pena",
+    "l:perfecto",
+    "l:poder",
+    "l:posible",
+    "l:preguntar",
+    "l:prohibir",
+    "l:quedar",
+    "l:querer",
+    "l:qué",
+    "l:repetir",
+    "l:saber",
+    "l:sala",
+    "l:salir",
+    "l:secretario",
+    "l:sentir",
+    "l:ser",
+    "l:servir",
+    "l:señor",
+    "l:tarde",
+    "l:tener",
+    "l:tiempo",
+    "l:ver",
+    "l:vez",
+    "p:amable-de-su-parte",
+    "p:aqui-ahi-alla",
+    "p:dar-tiempo",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:es-adj-inf",
+    "p:es-obligatorio",
+    "p:esta-prohibido",
+    "p:esta-prohibido-que",
+    "p:indefinites-basic",
+    "p:me-te-nos-objects",
+    "p:no-hace-falta-que",
+    "p:nos-vemos-a-las",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:prep-questions-basic",
+    "p:queria-cortesia",
+    "p:refuse-es-que",
+    "p:request-ladder",
+    "p:saber-conocer",
+    "p:seria-posible",
+    "p:talla-numero",
+    "p:telling-time",
+    "p:tendrias-que"
+  ]
+}

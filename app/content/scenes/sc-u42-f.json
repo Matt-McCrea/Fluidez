@@ -1,0 +1,250 @@
+{
+  "id": "sc-u42-f",
+  "unit": "u42",
+  "title": "Doña Gladys y el domicilio",
+  "spare": true,
+  "brief": "You're Tomás at the corner shop near the café. Doña Gladys has known the street for fifty years and expects respect, so use usted. Get through the door, arrange a delivery to the café, and make a friend.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Doña Gladys: Joven, la puerta dice HALE, no EMPUJE.",
+      "npcEn": "Doña Gladys: Young man, the door says PULL, not PUSH.",
+      "intent": "Apologise politely, address her as doña Gladys, and say you were in a hurry.",
+      "accept": [
+        "Tiene razón, doña Gladys. Perdone, venía con mucha prisa.",
+        "Perdone, doña Gladys. Venía con prisa y no leí el letrero.",
+        "Doña Gladys, tiene razón. Es que venía con prisa."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bdoña Gladys\\b",
+          "flags": "iu",
+          "label": "address her: doña Gladys"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "p:don-dona-nombre",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Doña Gladys: No hay problema. ¿En qué le puedo servir?",
+      "npcEn": "Doña Gladys: No problem. How can I help you?",
+      "intent": "Ask her politely whether she could send a delivery to the café tonight.",
+      "accept": [
+        "¿Será que me puede mandar un domicilio al café esta noche?",
+        "¿Me podría mandar un domicilio al café esta noche, por favor?",
+        "¿Sería posible pedir un domicilio para el café esta noche?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bdomicilio\\b",
+          "flags": "iu",
+          "label": "mention the delivery: un domicilio"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\b(podría|puede|será que|sería posible)\\b",
+          "flags": "iu",
+          "label": "soften it: ¿podría...? / ¿será que...?"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "c:pedir-un-domicilio",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Doña Gladys: Claro que sí. Entonces nos ponemos de acuerdo: usted me da la dirección y se la paso yo al muchacho.",
+      "npcEn": "Doña Gladys: Of course. So let's agree: you give me the address and I'll pass it on to the boy.",
+      "intent": "Give the address: it's the café, in La Candelaria.",
+      "accept": [
+        "Es el café La Esquina de Rosa, en La Candelaria.",
+        "Es La Esquina de Rosa, en La Candelaria, la que era de mi abuela.",
+        "Es el café de mi abuela, en La Candelaria."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "Candelaria",
+          "label": "give the place: La Candelaria"
+        }
+      ],
+      "focus": "p:nosotros-instructions",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Doña Gladys: Ay, usted es el nieto de doña Rosa. Su abuela siempre me pedía que le guardara el pan del domingo.",
+      "npcEn": "Doña Gladys: Oh, you're Doña Rosa's grandson. Your grandmother always asked me to save her the Sunday bread.",
+      "intent": "Say that your grandmother always told you to go and say hello to her.",
+      "accept": [
+        "Mi abuela siempre me decía que viniera a saludarla.",
+        "Rosa me decía que viniera a verla a usted.",
+        "Mi abuela me pedía que pasara a saludarla, y nunca vine."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bme (decía|pedía|aconsejaba) que\\s+(?:(?:me|te|se|le|lo|la|nos)\\s+){0,2}\\p{L}*(ara|iera)\\b",
+          "flags": "iu",
+          "label": "report it: mi abuela me decía que + viniera..."
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "g:reported-commands-past",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Doña Gladys: El muchacho llega a las seis. Le deseo lo mejor con el café, joven.",
+      "npcEn": "Doña Gladys: The boy arrives at six. I wish you the best with the café, young man.",
+      "intent": "Thank her and say you hope to see her again soon.",
+      "accept": [
+        "Muchas gracias, doña Gladys. Hasta pronto.",
+        "Se lo agradezco mucho. Ojalá la vea pronto.",
+        "Gracias por todo. Vengo pronto a saludarla."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "gracias|agradezco",
+          "flags": "iu",
+          "label": "thank her"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "p:te-lo-agradezco",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:claro-listo",
+    "c:en-que-le-puedo-servir",
+    "c:entonces-bueno",
+    "c:era",
+    "c:es-que",
+    "c:gracias-de-nada",
+    "c:hago-salgo-vengo",
+    "c:hay",
+    "c:le-deseo-lo-mejor",
+    "c:me-puede-ayudar",
+    "c:me-regala",
+    "c:no-te-preocupes",
+    "c:ojala",
+    "c:pedir-un-domicilio",
+    "c:por-favor",
+    "c:puedo",
+    "c:tienes",
+    "g:commands-usted",
+    "g:conditional",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:object-pronoun-position",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:relatives-prepositions",
+    "g:reported-commands-past",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-past-triggers",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:verbs-of-change",
+    "g:yo-irregular",
+    "l:abuela",
+    "l:acuerdo",
+    "l:agradecer",
+    "l:café",
+    "l:claro",
+    "l:dar",
+    "l:decir",
+    "l:desear",
+    "l:dirección",
+    "l:domicilio",
+    "l:domingo",
+    "l:favor",
+    "l:guardar",
+    "l:joven",
+    "l:leer",
+    "l:letrero",
+    "l:llegar",
+    "l:mandar",
+    "l:mejor",
+    "l:muchacho",
+    "l:nieto",
+    "l:noche",
+    "l:pan",
+    "l:pasar",
+    "l:paso",
+    "l:pedir",
+    "l:perdonar",
+    "l:poder",
+    "l:ponerse",
+    "l:posible",
+    "l:prisa",
+    "l:problema",
+    "l:pronto",
+    "l:puerta",
+    "l:qué",
+    "l:razón",
+    "l:saludar",
+    "l:ser",
+    "l:servir",
+    "l:siempre",
+    "l:tener",
+    "l:venir",
+    "l:ver",
+    "p:demonstratives-basic",
+    "p:don-dona-nombre",
+    "p:el-que-la-que",
+    "p:es-adj-inf",
+    "p:frequency-scale",
+    "p:gracias-por",
+    "p:me-te-nos-objects",
+    "p:nosotros-instructions",
+    "p:para-inf",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:request-ladder",
+    "p:senor-don-article",
+    "p:seria-posible",
+    "p:te-importaria",
+    "p:te-lo-agradezco",
+    "p:telling-time",
+    "p:tener-razon"
+  ]
+}
