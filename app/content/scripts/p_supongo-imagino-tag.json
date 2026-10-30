@@ -1,0 +1,184 @@
+{
+  "node": "p:supongo-imagino-tag",
+  "hook": {
+    "line": "Tomás has to give Vale some news he is not sure about, and he does not want to sound like he is promising. In Spanish you can say the thing first and hedge it at the very end.",
+    "es": "Terminamos el martes, supongo.",
+    "en": "We'll finish on Tuesday, I suppose."
+  },
+  "examples": [
+    {
+      "es": "Terminamos el martes, supongo.",
+      "en": "We'll finish on Tuesday, I suppose."
+    },
+    {
+      "es": "Ya sabes que hay reunión a las tres, imagino.",
+      "en": "You already know there's a meeting at three, I imagine."
+    },
+    {
+      "es": "Llegaron bien, supongo.",
+      "en": "They got there fine, I suppose."
+    },
+    {
+      "es": "Vale viene mañana, supongo.",
+      "en": "Vale is coming tomorrow, I suppose."
+    },
+    {
+      "es": "El taller abre a las ocho, imagino.",
+      "en": "The workshop opens at eight, I imagine."
+    },
+    {
+      "es": "Tomás ya habló con Hernando, supongo.",
+      "en": "Tomás has already spoken with Hernando, I suppose."
+    }
+  ],
+  "rule": "Say the sentence as a plain statement, then add *supongo* or *imagino* after a comma at the end.\n\nIn English you would put \"I suppose\" up front (\"I suppose they got there fine\"), or at the end, as here. Spanish also has *Supongo que…* at the start, but the trailing tag is lighter: you have already said it, and now you take a half step back.\n\n*Supongo* hedges what you guess. *Imagino* often adds \"and you know this too\": *Ya sabes que hay reunión, imagino.*\n\nNothing else changes. The verb before the tag stays an ordinary statement, with no *yo* and no extra *que*.",
+  "smallPrint": "Teachers call this a trailing parenthetical or hedge: a verb of thinking used as a tag to soften what came before.",
+  "readAndPick": [
+    {
+      "es": "Terminamos el martes, supongo.",
+      "options": [
+        "We'll finish on Tuesday, for sure.",
+        "We'll finish on Tuesday, I suppose.",
+        "Let's finish on Tuesday, please."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Llegaron bien, supongo.",
+      "options": [
+        "I got there fine, I suppose.",
+        "They got there fine, I suppose.",
+        "They got there fine, I know."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ya sabes que hay reunión a las tres, imagino.",
+      "options": [
+        "Do you know there's a meeting at three?",
+        "I know there's a meeting at three, you suppose.",
+        "You already know there's a meeting at three, I imagine."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Terminamos el martes.",
+      "options": [
+        "We'll finish on Tuesday.",
+        "We'll finish on Tuesday, I suppose.",
+        "Shall we finish on Tuesday?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tienes hambre, imagino.",
+      "options": [
+        "I'm hungry, I imagine.",
+        "You're hungry, I imagine.",
+        "Are you hungry?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hernando no está en casa, supongo.",
+      "options": [
+        "Hernando isn't home, I suppose.",
+        "Hernando isn't home, for sure.",
+        "Hernando, are you home?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El taller abre a las ocho, imagino.",
+      "options": [
+        "The workshop opens at eight, I imagine.",
+        "The workshop opened at eight, I know.",
+        "The workshop opens at eight, you imagine."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale viene mañana, supongo.",
+      "options": [
+        "Vale came yesterday, I suppose.",
+        "Vale is coming tomorrow, I'm sure.",
+        "Vale is coming tomorrow, I suppose."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *supongo* or *supones*: Llegaron bien, ___. Type the whole sentence.",
+      "answer": "Llegaron bien, supongo.",
+      "accept": [],
+      "why": "You are the one guessing, so the tag is *supongo*, the \"I\" form."
+    },
+    {
+      "prompt": "Type in Spanish: Vale is coming tomorrow, I suppose.",
+      "answer": "Vale viene mañana, supongo.",
+      "accept": [
+        "Vale viene mañana, imagino."
+      ],
+      "why": "State it, then tag it with *supongo* after a comma."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: You already know there's a meeting at three, I imagine.",
+      "answer": "Ya sabes que hay reunión a las tres, imagino.",
+      "accept": [
+        "Ya sabes que hay reunión a las tres, supongo."
+      ],
+      "why": "*Imagino* adds \"and you know this too\"."
+    },
+    {
+      "prompt": "Add a hedge with *supongo* to this statement: *El taller abre a las ocho.* Type the whole sentence.",
+      "answer": "El taller abre a las ocho, supongo.",
+      "accept": [
+        "El taller abre a las ocho, imagino."
+      ],
+      "why": "The tag goes at the end, after a comma."
+    },
+    {
+      "prompt": "Type in Spanish: They arrived late, I suppose.",
+      "answer": "Llegaron tarde, supongo.",
+      "accept": [
+        "Llegaron tarde, imagino."
+      ],
+      "why": "The statement comes first and the tag closes it."
+    },
+    {
+      "prompt": "Make it negative and keep the tag: *Terminamos el martes, supongo.*",
+      "answer": "No terminamos el martes, supongo.",
+      "accept": [
+        "No terminamos el martes, imagino."
+      ],
+      "why": "*No* goes in front of the verb; the tag stays at the end."
+    },
+    {
+      "prompt": "Type in Spanish: Tomás is at home, I imagine.",
+      "answer": "Tomás está en casa, imagino.",
+      "accept": [
+        "Tomás está en casa, supongo."
+      ],
+      "why": "The tag does not change the sentence before it."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Supongo, terminamos el martes.",
+      "right": "Terminamos el martes, supongo.",
+      "why": "Almost. To soften after the fact, the tag comes last, after a comma."
+    },
+    {
+      "wrong": "Terminamos el martes, yo supongo.",
+      "right": "Terminamos el martes, supongo.",
+      "why": "Almost. The ending already says \"I\", so *yo* only makes it sound like you are arguing."
+    },
+    {
+      "wrong": "Llegaron bien, supones.",
+      "right": "Llegaron bien, supongo.",
+      "why": "Almost. The guess is yours, so it is *supongo*, not the *tú* form."
+    }
+  ],
+  "personal": "Think of something you are fairly sure about but do not want to promise, such as when you will be home. Say it and hedge it with *supongo* or *imagino*."
+}

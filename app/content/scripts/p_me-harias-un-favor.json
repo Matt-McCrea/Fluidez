@@ -1,0 +1,172 @@
+{
+  "node": "p:me-harias-un-favor",
+  "hook": {
+    "line": "Tomás needs help moving café furniture, and he does not want to order Vale around. There are two gentle ways: ask outright, or just say what the problem is and see who steps in.",
+    "es": "¿Me harías un favor?",
+    "en": "Would you do me a favour?"
+  },
+  "examples": [
+    {
+      "es": "¿Me harías un favor?",
+      "en": "Would you do me a favour?"
+    },
+    {
+      "es": "Necesitaría que me cuidaras a los niños el sábado.",
+      "en": "I'd need you to look after the kids on Saturday."
+    },
+    {
+      "es": "Necesito que alguien me revise este texto.",
+      "en": "I need someone to check this text for me."
+    },
+    {
+      "es": "Este mueble pesa muchísimo.",
+      "en": "This piece of furniture is really heavy."
+    },
+    {
+      "es": "Necesitaría que me prestaras tu carro mañana.",
+      "en": "I'd need you to lend me your car tomorrow."
+    },
+    {
+      "es": "Necesito que alguien me ayude con las cajas.",
+      "en": "I need someone to help me with the boxes."
+    }
+  ],
+  "rule": "Three ways to ask for help without ordering.\n\nOpen: *¿Me harías un favor?* The conditional *harías* gives the other person room to say no.\n\nSoft: *Necesitaría que* + the *-ra* form: *Necesitaría que me cuidaras a los niños.* Plain *Necesito que* + present (*cuides*) sounds like a demand.\n\nHint: name no one. *Necesito que alguien me ayude* or just *Este mueble pesa muchísimo.* Whoever feels responsible volunteers. If nobody does, you were never refused. The risk is that it goes unanswered.",
+  "smallPrint": "Teachers call the hint a covert or indirect request: you state the need and leave the speech act to the listener.",
+  "readAndPick": [
+    {
+      "es": "¿Me harías un favor?",
+      "options": [
+        "Did you do me a favour?",
+        "Would you do me a favour?",
+        "Do I owe you a favour?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Me harían un favor?",
+      "options": [
+        "Would they do me a favour?",
+        "Would you do me a favour?",
+        "Would you all do me a favour?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Necesitaría que me cuidaras a los niños el sábado.",
+      "options": [
+        "I need you to look after the kids on Saturday.",
+        "I'd need you to look after the kids on Saturday.",
+        "I looked after the kids on Saturday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Necesito que alguien me revise este texto.",
+      "options": [
+        "Someone checked this text for me.",
+        "I'd need you to check this text for me.",
+        "I need someone to check this text for me."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Necesitaría que me prestaras tu carro mañana.",
+      "options": [
+        "I need you to lend me your car tomorrow.",
+        "I'd need you to lend me your car tomorrow.",
+        "I lent you my car tomorrow."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Necesito que alguien me ayude con las cajas.",
+      "options": [
+        "I need someone to help me with the boxes.",
+        "Someone is helping me with the boxes.",
+        "I'd need you to help me with the boxes."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Este mueble pesa muchísimo.",
+      "options": [
+        "This piece of furniture is really heavy, and I'd like some help.",
+        "I'd like you to buy this piece of furniture.",
+        "This piece of furniture is really light."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Necesito que alguien cierre la puerta.",
+      "options": [
+        "I closed the door.",
+        "Someone closed the door.",
+        "I need someone to close the door."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *harías* or *haces*: ¿Me ___ un favor? Type the whole sentence, as a polite request.",
+      "answer": "¿Me harías un favor?",
+      "accept": [],
+      "why": "The conditional *harías* is the polite, \"would you\" form."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Would you do me a favour?",
+      "answer": "¿Me harías un favor?",
+      "accept": [],
+      "why": "*Hacer un favor* needs *un* and the conditional."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: I'd need you to look after the kids on Saturday.",
+      "answer": "Necesitaría que me cuidaras a los niños el sábado.",
+      "accept": [],
+      "why": "*Necesitaría que* + the *-ra* form is the soft version."
+    },
+    {
+      "prompt": "Type in Spanish, as a hint: I need someone to check this text for me.",
+      "answer": "Necesito que alguien me revise este texto.",
+      "accept": [],
+      "why": "*Alguien* names no one in particular, so no one is ordered."
+    },
+    {
+      "prompt": "Soften it: *Necesito que me prestes tu carro.*",
+      "answer": "Necesitaría que me prestaras tu carro.",
+      "accept": [],
+      "why": "The conditional plus the *-ra* form turns a demand into a request."
+    },
+    {
+      "prompt": "Ask two friends (you all): *¿Me harías un favor?*",
+      "answer": "¿Me harían un favor?",
+      "accept": [],
+      "why": "Two people: *harían*."
+    },
+    {
+      "prompt": "Type in Spanish, as a hint: I need someone to help me with the boxes.",
+      "answer": "Necesito que alguien me ayude con las cajas.",
+      "accept": [],
+      "why": "With *alguien*, the next verb is in the subjunctive: *ayude*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Me harías favor?",
+      "right": "¿Me harías un favor?",
+      "why": "Almost. The phrase is *hacer un favor*, and Spanish needs the *un*."
+    },
+    {
+      "wrong": "Necesitaría que me cuidas a los niños.",
+      "right": "Necesitaría que me cuidaras a los niños.",
+      "why": "Almost. After *necesitaría que* use the *-ra* form, not the plain present."
+    },
+    {
+      "wrong": "Necesito que alguien me ayuda con las cajas.",
+      "right": "Necesito que alguien me ayude con las cajas.",
+      "why": "Almost. *Necesito que* needs the subjunctive: *ayude*, not *ayuda*."
+    }
+  ],
+  "personal": "Think of a small favour you could ask a neighbour or a coworker. Write it as *¿Me harías un favor?* or as a hint that names no one."
+}

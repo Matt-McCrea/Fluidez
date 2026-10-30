@@ -1,0 +1,174 @@
+{
+  "node": "p:le-agradeceria-que",
+  "hook": {
+    "line": "Tomás has to ask a notary for something, and the notary is somebody he must address as *usted*. The politest way to ask is to say you would be grateful.",
+    "es": "Le agradecería que me enviara la factura antes del viernes.",
+    "en": "I would be grateful if you sent me the invoice before Friday."
+  },
+  "examples": [
+    {
+      "es": "Le agradecería que me enviara la factura antes del viernes.",
+      "en": "I would be grateful if you sent me the invoice before Friday."
+    },
+    {
+      "es": "Le agradecería que no volviera a llegar tarde.",
+      "en": "I would be grateful if you didn't arrive late again."
+    },
+    {
+      "es": "Le agradecería que me respondiera antes del lunes.",
+      "en": "I would be grateful if you replied before Monday."
+    },
+    {
+      "es": "Le agradecería que firmara aquí.",
+      "en": "I would be grateful if you signed here."
+    },
+    {
+      "es": "Le agradecería que me explicara la situación.",
+      "en": "I would be grateful if you explained the situation to me."
+    },
+    {
+      "es": "Les agradecería que esperaran un momento.",
+      "en": "I would be grateful if you all waited a moment."
+    }
+  ],
+  "rule": "*Le agradecería que* + the *-ra* form of the verb: \"I would be grateful if you...\"\n\nTo get the *-ra* form, take the *ellos* past form and swap the ending: *enviaron* becomes *enviara*; *respondieron* becomes *respondiera*; *firmaron* becomes *firmara*.\n\n*Le* means *usted* (one person). For several people it is *Les*, and the verb follows: *Les agradecería que esperaran*.\n\nThe English \"if\" turns into *que*.\n\nThis is formal, and it can be a disguised order from a boss: *Le agradecería que no volviera a llegar tarde* is a warning. With a friend it sounds stiff or sarcastic.",
+  "smallPrint": "Teachers call the *-ra* form the imperfect subjunctive. After a conditional like *agradecería*, it is the verb that follows *que*.",
+  "readAndPick": [
+    {
+      "es": "Le agradecería que me enviara la factura antes del viernes.",
+      "options": [
+        "I would be grateful if you sent me the invoice before Friday.",
+        "I would be grateful if I sent you the invoice before Friday.",
+        "I was grateful that you sent me the invoice before Friday."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Le agradecería que no volviera a llegar tarde.",
+      "options": [
+        "I would be grateful if you arrived late again.",
+        "I would be grateful if I didn't arrive late again.",
+        "I would be grateful if you didn't arrive late again."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Le agradecería que me respondiera antes del lunes.",
+      "options": [
+        "I would be grateful if you replied before Monday.",
+        "I would be grateful if they replied before Monday.",
+        "I would be grateful if I replied before Monday."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Les agradecería que esperaran un momento.",
+      "options": [
+        "I would be grateful if he waited a moment.",
+        "I would be grateful if you all waited a moment.",
+        "I would be grateful if you waited a moment."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Le agradecería que firmara aquí.",
+      "options": [
+        "I would be grateful if you signed here.",
+        "I would be grateful if I signed here.",
+        "I am signing here, and I'm grateful."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Le agradecería que me explicara la situación.",
+      "options": [
+        "I would be grateful if I explained the process.",
+        "I would be grateful if you explained the situation to me.",
+        "I would be grateful if you had explained the process."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Le agradecería que no llamara después de las nueve.",
+      "options": [
+        "I would be grateful if you didn't call after nine.",
+        "I would be grateful if you called after nine.",
+        "I would be grateful if I didn't call after nine."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Les agradeceríamos que llegaran temprano.",
+      "options": [
+        "We would be grateful if I arrived early.",
+        "We would be grateful if you all arrived early.",
+        "We would be grateful if we arrived early."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *enviara* or *enviaba*: Le agradecería que me ___ la factura antes del viernes. Type the whole sentence.",
+      "answer": "Le agradecería que me enviara la factura antes del viernes.",
+      "accept": [],
+      "why": "After *agradecería que* the verb takes the *-ra* form, not the \"used to\" form."
+    },
+    {
+      "prompt": "Type in Spanish, to a boss or an official: I would be grateful if you didn't arrive late again.",
+      "answer": "Le agradecería que no volviera a llegar tarde.",
+      "accept": [],
+      "why": "*No* goes before the *-ra* verb: *no volviera*."
+    },
+    {
+      "prompt": "Type in Spanish, formal: I would be grateful if you replied to me before Monday.",
+      "answer": "Le agradecería que me respondiera antes del lunes.",
+      "accept": [],
+      "why": "*Respondieron* becomes *respondiera*."
+    },
+    {
+      "prompt": "Turn the order into the polite request: *Firme aquí.*",
+      "answer": "Le agradecería que firmara aquí.",
+      "accept": [],
+      "why": "*Le agradecería que* + *-ra* is the polite way to ask."
+    },
+    {
+      "prompt": "Make it to several people (you all): *Le agradecería que esperara un momento.*",
+      "answer": "Les agradecería que esperaran un momento.",
+      "accept": [
+        "Les agradeceríamos que esperaran un momento."
+      ],
+      "why": "Several people: *Les*, and the verb is plural, *esperaran*."
+    },
+    {
+      "prompt": "Type in Spanish, formal: I would be grateful if you explained the situation to me.",
+      "answer": "Le agradecería que me explicara la situación.",
+      "accept": [],
+      "why": "*Me* goes before the *-ra* verb, in front of *explicara*."
+    },
+    {
+      "prompt": "Type in Spanish, formal: I would be grateful if you didn't call after nine.",
+      "answer": "Le agradecería que no llamara después de las nueve.",
+      "accept": [],
+      "why": "*Llamaron* becomes *llamara*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Le agradecería que me envía la factura.",
+      "right": "Le agradecería que me enviara la factura.",
+      "why": "Almost. After *agradecería que* use the *-ra* form, not the plain present."
+    },
+    {
+      "wrong": "Te agradecería que me enviaras la factura, Vale.",
+      "right": "Le agradecería que me enviara la factura.",
+      "why": "Almost. With a friend this sounds stiff or ironic; save it for someone you call *usted*."
+    },
+    {
+      "wrong": "Le agradecería si me enviara la factura.",
+      "right": "Le agradecería que me enviara la factura.",
+      "why": "Almost. English \"if\" is *que* here, not *si*."
+    }
+  ],
+  "personal": "Think of a formal request you might make to a landlord, a boss or an official. Write it as *Le agradecería que…*"
+}

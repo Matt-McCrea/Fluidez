@@ -1,0 +1,182 @@
+{
+  "node": "p:generic-tu-uno",
+  "hook": {
+    "line": "Tomás has just waited three hours at a clinic, and moaning \"I waited three hours\" feels too personal. Spanish speakers turn it into something that happens to anyone.",
+    "es": "En esa clínica llegas y te toca esperar tres horas.",
+    "en": "At that clinic you show up and have to wait three hours."
+  },
+  "examples": [
+    {
+      "es": "En esa clínica llegas y te toca esperar tres horas.",
+      "en": "At that clinic you show up and have to wait three hours."
+    },
+    {
+      "es": "Uno hace lo que puede.",
+      "en": "You do what you can."
+    },
+    {
+      "es": "Cuando uno está cansado, todo le molesta.",
+      "en": "When you're tired, everything bothers you."
+    },
+    {
+      "es": "Trabajas todo el día y al final no te alcanza la plata.",
+      "en": "You work all day and in the end the money isn't enough."
+    },
+    {
+      "es": "Aquí uno aprende rápido.",
+      "en": "Here you learn fast."
+    },
+    {
+      "es": "Sales a las seis y te toca esperar el bus una hora.",
+      "en": "You leave at six and have to wait an hour for the bus."
+    }
+  ],
+  "rule": "When you talk about your own experience, you can turn it into something that happens to anyone. Spanish has two ways.\n\n*Tú* with no one in particular: *Llegas y te toca esperar.* English does the same with \"you\".\n\n*Uno* + the *él* form: *Uno hace lo que puede.* Think \"one\", but it is common and relaxed in Spanish. With *uno* the pronoun is *le*, not *te*: *todo le molesta*.\n\n*Te toca* + infinitive means \"it falls to you to\": the thing you have to do, usually a nuisance. It is very natural in Latin America.\n\nThe speaker is often really talking about themselves. The \"anyone\" protects them from sounding like they are complaining.",
+  "smallPrint": "Teachers call this generic or impersonal *tú* and the impersonal use of *uno*.",
+  "readAndPick": [
+    {
+      "es": "Uno hace lo que puede.",
+      "options": [
+        "He did what he could.",
+        "You do what you can.",
+        "I will do what I want."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cuando uno está cansado, todo le molesta.",
+      "options": [
+        "When I was tired, everything bothered me.",
+        "When he is tired, nothing bothers him.",
+        "When you're tired, everything bothers you."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Trabajas todo el día y al final no te alcanza la plata.",
+      "options": [
+        "You work all day and in the end the money isn't enough.",
+        "You worked all day and ended up with lots of money.",
+        "You work all day and in the end you have lots of money."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Aquí uno aprende rápido.",
+      "options": [
+        "Here I learned a lot yesterday.",
+        "Here you learn fast.",
+        "Here nobody learns anything."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Sales a las seis y te toca esperar el bus una hora.",
+      "options": [
+        "You left at six and the bus came at once.",
+        "You leave at six and have to wait an hour for the bus.",
+        "You will leave at six and take the bus for an hour."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Uno nunca sabe qué va a pasar.",
+      "options": [
+        "I never knew what was going to happen.",
+        "Someone knows what will happen.",
+        "You never know what's going to happen."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Llegas a la notaría y primero te toca sacar un turno.",
+      "options": [
+        "You get to the notary's office and first you have to take a number.",
+        "You got to the notary's office and first took a number.",
+        "You get to the notary's office and they give you a number."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Cuando uno vive solo, aprende a cocinar.",
+      "options": [
+        "When we lived alone, we learned to cook.",
+        "When you live alone, you learn to cook.",
+        "When you lived alone, you had to learn to cook."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *te toca* or *te tocan*: Llegas a la notaría y ___ esperar mucho. Type the whole sentence.",
+      "answer": "Llegas a la notaría y te toca esperar mucho.",
+      "accept": [],
+      "why": "*Toca* goes with an infinitive (one thing to do), so it stays singular."
+    },
+    {
+      "prompt": "Type in Spanish (anyone, in general): You do what you can.",
+      "answer": "Uno hace lo que puede.",
+      "accept": [
+        "Haces lo que puedes."
+      ],
+      "why": "*Uno* + the *él* form says \"anyone\"."
+    },
+    {
+      "prompt": "Type in Spanish (anyone, in general): You work all day and the money isn't enough.",
+      "answer": "Trabajas todo el día y no te alcanza la plata.",
+      "accept": [
+        "Trabajas todo el día y al final no te alcanza la plata."
+      ],
+      "why": "*Tú* with no one in particular, and *no te alcanza* for \"isn't enough for you\"."
+    },
+    {
+      "prompt": "Say it about anyone, with *uno*: *Cuando estoy cansado, todo me molesta.*",
+      "answer": "Cuando uno está cansado, todo le molesta.",
+      "accept": [
+        "Cuando uno está cansada, todo le molesta."
+      ],
+      "why": "With *uno* the verb is *está* and the pronoun is *le*."
+    },
+    {
+      "prompt": "Say it with generic *tú*: *Aquí uno aprende rápido.*",
+      "answer": "Aquí aprendes rápido.",
+      "accept": [
+        "Aquí tú aprendes rápido."
+      ],
+      "why": "*Uno* takes the *él* form; generic *tú* takes the *tú* form."
+    },
+    {
+      "prompt": "Type in Spanish (anyone, in general): At that clinic you show up and have to wait three hours.",
+      "answer": "En esa clínica llegas y te toca esperar tres horas.",
+      "accept": [],
+      "why": "*Te toca* + infinitive is the nuisance that falls to you."
+    },
+    {
+      "prompt": "Type in Spanish (anyone, in general): Here you never know.",
+      "answer": "Aquí uno nunca sabe.",
+      "accept": [
+        "Aquí nunca sabes."
+      ],
+      "why": "*Uno* takes the *él* form, *sabe*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Uno hace lo que puedo.",
+      "right": "Uno hace lo que puede.",
+      "why": "Almost. *Uno* is a third-person word, so the verb is *puede*, not the *yo* form."
+    },
+    {
+      "wrong": "Cuando uno está cansado, todo te molesta.",
+      "right": "Cuando uno está cansado, todo le molesta.",
+      "why": "Almost. *Te* belongs with *tú*; with *uno* the matching pronoun is *le*."
+    },
+    {
+      "wrong": "Llegas y tienes que esperar tres horas.",
+      "right": "Llegas y te toca esperar tres horas.",
+      "why": "Understood, but *te toca* is how people really complain: the waiting simply falls to you."
+    }
+  ],
+  "personal": "Choose something that annoys you about your city. Say it as if it happens to everyone, with *uno* or generic *tú*."
+}

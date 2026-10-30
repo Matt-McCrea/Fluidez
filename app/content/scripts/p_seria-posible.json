@@ -1,0 +1,172 @@
+{
+  "node": "p:seria-posible",
+  "hook": {
+    "line": "Tomás is on the phone with an office and cannot see the person. Two phrases ask for something formal without sounding like a command: it asks whether it is possible, not whether he has permission.",
+    "es": "¿Sería posible cambiar la cita para el jueves?",
+    "en": "Would it be possible to move the appointment to Thursday?"
+  },
+  "examples": [
+    {
+      "es": "¿Sería posible cambiar la cita para el jueves?",
+      "en": "Would it be possible to move the appointment to Thursday?"
+    },
+    {
+      "es": "¿Sería posible que me enviara el documento hoy?",
+      "en": "Would it be possible for you to send me the document today?"
+    },
+    {
+      "es": "¿Podría confirmarme si la reserva sigue en pie?",
+      "en": "Could you confirm whether the booking still stands?"
+    },
+    {
+      "es": "¿Podría confirmarme la hora de llegada?",
+      "en": "Could you confirm the arrival time for me?"
+    },
+    {
+      "es": "Necesitaría confirmar si hay parqueadero en el hotel.",
+      "en": "I'd need to confirm whether there's parking at the hotel."
+    },
+    {
+      "es": "¿Sería posible reservar una mesa para cuatro?",
+      "en": "Would it be possible to book a table for four?"
+    }
+  ],
+  "rule": "*¿Sería posible…?* asks if something can be done, not whether you have permission.\n\nIf you do it, add an infinitive: *¿Sería posible cambiar la cita?*\n\nIf the other person does it, use *que* + the *-ra* form: *¿Sería posible que me enviara el documento?*\n\nTo ask someone to confirm something, use *¿Podría confirmarme…?* + a noun (*la hora*) or *si* (\"whether\"): *¿Podría confirmarme si la reserva sigue en pie?* If you are the one confirming, *Necesitaría confirmar si…*\n\nAll are formal, for offices, hotels and phone calls.",
+  "smallPrint": "Teachers call these formal conditional requests. The conditional marks distance, the same way \"would\" and \"could\" do in English.",
+  "readAndPick": [
+    {
+      "es": "¿Sería posible cambiar la cita para el jueves?",
+      "options": [
+        "Would it be possible to move the appointment to Thursday?",
+        "Was it possible to move the appointment to Thursday?",
+        "Would it be possible for you to move the appointment to Thursday?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Sería posible que me enviara el documento hoy?",
+      "options": [
+        "Would it be possible for me to send you the document today?",
+        "Would it be possible to send the document today?",
+        "Would it be possible for you to send me the document today?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Podría confirmarme la hora de llegada?",
+      "options": [
+        "Could I confirm the arrival time?",
+        "Could you confirm the arrival time for me?",
+        "I confirmed the arrival time for you."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Podría confirmarme si la reserva sigue en pie?",
+      "options": [
+        "Could you confirm that the booking still stands?",
+        "Could you confirm whether the booking still stands?",
+        "Could you make a booking for me?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Necesitaría confirmar si hay parqueadero en el hotel.",
+      "options": [
+        "I'd need to confirm whether there's parking at the hotel.",
+        "I need you to confirm there's parking at the hotel.",
+        "I confirmed that there's parking at the hotel."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Sería posible reservar una mesa para cuatro?",
+      "options": [
+        "Is a table for four booked?",
+        "Would it be possible for you to book a table for four?",
+        "Would it be possible to book a table for four?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Sería posible que nos cambiara la mesa?",
+      "options": [
+        "Would it be possible for you to change our table?",
+        "Would it be possible for us to change the table?",
+        "Would it be possible to change the table?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Podría confirmar mi reserva?",
+      "options": [
+        "Could you confirm my booking?",
+        "Could I confirm my booking?",
+        "I confirmed my booking."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *cambiar* or *cambiara*: ¿Sería posible ___ la cita para el jueves? Type the whole sentence.",
+      "answer": "¿Sería posible cambiar la cita para el jueves?",
+      "accept": [],
+      "why": "Nobody new does it, so the infinitive is enough."
+    },
+    {
+      "prompt": "Choose *enviar* or *enviara*: ¿Sería posible que me ___ el documento hoy? Type the whole sentence.",
+      "answer": "¿Sería posible que me enviara el documento hoy?",
+      "accept": [],
+      "why": "After *que* another person acts, so the verb needs the *-ra* form."
+    },
+    {
+      "prompt": "Type in Spanish, on the phone: Would it be possible to move the appointment to Thursday?",
+      "answer": "¿Sería posible cambiar la cita para el jueves?",
+      "accept": [],
+      "why": "*Sería posible* + infinitive for something you want done."
+    },
+    {
+      "prompt": "Type in Spanish, to a hotel clerk (formal): Could you confirm the arrival time for me?",
+      "answer": "¿Podría confirmarme la hora de llegada?",
+      "accept": [],
+      "why": "*Podría confirmarme* + noun is the formal way to ask."
+    },
+    {
+      "prompt": "Ask whether the other person could do it for you: *¿Sería posible enviar el documento hoy?*",
+      "answer": "¿Sería posible que me enviara el documento hoy?",
+      "accept": [],
+      "why": "Now someone else sends it, so *que* + the *-ra* form."
+    },
+    {
+      "prompt": "Type in Spanish: I'd need to confirm whether there's parking at the hotel.",
+      "answer": "Necesitaría confirmar si hay parqueadero en el hotel.",
+      "accept": [],
+      "why": "*Necesitaría confirmar* when you are the one checking."
+    },
+    {
+      "prompt": "Type in Spanish, formal: Could you confirm whether the booking still stands?",
+      "answer": "¿Podría confirmarme si la reserva sigue en pie?",
+      "accept": [],
+      "why": "\"Whether\" is *si*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Sería posible que cambiar la cita?",
+      "right": "¿Sería posible cambiar la cita para el jueves?",
+      "why": "Almost. With *que* you need a verb with an ending; without a new person, just use the infinitive."
+    },
+    {
+      "wrong": "¿Es posible que me enviara el documento hoy?",
+      "right": "¿Sería posible que me enviara el documento hoy?",
+      "why": "Almost. *Sería* is what makes it polite; *es* with the *-ra* form clashes."
+    },
+    {
+      "wrong": "¿Podría confirmarme que la reserva sigue en pie?",
+      "right": "¿Podría confirmarme si la reserva sigue en pie?",
+      "why": "Almost. When you are unsure, \"whether\" is *si*, not *que*."
+    }
+  ],
+  "personal": "Think of a call you might make to a hotel, a doctor's office or a bank. Write one formal request with *¿Sería posible…?* or *¿Podría confirmarme…?*"
+}

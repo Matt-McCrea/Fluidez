@@ -1,0 +1,172 @@
+{
+  "node": "p:nosotros-instructions",
+  "hook": {
+    "line": "A nurse, a teacher and a cook all do the same thing: they tell you what to do while sounding as if they are doing it with you. It softens the order.",
+    "es": "Ahora nos sentamos y respiramos despacio.",
+    "en": "Now we sit down and breathe slowly."
+  },
+  "examples": [
+    {
+      "es": "Prendemos la máquina y esperamos unos minutos.",
+      "en": "We switch the machine on and wait a few minutes."
+    },
+    {
+      "es": "¿Nos tomamos la pastilla?",
+      "en": "Shall we take our pill?"
+    },
+    {
+      "es": "Ahora nos sentamos y respiramos despacio.",
+      "en": "Now we sit down and breathe slowly."
+    },
+    {
+      "es": "Primero lavamos las papas y después las cortamos.",
+      "en": "First we wash the potatoes and then we cut them."
+    },
+    {
+      "es": "¿Nos lavamos las manos antes de comer?",
+      "en": "Shall we wash our hands before eating?"
+    },
+    {
+      "es": "Luego agregamos sal y mezclamos bien.",
+      "en": "Then we add salt and mix well."
+    }
+  ],
+  "rule": "To give an instruction gently, use *nosotros* (\"we\") even though only the other person will act.\n\nA nurse says *¿Nos tomamos la pastilla?* and means \"you take it\". A parent says *Ahora nos sentamos*. A recipe says *Agregamos sal*.\n\nThe forms are the ordinary *we* forms of the present: *prendemos*, *esperamos*, *respiramos*. Things we do to ourselves keep *nos*: *nos sentamos*, *nos lavamos las manos*.\n\nIt works as a statement (\"First we wash...\") or a gentle question (\"Shall we...?\"). It is caring or neutral, never harsh. English does it too, with a nurse's \"How are we feeling today?\"",
+  "smallPrint": "Teachers call this the inclusive or \"nurse's\" *we*: a first person plural used for an instruction.",
+  "readAndPick": [
+    {
+      "es": "Prendemos la máquina y esperamos unos minutos.",
+      "options": [
+        "They switch the machine on and wait a few minutes.",
+        "We switch the machine on and wait a few minutes.",
+        "Switch the machine on and wait a few minutes."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Nos tomamos la pastilla?",
+      "options": [
+        "Did you take the pill?",
+        "Do they take the pill?",
+        "Shall we take our pill?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Ahora nos sentamos y respiramos despacio.",
+      "options": [
+        "Now I sit down and breathe slowly.",
+        "Now we sit down and breathe slowly.",
+        "Now they sit down and breathe slowly."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Primero lavamos las papas y después las cortamos.",
+      "options": [
+        "First we wash the potatoes and then we cut them.",
+        "First I wash the potatoes and then I cut them.",
+        "First they wash the potatoes and then they cut them."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Nos lavamos las manos antes de comer?",
+      "options": [
+        "Does he wash his hands before eating?",
+        "Do you wash your hands before eating?",
+        "Shall we wash our hands before eating?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Ahora nos acostamos y cerramos los ojos.",
+      "options": [
+        "Now we lie down and close our eyes.",
+        "Now I lie down and close my eyes.",
+        "Now they lie down and close their eyes."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Luego agregamos sal y mezclamos bien.",
+      "options": [
+        "Then I add salt and mix well.",
+        "Then he adds salt and mixes well.",
+        "Then we add salt and mix well."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Entonces nos relajamos un poco.",
+      "options": [
+        "Then they relax a bit.",
+        "Then we relax a bit.",
+        "Then I relax a bit."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *tomamos* or *toman*: ¿Nos ___ la pastilla? Type the whole sentence.",
+      "answer": "¿Nos tomamos la pastilla?",
+      "accept": [],
+      "why": "The nurse says \"we\", so the verb ends in *-mos*."
+    },
+    {
+      "prompt": "Type in Spanish, as a nurse to a patient: Now we sit down and breathe slowly.",
+      "answer": "Ahora nos sentamos y respiramos despacio.",
+      "accept": [],
+      "why": "*Sentarse* keeps *nos*; *respiramos* is the plain *we* form."
+    },
+    {
+      "prompt": "Type in Spanish, as a cook explaining: First we wash the potatoes.",
+      "answer": "Primero lavamos las papas.",
+      "accept": [],
+      "why": "The *we* form of *lavar* is *lavamos*, with no *nos* because nobody is washing themselves."
+    },
+    {
+      "prompt": "Turn it into a gentle question: *Nos lavamos las manos.*",
+      "answer": "¿Nos lavamos las manos?",
+      "accept": [],
+      "why": "Same words, now with question marks and a rising voice."
+    },
+    {
+      "prompt": "Type in Spanish, as a technician: We switch the machine on and wait.",
+      "answer": "Prendemos la máquina y esperamos.",
+      "accept": [],
+      "why": "Two *we* forms joined by *y*."
+    },
+    {
+      "prompt": "Say it about just you: *Nos sentamos y respiramos despacio.*",
+      "answer": "Me siento y respiro despacio.",
+      "accept": [],
+      "why": "When only you act, it is *me* and the *yo* forms."
+    },
+    {
+      "prompt": "Type in Spanish, as a teacher to a child: Now we close our eyes.",
+      "answer": "Ahora cerramos los ojos.",
+      "accept": [],
+      "why": "The teacher says \"we\" even though only the child closes their eyes."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Ahora sentamos y respiramos despacio.",
+      "right": "Ahora nos sentamos y respiramos despacio.",
+      "why": "Almost. \"Sit down\" is *sentarse*, so the *we* form needs *nos*."
+    },
+    {
+      "wrong": "Ahora nosotros nos sentamos y respiramos despacio.",
+      "right": "Ahora nos sentamos y respiramos despacio.",
+      "why": "Almost. The ending already says \"we\"; adding *nosotros* makes it sound like a contrast."
+    },
+    {
+      "wrong": "Nos prendemos la máquina y nos esperamos unos minutos.",
+      "right": "Prendemos la máquina y esperamos unos minutos.",
+      "why": "Almost. *Nos* is only for things we do to ourselves, not for a machine or for waiting."
+    }
+  ],
+  "personal": "Imagine you are explaining a simple routine to a child or a patient, such as making tea. Give two steps using the *we* form."
+}
