@@ -2,7 +2,7 @@
   "id": "ch050",
   "unit": "u18",
   "title": "Asiento trece",
-  "text": "«Hoteles Altamira. Su destino en Medellín».\nLa publicidad estaba en todas las estaciones del metro.\nVale: Olvídate de esa publicidad. Mira: Medellín tiene metro, un tren de verdad. Bogotá todavía no.\nEn el tren, Vale le dio el asiento de la ventanilla.\nEn la terminal, el empleado de la ventanilla estaba muy cansado.\nEmpleado: Su maleta desapareció, señor.\nTomás: Las maletas no desaparecen. Alguien se las lleva.\nEmpleado: Con mi salario, yo no busco maletas.\nPero Tomás tenía una habilidad: en Toronto, su trabajo era encontrar problemas.\nTomás: ¿Tiene la lista de pasajeros? ¿Alguien se bajó en el peaje?\nEmpleado: A ver... En el peaje no. Pero después el bus hizo una escala en Puerto Triunfo. El pasajero del asiento catorce, con destino a Puerto Triunfo, se bajó allí.\nTomás: ¿Un bus hace escalas? ¿Y hay un puerto en Puerto Triunfo?\nVale: No hay puerto. Hay un río y muchos hipopótamos.\nTomás: Yo iba en el asiento trece. ¿Y si ese señor tiene una maleta igual a la mía?\nEl empleado llamó al pasajero.\nPasajero: ¿Aló? Sí, tengo una maleta negra... ¡Uy, qué pena con usted, señor! Esta no es mía. Tiene un suéter rosado y un paquete de café. ¡Qué olor!\nPasajero: Tranquilo. Mañana tomo el bus para Medellín y llevo la maleta a la terminal. Se lo prometo.\nEmpleado: Y yo la llevo al hostal. También se lo prometo.\nTomás: Tráigamela antes de las cinco, por favor.\nEmpleado: Usted tiene habilidad, señor. ¿No quiere trabajar aquí? El salario es malo, pero hay tinto todo el día.\nVale: No, gracias. Él ya tiene un café y una empleada muy brava.\nDe regreso, en el metro, sonó el celular de Vale. Era su mamá.\nVale: Tomás, mi mamá quiere hablar contigo mañana, antes de la fiesta. Ella y tú, sin mí.",
+  "text": "«Hoteles Altamira. Su destino en Medellín».\nLa publicidad estaba en todas las estaciones del metro.\nVale: Olvídate de esa publicidad. Mira: Medellín tiene metro, un tren de verdad. Bogotá todavía no.\nEn la terminal de buses, el empleado estaba muy cansado.\nEmpleado: Su maleta desapareció, señor.\nTomás: Las maletas no desaparecen. Alguien se las lleva.\nEmpleado: Con mi salario, yo no busco maletas.\nPero Tomás tenía una habilidad: en Toronto, su trabajo era encontrar problemas.\nTomás: ¿Tiene la lista de pasajeros? ¿Alguien se bajó antes de Medellín?\nEmpleado: A ver... Sí. El pasajero del asiento catorce se bajó en Puerto Triunfo.\nTomás: ¿Puerto Triunfo? ¿Allá hay un puerto?\nVale: No hay puerto. Hay un río y muchos hipopótamos.\nTomás: Yo iba en el asiento trece. ¿Y si ese señor tiene una maleta igual a la mía?\nEl empleado llamó al pasajero.\nPasajero: ¿Aló? Sí, tengo una maleta negra... ¡Uy, qué pena! Esta no es mía: tiene un suéter rosado y un paquete de café. Mañana tomo el bus para Medellín y la llevo a la terminal. Se lo prometo.\nEmpleado: Y yo la llevo al hostal. También se lo prometo.\nTomás: Tráigamela antes de las cinco, por favor.\nEmpleado: Usted tiene habilidad, señor. ¿No quiere trabajar aquí? El salario es malo, pero hay tinto todo el día.\nVale: No, gracias. Él ya tiene un café y una empleada muy brava.\nDe regreso, en el metro, sonó el celular de Vale. Era su mamá.\nVale: Tomás, mi mamá quiere hablar contigo mañana, antes de la fiesta. Ella y tú, sin mí.",
   "gloss": [
     {
       "es": "Su destino en Medellín",
@@ -25,16 +25,8 @@
       "en": "his job was finding problems (in software)"
     },
     {
-      "es": "¿Alguien se bajó en el peaje?",
-      "en": "Did anyone get off at the toll booth?"
-    },
-    {
       "es": "Puerto Triunfo",
-      "en": "Puerto Triunfo, a town on the Magdalena river"
-    },
-    {
-      "es": "con destino a Puerto Triunfo",
-      "en": "heading for Puerto Triunfo"
+      "en": "Puerto Triunfo (puerto = port), a town on the Magdalena river"
     },
     {
       "es": "hipopótamos",
@@ -45,12 +37,8 @@
       "en": "a suitcase just like mine"
     },
     {
-      "es": "qué pena con usted",
+      "es": "qué pena",
       "en": "I'm so sorry"
-    },
-    {
-      "es": "¡Qué olor!",
-      "en": "What a smell!"
     },
     {
       "es": "una empleada muy brava",
@@ -119,7 +107,7 @@
       "options": [
         "Thirteen",
         "Fourteen",
-        "The window seat",
+        "Seat one",
         "Seat five"
       ],
       "answer": 0
@@ -159,7 +147,6 @@
     "c:tengo",
     "c:tienes",
     "c:todavia-no",
-    "c:tranquilo",
     "g:adjective-agreement",
     "g:commands-tu",
     "g:commands-usted",
@@ -172,14 +159,11 @@
     "g:hay-vs-esta",
     "g:imperfect-habitual",
     "g:imperfect-states",
-    "g:indirect-objects",
     "g:prep-pronouns",
     "g:present-ar",
     "g:present-er-ir",
     "g:preterite-ar",
     "g:preterite-er-ir",
-    "g:preterite-irregular-strong",
-    "g:preterite-ser-ir-hacer",
     "g:reflexive-routine",
     "g:ser-identity",
     "g:si-present",
@@ -192,7 +176,6 @@
     "p:container-de",
     "p:de-owner",
     "p:demonstratives-basic",
-    "p:exclamations-basic",
     "p:indefinites-basic",
     "p:llevar-traer",
     "p:me-te-nos-objects",
@@ -202,11 +185,10 @@
     "p:quantifiers-basic",
     "p:request-ladder",
     "p:subirse-bajarse",
-    "p:time-sequence-basic",
     "p:todos-los-dias"
   ],
   "lexemes": [
-    "l:allí",
+    "l:allá",
     "l:antes",
     "l:aquí",
     "l:asiento",
@@ -217,21 +199,17 @@
     "l:café",
     "l:cansado",
     "l:celular",
-    "l:dar",
     "l:desaparecer",
-    "l:después",
     "l:destino",
     "l:día",
     "l:empleado",
     "l:encontrar",
-    "l:escala",
     "l:estación",
     "l:estar",
     "l:favor",
     "l:fiesta",
     "l:habilidad",
     "l:hablar",
-    "l:hacer",
     "l:hostal",
     "l:hotel",
     "l:igual",
@@ -247,11 +225,9 @@
     "l:metro",
     "l:mirar",
     "l:negro",
-    "l:olor",
     "l:olvidar",
     "l:paquete",
     "l:pasajero",
-    "l:peaje",
     "l:pena",
     "l:problema",
     "l:prometer",
@@ -274,9 +250,7 @@
     "l:trabajar",
     "l:trabajo",
     "l:traer",
-    "l:tranquilo",
     "l:tren",
-    "l:ventanilla",
     "l:ver",
     "l:verdad"
   ]
