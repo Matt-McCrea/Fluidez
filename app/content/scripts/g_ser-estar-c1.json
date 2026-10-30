@@ -1,0 +1,179 @@
+{
+  "node": "g:ser-estar-c1",
+  "hook": {
+    "line": "Don Hernando has just told Tomás about his nephew, and Tomás almost says the wrong thing. Spanish has small phrases that make *ser* and *estar* say much more.",
+    "es": "Ahora está de mesero en Cartagena.",
+    "en": "He's working as a waiter in Cartagena now."
+  },
+  "examples": [
+    {
+      "es": "Ahora está de mesero en Cartagena.",
+      "en": "He's working as a waiter in Cartagena now."
+    },
+    {
+      "es": "La mesa es de madera.",
+      "en": "The table is made of wood."
+    },
+    {
+      "es": "Está para llover.",
+      "en": "It's about to rain."
+    },
+    {
+      "es": "Eso está por verse.",
+      "en": "That remains to be seen."
+    },
+    {
+      "es": "No estoy para bromas hoy.",
+      "en": "I'm not in the mood for jokes today."
+    },
+    {
+      "es": "La cuenta está por pagar.",
+      "en": "The bill is still to be paid."
+    }
+  ],
+  "rule": "You know *ser* for what something is and *estar* for how or where. Four small frames sharpen them:\n\n*estar de* + job: working as something for now. *Está de mesero* means he's waiting tables at the moment. *Es mesero* means that is his profession.\n\n*ser de* + material: what it is made of. *El anillo es de oro.*\n\n*estar para* + noun or verb: about to happen, or in the mood for it. *Está para llover. No estoy para bromas.*\n\n*estar por* + verb: still to be done. *Eso está por verse.*",
+  "smallPrint": "Teachers call *estar de* a temporary role, and *estar para* and *estar por* the \"purpose\" and \"pending\" uses of those prepositions.",
+  "readAndPick": [
+    {
+      "es": "Ahora está de mesero en Cartagena.",
+      "options": [
+        "He was born a waiter in Cartagena.",
+        "He's working as a waiter in Cartagena for now.",
+        "He's the waiter from Cartagena."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La mesa es de madera.",
+      "options": [
+        "The table is made of wood.",
+        "The table is working as wood.",
+        "The table is out of wood."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Está para llover.",
+      "options": [
+        "It rained a lot.",
+        "It is raining all week.",
+        "It's about to rain."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Eso está por verse.",
+      "options": [
+        "That is about to be seen.",
+        "That remains to be seen.",
+        "That cannot be seen."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No estoy para bromas hoy.",
+      "options": [
+        "I'm not joking today.",
+        "I don't tell jokes for money.",
+        "I'm not in the mood for jokes today."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La cuenta está por pagar.",
+      "options": [
+        "The bill is still to be paid.",
+        "The bill was already paid.",
+        "The bill is for paying them."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El anillo es de oro.",
+      "options": [
+        "The ring is working as gold.",
+        "The ring is made of gold.",
+        "The ring is gold-coloured today."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mi hermano está de profesor en Medellín.",
+      "options": [
+        "My brother is a teacher from Medellín.",
+        "My brother is the teacher in Medellín.",
+        "My brother is teaching in Medellín for now."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *es* or *está*: La mesa ___ de madera. Type the whole sentence.",
+      "answer": "La mesa es de madera.",
+      "accept": [],
+      "why": "What something is made of is part of what it is, so *ser*."
+    },
+    {
+      "prompt": "Choose *es* or *está*: Ahora ___ de mesero en Cartagena. (he) Type the whole sentence.",
+      "answer": "Ahora está de mesero en Cartagena.",
+      "accept": [],
+      "why": "A job held for now takes *estar de*."
+    },
+    {
+      "prompt": "Choose *para* or *por*: Eso está ___ verse. Type the whole sentence.",
+      "answer": "Eso está por verse.",
+      "accept": [],
+      "why": "Something still pending uses *estar por*."
+    },
+    {
+      "prompt": "Type in Spanish: It's about to rain.",
+      "answer": "Está para llover.",
+      "accept": [],
+      "why": "*Estar para* says something is about to happen."
+    },
+    {
+      "prompt": "Type in Spanish: I'm not in the mood for jokes today.",
+      "answer": "No estoy para bromas hoy.",
+      "accept": [],
+      "why": "*Estar para* also says what you are in the mood for."
+    },
+    {
+      "prompt": "Say it about Vale: *Ahora está de mesero en Cartagena.*",
+      "answer": "Ahora Vale está de mesera en Cartagena.",
+      "accept": [
+        "Ahora ella está de mesera en Cartagena."
+      ],
+      "why": "The job word agrees with a woman, so *mesera*."
+    },
+    {
+      "prompt": "Make it negative: *La mesa es de madera.*",
+      "answer": "La mesa no es de madera.",
+      "accept": [],
+      "why": "*No* goes right before the verb."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Ahora está mesero en Cartagena.",
+      "right": "Ahora está de mesero en Cartagena.",
+      "why": "Almost. Between *estar* and the job you need *de*."
+    },
+    {
+      "wrong": "La mesa está de madera.",
+      "right": "La mesa es de madera.",
+      "why": "Almost. What something is made of uses *ser*."
+    },
+    {
+      "wrong": "Eso está para verse.",
+      "right": "Eso está por verse.",
+      "why": "Almost. *Por* is for what is still pending; *para* is for what is about to happen."
+    },
+    {
+      "wrong": "No estoy por bromas hoy.",
+      "right": "No estoy para bromas hoy.",
+      "why": "Almost. Being in the mood for something takes *para*."
+    }
+  ],
+  "personal": "Say something true about you: a temporary job, a mood, or what something you own is made of: *Estoy de…*, *No estoy para…*, *Mi reloj es de…*"
+}

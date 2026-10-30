@@ -1,0 +1,176 @@
+{
+  "node": "p:a-la-altura-de",
+  "hook": {
+    "line": "Ask anyone in Bogotá where to get off the bus and you will hear streets and numbers, never a stop name. Tomás needs the phrase that goes with them.",
+    "es": "Me bajo a la altura de la calle 72.",
+    "en": "I get off by 72nd Street."
+  },
+  "examples": [
+    {
+      "es": "Me bajo a la altura de la calle 72.",
+      "en": "I get off by 72nd Street."
+    },
+    {
+      "es": "El accidente fue a la altura de la iglesia.",
+      "en": "The accident happened level with the church."
+    },
+    {
+      "es": "El café queda a la altura de la carrera séptima.",
+      "en": "The café is level with Carrera Séptima."
+    },
+    {
+      "es": "Siga derecho y gire a la altura del semáforo.",
+      "en": "Keep going straight and turn at the traffic light (to a stranger, formal)."
+    },
+    {
+      "es": "¿Dónde te bajas?\nA la altura de la calle 26.",
+      "en": "Where do you get off? (to a friend)\nAround 26th Street."
+    },
+    {
+      "es": "Mi casa queda a la altura de la iglesia.",
+      "en": "My house is level with the church."
+    }
+  ],
+  "rule": "To say where along a street something is, use *a la altura de* + a street, a number or a landmark. It means \"around\", \"level with\", \"at about that point\". It is looser than *en*: *en la calle 72* names the street, *a la altura de la calle 72* says you are near that point on the road.\n\nIt is not about height here, so never translate *altura* as \"height\".\n\n*De + el* becomes *del*: *a la altura del semáforo*. Feminine places keep *de la*.",
+  "smallPrint": "Teachers call this a prepositional phrase of position. Figuratively, *estar a la altura* means \"to rise to the occasion\", which you will meet later.",
+  "readAndPick": [
+    {
+      "es": "Me bajo a la altura de la calle 72.",
+      "options": [
+        "I get on around 72nd Street.",
+        "I get off around 72nd Street.",
+        "I get off 72 streets away."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El accidente fue a la altura de la iglesia.",
+      "options": [
+        "The accident happened level with the church.",
+        "The accident will be inside the church.",
+        "The accident was as tall as the church."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El café queda a la altura de la carrera séptima.",
+      "options": [
+        "The café closed on Carrera Séptima.",
+        "The café is on the top floor of Carrera Séptima.",
+        "The café is level with Carrera Séptima."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Siga derecho y gire a la altura del semáforo.",
+      "options": [
+        "Keep straight and turn before the traffic light.",
+        "Keep straight and turn level with the traffic light.",
+        "Keep straight and turn after the traffic light."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mi casa queda a la altura de la iglesia.",
+      "options": [
+        "My house is as tall as the church.",
+        "My house is inside the church.",
+        "My house is level with the church along the street."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Vale se baja a la altura de la calle 26.",
+      "options": [
+        "Vale gets off around 26th Street.",
+        "I get off around 26th Street.",
+        "You get off around 26th Street."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se bajaron a la altura de la calle 72.",
+      "options": [
+        "He gets off around 72nd Street.",
+        "They got off around 72nd Street.",
+        "They get off around 72nd Street."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Dónde te bajas?\nA la altura de la calle 26.",
+      "options": [
+        "Where do you get off?\nAround 26th Street.",
+        "Where do I get off?\nAround 26th Street.",
+        "Where do they get off?\nAround 26th Street."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *de la* or *del*: Mi casa queda a la altura ___ iglesia. Type the whole sentence.",
+      "answer": "Mi casa queda a la altura de la iglesia.",
+      "accept": [],
+      "why": "*Iglesia* is feminine, so *de la* stays two words."
+    },
+    {
+      "prompt": "Choose *de la* or *del*: Gire a la altura ___ semáforo. Type the whole sentence.",
+      "answer": "Gire a la altura del semáforo.",
+      "accept": [],
+      "why": "*De* plus *el* always joins into *del*."
+    },
+    {
+      "prompt": "Type in Spanish: I get off by 72nd Street.",
+      "answer": "Me bajo a la altura de la calle 72.",
+      "accept": [
+        "Yo me bajo a la altura de la calle 72."
+      ],
+      "why": "*A la altura de* gives the rough point along the street."
+    },
+    {
+      "prompt": "Type in Spanish: The accident happened level with the church.",
+      "answer": "El accidente fue a la altura de la iglesia.",
+      "accept": [],
+      "why": "The same phrase works for where an event happened."
+    },
+    {
+      "prompt": "Tell a stranger (formal) to keep going straight and turn at the traffic light.",
+      "answer": "Siga derecho y gire a la altura del semáforo.",
+      "accept": [],
+      "why": "Formal commands use the *usted* form, and *del* joins *de* and *el*."
+    },
+    {
+      "prompt": "Say it about Vale: *Me bajo a la altura de la calle 72.*",
+      "answer": "Vale se baja a la altura de la calle 72.",
+      "accept": [
+        "Ella se baja a la altura de la calle 72."
+      ],
+      "why": "The verb changes to *se baja*, the phrase stays the same."
+    },
+    {
+      "prompt": "Say it about them, in the past: *Me bajo a la altura de la calle 72.*",
+      "answer": "Se bajaron a la altura de la calle 72.",
+      "accept": [],
+      "why": "The past plural is *se bajaron*, and the phrase stays the same."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me bajo en la altura de la calle 72.",
+      "right": "Me bajo a la altura de la calle 72.",
+      "why": "Almost. The fixed phrase starts with *a*, not *en*."
+    },
+    {
+      "wrong": "Gire a la altura de el semáforo.",
+      "right": "Gire a la altura del semáforo.",
+      "why": "Almost. *De el* is always written *del*."
+    },
+    {
+      "wrong": "Mi casa queda a la altura la iglesia.",
+      "right": "Mi casa queda a la altura de la iglesia.",
+      "why": "Almost. Keep the *de*, which English hides inside \"level with\"."
+    }
+  ],
+  "personal": "Say where you get off, or where your favourite café is, using *a la altura de*: *Mi café favorito queda a la altura de…*"
+}

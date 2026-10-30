@@ -1,0 +1,182 @@
+{
+  "node": "p:a-cuadras-de",
+  "hook": {
+    "line": "In Bogotá nobody says \"it's 300 metres away\". They count blocks. Tomás hears it the first time he asks where the nearest shop is.",
+    "es": "La tienda está a cuatro cuadras.",
+    "en": "The shop is four blocks away."
+  },
+  "examples": [
+    {
+      "es": "La tienda está a cuatro cuadras.",
+      "en": "The shop is four blocks away."
+    },
+    {
+      "es": "Vivo a dos cuadras de aquí.",
+      "en": "I live two blocks from here."
+    },
+    {
+      "es": "¿Está lejos?\nNo, está a una cuadra.",
+      "en": "Is it far?\nNo, it's one block away."
+    },
+    {
+      "es": "El café queda a tres cuadras del parque.",
+      "en": "The café is three blocks from the park."
+    },
+    {
+      "es": "Estamos a pocas cuadras del centro.",
+      "en": "We are a few blocks from downtown."
+    },
+    {
+      "es": "El pueblo está a un paso de la frontera.",
+      "en": "The town is a stone's throw from the border."
+    }
+  ],
+  "rule": "To say how far something is, count the blocks: *a* + number + *cuadras*.\n\nAdd *de* + the place you measure from: *a tres cuadras del parque*. Leave it out and the starting point is here: *a cuatro cuadras*.\n\n*Cuadra* is feminine: *a una cuadra*, *a media cuadra*, *a pocas cuadras*.\n\nWith *estar* or *quedar*, English \"from\" becomes *de*. Very close: *a un paso de*. Written style: *a escasa distancia de*.",
+  "smallPrint": "Teachers call this *estar a* for distance. It is the same *a* you use for prices and temperatures: a reading from where you stand.",
+  "readAndPick": [
+    {
+      "es": "La tienda está a cuatro cuadras.",
+      "options": [
+        "The shop is two blocks away.",
+        "The shop is four blocks away.",
+        "The shop is fourteen blocks away."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vivo a dos cuadras de aquí.",
+      "options": [
+        "I live two blocks from here.",
+        "We live two blocks from here.",
+        "You live two blocks from here."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vivimos a tres cuadras de la iglesia.",
+      "options": [
+        "I live three blocks from the church.",
+        "They live three blocks from the church.",
+        "We live three blocks from the church."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Está lejos?\nNo, está a una cuadra.",
+      "options": [
+        "Is it far?\nNo, it's one block away.",
+        "Is it far?\nNo, it's many blocks away.",
+        "Is it far?\nNo, it's half a block away."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estamos a pocas cuadras del centro.",
+      "options": [
+        "We are many blocks from downtown.",
+        "We are four blocks from downtown.",
+        "We are a few blocks from downtown."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La universidad queda a media cuadra.",
+      "options": [
+        "The university is half a block away.",
+        "The university is a block and a half away.",
+        "The university is two blocks away."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿A cuántas cuadras está el banco?",
+      "options": [
+        "Where is the bank?",
+        "How many blocks away is the bank?",
+        "How many banks are on the block?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El pueblo está a un paso de la frontera.",
+      "options": [
+        "The town is a long way from the border.",
+        "The town is one step inside the border.",
+        "The town is a stone's throw from the border."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *cuadra* or *cuadras*: Vivo a dos ___ de aquí. Type the whole sentence.",
+      "answer": "Vivo a dos cuadras de aquí.",
+      "accept": [],
+      "why": "Two is more than one, so *cuadras*."
+    },
+    {
+      "prompt": "Choose *de* or *del*: El café queda a tres cuadras ___ parque. Type the whole sentence.",
+      "answer": "El café queda a tres cuadras del parque.",
+      "accept": [],
+      "why": "*De* plus *el* joins into *del*."
+    },
+    {
+      "prompt": "Type in Spanish: The shop is four blocks away.",
+      "answer": "La tienda está a cuatro cuadras.",
+      "accept": [
+        "La tienda queda a cuatro cuadras."
+      ],
+      "why": "*A* + number + *cuadras* gives the distance."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: I live two blocks from here.",
+      "answer": "Vivo a dos cuadras de aquí.",
+      "accept": [
+        "Yo vivo a dos cuadras de aquí."
+      ],
+      "why": "The place you measure from comes after *de*."
+    },
+    {
+      "prompt": "Type in Spanish: The café is one block away.",
+      "answer": "El café está a una cuadra.",
+      "accept": [
+        "El café queda a una cuadra."
+      ],
+      "why": "*Cuadra* is feminine, so \"one\" is *una*."
+    },
+    {
+      "prompt": "Say it about us: *Vivo a dos cuadras de aquí.*",
+      "answer": "Vivimos a dos cuadras de aquí.",
+      "accept": [
+        "Nosotros vivimos a dos cuadras de aquí."
+      ],
+      "why": "Only the verb changes: *vivimos* for \"we\"."
+    },
+    {
+      "prompt": "Ask how many blocks away the bank is.",
+      "answer": "¿A cuántas cuadras está el banco?",
+      "accept": [
+        "¿A cuántas cuadras queda el banco?"
+      ],
+      "why": "*¿A cuántas cuadras…?* asks the distance in blocks."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La tienda está cuatro cuadras.",
+      "right": "La tienda está a cuatro cuadras.",
+      "why": "Almost. A distance needs *a* in front of the number."
+    },
+    {
+      "wrong": "Vivo a dos cuadras aquí.",
+      "right": "Vivo a dos cuadras de aquí.",
+      "why": "Almost. English \"from\" becomes *de* before the place you measure from."
+    },
+    {
+      "wrong": "Vivo a dos manzanas de aquí.",
+      "right": "Vivo a una cuadra de aquí.",
+      "why": "Almost. For distance Colombians count *cuadras*; a *manzana* is the whole block as an area."
+    }
+  ],
+  "personal": "Say how many blocks you live from a shop, a park or a station: *Vivo a… cuadras de…*"
+}
