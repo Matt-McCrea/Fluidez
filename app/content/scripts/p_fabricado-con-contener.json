@@ -1,0 +1,181 @@
+{
+  "node": "p:fabricado-con-contener",
+  "hook": {
+    "line": "Vale checks a label before buying a table, and wants to know what it is made from and what a juice has inside. Spanish uses two different verbs for those two questions.",
+    "es": "Esta mesa está fabricada con madera.",
+    "en": "This table is made from wood."
+  },
+  "examples": [
+    {
+      "es": "Esta mesa está fabricada con madera.",
+      "en": "This table is made from wood."
+    },
+    {
+      "es": "Las ventanas están fabricadas con vidrio.",
+      "en": "The windows are made from glass."
+    },
+    {
+      "es": "El pan contiene azúcar.",
+      "en": "The bread contains sugar."
+    },
+    {
+      "es": "El jugo no contiene azúcar.",
+      "en": "The juice doesn't contain sugar."
+    },
+    {
+      "es": "El pastel está relleno de crema.",
+      "en": "The cake is filled with cream."
+    },
+    {
+      "es": "¿Qué contiene este jugo?",
+      "en": "What does this juice contain?"
+    }
+  ],
+  "rule": "Two verbs, two jobs.\n\nFor what an object is built from, use *estar fabricado con* plus the material: *está fabricada con madera*. *Fabricado* is an adjective, so it agrees: *fabricada*, *fabricados*, *fabricadas*.\n\nFor what a food or substance has inside, use *contener*: *contiene azúcar*.\n\nFor things stuffed with something, use *relleno de*: *relleno de crema*.\n\nEnglish uses \"made of\" for all of these, so choose the verb by the job.",
+  "smallPrint": "Teachers call *fabricado con* a passive participle that describes a result, and *contener* a verb of content.",
+  "readAndPick": [
+    {
+      "es": "El jugo no contiene azúcar.",
+      "options": [
+        "The juice is made of sugar.",
+        "The juice has no sugar.",
+        "The juice is full of sugar."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Las ventanas están fabricadas con vidrio.",
+      "options": [
+        "The windows are made from glass.",
+        "The window is made from glass.",
+        "The windows contain glass."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El pastel está relleno de crema.",
+      "options": [
+        "The cake is covered with cream.",
+        "The cake has no cream.",
+        "The cake is filled with cream."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Qué contiene este jugo?",
+      "options": [
+        "What is this juice made from?",
+        "What does this juice contain?",
+        "Where is this juice?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El pan contiene azúcar.",
+      "options": [
+        "The bread contains sugar.",
+        "The bread has no sugar.",
+        "The bread is made from sugar."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Esta mesa está fabricada con madera.",
+      "options": [
+        "This table contains wood.",
+        "This table has no wood.",
+        "This table is made from wood."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El tinto no contiene leche.",
+      "options": [
+        "The coffee contains milk.",
+        "The coffee has no milk.",
+        "The coffee is milk."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Las sillas están fabricadas con metal.",
+      "options": [
+        "The chair is made from metal.",
+        "The chairs are made from metal.",
+        "The chairs contain metal."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Esta sopa contiene papa y pollo.",
+      "options": [
+        "This soup is made from a farm.",
+        "This soup has no potato.",
+        "This soup contains potato and chicken."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Esta mesa está fabricada ___ madera.* (*con* or *en*) This table is made from wood.",
+      "answer": "Esta mesa está fabricada con madera.",
+      "accept": [],
+      "why": "The material comes after *con*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *El jugo ___ azúcar.* (*contiene* or *está fabricado con*) The juice contains sugar.",
+      "answer": "El jugo contiene azúcar.",
+      "accept": [],
+      "why": "Sugar is something inside the juice, so use *contener*."
+    },
+    {
+      "prompt": "Say: The windows are made from glass.",
+      "answer": "Las ventanas están fabricadas con vidrio.",
+      "accept": [],
+      "why": "The windows are plural, so *están fabricadas*."
+    },
+    {
+      "prompt": "Say: The cake is filled with cream.",
+      "answer": "El pastel está relleno de crema.",
+      "accept": [],
+      "why": "Filled with something is *relleno de*."
+    },
+    {
+      "prompt": "Make it negative: *El tinto contiene leche.* The coffee doesn't contain milk.",
+      "answer": "El tinto no contiene leche.",
+      "accept": [],
+      "why": "Put *no* before *contiene*."
+    },
+    {
+      "prompt": "Ask what this juice contains.",
+      "answer": "¿Qué contiene este jugo?",
+      "accept": [],
+      "why": "*Qué contiene* asks what is inside."
+    },
+    {
+      "prompt": "Make it about several chairs: *La silla está fabricada con metal.* The chairs are made from metal.",
+      "answer": "Las sillas están fabricadas con metal.",
+      "accept": [],
+      "why": "The verb and the adjective both turn plural: *están fabricadas*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La mesa contiene madera.",
+      "right": "La mesa está fabricada con madera.",
+      "why": "Almost. *Contiene* is for what is inside something; for the material an object is built from, use *está fabricada con*."
+    },
+    {
+      "wrong": "Las sillas están fabricado con metal.",
+      "right": "Las sillas están fabricadas con metal.",
+      "why": "*Fabricado* is an adjective, so it agrees with *sillas*."
+    },
+    {
+      "wrong": "Esta mesa es fabricada con madera.",
+      "right": "Esta mesa está fabricada con madera.",
+      "why": "You are describing how the table is, so Spanish uses *está*."
+    }
+  ],
+  "personal": "Pick something you own, like a bag or a cup. Say what it is made from with *está fabricado con…*, or what a food you ate today contains."
+}

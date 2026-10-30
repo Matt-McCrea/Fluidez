@@ -1,0 +1,172 @@
+{
+  "node": "p:colores-compuestos",
+  "hook": {
+    "line": "Tomás wants paint for the café walls, and \"green\" is not enough: he needs light green, olive green, navy blue. Spanish has a neat trick for these.",
+    "es": "Quiero unas sillas azul claro.",
+    "en": "I want some light blue chairs."
+  },
+  "examples": [
+    {
+      "es": "Es de color naranja, de tamaño grande.",
+      "en": "It's orange and large."
+    },
+    {
+      "es": "Tomás pintó las paredes verde claro.",
+      "en": "Tomás painted the walls light green."
+    },
+    {
+      "es": "Mi carro es gris oscuro.",
+      "en": "My car is dark grey."
+    },
+    {
+      "es": "Vale compró dos camisas azul marino.",
+      "en": "Vale bought two navy blue shirts."
+    },
+    {
+      "es": "Quiero unas sillas azul claro.",
+      "en": "I want some light blue chairs."
+    },
+    {
+      "es": "¿De qué color es tu carro?",
+      "en": "What colour is your car?"
+    }
+  ],
+  "rule": "To describe a colour, size or shape, use *ser de*: *es de color naranja*, *es de tamaño grande*, *es de forma cuadrada*.\n\nTo say a shade, add a second word to the colour: *verde claro*, *gris oscuro*, *azul marino*.\n\nThe whole shade stays fixed, even when the noun is plural or feminine. English does not show this because adjectives never change, but Spanish usually does: *paredes verdes*, but *paredes verde claro*.",
+  "smallPrint": "Teachers call these compound colours invariable adjectives: they do not agree with the noun.",
+  "readAndPick": [
+    {
+      "es": "Quiero unas sillas azul claro.",
+      "options": [
+        "I want some dark blue chairs.",
+        "I want some light blue chairs.",
+        "I want one light blue chair."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mi carro es gris oscuro.",
+      "options": [
+        "My car is dark grey.",
+        "My car is light grey.",
+        "My car is dark blue."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es de tamaño grande.",
+      "options": [
+        "It's large in size.",
+        "It's large in number.",
+        "It's large and round."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tomás pintó las paredes verde claro.",
+      "options": [
+        "Tomás painted the wall dark green.",
+        "Tomás painted the walls light green.",
+        "Tomás painted the walls light blue."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale compró dos camisas azul marino.",
+      "options": [
+        "Vale bought two navy blue shirts.",
+        "Vale bought one navy blue shirt.",
+        "Vale bought two light blue shirts."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La puerta es de color café.",
+      "options": [
+        "The door is the colour of coffee.",
+        "The door is at the café.",
+        "The door is dark red."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La caja es de forma cuadrada.",
+      "options": [
+        "The box is square in shape.",
+        "The box is large in size.",
+        "The box is white."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tengo dos camisas verde oscuro.",
+      "options": [
+        "I have one dark green shirt.",
+        "I have two dark green shirts.",
+        "I have two light green shirts."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Quiero unas sillas azul ___.* (*claro* or *claras*) I want some light blue chairs.",
+      "answer": "Quiero unas sillas azul claro.",
+      "accept": [],
+      "why": "A shade like *azul claro* stays fixed, even with plural chairs."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *La puerta es ___ color café.* (*de* or *en*) The door is brown.",
+      "answer": "La puerta es de color café.",
+      "accept": [],
+      "why": "*Ser de color* is the frame for naming a colour."
+    },
+    {
+      "prompt": "Say: My car is dark grey.",
+      "answer": "Mi carro es gris oscuro.",
+      "accept": [],
+      "why": "Colour first, then the shade."
+    },
+    {
+      "prompt": "Say: Vale bought two navy blue shirts.",
+      "answer": "Vale compró dos camisas azul marino.",
+      "accept": [],
+      "why": "*Azul marino* does not change, even with *camisas*."
+    },
+    {
+      "prompt": "Say: The box is large in size.",
+      "answer": "La caja es de tamaño grande.",
+      "accept": [],
+      "why": "*Ser de tamaño* plus an adjective."
+    },
+    {
+      "prompt": "Ask a friend what colour their car is.",
+      "answer": "¿De qué color es tu carro?",
+      "accept": [],
+      "why": "*De qué color* asks the colour, and *tu* speaks to a friend."
+    },
+    {
+      "prompt": "Make it about two shirts: *Tengo una camisa verde claro.* I have two light green shirts.",
+      "answer": "Tengo dos camisas verde claro.",
+      "accept": [],
+      "why": "The noun turns plural, but the shade *verde claro* stays the same."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Quiero unas sillas azules claras.",
+      "right": "Quiero unas sillas azul claro.",
+      "why": "A shade made of two words stays fixed, so neither word takes a plural ending."
+    },
+    {
+      "wrong": "La caja es de cuadrada.",
+      "right": "La caja es de forma cuadrada.",
+      "why": "After *de*, Spanish needs the word it describes: *forma*, *color* or *tamaño*."
+    },
+    {
+      "wrong": "La puerta es de café.",
+      "right": "La puerta es de color café.",
+      "why": "Almost. For a colour, say *de color* before the colour word."
+    }
+  ],
+  "personal": "Look around and pick a colour you can see. Describe it with a shade, like *es verde claro*, or say *es de color…*"
+}

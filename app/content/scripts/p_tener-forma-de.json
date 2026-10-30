@@ -1,0 +1,189 @@
+{
+  "node": "p:tener-forma-de",
+  "hook": {
+    "line": "Someone asks about the odd table in the café, and you cannot find its name. Spanish has a fallback for any shape: say what shape it *has*.",
+    "es": "La mesa tiene forma de corazón.",
+    "en": "The table is heart-shaped."
+  },
+  "examples": [
+    {
+      "es": "La piscina tiene forma de riñón.",
+      "en": "The pool is kidney-shaped."
+    },
+    {
+      "es": "El pastel tiene forma de corazón.",
+      "en": "The cake is heart-shaped."
+    },
+    {
+      "es": "La mesa tiene forma rectangular.",
+      "en": "The table is rectangular."
+    },
+    {
+      "es": "El lago tiene una forma irregular.",
+      "en": "The lake has an irregular shape."
+    },
+    {
+      "es": "La plaza tiene forma de círculo.",
+      "en": "The square is circle-shaped."
+    },
+    {
+      "es": "¿Qué forma tiene la mesa del café?",
+      "en": "What shape is the café table?"
+    }
+  ],
+  "rule": "English says \"it is heart-shaped\". Spanish says a thing *has* a shape: *tiene forma de corazón*.\n\nWith a noun, use *de*: *forma de corazón*, *forma de torre*.\n\nWith an adjective, no *de*: *forma rectangular*, *forma redonda*. You can add *una* when you describe the shape more: *una forma irregular*.\n\nTo ask: *¿Qué forma tiene…?*",
+  "smallPrint": "Teachers call this a descriptive phrase with *tener*: the shape is treated as something the object owns.",
+  "readAndPick": [
+    {
+      "es": "El pastel tiene forma de corazón.",
+      "options": [
+        "The cake is star-shaped.",
+        "The cake is round.",
+        "The cake is heart-shaped."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La mesa tiene forma rectangular.",
+      "options": [
+        "The table is rectangular.",
+        "The table is round.",
+        "The table is square."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El edificio tiene forma de torre.",
+      "options": [
+        "The building is circle-shaped.",
+        "The building is tower-shaped.",
+        "The building is rectangular."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La ventana tiene forma redonda.",
+      "options": [
+        "The window is square.",
+        "The window is heart-shaped.",
+        "The window is round."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La mesa no tiene forma cuadrada.",
+      "options": [
+        "The table is square.",
+        "The table isn't square.",
+        "The table has no shape."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Qué forma tiene la mesa del café?",
+      "options": [
+        "Where is the café table?",
+        "What shape is the café table?",
+        "How big is the café table?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La lámpara tiene forma de flor.",
+      "options": [
+        "The lamp is flower-shaped.",
+        "The lamp is star-shaped.",
+        "The lamp is round."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El lago tiene una forma irregular.",
+      "options": [
+        "The lake is circle-shaped.",
+        "The lake is very long.",
+        "The lake has an irregular shape."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La plaza tiene forma de círculo.",
+      "options": [
+        "The square is rectangular.",
+        "The square is circle-shaped.",
+        "The square is irregular."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *El pastel tiene forma ___ corazón.* (*de* or *en*) The cake is heart-shaped.",
+      "answer": "El pastel tiene forma de corazón.",
+      "accept": [],
+      "why": "Before a noun, the shape needs *de*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *La mesa tiene forma ___.* (*rectangular* or *de rectangular*) The table is rectangular.",
+      "answer": "La mesa tiene forma rectangular.",
+      "accept": [],
+      "why": "An adjective goes straight after *forma*, with no *de*."
+    },
+    {
+      "prompt": "Say: The building is tower-shaped.",
+      "answer": "El edificio tiene forma de torre.",
+      "accept": [],
+      "why": "The building *has* the shape, and the noun *torre* needs *de*."
+    },
+    {
+      "prompt": "Say: The lamp is flower-shaped.",
+      "answer": "La lámpara tiene forma de flor.",
+      "accept": [],
+      "why": "Same frame: *tiene forma de* plus the noun."
+    },
+    {
+      "prompt": "Say: The window is round.",
+      "answer": "La ventana tiene forma redonda.",
+      "accept": [],
+      "why": "*Redonda* is an adjective, so there is no *de*."
+    },
+    {
+      "prompt": "Make it negative: *La mesa tiene forma cuadrada.* The table isn't square.",
+      "answer": "La mesa no tiene forma cuadrada.",
+      "accept": [],
+      "why": "Put *no* before *tiene*."
+    },
+    {
+      "prompt": "Ask what shape the café table is.",
+      "answer": "¿Qué forma tiene la mesa del café?",
+      "accept": [],
+      "why": "*Qué forma tiene* asks for the shape the thing has."
+    },
+    {
+      "prompt": "Say: The lake has an irregular shape.",
+      "answer": "El lago tiene una forma irregular.",
+      "accept": [
+        "El lago tiene forma irregular."
+      ],
+      "why": "You may add *una* when you describe the shape more fully."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La mesa es forma de círculo.",
+      "right": "La mesa tiene forma de círculo.",
+      "why": "Almost. English says \"is\", but Spanish says the table *has* a shape, so use *tiene*."
+    },
+    {
+      "wrong": "La mesa tiene forma de redonda.",
+      "right": "La mesa tiene forma redonda.",
+      "why": "*De* is for nouns. An adjective like *redonda* goes straight after *forma*."
+    },
+    {
+      "wrong": "El pastel tiene forma corazón.",
+      "right": "El pastel tiene forma de corazón.",
+      "why": "A noun after *forma* needs *de*, like \"in the form of\"."
+    }
+  ],
+  "personal": "Look around you and pick an object. Say its shape with *tiene forma de…* or *tiene forma…*"
+}

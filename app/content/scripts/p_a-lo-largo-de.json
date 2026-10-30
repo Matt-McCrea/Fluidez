@@ -1,0 +1,172 @@
+{
+  "node": "p:a-lo-largo-de",
+  "hook": {
+    "line": "Don Hernando is telling you where he drove in his taxi days and where the café sits on the street. Spanish has small frames for along, across and above.",
+    "es": "Caminamos a lo largo de la playa.",
+    "en": "We walked along the beach."
+  },
+  "examples": [
+    {
+      "es": "Caminamos a lo largo de la playa.",
+      "en": "We walked along the beach."
+    },
+    {
+      "es": "El café está al otro lado de la calle.",
+      "en": "The café is on the other side of the street."
+    },
+    {
+      "es": "Llovió mucho a lo largo del año.",
+      "en": "It rained a lot throughout the year."
+    },
+    {
+      "es": "Hay árboles a lo largo de la calle.",
+      "en": "There are trees along the street."
+    },
+    {
+      "es": "El cartel está en lo alto del edificio.",
+      "en": "The sign is at the top of the building."
+    },
+    {
+      "es": "¿Qué hay al otro lado de la calle?",
+      "en": "What is on the other side of the street?"
+    }
+  ],
+  "rule": "Four small frames, each followed by a place.\n\n*A lo largo de* follows something from end to end, in space or in time: *a lo largo de la playa*, *a lo largo del año*.\n\n*Al otro lado de* means on the other side of.\n\n*En lo alto de* means at the top of.\n\nWatch *de* plus *el*: it becomes *del*, as in *a lo largo del año*.\n\nEnglish uses \"along\", \"across\" and \"throughout\" for this. Spanish keeps the same frame each time.",
+  "smallPrint": "Teachers call these prepositional phrases: several words that work together as one preposition.",
+  "readAndPick": [
+    {
+      "es": "Caminamos a lo largo de la playa.",
+      "options": [
+        "We walked along the beach.",
+        "We walked to the beach.",
+        "We walked across the beach."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El café está al otro lado de la calle.",
+      "options": [
+        "The café is on this side of the street.",
+        "The café is on the other side of the street.",
+        "The café is on the street."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Llovió mucho a lo largo del año.",
+      "options": [
+        "It rained a lot at the end of the year.",
+        "It rained a lot yesterday.",
+        "It rained a lot throughout the year."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El cartel está en lo alto del edificio.",
+      "options": [
+        "The sign is at the top of the building.",
+        "The sign is inside the building.",
+        "The sign is next to the building."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hay árboles a lo largo de la calle.",
+      "options": [
+        "There are trees on the other side of the street.",
+        "There are trees along the street.",
+        "There are trees at the top of the street."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Qué hay al otro lado de la calle?",
+      "options": [
+        "What is on the other side of the street?",
+        "What is at the top of the street?",
+        "What is along the street?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale vive al otro lado de la plaza.",
+      "options": [
+        "Vale lives in the square.",
+        "Vale lives near the square.",
+        "Vale lives on the other side of the square."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Don Hernando manejó a lo largo de la avenida.",
+      "options": [
+        "Don Hernando drove along the avenue.",
+        "Don Hernando drove to the avenue.",
+        "Don Hernando drove across the avenue."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Hay árboles ___ la calle.* (*a lo largo de* or *al otro lado de*) There are trees along the street.",
+      "answer": "Hay árboles a lo largo de la calle.",
+      "accept": [],
+      "why": "Trees all the way down the street: *a lo largo de*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *El café está ___ la calle.* (*al otro lado de* or *en lo alto de*) The café is on the other side of the street.",
+      "answer": "El café está al otro lado de la calle.",
+      "accept": [],
+      "why": "The far side of the street is *al otro lado de*."
+    },
+    {
+      "prompt": "Say: We walked along the beach.",
+      "answer": "Caminamos a lo largo de la playa.",
+      "accept": [],
+      "why": "*A lo largo de* follows the beach from end to end."
+    },
+    {
+      "prompt": "Say: It rained a lot throughout the year.",
+      "answer": "Llovió mucho a lo largo del año.",
+      "accept": [],
+      "why": "*De* plus *el* becomes *del*."
+    },
+    {
+      "prompt": "Say: The sign is at the top of the building.",
+      "answer": "El cartel está en lo alto del edificio.",
+      "accept": [],
+      "why": "*En lo alto de* means at the top of, and *de el* becomes *del*."
+    },
+    {
+      "prompt": "Ask: What is on the other side of the street?",
+      "answer": "¿Qué hay al otro lado de la calle?",
+      "accept": [],
+      "why": "*Qué hay* asks what is there."
+    },
+    {
+      "prompt": "Say: Vale lives on the other side of the square.",
+      "answer": "Vale vive al otro lado de la plaza.",
+      "accept": [],
+      "why": "The same *al otro lado de* frame, with a new place."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Caminamos a lo largo la playa.",
+      "right": "Caminamos a lo largo de la playa.",
+      "why": "Almost. The frame always ends in *de* before the place."
+    },
+    {
+      "wrong": "El café está a otro lado de la calle.",
+      "right": "El café está al otro lado de la calle.",
+      "why": "It is *al otro lado*: *a* plus *el* joined, and the article stays."
+    },
+    {
+      "wrong": "Llovió mucho a lo largo de el año.",
+      "right": "Llovió mucho a lo largo del año.",
+      "why": "*De* plus *el* always joins into *del*."
+    }
+  ],
+  "personal": "Think of a street or a trip you know. Say something true about it with *a lo largo de…* or *al otro lado de…*"
+}

@@ -1,0 +1,178 @@
+{
+  "node": "p:resistente-a",
+  "hook": {
+    "line": "Don Hernando wants a jacket for the rainy season, and the first thing he asks is whether it can take the water. Spanish names the threat after *a*.",
+    "es": "Esta chaqueta es resistente al agua.",
+    "en": "This jacket is water-resistant."
+  },
+  "examples": [
+    {
+      "es": "Mi celular es resistente al agua.",
+      "en": "My cell phone is water-resistant."
+    },
+    {
+      "es": "Esta chaqueta es resistente al frío.",
+      "en": "This jacket is cold-resistant."
+    },
+    {
+      "es": "El ladrillo resiste el calor.",
+      "en": "The brick withstands heat."
+    },
+    {
+      "es": "Es un vidrio a prueba de balas.",
+      "en": "It's bulletproof glass."
+    },
+    {
+      "es": "Tiene mucha resistencia al calor.",
+      "en": "It has great resistance to heat."
+    },
+    {
+      "es": "¿Es resistente al agua?",
+      "en": "Is it water-resistant?"
+    }
+  ],
+  "rule": "Say what something can take after *resistente a*: *resistente al agua*, *resistente al frío*. *A* plus *el* becomes *al*.\n\nThe noun form works too: *tiene mucha resistencia al calor*.\n\nThe verb *resistir* takes its object directly, with no *a*: *resiste el calor*.\n\nFor \"proof against\", use *a prueba de*: *a prueba de balas*.\n\nEnglish says \"water-resistant\" as one word, so Spanish needs the extra *a*.",
+  "smallPrint": "Teachers call *resistente a* an adjective with a complement: the threat completes the meaning.",
+  "readAndPick": [
+    {
+      "es": "Mi celular es resistente al agua.",
+      "options": [
+        "My cell phone is water-resistant.",
+        "My cell phone is heat-resistant.",
+        "My cell phone is afraid of water."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Esta chaqueta es resistente al frío.",
+      "options": [
+        "This jacket is water-resistant.",
+        "This jacket is cold-resistant.",
+        "This jacket is too cold."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El ladrillo resiste el calor.",
+      "options": [
+        "The brick withstands heat.",
+        "The brick is cold.",
+        "The brick is hot."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es un vidrio a prueba de balas.",
+      "options": [
+        "It's thin glass.",
+        "It's glass made in a factory.",
+        "It's bulletproof glass."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tiene mucha resistencia al calor.",
+      "options": [
+        "It has great resistance to cold.",
+        "It has great resistance to heat.",
+        "It has little resistance to heat."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Es resistente al agua?",
+      "options": [
+        "Is it water-resistant?",
+        "Is it hot water?",
+        "Is it fire-resistant?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El cemento es resistente a la humedad.",
+      "options": [
+        "Cement is resistant to heat.",
+        "Cement is resistant to damp.",
+        "Cement is hard to find."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Las ventanas no son resistentes al fuego.",
+      "options": [
+        "The windows are fire-resistant.",
+        "The windows aren't fire-resistant.",
+        "The window isn't fire-resistant."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *El cemento es resistente ___ la humedad.* (*a* or *de*) Cement is resistant to damp.",
+      "answer": "El cemento es resistente a la humedad.",
+      "accept": [],
+      "why": "The threat comes after *a*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Es resistente ___ agua.* (*a el* or *al*) It's water-resistant.",
+      "answer": "Es resistente al agua.",
+      "accept": [],
+      "why": "*A* and *el* join into *al*."
+    },
+    {
+      "prompt": "Say: My cell phone is water-resistant.",
+      "answer": "Mi celular es resistente al agua.",
+      "accept": [],
+      "why": "*Resistente* plus *al* and the threat."
+    },
+    {
+      "prompt": "Say: This jacket is cold-resistant.",
+      "answer": "Esta chaqueta es resistente al frío.",
+      "accept": [],
+      "why": "Same frame, with a different threat."
+    },
+    {
+      "prompt": "Say: It's bulletproof glass.",
+      "answer": "Es un vidrio a prueba de balas.",
+      "accept": [],
+      "why": "*A prueba de* plus the thing it is proof against."
+    },
+    {
+      "prompt": "Say: The brick withstands heat.",
+      "answer": "El ladrillo resiste el calor.",
+      "accept": [],
+      "why": "The verb *resistir* takes its object with no *a*."
+    },
+    {
+      "prompt": "Ask: Is it water-resistant?",
+      "answer": "¿Es resistente al agua?",
+      "accept": [],
+      "why": "Same words as the statement, with question marks."
+    },
+    {
+      "prompt": "Make it negative and plural: *El metal es resistente al fuego.* The windows aren't fire-resistant.",
+      "answer": "Las ventanas no son resistentes al fuego.",
+      "accept": [],
+      "why": "The adjective turns plural with *ventanas*: *no son resistentes*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Es resistente de agua.",
+      "right": "Es resistente al agua.",
+      "why": "Almost. The threat follows *a*, not *de*, and *a el* becomes *al*."
+    },
+    {
+      "wrong": "Es resistente a el agua.",
+      "right": "Es resistente al agua.",
+      "why": "*A* plus *el* always joins into *al*."
+    },
+    {
+      "wrong": "El ladrillo resiste al calor.",
+      "right": "El ladrillo resiste el calor.",
+      "why": "The verb *resistir* takes its object directly, while the adjective *resistente* needs *a*."
+    }
+  ],
+  "personal": "Think of something you own that has to survive something: rain, heat, drops. Say what it is resistant to with *es resistente a…*"
+}

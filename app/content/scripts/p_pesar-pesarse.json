@@ -1,0 +1,172 @@
+{
+  "node": "p:pesar-pesarse",
+  "hook": {
+    "line": "At the airport, the agent asks how heavy your bag is. English says \"it is 23 kilos\", but Spanish uses a verb for weight.",
+    "es": "La maleta pesa 23 kilos.",
+    "en": "The suitcase weighs 23 kilos."
+  },
+  "examples": [
+    {
+      "es": "La maleta pesa 23 kilos.",
+      "en": "The suitcase weighs 23 kilos."
+    },
+    {
+      "es": "¿Cuánto pesa este paquete?",
+      "en": "How much does this package weigh?"
+    },
+    {
+      "es": "Pesamos el paquete en la oficina.",
+      "en": "We weighed the package at the office."
+    },
+    {
+      "es": "Me peso todos los lunes.",
+      "en": "I weigh myself every Monday."
+    },
+    {
+      "es": "La mesa no pesa mucho.",
+      "en": "The table doesn't weigh much."
+    },
+    {
+      "es": "El celular pesa menos que la computadora.",
+      "en": "The cell phone weighs less than the computer."
+    }
+  ],
+  "rule": "Spanish says a thing *weighs* an amount: *pesa 23 kilos*. Never *es 23 kilos*.\n\nTo ask: *¿Cuánto pesa?*\n\n*Pesar* also means to put something on a scale: *pesamos el paquete*.\n\nTo weigh yourself, add the reflexive pronoun: *me peso*, *te pesas*, *se pesa*.\n\nThe same verb handles heavy and light: *pesa mucho*, *pesa poco*.",
+  "smallPrint": "Teachers call *pesarse* a reflexive verb: the action comes back to the person who does it.",
+  "readAndPick": [
+    {
+      "es": "La maleta pesa 23 kilos.",
+      "options": [
+        "The suitcase costs 23 kilos.",
+        "The suitcase weighs 23 kilos.",
+        "The suitcase is 23 years old."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me peso todos los lunes.",
+      "options": [
+        "I weigh myself every Monday.",
+        "I weigh the suitcase every Monday.",
+        "It weighs me down every Monday."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Pesamos el paquete en la oficina.",
+      "options": [
+        "We weighed the package at the office.",
+        "We opened the package at the office.",
+        "The package weighed us down."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Cuánto pesa este paquete?",
+      "options": [
+        "How much does this package cost?",
+        "How far is this package?",
+        "How much does this package weigh?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tomás se pesa los domingos.",
+      "options": [
+        "Tomás weighs the suitcase on Sundays.",
+        "Tomás weighs himself on Sundays.",
+        "Tomás is weighed down on Sundays."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No me peso en la mañana.",
+      "options": [
+        "I don't weigh myself in the morning.",
+        "I weigh myself in the morning.",
+        "I don't weigh the morning."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El celular pesa menos que la computadora.",
+      "options": [
+        "The computer weighs less than the cell phone.",
+        "The cell phone weighs more than the computer.",
+        "The cell phone weighs less than the computer."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La mesa no pesa mucho.",
+      "options": [
+        "The table is heavy.",
+        "The table doesn't weigh much.",
+        "The table isn't here."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *La maleta ___ 23 kilos.* (*es* or *pesa*) The suitcase weighs 23 kilos.",
+      "answer": "La maleta pesa 23 kilos.",
+      "accept": [],
+      "why": "Weight uses the verb *pesar*, not *ser*."
+    },
+    {
+      "prompt": "Say: How much does this package weigh?",
+      "answer": "¿Cuánto pesa este paquete?",
+      "accept": [],
+      "why": "*Cuánto pesa* asks for the weight."
+    },
+    {
+      "prompt": "Say: I weigh myself every Monday.",
+      "answer": "Me peso todos los lunes.",
+      "accept": [],
+      "why": "Weighing yourself needs *me* before the verb."
+    },
+    {
+      "prompt": "Say: We weighed the package at the office.",
+      "answer": "Pesamos el paquete en la oficina.",
+      "accept": [],
+      "why": "Weighing a thing needs no *me*: *pesamos el paquete*."
+    },
+    {
+      "prompt": "Make it negative: *La mesa pesa mucho.* The table doesn't weigh much.",
+      "answer": "La mesa no pesa mucho.",
+      "accept": [],
+      "why": "Put *no* before *pesa*."
+    },
+    {
+      "prompt": "Say: Tomás weighs himself on Sundays.",
+      "answer": "Tomás se pesa los domingos.",
+      "accept": [],
+      "why": "For *he* weighing himself, use *se*."
+    },
+    {
+      "prompt": "Say: The cell phone weighs less than the computer.",
+      "answer": "El celular pesa menos que la computadora.",
+      "accept": [],
+      "why": "Compare weights with *menos que*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La maleta es 23 kilos.",
+      "right": "La maleta pesa 23 kilos.",
+      "why": "Almost. Spanish does not use *ser* for weight; the thing *weighs* an amount."
+    },
+    {
+      "wrong": "Me peso la maleta.",
+      "right": "Peso la maleta.",
+      "why": "Use *me* only when you weigh yourself. For a suitcase, say *peso la maleta*."
+    },
+    {
+      "wrong": "La maleta se pesa 23 kilos.",
+      "right": "La maleta pesa 23 kilos.",
+      "why": "Nothing is weighing itself here, so there is no *se*."
+    }
+  ],
+  "personal": "Say how heavy something you carry every day is, like your bag or your cell phone, with *pesa…*"
+}
