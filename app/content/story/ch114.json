@@ -1,0 +1,293 @@
+{
+  "id": "ch114",
+  "unit": "u38",
+  "title": "El titular del día",
+  "text": "Nadie veía la televisión del café desde el Mundial.\nPresentadora: Hoy en las noticias: una inundación en Mocoa, un incendio en Cali y tres semanas para las elecciones. Pero el titular del día es un reportaje que tiene a Bogotá hablando.\nHernando: Antes, el titular era una inundación o un incendio. Hoy es mi mesa.\nEn la pantalla salió Simón, en la ventana del café.\nSimón: ¡Qué locura! ¡Qué locura!\nA las diez, el loro tenía más visitas que el artículo.\nMariana: Seis meses de trabajo, y el país quiere ver al loro.\nVale: Ese loro trabaja gratis para su reportaje.\nTomás: En software, cada error tenía una causa y una consecuencia. La causa es fácil: un hombre firmó seis permisos. Las consecuencias no las sabemos.\nA mediodía, doña Gloria entró con una hoja llena de firmas.\nGloria: Cuatrocientas firmas. Y mañana, protesta en la plaza.\nVale: ¿Una protesta? ¿Usted?\nGloria: Mija, mi primera manifestación fue en 1977, y la policía me tenía miedo.\nHernando: Esa manifestación yo la vi. Usted gritaba más que el loro.\nPor la tarde, el periódico publicó un editorial: «La ciudad no se vende».\nMariana: Un editorial no es la opinión de una periodista. Es la opinión de todo el periódico.\nLuego, una estudiante pidió permiso para hacer un documental sobre el café.\nHernando se puso la gorra. El documental no tenía nombre, pero ya tenía estrella.\nMariana: Este es el acontecimiento del año. A tres semanas de las elecciones, nadie en la alcaldía quiere una foto con Altamira.\nTomás: ¿El acontecimiento del año? Es un café con un loro.\nVale: Una vez le dije a Hernando que usted tenía demasiados recuerdos de Tomás. Hoy usted me hace sentir orgullo, nada más.\nMariana le tomó la mano, y las dos se rieron de Hernando, que practicaba su mejor cara para la cámara.\nA las once llegó un audio de Taganga.\nYesid: Mi abuela vio a su loro en la televisión. Dice que los espera en Taganga.\nEn la pantalla: «Mañana a las nueve, la alcaldía habla del caso Rengifo. A las diez, Grupo Altamira responde».",
+  "gloss": [
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "titular",
+      "en": "headline"
+    },
+    {
+      "es": "software",
+      "en": "software"
+    },
+    {
+      "es": "un reportaje que tiene a Bogotá hablando",
+      "en": "a report that has all of Bogotá talking"
+    },
+    {
+      "es": "Hoy es mi mesa.",
+      "en": "Today it's my table."
+    },
+    {
+      "es": "el loro tenía más visitas que el artículo",
+      "en": "the parrot had more views than the article"
+    },
+    {
+      "es": "Ese loro trabaja gratis para su reportaje.",
+      "en": "That parrot is working for your report for free."
+    },
+    {
+      "es": "la policía me tenía miedo",
+      "en": "the police were scared of me"
+    },
+    {
+      "es": "ya tenía estrella",
+      "en": "it already had a star"
+    },
+    {
+      "es": "A tres semanas de las elecciones",
+      "en": "Three weeks before the elections"
+    },
+    {
+      "es": "Hoy usted me hace sentir orgullo, nada más.",
+      "en": "Today you just make me feel proud."
+    },
+    {
+      "es": "su mejor cara para la cámara",
+      "en": "his best face for the camera"
+    },
+    {
+      "es": "el caso Rengifo",
+      "en": "the Rengifo case"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why is Mariana annoyed in the morning?",
+      "options": [
+        "The TV gets her name wrong",
+        "After six months of work, people care more about the video of Simón than about her article",
+        "Altamira has called her",
+        "Nobody has read the article"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "How does Tomás make sense of what is happening?",
+      "options": [
+        "He calls his old boss",
+        "Like a software bug: every error has a cause and a consequence",
+        "He asks Simón",
+        "He reads the editorial"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Qué trae doña Gloria al café?",
+      "options": [
+        "Una hoja con cuatrocientas firmas",
+        "Un pastel para Mariana",
+        "Una cámara",
+        "Un periódico de 1977"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Hernando put on his cap?",
+      "options": [
+        "He is leaving for the clinic",
+        "He hopes to be the star of the student's documentary",
+        "It is cold",
+        "Vale tells him to"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does Yesid's voice note say?",
+      "options": [
+        "He never wants to hear from them again",
+        "His grandmother saw their parrot on TV and is expecting them in Taganga",
+        "He is coming to Bogotá",
+        "He works for Altamira"
+      ],
+      "answer": 1
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What were the other stories on the news before the café?",
+      "options": [
+        "A flood, a fire and the elections",
+        "A football match and a strike",
+        "A robbery and a wedding",
+        "The weather"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "When was Gloria's first protest, according to her?",
+      "options": [
+        "In 1977",
+        "Last year",
+        "In 1990",
+        "She has never been to one"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is the title of the newspaper's editorial?",
+      "options": [
+        "«La ciudad no se vende»",
+        "«Qué locura»",
+        "«Ficción»",
+        "«Gracias, vecino»"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "At nine tomorrow the mayor's office speaks about Rengifo, and at ten Altamira gives his answer. By then the café will be full of reporters, and every one of them wants to hear from Tomás.",
+  "requires": [
+    "c:claro-listo",
+    "c:era",
+    "c:me-hace-una-rebajita",
+    "c:no-se",
+    "c:tienes",
+    "c:una-vez",
+    "g:adjective-agreement",
+    "g:cada-cualquier",
+    "g:comparatives",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:le-doubling",
+    "g:passive-se",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:quantifiers",
+    "g:relative-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:verbs-of-change",
+    "p:dates-years",
+    "p:demonstratives-basic",
+    "p:exclamations-basic",
+    "p:lavarse-las-manos",
+    "p:me-te-nos-objects",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:personal-a",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:telling-time",
+    "p:tener-hambre",
+    "p:time-sequence-basic"
+  ],
+  "lexemes": [
+    "l:abuela",
+    "l:acontecimiento",
+    "l:alcaldía",
+    "l:antes",
+    "l:artículo",
+    "l:audio",
+    "l:año",
+    "l:café",
+    "l:cara",
+    "l:caso",
+    "l:causa",
+    "l:ciudad",
+    "l:consecuencia",
+    "l:cámara",
+    "l:decir",
+    "l:documental",
+    "l:día",
+    "l:editorial",
+    "l:elección",
+    "l:entrar",
+    "l:error",
+    "l:espera",
+    "l:estrella",
+    "l:estudiante",
+    "l:firma",
+    "l:firmar",
+    "l:foto",
+    "l:fácil",
+    "l:gorra",
+    "l:gratis",
+    "l:gritar",
+    "l:hablar",
+    "l:hacer",
+    "l:hoja",
+    "l:hombre",
+    "l:hoy",
+    "l:incendio",
+    "l:inundación",
+    "l:llegar",
+    "l:lleno",
+    "l:locura",
+    "l:loro",
+    "l:manifestación",
+    "l:mano",
+    "l:mañana",
+    "l:mediodía",
+    "l:mejor",
+    "l:mes",
+    "l:mesa",
+    "l:miedo",
+    "l:mija",
+    "l:nombre",
+    "l:noticias",
+    "l:opinión",
+    "l:orgullo",
+    "l:pantalla",
+    "l:país",
+    "l:pedir",
+    "l:periodista",
+    "l:periódico",
+    "l:permiso",
+    "l:plaza",
+    "l:policía",
+    "l:ponerse",
+    "l:practicar",
+    "l:presentador",
+    "l:protesta",
+    "l:protestar",
+    "l:publicar",
+    "l:querer",
+    "l:qué",
+    "l:recuerdo",
+    "l:reportaje",
+    "l:responder",
+    "l:reír",
+    "l:saber",
+    "l:salir",
+    "l:semana",
+    "l:sentir",
+    "l:ser",
+    "l:tarde",
+    "l:televisión",
+    "l:tener",
+    "l:titularse",
+    "l:tomar",
+    "l:trabajar",
+    "l:trabajo",
+    "l:vender",
+    "l:ventana",
+    "l:ver",
+    "l:vez",
+    "l:visitar"
+  ]
+}

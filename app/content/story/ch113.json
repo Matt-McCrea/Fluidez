@@ -1,0 +1,308 @@
+{
+  "id": "ch113",
+  "unit": "u38",
+  "title": "Primera página",
+  "text": "A las seis y media, Tomás marcó el número de la servilleta. Contestó una voz joven, con ruido de motor detrás.\nTomás: Buenos días. Soy Tomás Herrera, de Bogotá.\nYesid: Ah, usted habló en la radio. Mi abuelo era Joaquín Herrera.\nNadie en el café respiró. Hasta Simón se quedó callado.\nTomás: ¿Era? ¿Su abuelo está vivo?\nYesid: Eso no se lo digo por teléfono. La semana pasada me llamaron dos señores de Bogotá, con mucha plata. Ustedes se oyen parecidos.\nTomás: No somos parecidos. Yo no tengo plata.\nYesid: Eso sí se lo creo. Ahora tengo seis turistas en el barco y un nene que llora. Después lo llamo.\nHernando: Dijo «era». ¿Ustedes lo oyeron?\nVale: También dijo «después lo llamo». Quédese con eso.\nA las siete llegó Mariana con diez periódicos. Hernando leyó en voz alta, como un presentador de televisión.\n«En un solo año, Grupo Altamira compró seis edificios en La Candelaria. Todos los permisos fueron firmados por el mismo hombre: el doctor Rengifo, jefe de permisos de la alcaldía. Dos casas de 1890 fueron tumbadas de noche».\nVale: ¿De noche? Eso es de ladrones.\nMariana: A las tres de la mañana. Los vecinos fueron despertados por las máquinas.\nHernando: «Grupo Altamira no accedió a hablar con este diario. El despacho del doctor Rengifo estaba cerrado: según la alcaldía, el doctor está de vacaciones». ¿En San Andrés, por casualidad?\nMariana: Eso no lo puedo escribir. Pero lo pensé.\nGloria: ¡Tumbaron dos casas de 1890 en una sola noche! ¡Qué locura!\nSimón: ¡Qué locura! ¡Locura!\nDebajo del título decía: «Por Mariana Cifuentes».\nTomás: De niños, escribías periódicos a mano y me los vendías a cien pesos.\nMariana: Y nunca me pagaste.\nTomás le dio un billete de mil.\nTomás: Con intereses.\nMariana se rio, con los ojos brillantes. Vale cortó el artículo y lo pegó en la pared, junto a la foto de Rosa.\nA medianoche, el artículo ya había sido compartido ochenta mil veces, y llegó un mensaje de Santa Marta: «Ya leí el periódico. Ahora sé de qué lado están ustedes».",
+  "gloss": [
+    {
+      "es": "servilleta",
+      "en": "napkin"
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "Tumbaron",
+      "en": "They knocked down"
+    },
+    {
+      "es": "tumbadas",
+      "en": "knocked down"
+    },
+    {
+      "es": "con ruido de motor detrás",
+      "en": "with the noise of an engine behind it"
+    },
+    {
+      "es": "Ustedes se oyen parecidos.",
+      "en": "You all sound alike."
+    },
+    {
+      "es": "Eso sí se lo creo.",
+      "en": "That I do believe."
+    },
+    {
+      "es": "Quédese con eso.",
+      "en": "Hold on to that."
+    },
+    {
+      "es": "Eso es de ladrones.",
+      "en": "That's what thieves do."
+    },
+    {
+      "es": "Los vecinos fueron despertados por las máquinas.",
+      "en": "The neighbours were woken up by the machines."
+    },
+    {
+      "es": "Grupo Altamira no accedió a hablar con este diario.",
+      "en": "Grupo Altamira declined to speak to this newspaper."
+    },
+    {
+      "es": "por casualidad",
+      "en": "by any chance"
+    },
+    {
+      "es": "un billete de mil",
+      "en": "a thousand-peso note"
+    },
+    {
+      "es": "Con intereses.",
+      "en": "With interest."
+    },
+    {
+      "es": "Ahora sé de qué lado están ustedes.",
+      "en": "Now I know whose side you're on."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why won't Yesid say on the phone whether his grandfather is alive?",
+      "options": [
+        "He doesn't care about his grandfather",
+        "Two men from Bogotá with lots of money already called him, and he doesn't trust callers",
+        "The line is too bad",
+        "Tomás doesn't let him finish"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "According to Mariana's article, what do the six permits have in common?",
+      "options": [
+        "They were all signed by the same man, Dr Rengifo",
+        "They were all signed in 1890",
+        "They were all refused",
+        "They were all for the café"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Hernando ask whether Rengifo is on holiday in San Andrés?",
+      "options": [
+        "He wants to go there too",
+        "The article says so",
+        "The email they found earlier thanked Rengifo for the permits with a trip to San Andrés",
+        "Gloria told him"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "¿Qué hace Vale con el artículo?",
+      "options": [
+        "Lo tira a la basura",
+        "Lo corta y lo pega en la pared, junto a la foto de Rosa",
+        "Se lo da a Hernando",
+        "Lo lee en la radio"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why does Tomás give Mariana a thousand pesos?",
+      "options": [
+        "To pay for the newspaper",
+        "To pay back, with interest, the newspapers she sold him as a child",
+        "For a tinto",
+        "Because he lost a bet"
+      ],
+      "answer": 1
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "Why were the neighbours awake at three in the morning?",
+      "options": [
+        "Simón was shouting",
+        "The machines knocking down the houses woke them",
+        "There was a party",
+        "Mariana called them"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What was written under the title of the article?",
+      "options": [
+        "«Por Mariana Cifuentes»",
+        "«Qué locura»",
+        "«Grupo Altamira»",
+        "«La Esquina de Rosa»"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who is on Yesid's boat during the call?",
+      "options": [
+        "His grandmother",
+        "Six tourists and a crying little boy",
+        "Two men from Bogotá",
+        "Nobody"
+      ],
+      "answer": 1
+    }
+  ],
+  "hook": "Mariana's article has been shared eighty thousand times, and Yesid has finally decided whose side they are on. Tomorrow the whole country wakes up to the story, and the café ends up on the morning news.",
+  "requires": [
+    "c:ayer-anoche",
+    "c:era",
+    "c:hola-buenos-dias",
+    "c:no-se",
+    "c:puedo",
+    "c:segun",
+    "c:tengo",
+    "g:adjective-agreement",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:passive-ser",
+    "g:pluperfect",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:cerca-de",
+    "p:demonstratives-basic",
+    "p:entonces-de-repente",
+    "p:exclamations-basic",
+    "p:frequency-scale",
+    "p:me-te-nos-objects",
+    "p:numbers-un-una",
+    "p:por-casualidad",
+    "p:por-la-manana",
+    "p:posicion-precisa",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:ver-oir-bien-mal"
+  ],
+  "lexemes": [
+    "l:abuelo",
+    "l:acceder",
+    "l:ahora",
+    "l:alcaldía",
+    "l:alto",
+    "l:artículo",
+    "l:año",
+    "l:barco",
+    "l:billete",
+    "l:brillante",
+    "l:bueno",
+    "l:café",
+    "l:callado",
+    "l:casa",
+    "l:casualidad",
+    "l:cerrar",
+    "l:compartir",
+    "l:comprar",
+    "l:contestar",
+    "l:cortar",
+    "l:creer",
+    "l:dar",
+    "l:debajo",
+    "l:decir",
+    "l:despacho",
+    "l:despertarse",
+    "l:después",
+    "l:detrás",
+    "l:diario",
+    "l:doctor",
+    "l:día",
+    "l:edificio",
+    "l:escribir",
+    "l:estar",
+    "l:firmar",
+    "l:foto",
+    "l:hablar",
+    "l:hombre",
+    "l:interés",
+    "l:jefe",
+    "l:joven",
+    "l:juntar",
+    "l:lado",
+    "l:ladrón",
+    "l:leer",
+    "l:llamar",
+    "l:llegar",
+    "l:llorar",
+    "l:locura",
+    "l:mano",
+    "l:marcar",
+    "l:mañana",
+    "l:medianoche",
+    "l:mensaje",
+    "l:motor",
+    "l:máquina",
+    "l:nene",
+    "l:niño",
+    "l:noche",
+    "l:número",
+    "l:ojo",
+    "l:oír",
+    "l:pagar",
+    "l:parecer",
+    "l:parecido",
+    "l:pared",
+    "l:pasar",
+    "l:pegar",
+    "l:pensar",
+    "l:periódico",
+    "l:permiso",
+    "l:peso",
+    "l:plata",
+    "l:poder",
+    "l:presentador",
+    "l:quedarse",
+    "l:qué",
+    "l:radio",
+    "l:respirar",
+    "l:reír",
+    "l:ruido",
+    "l:saber",
+    "l:semana",
+    "l:ser",
+    "l:servilleta",
+    "l:señor",
+    "l:televisión",
+    "l:teléfono",
+    "l:tener",
+    "l:tumbar",
+    "l:tumbarse",
+    "l:turista",
+    "l:título",
+    "l:vacación",
+    "l:vecino",
+    "l:vender",
+    "l:vez",
+    "l:vivo",
+    "l:voz"
+  ]
+}

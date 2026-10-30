@@ -1,0 +1,303 @@
+{
+  "id": "ch115",
+  "unit": "u38",
+  "title": "Ficción",
+  "text": "A las ocho y media, a Tomás se le cayó un botón de la camisa. Vale se lo cosió en un minuto.\nAfuera había doce periodistas, tres cámaras y un señor que les vendía empanadas.\nA las nueve, todo el café miró la televisión.\nAlcaldía: El doctor Rengifo fue suspendido debido a las preguntas sobre los permisos de La Candelaria. Las seis compras serán revisadas una por una.\nEl café entero gritó. Hernando se levantó tan rápido que Vale lo tomó del brazo.\nVale: Despacio, que usted tiene el corazón de vacaciones.\nA las diez habló Ricardo Altamira, con una sonrisa perfecta.\nAltamira: Ese artículo es ficción. Las casas fueron tumbadas a causa de su mal estado, ya que eran un peligro para los vecinos.\nGloria: ¿Un peligro? ¡Yo viví sesenta años al lado de ese peligro!\nEl café se llenó de cables, luces y preguntas.\nPeriodista: Señor Herrera, ¿qué piensa del artículo?\nTomás tragó.\nTomás: Altamira dice que es ficción. Puesto que es ficción, ¿por qué no contestó las preguntas de Mariana?\nSimón: ¡Ficción! ¡Ficción!\nLas tres cámaras se dieron la vuelta hacia la planta.\nPeriodista: ¿Y por qué no vende? Altamira paga muy bien.\nTomás tragó otra vez y miró la foto de Rosa.\nTomás: No vendo, ya que este café no es mío. Es de un barrio. Rosa lo abrió para la gente, y la gente lo salvó con una vaca.\nHernando: Eso no se explica en televisión, mija. Venga un día a tomar tinto.\nVale: Té, Hernando. Usted toma té.\nA mediodía, el video ya recorría el país. Por la tarde, el café estaba lleno de polvo.\nTomás: Por hablar en televisión, ahora todo el país sabe que mi español es de Toronto.\nVale: También sabe que no vendes.\nHernando: Rosa recorría este salón cada mañana, mesa por mesa. Hoy usted hizo lo mismo.\nA las siete llamó un número desconocido.\nSeñora: Le habla la doctora Pinzón, del comité de patrimonio. Necesitamos una declaración escrita sobre la importancia de este café. Tiene dos semanas.\nVale le dio un cuaderno nuevo.\nVale: Entonces empiezas hoy.",
+  "gloss": [
+    {
+      "es": "cosió",
+      "en": "sewed"
+    },
+    {
+      "es": "tumbadas",
+      "en": "knocked down"
+    },
+    {
+      "es": "Las seis compras serán revisadas una por una.",
+      "en": "The six purchases will be reviewed one by one."
+    },
+    {
+      "es": "usted tiene el corazón de vacaciones",
+      "en": "your heart is on holiday"
+    },
+    {
+      "es": "a causa de su mal estado",
+      "en": "because of their poor condition"
+    },
+    {
+      "es": "cables",
+      "en": "cables"
+    },
+    {
+      "es": "el video ya recorría el país",
+      "en": "the video was already going round the country"
+    },
+    {
+      "es": "la gente lo salvó con una vaca",
+      "en": "people saved it with a whip-round"
+    },
+    {
+      "es": "un número desconocido",
+      "en": "an unknown number"
+    },
+    {
+      "es": "comité",
+      "en": "committee"
+    },
+    {
+      "es": "una declaración escrita",
+      "en": "a written statement"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why was Dr Rengifo suspended?",
+      "options": [
+        "Because of the questions about the La Candelaria permits",
+        "Because he went on holiday",
+        "Because Altamira asked",
+        "Because of Gloria's protest"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How does Altamira explain knocking down the two houses?",
+      "options": [
+        "He needed space for parking",
+        "They were in such poor condition that they were a danger to the neighbours",
+        "The mayor ordered it",
+        "He didn't know about it"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "How does Tomás turn Altamira's own word against him?",
+      "options": [
+        "He calls Altamira a writer",
+        "He says that if it's fiction, Altamira should have answered Mariana's questions",
+        "He reads a novel on TV",
+        "He asks Simón to say it"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Por qué no vende Tomás, según él?",
+      "options": [
+        "Porque Altamira paga poco",
+        "Porque el café no es suyo: es de un barrio",
+        "Porque Vale no quiere",
+        "Porque no tiene papeles"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does the heritage committee ask for?",
+      "options": [
+        "A visit to the café",
+        "A written statement about why the café matters, within two weeks",
+        "A video of Simón",
+        "Rosa's letters"
+      ],
+      "answer": 1
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "Why did Tomás need Vale's help before the cameras arrived?",
+      "options": [
+        "A button came off his shirt",
+        "He lost his phone",
+        "He couldn't find his cap",
+        "He forgot his speech"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Vale correct when Hernando invites the reporter for a tinto?",
+      "options": [
+        "That he drinks tea now, not tinto",
+        "That the café is closed",
+        "That tinto is expensive",
+        "That the reporter doesn't drink coffee"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who was selling empanadas outside?",
+      "options": [
+        "A man selling them to the reporters",
+        "Doña Gloria",
+        "Jhon Fredy",
+        "Vale"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "The heritage committee wants a written statement in two weeks, and Tomás has never written anything that long in any language. Tomorrow Vale and Mariana become his editors, and neither of them is gentle.",
+  "requires": [
+    "c:bien-y-tu",
+    "c:entonces-bueno",
+    "c:no-se",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:cada-cualquier",
+    "g:causal-advanced",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:passive-ser",
+    "g:por-para-1",
+    "g:possessives-stressed",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:se-accidental",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cerca-de",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:la-gente-singular",
+    "p:lleno-libre",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:pensar-en",
+    "p:por-la-manana",
+    "p:por-que-no",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:que-opinas-de",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:telling-time",
+    "p:veces-al"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:afuera",
+    "l:ahora",
+    "l:alcaldía",
+    "l:artículo",
+    "l:año",
+    "l:barrio",
+    "l:bien",
+    "l:botón",
+    "l:brazo",
+    "l:cable",
+    "l:caerse",
+    "l:café",
+    "l:camisa",
+    "l:casa",
+    "l:causa",
+    "l:comité",
+    "l:compra",
+    "l:contestar",
+    "l:corazón",
+    "l:coser",
+    "l:cuaderno",
+    "l:cámara",
+    "l:dar",
+    "l:darse",
+    "l:deber",
+    "l:decir",
+    "l:declaración",
+    "l:desconocido",
+    "l:despacio",
+    "l:doctor",
+    "l:día",
+    "l:empanada",
+    "l:empezar",
+    "l:entero",
+    "l:escribir",
+    "l:español",
+    "l:estado",
+    "l:estar",
+    "l:explicar",
+    "l:ficción",
+    "l:foto",
+    "l:gente",
+    "l:gritar",
+    "l:hablar",
+    "l:hacer",
+    "l:hoy",
+    "l:importancia",
+    "l:lado",
+    "l:levantarse",
+    "l:llamar",
+    "l:llenar",
+    "l:lleno",
+    "l:luz",
+    "l:mal",
+    "l:mañana",
+    "l:mediodía",
+    "l:mesa",
+    "l:mija",
+    "l:minuto",
+    "l:mirar",
+    "l:necesitar",
+    "l:nuevo",
+    "l:número",
+    "l:pagar",
+    "l:patrimonio",
+    "l:país",
+    "l:peligro",
+    "l:pensar",
+    "l:perfecto",
+    "l:periodista",
+    "l:permiso",
+    "l:planta",
+    "l:polvo",
+    "l:poner",
+    "l:pregunta",
+    "l:qué",
+    "l:recorrer",
+    "l:revisar",
+    "l:rápido",
+    "l:saber",
+    "l:salvar",
+    "l:salón",
+    "l:semana",
+    "l:ser",
+    "l:señor",
+    "l:señora",
+    "l:sonrisa",
+    "l:suspender",
+    "l:tarde",
+    "l:televisión",
+    "l:tener",
+    "l:tinto",
+    "l:tomar",
+    "l:tragar",
+    "l:tumbarse",
+    "l:té",
+    "l:vaca",
+    "l:vacación",
+    "l:vecino",
+    "l:vender",
+    "l:venir",
+    "l:vez",
+    "l:video",
+    "l:vivir",
+    "l:vuelta"
+  ]
+}
