@@ -2,7 +2,7 @@
   "id": "ch026",
   "unit": "u10",
   "title": "La fila",
-  "text": "A las seis, Vale abre la puerta del café, y en la calle ya hay una fila.\nEl número veinte de la fila es Hernando.\nHernando: ¡Cuarenta años en este café, y hoy hago fila!\nEn su celular, Hernando lee la reseña de la bloguera: «La Esquina de Rosa. El servicio: surreal. La comida: número uno en La Candelaria».\nVale: ¿Surreal? ¿Qué quiere decir eso?\nTomás: Quiere decir... el mesero.\nSimón: ¡No la recomiendo! ¡No la recomiendo!\nUna señora: ¿Hay buñuelos? Seis para llevar, por favor. Y dos almojábanas.\nUn estudiante: ¿El pandebono y la almojábana son iguales?\nVale: No, pero se parecen: los dos son salados y llevan queso. El buñuelo también, pero es grande y redondo, como una pelota.\nSimón: ¡Se parecen! ¡Se parecen!\nEstudiante: Entonces, un buñuelo grande y un pandebono, por favor.\nHernando: ¿Y para el cliente número uno?\nVale: Usted es el número veinte, don Hernando. Pero para usted, un tinto de la casa.\nA las nueve, la fila llega hasta la otra esquina. Allá hay un hombre con traje. Mira la fila y no está contento. Es Ricardo Altamira.\nVale: Tomás, este buñuelo es para ti. Sin ti no hay fila.\nTomás: ¿Y el lunes a las siete? ¿Todavía quieres hablar conmigo?\nVale: Hoy es lunes, Tomás. Sí, contigo sí. A las siete.\nTomás come una almojábana y cierra los ojos. Tiene seis años otra vez, y Rosa canta.",
+  "text": "A las seis, Vale abre el café, y ya hay una fila en la calle.\nEl número veinte de la fila es Hernando.\nHernando: ¡Cuarenta años en este café, y hoy hago fila!\nEn su celular, Hernando lee la reseña de la bloguera: «La Esquina de Rosa. El servicio: surreal. La comida: número uno en La Candelaria».\nVale: ¿Surreal? ¿Qué quiere decir eso?\nTomás: Quiere decir... el mesero.\nSimón: ¡No la recomiendo!\nUna señora: Seis buñuelos para llevar, por favor.\nHernando: ¿Y para el cliente número uno?\nVale: Usted es el número veinte, don Hernando. Pero para usted, un tinto de la casa.\nA las nueve, la fila llega hasta la otra esquina. Allá, un hombre con traje mira la fila y no está contento. Es Ricardo Altamira.\nVale: Tomás, este buñuelo es para ti. Sin ti no hay fila.\nTomás: ¿Todavía quieres hablar conmigo el lunes?\nVale: Hoy es lunes, Tomás. Sí, contigo sí. A las siete.\nTomás come una almojábana y cierra los ojos. Tiene seis años otra vez, y Rosa canta.",
   "gloss": [
     {
       "es": "la reseña",
@@ -27,14 +27,6 @@
     {
       "es": "Quiere decir... el mesero.",
       "en": "It means... the waiter."
-    },
-    {
-      "es": "redondo",
-      "en": "round"
-    },
-    {
-      "es": "como una pelota",
-      "en": "like a ball"
     },
     {
       "es": "un tinto de la casa",
@@ -89,11 +81,11 @@
       "answer": 0
     },
     {
-      "q": "¿Cómo son el pandebono y la almojábana?",
+      "q": "¿Qué le da Vale a don Hernando?",
       "options": [
-        "Se parecen, y los dos son salados",
-        "Son muy dulces",
-        "Son iguales"
+        "Un tinto de la casa",
+        "Seis buñuelos",
+        "Una almojábana"
       ],
       "answer": 0
     }
@@ -123,7 +115,7 @@
     {
       "q": "What does the lady in the queue order?",
       "options": [
-        "Six buñuelos to take away and two almojábanas",
+        "Six buñuelos to take away",
         "A pandebono",
         "An ajiaco",
         "A tinto"
@@ -132,13 +124,11 @@
     }
   ],
   "requires": [
-    "c:entonces-bueno",
     "c:hago-salgo-vengo",
     "c:hay",
     "c:para-llevar",
     "c:por-favor",
     "c:tienes",
-    "g:adjective-agreement",
     "g:direct-objects",
     "g:estar-location-states",
     "g:gender-articles",
@@ -147,7 +137,6 @@
     "g:present-ar",
     "g:present-er-ir",
     "g:questions",
-    "g:reflexive-routine",
     "g:ser-identity",
     "g:stem-boot",
     "g:verb-infinitive",
@@ -156,7 +145,6 @@
     "p:con-sin",
     "p:days-el-lunes",
     "p:demonstratives-basic",
-    "p:nos-vemos-a-las",
     "p:otro-no-article",
     "p:para-inf",
     "p:possessives-basic",
@@ -184,15 +172,12 @@
     "l:decir",
     "l:esquina",
     "l:estar",
-    "l:estudiante",
     "l:favor",
     "l:fila",
-    "l:grande",
     "l:hablar",
     "l:hacer",
     "l:hombre",
     "l:hoy",
-    "l:igual",
     "l:leer",
     "l:llegar",
     "l:llevar",
@@ -201,18 +186,11 @@
     "l:mirar",
     "l:número",
     "l:ojo",
-    "l:pandebono",
     "l:parar",
-    "l:parecerse",
-    "l:pelota",
-    "l:puerta",
     "l:querer",
-    "l:queso",
     "l:qué",
     "l:recomendar",
-    "l:redondo",
     "l:reseña",
-    "l:salado",
     "l:ser",
     "l:servicio",
     "l:señora",
