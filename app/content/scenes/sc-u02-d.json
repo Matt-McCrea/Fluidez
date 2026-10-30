@@ -1,0 +1,203 @@
+{
+  "id": "sc-u02-d",
+  "unit": "u02",
+  "title": "A knock at half past five",
+  "brief": "You're Tomás. It's half past five in the morning, the café isn't open yet, and a student is knocking on the door. She's about your age and calls you tú, so use tú back. Find out what she needs, and tell her a little about yourself.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Hola. Perdón, ¿el café está abierto?",
+      "npcEn": "Hi. Sorry, is the café open?",
+      "intent": "Say no, it isn't open.",
+      "accept": [
+        "No, el café no está abierto.",
+        "No. Perdón, no está abierto.",
+        "Perdón, no. No está abierto."
+      ],
+      "require": [
+        {
+          "type": "negation"
+        },
+        {
+          "type": "containsWord",
+          "word": "abierto",
+          "label": "open is abierto"
+        }
+      ],
+      "focus": "c:abierto-cerrado",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Ay, no. Es que mi libro de inglés está en el café.",
+      "npcEn": "Oh no. It's just that my English book is in the café.",
+      "intent": "Tell her yes, her book is in the office.",
+      "accept": [
+        "Sí, tu libro está en la oficina.",
+        "Sí, está en la oficina.",
+        "Tu libro está en la oficina."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "estar",
+          "tense": "presente",
+          "person": "él/ella",
+          "label": "where something is: está"
+        },
+        {
+          "type": "containsWord",
+          "word": "oficina"
+        }
+      ],
+      "focus": "g:estar-location-states",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¡Ay, gracias! Estoy muy nerviosa, y muy cansada.",
+      "npcEn": "Oh, thank you! I'm very nervous, and very tired.",
+      "intent": "Ask her what she studies, and where.",
+      "accept": [
+        "¿Qué estudias? ¿Y dónde estudias?",
+        "¿Dónde estudias? ¿Qué estudias?",
+        "¿Qué estudias y dónde?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "verbForm",
+          "inf": "estudiar",
+          "tense": "presente",
+          "person": "tú",
+          "label": "you study (tú): estudias"
+        }
+      ],
+      "focus": "g:questions",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Estudio inglés en la universidad. ¿Y tú? ¿A qué te dedicas?",
+      "npcEn": "I study English at the university. And you? What do you do?",
+      "intent": "Say you're an engineer and you live in La Candelaria.",
+      "accept": [
+        "Soy ingeniero y vivo en La Candelaria.",
+        "Vivo en La Candelaria. Soy ingeniero.",
+        "Soy ingeniero, de Toronto. Vivo en La Candelaria."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "vivir",
+          "tense": "presente",
+          "person": "yo",
+          "label": "I live is vivo"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "un ingeniero"
+          ],
+          "label": "a job after soy takes no un"
+        }
+      ],
+      "focus": "g:present-er-ir",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Ah, bueno. ¿Y Vale? ¿Está en el café? Vale y yo somos de Medellín.",
+      "npcEn": "Oh, right. And Vale? Is she in the café? Vale and I are from Medellín.",
+      "intent": "Say no, Vale is at the bank, and she's very busy.",
+      "accept": [
+        "No, Vale está en el banco. Está muy ocupada.",
+        "No, está en el banco. Está muy ocupada.",
+        "No. Vale está muy ocupada, está en el banco."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "banco"
+        },
+        {
+          "type": "containsWord",
+          "word": "ocupada",
+          "label": "Vale is a woman: ocupada"
+        }
+      ],
+      "focus": "g:adjective-agreement",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Ay, Vale. Bueno, ¡muchas gracias! Eres muy amable.",
+      "npcEn": "Oh, Vale. Well, thank you very much! You're very kind.",
+      "intent": "Say it's a pleasure, and say goodbye.",
+      "accept": [
+        "Con mucho gusto. ¡Chao!",
+        "De nada, con mucho gusto. Chao.",
+        "¡Con mucho gusto! Chao."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "con mucho gusto",
+          "flags": "i",
+          "label": "it's a pleasure: con mucho gusto"
+        }
+      ],
+      "focus": "c:con-mucho-gusto",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-que-te-dedicas",
+    "c:abierto-cerrado",
+    "c:bien-y-tu",
+    "c:chao-nos-vemos",
+    "c:con-mucho-gusto",
+    "c:entonces-bueno",
+    "c:es-que",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:mucho-gusto",
+    "c:muy-amable",
+    "c:perdon-disculpe",
+    "c:vivo-en",
+    "g:adjective-agreement",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:ser-identity",
+    "l:abrir",
+    "l:amable",
+    "l:banco",
+    "l:bueno",
+    "l:café",
+    "l:cansado",
+    "l:dedicar",
+    "l:dónde",
+    "l:estar",
+    "l:estudiar",
+    "l:gusto",
+    "l:ingeniero",
+    "l:inglés",
+    "l:libro",
+    "l:nervioso",
+    "l:ocupado",
+    "l:oficina",
+    "l:perdón",
+    "l:qué",
+    "l:ser",
+    "l:universidad",
+    "l:vivir",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:ser-profession-no-article"
+  ]
+}
