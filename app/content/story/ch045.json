@@ -2,7 +2,7 @@
   "id": "ch045",
   "unit": "u17",
   "title": "Tres vueltas",
-  "text": "Lunes, nueve de la noche. Mariana escribía en su cuaderno, en la mesa del frente.\nMariana: ¿Doce sillones morados? ¿Para un hotel en la esquina de Rosa?\nTomás: Eso dijo el vendedor. Calle 11 con carrera 4.\nMariana: Si es verdad, Altamira ya cree que el café es suyo. Mañana llamo al vendedor. Si el señor de Altamira le dio un nombre, lo consigo.\nMariana cerró el cuaderno.\nMariana: Bueno. Ahora, la salsa. El viernes a las ocho, en una discoteca de La Candelaria. ¿Vienes?\nTomás: No sé bailar salsa. En Toronto bailaba en la cocina, con la radio.\nMariana: Entonces tienes tarea. Si aprendes tres vueltas antes del viernes, vamos. Si no, otro día.\nTomás: ¿Tres vueltas en cuatro días?\nTomás lo pensó un momento.\nTomás: Bueno. Me encantaría.\nSimón: ¡Me encantaría! ¡Me encantaría!\nVale salió de la cocina con el celular en la mano.\nVale: Tomás, ¡mi hermana Camila se va a casar!\nTomás: ¡Qué bueno!\nVale: El próximo mes hay una fiesta en Medellín, en la casa de mi mamá. Y mi mamá quiere conocer al canadiense normal. Si quieres, vienes conmigo.\nTomás: Me parece perfecto.\nVale miró a Mariana, y después miró el cuaderno.\nVale: ¿Y el viernes? ¿Salsa?\nMariana: Si aprende tres vueltas, sí. Si no, baila con Simón.\nSimón: ¡Me encantaría! ¡Me encantaría!\nEn la puerta estaba don Hernando, con tres papeles amarillos en la mano.\nHernando: El domingo, todos conmigo. Juegan Santa Fe y Millonarios. Si no van, no vuelvo al café.\nTomás: Me parece bien.\nVale: Tomás, ¿tú dices que sí a todo?\nTomás tenía cuatro días, tres planes y cero vueltas.",
+  "text": "Lunes, nueve de la noche. Mariana escribía en su cuaderno, en la mesa del frente.\nMariana: ¿Doce sillones morados? ¿Para un hotel en la esquina de Rosa?\nTomás: Eso dijo el vendedor.\nMariana: Si es verdad, Altamira ya cree que el café es suyo. Mañana llamo al vendedor. Si el señor de Altamira le dio un nombre, lo consigo.\nMariana: Bueno. Ahora, la salsa. El viernes a las ocho, en una discoteca de La Candelaria. ¿Vienes?\nTomás: No sé bailar salsa. En Toronto bailaba en la cocina, con la radio.\nMariana: Entonces tienes tarea. Si aprendes tres vueltas antes del viernes, vamos. Si no, otro día.\nTomás: ¿Tres vueltas en cuatro días?\nTomás lo pensó un momento.\nTomás: Bueno. Me encantaría.\nVale salió de la cocina con el celular en la mano.\nVale: Tomás, ¡mi hermana Camila se va a casar!\nTomás: ¡Qué bueno!\nVale: El próximo mes hay una fiesta en Medellín, en la casa de mi mamá. Y mi mamá quiere conocer al canadiense normal. Si quieres, vienes conmigo.\nTomás: Me parece perfecto.\nVale: ¿Y el viernes? ¿Salsa?\nMariana: Si aprende tres vueltas, sí. Si no, baila con Simón.\nSimón: ¡Me encantaría! ¡Me encantaría!\nEn la puerta estaba don Hernando, con tres papeles amarillos en la mano.\nHernando: El domingo, todos conmigo. Juegan Santa Fe y Millonarios. Si no van, no vuelvo al café.\nTomás: Me parece bien.\nVale: Tomás, ¿tú dices que sí a todo?\nTomás tenía cuatro días, tres planes y cero vueltas.",
   "gloss": [
     {
       "es": "sillones",
@@ -169,10 +169,8 @@
     "p:possessives-basic",
     "p:saber-conocer",
     "p:senor-don-article",
-    "p:street-names",
     "p:telling-time",
-    "p:time-pasado-que-viene",
-    "p:time-sequence-basic"
+    "p:time-pasado-que-viene"
   ],
   "lexemes": [
     "l:ahora",
@@ -183,14 +181,11 @@
     "l:bien",
     "l:bueno",
     "l:café",
-    "l:calle",
     "l:canadiense",
-    "l:carrera",
     "l:casa",
     "l:casarse",
     "l:celular",
     "l:cero",
-    "l:cerrar",
     "l:cocina",
     "l:conocer",
     "l:conseguir",
@@ -198,7 +193,6 @@
     "l:cuaderno",
     "l:dar",
     "l:decir",
-    "l:después",
     "l:discoteca",
     "l:domingo",
     "l:día",
@@ -220,7 +214,6 @@
     "l:mañana",
     "l:mes",
     "l:mesa",
-    "l:mirar",
     "l:momento",
     "l:morado",
     "l:noche",
