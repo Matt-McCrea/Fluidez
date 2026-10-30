@@ -545,5 +545,175 @@
       "l:tener",
       "l:ver"
     ]
+  },
+  {
+    "id": "w-u01-16",
+    "unit": "u01",
+    "prompt": "A new neighbour opens the door and smiles. Say good morning, tell her your name and where you're from, and say you're pleased to meet her.",
+    "minWords": 8,
+    "maxWords": 28,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "ser",
+        "tense": "presente",
+        "person": "yo"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "mucho gusto"
+        ],
+        "label": "say you're pleased to meet her (mucho gusto)"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "de "
+        ],
+        "label": "say where you're from with de"
+      }
+    ],
+    "model": "Buenos días. Me llamo Pablo y soy de Boston. Mucho gusto.",
+    "focus": "g:ser-identity",
+    "requires": [
+      "c:hola-buenos-dias",
+      "c:me-llamo",
+      "c:mucho-gusto",
+      "c:soy-de",
+      "g:reflexive-routine",
+      "g:ser-identity",
+      "l:bueno",
+      "l:día",
+      "l:gusto",
+      "l:llamarse",
+      "l:ser"
+    ]
+  },
+  {
+    "id": "w-u01-17",
+    "unit": "u01",
+    "prompt": "You're texting a friend of Tomás's whom you've never met. Greet them, say your name and ask how they are (someone your age, so informal).",
+    "minWords": 5,
+    "maxWords": 28,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "ser",
+        "tense": "presente",
+        "person": "yo"
+      },
+      {
+        "type": "question",
+        "label": "ask how they are"
+      },
+      {
+        "type": "regex",
+        "pattern": "c[oó]mo est[aá]s",
+        "label": "use ¿cómo estás?"
+      }
+    ],
+    "model": "Hola, soy Pablo. ¿Cómo estás?",
+    "focus": "g:ser-identity",
+    "requires": [
+      "c:como-estas",
+      "c:hola-buenos-dias",
+      "g:estar-location-states",
+      "g:ser-identity",
+      "l:cómo",
+      "l:estar",
+      "l:ser"
+    ]
+  },
+  {
+    "id": "w-u01-18",
+    "unit": "u01",
+    "prompt": "A waiter in Bogotá speaks too fast. Excuse yourself, tell him you don't understand, ask how to say \"coffee\" in Spanish, and ask him to go more slowly.",
+    "minWords": 8,
+    "maxWords": 28,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "no entiendo",
+        "label": "say you don't understand (no entiendo)"
+      },
+      {
+        "type": "regex",
+        "pattern": "m[aá]s despacio",
+        "label": "ask for más despacio"
+      },
+      {
+        "type": "regex",
+        "pattern": "¿c[oó]mo se dice",
+        "label": "ask ¿cómo se dice…?"
+      },
+      {
+        "type": "regex",
+        "pattern": "c[ó]mo",
+        "label": "write the accent on cómo"
+      }
+    ],
+    "model": "Perdón, no entiendo. ¿Cómo se dice \"coffee\"? Más despacio, por favor.",
+    "focus": "g:sounds-letters",
+    "requires": [
+      "c:como-se-dice",
+      "c:mas-despacio",
+      "c:no-entiendo",
+      "c:perdon-disculpe",
+      "c:por-favor",
+      "g:se-impersonal",
+      "g:stem-boot",
+      "l:cómo",
+      "l:decir",
+      "l:despacio",
+      "l:entender",
+      "l:favor",
+      "l:perdón"
+    ]
+  },
+  {
+    "id": "w-u01-19",
+    "unit": "u01",
+    "prompt": "You're showing a photo of Tomás to an older stranger you'd call usted. Excuse yourself, ask politely if they can help you, and ask where he is.",
+    "minWords": 6,
+    "maxWords": 28,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "d[óo]nde est[aá]",
+        "label": "ask ¿dónde está…?"
+      },
+      {
+        "type": "regex",
+        "pattern": "d[ó]nde",
+        "label": "write the accent on dónde"
+      },
+      {
+        "type": "question"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "puedes",
+          "ayudas",
+          "disculpa"
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Perdón, ¿me puede ayudar? ¿Dónde está?",
+    "focus": "g:sounds-letters",
+    "requires": [
+      "c:donde-esta",
+      "c:me-puede-ayudar",
+      "c:perdon-disculpe",
+      "g:estar-location-states",
+      "g:verb-infinitive",
+      "l:ayudar",
+      "l:dónde",
+      "l:estar",
+      "l:perdón",
+      "l:poder"
+    ]
   }
 ]
