@@ -2,7 +2,7 @@
   "id": "ch005",
   "unit": "u03",
   "title": "Treinta días",
-  "text": "Sábado, seis de la mañana. Hoy Vale no hace pan. Espera a Tomás en la puerta, con Hernando.\nVale: Tomás, ¿quién es el señor Ruiz?\nTomás: Un agente. Vende casas, apartamentos... y cafés.\nVale: ¿Y por qué hablas con el señor Ruiz?\nTomás: Porque... es que no tengo trabajo, Vale. En Toronto no tengo oficina, no tengo jefe. No tengo trabajo.\nHernando: ¿Y el café, Tomás? ¿Y Rosa?\nTomás: Rosa no vuelve, don Hernando. Y el café... me da igual.\nVale: ¿Cómo así? ¿El café de tu abuela?\nTomás no contesta.\nVale: Bueno. Entonces, un trato.\nTomás: ¿Un trato?\nVale: Treinta días. ¿El café vende dos millones de pesos en treinta días? Entonces no vendes, y el café abre un año más. ¿No vende dos millones? Llamas al señor Ruiz y vendes.\nTomás: ¿Un año más? ¿Aquí? ¿Con Simón? No me gusta la idea.\nVale: ¿Y mis buñuelos? ¿Te gustan mis buñuelos?\nTomás: Los buñuelos... sí. Los buñuelos me gustan mucho.\nHernando: ¡Qué chévere! Y los domingos, ajedrez en el café. ¡Me encanta el ajedrez!\nTomás: No, no, un momento...\nHernando: ¡De una!\nSimón: ¡De una! ¡De una!\nVale: Listo. Treinta días, Tomás.",
+  "text": "Sábado, seis de la mañana. Hoy Vale no hace pan. Espera a Tomás en la puerta, con Hernando.\nVale: Tomás, ¿quién es el señor Ruiz?\nTomás: Un agente. Vende casas, apartamentos... y cafés.\nVale: ¿Y por qué hablas con el señor Ruiz?\nTomás: Porque... es que no tengo trabajo, Vale. En Toronto no tengo oficina, no tengo jefe. No tengo trabajo.\nHernando: ¿Y el café, Tomás? ¿Y Rosa?\nTomás: Rosa no vuelve, don Hernando. Y el café... me da igual.\nVale: ¿Cómo así? ¿El café de tu abuela?\nTomás no contesta.\nVale: Bueno. Entonces, un trato.\nTomás: ¿Un trato?\nVale: Treinta días. ¿El café vende dos millones de pesos en treinta días? Entonces no vendes, y el café abre un año más. ¿No vende dos millones? Llamas al señor Ruiz y vendes.\nTomás: ¿Un año más? ¿Aquí? ¿Con Simón? No me gusta la idea.\nVale: ¿Y mis buñuelos? ¿Te gustan mis buñuelos?\nTomás: Los buñuelos... sí. Los buñuelos me gustan mucho.\nHernando: ¡De una!\nTomás: Un momento, yo no...\nSimón: ¡De una! ¡De una!\nVale: Listo. Treinta días, Tomás.",
   "gloss": [
     {
       "es": "Espera a Tomás en la puerta",
@@ -53,20 +53,16 @@
       "en": "buñuelos: fried cheese dough balls, Vale's speciality"
     },
     {
-      "es": "ajedrez",
-      "en": "chess"
-    },
-    {
-      "es": "un momento",
-      "en": "hang on a moment"
-    },
-    {
       "es": "¡De una!",
       "en": "You're on! Let's do it! (Colombian)"
     },
     {
       "es": "Listo",
       "en": "Done, settled"
+    },
+    {
+      "es": "Un momento, yo no...",
+      "en": "Hang on, I didn't..."
     }
   ],
   "questions": [
@@ -142,12 +138,12 @@
       "answer": 0
     },
     {
-      "q": "What does Hernando want on Sundays?",
+      "q": "What does Tomás say about his grandmother?",
       "options": [
-        "Chess in the café",
-        "Tango",
-        "Football",
-        "A day off"
+        "«Rosa no vuelve»: she isn't coming back",
+        "«Rosa vende el café»: she's selling the café",
+        "«Rosa está en Toronto»: she's in Toronto",
+        "Nothing at all"
       ],
       "answer": 0
     }
@@ -157,11 +153,9 @@
     "c:entonces-bueno",
     "c:es-que",
     "c:me-da-igual",
-    "c:me-encanta",
     "c:me-gusta",
     "c:me-regala",
     "c:porque",
-    "c:que-chevere",
     "c:tengo",
     "g:gender-articles",
     "g:gustar-basic",
@@ -178,7 +172,6 @@
     "l:abrir",
     "l:abuela",
     "l:agente",
-    "l:ajedrez",
     "l:apartamento",
     "l:aquí",
     "l:año",
@@ -186,13 +179,10 @@
     "l:buñuelo",
     "l:café",
     "l:casa",
-    "l:chévere",
     "l:contestar",
     "l:cómo",
     "l:dar",
-    "l:domingo",
     "l:día",
-    "l:encantar",
     "l:esperar",
     "l:gustar",
     "l:hablar",
