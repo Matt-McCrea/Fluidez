@@ -1,14 +1,14 @@
 {
   "id": "sc-u23-b",
   "unit": "u23",
-  "title": "Telecom Andina",
+  "title": "Teléfonos Andinos",
   "brief": "You're Tomás Herrera. Going through Rosa's papers, you found that the phone company has charged her old landline every month for twelve years, and nobody uses it. Call them, explain the problem and how long it has gone on, and find out what to do. The operator is a stranger, so use usted.",
   "spare": true,
   "turns": [
     {
       "id": "t1",
-      "npc": "Telecom Andina, buenos días. Habla con Yésica. ¿Me colabora con su nombre, por favor?",
-      "npcEn": "Telecom Andina, good morning. You're speaking with Yésica. Could you give me your name, please?",
+      "npc": "Teléfonos Andinos, buenos días. Habla con Yésica. ¿Me colabora con su nombre, por favor?",
+      "npcEn": "Teléfonos Andinos, good morning. You're speaking with Yésica. Could you give me your name, please?",
       "intent": "Give your name and say, politely, that you wanted to ask about your grandmother's line.",
       "accept": [
         "Buenos días. Me llamo Tomás Herrera. Quería preguntar por la línea de mi abuela.",
@@ -221,6 +221,7 @@
     "l:señor",
     "l:señora",
     "l:sábado",
+    "l:teléfono",
     "l:tener",
     "l:usar",
     "l:ver",

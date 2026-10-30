@@ -2,7 +2,7 @@
   "id": "ch068",
   "unit": "u23",
   "title": "El teléfono de oro",
-  "text": "A las siete, un muchacho con gorra subió al poste del café.\nTécnico: ¡Buenos días! Soy Brayan, el técnico de Teléfonos Andinos. ¿Me colabora con un documento de identidad?\nTomás le mostró el pasaporte.\nTécnico: Esta línea está muy dañada. No hay señal.\nHernando: ¿Y qué ventaja tiene una línea tan vieja?\nTécnico: Una ventaja grande: nadie la usa.\nTécnico: Estuve dos años en el ejército. Allá aprendí la técnica. Mi mamá es enfermera, y mi hermano es bombero.\nVale le subió un tinto caliente.\nSimón: ¡Este tinto está frío!\nTécnico: No, señor loro. Está caliente.\nA las nueve, media cuadra miraba al muchacho del poste. La esquina era una feria.\nEntonces Brayan resbaló.\nSimón: ¡Enfermera! ¡Bombero! ¡Ejército!\nVale: ¡Excelente técnica, Brayan!\nTomás: Pero no tenemos teléfono.\nHernando fue a la Burra y volvió con un teléfono viejo.\nHernando: Rosa me lo dio en 2014: «Guárdelo. Algún día alguien lo va a necesitar».\nTomás: ¿Un teléfono de oro?\nHernando: De oro no, mijo. Rosa lo pintó.\nBrayan habló con el operador por radio.\nTécnico: Operador, la línea dañada del café ya tiene señal.\nOperador: Cometimos un error. La línea no está a nombre de Rosa Herrera. Está a nombre de Joaquín Herrera, desde 1977. Para cambiar el nombre, necesitamos su documento de identidad.\nTomás y Hernando se miraron.\nTomás: No cometieron ningún error.\nA las diez, la feria terminó, y Brayan bajó del poste.\nEntonces el teléfono de oro sonó.\nTomás: ¿Aló?\nMariana: ¿Tomás? Estoy en la oficina de escrituras. El sistema no sirve, pero encontré algo de 1978.",
+  "text": "Muy temprano, un muchacho con gorra subió al poste del café.\nTécnico: ¡Buenos días! Soy Brayan, el técnico de Teléfonos Andinos. ¿Me colabora con un documento de identidad?\nTomás le mostró el pasaporte.\nTécnico: Esta línea está muy dañada. No hay señal.\nHernando: ¿Y qué ventaja tiene una línea tan vieja?\nTécnico: Una ventaja grande: nadie la usa.\nTécnico: Estuve dos años en el ejército. Allá aprendí la técnica. Mi mamá es enfermera, y mi hermano es bombero.\nVale le subió un tinto caliente.\nSimón: ¡Este tinto está frío!\nTécnico: No, señor loro. Está caliente.\nA las nueve, media cuadra miraba al muchacho del poste. La esquina era una feria.\nEntonces Brayan resbaló, pero no pasó nada.\nSimón: ¡Enfermera! ¡Bombero! ¡Ejército!\nVale: ¡Excelente técnica, Brayan!\nTomás: Pero no tenemos teléfono.\nHernando fue a la Burra y volvió con un teléfono viejo.\nHernando: Rosa me lo dio en 2014: «Guárdelo. Algún día alguien lo va a necesitar».\nTomás: ¿Un teléfono de oro?\nHernando: De oro no, mijo. Rosa lo pintó.\nBrayan habló con el operador por radio.\nTécnico: Operador, la línea dañada del café ya tiene señal.\nOperador: Cometimos un error. La línea no está a nombre de Rosa Herrera. Está a nombre de Joaquín Herrera, desde 1977. Para cambiar el nombre, necesitamos su documento de identidad.\nTomás: No cometieron ningún error.\nA las diez, la feria terminó, y Brayan bajó del poste.\nEntonces el teléfono de oro sonó.\nTomás: ¿Aló?\nMariana: ¿Tomás? Estoy en la oficina de escrituras. El sistema no sirve, pero encontré algo de 1978.",
   "gloss": [
     {
       "es": "gorra",
@@ -75,6 +75,10 @@
     {
       "es": "El sistema no sirve",
       "en": "The system isn't working"
+    },
+    {
+      "es": "pero no pasó nada",
+      "en": "but nothing happened"
     }
   ],
   "questions": [
@@ -193,7 +197,6 @@
     "g:preterite-irregular-strong",
     "g:preterite-ser-ir-hacer",
     "g:questions",
-    "g:reflexive-routine",
     "g:ser-identity",
     "g:stem-boot",
     "p:aqui-ahi-alla",
@@ -207,7 +210,6 @@
     "p:para-inf-purpose",
     "p:possessives-basic",
     "p:quantifiers-basic",
-    "p:se-reciproco",
     "p:ser-profession-no-article",
     "p:telling-time",
     "p:viejo-antiguo-mayor"
@@ -259,6 +261,7 @@
     "l:operador",
     "l:oro",
     "l:pasaporte",
+    "l:pasar",
     "l:pintar",
     "l:poste",
     "l:qué",
@@ -271,6 +274,7 @@
     "l:sonar",
     "l:subir",
     "l:teléfono",
+    "l:temprano",
     "l:tener",
     "l:terminar",
     "l:tinto",

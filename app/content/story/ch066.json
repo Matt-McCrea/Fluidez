@@ -1,8 +1,8 @@
 {
   "id": "ch066",
   "unit": "u23",
-  "title": "¿Cuál cuenta?",
-  "text": "Tomás puso las tres cajas de Rosa en la mesa de Hernando, y Simón se sentó encima de la primera.\nJhon Fredy: ¡Esta impresora no sirve!\nSimón: ¡No sirve! ¡No sirve!\nEn las cajas había recetas, fotos, cartas y papeles de cuarenta años, sin orden.\nVale sacó un papel con colores y un sol enorme. Abajo, Rosa escribió: «Arte de mi nieto Tomás, seis años».\nVale: ¿Y esto qué es?\nTomás: Es un carro. O un perro. No sé.\nVale: Rosa lo guardó veintiocho años.\nTomás lo guardó en la chaqueta.\nMariana: Con papeles enfrentamos la multa, y también a Altamira. Y en el banco está la plata que Rosa destinaba al arriendo.\nA las diez, Hernando los llevó al banco en la Burra, con Simón en el hombro.\nTomás: Quería preguntar por la cuenta de mi abuela, Rosa Herrera. Queremos recuperar la plata.\nEmpleado: ¿Cuál cuenta? Su abuela tiene dos.\nTomás: ¿Y cuál es la del café?\nEmpleado: Las dos, señor. Una es del café, y otra también es del café.\nTomás: ¿Qué tengo que hacer? ¿Qué papeles necesito?\nEmpleado: Tres documentos. Pero para el primero necesita cuatro documentos más. Y para el segundo, otros cuatro.\nMariana: ¿Qué es esto? ¿Un banco o un laberinto?\nEn ese momento llegó el gerente, muy elegante.\nGerente: ¿En qué los puedo ayudar?\nSimón: ¡No sirve! ¡No sirve!\nToda la fila se rió. El gerente no.\nEn la lista, el cuarto documento era la última cuenta del teléfono del café.\nVale: ¿Teléfono? En el café no hay teléfono. Rosa lo quitó en 2014.",
+  "title": "¿Cuál de las dos?",
+  "text": "Tomás puso las tres cajas de Rosa en la mesa de Hernando, y Simón se sentó encima de la primera.\nJhon Fredy: ¡Esta impresora no sirve!\nSimón: ¡No sirve! ¡No sirve!\nEn las cajas había recetas, fotos, cartas y papeles de cuarenta años, sin orden.\nVale sacó un papel con colores y un sol enorme. Abajo, Rosa escribió: «Arte de mi nieto Tomás, seis años».\nVale: ¿Y esto qué es?\nTomás: Es un carro. O un perro. No sé.\nVale: Rosa lo guardó veintiocho años.\nTomás lo guardó en la chaqueta.\nMariana: Con papeles enfrentamos la multa, y también a Altamira. Y en el banco está la plata que Rosa destinaba al arriendo.\nA las diez, Hernando los llevó al banco en la Burra, con Simón en el hombro.\nTomás: Quería preguntar por la cuenta de mi abuela, Rosa Herrera. Queremos recuperar la plata.\nEmpleado: Su abuela tiene dos cuentas. ¿Cuál?\nTomás: ¿Y cuál es la del café?\nEmpleado: Las dos, señor. Una es del café, y otra también es del café.\nTomás: ¿Qué tengo que hacer? ¿Qué papeles necesito?\nEmpleado: Tres documentos. Pero para el primero necesita cuatro documentos más. Y para el segundo, otros cuatro.\nMariana: ¿Qué es esto? ¿Un banco o un laberinto?\nEn ese momento llegó el gerente, muy elegante.\nGerente: ¿En qué los puedo ayudar?\nSimón: ¡No sirve! ¡No sirve!\nToda la fila se rió. El gerente no.\nEn la lista, el cuarto documento era la última cuenta del teléfono del café.\nVale: ¿Teléfono? En el café no hay teléfono. Rosa lo quitó en 2014.",
   "gloss": [
     {
       "es": "impresora",
@@ -188,7 +188,6 @@
     "l:carta",
     "l:chaqueta",
     "l:color",
-    "l:contar",
     "l:cuenta",
     "l:cuál",
     "l:destinar",

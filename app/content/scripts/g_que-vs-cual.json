@@ -6,44 +6,201 @@
     "en": "What documents do I need?"
   },
   "examples": [
-    { "es": "¿Cuál es tu número de celular?", "en": "What's your cell number? (to a friend)" },
-    { "es": "¿Qué es una cédula?", "en": "What's a cédula?" },
-    { "es": "¿Qué quiere tomar?", "en": "What would you like to drink? (polite)" },
-    { "es": "¿Cuál prefieres, el rojo o el azul?", "en": "Which one do you prefer, the red one or the blue one? (to a friend)" },
-    { "es": "¿Qué documentos necesito?", "en": "What documents do I need?" },
-    { "es": "¿Cuál es el problema con el celular?", "en": "What's the problem with the phone?" },
-    { "es": "¿Cuáles quiere, señor?", "en": "Which ones do you want, sir?" }
+    {
+      "es": "¿Cuál es tu número de celular?",
+      "en": "What's your cell number? (to a friend)"
+    },
+    {
+      "es": "¿Qué es una cédula?",
+      "en": "What's a cédula?"
+    },
+    {
+      "es": "¿Qué quiere tomar?",
+      "en": "What would you like to drink? (polite)"
+    },
+    {
+      "es": "¿Cuál prefieres, el rojo o el azul?",
+      "en": "Which one do you prefer, the red one or the blue one? (to a friend)"
+    },
+    {
+      "es": "¿Qué documentos necesito?",
+      "en": "What documents do I need?"
+    },
+    {
+      "es": "¿Cuál es el problema con el celular?",
+      "en": "What's the problem with the phone?"
+    },
+    {
+      "es": "¿Cuáles quiere, señor?",
+      "en": "Which ones do you want, sir?"
+    }
   ],
   "rule": "Three simple cases cover almost everything.\n\nRight before a noun, use *qué*: *¿Qué documentos?*, *¿Qué color?* Here *qué* means both what and which.\n\nBefore *es* or *son*, ask yourself what you want back. A piece of information, like a number, a name, an address or the problem: *¿Cuál es…?* A definition, because you don't know the word: *¿Qué es…?* So *¿Cuál es tu dirección?* asks for the address, and *¿Qué es una dirección?* asks what an address is.\n\nWith a verb and no noun, *qué* is open (*¿Qué quieres?*, anything at all) and *cuál* picks from options you can see (*¿Cuál quieres?*, which one of these).\n\n*Cuál* has a plural, *cuáles*. *Qué* never changes. Both carry an accent in a question.",
   "smallPrint": "Teachers call these interrogative pronouns. The big English trap is *¿Qué es tu nombre?*: Spanish hears it as asking what a name even is.",
   "readAndPick": [
-    { "es": "¿Cuál quieres?", "options": ["What do you want?", "Which one do you want?"], "answer": 1 },
-    { "es": "¿Qué quieres?", "options": ["What do you want?", "Which one do you want?"], "answer": 0 },
-    { "es": "¿Cuál es su número de cédula?", "options": ["What is an ID number?", "What's your ID number? (polite)"], "answer": 1 },
-    { "es": "¿Qué es un número de cédula?", "options": ["What is an ID number?", "What's your ID number? (polite)"], "answer": 0 },
-    { "es": "¿Cuáles prefieres?", "options": ["Which one do you prefer?", "What do you prefer?", "Which ones do you prefer?"], "answer": 2 },
-    { "es": "¿Qué te gusta más?", "options": ["What do you like most?", "Which one do you like more?"], "answer": 0 },
-    { "es": "¿Cuál te gusta más?", "options": ["What do you like most?", "Which one do you like more?"], "answer": 1 },
-    { "es": "¿Qué es una dirección?", "options": ["What's your address?", "What is an address?", "Which address is it?"], "answer": 1 },
-    { "es": "¿Cuál es tu dirección?", "options": ["What's your address?", "What is an address?", "Which address is it?"], "answer": 0 },
-    { "es": "¿Qué es eso?", "options": ["Which one is that?", "What is that?"], "answer": 1 }
+    {
+      "es": "¿Cuál quieres?",
+      "options": [
+        "What do you want?",
+        "Which one do you want?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Qué quieres?",
+      "options": [
+        "What do you want?",
+        "Which one do you want?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Cuál es su número de cédula?",
+      "options": [
+        "What is an ID number?",
+        "What's your ID number? (polite)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Qué es un número de cédula?",
+      "options": [
+        "What is an ID number?",
+        "What's your ID number? (polite)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Cuáles prefieres?",
+      "options": [
+        "Which one do you prefer?",
+        "What do you prefer?",
+        "Which ones do you prefer?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Qué te gusta más?",
+      "options": [
+        "What do you like most?",
+        "Which one do you like more?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Cuál te gusta más?",
+      "options": [
+        "What do you like most?",
+        "Which one do you like more?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Qué es una dirección?",
+      "options": [
+        "What's your address?",
+        "What is an address?",
+        "Which address is it?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Cuál es tu dirección?",
+      "options": [
+        "What's your address?",
+        "What is an address?",
+        "Which address is it?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Qué es eso?",
+      "options": [
+        "Which one is that?",
+        "What is that?"
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick and type the whole sentence: *¿___ es tu número de celular?* (*Qué* or *Cuál*) What's your cell number? (to a friend)", "answer": "¿Cuál es tu número de celular?", "accept": [], "why": "You want a piece of information, a number, so it's *cuál es*." },
-    { "prompt": "Pick and type the whole sentence: *¿___ documentos necesito?* (*Qué* or *Cuál*) What documents do I need?", "answer": "¿Qué documentos necesito?", "accept": [], "why": "Right before a noun like *documentos*, it's *qué*." },
-    { "prompt": "Pick and type the whole sentence: *¿___ es una cédula?* (*Qué* or *Cuál*) What's a cédula?", "answer": "¿Qué es una cédula?", "accept": [], "why": "You're asking what the word means, so it's *qué es*." },
-    { "prompt": "Your friend is looking at two shirts. Ask: Which one do you prefer?", "answer": "¿Cuál prefieres?", "accept": [], "why": "Picking from options you can see takes *cuál*." },
-    { "prompt": "Ask the bank clerk: What's the problem?", "answer": "¿Cuál es el problema?", "accept": [], "why": "You want the specific problem, a piece of information: *cuál es*." },
-    { "prompt": "Ask a friend: What's your address?", "answer": "¿Cuál es tu dirección?", "accept": [], "why": "An address is information you want back, so *cuál es*, not *qué es*." },
-    { "prompt": "Now there are several shirts and they can take more than one. Make it plural: *¿Cuál quieres?*", "answer": "¿Cuáles quieres?", "accept": [], "why": "*Cuál* turns into *cuáles* when the answer is more than one." },
-    { "prompt": "Ask the same thing politely, to the clerk: *¿Cuál es tu nombre?*", "answer": "¿Cuál es su nombre?", "accept": [], "why": "Only *tu* changes to *su*; *cuál es* stays." }
+    {
+      "prompt": "Pick and type the whole sentence: *¿___ es tu número de celular?* (*Qué* or *Cuál*) What's your cell number? (to a friend)",
+      "answer": "¿Cuál es tu número de celular?",
+      "accept": [],
+      "why": "You want a piece of information, a number, so it's *cuál es*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *¿___ documentos necesito?* (*Qué* or *Cuál*) What documents do I need?",
+      "answer": "¿Qué documentos necesito?",
+      "accept": [],
+      "why": "Right before a noun like *documentos*, it's *qué*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *¿___ es una cédula?* (*Qué* or *Cuál*) What's a cédula?",
+      "answer": "¿Qué es una cédula?",
+      "accept": [],
+      "why": "You're asking what the word means, so it's *qué es*."
+    },
+    {
+      "prompt": "Your friend is looking at two shirts. Ask: Which one do you prefer?",
+      "answer": "¿Cuál prefieres?",
+      "accept": [],
+      "why": "Picking from options you can see takes *cuál*."
+    },
+    {
+      "prompt": "Ask the bank clerk: What's the problem?",
+      "answer": "¿Cuál es el problema?",
+      "accept": [
+        "¿Cuál es el problema, señora?",
+        "¿Cuál es el problema, señor?"
+      ],
+      "why": "You want the specific problem, a piece of information: *cuál es*."
+    },
+    {
+      "prompt": "Ask a friend: What's your address?",
+      "answer": "¿Cuál es tu dirección?",
+      "accept": [],
+      "why": "An address is information you want back, so *cuál es*, not *qué es*."
+    },
+    {
+      "prompt": "Now there are several shirts and they can take more than one. Make it plural: *¿Cuál quieres?*",
+      "answer": "¿Cuáles quieres?",
+      "accept": [],
+      "why": "*Cuál* turns into *cuáles* when the answer is more than one."
+    },
+    {
+      "prompt": "Ask the same thing politely, to the clerk: *¿Cuál es tu nombre?*",
+      "answer": "¿Cuál es su nombre?",
+      "accept": [],
+      "why": "Only *tu* changes to *su*; *cuál es* stays."
+    }
   ],
   "pitfalls": [
-    { "wrong": "¿Qué es tu nombre?", "right": "¿Cuál es tu nombre?", "why": "Almost. *¿Qué es…?* asks what a name is; to ask for someone's name, use *¿Cuál es…?* (or *¿Cómo te llamas?*)." },
-    { "wrong": "¿Qué es su número de cédula?", "right": "¿Cuál es su número de cédula?", "why": "Close. A number is information you want back, and that takes *cuál es*." },
-    { "wrong": "¿Cuál documentos necesito?", "right": "¿Qué documentos necesito?", "why": "Right before a noun, Spanish uses *qué*, even when English could say which." },
-    { "wrong": "¿Cuál prefieres, los rojos o los azules?", "right": "¿Cuáles prefieres, los rojos o los azules?", "why": "The options are plural, so the question word is too: *cuáles*." },
-    { "wrong": "¿Cual es tu dirección?", "right": "¿Cuál es tu dirección?", "why": "Nearly. In a question, *cuál* always has its accent." }
+    {
+      "wrong": "¿Qué es tu nombre?",
+      "right": "¿Cuál es tu nombre?",
+      "why": "Almost. *¿Qué es…?* asks what a name is; to ask for someone's name, use *¿Cuál es…?* (or *¿Cómo te llamas?*)."
+    },
+    {
+      "wrong": "¿Qué es su número de cédula?",
+      "right": "¿Cuál es su número de cédula?",
+      "why": "Close. A number is information you want back, and that takes *cuál es*."
+    },
+    {
+      "wrong": "¿Cuál documentos necesito?",
+      "right": "¿Qué documentos necesito?",
+      "why": "Right before a noun, Spanish uses *qué*, even when English could say which."
+    },
+    {
+      "wrong": "¿Cuál prefieres, los rojos o los azules?",
+      "right": "¿Cuáles prefieres, los rojos o los azules?",
+      "why": "The options are plural, so the question word is too: *cuáles*."
+    },
+    {
+      "wrong": "¿Cual es tu dirección?",
+      "right": "¿Cuál es tu dirección?",
+      "why": "Nearly. In a question, *cuál* always has its accent."
+    }
   ],
   "personal": "Write two questions you'd ask someone new in Bogotá: one with *¿Cuál es…?* for a number, an address or a favourite, and one with *¿Qué…?* before a noun."
 }

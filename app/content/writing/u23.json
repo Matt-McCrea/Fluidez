@@ -2,7 +2,7 @@
   {
     "id": "w-u23-01",
     "unit": "u23",
-    "prompt": "Text Vale, your friend. You are going to the bank tomorrow to open an account. Say you do not know what documents you need, ask her which bank she recommends, and ask what she thinks.",
+    "prompt": "Text Vale, your friend. You are going to the bank tomorrow to open an account. Ask her what documents you need, which bank she uses, and which one she recommends.",
     "minWords": 25,
     "maxWords": 60,
     "constraints": [
@@ -20,7 +20,7 @@
         "type": "question"
       }
     ],
-    "model": "Vale, mañana voy al banco para abrir una cuenta . ¿Qué documentos necesito? ¿Cuál banco me recomiendas? ¿Qué piensas tú? Tengo mi cédula y una factura.",
+    "model": "Vale, mañana voy al banco para abrir una cuenta. ¿Qué documentos necesito? ¿Cuál es tu banco? ¿Qué banco me recomiendas? Tengo mi cédula y una factura.",
     "focus": "g:que-vs-cual",
     "requires": [
       "c:tengo",
@@ -29,6 +29,7 @@
       "g:ir-a-plans",
       "g:present-ar",
       "g:questions",
+      "g:ser-identity",
       "g:stem-boot",
       "g:yo-irregular",
       "l:abrir",
@@ -41,21 +42,22 @@
       "l:ir",
       "l:mañana",
       "l:necesitar",
-      "l:pensar",
       "l:qué",
       "l:recomendar",
+      "l:ser",
       "l:tener",
       "p:ir-a-venir-de-place",
       "p:me-te-nos-objects",
       "p:para-inf",
       "p:para-inf-purpose",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:question-word-order"
     ]
   },
   {
     "id": "w-u23-02",
     "unit": "u23",
-    "prompt": "You are on hold with the phone company and the agent is very formal. Write the message you send them about your bill, using \"quería\" to open politely. Use usted.",
+    "prompt": "You are writing to the phone company's online chat, and the agent is very formal. Write your message about your bill, using \"quería\" to open politely. Use usted.",
     "minWords": 25,
     "maxWords": 60,
     "constraints": [
@@ -79,7 +81,7 @@
         "label": "polite quería and usted, not quiero or tú"
       }
     ],
-    "model": "Buenas tardes. Quería preguntar por mi factura del mes. Creo que hay un error, porque este mes es más cara. ¿Me puede ayudar, por favor? Muchas gracias por su tiempo.",
+    "model": "Buenas tardes. Quería preguntar por mi factura del mes. Creo que hay un error, porque este mes la factura es muy cara. ¿Me puede ayudar, por favor? Muchas gracias por su tiempo.",
     "focus": "c:queria-preguntar",
     "requires": [
       "c:creo-que",
@@ -113,7 +115,8 @@
       "l:tiempo",
       "p:demonstratives-basic",
       "p:gracias-por",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:quantifiers-basic"
     ]
   },
   {
@@ -172,7 +175,7 @@
   {
     "id": "w-u23-04",
     "unit": "u23",
-    "prompt": "You are at the notary and the clerk is an older stranger. Ask politely, in usted, what you have to do to get a new cédula and what documents you need.",
+    "prompt": "You are at the Registraduría (the ID office) and the clerk is an older stranger. Ask politely, in usted, what you have to do to get a new cédula and what documents you need.",
     "minWords": 25,
     "maxWords": 60,
     "constraints": [
@@ -249,7 +252,7 @@
       {
         "type": "avoidsAny",
         "words": [
-          "ningún cajera",
+          "alguno cajero",
           "ninguno cajero"
         ],
         "label": "ningún before a masculine noun"
@@ -258,16 +261,15 @@
         "type": "negation"
       }
     ],
-    "model": "Don Hernando, fui al banco, pero ningún cajero funciona hoy. No pude hacer nada y nadie me pudo ayudar. Mañana vuelvo otra vez. Eso es todo por hoy.",
+    "model": "Don Hernando, fui al banco, pero ningún cajero funcionó. No pude hacer nada y nadie me pudo ayudar. Mañana vuelvo temprano y le cuento. Tomás.",
     "focus": "g:indefinites",
     "requires": [
-      "c:algo-mas",
       "c:fui",
       "g:gender-articles",
       "g:indefinites",
+      "g:indirect-objects",
       "g:negation-words",
-      "g:por-para-1",
-      "g:present-ar",
+      "g:preterite-ar",
       "g:preterite-irregular-strong",
       "g:preterite-ser-ir-hacer",
       "g:stem-boot",
@@ -275,19 +277,17 @@
       "l:ayudar",
       "l:banco",
       "l:cajero",
+      "l:contar",
       "l:funcionar",
       "l:hacer",
-      "l:hoy",
       "l:ir",
       "l:mañana",
       "l:poder",
-      "l:ser",
-      "l:vez",
+      "l:temprano",
       "l:volver",
       "p:don-dona-nombre",
       "p:ir-a-venir-de-place",
       "p:me-te-nos-objects",
-      "p:otro-no-article",
       "p:senor-don-article"
     ]
   },
@@ -377,44 +377,42 @@
         "label": "hace…que, not a verb then hace"
       }
     ],
-    "model": "Buenos días. Hace doce años que ustedes cobran una línea que ya no existe. Quiero hablar con un operador para resolver este problema. Este es mi reclamo.",
+    "model": "Buenos días. Hace doce años que ustedes cobran una línea que nadie usa. Quiero hablar con un operador para resolver este problema, por favor. Gracias.",
     "focus": "g:hace-que-desde",
     "requires": [
+      "c:gracias-de-nada",
       "c:hola-buenos-dias",
+      "c:por-favor",
       "c:quiero",
-      "c:ya-no",
       "g:gender-articles",
       "g:hace-que-desde",
       "g:present-ar",
       "g:present-er-ir",
       "g:relative-que",
-      "g:ser-identity",
       "g:stem-boot",
       "g:verb-infinitive",
       "l:año",
       "l:bueno",
       "l:cobrar",
       "l:día",
-      "l:existir",
+      "l:favor",
       "l:hablar",
       "l:hacer",
       "l:línea",
       "l:operador",
       "l:problema",
       "l:querer",
-      "l:reclamo",
       "l:resolver",
-      "l:ser",
+      "l:usar",
       "p:demonstratives-basic",
       "p:para-inf",
-      "p:para-inf-purpose",
-      "p:possessives-basic"
+      "p:para-inf-purpose"
     ]
   },
   {
     "id": "w-u23-08",
     "unit": "u23",
-    "prompt": "Write to your landlord, Doña Marta (use usted). Say that the water heater is broken, and say for how long, using \"desde hace\".",
+    "prompt": "Write to your landlord, Doña Marta (use usted). Say that the shower has no hot water, and say for how long, using \"desde hace\".",
     "minWords": 25,
     "maxWords": 60,
     "constraints": [
@@ -519,7 +517,7 @@
   {
     "id": "w-u23-10",
     "unit": "u23",
-    "prompt": "Text Vale from the long line at the bank. Ask her to bring you a little coffee (a tintico) and tell her you need a little moment more, using a diminutive.",
+    "prompt": "Text Vale. The repairman is at the café and you are stuck at the notary. Ask her to give him a little coffee (a tintico) and say you'll be there in a little while, using a diminutive.",
     "minWords": 25,
     "maxWords": 60,
     "constraints": [
@@ -533,40 +531,34 @@
       },
       {
         "type": "containsWord",
-        "word": "fila"
+        "word": "técnico"
       }
     ],
-    "model": "Vale, estoy en la fila del banco y hay mucha gente. ¿Me regalas un tintico? Voy a demorar un ratico más. Ahorita te cuento qué pasó. Gracias, Vale.",
+    "model": "Vale, el técnico está en el café y yo todavía estoy en la notaría. ¿Le das un tintico, por favor? Llego en un ratico. Ahorita te cuento todo. Gracias.",
     "focus": "g:diminutives",
     "requires": [
       "c:ahorita",
       "c:gracias-de-nada",
-      "c:hay",
-      "c:te-cuento-que",
-      "c:voy-a",
+      "c:por-favor",
+      "g:conditional",
       "g:diminutives",
+      "g:direct-objects",
       "g:estar-location-states",
       "g:gender-articles",
-      "g:hay-vs-esta",
-      "g:ir-a-plans",
+      "g:indirect-objects",
       "g:present-ar",
-      "g:preterite-ar",
+      "g:stem-boot",
       "l:ahorita",
-      "l:banco",
+      "l:café",
       "l:contar",
-      "l:demorar",
+      "l:dar",
       "l:estar",
-      "l:fila",
-      "l:gente",
-      "l:ir",
-      "l:pasar",
-      "l:qué",
-      "l:regalar",
-      "p:ir-a-venir-de-place",
-      "p:la-gente-singular",
+      "l:favor",
+      "l:llegar",
+      "l:notar",
+      "l:técnico",
       "p:me-te-nos-objects",
-      "p:quantifiers-basic",
-      "p:tardar-en"
+      "p:ya-todavia-basic"
     ]
   },
   {

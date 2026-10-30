@@ -79,14 +79,15 @@
       "accept": [
         "¿Cuáles son?",
         "¿Cuáles son los documentos?",
-        "Perdón, ¿cuáles son los tres documentos?"
+        "Perdón, ¿cuáles son los tres documentos?",
+        "¿Qué documentos necesito?"
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "cu[áa]les",
+          "pattern": "cu[áa]les|qu[ée] documentos",
           "flags": "i",
-          "label": "which ones: ¿cuáles son?, not ¿qué son?"
+          "label": "which ones: ¿cuáles son?, or ¿qué documentos?, not ¿qué son?"
         },
         {
           "type": "question",

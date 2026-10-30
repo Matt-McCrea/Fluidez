@@ -186,16 +186,18 @@
   },
   {
     "id": "u23-0008",
-    "es": "¿Me colabora con su clave, por favor?",
-    "en": "Could you give me your PIN, please? (polite)",
+    "es": "Olvidé mi clave. ¿Me colabora, por favor?",
+    "en": "I forgot my PIN. Could you help me, please?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-colabora",
       "c:por-favor",
+      "g:preterite-ar",
       "l:clave",
       "l:colaborar",
       "l:favor",
+      "l:olvidar",
       "p:possessives-basic"
     ],
     "targets": [
@@ -203,7 +205,7 @@
       "l:clave",
       "l:colaborar"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u23",
     "theme": "the bank",
     "source": "gen"
@@ -399,20 +401,24 @@
   },
   {
     "id": "u23-0017",
-    "es": "¿Cuál es la clave?\nNinguna, perdí el papel.",
-    "en": "What is the PIN?\nNone, I lost the paper.",
+    "es": "¿Cuál es la clave?\nNo sé. La escribí en algún papel.",
+    "en": "What is the PIN?\nI don't know. I wrote it on some piece of paper.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-se",
+      "g:direct-objects",
       "g:gender-articles",
       "g:indefinites",
       "g:preterite-er-ir",
       "g:questions",
       "g:ser-identity",
+      "g:yo-irregular",
       "l:clave",
       "l:cuál",
+      "l:escribir",
       "l:papel",
-      "l:perder",
+      "l:saber",
       "l:ser",
       "p:question-word-order"
     ],
@@ -782,7 +788,7 @@
   },
   {
     "id": "u23-0033",
-    "es": "¿Cuál cuenta es más barata?",
+    "es": "¿Qué cuenta es más barata?",
     "en": "Which account is cheaper?",
     "accept": [],
     "acceptEn": [],
@@ -792,7 +798,7 @@
       "g:ser-identity",
       "l:barato",
       "l:cuenta",
-      "l:cuál",
+      "l:qué",
       "l:ser"
     ],
     "targets": [],
@@ -877,21 +883,19 @@
   },
   {
     "id": "u23-0037",
-    "es": "¿Qué hora cierra el banco?",
+    "es": "¿A qué hora cierra el banco?",
     "en": "What time does the bank close?",
-    "accept": [
-      "¿A qué hora cierra el banco?"
-    ],
+    "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:a-que-hora",
       "g:gender-articles",
-      "g:questions",
       "g:stem-boot",
       "l:banco",
       "l:cerrar",
       "l:hora",
       "l:qué",
-      "p:telling-time"
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "question",
@@ -1327,8 +1331,8 @@
   },
   {
     "id": "u23-0056",
-    "es": "Vale quiere abrir una cuenta para la panadería.",
-    "en": "Vale wants to open an account for the bakery.",
+    "es": "Vale quiere abrir una cuenta para el café.",
+    "en": "Vale wants to open an account for the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1336,8 +1340,8 @@
       "g:stem-boot",
       "g:verb-infinitive",
       "l:abrir",
+      "l:café",
       "l:cuenta",
-      "l:panadería",
       "l:querer",
       "p:para-inf"
     ],
@@ -1553,22 +1557,22 @@
   },
   {
     "id": "u23-0065",
-    "es": "Alguna vez la fila fue más corta, creo.",
-    "en": "Once upon a time the line was shorter, I think.",
+    "es": "En este banco, la fila no es corta ningún día.",
+    "en": "At this bank, the line isn't short on any day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:creo-que",
       "g:adjective-agreement",
       "g:gender-articles",
       "g:indefinites",
-      "g:preterite-ser-ir-hacer",
+      "g:negation-words",
       "g:ser-identity",
+      "l:banco",
       "l:corto",
-      "l:creer",
+      "l:día",
       "l:fila",
       "l:ser",
-      "l:vez"
+      "p:demonstratives-basic"
     ],
     "targets": [
       "g:indefinites",
@@ -1692,18 +1696,18 @@
   },
   {
     "id": "u23-0071",
-    "es": "¿Con cuál cuenta paga usted?\nCon la cuenta de la panadería.",
-    "en": "Which account do you pay with?\nWith the bakery account.",
+    "es": "¿Con qué cuenta paga usted?\nCon la cuenta del café.",
+    "en": "Which account do you pay with?\nWith the café's account.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:la-cuenta",
       "g:gender-articles",
       "g:present-ar",
+      "l:café",
       "l:cuenta",
-      "l:cuál",
       "l:pagar",
-      "l:panadería",
+      "l:qué",
       "p:prep-questions-basic"
     ],
     "targets": [],
@@ -1812,22 +1816,22 @@
   },
   {
     "id": "u23-0076",
-    "es": "Hace cuatro meses abrí esta cuenta y no la necesito.",
-    "en": "I opened this account four months ago and I don't need it.",
+    "es": "Hace cuatro meses abrí esta cuenta y nunca la uso.",
+    "en": "I opened this account four months ago and I never use it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
+      "g:gender-articles",
       "g:hace-ago",
-      "g:present-ar",
       "g:present-er-ir",
       "g:preterite-er-ir",
       "l:abrir",
       "l:cuenta",
       "l:hacer",
       "l:mes",
-      "l:necesitar",
-      "p:demonstratives-basic"
+      "l:uso",
+      "p:demonstratives-basic",
+      "p:frequency-scale"
     ],
     "targets": [],
     "kind": "statement",
@@ -2157,7 +2161,7 @@
   {
     "id": "u23-0090",
     "es": "El operador me pidió esperar una semana.",
-    "en": "The operator asked me to wait a week.",
+    "en": "The phone company asked me to wait a week.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2669,16 +2673,16 @@
   },
   {
     "id": "u23-0111",
-    "es": "¿A cuál número llamo para el reclamo?",
+    "es": "¿A qué número llamo para el reclamo?",
     "en": "Which number do I call for the complaint?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:cuál",
       "l:llamar",
       "l:número",
+      "l:qué",
       "l:reclamo",
       "p:para-inf",
       "p:prep-questions-basic"
@@ -3212,18 +3216,20 @@
   },
   {
     "id": "u23-0133",
-    "es": "Ningún operador conoce esa línea.",
-    "en": "No operator knows that line.",
+    "es": "Ningún operador tiene esa línea en el sistema.",
+    "en": "No phone company has that line in its system.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:demonstratives",
+      "g:gender-articles",
       "g:indefinites",
-      "g:present-er-ir",
-      "l:conocer",
+      "g:stem-boot",
       "l:línea",
       "l:operador",
-      "p:saber-conocer"
+      "l:sistema",
+      "l:tener"
     ],
     "targets": [
       "g:indefinites",
@@ -3345,8 +3351,8 @@
   },
   {
     "id": "u23-0139",
-    "es": "Estoy llamando por la línea de Rosa García.\nHace tiempo que murió, ¿no?",
-    "en": "I'm calling about Rosa García's line.\nShe died a while ago, didn't she?",
+    "es": "Estoy llamando por la línea de Rosa Herrera.\nHace tiempo que murió, ¿no?",
+    "en": "I'm calling about Rosa Herrera's line.\nShe died a while ago, didn't she?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3399,7 +3405,7 @@
   {
     "id": "u23-0141",
     "es": "Hernando dice que su celular sirve, pero nadie lo llama.",
-    "en": "Hernando says his phone works, but nobody calls it.",
+    "en": "Hernando says his phone works, but nobody calls him.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3820,7 +3826,7 @@
   {
     "id": "u23-0158",
     "es": "Esta factura tiene un error y lo sé desde hace una semana.",
-    "en": "This bill has an error and I've known since last week.",
+    "en": "This bill has an error and I've known for a week.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4277,13 +4283,14 @@
   },
   {
     "id": "u23-0176",
-    "es": "¿Qué quiere hacer con el celular?\nQuiero reparar mi celular, nada más.",
-    "en": "What do you want to do with the phone?\nI want to repair my phone, nothing more.",
+    "es": "¿Qué quiere hacer con el celular?\nRepararlo, nada más.",
+    "en": "What do you want to do with the phone?\nRepair it, that's all.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:quiero",
+      "g:direct-objects",
       "g:gender-articles",
+      "g:object-pronoun-position",
       "g:questions",
       "g:stem-boot",
       "g:verb-infinitive",
@@ -4292,7 +4299,6 @@
       "l:querer",
       "l:qué",
       "l:reparar",
-      "p:possessives-basic",
       "p:rectificar-reparar"
     ],
     "targets": [
@@ -4437,7 +4443,7 @@
   {
     "id": "u23-0182",
     "es": "Hace quince días que dejé el carro donde el mecánico.",
-    "en": "I left the car at the mechanic's fifteen days ago.",
+    "en": "It's been fifteen days since I left the car at the mechanic's.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4608,8 +4614,8 @@
   },
   {
     "id": "u23-0189",
-    "es": "Vale encargó una batidora nueva para la panadería.",
-    "en": "Vale ordered a new mixer for the bakery.",
+    "es": "Vale encargó una batidora nueva para la cocina.",
+    "en": "Vale ordered a new mixer for the kitchen.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4617,9 +4623,9 @@
       "g:gender-articles",
       "g:preterite-ar",
       "l:batidora",
+      "l:cocina",
       "l:encargar",
       "l:nuevo",
-      "l:panadería",
       "p:para-inf"
     ],
     "targets": [
@@ -4968,7 +4974,7 @@
   },
   {
     "id": "u23-0203",
-    "es": "¿Cuál mecánico es mejor, el nuevo o el viejo?",
+    "es": "¿Qué mecánico es mejor, el nuevo o el viejo?",
     "en": "Which mechanic is better, the new one or the old one?",
     "accept": [],
     "acceptEn": [],
@@ -4976,10 +4982,10 @@
       "g:gender-articles",
       "g:questions",
       "g:ser-identity",
-      "l:cuál",
       "l:mecánico",
       "l:mejor",
       "l:nuevo",
+      "l:qué",
       "l:ser",
       "l:viejo",
       "p:viejo-antiguo-mayor"
@@ -5111,16 +5117,17 @@
   },
   {
     "id": "u23-0209",
-    "es": "La puerta del baño lleva rota desde el domingo.",
+    "es": "La puerta del baño está rota desde el domingo.",
     "en": "The bathroom door has been broken since Sunday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:estar-location-states",
+      "g:estar-participle",
       "g:gender-articles",
-      "g:present-ar",
       "l:baño",
       "l:domingo",
-      "l:llevar",
+      "l:estar",
       "l:puerta",
       "l:romper",
       "p:days-el-lunes"
@@ -5406,22 +5413,18 @@
   },
   {
     "id": "u23-0221",
-    "es": "Quiero enterarme del problema ahora mismo.",
-    "en": "I want to find out about the problem right now.",
+    "es": "Hernando siempre se entera de todo primero.",
+    "en": "Hernando always finds out about everything first.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:quiero",
-      "g:gender-articles",
-      "g:object-pronoun-position",
+      "g:present-ar",
       "g:reflexive-routine",
-      "g:stem-boot",
-      "g:verb-infinitive",
-      "l:ahora",
       "l:enterarse",
-      "l:problema",
-      "l:querer",
-      "p:enterarse-de"
+      "l:siempre",
+      "p:enterarse-de",
+      "p:frequency-scale",
+      "p:time-sequence-basic"
     ],
     "targets": [
       "l:enterarse"
@@ -5433,20 +5436,17 @@
   },
   {
     "id": "u23-0222",
-    "es": "Voy a enterarme de todo antes de firmar.",
-    "en": "I'm going to find out everything before signing.",
+    "es": "Me enteré del problema por Hernando.",
+    "en": "I found out about the problem from Hernando.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:voy-a",
-      "g:ir-a-plans",
-      "g:object-pronoun-position",
-      "g:prep-infinitive",
+      "g:gender-articles",
+      "g:por-para-1",
+      "g:preterite-ar",
       "g:reflexive-routine",
-      "l:antes",
       "l:enterarse",
-      "l:firmar",
-      "l:ir",
+      "l:problema",
       "p:enterarse-de"
     ],
     "targets": [
@@ -5511,11 +5511,19 @@
   },
   {
     "id": "u23-0225",
-    "es": "",
-    "en": "",
+    "es": "La lavadora se dañó otra vez y el técnico no contesta.",
+    "en": "The washing machine broke down again and the technician isn't answering.",
     "accept": [],
     "acceptEn": [],
-    "requires": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:contestar",
+      "l:lavadora",
+      "l:técnico",
+      "l:vez",
+      "p:otro-no-article"
+    ],
     "targets": [],
     "kind": "statement",
     "unit": "u23",
@@ -5602,23 +5610,23 @@
   },
   {
     "id": "u23-0229",
-    "es": "Quiero arreglar esto.\n¿Dónde puedo hacerlo?",
-    "en": "I want to fix this.\nWhere can I do it?",
+    "es": "Quiero arreglar esto.\nHay un señor en la esquina que arregla de todo.",
+    "en": "I want to get this fixed.\nThere's a man on the corner who fixes everything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:puedo",
+      "c:hay",
       "c:quiero",
-      "g:direct-objects",
-      "g:object-pronoun-position",
-      "g:questions",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "g:present-ar",
+      "g:relative-que",
       "g:stem-boot",
       "g:verb-infinitive",
       "l:arreglar",
-      "l:dónde",
-      "l:hacer",
-      "l:poder",
+      "l:esquina",
       "l:querer",
+      "l:señor",
       "p:demonstratives-basic"
     ],
     "targets": [
@@ -6596,24 +6604,23 @@
   },
   {
     "id": "u23-0269",
-    "es": "¿Me colabora con su cédula, por favor?\nAquí tiene, y otra para usted.",
-    "en": "Could you give me your ID, please?\nHere you go, and another for you.",
+    "es": "¿Me colabora con su cédula, por favor?\nClaro, aquí tiene.",
+    "en": "Could you give me your ID, please?\nOf course, here you go.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:aqui-tiene",
+      "c:claro-listo",
       "c:me-colabora",
       "c:por-favor",
       "c:tienes",
-      "g:prep-pronouns",
       "g:stem-boot",
       "l:aquí",
+      "l:claro",
       "l:colaborar",
       "l:cédula",
       "l:favor",
       "l:tener",
-      "p:otro-no-article",
-      "p:para-inf",
       "p:possessives-basic"
     ],
     "targets": [
@@ -6742,20 +6749,19 @@
   },
   {
     "id": "u23-0275",
-    "es": "Hernando conoce a algún empleado de la notaría.",
-    "en": "Hernando knows an employee at the notary's office.",
+    "es": "Hernando tiene algún amigo en la notaría.",
+    "en": "Hernando has some friend at the notary's office.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:conditional",
       "g:direct-objects",
       "g:indefinites",
-      "g:present-er-ir",
-      "l:conocer",
-      "l:empleado",
+      "g:stem-boot",
+      "l:amigo",
       "l:notar",
-      "p:personal-a",
-      "p:saber-conocer"
+      "l:tener"
     ],
     "targets": [
       "g:indefinites"
@@ -6767,8 +6773,8 @@
   },
   {
     "id": "u23-0276",
-    "es": "Hay algún error en el nombre del formulario.",
-    "en": "There is an error in the name on the form.",
+    "es": "Hay algún error con el nombre en el formulario.",
+    "en": "There's some error with the name on the form.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6916,17 +6922,19 @@
   },
   {
     "id": "u23-0282",
-    "es": "Alguna persona va a firmar por Rosa.",
-    "en": "Someone is going to sign for Rosa.",
+    "es": "Algún abogado tiene que firmar por Rosa.",
+    "en": "Some lawyer has to sign for Rosa.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:indefinites",
-      "g:ir-a-plans",
       "g:por-para-1",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:abogado",
       "l:firmar",
-      "l:ir",
-      "l:persona"
+      "l:tener"
     ],
     "targets": [
       "g:indefinites"
@@ -7079,13 +7087,12 @@
   },
   {
     "id": "u23-0289",
-    "es": "¿Usted es el dueño?\nLo soy desde hace tres meses, pero no tengo papeles.",
-    "en": "Are you the owner?\nI have been for three months, but I have no papers.",
+    "es": "¿Usted es el dueño?\nSí, desde hace tres meses, pero no tengo papeles.",
+    "en": "Are you the owner?\nYes, for three months, but I have no papers.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tengo",
-      "g:direct-objects",
       "g:gender-articles",
       "g:hace-que-desde",
       "g:ser-identity",
@@ -7391,21 +7398,20 @@
   },
   {
     "id": "u23-0302",
-    "es": "Hace dos años que Vale paga la cuenta de la panadería.",
-    "en": "Vale has been paying the bakery's bill for two years.",
+    "es": "Hace dos años que Vale paga la factura de la luz.",
+    "en": "Vale has been paying the electricity bill for two years.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:la-cuenta",
       "g:gender-articles",
       "g:hace-que-desde",
       "g:present-ar",
       "g:present-er-ir",
       "l:año",
-      "l:cuenta",
+      "l:factura",
       "l:hacer",
-      "l:pagar",
-      "l:panadería"
+      "l:luz",
+      "l:pagar"
     ],
     "targets": [
       "g:hace-que-desde"
@@ -7485,17 +7491,19 @@
   },
   {
     "id": "u23-0306",
-    "es": "Alguna vez Rosa habló del título.",
-    "en": "Once Rosa spoke about the deed.",
+    "es": "Rosa nunca habló del título en ninguna carta.",
+    "en": "Rosa never talked about the deed in any letter.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:indefinites",
+      "g:negation-words",
       "g:preterite-ar",
+      "l:carta",
       "l:hablar",
       "l:título",
-      "l:vez"
+      "p:frequency-scale"
     ],
     "targets": [
       "g:indefinites"
@@ -7731,12 +7739,11 @@
   },
   {
     "id": "u23-0316",
-    "es": "¿Ya llegó la respuesta?\nNinguna, todavía nada.",
-    "en": "Has the answer arrived?\nNone, still nothing.",
+    "es": "¿Ya llegó alguna respuesta?\nNo, todavía nada.",
+    "en": "Has any answer arrived yet?\nNo, still nothing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:indefinites",
       "g:preterite-ar",
       "l:llegar",
@@ -8118,18 +8125,23 @@
   },
   {
     "id": "u23-0332",
-    "es": "Alguna canción de Rosa suena todavía en la radio.",
-    "en": "Some song of Rosa's still plays on the radio.",
+    "es": "Alguna canción vieja suena siempre en la radio del café.",
+    "en": "Some old song is always playing on the café radio.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:indefinites",
       "g:stem-boot",
+      "l:café",
       "l:canción",
       "l:radio",
+      "l:siempre",
       "l:sonar",
-      "p:ya-todavia-basic"
+      "l:viejo",
+      "p:frequency-scale",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "g:indefinites",
@@ -8143,7 +8155,7 @@
   {
     "id": "u23-0333",
     "es": "Ninguna canción me gusta más que esa.",
-    "en": "No song pleases me more than that one.",
+    "en": "I don't like any song more than that one.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8193,7 +8205,7 @@
   {
     "id": "u23-0335",
     "es": "¿Tiene algún libro de arte?\nNo, ninguno, lo siento.",
-    "en": "Do you have any art book?\nNo, none, I'm sorry.",
+    "en": "Do you have an art book?\nNo, none, I'm sorry.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9267,8 +9279,8 @@
   },
   {
     "id": "u23-0380",
-    "es": "Hay algún ruido en la calle y no duermo bien.",
-    "en": "There is some noise in the street and I don't sleep well.",
+    "es": "Siempre hay algún ruido en la calle y no duermo bien.",
+    "en": "There's always some noise in the street and I don't sleep well.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9282,8 +9294,10 @@
       "l:calle",
       "l:dormir",
       "l:ruido",
+      "l:siempre",
       "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo"
+      "p:bien-mal-vs-bueno-malo",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:indefinites"
@@ -9369,18 +9383,20 @@
   },
   {
     "id": "u23-0384",
-    "es": "Mi hermana vive en algún pueblo cerca del mar.",
-    "en": "My sister lives in some town near the sea.",
+    "es": "Mi hermana quiere vivir en algún pueblo cerca del mar.",
+    "en": "My sister wants to live in some town near the sea.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:indefinites",
-      "g:present-er-ir",
+      "g:stem-boot",
+      "g:verb-infinitive",
       "l:cerca",
       "l:hermana",
       "l:mar",
       "l:pueblo",
+      "l:querer",
       "l:vivir",
       "p:cerca-de",
       "p:position-de",
@@ -9397,7 +9413,7 @@
   {
     "id": "u23-0385",
     "es": "Ninguna ciudad me gusta más que Bogotá.",
-    "en": "No city pleases me more than Bogotá.",
+    "en": "I don't like any city more than Bogotá.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9538,18 +9554,18 @@
   },
   {
     "id": "u23-0391",
-    "es": "¿Hay alguna cosa para usted, señor?",
-    "en": "Is there anything for you, sir?",
+    "es": "¿Le traigo alguna cosa, señor?",
+    "en": "Can I bring you anything, sir?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
-      "g:hay-vs-esta",
       "g:indefinites",
-      "g:prep-pronouns",
+      "g:indirect-objects",
+      "g:yo-irregular",
       "l:cosa",
       "l:señor",
-      "p:para-inf"
+      "l:traer",
+      "p:llevar-traer"
     ],
     "targets": [
       "g:indefinites"
@@ -9752,18 +9768,18 @@
   },
   {
     "id": "u23-0400",
-    "es": "¿Alguno de ustedes tiene hambre?\nYo, y los dos.",
-    "en": "Does any of you have hunger?\nMe, and both of us.",
+    "es": "¿Alguno de ustedes tiene hambre?\nYo sí, y mucha.",
+    "en": "Are any of you hungry?\nI am, very.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
-      "g:gender-articles",
       "g:indefinites",
       "g:prep-pronouns",
       "g:stem-boot",
       "l:hambre",
       "l:tener",
+      "p:quantifiers-basic",
       "p:tener-hambre"
     ],
     "targets": [
@@ -9800,7 +9816,7 @@
   {
     "id": "u23-0402",
     "es": "Ninguna taza de este café es igual.",
-    "en": "No cup in this café is the same.",
+    "en": "No two cups in this café are the same.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9822,8 +9838,8 @@
   },
   {
     "id": "u23-0403",
-    "es": "Aquí no hay ningún caballero, hay gente con prisa.",
-    "en": "There's no gentleman here, there are people in a hurry.",
+    "es": "En este bus no hay ningún caballero: nadie se levanta.",
+    "en": "There's no gentleman on this bus: nobody stands up.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9831,12 +9847,12 @@
       "g:hay-vs-esta",
       "g:indefinites",
       "g:negation-words",
-      "l:aquí",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "l:bus",
       "l:caballero",
-      "l:gente",
-      "l:prisa",
-      "p:aqui-ahi-alla",
-      "p:la-gente-singular"
+      "l:levantarse",
+      "p:demonstratives-basic"
     ],
     "targets": [
       "g:indefinites",
@@ -9972,13 +9988,13 @@
   },
   {
     "id": "u23-0409",
-    "es": "¿Ha venido algún técnico?\nNinguno todavía.",
-    "en": "Has any technician come?\nNone yet.",
+    "es": "¿Ya vino algún técnico?\nTodavía ninguno.",
+    "en": "Has any technician come yet?\nNone yet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:indefinites",
-      "g:perfecto-experience",
+      "g:preterite-irregular-strong",
       "l:técnico",
       "l:venir",
       "p:ya-todavia-basic"
@@ -10136,14 +10152,13 @@
   },
   {
     "id": "u23-0416",
-    "es": "No hay ninguna venta en la tienda hoy.",
-    "en": "There is no sale at the store today.",
+    "es": "Hoy no hubo ninguna venta en la tienda.",
+    "en": "There wasn't a single sale at the shop today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
       "g:gender-articles",
-      "g:hay-vs-esta",
+      "g:imperfect-states",
       "g:indefinites",
       "g:negation-words",
       "l:hoy",
@@ -10161,20 +10176,18 @@
   },
   {
     "id": "u23-0417",
-    "es": "Algunas ventas del café van para el arte del barrio.",
-    "en": "Some of the café's sales go to the neighborhood's art.",
+    "es": "Vale hizo algunas ventas en la feria de arte.",
+    "en": "Vale made a few sales at the art fair.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:indefinites",
-      "g:ir-a-plans",
+      "g:preterite-ser-ir-hacer",
       "l:arte",
-      "l:barrio",
-      "l:café",
-      "l:ir",
-      "l:venta",
-      "p:para-inf"
+      "l:feria",
+      "l:hacer",
+      "l:venta"
     ],
     "targets": [
       "g:indefinites",
@@ -10382,7 +10395,7 @@
   {
     "id": "u23-0426",
     "es": "Hace diez años que Hernando dejó el taxi.",
-    "en": "Hernando gave up the taxi ten years ago.",
+    "en": "It's been ten years since Hernando gave up the taxi.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10554,8 +10567,8 @@
   },
   {
     "id": "u23-0433",
-    "es": "Hace tres semanas que nadie viene a la panadería.",
-    "en": "Nobody has come to the bakery for three weeks.",
+    "es": "Hace tres semanas que nadie viene a la tienda de la esquina.",
+    "en": "Nobody has come to the corner shop for three weeks.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10563,9 +10576,10 @@
       "g:hace-que-desde",
       "g:present-er-ir",
       "g:stem-boot",
+      "l:esquina",
       "l:hacer",
-      "l:panadería",
       "l:semana",
+      "l:tienda",
       "l:venir",
       "p:ir-venir"
     ],
@@ -10741,7 +10755,7 @@
   },
   {
     "id": "u23-0441",
-    "es": "Hace cuatro semanas que mi carro está en el mecánico.",
+    "es": "Hace cuatro semanas que mi carro está donde el mecánico.",
     "en": "My car has been at the mechanic's for four weeks.",
     "accept": [],
     "acceptEn": [],
@@ -10750,6 +10764,7 @@
       "g:gender-articles",
       "g:hace-que-desde",
       "g:present-er-ir",
+      "g:relatives-donde-lo-que",
       "l:carro",
       "l:estar",
       "l:hacer",
@@ -10791,18 +10806,18 @@
   },
   {
     "id": "u23-0443",
-    "es": "Desde hace dos días, Vale no abre la panadería.",
-    "en": "For two days now, Vale hasn't opened the bakery.",
+    "es": "Desde hace dos días, Vale no viene al café.",
+    "en": "For two days now, Vale hasn't come to the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:hace-que-desde",
-      "g:present-er-ir",
-      "l:abrir",
+      "g:stem-boot",
+      "l:café",
       "l:día",
       "l:hace",
-      "l:panadería"
+      "l:venir"
     ],
     "targets": [
       "g:hace-que-desde"
@@ -11448,11 +11463,12 @@
   },
   {
     "id": "u23-0470",
-    "es": "Hace varios meses que Vale quiere abrir otra panadería.",
-    "en": "Vale has wanted to open another bakery for several months.",
+    "es": "Hace varios meses que Vale quiere abrir su propia panadería.",
+    "en": "Vale has wanted to open her own bakery for several months.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:hace-que-desde",
       "g:present-er-ir",
       "g:stem-boot",
@@ -11461,8 +11477,9 @@
       "l:hacer",
       "l:mes",
       "l:panadería",
+      "l:propio",
       "l:querer",
-      "p:otro-no-article"
+      "p:possessives-basic"
     ],
     "targets": [
       "g:hace-que-desde"
@@ -11940,7 +11957,7 @@
   {
     "id": "u23-0490",
     "es": "Hace un buen rato que el movimiento en la calle no para.",
-    "en": "The movement on the street has not stopped for quite a while.",
+    "en": "The bustle in the street hasn't stopped for a good while.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11994,12 +12011,11 @@
   },
   {
     "id": "u23-0492",
-    "es": "Hace dos meses que Hernando suelta una historia nueva en la tarde.",
-    "en": "For two months Hernando has been dropping a new story in the afternoon.",
+    "es": "Hace dos meses que Hernando suelta la misma historia todas las tardes.",
+    "en": "For two months Hernando has come out with the same story every afternoon.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:gender-articles",
       "g:hace-que-desde",
       "g:present-er-ir",
@@ -12007,10 +12023,10 @@
       "l:hacer",
       "l:historia",
       "l:mes",
-      "l:nuevo",
       "l:soltar",
       "l:tarde",
-      "p:por-la-manana"
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "g:hace-que-desde",
@@ -12100,19 +12116,17 @@
   },
   {
     "id": "u23-0496",
-    "es": "Vale merece un día libre: trabaja desde hace doce horas.",
-    "en": "Vale deserves a day off: she has been working for twelve hours.",
+    "es": "Vale merece descansar: trabaja desde hace doce horas.",
+    "en": "Vale deserves a rest: she has been working for twelve hours.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:hace-que-desde",
       "g:present-ar",
       "g:present-er-ir",
-      "l:día",
+      "l:descansar",
       "l:hace",
       "l:hora",
-      "l:libre",
       "l:merecer",
       "l:trabajar"
     ],
@@ -12127,22 +12141,21 @@
   },
   {
     "id": "u23-0497",
-    "es": "Hace meses que esta historia es interesante para el barrio.",
-    "en": "This story has been interesting to the neighborhood for months.",
+    "es": "Mariana dice que la historia del título es muy interesante.",
+    "en": "Mariana says the story of the deed is very interesting.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-er-ir",
       "g:ser-identity",
-      "l:barrio",
-      "l:hacer",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:decir",
       "l:historia",
       "l:interesante",
-      "l:mes",
       "l:ser",
-      "p:demonstratives-basic",
-      "p:para-inf"
+      "l:título",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:interesante"
@@ -12278,8 +12291,8 @@
   },
   {
     "id": "u23-0503",
-    "es": "Hace mucho calor, pero hace dos días que no llueve.",
-    "en": "It's very hot, and it hasn't rained for two days.",
+    "es": "Hace mucho calor y hace dos semanas que no llueve.",
+    "en": "It's very hot and it hasn't rained for two weeks.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12287,9 +12300,9 @@
       "g:present-er-ir",
       "g:stem-boot",
       "l:calor",
-      "l:día",
       "l:hacer",
       "l:llover",
+      "l:semana",
       "p:hace-frio",
       "p:quantifiers-basic"
     ],
@@ -12433,8 +12446,8 @@
   },
   {
     "id": "u23-0509",
-    "es": "Hace cinco semanas que Tomás duerme en el café.",
-    "en": "Tomás has been sleeping at the café for five weeks.",
+    "es": "Hace cinco semanas que Simón duerme en la cocina.",
+    "en": "Simón has been sleeping in the kitchen for five weeks.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12442,7 +12455,7 @@
       "g:hace-que-desde",
       "g:present-er-ir",
       "g:stem-boot",
-      "l:café",
+      "l:cocina",
       "l:dormir",
       "l:hacer",
       "l:semana"
@@ -12586,7 +12599,7 @@
   {
     "id": "u23-0515",
     "es": "Tomás pasa por esa oficina desde hace una semana.",
-    "en": "Tomás has been going by that office for a week.",
+    "en": "Tomás has been stopping by that office for a week.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13158,16 +13171,18 @@
   },
   {
     "id": "u23-0538",
-    "es": "Quería preguntar por un tintico para llevar.",
-    "en": "I wanted to ask about a coffee to go.",
+    "es": "Quería preguntar cuánto cuesta un tintico para llevar.",
+    "en": "I wanted to ask how much a coffee to go costs.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:cuanto-cuesta",
       "c:para-llevar",
       "c:queria-preguntar",
       "g:diminutives",
       "g:gender-articles",
-      "g:por-para-1",
+      "l:costar",
+      "l:cuánto",
       "l:llevar",
       "l:preguntar",
       "l:querer"
@@ -14137,7 +14152,7 @@
   {
     "id": "u23-0579",
     "es": "Esa vueltica por el centro fue muy larga.",
-    "en": "That little stroll downtown was very long.",
+    "en": "That little errand downtown was very long.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14562,23 +14577,21 @@
   },
   {
     "id": "u23-0597",
-    "es": "¿Puede esperar ahorita?\nSí, no hay problema.",
-    "en": "Can you wait for a bit?\nYes, no problem.",
+    "es": "¿Me espera? Ahorita vuelvo.\nSí, tranquilo.",
+    "en": "Can you wait for me? I'll be right back.\nYes, no worries.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ahorita",
-      "c:hay",
-      "c:no-te-preocupes",
+      "c:tranquilo",
       "g:diminutives",
-      "g:hay-vs-esta",
+      "g:present-ar",
       "g:stem-boot",
-      "g:verb-infinitive",
       "l:ahorita",
       "l:esperar",
-      "l:poder",
-      "l:problema",
-      "p:request-ladder"
+      "l:tranquilo",
+      "l:volver",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:diminutives",
@@ -14617,16 +14630,19 @@
   },
   {
     "id": "u23-0599",
-    "es": "Una tacita de tinto y una tarjeta de visita.",
-    "en": "A little cup of black coffee and a business card.",
+    "es": "Quiero una tacita de tinto, por favor.",
+    "en": "I want a little cup of black coffee, please.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:por-favor",
+      "c:quiero",
       "g:diminutives",
       "g:gender-articles",
-      "l:tarjeta",
-      "l:tinto",
-      "l:visita"
+      "g:stem-boot",
+      "l:favor",
+      "l:querer",
+      "l:tinto"
     ],
     "targets": [
       "g:diminutives"
@@ -15400,21 +15416,20 @@
   },
   {
     "id": "u23-0633",
-    "es": "¿Qué señal tiene aquí tu celular?",
-    "en": "What signal does your phone have here? (to a friend)",
+    "es": "¿Qué tal la señal de tu celular aquí?",
+    "en": "How's your phone signal here? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
+      "g:gender-articles",
       "g:questions",
-      "g:stem-boot",
       "l:aquí",
       "l:celular",
       "l:qué",
       "l:señal",
-      "l:tener",
       "p:aqui-ahi-alla",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:te-parece-bien-que"
     ],
     "targets": [
       "l:señal"
@@ -15426,8 +15441,8 @@
   },
   {
     "id": "u23-0634",
-    "es": "¿Cuáles son los números de reclamos?",
-    "en": "What are the complaint numbers?",
+    "es": "¿Cuál es el número para reclamos?",
+    "en": "What's the number for complaints?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15438,6 +15453,7 @@
       "l:número",
       "l:reclamo",
       "l:ser",
+      "p:para-inf",
       "p:question-word-order"
     ],
     "targets": [
@@ -15500,15 +15516,15 @@
   },
   {
     "id": "u23-0637",
-    "es": "¿Cuál técnico sabe de neveras?",
+    "es": "¿Qué técnico sabe de neveras?",
     "en": "Which technician knows about fridges?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-er-ir",
       "g:questions",
-      "l:cuál",
       "l:nevera",
+      "l:qué",
       "l:saber",
       "l:técnico",
       "p:saber-conocer"
@@ -15939,7 +15955,7 @@
   {
     "id": "u23-0657",
     "es": "¿Qué destino tiene esa plata?",
-    "en": "What is that money for?",
+    "en": "Where is that money going?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15960,8 +15976,8 @@
   },
   {
     "id": "u23-0658",
-    "es": "¿Cuál es la venta más importante del año?\nLa venta de diciembre.",
-    "en": "What is the most important sale of the year?\nDecember's sale.",
+    "es": "¿Cuál es el mejor mes para las ventas?\nDiciembre, siempre.",
+    "en": "What is the best month for sales?\nDecember, always.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15969,13 +15985,15 @@
       "g:questions",
       "g:ser-identity",
       "g:superlatives",
-      "l:año",
       "l:cuál",
       "l:diciembre",
-      "l:importante",
+      "l:mejor",
+      "l:mes",
       "l:ser",
+      "l:siempre",
       "l:venta",
-      "p:question-word-order"
+      "p:frequency-scale",
+      "p:para-inf"
     ],
     "targets": [
       "l:venta"
@@ -15987,7 +16005,7 @@
   },
   {
     "id": "u23-0659",
-    "es": "¿Qué arte te gusta más?",
+    "es": "¿Qué tipo de arte te gusta más?",
     "en": "What kind of art do you like most? (to a friend)",
     "accept": [],
     "acceptEn": [],
@@ -15998,7 +16016,9 @@
       "l:arte",
       "l:gustar",
       "l:qué",
-      "p:gustar-mas-que"
+      "l:tipo",
+      "p:gustar-mas-que",
+      "p:que-tipo-de"
     ],
     "targets": [
       "l:arte"
@@ -16010,13 +16030,15 @@
   },
   {
     "id": "u23-0660",
-    "es": "¿Cuál es la canción favorita de Rosa?",
-    "en": "What is Rosa's favorite song?",
+    "es": "¿Cuál era la canción favorita de Rosa?",
+    "en": "What was Rosa's favorite song?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
       "g:adjective-agreement",
       "g:gender-articles",
+      "g:imperfect-states",
       "g:questions",
       "g:ser-identity",
       "l:canción",
@@ -16424,25 +16446,19 @@
   },
   {
     "id": "u23-0679",
-    "es": "¿Cuál es la clave, si puedo preguntar?",
-    "en": "What is the PIN, if I may ask?",
+    "es": "¿Y cuál es la clave nueva?",
+    "en": "And what's the new PIN?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:puedo",
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:questions",
       "g:ser-identity",
-      "g:si-present",
-      "g:stem-boot",
-      "g:verb-infinitive",
       "l:clave",
       "l:cuál",
-      "l:poder",
-      "l:preguntar",
-      "l:ser",
-      "p:preguntar-pedir",
-      "p:question-word-order"
+      "l:nuevo",
+      "l:ser"
     ],
     "targets": [
       "l:clave"
@@ -16752,8 +16768,8 @@
   },
   {
     "id": "u23-0693",
-    "es": "¿Qué día abre el banco los sábados?",
-    "en": "What days does the bank open on Saturdays?",
+    "es": "¿Qué días abre el banco?",
+    "en": "What days does the bank open?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16763,9 +16779,7 @@
       "l:abrir",
       "l:banco",
       "l:día",
-      "l:qué",
-      "l:sábado",
-      "p:days-el-lunes"
+      "l:qué"
     ],
     "targets": [],
     "kind": "question",
@@ -16978,7 +16992,7 @@
   },
   {
     "id": "u23-0703",
-    "es": "Quería preguntar por mi cuenta.\n¿Cuál cuenta, señor?",
+    "es": "Quería preguntar por mi cuenta.\n¿Qué cuenta, señor?",
     "en": "I wanted to ask about my account.\nWhich account, sir?",
     "accept": [],
     "acceptEn": [],
@@ -16986,12 +17000,10 @@
       "c:queria-preguntar",
       "g:por-para-1",
       "g:questions",
-      "g:stem-boot",
-      "l:contar",
       "l:cuenta",
-      "l:cuál",
       "l:preguntar",
       "l:querer",
+      "l:qué",
       "l:señor",
       "p:possessives-basic"
     ],
@@ -17102,21 +17114,24 @@
   },
   {
     "id": "u23-0708",
-    "es": "¿Qué tengo que decir al operador?",
-    "en": "What do I have to say to the operator?",
+    "es": "¿Qué tengo que decir cuando contesta el operador?",
+    "en": "What do I have to say when the operator answers?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tengo",
       "c:tengo-que",
       "g:gender-articles",
+      "g:present-ar",
       "g:questions",
       "g:verb-infinitive",
       "g:yo-irregular",
+      "l:contestar",
       "l:decir",
       "l:operador",
       "l:qué",
-      "l:tener"
+      "l:tener",
+      "p:cuando-basic"
     ],
     "targets": [
       "l:operador"
@@ -17446,19 +17461,20 @@
   },
   {
     "id": "u23-0722",
-    "es": "La feria del barrio abre desde hace diez años.",
-    "en": "The neighborhood fair has been opening for ten years.",
+    "es": "Hace diez años que hay feria en el barrio.",
+    "en": "There has been a fair in the neighborhood for ten years.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
       "g:gender-articles",
       "g:hace-que-desde",
+      "g:hay-vs-esta",
       "g:present-er-ir",
-      "l:abrir",
       "l:año",
       "l:barrio",
       "l:feria",
-      "l:hace"
+      "l:hacer"
     ],
     "targets": [
       "g:hace-que-desde",
@@ -18353,17 +18369,17 @@
   },
   {
     "id": "u23-0760",
-    "es": "Voy a destinar la plata de hoy al banco.",
-    "en": "I'm going to put today's money toward the bank.",
+    "es": "Vamos a destinar la plata de diciembre a la cocina.",
+    "en": "We're going to put December's money toward the kitchen.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:voy-a",
+      "c:vamos-a",
       "g:gender-articles",
       "g:ir-a-plans",
-      "l:banco",
+      "l:cocina",
       "l:destinar",
-      "l:hoy",
+      "l:diciembre",
       "l:ir",
       "l:plata"
     ],
@@ -18424,18 +18440,22 @@
   },
   {
     "id": "u23-0763",
-    "es": "Hay un cuadro de arte en la pared del fondo.",
-    "en": "There is an art painting on the back wall.",
+    "es": "Hay un cuadro de Vale en la pared del fondo. Es arte de verdad.",
+    "en": "There's a painting by Vale on the back wall. It's real art.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:en-serio",
       "c:hay",
       "g:gender-articles",
       "g:hay-vs-esta",
+      "g:ser-identity",
       "l:arte",
       "l:cuadro",
       "l:fondo",
-      "l:pared"
+      "l:pared",
+      "l:ser",
+      "l:verdad"
     ],
     "targets": [
       "l:arte"
@@ -18513,8 +18533,8 @@
   },
   {
     "id": "u23-0767",
-    "es": "¿Cuál es la oferta de venta?\nNo me lo quieren decir.",
-    "en": "What is the sale offer?\nThey won't tell me.",
+    "es": "¿Cuál es el precio de venta?\nNo me lo quieren decir.",
+    "en": "What's the sale price?\nThey won't tell me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18527,7 +18547,7 @@
       "g:verb-infinitive",
       "l:cuál",
       "l:decir",
-      "l:oferta",
+      "l:precio",
       "l:querer",
       "l:ser",
       "l:venta",
@@ -18739,8 +18759,8 @@
   },
   {
     "id": "u23-0776",
-    "es": "¿Corre algún riesgo el café?\nMucho, desde hace meses.",
-    "en": "Is the café at any risk?\nA lot, for months now.",
+    "es": "¿Corre algún riesgo el café?\nSí, y desde hace meses.",
+    "en": "Is the café at any risk?\nYes, and for months now.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18751,8 +18771,7 @@
       "l:correr",
       "l:hace",
       "l:mes",
-      "l:riesgo",
-      "p:quantifiers-basic"
+      "l:riesgo"
     ],
     "targets": [
       "g:indefinites",
@@ -19439,15 +19458,16 @@
   },
   {
     "id": "u23-0804",
-    "es": "Mi queja es fácil: nadie contesta.",
-    "en": "My complaint is easy: nobody answers.",
+    "es": "Mi queja es corta: nadie contesta.",
+    "en": "My complaint is short: nobody answers.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:present-ar",
       "g:ser-identity",
       "l:contestar",
-      "l:fácil",
+      "l:corto",
       "l:queja",
       "l:ser",
       "p:possessives-basic"
@@ -19512,8 +19532,8 @@
   },
   {
     "id": "u23-0807",
-    "es": "Una estrella de cine pasó por la calle de la Candelaria.",
-    "en": "A movie star passed down the Candelaria street.",
+    "es": "Una estrella de cine pasó por una calle de La Candelaria.",
+    "en": "A movie star walked down a street in La Candelaria.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19589,15 +19609,15 @@
   },
   {
     "id": "u23-0810",
-    "es": "¿Cómo se llama la estrella del cine?\nNo sé, no la conozco.",
-    "en": "What's the movie star called?\nI don't know, I don't know her.",
+    "es": "¿Cómo se llama esa estrella de cine?\nNo sé, no la conozco.",
+    "en": "What's that movie star's name?\nI don't know, I don't know her.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:no-se",
       "c:se-llama",
+      "g:demonstratives",
       "g:direct-objects",
-      "g:gender-articles",
       "g:reflexive-routine",
       "g:yo-irregular",
       "l:cine",
@@ -19814,17 +19834,16 @@
   },
   {
     "id": "u23-0819",
-    "es": "Quiero un papel con mi identidad.",
-    "en": "I want a paper with my identity.",
+    "es": "Hoy perdí mi documento de identidad.",
+    "en": "Today I lost my ID document.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:quiero",
-      "g:gender-articles",
-      "g:stem-boot",
+      "g:preterite-er-ir",
+      "l:documento",
+      "l:hoy",
       "l:identidad",
-      "l:papel",
-      "l:querer",
+      "l:perder",
       "p:possessives-basic"
     ],
     "targets": [
@@ -19987,19 +20006,23 @@
   },
   {
     "id": "u23-0826",
-    "es": "Una técnica nueva de Vale hace el pan más rico.",
-    "en": "A new technique of Vale's makes the bread tastier.",
+    "es": "Vale tiene una técnica nueva que hace el pan más rico.",
+    "en": "Vale has a new technique that makes the bread tastier.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:adjective-agreement",
       "g:gender-articles",
       "g:present-er-ir",
+      "g:relative-que",
+      "g:stem-boot",
       "g:superlatives",
       "l:hacer",
       "l:nuevo",
       "l:pan",
       "l:rico",
+      "l:tener",
       "l:técnica"
     ],
     "targets": [
@@ -20079,19 +20102,21 @@
   },
   {
     "id": "u23-0830",
-    "es": "Cometí un error con la clave y perdí la cuenta.",
-    "en": "I made a mistake with the PIN and lost the account.",
+    "es": "Cometí un error con la clave y el cajero se quedó con la tarjeta.",
+    "en": "I made a mistake with the PIN and the ATM kept the card.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:la-cuenta",
       "g:gender-articles",
+      "g:preterite-ar",
       "g:preterite-er-ir",
+      "g:reflexive-routine",
+      "l:cajero",
       "l:clave",
       "l:cometer",
-      "l:cuenta",
       "l:error",
-      "l:perder"
+      "l:quedarse",
+      "l:tarjeta"
     ],
     "targets": [
       "l:clave",
@@ -20177,11 +20202,13 @@
   },
   {
     "id": "u23-0834",
-    "es": "Todos cometemos errores, hasta Rosa.",
-    "en": "We all make mistakes, even Rosa.",
+    "es": "Todos cometemos errores. Hasta Rosa los cometía.",
+    "en": "We all make mistakes. Even Rosa made them.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:direct-objects",
+      "g:imperfect-habitual",
       "g:present-er-ir",
       "l:cometer",
       "l:error"
@@ -20218,7 +20245,7 @@
   {
     "id": "u23-0836",
     "es": "Hay mucho movimiento en la calle hoy.",
-    "en": "There is a lot of movement on the street today.",
+    "en": "There's a lot going on in the street today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20241,7 +20268,7 @@
   {
     "id": "u23-0837",
     "es": "La fila no tiene ningún movimiento.",
-    "en": "The line has no movement.",
+    "en": "The line isn't moving at all.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20266,8 +20293,8 @@
   },
   {
     "id": "u23-0838",
-    "es": "Un movimiento raro en la puerta, y era Simón.",
-    "en": "A strange movement at the door, and it was Simón.",
+    "es": "Hubo un movimiento raro en la puerta, y era Simón.",
+    "en": "There was a strange movement at the door, and it was Simón.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20278,7 +20305,8 @@
       "l:movimiento",
       "l:puerta",
       "l:raro",
-      "l:ser"
+      "l:ser",
+      "p:event-ser-en"
     ],
     "targets": [
       "l:movimiento"
@@ -20313,7 +20341,7 @@
   {
     "id": "u23-0840",
     "es": "Simón soltó una palabra nueva en el silencio.",
-    "en": "Simón dropped a new word into the silence.",
+    "en": "Simón let out a new word in the silence.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20407,17 +20435,20 @@
   },
   {
     "id": "u23-0844",
-    "es": "Hay una necesidad de sillas en el café.",
-    "en": "There is a need for chairs at the café.",
+    "es": "Para el café, las sillas nuevas son una necesidad.",
+    "en": "For the café, new chairs are a necessity.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
+      "g:adjective-agreement",
       "g:gender-articles",
-      "g:hay-vs-esta",
+      "g:ser-identity",
       "l:café",
       "l:necesidad",
-      "l:silla"
+      "l:nuevo",
+      "l:ser",
+      "l:silla",
+      "p:para-inf"
     ],
     "targets": [
       "l:necesidad"
@@ -20429,20 +20460,17 @@
   },
   {
     "id": "u23-0845",
-    "es": "El barrio tiene necesidad de un banco nuevo.",
-    "en": "The neighborhood has a need for a new bank.",
+    "es": "Un cajero en el barrio es una necesidad.",
+    "en": "An ATM in the neighborhood is a necessity.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
       "g:gender-articles",
-      "g:stem-boot",
-      "l:banco",
+      "g:ser-identity",
       "l:barrio",
+      "l:cajero",
       "l:necesidad",
-      "l:nuevo",
-      "l:tener",
-      "p:lugar-tiene"
+      "l:ser"
     ],
     "targets": [
       "l:necesidad"
@@ -20521,12 +20549,13 @@
   },
   {
     "id": "u23-0849",
-    "es": "¿Cuánto pagó?\nLa mitad, y mañana la otra.",
-    "en": "How much did you pay?\nHalf, and tomorrow the other one.",
+    "es": "¿Cuánto pagó?\nLa mitad, y mañana pago la otra.",
+    "en": "How much did you pay?\nHalf, and tomorrow I pay the other half.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:present-ar",
       "g:preterite-ar",
       "g:questions",
       "l:cuánto",
@@ -20607,7 +20636,7 @@
   {
     "id": "u23-0853",
     "es": "¿Te amenazó?\nNo, pero me habló feo.",
-    "en": "Did he threaten you?\nNo, but he talked ugly to me.",
+    "en": "Did he threaten you?\nNo, but he spoke to me nastily.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20745,19 +20774,23 @@
   },
   {
     "id": "u23-0859",
-    "es": "Buenas tardes, caballero.\nBuenas tardes, ¿qué desea?",
-    "en": "Good afternoon, sir.\nGood afternoon, what would you like?",
+    "es": "Buenas tardes, caballero, ¿qué desea?\nUn tinto, por favor.",
+    "en": "Good afternoon, sir, what would you like?\nA black coffee, please.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hola-buenos-dias",
+      "c:por-favor",
+      "g:gender-articles",
       "g:present-ar",
       "g:questions",
       "l:buena",
       "l:caballero",
       "l:desear",
+      "l:favor",
       "l:qué",
-      "l:tarde"
+      "l:tarde",
+      "l:tinto"
     ],
     "targets": [
       "l:caballero"
@@ -20929,20 +20962,18 @@
   },
   {
     "id": "u23-0867",
-    "es": "¿Cómo está el libro?\nMuy interesante.",
-    "en": "How is the book?\nVery interesting.",
+    "es": "¿Qué tal el libro?\nMuy interesante.",
+    "en": "How's the book?\nVery interesting.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:como-estas",
-      "g:estar-location-states",
       "g:gender-articles",
-      "l:cómo",
-      "l:estar",
+      "g:questions",
       "l:interesante",
       "l:libro",
+      "l:qué",
       "p:quantifiers-basic",
-      "p:question-word-order"
+      "p:te-parece-bien-que"
     ],
     "targets": [
       "l:interesante"
@@ -21223,28 +21254,30 @@
   },
   {
     "id": "u23-0878",
-    "es": "Mi prima es enfermera.\nAhorita la llamo para preguntarle.",
-    "en": "My cousin is a nurse.\nI'll call her in a bit to ask her.",
+    "es": "Me duele mucho la cabeza.\nMi prima es enfermera, ahorita la llamo.",
+    "en": "My head really hurts.\nMy cousin is a nurse, I'll call her in a bit.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ahorita",
       "g:diminutives",
       "g:direct-objects",
-      "g:indirect-objects",
-      "g:object-pronoun-position",
+      "g:gender-articles",
+      "g:gustar-full",
       "g:present-ar",
       "g:ser-identity",
+      "g:stem-boot",
       "l:ahorita",
+      "l:cabeza",
+      "l:doler",
       "l:enfermera",
       "l:llamar",
-      "l:preguntar",
       "l:prima",
       "l:ser",
-      "p:para-inf",
-      "p:para-inf-purpose",
+      "p:doler",
+      "p:me-duele",
       "p:possessives-basic",
-      "p:preguntar-pedir"
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:diminutives",
@@ -21416,20 +21449,19 @@
   },
   {
     "id": "u23-0885",
-    "es": "Voy a cometer un error pequeñito, pero lo voy a arreglar.",
-    "en": "I'm going to make a tiny mistake, but I'm going to fix it.",
+    "es": "Cometí un error pequeñito, pero ya lo arreglé.",
+    "en": "I made a tiny mistake, but I already fixed it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:voy-a",
       "g:diminutives",
       "g:direct-objects",
       "g:gender-articles",
-      "g:ir-a-plans",
+      "g:preterite-ar",
+      "g:preterite-er-ir",
       "l:arreglar",
       "l:cometer",
       "l:error",
-      "l:ir",
       "l:pequeñito"
     ],
     "targets": [
@@ -21470,19 +21502,18 @@
   },
   {
     "id": "u23-0887",
-    "es": "Tiene una necesidad pequeña: un cafecito antes de las ocho.",
-    "en": "He has a small need: a little coffee before eight.",
+    "es": "Hernando solo tiene una necesidad: un cafecito antes de las ocho.",
+    "en": "Hernando has only one need: a little coffee before eight.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
-      "g:adjective-agreement",
       "g:gender-articles",
       "g:stem-boot",
       "l:antes",
       "l:necesidad",
-      "l:pequeño",
-      "l:tener"
+      "l:tener",
+      "p:sobre-todo-solo"
     ],
     "targets": [
       "l:necesidad"
@@ -21541,21 +21572,18 @@
   },
   {
     "id": "u23-0890",
-    "es": "Altamira amenaza con llamar a un abogado, pero ahorita no lo hace.",
-    "en": "Altamira threatens to call a lawyer, but isn't doing it right now.",
+    "es": "Altamira amenaza con llamar a un abogado ahorita mismo.",
+    "en": "Altamira threatens to call a lawyer right now.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ahorita",
       "g:diminutives",
-      "g:direct-objects",
       "g:gender-articles",
       "g:present-ar",
-      "g:present-er-ir",
       "l:abogado",
       "l:ahorita",
       "l:amenazar",
-      "l:hacer",
       "l:llamar",
       "p:personal-a"
     ],
@@ -21652,8 +21680,8 @@
   },
   {
     "id": "u23-0894",
-    "es": "¿Está bien?\nSí, pero ahorita me levanto.",
-    "en": "Are you OK?\nYes, but I'll get up in a moment.",
+    "es": "¿Está bien?\nSí, sí, ahorita me levanto.",
+    "en": "Are you OK?\nYes, yes, I'll get up in a moment.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21668,7 +21696,8 @@
       "l:estar",
       "l:levantarse",
       "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo"
+      "p:bien-mal-vs-bueno-malo",
+      "p:repeticion-claro-claro"
     ],
     "targets": [
       "g:diminutives",
@@ -21681,18 +21710,21 @@
   },
   {
     "id": "u23-0895",
-    "es": "Hace dos días que mi vecina sale con su gatico.",
-    "en": "For two days my neighbor has been going out with her little cat.",
+    "es": "Hace dos días que el gatico de mi vecina no vuelve a casa.",
+    "en": "My neighbor's little cat hasn't come home for two days.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:diminutives",
+      "g:gender-articles",
       "g:hace-que-desde",
       "g:present-er-ir",
+      "g:stem-boot",
+      "l:casa",
       "l:día",
       "l:hacer",
-      "l:salir",
       "l:vecino",
+      "l:volver",
       "p:possessives-basic"
     ],
     "targets": [
@@ -21900,15 +21932,16 @@
   },
   {
     "id": "u23-0904",
-    "es": "Mi abuelita me mandaba una carta, una cartica y un besito.",
-    "en": "My granny used to send me a letter, a little letter and a little kiss.",
+    "es": "Mi abuelita me mandaba una cartica con un besito al final.",
+    "en": "My granny used to send me a little letter with a little kiss at the end.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:al-final",
       "g:diminutives",
       "g:gender-articles",
       "g:imperfect-habitual",
-      "l:carta",
+      "l:final",
       "l:mandar",
       "p:me-te-nos-objects",
       "p:possessives-basic"
@@ -22111,21 +22144,19 @@
   },
   {
     "id": "u23-0912",
-    "es": "Hace un rato que la señal sirve otra vez.",
-    "en": "The signal has been working again for a while.",
+    "es": "Hace un rato que volvió la señal.",
+    "en": "The signal came back a while ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:hace-que-desde",
       "g:present-er-ir",
-      "g:stem-e-i",
+      "g:preterite-er-ir",
       "l:hacer",
       "l:rato",
-      "l:servir",
       "l:señal",
-      "l:vez",
-      "p:otro-no-article"
+      "l:volver"
     ],
     "targets": [
       "g:hace-que-desde",
@@ -22188,8 +22219,8 @@
   },
   {
     "id": "u23-0915",
-    "es": "Hace cinco años que Vale quiere una panaderita.",
-    "en": "Vale has wanted a little bakery for five years.",
+    "es": "Hace cinco años que Hernando quiere una casita cerca del mar.",
+    "en": "Hernando has wanted a little house by the sea for five years.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22199,8 +22230,12 @@
       "g:present-er-ir",
       "g:stem-boot",
       "l:año",
+      "l:cerca",
       "l:hacer",
-      "l:querer"
+      "l:mar",
+      "l:querer",
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "g:diminutives",
