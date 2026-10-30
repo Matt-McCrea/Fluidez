@@ -1,0 +1,288 @@
+{
+  "id": "sc-u57-e",
+  "unit": "u57",
+  "title": "La maleta de Vale",
+  "brief": "You're Tomás. At dawn Vale turns up at the café door with her suitcase and says she isn't going back to Medellín. She's your friend, so use tú. Marvel at it, share what hit you, ask for time on her request and finish with a toast to luck.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Vale: No pongas esa cara. Traje mi maleta y no pienso llevármela de vuelta.",
+      "npcEn": "Vale: Don't make that face. I brought my suitcase and I don't plan to take it back.",
+      "intent": "Say it seems unbelievable that she is staying after so many years (use: parece mentira que + subjunctive).",
+      "accept": [
+        "Parece mentira que te quedes después de tantos años en Medellín.",
+        "Parece mentira que por fin vayas a quedarte.",
+        "Parece mentira que vuelvas justo ahora."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bparece mentira que\\b",
+          "flags": "iu",
+          "label": "use: parece mentira que"
+        },
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "parece mentira que",
+          "within": 8
+        }
+      ],
+      "focus": "p:parece-mentira-que",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Vale: Allá tengo un trabajo, un apartamento y un gato. Pero aquí tengo esto.",
+      "npcEn": "Vale: Over there I have a job, an apartment and a cat. But here I have this.",
+      "intent": "Say how you envy her courage to start over (use: ¡Quién tuviera / pudiera ...!).",
+      "accept": [
+        "¡Quién tuviera tu valor para empezar de cero!",
+        "¡Quién pudiera dejarlo todo como tú!",
+        "¡Quién tuviera tu valentía para decidir tan rápido!"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bqui[eé]n (tuviera|pudiera)\\b",
+          "flags": "iu",
+          "label": "use: ¡quién tuviera / pudiera...!"
+        }
+      ],
+      "focus": "p:quien-tuviera",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Vale: ¿Y si no sale bien? ¿Y si Altamira se queda con la cuadra?",
+      "npcEn": "Vale: And what if it doesn't work out? What if Altamira ends up with the block?",
+      "intent": "Reassure her: say you are crossing your fingers (use: cruzo los dedos para que + subjunctive).",
+      "accept": [
+        "Cruzo los dedos para que todo salga bien.",
+        "Cruzo los dedos para que el café funcione.",
+        "Yo cruzo los dedos para que Altamira se rinda."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcruzo los dedos\\b",
+          "flags": "iu",
+          "label": "use: cruzo los dedos"
+        },
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "para que",
+          "within": 3
+        }
+      ],
+      "focus": "c:cruzo-los-dedos",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Vale: Anoche me entró un miedo horrible. Pensé: ¿y si me arrepiento?",
+      "npcEn": "Vale: Last night a horrible fear came over me. I thought: what if I regret it?",
+      "intent": "Say that a wave of sadness or an urge to cry hit you too (use: me entró / me entraron).",
+      "accept": [
+        "A mí me entraron ganas de llorar en el entierro.",
+        "A mí también me entró una pena enorme cuando pasaron los carros.",
+        "A mí me entró una tristeza enorme al ver el tablero."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bme entr(ó|o|aron)",
+          "flags": "iu",
+          "label": "use: me entró / me entraron"
+        }
+      ],
+      "focus": "p:entrarle-algo",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Vale: ¿Me dejas vivir en el cuarto de arriba mientras busco apartamento?",
+      "npcEn": "Vale: Will you let me live in the room upstairs while I look for an apartment?",
+      "intent": "Say you need to sleep on it (use: Déjame consultarlo con la almohada).",
+      "accept": [
+        "Déjame consultarlo con la almohada, pero creo que sí.",
+        "Claro que sí, pero déjame consultarlo con la almohada primero.",
+        "Déjame consultarlo con la almohada, aunque ya sabes mi respuesta."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bconsultarlo con la almohada\\b",
+          "flags": "iu",
+          "label": "use: consultarlo con la almohada"
+        }
+      ],
+      "focus": "c:consultarlo-con-la-almohada",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Vale: Entonces abramos el café. Hoy toca el pan de cada día.",
+      "npcEn": "Vale: Then let's open the café. Today it's the daily bread.",
+      "intent": "Say let's go for it, and that whatever happens, happens (use: Hágale and que sea lo que Dios quiera).",
+      "accept": [
+        "¡Hágale, pues! Y que sea lo que Dios quiera.",
+        "Hágale. Ya hicimos todo lo que pudimos; que sea lo que Dios quiera.",
+        "¡Hágale! Que sea lo que Dios quiera."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bh[aá]gale\\b",
+          "flags": "iu",
+          "label": "use: hágale"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bque sea lo que dios quiera\\b",
+          "flags": "iu",
+          "label": "use: que sea lo que Dios quiera"
+        }
+      ],
+      "focus": "c:hagale",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-mi-tambien",
+    "c:ayer-anoche",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:consultarlo-con-la-almohada",
+    "c:creo-que",
+    "c:cruzo-los-dedos",
+    "c:el-pan-de-cada-dia",
+    "c:entonces-bueno",
+    "c:hagale",
+    "c:pues",
+    "c:que-sea-lo-que-dios-quiera",
+    "c:tengo",
+    "g:aunque-indicative",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:imperfect-subj",
+    "g:ir-a-plans",
+    "g:negative-commands",
+    "g:object-pronoun-position",
+    "g:para-que",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:si-present",
+    "g:stem-boot",
+    "g:subj-irregulars",
+    "g:subj-value",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:wish-exclamatives",
+    "g:yo-irregular",
+    "l:abrir",
+    "l:ahora",
+    "l:allá",
+    "l:almohada",
+    "l:anoche",
+    "l:apartamento",
+    "l:aquí",
+    "l:arrepentirse",
+    "l:arriba",
+    "l:año",
+    "l:bien",
+    "l:buscar",
+    "l:café",
+    "l:cara",
+    "l:carro",
+    "l:cero",
+    "l:claro",
+    "l:consultar",
+    "l:creer",
+    "l:cruzar",
+    "l:cuadra",
+    "l:decidir",
+    "l:dedo",
+    "l:dejar",
+    "l:después",
+    "l:día",
+    "l:empezar",
+    "l:enorme",
+    "l:entierro",
+    "l:entrar",
+    "l:fin",
+    "l:funcionar",
+    "l:ganas",
+    "l:gato",
+    "l:hacer",
+    "l:horrible",
+    "l:hoy",
+    "l:ir",
+    "l:justo",
+    "l:llevar",
+    "l:llorar",
+    "l:maleta",
+    "l:mentira",
+    "l:miedo",
+    "l:pan",
+    "l:parecer",
+    "l:pasar",
+    "l:pena",
+    "l:pensar",
+    "l:poder",
+    "l:poner",
+    "l:quedar",
+    "l:quedarse",
+    "l:querer",
+    "l:quién",
+    "l:rendirse",
+    "l:respuesta",
+    "l:rápido",
+    "l:saber",
+    "l:salir",
+    "l:ser",
+    "l:tablero",
+    "l:tener",
+    "l:tocar",
+    "l:trabajo",
+    "l:traer",
+    "l:tristeza",
+    "l:valentía",
+    "l:valor",
+    "l:ver",
+    "l:vivir",
+    "l:volver",
+    "l:vuelta",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cuando-basic",
+    "p:demonstratives-basic",
+    "p:entrarle-algo",
+    "p:exclamations-basic",
+    "p:llevar-traer",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:parece-mentira-que",
+    "p:pensar-en",
+    "p:pensar-inf",
+    "p:possessives-basic",
+    "p:que-tal-si",
+    "p:question-word-order",
+    "p:quien-tuviera",
+    "p:saber-conocer",
+    "p:se-puede-me-dejas",
+    "p:time-sequence-basic"
+  ]
+}

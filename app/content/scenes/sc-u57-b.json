@@ -1,0 +1,293 @@
+{
+  "id": "sc-u57-b",
+  "unit": "u57",
+  "title": "Una nota para el periódico",
+  "brief": "You're Tomás, in the café with Mariana the journalist. She's your age and a friend, so use tú. She is writing Hernando's obituary and needs your help with the details, a few honest answers and a way to finish.",
+  "spare": false,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Mariana: Llevo una hora sin saber cómo empezar la nota sobre Hernando. ¿Tú pudiste escribir algo para el funeral?",
+      "npcEn": "Mariana: I've spent an hour not knowing how to start the piece on Hernando. Were you able to write something for the funeral?",
+      "intent": "Say you racked your brains over it (use: me rompí la cabeza).",
+      "accept": [
+        "Me rompí la cabeza toda la noche y solo salieron tres líneas.",
+        "Me rompí la cabeza, pero no logré escribir nada bueno.",
+        "Sí, me rompí la cabeza tres horas para escribir una página."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bme (rompí|quebré) la cabeza\\b",
+          "flags": "iu",
+          "label": "use: me rompí la cabeza"
+        }
+      ],
+      "focus": "p:romperse-la-cabeza",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Mariana: En el libro, Hernando cuenta que tú perdías a propósito. ¿Él lo sabía?",
+      "npcEn": "Mariana: In the book, Hernando says you lost on purpose. Did he know?",
+      "intent": "Say you only realized when you read that page that he had always known (use: caí en cuenta de que).",
+      "accept": [
+        "Hasta que leí esa página no caí en cuenta de que él lo sabía.",
+        "Caí en cuenta de que lo sabía desde el principio cuando leí el capítulo.",
+        "Ayer caí en cuenta de que él siempre lo supo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bca[ií] en (la )?cuenta\\b",
+          "flags": "iu",
+          "label": "use: caí en cuenta"
+        }
+      ],
+      "focus": "p:caer-en-cuenta",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Mariana: Todos nos preguntamos qué habría pasado si hubiéramos hecho algo distinto.",
+      "npcEn": "Mariana: We all wonder what would have happened if we had done something different.",
+      "intent": "Wonder aloud, as a question, what if you had done something that night (use: ¿Y si + hubiera or hubiéramos + participle?).",
+      "accept": [
+        "¿Y si lo hubiera llamado esa noche?",
+        "¿Y si hubiéramos jugado una última partida?",
+        "¿Y si lo hubiéramos acompañado hasta su casa?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\by si (lo |le |nos |me )?hub(iera|iéramos|ieramos)\\b",
+          "flags": "iu",
+          "label": "use: ¿y si hubiera / hubiéramos...?"
+        },
+        {
+          "type": "question"
+        }
+      ],
+      "focus": "p:y-si-hubieramos",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Mariana: No sé si poner la anécdota de las partidas en la nota. ¿Tú qué prefieres?",
+      "npcEn": "Mariana: I don't know whether to put the story about the games in the piece. What do you prefer?",
+      "intent": "Tell her that if she wants it in, she should put it in; it doesn't bother you (use: si quieres...).",
+      "accept": [
+        "Si quieres incluir la anécdota, inclúyela. A mí no me molesta.",
+        "Si quieres que salgan las partidas, que salgan; él lo habría querido.",
+        "Si quieres ponerla, ponla. Por mí no hay problema."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsi quieres\\b",
+          "flags": "iu",
+          "label": "use: si quieres..."
+        }
+      ],
+      "focus": "p:si-quieres-que",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Mariana: Última pregunta, para cerrar la nota: ¿qué le dirías a Hernando si lo tuvieras delante?",
+      "npcEn": "Mariana: Last question, to close the piece: what would you say to Hernando if you had him in front of you?",
+      "intent": "Say what you would tell or ask him if he were here (use: si + imperfect subjunctive, then the conditional).",
+      "accept": [
+        "Si lo tuviera delante, le diría que siempre jugó mejor que yo.",
+        "Si pudiera hablar con él, le pediría una última partida.",
+        "Si estuviera aquí, le daría las gracias por todo."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "si",
+          "within": 8
+        },
+        {
+          "type": "anyVerbInTense",
+          "tense": "condicional",
+          "label": "use the conditional (diría, pediría, daría)"
+        }
+      ],
+      "focus": "g:conditional-advanced",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Mariana: Gracias, Tomás. Con esto la nota queda completa. ¿Te traigo un tinto?",
+      "npcEn": "Mariana: Thanks, Tomás. With this the piece is complete. Shall I bring you a black coffee?",
+      "intent": "Thank her and say yes to the coffee.",
+      "accept": [
+        "Gracias, Mariana. Un tinto me vendría bien.",
+        "Sí, gracias. Un tinto, por favor. Estoy molido.",
+        "Gracias a ti. Sí, tráeme un tinto."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "gracias"
+          ],
+          "label": "say thanks"
+        }
+      ],
+      "focus": "c:estoy-molido",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-mi-tambien",
+    "c:ayer-anoche",
+    "c:bien-y-tu",
+    "c:con-el-ella",
+    "c:estoy-molido",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:no-se",
+    "c:no-te-preocupes",
+    "c:por-favor",
+    "c:si-quieres",
+    "g:commands-tu",
+    "g:commands-with-pronouns",
+    "g:comparatives",
+    "g:conditional",
+    "g:conditional-perfect",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:hace-que-desde",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:pluperfect-subj",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:si-hypothetical",
+    "g:si-past-unreal",
+    "g:si-present",
+    "g:stem-boot",
+    "g:subj-relative",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:acompañar",
+    "l:anécdota",
+    "l:aquí",
+    "l:ayer",
+    "l:bien",
+    "l:bueno",
+    "l:cabeza",
+    "l:caer",
+    "l:capítulo",
+    "l:casa",
+    "l:cerrar",
+    "l:completar",
+    "l:contar",
+    "l:cuenta",
+    "l:cómo",
+    "l:dar",
+    "l:decir",
+    "l:delante",
+    "l:distinto",
+    "l:empezar",
+    "l:escribir",
+    "l:estar",
+    "l:favor",
+    "l:funeral",
+    "l:hablar",
+    "l:hacer",
+    "l:hora",
+    "l:incluir",
+    "l:jugar",
+    "l:leer",
+    "l:libro",
+    "l:llamar",
+    "l:llevar",
+    "l:lograr",
+    "l:línea",
+    "l:mejor",
+    "l:moler",
+    "l:molestar",
+    "l:noche",
+    "l:nota",
+    "l:partida",
+    "l:pasado",
+    "l:pedir",
+    "l:perder",
+    "l:poder",
+    "l:poner",
+    "l:preferir",
+    "l:pregunta",
+    "l:preguntar",
+    "l:principio",
+    "l:problema",
+    "l:propósito",
+    "l:página",
+    "l:quedar",
+    "l:querer",
+    "l:qué",
+    "l:romperse",
+    "l:saber",
+    "l:salir",
+    "l:siempre",
+    "l:tener",
+    "l:tinto",
+    "l:traer",
+    "l:venir",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:caer-en-cuenta",
+    "p:cuando-basic",
+    "p:demonstratives-basic",
+    "p:estaria-bien-que",
+    "p:frequency-scale",
+    "p:gracias-a-por-culpa-de",
+    "p:gracias-por",
+    "p:indefinites-basic",
+    "p:intentar-conseguir",
+    "p:lavarse-las-manos",
+    "p:llevar-sin-inf",
+    "p:llevar-tiempo-gerundio",
+    "p:llevar-traer",
+    "p:me-te-nos-objects",
+    "p:no-se-que-hacer",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:por-culpa-de",
+    "p:possessives-basic",
+    "p:prefieres-x-o-y",
+    "p:preguntar-pedir",
+    "p:que-subj-deseo",
+    "p:que-tal-si",
+    "p:romperse-la-cabeza",
+    "p:saber-conocer",
+    "p:sobre-todo-solo",
+    "p:todos-los-dias",
+    "p:y-si-hubieramos",
+    "p:yo-diria-que"
+  ]
+}

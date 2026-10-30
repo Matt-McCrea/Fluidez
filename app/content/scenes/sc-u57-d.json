@@ -1,0 +1,278 @@
+{
+  "id": "sc-u57-d",
+  "unit": "u57",
+  "title": "El tablero",
+  "brief": "You're Tomás, closing the café with Vale after the longest day. She's your friend, so use tú. She has found Hernando's chess board with the last game still on it, and Simón keeps squawking. Say what you feel, honestly and with some humour.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Vale: Encontré el tablero en el estante. Las fichas siguen en la posición de la última partida.",
+      "npcEn": "Vale: I found the board on the shelf. The pieces are still in the position of the last game.",
+      "intent": "Say you feel like packing it all away (use: estoy por + infinitive).",
+      "accept": [
+        "Estoy por guardarlo todo en una caja y no verlo más.",
+        "Estoy por dejarlo así, tal cual lo dejó él.",
+        "Estoy por llorar otra vez, la verdad."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bestoy por \\w+",
+          "flags": "iu",
+          "label": "use: estoy por + infinitive"
+        }
+      ],
+      "focus": "p:estar-por",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Vale: Tú perdías a propósito, ¿verdad? Él lo sabía desde la primera partida.",
+      "npcEn": "Vale: You lost on purpose, didn't you? He knew from the first game.",
+      "intent": "Admit it, and say that if you had known, you would have played seriously (use: de haber + participle, then habría + participle).",
+      "accept": [
+        "De haberlo sabido, habría jugado en serio desde la primera partida.",
+        "De haber sabido que lo notaba, le habría ganado al menos una vez.",
+        "De haberlo sabido, no habría perdido a propósito ni una sola vez."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bde haber(lo|le|me)? \\w+",
+          "flags": "iu",
+          "label": "use: de haber + participle"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bhabr[ií]a\\w* \\w+",
+          "flags": "iu",
+          "label": "use: habría + participle"
+        }
+      ],
+      "focus": "g:conditional-advanced",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Vale: Cuanto más lo pienso, menos entiendo cómo se fue así, sin avisar.",
+      "npcEn": "Vale: The more I think about it, the less I understand how he left like that, without warning.",
+      "intent": "Answer with your own sentence of the type: the more ..., the more / less ... (use: cuanto más).",
+      "accept": [
+        "Cuanto más lo pienso, más rabia me da.",
+        "Cuanto más lo recuerdo, menos quiero guardar el tablero.",
+        "Cuanto más tiempo pasa, más falta me hace."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcuanto m[aá]s\\b.*\\b(m[aá]s|menos)\\b",
+          "flags": "iu",
+          "label": "use: cuanto más ..., más / menos ..."
+        }
+      ],
+      "focus": "g:comparative-advanced-c1",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Vale: Mañana vienen los de Altamira a medir el local. Dime que no tengo que quedarme a verlos.",
+      "npcEn": "Vale: Tomorrow the Altamira people are coming to measure the place. Tell me I don't have to stay and watch them.",
+      "intent": "Tell her it's better that she not be here when they come (use: más vale que + subjunctive).",
+      "accept": [
+        "Más vale que no estés cuando lleguen.",
+        "Más vale que te vayas a dormir y yo los atiendo.",
+        "Más vale que descanses; yo me ocupo de ellos."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bm[aá]s vale que\\b",
+          "flags": "iu",
+          "label": "use: más vale que"
+        },
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "más vale que",
+          "within": 8
+        }
+      ],
+      "focus": "g:comparative-advanced-c1",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Vale: Mira a Simón. Desde ayer no para de gritar: «¡Eso sí que no!».",
+      "npcEn": "Vale: Look at Simón. Since yesterday he hasn't stopped shouting: \"Absolutely not!\".",
+      "intent": "Joke that he acts as if he understood what he says (use: ni que + imperfect subjunctive).",
+      "accept": [
+        "¡Ni que entendiera lo que dice!",
+        "Ni que fuera un filósofo, el loro.",
+        "¡Ni que Simón supiera lo que dice!"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bni que\\b",
+          "flags": "iu",
+          "label": "use: ni que + imperfect subjunctive"
+        }
+      ],
+      "focus": "g:comparative-advanced-c1",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Vale: ¿Con qué te quedas de todo esto?",
+      "npcEn": "Vale: What do you keep from all of this?",
+      "intent": "Say you settle for one good thing (use: me conformo con).",
+      "accept": [
+        "Me conformo con saber que el libro llegó a tiempo.",
+        "Me conformo con haberlo conocido, aunque fuera poco tiempo.",
+        "Me conformo con que haya visto la primera página impresa."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bme conformo con\\b",
+          "flags": "iu",
+          "label": "use: me conformo con"
+        }
+      ],
+      "focus": "p:conformarse-con",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:ayer-anoche",
+    "c:en-serio",
+    "c:eso-si-que-no",
+    "c:la-verdad",
+    "c:me-hace-una-rebajita",
+    "c:me-regala",
+    "c:no-cierto",
+    "c:oye-mira",
+    "c:que-descanses",
+    "c:quiero",
+    "c:tengo",
+    "c:tengo-que",
+    "c:una-vez",
+    "c:vale-spain",
+    "g:adjective-agreement",
+    "g:commands-tu",
+    "g:commands-with-pronouns",
+    "g:comparative-advanced-c1",
+    "g:comparatives",
+    "g:conditional-advanced",
+    "g:conditional-perfect",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:infinitive-perfect",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:preterite-ser-ir-hacer",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-concessive",
+    "g:subj-cuando-future",
+    "g:subj-irregulars",
+    "g:subj-perfect",
+    "g:subj-relative",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:atender",
+    "l:avisar",
+    "l:ayer",
+    "l:caja",
+    "l:conocer",
+    "l:cuanto",
+    "l:cómo",
+    "l:dar",
+    "l:decir",
+    "l:dejar",
+    "l:descansar",
+    "l:dormir",
+    "l:encontrar",
+    "l:entender",
+    "l:estante",
+    "l:estar",
+    "l:falta",
+    "l:ficha",
+    "l:filósofo",
+    "l:ganar",
+    "l:gritar",
+    "l:guardar",
+    "l:haber",
+    "l:hacer",
+    "l:imprimir",
+    "l:irse",
+    "l:jugar",
+    "l:libro",
+    "l:llegar",
+    "l:llorar",
+    "l:local",
+    "l:loro",
+    "l:mañana",
+    "l:medir",
+    "l:mirar",
+    "l:notar",
+    "l:ocupar",
+    "l:parar",
+    "l:partida",
+    "l:pasar",
+    "l:pensar",
+    "l:perder",
+    "l:posición",
+    "l:propósito",
+    "l:página",
+    "l:quedar",
+    "l:quedarse",
+    "l:querer",
+    "l:qué",
+    "l:rabia",
+    "l:recordar",
+    "l:saber",
+    "l:seguir",
+    "l:ser",
+    "l:serio",
+    "l:tablero",
+    "l:tener",
+    "l:tiempo",
+    "l:valer",
+    "l:venir",
+    "l:ver",
+    "l:verdad",
+    "l:vez",
+    "p:conformarse-con",
+    "p:demonstratives-basic",
+    "p:estar-por",
+    "p:llegar-a-tiempo",
+    "p:los-de-la-camiseta",
+    "p:me-te-nos-objects",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:pase-lo-que-pase",
+    "p:poco-un-poco",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:recordar-acordarse",
+    "p:saber-conocer"
+  ]
+}

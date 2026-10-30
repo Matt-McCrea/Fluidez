@@ -1,0 +1,283 @@
+{
+  "id": "sc-u57-a",
+  "unit": "u57",
+  "title": "Madrugada con Vale",
+  "brief": "You're Tomás. Vale has just heard about Hernando and phones you from Medellín in the middle of the night. She's your friend, so use tú. Say how you feel, own up to a regret and tell her what happens next at the café.",
+  "spare": false,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Vale: Tomás, soy yo. Me acabo de enterar de lo que pasó con Hernando. ¿Cómo estás?",
+      "npcEn": "Vale: Tomás, it's me. I just heard what happened to Hernando. How are you?",
+      "intent": "Say that it hurts you deep inside (use: se me parte el alma or se me hizo un nudo en la garganta).",
+      "accept": [
+        "Se me hizo un nudo en la garganta, Vale.",
+        "Gracias por llamar. Se me parte el alma desde esta mañana.",
+        "Estoy en shock y se me hizo un nudo en la garganta."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bse me (parte|partió|hizo|hace)\\b",
+          "flags": "iu",
+          "label": "use: se me parte / se me hizo"
+        }
+      ],
+      "focus": "p:se-me-body",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Vale: Y el libro sale esta semana. Parece mentira que haya salido justo a tiempo.",
+      "npcEn": "Vale: And the book comes out this week. It seems unbelievable that it came out just in time.",
+      "intent": "Say it surprises you that he managed to finish it (use: me sorprende que + subjunctive).",
+      "accept": [
+        "Me sorprende que lo terminara antes de morir.",
+        "A mí me sorprende que haya llegado todo tan rápido.",
+        "Sí, me sorprende que Hernando lo acabara a tiempo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bme sorprende que\\b",
+          "flags": "iu",
+          "label": "use: me sorprende que"
+        },
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "me sorprende que",
+          "within": 8
+        }
+      ],
+      "focus": "p:me-sorprende-me-sorprendo",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Vale: Yo ni siquiera me despedí de él. ¿Y tú?",
+      "npcEn": "Vale: I didn't even say goodbye to him. And you?",
+      "intent": "Say that you regret something you did or didn't do (use: me arrepiento de + haber + participle).",
+      "accept": [
+        "Me arrepiento de haberle dejado ganar tantas partidas.",
+        "Yo me arrepiento de no haberlo visitado más el último mes.",
+        "Me arrepiento de no haberle dicho cuánto lo quería."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bme arrepiento de (no )?haber\\w*\\b",
+          "flags": "iu",
+          "label": "use: me arrepiento de (no) haber..."
+        }
+      ],
+      "focus": "p:arrepentirse-de-haber",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Vale: ¿Vamos a tener que cerrar el café mañana?",
+      "npcEn": "Vale: Are we going to have to close the café tomorrow?",
+      "intent": "Say yes: there is no choice but to close for a day (use: toca + infinitive).",
+      "accept": [
+        "Toca cerrar mañana y abrir el jueves.",
+        "Sí, toca cerrar un solo día.",
+        "Pues toca cerrar, Vale."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\btoca \\w+",
+          "flags": "iu",
+          "label": "use: toca + infinitive"
+        }
+      ],
+      "focus": "p:no-queda-de-otra",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Vale: Mañana mismo me voy a Bogotá, y esta vez no pienso volver a Medellín.",
+      "npcEn": "Vale: I'm leaving for Bogotá tomorrow, and this time I'm not planning to go back to Medellín.",
+      "intent": "Tell her it was about time she came (use: ya era hora de que + imperfect subjunctive).",
+      "accept": [
+        "Ya era hora de que volvieras, Vale.",
+        "¡Ya era hora de que te quedaras en Bogotá!",
+        "Ya era hora de que regresaras a casa."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bya era hora de que\\b",
+          "flags": "iu",
+          "label": "use: ya era hora de que"
+        },
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "ya era hora de que",
+          "within": 8
+        }
+      ],
+      "focus": "p:ya-era-hora-de-que",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Vale: Intenta dormir un poco esta noche, ¿de acuerdo?",
+      "npcEn": "Vale: Try to sleep a little tonight, all right?",
+      "intent": "Say that however hard you try, you won't sleep (use: por mucho que + subjunctive), and say goodbye.",
+      "accept": [
+        "Por mucho que lo intente, no voy a dormir. Hasta mañana, Vale.",
+        "Por mucho que me acueste temprano, hoy no duermo. Buenas noches.",
+        "Por mucho que quiera dormir, no puedo. Nos vemos mañana."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bpor mucho que\\b",
+          "flags": "iu",
+          "label": "use: por mucho que"
+        },
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "por mucho que",
+          "within": 8
+        }
+      ],
+      "focus": "g:concessive-advanced",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:chao-nos-vemos",
+    "c:como-estas",
+    "c:era",
+    "c:hola-buenos-dias",
+    "c:puedo",
+    "c:pues",
+    "c:si-soy-yo",
+    "c:vamos-a",
+    "c:voy-a",
+    "g:acabar-de-ya-todavia",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:se-accidental",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-concessive",
+    "g:subj-emotion",
+    "g:subj-irregulars",
+    "g:subj-past-triggers",
+    "g:subj-perfect",
+    "g:subj-value",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "l:abrir",
+    "l:acabar",
+    "l:acostarse",
+    "l:acuerdo",
+    "l:alma",
+    "l:antes",
+    "l:arrepentirse",
+    "l:buena",
+    "l:café",
+    "l:casa",
+    "l:cerrar",
+    "l:cuánto",
+    "l:cómo",
+    "l:decir",
+    "l:dejar",
+    "l:despedirse",
+    "l:dormir",
+    "l:día",
+    "l:enterarse",
+    "l:estar",
+    "l:ganar",
+    "l:garganta",
+    "l:haber",
+    "l:hacerse",
+    "l:hora",
+    "l:hoy",
+    "l:intentar",
+    "l:ir",
+    "l:irse",
+    "l:jueves",
+    "l:justo",
+    "l:libro",
+    "l:llamar",
+    "l:llegar",
+    "l:mañana",
+    "l:mentira",
+    "l:mes",
+    "l:morir",
+    "l:noche",
+    "l:nudo",
+    "l:parecer",
+    "l:partida",
+    "l:partirse",
+    "l:pasar",
+    "l:pensar",
+    "l:poder",
+    "l:quedarse",
+    "l:querer",
+    "l:regresar",
+    "l:rápido",
+    "l:salir",
+    "l:semana",
+    "l:ser",
+    "l:shock",
+    "l:siquiera",
+    "l:sorprender",
+    "l:temprano",
+    "l:tener",
+    "l:terminar",
+    "l:tiempo",
+    "l:tocar",
+    "l:ver",
+    "l:vez",
+    "l:visitar",
+    "l:volver",
+    "p:arrepentirse-de",
+    "p:arrepentirse-de-haber",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:el-agua-fria",
+    "p:enterarse-de",
+    "p:gracias-por",
+    "p:intentar-conseguir",
+    "p:ir-a-venir-de-place",
+    "p:me-extrana-que",
+    "p:me-sorprende-que",
+    "p:me-te-nos-objects",
+    "p:ni-emphatic",
+    "p:no-queda-de-otra",
+    "p:nos-vemos-a-las",
+    "p:parece-mentira-que",
+    "p:pensar-en",
+    "p:pensar-inf",
+    "p:poco-un-poco",
+    "p:quantifiers-basic",
+    "p:se-me-body",
+    "p:ya-era-hora-de-que"
+  ]
+}
