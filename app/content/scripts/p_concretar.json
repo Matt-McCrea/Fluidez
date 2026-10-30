@@ -1,0 +1,181 @@
+{
+  "node": "p:concretar",
+  "hook": {
+    "line": "In a meeting, vague talk is how deals get lost. Tomás learns to ask the question that gets a number: *en concreto*.",
+    "es": "Necesito que concretemos la fecha.",
+    "en": "I need us to pin down the date."
+  },
+  "examples": [
+    {
+      "es": "Necesito que concretemos la fecha.",
+      "en": "I need us to pin down the date."
+    },
+    {
+      "es": "En concreto, ¿qué propone usted?",
+      "en": "Specifically, what do you propose? (formal)"
+    },
+    {
+      "es": "No generalices, no todos piensan igual.",
+      "en": "Don't generalise, not everyone thinks the same."
+    },
+    {
+      "es": "¿Puedes concretar un poco más?",
+      "en": "Can you be a bit more specific? (to a friend)"
+    },
+    {
+      "es": "Concretamente, ¿cuánto te ofrecieron?",
+      "en": "Specifically, how much did they offer you?"
+    },
+    {
+      "es": "Hablaron de dinero, pero nadie concretó la cantidad.",
+      "en": "They talked about money, but nobody pinned down the amount."
+    }
+  ],
+  "rule": "*Concretar* means to turn something vague into something specific: a date, an amount, the details.\n\n*En concreto* and *concretamente* both mean \"specifically\". Use them to ask for the number or the name.\n\n*Generalizar* is to make sweeping claims, and it usually sounds like criticism: *no generalices*.\n\nAfter *necesito que*, the verb changes: *concretemos*.",
+  "smallPrint": "Teachers call this the vocabulary of specificity. *Concretar* and *generalizar* are opposites.",
+  "readAndPick": [
+    {
+      "es": "Necesito que concretemos la fecha.",
+      "options": [
+        "I need them to pin down the date.",
+        "I need us to pin down the date.",
+        "I need to pin down the date."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "En concreto, ¿qué propone usted?",
+      "options": [
+        "Specifically, what do I propose?",
+        "Specifically, what do you propose? (formal)",
+        "Specifically, what do we propose?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No generalices, no todos piensan igual.",
+      "options": [
+        "Don't generalise, not everyone thinks the same.",
+        "Do generalise, everyone thinks the same.",
+        "Don't generalise, nobody thinks the same."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nadie concretó la cantidad.",
+      "options": [
+        "Somebody pinned down the amount.",
+        "Nobody agreed to the amount.",
+        "Nobody pinned down the amount."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Puedes concretar un poco más?",
+      "options": [
+        "Can he be a bit more specific?",
+        "Can you be a bit more specific? (to a friend)",
+        "Can I be a bit more specific?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Concretamente, ¿cuánto te ofrecieron?",
+      "options": [
+        "Specifically, how much did you offer them?",
+        "Specifically, how much did they offer him?",
+        "Specifically, how much did they offer you?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Vamos a concretar los detalles mañana.",
+      "options": [
+        "We are going to pin down the details tomorrow.",
+        "I am going to pin down the details tomorrow.",
+        "They are going to pin down the details tomorrow."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Siempre generalizas.",
+      "options": [
+        "I always generalise.",
+        "She always generalises.",
+        "You always generalise. (to a friend)"
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *concretemos* or *concretamos*: Necesito que ___ la fecha. Type the whole sentence.",
+      "answer": "Necesito que concretemos la fecha.",
+      "accept": [],
+      "why": "After *necesito que* the verb takes the *-emos* ending."
+    },
+    {
+      "prompt": "Choose *No generalices* or *No generalizas* (telling a friend): ___, no todos piensan igual. Type the whole sentence.",
+      "answer": "No generalices, no todos piensan igual.",
+      "accept": [],
+      "why": "A \"don't\" to a friend uses the *-es* ending of *generalizar*: *generalices*."
+    },
+    {
+      "prompt": "Type in Spanish, formal: Specifically, what do you propose?",
+      "answer": "En concreto, ¿qué propone usted?",
+      "accept": [
+        "¿Qué propone usted en concreto?",
+        "Concretamente, ¿qué propone usted?",
+        "¿Qué propone usted, en concreto?"
+      ],
+      "why": "*En concreto* or *concretamente* asks for the specifics."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Can you be a bit more specific?",
+      "answer": "¿Puedes concretar un poco más?",
+      "accept": [
+        "¿Puedes concretar más?"
+      ],
+      "why": "*Concretar* is the verb for getting specific."
+    },
+    {
+      "prompt": "Make it about me only: *Necesito que concretemos la fecha.*",
+      "answer": "Necesito concretar la fecha.",
+      "accept": [],
+      "why": "When only you act, drop *que* and use the infinitive."
+    },
+    {
+      "prompt": "Ask for the specifics with *concretamente*: *¿Cuánto te ofrecieron?*",
+      "answer": "Concretamente, ¿cuánto te ofrecieron?",
+      "accept": [
+        "En concreto, ¿cuánto te ofrecieron?",
+        "¿Cuánto te ofrecieron, en concreto?"
+      ],
+      "why": "A specifics word in front pushes for a precise answer."
+    },
+    {
+      "prompt": "Type in Spanish: Nobody pinned down the amount.",
+      "answer": "Nadie concretó la cantidad.",
+      "accept": [],
+      "why": "*Nadie* takes no extra *no* when it comes first."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Necesito que concretamos la fecha.",
+      "right": "Necesito que concretemos la fecha.",
+      "why": "Almost. After *necesito que*, the verb switches to *concretemos*."
+    },
+    {
+      "wrong": "Mi tío es muy particular con la comida.",
+      "right": "Mi tío es muy delicado con la comida.",
+      "why": "Almost. *Particular* means specific to one thing, not \"fussy\"."
+    },
+    {
+      "wrong": "Concreto, ¿qué propone?",
+      "right": "En concreto, ¿qué propone usted?",
+      "why": "Almost. \"Specifically\" is *en concreto* or *concretamente*; *concreto* alone is an adjective."
+    }
+  ],
+  "personal": "Think of a plan you keep leaving vague, and say what to pin down: *Necesito concretar…*"
+}

@@ -1,0 +1,180 @@
+{
+  "node": "p:asistir-faltar",
+  "hook": {
+    "line": "When Vale asks who went to the neighbourhood assembly, Tomás needs two verbs. *Asistir* means to be there, and it does not mean \"assist\".",
+    "es": "Yesid no asistió a la asamblea.",
+    "en": "Yesid did not attend the assembly."
+  },
+  "examples": [
+    {
+      "es": "Asistieron más de cien personas.",
+      "en": "More than a hundred people attended."
+    },
+    {
+      "es": "Faltó a la reunión sin avisar.",
+      "en": "She missed the meeting without telling anyone."
+    },
+    {
+      "es": "Faltó tres veces a clase.",
+      "en": "He missed class three times."
+    },
+    {
+      "es": "Asistí a la boda de mi prima.",
+      "en": "I attended my cousin's wedding."
+    },
+    {
+      "es": "Yesid no asistió a la asamblea.",
+      "en": "Yesid did not attend the assembly."
+    },
+    {
+      "es": "Los asistentes aplaudieron al final.",
+      "en": "The attendees applauded at the end."
+    }
+  ],
+  "rule": "*Asistir a* means to attend an event: *asistí a la boda*. It is not \"assist\": for helping, Spanish says *ayudar*.\n\n*Faltar a* means to miss something you were expected at: *faltó a la reunión*. Count the misses before *a*: *faltó tres veces a clase*.\n\nBoth need *a* before the event. People who attend are *los asistentes*.\n\nIn the news, *asistieron* with a number is the standard way to give a crowd size.",
+  "smallPrint": "Teachers call *asistir* and *faltar* verbs of attendance. Both take *a*, like *ir a*.",
+  "readAndPick": [
+    {
+      "es": "Asistieron más de cien personas.",
+      "options": [
+        "More than a hundred people helped.",
+        "More than a hundred people attended.",
+        "More than a hundred people were missing."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Faltó a la reunión sin avisar.",
+      "options": [
+        "She attended the meeting without telling anyone.",
+        "She called the meeting without telling anyone.",
+        "She missed the meeting without telling anyone."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Asistí a la boda de mi prima.",
+      "options": [
+        "I helped with my cousin's wedding.",
+        "I missed my cousin's wedding.",
+        "I attended my cousin's wedding."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Yesid no asistió a la asamblea.",
+      "options": [
+        "Yesid did not attend the assembly.",
+        "Yesid did not help the assembly.",
+        "Yesid did not miss the assembly."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Faltó tres veces a clase.",
+      "options": [
+        "He went to class three times.",
+        "He missed class three times.",
+        "He taught class three times."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Faltamos a la cita de ayer.",
+      "options": [
+        "I missed yesterday's appointment.",
+        "They missed yesterday's appointment.",
+        "We missed yesterday's appointment."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Asististe a la votación?",
+      "options": [
+        "Did you attend the vote?",
+        "Did he attend the vote?",
+        "Will you attend the vote?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Los asistentes aplaudieron al final.",
+      "options": [
+        "The assistants helped at the end.",
+        "The organisers applauded at the start.",
+        "The attendees applauded at the end."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *asistí* or *asistió*: ___ a la boda de mi prima. (I was there.) Type the whole sentence.",
+      "answer": "Asistí a la boda de mi prima.",
+      "accept": [],
+      "why": "*Asistí* is \"I attended\"; *asistió* is \"he or she attended\"."
+    },
+    {
+      "prompt": "Choose *a* or *de*: Faltó ___ la reunión sin avisar. Type the whole sentence.",
+      "answer": "Faltó a la reunión sin avisar.",
+      "accept": [],
+      "why": "Both *faltar* and *asistir* take *a* before the event."
+    },
+    {
+      "prompt": "Type in Spanish: More than a hundred people attended.",
+      "answer": "Asistieron más de cien personas.",
+      "accept": [
+        "Más de cien personas asistieron."
+      ],
+      "why": "A crowd size goes with *asistieron*."
+    },
+    {
+      "prompt": "Type in Spanish: She missed class three times.",
+      "answer": "Faltó tres veces a clase.",
+      "accept": [
+        "Faltó a clase tres veces."
+      ],
+      "why": "*Faltar a* plus the number of times."
+    },
+    {
+      "prompt": "Make it negative: *Asistí a la boda.*",
+      "answer": "No asistí a la boda.",
+      "accept": [],
+      "why": "*No* goes right before the verb."
+    },
+    {
+      "prompt": "Say it about us: *Faltó a la reunión.*",
+      "answer": "Faltamos a la reunión.",
+      "accept": [
+        "Nosotros faltamos a la reunión."
+      ],
+      "why": "*Faltamos* is the \"we\" form."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Did you attend the vote?",
+      "answer": "¿Asististe a la votación?",
+      "accept": [
+        "¿Tú asististe a la votación?"
+      ],
+      "why": "*Asististe* is the \"you\" form for the past."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Asistí la boda de mi prima.",
+      "right": "Asistí a la boda de mi prima.",
+      "why": "Almost. *Asistir* always takes *a* before the event."
+    },
+    {
+      "wrong": "Asistí a mi prima con la boda.",
+      "right": "Ayudé a mi prima con la boda.",
+      "why": "Almost. *Asistir* means to attend; to help someone, Spanish says *ayudar*."
+    },
+    {
+      "wrong": "Faltó la reunión sin avisar.",
+      "right": "Faltó a la reunión sin avisar.",
+      "why": "Almost. To miss an event, *faltar* needs *a*."
+    }
+  ],
+  "personal": "Say which event you attended last, and one you missed: *Asistí a… y falté a…*"
+}

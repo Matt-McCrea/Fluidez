@@ -1,0 +1,181 @@
+{
+  "node": "p:quieres-decir-que",
+  "hook": {
+    "line": "When Yesid tells his story, Tomás has to be sure he understood. In Spanish you check out loud: *¿Quieres decir que…?* or *¿O sea que…?*",
+    "es": "¿O sea que Yesid no firmó nada?",
+    "en": "So Yesid signed nothing?"
+  },
+  "examples": [
+    {
+      "es": "No voy a poder ir.\n¿O sea que no vienes?",
+      "en": "I'm not going to be able to go.\nSo you're not coming?"
+    },
+    {
+      "es": "¿Quieres decir que tenemos que empezar de nuevo?",
+      "en": "Do you mean we have to start again?"
+    },
+    {
+      "es": "¿Me estás diciendo que Altamira te ofreció más plata?",
+      "en": "Are you telling me Altamira offered you more money?"
+    },
+    {
+      "es": "¿O sea que Yesid no firmó nada?",
+      "en": "So Yesid signed nothing?"
+    },
+    {
+      "es": "¿Quiere decir que el café va a cerrar?",
+      "en": "Do you mean the café is going to close? (formal)"
+    },
+    {
+      "es": "Quiero decir que no puedo ir.",
+      "en": "I mean that I can't go."
+    }
+  ],
+  "rule": "To check you understood, repeat what you heard after one of these:\n*¿Quieres decir que…?* neutral.\n*¿O sea que…?* casual, like \"so…?\"\n*¿Me estás diciendo que…?* sharper, a little disbelieving.\n\nThe *que* is required, and the rest is a normal sentence: *¿O sea que no vienes?*\n\nWith *usted*, use *¿Quiere decir que…?*\n\nWithout the question marks, *quiero decir que* is you explaining what you mean.",
+  "smallPrint": "Teachers call this a confirmation request. It repeats the other person's claim as a question.",
+  "readAndPick": [
+    {
+      "es": "¿O sea que no vienes?",
+      "options": [
+        "So you're not coming?",
+        "So I'm not coming?",
+        "So they aren't coming?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Quieres decir que tenemos que empezar de nuevo?",
+      "options": [
+        "Do you mean I have to start again?",
+        "Do you mean they have to start again?",
+        "Do you mean we have to start again?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Me estás diciendo que Altamira te ofreció más plata?",
+      "options": [
+        "Are you telling me Altamira offered me more money?",
+        "Are you telling me Altamira offered you more money?",
+        "Is Altamira telling me you offered more money?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Quiere decir que el café va a cerrar?",
+      "options": [
+        "Do you mean the café already closed? (formal)",
+        "Do you mean the café is going to open? (formal)",
+        "Do you mean the café is going to close? (formal)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿O sea que Yesid no firmó nada?",
+      "options": [
+        "So Yesid signed something?",
+        "So Yesid signed nothing?",
+        "So Yesid will not sign anything?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Quiero decir que no puedo ir.",
+      "options": [
+        "Do you mean I can't go?",
+        "He means he can't go.",
+        "I mean that I can't go."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Quieren decir que no hay nada que hacer?",
+      "options": [
+        "Do you mean there is nothing to be done? (one person)",
+        "Do you all mean there is nothing to be done?",
+        "Do I mean there is nothing to be done?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Me estás diciendo que no me crees?",
+      "options": [
+        "Are you telling me you don't believe me?",
+        "Are you telling me I don't believe you?",
+        "Are you telling him you don't believe me?"
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *quieres* or *quiere*, to a friend: ¿___ decir que tenemos que empezar de nuevo? Type the whole sentence.",
+      "answer": "¿Quieres decir que tenemos que empezar de nuevo?",
+      "accept": [],
+      "why": "*Quieres* goes with *tú*, *quiere* with *usted*."
+    },
+    {
+      "prompt": "Choose *que* or *de*: ¿O sea ___ no vienes? Type the whole sentence.",
+      "answer": "¿O sea que no vienes?",
+      "accept": [],
+      "why": "*O sea que* needs its *que*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: So you're not coming?",
+      "answer": "¿O sea que no vienes?",
+      "accept": [
+        "¿Quieres decir que no vienes?"
+      ],
+      "why": "*O sea que* repeats what you heard as a question."
+    },
+    {
+      "prompt": "Type in Spanish, formal: Do you mean the café is going to close?",
+      "answer": "¿Quiere decir que el café va a cerrar?",
+      "accept": [
+        "¿O sea que el café va a cerrar?"
+      ],
+      "why": "*Quiere* is the *usted* form."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Are you telling me Altamira offered you more money?",
+      "answer": "¿Me estás diciendo que Altamira te ofreció más plata?",
+      "accept": [],
+      "why": "*Me estás diciendo que* is the sharper check."
+    },
+    {
+      "prompt": "Turn the statement into a check, to a friend: *Yesid no firmó nada.*",
+      "answer": "¿O sea que Yesid no firmó nada?",
+      "accept": [
+        "¿Quieres decir que Yesid no firmó nada?",
+        "¿Me estás diciendo que Yesid no firmó nada?"
+      ],
+      "why": "Put the claim after *o sea que* and add the question marks."
+    },
+    {
+      "prompt": "Make it formal: *¿Quieres decir que no hay nada que hacer?*",
+      "answer": "¿Quiere decir que no hay nada que hacer?",
+      "accept": [
+        "¿Quiere usted decir que no hay nada que hacer?"
+      ],
+      "why": "Only the first verb changes, to the *usted* form."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Quieres decir no vienes?",
+      "right": "¿Quieres decir que no vienes?",
+      "why": "Almost. *Quieres decir* needs *que* before the claim."
+    },
+    {
+      "wrong": "¿Qué quieres decir que no vienes?",
+      "right": "¿Quieres decir que no vienes?",
+      "why": "Almost. *¿Qué quieres decir?* means \"what do you mean?\"; to check a claim, drop the *qué*."
+    },
+    {
+      "wrong": "¿Quiere decir que no vienes?",
+      "right": "¿Quieres decir que no vienes?",
+      "why": "Almost. *Quiere* is for *usted*, so with a friend use *quieres*."
+    }
+  ],
+  "personal": "Repeat back something a friend told you today and check it: *¿O sea que…?*"
+}

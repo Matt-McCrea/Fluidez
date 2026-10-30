@@ -1,0 +1,176 @@
+{
+  "node": "p:tras-inf",
+  "hook": {
+    "line": "Mariana writes for a newspaper, and newspapers love *tras*. It is the formal way to say \"after\", and you will read it constantly even if you rarely say it.",
+    "es": "Tras hablar con Altamira, Yesid se fue a casa.",
+    "en": "After talking to Altamira, Yesid went home."
+  },
+  "examples": [
+    {
+      "es": "Tras firmar el acuerdo, el ministro habló con la prensa.",
+      "en": "After signing the agreement, the minister spoke to the press."
+    },
+    {
+      "es": "Tras la reunión, se suspendió el paro.",
+      "en": "After the meeting, the strike was called off."
+    },
+    {
+      "es": "Tras hablar con el abogado, Tomás llamó a Vale.",
+      "en": "After talking to the lawyer, Tomás called Vale."
+    },
+    {
+      "es": "Yesid salió tras escuchar la oferta.",
+      "en": "Yesid left after hearing the offer."
+    },
+    {
+      "es": "Tras varios meses de silencio, Yesid contó la verdad.",
+      "en": "After several months of silence, Yesid told the truth."
+    },
+    {
+      "es": "Tras comer, Hernando pidió un tinto.",
+      "en": "After eating, Hernando ordered a black coffee."
+    }
+  ],
+  "rule": "*Tras* means \"after\", but in writing and the news. It takes a noun (*tras la reunión*) or an infinitive (*tras firmar*).\n\nSpanish has no \"-ing\" here: English \"after signing\" is *tras firmar*, never *tras firmando*.\n\nThe person who does both actions is usually the same, and is named after the comma.\n\nSay it as *tras*, not *tras de*. In conversation, most people prefer *después de*: *después de comer*.",
+  "smallPrint": "Teachers call this a temporal preposition with an infinitive. It is the same idea as *después de*, in a written register.",
+  "readAndPick": [
+    {
+      "es": "Tras firmar el acuerdo, el ministro habló con la prensa.",
+      "options": [
+        "Before signing the agreement, the minister spoke to the press.",
+        "After signing the agreement, the minister spoke to the press.",
+        "Instead of signing the agreement, the minister spoke to the press."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tras la reunión, se suspendió el paro.",
+      "options": [
+        "The strike was called off before the meeting.",
+        "The strike was called off during the meeting.",
+        "The strike was called off after the meeting."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Yesid salió tras escuchar la oferta.",
+      "options": [
+        "Yesid left after hearing the offer.",
+        "Yesid left to hear the offer.",
+        "Yesid left without hearing the offer."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Antes de firmar, leyó todo.",
+      "options": [
+        "After signing, he read everything.",
+        "Before signing, he read everything.",
+        "Instead of signing, he read everything."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tras comer, Hernando pidió un tinto.",
+      "options": [
+        "While eating, Hernando ordered a black coffee.",
+        "Before eating, Hernando ordered a black coffee.",
+        "After eating, Hernando ordered a black coffee."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tras varios meses de silencio, Yesid contó la verdad.",
+      "options": [
+        "After several months of silence, Yesid told the truth.",
+        "Despite several months of silence, Yesid told the truth.",
+        "Before several months of silence, Yesid told the truth."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tras hablar con ella, salimos.",
+      "options": [
+        "After talking to her, I left.",
+        "After talking to her, they left.",
+        "After talking to her, we left."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tras la asamblea, nadie quiso comentar.",
+      "options": [
+        "Before the assembly, nobody wanted to comment.",
+        "After the assembly, nobody wanted to comment.",
+        "During the assembly, nobody wanted to comment."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *tras* or *antes de* (the sentence means \"after\"): ___ hablar con Vale, Tomás se fue. Type the whole sentence.",
+      "answer": "Tras hablar con Vale, Tomás se fue.",
+      "accept": [],
+      "why": "*Tras* is the one that means \"after\"."
+    },
+    {
+      "prompt": "Choose *firmar* or *firmando*: Tras ___ el acuerdo, salió. Type the whole sentence.",
+      "answer": "Tras firmar el acuerdo, salió.",
+      "accept": [],
+      "why": "After *tras*, Spanish uses the infinitive, not the *-ando* form."
+    },
+    {
+      "prompt": "Use *tras*: After the meeting, nobody spoke.",
+      "answer": "Tras la reunión, nadie habló.",
+      "accept": [],
+      "why": "*Tras* plus a noun works like \"after\" plus a noun."
+    },
+    {
+      "prompt": "Type in Spanish: After eating, Hernando ordered a black coffee.",
+      "answer": "Tras comer, Hernando pidió un tinto.",
+      "accept": [
+        "Tras comer, Hernando pidió un café."
+      ],
+      "why": "*Tras comer* is \"after eating\"."
+    },
+    {
+      "prompt": "Make it formal with *tras*: *Después de escuchar la oferta, Yesid se fue.*",
+      "answer": "Tras escuchar la oferta, Yesid se fue.",
+      "accept": [],
+      "why": "*Tras* replaces *después de* in written style."
+    },
+    {
+      "prompt": "Say it the everyday way, with *después de*: *Tras la reunión, hablé con ella.*",
+      "answer": "Después de la reunión, hablé con ella.",
+      "accept": [
+        "Después de la reunión hablé con ella."
+      ],
+      "why": "In conversation *después de* is the usual choice."
+    },
+    {
+      "prompt": "Type in Spanish, using *tras* (the lawyer is a man): After talking to the lawyer, we called Vale.",
+      "answer": "Tras hablar con el abogado, llamamos a Vale.",
+      "accept": [],
+      "why": "The doers are named after the comma: *llamamos* tells you it was \"we\"."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Tras de firmar, salió.",
+      "right": "Tras firmar, salió.",
+      "why": "Almost. It is *tras*, with no *de*."
+    },
+    {
+      "wrong": "Tras firmando el acuerdo, salió.",
+      "right": "Tras firmar el acuerdo, salió.",
+      "why": "Almost. English \"after signing\" uses the infinitive in Spanish, not the *-ando* form."
+    },
+    {
+      "wrong": "Tras que firmó, salió.",
+      "right": "Tras firmar, salió.",
+      "why": "Almost. *Tras* takes a noun or an infinitive, not a *que* clause."
+    }
+  ],
+  "personal": "Say what you did after a recent meeting or meal, in writing style: *Tras…, yo…*"
+}

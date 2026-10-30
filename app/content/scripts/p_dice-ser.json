@@ -1,0 +1,180 @@
+{
+  "node": "p:dice-ser",
+  "hook": {
+    "line": "Tomás has to tell a lawyer what Yesid said. In news and statements, people write *dijo ser inocente* instead of *dijo que era inocente*. You will read it far more than you say it.",
+    "es": "Yesid asegura no saber nada.",
+    "en": "Yesid insists he knows nothing."
+  },
+  "examples": [
+    {
+      "es": "Dice ser médico.",
+      "en": "He claims to be a doctor."
+    },
+    {
+      "es": "El detenido dijo ser inocente.",
+      "en": "The detainee said he was innocent."
+    },
+    {
+      "es": "Afirmó no saber nada.",
+      "en": "He claimed to know nothing."
+    },
+    {
+      "es": "Yesid asegura no conocer a ese hombre.",
+      "en": "Yesid insists he does not know that man."
+    },
+    {
+      "es": "Ella afirma ser la dueña del local.",
+      "en": "She claims to be the owner of the premises."
+    },
+    {
+      "es": "Los vecinos aseguraron no saber nada.",
+      "en": "The neighbours insisted they knew nothing."
+    }
+  ],
+  "rule": "When the person who speaks is also the person described, you can skip *que* and the second verb's ending. *Dijo que era inocente* becomes *dijo ser inocente*.\n\nUse it after *decir, afirmar, asegurar, reconocer, negar*. *No* goes before the infinitive: *afirmó no saber*.\n\nDifferent people? Keep *que*: *dijo que Rosa era la dueña*.\n\nIn everyday talk, *dijo que era* is more natural. *Dice ser* sounds like a report.",
+  "smallPrint": "Teachers call this an infinitive clause with the same subject. The infinitive replaces *que* plus a conjugated verb.",
+  "readAndPick": [
+    {
+      "es": "Dice ser médico.",
+      "options": [
+        "He says you are a doctor.",
+        "He claims to be a doctor.",
+        "He says she is a doctor."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Afirmó no saber nada.",
+      "options": [
+        "He claimed to know everything.",
+        "He claimed that nobody knew anything.",
+        "He claimed to know nothing."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Marta dijo ser la dueña.",
+      "options": [
+        "Marta said someone else was the owner.",
+        "Marta said she was the owner.",
+        "Marta said I was the owner."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Marta dijo que Rosa era la dueña.",
+      "options": [
+        "Marta said Rosa was the owner.",
+        "Marta said she herself was the owner.",
+        "Rosa said Marta was the owner."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Yesid asegura no conocer a ese hombre.",
+      "options": [
+        "Yesid insists he knows that man.",
+        "Yesid insists he does not know that man.",
+        "Yesid insists that man does not know him."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ella afirma ser la dueña del local.",
+      "options": [
+        "She claims the owner is not there.",
+        "She claims to be the owner of the premises.",
+        "She claims the owner sold the premises."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El detenido dijo ser inocente.",
+      "options": [
+        "The detainee said he was innocent.",
+        "The detainee said the others were innocent.",
+        "The detainee said he was guilty."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Los vecinos aseguraron no saber nada.",
+      "options": [
+        "The neighbours insisted they knew nothing.",
+        "The neighbour insisted he knew nothing.",
+        "The neighbours insisted they knew everything."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *ser* or *es*: Dice ___ abogado. Type the whole sentence.",
+      "answer": "Dice ser abogado.",
+      "accept": [],
+      "why": "With the same person speaking and described, the infinitive *ser* replaces *que es*."
+    },
+    {
+      "prompt": "Choose *no saber* or *saber no*: Afirmó ___ nada. Type the whole sentence.",
+      "answer": "Afirmó no saber nada.",
+      "accept": [],
+      "why": "*No* goes right before the infinitive."
+    },
+    {
+      "prompt": "Type in Spanish: He claims to be a doctor.",
+      "answer": "Dice ser médico.",
+      "accept": [
+        "Afirma ser médico.",
+        "Asegura ser médico."
+      ],
+      "why": "*Decir, afirmar* and *asegurar* all take the infinitive."
+    },
+    {
+      "prompt": "Type in Spanish: Yesid insists he does not know that man.",
+      "answer": "Yesid asegura no conocer a ese hombre.",
+      "accept": [
+        "Yesid afirma no conocer a ese hombre."
+      ],
+      "why": "Same person, so *no conocer* instead of *que no conoce*."
+    },
+    {
+      "prompt": "Rewrite with an infinitive: *Dijo que era inocente.*",
+      "answer": "Dijo ser inocente.",
+      "accept": [
+        "Afirmó ser inocente.",
+        "Aseguró ser inocente."
+      ],
+      "why": "The same person speaks and is described, so *que era* shrinks to *ser*."
+    },
+    {
+      "prompt": "Make it negative: *Afirmó saber la verdad.*",
+      "answer": "Afirmó no saber la verdad.",
+      "accept": [],
+      "why": "Put *no* before the infinitive."
+    },
+    {
+      "prompt": "Type in Spanish: Marta said that Rosa was the owner.",
+      "answer": "Marta dijo que Rosa era la dueña.",
+      "accept": [],
+      "why": "A different person is described, so you need *que* and a full verb."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Dijo que ser inocente.",
+      "right": "Dijo ser inocente.",
+      "why": "Almost. Use either *que* plus a full verb, or the infinitive alone, not both."
+    },
+    {
+      "wrong": "Afirmó saber no nada.",
+      "right": "Afirmó no saber nada.",
+      "why": "Almost. *No* goes before the infinitive, as before any verb."
+    },
+    {
+      "wrong": "Dice ser un médico.",
+      "right": "Dice ser médico.",
+      "why": "Almost. A job after *ser* drops the English \"a\"."
+    }
+  ],
+  "personal": "Think of someone who claims something about themselves, and say it with *dice ser…* or *asegura no…*."
+}

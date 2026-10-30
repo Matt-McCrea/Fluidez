@@ -1,0 +1,182 @@
+{
+  "node": "p:hacia-las-nueve",
+  "hook": {
+    "line": "In a testimony nobody remembers the exact minute. Yesid says he met the man *como a las ocho*, and the lawyer writes *hacia las ocho*.",
+    "es": "Llegó hacia las nueve.",
+    "en": "He arrived at around nine."
+  },
+  "examples": [
+    {
+      "es": "Llegó hacia las nueve.",
+      "en": "He arrived at around nine."
+    },
+    {
+      "es": "Nos vimos a eso de las tres.",
+      "en": "We met at about three."
+    },
+    {
+      "es": "Salió como a las diez.",
+      "en": "She left at about ten."
+    },
+    {
+      "es": "Yesid llamó como a la una.",
+      "en": "Yesid called at about one."
+    },
+    {
+      "es": "Llegué a las nueve en punto.",
+      "en": "I arrived at nine sharp."
+    },
+    {
+      "es": "Llegamos hacia el mediodía.",
+      "en": "We arrived around noon."
+    }
+  ],
+  "rule": "An exact time is *a las nueve*, or *a las nueve en punto* for sharp.\n\nFor \"around\", swap in one of three:\n*hacia las nueve*: written, a report.\n*a eso de las nueve*: neutral.\n*como a las nueve*: the everyday choice in Colombia.\n\nThe hour keeps its usual article: *las* for 2 to 12, *la* for one: *como a la una*. For noon: *hacia el mediodía*.",
+  "smallPrint": "Teachers call these approximate time expressions. They replace the plain *a* before the clock time.",
+  "readAndPick": [
+    {
+      "es": "Llegó hacia las nueve.",
+      "options": [
+        "He arrived at around nine.",
+        "He arrived at nine sharp.",
+        "He arrived before nine."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Llegué a las nueve en punto.",
+      "options": [
+        "I arrived at around nine.",
+        "I arrived at nine sharp.",
+        "I arrived after nine."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nos vimos a eso de las tres.",
+      "options": [
+        "We met three times.",
+        "We met at exactly three.",
+        "We met at about three."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Salió como a las diez.",
+      "options": [
+        "She left at ten sharp.",
+        "She left at about ten.",
+        "She left at about two."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hablé con él hacia las seis.",
+      "options": [
+        "He spoke with me at about six.",
+        "I spoke with him at about six.",
+        "I spoke with him at six sharp."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Yesid llamó como a la una.",
+      "options": [
+        "Yesid called at about one.",
+        "Yesid called at exactly one.",
+        "Yesid called at about two."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿A qué hora salió?\nHacia las diez.",
+      "options": [
+        "What time did he leave?\nAt ten sharp.",
+        "What time did he leave?\nTen minutes ago.",
+        "What time did he leave?\nAround ten."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Llegamos hacia el mediodía.",
+      "options": [
+        "We arrived around noon.",
+        "We arrived at midnight.",
+        "We arrived exactly at noon."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *a las nueve* or *hacia las nueve* (around nine): Llegó ___. Type the whole sentence.",
+      "answer": "Llegó hacia las nueve.",
+      "accept": [],
+      "why": "*Hacia* makes the time approximate."
+    },
+    {
+      "prompt": "Choose *eso* or *esa*: Nos vimos a ___ de las tres. Type the whole sentence.",
+      "answer": "Nos vimos a eso de las tres.",
+      "accept": [],
+      "why": "The set phrase is *a eso de*."
+    },
+    {
+      "prompt": "Type in Spanish, the everyday Colombian way: She left at about ten.",
+      "answer": "Salió como a las diez.",
+      "accept": [
+        "Salió hacia las diez.",
+        "Salió a eso de las diez."
+      ],
+      "why": "*Como a* is the casual \"about\"."
+    },
+    {
+      "prompt": "Type in Spanish: I arrived at nine sharp.",
+      "answer": "Llegué a las nueve en punto.",
+      "accept": [],
+      "why": "*En punto* means exactly."
+    },
+    {
+      "prompt": "Make it approximate: *Llamó a las ocho.*",
+      "answer": "Llamó hacia las ocho.",
+      "accept": [
+        "Llamó como a las ocho.",
+        "Llamó a eso de las ocho."
+      ],
+      "why": "Swap the plain *a* for *hacia*, *como a* or *a eso de*."
+    },
+    {
+      "prompt": "Make it exact: *Salió como a las diez.*",
+      "answer": "Salió a las diez en punto.",
+      "accept": [
+        "Salió a las diez."
+      ],
+      "why": "Plain *a* with the time gives the exact hour."
+    },
+    {
+      "prompt": "Type in Spanish: We arrived around noon.",
+      "answer": "Llegamos hacia el mediodía.",
+      "accept": [
+        "Llegamos hacia mediodía."
+      ],
+      "why": "*Hacia el mediodía* is \"around noon\"."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Llegó hacia a las nueve.",
+      "right": "Llegó hacia las nueve.",
+      "why": "Almost. *Hacia* replaces the *a*, so you do not need both."
+    },
+    {
+      "wrong": "Salió como a la diez.",
+      "right": "Salió como a las diez.",
+      "why": "Almost. Ten o'clock is plural, *las diez*; only one o'clock is *la una*."
+    },
+    {
+      "wrong": "Llegó a eso las nueve.",
+      "right": "Llegó a eso de las nueve.",
+      "why": "Almost. The phrase is *a eso de*, with *de*."
+    }
+  ],
+  "personal": "Say roughly what time you got up today, using *como a las…* or *hacia las…*"
+}
