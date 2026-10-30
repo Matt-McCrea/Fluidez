@@ -131,13 +131,17 @@
     {
       "prompt": "Say: There's a park opposite the building.",
       "answer": "Hay un parque frente al edificio.",
-      "accept": [],
+      "accept": [
+        "Hay un parque enfrente del edificio."
+      ],
       "why": "*Frente a* plus *el* becomes *frente al*."
     },
     {
       "prompt": "Tell a friend: Put the plant next to the window.",
       "answer": "Pon la planta junto a la ventana.",
-      "accept": [],
+      "accept": [
+        "Pon la planta al lado de la ventana."
+      ],
       "why": "*Pon* is the friendly command, and *junto a* means next to."
     },
     {
@@ -165,9 +169,9 @@
       "why": "*Frente* needs *a* before the place, and *a* plus *el* becomes *al*."
     },
     {
-      "wrong": "La mesa está en el medio la sala.",
-      "right": "La mesa está en medio de la sala.",
-      "why": "The phrase is fixed: *en medio de*, with no *el*."
+      "wrong": "Hay árboles alrededor la casa.",
+      "right": "Hay árboles alrededor de la casa.",
+      "why": "Almost. *Alrededor* needs *de* before the place: *alrededor de la casa*."
     }
   ],
   "personal": "Describe your room or your kitchen: what is at the back, what is in the middle, what is next to the window? Use two of the new phrases."

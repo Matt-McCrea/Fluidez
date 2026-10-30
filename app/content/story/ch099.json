@@ -2,7 +2,7 @@
   "id": "ch099",
   "unit": "u33",
   "title": "Inversiones RA",
-  "text": "La inmobiliaria Techo Feliz mandó a Jenny, una muchacha con una sonrisa que no se movía.\nJenny: El primer local queda a cinco cuadras de su café. Está recién pintado y muy bien iluminado.\nEra bonito, pero la cocina era un armario con una estufa.\nVale: ¿Y la instalación de gas?\nJenny: No tiene instalación de gas, pero la ubicación es excelente.\nHernando: En esa cocina no entra ni el loro.\nEl segundo estaba lleno de cajas, y no tenía techo. Jenny dejó de sonreír.\nHernando: Pero está bien iluminado.\nEl tercero estaba ubicado en la Séptima, frente a un parque. Medía ochenta metros cuadrados, tenía un techo alto y una cocina con horno. Vale se quedó sentada en el piso de la cocina, feliz.\nVale: Este es el que quiero.\nJenny: Perfecto. Los requisitos son sencillos: un depósito de tres meses y un fiador.\nHernando: Yo soy el fiador.\nJenny: ¿Usted es propietario, señor?\nHernando: Tengo la Burra.\nJenny: ¿Es una finca?\nHernando: Es un taxi. Pero es de la familia.\nJenny: Qué pena con usted, pero sin casa no hay fiador. Es el segundo requisito.\nTomás hizo las matemáticas: ocho millones al mes, más veinticuatro de depósito.\nTomás: Según mis matemáticas, nos faltan treinta y un millones.\nVale seguía sentada en el piso. No quería levantarse.\nJenny: Les leo las condiciones del propietario. Es una empresa muy seria: Inversiones RA.\nHernando miró el contrato.\nHernando: RA. Ricardo Altamira.\nVale se levantó despacio.\nVale: Gracias, Jenny. Con esas condiciones, prefiero vender empanadas en la calle.\nJenny: Es la mejor ubicación de la inmobiliaria.\nVale: Y el peor propietario de Bogotá.\nEn la Burra nadie hablaba. Ochenta metros cuadrados, ubicados en la Séptima, y eran de Altamira.\nSimón los recibió con una canción nueva.\nSimón: ¡Bienvenidos! ¡Bienvenidos a Hoteles Altamira!\nJhon Fredy: Eso se lo enseñó el señor del camión blanco.\nSonó el celular de Tomás. Era Mariana.\nMariana: Una señora de Santa Marta me escribió. Su papá tenía un hotel pequeño. En el libro de clientes de 1978 hay un Joaquín Herrera, de Bogotá. Mañana me manda una foto.",
+  "text": "La inmobiliaria Techo Feliz mandó a Jenny, una muchacha con una sonrisa que no se movía.\nJenny: El primer local queda a cinco cuadras de su café. Está recién pintado y muy bien iluminado.\nEra bonito, pero la cocina era un armario con una estufa.\nVale: ¿Y la instalación de gas?\nJenny: No tiene instalación de gas, pero la ubicación es excelente.\nHernando: En esa cocina no entra ni el loro.\nEl segundo estaba lleno de cajas, y no tenía techo. Jenny dejó de sonreír.\nHernando: Pero está bien iluminado.\nEl tercero estaba ubicado en la Séptima, frente a un parque. Medía ochenta metros cuadrados, tenía un techo alto y una cocina con horno. Vale se quedó sentada en el piso de la cocina, feliz.\nVale: Este es el que quiero.\nJenny: Los requisitos son sencillos: un depósito de tres meses y un fiador.\nHernando: Yo soy el fiador.\nJenny: ¿Usted es propietario, señor?\nHernando: Tengo la Burra.\nJenny: ¿Es una finca?\nHernando: Es un taxi. Pero es de la familia.\nJenny: Qué pena con usted, pero sin casa no hay fiador. Es el segundo requisito.\nLas matemáticas eran fáciles: ocho millones al mes, más veinticuatro de depósito.\nTomás: Las matemáticas no mienten: nos faltan treinta y un millones.\nVale seguía sentada en el piso. No quería levantarse.\nJenny: Les leo las condiciones del propietario. Es una empresa muy seria: Inversiones RA.\nHernando miró el contrato.\nHernando: RA. Ricardo Altamira.\nVale se levantó despacio.\nVale: Gracias, Jenny. Con esas condiciones, prefiero vender empanadas en la calle.\nJenny: Es la mejor ubicación de la inmobiliaria.\nVale: Y el peor propietario de Bogotá.\nEn la Burra nadie hablaba. Ochenta metros cuadrados, ubicados en la Séptima, y eran de Altamira.\nSimón los recibió con una canción nueva.\nSimón: ¡Bienvenidos! ¡Bienvenidos a Hoteles Altamira!\nJhon Fredy: Eso se lo enseñó el señor del camión blanco.\nLlamó Mariana.\nMariana: Una señora de Santa Marta me escribió. Su papá tenía un hotel pequeño. En el libro de clientes de 1978 hay un Joaquín Herrera, de Bogotá. Mañana me manda una foto.",
   "gloss": [
     {
       "es": "loro",
@@ -85,8 +85,8 @@
       "en": "no house, no guarantor"
     },
     {
-      "es": "Tomás hizo las matemáticas",
-      "en": "Tomás did the maths"
+      "es": "Las matemáticas eran fáciles",
+      "en": "The maths was easy"
     },
     {
       "es": "más veinticuatro de depósito",
@@ -123,6 +123,10 @@
     {
       "es": "En el libro de clientes de 1978",
       "en": "In the 1978 guest book"
+    },
+    {
+      "es": "Las matemáticas no mienten",
+      "en": "Maths doesn't lie"
     }
   ],
   "questions": [
@@ -218,7 +222,6 @@
     "c:no-se",
     "c:que-pena",
     "c:quiero",
-    "c:segun",
     "c:tengo",
     "c:tienes",
     "g:adjective-agreement",
@@ -237,7 +240,6 @@
     "g:pret-vs-imperfect",
     "g:preterite-ar",
     "g:preterite-er-ir",
-    "g:preterite-ser-ir-hacer",
     "g:reflexive-routine",
     "g:relative-que",
     "g:se-impersonal",
@@ -280,7 +282,6 @@
     "l:camión",
     "l:canción",
     "l:casa",
-    "l:celular",
     "l:cliente",
     "l:cocina",
     "l:condición",
@@ -305,9 +306,9 @@
     "l:finca",
     "l:foto",
     "l:frente",
+    "l:fácil",
     "l:gas",
     "l:hablar",
-    "l:hacer",
     "l:horno",
     "l:hotel",
     "l:iluminar",
@@ -317,6 +318,7 @@
     "l:leer",
     "l:levantarse",
     "l:libro",
+    "l:llamar",
     "l:lleno",
     "l:local",
     "l:loro",
@@ -325,6 +327,7 @@
     "l:mañana",
     "l:medir",
     "l:mejor",
+    "l:mentir",
     "l:mes",
     "l:metro",
     "l:mirar",
@@ -336,7 +339,6 @@
     "l:pena",
     "l:peor",
     "l:pequeño",
-    "l:perfecto",
     "l:pintar",
     "l:piso",
     "l:preferir",
@@ -356,7 +358,6 @@
     "l:serio",
     "l:señor",
     "l:señora",
-    "l:sonar",
     "l:sonreír",
     "l:sonrisa",
     "l:taxi",

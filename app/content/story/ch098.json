@@ -2,7 +2,7 @@
   "id": "ch098",
   "unit": "u33",
   "title": "Nosotros también",
-  "text": "Mariana no durmió. A las seis llegó con el cabello sin peinar y el celular en la mano.\nMariana: Doscientos catorce comentarios, y ninguno sirve.\n«Mi abuelo se llamaba Joaquín, tenía el cabello blanco y la lengua muy larga. Pero era de Cali».\n«Yo tuve un perro que se llamaba Joaquín. ¿Les sirve?»\nTomás: No buscamos perros. Buscamos a alguien que lo conozca de verdad.\nMariana: Este no me gusta nada.\n«¿Quién busca a Joaquín Herrera, y por qué? Manden sus nombres».\nLa cuenta no tenía foto ni amigos. Seguía una sola página: Hoteles Altamira.\nHernando: Esa gente nos persigue hasta en Facebook.\nMariana: Alerta, todos. Aquí no hay nadie que escriba nombres en internet.\nSimón: ¡Joaquín Herrera! ¡Joaquín Herrera!\nVale le tiró un pan al loro.\nVale: Simón, tú tienes la lengua más larga de La Candelaria.\nHernando sacó un cuaderno viejo con los teléfonos de sus colegas. La mitad ya no contestaba.\nHernando: ¿Aló? ¿Chato? Habla Pacheco. ¡PACHECO! No, hombre, no estoy muerto.\nHernando: El Chato no sabe nada. Pero tiene un cuñado que manejaba taxi en Santa Marta.\nVale miraba anuncios en la computadora.\n«Local en La Candelaria. Sin cocina».\n«Local con cocina. Ocho millones al mes».\nVale: Busco un local que tenga una cocina de verdad y un arriendo que podamos pagar. Es un plan B, nada más.\nTomás: ¿Ya no crees que lo encontremos?\nVale: Sí lo creo. Pero si perdemos el edificio, no quiero perder el pan también.\nNingún anuncio tenía ventana exterior, ninguno tenía horno, y todos costaban una fortuna.\nTomás: No hay ningún local en Bogotá que tenga todo eso.\nVale: Tampoco hay un hermano de tu abuela que conteste en Facebook. Y aquí estamos.\nTomás: Entonces buscamos los dos. Tú, un local que no existe. Yo, un señor que tal vez no existe.\nVale se rio y le puso la cabeza en el hombro. Fue un segundo, pero Tomás no se movió.\nVale: Mañana vamos a ver tres locales, y tú haces las cuentas.\nPor la noche, la cuenta sin foto contestó: «Nosotros también lo estamos buscando».",
+  "text": "Mariana no durmió. A las seis llegó con el cabello sin peinar y el celular en la mano.\nMariana: Doscientos catorce comentarios, y ninguno sirve.\n«Mi abuelo se llamaba Joaquín, tenía el cabello blanco y la lengua muy larga. Pero era de Cali».\n«Yo tuve un perro que se llamaba Joaquín. ¿Les sirve?»\nTomás: No buscamos perros. Buscamos a alguien que lo conozca de verdad.\nMariana: Este no me gusta nada.\n«¿Quién busca a Joaquín Herrera, y por qué? Manden sus nombres».\nLa cuenta no tenía foto ni amigos. Seguía una sola página: Hoteles Altamira.\nHernando: Esa gente nos persigue hasta en Facebook.\nMariana: Hay que estar alerta. Aquí no hay nadie que escriba su nombre en internet.\nSimón: ¡Joaquín Herrera! ¡Joaquín Herrera!\nVale le tiró un pan al loro.\nVale: Simón, tú tienes la lengua más larga de La Candelaria.\nHernando sacó un cuaderno viejo con los teléfonos de sus colegas. La mitad ya no contestaba.\nHernando: ¿Aló? ¿Chato? Habla Pacheco. ¡PACHECO! No, hombre, no estoy muerto.\nHernando: El Chato no sabe nada. Pero tiene un cuñado que manejaba taxi en Santa Marta.\nVale miraba anuncios en la computadora.\n«Local en La Candelaria. Sin cocina».\n«Local con cocina. Ocho millones al mes».\nVale: Busco un local que tenga una cocina de verdad y un arriendo que podamos pagar. Es un plan B, nada más.\nTomás: ¿Ya no crees que lo encontremos?\nVale: Sí lo creo. Pero si perdemos el edificio, no quiero perder el pan también.\nNingún anuncio tenía ventana exterior, ninguno tenía horno, y todos costaban una fortuna.\nTomás: No hay ningún local en Bogotá que tenga todo eso.\nVale: Tampoco hay un hermano de tu abuela que conteste en Facebook. Y aquí estamos.\nTomás: Entonces buscamos los dos. Tú, un local que no existe. Yo, un señor que tal vez no existe.\nVale se rio y le puso la cabeza en el hombro. Fue un segundo, pero Tomás no se movió.\nVale: Mañana vamos a ver tres locales, y tú haces las cuentas.\nPor la noche, la cuenta sin foto contestó: «Nosotros también lo estamos buscando».",
   "gloss": [
     {
       "es": "loro",
@@ -37,8 +37,8 @@
       "en": "Those people are chasing us even on Facebook."
     },
     {
-      "es": "Aquí no hay nadie que escriba nombres en internet.",
-      "en": "Nobody here writes names on the internet."
+      "es": "Aquí no hay nadie que escriba su nombre en internet",
+      "en": "Nobody here writes their name on the internet"
     },
     {
       "es": "Vale le tiró un pan al loro.",
@@ -51,10 +51,6 @@
     {
       "es": "Habla Pacheco.",
       "en": "Pacheco speaking."
-    },
-    {
-      "es": "¿No conoce a nadie que sepa algo?",
-      "en": "Don't you know anyone who knows something?"
     },
     {
       "es": "manejaba taxi",
@@ -95,6 +91,10 @@
     {
       "es": "Nosotros también lo estamos buscando.",
       "en": "We are looking for him too."
+    },
+    {
+      "es": "Hay que estar alerta.",
+      "en": "We have to stay alert."
     }
   ],
   "questions": [
@@ -191,6 +191,7 @@
     "c:entonces-bueno",
     "c:era",
     "c:hay",
+    "c:hay-que",
     "c:la-cuenta",
     "c:me-gusta",
     "c:no-hay-nada",

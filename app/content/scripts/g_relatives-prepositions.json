@@ -22,7 +22,7 @@
     { "es": "La persona a quien le escribí no contestó.", "options": ["The person who wrote to me didn't answer.", "The person I wrote to didn't answer."], "answer": 1 },
     { "es": "El parque del que te hablé es grande.", "options": ["The park I told you about is big.", "The park that told you is big.", "The park I'm from is big."], "answer": 0 },
     { "es": "El lugar al que voy es muy bonito.", "options": ["The place I'm coming from is very pretty.", "The place I'm going to is very pretty."], "answer": 1 },
-    { "es": "Las chicas con las que juego son de Cali.", "options": ["The girls I play with are from Cali.", "The girl I play with is from Cali."], "answer": 0 },
+    { "es": "Las vecinas con las que hablo son de Cali.", "options": ["The neighbours (women) I talk to are from Cali.", "The neighbour (a woman) I talk to is from Cali."], "answer": 0 },
     { "es": "Esta es la calle por la que pasa el bus.", "options": ["This is the bus I take along the street.", "This is the street the bus goes along."], "answer": 1 },
     { "es": "La persona para quien trabajo es la dueña.", "options": ["The person I work with is the owner.", "The person I work for is the owner."], "answer": 1 },
     { "es": "El hombre con quien hablé es el dueño.", "options": ["The man I spoke with is the owner.", "The man who spoke to me is the owner."], "answer": 0 }

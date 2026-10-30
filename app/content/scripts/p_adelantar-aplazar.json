@@ -131,7 +131,8 @@
    "answer": "¿Podemos correr la cita para las cuatro?",
    "accept": [
     "¿Podemos adelantar la cita para las cuatro?",
-    "¿Podemos aplazar la cita para las cuatro?"
+    "¿Podemos aplazar la cita para las cuatro?",
+    "¿Podemos cambiar la cita para las cuatro?"
    ],
    "why": "*Correr la cita* means move it, and the new time follows *para*."
   },

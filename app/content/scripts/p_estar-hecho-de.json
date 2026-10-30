@@ -1,7 +1,7 @@
 {
   "node": "p:estar-hecho-de",
   "hook": {
-    "line": "A customer picks up a cup at the café and asks if it's plastic. Spanish gives you two easy ways to say what something is made of.",
+    "line": "A customer runs a hand over Rosa's old table and asks what it's made of. Spanish gives you two easy ways to answer.",
     "es": "¿De qué está hecha la mesa?\nEs de madera.",
     "en": "What is the table made of?\nIt's made of wood."
   },

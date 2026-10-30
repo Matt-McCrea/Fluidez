@@ -55,7 +55,7 @@
       "accept": [
         "Cualquier arriendo menor de tres millones nos sirve.",
         "Puedo pagar cualquier arriendo menor de tres millones.",
-        "Cualquier local menor de tres millones está bien."
+        "Nos sirve cualquier arriendo menor de tres millones."
       ],
       "require": [
         {
@@ -96,7 +96,7 @@
       "intent": "Thank her, and say you'll talk to Vale, who is the one who needs the kitchen.",
       "accept": [
         "Gracias, señora. Voy a hablar con Vale, que es la que necesita la cocina.",
-        "Perfecto, muchas gracias. Se lo digo a Vale, la que necesita la cocina.",
+        "Perfecto, muchas gracias. Le cuento a Vale, que es la que necesita la cocina.",
         "Sí, gracias. Vale es la que necesita la cocina, y ella decide."
       ],
       "require": [
@@ -113,7 +113,6 @@
   ],
   "requires": [
     "c:aqui-tiene",
-    "c:bien-y-tu",
     "c:claro-listo",
     "c:en-que-le-puedo-servir",
     "c:en-serio",
@@ -130,13 +129,13 @@
     "g:cada-cualquier",
     "g:demonstratives",
     "g:direct-objects",
-    "g:double-pronouns",
     "g:estar-gerund",
     "g:estar-location-states",
     "g:gender-articles",
     "g:hay-vs-esta",
     "g:indirect-objects",
     "g:ir-a-plans",
+    "g:le-doubling",
     "g:parecer-quedar",
     "g:possessives",
     "g:present-ar",
@@ -154,7 +153,6 @@
     "l:alto",
     "l:arriendo",
     "l:ayudar",
-    "l:bien",
     "l:buena",
     "l:buscar",
     "l:café",
@@ -163,11 +161,11 @@
     "l:cocina",
     "l:comprar",
     "l:conocer",
+    "l:contar",
     "l:correo",
     "l:cuadra",
     "l:cuánto",
     "l:decidir",
-    "l:decir",
     "l:detalle",
     "l:edificio",
     "l:empresa",

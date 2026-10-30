@@ -1,7 +1,7 @@
 {
   "node": "p:quedar-faltar-sobrar",
   "hook": {
-    "line": "It's the night before the café reopens and Tomás is counting chairs. Some are missing, some are extra, some are still left. Spanish has a verb for each, and you will use all three the moment you start counting anything.",
+    "line": "It's Saturday morning at the café and Tomás is counting chairs. Some are missing, some are extra, some are still left. Spanish has a verb for each, and you will use all three the moment you start counting anything.",
     "es": "Nos faltan diez sillas.",
     "en": "We're ten chairs short."
   },

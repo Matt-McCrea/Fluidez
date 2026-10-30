@@ -146,9 +146,7 @@
   {
    "prompt": "Make it about prices (plural): *El precio depende del tamaño.*",
    "answer": "Los precios dependen del tamaño.",
-   "accept": [
-    "Los precios dependen del tamaño."
-   ],
+   "accept": [],
    "why": "Plural prices need the plural verb *dependen*."
   },
   {

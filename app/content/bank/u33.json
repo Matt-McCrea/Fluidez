@@ -191,7 +191,7 @@
   {
     "id": "u33-0008",
     "es": "¿Conoces una tienda por aquí con ventanas grandes?",
-    "en": "Is there any shop around here with big windows?",
+    "en": "Do you know a shop around here with big windows? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -298,7 +298,7 @@
   {
     "id": "u33-0012",
     "es": "No encuentro un local que tenga todo lo que necesitamos.",
-    "en": "There's no shop that has everything we need.",
+    "en": "I can't find any premises that have everything we need.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -405,7 +405,7 @@
   {
     "id": "u33-0016",
     "es": "Buscan una oficina que tenga internet rápido.",
-    "en": "They're looking for an office that has good internet.",
+    "en": "They're looking for an office that has fast internet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -595,7 +595,7 @@
   {
     "id": "u33-0023",
     "es": "¿Conoces un barrio que tenga locales con cocina?",
-    "en": "Do you know a neighbourhood with shops that have a good kitchen? (to a friend)",
+    "en": "Do you know a neighbourhood that has premises with kitchens? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -681,8 +681,8 @@
   },
   {
     "id": "u33-0026",
-    "es": "Necesitamos alguien que nos explique el contrato.",
-    "en": "We need someone to explain the contract to us.",
+    "es": "Necesitamos a alguien que nos explique el contrato.",
+    "en": "We need someone who can explain the contract to us.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -789,7 +789,7 @@
   {
     "id": "u33-0030",
     "es": "Queremos un propietario que no cobre demasiado.",
-    "en": "We want an owner who doesn't raise the rent every year.",
+    "en": "We want an owner who doesn't charge too much.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -928,23 +928,22 @@
   },
   {
     "id": "u33-0035",
-    "es": "Buscamos un salón que sea lo bastante grande para la fiesta.",
-    "en": "We're looking for a hall that's big enough for the party.",
+    "es": "Buscamos un salón que tenga espacio para cien personas.",
+    "en": "We're looking for a hall that has room for a hundred people.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:aqui-tiene",
       "g:gender-articles",
       "g:present-ar",
-      "g:quantifiers",
       "g:relative-que",
-      "g:ser-identity",
-      "g:subj-irregulars",
       "g:subj-relative",
       "l:buscar",
-      "l:fiesta",
-      "l:grande",
+      "l:espacio",
+      "l:persona",
       "l:salón",
-      "l:ser",
+      "l:tener",
+      "p:numbers-un-una",
       "p:para-inf"
     ],
     "targets": [
@@ -1301,7 +1300,7 @@
   {
     "id": "u33-0048",
     "es": "Preséntame a alguien que tenga un local libre.",
-    "en": "Tell me if you know anyone who rents out premises. (to a friend)",
+    "en": "Introduce me to someone who has premises available. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1330,7 +1329,7 @@
   {
     "id": "u33-0049",
     "es": "Vale quiere una cocina que se parezca a la cocina de Rosa.",
-    "en": "Vale dreams of premises with a kitchen like Rosa's.",
+    "en": "Vale wants a kitchen that's like Rosa's kitchen.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1432,7 +1431,7 @@
   {
     "id": "u33-0053",
     "es": "¿Tiene un apartamento que quede cerca del centro?",
-    "en": "Do you have a flat that's ten minutes from the centre? (polite)",
+    "en": "Do you have a flat that's close to the centre? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1539,7 +1538,7 @@
   {
     "id": "u33-0057",
     "es": "Queremos a alguien que llegue temprano.",
-    "en": "We want an assistant who arrives early.",
+    "en": "We want someone who arrives early.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2108,7 +2107,7 @@
   {
     "id": "u33-0077",
     "es": "Buscamos una ubicación que sea mejor para el café.",
-    "en": "We're looking for a location that's good for the café.",
+    "en": "We're looking for a location that's better for the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2406,7 +2405,7 @@
   {
     "id": "u33-0088",
     "es": "Quiero una cocina con una instalación de gas segura.",
-    "en": "I want a kitchen with a good gas installation.",
+    "en": "I want a kitchen with a safe gas installation.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2431,7 +2430,7 @@
   {
     "id": "u33-0089",
     "es": "Vale necesita un horno que no falle.",
-    "en": "Vale needs an oven that doesn't break down all the time.",
+    "en": "Vale needs an oven that doesn't break down.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3016,8 +3015,8 @@
   },
   {
     "id": "u33-0112",
-    "es": "Mariana necesita una persona que tenga mucha memoria.",
-    "en": "Mariana needs a person with a lot of memory.",
+    "es": "Mariana necesita una persona que tenga buena memoria.",
+    "en": "Mariana needs a person with a good memory.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3026,11 +3025,11 @@
       "g:present-ar",
       "g:relative-que",
       "g:subj-relative",
+      "l:buena",
       "l:memoria",
       "l:necesitar",
       "l:persona",
-      "l:tener",
-      "p:quantifiers-basic"
+      "l:tener"
     ],
     "targets": [
       "g:subj-relative"
@@ -3382,19 +3381,25 @@
   },
   {
     "id": "u33-0127",
-    "es": "Hernando sale de la casa antes de que Tomás despierte.",
-    "en": "Hernando leaves the house before Tomás wakes up.",
+    "es": "Hernando se toma el primer tinto antes de que salga el sol.",
+    "en": "Hernando has his first black coffee before the sun comes up.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-er-ir",
+      "g:present-ar",
+      "g:reflexive-routine",
       "g:subj-purpose-full",
       "g:subj-wanting",
       "l:antes",
-      "l:casa",
-      "l:despertar",
-      "l:salir"
+      "l:salir",
+      "l:sol",
+      "l:tinto",
+      "l:tomar",
+      "p:comerse-todo",
+      "p:dativo-aspectual",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer"
     ],
     "targets": [
       "g:subj-purpose-full"
@@ -3550,18 +3555,18 @@
   },
   {
     "id": "u33-0134",
-    "es": "Llámame antes de que salgas.",
-    "en": "Call me before you leave.",
+    "es": "Avísame antes de que Hernando se vaya.",
+    "en": "Let me know before Hernando leaves. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
       "g:commands-with-pronouns",
+      "g:subj-irregulars",
       "g:subj-purpose-full",
-      "g:subj-wanting",
       "l:antes",
-      "l:llamar",
-      "l:salir",
+      "l:avisar",
+      "l:irse",
       "p:me-te-nos-objects"
     ],
     "targets": [
@@ -3735,19 +3740,20 @@
   },
   {
     "id": "u33-0142",
-    "es": "Hable más alto para que todos le oigamos.",
-    "en": "Speak louder so that we can all hear you. (polite)",
+    "es": "Hable más alto, por favor, para que todos entendamos.",
+    "en": "Speak louder, please, so that we all understand. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:por-favor",
       "g:commands-usted",
-      "g:comparatives",
-      "g:indirect-objects",
       "g:para-que",
       "g:subj-wanting",
       "l:alto",
+      "l:entender",
+      "l:favor",
       "l:hablar",
-      "l:oír"
+      "p:request-ladder"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -4152,26 +4158,28 @@
   },
   {
     "id": "u33-0158",
-    "es": "La que tiene el techo rojo es la casa de Joaquín.",
-    "en": "The one with the red roof is Joaquín's house.",
+    "es": "La que tiene las ventanas verdes es la casa de mi tía.",
+    "en": "The one with the green windows is my aunt's house.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:relatives-prepositions",
       "g:ser-identity",
       "g:stem-boot",
       "l:casa",
-      "l:rojo",
       "l:ser",
-      "l:techo",
       "l:tener",
-      "p:el-que-la-que"
+      "l:tía",
+      "l:ventana",
+      "l:verde",
+      "p:el-que-la-que",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:relatives-prepositions",
-      "l:techo",
       "p:el-que-la-que"
     ],
     "kind": "statement",
@@ -4487,21 +4495,21 @@
   },
   {
     "id": "u33-0171",
-    "es": "Busco una lengua que no conozca nadie.",
-    "en": "I'm looking for a language nobody knows.",
+    "es": "Necesito un profesor que hable mi lengua.",
+    "en": "I need a teacher who speaks my language.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:negation-words",
       "g:present-ar",
       "g:relative-que",
       "g:subj-relative",
       "g:subj-wanting",
-      "l:buscar",
-      "l:conocer",
+      "l:hablar",
       "l:lengua",
-      "p:saber-conocer"
+      "l:necesitar",
+      "l:profesor",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:subj-relative",
@@ -4539,24 +4547,22 @@
   },
   {
     "id": "u33-0173",
-    "es": "Necesitamos a alguien que hable la lengua del puerto.",
-    "en": "We need someone who speaks the language of the port.",
+    "es": "Simón tiene la lengua más larga del barrio.",
+    "en": "Simón has the loosest tongue in the neighbourhood.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
+      "g:adjective-agreement",
       "g:gender-articles",
-      "g:present-ar",
-      "g:relative-que",
-      "g:subj-relative",
-      "g:subj-wanting",
-      "l:hablar",
+      "g:stem-boot",
+      "g:superlatives",
+      "l:barrio",
+      "l:largo",
       "l:lengua",
-      "l:necesitar",
-      "l:puerto",
-      "p:indefinites-basic"
+      "l:tener"
     ],
     "targets": [
-      "g:subj-relative",
       "l:lengua"
     ],
     "kind": "statement",
@@ -4566,19 +4572,26 @@
   },
   {
     "id": "u33-0174",
-    "es": "Simón es el único que habla con Hernando.",
-    "en": "Simón is the only one who talks to Hernando.",
+    "es": "Simón es el único que no le tiene miedo a Hernando.",
+    "en": "Simón is the only one who isn't afraid of Hernando.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:gender-articles",
-      "g:present-ar",
+      "g:indirect-objects",
+      "g:le-doubling",
       "g:ser-identity",
+      "g:stem-boot",
       "g:that-clauses",
-      "l:hablar",
+      "l:miedo",
       "l:ser",
+      "l:tener",
       "l:único",
-      "p:el-que-la-que"
+      "p:el-que-la-que",
+      "p:me-da-miedo-que",
+      "p:miedo-a",
+      "p:tener-hambre"
     ],
     "targets": [
       "p:el-que-la-que"
@@ -4615,17 +4628,22 @@
   },
   {
     "id": "u33-0176",
-    "es": "Alerta, viene un hombre que no conozco.",
-    "en": "Watch out, a man I don't know is coming.",
+    "es": "Hay que estar alerta: viene un hombre que no conozco.",
+    "en": "We have to be on the alert: a man I don't know is coming.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
+      "c:hay-que",
+      "g:estar-location-states",
       "g:gender-articles",
       "g:relative-que",
       "g:stem-boot",
+      "g:verb-infinitive",
       "g:yo-irregular",
       "l:alerta",
       "l:conocer",
+      "l:estar",
       "l:hombre",
       "l:venir",
       "p:saber-conocer"
@@ -4688,24 +4706,25 @@
   },
   {
     "id": "u33-0179",
-    "es": "Mariana no quiere a nadie que cuente la historia antes de tiempo.",
-    "en": "Mariana doesn't want anyone to tell the story too soon.",
+    "es": "En el grupo no hay nadie que cuente la historia completa.",
+    "en": "In the group there's nobody who tells the whole story.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
+      "c:no-hay-nada",
       "g:gender-articles",
+      "g:hay-vs-esta",
       "g:negation-words",
+      "g:present-ar",
       "g:relative-que",
-      "g:stem-boot",
       "g:subj-relative",
       "g:subj-wanting",
-      "l:antes",
+      "l:completar",
       "l:contar",
+      "l:grupo",
       "l:historia",
-      "l:querer",
-      "l:tiempo",
-      "p:contar-dos-sentidos",
-      "p:personal-a"
+      "p:contar-dos-sentidos"
     ],
     "targets": [
       "g:subj-relative"
@@ -4748,25 +4767,25 @@
   },
   {
     "id": "u33-0181",
-    "es": "Cualquier persona que lo conozca puede levantar la mano.",
-    "en": "Anyone who knows him can raise their hand.",
+    "es": "Le damos un tinto gratis a cualquier persona que traiga una foto de Joaquín.",
+    "en": "We'll give a free black coffee to anyone who brings a photo of Joaquín.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
-      "g:direct-objects",
       "g:gender-articles",
+      "g:indirect-objects",
+      "g:present-ar",
       "g:relative-que",
-      "g:stem-boot",
       "g:subj-relative",
       "g:subj-wanting",
-      "g:verb-infinitive",
-      "l:conocer",
-      "l:levantarse",
-      "l:mano",
+      "l:dar",
+      "l:foto",
+      "l:gratis",
       "l:persona",
-      "l:poder",
-      "p:saber-conocer"
+      "l:tinto",
+      "l:traer",
+      "p:llevar-traer"
     ],
     "targets": [
       "g:cada-cualquier",
@@ -4779,23 +4798,22 @@
   },
   {
     "id": "u33-0182",
-    "es": "Cualquier persona que sepa algo puede hablar ahora.",
-    "en": "Anyone who knows something can speak now.",
+    "es": "Cualquier cosa que sepan de él nos sirve.",
+    "en": "Anything you know about him helps us. (you all)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
+      "g:prep-pronouns",
       "g:relative-que",
-      "g:stem-boot",
+      "g:stem-e-i",
       "g:subj-irregulars",
       "g:subj-relative",
-      "g:verb-infinitive",
-      "l:ahora",
-      "l:hablar",
-      "l:persona",
-      "l:poder",
+      "g:subj-wanting",
+      "l:cosa",
       "l:saber",
-      "p:indefinites-basic",
+      "l:servir",
+      "p:me-te-nos-objects",
       "p:saber-conocer"
     ],
     "targets": [
@@ -4858,23 +4876,21 @@
   },
   {
     "id": "u33-0185",
-    "es": "¿A cuánto queda la estación de bus?",
-    "en": "How far is the bus station?",
+    "es": "¿Qué tan lejos queda la estación de bus?",
+    "en": "How far away is the bus station?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
+      "g:questions",
       "l:bus",
-      "l:cuánto",
       "l:estación",
+      "l:lejos",
       "l:quedar",
-      "p:prep-questions-basic",
-      "p:quedar-a-distancia"
+      "l:qué"
     ],
-    "targets": [
-      "p:quedar-a-distancia"
-    ],
+    "targets": [],
     "kind": "question",
     "unit": "u33",
     "theme": "distance, newness, full and free, what is left",
@@ -4882,20 +4898,22 @@
   },
   {
     "id": "u33-0186",
-    "es": "¿A cuánto queda la inmobiliaria de aquí?",
-    "en": "How far is the estate agency from here?",
+    "es": "La inmobiliaria Techo Feliz queda a seis cuadras del café.",
+    "en": "The Techo Feliz agency is six blocks from the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:aquí",
-      "l:cuánto",
+      "l:café",
+      "l:cuadra",
       "l:inmobiliaria",
       "l:quedar",
-      "p:aqui-ahi-alla",
-      "p:prep-questions-basic",
-      "p:quedar-a-distancia"
+      "p:a-cuadras-de",
+      "p:directions-cuadras",
+      "p:estar-a",
+      "p:quedar-a-distancia",
+      "p:quedar-cerca"
     ],
     "targets": [
       "l:inmobiliaria",
@@ -4979,19 +4997,22 @@
   },
   {
     "id": "u33-0190",
-    "es": "¿A cuánto queda ese local del parque?",
-    "en": "How far is that shop from the park?",
+    "es": "Ese local queda a dos cuadras del parque, ¿no?",
+    "en": "That shop is two blocks from the park, isn't it?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:demonstratives",
       "g:gender-articles",
       "g:present-ar",
-      "l:cuánto",
+      "l:cuadra",
       "l:local",
       "l:parque",
       "l:quedar",
-      "p:prep-questions-basic",
+      "p:a-cuadras-de",
+      "p:directions-cuadras",
+      "p:estar-a",
       "p:quedar-a-distancia"
     ],
     "targets": [
@@ -5028,22 +5049,21 @@
   },
   {
     "id": "u33-0192",
-    "es": "¿A cuánto queda la oficina de Mariana?",
-    "en": "How far is Mariana's office?",
+    "es": "¿A cuántas cuadras queda la oficina de Mariana?",
+    "en": "How many blocks away is Mariana's office?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
+      "l:cuadra",
       "l:cuánto",
       "l:oficina",
       "l:quedar",
-      "p:prep-questions-basic",
-      "p:quedar-a-distancia"
+      "p:directions-cuadras",
+      "p:prep-questions-basic"
     ],
-    "targets": [
-      "p:quedar-a-distancia"
-    ],
+    "targets": [],
     "kind": "dialogue",
     "unit": "u33",
     "theme": "distance, newness, full and free, what is left",
@@ -5051,18 +5071,19 @@
   },
   {
     "id": "u33-0193",
-    "es": "¿A cuánto queda el apartamento nuevo?",
-    "en": "How far is the new flat?",
+    "es": "El apartamento nuevo queda a diez minutos del trabajo de Vale.",
+    "en": "The new flat is ten minutes from Vale's work.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
       "l:apartamento",
-      "l:cuánto",
+      "l:minuto",
       "l:nuevo",
       "l:quedar",
-      "p:prep-questions-basic",
+      "l:trabajo",
+      "p:estar-a",
       "p:quedar-a-distancia"
     ],
     "targets": [
@@ -5075,24 +5096,24 @@
   },
   {
     "id": "u33-0194",
-    "es": "Tomás pregunta: ¿a cuánto queda el aeropuerto?",
-    "en": "Tomás asks: how far is the airport?",
+    "es": "Desde aquí, el aeropuerto queda a una hora con tráfico.",
+    "en": "From here, the airport is an hour away with traffic.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:a-cuantas-cuotas",
+      "c:queda-a-una-hora",
       "g:gender-articles",
-      "g:present-ar",
       "l:aeropuerto",
-      "l:cuánto",
-      "l:preguntar",
+      "l:aquí",
+      "l:hora",
       "l:quedar",
-      "p:preguntar-pedir",
-      "p:prep-questions-basic",
-      "p:quedar-a-distancia"
+      "l:tráfico",
+      "p:aqui-ahi-alla",
+      "p:con-sin",
+      "p:quedar-cerca"
     ],
-    "targets": [
-      "p:quedar-a-distancia"
-    ],
+    "targets": [],
     "kind": "question",
     "unit": "u33",
     "theme": "distance, newness, full and free, what is left",
@@ -5125,8 +5146,8 @@
   },
   {
     "id": "u33-0196",
-    "es": "Mi casa queda a media hora del centro.",
-    "en": "My house is half an hour from the centre.",
+    "es": "Mi casa queda a cuatro cuadras del centro.",
+    "en": "My house is four blocks from the centre.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5134,8 +5155,11 @@
       "g:present-ar",
       "l:casa",
       "l:centro",
-      "l:hora",
+      "l:cuadra",
       "l:quedar",
+      "p:a-cuadras-de",
+      "p:directions-cuadras",
+      "p:estar-a",
       "p:possessives-basic",
       "p:quedar-a-distancia",
       "p:quedar-cerca"
@@ -5200,19 +5224,22 @@
   },
   {
     "id": "u33-0199",
-    "es": "Ese local queda a media hora de aquí.",
-    "en": "That place is half an hour from here.",
+    "es": "Ese local queda a quince minutos de aquí en taxi.",
+    "en": "That place is fifteen minutes from here by taxi.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
       "g:present-ar",
       "l:aquí",
-      "l:hora",
       "l:local",
+      "l:minuto",
       "l:quedar",
+      "l:taxi",
       "p:aqui-ahi-alla",
-      "p:quedar-a-distancia"
+      "p:estar-a",
+      "p:quedar-a-distancia",
+      "p:transport-en"
     ],
     "targets": [
       "l:local",
@@ -5225,21 +5252,21 @@
   },
   {
     "id": "u33-0200",
-    "es": "La inmobiliaria queda a unas horas de Medellín.",
-    "en": "The agency is a few hours from Medellín.",
+    "es": "El pueblo de la mamá de Vale queda a unas horas de Medellín.",
+    "en": "Vale's mum's town is a few hours from Medellín.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
       "l:hora",
-      "l:inmobiliaria",
+      "l:mamá",
+      "l:pueblo",
       "l:quedar",
       "p:quedar-a-distancia",
       "p:quedar-cerca"
     ],
     "targets": [
-      "l:inmobiliaria",
       "p:quedar-a-distancia"
     ],
     "kind": "statement",
@@ -5249,14 +5276,15 @@
   },
   {
     "id": "u33-0201",
-    "es": "Queda a media hora, no más.",
-    "en": "It's half an hour away, no more.",
+    "es": "Queda a diez minutos, nada más.",
+    "en": "It's only ten minutes away.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:hora",
+      "l:minuto",
       "l:quedar",
+      "p:estar-a",
       "p:quedar-a-distancia",
       "p:quedar-cerca"
     ],
@@ -5270,8 +5298,8 @@
   },
   {
     "id": "u33-0202",
-    "es": "La casa de Hernando queda a un kilómetro del café.",
-    "en": "Hernando's house is a kilometre from the café.",
+    "es": "La casa de Hernando queda a quince minutos del café.",
+    "en": "Hernando's house is fifteen minutes from the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5279,8 +5307,9 @@
       "g:present-ar",
       "l:café",
       "l:casa",
-      "l:kilómetro",
+      "l:minuto",
       "l:quedar",
+      "p:estar-a",
       "p:quedar-a-distancia",
       "p:quedar-cerca"
     ],
@@ -5456,8 +5485,8 @@
   },
   {
     "id": "u33-0209",
-    "es": "La biblioteca queda a pocos pasos del café.",
-    "en": "The library is a few steps from the café.",
+    "es": "La biblioteca queda a dos minutos del café.",
+    "en": "The library is two minutes from the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5465,10 +5494,9 @@
       "g:present-ar",
       "l:biblioteca",
       "l:café",
-      "l:paso",
+      "l:minuto",
       "l:quedar",
-      "p:poco-un-poco",
-      "p:quantifiers-basic",
+      "p:estar-a",
       "p:quedar-a-distancia",
       "p:quedar-cerca"
     ],
@@ -5482,17 +5510,18 @@
   },
   {
     "id": "u33-0210",
-    "es": "El puerto queda a media hora del hotel.",
-    "en": "The port is half an hour from the hotel.",
+    "es": "El puerto queda a veinte minutos del hotel.",
+    "en": "The port is twenty minutes from the hotel.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:hora",
       "l:hotel",
+      "l:minuto",
       "l:puerto",
       "l:quedar",
+      "p:estar-a",
       "p:quedar-a-distancia",
       "p:quedar-cerca"
     ],
@@ -5548,20 +5577,23 @@
   },
   {
     "id": "u33-0213",
-    "es": "Mi oficina queda a media hora de la casa.",
-    "en": "My office is half an hour from the house.",
+    "es": "Mi oficina queda a cuarenta minutos de la casa en bus.",
+    "en": "My office is forty minutes from home by bus.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
+      "l:bus",
       "l:casa",
-      "l:hora",
+      "l:minuto",
       "l:oficina",
       "l:quedar",
+      "p:estar-a",
       "p:possessives-basic",
       "p:quedar-a-distancia",
-      "p:quedar-cerca"
+      "p:quedar-cerca",
+      "p:transport-en"
     ],
     "targets": [
       "p:quedar-a-distancia"
@@ -5679,15 +5711,15 @@
   },
   {
     "id": "u33-0218",
-    "es": "Los pisos están recién limpiados.",
-    "en": "The floors have just been cleaned.",
+    "es": "Los pisos están recién lavados.",
+    "en": "The floors have just been washed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
       "g:gender-articles",
       "l:estar",
-      "l:limpiar",
+      "l:lavar",
       "l:piso",
       "l:recién",
       "p:recien-participio"
@@ -5755,7 +5787,7 @@
   {
     "id": "u33-0221",
     "es": "¿Quieres un pan recién salido del horno?",
-    "en": "Do you want a bread straight out of the oven? (to a friend)",
+    "en": "Do you want a roll straight out of the oven? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5779,17 +5811,18 @@
   },
   {
     "id": "u33-0222",
-    "es": "Tomás está recién llegado a la ciudad.",
-    "en": "Tomás has only just arrived in the city.",
+    "es": "Tomás ya no es un recién llegado en el barrio.",
+    "en": "Tomás is no longer a newcomer in the neighbourhood.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
+      "c:ya-no",
       "g:gender-articles",
-      "l:ciudad",
-      "l:estar",
+      "g:ser-identity",
+      "l:barrio",
       "l:llegar",
       "l:recién",
+      "l:ser",
       "p:recien-participio"
     ],
     "targets": [
@@ -5829,19 +5862,21 @@
   },
   {
     "id": "u33-0224",
-    "es": "Recién llegamos y no conocemos nada.",
-    "en": "We've only just arrived and we don't know anything.",
+    "es": "Recién llegamos y ya nos queremos ir.",
+    "en": "We've only just arrived and we already want to leave.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:negation-words",
       "g:present-ar",
       "g:present-er-ir",
-      "l:conocer",
+      "g:verb-infinitive",
+      "l:ir",
       "l:llegar",
+      "l:querer",
       "l:recién",
+      "p:me-te-nos-objects",
       "p:recien-participio",
-      "p:saber-conocer"
+      "p:se-reciproco"
     ],
     "targets": [
       "l:recién",
@@ -5969,18 +6004,26 @@
   },
   {
     "id": "u33-0229",
-    "es": "Un recién nacido llora en la mesa de al lado.",
-    "en": "A newborn baby cries at the next table.",
+    "es": "Mariana le lleva flores a una amiga que tiene un recién nacido.",
+    "en": "Mariana takes flowers to a friend who has a newborn.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:a-cuantas-cuotas",
+      "c:tienes",
       "g:gender-articles",
+      "g:indirect-objects",
+      "g:le-doubling",
       "g:present-ar",
-      "l:lado",
-      "l:llorar",
-      "l:mesa",
+      "g:relative-que",
+      "g:stem-boot",
+      "l:amiga",
+      "l:flor",
+      "l:llevar",
       "l:nacer",
       "l:recién",
+      "l:tener",
+      "p:llevar-traer",
       "p:recien-participio"
     ],
     "targets": [
@@ -6205,16 +6248,16 @@
   },
   {
     "id": "u33-0238",
-    "es": "Esa tienda es de recién abierta.",
+    "es": "Esa tienda está recién abierta.",
     "en": "That shop has only just opened.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
-      "g:ser-identity",
+      "g:estar-location-states",
       "l:abrir",
+      "l:estar",
       "l:recién",
-      "l:ser",
       "l:tienda",
       "p:recien-participio"
     ],
@@ -6733,8 +6776,8 @@
   },
   {
     "id": "u33-0260",
-    "es": "Esta taza está llena, tómala con cuidado.",
-    "en": "This cup is full, carry it carefully.",
+    "es": "Esta taza está muy llena, llévala con cuidado.",
+    "en": "This cup is very full, carry it carefully. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6746,10 +6789,12 @@
       "l:cuidado",
       "l:estar",
       "l:lleno",
+      "l:llevar",
       "l:taza",
-      "l:tomar",
       "p:demonstratives-basic",
-      "p:lleno-libre"
+      "p:lleno-libre",
+      "p:llevar-traer",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "p:lleno-libre"
@@ -7985,14 +8030,14 @@
   },
   {
     "id": "u33-0312",
-    "es": "El pueblo en el que vive Joaquín queda cerca del mar.",
-    "en": "The town where Joaquín lives is near the sea.",
+    "es": "El pueblo en el que vivía Joaquín queda cerca del mar.",
+    "en": "The town where Joaquín lived is near the sea.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:imperfect-habitual",
       "g:present-ar",
-      "g:present-er-ir",
       "g:relatives-prepositions",
       "l:cerca",
       "l:mar",
@@ -8246,8 +8291,8 @@
   },
   {
     "id": "u33-0322",
-    "es": "La oficina para la que trabaja Mariana queda en el centro.",
-    "en": "The office Mariana works for is in the centre.",
+    "es": "El periódico para el que trabaja Mariana queda en el centro.",
+    "en": "The newspaper Mariana works for is in the centre.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8255,7 +8300,7 @@
       "g:present-ar",
       "g:relatives-prepositions",
       "l:centro",
-      "l:oficina",
+      "l:periódico",
       "l:quedar",
       "l:trabajar",
       "p:para-inf",
@@ -8379,18 +8424,17 @@
   },
   {
     "id": "u33-0327",
-    "es": "El parque junto al que vivo tiene muchos árboles.",
-    "en": "The park I live next to has lots of trees.",
+    "es": "Vivo junto a un parque que tiene muchos árboles.",
+    "en": "I live next to a park that has lots of trees.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
       "g:gender-articles",
-      "g:present-ar",
       "g:present-er-ir",
+      "g:relative-que",
       "g:stem-boot",
-      "g:that-clauses",
-      "l:juntar",
+      "l:junto",
       "l:parque",
       "l:tener",
       "l:vivir",
@@ -8465,8 +8509,8 @@
   },
   {
     "id": "u33-0330",
-    "es": "Necesito una calle por la que pase el bus.",
-    "en": "I need a street the bus goes along.",
+    "es": "Busco un apartamento en una calle por la que pase el bus.",
+    "en": "I'm looking for a flat on a street the bus goes along.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8476,9 +8520,10 @@
       "g:relatives-prepositions",
       "g:subj-relative",
       "g:subj-wanting",
+      "l:apartamento",
       "l:bus",
+      "l:buscar",
       "l:calle",
-      "l:necesitar",
       "l:pasar"
     ],
     "targets": [
@@ -9549,20 +9594,23 @@
   },
   {
     "id": "u33-0372",
-    "es": "La calle en la que está el café se llama Doce.",
-    "en": "The street the café is on is called Doce.",
+    "es": "La calle en la que está el café se llena de turistas los domingos.",
+    "en": "The street the café is on fills up with tourists on Sundays.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:se-llama",
       "g:estar-location-states",
       "g:gender-articles",
-      "g:reflexive-routine",
+      "g:present-ar",
       "g:relatives-prepositions",
+      "g:se-impersonal",
       "l:café",
       "l:calle",
+      "l:domingo",
       "l:estar",
-      "l:llamarse"
+      "l:llenar",
+      "l:turista",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:relatives-prepositions"
@@ -9574,8 +9622,8 @@
   },
   {
     "id": "u33-0373",
-    "es": "Esta es la casa por la que entra Simón cada mañana.",
-    "en": "This is the house Simón comes in through every morning.",
+    "es": "Esta es la ventana por la que entra Simón cada mañana.",
+    "en": "This is the window Simón comes in through every morning.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9585,10 +9633,10 @@
       "g:present-ar",
       "g:relatives-prepositions",
       "g:ser-identity",
-      "l:casa",
       "l:entrar",
       "l:mañana",
       "l:ser",
+      "l:ventana",
       "p:demonstratives-basic",
       "p:veces-al"
     ],
@@ -9679,7 +9727,7 @@
   },
   {
     "id": "u33-0377",
-    "es": "La silla sobre la que se sienta Hernando era de Rosa.",
+    "es": "La silla en la que se sienta Hernando era de Rosa.",
     "en": "The chair Hernando sits on was Rosa's.",
     "accept": [],
     "acceptEn": [],
@@ -10269,7 +10317,7 @@
   },
   {
     "id": "u33-0400",
-    "es": "Mide dos metros de alto y no cabe por esa puerta.",
+    "es": "Mide dos metros y no cabe por esa puerta.",
     "en": "He's two metres tall and doesn't fit through that door.",
     "accept": [],
     "acceptEn": [],
@@ -10278,7 +10326,6 @@
       "g:por-para-1",
       "g:present-er-ir",
       "g:stem-e-i",
-      "l:alto",
       "l:caber",
       "l:medir",
       "l:metro",
@@ -10347,12 +10394,13 @@
   },
   {
     "id": "u33-0403",
-    "es": "Esta pared mide seis metros.",
-    "en": "This wall is six metres.",
+    "es": "Esta pared mide seis metros de largo.",
+    "en": "This wall is six metres long.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:stem-e-i",
+      "l:largo",
       "l:medir",
       "l:metro",
       "l:pared",
@@ -10451,23 +10499,20 @@
   },
   {
     "id": "u33-0407",
-    "es": "Voy a medir la pared con mi herramienta.",
-    "en": "I'm going to measure the wall with my tool.",
+    "es": "Voy a medir la pared con el metro.",
+    "en": "I'm going to measure the wall with the tape measure.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:voy-a",
       "g:gender-articles",
       "g:ir-a-plans",
-      "l:herramienta",
       "l:ir",
       "l:medir",
-      "l:pared",
-      "p:possessives-basic"
+      "l:metro",
+      "l:pared"
     ],
-    "targets": [
-      "l:herramienta"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u33",
     "theme": "measuring, fitting and placing",
@@ -10498,22 +10543,21 @@
   },
   {
     "id": "u33-0409",
-    "es": "Con matemáticas se calcula el área del local.",
-    "en": "You work out the area of the premises with maths.",
+    "es": "Vale odia las matemáticas, así que Tomás calcula el área.",
+    "en": "Vale hates maths, so Tomás works out the area.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:cause-result",
       "g:gender-articles",
       "g:present-ar",
-      "g:se-impersonal",
       "l:calcular",
-      "l:local",
       "l:matemáticas",
+      "l:odia",
       "l:área",
       "p:el-agua-fria"
     ],
     "targets": [
-      "l:local",
       "l:matemáticas"
     ],
     "kind": "statement",
@@ -10571,15 +10615,17 @@
   },
   {
     "id": "u33-0412",
-    "es": "El cuadrado de cuatro metros mide dieciséis metros cuadrados.",
-    "en": "A four-metre square measures sixteen square metres.",
+    "es": "Una habitación de cuatro metros por cuatro mide dieciséis metros cuadrados.",
+    "en": "A room four metres by four is sixteen square metres.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
+      "g:por-para-1",
       "g:stem-e-i",
       "l:cuadrado",
+      "l:habitación",
       "l:medir",
       "l:metro",
       "p:medir",
@@ -10720,7 +10766,7 @@
   },
   {
     "id": "u33-0418",
-    "es": "La nevera cabe en la cocina, pero no cabe la mesa.",
+    "es": "La nevera cabe en la cocina, pero la mesa no.",
     "en": "The fridge fits in the kitchen, but the table doesn't.",
     "accept": [],
     "acceptEn": [],
@@ -11506,20 +11552,19 @@
   },
   {
     "id": "u33-0449",
-    "es": "Hernando se sienta en medio del salón.",
-    "en": "Hernando sits in the middle of the hall.",
+    "es": "Hernando siempre se sienta en medio de Vale y Tomás.",
+    "en": "Hernando always sits between Vale and Tomás.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:reflexive-routine",
       "g:stem-boot",
-      "l:salón",
       "l:sentarse",
+      "l:siempre",
+      "p:frequency-scale",
       "p:posicion-precisa"
     ],
     "targets": [
-      "l:salón",
       "p:posicion-precisa"
     ],
     "kind": "statement",
@@ -11966,7 +12011,7 @@
   {
     "id": "u33-0468",
     "es": "Rosa guardaba las llaves al fondo de la caja.",
-    "en": "Rosa kept the keys at the back of the box.",
+    "en": "Rosa kept the keys at the bottom of the box.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12326,16 +12371,17 @@
   },
   {
     "id": "u33-0483",
-    "es": "La mesa es de madera.",
-    "en": "The table is made of wood.",
+    "es": "¿Esta mesa es de madera o de plástico?",
+    "en": "Is this table made of wood or plastic?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:ser-identity",
       "l:madera",
       "l:mesa",
+      "l:plástico",
       "l:ser",
+      "p:demonstratives-basic",
       "p:estar-hecho-de",
       "p:ser-de-material"
     ],
@@ -12350,18 +12396,23 @@
   },
   {
     "id": "u33-0484",
-    "es": "La mesa de Rosa es de madera.",
-    "en": "Rosa's table is made of wood.",
+    "es": "La mesa de Rosa está hecha de una sola pieza de madera.",
+    "en": "Rosa's table is made from a single piece of wood.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:claro-listo",
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "g:estar-participle",
       "g:gender-articles",
-      "g:ser-identity",
+      "l:estar",
+      "l:hacer",
       "l:madera",
       "l:mesa",
-      "l:ser",
+      "l:pieza",
       "p:estar-hecho-de",
-      "p:ser-de-material"
+      "p:fabricado-con-contener"
     ],
     "targets": [
       "l:madera",
@@ -12399,22 +12450,28 @@
   },
   {
     "id": "u33-0486",
-    "es": "La casa es de ladrillo y madera.",
-    "en": "The house is made of brick and wood.",
+    "es": "La casa es de ladrillo y tiene más de cien años.",
+    "en": "The house is made of brick and is over a hundred years old.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
+      "g:comparatives-advanced",
       "g:gender-articles",
       "g:ser-identity",
+      "g:stem-boot",
+      "l:año",
       "l:casa",
       "l:ladrillo",
-      "l:madera",
       "l:ser",
+      "l:tener",
       "p:estar-hecho-de",
-      "p:ser-de-material"
+      "p:mas-de-number",
+      "p:numbers-un-una",
+      "p:ser-de-material",
+      "p:tener-anos"
     ],
     "targets": [
-      "l:madera",
       "p:estar-hecho-de"
     ],
     "kind": "statement",
@@ -12424,21 +12481,23 @@
   },
   {
     "id": "u33-0487",
-    "es": "El piso es de madera vieja.",
-    "en": "The floor is made of old wood.",
+    "es": "El piso es de madera y suena cuando caminas.",
+    "en": "The floor is made of wood and creaks when you walk.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:gender-articles",
+      "g:present-ar",
       "g:ser-identity",
+      "g:stem-boot",
+      "l:caminar",
       "l:madera",
       "l:piso",
       "l:ser",
-      "l:viejo",
+      "l:sonar",
+      "p:cuando-basic",
       "p:estar-hecho-de",
-      "p:ser-de-material",
-      "p:viejo-antiguo-mayor"
+      "p:ser-de-material"
     ],
     "targets": [
       "l:madera",
@@ -12479,7 +12538,7 @@
   {
     "id": "u33-0489",
     "es": "Mi mesa es de cristal, ten cuidado.",
-    "en": "My table is made of glass, be careful.",
+    "en": "My table is made of glass, be careful. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12521,12 +12580,14 @@
   },
   {
     "id": "u33-0491",
-    "es": "Es de madera y papel.",
-    "en": "It's made of wood and paper.",
+    "es": "La lámpara es de madera y papel.",
+    "en": "The lamp is made of wood and paper.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:ser-identity",
+      "l:lámpara",
       "l:madera",
       "l:papel",
       "l:ser",
@@ -12590,23 +12651,21 @@
   },
   {
     "id": "u33-0494",
-    "es": "La hoja de la mesa es de madera.",
-    "en": "The tabletop is made of wood.",
+    "es": "El cuaderno de Rosa es de cuero por fuera.",
+    "en": "Rosa's notebook is made of leather on the outside.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:por-para-1",
       "g:ser-identity",
-      "l:hoja",
-      "l:madera",
-      "l:mesa",
+      "l:cuaderno",
+      "l:cuero",
       "l:ser",
       "p:estar-hecho-de",
       "p:ser-de-material"
     ],
     "targets": [
-      "l:hoja",
-      "l:madera",
       "p:estar-hecho-de"
     ],
     "kind": "statement",
@@ -12688,22 +12747,22 @@
   },
   {
     "id": "u33-0498",
-    "es": "Tengo una herramienta de madera y plástico.",
-    "en": "I have a tool made of wood and plastic.",
+    "es": "Hernando guarda una herramienta para cada problema.",
+    "en": "Hernando keeps a tool for every problem.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tengo",
+      "g:cada-cualquier",
       "g:gender-articles",
-      "g:yo-irregular",
+      "g:present-ar",
+      "l:guardar",
       "l:herramienta",
-      "l:madera",
-      "l:plástico",
-      "l:tener"
+      "l:problema",
+      "p:para-inf"
     ],
     "targets": [
-      "l:herramienta",
-      "l:madera"
+      "g:cada-cualquier",
+      "l:herramienta"
     ],
     "kind": "statement",
     "unit": "u33",
@@ -12712,23 +12771,23 @@
   },
   {
     "id": "u33-0499",
-    "es": "La herramienta es de madera y cuero.",
-    "en": "The tool is made of wood and leather.",
+    "es": "Esta herramienta es de metal y pesa mucho.",
+    "en": "This tool is made of metal and weighs a lot.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:ser-identity",
-      "l:cuero",
       "l:herramienta",
-      "l:madera",
+      "l:metal",
+      "l:peso",
       "l:ser",
+      "p:demonstratives-basic",
       "p:estar-hecho-de",
+      "p:quantifiers-basic",
       "p:ser-de-material"
     ],
     "targets": [
       "l:herramienta",
-      "l:madera",
       "p:estar-hecho-de"
     ],
     "kind": "statement",
@@ -13145,17 +13204,18 @@
   },
   {
     "id": "u33-0516",
-    "es": "El café es bueno para despertar.",
-    "en": "Coffee is good for waking up.",
+    "es": "El tinto es bueno para despertarse.",
+    "en": "Black coffee is good for waking up.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:reflexive-routine",
       "g:ser-identity",
       "l:bueno",
-      "l:café",
       "l:despertarse",
       "l:ser",
+      "l:tinto",
       "p:para-inf",
       "p:para-inf-purpose",
       "p:ser-bueno-para"
@@ -13434,23 +13494,24 @@
   },
   {
     "id": "u33-0526",
-    "es": "¿Conoces a alguien que sea bueno para los números?",
-    "en": "Do you know anyone who's good with numbers?",
+    "es": "¿Conoces a alguien que sea bueno para arreglar computadoras?",
+    "en": "Do you know anyone who's good at fixing computers? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:present-er-ir",
       "g:relative-que",
       "g:ser-identity",
       "g:subj-irregulars",
       "g:subj-relative",
+      "l:arreglar",
       "l:bueno",
+      "l:computadora",
       "l:conocer",
-      "l:número",
       "l:ser",
       "p:indefinites-basic",
       "p:para-inf",
+      "p:para-inf-purpose",
       "p:personal-a",
       "p:saber-conocer",
       "p:ser-bueno-para"
@@ -13466,13 +13527,12 @@
   },
   {
     "id": "u33-0527",
-    "es": "Cualquier persona que sea buena para el tinto puede trabajar aquí.",
-    "en": "Anyone who's good at coffee can work here.",
+    "es": "Cualquier persona que sea buena para atender clientes puede trabajar aquí.",
+    "en": "Anyone who's good with customers can work here.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
-      "g:gender-articles",
       "g:relative-que",
       "g:ser-identity",
       "g:stem-boot",
@@ -13480,14 +13540,16 @@
       "g:subj-relative",
       "g:verb-infinitive",
       "l:aquí",
+      "l:atender",
       "l:buena",
+      "l:cliente",
       "l:persona",
       "l:poder",
       "l:ser",
-      "l:tinto",
       "l:trabajar",
       "p:aqui-ahi-alla",
       "p:para-inf",
+      "p:para-inf-purpose",
       "p:ser-bueno-para"
     ],
     "targets": [
@@ -13527,23 +13589,22 @@
   },
   {
     "id": "u33-0529",
-    "es": "Cada cual es bueno para algo distinto.",
-    "en": "Each person is good at something different.",
+    "es": "En el café, cada uno pide lo que quiere.",
+    "en": "In the café, everyone orders what they want.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
-      "g:ser-identity",
-      "l:bueno",
-      "l:distinto",
-      "l:ser",
-      "p:indefinites-basic",
-      "p:para-inf",
-      "p:ser-bueno-para"
+      "g:gender-articles",
+      "g:relatives-donde-lo-que",
+      "g:stem-boot",
+      "g:stem-e-i",
+      "l:café",
+      "l:pedir",
+      "l:querer"
     ],
     "targets": [
-      "g:cada-cualquier",
-      "p:ser-bueno-para"
+      "g:cada-cualquier"
     ],
     "kind": "statement",
     "unit": "u33",
@@ -13818,16 +13879,17 @@
   },
   {
     "id": "u33-0542",
-    "es": "Depende del precio y de la ubicación.",
-    "en": "It depends on the price and the location.",
+    "es": "Para un café, todo depende de la ubicación.",
+    "en": "For a café, everything depends on the location.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:depende",
       "g:gender-articles",
+      "l:café",
       "l:depender",
-      "l:precio",
-      "l:ubicación"
+      "l:ubicación",
+      "p:para-inf"
     ],
     "targets": [
       "l:ubicación"
@@ -13857,16 +13919,20 @@
   },
   {
     "id": "u33-0544",
-    "es": "Depende del fiador y del contrato.",
-    "en": "It depends on the guarantor and the contract.",
+    "es": "Nuestro futuro depende de un fiador que no tenemos.",
+    "en": "Our future depends on a guarantor we don't have.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:depende",
+      "c:tienes",
       "g:gender-articles",
-      "l:contrato",
+      "g:possessives",
+      "g:relative-que",
       "l:depender",
-      "l:fiador"
+      "l:fiador",
+      "l:futuro",
+      "l:tener"
     ],
     "targets": [
       "l:fiador"
@@ -13944,16 +14010,19 @@
   },
   {
     "id": "u33-0548",
-    "es": "Depende del día y de la hora.",
-    "en": "It depends on the day and the time.",
+    "es": "¿A qué hora abren?\nDepende del día.",
+    "en": "What time do you open?\nIt depends on the day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:a-que-hora",
       "c:depende",
       "g:gender-articles",
+      "l:abrir",
       "l:depender",
       "l:día",
-      "l:hora"
+      "l:hora",
+      "l:qué"
     ],
     "targets": [],
     "kind": "statement",
@@ -14115,14 +14184,17 @@
   },
   {
     "id": "u33-0556",
-    "es": "Tomás depende de Vale para cocinar.",
-    "en": "Tomás depends on Vale for cooking.",
+    "es": "Tomás ya no depende de nadie para hablar español.",
+    "en": "Tomás no longer depends on anyone to speak Spanish.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:depende",
-      "l:cocinar",
+      "c:ya-no",
+      "g:negation-words",
       "l:depender",
+      "l:español",
+      "l:hablar",
       "p:para-inf",
       "p:para-inf-purpose"
     ],
@@ -14573,17 +14645,17 @@
   },
   {
     "id": "u33-0576",
-    "es": "Prefiero pagar por adelantado.",
-    "en": "I prefer to pay in advance.",
+    "es": "¿Hay que pagar por adelantado?",
+    "en": "Do you have to pay in advance?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:stem-boot",
+      "c:hay",
+      "c:hay-que",
+      "g:verb-infinitive",
       "l:adelantar",
       "l:pagar",
-      "l:preferir",
-      "p:costar-pagar",
-      "p:prefieres-x-o-y"
+      "p:costar-pagar"
     ],
     "targets": [],
     "kind": "statement",
@@ -14742,8 +14814,8 @@
   },
   {
     "id": "u33-0583",
-    "es": "Vale adelantó la entrega del pan.",
-    "en": "Vale brought the bread delivery forward.",
+    "es": "La tienda adelantó la entrega del horno para el lunes.",
+    "en": "The shop brought the oven delivery forward to Monday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14751,8 +14823,12 @@
       "g:preterite-ar",
       "l:adelantar",
       "l:entrega",
-      "l:pan",
-      "p:adelantar-aplazar"
+      "l:horno",
+      "l:lunes",
+      "l:tienda",
+      "p:adelantar-aplazar",
+      "p:days-el-lunes",
+      "p:para-inf"
     ],
     "targets": [
       "p:adelantar-aplazar"
@@ -14764,21 +14840,21 @@
   },
   {
     "id": "u33-0584",
-    "es": "Adelantamos la fecha de la reunión.",
-    "en": "We moved the date of the meeting earlier.",
+    "es": "Adelantamos la fiesta de cumpleaños de Hernando para el sábado.",
+    "en": "We brought Hernando's birthday party forward to Saturday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
       "l:adelantar",
-      "l:fecha",
-      "l:reunión",
-      "p:adelantar-aplazar"
+      "l:cumpleaños",
+      "l:fiesta",
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:para-inf"
     ],
-    "targets": [
-      "p:adelantar-aplazar"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u33",
     "theme": "what people are good at, and what depends",
@@ -14786,17 +14862,18 @@
   },
   {
     "id": "u33-0585",
-    "es": "Corremos la fecha para junio.",
-    "en": "We're moving the date to June.",
+    "es": "Aplazamos la visita para junio.",
+    "en": "We're postponing the visit until June.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-er-ir",
-      "l:correr",
-      "l:fecha",
+      "g:present-ar",
+      "l:aplazar",
       "l:junio",
+      "l:visita",
       "p:adelantar-aplazar",
+      "p:aplazar-posponer",
       "p:para-inf"
     ],
     "targets": [
@@ -14880,16 +14957,18 @@
   },
   {
     "id": "u33-0589",
-    "es": "Mariana corrió la entrevista para la tarde.",
-    "en": "Mariana moved the interview to the afternoon.",
+    "es": "Mariana pospuso la entrevista para la tarde.",
+    "en": "Mariana postponed the interview until the afternoon.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-er-ir",
-      "l:correr",
+      "g:preterite-irregular-strong",
       "l:entrevista",
+      "l:posponer",
       "l:tarde",
+      "p:adelantar-aplazar",
+      "p:aplazar-posponer",
       "p:para-inf"
     ],
     "targets": [],
@@ -15029,19 +15108,20 @@
   },
   {
     "id": "u33-0595",
-    "es": "Vamos a correr la fecha de la entrega.",
-    "en": "We're going to move the delivery date.",
+    "es": "Tuvimos que aplazar la reunión con la abogada.",
+    "en": "We had to postpone the meeting with the lawyer.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:vamos-a",
       "g:gender-articles",
-      "g:ir-a-plans",
-      "l:correr",
-      "l:entrega",
-      "l:fecha",
-      "l:ir",
-      "p:adelantar-aplazar"
+      "g:preterite-irregular-strong",
+      "g:verb-infinitive",
+      "l:abogado",
+      "l:aplazar",
+      "l:reunión",
+      "l:tener",
+      "p:adelantar-aplazar",
+      "p:aplazar-posponer"
     ],
     "targets": [
       "p:adelantar-aplazar"
@@ -15350,8 +15430,8 @@
   },
   {
     "id": "u33-0609",
-    "es": "Salimos antes de que cierren el banco para llegar a tiempo.",
-    "en": "We leave before the bank closes so as to arrive on time.",
+    "es": "Salimos temprano para llegar antes de que cierren el banco.",
+    "en": "We leave early to get there before the bank closes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15364,14 +15444,12 @@
       "l:cerrar",
       "l:llegar",
       "l:salir",
-      "l:tiempo",
-      "p:llegar-a-tiempo",
+      "l:temprano",
       "p:para-inf",
       "p:para-inf-purpose"
     ],
     "targets": [
-      "g:subj-purpose-full",
-      "p:llegar-a-tiempo"
+      "g:subj-purpose-full"
     ],
     "kind": "statement",
     "unit": "u33",
@@ -15485,18 +15563,18 @@
   },
   {
     "id": "u33-0614",
-    "es": "Nunca salgo con retraso cuando tengo una cita.",
-    "en": "I never leave late when I have an appointment.",
+    "es": "Cuando tengo una cita, nunca llego tarde.",
+    "en": "When I have an appointment, I'm never late.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hago-salgo-vengo",
       "c:tengo",
       "g:gender-articles",
+      "g:present-ar",
       "g:yo-irregular",
       "l:cita",
-      "l:retraso",
-      "l:salir",
+      "l:llegar",
+      "l:tarde",
       "l:tener",
       "p:cuando-basic",
       "p:frequency-scale",
@@ -15537,15 +15615,15 @@
   },
   {
     "id": "u33-0616",
-    "es": "Mi tren llegó a tiempo, pero yo no.",
-    "en": "My train arrived on time, but I didn't.",
+    "es": "Mi bus llegó a tiempo, pero yo no.",
+    "en": "My bus arrived on time, but I didn't.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:preterite-ar",
+      "l:bus",
       "l:llegar",
       "l:tiempo",
-      "l:tren",
       "p:llegar-a-tiempo",
       "p:possessives-basic"
     ],
@@ -15678,7 +15756,7 @@
   {
     "id": "u33-0622",
     "es": "Un taxista puntual vale oro.",
-    "en": "A punctual taxi driver is worth gold.",
+    "en": "A punctual taxi driver is worth his weight in gold.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15697,8 +15775,8 @@
   },
   {
     "id": "u33-0623",
-    "es": "El tren sale con retraso otra vez.",
-    "en": "The train is leaving late again.",
+    "es": "El vuelo sale con retraso otra vez.",
+    "en": "The flight is leaving late again.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15706,8 +15784,8 @@
       "g:present-er-ir",
       "l:retraso",
       "l:salir",
-      "l:tren",
       "l:vez",
+      "l:vuelo",
       "p:llegar-a-tiempo",
       "p:otro-no-article"
     ],
@@ -16112,8 +16190,8 @@
   },
   {
     "id": "u33-0641",
-    "es": "Vale consiguió un local con cocina.",
-    "en": "Vale got premises with a kitchen.",
+    "es": "Vale casi consiguió un local con cocina.",
+    "en": "Vale almost got premises with a kitchen.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16472,13 +16550,13 @@
   },
   {
     "id": "u33-0656",
-    "es": "Mariana logró que la gente comparta su mensaje.",
-    "en": "Mariana got people to share her message.",
+    "es": "Mariana siempre logra que la gente comparta sus mensajes.",
+    "en": "Mariana always gets people to share her posts.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ar",
+      "g:present-ar",
       "g:subj-influence",
       "g:subj-wanting",
       "g:that-clauses",
@@ -16486,6 +16564,8 @@
       "l:gente",
       "l:lograr",
       "l:mensaje",
+      "l:siempre",
+      "p:frequency-scale",
       "p:intentar-conseguir",
       "p:la-gente-singular",
       "p:possessives-basic"
@@ -16500,18 +16580,20 @@
   },
   {
     "id": "u33-0657",
-    "es": "Logramos que Hernando hable con la abogada.",
-    "en": "We got Hernando to speak to the lawyer.",
+    "es": "Vamos a lograr que Hernando hable con la abogada.",
+    "en": "We're going to get Hernando to talk to the lawyer.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:vamos-a",
       "g:gender-articles",
-      "g:present-ar",
+      "g:ir-a-plans",
       "g:subj-influence",
       "g:subj-wanting",
       "g:that-clauses",
       "l:abogado",
       "l:hablar",
+      "l:ir",
       "l:lograr",
       "p:intentar-conseguir"
     ],
@@ -16525,20 +16607,17 @@
   },
   {
     "id": "u33-0658",
-    "es": "Por fin conseguimos que el dueño responda.",
-    "en": "We finally got the owner to answer.",
+    "es": "Por fin conseguimos el número del dueño.",
+    "en": "We finally got the owner's number.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
-      "g:subj-influence",
-      "g:subj-wanting",
-      "g:that-clauses",
       "l:conseguir",
       "l:dueño",
       "l:fin",
-      "l:responder",
+      "l:número",
       "p:intentar-conseguir"
     ],
     "targets": [
@@ -16573,18 +16652,15 @@
   },
   {
     "id": "u33-0660",
-    "es": "Después de dos horas, logramos que el horno funcione.",
-    "en": "After two hours, we got the oven working.",
+    "es": "Después de dos horas, logramos arreglar el horno.",
+    "en": "After two hours, we managed to fix the oven.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "g:subj-influence",
-      "g:subj-wanting",
-      "g:that-clauses",
+      "l:arreglar",
       "l:después",
-      "l:funcionar",
       "l:hora",
       "l:horno",
       "l:lograr",
@@ -16643,18 +16719,17 @@
   },
   {
     "id": "u33-0663",
-    "es": "Tú intenta, que yo lo consigo.",
-    "en": "You try, and I'll get it.",
+    "es": "Tú intenta, y si no puedes, lo intento yo.",
+    "en": "You try, and if you can't, I'll try. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
-      "g:prep-pronouns",
       "g:present-ar",
-      "g:that-clauses",
-      "g:yo-irregular",
-      "l:conseguir",
-      "l:intentar"
+      "g:si-present",
+      "g:stem-boot",
+      "l:intentar",
+      "l:poder"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -16826,18 +16901,23 @@
   },
   {
     "id": "u33-0670",
-    "es": "Díselo a la abogada y verás.",
-    "en": "Tell the lawyer and you'll see.",
+    "es": "Díselo a la abogada y verás que tiene solución.",
+    "en": "Tell the lawyer and you'll see there's a way out. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:commands-tu",
       "g:commands-with-pronouns",
       "g:double-pronouns",
       "g:future-promises",
       "g:gender-articles",
+      "g:stem-boot",
+      "g:that-clauses",
       "l:abogado",
       "l:decir",
+      "l:solución",
+      "l:tener",
       "l:ver",
       "p:imperativo-y-veras"
     ],
@@ -17128,21 +17208,26 @@
   },
   {
     "id": "u33-0681",
-    "es": "Dáselo a Hernando y verás que no habla.",
-    "en": "Give it to Hernando and you'll see he stops talking.",
+    "es": "Pregúntale al Chato y verás que sabe algo.",
+    "en": "Ask el Chato and you'll see he knows something. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
       "g:commands-with-pronouns",
-      "g:double-pronouns",
       "g:future-promises",
-      "g:present-ar",
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:present-er-ir",
       "g:that-clauses",
-      "l:dar",
-      "l:hablar",
+      "l:preguntar",
+      "l:saber",
       "l:ver",
-      "p:imperativo-y-veras"
+      "p:imperativo-y-veras",
+      "p:indefinites-basic",
+      "p:preguntar-pedir",
+      "p:saber-conocer"
     ],
     "targets": [
       "p:imperativo-y-veras"
@@ -17978,7 +18063,7 @@
   {
     "id": "u33-0716",
     "es": "Cada socio pone algo de plata.",
-    "en": "Each member puts in some money.",
+    "en": "Each partner puts in some money.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18000,7 +18085,7 @@
   {
     "id": "u33-0717",
     "es": "Cada pan que hace Vale es una pequeña obra de arte.",
-    "en": "Every bread Vale makes is a small work of art.",
+    "en": "Every loaf Vale makes is a small work of art.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18321,7 +18406,7 @@
   {
     "id": "u33-0730",
     "es": "Cualquier día puedo ir con usted al local.",
-    "en": "Any day I can go with you to the shop.",
+    "en": "I can go with you to the shop any day. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18348,7 +18433,7 @@
   {
     "id": "u33-0731",
     "es": "Cualquier cosa sirve para empezar.",
-    "en": "Anything is good for starting.",
+    "en": "Anything will do to start with.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18535,17 +18620,20 @@
   },
   {
     "id": "u33-0739",
-    "es": "Cualquiera conoce el café de Rosa.",
-    "en": "Anyone knows Rosa's café.",
+    "es": "Pregúntele a cualquiera por el café de Rosa.",
+    "en": "Ask anyone about Rosa's café. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
+      "g:commands-usted",
+      "g:commands-with-pronouns",
       "g:gender-articles",
-      "g:present-er-ir",
+      "g:indirect-objects",
+      "g:por-para-1",
       "l:café",
-      "l:conocer",
-      "p:saber-conocer"
+      "l:preguntar",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "g:cada-cualquier"
@@ -18580,17 +18668,23 @@
   },
   {
     "id": "u33-0741",
-    "es": "Hernando conoce cualquier calle de la ciudad.",
-    "en": "Hernando knows every street in the city.",
+    "es": "Dígale a Hernando cualquier calle de la ciudad y él sabe llegar.",
+    "en": "Name any street in the city to Hernando and he knows how to get there. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
+      "g:commands-usted",
+      "g:commands-with-pronouns",
       "g:gender-articles",
+      "g:indirect-objects",
+      "g:le-doubling",
       "g:present-er-ir",
       "l:calle",
       "l:ciudad",
-      "l:conocer",
+      "l:decir",
+      "l:llegar",
+      "l:saber",
       "p:saber-conocer"
     ],
     "targets": [
@@ -18604,7 +18698,7 @@
   {
     "id": "u33-0742",
     "es": "Vale hace cualquier pan, hasta el más difícil.",
-    "en": "Vale makes any bread, even the hardest.",
+    "en": "Vale can make any bread, even the hardest.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18758,16 +18852,19 @@
   },
   {
     "id": "u33-0749",
-    "es": "A cualquier hora, usted me llama.",
-    "en": "At any time, you call me. (polite)",
+    "es": "En este barrio hay ruido a cualquier hora.",
+    "en": "In this neighbourhood there's noise at any time of day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
       "g:cada-cualquier",
-      "g:present-ar",
+      "g:hay-vs-esta",
+      "l:barrio",
       "l:hora",
-      "l:llamar",
-      "p:me-te-nos-objects"
+      "l:ruido",
+      "p:demonstratives-basic",
+      "p:lugar-tiene"
     ],
     "targets": [
       "g:cada-cualquier"
@@ -18851,24 +18948,25 @@
   },
   {
     "id": "u33-0753",
-    "es": "Mañana vamos a la inmobiliaria con cualquier tiempo.",
-    "en": "Tomorrow we go to the agency whatever the weather.",
+    "es": "Vamos a ver cualquier local que tenga cocina.",
+    "en": "We'll go and see any place that has a kitchen.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:a-ver",
+      "c:aqui-tiene",
       "c:vamos-a",
       "g:cada-cualquier",
-      "g:gender-articles",
       "g:ir-a-plans",
-      "l:inmobiliaria",
+      "g:that-clauses",
+      "l:cocina",
       "l:ir",
-      "l:mañana",
-      "l:tiempo",
-      "p:ir-a-venir-de-place"
+      "l:local",
+      "l:tener",
+      "l:ver"
     ],
     "targets": [
-      "g:cada-cualquier",
-      "l:inmobiliaria"
+      "g:cada-cualquier"
     ],
     "kind": "statement",
     "unit": "u33",
@@ -18903,29 +19001,26 @@
   },
   {
     "id": "u33-0755",
-    "es": "Cualquier persona que busque un local puede apuntarse aquí.",
-    "en": "Anyone looking for premises can sign up here.",
+    "es": "Esta lista es para cualquiera que busque local.",
+    "en": "This list is for anyone who's looking for premises.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:cada-cualquier",
-      "g:gender-articles",
-      "g:reflexive-routine",
-      "g:relative-que",
-      "g:subj-relative",
+      "g:ser-identity",
+      "g:subj-value",
       "g:subj-wanting",
-      "l:apuntarse",
-      "l:aquí",
+      "g:that-clauses",
       "l:buscar",
+      "l:listo",
       "l:local",
-      "l:persona",
-      "l:puede",
-      "p:aqui-ahi-alla"
+      "l:ser",
+      "p:demonstratives-basic",
+      "p:para-inf"
     ],
     "targets": [
       "g:cada-cualquier",
-      "g:subj-relative",
-      "l:apuntarse",
       "l:local"
     ],
     "kind": "statement",
@@ -18966,8 +19061,8 @@
   },
   {
     "id": "u33-0757",
-    "es": "Cualquier persona que quiera ayudar puede entrar.",
-    "en": "Anyone who wants to help can come in.",
+    "es": "Aquí puede entrar cualquier persona que quiera ayudar.",
+    "en": "Anyone who wants to help can come in here.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18977,11 +19072,13 @@
       "g:subj-relative",
       "g:subj-wanting",
       "g:verb-infinitive",
+      "l:aquí",
       "l:ayudar",
       "l:entrar",
       "l:persona",
       "l:poder",
-      "l:querer"
+      "l:querer",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "g:cada-cualquier",
@@ -19081,7 +19178,7 @@
   },
   {
     "id": "u33-0761",
-    "es": "Vale prueba cualquier receta que encuentra.",
+    "es": "Vale prueba cualquier receta que encuentre.",
     "en": "Vale tries any recipe she finds.",
     "accept": [],
     "acceptEn": [],
@@ -19089,6 +19186,7 @@
       "g:cada-cualquier",
       "g:present-ar",
       "g:stem-boot",
+      "g:subj-wanting",
       "g:that-clauses",
       "l:encontrar",
       "l:probar",
@@ -19350,17 +19448,19 @@
   },
   {
     "id": "u33-0772",
-    "es": "No firmamos cada contrato que llega.",
-    "en": "We don't sign every contract that arrives.",
+    "es": "Tomás lee cada contrato dos veces antes de firmar.",
+    "en": "Tomás reads every contract twice before signing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
-      "g:present-ar",
-      "g:relative-que",
+      "g:prep-infinitive",
+      "g:present-er-ir",
+      "l:antes",
       "l:contrato",
       "l:firmar",
-      "l:llegar"
+      "l:leer",
+      "l:vez"
     ],
     "targets": [
       "g:cada-cualquier"
@@ -19372,8 +19472,8 @@
   },
   {
     "id": "u33-0773",
-    "es": "No lees cada mensaje que te mandan.",
-    "en": "You don't read every message you're sent.",
+    "es": "¿Lees cada mensaje que te mandan?",
+    "en": "Do you read every message people send you? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19397,7 +19497,7 @@
   {
     "id": "u33-0774",
     "es": "Cada cosa en su lugar.",
-    "en": "A place for everything.",
+    "en": "Everything in its place.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19440,19 +19540,17 @@
   },
   {
     "id": "u33-0776",
-    "es": "Un delito es un delito, cada vez que ocurre.",
-    "en": "A crime is a crime, every time it happens.",
+    "es": "Mariana anota cada delito de Altamira en un cuaderno.",
+    "en": "Mariana writes down every one of Altamira's crimes in a notebook.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
       "g:gender-articles",
-      "g:present-er-ir",
-      "g:ser-identity",
-      "l:delito",
-      "l:ocurrir",
-      "l:ser",
-      "l:vez"
+      "g:present-ar",
+      "l:anotar",
+      "l:cuaderno",
+      "l:delito"
     ],
     "targets": [
       "g:cada-cualquier",
@@ -19563,14 +19661,14 @@
   },
   {
     "id": "u33-0781",
-    "es": "Cualquier ayuda útil nos sirve.",
-    "en": "Any useful help is good for us.",
+    "es": "Cualquier dato útil nos sirve.",
+    "en": "Any useful piece of information helps us.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
       "g:stem-e-i",
-      "l:ayuda",
+      "l:dato",
       "l:servir",
       "l:útil",
       "p:me-te-nos-objects"
@@ -19612,23 +19710,20 @@
   },
   {
     "id": "u33-0783",
-    "es": "Una llave sirve para abrir cualquier puerta de esta casa.",
-    "en": "One key opens any door in this house.",
+    "es": "Una sola llave abre cualquier puerta de esta casa.",
+    "en": "One single key opens any door in this house.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:cada-cualquier",
       "g:gender-articles",
-      "g:stem-e-i",
+      "g:present-er-ir",
       "l:abrir",
       "l:casa",
       "l:llave",
       "l:puerta",
-      "l:servir",
-      "p:demonstratives-basic",
-      "p:para-inf",
-      "p:para-inf-purpose",
-      "p:servir-para"
+      "p:demonstratives-basic"
     ],
     "targets": [
       "g:cada-cualquier"
@@ -19709,17 +19804,19 @@
   },
   {
     "id": "u33-0787",
-    "es": "Salió sin que nadie lo note.",
-    "en": "He left without anyone noticing.",
+    "es": "Simón prueba el pan sin que nadie lo note.",
+    "en": "Simón tastes the bread without anyone noticing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
-      "g:preterite-er-ir",
+      "g:gender-articles",
+      "g:stem-boot",
       "g:subj-purpose-full",
       "g:subj-wanting",
       "l:notar",
-      "l:salir"
+      "l:pan",
+      "l:probar"
     ],
     "targets": [
       "g:subj-purpose-full"
@@ -19803,16 +19900,18 @@
   },
   {
     "id": "u33-0791",
-    "es": "No salgas sin que te vea.",
-    "en": "Don't go out without me seeing you. (to a friend)",
+    "es": "No te vayas sin que te pague el tinto.",
+    "en": "Don't leave without me paying for your black coffee. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:negative-commands",
       "g:subj-purpose-full",
       "g:subj-wanting",
-      "l:salir",
-      "l:ver",
+      "l:irse",
+      "l:pagar",
+      "l:tinto",
       "p:me-te-nos-objects"
     ],
     "targets": [
@@ -19825,16 +19924,18 @@
   },
   {
     "id": "u33-0792",
-    "es": "No empezamos sin que lleguen todos.",
-    "en": "We don't start without everyone arriving.",
+    "es": "No empezamos la reunión sin que llegue Hernando.",
+    "en": "We don't start the meeting without Hernando arriving.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:present-ar",
       "g:subj-purpose-full",
       "g:subj-wanting",
       "l:empezar",
-      "l:llegar"
+      "l:llegar",
+      "l:reunión"
     ],
     "targets": [
       "g:subj-purpose-full"
@@ -20147,17 +20248,18 @@
   },
   {
     "id": "u33-0805",
-    "es": "Come algo antes de que te vayas.",
-    "en": "Eat something before you go. (to a friend)",
+    "es": "Come algo antes de que se enfríe.",
+    "en": "Eat something before it gets cold. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-er-ir",
-      "g:subj-irregulars",
+      "g:reflexive-routine",
       "g:subj-purpose-full",
+      "g:subj-wanting",
       "l:antes",
       "l:comer",
-      "l:irse",
+      "l:enfriarse",
       "p:indefinites-basic"
     ],
     "targets": [
@@ -20875,7 +20977,7 @@
   {
     "id": "u33-0833",
     "es": "Incluimos un tinto gratis con cada pan.",
-    "en": "We include a free black coffee with every bread.",
+    "en": "We include a free black coffee with every bread roll.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21534,20 +21636,27 @@
   },
   {
     "id": "u33-0860",
-    "es": "La casa de Joaquín está ubicada en el puerto.",
-    "en": "Joaquín's house is located at the port.",
+    "es": "El hotel en el que vivía Joaquín estaba ubicado cerca del puerto.",
+    "en": "The hotel Joaquín lived in was located near the port.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:estar-location-states",
       "g:gender-articles",
-      "l:casa",
+      "g:imperfect-habitual",
+      "g:imperfect-states",
+      "g:relatives-prepositions",
+      "l:cerca",
       "l:estar",
+      "l:hotel",
       "l:puerto",
-      "l:ubicado"
+      "l:ubicado",
+      "l:vivir",
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
+      "g:relatives-prepositions",
       "l:ubicado"
     ],
     "kind": "statement",
@@ -21635,17 +21744,20 @@
   },
   {
     "id": "u33-0864",
-    "es": "Cambiar de ubicación es la última idea.",
-    "en": "Changing location is the last idea.",
+    "es": "Cambiar de ubicación es la última idea que tenemos.",
+    "en": "Changing location is the last idea we have.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:gender-articles",
+      "g:relative-que",
       "g:ser-identity",
       "g:verb-infinitive",
       "l:cambiar",
       "l:idea",
       "l:ser",
+      "l:tener",
       "l:ubicación",
       "p:cambiar-de-por"
     ],
@@ -21680,7 +21792,7 @@
   },
   {
     "id": "u33-0866",
-    "es": "En la escuela, las matemáticas eran lo peor.",
+    "es": "En el colegio, las matemáticas eran lo peor.",
     "en": "At school, maths was the worst.",
     "accept": [],
     "acceptEn": [],
@@ -21690,7 +21802,7 @@
       "g:lo-adjective",
       "g:ser-identity",
       "g:superlatives",
-      "l:escuela",
+      "l:colegio",
       "l:matemáticas",
       "l:peor",
       "l:ser"
@@ -21781,8 +21893,8 @@
   },
   {
     "id": "u33-0870",
-    "es": "Con matemáticas fáciles, el arriendo es demasiado alto.",
-    "en": "With easy maths, the rent is too high.",
+    "es": "Las matemáticas son fáciles: el arriendo es demasiado alto.",
+    "en": "The maths is easy: the rent is too high.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22649,7 +22761,7 @@
   {
     "id": "u33-0906",
     "es": "Falta voluntad para solucionar el problema.",
-    "en": "There's no will to solve the problem.",
+    "en": "There isn't enough will to solve the problem.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22844,19 +22956,18 @@
   },
   {
     "id": "u33-0914",
-    "es": "Cuando la mueves, la mesa rueda hasta la puerta.",
-    "en": "When you move it, the table rolls to the door.",
+    "es": "Una moneda rueda por el piso hasta la puerta.",
+    "en": "A coin rolls across the floor to the door.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
       "g:gender-articles",
+      "g:por-para-1",
       "g:stem-boot",
-      "l:mesa",
-      "l:mover",
+      "l:moneda",
+      "l:piso",
       "l:puerta",
-      "l:rodar",
-      "p:cuando-basic"
+      "l:rodar"
     ],
     "targets": [
       "l:rodar"
@@ -22891,18 +23002,18 @@
   },
   {
     "id": "u33-0916",
-    "es": "No tenemos que matar a nadie en la película.",
-    "en": "We don't have to kill anyone in the film.",
+    "es": "En esa película matan a todo el mundo.",
+    "en": "In that film they kill everybody.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
+      "g:demonstratives",
       "g:gender-articles",
-      "g:negation-words",
-      "g:verb-infinitive",
+      "g:present-ar",
       "l:matar",
+      "l:mundo",
       "l:película",
-      "l:tener"
+      "p:todos-los-dias"
     ],
     "targets": [
       "l:matar"
@@ -23010,14 +23121,14 @@
   },
   {
     "id": "u33-0921",
-    "es": "El calor nos mata a todos.",
-    "en": "The heat is killing all of us.",
+    "es": "El frío de Bogotá me mata.",
+    "en": "The Bogotá cold is killing me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:calor",
+      "l:frío",
       "l:matar",
       "p:me-te-nos-objects"
     ],
@@ -23379,23 +23490,23 @@
   },
   {
     "id": "u33-0936",
-    "es": "El abogado dice que el delito no tiene dueño conocido.",
-    "en": "The lawyer says the crime has no known owner.",
+    "es": "El abogado dice que firmar por otra persona es un delito.",
+    "en": "The lawyer says signing for someone else is a crime.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
       "g:gender-articles",
-      "g:stem-boot",
+      "g:por-para-1",
+      "g:ser-identity",
       "g:stem-e-i",
       "g:that-clauses",
       "l:abogado",
-      "l:conocer",
       "l:decir",
       "l:delito",
-      "l:dueño",
-      "l:tener",
-      "p:saber-conocer"
+      "l:firmar",
+      "l:persona",
+      "l:ser",
+      "p:otro-no-article"
     ],
     "targets": [
       "l:delito"
@@ -23623,21 +23734,18 @@
   },
   {
     "id": "u33-0945",
-    "es": "Cada acusado tiene su turno para hablar.",
-    "en": "Each defendant has their turn to speak.",
+    "es": "El acusado mira a cada persona de la sala.",
+    "en": "The accused looks at each person in the room.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
+      "c:oye-mira",
       "g:cada-cualquier",
-      "g:stem-boot",
+      "g:gender-articles",
       "l:acusado",
-      "l:hablar",
-      "l:tener",
-      "l:turno",
-      "p:para-inf",
-      "p:para-inf-purpose",
-      "p:possessives-basic"
+      "l:mirar",
+      "l:persona",
+      "l:sala"
     ],
     "targets": [
       "g:cada-cualquier",
@@ -23767,19 +23875,17 @@
   },
   {
     "id": "u33-0951",
-    "es": "Tengo la lengua dormida del café caliente.",
-    "en": "My tongue is numb from the hot coffee.",
+    "es": "Me quemé la lengua con el café.",
+    "en": "I burned my tongue on the coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tengo",
       "g:gender-articles",
-      "g:yo-irregular",
+      "g:preterite-ar",
+      "g:reflexive-routine",
       "l:café",
-      "l:caliente",
-      "l:dormir",
       "l:lengua",
-      "l:tener"
+      "l:quemarse"
     ],
     "targets": [
       "l:lengua"
@@ -23837,24 +23943,23 @@
   },
   {
     "id": "u33-0954",
-    "es": "Busco a alguien que hable la lengua de la gente del puerto.",
-    "en": "I'm looking for someone who speaks the language of the port people.",
+    "es": "Busco un libro que esté escrito en mi lengua.",
+    "en": "I'm looking for a book that's written in my language.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:estar-location-states",
       "g:gender-articles",
       "g:present-ar",
       "g:relative-que",
       "g:subj-relative",
       "g:subj-wanting",
       "l:buscar",
-      "l:gente",
-      "l:hablar",
+      "l:escribir",
+      "l:estar",
       "l:lengua",
-      "l:puerto",
-      "p:indefinites-basic",
-      "p:la-gente-singular",
-      "p:personal-a"
+      "l:libro",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:subj-relative",
@@ -24043,16 +24148,17 @@
   },
   {
     "id": "u33-0962",
-    "es": "Alguien persigue a Mariana desde el mercado.",
-    "en": "Someone has been following Mariana since the market.",
+    "es": "Un carro blanco persigue a Hernando por la Séptima.",
+    "en": "A white car is following Hernando along Séptima.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:por-para-1",
       "g:stem-e-i",
-      "l:mercado",
-      "l:perseguir",
-      "p:indefinites-basic"
+      "l:blanco",
+      "l:carro",
+      "l:perseguir"
     ],
     "targets": [
       "l:perseguir"
@@ -24279,20 +24385,22 @@
   },
   {
     "id": "u33-0972",
-    "es": "Vale pone una alerta en el celular para que el horno no falle.",
-    "en": "Vale sets an alert on her phone so the oven doesn't fail.",
+    "es": "Vale pone una alerta en el celular para que el pan no se queme.",
+    "en": "Vale sets an alert on her phone so the bread doesn't burn.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-se",
       "g:gender-articles",
       "g:para-que",
       "g:present-er-ir",
+      "g:reflexive-routine",
       "g:subj-wanting",
       "l:alerta",
       "l:celular",
-      "l:fallar",
-      "l:horno",
-      "l:poner"
+      "l:pan",
+      "l:poner",
+      "l:quemarse"
     ],
     "targets": [
       "l:alerta"
@@ -24378,19 +24486,21 @@
   },
   {
     "id": "u33-0976",
-    "es": "Es el que está en la esquina.",
-    "en": "It's the one on the corner.",
+    "es": "El mío es el que está al fondo.",
+    "en": "Mine is the one at the back.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
       "g:gender-articles",
+      "g:possessives-stressed",
       "g:relatives-prepositions",
       "g:ser-identity",
-      "l:esquina",
       "l:estar",
+      "l:fondo",
       "l:ser",
-      "p:el-que-la-que"
+      "p:el-que-la-que",
+      "p:posicion-precisa"
     ],
     "targets": [
       "g:relatives-prepositions",
@@ -24608,19 +24718,23 @@
   },
   {
     "id": "u33-0984",
-    "es": "¿Cuál es el que prefieres?",
-    "en": "Which one is the one you prefer? (to a friend)",
+    "es": "¿Y tú cuál prefieres, el que vimos ayer o el que vimos hoy?",
+    "en": "And which one do you prefer, the one we saw yesterday or the one we saw today? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
+      "c:bien-y-tu",
       "g:gender-articles",
+      "g:preterite-er-ir",
       "g:questions",
       "g:relatives-prepositions",
-      "g:ser-identity",
       "g:stem-boot",
+      "l:ayer",
       "l:cuál",
+      "l:hoy",
       "l:preferir",
-      "l:ser",
+      "l:ver",
       "p:el-que-la-que",
       "p:prefieres-x-o-y"
     ],
@@ -24635,8 +24749,8 @@
   },
   {
     "id": "u33-0985",
-    "es": "¿Cuál?\nEl que tiene el techo rojo.",
-    "en": "Which one?\nThe one with the red roof.",
+    "es": "¿Cuál?\nEl que tiene el techo verde.",
+    "en": "Which one?\nThe one with the green roof.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24646,9 +24760,9 @@
       "g:relatives-prepositions",
       "g:stem-boot",
       "l:cuál",
-      "l:rojo",
       "l:techo",
       "l:tener",
+      "l:verde",
       "p:el-que-la-que"
     ],
     "targets": [
@@ -25422,21 +25536,23 @@
   },
   {
     "id": "u33-1015",
-    "es": "El tren está lleno, pero queda un puesto libre al fondo.",
-    "en": "The train is full, but there's one free seat at the back.",
+    "es": "La sala de espera está llena, pero queda un puesto libre al fondo.",
+    "en": "The waiting room is full, but there's one free seat at the back.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:estar-location-states",
       "g:gender-articles",
       "g:present-ar",
+      "l:espera",
       "l:estar",
       "l:fondo",
       "l:libre",
       "l:lleno",
       "l:puesto",
       "l:quedar",
-      "l:tren",
+      "l:sala",
       "p:lleno-libre",
       "p:posicion-precisa"
     ],
@@ -26128,20 +26244,22 @@
   },
   {
     "id": "u33-1042",
-    "es": "Ve a la plaza y verás el hotel de Altamira.",
-    "en": "Go to the square and you'll see Altamira's hotel.",
+    "es": "Súbete al techo y verás todo el barrio.",
+    "en": "Climb up on the roof and you'll see the whole neighbourhood. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
+      "g:commands-with-pronouns",
       "g:future-promises",
       "g:gender-articles",
-      "l:hotel",
-      "l:ir",
-      "l:plaza",
+      "g:reflexive-routine",
+      "l:barrio",
+      "l:subirse",
+      "l:techo",
       "l:ver",
       "p:imperativo-y-veras",
-      "p:ir-a-venir-de-place"
+      "p:subirse-bajarse"
     ],
     "targets": [
       "p:imperativo-y-veras"
@@ -26902,24 +27020,25 @@
   },
   {
     "id": "u33-1073",
-    "es": "Los dos locales dependen del mismo propietario.",
-    "en": "The two premises depend on the same owner.",
+    "es": "Los dos locales tienen el mismo propietario, y todo depende de él.",
+    "en": "The two places have the same owner, and everything depends on him.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:depende",
+      "c:tienes",
       "g:adjective-agreement",
       "g:gender-articles",
-      "g:present-er-ir",
+      "g:prep-pronouns",
+      "g:stem-boot",
       "l:depender",
       "l:local",
       "l:propietario",
-      "p:depende-de",
-      "p:depender-de"
+      "l:tener"
     ],
     "targets": [
       "l:local",
-      "l:propietario",
-      "p:depender-de"
+      "l:propietario"
     ],
     "kind": "statement",
     "unit": "u33",
@@ -26954,18 +27073,16 @@
   },
   {
     "id": "u33-1075",
-    "es": "Adelantamos la reunión para el miércoles.",
-    "en": "We brought the meeting forward to Wednesday.",
+    "es": "¿Adelantamos la cena para las siete?",
+    "en": "Shall we bring dinner forward to seven?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
       "l:adelantar",
-      "l:miércoles",
-      "l:reunión",
+      "l:cena",
       "p:adelantar-aplazar",
-      "p:days-el-lunes",
       "p:para-inf"
     ],
     "targets": [
@@ -27153,16 +27270,16 @@
   },
   {
     "id": "u33-1083",
-    "es": "Corrimos la reunión para el jueves.",
-    "en": "We moved the meeting to Thursday.",
+    "es": "Corrimos la clase de Tomás para el jueves.",
+    "en": "We moved Tomás's class to Thursday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-er-ir",
+      "l:clase",
       "l:correr",
       "l:jueves",
-      "l:reunión",
       "p:adelantar-aplazar",
       "p:days-el-lunes",
       "p:para-inf"
@@ -27446,7 +27563,7 @@
   {
     "id": "u33-1095",
     "es": "Faltan dos votos para ganar.",
-    "en": "Two votes are missing to win.",
+    "en": "We need two more votes to win.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27589,7 +27706,7 @@
   {
     "id": "u33-1101",
     "es": "Sobraron tres panes y Hernando se los llevó.",
-    "en": "Three loaves were left over and Hernando took them.",
+    "en": "Three rolls were left over and Hernando took them.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27684,13 +27801,14 @@
   },
   {
     "id": "u33-1105",
-    "es": "La puerta mide dos metros.",
-    "en": "The door is two metres.",
+    "es": "La puerta mide dos metros de alto.",
+    "en": "The door is two metres high.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:stem-e-i",
+      "l:alto",
       "l:medir",
       "l:metro",
       "l:puerta",
@@ -27786,14 +27904,15 @@
   },
   {
     "id": "u33-1109",
-    "es": "El cuarto mide cuatro por tres.",
-    "en": "The room is four by three.",
+    "es": "El baño mide dos por dos, no más.",
+    "en": "The bathroom is two by two, no more.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:por-para-1",
       "g:stem-e-i",
+      "l:baño",
       "l:medir",
       "p:medir",
       "p:medir-pesar",
@@ -27916,15 +28035,14 @@
   },
   {
     "id": "u33-1114",
-    "es": "Mi hermano mide dos metros.",
-    "en": "My brother is two metres tall.",
+    "es": "Mi papá mide uno noventa, como yo.",
+    "en": "My dad is one ninety, like me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:stem-e-i",
-      "l:hermano",
       "l:medir",
-      "l:metro",
+      "l:papá",
       "p:medir",
       "p:medir-pesar",
       "p:medir-pesar-caber",
@@ -27967,19 +28085,19 @@
   },
   {
     "id": "u33-1116",
-    "es": "El collar es de plata y el bolso es de cuero.",
-    "en": "The necklace is silver and the bag is leather.",
+    "es": "El bolso de Mariana es de cuero y pesa mucho.",
+    "en": "Mariana's bag is made of leather and weighs a lot.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
       "l:bolso",
-      "l:collar",
       "l:cuero",
-      "l:plata",
+      "l:peso",
       "l:ser",
       "p:estar-hecho-de",
+      "p:quantifiers-basic",
       "p:ser-de-material"
     ],
     "targets": [
@@ -28088,20 +28206,23 @@
   },
   {
     "id": "u33-1121",
-    "es": "La camisa es de tela y las tazas son de plástico.",
-    "en": "The shirt is fabric and the cups are plastic.",
+    "es": "Las tazas viejas son de cristal y las nuevas son de plástico.",
+    "en": "The old cups are made of glass and the new ones are plastic.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:ser-identity",
-      "l:camisa",
+      "l:cristal",
+      "l:nuevo",
       "l:plástico",
       "l:ser",
       "l:taza",
-      "l:tela",
+      "l:viejo",
       "p:estar-hecho-de",
-      "p:ser-de-material"
+      "p:ser-de-material",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "p:estar-hecho-de"
@@ -28138,8 +28259,8 @@
   },
   {
     "id": "u33-1123",
-    "es": "La mesa grande es de madera.",
-    "en": "The big table is made of wood.",
+    "es": "La mesa grande no es de madera: es de plástico pintado.",
+    "en": "The big table isn't wooden: it's painted plastic.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28148,6 +28269,8 @@
       "l:grande",
       "l:madera",
       "l:mesa",
+      "l:pintar",
+      "l:plástico",
       "l:ser",
       "p:estar-hecho-de",
       "p:ser-de-material"
@@ -28189,15 +28312,16 @@
   },
   {
     "id": "u33-1125",
-    "es": "El bolso de Hernando es de cuero.",
-    "en": "Hernando's bag is leather.",
+    "es": "Las cucharas del café son de madera.",
+    "en": "The café's spoons are made of wood.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:bolso",
-      "l:cuero",
+      "l:café",
+      "l:cuchara",
+      "l:madera",
       "l:ser",
       "p:estar-hecho-de",
       "p:ser-de-material"
@@ -28530,26 +28654,25 @@
   },
   {
     "id": "u33-1138",
-    "es": "Logramos firmar el contrato antes de que Altamira compre el edificio.",
-    "en": "We managed to sign the contract before Altamira buys the building.",
+    "es": "Queremos firmar el contrato antes de que Altamira compre el edificio.",
+    "en": "We want to sign the contract before Altamira buys the building.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:compre-trabaje",
       "g:gender-articles",
-      "g:present-ar",
+      "g:present-er-ir",
       "g:subj-purpose-full",
+      "g:verb-infinitive",
       "l:antes",
       "l:comprar",
       "l:contrato",
       "l:edificio",
       "l:firmar",
-      "l:lograr",
-      "p:intentar-conseguir"
+      "l:querer"
     ],
     "targets": [
-      "g:subj-purpose-full",
-      "p:intentar-conseguir"
+      "g:subj-purpose-full"
     ],
     "kind": "statement",
     "unit": "u33",
@@ -28558,21 +28681,27 @@
   },
   {
     "id": "u33-1139",
-    "es": "Consigo el depósito antes de que alguien más pregunte por el local.",
-    "en": "I get the deposit before anyone else asks about the place.",
+    "es": "Tengo que conseguir el depósito antes de que alguien más pregunte por el local.",
+    "en": "I have to get the deposit before anyone else asks about the place.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tengo",
+      "c:tengo-que",
       "g:gender-articles",
       "g:por-para-1",
-      "g:prep-pronouns",
       "g:subj-purpose-full",
       "g:subj-wanting",
+      "g:verb-infinitive",
+      "g:yo-irregular",
       "l:antes",
+      "l:conseguir",
       "l:depósito",
       "l:local",
       "l:preguntar",
+      "l:tener",
       "p:indefinites-basic",
+      "p:intentar-conseguir",
       "p:preguntar-pedir"
     ],
     "targets": [
@@ -28661,20 +28790,22 @@
   },
   {
     "id": "u33-1143",
-    "es": "Vale cocina el pan antes de que abra el café.",
-    "en": "Vale bakes the bread before the café opens.",
+    "es": "Vale tiene el pan listo antes de que abra el café.",
+    "en": "Vale has the bread ready before the café opens.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:gender-articles",
-      "g:present-ar",
+      "g:stem-boot",
       "g:subj-purpose-full",
       "g:subj-wanting",
       "l:abrir",
       "l:antes",
       "l:café",
-      "l:cocinar",
-      "l:pan"
+      "l:listo",
+      "l:pan",
+      "l:tener"
     ],
     "targets": [
       "g:subj-purpose-full"
@@ -28735,19 +28866,22 @@
   },
   {
     "id": "u33-1146",
-    "es": "Mariana revisa el correo antes de que despierte Tomás.",
-    "en": "Mariana checks her email before Tomás wakes up.",
+    "es": "Mariana revisa el correo antes de que la llame su jefe.",
+    "en": "Mariana checks her email before her boss calls her.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:direct-objects",
       "g:gender-articles",
       "g:present-ar",
       "g:subj-purpose-full",
       "g:subj-wanting",
       "l:antes",
       "l:correo",
-      "l:despertar",
-      "l:revisar"
+      "l:jefe",
+      "l:llamar",
+      "l:revisar",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:subj-purpose-full"
@@ -28869,8 +29003,8 @@
   },
   {
     "id": "u33-1151",
-    "es": "Medimos el salón antes de que lleguen las sillas.",
-    "en": "We measure the hall before the chairs arrive.",
+    "es": "Medimos el salón antes de que Vale escoja las mesas.",
+    "en": "We measure the hall before Vale chooses the tables.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28879,10 +29013,10 @@
       "g:subj-purpose-full",
       "g:subj-wanting",
       "l:antes",
-      "l:llegar",
+      "l:escoger",
       "l:medir",
-      "l:salón",
-      "l:silla"
+      "l:mesa",
+      "l:salón"
     ],
     "targets": [
       "g:subj-purpose-full",
@@ -28924,8 +29058,8 @@
   },
   {
     "id": "u33-1153",
-    "es": "Llegamos a tiempo antes de que empiece la reunión.",
-    "en": "We arrive on time before the meeting starts.",
+    "es": "Llegamos al banco justo antes de que cierren.",
+    "en": "We get to the bank just before they close.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28934,15 +29068,13 @@
       "g:subj-purpose-full",
       "g:subj-wanting",
       "l:antes",
-      "l:empezar",
-      "l:llegar",
-      "l:reunión",
-      "l:tiempo",
-      "p:llegar-a-tiempo"
+      "l:banco",
+      "l:cerrar",
+      "l:justo",
+      "l:llegar"
     ],
     "targets": [
-      "g:subj-purpose-full",
-      "p:llegar-a-tiempo"
+      "g:subj-purpose-full"
     ],
     "kind": "statement",
     "unit": "u33",
@@ -28951,25 +29083,24 @@
   },
   {
     "id": "u33-1154",
-    "es": "Llega a tiempo antes de que cierren la puerta.",
-    "en": "Get there on time before they close the door. (to a friend)",
+    "es": "Llega antes de que cierren la puerta, por favor.",
+    "en": "Get there before they close the door, please. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:por-favor",
+      "g:commands-tu",
       "g:gender-articles",
-      "g:present-ar",
       "g:subj-purpose-full",
       "g:subj-wanting",
       "l:antes",
       "l:cerrar",
+      "l:favor",
       "l:llegar",
-      "l:puerta",
-      "l:tiempo",
-      "p:llegar-a-tiempo"
+      "l:puerta"
     ],
     "targets": [
-      "g:subj-purpose-full",
-      "p:llegar-a-tiempo"
+      "g:subj-purpose-full"
     ],
     "kind": "statement",
     "unit": "u33",
@@ -29005,8 +29136,8 @@
   },
   {
     "id": "u33-1156",
-    "es": "Adelantamos la cita antes de que se vaya la abogada.",
-    "en": "We bring the appointment forward before the lawyer leaves.",
+    "es": "Adelantamos la cita antes de que la abogada se vaya de viaje.",
+    "en": "We're bringing the appointment forward before the lawyer goes away.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29019,6 +29150,7 @@
       "l:antes",
       "l:cita",
       "l:irse",
+      "l:viaje",
       "p:adelantar-aplazar"
     ],
     "targets": [
@@ -29032,20 +29164,20 @@
   },
   {
     "id": "u33-1157",
-    "es": "Corremos la reunión antes de que llegue Mariana.",
-    "en": "We move the meeting before Mariana arrives.",
+    "es": "No corramos la reunión sin que Mariana lo sepa.",
+    "en": "Let's not move the meeting without Mariana knowing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:direct-objects",
       "g:gender-articles",
-      "g:present-er-ir",
+      "g:subj-irregulars",
       "g:subj-purpose-full",
-      "g:subj-wanting",
-      "l:antes",
       "l:correr",
-      "l:llegar",
       "l:reunión",
-      "p:adelantar-aplazar"
+      "l:saber",
+      "p:adelantar-aplazar",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:subj-purpose-full",
@@ -29084,15 +29216,14 @@
   },
   {
     "id": "u33-1159",
-    "es": "El local está libre, pero llámalo antes de que lo ocupen.",
-    "en": "The place is free, but call before they take it.",
+    "es": "El local está libre, pero llama antes de que lo ocupen.",
+    "en": "The place is free, but call before they take it. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:commands-tu",
-      "g:commands-with-pronouns",
       "g:direct-objects",
       "g:gender-articles",
+      "g:present-ar",
       "g:subj-purpose-full",
       "g:subj-wanting",
       "l:antes",
@@ -29114,7 +29245,7 @@
   {
     "id": "u33-1160",
     "es": "Guarda la mesa antes de que lleguen los clientes.",
-    "en": "Keep the table before the customers arrive. (to a friend)",
+    "en": "Save the table before the customers arrive. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29164,8 +29295,8 @@
   },
   {
     "id": "u33-1162",
-    "es": "Siéntate junto a la ventana antes de que llegue el bus lleno.",
-    "en": "Sit by the window before the full bus arrives.",
+    "es": "Siéntate junto a la ventana antes de que llegue más gente.",
+    "en": "Sit by the window before more people arrive. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29176,18 +29307,16 @@
       "g:subj-purpose-full",
       "g:subj-wanting",
       "l:antes",
-      "l:bus",
+      "l:gente",
       "l:junto",
       "l:llegar",
-      "l:lleno",
       "l:sentarse",
       "l:ventana",
-      "p:lleno-libre",
+      "p:la-gente-singular",
       "p:posicion-precisa"
     ],
     "targets": [
       "g:subj-purpose-full",
-      "p:lleno-libre",
       "p:posicion-precisa"
     ],
     "kind": "statement",
@@ -29414,8 +29543,8 @@
   },
   {
     "id": "u33-1171",
-    "es": "Recién abierto el local, Tomás quiere cambiarlo todo.",
-    "en": "With the place just opened, Tomás wants to change everything.",
+    "es": "El local está recién abierto y Tomás ya quiere cambiarlo todo.",
+    "en": "The place has only just opened and Tomás already wants to change everything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29426,6 +29555,7 @@
       "g:verb-infinitive",
       "l:abrir",
       "l:cambiar",
+      "l:está",
       "l:local",
       "l:querer",
       "l:recién",
@@ -29522,14 +29652,14 @@
   },
   {
     "id": "u33-1175",
-    "es": "Recién llega el pan, ¿lo quieres caliente?",
-    "en": "The bread has only just arrived, do you want it warm?",
+    "es": "Recién llegó el pan, ¿lo quieres caliente?",
+    "en": "The bread has only just arrived, do you want it warm? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
       "g:gender-articles",
-      "g:present-ar",
+      "g:preterite-ar",
       "g:stem-boot",
       "l:caliente",
       "l:llegar",
@@ -29605,17 +29735,17 @@
   },
   {
     "id": "u33-1178",
-    "es": "Esta mesa está recién pintada.",
-    "en": "This table has just been painted.",
+    "es": "Las tazas están recién lavadas.",
+    "en": "The cups have just been washed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
+      "g:gender-articles",
       "l:estar",
-      "l:mesa",
-      "l:pintar",
+      "l:lavar",
       "l:recién",
-      "p:demonstratives-basic",
+      "l:taza",
       "p:recien-participio"
     ],
     "targets": [
@@ -29704,18 +29834,20 @@
   },
   {
     "id": "u33-1182",
-    "es": "Hernando es un taxista recién llegado de Ciénaga.",
-    "en": "Hernando is a taxi driver just back from Ciénaga.",
+    "es": "Don Hernando tiene un amigo recién llegado de Ciénaga.",
+    "en": "Don Hernando has a friend who's just arrived from Ciénaga.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:gender-articles",
-      "g:ser-identity",
+      "g:stem-boot",
+      "l:amigo",
       "l:llegar",
       "l:recién",
-      "l:ser",
-      "l:taxista",
-      "p:recien-participio"
+      "l:tener",
+      "p:recien-participio",
+      "p:senor-don-article"
     ],
     "targets": [
       "l:recién",
@@ -29947,8 +30079,8 @@
   },
   {
     "id": "u33-1191",
-    "es": "¿A cuánto queda el barrio donde vive Mariana?",
-    "en": "How far is the neighbourhood where Mariana lives?",
+    "es": "El barrio donde vive Mariana queda a veinte minutos de aquí.",
+    "en": "The neighbourhood where Mariana lives is twenty minutes from here.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29956,12 +30088,15 @@
       "g:present-ar",
       "g:present-er-ir",
       "g:relatives-donde-lo-que",
+      "l:aquí",
       "l:barrio",
-      "l:cuánto",
+      "l:minuto",
       "l:quedar",
       "l:vivir",
-      "p:prep-questions-basic",
-      "p:quedar-a-distancia"
+      "p:aqui-ahi-alla",
+      "p:estar-a",
+      "p:quedar-a-distancia",
+      "p:quedar-cerca"
     ],
     "targets": [
       "p:quedar-a-distancia"
@@ -29973,8 +30108,8 @@
   },
   {
     "id": "u33-1192",
-    "es": "¿A cuánto queda ese hotel del centro?",
-    "en": "How far is that hotel from the centre?",
+    "es": "Ese hotel queda a quince cuadras del centro.",
+    "en": "That hotel is fifteen blocks from the centre.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29982,11 +30117,14 @@
       "g:gender-articles",
       "g:present-ar",
       "l:centro",
-      "l:cuánto",
+      "l:cuadra",
       "l:hotel",
       "l:quedar",
-      "p:prep-questions-basic",
-      "p:quedar-a-distancia"
+      "p:a-cuadras-de",
+      "p:directions-cuadras",
+      "p:estar-a",
+      "p:quedar-a-distancia",
+      "p:quedar-cerca"
     ],
     "targets": [
       "p:quedar-a-distancia"
@@ -29998,19 +30136,23 @@
   },
   {
     "id": "u33-1193",
-    "es": "¿A cuánto queda la oficina del abogado?",
-    "en": "How far is the lawyer's office?",
+    "es": "La oficina de la abogada queda a dos cuadras de la plaza.",
+    "en": "The lawyer's office is two blocks from the square.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
       "l:abogado",
-      "l:cuánto",
+      "l:cuadra",
       "l:oficina",
+      "l:plaza",
       "l:quedar",
-      "p:prep-questions-basic",
-      "p:quedar-a-distancia"
+      "p:a-cuadras-de",
+      "p:directions-cuadras",
+      "p:estar-a",
+      "p:quedar-a-distancia",
+      "p:quedar-cerca"
     ],
     "targets": [
       "p:quedar-a-distancia"
@@ -30022,22 +30164,23 @@
   },
   {
     "id": "u33-1194",
-    "es": "¿A cuánto queda la casa de Hernando?",
-    "en": "How far is Hernando's house?",
+    "es": "¿La casa de Hernando queda lejos?\nNo, a ocho cuadras.",
+    "en": "Is Hernando's house far?\nNo, eight blocks.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
       "l:casa",
-      "l:cuánto",
+      "l:cuadra",
+      "l:lejos",
       "l:quedar",
-      "p:prep-questions-basic",
-      "p:quedar-a-distancia"
+      "p:a-cuadras-de",
+      "p:cerca-de",
+      "p:directions-cuadras",
+      "p:quedar-cerca"
     ],
-    "targets": [
-      "p:quedar-a-distancia"
-    ],
+    "targets": [],
     "kind": "question",
     "unit": "u33",
     "theme": "before and without, plans for others",
@@ -30170,20 +30313,23 @@
   },
   {
     "id": "u33-1200",
-    "es": "Mi casa queda a un kilómetro de la plaza.",
-    "en": "My house is a kilometre from the square.",
+    "es": "Mi casa queda a diez minutos de la plaza en bicicleta.",
+    "en": "My house is ten minutes from the square by bike.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
+      "l:bicicleta",
       "l:casa",
-      "l:kilómetro",
+      "l:minuto",
       "l:plaza",
       "l:quedar",
+      "p:estar-a",
       "p:possessives-basic",
       "p:quedar-a-distancia",
-      "p:quedar-cerca"
+      "p:quedar-cerca",
+      "p:transport-en"
     ],
     "targets": [
       "p:quedar-a-distancia"
@@ -30195,20 +30341,21 @@
   },
   {
     "id": "u33-1201",
-    "es": "El hospital queda a media hora de aquí.",
-    "en": "The hospital is half an hour from here.",
+    "es": "La clínica queda a veinte minutos en taxi.",
+    "en": "The clinic is twenty minutes away by taxi.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:aquí",
-      "l:hora",
-      "l:hospital",
+      "l:clínica",
+      "l:minuto",
       "l:quedar",
-      "p:aqui-ahi-alla",
+      "l:taxi",
+      "p:estar-a",
       "p:quedar-a-distancia",
-      "p:quedar-cerca"
+      "p:quedar-cerca",
+      "p:transport-en"
     ],
     "targets": [
       "p:quedar-a-distancia"
@@ -30247,17 +30394,21 @@
   },
   {
     "id": "u33-1203",
-    "es": "La estación queda a un kilómetro del hotel.",
-    "en": "The station is a kilometre from the hotel.",
+    "es": "La estación de bus queda a tres cuadras del hotel.",
+    "en": "The bus station is three blocks from the hotel.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
+      "l:bus",
+      "l:cuadra",
       "l:estación",
       "l:hotel",
-      "l:kilómetro",
       "l:quedar",
+      "p:a-cuadras-de",
+      "p:directions-cuadras",
+      "p:estar-a",
       "p:quedar-a-distancia",
       "p:quedar-cerca"
     ],
@@ -30301,8 +30452,8 @@
   },
   {
     "id": "u33-1205",
-    "es": "Buscamos un apartamento que quede a media hora del trabajo.",
-    "en": "We're looking for a flat half an hour from work.",
+    "es": "Buscamos un apartamento que quede a pocas cuadras del trabajo.",
+    "en": "We're looking for a flat a few blocks from work.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -30313,9 +30464,13 @@
       "g:subj-wanting",
       "l:apartamento",
       "l:buscar",
-      "l:hora",
+      "l:cuadra",
       "l:quedar",
       "l:trabajo",
+      "p:a-cuadras-de",
+      "p:directions-cuadras",
+      "p:poco-un-poco",
+      "p:quantifiers-basic",
       "p:quedar-a-distancia"
     ],
     "targets": [
@@ -30329,8 +30484,8 @@
   },
   {
     "id": "u33-1206",
-    "es": "Necesito un hotel que quede a un kilómetro del puerto.",
-    "en": "I need a hotel a kilometre from the port.",
+    "es": "Necesito un hotel que quede a diez minutos del puerto, no más.",
+    "en": "I need a hotel that's ten minutes from the port, no more.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -30340,10 +30495,11 @@
       "g:subj-relative",
       "g:subj-wanting",
       "l:hotel",
-      "l:kilómetro",
+      "l:minuto",
       "l:necesitar",
       "l:puerto",
       "l:quedar",
+      "p:estar-a",
       "p:quedar-a-distancia"
     ],
     "targets": [
@@ -30959,14 +31115,17 @@
   },
   {
     "id": "u33-1231",
-    "es": "Cualquier mesa de madera cabe en este salón.",
-    "en": "Any wooden table fits in this hall.",
+    "es": "En este salón cabe cualquier mesa de madera, hasta la más grande.",
+    "en": "Any wooden table fits in this hall, even the biggest.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
+      "g:gender-articles",
       "g:present-er-ir",
+      "g:superlatives",
       "l:caber",
+      "l:grande",
       "l:madera",
       "l:mesa",
       "l:salón",
@@ -31288,8 +31447,8 @@
   },
   {
     "id": "u33-1243",
-    "es": "Hernando intentó llamar al puerto y lo consiguió.",
-    "en": "Hernando tried to call the port and managed it.",
+    "es": "Hernando intentó llamar al Chato tres veces y por fin lo consiguió.",
+    "en": "Hernando tried to call el Chato three times and finally managed it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -31298,9 +31457,10 @@
       "g:preterite-ar",
       "g:preterite-irregular-strong",
       "l:conseguir",
+      "l:fin",
       "l:intentar",
       "l:llamar",
-      "l:puerto",
+      "l:vez",
       "p:intentar-conseguir",
       "p:personal-a"
     ],
@@ -31386,19 +31546,15 @@
   },
   {
     "id": "u33-1247",
-    "es": "Logré convencer a Vale de que se quede.",
-    "en": "I managed to convince Vale to stay.",
+    "es": "Por fin logré convencer a Vale.",
+    "en": "I finally managed to convince Vale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:preterite-ar",
-      "g:reflexive-routine",
-      "g:subj-influence",
-      "g:subj-wanting",
-      "g:that-clauses",
       "l:convencer",
+      "l:fin",
       "l:lograr",
-      "l:quedarse",
       "p:intentar-conseguir"
     ],
     "targets": [
@@ -31411,21 +31567,21 @@
   },
   {
     "id": "u33-1248",
-    "es": "Hernando logró que su amigo de la costa hable con nosotros.",
-    "en": "Hernando got his friend on the coast to talk to us.",
+    "es": "Hernando siempre logra que sus amigos le contesten.",
+    "en": "Hernando always gets his friends to answer him.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:prep-pronouns",
-      "g:preterite-ar",
+      "g:indirect-objects",
+      "g:present-ar",
       "g:subj-influence",
       "g:subj-wanting",
       "g:that-clauses",
       "l:amigo",
-      "l:costa",
-      "l:hablar",
+      "l:contestar",
       "l:lograr",
+      "l:siempre",
+      "p:frequency-scale",
       "p:intentar-conseguir",
       "p:possessives-basic"
     ],
@@ -31512,23 +31668,24 @@
   },
   {
     "id": "u33-1252",
-    "es": "Cada cliente que llega tarde pide un tinto igual.",
-    "en": "Each customer who arrives late orders a black coffee all the same.",
+    "es": "Cada cliente que llega tarde tiene una excusa distinta.",
+    "en": "Every customer who arrives late has a different excuse.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:igual",
+      "c:tienes",
+      "g:adjective-agreement",
       "g:cada-cualquier",
       "g:gender-articles",
       "g:present-ar",
       "g:relative-que",
-      "g:stem-e-i",
+      "g:stem-boot",
       "l:cliente",
-      "l:igual",
+      "l:distinto",
+      "l:excusa",
       "l:llegar",
-      "l:pedir",
       "l:tarde",
-      "l:tinto",
+      "l:tener",
       "p:llegar-a-tiempo"
     ],
     "targets": [
@@ -31645,22 +31802,21 @@
   },
   {
     "id": "u33-1257",
-    "es": "Llámame antes de que llegues, por favor.",
-    "en": "Call me before you arrive, please.",
+    "es": "Llámame antes de que termine el día.",
+    "en": "Call me before the day is over. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:por-favor",
       "g:commands-tu",
       "g:commands-with-pronouns",
+      "g:gender-articles",
       "g:subj-purpose-full",
       "g:subj-wanting",
       "l:antes",
-      "l:favor",
+      "l:día",
       "l:llamar",
-      "l:llegar",
-      "p:me-te-nos-objects",
-      "p:request-ladder"
+      "l:terminar",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:subj-purpose-full"
@@ -31876,11 +32032,12 @@
   },
   {
     "id": "u33-1266",
-    "es": "Escribe el mensaje antes de que salgas.",
-    "en": "Write the message before you go out. (to a friend)",
+    "es": "Escribe el mensaje antes de que Mariana lo publique.",
+    "en": "Write the message before Mariana posts it. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:direct-objects",
       "g:gender-articles",
       "g:present-er-ir",
       "g:subj-purpose-full",
@@ -31888,7 +32045,7 @@
       "l:antes",
       "l:escribir",
       "l:mensaje",
-      "l:salir"
+      "l:publicar"
     ],
     "targets": [
       "g:subj-purpose-full"
@@ -31925,18 +32082,18 @@
   },
   {
     "id": "u33-1268",
-    "es": "Mariana sale a correr antes de que despierte Tomás.",
-    "en": "Mariana goes out running before Tomás wakes up.",
+    "es": "Mariana sale a correr antes de que haya tráfico.",
+    "en": "Mariana goes out running before there's traffic.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-er-ir",
+      "g:subj-irregulars",
       "g:subj-purpose-full",
-      "g:subj-wanting",
       "l:antes",
       "l:correr",
-      "l:despertar",
-      "l:salir"
+      "l:salir",
+      "l:tráfico"
     ],
     "targets": [
       "g:subj-purpose-full"
@@ -32078,23 +32235,21 @@
   },
   {
     "id": "u33-1274",
-    "es": "Nunca salgo de la casa sin que mi madre me llame.",
-    "en": "I never leave the house without my mother calling me.",
+    "es": "Nunca salgo de la casa sin que Simón me diga adiós.",
+    "en": "I never leave the house without Simón saying goodbye to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hago-salgo-vengo",
       "g:gender-articles",
-      "g:reflexive-routine",
       "g:subj-purpose-full",
       "g:subj-wanting",
       "g:yo-irregular",
       "l:casa",
-      "l:llamarse",
-      "l:madre",
+      "l:decir",
       "l:salir",
       "p:frequency-scale",
-      "p:possessives-basic"
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:subj-purpose-full"
@@ -32228,18 +32383,19 @@
   },
   {
     "id": "u33-1280",
-    "es": "No digas nada sin que yo te avise.",
-    "en": "Don't say anything without me letting you know. (to a friend)",
+    "es": "No digas nada sin que yo esté presente.",
+    "en": "Don't say anything without me being there. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:estar-location-states",
       "g:negation-words",
       "g:negative-commands",
       "g:subj-purpose-full",
       "g:subj-wanting",
-      "l:avisar",
       "l:decir",
-      "p:me-te-nos-objects"
+      "l:estar",
+      "l:presentar"
     ],
     "targets": [
       "g:subj-purpose-full"
@@ -32467,20 +32623,25 @@
   },
   {
     "id": "u33-1290",
-    "es": "Salgo de la oficina sin que nadie me vea.",
-    "en": "I leave the office without anyone seeing me.",
+    "es": "Salgo temprano de la oficina sin que mi jefe se dé cuenta.",
+    "en": "I leave the office early without my boss noticing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hago-salgo-vengo",
       "g:gender-articles",
+      "g:reflexive-routine",
       "g:subj-purpose-full",
       "g:subj-wanting",
       "g:yo-irregular",
+      "l:cuenta",
+      "l:darse",
+      "l:jefe",
       "l:oficina",
       "l:salir",
-      "l:ver",
-      "p:me-te-nos-objects"
+      "l:temprano",
+      "p:darse-cuenta-de",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:subj-purpose-full"
@@ -32492,17 +32653,23 @@
   },
   {
     "id": "u33-1291",
-    "es": "Altamira compra casas sin que nadie proteste.",
-    "en": "Altamira buys houses without anyone protesting.",
+    "es": "Altamira no puede vender nada sin que la alcaldía lo sepa.",
+    "en": "Altamira can't sell anything without the town hall knowing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:negation-words",
+      "g:stem-boot",
+      "g:subj-irregulars",
       "g:subj-purpose-full",
-      "g:subj-wanting",
-      "l:casa",
-      "l:comprar",
-      "l:protestar"
+      "g:verb-infinitive",
+      "l:alcaldía",
+      "l:poder",
+      "l:saber",
+      "l:vender",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:subj-purpose-full"
@@ -32671,23 +32838,20 @@
   },
   {
     "id": "u33-1298",
-    "es": "Mezcla todo bien antes de que llegue la harina nueva.",
-    "en": "Mix everything well before the new flour arrives.",
+    "es": "Mezcla todo bien antes de que Vale lo pruebe.",
+    "en": "Mix everything well before Vale tastes it. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
-      "g:adjective-agreement",
-      "g:gender-articles",
+      "g:direct-objects",
       "g:present-ar",
       "g:subj-purpose-full",
       "g:subj-wanting",
       "l:antes",
       "l:bien",
-      "l:harina",
-      "l:llegar",
       "l:mezclar",
-      "l:nuevo"
+      "l:probar"
     ],
     "targets": [
       "g:subj-purpose-full",
@@ -32700,8 +32864,8 @@
   },
   {
     "id": "u33-1299",
-    "es": "Avísame antes de que salga el bus lleno.",
-    "en": "Let me know before the full bus leaves. (to a friend)",
+    "es": "Avísame antes de que salga el bus.",
+    "en": "Let me know before the bus leaves. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32713,14 +32877,11 @@
       "l:antes",
       "l:avisar",
       "l:bus",
-      "l:lleno",
       "l:salir",
-      "p:lleno-libre",
       "p:me-te-nos-objects"
     ],
     "targets": [
-      "g:subj-purpose-full",
-      "p:lleno-libre"
+      "g:subj-purpose-full"
     ],
     "kind": "statement",
     "unit": "u33",
@@ -32874,22 +33035,26 @@
   },
   {
     "id": "u33-1306",
-    "es": "Tomás llama a su mamá antes de que empiece la reunión en la que habla.",
-    "en": "Tomás calls his mum before the meeting he speaks at starts.",
+    "es": "Tomás llama a su mamá antes de que empiece la reunión en la que tiene que hablar.",
+    "en": "Tomás calls his mum before the meeting he has to speak at starts.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:gender-articles",
       "g:present-ar",
       "g:relatives-prepositions",
+      "g:stem-boot",
       "g:subj-purpose-full",
       "g:subj-wanting",
+      "g:verb-infinitive",
       "l:antes",
       "l:empezar",
       "l:hablar",
       "l:llamar",
       "l:mamá",
       "l:reunión",
+      "l:tener",
       "p:personal-a",
       "p:possessives-basic"
     ],
@@ -32905,7 +33070,7 @@
   {
     "id": "u33-1307",
     "es": "La mesa mide cuatro metros, y no cabe sin que movamos la nevera.",
-    "en": "The table is four metres, and it doesn't fit unless we move the fridge.",
+    "en": "The table is four metres long, and it doesn't fit unless we move the fridge.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32938,8 +33103,8 @@
   },
   {
     "id": "u33-1308",
-    "es": "El sofá no cabe por la puerta sin que lo movamos mucho.",
-    "en": "The sofa doesn't fit through the door unless we move it a lot.",
+    "es": "El sofá no cabe por la puerta sin que la quitemos.",
+    "en": "The sofa doesn't fit through the door unless we take the door off.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32950,12 +33115,11 @@
       "g:subj-purpose-full",
       "g:subj-wanting",
       "l:caber",
-      "l:mover",
       "l:puerta",
+      "l:quitar",
       "l:sofá",
       "p:caber",
-      "p:medir-pesar-caber",
-      "p:quantifiers-basic"
+      "p:medir-pesar-caber"
     ],
     "targets": [
       "g:subj-purpose-full",
@@ -32994,23 +33158,26 @@
   },
   {
     "id": "u33-1310",
-    "es": "La cocina mide poco, pero cabe un horno sin que sobre espacio.",
-    "en": "The kitchen is small, but an oven fits with no space to spare.",
+    "es": "La cocina es pequeña: cabe un horno, pero no sobra espacio.",
+    "en": "The kitchen is small: an oven fits, but there's no space to spare.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
+      "g:present-ar",
       "g:present-er-ir",
-      "g:stem-e-i",
+      "g:ser-identity",
       "l:caber",
       "l:cocina",
       "l:espacio",
       "l:horno",
-      "l:medir",
+      "l:pequeño",
+      "l:ser",
+      "l:sobrar",
       "p:caber",
       "p:medir-pesar-caber",
-      "p:poco-un-poco",
-      "p:quantifiers-basic"
+      "p:quedar-faltar-sobrar"
     ],
     "targets": [
       "p:caber",
@@ -33051,21 +33218,22 @@
   },
   {
     "id": "u33-1312",
-    "es": "Adelantamos la fecha de la entrega antes de que cierre el banco.",
-    "en": "We bring the delivery date forward before the bank closes.",
+    "es": "Hay que adelantar el viaje antes de que cambien los precios.",
+    "en": "We have to bring the trip forward before the prices change.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
+      "c:hay-que",
       "g:gender-articles",
-      "g:present-ar",
       "g:subj-purpose-full",
       "g:subj-wanting",
+      "g:verb-infinitive",
       "l:adelantar",
       "l:antes",
-      "l:banco",
-      "l:cerrar",
-      "l:entrega",
-      "l:fecha",
+      "l:cambiar",
+      "l:precio",
+      "l:viaje",
       "p:adelantar-aplazar"
     ],
     "targets": [
@@ -33079,14 +33247,14 @@
   },
   {
     "id": "u33-1313",
-    "es": "Adelantaron el viaje sin que nadie lo sepa.",
-    "en": "They brought the trip forward without anyone knowing.",
+    "es": "Adelantan el viaje sin que nadie lo sepa.",
+    "en": "They're bringing the trip forward without anyone knowing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
       "g:gender-articles",
-      "g:preterite-ar",
+      "g:present-ar",
       "g:subj-irregulars",
       "g:subj-purpose-full",
       "l:adelantar",
@@ -33162,15 +33330,14 @@
   },
   {
     "id": "u33-1316",
-    "es": "La puerta mide dos metros y medio.",
-    "en": "The door is two and a half metres.",
+    "es": "La puerta mide dos metros y medio de alto.",
+    "en": "The door is two and a half metres high.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
       "g:stem-e-i",
-      "l:mediar",
+      "l:alto",
       "l:medir",
       "l:metro",
       "l:puerta",
@@ -33190,7 +33357,7 @@
   {
     "id": "u33-1317",
     "es": "Mi mamá mide uno sesenta.",
-    "en": "My mum is one sixty.",
+    "en": "My mum is 1.60 m tall.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -33386,24 +33553,21 @@
   },
   {
     "id": "u33-1325",
-    "es": "Vale es aburrida con los números, pero hoy está aburrida de verdad.",
-    "en": "Vale is boring with numbers, but today she's genuinely bored.",
+    "es": "Vale es muy alegre, pero hoy está aburrida.",
+    "en": "Vale is very cheerful, but today she's bored.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:en-serio",
       "g:adjective-agreement",
       "g:estar-location-states",
-      "g:gender-articles",
       "g:ser-identity",
       "l:aburrido",
+      "l:alegre",
       "l:estar",
       "l:hoy",
-      "l:número",
       "l:ser",
-      "l:verdad",
       "p:aburrir-aburrirse",
-      "p:estar-harto-de"
+      "p:quantifiers-basic"
     ],
     "targets": [],
     "kind": "statement",
@@ -33808,7 +33972,7 @@
   },
   {
     "id": "u33-1342",
-    "es": "¿Cada día llegan clientes nuevos?",
+    "es": "¿Llegan clientes nuevos cada día?",
     "en": "Do new customers come every day?",
     "accept": [],
     "acceptEn": [],

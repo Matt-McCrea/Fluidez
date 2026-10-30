@@ -3,14 +3,14 @@
   "hook": {
     "line": "Looking for a place, a table or a cup of coffee, you will often want to say it doesn't matter which, or that you mean every single one. Spanish has small words for both.",
     "es": "¿Qué día te sirve?\nCualquiera.",
-    "en": "Which day suits you?\nAny of them."
+    "en": "Which day works for you?\nAny day."
   },
   "examples": [
     { "es": "Cada mesa tiene su historia.", "en": "Each table has its story." },
     { "es": "Cualquier persona puede venir.", "en": "Anyone can come." },
     { "es": "Me sirve cualquiera.", "en": "Any of them will do." },
     { "es": "Cada mañana Vale hace pan.", "en": "Every morning Vale bakes bread." },
-    { "es": "Toda la mañana trabajo en el café.", "en": "I work in the café all morning." },
+    { "es": "Trabajo toda la mañana en el café.", "en": "I work in the café all morning." },
     { "es": "Todos los días como aquí.", "en": "I eat here every day." }
   ],
   "rule": "*Cada* means 'each' or 'every'. It never changes and never takes an article: *cada mesa*, *cada día*.\n\n*Cualquier* means 'any at all' and goes before a noun: *cualquier día*, *cualquier persona*.\nOn its own it keeps the -a: *cualquiera*.\n\n*Todo* is about the whole thing, and it matches the noun:\n*toda la mañana* (all morning)\n*todo el barrio* (the whole neighbourhood)\n*todos los días* (every day)\n\nSo 'every day' can be *cada día* or *todos los días*.",
@@ -19,7 +19,7 @@
     { "es": "Cada cliente pide algo distinto.", "options": ["Any customer orders something different.", "Each customer orders something different."], "answer": 1 },
     { "es": "Cualquier persona puede venir.", "options": ["Each person can come.", "Anyone can come."], "answer": 1 },
     { "es": "Me sirve cualquiera.", "options": ["Any of them will do for me.", "I need each one."], "answer": 0 },
-    { "es": "Toda la mañana trabajo en el café.", "options": ["I work in the café every morning.", "I work in the café all morning."], "answer": 1 },
+    { "es": "Trabajo toda la mañana en el café.", "options": ["I work in the café every morning.", "I work in the café all morning."], "answer": 1 },
     { "es": "Todos los días como aquí.", "options": ["I eat here all day.", "I eat here every day."], "answer": 1 },
     { "es": "Cada mañana Vale hace pan.", "options": ["Vale bakes bread every morning.", "Vale bakes bread all morning."], "answer": 0 },
     { "es": "Cualquier día puedo ir.", "options": ["I can go every day.", "I can go one day.", "I can go any day."], "answer": 2 },
@@ -30,9 +30,9 @@
     { "prompt": "Pick and type the whole sentence: *___ mesa tiene su historia.* (*Cada* or *Cualquiera*)", "answer": "Cada mesa tiene su historia.", "accept": [], "why": "You mean each table in turn, so *cada*." },
     { "prompt": "Pick and type: *Puedes venir ___ día.* (*cualquier* or *cualquiera*)", "answer": "Puedes venir cualquier día.", "accept": [], "why": "Before a noun it shortens to *cualquier*." },
     { "prompt": "Pick and type: *Me sirve ___.* (*cualquier* or *cualquiera*)", "answer": "Me sirve cualquiera.", "accept": [], "why": "With no noun after it, it keeps the -a." },
-    { "prompt": "Say: Each customer orders something different.", "answer": "Cada cliente pide algo distinto.", "accept": [], "why": "*Cada* stays singular and has no article." },
+    { "prompt": "Say: Each customer orders something different.", "answer": "Cada cliente pide algo distinto.", "accept": ["Cada cliente pide algo diferente."], "why": "*Cada* stays singular and has no article." },
     { "prompt": "Say: Anyone can come in.", "answer": "Cualquiera puede entrar.", "accept": ["Cualquier persona puede entrar."], "why": "Alone it is *cualquiera*; with *persona* it is *cualquier*." },
-    { "prompt": "Say: I work all morning in the café.", "answer": "Toda la mañana trabajo en el café.", "accept": ["Trabajo toda la mañana en el café."], "why": "'All morning' is the whole of it, so *toda la mañana*." },
+    { "prompt": "Say: I work all morning in the café.", "answer": "Trabajo toda la mañana en el café.", "accept": ["Toda la mañana trabajo en el café."], "why": "'All morning' is the whole of it, so *toda la mañana*." },
     { "prompt": "Say it with *cada*: *Todos los días como aquí.*", "answer": "Cada día como aquí.", "accept": ["Como aquí cada día."], "why": "*Cada* is singular, so *cada día*, not *cada días*." }
   ],
   "pitfalls": [

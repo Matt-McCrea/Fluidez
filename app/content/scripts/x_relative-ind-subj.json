@@ -1,7 +1,7 @@
 {
   "node": "x:relative-ind-subj",
   "hook": {
-    "line": "Two sentences that differ by one vowel can mean two different searches: one for a place you've seen, one for a place that may not exist. Vale and Tomás keep swapping them, and the landlords keep answering the wrong question.",
+    "line": "Two sentences that differ by one verb ending can mean two different searches: one for a place you've seen, one for a place that may not exist. Vale and Tomás keep swapping them, and the landlords keep answering the wrong question.",
     "es": "Busco un local que tenga cocina.",
     "en": "I'm looking for a place that has a kitchen."
   },
@@ -35,7 +35,7 @@
       "en": "I don't know anyone who lives there."
     }
   ],
-  "rule": "The two sentences share every word except the verb ending, so the ending does the work.\n\n*Busco el local que tiene cocina.* The place is real and you know it.\n*Busco un local que tenga cocina.* Any place like that, if one exists.\n\nA quick test: can you point at it? Yes, ordinary ending (*tiene*, *abre*, *vive*). No, or you're not sure, or you're asking whether it exists, or the answer is *nadie* or *ningún*: wish ending (*tenga*, *abra*, *viva*).\n\nThe article helps (*el* leans real, *un* leans open) but it doesn't decide. The verb does.\n\nEnglish has no switch here. *A place that has a kitchen* covers both. In Spanish you must choose, and a question like *¿Hay alguien que…?* almost always takes the wish ending.",
+  "rule": "Look at the verb after *que*: its ending does the work.\n\n*Busco el local que tiene cocina.* The place is real and you know it.\n*Busco un local que tenga cocina.* Any place like that, if one exists.\n\nA quick test: can you point at it? Yes, ordinary ending (*tiene*, *abre*, *vive*). No, or you're not sure, or you're asking whether it exists, or the answer is *nadie* or *ningún*: wish ending (*tenga*, *abra*, *viva*).\n\nThe article helps (*el* leans real, *un* leans open) but it doesn't decide. The verb does.\n\nEnglish has no switch here. *A place that has a kitchen* covers both. In Spanish you must choose, and a question like *¿Hay alguien que…?* almost always takes the wish ending.",
   "smallPrint": "Teachers call this the indicative versus subjunctive contrast in relative clauses: indicative for a known antecedent, subjunctive for an unknown or non-existent one.",
   "readAndPick": [
     {
@@ -72,10 +72,10 @@
       "answer": 1
     },
     {
-      "es": "Hernando conoce a un señor que vive en Santa Marta.",
+      "es": "Hernando busca a un señor que vive en Santa Marta.",
       "options": [
-        "Hernando knows a man who lives in Santa Marta.",
-        "Hernando wants to know a man who lives in Santa Marta."
+        "Hernando is looking for a particular man, who lives in Santa Marta.",
+        "Hernando is looking for any man who lives in Santa Marta, if there is one."
       ],
       "answer": 0
     },
@@ -88,12 +88,12 @@
       "answer": 0
     },
     {
-      "es": "No conozco a nadie que viva allá.",
+      "es": "Hernando busca a un señor que viva en Santa Marta.",
       "options": [
-        "I don't know anyone who lives there.",
-        "I know someone who lives there."
+        "Hernando is looking for a particular man, who lives in Santa Marta.",
+        "Hernando is looking for any man who lives in Santa Marta, if there is one."
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "es": "Quiero el apartamento que tiene balcón.",

@@ -79,7 +79,7 @@
       "es": "El sofá no cabe por la puerta.",
       "options": [
         "The sofa doesn't fit through the door.",
-        "The sofa doesn't fit in the door frame.",
+        "The sofa fits through the door.",
         "The sofa is behind the door."
       ],
       "answer": 0
@@ -168,7 +168,7 @@
     {
       "wrong": "La mesa no cabe la cocina.",
       "right": "La mesa no cabe en la cocina.",
-      "why": "Don't drop the little word: the space needs *en* (or *por* for an opening)."
+      "why": "Almost. Don't drop the little word: the space needs *en* (or *por* for an opening)."
     },
     {
       "wrong": "Yo no cabe en el carro.",

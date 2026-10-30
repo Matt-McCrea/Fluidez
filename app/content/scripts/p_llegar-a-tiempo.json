@@ -140,7 +140,8 @@
    "prompt": "Say: The bus arrived late.",
    "answer": "El bus llegó retrasado.",
    "accept": [
-    "El bus llegó con retraso."
+    "El bus llegó con retraso.",
+    "El bus llegó tarde."
    ],
    "why": "A bus runs on a schedule, so *retrasado* or *con retraso* fits."
   },
@@ -164,9 +165,9 @@
    "why": "English says \"in time\", but Spanish says *a tiempo*."
   },
   {
-   "wrong": "Llegué tardo a la reunión.",
+   "wrong": "Llegué tarde para la reunión.",
    "right": "Llegué tarde a la reunión.",
-   "why": "*Tarde* says how you arrived and never changes: no *-o*, no *-a*."
+   "why": "Almost. English says late *for*, but you arrive *a* somewhere: *tarde a la reunión*."
   },
   {
    "wrong": "Ella llegó temprana.",

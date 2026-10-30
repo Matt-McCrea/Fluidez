@@ -55,19 +55,18 @@
       "answer": 1
     },
     {
-      "es": "Tengo un amigo que sabe de leyes.",
+      "es": "Busco a una abogada que sabe de arriendos.",
       "options": [
-        "I have a friend who knows about law.",
-        "I need a friend who knows about law."
+        "I'm looking for a particular lawyer: I know she knows about rentals.",
+        "I'm looking for any lawyer who knows about rentals, if there is one."
       ],
       "answer": 0
     },
     {
-      "es": "Necesito un amigo que sepa de leyes.",
+      "es": "Busco a una abogada que sepa de arriendos.",
       "options": [
-        "I have a friend who knows about law.",
-        "I need a friend who knows about law.",
-        "I know a friend who knows about law."
+        "I'm looking for a particular lawyer: I know she knows about rentals.",
+        "I'm looking for any lawyer who knows about rentals, if there is one."
       ],
       "answer": 1
     },
@@ -88,29 +87,29 @@
       "answer": 0
     },
     {
-      "es": "Hernando conoce a un señor que vive en Santa Marta.",
+      "es": "No hay nadie aquí que hable inglés.",
       "options": [
-        "Hernando knows a man who lives in Santa Marta.",
-        "Hernando wants to meet a man who lives in Santa Marta.",
-        "Hernando is looking for a man who lives in Santa Marta."
+        "There's nobody here who speaks English.",
+        "There's somebody here who speaks English.",
+        "Who here speaks English?"
       ],
       "answer": 0
     },
     {
       "es": "Vale quiere una cocina que sea grande.",
       "options": [
-        "Vale has a kitchen that is big.",
-        "Vale wants a kitchen that is big."
-      ],
-      "answer": 1
-    },
-    {
-      "es": "Necesitamos una persona que pueda trabajar los sábados.",
-      "options": [
-        "We need someone who can work on Saturdays.",
-        "We have someone who can work on Saturdays."
+        "Vale wants a kitchen that is big (any big one).",
+        "Vale wants the kitchen that is big (one she has seen)."
       ],
       "answer": 0
+    },
+    {
+      "es": "Necesitamos a la persona que puede trabajar los sábados.",
+      "options": [
+        "We need someone who can work on Saturdays (anyone who can).",
+        "We need the person who can work on Saturdays (we know who)."
+      ],
+      "answer": 1
     }
   ],
   "yourTurn": [
@@ -147,7 +146,7 @@
       "why": "Any room with a window will do, so *tenga*."
     },
     {
-      "prompt": "Make it negative, there is nobody: *Conozco a alguien que sabe de leyes.*",
+      "prompt": "Make it negative, there is nobody: *Conozco a alguien que sabe de leyes.* Say: I don't know anyone who knows about law.",
       "answer": "No conozco a nadie que sepa de leyes.",
       "accept": [],
       "why": "With *nadie* there is nobody to point at, so the verb takes *sepa*."

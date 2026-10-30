@@ -1,7 +1,7 @@
 {
   "node": "p:quedar-a-distancia",
   "hook": {
-    "line": "Ask a Bogotano how far something is and you'll get blocks, minutes or a shrug. Tomás keeps walking past the café because nobody told him how far it was.",
+    "line": "Ask a Bogotano how far something is and you'll get blocks, minutes or a shrug. Vale has a list of places to see, and every one of them is close, according to the ads.",
     "es": "Mi casa queda a dos cuadras del café.",
     "en": "My house is two blocks from the café."
   },
@@ -106,7 +106,9 @@
     {
       "prompt": "Pick *a* or *en* and type the whole sentence: *El parque queda ___ cinco cuadras.* (The park is five blocks away.)",
       "answer": "El parque queda a cinco cuadras.",
-      "accept": [],
+      "accept": [
+        "El parque está a cinco cuadras."
+      ],
       "why": "Distance uses *a*, never *en*."
     },
     {
