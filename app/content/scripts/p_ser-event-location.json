@@ -1,0 +1,167 @@
+{
+  "node": "p:ser-event-location",
+  "hook": {
+    "line": "Everyone in the café is asking where the press conference is. Spanish has a small surprise: for events, the word you need is not *estar*.",
+    "es": "¿Dónde es la reunión?",
+    "en": "Where's the meeting?"
+  },
+  "examples": [
+    {
+      "es": "La reunión es en la sala 3.",
+      "en": "The meeting is in room 3."
+    },
+    {
+      "es": "¿Dónde es la fiesta?",
+      "en": "Where's the party?"
+    },
+    {
+      "es": "El concierto fue en el parque.",
+      "en": "The concert was in the park."
+    },
+    {
+      "es": "El accidente fue en la Autopista Norte.",
+      "en": "The accident was on the Autopista Norte."
+    },
+    {
+      "es": "La entrevista es en el café.",
+      "en": "The interview is at the café."
+    },
+    {
+      "es": "El café está en La Candelaria.",
+      "en": "The café is in La Candelaria."
+    }
+  ],
+  "rule": "In English, \"is\" does both jobs: \"the party is at my house\", \"the house is in Bogotá\". Spanish splits them.\n\nFor a thing or a place, use *estar*: *El café está en La Candelaria*.\n\nFor an event, something that happens, use *ser*: *La fiesta es en mi casa*, *El concierto fue en el parque*. The words usually mean *party*, *meeting*, *concert*, *wedding*, *class*, *accident*, *interview*.\n\nTo ask, say *¿Dónde es la fiesta?*, not *¿Dónde está la fiesta?*",
+  "smallPrint": "Teachers call this the use of *ser* for the location of events.",
+  "readAndPick": [
+    {
+      "es": "La reunión es en la sala 3.",
+      "options": [
+        "The meeting is in room 3.",
+        "The room 3 is a meeting."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Dónde es la fiesta?",
+      "options": [
+        "Where's the party?",
+        "Who's the party for?",
+        "When's the party?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El concierto fue en el parque.",
+      "options": [
+        "The concert is in the park.",
+        "The concert was in the park.",
+        "The concert will be in the park."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El café está en La Candelaria.",
+      "options": [
+        "The café is in La Candelaria.",
+        "The café was in La Candelaria."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El accidente fue en la Autopista Norte.",
+      "options": [
+        "The accident was on the Autopista Norte.",
+        "The accident will be on the Autopista Norte."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La entrevista es en el café.",
+      "options": [
+        "The interview is at the café.",
+        "The café is the interview."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mi casa está en el centro.",
+      "options": [
+        "My house is downtown.",
+        "My house is the centre."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La boda fue en Cartagena.",
+      "options": [
+        "The wedding was in Cartagena.",
+        "The weddings were in Cartagena.",
+        "The wedding will be in Cartagena."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *es* or *está*: La fiesta ___ en mi casa. Type the whole sentence.",
+      "answer": "La fiesta es en mi casa.",
+      "accept": [],
+      "why": "A party is an event, so *ser*."
+    },
+    {
+      "prompt": "Choose *es* or *está*: El café ___ en La Candelaria. Type the whole sentence.",
+      "answer": "El café está en La Candelaria.",
+      "accept": [],
+      "why": "A café is a place, so *estar*."
+    },
+    {
+      "prompt": "Where's the party?",
+      "answer": "¿Dónde es la fiesta?",
+      "accept": [],
+      "why": "Asking where an event happens: *dónde es*."
+    },
+    {
+      "prompt": "The meeting is in room 3.",
+      "answer": "La reunión es en la sala 3.",
+      "accept": [],
+      "why": "Event + *es* + *en* + place."
+    },
+    {
+      "prompt": "The concert was in the park.",
+      "answer": "El concierto fue en el parque.",
+      "accept": [],
+      "why": "For the past, *ser* becomes *fue*."
+    },
+    {
+      "prompt": "The accident was on the Autopista Norte.",
+      "answer": "El accidente fue en la Autopista Norte.",
+      "accept": [],
+      "why": "An accident is an event, so *fue*."
+    },
+    {
+      "prompt": "Make it a question: *La entrevista es en el café.*",
+      "answer": "¿Dónde es la entrevista?",
+      "accept": [],
+      "why": "To ask where an event happens, use *dónde es*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La fiesta está en mi casa.",
+      "right": "La fiesta es en mi casa.",
+      "why": "Almost. An event happening somewhere takes *ser*."
+    },
+    {
+      "wrong": "¿Dónde está la boda?",
+      "right": "¿Dónde es la boda?",
+      "why": "To ask where an event takes place, Spanish uses *ser*."
+    },
+    {
+      "wrong": "El café es en La Candelaria.",
+      "right": "El café está en La Candelaria.",
+      "why": "A place or thing takes *estar* for its location."
+    }
+  ],
+  "personal": "Think of an event coming up, a class, a birthday, a game. Say where it is with *es en*, and where a place you know is with *está en*."
+}

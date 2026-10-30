@@ -1,0 +1,176 @@
+{
+  "node": "p:tener-lugar",
+  "hook": {
+    "line": "Mariana needs to say when and where things happened, and *there was a protest* is not how a news story says it. Spanish gives events their own verb: they \"have place\".",
+    "es": "La manifestación tuvo lugar ayer.",
+    "en": "The protest took place yesterday."
+  },
+  "examples": [
+    {
+      "es": "La reunión tuvo lugar el martes.",
+      "en": "The meeting took place on Tuesday."
+    },
+    {
+      "es": "La manifestación tuvo lugar en la Plaza de Bolívar.",
+      "en": "The protest took place in Bolívar Square."
+    },
+    {
+      "es": "¿Cuándo tendrá lugar la reunión?",
+      "en": "When will the meeting take place?"
+    },
+    {
+      "es": "Las protestas tuvieron lugar en varias ciudades.",
+      "en": "The protests took place in several cities."
+    },
+    {
+      "es": "Las elecciones se celebraron el domingo.",
+      "en": "The elections were held on Sunday."
+    },
+    {
+      "es": "El concierto se realizó en el parque.",
+      "en": "The concert was held in the park."
+    }
+  ],
+  "rule": "To say an event happened somewhere or at some time, use *tener lugar*: *tuvo lugar*, *tendrá lugar*. Only the verb changes, and it matches the event: *la protesta tuvo lugar*, *las protestas tuvieron lugar*. *Lugar* stays as it is.\n\nTwo more options for planned events: *se realizó* (was carried out) and *se celebró* (was held). They also agree with the event: *se celebraron las elecciones*.\n\nDon't use *hay* for this. *Hay* introduces something new, as in *hay una reunión*. For a known, scheduled event, say when and where it took place.",
+  "smallPrint": "Teachers call *se realizó* and *se celebró* the passive with *se*. *Tener lugar* is a fixed expression that works with one event at a time.",
+  "readAndPick": [
+    {
+      "es": "La reunión tuvo lugar el martes.",
+      "options": [
+        "The meeting took place on Tuesday.",
+        "The meeting will take place on Tuesday.",
+        "The meetings took place on Tuesday."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La manifestación tendrá lugar mañana.",
+      "options": [
+        "The protest took place yesterday.",
+        "The protest will take place tomorrow."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Las protestas tuvieron lugar en varias ciudades.",
+      "options": [
+        "The protest took place in several cities.",
+        "The protests took place in several cities.",
+        "The protests will take place in several cities."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Las elecciones se celebraron el domingo.",
+      "options": [
+        "The election was held on Sunday.",
+        "The elections were held on Sunday.",
+        "The elections will be held on Sunday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Cuándo tuvo lugar el incendio?",
+      "options": [
+        "When will the fire happen?",
+        "When did the fire happen?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El concierto se realizó en el parque.",
+      "options": [
+        "The concert was held in the park.",
+        "The concerts were held in the park.",
+        "The concert will be held in the park."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El debate no tendrá lugar.",
+      "options": [
+        "The debate did not take place.",
+        "The debate will not take place.",
+        "The debates will not take place."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Las inundaciones tuvieron lugar en abril.",
+      "options": [
+        "The flood took place in April.",
+        "The floods took place in April."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *tuvo* or *tendrá*: La manifestación ___ lugar ayer. Type the whole sentence.",
+      "answer": "La manifestación tuvo lugar ayer.",
+      "accept": [],
+      "why": "*Ayer* is in the past, so *tuvo*."
+    },
+    {
+      "prompt": "Choose *tuvo* or *tuvieron*: Las protestas ___ lugar en varias ciudades. Type the whole sentence.",
+      "answer": "Las protestas tuvieron lugar en varias ciudades.",
+      "accept": [],
+      "why": "Several protests, so the verb is plural: *tuvieron*."
+    },
+    {
+      "prompt": "The meeting took place on Tuesday.",
+      "answer": "La reunión tuvo lugar el martes.",
+      "accept": [],
+      "why": "Event + *tuvo lugar* + when."
+    },
+    {
+      "prompt": "When will the meeting take place?",
+      "answer": "¿Cuándo tendrá lugar la reunión?",
+      "accept": [],
+      "why": "Same expression, future tense: *tendrá lugar*."
+    },
+    {
+      "prompt": "The elections were held on Sunday.",
+      "answer": "Las elecciones se celebraron el domingo.",
+      "accept": [
+        "Las elecciones tuvieron lugar el domingo."
+      ],
+      "why": "*Se celebraron* is plural to match *las elecciones*."
+    },
+    {
+      "prompt": "Make it negative: *El concierto tendrá lugar mañana.*",
+      "answer": "El concierto no tendrá lugar mañana.",
+      "accept": [],
+      "why": "*No* goes right before the verb."
+    },
+    {
+      "prompt": "Where did the fire take place?",
+      "answer": "¿Dónde tuvo lugar el incendio?",
+      "accept": [],
+      "why": "*Dónde* + *tuvo lugar* asks where an event happened."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Hay la reunión el martes.",
+      "right": "La reunión tuvo lugar el martes.",
+      "why": "Almost. *Hay* introduces something new; for a known event, say that it *tuvo lugar*."
+    },
+    {
+      "wrong": "La reunión tomó lugar el martes.",
+      "right": "La reunión tuvo lugar el martes.",
+      "why": "English says \"took place\", but Spanish says \"had place\": *tener lugar*."
+    },
+    {
+      "wrong": "Las protestas tuvo lugar en varias ciudades.",
+      "right": "Las protestas tuvieron lugar en varias ciudades.",
+      "why": "The verb matches the event, and there is more than one."
+    },
+    {
+      "wrong": "El incendio se celebró en la noche.",
+      "right": "El incendio tuvo lugar en la noche.",
+      "why": "*Celebrarse* is only for planned events. A fire just *tiene lugar*."
+    }
+  ],
+  "personal": "Think of an event from this week, like a meeting, a class or a game. Say when it took place, starting with *tuvo lugar* or *tuvieron lugar*."
+}

@@ -1,0 +1,170 @@
+{
+  "node": "p:gracias-a-por-culpa-de",
+  "hook": {
+    "line": "When a story has a hero and a villain, Spanish uses two small phrases to tell you who is who. The news this week has plenty of both.",
+    "es": "Gracias a Mariana, todos conocen la historia.",
+    "en": "Thanks to Mariana, everyone knows the story."
+  },
+  "examples": [
+    {
+      "es": "Gracias a ti llegamos a tiempo.",
+      "en": "Thanks to you we made it on time."
+    },
+    {
+      "es": "Gracias a que llovió, se salvó la cosecha.",
+      "en": "Thanks to the rain, the harvest was saved."
+    },
+    {
+      "es": "Perdimos el vuelo por culpa del trancón.",
+      "en": "We missed the flight because of the traffic jam."
+    },
+    {
+      "es": "Por culpa de Altamira, el barrio está en peligro.",
+      "en": "Because of Altamira, the neighbourhood is in danger."
+    },
+    {
+      "es": "Gracias al artículo, todos conocen la verdad.",
+      "en": "Thanks to the article, everyone knows the truth."
+    },
+    {
+      "es": "Todo salió mal por culpa mía.",
+      "en": "Everything went wrong because of me."
+    }
+  ],
+  "rule": "Both phrases say \"because of\", but they carry opposite feelings. *Gracias a* is for a good result: someone or something to thank. *Por culpa de* is for a bad result: someone or something to blame.\n\nBoth are followed by a noun: *gracias a ti*, *por culpa del trancón*. Remember the contractions: *a + el = al* and *de + el = del*.\n\nFor a whole clause, use *gracias a que* with a normal verb: *Gracias a que llovió*. After *por culpa*, a person can come as *mía*, *tuya*, *suya*: *por culpa mía*.\n\nThe neutral version, with no praise and no blame, is *debido a* or *a causa de*.",
+  "smallPrint": "Teachers call these causal prepositional phrases. *Gracias a* adds a positive tone and *por culpa de* a negative one.",
+  "readAndPick": [
+    {
+      "es": "Gracias a ti llegamos a tiempo.",
+      "options": [
+        "We were late because of you.",
+        "Thanks to you we made it on time.",
+        "We made it on time, but not thanks to you."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Perdimos el vuelo por culpa del trancón.",
+      "options": [
+        "We missed the flight because of the traffic jam.",
+        "Thanks to the traffic jam we caught the flight."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Gracias a Mariana, todos conocen la historia.",
+      "options": [
+        "Everyone knows the story because Mariana is to blame.",
+        "Thanks to Mariana, everyone knows the story."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Por culpa de Altamira, el barrio está en peligro.",
+      "options": [
+        "Thanks to Altamira, the neighbourhood is safe.",
+        "Because of Altamira, the neighbourhood is in danger."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Gracias a que llovió, se salvó la cosecha.",
+      "options": [
+        "Thanks to the rain, the harvest was saved.",
+        "The harvest was lost because of the rain."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Todo salió mal por culpa mía.",
+      "options": [
+        "Everything went wrong because of me.",
+        "Everything went well thanks to me.",
+        "Everything went wrong because of you."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Por culpa del incendio, cerraron la calle.",
+      "options": [
+        "Because of the fire, they closed the street.",
+        "Thanks to the fire, they opened the street."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Gracias al artículo, todos conocen la verdad.",
+      "options": [
+        "Because of the official, the article is suspended.",
+        "Thanks to the article, everyone knows the truth."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *Gracias a* or *Por culpa de*: ___ ti llegamos a tiempo. Type the whole sentence.",
+      "answer": "Gracias a ti llegamos a tiempo.",
+      "accept": [],
+      "why": "Arriving on time is good news, so we thank: *gracias a*."
+    },
+    {
+      "prompt": "Choose *gracias* or *culpa*: Perdimos el vuelo por ___ del trancón. Type the whole sentence.",
+      "answer": "Perdimos el vuelo por culpa del trancón.",
+      "accept": [],
+      "why": "Missing the flight is bad, so the traffic gets the blame: *por culpa de*."
+    },
+    {
+      "prompt": "Because of Altamira, the neighbourhood is in danger.",
+      "answer": "Por culpa de Altamira, el barrio está en peligro.",
+      "accept": [
+        "El barrio está en peligro por culpa de Altamira."
+      ],
+      "why": "A bad result, so *por culpa de*."
+    },
+    {
+      "prompt": "Thanks to the article, everyone knows the truth.",
+      "answer": "Gracias al artículo, todos conocen la verdad.",
+      "accept": [
+        "Todos conocen la verdad gracias al artículo."
+      ],
+      "why": "*A + el* joins into *al*."
+    },
+    {
+      "prompt": "Thanks to the rain, the harvest was saved.",
+      "answer": "Gracias a que llovió, se salvó la cosecha.",
+      "accept": [],
+      "why": "A whole clause after *gracias a* needs *que*."
+    },
+    {
+      "prompt": "Everything went wrong because of me.",
+      "answer": "Todo salió mal por culpa mía.",
+      "accept": [],
+      "why": "With a person, *por culpa mía* is the natural form."
+    },
+    {
+      "prompt": "Make it blame: *Gracias al trancón llegamos tarde.*",
+      "answer": "Por culpa del trancón llegamos tarde.",
+      "accept": [],
+      "why": "Arriving late is bad news, so *por culpa de*. *De + el* joins into *del*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Gracias a el artículo, todos lo saben.",
+      "right": "Gracias al artículo, todos lo saben.",
+      "why": "Almost. *A + el* always joins into *al*."
+    },
+    {
+      "wrong": "Por culpa a Altamira, perdimos el café.",
+      "right": "Por culpa de Altamira, perdimos el café.",
+      "why": "The blame phrase ends in *de*, not *a*."
+    },
+    {
+      "wrong": "Gracias al incendio, perdimos la casa.",
+      "right": "Por culpa del incendio, perdimos la casa.",
+      "why": "Losing a house is not something to thank anyone for. Blame needs *por culpa de*."
+    }
+  ],
+  "personal": "Think of someone who helped you this week and something that annoyed you. Thank the first with *gracias a* and blame the second with *por culpa de*."
+}

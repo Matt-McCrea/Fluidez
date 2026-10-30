@@ -1,0 +1,168 @@
+{
+  "node": "p:quedar-participio",
+  "hook": {
+    "line": "After a big news story, people want to know the state things were left in: destroyed, solved, signed. Spanish has a verb for the final result.",
+    "es": "El asunto quedó resuelto.",
+    "en": "The matter was settled."
+  },
+  "examples": [
+    {
+      "es": "La casa quedó destruida.",
+      "en": "The house ended up destroyed."
+    },
+    {
+      "es": "El asunto quedó resuelto.",
+      "en": "The matter was settled."
+    },
+    {
+      "es": "El contrato quedó firmado ayer.",
+      "en": "The contract was signed yesterday."
+    },
+    {
+      "es": "Las casas quedaron demolidas.",
+      "en": "The houses ended up demolished."
+    },
+    {
+      "es": "¿Quedó todo claro?",
+      "en": "Is everything clear now?"
+    },
+    {
+      "es": "El café quedó cerrado toda la semana.",
+      "en": "The café stayed closed all week."
+    }
+  ],
+  "rule": "To say what state something ended up in, use *quedar* and then a describing word: *La casa quedó destruida*. It is like *estar*, but it stresses the final result: not \"it is\", but \"it was left like that\".\n\nThe describing word matches the thing: *destruida* for a house, *destruidas* for houses, *resuelto* for a matter. The verb matches too: *quedó*, *quedaron*.\n\nThis is not a process. *Está pintando* means someone is painting right now. *Quedó pintada* means the painting is done.",
+  "smallPrint": "Teachers call this quedar plus the past participle, a way of expressing a resulting state.",
+  "readAndPick": [
+    {
+      "es": "La casa quedó destruida.",
+      "options": [
+        "The house ended up destroyed.",
+        "The houses ended up destroyed.",
+        "The house is being destroyed."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Las casas quedaron destruidas.",
+      "options": [
+        "The house ended up destroyed.",
+        "The houses ended up destroyed."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El contrato quedó firmado ayer.",
+      "options": [
+        "The contract was signed yesterday.",
+        "The contracts were signed yesterday.",
+        "The contract will be signed tomorrow."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El asunto quedó resuelto.",
+      "options": [
+        "The matter was settled.",
+        "The matters were settled.",
+        "The matter is not settled."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Las puertas quedaron cerradas.",
+      "options": [
+        "The door stayed closed.",
+        "The doors stayed closed."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Quedó todo claro?",
+      "options": [
+        "Is everything clear now?",
+        "Is everything being cleared up?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La casa quedó destruida y la calle quedó vacía.",
+      "options": [
+        "The house was left destroyed and the street was left empty.",
+        "The house was left empty and the street was left destroyed."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Los artículos quedaron publicados.",
+      "options": [
+        "The article ended up published.",
+        "The articles ended up published.",
+        "The articles are going to be published."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *destruida* or *destruido*: La casa quedó ___. Type the whole sentence.",
+      "answer": "La casa quedó destruida.",
+      "accept": [],
+      "why": "*Casa* is feminine, so *destruida*."
+    },
+    {
+      "prompt": "Choose *quedó* or *quedaron*: Las casas ___ demolidas. Type the whole sentence.",
+      "answer": "Las casas quedaron demolidas.",
+      "accept": [],
+      "why": "Several houses, so the verb is plural."
+    },
+    {
+      "prompt": "The matter was settled.",
+      "answer": "El asunto quedó resuelto.",
+      "accept": [],
+      "why": "Thing + *quedó* + a describing word for the result."
+    },
+    {
+      "prompt": "The contract was signed yesterday.",
+      "answer": "El contrato quedó firmado ayer.",
+      "accept": [],
+      "why": "*Firmado* describes the contract, so it is masculine."
+    },
+    {
+      "prompt": "Is everything clear now?",
+      "answer": "¿Quedó todo claro?",
+      "accept": [],
+      "why": "*Quedó claro* means it ended up clear."
+    },
+    {
+      "prompt": "Make it plural: *La puerta quedó cerrada.*",
+      "answer": "Las puertas quedaron cerradas.",
+      "accept": [],
+      "why": "Article, noun, verb and describing word all become plural."
+    },
+    {
+      "prompt": "The café stayed closed all week.",
+      "answer": "El café quedó cerrado toda la semana.",
+      "accept": [],
+      "why": "*Cerrado* matches the masculine *café*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La casa quedó destruido.",
+      "right": "La casa quedó destruida.",
+      "why": "Almost. The describing word agrees with the noun, and *casa* is feminine."
+    },
+    {
+      "wrong": "Los edificios quedó destruidos.",
+      "right": "Los edificios quedaron destruidos.",
+      "why": "The verb goes plural with the buildings."
+    },
+    {
+      "wrong": "El asunto quedó resolver.",
+      "right": "El asunto quedó resuelto.",
+      "why": "After *quedar* you need the result word *resuelto*, not the infinitive."
+    }
+  ],
+  "personal": "Think of a place you know that was changed, closed or fixed. Say what state it ended up in, with *quedó* and a describing word."
+}

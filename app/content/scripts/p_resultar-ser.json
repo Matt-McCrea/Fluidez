@@ -1,0 +1,168 @@
+{
+  "node": "p:resultar-ser",
+  "hook": {
+    "line": "In every news story there is a moment when the truth comes out. Tomás has to tell Vale that the thing everyone believed was not what it seemed.",
+    "es": "Resulta que nadie sabía nada.",
+    "en": "It turns out nobody knew anything."
+  },
+  "examples": [
+    {
+      "es": "La noticia resultó ser falsa.",
+      "en": "The news turned out to be false."
+    },
+    {
+      "es": "El ladrón resultó ser el vecino.",
+      "en": "The thief turned out to be the neighbour."
+    },
+    {
+      "es": "Los documentos resultaron ser falsos.",
+      "en": "The documents turned out to be fake."
+    },
+    {
+      "es": "Resulta que nadie sabía nada.",
+      "en": "It turns out nobody knew anything."
+    },
+    {
+      "es": "¿Resultó ser verdad?",
+      "en": "Did it turn out to be true?"
+    },
+    {
+      "es": "Resulta que el dueño es primo de Hernando.",
+      "en": "It turns out the owner is Hernando's cousin."
+    }
+  ],
+  "rule": "When something turns out to be different from what you expected, use *resultar ser*. The pattern is the event, then *resultó ser*, then what it really was: *La noticia resultó ser falsa*.\n\nThe verb matches the subject (*resultó*, *resultaron*), and so does the adjective (*falsa*, *falsos*).\n\nTo start with the surprise instead, say *Resulta que* and then a normal sentence: *Resulta que nadie sabía nada*. No \"it\" is needed, and *resulta* stays the same.\n\nEnglish \"turned out\" is the closest match, so think \"turned out to be\" and you are there.",
+  "smallPrint": "Teachers call *resultar* a linking verb. Here it behaves like *ser* with a note of surprise.",
+  "readAndPick": [
+    {
+      "es": "La noticia resultó ser falsa.",
+      "options": [
+        "The news turned out to be false.",
+        "The news turned out to be true.",
+        "The news was false in the end."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Los documentos resultaron ser falsos.",
+      "options": [
+        "The document turned out to be fake.",
+        "The documents turned out to be fake."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Resulta que nadie sabía nada.",
+      "options": [
+        "It turns out nobody knew anything.",
+        "It turned out nobody knew anything."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La entrevista resultó ser larga.",
+      "options": [
+        "The interview turned out to be long.",
+        "The interviews turned out to be long.",
+        "The interview will be long."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Las noticias resultaron ser verdaderas.",
+      "options": [
+        "The news turned out to be false.",
+        "The news turned out to be true."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El dueño resultó ser un desconocido.",
+      "options": [
+        "The owner turned out to be a stranger.",
+        "The owner is a stranger.",
+        "The owners turned out to be strangers."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Resultó ser el vecino?",
+      "options": [
+        "Does it turn out to be the neighbour?",
+        "Did it turn out to be the neighbour?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Resultó ser una buena idea.",
+      "options": [
+        "It turned out to be a good idea.",
+        "It is going to be a good idea.",
+        "It turned out to be a bad idea."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *falsa* or *falso*: La noticia resultó ser ___. Type the whole sentence.",
+      "answer": "La noticia resultó ser falsa.",
+      "accept": [],
+      "why": "*Noticia* is feminine, so the adjective is *falsa*."
+    },
+    {
+      "prompt": "Choose *resultó* or *resultaron*: Los documentos ___ ser falsos. Type the whole sentence.",
+      "answer": "Los documentos resultaron ser falsos.",
+      "accept": [],
+      "why": "Several documents, so the verb is plural."
+    },
+    {
+      "prompt": "The thief turned out to be the neighbour.",
+      "answer": "El ladrón resultó ser el vecino.",
+      "accept": [],
+      "why": "Person + *resultó ser* + what it turned out they were."
+    },
+    {
+      "prompt": "It turns out nobody knew anything.",
+      "answer": "Resulta que nadie sabía nada.",
+      "accept": [],
+      "why": "*Resulta que* opens the surprise, then a normal sentence."
+    },
+    {
+      "prompt": "Did it turn out to be true?",
+      "answer": "¿Resultó ser verdad?",
+      "accept": [],
+      "why": "A question just needs the question marks and a rising voice."
+    },
+    {
+      "prompt": "Make it about several documents: *El documento resultó ser falso.*",
+      "answer": "Los documentos resultaron ser falsos.",
+      "accept": [],
+      "why": "The noun, the verb and the adjective all become plural."
+    },
+    {
+      "prompt": "The interview turned out to be long.",
+      "answer": "La entrevista resultó ser larga.",
+      "accept": [],
+      "why": "*Larga* matches the feminine *entrevista*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La noticia resultó ser falso.",
+      "right": "La noticia resultó ser falsa.",
+      "why": "Almost. The adjective agrees with the thing described: *noticia* is feminine."
+    },
+    {
+      "wrong": "Los documentos resultó ser falsos.",
+      "right": "Los documentos resultaron ser falsos.",
+      "why": "The verb needs to be plural too."
+    },
+    {
+      "wrong": "La noticia terminó ser falsa.",
+      "right": "La noticia resultó ser falsa.",
+      "why": "*Terminar* does not work this way. For a surprise ending, use *resultar ser*."
+    }
+  ],
+  "personal": "Think of something that turned out differently from what you expected, a trip, a person, a plan. Say it with *resultó ser* or *resulta que*."
+}
