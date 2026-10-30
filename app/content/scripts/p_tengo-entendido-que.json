@@ -1,0 +1,174 @@
+{
+  "node": "p:tengo-entendido-que",
+  "hook": {
+    "line": "When you half know something, you do not state it, you offer it up and let the other person say yes or no. Spanish has a polite phrase for exactly that, and you will hear it all over Bogotá.",
+    "es": "Tengo entendido que Altamira compró el edificio de al lado.",
+    "en": "I understand that Altamira bought the building next door."
+  },
+  "examples": [
+    {
+      "es": "Tengo entendido que se aplazó la reunión.",
+      "en": "I understand that the meeting was postponed."
+    },
+    {
+      "es": "Tengo entendido que Altamira compró el edificio de al lado.",
+      "en": "I understand that Altamira bought the building next door."
+    },
+    {
+      "es": "Supe por Vale que Tomás se va a Canadá.",
+      "en": "I heard from Vale that Tomás is going to Canada."
+    },
+    {
+      "es": "Me contaron que el café cierra en diciembre.",
+      "en": "I was told that the café closes in December."
+    },
+    {
+      "es": "Nos contaron que el funcionario viajó a Miami.",
+      "en": "We were told that the official travelled to Miami."
+    },
+    {
+      "es": "Tengo entendido que usted es el dueño del café, ¿verdad?",
+      "en": "I understand that you are the owner of the café, is that right? (formal)"
+    }
+  ],
+  "rule": "Say *Tengo entendido que…* and then what you heard. It is not a question, but it invites a yes or a no, and it keeps the claim at arm's length.\n\nOther ways to say where the news came from:\n*Me contaron que…* (someone told me)\n*Supe por Marta que…* (I heard it from Marta)\n\nAfter all of these the news stays in the normal tense, with no special mood. Change the person on *tener*: *tengo, tienes, tiene, tenemos*. *Entendido* never changes.",
+  "smallPrint": "Teachers call this reporting without vouching: you pass on the news but do not guarantee it.",
+  "readAndPick": [
+    {
+      "es": "Tengo entendido que Rosa vendió el café.",
+      "options": [
+        "I understand that Rosa sold the café.",
+        "I understand that Rosa will sell the café.",
+        "Rosa understands that I sold the café."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me contaron que Tomás se va.",
+      "options": [
+        "I told them that Tomás is leaving.",
+        "We were told that Tomás is leaving.",
+        "I was told that Tomás is leaving."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Nos contaron que cerraron la calle.",
+      "options": [
+        "We were told that they closed the street.",
+        "I was told that they closed the street.",
+        "We told them that they closed the street."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Supe por Mariana que viajó a Miami.",
+      "options": [
+        "Mariana heard from me that she travelled to Miami.",
+        "I heard from Mariana that she travelled to Miami.",
+        "You heard from Mariana that she travelled to Miami."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tiene entendido que hay un juez.",
+      "options": [
+        "I understand that there is a judge.",
+        "We understand that there is a judge.",
+        "She understands that there is a judge."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tenemos entendido que la reunión se aplazó.",
+      "options": [
+        "We understand that the meeting was postponed.",
+        "I understand that the meeting was postponed.",
+        "They understand that the meeting was postponed."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Supiste por Hernando que cierran el café.",
+      "options": [
+        "I heard from Hernando that they are closing the café.",
+        "You heard from Hernando that they are closing the café.",
+        "He heard from you that they are closing the café."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tengo entendido que no cierran el café.",
+      "options": [
+        "I understand that they are closing the café.",
+        "I do not understand why they are closing the café.",
+        "I understand that they are not closing the café."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *___ que el café cierra en diciembre.* (*Me contaron* or *Me contó*) I was told that the café closes in December.",
+      "answer": "Me contaron que el café cierra en diciembre.",
+      "accept": [],
+      "why": "*Me contaron* is the unnamed \"people told me\"."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Supe ___ Vale que Tomás se va.* (*por* or *de*) I heard from Vale that Tomás is leaving.",
+      "answer": "Supe por Vale que Tomás se va.",
+      "accept": [],
+      "why": "The person you heard it from comes after *por*."
+    },
+    {
+      "prompt": "Say: I understand that Altamira bought the building.",
+      "answer": "Tengo entendido que Altamira compró el edificio.",
+      "accept": [],
+      "why": "*Tengo entendido que* opens the claim, then the news follows in its normal tense."
+    },
+    {
+      "prompt": "Say to the owner (formal): I understand that you are the owner.",
+      "answer": "Tengo entendido que usted es el dueño.",
+      "accept": [
+        "Tengo entendido que usted es la dueña."
+      ],
+      "why": "The phrase stays the same with a formal *usted*; only the news changes."
+    },
+    {
+      "prompt": "Say: We were told that the senator travelled to Miami.",
+      "answer": "Nos contaron que el senador viajó a Miami.",
+      "accept": [],
+      "why": "*Nos contaron* is the *we* version of \"someone told us\"."
+    },
+    {
+      "prompt": "Make it negative: *Tengo entendido que el café cierra en diciembre.*",
+      "answer": "Tengo entendido que el café no cierra en diciembre.",
+      "accept": [],
+      "why": "The *no* goes in the news, not before *tengo*."
+    },
+    {
+      "prompt": "Change to *we*: *Tengo entendido que Rosa vendió el café.*",
+      "answer": "Tenemos entendido que Rosa vendió el café.",
+      "accept": [],
+      "why": "Only *tener* changes: *tenemos*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Tengo entendido de que se aplazó la reunión.",
+      "right": "Tengo entendido que se aplazó la reunión.",
+      "why": "Almost. English says \"I understand of\" nothing, and neither does Spanish: *que* follows straight on."
+    },
+    {
+      "wrong": "Supe de Vale que Tomás se va.",
+      "right": "Supe por Vale que Tomás se va.",
+      "why": "Almost. For who told you, use *por*, not *de*."
+    },
+    {
+      "wrong": "Tengo entendido que sea cierto.",
+      "right": "Tengo entendido que es cierto.",
+      "why": "Almost. You are reporting something you take as true, so no special mood: just *es*."
+    }
+  ],
+  "personal": "Think of a rumour you have heard lately, about your work, your street or your family. Say it back with *Tengo entendido que…* and wait for someone to confirm it."
+}

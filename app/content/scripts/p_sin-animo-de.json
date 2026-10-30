@@ -1,0 +1,172 @@
+{
+  "node": "p:sin-animo-de",
+  "hook": {
+    "line": "Before you disagree with someone in an official meeting, Spanish expects you to say that you are about to. It sounds polite, but everyone knows what follows.",
+    "es": "Sin ánimo de ofender, ese precio me parece alto.",
+    "en": "No offence meant, but that price seems high to me."
+  },
+  "examples": [
+    {
+      "es": "Sin ánimo de contradecirlo, señor, creo que hay un error.",
+      "en": "With no wish to contradict you, sir, I think there's a mistake. (formal)"
+    },
+    {
+      "es": "Con todo respeto, el cálculo no está bien.",
+      "en": "With all due respect, the calculation isn't right."
+    },
+    {
+      "es": "Si me permite la observación, falta un dato.",
+      "en": "If I may make an observation, there's a figure missing. (formal)"
+    },
+    {
+      "es": "Sin ánimo de ofender, ese precio me parece alto.",
+      "en": "No offence meant, but that price seems high to me."
+    },
+    {
+      "es": "Puede que me equivoque, pero el contrato dice otra cosa.",
+      "en": "I may be wrong, but the contract says something else."
+    },
+    {
+      "es": "No es por nada, pero esa silla es mía.",
+      "en": "No offence, but that chair is mine."
+    }
+  ],
+  "rule": "These openers announce the disagreement and then make it:\n*Sin ánimo de* + infinitive (*ofender*, *contradecirlo*)\n*Con todo respeto, …*\n*Si me permite la observación, …*\n*Puede que me equivoque, pero…*\n\nThey are stronger than they look: the polite wrapping means a \"but\" is coming. Among friends the formal ones sound sarcastic. Use the casual cousin *No es por nada, pero…*.\nAfter *puede que*, the verb takes the subjunctive: *me equivoque*.",
+  "smallPrint": "Teachers call these softeners: phrases that cushion a disagreement before you voice it.",
+  "readAndPick": [
+    {
+      "es": "Sin ánimo de contradecirte, creo que hay un error.",
+      "options": [
+        "With no wish to contradict you (informal), I think there's a mistake.",
+        "With no wish to contradict me, I think there's a mistake.",
+        "With no wish to contradict you (formal), I think there's a mistake."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Con todo respeto, el cálculo no está bien.",
+      "options": [
+        "With all due respect, the calculation is right.",
+        "With all due respect, the calculation isn't right.",
+        "With all due respect, the calculation wasn't made."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Si me permite la observación, falta un dato.",
+      "options": [
+        "If I may make an observation, there are too many figures.",
+        "If I may make an observation, a figure is missing.",
+        "If you allow me, I will add a figure."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Puede que me equivoque, pero falta un dato.",
+      "options": [
+        "I may be wrong, but a figure is missing.",
+        "You may be wrong, but a figure is missing.",
+        "I was wrong, and a figure is missing."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Puede que se equivoque, señor, pero el contrato dice otra cosa.",
+      "options": [
+        "I may be wrong, sir, but the contract says something else.",
+        "You (formal) may be wrong, sir, but the contract says something else.",
+        "You were wrong, sir, and the contract says something else."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No es por nada, pero esa silla es mía.",
+      "options": [
+        "No offence, but that chair is yours.",
+        "No offence, but that chair is free.",
+        "No offence, but that chair is mine."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Sin ánimo de ofender, ese precio me parece alto.",
+      "options": [
+        "No offence meant, but that price seems low to me.",
+        "No offence meant, but that price seems high to me.",
+        "No offence meant, but that price seems fair to me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Con todo respeto, no estoy de acuerdo.",
+      "options": [
+        "With all respect, I agree.",
+        "With all respect, they disagree.",
+        "With all respect, I disagree."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Sin ánimo ___ contradecirlo, creo que hay un error.* (*de* or *en*) With no wish to contradict you (formal), I think there's a mistake.",
+      "answer": "Sin ánimo de contradecirlo, creo que hay un error.",
+      "accept": [],
+      "why": "The set phrase is *sin ánimo de*, followed by an infinitive."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Puede que me ___, pero falta un dato.* (*equivoque* or *equivoco*) I may be wrong, but a figure is missing.",
+      "answer": "Puede que me equivoque, pero falta un dato.",
+      "accept": [],
+      "why": "After *puede que* the verb takes the subjunctive, *equivoque*."
+    },
+    {
+      "prompt": "Say: With all due respect, the calculation isn't right.",
+      "answer": "Con todo respeto, el cálculo no está bien.",
+      "accept": [],
+      "why": "*Con todo respeto* opens the sentence, then a comma."
+    },
+    {
+      "prompt": "Say to a formal person: If I may make an observation, a figure is missing.",
+      "answer": "Si me permite la observación, falta un dato.",
+      "accept": [],
+      "why": "*Permite* is the *usted* form, right for a formal listener."
+    },
+    {
+      "prompt": "Say: No offence meant, but that price seems high to me.",
+      "answer": "Sin ánimo de ofender, ese precio me parece alto.",
+      "accept": [],
+      "why": "*Sin ánimo de* plus the infinitive *ofender*."
+    },
+    {
+      "prompt": "Make it casual, for a friend: *Sin ánimo de ofender, esa silla es mía.* Use *No es por nada, pero…*",
+      "answer": "No es por nada, pero esa silla es mía.",
+      "accept": [],
+      "why": "*No es por nada, pero…* is the casual cousin of the formal openers."
+    },
+    {
+      "prompt": "Say it to a friend (informal): *Sin ánimo de contradecirlo, creo que hay un error.*",
+      "answer": "Sin ánimo de contradecirte, creo que hay un error.",
+      "accept": [],
+      "why": "*Te* replaces *lo* when you talk to a friend."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Sin ánimo contradecirlo, creo que hay un error.",
+      "right": "Sin ánimo de contradecirlo, creo que hay un error.",
+      "why": "Almost. The phrase needs *de* before the verb."
+    },
+    {
+      "wrong": "Sin ánimo de ofendo, ese precio me parece alto.",
+      "right": "Sin ánimo de ofender, ese precio me parece alto.",
+      "why": "Almost. After *de* Spanish uses the infinitive, not a conjugated form."
+    },
+    {
+      "wrong": "Puede que me equivoco, pero falta un dato.",
+      "right": "Puede que me equivoque, pero falta un dato.",
+      "why": "Almost. *Puede que* is followed by the subjunctive, *equivoque*."
+    }
+  ],
+  "personal": "Think of something you would politely disagree with at work or at home. Say it once with *Con todo respeto, …* and once with *No es por nada, pero…*."
+}

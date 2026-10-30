@@ -1,0 +1,172 @@
+{
+  "node": "p:el-x-de-y",
+  "hook": {
+    "line": "Spanish lets you slip in your opinion of someone without saying \"I think\". Put a label in front of the name and everybody hears the verdict. Handy, but mostly for people who are not in the room.",
+    "es": "El bobo de mi hermano olvidó las llaves.",
+    "en": "My idiot brother forgot the keys."
+  },
+  "examples": [
+    {
+      "es": "El bobo de mi hermano olvidó las llaves.",
+      "en": "My idiot brother forgot the keys."
+    },
+    {
+      "es": "La pobre de Ana no sabía nada.",
+      "en": "Poor Ana didn't know a thing."
+    },
+    {
+      "es": "No me hables del tipo ese.",
+      "en": "Don't talk to me about that guy."
+    },
+    {
+      "es": "¿Y ese qué se cree?",
+      "en": "And who does he think he is?"
+    },
+    {
+      "es": "El tonto de mi vecino dejó la puerta abierta.",
+      "en": "My silly neighbour left the door open."
+    },
+    {
+      "es": "El señor ese no contesta el celular.",
+      "en": "That man never answers his phone."
+    }
+  ],
+  "rule": "Build it as article, label, *de*, person: *el bobo de mi hermano*.\nThe label carries your verdict, and the article and label match the person: *la boba de Ana*, *los tontos de mis vecinos*.\n*La pobre de Ana* is pity, not scorn.\n\nTo sneer, put *ese* after the person word: *el tipo ese*, *la tipa esa*. Alone, *¿Y ese qué se cree?* says \"who does he think he is?\".\n\nEnglish says \"my idiot brother\" with no little word in between. Spanish needs the *de*. Use it for people who are not there.",
+  "smallPrint": "Teachers call this an evaluative noun phrase: a label plus a person that shows how you feel about them.",
+  "readAndPick": [
+    {
+      "es": "El bobo de Pedro olvidó las llaves.",
+      "options": [
+        "Pedro's idiot brother forgot the keys.",
+        "That fool Pedro forgot the keys.",
+        "Pedro forgot the fool's keys."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La pobre de Rosa trabajó toda la vida.",
+      "options": [
+        "Rosa's poor family worked all their lives.",
+        "Rosa worked her whole life, the fool.",
+        "Poor Rosa worked her whole life."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No me hables del tipo ese.",
+      "options": [
+        "Don't talk to that guy about me.",
+        "Don't talk to me about that guy.",
+        "Talk to me about that guy."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Y ese qué se cree?",
+      "options": [
+        "And who does he think he is?",
+        "And what do you think of him?",
+        "And what does he believe in?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Los tontos de mis vecinos dejaron la puerta abierta.",
+      "options": [
+        "My silly neighbours left the door open.",
+        "My silly neighbour left the door open.",
+        "I left my neighbours' door open."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El señor ese no contesta el celular.",
+      "options": [
+        "I don't answer that man's phone.",
+        "That man never answers his phone.",
+        "The man answered the phone."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La tipa esa me debe plata.",
+      "options": [
+        "I owe that woman money.",
+        "That woman owes you money.",
+        "That woman owes me money."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La pobre de mi mamá esperó una hora.",
+      "options": [
+        "My poor mother waited an hour.",
+        "My mother waited an hour for the poor woman.",
+        "My mother is poor and waited an hour."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *___ de mi hermano olvidó las llaves.* (*El bobo* or *La boba*) My idiot brother forgot the keys.",
+      "answer": "El bobo de mi hermano olvidó las llaves.",
+      "accept": [],
+      "why": "Your brother is a man, so the article and the label are masculine."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *___ de Ana no sabía nada.* (*La pobre* or *El pobre*) Poor Ana didn't know a thing.",
+      "answer": "La pobre de Ana no sabía nada.",
+      "accept": [],
+      "why": "Ana is a woman, so *la pobre*."
+    },
+    {
+      "prompt": "Say, scornfully: Don't talk to me about that guy.",
+      "answer": "No me hables del tipo ese.",
+      "accept": [],
+      "why": "*De* plus *el* joins into *del*, and *ese* after the noun adds the sneer."
+    },
+    {
+      "prompt": "Say: And who does he think he is?",
+      "answer": "¿Y ese qué se cree?",
+      "accept": [],
+      "why": "This is a fixed way to say it: *ese* stands for the man."
+    },
+    {
+      "prompt": "Say: My silly neighbour (a man) left the door open.",
+      "answer": "El tonto de mi vecino dejó la puerta abierta.",
+      "accept": [],
+      "why": "Article, label, *de*, then the person."
+    },
+    {
+      "prompt": "Change Pedro to Ana: *El bobo de Pedro olvidó las llaves.*",
+      "answer": "La boba de Ana olvidó las llaves.",
+      "accept": [],
+      "why": "Ana is a woman, so both the article and the label turn feminine."
+    },
+    {
+      "prompt": "Make it plural: *El tonto de mi vecino dejó la puerta abierta.*",
+      "answer": "Los tontos de mis vecinos dejaron la puerta abierta.",
+      "accept": [],
+      "why": "Article, label, person and verb all go plural."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El bobo mi hermano olvidó las llaves.",
+      "right": "El bobo de mi hermano olvidó las llaves.",
+      "why": "Almost. English says \"my idiot brother\" with nothing in between, but Spanish needs *de* before the person."
+    },
+    {
+      "wrong": "El boba de Ana olvidó las llaves.",
+      "right": "La boba de Ana olvidó las llaves.",
+      "why": "Almost. The article and the label both match the person, and Ana is a woman."
+    },
+    {
+      "wrong": "No me hables de el tipo ese.",
+      "right": "No me hables del tipo ese.",
+      "why": "Almost. *De* and *el* always join into *del*."
+    }
+  ],
+  "personal": "Think of a character from a film or the news who annoys you. Say something about them with *el… de…* or *la… de…*, or with *ese* after the noun."
+}

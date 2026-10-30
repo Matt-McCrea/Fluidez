@@ -1,0 +1,176 @@
+{
+  "node": "p:rectificar-reparar",
+  "hook": {
+    "line": "Spanish keeps two verbs apart that English lumps together as \"fix\". You *rectificas* a statement and you *reparas* a broken thing. Get it right and you sound like someone who reads the news.",
+    "es": "Rectifico lo que dije ayer.",
+    "en": "I correct what I said yesterday."
+  },
+  "examples": [
+    {
+      "es": "El ministro rectificó sus declaraciones.",
+      "en": "The minister corrected his statements."
+    },
+    {
+      "es": "Repararon la falla del motor.",
+      "en": "They repaired the engine fault."
+    },
+    {
+      "es": "Me arreglaron el celular en una hora.",
+      "en": "They fixed my phone in an hour."
+    },
+    {
+      "es": "El senador reconoció su error y pidió disculpas.",
+      "en": "The senator admitted his mistake and apologised."
+    },
+    {
+      "es": "La entidad rectificó la cifra después de la crítica.",
+      "en": "The agency corrected the figure after the criticism."
+    },
+    {
+      "es": "Mañana reparan el techo del café.",
+      "en": "Tomorrow they are repairing the roof of the café."
+    }
+  ],
+  "rule": "Ask what is broken.\n\nWords, numbers and decisions get corrected: *rectificar* (a statement, a figure) or *reconocer un error* (admit a mistake, with no *de* in between).\nThings get fixed: *reparar* (a fault, a roof, a motor) or *arreglar* (the everyday word for a phone, a car, a door).\n\nEnglish uses \"fix\" for both. Spanish does not: a minister never *repara* his statements, and a mechanic never *rectifica* your phone.\nIn Latin America a fault is a *falla*.",
+  "smallPrint": "Teachers call this a lexical pair: two verbs that share one English translation but split the job between them.",
+  "readAndPick": [
+    {
+      "es": "Rectificaron la cifra.",
+      "options": [
+        "They corrected the figure.",
+        "They repaired the figure.",
+        "They lost the figure."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Reparé la puerta.",
+      "options": [
+        "I corrected the door.",
+        "I closed the door.",
+        "I repaired the door."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La senadora rectificó su afirmación.",
+      "options": [
+        "The senator repeated her claim.",
+        "The senator repaired her claim.",
+        "The senator corrected her claim."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Rectificamos lo que dijimos.",
+      "options": [
+        "We correct what we said.",
+        "I correct what I said.",
+        "They correct what they said."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Arreglé tu carro.",
+      "options": [
+        "You fixed my car.",
+        "I fixed your car.",
+        "They fixed your car."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El ministro reconoció su error.",
+      "options": [
+        "The minister hid his mistake.",
+        "The minister admitted his mistake.",
+        "The minister repaired his mistake."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Van a reparar el techo.",
+      "options": [
+        "They are going to correct the roof.",
+        "They repaired the roof.",
+        "They are going to repair the roof."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No repararon la falla del motor.",
+      "options": [
+        "They repaired the engine fault.",
+        "They did not repair the engine fault.",
+        "They did not correct the engine statement."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *El ministro ___ sus declaraciones.* (*rectificó* or *reparó*) The minister corrected his statements.",
+      "answer": "El ministro rectificó sus declaraciones.",
+      "accept": [],
+      "why": "Statements are words, and words get corrected with *rectificar*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Mañana ___ el techo.* (*reparan* or *rectifican*) Tomorrow they repair the roof.",
+      "answer": "Mañana reparan el techo.",
+      "accept": [],
+      "why": "A roof is a physical thing, so *reparar*."
+    },
+    {
+      "prompt": "Say: The senator admitted his mistake.",
+      "answer": "El senador reconoció su error.",
+      "accept": [
+        "El senador admitió su error."
+      ],
+      "why": "*Reconocer* and *admitir* both take the mistake directly, with no *de*."
+    },
+    {
+      "prompt": "Say: They fixed my phone in an hour. (they)",
+      "answer": "Me arreglaron el celular en una hora.",
+      "accept": [
+        "Arreglaron mi celular en una hora."
+      ],
+      "why": "*Arreglar* is the everyday word for fixing a phone."
+    },
+    {
+      "prompt": "Say: I corrected the figure. (I)",
+      "answer": "Rectifiqué la cifra.",
+      "accept": [],
+      "why": "A figure is information, so *rectificar*; the *-qué* spelling keeps the sound of *k* before *é*."
+    },
+    {
+      "prompt": "Make it about a woman: *El senador rectificó su afirmación.*",
+      "answer": "La senadora rectificó su afirmación.",
+      "accept": [],
+      "why": "A woman in the role takes *la senadora*; the verb stays the same."
+    },
+    {
+      "prompt": "Make it negative: *Repararon la falla del motor.*",
+      "answer": "No repararon la falla del motor.",
+      "accept": [],
+      "why": "*No* goes straight before the verb."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Rectificaron mi celular.",
+      "right": "Arreglaron mi celular.",
+      "why": "Almost. A phone is a thing to fix, and *rectificar* is for words and figures; use *arreglar* or *reparar*."
+    },
+    {
+      "wrong": "El ministro reparó sus declaraciones.",
+      "right": "El ministro rectificó sus declaraciones.",
+      "why": "Almost. English says \"fix\" for anything, but statements get corrected with *rectificar*."
+    },
+    {
+      "wrong": "El senador admitió de su error.",
+      "right": "El senador admitió su error.",
+      "why": "Almost. English says \"admit to\", but *admitir* takes the mistake directly, with no *de*."
+    }
+  ],
+  "personal": "Think of something you got wrong this week, or something at home that broke. Say one sentence with *rectifiqué* and one with *arreglé* or *reparé*."
+}

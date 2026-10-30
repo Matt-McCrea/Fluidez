@@ -1,0 +1,174 @@
+{
+  "node": "p:no-digo-que-pero",
+  "hook": {
+    "line": "The most useful half of this sentence is the second one. You first deny a charge nobody made, then you say what you really think. It lets you criticise without picking a fight.",
+    "es": "No digo que esté mal, pero yo no lo haría.",
+    "en": "I'm not saying it's wrong, but I wouldn't do it."
+  },
+  "examples": [
+    {
+      "es": "No digo que esté mal, pero yo no lo haría.",
+      "en": "I'm not saying it's wrong, but I wouldn't do it."
+    },
+    {
+      "es": "No, si yo no digo que sea mala, pero es muy larga.",
+      "en": "No, I'm not saying it's bad, but it's very long."
+    },
+    {
+      "es": "No digo que Altamira mienta, pero yo no firmaría.",
+      "en": "I'm not saying Altamira is lying, but I wouldn't sign."
+    },
+    {
+      "es": "No decimos que el senador sea culpable, pero hay muchas preguntas.",
+      "en": "We aren't saying the senator is guilty, but there are many questions."
+    },
+    {
+      "es": "No digo que tengas razón, pero te escucho.",
+      "en": "I'm not saying you're right, but I'm listening."
+    },
+    {
+      "es": "No digo que sea fácil, pero se puede.",
+      "en": "I'm not saying it's easy, but it can be done."
+    }
+  ],
+  "rule": "Say *No digo que* + subjunctive, then *pero* and your real point.\n\nThe verb right after *que* is always subjunctive (*esté*, *sea*, *mienta*, *tengas*), because you are refusing to claim it. The *pero* half is ordinary: *yo no lo haría*.\n\nTo sound a little injured, start with *No, si yo no digo que…*: \"I never said that, but…\".\n\nChange the person on *decir*: *digo, dices, dice, decimos*.",
+  "smallPrint": "Teachers call this a veiled negation: you push away an accusation that nobody has made.",
+  "readAndPick": [
+    {
+      "es": "No digo que esté mal, pero yo no lo haría.",
+      "options": [
+        "I'm saying it's wrong, but I wouldn't do it.",
+        "You aren't saying it's wrong, but you wouldn't do it.",
+        "I'm not saying it's wrong, but I wouldn't do it."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No decimos que sea culpable, pero hay preguntas.",
+      "options": [
+        "We aren't saying he is guilty, but there are questions.",
+        "He isn't saying we are guilty, but there are questions.",
+        "We are saying he is guilty, and there are questions."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No dices que sea mala, pero es muy larga.",
+      "options": [
+        "I'm not saying it's bad, but it's very long.",
+        "You aren't saying it's bad, but it's very long.",
+        "You are saying it's bad, but it's very long."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No, si yo no digo que sea fácil, pero se puede.",
+      "options": [
+        "No, I'm saying it's easy, but it can't be done.",
+        "No, I'm not saying it's easy, and it can't be done.",
+        "No, I'm not saying it's easy, but it can be done."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No digo que Altamira mienta, pero yo no firmaría.",
+      "options": [
+        "I'm saying Altamira lies, but I'd sign.",
+        "I'm not saying Altamira is lying, but I wouldn't sign.",
+        "Altamira isn't saying I lie, but I wouldn't sign."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No digo que sea tarde, pero ya me voy.",
+      "options": [
+        "I'm not saying it's late, but I'm leaving now.",
+        "I'm saying it's late, and I'm leaving now.",
+        "You aren't saying it's late, but you're leaving now."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ella no dice que esté mal, pero no lo haría.",
+      "options": [
+        "I'm not saying it's wrong, but I wouldn't do it.",
+        "She is saying it's wrong, but she wouldn't do it.",
+        "She isn't saying it's wrong, but she wouldn't do it."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No digo que tengas razón, pero te escucho.",
+      "options": [
+        "I'm saying you're right, and I'm listening.",
+        "I'm not saying you're right, but I'm listening.",
+        "You aren't saying I'm right, but you're listening."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *No digo que ___ mal, pero yo no lo haría.* (*esté* or *está*) I'm not saying it's wrong, but I wouldn't do it.",
+      "answer": "No digo que esté mal, pero yo no lo haría.",
+      "accept": [],
+      "why": "After *no digo que* the verb takes the subjunctive, *esté*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *No, si yo no digo que ___ fácil, pero se puede.* (*sea* or *es*) No, I'm not saying it's easy, but it can be done.",
+      "answer": "No, si yo no digo que sea fácil, pero se puede.",
+      "accept": [],
+      "why": "The subjunctive *sea* keeps you from claiming it is easy."
+    },
+    {
+      "prompt": "Say: I'm not saying Altamira is lying, but I wouldn't sign.",
+      "answer": "No digo que Altamira mienta, pero yo no firmaría.",
+      "accept": [],
+      "why": "*Mienta* is the subjunctive, and the *pero* half is ordinary."
+    },
+    {
+      "prompt": "Say: We aren't saying the senator is guilty, but there are many questions.",
+      "answer": "No decimos que el senador sea culpable, pero hay muchas preguntas.",
+      "accept": [],
+      "why": "*Decimos* is *we*, and *sea* is the subjunctive."
+    },
+    {
+      "prompt": "Say to a friend (informal): I'm not saying you're right, but I'm listening.",
+      "answer": "No digo que tengas razón, pero te escucho.",
+      "accept": [],
+      "why": "*Tengas* is the subjunctive for *you* (informal)."
+    },
+    {
+      "prompt": "Make it about *her*: *No digo que esté mal, pero yo no lo haría.* She isn't saying it's wrong, but she wouldn't do it.",
+      "answer": "Ella no dice que esté mal, pero no lo haría.",
+      "accept": [
+        "Ella no dice que esté mal, pero ella no lo haría."
+      ],
+      "why": "*Dice* is the *she* form, and *esté* stays subjunctive."
+    },
+    {
+      "prompt": "Make it the injured version: *No digo que sea mala, pero es muy larga.* Start with *No, si yo…*",
+      "answer": "No, si yo no digo que sea mala, pero es muy larga.",
+      "accept": [],
+      "why": "*No, si yo no digo que…* is the veiled denial: \"I never said that\"."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No digo que está mal, pero yo no lo haría.",
+      "right": "No digo que esté mal, pero yo no lo haría.",
+      "why": "Almost. English says \"I'm not saying it is\", but Spanish needs the subjunctive after *no digo que*."
+    },
+    {
+      "wrong": "No digo que esté mal, pero yo no lo haga.",
+      "right": "No digo que esté mal, pero yo no lo haría.",
+      "why": "Almost. Only the half after *que* is subjunctive; the *pero* half is your real statement."
+    },
+    {
+      "wrong": "Yo digo que no sea mala, pero es muy larga.",
+      "right": "Yo no digo que sea mala, pero es muy larga.",
+      "why": "Almost. The *no* goes before *digo*: you are refusing to say it, not saying the opposite."
+    }
+  ],
+  "personal": "Think of a plan or a proposal at work that you have doubts about. Say your doubt with *No digo que…, pero…* so that nobody can say you were against it."
+}

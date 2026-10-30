@@ -1,0 +1,174 @@
+{
+  "node": "p:verbo-que-interpreta",
+  "hook": {
+    "line": "In Spanish the verb you choose to report someone does half the talking. \"He said\" is neutral, but *soltó*, *aclaró* and *insinuó* tell your listener how you took it, and you can be held to that.",
+    "es": "Me soltó que ya se encargaría otro.",
+    "en": "He blurted out that someone else would take care of it."
+  },
+  "examples": [
+    {
+      "es": "Me soltó que ya se encargaría otro.",
+      "en": "He blurted out that someone else would take care of it."
+    },
+    {
+      "es": "Me reprochó que no hubiera ido.",
+      "en": "She reproached me for not having gone."
+    },
+    {
+      "es": "Aclaró que no estaba en contra.",
+      "en": "He made it clear that he wasn't against it."
+    },
+    {
+      "es": "Insinuó que yo había mentido.",
+      "en": "She hinted that I had lied."
+    },
+    {
+      "es": "Hernando me soltó que el café se vendería.",
+      "en": "Hernando blurted out to me that the café would be sold."
+    },
+    {
+      "es": "El senador insinuó que Altamira había pagado.",
+      "en": "The senator hinted that Altamira had paid."
+    }
+  ],
+  "rule": "Pick the verb that matches how it sounded:\n*soltar que* (it just slipped out)\n*aclarar que* (made it clear)\n*insinuar que* (hinted)\n*reprochar que* (blamed me for it)\n\nAfter *soltar*, *aclarar* and *insinuar* the news stays in the normal tenses, shifted back when the report is in the past (*había mentido*, *estaba*).\nAfter *reprochar* the news takes the subjunctive: *que no hubiera ido*.\n\nTo report an order, use *que* too: *Me dijo que lo llamara*, never an infinitive.",
+  "smallPrint": "Teachers call these verbs of speech that interpret: the verb adds your reading of what was said.",
+  "readAndPick": [
+    {
+      "es": "Insinuó que yo había mentido.",
+      "options": [
+        "She stated plainly that I had lied.",
+        "She hinted that I had lied.",
+        "She regretted that I had lied."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me reprochó que no hubiera ido.",
+      "options": [
+        "She reproached me for not having gone.",
+        "She told me that I had not gone.",
+        "She hoped that I would not go."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Aclaró que no estaba en contra.",
+      "options": [
+        "He blurted out that he was against it.",
+        "He hinted that he was against it.",
+        "He made it clear that he wasn't against it."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Me soltó que ya se encargaría otro.",
+      "options": [
+        "He reproached me that someone else had taken care of it.",
+        "He blurted out that someone else would take care of it.",
+        "He made it clear that someone else had taken care of it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Insinúas que yo robé la plata.",
+      "options": [
+        "You are hinting that I stole the money.",
+        "I am hinting that you stole the money.",
+        "You admit that I stole the money."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Reprochó que no la invitaran.",
+      "options": [
+        "She hinted that they invited her.",
+        "She made it clear that they didn't invite her.",
+        "She reproached them for not inviting her."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Aclaramos que no hubo ninguna oferta.",
+      "options": [
+        "We hinted that there was an offer.",
+        "They made it clear that there was no offer.",
+        "We made it clear that there was no offer."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Me soltó que se iba a Canadá.",
+      "options": [
+        "He blurted out to me that he was going to Canada.",
+        "I blurted out to him that he was going to Canada.",
+        "He reproached me for going to Canada."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Me ___ que ya se encargaría otro.* (*soltó* or *reprochó*) He blurted out that someone else would take care of it.",
+      "answer": "Me soltó que ya se encargaría otro.",
+      "accept": [],
+      "why": "It just slipped out, so *soltó*, and the news stays in the normal tenses."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Insinuó que yo ___ mentido.* (*había* or *he*) She hinted that I had lied.",
+      "answer": "Insinuó que yo había mentido.",
+      "accept": [],
+      "why": "The report is in the past, so \"have lied\" shifts back to *había mentido*."
+    },
+    {
+      "prompt": "Say: She reproached me for not having gone.",
+      "answer": "Me reprochó que no hubiera ido.",
+      "accept": [],
+      "why": "After *reprochar* the news takes the subjunctive, here *hubiera ido*."
+    },
+    {
+      "prompt": "Say: He made it clear that he wasn't against it.",
+      "answer": "Aclaró que no estaba en contra.",
+      "accept": [],
+      "why": "*Aclarar que* is followed by plain tenses, shifted back."
+    },
+    {
+      "prompt": "Say: The senator hinted that Altamira had paid.",
+      "answer": "El senador insinuó que Altamira había pagado.",
+      "accept": [],
+      "why": "*Insinuó que* plus *había pagado* for something already done."
+    },
+    {
+      "prompt": "Change the verb to *hinted*: *Me soltó que Vale había mentido.*",
+      "answer": "Me insinuó que Vale había mentido.",
+      "accept": [],
+      "why": "Only the verb changes, since the news keeps its normal tenses."
+    },
+    {
+      "prompt": "Say: Tomás reproached Vale for not calling.",
+      "answer": "Tomás le reprochó a Vale que no llamara.",
+      "accept": [
+        "Tomás le reprochó que Vale no llamara."
+      ],
+      "why": "*Reprochar* is followed by the subjunctive, so *llamara*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me dijo llamarlo.",
+      "right": "Me dijo que lo llamara.",
+      "why": "Almost. English says \"told me to call him\", but Spanish reports an order with *que* and the subjunctive, never an infinitive."
+    },
+    {
+      "wrong": "Me reprochó que no fui.",
+      "right": "Me reprochó que no hubiera ido.",
+      "why": "Almost. After *reprochar que* the news takes the subjunctive."
+    },
+    {
+      "wrong": "Insinuó que yo he mentido.",
+      "right": "Insinuó que yo había mentido.",
+      "why": "Almost. Once the report is in the past, \"I have lied\" moves back to *había mentido*."
+    }
+  ],
+  "personal": "Think of the last time someone dropped a hint or complained about you. Report it in one sentence with *insinuó que…* or *me reprochó que…*."
+}
