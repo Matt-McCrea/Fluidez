@@ -1,0 +1,686 @@
+[
+  {
+    "id": "w-u23-01",
+    "unit": "u23",
+    "prompt": "Text Vale, your friend. You are going to the bank tomorrow to open an account. Say you do not know what documents you need, ask her which bank she recommends, and ask what she thinks.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "(?<![\\wáéíóúñ])qué(?![\\wáéíóúñ])",
+        "label": "ask with qué"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bcuál(es)?\\b",
+        "label": "ask with cuál"
+      },
+      {
+        "type": "question"
+      }
+    ],
+    "model": "Vale, mañana voy al banco para abrir una cuenta . ¿Qué documentos necesito? ¿Cuál banco me recomiendas? ¿Qué piensas tú? Tengo mi cédula y una factura.",
+    "focus": "g:que-vs-cual",
+    "requires": [
+      "c:tengo",
+      "c:voy-vas",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:present-ar",
+      "g:questions",
+      "g:stem-boot",
+      "g:yo-irregular",
+      "l:abrir",
+      "l:banco",
+      "l:cuenta",
+      "l:cuál",
+      "l:cédula",
+      "l:documento",
+      "l:factura",
+      "l:ir",
+      "l:mañana",
+      "l:necesitar",
+      "l:pensar",
+      "l:qué",
+      "l:recomendar",
+      "l:tener",
+      "p:ir-a-venir-de-place",
+      "p:me-te-nos-objects",
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u23-02",
+    "unit": "u23",
+    "prompt": "You are on hold with the phone company and the agent is very formal. Write the message you send them about your bill, using \"quería\" to open politely. Use usted.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "quería",
+        "label": "open with quería"
+      },
+      {
+        "type": "containsWord",
+        "word": "factura"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "quiero preguntar",
+          "tienes",
+          "puedes",
+          "eres"
+        ],
+        "label": "polite quería and usted, not quiero or tú"
+      }
+    ],
+    "model": "Buenas tardes. Quería preguntar por mi factura del mes. Creo que hay un error, porque este mes es más cara. ¿Me puede ayudar, por favor? Muchas gracias por su tiempo.",
+    "focus": "c:queria-preguntar",
+    "requires": [
+      "c:creo-que",
+      "c:gracias-de-nada",
+      "c:hay",
+      "c:hola-buenos-dias",
+      "c:me-puede-ayudar",
+      "c:por-favor",
+      "c:porque",
+      "c:queria-preguntar",
+      "g:cause-result",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "g:por-para-1",
+      "g:ser-identity",
+      "g:that-clauses",
+      "g:verb-infinitive",
+      "l:ayudar",
+      "l:buena",
+      "l:cara",
+      "l:creer",
+      "l:error",
+      "l:factura",
+      "l:favor",
+      "l:mes",
+      "l:poder",
+      "l:preguntar",
+      "l:querer",
+      "l:ser",
+      "l:tarde",
+      "l:tiempo",
+      "p:demonstratives-basic",
+      "p:gracias-por",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u23-03",
+    "unit": "u23",
+    "prompt": "Write to the repair shop. Your phone does not work, and you want to know if the technician can fix it this week. Say what is wrong and ask a question.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bno (sirve|funciona)\\b",
+        "label": "say it does not work: no sirve or no funciona"
+      },
+      {
+        "type": "question"
+      },
+      {
+        "type": "containsWord",
+        "word": "celular"
+      }
+    ],
+    "model": "Hola, buenos días. Mi celular no sirve y la pantalla se dañó ayer. ¿El técnico puede arreglarlo esta semana? Lo necesito para trabajar todos los días. Gracias.",
+    "focus": "c:no-sirve",
+    "requires": [
+      "c:ayer-anoche",
+      "c:gracias-de-nada",
+      "c:hola-buenos-dias",
+      "c:no-sirve",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:object-pronoun-position",
+      "g:present-ar",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:arreglar",
+      "l:ayer",
+      "l:bueno",
+      "l:celular",
+      "l:día",
+      "l:necesitar",
+      "l:pantalla",
+      "l:poder",
+      "l:semana",
+      "l:servir",
+      "l:trabajar",
+      "l:técnico",
+      "p:demonstratives-basic",
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:possessives-basic",
+      "p:todos-los-dias",
+      "p:veces-al"
+    ]
+  },
+  {
+    "id": "w-u23-04",
+    "unit": "u23",
+    "prompt": "You are at the notary and the clerk is an older stranger. Ask politely, in usted, what you have to do to get a new cédula and what documents you need.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bqué tengo que\\b",
+        "label": "ask ¿qué tengo que…?"
+      },
+      {
+        "type": "question"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "tienes",
+          "puedes",
+          "necesitas",
+          "eres"
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Buenos días, señora. Perdí mi cédula y necesito una nueva, es muy urgente. ¿Qué tengo que hacer? ¿Qué documentos necesito traer? ¿Me puede ayudar, por favor?",
+    "focus": "c:que-tengo-que-hacer",
+    "requires": [
+      "c:hola-buenos-dias",
+      "c:me-puede-ayudar",
+      "c:por-favor",
+      "c:que-tengo-que-hacer",
+      "c:tengo",
+      "c:tengo-que",
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:preterite-er-ir",
+      "g:questions",
+      "g:ser-identity",
+      "g:verb-infinitive",
+      "g:yo-irregular",
+      "l:ayudar",
+      "l:bueno",
+      "l:cédula",
+      "l:documento",
+      "l:día",
+      "l:favor",
+      "l:hacer",
+      "l:necesitar",
+      "l:nuevo",
+      "l:perder",
+      "l:poder",
+      "l:qué",
+      "l:ser",
+      "l:señora",
+      "l:tener",
+      "l:traer",
+      "l:urgente",
+      "p:llevar-traer",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u23-05",
+    "unit": "u23",
+    "prompt": "Leave a note for Don Hernando. You went to the bank for him, but the cash machine was broken. Say that no machine worked and that nobody could help you.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "(?<![\\wáéíóúñ])(ningún|ninguna|nadie|nada)(?![\\wáéíóúñ])",
+        "label": "use ningún, ninguna, nadie or nada"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "ningún cajera",
+          "ninguno cajero"
+        ],
+        "label": "ningún before a masculine noun"
+      },
+      {
+        "type": "negation"
+      }
+    ],
+    "model": "Don Hernando, fui al banco, pero ningún cajero funciona hoy. No pude hacer nada y nadie me pudo ayudar. Mañana vuelvo otra vez. Eso es todo por hoy.",
+    "focus": "g:indefinites",
+    "requires": [
+      "c:algo-mas",
+      "c:fui",
+      "g:gender-articles",
+      "g:indefinites",
+      "g:negation-words",
+      "g:por-para-1",
+      "g:present-ar",
+      "g:preterite-irregular-strong",
+      "g:preterite-ser-ir-hacer",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:ayudar",
+      "l:banco",
+      "l:cajero",
+      "l:funcionar",
+      "l:hacer",
+      "l:hoy",
+      "l:ir",
+      "l:mañana",
+      "l:poder",
+      "l:ser",
+      "l:vez",
+      "l:volver",
+      "p:don-dona-nombre",
+      "p:ir-a-venir-de-place",
+      "p:me-te-nos-objects",
+      "p:otro-no-article",
+      "p:senor-don-article"
+    ]
+  },
+  {
+    "id": "w-u23-06",
+    "unit": "u23",
+    "prompt": "Text your friend Mariana, who knows people at the bank. Ask whether anyone knows anything about your account, whether there is a problem, and say that nobody tells you anything.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "alguien"
+      },
+      {
+        "type": "regex",
+        "pattern": "(?<![\\wáéíóúñ])(algún|alguna|algo)(?![\\wáéíóúñ])",
+        "label": "use algo or algún"
+      },
+      {
+        "type": "regex",
+        "pattern": "(?<![\\wáéíóúñ])(nadie|nada|ningún|ninguna)(?![\\wáéíóúñ])",
+        "label": "use nadie, nada or ningún"
+      },
+      {
+        "type": "question"
+      }
+    ],
+    "model": "Mariana, ¿alguien sabe algo de mi cuenta en el banco? ¿Hay algún problema? Nadie me dice nada y estoy muy preocupado. No tengo ninguna información y necesito la plata esta semana.",
+    "focus": "g:indefinites",
+    "requires": [
+      "c:hay",
+      "c:tengo",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "g:indefinites",
+      "g:negation-words",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:stem-e-i",
+      "g:yo-irregular",
+      "l:banco",
+      "l:cuenta",
+      "l:decir",
+      "l:estar",
+      "l:información",
+      "l:necesitar",
+      "l:plata",
+      "l:preocupado",
+      "l:problema",
+      "l:saber",
+      "l:semana",
+      "l:tener",
+      "p:demonstratives-basic",
+      "p:hedge-knowledge",
+      "p:indefinites-basic",
+      "p:me-te-nos-objects",
+      "p:possessives-basic",
+      "p:quantifiers-basic",
+      "p:saber-conocer"
+    ]
+  },
+  {
+    "id": "w-u23-07",
+    "unit": "u23",
+    "prompt": "Write a complaint to the phone company. The line at the café has been charged for a long time, and you want them to fix it. Say how long it has been, starting with \"Hace\".",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bhace\\b[^.?!]{1,40}\\bque\\b",
+        "label": "hace + time + que"
+      },
+      {
+        "type": "containsWord",
+        "word": "línea"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "hace doce años pago",
+          "vivo hace",
+          "pago hace"
+        ],
+        "label": "hace…que, not a verb then hace"
+      }
+    ],
+    "model": "Buenos días. Hace doce años que ustedes cobran una línea que ya no existe. Quiero hablar con un operador para resolver este problema. Este es mi reclamo.",
+    "focus": "g:hace-que-desde",
+    "requires": [
+      "c:hola-buenos-dias",
+      "c:quiero",
+      "c:ya-no",
+      "g:gender-articles",
+      "g:hace-que-desde",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:relative-que",
+      "g:ser-identity",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:año",
+      "l:bueno",
+      "l:cobrar",
+      "l:día",
+      "l:existir",
+      "l:hablar",
+      "l:hacer",
+      "l:línea",
+      "l:operador",
+      "l:problema",
+      "l:querer",
+      "l:reclamo",
+      "l:resolver",
+      "l:ser",
+      "p:demonstratives-basic",
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u23-08",
+    "unit": "u23",
+    "prompt": "Write to your landlord, Doña Marta (use usted). Say that the water heater is broken, and say for how long, using \"desde hace\".",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bdesde hace\\b",
+        "label": "use desde hace"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "tienes",
+          "puedes",
+          "eres"
+        ],
+        "label": "usted, not tú"
+      },
+      {
+        "type": "negation"
+      }
+    ],
+    "model": "Buenas tardes, doña Marta. Desde hace dos semanas la ducha no funciona y no hay agua caliente. ¿Puede mandar a un técnico esta semana? Muchas gracias.",
+    "focus": "g:hace-que-desde",
+    "requires": [
+      "c:gracias-de-nada",
+      "c:hay",
+      "c:hola-buenos-dias",
+      "c:no-sirve",
+      "g:gender-articles",
+      "g:hace-que-desde",
+      "g:hay-vs-esta",
+      "g:stem-boot",
+      "g:subj-wanting",
+      "g:verb-infinitive",
+      "l:agua",
+      "l:buena",
+      "l:caliente",
+      "l:ducha",
+      "l:funcionar",
+      "l:hace",
+      "l:mandar",
+      "l:poder",
+      "l:semana",
+      "l:tarde",
+      "l:técnico",
+      "p:demonstratives-basic",
+      "p:don-dona-nombre",
+      "p:request-ladder",
+      "p:senor-don-article"
+    ]
+  },
+  {
+    "id": "w-u23-09",
+    "unit": "u23",
+    "prompt": "Text Mariana from the line at the deeds office. Tell her how long you have been waiting, starting with \"hace\" and ending with \"que\", and that you are tired.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bhace\\b[^.?!]{1,30}\\bque\\b",
+        "label": "hace + time + que"
+      },
+      {
+        "type": "containsWord",
+        "word": "fila"
+      }
+    ],
+    "model": "Mariana, estoy en la fila y hace dos horas que espero. Hay mucha gente y nadie sabe nada. Estoy cansada. ¿Puedes llamar al abogado por mí?",
+    "focus": "x:hace-desde-hace",
+    "requires": [
+      "c:hay",
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:hace-que-desde",
+      "g:hay-vs-esta",
+      "g:por-para-1",
+      "g:prep-pronouns",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:abogado",
+      "l:cansado",
+      "l:esperar",
+      "l:estar",
+      "l:fila",
+      "l:gente",
+      "l:hacer",
+      "l:hora",
+      "l:llamar",
+      "l:poder",
+      "l:saber",
+      "p:la-gente-singular",
+      "p:personal-a",
+      "p:quantifiers-basic",
+      "p:request-ladder",
+      "p:saber-conocer"
+    ]
+  },
+  {
+    "id": "w-u23-10",
+    "unit": "u23",
+    "prompt": "Text Vale from the long line at the bank. Ask her to bring you a little coffee (a tintico) and tell her you need a little moment more, using a diminutive.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b\\w+(ico|ito|ita)\\b",
+        "label": "use a diminutive: tintico, momentico, ratico"
+      },
+      {
+        "type": "question"
+      },
+      {
+        "type": "containsWord",
+        "word": "fila"
+      }
+    ],
+    "model": "Vale, estoy en la fila del banco y hay mucha gente. ¿Me regalas un tintico? Voy a demorar un ratico más. Ahorita te cuento qué pasó. Gracias, Vale.",
+    "focus": "g:diminutives",
+    "requires": [
+      "c:ahorita",
+      "c:gracias-de-nada",
+      "c:hay",
+      "c:te-cuento-que",
+      "c:voy-a",
+      "g:diminutives",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "g:ir-a-plans",
+      "g:present-ar",
+      "g:preterite-ar",
+      "l:ahorita",
+      "l:banco",
+      "l:contar",
+      "l:demorar",
+      "l:estar",
+      "l:fila",
+      "l:gente",
+      "l:ir",
+      "l:pasar",
+      "l:qué",
+      "l:regalar",
+      "p:ir-a-venir-de-place",
+      "p:la-gente-singular",
+      "p:me-te-nos-objects",
+      "p:quantifiers-basic",
+      "p:tardar-en"
+    ]
+  },
+  {
+    "id": "w-u23-11",
+    "unit": "u23",
+    "prompt": "Text Vale. You must go back to the bank tomorrow because they need another document. Say it with \"me toca\" and tell her what you have to bring.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bme toca\\b",
+        "label": "use me toca + infinitive"
+      },
+      {
+        "type": "containsWord",
+        "word": "documento"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "tengo que"
+        ],
+        "label": "me toca, not tengo que"
+      }
+    ],
+    "model": "Vale, mañana me toca volver al banco. Necesitan otro documento y una factura. Me toca esperar en la fila otra vez. ¿Me prestas tu carro?",
+    "focus": "c:me-toca",
+    "requires": [
+      "c:me-toca",
+      "g:gender-articles",
+      "g:present-ar",
+      "l:banco",
+      "l:carro",
+      "l:documento",
+      "l:esperar",
+      "l:factura",
+      "l:fila",
+      "l:mañana",
+      "l:necesitar",
+      "l:prestar",
+      "l:tocar",
+      "l:vez",
+      "l:volver",
+      "p:madrugar-trasnochar",
+      "p:me-te-nos-objects",
+      "p:no-queda-de-otra",
+      "p:otro-no-article",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u23-12",
+    "unit": "u23",
+    "prompt": "Write a short formal complaint to the deeds office (use usted). Say that nobody has answered you, that you have no document yet, and for how long you have been waiting.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(hace\\b[^.?!]{1,40}\\bque|desde hace|llevo)\\b",
+        "label": "say how long: hace…que, desde hace or llevo"
+      },
+      {
+        "type": "regex",
+        "pattern": "(?<![\\wáéíóúñ])(nadie|ningún|ninguna|nada)(?![\\wáéíóúñ])",
+        "label": "use nadie, ningún or nada"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "tienes",
+          "puedes",
+          "eres",
+          "tu "
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Buenos días. Hace un mes que espero mi documento y nadie me responde. No tengo ninguna información sobre mi trámite. ¿Me puede decir qué pasa, por favor? Gracias.",
+    "focus": "g:hace-que-desde",
+    "requires": [
+      "c:gracias-de-nada",
+      "c:hola-buenos-dias",
+      "c:me-puede-ayudar",
+      "c:por-favor",
+      "c:tengo",
+      "g:gender-articles",
+      "g:hace-que-desde",
+      "g:indefinites",
+      "g:negation-words",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:questions",
+      "g:verb-infinitive",
+      "g:yo-irregular",
+      "l:bueno",
+      "l:decir",
+      "l:documento",
+      "l:día",
+      "l:esperar",
+      "l:favor",
+      "l:hacer",
+      "l:información",
+      "l:mes",
+      "l:pasar",
+      "l:poder",
+      "l:qué",
+      "l:responder",
+      "l:tener",
+      "l:trámite",
+      "p:me-te-nos-objects",
+      "p:possessives-basic",
+      "p:request-ladder"
+    ]
+  }
+]
