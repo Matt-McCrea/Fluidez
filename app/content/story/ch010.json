@@ -2,12 +2,8 @@
   "id": "ch010",
   "unit": "u05",
   "title": "El álbum de Rosa",
-  "text": "Hernando pone treinta y una fotos en la mesa.\nHernando: Mi familia. Ella es mi hija Lucía, y él es su esposo. Y aquí están mis nietos. Tengo veintiún nietos.\nVale cuenta los niños de las fotos.\nVale: Don Hernando, aquí hay seis niños, no veintiuno.\nHernando: Seis son mis nietos. Los otros son sus primos y sus primas. Familia es familia.\nSimón: ¡Veintiuno! ¡Veintiuno!\nTomás: ¿Y su esposa, don Hernando?\nHernando: Inés. Ella está con Rosa ahora.\nNadie habla. Después, Tomás abre el álbum de Rosa.\nVale: Mira, es tu abuela, de niña, con su padre y su madre.\nHernando: Y él es tu abuelo, el esposo de Rosa. Un hombre muy serio.\nHernando: Y este es tu papá, con su hermana y su hermano: tu tía Clara y tu tío Jaime.\nTomás: ¿Tengo tíos? ¿Y primos? Mi papá nunca habla de sus hermanos. No conozco a mi familia.\nTomás mira otra foto: un hombre joven, al lado de Rosa. Tiene la nariz de Tomás. Y la barbilla.\nTomás: ¿Y él? No es mi abuelo. No es mi papá. ¿Quién es?\nHernando cierra el álbum.\nHernando: Vale, mija, ¿me regala un tinto?",
+  "text": "Hernando pone treinta y una fotos en la mesa.\nHernando: Mi familia. Ella es mi hija Lucía, y él es su esposo. Y aquí están mis nietos. Tengo veintiún nietos.\nVale: Don Hernando, aquí hay seis niños, no veintiuno.\nHernando: Seis son mis nietos. Los otros son sus primos y sus primas. Familia es familia.\nSimón: ¡Veintiuno! ¡Veintiuno!\nTomás: ¿Y su esposa, don Hernando?\nHernando: Inés. Ella está con Rosa ahora.\nNadie habla. Después, Tomás abre el álbum de Rosa.\nVale: Mira, es tu abuela, de niña, con su padre y su madre.\nHernando: Y él es tu abuelo, el esposo de Rosa.\nHernando: Y este es tu papá, con su hermana y su hermano: tu tía Clara y tu tío Jaime.\nTomás: ¿Tengo tíos? ¿Y primos? Mi papá nunca habla de sus hermanos.\nTomás mira otra foto: un hombre joven, al lado de Rosa. Tiene la nariz de Tomás. Y la barbilla.\nTomás: ¿Y él? No es mi abuelo. No es mi papá. ¿Quién es?\nHernando cierra el álbum.\nHernando: Vale, mija, ¿me regala un tinto?",
   "gloss": [
-    {
-      "es": "Vale cuenta los niños",
-      "en": "Vale counts the children"
-    },
     {
       "es": "Familia es familia",
       "en": "Family is family"
@@ -39,6 +35,18 @@
     {
       "es": "Nadie habla",
       "en": "Nobody says anything"
+    },
+    {
+      "es": "al lado de Rosa",
+      "en": "next to Rosa"
+    },
+    {
+      "es": "sus hermanos",
+      "en": "his brother and sister"
+    },
+    {
+      "es": "Inés",
+      "en": "Inés (a woman's name)"
     }
   ],
   "questions": [
@@ -139,9 +147,7 @@
     "g:yo-irregular",
     "p:demonstratives-basic",
     "p:numbers-un-una",
-    "p:personal-a",
     "p:possessives-basic",
-    "p:quantifiers-basic",
     "p:senor-don-article",
     "p:time-sequence-basic"
   ],
@@ -153,8 +159,6 @@
     "l:aquí",
     "l:barbilla",
     "l:cerrar",
-    "l:conocer",
-    "l:contar",
     "l:después",
     "l:esposa",
     "l:esposo",
@@ -186,7 +190,6 @@
     "l:quién",
     "l:regalar",
     "l:ser",
-    "l:serio",
     "l:tener",
     "l:tinto",
     "l:tía",
