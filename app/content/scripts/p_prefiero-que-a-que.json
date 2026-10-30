@@ -1,0 +1,176 @@
+{
+  "node": "p:prefiero-que-a-que",
+  "hook": {
+    "line": "Everyone in the café has a view on how things should go. To say what you would choose, and what you would put up with instead, you need a sentence that puts two options side by side.",
+    "es": "Prefiero que me digan la verdad a que me mientan.",
+    "en": "I'd rather they told me the truth than lied to me."
+  },
+  "examples": [
+    {
+      "es": "Prefiero que me digan la verdad a que me mientan.",
+      "en": "I'd rather they told me the truth than lied to me."
+    },
+    {
+      "es": "Prefiero que llueva a que haga este calor.",
+      "en": "I'd rather it rained than be this hot."
+    },
+    {
+      "es": "Prefiero que me llames a que me escribas.",
+      "en": "I'd rather you called me than wrote to me."
+    },
+    {
+      "es": "Preferimos que nos paguen en efectivo a que nos paguen con tarjeta.",
+      "en": "We'd rather they paid us in cash than by card."
+    },
+    {
+      "es": "Mariana prefiere que la entrevista sea corta a que sea larga.",
+      "en": "Mariana would rather the interview be short than long."
+    },
+    {
+      "es": "Prefiero quedarme en casa a salir.",
+      "en": "I'd rather stay at home than go out."
+    }
+  ],
+  "rule": "Put your choice after *prefiero que* and the thing you turn down after *a que*. Both halves use the \"other\" verb ending:\n\n*Prefiero que vengas hoy a que vengas mañana.*\n\nEnglish says \"than\". Spanish says *a*, never a second *que* on its own: *a que*.\n\nIf you are the one choosing and doing, drop the *que* and use infinitives: *Prefiero quedarme a salir.*",
+  "smallPrint": "Teachers call this a comparison of preference. Both halves take the subjunctive because each is something you want to happen, not a fact.",
+  "readAndPick": [
+    {
+      "es": "Prefiero que me llames a que me escribas.",
+      "options": [
+        "I'd rather you wrote to me than called me.",
+        "I'd rather call you than write to you.",
+        "I'd rather you called me than wrote to me."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Prefiero que vengas hoy a que vengas mañana.",
+      "options": [
+        "I'd rather you came today than tomorrow.",
+        "I'd rather they came today than tomorrow.",
+        "I'd rather come today than tomorrow."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Prefiero quedarme en casa a salir.",
+      "options": [
+        "I'd rather you stayed at home than went out.",
+        "I'd rather stay at home than go out.",
+        "I'd rather they stayed at home than went out."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Prefiero que Vale cierre el café a que lo cierre Tomás.",
+      "options": [
+        "I'd rather Tomás closed the café than Vale.",
+        "I'd rather close the café than let Vale do it.",
+        "I'd rather Vale closed the café than Tomás."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Preferimos que nos paguen en efectivo a que nos paguen con tarjeta.",
+      "options": [
+        "We'd rather they paid us in cash than by card.",
+        "We'd rather pay in cash than by card.",
+        "We'd rather they paid us by card than in cash."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Prefieres que te recoja a que vayas sola?",
+      "options": [
+        "Would you rather pick me up than I go alone?",
+        "Would you (a woman) rather I picked you up than you went alone?",
+        "Would you rather I went alone than you picked me up?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Prefiero que llueva a que haga este calor.",
+      "options": [
+        "I'd rather it was this hot than rained.",
+        "I'd rather it rained than snowed.",
+        "I'd rather it rained than be this hot."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mariana prefiere que la entrevista sea corta a que sea larga.",
+      "options": [
+        "Mariana would rather the interview be short than long.",
+        "Mariana would rather the interview be long than short.",
+        "Mariana would rather do a short interview than a long one."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *digan* or *dicen*: Prefiero que me ___ la verdad a que me mientan. Type the whole sentence.",
+      "answer": "Prefiero que me digan la verdad a que me mientan.",
+      "accept": [],
+      "why": "After *prefiero que*, the verb takes its \"other\" ending, and *digan* is *decir* in it."
+    },
+    {
+      "prompt": "Choose *a* or *que*: Prefiero que vengas hoy ___ que vengas mañana. Type the whole sentence.",
+      "answer": "Prefiero que vengas hoy a que vengas mañana.",
+      "accept": [],
+      "why": "The English \"than\" is just *a* here, and *que* comes right after it."
+    },
+    {
+      "prompt": "Type in Spanish: I'd rather stay at home than go out.",
+      "answer": "Prefiero quedarme en casa a salir.",
+      "accept": [
+        "Prefiero quedarme en la casa a salir."
+      ],
+      "why": "You choose and you do, so it is the same person and both verbs are infinitives."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: I'd rather you called me than wrote to me.",
+      "answer": "Prefiero que me llames a que me escribas.",
+      "accept": [
+        "Yo prefiero que me llames a que me escribas."
+      ],
+      "why": "*Llames* and *escribas* are both \"other\" endings for *tú*, joined by *a que*."
+    },
+    {
+      "prompt": "Type in Spanish: I'd rather it rained than be this hot.",
+      "answer": "Prefiero que llueva a que haga este calor.",
+      "accept": [],
+      "why": "Both weather verbs take the \"other\" ending: *llueva* and *haga*."
+    },
+    {
+      "prompt": "Say it about *we*: *Prefiero que me llames a que me escribas.*",
+      "answer": "Preferimos que nos llames a que nos escribas.",
+      "accept": [],
+      "why": "*Prefiero* becomes *preferimos*, and *me* becomes *nos* both times."
+    },
+    {
+      "prompt": "Ask a friend who is a woman: Would you rather I picked you up than you went alone?",
+      "answer": "¿Prefieres que te recoja a que vayas sola?",
+      "accept": [],
+      "why": "*Sola* is feminine because you are talking to a woman, and *te* means \"you\"."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Prefiero que me dicen la verdad.",
+      "right": "Prefiero que me digan la verdad.",
+      "why": "After *prefiero que*, the verb takes its \"other\" ending, so *dicen* becomes *digan*."
+    },
+    {
+      "wrong": "Prefiero que me llames que me escribas.",
+      "right": "Prefiero que me llames a que me escribas.",
+      "why": "English \"than\" becomes *a que* in this pattern, so a bare *que* between the two halves is not enough."
+    },
+    {
+      "wrong": "Prefiero que yo me quede en casa a que yo salga.",
+      "right": "Prefiero quedarme en casa a salir.",
+      "why": "When one person chooses and does, Spanish uses the infinitive instead of repeating \"I\"."
+    }
+  ],
+  "personal": "Say something true about you: *Prefiero que…* plus *a que…*, like *Prefiero que me hablen claro a que me mientan.*"
+}

@@ -1,0 +1,178 @@
+{
+  "node": "p:me-aburre-que",
+  "hook": {
+    "line": "Don Hernando tells the same story about the 1986 taxi strike every Tuesday. Sooner or later you will want to say, politely, that it bores you.",
+    "es": "Me aburre que siempre hablen de lo mismo.",
+    "en": "It bores me that they always talk about the same thing."
+  },
+  "examples": [
+    {
+      "es": "Me aburre que siempre hablen de lo mismo.",
+      "en": "It bores me that they always talk about the same thing."
+    },
+    {
+      "es": "Me aburre que Hernando cuente la misma historia.",
+      "en": "It bores me that Hernando tells the same story."
+    },
+    {
+      "es": "Nos aburre que la reunión dure tres horas.",
+      "en": "It bores us that the meeting lasts three hours."
+    },
+    {
+      "es": "¿Te aburre que te cuenten lo mismo?",
+      "en": "Does it bore you when they tell you the same thing?"
+    },
+    {
+      "es": "Me aburre esperar el bus.",
+      "en": "Waiting for the bus bores me."
+    },
+    {
+      "es": "¡Qué pereza hacer fila!",
+      "en": "Ugh, I can't be bothered to queue!"
+    },
+    {
+      "es": "Me aburrí de esperar.",
+      "en": "I got bored of waiting."
+    }
+  ],
+  "rule": "The boring thing is the subject, and you are the person it bores: *me aburre*, *te aburre*, *nos aburre*.\n\nAfter *que*, use the \"other\" verb ending: *Me aburre que hablen de lo mismo.*\n\nA thing: *Me aburre la reunión.* Several things: *Me aburren las reuniones.*\n\nFor getting bored yourself, use *aburrirse de*: *Me aburrí de esperar.*\n\nFor \"ugh, I can't be bothered\", say *¡Qué pereza!* and an infinitive. In Colombia you will also hear *¡Qué jartera!*.",
+  "smallPrint": "Teachers call *aburrir* a verb like *gustar*: the thing causing the feeling is the subject, and the person feeling it is the object (*me*, *te*, *nos*).",
+  "readAndPick": [
+    {
+      "es": "Me aburre que siempre hablen de lo mismo.",
+      "options": [
+        "It bores me that they always talk about the same thing.",
+        "It bores me that you always talk about the same thing.",
+        "It bores me that I always talk about the same thing."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nos aburre que la reunión dure tres horas.",
+      "options": [
+        "It bores me that the meeting lasts three hours.",
+        "It bores us that the meeting lasts three hours.",
+        "It bored us that the meeting lasted three hours."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me aburre esperar el bus.",
+      "options": [
+        "I bore the bus by waiting.",
+        "You are bored of waiting for the bus.",
+        "Waiting for the bus bores me."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Te aburre que te cuenten lo mismo?",
+      "options": [
+        "Does it bore you when they tell you the same thing?",
+        "Does it bore them when I tell them the same thing?",
+        "Does it bore me when you tell me the same thing?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me aburrí de esperar.",
+      "options": [
+        "I get bored of waiting.",
+        "I got bored of waiting.",
+        "I will get bored of waiting."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me aburre que Simón repita todo.",
+      "options": [
+        "Simón is bored of repeating everything.",
+        "It bores Simón that I repeat everything.",
+        "It bores me that Simón repeats everything."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Me aburren las reuniones largas.",
+      "options": [
+        "Long meetings bore me.",
+        "A long meeting bores me.",
+        "I bore long meetings."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me aburre que la clase sea tan larga.",
+      "options": [
+        "It bores me that the class is so long.",
+        "It bored me that the class was so long.",
+        "It bores me that the class is long."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *cuente* or *cuenta*: Me aburre que Hernando ___ la misma historia. Type the whole sentence.",
+      "answer": "Me aburre que Hernando cuente la misma historia.",
+      "accept": [],
+      "why": "After *me aburre que*, the verb takes its \"other\" ending, and *cuente* is *contar* in it."
+    },
+    {
+      "prompt": "Choose *aburre* or *aburren*: Me ___ las reuniones largas. Type the whole sentence.",
+      "answer": "Me aburren las reuniones largas.",
+      "accept": [],
+      "why": "The meetings are plural, so the verb is plural too: *aburren*."
+    },
+    {
+      "prompt": "Type in Spanish: Waiting for the bus bores me.",
+      "answer": "Me aburre esperar el bus.",
+      "accept": [],
+      "why": "The boring thing is waiting, so *aburre* is singular and *me* is the person it bores."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Does it bore you when they tell you the same thing?",
+      "answer": "¿Te aburre que te cuenten lo mismo?",
+      "accept": [],
+      "why": "*Te* is \"you\", the person bored, and *cuenten* is the \"other\" ending for \"they\"."
+    },
+    {
+      "prompt": "Type in Spanish: It bores me that Simón repeats everything.",
+      "answer": "Me aburre que Simón repita todo.",
+      "accept": [],
+      "why": "A new subject (Simón) after *que* means the \"other\" ending: *repita*."
+    },
+    {
+      "prompt": "Say it about *us*: *Me aburre que siempre hablen de lo mismo.*",
+      "answer": "Nos aburre que siempre hablen de lo mismo.",
+      "accept": [],
+      "why": "Only the person who is bored changes: *me* becomes *nos*."
+    },
+    {
+      "prompt": "Type in Spanish: I got bored of waiting.",
+      "answer": "Me aburrí de esperar.",
+      "accept": [
+        "Yo me aburrí de esperar."
+      ],
+      "why": "To say you got bored yourself, use *aburrirse de* plus an infinitive."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Yo aburro que hablen de lo mismo.",
+      "right": "Me aburre que hablen de lo mismo.",
+      "why": "The talking bores you, so the verb agrees with it (*aburre*) and you are *me*."
+    },
+    {
+      "wrong": "Me aburre que siempre hablan de lo mismo.",
+      "right": "Me aburre que siempre hablen de lo mismo.",
+      "why": "After *me aburre que*, the verb takes its \"other\" ending, so *hablan* becomes *hablen*."
+    },
+    {
+      "wrong": "Me aburro esperar el bus.",
+      "right": "Me aburre esperar el bus.",
+      "why": "Without *de*, the waiting is what bores you, so use *aburre*. If you are the one getting bored, add *de*: *Me aburro de esperar*."
+    }
+  ],
+  "personal": "Say something true about you: *Me aburre que…* or *Me aburre…* plus something that bores you, like *Me aburre que las reuniones duren tanto.*"
+}

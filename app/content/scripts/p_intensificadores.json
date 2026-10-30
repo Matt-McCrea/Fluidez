@@ -1,0 +1,175 @@
+{
+  "node": "p:intensificadores",
+  "hook": {
+    "line": "Mariana's listeners can hear when you say everything is *muy* something. For her podcast you need words with more bite than \"very\".",
+    "es": "Fue realmente divertido.",
+    "en": "It was really fun."
+  },
+  "examples": [
+    {
+      "es": "Fue realmente divertido.",
+      "en": "It was really fun."
+    },
+    {
+      "es": "Es totalmente falso.",
+      "en": "It's totally false."
+    },
+    {
+      "es": "Es súper difícil.",
+      "en": "It's super hard."
+    },
+    {
+      "es": "Está muy alto para su edad.",
+      "en": "He's very tall for his age."
+    },
+    {
+      "es": "Es demasiado tarde para llamar.",
+      "en": "It's too late to call."
+    },
+    {
+      "es": "Es increíblemente caro.",
+      "en": "It's incredibly expensive."
+    }
+  ],
+  "rule": "Instead of *muy*, pick a word with more flavour: *realmente*, *increíblemente*, or the casual *súper*.\n\nWith words that have no middle ground, like *falso*, *imposible*, *seguro*, use *totalmente*, *completamente* or *absolutamente*, not *muy*.\n\n*Demasiado* means \"too\": *demasiado tarde para llamar*.\n\n*Muy… para* compares with what you would expect: *muy alto para su edad*.\n\nIn formal writing, *súper* is out and *sumamente* is in.",
+  "smallPrint": "Teachers call these intensifiers, or degree adverbs. The \"absolute\" adjectives are the ones that can't be a little bit true.",
+  "readAndPick": [
+    {
+      "es": "Es totalmente falso.",
+      "options": [
+        "It's partly true.",
+        "It's totally false.",
+        "It's slightly false."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es demasiado tarde para llamar.",
+      "options": [
+        "It's too early to call.",
+        "It's late enough to call.",
+        "It's too late to call."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Es súper difícil.",
+      "options": [
+        "It's super hard.",
+        "It's not hard.",
+        "It's slightly hard."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Está muy alto para su edad.",
+      "options": [
+        "He's too tall for his age.",
+        "He's very tall for his age.",
+        "He's very tall, so he is old."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Está demasiado alto para su edad.",
+      "options": [
+        "He's too tall for his age.",
+        "He's very tall for his age.",
+        "He's the right height for his age."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es demasiado temprano para llamar.",
+      "options": [
+        "It's too late to call.",
+        "It's early enough to call.",
+        "It's too early to call."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Estoy completamente seguro.",
+      "options": [
+        "I'm completely sure.",
+        "I'm somewhat sure.",
+        "I'm not sure."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es increíblemente caro.",
+      "options": [
+        "It's slightly expensive.",
+        "It's incredibly expensive.",
+        "It's a little cheap."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *muy* or *totalmente*: Es ___ falso. Type the whole sentence.",
+      "answer": "Es totalmente falso.",
+      "accept": [],
+      "why": "*Falso* has no middle ground, so it takes *totalmente*, not *muy*."
+    },
+    {
+      "prompt": "Choose *demasiado* or *realmente*, meaning \"too\": Es ___ tarde para llamar. Type the whole sentence.",
+      "answer": "Es demasiado tarde para llamar.",
+      "accept": [],
+      "why": "*Demasiado* is the word for \"too\"."
+    },
+    {
+      "prompt": "Type in Spanish: It's super hard.",
+      "answer": "Es súper difícil.",
+      "accept": [],
+      "why": "*Súper* is the casual way to turn it up."
+    },
+    {
+      "prompt": "Type in Spanish: It was really fun.",
+      "answer": "Fue realmente divertido.",
+      "accept": [],
+      "why": "*Realmente* goes right before the adjective, as *muy* would."
+    },
+    {
+      "prompt": "Type in Spanish, a man speaking: I'm completely sure.",
+      "answer": "Estoy completamente seguro.",
+      "accept": [
+        "Estoy totalmente seguro.",
+        "Estoy absolutamente seguro."
+      ],
+      "why": "*Seguro* is an absolute, so it takes *completamente*, *totalmente* or *absolutamente*."
+    },
+    {
+      "prompt": "Type in Spanish: It's too early to call.",
+      "answer": "Es demasiado temprano para llamar.",
+      "accept": [],
+      "why": "*Demasiado* for \"too\", and *para* + infinitive for \"to call\"."
+    },
+    {
+      "prompt": "Make it stronger than *muy*: *Es muy caro.*",
+      "answer": "Es increíblemente caro.",
+      "accept": [],
+      "why": "*Increíblemente* says \"incredibly\" where *muy* only says \"very\"."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Es muy imposible.",
+      "right": "Es completamente imposible.",
+      "why": "*Imposible* can't be a little bit true, so use *completamente* instead of *muy*."
+    },
+    {
+      "wrong": "Es muy falso.",
+      "right": "Es totalmente falso.",
+      "why": "*Muy falso* sounds weak, because *falso* is all or nothing."
+    },
+    {
+      "wrong": "Es también tarde para llamar.",
+      "right": "Es demasiado tarde para llamar.",
+      "why": "*También* means \"also\". For \"too much\", say *demasiado*."
+    }
+  ],
+  "personal": "Say something true about you or the city, with a stronger word than *muy*, like *Bogotá es increíblemente grande.*"
+}

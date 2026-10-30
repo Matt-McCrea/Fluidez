@@ -1,0 +1,178 @@
+{
+  "node": "p:no-soporto-que",
+  "hook": {
+    "line": "Bogotá has strong opinions, and the loudest ones are about what other people do. Sooner or later, Mariana's microphone will catch you saying what you cannot stand.",
+    "es": "No soporto que me interrumpan.",
+    "en": "I can't stand it when people interrupt me."
+  },
+  "examples": [
+    {
+      "es": "No soporto que me interrumpan.",
+      "en": "I can't stand it when people interrupt me."
+    },
+    {
+      "es": "Odio que lleguen tarde.",
+      "en": "I hate it when they arrive late."
+    },
+    {
+      "es": "No soporto que Simón grite en la mañana.",
+      "en": "I can't stand it when Simón screams in the morning."
+    },
+    {
+      "es": "Me da asco la basura en la calle.",
+      "en": "The rubbish in the street disgusts me."
+    },
+    {
+      "es": "¿No soportas que te llamen a esa hora?",
+      "en": "Can't you stand it when they call you at that hour?"
+    },
+    {
+      "es": "Odio lavar los platos.",
+      "en": "I hate washing dishes."
+    }
+  ],
+  "rule": "To say what you can't stand, use *no soporto que* or *odio que*, then a new subject and a verb in the \"other\" ending: *-ar* verbs switch to *-e* and *-en*, *-er* and *-ir* verbs to *-a* and *-an*.\n\n*No soporto que me interrumpan.*\n\nIf you are the one doing the verb, there is no *que*: *Odio lavar los platos.*\n\nFor something that truly turns your stomach, use *me da asco* plus the thing: *Me da asco la basura.* *Asco* is physical, so keep it for rubbish, not for a late bus.",
+  "smallPrint": "Teachers call this a verb of emotion followed by the subjunctive: the feeling is the main verb, and what causes it goes after *que*.",
+  "readAndPick": [
+    {
+      "es": "No soporto que me interrumpan.",
+      "options": [
+        "I can't stand people interrupting me.",
+        "I can't stand interrupting people.",
+        "I don't mind being interrupted."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Odio llegar tarde.",
+      "options": [
+        "I hate it when they arrive late.",
+        "I hate arriving late.",
+        "I hate it when you arrive late."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Odio que lleguen tarde.",
+      "options": [
+        "I hate arriving late.",
+        "I hate it when you arrive late.",
+        "I hate it when they arrive late."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No soportamos que cierren el café tan temprano.",
+      "options": [
+        "We can't stand closing the café so early.",
+        "We can't stand it when they close the café so early.",
+        "They can't stand it when we close the café so early."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me da asco la basura en la calle.",
+      "options": [
+        "The rubbish in the street disgusts me.",
+        "The rubbish in the street bores me.",
+        "The rubbish in the street worries me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ella no soporta que le digan qué hacer.",
+      "options": [
+        "She can't stand telling people what to do.",
+        "I can't stand being told what to do.",
+        "She can't stand being told what to do."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No soporto que hables así de mi abuela.",
+      "options": [
+        "I can't stand it when you talk like that about my grandmother.",
+        "I can't stand talking like that about my grandmother.",
+        "I can't stand it when they talk like that about my grandmother."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿No soportas que te llamen a esa hora?",
+      "options": [
+        "Can't you stand calling people at that hour?",
+        "Can't you stand it when they call you at that hour?",
+        "Can't they stand it when you call at that hour?"
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *interrumpan* or *interrumpen*: No soporto que me ___. Type the whole sentence.",
+      "answer": "No soporto que me interrumpan.",
+      "accept": [
+        "Yo no soporto que me interrumpan."
+      ],
+      "why": "After *no soporto que*, an *-ar* verb switches to its *-en* ending."
+    },
+    {
+      "prompt": "Choose *que* or *de*: Odio ___ lleguen tarde. Type the whole sentence.",
+      "answer": "Odio que lleguen tarde.",
+      "accept": [],
+      "why": "A new person doing the verb needs *que* to join the two parts."
+    },
+    {
+      "prompt": "Type in Spanish: I hate washing dishes.",
+      "answer": "Odio lavar los platos.",
+      "accept": [
+        "Odio lavar platos."
+      ],
+      "why": "You hate and you wash, so it is the same person and the verb stays as an infinitive, with no *que*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: I can't stand it when you talk like that about my grandmother.",
+      "answer": "No soporto que hables así de mi abuela.",
+      "accept": [
+        "Yo no soporto que hables así de mi abuela."
+      ],
+      "why": "*Hables* is *hablar* in its \"other\" form, because *tú* is a new subject after *que*."
+    },
+    {
+      "prompt": "Type in Spanish: The rubbish in the street disgusts me.",
+      "answer": "Me da asco la basura en la calle.",
+      "accept": [],
+      "why": "*Me da asco* plus the thing is the strong, stomach-turning way to say it."
+    },
+    {
+      "prompt": "Say it about *we*: *No soporto que me interrumpan.*",
+      "answer": "No soportamos que nos interrumpan.",
+      "accept": [],
+      "why": "Both *no soporto* and *me* change to match *we*: *no soportamos* and *nos*."
+    },
+    {
+      "prompt": "Say it with *odio* instead: *No soporto que lleguen tarde.*",
+      "answer": "Odio que lleguen tarde.",
+      "accept": [],
+      "why": "*Odio que* works the same way as *no soporto que*, and the verb after it stays the same."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No soporto que me interrumpen.",
+      "right": "No soporto que me interrumpan.",
+      "why": "After *no soporto que*, the verb takes its \"other\" ending, so *-ar* verbs switch to *-en*."
+    },
+    {
+      "wrong": "Odio que llego tarde.",
+      "right": "Odio llegar tarde.",
+      "why": "When you are the one doing both verbs, Spanish uses the infinitive and drops *que*."
+    },
+    {
+      "wrong": "Me doy asco la basura.",
+      "right": "Me da asco la basura.",
+      "why": "The rubbish does the disgusting, so the verb agrees with it (*da*) and *me* is just you."
+    }
+  ],
+  "personal": "Say something true about you: *No soporto que…* or *Odio que…* plus a verb in its \"other\" ending, like *No soporto que me llamen a las seis.*"
+}

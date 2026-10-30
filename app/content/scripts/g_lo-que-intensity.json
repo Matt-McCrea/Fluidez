@@ -1,0 +1,176 @@
+{
+  "node": "g:lo-que-intensity",
+  "hook": {
+    "line": "Sometimes \"very\" is not enough, and you want to say how hard, how well, how tired. Spanish has a frame for that, and Vale uses it every time she tastes Rosa's old recipes.",
+    "es": "¡Lo bien que cocina Vale!",
+    "en": "How well Vale cooks!"
+  },
+  "examples": [
+    {
+      "es": "¿Sabes lo difícil que es?",
+      "en": "Do you know how hard it is?"
+    },
+    {
+      "es": "¡Lo bien que cocina Vale!",
+      "en": "How well Vale cooks!"
+    },
+    {
+      "es": "Con lo cansado que estoy, no voy a salir.",
+      "en": "Tired as I am, I'm not going out."
+    },
+    {
+      "es": "Mira lo lindo que quedó el café.",
+      "en": "Look how lovely the café turned out."
+    },
+    {
+      "es": "¿Viste lo bien que habla Simón?",
+      "en": "Did you see how well Simón talks?"
+    },
+    {
+      "es": "Con lo caro que está el café, mejor lo preparo en casa.",
+      "en": "Given how expensive the coffee is, I'd rather make it at home."
+    }
+  ],
+  "rule": "To say \"how hard, how well, how tired\", use *lo* + the adjective or adverb + *que* + the rest:\n\n*lo difícil que es*\n*lo bien que cocina*\n*lo mucho que habla*\n\nThe adjective still matches who or what you describe: *lo cansada que estoy* (a woman speaking). Adverbs never change.\n\nStart with *con* and you get \"given how…\" or \"with how…\", a reason for what comes next: *Con lo cansado que estoy, no voy a salir.*\n\n*Que* has no accent here. It is the hinge, not a question word.",
+  "smallPrint": "Teachers call this the intensifying *lo*. You already know *lo* + adjective for \"the hard thing\"; add *que* and a verb, and it means \"how hard\".",
+  "readAndPick": [
+    {
+      "es": "¡Lo bien que cocina Vale!",
+      "options": [
+        "Vale cooks what is good!",
+        "How well Vale cooks!",
+        "How badly Vale cooks!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mira lo cansada que estoy.",
+      "options": [
+        "Look how tired I am, a woman speaking.",
+        "Look how tired he is.",
+        "Look how tired I am, a man speaking."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mira lo cansado que está.",
+      "options": [
+        "Look how tired I am, a man speaking.",
+        "Look how tired she is.",
+        "Look how tired he is."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Con lo caro que está el café, mejor lo preparo en casa.",
+      "options": [
+        "Given how expensive the coffee is, I'd rather make it at home.",
+        "The coffee is expensive because I make it at home.",
+        "If the coffee is cheap, I'll make it at home."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Viste lo bien que habla Simón?",
+      "options": [
+        "Did you see the good thing Simón said?",
+        "Did you see how well Simón talks?",
+        "Did you see where Simón talks well?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Lo mucho que habla Simón!",
+      "options": [
+        "How well Simón talks!",
+        "How loudly Simón talks!",
+        "How much Simón talks!"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Con lo cansado que estoy, no voy a salir.",
+      "options": [
+        "Tired as I am, I'm not going out.",
+        "I'm so rested that I'm going out.",
+        "I'm not tired, so I'm going out."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Fíjate en lo tarde que es.",
+      "options": [
+        "Notice how late it is.",
+        "Notice how early it is.",
+        "Notice that it is not late."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *lo* or *la*: Mira ___ lindo que quedó el café. Type the whole sentence.",
+      "answer": "Mira lo lindo que quedó el café.",
+      "accept": [],
+      "why": "For \"how\" + adjective, the word is always *lo*, whatever the adjective describes."
+    },
+    {
+      "prompt": "Choose *cansado* or *cansada*, a woman speaking: Mira lo ___ que estoy. Type the whole sentence.",
+      "answer": "Mira lo cansada que estoy.",
+      "accept": [],
+      "why": "The adjective still matches the speaker, and a woman speaking uses *cansada*."
+    },
+    {
+      "prompt": "Type in Spanish: Did you see how well Simón talks?",
+      "answer": "¿Viste lo bien que habla Simón?",
+      "accept": [],
+      "why": "*Lo bien que* is \"how well\", and the verb comes after *que*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Do you know how hard it is?",
+      "answer": "¿Sabes lo difícil que es?",
+      "accept": [],
+      "why": "*Lo difícil que es* is \"how hard it is\"."
+    },
+    {
+      "prompt": "Type in Spanish: Look how late it is.",
+      "answer": "Mira lo tarde que es.",
+      "accept": [
+        "Fíjate en lo tarde que es."
+      ],
+      "why": "*Lo tarde que es* is \"how late it is\", and *mira* or *fíjate en* points at it."
+    },
+    {
+      "prompt": "Type in Spanish: Given how expensive the coffee is, I'd rather make it at home.",
+      "answer": "Con lo caro que está el café, mejor lo preparo en casa.",
+      "accept": [],
+      "why": "*Con lo… que* sets up the reason, and what you decide comes after the comma."
+    },
+    {
+      "prompt": "Make it an exclamation: *Vale cocina muy bien.*",
+      "answer": "¡Lo bien que cocina Vale!",
+      "accept": [
+        "Mira lo bien que cocina Vale."
+      ],
+      "why": "*Lo bien que* turns \"very well\" into \"how well\", with the subject at the end."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Mira cómo difícil es.",
+      "right": "Mira lo difícil que es.",
+      "why": "English \"how\" before an adjective is *lo* + adjective + *que*, not *cómo*."
+    },
+    {
+      "wrong": "Mira lo difícil es.",
+      "right": "Mira lo difícil que es.",
+      "why": "The *que* is the hinge that joins the adjective to the rest, so it cannot be left out."
+    },
+    {
+      "wrong": "Mira lo cansado que estoy. (a woman speaking)",
+      "right": "Mira lo cansada que estoy.",
+      "why": "The adjective inside *lo… que* still matches the person it describes."
+    }
+  ],
+  "personal": "Say something true about you: *Con lo… que…* or *¡Lo… que…!* with an adjective, like *Con lo cansado que estoy, no voy a salir.*"
+}
