@@ -1,0 +1,139 @@
+{
+  "node": "g:conditional-perfect",
+  "hook": {
+    "line": "Everyone in the café has a version of what would have happened if Rosa had posted those letters. To join the conversation you need one small phrase: \"I would have...\".",
+    "es": "Yo habría mandado la carta.",
+    "en": "I would have sent the letter."
+  },
+  "examples": [
+    { "es": "Yo habría dicho que no.", "en": "I would have said no." },
+    { "es": "¿Qué habrías dicho tú?", "en": "What would you have said?" },
+    { "es": "Con más tiempo, habría terminado el libro.", "en": "With more time, I would have finished the book." },
+    { "es": "Vale habría preferido quedarse en Medellín.", "en": "Vale would have preferred to stay in Medellín." },
+    { "es": "Nosotros no habríamos vendido el café.", "en": "We wouldn't have sold the café." },
+    { "es": "¿Habrías aceptado el trabajo en Toronto?", "en": "Would you (informal) have accepted the job in Toronto?" },
+    { "es": "Ustedes habrían llegado tarde.", "en": "You all would have arrived late." }
+  ],
+  "rule": "English says \"would have\" with two small words. Spanish needs two pieces too: *habría* plus the *-ado* or *-ido* form of the verb (*dicho*, *vendido*, *aceptado*).\n\n*yo habría*\n*tú habrías*\n*él, ella, usted habría*\n*nosotros habríamos*\n*ustedes, ellos habrían*\n\nOnly *habría* changes with the person. The second piece never changes, so it stays *dicho*, whoever speaks. You know *habría* from the ending *-ía* for \"would\": it is the same idea, one step further back. Put *no* and any *lo* or *la* before *habría*: *No lo habría dicho*.\n\nA few forms are irregular: *hecho* (done), *dicho* (said), *escrito* (written), *visto* (seen), *puesto* (put).",
+  "smallPrint": "Teachers call this the conditional perfect (*condicional compuesto*): *haber* in the conditional plus the past participle.",
+  "readAndPick": [
+    {
+      "es": "Yo habría dicho que no.",
+      "options": ["I would have said no.", "I would say no.", "I had said no."],
+      "answer": 0
+    },
+    {
+      "es": "Habríamos comido aquí.",
+      "options": ["They would have eaten here.", "We would eat here.", "We would have eaten here."],
+      "answer": 2
+    },
+    {
+      "es": "¿Habrías aceptado el trabajo en Toronto?",
+      "options": ["Do you accept the job in Toronto?", "Would you have accepted the job in Toronto?", "Did you accept the job in Toronto?"],
+      "answer": 1
+    },
+    {
+      "es": "Nosotros no habríamos vendido el café.",
+      "options": ["We haven't sold the café.", "We didn't sell the café.", "We wouldn't have sold the café."],
+      "answer": 2
+    },
+    {
+      "es": "Yo había dicho que no.",
+      "options": ["I would have said no.", "I had said no.", "I would say no."],
+      "answer": 1
+    },
+    {
+      "es": "Ustedes habrían llegado tarde.",
+      "options": ["You all would have arrived late.", "You all arrived late.", "You all would arrive late."],
+      "answer": 0
+    },
+    {
+      "es": "Vale habría preferido quedarse en Medellín.",
+      "options": ["Vale prefers to stay in Medellín.", "Vale had preferred to stay in Medellín.", "Vale would have preferred to stay in Medellín."],
+      "answer": 2
+    },
+    {
+      "es": "Tú habrías hecho lo mismo.",
+      "options": ["You would have done the same.", "You did the same.", "You will do the same."],
+      "answer": 0
+    },
+    {
+      "es": "Habría ido contigo, pero tenía que trabajar.",
+      "options": ["I will go with you, but I have to work.", "I would have gone with you, but I had to work.", "I went with you, but I had to work."],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Say \"I would have said no.\" Choose *habría* or *había*, then type the whole sentence: *Yo ___ dicho que no.*",
+      "answer": "Yo habría dicho que no.",
+      "accept": ["Habría dicho que no."],
+      "why": "\"Would have\" is *habría*; *había* would mean \"had\"."
+    },
+    {
+      "prompt": "Say \"With more time, I would have finished the book.\" Choose *habría* or *habré*, then type it: *Con más tiempo, ___ terminado el libro.*",
+      "answer": "Con más tiempo, habría terminado el libro.",
+      "accept": ["Con más tiempo, yo habría terminado el libro."],
+      "why": "*Habría* carries the \"would have\"; *terminado* stays the same."
+    },
+    {
+      "prompt": "Type in Spanish: \"We would have eaten here.\"",
+      "answer": "Habríamos comido aquí.",
+      "accept": ["Nosotros habríamos comido aquí."],
+      "why": "For \"we\", *habría* becomes *habríamos*, and *comido* stays put."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: \"Would you have accepted the job?\"",
+      "answer": "¿Habrías aceptado el trabajo?",
+      "accept": ["¿Tú habrías aceptado el trabajo?"],
+      "why": "For \"you\" (informal) the ending is *-as*: *habrías*."
+    },
+    {
+      "prompt": "Type in Spanish: \"I would have done the same.\" (the participle of *hacer* is irregular)",
+      "answer": "Habría hecho lo mismo.",
+      "accept": ["Yo habría hecho lo mismo."],
+      "why": "The participle of *hacer* is *hecho*, never *hacido*."
+    },
+    {
+      "prompt": "Make it negative: *Yo habría vendido el café.*",
+      "answer": "Yo no habría vendido el café.",
+      "accept": ["No habría vendido el café."],
+      "why": "*No* goes right before *habría*."
+    },
+    {
+      "prompt": "Make it about \"we\": *Yo habría llamado antes.*",
+      "answer": "Nosotros habríamos llamado antes.",
+      "accept": ["Habríamos llamado antes."],
+      "why": "Only *habría* changes with the person: *habríamos*; *llamado* stays."
+    },
+    {
+      "prompt": "Ask the same to someone you address as *usted*: *¿Habrías dicho que sí?*",
+      "answer": "¿Habría dicho que sí?",
+      "accept": ["¿Usted habría dicho que sí?"],
+      "why": "With *usted* the verb is like *él*: *habría*, no *-s*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Yo habría decir que no.",
+      "right": "Yo habría dicho que no.",
+      "why": "Almost. After *habría* you need the participle (*dicho*), not the infinitive (*decir*)."
+    },
+    {
+      "wrong": "Habría hacido lo mismo.",
+      "right": "Habría hecho lo mismo.",
+      "why": "Close. A few verbs have their own participle: *hecho*, *dicho*, *escrito*, *visto*."
+    },
+    {
+      "wrong": "Habría lo dicho.",
+      "right": "Lo habría dicho.",
+      "why": "Pronouns like *lo* go before *habría*; they never slip in between."
+    },
+    {
+      "wrong": "Yo había dicho que sí.",
+      "right": "Yo habría dicho que sí.",
+      "why": "Almost. *Había* means \"had\"; for \"would have\" you need *habría*."
+    }
+  ],
+  "personal": "Think of one decision you made this year. Say what you would have done in a different version: *Yo habría...* followed by a participle."
+}

@@ -1,0 +1,122 @@
+{
+  "node": "p:decidirse-atreverse-a",
+  "hook": {
+    "line": "Tomás has stared at the café door for a week. Deciding is easy; actually doing it is the hard part, and Spanish has a verb for that moment.",
+    "es": "Por fin me decidí a abrir el café.",
+    "en": "I finally made up my mind to open the café."
+  },
+  "examples": [
+    { "es": "Por fin me decidí a llamarla.", "en": "I finally made up my mind to call her." },
+    { "es": "No me atreví a decirle la verdad.", "en": "I didn't dare tell him the truth." },
+    { "es": "¿Te atreves a manejar en Bogotá?", "en": "Do you (informal) dare to drive in Bogotá?" },
+    { "es": "Tomás se decidió a abrir el café.", "en": "Tomás made up his mind to open the café." },
+    { "es": "Mariana no se atrevió a preguntar.", "en": "Mariana didn't dare to ask." },
+    { "es": "¿Se atreve a hablar con él?", "en": "Do you (formal) dare to talk to him?" }
+  ],
+  "rule": "Plain *decidir* just means \"decide\": *Decidí vender el café*. Add the pronoun and *a*, and it means you hesitated, then finally brought yourself to do it: *me decidí a vender*.\n\n*Atreverse* means \"to dare\". It always comes with the pronoun too.\n\nBoth follow the same frame: pronoun + verb + *a* + infinitive.\n*me decidí a*, *te atreves a*, *se atrevió a*, *nos atrevimos a*\n\nEnglish \"dare\" needs no little word. Spanish always needs *a*.",
+  "smallPrint": "Teachers call these pronominal verbs with a fixed preposition (*verbos pronominales con régimen preposicional*).",
+  "readAndPick": [
+    {
+      "es": "No me atreví a decirle la verdad.",
+      "options": ["I didn't want to tell him the truth.", "I didn't dare tell him the truth.", "I didn't have to tell him the truth."],
+      "answer": 1
+    },
+    {
+      "es": "¿Te atreves a manejar en Bogotá?",
+      "options": ["Does he dare to drive in Bogotá?", "Do I dare to drive in Bogotá?", "Do you dare to drive in Bogotá?"],
+      "answer": 2
+    },
+    {
+      "es": "Decidí vender el café.",
+      "options": ["I decided to sell the café.", "After hesitating, I finally brought myself to sell the café.", "I didn't dare sell the café."],
+      "answer": 0
+    },
+    {
+      "es": "Me decidí a vender el café.",
+      "options": ["I decided to sell the café.", "I didn't dare sell the café.", "After hesitating, I finally brought myself to sell the café."],
+      "answer": 2
+    },
+    {
+      "es": "Mariana no se atrevió a preguntar.",
+      "options": ["Mariana didn't dare to ask.", "Mariana didn't want to ask.", "Mariana didn't know how to ask."],
+      "answer": 0
+    },
+    {
+      "es": "Nos atrevimos a entrar.",
+      "options": ["They dared to go in.", "We dared to go in.", "We refused to go in."],
+      "answer": 1
+    },
+    {
+      "es": "Tomás se decidió a abrir el café.",
+      "options": ["Tomás finally made up his mind to open the café.", "Tomás was forced to open the café.", "Tomás refused to open the café."],
+      "answer": 0
+    },
+    {
+      "es": "¿Se atreve a hablar con él?",
+      "options": ["Did he dare to talk to him?", "Do you (formal) dare to talk to him?", "Will you (formal) dare to talk to him?"],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Say \"I finally made up my mind to call her.\" Choose *me decidí* or *decidí*, then type it: *Por fin ___ a llamarla.*",
+      "answer": "Por fin me decidí a llamarla.",
+      "accept": [],
+      "why": "The \"finally brought myself to\" meaning needs the pronoun: *me decidí a*."
+    },
+    {
+      "prompt": "Say \"I didn't dare tell him the truth.\" Choose *me atreví* or *atreví*, then type it: *No ___ a decirle la verdad.*",
+      "answer": "No me atreví a decirle la verdad.",
+      "accept": [],
+      "why": "*Atreverse* always has its pronoun, so *me atreví*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: \"Do you dare to drive in Bogotá?\"",
+      "answer": "¿Te atreves a manejar en Bogotá?",
+      "accept": [],
+      "why": "For \"you\" (informal) the pronoun is *te* and the verb ends in *-es*, then *a* and the infinitive."
+    },
+    {
+      "prompt": "Type in Spanish: \"Tomás finally made up his mind to open the café.\"",
+      "answer": "Tomás se decidió a abrir el café.",
+      "accept": ["Tomás por fin se decidió a abrir el café."],
+      "why": "For someone else the pronoun is *se*: *se decidió a*."
+    },
+    {
+      "prompt": "Make it about \"we\": *No me atreví a preguntar.*",
+      "answer": "No nos atrevimos a preguntar.",
+      "accept": [],
+      "why": "\"We\" changes both the pronoun and the ending: *nos atrevimos*."
+    },
+    {
+      "prompt": "Ask the same to someone you address as *usted*: *¿Te atreves a hablar con él?*",
+      "answer": "¿Se atreve a hablar con él?",
+      "accept": ["¿Usted se atreve a hablar con él?"],
+      "why": "With *usted* the pronoun is *se* and the verb is like *él*: *se atreve*."
+    },
+    {
+      "prompt": "Type in Spanish: \"Mariana finally made up her mind to sell.\"",
+      "answer": "Mariana se decidió a vender.",
+      "accept": ["Mariana por fin se decidió a vender."],
+      "why": "The frame is the same for every person: pronoun + *decidió* + *a* + infinitive."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me atreví hablar con ella.",
+      "right": "Me atreví a hablar con ella.",
+      "why": "Almost. English \"dare\" needs no extra word, but *atreverse* always needs *a* before the infinitive."
+    },
+    {
+      "wrong": "No atreví a preguntar.",
+      "right": "No me atreví a preguntar.",
+      "why": "Close. This verb always comes with its pronoun: *me*, *te*, *se*, *nos*."
+    },
+    {
+      "wrong": "Decidí a llamarla.",
+      "right": "Me decidí a llamarla.",
+      "why": "Plain *decidir* takes no *a*; the *a* belongs to *decidirse*, which also needs its pronoun."
+    }
+  ],
+  "personal": "Say something you finally made up your mind to do, or something you have never dared to do: *Por fin me decidí a...* or *Nunca me he atrevido a...*, whichever is true."
+}

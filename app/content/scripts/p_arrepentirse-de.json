@@ -1,0 +1,122 @@
+{
+  "node": "p:arrepentirse-de",
+  "hook": {
+    "line": "Sooner or later in any long talk about what might have been, someone says what they regret, or proudly says they regret nothing.",
+    "es": "No me arrepiento de nada.",
+    "en": "I don't regret anything."
+  },
+  "examples": [
+    { "es": "Me arrepiento de lo que dije.", "en": "I regret what I said." },
+    { "es": "No me arrepiento de nada.", "en": "I don't regret anything." },
+    { "es": "¿Te arrepientes de la decisión?", "en": "Do you (informal) regret the decision?" },
+    { "es": "Rosa nunca se arrepintió de su decisión.", "en": "Rosa never regretted her decision." },
+    { "es": "Nos arrepentimos de esa decisión.", "en": "We regret that decision." },
+    { "es": "Tomás no se arrepiente de lo que dijo.", "en": "Tomás doesn't regret what he said." }
+  ],
+  "rule": "English \"regret\" takes its object directly: \"I regret it\". Spanish needs two extra pieces: the pronoun and *de*.\n\n*me arrepiento de*\n*te arrepientes de*\n*se arrepiente de*\n*nos arrepentimos de*\n*se arrepienten de*\n\nAfter *de* put a noun (*la decisión*), *lo que* plus a verb (*lo que dije*), or *nada* and *todo*.\n\nThe middle of the verb changes a little: *arrepiento*, but *arrepentimos*; and in the past, *se arrepintió*.",
+  "smallPrint": "Teachers call this a pronominal verb with a fixed preposition (*verbo pronominal con régimen preposicional*): the pronoun and *de* come as a pair.",
+  "readAndPick": [
+    {
+      "es": "No me arrepiento de nada.",
+      "options": ["I regret everything.", "I don't regret anything.", "I don't remember anything."],
+      "answer": 1
+    },
+    {
+      "es": "Se arrepintió de la decisión.",
+      "options": ["He regrets the decision.", "He will regret the decision.", "He regretted the decision."],
+      "answer": 2
+    },
+    {
+      "es": "¿Te arrepientes de lo que dijiste?",
+      "options": ["Does he regret what he said?", "Do you regret what you said?", "Do I regret what I said?"],
+      "answer": 1
+    },
+    {
+      "es": "Me arrepiento de lo que dije.",
+      "options": ["I regret what I said.", "I regret what I will say.", "I remember what I said."],
+      "answer": 0
+    },
+    {
+      "es": "Nos arrepentimos de esa decisión.",
+      "options": ["I regret that decision.", "They regret that decision.", "We regret that decision."],
+      "answer": 2
+    },
+    {
+      "es": "Mariana se arrepiente de la entrevista.",
+      "options": ["Mariana regrets the interview.", "Mariana regretted the interview.", "Mariana will regret the interview."],
+      "answer": 0
+    },
+    {
+      "es": "Se arrepienten de todo.",
+      "options": ["He regrets everything.", "You (informal) regret everything.", "They regret everything."],
+      "answer": 2
+    },
+    {
+      "es": "Rosa nunca se arrepintió de su decisión.",
+      "options": ["Rosa never regrets her decision.", "Rosa never regretted her decision.", "Rosa never decided."],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Say \"I regret what I said.\" Choose *me arrepiento* or *arrepiento*, then type it: *___ de lo que dije.*",
+      "answer": "Me arrepiento de lo que dije.",
+      "accept": [],
+      "why": "*Arrepentirse* always has its pronoun, so *me arrepiento*."
+    },
+    {
+      "prompt": "Say \"I don't regret anything.\" Choose *de* or *a*, then type it: *No me arrepiento ___ nada.*",
+      "answer": "No me arrepiento de nada.",
+      "accept": [],
+      "why": "The preposition that goes with this verb is always *de*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: \"Do you regret the decision?\"",
+      "answer": "¿Te arrepientes de la decisión?",
+      "accept": [],
+      "why": "For \"you\" (informal) it is *te arrepientes de*."
+    },
+    {
+      "prompt": "Type in Spanish: \"Rosa never regretted her decision.\"",
+      "answer": "Rosa nunca se arrepintió de su decisión.",
+      "accept": ["Rosa no se arrepintió nunca de su decisión."],
+      "why": "In the past, the third person is *se arrepintió*, still followed by *de*."
+    },
+    {
+      "prompt": "Make it about \"we\": *Me arrepiento de esa decisión.*",
+      "answer": "Nos arrepentimos de esa decisión.",
+      "accept": [],
+      "why": "\"We\" is *nos arrepentimos*, and *de* stays."
+    },
+    {
+      "prompt": "Make it negative: *Tomás se arrepiente de lo que dijo.*",
+      "answer": "Tomás no se arrepiente de lo que dijo.",
+      "accept": [],
+      "why": "*No* goes before the pronoun."
+    },
+    {
+      "prompt": "Ask the same to someone you address as *usted*: *¿Te arrepientes de esa decisión?*",
+      "answer": "¿Se arrepiente de esa decisión?",
+      "accept": ["¿Usted se arrepiente de esa decisión?"],
+      "why": "With *usted* the pronoun is *se* and the verb is like *él*: *se arrepiente*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Arrepiento de lo que dije.",
+      "right": "Me arrepiento de lo que dije.",
+      "why": "Almost. You regret yourself, in a way: the pronoun *me* always comes with this verb."
+    },
+    {
+      "wrong": "Me arrepiento lo que dije.",
+      "right": "Me arrepiento de lo que dije.",
+      "why": "Close. English \"regret\" takes its object directly, but Spanish always puts *de* first."
+    },
+    {
+      "wrong": "Me arrepentí por la decisión.",
+      "right": "Me arrepentí de la decisión.",
+      "why": "Not *por* or *para*: the one preposition for this verb is *de*."
+    }
+  ],
+  "personal": "Say one thing you do not regret, and one you do: *No me arrepiento de...* and *Me arrepiento de...*."
+}

@@ -1,0 +1,122 @@
+{
+  "node": "p:llevar-sin-inf",
+  "hook": {
+    "line": "Tomás has gone days without a proper night's sleep, and everyone at the café has noticed. English counts that time with \"haven't... for\"; Spanish has a neat way of its own.",
+    "es": "Llevo tres días sin dormir bien.",
+    "en": "I haven't slept well for three days."
+  },
+  "examples": [
+    { "es": "Llevo tres semanas sin fumar.", "en": "I haven't smoked for three weeks." },
+    { "es": "Tomás lleva dos días sin hablar con Vale.", "en": "Tomás hasn't talked to Vale for two days." },
+    { "es": "¿Cuánto llevas sin dormir?", "en": "How long have you gone without sleep?" },
+    { "es": "Llevábamos años sin vernos.", "en": "We hadn't seen each other for years." },
+    { "es": "Simón lleva una semana sin hablar.", "en": "Simón hasn't spoken for a week." },
+    { "es": "Llevaba un año sin ver a Rosa.", "en": "I hadn't seen Rosa for a year." }
+  ],
+  "rule": "To say how long you have gone without doing something, use *llevar* + the time + *sin* + the infinitive.\n\n*Llevo tres semanas sin fumar.*\n\nSpanish uses the present (*llevo*) where English says \"haven't... for\". Use *llevaba* or *llevábamos* when the time is in the past: \"hadn't... for\".\n\nAfter *sin*, the verb is always the infinitive, even when English says \"without smoking\". And there is no *no* in the sentence: *sin* already is the \"not\".\n\nTo ask: *¿Cuánto llevas sin...?*",
+  "smallPrint": "Teachers call this a durative periphrasis with *llevar* (*perífrasis de llevar + sin + infinitivo*): it mirrors *llevar + gerund*, which says how long you have been doing something.",
+  "readAndPick": [
+    {
+      "es": "Llevo tres semanas sin fumar.",
+      "options": ["I've smoked for three weeks.", "I haven't smoked for three weeks.", "I will stop smoking in three weeks."],
+      "answer": 1
+    },
+    {
+      "es": "Llevábamos años sin vernos.",
+      "options": ["We haven't seen each other for years.", "We saw each other years ago.", "We hadn't seen each other for years."],
+      "answer": 2
+    },
+    {
+      "es": "¿Cuánto llevas sin dormir?",
+      "options": ["How long have you gone without sleep?", "How much do you sleep?", "How well did you sleep?"],
+      "answer": 0
+    },
+    {
+      "es": "Llevo dos horas hablando con Vale.",
+      "options": ["I haven't talked to Vale for two hours.", "I've been talking to Vale for two hours.", "I will talk to Vale in two hours."],
+      "answer": 1
+    },
+    {
+      "es": "Llevo dos horas sin hablar con Vale.",
+      "options": ["I haven't talked to Vale for two hours.", "I've been talking to Vale for two hours.", "I will talk to Vale in two hours."],
+      "answer": 0
+    },
+    {
+      "es": "Tomás lleva dos días sin hablar con Vale.",
+      "options": ["Tomás has talked to Vale for two days.", "Tomás hasn't talked to Vale for two days.", "Tomás talked to Vale two days ago."],
+      "answer": 1
+    },
+    {
+      "es": "Llevaba un año sin ver a Rosa.",
+      "options": ["I hadn't seen Rosa for a year.", "I haven't seen Rosa for a year.", "I didn't see Rosa a year ago."],
+      "answer": 0
+    },
+    {
+      "es": "Simón lleva una semana sin hablar.",
+      "options": ["Simón talks all week.", "Simón will talk next week.", "Simón hasn't spoken for a week."],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Say \"I haven't eaten well for two days.\" Choose *sin* or *no*, then type it: *Llevo dos días ___ comer bien.*",
+      "answer": "Llevo dos días sin comer bien.",
+      "accept": [],
+      "why": "*Sin* already means \"not\", and the infinitive follows it."
+    },
+    {
+      "prompt": "Ask a friend how long they have gone without sleep. Choose *llevas* or *estás*, then type it: *¿Cuánto ___ sin dormir?*",
+      "answer": "¿Cuánto llevas sin dormir?",
+      "accept": [],
+      "why": "Counting how long calls for *llevar*."
+    },
+    {
+      "prompt": "Type in Spanish: \"Tomás hasn't talked to Vale for two days.\"",
+      "answer": "Tomás lleva dos días sin hablar con Vale.",
+      "accept": [],
+      "why": "For someone else it is *lleva*, then the time, *sin* and the infinitive."
+    },
+    {
+      "prompt": "Type in Spanish: \"We hadn't seen each other for years.\"",
+      "answer": "Llevábamos años sin vernos.",
+      "accept": [],
+      "why": "The time is in the past, so *llevábamos*; *vernos* is the infinitive with *nos* attached."
+    },
+    {
+      "prompt": "Put it in the past: *Llevo tres días sin comer bien.*",
+      "answer": "Llevaba tres días sin comer bien.",
+      "accept": [],
+      "why": "\"Hadn't... for\" uses *llevaba*."
+    },
+    {
+      "prompt": "Type in Spanish: \"Simón hasn't spoken for a week.\"",
+      "answer": "Simón lleva una semana sin hablar.",
+      "accept": [],
+      "why": "Same frame: *lleva* + time + *sin* + *hablar*."
+    },
+    {
+      "prompt": "Type in Spanish: \"We haven't spoken for an hour.\"",
+      "answer": "Llevamos una hora sin hablar.",
+      "accept": [],
+      "why": "For \"we\", *llevamos*, and the infinitive does not change."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Llevo tres semanas no fumar.",
+      "right": "Llevo tres semanas sin fumar.",
+      "why": "Almost. \"Not\" becomes *sin* here, and *no* is left out."
+    },
+    {
+      "wrong": "Llevo tres semanas sin fumando.",
+      "right": "Llevo tres semanas sin fumar.",
+      "why": "English says \"without smoking\", but after *sin* Spanish always uses the infinitive."
+    },
+    {
+      "wrong": "Hago tres semanas sin fumar.",
+      "right": "Llevo tres semanas sin fumar.",
+      "why": "To count the time, use *llevar*, not *hacer* or *estar*."
+    }
+  ],
+  "personal": "Say something you have gone without for a while: *Llevo... sin...*, with a real amount of time."
+}

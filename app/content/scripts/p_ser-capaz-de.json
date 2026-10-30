@@ -1,0 +1,122 @@
+{
+  "node": "p:ser-capaz-de",
+  "hook": {
+    "line": "Everyone has something they could not bring themselves to do, like telling a hard truth. Spanish says it with one small adjective, and it carries all the nerve of that moment.",
+    "es": "No fui capaz de decirle la verdad.",
+    "en": "I couldn't bring myself to tell him the truth."
+  },
+  "examples": [
+    { "es": "No fui capaz de decirle la verdad.", "en": "I couldn't bring myself to tell him the truth." },
+    { "es": "Tomás no fue capaz de vender el café.", "en": "Tomás couldn't bring himself to sell the café." },
+    { "es": "Es capaz de todo.", "en": "He's capable of anything." },
+    { "es": "¿Serías capaz de vivir sin celular?", "en": "Would you (informal) be able to live without a cell phone?" },
+    { "es": "Mariana es incapaz de mentir.", "en": "Mariana is incapable of lying." },
+    { "es": "Yo no habría sido capaz de dejarlo.", "en": "I wouldn't have been able to bring myself to leave it." }
+  ],
+  "rule": "*Ser capaz de* + infinitive talks about one act that takes nerve, or about what someone is capable of doing.\n\n*No fui capaz de decírselo.*\n\nIt is not about general skill. For \"I can swim\", use *puedo* or *sé nadar*. Use *capaz* when the question is \"would they actually do it?\" or \"could they bring themselves to?\".\n\n*Incapaz de* says the opposite: *Mariana es incapaz de mentir*.\n\n*Capaz* changes only in the plural: *capaces*. *Incapaz* becomes *incapaces*.",
+  "smallPrint": "Teachers call this the expression of capacity or willingness with *ser capaz de* (*capacidad*), as opposed to everyday ability with *poder* or *saber*.",
+  "readAndPick": [
+    {
+      "es": "No fui capaz de decirle la verdad.",
+      "options": ["I wasn't allowed to tell him the truth.", "I couldn't bring myself to tell him the truth.", "I didn't know the truth."],
+      "answer": 1
+    },
+    {
+      "es": "Es capaz de todo.",
+      "options": ["He's afraid of everything.", "He's good at everything.", "He's capable of anything."],
+      "answer": 2
+    },
+    {
+      "es": "¿Serías capaz de vivir sin celular?",
+      "options": ["Would you be able to bring yourself to live without a cell phone?", "Do you live without a cell phone?", "Did you live without a cell phone?"],
+      "answer": 0
+    },
+    {
+      "es": "Mariana es incapaz de mentir.",
+      "options": ["Mariana is able to lie.", "Mariana is incapable of lying.", "Mariana loves lying."],
+      "answer": 1
+    },
+    {
+      "es": "Tomás no fue capaz de vender el café.",
+      "options": ["Tomás couldn't bring himself to sell the café.", "Tomás didn't want the café.", "Tomás wasn't allowed to sell the café."],
+      "answer": 0
+    },
+    {
+      "es": "Ellas son capaces de ganar.",
+      "options": ["She is capable of winning.", "They are capable of winning.", "They want to win."],
+      "answer": 1
+    },
+    {
+      "es": "Yo no habría sido capaz de dejarlo.",
+      "options": ["I wasn't able to leave it.", "I'm not able to leave it.", "I wouldn't have been able to bring myself to leave it."],
+      "answer": 2
+    },
+    {
+      "es": "Rosa era capaz de cocinar para cien personas.",
+      "options": ["Rosa was capable of cooking for a hundred people.", "Rosa is capable of cooking for a hundred people.", "Rosa wanted to cook for a hundred people."],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Say \"I couldn't bring myself to tell him the truth.\" Choose *capaz de* or *capaz*, then type it: *No fui ___ decirle la verdad.*",
+      "answer": "No fui capaz de decirle la verdad.",
+      "accept": [],
+      "why": "The adjective always comes with *de* before the infinitive."
+    },
+    {
+      "prompt": "Type in Spanish: \"Tomás couldn't bring himself to sell the café.\"",
+      "answer": "Tomás no fue capaz de vender el café.",
+      "accept": [],
+      "why": "For someone else it is *fue capaz de*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: \"Would you be able to live without a cell phone?\"",
+      "answer": "¿Serías capaz de vivir sin celular?",
+      "accept": ["¿Tú serías capaz de vivir sin celular?"],
+      "why": "\"Would you\" is *serías*, then *capaz de* and the infinitive."
+    },
+    {
+      "prompt": "Say the opposite, \"Mariana is incapable of lying\": *Mariana es capaz de mentir.*",
+      "answer": "Mariana es incapaz de mentir.",
+      "accept": ["Mariana no es capaz de mentir."],
+      "why": "*Incapaz de* flips the meaning; *no es capaz de* does too."
+    },
+    {
+      "prompt": "Make it plural, about several women: *Ella es capaz de todo.*",
+      "answer": "Ellas son capaces de todo.",
+      "accept": [],
+      "why": "*Capaz* becomes *capaces* in the plural, and *es* becomes *son*."
+    },
+    {
+      "prompt": "Type in Spanish: \"I wouldn't have been able to bring myself to leave it.\"",
+      "answer": "Yo no habría sido capaz de dejarlo.",
+      "accept": ["No habría sido capaz de dejarlo."],
+      "why": "\"Wouldn't have been\" is *no habría sido*, as you learned today."
+    },
+    {
+      "prompt": "Type in Spanish: \"Rosa was capable of cooking for a hundred people.\"",
+      "answer": "Rosa era capaz de cocinar para cien personas.",
+      "accept": [],
+      "why": "For something Rosa could do in general, use *era capaz de*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No fui capaz decirle la verdad.",
+      "right": "No fui capaz de decirle la verdad.",
+      "why": "Almost. English drops the little word, but *capaz* always needs *de* before the infinitive."
+    },
+    {
+      "wrong": "Ellas son capaz de ganar.",
+      "right": "Ellas son capaces de ganar.",
+      "why": "Close. The adjective agrees with the people: plural *capaces*."
+    },
+    {
+      "wrong": "Soy capaz de nadar.",
+      "right": "Sé nadar.",
+      "why": "*Ser capaz de* is about nerve or what someone would do. For plain skill, use *saber* or *poder*."
+    }
+  ],
+  "personal": "Say something you would never be able to bring yourself to do: *Yo no sería capaz de...*."
+}

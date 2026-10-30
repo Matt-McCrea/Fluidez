@@ -1,0 +1,122 @@
+{
+  "node": "p:llegar-a-ser",
+  "hook": {
+    "line": "Everyone in La Candelaria has a story about how Rosa became the best-known name on the block. It did not happen overnight, and Spanish has a phrase for that long road.",
+    "es": "Rosa llegó a ser la dueña del café.",
+    "en": "Rosa ended up becoming the owner of the café."
+  },
+  "examples": [
+    { "es": "Rosa llegó a ser la dueña del café.", "en": "Rosa ended up becoming the owner of the café." },
+    { "es": "Hernando llegó a ser el taxista más conocido del barrio.", "en": "Hernando became the best-known taxi driver in the neighborhood." },
+    { "es": "Llegó a ser una de las científicas más reconocidas del país.", "en": "She became one of the country's best-known scientists." },
+    { "es": "Llegué a pensar que no volvería.", "en": "I got to the point of thinking he wouldn't come back." },
+    { "es": "Llegamos a creer que el café cerraría.", "en": "We came to believe the café would close." },
+    { "es": "No llegó a ser famosa.", "en": "She never became famous." }
+  ],
+  "rule": "*Llegar a ser* + a noun or adjective means \"to become\" after a long road: years of work, luck, time. It is for the big results.\n\n*Llegó a ser directora.*\n\nYou will usually see it in the past. Add *no* and it means someone never made it: *No llegó a ser famosa*.\n\nThe same *llegar a* + infinitive means \"to get to the point of\", usually with thinking or feeling: *llegué a pensar*, *llegamos a creer*.\n\nFor a quick change, *llegar a ser* is too heavy. Use *estaba nervioso*, not \"I arrived at being nervous\".",
+  "smallPrint": "Teachers call this a verb of change (*verbo de cambio*), the slow, effortful kind.",
+  "readAndPick": [
+    {
+      "es": "Rosa llegó a ser la dueña del café.",
+      "options": ["Rosa wanted to be the owner of the café.", "Rosa arrived at the owner of the café.", "Rosa ended up becoming the owner of the café."],
+      "answer": 2
+    },
+    {
+      "es": "Rosa llegó al café a las ocho.",
+      "options": ["Rosa arrived at the café at eight.", "Rosa became the café at eight.", "Rosa ended up owning the café at eight."],
+      "answer": 0
+    },
+    {
+      "es": "Llegué a pensar que no volvería.",
+      "options": ["I arrived thinking he wouldn't come back.", "I got to the point of thinking he wouldn't come back.", "I thought he would never leave."],
+      "answer": 1
+    },
+    {
+      "es": "No llegó a ser famosa.",
+      "options": ["She never became famous.", "She became famous.", "She didn't want to be famous."],
+      "answer": 0
+    },
+    {
+      "es": "Hernando llegó a ser el taxista más conocido del barrio.",
+      "options": ["Hernando wanted to be the best-known taxi driver.", "Hernando became the best-known taxi driver in the neighborhood.", "Hernando arrived at the taxi driver's neighborhood."],
+      "answer": 1
+    },
+    {
+      "es": "Llegaron a ser muy conocidas.",
+      "options": ["They became very well known.", "She became very well known.", "They arrived well known."],
+      "answer": 0
+    },
+    {
+      "es": "Llegamos a creer que el café cerraría.",
+      "options": ["We want to believe the café will close.", "We arrived believing the café would close.", "We came to believe the café would close."],
+      "answer": 2
+    },
+    {
+      "es": "Llegué a odiar ese carro.",
+      "options": ["I got to the point of hating that car.", "I arrived in that car hating it.", "I always loved that car."],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Say \"Rosa became the owner of the café.\" Choose *a ser* or *ser*, then type it: *Rosa llegó ___ la dueña del café.*",
+      "answer": "Rosa llegó a ser la dueña del café.",
+      "accept": [],
+      "why": "The frame always has *a*: *llegó a ser*."
+    },
+    {
+      "prompt": "Type in Spanish: \"Vale became the best cook in Medellín.\"",
+      "answer": "Vale llegó a ser la mejor cocinera de Medellín.",
+      "accept": [],
+      "why": "*Llegó a ser* + the noun, with *la mejor* for \"the best\"."
+    },
+    {
+      "prompt": "Type in Spanish: \"I came to think he wouldn't come back.\"",
+      "answer": "Llegué a pensar que no volvería.",
+      "accept": ["Llegué a pensar que él no volvería."],
+      "why": "With thoughts, *llegar a* + infinitive means \"got to the point of\"."
+    },
+    {
+      "prompt": "Type in Spanish: \"We came to believe the café would close.\"",
+      "answer": "Llegamos a creer que el café cerraría.",
+      "accept": [],
+      "why": "For \"we\" it is *llegamos a*, then the infinitive."
+    },
+    {
+      "prompt": "Make it plural, about several women: *Llegó a ser muy conocida.*",
+      "answer": "Llegaron a ser muy conocidas.",
+      "accept": [],
+      "why": "The verb takes *-ron* and the adjective takes *-s*."
+    },
+    {
+      "prompt": "Make it negative, \"she never became famous\": *Llegó a ser famosa.*",
+      "answer": "No llegó a ser famosa.",
+      "accept": [],
+      "why": "*No llegó a ser* says she never made it."
+    },
+    {
+      "prompt": "Type in Spanish: \"I got to the point of hating that car.\"",
+      "answer": "Llegué a odiar ese carro.",
+      "accept": [],
+      "why": "Feelings work like thoughts: *llegué a* + infinitive."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Llegó ser directora.",
+      "right": "Llegó a ser directora.",
+      "why": "Almost. English \"became\" is one word, but Spanish always puts *a* before *ser*."
+    },
+    {
+      "wrong": "Llegó a directora.",
+      "right": "Llegó a ser directora.",
+      "why": "Close. Without *ser*, *llegó a* just means she arrived somewhere."
+    },
+    {
+      "wrong": "Llegué a ser nervioso antes de la entrevista.",
+      "right": "Estaba nervioso antes de la entrevista.",
+      "why": "*Llegar a ser* is for a long road, not for a quick change like getting nervous."
+    }
+  ],
+  "personal": "Say what you would like to end up becoming, or what a friend ended up becoming: *Llegó a ser...* or *Quiero llegar a ser...*."
+}
