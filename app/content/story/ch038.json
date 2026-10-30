@@ -2,7 +2,7 @@
   "id": "ch038",
   "unit": "u14",
   "title": "Listo",
-  "text": "«Listo».\nUna sola palabra. Vale la mandó a las cuatro y media de la mañana.\nEn la cocina de doña Gloria, Tomás miraba el celular.\nTomás: ¿Listo? Escribí un mensaje de una hora, ¡y ella me responde con una palabra!\nGloria le sirvió un tinto.\nGloria: A ver, mijo. ¿Qué relación tienen ustedes dos?\nTomás: Trabajamos juntos. Es una amiga.\nGloria: Claro, mijo. Una amiga que escribe a las cuatro y media de la mañana.\nEn el café, Tomás les mostró el celular a todos.\nHernando: En Colombia, «listo» quiere decir sí. Es una buena noticia, mijo.\nMariana: No. «Listo» quiere decir: ya entendí, y ya.\nSimón: ¡Listo! ¡Listo!\nHernando: ¿Ves? Simón también lo entiende.\nTomás: Vale suele mandar diez mensajes, con fotos y audios. ¿Y hoy? Una palabra.\nA las diez sonó el teléfono viejo del café, el teléfono de Rosa.\nVale: ¿Aló? ¿Tomás? ¿Me escuchas? Aquí la señal es malísima.\nTomás: Sí, te escucho.\nVale: Leí tu mensaje cinco veces. Tu español no es perfecto, pero tiene corazón. «Listo» quiere decir: estoy contigo. Te voy a ayudar a buscar la escritura. Llego mañana a las seis. ¿Me vas a esperar?\nTomás: Te voy a esperar con un tinto. Y con Simón.\nVale: Sin Simón, por favor.\nTomás colgó. Por primera vez en muchos días, estaba en paz.\nEsa noche llovía mucho.\nHernando: Cuidado, mijo. Está lloviendo, y no tienes chaqueta.\nTomás: Hoy no me importa la lluvia.\nTomás caminó a la casa de Gloria bajo la lluvia, sin chaqueta. Cantaba la canción de Rosa.",
+  "text": "«Listo».\nUna sola palabra. Vale la mandó a las cuatro y media de la mañana.\nEn la cocina de doña Gloria, Tomás miraba el celular.\nTomás: ¿Listo? Escribí un mensaje de una hora, ¡y ella responde con una palabra!\nGloria: A ver, mijo. ¿Qué relación tienen ustedes dos?\nTomás: Trabajamos juntos. Es una amiga.\nGloria: Claro. Una amiga que escribe a las cuatro y media de la mañana.\nEn el café, Hernando leyó el mensaje.\nHernando: «Listo» quiere decir sí. Es una buena noticia, mijo.\nSimón: ¡Listo! ¡Listo!\nA las diez sonó el teléfono viejo del café, el teléfono de Rosa.\nVale: ¿Aló? ¿Tomás? Leí tu mensaje cinco veces. Tu español no es perfecto, pero tiene corazón. «Listo» quiere decir: estoy contigo. Te voy a ayudar a buscar la escritura. Llego mañana a las seis. ¿Me vas a esperar?\nTomás: Te voy a esperar con un tinto. Y con Simón.\nVale: Sin Simón, por favor.\nEsa noche llovía mucho, y Tomás no tenía chaqueta. Pero no le importaba.\nCaminó a casa bajo la lluvia y cantaba la canción de Rosa.",
   "gloss": [
     {
       "es": "mijo",
@@ -17,18 +17,6 @@
       "en": "A friend who writes at half past four in the morning."
     },
     {
-      "es": "«Listo» quiere decir: ya entendí, y ya.",
-      "en": "\"Listo\" means: got it, end of story."
-    },
-    {
-      "es": "Vale suele mandar diez mensajes",
-      "en": "Vale usually sends ten messages"
-    },
-    {
-      "es": "Aquí la señal es malísima.",
-      "en": "The signal here is terrible."
-    },
-    {
       "es": "Tu español no es perfecto, pero tiene corazón.",
       "en": "Your Spanish isn't perfect, but it has heart."
     },
@@ -37,20 +25,12 @@
       "en": "the deed (the paper that says who owns a building)"
     },
     {
-      "es": "Tomás colgó.",
-      "en": "Tomás hung up."
-    },
-    {
-      "es": "estaba en paz",
-      "en": "he was at peace"
-    },
-    {
-      "es": "Hoy no me importa la lluvia.",
-      "en": "Today I don't care about the rain."
-    },
-    {
       "es": "bajo la lluvia",
       "en": "in the rain"
+    },
+    {
+      "es": "Pero no le importaba.",
+      "en": "But he didn't care."
     }
   ],
   "questions": [
@@ -131,7 +111,6 @@
   "requires": [
     "c:a-ver",
     "c:claro-listo",
-    "c:ojo",
     "c:por-favor",
     "c:tienes",
     "c:voy-a",
@@ -139,16 +118,16 @@
     "g:adjective-agreement",
     "g:demonstratives",
     "g:direct-objects",
-    "g:estar-gerund",
     "g:estar-location-states",
     "g:gender-articles",
+    "g:gustar-full",
     "g:imperfect-habitual",
     "g:imperfect-states",
-    "g:indirect-objects",
     "g:ir-a-plans",
     "g:prep-pronouns",
     "g:present-ar",
     "g:present-er-ir",
+    "g:pret-vs-imperfect",
     "g:preterite-ar",
     "g:preterite-er-ir",
     "g:preterite-spelling-stem",
@@ -157,25 +136,18 @@
     "g:ser-identity",
     "g:stem-boot",
     "g:verb-infinitive",
-    "p:aqui-ahi-alla",
     "p:bien-bueno",
     "p:bien-mal-vs-bueno-malo",
-    "p:hace-frio",
     "p:me-te-nos-objects",
-    "p:ordinal-floor",
-    "p:ordinals-primer-tercer",
     "p:por-la-manana",
     "p:possessives-basic",
     "p:quantifiers-basic",
     "p:senor-don-article",
-    "p:soler-inf",
     "p:telling-time",
     "p:viejo-antiguo-mayor"
   ],
   "lexemes": [
     "l:amiga",
-    "l:aquí",
-    "l:audio",
     "l:ayudar",
     "l:buena",
     "l:buscar",
@@ -188,22 +160,15 @@
     "l:chaqueta",
     "l:claro",
     "l:cocina",
-    "l:colgar",
     "l:corazón",
-    "l:cuidado",
     "l:decir",
-    "l:día",
-    "l:entender",
     "l:escribir",
     "l:escritura",
-    "l:escuchar",
     "l:español",
     "l:esperar",
     "l:estar",
     "l:favor",
-    "l:foto",
     "l:hora",
-    "l:hoy",
     "l:importar",
     "l:ir",
     "l:juntos",
@@ -212,26 +177,20 @@
     "l:llegar",
     "l:llover",
     "l:lluvia",
-    "l:malo",
     "l:mandar",
     "l:mañana",
     "l:mensaje",
     "l:mijo",
     "l:mirar",
-    "l:mostrar",
     "l:noche",
     "l:noticia",
     "l:palabra",
-    "l:paz",
     "l:perfecto",
     "l:querer",
     "l:qué",
     "l:relación",
     "l:responder",
     "l:ser",
-    "l:servir",
-    "l:señal",
-    "l:soler",
     "l:sonar",
     "l:teléfono",
     "l:tener",
