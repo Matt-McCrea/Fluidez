@@ -1,0 +1,332 @@
+{
+  "id": "ch103",
+  "unit": "u34",
+  "title": "Una sola palabra",
+  "text": "La mesa de la ventana estaba llena de cristales, y en medio de los cristales había una piedra grande. Simón se escondió debajo de la caja.\nVale: ¿Estás bien, Simón?\nSimón: ¡Son cosas que pasan! ¡Cosas!\nHernando: Hasta el loro está más tranquilo que yo.\nVale empezó a quitar los cristales de la mesa de Rosa, uno por uno. Tomás le tomó las manos.\nTomás: Tú tienes tres puntos en el dedo. Yo lo hago.\nTomás guardó la piedra en una bolsa, como en las series de televisión.\nA las ocho, Tomás, Vale, Hernando y Mariana llegaron a la comisaría. En la puerta había un letrero de bienvenida, y adentro, una fila de veinte personas.\nA una señora le robaron la cartera. A un señor le robaron las gallinas.\nHernando: Esta fila es un espectáculo.\nA las once, un policía los llamó. Escribía en la computadora con dos dedos.\nPolicía: ¿Qué les pasó?\nTomás: Ayer me robaron el celular en un bus de la Séptima. Nos rompieron la ventana del café. Y alguien firmó un contrato con el nombre de mi tío abuelo.\nPolicía: Uno por uno, señor. Su cédula, por favor.\nPolicía: Esta cédula se le venció en 2014.\nTomás: Vivía en Toronto.\nPolicía: En Toronto el tiempo también pasa, señor.\nMariana: ¿Podemos hablar de la ventana, por favor?\nPolicía: ¿El café tiene problemas financieros? ¿Le debe plata a alguien?\nVale: Problemas financieros tiene todo el mundo. Nosotros tenemos un hotel que quiere nuestro edificio.\nHernando: ¿Y quién alimenta a Simón hoy?\nVale: Jhon Fredy, con almojábanas.\nPolicía: ¿Y la piedra?\nTomás sacó la piedra de la bolsa. Con la luz de la oficina, vio lo que nadie vio en la noche: un papel pegado debajo, con una sola palabra en rojo.\n«Vendan».\nEl policía dejó de escribir.\nPolicía: Esto ya no es un robo. Es una amenaza.\nMariana le tomó una foto al papel. Vale le tomó la mano a Tomás, y esta vez no se la soltó.\nHernando se sentó despacio, con la mano en el pecho.\nHernando: No es nada, mija. Es la fila.",
+  "gloss": [
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "Vendan",
+      "en": "Sell"
+    },
+    {
+      "es": "La mesa de la ventana estaba llena de cristales",
+      "en": "The window table was covered in broken glass"
+    },
+    {
+      "es": "Simón se escondió debajo de la caja.",
+      "en": "Simón hid under the till."
+    },
+    {
+      "es": "Hasta el loro está más tranquilo que yo.",
+      "en": "Even the parrot is calmer than I am."
+    },
+    {
+      "es": "Tomás le tomó las manos.",
+      "en": "Tomás took her hands."
+    },
+    {
+      "es": "Tú tienes tres puntos en el dedo. Yo lo hago.",
+      "en": "You have three stitches in your finger. I'll do it."
+    },
+    {
+      "es": "como en las series de televisión",
+      "en": "like on TV shows"
+    },
+    {
+      "es": "un letrero de bienvenida",
+      "en": "a welcome sign"
+    },
+    {
+      "es": "A un señor le robaron las gallinas.",
+      "en": "A man had his hens stolen."
+    },
+    {
+      "es": "Esta fila es un espectáculo.",
+      "en": "This queue is quite a show."
+    },
+    {
+      "es": "Escribía en la computadora con dos dedos.",
+      "en": "He typed on the computer with two fingers."
+    },
+    {
+      "es": "mi tío abuelo",
+      "en": "my great-uncle"
+    },
+    {
+      "es": "Uno por uno",
+      "en": "One at a time"
+    },
+    {
+      "es": "Esta cédula se le venció en 2014.",
+      "en": "Your ID card expired in 2014."
+    },
+    {
+      "es": "En Toronto el tiempo también pasa, señor.",
+      "en": "Time passes in Toronto too, sir."
+    },
+    {
+      "es": "¿El café tiene problemas financieros?",
+      "en": "Does the café have money problems?"
+    },
+    {
+      "es": "¿Y quién alimenta a Simón hoy?",
+      "en": "And who's feeding Simón today?"
+    },
+    {
+      "es": "un papel pegado debajo, con una sola palabra en rojo",
+      "en": "a piece of paper stuck underneath, with a single word in red"
+    },
+    {
+      "es": "Esto ya no es un robo. Es una amenaza.",
+      "en": "This isn't a theft any more. It's a threat."
+    },
+    {
+      "es": "y esta vez no se la soltó",
+      "en": "and this time she didn't let go of it"
+    },
+    {
+      "es": "No es nada, mija. Es la fila.",
+      "en": "It's nothing, dear. It's the queue."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Tomás take over clearing the glass from Vale?",
+      "options": [
+        "She is too slow",
+        "She has stitches in her finger",
+        "He wants to keep the glass",
+        "Hernando tells him to"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What is the problem with Tomás's ID card?",
+      "options": [
+        "It is from Canada",
+        "It expired in 2014",
+        "It has the wrong name",
+        "Vale has it"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why didn't anyone see the note the night before?",
+      "options": [
+        "It was stuck underneath the stone, and it was dark",
+        "Simón ate it",
+        "Mariana took it home",
+        "It was in English"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué hace Vale cuando ve la palabra?",
+      "options": [
+        "Le toma la mano a Tomás y no se la suelta",
+        "Llama a Altamira",
+        "Se va a la cocina",
+        "Se ríe"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What do you think is worrying about Hernando at the end?",
+      "options": [
+        "He sits down slowly with his hand on his chest",
+        "He loses his cap",
+        "He gets angry with the policeman",
+        "He falls asleep in the queue"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "The stone was a message, \"Vendan\", and the police now call it a threat. Hernando says the pain in his chest is just the queue, but tomorrow, back at the café, it turns out it is not.",
+  "rereadQuestions": [
+    {
+      "q": "What was stolen from the man in the queue?",
+      "options": [
+        "His hens",
+        "His car",
+        "His wallet",
+        "His phone"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who is feeding Simón while they are at the police station?",
+      "options": [
+        "Jhon Fredy",
+        "Doña Gloria",
+        "Mariana",
+        "Nobody"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿A qué hora los llamó el policía?",
+      "options": [
+        "A las once",
+        "A las ocho",
+        "A las seis",
+        "A las diez"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:a-cuantas-cuotas",
+    "c:ayer-anoche",
+    "c:bien-y-tu",
+    "c:hago-salgo-vengo",
+    "c:no-se",
+    "c:por-favor",
+    "c:son-cosas-que-pasan",
+    "c:te-pasa-algo",
+    "c:tienes",
+    "c:tranquilo",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:comparatives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:por-para-1",
+    "g:possessives",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:se-accidental",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:cerca-de",
+    "p:dates-years",
+    "p:dejar-de-inf",
+    "p:demonstratives-basic",
+    "p:empezar-terminar",
+    "p:indefinites-basic",
+    "p:lleno-libre",
+    "p:me-te-nos-objects",
+    "p:por-la-manana",
+    "p:posicion-precisa",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:telling-time",
+    "p:todos-los-dias"
+  ],
+  "lexemes": [
+    "l:abuelo",
+    "l:adentro",
+    "l:alimentar",
+    "l:almojábana",
+    "l:amenazar",
+    "l:ayer",
+    "l:bien",
+    "l:bienvenida",
+    "l:bolsa",
+    "l:bus",
+    "l:café",
+    "l:caja",
+    "l:cartera",
+    "l:celular",
+    "l:comisaría",
+    "l:computadora",
+    "l:contrato",
+    "l:cosa",
+    "l:cristal",
+    "l:cédula",
+    "l:debajo",
+    "l:deber",
+    "l:dedo",
+    "l:dejar",
+    "l:despacio",
+    "l:edificio",
+    "l:empezar",
+    "l:esconder",
+    "l:escribir",
+    "l:espectáculo",
+    "l:estar",
+    "l:favor",
+    "l:fila",
+    "l:financiero",
+    "l:firmar",
+    "l:foto",
+    "l:gallina",
+    "l:grande",
+    "l:guardar",
+    "l:hablar",
+    "l:hacer",
+    "l:hotel",
+    "l:hoy",
+    "l:letrero",
+    "l:llamar",
+    "l:llegar",
+    "l:lleno",
+    "l:loro",
+    "l:luz",
+    "l:mano",
+    "l:mesa",
+    "l:mija",
+    "l:mundo",
+    "l:noche",
+    "l:nombre",
+    "l:oficina",
+    "l:palabra",
+    "l:papel",
+    "l:pasar",
+    "l:pecho",
+    "l:pegar",
+    "l:persona",
+    "l:piedra",
+    "l:plata",
+    "l:poder",
+    "l:policía",
+    "l:problema",
+    "l:puerta",
+    "l:punto",
+    "l:querer",
+    "l:quitar",
+    "l:quién",
+    "l:qué",
+    "l:robar",
+    "l:robo",
+    "l:rojo",
+    "l:romper",
+    "l:sacar",
+    "l:sentarse",
+    "l:ser",
+    "l:serie",
+    "l:señor",
+    "l:señora",
+    "l:soltar",
+    "l:televisión",
+    "l:tener",
+    "l:tiempo",
+    "l:tomar",
+    "l:tranquilo",
+    "l:tío",
+    "l:vencer",
+    "l:vendar",
+    "l:ventana",
+    "l:ver",
+    "l:vez",
+    "l:vivir"
+  ]
+}

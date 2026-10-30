@@ -1,0 +1,338 @@
+{
+  "id": "ch102",
+  "unit": "u34",
+  "title": "La guayaba once",
+  "text": "A las cinco, Vale ya tenía cuarenta mangos en la mesa. Tomás llegó tarde.\nVale: No hables. Corta.\nTomás cortó un mango. Vale cortó diez. En el mango once, se le fue el cuchillo.\nVale: ¡Ay! ¡Mi dedo!\nTomás vio la sangre y se sentó en el piso, blanco.\nVale: ¡Tomás! La herida soy yo.\nHernando llegó a las seis.\nHernando: A la clínica. Ya.\nEn la Novena, una moto le pegó a la Burra. Fue un choque pequeño, pero el muchacho se cayó con el casco puesto.\nHernando: ¿Está herido, joven?\nMuchacho: No, señor. Por suerte tenía el casco. Mil disculpas. ¿Cuál es su aseguradora?\nHernando: La Virgen del Carmen. Cuarenta años de taxi sin chocar, y hoy me viene a chocar un muchacho.\nVale: ¡Las disculpas después!\nEn la clínica, la enfermera le revisó el dedo a Vale.\nEnfermera: No tocó el hueso ni el músculo. Tres puntos y listo.\nTomás: ¿Seguro que no tocó el hueso?\nEnfermera: Siéntese, señor. Está más blanco que ella.\nEn la pared había un letrero: «El cigarrillo le daña los pulmones».\nHernando: Yo fumé treinta años, y tengo pulmones y músculos de muchacho. Es el corazón el que ya no es joven.\nLo dijo como una broma, pero nadie se rio.\nVale: ¡Se me quedó la cartera en el café!\nTomás pagó con su billetera. Por suerte, al ladrón del bus no le interesó.\nHernando: Yo llevo la billetera en el zapato.\nEntonces llamó la doctora Uribe.\nUribe: ¿Ya pusieron la denuncia del robo? Tienen que denunciar el celular y la firma falsa. Mañana a las ocho, en la comisaría.\nTomás: Mañana pongo la denuncia de todo: el celular, la firma y el choque.\nVale: Un choque no se denuncia, Tomás. Para eso es la aseguradora.\nEn el café, encontraron la puerta abierta y la cartera de Vale encima de la mesa.\nSimón: ¡No fue mi intención! ¡Intención!\nVale: No, Simón. Fue el mango.\nEsa noche, Vale dirigió y Tomás cortó. A las once, Tomás apagó la luz, y la ventana de Rosa se rompió en mil pedazos.",
+  "gloss": [
+    {
+      "es": "sangre",
+      "en": "blood"
+    },
+    {
+      "es": "letrero",
+      "en": "sign"
+    },
+    {
+      "es": "cigarrillo",
+      "en": "cigarette"
+    },
+    {
+      "es": "pedazos",
+      "en": "pieces"
+    },
+    {
+      "es": "se le fue el cuchillo",
+      "en": "the knife slipped"
+    },
+    {
+      "es": "La herida soy yo.",
+      "en": "I'm the one who's hurt."
+    },
+    {
+      "es": "una moto le pegó a la Burra",
+      "en": "a motorbike hit the Burra"
+    },
+    {
+      "es": "Fue un choque pequeño",
+      "en": "It was a small crash"
+    },
+    {
+      "es": "con el casco puesto",
+      "en": "with his helmet on"
+    },
+    {
+      "es": "¿Está herido, joven?",
+      "en": "Are you hurt, young man?"
+    },
+    {
+      "es": "Mil disculpas.",
+      "en": "I'm so sorry."
+    },
+    {
+      "es": "¿Cuál es su aseguradora?",
+      "en": "Who is your insurer?"
+    },
+    {
+      "es": "La Virgen del Carmen.",
+      "en": "The Virgin of Carmen."
+    },
+    {
+      "es": "hoy me viene a chocar un muchacho",
+      "en": "today a kid comes along and crashes into me"
+    },
+    {
+      "es": "¡Las disculpas después!",
+      "en": "Apologies later."
+    },
+    {
+      "es": "la enfermera le revisó el dedo a Vale",
+      "en": "the nurse checked Vale's finger"
+    },
+    {
+      "es": "Tres puntos y listo.",
+      "en": "Three stitches and you're done."
+    },
+    {
+      "es": "Está más blanco que ella.",
+      "en": "You're paler than she is."
+    },
+    {
+      "es": "tengo pulmones y músculos de muchacho",
+      "en": "I have the lungs and muscles of a young man"
+    },
+    {
+      "es": "Es el corazón el que ya no es joven.",
+      "en": "It's my heart that isn't young any more."
+    },
+    {
+      "es": "¡Se me quedó la cartera en el café!",
+      "en": "I left my handbag at the café."
+    },
+    {
+      "es": "al ladrón del bus no le interesó",
+      "en": "the thief on the bus wasn't interested in it"
+    },
+    {
+      "es": "¿Ya pusieron la denuncia del robo?",
+      "en": "Have you reported the theft to the police yet?"
+    },
+    {
+      "es": "Un choque no se denuncia",
+      "en": "You don't report a crash to the police"
+    },
+    {
+      "es": "Para eso es la aseguradora.",
+      "en": "That's what the insurer is for."
+    },
+    {
+      "es": "Vale dirigió y Tomás cortó",
+      "en": "Vale gave the orders and Tomás did the cutting"
+    },
+    {
+      "es": "la ventana de Rosa se rompió en mil pedazos",
+      "en": "Rosa's window shattered into a thousand pieces"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What happens when Tomás sees Vale's blood?",
+      "options": [
+        "He calls an ambulance",
+        "He goes pale and sits on the floor",
+        "He faints on top of the guavas",
+        "He runs to get Hernando"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why is Hernando so upset about the motorbike?",
+      "options": [
+        "The Burra is badly damaged",
+        "He drove a taxi for forty years without a single crash",
+        "The rider was rude to him",
+        "He has no money for the repair"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why does nobody laugh at Hernando's joke in the clinic?",
+      "options": [
+        "It is a joke about Vale's finger",
+        "He hints that his heart is not well",
+        "Nobody hears him",
+        "It is the same joke as always"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Qué encontraron en el café cuando volvieron?",
+      "options": [
+        "La puerta abierta y la cartera de Vale en la mesa",
+        "La máquina arreglada",
+        "Una carta de Altamira",
+        "A Mariana con la doctora Uribe"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "At eleven at night, just as Tomás turns off the light, something comes through Rosa's window. Tomorrow at eight they were going to the police station anyway, and now they have one more thing to report.",
+  "rereadQuestions": [
+    {
+      "q": "How many mangoes had Vale cut when the knife slipped?",
+      "options": [
+        "Ten",
+        "One",
+        "Forty",
+        "Three"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Where does Hernando keep his wallet?",
+      "options": [
+        "In his shoe",
+        "In his cap",
+        "In the Burra",
+        "In his jacket"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué tienen que denunciar, según la doctora Uribe?",
+      "options": [
+        "El celular y la firma falsa",
+        "El choque y la moto",
+        "La máquina de café",
+        "El dedo de Vale"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:entonces-bueno",
+    "c:no-fue-mi-intencion",
+    "c:no-se",
+    "c:por-suerte",
+    "c:si-soy-yo",
+    "c:tengo",
+    "c:tienes",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:comparatives",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:le-doubling",
+    "g:negative-commands",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relatives-prepositions",
+    "g:se-accidental",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:cerca-de",
+    "p:con-sin",
+    "p:dates-years",
+    "p:demonstratives-basic",
+    "p:encontrar-participle",
+    "p:entonces-de-repente",
+    "p:es-tiene-lleva",
+    "p:estar-seguro-de-que",
+    "p:llegar-a-tiempo",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:question-word-order",
+    "p:telling-time",
+    "p:time-sequence-basic"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:apagar",
+    "l:aseguradora",
+    "l:año",
+    "l:billetera",
+    "l:blanco",
+    "l:broma",
+    "l:bus",
+    "l:caerse",
+    "l:café",
+    "l:cartera",
+    "l:casco",
+    "l:celular",
+    "l:chocar",
+    "l:choque",
+    "l:cigarrillo",
+    "l:clínica",
+    "l:comisaría",
+    "l:corazón",
+    "l:cortar",
+    "l:cuchillo",
+    "l:cuál",
+    "l:daño",
+    "l:decir",
+    "l:dedo",
+    "l:denuncia",
+    "l:denunciar",
+    "l:después",
+    "l:dirigir",
+    "l:disculpa",
+    "l:doctor",
+    "l:encima",
+    "l:encontrar",
+    "l:enfermera",
+    "l:estar",
+    "l:falso",
+    "l:firma",
+    "l:fumar",
+    "l:hablar",
+    "l:herida",
+    "l:herir",
+    "l:hoy",
+    "l:hueso",
+    "l:intención",
+    "l:interesar",
+    "l:irse",
+    "l:joven",
+    "l:ladrón",
+    "l:letrero",
+    "l:listo",
+    "l:llamar",
+    "l:llegar",
+    "l:llevar",
+    "l:luz",
+    "l:mango",
+    "l:mañana",
+    "l:mesa",
+    "l:moto",
+    "l:muchacho",
+    "l:músculo",
+    "l:noche",
+    "l:pagar",
+    "l:pared",
+    "l:pedazo",
+    "l:pegar",
+    "l:pequeño",
+    "l:piso",
+    "l:poner",
+    "l:puerta",
+    "l:pulmón",
+    "l:punto",
+    "l:quedarse",
+    "l:revisar",
+    "l:reír",
+    "l:robo",
+    "l:romperse",
+    "l:sangre",
+    "l:seguro",
+    "l:sentarse",
+    "l:ser",
+    "l:señor",
+    "l:suerte",
+    "l:tarde",
+    "l:taxi",
+    "l:tener",
+    "l:tocar",
+    "l:venir",
+    "l:ventana",
+    "l:ver",
+    "l:zapato"
+  ]
+}

@@ -1,0 +1,329 @@
+{
+  "id": "ch101",
+  "unit": "u34",
+  "title": "Un ladrón con modales",
+  "text": "El bus de la Séptima iba tan lleno que Tomás no veía sus propios pies. En el celular tenía las dos firmas, y repetía su discurso para la comisaría.\nEn la diecinueve, un señor lo golpeó con el hombro.\nSeñor: Perdón, joven. No fue mi intención.\nTomás: Tranquilo, no tiene importancia.\nEl señor se bajó en la parada siguiente. Tomás buscó el celular en la chaqueta, y no estaba.\nA las nueve, Tomás entró al café sin celular y sin denuncia.\nVale: ¿Y la comisaría?\nTomás: Se me perdió el celular en el bus. No, no se me perdió. Me lo robaron. Y yo le di las gracias al ladrón.\nHernando: Son cosas que pasan en Bogotá, mijo.\nSimón: ¡Son cosas que pasan! ¡Que pasan!\nHernando: ¿Pero era un ladrón normal, o un ladrón de Altamira?\nVale: Mariana tiene las fotos de las firmas, y Ludys tiene la hoja. No es un desastre.\nTomás: En el celular también había un audio de Rosa, de la última Navidad.\nVale no dijo nada. Sacó su celular y le puso un audio.\n«Vale, mija, se me olvidaron las llaves otra vez. Hernando me abre, pero no le diga nada».\nVale: Tengo como trescientos audios de ella. Te los paso todos.\nTomás sonrió por fin.\nEntonces la máquina hizo un ruido horrible, y salió agua por el piso, por el mostrador y por el periódico de Hernando.\nJhon Fredy: ¡Se nos rompió la máquina otra vez!\nVale: ¿Otra vez? ¡Tú la arreglaste en mayo!\nJhon Fredy: Perdón, Vale. No fue mi intención. Esa máquina tiene veinte años.\nHernando: A mí se me olvida todo desde los setenta. Son cosas de la edad.\nVale: Hernando, hoy no es día de bromas.\nTres clientes se fueron sin tinto.\nSimón: ¡No tiene importancia! ¡Importancia!\nVale: Ese loro está condenado a vivir en la cocina.\nJhon Fredy: La pieza viene de Italia. Tarda tres semanas.\nVale: Entonces mañana no vendemos tinto. Vendemos pasteles de mango, trescientos. Empiezo a las cinco, y tú cortas los mangos.\nTomás: Yo no sé cortar nada.\nVale: Por eso los corto yo.",
+  "gloss": [
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "mostrador",
+      "en": "counter"
+    },
+    {
+      "es": "discurso",
+      "en": "speech"
+    },
+    {
+      "es": "denuncia",
+      "en": "police report"
+    },
+    {
+      "es": "Se me perdió el celular",
+      "en": "I lost my phone"
+    },
+    {
+      "es": "no se me perdió",
+      "en": "I didn't lose it"
+    },
+    {
+      "es": "condenado",
+      "en": "condemned"
+    },
+    {
+      "es": "pasteles",
+      "en": "pastries"
+    },
+    {
+      "es": "El bus de la Séptima iba tan lleno que Tomás no veía sus propios pies.",
+      "en": "The bus on Séptima was so full that Tomás couldn't see his own feet."
+    },
+    {
+      "es": "un señor lo golpeó con el hombro",
+      "en": "a man bumped him with his shoulder"
+    },
+    {
+      "es": "No fue mi intención.",
+      "en": "I didn't mean to."
+    },
+    {
+      "es": "Tranquilo, no tiene importancia.",
+      "en": "Don't worry, it doesn't matter."
+    },
+    {
+      "es": "en la parada siguiente",
+      "en": "at the next stop"
+    },
+    {
+      "es": "Y yo le di las gracias al ladrón.",
+      "en": "And I said thank you to the thief."
+    },
+    {
+      "es": "Son cosas que pasan en Bogotá, mijo.",
+      "en": "These things happen in Bogotá, son."
+    },
+    {
+      "es": "le puso un audio",
+      "en": "played him a voice message"
+    },
+    {
+      "es": "se me olvidaron las llaves otra vez",
+      "en": "I forgot my keys again"
+    },
+    {
+      "es": "Hernando me abre, pero no le diga nada.",
+      "en": "Hernando is letting me in, but don't tell him anything."
+    },
+    {
+      "es": "Te los paso todos.",
+      "en": "I'll send you all of them."
+    },
+    {
+      "es": "Tomás sonrió por fin.",
+      "en": "Tomás finally smiled."
+    },
+    {
+      "es": "¡Se nos rompió la máquina otra vez!",
+      "en": "The machine has broken down on us again."
+    },
+    {
+      "es": "A mí se me olvida todo desde los setenta.",
+      "en": "I've been forgetting everything since I turned seventy."
+    },
+    {
+      "es": "hoy no es día de bromas",
+      "en": "today is not a day for jokes"
+    },
+    {
+      "es": "La pieza viene de Italia. Tarda tres semanas.",
+      "en": "The part comes from Italy. It takes three weeks."
+    },
+    {
+      "es": "Por eso los corto yo.",
+      "en": "That's why I'm the one cutting them."
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does Tomás say to the man who bumps into him on the bus?",
+      "options": [
+        "He tells him it doesn't matter",
+        "He shouts for the police",
+        "He asks for his name",
+        "He says nothing"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why is losing the phone so painful for Tomás, apart from the signatures?",
+      "options": [
+        "It was a present from Vale",
+        "It had a voice message from Rosa on it",
+        "It was brand new",
+        "Altamira's number was in it"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Qué se rompió en el café?",
+      "options": [
+        "La máquina de café",
+        "El horno",
+        "La puerta",
+        "La planta de Simón"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is Vale's plan for tomorrow?",
+      "options": [
+        "Close the café for three weeks",
+        "Borrow a machine from doña Gloria",
+        "Sell three hundred mango pastries instead of coffee",
+        "Go to the police station"
+      ],
+      "answer": 2
+    }
+  ],
+  "hook": "The machine is broken until the part arrives from Italy, so tomorrow the café lives on mango pastries. Vale starts at five, tired and in a hurry, with a very sharp knife.",
+  "rereadQuestions": [
+    {
+      "q": "What did Rosa forget in the voice message Vale plays?",
+      "options": [
+        "Her keys",
+        "The milk",
+        "Hernando's birthday",
+        "Her glasses"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando wonder about the thief?",
+      "options": [
+        "Whether he was an ordinary thief or one of Altamira's",
+        "Whether he was a student",
+        "Whether he was from Toronto",
+        "Whether he would return the phone"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿A qué hora empieza Vale mañana?",
+      "options": [
+        "A las cinco",
+        "A las nueve",
+        "A las once",
+        "A las siete"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:entonces-bueno",
+    "c:era",
+    "c:no-fue-mi-intencion",
+    "c:no-se",
+    "c:no-tiene-importancia",
+    "c:perdon-disculpe",
+    "c:son-cosas-que-pasan",
+    "c:tengo",
+    "c:tienes",
+    "c:tranquilo",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:estar-participle",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:reflexive-routine",
+    "g:se-accidental",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "p:con-sin",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:ir-a-venir-de-place",
+    "p:me-te-nos-objects",
+    "p:numbers-un-una",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:subirse-bajarse",
+    "p:tardar-en",
+    "p:telling-time",
+    "p:tener-anos",
+    "p:unos-approx"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:agua",
+    "l:arreglar",
+    "l:audio",
+    "l:año",
+    "l:bajarse",
+    "l:broma",
+    "l:bus",
+    "l:buscar",
+    "l:café",
+    "l:celular",
+    "l:chaqueta",
+    "l:cliente",
+    "l:cocina",
+    "l:comisaría",
+    "l:condenarse",
+    "l:cortar",
+    "l:corto",
+    "l:cosa",
+    "l:dar",
+    "l:decir",
+    "l:denuncia",
+    "l:desastre",
+    "l:discurso",
+    "l:día",
+    "l:edad",
+    "l:empezar",
+    "l:entrar",
+    "l:estar",
+    "l:fin",
+    "l:firma",
+    "l:foto",
+    "l:golpear",
+    "l:hacer",
+    "l:hoja",
+    "l:hombro",
+    "l:horrible",
+    "l:hoy",
+    "l:importancia",
+    "l:intención",
+    "l:ir",
+    "l:irse",
+    "l:joven",
+    "l:ladrón",
+    "l:llave",
+    "l:lleno",
+    "l:loro",
+    "l:mango",
+    "l:mayo",
+    "l:mañana",
+    "l:mija",
+    "l:mijo",
+    "l:mostrador",
+    "l:máquina",
+    "l:normal",
+    "l:olvidar",
+    "l:parada",
+    "l:pasar",
+    "l:paso",
+    "l:pastel",
+    "l:perderse",
+    "l:perdón",
+    "l:periódico",
+    "l:pie",
+    "l:pieza",
+    "l:piso",
+    "l:poner",
+    "l:propio",
+    "l:repetir",
+    "l:robar",
+    "l:romperse",
+    "l:ruido",
+    "l:saber",
+    "l:sacar",
+    "l:salir",
+    "l:semana",
+    "l:ser",
+    "l:señor",
+    "l:siguiente",
+    "l:sonreír",
+    "l:tardar",
+    "l:tener",
+    "l:tinto",
+    "l:tranquilo",
+    "l:vender",
+    "l:venir",
+    "l:ver",
+    "l:vez",
+    "l:vivir"
+  ]
+}
