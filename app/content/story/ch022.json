@@ -2,7 +2,7 @@
   "id": "ch022",
   "unit": "u09",
   "title": "La rutina de la pizarra",
-  "text": "Día quince. Tomás llega otra vez a las seis menos cinco, con cara de sueño.\nVale: Tomás, ¿a qué hora te levantas?\nTomás: ¿Yo? Tengo una rutina perfecta. Mira.\nTomás borra los precios de la pizarra y escribe:\n«5:00: me despierto y me levanto. 5:05: me ducho, me afeito y me peino. 5:15: desayuno. 12:00: almuerzo. 21:00: cena. 21:30: me cepillo los dientes. 22:00: me acuesto y duermo».\nVale: ¿Y no te vistes? ¿Vienes al café en toalla?\nTomás: Ah... Me visto a las cinco y diez.\nVale: Yo me ducho, me visto y me maquillo en diez minutos. Tú te afeitas, y ya son las seis.\nSimón: ¡Me maquillo! ¡Me maquillo!\nHernando: Yo me despierto a las cinco, pero me levanto a las siete. Y no me peino: no tengo pelo.\nVale: ¿Y se baña todos los días, don Hernando?\nHernando: Me baño los domingos y me ducho los miércoles. Pero me cepillo los dientes todos los días. Los seis.\nVale: Tomás, tu desayuno, tu almuerzo y tu cena son pan. Yo almuerzo a las tres, y no ceno: cuando llego a casa, me acuesto y me duermo.\nTomás escribe en la pizarra: «21:00: cena con Vale».\nVale mira la pizarra un momento y no borra nada.\nHernando: ¿Y los jueves, Tomás? Todos los jueves a las ocho, entras al cuarto de la harina y cierras la puerta.\nTomás: Hago las cuentas.\nVale: Las cuentas son a las cuatro.\nJueves, ocho menos cinco. Tomás entra al cuarto de la harina con la computadora y cierra la puerta.",
+  "text": "Día quince. Tomás llega otra vez a las seis menos cinco, con cara de sueño.\nVale: Tomás, ¿a qué hora te levantas?\nTomás: Tengo una rutina perfecta.\nTomás borra los precios de la pizarra y escribe:\n«5:00: me despierto y me levanto. 5:05: me ducho, me afeito y me peino. 22:00: me acuesto».\nVale: ¿Y no te vistes? ¿Vienes al café en toalla?\nTomás: Ah... Me visto a las cinco y diez.\nHernando: Yo me despierto a las cinco, pero me levanto a las siete. Y no me peino: no tengo pelo.\nVale: Yo almuerzo a las tres, y no ceno: cuando llego a casa, me acuesto y me duermo.\nTomás escribe en la pizarra: «21:00: cena con Vale».\nVale mira la pizarra un momento y no borra nada.\nHernando: ¿Y los jueves, Tomás? Todos los jueves a las ocho, entras al cuarto de la harina y cierras la puerta.\nTomás: Hago las cuentas.\nVale: Las cuentas son a las cuatro.\nJueves, ocho menos cinco. Tomás entra al cuarto de la harina con la computadora y cierra la puerta.",
   "gloss": [
     {
       "es": "con cara de sueño",
@@ -19,10 +19,6 @@
     {
       "es": "¿Vienes al café en toalla?",
       "en": "Do you come to the café in a towel?"
-    },
-    {
-      "es": "Los seis.",
-      "en": "All six of them."
     },
     {
       "es": "me acuesto y me duermo",
@@ -81,12 +77,12 @@
   "hook": "It is Thursday night and Tomás is behind the flour room door again. Tomorrow's bread has to be made tonight, and every bag of flour in the café is in there with him.",
   "rereadQuestions": [
     {
-      "q": "When does Hernando have a bath?",
+      "q": "At what time does Hernando get up?",
       "options": [
-        "On Sundays",
-        "Every day",
-        "On Thursdays",
-        "Never"
+        "At seven",
+        "At five",
+        "At six",
+        "At eight"
       ],
       "answer": 0
     },
@@ -124,32 +120,20 @@
     "g:stem-boot",
     "g:yo-irregular",
     "p:days-el-lunes",
-    "p:lavarse-las-manos",
-    "p:possessives-basic",
-    "p:senor-don-article",
     "p:todos-los-dias"
   ],
   "lexemes": [
     "l:acostarse",
     "l:afeitarse",
     "l:almorzar",
-    "l:almuerzo",
-    "l:bañarse",
     "l:café",
     "l:cara",
     "l:casa",
-    "l:cena",
     "l:cenar",
-    "l:cepillarse",
     "l:cerrar",
     "l:computadora",
     "l:cuenta",
-    "l:desayunar",
-    "l:desayuno",
     "l:despertarse",
-    "l:diente",
-    "l:domingo",
-    "l:dormir",
     "l:dormirse",
     "l:ducharse",
     "l:día",
@@ -161,12 +145,8 @@
     "l:jueves",
     "l:levantarse",
     "l:llegar",
-    "l:maquillarse",
-    "l:minuto",
     "l:mirar",
-    "l:miércoles",
     "l:momento",
-    "l:pan",
     "l:peinarse",
     "l:pelo",
     "l:perfecto",
