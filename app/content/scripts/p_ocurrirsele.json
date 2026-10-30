@@ -1,0 +1,174 @@
+{
+  "node": "p:ocurrirsele",
+  "hook": {
+    "line": "At three in the morning, staring at Altamira's offer, Tomás finally gets an idea. In Spanish the idea does the arriving: it turns up *to* you, and you are just the person it reaches.",
+    "es": "Se me ocurrió una idea.",
+    "en": "An idea occurred to me."
+  },
+  "examples": [
+    {
+      "es": "Se me ocurrió una solución mientras dormía.",
+      "en": "A solution came to me while I was sleeping."
+    },
+    {
+      "es": "No se me ocurrió llamarte.",
+      "en": "It didn't occur to me to call you."
+    },
+    {
+      "es": "¿Cómo se te ocurre decir eso?",
+      "en": "How can you even think of saying that? (to a friend)"
+    },
+    {
+      "es": "A Vale se le ocurrió cambiar el menú.",
+      "en": "It occurred to Vale to change the menu."
+    },
+    {
+      "es": "Se nos ocurrieron dos ideas.",
+      "en": "Two ideas occurred to us."
+    },
+    {
+      "es": "¿Se te ocurre otra opción?",
+      "en": "Can you think of another option? (to a friend)"
+    }
+  ],
+  "rule": "The idea is the subject, and you are the person it happens to. Build it in three pieces: *se*, then *me / te / le / nos / les*, then *ocurre* or *ocurrió*.\n\n*Se me ocurrió una idea*: an idea occurred to me. If what occurs is plural, the verb is plural: *se nos ocurrieron dos ideas*. You can follow it with an infinitive: *No se me ocurrió llamarte*.\n\nEnglish says \"I had an idea\". Spanish does not say *yo ocurrí*. And *¿Cómo se te ocurre…?* is not a real question: it is a reproach, \"how can you even think of…\".",
+  "smallPrint": "Teachers call this a *se* construction for things that happen to you: the thing is the subject, the person is an indirect object.",
+  "readAndPick": [
+    {
+      "es": "Se me ocurrió una idea.",
+      "options": [
+        "An idea occurred to me.",
+        "An idea occurred to you.",
+        "An idea occurred to him."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se me ocurrieron dos ideas.",
+      "options": [
+        "One idea occurred to me.",
+        "Two ideas occurred to us.",
+        "Two ideas occurred to me."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Se nos ocurrió llamar a Hernando.",
+      "options": [
+        "It occurred to me to call Hernando.",
+        "It occurred to us to call Hernando.",
+        "It occurred to them to call Hernando."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Cómo se te ocurre decir eso?",
+      "options": [
+        "How can he even think of saying that?",
+        "How do I come up with that?",
+        "How can you even think of saying that?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No se me ocurrió nada.",
+      "options": [
+        "Nothing occurred to him.",
+        "Nothing occurred to me.",
+        "Something occurred to me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se les ocurrió una solución.",
+      "options": [
+        "A solution occurred to us.",
+        "A solution occurred to her.",
+        "A solution occurred to them."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Se te ocurre otra opción?",
+      "options": [
+        "Can you think of another option?",
+        "Can I think of another option?",
+        "Can she think of another option?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No se le ocurrió abrir más temprano.",
+      "options": [
+        "It occurred to him to open earlier.",
+        "It didn't occur to him to open earlier.",
+        "It didn't occur to us to open earlier."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "An idea occurred to me. Fill the gap: ___ una idea. (*me ocurrió* or *se me ocurrió*)",
+      "answer": "Se me ocurrió una idea.",
+      "accept": [],
+      "why": "The idea is what arrives, so *se* comes first and *me* says who it reached."
+    },
+    {
+      "prompt": "It didn't occur to me to call you. (*tú*)",
+      "answer": "No se me ocurrió llamarte.",
+      "accept": [],
+      "why": "Put *no* before the whole *se me ocurrió* block."
+    },
+    {
+      "prompt": "Two ideas occurred to us.",
+      "answer": "Se nos ocurrieron dos ideas.",
+      "accept": [],
+      "why": "The verb agrees with the ideas (two), and *nos* says who they reached."
+    },
+    {
+      "prompt": "It occurred to Vale to change the menu.",
+      "answer": "A Vale se le ocurrió cambiar el menú.",
+      "accept": [
+        "Se le ocurrió a Vale cambiar el menú."
+      ],
+      "why": "*Le* stands for Vale, and *a Vale* says who it is."
+    },
+    {
+      "prompt": "Reproach a friend: how can you even think of saying that?",
+      "answer": "¿Cómo se te ocurre decir eso?",
+      "accept": [],
+      "why": "*Se te ocurre* turns the question into a protest."
+    },
+    {
+      "prompt": "Make it plural, about two ideas: *Se me ocurrió una idea.*",
+      "answer": "Se me ocurrieron dos ideas.",
+      "accept": [],
+      "why": "Two ideas arrive, so the verb takes the plural ending."
+    },
+    {
+      "prompt": "Can you think of another option? (to a friend)",
+      "answer": "¿Se te ocurre otra opción?",
+      "accept": [],
+      "why": "*Te* is the friend the idea would reach."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Yo ocurrí una idea.",
+      "right": "Se me ocurrió una idea.",
+      "why": "Almost. The idea is what happens; you are the one it happens to."
+    },
+    {
+      "wrong": "Se me ocurrió dos ideas.",
+      "right": "Se me ocurrieron dos ideas.",
+      "why": "The verb agrees with the ideas, not with you."
+    },
+    {
+      "wrong": "Me ocurrió llamarte.",
+      "right": "Se me ocurrió llamarte.",
+      "why": "Without *se*, *ocurrir* just means \"to happen\". Keep the *se*."
+    }
+  ],
+  "personal": "Say one thing that never occurred to you until it was too late. Start with *No se me ocurrió…*"
+}

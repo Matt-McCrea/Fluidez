@@ -1,0 +1,175 @@
+{
+  "node": "p:a-ultima-hora",
+  "hook": {
+    "line": "Everything in Tomás's week changes at the last minute: the meeting, the delivery, even the bank appointment. Spanish has a short, article-free phrase for that moment, and a twin for \"first thing in the morning\".",
+    "es": "Cancelaron a última hora.",
+    "en": "They cancelled at the last minute."
+  },
+  "examples": [
+    {
+      "es": "Cancelaron a última hora.",
+      "en": "They cancelled at the last minute."
+    },
+    {
+      "es": "Salimos a primera hora.",
+      "en": "We left first thing."
+    },
+    {
+      "es": "Tengo una reunión a primera hora de la mañana.",
+      "en": "I have a meeting first thing in the morning."
+    },
+    {
+      "es": "Llegamos en el último minuto.",
+      "en": "We arrived at the last minute."
+    },
+    {
+      "es": "Llegó de madrugada.",
+      "en": "He arrived in the small hours."
+    },
+    {
+      "es": "Vale cambió el menú a última hora.",
+      "en": "Vale changed the menu at the last minute."
+    }
+  ],
+  "rule": "Some moments of the day come as fixed phrases:\n\n*a última hora*: at the last minute\n*a primera hora*: first thing\n*de madrugada*: in the small hours\n*en el último minuto*: at the last minute\n\nThe *a* phrases take no article. English says \"at *the* last minute\"; Spanish says *a última hora*, never *a la última hora*. For \"first thing in the morning\", add *de la mañana*. Because *hora* is feminine, it is *última*, not *último*.",
+  "smallPrint": "Teachers call these adverbial phrases of time: frozen expressions you learn whole.",
+  "readAndPick": [
+    {
+      "es": "Cancelaron a última hora.",
+      "options": [
+        "They cancelled first thing.",
+        "They cancelled at the last minute.",
+        "They cancelled an hour ago."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Salimos a primera hora.",
+      "options": [
+        "We left at the last minute.",
+        "We left at midnight.",
+        "We left first thing."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Llegó de madrugada.",
+      "options": [
+        "He arrived in the small hours.",
+        "He arrived at the last minute.",
+        "He arrived on time."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tengo una reunión a primera hora de la mañana.",
+      "options": [
+        "I have a meeting last thing at night.",
+        "I have a meeting first thing in the morning.",
+        "I had a meeting yesterday morning."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Llegamos en el último minuto.",
+      "options": [
+        "We arrived first thing.",
+        "We arrived early.",
+        "We arrived at the last minute."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Vale cambió la receta a última hora.",
+      "options": [
+        "Vale changed the recipe at the last minute.",
+        "Vale changed the recipe first thing.",
+        "Vale changed the recipe last week."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mañana salgo a primera hora.",
+      "options": [
+        "Tomorrow I'll leave at the last minute.",
+        "Yesterday I left first thing.",
+        "Tomorrow I'm leaving first thing."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Avisó en el último momento.",
+      "options": [
+        "He let us know first thing.",
+        "He let us know at the last moment.",
+        "He let us know right away."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "They cancelled at the last minute. Fill the gap: Cancelaron ___ hora. (*a última* or *a la última*)",
+      "answer": "Cancelaron a última hora.",
+      "accept": [],
+      "why": "The phrase is fixed and takes no article."
+    },
+    {
+      "prompt": "We left first thing.",
+      "answer": "Salimos a primera hora.",
+      "accept": [],
+      "why": "*A primera hora* is the fixed phrase for first thing."
+    },
+    {
+      "prompt": "I have a meeting first thing in the morning.",
+      "answer": "Tengo una reunión a primera hora de la mañana.",
+      "accept": [],
+      "why": "Add *de la mañana* after *a primera hora* to say which part of the day."
+    },
+    {
+      "prompt": "He arrived in the small hours.",
+      "answer": "Llegó de madrugada.",
+      "accept": [],
+      "why": "*De madrugada* covers the hours after midnight, no article."
+    },
+    {
+      "prompt": "Vale changed the menu at the last minute.",
+      "answer": "Vale cambió el menú a última hora.",
+      "accept": [
+        "Vale cambió el menú en el último minuto.",
+        "Vale cambió el menú en el último momento."
+      ],
+      "why": "*A última hora* and *en el último minuto* both mean the very last moment."
+    },
+    {
+      "prompt": "Say it about tomorrow: I'm leaving first thing.",
+      "answer": "Mañana salgo a primera hora.",
+      "accept": [],
+      "why": "The phrase stays the same; only the verb moves to the present."
+    },
+    {
+      "prompt": "They always cancel at the last minute.",
+      "answer": "Siempre cancelan a última hora.",
+      "accept": [],
+      "why": "The phrase works with any verb and any time."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Cancelaron a la última hora.",
+      "right": "Cancelaron a última hora.",
+      "why": "Almost. English likes \"the\", but this Spanish phrase has no article."
+    },
+    {
+      "wrong": "Salimos en primera hora.",
+      "right": "Salimos a primera hora.",
+      "why": "The fixed preposition here is *a*."
+    },
+    {
+      "wrong": "Cancelaron a último hora.",
+      "right": "Cancelaron a última hora.",
+      "why": "*Hora* is feminine, so the word before it is *última*."
+    }
+  ],
+  "personal": "Tell us about something that changed at the last minute. Start with *… a última hora.*"
+}

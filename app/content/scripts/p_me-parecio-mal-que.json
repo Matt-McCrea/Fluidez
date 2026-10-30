@@ -1,0 +1,174 @@
+{
+  "node": "p:me-parecio-mal-que",
+  "hook": {
+    "line": "Don Hernando never hides what he thinks. When Tomás left the meeting early without a word, Hernando told him exactly how it struck him, and Spanish has a frame for that.",
+    "es": "Me pareció muy mal que te fueras sin despedirte.",
+    "en": "I thought it was really wrong of you to leave without saying goodbye."
+  },
+  "examples": [
+    {
+      "es": "Me pareció muy mal que te fueras sin despedirte.",
+      "en": "I thought it was really wrong of you to leave without saying goodbye."
+    },
+    {
+      "es": "Me pareció muy bien que le dijeras la verdad.",
+      "en": "I thought it was very good that you told him the truth."
+    },
+    {
+      "es": "Me pareció pésimo que no nos avisaran.",
+      "en": "I thought it was terrible that they didn't let us know."
+    },
+    {
+      "es": "A Hernando le pareció mal que Tomás llegara tarde.",
+      "en": "Hernando thought it was wrong that Tomás arrived late."
+    },
+    {
+      "es": "Nos pareció genial que Vale hiciera el pastel.",
+      "en": "We thought it was great that Vale made the cake."
+    },
+    {
+      "es": "Me cayó muy mal que no me llamaran.",
+      "en": "It really bothered me that they didn't call me."
+    }
+  ],
+  "rule": "To say how someone's action struck you, use *me pareció* + a judgement + *que* + a verb in the *-ra* form: *Me pareció muy mal que te fueras*.\n\nJudgements: *bien, mal, pésimo, genial, increíble*, with *muy* if you like. Who judges: *me, te, le, nos, les*.\n\nThe *-ra* verbs (*fueras, dijeras, avisaran*) follow because the judgement is in the past. English says \"that you left\"; Spanish uses the subjunctive, never the plain past. *Me cayó mal que…* is the same idea with more feeling.",
+  "smallPrint": "Teachers call this the past subjunctive after expressions of evaluation.",
+  "readAndPick": [
+    {
+      "es": "Me pareció muy mal que te fueras.",
+      "options": [
+        "I thought it was very good that you left.",
+        "I thought it was very wrong that you left.",
+        "I think you'll leave."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me pareció muy bien que le dijeras la verdad.",
+      "options": [
+        "I thought it was very bad that you told him.",
+        "I was told the truth.",
+        "I thought it was very good that you told him the truth."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Me pareció pésimo que no nos avisaran.",
+      "options": [
+        "I thought it was terrible that they didn't let us know.",
+        "I thought it was great that they let us know.",
+        "I thought it was terrible that you didn't tell them."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A Hernando le pareció mal que Tomás llegara tarde.",
+      "options": [
+        "Tomás thought it was wrong that Hernando arrived late.",
+        "Hernando thought it was wrong that Tomás arrived late.",
+        "Hernando thought it was fine that Tomás arrived late."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nos pareció genial que Vale hiciera el pastel.",
+      "options": [
+        "I thought it was great that Vale made the cake.",
+        "We thought it was awful that Vale made the cake.",
+        "We thought it was great that Vale made the cake."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Me cayó muy mal que no me llamaran.",
+      "options": [
+        "It really pleased me that they called me.",
+        "It really bothered me that they didn't call me.",
+        "It bothered them that I didn't call."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Te pareció bien que cerráramos temprano?",
+      "options": [
+        "Do you think it's fine that we close early?",
+        "Did you think it was wrong that we closed early?",
+        "Did you think it was fine that we closed early?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Me parece mal que te vayas.",
+      "options": [
+        "I think it's wrong that you're leaving.",
+        "I thought it was wrong that you left.",
+        "I think it's wrong that I'm leaving."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "I thought it was very wrong of you (*tú*) to leave. Fill the gap: Me pareció muy mal que ___. (*te fuiste* or *te fueras*)",
+      "answer": "Me pareció muy mal que te fueras.",
+      "accept": [],
+      "why": "After *me pareció mal que*, use the *-ra* form."
+    },
+    {
+      "prompt": "I thought it was very good that you (*tú*) told him the truth.",
+      "answer": "Me pareció muy bien que le dijeras la verdad.",
+      "accept": [],
+      "why": "*Dijeras* is the *tú* form of the *-ra* verb."
+    },
+    {
+      "prompt": "I thought it was terrible that they didn't let us know.",
+      "answer": "Me pareció pésimo que no nos avisaran.",
+      "accept": [],
+      "why": "*Pésimo* is the strongest judgement, and *avisaran* is the *-ra* form."
+    },
+    {
+      "prompt": "Hernando thought it was wrong that Tomás arrived late.",
+      "answer": "A Hernando le pareció mal que Tomás llegara tarde.",
+      "accept": [
+        "Le pareció mal a Hernando que Tomás llegara tarde."
+      ],
+      "why": "*Le* stands for Hernando, and *llegara* is the *-ra* form."
+    },
+    {
+      "prompt": "We thought it was great that Vale made the cake.",
+      "answer": "Nos pareció genial que Vale hiciera el pastel.",
+      "accept": [],
+      "why": "*Nos* says we are the ones judging."
+    },
+    {
+      "prompt": "Ask a friend (*tú*): did you think it was fine that we closed early?",
+      "answer": "¿Te pareció bien que cerráramos temprano?",
+      "accept": [],
+      "why": "The same frame works as a question, with *te* for the friend."
+    },
+    {
+      "prompt": "It really bothered me that they didn't call me.",
+      "answer": "Me cayó muy mal que no me llamaran.",
+      "accept": [],
+      "why": "*Me cayó mal que* is the stronger, more personal version."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me pareció mal que te fuiste.",
+      "right": "Me pareció mal que te fueras.",
+      "why": "Almost. After a judgement like this, Spanish uses the *-ra* form, not the plain past."
+    },
+    {
+      "wrong": "Me pareció mal de que te fueras.",
+      "right": "Me pareció mal que te fueras.",
+      "why": "No *de* here: it is *mal que*."
+    },
+    {
+      "wrong": "Me parece mal que te fueras ayer.",
+      "right": "Me pareció mal que te fueras ayer.",
+      "why": "The judgement is about the past, so *pareció* matches *fueras*."
+    }
+  ],
+  "personal": "Think of something a friend did. Say how it struck you. Start with *Me pareció…*"
+}

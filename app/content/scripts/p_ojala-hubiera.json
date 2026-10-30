@@ -1,0 +1,174 @@
+{
+  "node": "p:ojala-hubiera",
+  "hook": {
+    "line": "Tomás signed the paper without reading it, and now he knows what it said. The wish that arrives too late has its own tense: it says the past is closed and you wish it weren't.",
+    "es": "Ojalá hubiera leído el contrato.",
+    "en": "I wish I'd read the contract."
+  },
+  "examples": [
+    {
+      "es": "Ojalá hubiera tenido más tiempo para prepararlo.",
+      "en": "I wish I'd had more time to prepare it."
+    },
+    {
+      "es": "Ojalá me lo hubieras dicho antes.",
+      "en": "I wish you'd told me before. (to a friend)"
+    },
+    {
+      "es": "Ojalá no hubiéramos vendido la casa.",
+      "en": "I wish we hadn't sold the house."
+    },
+    {
+      "es": "Ojalá Rosa hubiera estado aquí.",
+      "en": "I wish Rosa had been here."
+    },
+    {
+      "es": "Ojalá no hubieran cerrado la panadería.",
+      "en": "I wish they hadn't closed the bakery."
+    },
+    {
+      "es": "Ojalá hubiera aprendido español de niño.",
+      "en": "I wish I'd learned Spanish as a child."
+    }
+  ],
+  "rule": "To wish the past had gone differently, use *ojalá* + *hubiera* + the past participle: *ojalá hubiera ido*, I wish I'd gone. It tells the listener it is too late.\n\n*Hubiera* changes with the person: *hubiera* (I, he, she), *hubieras* (you), *hubiéramos* (we), *hubieran* (they, you all).\n\nCompare: *Ojalá tuviera tiempo* is a wish about now. *Ojalá hubiera tenido tiempo* is about then. Put *no* before *hubiera* and pronouns too: *Ojalá me lo hubieras dicho*. English needs \"wish\"; Spanish needs *ojalá* only.",
+  "smallPrint": "Teachers call this the pluperfect subjunctive (*pluscuamperfecto de subjuntivo*): the past of the past, used for wishes.",
+  "readAndPick": [
+    {
+      "es": "Ojalá hubiera tenido más tiempo.",
+      "options": [
+        "I wish I had more time (now).",
+        "I hope I'll have more time.",
+        "I wish I'd had more time."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Ojalá tuviera más tiempo.",
+      "options": [
+        "I wish I'd had more time.",
+        "I wish I had more time (now).",
+        "I hope I had more time."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ojalá me lo hubieras dicho antes.",
+      "options": [
+        "I wish I'd told you before.",
+        "I wish he'd told me before.",
+        "I wish you'd told me before."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Ojalá no hubiéramos vendido la casa.",
+      "options": [
+        "I wish we hadn't sold the house.",
+        "I wish they hadn't sold the house.",
+        "I wish we didn't sell the house."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ojalá Rosa hubiera estado aquí.",
+      "options": [
+        "I wish Rosa were here now.",
+        "I wish Rosa had been here.",
+        "I hope Rosa is here."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ojalá hubieran llegado antes.",
+      "options": [
+        "I wish we'd arrived earlier.",
+        "I hope they arrive earlier.",
+        "I wish they'd arrived earlier."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Ojalá hubiera aprendido español de niño.",
+      "options": [
+        "I wish I could learn Spanish.",
+        "I wish I'd learned Spanish as a child.",
+        "I hope to learn Spanish as a child."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ojalá no lo hubieras hecho.",
+      "options": [
+        "I wish I hadn't done it.",
+        "I wish they hadn't done it.",
+        "I wish you hadn't done it."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "You wish you'd had more time back then. Fill the gap: Ojalá ___ más tiempo. (*tuviera* or *hubiera tenido*)",
+      "answer": "Ojalá hubiera tenido más tiempo.",
+      "accept": [],
+      "why": "The wish is about the past, so it needs *hubiera* + participle."
+    },
+    {
+      "prompt": "I wish you (*tú*) had told me before.",
+      "answer": "Ojalá me lo hubieras dicho antes.",
+      "accept": [
+        "Ojalá me hubieras dicho antes."
+      ],
+      "why": "*Hubieras* is the *tú* form; the pronouns go before it."
+    },
+    {
+      "prompt": "I wish we hadn't sold the house.",
+      "answer": "Ojalá no hubiéramos vendido la casa.",
+      "accept": [],
+      "why": "*No* goes right before *hubiéramos*."
+    },
+    {
+      "prompt": "I wish Rosa had been here.",
+      "answer": "Ojalá Rosa hubiera estado aquí.",
+      "accept": [],
+      "why": "Rosa is *she*, so *hubiera*, then the participle *estado*."
+    },
+    {
+      "prompt": "I wish I'd learned Spanish as a child.",
+      "answer": "Ojalá hubiera aprendido español de niño.",
+      "accept": [],
+      "why": "Use *hubiera* + participle for a wish about something already past."
+    },
+    {
+      "prompt": "Move it to the past: *Ojalá tuviera más plata.* becomes \"I wish I'd had more money.\"",
+      "answer": "Ojalá hubiera tenido más plata.",
+      "accept": [],
+      "why": "Now becomes then: *tuviera* becomes *hubiera tenido*."
+    },
+    {
+      "prompt": "Make it negative: *Ojalá hubieran venido.* becomes \"I wish they hadn't come.\"",
+      "answer": "Ojalá no hubieran venido.",
+      "accept": [],
+      "why": "*No* goes before *hubieran*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Ojalá habría tenido más tiempo.",
+      "right": "Ojalá hubiera tenido más tiempo.",
+      "why": "Almost. After *ojalá* Spanish uses *hubiera*, not *habría*."
+    },
+    {
+      "wrong": "Ojalá hubiera tener más tiempo.",
+      "right": "Ojalá hubiera tenido más tiempo.",
+      "why": "After *hubiera* you need the participle (*tenido*), not the infinitive."
+    },
+    {
+      "wrong": "Ojalá tuviera más tiempo ayer.",
+      "right": "Ojalá hubiera tenido más tiempo ayer.",
+      "why": "*Tuviera* is a wish about now. For yesterday, say *hubiera tenido*."
+    }
+  ],
+  "personal": "Make one honest wish about the past. Start with *Ojalá hubiera…*"
+}

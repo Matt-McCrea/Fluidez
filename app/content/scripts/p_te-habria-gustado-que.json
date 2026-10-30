@@ -1,0 +1,190 @@
+{
+  "node": "p:te-habria-gustado-que",
+  "hook": {
+    "line": "Don Hernando likes to ask people about the road they didn't take. It is the friendliest nosy question in Spanish, and it is also how you say what you yourself would have liked.",
+    "es": "¿Te habría gustado vivir en otra ciudad?",
+    "en": "Would you have liked to live in another city? (to a friend)"
+  },
+  "examples": [
+    {
+      "es": "¿Te habría gustado estudiar otra carrera?",
+      "en": "Would you have liked to study a different degree? (to a friend)"
+    },
+    {
+      "es": "¿Te hubiera gustado vivir en otra época?",
+      "en": "Would you have liked to live in another era? (to a friend)"
+    },
+    {
+      "es": "¿Te habría gustado que te lo hubiera contado antes?",
+      "en": "Would you have liked me to have told you sooner? (to a friend)"
+    },
+    {
+      "es": "Me habría gustado conocer a mi abuelo.",
+      "en": "I would have liked to meet my grandfather."
+    },
+    {
+      "es": "¿Le habría gustado a Rosa vender el café?",
+      "en": "Would Rosa have liked to sell the café?"
+    },
+    {
+      "es": "Nos habría gustado quedarnos más tiempo.",
+      "en": "We would have liked to stay longer."
+    }
+  ],
+  "rule": "To ask or say what someone would have liked, use *habría gustado*. In Latin America *hubiera gustado* is just as common. Put *me, te, le, nos, les* before it: *¿Te habría gustado…?*\n\nThen choose:\n*an infinitive*, when the same person would have done it: *¿Te habría gustado viajar más?*\n*que* + *hubiera* + participle, when someone else would have done it: *¿Te habría gustado que te lo hubiera contado antes?*\n\n*Gustado* never changes. Compare *¿Te gustaría viajar?*, which looks forward. The extra *haber* is what takes it back in time.",
+  "smallPrint": "Teachers call this the conditional perfect (*condicional compuesto*) of *gustar*, used to ask about wishes in the past.",
+  "readAndPick": [
+    {
+      "es": "¿Te habría gustado estudiar otra carrera?",
+      "options": [
+        "Would you like to study a different degree?",
+        "Did you like studying a different degree?",
+        "Would you have liked to study a different degree?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Te gustaría estudiar otra carrera?",
+      "options": [
+        "Would you like to study a different degree?",
+        "Would you have liked to study a different degree?",
+        "Do you like studying a different degree?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me habría gustado conocer a mi abuelo.",
+      "options": [
+        "I would like to meet my grandfather.",
+        "I would have liked to meet my grandfather.",
+        "I liked meeting my grandfather."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Le hubiera gustado a Rosa vender el café?",
+      "options": [
+        "Would Rosa have liked to sell the café?",
+        "Does Rosa like selling the café?",
+        "Would you have liked to sell the café?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Te habría gustado que te lo hubiera contado antes?",
+      "options": [
+        "Would you have liked to tell me sooner?",
+        "Would you like me to tell you?",
+        "Would you have liked me to have told you sooner?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Les hubiera gustado vivir en otra época?",
+      "options": [
+        "Would they like to live in another era?",
+        "Would they have liked to live in another era?",
+        "Did they like living in another era?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nos habría gustado quedarnos más tiempo.",
+      "options": [
+        "We would have liked to stay longer.",
+        "We would like to stay longer.",
+        "We liked staying longer."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Te hubiera gustado trabajar con Vale?",
+      "options": [
+        "Do you like working with Vale?",
+        "Would you like to work with Vale?",
+        "Would you have liked to work with Vale?"
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Would you (*tú*) have liked to travel more? Fill the gap: ¿Te ___ viajar más? (*gustaría* or *habría gustado*)",
+      "answer": "¿Te habría gustado viajar más?",
+      "accept": [
+        "¿Te hubiera gustado viajar más?"
+      ],
+      "why": "The question is about the past, so *haber* comes in."
+    },
+    {
+      "prompt": "I would have liked to meet my grandfather.",
+      "answer": "Me habría gustado conocer a mi abuelo.",
+      "accept": [
+        "Me hubiera gustado conocer a mi abuelo."
+      ],
+      "why": "*Me* says who would have liked it; the verb stays as *habría gustado*."
+    },
+    {
+      "prompt": "Would you (*tú*) have liked to live in another era?",
+      "answer": "¿Te habría gustado vivir en otra época?",
+      "accept": [
+        "¿Te hubiera gustado vivir en otra época?"
+      ],
+      "why": "Same person wants and lives, so an infinitive follows."
+    },
+    {
+      "prompt": "Would Rosa have liked to sell the café?",
+      "answer": "¿Le habría gustado a Rosa vender el café?",
+      "accept": [
+        "¿Le hubiera gustado a Rosa vender el café?",
+        "¿A Rosa le habría gustado vender el café?",
+        "¿A Rosa le hubiera gustado vender el café?"
+      ],
+      "why": "*Le* stands for Rosa, and *a Rosa* says who."
+    },
+    {
+      "prompt": "We would have liked to stay longer.",
+      "answer": "Nos habría gustado quedarnos más tiempo.",
+      "accept": [
+        "Nos hubiera gustado quedarnos más tiempo."
+      ],
+      "why": "*Nos* is \"us\", and *quedarnos* is the infinitive for the same people."
+    },
+    {
+      "prompt": "Make it about the past: *¿Te gustaría viajar?* becomes \"Would you (*tú*) have liked to travel?\"",
+      "answer": "¿Te habría gustado viajar?",
+      "accept": [
+        "¿Te hubiera gustado viajar?"
+      ],
+      "why": "Swap *gustaría* for *habría gustado* to look back."
+    },
+    {
+      "prompt": "Would you (*tú*) have liked me to have told you sooner?",
+      "answer": "¿Te habría gustado que te lo hubiera dicho antes?",
+      "accept": [
+        "¿Te hubiera gustado que te lo hubiera dicho antes?",
+        "¿Te habría gustado que te lo hubiera contado antes?",
+        "¿Te hubiera gustado que te lo hubiera contado antes?"
+      ],
+      "why": "A different person acts, so *que* + *hubiera* + participle."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Te habrías gustado viajar más?",
+      "right": "¿Te habría gustado viajar más?",
+      "why": "Almost. *Gustar* stays in the third person; *te* says who likes it."
+    },
+    {
+      "wrong": "¿Te habría gustado que te lo habría contado?",
+      "right": "¿Te habría gustado que te lo hubiera contado?",
+      "why": "After *que*, the second verb takes *hubiera*, not *habría*."
+    },
+    {
+      "wrong": "¿Te gustaría estudiar otra carrera? (asking about back then)",
+      "right": "¿Te habría gustado estudiar otra carrera?",
+      "why": "*Gustaría* looks forward. To ask about the past, add *haber*."
+    }
+  ],
+  "personal": "Say one thing you would have liked to do. Start with *Me habría gustado…*"
+}

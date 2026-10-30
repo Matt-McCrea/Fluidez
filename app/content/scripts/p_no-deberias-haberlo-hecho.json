@@ -1,0 +1,176 @@
+{
+  "node": "p:no-deberias-haberlo-hecho",
+  "hook": {
+    "line": "Vale finds out Tomás showed Altamira the recipe notebook. She is not shouting. She is just very, very disappointed, and Spanish has a polite way to say so.",
+    "es": "No deberías haberlo hecho.",
+    "en": "You shouldn't have done it."
+  },
+  "examples": [
+    {
+      "es": "No deberías haberle dicho eso.",
+      "en": "You shouldn't have told him that."
+    },
+    {
+      "es": "Podrías haberme avisado.",
+      "en": "You could have let me know."
+    },
+    {
+      "es": "Tendrías que haber llamado antes.",
+      "en": "You should have called earlier."
+    },
+    {
+      "es": "Deberías haber hablado con Hernando primero.",
+      "en": "You should have talked to Hernando first."
+    },
+    {
+      "es": "No deberías haberlo hecho.",
+      "en": "You shouldn't have done it."
+    },
+    {
+      "es": "Podrían haber esperado un poco.",
+      "en": "You all could have waited a bit."
+    }
+  ],
+  "rule": "To say what someone should or could have done, take *deberías*, *podrías* or *tendrías que* and add *haber* + the participle: *deberías haber llamado*.\n\nOnly the first verb changes for the person. *Haber* never does. Pronouns stick onto *haber*: *haberlo*, *haberme*, *haberle*.\n\nCompare: *No deberías hacerlo* is advice about what's coming. *No deberías haberlo hecho* is too late. It is a gentle reproach, and the same words are what you say when someone gives you a present: \"you shouldn't have\".",
+  "smallPrint": "Teachers call this a modal verb in the conditional plus the perfect infinitive (*infinitivo compuesto*).",
+  "readAndPick": [
+    {
+      "es": "No deberías haberle dicho eso.",
+      "options": [
+        "You shouldn't tell him that.",
+        "You shouldn't have told him that.",
+        "He shouldn't have told you that."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No deberías decirle eso.",
+      "options": [
+        "You shouldn't have told him that.",
+        "You didn't tell him that.",
+        "You shouldn't tell him that."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Podrías haberme avisado.",
+      "options": [
+        "You can let me know.",
+        "I could have let you know.",
+        "You could have let me know."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tendrías que haber llamado antes.",
+      "options": [
+        "You should have called earlier.",
+        "You'll have to call earlier.",
+        "You had to call earlier."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Deberías haber hablado con Hernando.",
+      "options": [
+        "You talked to Hernando.",
+        "You should talk to Hernando.",
+        "You should have talked to Hernando."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No deberías haberlo hecho.",
+      "options": [
+        "You shouldn't do it.",
+        "You shouldn't have done it.",
+        "You didn't do it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Podrían haber esperado un poco.",
+      "options": [
+        "You all could have waited a bit.",
+        "You all can wait a bit.",
+        "They waited a bit."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ya deberías haberlo solucionado.",
+      "options": [
+        "You should solve it now.",
+        "You solved it already.",
+        "You should have solved it by now."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "You shouldn't have told him that. Fill the gap: No deberías ___ dicho eso. (*decirle* or *haberle*)",
+      "answer": "No deberías haberle dicho eso.",
+      "accept": [],
+      "why": "The reproach is about the past, so *haber* comes in."
+    },
+    {
+      "prompt": "You (*tú*) could have let me know.",
+      "answer": "Podrías haberme avisado.",
+      "accept": [],
+      "why": "*Podrías* + *haber* + participle, and *me* sticks onto *haber*."
+    },
+    {
+      "prompt": "You (*tú*) should have called earlier.",
+      "answer": "Tendrías que haber llamado antes.",
+      "accept": [
+        "Deberías haber llamado antes."
+      ],
+      "why": "*Tendrías que* and *deberías* both work before *haber*."
+    },
+    {
+      "prompt": "You (*tú*) should have talked to Hernando first.",
+      "answer": "Deberías haber hablado con Hernando primero.",
+      "accept": [],
+      "why": "*Deberías* changes for the person; *haber* does not."
+    },
+    {
+      "prompt": "You (*usted*) shouldn't have done it.",
+      "answer": "No debería haberlo hecho.",
+      "accept": [
+        "Usted no debería haberlo hecho."
+      ],
+      "why": "For *usted*, *debería* has no final *s*."
+    },
+    {
+      "prompt": "Make it about the past: *Deberías llamarlo.* becomes \"You (*tú*) should have called him.\"",
+      "answer": "Deberías haberlo llamado.",
+      "accept": [],
+      "why": "Add *haber* and move the pronoun onto it."
+    },
+    {
+      "prompt": "You (*tú*) could have helped me.",
+      "answer": "Podrías haberme ayudado.",
+      "accept": [],
+      "why": "*Podrías haberme* + participle."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No deberías haber lo hecho.",
+      "right": "No deberías haberlo hecho.",
+      "why": "Almost. The pronoun sticks onto *haber* as one word."
+    },
+    {
+      "wrong": "No deberías hecho eso.",
+      "right": "No deberías haber hecho eso.",
+      "why": "You need *haber* before the participle."
+    },
+    {
+      "wrong": "Deberías habías llamado antes.",
+      "right": "Deberías haber llamado antes.",
+      "why": "Only *deberías* changes for the person; *haber* stays as it is."
+    }
+  ],
+  "personal": "Think of something a friend should have told you. Say it with *Podrías haberme…* or *Deberías haberme…*"
+}
