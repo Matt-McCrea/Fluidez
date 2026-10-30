@@ -1,0 +1,176 @@
+{
+  "node": "p:coincidir-en",
+  "hook": {
+    "line": "In a real discussion you rarely agree on everything. The skill is pinning down exactly where you agree, and where you stop.",
+    "es": "Coincido contigo en que hace falta más financiación.",
+    "en": "I agree with you that more funding is needed."
+  },
+  "examples": [
+    {
+      "es": "Coincido contigo en que hace falta más financiación.",
+      "en": "I agree with you that more funding is needed."
+    },
+    {
+      "es": "No coincido contigo en que sea la única opción.",
+      "en": "I don't agree with you that it's the only option."
+    },
+    {
+      "es": "Estoy de acuerdo en todo, salvo en el plazo.",
+      "en": "I agree on everything except the deadline."
+    },
+    {
+      "es": "Coincido contigo en lo de esperar.",
+      "en": "I agree with you about waiting."
+    },
+    {
+      "es": "Coincido con Vale en que el café necesita ayuda.",
+      "en": "I agree with Vale that the café needs help."
+    },
+    {
+      "es": "Mariana y Tomás coinciden en que hay que actuar.",
+      "en": "Mariana and Tomás agree that we have to act."
+    }
+  ],
+  "rule": "English says \"agree that\". Spanish *coincidir* always needs *en*: *coincido en que…*, never *coincido que*. Add the other person with *con*: *coincido contigo*, *coincido con Vale*.\n\nAfter a plain *coincido en que*, use a normal verb: *hace falta*. When you say you do not agree, switch to the subjunctive: *no coincido en que sea…*\n\nTo narrow a disagreement, name the one point: *estoy de acuerdo en todo, salvo en…*",
+  "smallPrint": "Teachers call this a verb with a fixed preposition: *coincidir* takes *en*, and a negated opinion takes the subjunctive.",
+  "readAndPick": [
+    {
+      "es": "Coincido contigo en que hace falta más financiación.",
+      "options": [
+        "I disagree with you that more funding is needed.",
+        "I agree with you that more funding is needed.",
+        "You agree with me that more funding is needed."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No coincido contigo en que sea la única opción.",
+      "options": [
+        "I don't agree with you that it's the only option.",
+        "I agree with you that it's the only option.",
+        "I agree with you that it isn't the only option."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estoy de acuerdo en todo, salvo en el plazo.",
+      "options": [
+        "I disagree on everything, including the deadline.",
+        "I agree only on the deadline.",
+        "I agree on everything except the deadline."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Coincido con Vale en que el café necesita ayuda.",
+      "options": [
+        "Vale agrees with me that the café needs help.",
+        "I agree with Vale that the café needs help.",
+        "I disagree with Vale that the café needs help."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Coincidimos en casi todo.",
+      "options": [
+        "We disagree on almost everything.",
+        "We agree on everything.",
+        "We agree on almost everything."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Coincides conmigo en que el precio es alto?",
+      "options": [
+        "Do you agree with me that the price is high?",
+        "Do I agree with you that the price is high?",
+        "Don't you think the price is low?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mariana y Tomás coinciden en que hay que actuar.",
+      "options": [
+        "Mariana and Tomás disagree that we have to act.",
+        "Mariana and Tomás agree that we have to act.",
+        "Mariana agrees that Tomás has to act."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ella no coincide con nosotros en que sea urgente.",
+      "options": [
+        "She agrees with us that it's urgent.",
+        "We don't agree with her that it's urgent.",
+        "She doesn't agree with us that it's urgent."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Coincido contigo ___ que hace falta más financiación.* (*en* or *de*) I agree with you that more funding is needed.",
+      "answer": "Coincido contigo en que hace falta más financiación.",
+      "accept": [],
+      "why": "*Coincidir* always takes *en* before *que*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Estoy de acuerdo en todo, ___ en el plazo.* (*salvo* or *pero*) I agree on everything except the deadline.",
+      "answer": "Estoy de acuerdo en todo, salvo en el plazo.",
+      "accept": [
+        "Estoy de acuerdo en todo, excepto en el plazo."
+      ],
+      "why": "*Salvo en* marks the one thing you do not agree on."
+    },
+    {
+      "prompt": "Say to a friend: I agree with you about waiting.",
+      "answer": "Coincido contigo en lo de esperar.",
+      "accept": [
+        "Coincido contigo en esperar."
+      ],
+      "why": "With a friend it is *contigo*, and *en* comes before the point."
+    },
+    {
+      "prompt": "Say: I agree with Vale that the café needs help.",
+      "answer": "Coincido con Vale en que el café necesita ayuda.",
+      "accept": [],
+      "why": "*Con* plus a name, then *en que* and a normal verb."
+    },
+    {
+      "prompt": "Say you don't agree: *Coincido contigo en que es la única opción.* I don't agree with you that it's the only option.",
+      "answer": "No coincido contigo en que sea la única opción.",
+      "accept": [],
+      "why": "After *no coincido en que*, the verb switches to *sea*."
+    },
+    {
+      "prompt": "Say: We agree on almost everything.",
+      "answer": "Coincidimos en casi todo.",
+      "accept": [],
+      "why": "*Coincidir* with *we* is *coincidimos*, and *en* stays."
+    },
+    {
+      "prompt": "Say it about Mariana and Tomás: *Coincido en que hay que actuar.* Mariana and Tomás agree that we have to act.",
+      "answer": "Mariana y Tomás coinciden en que hay que actuar.",
+      "accept": [],
+      "why": "Two people means *coinciden*, and *en que* stays."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Coincido que hace falta más financiación.",
+      "right": "Coincido en que hace falta más financiación.",
+      "why": "English drops the little word, but Spanish keeps *en* every time."
+    },
+    {
+      "wrong": "No coincido contigo en que es la única opción.",
+      "right": "No coincido contigo en que sea la única opción.",
+      "why": "Once you say you don't agree, the verb after *en que* turns subjunctive: *sea*."
+    },
+    {
+      "wrong": "Coincido con ti en que hace falta más financiación.",
+      "right": "Coincido contigo en que hace falta más financiación.",
+      "why": "*Con* plus *tú* is one special word: *contigo*."
+    }
+  ],
+  "personal": "Think of a friend you mostly agree with. Say what you agree on and the one thing you don't: *Coincido con… en…, salvo en…*"
+}

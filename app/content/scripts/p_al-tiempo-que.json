@@ -1,0 +1,193 @@
+{
+  "node": "p:al-tiempo-que",
+  "hook": {
+    "line": "Cities pull in two directions at once: the rent goes up while the salaries stay put. To write about that, you need a way to say \"while\" that sets two facts side by side.",
+    "es": "Los precios suben al tiempo que bajan los salarios.",
+    "en": "Prices are going up while salaries are going down."
+  },
+  "examples": [
+    {
+      "es": "La producción aumenta al tiempo que cae la demanda.",
+      "en": "Production is rising while demand is falling."
+    },
+    {
+      "es": "Sonreía a la vez que negaba con la cabeza.",
+      "en": "She was smiling while shaking her head."
+    },
+    {
+      "es": "Los precios suben al tiempo que bajan los salarios.",
+      "en": "Prices are going up while salaries are going down."
+    },
+    {
+      "es": "La ciudad crece al tiempo que se vacía el centro.",
+      "en": "The city is growing while the center is emptying."
+    },
+    {
+      "es": "Vale celebra el éxito al tiempo que teme el cambio.",
+      "en": "Vale celebrates the success while fearing the change."
+    },
+    {
+      "es": "Ella dijo que sí al tiempo que negaba con la cabeza.",
+      "en": "She said yes while shaking her head."
+    }
+  ],
+  "rule": "*Al tiempo que* joins two things that happen at the same moment, often pulling in opposite directions. English says \"while\". *A la vez que* and *al mismo tiempo que* mean the same.\n\nThe verbs are normal and need no subjunctive, because both are facts: *aumenta al tiempo que cae*. The second part often puts its verb first: *cae la demanda*.\n\nIt sounds more written than *mientras*, which makes it good for essays. For two things changing step by step together, Spanish uses another phrase, *a medida que*.",
+  "smallPrint": "Teachers call this simultaneity: two actions or facts holding at the same time, here with a contrast between them.",
+  "readAndPick": [
+    {
+      "es": "La producción aumenta al tiempo que cae la demanda.",
+      "options": [
+        "Production is rising because demand is falling.",
+        "Production is rising after demand falls.",
+        "Production is rising while demand is falling."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Sonreía a la vez que negaba con la cabeza.",
+      "options": [
+        "She was smiling while shaking her head.",
+        "She smiled and then shook her head.",
+        "She smiled because she shook her head."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La ciudad crece al tiempo que se vacía el centro.",
+      "options": [
+        "The city is growing because the center is emptying.",
+        "The city is growing while the center is emptying.",
+        "The city is growing before the center empties."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ella dijo que sí al tiempo que negaba con la cabeza.",
+      "options": [
+        "She said yes after shaking her head.",
+        "She said yes so that she could shake her head.",
+        "She said yes while shaking her head."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Vale celebra el éxito al tiempo que teme el cambio.",
+      "options": [
+        "Vale celebrates the success while fearing the change.",
+        "Vale celebrates the success because she fears the change.",
+        "Vale celebrates the success after fearing the change."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Aumenta el turismo a la vez que disminuyen los vecinos.",
+      "options": [
+        "Tourism increases because the neighbors decrease.",
+        "Tourism increases after the neighbors decrease.",
+        "Tourism increases while the neighbors decrease."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mariana escribe el artículo al tiempo que revisa los datos.",
+      "options": [
+        "Mariana writes the article after checking the data.",
+        "Mariana writes the article while checking the data.",
+        "Mariana writes the article in order to check the data."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se abren cafés nuevos al tiempo que cierran las tiendas viejas.",
+      "options": [
+        "New cafés open while the old shops close.",
+        "New cafés open because the old shops close.",
+        "New cafés open after the old shops close."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Los precios suben ___ bajan los salarios.* (*al tiempo que* or *porque*) Prices are going up while salaries are going down.",
+      "answer": "Los precios suben al tiempo que bajan los salarios.",
+      "accept": [
+        "Los precios suben a la vez que bajan los salarios.",
+        "Los precios suben al mismo tiempo que bajan los salarios."
+      ],
+      "why": "Two facts at the same moment: *al tiempo que*, not a reason like *porque*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *La producción aumenta ___ cae la demanda.* (*a la vez que* or *aunque*) Production is rising while demand is falling.",
+      "answer": "La producción aumenta a la vez que cae la demanda.",
+      "accept": [
+        "La producción aumenta al tiempo que cae la demanda.",
+        "La producción aumenta al mismo tiempo que cae la demanda."
+      ],
+      "why": "*A la vez que* is \"while\", with both facts true together."
+    },
+    {
+      "prompt": "Say: The city is growing while the center is emptying.",
+      "answer": "La ciudad crece al tiempo que se vacía el centro.",
+      "accept": [
+        "La ciudad crece a la vez que se vacía el centro.",
+        "La ciudad crece al mismo tiempo que se vacía el centro."
+      ],
+      "why": "*Al tiempo que* sits between the two facts, and the second verb can come before its subject."
+    },
+    {
+      "prompt": "Say: She said yes while shaking her head.",
+      "answer": "Ella dijo que sí al tiempo que negaba con la cabeza.",
+      "accept": [
+        "Dijo que sí al tiempo que negaba con la cabeza.",
+        "Ella dijo que sí a la vez que negaba con la cabeza.",
+        "Dijo que sí a la vez que negaba con la cabeza."
+      ],
+      "why": "Both things were going on together, so *al tiempo que*, and the second verb is in the past."
+    },
+    {
+      "prompt": "Say it with *a la vez que*: *Vale celebra el éxito al tiempo que teme el cambio.*",
+      "answer": "Vale celebra el éxito a la vez que teme el cambio.",
+      "accept": [
+        "Vale celebra el éxito al mismo tiempo que teme el cambio."
+      ],
+      "why": "The phrases mean the same, and the verbs do not change."
+    },
+    {
+      "prompt": "Say: Mariana writes the article while checking the data.",
+      "answer": "Mariana escribe el artículo al tiempo que revisa los datos.",
+      "accept": [
+        "Mariana escribe el artículo a la vez que revisa los datos.",
+        "Mariana escribe el artículo al mismo tiempo que revisa los datos."
+      ],
+      "why": "One person, two actions together, so a normal verb after *al tiempo que*."
+    },
+    {
+      "prompt": "Make it a question starting with *¿Por qué…?* Why is the rent going up while quality is going down?",
+      "answer": "¿Por qué sube el arriendo al tiempo que baja la calidad?",
+      "accept": [
+        "¿Por qué sube el arriendo a la vez que baja la calidad?",
+        "¿Por qué sube el arriendo al mismo tiempo que baja la calidad?"
+      ],
+      "why": "The *al tiempo que* part stays the same inside a question."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Los precios suben al tiempo que bajen los salarios.",
+      "right": "Los precios suben al tiempo que bajan los salarios.",
+      "why": "Both are facts, so the verb after *al tiempo que* is a normal one, not subjunctive."
+    },
+    {
+      "wrong": "Sonreía al tiempo de negar con la cabeza.",
+      "right": "Sonreía al tiempo que negaba con la cabeza.",
+      "why": "The phrase ends in *que*, and a normal verb follows it, not *de* plus an infinitive."
+    },
+    {
+      "wrong": "La producción aumenta a medida que cae la demanda.",
+      "right": "La producción aumenta al tiempo que cae la demanda.",
+      "why": "*A medida que* is for two things changing together step by step; for two facts side by side, use *al tiempo que*."
+    }
+  ],
+  "personal": "Name two things in your town that are moving in opposite directions. Say it with *al tiempo que*, for example: *Sube… al tiempo que baja…*"
+}

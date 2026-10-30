@@ -1,0 +1,180 @@
+{
+  "node": "p:una-cosa-es-otra",
+  "hook": {
+    "line": "Arguments go wrong when two different things get treated as one. This pattern is how you pull them apart and say, politely, \"those are not the same\".",
+    "es": "Una cosa es llegar tarde y otra muy distinta no avisar.",
+    "en": "It's one thing to be late and quite another not to let anyone know."
+  },
+  "examples": [
+    {
+      "es": "Una cosa es llegar tarde y otra muy distinta no avisar.",
+      "en": "It's one thing to be late and quite another not to let anyone know."
+    },
+    {
+      "es": "Una cosa es vender el café y otra muy distinta vender la historia de Rosa.",
+      "en": "Selling the café is one thing, and selling Rosa's story is quite another."
+    },
+    {
+      "es": "Una cosa es querer cambiar y otra poder hacerlo.",
+      "en": "It's one thing to want to change and another to be able to do it."
+    },
+    {
+      "es": "Una cosa es perder dinero y otra perder la casa.",
+      "en": "It's one thing to lose money and another to lose the house."
+    },
+    {
+      "es": "Una cosa es la tradición y otra muy distinta el miedo al cambio.",
+      "en": "Tradition is one thing, and fear of change is quite another."
+    },
+    {
+      "es": "Una cosa es que sea caro y otra que sea imposible.",
+      "en": "It's one thing for it to be expensive and another for it to be impossible."
+    }
+  ],
+  "rule": "Start with *Una cosa es* and the first idea, then *y otra* (or *y otra muy distinta*) and the second. The second half drops the verb: *y otra*, not *y otra es*.\n\nIf each half is an action, use the infinitive: *llegar tarde*, *no avisar*. Nouns work too: *la tradición*.\n\nIf each half is a whole situation, use *que* and the subjunctive in both halves: *una cosa es que sea caro y otra que sea imposible*.\n\nEnglish starts with \"it's\". Spanish starts with *una cosa es*.",
+  "smallPrint": "Teachers call this a contrastive distinction: two things that look alike are separated, and the second is weighed against the first.",
+  "readAndPick": [
+    {
+      "es": "Una cosa es llegar tarde y otra muy distinta no avisar.",
+      "options": [
+        "Arriving late and not telling anyone are the same thing.",
+        "Arriving late is one thing; not telling anyone is quite another.",
+        "He arrives late because he doesn't tell anyone."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Una cosa es vender el café y otra muy distinta vender la historia de Rosa.",
+      "options": [
+        "Selling the café is one thing; selling Rosa's story is quite another.",
+        "Selling the café and selling Rosa's story are the same thing.",
+        "Selling the café means selling Rosa's story."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Una cosa es querer cambiar y otra poder hacerlo.",
+      "options": [
+        "Wanting to change means being able to do it.",
+        "Wanting to change is easy, and so is doing it.",
+        "Wanting to change is one thing; being able to do it is another."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Una cosa es perder dinero y otra perder la casa.",
+      "options": [
+        "Losing money is one thing; losing the house is another.",
+        "Losing money is how you lose the house.",
+        "Losing money and losing the house are the same thing."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Una cosa es la tradición y otra muy distinta el miedo al cambio.",
+      "options": [
+        "Tradition and fear of change are the same.",
+        "Tradition comes from fear of change.",
+        "Tradition is one thing; fear of change is quite another."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Una cosa es que sea caro y otra que sea imposible.",
+      "options": [
+        "It's expensive because it's impossible.",
+        "It's one thing for it to be expensive and another for it to be impossible.",
+        "If it's expensive, then it's impossible."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Una cosa es opinar y otra muy diferente mentir.",
+      "options": [
+        "Giving an opinion is one thing; lying is quite different.",
+        "Giving an opinion is lying.",
+        "Lying is a way of giving an opinion."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Una cosa es hablar y otra muy diferente actuar.",
+      "options": [
+        "Talking is the same as acting.",
+        "Talking is one thing; acting is quite different.",
+        "Talking leads to acting."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Una cosa es llegar tarde ___ no avisar.* (*y otra muy distinta* or *y una cosa muy distinta*) It's one thing to be late and quite another not to let anyone know.",
+      "answer": "Una cosa es llegar tarde y otra muy distinta no avisar.",
+      "accept": [
+        "Una cosa es llegar tarde y otra muy diferente no avisar."
+      ],
+      "why": "The second half says *otra* (another one), not *una cosa* again."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Una cosa es querer cambiar y otra ___ hacerlo.* (*poder* or *puede*) It's one thing to want to change and another to be able to do it.",
+      "answer": "Una cosa es querer cambiar y otra poder hacerlo.",
+      "accept": [],
+      "why": "The first half is an infinitive (*querer*), so the second matches: *poder*."
+    },
+    {
+      "prompt": "Say: Selling the café is one thing, and selling Rosa's story is quite another.",
+      "answer": "Una cosa es vender el café y otra muy distinta vender la historia de Rosa.",
+      "accept": [
+        "Una cosa es vender el café y otra muy diferente vender la historia de Rosa."
+      ],
+      "why": "Two infinitives, with *y otra muy distinta* between them."
+    },
+    {
+      "prompt": "Say: It's one thing to lose money and another to lose the house.",
+      "answer": "Una cosa es perder dinero y otra perder la casa.",
+      "accept": [],
+      "why": "The second half drops the verb *es* and starts with *otra*."
+    },
+    {
+      "prompt": "Say: Talking is one thing, and acting is quite another.",
+      "answer": "Una cosa es hablar y otra muy distinta actuar.",
+      "accept": [
+        "Una cosa es hablar y otra muy diferente actuar."
+      ],
+      "why": "*Muy distinta* or *muy diferente* adds the \"quite\"."
+    },
+    {
+      "prompt": "Add *muy distinta*: *Una cosa es opinar y otra mentir.* Giving an opinion is one thing; lying is quite another.",
+      "answer": "Una cosa es opinar y otra muy distinta mentir.",
+      "accept": [
+        "Una cosa es opinar y otra muy diferente mentir."
+      ],
+      "why": "*Muy distinta* goes right after *otra*."
+    },
+    {
+      "prompt": "Say: It's one thing for it to be expensive and another for it to be impossible.",
+      "answer": "Una cosa es que sea caro y otra que sea imposible.",
+      "accept": [],
+      "why": "Each half is a whole situation, so *que* plus the subjunctive *sea* in both."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Una cosa es llegar tarde y una cosa es no avisar.",
+      "right": "Una cosa es llegar tarde y otra no avisar.",
+      "why": "The second half says *otra*, \"another one\", not *una cosa* again."
+    },
+    {
+      "wrong": "Una cosa es que sea caro y otra que es imposible.",
+      "right": "Una cosa es que sea caro y otra que sea imposible.",
+      "why": "With *que* in both halves, both verbs are subjunctive."
+    },
+    {
+      "wrong": "Es una cosa llegar tarde y otra no avisar.",
+      "right": "Una cosa es llegar tarde y otra no avisar.",
+      "why": "The pattern starts with *una cosa es*, not \"it's one thing\" word for word."
+    }
+  ],
+  "personal": "Think of two things people often mix up in your life, like being busy and being productive. Say it with *Una cosa es… y otra muy distinta…*"
+}

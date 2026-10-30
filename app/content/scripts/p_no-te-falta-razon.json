@@ -1,0 +1,178 @@
+{
+  "node": "p:no-te-falta-razon",
+  "hook": {
+    "line": "In a good argument you do not just say no. You give the other person their point first, and then you turn. It keeps the conversation friendly and it makes your \"but\" stronger.",
+    "es": "No te falta razón; ahora bien, hay que pensar en el costo.",
+    "en": "You've got a point; that said, we have to think about the cost."
+  },
+  "examples": [
+    {
+      "es": "No te falta razón; ahora bien, hay que pensar en el costo.",
+      "en": "You've got a point; that said, we have to think about the cost."
+    },
+    {
+      "es": "En eso me convenciste; sin embargo, sigo con dudas.",
+      "en": "You've convinced me on that; however, I still have doubts."
+    },
+    {
+      "es": "Algo de razón tienes, pero no del todo.",
+      "en": "You're partly right, but not entirely."
+    },
+    {
+      "es": "A Vale no le falta razón, pero Tomás no quiere vender.",
+      "en": "Vale has a point, but Tomás doesn't want to sell."
+    },
+    {
+      "es": "En eso tienes razón; ahora bien, falta ver el costo.",
+      "en": "You're right about that; that said, we still have to see the cost."
+    },
+    {
+      "es": "Tienes toda la razón.",
+      "en": "You're completely right."
+    }
+  ],
+  "rule": "*No te falta razón* says \"reason is not missing from you\": you have a point. It grants part of the argument, and then you turn with *pero*, *ahora bien* or *sin embargo*.\n\n*Te* is for a friend. For *usted*, or about someone else, it becomes *le*: *a Vale no le falta razón*. *Algo de razón tienes* is the same idea, a little softer.\n\nCompare *tienes toda la razón*: that is full agreement, and no \"but\" is coming. There is no article in *razón*: *no te falta razón*.",
+  "smallPrint": "Teachers call this a concession: you grant a point to the other side before you state your own position.",
+  "readAndPick": [
+    {
+      "es": "No te falta razón; ahora bien, hay que pensar en el costo.",
+      "options": [
+        "You're completely right, so let's ignore the cost.",
+        "You're wrong, and we don't have to think about the cost.",
+        "You've got a point; that said, we have to think about the cost."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tienes toda la razón.",
+      "options": [
+        "You're completely right.",
+        "You're partly right.",
+        "You're not right."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Algo de razón tienes, pero no del todo.",
+      "options": [
+        "You're completely right.",
+        "You're partly right, but not entirely.",
+        "You're wrong, but not entirely."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A Vale no le falta razón, pero Tomás no quiere vender.",
+      "options": [
+        "Vale is wrong, and Tomás doesn't want to sell.",
+        "Vale is completely right, so Tomás wants to sell.",
+        "Vale has a point, but Tomás doesn't want to sell."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "En eso me convenciste; sin embargo, sigo con dudas.",
+      "options": [
+        "You convinced me on that; however, I still have doubts.",
+        "I convinced you on that; however, I still have doubts.",
+        "You convinced me on everything, so I have no doubts."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Algo de razón tiene Mariana, pero no toda.",
+      "options": [
+        "Mariana is completely right.",
+        "Mariana has no point at all.",
+        "Mariana is partly right, but not completely."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No le falta razón a Hernando; ahora bien, él no paga el arriendo.",
+      "options": [
+        "Hernando is wrong, and he doesn't pay the rent.",
+        "Hernando has a point; that said, he doesn't pay the rent.",
+        "Hernando is completely right, and he pays the rent."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "En eso tienes razón; ahora bien, falta ver el costo.",
+      "options": [
+        "You're wrong about that; that said, we still have to see the cost.",
+        "You're right about that, and the cost is already clear.",
+        "You're right about that; that said, we still have to see the cost."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *___ razón; ahora bien, hay que pensar en el costo.* (*No te falta* or *No tienes*) You've got a point; that said, we have to think about the cost.",
+      "answer": "No te falta razón; ahora bien, hay que pensar en el costo.",
+      "accept": [],
+      "why": "*No te falta razón* grants a point; *no tienes razón* would say you are wrong."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Algo de razón tienes, pero no ___.* (*del todo* or *de todo*) You're partly right, but not entirely.",
+      "answer": "Algo de razón tienes, pero no del todo.",
+      "accept": [],
+      "why": "*Del todo* means \"entirely\": *de* and *el* joined."
+    },
+    {
+      "prompt": "Say to a friend: You're completely right.",
+      "answer": "Tienes toda la razón.",
+      "accept": [
+        "Tú tienes toda la razón."
+      ],
+      "why": "Full agreement is *toda la razón*, with *la*."
+    },
+    {
+      "prompt": "Say to your boss (formal): You're not wrong, but the budget won't stretch to it.",
+      "answer": "No le falta razón, pero el presupuesto no alcanza.",
+      "accept": [
+        "No le falta razón, pero no alcanza el presupuesto."
+      ],
+      "why": "For *usted*, *te* becomes *le*."
+    },
+    {
+      "prompt": "Change it for *usted*: *No te falta razón.* You're not wrong (formal).",
+      "answer": "No le falta razón.",
+      "accept": [],
+      "why": "*Le* replaces *te* when you speak formally."
+    },
+    {
+      "prompt": "Say to a friend: You convinced me on that; however, I still have doubts.",
+      "answer": "En eso me convenciste; sin embargo, sigo con dudas.",
+      "accept": [
+        "En eso me convenciste, pero sigo con dudas."
+      ],
+      "why": "*Me convenciste* is \"you convinced me\", and *sin embargo* is the turn."
+    },
+    {
+      "prompt": "Say: Vale has a point, but Tomás doesn't want to sell.",
+      "answer": "A Vale no le falta razón, pero Tomás no quiere vender.",
+      "accept": [],
+      "why": "For another person, *a Vale no le falta razón*, with *le*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No tienes razón; ahora bien, hay que pensar en el costo.",
+      "right": "No te falta razón; ahora bien, hay que pensar en el costo.",
+      "why": "Careful. *No tienes razón* means \"you're wrong\"; to grant a point, use *no te falta razón*."
+    },
+    {
+      "wrong": "No te falta la razón.",
+      "right": "No te falta razón.",
+      "why": "Spanish drops the article here, as in *tienes razón*."
+    },
+    {
+      "wrong": "Tienes toda razón.",
+      "right": "Tienes toda la razón.",
+      "why": "\"Completely right\" needs *la*: *toda la razón*."
+    }
+  ],
+  "personal": "Think of someone you disagree with a little. Grant them a point, then turn: *No le falta razón en…, pero…* or *No te falta razón, pero…*"
+}

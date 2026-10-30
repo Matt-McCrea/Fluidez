@@ -1,0 +1,172 @@
+{
+  "node": "p:ir-en-aumento",
+  "hook": {
+    "line": "Every news report, every café owner's complaint and every essay about a city needs the same tool: saying that something is going up or down, and how fast.",
+    "es": "La tensión va en aumento.",
+    "en": "Tension is on the rise."
+  },
+  "examples": [
+    {
+      "es": "La tensión va en aumento.",
+      "en": "Tension is on the rise."
+    },
+    {
+      "es": "Los precios se dispararon.",
+      "en": "Prices shot up."
+    },
+    {
+      "es": "Las ventas cayeron en picada.",
+      "en": "Sales plummeted."
+    },
+    {
+      "es": "El desempleo va en disminución.",
+      "en": "Unemployment is going down."
+    },
+    {
+      "es": "El arriendo se disparó.",
+      "en": "The rent shot up."
+    },
+    {
+      "es": "El número de turistas va en aumento.",
+      "en": "The number of tourists is on the rise."
+    }
+  ],
+  "rule": "For a change that is going on now, steadily, Spanish uses *ir en* plus a noun: *va en aumento* (on the rise), *va en disminución* (going down). *Ir* agrees with what is changing: *van en aumento*.\n\nFor a sudden, strong change, use *se disparó* (shot up) or *cayó en picada* (plummeted). Spain says *en picado*.\n\nDo not use these two for a slow change; that is what *ir en* is for.\n\nEnglish builds this with a verb (\"rise\"). Spanish prefers *ir* plus a noun, and the small word is always *en*.",
+  "smallPrint": "Teachers call these expressions of tendency or trend: steady (*ir en aumento*) or abrupt (*dispararse*, *caer en picada*).",
+  "readAndPick": [
+    {
+      "es": "La tensión va en aumento.",
+      "options": [
+        "Tension is on the rise.",
+        "Tension shot up.",
+        "Tension is dropping."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Los precios se dispararon.",
+      "options": [
+        "Prices are slowly rising.",
+        "Prices plummeted.",
+        "Prices shot up."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Las ventas cayeron en picada.",
+      "options": [
+        "Sales are slowly falling.",
+        "Sales plummeted.",
+        "Sales shot up."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El desempleo va en disminución.",
+      "options": [
+        "Unemployment shot up.",
+        "Unemployment is going down.",
+        "Unemployment is on the rise."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Los casos van en aumento en toda la ciudad.",
+      "options": [
+        "Cases are on the rise across the city.",
+        "Cases are falling across the city.",
+        "Cases plummeted across the city."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El arriendo se disparó.",
+      "options": [
+        "The rent is slowly going down.",
+        "The rent plummeted.",
+        "The rent shot up."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El dólar cayó en picada.",
+      "options": [
+        "The dollar shot up.",
+        "The dollar plummeted.",
+        "The dollar is slowly rising."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Las visitas al museo van en aumento.",
+      "options": [
+        "Visits to the museum plummeted.",
+        "Visits to the museum shot up.",
+        "Visits to the museum are on the rise."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *La tensión ___ en aumento.* (*va* or *van*) Tension is on the rise.",
+      "answer": "La tensión va en aumento.",
+      "accept": [],
+      "why": "One thing is rising, so *ir* is singular: *va*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Los precios ___.* (*se dispararon* or *se disparó*) Prices shot up.",
+      "answer": "Los precios se dispararon.",
+      "accept": [],
+      "why": "Prices are plural, so the verb is plural too."
+    },
+    {
+      "prompt": "Say: Sales plummeted.",
+      "answer": "Las ventas cayeron en picada.",
+      "accept": [],
+      "why": "A sudden fall is *cayeron en picada*."
+    },
+    {
+      "prompt": "Say: Unemployment is going down.",
+      "answer": "El desempleo va en disminución.",
+      "accept": [],
+      "why": "A steady change in progress is *ir en* plus the noun."
+    },
+    {
+      "prompt": "Say: The number of tourists is on the rise.",
+      "answer": "El número de turistas va en aumento.",
+      "accept": [],
+      "why": "The thing rising is *el número*, singular, so *va*."
+    },
+    {
+      "prompt": "Make it plural: *El caso va en aumento.* Cases are on the rise.",
+      "answer": "Los casos van en aumento.",
+      "accept": [],
+      "why": "Plural cases need a plural *ir*: *van*."
+    },
+    {
+      "prompt": "Now say it about the dollar: The dollar plummeted.",
+      "answer": "El dólar cayó en picada.",
+      "accept": [],
+      "why": "A sudden fall again, so *cayó en picada*, and *dólar* is singular."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El desempleo va a aumento.",
+      "right": "El desempleo va en aumento.",
+      "why": "The small word in this phrase is always *en*."
+    },
+    {
+      "wrong": "Los casos va en aumento.",
+      "right": "Los casos van en aumento.",
+      "why": "*Ir* agrees with what is changing, and *casos* is plural."
+    },
+    {
+      "wrong": "Los precios se dispararon poco a poco.",
+      "right": "Los precios van en aumento poco a poco.",
+      "why": "*Dispararse* means a sudden jump; for a slow change, use *ir en aumento*."
+    }
+  ],
+  "personal": "What is on the rise, or falling, in your city or your life lately? Say it with *va en aumento* or *se disparó*."
+}

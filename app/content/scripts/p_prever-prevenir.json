@@ -1,0 +1,178 @@
+{
+  "node": "p:prever-prevenir",
+  "hook": {
+    "line": "Every café owner has two kinds of bad days: the ones nobody saw coming and the ones somebody could have stopped. Spanish uses two near-twin verbs for them, and they are easy to swap by accident.",
+    "es": "Nadie previó la crisis.",
+    "en": "Nobody foresaw the crisis."
+  },
+  "examples": [
+    {
+      "es": "Nadie previó la crisis.",
+      "en": "Nobody foresaw the crisis."
+    },
+    {
+      "es": "Hay que prevenir los accidentes.",
+      "en": "We have to prevent accidents."
+    },
+    {
+      "es": "Es mejor prevenir que curar.",
+      "en": "It's better to prevent than to cure."
+    },
+    {
+      "es": "Vale previó el problema y compró más harina.",
+      "en": "Vale foresaw the problem and bought more flour."
+    },
+    {
+      "es": "Nadie pudo prever el aumento de precios.",
+      "en": "Nobody could foresee the rise in prices."
+    },
+    {
+      "es": "Los médicos quieren prevenir la enfermedad.",
+      "en": "The doctors want to prevent the illness."
+    }
+  ],
+  "rule": "*Prever* is to see it coming: you expect something, in your head. *Prevenir* is to act so that it does not happen. English keeps the two apart with \"foresee\" and \"prevent\", and so does Spanish.\n\nThey look alike but they are different verbs. *Prever* follows *ver*: *previó*, *previmos*, *previsto*. *Prevenir* follows *venir*: *previene*, *prevenimos*, *previno*.\n\nSo *previno la crisis* means she stopped it, and *previó la crisis* means she saw it coming. Both take the thing directly: *prevenir los accidentes*.",
+  "smallPrint": "Teachers call this a lexical pair: two verbs that look almost the same and sit close in meaning but do different jobs. *Prever* conjugates like *ver*, *prevenir* like *venir*.",
+  "readAndPick": [
+    {
+      "es": "Nadie previó la crisis.",
+      "options": [
+        "Nobody prevented the crisis.",
+        "Nobody foresaw the crisis.",
+        "Nobody wanted the crisis."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hay que prevenir los accidentes.",
+      "options": [
+        "We have to expect accidents.",
+        "We have to prevent accidents.",
+        "We have to cause accidents."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale previó el problema y compró más harina.",
+      "options": [
+        "Vale foresaw the problem and bought more flour.",
+        "Vale solved the problem after buying more flour.",
+        "Vale prevented the problem because of the flour."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nadie pudo prever el aumento de precios.",
+      "options": [
+        "Nobody could prevent the rise in prices.",
+        "Nobody could pay the rise in prices.",
+        "Nobody could foresee the rise in prices."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Es mejor prevenir que curar.",
+      "options": [
+        "It's better to cure than to prevent.",
+        "It's better to foresee than to cure.",
+        "It's better to prevent than to cure."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Previmos el problema.",
+      "options": [
+        "We foresaw the problem.",
+        "We prevented the problem.",
+        "We solved the problem."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Los médicos quieren prevenir la enfermedad.",
+      "options": [
+        "The doctors foresee the illness.",
+        "The doctors want to cure the illness.",
+        "The doctors want to prevent the illness."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Prevenimos el problema a tiempo.",
+      "options": [
+        "We foresaw the problem in time.",
+        "We prevented the problem in time.",
+        "We caused the problem in time."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Nadie ___ la crisis.* (*previó* or *previno*) Nobody foresaw the crisis.",
+      "answer": "Nadie previó la crisis.",
+      "accept": [],
+      "why": "Seeing it coming is *prever*, and *previó* is its past."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Hay que ___ los accidentes.* (*prever* or *prevenir*) We have to prevent accidents.",
+      "answer": "Hay que prevenir los accidentes.",
+      "accept": [],
+      "why": "Acting so that something does not happen is *prevenir*."
+    },
+    {
+      "prompt": "Say: It's better to prevent than to cure.",
+      "answer": "Es mejor prevenir que curar.",
+      "accept": [],
+      "why": "The saying is about acting early, so *prevenir*."
+    },
+    {
+      "prompt": "Say: Nobody could foresee the rise in prices.",
+      "answer": "Nadie pudo prever el aumento de precios.",
+      "accept": [
+        "Nadie pudo prever el aumento de los precios."
+      ],
+      "why": "Expecting something in your head is *prever*, and it stays in the infinitive after *pudo*."
+    },
+    {
+      "prompt": "Say: Vale foresaw the problem and bought more flour.",
+      "answer": "Vale previó el problema y compró más harina.",
+      "accept": [],
+      "why": "*Previó* is *prever* in the past, one person, with an accent on the last letter."
+    },
+    {
+      "prompt": "Say it about *we*: *Vale previó el problema.* We foresaw the problem.",
+      "answer": "Previmos el problema.",
+      "accept": [
+        "Nosotros previmos el problema."
+      ],
+      "why": "*Prever* follows *ver*, so *we* ends in *-imos* and has no *n*."
+    },
+    {
+      "prompt": "Make it negative, about *I*: *Preví la lluvia.* I didn't foresee the rain.",
+      "answer": "No preví la lluvia.",
+      "accept": [
+        "Yo no preví la lluvia."
+      ],
+      "why": "*No* goes straight before the verb, and *preví* keeps its accent."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Nadie previno la crisis.",
+      "right": "Nadie previó la crisis.",
+      "why": "Almost. *Previno* is *prevenir*, so it says nobody stopped it; to say nobody saw it coming, use *previó*."
+    },
+    {
+      "wrong": "Es mejor prever que curar.",
+      "right": "Es mejor prevenir que curar.",
+      "why": "The saying is about acting early so there is nothing to cure, and that is *prevenir*."
+    },
+    {
+      "wrong": "Nadie ha previdido la crisis.",
+      "right": "Nadie ha previsto la crisis.",
+      "why": "*Prever* follows *ver*, so its participle is *previsto*, like *visto*."
+    }
+  ],
+  "personal": "Think of something that went wrong for you and that you did not see coming. Say it with *prever*, for example: *No preví…* Then say one thing you do to prevent problems, with *prevenir*."
+}
