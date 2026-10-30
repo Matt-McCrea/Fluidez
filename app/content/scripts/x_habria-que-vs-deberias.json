@@ -1,0 +1,172 @@
+{
+  "node": "x:habria-que-vs-deberias",
+  "hook": {
+    "line": "You want the owner called, or the door fixed, without starting a fight. Spanish lets you choose whether to name the person who should do it, and that choice changes the mood completely.",
+    "es": "Habría que hablar con el dueño antes de firmar.",
+    "en": "Someone should talk to the owner before signing."
+  },
+  "examples": [
+    {
+      "es": "Habría que llamarla.",
+      "en": "Someone should call her."
+    },
+    {
+      "es": "Deberías llamarla.",
+      "en": "You should call her. (to a friend)"
+    },
+    {
+      "es": "Habría que hablar con el dueño antes de firmar.",
+      "en": "Someone should talk to the owner before signing."
+    },
+    {
+      "es": "Deberíamos hablar con el concejo.",
+      "en": "We should talk to the council."
+    },
+    {
+      "es": "Usted debería hablar con ellos.",
+      "en": "You (formal) should talk to them."
+    },
+    {
+      "es": "Habría que cambiar el menú.",
+      "en": "The menu ought to be changed."
+    }
+  ],
+  "rule": "Both give advice softly, but they do different jobs.\n\n*Habría que* + infinitive names no one: \"someone should\", \"it ought to be done\". It never changes for person. It is gentle because it points at nobody.\n\n*Deberías* (to a friend), *debería* (*usted*, or I, he, she), *deberíamos* (we) name who should act. They change with the person.\n\nChoose by what you mean. *Habría que llamarla* is a general feeling. *Deberías llamarla* puts it on your friend. If you really mean \"you\", *habría que* can sound evasive. *Deberíamos* is friendly: it includes you.",
+  "smallPrint": "Teachers call *habría que* an impersonal expression, and *deberías* the conditional of the modal verb *deber*.",
+  "readAndPick": [
+    {
+      "es": "Habría que llamarla.",
+      "options": [
+        "Someone should call her.",
+        "You should call her.",
+        "We should call her."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Deberías llamarla.",
+      "options": [
+        "Someone should call her.",
+        "I should call her.",
+        "You should call her. (to a friend)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Deberíamos hablar con el concejo.",
+      "options": [
+        "Someone should talk to the council.",
+        "We should talk to the council.",
+        "They should talk to the council."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Usted debería hablar con ellos.",
+      "options": [
+        "Someone should talk to them.",
+        "We should talk to them.",
+        "You (formal) should talk to them."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Habría que cambiar el menú.",
+      "options": [
+        "You should change the menu.",
+        "The menu ought to be changed.",
+        "I should change the menu."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ustedes deberían hablar con el concejo.",
+      "options": [
+        "Someone should talk to the council.",
+        "We should talk to the council.",
+        "You all should talk to the council."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Deberías descansar un poco.",
+      "options": [
+        "Someone should rest a bit.",
+        "You should rest a bit. (to a friend)",
+        "We should rest a bit."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Habría que pagar la cuenta hoy.",
+      "options": [
+        "Someone should pay the bill today.",
+        "I should pay the bill today.",
+        "You should pay the bill today."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Name no one: *___ llamarla.* (*Habría que* or *Deberías*) Say: Someone should call her.",
+      "answer": "Habría que llamarla.",
+      "accept": [],
+      "why": "*Habría que* points at nobody in particular."
+    },
+    {
+      "prompt": "Name your friend: *___ llamarla.* (*Habría que* or *Deberías*) Say, to a friend: You should call her.",
+      "answer": "Deberías llamarla.",
+      "accept": [],
+      "why": "*Deberías* names the person: *tú*."
+    },
+    {
+      "prompt": "Type in Spanish: Someone should talk to the owner before signing.",
+      "answer": "Habría que hablar con el dueño antes de firmar.",
+      "accept": [],
+      "why": "*Habría que* plus an infinitive, with no person in it."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: You should rest a bit.",
+      "answer": "Deberías descansar un poco.",
+      "accept": [],
+      "why": "*Deberías* goes straight into the infinitive, with no *que*."
+    },
+    {
+      "prompt": "Type in Spanish: We should talk to the council.",
+      "answer": "Deberíamos hablar con el concejo.",
+      "accept": [],
+      "why": "*Deberíamos* is the \"we\" form, and it includes you."
+    },
+    {
+      "prompt": "Point at nobody: *Deberías cambiar el menú.* Say: The menu ought to be changed.",
+      "answer": "Habría que cambiar el menú.",
+      "accept": [],
+      "why": "Swap *deberías* for *habría que*; the infinitive stays."
+    },
+    {
+      "prompt": "Now name your friend: *Habría que pagar la cuenta hoy.* Say, to a friend: You should pay the bill today.",
+      "answer": "Deberías pagar la cuenta hoy.",
+      "accept": [],
+      "why": "Swap *habría que* for *deberías* to put it on one person."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Habrías que llamarla.",
+      "right": "Habría que llamarla.",
+      "why": "Almost. *Habría que* never changes for person; it is always *habría*."
+    },
+    {
+      "wrong": "Deberías que llamarla.",
+      "right": "Deberías llamarla.",
+      "why": "Almost. *Deberías* goes straight into the infinitive; *que* belongs to *habría que*."
+    },
+    {
+      "wrong": "Habría que tú llamarla.",
+      "right": "Deberías llamarla.",
+      "why": "Almost. *Habría que* has nobody in it. To name who, use *deberías*."
+    }
+  ],
+  "personal": "Pick a small job that needs doing at home or at work. Say it twice: once naming no one with *Habría que…*, and once to a friend with *Deberías…*"
+}

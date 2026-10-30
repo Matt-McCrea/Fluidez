@@ -1,0 +1,174 @@
+{
+  "node": "p:preferiria-que",
+  "hook": {
+    "line": "A flat \"no\" can end the conversation. \"I'd rather…\" says no and keeps the plan alive, which is why it sounds so much warmer.",
+    "es": "Preferiría que fuéramos a otro sitio, la verdad.",
+    "en": "I'd rather we went somewhere else, to be honest."
+  },
+  "examples": [
+    {
+      "es": "Preferiría que fuéramos a otro sitio, la verdad.",
+      "en": "I'd rather we went somewhere else, to be honest."
+    },
+    {
+      "es": "Preferiría quedarme en casa esta noche.",
+      "en": "I'd rather stay at home tonight."
+    },
+    {
+      "es": "Preferiría que no le contaras nada.",
+      "en": "I'd rather you didn't tell him anything. (to a friend)"
+    },
+    {
+      "es": "Preferiría que lo decidiéramos mañana.",
+      "en": "I'd rather we decided it tomorrow."
+    },
+    {
+      "es": "¿Preferirías que te llamara más tarde?",
+      "en": "Would you rather I called you later? (to a friend)"
+    },
+    {
+      "es": "Preferiría que Vale no cambiara la receta.",
+      "en": "I'd rather Vale didn't change the recipe."
+    }
+  ],
+  "rule": "*Preferiría* means \"I'd rather\". If you are the one who would do it, follow it with a plain infinitive: *Preferiría quedarme en casa*.\n\nIf someone else does it, or all of us, add *que* and the *-ra* form: *Preferiría que fuéramos a otro sitio*. English does the same: \"I'd rather we went\".\n\nIt says no but offers something else, so it sounds warmer than a bare *no puedo*.",
+  "smallPrint": "Teachers call *preferiría* the conditional of *preferir*, and the *-ra* form the imperfect subjunctive.",
+  "readAndPick": [
+    {
+      "es": "Preferiría que fuéramos a otro sitio, la verdad.",
+      "options": [
+        "I prefer to go somewhere else, to be honest.",
+        "I'd rather we went somewhere else, to be honest.",
+        "I'd rather you went somewhere else, to be honest."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Preferiría quedarme en casa esta noche.",
+      "options": [
+        "I'd rather stay at home tonight.",
+        "I'd rather you stayed at home tonight.",
+        "I'd rather we stayed home tonight."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Preferiría que no le contaras nada.",
+      "options": [
+        "I'd rather not tell him anything.",
+        "I'd rather he didn't tell you anything.",
+        "I'd rather you didn't tell him anything."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Preferiría que lo decidiéramos mañana.",
+      "options": [
+        "I'd rather decide it tomorrow.",
+        "I'd rather we decided it tomorrow.",
+        "I'd rather they decided it tomorrow."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Preferirías que te llamara más tarde?",
+      "options": [
+        "Would you rather I called you later?",
+        "Did you call me later?",
+        "Would you rather call me later?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Preferiría que Vale no cambiara la receta.",
+      "options": [
+        "I'd rather Vale changed the recipe.",
+        "I'd rather not change the recipe.",
+        "I'd rather Vale didn't change the recipe."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Preferiría esperar un poco.",
+      "options": [
+        "I'd rather you waited a little.",
+        "I'd rather wait a little.",
+        "I'd rather they waited a little."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Preferiría que usted no firmara todavía.",
+      "options": [
+        "I'd rather you (formal) signed now.",
+        "I'd rather you (formal) didn't sign yet.",
+        "I'd rather not sign yet."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the right form and type the whole sentence: *Preferiría que ___ a otro sitio.* (*fuéramos* or *vamos*)",
+      "answer": "Preferiría que fuéramos a otro sitio.",
+      "accept": [],
+      "why": "After *preferiría que*, the verb takes the *-ra* form: *fuéramos*."
+    },
+    {
+      "prompt": "Type in Spanish: I'd rather stay at home tonight.",
+      "answer": "Preferiría quedarme en casa esta noche.",
+      "accept": [
+        "Preferiría quedarme esta noche en casa."
+      ],
+      "why": "You are the one staying, so there is no *que*: just the infinitive."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: I'd rather you didn't tell him anything.",
+      "answer": "Preferiría que no le contaras nada.",
+      "accept": [],
+      "why": "Someone else acts, so *que* and the *-ra* form: *contaras*."
+    },
+    {
+      "prompt": "Type in Spanish: I'd rather we decided it tomorrow.",
+      "answer": "Preferiría que lo decidiéramos mañana.",
+      "accept": [],
+      "why": "*Que* plus the *-ra* form for \"we\": *decidiéramos*."
+    },
+    {
+      "prompt": "Type in Spanish, asking a friend: Would you rather I called you later?",
+      "answer": "¿Preferirías que te llamara más tarde?",
+      "accept": [],
+      "why": "*Preferirías* is the *tú* version, and *llamara* is the *-ra* form for \"I\"."
+    },
+    {
+      "prompt": "Make it about Vale: *Preferiría que no cambiáramos la receta.* Say: I'd rather Vale didn't change the recipe.",
+      "answer": "Preferiría que Vale no cambiara la receta.",
+      "accept": [],
+      "why": "Vale is one person, so *cambiara* instead of *cambiáramos*."
+    },
+    {
+      "prompt": "Make it about yourself: *Preferiría que fuéramos mañana.* Say: I'd rather go tomorrow.",
+      "answer": "Preferiría ir mañana.",
+      "accept": [],
+      "why": "When you are the one acting, drop *que* and use the infinitive."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Preferiría que fuimos a otro sitio.",
+      "right": "Preferiría que fuéramos a otro sitio.",
+      "why": "Almost. After *preferiría que* you need the *-ra* form, *fuéramos*, not the plain past."
+    },
+    {
+      "wrong": "Preferiría que quedarme en casa.",
+      "right": "Preferiría quedarme en casa.",
+      "why": "Almost. When you are the one doing it, there is no *que*: just the infinitive."
+    },
+    {
+      "wrong": "Yo prefiero que fuéramos a otro sitio.",
+      "right": "Yo preferiría que fuéramos a otro sitio.",
+      "why": "Almost. The soft \"I'd rather\" is *preferiría*; plain *prefiero* does not go with the *-ra* form."
+    }
+  ],
+  "personal": "Say what you would rather do this weekend, or what you would rather a friend did, starting with *Preferiría…*"
+}

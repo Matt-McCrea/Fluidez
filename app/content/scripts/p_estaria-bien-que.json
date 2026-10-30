@@ -1,0 +1,175 @@
+{
+  "node": "p:estaria-bien-que",
+  "hook": {
+    "line": "You want to nudge someone without giving an order. Spanish has a soft way to say \"it would be good if…\" and \"what if…\", and it works on friends, family and business partners alike.",
+    "es": "Estaría bien que vinieras a la audiencia.",
+    "en": "It would be good if you came to the hearing. (to a friend)"
+  },
+  "examples": [
+    {
+      "es": "Estaría bien que saliéramos un día con Vale.",
+      "en": "It would be nice if we went out with Vale some day."
+    },
+    {
+      "es": "¿Y si fuéramos este año a la costa?",
+      "en": "What if we went to the coast this year?"
+    },
+    {
+      "es": "No estaría mal que llamaras a tu abuela.",
+      "en": "It wouldn't be a bad idea for you to call your grandmother. (to a friend)"
+    },
+    {
+      "es": "Estaría bien que Tomás hablara con el dueño.",
+      "en": "It would be good if Tomás spoke to the owner."
+    },
+    {
+      "es": "¿Y si abriéramos más temprano los sábados?",
+      "en": "What if we opened earlier on Saturdays?"
+    },
+    {
+      "es": "No estaría mal que cambiáramos el menú.",
+      "en": "It wouldn't be a bad idea for us to change the menu."
+    }
+  ],
+  "rule": "To suggest something gently, start with *Estaría bien que* (\"it would be good if\") and put the next verb in the *-ra* form: *saliéramos*, *llamaras*, *hablara*. English does the same thing with \"if we went\".\n\n*No estaría mal que* means almost the same, and sounds a little more modest.\n\nFor a quick \"what if\", use *¿Y si…?* with the same *-ra* form.\n\nHere the *-ra* form is not about the past. It just turns an order into a possibility. If nobody in particular acts, skip *que*: *Estaría bien salir*.",
+  "smallPrint": "Teachers call the *-ra* form the imperfect subjunctive, and *estaría* the conditional of *estar*.",
+  "readAndPick": [
+    {
+      "es": "Estaría bien que saliéramos un día con Vale.",
+      "options": [
+        "It was nice that we went out with Vale.",
+        "It would be nice if we went out with Vale some day.",
+        "It is nice that we go out with Vale."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Y si fuéramos este año a la costa?",
+      "options": [
+        "What if we went to the coast this year?",
+        "Did we go to the coast this year?",
+        "We should have gone to the coast this year."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No estaría mal que llamaras a tu abuela.",
+      "options": [
+        "It would be a bad idea for you to call your grandmother.",
+        "You didn't call your grandmother, and that's bad.",
+        "It wouldn't be a bad idea for you to call your grandmother."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Estaría bien que Tomás hablara con el dueño.",
+      "options": [
+        "It would be good if Tomás spoke to the owner.",
+        "Tomás speaks to the owner, which is good.",
+        "It was good that Tomás spoke to the owner."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Y si abriéramos más temprano los sábados?",
+      "options": [
+        "We opened earlier on Saturdays.",
+        "What if we opened earlier on Saturdays?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No estaría mal que cambiáramos el menú.",
+      "options": [
+        "It would be a bad idea for us to change the menu.",
+        "It wouldn't be a bad idea for us to change the menu.",
+        "We didn't change the menu, and that's not bad."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Estaría bien que vinieras a la audiencia.",
+      "options": [
+        "It would be good if I came to the hearing.",
+        "It would be good if they came to the hearing.",
+        "It would be good if you came to the hearing. (to a friend)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Estaría bien que me ayudaras con las cuentas.",
+      "options": [
+        "It would be good if I helped you with the accounts.",
+        "It would be good if you helped me with the accounts. (to a friend)",
+        "It would be good if she helped me with the accounts."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the right form and type the whole sentence: *Estaría bien que ___ un día con Vale.* (*saliéramos* or *salimos*)",
+      "answer": "Estaría bien que saliéramos un día con Vale.",
+      "accept": [],
+      "why": "After *estaría bien que*, the verb takes the *-ra* form: *saliéramos*."
+    },
+    {
+      "prompt": "Type in Spanish: What if we went to the coast this year?",
+      "answer": "¿Y si fuéramos este año a la costa?",
+      "accept": [
+        "¿Y si fuéramos a la costa este año?"
+      ],
+      "why": "*¿Y si…?* takes the same *-ra* form: *fuéramos*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: It wouldn't be a bad idea for you to call your grandmother.",
+      "answer": "No estaría mal que llamaras a tu abuela.",
+      "accept": [],
+      "why": "*No estaría mal que* plus the *-ra* form: *llamaras* is the *tú* version."
+    },
+    {
+      "prompt": "Type in Spanish: It would be good if Tomás spoke to the owner.",
+      "answer": "Estaría bien que Tomás hablara con el dueño.",
+      "accept": [
+        "Estaría bien que hablara Tomás con el dueño."
+      ],
+      "why": "Someone else acts, so *que* and the *-ra* form: *hablara*."
+    },
+    {
+      "prompt": "Make it a \"what if\" question: *Abrimos más temprano los sábados.* Say: What if we opened earlier on Saturdays?",
+      "answer": "¿Y si abriéramos más temprano los sábados?",
+      "accept": [],
+      "why": "Start with *¿Y si…?* and switch *abrimos* to *abriéramos*."
+    },
+    {
+      "prompt": "Turn it around: *Estaría bien que cambiáramos el menú.* Say: It wouldn't be a bad idea for us to change the menu.",
+      "answer": "No estaría mal que cambiáramos el menú.",
+      "accept": [],
+      "why": "Swap *estaría bien* for *no estaría mal*; the *-ra* verb stays."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: It would be good if you came to the hearing.",
+      "answer": "Estaría bien que vinieras a la audiencia.",
+      "accept": [],
+      "why": "*Vinieras* is the *-ra* form for *tú*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Estaría bien que salimos un día con Vale.",
+      "right": "Estaría bien que saliéramos un día con Vale.",
+      "why": "Almost. After *estaría bien que* the next verb takes the *-ra* form, like English \"if we went\"."
+    },
+    {
+      "wrong": "Estaría bien de que saliéramos un día con Vale.",
+      "right": "Estaría bien que saliéramos un día con Vale.",
+      "why": "Almost. *Que* comes straight after *bien*; there is no *de* in between."
+    },
+    {
+      "wrong": "Sería bien que saliéramos un día con Vale.",
+      "right": "Estaría bien que saliéramos un día con Vale.",
+      "why": "Almost. The set phrase uses *estar*: *estaría bien*, not *sería bien*."
+    }
+  ],
+  "personal": "Suggest something gentle to a friend or someone at home, starting with *Estaría bien que…* and an *-ra* verb."
+}

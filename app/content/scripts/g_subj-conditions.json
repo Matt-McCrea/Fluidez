@@ -1,0 +1,184 @@
+{
+  "node": "g:subj-conditions",
+  "hook": {
+    "line": "Every deal has a catch: \"I'll sign, as long as they let us stay.\" Conditions like this are how you bargain and how you protect yourself, and Tomás is about to need them at the hearing.",
+    "es": "Firmo con tal de que nos dejen quedarnos.",
+    "en": "I'll sign as long as they let us stay."
+  },
+  "examples": [
+    {
+      "es": "Firmo con tal de que nos dejen quedarnos.",
+      "en": "I'll sign as long as they let us stay."
+    },
+    {
+      "es": "Te llamo en caso de que haya algún problema.",
+      "en": "I'll call you in case there's a problem. (to a friend)"
+    },
+    {
+      "es": "Te presto el carro con tal de que lo cuides.",
+      "en": "I'll lend you the car as long as you take care of it. (to a friend)"
+    },
+    {
+      "es": "En caso de que llueva, la reunión es adentro.",
+      "en": "In case it rains, the meeting is inside."
+    },
+    {
+      "es": "Vale viene con tal de que no sea muy tarde.",
+      "en": "Vale is coming as long as it isn't too late."
+    },
+    {
+      "es": "Cierro con llave en caso de que alguien entre.",
+      "en": "I lock up in case someone comes in."
+    }
+  ],
+  "rule": "Some little phrases set a condition or a precaution:\n*con tal de que*: as long as, provided that\n*en caso de que*: in case\n*a menos que*: unless\n*siempre que*: as long as\n\nThe verb right after them takes the \"wish\" form: *dejen*, *haya*, *cuides*, *llueva*, *sea*. The thing is only a possibility, not a fact yet. English leaves the verb alone (\"as long as it isn't late\"), but Spanish marks it.\n\nCompare plain *si*: *Firmo si me dan una copia* keeps the ordinary verb. With these four phrases, use the wish form, and never *-ría*.",
+  "smallPrint": "Teachers call these connectors conditional conjunctions. They always take the subjunctive.",
+  "readAndPick": [
+    {
+      "es": "Firmo con tal de que nos dejen quedarnos.",
+      "options": [
+        "I'll sign as long as they let us stay.",
+        "I'll sign in case they let us stay.",
+        "I'll sign because they let us stay."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Te llamo en caso de que haya algún problema.",
+      "options": [
+        "I'll call you as long as there's a problem.",
+        "I called you because there was a problem.",
+        "I'll call you in case there's a problem."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Te presto el carro con tal de que lo cuides.",
+      "options": [
+        "I'll lend you the car in case you take care of it.",
+        "I'll lend you the car as long as you take care of it.",
+        "I lend you the car because you take care of it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "En caso de que llueva, la reunión es adentro.",
+      "options": [
+        "In case it rains, the meeting is inside.",
+        "Since it rained, the meeting is inside.",
+        "As long as it rains, the meeting is inside."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale viene con tal de que no sea muy tarde.",
+      "options": [
+        "Vale is coming in case it isn't too late.",
+        "Vale is coming as long as it isn't too late.",
+        "Vale is coming because it isn't too late."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cierro con llave en caso de que alguien entre.",
+      "options": [
+        "I lock up because someone came in.",
+        "I lock up as long as someone comes in.",
+        "I lock up in case someone comes in."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Firmo si me dan una copia.",
+      "options": [
+        "I'll sign if they give me a copy.",
+        "I'll sign in case they give me a copy."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ustedes pueden quedarse con tal de que no hagan ruido.",
+      "options": [
+        "You all stayed because you didn't make noise.",
+        "You all can stay as long as you don't make noise.",
+        "You all can stay in case you don't make noise."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the right verb and type the whole sentence: *Te presto el carro con tal de que lo ___.* (*cuides* or *cuidas*)",
+      "answer": "Te presto el carro con tal de que lo cuides.",
+      "accept": [],
+      "why": "After *con tal de que*, the verb takes the wish form: *cuides*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: I'll call you in case there's a problem.",
+      "answer": "Te llamo en caso de que haya algún problema.",
+      "accept": [
+        "En caso de que haya algún problema, te llamo."
+      ],
+      "why": "*En caso de que* is \"in case\", and *haya* is the wish form of *hay*."
+    },
+    {
+      "prompt": "Type in Spanish: I'll sign as long as they let us stay.",
+      "answer": "Firmo con tal de que nos dejen quedarnos.",
+      "accept": [
+        "Con tal de que nos dejen quedarnos, firmo."
+      ],
+      "why": "*Con tal de que* means \"as long as\"; *dejen* is the wish form."
+    },
+    {
+      "prompt": "Type in Spanish: In case it rains, the meeting is inside.",
+      "answer": "En caso de que llueva, la reunión es adentro.",
+      "accept": [
+        "La reunión es adentro en caso de que llueva."
+      ],
+      "why": "The connector comes first, then the wish form *llueva*."
+    },
+    {
+      "prompt": "Type in Spanish: Vale is coming as long as it isn't too late.",
+      "answer": "Vale viene con tal de que no sea muy tarde.",
+      "accept": [],
+      "why": "*Sea* is the wish form of *ser*."
+    },
+    {
+      "prompt": "Change the idea: *Cierro con llave.* Say: I lock up in case someone comes in.",
+      "answer": "Cierro con llave en caso de que alguien entre.",
+      "accept": [],
+      "why": "Add *en caso de que* and the wish form *entre*."
+    },
+    {
+      "prompt": "Say it to a group: *Puedes quedarte con tal de que no hagas ruido.* Say: You all can stay as long as you don't make noise.",
+      "answer": "Ustedes pueden quedarse con tal de que no hagan ruido.",
+      "accept": [
+        "Pueden quedarse con tal de que no hagan ruido."
+      ],
+      "why": "Switch to *ustedes*: *pueden* and the wish form *hagan*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Firmo con tal de que nos dejan quedarnos.",
+      "right": "Firmo con tal de que nos dejen quedarnos.",
+      "why": "Almost. After *con tal de que* the verb takes the wish form: *dejen*, not *dejan*."
+    },
+    {
+      "wrong": "En caso de que llovería, la reunión es adentro.",
+      "right": "En caso de que llueva, la reunión es adentro.",
+      "why": "Almost. Do not use *-ría* here: after *en caso de que* use the wish form, *llueva*."
+    },
+    {
+      "wrong": "Firmo con tal de nos dejen quedarnos.",
+      "right": "Firmo con tal de que nos dejen quedarnos.",
+      "why": "Almost. The connector is the whole phrase *con tal de que*, so keep the *que*."
+    },
+    {
+      "wrong": "Te llamo en caso de que hay algún problema.",
+      "right": "Te llamo en caso de que haya algún problema.",
+      "why": "Almost. *Hay* is the plain form; after *en caso de que* you need the wish form, *haya*."
+    }
+  ],
+  "personal": "Set a condition for something you would agree to, starting with *Voy con tal de que…*, or a precaution starting with *Llevo… en caso de que…*"
+}

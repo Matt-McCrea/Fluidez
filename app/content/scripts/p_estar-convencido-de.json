@@ -1,0 +1,180 @@
+{
+  "node": "p:estar-convencido-de",
+  "hook": {
+    "line": "At a hearing, doubt does not win arguments. Saying how sure you are, and how sure you are not, is half of persuading anyone.",
+    "es": "Estamos convencidos de que vamos a ganar.",
+    "en": "We're convinced we're going to win."
+  },
+  "examples": [
+    {
+      "es": "Estoy convencido de que dice la verdad.",
+      "en": "I'm convinced she's telling the truth. (a man speaking)"
+    },
+    {
+      "es": "No estoy seguro de que sea buena idea.",
+      "en": "I'm not sure it's a good idea. (a man speaking)"
+    },
+    {
+      "es": "Estoy convencida de que el café tiene valor.",
+      "en": "I'm convinced the café has value. (a woman speaking)"
+    },
+    {
+      "es": "¿Estás seguro de que quieres vender?",
+      "en": "Are you sure you want to sell? (to a male friend)"
+    },
+    {
+      "es": "No estoy convencida de que Altamira cumpla.",
+      "en": "I'm not convinced Altamira will comply. (a woman speaking)"
+    },
+    {
+      "es": "Estoy seguro de mi decisión.",
+      "en": "I'm sure of my decision. (a man speaking)"
+    }
+  ],
+  "rule": "*Estoy convencido de que…* and *Estoy seguro de que…* mean \"I'm convinced / sure that…\". Notice three things.\n\nFirst, the *de* stays before *que*.\nSecond, the ending follows the speaker: *convencido* (a man), *convencida* (a woman), *convencidos* (we).\nThird, certainty keeps the ordinary verb (*dice*, *tiene*), while doubt switches to the wish form: *No estoy seguro de que sea…*\n\nBefore a noun, drop *que*: *seguro de mi decisión*.",
+  "smallPrint": "Teachers call the missing-*de* slip (*seguro que*) *queísmo*.",
+  "readAndPick": [
+    {
+      "es": "Estoy convencido de que dice la verdad.",
+      "options": [
+        "I'm convinced she's telling the truth.",
+        "I'm not sure she's telling the truth.",
+        "I doubt she's telling the truth."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No estoy seguro de que sea buena idea.",
+      "options": [
+        "I'm sure it's a good idea.",
+        "I'm sure it's not a good idea.",
+        "I'm not sure it's a good idea."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Estoy seguro de mi decisión.",
+      "options": [
+        "I'm not sure of my decision.",
+        "I'm sure of my decision.",
+        "I'm sure about their decision."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Estás seguro de que quieres vender?",
+      "options": [
+        "Am I sure I want to sell?",
+        "Do you want to sell?",
+        "Are you sure you want to sell?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No estoy convencida de que Altamira cumpla.",
+      "options": [
+        "I'm convinced Altamira will comply.",
+        "I'm not convinced Altamira will comply.",
+        "I'm not convinced we will comply."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Estoy convencida de que el café tiene valor.",
+      "options": [
+        "I'm convinced the café has value.",
+        "I'm not convinced the café has value.",
+        "The café is convinced it has value."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estamos convencidos de que vamos a ganar.",
+      "options": [
+        "I'm convinced we'll win.",
+        "We're convinced we'll win.",
+        "They're convinced they'll win."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No estoy seguro de que venga.",
+      "options": [
+        "I'm sure he'll come.",
+        "He's not sure I'll come.",
+        "I'm not sure he'll come."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the right verb and type the whole sentence: *No estoy seguro de que ___ buena idea.* (*sea* or *es*)",
+      "answer": "No estoy seguro de que sea buena idea.",
+      "accept": [],
+      "why": "Doubt switches the verb to the wish form: *sea*."
+    },
+    {
+      "prompt": "Type in Spanish (a man speaking): I'm convinced she's telling the truth.",
+      "answer": "Estoy convencido de que dice la verdad.",
+      "accept": [
+        "Estoy seguro de que dice la verdad."
+      ],
+      "why": "Certainty keeps the ordinary verb: *dice*."
+    },
+    {
+      "prompt": "Type in Spanish (a woman speaking): I'm convinced the café has value.",
+      "answer": "Estoy convencida de que el café tiene valor.",
+      "accept": [
+        "Estoy segura de que el café tiene valor."
+      ],
+      "why": "A woman speaking uses *convencida*."
+    },
+    {
+      "prompt": "Type in Spanish, to a male friend: Are you sure you want to sell?",
+      "answer": "¿Estás seguro de que quieres vender?",
+      "accept": [
+        "¿Estás convencido de que quieres vender?"
+      ],
+      "why": "Keep the *de* before *que*."
+    },
+    {
+      "prompt": "Type in Spanish: We're convinced we're going to win.",
+      "answer": "Estamos convencidos de que vamos a ganar.",
+      "accept": [
+        "Estamos seguros de que vamos a ganar."
+      ],
+      "why": "\"We\" takes *estamos convencidos*."
+    },
+    {
+      "prompt": "Turn certainty into doubt: *Estoy convencida de que Altamira cumple.* Say (a woman speaking): I'm not convinced Altamira will comply.",
+      "answer": "No estoy convencida de que Altamira cumpla.",
+      "accept": [],
+      "why": "Add *no* and switch *cumple* to the wish form *cumpla*."
+    },
+    {
+      "prompt": "Use a noun instead: *Estoy seguro de que mi decisión es buena.* Say (a man speaking): I'm sure of my decision.",
+      "answer": "Estoy seguro de mi decisión.",
+      "accept": [],
+      "why": "Before a noun there is no *que*: *seguro de mi decisión*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Estoy seguro que es verdad.",
+      "right": "Estoy seguro de que es verdad.",
+      "why": "Almost. Keep the *de* before *que*; leaving it out is a common slip."
+    },
+    {
+      "wrong": "No estoy seguro de que es buena idea.",
+      "right": "No estoy seguro de que sea buena idea.",
+      "why": "Almost. When you are not sure, the verb after *que* takes the wish form: *sea*."
+    },
+    {
+      "wrong": "Soy convencido de que dice la verdad.",
+      "right": "Estoy convencido de que dice la verdad.",
+      "why": "Almost. Being convinced uses *estar*, not *ser*."
+    }
+  ],
+  "personal": "Say something you are convinced of about your city or a café, then something you are not sure about, using *Estoy convencido/a de que…* and *No estoy seguro/a de que…*"
+}

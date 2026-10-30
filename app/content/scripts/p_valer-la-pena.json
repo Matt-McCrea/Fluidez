@@ -1,0 +1,172 @@
+{
+  "node": "p:valer-la-pena",
+  "hook": {
+    "line": "\"Is it worth it?\" sits behind every argument, and Tomás will hear it all through the hearing. Spanish says it with *valer la pena*, and only the verb moves.",
+    "es": "¿Vale la pena ir a la audiencia?",
+    "en": "Is it worth going to the hearing?"
+  },
+  "examples": [
+    {
+      "es": "No vale la pena discutir por esto.",
+      "en": "It's not worth arguing about this."
+    },
+    {
+      "es": "Vale la pena que lo pienses bien.",
+      "en": "It's worth you thinking it over carefully. (to a friend)"
+    },
+    {
+      "es": "El viaje valió la pena.",
+      "en": "The trip was worth it."
+    },
+    {
+      "es": "¿Vale la pena ir a la audiencia?",
+      "en": "Is it worth going to the hearing?"
+    },
+    {
+      "es": "Vale la pena visitar la Candelaria.",
+      "en": "It's worth visiting La Candelaria."
+    },
+    {
+      "es": "No vale la pena que te preocupes.",
+      "en": "It's not worth you worrying. (to a friend)"
+    }
+  ],
+  "rule": "*Vale la pena* means \"it's worth it\". Only *valer* changes: *vale* now, *valió* for something finished, *valía* for how it was. *La pena* stays put.\n\nTo say what is worth doing in general, use an infinitive: *Vale la pena visitar la Candelaria*.\n\nTo say who it is worth for, use *que* and the wish form: *Vale la pena que lo pienses bien*.\n\nOn its own it works too: *Sí, vale la pena.*",
+  "smallPrint": "Teachers call this an expression of evaluation. *La pena* here means \"the effort\", not \"sorrow\".",
+  "readAndPick": [
+    {
+      "es": "No vale la pena discutir por esto.",
+      "options": [
+        "It's worth arguing about this.",
+        "It's not worth arguing about this.",
+        "It wasn't worth arguing about this."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El viaje valió la pena.",
+      "options": [
+        "The trip is worth it.",
+        "The trip wasn't worth it.",
+        "The trip was worth it."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Vale la pena que lo pienses bien.",
+      "options": [
+        "It's worth you thinking it over carefully.",
+        "It's not worth you thinking it over carefully.",
+        "It was worth thinking it over carefully."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Vale la pena ir a la audiencia?",
+      "options": [
+        "Did you go to the hearing?",
+        "Was it worth going to the hearing?",
+        "Is it worth going to the hearing?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Valió la pena esperar.",
+      "options": [
+        "It was worth waiting.",
+        "It's worth waiting.",
+        "It wasn't worth waiting."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No vale la pena que te preocupes.",
+      "options": [
+        "It's worth you worrying.",
+        "It's not worth you worrying.",
+        "It wasn't worth you worrying."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No valía la pena discutir con él.",
+      "options": [
+        "It's not worth arguing with him.",
+        "It was worth arguing with him.",
+        "It wasn't worth arguing with him."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Vale la pena visitar la Candelaria.",
+      "options": [
+        "It's not worth visiting La Candelaria.",
+        "It was worth visiting La Candelaria.",
+        "It's worth visiting La Candelaria."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the right verb and type the whole sentence: *El viaje ___ la pena.* (*valió* or *vale*)",
+      "answer": "El viaje valió la pena.",
+      "accept": [],
+      "why": "The trip is over, so use *valió*."
+    },
+    {
+      "prompt": "Type in Spanish: It's not worth arguing about this.",
+      "answer": "No vale la pena discutir por esto.",
+      "accept": [],
+      "why": "Put *no* before *vale*, then an infinitive."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: It's worth you thinking it over carefully.",
+      "answer": "Vale la pena que lo pienses bien.",
+      "accept": [],
+      "why": "When it matters who does it, use *que* and the wish form: *pienses*."
+    },
+    {
+      "prompt": "Type in Spanish: Is it worth going to the hearing?",
+      "answer": "¿Vale la pena ir a la audiencia?",
+      "accept": [],
+      "why": "The same words work as a question; just add the question marks."
+    },
+    {
+      "prompt": "Type in Spanish: It's worth visiting La Candelaria.",
+      "answer": "Vale la pena visitar la Candelaria.",
+      "accept": [],
+      "why": "A general \"doing\" is an infinitive: *visitar*."
+    },
+    {
+      "prompt": "Make it negative: *Vale la pena que te preocupes.* Say, to a friend: It's not worth you worrying.",
+      "answer": "No vale la pena que te preocupes.",
+      "accept": [],
+      "why": "Add *no* in front of *vale*."
+    },
+    {
+      "prompt": "Put it in the past: *Vale la pena esperar.* Say: It was worth waiting.",
+      "answer": "Valió la pena esperar.",
+      "accept": [],
+      "why": "A finished event takes *valió*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No vale pena discutir por esto.",
+      "right": "No vale la pena discutir por esto.",
+      "why": "Almost. Keep the *la*: the whole phrase is *vale la pena*."
+    },
+    {
+      "wrong": "No vale la pena de discutir por esto.",
+      "right": "No vale la pena discutir por esto.",
+      "why": "Almost. The infinitive follows directly; Spanish has no *de* here."
+    },
+    {
+      "wrong": "Vale la pena que lo piensas bien.",
+      "right": "Vale la pena que lo pienses bien.",
+      "why": "Almost. After *vale la pena que* the verb takes the wish form: *pienses*."
+    }
+  ],
+  "personal": "Say one thing that is worth it for you in Bogotá, or one that wasn't, starting with *Vale la pena…* or *No valió la pena…*"
+}
