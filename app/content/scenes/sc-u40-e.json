@@ -1,0 +1,248 @@
+{
+  "id": "sc-u40-e",
+  "unit": "u40",
+  "title": "Una llamada de Bogotá",
+  "brief": "You're Tomás on the phone from the coast with Don Hernando, who is back in Bogotá looking after the café and Simón. He is older and courtly, so use usted all the way through.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Hernando: Buenas noches, Tomás. ¿Llegaron bien? Simón pregunta por ustedes, grita sus nombres todo el día.",
+      "npcEn": "Hernando: Good evening, Tomás. Did you arrive well? Simón asks for you all, he shouts your names all day.",
+      "intent": "Say yes, you arrived well, and ask how Simón is.",
+      "accept": [
+        "Sí, llegamos bien, Don Hernando. ¿Cómo está Simón?",
+        "Buenas noches, Don Hernando. Llegamos bien. ¿Y cómo está Simón?",
+        "Todo bien, gracias. ¿Cómo está Simón con usted?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask a question"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "g:imperfect-subj",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Hernando: Está bien, aunque extraña a Rosa. Si yo tuviera cuarenta años menos, estaría ahí con ustedes, en la playa.",
+      "npcEn": "Hernando: He's fine, although he misses Rosa. If I were forty years younger, I'd be there with you all, on the beach.",
+      "intent": "Say that if he were there, you would show him the sea.",
+      "accept": [
+        "Si usted estuviera aquí, le mostraría el mar.",
+        "Si estuviera aquí, Don Hernando, le mostraría el mar.",
+        "Le mostraría el mar si usted estuviera con nosotros."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsi\\b(?:\\s+\\p{L}+){0,3}?\\s+(?:(?!para\\b|cara\\b|clara\\b|rara\\b)\\p{L}+(?:ara|aras|áramos|aran|iera|ieras|iéramos|ieran)|fuera|fueras|fuéramos|fueran)\\b",
+          "flags": "iu",
+          "label": "start the 'if' part with si + the past form (si tuviera, si fuera)"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\b\\p{L}+r(?:ía|ías|íamos|ían)\\b",
+          "flags": "iu",
+          "label": "say what you would do: the -ría form (iría, haría)"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "g:si-hypothetical",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Hernando: Qué amable. Dígame una cosa: el doctor dice que no debo viajar. ¿Usted qué haría en mi lugar?",
+      "npcEn": "Hernando: How kind. Tell me something: the doctor says I shouldn't travel. What would you do in my place?",
+      "intent": "Say that if you were him, you would rest and wait.",
+      "accept": [
+        "Si yo fuera usted, descansaría y esperaría.",
+        "Si fuera usted, descansaría un poco.",
+        "Yo descansaría, si fuera usted."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsi\\b(?:\\s+\\p{L}+){0,3}?\\s+(?:(?!para\\b|cara\\b|clara\\b|rara\\b)\\p{L}+(?:ara|aras|áramos|aran|iera|ieras|iéramos|ieran)|fuera|fueras|fuéramos|fueran)\\b",
+          "flags": "iu",
+          "label": "start the 'if' part with si + the past form (si tuviera, si fuera)"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\b\\p{L}+r(?:ía|ías|íamos|ían)\\b",
+          "flags": "iu",
+          "label": "say what you would do: the -ría form (iría, haría)"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "g:si-hypothetical",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Hernando: Tiene razón. Pero ya hablo como un viejo cansado, ¿no cree?",
+      "npcEn": "Hernando: You're right. But I already talk like a tired old man, don't you think?",
+      "intent": "Disagree politely: say he talks as if he were thirty years old.",
+      "accept": [
+        "No, usted habla como si tuviera treinta años.",
+        "Para nada, Don Hernando. Habla como si tuviera treinta años.",
+        "No lo creo. Usted habla como si fuera joven."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcomo si\\b(?:\\s+\\p{L}+){0,3}?\\s+(?:(?!para\\b|cara\\b|clara\\b|rara\\b)\\p{L}+(?:ara|aras|áramos|aran|iera|ieras|iéramos|ieran)|fuera|fueras|fuéramos|fueran)\\b",
+          "flags": "iu",
+          "label": "use como si + the past form (como si fuera)"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "g:como-si",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Hernando: Gracias, joven. Cuídense mucho y tráigame algo del mar.",
+      "npcEn": "Hernando: Thank you, young man. Take care, all of you, and bring me something from the sea.",
+      "intent": "Promise to bring him a coconut, and say goodnight.",
+      "accept": [
+        "Le traeré un coco, Don Hernando. Buenas noches.",
+        "Claro que sí, le traeré un coco. Que descanse, buenas noches.",
+        "Le traeré un coco de la playa. Buenas noches, Don Hernando."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcocos?\\b",
+          "flags": "iu",
+          "label": "promise a coco"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "g:future",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:como-estas",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:muy-amable",
+    "c:para-nada",
+    "c:tienes",
+    "c:ya-llegue",
+    "g:aunque-indicative",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:como-si",
+    "g:conditional",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:si-hypothetical",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:tener-que-hay-que",
+    "g:that-clauses",
+    "l:ahí",
+    "l:amable",
+    "l:aquí",
+    "l:año",
+    "l:bien",
+    "l:buena",
+    "l:cansado",
+    "l:claro",
+    "l:coco",
+    "l:cosa",
+    "l:creer",
+    "l:cuidarse",
+    "l:cómo",
+    "l:deber",
+    "l:decir",
+    "l:descansar",
+    "l:doctor",
+    "l:día",
+    "l:esperar",
+    "l:estar",
+    "l:extrañar",
+    "l:gritar",
+    "l:hablar",
+    "l:hacer",
+    "l:joven",
+    "l:llegar",
+    "l:lugar",
+    "l:mar",
+    "l:mostrar",
+    "l:noche",
+    "l:nombre",
+    "l:playa",
+    "l:preguntar",
+    "l:qué",
+    "l:razón",
+    "l:ser",
+    "l:tener",
+    "l:traer",
+    "l:viajar",
+    "l:viejo",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:don-dona-nombre",
+    "p:es-tiene-lleva",
+    "p:extranar",
+    "p:indefinites-basic",
+    "p:llevar-traer",
+    "p:lo-mejor-seria-que",
+    "p:me-te-nos-objects",
+    "p:personal-a",
+    "p:poco-un-poco",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:que-subj-deseo",
+    "p:question-word-order",
+    "p:senor-don-article",
+    "p:tener-anos",
+    "p:tener-razon",
+    "p:todos-los-dias",
+    "p:viejo-antiguo-mayor"
+  ]
+}

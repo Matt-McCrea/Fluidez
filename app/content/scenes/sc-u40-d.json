@@ -1,0 +1,234 @@
+{
+  "id": "sc-u40-d",
+  "unit": "u40",
+  "title": "Para la columna",
+  "brief": "You're Tomás on a bench by the sea. Mariana, a journalist, is recording a short interview for her column. Answer as yourself, in a relaxed way. She's a friend, so use tú.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Mariana: Grabo, ¿sí? Primera pregunta: ¿a cuántos grados estamos hoy, más o menos?",
+      "npcEn": "Mariana: I'm recording, okay? First question: roughly how many degrees is it today?",
+      "intent": "Say it's about 35 degrees and that the humidity is terrible.",
+      "accept": [
+        "Estamos a unos 35 grados, y la humedad es terrible.",
+        "Más o menos a 35 grados. La humedad es horrible.",
+        "Hoy estamos a 35 grados y todo es muy húmedo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bgrados\\b",
+          "flags": "iu",
+          "label": "give the number of degrees"
+        }
+      ],
+      "focus": "p:estar-a-grados",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Mariana: Segunda: ¿con qué sueñas cuando estás tan lejos de Bogotá?",
+      "npcEn": "Mariana: Second: what do you dream of when you're so far from Bogotá?",
+      "intent": "Say you dream of opening a terrace at the café.",
+      "accept": [
+        "Sueño con abrir una terraza en el café.",
+        "Mi sueño es abrir una terraza en el café.",
+        "Sueño con una terraza para el café, con mesas al sol."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsue[ñn]o con\\b|\\bmi sueño es\\b",
+          "flags": "iu",
+          "label": "use: sueño con... / mi sueño es..."
+        }
+      ],
+      "focus": "p:sonar-con",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Mariana: Tercera: si pudieras cambiar una cosa de Bogotá, ¿cuál sería?",
+      "npcEn": "Mariana: Third: if you could change one thing about Bogotá, what would it be?",
+      "intent": "Say that if you could change one thing, you would change the traffic.",
+      "accept": [
+        "Si pudiera cambiar una cosa, cambiaría el tráfico.",
+        "Cambiaría el tráfico, si pudiera cambiar algo.",
+        "Si pudiera cambiar algo de Bogotá, cambiaría el tráfico."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsi\\b(?:\\s+\\p{L}+){0,3}?\\s+(?:(?!para\\b|cara\\b|clara\\b|rara\\b)\\p{L}+(?:ara|aras|áramos|aran|iera|ieras|iéramos|ieran)|fuera|fueras|fuéramos|fueran)\\b",
+          "flags": "iu",
+          "label": "start the 'if' part with si + the past form (si tuviera, si fuera)"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\b\\p{L}+r(?:ía|ías|íamos|ían)\\b",
+          "flags": "iu",
+          "label": "say what you would do: the -ría form (iría, haría)"
+        }
+      ],
+      "focus": "g:si-hypothetical",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Mariana: Perfecto. Oye, ¿y Vale? La vi pasar muy rápido hacia el hotel.",
+      "npcEn": "Mariana: Perfect. Hey, what about Vale? I saw her go by very fast towards the hotel.",
+      "intent": "Say you don't know, and that Vale always walks as if she were in a hurry.",
+      "accept": [
+        "No sé. Vale siempre camina como si tuviera prisa.",
+        "No tengo idea. Ella camina como si tuviera prisa todo el día.",
+        "Ni idea. Vale siempre va como si llegara tarde."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcomo si\\b(?:\\s+\\p{L}+){0,3}?\\s+(?:(?!para\\b|cara\\b|clara\\b|rara\\b)\\p{L}+(?:ara|aras|áramos|aran|iera|ieras|iéramos|ieran)|fuera|fueras|fuéramos|fueran)\\b",
+          "flags": "iu",
+          "label": "use como si + the past form (como si fuera)"
+        }
+      ],
+      "focus": "g:como-si",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Mariana: Bien. Apago la grabadora. ¿Quieres leer el texto antes de que la publique?",
+      "npcEn": "Mariana: Good. I'm turning off the recorder. Do you want to read the text before I publish it?",
+      "intent": "Say yes and politely ask whether she could send you the text tonight.",
+      "accept": [
+        "Sí, claro. ¿Podrías mandarme el texto esta noche?",
+        "Me encantaría. ¿Podrías mandarme el texto hoy?",
+        "Sí. ¿Podrías mandarme el texto antes de dormir?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask a question"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bpodr[ií]as\\b",
+          "flags": "iu",
+          "label": "ask politely: ¿podrías...?"
+        }
+      ],
+      "focus": "g:conditional",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:mas-o-menos",
+    "c:me-encantaria",
+    "c:ni-idea",
+    "c:no-se",
+    "c:oiga-oye",
+    "c:tengo",
+    "g:como-si",
+    "g:conditional",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-subj",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:ser-identity",
+    "g:si-hypothetical",
+    "g:stem-boot",
+    "g:subj-purpose-full",
+    "g:subj-wanting",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:abrir",
+    "l:antes",
+    "l:apagar",
+    "l:bien",
+    "l:café",
+    "l:cambiar",
+    "l:caminar",
+    "l:claro",
+    "l:cosa",
+    "l:cuál",
+    "l:cuánto",
+    "l:dormir",
+    "l:día",
+    "l:encantar",
+    "l:estar",
+    "l:grabadora",
+    "l:grabar",
+    "l:grado",
+    "l:horrible",
+    "l:hotel",
+    "l:hoy",
+    "l:humedad",
+    "l:húmedo",
+    "l:idea",
+    "l:ir",
+    "l:leer",
+    "l:lejos",
+    "l:llegar",
+    "l:mandar",
+    "l:mesa",
+    "l:noche",
+    "l:oír",
+    "l:pasar",
+    "l:perfecto",
+    "l:poder",
+    "l:pregunta",
+    "l:prisa",
+    "l:publicar",
+    "l:querer",
+    "l:qué",
+    "l:rápido",
+    "l:saber",
+    "l:ser",
+    "l:siempre",
+    "l:sol",
+    "l:soñar",
+    "l:sueño",
+    "l:tarde",
+    "l:tener",
+    "l:terraza",
+    "l:terrible",
+    "l:texto",
+    "l:tráfico",
+    "l:ver",
+    "p:aproximar-cifras",
+    "p:cerca-de",
+    "p:cuando-basic",
+    "p:demonstratives-basic",
+    "p:estar-a",
+    "p:estar-a-grados",
+    "p:frequency-scale",
+    "p:humedo-mojado",
+    "p:indefinites-basic",
+    "p:la-vi-salir",
+    "p:llegar-a-tiempo",
+    "p:me-te-nos-objects",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:para-inf",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:request-ladder",
+    "p:sonar-con",
+    "p:sonar-con-ganas",
+    "p:te-importaria",
+    "p:tendrias-que",
+    "p:tener-hambre",
+    "p:todos-los-dias",
+    "p:unos-approx"
+  ]
+}

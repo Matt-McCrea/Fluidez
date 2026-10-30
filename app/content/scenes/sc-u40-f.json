@@ -1,0 +1,256 @@
+{
+  "id": "sc-u40-f",
+  "unit": "u40",
+  "title": "Al amanecer en el muelle",
+  "brief": "You're Tomás at the dock in Taganga, asking an older fisherman, Eliécer, to take your group to see the turtles. Be polite and use usted. Ask what things would cost and what would happen if things changed.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Eliécer: Buenas, joven. ¿Busca algo? Aquí solo hay pescado y sol.",
+      "npcEn": "Eliécer: Hello, young man. Are you looking for something? Here there's only fish and sun.",
+      "intent": "Say hello and ask whether he would take you to see the turtles tomorrow.",
+      "accept": [
+        "Buenas. ¿Usted me llevaría a ver las tortugas mañana?",
+        "Buenos días. ¿Me llevaría a ver las tortugas mañana?",
+        "Buenas, señor. ¿Nos llevaría mañana a ver las tortugas?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask a question"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\btortugas?\\b",
+          "flags": "iu",
+          "label": "mention the turtles"
+        }
+      ],
+      "focus": "g:conditional",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Eliécer: Las tortugas salen temprano. Si el mar estuviera tranquilo, saldríamos hoy mismo.",
+      "npcEn": "Eliécer: The turtles come out early. If the sea were calm, we'd leave today.",
+      "intent": "Ask how much it would cost for three people.",
+      "accept": [
+        "¿Cuánto costaría para tres personas?",
+        "¿Cuánto cobraría usted por tres personas?",
+        "Y para tres personas, ¿cuánto costaría?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask a question"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bcostar[ií]a\\b|\\bcobrar[ií]a\\b|\\bcuesta\\b|\\bcobra\\b",
+          "flags": "iu",
+          "label": "ask about the price"
+        }
+      ],
+      "focus": "g:conditional",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Eliécer: Con el desayuno, cien mil pesos. Si fueran solo dos, ochenta mil.",
+      "npcEn": "Eliécer: With breakfast, one hundred thousand pesos. If it were only two, eighty thousand.",
+      "intent": "Say it's a bit expensive and ask whether he would lower the price if you were four.",
+      "accept": [
+        "Es un poco caro. ¿Bajaría el precio si fuéramos cuatro?",
+        "Es mucho. Si fuéramos cuatro, ¿bajaría el precio?",
+        "Es caro para nosotros. ¿Cobraría menos si fuéramos cuatro?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask a question"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bsi\\b(?:\\s+\\p{L}+){0,3}?\\s+(?:(?!para\\b|cara\\b|clara\\b|rara\\b)\\p{L}+(?:ara|aras|áramos|aran|iera|ieras|iéramos|ieran)|fuera|fueras|fuéramos|fueran)\\b",
+          "flags": "iu",
+          "label": "start the 'if' part with si + the past form (si tuviera, si fuera)"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\b\\p{L}+r(?:ía|ías|íamos|ían)\\b",
+          "flags": "iu",
+          "label": "say what you would do: the -ría form (iría, haría)"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "g:si-hypothetical",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Eliécer: Para cuatro, noventa mil. Mi hijo quiere ser guía, pero no sabe nadar, como si fuera de Bogotá.",
+      "npcEn": "Eliécer: For four, ninety thousand. My son wants to be a guide, but he can't swim, as if he were from Bogotá.",
+      "intent": "Laugh and say you don't swim very well either, so you hope the sea is calm tomorrow.",
+      "accept": [
+        "Yo tampoco nado muy bien. Ojalá el mar esté tranquilo mañana.",
+        "Ja, yo tampoco nado bien. Espero que el mar esté tranquilo.",
+        "A mí me pasa lo mismo, nado muy mal. Ojalá no haya muchas olas."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bnad[oa]\\w*\\b",
+          "flags": "iu",
+          "label": "say you don't swim well: nado"
+        }
+      ],
+      "focus": "g:subj-wishes",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Eliécer: Entonces mañana a las cinco, en el muelle. Y traiga una chaqueta, que temprano hay niebla.",
+      "npcEn": "Eliécer: Then tomorrow at five, at the dock. And bring a jacket, because early on there's fog.",
+      "intent": "Confirm tomorrow at five at the dock, thank him and say goodbye.",
+      "accept": [
+        "Perfecto, mañana a las cinco en el muelle. Muchas gracias, hasta mañana.",
+        "Listo, a las cinco en el muelle. Gracias, señor, hasta mañana.",
+        "De acuerdo, mañana a las cinco. Muchas gracias y hasta mañana."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcinco\\b",
+          "flags": "iu",
+          "label": "confirm the time: a las cinco"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "g:imperfect-subj",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-mi-me-pasa-lo-mismo",
+    "c:a-ver",
+    "c:alo",
+    "c:bien-y-tu",
+    "c:chao-nos-vemos",
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:ojala",
+    "c:tranquilo",
+    "g:commands-usted",
+    "g:como-si",
+    "g:conditional",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-subj",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:si-hypothetical",
+    "g:stem-boot",
+    "g:subj-irregulars",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "l:acuerdo",
+    "l:aquí",
+    "l:bajar",
+    "l:bien",
+    "l:buena",
+    "l:bueno",
+    "l:buscar",
+    "l:caro",
+    "l:chaqueta",
+    "l:cobrar",
+    "l:costar",
+    "l:cuánto",
+    "l:desayuno",
+    "l:día",
+    "l:esperar",
+    "l:estar",
+    "l:guiar",
+    "l:hijo",
+    "l:hoy",
+    "l:ja",
+    "l:joven",
+    "l:listo",
+    "l:llevar",
+    "l:llevarse",
+    "l:mal",
+    "l:mar",
+    "l:mañana",
+    "l:muelle",
+    "l:nadar",
+    "l:niebla",
+    "l:olas",
+    "l:pasar",
+    "l:perfecto",
+    "l:persona",
+    "l:pescado",
+    "l:peso",
+    "l:precio",
+    "l:querer",
+    "l:saber",
+    "l:salir",
+    "l:ser",
+    "l:señor",
+    "l:sol",
+    "l:temprano",
+    "l:tortuga",
+    "l:traer",
+    "l:tranquilo",
+    "l:ver",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cerca-de",
+    "p:costar-pagar",
+    "p:hedge-knowledge",
+    "p:indefinites-basic",
+    "p:llevar-traer",
+    "p:me-te-nos-objects",
+    "p:numbers-un-una",
+    "p:para-inf",
+    "p:poco-un-poco",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:saber-conocer",
+    "p:sobre-todo-solo",
+    "p:subir-subida",
+    "p:tambien-tampoco",
+    "p:telling-time"
+  ]
+}

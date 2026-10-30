@@ -1,0 +1,212 @@
+{
+  "id": "sc-u40-c",
+  "unit": "u40",
+  "title": "Tres cervezas",
+  "brief": "You're Tomás on the beach in Taganga at night, alone with Vale. The tourists have gone home and the sea is loud. Say what you imagine and what you would do. You and Vale are friends, so use tú.",
+  "spare": false,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Vale: Escucha el mar. Ya no hay turistas, ni motos, ni nada.",
+      "npcEn": "Vale: Listen to the sea. There are no tourists any more, no motorbikes, nothing.",
+      "intent": "Say it feels like another world, as if you were in another country.",
+      "accept": [
+        "Parece otro mundo, como si estuviéramos en otro país.",
+        "Es verdad. Se siente como si fuera otro país.",
+        "Qué paz. Es como si estuviéramos en otro mundo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcomo si\\b(?:\\s+\\p{L}+){0,3}?\\s+(?:(?!para\\b|cara\\b|clara\\b|rara\\b)\\p{L}+(?:ara|aras|áramos|aran|iera|ieras|iéramos|ieran)|fuera|fueras|fuéramos|fueran)\\b",
+          "flags": "iu",
+          "label": "use como si + the past form (como si fuera)"
+        }
+      ],
+      "focus": "g:como-si",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Vale: Oye, Tomás. Si no tuvieras el café, ¿dónde vivirías?",
+      "npcEn": "Vale: Hey, Tomás. If you didn't have the café, where would you live?",
+      "intent": "Say that if you didn't have the café, you would live here by the sea.",
+      "accept": [
+        "Si no tuviera el café, viviría aquí, junto al mar.",
+        "Viviría cerca del mar si no tuviera el café. Es mi sueño.",
+        "Si no tuviera el café, viviría en una casa en la playa."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsi\\b(?:\\s+\\p{L}+){0,3}?\\s+(?:(?!para\\b|cara\\b|clara\\b|rara\\b)\\p{L}+(?:ara|aras|áramos|aran|iera|ieras|iéramos|ieran)|fuera|fueras|fuéramos|fueran)\\b",
+          "flags": "iu",
+          "label": "start the 'if' part with si + the past form (si tuviera, si fuera)"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\b\\p{L}+r(?:ía|ías|íamos|ían)\\b",
+          "flags": "iu",
+          "label": "say what you would do: the -ría form (iría, haría)"
+        }
+      ],
+      "focus": "g:imperfect-subj",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Vale: Bonito. Pero si Altamira te ofreciera mucha plata por el café, ¿lo venderías?",
+      "npcEn": "Vale: Nice. But if Altamira offered you a lot of money for the café, would you sell it?",
+      "intent": "Say you would think about it, but you wouldn't sell the café to Altamira.",
+      "accept": [
+        "Lo pensaría, pero no vendería el café a Altamira.",
+        "No, nunca. No vendería el café a Altamira, ni con mucha plata.",
+        "Lo pensaría un momento, pero no lo vendería."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b\\p{L}+r(?:ía|ías|íamos|ían)\\b",
+          "flags": "iu",
+          "label": "say what you would do: the -ría form (iría, haría)"
+        },
+        {
+          "type": "negation",
+          "label": "say you wouldn't sell"
+        }
+      ],
+      "focus": "g:conditional",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Vale: Eres terco. Y estás muy callado. Estamos solos, el mar suena, y tú no dices nada. ¿Qué te pasa?",
+      "npcEn": "Vale: You're stubborn. And you're very quiet. We're alone, the sea is making noise, and you say nothing. What's wrong with you?",
+      "intent": "Admit that you feel as if you were fifteen years old.",
+      "accept": [
+        "Me siento como si tuviera quince años.",
+        "No sé. Estoy nervioso, como si tuviera quince años.",
+        "Es que me siento como si fuera un niño de quince años."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcomo si\\b(?:\\s+\\p{L}+){0,3}?\\s+(?:(?!para\\b|cara\\b|clara\\b|rara\\b)\\p{L}+(?:ara|aras|áramos|aran|iera|ieras|iéramos|ieran)|fuera|fueras|fuéramos|fueran)\\b",
+          "flags": "iu",
+          "label": "use como si + the past form (como si fuera)"
+        }
+      ],
+      "focus": "g:como-si",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Mariana: ¡Aquí están! Traje tres cervezas. ¿Hablaban de algo importante?",
+      "npcEn": "Mariana: There you are! I brought three beers. Were you talking about something important?",
+      "intent": "Say no, you were just talking about the sea, and thank her for the beers.",
+      "accept": [
+        "No, hablábamos del mar. Gracias por las cervezas.",
+        "Para nada, solo del mar. Muchas gracias, Mariana.",
+        "No, nada importante. Gracias por las cervezas."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bgracias\\b",
+          "flags": "iu",
+          "label": "say thanks"
+        }
+      ],
+      "focus": "g:imperfect-subj",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:es-que",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:no-se",
+    "c:oiga-oye",
+    "c:para-nada",
+    "c:te-pasa-algo",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:como-si",
+    "g:conditional",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-subj",
+    "g:negation-words",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:si-hypothetical",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:yo-irregular",
+    "l:aquí",
+    "l:año",
+    "l:bonito",
+    "l:café",
+    "l:callado",
+    "l:casa",
+    "l:cerca",
+    "l:cerveza",
+    "l:decir",
+    "l:dónde",
+    "l:escuchar",
+    "l:estar",
+    "l:hablar",
+    "l:importante",
+    "l:juntar",
+    "l:mar",
+    "l:momento",
+    "l:moto",
+    "l:mundo",
+    "l:nervioso",
+    "l:niño",
+    "l:ofrecer",
+    "l:oír",
+    "l:parecer",
+    "l:pasar",
+    "l:paz",
+    "l:país",
+    "l:pensar",
+    "l:plata",
+    "l:playa",
+    "l:qué",
+    "l:saber",
+    "l:sentirse",
+    "l:ser",
+    "l:sonar",
+    "l:sueño",
+    "l:tener",
+    "l:traer",
+    "l:turista",
+    "l:vender",
+    "l:verdad",
+    "l:vivir",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:frequency-scale",
+    "p:gracias-por",
+    "p:indefinites-basic",
+    "p:llevar-traer",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:posicion-precisa",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:sobre-todo-solo",
+    "p:tener-anos"
+  ]
+}

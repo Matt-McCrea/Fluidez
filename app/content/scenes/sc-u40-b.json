@@ -1,0 +1,235 @@
+{
+  "id": "sc-u40-b",
+  "unit": "u40",
+  "title": "Treinta y cuatro grados",
+  "brief": "You're Tomás on the hotel patio in Santa Marta at nine in the morning, already hot. Vale, who is quick and dry, is teasing you. Complain about the heat, imagine something better and make a deal. You and Vale are friends, so use tú.",
+  "spare": false,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Vale: Buenos días. Hoy estamos a 34 grados y todavía es temprano. ¿Cómo dormiste?",
+      "npcEn": "Vale: Good morning. It's 34 degrees today and it's still early. How did you sleep?",
+      "intent": "Say you slept badly because the climate here is very humid.",
+      "accept": [
+        "Mal. El clima aquí es muy húmedo.",
+        "Dormí mal, porque todo es muy húmedo y hace mucho calor.",
+        "Casi no dormí. La humedad es terrible."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(húmedo|húmeda|húmedos|húmedas|humedad)\\b",
+          "flags": "iu",
+          "label": "describe it: húmedo / la humedad"
+        }
+      ],
+      "focus": "p:humedo-mojado",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Vale: Mira a Mariana en la piscina, tranquila, como si estuviéramos en Bogotá.",
+      "npcEn": "Vale: Look at Mariana in the pool, relaxed, as if we were in Bogotá.",
+      "intent": "Say you feel as if you were in an oven.",
+      "accept": [
+        "Yo me siento como si estuviera en un horno.",
+        "Pues yo estoy como si estuviera dentro de un horno.",
+        "Yo siento como si viviera dentro de un horno."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcomo si\\b(?:\\s+\\p{L}+){0,3}?\\s+(?:(?!para\\b|cara\\b|clara\\b|rara\\b)\\p{L}+(?:ara|aras|áramos|aran|iera|ieras|iéramos|ieran)|fuera|fueras|fuéramos|fueran)\\b",
+          "flags": "iu",
+          "label": "use como si + the past form (como si fuera)"
+        }
+      ],
+      "focus": "g:como-si",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Vale: Qué dramático eres. Mariana quiere ir en barco a Taganga hoy, pero dicen que hay olas grandes. Tú decides.",
+      "npcEn": "Vale: How dramatic you are. Mariana wants to go to Taganga by boat today, but they say there are big waves. You decide.",
+      "intent": "Say that if you were her, you wouldn't go today.",
+      "accept": [
+        "Si fuera ella, no iría hoy.",
+        "Si yo fuera Mariana, no iría hoy con estas olas.",
+        "No iría hoy si fuera ella, con tantas olas."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsi\\b(?:\\s+\\p{L}+){0,3}?\\s+(?:(?!para\\b|cara\\b|clara\\b|rara\\b)\\p{L}+(?:ara|aras|áramos|aran|iera|ieras|iéramos|ieran)|fuera|fueras|fuéramos|fueran)\\b",
+          "flags": "iu",
+          "label": "start the 'if' part with si + the past form (si tuviera, si fuera)"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\b\\p{L}+r(?:ía|ías|íamos|ían)\\b",
+          "flags": "iu",
+          "label": "say what you would do: the -ría form (iría, haría)"
+        },
+        {
+          "type": "negation",
+          "label": "say you wouldn't go"
+        }
+      ],
+      "focus": "g:si-hypothetical",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Vale: Bueno, tienes razón. Un pescador dice que en Taganga se ven tortugas por la tarde.",
+      "npcEn": "Vale: Bueno, you're right. A fisherman says you can see turtles in Taganga in the afternoon.",
+      "intent": "Ask Vale if she would come with you if you went in the afternoon.",
+      "accept": [
+        "¿Vendrías conmigo si fuéramos por la tarde?",
+        "Si fuéramos por la tarde, ¿vendrías?",
+        "¿Vendrías si saliéramos más tarde, cuando hay menos calor?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask a question"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bsi\\b(?:\\s+\\p{L}+){0,3}?\\s+(?:(?!para\\b|cara\\b|clara\\b|rara\\b)\\p{L}+(?:ara|aras|áramos|aran|iera|ieras|iéramos|ieran)|fuera|fueras|fuéramos|fueran)\\b",
+          "flags": "iu",
+          "label": "start the 'if' part with si + the past form (si tuviera, si fuera)"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\b\\p{L}+r(?:ía|ías|íamos|ían)\\b",
+          "flags": "iu",
+          "label": "say what you would do: the -ría form (iría, haría)"
+        }
+      ],
+      "focus": "g:si-hypothetical",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Vale: Vendría. Pero tú invitas el jugo, como si fueras el dueño del hotel. ¿Trato hecho?",
+      "npcEn": "Vale: I'd come. But you buy the juice, as if you were the owner of the hotel. Deal?",
+      "intent": "Accept the deal and say you'll pay, as if you were rich.",
+      "accept": [
+        "Trato hecho. Pago yo, como si fuera rico.",
+        "Trato hecho, pago yo. Hoy soy generoso, como si fuera el dueño del hotel.",
+        "De acuerdo. Pago yo, como si fuera millonario."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcomo si\\b(?:\\s+\\p{L}+){0,3}?\\s+(?:(?!para\\b|cara\\b|clara\\b|rara\\b)\\p{L}+(?:ara|aras|áramos|aran|iera|ieras|iéramos|ieran)|fuera|fueras|fuéramos|fueran)\\b",
+          "flags": "iu",
+          "label": "use como si + the past form (como si fuera)"
+        }
+      ],
+      "focus": "g:como-si",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:entonces-bueno",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:oye-mira",
+    "c:porque",
+    "c:pues",
+    "c:tienes",
+    "c:tranquilo",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:como-si",
+    "g:conditional",
+    "g:demonstratives",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-subj",
+    "g:passive-se",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:si-hypothetical",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "l:acuerdo",
+    "l:aquí",
+    "l:barco",
+    "l:bueno",
+    "l:calor",
+    "l:clima",
+    "l:comer",
+    "l:cómo",
+    "l:decidir",
+    "l:decir",
+    "l:dentro",
+    "l:dormir",
+    "l:dramático",
+    "l:dueño",
+    "l:día",
+    "l:estar",
+    "l:generoso",
+    "l:grado",
+    "l:grande",
+    "l:hacer",
+    "l:horno",
+    "l:hotel",
+    "l:hoy",
+    "l:humedad",
+    "l:húmedo",
+    "l:invitar",
+    "l:ir",
+    "l:jugo",
+    "l:mal",
+    "l:millonario",
+    "l:mirar",
+    "l:olas",
+    "l:pagar",
+    "l:pescador",
+    "l:piscina",
+    "l:querer",
+    "l:qué",
+    "l:razón",
+    "l:rico",
+    "l:salir",
+    "l:sentir",
+    "l:sentirse",
+    "l:ser",
+    "l:tarde",
+    "l:temprano",
+    "l:tener",
+    "l:terrible",
+    "l:tortuga",
+    "l:tranquilo",
+    "l:tratar",
+    "l:venir",
+    "l:ver",
+    "l:vivir",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:dentro-de-vs-despues",
+    "p:es-de-noche-tarde",
+    "p:estar-a",
+    "p:estar-a-grados",
+    "p:hace-frio",
+    "p:humedo-mojado",
+    "p:ir-venir",
+    "p:lo-mejor-seria-que",
+    "p:por-la-manana",
+    "p:quantifiers-basic",
+    "p:tener-razon",
+    "p:transport-en",
+    "p:ya-todavia-basic"
+  ]
+}

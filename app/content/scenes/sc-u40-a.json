@@ -1,0 +1,254 @@
+{
+  "id": "sc-u40-a",
+  "unit": "u40",
+  "title": "Un barco propio",
+  "brief": "You're Tomás on the beach at Taganga, meeting Yesid, a diving instructor and the grandson of Joaquín, a friend of your grandmother's. He is young and direct, so use tú. Talk about what you would do if things were different.",
+  "spare": false,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Yesid: Tú eres Tomás, el nieto de Rosa, ¿verdad? Yo soy Yesid, el nieto de Joaquín. Mi abuelo hablaba mucho de ella.",
+      "npcEn": "Yesid: You're Tomás, Rosa's grandson, right? I'm Yesid, Joaquín's grandson. My grandfather used to talk about her a lot.",
+      "intent": "Say that if your grandmother were here, she would be happy to meet him.",
+      "accept": [
+        "Si mi abuela estuviera aquí, estaría feliz de conocerte.",
+        "Mucho gusto, Yesid. Si Rosa estuviera aquí, estaría muy feliz de verte.",
+        "Sí, soy Tomás. Si ella estuviera aquí, se alegraría de conocerte."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsi\\b(?:\\s+\\p{L}+){0,3}?\\s+(?:(?!para\\b|cara\\b|clara\\b|rara\\b)\\p{L}+(?:ara|aras|áramos|aran|iera|ieras|iéramos|ieran)|fuera|fueras|fuéramos|fueran)\\b",
+          "flags": "iu",
+          "label": "start the 'if' part with si + the past form (si tuviera, si fuera)"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\b\\p{L}+r(?:ía|ías|íamos|ían)\\b",
+          "flags": "iu",
+          "label": "say what you would do: the -ría form (iría, haría)"
+        }
+      ],
+      "focus": "g:si-hypothetical",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Yesid: Gracias. Enseño buceo, pero trabajo para un hombre que tiene tres barcos y paga poco. Mi sueño es tener uno mío.",
+      "npcEn": "Yesid: Thanks. I teach diving, but I work for a man who has three boats and pays little. My dream is to have one of my own.",
+      "intent": "Ask him what he would do if he had his own boat.",
+      "accept": [
+        "¿Qué harías si tuvieras tu propio barco?",
+        "Si tuvieras un barco, ¿qué harías con él?",
+        "¿Y qué harías tú si el barco fuera tuyo?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask a question"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bsi\\b(?:\\s+\\p{L}+){0,3}?\\s+(?:(?!para\\b|cara\\b|clara\\b|rara\\b)\\p{L}+(?:ara|aras|áramos|aran|iera|ieras|iéramos|ieran)|fuera|fueras|fuéramos|fueran)\\b",
+          "flags": "iu",
+          "label": "start the 'if' part with si + the past form (si tuviera, si fuera)"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\b\\p{L}+r(?:ía|ías|íamos|ían)\\b",
+          "flags": "iu",
+          "label": "say what you would do: the -ría form (iría, haría)"
+        }
+      ],
+      "focus": "g:imperfect-subj",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Yesid: Llevaría a la gente a ver las tortugas, sin ruido ni prisa. Y tú, si pudieras elegir, ¿qué harías con el café de Rosa?",
+      "npcEn": "Yesid: I would take people to see the turtles, with no noise and no hurry. And you, if you could choose, what would you do with Rosa's café?",
+      "intent": "Say that if you could choose, you would keep the café open.",
+      "accept": [
+        "Si pudiera elegir, dejaría el café abierto.",
+        "Mantendría el café abierto si pudiera elegir.",
+        "Si fuera por mí, el café seguiría abierto para siempre."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsi\\b(?:\\s+\\p{L}+){0,3}?\\s+(?:(?!para\\b|cara\\b|clara\\b|rara\\b)\\p{L}+(?:ara|aras|áramos|aran|iera|ieras|iéramos|ieran)|fuera|fueras|fuéramos|fueran)\\b",
+          "flags": "iu",
+          "label": "start the 'if' part with si + the past form (si tuviera, si fuera)"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\b\\p{L}+r(?:ía|ías|íamos|ían)\\b",
+          "flags": "iu",
+          "label": "say what you would do: the -ría form (iría, haría)"
+        }
+      ],
+      "focus": "g:si-hypothetical",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Yesid: Mi abuela habla de la discusión entre Joaquín y Rosa como si fuera un secreto. Yo nunca supe qué pasó.",
+      "npcEn": "Yesid: My grandmother talks about the argument between Joaquín and Rosa as if it were a secret. I never found out what happened.",
+      "intent": "Say you don't know either, and that in your family they talk about it as if nothing had happened.",
+      "accept": [
+        "Yo tampoco lo sé. En mi familia hablan de eso como si nada.",
+        "Tampoco sé nada. Mi tío habla de Joaquín como si nada.",
+        "No lo sé. Todos cambian de tema como si nada."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcomo si nada\\b",
+          "flags": "iu",
+          "label": "use: como si nada"
+        }
+      ],
+      "focus": "g:como-si",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Yesid: Entonces tenemos algo que averiguar juntos. Mañana te llevo a ver las tortugas, si quieres venir.",
+      "npcEn": "Yesid: Then we have something to find out together. Tomorrow I'll take you to see the turtles, if you want to come.",
+      "intent": "Say you would love to, and ask what time you leave.",
+      "accept": [
+        "Me encantaría. ¿A qué hora salimos?",
+        "Claro, me encantaría ir. ¿A qué hora nos vemos?",
+        "Gracias, me encantaría. ¿Cuándo salimos mañana?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask a question"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bencantar[ií]a\\b|\\bgustar[ií]a\\b",
+          "flags": "iu",
+          "label": "say you would love to: me encantaría"
+        }
+      ],
+      "focus": "g:conditional",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-que-hora",
+    "c:a-ver",
+    "c:bien-y-tu",
+    "c:chao-nos-vemos",
+    "c:claro-listo",
+    "c:con-el-ella",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:me-encantaria",
+    "c:mucho-gusto",
+    "c:no-cierto",
+    "c:si-quieres",
+    "c:tienes",
+    "g:como-si",
+    "g:conditional",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-subj",
+    "g:indirect-questions",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:possessives-stressed",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:si-hypothetical",
+    "g:si-present",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:abrir",
+    "l:abuela",
+    "l:abuelo",
+    "l:alegrarse",
+    "l:aquí",
+    "l:averiguar",
+    "l:barco",
+    "l:café",
+    "l:cambiar",
+    "l:claro",
+    "l:conocer",
+    "l:cuándo",
+    "l:dejar",
+    "l:discusión",
+    "l:elegir",
+    "l:encantar",
+    "l:enseñar",
+    "l:estar",
+    "l:familia",
+    "l:feliz",
+    "l:gente",
+    "l:gusto",
+    "l:hablar",
+    "l:hacer",
+    "l:hombre",
+    "l:hora",
+    "l:ir",
+    "l:juntos",
+    "l:llevar",
+    "l:mantener",
+    "l:mañana",
+    "l:nieto",
+    "l:pagar",
+    "l:pasar",
+    "l:poder",
+    "l:prisa",
+    "l:propio",
+    "l:querer",
+    "l:qué",
+    "l:ruido",
+    "l:saber",
+    "l:salir",
+    "l:secreto",
+    "l:seguir",
+    "l:ser",
+    "l:siempre",
+    "l:sueño",
+    "l:tema",
+    "l:tener",
+    "l:tortuga",
+    "l:trabajar",
+    "l:tío",
+    "l:venir",
+    "l:ver",
+    "l:verdad",
+    "p:alegrarse-de-que",
+    "p:aqui-ahi-alla",
+    "p:cambiar-de-por",
+    "p:demonstratives-basic",
+    "p:encontrar-participle",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:la-gente-singular",
+    "p:llevar-traer",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:personal-a",
+    "p:poco-un-poco",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:sonar-con",
+    "p:tambien-tampoco"
+  ]
+}
