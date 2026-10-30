@@ -1,0 +1,182 @@
+{
+  "node": "p:aproximar-cifras",
+  "hook": {
+    "line": "The protest outside the café was loud, and Mariana wants a number for her article. Nobody counted, so Tomás has to say \"around a hundred\" without sounding like he is making it up.",
+    "es": "Llegaron alrededor de cien personas.",
+    "en": "Around a hundred people showed up."
+  },
+  "examples": [
+    {
+      "es": "Asistieron alrededor de cien personas.",
+      "en": "Around a hundred people attended."
+    },
+    {
+      "es": "Llegaron entre treinta y cuarenta mil.",
+      "en": "Between thirty and forty thousand arrived."
+    },
+    {
+      "es": "Le puse como cuatrocientos gramos de harina.",
+      "en": "I put in about four hundred grams of flour."
+    },
+    {
+      "es": "Necesitamos al menos tres días.",
+      "en": "We need at least three days."
+    },
+    {
+      "es": "Habría unas cien personas en la plaza.",
+      "en": "There were reportedly about a hundred people in the square."
+    },
+    {
+      "es": "¿Cuántas personas vinieron?\nVinieron cincuenta como máximo.",
+      "en": "How many people came?\nFifty at most."
+    }
+  ],
+  "rule": "Nobody counts exactly, in the news or at the café, so Spanish has small words for \"roughly\".\n\n*Alrededor de* or *unos* goes in front of the number: *alrededor de cien*, *unas cien personas*.\nFor a range, *entre* ... *y* ...: *entre treinta y cuarenta mil*.\nA floor is *al menos* (at least). A ceiling is *como máximo* (at most).\nIn conversation, *como* before a number also works: *como veinte minutos*.\n\nIn writing, prefer *alrededor de* or *aproximadamente*.",
+  "smallPrint": "Teachers call these expressions of approximation. *Al menos* and *como máximo* set limits instead of guessing.",
+  "readAndPick": [
+    {
+      "es": "Asistieron alrededor de cien personas.",
+      "options": [
+        "Exactly a hundred people attended.",
+        "Around a hundred people attended.",
+        "At least a hundred people attended."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Necesitamos al menos tres días.",
+      "options": [
+        "We need at least three days.",
+        "We need at most three days.",
+        "We need about three days."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Llegaron entre treinta y cuarenta mil.",
+      "options": [
+        "Exactly thirty thousand arrived.",
+        "Forty thousand at most arrived.",
+        "Between thirty and forty thousand arrived."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Vinieron cincuenta personas como máximo.",
+      "options": [
+        "Fifty people came at least.",
+        "Fifty people came at most."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Le puse como cuatrocientos gramos de harina.",
+      "options": [
+        "I put in about four hundred grams of flour.",
+        "I put in exactly four hundred grams of flour.",
+        "I put in at least four hundred grams of flour."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Habría unas cien personas en la plaza.",
+      "options": [
+        "There are a hundred people in the square for sure.",
+        "There were reportedly about a hundred people in the square."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cerca de mil personas firmaron la carta.",
+      "options": [
+        "About a thousand people signed the letter.",
+        "A thousand people at least signed the letter.",
+        "Exactly a thousand people signed the letter."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tardamos como mínimo dos horas.",
+      "options": [
+        "We took about two hours.",
+        "We took at most two hours.",
+        "We took at least two hours."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *al menos* or *como máximo* and type the whole sentence: *Necesitamos ___ tres días.* (three days or more)",
+      "answer": "Necesitamos al menos tres días.",
+      "accept": [
+        "Necesitamos como mínimo tres días."
+      ],
+      "why": "\"At least\" is the floor: *al menos*."
+    },
+    {
+      "prompt": "Type in Spanish: Around a hundred people attended.",
+      "answer": "Asistieron alrededor de cien personas.",
+      "accept": [
+        "Asistieron cerca de cien personas."
+      ],
+      "why": "*Alrededor de*, *cerca de* or *unas* in front of the number gives \"around\"."
+    },
+    {
+      "prompt": "Type in Spanish: Between twenty and thirty people came.",
+      "answer": "Vinieron entre veinte y treinta personas.",
+      "accept": [
+        "Llegaron entre veinte y treinta personas."
+      ],
+      "why": "A range is *entre* ... *y* ..., with *y* between the two numbers."
+    },
+    {
+      "prompt": "Type in Spanish: We need at least two hours.",
+      "answer": "Necesitamos al menos dos horas.",
+      "accept": [
+        "Necesitamos como mínimo dos horas."
+      ],
+      "why": "*Al menos* and *como mínimo* both mean \"at least\"."
+    },
+    {
+      "prompt": "Say it as a ceiling instead of a floor: *Necesitamos al menos tres días.*",
+      "answer": "Necesitamos como máximo tres días.",
+      "accept": [
+        "Necesitamos tres días como máximo."
+      ],
+      "why": "A ceiling, \"at most\", is *como máximo*."
+    },
+    {
+      "prompt": "Say it with *entre*: *Había veinte o treinta personas.*",
+      "answer": "Había entre veinte y treinta personas.",
+      "accept": [],
+      "why": "Replace \"twenty or thirty\" with *entre veinte y treinta*."
+    },
+    {
+      "prompt": "Make it a rumour, \"there were reportedly about fifty people\": *Había cincuenta personas.*",
+      "answer": "Habría unas cincuenta personas.",
+      "accept": [
+        "Habría alrededor de cincuenta personas."
+      ],
+      "why": "The news hedge is *habría* plus *unas* before the number."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Llegaron entre treinta a cuarenta mil.",
+      "right": "Llegaron entre treinta y cuarenta mil.",
+      "why": "Almost. English says \"between thirty and forty\", and so does Spanish: *entre* always pairs with *y*."
+    },
+    {
+      "wrong": "Asistieron alrededor cien personas.",
+      "right": "Asistieron alrededor de cien personas.",
+      "why": "Almost. *Alrededor* needs *de* before the number."
+    },
+    {
+      "wrong": "Tenemos al máximo tres días.",
+      "right": "Tenemos como máximo tres días.",
+      "why": "Almost. \"At least\" is *al menos*, but \"at most\" is *como máximo*, not *al máximo*."
+    }
+  ],
+  "personal": "Say roughly how many people live on your street or work where you work, using *unos*, *alrededor de* or *entre* ... *y* ...."
+}

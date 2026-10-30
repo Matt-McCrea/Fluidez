@@ -1,0 +1,178 @@
+{
+  "node": "p:indice-tasa",
+  "hook": {
+    "line": "Mariana's article is full of numbers: how many, how high, what share. Spanish has a small set of words for those, and the English \"number\" is the wrong one for most of them.",
+    "es": "La cifra de visitantes subió este año.",
+    "en": "The number of visitors went up this year."
+  },
+  "examples": [
+    {
+      "es": "La tasa de desempleo bajó un 2 %.",
+      "en": "The unemployment rate fell by 2%."
+    },
+    {
+      "es": "El índice de pobreza sigue alto.",
+      "en": "The poverty rate is still high."
+    },
+    {
+      "es": "La cifra de visitantes aumentó.",
+      "en": "The number of visitors rose."
+    },
+    {
+      "es": "El porcentaje de turistas extranjeros subió.",
+      "en": "The percentage of foreign tourists went up."
+    },
+    {
+      "es": "Un millar de personas firmó la carta.",
+      "en": "A thousand or so people signed the letter."
+    },
+    {
+      "es": "Centenares de personas esperaban afuera.",
+      "en": "Hundreds of people were waiting outside."
+    }
+  ],
+  "rule": "News Spanish measures things with a short noun, then *de*, then what is measured.\n\n*La tasa de* is a rate: *la tasa de desempleo*.\n*El índice de* is a level or index: *el índice de pobreza*.\n*La cifra de* is a figure or total: *la cifra de visitantes*.\n*El porcentaje de* is a share.\n\nThere is no article after *de*: *tasa de desempleo*. Do not say *número* for a rate.\n\nFor rough big numbers: *un millar de* (about a thousand), *centenares de* (hundreds of), *decenas de* (dozens of).",
+  "smallPrint": "Teachers call *tasa*, *índice* and *cifra* quantity nouns: they sit in front of the thing being counted.",
+  "readAndPick": [
+    {
+      "es": "El índice de pobreza sigue alto.",
+      "options": [
+        "Poor people are still the highest.",
+        "The poverty rate is still high.",
+        "Poverty is still a word."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La cifra de visitantes aumentó.",
+      "options": [
+        "The visitor figure went down.",
+        "The visitor figure rose."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Un millar de personas firmó la carta.",
+      "options": [
+        "A hundred people signed the letter.",
+        "About a thousand people signed the letter.",
+        "Ten thousand people signed the letter."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Centenares de personas esperaban afuera.",
+      "options": [
+        "Dozens of people were waiting outside.",
+        "Hundreds of people were waiting outside.",
+        "Thousands of people were waiting outside."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Decenas de personas esperaban afuera.",
+      "options": [
+        "Hundreds of people were waiting outside.",
+        "Dozens of people were waiting outside.",
+        "Two people were waiting outside."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La tasa de desempleo bajó un 2 %.",
+      "options": [
+        "Unemployment fell by 2%.",
+        "The unemployment rate fell by 2%.",
+        "Unemployment rose by 2%."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El porcentaje de turistas extranjeros subió.",
+      "options": [
+        "The number of tourists went up.",
+        "The percentage of foreign tourists went up."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Cuál es la cifra de visitantes?",
+      "options": [
+        "What is the visitor figure?",
+        "Who are the visitors?",
+        "Where are the visitors?"
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *millar* or *centenares* and type the whole sentence: *___ de personas esperaban afuera.* (hundreds)",
+      "answer": "Centenares de personas esperaban afuera.",
+      "accept": [],
+      "why": "\"Hundreds of\" is *centenares de*."
+    },
+    {
+      "prompt": "Type in Spanish: The poverty rate is still high.",
+      "answer": "El índice de pobreza sigue alto.",
+      "accept": [
+        "La tasa de pobreza sigue alta."
+      ],
+      "why": "A rate or level is *índice* or *tasa*, then *de*."
+    },
+    {
+      "prompt": "Type in Spanish: The number of visitors went up.",
+      "answer": "La cifra de visitantes subió.",
+      "accept": [
+        "La cifra de visitantes aumentó."
+      ],
+      "why": "A total is *la cifra de*, then what is counted."
+    },
+    {
+      "prompt": "Type in Spanish: About a thousand people signed the letter.",
+      "answer": "Un millar de personas firmó la carta.",
+      "accept": [
+        "Un millar de personas firmaron la carta."
+      ],
+      "why": "\"About a thousand\" is *un millar de*."
+    },
+    {
+      "prompt": "Type in Spanish: The unemployment rate fell by two percent.",
+      "answer": "La tasa de desempleo bajó un 2 %.",
+      "accept": [
+        "La tasa de desempleo bajó un dos por ciento."
+      ],
+      "why": "The rate noun plus *de* plus the thing; \"by\" needs no word."
+    },
+    {
+      "prompt": "Make it plural, \"the rates\": *La tasa de desempleo bajó.*",
+      "answer": "Las tasas de desempleo bajaron.",
+      "accept": [],
+      "why": "Plural noun, plural verb: *las tasas*, *bajaron*."
+    },
+    {
+      "prompt": "Say \"hundreds of people\" instead of \"a thousand\": *Un millar de personas firmó la carta.*",
+      "answer": "Centenares de personas firmaron la carta.",
+      "accept": [],
+      "why": "*Centenares de* is a plural group, so the verb is *firmaron*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El número de pobreza sigue alto.",
+      "right": "El índice de pobreza sigue alto.",
+      "why": "Almost. A rate or level is *índice* or *tasa*, not *número*."
+    },
+    {
+      "wrong": "Un millar personas firmó la carta.",
+      "right": "Un millar de personas firmó la carta.",
+      "why": "Almost. *Un millar* needs *de* before the people."
+    },
+    {
+      "wrong": "La tasa de desempleo bajó por un 2 %.",
+      "right": "La tasa de desempleo bajó un 2 %.",
+      "why": "Almost. Spanish has no word for \"by\" here: the verb is followed straight by *un 2 %*."
+    }
+  ],
+  "personal": "Pick one figure from your own town, such as a rate or a number of people, and say it with *la cifra de* or *el índice de*."
+}

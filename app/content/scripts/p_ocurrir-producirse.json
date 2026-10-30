@@ -1,0 +1,175 @@
+{
+  "node": "p:ocurrir-producirse",
+  "hook": {
+    "line": "A story only becomes news when it says what happened and how. Spanish has a ladder: *pasó* with friends, *ocurrió* for neutral writing, *se produjo* for the news.",
+    "es": "¿Qué pasó anoche?",
+    "en": "What happened last night?"
+  },
+  "examples": [
+    {
+      "es": "¿Qué pasó?",
+      "en": "What happened?"
+    },
+    {
+      "es": "El accidente ocurrió de madrugada.",
+      "en": "The accident happened in the early hours."
+    },
+    {
+      "es": "Se produjo un incendio en La Candelaria.",
+      "en": "A fire occurred in La Candelaria."
+    },
+    {
+      "es": "Nadie sabe cómo sucedió.",
+      "en": "Nobody knows how it happened."
+    },
+    {
+      "es": "Los robos ocurrieron anoche.",
+      "en": "The robberies happened last night."
+    },
+    {
+      "es": "¿Cuándo se produjo el cambio?",
+      "en": "When did the change occur?"
+    }
+  ],
+  "rule": "There is a ladder for \"happened\".\n\nWith friends: *pasar*. *¿Qué pasó?*\nNeutral and written: *ocurrir* or *suceder*. *El accidente ocurrió de madrugada.*\nNews reports: *producirse*, always with *se*. *Se produjo un incendio.*\n\nThe verb agrees with the event: *ocurrieron*, *se produjeron*.\n\n*Producirse* is only for events, like accidents, changes and fires. Never for people.",
+  "smallPrint": "Teachers call this a register ladder: the same event, said more formally at each step.",
+  "readAndPick": [
+    {
+      "es": "¿Qué pasó?",
+      "options": [
+        "What happened?",
+        "What is happening?",
+        "What will happen?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El accidente ocurrió de madrugada.",
+      "options": [
+        "The accident happened in the afternoon.",
+        "The accident happened in the early hours."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se produjo un incendio.",
+      "options": [
+        "A man lit a fire on purpose.",
+        "A fire occurred."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se produjeron dos explosiones.",
+      "options": [
+        "One explosion occurred.",
+        "Two explosions occurred."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nadie sabe cómo sucedió.",
+      "options": [
+        "Nobody knows what happens.",
+        "Nobody knows how it happened."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Los hechos ocurrieron en La Candelaria.",
+      "options": [
+        "The events will take place in La Candelaria.",
+        "The events took place in La Candelaria."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Cuándo se produjo el cambio?",
+      "options": [
+        "When will the change happen?",
+        "When did the change happen?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Lo ocurrido fue un error.",
+      "options": [
+        "What happened was a mistake.",
+        "What happens is a mistake."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *ocurrió* or *ocurrieron* and type the whole sentence: *Los robos ___ anoche.*",
+      "answer": "Los robos ocurrieron anoche.",
+      "accept": [],
+      "why": "The verb agrees with the event, and *los robos* is plural."
+    },
+    {
+      "prompt": "Type in Spanish: What happened last night? (everyday, to a friend)",
+      "answer": "¿Qué pasó anoche?",
+      "accept": [
+        "¿Qué ocurrió anoche?",
+        "¿Qué sucedió anoche?"
+      ],
+      "why": "With friends, the everyday verb is *pasó*."
+    },
+    {
+      "prompt": "Type in Spanish: The accident happened in the early hours.",
+      "answer": "El accidente ocurrió de madrugada.",
+      "accept": [
+        "El accidente sucedió de madrugada.",
+        "El accidente se produjo de madrugada."
+      ],
+      "why": "\"In the early hours\" is *de madrugada*."
+    },
+    {
+      "prompt": "Type in Spanish: Nobody knows how it happened.",
+      "answer": "Nadie sabe cómo sucedió.",
+      "accept": [
+        "Nadie sabe cómo ocurrió."
+      ],
+      "why": "The neutral verbs are *ocurrió* and *sucedió*."
+    },
+    {
+      "prompt": "Type in Spanish, news style: A fire occurred in La Candelaria.",
+      "answer": "Se produjo un incendio en La Candelaria.",
+      "accept": [],
+      "why": "News style is *se produjo* plus the event."
+    },
+    {
+      "prompt": "Make it news style: *El accidente ocurrió de madrugada.*",
+      "answer": "El accidente se produjo de madrugada.",
+      "accept": [],
+      "why": "Swap *ocurrió* for *se produjo* and the rest stays."
+    },
+    {
+      "prompt": "Make it plural: *Se produjo un incendio.*",
+      "answer": "Se produjeron incendios.",
+      "accept": [
+        "Se produjeron dos incendios."
+      ],
+      "why": "Plural event, plural verb: *se produjeron*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Se produjeron un incendio.",
+      "right": "Se produjo un incendio.",
+      "why": "Almost. The verb agrees with the event, and one fire is singular."
+    },
+    {
+      "wrong": "Los accidentes ocurrió anoche.",
+      "right": "Los accidentes ocurrieron anoche.",
+      "why": "Almost. The accidents are plural, so the verb is too: *ocurrieron*."
+    },
+    {
+      "wrong": "El accidente ocurrió a la madrugada.",
+      "right": "El accidente ocurrió de madrugada.",
+      "why": "Almost. \"In the early hours\" is *de madrugada*."
+    }
+  ],
+  "personal": "Tell something small that happened to you this week, news style, with *ocurrió* or *se produjo*."
+}

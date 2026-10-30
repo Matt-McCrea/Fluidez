@@ -1,0 +1,168 @@
+{
+  "node": "x:mientras-ind-subj",
+  "hook": {
+    "line": "Vale tells Tomás two things in one breath: what she does while he works, and what she will do only as long as the café survives. Both start with *mientras*, but the verb gives away which is which.",
+    "es": "Mientras Tomás atienda, yo cocino.",
+    "en": "As long as Tomás is serving, I'll cook."
+  },
+  "examples": [
+    {
+      "es": "Mientras cocinas, pongo la mesa.",
+      "en": "While you cook, I set the table. (to a friend)"
+    },
+    {
+      "es": "Mientras haya trabajo, me quedo.",
+      "en": "As long as there's work, I'm staying."
+    },
+    {
+      "es": "Mientras Vale cocina, Tomás atiende a los clientes.",
+      "en": "While Vale cooks, Tomás serves the customers."
+    },
+    {
+      "es": "Puedes usar el carro mientras lo cuides.",
+      "en": "You can use the car as long as you look after it. (to a friend)"
+    },
+    {
+      "es": "Mientras no llueva, jugamos.",
+      "en": "As long as it doesn't rain, we play."
+    },
+    {
+      "es": "Mientras esperaba, leía el periódico.",
+      "en": "While I waited, I read the newspaper."
+    }
+  ],
+  "rule": "*Mientras* does two jobs, and the verb tells you which one.\n\nTwo things happening at the same time, \"while\": an ordinary verb. *Mientras cocinas, pongo la mesa.* Both are facts.\n\nA condition, \"as long as\": the wish form. *Mientras haya trabajo, me quedo.* It may or may not come true.\n\nTest: can you say \"while\" in English? Ordinary verb. Does \"as long as\" fit better? Wish form.\n\nIn the past it is always an ordinary verb: *Mientras estudiaba, trabajaba.*\n\nIt works just like *cuando*.",
+  "smallPrint": "Teachers call this indicative for simultaneous time and subjunctive for a condition that is not yet real.",
+  "readAndPick": [
+    {
+      "es": "Mientras cocinas, pongo la mesa.",
+      "options": [
+        "While you cook, I set the table.",
+        "As long as you cook, I'll set the table.",
+        "Because you cook, I set the table."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mientras haya trabajo, me quedo.",
+      "options": [
+        "Because there was work, I stayed.",
+        "As long as there's work, I'm staying."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mientras no llueva, jugamos.",
+      "options": [
+        "Because it didn't rain, we played.",
+        "As long as it doesn't rain, we play."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Puedes usar el carro mientras lo cuides.",
+      "options": [
+        "You can use the car because you take care of it.",
+        "You can use the car while I take care of it.",
+        "You can use the car as long as you take care of it."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mientras Vale cocina, Tomás atiende a los clientes.",
+      "options": [
+        "As long as Vale cooks, Tomás will serve the customers.",
+        "While Vale cooks, Tomás serves the customers."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mientras esperaba, leía el periódico.",
+      "options": [
+        "While I waited, I read the newspaper.",
+        "As long as I wait, I'll read the newspaper."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mientras tengamos clientes, el café sigue abierto.",
+      "options": [
+        "As long as we have customers, the café stays open.",
+        "While we had customers, the café was open."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mientras yo preparo el tinto, tú abres la puerta.",
+      "options": [
+        "As long as I make the coffee, you open the door.",
+        "While I make the coffee, you open the door."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *cocinas* or *cocines* and type the whole sentence: *Mientras ___, pongo la mesa.* (both at the same time, \"while\")",
+      "answer": "Mientras cocinas, pongo la mesa.",
+      "accept": [],
+      "why": "\"While\", two things at once, takes the ordinary verb."
+    },
+    {
+      "prompt": "Pick *hay* or *haya* and type the whole sentence: *Mientras ___ trabajo, me quedo.* (\"as long as\")",
+      "answer": "Mientras haya trabajo, me quedo.",
+      "accept": [],
+      "why": "\"As long as\" is a condition, so the wish form: *haya*."
+    },
+    {
+      "prompt": "Type in Spanish: As long as it doesn't rain, we'll play.",
+      "answer": "Mientras no llueva, jugamos.",
+      "accept": [],
+      "why": "A condition about the future takes the wish form: *llueva*."
+    },
+    {
+      "prompt": "Type in Spanish: While Vale cooks, Tomás serves the customers.",
+      "answer": "Mientras Vale cocina, Tomás atiende a los clientes.",
+      "accept": [],
+      "why": "Two real things at once, so the ordinary verb: *cocina*."
+    },
+    {
+      "prompt": "Type in Spanish: You can use the car as long as you look after it. (to a friend)",
+      "answer": "Puedes usar el carro mientras lo cuides.",
+      "accept": [
+        "Mientras lo cuides, puedes usar el carro."
+      ],
+      "why": "It is a condition, so *cuides*."
+    },
+    {
+      "prompt": "Make it a condition, \"as long as\": *Mientras Tomás trabaja, Vale se queda.*",
+      "answer": "Mientras Tomás trabaje, Vale se queda.",
+      "accept": [],
+      "why": "A condition switches the verb after *mientras* to the wish form."
+    },
+    {
+      "prompt": "Put it in the past: *Mientras cocinas, pongo la mesa.*",
+      "answer": "Mientras cocinabas, ponía la mesa.",
+      "accept": [],
+      "why": "In the past, *mientras* is always followed by an ordinary verb."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Mientras hay trabajo, me quedo.",
+      "right": "Mientras haya trabajo, me quedo.",
+      "why": "Almost. \"As long as\" sets a condition, so the verb takes the wish form: *haya*."
+    },
+    {
+      "wrong": "Mientras cocine, pongo la mesa.",
+      "right": "Mientras cocinas, pongo la mesa.",
+      "why": "Almost. Two things happening together are facts, so the verb stays ordinary: *cocinas*."
+    },
+    {
+      "wrong": "Mientras esperara, leía el periódico.",
+      "right": "Mientras esperaba, leía el periódico.",
+      "why": "Almost. A past \"while\" never takes the wish form: *esperaba*."
+    }
+  ],
+  "personal": "Make a promise using *mientras*, for example to a friend or your family: *Mientras ... , yo ...*."
+}

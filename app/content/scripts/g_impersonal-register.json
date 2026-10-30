@@ -1,0 +1,192 @@
+{
+  "node": "g:impersonal-register",
+  "hook": {
+    "line": "Mariana cannot print what she cannot prove. So the news has a toolkit for \"someone says it, but I will not say who\". Neighbours at the café use the same tricks.",
+    "es": "Se dice que Altamira ya compró dos edificios.",
+    "en": "It's said that Altamira has already bought two buildings."
+  },
+  "examples": [
+    {
+      "es": "Dicen que el alcalde renunció.",
+      "en": "They say the mayor resigned."
+    },
+    {
+      "es": "Se cree que fue un error.",
+      "en": "It's believed it was a mistake."
+    },
+    {
+      "es": "Se dice que Altamira ya compró dos edificios.",
+      "en": "It's said that Altamira has already bought two buildings."
+    },
+    {
+      "es": "Cuentan que el dueño salió del país.",
+      "en": "They say the owner left the country."
+    },
+    {
+      "es": "Uno no puede saberlo todo.",
+      "en": "One can't know everything."
+    },
+    {
+      "es": "La gente cree que el café va a cerrar.",
+      "en": "People think the café is going to close."
+    },
+    {
+      "es": "¿Se sabe quién pagó?",
+      "en": "Is it known who paid?"
+    }
+  ],
+  "rule": "Sometimes nobody knows who did it, or you would rather not say. Spanish has four easy ways to leave the person out.\n\n*Dicen que...* or *Cuentan que...*: \"they say\". Plain third-person plural, no *ellos*.\n\n*Se dice que...*, *Se cree que...*, *Se sabe que...*: \"it's said, believed, known\". The verb after *se* stays singular, whatever follows. Newspapers love it.\n\n*Uno* plus a normal verb: \"one\" or \"you\" in general, often including yourself.\n\n*La gente* plus a singular verb: *la gente cree*, never *creen*.\n\nNone of these names a source. When you have one, add *según*.",
+  "smallPrint": "Teachers call this the impersonal register: the doer is hidden with a plural *dicen*, an impersonal *se*, or a general *uno*.",
+  "readAndPick": [
+    {
+      "es": "Dicen que el alcalde renunció.",
+      "options": [
+        "The mayor says they resigned.",
+        "They say the mayor resigned.",
+        "The mayor said he would resign."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se cree que fue un error.",
+      "options": [
+        "I believe it was a mistake.",
+        "It's believed it was a mistake.",
+        "They believe a mistake is coming."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Uno no puede saberlo todo.",
+      "options": [
+        "One can't know everything.",
+        "I can't tell you everything.",
+        "He doesn't know anything."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La gente cree que el café va a cerrar.",
+      "options": [
+        "People think the café is going to close.",
+        "The café thinks people are leaving."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Cuentan que el dueño salió del país.",
+      "options": [
+        "They say the owner left the country.",
+        "The owner told them he was leaving the country.",
+        "They told the owner to leave the country."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Se sabe quién pagó?",
+      "options": [
+        "Do you know who paid? (to a friend)",
+        "Is it known who paid?",
+        "Who paid you?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Dicen que no hay plata.",
+      "options": [
+        "He says there's no money.",
+        "They say there's no money."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se dice que Altamira compró dos edificios.",
+      "options": [
+        "Altamira says it bought two buildings.",
+        "It's said that Altamira bought two buildings."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Dice que no hay plata.",
+      "options": [
+        "He says there's no money.",
+        "They say there's no money."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *dicen* or *dice* and type the whole sentence: *___ que Altamira compró el edificio.* (the rumour mill, no one in particular)",
+      "answer": "Dicen que Altamira compró el edificio.",
+      "accept": [],
+      "why": "\"They say\" with no one named is the plural *dicen*."
+    },
+    {
+      "prompt": "Type in Spanish: It's believed it was a mistake.",
+      "answer": "Se cree que fue un error.",
+      "accept": [],
+      "why": "\"It's believed\" is *se cree que*, with the verb singular."
+    },
+    {
+      "prompt": "Type in Spanish: People think the café is going to close.",
+      "answer": "La gente cree que el café va a cerrar.",
+      "accept": [
+        "La gente piensa que el café va a cerrar."
+      ],
+      "why": "*La gente* takes a singular verb: *cree*."
+    },
+    {
+      "prompt": "Type in Spanish: They say the owner left the country.",
+      "answer": "Dicen que el dueño salió del país.",
+      "accept": [
+        "Cuentan que el dueño salió del país."
+      ],
+      "why": "\"They say\" is *dicen que* or *cuentan que*."
+    },
+    {
+      "prompt": "Type in Spanish: One can't know everything. (anyone, in general)",
+      "answer": "Uno no puede saberlo todo.",
+      "accept": [
+        "Uno no puede saber todo."
+      ],
+      "why": "A general \"one\" is *uno* with an ordinary verb."
+    },
+    {
+      "prompt": "Hide who is saying it, \"it's said\": *Altamira compró el edificio.*",
+      "answer": "Se dice que Altamira compró el edificio.",
+      "accept": [],
+      "why": "Put *se dice que* in front and the claim has no owner."
+    },
+    {
+      "prompt": "Hide who believes it: *Mariana cree que fue un error.*",
+      "answer": "Se cree que fue un error.",
+      "accept": [],
+      "why": "Replace the person with *se cree que* and keep the rest."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La gente creen que el café va a cerrar.",
+      "right": "La gente cree que el café va a cerrar.",
+      "why": "Almost. *La gente* looks plural in English, but in Spanish it is singular: *cree*."
+    },
+    {
+      "wrong": "Se dicen que el alcalde renunció.",
+      "right": "Se dice que el alcalde renunció.",
+      "why": "Almost. In *se dice que* the verb stays singular, because what follows is a whole clause."
+    },
+    {
+      "wrong": "Dice que el alcalde renunció.",
+      "right": "Dicen que el alcalde renunció.",
+      "why": "Careful. *Dice* is one person speaking; the plural *dicen* is the rumour mill, \"they say\"."
+    },
+    {
+      "wrong": "Se cree de que fue un error.",
+      "right": "Se cree que fue un error.",
+      "why": "Almost. There is no *de* before *que* here."
+    }
+  ],
+  "personal": "Pass on a rumour you have heard about your town or workplace, using *Dicen que...* or *Se dice que...*."
+}

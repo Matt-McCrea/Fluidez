@@ -1,0 +1,175 @@
+{
+  "node": "p:duplicarse",
+  "hook": {
+    "line": "After Mariana's first article, the café is suddenly full. Vale wants to say how much busier it is, and \"a lot\" is not good enough.",
+    "es": "Las ventas se duplicaron esta semana.",
+    "en": "Sales doubled this week."
+  },
+  "examples": [
+    {
+      "es": "Las ventas se duplicaron este año.",
+      "en": "Sales doubled this year."
+    },
+    {
+      "es": "Los clientes se triplicaron en una semana.",
+      "en": "Customers tripled in a week."
+    },
+    {
+      "es": "Ahora gano cinco veces más que antes.",
+      "en": "I now earn five times more than before."
+    },
+    {
+      "es": "Este mes vendemos tres veces más pasteles que el mes pasado.",
+      "en": "This month we sell three times more pastries than last month."
+    },
+    {
+      "es": "La economía creció un 3 %.",
+      "en": "The economy grew by 3%."
+    },
+    {
+      "es": "Los precios cayeron un 10 %.",
+      "en": "Prices fell by 10%."
+    }
+  ],
+  "rule": "To say something doubled, Spanish uses one verb with *se*: *se duplicó* (doubled), *se triplicó* (tripled), *se cuadruplicó* (quadrupled). The thing is the subject and the verb agrees: *las ventas se duplicaron*.\n\nFor other multiples, use the number plus *veces más* (or *menos*) plus *que*: *cinco veces más que antes*.\n\nFor percentages, the verb is followed straight by the figure: *creció un 3 %*, *cayó un 10 %*. No word for \"by\".",
+  "smallPrint": "Teachers call *duplicarse* a verb of change built from a number. The *se* means it happened to the thing itself.",
+  "readAndPick": [
+    {
+      "es": "Las ventas se duplicaron este año.",
+      "options": [
+        "Sales tripled this year.",
+        "Sales doubled this year.",
+        "Sales halved this year."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Los clientes se triplicaron.",
+      "options": [
+        "The customers doubled.",
+        "The customers tripled."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ahora gano cinco veces más que antes.",
+      "options": [
+        "I now earn five times more than before.",
+        "I now earn five times less than before.",
+        "I now earn the same as before."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ahora gano cinco veces menos que antes.",
+      "options": [
+        "I now earn five times more than before.",
+        "I now earn five times less than before."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La economía creció un 3 %.",
+      "options": [
+        "The economy fell by 3%.",
+        "The economy grew by 3%.",
+        "The economy grew to 3%."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Los precios cayeron un 10 %.",
+      "options": [
+        "Prices rose by 10%.",
+        "Prices fell by 10%."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El número de turistas se cuadruplicó.",
+      "options": [
+        "The number of tourists doubled.",
+        "The number of tourists tripled.",
+        "The number of tourists quadrupled."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Se duplicaron las ventas?",
+      "options": [
+        "Did sales double?",
+        "Sales did not double.",
+        "Will sales double?"
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *se duplicó* or *se duplicaron* and type the whole sentence: *Las ventas ___ este año.*",
+      "answer": "Las ventas se duplicaron este año.",
+      "accept": [],
+      "why": "\"Sales\" is plural, so the verb is *se duplicaron*."
+    },
+    {
+      "prompt": "Type in Spanish: Sales tripled this year.",
+      "answer": "Las ventas se triplicaron este año.",
+      "accept": [],
+      "why": "\"Tripled\" is *se triplicó*, plural to match *las ventas*."
+    },
+    {
+      "prompt": "Type in Spanish: Now I earn three times more than before.",
+      "answer": "Ahora gano tres veces más que antes.",
+      "accept": [],
+      "why": "A multiple is the number plus *veces más que*."
+    },
+    {
+      "prompt": "Type in Spanish: The economy grew by three percent.",
+      "answer": "La economía creció un 3 %.",
+      "accept": [
+        "La economía creció un tres por ciento."
+      ],
+      "why": "The verb goes straight to *un* and the figure."
+    },
+    {
+      "prompt": "Type in Spanish: Prices fell by ten percent.",
+      "answer": "Los precios cayeron un 10 %.",
+      "accept": [
+        "Los precios cayeron un diez por ciento."
+      ],
+      "why": "*Cayeron* agrees with *los precios*, and no word is needed for \"by\"."
+    },
+    {
+      "prompt": "Turn it into a question: *Las ventas se duplicaron.*",
+      "answer": "¿Se duplicaron las ventas?",
+      "accept": [
+        "¿Las ventas se duplicaron?"
+      ],
+      "why": "A question needs the marks and, usually, the verb first."
+    },
+    {
+      "prompt": "Say the opposite, \"less\" instead of \"more\": *Ahora gano cinco veces más que antes.*",
+      "answer": "Ahora gano cinco veces menos que antes.",
+      "accept": [],
+      "why": "Swap *más* for *menos* and the rest stays."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Las ventas se duplicó este año.",
+      "right": "Las ventas se duplicaron este año.",
+      "why": "Almost. The verb agrees with the thing that doubled: plural *ventas*, so *duplicaron*."
+    },
+    {
+      "wrong": "La economía creció por un 3 %.",
+      "right": "La economía creció un 3 %.",
+      "why": "Almost. English says \"by\", but Spanish goes straight from the verb to the figure."
+    },
+    {
+      "wrong": "Gano dos veces más como antes.",
+      "right": "Gano dos veces más que antes.",
+      "why": "Almost. After *más*, comparing takes *que*, not *como*."
+    }
+  ],
+  "personal": "Say something in your own life that has doubled or changed a lot, such as *Mis gastos se duplicaron*."
+}
