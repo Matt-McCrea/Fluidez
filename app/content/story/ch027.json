@@ -2,7 +2,7 @@
   "id": "ch027",
   "unit": "u11",
   "title": "Los domingos de Rosa",
-  "text": "El café ya está cerrado. Tomás barre el piso. Simón canta una canción vieja, y Tomás deja de barrer.\nTomás: Esa canción... Rosa la cantaba.\nVale pone dos tintos y dos almojábanas en el mostrador.\nVale: Bueno, Tomás. Son las siete. ¿De qué hablamos?\nTomás: De los domingos. Cuando tenía seis años, venía aquí todos los domingos. Me sentaba en el mostrador, y Rosa cantaba.\nVale: ¿Y tu papá?\nTomás: Mi papá tomaba tinto con Rosa. Después me llevaba al aeropuerto. Mirábamos los aviones, y yo gritaba los nombres de las ciudades.\nVale: ¿Y eras un niño obediente?\nTomás: Muy obediente.\nDesde su mesa, Hernando se ríe.\nHernando: ¿Obediente? Eras muy travieso, mijo. Te portabas mal todos los domingos. Peleabas con la chica de los vecinos. Los dos querían la última almojábana.\nTomás: ¿Travieso? ¿Yo? ¿Y qué chica?\nHernando: La hija de los vecinos, una niña con gafas. Ella siempre conseguía la almojábana, y tú gritabas.\nVale: ¿Y hoy? ¿La almojábana o la torta?\nTomás: Me quedo con la almojábana. Hoy es mía.\nPero Simón llega primero, y la almojábana de Tomás termina en su pico.\nHernando: Es lo mismo de siempre, mijo. Casi treinta años después, y otra vez sin almojábana.\nTomás: Un día, los domingos terminaron. Nos mudamos a Toronto. Allá nadie cantaba, y mi papá trabajaba los domingos.\nVale pone su mano en la mano de Tomás, solo un momento.\nVale: Ahora hay domingos otra vez, Tomás.\nHernando: Los vecinos ya no viven aquí. Altamira compró su casa en marzo.\nEn la calle, delante de la ventana, una mujer mira a Tomás y escribe algo en su celular.",
+  "text": "El café está cerrado. Simón canta una canción vieja.\nTomás: Esa canción... Rosa la cantaba.\nVale pone dos tintos y dos almojábanas en el mostrador.\nVale: Son las siete. ¿De qué hablamos?\nTomás: De los domingos. Cuando tenía seis años, me sentaba aquí, en el mostrador, y Rosa cantaba.\nVale: ¿Y eras un niño obediente?\nTomás: Muy obediente.\nHernando se ríe.\nHernando: ¿Obediente? Eras muy travieso, mijo. Todos los domingos peleabas con la hija de los vecinos, una niña con gafas. Los dos querían la última almojábana, y ella siempre la conseguía.\nTomás: Pues hoy la última es mía.\nPero Simón llega primero, y la almojábana termina en su pico.\nHernando: Es lo mismo de siempre. Casi treinta años después, y otra vez sin almojábana.\nTomás: Un día nos mudamos a Toronto, y los domingos terminaron.\nVale pone su mano en la mano de Tomás.\nVale: Ahora hay domingos otra vez.\nHernando: Los vecinos ya no viven aquí. Altamira compró su casa en marzo.\nDelante de la ventana, una mujer mira a Tomás y escribe algo en su celular.",
   "gloss": [
     {
       "es": "mijo",
@@ -13,20 +13,12 @@
       "en": "the counter"
     },
     {
-      "es": "Tomás deja de barrer.",
-      "en": "Tomás stops sweeping."
-    },
-    {
       "es": "se ríe",
       "en": "laughs"
     },
     {
       "es": "Los dos querían la última almojábana.",
       "en": "You both wanted the last almojábana."
-    },
-    {
-      "es": "Hoy es mía.",
-      "en": "Today it's mine."
     },
     {
       "es": "Es lo mismo de siempre",
@@ -37,30 +29,34 @@
       "en": "Almost thirty years later, and no almojábana again."
     },
     {
-      "es": "Allá nadie cantaba",
-      "en": "Nobody sang there"
-    },
-    {
-      "es": "Ahora hay domingos otra vez.",
-      "en": "Now there are Sundays again."
-    },
-    {
       "es": "termina en su pico",
       "en": "ends up in his beak"
     },
     {
       "es": "delante de la ventana",
       "en": "in front of the window"
+    },
+    {
+      "es": "Pues hoy la última es mía.",
+      "en": "Well, today the last one is mine."
+    },
+    {
+      "es": "Ahora hay domingos otra vez.",
+      "en": "Now there are Sundays again."
+    },
+    {
+      "es": "ella siempre la conseguía",
+      "en": "she always got it"
     }
   ],
   "questions": [
     {
-      "q": "What did Tomás's father use to do with him on Sundays?",
+      "q": "Where did little Tomás sit on Sundays?",
       "options": [
-        "Take him to the airport to watch the planes",
-        "Take him to the football",
-        "Teach him to make coffee",
-        "Take him to school"
+        "On the counter, while Rosa sang",
+        "At Hernando's table",
+        "In the street",
+        "At the airport"
       ],
       "answer": 0
     },
@@ -98,22 +94,22 @@
   "hook": "A woman outside has been watching Tomás through the café window, and she has written something down. Tomorrow she comes in and orders the last almojábana.",
   "rereadQuestions": [
     {
-      "q": "What makes Tomás stop sweeping?",
+      "q": "What does Simón sing?",
       "options": [
-        "Simón singing an old song Rosa used to sing",
-        "Vale calling him",
-        "A noise in the street",
-        "The radio"
+        "An old song Rosa used to sing",
+        "A song from Toronto",
+        "A song about almojábanas",
+        "Nothing, he talks"
       ],
       "answer": 0
     },
     {
-      "q": "What did little Tomás use to shout at the airport?",
+      "q": "When did Altamira buy the neighbours' house?",
       "options": [
-        "The names of cities",
-        "The names of planes",
-        "Rosa's name",
-        "Prices"
+        "In March",
+        "Last Sunday",
+        "Thirty years ago",
+        "Yesterday"
       ],
       "answer": 0
     },
@@ -130,11 +126,8 @@
   ],
   "requires": [
     "c:abierto-cerrado",
-    "c:bien-y-tu",
-    "c:entonces-bueno",
     "c:es-lo-mismo",
     "c:hay",
-    "c:me-quedo-con",
     "c:ya-no",
     "g:adjective-agreement",
     "g:demonstratives",
@@ -146,13 +139,10 @@
     "g:present-ar",
     "g:present-er-ir",
     "g:preterite-ar",
-    "g:questions",
     "g:reflexive-routine",
     "g:ser-identity",
     "g:stem-e-i",
     "p:aqui-ahi-alla",
-    "p:bien-bueno",
-    "p:bien-mal-vs-bueno-malo",
     "p:cerca-de",
     "p:con-sin",
     "p:cuando-basic",
@@ -161,7 +151,6 @@
     "p:frequency-scale",
     "p:indefinites-basic",
     "p:otro-no-article",
-    "p:personal-a",
     "p:position-de",
     "p:possessives-basic",
     "p:prep-questions-basic",
@@ -173,27 +162,18 @@
     "p:viejo-antiguo-mayor"
   ],
   "lexemes": [
-    "l:aeropuerto",
     "l:ahora",
-    "l:allá",
     "l:almojábana",
     "l:aquí",
-    "l:avión",
     "l:año",
-    "l:barrer",
-    "l:bueno",
     "l:café",
-    "l:calle",
     "l:canción",
     "l:cantar",
     "l:casa",
     "l:celular",
     "l:cerrar",
-    "l:chica",
-    "l:ciudad",
     "l:comprar",
     "l:conseguir",
-    "l:dejar",
     "l:delante",
     "l:después",
     "l:domingo",
@@ -201,33 +181,23 @@
     "l:escribir",
     "l:estar",
     "l:gafas",
-    "l:gritar",
     "l:hablar",
     "l:hija",
     "l:hoy",
     "l:llegar",
-    "l:llevarse",
-    "l:mal",
     "l:mano",
     "l:marzo",
-    "l:mesa",
     "l:mijo",
     "l:mirar",
-    "l:momento",
     "l:mostrador",
     "l:mudarse",
     "l:mujer",
     "l:niña",
     "l:niño",
-    "l:nombre",
     "l:obediente",
-    "l:papá",
     "l:pelear",
     "l:pico",
-    "l:piso",
     "l:poner",
-    "l:portarse",
-    "l:quedarse",
     "l:querer",
     "l:qué",
     "l:reír",
@@ -237,12 +207,8 @@
     "l:tener",
     "l:terminar",
     "l:tinto",
-    "l:tomar",
-    "l:torta",
-    "l:trabajar",
     "l:travieso",
     "l:vecino",
-    "l:venir",
     "l:ventana",
     "l:vez",
     "l:viejo",
