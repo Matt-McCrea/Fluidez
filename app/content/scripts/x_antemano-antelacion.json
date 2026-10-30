@@ -1,0 +1,91 @@
+{
+  "node": "x:antemano-antelacion",
+  "hook": {
+    "line": "Tomás is writing to the city office about the cooperative, and the last line of the email needs an \"in advance\". Spanish has two, and they are not interchangeable: one is for thanking and knowing, the other for leaving yourself time.",
+    "es": "Gracias de antemano.",
+    "en": "Thanks in advance."
+  },
+  "examples": [
+    { "es": "Gracias de antemano.", "en": "Thanks in advance." },
+    { "es": "Les agradezco de antemano su respuesta.", "en": "I thank you all in advance for your reply. (formal)" },
+    { "es": "Lo sabía de antemano.", "en": "I knew it beforehand." },
+    { "es": "Reserve con antelación.", "en": "Book in advance. (formal)" },
+    { "es": "Hay que pagar con antelación.", "en": "You have to pay in advance." },
+    { "es": "Avíseme con antelación, por favor.", "en": "Please let me know in advance. (formal)" }
+  ],
+  "rule": "English uses \"in advance\" for everything. Spanish splits it in two.\n\n*de antemano*: before something happens, you already feel it, know it or say it. Thanking, knowing, apologising, expecting: *gracias de antemano*, *lo sabía de antemano*.\n\n*con antelación*: you act early and leave real time before a date. Booking, paying, warning, arriving: *reservar con antelación*, *avisar con antelación*.\n\nA quick test: if you are leaving a margin before a deadline, it is *con antelación*. If it is a thought or a feeling that comes before the event, it is *de antemano*. In everyday speech *con anticipación* is a common twin of *con antelación*.",
+  "smallPrint": "Both are adverbial phrases. *De antemano* is also a standing phrase in formal letters; *con antelación* is the standard one for notices and bookings.",
+  "readAndPick": [
+    { "es": "Gracias de antemano.", "options": ["Thanks in advance, before you've even done it.", "Thanks for booking early."], "answer": 0 },
+    { "es": "Reserve con antelación.", "options": ["Thank me beforehand. (formal)", "Book in advance. (formal)"], "answer": 1 },
+    { "es": "Hay que pagar con antelación.", "options": ["You have to pay in advance.", "You have to thank people beforehand."], "answer": 0 },
+    { "es": "Lo sabía de antemano.", "options": ["I booked it early.", "I knew it beforehand."], "answer": 1 },
+    { "es": "Les agradezco de antemano su respuesta.", "options": ["I'll reply to you all with time to spare. (formal)", "I thank you all in advance for your reply. (formal)"], "answer": 1 },
+    { "es": "Avíseme con antelación, por favor.", "options": ["Please let me know afterwards. (formal)", "Please let me know in advance. (formal)"], "answer": 1 },
+    { "es": "Sé de antemano que va a decir que no.", "options": ["I already know he'll say no.", "I'll leave time in case he says no."], "answer": 0 },
+    { "es": "Dígame con antelación si no puede venir.", "options": ["Tell me ahead of time if you can't come. (formal)", "Tell me afterwards if you can't come. (formal)"], "answer": 0 },
+    { "es": "Pagamos con antelación para tener la sala.", "options": ["We paid after getting the room.", "We paid ahead of time to get the room."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *de antemano* or *con antelación* and type the whole sentence: Gracias ___.",
+      "answer": "Gracias de antemano.",
+      "accept": [],
+      "why": "Thanking is a feeling that comes before the event: *de antemano*."
+    },
+    {
+      "prompt": "Choose *de antemano* or *con antelación* and type the whole sentence: Hay que reservar ___.",
+      "answer": "Hay que reservar con antelación.",
+      "accept": [],
+      "why": "Booking leaves time before a date: *con antelación*."
+    },
+    {
+      "prompt": "Say (formal, to one person): Please let me know in advance.",
+      "answer": "Avíseme con antelación, por favor.",
+      "accept": ["Por favor, avíseme con antelación.", "Avíseme con anticipación, por favor."],
+      "why": "A warning only helps if it comes early, so *con antelación*."
+    },
+    {
+      "prompt": "Say (formal, to several people): I thank you in advance for your reply.",
+      "answer": "Les agradezco de antemano su respuesta.",
+      "accept": ["Les agradezco de antemano la respuesta."],
+      "why": "Thanks before the reply is *de antemano*, and *les* is for several people."
+    },
+    {
+      "prompt": "Say: You have to pay in advance.",
+      "answer": "Hay que pagar con antelación.",
+      "accept": [],
+      "why": "Paying early is leaving a margin: *con antelación*."
+    },
+    {
+      "prompt": "Make it formal, to one person: *Gracias de antemano por la respuesta.*",
+      "answer": "Le agradezco de antemano la respuesta.",
+      "accept": ["Le agradezco de antemano su respuesta."],
+      "why": "*Le agradezco* is the formal \"I thank you\", and *de antemano* stays."
+    },
+    {
+      "prompt": "Make it past: *Sé de antemano que va a decir que no.* (I knew beforehand that he would say no.)",
+      "answer": "Sabía de antemano que iba a decir que no.",
+      "accept": [],
+      "why": "Knowing beforehand is still *de antemano*; only the verbs move to the past."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Gracias con antelación.",
+      "right": "Gracias de antemano.",
+      "why": "Almost. Thanks is not a booking; for thanking before the event Spanish uses *de antemano*."
+    },
+    {
+      "wrong": "Gracias en avance.",
+      "right": "Gracias de antemano.",
+      "why": "Almost. *En avance* is a copy of the English; the Spanish phrase is *de antemano*."
+    },
+    {
+      "wrong": "Lo sabía con antelación.",
+      "right": "Lo sabía de antemano.",
+      "why": "Almost. Knowing is not leaving time before a deadline, so *de antemano*."
+    }
+  ],
+  "personal": "Think of something you booked or paid for early, and something you knew was going to happen. Say both, one with *con antelación* and one with *de antemano*."
+}

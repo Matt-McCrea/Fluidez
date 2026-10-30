@@ -1,0 +1,91 @@
+{
+  "node": "p:por-consenso",
+  "hook": {
+    "line": "The cooperative is being set up, and every meeting ends with someone asking how the thing was decided. Three little frames will answer that for you, whether you are reading the minutes or writing them.",
+    "es": "Se aprobó por consenso.",
+    "en": "It was approved by consensus."
+  },
+  "examples": [
+    { "es": "Se aprobó por consenso.", "en": "It was approved by consensus." },
+    { "es": "Decidimos por consenso, no por votación.", "en": "We decided by consensus, not by a vote." },
+    { "es": "La junta dio el visto bueno.", "en": "The board gave the green light." },
+    { "es": "El propietario dio su consentimiento.", "en": "The owner gave his consent." },
+    { "es": "Todos dieron su aprobación.", "en": "Everyone gave their approval." },
+    { "es": "Sin el visto bueno de la junta, no firmamos el contrato.", "en": "Without the board's approval, we don't sign the contract." }
+  ],
+  "rule": "Formal Spanish says how a decision was reached with *por*, and it has no article: *por consenso*, *por unanimidad*. English says \"by consensus\" too, so this one is easy.\n\nTo say who approved something, Spanish *gives* it, just as English gives the green light:\n*dar el visto bueno*: the general green light\n*dar su aprobación*: formal approval\n*dar su consentimiento*: permission for one specific thing\n\n*Consenso* is the whole group agreeing, with nobody voting against.",
+  "smallPrint": "These are fixed collocations of formal and administrative writing. *Consenso* is the collective agreement, *aprobación* the approval, *consentimiento* the permission.",
+  "readAndPick": [
+    { "es": "Decidimos por consenso, no por votación.", "options": ["We reached agreement without a vote.", "We settled it with a vote."], "answer": 0 },
+    { "es": "No hubo consenso, así que votamos.", "options": ["There was agreement, so we didn't vote.", "There was no agreement, so we voted."], "answer": 1 },
+    { "es": "Hubo consenso, así que no votamos.", "options": ["There was agreement, so we didn't vote.", "There was no agreement, so we voted."], "answer": 0 },
+    { "es": "La junta dio el visto bueno.", "options": ["The board rejected it.", "The board gave the green light.", "The board postponed it."], "answer": 1 },
+    { "es": "La junta no dio el visto bueno.", "options": ["The board didn't give the green light.", "The board gave the green light."], "answer": 0 },
+    { "es": "El propietario dio su consentimiento.", "options": ["The owner asked for consent.", "The owner gave his consent."], "answer": 1 },
+    { "es": "¿Quién dio el visto bueno?", "options": ["Who asked for approval?", "Who gave the green light?"], "answer": 1 },
+    { "es": "Sin el visto bueno de la junta, no firmamos el contrato.", "options": ["Without the board's approval, we don't sign the contract.", "With the board's approval, we sign the contract."], "answer": 0 },
+    { "es": "Con el visto bueno de la junta, firmamos el contrato.", "options": ["Without the board's approval, we don't sign the contract.", "With the board's approval, we sign the contract."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *por* or *en* and type the whole sentence: Se aprobó ___ consenso.",
+      "answer": "Se aprobó por consenso.",
+      "accept": [],
+      "why": "How a decision was reached takes *por*, with no article."
+    },
+    {
+      "prompt": "Choose *consenso* or *consentimiento* and type the whole sentence: El propietario dio su ___.",
+      "answer": "El propietario dio su consentimiento.",
+      "accept": [],
+      "why": "One person giving permission is *consentimiento*; *consenso* is a whole group agreeing."
+    },
+    {
+      "prompt": "Say: It was decided by consensus.",
+      "answer": "Se decidió por consenso.",
+      "accept": [],
+      "why": "*Se decidió* is the \"it was decided\" form, then *por consenso*."
+    },
+    {
+      "prompt": "Say: The board gave the green light.",
+      "answer": "La junta dio el visto bueno.",
+      "accept": ["La junta dio su aprobación."],
+      "why": "Spanish *gives* approval too: *dar el visto bueno*."
+    },
+    {
+      "prompt": "Say: We didn't give our approval. (We, the group.)",
+      "answer": "No dimos nuestra aprobación.",
+      "accept": ["No dimos el visto bueno."],
+      "why": "*No* goes right before *dimos*, and *nuestra* matches *aprobación*."
+    },
+    {
+      "prompt": "Make it negative: *La junta dio el visto bueno.*",
+      "answer": "La junta no dio el visto bueno.",
+      "accept": [],
+      "why": "*No* goes right before the verb."
+    },
+    {
+      "prompt": "Make it about *we*: *Decidieron por consenso.*",
+      "answer": "Decidimos por consenso.",
+      "accept": [],
+      "why": "*Decidimos* is the *we* form of the past; *por consenso* stays as it is."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Se aprobó con consenso.",
+      "right": "Se aprobó por consenso.",
+      "why": "Almost. The way a decision was reached is always *por*."
+    },
+    {
+      "wrong": "Se aprobó por el consenso.",
+      "right": "Se aprobó por consenso.",
+      "why": "Almost. The frame has no article, just like English \"by consensus\"."
+    },
+    {
+      "wrong": "La junta hizo el visto bueno.",
+      "right": "La junta dio el visto bueno.",
+      "why": "Almost. Approval is something you give, so the verb is *dar*."
+    }
+  ],
+  "personal": "Think of a decision your family or your team made together. Say how it was decided, starting with *Decidimos por consenso* or *Lo decidimos por votación*."
+}
