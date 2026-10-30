@@ -1,0 +1,171 @@
+{
+  "node": "p:me-pongo-triste-cuando",
+  "hook": {
+    "line": "Every café has a song that gets someone. When Tomás hears one of Rosa's old boleros, his whole face changes, and the regulars notice. Here is how to say what reliably does that to you.",
+    "es": "Me pongo triste cuando oigo esa canción.",
+    "en": "I get sad when I hear that song."
+  },
+  "examples": [
+    {
+      "es": "Me pongo triste cuando oigo esa canción.",
+      "en": "I get sad when I hear that song."
+    },
+    {
+      "es": "Se pone brava cuando la comparan con su hermana.",
+      "en": "She gets angry when they compare her to her sister."
+    },
+    {
+      "es": "Tomás se pone contento cuando llega Vale.",
+      "en": "Tomás gets happy when Vale arrives."
+    },
+    {
+      "es": "¿Te pones rojo cuando hablas con ella?",
+      "en": "Do you go red when you talk to her? (to a friend)"
+    },
+    {
+      "es": "Mariana se pone seria cuando habla de Altamira.",
+      "en": "Mariana gets serious when she talks about Altamira."
+    },
+    {
+      "es": "Ahora estoy triste.",
+      "en": "I'm sad right now."
+    }
+  ],
+  "rule": "To say a feeling comes over you every time something happens, use *ponerse* + the feeling + *cuando* + what sets it off: *me pongo triste cuando oigo esa canción*.\n\nEnglish says *I'm sad when...*, which sounds like a fixed fact. Spanish treats it as a change each time, so it uses *me pongo*, not *soy*. The describing word still agrees: *se pone brava* for a woman.\n\nFor how you feel right now, nothing changes: *estoy triste*.",
+  "smallPrint": "Teachers call *ponerse* + adjective a verb of change. With *cuando* it describes a habitual reaction.",
+  "readAndPick": [
+    {
+      "es": "Me pongo triste cuando oigo esa canción.",
+      "options": [
+        "I get sad every time I hear that song.",
+        "I'm sad right now because of that song."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se pone brava cuando la comparan con su hermana.",
+      "options": [
+        "They get angry when they compare her.",
+        "She gets angry when they compare her to her sister.",
+        "I get angry when they compare me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Te pones rojo cuando hablas con ella?",
+      "options": [
+        "Do I go red when I talk to her?",
+        "Does he go red when he talks to her?",
+        "Do you go red when you talk to her?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Ahora estoy triste.",
+      "options": [
+        "I'm sad right now.",
+        "I get sad whenever it rains."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nos ponemos tristes cuando se va Vale.",
+      "options": [
+        "I get sad when Vale leaves.",
+        "We get sad when Vale leaves.",
+        "They get sad when Vale leaves."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No me pongo triste cuando llueve.",
+      "options": [
+        "I'm not sad right now.",
+        "It doesn't rain when I'm sad.",
+        "I don't get sad when it rains."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Hoy me puse triste.",
+      "options": [
+        "Today I got sad.",
+        "I get sad every day."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mariana se pone seria cuando habla de Altamira.",
+      "options": [
+        "Mariana got serious yesterday.",
+        "Mariana gets serious whenever she talks about Altamira.",
+        "Mariana is a serious person."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Fill the gap and type the whole sentence: Tomás ___ contento cuando llega Vale. (está / se pone)",
+      "answer": "Tomás se pone contento cuando llega Vale.",
+      "accept": [],
+      "why": "It changes each time Vale arrives, so *se pone*."
+    },
+    {
+      "prompt": "Fill the gap and type the whole sentence: Ahora ___ triste. (estoy / me pongo)",
+      "answer": "Ahora estoy triste.",
+      "accept": [],
+      "why": "For how you feel right now, use *estoy*."
+    },
+    {
+      "prompt": "Say: I get sad when I hear that song.",
+      "answer": "Me pongo triste cuando oigo esa canción.",
+      "accept": [
+        "Cuando oigo esa canción, me pongo triste."
+      ],
+      "why": "*Me pongo* + the feeling + *cuando* + what sets it off."
+    },
+    {
+      "prompt": "Ask a friend: Do you go red when you talk to her?",
+      "answer": "¿Te pones rojo cuando hablas con ella?",
+      "accept": [],
+      "why": "*Te pones* is for a friend, and *hablas* matches *tú*."
+    },
+    {
+      "prompt": "Say: Mariana gets serious when she talks about Altamira.",
+      "answer": "Mariana se pone seria cuando habla de Altamira.",
+      "accept": [],
+      "why": "*Seria* is feminine because Mariana is a woman."
+    },
+    {
+      "prompt": "Make it negative: Me pongo triste cuando llueve.",
+      "answer": "No me pongo triste cuando llueve.",
+      "accept": [],
+      "why": "*No* goes right before *me*."
+    },
+    {
+      "prompt": "Say it about we: Me pongo triste cuando se va Vale.",
+      "answer": "Nos ponemos tristes cuando se va Vale.",
+      "accept": [],
+      "why": "*Nos ponemos* for we, and the describing word becomes plural."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Soy triste cuando oigo esa canción.",
+      "right": "Me pongo triste cuando oigo esa canción.",
+      "why": "Almost. *Ser* describes who you are; a reaction that comes and goes is *ponerse*."
+    },
+    {
+      "wrong": "Me pongo triste ahora.",
+      "right": "Estoy triste ahora.",
+      "why": "*Me pongo* is for a change that happens; how you feel at this moment is *estoy*."
+    },
+    {
+      "wrong": "Nos ponemos triste cuando se va.",
+      "right": "Nos ponemos tristes cuando se va.",
+      "why": "The feeling word agrees with *we*, so it becomes plural."
+    }
+  ],
+  "personal": "What song, place or situation makes you change? Say it with *me pongo* + a feeling + *cuando*."
+}

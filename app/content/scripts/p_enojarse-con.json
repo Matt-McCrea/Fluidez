@@ -1,0 +1,180 @@
+{
+  "node": "p:enojarse-con",
+  "hook": {
+    "line": "Colombians rarely say someone is *angry*. They say the person is *brava*, and then they say with whom. Don Hernando is brava with Altamira all week, and he wants you to know it.",
+    "es": "Estoy bravo con Altamira.",
+    "en": "I'm angry with Altamira."
+  },
+  "examples": [
+    {
+      "es": "Está brava conmigo por la torta.",
+      "en": "She's angry with me about the cake."
+    },
+    {
+      "es": "Se enojó con su hermano por el carro.",
+      "en": "He got angry with his brother about the car."
+    },
+    {
+      "es": "No te pongas bravo conmigo.",
+      "en": "Don't get angry with me."
+    },
+    {
+      "es": "¿Estás enojado conmigo?",
+      "en": "Are you angry with me? (to a friend)"
+    },
+    {
+      "es": "Don Hernando está bravo con Altamira.",
+      "en": "Don Hernando is angry with Altamira."
+    },
+    {
+      "es": "Mariana está enojada con Tomás por el precio.",
+      "en": "Mariana is angry with Tomás about the price."
+    }
+  ],
+  "rule": "Anger has two parts: who and why. Use *con* for the person, *por* for the reason: *está brava conmigo por la torta*.\n\nTwo ways in: *estar enojado* or *bravo* for the state, *enojarse* or *ponerse bravo* for the moment it starts. In Colombia, *bravo* is everyday.\n\nAfter *con*, *me* and *te* become *conmigo* and *contigo*: *no te pongas bravo conmigo*.\n\nThe describing word agrees: *brava*, *enojada*.",
+  "smallPrint": "Teachers call *conmigo* and *contigo* special prepositional forms. *Enojarse* is Latin American; Spain says *enfadarse*.",
+  "readAndPick": [
+    {
+      "es": "Está brava conmigo por la torta.",
+      "options": [
+        "She's angry with me about the cake.",
+        "I am angry with her about the cake.",
+        "She's angry with you about the cake."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Estás enojado conmigo?",
+      "options": [
+        "Is he angry with me?",
+        "Are you angry with me?",
+        "Am I angry with you?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Don Hernando está bravo con Altamira.",
+      "options": [
+        "Altamira is angry with Don Hernando.",
+        "Don Hernando is angry with Altamira.",
+        "Don Hernando is brave."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Estoy enojada contigo.",
+      "options": [
+        "I'm angry with you. (a woman speaking)",
+        "You're angry with me.",
+        "I'm angry with him."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se enojó con su hermano por el carro.",
+      "options": [
+        "He got angry with his brother about the car.",
+        "His brother got angry with him about the car.",
+        "He got angry with his brother about the bus."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No te pongas bravo conmigo.",
+      "options": [
+        "Don't get angry with me.",
+        "Don't get angry with him.",
+        "I'm not angry with you."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mariana está enojada con Tomás por el precio.",
+      "options": [
+        "Mariana is angry with Tomás about the price.",
+        "Tomás is angry with Mariana about the price.",
+        "Mariana is angry about Tomás' price."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me puse bravo con él por la plata.",
+      "options": [
+        "I got angry with him about the money.",
+        "He got angry with me about the money.",
+        "I'm angry with him now."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Fill the gap and type the whole sentence: ¿Estás enojado ___? (con tú / conmigo)",
+      "answer": "¿Estás enojado conmigo?",
+      "accept": [],
+      "why": "When the person is *me*, *con* + *mí* becomes *conmigo*."
+    },
+    {
+      "prompt": "Fill the gap and type the whole sentence: Está brava ___ el precio. (por / con)",
+      "answer": "Está brava por el precio.",
+      "accept": [],
+      "why": "*Por* introduces the reason; *con* is for the person."
+    },
+    {
+      "prompt": "Say: Don Hernando is angry with Altamira.",
+      "answer": "Don Hernando está bravo con Altamira.",
+      "accept": [
+        "Don Hernando está enojado con Altamira."
+      ],
+      "why": "*Está bravo* for the state, *con* for the person."
+    },
+    {
+      "prompt": "Say: She's angry with me about the cake.",
+      "answer": "Está brava conmigo por la torta.",
+      "accept": [
+        "Está enojada conmigo por la torta."
+      ],
+      "why": "*Conmigo* for the person, *por* for the reason."
+    },
+    {
+      "prompt": "Say, to a friend: Don't get angry with me.",
+      "answer": "No te pongas bravo conmigo.",
+      "accept": [
+        "No te pongas enojado conmigo."
+      ],
+      "why": "A negative command uses *no te pongas*."
+    },
+    {
+      "prompt": "Say: Mariana is angry with Tomás about the price.",
+      "answer": "Mariana está enojada con Tomás por el precio.",
+      "accept": [
+        "Mariana está brava con Tomás por el precio."
+      ],
+      "why": "*Enojada* agrees with Mariana, a woman."
+    },
+    {
+      "prompt": "Make it negative: Estoy enojado contigo.",
+      "answer": "No estoy enojado contigo.",
+      "accept": [],
+      "why": "*No* goes before *estoy*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Estoy enojado con mí.",
+      "right": "Estoy enojado conmigo.",
+      "why": "Almost. With *con*, *mí* fuses into one word: *conmigo*."
+    },
+    {
+      "wrong": "Está brava de Tomás.",
+      "right": "Está brava con Tomás.",
+      "why": "English says *angry at*; Spanish uses *con* for the person."
+    },
+    {
+      "wrong": "Estoy brava con el ruido.",
+      "right": "Estoy brava por el ruido.",
+      "why": "*Con* is for people; for the reason, use *por*."
+    }
+  ],
+  "personal": "Is there anyone you were angry with this week? Say who and why, using *con* for the person and *por* for the reason."
+}

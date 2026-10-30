@@ -1,0 +1,166 @@
+{
+  "node": "x:molesta-vs-no-soporto",
+  "hook": {
+    "line": "Tomás keeps arriving late, and Vale has two ways to tell him. One is gentle and leaves room to joke. The other closes the door. Choosing wrongly turns a small complaint into a fight.",
+    "es": "Me molesta un poco que cierres tan tarde.",
+    "en": "It bothers me a little that you close so late."
+  },
+  "examples": [
+    {
+      "es": "Me molesta un poco que hablen tan fuerte.",
+      "en": "It bothers me a little that they talk so loudly."
+    },
+    {
+      "es": "Me molesta muchísimo que Simón grite.",
+      "en": "It bothers me a lot that Simón screams."
+    },
+    {
+      "es": "No soporto que me griten.",
+      "en": "I can't stand it when people shout at me."
+    },
+    {
+      "es": "No soporto que me mientan.",
+      "en": "I can't stand it when people lie to me."
+    },
+    {
+      "es": "¿Te molesta que abra la ventana?",
+      "en": "Does it bother you if I open the window? (to a friend)"
+    },
+    {
+      "es": "Me molesta bastante que no avisen.",
+      "en": "It bothers me quite a bit that they don't let us know."
+    }
+  ],
+  "rule": "Two ways to complain, and one has volume control.\n\n*Me molesta* comes in sizes: *un poco*, *bastante*, *mucho*, *muchísimo*. It is good for small things and for polite questions: *¿te molesta que abra la ventana?*\n\n*No soporto* is already at the top. There is no half of it, so never add *un poco*. It says: that is the limit.\n\nBoth are followed by *que* and a verb in the *-e* or *-a* form that you know from feelings: *hablen*, *griten*.",
+  "smallPrint": "Teachers call this gradable versus non-gradable: *molestar* can be scaled, *no soportar* cannot.",
+  "readAndPick": [
+    {
+      "es": "Me molesta un poco que hablen tan fuerte.",
+      "options": [
+        "It bothers me a little that they talk so loudly.",
+        "I can't stand that they talk so loudly."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No soporto que me mientan.",
+      "options": [
+        "It bothers me a little that people lie to me.",
+        "I can't stand it when people lie to me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me molesta muchísimo que Simón grite.",
+      "options": [
+        "It bothers me a little that Simón screams.",
+        "It bothers me a lot that Simón screams."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Te molesta que abra la ventana?",
+      "options": [
+        "Do you mind if I open the window?",
+        "Can't you stand it when I open the window?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No soporto que Altamira compre la cuadra.",
+      "options": [
+        "It bothers me a bit that Altamira buys the block.",
+        "I can't stand that Altamira is buying the block."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me molesta bastante que no avisen.",
+      "options": [
+        "It bothers me quite a bit that they don't let us know.",
+        "I can't stand that they don't let us know."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No soporto que interrumpan.",
+      "options": [
+        "I can't stand it when people interrupt.",
+        "It bothers me a little when people interrupt."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me molesta un poco que no llamen.",
+      "options": [
+        "I can't stand that they don't call.",
+        "It bothers me a little that they don't call."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "A little bothered. Fill the gap and type the sentence: ___ que hablen tan fuerte. (Me molesta un poco / No soporto)",
+      "answer": "Me molesta un poco que hablen tan fuerte.",
+      "accept": [],
+      "why": "*Un poco* only works with *molesta*."
+    },
+    {
+      "prompt": "You can't take it. Fill the gap and type the sentence: ___ que me mientan. (Me molesta un poco / No soporto)",
+      "answer": "No soporto que me mientan.",
+      "accept": [],
+      "why": "*No soporto* is the full limit."
+    },
+    {
+      "prompt": "Say: It bothers me a lot that Simón screams.",
+      "answer": "Me molesta muchísimo que Simón grite.",
+      "accept": [
+        "Me molesta mucho que Simón grite."
+      ],
+      "why": "*Muchísimo* turns the volume up, and *molesta* allows it."
+    },
+    {
+      "prompt": "Ask a friend: Do you mind if I open the window?",
+      "answer": "¿Te molesta que abra la ventana?",
+      "accept": [],
+      "why": "*Te molesta que* + the verb in its *-e* or *-a* form is the polite way to ask."
+    },
+    {
+      "prompt": "Say: I can't stand it when they shout at me.",
+      "answer": "No soporto que me griten.",
+      "accept": [],
+      "why": "*No soporto que* + a verb in its *-e* or *-a* form."
+    },
+    {
+      "prompt": "Make it milder: No soporto que hablen tan fuerte.",
+      "answer": "Me molesta un poco que hablen tan fuerte.",
+      "accept": [],
+      "why": "Only *molesta* can be turned down with *un poco*."
+    },
+    {
+      "prompt": "Make it polite, to an older lady: ¿Te molesta que abra la ventana?",
+      "answer": "¿Le molesta que abra la ventana?",
+      "accept": [],
+      "why": "*Le* is the polite you."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No soporto un poco que me griten.",
+      "right": "Me molesta un poco que me griten.",
+      "why": "Almost. *No soporto* has no size, so *un poco* doesn't fit; *molesta* does."
+    },
+    {
+      "wrong": "Me molesto que hablen tan fuerte.",
+      "right": "Me molesta que hablen tan fuerte.",
+      "why": "The thing that bothers you is the subject, like *gustar*: *me molesta*."
+    },
+    {
+      "wrong": "Me molesta que me gritan.",
+      "right": "Me molesta que me griten.",
+      "why": "After *me molesta que*, the verb takes its *-e* form: *griten*."
+    }
+  ],
+  "personal": "What bothers you a little, and what can you not stand? Say one of each: *me molesta un poco que...* and *no soporto que...*."
+}

@@ -1,0 +1,192 @@
+{
+  "node": "g:verbs-of-change",
+  "hook": {
+    "line": "English says *get*, *go* and *become* for everything: get red, go quiet, become a doctor. Spanish picks a different verb for each kind of change, and Tomás needs them to tell Rosa's regulars how the news hit everyone.",
+    "es": "Don Hernando se quedó callado.",
+    "en": "Don Hernando went quiet."
+  },
+  "examples": [
+    {
+      "es": "Me puse rojo.",
+      "en": "I went red."
+    },
+    {
+      "es": "Tomás se puso muy contento.",
+      "en": "Tomás got very happy."
+    },
+    {
+      "es": "Don Hernando se quedó callado.",
+      "en": "Don Hernando went quiet."
+    },
+    {
+      "es": "Mariana se volvió muy seria.",
+      "en": "Mariana became very serious."
+    },
+    {
+      "es": "Vale quiere hacerse famosa.",
+      "en": "Vale wants to become famous."
+    },
+    {
+      "es": "¿Por qué te pones rojo?",
+      "en": "Why do you go red? (to a friend)"
+    }
+  ],
+  "rule": "Where English has one word, Spanish has four, and each says how the change happened:\n\n*Ponerse* + a word for a mood or colour: it hits you, then passes. *Me puse rojo. Se puso contento.*\n*Quedarse* + a word for a state: you end up that way and stay a while. *Se quedó callado.*\n*Volverse* + a word for character: a deeper change, slow and lasting. *Se volvió muy seria.*\n*Hacerse* + a job or status: you worked for it. *Quiere hacerse famosa.*\n\nThey are all reflexive, so *me, te, se, nos* come first. *Ponerse* is irregular: *me pongo*, *me puse*. Then the describing word agrees with the person: *callado*, *callada*, *callados*.",
+  "smallPrint": "Teachers call these verbs of change, or becoming verbs. Each one takes a describing word or a noun straight after it.",
+  "readAndPick": [
+    {
+      "es": "Me puse rojo.",
+      "options": [
+        "I stayed quiet.",
+        "I went red.",
+        "I became a doctor."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se quedó callado.",
+      "options": [
+        "He went quiet.",
+        "He went red.",
+        "He became rich."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mariana se volvió muy seria.",
+      "options": [
+        "Mariana blushed.",
+        "Mariana went quiet.",
+        "Mariana became a very serious person."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Quiere hacerse médico.",
+      "options": [
+        "He wants to become a doctor.",
+        "He wants to go quiet.",
+        "He wants to go red."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nos pusimos muy contentos.",
+      "options": [
+        "I got very happy.",
+        "We got very happy.",
+        "They got very happy."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Te pusiste rojo?",
+      "options": [
+        "Did I go red?",
+        "Did he go red?",
+        "Did you go red?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Se quedaron callados.",
+      "options": [
+        "They went quiet.",
+        "She went quiet.",
+        "We went quiet."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se hizo rico trabajando.",
+      "options": [
+        "He went red.",
+        "He became rich by working.",
+        "He stayed rich."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me quedé sorprendido.",
+      "options": [
+        "I was left surprised.",
+        "I got a surprise for her.",
+        "He was left surprised."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Fill the gap with the right form and type the whole sentence: Tomás ___ rojo. (se puso / se quedó)",
+      "answer": "Tomás se puso rojo.",
+      "accept": [],
+      "why": "A blush just happens and passes, so *ponerse*."
+    },
+    {
+      "prompt": "Fill the gap and type the whole sentence: Don Hernando ___ callado. (se puso / se quedó)",
+      "answer": "Don Hernando se quedó callado.",
+      "accept": [],
+      "why": "He ends up in the state of silence, so *quedarse*."
+    },
+    {
+      "prompt": "Say: I went red.",
+      "answer": "Me puse rojo.",
+      "accept": [
+        "Me puse roja."
+      ],
+      "why": "A colour that appears suddenly uses *ponerse*."
+    },
+    {
+      "prompt": "Say: Mariana became very serious.",
+      "answer": "Mariana se volvió muy seria.",
+      "accept": [],
+      "why": "A change of character uses *volverse*."
+    },
+    {
+      "prompt": "Say: Vale wants to become famous.",
+      "answer": "Vale quiere hacerse famosa.",
+      "accept": [
+        "Vale se quiere hacer famosa."
+      ],
+      "why": "Becoming something through effort uses *hacerse*."
+    },
+    {
+      "prompt": "Make it negative: Me puse rojo.",
+      "answer": "No me puse rojo.",
+      "accept": [],
+      "why": "*No* goes right before *me*."
+    },
+    {
+      "prompt": "Say it about we: Me quedé callado. (we, all men)",
+      "answer": "Nos quedamos callados.",
+      "accept": [
+        "Nos quedamos callado."
+      ],
+      "why": "*Nos* and *quedamos* change, and the describing word becomes plural."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me hice rojo.",
+      "right": "Me puse rojo.",
+      "why": "Almost. *Hacerse* is for something you work toward; a blush just happens, so *ponerse*."
+    },
+    {
+      "wrong": "Me puse médico.",
+      "right": "Me hice médico.",
+      "why": "A job takes effort, so use *hacerse*, not *ponerse*."
+    },
+    {
+      "wrong": "Se puso callado.",
+      "right": "Se quedó callado.",
+      "why": "Staying in a state is *quedarse*; *ponerse* is more like a quick reaction."
+    },
+    {
+      "wrong": "Se puso famoso.",
+      "right": "Se volvió famoso.",
+      "why": "Becoming famous is a lasting change, so *volverse* fits better than *ponerse*."
+    }
+  ],
+  "personal": "Think of a moment when you suddenly went red, fell silent or got very happy. Say what happened: *Me puse...* or *Me quedé...*."
+}

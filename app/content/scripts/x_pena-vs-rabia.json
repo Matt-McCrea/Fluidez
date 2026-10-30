@@ -1,0 +1,166 @@
+{
+  "node": "x:pena-vs-rabia",
+  "hook": {
+    "line": "When Rosa's block gets sold, the regulars react in two completely different ways. Some go quiet and sad, others get loud. The sentence frame is the same; one word swaps the feeling.",
+    "es": "Me da pena que se vaya.",
+    "en": "It makes me sad that she's leaving."
+  },
+  "examples": [
+    {
+      "es": "Me da pena que se vaya.",
+      "en": "It makes me sad that she's leaving."
+    },
+    {
+      "es": "Me da rabia que se vaya sin avisar.",
+      "en": "It makes me mad that she's leaving without telling anyone."
+    },
+    {
+      "es": "Me da pena que Rosa ya no esté.",
+      "en": "It makes me sad that Rosa is no longer here."
+    },
+    {
+      "es": "Me da rabia que Altamira compre la cuadra.",
+      "en": "It makes me mad that Altamira is buying the block."
+    },
+    {
+      "es": "¿Te da pena que se vaya Vale?",
+      "en": "Does it make you sad that Vale is leaving? (to a friend)"
+    },
+    {
+      "es": "Me da rabia que me mientan.",
+      "en": "It makes me mad that people lie to me."
+    }
+  ],
+  "rule": "One frame, two opposite feelings.\n\n*Me da pena que...* is sadness: a loss, a pity, something you wish were different. *Me da rabia que...* is anger: something unfair or disrespectful.\n\nEverything else stays the same. *Da* is the verb in both, then *que*, then the *-e* or *-a* form of the verb: *se vaya*, *compre*, *mientan*.\n\nAsk yourself: do I want to cry or shout? Pick the matching word.\n\nIn *me da pena*, English says *it makes me sad*, with no *da*.",
+  "smallPrint": "Teachers call these emotion expressions that take the subjunctive (the *-e* or *-a* verb form) after *que*.",
+  "readAndPick": [
+    {
+      "es": "Me da pena que se vaya.",
+      "options": [
+        "It makes me sad that she's leaving.",
+        "It makes me mad that she's leaving."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me da rabia que se vaya sin avisar.",
+      "options": [
+        "It makes me sad that she's leaving without telling anyone.",
+        "It makes me mad that she's leaving without telling anyone."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me da pena que cierren el café.",
+      "options": [
+        "It makes me mad that they're closing the café.",
+        "It makes me sad that they're closing the café."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me da rabia que Altamira compre la cuadra.",
+      "options": [
+        "It makes me mad that Altamira is buying the block.",
+        "It makes me sad that Altamira is buying the block."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me da pena que Rosa ya no esté.",
+      "options": [
+        "It makes me mad that Rosa is no longer here.",
+        "It makes me sad that Rosa is no longer here."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me da rabia que no avisen.",
+      "options": [
+        "It makes me mad that they don't let us know.",
+        "It makes me sad that they don't let us know."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Te da pena que se vaya Vale?",
+      "options": [
+        "Does it make you mad that Vale is leaving?",
+        "Does it make you sad that Vale is leaving?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me da rabia que me mientan.",
+      "options": [
+        "It makes me sad that people lie to me.",
+        "It makes me mad that people lie to me."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Sad. Fill the gap and type the sentence: ___ que cierren el café. (Me da pena / Me da rabia)",
+      "answer": "Me da pena que cierren el café.",
+      "accept": [],
+      "why": "Loss and pity call for *pena*."
+    },
+    {
+      "prompt": "Angry. Fill the gap and type the sentence: ___ que me mientan. (Me da pena / Me da rabia)",
+      "answer": "Me da rabia que me mientan.",
+      "accept": [],
+      "why": "Being lied to feels unfair, so *rabia*."
+    },
+    {
+      "prompt": "Say: It makes me sad that Rosa is no longer here.",
+      "answer": "Me da pena que Rosa ya no esté.",
+      "accept": [],
+      "why": "*Me da pena que* + a verb in its *-e* or *-a* form: *esté*."
+    },
+    {
+      "prompt": "Say: It makes me mad that they don't let us know.",
+      "answer": "Me da rabia que no avisen.",
+      "accept": [],
+      "why": "*No* goes before the verb after *que*."
+    },
+    {
+      "prompt": "Ask a friend: Does it make you sad that Vale is leaving?",
+      "answer": "¿Te da pena que se vaya Vale?",
+      "accept": [
+        "¿Te da pena que Vale se vaya?"
+      ],
+      "why": "*Te da* is for a friend."
+    },
+    {
+      "prompt": "Switch the feeling to anger: Me da pena que se vaya.",
+      "answer": "Me da rabia que se vaya.",
+      "accept": [],
+      "why": "Only the feeling word changes."
+    },
+    {
+      "prompt": "Ask an older lady politely: Does it make you mad that he doesn't call?",
+      "answer": "¿Le da rabia que no llame?",
+      "accept": [],
+      "why": "*Le* is the polite you."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me da pena que se va.",
+      "right": "Me da pena que se vaya.",
+      "why": "Almost. After a feeling plus *que*, the verb takes its *-e* or *-a* form."
+    },
+    {
+      "wrong": "Me da triste que se vaya.",
+      "right": "Me da pena que se vaya.",
+      "why": "*Da* goes with a noun like *pena* or *rabia*, not with an adjective like *triste*."
+    },
+    {
+      "wrong": "Me da rabia de que se vaya.",
+      "right": "Me da rabia que se vaya.",
+      "why": "Unlike *me alegro de que*, this one has no *de*."
+    }
+  ],
+  "personal": "Think of one thing that makes you sad and one that makes you mad. Say both: *me da pena que...* and *me da rabia que...*."
+}

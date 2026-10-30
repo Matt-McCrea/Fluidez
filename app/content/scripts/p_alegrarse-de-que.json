@@ -1,0 +1,169 @@
+{
+  "node": "p:alegrarse-de-que",
+  "hook": {
+    "line": "Good news travels fast in a café. When Vale says she's staying, Tomás wants to tell her he's happy about it, and that is more than *I'm happy*.",
+    "es": "Me alegro mucho de que te quedes.",
+    "en": "I'm so glad you're staying."
+  },
+  "examples": [
+    {
+      "es": "Me alegro mucho de que estés bien.",
+      "en": "I'm so glad you're OK. (to a friend)"
+    },
+    {
+      "es": "Me alegro de verte.",
+      "en": "I'm glad to see you. (to a friend)"
+    },
+    {
+      "es": "Me alegro por ti.",
+      "en": "I'm happy for you. (to a friend)"
+    },
+    {
+      "es": "Me alegro muchísimo de que Vale se quede.",
+      "en": "I'm so very glad Vale is staying."
+    },
+    {
+      "es": "Nos alegramos de que sigan aquí.",
+      "en": "We're glad they're still here."
+    },
+    {
+      "es": "¿Te alegras de que venga Mariana?",
+      "en": "Are you glad Mariana is coming? (to a friend)"
+    }
+  ],
+  "rule": "*Me alegro* means *I'm glad*. What comes next depends on what you're glad about.\n\nAn action of yours: *de* + the infinitive. *Me alegro de verte.*\nSomething that happens to someone else: *de que* + the *-e* or *-a* form. *Me alegro de que estés bien.* Never drop the *de*.\nA person: *por*. *Me alegro por ti.*\n\nTurn the volume up with *mucho*, *muchísimo* or *un montón*.\n\n*De que* always takes that *-e* or *-a* form, even for good news you're sure of.",
+  "smallPrint": "Teachers call *alegrarse de que* an expression of emotion that triggers the subjunctive.",
+  "readAndPick": [
+    {
+      "es": "Me alegro mucho de que estés bien.",
+      "options": [
+        "I'm so glad you're OK.",
+        "I'm so glad he's OK."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me alegro de que esté bien.",
+      "options": [
+        "I'm glad you're OK. (to a friend)",
+        "I'm glad she's OK."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me alegro por ti.",
+      "options": [
+        "I'm happy for me.",
+        "I'm happy for you.",
+        "I'm happy for her."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me alegro de verte.",
+      "options": [
+        "I'm glad to see you.",
+        "I'm glad you see me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me alegro muchísimo de que Vale se quede.",
+      "options": [
+        "I'm a bit glad that Vale is staying.",
+        "I'm very glad that Vale is staying."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Te alegras por mí?",
+      "options": [
+        "Are you happy for me?",
+        "Am I happy for you?",
+        "Is he happy for me?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nos alegramos de que sigan aquí.",
+      "options": [
+        "I'm glad you're still here.",
+        "We're glad they're still here.",
+        "They're glad we're still here."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me alegro por Vale.",
+      "options": [
+        "Vale is happy for me.",
+        "I'm happy for Vale."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Fill the gap and type the whole sentence: Me alegro ___ que estés bien. (de / por)",
+      "answer": "Me alegro de que estés bien.",
+      "accept": [],
+      "why": "Before *que*, use *de*."
+    },
+    {
+      "prompt": "Fill the gap and type the whole sentence: Me alegro ___ ti. (de / por)",
+      "answer": "Me alegro por ti.",
+      "accept": [],
+      "why": "For a person, use *por*."
+    },
+    {
+      "prompt": "Say, to a friend: I'm glad to see you.",
+      "answer": "Me alegro de verte.",
+      "accept": [],
+      "why": "For your own action, *de* + the infinitive."
+    },
+    {
+      "prompt": "Say: I'm very glad that Vale is staying.",
+      "answer": "Me alegro muchísimo de que Vale se quede.",
+      "accept": [
+        "Me alegro mucho de que Vale se quede."
+      ],
+      "why": "*De que* + a verb in its *-e* form: *se quede*."
+    },
+    {
+      "prompt": "Say: I'm happy for Vale.",
+      "answer": "Me alegro por Vale.",
+      "accept": [],
+      "why": "*Por* + the person."
+    },
+    {
+      "prompt": "Say it about we: Me alegro de que vengas.",
+      "answer": "Nos alegramos de que vengas.",
+      "accept": [],
+      "why": "*Nos alegramos* for we; the rest stays the same."
+    },
+    {
+      "prompt": "Ask a friend: Are you glad Mariana is coming?",
+      "answer": "¿Te alegras de que venga Mariana?",
+      "accept": [],
+      "why": "*Te alegras* for a friend, and *venga* after *de que*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me alegro que estés bien.",
+      "right": "Me alegro de que estés bien.",
+      "why": "Almost. English has no *of* here, but Spanish needs *de* before *que*."
+    },
+    {
+      "wrong": "Me alegro de que estás bien.",
+      "right": "Me alegro de que estés bien.",
+      "why": "After *de que*, the verb takes its *-e* or *-a* form: *estés*."
+    },
+    {
+      "wrong": "Me alegro de ti.",
+      "right": "Me alegro por ti.",
+      "why": "For a person, use *por*: you're happy on their behalf."
+    }
+  ],
+  "personal": "Think of something good that happened to someone close to you. Say how glad you are: *me alegro mucho de que...* or *me alegro por...*."
+}
