@@ -109,9 +109,9 @@
     {
       "es": "Me quedé sorprendido.",
       "options": [
-        "I was left surprised.",
-        "I got a surprise for her.",
-        "He was left surprised."
+        "I was taken aback.",
+        "I surprised her.",
+        "He was taken aback."
       ],
       "answer": 0
     }
@@ -160,9 +160,7 @@
     {
       "prompt": "Say it about we: Me quedé callado. (we, all men)",
       "answer": "Nos quedamos callados.",
-      "accept": [
-        "Nos quedamos callado."
-      ],
+      "accept": [],
       "why": "*Nos* and *quedamos* change, and the describing word becomes plural."
     }
   ],
@@ -184,8 +182,8 @@
     },
     {
       "wrong": "Se puso famoso.",
-      "right": "Se volvió famoso.",
-      "why": "Becoming famous is a lasting change, so *volverse* fits better than *ponerse*."
+      "right": "Se hizo famoso.",
+      "why": "Fame is a status you reach over time, so *hacerse*; *ponerse* is only for quick moods and colours."
     }
   ],
   "personal": "Think of a moment when you suddenly went red, fell silent or got very happy. Say what happened: *Me puse...* or *Me quedé...*."

@@ -2,7 +2,7 @@
   "id": "ch089",
   "unit": "u30",
   "title": "Binoculares",
-  "text": "El lunes festivo, a las siete, la mesa de Hernando seguía sin gorra, sin periódico y sin Hernando.\nVale: Lo llamé seis veces. Me da miedo que le pase algo.\nTomás: Me imagino. Es mi culpa. Voy a buscarlo.\nA las ocho encontraron la Burra en la Séptima, delante del edificio de Hoteles Altamira. Hernando estaba dentro, con un termo de tinto y unos binoculares.\nVale: ¡Qué alivio! Pensé que estaba en el hospital.\nHernando: Estoy vigilando, mija. Un festivo sin gente es el día perfecto para un negocio sucio.\nTomás: Hernando, ayer usted oyó una sola frase.\nHernando: Una frase basta. Me molesta que usted piense en esa plata. Pero no me sorprende. Usted es un extranjero con apellido Herrera.\nTomás: Tiene razón. Llegué con un plan de treinta días. A mí me sorprende que ahora me importe tanto. Si vendo, no es por la plata. Me da miedo que Vale lo pierda todo por mi culpa.\nVale no dijo nada, pero le tomó la mano.\nHernando: Joaquín me dijo: «Cuide a mi hermana». Ahora me toca cuidar su café. Siento que me fui sin terminar el chocolate.\nTomás: Y yo también lo siento.\nEntonces llegó un carro negro, y un señor de chaqueta gris caminó hacia el edificio.\nVale: ¿Ese no es el jefe de permisos? ¿El de la toalla?\nHernando: El mismo. ¿Y qué hace en un hotel un festivo, a las ocho de la mañana?\nTomás tomó tres fotos.\nSimón: ¡Qué rabia! ¡Qué rabia!\nNadie trajo a Simón, pero ahí estaba, debajo del asiento. El señor de la chaqueta gris se dio la vuelta.\nHernando: ¡Abajo todos!\nLos tres se agacharon. Simón saludó con un ala.\nHernando: Ese loro nos va a llevar a la cárcel.\nEn una ventana del tercer piso, Altamira le dio la mano al señor.\nTomás miró las fotos: ahí estaba la mano de Altamira.\nHernando: Mijo, usted ya no es tan extranjero.\nTomás le mandó las fotos a Mariana.\nMariana: «¡No puede ser! Mañana a las nueve, en la cafetería de la alcaldía. Traigan las fotos. Y no traigan al loro».",
+  "text": "El lunes festivo, a las siete, la mesa de Hernando seguía sin gorra, sin periódico y sin Hernando.\nVale: Lo llamé seis veces. Me da miedo que le pase algo.\nTomás: Me imagino dónde está. Es mi culpa.\nA las ocho encontraron la Burra en la Séptima, delante del edificio de Hoteles Altamira. Hernando estaba dentro, con un termo de tinto y unos binoculares.\nVale: ¡Qué alivio! Pensé que estaba en el hospital.\nHernando: Estoy vigilando, mija. Un festivo sin gente es el día perfecto para un negocio sucio.\nTomás: Hernando, ayer usted oyó una sola frase.\nHernando: Una frase basta. Me da rabia que usted piense en esa plata. Pero no me sorprende. Usted es un extranjero con apellido Herrera.\nTomás: Tiene razón. Llegué con un plan de treinta días. A mí me sorprende que ahora me importe tanto. Si vendo, no es por la plata. Me da miedo que Vale lo pierda todo por mi culpa.\nVale no dijo nada, pero le tomó la mano.\nHernando: Joaquín me dijo: «Cuide a mi hermana». Ahora me toca cuidar su café. Siento que me fui sin terminar el chocolate.\nTomás: Y yo también lo siento.\nEntonces llegó un carro negro, y un señor de chaqueta gris caminó hacia el edificio.\nVale: ¿Ese no es el jefe de permisos? ¿El de la toalla?\nHernando: El mismo. ¿Y qué hace en un hotel un festivo, a las ocho?\nTomás tomó tres fotos.\nSimón: ¡Qué rabia! ¡Qué rabia!\nNadie trajo a Simón, pero ahí estaba, debajo del asiento. El señor de la chaqueta gris se dio la vuelta.\nHernando: ¡Abajo todos!\nLos tres se agacharon. Simón saludó con un ala.\nHernando: Ese loro nos va a llevar a la cárcel.\nEn una ventana del tercer piso, Altamira le dio la mano al señor.\nTomás miró las fotos: ahí estaba la mano de Altamira.\nHernando: Mijo, usted ya no es tan extranjero.\nTomás le mandó las fotos a Mariana.\nMariana: «¡No puede ser! Mañana a las nueve, en la cafetería de la alcaldía. Traigan las fotos. Y no traigan al loro».",
   "gloss": [
     {
       "es": "seguía sin gorra, sin periódico y sin Hernando",
@@ -17,8 +17,12 @@
       "en": "I'm scared something has happened to him."
     },
     {
-      "es": "Me imagino.",
-      "en": "I can imagine."
+      "es": "Me imagino dónde está.",
+      "en": "I think I know where he is."
+    },
+    {
+      "es": "Me da rabia que usted piense en esa plata.",
+      "en": "It makes me furious that you would even think about that money."
     },
     {
       "es": "termo",
@@ -192,6 +196,7 @@
   "hook": "Tomás has photos of Altamira shaking hands with the head of the permits office on a public holiday. Tomorrow, in the mayor's office cafeteria, Marta's nephew shows them what is in that email.",
   "requires": [
     "c:ayer-anoche",
+    "c:donde-esta",
     "c:entonces-bueno",
     "c:fui",
     "c:me-imagino",
@@ -202,7 +207,6 @@
     "c:que-alivio",
     "c:que-susto",
     "c:tienes",
-    "c:voy-a",
     "c:ya-no",
     "g:adjective-agreement",
     "g:commands-usted",
@@ -219,7 +223,6 @@
     "g:le-doubling",
     "g:negation-words",
     "g:negative-commands",
-    "g:object-pronoun-position",
     "g:por-para-1",
     "g:prep-infinitive",
     "g:prep-pronouns",
@@ -236,7 +239,6 @@
     "g:si-present",
     "g:stem-boot",
     "g:subj-emotion",
-    "g:subj-emotion-intro",
     "g:subj-wanting",
     "g:that-clauses",
     "p:aqui-ahi-alla",
@@ -255,7 +257,6 @@
     "p:para-inf",
     "p:pensar-en",
     "p:personal-a",
-    "p:por-la-manana",
     "p:position-de",
     "p:possessives-basic",
     "p:tambien-tampoco",
@@ -274,7 +275,6 @@
     "l:asiento",
     "l:ayer",
     "l:bastar",
-    "l:buscar",
     "l:cafetería",
     "l:café",
     "l:caminar",
@@ -291,6 +291,7 @@
     "l:delante",
     "l:dentro",
     "l:día",
+    "l:dónde",
     "l:edificio",
     "l:encontrar",
     "l:estar",
@@ -322,7 +323,6 @@
     "l:mija",
     "l:mijo",
     "l:mirar",
-    "l:molestar",
     "l:negocio",
     "l:negro",
     "l:oír",

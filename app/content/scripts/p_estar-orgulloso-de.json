@@ -1,7 +1,7 @@
 {
   "node": "p:estar-orgulloso-de",
   "hook": {
-    "line": "Tomás has opened the café at six every morning for a month. Don Hernando has noticed, and for a man who says very little, he finds the words.",
+    "line": "Tomás has opened the café at six every morning for months. Don Hernando has noticed, and for a man who says very little, he finds the words.",
     "es": "Estoy muy orgulloso de ti.",
     "en": "I'm very proud of you. (a man speaking, to a friend)"
   },
@@ -13,7 +13,7 @@
     { "es": "Estamos orgullosos de que trabajes aquí.", "en": "We're proud that you work here. (to a friend)" },
     { "es": "No estoy orgullosa de eso.", "en": "I'm not proud of that. (a woman speaking)" }
   ],
-  "rule": "English says proud *of* someone. Spanish keeps the same little word, *de*, in every version:\n*orgulloso de* + a person or thing: *de ti*, *de mi familia*.\n*orgulloso de* + an action you did yourself: *de ser colombiano*.\n*orgulloso de que* + someone else's action, with the *-es/-e* verb form you met with feelings: *de que trabajes aquí*.\n*Orgulloso* is an adjective: *orgullosa*, *orgullosos*. After *de*, you is *ti* and me is *mí*.\nUse *estar* for pride in someone. *Ser orgulloso* means being a proud, stuck-up person.",
+  "rule": "English says proud *of* someone. Spanish keeps the same little word, *de*, in every version:\n*orgulloso de* + a person or thing: *de ti*, *de mi familia*.\n*orgulloso de* + an action you did yourself: *de ser colombiano*.\n*orgulloso de que* + someone else's action, with the wish form you met with feelings: *de que trabajes aquí*.\n*Orgulloso* is an adjective: *orgullosa*, *orgullosos*. After *de*, you is *ti* and me is *mí*.\nUse *estar* for pride in someone. *Ser orgulloso* means being a proud, stuck-up person.",
   "smallPrint": "Teachers call the verb form after *de que* the subjunctive: it appears when you react to what someone else does.",
   "readAndPick": [
     { "es": "Estoy muy orgullosa de ti.", "options": ["I'm very proud of you. (a man speaking)", "You're very proud of me.", "I'm very proud of you. (a woman speaking)"], "answer": 2 },
@@ -66,7 +66,7 @@
       "prompt": "Start with *Estoy orgulloso de que…* (a man speaking) and say: I'm proud that Tomás is staying.",
       "answer": "Estoy orgulloso de que Tomás se quede.",
       "accept": [],
-      "why": "Someone else's action after *de que* takes the *-e* form: *se quede*."
+      "why": "Someone else's action after *de que* takes the wish form: *se quede*."
     }
   ],
   "pitfalls": [

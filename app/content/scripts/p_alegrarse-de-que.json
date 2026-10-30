@@ -31,7 +31,7 @@
       "en": "Are you glad Mariana is coming? (to a friend)"
     }
   ],
-  "rule": "*Me alegro* means *I'm glad*. What comes next depends on what you're glad about.\n\nAn action of yours: *de* + the infinitive. *Me alegro de verte.*\nSomething that happens to someone else: *de que* + the *-e* or *-a* form. *Me alegro de que estés bien.* Never drop the *de*.\nA person: *por*. *Me alegro por ti.*\n\nTurn the volume up with *mucho*, *muchísimo* or *un montón*.\n\n*De que* always takes that *-e* or *-a* form, even for good news you're sure of.",
+  "rule": "*Me alegro* means *I'm glad*. What comes next depends on what you're glad about.\n\nAn action of yours: *de* + the infinitive. *Me alegro de verte.*\nSomething that happens to someone else: *de que* + the wish form. *Me alegro de que estés bien.* Never drop the *de*.\nA person: *por*. *Me alegro por ti.*\n\nTurn the volume up with *mucho*, *muchísimo* or *un montón*.\n\n*De que* always takes the wish form, even for good news you're sure of.",
   "smallPrint": "Teachers call *alegrarse de que* an expression of emotion that triggers the subjunctive.",
   "readAndPick": [
     {
@@ -127,7 +127,7 @@
       "accept": [
         "Me alegro mucho de que Vale se quede."
       ],
-      "why": "*De que* + a verb in its *-e* form: *se quede*."
+      "why": "*De que* plus the wish form: *se quede*."
     },
     {
       "prompt": "Say: I'm happy for Vale.",
@@ -157,7 +157,7 @@
     {
       "wrong": "Me alegro de que estás bien.",
       "right": "Me alegro de que estés bien.",
-      "why": "After *de que*, the verb takes its *-e* or *-a* form: *estés*."
+      "why": "After *de que*, the verb takes the wish form: *estés*."
     },
     {
       "wrong": "Me alegro de ti.",

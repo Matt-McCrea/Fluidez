@@ -13,15 +13,15 @@
     { "es": "¡Es impresionante lo que has aprendido!", "en": "It's impressive what you've learned! (to a friend)" },
     { "es": "¡Es increíble cómo mejora tu español!", "en": "It's amazing how your Spanish is improving! (to a friend)" }
   ],
-  "rule": "English admires the way someone does something: *It's amazing how she cooks!* Spanish builds it the same way, with *cómo*:\n*¡Es increíble cómo cocina!*\nKeep the accent on *cómo*, even though nobody is asking a question. *Es impresionante* works too.\nFor an amount, use *cuánto*: *¡Es impresionante cuánto sabe!* For the thing itself, use *lo que*: *lo que has aprendido*.\nAfter *cómo* comes an ordinary verb, not the *-es/-e* form, and the person usually goes after it: *cómo cocina Vale*.",
+  "rule": "English admires the way someone does something: *It's amazing how she cooks!* Spanish builds it the same way, with *cómo*:\n*¡Es increíble cómo cocina!*\nKeep the accent on *cómo*, even though nobody is asking a question. *Es impresionante* works too.\nFor an amount, use *cuánto*: *¡Es impresionante cuánto sabe!* For the thing itself, use *lo que*: *lo que has aprendido*.\nAfter *cómo* comes an ordinary verb, not the wish form, and the person usually goes after it: *cómo cocina Vale*.",
   "smallPrint": "Teachers call this an exclamation with an embedded question word. It admires the manner, not just the fact.",
   "readAndPick": [
     { "es": "¡Es increíble cómo cocina Vale!", "options": ["It's amazing how much Vale cooks!", "It's amazing what Vale cooks!", "It's amazing how Vale cooks!"], "answer": 2 },
     { "es": "¡Es impresionante cuánto sabe!", "options": ["It's impressive how she does it!", "It's impressive how much she knows!", "It's impressive what she knows!"], "answer": 1 },
     { "es": "¡Es impresionante lo que has aprendido!", "options": ["It's impressive what you've learned!", "It's impressive how you've learned!", "It's impressive how much I've learned!"], "answer": 0 },
     { "es": "¡Es increíble cómo trabajas!", "options": ["It's amazing how he works!", "It's amazing how I work!", "It's amazing how you work!"], "answer": 2 },
-    { "es": "¡Es increíble cómo trabaja Hernando!", "options": ["It's amazing how Hernando works!", "It's amazing that Hernando works!", "It's amazing how well Hernando works!"], "answer": 0 },
-    { "es": "¡Es increíble cómo mejora tu español!", "options": ["It's amazing how good your Spanish is!", "It's amazing how you improve my Spanish!", "It's amazing how your Spanish is improving!"], "answer": 2 },
+    { "es": "¡Es increíble cómo trabaja Hernando!", "options": ["It's amazing how Hernando works!", "It's amazing that Hernando works!", "It's amazing how much Hernando works!"], "answer": 0 },
+    { "es": "¡Es increíble cómo mejora tu español!", "options": ["It's amazing that your Spanish is improving!", "It's amazing how you improve my Spanish!", "It's amazing how your Spanish is improving!"], "answer": 2 },
     { "es": "¡Es increíble cómo hablas español!", "options": ["It's amazing how he speaks Spanish!", "It's amazing how you speak Spanish!", "It's amazing how I speak Spanish!"], "answer": 1 },
     { "es": "¡Es impresionante cómo baila Mariana!", "options": ["It's impressive how Mariana dances!", "It's impressive that Mariana dances!", "It's impressive how much Mariana dances!"], "answer": 0 }
   ],
@@ -41,7 +41,7 @@
     {
       "prompt": "Say: It's amazing how Mariana dances!",
       "answer": "¡Es increíble cómo baila Mariana!",
-      "accept": ["¡Es impresionante cómo baila Mariana!"],
+      "accept": ["¡Es impresionante cómo baila Mariana!", "¡Es increíble cómo Mariana baila!"],
       "why": "*Es increíble cómo* plus a normal verb, then the person."
     },
     {
@@ -59,7 +59,7 @@
     {
       "prompt": "Change the verb. Use *manejar* to say: It's amazing how Hernando drives!",
       "answer": "¡Es increíble cómo maneja Hernando!",
-      "accept": ["¡Es impresionante cómo maneja Hernando!"],
+      "accept": ["¡Es impresionante cómo maneja Hernando!", "¡Es increíble cómo Hernando maneja!"],
       "why": "Same frame, new verb: *maneja* for he."
     },
     {

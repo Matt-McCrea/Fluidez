@@ -1,7 +1,7 @@
 {
   "node": "p:me-emociona-que",
   "hook": {
-    "line": "Tomás's cousin from Toronto is flying in for the weekend, and he wants her to know exactly how he feels. In Spanish, the news does the exciting.",
+    "line": "Vale's best friend from Medellín is coming up for the weekend, and Vale wants her to know exactly how she feels. In Spanish, the news does the exciting.",
     "es": "Me emociona que vengas a Bogotá.",
     "en": "I'm excited that you're coming to Bogotá. (to a friend)"
   },
@@ -13,8 +13,8 @@
     { "es": "A Hernando le emociona que Tomás abra el café.", "en": "Hernando is excited that Tomás is opening the café." },
     { "es": "No me emociona la oferta.", "en": "I'm not excited about the offer." }
   ],
-  "rule": "*Me emociona* works like *me gusta*: the news excites you, so you are not the subject.\n*Me emociona* + a thing: *Me emociona el viaje.*\n*Me emociona* + an infinitive: *Me emociona viajar.*\n*Me emociona que* + someone else's action, with the *-e/-es* verb form: *que vengas*.\nSwap *me* for who feels it: *te, le, nos, les*. With *le* or *les*, name them first: *A Hernando le emociona…*\nTo say you are excited, use *estoy emocionado con* a thing. *Emocionado* means excited, not just emotional.",
-  "smallPrint": "Teachers call *emocionar* and *gustar* verbs of reaction. After *que*, the *-e/-es* verb form is the subjunctive.",
+  "rule": "*Me emociona* works like *me gusta*: the news excites you, so you are not the subject.\n*Me emociona* + a thing: *Me emociona el viaje.*\n*Me emociona* + an infinitive: *Me emociona viajar.*\n*Me emociona que* + someone else's action, with the wish form: *que vengas*.\nSwap *me* for who feels it: *te, le, nos, les*. With *le* or *les*, name them first: *A Hernando le emociona…*\nTo say you are excited, use *estoy emocionado con* a thing. *Emocionado* means excited, not just emotional.",
+  "smallPrint": "Teachers call *emocionar* and *gustar* verbs of reaction. After *que*, the wish form is what they call the subjunctive.",
   "readAndPick": [
     { "es": "Me emociona que vengas a Bogotá.", "options": ["I'm excited to come to Bogotá.", "I'm excited that you're coming to Bogotá.", "You're excited that I'm coming to Bogotá."], "answer": 1 },
     { "es": "Me emociona viajar.", "options": ["I'm excited that she's travelling.", "I'm excited to travel.", "She's excited to travel."], "answer": 1 },
@@ -42,7 +42,7 @@
       "prompt": "Say to a friend: I'm excited that you're coming to Bogotá.",
       "answer": "Me emociona que vengas a Bogotá.",
       "accept": ["Me emociona que vengas."],
-      "why": "Someone else's action after *que* takes the *-es* form: *vengas*."
+      "why": "Someone else's action after *que* takes the wish form: *vengas*."
     },
     {
       "prompt": "Say (a woman speaking): I'm excited about the trip.",
@@ -78,7 +78,7 @@
     {
       "wrong": "Me emociona que vienes.",
       "right": "Me emociona que vengas.",
-      "why": "A feeling about someone else's action wants the *-es* form: *vengas*."
+      "why": "A feeling about someone else's action wants the wish form: *vengas*."
     },
     {
       "wrong": "Me emociona a viajar.",

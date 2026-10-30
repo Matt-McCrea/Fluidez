@@ -13,7 +13,7 @@
     { "es": "A Vale le da miedo que cierren el café.", "en": "It scares Vale that they might close the café." },
     { "es": "¿Te da miedo manejar de noche?", "en": "Does driving at night scare you? (to a friend)" }
   ],
-  "rule": "Two ways to say it:\n*Tengo miedo de*: you own the fear. *Tengo miedo de perder el trabajo.*\n*Me da miedo*: the thing causes it, like *me gusta*. With a plural thing the verb agrees: *Me dan miedo las alturas.*\nFor someone else's action, add *que* and the *-es/-e* verb form: *Me da miedo que manejes tan rápido.* *Tengo miedo de que* works the same way, and the *de* stays.\nSwap *me* for *te, le, nos, les* to change who is scared. Say *manejar* for driving.",
+  "rule": "Two ways to say it:\n*Tengo miedo de*: you own the fear. *Tengo miedo de perder el trabajo.*\n*Me da miedo*: the thing causes it, like *me gusta*. With a plural thing the verb agrees: *Me dan miedo las alturas.*\nFor someone else's action, add *que* and the wish form: *Me da miedo que manejes tan rápido.* *Tengo miedo de que* works the same way, and the *de* stays.\nSwap *me* for *te, le, nos, les* to change who is scared.",
   "smallPrint": "Teachers call the verb form after *que* the subjunctive: it shows up when you react to something someone else does.",
   "readAndPick": [
     { "es": "Me dan miedo las alturas.", "options": ["Heights scare you.", "Heights scare me.", "Heights scared me."], "answer": 1 },
@@ -42,7 +42,7 @@
       "prompt": "Say to a friend: It scares me that you drive so fast.",
       "answer": "Me da miedo que manejes tan rápido.",
       "accept": [],
-      "why": "Your friend's action after *que* takes the *-es* form: *manejes*."
+      "why": "Your friend's action after *que* takes the wish form: *manejes*."
     },
     {
       "prompt": "Start with *Tengo miedo de que…* and say to a friend: I'm afraid you won't come back.",
@@ -83,7 +83,7 @@
     {
       "wrong": "Me da miedo que manejas tan rápido.",
       "right": "Me da miedo que manejes tan rápido.",
-      "why": "After *que*, a feeling about someone else's action wants the *-es* form."
+      "why": "After *que*, a feeling about someone else's action wants the wish form."
     }
   ],
   "personal": "Say what scares you most about a big change in your life. Use *me da(n) miedo* once and *tengo miedo de* once."

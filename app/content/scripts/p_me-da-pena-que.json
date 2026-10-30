@@ -2,8 +2,8 @@
   "node": "p:me-da-pena-que",
   "hook": {
     "line": "Don Hernando's oldest friend is leaving Bogotá, and he can't quite say goodbye. This is the soft way to tell someone that their news makes you sad.",
-    "es": "Me da mucha lástima que se vayan tan pronto.",
-    "en": "It's such a shame you're all leaving so soon."
+    "es": "Me da mucha pena que te vayas tan pronto.",
+    "en": "It makes me so sad that you're leaving so soon. (to a friend)"
   },
   "examples": [
     { "es": "Me da pena que estés solo.", "en": "It makes me sad that you're alone. (to a friend)" },

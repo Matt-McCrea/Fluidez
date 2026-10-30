@@ -264,7 +264,7 @@
   {
     "id": "u30-0010",
     "es": "Me da lástima que el parque esté tan feo.",
-    "en": "I think it's a pity that the park looks so ugly.",
+    "en": "It's a pity that the park looks so ugly.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -351,8 +351,8 @@
   },
   {
     "id": "u30-0013",
-    "es": "A Mariana le da pena que su artículo salga tan tarde.",
-    "en": "It bothers Mariana that her article comes out so late.",
+    "es": "A Mariana le da pena que su artículo no salga este domingo.",
+    "en": "It makes Mariana sad that her article isn't coming out this Sunday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -363,9 +363,10 @@
       "g:that-clauses",
       "l:artículo",
       "l:dar",
+      "l:domingo",
       "l:pena",
       "l:salir",
-      "l:tarde",
+      "p:demonstratives-basic",
       "p:me-da-miedo",
       "p:me-da-pena-que",
       "p:possessives-basic"
@@ -800,21 +801,19 @@
   },
   {
     "id": "u30-0028",
-    "es": "Es triste, pero a veces me da pena que me escriban tanto.",
-    "en": "It's sad, but sometimes I feel bad that they write to me so much.",
+    "es": "A veces me da pena que me escriban tanto y yo no conteste.",
+    "en": "Sometimes I feel bad that they write to me so much and I don't answer.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-regala",
-      "g:ser-identity",
       "g:subj-emotion",
       "g:subj-wanting",
       "g:that-clauses",
+      "l:contestar",
       "l:dar",
       "l:escribir",
       "l:pena",
-      "l:ser",
-      "l:triste",
       "l:vez",
       "p:frequency-scale",
       "p:me-da-miedo",
@@ -1009,7 +1008,7 @@
   {
     "id": "u30-0035",
     "es": "A mis tíos les da lástima que la casa quede sola.",
-    "en": "My aunt and uncle are sad that the house will be left alone.",
+    "en": "My aunt and uncle are sad that the house will be left empty.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1044,7 +1043,7 @@
   {
     "id": "u30-0036",
     "es": "Me da pena que Jhon Fredy trabaje tanto sin descansar.",
-    "en": "I feel for Jhon Fredy working so hard without rest.",
+    "en": "It makes me sad that Jhon Fredy works so hard without resting.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2341,12 +2340,23 @@
   },
   {
     "id": "u30-0079",
-    "es": "",
-    "en": "",
+    "es": "A Hernando todavía le duele hablar de Rosa.",
+    "en": "It still hurts Hernando to talk about Rosa.",
     "accept": [],
     "acceptEn": [],
-    "requires": [],
-    "targets": [],
+    "requires": [
+      "g:gustar-full",
+      "g:stem-boot",
+      "l:doler",
+      "l:hablar",
+      "p:doler",
+      "p:me-duele",
+      "p:me-duele-que",
+      "p:ya-todavia-basic"
+    ],
+    "targets": [
+      "p:me-duele-que"
+    ],
     "kind": "statement",
     "unit": "u30",
     "theme": "dolor emocional",
@@ -3607,7 +3617,7 @@
   {
     "id": "u30-0124",
     "es": "Odio hacer fila en el banco.",
-    "en": "I hate queuing at the bank.",
+    "en": "I hate standing in line at the bank.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4227,16 +4237,14 @@
   },
   {
     "id": "u30-0147",
-    "es": "A Simón no le gusta, no soporta el ruido de la máquina.",
-    "en": "Simón doesn't like it, he can't stand the noise of the machine.",
+    "es": "Simón no soporta el ruido de la máquina de café.",
+    "en": "Simón can't stand the noise of the coffee machine.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:gustar-basic",
-      "g:gustar-full",
       "g:present-ar",
-      "l:gustar",
+      "l:café",
       "l:máquina",
       "l:ruido",
       "l:soportar",
@@ -4361,17 +4369,20 @@
   },
   {
     "id": "u30-0152",
-    "es": "¡Qué alivio que llegaste bien!",
-    "en": "What a relief you got there OK! (to a friend)",
+    "es": "¡Llegaste bien! ¡Qué alivio!",
+    "en": "You got here OK! What a relief! (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
       "c:que-alivio",
+      "g:preterite-ar",
       "l:alivio",
       "l:bien",
       "l:llegar",
-      "l:qué"
+      "l:qué",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "c:que-alivio",
@@ -4384,16 +4395,16 @@
   },
   {
     "id": "u30-0153",
-    "es": "¡Qué alivio que ya terminó la reunión!",
-    "en": "What a relief that the meeting is over!",
+    "es": "Por fin terminó la reunión. ¡Qué alivio!",
+    "en": "The meeting is finally over. What a relief!",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:dejame-terminar",
       "c:que-alivio",
       "g:gender-articles",
-      "g:relative-que",
+      "g:preterite-ar",
       "l:alivio",
+      "l:fin",
       "l:qué",
       "l:reunión",
       "l:terminar"
@@ -4433,19 +4444,22 @@
   },
   {
     "id": "u30-0155",
-    "es": "¡Qué alivio que mi mamá está bien!",
-    "en": "What a relief that my mom is OK!",
+    "es": "Hablé con el médico: mi mamá está bien. ¡Qué alivio!",
+    "en": "I spoke to the doctor: my mom is OK. What a relief!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
       "c:que-alivio",
       "g:estar-location-states",
-      "g:relative-que",
+      "g:gender-articles",
+      "g:preterite-ar",
       "l:alivio",
       "l:bien",
       "l:estar",
+      "l:hablar",
       "l:mamá",
+      "l:médico",
       "l:qué",
       "p:bien-bueno",
       "p:bien-mal-vs-bueno-malo",
@@ -4462,18 +4476,19 @@
   },
   {
     "id": "u30-0156",
-    "es": "¡Qué alivio que ya no llueve!",
-    "en": "What a relief that it's not raining anymore!",
+    "es": "Por fin dejó de llover. Qué alivio.",
+    "en": "It finally stopped raining. What a relief.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:que-alivio",
-      "c:ya-no",
-      "g:relative-que",
-      "g:stem-boot",
+      "g:preterite-ar",
       "l:alivio",
+      "l:dejar",
+      "l:fin",
       "l:llover",
-      "l:qué"
+      "l:qué",
+      "p:dejar-de-inf"
     ],
     "targets": [
       "c:que-alivio",
@@ -4537,18 +4552,18 @@
   },
   {
     "id": "u30-0159",
-    "es": "¡Qué alivio que Tomás se quedó!",
-    "en": "What a relief that Tomás stayed!",
+    "es": "Tomás se queda en Bogotá. ¡Qué alivio para todos!",
+    "en": "Tomás is staying in Bogotá. What a relief for everyone!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:que-alivio",
-      "g:preterite-ar",
+      "g:present-ar",
       "g:reflexive-routine",
-      "g:relative-que",
       "l:alivio",
       "l:quedarse",
-      "l:qué"
+      "l:qué",
+      "p:para-inf"
     ],
     "targets": [
       "c:que-alivio",
@@ -4620,15 +4635,14 @@
   },
   {
     "id": "u30-0162",
-    "es": "¡Qué alivio que no pasó nada grave!",
-    "en": "What a relief that nothing serious happened!",
+    "es": "No pasó nada grave, qué alivio.",
+    "en": "Nothing serious happened, what a relief.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:que-alivio",
       "g:negation-words",
       "g:preterite-ar",
-      "g:relative-que",
       "l:alivio",
       "l:grave",
       "l:pasar",
@@ -4645,18 +4659,18 @@
   },
   {
     "id": "u30-0163",
-    "es": "¡Qué alivio que ustedes ya están aquí!",
-    "en": "What a relief that you all are here now!",
+    "es": "¡Qué alivio verlos aquí!",
+    "en": "What a relief to see you all here!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:que-alivio",
-      "g:estar-location-states",
-      "g:relative-que",
+      "g:direct-objects",
+      "g:object-pronoun-position",
       "l:alivio",
       "l:aquí",
-      "l:estar",
       "l:qué",
+      "l:ver",
       "p:aqui-ahi-alla"
     ],
     "targets": [
@@ -4717,15 +4731,14 @@
   },
   {
     "id": "u30-0166",
-    "es": "¡Qué alivio que el carro funciona!",
-    "en": "What a relief that the car works!",
+    "es": "El carro funcionó a la primera. ¡Qué alivio!",
+    "en": "The car worked first time. What a relief!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:que-alivio",
       "g:gender-articles",
-      "g:present-ar",
-      "g:relative-que",
+      "g:preterite-ar",
       "l:alivio",
       "l:carro",
       "l:funcionar",
@@ -5146,24 +5159,24 @@
   },
   {
     "id": "u30-0181",
-    "es": "¿Por qué no subes?\nMe da miedo que el puente se mueva.",
-    "en": "Why don't you go up?\nIt scares me that the bridge moves. (to a friend)",
+    "es": "¿Por qué no cruzas?\nMe da miedo que el puente se mueva.",
+    "en": "Why don't you cross?\nIt scares me that the bridge moves. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-regala",
       "g:gender-articles",
-      "g:present-er-ir",
+      "g:present-ar",
       "g:se-impersonal",
       "g:subj-emotion",
       "g:subj-wanting",
       "g:that-clauses",
+      "l:cruzar",
       "l:dar",
       "l:miedo",
       "l:mover",
       "l:puente",
       "l:qué",
-      "l:subir",
       "p:me-da-miedo",
       "p:me-da-miedo-que",
       "p:por-que-no",
@@ -5836,7 +5849,7 @@
   {
     "id": "u30-0205",
     "es": "A mi mamá le preocupa que yo duerma poco.",
-    "en": "It worries my mom that I sleep little.",
+    "en": "It worries my mom that I don't sleep much.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5912,7 +5925,7 @@
   {
     "id": "u30-0208",
     "es": "Me preocupa que mi hermano maneje con sueño.",
-    "en": "It worries me that my brother drives sleepy.",
+    "en": "It worries me that my brother drives when he's sleepy.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7401,19 +7414,20 @@
   },
   {
     "id": "u30-0263",
-    "es": "Hoy no pude dormir nada.\nMe imagino, con tanto ruido en la calle.",
-    "en": "I couldn't sleep at all today.\nI can imagine, with so much noise in the street.",
+    "es": "Anoche no pude dormir nada.\nMe imagino, con tanto ruido en la calle.",
+    "en": "I couldn't sleep at all last night.\nI can imagine, with so much noise in the street.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "c:me-imagino",
       "g:gender-articles",
       "g:negation-words",
       "g:preterite-irregular-strong",
       "g:verb-infinitive",
+      "l:anoche",
       "l:calle",
       "l:dormir",
-      "l:hoy",
       "l:imaginarse",
       "l:poder",
       "l:ruido"
@@ -7627,18 +7641,17 @@
   },
   {
     "id": "u30-0271",
-    "es": "Tuve que explicárselo todo otra vez.\nMe imagino, qué cansancio.",
-    "en": "I had to explain everything to him again.\nI can imagine, how tiring.",
+    "es": "Tuve que explicárselo todo otra vez.\nMe imagino, qué pereza.",
+    "en": "I had to explain everything to him again.\nI can imagine, what a drag.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-imagino",
+      "c:que-pereza",
       "g:double-pronouns",
       "g:object-pronoun-position",
       "g:preterite-irregular-strong",
-      "g:questions",
       "g:verb-infinitive",
-      "l:cansancio",
       "l:explicar",
       "l:imaginarse",
       "l:qué",
@@ -7708,8 +7721,8 @@
   },
   {
     "id": "u30-0274",
-    "es": "Mi madre estuvo enferma toda la semana.\nMe imagino, estabas muy preocupada.",
-    "en": "My mother was sick all week.\nI can imagine, you were very worried. (to a woman)",
+    "es": "Mi mamá estuvo enferma toda la semana.\nMe imagino, estabas muy preocupada.",
+    "en": "My mom was sick all week.\nI can imagine, you were very worried. (to a woman)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7724,7 +7737,7 @@
       "l:enfermo",
       "l:estar",
       "l:imaginarse",
-      "l:madre",
+      "l:mamá",
       "l:preocupado",
       "l:semana",
       "p:possessives-basic",
@@ -7886,13 +7899,12 @@
   },
   {
     "id": "u30-0281",
-    "es": "Me dijeron que mi español es raro.\nNo es para tanto, lo entienden.",
+    "es": "Me dijeron que mi español es raro.\nNo es para tanto, te entienden.",
     "en": "They told me my Spanish is odd.\nIt's not that big a deal, they understand you. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:no-es-para-tanto",
-      "g:direct-objects",
       "g:preterite-irregular-strong",
       "g:ser-identity",
       "g:stem-boot",
@@ -8173,23 +8185,22 @@
   },
   {
     "id": "u30-0292",
-    "es": "Hernando me dice que ya veré que todo sale bien.",
-    "en": "Hernando tells me that I'll see it'll all work out.",
+    "es": "Mi abuela siempre decía: ya verás que todo sale bien.",
+    "en": "My grandmother always used to say: you'll see, it'll all work out.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
-      "g:future-promises",
-      "g:present-er-ir",
-      "g:stem-e-i",
-      "g:that-clauses",
+      "c:ya-veras-que-todo-sale-bien",
+      "g:imperfect-habitual",
+      "l:abuela",
       "l:bien",
       "l:decir",
       "l:salir",
+      "l:siempre",
       "l:ver",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo",
-      "p:me-te-nos-objects"
+      "p:frequency-scale",
+      "p:possessives-basic"
     ],
     "targets": [],
     "kind": "statement",
@@ -8525,8 +8536,8 @@
   },
   {
     "id": "u30-0307",
-    "es": "¿Cómo les va con el abogado?\nAhí vamos, es muy despacio.",
-    "en": "How's it going with the lawyer?\nGetting by, it's very slow.",
+    "es": "¿Cómo les va con el abogado?\nAhí vamos, va muy despacio.",
+    "en": "How's it going with the lawyer?\nGetting by, it's going very slowly.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8535,13 +8546,12 @@
       "g:indirect-objects",
       "g:ir-a-plans",
       "g:questions",
-      "g:ser-identity",
       "l:abogado",
       "l:ahí",
       "l:cómo",
       "l:despacio",
       "l:ir",
-      "l:ser",
+      "p:ir-a-velocidad",
       "p:quantifiers-basic",
       "p:salirle-bien"
     ],
@@ -8797,25 +8807,27 @@
   },
   {
     "id": "u30-0318",
-    "es": "Otra vez llegó la cuenta de la luz.\n¡Qué rabia, no he usado nada!",
-    "en": "The electricity bill came again.\nHow annoying, I haven't used anything!",
+    "es": "La cuenta de la luz llegó carísima.\n¡Qué rabia, si casi no estoy en casa!",
+    "en": "The electricity bill came in really high.\nHow infuriating, I'm hardly ever home!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:la-cuenta",
       "c:que-susto",
+      "g:adjective-agreement",
+      "g:estar-location-states",
       "g:gender-articles",
-      "g:negation-words",
-      "g:perfecto-experience",
       "g:preterite-ar",
+      "g:si-present",
+      "g:superlatives",
+      "l:caro",
+      "l:casa",
       "l:cuenta",
+      "l:estar",
       "l:llegar",
       "l:luz",
       "l:qué",
-      "l:rabia",
-      "l:usar",
-      "l:vez",
-      "p:otro-no-article"
+      "l:rabia"
     ],
     "targets": [
       "l:rabia"
@@ -8953,15 +8965,14 @@
   },
   {
     "id": "u30-0324",
-    "es": "¡Qué alivio que Tomás ya sabe la verdad!",
-    "en": "What a relief that Tomás already knows the truth!",
+    "es": "Qué alivio: Tomás ya sabe la verdad.",
+    "en": "What a relief: Tomás knows the truth now.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:la-verdad",
       "c:que-alivio",
       "g:present-er-ir",
-      "g:relative-que",
       "l:alivio",
       "l:qué",
       "l:saber",
@@ -8979,14 +8990,13 @@
   },
   {
     "id": "u30-0325",
-    "es": "¡Qué alivio que Simón apareció!",
-    "en": "What a relief that Simón turned up!",
+    "es": "¡Simón apareció! ¡Qué alivio!",
+    "en": "Simón turned up! What a relief!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:que-alivio",
       "g:preterite-er-ir",
-      "g:relative-que",
       "l:alivio",
       "l:aparecer",
       "l:qué"
@@ -9002,23 +9012,26 @@
   },
   {
     "id": "u30-0326",
-    "es": "Ya mandé la carta.\n¡Qué alivio! Pensé que no llegabas.",
-    "en": "I already sent the letter.\nWhat a relief! I thought you wouldn't make it. (to a friend)",
+    "es": "Ya llegué, estoy en la puerta.\n¡Qué alivio! Pensé que no venías.",
+    "en": "I'm here, I'm at the door.\nWhat a relief! I thought you weren't coming. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:que-alivio",
+      "c:ya-llegue",
+      "g:estar-location-states",
       "g:gender-articles",
       "g:imperfect-habitual",
       "g:pret-vs-imperfect",
       "g:preterite-ar",
       "g:that-clauses",
       "l:alivio",
-      "l:carta",
+      "l:estar",
       "l:llegar",
-      "l:mandar",
       "l:pensar",
+      "l:puerta",
       "l:qué",
+      "l:venir",
       "p:pensar-en"
     ],
     "targets": [
@@ -9032,13 +9045,12 @@
   },
   {
     "id": "u30-0327",
-    "es": "¡Qué alivio que ya es viernes!",
-    "en": "What a relief that it's already Friday!",
+    "es": "¡Qué alivio, ya es viernes!",
+    "en": "What a relief, it's Friday already!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:que-alivio",
-      "g:relative-que",
       "g:ser-identity",
       "l:alivio",
       "l:qué",
@@ -9057,14 +9069,13 @@
   },
   {
     "id": "u30-0328",
-    "es": "¡Qué alivio que la reunión es mañana y no hoy!",
-    "en": "What a relief that the meeting is tomorrow and not today!",
+    "es": "Qué alivio, la reunión es mañana y no hoy.",
+    "en": "What a relief, the meeting is tomorrow and not today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:que-alivio",
       "g:gender-articles",
-      "g:relative-que",
       "g:ser-identity",
       "l:alivio",
       "l:hoy",
@@ -9085,15 +9096,14 @@
   },
   {
     "id": "u30-0329",
-    "es": "Mariana respiró: ¡qué alivio que nadie salió herido!",
-    "en": "Mariana breathed out: what a relief nobody was hurt!",
+    "es": "Nadie salió herido. Mariana respiró: ¡qué alivio!",
+    "en": "Nobody was hurt. Mariana breathed out: what a relief!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:que-alivio",
       "g:preterite-ar",
       "g:preterite-er-ir",
-      "g:relative-que",
       "l:alivio",
       "l:herir",
       "l:qué",
@@ -9111,14 +9121,13 @@
   },
   {
     "id": "u30-0330",
-    "es": "¡Qué alivio que me contestaron rápido!",
-    "en": "What a relief that they answered me quickly!",
+    "es": "Me contestaron rápido, ¡qué alivio!",
+    "en": "They answered me quickly, what a relief!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:que-alivio",
       "g:preterite-ar",
-      "g:relative-que",
       "l:alivio",
       "l:contestar",
       "l:qué",
@@ -9136,19 +9145,17 @@
   },
   {
     "id": "u30-0331",
-    "es": "¡Qué alivio que mi hijo ya tiene trabajo!",
-    "en": "What a relief that my son has a job now!",
+    "es": "Mi hijo encontró trabajo, ¡qué alivio!",
+    "en": "My son found a job, what a relief!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:que-alivio",
-      "c:tienes",
-      "g:relative-que",
-      "g:stem-boot",
+      "g:preterite-ar",
       "l:alivio",
+      "l:encontrar",
       "l:hijo",
       "l:qué",
-      "l:tener",
       "l:trabajo",
       "p:possessives-basic"
     ],
@@ -9868,7 +9875,7 @@
   {
     "id": "u30-0360",
     "es": "Estoy contenta de que Simón hable otra vez.",
-    "en": "I'm happy that Simón talks again. (a woman speaking)",
+    "en": "I'm happy that Simón is talking again. (a woman speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10062,17 +10069,19 @@
   },
   {
     "id": "u30-0368",
-    "es": "Estamos contentos de que Rosa tenga tantos amigos.",
-    "en": "We're happy that Rosa has so many friends.",
+    "es": "Estamos contentos de que el café tenga tantos amigos.",
+    "en": "We're happy that the café has so many friends.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:aqui-tiene",
       "g:adjective-agreement",
       "g:estar-location-states",
+      "g:gender-articles",
       "g:subj-value",
       "g:that-clauses",
       "l:amigo",
+      "l:café",
       "l:contento",
       "l:estar",
       "l:tener",
@@ -10161,21 +10170,21 @@
   },
   {
     "id": "u30-0372",
-    "es": "A Vale le emociona la gente que prueba su torta.",
-    "en": "The people who try her cake excite Vale.",
+    "es": "A Vale le emociona ver a la gente probar su torta.",
+    "en": "It moves Vale to see people try her cake.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:relative-que",
-      "g:stem-boot",
       "l:emoción",
       "l:gente",
-      "l:probar",
+      "l:probarse",
       "l:torta",
+      "l:ver",
       "p:entusiasmar-fascinar",
       "p:la-gente-singular",
       "p:me-emociona-que",
+      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -10287,7 +10296,7 @@
   {
     "id": "u30-0377",
     "es": "A Hernando le emociona recordar los viejos tiempos.",
-    "en": "It excites Hernando to remember the old days.",
+    "en": "It moves Hernando to remember the old days.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10827,18 +10836,22 @@
   },
   {
     "id": "u30-0399",
-    "es": "Su orgullo no le deja pedir ayuda.",
-    "en": "His pride doesn't let him ask for help.",
+    "es": "Mi papá tiene mucho orgullo: nunca pide ayuda.",
+    "en": "My dad has a lot of pride: he never asks for help.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:indirect-objects",
-      "g:present-ar",
+      "c:tienes",
+      "g:stem-boot",
+      "g:stem-e-i",
       "l:ayuda",
-      "l:dejar",
       "l:orgullo",
+      "l:papá",
       "l:pedir",
-      "p:possessives-basic"
+      "l:tener",
+      "p:frequency-scale",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:orgullo"
@@ -10930,18 +10943,21 @@
   },
   {
     "id": "u30-0403",
-    "es": "El orgullo de Hernando no le deja pedir plata.",
-    "en": "Hernando's pride doesn't let him ask for money.",
+    "es": "Hernando tiene demasiado orgullo para aceptar la plata de Altamira.",
+    "en": "Hernando has too much pride to accept Altamira's money.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:gender-articles",
-      "g:indirect-objects",
-      "g:present-ar",
-      "l:dejar",
+      "g:quantifiers",
+      "g:stem-boot",
+      "l:aceptar",
       "l:orgullo",
-      "l:pedir",
-      "l:plata"
+      "l:plata",
+      "l:tener",
+      "p:para-inf",
+      "p:para-inf-purpose"
     ],
     "targets": [
       "l:orgullo"
@@ -10954,7 +10970,7 @@
   {
     "id": "u30-0404",
     "es": "Estoy muy orgulloso de que ustedes sigan juntos.",
-    "en": "I'm very proud that you all stay together. (a man speaking)",
+    "en": "I'm very proud that you all are still together. (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11233,11 +11249,12 @@
   },
   {
     "id": "u30-0415",
-    "es": "Es increíble cómo corre ese niño.",
-    "en": "It's amazing how that boy runs.",
+    "es": "Mira a ese niño: ¡es increíble cómo corre!",
+    "en": "Look at that boy: it's amazing how he runs!",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:oye-mira",
       "g:demonstratives",
       "g:indirect-questions",
       "g:present-er-ir",
@@ -11245,6 +11262,7 @@
       "l:correr",
       "l:cómo",
       "l:increíble",
+      "l:mirar",
       "l:niño",
       "l:ser",
       "p:es-increible-como"
@@ -11283,8 +11301,8 @@
   },
   {
     "id": "u30-0417",
-    "es": "Es increíble cómo cambia el clima en Bogotá.",
-    "en": "It's amazing how the weather changes in Bogotá.",
+    "es": "En Bogotá es increíble cómo cambia el clima en una hora.",
+    "en": "In Bogotá it's amazing how the weather changes in an hour.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11295,6 +11313,7 @@
       "l:cambiar",
       "l:clima",
       "l:cómo",
+      "l:hora",
       "l:increíble",
       "l:ser",
       "p:es-increible-como"
@@ -11471,8 +11490,8 @@
   },
   {
     "id": "u30-0424",
-    "es": "Es increíble cómo pasa el tiempo.",
-    "en": "It's amazing how time passes.",
+    "es": "Ya es diciembre. Es increíble cómo pasa el tiempo.",
+    "en": "It's December already. It's amazing how time flies.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11481,6 +11500,7 @@
       "g:present-ar",
       "g:ser-identity",
       "l:cómo",
+      "l:diciembre",
       "l:increíble",
       "l:pasar",
       "l:ser",
@@ -11497,22 +11517,25 @@
   },
   {
     "id": "u30-0425",
-    "es": "La reina de la fiesta es increíble, ¡cómo canta!",
-    "en": "The queen of the party is incredible, how she sings!",
+    "es": "Mi abuela era la reina de la fiesta: ¡cómo bailaba!",
+    "en": "My grandmother was the queen of the party: how she danced!",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
       "g:gender-articles",
-      "g:present-ar",
+      "g:imperfect-habitual",
+      "g:imperfect-states",
       "g:ser-identity",
-      "l:cantar",
+      "l:abuela",
+      "l:bailar",
       "l:cómo",
       "l:fiesta",
-      "l:increíble",
       "l:reina",
       "l:ser",
       "p:como-cuanto-verbo",
-      "p:exclamations-basic"
+      "p:exclamations-basic",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:reina"
@@ -11850,21 +11873,22 @@
   },
   {
     "id": "u30-0439",
-    "es": "Estamos hartos de que el barrio no cambie.",
-    "en": "We're fed up that the neighborhood doesn't change.",
+    "es": "Estamos hartos de que la calle siga rota.",
+    "en": "We're fed up that the street is still broken.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:siga",
       "g:adjective-agreement",
       "g:estar-location-states",
       "g:gender-articles",
       "g:subj-value",
-      "g:subj-wanting",
       "g:that-clauses",
-      "l:barrio",
-      "l:cambiar",
+      "l:calle",
       "l:estar",
       "l:harto",
+      "l:romper",
+      "l:seguir",
       "p:estar-harto-de",
       "p:estar-harto-de-que"
     ],
@@ -12276,18 +12300,24 @@
   },
   {
     "id": "u30-0455",
-    "es": "Hernando está harto del humo del hotel.",
-    "en": "Hernando is fed up with the hotel's smoke.",
+    "es": "Hernando está harto de que le pregunten la edad.",
+    "en": "Hernando is fed up with people asking his age.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
       "g:gender-articles",
+      "g:indirect-objects",
+      "g:subj-emotion",
+      "g:subj-wanting",
+      "g:that-clauses",
+      "l:edad",
       "l:estar",
       "l:harto",
-      "l:hotel",
-      "l:humo",
-      "p:estar-harto-de"
+      "l:preguntar",
+      "p:estar-harto-de",
+      "p:estar-harto-de-que",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "p:estar-harto-de"
@@ -13659,8 +13689,8 @@
   },
   {
     "id": "u30-0507",
-    "es": "Se ponen tristes cuando se acaba el verano.",
-    "en": "They get sad when the summer ends.",
+    "es": "Se ponen tristes cuando terminan las vacaciones.",
+    "en": "They get sad when the holidays end.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13668,12 +13698,11 @@
       "g:gender-articles",
       "g:present-ar",
       "g:present-er-ir",
-      "g:se-impersonal",
       "g:verbs-of-change",
-      "l:acabar",
       "l:ponerse",
+      "l:terminar",
       "l:triste",
-      "l:verano",
+      "l:vacación",
       "p:cuando-basic",
       "p:me-pongo-triste-cuando"
     ],
@@ -13853,20 +13882,19 @@
   },
   {
     "id": "u30-0514",
-    "es": "Simón se pone loco cuando oye música.",
+    "es": "Simón se vuelve loco cuando oye música.",
     "en": "Simón goes crazy when he hears music.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:oiga-oye",
-      "g:present-er-ir",
+      "g:stem-boot",
       "g:verbs-of-change",
       "l:loco",
       "l:música",
       "l:oír",
-      "l:ponerse",
-      "p:cuando-basic",
-      "p:me-pongo-triste-cuando"
+      "l:volverse",
+      "p:cuando-basic"
     ],
     "targets": [
       "g:verbs-of-change",
@@ -15376,8 +15404,8 @@
   },
   {
     "id": "u30-0577",
-    "es": "Se puso blanco como una pared.",
-    "en": "He went white as a wall.",
+    "es": "Se puso blanco como un papel.",
+    "en": "He went white as a sheet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15385,9 +15413,10 @@
       "g:preterite-irregular-strong",
       "g:verbs-of-change",
       "l:blanco",
-      "l:pared",
+      "l:papel",
       "l:ponerse",
-      "p:describe-with-images"
+      "p:describe-with-images",
+      "p:fuerte-como-un-roble"
     ],
     "targets": [
       "g:verbs-of-change"
@@ -15846,8 +15875,8 @@
   },
   {
     "id": "u30-0597",
-    "es": "Se puso muy guapo para la boda.",
-    "en": "He got very dressed up for the wedding.",
+    "es": "Se puso muy elegante para la boda.",
+    "en": "He got all dressed up for the wedding.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15855,7 +15884,7 @@
       "g:preterite-irregular-strong",
       "g:verbs-of-change",
       "l:boda",
-      "l:guapo",
+      "l:elegante",
       "l:ponerse",
       "p:para-inf",
       "p:quantifiers-basic"
@@ -15870,19 +15899,17 @@
   },
   {
     "id": "u30-0598",
-    "es": "Mi cuñada se hizo cocinera y ahora cocina distinto.",
-    "en": "My sister-in-law became a cook and now cooks differently.",
+    "es": "Mi cuñada se hizo cocinera a los cuarenta años.",
+    "en": "My sister-in-law became a cook at forty.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
+      "g:gender-articles",
       "g:preterite-ser-ir-hacer",
       "g:verbs-of-change",
-      "l:ahora",
-      "l:cocinar",
+      "l:año",
       "l:cocinero",
       "l:cuñada",
-      "l:distinto",
       "l:hacerse",
       "p:possessives-basic"
     ],
@@ -15896,8 +15923,8 @@
   },
   {
     "id": "u30-0599",
-    "es": "Después de la reunión, Tomás se puso más fuerte.",
-    "en": "After the meeting, Tomás grew stronger.",
+    "es": "Después de la reunión, Tomás se puso muy serio.",
+    "en": "After the meeting, Tomás got very serious.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15905,9 +15932,10 @@
       "g:preterite-irregular-strong",
       "g:verbs-of-change",
       "l:después",
-      "l:fuerte",
       "l:ponerse",
       "l:reunión",
+      "l:serio",
+      "p:quantifiers-basic",
       "p:time-sequence-basic"
     ],
     "targets": [
@@ -16018,17 +16046,17 @@
   },
   {
     "id": "u30-0604",
-    "es": "¿Cuándo te hiciste tan callado?",
-    "en": "When did you become so quiet? (to a man)",
+    "es": "¿Por qué te volviste tan serio?",
+    "en": "Why have you become so serious? (to a man)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:preterite-ser-ir-hacer",
-      "g:questions",
+      "g:preterite-er-ir",
       "g:verbs-of-change",
-      "l:callado",
-      "l:cuándo",
-      "l:hacerse"
+      "l:qué",
+      "l:serio",
+      "l:volverse",
+      "p:prep-questions-basic"
     ],
     "targets": [
       "g:verbs-of-change"
@@ -16133,20 +16161,18 @@
   },
   {
     "id": "u30-0609",
-    "es": "Me puse furiosa y cerré el teléfono.",
-    "en": "I got furious and shut the phone. (a woman speaking)",
+    "es": "Me puse furiosa y no contesté más.",
+    "en": "I got furious and stopped answering. (a woman speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
-      "g:gender-articles",
       "g:preterite-ar",
       "g:preterite-irregular-strong",
       "g:verbs-of-change",
-      "l:cerrar",
+      "l:contestar",
       "l:furioso",
-      "l:ponerse",
-      "l:teléfono"
+      "l:ponerse"
     ],
     "targets": [
       "g:verbs-of-change"
@@ -16228,18 +16254,21 @@
   },
   {
     "id": "u30-0613",
-    "es": "Hernando se vuelve muy alegre cuando juega cartas.",
-    "en": "Hernando becomes very cheerful when he plays cards.",
+    "es": "Hernando se pone muy alegre cuando gana a las cartas.",
+    "en": "Hernando gets very cheerful when he wins at cards.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:stem-boot",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:present-er-ir",
       "g:verbs-of-change",
       "l:alegre",
       "l:carta",
-      "l:jugar",
-      "l:volverse",
+      "l:ganar",
+      "l:ponerse",
       "p:cuando-basic",
+      "p:me-pongo-triste-cuando",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -16534,8 +16563,8 @@
   },
   {
     "id": "u30-0625",
-    "es": "Mi papá se volvió callado desde que murió mi abuela.",
-    "en": "My dad became quiet since my grandmother died.",
+    "es": "Mi papá se volvió muy callado desde que murió mi abuela.",
+    "en": "My dad has been very quiet ever since my grandmother died.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16548,7 +16577,8 @@
       "l:papá",
       "l:volverse",
       "p:naci-en",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:verbs-of-change"
@@ -16661,7 +16691,7 @@
   {
     "id": "u30-0630",
     "es": "Tomás se quedó mirando la plaza.",
-    "en": "Tomás stayed there, looking at the square.",
+    "en": "Tomás stood there staring at the square.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16828,19 +16858,21 @@
   },
   {
     "id": "u30-0638",
-    "es": "Quedamos en vernos a las seis.",
-    "en": "We agreed to meet at six.",
+    "es": "Quedamos en vernos el sábado en la plaza.",
+    "en": "We agreed to meet on Saturday in the square.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:object-pronoun-position",
       "g:present-ar",
+      "l:plaza",
       "l:quedar",
+      "l:sábado",
       "l:ver",
+      "p:days-el-lunes",
       "p:me-te-nos-objects",
-      "p:quedar-en",
-      "p:telling-time"
+      "p:quedar-en"
     ],
     "targets": [],
     "kind": "statement",
@@ -17383,7 +17415,7 @@
   {
     "id": "u30-0664",
     "es": "El abuelo se murió hace dos años.",
-    "en": "The grandfather died two years ago.",
+    "en": "Grandpa died two years ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17407,7 +17439,7 @@
   {
     "id": "u30-0665",
     "es": "Me quedo con el café de siempre.",
-    "en": "I'll stay with my usual coffee.",
+    "en": "I'll stick with my usual coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17514,17 +17546,20 @@
   },
   {
     "id": "u30-0670",
-    "es": "¿Dónde quedamos?\nQuedamos en la plaza, a las tres.",
-    "en": "Where shall we meet?\nLet's meet in the square at three.",
+    "es": "¿Dónde quedamos de vernos?\nEn la plaza, a las tres.",
+    "en": "Where did we say we'd meet?\nIn the square, at three.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:object-pronoun-position",
       "g:present-ar",
       "g:questions",
       "l:dónde",
       "l:plaza",
       "l:quedar",
+      "l:ver",
+      "p:me-te-nos-objects",
       "p:telling-time"
     ],
     "targets": [],
@@ -17535,16 +17570,18 @@
   },
   {
     "id": "u30-0671",
-    "es": "¿Quedamos mañana?\nSí, quedamos en la tarde.",
-    "en": "Shall we meet tomorrow?\nYes, let's meet in the afternoon. (to a friend)",
+    "es": "¿Nos vemos mañana?\nSí, mejor en la tarde.",
+    "en": "Shall we meet tomorrow?\nYes, the afternoon is better. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:chao-nos-vemos",
       "g:gender-articles",
-      "g:present-ar",
       "l:mañana",
-      "l:quedar",
+      "l:mejor",
       "l:tarde",
+      "l:ver",
+      "p:nos-vemos-a-las",
       "p:por-la-manana"
     ],
     "targets": [],
@@ -18097,7 +18134,7 @@
   {
     "id": "u30-0696",
     "es": "Mi mamá se muere de risa con Simón.",
-    "en": "My mom dies laughing with Simón.",
+    "en": "My mom cracks up at Simón.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18780,17 +18817,17 @@
   },
   {
     "id": "u30-0724",
-    "es": "Rosa sobrevivió a dos inviernos muy duros con el café.",
-    "en": "Rosa survived two very hard winters with the café.",
+    "es": "Con el café, Rosa sobrevivió a años muy duros.",
+    "en": "With the café, Rosa survived some very hard years.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
       "g:preterite-er-ir",
+      "l:año",
       "l:café",
       "l:duro",
-      "l:invierno",
       "l:sobrevivir",
       "p:quantifiers-basic",
       "p:sobrevivir-a"
@@ -18828,26 +18865,21 @@
   },
   {
     "id": "u30-0726",
-    "es": "La serie rinde poco: tiene muchos capítulos y pocas ideas.",
-    "en": "The series delivers little: lots of episodes and few ideas.",
+    "es": "La plata no me rinde hasta fin de mes.",
+    "en": "My money doesn't last until the end of the month.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
       "g:gender-articles",
-      "g:stem-boot",
       "g:stem-e-i",
-      "l:capítulo",
-      "l:idea",
+      "l:fin",
+      "l:mes",
+      "l:plata",
       "l:rendir",
-      "l:serie",
-      "l:tener",
-      "p:poco-un-poco",
-      "p:quantifiers-basic"
+      "p:me-te-nos-objects"
     ],
     "targets": [
-      "l:rendir",
-      "l:serie"
+      "l:rendir"
     ],
     "kind": "statement",
     "unit": "u30",
@@ -18921,7 +18953,7 @@
   {
     "id": "u30-0730",
     "es": "Vale no rinde si duerme poco.",
-    "en": "Vale doesn't perform well if she sleeps little.",
+    "en": "Vale doesn't work well if she doesn't sleep much.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19211,18 +19243,17 @@
   },
   {
     "id": "u30-0742",
-    "es": "Tengo mucha ilusión con el nuevo menú.",
-    "en": "I'm really looking forward to the new menu.",
+    "es": "Vale habla del nuevo menú con mucha ilusión.",
+    "en": "Vale talks about the new menu with a lot of excitement.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tengo",
       "g:gender-articles",
-      "g:yo-irregular",
+      "g:present-ar",
+      "l:hablar",
       "l:ilusión",
       "l:menú",
       "l:nuevo",
-      "l:tener",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -19235,17 +19266,19 @@
   },
   {
     "id": "u30-0743",
-    "es": "Me hace ilusión conocer tu ciudad.",
-    "en": "I'm looking forward to seeing your city. (to a friend)",
+    "es": "Tengo mucha ilusión de conocer tu ciudad.",
+    "en": "I'm really looking forward to seeing your city. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:me-hace-una-rebajita",
+      "c:tengo",
+      "g:yo-irregular",
       "l:ciudad",
       "l:conocer",
-      "l:hacer",
       "l:ilusión",
+      "l:tener",
       "p:possessives-basic",
+      "p:quantifiers-basic",
       "p:saber-conocer"
     ],
     "targets": [
@@ -19282,21 +19315,22 @@
   },
   {
     "id": "u30-0745",
-    "es": "A mis padres les hace ilusión ser abuelos.",
-    "en": "My parents are thrilled to be grandparents.",
+    "es": "Mis papás tienen mucha ilusión de ser abuelos.",
+    "en": "My parents are really looking forward to being grandparents.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:indirect-objects",
-      "g:present-er-ir",
+      "c:tienes",
       "g:ser-identity",
+      "g:stem-boot",
       "l:abuelos",
-      "l:hacer",
       "l:ilusión",
-      "l:padres",
+      "l:papá",
       "l:ser",
+      "l:tener",
       "p:masculine-plural-mixed",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:ilusión"
@@ -19635,8 +19669,8 @@
   },
   {
     "id": "u30-0759",
-    "es": "Los celos de Hernando eran por su café, no por una mujer.",
-    "en": "Hernando's jealousy was about his café, not about a woman.",
+    "es": "Los celos de Hernando eran por su taxi, no por una mujer.",
+    "en": "Hernando's jealousy was about his taxi, not about a woman.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19644,10 +19678,10 @@
       "g:imperfect-states",
       "g:por-para-1",
       "g:ser-identity",
-      "l:café",
       "l:celos",
       "l:mujer",
       "l:ser",
+      "l:taxi",
       "p:los-celos-los-restos",
       "p:possessives-basic"
     ],
@@ -19739,21 +19773,20 @@
   },
   {
     "id": "u30-0763",
-    "es": "Tengo celos de mi hermano, que viaja tanto.",
-    "en": "I'm jealous of my brother, who travels so much.",
+    "es": "A Simón le dan celos cuando Tomás habla por teléfono.",
+    "en": "Simón gets jealous when Tomás talks on the phone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tengo",
+      "g:indirect-objects",
       "g:present-ar",
-      "g:relative-que",
-      "g:yo-irregular",
       "l:celos",
-      "l:hermano",
-      "l:tener",
-      "l:viajar",
+      "l:dar",
+      "l:hablar",
+      "l:teléfono",
+      "p:cuando-basic",
       "p:los-celos-los-restos",
-      "p:possessives-basic"
+      "p:me-da-miedo"
     ],
     "targets": [
       "l:celos"
@@ -20149,7 +20182,7 @@
   {
     "id": "u30-0779",
     "es": "La personalidad de Tomás cambió desde que llegó.",
-    "en": "Tomás's personality changed since he arrived.",
+    "en": "Tomás's personality has changed since he arrived.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21588,20 +21621,17 @@
   },
   {
     "id": "u30-0837",
-    "es": "La reina de Inglaterra no sabe lo que es un tinto.",
-    "en": "The queen of England doesn't know what a tinto is.",
+    "es": "Ni la reina de Inglaterra tomaba un tinto como este.",
+    "en": "Not even the Queen of England had a tinto like this one.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-er-ir",
-      "g:relatives-donde-lo-que",
-      "g:ser-identity",
+      "g:imperfect-habitual",
       "l:reina",
-      "l:saber",
-      "l:ser",
       "l:tinto",
-      "p:saber-conocer"
+      "l:tomar",
+      "p:demonstratives-basic"
     ],
     "targets": [
       "l:reina"
@@ -21707,18 +21737,19 @@
   },
   {
     "id": "u30-0842",
-    "es": "Una reina necesita buenos amigos.",
-    "en": "A queen needs good friends.",
+    "es": "Mi abuela se sentaba en su silla como una reina.",
+    "en": "My grandmother sat in her chair like a queen.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:gender-articles",
-      "g:present-ar",
-      "l:amigo",
-      "l:bueno",
-      "l:necesitar",
-      "l:reina"
+      "g:imperfect-habitual",
+      "g:reflexive-routine",
+      "l:abuela",
+      "l:reina",
+      "l:sentarse",
+      "l:silla",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:reina"
@@ -21859,7 +21890,7 @@
   {
     "id": "u30-0848",
     "es": "Tomás pasó delante de mí sin saludar.",
-    "en": "Tomás walked past in front of me without saying hello.",
+    "en": "Tomás walked right past me without saying hello.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21934,17 +21965,17 @@
   },
   {
     "id": "u30-0851",
-    "es": "¿A qué fecha estamos hoy, Hernando?",
+    "es": "¿Qué fecha es hoy, Hernando?",
     "en": "What's the date today, Hernando?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
-      "l:estar",
+      "g:questions",
+      "g:ser-identity",
       "l:fecha",
       "l:hoy",
       "l:qué",
-      "p:prep-questions-basic"
+      "l:ser"
     ],
     "targets": [
       "l:fecha"
@@ -21979,17 +22010,20 @@
   },
   {
     "id": "u30-0853",
-    "es": "La última fecha es el viernes.",
-    "en": "The last date is Friday.",
+    "es": "La fecha para firmar es el viernes.",
+    "en": "The date to sign is Friday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
       "l:fecha",
+      "l:firmar",
       "l:ser",
       "l:viernes",
-      "p:days-el-lunes"
+      "p:days-el-lunes",
+      "p:para-inf",
+      "p:para-inf-purpose"
     ],
     "targets": [
       "l:fecha"
@@ -22368,24 +22402,20 @@
   },
   {
     "id": "u30-0869",
-    "es": "Mi abuelo era muy querido en su pueblo.",
-    "en": "My grandfather was much loved in his town.",
+    "es": "Hernando guarda la carta de un amigo muy querido.",
+    "en": "Hernando keeps a letter from a very dear friend.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:era",
-      "g:imperfect-states",
-      "g:ser-identity",
-      "l:abuelo",
-      "l:pueblo",
-      "l:querido",
-      "l:ser",
-      "p:possessives-basic",
+      "g:gender-articles",
+      "g:present-ar",
+      "l:amigo",
+      "l:carta",
+      "l:guardar",
+      "l:querer",
       "p:quantifiers-basic"
     ],
-    "targets": [
-      "l:querido"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u30",
     "theme": "fechas, calidad, trato y cosas por averiguar",
@@ -22393,15 +22423,17 @@
   },
   {
     "id": "u30-0870",
-    "es": "Vale es muy querida en el barrio.",
-    "en": "Vale is very loved in the neighborhood.",
+    "es": "Vale llegó de Medellín, y ya es muy querida en el barrio.",
+    "en": "Vale came from Medellín, and she's already much loved in the neighborhood.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
+      "g:preterite-ar",
       "g:ser-identity",
       "l:barrio",
+      "l:llegar",
       "l:querido",
       "l:ser",
       "p:quantifiers-basic"
@@ -22630,18 +22662,20 @@
   },
   {
     "id": "u30-0880",
-    "es": "Hernando recibe un tratamiento nuevo para el corazón.",
-    "en": "Hernando is getting a new treatment for his heart.",
+    "es": "Mi abuelo recibe un tratamiento nuevo para el corazón.",
+    "en": "My grandfather is getting a new treatment for his heart.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
+      "l:abuelo",
       "l:corazón",
       "l:nuevo",
       "l:recibir",
       "l:tratamiento",
-      "p:para-inf"
+      "p:para-inf",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:tratamiento"
@@ -22675,20 +22709,26 @@
   },
   {
     "id": "u30-0882",
-    "es": "No me gusta el tratamiento que da Altamira a los vecinos.",
-    "en": "I don't like the way Altamira treats the neighbors.",
+    "es": "Me preocupa que el tratamiento de mi abuelo sea tan caro.",
+    "en": "It worries me that my grandfather's treatment is so expensive.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:me-gusta",
       "g:gender-articles",
-      "g:gustar-basic",
+      "g:gustar-full",
       "g:present-ar",
-      "g:relative-que",
-      "l:dar",
-      "l:gustar",
+      "g:ser-identity",
+      "g:subj-emotion",
+      "g:subj-irregulars",
+      "g:that-clauses",
+      "l:abuelo",
+      "l:caro",
+      "l:preocupar",
+      "l:ser",
       "l:tratamiento",
-      "l:vecino"
+      "p:me-preocupa-que",
+      "p:possessives-basic",
+      "p:tengo-miedo-de-que"
     ],
     "targets": [
       "l:tratamiento"
@@ -22728,8 +22768,8 @@
   },
   {
     "id": "u30-0884",
-    "es": "¿Qué tratamiento le dieron a Hernando?",
-    "en": "What treatment did they give Hernando?",
+    "es": "¿Qué tratamiento le dieron a tu papá?",
+    "en": "What treatment did they give your dad? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22738,8 +22778,10 @@
       "g:preterite-irregular-strong",
       "g:questions",
       "l:dar",
+      "l:papá",
       "l:qué",
-      "l:tratamiento"
+      "l:tratamiento",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:tratamiento"
@@ -22775,8 +22817,8 @@
   },
   {
     "id": "u30-0886",
-    "es": "Estoy cansada del tratamiento que da el banco a la gente mayor.",
-    "en": "I'm tired of the way the bank treats older people.",
+    "es": "Mi mamá está cansada del tratamiento, pero ya casi termina.",
+    "en": "My mom is tired of the treatment, but she's almost done.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22784,18 +22826,13 @@
       "g:estar-location-states",
       "g:gender-articles",
       "g:present-ar",
-      "g:relative-que",
-      "l:banco",
       "l:cansado",
-      "l:dar",
       "l:estar",
-      "l:gente",
-      "l:mayor",
+      "l:mamá",
+      "l:terminar",
       "l:tratamiento",
       "p:estar-harto-de",
-      "p:la-gente-singular",
-      "p:mayor-menor",
-      "p:viejo-antiguo-mayor"
+      "p:possessives-basic"
     ],
     "targets": [
       "l:tratamiento",
@@ -22929,16 +22966,16 @@
   },
   {
     "id": "u30-0892",
-    "es": "Ya averigüé la dirección de la hermana de Rosa.",
-    "en": "I already found out the address of Rosa's sister.",
+    "es": "Ya averigüé la dirección del abogado.",
+    "en": "I already found out the lawyer's address.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-spelling-stem",
+      "l:abogado",
       "l:averiguar",
-      "l:dirección",
-      "l:hermana"
+      "l:dirección"
     ],
     "targets": [
       "l:averiguar"
@@ -22950,19 +22987,25 @@
   },
   {
     "id": "u30-0893",
-    "es": "Tomás averiguó que Rosa vendió una casa en 1978.",
-    "en": "Tomás found out that Rosa sold a house in 1978.",
+    "es": "Tomás averiguó que el edificio tiene más de cien años.",
+    "en": "Tomás found out that the building is over a hundred years old.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
+      "g:comparatives-advanced",
       "g:gender-articles",
       "g:preterite-ar",
-      "g:preterite-er-ir",
+      "g:stem-boot",
       "g:that-clauses",
       "l:averiguar",
-      "l:casa",
-      "l:vender",
-      "p:dates-years"
+      "l:año",
+      "l:edificio",
+      "l:tener",
+      "p:lugar-tiene",
+      "p:mas-de-number",
+      "p:numbers-un-una",
+      "p:tener-anos"
     ],
     "targets": [
       "l:averiguar"
@@ -23264,24 +23307,24 @@
   },
   {
     "id": "u30-0906",
-    "es": "Esta serie no rinde, ya me aburrí.",
-    "en": "This series isn't working, I've already got bored.",
+    "es": "Con esta serie no rindo: me acuesto a las dos.",
+    "en": "With this series I get nothing done: I go to bed at two.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:preterite-er-ir",
+      "g:gender-articles",
       "g:reflexive-routine",
+      "g:stem-boot",
       "g:stem-e-i",
-      "l:aburrirse",
+      "l:acostarse",
       "l:rendir",
       "l:serie",
-      "p:aburrir-aburrirse",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:telling-time"
     ],
     "targets": [
       "l:rendir",
-      "l:serie",
-      "p:aburrir-aburrirse"
+      "l:serie"
     ],
     "kind": "statement",
     "unit": "u30",
@@ -23437,7 +23480,7 @@
   {
     "id": "u30-0913",
     "es": "Nos alegramos de que Vale vuelva el lunes.",
-    "en": "We're glad that Vale is back on Monday.",
+    "en": "We're glad that Vale is coming back on Monday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23779,18 +23822,19 @@
   },
   {
     "id": "u30-0926",
-    "es": "Me alegro de que nadie salga herido.",
-    "en": "I'm glad nobody gets hurt.",
+    "es": "Me alegro de que nadie esté herido.",
+    "en": "I'm glad nobody is hurt.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-alegro",
+      "g:estar-location-states",
       "g:subj-emotion-intro",
       "g:subj-wanting",
       "g:that-clauses",
       "l:alegrarse",
+      "l:estar",
       "l:herir",
-      "l:salir",
       "p:alegrarse-de-que"
     ],
     "targets": [
@@ -24027,24 +24071,26 @@
   },
   {
     "id": "u30-0936",
-    "es": "Estamos contentos de que Rosa tenga una nieta tan fuerte.",
-    "en": "We're happy that Rosa has such a strong granddaughter.",
+    "es": "Estamos contentos de que Tomás sea tan trabajador como su abuela.",
+    "en": "We're happy that Tomás is as hard-working as his grandmother.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:aqui-tiene",
       "g:adjective-agreement",
+      "g:comparatives",
       "g:estar-location-states",
-      "g:gender-articles",
+      "g:ser-identity",
+      "g:subj-irregulars",
       "g:subj-value",
       "g:that-clauses",
+      "l:abuela",
       "l:contento",
       "l:estar",
-      "l:fuerte",
-      "l:nieta",
-      "l:tener",
+      "l:ser",
+      "l:trabajador",
       "p:contento-con-de",
-      "p:entusiasmar-fascinar"
+      "p:entusiasmar-fascinar",
+      "p:possessives-basic"
     ],
     "targets": [
       "p:contento-con-de"
@@ -25513,16 +25559,16 @@
   },
   {
     "id": "u30-0995",
-    "es": "Estoy orgullosa de poder decir que conozco a Rosa.",
+    "es": "Estoy orgullosa de poder decir que conocí a Rosa.",
     "en": "I'm proud to be able to say I knew Rosa. (a woman speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:estar-location-states",
+      "g:preterite-er-ir",
       "g:that-clauses",
       "g:verb-infinitive",
-      "g:yo-irregular",
       "l:conocer",
       "l:decir",
       "l:estar",
@@ -25543,13 +25589,13 @@
   },
   {
     "id": "u30-0996",
-    "es": "El orgullo de Hernando no le deja aceptar ayuda.",
+    "es": "El orgullo de Hernando no lo deja aceptar ayuda.",
     "en": "Hernando's pride won't let him accept help.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:direct-objects",
       "g:gender-articles",
-      "g:indirect-objects",
       "g:present-ar",
       "l:aceptar",
       "l:ayuda",
@@ -25761,18 +25807,21 @@
   },
   {
     "id": "u30-1005",
-    "es": "¡Es increíble cómo llueve en Bogotá!",
-    "en": "It's amazing how it rains in Bogotá!",
+    "es": "¿Ya viste? ¡Es increíble cómo llueve hoy!",
+    "en": "Have you seen? It's amazing how hard it's raining today!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:indirect-questions",
       "g:ser-identity",
       "g:stem-boot",
+      "g:stem-e-i",
       "l:cómo",
+      "l:hoy",
       "l:increíble",
       "l:llover",
       "l:ser",
+      "l:vestir",
       "p:es-increible-como"
     ],
     "targets": [
@@ -25998,23 +26047,23 @@
   },
   {
     "id": "u30-1014",
-    "es": "Es impresionante cómo respira la gente en la altura.",
-    "en": "It's impressive how people breathe at high altitude.",
+    "es": "Es impresionante cómo se ve la ciudad desde los cerros.",
+    "en": "It's impressive how the city looks from the hills.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:indirect-questions",
-      "g:present-ar",
+      "g:present-er-ir",
+      "g:se-impersonal",
       "g:ser-identity",
-      "l:altura",
+      "l:cerro",
+      "l:ciudad",
       "l:cómo",
-      "l:gente",
       "l:impresionante",
-      "l:respirar",
       "l:ser",
-      "p:es-increible-como",
-      "p:la-gente-singular"
+      "l:ver",
+      "p:es-increible-como"
     ],
     "targets": [
       "l:impresionante",
@@ -26055,8 +26104,8 @@
   },
   {
     "id": "u30-1016",
-    "es": "Es increíble cómo se llena el café los domingos.",
-    "en": "It's amazing how the café fills up on Sundays.",
+    "es": "Es increíble cómo se vacía la plaza cuando llueve.",
+    "en": "It's amazing how the square empties when it rains.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26065,13 +26114,14 @@
       "g:present-ar",
       "g:se-impersonal",
       "g:ser-identity",
-      "l:café",
+      "g:stem-boot",
       "l:cómo",
-      "l:domingo",
       "l:increíble",
-      "l:llenar",
+      "l:llover",
+      "l:plaza",
       "l:ser",
-      "p:days-el-lunes",
+      "l:vaciar",
+      "p:cuando-basic",
       "p:es-increible-como"
     ],
     "targets": [
@@ -26110,21 +26160,24 @@
   },
   {
     "id": "u30-1018",
-    "es": "¡Es increíble cómo huele esta cocina!",
-    "en": "It's amazing how this kitchen smells!",
+    "es": "Es increíble cómo se ríe Simón cuando ve a Vale.",
+    "en": "It's amazing how Simón laughs when he sees Vale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:indirect-questions",
+      "g:present-er-ir",
+      "g:se-impersonal",
       "g:ser-identity",
-      "g:yo-irregular",
-      "l:cocina",
+      "g:stem-e-i",
       "l:cómo",
       "l:increíble",
-      "l:oler",
+      "l:reír",
       "l:ser",
-      "p:demonstratives-basic",
-      "p:es-increible-como"
+      "l:ver",
+      "p:cuando-basic",
+      "p:es-increible-como",
+      "p:personal-a"
     ],
     "targets": [
       "p:es-increible-como"
@@ -26454,8 +26507,8 @@
   },
   {
     "id": "u30-1030",
-    "es": "Me da rabia que mi hermano pierda todo en un día.",
-    "en": "It makes me mad that my brother loses everything in one day.",
+    "es": "Me da rabia que mi hermano nunca me devuelva la plata.",
+    "en": "It makes me mad that my brother never pays me back.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26465,13 +26518,15 @@
       "g:subj-wanting",
       "g:that-clauses",
       "l:dar",
-      "l:día",
+      "l:devolver",
       "l:hermano",
-      "l:perder",
+      "l:plata",
       "l:rabia",
+      "p:frequency-scale",
       "p:me-da-miedo",
       "p:me-da-rabia-me-indigna",
       "p:me-da-rabia-que",
+      "p:me-te-nos-objects",
       "p:possessives-basic"
     ],
     "targets": [
@@ -26518,7 +26573,7 @@
   },
   {
     "id": "u30-1032",
-    "es": "¿Te da rabia que Hernando gane siempre en las cartas?",
+    "es": "¿Te da rabia que Hernando gane siempre a las cartas?",
     "en": "Does it make you mad that Hernando always wins at cards? (to a friend)",
     "accept": [],
     "acceptEn": [],
@@ -26584,8 +26639,8 @@
   },
   {
     "id": "u30-1034",
-    "es": "A mi mamá le da rabia que pierdan la plata en cosas del carro.",
-    "en": "It makes my mom mad that they lose money on car stuff.",
+    "es": "A mi mamá le da rabia que mi papá pague tanto por el carro.",
+    "en": "It makes my mom mad that my dad pays so much for the car.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26596,12 +26651,12 @@
       "g:subj-wanting",
       "g:that-clauses",
       "l:carro",
-      "l:cosa",
       "l:dar",
       "l:mamá",
-      "l:perder",
-      "l:plata",
+      "l:pagar",
+      "l:papá",
       "l:rabia",
+      "p:costar-pagar",
       "p:me-da-miedo",
       "p:me-da-rabia-me-indigna",
       "p:me-da-rabia-que",
@@ -26684,26 +26739,30 @@
   },
   {
     "id": "u30-1037",
-    "es": "Me da rabia que las llaves siempre desaparezcan a las ocho.",
-    "en": "It makes me mad that the keys always disappear at eight.",
+    "es": "Me da rabia que las llaves desaparezcan justo cuando voy tarde.",
+    "en": "It makes me mad that the keys disappear just when I'm running late.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-regala",
+      "c:se-me-hizo-tarde",
+      "c:voy-vas",
       "g:gender-articles",
+      "g:ir-a-plans",
       "g:subj-emotion",
       "g:subj-wanting",
       "g:that-clauses",
       "l:dar",
       "l:desaparecer",
+      "l:ir",
+      "l:justo",
       "l:llave",
       "l:rabia",
-      "l:siempre",
-      "p:frequency-scale",
+      "l:tarde",
+      "p:cuando-basic",
       "p:me-da-miedo",
       "p:me-da-rabia-me-indigna",
-      "p:me-da-rabia-que",
-      "p:telling-time"
+      "p:me-da-rabia-que"
     ],
     "targets": [
       "g:subj-emotion",
@@ -26849,28 +26908,24 @@
   },
   {
     "id": "u30-1042",
-    "es": "Hernando no soporta que le hagan el favor de ayudarlo.",
-    "en": "Hernando can't stand being done the favor of being helped.",
+    "es": "Hernando no soporta que lo ayuden a subir las escaleras.",
+    "en": "Hernando can't stand people helping him up the stairs.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
       "g:gender-articles",
-      "g:indirect-objects",
-      "g:object-pronoun-position",
       "g:present-ar",
       "g:subj-emotion",
       "g:subj-wanting",
       "g:that-clauses",
       "l:ayudar",
-      "l:favor",
-      "l:hacer",
+      "l:escalera",
       "l:soportar",
-      "p:me-hace-el-favor",
-      "p:me-haces-el-favor-de",
+      "l:subir",
       "p:no-soportar-que",
       "p:no-soporto-que",
-      "p:request-ladder"
+      "p:plural-one-object"
     ],
     "targets": [
       "g:subj-emotion",
@@ -27022,7 +27077,7 @@
   },
   {
     "id": "u30-1048",
-    "es": "No soporta la gente que habla fuerte en el bus.",
+    "es": "No soporta a la gente que habla fuerte en el bus.",
     "en": "She can't stand people who talk loudly on the bus.",
     "accept": [],
     "acceptEn": [],
@@ -27801,13 +27856,13 @@
   },
   {
     "id": "u30-1076",
-    "es": "Tomás se pone bravo con él mismo cuando comete un error.",
+    "es": "Tomás se pone bravo consigo mismo cuando comete un error.",
     "en": "Tomás gets angry with himself when he makes a mistake.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:con-el-ella",
       "g:gender-articles",
+      "g:prep-pronouns",
       "g:present-er-ir",
       "g:verbs-of-change",
       "l:bravo",
@@ -28545,20 +28600,17 @@
   },
   {
     "id": "u30-1102",
-    "es": "No me preocupa el dinero, me preocupa mi gente.",
-    "en": "The money doesn't worry me, my people do.",
+    "es": "A mí no me preocupa Altamira; me preocupa Tomás.",
+    "en": "Altamira doesn't worry me; Tomás does.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "c:a-mi-tambien",
       "g:gustar-full",
+      "g:prep-pronouns",
       "g:present-ar",
-      "l:dinero",
-      "l:gente",
       "l:preocupar",
-      "p:la-gente-singular",
-      "p:me-preocupa-que",
-      "p:possessives-basic"
+      "p:me-preocupa-que"
     ],
     "targets": [
       "p:me-preocupa-que"
@@ -29320,25 +29372,20 @@
   },
   {
     "id": "u30-1131",
-    "es": "Mi tío era muy querido en el pueblo.",
-    "en": "My uncle was much loved in the village.",
+    "es": "Querido tío: te extrañamos mucho en Bogotá.",
+    "en": "Dear uncle: we miss you a lot in Bogotá.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:era",
-      "g:gender-articles",
-      "g:imperfect-states",
-      "g:ser-identity",
-      "l:pueblo",
-      "l:querido",
-      "l:ser",
+      "g:gustar-full",
+      "g:present-ar",
+      "l:extrañar",
+      "l:querer",
       "l:tío",
-      "p:possessives-basic",
+      "p:extranar",
       "p:quantifiers-basic"
     ],
-    "targets": [
-      "l:querido"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u30",
     "theme": "más rabia, harto, triste y miedo",
@@ -29369,21 +29416,19 @@
   },
   {
     "id": "u30-1133",
-    "es": "Un orgullo grande se nota cuando Hernando habla de su hija.",
-    "en": "Great pride shows when Hernando talks about his daughter.",
+    "es": "Cuando Hernando habla de sus años de taxista, habla con mucho orgullo.",
+    "en": "When Hernando talks about his years as a taxi driver, he talks with great pride.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:present-ar",
-      "g:se-impersonal",
-      "l:grande",
+      "l:año",
       "l:hablar",
-      "l:hija",
-      "l:notar",
       "l:orgullo",
+      "l:taxista",
       "p:cuando-basic",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:orgullo"
@@ -29449,21 +29494,20 @@
   },
   {
     "id": "u30-1136",
-    "es": "Mariana te lo promete: ya verás que todo sale bien.",
-    "en": "Mariana promises you: you'll see it'll all work out. (to a friend)",
+    "es": "Mariana le dijo a Vale: ya verás que todo sale bien.",
+    "en": "Mariana told Vale: you'll see, it'll all work out.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
       "c:ya-veras-que-todo-sale-bien",
-      "g:direct-objects",
-      "g:double-pronouns",
-      "g:present-er-ir",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:preterite-irregular-strong",
       "l:bien",
-      "l:prometer",
+      "l:decir",
       "l:salir",
-      "l:ver",
-      "p:me-te-nos-objects"
+      "l:ver"
     ],
     "targets": [
       "c:ya-veras-que-todo-sale-bien"
@@ -29529,15 +29573,16 @@
   },
   {
     "id": "u30-1139",
-    "es": "Hernando repite que ya verás que todo sale bien.",
-    "en": "Hernando keeps saying you'll see it'll all work out.",
+    "es": "Hernando le repite a Tomás: ya verás que todo sale bien.",
+    "en": "Hernando keeps telling Tomás: you'll see, it'll all work out.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
       "c:ya-veras-que-todo-sale-bien",
+      "g:indirect-objects",
+      "g:le-doubling",
       "g:stem-e-i",
-      "g:that-clauses",
       "l:bien",
       "l:repetir",
       "l:salir",
@@ -30107,7 +30152,7 @@
   {
     "id": "u30-1161",
     "es": "Me emociona que Hernando sonría otra vez.",
-    "en": "It excites me that Hernando smiles again.",
+    "en": "It moves me that Hernando is smiling again.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -30273,20 +30318,23 @@
   },
   {
     "id": "u30-1167",
-    "es": "Tendría veintiocho años cuando abrió el café.",
-    "en": "She must have been twenty-eight when she opened the café.",
+    "es": "Vale tendría unos veinte años cuando aprendió a hacer pan.",
+    "en": "Vale must have been about twenty when she learned to make bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
       "g:gender-articles",
       "g:preterite-er-ir",
-      "l:abrir",
+      "l:aprender",
       "l:año",
-      "l:café",
+      "l:hacer",
+      "l:pan",
       "l:tener",
+      "p:aproximar-cifras",
       "p:cuando-basic",
-      "p:tener-anos"
+      "p:tener-anos",
+      "p:unos-approx"
     ],
     "targets": [],
     "kind": "statement",
@@ -30345,8 +30393,8 @@
   },
   {
     "id": "u30-1170",
-    "es": "Serían las seis de la tarde cuando sonó el teléfono.",
-    "en": "It must have been six in the evening when the phone rang.",
+    "es": "Sonó el teléfono; serían las seis de la tarde.",
+    "en": "The phone rang; it must have been six in the evening.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -30358,7 +30406,6 @@
       "l:sonar",
       "l:tarde",
       "l:teléfono",
-      "p:cuando-basic",
       "p:por-la-manana",
       "p:telling-time"
     ],
@@ -30540,20 +30587,22 @@
   },
   {
     "id": "u30-1178",
-    "es": "Serían las nueve cuando Vale cerró el café.",
-    "en": "It must have been nine when Vale closed the café.",
+    "es": "Vale cerró el café tarde, porque habría mucha gente.",
+    "en": "Vale closed the café late, because there must have been a lot of people.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:conditional",
+      "c:porque",
+      "g:cause-result",
       "g:gender-articles",
+      "g:imperfect-states",
       "g:preterite-ar",
-      "g:ser-identity",
       "l:café",
       "l:cerrar",
-      "l:ser",
-      "p:cuando-basic",
-      "p:telling-time"
+      "l:gente",
+      "l:tarde",
+      "p:la-gente-singular",
+      "p:quantifiers-basic"
     ],
     "targets": [],
     "kind": "statement",
@@ -30706,8 +30755,8 @@
   },
   {
     "id": "u30-1185",
-    "es": "Serían las doce cuando terminamos de limpiar.",
-    "en": "It must have been twelve when we finished cleaning.",
+    "es": "Cuando terminamos de limpiar, ya serían las doce.",
+    "en": "When we finished cleaning, it must have been twelve already.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -30786,25 +30835,23 @@
   },
   {
     "id": "u30-1188",
-    "es": "¿Qué hora sería cuando por fin se durmieron los niños?",
-    "en": "What time could it have been when the kids finally fell asleep?",
+    "es": "Los niños se durmieron muy tarde; estarían muy emocionados.",
+    "en": "The kids fell asleep very late; they must have been very excited.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:conditional",
+      "g:estar-location-states",
       "g:gender-articles",
       "g:preterite-spelling-stem",
-      "g:questions",
       "g:reflexive-routine",
-      "g:ser-identity",
       "l:dormirse",
-      "l:fin",
-      "l:hora",
+      "l:emocionado",
+      "l:estar",
       "l:niño",
-      "l:qué",
-      "l:ser",
-      "p:cuando-basic",
-      "p:telling-time"
+      "l:tarde",
+      "p:quantifiers-basic"
     ],
     "targets": [],
     "kind": "question",
@@ -30979,20 +31026,24 @@
   },
   {
     "id": "u30-1196",
-    "es": "Me molesta el ruido, pero no soporto el ruido de las obras.",
-    "en": "The noise bothers me, but I can't stand the noise from the roadworks.",
+    "es": "Me molesta un poco el ruido de la calle, pero no soporto el de las obras.",
+    "en": "The street noise bothers me a little, but I can't stand the noise from the roadworks.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:gustar-full",
       "g:present-ar",
+      "l:calle",
       "l:molestar",
       "l:obra",
       "l:ruido",
       "l:soportar",
+      "p:los-de-la-camiseta",
       "p:no-soportar-que",
-      "p:no-soporto-que"
+      "p:no-soporto-que",
+      "p:poco-un-poco",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "p:no-soportar-que"
@@ -31150,13 +31201,12 @@
   },
   {
     "id": "u30-1202",
-    "es": "Me da pena por Vale, pero me da rabia con Altamira.",
-    "en": "I feel sorry for Vale, but I'm mad at Altamira.",
+    "es": "Vale me da pena, y Altamira me da rabia.",
+    "en": "I feel sorry for Vale, and Altamira makes me mad.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-regala",
-      "g:por-para-1",
       "l:dar",
       "l:pena",
       "l:rabia",
@@ -31239,7 +31289,7 @@
   {
     "id": "u30-1205",
     "es": "A Tomás le da pena gritar y rabia no decir nada.",
-    "en": "Tomás feels sad about shouting and mad about saying nothing.",
+    "en": "Tomás is embarrassed to shout, and it makes him mad to say nothing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -31451,8 +31501,8 @@
   },
   {
     "id": "u30-1214",
-    "es": "Trabajo por las mañanas y estudio para ser mejor.",
-    "en": "I work in the mornings and study to be better.",
+    "es": "Trabajo por las mañanas y estudio por las tardes para ser cocinero.",
+    "en": "I work in the mornings and study in the afternoons to become a cook. (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -31460,14 +31510,16 @@
       "g:por-para-1",
       "g:present-ar",
       "g:ser-identity",
+      "l:cocinero",
       "l:estudiar",
       "l:mañana",
-      "l:mejor",
       "l:ser",
+      "l:tarde",
       "l:trabajar",
       "p:para-inf",
       "p:para-inf-purpose",
-      "p:por-la-manana"
+      "p:por-la-manana",
+      "p:ser-profession-no-article"
     ],
     "targets": [],
     "kind": "statement",
@@ -31675,7 +31727,7 @@
   },
   {
     "id": "u30-1223",
-    "es": "Llegamos tarde para la cita y nos dio rabia.",
+    "es": "Llegamos tarde a la cita y nos dio rabia.",
     "en": "We arrived late for the appointment and it made us mad.",
     "accept": [],
     "acceptEn": [],
@@ -31692,8 +31744,7 @@
       "p:me-da-miedo",
       "p:me-da-rabia-me-indigna",
       "p:me-da-rabia-que",
-      "p:me-te-nos-objects",
-      "p:para-inf"
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "l:rabia",
@@ -32152,21 +32203,22 @@
   },
   {
     "id": "u30-1243",
-    "es": "¿Cuánto tiempo te aburres en casa los domingos?",
-    "en": "How long do you get bored at home on Sundays? (to a friend)",
+    "es": "¿Qué haces cuando te aburres en casa los domingos?",
+    "en": "What do you do when you get bored at home on Sundays? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:cuanto-tiempo",
       "g:gender-articles",
       "g:present-er-ir",
+      "g:questions",
       "g:reflexive-routine",
       "l:aburrirse",
       "l:casa",
-      "l:cuánto",
       "l:domingo",
-      "l:tiempo",
+      "l:hacer",
+      "l:qué",
       "p:aburrir-aburrirse",
+      "p:cuando-basic",
       "p:days-el-lunes"
     ],
     "targets": [
@@ -32478,13 +32530,13 @@
   },
   {
     "id": "u30-1256",
-    "es": "¿Quién era el querido amigo de Rosa?",
-    "en": "Who was Rosa's dear friend?",
+    "es": "¿Quién era ese amigo tan querido de Rosa?",
+    "en": "Who was that dear friend of Rosa's?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:era",
-      "g:gender-articles",
+      "g:demonstratives",
       "g:imperfect-states",
       "g:questions",
       "g:ser-identity",
@@ -32657,20 +32709,22 @@
   },
   {
     "id": "u30-1263",
-    "es": "Me fastidia que Vale trabaje sola de noche.",
-    "en": "It bothers me that Vale works alone at night.",
+    "es": "Me fastidia que Vale siempre tenga la razón.",
+    "en": "It annoys me that Vale is always right.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:compre-trabaje",
-      "g:adjective-agreement",
+      "c:aqui-tiene",
+      "g:gender-articles",
       "g:gustar-full",
       "g:present-ar",
       "g:subj-emotion",
       "g:that-clauses",
       "l:fastidiar",
-      "l:noche",
-      "l:trabajar"
+      "l:razón",
+      "l:siempre",
+      "l:tener",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:subj-emotion"
@@ -33140,19 +33194,22 @@
   },
   {
     "id": "u30-1282",
-    "es": "Temo que mi hermana viaje sola.",
-    "en": "I fear that my sister travels alone.",
+    "es": "Temo que mi hermana se aburra de esperar.",
+    "en": "I'm afraid my sister will get bored of waiting.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:present-er-ir",
+      "g:reflexive-routine",
       "g:subj-emotion",
       "g:subj-wanting",
       "g:that-clauses",
+      "l:aburrirse",
+      "l:esperar",
       "l:hermana",
       "l:temer",
-      "l:viajar",
+      "p:aburrir-aburrirse",
+      "p:me-aburre-que",
       "p:possessives-basic"
     ],
     "targets": [
@@ -33165,8 +33222,8 @@
   },
   {
     "id": "u30-1283",
-    "es": "Hernando teme que Rosa no lo perdone.",
-    "en": "Hernando fears that Rosa won't forgive him.",
+    "es": "Hernando teme que Tomás no lo perdone.",
+    "en": "Hernando fears that Tomás won't forgive him.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -33560,16 +33617,21 @@
   },
   {
     "id": "u30-1299",
-    "es": "Estoy harto de los trancones.",
-    "en": "I'm fed up with the traffic jams. (a man speaking)",
+    "es": "Estoy harto de que el bus pase lleno.",
+    "en": "I'm fed up with the bus going past full. (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
       "g:gender-articles",
+      "g:subj-emotion",
+      "g:subj-wanting",
+      "g:that-clauses",
+      "l:bus",
       "l:estar",
       "l:harto",
-      "l:trancón",
+      "l:lleno",
+      "l:pasar",
       "p:estar-harto-de",
       "p:estar-harto-de-que"
     ],
@@ -33583,18 +33645,22 @@
   },
   {
     "id": "u30-1300",
-    "es": "Mi papá está harto de esperar el bus.",
-    "en": "My dad is fed up with waiting for the bus.",
+    "es": "Mi papá está harto de que le suban el alquiler.",
+    "en": "My dad is fed up with them raising his rent.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
       "g:gender-articles",
-      "l:bus",
-      "l:esperar",
+      "g:indirect-objects",
+      "g:subj-emotion",
+      "g:subj-wanting",
+      "g:that-clauses",
+      "l:alquiler",
       "l:estar",
       "l:harto",
       "l:papá",
+      "l:subir",
       "p:estar-harto-de",
       "p:estar-harto-de-que",
       "p:possessives-basic"
@@ -33680,20 +33746,26 @@
   },
   {
     "id": "u30-1304",
-    "es": "Estoy harta de las filas del banco.",
-    "en": "I'm fed up with the bank lines. (a woman speaking)",
+    "es": "Estoy harta de las reuniones que no sirven para nada.",
+    "en": "I'm fed up with meetings that are useless. (a woman speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:para-nada",
       "g:adjective-agreement",
       "g:estar-location-states",
       "g:gender-articles",
-      "l:banco",
+      "g:negation-words",
+      "g:relative-que",
+      "g:stem-e-i",
       "l:estar",
-      "l:fila",
       "l:harto",
+      "l:reunión",
+      "l:servir",
       "p:estar-harto-de",
-      "p:estar-harto-de-que"
+      "p:estar-harto-de-que",
+      "p:no-servir-para-nada",
+      "p:servir-para"
     ],
     "targets": [
       "p:estar-harto-de"
@@ -33727,18 +33799,23 @@
   },
   {
     "id": "u30-1306",
-    "es": "Los clientes están hartos de la lluvia.",
-    "en": "The customers are fed up with the rain.",
+    "es": "Los clientes están hartos de que la máquina de café falle.",
+    "en": "The customers are fed up with the coffee machine breaking down.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:estar-location-states",
       "g:gender-articles",
+      "g:subj-value",
+      "g:subj-wanting",
+      "g:that-clauses",
+      "l:café",
       "l:cliente",
       "l:estar",
+      "l:fallar",
       "l:harto",
-      "l:lluvia",
+      "l:máquina",
       "p:estar-harto-de",
       "p:estar-harto-de-que"
     ],
@@ -33917,16 +33994,17 @@
   },
   {
     "id": "u30-1313",
-    "es": "¿Por qué lloras?\nPor nada, es que me emociona verlos juntos.",
-    "en": "Why are you crying?\nFor nothing, it just moves me to see them together. (to a friend)",
+    "es": "¿Por qué lloras?\nNo es nada, es que me emociona verlos juntos.",
+    "en": "Why are you crying?\nIt's nothing, it just moves me to see you together. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:es-que",
       "g:direct-objects",
+      "g:negation-words",
       "g:object-pronoun-position",
-      "g:por-para-1",
       "g:present-ar",
+      "g:ser-identity",
       "l:emoción",
       "l:juntos",
       "l:llorar",
@@ -33935,6 +34013,7 @@
       "l:ver",
       "p:entusiasmar-fascinar",
       "p:me-emociona-que",
+      "p:no-es-x-es-y",
       "p:prep-questions-basic"
     ],
     "targets": [
@@ -34896,16 +34975,18 @@
   },
   {
     "id": "u30-1349",
-    "es": "Tomás está harto de la lluvia.",
-    "en": "Tomás is fed up with the rain.",
+    "es": "Tomás está harto de pensar en inglés y hablar en español.",
+    "en": "Tomás is fed up with thinking in English and speaking in Spanish.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
-      "g:gender-articles",
+      "l:español",
       "l:estar",
+      "l:hablar",
       "l:harto",
-      "l:lluvia",
+      "l:inglés",
+      "l:pensar",
       "p:estar-harto-de",
       "p:estar-harto-de-que"
     ],
@@ -34944,19 +35025,23 @@
   },
   {
     "id": "u30-1351",
-    "es": "Estoy harto del frío de este apartamento.",
-    "en": "I'm fed up with the cold in this apartment. (a man speaking)",
+    "es": "Estoy harto de que el apartamento esté tan oscuro.",
+    "en": "I'm fed up with the apartment being so dark. (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
       "g:gender-articles",
+      "g:subj-emotion",
+      "g:subj-wanting",
+      "g:that-clauses",
       "l:apartamento",
       "l:estar",
-      "l:frío",
       "l:harto",
-      "p:demonstratives-basic",
-      "p:estar-harto-de"
+      "l:oscuro",
+      "p:estar-harto-de",
+      "p:estar-harto-de-que",
+      "p:tiene-mucha-luz"
     ],
     "targets": [
       "p:estar-harto-de"
@@ -34994,22 +35079,18 @@
   },
   {
     "id": "u30-1353",
-    "es": "Mi tía abuela era una mujer muy querida en el pueblo.",
-    "en": "My great-aunt was a much loved woman in the village.",
+    "es": "Perdimos a una amiga muy querida este año.",
+    "en": "We lost a very dear friend this year.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:era",
-      "g:gender-articles",
-      "g:imperfect-states",
-      "g:ser-identity",
-      "l:abuela",
-      "l:mujer",
-      "l:pueblo",
+      "c:a-cuantas-cuotas",
+      "g:preterite-er-ir",
+      "l:amiga",
+      "l:año",
+      "l:perder",
       "l:querer",
-      "l:ser",
-      "l:tía",
-      "p:possessives-basic",
+      "p:demonstratives-basic",
       "p:quantifiers-basic"
     ],
     "targets": [],
@@ -35020,26 +35101,21 @@
   },
   {
     "id": "u30-1354",
-    "es": "Mi abuela era muy querida en el barrio.",
-    "en": "My grandmother was much loved in the neighborhood.",
+    "es": "Es mi taza más querida: era de mi abuela.",
+    "en": "It's my most treasured cup: it was my grandmother's.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:era",
-      "g:adjective-agreement",
-      "g:gender-articles",
       "g:imperfect-states",
       "g:ser-identity",
       "l:abuela",
-      "l:barrio",
-      "l:querido",
+      "l:querer",
       "l:ser",
-      "p:possessives-basic",
-      "p:quantifiers-basic"
+      "l:taza",
+      "p:possessives-basic"
     ],
-    "targets": [
-      "l:querido"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u30",
     "theme": "más preguntas por el ánimo",
@@ -35069,8 +35145,8 @@
   },
   {
     "id": "u30-1356",
-    "es": "Tomás está harto de las cuentas del mes.",
-    "en": "Tomás is fed up with the month's bills.",
+    "es": "Tomás está harto de hacer cuentas a las dos de la mañana.",
+    "en": "Tomás is fed up with doing the accounts at two in the morning.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -35078,10 +35154,13 @@
       "g:gender-articles",
       "l:cuenta",
       "l:estar",
+      "l:hacer",
       "l:harto",
-      "l:mes",
+      "l:mañana",
       "p:estar-harto-de",
-      "p:estar-harto-de-que"
+      "p:estar-harto-de-que",
+      "p:por-la-manana",
+      "p:telling-time"
     ],
     "targets": [
       "p:estar-harto-de"

@@ -2,7 +2,7 @@
   "id": "ch090",
   "unit": "u30",
   "title": "El peor tinto de Bogotá",
-  "text": "La cafetería de la alcaldía tenía el peor tinto de Bogotá y un montón de empleados con sueño.\nMariana: Rosa nos traía aquí de niños, Tomás. Y tú me interrumpías todo el tiempo.\nTomás: Y tú todavía me interrumpes.\nLos dos sonrieron con nostalgia.\nMariana: ¿Celos, Vale?\nVale: ¿Celosa yo? Es el tinto, que está horrible.\nA las nueve llegó Wilson, el sobrino de doña Marta, con gafas de sol, un periódico delante de la cara y una copia del correo.\n«Doctor Rengifo: le confirmo su excursión a San Andrés. Gracias por su ayuda con los permisos».\nMariana estaba emocionada.\nMariana: ¡Una prueba! Llevo un año con esta ilusión.\nWilson: Me da rabia que mi jefe venda la ciudad por una semana de playa. Pero mi nombre no puede salir.\nMariana: Qué lástima. Pero la fiscal no necesita tu nombre.\nWilson lloró un poco detrás del periódico.\nWilson: Perdón. Soy muy sensible. Y tenía la ilusión de un jefe honesto.\nTomás llamó a Altamira allí mismo.\nTomás: Dígale al señor Altamira que mi respuesta es no. Ni hoy, ni el lunes, ni nunca.\nVale lo miró con orgullo y con miedo.\nVale: Me duele que perdamos esa plata. Pero qué alivio.\nEn el café, Hernando estaba emocionado.\nHernando: Ese «ni nunca» era de Rosa. ¡Qué orgullo! ¡Qué nostalgia!\nSimón: ¡Ni nunca! ¡Ni nunca!\nHernando: ¿Y usted por qué está brava, mija?\nVale: No estoy brava, y no soy sensible. Me da rabia que Mariana tenga tantos recuerdos de él.\nHernando: Eso se llama celos. Usted está celosa.\nVale: Usted tiene una personalidad horrible.\nHernando: Y usted tiene la personalidad de Rosa. Por eso la quiero tanto.\nEsa noche, Tomás lavó un montón de tazas sin hablar. Ni se rio con el chiste de Hernando.\nVale: Me da pena que estés así. Mañana es tu día libre, y no te quiero ver aquí.\nVale: Hace siete años que abro este café, con alegría o con tristeza. Mañana lo abro con alegría.\nTomás se fue sin discutir, y Vale sintió una tristeza rara. Qué lástima: ella quería pelear.",
+  "text": "La cafetería de la alcaldía tenía el peor tinto de Bogotá y un montón de empleados con sueño.\nMariana: Rosa nos traía aquí de niños, Tomás. Y tú me interrumpías todo el tiempo.\nTomás: Y tú todavía me interrumpes.\nLos dos sonrieron con nostalgia.\nMariana: ¿Celos, Vale?\nVale: ¿Celosa yo? Es el tinto, que está horrible.\nA las nueve llegó Wilson, el sobrino de doña Marta, con gafas de sol, un periódico delante de la cara y una copia del correo.\n«Doctor Rengifo: le confirmo su excursión a San Andrés. Gracias por su ayuda con los permisos».\nMariana estaba emocionada.\nMariana: ¡Una prueba! Llevo un año con esta ilusión.\nWilson: Me da rabia que mi jefe venda la ciudad por una semana de playa. Pero mi nombre no puede salir.\nMariana: Qué lástima. Pero la fiscal no necesita tu nombre.\nWilson lloró un poco detrás del periódico.\nWilson: Perdón. Soy muy sensible. Y tenía la ilusión de un jefe honesto.\nTomás llamó a Altamira allí mismo.\nTomás: Dígale al señor Altamira que mi respuesta es no. Ni hoy, ni mañana, ni nunca.\nVale lo miró con orgullo y con miedo.\nVale: Me duele que perdamos esa plata. Pero qué alivio.\nEn el café, Hernando estaba emocionado.\nHernando: Ese «ni nunca» era de Rosa. ¡Qué orgullo! ¡Qué nostalgia!\nSimón: ¡Ni nunca! ¡Ni nunca!\nHernando: ¿Y usted por qué está brava, mija?\nVale: No estoy brava, y no soy sensible. Me da rabia que Mariana tenga tantos recuerdos de él.\nHernando: Eso se llama celos. Usted está celosa.\nVale: Usted tiene una personalidad horrible.\nHernando: Y usted tiene la personalidad de Rosa. Por eso la quiero tanto.\nEsa noche, Tomás lavó un montón de tazas sin hablar. Ni se rio con el chiste de Hernando.\nVale: Me da pena que estés así. Mañana es tu día libre, y no te quiero ver aquí. Hace siete años que abro este café, con alegría o con tristeza. Mañana lo abro con alegría.\nTomás se fue sin discutir, y Vale sintió una tristeza rara. Qué lástima: ella quería pelear.",
   "gloss": [
     {
       "es": "un montón de empleados con sueño",
@@ -134,7 +134,7 @@
       "q": "What does Tomás tell Altamira's office?",
       "options": [
         "That he needs more time",
-        "That his answer is no: not today, not Monday, not ever",
+        "That his answer is no: not today, not tomorrow, not ever",
         "That he will sell half",
         "That he wants a meeting"
       ],
@@ -241,7 +241,6 @@
     "p:cerca-de",
     "p:con-sin",
     "p:costar-pagar",
-    "p:days-el-lunes",
     "p:de-owner",
     "p:demonstratives-basic",
     "p:doler",
@@ -316,7 +315,6 @@
     "l:llegar",
     "l:llevar",
     "l:llorar",
-    "l:lunes",
     "l:lástima",
     "l:mañana",
     "l:miedo",

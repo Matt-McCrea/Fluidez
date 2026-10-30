@@ -1,212 +1,221 @@
 {
   "id": "sc-u30-a",
   "unit": "u30",
-  "title": "What Rosa would say",
+  "title": "Doña Gloria's questions",
   "spare": false,
-  "brief": "You're Tomás. Don Hernando has heard that you're thinking about Altamira's offer, and he is furious. Tell him how his words hurt, admit how you have changed and tell him what you will do. He is much older than you and a friend of your grandmother's, so use usted.",
+  "brief": "You're Tomás, spending your day off with doña Gloria, an old friend of your grandmother's. She wants to know how you are now that you have said no to Altamira. She is much older than you, so use usted.",
   "requires": [
     "c:bien-y-tu",
-    "c:con-mucho-gusto",
-    "c:entonces-bueno",
-    "c:es-que",
+    "c:como-estas",
+    "c:en-serio",
+    "c:era",
     "c:gracias-de-nada",
-    "c:hola-buenos-dias",
     "c:me-alegro",
-    "c:mucho-gusto",
+    "c:me-regala",
     "c:que-alivio",
-    "c:que-susto",
-    "c:que-va",
-    "c:quiero",
-    "c:tienes",
     "c:voy-a",
-    "g:commands-usted",
-    "g:commands-with-pronouns",
-    "g:comparatives",
+    "c:voy-vas",
+    "c:ya-no",
+    "g:adjective-agreement",
     "g:conditional",
-    "g:estar-gerund",
+    "g:direct-objects",
     "g:estar-location-states",
     "g:gender-articles",
     "g:gustar-full",
+    "g:imperfect-habitual",
     "g:imperfect-states",
     "g:indirect-objects",
     "g:ir-a-plans",
-    "g:negation-words",
-    "g:prep-infinitive",
+    "g:le-doubling",
+    "g:object-pronoun-position",
     "g:prep-pronouns",
     "g:present-ar",
-    "g:preterite-ar",
-    "g:preterite-er-ir",
     "g:preterite-irregular-strong",
+    "g:questions",
     "g:reflexive-routine",
     "g:ser-identity",
     "g:stem-boot",
     "g:stem-e-i",
+    "g:subj-emotion",
     "g:subj-emotion-intro",
-    "g:subj-value",
+    "g:subj-irregulars",
     "g:subj-wanting",
     "g:that-clauses",
+    "g:verb-infinitive",
     "g:verbs-of-change",
+    "g:yo-irregular",
     "l:abuela",
+    "l:ahora",
     "l:alegrarse",
+    "l:alegre",
+    "l:alegría",
     "l:alivio",
-    "l:antes",
+    "l:amiga",
     "l:aquí",
     "l:bien",
-    "l:bravo",
-    "l:bueno",
-    "l:café",
-    "l:cambiar",
+    "l:casa",
+    "l:comprar",
     "l:contento",
-    "l:creer",
-    "l:decidir",
+    "l:cuadra",
+    "l:cómo",
+    "l:dar",
     "l:decir",
-    "l:dinero",
-    "l:día",
     "l:estar",
-    "l:gusto",
     "l:hablar",
-    "l:hacer",
-    "l:hijo",
-    "l:invitar",
     "l:ir",
+    "l:irse",
+    "l:mijo",
     "l:molestar",
-    "l:oferta",
+    "l:niño",
+    "l:pena",
     "l:pensar",
     "l:ponerse",
+    "l:quedar",
     "l:quedarse",
     "l:querer",
     "l:qué",
-    "l:rabia",
-    "l:rato",
-    "l:razón",
-    "l:sentarse",
     "l:ser",
     "l:serio",
-    "l:tener",
-    "l:tinto",
+    "l:silla",
+    "l:triste",
+    "l:vecino",
     "l:vender",
+    "l:ver",
     "l:verdad",
-    "l:volverse",
     "p:alegrarse-de-que",
     "p:aqui-ahi-alla",
     "p:bien-bueno",
     "p:bien-mal-vs-bueno-malo",
-    "p:demonstratives-basic",
-    "p:frequency-scale",
+    "p:cuando-basic",
+    "p:encontrar-ver-adj",
     "p:indefinites-basic",
-    "p:mas-de-number",
+    "p:me-da-miedo",
+    "p:me-da-pena-que",
+    "p:me-encanta-que",
+    "p:me-pongo-triste-cuando",
     "p:me-te-nos-objects",
+    "p:para-inf",
     "p:pensar-en",
     "p:possessives-basic",
     "p:quantifiers-basic",
-    "p:tener-razon",
-    "p:time-sequence-basic",
     "p:ya-todavia-basic"
   ],
   "turns": [
     {
       "id": "t1",
-      "npc": "Buenos días, Tomás. Me dicen que usted está pensando en la oferta de Altamira.",
-      "npcEn": "Good morning, Tomás. They tell me you are thinking about Altamira's offer.",
-      "intent": "Greet him, say yes, you are thinking about the offer, and say you have decided nothing.",
+      "npc": "Mijo, qué alegría verlo. Me dicen que usted le dijo que no a Altamira. ¿Cómo está?",
+      "npcEn": "Son, how lovely to see you. They tell me you said no to Altamira. How are you?",
+      "intent": "Say you are fine, but it bothers you that Altamira wants to buy the block.",
       "accept": [
-        "Buenos días. Sí, estoy pensando en la oferta, pero no decidí nada.",
-        "Sí, estoy pensando en la oferta. No decidí nada todavía.",
-        "Buenos días. Sí, pienso en la oferta, pero no decidí nada."
-      ],
-      "require": [
-        {
-          "type": "regex",
-          "pattern": "oferta",
-          "flags": "i",
-          "label": "talk about the offer (la oferta)"
-        }
-      ],
-      "focus": "g:present-ar",
-      "next": "t2"
-    },
-    {
-      "id": "t2",
-      "npc": "¡Qué rabia que usted piense en el dinero! Su abuela nunca vendería este café.",
-      "npcEn": "How infuriating that you are thinking about the money! Your grandmother would never sell this café.",
-      "intent": "Tell him it bothers you that he thinks that (or that he speaks to you that way).",
-      "accept": [
-        "Me molesta que usted piense eso.",
-        "Me molesta que usted crea que no quiero este café.",
-        "Me molesta que usted me hable así."
+        "Bien, pero me molesta que Altamira quiera comprar la cuadra.",
+        "Estoy bien, pero me molesta que Altamira quiera comprar todo.",
+        "Bien. Me molesta que quieran comprar toda la cuadra."
       ],
       "require": [
         {
           "type": "subjunctiveAfter",
           "trigger": "molesta que",
           "within": 3,
-          "label": "after me molesta que, the verb changes: piense, crea, hable"
+          "label": "after me molesta que, the verb changes: quiera"
         }
       ],
       "focus": "g:subj-emotion",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Y los vecinos? Yo los veo muy tristes.",
+      "npcEn": "And the neighbours? They look very sad to me.",
+      "intent": "Say it makes you sad that the neighbours might sell their houses or leave.",
+      "accept": [
+        "Me da pena que los vecinos vendan sus casas.",
+        "A mí me da pena que los vecinos se vayan.",
+        "Me da pena que vendan todo y se vayan."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "pena que",
+          "within": 4,
+          "label": "after me da pena que, the verb changes: vendan, se vayan"
+        }
+      ],
+      "focus": "p:me-da-pena-que",
       "next": "t3"
     },
     {
       "id": "t3",
-      "npc": "Me puse muy bravo, Tomás. Pero usted cambió. Antes estaba más contento.",
-      "npcEn": "I got very angry, Tomás. But you have changed. You used to be happier.",
-      "intent": "Agree that you have changed: say you became more serious, and that you care a lot about the café.",
+      "npc": "Rosa me decía que usted era un niño muy alegre. ¿Todavía es así?",
+      "npcEn": "Rosa used to tell me you were a very cheerful boy. Are you still like that?",
+      "intent": "Say you have changed: say what makes you sad or nervous now, with me pongo and cuando.",
       "accept": [
-        "Es verdad, me volví más serio. Quiero mucho este café.",
-        "Tiene razón, me volví serio. Quiero este café más que nunca.",
-        "Sí, me volví muy serio. Es que quiero mucho el café."
+        "No tanto. Ahora me pongo triste cuando pienso en mi abuela.",
+        "Ya no. Me pongo triste cuando veo la silla de Rosa.",
+        "No mucho. Me pongo muy serio cuando alguien habla de Altamira."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\bme (volv|pus|hic|qued)",
+          "pattern": "\\bme pongo\\b",
           "flags": "i",
-          "label": "say how you changed with a verb of change: me volví, me puse, me quedé"
+          "label": "say how you react now: me pongo + a feeling"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bcuando\\b",
+          "flags": "i",
+          "label": "say when: cuando..."
         }
       ],
-      "focus": "g:verbs-of-change",
+      "focus": "p:me-pongo-triste-cuando",
       "next": "t4"
     },
     {
       "id": "t4",
-      "npc": "Eso está bien, hijo. ¿Qué va a hacer usted?",
-      "npcEn": "That's good, son. What are you going to do?",
-      "intent": "Tell him you're glad he is here with you, and that you will talk to Vale before deciding.",
+      "npc": "¿Y usted se va a quedar en Bogotá, o se va para Toronto?",
+      "npcEn": "And are you going to stay in Bogotá, or are you going back to Toronto?",
+      "intent": "Say you are staying in Bogotá, and that you are not leaving.",
       "accept": [
-        "Me alegro de que usted esté aquí. No voy a decidir sin hablar con ustedes.",
-        "No voy a decidir nada sin Vale y sin usted. Me alegro de que esté conmigo.",
-        "Me alegro de que usted esté aquí conmigo. Primero voy a hablar con Vale."
+        "Me quedo en Bogotá. No me voy.",
+        "Me voy a quedar en Bogotá. No me voy para Toronto.",
+        "Me quedo aquí. No me voy a ir."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bme qued|\\bquedarme\\b|\\bvoy a quedar",
+          "flags": "i",
+          "label": "say you are staying: me quedo"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bno me voy\\b",
+          "flags": "i",
+          "label": "say you are not leaving: no me voy"
+        }
+      ],
+      "focus": "g:se-meaning-change",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Ay, mijo, qué alivio. Rosa estaría muy contenta.",
+      "npcEn": "Oh, son, what a relief. Rosa would be very happy.",
+      "intent": "Thank her, and say you are glad that she is here with you.",
+      "accept": [
+        "Gracias, de verdad. Me alegro de que usted esté aquí.",
+        "Muchas gracias. Me alegro de que usted esté conmigo.",
+        "Gracias. Me alegro de que usted sea mi amiga."
       ],
       "require": [
         {
           "type": "subjunctiveAfter",
           "trigger": "alegro de que",
           "within": 3,
-          "label": "after me alegro de que, the verb changes: esté"
+          "label": "after me alegro de que, the verb changes: esté, sea"
         }
       ],
       "focus": "p:alegrarse-de-que",
-      "next": "t5"
-    },
-    {
-      "id": "t5",
-      "npc": "Entonces siéntese, hijo. Le invito un tinto.",
-      "npcEn": "Then sit down, son. I'll buy you a coffee.",
-      "intent": "Thank him and say what a relief it is to talk to him.",
-      "accept": [
-        "Gracias. Qué alivio hablar con usted.",
-        "Muchas gracias. Me quedo un rato, con mucho gusto.",
-        "Gracias, qué alivio tener a alguien como usted aquí."
-      ],
-      "require": [
-        {
-          "type": "regex",
-          "pattern": "gracias",
-          "flags": "i",
-          "label": "say thank you"
-        }
-      ],
-      "focus": "c:que-alivio",
       "next": null
     }
   ]

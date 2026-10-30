@@ -15,7 +15,7 @@
     { "es": "Me gusta cocinar para todos.", "en": "I like cooking for everyone." },
     { "es": "Me imagino que Vale está cansada.", "en": "I imagine Vale is tired." }
   ],
-  "rule": "You already know the shape: a feeling, then *que*, then the wish form. *Me alegra que estés aquí.* It works for every feeling about what someone else does.\n\nThe feeling works like *gustar*. What happens is the thing that bothers or pleases you, and *me, te, le, nos, les* say who feels it: *A Tomás le gusta que todos vengan.*\n\nAfter *que* the verb takes the wish form (*compre*, *cocine*, *estés*), even when the event is real. English just says \"buys\".\n\nIf you are the one acting, drop *que* and use the infinitive: *Me gusta cocinar.*\n\nNot every *que* is a feeling. *Me imagino que Vale está cansada* is a guess, so the verb stays plain: *está*.\n\nSoon you'll add *me da miedo que*, *me sorprende que* and *siento que*. Same shape.",
+  "rule": "You already know the shape: a feeling, then *que*, then the wish form. *Me alegra que estés aquí.* It works for every feeling about what someone else does.\n\nThe feeling works like *gustar*. What happens is the thing that bothers or pleases you, and *me, te, le, nos, les* say who feels it: *A Tomás le gusta que todos vengan.*\n\nAfter *que* the verb takes the wish form (*compre*, *cocine*, *estés*), even when the event is real. English just says \"buys\".\n\nIf you are the one acting, drop *que* and use the infinitive: *Me gusta cocinar.*\n\nNot every *que* is a feeling. *Me imagino que Vale está cansada* is a guess, so the verb stays plain: *está*.\n\nLater this week you'll add *me da pena que*, *me da rabia que* and *me da miedo que*. Same shape.",
   "smallPrint": "Teachers call this the subjunctive after verbs of emotion. The rule of thumb: a feeling about someone else's action takes *que* plus the wish form, and the same person feeling and acting takes the infinitive.",
   "readAndPick": [
     {
@@ -92,7 +92,7 @@
     {
       "prompt": "Type in Spanish, to a friend: Does it bother you that Vale closes early?",
       "answer": "¿Te molesta que Vale cierre temprano?",
-      "accept": [],
+      "accept": ["¿A ti te molesta que Vale cierre temprano?"],
       "why": "*Te* says it bothers you, and *cierre* is the wish form of *cerrar*."
     },
     {

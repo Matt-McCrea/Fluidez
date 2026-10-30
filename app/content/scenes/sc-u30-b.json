@@ -34,6 +34,7 @@
     "g:ser-identity",
     "g:stem-boot",
     "g:subj-emotion",
+    "g:subj-value",
     "g:subj-wanting",
     "g:that-clauses",
     "g:verb-infinitive",
@@ -50,6 +51,7 @@
     "l:después",
     "l:día",
     "l:dónde",
+    "l:enojado",
     "l:estar",
     "l:hacer",
     "l:hoy",
@@ -65,7 +67,6 @@
     "l:quedarse",
     "l:querer",
     "l:qué",
-    "l:raro",
     "l:rato",
     "l:ser",
     "l:serio",
@@ -114,13 +115,13 @@
     },
     {
       "id": "t2",
-      "npc": "Qué raro. Aquí me aburro sin ti.",
-      "npcEn": "How strange. I get bored here without you.",
+      "npc": "Ah, claro. Aquí me aburro sin ti.",
+      "npcEn": "Oh, right. I get bored here without you.",
       "intent": "Say you are sorry that she is bored (it gives you sadness).",
       "accept": [
         "Me da pena que te aburras.",
         "Me da pena que te aburras sola.",
-        "Qué pena, me da pena que te aburras tanto."
+        "Qué pena que te aburras."
       ],
       "require": [
         {
@@ -181,13 +182,14 @@
     },
     {
       "id": "t5",
-      "npc": "Sí, claro. Qué alivio. Pensé que estabas brava conmigo.",
+      "npc": "Sí, claro. Qué alivio. Pensé que estabas bravo conmigo.",
       "npcEn": "Yes, of course. What a relief. I thought you were angry with me.",
       "intent": "Tell her you are not angry with her, and say goodbye.",
       "accept": [
         "Para nada. No estoy bravo contigo. Hasta luego.",
         "No, no estoy bravo contigo. Nos vemos en el centro.",
-        "No estoy bravo contigo. Nos vemos luego."
+        "No estoy bravo contigo. Nos vemos luego.",
+        "No, no estoy enojado contigo. Chao."
       ],
       "require": [
         {

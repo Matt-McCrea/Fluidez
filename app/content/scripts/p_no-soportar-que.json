@@ -14,7 +14,7 @@
     { "es": "Odio que Altamira llame cada día.", "en": "I hate that Altamira calls every day." }
   ],
   "rule": "Two ways to say it: *no soporto* and *odio*. Both take a noun, an infinitive, or *que* plus the wish form.\n\n*No soporto el ruido.* A noun.\n*Odio hacer fila.* Your own action: infinitive.\n*No soporto que me interrumpan.* Someone else's action: *que* plus the wish form.\n\n*Soportar* always comes with *no*. And it's absolute: you can't stand it or you can. For a milder feeling, use *me molesta*.",
-  "smallPrint": "*Soportar* is \"to bear\", so *no soporto* is literally \"I don't bear\". In some places you'll also hear *no aguanto*.",
+  "smallPrint": "*Soportar* is \"to bear\", so *no soporto* is literally \"I don't bear\". You'll also hear *no aguanto*, which means the same.",
   "readAndPick": [
     {
       "es": "No soporto el ruido.",
@@ -108,9 +108,9 @@
       "why": "Almost. After *no soporto que*, the verb takes the wish form: *interrumpan*."
     },
     {
-      "wrong": "No soporto un poco el ruido.",
+      "wrong": "No puedo estar el ruido.",
       "right": "No soporto el ruido.",
-      "why": "*No soporto* is absolute, so you can't dial it down with *un poco*. For mild, use *me molesta*."
+      "why": "*Stand* here has nothing to do with standing up. Spanish uses *soportar*: *no soporto*."
     },
     {
       "wrong": "Odio que espero tanto.",

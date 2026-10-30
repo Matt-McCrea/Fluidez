@@ -1,7 +1,7 @@
 {
   "node": "x:pena-vs-rabia",
   "hook": {
-    "line": "When Rosa's block gets sold, the regulars react in two completely different ways. Some go quiet and sad, others get loud. The sentence frame is the same; one word swaps the feeling.",
+    "line": "If Altamira gets Rosa's block, the regulars will react in two completely different ways. Some go quiet and sad, others get loud. The sentence frame is the same; one word swaps the feeling.",
     "es": "Me da pena que se vaya.",
     "en": "It makes me sad that she's leaving."
   },
@@ -31,7 +31,7 @@
       "en": "It makes me mad that people lie to me."
     }
   ],
-  "rule": "One frame, two opposite feelings.\n\n*Me da pena que...* is sadness: a loss, a pity, something you wish were different. *Me da rabia que...* is anger: something unfair or disrespectful.\n\nEverything else stays the same. *Da* is the verb in both, then *que*, then the *-e* or *-a* form of the verb: *se vaya*, *compre*, *mientan*.\n\nAsk yourself: do I want to cry or shout? Pick the matching word.\n\nIn *me da pena*, English says *it makes me sad*, with no *da*.",
+  "rule": "One frame, two opposite feelings.\n\n*Me da pena que...* is sadness: a loss, a pity, something you wish were different. *Me da rabia que...* is anger: something unfair or disrespectful.\n\nEverything else stays the same. *Da* is the verb in both, then *que*, then the wish form: *se vaya*, *compre*, *mientan*.\n\nAsk yourself: do I want to cry or shout? Pick the matching word.",
   "smallPrint": "Teachers call these emotion expressions that take the subjunctive (the *-e* or *-a* verb form) after *que*.",
   "readAndPick": [
     {
@@ -116,7 +116,7 @@
       "prompt": "Say: It makes me sad that Rosa is no longer here.",
       "answer": "Me da pena que Rosa ya no esté.",
       "accept": [],
-      "why": "*Me da pena que* + a verb in its *-e* or *-a* form: *esté*."
+      "why": "*Me da pena que* plus the wish form: *esté*."
     },
     {
       "prompt": "Say: It makes me mad that they don't let us know.",
@@ -141,7 +141,7 @@
     {
       "prompt": "Ask an older lady politely: Does it make you mad that he doesn't call?",
       "answer": "¿Le da rabia que no llame?",
-      "accept": [],
+      "accept": ["¿A usted le da rabia que no llame?"],
       "why": "*Le* is the polite you."
     }
   ],
@@ -149,7 +149,7 @@
     {
       "wrong": "Me da pena que se va.",
       "right": "Me da pena que se vaya.",
-      "why": "Almost. After a feeling plus *que*, the verb takes its *-e* or *-a* form."
+      "why": "Almost. After a feeling plus *que*, the verb takes the wish form."
     },
     {
       "wrong": "Me da triste que se vaya.",
@@ -159,7 +159,7 @@
     {
       "wrong": "Me da rabia de que se vaya.",
       "right": "Me da rabia que se vaya.",
-      "why": "Unlike *me alegro de que*, this one has no *de*."
+      "why": "Unlike *estoy harto de que*, this one has no *de*."
     }
   ],
   "personal": "Think of one thing that makes you sad and one that makes you mad. Say both: *me da pena que...* and *me da rabia que...*."

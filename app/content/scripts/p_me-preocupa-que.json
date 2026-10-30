@@ -13,7 +13,7 @@
     { "es": "Estoy preocupada por mi mamá.", "en": "I'm worried about my mom. (a woman speaking)" },
     { "es": "No te preocupes por eso.", "en": "Don't worry about that. (to a friend)" }
   ],
-  "rule": "*Me preocupa* works like *me gusta*: the thing worries you. *Me preocupa el precio*; with a plural thing, *me preocupan los precios*.\nFor someone's action, add *que* and the *-e/-es* verb form: *Me preocupa que no conteste.*\nTo say you are worried, use *estoy preocupado POR*. English says about; Spanish says *por*, never *de*.\n*Preocupadísimo* already means extremely worried, so don't add *muy*.\nTo calm someone: *No te preocupes* (friend), *No se preocupe* (usted).",
+  "rule": "*Me preocupa* works like *me gusta*: the thing worries you. *Me preocupa el precio*; with a plural thing, *me preocupan los precios*.\nFor someone's action, add *que* and the wish form: *Me preocupa que no conteste.*\nTo say you are worried, use *estoy preocupado por*. English says about; Spanish says *por*, never *de*.\n*Preocupadísimo* already means extremely worried, so don't add *muy*.\nTo calm someone: *No te preocupes* (friend), *No se preocupe* (usted).",
   "smallPrint": "Teachers call the verb form after *que* the subjunctive: it shows up when you react to something someone else does.",
   "readAndPick": [
     { "es": "Me preocupa que no conteste.", "options": ["It worries him that I don't answer.", "It worries me that he doesn't answer.", "I'm worried about not answering."], "answer": 1 },
@@ -54,7 +54,7 @@
       "prompt": "Say: It worries me that he doesn't answer.",
       "answer": "Me preocupa que no conteste.",
       "accept": [],
-      "why": "*No* goes before the verb, and his action takes the *-e* form: *conteste*."
+      "why": "*No* goes before the verb, and his action takes the wish form: *conteste*."
     },
     {
       "prompt": "Ask a friend: Does it worry you that Altamira is buying the block?",

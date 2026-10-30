@@ -1,7 +1,7 @@
 {
   "node": "p:enojarse-con",
   "hook": {
-    "line": "Colombians rarely say someone is *angry*. They say the person is *brava*, and then they say with whom. Don Hernando is brava with Altamira all week, and he wants you to know it.",
+    "line": "In Colombia, people are less often *enojados* than *bravos*, and they always say with whom. Don Hernando has been *bravo* with Altamira all week, and he wants you to know it.",
     "es": "Estoy bravo con Altamira.",
     "en": "I'm angry with Altamira."
   },
@@ -140,7 +140,7 @@
       "prompt": "Say, to a friend: Don't get angry with me.",
       "answer": "No te pongas bravo conmigo.",
       "accept": [
-        "No te pongas enojado conmigo."
+        "No te enojes conmigo."
       ],
       "why": "A negative command uses *no te pongas*."
     },
@@ -166,9 +166,9 @@
       "why": "Almost. With *con*, *mí* fuses into one word: *conmigo*."
     },
     {
-      "wrong": "Está brava de Tomás.",
+      "wrong": "Está brava a Tomás.",
       "right": "Está brava con Tomás.",
-      "why": "English says *angry at*; Spanish uses *con* for the person."
+      "why": "English says *angry at*, but Spanish uses *con* for the person."
     },
     {
       "wrong": "Estoy brava con el ruido.",

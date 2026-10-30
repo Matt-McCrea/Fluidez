@@ -2,8 +2,8 @@
   "node": "p:aburrir-aburrirse",
   "hook": {
     "line": "Sundays at the café are slow, and Vale has nobody to talk to. English says *bored* and *boring* with nearly the same word, and mixing them up is how you end up telling people you are a dull person.",
-    "es": "Los domingos me aburro en casa.",
-    "en": "On Sundays I get bored at home."
+    "es": "Los domingos me aburro en el café.",
+    "en": "On Sundays I get bored at the café."
   },
   "examples": [
     { "es": "Me aburro cuando no hay clientes.", "en": "I get bored when there are no customers." },

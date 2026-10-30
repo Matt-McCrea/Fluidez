@@ -11,9 +11,9 @@
     { "es": "Duermo siete horas.", "en": "I sleep seven hours." },
     { "es": "Tomás se durmió en la reunión.", "en": "Tomás fell asleep in the meeting." },
     { "es": "Nos quedamos en casa.", "en": "We stayed at home." },
-    { "es": "Quedé con Vale a las seis.", "en": "I arranged to meet Vale at six." }
+    { "es": "Vale se parece a su mamá.", "en": "Vale looks like her mom." }
   ],
-  "rule": "You already use *se* verbs for routines, like *me levanto*. Here *se* does something different: it changes what the verb means.\n\n*ir* is going somewhere, so it needs a place: *Voy al centro*.\n*irse* is leaving, and the place no longer matters: *Me voy*.\n\n*dormir* is sleeping: *Duermo siete horas*.\n*dormirse* is falling asleep: *Me dormí en la reunión*.\n\n*quedarse* is staying: *Nos quedamos en casa*.\n*quedar con* someone, with no *se*, is arranging to meet: *Quedé con Vale*.\n\nThe *se* follows the person: *me voy, te vas, se va, nos vamos*.\n\nWhen you add *se*, ask: am I just doing it, or leaving, or starting it?",
+  "rule": "You already use *se* verbs for routines, like *me levanto*. Here *se* does something different: it changes what the verb means.\n\n*ir* is going somewhere, so it needs a place: *Voy al centro*.\n*irse* is leaving, and the place no longer matters: *Me voy*.\n\n*dormir* is sleeping: *Duermo siete horas*.\n*dormirse* is falling asleep: *Me dormí en la reunión*.\n\n*quedarse* is staying: *Nos quedamos en casa*.\n*parecer* is seeming: *Vale parece cansada*.\n*parecerse a* someone is looking like them: *Vale se parece a su mamá*.\n\nThe *se* follows the person: *me voy, te vas, se va, nos vamos*.\n\nWhen you add *se*, ask: am I just doing it, or leaving, or starting it?",
   "smallPrint": "Teachers call these pronominal verbs: the same verb with *se* is a different dictionary entry, with its own meaning.",
   "readAndPick": [
     { "es": "Vale va al mercado.", "options": ["Vale is going to the market.", "Vale is leaving the market."], "answer": 0 },
@@ -22,7 +22,7 @@
     { "es": "Me dormí en la reunión.", "options": ["I fell asleep in the meeting.", "I sleep in the meeting."], "answer": 0 },
     { "es": "Tomás se durmió en el sofá.", "options": ["Tomás sleeps on the sofa.", "Tomás fell asleep on the sofa."], "answer": 1 },
     { "es": "Nos quedamos hasta tarde.", "options": ["We stayed until late.", "We left late."], "answer": 0 },
-    { "es": "Quedé con Vale a las seis.", "options": ["I stayed with Vale at six.", "I arranged to meet Vale at six."], "answer": 1 },
+    { "es": "Tomás se parece a Rosa.", "options": ["Tomás seems to be Rosa.", "Tomás looks like Rosa."], "answer": 1 },
     { "es": "Nos vamos a las seis.", "options": ["We stay until six.", "We leave at six."], "answer": 1 },
     { "es": "Tomás se queda en Bogotá.", "options": ["Tomás stays in Bogotá.", "Tomás leaves Bogotá."], "answer": 0 }
   ],
@@ -30,7 +30,7 @@
     { "prompt": "Choose the right form and type the whole sentence (Tomás left early): Tomás ___ temprano. (fue / se fue)", "answer": "Tomás se fue temprano.", "accept": [], "why": "He left, not went to a place, so it needs *se*." },
     { "prompt": "Choose the right form and type the whole sentence (Last night I fell asleep on the sofa): Anoche ___ en el sofá. (dormí / me dormí)", "answer": "Anoche me dormí en el sofá.", "accept": ["Me dormí en el sofá anoche."], "why": "Falling asleep is *dormirse*, so *me* comes back." },
     { "prompt": "Type in Spanish: We stayed at home.", "answer": "Nos quedamos en casa.", "accept": [], "why": "Staying is *quedarse*, and *nos* matches *we*." },
-    { "prompt": "Type in Spanish: I arranged to meet Vale at six.", "answer": "Quedé con Vale a las seis.", "accept": ["Quedé con Vale a las 6."], "why": "To arrange to meet, use *quedar con* with no *se*." },
+    { "prompt": "Type in Spanish: Vale looks like her mom.", "answer": "Vale se parece a su mamá.", "accept": ["Vale se parece a su madre."], "why": "Looking like someone is *parecerse a*, with *se*." },
     { "prompt": "Type in Spanish: Tomás fell asleep in the meeting.", "answer": "Tomás se durmió en la reunión.", "accept": [], "why": "Falling asleep needs *se*, and it matches *Tomás*." },
     { "prompt": "Make it negative: Me voy.", "answer": "No me voy.", "accept": [], "why": "*No* goes right before *me*." },
     { "prompt": "Ask a friend if they are staying or leaving.", "answer": "¿Te quedas o te vas?", "accept": ["¿Te vas o te quedas?"], "why": "*Te* is your friend, and both verbs need it." }
@@ -38,7 +38,7 @@
   "pitfalls": [
     { "wrong": "Dormí en la reunión.", "right": "Me dormí en la reunión.", "why": "Without *se* it only says you slept; to say you drifted off, add *me*." },
     { "wrong": "Adiós, voy.", "right": "Adiós, me voy.", "why": "*Voy* needs a place to go to; to say you are off, use *me voy*." },
-    { "wrong": "Me quedé con Vale a las seis.", "right": "Quedé con Vale a las seis.", "why": "With *se*, *quedar* means to stay; to arrange to meet someone, leave the *se* off." }
+    { "wrong": "Vale parece a su mamá.", "right": "Vale se parece a su mamá.", "why": "Without *se*, *parecer* only means seeming; to look like someone, add *se* and *a*." }
   ],
   "personal": "Say when you usually fall asleep, or where you are staying this weekend. Use *me duermo* or *me quedo*."
 }
