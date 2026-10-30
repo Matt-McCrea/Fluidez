@@ -1,0 +1,189 @@
+{
+  "id": "sc-u44-a",
+  "unit": "u44",
+  "title": "Diez minutos antes",
+  "spare": false,
+  "brief": "You're Tomás, waiting outside the hearing room with Yesid, who is helping you prepare. He's your friend, so use tú. Give your view, answer the danger claim with a concession, cite a study and set your condition for any deal.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Yesid: Entramos en diez minutos. ¿Cuál es tu punto principal?",
+      "npcEn": "Yesid: We go in in ten minutes. What is your main point?",
+      "intent": "Give your view: the building is part of the city's heritage (use: Desde mi punto de vista, or Considero que).",
+      "accept": [
+        "Desde mi punto de vista, el edificio es parte del patrimonio de la ciudad.",
+        "Considero que el edificio es parte del patrimonio de la ciudad.",
+        "Considero que el café tiene mucho valor para el barrio."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(desde mi punto de vista|considero que|a mi modo de ver)\\b",
+          "flags": "iu",
+          "label": "state your view: desde mi punto de vista, considero que"
+        }
+      ],
+      "focus": "p:a-mi-modo-de-ver",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Yesid: La abogada de Altamira va a decir que el edificio es peligroso.",
+      "npcEn": "Yesid: Altamira's lawyer is going to say that the building is dangerous.",
+      "intent": "Answer that even if the building is old, it isn't dangerous (use: Aunque + subjunctive).",
+      "accept": [
+        "Aunque el edificio sea viejo, no es peligroso.",
+        "Aunque sea viejo, el edificio es seguro.",
+        "No es peligroso, aunque tenga muchos años."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "aunque",
+          "label": "after aunque, use the subjunctive (aunque sea, aunque tenga)"
+        }
+      ],
+      "focus": "g:subj-concessive",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Yesid: ¿Y qué pruebas tenemos?",
+      "npcEn": "Yesid: And what proof do we have?",
+      "intent": "Say that a study shows that the building has no problems (use: Un estudio muestra que).",
+      "accept": [
+        "Un estudio muestra que el edificio no tiene problemas.",
+        "Un estudio de la universidad muestra que el edificio es seguro.",
+        "Un estudio de un ingeniero muestra que la estructura es segura."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bun estudio\\b[^.]*\\bmuestra que\\b",
+          "flags": "iu",
+          "label": "cite the evidence: un estudio muestra que"
+        }
+      ],
+      "focus": "p:un-estudio-muestra-que",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Yesid: Una cosa más. Altamira quiere un acuerdo antes de la audiencia. ¿Firmas?",
+      "npcEn": "Yesid: One more thing. Altamira wants a deal before the hearing. Will you sign?",
+      "intent": "Say you will sign only on condition that the café stays open (use: con tal de que + subjunctive).",
+      "accept": [
+        "Firmo con tal de que el café siga abierto.",
+        "Solo firmo con tal de que los vecinos puedan quedarse.",
+        "Con tal de que el café siga abierto, firmo."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "con tal de que",
+          "label": "after con tal de que, use the subjunctive (siga, puedan)"
+        }
+      ],
+      "focus": "g:subj-conditions",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Yesid: Nos llaman ya. ¡Mucha suerte, Tomás!",
+      "npcEn": "Yesid: They're calling us now. Good luck, Tomás!",
+      "intent": "Thank him and say you're ready.",
+      "accept": [
+        "Gracias, Yesid. Estoy listo.",
+        "Muchas gracias por tu ayuda. Ya estoy listo.",
+        "Gracias por todo. Lo tengo clarísimo."
+      ],
+      "require": [],
+      "focus": "c:lo-tengo-clarisimo",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:aqui-tiene",
+    "c:gracias-de-nada",
+    "c:lo-tengo-clarisimo",
+    "c:mucha-suerte",
+    "c:siga",
+    "c:tengo",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:ir-a-plans",
+    "g:present-ar",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-concessive",
+    "g:subj-conditions",
+    "g:subj-irregulars",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:abogado",
+    "l:abrir",
+    "l:acuerdo",
+    "l:antes",
+    "l:audiencia",
+    "l:ayuda",
+    "l:año",
+    "l:barrio",
+    "l:café",
+    "l:ciudad",
+    "l:claro",
+    "l:considerar",
+    "l:cosa",
+    "l:cuál",
+    "l:decir",
+    "l:edificio",
+    "l:entrar",
+    "l:estar",
+    "l:estructura",
+    "l:estudio",
+    "l:firmar",
+    "l:ingeniero",
+    "l:ir",
+    "l:listo",
+    "l:llamar",
+    "l:minuto",
+    "l:mostrar",
+    "l:parte",
+    "l:patrimonio",
+    "l:peligroso",
+    "l:poder",
+    "l:principal",
+    "l:problema",
+    "l:prueba",
+    "l:punto",
+    "l:quedarse",
+    "l:querer",
+    "l:qué",
+    "l:seguir",
+    "l:seguro",
+    "l:ser",
+    "l:suerte",
+    "l:tener",
+    "l:universidad",
+    "l:valor",
+    "l:vecino",
+    "l:viejo",
+    "l:vista",
+    "p:a-mi-modo-de-ver",
+    "p:en-mi-opinion",
+    "p:gracias-por",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:sobre-todo-solo",
+    "p:un-estudio-muestra-que",
+    "p:viejo-antiguo-mayor"
+  ]
+}

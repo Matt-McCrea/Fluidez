@@ -1,0 +1,276 @@
+{
+  "id": "sc-u44-d",
+  "unit": "u44",
+  "title": "La noche antes",
+  "spare": true,
+  "brief": "You're Tomás in the closed café the night before the hearing, talking with Don Hernando. He's older than you and courtly, so use usted. Give your opinion, make suggestions, and look back.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Hernando: Buenas noches, joven. Mañana quiero hablar en la audiencia. ¿Qué opina usted de que hable yo primero?",
+      "npcEn": "Hernando: Good evening, young man. Tomorrow I want to speak at the hearing. What do you think of me speaking first?",
+      "intent": "Say that his speaking first seems like a very good idea to you. Start with: Que...",
+      "accept": [
+        "Que hable usted primero me parece muy buena idea.",
+        "Que usted hable primero me parece lo mejor.",
+        "Que hable usted primero me parece perfecto, Don Hernando."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "^\\s*que\\b[^.]*\\bme parece\\b",
+          "flags": "iu",
+          "label": "start with Que... and end with ...me parece"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "hables",
+            "tú",
+            "eres"
+          ],
+          "label": "use usted (hable usted), not tú"
+        }
+      ],
+      "focus": "p:que-subj-me-parece",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Hernando: Le pregunto con franqueza: ¿cree usted que ganamos?",
+      "npcEn": "Hernando: I ask you frankly: do you think we win?",
+      "intent": "Say you see it as difficult, but not impossible (use: Lo veo difícil).",
+      "accept": [
+        "Lo veo difícil, Don Hernando, pero no imposible.",
+        "Lo veo difícil, pero vale la pena intentarlo.",
+        "Sinceramente, lo veo difícil."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo veo dif[ií]cil\\b",
+          "flags": "iu",
+          "label": "say: lo veo difícil"
+        }
+      ],
+      "focus": "p:lo-veo-dificil",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Hernando: Entonces, ¿qué hacemos antes de mañana?",
+      "npcEn": "Hernando: So what do we do before tomorrow?",
+      "intent": "Suggest what should be done tonight (use: Habría que + infinitive).",
+      "accept": [
+        "Habría que hablar con todos los vecinos esta noche.",
+        "Habría que revisar las cartas de Rosa otra vez.",
+        "Habría que llamar a Mariana para las fotos."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bhabr[ií]a que\\b",
+          "flags": "iu",
+          "label": "suggest it with: habría que"
+        }
+      ],
+      "focus": "p:habria-que",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Hernando: Hay un problema. Me dijeron que los vecinos del segundo piso quieren vender.",
+      "npcEn": "Hernando: There is a problem. They told me the neighbours on the second floor want to sell.",
+      "intent": "Say it would be good if you and he talked to them tonight (use: Estaría bien que + subjunctive).",
+      "accept": [
+        "Estaría bien que habláramos con ellos hoy.",
+        "Estaría bien que usted y yo habláramos con ellos esta noche.",
+        "Estaría bien que fuéramos a hablar con ellos ahora mismo."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "estaría bien que",
+          "label": "after estaría bien que, use the past subjunctive (habláramos, fuéramos)"
+        }
+      ],
+      "focus": "p:estaria-bien-que",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Hernando: Dígame, joven. Si hubiera llegado antes a Bogotá, ¿habría hecho algo distinto?",
+      "npcEn": "Hernando: Tell me, young man. If you had arrived in Bogotá earlier, would you have done something different?",
+      "intent": "Say that if you had come earlier, you would have talked more with your grandmother (use: Si hubiera... habría...).",
+      "accept": [
+        "Si hubiera llegado antes, habría hablado más con mi abuela.",
+        "Si hubiera venido antes, habría pasado más tiempo con Rosa.",
+        "Sí. Si hubiera llegado antes, habría hablado más con ella."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsi (hubiera|hubiese)\\b",
+          "flags": "iu",
+          "label": "start the condition with: si hubiera"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bhabr[ií]a\\b",
+          "flags": "iu",
+          "label": "finish it with: habría"
+        }
+      ],
+      "focus": "g:si-past-unreal",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Hernando: Rosa estaría orgullosa de usted. Vamos a dormir, que mañana es largo.",
+      "npcEn": "Hernando: Rosa would be proud of you. Let's go to sleep, tomorrow is long.",
+      "intent": "Thank him warmly and say good night.",
+      "accept": [
+        "Gracias, Don Hernando. Buenas noches.",
+        "Muchas gracias. Hasta mañana, Don Hernando.",
+        "Se lo agradezco mucho, Don Hernando. Buenas noches."
+      ],
+      "require": [
+        {
+          "type": "avoidsAny",
+          "words": [
+            "tú",
+            "eres",
+            "tienes"
+          ],
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "c:si-tu-lo-dices",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:chao-nos-vemos",
+    "c:con-el-ella",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:me-parece-bien",
+    "c:quiero",
+    "c:vale-la-pena",
+    "c:vamos-a",
+    "g:adjective-agreement",
+    "g:adverbs-mente",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:conditional",
+    "g:conditional-perfect",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:lo-adjective",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:pluperfect-subj",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:ser-identity",
+    "g:si-hypothetical",
+    "g:si-past-unreal",
+    "g:stem-boot",
+    "g:subj-opinion-negated",
+    "g:subj-past-triggers",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:abuela",
+    "l:agradecer",
+    "l:ahora",
+    "l:antes",
+    "l:audiencia",
+    "l:bien",
+    "l:buena",
+    "l:carta",
+    "l:creer",
+    "l:decir",
+    "l:difícil",
+    "l:distinto",
+    "l:dormir",
+    "l:estar",
+    "l:foto",
+    "l:ganar",
+    "l:hablar",
+    "l:hacer",
+    "l:hoy",
+    "l:idea",
+    "l:imposible",
+    "l:intentar",
+    "l:ir",
+    "l:joven",
+    "l:largo",
+    "l:llamar",
+    "l:llegar",
+    "l:mañana",
+    "l:mejor",
+    "l:noche",
+    "l:opinar",
+    "l:orgulloso",
+    "l:parecer",
+    "l:pasado",
+    "l:pena",
+    "l:perfecto",
+    "l:piso",
+    "l:preguntar",
+    "l:problema",
+    "l:querer",
+    "l:qué",
+    "l:revisar",
+    "l:ser",
+    "l:sinceramente",
+    "l:tiempo",
+    "l:valer",
+    "l:vecino",
+    "l:vender",
+    "l:venir",
+    "l:ver",
+    "l:vez",
+    "p:demonstratives-basic",
+    "p:don-dona-nombre",
+    "p:encontrar-ver-adj",
+    "p:estar-orgulloso-de",
+    "p:estaria-bien-que",
+    "p:habria-que",
+    "p:indefinites-basic",
+    "p:lo-veo-dificil",
+    "p:me-te-nos-objects",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:orgulloso-admiracion",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:que-opinas-de",
+    "p:que-subj-deseo",
+    "p:que-subj-me-parece",
+    "p:senor-don-article",
+    "p:te-lo-agradezco",
+    "p:time-sequence-basic"
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "id": "sc-u44-c",
+  "unit": "u44",
+  "title": "La audiencia",
+  "spare": false,
+  "brief": "You're Tomás at the public hearing, speaking to the president of the heritage institute. Use usted, never tú. Open with your position, answer the danger claim, set a condition, correct Altamira's lawyer and close with your head up.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Presidenta: Buenos días. Tiene la palabra el dueño del café. ¿Qué viene a defender?",
+      "npcEn": "President: Good morning. The owner of the café has the floor. What have you come to defend?",
+      "intent": "Open by saying you are going to defend that the building has great value for the city (use: Voy a defender que).",
+      "accept": [
+        "Voy a defender que el edificio tiene mucho valor para la ciudad.",
+        "Buenos días. Voy a defender que el café es parte del patrimonio de Bogotá.",
+        "Señora presidenta, voy a defender que este edificio tiene mucho valor."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bvoy a defender que\\b",
+          "flags": "iu",
+          "label": "open with: voy a defender que"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "tú",
+            "eres",
+            "tienes"
+          ],
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "p:voy-a-defender-que",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Presidenta: Altamira dice que el edificio es inseguro. ¿Qué responde usted?",
+      "npcEn": "President: Altamira says the building is unsafe. What do you answer?",
+      "intent": "Say that even if the building needs repairs, it is not unsafe (use: Aunque + subjunctive).",
+      "accept": [
+        "Aunque el edificio necesite arreglos, no es inseguro.",
+        "Aunque necesite arreglos, el edificio tiene mucho valor.",
+        "Aunque tenga problemas, el edificio sigue siendo importante para el barrio."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "aunque",
+          "label": "after aunque, use the subjunctive (necesite, tenga)"
+        }
+      ],
+      "focus": "g:subj-concessive",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Presidenta: ¿Aceptarían ustedes arreglos en el edificio?",
+      "npcEn": "President: Would you accept repairs on the building?",
+      "intent": "Say you accept repairs on condition that the neighbours can stay (use: con tal de que + subjunctive).",
+      "accept": [
+        "Aceptamos los arreglos con tal de que los vecinos puedan quedarse.",
+        "Sí, con tal de que nadie tenga que irse.",
+        "Aceptamos arreglos con tal de que no cierren el café."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "con tal de que",
+          "label": "after con tal de que, use the subjunctive (puedan, tenga, cierren)"
+        }
+      ],
+      "focus": "g:subj-conditions",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Abogada de Altamira: Ese edificio no tiene ningún valor histórico.",
+      "npcEn": "Altamira's lawyer: That building has no historical value at all.",
+      "intent": "Correct her: it has more than historical value (use: No solo... sino también...).",
+      "accept": [
+        "No solo tiene valor histórico, sino también valor para los vecinos.",
+        "Eso no es cierto. No solo es antiguo, sino también parte de nuestra historia.",
+        "No solo guarda las cartas de Rosa, sino también la memoria del barrio."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bno solo\\b[^.]*\\bsino\\b",
+          "flags": "iu",
+          "label": "use: no solo... sino también..."
+        }
+      ],
+      "focus": "g:argument-markers",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Presidenta: Último punto. ¿Y si pierden?",
+      "npcEn": "President: Last point. And if you lose?",
+      "intent": "Say that even if you lose, you will tell the truth today (use: Aunque + subjunctive).",
+      "accept": [
+        "Aunque perdamos, hoy decimos la verdad.",
+        "Aunque perdamos, no vamos a callar la verdad.",
+        "Aunque no ganemos, vamos a decir la verdad."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "aunque",
+          "label": "after aunque, use the subjunctive (perdamos, ganemos)"
+        }
+      ],
+      "focus": "g:subj-concessive",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Presidenta: Gracias, señor. Vamos a decidir en tres meses.",
+      "npcEn": "President: Thank you, sir. We are going to decide in three months.",
+      "intent": "Thank her formally and say goodbye.",
+      "accept": [
+        "Muchas gracias, señora presidenta. Hasta pronto.",
+        "Gracias por escucharnos. Buenas tardes.",
+        "Se lo agradezco mucho. Buenas tardes."
+      ],
+      "require": [
+        {
+          "type": "avoidsAny",
+          "words": [
+            "tú",
+            "eres",
+            "tienes"
+          ],
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "c:sin-duda-alguna",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:aqui-tiene",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:la-verdad",
+    "c:tienes",
+    "c:vamos-a",
+    "c:voy-a",
+    "g:conditional",
+    "g:demonstratives",
+    "g:double-pronouns",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:indefinites",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:pero-sino",
+    "g:possessives",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-concessive",
+    "g:subj-conditions",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:abogado",
+    "l:aceptar",
+    "l:agradecer",
+    "l:antiguo",
+    "l:arreglo",
+    "l:barrio",
+    "l:buena",
+    "l:bueno",
+    "l:café",
+    "l:callar",
+    "l:carta",
+    "l:cerrar",
+    "l:ciudad",
+    "l:decidir",
+    "l:decir",
+    "l:defender",
+    "l:dueño",
+    "l:día",
+    "l:edificio",
+    "l:escuchar",
+    "l:ganar",
+    "l:guardar",
+    "l:historia",
+    "l:histórico",
+    "l:hoy",
+    "l:importante",
+    "l:inseguro",
+    "l:ir",
+    "l:irse",
+    "l:memoria",
+    "l:mes",
+    "l:necesitar",
+    "l:palabra",
+    "l:parte",
+    "l:partir",
+    "l:patrimonio",
+    "l:perder",
+    "l:poder",
+    "l:presidente",
+    "l:problema",
+    "l:pronto",
+    "l:punto",
+    "l:quedarse",
+    "l:qué",
+    "l:responder",
+    "l:seguir",
+    "l:ser",
+    "l:señor",
+    "l:señora",
+    "l:tarde",
+    "l:tener",
+    "l:valor",
+    "l:vecino",
+    "l:venir",
+    "l:verdad",
+    "p:demonstratives-basic",
+    "p:gracias-por",
+    "p:ir-a-venir-de-place",
+    "p:lugar-tiene",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:quantifiers-basic",
+    "p:que-tal-si",
+    "p:seguir-gerundio",
+    "p:sobre-todo-solo",
+    "p:te-lo-agradezco",
+    "p:tienes-toda-la-razon",
+    "p:viejo-antiguo-mayor",
+    "p:voy-a-defender-que"
+  ]
+}

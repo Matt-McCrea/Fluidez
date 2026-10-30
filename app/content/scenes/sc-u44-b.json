@@ -1,0 +1,257 @@
+{
+  "id": "sc-u44-b",
+  "unit": "u44",
+  "title": "La entrevista de Mariana",
+  "spare": false,
+  "brief": "You're Tomás, being interviewed by Mariana for her article on the Altamira plan. She's a friend, so use tú. Give a balanced, careful answer: agree in general, concede, say what you suspect, and push back on a doubter.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Mariana: Es para mi artículo. ¿Estás de acuerdo con el plan de Altamira?",
+      "npcEn": "Mariana: This is for my article. Do you agree with Altamira's plan?",
+      "intent": "Say that in general you agree with the plan, but you have doubts (use: En líneas generales).",
+      "accept": [
+        "En líneas generales, estoy de acuerdo, pero tengo dudas sobre el plazo.",
+        "En líneas generales estoy de acuerdo con ellos en que el barrio necesita inversión.",
+        "Estoy de acuerdo en líneas generales, pero tengo mis dudas."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\ben l[ií]neas generales\\b",
+          "flags": "iu",
+          "label": "say: en líneas generales"
+        }
+      ],
+      "focus": "p:en-lineas-generales",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Mariana: En los planos, el proyecto se ve precioso.",
+      "npcEn": "Mariana: On the plans, the project looks beautiful.",
+      "intent": "Say that at first sight it looks like a good idea, but it has problems (use: A primera vista).",
+      "accept": [
+        "A primera vista parece una buena idea, pero tiene problemas.",
+        "A primera vista es precioso, pero el barrio no está en los planos.",
+        "Sí, a primera vista parece muy bueno, pero tiene un problema grande."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\ba primera vista\\b",
+          "flags": "iu",
+          "label": "say: a primera vista"
+        }
+      ],
+      "focus": "p:a-primera-vista",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Mariana: ¿Y por qué dudas tanto de ellos?",
+      "npcEn": "Mariana: And why do you doubt them so much?",
+      "intent": "Say you have the impression that they are hiding something (use: Tengo la impresión de que).",
+      "accept": [
+        "Tengo la impresión de que ocultan algo.",
+        "Tengo la impresión de que Altamira oculta algo.",
+        "Tengo la impresión de que ellos ocultan la verdad sobre el edificio."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\btengo la impresi[oó]n de que\\b",
+          "flags": "iu",
+          "label": "say: tengo la impresión de que"
+        }
+      ],
+      "focus": "p:tengo-la-impresion-de-que",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Mariana: ¿Crees que van a decir la verdad en la audiencia?",
+      "npcEn": "Mariana: Do you think they will tell the truth at the hearing?",
+      "intent": "Say you are not sure that they will tell the whole truth (use: No estoy seguro de que + subjunctive).",
+      "accept": [
+        "No estoy seguro de que digan toda la verdad.",
+        "No estoy seguro de que Altamira diga la verdad.",
+        "No estoy seguro de que sean sinceros."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "no estoy seguro de que",
+          "label": "after no estoy seguro de que, use the subjunctive (digan, sean)"
+        }
+      ],
+      "focus": "x:impresion-vs-no-estoy-seguro",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Mariana: Un lector escribe que a nadie le importa un edificio viejo. ¿Qué le dices?",
+      "npcEn": "Mariana: A reader writes that nobody cares about an old building. What do you say to him?",
+      "intent": "Concede one point, then push back. Start with \"Puede que\", \"No dudo que\" or \"Se podría objetar que\", then add pero, sin embargo or ahora bien.",
+      "accept": [
+        "Puede que sea viejo, pero también es parte de nuestra historia.",
+        "No dudo que sea viejo. Ahora bien, vale la pena cuidarlo.",
+        "Se podría objetar que es viejo. Sin embargo, es parte del patrimonio."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(puede que|no dudo que|se podr[ií]a objetar que)\\b",
+          "flags": "iu",
+          "label": "concede first: puede que, no dudo que, se podría objetar que"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\b(pero|sin embargo|ahora bien)\\b",
+          "flags": "iu",
+          "label": "then turn it round: pero, sin embargo, ahora bien"
+        }
+      ],
+      "focus": "p:concede-pero",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Mariana: Perfecto, ya tengo mi cita. ¿Te invito a un tinto?",
+      "npcEn": "Mariana: Perfect, now I have my quote. Shall I buy you a tinto?",
+      "intent": "Accept and thank her.",
+      "accept": [
+        "Desde luego, gracias por escucharme.",
+        "Claro que sí, Mariana. Gracias.",
+        "Con mucho gusto, gracias."
+      ],
+      "require": [],
+      "focus": "c:desde-luego",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:desde-luego",
+    "c:estoy-de-acuerdo",
+    "c:gracias-de-nada",
+    "c:la-verdad",
+    "c:mucho-gusto",
+    "c:tengo",
+    "c:tienes",
+    "c:vale-la-pena",
+    "g:adjective-agreement",
+    "g:concession-despite",
+    "g:conditional",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:possessives",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-doubt",
+    "g:subj-irregulars",
+    "g:subj-opinion-negated",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:acuerdo",
+    "l:ahora",
+    "l:artículo",
+    "l:audiencia",
+    "l:barrio",
+    "l:bien",
+    "l:buena",
+    "l:bueno",
+    "l:cita",
+    "l:claro",
+    "l:creer",
+    "l:cuidar",
+    "l:decir",
+    "l:duda",
+    "l:dudar",
+    "l:edificio",
+    "l:embargo",
+    "l:escribir",
+    "l:escuchar",
+    "l:estar",
+    "l:general",
+    "l:grande",
+    "l:gusto",
+    "l:historia",
+    "l:idea",
+    "l:importar",
+    "l:impresión",
+    "l:inversión",
+    "l:invitar",
+    "l:ir",
+    "l:lector",
+    "l:línea",
+    "l:necesitar",
+    "l:objetar",
+    "l:ocultar",
+    "l:parecer",
+    "l:parte",
+    "l:patrimonio",
+    "l:pena",
+    "l:perfecto",
+    "l:plan",
+    "l:plano",
+    "l:plazo",
+    "l:poder",
+    "l:precioso",
+    "l:problema",
+    "l:proyecto",
+    "l:qué",
+    "l:seguro",
+    "l:ser",
+    "l:sincero",
+    "l:tener",
+    "l:tinto",
+    "l:valer",
+    "l:ver",
+    "l:verdad",
+    "l:viejo",
+    "l:vista",
+    "p:a-grandes-rasgos",
+    "p:a-primera-vista",
+    "p:ahora-bien-dicho-esto",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:concede-pero",
+    "p:en-lineas-generales",
+    "p:estar-convencido-de",
+    "p:estar-de-acuerdo-con-en",
+    "p:estar-seguro-de-que",
+    "p:gracias-por",
+    "p:indefinites-basic",
+    "p:lo-primero-que",
+    "p:me-te-nos-objects",
+    "p:no-estoy-seguro-de-que",
+    "p:no-tengo-tan-claro",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:para-inf",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:se-podria-objetar-que",
+    "p:te-invito-a",
+    "p:tener-la-sensacion",
+    "p:tener-razon-pero",
+    "p:tengo-la-impresion-de-que",
+    "p:viejo-antiguo-mayor"
+  ]
+}

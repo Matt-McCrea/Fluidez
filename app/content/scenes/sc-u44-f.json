@@ -1,0 +1,253 @@
+{
+  "id": "sc-u44-f",
+  "unit": "u44",
+  "title": "La oferta de doña Lucía",
+  "spare": true,
+  "brief": "You're Tomás at the café counter. Lucía, an older neighbour from the second floor, has come to say she will accept Altamira's offer. She is older than you, so use usted. Listen, find common ground, and give her reasons to stay.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Lucía: Tomás, buenos días. Vengo a decirte que voy a aceptar la oferta de Altamira.",
+      "npcEn": "Lucía: Tomás, good morning. I've come to tell you that I'm going to accept Altamira's offer.",
+      "intent": "Greet her politely and ask why she wants to accept (use usted).",
+      "accept": [
+        "Buenos días, doña Lucía. ¿Por qué quiere vender?",
+        "Buenos días, doña Lucía. ¿Me puede explicar por qué?",
+        "Buenos días. ¿Por qué quiere aceptar la oferta, doña Lucía?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask a question"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "quieres",
+            "puedes",
+            "tú"
+          ],
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "g:subj-conditions",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Lucía: Porque ofrecen mucha plata, y yo ya no tengo edad para pelear.",
+      "npcEn": "Lucía: Because they offer a lot of money, and I'm too old to fight.",
+      "intent": "Say you share her point of view, but add that you see it differently (use: Comparto su punto de vista).",
+      "accept": [
+        "Comparto su punto de vista, pero la plata se acaba.",
+        "Comparto su punto de vista: la plata ayuda. Pero esta casa también es suya.",
+        "Comparto su punto de vista, doña Lucía, pero yo lo veo distinto."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcomparto su punto de vista\\b",
+          "flags": "iu",
+          "label": "say: comparto su punto de vista"
+        }
+      ],
+      "focus": "p:comparto-su-punto-de-vista",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Lucía: ¿Y qué voy a hacer si me quedo y cierran la calle?",
+      "npcEn": "Lucía: And what am I going to do if I stay and they close the street?",
+      "intent": "Promise help in case they close the street (use: En caso de que + subjunctive).",
+      "accept": [
+        "En caso de que cierren la calle, yo la ayudo.",
+        "En caso de que cierren la calle, la vamos a ayudar todos.",
+        "La ayudamos en caso de que cierren la calle."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "en caso de que",
+          "label": "after en caso de que, use the subjunctive (cierren)"
+        }
+      ],
+      "focus": "g:subj-conditions",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Lucía: No me entiendes. A mi edad, solo quiero tranquilidad.",
+      "npcEn": "Lucía: You don't understand me. At my age, I only want peace and quiet.",
+      "intent": "Say that for you it is essential that the building stays the neighbourhood's (use: Es imprescindible que...).",
+      "accept": [
+        "Es imprescindible que el edificio siga siendo del barrio.",
+        "Para mí, es imprescindible que los vecinos se queden aquí.",
+        "Entiendo, pero es imprescindible que ustedes sigan aquí."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bes imprescindible que\\b",
+          "flags": "iu",
+          "label": "say: es imprescindible que"
+        }
+      ],
+      "focus": "p:imprescindible",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Lucía: ¿Y yo qué gano si me quedo?",
+      "npcEn": "Lucía: And what do I gain if I stay?",
+      "intent": "Say that in the long term the neighbourhood is worth more than the money (use: A largo plazo).",
+      "accept": [
+        "A largo plazo, el barrio vale más que la oferta.",
+        "A largo plazo, usted gana más quedándose aquí.",
+        "A largo plazo, la plata se acaba y el barrio sigue."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\ba largo plazo\\b",
+          "flags": "iu",
+          "label": "say: a largo plazo"
+        }
+      ],
+      "focus": "c:a-largo-plazo",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Lucía: Está bien, me quedo. ¿Me das un tinto?",
+      "npcEn": "Lucía: All right, I'm staying. Will you give me a tinto?",
+      "intent": "Say of course, this tinto is on the house.",
+      "accept": [
+        "Claro que sí. Este tinto es de la casa.",
+        "Con mucho gusto, doña Lucía. El tinto va por la casa.",
+        "Claro, doña Lucía. Hoy el tinto es mío."
+      ],
+      "require": [],
+      "focus": "c:pues-si",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-largo-plazo",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:hago-salgo-vengo",
+    "c:hola-buenos-dias",
+    "c:me-puede-ayudar",
+    "c:mucho-gusto",
+    "c:no-entiendo",
+    "c:porque",
+    "c:quiero",
+    "c:siga",
+    "c:tengo",
+    "c:vale-spain",
+    "c:vamos-a",
+    "c:voy-a",
+    "c:ya-no",
+    "g:cause-result",
+    "g:comparatives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:possessives-stressed",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-conditions",
+    "g:subj-value",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:acabar",
+    "l:aceptar",
+    "l:aquí",
+    "l:ayudar",
+    "l:barrio",
+    "l:bien",
+    "l:bueno",
+    "l:calle",
+    "l:casa",
+    "l:caso",
+    "l:cerrar",
+    "l:claro",
+    "l:compartir",
+    "l:dar",
+    "l:decir",
+    "l:distinto",
+    "l:día",
+    "l:edad",
+    "l:edificio",
+    "l:entender",
+    "l:estar",
+    "l:explicar",
+    "l:ganar",
+    "l:gusto",
+    "l:hacer",
+    "l:hoy",
+    "l:imprescindible",
+    "l:ir",
+    "l:largo",
+    "l:lucía",
+    "l:oferta",
+    "l:ofrecer",
+    "l:pelearse",
+    "l:plata",
+    "l:plazo",
+    "l:poder",
+    "l:punto",
+    "l:quedar",
+    "l:quedarse",
+    "l:querer",
+    "l:qué",
+    "l:seguir",
+    "l:ser",
+    "l:tener",
+    "l:tinto",
+    "l:tranquilidad",
+    "l:valer",
+    "l:vecino",
+    "l:vender",
+    "l:venir",
+    "l:ver",
+    "l:vista",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:comparto-su-punto-de-vista",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:don-dona-nombre",
+    "p:echo-question",
+    "p:encontrar-ver-adj",
+    "p:imprescindible",
+    "p:me-te-nos-objects",
+    "p:me-trae",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:para-mi",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:request-ladder",
+    "p:seguir-gerundio",
+    "p:senor-don-article",
+    "p:sobre-todo-solo"
+  ]
+}

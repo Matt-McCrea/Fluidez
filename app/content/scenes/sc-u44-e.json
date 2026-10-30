@@ -1,0 +1,249 @@
+{
+  "id": "sc-u44-e",
+  "unit": "u44",
+  "title": "Pan de bono para la suerte",
+  "spare": true,
+  "brief": "You're Tomás, up late in the kitchen with Vale, who is baking and teasing you about tomorrow. She's quick and dry, and she's your friend, so use tú. Say what you believe, concede, and practise your speech.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Vale: ¿Todavía despierto? Son las doce. Estás seguro de lo de mañana, ¿no?",
+      "npcEn": "Vale: Still awake? It's twelve. You're sure about tomorrow, right?",
+      "intent": "Say yes, you are convinced that the building has value (use: Estoy convencido de que).",
+      "accept": [
+        "Sí, estoy convencido de que el edificio tiene valor.",
+        "Claro. Estoy convencido de que tenemos razón.",
+        "Estoy convencido de que el café vale mucho para el barrio."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bestoy convencido de que\\b",
+          "flags": "iu",
+          "label": "say: estoy convencido de que"
+        }
+      ],
+      "focus": "p:estar-convencido-de",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Vale: Yo no lo veo tan claro. Altamira tiene más plata y más abogados.",
+      "npcEn": "Vale: I don't see it that clearly. Altamira has more money and more lawyers.",
+      "intent": "Tell her she is completely right, but that you have something better (use: Tienes toda la razón, pero...).",
+      "accept": [
+        "Tienes toda la razón, pero tenemos algo mejor: la verdad.",
+        "Tienes toda la razón, pero la plata no lo es todo.",
+        "Tienes toda la razón. Aun así, ellos no tienen a los vecinos."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\btienes toda la raz[oó]n\\b",
+          "flags": "iu",
+          "label": "say: tienes toda la razón"
+        }
+      ],
+      "focus": "p:tienes-toda-la-razon",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Vale: ¿Y si perdemos? Dime la verdad.",
+      "npcEn": "Vale: And if we lose? Tell me the truth.",
+      "intent": "Say that even if you lose, it is worth trying (use: Aunque + subjunctive, and vale la pena).",
+      "accept": [
+        "Aunque perdamos, vale la pena intentarlo.",
+        "Aunque no ganemos, vale la pena luchar.",
+        "Aunque perdamos, va a valer la pena."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "aunque",
+          "label": "after aunque, use the subjunctive (perdamos, ganemos)"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\b(vale|valer|valdr[aá])\\b[^.]*\\bla pena\\b",
+          "flags": "iu",
+          "label": "include: vale la pena"
+        }
+      ],
+      "focus": "g:subj-concessive",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Vale: Son las doce y media. ¿Practicamos tu discurso o duermes?",
+      "npcEn": "Vale: It's half past midnight. Do we practise your speech or do you sleep?",
+      "intent": "Say you would prefer that she listened to your speech once more (use: Preferiría que + subjunctive).",
+      "accept": [
+        "Preferiría que me escucharas una vez más.",
+        "Preferiría que lo practicáramos otra vez.",
+        "Preferiría que escucharas mi discurso otra vez, por favor."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "preferiría que",
+          "label": "after preferiría que, use the past subjunctive (escucharas, practicáramos)"
+        }
+      ],
+      "focus": "p:preferiria-que",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Vale: Bien. A ver, dime: ¿cuál es el problema de fondo?",
+      "npcEn": "Vale: Fine. Go on, tell me: what is the underlying problem?",
+      "intent": "Say that the root of the problem is that nobody listens to the neighbours (use: La raíz del problema).",
+      "accept": [
+        "La raíz del problema es que nadie escucha a los vecinos.",
+        "Para mí, la raíz del problema es que nadie escucha al barrio.",
+        "La raíz del problema es que Altamira no escucha a nadie."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bla ra[ií]z del problema\\b",
+          "flags": "iu",
+          "label": "say: la raíz del problema"
+        }
+      ],
+      "focus": "c:la-raiz-del-problema",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Vale: Con ese discurso hasta yo voto por ti. Toma, un pan de bono para la suerte.",
+      "npcEn": "Vale: With that speech even I would vote for you. Here, a pan de bono for luck.",
+      "intent": "Thank her and say good night.",
+      "accept": [
+        "Gracias, Vale. Buenas noches.",
+        "Gracias por todo, Vale. Hasta mañana.",
+        "Qué rico, gracias. Hasta mañana."
+      ],
+      "require": [],
+      "focus": "c:puede-que-me-equivoque",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-ver",
+    "c:bien-y-tu",
+    "c:chao-nos-vemos",
+    "c:claro-listo",
+    "c:es-que",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:la-raiz-del-problema",
+    "c:la-verdad",
+    "c:no-cierto",
+    "c:oye-mira",
+    "c:por-favor",
+    "c:que-rico",
+    "c:tienes",
+    "c:una-vez",
+    "c:vale-la-pena",
+    "c:vale-spain",
+    "c:yo-no-lo-veo-asi",
+    "g:commands-tu",
+    "g:commands-with-pronouns",
+    "g:concession-despite",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-subj",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:subj-concessive",
+    "g:subj-past-triggers",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "l:abogado",
+    "l:barrio",
+    "l:bien",
+    "l:bono",
+    "l:buena",
+    "l:café",
+    "l:claro",
+    "l:convencer",
+    "l:cuál",
+    "l:decir",
+    "l:despertar",
+    "l:discurso",
+    "l:dormir",
+    "l:edificio",
+    "l:escuchar",
+    "l:estar",
+    "l:favor",
+    "l:fondo",
+    "l:ganar",
+    "l:intentar",
+    "l:ir",
+    "l:luchar",
+    "l:mañana",
+    "l:mejor",
+    "l:noche",
+    "l:pan",
+    "l:pena",
+    "l:perder",
+    "l:plata",
+    "l:practicar",
+    "l:preferir",
+    "l:problema",
+    "l:qué",
+    "l:razón",
+    "l:raíz",
+    "l:rico",
+    "l:seguro",
+    "l:ser",
+    "l:suerte",
+    "l:tener",
+    "l:tomar",
+    "l:valer",
+    "l:valor",
+    "l:vecino",
+    "l:ver",
+    "l:verdad",
+    "l:vez",
+    "l:votar",
+    "p:estar-convencido-de",
+    "p:estar-seguro-de-que",
+    "p:gracias-por",
+    "p:indefinites-basic",
+    "p:lo-de",
+    "p:lo-de-noun",
+    "p:lo-de-topic",
+    "p:lugar-tiene",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:para-mi",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:preferir-a",
+    "p:preferiria-que",
+    "p:quantifiers-basic",
+    "p:que-tal-si",
+    "p:question-word-order",
+    "p:telling-time",
+    "p:tener-razon",
+    "p:tener-razon-pero",
+    "p:tienes-toda-la-razon",
+    "p:valer-la-pena",
+    "p:ya-todavia-basic"
+  ]
+}
