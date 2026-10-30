@@ -2,15 +2,11 @@
   "id": "ch058",
   "unit": "u20",
   "title": "Solo unos meses",
-  "text": "Todavía no llovía, pero el cielo del norte estaba negro.\nLa Burra paró delante de un edificio alto, de veinte pisos. En la puerta, en grande: ALTAMIRA.\nHernando: Yo prometí antes de la lluvia. Vamos.\nEn la recepción todo era blanco, y había una señora detrás de una mesa alta. Y encima de la mesa, un pájaro verde.\nSimón: Hello, I'm only here for a few months, a few months, a few months.\nTodos miraron a Tomás. Tomás quería desaparecer.\nEntonces Vale se rió. Primero un poco, y después mucho, con las manos en la cara. Era la primera vez en toda la semana.\nVale: ¿Eso le enseñaste? ¿Esa es tu frase, Tomás?\nTomás: Yo no le enseñé eso. Simón aprende solo.\nSeñora: ¿El pájaro es suyo? ¿Ustedes podrían llevar al pájaro, por favor? Grita eso desde las siete.\nHernando: Me encantaría, señora.\nSimón se subió al hombro de Hernando, como siempre. Hernando no habló. Le tocó la cabeza con un dedo, despacio.\nMariana notó algo debajo de la mesa: una caja grande, abierta.\nEn ese momento llegó Ricardo Altamira, con un par de hombres de traje.\nAltamira: Buenos días. Un pájaro muy inteligente. Llegó solo, en la mañana. Yo cuidaría mejor a mis animales, señor Herrera. En esta ciudad pasan cosas.\nMariana: ¿Llegó solo? ¿Y la caja? Me gustaría ver la caja.\nAltamira: No sabría decirle. Aquí recibimos muchas cajas.\nEn la calle, Mariana habló despacio.\nMariana: Yo no actuaría rápido. Yo hablaría primero con un abogado.\nHernando: Yo no necesito abogado. Ya tengo a Simón.\nEntonces sonó el primer trueno, y empezó la lluvia.\nSimón: Only here for a few months.\nVale se rió otra vez, todo el camino de regreso. Tomás la miró. Esa palabra de anoche volvió: socia.",
+  "text": "Todavía no llovía, pero el cielo del norte estaba negro.\nLa Burra paró delante de un edificio alto, de veinte pisos. En la puerta, en grande: ALTAMIRA.\nHernando: Yo prometí antes de la lluvia. Vamos.\nEn la recepción todo era blanco, y había una señora detrás de una mesa alta. Y encima de la mesa, un pájaro verde.\nSimón: Hello, I'm only here for a few months, a few months.\nTodos miraron a Tomás. Tomás quería desaparecer.\nEntonces Vale se rió. Era la primera vez en toda la semana.\nVale: ¿Eso le enseñaste? ¿Esa es tu frase, Tomás?\nTomás: Yo no le enseñé eso. Simón aprende solo.\nSeñora: ¿El pájaro es suyo? ¿Ustedes podrían llevar al pájaro, por favor? Grita eso desde las siete.\nHernando: Me encantaría, señora.\nSimón se subió al hombro de Hernando, como siempre. Hernando le tocó la cabeza con un dedo, despacio.\nMariana notó algo debajo de la mesa: una caja grande, abierta.\nEn ese momento llegó Ricardo Altamira, con un par de hombres de traje.\nAltamira: Buenos días. Un pájaro muy inteligente. Llegó solo, en la mañana. Yo cuidaría mejor a mis animales, señor Herrera. En esta ciudad pasan cosas.\nMariana: ¿Llegó solo? ¿Y la caja? Me gustaría ver la caja.\nAltamira: No sabría decirle. Aquí recibimos muchas cajas.\nMariana: Yo no actuaría rápido. Yo hablaría primero con un abogado.\nHernando: Yo no necesito abogado. Ya tengo a Simón.\nEntonces sonó el primer trueno, y empezó la lluvia.\nVale se rió todo el camino de regreso. Tomás la miró. Esa palabra de anoche volvió: socia.",
   "gloss": [
     {
-      "es": "Simón: Hello, I'm only here for a few months, a few months, a few months.",
-      "en": "Simón: Hello, I'm only here for a few months, a few months, a few months. (in English)"
-    },
-    {
-      "es": "Simón: Only here for a few months.",
-      "en": "Simón: Only here for a few months. (in English)"
+      "es": "Simón: Hello, I'm only here for a few months, a few months.",
+      "en": "Simón: Hello, I'm only here for a few months, a few months. (in English)"
     },
     {
       "es": "En la puerta, en grande: ALTAMIRA.",
@@ -172,9 +168,7 @@
     "p:indefinites-basic",
     "p:ordinal-floor",
     "p:ordinals-primer-tercer",
-    "p:otro-no-article",
     "p:personal-a",
-    "p:poco-un-poco",
     "p:por-la-manana",
     "p:position-de",
     "p:possessives-basic",
@@ -199,9 +193,7 @@
     "l:bueno",
     "l:cabeza",
     "l:caja",
-    "l:calle",
     "l:camino",
-    "l:cara",
     "l:cielo",
     "l:ciudad",
     "l:cosa",
@@ -212,7 +204,6 @@
     "l:delante",
     "l:desaparecer",
     "l:despacio",
-    "l:después",
     "l:detrás",
     "l:día",
     "l:edificio",
@@ -236,7 +227,6 @@
     "l:llover",
     "l:lluvia",
     "l:m",
-    "l:mano",
     "l:mañana",
     "l:mejor",
     "l:mesa",
