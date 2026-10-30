@@ -1,0 +1,234 @@
+{
+  "id": "sc-u48-c",
+  "unit": "u48",
+  "title": "Preguntas para el periódico",
+  "spare": false,
+  "brief": "You're Tomás, talking with Mariana, the journalist, about the architect's report. She's your friend, so use tú. Describe the building, name the cause, own up to a regret and say what the report means.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Mariana: Tomás, escribo sobre el informe. ¿Cómo describirías el edificio?",
+      "npcEn": "Mariana: Tomás, I'm writing about the report. How would you describe the building?",
+      "intent": "Say it's a 1920s building with adobe walls that are sixty centimetres thick (use a relative: que, el cual).",
+      "accept": [
+        "Es un edificio de los años veinte, con paredes de adobe que miden sesenta centímetros.",
+        "Es un edificio antiguo, con un muro de adobe el cual mide sesenta centímetros.",
+        "Es una casa de 1925 con baldosas que son originales."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(que|la cual|las cuales|el cual|los cuales|cuyo|cuya|cuyos|cuyas)\\b",
+          "flags": "iu",
+          "label": "use a relative: que, la cual, cuyo"
+        }
+      ],
+      "focus": "g:relatives-formal",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Mariana: ¿Y la grieta? ¿Qué la causó?",
+      "npcEn": "Mariana: And the crack? What caused it?",
+      "intent": "Say the beam, damaged by the vibrations of the demolition, is cracked (use a participle: dañada).",
+      "accept": [
+        "La viga, dañada por las vibraciones de la demolición, está agrietada.",
+        "La grieta, causada por las vibraciones, está en la viga.",
+        "La viga, afectada por las vibraciones de la obra, se agrietó."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b\\w+(ado|ada|ados|adas|ido|ida|idos|idas|ando|iendo)\\b",
+          "flags": "iu",
+          "label": "add a participle or gerund clause"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bvibraciones\\b",
+          "flags": "iu",
+          "label": "name the cause: vibraciones"
+        }
+      ],
+      "focus": "g:participle-gerund-clauses",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Mariana: ¿Te arrepientes de algo?",
+      "npcEn": "Mariana: Do you regret anything?",
+      "intent": "Say you are sorry about not having called an architect sooner (use: haber + participle).",
+      "accept": [
+        "Me da pena no haber llamado antes a una arquitecta.",
+        "Me da vergüenza no haber pedido el informe antes.",
+        "Me da pena no haber revisado la viga hace meses."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bhaber(me|te|le|lo|la|nos|les|las|los)?\\s+\\w+(ado|ido|to|cho)\\b",
+          "flags": "iu",
+          "label": "use haber + participle: haber llamado, haberle avisado"
+        }
+      ],
+      "focus": "g:infinitive-perfect",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Mariana: ¿Qué significa el informe para ustedes?",
+      "npcEn": "Mariana: What does the report mean for you all?",
+      "intent": "Say it's the proof you can defend the building with (use a preposition + la que/la cual).",
+      "accept": [
+        "Es la prueba con la que podemos defender el edificio.",
+        "Es el documento en el cual confiamos.",
+        "Es la prueba de la que depende el futuro del café."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(en|de|con|a|para|por)\\s+(el|la|los|las)\\s+(que|cual|cuales)\\b",
+          "flags": "iu",
+          "label": "use a preposition + el/la que or el/la cual"
+        }
+      ],
+      "focus": "g:relatives-formal",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Mariana: Gracias, Tomás. Me voy corriendo.",
+      "npcEn": "Mariana: Thanks, Tomás. I'm off, in a rush.",
+      "intent": "Thank her and invite her for a coffee at the café one day.",
+      "accept": [
+        "Gracias a ti, Mariana. Pasa por el café un día y te invito a un tinto.",
+        "Gracias por venir. Un día de estos te invito a un café.",
+        "Gracias a ti. Ven cuando quieras, el café va por mi cuenta."
+      ],
+      "require": [
+        {
+          "type": "avoidsAny",
+          "words": [
+            "usted",
+            "le "
+          ],
+          "label": "use tú with Mariana"
+        }
+      ],
+      "focus": "g:relatives-formal",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-cuantas-cuotas",
+    "c:como-se-dice",
+    "c:cuando-quieras",
+    "c:depende",
+    "c:gracias-de-nada",
+    "c:me-regala",
+    "c:que-significa",
+    "c:voy-vas",
+    "g:adjective-agreement",
+    "g:commands-tu",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:infinitive-perfect",
+    "g:ir-a-plans",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-formal",
+    "g:relatives-prepositions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "l:adobe",
+    "l:afectar",
+    "l:antes",
+    "l:antiguo",
+    "l:arquitecto",
+    "l:arrepentirse",
+    "l:año",
+    "l:baldosa",
+    "l:café",
+    "l:casa",
+    "l:causar",
+    "l:centímetro",
+    "l:confiar",
+    "l:correr",
+    "l:cuenta",
+    "l:cómo",
+    "l:dar",
+    "l:dañado",
+    "l:defender",
+    "l:demolición",
+    "l:depender",
+    "l:describir",
+    "l:documento",
+    "l:día",
+    "l:edificio",
+    "l:escribir",
+    "l:estar",
+    "l:futuro",
+    "l:grieta",
+    "l:haber",
+    "l:hacer",
+    "l:informe",
+    "l:invitar",
+    "l:ir",
+    "l:irse",
+    "l:llamar",
+    "l:medir",
+    "l:mes",
+    "l:muro",
+    "l:obra",
+    "l:original",
+    "l:pared",
+    "l:pasar",
+    "l:pedir",
+    "l:pena",
+    "l:poder",
+    "l:prueba",
+    "l:querer",
+    "l:qué",
+    "l:revisar",
+    "l:ser",
+    "l:significar",
+    "l:tinto",
+    "l:venir",
+    "l:vergüenza",
+    "l:vibraciones",
+    "l:viga",
+    "p:arrepentirse-de",
+    "p:decadas-siglos",
+    "p:gracias-a-por-culpa-de",
+    "p:gracias-por",
+    "p:indefinites-basic",
+    "p:me-da-miedo",
+    "p:me-da-pena-que",
+    "p:me-da-verguenza",
+    "p:me-te-nos-objects",
+    "p:medir",
+    "p:medir-pesar",
+    "p:medir-pesar-caber",
+    "p:para-inf",
+    "p:personal-a",
+    "p:por-culpa-de",
+    "p:possessives-basic",
+    "p:provocar-ocasionar",
+    "p:question-word-order",
+    "p:te-invito-a",
+    "p:viejo-antiguo-mayor"
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "id": "sc-u48-a",
+  "unit": "u48",
+  "title": "Las paredes hablan",
+  "spare": false,
+  "brief": "You're Tomás, showing the building to Marisol Quintero, the architect hired to survey it. She's a professional you've just met, so use usted. Describe the walls, the tiles and who stood where.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Marisol: Buenos días. Soy Marisol Quintero, la arquitecta. ¿Por dónde quiere que empecemos?",
+      "npcEn": "Marisol: Good morning. I'm Marisol Quintero, the architect. Where would you like us to start?",
+      "intent": "Greet her and suggest starting with the back wall.",
+      "accept": [
+        "Buenos días, arquitecta. Podemos empezar por el muro del fondo.",
+        "Mucho gusto. Vamos a empezar por la pared del fondo.",
+        "Bienvenida. Por mí, el muro del fondo es un buen principio."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(muro|pared)\\b",
+          "flags": "iu",
+          "label": "say which wall"
+        }
+      ],
+      "focus": "g:relatives-formal",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Marisol: Qué grosor tiene este muro. ¿De qué está hecho?",
+      "npcEn": "Marisol: What a thickness this wall has. What is it made of?",
+      "intent": "Say the walls, which are sixty centimetres thick, are made of adobe (use a relative: que, la cual).",
+      "accept": [
+        "Las paredes, que miden sesenta centímetros de grosor, son de adobe.",
+        "Es adobe. El muro, que tiene sesenta centímetros, es original.",
+        "Son de adobe, y las paredes, las cuales miden sesenta centímetros, mantienen el calor."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(que|la cual|las cuales|el cual|los cuales|cuyo|cuya|cuyos|cuyas)\\b",
+          "flags": "iu",
+          "label": "use a relative: que, la cual, cuyo"
+        }
+      ],
+      "focus": "g:relatives-formal",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Marisol: ¿Y las baldosas? ¿Son originales?",
+      "npcEn": "Marisol: And the tiles? Are they original?",
+      "intent": "Say yes: the tiles, laid in 1925, are original (use a participle clause: colocadas).",
+      "accept": [
+        "Sí, las baldosas, colocadas en 1925, son originales.",
+        "Sí, son originales. Las baldosas, colocadas por mi abuela, siguen igual.",
+        "Las baldosas, colocadas hace casi cien años, son originales."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b\\w+(ado|ada|ados|adas|ido|ida|idos|idas|ando|iendo)\\b",
+          "flags": "iu",
+          "label": "add a participle or gerund clause"
+        }
+      ],
+      "focus": "g:participle-gerund-clauses",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Marisol: Veo una grieta en la viga. ¿Quién estaba cerca de este muro anoche?",
+      "npcEn": "Marisol: I see a crack in the beam. Who was near this wall last night?",
+      "intent": "Say the ones from the next-door demolition (the ones in the yellow shirts) stopped by the wall (use: los de...).",
+      "accept": [
+        "Los de la camiseta amarilla se detuvieron junto al muro.",
+        "Los de la demolición de al lado estaban cerca del muro.",
+        "Los de la camiseta amarilla estaban parados junto a la pared."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(los|las) de (la|el|los|las)\\b",
+          "flags": "iu",
+          "label": "use: los de + the detail"
+        }
+      ],
+      "focus": "p:los-de-la-camiseta",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Marisol: Gracias. Le mando el informe el lunes.",
+      "npcEn": "Marisol: Thank you. I'll send you the report on Monday.",
+      "intent": "Thank her and offer her a coffee before she leaves.",
+      "accept": [
+        "Muchas gracias, arquitecta. ¿Le ofrezco un tinto antes de irse?",
+        "Gracias a usted. ¿Quiere un café antes de salir?",
+        "Se lo agradezco mucho. Antes de irse, ¿le sirvo un tinto?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(tinto|café)",
+          "flags": "iu",
+          "label": "offer a coffee"
+        }
+      ],
+      "focus": "p:detenerse-estar-parado",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:ayer-anoche",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:igual",
+    "c:mucho-gusto",
+    "c:tienes",
+    "c:vamos-a",
+    "g:adjective-agreement",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:estar-participle",
+    "g:gender-articles",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-formal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:abuela",
+    "l:adobe",
+    "l:agradecer",
+    "l:amarillo",
+    "l:anoche",
+    "l:antes",
+    "l:arquitecto",
+    "l:año",
+    "l:baldosa",
+    "l:bienvenida",
+    "l:buen",
+    "l:bueno",
+    "l:café",
+    "l:calor",
+    "l:camiseta",
+    "l:centímetro",
+    "l:cerca",
+    "l:colocar",
+    "l:demolición",
+    "l:detenerse",
+    "l:día",
+    "l:dónde",
+    "l:empezar",
+    "l:estar",
+    "l:fondo",
+    "l:grieta",
+    "l:grosor",
+    "l:gusto",
+    "l:hacer",
+    "l:igual",
+    "l:informe",
+    "l:ir",
+    "l:irse",
+    "l:junto",
+    "l:lado",
+    "l:lunes",
+    "l:mandar",
+    "l:mantener",
+    "l:medir",
+    "l:muro",
+    "l:ofrecer",
+    "l:original",
+    "l:parar",
+    "l:pared",
+    "l:poder",
+    "l:principio",
+    "l:querer",
+    "l:quién",
+    "l:qué",
+    "l:salir",
+    "l:seguir",
+    "l:ser",
+    "l:servir",
+    "l:tener",
+    "l:tinto",
+    "l:ver",
+    "l:viga",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cerca-de",
+    "p:dates-years",
+    "p:days-el-lunes",
+    "p:de-los-ojos-azules",
+    "p:demonstratives-basic",
+    "p:detenerse-estar-parado",
+    "p:gracias-a-por-culpa-de",
+    "p:los-de-la-camiseta",
+    "p:medir",
+    "p:medir-pesar",
+    "p:medir-pesar-caber",
+    "p:numbers-un-una",
+    "p:por-culpa-de",
+    "p:posicion-precisa",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:postura",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:te-lo-agradezco"
+  ]
+}

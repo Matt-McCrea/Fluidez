@@ -1,0 +1,234 @@
+{
+  "id": "sc-u48-d",
+  "unit": "u48",
+  "title": "El horno nuevo",
+  "spare": true,
+  "brief": "You're Tomás on the phone with Raúl, who sells kitchen equipment. Vale needs a new oven. He's a stranger, so use usted. Describe what you need, the weight, the shape and the material.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Raúl: Equipos Andina, buenas tardes. ¿En qué le puedo ayudar?",
+      "npcEn": "Raúl: Equipos Andina, good afternoon. How can I help you?",
+      "intent": "Say you need an oven for a pastry kitchen, one that is resistant to heat (use: resistente al calor).",
+      "accept": [
+        "Buenas tardes. Necesito un horno resistente al calor para una cocina de pastelería.",
+        "Necesito un horno para una pastelería, que sea resistente al calor.",
+        "Hola. Busco un horno de metal resistente al calor."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bresistente\\s+al?\\b",
+          "flags": "iu",
+          "label": "use: resistente a"
+        }
+      ],
+      "focus": "p:resistente-a",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Raúl: Tengo uno que pesa ciento veinte kilos. ¿Le cabe en la cocina?",
+      "npcEn": "Raúl: I have one that weighs one hundred and twenty kilos. Will it fit in your kitchen?",
+      "intent": "Say yes, and ask whether it is made with iron or metal (use: fabricado con).",
+      "accept": [
+        "Sí, nos cabe. ¿Está fabricado con metal?",
+        "Creo que sí. ¿El horno está fabricado con hierro?",
+        "Sí, cabe. ¿Está fabricado con hierro o con metal ligero?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bfabricad[oa]s?\\s+con\\b",
+          "flags": "iu",
+          "label": "use: fabricado con"
+        },
+        {
+          "type": "question"
+        }
+      ],
+      "focus": "p:fabricado-con-contener",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Raúl: Está fabricado con hierro, y la puerta es de vidrio. Es de color gris oscuro.",
+      "npcEn": "Raúl: It's made of iron, and the door is glass. It's dark grey.",
+      "intent": "Ask whether the oven has a rectangular shape (use: tener forma de, or forma rectangular).",
+      "accept": [
+        "¿El horno tiene forma rectangular?",
+        "¿Tiene forma de caja? Necesito que quepa bajo el mesón.",
+        "Perdone, ¿qué forma tiene? ¿Es rectangular?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bforma\\b",
+          "flags": "iu",
+          "label": "ask about the shape: forma"
+        },
+        {
+          "type": "question"
+        }
+      ],
+      "focus": "p:tener-forma-de",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Raúl: Sí, rectangular. Lo que más gusta es lo fácil que se limpia.",
+      "npcEn": "Raúl: Yes, rectangular. What people like most is how easy it is to clean.",
+      "intent": "React: say you like how quiet it is, or how beautiful it is (use: lo + adjective + que).",
+      "accept": [
+        "Me encanta lo bonito que es.",
+        "Mire lo rápido que se calienta, qué bien.",
+        "Con lo cómodo que es, lo compramos."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo\\s+\\S+\\s+que\\b",
+          "flags": "iu",
+          "label": "use: lo + adjective + que"
+        }
+      ],
+      "focus": "g:lo-que-intensity",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Raúl: ¿Lo llevo el viernes?",
+      "npcEn": "Raúl: Shall I bring it on Friday?",
+      "intent": "Say yes, Friday is fine, and thank him.",
+      "accept": [
+        "Sí, el viernes está bien. Muchas gracias, Raúl.",
+        "Perfecto, el viernes. Gracias por su ayuda.",
+        "Sí, tráigalo el viernes. Se lo agradezco."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bviernes\\b",
+          "flags": "iu",
+          "label": "confirm Friday"
+        }
+      ],
+      "focus": "p:le-falta-sal",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:creo-que",
+    "c:en-que-le-puedo-servir",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:me-encanta",
+    "c:puedo",
+    "c:que-bien",
+    "c:que-mas",
+    "c:tengo",
+    "c:tienes",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:comparatives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:estar-participle",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:indirect-objects",
+    "g:lo-adjective",
+    "g:lo-que-intensity",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-irregulars",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:agradecer",
+    "l:ayuda",
+    "l:ayudar",
+    "l:bien",
+    "l:bonito",
+    "l:buena",
+    "l:buscar",
+    "l:caber",
+    "l:caja",
+    "l:calentar",
+    "l:calor",
+    "l:cocina",
+    "l:color",
+    "l:comprar",
+    "l:creer",
+    "l:cómodo",
+    "l:encantar",
+    "l:equipo",
+    "l:estar",
+    "l:fabricar",
+    "l:formar",
+    "l:fácil",
+    "l:gris",
+    "l:gustar",
+    "l:hierro",
+    "l:horno",
+    "l:kilo",
+    "l:ligero",
+    "l:limpiar",
+    "l:llevar",
+    "l:mesón",
+    "l:metal",
+    "l:mirar",
+    "l:necesitar",
+    "l:oscuro",
+    "l:perdonar",
+    "l:perfecto",
+    "l:pesar",
+    "l:poder",
+    "l:puerta",
+    "l:qué",
+    "l:raúl",
+    "l:rectangular",
+    "l:resistente",
+    "l:rápido",
+    "l:ser",
+    "l:tarde",
+    "l:tener",
+    "l:traer",
+    "l:vidrio",
+    "l:viernes",
+    "p:azul-oscuro-invariable",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:caber",
+    "p:colores-compuestos",
+    "p:colour-claro-oscuro",
+    "p:days-el-lunes",
+    "p:estar-hecho-de",
+    "p:fabricado-con-contener",
+    "p:gracias-por",
+    "p:llevar-traer",
+    "p:lo-que-mas-me-gusta",
+    "p:me-te-nos-objects",
+    "p:medir-pesar",
+    "p:medir-pesar-caber",
+    "p:numbers-un-una",
+    "p:para-inf",
+    "p:pesar-pesarse",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:que-subj-deseo",
+    "p:resistente-a",
+    "p:ser-de-material",
+    "p:te-lo-agradezco",
+    "p:tener-forma-de"
+  ]
+}

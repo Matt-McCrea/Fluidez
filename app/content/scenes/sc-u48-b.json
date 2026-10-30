@@ -1,0 +1,239 @@
+{
+  "id": "sc-u48-b",
+  "unit": "u48",
+  "title": "El que se apoyó",
+  "spare": false,
+  "brief": "You're Tomás in the middle of the survey. Don Hernando has leaned on the cracked wall and the architect has told him off. Hernando is older, so use usted with him; Marisol too. Apologise, reassure him and explain the wall.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Hernando: ¿Qué hace la arquitecta con ese aparato, hijo?",
+      "npcEn": "Hernando: What is the architect doing with that device, son?",
+      "intent": "Tell him she's measuring the crack, trying to find out when it started (use a gerund: midiendo, tratando).",
+      "accept": [
+        "Está midiendo la grieta, tratando de saber cuándo empezó.",
+        "Va midiendo el muro, buscando el origen de la grieta.",
+        "La arquitecta está revisando la viga, midiendo cada grieta."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b\\w+(ando|iendo)\\b",
+          "flags": "iu",
+          "label": "use a gerund clause"
+        }
+      ],
+      "focus": "g:participle-gerund-clauses",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Marisol: Su amigo estaba apoyado en el muro agrietado. Nadie me lo dijo.",
+      "npcEn": "Marisol: Your friend was leaning on the cracked wall. Nobody told me.",
+      "intent": "Apologise to her for not having warned him (use: haber + participle).",
+      "accept": [
+        "Perdón por no haberle avisado.",
+        "Disculpe, arquitecta, por no haberle avisado a tiempo.",
+        "Lo siento mucho, fue mi culpa por no haberle dicho nada a don Hernando."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bhaber(me|te|le|lo|la|nos|les|las|los)?\\s+\\w+(ado|ido|to|cho)\\b",
+          "flags": "iu",
+          "label": "use haber + participle: haber llamado, haberle avisado"
+        }
+      ],
+      "focus": "g:infinitive-perfect",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Hernando: Qué vergüenza, Tomás. Sin querer, empujé la pared.",
+      "npcEn": "Hernando: How embarrassing, Tomás. I pushed the wall without meaning to.",
+      "intent": "Reassure him: say not to worry, the crack comes from the vibrations of the demolition. Use usted, not tú.",
+      "accept": [
+        "No se preocupe, don Hernando. La grieta viene de las vibraciones de la demolición.",
+        "Tranquilo, don Hernando. Usted no tiene la culpa; son las vibraciones de la demolición.",
+        "No se preocupe. La grieta se debe a las vibraciones de la obra de al lado."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bvibraciones\\b",
+          "flags": "iu",
+          "label": "name the cause: vibraciones"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "eres",
+            "tienes",
+            "tú"
+          ],
+          "label": "use usted with don Hernando"
+        }
+      ],
+      "focus": "g:relatives-formal",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Marisol: ¿Alguien anotó las medidas de ayer?",
+      "npcEn": "Marisol: Did anyone write down yesterday's measurements?",
+      "intent": "Say you think you saved them on your phone (use: Creo haber...).",
+      "accept": [
+        "Creo haberlas guardado en mi celular.",
+        "Estoy seguro de haberlas anotado en mi celular.",
+        "Me parece haberlas guardado, arquitecta. Las busco ahora."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bhaber(me|te|le|lo|la|nos|les|las|los)?\\s+\\w+(ado|ido|to|cho)\\b",
+          "flags": "iu",
+          "label": "use haber + participle: haber llamado, haberle avisado"
+        }
+      ],
+      "focus": "p:same-subject-haber",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Hernando: Prometo no volver a tocar nada. ¿Qué clase de pared es esta?",
+      "npcEn": "Hernando: I promise not to touch anything again. What kind of wall is this?",
+      "intent": "Tell him the wall is adobe, which is resistant to cold but not to vibrations (use: resistente a).",
+      "accept": [
+        "Es de adobe, que es resistente al frío pero no a las vibraciones.",
+        "Es adobe, un material resistente al frío, pero no a las vibraciones.",
+        "La pared es de adobe. Es resistente al frío, aunque no a las vibraciones."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bresistente\\s+al?\\b",
+          "flags": "iu",
+          "label": "use: resistente a"
+        }
+      ],
+      "focus": "p:resistente-a",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:ayer-anoche",
+    "c:empuje-hale",
+    "c:no-se",
+    "c:no-te-preocupes",
+    "c:perdon-disculpe",
+    "c:que-susto",
+    "c:sentido-pesame",
+    "c:tienes",
+    "c:tranquilo",
+    "g:cada-cualquier",
+    "g:commands-usted",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:estar-participle",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:that-clauses",
+    "l:adobe",
+    "l:ahora",
+    "l:amigo",
+    "l:anotar",
+    "l:aparato",
+    "l:apoyar",
+    "l:arquitecto",
+    "l:avisar",
+    "l:ayer",
+    "l:buscar",
+    "l:celular",
+    "l:clase",
+    "l:creer",
+    "l:culpa",
+    "l:cuándo",
+    "l:deber",
+    "l:decir",
+    "l:demolición",
+    "l:disculpar",
+    "l:empezar",
+    "l:empujar",
+    "l:estar",
+    "l:frío",
+    "l:grieta",
+    "l:guardar",
+    "l:haber",
+    "l:hacer",
+    "l:hijo",
+    "l:ir",
+    "l:lado",
+    "l:material",
+    "l:medida",
+    "l:medir",
+    "l:muro",
+    "l:obra",
+    "l:origen",
+    "l:parecer",
+    "l:pared",
+    "l:perdón",
+    "l:preocuparse",
+    "l:prometer",
+    "l:querer",
+    "l:qué",
+    "l:resistente",
+    "l:revisar",
+    "l:saber",
+    "l:seguro",
+    "l:sentir",
+    "l:ser",
+    "l:tener",
+    "l:tiempo",
+    "l:tocar",
+    "l:tranquilo",
+    "l:tratar",
+    "l:venir",
+    "l:vergüenza",
+    "l:vibraciones",
+    "l:viga",
+    "l:volver",
+    "p:demonstratives-basic",
+    "p:dice-ser",
+    "p:don-dona-nombre",
+    "p:estar-convencido-de",
+    "p:estar-seguro-de-que",
+    "p:indefinites-basic",
+    "p:intentar-conseguir",
+    "p:ir-a-venir-de-place",
+    "p:me-te-nos-objects",
+    "p:por-culpa-de",
+    "p:possessives-basic",
+    "p:que-tipo-de",
+    "p:resistente-a",
+    "p:saber-conocer",
+    "p:same-subject-haber",
+    "p:senor-don-article",
+    "p:tratar-de",
+    "p:volver-a-inf"
+  ]
+}

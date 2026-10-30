@@ -1,0 +1,208 @@
+{
+  "id": "sc-u48-f",
+  "unit": "u48",
+  "title": "Visita con estudiantes",
+  "spare": true,
+  "brief": "You're Tomás giving a short tour of the café to a group of architecture students and their teacher, Profesora Salazar. She's older and a stranger, so use usted with her. Present the building, compare it, describe the colours and answer a question.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Profesora Salazar: Buenas tardes. Los estudiantes vienen a ver el edificio. ¿Nos lo presenta?",
+      "npcEn": "Profesora Salazar: Good afternoon. The students have come to see the building. Will you present it to us?",
+      "intent": "Welcome the group and say: as you can see, the walls are made of adobe (use: como pueden ver).",
+      "accept": [
+        "Bienvenidos. Como pueden ver, las paredes son de adobe.",
+        "Buenas tardes a todos. Como pueden ver, el edificio es de adobe.",
+        "Gracias por venir. Como pueden ver, los muros son de adobe."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcomo\\s+pueden\\s+ver\\b",
+          "flags": "iu",
+          "label": "use: como pueden ver"
+        }
+      ],
+      "focus": "p:presenting-to-audience",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Profesora Salazar: ¿Qué diferencia hay con un edificio moderno?",
+      "npcEn": "Profesora Salazar: What difference is there from a modern building?",
+      "intent": "Compare it: in comparison with a modern building, this one keeps the heat better (use: en comparación con).",
+      "accept": [
+        "En comparación con un edificio moderno, este conserva mejor el calor.",
+        "A diferencia de un edificio moderno, este mantiene el calor.",
+        "En comparación con los edificios de cemento, este es más fresco."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(en comparación con|a diferencia de)\\b",
+          "flags": "iu",
+          "label": "use: en comparación con / a diferencia de"
+        }
+      ],
+      "focus": "p:en-comparacion-con",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Estudiante: ¿De qué color son las puertas?",
+      "npcEn": "Student: What colour are the doors?",
+      "intent": "Say the doors are dark blue and the windows dark green (use the compound colours, invariable).",
+      "accept": [
+        "Las puertas son azul oscuro y las ventanas, verde oscuro.",
+        "Son azul oscuro, y los marcos de las ventanas son verde oscuro.",
+        "Las puertas son azul oscuro."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bazul\\s+oscuro\\b",
+          "flags": "iu",
+          "label": "use the compound colour: azul oscuro"
+        }
+      ],
+      "focus": "p:azul-oscuro-invariable",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Profesora Salazar: ¿Y cuánto mide el patio?",
+      "npcEn": "Profesora Salazar: And how big is the patio?",
+      "intent": "Say it is about six metres long, along the whole east wall (use: a lo largo de).",
+      "accept": [
+        "Mide unos seis metros a lo largo de todo el muro este.",
+        "Tiene seis metros de largo a lo largo del muro.",
+        "Unos seis metros, a lo largo de la pared del fondo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\ba\\s+lo\\s+largo\\s+del?\\b",
+          "flags": "iu",
+          "label": "use: a lo largo de"
+        }
+      ],
+      "focus": "p:a-lo-largo-de",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Profesora Salazar: Muchas gracias, ha sido muy claro.",
+      "npcEn": "Profesora Salazar: Thank you very much, that was very clear.",
+      "intent": "Thank her and say the students are welcome to come back.",
+      "accept": [
+        "Gracias a usted. Los estudiantes pueden volver cuando quieran.",
+        "Fue un placer. Pueden volver cuando quieran.",
+        "Muchas gracias por la visita. Aquí siempre son bienvenidos."
+      ],
+      "require": [
+        {
+          "type": "avoidsAny",
+          "words": [
+            "eres",
+            "tienes"
+          ],
+          "label": "use usted"
+        }
+      ],
+      "focus": "p:caracterizarse-por",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-ver",
+    "c:claro-listo",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:lo-adjective",
+    "g:perfecto-experience",
+    "g:present-ar",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-cuando-future",
+    "g:subj-wanting",
+    "g:verb-infinitive",
+    "l:adobe",
+    "l:aquí",
+    "l:azul",
+    "l:bienvenido",
+    "l:buena",
+    "l:calor",
+    "l:cemento",
+    "l:claro",
+    "l:color",
+    "l:comparación",
+    "l:conservar",
+    "l:cuánto",
+    "l:diferencia",
+    "l:edificio",
+    "l:estudiante",
+    "l:fondo",
+    "l:fresco",
+    "l:largo",
+    "l:mantener",
+    "l:marco",
+    "l:medir",
+    "l:mejor",
+    "l:metro",
+    "l:moderno",
+    "l:muro",
+    "l:oscuro",
+    "l:pared",
+    "l:patio",
+    "l:placer",
+    "l:poder",
+    "l:presentar",
+    "l:profesora",
+    "l:puerta",
+    "l:querer",
+    "l:qué",
+    "l:ser",
+    "l:siempre",
+    "l:tarde",
+    "l:tener",
+    "l:venir",
+    "l:ventana",
+    "l:ver",
+    "l:verde",
+    "l:visita",
+    "l:volver",
+    "p:a-lo-largo-de",
+    "p:aproximar-cifras",
+    "p:aqui-ahi-alla",
+    "p:azul-oscuro-invariable",
+    "p:colores-compuestos",
+    "p:colour-claro-oscuro",
+    "p:demonstratives-basic",
+    "p:en-comparacion-con",
+    "p:frequency-scale",
+    "p:gracias-a-por-culpa-de",
+    "p:gracias-por",
+    "p:me-te-nos-objects",
+    "p:medir",
+    "p:medir-pesar",
+    "p:medir-pesar-caber",
+    "p:por-culpa-de",
+    "p:prep-questions-basic",
+    "p:presentation-frame",
+    "p:presenting-to-audience",
+    "p:quantifiers-basic",
+    "p:request-ladder",
+    "p:unos-approx"
+  ]
+}
