@@ -1,0 +1,165 @@
+{
+  "node": "x:future-guess-present-past",
+  "hook": {
+    "line": "Two guesses sound almost the same, and the only clue to when they happen is the ending. Mix them up and you will be guessing about the wrong day.",
+    "es": "Estará en casa.",
+    "en": "He's probably at home."
+  },
+  "examples": [
+    {
+      "es": "Estará en casa.",
+      "en": "He's probably at home."
+    },
+    {
+      "es": "Estaría en casa.",
+      "en": "He was probably at home."
+    },
+    {
+      "es": "Serán las diez.",
+      "en": "It must be about ten."
+    },
+    {
+      "es": "Serían las diez cuando llegó.",
+      "en": "It must have been about ten when he arrived."
+    },
+    {
+      "es": "Vale estará en la cocina.",
+      "en": "Vale is probably in the kitchen."
+    },
+    {
+      "es": "Vale estaría en la cocina.",
+      "en": "Vale was probably in the kitchen."
+    }
+  ],
+  "rule": "Both forms are guesses. The ending tells you when.\n\n*-á* (*estará*, *serán*, *tendrá*): a guess about now.\n*-ía* (*estaría*, *serían*, *tendría*): a guess about then.\n\n*Ahora Tomás estará cansado.* Tomás is probably tired.\n*Anoche Tomás estaría cansado.* Tomás was probably tired.\n\nThe stems are identical (*tendr-*, *sabr-*, *habr-*), so only the ending moves. A word like *ahora*, *ayer* or *cuando llegó* usually points the way too.",
+  "smallPrint": "Teachers contrast the future of probability (about the present) with the conditional of probability (about the past).",
+  "readAndPick": [
+    {
+      "es": "Estará en casa.",
+      "options": [
+        "He was probably at home.",
+        "He's probably at home."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Estaría en casa.",
+      "options": [
+        "He was probably at home.",
+        "He's probably at home."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ahora Tomás estará cansado.",
+      "options": [
+        "Tomás was probably tired.",
+        "Tomás is probably tired now."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Anoche Tomás estaría cansado.",
+      "options": [
+        "Tomás was probably tired last night.",
+        "Tomás is probably tired last night."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Serán las diez.",
+      "options": [
+        "It must have been about ten.",
+        "It must be about ten.",
+        "It will be ten."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Serían las diez cuando llegó.",
+      "options": [
+        "It must have been about ten when he arrived.",
+        "It must be about ten when he arrives."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Habrá mucha gente.",
+      "options": [
+        "There must have been a lot of people.",
+        "There must be a lot of people."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mariana sabría algo.",
+      "options": [
+        "Mariana probably knows something.",
+        "Mariana probably knew something."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *estará* or *estaría* and type the whole sentence: *Ahora Tomás ___ cansado.*",
+      "answer": "Ahora Tomás estará cansado.",
+      "accept": [],
+      "why": "*Ahora* means now, so the *-á* ending."
+    },
+    {
+      "prompt": "Pick *estará* or *estaría* and type the whole sentence: *Anoche Tomás ___ cansado.*",
+      "answer": "Anoche Tomás estaría cansado.",
+      "accept": [],
+      "why": "*Anoche* is in the past, so the *-ía* ending."
+    },
+    {
+      "prompt": "Type in Spanish: He's probably at home.",
+      "answer": "Estará en casa.",
+      "accept": [],
+      "why": "A guess about now: *estar* plus *-á*."
+    },
+    {
+      "prompt": "Type in Spanish: He was probably at home.",
+      "answer": "Estaría en casa.",
+      "accept": [],
+      "why": "A guess about then: *estar* plus *-ía*."
+    },
+    {
+      "prompt": "Type in Spanish: Vale was probably in the kitchen.",
+      "answer": "Vale estaría en la cocina.",
+      "accept": [],
+      "why": "Past guess, one person: *estaría*."
+    },
+    {
+      "prompt": "Make it about now: *Habría mucha gente.* Say: There must be a lot of people.",
+      "answer": "Habrá mucha gente.",
+      "accept": [],
+      "why": "Now takes the future ending: *habrá*."
+    },
+    {
+      "prompt": "Make it about then: *Mariana sabrá algo.* Say: Mariana probably knew something.",
+      "answer": "Mariana sabría algo.",
+      "accept": [],
+      "why": "Then takes *-ía* on the same stem: *sabría*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Ayer Vale estará en la cocina.",
+      "right": "Ayer Vale estaría en la cocina.",
+      "why": "Almost. *Ayer* is the past, and the future ending guesses about now."
+    },
+    {
+      "wrong": "Ahora Tomás estaría cansado.",
+      "right": "Ahora Tomás estará cansado.",
+      "why": "Almost. For a guess about right now, use *-á*; the *-ía* ending looks back."
+    },
+    {
+      "wrong": "Estara en casa.",
+      "right": "Estará en casa.",
+      "why": "Almost. The accent on the final *á* is what marks the future."
+    }
+  ],
+  "personal": "Think of a friend and guess two things: what they are probably doing now (*estará*) and what they were probably doing last night (*estaría*)."
+}

@@ -1,0 +1,182 @@
+{
+  "node": "g:conditional-past-guess",
+  "hook": {
+    "line": "Rosa's old photo shows a man nobody can name. Everyone is guessing what happened back then, and Spanish has a neat trick for that: the same ending you know for \"would\" also means \"must have been\".",
+    "es": "Serían las diez cuando llegó.",
+    "en": "It must have been about ten when he arrived."
+  },
+  "examples": [
+    {
+      "es": "Serían las diez cuando llegó.",
+      "en": "It must have been about ten when he arrived."
+    },
+    {
+      "es": "Tendría unos veinte años.",
+      "en": "She'd have been about twenty."
+    },
+    {
+      "es": "¿Por qué lo haría?",
+      "en": "I wonder why he did it."
+    },
+    {
+      "es": "Vale estaría en la cocina.",
+      "en": "Vale was probably in the kitchen."
+    },
+    {
+      "es": "Habría unas veinte personas en el café.",
+      "en": "There must have been about twenty people in the café."
+    },
+    {
+      "es": "¿Dónde estaría Simón?",
+      "en": "Where could Simón have been?"
+    },
+    {
+      "es": "Tomás no sabría qué decir.",
+      "en": "Tomás probably didn't know what to say."
+    }
+  ],
+  "rule": "You already guess about now with the future: *Estará en casa*, he's probably at home. To guess about then, take one step back and use the *-ía* ending.\n\nKeep the whole infinitive and add *-ía*: *estar* becomes *estaría*, *ser* becomes *sería*. For more than one, *-ían*: *serían*. The short-stem verbs shorten just as in the future: *tendría*, *sabría*, *habría*, *haría*.\n\nUse it for a past moment you can't check: a time, an age, a reason, a number. English adds \"must have been\" or \"I wonder\". Spanish needs no extra word, and the accent on the *í* is always there.",
+  "smallPrint": "Teachers call this the conditional of probability (*condicional de probabilidad*): the same form as \"would\", used to guess about the past.",
+  "readAndPick": [
+    {
+      "es": "Serían las diez cuando llegó.",
+      "options": [
+        "It must be about ten when he arrives.",
+        "It must have been about ten when he arrived.",
+        "It was ten exactly when he arrived."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tendría unos veinte años.",
+      "options": [
+        "She must be about twenty.",
+        "She will be twenty.",
+        "She'd have been about twenty."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Por qué lo haría?",
+      "options": [
+        "I wonder why he's doing it.",
+        "I wonder why he did it.",
+        "I wonder why he'll do it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale estaría en la cocina.",
+      "options": [
+        "Vale is probably in the kitchen.",
+        "Vale was probably in the kitchen.",
+        "Vale was in the kitchen."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Estará en casa.",
+      "options": [
+        "He's probably at home.",
+        "He was probably at home.",
+        "He'll be at home."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Habría unas veinte personas en el café.",
+      "options": [
+        "There must be about twenty people in the café.",
+        "There must have been about twenty people in the café."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Dónde estaría Simón?",
+      "options": [
+        "Where can Simón be?",
+        "Where could Simón have been?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Serán las diez.",
+      "options": [
+        "It must have been about ten.",
+        "It must be about ten."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tomás no sabría qué decir.",
+      "options": [
+        "Tomás doesn't know what to say.",
+        "Tomás probably doesn't know what to say.",
+        "Tomás probably didn't know what to say."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *serían* or *serán* and type the whole sentence: *___ las diez cuando llegó.*",
+      "answer": "Serían las diez cuando llegó.",
+      "accept": [],
+      "why": "It's a guess about a past moment, so the *-ían* ending."
+    },
+    {
+      "prompt": "Pick *tendrá* or *tendría* and type the whole sentence: *Rosa ___ unos ochenta años cuando abrió el café.*",
+      "answer": "Rosa tendría unos ochenta años cuando abrió el café.",
+      "accept": [],
+      "why": "The café opened in the past, so the guess takes *-ía*."
+    },
+    {
+      "prompt": "Type in Spanish: Where could Simón have been?",
+      "answer": "¿Dónde estaría Simón?",
+      "accept": [],
+      "why": "*Estar* plus *-ía* gives *estaría*, for a guess about then."
+    },
+    {
+      "prompt": "Type in Spanish: Vale was probably in the kitchen.",
+      "answer": "Vale estaría en la cocina.",
+      "accept": [],
+      "why": "One person, so *estaría*; no word for \"probably\" is needed."
+    },
+    {
+      "prompt": "Type in Spanish: There must have been about twenty people in the café.",
+      "answer": "Habría unas veinte personas en el café.",
+      "accept": [],
+      "why": "*Haber* shortens to *habr-*, then takes *-ía*."
+    },
+    {
+      "prompt": "Make it about now: *Serían las diez.* Say: It must be about ten.",
+      "answer": "Serán las diez.",
+      "accept": [],
+      "why": "A guess about now takes the future ending, *-án*."
+    },
+    {
+      "prompt": "Make it about then: *Tomás tendrá hambre.* Say: Tomás was probably hungry.",
+      "answer": "Tomás tendría hambre.",
+      "accept": [],
+      "why": "Moving back in time swaps the ending to *-ía*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Serán las diez cuando llegó.",
+      "right": "Serían las diez cuando llegó.",
+      "why": "Almost. The future guesses about now; for a past moment use the *-ían* ending."
+    },
+    {
+      "wrong": "Tenería unos veinte años.",
+      "right": "Tendría unos veinte años.",
+      "why": "Almost. *Tener* shortens to *tendr-* before the ending, just as in the future."
+    },
+    {
+      "wrong": "Estaria en la cocina.",
+      "right": "Estaría en la cocina.",
+      "why": "Almost. The accent on the *í* is always written."
+    }
+  ],
+  "personal": "Think of someone you saw yesterday and guess how old they were or what they were doing. Say it with *tendría* or *estaría*."
+}

@@ -1,0 +1,170 @@
+{
+  "node": "x:a-favor-vs-de-acuerdo",
+  "hook": {
+    "line": "At the neighbourhood meeting you want to say you are on board. But backing a plan and agreeing with a person are two different phrases in Spanish.",
+    "es": "Estoy a favor del plan.",
+    "en": "I'm in favour of the plan."
+  },
+  "examples": [
+    {
+      "es": "Estoy a favor del plan.",
+      "en": "I'm in favour of the plan."
+    },
+    {
+      "es": "Estoy de acuerdo con Vale.",
+      "en": "I agree with Vale."
+    },
+    {
+      "es": "No estoy de acuerdo con Vale.",
+      "en": "I don't agree with Vale."
+    },
+    {
+      "es": "Estoy a favor de vender.",
+      "en": "I'm in favour of selling."
+    },
+    {
+      "es": "Mariana está de acuerdo con Tomás.",
+      "en": "Mariana agrees with Tomás."
+    },
+    {
+      "es": "Don Hernando está a favor de la idea.",
+      "en": "Don Hernando is in favour of the idea."
+    }
+  ],
+  "rule": "Both phrases mean \"I'm on board\", but they answer different questions.\n\n*Estar a favor de*: you take a side on a thing, such as a plan, an idea or doing something. *Estoy a favor del plan.*\n\n*Estar de acuerdo con*: you agree with a person or with what they said. *Estoy de acuerdo con Vale.*\n\nThe opposites are *estar en contra de* and *no estar de acuerdo con*. Both use *estar*, never *ser*, and each keeps its own little word: *a favor de*, *de acuerdo con*.",
+  "smallPrint": "Teachers call both of these stance phrases: one marks support for a proposal, the other agreement with a speaker.",
+  "readAndPick": [
+    {
+      "es": "Estoy de acuerdo con Vale.",
+      "options": [
+        "I'm against Vale.",
+        "I agree with Vale.",
+        "Vale agrees with me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Estoy a favor del plan.",
+      "options": [
+        "I'm in favour of the plan.",
+        "I'm against the plan.",
+        "I agree with the planner."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No estoy de acuerdo con Vale.",
+      "options": [
+        "I agree with Vale.",
+        "I don't agree with Vale."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Estoy a favor de vender.",
+      "options": [
+        "I sold it.",
+        "I'm against selling.",
+        "I'm in favour of selling."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mariana está de acuerdo con Tomás.",
+      "options": [
+        "Mariana is against Tomás.",
+        "Tomás agrees with Mariana.",
+        "Mariana agrees with Tomás."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Don Hernando está a favor de la idea.",
+      "options": [
+        "Don Hernando is in favour of the idea.",
+        "Don Hernando is against the idea."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Estás de acuerdo?",
+      "options": [
+        "Do I agree?",
+        "Do you agree? (to a friend)",
+        "Does she agree?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Estamos de acuerdo.",
+      "options": [
+        "They agree.",
+        "I agree.",
+        "We agree."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *a favor* or *de acuerdo* and type the whole sentence: *Estoy ___ del plan.*",
+      "answer": "Estoy a favor del plan.",
+      "accept": [],
+      "why": "A plan is a thing you back, so *a favor de* (*de* + *el* is *del*)."
+    },
+    {
+      "prompt": "Pick *a favor* or *de acuerdo* and type the whole sentence: *Estoy ___ con Vale.*",
+      "answer": "Estoy de acuerdo con Vale.",
+      "accept": [],
+      "why": "You agree with a person, so *de acuerdo con*."
+    },
+    {
+      "prompt": "Type in Spanish: Mariana agrees with Tomás.",
+      "answer": "Mariana está de acuerdo con Tomás.",
+      "accept": [],
+      "why": "A person again, so *está de acuerdo con*."
+    },
+    {
+      "prompt": "Type in Spanish: I'm in favour of selling.",
+      "answer": "Estoy a favor de vender.",
+      "accept": [],
+      "why": "After *a favor de*, an infinitive works: *vender*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Do you agree?",
+      "answer": "¿Estás de acuerdo?",
+      "accept": [],
+      "why": "To a friend, *estás*; agreeing is a position you are in."
+    },
+    {
+      "prompt": "Make it negative: *Estoy de acuerdo con Vale.* Say: I don't agree with Vale.",
+      "answer": "No estoy de acuerdo con Vale.",
+      "accept": [],
+      "why": "Put *no* before *estoy*; the rest stays."
+    },
+    {
+      "prompt": "Type in Spanish: Don Hernando is in favour of the idea.",
+      "answer": "Don Hernando está a favor de la idea.",
+      "accept": [],
+      "why": "An idea is a thing to back, so *a favor de*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Soy de acuerdo con Vale.",
+      "right": "Estoy de acuerdo con Vale.",
+      "why": "Almost. Agreeing is a position you are in, so Spanish uses *estar*."
+    },
+    {
+      "wrong": "Estoy a favor con Vale.",
+      "right": "Estoy de acuerdo con Vale.",
+      "why": "Almost. To agree with a person, use *de acuerdo con*; *a favor* takes *de* and backs a thing."
+    },
+    {
+      "wrong": "Estoy de acuerdo a Vale.",
+      "right": "Estoy de acuerdo con Vale.",
+      "why": "Almost. It is always *con* after *de acuerdo*."
+    }
+  ],
+  "personal": "Think of something a friend said lately and a plan in your town. Say *Estoy de acuerdo con...* for one and *Estoy a favor de...* for the other."
+}

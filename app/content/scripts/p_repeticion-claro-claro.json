@@ -1,0 +1,184 @@
+{
+  "node": "p:repeticion-claro-claro",
+  "hook": {
+    "line": "Watch a Colombian say yes, or wave you in the door: the word comes out twice. It is the easiest way to sound warm, and it needs no new grammar.",
+    "es": "¿Vienes?\nClaro, claro.",
+    "en": "Are you coming?\nOf course, of course."
+  },
+  "examples": [
+    {
+      "es": "¿Vienes?\nClaro, claro.",
+      "en": "Are you coming?\nOf course, of course."
+    },
+    {
+      "es": "No, no, yo no fui.",
+      "en": "No, no, it wasn't me."
+    },
+    {
+      "es": "¡Corre, corre!",
+      "en": "Run, run!"
+    },
+    {
+      "es": "Siéntate, siéntate.",
+      "en": "Sit down, sit down. (to a friend)"
+    },
+    {
+      "es": "Pasa, pasa.",
+      "en": "Come in, come in. (to a friend)"
+    },
+    {
+      "es": "Sí, sí, ya voy.",
+      "en": "Yes, yes, I'm coming."
+    }
+  ],
+  "rule": "Say a word twice and you turn up the volume without changing the meaning. *Claro, claro* is a warm, hearty yes. *No, no* is a firm no. With commands, *Pasa, pasa* is a welcome and *Corre, corre* is urgency. The situation tells you which.\n\nEnglish does it too (\"sure, sure\", \"no, no, no\"). In Spanish, put a comma between the two and stop at two. Repeat the exact same word: *siéntate, siéntate*, never a mix.",
+  "smallPrint": "Teachers call this repetition for emphasis. The doubled word keeps its meaning and just gains force.",
+  "readAndPick": [
+    {
+      "es": "Pasa, pasa.",
+      "options": [
+        "Come in.",
+        "Come in, come in.",
+        "He came in."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No, no, yo no fui.",
+      "options": [
+        "No, it wasn't me.",
+        "I don't know.",
+        "No, no, it wasn't me."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Siéntate, siéntate.",
+      "options": [
+        "Sit down.",
+        "Sit down, sit down.",
+        "I'm sitting down."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Corre, corre!",
+      "options": [
+        "Run, run!",
+        "Run!",
+        "He's running."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Sí, sí, ya voy.",
+      "options": [
+        "Yes, I'm coming.",
+        "Yes, he's coming.",
+        "Yes, yes, I'm coming."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Espera.",
+      "options": [
+        "Wait.",
+        "Wait, wait."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Espera, espera.",
+      "options": [
+        "Wait.",
+        "Wait, wait."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Vienes?\nClaro, claro.",
+      "options": [
+        "Are you coming?\nOf course.",
+        "Are you coming?\nOf course, of course.",
+        "Are you coming?\nOf course not."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "A friend asks *¿Vienes?* Answer with a warm, doubled yes: *Claro, ___.*",
+      "answer": "Claro, claro.",
+      "accept": [
+        "¡Claro, claro!",
+        "Claro, claro"
+      ],
+      "why": "Say the same word twice with a comma between."
+    },
+    {
+      "prompt": "Tell a friend to run, with urgency. Pick *corre, corre* or *corre, corra* and type it.",
+      "answer": "Corre, corre.",
+      "accept": [
+        "¡Corre, corre!",
+        "Corre, corre"
+      ],
+      "why": "Both words are the same: *corre, corre*."
+    },
+    {
+      "prompt": "Type in Spanish, welcoming a friend: Come in, come in.",
+      "answer": "Pasa, pasa.",
+      "accept": [
+        "¡Pasa, pasa!"
+      ],
+      "why": "Doubling the command makes the welcome warmer."
+    },
+    {
+      "prompt": "Type in Spanish: No, no, it wasn't me.",
+      "answer": "No, no, yo no fui.",
+      "accept": [
+        "No, no, no fui yo."
+      ],
+      "why": "The doubled *no* is just emphasis; the sentence then runs as usual."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Wait, wait.",
+      "answer": "Espera, espera.",
+      "accept": [
+        "¡Espera, espera!"
+      ],
+      "why": "Repeat the exact same word."
+    },
+    {
+      "prompt": "Double it: *Siéntate.* Say: Sit down, sit down. (to a friend)",
+      "answer": "Siéntate, siéntate.",
+      "accept": [
+        "¡Siéntate, siéntate!"
+      ],
+      "why": "Same word twice, with a comma between."
+    },
+    {
+      "prompt": "Add a doubled yes to *Sí, ya voy.* Say: Yes, yes, I'm coming.",
+      "answer": "Sí, sí, ya voy.",
+      "accept": [],
+      "why": "Double just the *sí* and keep the rest."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Claro claro.",
+      "right": "Claro, claro.",
+      "why": "Almost. Put a comma between the two words so it sounds like two beats."
+    },
+    {
+      "wrong": "Siéntate, siéntese.",
+      "right": "Siéntate, siéntate.",
+      "why": "Almost. Repeat the same word, don't change it the second time."
+    },
+    {
+      "wrong": "Es claro, claro.",
+      "right": "Claro, claro.",
+      "why": "Almost. The doubled word stands alone; you don't need a verb in front."
+    }
+  ],
+  "personal": "Think of a friend who asks you for a small favour. Answer them out loud with *Claro, claro.*"
+}

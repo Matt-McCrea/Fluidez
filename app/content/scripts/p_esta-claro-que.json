@@ -1,0 +1,170 @@
+{
+  "node": "p:esta-claro-que",
+  "hook": {
+    "line": "At the café everyone has a view on Altamira, and sooner or later you want to say \"it's obvious that...\" and sound sure of yourself. Spanish has two ready-made openers for that.",
+    "es": "Está claro que Altamira quiere comprar la cuadra.",
+    "en": "It's clear that Altamira wants to buy the block."
+  },
+  "examples": [
+    {
+      "es": "Está claro que se equivocó.",
+      "en": "It's clear he made a mistake."
+    },
+    {
+      "es": "Es evidente que está cansada.",
+      "en": "It's obvious she's tired."
+    },
+    {
+      "es": "Está claro que don Hernando tiene razón.",
+      "en": "It's clear that don Hernando is right."
+    },
+    {
+      "es": "Es evidente que Simón tiene hambre.",
+      "en": "It's obvious that Simón is hungry."
+    },
+    {
+      "es": "No está claro que Altamira compre el café.",
+      "en": "It isn't clear that Altamira will buy the café."
+    },
+    {
+      "es": "No es evidente que Mariana tenga razón.",
+      "en": "It isn't obvious that Mariana is right."
+    }
+  ],
+  "rule": "Start with *está claro que* or *es evidente que* when you present something as a fact. What follows is an ordinary verb: *tiene*, *quiere*, *se equivocó*. English works the same way, so this part is easy.\n\nThe twist is the negative. *No está claro que* means you are not sure, so the verb after it switches to the wish form: *compre*, *tenga*.\n\nFact: *Está claro que tiene razón.*\nDoubt: *No está claro que tenga razón.*\n\nKeep *que* every time, and no *de* in front of it.",
+  "smallPrint": "Teachers call these expressions of certainty. A fact takes the indicative; once you deny the certainty, the subjunctive takes over.",
+  "readAndPick": [
+    {
+      "es": "Está claro que Tomás tiene razón.",
+      "options": [
+        "It isn't clear that Tomás is right.",
+        "It's clear that Tomás is right."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No está claro que Tomás tenga razón.",
+      "options": [
+        "It's clear that Tomás is right.",
+        "It isn't clear that Tomás is right."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es evidente que Simón tiene hambre.",
+      "options": [
+        "It's obvious that Simón is hungry.",
+        "It isn't obvious that Simón is hungry.",
+        "Simón wasn't hungry."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No es evidente que Mariana tenga razón.",
+      "options": [
+        "It's obvious that Mariana is right.",
+        "It isn't obvious that Mariana is right."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Está claro que Altamira quiere comprar la cuadra.",
+      "options": [
+        "It's clear that Altamira wants to buy the block.",
+        "It isn't clear that Altamira wants to buy the block.",
+        "Altamira bought the block."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No está claro que Altamira compre el café.",
+      "options": [
+        "It's clear that Altamira will buy the café.",
+        "It isn't clear that Altamira will buy the café.",
+        "It's clear that Altamira bought the café."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es evidente que está cansada.",
+      "options": [
+        "It isn't obvious that she's tired.",
+        "It's obvious that she's tired."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No está claro que Vale quiera irse.",
+      "options": [
+        "It isn't clear that Vale wants to leave.",
+        "It's clear that Vale wants to leave.",
+        "Vale doesn't want to leave."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *tiene* or *tenga* and type the whole sentence: *Está claro que don Hernando ___ razón.*",
+      "answer": "Está claro que don Hernando tiene razón.",
+      "accept": [],
+      "why": "You are stating a fact, so the verb stays ordinary: *tiene*."
+    },
+    {
+      "prompt": "Pick *compra* or *compre* and type the whole sentence: *No está claro que Altamira ___ el café.*",
+      "answer": "No está claro que Altamira compre el café.",
+      "accept": [],
+      "why": "Once it is *no está claro*, the verb takes the wish form: *compre*."
+    },
+    {
+      "prompt": "Type in Spanish: It's obvious that she's tired.",
+      "answer": "Es evidente que está cansada.",
+      "accept": [
+        "Es evidente que ella está cansada."
+      ],
+      "why": "*Es evidente que* plus an ordinary verb, because it is a fact."
+    },
+    {
+      "prompt": "Type in Spanish: It's clear that Altamira wants to buy the block.",
+      "answer": "Está claro que Altamira quiere comprar la cuadra.",
+      "accept": [],
+      "why": "A fact, so *quiere* stays as it is."
+    },
+    {
+      "prompt": "Make it negative: *Es evidente que Mariana tiene razón.* Say: It isn't obvious that Mariana is right.",
+      "answer": "No es evidente que Mariana tenga razón.",
+      "accept": [],
+      "why": "Put *no* in front, and the verb switches to the wish form: *tenga*."
+    },
+    {
+      "prompt": "Type in Spanish: It isn't clear that Tomás will sell the café.",
+      "answer": "No está claro que Tomás venda el café.",
+      "accept": [],
+      "why": "Not clear means not sure, so *venda*, not *vende*."
+    },
+    {
+      "prompt": "Make it a fact: *No está claro que Vale quiera irse.* Say: It's clear that Vale wants to leave.",
+      "answer": "Está claro que Vale quiere irse.",
+      "accept": [],
+      "why": "Drop the *no* and the verb goes back to ordinary: *quiere*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Está claro que Tomás tenga razón.",
+      "right": "Está claro que Tomás tiene razón.",
+      "why": "Almost. A fact takes the ordinary verb; the wish form is for when you are not sure."
+    },
+    {
+      "wrong": "No está claro que Altamira compra el café.",
+      "right": "No está claro que Altamira compre el café.",
+      "why": "Almost. After *no está claro que* you are doubting, so the verb takes the wish form."
+    },
+    {
+      "wrong": "Está claro de que Tomás tiene razón.",
+      "right": "Está claro que Tomás tiene razón.",
+      "why": "Almost. Nothing goes between *claro* and *que*: no *de*."
+    }
+  ],
+  "personal": "Think of something that is obvious to you about your own town or job. Say it with *Está claro que* or *Es evidente que*."
+}

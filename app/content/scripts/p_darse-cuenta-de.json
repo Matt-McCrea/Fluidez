@@ -1,0 +1,172 @@
+{
+  "node": "p:darse-cuenta-de",
+  "hook": {
+    "line": "Everyone has the moment when it clicks: the café is losing money, or you have said the wrong thing. Spanish has one phrase for that moment, and it is not what English speakers expect.",
+    "es": "Me di cuenta de mi error demasiado tarde.",
+    "en": "I realised my mistake too late."
+  },
+  "examples": [
+    {
+      "es": "Me di cuenta de mi error demasiado tarde.",
+      "en": "I realised my mistake too late."
+    },
+    {
+      "es": "¿No te das cuenta de que te está mintiendo?",
+      "en": "Don't you realise he's lying to you? (to a friend)"
+    },
+    {
+      "es": "Tomás se dio cuenta de que Rosa guardaba una carta.",
+      "en": "Tomás realised that Rosa was keeping a letter."
+    },
+    {
+      "es": "Me di cuenta de que no tenía plata.",
+      "en": "I realised I had no money."
+    },
+    {
+      "es": "No nos dimos cuenta de que era tarde.",
+      "en": "We didn't realise it was late."
+    },
+    {
+      "es": "¿Te diste cuenta del precio?",
+      "en": "Did you notice the price? (to a friend)"
+    }
+  ],
+  "rule": "To realise or notice something, Spanish says *darse cuenta*: literally, to give yourself an account. It changes with who realises:\n\n*me di cuenta*, I realised\n*te diste cuenta*, you realised\n*se dio cuenta*, he or she realised\n*nos dimos cuenta*, we realised\n\nNow: *me doy cuenta*, *te das cuenta*.\n\nThen always keep the *de*: *de mi error*, *de que era tarde*, *del precio* (*de* + *el*). Don't use *realizar*: it means to carry something out.",
+  "smallPrint": "Teachers call this a reflexive phrase: *dar* with a pronoun that points back at the person realising.",
+  "readAndPick": [
+    {
+      "es": "Me di cuenta de mi error demasiado tarde.",
+      "options": [
+        "He realised my mistake too late.",
+        "I realised my mistake too late.",
+        "I made a mistake too late."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tomás se dio cuenta de que Rosa guardaba una carta.",
+      "options": [
+        "Rosa realised Tomás was keeping a letter.",
+        "Tomás wrote Rosa a letter.",
+        "Tomás realised that Rosa was keeping a letter."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Te diste cuenta del precio?",
+      "options": [
+        "Did I notice the price?",
+        "Did he notice the price?",
+        "Did you notice the price?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No nos dimos cuenta de que era tarde.",
+      "options": [
+        "They didn't realise it was late.",
+        "We didn't realise it was late.",
+        "I didn't realise it was late."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿No te das cuenta de que te está mintiendo?",
+      "options": [
+        "Don't you realise he's lying to you?",
+        "Doesn't he realise you're lying?",
+        "Didn't you realise he lied to you?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me doy cuenta de que tienes razón.",
+      "options": [
+        "I realised you were right.",
+        "You realise I'm right.",
+        "I realise you're right."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Me di cuenta de que no tenía plata.",
+      "options": [
+        "I realise I have no money.",
+        "I gave him money.",
+        "I realised I had no money."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mariana se dio cuenta del problema.",
+      "options": [
+        "Mariana noticed the problem.",
+        "I noticed Mariana's problem.",
+        "Mariana didn't notice the problem."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *me di* or *se dio* and type the whole sentence: *Tomás ___ cuenta de que Rosa guardaba una carta.*",
+      "answer": "Tomás se dio cuenta de que Rosa guardaba una carta.",
+      "accept": [],
+      "why": "Tomás is a he, so *se dio*."
+    },
+    {
+      "prompt": "Pick *cuenta de* or *cuenta* and type the whole sentence: *Me di ___ mi error demasiado tarde.*",
+      "answer": "Me di cuenta de mi error demasiado tarde.",
+      "accept": [],
+      "why": "The *de* always stays after *cuenta*."
+    },
+    {
+      "prompt": "Type in Spanish: I realised I had no money.",
+      "answer": "Me di cuenta de que no tenía plata.",
+      "accept": [],
+      "why": "*Me di cuenta de que* plus a whole clause."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Did you notice the price?",
+      "answer": "¿Te diste cuenta del precio?",
+      "accept": [],
+      "why": "*Te diste* for you; *de* + *el* becomes *del*."
+    },
+    {
+      "prompt": "Type in Spanish: We didn't realise it was late.",
+      "answer": "No nos dimos cuenta de que era tarde.",
+      "accept": [],
+      "why": "For we, *nos dimos*; *no* goes in front of the whole phrase."
+    },
+    {
+      "prompt": "Make it about Mariana: *Me di cuenta del problema.* Say: Mariana realised the problem.",
+      "answer": "Mariana se dio cuenta del problema.",
+      "accept": [],
+      "why": "Mariana is a she, so *se dio*."
+    },
+    {
+      "prompt": "Make it a question to a friend: *Te das cuenta de que es tarde.* Say: Do you realise it's late?",
+      "answer": "¿Te das cuenta de que es tarde?",
+      "accept": [],
+      "why": "Same words with question marks; *te das* is for you."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me realicé de mi error.",
+      "right": "Me di cuenta de mi error.",
+      "why": "Almost. *Realizar* means to carry out; to realise is *darse cuenta*."
+    },
+    {
+      "wrong": "Me di cuenta que era tarde.",
+      "right": "Me di cuenta de que era tarde.",
+      "why": "Almost. Keep the *de* before *que*, even though English has no word there."
+    },
+    {
+      "wrong": "Tomás dio cuenta de que Rosa guardaba una carta.",
+      "right": "Tomás se dio cuenta de que Rosa guardaba una carta.",
+      "why": "Almost. The little *se* is part of the phrase: you can't drop it."
+    }
+  ],
+  "personal": "Think of something you realised this week. Say it with *Me di cuenta de que...*"
+}
