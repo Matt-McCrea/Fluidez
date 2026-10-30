@@ -1,0 +1,225 @@
+{
+  "id": "sc-u25-c",
+  "unit": "u25",
+  "title": "Cabina doce",
+  "spare": true,
+  "brief": "You're Tomás. You're riding the cable car over Medellín with a bunch of flowers for Vale's mother, and an older paisa lady in your cabin starts chatting. Tell her about yourself and the city, and survive what she has heard about you. She's older than you and a stranger, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Qué vista, ¿cierto? Usted no es de aquí, ¿o sí?",
+      "npcEn": "What a view, right? You're not from here, are you?",
+      "intent": "Say no, you're from Toronto, but you live in Bogotá.",
+      "accept": [
+        "No, soy de Toronto, pero vivo en Bogotá.",
+        "No, señora. Soy canadiense, pero ahora vivo en Bogotá.",
+        "No. Soy de Toronto, y vivo en Bogotá."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "Bogotá",
+          "label": "say where you live: vivo en Bogotá"
+        }
+      ],
+      "focus": "c:vivo-en",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Y cómo le parece Medellín?",
+      "npcEn": "And what do you think of Medellín?",
+      "intent": "Say it's very pretty and it isn't as cold as Bogotá.",
+      "accept": [
+        "Me parece muy linda. Y no hace tanto frío como en Bogotá.",
+        "Es muy bonita, y no hace tanto frío como en Bogotá.",
+        "Muy linda. No hace tanto frío como en Bogotá."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "tant[oa]s? [^ ]+ como",
+          "flags": "i",
+          "label": "not as cold as: no hace tanto frío como..."
+        }
+      ],
+      "focus": "g:tanto-como",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Y esas flores tan lindas? ¿Son para su novia?",
+      "npcEn": "And those lovely flowers? Are they for your girlfriend?",
+      "intent": "Say no: you're going to give the flowers to Vale's mother.",
+      "accept": [
+        "No, señora. Le voy a dar las flores a la mamá de Vale.",
+        "No. Voy a darle las flores a la mamá de Vale.",
+        "No, son para la mamá de Vale. Hoy le doy las flores a ella."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "le\\b[^.?!]*\\ba (la mamá|ella)",
+          "flags": "i",
+          "label": "say who twice: le voy a dar las flores a la mamá de Vale"
+        }
+      ],
+      "focus": "g:le-doubling",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¿Vale, la hija de Beatriz? ¡Usted es el amigo del café en Bogotá! Beatriz es mi vecina. Me habló mucho de usted.",
+      "npcEn": "Vale, Beatriz's daughter? You're the friend with the café in Bogotá! Beatriz is my neighbour. She's told me a lot about you.",
+      "intent": "Ask her what Beatriz said about you.",
+      "accept": [
+        "¿En serio? ¿Y qué le dijo de mí?",
+        "¿Qué le contó de mí?",
+        "¿De verdad? ¿Qué le dijo ella de mí?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "make it a question"
+        },
+        {
+          "type": "regex",
+          "pattern": "de m[íi]([^a-záéíóúñ]|$)",
+          "flags": "i",
+          "label": "about me: de mí"
+        }
+      ],
+      "focus": "g:prep-pronouns",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Me dijo que usted era un pan de Dios, pero que cocinaba muy mal.",
+      "npcEn": "She told me you were a real sweetheart, but that you cooked very badly.",
+      "intent": "Say that's a lie: honestly, you cook very well.",
+      "accept": [
+        "¡Eso es mentira! Cocino muy bien, sinceramente.",
+        "¡Mentira! Realmente cocino muy bien.",
+        "Eso es mentira. Sinceramente, cocino muy bien."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "[a-záéíóúñ]+mente\\b",
+          "flags": "i",
+          "label": "say how with a -mente word: sinceramente, realmente"
+        }
+      ],
+      "focus": "g:adverbs-mente",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Bueno, mijo, aquí me bajo. ¡Y aprenda a cocinar!",
+      "npcEn": "Well, dear, this is my stop. And learn to cook!",
+      "intent": "Laugh it off, say goodbye and say it was nice to meet her.",
+      "accept": [
+        "Ay, señora. Chao, y mucho gusto.",
+        "Claro que sí, señora. Chao, y mucho gusto.",
+        "Listo, señora. ¡Chao, y mucho gusto!"
+      ],
+      "require": [],
+      "focus": "c:mucho-gusto",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:chao-nos-vemos",
+    "c:claro-listo",
+    "c:en-serio",
+    "c:entonces-bueno",
+    "c:era",
+    "c:mucho-gusto",
+    "c:no-cierto",
+    "c:soy-de",
+    "c:vivo-en",
+    "c:voy-a",
+    "g:adjective-agreement",
+    "g:adverbs-mente",
+    "g:commands-usted",
+    "g:demonstratives",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:reported-past-basic",
+    "g:ser-identity",
+    "g:tanto-como",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:ahora",
+    "l:amigo",
+    "l:aprender",
+    "l:aquí",
+    "l:bajarse",
+    "l:bien",
+    "l:bonito",
+    "l:bueno",
+    "l:café",
+    "l:canadiense",
+    "l:claro",
+    "l:cocinar",
+    "l:contar",
+    "l:cómo",
+    "l:dar",
+    "l:decir",
+    "l:flor",
+    "l:frío",
+    "l:gusto",
+    "l:hablar",
+    "l:hacer",
+    "l:hija",
+    "l:hoy",
+    "l:ir",
+    "l:lindo",
+    "l:listo",
+    "l:mal",
+    "l:mamá",
+    "l:mentira",
+    "l:mijo",
+    "l:novia",
+    "l:pan",
+    "l:parecer",
+    "l:qué",
+    "l:realmente",
+    "l:ser",
+    "l:serio",
+    "l:señora",
+    "l:sinceramente",
+    "l:vecino",
+    "l:verdad",
+    "l:vista",
+    "l:vivir",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:demonstratives-basic",
+    "p:hace-frio",
+    "p:hedge-knowledge",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:ser-profession-no-article",
+    "p:ser-un-noun",
+    "p:subirse-bajarse"
+  ]
+}

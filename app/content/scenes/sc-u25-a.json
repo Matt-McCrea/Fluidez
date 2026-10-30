@@ -1,0 +1,239 @@
+{
+  "id": "sc-u25-a",
+  "unit": "u25",
+  "title": "El señor del pelo blanco",
+  "spare": false,
+  "brief": "You're Tomás. It's the Feria de las Flores in Medellín, the parade is packed, and you've lost Don Hernando in the crowd. Describe him to a police officer and pass on what he told you before he disappeared. The officer is a stranger at work, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenas tardes, joven. ¿Busca a alguien?",
+      "npcEn": "Good afternoon, young man. Are you looking for someone?",
+      "intent": "Say yes: you can't find your friend Hernando, who is seventy-one.",
+      "accept": [
+        "Sí, gracias. No encuentro a Hernando, un amigo de setenta y un años.",
+        "No encuentro a un amigo. Es un señor de setenta y un años.",
+        "Sí. No encuentro a mi amigo Hernando. Tiene setenta y un años."
+      ],
+      "require": [
+        {
+          "type": "negation",
+          "label": "say you can't find him: no encuentro..."
+        }
+      ],
+      "focus": "g:negation-words",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Tranquilo, con tanta gente eso pasa mucho. ¿Cómo es su amigo?",
+      "npcEn": "Don't worry, with so many people that happens a lot. What does your friend look like?",
+      "intent": "Say he's the man with white hair and the yellow shirt.",
+      "accept": [
+        "Es el señor del pelo blanco y la camisa amarilla.",
+        "Es bajo, y tiene el pelo blanco. Es el señor de la camisa amarilla.",
+        "Es el señor del pelo blanco."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "señor (del|de la) ",
+          "flags": "i",
+          "label": "the man with...: el señor del pelo blanco"
+        }
+      ],
+      "focus": "p:de-los-ojos-azules",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Bueno. ¿Y qué le dijo antes de irse?",
+      "npcEn": "OK. And what did he tell you before he left?",
+      "intent": "Say he told you he was going to buy flowers for his daughter.",
+      "accept": [
+        "Me dijo que iba a comprar flores para su hija.",
+        "Me contó que iba a comprar flores para su hija.",
+        "Hernando me dijo que iba a comprar unas flores para su hija."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(dijo|contó) que",
+          "flags": "i",
+          "label": "pass it on: me dijo que..."
+        },
+        {
+          "type": "verbForm",
+          "inf": "ir",
+          "tense": "imperfecto",
+          "person": "él/ella",
+          "label": "he was going to: iba a comprar"
+        }
+      ],
+      "focus": "g:reported-past-basic",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¿Y ya lo llamó al celular?",
+      "npcEn": "And have you called his cell phone?",
+      "intent": "Say you already sent Hernando a message, but he isn't answering.",
+      "accept": [
+        "Sí, ya le mandé un mensaje a Hernando, pero no contesta.",
+        "Le escribí a Hernando hace diez minutos, pero no me contesta.",
+        "Ya le mandé tres mensajes a Hernando, pero no contesta."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\ble\\b[^.?!]*\\ba Hernando",
+          "flags": "i",
+          "label": "say who twice: le mandé un mensaje a Hernando"
+        }
+      ],
+      "focus": "g:le-doubling",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Espere. ¿Un señor del pelo blanco, con una camisa amarilla? Mire allá. Está bailando en el desfile.",
+      "npcEn": "Wait. A man with white hair, in a yellow shirt? Look over there. He's dancing in the parade.",
+      "intent": "Say it's him and that, honestly, he dances better than you.",
+      "accept": [
+        "¡Es él! Sinceramente, baila mejor que yo.",
+        "Sinceramente, él baila mejor que yo.",
+        "¡Es él! Realmente baila mejor que yo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "[a-záéíóúñ]+mente\\b",
+          "flags": "i",
+          "label": "say how with a -mente word: sinceramente, realmente"
+        }
+      ],
+      "focus": "g:adverbs-mente",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Bueno, joven. Y no lo pierda otra vez.",
+      "npcEn": "Right, young man. And don't lose him again.",
+      "intent": "Thank him warmly: tell him he's a real sweetheart.",
+      "accept": [
+        "Muchas gracias, señor. Usted es un pan de Dios.",
+        "Mil gracias. Usted es un pan de Dios.",
+        "Gracias, señor. Es un pan de Dios."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "pan de dios",
+          "flags": "i",
+          "label": "a real sweetheart: es un pan de Dios"
+        }
+      ],
+      "focus": "c:pan-de-dios",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:como-es",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:me-conto-que",
+    "c:pan-de-dios",
+    "c:tienes",
+    "c:tranquilo",
+    "g:adjective-agreement",
+    "g:adverbs-mente",
+    "g:commands-usted",
+    "g:comparatives",
+    "g:direct-objects",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hace-ago",
+    "g:imperfect-habitual",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:negative-commands",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:reported-past-basic",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:that-clauses",
+    "l:allá",
+    "l:amarillo",
+    "l:amigo",
+    "l:antes",
+    "l:año",
+    "l:bailar",
+    "l:blanco",
+    "l:buena",
+    "l:bueno",
+    "l:buscar",
+    "l:camisa",
+    "l:celular",
+    "l:comprar",
+    "l:contar",
+    "l:contestar",
+    "l:cómo",
+    "l:decir",
+    "l:desfile",
+    "l:encontrar",
+    "l:escribir",
+    "l:esperar",
+    "l:estar",
+    "l:flor",
+    "l:gente",
+    "l:hacer",
+    "l:hija",
+    "l:ir",
+    "l:irse",
+    "l:joven",
+    "l:llamar",
+    "l:mandar",
+    "l:mejor",
+    "l:mensaje",
+    "l:minuto",
+    "l:mirar",
+    "l:pan",
+    "l:pasar",
+    "l:pelo",
+    "l:perder",
+    "l:qué",
+    "l:realmente",
+    "l:ser",
+    "l:señor",
+    "l:sinceramente",
+    "l:tarde",
+    "l:tener",
+    "l:tranquilo",
+    "l:vez",
+    "p:aqui-ahi-alla",
+    "p:de-los-ojos-azules",
+    "p:demonstratives-basic",
+    "p:es-tiene-lleva",
+    "p:indefinites-basic",
+    "p:la-gente-singular",
+    "p:me-te-nos-objects",
+    "p:numbers-un-una",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:question-word-order"
+  ]
+}

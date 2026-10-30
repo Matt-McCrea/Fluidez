@@ -1,0 +1,223 @@
+{
+  "id": "sc-u25-b",
+  "unit": "u25",
+  "title": "Llamada a Bogotá",
+  "spare": true,
+  "brief": "You're Tomás. You're in Medellín for the Feria de las Flores, and Vale's mother Beatriz has just told you about Rosa's brother. Call Mariana in Bogotá and pass on everything you heard. She's your friend, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "¡Tomás! ¿Qué tal Medellín? Aquí en Bogotá llueve todo el día.",
+      "npcEn": "Tomás! How's Medellín? Here in Bogotá it rains all day.",
+      "intent": "Say Medellín has lovely weather and there are flowers in every street.",
+      "accept": [
+        "Medellín tiene muy buen clima, y hay flores en todas las calles.",
+        "Aquí hace un clima delicioso. Hay flores en todas las calles.",
+        "Muy bien. Medellín tiene un clima delicioso, y hay flores en todas las calles."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "clima",
+          "label": "talk about the weather: tiene muy buen clima"
+        }
+      ],
+      "focus": "c:buen-clima",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Qué envidia. ¿Y la mamá de Vale ya les habló de Rosa?",
+      "npcEn": "I'm jealous. And has Vale's mum talked to you about Rosa yet?",
+      "intent": "Say yes: she told you Rosa had a younger brother.",
+      "accept": [
+        "Sí. Me contó que Rosa tenía un hermano menor.",
+        "Sí, nos dijo que Rosa tenía un hermano menor, Joaquín.",
+        "Sí. La mamá de Vale nos dijo que Rosa tenía un hermano menor."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(dijo|contó) que",
+          "flags": "i",
+          "label": "pass it on: me contó que..."
+        },
+        {
+          "type": "verbForm",
+          "inf": "tener",
+          "tense": "imperfecto",
+          "person": "él/ella",
+          "label": "in the background past: Rosa tenía"
+        }
+      ],
+      "focus": "g:reported-past-basic",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Un hermano? ¿Y por qué nunca supimos de él?",
+      "npcEn": "A brother? And why did we never hear about him?",
+      "intent": "Using según, say that according to Beatriz, they had a fight and he went off to Santa Marta.",
+      "accept": [
+        "Según Beatriz, se pelearon y él se fue a Santa Marta.",
+        "Según Beatriz, Rosa y Joaquín se pelearon muy feo, y él se fue a Santa Marta.",
+        "Se pelearon muy feo, según Beatriz. Y él se fue a Santa Marta."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "según",
+          "label": "according to: según Beatriz"
+        }
+      ],
+      "focus": "c:segun",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¿A Santa Marta? ¿Y nunca volvió?",
+      "npcEn": "To Santa Marta? And he never came back?",
+      "intent": "Say no, he never came back.",
+      "accept": [
+        "No, nunca volvió.",
+        "No. Nunca volvió a Bogotá.",
+        "No, no volvió nunca."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "nunca",
+          "label": "never: nunca volvió"
+        }
+      ],
+      "focus": "g:negation-words",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Qué triste. ¿Y Hernando cómo está?",
+      "npcEn": "How sad. And how is Hernando?",
+      "intent": "Say he's very quiet: he practically isn't talking.",
+      "accept": [
+        "Está muy callado. Prácticamente no habla.",
+        "Prácticamente no dijo nada en todo el día.",
+        "Muy callado. Realmente no habla mucho hoy."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "[a-záéíóúñ]+mente\\b",
+          "flags": "i",
+          "label": "say how with a -mente word: sinceramente, realmente"
+        }
+      ],
+      "focus": "g:adverbs-mente",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Hernando sabe algo, Tomás. Mañana llamo a un amigo en Santa Marta.",
+      "npcEn": "Hernando knows something, Tomás. Tomorrow I'll call a friend in Santa Marta.",
+      "intent": "Thank her and say you're going to tell Vale everything now.",
+      "accept": [
+        "Gracias, Mariana. Ahora le cuento todo a Vale.",
+        "Mil gracias. Voy a contarle todo a Vale.",
+        "Gracias. Ahora mismo le cuento todo a Vale."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "le\\b[^.?!]*\\ba Vale",
+          "flags": "i",
+          "label": "say who twice: le cuento todo a Vale"
+        }
+      ],
+      "focus": "g:le-doubling",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:buen-clima",
+    "c:como-estas",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:me-conto-que",
+    "c:que-envidia",
+    "c:segun",
+    "c:tienes",
+    "c:voy-a",
+    "g:adverbs-mente",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:reported-past-basic",
+    "g:stem-boot",
+    "g:that-clauses",
+    "l:ahora",
+    "l:amigo",
+    "l:aquí",
+    "l:bien",
+    "l:buen",
+    "l:callado",
+    "l:calle",
+    "l:clima",
+    "l:contar",
+    "l:cómo",
+    "l:decir",
+    "l:delicioso",
+    "l:día",
+    "l:envidia",
+    "l:estar",
+    "l:feo",
+    "l:flor",
+    "l:hablar",
+    "l:hacer",
+    "l:hermano",
+    "l:hoy",
+    "l:ir",
+    "l:irse",
+    "l:llamar",
+    "l:llover",
+    "l:mamá",
+    "l:mañana",
+    "l:menor",
+    "l:pelearse",
+    "l:prácticamente",
+    "l:qué",
+    "l:realmente",
+    "l:saber",
+    "l:tener",
+    "l:triste",
+    "l:volver",
+    "p:aqui-ahi-alla",
+    "p:frequency-scale",
+    "p:hace-frio",
+    "p:indefinites-basic",
+    "p:ir-a-venir-de-place",
+    "p:mayor-menor",
+    "p:me-te-nos-objects",
+    "p:no-es-x-es-y",
+    "p:personal-a",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:se-reciproco",
+    "p:todos-los-dias"
+  ]
+}
