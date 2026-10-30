@@ -1,0 +1,224 @@
+{
+  "node": "g:acabar-de-ya-todavia",
+  "hook": {
+    "line": "Dinner at the café runs long. Hernando has just told his best story, Vale is still in the kitchen, and nobody has paid yet. To keep track of what just happened, what already happened and what hasn't happened yet, Spanish has a small, tidy kit.",
+    "es": "Hernando acaba de contar su mejor historia.",
+    "en": "Hernando has just told his best story."
+  },
+  "examples": [
+    {
+      "es": "Acabo de llegar.",
+      "en": "I've just arrived."
+    },
+    {
+      "es": "¿Acabas de llegar?",
+      "en": "Have you just arrived? (to a friend)"
+    },
+    {
+      "es": "Acabamos de comer.",
+      "en": "We've just eaten."
+    },
+    {
+      "es": "Mariana acaba de llamar.",
+      "en": "Mariana has just called."
+    },
+    {
+      "es": "¿Ya comiste?\nTodavía no.",
+      "en": "Have you eaten yet? (to a friend)\nNot yet."
+    },
+    {
+      "es": "Ya pagué la cuenta.",
+      "en": "I've already paid the bill."
+    },
+    {
+      "es": "Todavía no he terminado.",
+      "en": "I haven't finished yet."
+    },
+    {
+      "es": "Hernando ya no maneja taxi.",
+      "en": "Hernando doesn't drive a taxi any more."
+    },
+    {
+      "es": "Mariana todavía está en el café.",
+      "en": "Mariana is still at the café."
+    }
+  ],
+  "rule": "For something that has just happened, use *acabar de* in the present plus the infinitive: *Acabo de llegar*, I've just arrived. The tense is present, the meaning is a moment ago. Change only *acabo*: *acabas*, *acaba*, *acabamos*, *acaban*. The second verb never changes.\n\nThe other four you already know; here is how they sit with the past:\n*ya* + preterite: *¿Ya comiste?* Have you eaten yet? *Ya pagué.* I've already paid.\n*todavía no* + *he*: *Todavía no he terminado.* I haven't finished yet.\n*todavía* + present: still. *Todavía está aquí.*\n*ya no* + present: not any more. *Ya no maneja.*\n\nWhat disappears is English have and just. Spanish puts the meaning in *acabar de*, *ya* and *todavía*, which go before the verb.",
+  "smallPrint": "Teachers call *acabar de* + infinitive a verbal periphrasis: two verbs working as one. Careful with the past: *acabé de comer* means I finished eating, not I had just eaten.",
+  "readAndPick": [
+    {
+      "es": "Acabo de llegar.",
+      "options": [
+        "I'm about to arrive.",
+        "I've just arrived.",
+        "I arrived a long time ago."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Acabamos de comer.",
+      "options": [
+        "We've just eaten.",
+        "They've just eaten.",
+        "We're going to eat."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Todavía no he terminado.",
+      "options": [
+        "I've already finished.",
+        "I don't finish any more.",
+        "I haven't finished yet."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Ya no vivo en Toronto.",
+      "options": [
+        "I don't live in Toronto any more.",
+        "I still live in Toronto.",
+        "I haven't lived in Toronto yet."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hernando todavía vive en La Candelaria.",
+      "options": [
+        "Hernando doesn't live in La Candelaria any more.",
+        "Hernando still lives in La Candelaria.",
+        "Hernando has just moved to La Candelaria."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Ya llegó Mariana?",
+      "options": [
+        "Is Mariana still coming?",
+        "Has Mariana just called?",
+        "Has Mariana arrived yet?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Acaban de cerrar la tienda.",
+      "options": [
+        "They've just closed the shop.",
+        "They're about to close the shop.",
+        "I've just closed the shop."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ya terminamos de comer.",
+      "options": [
+        "We haven't finished eating yet.",
+        "We've already finished eating.",
+        "We still eat."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Todavía tomo tinto todos los días.",
+      "options": [
+        "I don't drink black coffee any more.",
+        "I've just had a black coffee.",
+        "I still drink black coffee every day."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tomás todavía no ha leído la carta.",
+      "options": [
+        "Tomás hasn't read the letter yet.",
+        "Tomás has just read the letter.",
+        "Tomás has already read the letter."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Acabo de ___.* (*llegar* or *llegué*) I've just arrived.",
+      "answer": "Acabo de llegar.",
+      "accept": [],
+      "why": "After *acabo de*, the second verb stays in the infinitive: *llegar*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *___ no he terminado.* (*Ya* or *Todavía*) I haven't finished yet.",
+      "answer": "Todavía no he terminado.",
+      "accept": [],
+      "why": "Not yet is *todavía no*; *ya no* would mean not any more."
+    },
+    {
+      "prompt": "We've just eaten.",
+      "answer": "Acabamos de comer.",
+      "accept": [],
+      "why": "Just happened: *acabamos de* plus the infinitive *comer*."
+    },
+    {
+      "prompt": "Ask a friend: Have you eaten yet?",
+      "answer": "¿Ya comiste?",
+      "accept": [
+        "¿Comiste ya?"
+      ],
+      "why": "In Colombia the everyday way is *ya* plus the preterite: *comiste*."
+    },
+    {
+      "prompt": "Hernando doesn't drive a taxi any more.",
+      "answer": "Hernando ya no maneja taxi.",
+      "accept": [
+        "Hernando ya no maneja un taxi."
+      ],
+      "why": "Not any more is *ya no* before the present: *maneja*."
+    },
+    {
+      "prompt": "Make it about they: *Mariana acaba de llamar.* (Mariana and Vale)",
+      "answer": "Mariana y Vale acaban de llamar.",
+      "accept": [],
+      "why": "Only *acaba* changes to *acaban*; *llamar* stays as it is."
+    },
+    {
+      "prompt": "Turn it around to not yet: *Ya pagué la cuenta.* (I haven't paid the bill yet.)",
+      "answer": "Todavía no he pagado la cuenta.",
+      "accept": [
+        "Todavía no pagué la cuenta."
+      ],
+      "why": "For not yet, Spanish likes *todavía no he* plus the participle: *pagado*."
+    },
+    {
+      "prompt": "Make it still instead of not any more: *Vale ya no trabaja en Medellín.* (Vale still works in Medellín.)",
+      "answer": "Vale todavía trabaja en Medellín.",
+      "accept": [],
+      "why": "Still is plain *todavía*, no *no*, before the present."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Acabo de llegué.",
+      "right": "Acabo de llegar.",
+      "why": "Almost. *Acabo de* carries the time; the second verb is always the infinitive."
+    },
+    {
+      "wrong": "Acabo llegar.",
+      "right": "Acabo de llegar.",
+      "why": "Close. You need the little *de*: *acabo de llegar*."
+    },
+    {
+      "wrong": "Acabé de llegar.",
+      "right": "Acabo de llegar.",
+      "why": "Nearly. For just happened, *acabar* stays in the present; *acabé de* means I finished doing something."
+    },
+    {
+      "wrong": "Ya no he comido.",
+      "right": "Todavía no he comido.",
+      "why": "Careful. Not yet is *todavía no*; *ya no* means not any more."
+    },
+    {
+      "wrong": "Hernando no maneja taxi más.",
+      "right": "Hernando ya no maneja taxi.",
+      "why": "English puts any more at the end; Spanish says *ya no* before the verb."
+    }
+  ],
+  "personal": "Write three true lines: something you've just done (*Acabo de…*), something you haven't done yet (*Todavía no he…*), and something you don't do any more (*Ya no…*)."
+}
