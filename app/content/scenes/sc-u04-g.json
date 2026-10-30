@@ -1,0 +1,202 @@
+{
+  "id": "sc-u04-g",
+  "unit": "u04",
+  "title": "A call from Toronto",
+  "brief": "You're Tomás. On Monday morning your old friend Laura calls from Toronto to hear about your weekend in Bogotá. Tell her what happened, in order, and ask about hers. She's a friend, so use tú.",
+  "spare": false,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "¡Hola, Tomás! Te llamo desde Toronto. ¿Cómo te fue el fin de semana?",
+      "npcEn": "Hi, Tomás! I'm calling you from Toronto. How did your weekend go?",
+      "intent": "Say it went really well, but you worked on Saturday and Sunday.",
+      "accept": [
+        "Me fue muy bien, pero trabajé el sábado y el domingo.",
+        "Muy bien, pero trabajé el sábado y el domingo.",
+        "Me fue muy bien. Trabajé el sábado y el domingo."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "trabajar",
+          "tense": "preterito",
+          "person": "yo",
+          "label": "I worked: trabajé"
+        }
+      ],
+      "focus": "g:preterite-ar",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Trabajaste el sábado y el domingo? ¿Y cómo fue?",
+      "npcEn": "You worked on Saturday and Sunday? And how was it?",
+      "intent": "Say first you went to the market, and then you opened the café.",
+      "accept": [
+        "Primero fui al mercado, y luego abrí el café.",
+        "Primero fui al mercado y luego abrí el café.",
+        "Primero fui a Paloquemao, y luego abrí el café."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "primero",
+          "label": "start the story with primero"
+        },
+        {
+          "type": "containsAny",
+          "words": [
+            "luego",
+            "después"
+          ],
+          "label": "then: luego, or después"
+        }
+      ],
+      "focus": "p:time-sequence-basic",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¡Uy! ¿Y vendieron algo?",
+      "npcEn": "Wow! And did you all sell anything?",
+      "intent": "Say yes, you all sold tinto on Saturday and Sunday.",
+      "accept": [
+        "Sí, vendimos tinto el sábado y el domingo.",
+        "Sí. Vendimos tinto el sábado y el domingo.",
+        "¡Sí! El sábado y el domingo vendimos tinto."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "vender",
+          "tense": "preterito",
+          "person": "nosotros",
+          "label": "we sold: vendimos"
+        }
+      ],
+      "focus": "g:preterite-er-ir",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¡Qué chévere! En Toronto, nada nuevo.",
+      "npcEn": "How great! In Toronto, nothing new.",
+      "intent": "Ask her what she did on the weekend.",
+      "accept": [
+        "¿Y tú qué hiciste el fin de semana?",
+        "¿Qué hiciste tú, Laura?",
+        "Y tú, ¿qué hiciste el sábado?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "verbForm",
+          "inf": "hacer",
+          "tense": "preterito",
+          "person": "tú",
+          "label": "you did: hiciste"
+        }
+      ],
+      "focus": "g:preterite-ser-ir-hacer",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Bien. El sábado fui al cine y el domingo comí con Ana. ¡Ah! Y la semana que viene voy a Bogotá. ¿Me esperas en el café?",
+      "npcEn": "Good. On Saturday I went to the cinema and on Sunday I ate with Ana. Oh! And next week I'm going to Bogotá. Will you wait for me at the café?",
+      "intent": "Say yes, of course, you'll wait for her at the café.",
+      "accept": [
+        "¡Claro! Te espero en el café.",
+        "Sí, claro. Te espero en el café, Laura.",
+        "Claro que sí. Te espero en el café."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bte espero\\b",
+          "flags": "i",
+          "label": "I'll wait for you: te espero"
+        }
+      ],
+      "focus": "p:me-te-nos-objects",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "¡Chévere! Bueno, Tomás, voy a trabajar. Chao.",
+      "npcEn": "Great! OK, Tomás, I'm going to work. Bye.",
+      "intent": "Thank her for calling and say bye.",
+      "accept": [
+        "Gracias por llamar, Laura. ¡Chao!",
+        "Mil gracias por llamar. Chao.",
+        "¡Chao, Laura! Gracias por llamar."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "gracias por",
+          "label": "thank for something: gracias por"
+        }
+      ],
+      "focus": "p:gracias-por",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:chao-nos-vemos",
+    "c:claro-listo",
+    "c:comi",
+    "c:como-te-fue",
+    "c:compre-trabaje",
+    "c:entonces-bueno",
+    "c:fui",
+    "c:hola-buenos-dias",
+    "c:que-chevere",
+    "c:que-hiciste",
+    "c:voy-a",
+    "g:gender-articles",
+    "g:ir-a-plans",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "l:abrir",
+    "l:bien",
+    "l:bueno",
+    "l:café",
+    "l:chévere",
+    "l:cine",
+    "l:claro",
+    "l:comer",
+    "l:cómo",
+    "l:domingo",
+    "l:esperar",
+    "l:fin",
+    "l:hacer",
+    "l:ir",
+    "l:llamar",
+    "l:mercado",
+    "l:nuevo",
+    "l:qué",
+    "l:semana",
+    "l:ser",
+    "l:sábado",
+    "l:tinto",
+    "l:trabajar",
+    "l:vender",
+    "l:venir",
+    "p:days-el-lunes",
+    "p:gracias-por",
+    "p:indefinites-basic",
+    "p:ir-a-venir-de-place",
+    "p:me-te-nos-objects",
+    "p:time-pasado-que-viene",
+    "p:time-sequence-basic"
+  ]
+}
