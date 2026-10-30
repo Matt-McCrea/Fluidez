@@ -2,19 +2,11 @@
   "id": "ch015",
   "unit": "u07",
   "title": "Joaquín, mi hermano",
-  "text": "«Joaquín, mi hermano:». Tomás lee la primera frase otra vez.\nTomás: ¿Hermano? ¿Rosa tenía un hermano?\nVale: Rosa nunca habló de un hermano. Nunca.\nHernando: Es el muchacho de la foto, mijo.\nTomás guarda la carta en el cuaderno.\nTomás: Hoy no puedo leer más.\nVale: Tomás, tienes cara de perro triste. ¿Dormiste bien?\nTomás: ¿En el hostel? Somos doce en un cuarto, y uno ronca toda la noche.\nHernando: Doña Gloria arrienda un cuarto, arriba de la panadería. Queda a dos cuadras.\nEsa tarde, Tomás y Vale tocan la puerta de doña Gloria. Ella abre con harina en las manos.\nGloria: ¡Siga, siga! Está en su casa. El cuarto es por acá.\nEl cuarto es pequeño. Hay una cama, una mesa, una lámpara y un balcón.\nGloria: El baño está al lado. La ducha funciona un día sí y dos días no. Y el patio es de todos.\nTomás: ¿Y cuánto es el arriendo?\nGloria: Seiscientos mil pesos al mes.\nTomás sale al balcón. Allá está la catedral. Y allá, en la esquina, está el café de Rosa.\nVale: Claro. Tú eres de acá, Tomás.\nTomás: Listo, doña Gloria. Lo tomo.\nMás tarde, en el café:\nSimón: ¡Siga, siga! ¡Está en su casa!\nHernando: ¿Y la ducha, mijo?\nTomás: Un día sí y dos días no. Pero tengo balcón.",
+  "text": "«Joaquín, mi hermano:». Tomás lee la frase otra vez.\nTomás: ¿Hermano? ¿Rosa tenía un hermano?\nVale: Rosa nunca habló de un hermano.\nHernando: Es el muchacho de la foto, mijo.\nTomás: Hoy no puedo leer más.\nVale: Tomás, ¿dormiste bien?\nTomás: ¿En el hostel? Somos doce en un cuarto, y uno ronca toda la noche.\nHernando: Doña Gloria arrienda un cuarto, arriba de la panadería.\nEsa tarde, doña Gloria abre la puerta con harina en las manos.\nGloria: ¡Siga, siga! Está en su casa.\nEl cuarto es pequeño. Hay una cama, una mesa y un balcón.\nGloria: El baño está al lado. La ducha funciona un día sí y dos días no.\nTomás: ¿Y cuánto es?\nGloria: Seiscientos mil pesos al mes.\nTomás sale al balcón. Allá está la catedral. Y allá, en la esquina, está el café de Rosa.\nVale: Tú eres de acá, Tomás.\nTomás: Listo. Lo tomo.\nMás tarde, en el café:\nSimón: ¡Siga, siga! ¡Está en su casa!\nHernando: ¿Y la ducha, mijo?\nTomás: Un día sí y dos días no. Pero tengo balcón.",
   "gloss": [
     {
       "es": "«Joaquín, mi hermano:»",
       "en": "\"Joaquín, my brother:\""
-    },
-    {
-      "es": "guarda",
-      "en": "puts away"
-    },
-    {
-      "es": "Tienes cara de perro triste",
-      "en": "You look like a sad dog"
     },
     {
       "es": "¿Dormiste bien?",
@@ -55,10 +47,6 @@
     {
       "es": "Lo tomo.",
       "en": "I'll take it."
-    },
-    {
-      "es": "tocan la puerta",
-      "en": "knock on the door"
     }
   ],
   "questions": [
@@ -83,7 +71,7 @@
       "answer": 0
     },
     {
-      "q": "Why does Tomás look so tired?",
+      "q": "Why didn't Tomás sleep well?",
       "options": [
         "He shares a room with eleven men, and one of them snores all night",
         "He worked all night in the café",
@@ -95,7 +83,7 @@
     {
       "q": "¿Qué hay en el cuarto de doña Gloria?",
       "options": [
-        "Una cama, una mesa, una lámpara y un balcón",
+        "Una cama, una mesa y un balcón",
         "Un sofá y una televisión",
         "Doce camas"
       ],
@@ -135,9 +123,9 @@
       "answer": 0
     },
     {
-      "q": "¿Dónde está la casa de doña Gloria?",
+      "q": "¿Dónde está el cuarto de doña Gloria?",
       "options": [
-        "A dos cuadras, arriba de la panadería",
+        "Arriba de la panadería",
         "En Toronto",
         "En el café de Rosa"
       ],
@@ -150,11 +138,9 @@
     "c:cuanto-cuesta",
     "c:esta-en-su-casa",
     "c:hay",
-    "c:por-aca",
     "c:puedo",
     "c:siga",
     "c:tengo",
-    "c:tienes",
     "g:estar-location-states",
     "g:gender-articles",
     "g:hay-vs-esta",
@@ -185,13 +171,8 @@
     "l:bien",
     "l:café",
     "l:cama",
-    "l:cara",
-    "l:carta",
     "l:casa",
     "l:catedral",
-    "l:claro",
-    "l:cuaderno",
-    "l:cuadra",
     "l:cuánto",
     "l:dormir",
     "l:ducha",
@@ -201,7 +182,6 @@
     "l:foto",
     "l:frase",
     "l:funcionar",
-    "l:guardar",
     "l:hablar",
     "l:harina",
     "l:hermano",
@@ -209,7 +189,6 @@
     "l:lado",
     "l:leer",
     "l:listo",
-    "l:lámpara",
     "l:mano",
     "l:mes",
     "l:mesa",
@@ -217,22 +196,17 @@
     "l:muchacho",
     "l:noche",
     "l:panadería",
-    "l:patio",
     "l:pequeño",
-    "l:perro",
     "l:peso",
     "l:poder",
     "l:puerta",
-    "l:quedar",
     "l:ronca",
     "l:salir",
     "l:seguir",
     "l:ser",
     "l:tarde",
     "l:tener",
-    "l:tocar",
     "l:tomar",
-    "l:triste",
     "l:vez"
   ]
 }
