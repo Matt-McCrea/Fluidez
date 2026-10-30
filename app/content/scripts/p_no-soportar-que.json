@@ -1,0 +1,122 @@
+{
+  "node": "p:no-soportar-que",
+  "hook": {
+    "line": "Don Hernando keeps a long mental list of things he cannot stand, and the noise on the street is at the top. Start your own list.",
+    "es": "No soporto el ruido.",
+    "en": "I can't stand the noise."
+  },
+  "examples": [
+    { "es": "No soporto que me interrumpan.", "en": "I can't stand being interrupted." },
+    { "es": "Odio hacer fila.", "en": "I hate standing in line." },
+    { "es": "Mariana no soporta que la interrumpan.", "en": "Mariana can't stand being interrupted." },
+    { "es": "¿No soportas que te vigilen?", "en": "Can't you stand it when they watch you? (to a friend)" },
+    { "es": "No soporto esperar tanto.", "en": "I can't stand waiting so long." },
+    { "es": "Odio que Altamira llame cada día.", "en": "I hate that Altamira calls every day." }
+  ],
+  "rule": "Two ways to say it: *no soporto* and *odio*. Both take a noun, an infinitive, or *que* plus the wish form.\n\n*No soporto el ruido.* A noun.\n*Odio hacer fila.* Your own action: infinitive.\n*No soporto que me interrumpan.* Someone else's action: *que* plus the wish form.\n\n*Soportar* always comes with *no*. And it's absolute: you can't stand it or you can. For a milder feeling, use *me molesta*.",
+  "smallPrint": "*Soportar* is \"to bear\", so *no soporto* is literally \"I don't bear\". In some places you'll also hear *no aguanto*.",
+  "readAndPick": [
+    {
+      "es": "No soporto el ruido.",
+      "options": ["I can't hear the noise.", "I can't stand the noise.", "The noise can't stand me."],
+      "answer": 1
+    },
+    {
+      "es": "Odio hacer fila.",
+      "options": ["I hate standing in line.", "I hate it that you stand in line."],
+      "answer": 0
+    },
+    {
+      "es": "No soporto que me interrumpan.",
+      "options": ["I can't stand interrupting people.", "I can't stand it that I interrupt them.", "I can't stand being interrupted."],
+      "answer": 2
+    },
+    {
+      "es": "Mariana no soporta que la interrumpan.",
+      "options": ["Mariana can't stand being interrupted.", "Mariana can't stand interrupting people."],
+      "answer": 0
+    },
+    {
+      "es": "¿No soportas que te vigilen?",
+      "options": ["Can't you stand watching them?", "Can't he stand being watched?", "Can't you stand it when they watch you? (to a friend)"],
+      "answer": 2
+    },
+    {
+      "es": "No soporto esperar tanto.",
+      "options": ["I can't stand it that they wait so long.", "I can't stand waiting so long."],
+      "answer": 1
+    },
+    {
+      "es": "Odio que Altamira llame cada día.",
+      "options": ["I hate that Altamira calls every day.", "Altamira hates calling every day.", "I hate calling every day."],
+      "answer": 0
+    },
+    {
+      "es": "No soportamos el ruido.",
+      "options": ["I can't stand the noise.", "They can't stand the noise.", "We can't stand the noise."],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *interrumpen* or *interrumpan* and type the whole sentence: *No soporto que me ___.*",
+      "answer": "No soporto que me interrumpan.",
+      "accept": [],
+      "why": "After *no soporto que*, the verb takes the wish form: *interrumpan*."
+    },
+    {
+      "prompt": "Type in Spanish: I can't stand the noise.",
+      "answer": "No soporto el ruido.",
+      "accept": [],
+      "why": "A noun follows straight after: no *que*, no *de*."
+    },
+    {
+      "prompt": "Type in Spanish: I hate standing in line.",
+      "answer": "Odio hacer fila.",
+      "accept": ["No soporto hacer fila."],
+      "why": "Your own action, so just the infinitive. *Odio* needs no *no*."
+    },
+    {
+      "prompt": "Type in Spanish: Mariana can't stand being interrupted.",
+      "answer": "Mariana no soporta que la interrumpan.",
+      "accept": [],
+      "why": "*Soportar* ends in *-a* for Mariana, and *la* is her."
+    },
+    {
+      "prompt": "Make it about all of us: *No soporto el ruido.*",
+      "answer": "No soportamos el ruido.",
+      "accept": [],
+      "why": "For *we*, the verb ends in *-amos*."
+    },
+    {
+      "prompt": "Type in Spanish: I can't stand waiting so long.",
+      "answer": "No soporto esperar tanto.",
+      "accept": ["Odio esperar tanto."],
+      "why": "It's your own action, so the infinitive follows."
+    },
+    {
+      "prompt": "Type in Spanish: I hate that Altamira calls every day.",
+      "answer": "Odio que Altamira llame cada día.",
+      "accept": ["No soporto que Altamira llame cada día."],
+      "why": "Altamira acts, so *que* plus the wish form: *llame*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No soporto que me interrumpen.",
+      "right": "No soporto que me interrumpan.",
+      "why": "Almost. After *no soporto que*, the verb takes the wish form: *interrumpan*."
+    },
+    {
+      "wrong": "No soporto un poco el ruido.",
+      "right": "No soporto el ruido.",
+      "why": "*No soporto* is absolute, so you can't dial it down with *un poco*. For mild, use *me molesta*."
+    },
+    {
+      "wrong": "Odio que espero tanto.",
+      "right": "Odio esperar tanto.",
+      "why": "Almost. When you're the one acting, drop *que* and use the infinitive."
+    }
+  ],
+  "personal": "Tell us one thing you can't stand and one thing you hate. For example: *No soporto el ruido.* and *Odio esperar tanto.*"
+}

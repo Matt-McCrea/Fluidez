@@ -1,0 +1,140 @@
+{
+  "node": "g:subj-emotion",
+  "hook": {
+    "line": "Altamira wants to buy the whole block, and Tomás has feelings about it. You already know how to say you're glad someone came. Now you can say how anything someone else does lands on you.",
+    "es": "Me molesta que Altamira quiera comprar la cuadra.",
+    "en": "It bothers me that Altamira wants to buy the block."
+  },
+  "examples": [
+    { "es": "Me molesta que Altamira compre la cuadra.", "en": "It bothers me that Altamira is buying the block." },
+    { "es": "Me gusta que Vale cocine aquí.", "en": "I like it that Vale cooks here." },
+    { "es": "¿Te molesta que Vale cierre temprano?", "en": "Does it bother you that Vale closes early? (to a friend)" },
+    { "es": "No me gusta que Simón hable tanto.", "en": "I don't like it that Simón talks so much." },
+    { "es": "A Tomás le gusta que todos vengan.", "en": "Tomás likes it that everyone comes." },
+    { "es": "¡Qué alivio que estés bien!", "en": "What a relief that you're OK! (to a friend)" },
+    { "es": "Me gusta cocinar para todos.", "en": "I like cooking for everyone." },
+    { "es": "Me imagino que Vale está cansada.", "en": "I imagine Vale is tired." }
+  ],
+  "rule": "You already know the shape: a feeling, then *que*, then the wish form. *Me alegra que estés aquí.* It works for every feeling about what someone else does.\n\nThe feeling works like *gustar*. What happens is the thing that bothers or pleases you, and *me, te, le, nos, les* say who feels it: *A Tomás le gusta que todos vengan.*\n\nAfter *que* the verb takes the wish form (*compre*, *cocine*, *estés*), even when the event is real. English just says \"buys\".\n\nIf you are the one acting, drop *que* and use the infinitive: *Me gusta cocinar.*\n\nNot every *que* is a feeling. *Me imagino que Vale está cansada* is a guess, so the verb stays plain: *está*.\n\nSoon you'll add *me da miedo que*, *me sorprende que* and *siento que*. Same shape.",
+  "smallPrint": "Teachers call this the subjunctive after verbs of emotion. The rule of thumb: a feeling about someone else's action takes *que* plus the wish form, and the same person feeling and acting takes the infinitive.",
+  "readAndPick": [
+    {
+      "es": "Me gusta que Vale cocine aquí.",
+      "options": ["I like it that Vale cooks here.", "I like cooking here.", "Vale likes cooking here."],
+      "answer": 0
+    },
+    {
+      "es": "Me gusta cocinar aquí.",
+      "options": ["I like it that you cook here.", "I like cooking here."],
+      "answer": 1
+    },
+    {
+      "es": "A Tomás le molesta que Vale cierre temprano.",
+      "options": ["It bothers Vale that Tomás closes early.", "It bothers Tomás that Vale closes early.", "It bothers Tomás to close early."],
+      "answer": 1
+    },
+    {
+      "es": "Nos molesta que haya tanto ruido.",
+      "options": ["It bothers me that there's so much noise.", "We are making so much noise.", "It bothers us that there's so much noise."],
+      "answer": 2
+    },
+    {
+      "es": "¿Te gusta que Vale te llame?",
+      "options": ["Does Vale like it that you call her?", "Do you like it that Vale calls you? (to a friend)", "Do you like calling Vale? (to a friend)"],
+      "answer": 1
+    },
+    {
+      "es": "¡Qué alivio que estés bien!",
+      "options": ["What a relief that you're OK! (to a friend)", "What a relief that I'm OK!", "What a relief that she's OK!"],
+      "answer": 0
+    },
+    {
+      "es": "No me gusta que Simón hable tanto.",
+      "options": ["Simón doesn't like talking so much.", "I don't like talking so much.", "I don't like it that Simón talks so much."],
+      "answer": 2
+    },
+    {
+      "es": "Me molesta esperar tanto.",
+      "options": ["It bothers me to wait so long.", "It bothers me that you wait so long. (to a friend)"],
+      "answer": 0
+    },
+    {
+      "es": "Me imagino que Vale está cansada.",
+      "options": ["It bothers me that Vale is tired.", "I imagine Vale is tired.", "I'm glad Vale is tired."],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *compra* or *compre* and type the whole sentence: *Me molesta que Altamira ___ la cuadra.* (It bothers me that Altamira is buying the block.)",
+      "answer": "Me molesta que Altamira compre la cuadra.",
+      "accept": [],
+      "why": "A feeling about what someone else does takes the wish form, *compre*."
+    },
+    {
+      "prompt": "Pick *estás* or *estés* and type the whole sentence, to a friend: *¡Qué alivio que ___ bien!*",
+      "answer": "¡Qué alivio que estés bien!",
+      "accept": [],
+      "why": "After a feeling, *estar* takes the wish form, and for *tú* it ends in *-s*: *estés*."
+    },
+    {
+      "prompt": "Type in Spanish: I like cooking for everyone.",
+      "answer": "Me gusta cocinar para todos.",
+      "accept": [],
+      "why": "You are the one cooking, so no *que*: just the infinitive."
+    },
+    {
+      "prompt": "Type in Spanish: I don't like it that Simón talks so much.",
+      "answer": "No me gusta que Simón hable tanto.",
+      "accept": [],
+      "why": "Simón is the one talking, so *que* plus the wish form: *hable*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Does it bother you that Vale closes early?",
+      "answer": "¿Te molesta que Vale cierre temprano?",
+      "accept": [],
+      "why": "*Te* says it bothers you, and *cierre* is the wish form of *cerrar*."
+    },
+    {
+      "prompt": "Make it about Tomás: *Me molesta que Vale cierre temprano.*",
+      "answer": "A Tomás le molesta que Vale cierre temprano.",
+      "accept": [],
+      "why": "Swap *me* for *le* and name who feels it with *A Tomás*."
+    },
+    {
+      "prompt": "Make it about all of us: *Me gusta que Vale cocine aquí.*",
+      "answer": "Nos gusta que Vale cocine aquí.",
+      "accept": [],
+      "why": "For *we*, *me* becomes *nos*; the rest stays the same."
+    },
+    {
+      "prompt": "Type in Spanish: I imagine Vale is tired.",
+      "answer": "Me imagino que Vale está cansada.",
+      "accept": [],
+      "why": "Imagining is a guess, not a feeling, so the verb stays plain: *está*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me molesta que Altamira compra la cuadra.",
+      "right": "Me molesta que Altamira compre la cuadra.",
+      "why": "Almost. After a feeling about someone else's action, the verb takes the wish form: *compre*."
+    },
+    {
+      "wrong": "Me gusta que cocino para todos.",
+      "right": "Me gusta cocinar para todos.",
+      "why": "Almost. When you are the one cooking, there's no *que*: the infinitive does the job."
+    },
+    {
+      "wrong": "Yo molesto que Altamira compre la cuadra.",
+      "right": "Me molesta que Altamira compre la cuadra.",
+      "why": "In English you are the one bothered. In Spanish the event is what bothers, so you become *me*."
+    },
+    {
+      "wrong": "Me imagino que Vale esté cansada.",
+      "right": "Me imagino que Vale está cansada.",
+      "why": "Almost. *Me imagino que* is a guess, not a feeling, so the plain verb stays."
+    }
+  ],
+  "personal": "Tell us one thing someone does that you like, and one that bothers you. For example: *Me gusta que mis amigos me llamen.* and *Me molesta que nadie me diga nada.*"
+}

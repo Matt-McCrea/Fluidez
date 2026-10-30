@@ -1,0 +1,122 @@
+{
+  "node": "p:estar-harto-de",
+  "hook": {
+    "line": "Everyone in the café has reached the same point this week: enough is enough. Here is how people say it without shouting.",
+    "es": "Estoy harto de esperar.",
+    "en": "I'm fed up with waiting. (a man speaking)"
+  },
+  "examples": [
+    { "es": "Estoy harta del ruido.", "en": "I'm fed up with the noise. (a woman speaking)" },
+    { "es": "Estoy harto de esperar.", "en": "I'm fed up with waiting. (a man speaking)" },
+    { "es": "Don Hernando está harto de que nadie lo escuche.", "en": "Don Hernando is fed up that nobody listens to him." },
+    { "es": "¿Estás harta de esperar?", "en": "Are you fed up with waiting? (to a woman)" },
+    { "es": "Estamos hartos de Altamira.", "en": "We're fed up with Altamira." },
+    { "es": "Estoy cansado de esperar.", "en": "I'm sick of waiting. (a man speaking)" }
+  ],
+  "rule": "*Estar harto de* is a state, so it uses *estar*. After *de* put a noun, an infinitive, or *que* plus the wish form.\n\n*Estoy harta del ruido.* *Estoy harto de esperar.*\n\n*Harto* behaves like any adjective: *harto, harta, hartos, hartas*, matching who is speaking. And *de + el* becomes *del*.\n\n*Estar cansado de* works the same and is a little softer. Context tells you whether it means sick of or just tired from.",
+  "smallPrint": "Among friends in Colombia you'll hear *mamado de* too. Good to recognise, not one to start with.",
+  "readAndPick": [
+    {
+      "es": "Estoy harta del ruido.",
+      "options": ["I'm fed up with the noise. (a man speaking)", "I'm fed up with the noise. (a woman speaking)"],
+      "answer": 1
+    },
+    {
+      "es": "Estoy harto de esperar.",
+      "options": ["I'm fed up with waiting. (a woman speaking)", "I'm fed up with waiting. (a man speaking)"],
+      "answer": 1
+    },
+    {
+      "es": "Estamos hartos de Altamira.",
+      "options": ["I'm fed up with Altamira.", "He's fed up with Altamira.", "We're fed up with Altamira."],
+      "answer": 2
+    },
+    {
+      "es": "Don Hernando está harto de que nadie lo escuche.",
+      "options": ["Don Hernando is fed up that nobody listens to him.", "Don Hernando is fed up with listening to nobody."],
+      "answer": 0
+    },
+    {
+      "es": "¿Estás harta de esperar?",
+      "options": ["Is she fed up with waiting?", "Are you fed up with waiting? (to a woman)", "Am I fed up with waiting?"],
+      "answer": 1
+    },
+    {
+      "es": "No estoy harto de ti.",
+      "options": ["You're not fed up with me.", "He's not fed up with you.", "I'm not fed up with you."],
+      "answer": 2
+    },
+    {
+      "es": "Estoy cansado de esperar.",
+      "options": ["I'm sick of waiting. (a man speaking)", "I'm sick of waiting. (a woman speaking)"],
+      "answer": 0
+    },
+    {
+      "es": "Mariana está harta de que la interrumpan.",
+      "options": ["Mariana is fed up with interrupting people.", "Mariana is fed up with being interrupted."],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "A woman speaking. Pick *harto* or *harta* and type the whole sentence: *Estoy ___ del ruido.*",
+      "answer": "Estoy harta del ruido.",
+      "accept": [],
+      "why": "A woman speaking uses the feminine ending: *harta*."
+    },
+    {
+      "prompt": "Type in Spanish (a man speaking): I'm fed up with waiting.",
+      "answer": "Estoy harto de esperar.",
+      "accept": ["Estoy cansado de esperar."],
+      "why": "A man speaking uses *harto*, and the infinitive follows *de*."
+    },
+    {
+      "prompt": "Type in Spanish: We're fed up with Altamira.",
+      "answer": "Estamos hartos de Altamira.",
+      "accept": ["Estamos cansados de Altamira."],
+      "why": "For *we*, *estar* becomes *estamos* and *harto* becomes plural: *hartos*."
+    },
+    {
+      "prompt": "Ask a woman: *Estoy harta de esperar.*",
+      "answer": "¿Estás harta de esperar?",
+      "accept": [],
+      "why": "For *tú*, *estoy* becomes *estás*. *Harta* stays feminine."
+    },
+    {
+      "prompt": "Type in Spanish (a man speaking): I'm fed up with the noise.",
+      "answer": "Estoy harto del ruido.",
+      "accept": [],
+      "why": "*De* plus *el* joins into *del*."
+    },
+    {
+      "prompt": "Type in Spanish: Don Hernando is fed up that nobody listens to him.",
+      "answer": "Don Hernando está harto de que nadie lo escuche.",
+      "accept": [],
+      "why": "Someone else's action takes *que* plus the wish form: *escuche*."
+    },
+    {
+      "prompt": "Make it negative: *Estoy harto de esperar.*",
+      "answer": "No estoy harto de esperar.",
+      "accept": [],
+      "why": "*No* goes right before *estoy*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Soy harto de esperar.",
+      "right": "Estoy harto de esperar.",
+      "why": "Almost. Being fed up is how you feel right now, so Spanish uses *estar*."
+    },
+    {
+      "wrong": "Estoy harta de el ruido.",
+      "right": "Estoy harta del ruido.",
+      "why": "Almost. *De* and *el* always join: *del*."
+    },
+    {
+      "wrong": "Estoy harto esperar.",
+      "right": "Estoy harto de esperar.",
+      "why": "Almost. Spanish needs *de* between *harto* and what you're fed up with."
+    }
+  ],
+  "personal": "Tell us something you're fed up with. For example: *Estoy harto de esperar el bus.* or *Estoy harta del ruido.* Use *harto* or *harta* to match you."
+}

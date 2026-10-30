@@ -1,0 +1,122 @@
+{
+  "node": "p:me-da-rabia-que",
+  "hook": {
+    "line": "Mariana has been interrupted three times in one meeting, and she is not finished telling you about it. Here is how she says it.",
+    "es": "Me da rabia que me interrumpan.",
+    "en": "It makes me mad that they interrupt me."
+  },
+  "examples": [
+    { "es": "Me da rabia que Altamira compre todo.", "en": "It makes me mad that Altamira buys everything." },
+    { "es": "Me da rabia perder el bus.", "en": "Missing the bus makes me mad." },
+    { "es": "A Mariana le da mucha rabia que la interrumpan.", "en": "It makes Mariana really mad that they interrupt her." },
+    { "es": "¿Te da rabia que no te escuchen?", "en": "Does it make you mad that they don't listen to you? (to a friend)" },
+    { "es": "Nos da rabia que nadie nos diga nada.", "en": "It makes us mad that nobody tells us anything." },
+    { "es": "¡Qué rabia!", "en": "How infuriating!" }
+  ],
+  "rule": "*Rabia* is a noun, so Spanish doesn't say \"I am mad\" here. It says the thing gives you anger: *me da rabia*.\n\nSomeone else's action: *que* plus the wish form. *Me da rabia que me interrumpan.*\nYour own action: the infinitive. *Me da rabia perder el bus.*\n\nIt's stronger than *me molesta*. Add *mucha* or *muchísima* to turn it up, or just say *¡Qué rabia!* on its own.",
+  "smallPrint": "Very common in Colombia. *Rabia* is anger at everyday strength, so it fits a missed bus as well as a real injustice.",
+  "readAndPick": [
+    {
+      "es": "Me da rabia perder el bus.",
+      "options": ["Missing the bus makes me mad.", "It makes me mad that you miss the bus."],
+      "answer": 0
+    },
+    {
+      "es": "Me da rabia que pierdas el bus.",
+      "options": ["Missing the bus makes me mad.", "It makes me mad that I miss the bus.", "It makes me mad that you miss the bus. (to a friend)"],
+      "answer": 2
+    },
+    {
+      "es": "A Mariana le da rabia que la interrumpan.",
+      "options": ["It makes me mad that Mariana interrupts them.", "It makes Mariana mad that they interrupt her.", "Mariana is mad about interrupting."],
+      "answer": 1
+    },
+    {
+      "es": "Nos da rabia que nadie nos diga nada.",
+      "options": ["It makes us mad that nobody tells us anything.", "It makes me mad that nobody tells me anything.", "It makes them mad that nobody tells them anything."],
+      "answer": 0
+    },
+    {
+      "es": "¿Te da rabia que no te escuchen?",
+      "options": ["Does it make me mad that you don't listen?", "Does it make you mad that they don't listen to you? (to a friend)"],
+      "answer": 1
+    },
+    {
+      "es": "¡Qué rabia!",
+      "options": ["What a relief!", "How embarrassing!", "How infuriating!"],
+      "answer": 2
+    },
+    {
+      "es": "Me da rabia que Altamira compre todo.",
+      "options": ["It makes me mad that Altamira buys everything.", "Altamira is mad that I buy everything.", "Buying everything makes me mad."],
+      "answer": 0
+    },
+    {
+      "es": "Me da rabia esperar tanto.",
+      "options": ["It makes me mad that you wait so long.", "Waiting so long makes me mad."],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *interrumpen* or *interrumpan* and type the whole sentence: *Me da rabia que me ___.*",
+      "answer": "Me da rabia que me interrumpan.",
+      "accept": [],
+      "why": "After *me da rabia que*, the verb takes the wish form: *interrumpan*."
+    },
+    {
+      "prompt": "Type in Spanish: Missing the bus makes me mad.",
+      "answer": "Me da rabia perder el bus.",
+      "accept": [],
+      "why": "It's your own action, so no *que*: just the infinitive."
+    },
+    {
+      "prompt": "Type in Spanish: It makes me mad that Altamira buys everything.",
+      "answer": "Me da rabia que Altamira compre todo.",
+      "accept": [],
+      "why": "Altamira acts, so *que* plus the wish form: *compre*."
+    },
+    {
+      "prompt": "Make it about all of us: *Me da rabia que nadie me diga nada.*",
+      "answer": "Nos da rabia que nadie nos diga nada.",
+      "accept": [],
+      "why": "For *we*, both little words change: *me* becomes *nos*, twice."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Does it make you mad that they don't listen to you?",
+      "answer": "¿Te da rabia que no te escuchen?",
+      "accept": [],
+      "why": "*Te* is you, and *escuchen* is the wish form for *ellos*."
+    },
+    {
+      "prompt": "Turn it up: *Me da rabia perder el bus.* (it makes me really, really mad)",
+      "answer": "Me da muchísima rabia perder el bus.",
+      "accept": [],
+      "why": "*Muchísima* goes before *rabia* and agrees with it."
+    },
+    {
+      "prompt": "Type in Spanish: How infuriating!",
+      "answer": "¡Qué rabia!",
+      "accept": [],
+      "why": "The bare reaction needs nothing else."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me da rabia que me interrumpen.",
+      "right": "Me da rabia que me interrumpan.",
+      "why": "Almost. After *me da rabia que*, the verb takes the wish form: *interrumpan*."
+    },
+    {
+      "wrong": "Me da rabia que perder el bus.",
+      "right": "Me da rabia perder el bus.",
+      "why": "Almost. When you're the one acting, drop *que* and use the infinitive."
+    },
+    {
+      "wrong": "Yo doy rabia que Altamira compre todo.",
+      "right": "Me da rabia que Altamira compre todo.",
+      "why": "In English you're the one who is mad. In Spanish the event gives you the anger, so you become *me*."
+    }
+  ],
+  "personal": "Tell us something that makes you mad. For example: *Me da rabia esperar tanto.* or *Me da rabia que nadie me diga nada.*"
+}

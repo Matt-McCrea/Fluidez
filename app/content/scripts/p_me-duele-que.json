@@ -1,0 +1,122 @@
+{
+  "node": "p:me-duele-que",
+  "hook": {
+    "line": "Some things hurt, and it has nothing to do with your body. Don Hernando knows this one well whenever the talk turns to Rosa.",
+    "es": "Me duele que Rosa no esté aquí.",
+    "en": "It hurts that Rosa isn't here."
+  },
+  "examples": [
+    { "es": "Me duele que Altamira diga eso de Rosa.", "en": "It hurts that Altamira says that about Rosa." },
+    { "es": "Me duele no poder ayudarte.", "en": "It hurts not to be able to help you. (to a friend)" },
+    { "es": "Me duele mucho que Rosa no esté.", "en": "It hurts me a lot that Rosa isn't here." },
+    { "es": "¿Te duele que Tomás no hable con ellos?", "en": "Does it hurt you that Tomás doesn't talk to them? (to a friend)" },
+    { "es": "A Vale le duele que don Hernando no venga.", "en": "It hurts Vale that don Hernando isn't coming." },
+    { "es": "Me duele la cabeza.", "en": "My head hurts." }
+  ],
+  "rule": "It's the same backwards grammar as *me duele la cabeza*: what hurts is the subject, and *me, te, le, nos* say who feels it.\n\nSomeone else's action: *que* plus the wish form. *Me duele que no me hable.*\nYour own inability: the infinitive. *Me duele no poder ayudarte.*\n\nWith *que* it's always *duele*, never *duelen*. It's heavier than *me da pena*: it's about hurt feelings, not just sadness.",
+  "smallPrint": "Teachers still call *doler* a *gustar*-type verb, even when the pain is emotional.",
+  "readAndPick": [
+    {
+      "es": "Me duele no poder ayudarte.",
+      "options": ["It hurts that you can't help me.", "It hurts me not to be able to help you.", "It hurts that she can't help you."],
+      "answer": 1
+    },
+    {
+      "es": "Me duele que no puedas ayudarme.",
+      "options": ["It hurts that you can't help me. (to a friend)", "It hurts me not to be able to help you.", "It hurts that she can't help me."],
+      "answer": 0
+    },
+    {
+      "es": "Me duele que Vale no me hable.",
+      "options": ["It hurts that I don't talk to Vale.", "It hurts Vale not to talk to me.", "It hurts that Vale doesn't talk to me."],
+      "answer": 2
+    },
+    {
+      "es": "A Vale le duele que don Hernando no venga.",
+      "options": ["It hurts don Hernando that Vale isn't coming.", "It hurts Vale that don Hernando isn't coming."],
+      "answer": 1
+    },
+    {
+      "es": "¿Te duele que Tomás no hable con ellos?",
+      "options": ["Does it hurt Tomás that you don't talk to them?", "Does Tomás hurt you?", "Does it hurt you that Tomás doesn't talk to them? (to a friend)"],
+      "answer": 2
+    },
+    {
+      "es": "Nos duele que Rosa no esté.",
+      "options": ["It hurts me that Rosa isn't here.", "It hurts us that Rosa isn't here.", "It hurts Rosa that we aren't here."],
+      "answer": 1
+    },
+    {
+      "es": "Me duele no verte.",
+      "options": ["It hurts me not to see you. (to a friend)", "It hurts that you don't see me.", "It hurts that I don't see her."],
+      "answer": 0
+    },
+    {
+      "es": "Me duele que Altamira diga eso de Rosa.",
+      "options": ["It hurts Altamira to say that about Rosa.", "It hurts that Altamira says that about Rosa."],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *dice* or *diga* and type the whole sentence: *Me duele que Altamira ___ eso de Rosa.*",
+      "answer": "Me duele que Altamira diga eso de Rosa.",
+      "accept": [],
+      "why": "A feeling about someone else's action takes the wish form: *diga*."
+    },
+    {
+      "prompt": "Type in Spanish: It hurts not to be able to help you. (to a friend)",
+      "answer": "Me duele no poder ayudarte.",
+      "accept": [],
+      "why": "It's your own inability, so no *que*: just *no poder*."
+    },
+    {
+      "prompt": "Type in Spanish: It hurts me a lot that Rosa isn't here.",
+      "answer": "Me duele mucho que Rosa no esté aquí.",
+      "accept": ["Me duele mucho que Rosa no esté."],
+      "why": "*Mucho* goes right after *duele*, and *esté* is the wish form of *estar*."
+    },
+    {
+      "prompt": "Make it about Vale: *Me duele que don Hernando no venga.*",
+      "answer": "A Vale le duele que don Hernando no venga.",
+      "accept": [],
+      "why": "*Me* becomes *le*, and *A Vale* says who feels it."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Does it hurt you that Tomás doesn't talk to them?",
+      "answer": "¿Te duele que Tomás no hable con ellos?",
+      "accept": [],
+      "why": "*Te* is you, and *hable* is the wish form of *hablar*."
+    },
+    {
+      "prompt": "Make it about all of us: *Me duele que Rosa no esté.*",
+      "answer": "Nos duele que Rosa no esté.",
+      "accept": [],
+      "why": "For *we*, *me* becomes *nos*; *duele* stays the same."
+    },
+    {
+      "prompt": "Type in Spanish: It hurts me not to see you. (to a friend)",
+      "answer": "Me duele no verte.",
+      "accept": [],
+      "why": "Your own action, so the infinitive, and *te* attaches to the end: *verte*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me duele que no puedo ayudarte.",
+      "right": "Me duele no poder ayudarte.",
+      "why": "Almost. When it's your own inability, there's no *que*: use the infinitive."
+    },
+    {
+      "wrong": "Yo duelo que Altamira diga eso de Rosa.",
+      "right": "Me duele que Altamira diga eso de Rosa.",
+      "why": "The event is what hurts, so you become *me* and the verb is *duele*."
+    },
+    {
+      "wrong": "Me duele que Altamira dice eso de Rosa.",
+      "right": "Me duele que Altamira diga eso de Rosa.",
+      "why": "Almost. After *me duele que*, the verb takes the wish form: *diga*."
+    }
+  ],
+  "personal": "Tell us about something someone does, or doesn't do, that hurts. For example: *Me duele que mis amigos no me llamen.* or *Me duele no ver a mi familia.*"
+}
