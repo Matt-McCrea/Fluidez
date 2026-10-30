@@ -1,0 +1,314 @@
+{
+  "id": "ch111",
+  "unit": "u37",
+  "title": "Al aire",
+  "text": "Mariana volvió de la alcaldía con su carné de prensa.\nMariana: Cuatro horas de reunión, y el tema del café duró dos minutos. Nosotros teníamos a la prensa, o sea, a mí.\nMariana: El tema quedó para enero. Pero una amiga de una agencia de Santa Marta me dio un número. La agencia trabaja con un presentador que lee mensajes para la gente del mar.\nTomás marcó.\nSeñora: Panadería La Esperanza, a la orden.\nTomás: Perdón, señora. Creo que tengo un número equivocado.\nTomás llamó otra vez.\nSecretaria: Radio Caribe. El señor Villa no se encuentra. Está en la cabina, al aire.\nTomás le dejó un mensaje en el buzón. Mientras, Vale leía un foro de Taganga.\nVale: Alguien contestó en el foro. «Herrera me suena. Pregunten en la playa».\nA las cinco, el presentador llamó desde la cabina.\nVilla: Estamos al aire. Escuché su mensaje en el buzón. ¿Con quién hablo?\nHernando: Respire, mijo. Respire y hable.\nTomás: Me llamo Tomás Herrera. Quiero aclarar algo: no vendo nada. Busco a la familia de Joaquín Herrera.\nVilla: Aclaremos una cosa. ¿Ferrer o Herrera?\nTomás: Herrera, como yo. ¿Me escucha?\nVilla: Fíjese que ese apellido me suena. Pero para un mensaje al mar se requiere un nombre completo y un número. Así lo requiere la casa. Hacemos una pausa y volvemos.\nDurante la pausa, Hernando miró la pantalla: batería, dos por ciento.\nHernando: Rápido, mijo. Esta batería está peor que mi corazón.\nTomás: El número es tres, uno, cero...\nY la batería se murió. Vale llamó desde su celular.\nVale: Señor Villa, le doy el número del café.\nSimón: ¡Número equivocado! ¡Número equivocado!\nVilla: ¿Cómo así? ¿Es el número o no es?\nVale: Sí es. Es un loro.\nVilla: Bueno, así está bien. Mañana a las cinco, el mensaje sale para todos los barcos.\nHernando: Esto es una telenovela. Cada día, un capítulo nuevo.\nMariana: Y en el próximo episodio, alguien en el mar escucha la radio.\nVale: La doctora le prohibió madrugar, Hernando.\nHernando: Mija, un episodio así no se escucha desde la cama. Ese capítulo yo lo escucho aquí.",
+  "gloss": [
+    {
+      "es": "carné",
+      "en": "ID badge"
+    },
+    {
+      "es": "Secretaria",
+      "en": "Receptionist"
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "telenovela",
+      "en": "soap opera"
+    },
+    {
+      "es": "madrugar",
+      "en": "to get up at dawn"
+    },
+    {
+      "es": "o sea, a mí",
+      "en": "in other words, me"
+    },
+    {
+      "es": "El tema quedó para enero.",
+      "en": "The matter was put off until January."
+    },
+    {
+      "es": "a la orden",
+      "en": "how can I help you"
+    },
+    {
+      "es": "Está en la cabina, al aire.",
+      "en": "He's in the studio, on air."
+    },
+    {
+      "es": "Estamos al aire.",
+      "en": "We're on air."
+    },
+    {
+      "es": "Así lo requiere la casa.",
+      "en": "That's what the station requires."
+    },
+    {
+      "es": "la batería se murió",
+      "en": "the battery died"
+    },
+    {
+      "es": "¿Es el número o no es?",
+      "en": "Is that the number or isn't it?"
+    },
+    {
+      "es": "Ese capítulo yo lo escucho aquí.",
+      "en": "I'm listening to that episode here."
+    }
+  ],
+  "questions": [
+    {
+      "q": "What happened to the café at the committee meeting?",
+      "options": [
+        "It was discussed for two minutes and put off until January",
+        "It was protected",
+        "It was sold to Altamira",
+        "Mariana was not allowed in"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Tomás's first call go wrong?",
+      "options": [
+        "He dials a wrong number and reaches a bakery",
+        "The presenter hangs up",
+        "Nobody answers",
+        "He forgets his name"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does the presenter ask whether they are a hotel?",
+      "options": [
+        "Simón shouts, and he wants to know who is shouting",
+        "Tomás says he works for Altamira",
+        "Mariana mentions Altamira",
+        "Vale gives the number of a hotel"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué pasa mañana a las cinco?",
+      "options": [
+        "El mensaje sale para todos los barcos",
+        "Tomás viaja a Santa Marta",
+        "La doctora visita a Hernando",
+        "Mariana publica su artículo"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando decide to do at the end?",
+      "options": [
+        "Listen to the next episode at the café, not from his bed",
+        "Stay in bed",
+        "Go to Taganga",
+        "Buy a new phone battery"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What did someone write in the Taganga forum?",
+      "options": [
+        "That Herrera rings a bell, and to ask on the beach",
+        "That Joaquín is dead",
+        "That the man has moved",
+        "That they should call the radio"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How much battery did Hernando's phone have during the break?",
+      "options": [
+        "Two per cent",
+        "Zero",
+        "Ten per cent",
+        "Half"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "When the presenter asks \"Ferrer or Herrera\", what does Tomás answer?",
+      "options": [
+        "Herrera, like me",
+        "Ferrer, like the singer",
+        "Both",
+        "Herrera, like his grandmother"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "At five tomorrow morning the message goes out to every boat off Santa Marta, with the café's number in it. Hernando has been told not to get up early, and he will be the first one there.",
+  "requires": [
+    "c:a-la-orden",
+    "c:asi-esta-bien",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:como-asi",
+    "c:creo-que",
+    "c:entonces-bueno",
+    "c:fijese-que",
+    "c:me-llamo",
+    "c:me-suena",
+    "c:no-se",
+    "c:no-se-encuentra",
+    "c:numero-equivocado",
+    "c:o-sea",
+    "c:perdon-disculpe",
+    "c:quiero",
+    "c:tengo",
+    "g:cada-cualquier",
+    "g:commands-usted",
+    "g:comparatives",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:negation-words",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-spelling-stem",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:demonstratives-basic",
+    "p:durar-durante",
+    "p:equivocarse",
+    "p:indefinites-basic",
+    "p:la-gente-singular",
+    "p:madrugar-trasnochar",
+    "p:me-te-nos-objects",
+    "p:naci-en",
+    "p:no-hasta",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:permitir-inf",
+    "p:personal-a",
+    "p:por-ciento",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:prep-questions-basic",
+    "p:senor-don-article",
+    "p:telling-time",
+    "p:veces-al"
+  ],
+  "lexemes": [
+    "l:aclarar",
+    "l:agencia",
+    "l:aire",
+    "l:alcaldía",
+    "l:amiga",
+    "l:apellido",
+    "l:aquí",
+    "l:barco",
+    "l:batería",
+    "l:bien",
+    "l:bueno",
+    "l:buscar",
+    "l:buzón",
+    "l:cabina",
+    "l:café",
+    "l:cama",
+    "l:capítulo",
+    "l:carné",
+    "l:casa",
+    "l:celular",
+    "l:cero",
+    "l:comer",
+    "l:completar",
+    "l:contestar",
+    "l:corazón",
+    "l:cosa",
+    "l:creer",
+    "l:cómo",
+    "l:dar",
+    "l:dejar",
+    "l:doctor",
+    "l:durar",
+    "l:día",
+    "l:encontrarse",
+    "l:enero",
+    "l:episodio",
+    "l:equivocado",
+    "l:escuchar",
+    "l:estar",
+    "l:familia",
+    "l:fijarse",
+    "l:foro",
+    "l:gente",
+    "l:hablar",
+    "l:hacer",
+    "l:hora",
+    "l:leer",
+    "l:llamar",
+    "l:llamarse",
+    "l:loro",
+    "l:madrugar",
+    "l:mar",
+    "l:marcar",
+    "l:mañana",
+    "l:mensaje",
+    "l:mija",
+    "l:mijo",
+    "l:minuto",
+    "l:mirar",
+    "l:morirse",
+    "l:nombre",
+    "l:nuevo",
+    "l:número",
+    "l:orden",
+    "l:panadería",
+    "l:pantalla",
+    "l:pausa",
+    "l:peor",
+    "l:perdón",
+    "l:playa",
+    "l:preguntar",
+    "l:prensa",
+    "l:presentador",
+    "l:prohibir",
+    "l:próximo",
+    "l:quedar",
+    "l:querer",
+    "l:quién",
+    "l:radio",
+    "l:requerir",
+    "l:respirar",
+    "l:reunión",
+    "l:rápido",
+    "l:salir",
+    "l:secretaria",
+    "l:ser",
+    "l:señor",
+    "l:señora",
+    "l:sonar",
+    "l:telenovela",
+    "l:tema",
+    "l:tener",
+    "l:trabajar",
+    "l:vender",
+    "l:vez",
+    "l:villa",
+    "l:volver"
+  ]
+}

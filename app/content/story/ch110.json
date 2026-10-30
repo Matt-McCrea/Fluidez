@@ -1,0 +1,292 @@
+{
+  "id": "ch110",
+  "unit": "u37",
+  "title": "El teléfono roto",
+  "text": "Hernando tomaba té, y lo miraba como a un enemigo.\nHernando: Esto parece agua de flores.\nVale: Es de manzanilla. La doctora dijo cero tinto, y usted dijo que sí.\nHernando: Dije que sí por educación.\nYa había escuchado el audio de Santa Marta once veces.\nTomás: ¿De quién es primo el primo? ¿Con quién trabaja el señor? ¿Desde cuándo vive en Taganga?\nHernando: Mijo, es un audio, no una entrevista. Mejor llamamos.\nPuso el celular en altavoz y llamó al cuñado del Chato. Se llamaba Libardo, y hablaba más que Simón.\nLibardo: ¡Pacheco! Bueno, le explico. Yo tengo un amigo, Wilmer, que vende pescado en el mercado. El primo de Wilmer tiene una tienda en Taganga, y a esa tienda va un señor que sale al mar en un barco viejo. ¿Me explico?\nHernando: No, pero siga.\nTomás: ¿Y entonces?\nLibardo: Entonces un día el señor dijo que su abuelo se llamaba Herrera y que era de Bogotá.\nMariana: Esto es como el teléfono roto. Cinco personas, y cada una cambia algo.\nLibardo: Por cierto, Pacheco, ¿y la comisión?\nHernando: ¿Cuál comisión?\nLibardo: Un diez por ciento. Nadie trabaja gratis.\nHernando: ¿Diez por ciento de qué, hombre? Aquí hay un café, un loro y una deuda.\nSimón: ¿Me explico? ¡¿Me explico?!\nLibardo: ¿Quién habla? ¿Con quién estoy hablando, Pacheco?\nHernando: Con un loro. Es de la familia.\nTomás: Dígale que la comisión es de cero pesos y una caja de almojábanas.\nLibardo: Trato hecho. Que le vaya bien, Pacheco.\nHernando: Igualmente.\nHernando colgó.\nTomás: En Toronto no tengo a nadie. ¿Y si en Taganga tengo un primo que sale al mar?\nVale: Tú ya tienes familia, Tomás. Un viejo que toma té, un loro que lo repite todo y una pastelera que madruga.\nTomás la miró un segundo más de lo normal.\nMariana: Por cierto, mañana hay reunión de la comisión de la alcaldía, y tengo que asistir.\nHernando: ¿Y esa comisión también cobra comisión?\nEsa noche, Libardo mandó otro audio.\n«Pacheco, dice Wilmer que el señor del barco no tiene celular. Pero todas las mañanas escucha la radio».",
+  "gloss": [
+    {
+      "es": "manzanilla",
+      "en": "camomile"
+    },
+    {
+      "es": "altavoz",
+      "en": "speakerphone"
+    },
+    {
+      "es": "cuñado",
+      "en": "brother-in-law"
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "pastelera",
+      "en": "pastry chef (woman)"
+    },
+    {
+      "es": "madruga",
+      "en": "gets up at dawn"
+    },
+    {
+      "es": "lo miraba como a un enemigo",
+      "en": "he looked at it like an enemy"
+    },
+    {
+      "es": "Dije que sí por educación.",
+      "en": "I said yes to be polite."
+    },
+    {
+      "es": "¿De quién es primo el primo?",
+      "en": "Whose cousin is the cousin?"
+    },
+    {
+      "es": "Esto es como el teléfono roto.",
+      "en": "This is like the game of telephone."
+    },
+    {
+      "es": "Tomás la miró un segundo más de lo normal.",
+      "en": "Tomás looked at her a second longer than usual."
+    },
+    {
+      "es": "¿Y esa comisión también cobra comisión?",
+      "en": "And does that committee charge a commission too?"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why is Hernando drinking tea?",
+      "options": [
+        "The doctor told him no coffee",
+        "The coffee machine is broken",
+        "He prefers tea",
+        "Vale ran out of coffee"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Mariana call the chain of people \"el teléfono roto\"?",
+      "options": [
+        "Each person in the chain changes the story a little",
+        "Hernando's phone is broken",
+        "Libardo keeps hanging up",
+        "Nobody answers the phone"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What commission does Tomás finally offer Libardo?",
+      "options": [
+        "Zero pesos and a box of almojábanas",
+        "Ten per cent",
+        "A free taxi ride",
+        "A free coffee every day"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Adónde tiene que ir Mariana mañana?",
+      "options": [
+        "A una reunión de la comisión de la alcaldía",
+        "A Santa Marta",
+        "A la clínica",
+        "Al mercado"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What makes the search harder at the end?",
+      "options": [
+        "The man with the boat has no mobile phone",
+        "Libardo wants more money",
+        "Wilmer has died",
+        "The man has moved to Bogotá"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What does Wilmer do?",
+      "options": [
+        "He sells fish at the market",
+        "He drives a taxi",
+        "He has a shop in Taganga",
+        "He works on a boat"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How many times had Hernando listened to the voice note?",
+      "options": [
+        "Eleven",
+        "Two",
+        "Five",
+        "Forty"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who does Hernando say Libardo is talking to when Simón shouts?",
+      "options": [
+        "A parrot that is part of the family",
+        "The radio",
+        "Tomás",
+        "A customer"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "The man in Taganga has no phone, but every morning he listens to the radio. Tomorrow Mariana calls in a favour from the press, and Tomás has to speak live on air in Santa Marta.",
+  "requires": [
+    "c:bien-y-tu",
+    "c:entonces-bueno",
+    "c:era",
+    "c:hay",
+    "c:me-explico",
+    "c:mucho-gusto",
+    "c:por-cierto",
+    "c:que-te-mejores",
+    "c:siga",
+    "c:tengo",
+    "c:tengo-que",
+    "c:tienes",
+    "c:y-que-paso",
+    "g:cada-cualquier",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:comparatives",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:lo-adjective",
+    "g:negation-words",
+    "g:pluperfect",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:reported-past-basic",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:container-de",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:indefinites-basic",
+    "p:madrugar-trasnochar",
+    "p:otro-no-article",
+    "p:personal-a",
+    "p:por-ciento",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:question-word-order",
+    "p:todos-los-dias",
+    "p:veces-al",
+    "p:viejo-antiguo-mayor"
+  ],
+  "lexemes": [
+    "l:abuelo",
+    "l:agua",
+    "l:alcaldía",
+    "l:almojábana",
+    "l:altavoz",
+    "l:amigo",
+    "l:aquí",
+    "l:asistir",
+    "l:audio",
+    "l:barco",
+    "l:bien",
+    "l:bueno",
+    "l:café",
+    "l:caja",
+    "l:cambiar",
+    "l:celular",
+    "l:cero",
+    "l:cobrar",
+    "l:colgar",
+    "l:comisión",
+    "l:cuál",
+    "l:cuándo",
+    "l:cuñado",
+    "l:decir",
+    "l:deuda",
+    "l:doctor",
+    "l:día",
+    "l:educación",
+    "l:enemigo",
+    "l:entrevista",
+    "l:escuchar",
+    "l:estar",
+    "l:explicar",
+    "l:familia",
+    "l:flor",
+    "l:gratis",
+    "l:hablar",
+    "l:hacer",
+    "l:hombre",
+    "l:igualmente",
+    "l:ir",
+    "l:llamar",
+    "l:llamarse",
+    "l:loro",
+    "l:madrugar",
+    "l:mandar",
+    "l:manzanilla",
+    "l:mar",
+    "l:mañana",
+    "l:mejor",
+    "l:mercado",
+    "l:mijo",
+    "l:mirar",
+    "l:noche",
+    "l:normal",
+    "l:parecer",
+    "l:pastelera",
+    "l:persona",
+    "l:pescado",
+    "l:peso",
+    "l:poner",
+    "l:primo",
+    "l:quién",
+    "l:qué",
+    "l:radio",
+    "l:repetir",
+    "l:reunión",
+    "l:romper",
+    "l:salir",
+    "l:seguir",
+    "l:ser",
+    "l:señor",
+    "l:teléfono",
+    "l:tener",
+    "l:tienda",
+    "l:tinto",
+    "l:tomar",
+    "l:trabajar",
+    "l:tratar",
+    "l:té",
+    "l:vender",
+    "l:vez",
+    "l:viejo",
+    "l:vivir"
+  ]
+}

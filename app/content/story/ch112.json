@@ -1,0 +1,301 @@
+{
+  "id": "ch112",
+  "unit": "u37",
+  "title": "Él sabe",
+  "text": "A las cuatro y cincuenta, Hernando ya estaba en su mesa, con la gorra puesta.\nVale: ¿Y usted qué hace aquí?\nHernando: Yo no madrugué, mija. Es que no me acosté.\nVilla: Mensaje para el mar. Tomás Herrera, de Bogotá, les pide que llamen a La Esquina de Rosa si conocen a la familia de Joaquín Herrera.\nA las seis sonó el teléfono del café, y ya no paró.\nUna señora de Ciénaga: Mi esposo me pide que le diga que conoció a un Herrera. Bueno, a un Ferrer.\nEscritor: Soy escritor. Quiero contar la historia de su familia en un libro.\nHernando: Dígale al escritor que esta historia ya tiene escritor. Soy yo.\nA las diez llegó Mariana, y llamó otro señor.\nSeñor: Llamo de parte de una empresa. Le pedimos que nos mande una copia de los papeles de su abuela.\nMariana le escribió en una servilleta: «No le des bola. Pídele que te diga el nombre de la empresa».\nTomás: ¿Cuál empresa?\nEl señor colgó.\nMariana: La radio atrae a los buenos y a los malos.\nAl mediodía, Hernando estaba gris.\nVale: Usted está débil. Le pido que se vaya a la casa.\nHernando: Tomás, dígale a Vale que estoy perfecto.\nTomás: Vale, Hernando dice que está perfecto.\nVale: Dile a Hernando que se ponga la chaqueta, que lo llevamos a la casa.\nFue una actuación excelente, pero se durmió en la Burra.\nA las tres, otra llamada. La señal era débil, y detrás de la voz se oía el mar.\nHombre: ¿Tomás...? ... mi abuelo... Herrera...\nSimón: ¿Me escuchas? ¡¿Me escuchas?!\nLa línea estaba muerta. Tomás se sentó en el piso, y Vale, a su lado.\nVale: Va a llamar otra vez. La gente del mar es paciente.\nTomás: ¿Y si no llama?\nVale: Entonces lo buscamos en Taganga. Pero no te vas solo.\nEsa noche, Jhon Fredy los esperaba en la puerta con una servilleta.\nJhon Fredy: Llamó un señor. Lo escribí palabra por palabra.\nEn la servilleta había un número de Santa Marta.\n«Dígale a Tomás que lo llame. Yesid. Él sabe».",
+  "gloss": [
+    {
+      "es": "madrugué",
+      "en": "I got up early"
+    },
+    {
+      "es": "servilleta",
+      "en": "napkin"
+    },
+    {
+      "es": "Es que no me acosté.",
+      "en": "I just didn't go to bed."
+    },
+    {
+      "es": "Mensaje para el mar.",
+      "en": "A message for the people at sea."
+    },
+    {
+      "es": "y ya no paró",
+      "en": "and it didn't stop"
+    },
+    {
+      "es": "Dígale al escritor que esta historia ya tiene escritor.",
+      "en": "Tell the writer this story already has a writer."
+    },
+    {
+      "es": "Llamo de parte de una empresa.",
+      "en": "I'm calling on behalf of a company."
+    },
+    {
+      "es": "No le des bola.",
+      "en": "Don't pay him any attention."
+    },
+    {
+      "es": "que lo llevamos a la casa",
+      "en": "because we're taking him home"
+    },
+    {
+      "es": "detrás de la voz se oía el mar",
+      "en": "you could hear the sea behind the voice"
+    },
+    {
+      "es": "La línea estaba muerta.",
+      "en": "The line was dead."
+    },
+    {
+      "es": "Lo escribí palabra por palabra.",
+      "en": "I wrote it down word for word."
+    },
+    {
+      "es": "Él sabe",
+      "en": "He knows"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why was Hernando already at the café before five?",
+      "options": [
+        "He never went to bed",
+        "He got up very early",
+        "He slept at the café by accident",
+        "Vale asked him to come"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando tell the writer who calls?",
+      "options": [
+        "That this story already has a writer: Hernando himself",
+        "That Tomás will call him back",
+        "That the family has no story",
+        "That he should write about Altamira"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Mariana tell Tomás to ask for the company's name?",
+      "options": [
+        "She suspects the caller is working for Altamira",
+        "She wants to sell them a story",
+        "She knows the company",
+        "She wants to write to them"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué le pide Vale a Hernando al mediodía?",
+      "options": [
+        "Que se vaya a la casa a dormir",
+        "Que conteste el teléfono",
+        "Que llame a Santa Marta",
+        "Que vaya a la clínica solo"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does the call at three o'clock fail?",
+      "options": [
+        "The signal is weak and Simón shouts over it",
+        "Tomás hangs up",
+        "The caller is from Altamira",
+        "Nobody speaks"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What was wrong with the call from the woman in Ciénaga?",
+      "options": [
+        "Her husband's Herrera was really called Ferrer",
+        "She wanted money",
+        "She had the wrong café",
+        "She was calling about bread"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Vale promise Tomás after the failed call?",
+      "options": [
+        "If the man doesn't call, they will look for him in Taganga, and Tomás won't go alone",
+        "She will buy a new phone",
+        "She will call the radio again",
+        "She will talk to the man herself"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who wrote down Yesid's message?",
+      "options": [
+        "Jhon Fredy",
+        "Mariana",
+        "Hernando",
+        "Vale"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "A man called Yesid has left a Santa Marta number and a short message on a napkin. Tomorrow Tomás calls him, and the same morning Mariana's article about Altamira comes out.",
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:era",
+    "c:es-que",
+    "c:me-escuchas",
+    "c:quiero",
+    "c:si-soy-yo",
+    "c:tienes",
+    "c:voy-vas",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:commands-tu",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:estar-participle",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:negative-commands",
+    "g:passive-se",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-influence",
+    "g:subj-irregulars",
+    "g:subj-relative",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:verbs-of-change",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:contar-dos-sentidos",
+    "p:demonstratives-basic",
+    "p:ir-a-venir-de-place",
+    "p:la-gente-singular",
+    "p:lavarse-las-manos",
+    "p:madrugar-trasnochar",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:personal-a",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:saber-conocer",
+    "p:ser-profession-no-article",
+    "p:telling-time"
+  ],
+  "lexemes": [
+    "l:abuela",
+    "l:abuelo",
+    "l:acostarse",
+    "l:actuación",
+    "l:aquí",
+    "l:atraer",
+    "l:bola",
+    "l:bueno",
+    "l:buscar",
+    "l:café",
+    "l:casa",
+    "l:chaqueta",
+    "l:colgar",
+    "l:conocer",
+    "l:contar",
+    "l:copia",
+    "l:cuál",
+    "l:dar",
+    "l:decir",
+    "l:detrás",
+    "l:dormirse",
+    "l:débil",
+    "l:empresa",
+    "l:escribir",
+    "l:escritor",
+    "l:escuchar",
+    "l:esperar",
+    "l:esposo",
+    "l:estar",
+    "l:excelente",
+    "l:familia",
+    "l:gente",
+    "l:gorra",
+    "l:gris",
+    "l:hacer",
+    "l:historia",
+    "l:hombre",
+    "l:ir",
+    "l:irse",
+    "l:lado",
+    "l:libro",
+    "l:llamada",
+    "l:llamar",
+    "l:llegar",
+    "l:llevar",
+    "l:línea",
+    "l:madrugar",
+    "l:malo",
+    "l:mandar",
+    "l:mar",
+    "l:mediodía",
+    "l:mensaje",
+    "l:mesa",
+    "l:mija",
+    "l:morir",
+    "l:noche",
+    "l:nombre",
+    "l:número",
+    "l:oír",
+    "l:paciente",
+    "l:palabra",
+    "l:papel",
+    "l:parar",
+    "l:parte",
+    "l:pedir",
+    "l:perfecto",
+    "l:piso",
+    "l:poner",
+    "l:ponerse",
+    "l:puerta",
+    "l:querer",
+    "l:qué",
+    "l:radio",
+    "l:saber",
+    "l:sentarse",
+    "l:ser",
+    "l:servilleta",
+    "l:señal",
+    "l:señor",
+    "l:señora",
+    "l:sonar",
+    "l:teléfono",
+    "l:tener",
+    "l:vez",
+    "l:villa",
+    "l:voz"
+  ]
+}
