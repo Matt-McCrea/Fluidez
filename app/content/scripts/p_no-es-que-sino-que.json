@@ -1,0 +1,185 @@
+{
+  "node": "p:no-es-que-sino-que",
+  "hook": {
+    "line": "Someone is about to decide the wrong thing about you: that you are avoiding the job, or that you did not like the food. You correct the reason before it sticks.",
+    "es": "No es que no quiera ir; es que tengo que trabajar.",
+    "en": "It's not that I don't want to go; it's that I have to work."
+  },
+  "examples": [
+    {
+      "es": "No es que sea caro, sino que no lo necesito.",
+      "en": "It's not that it's expensive, it's that I don't need it."
+    },
+    {
+      "es": "No es que no me guste, es que no tengo tiempo.",
+      "en": "It's not that I don't like it, it's that I don't have time."
+    },
+    {
+      "es": "No es que Vale esté enojada, sino que está cansada.",
+      "en": "It's not that Vale is angry, it's that she's tired."
+    },
+    {
+      "es": "No es que no queramos terminarlo; es que vamos atrasados.",
+      "en": "It's not that we don't want to finish it; it's that we're behind."
+    },
+    {
+      "es": "No, no es eso exactamente; es que no tengo plata.",
+      "en": "No, that's not exactly it; it's that I have no money."
+    },
+    {
+      "es": "No es que no lo sepas, sino que no lo recuerdas.",
+      "en": "It's not that you don't know it, it's that you don't remember it."
+    }
+  ],
+  "rule": "Start with *no es que* to name the reason you are rejecting. Its verb is in the subjunctive: *sea*, *guste*, *esté*, *queramos*.\n\nThen give the real reason in the indicative, joined by *sino que* or *es que*: *sino que no lo necesito*, *es que no tengo tiempo*.\n\nEnglish says \"it's not that… it's that…\" with ordinary verbs both times. Spanish changes the mood in the first half only.\n\nA softer opening when you are not sure what they think: *No, no es eso exactamente; es que…*",
+  "smallPrint": "Teachers call this a corrective structure: the subjunctive marks the idea you reject, the indicative marks the fact you offer instead.",
+  "readAndPick": [
+    {
+      "es": "No es que sea caro, sino que no lo necesito.",
+      "options": [
+        "It's not that I need it, it's that it's expensive.",
+        "It's not that it's expensive, it's that I don't need it.",
+        "It's expensive, and that's why I don't need it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No es que Vale esté enojada, sino que está cansada.",
+      "options": [
+        "It's not that Vale is tired, it's that she's angry.",
+        "Vale is angry and tired.",
+        "It's not that Vale is angry, it's that she's tired."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No es que no quiera ir; es que tengo que trabajar.",
+      "options": [
+        "It's not that I don't want to go; it's that I have to work.",
+        "I don't want to go because I have to work.",
+        "It's not that I have to work; it's that I don't want to go."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No es que no lo sepas, sino que no lo recuerdas.",
+      "options": [
+        "It's not that he doesn't know it, it's that he doesn't remember it.",
+        "It's not that you don't remember it, it's that you don't know it.",
+        "It's not that you don't know it, it's that you don't remember it."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No, no es eso exactamente; es que no tengo plata.",
+      "options": [
+        "No, that's exactly it: I have no money.",
+        "No, that's not exactly it; it's that I have no money.",
+        "No, it's not money; it's exactly that."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No es que no queramos terminarlo; es que vamos atrasados.",
+      "options": [
+        "It's not that we don't want to finish it; it's that we're behind.",
+        "It's not that they don't want to finish it; it's that they're behind.",
+        "It's not that I don't want to finish it; it's that I'm behind."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No es que no me guste, es que no tengo tiempo.",
+      "options": [
+        "It's not that I don't have time, it's that I don't like it.",
+        "I like it, but I don't have time.",
+        "It's not that I don't like it, it's that I don't have time."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No es que tenga miedo, es que no quiero equivocarme.",
+      "options": [
+        "It's not that I'm afraid, it's that I don't want to make a mistake.",
+        "It's not that I don't want to make a mistake, it's that I'm afraid.",
+        "I'm afraid because I don't want to make a mistake."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *sea* or *es*: No es que ___ caro, sino que no lo necesito. Type the whole sentence.",
+      "answer": "No es que sea caro, sino que no lo necesito.",
+      "accept": [],
+      "why": "The idea you reject after *no es que* takes the subjunctive: *sea*."
+    },
+    {
+      "prompt": "Choose *tengo* or *tenga*: No es que no quiera ir; es que ___ que trabajar. Type the whole sentence.",
+      "answer": "No es que no quiera ir; es que tengo que trabajar.",
+      "accept": [],
+      "why": "The real reason is a fact, so the indicative: *tengo*."
+    },
+    {
+      "prompt": "Type in Spanish: It's not that Vale is angry, it's that she's tired.",
+      "answer": "No es que Vale esté enojada, sino que está cansada.",
+      "accept": [
+        "No es que Vale esté enojada; está cansada.",
+        "No es que Vale esté enojada, es que está cansada.",
+        "No es que Vale esté enojada; es que está cansada."
+      ],
+      "why": "*Esté* for the rejected idea, *está* for the real one."
+    },
+    {
+      "prompt": "Type in Spanish: It's not that I don't like it, it's that I don't have time.",
+      "answer": "No es que no me guste, es que no tengo tiempo.",
+      "accept": [
+        "No es que no me guste; es que no tengo tiempo.",
+        "No es que no me guste, sino que no tengo tiempo."
+      ],
+      "why": "*Guste* is subjunctive; *tengo* is the fact."
+    },
+    {
+      "prompt": "Say it about us (we): *No es que no quiera ir; es que tengo que trabajar.*",
+      "answer": "No es que no queramos ir; es que tenemos que trabajar.",
+      "accept": [
+        "No es que no queramos ir, sino que tenemos que trabajar."
+      ],
+      "why": "Both verbs change to *we*: *queramos* (subjunctive) and *tenemos* (indicative)."
+    },
+    {
+      "prompt": "Type in Spanish: No, that's not exactly it; it's that I have no money.",
+      "answer": "No, no es eso exactamente; es que no tengo plata.",
+      "accept": [],
+      "why": "This is the gentle way to correct a guess: *no es eso exactamente; es que…*"
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: It's not that you don't know it, it's that you don't remember it.",
+      "answer": "No es que no lo sepas, sino que no lo recuerdas.",
+      "accept": [
+        "No es que no lo sepas; no lo recuerdas.",
+        "No es que no lo sepas, es que no lo recuerdas.",
+        "No es que no lo sepas; es que no lo recuerdas."
+      ],
+      "why": "*Sepas* is the subjunctive for *tú*; *recuerdas* is the plain fact."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No es que es caro, sino que no lo necesito.",
+      "right": "No es que sea caro, sino que no lo necesito.",
+      "why": "Almost. The idea you are rejecting after *no es que* takes the subjunctive."
+    },
+    {
+      "wrong": "No es que no quiera ir; es que tenga que trabajar.",
+      "right": "No es que no quiera ir; es que tengo que trabajar.",
+      "why": "Almost. The real reason is a fact, so it stays in the indicative."
+    },
+    {
+      "wrong": "No es que sea caro, sino no lo necesito.",
+      "right": "No es que sea caro, sino que no lo necesito.",
+      "why": "Almost. Before a full clause, *sino* needs *que*."
+    }
+  ],
+  "personal": "Think of a wrong guess someone might make about you. Correct it with *No es que…, sino que…*. For example: *No es que sea tímido, sino que prefiero escuchar.*"
+}

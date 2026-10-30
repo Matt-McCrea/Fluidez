@@ -1,0 +1,182 @@
+{
+  "node": "p:no-recuerdo-que-subj",
+  "hook": {
+    "line": "In a meeting somebody says you promised something. You are not sure, and you don't want to call anyone a liar. This is the polite way to say it did not happen as far as you recall.",
+    "es": "No recuerdo que dijera eso exactamente.",
+    "en": "I don't recall him saying exactly that."
+  },
+  "examples": [
+    {
+      "es": "No recuerdo que dijera eso exactamente.",
+      "en": "I don't recall him saying exactly that."
+    },
+    {
+      "es": "No me acuerdo de que me lo prometieras.",
+      "en": "I don't remember you promising it to me."
+    },
+    {
+      "es": "No recuerdo que Vale llamara esa noche.",
+      "en": "I don't recall Vale calling that night."
+    },
+    {
+      "es": "No recuerdo que hablaran del precio.",
+      "en": "I don't recall them talking about the price."
+    },
+    {
+      "es": "Recuerdo que dijo eso.",
+      "en": "I remember that he said that."
+    },
+    {
+      "es": "No me acuerdo de dónde dejé las llaves.",
+      "en": "I don't remember where I left the keys."
+    }
+  ],
+  "rule": "When you remember something, use the indicative: *recuerdo que dijo eso*.\n\nWhen you don't, the verb after *que* switches to the past subjunctive: *no recuerdo que dijera eso*. It says: I'm not vouching that this happened. It sounds polite and firm.\n\nEnglish says \"I don't remember him saying\". Spanish uses *que* and a full verb: *dijera*, *llamara*, *hablaran*, *prometieras*.\n\nWith *acordarse* add *de*: *no me acuerdo de que…*\n\nA question word is different: *no me acuerdo de dónde dejé las llaves*, plain indicative.",
+  "smallPrint": "Teachers call *dijera* the imperfect subjunctive. Here it works as a polite way to not confirm what someone else claims.",
+  "readAndPick": [
+    {
+      "es": "No recuerdo que dijera eso exactamente.",
+      "options": [
+        "I recall him saying exactly that.",
+        "I don't recall him saying exactly that.",
+        "I don't recall you saying exactly that."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Recuerdo que dijo eso.",
+      "options": [
+        "I don't remember that he said that.",
+        "I wonder whether he said that.",
+        "I remember that he said that."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No me acuerdo de que me lo prometieras.",
+      "options": [
+        "I don't remember you promising it to me.",
+        "I don't remember them promising it to me.",
+        "I don't remember promising it to you."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No recuerdo que hablaran del precio.",
+      "options": [
+        "I don't recall us talking about the price.",
+        "I don't recall you talking about the price.",
+        "I don't recall them talking about the price."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No recuerdo que Vale llamara esa noche.",
+      "options": [
+        "I recall Vale calling that night.",
+        "I don't recall Vale calling that night.",
+        "I don't recall calling Vale that night."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No me acuerdo de dónde dejé las llaves.",
+      "options": [
+        "I don't remember where I left the keys.",
+        "I don't remember where you left the keys.",
+        "I don't remember where I'm leaving the keys."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me acuerdo de que llegaste tarde.",
+      "options": [
+        "I don't remember that you arrived late.",
+        "I remember that I arrived late.",
+        "I remember that you arrived late."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No recuerdo que nadie votara en contra.",
+      "options": [
+        "I recall nobody voting against.",
+        "I don't recall anyone voting against.",
+        "I don't recall anyone voting in favour."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *dijo* or *dijera*: No recuerdo que ___ eso exactamente. Type the whole sentence.",
+      "answer": "No recuerdo que dijera eso exactamente.",
+      "accept": [],
+      "why": "When you don't remember it, the verb after *que* is in the subjunctive: *dijera*."
+    },
+    {
+      "prompt": "Choose *llegaste* or *llegaras*: Me acuerdo de que ___ tarde. Type the whole sentence.",
+      "answer": "Me acuerdo de que llegaste tarde.",
+      "accept": [],
+      "why": "Remembering it means it happened, so the indicative: *llegaste*."
+    },
+    {
+      "prompt": "Type in Spanish: I don't recall Vale calling that night.",
+      "answer": "No recuerdo que Vale llamara esa noche.",
+      "accept": [
+        "No me acuerdo de que Vale llamara esa noche."
+      ],
+      "why": "The verb after *que* is *llamara*, the subjunctive."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: I don't remember you promising it to me.",
+      "answer": "No me acuerdo de que me lo prometieras.",
+      "accept": [
+        "No recuerdo que me lo prometieras."
+      ],
+      "why": "*Prometieras* ends in *-ras* because it is about *you*."
+    },
+    {
+      "prompt": "Type in Spanish: I don't remember where I left the keys.",
+      "answer": "No me acuerdo de dónde dejé las llaves.",
+      "accept": [
+        "No recuerdo dónde dejé las llaves."
+      ],
+      "why": "After a question word, the verb stays in the plain indicative: *dejé*."
+    },
+    {
+      "prompt": "Turn *Recuerdo que dijo eso.* into a doubt: say you don't remember it.",
+      "answer": "No recuerdo que dijera eso.",
+      "accept": [
+        "No me acuerdo de que dijera eso."
+      ],
+      "why": "Not remembering moves the verb to the subjunctive: *dijera*."
+    },
+    {
+      "prompt": "Type in Spanish: I don't recall anyone voting against.",
+      "answer": "No recuerdo que nadie votara en contra.",
+      "accept": [
+        "No me acuerdo de que nadie votara en contra."
+      ],
+      "why": "*Votara* is the subjunctive for one person, here *nadie*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No recuerdo que dijo eso.",
+      "right": "No recuerdo que dijera eso.",
+      "why": "Almost. When you are not vouching for it, the verb after *que* takes the subjunctive."
+    },
+    {
+      "wrong": "No me acuerdo que me lo prometieras.",
+      "right": "No me acuerdo de que me lo prometieras.",
+      "why": "Almost. *Acordarse* needs *de* before *que*."
+    },
+    {
+      "wrong": "No recuerdo a Vale llamando esa noche.",
+      "right": "No recuerdo que Vale llamara esa noche.",
+      "why": "Almost. English says \"Vale calling\", but Spanish uses *que* and a full verb."
+    }
+  ],
+  "personal": "Imagine a friend says you promised to do something. Answer politely, starting with *No recuerdo que…* or *No me acuerdo de que…*."
+}

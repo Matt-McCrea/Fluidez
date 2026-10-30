@@ -1,0 +1,177 @@
+{
+  "node": "p:negar-confesar",
+  "hook": {
+    "line": "In a meeting, somebody says the mistake was not theirs, and ten minutes later owns up to it. To report that in minutes or over coffee, you need the verbs for denying and admitting.",
+    "es": "Tomás negó que el error fuera suyo.",
+    "en": "Tomás denied that the mistake was his."
+  },
+  "examples": [
+    {
+      "es": "Negó que fuera suyo.",
+      "en": "He denied that it was his."
+    },
+    {
+      "es": "Al final confesó que había sido él.",
+      "en": "In the end he confessed that it had been him."
+    },
+    {
+      "es": "El funcionario negó saber la respuesta.",
+      "en": "The official denied knowing the answer."
+    },
+    {
+      "es": "Tomás niega que sea su culpa.",
+      "en": "Tomás denies that it's his fault."
+    },
+    {
+      "es": "Mariana reconoció que tenía razón.",
+      "en": "Mariana admitted that she was right."
+    },
+    {
+      "es": "¿Admites que fue tu culpa?",
+      "en": "Do you admit that it was your fault?"
+    }
+  ],
+  "rule": "*Negar* means to deny. Say *negar que* and the verb after it goes into the subjunctive, because you are reporting something the person refuses to accept: *negó que fuera suyo*. When the person is the same, use a plain infinitive, with no *a* and no *de*: *negó saber la respuesta*.\n\n*Admitir*, *reconocer* and *confesar* do the opposite. They accept the fact, so the indicative follows: *confesó que había sido él*. *Confesar* hints that the person did not want to say it.\n\nPreview: *negó haberlo hecho* (denied having done it) is coming later. For now, learn it as a block.",
+  "smallPrint": "Teachers say *negar* triggers the subjunctive because it denies a fact, while *admitir* and *reconocer* keep the indicative because they affirm one.",
+  "readAndPick": [
+    {
+      "es": "Negó que fuera suyo.",
+      "options": [
+        "He admitted that it was his.",
+        "He denied that it was his.",
+        "He said that it might be his."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Confesó que tenía miedo.",
+      "options": [
+        "He denied that he was afraid.",
+        "He asked whether he was afraid.",
+        "He confessed that he was afraid."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tomás niega que sea su culpa.",
+      "options": [
+        "Tomás denies that it's his fault.",
+        "Tomás admits that it's his fault.",
+        "Tomás says that it's your fault."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mariana reconoció que tenía razón.",
+      "options": [
+        "Mariana denied that she was right.",
+        "Mariana admitted that she was right.",
+        "Mariana doubted that she was right."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El funcionario negó saber la respuesta.",
+      "options": [
+        "The official admitted knowing the answer.",
+        "The official refused to answer.",
+        "The official denied knowing the answer."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Admito que no lo sabía.",
+      "options": [
+        "I admit that I didn't know it.",
+        "He admits that he didn't know it.",
+        "I deny that I knew it."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale negó estar enojada.",
+      "options": [
+        "Vale admitted being angry.",
+        "Vale denied being angry.",
+        "Vale asked if I was angry."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Admites que fue tu culpa?",
+      "options": [
+        "Does he deny that it was his fault?",
+        "Do you deny that it was your fault?",
+        "Do you admit that it was your fault?"
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *fuera* or *era*: Tomás negó que el error ___ suyo. Type the whole sentence.",
+      "answer": "Tomás negó que el error fuera suyo.",
+      "accept": [],
+      "why": "After *negar que* Spanish uses the subjunctive: *fuera*."
+    },
+    {
+      "prompt": "Choose *tenía* or *tuviera*: Mariana reconoció que ___ razón. Type the whole sentence.",
+      "answer": "Mariana reconoció que tenía razón.",
+      "accept": [],
+      "why": "*Reconocer* accepts the fact, so the indicative follows: *tenía*."
+    },
+    {
+      "prompt": "Type in Spanish: Tomás denies that it's his fault.",
+      "answer": "Tomás niega que sea su culpa.",
+      "accept": [],
+      "why": "*Niega que* is followed by the subjunctive: *sea*."
+    },
+    {
+      "prompt": "Type in Spanish: Vale confessed that she hadn't slept.",
+      "answer": "Vale confesó que no había dormido.",
+      "accept": [],
+      "why": "*Confesó que* is followed by the indicative: *había dormido* is a fact she admits."
+    },
+    {
+      "prompt": "Type in Spanish: Hernando denied being the owner.",
+      "answer": "Hernando negó ser el dueño.",
+      "accept": [
+        "Hernando negó que fuera el dueño."
+      ],
+      "why": "With the same person, *negar* takes the infinitive directly: *negó ser*."
+    },
+    {
+      "prompt": "Say the opposite of *Negó que fuera suyo.* He admitted that it was his.",
+      "answer": "Admitió que era suyo.",
+      "accept": [
+        "Reconoció que era suyo.",
+        "Confesó que era suyo."
+      ],
+      "why": "Admitting accepts the fact, so the verb goes back to the indicative: *era*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Do you admit that it was your fault?",
+      "answer": "¿Admites que fue tu culpa?",
+      "accept": [],
+      "why": "*Admites* is the *tú* form, and the indicative *fue* follows."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Negó que era suyo.",
+      "right": "Negó que fuera suyo.",
+      "why": "Almost. After *negar que*, the verb needs the subjunctive."
+    },
+    {
+      "wrong": "Confesó que hubiera sido él.",
+      "right": "Confesó que había sido él.",
+      "why": "Almost. Confessing accepts the fact, so it takes the indicative, not the subjunctive."
+    },
+    {
+      "wrong": "El funcionario negó a saber la respuesta.",
+      "right": "El funcionario negó saber la respuesta.",
+      "why": "Almost. *Negar* goes straight into the infinitive, with no *a*."
+    }
+  ],
+  "personal": "Say something you admit about yourself, starting with *Admito que…* or *Confieso que…*. For example: *Confieso que no leí el acta.*"
+}
