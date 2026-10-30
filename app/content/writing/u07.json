@@ -460,5 +460,277 @@
       "l:ser",
       "p:costar-pagar"
     ]
+  },
+  {
+    "id": "w-u07-13",
+    "unit": "u07",
+    "prompt": "Doña Gloria's new tenant asks if there is a pharmacy near the building. Answer in two short sentences: say there is one, and where it is.",
+    "minWords": 8,
+    "maxWords": 24,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "hay",
+        "label": "say there is one with hay"
+      },
+      {
+        "type": "containsWord",
+        "word": "está",
+        "label": "say where it is with está"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Sí, hay una droguería por acá. Está en la plaza.",
+    "focus": "g:hay-vs-esta",
+    "requires": [
+      "c:hay",
+      "c:por-aca",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "l:acá",
+      "l:droguería",
+      "l:estar",
+      "l:plaza"
+    ]
+  },
+  {
+    "id": "w-u07-14",
+    "unit": "u07",
+    "prompt": "Your cousin Camila asks what your new house has outside. Text her two short sentences: what there is, and where your keys are.",
+    "minWords": 8,
+    "maxWords": 26,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "hay",
+        "label": "say what there is with hay"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(están|está)\\b",
+        "label": "say where the keys are with están"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "En la casa hay un patio. Las llaves están en la mesa.",
+    "focus": "g:hay-vs-esta",
+    "requires": [
+      "c:hay",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "l:casa",
+      "l:estar",
+      "l:llave",
+      "l:mesa",
+      "l:patio",
+      "p:lugar-tiene"
+    ]
+  },
+  {
+    "id": "w-u07-15",
+    "unit": "u07",
+    "prompt": "Your neighbour asks when you rented your apartment. Answer in one or two short sentences with hace.",
+    "minWords": 5,
+    "maxWords": 20,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "hace",
+        "label": "say how long ago with hace"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "preterito",
+        "label": "use a past verb: llegué, vine"
+      }
+    ],
+    "model": "Vine al apartamento hace dos semanas.",
+    "focus": "g:hace-ago",
+    "requires": [
+      "g:gender-articles",
+      "g:hace-ago",
+      "g:present-er-ir",
+      "g:preterite-irregular-strong",
+      "l:apartamento",
+      "l:hacer",
+      "l:semana",
+      "l:venir"
+    ]
+  },
+  {
+    "id": "w-u07-16",
+    "unit": "u07",
+    "prompt": "Vale asks when you last talked to the landlord. Reply in one short sentence with hace.",
+    "minWords": 5,
+    "maxWords": 18,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "hace",
+        "label": "say how long ago with hace"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "preterito",
+        "label": "use a past verb: hablé"
+      }
+    ],
+    "model": "Hablé con el vecino hace tres días.",
+    "focus": "g:hace-ago",
+    "requires": [
+      "g:gender-articles",
+      "g:hace-ago",
+      "g:present-er-ir",
+      "g:preterite-ar",
+      "l:día",
+      "l:hablar",
+      "l:hacer",
+      "l:vecino"
+    ]
+  },
+  {
+    "id": "w-u07-17",
+    "unit": "u07",
+    "prompt": "You are in a furniture shop with the shopkeeper, an older man you would call usted. Ask about the price of the lamp next to you and the sofa across the room.",
+    "minWords": 6,
+    "maxWords": 24,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(est[ea]s?|es[ea]s?|aquel(la)?s?)\\s+\\w+",
+        "label": "use este, ese or aquel with a noun"
+      },
+      {
+        "type": "question"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "tú",
+          "tienes",
+          "quieres"
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "¿Cuánto cuesta esta lámpara? ¿Y aquel sofá?",
+    "focus": "g:demonstratives",
+    "requires": [
+      "c:cuanto-cuesta",
+      "g:demonstratives",
+      "g:questions",
+      "l:cuesta",
+      "l:cuánto",
+      "l:lámpara",
+      "l:sofá",
+      "p:demonstratives-basic"
+    ]
+  },
+  {
+    "id": "w-u07-18",
+    "unit": "u07",
+    "prompt": "Mariana is helping you pick a place. Text her which of two rooms you prefer: say you like this one, and what the other one lacks.",
+    "minWords": 6,
+    "maxWords": 26,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(est[ea]s?|es[ea]s?|aquel(la)?s?)\\s+\\w+",
+        "label": "use este, ese or aquel with a noun"
+      },
+      {
+        "type": "negation"
+      }
+    ],
+    "model": "Me gusta este cuarto porque tiene una ventana. Ese cuarto no tiene ventana.",
+    "focus": "g:demonstratives",
+    "requires": [
+      "c:me-gusta",
+      "c:porque",
+      "c:tienes",
+      "g:cause-result",
+      "g:demonstratives",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:stem-boot",
+      "l:gustar",
+      "l:tener",
+      "l:ventana",
+      "p:demonstratives-basic"
+    ]
+  },
+  {
+    "id": "w-u07-19",
+    "unit": "u07",
+    "prompt": "A friend from Toronto asks what your building is like. Answer in two short sentences about the neighbours and the parking.",
+    "minWords": 6,
+    "maxWords": 26,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(mucha|mucho|muchos|muchas|muy|bastante|poca|poco|pocos|pocas)\\b",
+        "label": "use mucho, muy, bastante or poco"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Tengo muchos vecinos. Hay poco parqueadero.",
+    "focus": "g:quantifiers",
+    "requires": [
+      "c:hay",
+      "c:tengo",
+      "g:hay-vs-esta",
+      "g:yo-irregular",
+      "l:parqueadero",
+      "l:tener",
+      "l:vecino",
+      "p:poco-un-poco",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u07-20",
+    "unit": "u07",
+    "prompt": "Don Hernando asks how many people come to the café at night. Reply in one or two short sentences, giving an idea of the crowd.",
+    "minWords": 6,
+    "maxWords": 22,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(mucha|mucho|muchos|muchas|muy|bastante|poca|poco|pocos|pocas)\\b",
+        "label": "use mucho, muy, bastante or poco"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "gente",
+          "personas"
+        ],
+        "label": "talk about la gente or personas"
+      }
+    ],
+    "model": "Viene mucha gente, pero hay pocas mesas.",
+    "focus": "g:quantifiers",
+    "requires": [
+      "c:hay",
+      "g:hay-vs-esta",
+      "g:stem-boot",
+      "l:gente",
+      "l:mesa",
+      "l:venir",
+      "p:la-gente-singular",
+      "p:poco-un-poco",
+      "p:quantifiers-basic"
+    ]
   }
 ]
