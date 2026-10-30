@@ -1,0 +1,204 @@
+{
+  "node": "g:indirect-questions",
+  "hook": {
+    "line": "On the phone, a bare *¿Dónde queda?* can sound blunt. Tuck the question inside *¿Sabe…?* or *Quería saber…* and it turns polite. The same trick reports what someone asked you.",
+    "es": "¿Sabe si está abierto?",
+    "en": "Do you know if it's open? (formal)"
+  },
+  "examples": [
+    {
+      "es": "¿Sabe si está abierto?",
+      "en": "Do you know if it's open? (formal)"
+    },
+    {
+      "es": "No sé dónde lo dejé.",
+      "en": "I don't know where I left it."
+    },
+    {
+      "es": "Quería saber cuánto cuesta.",
+      "en": "I wanted to know how much it costs."
+    },
+    {
+      "es": "¿Me puede decir a qué hora cierra?",
+      "en": "Can you tell me what time it closes? (formal)"
+    },
+    {
+      "es": "Me preguntó dónde vivía.",
+      "en": "He asked me where I lived."
+    },
+    {
+      "es": "No sé si viene Vale.",
+      "en": "I don't know if Vale is coming."
+    }
+  ],
+  "rule": "To ask politely, or to pass on a question, put it inside a sentence that starts with an opener: *¿Sabe…?*, *No sé…*, *Quería saber…*, *Me preguntó…*\n\nThen the question word follows, and it keeps its accent: *dónde*, *cuánto*, *quién*, *a qué hora*.\n\nYes/no questions have no question word, so use *si* (\"if\", \"whether\"): *si está abierto*.\n\nThree things differ from English:\n*1.* The verb goes before the subject: *dónde está Vale*.\n*2.* The inner question gets no question marks: *No sé dónde lo dejé.* Only a question like *¿Sabe…?* does.\n*3.* After a past opener, the verb often slides into the past: *dónde vivía*.",
+  "smallPrint": "Teachers call these indirect (or embedded) questions. The yes/no kind begins with *si*, \"whether\".",
+  "readAndPick": [
+    {
+      "es": "¿Sabe si está abierto?",
+      "options": [
+        "Do you know if it's open?",
+        "Do you know where it's open?",
+        "Do you know who opened it?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No sé dónde lo dejé.",
+      "options": [
+        "I don't know when I left it.",
+        "I don't know where I left it.",
+        "I don't know why I left it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Quería saber cuánto cuesta.",
+      "options": [
+        "I wanted to know who pays.",
+        "I wanted to know what time it opens.",
+        "I wanted to know how much it costs."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Me puede decir a qué hora cierra?",
+      "options": [
+        "Can you tell me what time it closes?",
+        "Can you tell me where it closes?",
+        "Can you tell me who closes it?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No sé si viene Vale.",
+      "options": [
+        "I don't know when Vale is coming.",
+        "I don't know if Vale is coming.",
+        "I don't know who Vale is."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me preguntó dónde vivía.",
+      "options": [
+        "He asked me if I lived there.",
+        "He asked me who lived there.",
+        "He asked me where I lived."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Sabes quién llamó?",
+      "options": [
+        "Do you know who called?",
+        "Do you know why he called?",
+        "Do you know if he called?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Quiero saber si me escuchas.",
+      "options": [
+        "I want to know why you listen to me.",
+        "I want to know if you can hear me.",
+        "I want to know who is listening."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No sé por qué no contesta.",
+      "options": [
+        "I don't know who isn't answering.",
+        "I don't know if he answers.",
+        "I don't know why he doesn't answer."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Fill the gap and type the whole sentence: ¿Sabe ___ está abierto? (si / sí) Do you know if it's open? (formal)",
+      "answer": "¿Sabe si está abierto?",
+      "accept": [],
+      "why": "A yes/no question inside a sentence starts with *si*, with no accent."
+    },
+    {
+      "prompt": "I don't know where I left it.",
+      "answer": "No sé dónde lo dejé.",
+      "accept": [],
+      "why": "*Dónde* keeps its accent even inside a statement."
+    },
+    {
+      "prompt": "I wanted to know how much it costs.",
+      "answer": "Quería saber cuánto cuesta.",
+      "accept": [
+        "Quería saber cuánto vale."
+      ],
+      "why": "The opener *quería saber* is followed directly by the question word."
+    },
+    {
+      "prompt": "Can you tell me what time it closes? (formal)",
+      "answer": "¿Me puede decir a qué hora cierra?",
+      "accept": [
+        "¿Me dice a qué hora cierra?",
+        "¿Puede decirme a qué hora cierra?"
+      ],
+      "why": "*Decir* is the opener here, and *a qué hora* follows it."
+    },
+    {
+      "prompt": "I don't know if Vale is coming.",
+      "answer": "No sé si viene Vale.",
+      "accept": [
+        "No sé si Vale viene."
+      ],
+      "why": "No question word, so *si* introduces the yes/no question."
+    },
+    {
+      "prompt": "Do you know who called? (to a friend)",
+      "answer": "¿Sabes quién llamó?",
+      "accept": [],
+      "why": "*Quién* keeps its accent, and the sentence is the question, so it gets the marks."
+    },
+    {
+      "prompt": "Make it polite for a stranger (formal): ¿Dónde queda la notaría?",
+      "answer": "¿Sabe dónde queda la notaría?",
+      "accept": [
+        "¿Me puede decir dónde queda la notaría?",
+        "¿Sabe usted dónde queda la notaría?"
+      ],
+      "why": "Wrapping the question in *¿Sabe…?* softens it."
+    },
+    {
+      "prompt": "Tomás asked you, \"¿Cuánto cuesta?\" Report it: Tomás asked me how much it costs.",
+      "answer": "Tomás me preguntó cuánto cuesta.",
+      "accept": [
+        "Tomás me preguntó cuánto costaba."
+      ],
+      "why": "The question becomes part of a statement, so no question marks."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Sabe sí está abierto?",
+      "right": "¿Sabe si está abierto?",
+      "why": "Almost. *Si* meaning \"whether\" has no accent; *sí* is \"yes\"."
+    },
+    {
+      "wrong": "No sé donde lo dejé.",
+      "right": "No sé dónde lo dejé.",
+      "why": "Question words keep their accent, even inside a statement."
+    },
+    {
+      "wrong": "No sé dónde Vale está.",
+      "right": "No sé dónde está Vale.",
+      "why": "After a question word, Spanish puts the verb before the subject."
+    },
+    {
+      "wrong": "Quería saber ¿cuánto cuesta?",
+      "right": "Quería saber cuánto cuesta.",
+      "why": "The inner question is part of a statement, so it takes no question marks."
+    }
+  ],
+  "personal": "Imagine you are calling a shop or an office. Write two polite questions with *¿Sabe si…?* or *¿Me puede decir…?*, and one thing you don't know with *No sé…*"
+}

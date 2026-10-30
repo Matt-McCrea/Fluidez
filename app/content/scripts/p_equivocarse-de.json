@@ -1,0 +1,166 @@
+{
+  "node": "p:equivocarse-de",
+  "hook": {
+    "line": "Tomás has dialled the wrong number twice this week, and both times he only managed an English *sorry*. Here's the line that lets him back out gracefully.",
+    "es": "Perdón, me equivoqué de número.",
+    "en": "Sorry, I got the wrong number."
+  },
+  "examples": [
+    {
+      "es": "Perdón, me equivoqué de número.",
+      "en": "Sorry, I got the wrong number."
+    },
+    {
+      "es": "Nos equivocamos de bus.",
+      "en": "We got the wrong bus."
+    },
+    {
+      "es": "Me equivoqué en la cuenta.",
+      "en": "I made a mistake with the bill."
+    },
+    {
+      "es": "Tomás se equivocó de calle.",
+      "en": "Tomás took the wrong street."
+    },
+    {
+      "es": "Te equivocaste de día.",
+      "en": "You got the wrong day."
+    },
+    {
+      "es": "Se equivocaron de puerta.",
+      "en": "They went to the wrong door."
+    }
+  ],
+  "rule": "In English you say *I got the wrong number*. Spanish says you *made a mistake of* number: *me equivoqué de número*.\n\nAfter *de*, name the thing you picked wrongly. No *el* or *la*: *de número*, *de bus*, *de calle*, *de día*.\n\nThe verb is *equivocarse* and always has *me / te / se / nos*: *me equivoqué*, *te equivocaste*, *se equivocó*, *nos equivocamos*.\n\nWhen you slipped up *inside* something (a bill, a spelling), use *en*: *Me equivoqué en la cuenta*.",
+  "smallPrint": "Teachers call this a pronominal verb (it comes with *me, te, se*) followed by a preposition.",
+  "readAndPick": [
+    {
+      "es": "Perdón, me equivoqué de número.",
+      "options": [
+        "Sorry, I got the wrong number.",
+        "Sorry, you got the wrong number."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nos equivocamos de bus.",
+      "options": [
+        "I got the wrong bus.",
+        "We got the wrong bus.",
+        "They got the wrong bus."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Te equivocaste de día.",
+      "options": [
+        "You got the wrong day.",
+        "I got the wrong day."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se equivocaron de puerta.",
+      "options": [
+        "He went to the wrong door.",
+        "They went to the wrong door."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me equivoqué en la cuenta.",
+      "options": [
+        "I made a mistake with the bill.",
+        "I got the wrong bill."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tomás se equivocó de calle.",
+      "options": [
+        "Tomás took the wrong street.",
+        "We took the wrong street.",
+        "Tomás took two streets."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se equivocó de casa.",
+      "options": [
+        "You went to the wrong house.",
+        "She went to the wrong house."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nos equivocamos de número.",
+      "options": [
+        "We got the wrong number.",
+        "I got the wrong number."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *de* or *en*: Perdón, me equivoqué ___ número. Type the whole sentence.",
+      "answer": "Perdón, me equivoqué de número.",
+      "accept": [],
+      "why": "Wrong number means the wrong one of something: *de número*."
+    },
+    {
+      "prompt": "Choose *de* or *en*: Me equivoqué ___ la cuenta. Type the whole sentence.",
+      "answer": "Me equivoqué en la cuenta.",
+      "accept": [],
+      "why": "A slip inside the bill: *en*."
+    },
+    {
+      "prompt": "Say: We got the wrong bus.",
+      "answer": "Nos equivocamos de bus.",
+      "accept": [],
+      "why": "*We* takes *nos equivocamos*."
+    },
+    {
+      "prompt": "Say to a friend: You got the wrong day.",
+      "answer": "Te equivocaste de día.",
+      "accept": [],
+      "why": "For *you* (a friend), *te equivocaste*."
+    },
+    {
+      "prompt": "Say: Tomás took the wrong street.",
+      "answer": "Tomás se equivocó de calle.",
+      "accept": [],
+      "why": "Someone else gets *se equivocó*."
+    },
+    {
+      "prompt": "Say: They went to the wrong door.",
+      "answer": "Se equivocaron de puerta.",
+      "accept": [],
+      "why": "*They* takes *se equivocaron*."
+    },
+    {
+      "prompt": "Make it about we: *Me equivoqué de número.*",
+      "answer": "Nos equivocamos de número.",
+      "accept": [],
+      "why": "Both the pronoun and the verb change: *nos equivocamos*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me equivoqué del número.",
+      "right": "Me equivoqué de número.",
+      "why": "After *de* there's no article: *de número*."
+    },
+    {
+      "wrong": "Me equivoqué número.",
+      "right": "Me equivoqué de número.",
+      "why": "Almost. You still need *de* before what you got wrong."
+    },
+    {
+      "wrong": "Me equivoqué de la cuenta.",
+      "right": "Me equivoqué en la cuenta.",
+      "why": "For a mistake inside something, like a bill, it's *en*."
+    }
+  ],
+  "personal": "Think of a time you went to the wrong place or the wrong day. Write it with *me equivoqué de...*"
+}

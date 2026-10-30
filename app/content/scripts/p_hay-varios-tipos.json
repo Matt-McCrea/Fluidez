@@ -1,0 +1,178 @@
+{
+  "node": "p:hay-varios-tipos",
+  "hook": {
+    "line": "Explaining a topic is easier when you sort it: how many kinds are there, and which is which? Spanish has a tidy frame for that.",
+    "es": "Hay varios tipos de café en Colombia.",
+    "en": "There are several kinds of coffee in Colombia."
+  },
+  "examples": [
+    {
+      "es": "Hay varios tipos de café en Colombia.",
+      "en": "There are several kinds of coffee in Colombia."
+    },
+    {
+      "es": "Hay tres tipos de clientes en el café.",
+      "en": "There are three kinds of customers in the café."
+    },
+    {
+      "es": "El primero es el cliente que viene todos los días.",
+      "en": "The first is the customer who comes every day."
+    },
+    {
+      "es": "El segundo es el turista.",
+      "en": "The second is the tourist."
+    },
+    {
+      "es": "Por último, está el que nunca paga.",
+      "en": "Finally, there's the one who never pays."
+    },
+    {
+      "es": "Es un ensayo corto, es decir, de una página.",
+      "en": "It's a short essay, that is, one page long."
+    }
+  ],
+  "rule": "To sort a topic, open with *Hay varios tipos de…* (or *clases de*), or give a number: *Hay tres tipos de…*\n\nThen list them: *el primero*, *el segundo*, *el tercero*, and *por último* for the last one. For a feminine thing, use *la primera*, *la segunda*.\n\nTo say the same thing in other words, add *es decir* (that is).\n\nEnglish says \"there are\"; Spanish says *hay*, which never changes.",
+  "smallPrint": "Teachers call *es decir* a reformulation marker: it tells the reader you are about to say the same thing more simply.",
+  "readAndPick": [
+    {
+      "es": "Hay tres tipos de clientes en el café.",
+      "options": [
+        "There are two kinds of customers in the café.",
+        "There are three kinds of customers in the café.",
+        "There is one customer in the café."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El primero es el cliente que viene todos los días.",
+      "options": [
+        "The last is the customer who comes every day.",
+        "The second is the customer who comes every day.",
+        "The first is the customer who comes every day."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El segundo es el turista.",
+      "options": [
+        "The second is the tourist.",
+        "The first is the tourist.",
+        "The tourist is second to arrive."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Por último, está el que nunca paga.",
+      "options": [
+        "First, there's the one who never pays.",
+        "Finally, there's the one who never pays.",
+        "In the end, he never pays."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es un ensayo corto, es decir, de una página.",
+      "options": [
+        "It's a short essay, for example, one page.",
+        "It's a short essay, but it has one page.",
+        "It's a short essay, that is, one page long."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Hay varias clases de pan en la panadería de Vale.",
+      "options": [
+        "There are several kinds of bread at Vale's bakery.",
+        "Vale teaches a class on bread.",
+        "There is one kind of bread at Vale's bakery."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hay dos tipos de ensayo.",
+      "options": [
+        "There are three kinds of essay.",
+        "There are two kinds of essay.",
+        "There is an essay for two."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Por último, viene la conclusión.",
+      "options": [
+        "First comes the conclusion.",
+        "The conclusion is coming soon.",
+        "Finally comes the conclusion."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *___ tres tipos de clientes en el café.* (*Hay* or *Es*) There are three kinds of customers in the café.",
+      "answer": "Hay tres tipos de clientes en el café.",
+      "accept": [],
+      "why": "To say that things exist, Spanish uses *hay*."
+    },
+    {
+      "prompt": "Say: There are several kinds of coffee in Colombia.",
+      "answer": "Hay varios tipos de café en Colombia.",
+      "accept": [
+        "Hay varias clases de café en Colombia."
+      ],
+      "why": "*Hay varios tipos de* opens the sorting."
+    },
+    {
+      "prompt": "Say: The first is the customer who comes every day.",
+      "answer": "El primero es el cliente que viene todos los días.",
+      "accept": [],
+      "why": "*El primero* matches a masculine word like *cliente*."
+    },
+    {
+      "prompt": "Say: Finally, there's the one who never pays.",
+      "answer": "Por último, está el que nunca paga.",
+      "accept": [
+        "Por último está el que nunca paga."
+      ],
+      "why": "*Por último* marks the last item in the list."
+    },
+    {
+      "prompt": "Say: There are several kinds of bread at Vale's bakery.",
+      "answer": "Hay varias clases de pan en la panadería de Vale.",
+      "accept": [
+        "Hay varios tipos de pan en la panadería de Vale."
+      ],
+      "why": "*Clases* is feminine, so it takes *varias*."
+    },
+    {
+      "prompt": "Change it to two kinds, not several: *Hay varios tipos de ensayo.*",
+      "answer": "Hay dos tipos de ensayo.",
+      "accept": [],
+      "why": "A number replaces *varios* and the rest stays the same."
+    },
+    {
+      "prompt": "Say: It's a short essay, that is, one page long.",
+      "answer": "Es un ensayo corto, es decir, de una página.",
+      "accept": [],
+      "why": "*Es decir* says the same thing again in simpler words."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Están varios tipos de café en Colombia.",
+      "right": "Hay varios tipos de café en Colombia.",
+      "why": "Almost. To say that something exists, Spanish uses *hay*, not *están*."
+    },
+    {
+      "wrong": "Primero es el turista.",
+      "right": "El primero es el turista.",
+      "why": "Say *el primero*, with its article, like \"the first one\"."
+    },
+    {
+      "wrong": "Al último, está el que nunca paga.",
+      "right": "Por último, está el que nunca paga.",
+      "why": "For \"finally\" in a list, the set phrase is *por último*."
+    }
+  ],
+  "personal": "Pick something you know well: music, food, sports. Say how many kinds there are with *Hay tres tipos de…*, then name the first with *El primero es…*"
+}

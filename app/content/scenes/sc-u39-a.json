@@ -1,0 +1,201 @@
+{
+  "id": "sc-u39-a",
+  "unit": "u39",
+  "title": "Ensayo general",
+  "spare": false,
+  "brief": "You're Tomás, rehearsing tomorrow's talk to the heritage committee with Mariana, who plays the committee and edits as you go. Use a clear structure: an opening, your points in order, and a close. Speak to the committee as a group, so use ustedes and su.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Mariana: Mañana el comité te escucha a las diez. A ver, empieza.",
+      "npcEn": "Mariana: Tomorrow the committee listens to you at ten. Go on, begin.",
+      "intent": "Open the talk by saying that today you are going to talk to them about your grandmother's café.",
+      "accept": [
+        "Hoy les voy a hablar del café de mi abuela.",
+        "Buenos días. Hoy les voy a hablar del café de Rosa, mi abuela.",
+        "Hoy les voy a hablar de la historia del café de mi abuela."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bhoy les voy a hablar\\b",
+          "flags": "iu",
+          "label": "open the talk: hoy les voy a hablar de..."
+        }
+      ],
+      "focus": "p:hoy-les-voy-a-hablar",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Bien. Ahora tu primera razón. ¿Por qué importa el café?",
+      "npcEn": "Good. Now your first reason. Why does the café matter?",
+      "intent": "Say that, first of all, the café is part of the neighbourhood.",
+      "accept": [
+        "Primero, el café forma parte del barrio.",
+        "Primero, el café forma parte de La Candelaria, mi barrio.",
+        "Primero de todo, el café forma parte del barrio."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(en primer lugar|primero)\\b",
+          "flags": "iu",
+          "label": "start with: primero"
+        }
+      ],
+      "focus": "g:discourse-structure",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Y la segunda?",
+      "npcEn": "And the second one?",
+      "intent": "Add that keeping the café open is important for the neighbours. Start your point with the verb: Mantener...",
+      "accept": [
+        "Además, mantener el café abierto es importante para los vecinos.",
+        "Mantener abierto el café es muy importante para los vecinos.",
+        "Además, abrir el café cada mañana es importante para el barrio."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(^|[.,;:]\\s*)\\p{L}+(ar|er|ir)\\b[^.]*\\bes\\b",
+          "flags": "iu",
+          "label": "make the action the subject: mantener ... es importante"
+        }
+      ],
+      "focus": "g:infinitive-subject",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "En el texto salen Rosa y la empresa Altamira. ¿Cuál de las dos quiere comprar la cuadra?",
+      "npcEn": "In the text, Rosa and the company Altamira appear. Which of the two wants to buy the block?",
+      "intent": "Answer with 'esta' to point back to the company you just heard named: this one wants to buy the block.",
+      "accept": [
+        "Esta quiere comprar toda la cuadra.",
+        "Esta empresa quiere comprar la cuadra.",
+        "Altamira. Esta empresa quiere comprar toda la cuadra."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\besta\\b",
+          "flags": "iu",
+          "label": "point back with esta (the latter)"
+        }
+      ],
+      "focus": "g:referring-back",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Muy bien. ¿Y cómo terminas?",
+      "npcEn": "Very good. And how do you finish?",
+      "intent": "Close the talk: to finish, thank the committee for their attention.",
+      "accept": [
+        "Para terminar, muchas gracias por su atención.",
+        "En conclusión, el café es de todos. Gracias por su atención.",
+        "En resumen, el café forma parte de nuestro barrio. Muchas gracias por su atención."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(para terminar|en conclusión|en resumen)\\b",
+          "flags": "iu",
+          "label": "signal the close: para terminar"
+        },
+        {
+          "type": "regex",
+          "pattern": "gracias por su atención",
+          "flags": "iu",
+          "label": "thank them: gracias por su atención"
+        }
+      ],
+      "focus": "p:para-terminar",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-ver",
+    "c:ademas",
+    "c:bien-y-tu",
+    "c:gracias-de-antemano",
+    "c:gracias-de-nada",
+    "c:gracias-por-su-atencion",
+    "c:hola-buenos-dias",
+    "c:voy-a",
+    "g:cada-cualquier",
+    "g:discourse-structure",
+    "g:gender-articles",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:possessives",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "l:abrir",
+    "l:abuela",
+    "l:además",
+    "l:ahora",
+    "l:atención",
+    "l:barrio",
+    "l:bien",
+    "l:bueno",
+    "l:café",
+    "l:comité",
+    "l:comprar",
+    "l:conclusión",
+    "l:cuadra",
+    "l:cuál",
+    "l:cómo",
+    "l:día",
+    "l:empezar",
+    "l:empresa",
+    "l:escuchar",
+    "l:formar",
+    "l:hablar",
+    "l:historia",
+    "l:hoy",
+    "l:importante",
+    "l:importar",
+    "l:ir",
+    "l:mantener",
+    "l:mañana",
+    "l:parte",
+    "l:querer",
+    "l:qué",
+    "l:razón",
+    "l:resumen",
+    "l:salir",
+    "l:ser",
+    "l:terminar",
+    "l:texto",
+    "l:vecino",
+    "l:ver",
+    "p:a-lo-largo-de-esta-charla",
+    "p:al-final-en-resumen",
+    "p:demonstratives-basic",
+    "p:es-adj-inf",
+    "p:formar-parte-de",
+    "p:hoy-les-voy-a-hablar",
+    "p:me-te-nos-objects",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:para-terminar",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:presentation-frame",
+    "p:presenting-to-audience",
+    "p:quantifiers-basic",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:veces-al"
+  ]
+}

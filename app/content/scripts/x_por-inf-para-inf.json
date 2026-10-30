@@ -1,0 +1,48 @@
+{
+  "node": "x:por-inf-para-inf",
+  "hook": {
+    "line": "Tomás woke up at five, and the neighbours asked him two different questions about it. Why did he get up (what pushed him)? And what for (what is he aiming at)? Both answers end in a plain verb, and the tiny word before it carries the whole difference.",
+    "es": "Me levanté temprano para abrir el café.",
+    "en": "I got up early to open the café."
+  },
+  "examples": [
+    { "es": "Lo despidieron por llegar tarde.", "en": "He was fired for arriving late." },
+    { "es": "Salimos temprano para no llegar tarde.", "en": "We left early so as not to arrive late." },
+    { "es": "Lo felicitaron por ayudar a los vecinos.", "en": "They congratulated him for helping the neighbours." },
+    { "es": "Vale fue al mercado para comprar fruta.", "en": "Vale went to the market to buy fruit." },
+    { "es": "La cerraron por no tener permiso.", "en": "They closed it for not having a permit. (the café)" },
+    { "es": "Tomás se levantó temprano para abrir el café.", "en": "Tomás got up early to open the café." },
+    { "es": "Gracias por venir.", "en": "Thank you for coming." },
+    { "es": "Estudio para hablar con mi abuela.", "en": "I study to talk with my grandmother." }
+  ],
+  "rule": "Both *por* and *para* can be followed by a plain *-r* verb. The meaning is opposite.\n\n*Por* + verb looks back. It tells you the reason something happened: what caused it.\n*Lo despidieron por llegar tarde.* Arriving late is what got him fired.\n\n*Para* + verb looks forward. It tells you the goal: what someone is trying to achieve.\n*Salimos temprano para no llegar tarde.* Arriving on time is what we are aiming at.\n\nQuick test: if you could say *because he...*, use *por*. If you could say *in order to...*, use *para*.\n\nEnglish uses *for -ing* for the first and *to* for the second. Notice that Spanish gives you a different small word for each.",
+  "smallPrint": "Teachers call this *por* (cause) against *para* (purpose) before an infinitive.",
+  "readAndPick": [
+    { "es": "Lo despidieron por llegar tarde.", "options": ["They fired him so he'd arrive late.", "They fired him for arriving late.", "They fired him to go home."], "answer": 1 },
+    { "es": "Salimos temprano para no llegar tarde.", "options": ["We left early so as not to arrive late.", "We left early because we arrived late.", "We left early for arriving late."], "answer": 0 },
+    { "es": "Vale fue al mercado para comprar fruta.", "options": ["Vale went to the market because she bought fruit.", "Vale went to the market to buy fruit.", "Vale was thanked for buying fruit."], "answer": 1 },
+    { "es": "Lo felicitaron por ayudar a los vecinos.", "options": ["They congratulated him for helping the neighbours.", "They congratulated him in order to help the neighbours.", "They congratulated the neighbours to help him."], "answer": 0 },
+    { "es": "Tomás se levantó temprano para abrir el café.", "options": ["Tomás got up early because he opened the café.", "Tomás got up early to open the café.", "Tomás was praised for opening the café."], "answer": 1 },
+    { "es": "La cerraron por no tener permiso.", "options": ["They closed it to get a permit.", "They closed it for not having a permit.", "They closed it so nobody would have a permit."], "answer": 1 },
+    { "es": "Gracias por venir.", "options": ["Thanks for coming.", "Thanks so you'll come.", "Thanks, I'm coming."], "answer": 0 },
+    { "es": "Hablé con la alcaldía para pedir ayuda.", "options": ["I spoke with the council because I asked for help.", "I spoke with the council to ask for help.", "I spoke with the council after they asked me for help."], "answer": 1 },
+    { "es": "Mariana llamó a Hernando para hacerle una pregunta.", "options": ["Mariana called Hernando to ask him a question.", "Mariana called Hernando for being asked a question.", "Mariana called Hernando after he asked her a question."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *por* or *para*: Lo despidieron ___ llegar tarde. (the cause)", "answer": "Lo despidieron por llegar tarde.", "accept": [], "why": "Arriving late is the reason it happened: *por*." },
+    { "prompt": "Choose *por* or *para*: Salimos temprano ___ no llegar tarde. (the goal)", "answer": "Salimos temprano para no llegar tarde.", "accept": [], "why": "It is what we are aiming at: *para*." },
+    { "prompt": "Say: Vale went to the market to buy fruit.", "answer": "Vale fue al mercado para comprar fruta.", "accept": [], "why": "Buying fruit is her goal, so *para*." },
+    { "prompt": "Say: Thank you for coming. (to a friend)", "answer": "Gracias por venir.", "accept": [], "why": "Coming is what you are thanking for: *por*." },
+    { "prompt": "Say: They congratulated him for helping the neighbours.", "answer": "Lo felicitaron por ayudar a los vecinos.", "accept": [], "why": "Helping is the reason for the congratulations: *por*." },
+    { "prompt": "Say: I study to talk with my grandmother.", "answer": "Estudio para hablar con mi abuela.", "accept": [], "why": "Talking with her is the purpose: *para*." },
+    { "prompt": "Say: He got up early to open the café. (Tomás)", "answer": "Tomás se levantó temprano para abrir el café.", "accept": ["Se levantó temprano para abrir el café."], "why": "Opening the café is the purpose, so *para*." },
+    { "prompt": "Make it negative: La cerraron por tener permiso.", "answer": "La cerraron por no tener permiso.", "accept": [], "why": "*No* goes right before the infinitive." }
+  ],
+  "pitfalls": [
+    { "wrong": "Lo despidieron para llegar tarde.", "right": "Lo despidieron por llegar tarde.", "why": "Almost. Arriving late is the reason, not the goal, so *por*." },
+    { "wrong": "Salimos temprano por no llegar tarde.", "right": "Salimos temprano para no llegar tarde.", "why": "You are aiming at something, so use *para*." },
+    { "wrong": "Gracias para venir.", "right": "Gracias por venir.", "why": "After *gracias*, the reason you are thanking someone takes *por*." },
+    { "wrong": "Vale fue al mercado por comprar fruta.", "right": "Vale fue al mercado para comprar fruta.", "why": "Going to buy something is a purpose, so *para*." }
+  ],
+  "personal": "Say why you did something today with *por* and a verb, and what you did it for with *para* and a verb: *Salí temprano para...*"
+}

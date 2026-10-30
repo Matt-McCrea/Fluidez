@@ -1,0 +1,178 @@
+{
+  "node": "p:tratar-de",
+  "hook": {
+    "line": "You are trying to get better at Spanish, and this is the phrase for it: you try to do things. The same verb also says what a film is about.",
+    "es": "Trato de llegar temprano.",
+    "en": "I try to arrive early."
+  },
+  "examples": [
+    {
+      "es": "Trato de llegar temprano.",
+      "en": "I try to arrive early."
+    },
+    {
+      "es": "Tomás trata de hablar español con los clientes.",
+      "en": "Tomás tries to speak Spanish with the customers."
+    },
+    {
+      "es": "Trato de no comer postre.",
+      "en": "I try not to eat dessert."
+    },
+    {
+      "es": "Tratamos de salvar el café.",
+      "en": "We're trying to save the café."
+    },
+    {
+      "es": "La película trata de una familia en Cali.",
+      "en": "The film is about a family in Cali."
+    },
+    {
+      "es": "No se trata de plata, se trata de respeto.",
+      "en": "It isn't about money, it's about respect."
+    }
+  ],
+  "rule": "*Tratar de* plus an infinitive means \"try to\": *trato de*, *tratas de*, *trata de*, *tratamos de*, *tratan de*. English \"try to\" has no extra word; Spanish needs *de*.\n\nFor \"try not to\", put *no* before the infinitive: *trato de no llegar tarde*.\n\nThe same verb with a thing as subject says what it is about: *la película trata de…* And *se trata de* says what a situation is about.\n\n*Intentar* also means \"try\", but without *de*.",
+  "smallPrint": "Teachers call *tratar de* a verb with a fixed preposition: the verb and *de* travel together.",
+  "readAndPick": [
+    {
+      "es": "Trato de llegar temprano.",
+      "options": [
+        "I try to arrive early.",
+        "It's about arriving early.",
+        "He tries to arrive early."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tomás trata de hablar español con los clientes.",
+      "options": [
+        "The customers try to speak Spanish with Tomás.",
+        "Tomás is about speaking Spanish.",
+        "Tomás tries to speak Spanish with the customers."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Trato de no comer postre.",
+      "options": [
+        "I try to eat dessert.",
+        "I try not to eat dessert.",
+        "I don't try dessert."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La película trata de una familia en Cali.",
+      "options": [
+        "The film tries to find a family in Cali.",
+        "The film is about a family in Cali.",
+        "The family tries to watch the film in Cali."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tratamos de salvar el café.",
+      "options": [
+        "They're trying to save the café.",
+        "I'm trying to save the café.",
+        "We're trying to save the café."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Se trata de salvar el café.",
+      "options": [
+        "It's a matter of saving the café.",
+        "We're trying to save the café.",
+        "He saves the café."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Tratas de dormir?",
+      "options": [
+        "Is he trying to sleep?",
+        "Are you (informal) trying to sleep?",
+        "Are you (formal) trying to sleep?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No se trata de plata, se trata de respeto.",
+      "options": [
+        "It isn't about money, it's about respect.",
+        "I try to get money and respect.",
+        "There is no money, only respect."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Trato ___ llegar temprano.* (*de* or *a*) I try to arrive early.",
+      "answer": "Trato de llegar temprano.",
+      "accept": [
+        "Intento llegar temprano."
+      ],
+      "why": "\"Try to\" is *tratar de* plus an infinitive."
+    },
+    {
+      "prompt": "Say: Tomás tries to speak Spanish with the customers.",
+      "answer": "Tomás trata de hablar español con los clientes.",
+      "accept": [],
+      "why": "One person, so *trata de*."
+    },
+    {
+      "prompt": "Say: We're trying to save the café.",
+      "answer": "Tratamos de salvar el café.",
+      "accept": [
+        "Intentamos salvar el café."
+      ],
+      "why": "*Tratamos* is *we*, then *de* and the infinitive."
+    },
+    {
+      "prompt": "Say: The film is about a family in Cali.",
+      "answer": "La película trata de una familia en Cali.",
+      "accept": [],
+      "why": "A named thing is the subject, so there is no *se*."
+    },
+    {
+      "prompt": "Make it \"try not to\": *Trato de comer postre.*",
+      "answer": "Trato de no comer postre.",
+      "accept": [],
+      "why": "*No* goes right before the infinitive."
+    },
+    {
+      "prompt": "Say it about Mariana: *Trato de terminar el artículo.*",
+      "answer": "Mariana trata de terminar el artículo.",
+      "accept": [],
+      "why": "*Trata* is the ending for *she*."
+    },
+    {
+      "prompt": "Say: It isn't about money, it's about respect.",
+      "answer": "No se trata de plata, se trata de respeto.",
+      "accept": [
+        "No se trata de plata. Se trata de respeto."
+      ],
+      "why": "For a situation with no subject, use *se trata de*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Trato llegar temprano.",
+      "right": "Trato de llegar temprano.",
+      "why": "English \"try to\" has no extra word, but Spanish needs *de*."
+    },
+    {
+      "wrong": "La película se trata de una familia.",
+      "right": "La película trata de una familia.",
+      "why": "Almost. When you name the thing, it is the subject, so *se* drops out."
+    },
+    {
+      "wrong": "Trato no de llegar tarde.",
+      "right": "Trato de no llegar tarde.",
+      "why": "*No* goes right before the infinitive: *de no llegar*."
+    }
+  ],
+  "personal": "What are you trying to do this month? Say it with *Trato de…* Then add something you try not to do, with *Trato de no…*"
+}

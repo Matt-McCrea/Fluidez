@@ -1,0 +1,183 @@
+{
+ "node": "x:decir-que-ind-subj",
+ "hook": {
+  "line": "Hernando leaves a message with Vale: \"he says you're coming\" or \"he says you should come\"? One ending apart, and the plans change completely.",
+  "es": "Dice que vienes mañana.",
+  "en": "He says you're coming tomorrow. (to a friend)"
+ },
+ "examples": [
+  {
+   "es": "Dice que vienes mañana.",
+   "en": "He says you're coming tomorrow. (to a friend)"
+  },
+  {
+   "es": "Dice que vengas mañana.",
+   "en": "He says to come tomorrow. (to a friend)"
+  },
+  {
+   "es": "Vale dice que el café está cerrado.",
+   "en": "Vale says the café is closed."
+  },
+  {
+   "es": "Vale dice que cierres el café.",
+   "en": "Vale says for you to close the café. (to a friend)"
+  },
+  {
+   "es": "Mi mamá dice que trabajo mucho.",
+   "en": "My mom says I work a lot."
+  },
+  {
+   "es": "Mi mamá dice que trabaje menos.",
+   "en": "My mom says I should work less."
+  }
+ ],
+ "rule": "*Decir que* can mean two things, and the verb after it tells you which.\n\nIf you are passing on **news**, the verb stays in its normal form (*vienes*, *está*, *trabajo*). It is a fact.\n\nIf you are passing on an **order or a wish**, the verb takes the \"opposite\" ending (*vengas*, *cierres*, *trabaje*). It is something that should happen.\n\n*Dice que vienes* = he says you are coming.\n*Dice que vengas* = he says to come.\n\nEnglish says \"he says...\" in both cases. In Spanish, listen to the last letter.",
+ "smallPrint": "Teachers call this indicative for information and subjunctive for influence, both after *decir que*.",
+ "readAndPick": [
+  {
+   "es": "Dice que vienes mañana.",
+   "options": [
+    "He says you're coming tomorrow.",
+    "He says to come tomorrow.",
+    "He says he came tomorrow."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Dice que vengas mañana.",
+   "options": [
+    "He says you're coming tomorrow.",
+    "He says to come tomorrow.",
+    "He says he comes tomorrow."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Vale dice que cierras a las seis.",
+   "options": [
+    "Vale says you close at six.",
+    "Vale says to close at six.",
+    "Vale says she closed at six."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Vale dice que cierres a las seis.",
+   "options": [
+    "Vale says you close at six.",
+    "Vale says to close at six.",
+    "Vale says it closes at six."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Mi mamá dice que trabajo mucho.",
+   "options": [
+    "My mom says I should work a lot.",
+    "My mom says I work a lot.",
+    "My mom says she works a lot."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Mi mamá dice que trabaje menos.",
+   "options": [
+    "My mom says I work less.",
+    "My mom says she works less.",
+    "My mom says I should work less."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Hernando dice que Tomás está en el café.",
+   "options": [
+    "Hernando says Tomás is at the café.",
+    "Hernando says Tomás should be at the café.",
+    "Hernando says to go to the café."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Hernando dice que Tomás esté en el café.",
+   "options": [
+    "Hernando says Tomás is at the café.",
+    "Hernando says Tomás should be at the café.",
+    "Hernando says he is at the café."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Dile que llamo mañana.",
+   "options": [
+    "Tell him to call tomorrow.",
+    "Tell him I'll call tomorrow.",
+    "Tell him he called yesterday."
+   ],
+   "answer": 1
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Choose the right form and type the whole sentence (He says you're coming tomorrow. To a friend): Dice que ___ mañana. (vienes / vengas)",
+   "answer": "Dice que vienes mañana.",
+   "accept": [],
+   "why": "You are passing on news, so the verb stays normal: *vienes*."
+  },
+  {
+   "prompt": "Choose the right form and type the whole sentence (He says to come tomorrow. To a friend): Dice que ___ mañana. (vienes / vengas)",
+   "answer": "Dice que vengas mañana.",
+   "accept": [],
+   "why": "An order uses the \"opposite\" ending: *vengas*."
+  },
+  {
+   "prompt": "Type in Spanish: Vale says the café is closed.",
+   "answer": "Vale dice que el café está cerrado.",
+   "accept": [],
+   "why": "A fact keeps its normal verb: *está*."
+  },
+  {
+   "prompt": "Type in Spanish (to a friend): Vale says for you to close the café.",
+   "answer": "Vale dice que cierres el café.",
+   "accept": [],
+   "why": "An order to a friend: *cierres*."
+  },
+  {
+   "prompt": "Type in Spanish: My mom says I work a lot.",
+   "answer": "Mi mamá dice que trabajo mucho.",
+   "accept": [],
+   "why": "News about me: *trabajo*, the normal form."
+  },
+  {
+   "prompt": "Make it an order: Mi mamá dice que trabajo mucho. (My mom says I should work less)",
+   "answer": "Mi mamá dice que trabaje menos.",
+   "accept": [],
+   "why": "A wish uses *trabaje*, not *trabajo*."
+  },
+  {
+   "prompt": "Make it news: Dile que llame mañana. (Tell him I'll call tomorrow)",
+   "answer": "Dile que llamo mañana.",
+   "accept": [
+    "Dile que yo llamo mañana."
+   ],
+   "why": "You are telling him a fact about you, so *llamo*."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Mi mamá dice que trabajo menos.",
+   "right": "Mi mamá dice que trabaje menos.",
+   "why": "Almost. An order uses the \"opposite\" ending, *trabaje*, not *trabajo*."
+  },
+  {
+   "wrong": "Dile que viene mañana.",
+   "right": "Dile que venga mañana.",
+   "why": "To tell someone to come you need the request ending: *venga*."
+  },
+  {
+   "wrong": "Vale dice que cierre a las seis.",
+   "right": "Vale dice que cierra a las seis.",
+   "why": "If it is just a fact about the café, keep the normal verb: *cierra*."
+  }
+ ],
+ "personal": "Think of a message someone gave you this week. Write it twice: once as news (*dice que...*) and once as an order (*dice que...* with a changed ending)."
+}

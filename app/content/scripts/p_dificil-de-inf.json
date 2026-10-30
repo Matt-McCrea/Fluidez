@@ -1,0 +1,43 @@
+{
+  "node": "p:dificil-de-inf",
+  "hook": {
+    "line": "Tomás is staring at his first Spanish essay. Everything is hard in some way, and English says \"hard to do\" without a care. Spanish has two shapes for it, and this is the first one.",
+    "es": "Este ensayo es difícil de escribir.",
+    "en": "This essay is hard to write."
+  },
+  "examples": [
+    { "es": "Esta palabra es difícil de pronunciar.", "en": "This word is hard to pronounce." },
+    { "es": "El problema es fácil de resolver.", "en": "The problem is easy to fix." },
+    { "es": "Es una historia difícil de creer.", "en": "It's a hard story to believe." },
+    { "es": "Este ensayo es difícil de escribir.", "en": "This essay is hard to write." },
+    { "es": "Hernando es difícil de convencer.", "en": "Hernando is hard to convince." },
+    { "es": "Las preguntas son fáciles de responder.", "en": "The questions are easy to answer." }
+  ],
+  "rule": "Start with the thing, then *ser*, then the adjective, then *de* and an infinitive.\n\n*La palabra es difícil de pronunciar.*\n\nEnglish says \"to pronounce\" with nothing in between. Spanish needs the little *de*. The thing you talk about is the subject, so the adjective matches it: *fácil* and *fáciles*, *difícil* and *difíciles*.\n\nThe same frame works with *imposible*, *agradable*, *raro*, *posible*: *Un libro agradable de leer*.",
+  "smallPrint": "Teachers call this *de* plus infinitive after an adjective, a complement of the adjective.",
+  "readAndPick": [
+    { "es": "El café es fácil de preparar.", "options": ["It's easy to make coffee.", "The coffee is easy to make."], "answer": 1 },
+    { "es": "Las preguntas son difíciles de responder.", "options": ["The question is hard to answer.", "The questions are hard to answer."], "answer": 1 },
+    { "es": "La pregunta es difícil de responder.", "options": ["The question is hard to answer.", "The questions are hard to answer."], "answer": 0 },
+    { "es": "Esta palabra es difícil de pronunciar.", "options": ["This word is hard to pronounce.", "This word is hard, so I pronounce it.", "Pronouncing is hard for this word."], "answer": 0 },
+    { "es": "Hernando es difícil de convencer.", "options": ["Hernando convinces people with difficulty.", "Hernando is hard to convince.", "Hernando is hard, so he convinces."], "answer": 1 },
+    { "es": "Es una historia difícil de creer.", "options": ["It's a hard story to believe.", "It's hard to tell a story.", "It's a hard story to tell."], "answer": 0 },
+    { "es": "Estos ensayos son difíciles de escribir.", "options": ["This essay is hard to write.", "These essays are hard to write.", "Writing essays is hard."], "answer": 1 },
+    { "es": "El problema es fácil de resolver.", "options": ["The problem is easy to fix.", "It's easy to fix problems.", "The problems are easy to fix."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose the right form and type the whole sentence (This word is hard to pronounce): *Esta palabra es difícil ___ pronunciar.* (*de* or *a*)", "answer": "Esta palabra es difícil de pronunciar.", "accept": [], "why": "After the adjective, Spanish links the infinitive with *de*." },
+    { "prompt": "Type in Spanish: The problem is easy to fix.", "answer": "El problema es fácil de resolver.", "accept": [], "why": "The problem is the subject, so *fácil* matches it and *de* leads into *resolver*." },
+    { "prompt": "Type in Spanish: This essay is hard to write.", "answer": "Este ensayo es difícil de escribir.", "accept": [], "why": "The essay is the subject: *ensayo* is masculine, so *este* and *difícil*." },
+    { "prompt": "Type in Spanish: The questions are easy to answer.", "answer": "Las preguntas son fáciles de responder.", "accept": [], "why": "The questions are plural, so *son* and *fáciles*." },
+    { "prompt": "Make it plural (These essays are hard to write): *Este ensayo es difícil de escribir.*", "answer": "Estos ensayos son difíciles de escribir.", "accept": [], "why": "Everything before *de* turns plural, but the infinitive never changes." },
+    { "prompt": "Make it negative (The problem isn't easy to fix): *El problema es fácil de resolver.*", "answer": "El problema no es fácil de resolver.", "accept": [], "why": "*No* goes in front of *es*." },
+    { "prompt": "Type in Spanish: Hernando is hard to convince.", "answer": "Hernando es difícil de convencer.", "accept": [], "why": "Hernando is the subject, and *de convencer* says what is hard about him." }
+  ],
+  "pitfalls": [
+    { "wrong": "Esta palabra es difícil pronunciar.", "right": "Esta palabra es difícil de pronunciar.", "why": "Almost. When the thing is the subject, Spanish needs *de* before the infinitive." },
+    { "wrong": "Las preguntas son difícil de responder.", "right": "Las preguntas son difíciles de responder.", "why": "The adjective describes the questions, so it is plural too." },
+    { "wrong": "Este ensayo es difícil de escribirlo.", "right": "Este ensayo es difícil de escribir.", "why": "The essay is already the subject, so no *lo* is needed after the infinitive." }
+  ],
+  "personal": "Tell us one thing in your life that is hard or easy, using *de* and an infinitive, for example *Mi jefe es difícil de convencer*."
+}

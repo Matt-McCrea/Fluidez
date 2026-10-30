@@ -1,0 +1,43 @@
+{
+  "node": "x:dificil-de-es-dificil",
+  "hook": {
+    "line": "Tomás keeps saying the same hard thing two ways, and Vale keeps telling him both are fine. They are, but one starts with the text and the other starts with the word *es*, and you need to know which is which.",
+    "es": "Este texto es difícil de entender.",
+    "en": "This text is hard to understand."
+  },
+  "examples": [
+    { "es": "Este texto es difícil de entender.", "en": "This text is hard to understand." },
+    { "es": "Es difícil entender este texto.", "en": "It's hard to understand this text." },
+    { "es": "La palabra es difícil de pronunciar.", "en": "The word is hard to pronounce." },
+    { "es": "Es difícil pronunciar esa palabra.", "en": "It's hard to pronounce that word." },
+    { "es": "El problema es fácil de resolver.", "en": "The problem is easy to fix." },
+    { "es": "Es fácil resolver el problema.", "en": "It's easy to fix the problem." }
+  ],
+  "rule": "Both shapes say the same thing. What changes is the first word.\n\n*Thing + es + adjective + de + infinitive*\n*Este texto es difícil de entender.*\n\n*Es + adjective + infinitive + thing*\n*Es difícil entender este texto.*\n\nThe test is simple: if the thing comes first, you need *de*. If *es* comes first, there is no *de*.\n\nIn the first shape the adjective matches the thing: *Los textos son difíciles de entender*. In the second it stays singular: *Es difícil entender los textos*.",
+  "smallPrint": "Teachers call the second shape an impersonal construction, because *es* has no subject.",
+  "readAndPick": [
+    { "es": "Este texto es difícil de entender.", "options": ["This text is hard to understand.", "It's hard to understand this text."], "answer": 0 },
+    { "es": "Es difícil entender este texto.", "options": ["This text is hard to understand.", "It's hard to understand this text."], "answer": 1 },
+    { "es": "Los textos son difíciles de entender.", "options": ["The text is hard to understand.", "The texts are hard to understand."], "answer": 1 },
+    { "es": "Es fácil resolver el problema.", "options": ["The problem is easy to fix.", "It's easy to fix the problem."], "answer": 1 },
+    { "es": "El problema es fácil de resolver.", "options": ["The problem is easy to fix.", "It's easy to fix the problem."], "answer": 0 },
+    { "es": "Es difícil pronunciar esa palabra.", "options": ["That word is hard to pronounce.", "It's hard to pronounce that word."], "answer": 1 },
+    { "es": "Esa palabra es difícil de pronunciar.", "options": ["That word is hard to pronounce.", "It's hard to pronounce that word."], "answer": 0 },
+    { "es": "Es imposible olvidar esa historia.", "options": ["That story is impossible to forget.", "It's impossible to forget that story."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose the right form and type the whole sentence (This text is hard to understand): *Este texto es difícil ___ entender.* (*de* or nothing)", "answer": "Este texto es difícil de entender.", "accept": [], "why": "The text comes first, so you need *de*." },
+    { "prompt": "Type in Spanish: It's hard to understand this text.", "answer": "Es difícil entender este texto.", "accept": [], "why": "*Es* comes first, so there is no *de*." },
+    { "prompt": "Turn it around (It's easy to fix the problem): *El problema es fácil de resolver.*", "answer": "Es fácil resolver el problema.", "accept": [], "why": "Start with *es* and drop the *de*; the thing goes after the infinitive." },
+    { "prompt": "Turn it around (That word is hard to pronounce): *Es difícil pronunciar esa palabra.*", "answer": "Esa palabra es difícil de pronunciar.", "accept": [], "why": "The thing goes first, so *de* comes back." },
+    { "prompt": "Make it plural (The texts are hard to understand): *Este texto es difícil de entender.*", "answer": "Estos textos son difíciles de entender.", "accept": [], "why": "In this shape the adjective agrees with the thing." },
+    { "prompt": "Type in Spanish: It's easy to answer the questions.", "answer": "Es fácil responder las preguntas.", "accept": [], "why": "*Es* first means the adjective stays singular and there is no *de*." },
+    { "prompt": "Type in Spanish: The questions are easy to answer.", "answer": "Las preguntas son fáciles de responder.", "accept": [], "why": "The questions come first, so *son*, *fáciles* and *de*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Es difícil de entender este texto.", "right": "Es difícil entender este texto.", "why": "Almost. When *es* comes first and the thing comes last, there is no *de*." },
+    { "wrong": "Este texto es difícil entender.", "right": "Este texto es difícil de entender.", "why": "When the thing comes first, Spanish needs *de* before the infinitive." },
+    { "wrong": "Es difíciles entender los textos.", "right": "Es difícil entender los textos.", "why": "After a bare *es* the adjective stays singular, even if the thing is plural." }
+  ],
+  "personal": "Say the same true thing both ways, for example *Este ensayo es difícil de escribir* and *Es difícil escribir este ensayo*."
+}

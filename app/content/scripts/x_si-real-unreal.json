@@ -1,0 +1,122 @@
+{
+  "node": "x:si-real-unreal",
+  "hook": {
+    "line": "Two friends both say *if I have time*. One will probably show up and the other won't, and the verb after *si* is how you tell which is which.",
+    "es": "Si tengo tiempo, voy a Taganga.",
+    "en": "If I have time, I'll go to Taganga."
+  },
+  "examples": [
+    { "es": "Si tengo tiempo, voy.", "en": "If I have time, I'll go." },
+    { "es": "Si tuviera tiempo, iría.", "en": "If I had time, I'd go." },
+    { "es": "Si llego temprano, te ayudo.", "en": "If I arrive early, I'll help you. (to a friend)" },
+    { "es": "Si llegara temprano, te ayudaría.", "en": "If I arrived early, I'd help you. (to a friend)" },
+    { "es": "Si hace sol, vamos a la playa.", "en": "If it's sunny, we'll go to the beach." },
+    { "es": "Si hiciera sol, iríamos a la playa.", "en": "If it were sunny, we'd go to the beach." }
+  ],
+  "rule": "Ask yourself one question: *could this really happen?*\n\nYes, it is a real possibility: *si* + the ordinary present, and the result in the present too.\n*Si hace sol, vamos a la playa.* (It might well be sunny.)\n\nNo, it is imaginary, or very unlikely: *si* + the *ra* form, and the *would* form for the result.\n*Si hiciera sol, iríamos a la playa.* (It isn't sunny, or you doubt it will be.)\n\nSame words, same sentence; only the verbs change, and with them how likely you think it is. English does this with *is* versus *were*, but often blurs it. Spanish makes you choose every time.\n\nNever mix the sets: a real *if* gets a real result, an imaginary *if* gets an imaginary one.",
+  "smallPrint": "Teachers call the first kind a real or open condition and the second an unreal condition (*condicional real* and *irreal*).",
+  "readAndPick": [
+    {
+      "es": "Si tengo tiempo, voy a la playa.",
+      "options": ["If I have time, I'll go to the beach.", "If I had time, I'd go to the beach."],
+      "answer": 0
+    },
+    {
+      "es": "Si tuviera tiempo, iría a la playa.",
+      "options": ["If I have time, I'll go to the beach.", "If I had time, I'd go to the beach.", "I had time and went to the beach."],
+      "answer": 1
+    },
+    {
+      "es": "Si llego temprano, te ayudo.",
+      "options": ["If I arrived early, I'd help you.", "If I arrive early, I'll help you.", "I arrived early and helped you."],
+      "answer": 1
+    },
+    {
+      "es": "Si llegara temprano, te ayudaría.",
+      "options": ["If I arrive early, I'll help you.", "If I arrived early, I'd help you.", "I helped you because I arrived early."],
+      "answer": 1
+    },
+    {
+      "es": "Si hace sol, vamos a la playa.",
+      "options": ["If it were sunny, we'd go to the beach.", "If it's sunny, we'll go to the beach."],
+      "answer": 1
+    },
+    {
+      "es": "Si hiciera sol, iríamos a la playa.",
+      "options": ["If it's sunny, we'll go to the beach.", "If it were sunny, we'd go to the beach.", "It was sunny, so we went to the beach."],
+      "answer": 1
+    },
+    {
+      "es": "Si sé la respuesta, te la digo.",
+      "options": ["If I knew the answer, I'd tell you.", "If I know the answer, I'll tell you."],
+      "answer": 1
+    },
+    {
+      "es": "Si supiera la respuesta, te la diría.",
+      "options": ["If I knew the answer, I'd tell you.", "If I know the answer, I'll tell you.", "I knew the answer and told you."],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *tengo* or *tuviera* and type the whole sentence. Real possibility: *Si ___ tiempo, voy.* (If I have time, I'll go.)",
+      "answer": "Si tengo tiempo, voy.",
+      "accept": [],
+      "why": "It might really happen, so the ordinary present."
+    },
+    {
+      "prompt": "Pick *voy* or *iría* and type the whole sentence. Imaginary: *Si tuviera tiempo, ___.* (If I had time, I'd go.)",
+      "answer": "Si tuviera tiempo, iría.",
+      "accept": [],
+      "why": "An imaginary *if* needs the *would* form in the result."
+    },
+    {
+      "prompt": "Type in Spanish: If it's sunny, we'll go to the beach.",
+      "answer": "Si hace sol, vamos a la playa.",
+      "accept": ["Si hace sol, iremos a la playa."],
+      "why": "Sunny is a real possibility, so *si* + *hace*."
+    },
+    {
+      "prompt": "Type in Spanish: If it were sunny, we'd go to the beach.",
+      "answer": "Si hiciera sol, iríamos a la playa.",
+      "accept": ["Iríamos a la playa si hiciera sol."],
+      "why": "It isn't sunny, so *hiciera* and *iríamos*."
+    },
+    {
+      "prompt": "Make it imaginary: *Si llego temprano, te ayudo.* (If I arrived early, I'd help you. To a friend.)",
+      "answer": "Si llegara temprano, te ayudaría.",
+      "accept": ["Te ayudaría si llegara temprano."],
+      "why": "Both verbs move to the imaginary set: *llegara* and *ayudaría*."
+    },
+    {
+      "prompt": "Make it real: *Si supiera la respuesta, te la diría.* (If I know the answer, I'll tell you. To a friend.)",
+      "answer": "Si sé la respuesta, te la digo.",
+      "accept": [],
+      "why": "A real possibility takes the ordinary present in both halves."
+    },
+    {
+      "prompt": "Type in Spanish: If I had time, I'd help you. (to a friend)",
+      "answer": "Si tuviera tiempo, te ayudaría.",
+      "accept": ["Te ayudaría si tuviera tiempo."],
+      "why": "I don't have time, so it is imaginary: *tuviera* and *ayudaría*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Si tuviera tiempo, voy.",
+      "right": "Si tuviera tiempo, iría.",
+      "why": "Almost. An imaginary *if* needs an imaginary result, so *iría*."
+    },
+    {
+      "wrong": "Si tengo tiempo, iría.",
+      "right": "Si tengo tiempo, voy.",
+      "why": "A real *if* gets a real result: don't switch to the *would* form halfway."
+    },
+    {
+      "wrong": "Si llegaría temprano, te ayudaría.",
+      "right": "Si llegara temprano, te ayudaría.",
+      "why": "Never put the *would* form after *si*; use the *ra* form."
+    }
+  ],
+  "personal": "Say one real plan and one daydream about the same thing: *Si tengo tiempo, …* and *Si tuviera tiempo, …*. Something true about you."
+}

@@ -1,0 +1,172 @@
+{
+  "node": "p:ver-oir-bien-mal",
+  "hook": {
+    "line": "Every call to the coast crackles. Tomás keeps saying *what?* in English, when he could just say that the line is bad.",
+    "es": "No te oigo bien, se oye muy mal.",
+    "en": "I can't hear you well, the line's really bad."
+  },
+  "examples": [
+    {
+      "es": "No te oigo bien, se oye muy mal.",
+      "en": "I can't hear you well, the line's really bad."
+    },
+    {
+      "es": "¿Puede hablar en voz más alta?",
+      "en": "Could you speak louder? (formal)"
+    },
+    {
+      "es": "Desde aquí no se ve nada.",
+      "en": "You can't see anything from here."
+    },
+    {
+      "es": "No te escucho bien, ¿me oyes tú?",
+      "en": "I can't hear you well, can you hear me?"
+    },
+    {
+      "es": "Aquí se oye muy bien.",
+      "en": "You can hear really well here."
+    },
+    {
+      "es": "Perdón, no lo veo bien.",
+      "en": "Sorry, I can't see him well."
+    }
+  ],
+  "rule": "To say how well you see or hear, use the verb with *bien*, *mal* or *nada*:\n*No te oigo bien.* *Lo veo mal.* *No se ve nada.*\n\nOn the phone in Latin America, *escuchar* is as common as *oír*: *No te escucho bien*.\n\nTo talk about the place or the line rather than you, add *se*: *Se oye mal*, *Aquí se ve bien*. English says *you can hear* or *it sounds bad*.\n\nTo ask someone to speak up, use *voz*: *en voz alta*, *en voz más alta* (louder), *en voz baja* (quietly). Never *más alto* for volume.",
+  "smallPrint": "Teachers call the *se* in *se oye mal* the impersonal *se*: nobody in particular is doing the hearing.",
+  "readAndPick": [
+    {
+      "es": "No te oigo bien.",
+      "options": [
+        "I can't hear you well.",
+        "I can't see you well."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Desde aquí no se ve nada.",
+      "options": [
+        "You can't hear anything from here.",
+        "You can't see anything from here."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Puede hablar en voz más alta?",
+      "options": [
+        "Could you speak louder? (formal)",
+        "Could you speak lower? (formal)",
+        "Could you speak slowly? (formal)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Aquí se oye muy bien.",
+      "options": [
+        "You can hear really well here.",
+        "You can see really well here."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No te escucho bien, ¿me oyes tú?",
+      "options": [
+        "I can't hear you well, can you hear me?",
+        "I can't hear you well, can you see me?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Habla en voz baja.",
+      "options": [
+        "Speak quietly.",
+        "Speak loudly.",
+        "Speak slowly."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Perdón, no lo veo bien.",
+      "options": [
+        "Sorry, I can't hear him well.",
+        "Sorry, I can't see him well."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se oye mal.",
+      "options": [
+        "It sounds bad.",
+        "It looks bad."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *oigo* or *oyes*: No te ___ bien. (I can't hear you) Type the whole sentence.",
+      "answer": "No te oigo bien.",
+      "accept": [
+        "No te escucho bien."
+      ],
+      "why": "I can't hear you: the verb is *oigo*."
+    },
+    {
+      "prompt": "Say: You can hardly hear anything here.",
+      "answer": "Aquí no se oye nada.",
+      "accept": [],
+      "why": "*No se oye nada* means you can't hear a thing."
+    },
+    {
+      "prompt": "Say: The line's really bad. (it sounds really bad)",
+      "answer": "Se oye muy mal.",
+      "accept": [],
+      "why": "*Se oye* + *mal*, with *muy* if it's worse."
+    },
+    {
+      "prompt": "Ask a man you call *usted* to speak louder.",
+      "answer": "¿Puede hablar en voz más alta?",
+      "accept": [
+        "¿Puede hablar en voz alta?"
+      ],
+      "why": "Volume is *voz*, not *alto*."
+    },
+    {
+      "prompt": "Say: You can't see anything from here.",
+      "answer": "Desde aquí no se ve nada.",
+      "accept": [],
+      "why": "*No se ve nada* is the usual way to say you can't see a thing."
+    },
+    {
+      "prompt": "Say to a friend: I can't hear you well.",
+      "answer": "No te escucho bien.",
+      "accept": [
+        "No te oigo bien."
+      ],
+      "why": "*Escuchar* and *oír* are both fine on the phone."
+    },
+    {
+      "prompt": "Make it about seeing: *No te oigo bien.*",
+      "answer": "No te veo bien.",
+      "accept": [],
+      "why": "Swap *oigo* for *veo*; the rest stays."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No te oigo bueno.",
+      "right": "No te oigo bien.",
+      "why": "Almost. For how well you hear, use *bien*, not *bueno*."
+    },
+    {
+      "wrong": "¿Puede hablar en voz alto?",
+      "right": "¿Puede hablar en voz alta?",
+      "why": "*Voz* is feminine, so *alta*."
+    },
+    {
+      "wrong": "Te oigo no bien.",
+      "right": "No te oigo bien.",
+      "why": "The *no* goes first: *No te oigo bien*."
+    }
+  ],
+  "personal": "Think of the last bad phone call you had. Write what you'd say to the other person, using *no te oigo bien* or *se oye mal*."
+}

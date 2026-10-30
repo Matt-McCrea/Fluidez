@@ -1,0 +1,196 @@
+{
+ "node": "g:questions-prepositions",
+ "hook": {
+  "line": "Tomás has been passing messages for days and keeps losing track of who said what. The first thing he needs is a way to ask the question properly, and in Spanish that means starting with the little word.",
+  "es": "¿Con quién hablaste?",
+  "en": "Who did you talk to? (to a friend)"
+ },
+ "examples": [
+  {
+   "es": "¿Con quién hablaste?",
+   "en": "Who did you talk to? (to a friend)"
+  },
+  {
+   "es": "¿De qué se trata?",
+   "en": "What is it about?"
+  },
+  {
+   "es": "¿Para qué sirve esto?",
+   "en": "What is this for?"
+  },
+  {
+   "es": "¿En qué piensas?",
+   "en": "What are you thinking about? (to a friend)"
+  },
+  {
+   "es": "¿A qué hora cierran?",
+   "en": "What time do they close?"
+  },
+  {
+   "es": "¿Para quién es el tinto?",
+   "en": "Who is the black coffee for?"
+  },
+  {
+   "es": "¿De dónde viene ese ruido?",
+   "en": "Where is that noise coming from?"
+  }
+ ],
+ "rule": "English likes to leave the little word at the end: *Who did you talk to? What is it about?* Spanish never does. The little word (*con*, *de*, *para*, *en*, *a*) goes first, right before the question word.\n\n*Who did you talk to?* becomes *¿Con quién hablaste?*, literally \"With whom did you talk?\".\n*What is it about?* becomes *¿De qué se trata?*.\n*What are you thinking about?* becomes *¿En qué piensas?*.\n\nSo the recipe is: little word, then *qué* or *quién*, then the rest. If you hear the verb pick a word, that word comes first: *hablar con*, *tratarse de*, *pensar en*, *soñar con*, *servir para*.",
+ "smallPrint": "Teachers call this a preposition before an interrogative. English can \"strand\" it at the end; Spanish cannot.",
+ "readAndPick": [
+  {
+   "es": "¿Con quién hablaste?",
+   "options": [
+    "Who did you talk to?",
+    "Who did you talk about?",
+    "Who talked to you?"
+   ],
+   "answer": 0
+  },
+  {
+   "es": "¿De quién hablaste?",
+   "options": [
+    "Who did you talk to?",
+    "Who did you talk about?",
+    "Who talked to you?"
+   ],
+   "answer": 1
+  },
+  {
+   "es": "¿Para qué sirve esto?",
+   "options": [
+    "What is this for?",
+    "What is this about?",
+    "What is this made of?"
+   ],
+   "answer": 0
+  },
+  {
+   "es": "¿De qué se trata?",
+   "options": [
+    "What is it for?",
+    "What is it about?",
+    "What is it made of?"
+   ],
+   "answer": 1
+  },
+  {
+   "es": "¿Con qué sueñas?",
+   "options": [
+    "What are you thinking about?",
+    "What are you looking at?",
+    "What are you dreaming about?"
+   ],
+   "answer": 2
+  },
+  {
+   "es": "¿En qué piensas?",
+   "options": [
+    "What are you dreaming about?",
+    "What are you thinking about?",
+    "What do you need?"
+   ],
+   "answer": 1
+  },
+  {
+   "es": "¿Para quién es el tinto?",
+   "options": [
+    "Who is the black coffee from?",
+    "Who made the black coffee?",
+    "Who is the black coffee for?"
+   ],
+   "answer": 2
+  },
+  {
+   "es": "¿De dónde viene ese ruido?",
+   "options": [
+    "Where is that noise coming from?",
+    "Where is that noise going?",
+    "Why is that noise so loud?"
+   ],
+   "answer": 0
+  },
+  {
+   "es": "¿A qué hora cierran?",
+   "options": [
+    "What time do they open?",
+    "What time do they close?",
+    "How long are they open?"
+   ],
+   "answer": 1
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Choose the right form and type the whole sentence (Who did you talk to? To a friend): ___ hablaste? (Con quién / Quién con)",
+   "answer": "¿Con quién hablaste?",
+   "accept": [],
+   "why": "The little word goes first: *con quién*."
+  },
+  {
+   "prompt": "Choose the right form and type the whole sentence (What is it about?): ¿___ se trata? (De qué / Qué de)",
+   "answer": "¿De qué se trata?",
+   "accept": [],
+   "why": "*Tratarse de* keeps its *de*, and it goes in front of *qué*."
+  },
+  {
+   "prompt": "Type in Spanish: What is this for?",
+   "answer": "¿Para qué sirve esto?",
+   "accept": [
+    "¿Para qué sirve?"
+   ],
+   "why": "*Servir para* gives *para qué*, at the very start."
+  },
+  {
+   "prompt": "Type in Spanish (to a friend): What are you thinking about?",
+   "answer": "¿En qué piensas?",
+   "accept": [],
+   "why": "*Pensar en* gives *en qué*, with *piensas* for a friend."
+  },
+  {
+   "prompt": "Type in Spanish: What time do they close?",
+   "answer": "¿A qué hora cierran?",
+   "accept": [
+    "¿A qué hora cierra?"
+   ],
+   "why": "Time of day is *a qué hora*, again with the little word first."
+  },
+  {
+   "prompt": "Type in Spanish: Who is the black coffee for?",
+   "answer": "¿Para quién es el tinto?",
+   "accept": [
+    "¿Para quién es el café?"
+   ],
+   "why": "*For whom* is *para quién*, and the question starts with *para*."
+  },
+  {
+   "prompt": "Make it about someone else: ¿De qué hablaste? Ask a friend who they talked about.",
+   "answer": "¿De quién hablaste?",
+   "accept": [],
+   "why": "Swap *qué* for *quién* and keep *de* in front."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "¿Quién hablaste con?",
+   "right": "¿Con quién hablaste?",
+   "why": "Almost. English leaves *to* at the end, but Spanish puts *con* first."
+  },
+  {
+   "wrong": "¿Qué piensas en?",
+   "right": "¿En qué piensas?",
+   "why": "Spanish never ends a question with the little word; *en* goes in front of *qué*."
+  },
+  {
+   "wrong": "¿Qué es esto para?",
+   "right": "¿Para qué sirve esto?",
+   "why": "\"What is this for?\" is *servir para*, and *para* opens the question."
+  },
+  {
+   "wrong": "¿Dónde eres de?",
+   "right": "¿De dónde eres?",
+   "why": "Same rule: *de* goes first, so *de dónde*."
+  }
+ ],
+ "personal": "Ask someone in your life one real question that starts with *con quién*, *de qué* or *para qué*, and write it down."
+}

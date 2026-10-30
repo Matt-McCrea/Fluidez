@@ -1,0 +1,171 @@
+{
+  "node": "p:inevitable",
+  "hook": {
+    "line": "Some news is not a surprise to anyone. Hernando has seen this happen to the block for years, and his favourite word for it is *inevitable*.",
+    "es": "Tarde o temprano se va a enterar.",
+    "en": "Sooner or later he's going to find out."
+  },
+  "examples": [
+    {
+      "es": "Era inevitable.",
+      "en": "It was inevitable."
+    },
+    {
+      "es": "Es inevitable.",
+      "en": "It's inevitable."
+    },
+    {
+      "es": "Inevitablemente, los precios van a subir.",
+      "en": "Inevitably, prices are going to go up."
+    },
+    {
+      "es": "Es inevitable que haya retrasos.",
+      "en": "It's inevitable that there will be delays."
+    },
+    {
+      "es": "Tarde o temprano se va a enterar.",
+      "en": "Sooner or later he's going to find out."
+    },
+    {
+      "es": "Tarde o temprano todos van a saber la verdad.",
+      "en": "Sooner or later everyone is going to know the truth."
+    }
+  ],
+  "rule": "For something that could not have been avoided, say *era inevitable* (it was) or *es inevitable* (it is). It never changes for the thing it describes when used alone.\n\nTo say what is inevitable, add *que* and the subjunctive: *Es inevitable que haya retrasos*. You met this with *es importante que*: the same family of opinion phrases.\n\nTwo more ways to say it. *Inevitablemente* works like an adverb: *Inevitablemente, los precios van a subir*. *Tarde o temprano* says it will happen in the end, whenever.",
+  "smallPrint": "Teachers call these impersonal expressions. After them, a *que* clause takes the subjunctive.",
+  "readAndPick": [
+    {
+      "es": "Era inevitable.",
+      "options": [
+        "It was inevitable.",
+        "It is inevitable.",
+        "It will be inevitable."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es inevitable.",
+      "options": [
+        "It was inevitable.",
+        "It's inevitable."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Inevitablemente, los precios van a subir.",
+      "options": [
+        "Inevitably, prices are going up.",
+        "Prices are going down, inevitably.",
+        "Inevitably, the prices went up."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es inevitable que haya retrasos.",
+      "options": [
+        "It's inevitable that there will be delays.",
+        "It's inevitable that there were delays."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tarde o temprano se va a enterar.",
+      "options": [
+        "He found out early.",
+        "Sooner or later he's going to find out.",
+        "He is already finding out."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es inevitable que venga la prensa.",
+      "options": [
+        "It's inevitable that the press will come.",
+        "It was inevitable that the press came."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es inevitable que haya protestas.",
+      "options": [
+        "It's inevitable that there will be protests.",
+        "There was an inevitable protest."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tarde o temprano todos van a saber la verdad.",
+      "options": [
+        "Everyone knows the truth already.",
+        "Sooner or later everyone will know the truth."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *Era* or *Es*: ___ inevitable. (It was inevitable.) Type the whole sentence.",
+      "answer": "Era inevitable.",
+      "accept": [],
+      "why": "It was inevitable: past tense, *era*."
+    },
+    {
+      "prompt": "Choose *haya* or *hay*: Es inevitable que ___ retrasos. Type the whole sentence.",
+      "answer": "Es inevitable que haya retrasos.",
+      "accept": [],
+      "why": "After *es inevitable que*, use the subjunctive: *haya*."
+    },
+    {
+      "prompt": "Sooner or later he's going to find out.",
+      "answer": "Tarde o temprano se va a enterar.",
+      "accept": [],
+      "why": "*Tarde o temprano* is a fixed phrase for \"in the end\"."
+    },
+    {
+      "prompt": "Inevitably, prices are going to go up.",
+      "answer": "Inevitablemente, los precios van a subir.",
+      "accept": [],
+      "why": "*Inevitablemente* is the adverb form."
+    },
+    {
+      "prompt": "It's inevitable that there will be protests.",
+      "answer": "Es inevitable que haya protestas.",
+      "accept": [],
+      "why": "The same pattern: *es inevitable que* plus *haya*."
+    },
+    {
+      "prompt": "Make it past: *Es inevitable.*",
+      "answer": "Era inevitable.",
+      "accept": [
+        "Fue inevitable."
+      ],
+      "why": "Switch *es* to *era* (or *fue* for a single moment)."
+    },
+    {
+      "prompt": "Sooner or later everyone is going to know the truth.",
+      "answer": "Tarde o temprano todos van a saber la verdad.",
+      "accept": [
+        "Tarde o temprano todos van a conocer la verdad."
+      ],
+      "why": "Same fixed phrase, then a normal sentence."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Es inevitable que hay retrasos.",
+      "right": "Es inevitable que haya retrasos.",
+      "why": "Almost. After *es inevitable que*, Spanish uses the subjunctive: *haya*."
+    },
+    {
+      "wrong": "Inevitable, los precios van a subir.",
+      "right": "Inevitablemente, los precios van a subir.",
+      "why": "For \"inevitably\" you need the adverb ending in *-mente*."
+    },
+    {
+      "wrong": "Es inevitable de enterarse.",
+      "right": "Tarde o temprano se va a enterar.",
+      "why": "*Inevitable* doesn't connect to a verb with *de*. Use *tarde o temprano* or *que* plus the subjunctive."
+    }
+  ],
+  "personal": "Think of something small and boring that is inevitable in your life. Say it with *tarde o temprano* or *es inevitable que*."
+}

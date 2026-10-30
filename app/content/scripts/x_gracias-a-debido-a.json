@@ -1,0 +1,198 @@
+{
+  "node": "x:gracias-a-debido-a",
+  "hook": {
+    "line": "In the news, every cause has a mood. The flight is late, the café is full, the street is closed: someone is to thank, someone is to blame, or nobody is. Spanish chooses a different phrase for each.",
+    "es": "Gracias a Hernando, encontramos la carta.",
+    "en": "Thanks to Hernando, we found the letter."
+  },
+  "examples": [
+    {
+      "es": "Gracias a la lluvia, las plantas están verdes.",
+      "en": "Thanks to the rain, the plants are green."
+    },
+    {
+      "es": "Por culpa de la lluvia, cancelaron el partido.",
+      "en": "Because of the rain, they called off the match."
+    },
+    {
+      "es": "Debido a la lluvia, el vuelo está retrasado.",
+      "en": "Due to the rain, the flight is delayed."
+    },
+    {
+      "es": "Gracias a ti llegamos a tiempo.",
+      "en": "Thanks to you, we got there on time. (to a friend)"
+    },
+    {
+      "es": "Por culpa del trancón, llegué tarde.",
+      "en": "Because of the traffic jam, I was late."
+    },
+    {
+      "es": "Debido a un incendio, la calle está cerrada.",
+      "en": "Due to a fire, the street is closed."
+    },
+    {
+      "es": "Gracias a que Mariana escribió el artículo, todos saben la verdad.",
+      "en": "Thanks to the fact that Mariana wrote the article, everyone knows the truth."
+    }
+  ],
+  "rule": "The three phrases fit the same slot. What changes is the mood.\n\n*Gracias a*: a good result, someone to thank.\n*Por culpa de*: a bad result, someone to blame.\n*Debido a*: neutral, just the cause. It is formal and very common in news and announcements.\n\nAll three take a noun: *gracias a ti*, *por culpa del trancón*, *debido a la lluvia*. Remember *de* + *el* becomes *del*, and *a* + *el* becomes *al*.\n\nBefore a verb, add *que*: *gracias a que…*, *debido a que…*, *por culpa de que…*\n\nThe verb stays plain, since you are stating a fact. Never *gracias de* or *debido de*.",
+  "smallPrint": "Teachers call *debido a* a formal causal preposition. The other two carry a judgement: good or bad.",
+  "readAndPick": [
+    {
+      "es": "Por culpa de la lluvia, cancelaron el partido.",
+      "options": [
+        "Thanks to the rain, they called off the match.",
+        "Despite the rain, they called off the match.",
+        "It's the rain's fault they called off the match."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Gracias a Vale, el café está lleno.",
+      "options": [
+        "Thanks to Vale, the café is full.",
+        "It's Vale's fault the café is full.",
+        "Despite Vale, the café is full."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Debido a un incendio, la calle está cerrada.",
+      "options": [
+        "Thanks to a fire, the street is closed.",
+        "Due to a fire, the street is closed.",
+        "It's the fire's fault, but the street is open."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Gracias a ti llegamos a tiempo.",
+      "options": [
+        "It's your fault we arrived on time.",
+        "We arrived late because of you.",
+        "Thanks to you, we arrived on time."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Por culpa del trancón, llegué tarde.",
+      "options": [
+        "Because of the traffic jam, I was late.",
+        "Thanks to the traffic jam, I was early.",
+        "Despite the traffic jam, I was on time."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Debido a la protesta, hay trancón.",
+      "options": [
+        "The protest happens because of the traffic.",
+        "The protest is to blame for the traffic.",
+        "Due to the protest, there is a traffic jam."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Gracias a que Mariana escribió el artículo, todos saben la verdad.",
+      "options": [
+        "Thanks to Mariana writing the article, everyone knows the truth.",
+        "Mariana wrote the article, but nobody knows the truth.",
+        "Mariana is to blame that everyone knows."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Por culpa de Altamira, tenemos un problema.",
+      "options": [
+        "Thanks to Altamira, we have a problem.",
+        "Because of Altamira, we have a problem.",
+        "Altamira has a problem."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Debido a que hay una inundación, cerraron la escuela.",
+      "options": [
+        "Due to the flood, they closed the school.",
+        "Thanks to a flood, the school is open.",
+        "Because they closed the school, there is a flood."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *gracias a* or *por culpa de*, and type the whole sentence: *___ Vale, el café está lleno.* (Thanks to Vale, the café is full.)",
+      "answer": "Gracias a Vale, el café está lleno.",
+      "accept": [],
+      "why": "A full café is good news, so you thank Vale: *gracias a*."
+    },
+    {
+      "prompt": "Choose *gracias a* or *por culpa de*, and type the whole sentence: *___ trancón, llegué tarde.* (Because of the traffic jam, I was late.)",
+      "answer": "Por culpa del trancón, llegué tarde.",
+      "accept": [],
+      "why": "Being late is bad, so the traffic gets the blame, and *de* + *el* becomes *del*."
+    },
+    {
+      "prompt": "Say as in the news, neutrally: Due to a fire, the street is closed.",
+      "answer": "Debido a un incendio, la calle está cerrada.",
+      "accept": [
+        "La calle está cerrada debido a un incendio."
+      ],
+      "why": "Just stating a cause, without thanks or blame: *debido a*."
+    },
+    {
+      "prompt": "Say to a friend: Thanks to you, we got there on time.",
+      "answer": "Gracias a ti llegamos a tiempo.",
+      "accept": [
+        "Gracias a ti, llegamos a tiempo."
+      ],
+      "why": "You are thanking someone: *gracias a*."
+    },
+    {
+      "prompt": "Say: Because of Altamira, we have a problem.",
+      "answer": "Por culpa de Altamira, tenemos un problema.",
+      "accept": [
+        "Tenemos un problema por culpa de Altamira."
+      ],
+      "why": "Altamira gets the blame: *por culpa de*."
+    },
+    {
+      "prompt": "Make it neutral and formal: *Por culpa de la inundación, cerraron la calle.* (Due to the flood, they closed the street.)",
+      "answer": "Debido a la inundación, cerraron la calle.",
+      "accept": [],
+      "why": "Swap the blame for the neutral *debido a* and nothing else changes."
+    },
+    {
+      "prompt": "Say: Thanks to the fact that Mariana wrote the article, everyone knows the truth.",
+      "answer": "Gracias a que Mariana escribió el artículo, todos saben la verdad.",
+      "accept": [
+        "Todos saben la verdad gracias a que Mariana escribió el artículo."
+      ],
+      "why": "Before a whole clause with its own verb, add *que*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Gracias de la lluvia, las plantas están verdes.",
+      "right": "Gracias a la lluvia, las plantas están verdes.",
+      "why": "Almost. This one takes *a*, not *de*: *gracias a*."
+    },
+    {
+      "wrong": "Por culpa de la lluvia, las plantas están verdes.",
+      "right": "Gracias a la lluvia, las plantas están verdes.",
+      "why": "Green plants are good news, and *por culpa de* always sounds like blame."
+    },
+    {
+      "wrong": "Debido de la lluvia, el vuelo está retrasado.",
+      "right": "Debido a la lluvia, el vuelo está retrasado.",
+      "why": "The phrase is *debido a*, with *a*."
+    },
+    {
+      "wrong": "Por culpa de el trancón, llegué tarde.",
+      "right": "Por culpa del trancón, llegué tarde.",
+      "why": "*De* and *el* always join into *del*."
+    }
+  ],
+  "personal": "Think of something good that happened this week and say who to thank with *gracias a…*, then something annoying with *por culpa de…*."
+}

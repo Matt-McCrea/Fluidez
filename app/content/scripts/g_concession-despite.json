@@ -1,0 +1,201 @@
+{
+  "node": "g:concession-despite",
+  "hook": {
+    "line": "Altamira keeps raising its offer, and Tomás keeps saying no, even though the café is losing money. To admit a fact and then act against it, Spanish has a small set of linking phrases, and you will hear them in every news report.",
+    "es": "A pesar de que el café pierde plata, Tomás no quiere vender.",
+    "en": "Despite the fact that the café is losing money, Tomás doesn't want to sell."
+  },
+  "examples": [
+    {
+      "es": "A pesar de la lluvia, vinieron.",
+      "en": "Despite the rain, they came."
+    },
+    {
+      "es": "A pesar de que el café pierde plata, Tomás no quiere vender.",
+      "en": "Despite the fact that the café is losing money, Tomás doesn't want to sell."
+    },
+    {
+      "es": "Es caro; sin embargo, vale la pena.",
+      "en": "It's expensive; however, it's worth it."
+    },
+    {
+      "es": "Hernando tiene setenta años. Aun así, camina todos los días.",
+      "en": "Hernando is seventy. Even so, he walks every day."
+    },
+    {
+      "es": "Estudié mucho. Aun así, no pasé el examen.",
+      "en": "I studied a lot. Even so, I didn't pass the exam."
+    },
+    {
+      "es": "Salimos a pesar de que llueve.",
+      "en": "We're going out even though it's raining."
+    },
+    {
+      "es": "A pesar de todo, Tomás se queda en el café.",
+      "en": "Despite everything, Tomás is staying at the café."
+    }
+  ],
+  "rule": "You already know *aunque*. These phrases do the same job, with different grammar.\n\n*A pesar de* + a noun: *A pesar de la lluvia, vinieron.*\n*A pesar de que* + a full clause: *A pesar de que llueve, salimos.* Keep the *de*, and keep the *que* before a verb.\n\n*Sin embargo* and *aun así* start a new sentence (or follow a semicolon). They answer what was just said: *Es caro; sin embargo, vale la pena.* *Aun así* adds a feeling of stubbornness: even so, I'm doing it.\n\nNever add *pero* next to any of them. Each one already carries the \"but\".\n\nThe verb after *a pesar de que* is the plain verb you already know, because you are stating a fact.",
+  "smallPrint": "Teachers call these concessive connectors. They concede a fact, then carry on against it. *Sin embargo* is a little more formal than *aun así*.",
+  "readAndPick": [
+    {
+      "es": "A pesar de la lluvia, vinieron.",
+      "options": [
+        "They came because of the rain.",
+        "They came despite the rain.",
+        "They didn't come because of the rain."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es caro; sin embargo, vale la pena.",
+      "options": [
+        "It's expensive, so it's not worth it.",
+        "It's cheap, so it's worth it.",
+        "It's expensive, but it's worth it."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Aun así, no firmo.",
+      "options": [
+        "Even so, I'm not signing.",
+        "That's why I'm not signing.",
+        "I'm signing anyway."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A pesar de que el café pierde plata, Tomás no quiere vender.",
+      "options": [
+        "Because the café loses money, Tomás wants to sell.",
+        "The café loses money, but Tomás doesn't want to sell.",
+        "Tomás doesn't want to sell because the café loses money."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hernando tiene setenta años. Aun así, camina todos los días.",
+      "options": [
+        "Hernando is seventy, so he walks every day.",
+        "Hernando is seventy and he doesn't walk any more.",
+        "Hernando is seventy, but he still walks every day."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Estudié mucho. Aun así, no pasé el examen.",
+      "options": [
+        "I studied a lot and still didn't pass the exam.",
+        "I studied a lot, so I passed the exam.",
+        "I didn't study, so I didn't pass the exam."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Salimos a pesar de que llueve.",
+      "options": [
+        "We stay in because it's raining.",
+        "We go out even though it's raining.",
+        "We go out because it's raining."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hace frío. Sin embargo, Tomás abre la ventana.",
+      "options": [
+        "It's cold, so Tomás opens the window.",
+        "It's cold, and Tomás closes the window.",
+        "It's cold, but Tomás opens the window anyway."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "A pesar de todo, Tomás se queda en el café.",
+      "options": [
+        "Despite everything, Tomás stays at the café.",
+        "Because of everything, Tomás leaves the café.",
+        "Thanks to everything, Tomás stays at the café."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *a pesar de* or *por*, and type the whole sentence: *___ la lluvia, vinieron.* (They came despite the rain.)",
+      "answer": "A pesar de la lluvia, vinieron.",
+      "accept": [],
+      "why": "The rain should have stopped them and didn't: *a pesar de*."
+    },
+    {
+      "prompt": "Choose *sin embargo* or *por eso*, and type the whole sentence: *Es caro; ___, vale la pena.* (It's expensive; however, it's worth it.)",
+      "answer": "Es caro; sin embargo, vale la pena.",
+      "accept": [
+        "Es caro. Sin embargo, vale la pena."
+      ],
+      "why": "\"However\" turns against what came before: *sin embargo*."
+    },
+    {
+      "prompt": "Say: Despite the rain, we arrived on time. (we)",
+      "answer": "A pesar de la lluvia, llegamos a tiempo.",
+      "accept": [
+        "Llegamos a tiempo a pesar de la lluvia."
+      ],
+      "why": "*A pesar de* plus a noun, then what happened anyway."
+    },
+    {
+      "prompt": "Say: Even so, I'm not signing. (I)",
+      "answer": "Aun así, no firmo.",
+      "accept": [
+        "Aun así, yo no firmo."
+      ],
+      "why": "*Aun así* answers what was just said: even so."
+    },
+    {
+      "prompt": "Say: Despite the fact that Tomás is tired, he's working.",
+      "answer": "A pesar de que Tomás está cansado, trabaja.",
+      "accept": [
+        "Tomás trabaja a pesar de que está cansado.",
+        "A pesar de que Tomás está cansado, está trabajando."
+      ],
+      "why": "Before a verb, *a pesar de* needs *que*."
+    },
+    {
+      "prompt": "Join the two sentences with *aun así*: *Estudié mucho. No pasé el examen.* (I studied a lot. I didn't pass the exam.)",
+      "answer": "Estudié mucho. Aun así, no pasé el examen.",
+      "accept": [],
+      "why": "*Aun así* sits at the start of the second sentence and carries the \"but\"."
+    },
+    {
+      "prompt": "Say the same thing with *a pesar de que*: *Salimos aunque llueve.* (We're going out even though it's raining.)",
+      "answer": "Salimos a pesar de que llueve.",
+      "accept": [
+        "A pesar de que llueve, salimos."
+      ],
+      "why": "*A pesar de que* and *aunque* both introduce a fact that didn't stop you."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "A pesar la lluvia, vinieron.",
+      "right": "A pesar de la lluvia, vinieron.",
+      "why": "Almost. The *de* is part of the phrase, so it never drops out."
+    },
+    {
+      "wrong": "A pesar de llueve, salimos.",
+      "right": "A pesar de que llueve, salimos.",
+      "why": "Almost. Before a verb you need *que*: *a pesar de que* + verb."
+    },
+    {
+      "wrong": "Es caro, pero sin embargo vale la pena.",
+      "right": "Es caro; sin embargo, vale la pena.",
+      "why": "*Sin embargo* already means \"but\", so adding *pero* says it twice."
+    },
+    {
+      "wrong": "A pesar de que el café pierde plata, pero Tomás no quiere vender.",
+      "right": "A pesar de que el café pierde plata, Tomás no quiere vender.",
+      "why": "The opening phrase already carries the contrast, so there is no *pero* in the second half."
+    }
+  ],
+  "personal": "Tell us something you do *a pesar de* a difficulty, or finish this: *Estoy cansado, pero aun así…* Use *a pesar de*, *sin embargo* or *aun así* once."
+}

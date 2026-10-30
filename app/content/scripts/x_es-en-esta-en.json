@@ -1,0 +1,188 @@
+{
+  "node": "x:es-en-esta-en",
+  "hook": {
+    "line": "Tomás is planning a party at the café, and everyone asks the same question: where? But \"where\" has two jobs. One is where something happens, the other is where something sits, and Spanish picks a different verb for each.",
+    "es": "La fiesta es en el salón.",
+    "en": "The party is in the hall."
+  },
+  "examples": [
+    {
+      "es": "La fiesta es en el salón.",
+      "en": "The party is in the hall."
+    },
+    {
+      "es": "El salón está en el segundo piso.",
+      "en": "The hall is on the second floor."
+    },
+    {
+      "es": "¿Dónde es la manifestación?\nEs en la Plaza de Bolívar.",
+      "en": "Where is the protest?\nIt's at Plaza de Bolívar."
+    },
+    {
+      "es": "¿Dónde está la Plaza de Bolívar?\nEstá en La Candelaria.",
+      "en": "Where is Plaza de Bolívar?\nIt's in La Candelaria."
+    },
+    {
+      "es": "El incendio fue en un edificio de la calle quince.",
+      "en": "The fire was in a building on Calle 15."
+    },
+    {
+      "es": "Mi celular está en la mesa.",
+      "en": "My phone is on the table."
+    }
+  ],
+  "rule": "English uses \"is\" for both. Spanish asks one thing: is it an event or a thing?\n\nAn **event** (a party, a meeting, a protest, a fire, a concert) says where it happens with *ser en*:\n*La fiesta es en el salón.* In the past: *fue en*.\n\nA **thing, person or place** says where it sits with *estar en*:\n*El salón está en el segundo piso.*\n\nSo the same room can use both: the party *es* in the hall, but the hall *está* on the second floor.\n\nQuestions follow the same split: *¿Dónde es la reunión?* asks where it takes place. *¿Dónde está el café?* asks where it is.",
+  "smallPrint": "Teachers say that with events, *ser* means \"to take place\". With things, *estar* is the verb of location.",
+  "readAndPick": [
+    {
+      "es": "El salón está en el segundo piso.",
+      "options": [
+        "The hall is on the second floor.",
+        "The party is on the second floor.",
+        "The second floor is in the hall."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La fiesta es en el salón.",
+      "options": [
+        "The hall is in the party.",
+        "The party is in the hall.",
+        "The party is at home."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Dónde es la reunión?",
+      "options": [
+        "Where is the meeting taking place?",
+        "Where is the meeting room?",
+        "When is the meeting?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Dónde está el café?",
+      "options": [
+        "Where is the café party?",
+        "Where is the café?",
+        "Is the café open?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La protesta es mañana en la plaza.",
+      "options": [
+        "The plaza is closed tomorrow.",
+        "The plaza is near the protest.",
+        "The protest is tomorrow in the plaza."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El incendio fue en un edificio de la calle quince.",
+      "options": [
+        "The fire was in a building on Calle 15.",
+        "The fire will be in a building on Calle 15.",
+        "The building is on Calle 15 now."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La oficina de Mariana está en el centro.",
+      "options": [
+        "Mariana's meeting is downtown.",
+        "Mariana is at the office downtown.",
+        "Mariana's office is downtown."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La boda fue en una iglesia muy bonita.",
+      "options": [
+        "The church is very pretty.",
+        "The wedding was in a very pretty church.",
+        "The wedding will be in a pretty church."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Su apartamento está en Laureles.",
+      "options": [
+        "Her apartment is in Laureles.",
+        "Her party is in Laureles.",
+        "Her party was in Laureles."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *es* or *está*, and type the whole sentence: *La fiesta ___ en el salón.* (The party is in the hall.)",
+      "answer": "La fiesta es en el salón.",
+      "accept": [],
+      "why": "A party is an event, so it says where it happens with *es en*."
+    },
+    {
+      "prompt": "Choose *es* or *está*, and type the whole sentence: *El salón ___ en el segundo piso.* (The hall is on the second floor.)",
+      "answer": "El salón está en el segundo piso.",
+      "accept": [],
+      "why": "A room is a place, so it says where it sits with *está en*."
+    },
+    {
+      "prompt": "Say: My phone is on the table.",
+      "answer": "Mi celular está en la mesa.",
+      "accept": [],
+      "why": "A thing sitting somewhere: *está en*."
+    },
+    {
+      "prompt": "Say: The meeting is in Mariana's office.",
+      "answer": "La reunión es en la oficina de Mariana.",
+      "accept": [],
+      "why": "A meeting is an event: *es en*."
+    },
+    {
+      "prompt": "Ask a friend where the protest is taking place.",
+      "answer": "¿Dónde es la manifestación?",
+      "accept": [
+        "¿Dónde es la protesta?"
+      ],
+      "why": "You want to know where it happens, so *es*."
+    },
+    {
+      "prompt": "Ask a friend where the café is.",
+      "answer": "¿Dónde está el café?",
+      "accept": [],
+      "why": "You want to know where a place sits, so *está*."
+    },
+    {
+      "prompt": "Make it past: *La fiesta es en el salón.* (The party was in the hall.)",
+      "answer": "La fiesta fue en el salón.",
+      "accept": [],
+      "why": "The event happened already, so *es* becomes *fue*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La fiesta está en mi casa.",
+      "right": "La fiesta es en mi casa.",
+      "why": "Almost. A party is an event, and events say where they happen with *ser*."
+    },
+    {
+      "wrong": "El café es en la calle diez.",
+      "right": "El café está en la calle diez.",
+      "why": "A café is a place, and places say where they sit with *estar*."
+    },
+    {
+      "wrong": "La boda estaba en una iglesia muy bonita.",
+      "right": "La boda fue en una iglesia muy bonita.",
+      "why": "A wedding is an event, so in the past it is *fue en*."
+    },
+    {
+      "wrong": "¿Dónde es el celular?",
+      "right": "¿Dónde está el celular?",
+      "why": "A phone is a thing, so you ask where it is with *está*."
+    }
+  ],
+  "personal": "Tell us where something is happening this week with *es en…*, and where your home or favourite café is with *está en…*."
+}

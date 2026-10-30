@@ -1,0 +1,178 @@
+{
+  "node": "p:por-casualidad",
+  "hook": {
+    "line": "Asking a stranger for help is easier if you leave them a way out. *¿Por casualidad…?* means \"by any chance\", and it makes a favour sound small.",
+    "es": "¿Por casualidad sabe dónde queda la notaría?",
+    "en": "Do you happen to know where the notary's office is? (formal)"
+  },
+  "examples": [
+    {
+      "es": "¿Por casualidad sabe dónde queda la notaría?",
+      "en": "Do you happen to know where the notary's office is? (formal)"
+    },
+    {
+      "es": "¿Por casualidad sabes a qué hora cierran?",
+      "en": "Do you happen to know what time they close? (to a friend)"
+    },
+    {
+      "es": "¿Por casualidad conoce a Yesid?",
+      "en": "Do you happen to know Yesid? (formal)"
+    },
+    {
+      "es": "Nos encontramos por casualidad en el aeropuerto.",
+      "en": "We ran into each other by chance at the airport."
+    },
+    {
+      "es": "Encontré el libro por casualidad.",
+      "en": "I found the book by chance."
+    },
+    {
+      "es": "¡Qué casualidad!",
+      "en": "What a coincidence!"
+    }
+  ],
+  "rule": "*Por casualidad* does two jobs.\n\nIn a question it means \"by any chance\" or \"do you happen to\". It softens the request and lets the other person say no easily. It pairs well with *¿sabe…?*: *¿Por casualidad sabe dónde queda…?*\n\nIn a statement it means \"by chance\", with no plan: *Lo encontré por casualidad.*\n\n*Casualidad* is a coincidence, not a \"casualty\". Its reaction line is *¡Qué casualidad!*",
+  "smallPrint": "Teachers call this a softener: a small phrase that makes a request politer without changing what it asks.",
+  "readAndPick": [
+    {
+      "es": "¿Por casualidad sabes a qué hora cierran?",
+      "options": [
+        "Do you happen to know what time they close?",
+        "Do you know what time they closed by accident?",
+        "Do they close by chance?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nos encontramos por casualidad en el aeropuerto.",
+      "options": [
+        "We planned to meet at the airport.",
+        "We ran into each other by chance at the airport.",
+        "We had an accident at the airport."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Qué casualidad!",
+      "options": [
+        "What a shame!",
+        "What an accident!",
+        "What a coincidence!"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Por casualidad conoce a Yesid?",
+      "options": [
+        "Do you know Yesid very well?",
+        "Is Yesid your relative?",
+        "Do you happen to know Yesid?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Encontré el libro por casualidad.",
+      "options": [
+        "I looked for the book on purpose.",
+        "I found the book by chance.",
+        "I found the book by the register."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Por casualidad vio mi celular?",
+      "options": [
+        "Did you happen to see my cell phone?",
+        "Did you break my phone by accident?",
+        "Did you see my phone yesterday?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Por casualidad pasé por tu calle.",
+      "options": [
+        "I passed your street on purpose.",
+        "I passed your street by bus.",
+        "I happened to pass your street."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Por casualidad es usted el dueño?",
+      "options": [
+        "Are you the owner by any chance?",
+        "Are you sure you are the owner?",
+        "Is the owner your friend?"
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Fill the gap and type the whole sentence: ¿___ casualidad sabes a qué hora cierran? (Por / Para) Do you happen to know what time they close? (to a friend)",
+      "answer": "¿Por casualidad sabes a qué hora cierran?",
+      "accept": [],
+      "why": "*Por casualidad* is a fixed phrase; the *por* does not change."
+    },
+    {
+      "prompt": "Do you happen to know where the notary's office is? (formal)",
+      "answer": "¿Por casualidad sabe dónde queda la notaría?",
+      "accept": [],
+      "why": "*Por casualidad* goes first, then the *¿sabe…?* question."
+    },
+    {
+      "prompt": "We ran into each other by chance at the airport.",
+      "answer": "Nos encontramos por casualidad en el aeropuerto.",
+      "accept": [],
+      "why": "In a statement, *por casualidad* means by chance."
+    },
+    {
+      "prompt": "What a coincidence!",
+      "answer": "¡Qué casualidad!",
+      "accept": [
+        "Qué casualidad"
+      ],
+      "why": "This is the stock reaction to a coincidence."
+    },
+    {
+      "prompt": "Do you happen to know Yesid? (formal)",
+      "answer": "¿Por casualidad conoce a Yesid?",
+      "accept": [],
+      "why": "*Conoce* is the *usted* form, and *a* goes before a person."
+    },
+    {
+      "prompt": "Soften it for a stranger (formal): ¿Sabe si hay otra salida?",
+      "answer": "¿Por casualidad sabe si hay otra salida?",
+      "accept": [
+        "¿Sabe por casualidad si hay otra salida?"
+      ],
+      "why": "Adding *por casualidad* makes the request smaller."
+    },
+    {
+      "prompt": "I found the book by chance.",
+      "answer": "Encontré el libro por casualidad.",
+      "accept": [
+        "Por casualidad encontré el libro."
+      ],
+      "why": "*Por casualidad* usually goes at the end here."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿En casualidad sabe dónde queda la notaría?",
+      "right": "¿Por casualidad sabe dónde queda la notaría?",
+      "why": "Almost. The phrase is fixed: it is always *por casualidad*."
+    },
+    {
+      "wrong": "Nos encontramos por accidente en el aeropuerto.",
+      "right": "Nos encontramos por casualidad en el aeropuerto.",
+      "why": "*Accidente* is a crash; for running into someone, use *casualidad*."
+    },
+    {
+      "wrong": "¿Por casualidad sabe donde queda la notaría?",
+      "right": "¿Por casualidad sabe dónde queda la notaría?",
+      "why": "Question words keep their accent, even inside a bigger question."
+    }
+  ],
+  "personal": "You are lost and need help. Write a polite question to a stranger starting with *¿Por casualidad…?*, then say something you found by chance."
+}

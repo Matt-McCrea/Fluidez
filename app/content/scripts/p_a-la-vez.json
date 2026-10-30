@@ -1,0 +1,185 @@
+{
+  "node": "p:a-la-vez",
+  "hook": {
+    "line": "Sometimes you do two things at once: drive and talk, study and work. Spanish has a small phrase that glues them together.",
+    "es": "Estudia y trabaja a la vez.",
+    "en": "She studies and works at the same time."
+  },
+  "examples": [
+    {
+      "es": "Vale hace pan y a la vez atiende el teléfono.",
+      "en": "Vale makes bread and answers the phone at the same time."
+    },
+    {
+      "es": "Es útil y a la vez bonito.",
+      "en": "It's useful and pretty at the same time."
+    },
+    {
+      "es": "Mariana escribe y escucha música al mismo tiempo.",
+      "en": "Mariana writes and listens to music at the same time."
+    },
+    {
+      "es": "Ella cocinaba; mientras tanto, yo lavaba los platos.",
+      "en": "She was cooking; meanwhile, I was washing the dishes."
+    },
+    {
+      "es": "Tomás sirve el café; mientras tanto, Vale abre la caja.",
+      "en": "Tomás serves the coffee; meanwhile, Vale opens the till."
+    },
+    {
+      "es": "Todos hablaron a la vez.",
+      "en": "Everyone spoke at once."
+    }
+  ],
+  "rule": "*A la vez* and *al mismo tiempo* both mean \"at the same time\". Use them when one person does two things: *Hernando maneja y habla a la vez.* They also join two qualities: *útil y a la vez bonito*.\n\nWhen two different people do two things, use *mientras tanto* (meanwhile), in its own bit of the sentence, set off by commas.\n\nThe verbs do not change, and neither do these phrases.",
+  "smallPrint": "Teachers call this simultaneity: two actions or qualities happening or holding together.",
+  "readAndPick": [
+    {
+      "es": "Vale hace pan y a la vez atiende el teléfono.",
+      "options": [
+        "Vale makes bread and then answers the phone.",
+        "Vale makes bread so she can answer the phone.",
+        "Vale makes bread and answers the phone at the same time."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Es útil y a la vez bonito.",
+      "options": [
+        "It's useful and pretty at the same time.",
+        "It's useful but not pretty.",
+        "It's useful because it's pretty."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tomás sirve el café; mientras tanto, Vale abre la caja.",
+      "options": [
+        "Tomás serves coffee after Vale opens the till.",
+        "Tomás serves coffee; meanwhile, Vale opens the till.",
+        "Tomás serves coffee while he opens the till."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Todos hablaron a la vez.",
+      "options": [
+        "Everyone spoke in turn.",
+        "Everyone spoke once.",
+        "Everyone spoke at once."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mariana escribe y escucha música al mismo tiempo.",
+      "options": [
+        "Mariana writes after she listens to music.",
+        "Mariana writes about music.",
+        "Mariana writes and listens to music at the same time."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Ella cocinaba; mientras tanto, yo lavaba los platos.",
+      "options": [
+        "She cooked and then I washed the dishes.",
+        "She was cooking; meanwhile, I was washing the dishes.",
+        "She was cooking while she washed the dishes."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No puedo hablar y escribir a la vez.",
+      "options": [
+        "I can't talk and write at the same time.",
+        "I can't talk or write later.",
+        "I can't talk about writing."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es un lugar viejo y a la vez moderno.",
+      "options": [
+        "It's a place that was old and is now modern.",
+        "It's an old place, but not a modern one.",
+        "It's an old place and, at the same time, a modern one."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Hernando maneja y habla ___.* (*a la vez* or *mientras tanto*) Hernando drives and talks at the same time.",
+      "answer": "Hernando maneja y habla a la vez.",
+      "accept": [
+        "Hernando maneja y habla al mismo tiempo."
+      ],
+      "why": "One person does two things, so *a la vez*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Tomás sirve el café; ___, Vale abre la caja.* (*a la vez* or *mientras tanto*) Tomás serves the coffee; meanwhile, Vale opens the till.",
+      "answer": "Tomás sirve el café; mientras tanto, Vale abre la caja.",
+      "accept": [
+        "Tomás sirve el café. Mientras tanto, Vale abre la caja."
+      ],
+      "why": "Two different people, so *mientras tanto*."
+    },
+    {
+      "prompt": "Say: It's useful and pretty at the same time.",
+      "answer": "Es útil y a la vez bonito.",
+      "accept": [
+        "Es útil y bonito a la vez.",
+        "Es útil y al mismo tiempo bonito."
+      ],
+      "why": "*A la vez* sits between the two qualities."
+    },
+    {
+      "prompt": "Say: I can't talk and write at the same time.",
+      "answer": "No puedo hablar y escribir a la vez.",
+      "accept": [
+        "No puedo hablar y escribir al mismo tiempo."
+      ],
+      "why": "One person, two actions: *a la vez* at the end."
+    },
+    {
+      "prompt": "Say: Everyone spoke at once.",
+      "answer": "Todos hablaron a la vez.",
+      "accept": [
+        "Todos hablaron al mismo tiempo."
+      ],
+      "why": "*A la vez* works for a whole group too."
+    },
+    {
+      "prompt": "Say it with *al mismo tiempo*: *Mariana escribe y escucha música a la vez.*",
+      "answer": "Mariana escribe y escucha música al mismo tiempo.",
+      "accept": [],
+      "why": "The two phrases mean the same, and *al* is *a* plus *el*."
+    },
+    {
+      "prompt": "Say, with *mientras tanto*: She was cooking; meanwhile, I was washing the dishes.",
+      "answer": "Ella cocinaba; mientras tanto, yo lavaba los platos.",
+      "accept": [
+        "Ella cocinaba. Mientras tanto, yo lavaba los platos."
+      ],
+      "why": "Two people, so *mientras tanto*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Vale hace pan y mientras tanto atiende el teléfono.",
+      "right": "Vale hace pan y a la vez atiende el teléfono.",
+      "why": "*Mientras tanto* needs two separate people; for one person's two actions use *a la vez*."
+    },
+    {
+      "wrong": "Hablo y escribo en el mismo tiempo.",
+      "right": "Hablo y escribo al mismo tiempo.",
+      "why": "English says \"at the same time\", but Spanish says *al mismo tiempo*, with *a* and *el* joined."
+    },
+    {
+      "wrong": "Ella cocinaba, a la vez yo lavaba los platos.",
+      "right": "Ella cocinaba; mientras tanto, yo lavaba los platos.",
+      "why": "Two different people need *mientras tanto*."
+    }
+  ],
+  "personal": "What two things do you do at once every day? Say it with *a la vez*, for example: *Yo… y… a la vez.*"
+}

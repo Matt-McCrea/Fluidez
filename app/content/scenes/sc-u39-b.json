@@ -1,0 +1,201 @@
+{
+  "id": "sc-u39-b",
+  "unit": "u39",
+  "title": "Tinta roja",
+  "spare": false,
+  "brief": "You're Tomás in Vale's kitchen. She has your draft in one hand and a red pen in the other. She is your friend, so use tú. Explain what each part is about and fix the order and the repetition.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Vale: Leí tu primer párrafo en la cocina. ¿De qué trata?",
+      "npcEn": "Vale: I read your first paragraph in the kitchen. What is it about?",
+      "intent": "Say that it is about the history of the café.",
+      "accept": [
+        "Trata de la historia del café.",
+        "Se trata de la historia del café de Rosa.",
+        "Es el párrafo que trata de la historia del café."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\btrata de\\b",
+          "flags": "iu",
+          "label": "say what it's about: trata de / se trata de"
+        }
+      ],
+      "focus": "p:se-trata-de",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Vale: Falta orden. ¿Qué dices primero y qué dices después?",
+      "npcEn": "Vale: It needs some order. What do you say first and what do you say after?",
+      "intent": "Say that firstly you talk about the history and then about the neighbours.",
+      "accept": [
+        "En primer lugar hablo de la historia y después de los vecinos.",
+        "Primero hablo de la historia; después, de los vecinos.",
+        "En primer lugar, la historia. Después, los vecinos."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(en primer lugar|primero)\\b",
+          "flags": "iu",
+          "label": "order it: en primer lugar ... después"
+        }
+      ],
+      "focus": "g:discourse-structure",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Vale: Un comité quiere ver los dos lados. ¿Cuáles son?",
+      "npcEn": "Vale: A committee wants to see both sides. What are they?",
+      "intent": "Give both sides of the building: on one hand it is old and expensive, on the other it is beautiful.",
+      "accept": [
+        "Por un lado, el edificio es viejo y caro; por otro, es muy bonito.",
+        "Por un lado es viejo y caro. Por otro lado, es muy bonito.",
+        "Por un lado, es caro; por otro, es hermoso."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bpor un lado\\b",
+          "flags": "iu",
+          "label": "one side: por un lado"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bpor otro\\b",
+          "flags": "iu",
+          "label": "the other: por otro"
+        }
+      ],
+      "focus": "g:discourse-structure",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Vale: Perfecto. Pero escribes «el local» doce veces. ¿Qué haces?",
+      "npcEn": "Vale: Perfect. But you write \"the premises\" twelve times. What do you do?",
+      "intent": "Say you will write 'dicho local' (the premises in question) instead of repeating it.",
+      "accept": [
+        "Voy a escribir dicho local.",
+        "Puedo poner dicho local en vez de repetir.",
+        "Entonces escribo dicho local."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bdicho local\\b",
+          "flags": "iu",
+          "label": "point back formally: dicho local"
+        }
+      ],
+      "focus": "g:referring-back",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Vale: Toma un café por el esfuerzo. ¿Cómo vas?",
+      "npcEn": "Vale: Have a coffee for the effort. How is it going?",
+      "intent": "Thank her and say that writing a text like this in Spanish is hard, but easier with her.",
+      "accept": [
+        "Gracias, Vale. Escribir un texto así en español es difícil, pero contigo es más fácil.",
+        "Gracias. Escribir en español es difícil, pero tú me ayudas.",
+        "Muchas gracias. Escribir tanto es difícil, pero contigo todo es más fácil."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(^|[.,;:]\\s*)\\p{L}+(ar|er|ir)\\b[^.]*\\b(es|resulta)\\b",
+          "flags": "iu",
+          "label": "make writing the subject: escribir ... es difícil"
+        }
+      ],
+      "focus": "g:infinitive-subject",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:por-un-lado",
+    "c:puedo",
+    "c:voy-a",
+    "c:voy-vas",
+    "g:discourse-structure",
+    "g:gender-articles",
+    "g:ir-a-plans",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:verb-infinitive",
+    "l:ayudar",
+    "l:bonito",
+    "l:café",
+    "l:caro",
+    "l:cocina",
+    "l:comité",
+    "l:cuál",
+    "l:cómo",
+    "l:decir",
+    "l:después",
+    "l:dicho",
+    "l:difícil",
+    "l:edificio",
+    "l:escribir",
+    "l:esfuerzo",
+    "l:español",
+    "l:faltar",
+    "l:fácil",
+    "l:hablar",
+    "l:hacer",
+    "l:hermoso",
+    "l:historia",
+    "l:ir",
+    "l:lado",
+    "l:leer",
+    "l:local",
+    "l:lugar",
+    "l:orden",
+    "l:perfecto",
+    "l:poder",
+    "l:poner",
+    "l:párrafo",
+    "l:querer",
+    "l:qué",
+    "l:repetir",
+    "l:ser",
+    "l:texto",
+    "l:tomar",
+    "l:tratar",
+    "l:tratarse",
+    "l:vecino",
+    "l:ver",
+    "l:vez",
+    "l:viejo",
+    "p:es-adj-inf",
+    "p:me-te-nos-objects",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:presentation-frame",
+    "p:quantifiers-basic",
+    "p:quedar-faltar-sobrar",
+    "p:se-trata-de",
+    "p:time-sequence-basic",
+    "p:tratar-de",
+    "p:viejo-antiguo-mayor",
+    "p:voy-a-defender-que"
+  ]
+}

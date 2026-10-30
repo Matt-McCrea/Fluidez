@@ -1,0 +1,174 @@
+{
+  "node": "p:se-trata-de",
+  "hook": {
+    "line": "Someone hands you a letter, a film, a problem, and you want to say what it is really about. Spanish has one handy phrase for that.",
+    "es": "¿De qué se trata?",
+    "en": "What is it about?"
+  },
+  "examples": [
+    {
+      "es": "Se trata de una oferta de Altamira.",
+      "en": "It's about an offer from Altamira."
+    },
+    {
+      "es": "¿De qué se trata?",
+      "en": "What is it about?"
+    },
+    {
+      "es": "Se trata de llegar a tiempo.",
+      "en": "It's a matter of arriving on time."
+    },
+    {
+      "es": "No se trata de plata, se trata de respeto.",
+      "en": "It isn't about money, it's about respect."
+    },
+    {
+      "es": "La película trata de una familia en Cali.",
+      "en": "The film is about a family in Cali."
+    },
+    {
+      "es": "Este libro trata de un fantasma.",
+      "en": "This book is about a ghost."
+    }
+  ],
+  "rule": "*Se trata de* plus a noun or an infinitive says what a situation is about: *Se trata de una oferta.* It has no subject. English needs *it* (\"it's about\"); Spanish just says *se trata de*.\n\nWhen you name the thing (a film, a book), drop *se* and make that thing the subject: *La película trata de…*\n\nSo:\n*Se trata de* + noun or infinitive: what a situation is about.\n*La película trata de* + noun: what a named thing is about.",
+  "smallPrint": "Teachers call *se trata de* an impersonal construction: it has no subject, a bit like *it* in \"it's raining\".",
+  "readAndPick": [
+    {
+      "es": "Se trata de una oferta de Altamira.",
+      "options": [
+        "She is making an offer to Altamira.",
+        "It's about an offer from Altamira.",
+        "Altamira treats her well."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se trata de llegar a tiempo.",
+      "options": [
+        "I'm trying to arrive on time.",
+        "He arrives on time.",
+        "It's a matter of arriving on time."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Trato de llegar a tiempo.",
+      "options": [
+        "It's a matter of arriving on time.",
+        "I try to arrive on time.",
+        "He tries to arrive on time."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La película trata de una familia en Cali.",
+      "options": [
+        "The film is about a family in Cali.",
+        "The film tries to find a family in Cali.",
+        "The family is watching a film in Cali."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No se trata de plata, se trata de respeto.",
+      "options": [
+        "There is no money, only respect.",
+        "He doesn't treat money with respect.",
+        "It isn't about money, it's about respect."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿De qué se trata?",
+      "options": [
+        "Where is it from?",
+        "What is it about?",
+        "What does he do?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Este libro trata de un fantasma.",
+      "options": [
+        "I'm trying to find a ghost.",
+        "This book treats a ghost badly.",
+        "This book is about a ghost."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Se trata de mi abuela.",
+      "options": [
+        "It's about my grandmother.",
+        "My grandmother is trying.",
+        "I'm trying to see my grandmother."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *___ de una oferta de Altamira.* (*Se trata* or *La película trata*) It's about an offer from Altamira.",
+      "answer": "Se trata de una oferta de Altamira.",
+      "accept": [],
+      "why": "There is no named thing as the subject, so you use *se trata de*."
+    },
+    {
+      "prompt": "Say: What is it about?",
+      "answer": "¿De qué se trata?",
+      "accept": [],
+      "why": "The question about a situation is *¿De qué se trata?*"
+    },
+    {
+      "prompt": "Say: It's a matter of arriving on time.",
+      "answer": "Se trata de llegar a tiempo.",
+      "accept": [],
+      "why": "*Se trata de* can be followed by an infinitive, to say what the point is."
+    },
+    {
+      "prompt": "Say: The film is about a family in Cali.",
+      "answer": "La película trata de una familia en Cali.",
+      "accept": [],
+      "why": "You named the film, so it is the subject and *se* drops out."
+    },
+    {
+      "prompt": "Say: It isn't about money, it's about respect.",
+      "answer": "No se trata de plata, se trata de respeto.",
+      "accept": [
+        "No se trata de plata. Se trata de respeto."
+      ],
+      "why": "Put *no* in front of the first *se trata de* and keep the second."
+    },
+    {
+      "prompt": "Change the film to a book: *La película trata de un fantasma.* Say: This book is about a ghost.",
+      "answer": "Este libro trata de un fantasma.",
+      "accept": [],
+      "why": "A named thing still takes *trata de*, with no *se*."
+    },
+    {
+      "prompt": "Make it negative: *Se trata de ganar.*",
+      "answer": "No se trata de ganar.",
+      "accept": [],
+      "why": "*No* goes right before *se*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La película se trata de una familia.",
+      "right": "La película trata de una familia.",
+      "why": "Almost. When you name the thing, it is the subject, so *se* drops out: *la película trata de*."
+    },
+    {
+      "wrong": "Se trata una oferta de Altamira.",
+      "right": "Se trata de una oferta de Altamira.",
+      "why": "The *de* is part of the phrase: it is always *se trata de*."
+    },
+    {
+      "wrong": "Es de una oferta de Altamira.",
+      "right": "Se trata de una oferta de Altamira.",
+      "why": "Almost. *Es de* says where something comes from; to say what it is about, use *se trata de*."
+    }
+  ],
+  "personal": "Think of a book or film you like. Say what it is about with *Trata de…* Then think of a situation in your life and say what it is about with *Se trata de…*"
+}

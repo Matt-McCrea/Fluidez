@@ -1,0 +1,183 @@
+{
+ "node": "x:segun-depende",
+ "hook": {
+  "line": "Mariana asks Tomás a question about the café and he does not know the answer: it depends. Spanish has two ways to say it, and they do not mix.",
+  "es": "Depende del día.",
+  "en": "It depends on the day."
+ },
+ "examples": [
+  {
+   "es": "¿A qué hora sales del trabajo?\nSegún el día.",
+   "en": "What time do you leave work?\nDepending on the day."
+  },
+  {
+   "es": "Depende del día.",
+   "en": "It depends on the day."
+  },
+  {
+   "es": "Según Hernando, el bus no pasa hoy.",
+   "en": "According to Hernando, the bus isn't running today."
+  },
+  {
+   "es": "¿Vienes mañana?\nDepende.",
+   "en": "Are you coming tomorrow? (to a friend)\nIt depends."
+  },
+  {
+   "es": "Depende de cuánto cuesta.",
+   "en": "It depends on how much it costs."
+  },
+  {
+   "es": "Según mi reloj, son las tres.",
+   "en": "According to my watch, it's three o'clock."
+  }
+ ],
+ "rule": "*Según* means \"according to\" and also \"depending on\". It needs no verb and no *de*: *según el día*, *según Hernando*, *según mi reloj*.\n\n*Depender* means \"to depend\" and always needs *de* before the thing it depends on: *depende del día* (*de + el* becomes *del*), *depende de ti*.\n\n*Depende* can also stand alone, as a whole answer: *¿Vienes? Depende.*\n\nBoth say the same thing, but you choose one: *según el día* or *depende del día*. Never both together.",
+ "smallPrint": "Teachers call *según* a preposition and *depender de* a verb with a fixed preposition.",
+ "readAndPick": [
+  {
+   "es": "Depende del día.",
+   "options": [
+    "It depends on the day.",
+    "According to the day.",
+    "It's the day."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Según el día.",
+   "options": [
+    "It depends who comes.",
+    "Depending on the day.",
+    "The day is late."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Según Hernando, el bus no pasa hoy.",
+   "options": [
+    "Hernando says the bus is late today.",
+    "According to Hernando, the bus isn't running today.",
+    "Hernando depends on the bus today."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "¿Vienes mañana? Depende.",
+   "options": [
+    "Are you coming tomorrow? It depends.",
+    "Are you coming tomorrow? According to you.",
+    "Are you coming tomorrow? Maybe not."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Depende de ti.",
+   "options": [
+    "According to you.",
+    "It depends on you.",
+    "You depend on it."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Según tú, ¿a qué hora cierran?",
+   "options": [
+    "What time do you close?",
+    "What time do you say they close?",
+    "According to you, what time do they close?"
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Según mi reloj, son las tres.",
+   "options": [
+    "It depends on my watch, it's three.",
+    "My watch is three hours late.",
+    "According to my watch, it's three o'clock."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Depende de cuánto cuesta.",
+   "options": [
+    "It depends on how much it costs.",
+    "According to how much it costs.",
+    "It costs a lot."
+   ],
+   "answer": 0
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Choose the right form and type the whole sentence (It depends on the day): ___ del día. (Depende / Según)",
+   "answer": "Depende del día.",
+   "accept": [],
+   "why": "*Del* is *de + el*, and only *depende* takes *de*."
+  },
+  {
+   "prompt": "Choose the right form and type the whole sentence (Depending on the day): ___ el día. (Depende / Según)",
+   "answer": "Según el día.",
+   "accept": [],
+   "why": "No *de* and no verb, so *según*."
+  },
+  {
+   "prompt": "Type in Spanish: According to Hernando, the bus isn't running today.",
+   "answer": "Según Hernando, el bus no pasa hoy.",
+   "accept": [
+    "Según Hernando el bus no pasa hoy."
+   ],
+   "why": "\"According to\" a person is *según*, straight onto the name."
+  },
+  {
+   "prompt": "Type in Spanish (to a friend): Are you coming tomorrow? It depends.",
+   "answer": "¿Vienes mañana? Depende.",
+   "accept": [
+    "¿Vienes mañana?\nDepende."
+   ],
+   "why": "A short answer can be just *depende*."
+  },
+  {
+   "prompt": "Type in Spanish: It depends on you (to a friend).",
+   "answer": "Depende de ti.",
+   "accept": [],
+   "why": "*Depender* needs *de*, then *ti* for a friend."
+  },
+  {
+   "prompt": "Say the same thing with *depende*: Según el día.",
+   "answer": "Depende del día.",
+   "accept": [],
+   "why": "*Depender* always takes *de*, and *de + el* becomes *del*."
+  },
+  {
+   "prompt": "Type in Spanish: According to my watch, it's three o'clock.",
+   "answer": "Según mi reloj, son las tres.",
+   "accept": [
+    "Según mi reloj son las tres."
+   ],
+   "why": "*Según* plus the thing you are quoting."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Depende según el día.",
+   "right": "Depende del día.",
+   "why": "Pick one. *Depende de* and *según* do the same job, so you do not need both."
+  },
+  {
+   "wrong": "Depende el día.",
+   "right": "Depende del día.",
+   "why": "Almost. *Depender* always keeps *de*, and *de el* becomes *del*."
+  },
+  {
+   "wrong": "Según de ti.",
+   "right": "Depende de ti.",
+   "why": "*Según* takes no *de*. For \"it depends on you\", use *depende de*."
+  },
+  {
+   "wrong": "Según depende el día.",
+   "right": "Según el día.",
+   "why": "After *según* there is no verb, only the noun."
+  }
+ ],
+ "personal": "Think of one real thing that depends on something in your week. Say it two ways: with *depende de* and with *según*."
+}

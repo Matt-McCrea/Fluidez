@@ -1,0 +1,48 @@
+{
+  "node": "x:ser-estar-participle",
+  "hook": {
+    "line": "Two signs hang on the café door in two different weeks. One says what somebody did, the other says how things stand. The same word, *cerrado*, sits in both, and the little verb in front changes the whole story.",
+    "es": "El café fue cerrado por la alcaldía.",
+    "en": "The café was closed down by the council."
+  },
+  "examples": [
+    { "es": "El café fue cerrado por la alcaldía.", "en": "The café was closed down by the council." },
+    { "es": "El café estaba cerrado.", "en": "The café was closed." },
+    { "es": "La puerta fue abierta por Vale.", "en": "The door was opened by Vale." },
+    { "es": "Las ventanas estaban abiertas cuando llegué.", "en": "The windows were open when I arrived." },
+    { "es": "La carta fue firmada ayer.", "en": "The letter was signed yesterday." },
+    { "es": "La carta está firmada.", "en": "The letter is signed." },
+    { "es": "Los platos fueron lavados por Vale.", "en": "The dishes were washed by Vale." },
+    { "es": "Los platos están lavados.", "en": "The dishes are washed." }
+  ],
+  "rule": "English hides this behind one little word: *was closed*. Spanish makes you choose.\n\n*Ser* plus the *-do* word is an event: something happened, and somebody (even if unnamed) did it. It is a moment on a timeline.\n*El café fue cerrado.* Someone closed it.\n\n*Estar* plus the *-do* word is a state: the result, as you find it.\n*El café estaba cerrado.* It was shut when you got there.\n\nQuick test: can you add *by someone*? If yes, *ser*. Is it simply how things are? Then *estar*.\n\nThe ending agrees either way: *cerrado, cerrada, cerrados, cerradas*.",
+  "smallPrint": "Teachers call this the contrast between the passive voice (*ser* plus participle) and the resultant state (*estar* plus participle).",
+  "readAndPick": [
+    { "es": "El café fue cerrado.", "options": ["Someone closed the café.", "The café was already shut.", "The café closes."], "answer": 0 },
+    { "es": "El café estaba cerrado.", "options": ["The café was shut when I got there.", "Someone closed the café.", "The café will be closed."], "answer": 0 },
+    { "es": "La carta está firmada.", "options": ["The letter is signed.", "The letter was signed by Rosa.", "The letter will be signed."], "answer": 0 },
+    { "es": "La carta fue firmada ayer.", "options": ["The letter is signed.", "The letter was signed yesterday.", "The letter was already signed."], "answer": 1 },
+    { "es": "Los platos están lavados.", "options": ["The dishes were washed by Vale.", "The dishes are clean now.", "The dishes will be washed."], "answer": 1 },
+    { "es": "Los platos fueron lavados por Vale.", "options": ["Vale washed the dishes.", "The dishes were washed by Vale.", "The dishes are clean."], "answer": 1 },
+    { "es": "¿Estaba abierta la panadería?", "options": ["Was the bakery open?", "Was the bakery opened by someone?", "Will the bakery be open?"], "answer": 0 },
+    { "es": "¿Fue abierta la panadería por Rosa?", "options": ["Was the bakery open?", "Was the bakery opened by Rosa?", "Is the bakery Rosa's?"], "answer": 1 },
+    { "es": "Las mesas están reservadas.", "options": ["The tables are booked.", "The tables were booked by someone.", "The tables will be booked."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *fue* or *estaba*: The door was open when I arrived. La puerta ___ abierta.", "answer": "La puerta estaba abierta.", "accept": [], "why": "It is how the door was when you got there: *estaba*." },
+    { "prompt": "Choose *fue* or *estaba*: Someone opened the door, and it was Vale. La puerta ___ abierta por Vale.", "answer": "La puerta fue abierta por Vale.", "accept": [], "why": "Someone did it, and you name them with *por*: *fue*." },
+    { "prompt": "Say: The café was closed. (it was shut when I got there)", "answer": "El café estaba cerrado.", "accept": [], "why": "A state you found: *estaba cerrado*." },
+    { "prompt": "Say: The café was closed down by the council.", "answer": "El café fue cerrado por la alcaldía.", "accept": [], "why": "An action, with a doer: *fue cerrado por*." },
+    { "prompt": "Say: The dishes are washed.", "answer": "Los platos están lavados.", "accept": [], "why": "The result, so *están* and a plural ending." },
+    { "prompt": "Say: The letter was signed yesterday.", "answer": "La carta fue firmada ayer.", "accept": [], "why": "*Ayer* marks an event on the timeline, so *fue*." },
+    { "prompt": "Make it a state: La carta fue firmada.", "answer": "La carta está firmada.", "accept": ["La carta estaba firmada."], "why": "Swap *fue* for *está* and you describe the result." },
+    { "prompt": "Make it an event with a doer: Los platos están lavados. (by Vale)", "answer": "Los platos fueron lavados por Vale.", "accept": [], "why": "*Fueron* plus *por* names who did it." }
+  ],
+  "pitfalls": [
+    { "wrong": "El café fue cerrado cuando llegué.", "right": "El café estaba cerrado cuando llegué.", "why": "Almost. You are describing how things were when you arrived, so *estaba*." },
+    { "wrong": "La puerta estaba abierta por Vale.", "right": "La puerta fue abierta por Vale.", "why": "When you name who did it with *por*, you are telling an event, so *fue*." },
+    { "wrong": "Los platos están lavado.", "right": "Los platos están lavados.", "why": "The ending still agrees with what it describes, with *ser* or *estar*." },
+    { "wrong": "La carta es firmada.", "right": "La carta está firmada.", "why": "For the result as it is now, use *está*." }
+  ],
+  "personal": "Look at your kitchen. Say one thing that is done with *está* or *están* (for example *Los platos están lavados*), then one thing that someone did with *fue* or *fueron*."
+}

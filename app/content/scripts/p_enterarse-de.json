@@ -1,0 +1,44 @@
+{
+  "node": "p:enterarse-de",
+  "hook": {
+    "line": "Tomás is the last person on the block to find out that Altamira bought the building next door. In Spanish, that moment of finding out has its own verb, and everyone asks about it.",
+    "es": "¿Te enteraste de lo de Rosa?",
+    "en": "Did you hear about the business with Rosa? (to a friend)"
+  },
+  "examples": [
+    { "es": "Me enteré de que se casan.", "en": "I found out they're getting married." },
+    { "es": "¿Te enteraste de lo del accidente?", "en": "Did you hear about the accident? (to a friend)" },
+    { "es": "Me enteré de la venta por el periódico.", "en": "I found out about the sale from the newspaper." },
+    { "es": "Hernando se enteró de que Altamira compró el edificio.", "en": "Hernando found out that Altamira bought the building." },
+    { "es": "¿Cuándo te enteraste?", "en": "When did you find out? (to a friend)" },
+    { "es": "Nos enteramos de la noticia ayer.", "en": "We found out about the news yesterday." }
+  ],
+  "rule": "*Enterarse* means to find out (for instance, the news). It always has a *me / te / se / nos* and almost always *de*.\n\n*Me enteré de la venta.* + a thing\n*Me enteré de que se casan.* + a sentence, with *de que*\n\nKeep the *de* before *que*. Many people drop it in speech, but write it.\n\n*Lo de* + a noun means *the business with...*: *lo del accidente*, *lo de Rosa*. It is how people point at a story without retelling it.\n\nIn the past it asks *¿Te enteraste?* (did you hear?). Use *por* to say who told you: *me enteré por Mariana*.",
+  "smallPrint": "Teachers call this a pronominal verb that takes *de*; *lo de* is a neuter pointer to a known story.",
+  "readAndPick": [
+    { "es": "Me enteré de que se casan.", "options": ["I found out they're getting married.", "I told them to get married.", "I'm getting married."], "answer": 0 },
+    { "es": "¿Te enteraste de lo del accidente?", "options": ["Did you cause the accident?", "Did you hear about the accident?", "Were you in an accident?"], "answer": 1 },
+    { "es": "Me enteré de la venta por el periódico.", "options": ["I sold it to the newspaper.", "I found out about the sale from the newspaper.", "I read the newspaper at the sale."], "answer": 1 },
+    { "es": "Nos enteramos de la noticia ayer.", "options": ["I found out the news yesterday.", "We found out the news yesterday.", "They found out the news yesterday."], "answer": 1 },
+    { "es": "Hernando se enteró de que Altamira compró el edificio.", "options": ["Hernando found out that Altamira bought the building.", "Hernando told Altamira to buy the building.", "Hernando bought the building from Altamira."], "answer": 0 },
+    { "es": "¿Cuándo te enteraste?", "options": ["When did you find out?", "When will you find out?", "When are you leaving?"], "answer": 0 },
+    { "es": "¿Te enteraste de lo de Rosa?", "options": ["Did you hear about the business with Rosa?", "Did you visit Rosa?", "Did you meet Rosa?"], "answer": 0 },
+    { "es": "Vale se enteró tarde.", "options": ["Vale found out late.", "Vale arrived late.", "Vale told us late."], "answer": 0 },
+    { "es": "Me enteré por Mariana.", "options": ["I told Mariana.", "I found out from Mariana.", "I found out about Mariana."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *de* or *por*: Me enteré ___ la venta.", "answer": "Me enteré de la venta.", "accept": [], "why": "What you found out takes *de*." },
+    { "prompt": "Choose *de que* or *que*: Me enteré ___ se casan.", "answer": "Me enteré de que se casan.", "accept": [], "why": "Keep the *de* before *que* with this verb." },
+    { "prompt": "Say: Did you hear about the accident? (to a friend)", "answer": "¿Te enteraste de lo del accidente?", "accept": ["¿Te enteraste del accidente?"], "why": "*Te enteraste de* plus the thing, and *lo del* for the story." },
+    { "prompt": "Say: When did you find out? (to a friend)", "answer": "¿Cuándo te enteraste?", "accept": [], "why": "A past event, so *enteraste*." },
+    { "prompt": "Say: We found out the news yesterday.", "answer": "Nos enteramos de la noticia ayer.", "accept": ["Ayer nos enteramos de la noticia."], "why": "*Nos* and *enteramos* both point to *we*." },
+    { "prompt": "Say: I found out from Mariana.", "answer": "Me enteré por Mariana.", "accept": [], "why": "The person who told you takes *por*." },
+    { "prompt": "Say: Hernando found out that Altamira bought the building.", "answer": "Hernando se enteró de que Altamira compró el edificio.", "accept": [], "why": "*Se enteró de que* plus a normal sentence." }
+  ],
+  "pitfalls": [
+    { "wrong": "Me enteré que se casan.", "right": "Me enteré de que se casan.", "why": "Almost. People say it, but with this verb the *de* stays before *que*." },
+    { "wrong": "Enteré de la venta.", "right": "Me enteré de la venta.", "why": "Without *me*, the verb does not mean to find out." },
+    { "wrong": "Me enteré la noticia.", "right": "Me enteré de la noticia.", "why": "English says *found out the news*, but Spanish adds *de* before the thing." }
+  ],
+  "personal": "Tell someone what you found out recently: *Me enteré de que...* or *Me enteré de...*"
+}

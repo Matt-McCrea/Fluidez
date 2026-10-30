@@ -1,0 +1,194 @@
+{
+  "node": "x:darse-cuenta-enterarse",
+  "hook": {
+    "line": "Someone tells you Vale is leaving, or you see it with your own eyes: English says \"I realised\" or \"I found out\" for both. Spanish asks one question first: did it reach you from outside, or did it click inside your head?",
+    "es": "Me enteré de que Vale se va.",
+    "en": "I found out Vale is leaving."
+  },
+  "examples": [
+    {
+      "es": "Me di cuenta de que había perdido las llaves.",
+      "en": "I realised I'd lost my keys."
+    },
+    {
+      "es": "Me enteré de que Vale se va.",
+      "en": "I found out Vale is leaving."
+    },
+    {
+      "es": "¿Te enteraste de lo de Andrés?",
+      "en": "Did you hear about Andrés? (to a friend)"
+    },
+    {
+      "es": "No me di cuenta de la hora.",
+      "en": "I didn't notice the time."
+    },
+    {
+      "es": "Hernando se enteró de la noticia por la radio.",
+      "en": "Hernando heard the news on the radio."
+    },
+    {
+      "es": "Vale se dio cuenta de que olvidó el azúcar.",
+      "en": "Vale realised she'd forgotten the sugar."
+    },
+    {
+      "es": "Nos enteramos de que Altamira compró la cuadra.",
+      "en": "We found out that Altamira bought the block."
+    }
+  ],
+  "rule": "Use one test: where did the information come from?\n\n*Darse cuenta de*: it clicks in your own head. You see, notice or work it out. *No me di cuenta de la hora.*\n\n*Enterarse de*: it reaches you from outside. Someone tells you, or you read or hear it. *Me enteré de que Vale se va.*\n\nBoth are reflexive (*me*, *te*, *se*, *nos*) and both keep *de*: *de la hora*, *de que Vale se va*.\n\nEnglish \"realise\" often covers both, and \"find out\" too. In Spanish, ask yourself: did someone tell me, or did I notice? That decides it.\n\nFor news, gossip and \"did you hear about…?\", it is always *enterarse*.",
+  "smallPrint": "Teachers call both of these reflexive phrases: the pronoun points back at you. You met each one on its own; this lesson sets them side by side.",
+  "readAndPick": [
+    {
+      "es": "Me di cuenta de que Simón no estaba.",
+      "options": [
+        "Someone told me Simón wasn't there.",
+        "I noticed Simón wasn't there.",
+        "Simón noticed I wasn't there."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me enteré de que Simón no estaba.",
+      "options": [
+        "I noticed with my own eyes that Simón wasn't there.",
+        "Simón heard that I wasn't there.",
+        "I heard that Simón wasn't there."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Te enteraste de que cierran el parque?",
+      "options": [
+        "Did you hear they're closing the park?",
+        "Did you notice the park is closed?",
+        "Did I tell you they closed the park?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No me di cuenta de la hora.",
+      "options": [
+        "Nobody told me the time.",
+        "I didn't notice the time.",
+        "I told you the time."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hernando se enteró de la noticia por la radio.",
+      "options": [
+        "Hernando noticed the radio was broken.",
+        "Hernando told the news on the radio.",
+        "Hernando heard the news on the radio."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Nos enteramos de que Altamira compró la cuadra.",
+      "options": [
+        "We found out that Altamira bought the block.",
+        "We noticed that Altamira is buying the block.",
+        "They found out that we bought the block."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale se dio cuenta de que olvidó el azúcar.",
+      "options": [
+        "Vale told us she forgot the sugar.",
+        "Vale realised she'd forgotten the sugar.",
+        "Someone told Vale about the sugar."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Te diste cuenta del error?",
+      "options": [
+        "Did you hear about the mistake?",
+        "Did you tell me about the mistake?",
+        "Did you notice the mistake?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Me enteré de lo del incendio por Mariana.",
+      "options": [
+        "I heard about the fire from Mariana.",
+        "I noticed the fire myself.",
+        "Mariana noticed the fire."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *me di cuenta* or *me enteré*, and type the whole sentence: *___ de que Vale se va.* (Someone told me Vale is leaving.)",
+      "answer": "Me enteré de que Vale se va.",
+      "accept": [],
+      "why": "Someone told you, so the news came from outside: *enterarse*."
+    },
+    {
+      "prompt": "Choose *me di cuenta* or *me enteré*, and type the whole sentence: *___ de que había perdido las llaves.* (You worked out you'd lost your keys.)",
+      "answer": "Me di cuenta de que había perdido las llaves.",
+      "accept": [],
+      "why": "It clicked in your own head: *darse cuenta*."
+    },
+    {
+      "prompt": "Say: I didn't notice the time. (I)",
+      "answer": "No me di cuenta de la hora.",
+      "accept": [],
+      "why": "Noticing something yourself: *darse cuenta*, and *de* stays."
+    },
+    {
+      "prompt": "Ask a friend: Did you hear about the fire?",
+      "answer": "¿Te enteraste de lo del incendio?",
+      "accept": [
+        "¿Te enteraste del incendio?"
+      ],
+      "why": "\"Did you hear about…?\" is news arriving from outside: *enterarse*."
+    },
+    {
+      "prompt": "Say: Hernando heard the news on the radio. (past)",
+      "answer": "Hernando se enteró de la noticia por la radio.",
+      "accept": [],
+      "why": "The news reached him from outside: *se enteró*."
+    },
+    {
+      "prompt": "Make it about *we*: *Me enteré de que Vale se va.* (We found out Vale is leaving.)",
+      "answer": "Nos enteramos de que Vale se va.",
+      "accept": [
+        "Nos enteramos de que Vale se va."
+      ],
+      "why": "*Me* becomes *nos*, and the verb ending changes too."
+    },
+    {
+      "prompt": "Make it negative: *Vale se dio cuenta del error.* (Vale didn't notice the mistake.)",
+      "answer": "Vale no se dio cuenta del error.",
+      "accept": [],
+      "why": "*No* goes right before the pronoun and verb."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me di cuenta de que Vale se va. (Someone told me.)",
+      "right": "Me enteré de que Vale se va.",
+      "why": "Almost. When the news comes to you from someone else, Spanish uses *enterarse*, not *darse cuenta*."
+    },
+    {
+      "wrong": "Me enteré de la hora. (I saw the clock.)",
+      "right": "Me di cuenta de la hora.",
+      "why": "When you notice something yourself, Spanish uses *darse cuenta*, not *enterarse*."
+    },
+    {
+      "wrong": "Me enteré que Vale se va.",
+      "right": "Me enteré de que Vale se va.",
+      "why": "Almost. The *de* stays before *que* with both of these phrases."
+    },
+    {
+      "wrong": "Realicé que perdí las llaves.",
+      "right": "Me di cuenta de que perdí las llaves.",
+      "why": "*Realizar* means to carry something out, not to realise it."
+    }
+  ],
+  "personal": "Tell us one thing you noticed today with *me di cuenta de que…* and one thing you heard about recently with *me enteré de que…*."
+}
