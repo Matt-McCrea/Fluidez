@@ -2,7 +2,7 @@
   "id": "ch062",
   "unit": "u21",
   "title": "Sin fecha",
-  "text": "Vale: ¡No toques la crema! ¡Y no abras el horno!\nEran las once de la noche. Vale hacía la torta, y Tomás escribía el contrato en la computadora, con harina en la cara.\nTomás: «Contrato de sociedad. Tomás Herrera y Valentina Ospina, cincuenta y cincuenta». ¿Y ahora?\nVale: Escribe: «Tomás no firma nada de Altamira».\nTomás lo escribió. Después, para ayudar, usó la batidora de Rosa. Hubo un ruido terrible, y la batidora paró.\nVale: ¡Tomás! ¿Rompiste la batidora?\nTomás: Yo no la rompí. Ella ya estaba vieja.\nA las once y media llegó Hernando, con la ropa de dormir debajo de la chaqueta.\nHernando: Fui taxista cuarenta años, mija. Un taxista es medio mecánico. Pero no griten más, por favor. Los vecinos duermen, y yo tengo sueño.\nMientras Hernando trabajaba, Vale leyó la pantalla.\nVale: «Tomás se queda en Bogotá trescientos sesenta y cinco días». No, Tomás. No escribas un año.\nTomás: ¿Cuánto, entonces?\nVale: No escribas un número. Escribe lo que es verdad.\nTomás quitó el número. Entonces sonó su celular.\nAltamira: Señor Herrera, ¿ya leyó mi carta? No olvide que tengo amigos en el gobierno. Y en la oficina de permisos.\nTomás: No me llame más, señor Altamira.\nTomás sacó la carta de la chaqueta y la rompió en dos, delante de Vale.\nVale no dijo nada. Pero comprendió.\nTomás escribió: «Tomás se queda. Sin fecha».\nHernando: Rosa tenía un sueño: un café de la familia. Ahora lo comprendo. ¡Listo! La batidora funciona.\nLa batidora volvió a la vida, y Tomás terminó con crema en la cara.\nSimón: ¡Sin problema!\nVale se rió.\nVale: Lo firmo el sábado, después de la boda.\nHernando: ¿El sábado? Mija, el sábado es su cumpleaños.\nTomás miró a Vale. No sabía.",
+  "text": "Vale: ¡No toques la crema! ¡Y no abras el horno!\nEran las once de la noche. Vale hacía la torta, y Tomás escribía el contrato con harina en la cara.\nTomás: «Contrato de sociedad. Tomás Herrera y Valentina Ospina, cincuenta y cincuenta». ¿Y ahora?\nVale: Escribe: «Tomás no firma nada de Altamira».\nTomás lo escribió. Después, para ayudar, usó la batidora de Rosa. Hubo un ruido terrible, y la batidora paró.\nVale: ¿Rompiste la batidora?\nTomás: Yo no la rompí. Ya estaba vieja.\nA las once y media llegó Hernando, con la ropa de dormir debajo de la chaqueta.\nHernando: Fui taxista cuarenta años, mija. Un taxista es medio mecánico. Pero no griten más, que los vecinos duermen.\nMientras Hernando trabajaba, Vale leyó la pantalla.\nVale: «Tomás se queda en Bogotá trescientos sesenta y cinco días». No, Tomás. No escribas un número. Escribe lo que es verdad.\nEntonces sonó el celular de Tomás.\nAltamira: Señor Herrera, ¿ya leyó mi carta? No olvide que tengo amigos en el gobierno y en la oficina de permisos.\nTomás: No me llame más, señor Altamira.\nTomás sacó la carta de la chaqueta y la rompió en dos, delante de Vale. Vale no dijo nada, pero comprendió.\nTomás escribió: «Tomás se queda. Sin fecha».\nHernando: ¡Listo! La batidora funciona.\nLa batidora volvió a la vida, y Tomás terminó con crema en la cara.\nSimón: ¡Sin problema!\nVale se rió.\nVale: Lo firmo el sábado, después de la boda.\nHernando: ¿El sábado, mija? Si el sábado es tu cumpleaños.\nTomás miró a Vale. No sabía.",
   "gloss": [
     {
       "es": "batidora",
@@ -21,7 +21,7 @@
       "en": "Then, to help, he used Rosa's mixer."
     },
     {
-      "es": "Ella ya estaba vieja.",
+      "es": "Ya estaba vieja.",
       "en": "It was already old."
     },
     {
@@ -33,16 +33,12 @@
       "en": "A taxi driver is half a mechanic."
     },
     {
-      "es": "yo tengo sueño",
-      "en": "I'm sleepy"
+      "es": "que los vecinos duermen",
+      "en": "the neighbours are sleeping"
     },
     {
       "es": "Escribe lo que es verdad.",
       "en": "Write what's true."
-    },
-    {
-      "es": "Tomás quitó el número.",
-      "en": "Tomás took the number out."
     },
     {
       "es": "No olvide que tengo amigos en el gobierno.",
@@ -150,10 +146,10 @@
     "c:claro-listo",
     "c:entonces-bueno",
     "c:fui",
-    "c:por-favor",
     "c:sin-problema",
     "c:tengo",
     "g:adjective-agreement",
+    "g:comparatives",
     "g:direct-objects",
     "g:estar-location-states",
     "g:gender-articles",
@@ -169,14 +165,15 @@
     "g:preterite-irregular-strong",
     "g:preterite-ser-ir-hacer",
     "g:preterite-spelling-stem",
-    "g:questions",
     "g:reflexive-routine",
     "g:relatives-donde-lo-que",
     "g:ser-identity",
+    "g:si-present",
     "g:stem-boot",
     "g:that-clauses",
     "g:yo-irregular",
     "p:cerca-de",
+    "p:con-sin",
     "p:days-el-lunes",
     "p:event-ser-en",
     "p:para-inf",
@@ -184,12 +181,10 @@
     "p:por-la-manana",
     "p:position-de",
     "p:possessives-basic",
-    "p:request-ladder",
     "p:saber-conocer",
     "p:senor-don-article",
     "p:ser-profession-no-article",
     "p:telling-time",
-    "p:tener-hambre",
     "p:time-sequence-basic",
     "p:viejo-antiguo-mayor"
   ],
@@ -201,18 +196,15 @@
     "l:año",
     "l:batidora",
     "l:boda",
-    "l:café",
     "l:cara",
     "l:carta",
     "l:celular",
     "l:chaqueta",
     "l:comprender",
-    "l:computadora",
     "l:contratar",
     "l:contrato",
     "l:crema",
     "l:cumpleaños",
-    "l:cuánto",
     "l:debajo",
     "l:decir",
     "l:delante",
@@ -221,8 +213,6 @@
     "l:día",
     "l:escribir",
     "l:estar",
-    "l:familia",
-    "l:favor",
     "l:fecha",
     "l:firmar",
     "l:funcionar",
@@ -247,7 +237,6 @@
     "l:permiso",
     "l:problema",
     "l:quedarse",
-    "l:quitar",
     "l:reír",
     "l:romper",
     "l:ropa",
@@ -258,7 +247,6 @@
     "l:señor",
     "l:sociedad",
     "l:sonar",
-    "l:sueño",
     "l:sábado",
     "l:taxista",
     "l:tener",
