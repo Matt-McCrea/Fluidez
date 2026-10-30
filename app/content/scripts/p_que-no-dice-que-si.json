@@ -1,0 +1,45 @@
+{
+  "node": "p:que-no-dice-que-si",
+  "hook": {
+    "line": "Half of daily Spanish is passing messages along: what Vale said, what your mum wants to know. Spanish does it with tiny words, and one accent mark changes everything.",
+    "es": "Mi mamá dice que si vienes a almorzar.",
+    "en": "My mum is asking whether you're coming for lunch."
+  },
+  "examples": [
+    { "es": "¿Qué dijo Vale?\nQue ya viene.", "en": "What did Vale say?\nThat she's on her way." },
+    { "es": "¿Qué dijo Hernando?\nQue hoy no puede.", "en": "What did Hernando say?\nThat he can't today." },
+    { "es": "Vale dice que sí.", "en": "Vale says yes." },
+    { "es": "Mi mamá dice que si vienes a almorzar.", "en": "My mum is asking whether you're coming for lunch." },
+    { "es": "Mariana dice que si ya cerraron el café.", "en": "Mariana is asking whether they have already closed the café." },
+    { "es": "Dice que sí hay café.", "en": "She says that yes, there is coffee." }
+  ],
+  "rule": "To answer \"what did she say?\", start right with *que*: *Que ya viene.* *Que no.* The *que* does the work of \"she said that\", so you can drop the rest.\n\n*Dice que* + a statement passes on a statement: *Vale dice que ya viene.*\n\nBut *dice que si* (no accent) + a clause passes on a question. English says \"is asking whether\"; Spanish keeps *dice* and lets the small *si* mean \"whether\": *Mi mamá dice que si vienes.*\n\nWatch the accent. *Dice que sí* is \"she says yes\". *Dice que si vienes* is \"she asks if you're coming\".",
+  "smallPrint": "Teachers call the first use an elliptical reply and the second an indirect question passed on with *dice que si*. It is how people relay messages in everyday talk.",
+  "readAndPick": [
+    { "es": "Mi mamá dice que si vienes a almorzar.", "options": ["She says yes, you're coming for lunch.", "She's asking whether you're coming for lunch.", "She says you're not coming for lunch."], "answer": 1 },
+    { "es": "Vale dice que sí.", "options": ["Vale is asking whether you will.", "Vale says no.", "Vale says yes."], "answer": 2 },
+    { "es": "¿Qué dijo Vale?\nQue ya viene.", "options": ["What did Vale say? That she's on her way.", "What did Vale say? That I'm on my way.", "What did Vale say? That she wasn't coming."], "answer": 0 },
+    { "es": "Tomás dice que si quieres un tinto.", "options": ["Tomás says he wants a coffee.", "Tomás says yes, you want a coffee.", "Tomás is asking whether you want a coffee."], "answer": 2 },
+    { "es": "Dice que sí hay café.", "options": ["She's asking whether there's coffee.", "She says there is coffee.", "She says there's no coffee."], "answer": 1 },
+    { "es": "Dice que si hay café.", "options": ["She's asking whether there's coffee.", "She says there is coffee.", "She says there's no coffee."], "answer": 0 },
+    { "es": "¿Qué dijo el funcionario?\nQue todavía no.", "options": ["What did the official say? Yes, already.", "What did the official say? That I should ask him.", "What did the official say? That not yet."], "answer": 2 },
+    { "es": "Mariana dice que si ya cerraron el café.", "options": ["Mariana says they closed the café.", "Mariana is asking whether they have already closed the café.", "Mariana says no, they haven't closed it."], "answer": 1 },
+    { "es": "Hernando dice que no.", "options": ["Hernando says no.", "Hernando says yes.", "Hernando is asking whether not."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "The question is \"What did Vale say?\" Answer \"That she's on her way\", choosing *Que* or *Qué*: ___ ya viene.", "answer": "Que ya viene.", "accept": ["Que ya viene"], "why": "In a reply, *que* means \"that\" and has no accent; *qué* is only for asking." },
+    { "prompt": "Vale is asking whether you (to a friend) are coming to lunch. Choose *si* or *sí*: Vale dice que ___ vienes a almorzar.", "answer": "Vale dice que si vienes a almorzar.", "accept": ["Vale dice que si vienes a almorzar"], "why": "She is asking, so it is the plain *si* meaning \"whether\", with no accent." },
+    { "prompt": "Say: Hernando said no. (Start with Hernando.)", "answer": "Hernando dijo que no.", "accept": ["Hernando dijo que no", "Dijo Hernando que no."], "why": "*Dijo que no* is the plain way to pass on a no." },
+    { "prompt": "Tell a friend that Tomás is asking whether you (singular, informal) want a tinto.", "answer": "Tomás dice que si quieres un tinto.", "accept": ["Tomás dice que si quieres un tinto", "Tomás dice que si quieres tinto."], "why": "*Dice que si* plus a clause is how you relay a question." },
+    { "prompt": "Answer the question \"What did Mariana say?\" with: That not yet.", "answer": "Que todavía no.", "accept": ["Que todavía no", "Que no todavía."], "why": "Start with *que* and say only what she said." },
+    { "prompt": "Change to \"yes\": Mariana dice que no.", "answer": "Mariana dice que sí.", "accept": ["Mariana dice que sí"], "why": "Yes needs the accent: *sí*." },
+    { "prompt": "Change so that she is asking whether there is coffee: Dice que sí hay café.", "answer": "Dice que si hay café.", "accept": ["Dice que si hay café"], "why": "Drop the accent and *si* becomes \"whether\"." },
+    { "prompt": "Tell a friend: My mum is asking whether you (informal) have already eaten.", "answer": "Mi mamá dice que si ya comiste.", "accept": ["Mi mamá dice que si ya comiste", "Mi mamá dice que si comiste ya."], "why": "Same frame as the lunch question: *dice que si* plus what she wants to know." }
+  ],
+  "pitfalls": [
+    { "wrong": "¿Qué dijo Hernando?\nQué hoy no puede.", "right": "¿Qué dijo Hernando?\nQue hoy no puede.", "why": "Almost. A reply starts with plain *que*; the accented *qué* belongs to the question." },
+    { "wrong": "Mi mamá dice si vienes a almorzar.", "right": "Mi mamá dice que si vienes a almorzar.", "why": "Almost. English says \"asks whether\" with no \"that\", but after *dice* Spanish needs the *que* first." },
+    { "wrong": "Mi mamá dice que sí vienes a almorzar.", "right": "Mi mamá dice que si vienes a almorzar.", "why": "Almost. With the accent, *sí* is \"yes\" and the sentence is no longer a question." }
+  ],
+  "personal": "Think of someone who asks you things through other people. Write what they asked you this week: *Mi mamá dice que si…*, or *Mi jefe dice que si…*"
+}

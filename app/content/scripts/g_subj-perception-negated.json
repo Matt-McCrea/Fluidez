@@ -1,0 +1,47 @@
+{
+  "node": "g:subj-perception-negated",
+  "hook": {
+    "line": "Sooner or later someone says \"you said it was urgent!\" and you need to answer \"I never said that\". In Spanish that little *no* changes the verb that follows, and getting it right makes you sound precise instead of defensive.",
+    "es": "No dije que fuera urgente.",
+    "en": "I didn't say it was urgent."
+  },
+  "examples": [
+    { "es": "No es que no quiera, es que no puedo.", "en": "It's not that I don't want to, it's that I can't." },
+    { "es": "No dijo que fuera urgente.", "en": "He didn't say it was urgent." },
+    { "es": "Dijo que era urgente.", "en": "He said it was urgent." },
+    { "es": "Vi que Vale estaba enojada.", "en": "I saw that Vale was angry." },
+    { "es": "No vi que Vale estuviera enojada.", "en": "I didn't see that Vale was angry." },
+    { "es": "No oí que sonara el teléfono.", "en": "I didn't hear the phone ring." },
+    { "es": "No vi que llegara nadie.", "en": "I didn't see anyone arrive." }
+  ],
+  "rule": "After *vi que*, *oí que* or *dijo que*, you use the ordinary past verb: *Vi que Vale estaba enojada.* *Dijo que era urgente.* You are vouching for it.\n\nPut *no* in front and you are no longer vouching, so the verb after *que* switches to the past form that ends in *-ra*: *estaba* becomes *estuviera*, *era* becomes *fuera*, *tenía* becomes *tuviera*, *llegó* becomes *llegara*, *sonó* becomes *sonara*.\n\n*No vi que estuviera enojada.* *No dijo que fuera urgente.* It is the same switch as after *no creo que*.\n\nSo does *No es que no quiera, es que no puedo*: the first half is the thing you deny.\n\nEnglish keeps one verb for both. Spanish changes it.",
+  "smallPrint": "Teachers call this the subjunctive after negated verbs of perception and speech: the *no* turns a fact into a claim you don't back.",
+  "readAndPick": [
+    { "es": "Vi que Vale estaba enojada.", "options": ["I saw that Vale was angry.", "I didn't see that Vale was angry.", "I asked whether Vale was angry."], "answer": 0 },
+    { "es": "No vi que Vale estuviera enojada.", "options": ["I saw that Vale was angry.", "I didn't see that Vale was angry.", "Vale didn't see that I was angry."], "answer": 1 },
+    { "es": "Dijo que era urgente.", "options": ["He didn't say it was urgent.", "He asked if it was urgent.", "He said it was urgent."], "answer": 2 },
+    { "es": "No dijo que fuera urgente.", "options": ["He didn't say it was urgent.", "He said it was urgent.", "He said it wasn't urgent."], "answer": 0 },
+    { "es": "No oí que sonara el teléfono.", "options": ["I heard the phone ring.", "I didn't hear that the phone was broken.", "I didn't hear the phone ring."], "answer": 2 },
+    { "es": "No es que no quiera, es que no puedo.", "options": ["I don't want to and I can't.", "It's not that I don't want to, it's that I can't.", "It's that I want to and I can."], "answer": 1 },
+    { "es": "No dije que Vale tuviera la culpa.", "options": ["I said Vale was to blame.", "Vale didn't say I was to blame.", "I didn't say Vale was to blame."], "answer": 2 },
+    { "es": "No vi que llegara nadie.", "options": ["I saw somebody arrive.", "I didn't see anyone arrive.", "Nobody saw me arrive."], "answer": 1 },
+    { "es": "Mariana no dijo que el político mintiera.", "options": ["Mariana didn't say the politician lied.", "Mariana said the politician lied.", "The politician didn't say Mariana lied."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "I didn't say it was urgent. Choose *fuera* or *era*: No dije que ___ urgente.", "answer": "No dije que fuera urgente.", "accept": ["No dije que fuera urgente"], "why": "After *no dije que* the verb takes the *-ra* form: *fuera*." },
+    { "prompt": "I saw that Vale was angry. Choose *estaba* or *estuviera*: Vi que Vale ___ enojada.", "answer": "Vi que Vale estaba enojada.", "accept": ["Vi que Vale estaba enojada"], "why": "With no *no*, you are vouching for it, so the ordinary past is *estaba*." },
+    { "prompt": "Say: I didn't see that Vale was angry.", "answer": "No vi que Vale estuviera enojada.", "accept": ["No vi que Vale estuviera enojada"], "why": "*No vi que* switches *estaba* to *estuviera*." },
+    { "prompt": "Say: I didn't hear the phone ring.", "answer": "No oí que sonara el teléfono.", "accept": ["No oí que sonara el teléfono", "No oí que el teléfono sonara."], "why": "*Sonó* becomes *sonara* after *no oí que*." },
+    { "prompt": "Say: He didn't say it was urgent.", "answer": "No dijo que fuera urgente.", "accept": ["No dijo que fuera urgente"], "why": "Same switch with *dijo*: *era* becomes *fuera*." },
+    { "prompt": "Make it negative: Dijo que Vale tenía la culpa.", "answer": "No dijo que Vale tuviera la culpa.", "accept": ["No dijo que Vale tuviera la culpa"], "why": "Add *no*, and *tenía* becomes *tuviera*." },
+    { "prompt": "Make it negative: Vi que llegaba Hernando.", "answer": "No vi que llegara Hernando.", "accept": ["No vi que llegara Hernando", "No vi que Hernando llegara."], "why": "Add *no*, and *llegaba* becomes *llegara*." },
+    { "prompt": "Say: It's not that I don't want to, it's that I can't.", "answer": "No es que no quiera, es que no puedo.", "accept": ["No es que no quiera, es que no puedo"], "why": "The denied half takes *quiera*; the true half stays ordinary: *puedo*." }
+  ],
+  "pitfalls": [
+    { "wrong": "No vi que Vale estaba enojada.", "right": "No vi que Vale estuviera enojada.", "why": "Almost. After *no vi que* the verb steps back into the *-ra* form." },
+    { "wrong": "No dijo que era urgente.", "right": "No dijo que fuera urgente.", "why": "Almost. Once *dijo* is negated, you use *fuera*, not *era*." },
+    { "wrong": "No vi que llegó nadie.", "right": "No vi que llegara nadie.", "why": "Almost. A denied sighting takes the *-ra* form: *llegara*." },
+    { "wrong": "Vi que Vale estuviera enojada.", "right": "Vi que Vale estaba enojada.", "why": "Almost. Without *no* you are reporting what you saw, so use the ordinary past." }
+  ],
+  "personal": "Think of something people assume about you that isn't true. Deny it: *No dije que…*, or *No es que…*"
+}

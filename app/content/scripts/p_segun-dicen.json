@@ -1,0 +1,43 @@
+{
+  "node": "p:segun-dicen",
+  "hook": {
+    "line": "When Mariana files a story, she cannot swear to everything she heard. Spanish has small markers that pass news along while quietly saying \"I didn't see this myself\".",
+    "es": "Parece que ya terminaron el proyecto, según dicen.",
+    "en": "It seems they've already finished the project, so they say."
+  },
+  "examples": [
+    { "es": "Parece que ya terminaron el proyecto, según dicen.", "en": "It seems they've already finished the project, so they say." },
+    { "es": "Por lo visto, el restaurante cerró.", "en": "Apparently the restaurant closed." },
+    { "es": "Según dicen, Altamira quiere comprar toda la cuadra.", "en": "Supposedly, Altamira wants to buy the whole block." },
+    { "es": "Al parecer, el dueño no estaba.", "en": "Apparently the owner wasn't there." },
+    { "es": "Según Mariana, el acta no está.", "en": "According to Mariana, the minutes aren't there." },
+    { "es": "Parece que nadie vino a la asamblea.", "en": "It seems nobody came to the assembly." }
+  ],
+  "rule": "To pass on news without owning it, add a marker. At the front: *Por lo visto*, *Al parecer*, *Según dicen* (\"apparently\", \"supposedly\"). At the end: *según dicen* (\"so they say\"). Or start with *Parece que*.\n\nThe news itself stays an ordinary statement, no special verb form: *Parece que el restaurante cerró.*\n\n*Según* plus a name says whose word it is: *Según Mariana*. It already means \"Mariana says\", so don't add *dice que*.",
+  "smallPrint": "Teachers call these evidential markers: they tell the listener how you know something, here second hand.",
+  "readAndPick": [
+    { "es": "Según dicen, Altamira quiere comprar toda la cuadra.", "options": ["Supposedly, Altamira wants to buy the whole block.", "Altamira told me it wants to buy the block.", "I'm sure Altamira bought the block."], "answer": 0 },
+    { "es": "Por lo visto, el restaurante cerró.", "options": ["The restaurant will close, I'm sure.", "I watched the restaurant close.", "Apparently the restaurant closed."], "answer": 2 },
+    { "es": "Según Mariana, el acta no está.", "options": ["Mariana says she has the minutes.", "According to Mariana, the minutes aren't there.", "According to me, Mariana isn't here."], "answer": 1 },
+    { "es": "Al parecer, el dueño no estaba.", "options": ["The owner isn't here, I checked.", "The owner seems to be there.", "Apparently the owner wasn't there."], "answer": 2 },
+    { "es": "Parece que nadie vino a la asamblea.", "options": ["It seems nobody came to the assembly.", "Everybody seems to want to come.", "It seems the assembly came to nobody."], "answer": 0 },
+    { "es": "Parece que ya terminaron el proyecto, según dicen.", "options": ["I finished the project, so they say.", "It seems they've already finished the project, so they say.", "They will finish the project soon, I'm sure."], "answer": 1 },
+    { "es": "Según dicen, hay una reunión mañana.", "options": ["There was a meeting yesterday, I was there.", "I'm calling a meeting tomorrow.", "Supposedly there's a meeting tomorrow."], "answer": 2 },
+    { "es": "Por lo visto, nadie sabe quién firmó.", "options": ["Apparently nobody knows who signed.", "Everybody knows who signed, I think.", "Apparently nobody signed."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick the phrase that means \"apparently\": *Por lo visto* or *Por supuesto*. ___, el restaurante cerró.", "answer": "Por lo visto, el restaurante cerró.", "accept": ["Por lo visto el restaurante cerró."], "why": "*Por lo visto* is \"apparently\"; *por supuesto* is \"of course\"." },
+    { "prompt": "Say: According to Mariana, the minutes aren't there.", "answer": "Según Mariana, el acta no está.", "accept": ["Según Mariana el acta no está."], "why": "*Según* plus the name says whose word it is." },
+    { "prompt": "Say, starting with *Al parecer*: Apparently the owner wasn't there.", "answer": "Al parecer, el dueño no estaba.", "accept": ["Al parecer el dueño no estaba."], "why": "*Al parecer* is a front marker, followed by an ordinary statement." },
+    { "prompt": "Say, starting with *Según dicen*: Supposedly, Altamira wants to buy the whole block.", "answer": "Según dicen, Altamira quiere comprar toda la cuadra.", "accept": ["Según dicen Altamira quiere comprar toda la cuadra.", "Altamira quiere comprar toda la cuadra, según dicen."], "why": "*Según dicen* can sit at the front or at the end of the news." },
+    { "prompt": "Say, starting with *Parece que*: It seems nobody came to the assembly.", "answer": "Parece que nadie vino a la asamblea.", "accept": ["Parece que nadie vino a la asamblea"], "why": "After *parece que* comes a normal statement." },
+    { "prompt": "Add \"so they say\" at the end: Parece que Hernando ya se fue.", "answer": "Parece que Hernando ya se fue, según dicen.", "accept": ["Parece que Hernando ya se fue, según dicen"], "why": "*Según dicen* closes the sentence and hands the news back to \"them\"." },
+    { "prompt": "Make it hearsay with *Por lo visto*: Nadie sabe quién firmó.", "answer": "Por lo visto, nadie sabe quién firmó.", "accept": ["Por lo visto nadie sabe quién firmó."], "why": "The marker goes in front; the statement itself doesn't change." }
+  ],
+  "pitfalls": [
+    { "wrong": "Según Mariana, dice que el acta no está.", "right": "Según Mariana, el acta no está.", "why": "Almost. *Según Mariana* already means \"Mariana says\", so *dice que* repeats it." },
+    { "wrong": "Parece que el restaurante cerrara.", "right": "Parece que el restaurante cerró.", "why": "Almost. The news after *parece que* is an ordinary statement, with no special verb form." },
+    { "wrong": "Según dicen, que Altamira quiere comprar toda la cuadra.", "right": "Según dicen, Altamira quiere comprar toda la cuadra.", "why": "Almost. *Según dicen* is a marker, not \"they say that\", so no *que* follows." }
+  ],
+  "personal": "Think of one piece of gossip or news you heard but didn't see. Pass it on with a marker: *Por lo visto…*, *Según dicen…*"
+}

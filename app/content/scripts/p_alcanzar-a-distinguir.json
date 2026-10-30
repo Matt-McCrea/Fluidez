@@ -1,0 +1,44 @@
+{
+  "node": "p:alcanzar-a-distinguir",
+  "hook": {
+    "line": "A witness in a crowded assembly rarely saw everything. Spanish has a neat way to say you caught something, or just missed it, without sounding like you simply refuse to look.",
+    "es": "No alcancé a ver quién era.",
+    "en": "I didn't manage to see who it was."
+  },
+  "examples": [
+    { "es": "No alcancé a ver quién era.", "en": "I didn't manage to see who it was." },
+    { "es": "Alcancé a oír lo que dijo.", "en": "I managed to hear what he said." },
+    { "es": "Desde aquí no distingo si es él.", "en": "From here I can't make out whether it's him." },
+    { "es": "No alcanzo a leer el letrero.", "en": "I can't quite read the sign." },
+    { "es": "La torre se ve de lejos.", "en": "The tower can be seen from far away." },
+    { "es": "Desde la ventana se ve la plaza.", "en": "From the window you can see the plaza." }
+  ],
+  "rule": "*Alcanzar a* + ver, oír, leer or entender means you just managed to catch it, or just didn't: *Alcancé a oír* (I caught it), *No alcancé a ver* (I couldn't make it out). The *a* is part of the phrase.\n\n*Distinguir* is to tell something apart: *No distingo si es él.*\n\nFor what can be seen or heard from a place, Spanish uses *se*: *La torre se ve de lejos.* *Se oye la música.*",
+  "smallPrint": "Teachers call *alcanzar a* a verb of attainment: it is about your eyes or ears reaching the thing, not about deciding to look.",
+  "readAndPick": [
+    { "es": "No alcancé a ver quién era.", "options": ["I didn't want to see who it was.", "I saw who it was.", "I didn't manage to see who it was."], "answer": 2 },
+    { "es": "Alcancé a oír lo que dijo.", "options": ["I managed to hear what he said.", "I couldn't hear what he said.", "I didn't want to hear what he said."], "answer": 0 },
+    { "es": "Desde aquí no distingo si es él.", "options": ["From here I can see it's him.", "From here I can't make out whether it's him.", "From here I don't know him."], "answer": 1 },
+    { "es": "La torre se ve de lejos.", "options": ["I look at the tower from far away.", "The tower looks at me from far away.", "The tower can be seen from far away."], "answer": 2 },
+    { "es": "No alcanzo a leer el letrero.", "options": ["I can't quite read the sign.", "I don't want to read the sign.", "I read the sign easily."], "answer": 0 },
+    { "es": "Desde la ventana se ve la plaza.", "options": ["The plaza looks at the window.", "From the window you can see the plaza.", "From the plaza you can see the window."], "answer": 1 },
+    { "es": "Se oye la música desde la calle.", "options": ["I'm playing music in the street.", "The street can't hear the music.", "The music can be heard from the street."], "answer": 2 },
+    { "es": "¿Alcanzaste a ver quién era?", "options": ["Did you manage to see who it was?", "Did I manage to see who it was?", "Did you want to see who it was?"], "answer": 0 },
+    { "es": "Alcancé a ver que Vale lloraba.", "options": ["I didn't see that Vale was crying.", "I managed to see that Vale was crying.", "Vale saw me crying."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "I didn't manage to read the whole minutes. Choose *alcancé* or *alcanzó*: No ___ a leer el acta completa.", "answer": "No alcancé a leer el acta completa.", "accept": ["No alcancé a leer el acta completa"], "why": "It is about \"I\", so the ending is *-é*: *alcancé*." },
+    { "prompt": "Say: I managed to hear what he said.", "answer": "Alcancé a oír lo que dijo.", "accept": ["Alcancé a oír lo que dijo", "Alcancé a escuchar lo que dijo."], "why": "*Alcancé a* + infinitive: you just caught it." },
+    { "prompt": "Say: With so many people, I can't make out who is speaking.", "answer": "Con tanta gente no alcanzo a distinguir quién habla.", "accept": ["Con tanta gente no alcanzo a distinguir quién habla", "Con tanta gente no distingo quién habla."], "why": "*No alcanzo a distinguir* says you can't quite tell them apart." },
+    { "prompt": "Say: From the window you can see the plaza.", "answer": "Desde la ventana se ve la plaza.", "accept": ["Desde la ventana se ve la plaza", "Se ve la plaza desde la ventana."], "why": "*Se ve* is the everyday way to say what can be seen from somewhere." },
+    { "prompt": "Ask a friend: Did you manage to see who it was?", "answer": "¿Alcanzaste a ver quién era?", "accept": ["¿Alcanzaste a ver quién era?"], "why": "Same frame, with the *tú* ending *-aste*." },
+    { "prompt": "Make it negative: Alcancé a entender qué pasó.", "answer": "No alcancé a entender qué pasó.", "accept": ["No alcancé a entender qué pasó"], "why": "Put *no* in front and it means you didn't catch it." },
+    { "prompt": "Make it about her: Alcancé a ver quién era.", "answer": "Alcanzó a ver quién era.", "accept": ["Alcanzó a ver quién era", "Ella alcanzó a ver quién era."], "why": "For *she*, the ending is *-ó*: *alcanzó*." }
+  ],
+  "pitfalls": [
+    { "wrong": "No alcancé ver quién era.", "right": "No alcancé a ver quién era.", "why": "Almost. The small *a* is part of *alcanzar a*, and English has nothing like it." },
+    { "wrong": "La torre es vista de lejos.", "right": "La torre se ve de lejos.", "why": "Almost. English says \"is seen\"; Spanish says *se ve*." },
+    { "wrong": "Desde aquí no distingo que es él.", "right": "Desde aquí no distingo si es él.", "why": "Almost. \"Whether\" is *si*, not *que*." }
+  ],
+  "personal": "Think of a crowded place you know. Say one thing you can't quite make out there, and one thing that can be seen from far away: *No alcanzo a…*, *Se ve…*"
+}
