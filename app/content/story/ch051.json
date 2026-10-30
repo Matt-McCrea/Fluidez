@@ -2,7 +2,7 @@
   "id": "ch051",
   "unit": "u18",
   "title": "Una amiga mía",
-  "text": "A las cinco menos un minuto, el empleado de la terminal llegó al hostal con una maleta negra.\nEmpleado: ¿Esta maleta es suya, señor?\nTomás: ¡Sí, es mía! Mi pasaporte, mis camisas y el café de Rosa.\nTomás sacó de la maleta el suéter rosado.\nVale: ¿Te vas a poner eso? No, Tomás. Hoy no.\nVale le quitó el suéter de las manos.\nLa casa de los Ospina estaba en la carrera 70. La fiesta oficial empezaba a las ocho, pero a las seis ya había cuarenta personas, música y mucho ruido.\nTío: ¡Hola, pues! ¿Usted es el amigo de Vale?\nPrima: ¿Y qué más, pues? ¿Cómo le pareció Medellín?\nDe diez palabras, Tomás entendía una. Ni siquiera entendía los nombres. La única palabra fácil era «pues».\nA las siete, la abuela de Vale lo sacó a bailar. Tomás hizo su única vuelta, y la abuela le dio un beso.\nAbuela: ¡Muy bien, mijo! ¿Y la otra vuelta?\nDespués, la mamá de Vale lo llevó a la cocina. Se llamaba Beatriz y tenía los ojos de Vale.\nTomás: Esto es para usted, de parte de don Hernando. Es café de Rosa.\nBeatriz miró el paquete un rato largo.\nBeatriz: En 1990, Rosa me trajo un café igual a este. Rosa era amiga mía.\nTomás: ¿Amiga suya? Don Hernando dice que Rosa vino a Medellín ese año. ¿Para qué vino?\nBeatriz: Buscaba a su hermano, Joaquín. Mi papá trabajó con él aquí, en 1978. Pero Joaquín se fue para la costa y nunca volvió.\nBeatriz: Rosa me dijo el nombre de un pueblo, pero ya no me acuerdo. Y cuando Vale quiso trabajar en Bogotá, yo la mandé al café de Rosa. Vale cree que encontró ese trabajo sola.\nDesde la sala, Vale lo llamó.\nVale: ¡Tomás! ¡Ven! Mi abuela dice que la próxima canción es tuya.",
+  "text": "A las cinco menos un minuto, el empleado de la terminal llegó al hostal con la maleta negra. Adentro estaban el pasaporte, el café de Rosa y el suéter rosado.\nVale: ¿Te vas a poner eso? No, Tomás. Hoy no.\nVale le quitó el suéter de las manos.\nLos Ospina vivían en la carrera 70. A las seis ya había cuarenta personas, música y mucho ruido.\nTío: ¡Hola, pues! ¿Usted es el amigo de Vale? ¿Y qué más? ¿Cómo le pareció Medellín?\nDe diez palabras, Tomás entendía una. La única palabra fácil era «pues».\nA las siete, la abuela de Vale lo sacó a bailar. Tomás hizo su única vuelta, y la abuela le dio un beso.\nAbuela: ¡Muy bien, mijo! ¿Y la otra vuelta?\nDespués, la mamá de Vale lo llevó a la cocina. Se llamaba Beatriz y tenía los ojos de Vale.\nTomás: Esto es para usted, de parte de don Hernando. Es café de Rosa.\nBeatriz miró el paquete un rato largo.\nBeatriz: En 1990, Rosa me trajo un café igual a este. Rosa era amiga mía.\nTomás: ¿Amiga suya? ¿Y por qué vino a Medellín?\nBeatriz: Buscaba a su hermano, Joaquín. Mi papá trabajó con él en 1978. Pero Joaquín se fue para la costa y nunca volvió.\nBeatriz: Rosa me dijo el nombre de un pueblo, pero lo olvidé. Y cuando Vale quiso trabajar en Bogotá, yo la mandé al café de Rosa. Vale cree que encontró ese trabajo sola.\nVale: ¡Tomás! ¡Ven! Mi abuela dice que la próxima canción es tuya.",
   "gloss": [
     {
       "es": "A las cinco menos un minuto",
@@ -13,15 +13,11 @@
       "en": "Are you going to wear that?"
     },
     {
-      "es": "La fiesta oficial",
-      "en": "The official party"
-    },
-    {
       "es": "¡Hola, pues!",
       "en": "Well, hello there!"
     },
     {
-      "es": "¿Y qué más, pues?",
+      "es": "¿Y qué más?",
       "en": "So, how's it going?"
     },
     {
@@ -31,10 +27,6 @@
     {
       "es": "De diez palabras, Tomás entendía una.",
       "en": "Tomás understood one word in ten."
-    },
-    {
-      "es": "Ni siquiera entendía los nombres.",
-      "en": "He didn't even understand the names."
     },
     {
       "es": "lo sacó a bailar",
@@ -53,16 +45,16 @@
       "en": "Rosa was a friend of mine."
     },
     {
-      "es": "ya no me acuerdo",
-      "en": "I don't remember any more"
-    },
-    {
       "es": "Vale cree que encontró ese trabajo sola.",
       "en": "Vale thinks she found that job by herself."
     },
     {
       "es": "la próxima canción es tuya",
       "en": "the next song is yours"
+    },
+    {
+      "es": "lo olvidé",
+      "en": "I forgot it"
     }
   ],
   "questions": [
@@ -111,7 +103,7 @@
       "options": [
         "¿Y la otra vuelta?",
         "¿Usted es el amigo de Vale?",
-        "¿Esta maleta es suya?",
+        "¿Te vas a poner eso?",
         "¿Cómo le pareció Medellín?"
       ],
       "answer": 0
@@ -157,7 +149,6 @@
     "c:pues",
     "c:que-mas",
     "c:voy-vas",
-    "c:ya-no",
     "g:adjective-agreement",
     "g:commands-tu",
     "g:demonstratives",
@@ -179,11 +170,9 @@
     "g:questions",
     "g:reflexive-routine",
     "g:ser-identity",
-    "g:stem-boot",
     "g:stem-e-i",
     "g:that-clauses",
     "g:verb-infinitive",
-    "p:aqui-ahi-alla",
     "p:cuando-basic",
     "p:dates-years",
     "p:de-owner",
@@ -195,32 +184,25 @@
     "p:me-te-nos-objects",
     "p:otro-no-article",
     "p:para-inf",
-    "p:para-inf-purpose",
     "p:personal-a",
     "p:possessives-basic",
-    "p:prep-questions-basic",
     "p:quantifiers-basic",
-    "p:senor-don-article",
     "p:street-names",
     "p:telling-time",
     "p:time-sequence-basic"
   ],
   "lexemes": [
     "l:abuela",
-    "l:acordarse",
+    "l:adentro",
     "l:amiga",
     "l:amigo",
-    "l:aquí",
-    "l:año",
     "l:bailar",
     "l:beso",
     "l:bien",
     "l:buscar",
     "l:café",
-    "l:camisa",
     "l:canción",
     "l:carrera",
-    "l:casa",
     "l:cocina",
     "l:costa",
     "l:creer",
@@ -228,12 +210,10 @@
     "l:dar",
     "l:decir",
     "l:después",
-    "l:empezar",
     "l:empleado",
     "l:encontrar",
     "l:entender",
     "l:estar",
-    "l:fiesta",
     "l:fácil",
     "l:hacer",
     "l:hermano",
@@ -242,7 +222,6 @@
     "l:igual",
     "l:irse",
     "l:largo",
-    "l:llamar",
     "l:llamarse",
     "l:llegar",
     "l:llevar",
@@ -256,8 +235,8 @@
     "l:música",
     "l:negro",
     "l:nombre",
-    "l:oficial",
     "l:ojo",
+    "l:olvidar",
     "l:palabra",
     "l:papá",
     "l:paquete",
@@ -266,7 +245,6 @@
     "l:pasaporte",
     "l:persona",
     "l:poner",
-    "l:prima",
     "l:próximo",
     "l:pueblo",
     "l:querer",
@@ -276,10 +254,7 @@
     "l:rosado",
     "l:ruido",
     "l:sacar",
-    "l:sala",
     "l:ser",
-    "l:señor",
-    "l:siquiera",
     "l:suéter",
     "l:tener",
     "l:terminal",
@@ -289,6 +264,7 @@
     "l:tío",
     "l:venir",
     "l:vino",
+    "l:vivir",
     "l:volver",
     "l:vuelta",
     "l:único"
