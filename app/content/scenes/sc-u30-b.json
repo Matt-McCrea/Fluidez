@@ -1,0 +1,208 @@
+{
+  "id": "sc-u30-b",
+  "unit": "u30",
+  "title": "Day off",
+  "spare": false,
+  "brief": "You're Tomás, and it's your day off. Vale calls you from the café, bored. Explain why you're home, react to how she feels and own up to the way you've changed lately. She's your friend, so use tú.",
+  "requires": [
+    "c:chao-nos-vemos",
+    "c:claro-listo",
+    "c:me-regala",
+    "c:oiga-oye",
+    "c:para-nada",
+    "c:porque",
+    "c:que-alivio",
+    "c:que-pena",
+    "c:quiero",
+    "c:voy-vas",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:demonstratives",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-states",
+    "g:ir-a-plans",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-emotion",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:verbs-of-change",
+    "l:aburrirse",
+    "l:alivio",
+    "l:aquí",
+    "l:bravo",
+    "l:café",
+    "l:casa",
+    "l:centro",
+    "l:claro",
+    "l:dar",
+    "l:después",
+    "l:día",
+    "l:dónde",
+    "l:estar",
+    "l:hacer",
+    "l:hoy",
+    "l:ir",
+    "l:irse",
+    "l:libre",
+    "l:oír",
+    "l:pasar",
+    "l:pena",
+    "l:pensar",
+    "l:ponerse",
+    "l:quedar",
+    "l:quedarse",
+    "l:querer",
+    "l:qué",
+    "l:raro",
+    "l:rato",
+    "l:ser",
+    "l:serio",
+    "l:trabajar",
+    "l:trabajo",
+    "l:venir",
+    "l:ver",
+    "l:verdad",
+    "l:volverse",
+    "p:aburrir-aburrirse",
+    "p:aqui-ahi-alla",
+    "p:demonstratives-basic",
+    "p:enojarse-con",
+    "p:me-da-miedo",
+    "p:me-da-pena-que",
+    "p:me-te-nos-objects",
+    "p:no-es-x-es-y",
+    "p:nos-vemos-a-las",
+    "p:pensar-en",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:time-sequence-basic",
+    "p:todos-los-dias"
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Oye, ¿dónde estás? Hoy no viniste al café.",
+      "npcEn": "Hey, where are you? You didn't come to the café today.",
+      "intent": "Say you stayed home today because it's your day off.",
+      "accept": [
+        "Me quedé en casa porque hoy no trabajo.",
+        "Hoy me quedé en casa. Es mi día libre.",
+        "Me quedé en casa, no trabajo hoy."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "me qued",
+          "flags": "i",
+          "label": "say you stayed home with quedarse: me quedé"
+        }
+      ],
+      "focus": "g:se-meaning-change",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Qué raro. Aquí me aburro sin ti.",
+      "npcEn": "How strange. I get bored here without you.",
+      "intent": "Say you are sorry that she is bored (it gives you sadness).",
+      "accept": [
+        "Me da pena que te aburras.",
+        "Me da pena que te aburras sola.",
+        "Qué pena, me da pena que te aburras tanto."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "pena que",
+          "within": 3,
+          "label": "after me da pena que, the verb changes: te aburras"
+        }
+      ],
+      "focus": "p:aburrir-aburrirse",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Estás muy serio estos días. ¿Qué te pasó?",
+      "npcEn": "You've been very serious these days. What happened to you?",
+      "intent": "Admit you became more serious (use volverse or ponerse), because you care about the café.",
+      "accept": [
+        "Es verdad, me volví muy serio. Quiero mucho el café.",
+        "Sí, me puse serio. Quiero mucho este café.",
+        "Me volví muy serio, pero es porque quiero el café."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bme (volv|pus|hic)",
+          "flags": "i",
+          "label": "say how you changed with a verb of change: me volví, me puse"
+        }
+      ],
+      "focus": "g:verbs-of-change",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¿Y qué vas a hacer hoy? ¿Te vas a quedar en casa todo el día?",
+      "npcEn": "And what are you going to do today? Are you going to stay home all day?",
+      "intent": "Say no, you are leaving for downtown, and ask her to come after work.",
+      "accept": [
+        "No, ya me voy al centro. ¿Quieres venir después del trabajo?",
+        "No, me voy al centro un rato. ¿Vienes después del trabajo?",
+        "No me quedo, me voy al centro. ¿Quieres venir después?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bme voy\\b",
+          "flags": "i",
+          "label": "say you are leaving with irse: me voy"
+        },
+        {
+          "type": "question",
+          "label": "ask her to come: a question"
+        }
+      ],
+      "focus": "x:ir-irse",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Sí, claro. Qué alivio. Pensé que estabas brava conmigo.",
+      "npcEn": "Yes, of course. What a relief. I thought you were angry with me.",
+      "intent": "Tell her you are not angry with her, and say goodbye.",
+      "accept": [
+        "Para nada. No estoy bravo contigo. Hasta luego.",
+        "No, no estoy bravo contigo. Nos vemos en el centro.",
+        "No estoy bravo contigo. Nos vemos luego."
+      ],
+      "require": [
+        {
+          "type": "negation",
+          "label": "say you are NOT angry: no estoy bravo"
+        },
+        {
+          "type": "regex",
+          "pattern": "contigo",
+          "flags": "i",
+          "label": "with you: bravo contigo"
+        }
+      ],
+      "focus": "p:enojarse-con",
+      "next": null
+    }
+  ]
+}

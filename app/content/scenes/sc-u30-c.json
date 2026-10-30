@@ -1,0 +1,230 @@
+{
+  "id": "sc-u30-c",
+  "unit": "u30",
+  "title": "Closing time",
+  "spare": true,
+  "brief": "You're Tomás. The café is closing and Vale stays behind, scared about what Altamira could do. Listen to her, tell her what worries you, say how you've changed and cheer her up. She's your friend, so use tú.",
+  "requires": [
+    "c:a-mi-tambien",
+    "c:animo",
+    "c:ayer-anoche",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:es-que",
+    "c:gracias-de-nada",
+    "c:me-alegro",
+    "c:me-imagino",
+    "c:me-regala",
+    "c:no-te-preocupes",
+    "c:puedo",
+    "c:que-alivio",
+    "c:que-susto",
+    "c:quiero",
+    "c:tengo",
+    "c:tienes",
+    "c:tranquilo",
+    "c:voy-a",
+    "c:ya-veras-que-todo-sale-bien",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:subj-emotion",
+    "g:subj-emotion-intro",
+    "g:subj-irregulars",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:verbs-of-change",
+    "g:yo-irregular",
+    "l:abogado",
+    "l:ahora",
+    "l:alegrarse",
+    "l:alivio",
+    "l:amiga",
+    "l:antes",
+    "l:aquí",
+    "l:ayer",
+    "l:bien",
+    "l:café",
+    "l:cambiar",
+    "l:claro",
+    "l:cuándo",
+    "l:dar",
+    "l:dejar",
+    "l:dormir",
+    "l:dónde",
+    "l:estar",
+    "l:gusto",
+    "l:hablar",
+    "l:imaginarse",
+    "l:ir",
+    "l:irse",
+    "l:juntos",
+    "l:llegar",
+    "l:miedo",
+    "l:minuto",
+    "l:pena",
+    "l:pensar",
+    "l:perder",
+    "l:poder",
+    "l:ponerse",
+    "l:preocuparse",
+    "l:quedarse",
+    "l:querer",
+    "l:qué",
+    "l:salir",
+    "l:ser",
+    "l:serio",
+    "l:tarde",
+    "l:temprano",
+    "l:tener",
+    "l:tinto",
+    "l:trabajar",
+    "l:tranquilo",
+    "l:triste",
+    "l:ver",
+    "l:verdad",
+    "l:vida",
+    "l:volverse",
+    "l:ánimo",
+    "p:alegrarse-de-que",
+    "p:aqui-ahi-alla",
+    "p:cuando-basic",
+    "p:dejar-de-inf",
+    "p:demonstratives-basic",
+    "p:encontrar-ver-adj",
+    "p:me-da-miedo",
+    "p:me-da-pena-que",
+    "p:me-pongo-triste-cuando",
+    "p:me-te-nos-objects",
+    "p:pensar-en",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:tambien-tampoco",
+    "p:tener-hambre"
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, ¿tienes un minuto? No puedo dejar de pensar en el café. Tengo mucho miedo.",
+      "npcEn": "Tomás, do you have a minute? I can't stop thinking about the café. I'm very scared.",
+      "intent": "Say of course, and that you imagine how scared she is.",
+      "accept": [
+        "Claro que sí. Me imagino, qué miedo.",
+        "Claro, Vale. Me imagino, yo también tengo miedo.",
+        "Sí, claro. Me imagino que no dormiste nada."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "me imagino",
+          "flags": "i",
+          "label": "use the chunk: me imagino"
+        }
+      ],
+      "focus": "c:me-imagino",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Es que este café es mi vida. Si lo perdemos, ¿dónde voy a trabajar?",
+      "npcEn": "It's just that this café is my life. If we lose it, where am I going to work?",
+      "intent": "Say you feel sorry that she is so sad (or doesn't sleep, or works so much).",
+      "accept": [
+        "A mí también me da pena. Me da pena que estés tan triste.",
+        "Me da pena que no duermas, Vale.",
+        "Yo también tengo miedo, y me da pena que trabajes tanto."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "pena que",
+          "within": 3,
+          "label": "after me da pena que, the verb changes: estés, duermas, trabajes"
+        }
+      ],
+      "focus": "p:me-da-pena-que",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Y ayer te vi muy serio con el abogado. ¿Cuándo cambiaste tanto?",
+      "npcEn": "And yesterday I saw you very serious with the lawyer. When did you change so much?",
+      "intent": "Say you became serious when the lawyer came or when you saw him.",
+      "accept": [
+        "Me puse muy serio cuando llegó el abogado.",
+        "Me puse serio cuando vi al abogado.",
+        "Me volví más serio, es verdad. Quiero mucho este café."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bme (qued|pus|volv|hic)",
+          "flags": "i",
+          "label": "say how you changed with a verb of change: me quedé, me puse"
+        }
+      ],
+      "focus": "g:verbs-of-change",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Yo también cambié. Antes me iba temprano, y ahora me quedo hasta tarde.",
+      "npcEn": "I've changed too. I used to leave early, and now I stay until late.",
+      "intent": "Cheer her up: tell her it will be fine, you'll see.",
+      "accept": [
+        "Ánimo, Vale. Ya verás que todo sale bien.",
+        "No te preocupes, ya verás que todo sale bien.",
+        "Tranquila, ya verás que todo sale bien. Estamos juntos."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "ya verás que todo sale bien",
+          "flags": "i",
+          "label": "use the chunk: ya verás que todo sale bien"
+        }
+      ],
+      "focus": "c:ya-veras-que-todo-sale-bien",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Gracias, Tomás. Qué alivio hablar contigo. ¿Quieres un tinto antes de irnos?",
+      "npcEn": "Thanks, Tomás. What a relief to talk to you. Do you want a coffee before we go?",
+      "intent": "Say yes, and that you are glad she is here.",
+      "accept": [
+        "Sí, gracias. Me alegro de que estés aquí.",
+        "Claro que sí. Me alegro de que hablemos.",
+        "Con gusto. Me alegro de que seas mi amiga."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "alegro de que",
+          "within": 3,
+          "label": "after me alegro de que, the verb changes: estés, hablemos, seas"
+        }
+      ],
+      "focus": "p:alegrarse-de-que",
+      "next": null
+    }
+  ]
+}

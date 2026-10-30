@@ -1,0 +1,213 @@
+{
+  "id": "sc-u30-a",
+  "unit": "u30",
+  "title": "What Rosa would say",
+  "spare": false,
+  "brief": "You're Tomás. Don Hernando has heard that you're thinking about Altamira's offer, and he is furious. Tell him how his words hurt, admit how you have changed and tell him what you will do. He is much older than you and a friend of your grandmother's, so use usted.",
+  "requires": [
+    "c:bien-y-tu",
+    "c:con-mucho-gusto",
+    "c:entonces-bueno",
+    "c:es-que",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:me-alegro",
+    "c:mucho-gusto",
+    "c:que-alivio",
+    "c:que-susto",
+    "c:que-va",
+    "c:quiero",
+    "c:tienes",
+    "c:voy-a",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:comparatives",
+    "g:conditional",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-emotion-intro",
+    "g:subj-value",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verbs-of-change",
+    "l:abuela",
+    "l:alegrarse",
+    "l:alivio",
+    "l:antes",
+    "l:aquí",
+    "l:bien",
+    "l:bravo",
+    "l:bueno",
+    "l:café",
+    "l:cambiar",
+    "l:contento",
+    "l:creer",
+    "l:decidir",
+    "l:decir",
+    "l:dinero",
+    "l:día",
+    "l:estar",
+    "l:gusto",
+    "l:hablar",
+    "l:hacer",
+    "l:hijo",
+    "l:invitar",
+    "l:ir",
+    "l:molestar",
+    "l:oferta",
+    "l:pensar",
+    "l:ponerse",
+    "l:quedarse",
+    "l:querer",
+    "l:qué",
+    "l:rabia",
+    "l:rato",
+    "l:razón",
+    "l:sentarse",
+    "l:ser",
+    "l:serio",
+    "l:tener",
+    "l:tinto",
+    "l:vender",
+    "l:verdad",
+    "l:volverse",
+    "p:alegrarse-de-que",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:mas-de-number",
+    "p:me-te-nos-objects",
+    "p:pensar-en",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:tener-razon",
+    "p:time-sequence-basic",
+    "p:ya-todavia-basic"
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenos días, Tomás. Me dicen que usted está pensando en la oferta de Altamira.",
+      "npcEn": "Good morning, Tomás. They tell me you are thinking about Altamira's offer.",
+      "intent": "Greet him, say yes, you are thinking about the offer, and say you have decided nothing.",
+      "accept": [
+        "Buenos días. Sí, estoy pensando en la oferta, pero no decidí nada.",
+        "Sí, estoy pensando en la oferta. No decidí nada todavía.",
+        "Buenos días. Sí, pienso en la oferta, pero no decidí nada."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "oferta",
+          "flags": "i",
+          "label": "talk about the offer (la oferta)"
+        }
+      ],
+      "focus": "g:present-ar",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¡Qué rabia que usted piense en el dinero! Su abuela nunca vendería este café.",
+      "npcEn": "How infuriating that you are thinking about the money! Your grandmother would never sell this café.",
+      "intent": "Tell him it bothers you that he thinks that (or that he speaks to you that way).",
+      "accept": [
+        "Me molesta que usted piense eso.",
+        "Me molesta que usted crea que no quiero este café.",
+        "Me molesta que usted me hable así."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "molesta que",
+          "within": 3,
+          "label": "after me molesta que, the verb changes: piense, crea, hable"
+        }
+      ],
+      "focus": "g:subj-emotion",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Me puse muy bravo, Tomás. Pero usted cambió. Antes estaba más contento.",
+      "npcEn": "I got very angry, Tomás. But you have changed. You used to be happier.",
+      "intent": "Agree that you have changed: say you became more serious, and that you care a lot about the café.",
+      "accept": [
+        "Es verdad, me volví más serio. Quiero mucho este café.",
+        "Tiene razón, me volví serio. Quiero este café más que nunca.",
+        "Sí, me volví muy serio. Es que quiero mucho el café."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bme (volv|pus|hic|qued)",
+          "flags": "i",
+          "label": "say how you changed with a verb of change: me volví, me puse, me quedé"
+        }
+      ],
+      "focus": "g:verbs-of-change",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Eso está bien, hijo. ¿Qué va a hacer usted?",
+      "npcEn": "That's good, son. What are you going to do?",
+      "intent": "Tell him you're glad he is here with you, and that you will talk to Vale before deciding.",
+      "accept": [
+        "Me alegro de que usted esté aquí. No voy a decidir sin hablar con ustedes.",
+        "No voy a decidir nada sin Vale y sin usted. Me alegro de que esté conmigo.",
+        "Me alegro de que usted esté aquí conmigo. Primero voy a hablar con Vale."
+      ],
+      "require": [
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "alegro de que",
+          "within": 3,
+          "label": "after me alegro de que, the verb changes: esté"
+        }
+      ],
+      "focus": "p:alegrarse-de-que",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Entonces siéntese, hijo. Le invito un tinto.",
+      "npcEn": "Then sit down, son. I'll buy you a coffee.",
+      "intent": "Thank him and say what a relief it is to talk to him.",
+      "accept": [
+        "Gracias. Qué alivio hablar con usted.",
+        "Muchas gracias. Me quedo un rato, con mucho gusto.",
+        "Gracias, qué alivio tener a alguien como usted aquí."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "gracias",
+          "flags": "i",
+          "label": "say thank you"
+        }
+      ],
+      "focus": "c:que-alivio",
+      "next": null
+    }
+  ]
+}
