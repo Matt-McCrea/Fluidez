@@ -1,0 +1,44 @@
+{
+  "node": "g:register-ladder",
+  "hook": {
+    "line": "This week Tomás has to ask the same thing of a friend, a notary, a judge's clerk and a polished assistant, and each one needs a different Spanish. In English a *por favor* does the job. In Spanish the grammar itself changes.",
+    "es": "¿Será que me puede pasar la sal?",
+    "en": "Could you possibly pass me the salt? (formal)"
+  },
+  "examples": [
+    { "es": "Pásame la sal.", "en": "Pass me the salt. (to a friend)" },
+    { "es": "¿Me pasas la sal?", "en": "Will you pass me the salt? (to a friend)" },
+    { "es": "¿Me podría pasar la sal?", "en": "Could you pass me the salt? (formal)" },
+    { "es": "¿Será que me puede pasar la sal?", "en": "Could you possibly pass me the salt? (formal)" },
+    { "es": "Le agradecería que me enviara el documento.", "en": "I would be grateful if you could send me the document. (formal)" },
+    { "es": "¿Me ayudas con esto?", "en": "Will you help me with this? (to a friend)" }
+  ],
+  "rule": "One request, five rungs. Each step up adds distance.\n\n1. *Pásame la sal.* A plain command, only for people very close to you.\n2. *¿Me pasas la sal?* A question in the present with *tú*. Your everyday ask.\n3. *¿Me podría pasar la sal?* *Podría* (\"could\") plus *usted*. Polite to strangers.\n4. *¿Será que me puede pasar la sal?* Literally \"could it be that you can…\". Very Colombian and very courteous.\n5. *Le agradecería que me enviara…* \"I would be grateful if you sent…\". Letters, officials, judges. The verb after *que* takes its past wish form.\n\nChoose by the relationship, not by how big the favour is. English adds *please* or *would you mind*. Spanish rebuilds the sentence.",
+  "smallPrint": "Teachers call this *registro*, the register: how formal your grammar sounds. Rungs 3 to 5 use the conditional and the past subjunctive to keep a polite distance.",
+  "readAndPick": [
+    { "es": "Pásame la sal.", "options": ["Pass me the salt. (to a friend)", "Could you pass me the salt? (formal)", "I would be grateful if you passed me the salt. (formal)"], "answer": 0 },
+    { "es": "¿Me podría abrir la puerta?", "options": ["Will you open the door for me? (to a friend)", "Could you open the door for me? (formal)", "Open the door for me. (to a friend)"], "answer": 1 },
+    { "es": "Le agradecería que me llamara mañana.", "options": ["Call me tomorrow. (to a friend)", "Could you call me tomorrow? (formal)", "I would be grateful if you called me tomorrow. (formal)"], "answer": 2 },
+    { "es": "¿Me prestas tu celular?", "options": ["Will you lend me your phone? (to a friend)", "Could you lend me your phone? (formal)", "Lend me your phone. (to a friend)"], "answer": 0 },
+    { "es": "¿Será que me puede llamar mañana?", "options": ["Will you call me tomorrow? (to a friend)", "Could you possibly call me tomorrow? (formal)", "I would be grateful if you called me tomorrow. (formal)"], "answer": 1 },
+    { "es": "Ayúdame con esto.", "options": ["Could you help me with this? (formal)", "Will you help me with this? (to a friend)", "Help me with this. (to a friend)"], "answer": 2 },
+    { "es": "Le agradecería que firmara aquí.", "options": ["Sign here. (to a friend)", "I would be grateful if you signed here. (formal)", "Could you possibly sign here? (formal)"], "answer": 1 },
+    { "es": "¿Me ayudas con esto?", "options": ["Help me with this. (to a friend)", "Could you help me with this? (formal)", "Will you help me with this? (to a friend)"], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "Yesid is at the stove and you want the salt. Pick *Pásame* or *¿Me podría pasar…?* and type the whole sentence: *___ la sal.* (to a friend)", "answer": "Pásame la sal.", "accept": ["Pásame la sal"], "why": "A close friend gets the plain command, the bottom rung." },
+    { "prompt": "Type in Spanish: Will you open the door for me? (to a friend)", "answer": "¿Me abres la puerta?", "accept": ["Me abres la puerta"], "why": "The everyday ask is a present-tense question with *tú*." },
+    { "prompt": "Type in Spanish: Could you lend me your phone? (to a stranger, formal, use *podría*)", "answer": "¿Me podría prestar su celular?", "accept": ["¿Podría prestarme su celular?"], "why": "With a stranger, *podría* and *su* keep a polite distance." },
+    { "prompt": "Type in Spanish: Could you possibly call me tomorrow? (formal, start with *¿Será que…*)", "answer": "¿Será que me puede llamar mañana?", "accept": ["Será que me puede llamar mañana"], "why": "*¿Será que…?* is the extra-courteous Colombian opener, followed by *usted* forms." },
+    { "prompt": "Make it polite for a notary (formal, use *podría*): *Llámame mañana.*", "answer": "¿Me podría llamar mañana?", "accept": ["¿Podría llamarme mañana?"], "why": "A command becomes a *podría* question as soon as you say *usted*." },
+    { "prompt": "Now the top rung for the judge's clerk: I would be grateful if you called me tomorrow. (formal, start with *Le agradecería que…*)", "answer": "Le agradecería que me llamara mañana.", "accept": ["Le agradecería que me llamara mañana"], "why": "After *le agradecería que*, the verb takes its past wish form: *llamara*." },
+    { "prompt": "Type in Spanish: Could you help me with this? (to Altamira's assistant, formal, use *podría*)", "answer": "¿Me podría ayudar con esto?", "accept": ["¿Podría ayudarme con esto?"], "why": "A stranger in an office is rung 3: *podría* plus *usted*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Quiero la sal.", "right": "¿Me pasas la sal?", "why": "Almost. *Quiero* states what you want, which sounds like a demand; ask with a question." },
+    { "wrong": "Pásame la sal, por favor, señor.", "right": "¿Me podría pasar la sal?", "why": "Almost. *Por favor* does not change the grammar, so a command to a stranger stays blunt." },
+    { "wrong": "¿Me podría pasar la sal, Yesid?", "right": "¿Me pasas la sal?", "why": "Almost. Rung 3 is too formal for a friend and sounds cold or like a joke." },
+    { "wrong": "Le agradecería que me envía el documento.", "right": "Le agradecería que me enviara el documento.", "why": "Almost. After *le agradecería que*, the verb needs its past wish form, *enviara*." }
+  ],
+  "personal": "Think of someone you would ask for a favour this week. Which rung fits, and why? Type the request in Spanish at that rung."
+}

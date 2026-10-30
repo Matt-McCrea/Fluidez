@@ -1,0 +1,43 @@
+{
+  "node": "p:no-hace-falta-que",
+  "hook": {
+    "line": "When Tomás's neighbour insists on bringing food to the café, he wants to say \"you really don't have to\" without sounding rude. Spanish has a warm way to lift the duty.",
+    "es": "No hace falta que traigas nada.",
+    "en": "You don't need to bring anything. (to a friend)"
+  },
+  "examples": [
+    { "es": "No hace falta que traigas nada.", "en": "You don't need to bring anything. (to a friend)" },
+    { "es": "No hace falta que vengas temprano.", "en": "You don't need to come early. (to a friend)" },
+    { "es": "No hace falta que pague ahora.", "en": "You don't need to pay now. (formal)" },
+    { "es": "No hace falta que esperen.", "en": "You all don't need to wait." },
+    { "es": "No tienes por qué disculparte.", "en": "You've no reason to apologise. (to a friend)" },
+    { "es": "No tiene por qué preocuparse.", "en": "You've no reason to worry. (formal)" }
+  ],
+  "rule": "To say \"you don't need to\", use *no hace falta que* plus a verb in its wish form. For *tú*, *-ar* verbs end in *-es* and the others in *-as*: *traes* becomes *traigas*, *vienes* becomes *vengas*. For *usted* the endings are *-e* and *-a*: *pague*, *venga*. For \"you all\" add *n*: *esperen*.\n\nFor reassurance use *no tienes por qué* (or *no tiene por qué*) plus a plain infinitive, with no *que*.\n\nBoth only remove an obligation. They do not forbid anything.",
+  "smallPrint": "Teachers call the wish form the subjunctive. It follows *que* here because the speaker is not stating a fact, only lifting a duty.",
+  "readAndPick": [
+    { "es": "No hace falta que traigas nada.", "options": ["You don't need to bring anything. (to a friend)", "You don't need to bring anything. (formal)", "I don't need to bring anything."], "answer": 0 },
+    { "es": "No hace falta que venga temprano.", "options": ["You don't need to come early. (to a friend)", "I don't need to come early.", "You don't need to come early. (formal)"], "answer": 2 },
+    { "es": "No tienes por qué disculparte.", "options": ["You've no reason to apologise. (formal)", "You've no reason to apologise. (to a friend)", "I've no reason to apologise."], "answer": 1 },
+    { "es": "Tienes que traer el pasaporte.", "options": ["You don't need to bring the passport. (to a friend)", "You must bring the passport. (to a friend)", "You must not bring the passport. (to a friend)"], "answer": 1 },
+    { "es": "No hace falta que esperen.", "options": ["You all don't need to wait.", "You don't need to wait. (to a friend)", "They don't need to wait."], "answer": 0 },
+    { "es": "No tiene por qué preocuparse.", "options": ["You've no reason to worry. (to a friend)", "I've no reason to worry.", "You've no reason to worry. (formal)"], "answer": 2 },
+    { "es": "No hace falta que pague ahora.", "options": ["You don't need to pay now. (formal)", "You must pay now. (formal)", "You can't pay now. (formal)"], "answer": 0 },
+    { "es": "No hace falta que compres jugo.", "options": ["You don't need to buy juice. (formal)", "I don't need to buy juice.", "You don't need to buy juice. (to a friend)"], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *traes* or *traigas* and type the whole sentence: *No hace falta que ___ nada.* (to a friend)", "answer": "No hace falta que traigas nada.", "accept": ["No hace falta que traigas nada"], "why": "After *que* the verb takes its wish form, and *traer* becomes *traigas*." },
+    { "prompt": "Type in Spanish: You don't need to come early. (to a friend)", "answer": "No hace falta que vengas temprano.", "accept": ["No hace falta que vengas temprano"], "why": "*Venir* changes to *vengas* after *no hace falta que*." },
+    { "prompt": "Type in Spanish: You don't need to pay now. (to an older customer, formal)", "answer": "No hace falta que pague ahora.", "accept": ["No hace falta que pague ahora"], "why": "For *usted*, an *-ar* verb ends in *-e*: *pague*." },
+    { "prompt": "Type in Spanish: You've no reason to apologise. (to a friend)", "answer": "No tienes por qué disculparte.", "accept": ["No tienes por qué disculparte"], "why": "*No tienes por qué* is followed by a plain infinitive." },
+    { "prompt": "Make it formal: *No hace falta que vengas temprano.*", "answer": "No hace falta que venga temprano.", "accept": ["No hace falta que venga temprano"], "why": "*Usted* takes *-a* where *tú* takes *-as*." },
+    { "prompt": "Change it to speak to several people: *No hace falta que esperes.*", "answer": "No hace falta que esperen.", "accept": ["No hace falta que esperen"], "why": "For \"you all\", the verb takes *n*." },
+    { "prompt": "Type in Spanish: You've no reason to explain it to me. (to a friend)", "answer": "No tienes por qué explicármelo.", "accept": ["No tienes por qué explicármelo"], "why": "The pronouns attach to the end of the infinitive." }
+  ],
+  "pitfalls": [
+    { "wrong": "No hace falta que traes nada.", "right": "No hace falta que traigas nada.", "why": "Almost. After *que* here the verb needs its wish form, *traigas*." },
+    { "wrong": "No debes traer nada.", "right": "No hace falta que traigas nada.", "why": "Almost. *No debes* sounds like a ban; *no hace falta* just lifts the duty." },
+    { "wrong": "No tienes por qué que te disculpes.", "right": "No tienes por qué disculparte.", "why": "Almost. *No tienes por qué* takes a plain infinitive, with no *que*." }
+  ],
+  "personal": "Someone offers to bring something to your next gathering. Type what you would tell them with *no hace falta que*."
+}

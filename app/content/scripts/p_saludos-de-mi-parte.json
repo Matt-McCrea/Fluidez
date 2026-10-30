@@ -1,0 +1,43 @@
+{
+  "node": "p:saludos-de-mi-parte",
+  "hook": {
+    "line": "In Colombia no conversation ends without someone sending hellos to someone who is not there. Ask after the family and pass on greetings, and you are one of the neighbours.",
+    "es": "Dale saludos a tu mamá de mi parte.",
+    "en": "Say hello to your mom for me. (to a friend)"
+  },
+  "examples": [
+    { "es": "Dale saludos a tu mamá de mi parte.", "en": "Say hello to your mom for me. (to a friend)" },
+    { "es": "Dale un abrazo a Andrés de mi parte.", "en": "Give Andrés a hug from me. (to a friend)" },
+    { "es": "Dele saludos a su esposa de mi parte.", "en": "Say hello to your wife for me. (formal)" },
+    { "es": "Camila te manda muchos saludos.", "en": "Camila sends you lots of greetings. (to a friend)" },
+    { "es": "Mi mamá le manda saludos.", "en": "My mom sends you her regards. (formal)" },
+    { "es": "Saludos a tu familia.", "en": "Say hello to your family. (to a friend)" }
+  ],
+  "rule": "To send a greeting, use *dale saludos a* plus the person, then *de mi parte* (\"from me\"). With *usted*, say *dele*. You can swap *saludos* for *un abrazo* or *un beso*.\n\nTo say a greeting has reached you, use *X te manda saludos*, or *le manda* for *usted*.\n\nYou can also shorten it: *Saludos a tu familia*. Never say *de mí*; it is always *de mi parte*.",
+  "smallPrint": "Teachers call *dale* a command with an indirect object pronoun: *le* becomes *dele* with *usted*.",
+  "readAndPick": [
+    { "es": "Dale saludos a tu mamá de mi parte.", "options": ["Your mom says hello to me.", "I'll say hello to your mom.", "Say hello to your mom for me. (to a friend)"], "answer": 2 },
+    { "es": "Camila te manda muchos saludos.", "options": ["Camila sends you lots of greetings.", "You send Camila lots of greetings.", "Camila sends me lots of greetings."], "answer": 0 },
+    { "es": "Dele saludos a su esposa de mi parte.", "options": ["Say hello to your wife for me. (to a friend)", "Say hello to your wife for me. (formal)", "Say hello to my wife for me."], "answer": 1 },
+    { "es": "Mi mamá le manda saludos.", "options": ["I send my mom regards.", "My mom sends you her regards. (to a friend)", "My mom sends you her regards. (formal)"], "answer": 2 },
+    { "es": "Dale un abrazo a Andrés de mi parte.", "options": ["Andrés gives me a hug.", "Give Andrés a hug from me. (to a friend)", "I gave Andrés a hug."], "answer": 1 },
+    { "es": "Saludos a tu familia.", "options": ["I said hello to my family.", "Your family says hello.", "Say hello to your family. (to a friend)"], "answer": 2 },
+    { "es": "Hernando te manda saludos.", "options": ["Hernando sends you his regards. (to a friend)", "You send Hernando your regards.", "I send Hernando my regards."], "answer": 0 },
+    { "es": "Dale un beso a Simón de mi parte.", "options": ["Simón gave me a kiss.", "Give me a kiss from Simón.", "Give Simón a kiss from me. (to a friend)"], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *Dale* or *Dele* and type the whole sentence: *___ saludos a tu mamá de mi parte.* (to a friend)", "answer": "Dale saludos a tu mamá de mi parte.", "accept": ["Dale saludos a tu mamá de mi parte"], "why": "A friend is *tú*, so *dale* is right." },
+    { "prompt": "Type in Spanish: Camila sends you lots of greetings. (to a friend)", "answer": "Camila te manda muchos saludos.", "accept": ["Camila te manda saludos.", "Camila te manda muchos saludos"], "why": "*Te manda saludos* says the greeting has arrived to you." },
+    { "prompt": "Type in Spanish: Give Andrés a hug from me. (to a friend)", "answer": "Dale un abrazo a Andrés de mi parte.", "accept": ["Dale un abrazo a Andrés de mi parte"], "why": "*Un abrazo* can replace *saludos*, and *de mi parte* stays." },
+    { "prompt": "Type in Spanish: Say hello to your wife for me. (to a man, formal)", "answer": "Dele saludos a su esposa de mi parte.", "accept": ["Dele saludos a su esposa de mi parte"], "why": "With *usted*, *dale* becomes *dele*, and *tu* becomes *su*." },
+    { "prompt": "Make it formal, to a woman: *Hernando te manda saludos.*", "answer": "Hernando le manda saludos.", "accept": ["Hernando le manda saludos"], "why": "*Usted* takes *le* where *tú* takes *te*." },
+    { "prompt": "Type in Spanish, short and warm: Say hello to your family. (to a friend)", "answer": "Saludos a tu familia.", "accept": ["Saludos a tu familia"], "why": "You can drop the verb and keep *saludos a*." },
+    { "prompt": "Type in Spanish: Say hello to Vale for me. (to a friend)", "answer": "Dale saludos a Vale de mi parte.", "accept": ["Dale saludos a Vale de mi parte"], "why": "*A* introduces the person who receives the greeting." }
+  ],
+  "pitfalls": [
+    { "wrong": "Dale hola a tu mamá.", "right": "Dale saludos a tu mamá.", "why": "Almost. *Hola* is the word you say; what you pass on are *saludos*." },
+    { "wrong": "Dale saludos a tu mamá de mí.", "right": "Dale saludos a tu mamá de mi parte.", "why": "Almost. \"From me\" is *de mi parte*, never *de mí*." },
+    { "wrong": "Dale saludos a su esposa de mi parte.", "right": "Dele saludos a su esposa de mi parte.", "why": "Almost. With *usted*, the command is *dele*, not *dale*." }
+  ],
+  "personal": "Who do you know who would like a hello right now? Type a message asking a friend to pass on greetings to them."
+}

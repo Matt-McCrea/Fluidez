@@ -1,0 +1,43 @@
+{
+  "node": "p:don-dona-nombre",
+  "hook": {
+    "line": "Everyone in the neighbourhood calls the retired taxi driver *don Hernando*, never Mr García and never just Hernando. It shows respect and warmth in the same breath.",
+    "es": "Buenos días, don Hernando.",
+    "en": "Good morning, Don Hernando."
+  },
+  "examples": [
+    { "es": "Buenos días, don Hernando.", "en": "Good morning, Don Hernando." },
+    { "es": "Doña Rosa, la buscan.", "en": "Doña Rosa, someone's asking for you." },
+    { "es": "Gracias por todo, doña Rosa.", "en": "Thank you for everything, Doña Rosa." },
+    { "es": "Don Hernando, ¿me regala un momento?", "en": "Don Hernando, could you spare me a moment?" },
+    { "es": "Profesora Gómez, tiene una llamada.", "en": "Professor Gómez, you have a call. (a woman, formal)" },
+    { "es": "Ingeniero Pardo, ya llegó el carro.", "en": "Engineer Pardo, the car has arrived." }
+  ],
+  "rule": "For older people and people you respect, use *don* (men) or *doña* (women) plus the **first name**: *don Hernando*, *doña Rosa*. It is warm, not distant, and very alive in Colombia.\n\nNever put it with a surname. For titles like *doctor*, *profesora* or *ingeniero*, use the surname: *ingeniero Pardo*.\n\nThese people get *usted*, so the verbs and pronouns follow: *la buscan*, *tiene*, *¿cómo está?*. Write *don* and *doña* in lower case inside a sentence. English has no match: \"Mr\" is cold, and a first name is too casual.",
+  "smallPrint": "Teachers call *don* and *doña* honorific titles of address.",
+  "readAndPick": [
+    { "es": "Buenos días, don Hernando.", "options": ["Good morning, Mr Hernández.", "Good morning, Hernando.", "Good morning, Don Hernando."], "answer": 2 },
+    { "es": "Doña Rosa, la buscan.", "options": ["Doña Rosa, someone's asking for you.", "Doña Rosa is asking for them.", "Rosa, someone's asking for her."], "answer": 0 },
+    { "es": "Profesora Gómez, tiene una llamada.", "options": ["Professor Gómez, I have a call.", "Professor Gómez, you have a call. (to a friend)", "Professor Gómez, you have a call. (a woman, formal)"], "answer": 2 },
+    { "es": "Gracias, don Hernando.", "options": ["Thank you, Doña Marta.", "Thank you, Don Hernando.", "Thank you, Dr Hernando."], "answer": 1 },
+    { "es": "Hola, doña Marta, ¿cómo está?", "options": ["Hello, Doña Marta, how are you? (formal)", "Hello, Doña Marta, how are you? (to a friend)", "Hello, Doña Marta, how is she?"], "answer": 0 },
+    { "es": "Ingeniero Pardo, ya llegó el carro.", "options": ["Engineer Pardo, you arrived by car.", "Engineer Pardo, the car is leaving.", "Engineer Pardo, the car has arrived."], "answer": 2 },
+    { "es": "Con permiso, doña Rosa.", "options": ["Excuse me, Dr Rosa.", "Excuse me, Doña Rosa.", "Excuse me, Doña Marta."], "answer": 1 },
+    { "es": "Doña Marta, ¿le sirvo otro tinto?", "options": ["Doña Marta, shall I pour you another coffee? (to a friend)", "Doña Marta, shall I pour him another coffee?", "Doña Marta, shall I pour you another coffee? (formal)"], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *don* or *doctor* for the warm retired taxi driver and type the whole sentence: *Buenos días, ___ Hernando.*", "answer": "Buenos días, don Hernando.", "accept": ["Buenos días, don Hernando"], "why": "*Don* goes with a first name, and *doctor* needs a surname." },
+    { "prompt": "Type in Spanish: Doña Rosa, someone's asking for you.", "answer": "Doña Rosa, la buscan.", "accept": ["Doña Rosa, la buscan"], "why": "*Doña* brings the *usted* pronoun *la*." },
+    { "prompt": "Type in Spanish: Good morning, Doña Marta.", "answer": "Buenos días, doña Marta.", "accept": ["Buenos días, doña Marta"], "why": "*Doña* plus a first name, in lower case mid-sentence." },
+    { "prompt": "Type in Spanish: Thank you, Don Hernando.", "answer": "Gracias, don Hernando.", "accept": ["Gracias, don Hernando"], "why": "The title simply sits beside the first name." },
+    { "prompt": "Make it respectful for an older neighbour: *Hola, Hernando.*", "answer": "Hola, don Hernando.", "accept": ["Hola, don Hernando"], "why": "For older neighbours, *don* goes before the first name." },
+    { "prompt": "Type in Spanish: Don Hernando, could you spare me a moment?", "answer": "Don Hernando, ¿me regala un momento?", "accept": ["¿Me regala un momento, don Hernando?"], "why": "*Don* goes with *usted*, so the verb is *regala*." },
+    { "prompt": "Type in Spanish: Professor Gómez, you have a call. (a woman, formal)", "answer": "Profesora Gómez, tiene una llamada.", "accept": ["Profesora Gómez, tiene una llamada"], "why": "Titles take the surname, and the verb is *tiene*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Buenos días, don García.", "right": "Buenos días, don Hernando.", "why": "Almost. *Don* goes with a first name, never a surname." },
+    { "wrong": "Hola, Hernando, ¿cómo estás?", "right": "Buenos días, don Hernando, ¿cómo está?", "why": "Almost. A 71-year-old neighbour gets *don* and *usted*." },
+    { "wrong": "Doña Rosa, te buscan.", "right": "Doña Rosa, la buscan.", "why": "Almost. *Doña* comes with *usted*, so the pronoun is *la*, not *te*." }
+  ],
+  "personal": "Think of an older person you know and respect. How would you greet them with *don* or *doña*? Type the greeting."
+}
