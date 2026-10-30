@@ -694,5 +694,228 @@
       "p:telling-time",
       "p:ya-todavia-basic"
     ]
+  },
+  {
+    "id": "w-u18-13",
+    "unit": "u18",
+    "prompt": "Text Vale (someone your age, tú) about your habits when you travel: say what you always do when you arrive in a new city, and what you do when you are tired.",
+    "minWords": 25,
+    "maxWords": 55,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bcuando (llego|llegamos|estoy|estamos|salgo|salimos|viajo|viajamos|tengo|tenemos)\\b",
+        "label": "use cuando with a present verb"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "cuando llegue",
+          "cuando esté",
+          "cuando tenga",
+          "cuando salga",
+          "cuando viaje"
+        ],
+        "label": "for habits, cuando takes the plain present"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Vale, cuando llego a una ciudad nueva, siempre busco un café. Cuando estoy cansado, prefiero dormir un poco en el hostal. Así descanso mejor y estoy listo para el día.",
+    "focus": "g:cuando-indicative",
+    "requires": [
+      "c:a-cuantas-cuotas",
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:stem-boot",
+      "l:buscar",
+      "l:café",
+      "l:cansado",
+      "l:ciudad",
+      "l:descansar",
+      "l:dormir",
+      "l:día",
+      "l:estar",
+      "l:hostal",
+      "l:listo",
+      "l:llegar",
+      "l:mejor",
+      "l:nuevo",
+      "l:preferir",
+      "l:siempre",
+      "p:cuando-basic",
+      "p:frequency-scale",
+      "p:para-inf",
+      "p:poco-un-poco",
+      "p:prefieres-x-o-y",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u18-14",
+    "unit": "u18",
+    "prompt": "Write to your friend Mariana (your age, tú) about last weekend's bus trip: say what you do every time the bus stops, and ask what she does when she travels.",
+    "minWords": 25,
+    "maxWords": 55,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bcuando (llego|llegamos|viajo|viajas|viajamos|salgo|salimos|paramos|para|estoy|estás|estamos)\\b",
+        "label": "use cuando with a present verb"
+      },
+      {
+        "type": "question",
+        "label": "ask what she does"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "cuando llegue",
+          "cuando viaje",
+          "cuando pare",
+          "cuando tenga"
+        ],
+        "label": "for habits, cuando takes the plain present"
+      }
+    ],
+    "model": "Mariana, cuando viajamos en bus, siempre compro un jugo en la terminal. Cuando el bus para, bajo a caminar un poco. ¿Y tú qué haces cuando viajas?",
+    "focus": "g:cuando-indicative",
+    "requires": [
+      "c:bien-y-tu",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:questions",
+      "l:bajar",
+      "l:bus",
+      "l:caminar",
+      "l:comprar",
+      "l:hacer",
+      "l:jugo",
+      "l:qué",
+      "l:siempre",
+      "l:terminal",
+      "l:viajar",
+      "p:cuando-basic",
+      "p:frequency-scale",
+      "p:para-inf",
+      "p:poco-un-poco",
+      "p:quantifiers-basic",
+      "p:transport-en"
+    ]
+  },
+  {
+    "id": "w-u18-15",
+    "unit": "u18",
+    "prompt": "You are at your hotel in Medellín. Write a note to Vale (your age, tú) with three short requests for tonight: ask her to call you, to send you the address, and to tell you what time she arrives.",
+    "minWords": 20,
+    "maxWords": 50,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(llámame|mándame|envíame|dime|cuéntame|escríbeme|pásame|avísame)\\b",
+        "label": "a command with me attached: llámame"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "llama me",
+          "manda me",
+          "dice me"
+        ],
+        "label": "me is joined to the command: llámame"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Vale, llámame esta noche, por favor. Mándame la dirección del restaurante y dime a qué hora llegas. Yo estoy en el hostal.",
+    "focus": "g:commands-with-pronouns",
+    "requires": [
+      "c:a-que-hora",
+      "c:por-favor",
+      "g:commands-tu",
+      "g:commands-with-pronouns",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:present-ar",
+      "l:decir",
+      "l:dirección",
+      "l:estar",
+      "l:favor",
+      "l:hora",
+      "l:hostal",
+      "l:llamar",
+      "l:llegar",
+      "l:mandar",
+      "l:noche",
+      "l:qué",
+      "l:restaurante",
+      "p:demonstratives-basic",
+      "p:me-te-nos-objects",
+      "p:request-ladder"
+    ]
+  },
+  {
+    "id": "w-u18-16",
+    "unit": "u18",
+    "prompt": "You are checking in at a hostel reception. Write a short note to the receptionist (a stranger, usted) asking them to do things for you: call a taxi for tomorrow and bring you the key.",
+    "minWords": 20,
+    "maxWords": 50,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(llámeme|tráigame|dígame|présteme|ayúdeme|ayúdenos|mándeme|déme)\\b",
+        "label": "a usted command with me attached: llámeme"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "llama me",
+          "trae me",
+          "llámame",
+          "tráeme",
+          "dime"
+        ],
+        "label": "usted: llámeme, not llámame"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Buenos días. Mañana salgo muy temprano. Llámeme un taxi para las seis, por favor. Y déme la llave de la habitación esta noche.",
+    "focus": "g:commands-with-pronouns",
+    "requires": [
+      "c:hago-salgo-vengo",
+      "c:hola-buenos-dias",
+      "c:por-favor",
+      "g:commands-usted",
+      "g:commands-with-pronouns",
+      "g:gender-articles",
+      "g:yo-irregular",
+      "l:bueno",
+      "l:dar",
+      "l:día",
+      "l:favor",
+      "l:habitación",
+      "l:llamar",
+      "l:llave",
+      "l:mañana",
+      "l:noche",
+      "l:salir",
+      "l:taxi",
+      "l:temprano",
+      "p:demonstratives-basic",
+      "p:me-te-nos-objects",
+      "p:para-inf",
+      "p:quantifiers-basic",
+      "p:request-ladder"
+    ]
   }
 ]
