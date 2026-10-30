@@ -1,0 +1,166 @@
+{
+  "node": "p:el-orden-la-orden",
+  "hook": {
+    "line": "In offices and courts, the gender of a noun can change its meaning completely. *Orden* and *corte* are the two you will see most.",
+    "es": "Fue una orden del juez.",
+    "en": "It was a judge's order."
+  },
+  "examples": [
+    {
+      "es": "Pónganlos en orden alfabético.",
+      "en": "Put them in alphabetical order. (you all)"
+    },
+    {
+      "es": "Fue una orden del juez.",
+      "en": "It was a judge's order."
+    },
+    {
+      "es": "La Corte Constitucional falló ayer.",
+      "en": "The Constitutional Court ruled yesterday."
+    },
+    {
+      "es": "Hubo un corte de luz.",
+      "en": "There was a power cut."
+    },
+    {
+      "es": "¡A la orden!",
+      "en": "At your service!"
+    },
+    {
+      "es": "Alguien tiene que poner orden en esta reunión.",
+      "en": "Somebody has to bring order to this meeting."
+    }
+  ],
+  "rule": "Same word, different gender, different meaning.\n\n*El orden* is sequence or tidiness: *el orden alfabético*, *poner orden*.\n*La orden* is a command: *una orden del juez*. A Colombian shop assistant says *¡A la orden!* meaning \"at your service\".\n\n*El corte* is a cut: *un corte de luz*.\n*La corte* is a court: *la Corte Suprema*.\n\nSo the article is the clue. Watch it, and watch the adjective that follows: *el orden alfabético*, *la orden judicial*.",
+  "smallPrint": "Teachers call these nouns that change meaning with gender. The two forms are unrelated words that happen to look alike.",
+  "readAndPick": [
+    {
+      "es": "Fue una orden del juez.",
+      "options": [
+        "It was a judge's order.",
+        "It was in the judge's sequence.",
+        "It was a judge's cut."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Pónganlos en orden alfabético.",
+      "options": [
+        "Put them in alphabetical order. (you all)",
+        "Give them an alphabetical command. (you all)",
+        "They put you in the alphabet."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La Corte Constitucional falló ayer.",
+      "options": [
+        "The Constitutional Cut failed yesterday.",
+        "The Constitutional Court ruled yesterday.",
+        "The Constitution cut yesterday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hubo un corte de luz.",
+      "options": [
+        "There was a power cut.",
+        "There was a court of light.",
+        "There was a command of light."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡A la orden!",
+      "options": [
+        "At your service!",
+        "In order!",
+        "Cut it!"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Alguien tiene que poner orden en esta reunión.",
+      "options": [
+        "Someone must order a meeting.",
+        "Someone must bring order to this meeting.",
+        "Someone must obey this meeting."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La Corte Suprema tiene la última palabra.",
+      "options": [
+        "The Supreme Court has the last word.",
+        "The Supreme Cut has the last word.",
+        "The Supreme Order has the last word."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es una orden judicial.",
+      "options": [
+        "It's a court order.",
+        "It's a judicial sequence.",
+        "It's a judicial cut."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *el* or *la* and type the whole sentence: *Fue ___ orden del juez.* (a command)",
+      "answer": "Fue la orden del juez.",
+      "accept": [
+        "Fue una orden del juez."
+      ],
+      "why": "A command is *la orden*, feminine."
+    },
+    {
+      "prompt": "Pick *un* or *una* and type the whole sentence: *Hubo ___ corte de luz.* (a power cut)",
+      "answer": "Hubo un corte de luz.",
+      "why": "A cut is *el corte*, masculine."
+    },
+    {
+      "prompt": "Type in Spanish, to several people: Put them in alphabetical order.",
+      "answer": "Pónganlos en orden alfabético.",
+      "why": "Here *orden* means sequence, so *en orden alfabético*."
+    },
+    {
+      "prompt": "Type in Spanish: The Constitutional Court ruled yesterday.",
+      "answer": "La Corte Constitucional falló ayer.",
+      "why": "A court is *la corte*, feminine."
+    },
+    {
+      "prompt": "Type in Spanish: Somebody has to bring order to this meeting.",
+      "answer": "Alguien tiene que poner orden en esta reunión.",
+      "why": "*Poner orden* is about tidiness, not commands."
+    },
+    {
+      "prompt": "Type in Spanish: It's a court order.",
+      "answer": "Es una orden judicial.",
+      "accept": [
+        "Es una orden de la corte."
+      ],
+      "why": "A command is feminine, so *una orden*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Pónganlos en la orden alfabético.",
+      "right": "Pónganlos en orden alfabético.",
+      "why": "Almost. Sequence is the masculine *orden*, and it needs no article here."
+    },
+    {
+      "wrong": "Hubo una corte de luz.",
+      "right": "Hubo un corte de luz.",
+      "why": "Almost. A cut is *un corte*; *una corte* would be a court."
+    },
+    {
+      "wrong": "Fue un orden del juez.",
+      "right": "Fue una orden del juez.",
+      "why": "Almost. A command from a judge is feminine: *una orden*."
+    }
+  ],
+  "personal": "Write a sentence about a day when you had to put things in order, using *orden*."
+}

@@ -1,0 +1,160 @@
+{
+  "node": "p:condenar",
+  "hook": {
+    "line": "Some situations need a stronger word than \"I don't like it\". When a group speaks out against something serious, *condenar* is the verb in the headline.",
+    "es": "La organización condena rotundamente estos actos.",
+    "en": "The organisation strongly condemns these acts."
+  },
+  "examples": [
+    {
+      "es": "La organización condena rotundamente estos actos.",
+      "en": "The organisation strongly condemns these acts."
+    },
+    {
+      "es": "Nos parece lamentable que no se aumente el presupuesto.",
+      "en": "We find it regrettable that the budget is not being increased."
+    },
+    {
+      "es": "Los vecinos condenan estos abusos.",
+      "en": "The neighbours condemn these abuses."
+    },
+    {
+      "es": "La empresa rechaza tajantemente esa propuesta.",
+      "en": "The company flatly rejects that proposal."
+    },
+    {
+      "es": "Me parece inaceptable que cierren la calle sin avisar.",
+      "en": "I find it unacceptable that they close the street without warning."
+    },
+    {
+      "es": "Es lamentable que nadie avise a los vecinos.",
+      "en": "It's regrettable that nobody informs the neighbours."
+    }
+  ],
+  "rule": "This is the language of statements, not of everyday chat.\n\nA group, subject first: *La organización condena rotundamente estos actos.* Also *rechaza* with *rotundamente*, *categóricamente* or *tajantemente*.\n\nA personal reaction: *Me parece lamentable que* or *Nos parece inaceptable que*, then the wish form of the verb: *que no se aumente*.\n\nNo *a* after *condenar* when the thing is not a person. Do not use it for a dish or a joke: for those say *no me gusta*.",
+  "smallPrint": "Teachers call *rotundamente* an adverb of manner. It makes the disapproval sound final.",
+  "readAndPick": [
+    {
+      "es": "La organización condena rotundamente estos actos.",
+      "options": [
+        "The organisation strongly condemns these acts.",
+        "The organisation strongly welcomes these acts.",
+        "The organisation condemned one act."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Los vecinos rechazan tajantemente la propuesta.",
+      "options": [
+        "The neighbours flatly reject the proposal.",
+        "The neighbours flatly accept the proposal.",
+        "The neighbour rejects the proposal."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nos parece lamentable que no se aumente el presupuesto.",
+      "options": [
+        "We think it is regrettable that the budget is not being increased.",
+        "We are happy that the budget is increasing.",
+        "We have regretted the budget."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Condenamos estos abusos.",
+      "options": [
+        "We condemn these abuses.",
+        "They condemn these abuses.",
+        "We committed these abuses."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me parece inaceptable que cierren la calle.",
+      "options": [
+        "I find it unacceptable that they close the street.",
+        "I accept that they close the street.",
+        "I find the street unacceptable."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es deplorable que nadie avise a los vecinos.",
+      "options": [
+        "It's deplorable that nobody informs the neighbours.",
+        "It's wonderful that everybody informs the neighbours.",
+        "The neighbours informed nobody."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La empresa condena este ataque.",
+      "options": [
+        "The company condemns this attack.",
+        "The company has an attack.",
+        "The company condoned this attack."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Rechazo categóricamente esa idea.",
+      "options": [
+        "I categorically reject that idea.",
+        "I categorically accept that idea.",
+        "They categorically reject that idea."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *condena* or *condenan* and type the whole sentence: *La organización ___ rotundamente estos actos.*",
+      "answer": "La organización condena rotundamente estos actos.",
+      "why": "*La organización* is one thing, so *condena*."
+    },
+    {
+      "prompt": "Type in Spanish: The neighbours condemn these abuses.",
+      "answer": "Los vecinos condenan estos abusos.",
+      "why": "*Los vecinos* is plural, so *condenan*."
+    },
+    {
+      "prompt": "Type in Spanish: We find it regrettable that the budget is not being increased.",
+      "answer": "Nos parece lamentable que no se aumente el presupuesto.",
+      "why": "After *lamentable que*, the verb takes the wish form: *aumente*."
+    },
+    {
+      "prompt": "Type in Spanish: The company flatly rejects that proposal.",
+      "answer": "La empresa rechaza tajantemente esa propuesta.",
+      "why": "*Rechazar* plus *tajantemente* is the strong, formal refusal."
+    },
+    {
+      "prompt": "Make it personal: *Nos parece inaceptable que cierren la calle.* Say: I find it unacceptable that they close the street.",
+      "answer": "Me parece inaceptable que cierren la calle.",
+      "why": "One person speaking, so *me parece*."
+    },
+    {
+      "prompt": "Type in Spanish: It's regrettable that nobody informs the neighbours.",
+      "answer": "Es lamentable que nadie avise a los vecinos.",
+      "why": "*Es lamentable que* is followed by the wish form: *avise*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Condeno este café, está horrible.",
+      "right": "Este café está horrible.",
+      "why": "Almost. *Condenar* is for serious acts, so for coffee just say what you think."
+    },
+    {
+      "wrong": "Nos parece lamentable que no se aumenta el presupuesto.",
+      "right": "Nos parece lamentable que no se aumente el presupuesto.",
+      "why": "Almost. After *lamentable que* the verb takes the wish form, *aumente*."
+    },
+    {
+      "wrong": "Rechazo rotundamente a la propuesta.",
+      "right": "Rechazo rotundamente la propuesta.",
+      "why": "Almost. A proposal is a thing, not a person, so there is no *a*."
+    }
+  ],
+  "personal": "Write one formal sentence about something in your city that you find unacceptable, starting with *Me parece inaceptable que*."
+}

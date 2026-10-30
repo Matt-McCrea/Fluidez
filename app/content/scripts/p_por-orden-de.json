@@ -1,0 +1,160 @@
+{
+  "node": "p:por-orden-de",
+  "hook": {
+    "line": "Every office has its own way of deciding who goes first. *Por orden de* names the rule, and you will see it on every sign and agenda.",
+    "es": "Se atiende por orden de llegada.",
+    "en": "People are served in order of arrival."
+  },
+  "examples": [
+    {
+      "es": "Se atiende por orden de llegada.",
+      "en": "People are served in order of arrival."
+    },
+    {
+      "es": "Los temas se tratarán por orden de prioridad.",
+      "en": "The topics will be dealt with in order of priority."
+    },
+    {
+      "es": "Los estudiantes pasan por orden de lista.",
+      "en": "The students go up in the order of the roll."
+    },
+    {
+      "es": "Los socios aparecen por orden alfabético.",
+      "en": "The members are listed in alphabetical order."
+    },
+    {
+      "es": "¿Se atiende por orden de llegada o con cita?",
+      "en": "Are people served in order of arrival or by appointment?"
+    },
+    {
+      "es": "Las respuestas se enviarán por orden de inscripción.",
+      "en": "The answers will be sent in order of registration."
+    }
+  ],
+  "rule": "*Por orden de* plus the criterion says what decides the order: *llegada* (arrival), *prioridad*, *lista*, *inscripción*.\n\nNo article after *de*: *por orden de llegada*, not *de la llegada*.\n\nFor the alphabet and similar, the adjective comes straight after: *por orden alfabético*, *cronológico*.\n\nIt is often paired with *se*: *se atiende*, *se tratarán*.",
+  "smallPrint": "Teachers call this a fixed phrase. The thing after *de* is a bare noun, like a label.",
+  "readAndPick": [
+    {
+      "es": "Se atiende por orden de llegada.",
+      "options": [
+        "People are served in order of arrival.",
+        "People are served by order of the boss.",
+        "People are served on arrival day."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Los temas se tratarán por orden de prioridad.",
+      "options": [
+        "The topics will be dealt with in order of priority.",
+        "The topics were never dealt with.",
+        "The topics will be ordered by a priest."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Los socios aparecen por orden alfabético.",
+      "options": [
+        "The members are listed in alphabetical order.",
+        "The members appear on alphabetical orders.",
+        "The members arrive in the alphabet."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Pasan por orden de lista.",
+      "options": [
+        "They go in the order of the list.",
+        "They go in a long list.",
+        "They went on the list."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Se atiende por orden de llegada o con cita?",
+      "options": [
+        "Are people served in order of arrival or by appointment?",
+        "Do you attend my arrival with an appointment?",
+        "Is the order by appointment?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Las respuestas se enviarán por orden de inscripción.",
+      "options": [
+        "The answers will be sent in order of registration.",
+        "The answers are registered by order.",
+        "The answers sent an order."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Entran por orden de edad.",
+      "options": [
+        "They go in order of age.",
+        "They go in old age.",
+        "They age in order."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se pagará por orden de antigüedad.",
+      "options": [
+        "Payment will be in order of seniority.",
+        "They will pay the old order.",
+        "The seniority will pay."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Type in Spanish: People are served in order of arrival.",
+      "answer": "Se atiende por orden de llegada.",
+      "why": "The criterion, *llegada*, follows *por orden de*."
+    },
+    {
+      "prompt": "Pick *de llegada* or *de la llegada* and type the whole sentence: *Se atiende por orden ___.*",
+      "answer": "Se atiende por orden de llegada.",
+      "why": "The criterion takes no article."
+    },
+    {
+      "prompt": "Type in Spanish: The topics will be dealt with in order of priority.",
+      "answer": "Los temas se tratarán por orden de prioridad.",
+      "why": "Same frame, new criterion: *prioridad*."
+    },
+    {
+      "prompt": "Type in Spanish: The members are listed in alphabetical order.",
+      "answer": "Los socios aparecen por orden alfabético.",
+      "why": "For the alphabet, the adjective follows *orden* directly."
+    },
+    {
+      "prompt": "Turn it into a question: *Se atiende por orden de llegada.* Say: Are people served in order of arrival or by appointment?",
+      "answer": "¿Se atiende por orden de llegada o con cita?",
+      "why": "Add *o con cita* for the alternative."
+    },
+    {
+      "prompt": "Type in Spanish: The answers will be sent in order of registration.",
+      "answer": "Las respuestas se enviarán por orden de inscripción.",
+      "why": "*Se enviarán* is plural because *respuestas* is plural."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Se atiende por orden de la llegada.",
+      "right": "Se atiende por orden de llegada.",
+      "why": "Almost. After *por orden de* the criterion stays bare, with no *la*."
+    },
+    {
+      "wrong": "Se atiende en orden de llegada.",
+      "right": "Se atiende por orden de llegada.",
+      "why": "Almost. The fixed phrase uses *por*, not *en*."
+    },
+    {
+      "wrong": "Se atiende por orden llegada.",
+      "right": "Se atiende por orden de llegada.",
+      "why": "Almost. You need *de* before the criterion."
+    }
+  ],
+  "personal": "Say how something works at your work, school or favourite place, using *por orden de*."
+}

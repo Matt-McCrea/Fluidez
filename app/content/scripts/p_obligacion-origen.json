@@ -1,0 +1,171 @@
+{
+  "node": "p:obligacion-origen",
+  "hook": {
+    "line": "In a cooperative, a meeting or a contract, it matters whether a duty is yours by nature or imposed from outside. Spanish has a different frame for each.",
+    "es": "Es mi obligación informar a los socios.",
+    "en": "It's my duty to inform the members."
+  },
+  "examples": [
+    {
+      "es": "Es su obligación informar a los socios.",
+      "en": "It's his duty to inform the members."
+    },
+    {
+      "es": "Estoy obligado a declarar.",
+      "en": "I'm obliged to testify. (a man speaking)"
+    },
+    {
+      "es": "Las circunstancias nos obligaron a cambiar de planes.",
+      "en": "Circumstances forced us to change our plans."
+    },
+    {
+      "es": "Nada me obliga a aceptarlo.",
+      "en": "Nothing obliges me to accept it."
+    },
+    {
+      "es": "El contrato nos obliga a pagar a fin de mes.",
+      "en": "The contract obliges us to pay at the end of the month."
+    },
+    {
+      "es": "No tienes obligación de quedarte.",
+      "en": "You have no obligation to stay. (to a friend)"
+    }
+  ],
+  "rule": "Two frames, two sources.\n\nYour own duty: *Es mi obligación* + verb, or *Estoy obligado a* + verb.\n\nSomething outside forces you: *El contrato me obliga a* + verb, *Las circunstancias nos obligaron a* + verb.\n\nTo say nothing forces you: *Nada me obliga a* + verb, or *No tengo obligación de* + verb. That means \"you don't have to\", not \"you can't\".\n\nAfter *obligar* you always need *a*. *Obligación* takes no *a*: *es mi obligación informar*.",
+  "smallPrint": "*Obligado* is a participle: *estoy obligado*, *estamos obligadas*. It agrees with the person.",
+  "readAndPick": [
+    {
+      "es": "Es su obligación informar a los socios.",
+      "options": [
+        "It's his duty to inform the members.",
+        "He informed the members.",
+        "The members must inform him."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estamos obligados a pagar la cuenta.",
+      "options": [
+        "We are obliged to pay the bill.",
+        "We are paying the bill.",
+        "We are forcing them to pay the bill."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El contrato me obliga a firmar.",
+      "options": [
+        "I want to sign.",
+        "The contract obliges me to sign.",
+        "I oblige the contract to sign."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nada me obliga a firmar.",
+      "options": [
+        "Nothing obliges me to sign.",
+        "I oblige nothing and sign.",
+        "I must sign something."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No tienes obligación de quedarte.",
+      "options": [
+        "You must stay. (to a friend)",
+        "You have no obligation to stay. (to a friend)",
+        "You didn't stay. (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Las circunstancias nos obligaron a vender.",
+      "options": [
+        "Circumstances forced us to sell.",
+        "We forced circumstances to sell.",
+        "We want to sell."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es nuestra obligación avisar a los vecinos.",
+      "options": [
+        "The neighbours must warn us.",
+        "It's our duty to warn the neighbours.",
+        "We warned the neighbours."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La ley obliga a las empresas a publicar sus cuentas.",
+      "options": [
+        "The law obliges companies to publish their accounts.",
+        "Companies oblige the law to publish accounts.",
+        "The law publishes company accounts."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *obligación* or *obligar* and type the whole sentence: *Es mi ___ informar a los socios.*",
+      "answer": "Es mi obligación informar a los socios.",
+      "why": "After *mi* we need a noun, *obligación*, and no *a*."
+    },
+    {
+      "prompt": "Type in Spanish: I'm obliged to testify. (a man speaking)",
+      "answer": "Estoy obligado a declarar.",
+      "accept": [
+        "Yo estoy obligado a declarar."
+      ],
+      "why": "*Estar obligado a* is your own duty, with *a* before the verb."
+    },
+    {
+      "prompt": "Type in Spanish: The contract obliges us to pay at the end of the month.",
+      "answer": "El contrato nos obliga a pagar a fin de mes.",
+      "why": "The outside force is the subject, and *nos obliga a* points at us."
+    },
+    {
+      "prompt": "Type in Spanish: Nothing obliges me to accept it.",
+      "answer": "Nada me obliga a aceptarlo.",
+      "why": "*Nada* is the subject, so no *no* is needed."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: You have no obligation to stay.",
+      "answer": "No tienes obligación de quedarte.",
+      "accept": [
+        "Tú no tienes obligación de quedarte."
+      ],
+      "why": "With *obligación* the verb after takes *de*."
+    },
+    {
+      "prompt": "Make it about the past: *Las circunstancias nos obligan a cambiar de planes.* Say: Circumstances forced us to change our plans.",
+      "answer": "Las circunstancias nos obligaron a cambiar de planes.",
+      "why": "The past of *obligan* is *obligaron*."
+    },
+    {
+      "prompt": "Type in Spanish: It's our duty to warn the neighbours.",
+      "answer": "Es nuestra obligación avisar a los vecinos.",
+      "why": "*Obligación* is feminine, so *nuestra*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Soy obligado a declarar.",
+      "right": "Estoy obligado a declarar.",
+      "why": "Almost. Being obliged is a state that someone put you in, so it takes *estar*."
+    },
+    {
+      "wrong": "El contrato me obliga declarar.",
+      "right": "El contrato me obliga a declarar.",
+      "why": "Almost. *Obligar* always needs *a* before the next verb."
+    },
+    {
+      "wrong": "Es mi obligación a pagar.",
+      "right": "Es mi obligación pagar.",
+      "why": "Almost. *Obligación* is followed directly by the verb, with no *a*."
+    }
+  ],
+  "personal": "Say one real duty you have and one thing nothing obliges you to do, using *Es mi obligación* and *Nada me obliga a*."
+}

@@ -1,0 +1,179 @@
+{
+  "node": "g:cuyo-relatives",
+  "hook": {
+    "line": "Official Spanish loves to say \"the building whose owners live in Miami\" in one breath. The little word for \"whose\" is *cuyo*, and you will meet it in notices, contracts and news reports.",
+    "es": "El edificio, cuyos dueños viven en Miami, será vendido.",
+    "en": "The building, whose owners live in Miami, will be sold."
+  },
+  "examples": [
+    {
+      "es": "El edificio, cuyos dueños viven en Miami, será vendido.",
+      "en": "The building, whose owners live in Miami, will be sold."
+    },
+    {
+      "es": "Conozco a una mujer cuyo hijo trabaja en la Alcaldía.",
+      "en": "I know a woman whose son works at City Hall."
+    },
+    {
+      "es": "Es una tienda cuyas empleadas son todas mujeres.",
+      "en": "It's a shop whose employees are all women."
+    },
+    {
+      "es": "Don Hernando, cuyo carro tiene treinta años, nunca llega tarde.",
+      "en": "Don Hernando, whose car is thirty years old, is never late."
+    },
+    {
+      "es": "Altamira, cuyo proyecto afecta a toda la cuadra, quiere comprar el café.",
+      "en": "Altamira, whose project affects the whole block, wants to buy the café."
+    },
+    {
+      "es": "Tengo un amigo cuyos padres viven en Toronto.",
+      "en": "I have a friend whose parents live in Toronto."
+    }
+  ],
+  "rule": "*Cuyo* means \"whose\". It joins two ideas: *una mujer* + *su hijo trabaja en la Alcaldía* becomes *una mujer cuyo hijo trabaja en la Alcaldía*.\n\nTwo things differ from English:\n*Cuyo* agrees with the thing owned, not the owner: *cuyo hijo*, *cuyos hijos*, *cuya casa*, *cuyas casas*.\nNo *el*, *la* or *su* follows it: *cuyos dueños*, never *cuyos los dueños*.\n\nIt belongs to writing and formal speech. In chat people use two sentences: *Conozco a una mujer. Su hijo trabaja en la Alcaldía.* You need *cuyo* to read the formal kind.",
+  "smallPrint": "Teachers call *cuyo* a possessive relative. It is an adjective, which is why it agrees like one.",
+  "readAndPick": [
+    {
+      "es": "Conozco al señor cuyas hijas viven en Cali.",
+      "options": [
+        "the man whose daughter lives in Cali",
+        "the man whose daughters live in Cali",
+        "the man who lives with his daughters in Cali"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es una empresa cuyo dueño vive en Miami.",
+      "options": [
+        "a company whose owner lives in Miami",
+        "a company whose owners live in Miami",
+        "a company that lives in Miami"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hablé con la vecina cuya casa está en venta.",
+      "options": [
+        "I spoke with the neighbour whose house is for sale.",
+        "I spoke with the neighbour whose houses are for sale.",
+        "I spoke with the neighbours whose house is for sale."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es un barrio cuyos edificios son muy viejos.",
+      "options": [
+        "a neighbourhood whose building is very old",
+        "a neighbourhood whose buildings are very old",
+        "a neighbourhood with a very old owner"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale, cuyo pan de bono es famoso, abre a las seis.",
+      "options": [
+        "Vale, whose cheese bread is famous, opens at six.",
+        "Vale, whose cheese breads are famous, open at six.",
+        "Vale, who is famous for bread, opens at six."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es una oficina cuyas reglas son claras.",
+      "options": [
+        "an office whose rule is clear",
+        "an office whose rules are clear",
+        "an office that makes clear rules"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mariana escribe sobre un hombre cuyo nombre nadie recuerda.",
+      "options": [
+        "Mariana writes about a man whose names nobody remembers.",
+        "Mariana writes about men whose name nobody remembers.",
+        "Mariana writes about a man whose name nobody remembers."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Conozco a unos socios cuyo voto fue decisivo.",
+      "options": [
+        "I know some members whose vote was decisive.",
+        "I know some members whose votes were decisive.",
+        "I know a member whose vote was decisive."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *cuyos* or *cuyo* and type the whole sentence: *El edificio, ___ dueños viven en Miami, será vendido.*",
+      "answer": "El edificio, cuyos dueños viven en Miami, será vendido.",
+      "why": "*Dueños* is plural, so *cuyo* becomes *cuyos*."
+    },
+    {
+      "prompt": "Pick *cuya* or *cuyas* and type the whole sentence: *Es una tienda ___ empleadas son todas mujeres.*",
+      "answer": "Es una tienda cuyas empleadas son todas mujeres.",
+      "why": "*Empleadas* is feminine and plural, so *cuyas*."
+    },
+    {
+      "prompt": "Type in Spanish: I know a woman whose son works at City Hall.",
+      "answer": "Conozco a una mujer cuyo hijo trabaja en la Alcaldía.",
+      "accept": [
+        "Yo conozco a una mujer cuyo hijo trabaja en la Alcaldía."
+      ],
+      "why": "*Hijo* is one boy, so *cuyo*, even though the owner is a woman."
+    },
+    {
+      "prompt": "Type in Spanish: I have a friend whose parents live in Toronto.",
+      "answer": "Tengo un amigo cuyos padres viven en Toronto.",
+      "accept": [
+        "Yo tengo un amigo cuyos padres viven en Toronto."
+      ],
+      "why": "*Padres* is plural, so *cuyos*."
+    },
+    {
+      "prompt": "Join the two sentences with *cuyo*: *Conozco a un señor. Su carro tiene treinta años.* Say: I know a man whose car is thirty years old.",
+      "answer": "Conozco a un señor cuyo carro tiene treinta años.",
+      "accept": [
+        "Yo conozco a un señor cuyo carro tiene treinta años."
+      ],
+      "why": "*Su carro* becomes *cuyo carro*; the *su* disappears."
+    },
+    {
+      "prompt": "Type in Spanish: It's a neighbourhood whose buildings are very old.",
+      "answer": "Es un barrio cuyos edificios son muy viejos.",
+      "why": "*Edificios* is plural masculine, so *cuyos*."
+    },
+    {
+      "prompt": "Type in Spanish: Altamira, whose project affects the whole block, wants to buy the café.",
+      "answer": "Altamira, cuyo proyecto afecta a toda la cuadra, quiere comprar el café.",
+      "why": "*Proyecto* is one masculine thing, so *cuyo*, set off by commas."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Conozco a una mujer que su hijo trabaja en la Alcaldía.",
+      "right": "Conozco a una mujer cuyo hijo trabaja en la Alcaldía.",
+      "why": "Almost. People do say *que su* in chat, but in writing *cuyo* does that job."
+    },
+    {
+      "wrong": "Conozco a una mujer cuya hijos trabajan aquí.",
+      "right": "Conozco a una mujer cuyos hijos trabajan aquí.",
+      "why": "Almost. *Cuyo* agrees with what is owned (*hijos*), not with the owner (*mujer*)."
+    },
+    {
+      "wrong": "El edificio, cuyos los dueños viven en Miami, será vendido.",
+      "right": "El edificio, cuyos dueños viven en Miami, será vendido.",
+      "why": "Almost. *Cuyo* already means \"whose the\", so no *los* follows it."
+    },
+    {
+      "wrong": "¿Cuyo carro es este?",
+      "right": "¿De quién es este carro?",
+      "why": "Almost. *Cuyo* never asks a question; for \"whose is it?\" use *de quién*."
+    }
+  ],
+  "personal": "Describe someone you know with *cuyo*: a friend whose job, house or family you can say something true about."
+}

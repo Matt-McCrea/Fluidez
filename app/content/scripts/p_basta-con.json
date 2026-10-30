@@ -1,0 +1,168 @@
+{
+  "node": "p:basta-con",
+  "hook": {
+    "line": "Forms and offices always make things sound harder than they are. *Basta con* is how a clerk tells you the minimum you need to do.",
+    "es": "Basta con llenar este formulario.",
+    "en": "All you need to do is fill in this form."
+  },
+  "examples": [
+    {
+      "es": "Basta con llenar este formulario.",
+      "en": "All you need to do is fill in this form."
+    },
+    {
+      "es": "Basta con que firmes aquí.",
+      "en": "All you have to do is sign here. (to a friend)"
+    },
+    {
+      "es": "Basta con una llamada.",
+      "en": "One phone call is enough."
+    },
+    {
+      "es": "No basta con querer.",
+      "en": "Wanting is not enough."
+    },
+    {
+      "es": "Basta con que usted nos avise un día antes.",
+      "en": "All you have to do is let us know a day ahead. (polite)"
+    },
+    {
+      "es": "¿Basta con enviar un correo?",
+      "en": "Is it enough to send an email?"
+    }
+  ],
+  "rule": "*Basta con* names the minimum, not an order. It is closer to \"all you need is\" than to \"you must\".\n\nWith the same person throughout, use the infinitive: *Basta con llenar el formulario*.\n\nWhen the doer changes, use *que* plus the wish form of the verb: *Basta con que firmes aquí*.\n\nA plain noun works too: *Basta con una llamada*. With *no*, it means that something is not enough.",
+  "smallPrint": "Teachers call the verb after *que* the subjunctive. Here it follows *basta con que*, as after other words about what is needed.",
+  "readAndPick": [
+    {
+      "es": "Basta con llenar este formulario.",
+      "options": [
+        "You must fill in this form.",
+        "All you need to do is fill in this form.",
+        "I filled in this form."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Basta con que firmes aquí.",
+      "options": [
+        "All you have to do is sign here. (to a friend)",
+        "I have to sign here.",
+        "You signed here. (to a friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No basta con querer.",
+      "options": [
+        "Wanting is not enough.",
+        "I don't want to.",
+        "Wanting is enough."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Basta con una llamada.",
+      "options": [
+        "Nobody called.",
+        "One phone call is enough.",
+        "A phone call is required."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Basta con que ella firme.",
+      "options": [
+        "She has to sign twice.",
+        "All it takes is for her to sign.",
+        "She signed already."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Basta con enviar un correo?",
+      "options": [
+        "Is it enough to send an email?",
+        "Did you send an email?",
+        "Must I send an email?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Basta con que ustedes lleguen a las ocho.",
+      "options": [
+        "You all arrived at eight.",
+        "All you all have to do is arrive at eight.",
+        "They must arrive at eight."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Basta con presentar la cédula.",
+      "options": [
+        "Showing your ID is enough.",
+        "I showed my ID.",
+        "You cannot show your ID."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *llenar* or *llene* and type the whole sentence: *Basta con ___ este formulario.*",
+      "answer": "Basta con llenar este formulario.",
+      "why": "With no change of person, the infinitive follows *basta con*."
+    },
+    {
+      "prompt": "Type in Spanish: One phone call is enough.",
+      "answer": "Basta con una llamada.",
+      "why": "*Basta con* works with a plain noun."
+    },
+    {
+      "prompt": "Pick *firmas* or *firmes* and type the whole sentence, to a friend: *Basta con que ___ aquí.*",
+      "answer": "Basta con que firmes aquí.",
+      "why": "After *basta con que* we use the wish form: *firmes*, not *firmas*."
+    },
+    {
+      "prompt": "Type in Spanish: Wanting is not enough.",
+      "answer": "No basta con querer.",
+      "why": "Put *no* before *basta*."
+    },
+    {
+      "prompt": "Type in Spanish, to a customer you address as *usted*: All you have to do is let us know a day ahead.",
+      "answer": "Basta con que usted nos avise un día antes.",
+      "accept": [
+        "Basta con que nos avise un día antes."
+      ],
+      "why": "*Usted* takes *avise*, the wish form of *avisar*."
+    },
+    {
+      "prompt": "Turn it into a question: *Basta con enviar un correo.* Say: Is it enough to send an email?",
+      "answer": "¿Basta con enviar un correo?",
+      "why": "Only the question marks and the tone change."
+    },
+    {
+      "prompt": "Type in Spanish: Showing your ID is enough.",
+      "answer": "Basta con presentar la cédula.",
+      "why": "*Presentar la cédula* is the minimum, so it follows *basta con*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Basta con firmas aquí.",
+      "right": "Basta con que firmes aquí.",
+      "why": "Almost. A new person doing the thing needs *que* and the wish form, *firmes*."
+    },
+    {
+      "wrong": "Basta de llenar este formulario.",
+      "right": "Basta con llenar este formulario.",
+      "why": "Almost. *Basta de* means \"enough already\", a complaint; for \"all you need\" it is *basta con*."
+    },
+    {
+      "wrong": "Basta con que firmar aquí.",
+      "right": "Basta con firmar aquí.",
+      "why": "Almost. Use *que* only when you follow it with a conjugated verb."
+    }
+  ],
+  "personal": "Tell a friend the minimum they need for something, like joining your gym or entering your building, with *Basta con*."
+}
