@@ -1,0 +1,43 @@
+{
+  "node": "p:sentirse-mal",
+  "hook": {
+    "line": "The first question at the clinic is never about a body part, it is about how you are overall. You will need an answer ready, and a way to ask it back.",
+    "es": "Me siento fatal desde ayer.",
+    "en": "I've felt awful since yesterday."
+  },
+  "examples": [
+    { "es": "Me siento fatal desde ayer.", "en": "I've felt awful since yesterday." },
+    { "es": "¿Cómo se siente hoy?", "en": "How do you feel today? (to someone you address formally)" },
+    { "es": "Me siento mucho mejor.", "en": "I feel much better." },
+    { "es": "¿Cómo te sientes?", "en": "How do you feel? (to a friend)" },
+    { "es": "No me siento bien.", "en": "I don't feel well." },
+    { "es": "Vale se siente mal desde el lunes.", "en": "Vale has felt unwell since Monday." }
+  ],
+  "rule": "To say how you feel overall, use *sentirse*: *me siento*, *te sientes*, *se siente*, *nos sentimos*.\n\nAfter it comes a word like *bien*, *mal*, *fatal*, *mejor*, *peor* or *regular*. Those never change. Say *me siento mal*, not *malo*: *malo* describes a thing or a person.\n\nAn adjective after it agrees with whoever feels: *me siento cansada* (a woman).\n\nFor *muy*, keep it before the adjective: *muy cansada*.\n\nFor a single ache, use *me duele* instead. *Desde ayer* says since when.",
+  "smallPrint": "Teachers call this a reflexive verb used with an adverb of manner; *encontrarse* does the same job, but *sentirse* is more usual in Latin America.",
+  "readAndPick": [
+    { "es": "Me siento mal.", "options": ["I feel unwell.", "I'm a bad person."], "answer": 0 },
+    { "es": "Soy malo.", "options": ["I feel unwell.", "I'm bad."], "answer": 1 },
+    { "es": "¿Cómo te sientes?", "options": ["How do I feel?", "How do they feel?", "How do you feel? (to a friend)"], "answer": 2 },
+    { "es": "Nos sentimos bien.", "options": ["They feel fine.", "I feel fine.", "We feel fine."], "answer": 2 },
+    { "es": "Me siento mucho mejor.", "options": ["I feel much worse.", "I feel much better."], "answer": 1 },
+    { "es": "Me siento cansada.", "options": ["I feel tired. (a woman speaking)", "I feel tired. (a man speaking)"], "answer": 0 },
+    { "es": "Me siento fatal desde ayer.", "options": ["I felt awful yesterday.", "I've felt awful since yesterday.", "I'll feel awful tomorrow."], "answer": 1 },
+    { "es": "Hernando se siente peor.", "options": ["Hernando feels worse.", "Hernando feels better."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose the right form and type the whole sentence (I feel unwell): Me siento ___. (*mal* / *malo*)", "answer": "Me siento mal.", "accept": [], "why": "How you feel takes *mal*; *malo* describes things." },
+    { "prompt": "Choose the right form and type the whole sentence (Hernando feels worse): Hernando ___ peor. (*se siente* / *me siento*)", "answer": "Hernando se siente peor.", "accept": [], "why": "The verb matches Hernando, so *se siente*." },
+    { "prompt": "Ask a friend how they feel.", "answer": "¿Cómo te sientes?", "accept": ["¿Cómo te sientes?"], "why": "*Te sientes* is the form for a friend." },
+    { "prompt": "Ask a patient you address as *usted* how they feel today.", "answer": "¿Cómo se siente hoy?", "accept": ["¿Cómo se siente usted hoy?", "¿Hoy cómo se siente?"], "why": "*Usted* uses *se siente*." },
+    { "prompt": "Type in Spanish: I've felt awful since Monday.", "answer": "Me siento fatal desde el lunes.", "accept": ["Desde el lunes me siento fatal."], "why": "*Desde* says since when, and *fatal* never changes." },
+    { "prompt": "Make it about me, a woman speaking: Hernando se siente cansado.", "answer": "Me siento cansada.", "accept": [], "why": "*Me siento* is for me, and a woman says *cansada*." },
+    { "prompt": "Make it negative: Me siento bien.", "answer": "No me siento bien.", "accept": [], "why": "*No* goes before *me* and the rest stays the same." }
+  ],
+  "pitfalls": [
+    { "wrong": "Me siento malo.", "right": "Me siento mal.", "why": "Almost. For how you feel, use *mal*; *malo* describes a person or a thing." },
+    { "wrong": "Siento mal desde ayer.", "right": "Me siento mal desde ayer.", "why": "Without *me*, the verb loses you; add *me* to talk about how you feel." },
+    { "wrong": "Me siento mucho cansada.", "right": "Me siento muy cansada.", "why": "Before an adjective Spanish says *muy*, not *mucho*." }
+  ],
+  "personal": "Tell us how you feel right now, and how you felt the last time you were ill. Use *me siento…* and *desde…*."
+}

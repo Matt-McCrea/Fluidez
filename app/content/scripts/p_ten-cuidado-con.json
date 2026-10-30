@@ -1,0 +1,43 @@
+{
+  "node": "p:ten-cuidado-con",
+  "hook": {
+    "line": "Bogotá has uneven pavements, sudden rain and very fast motorbikes. Locals warn each other all day long, and they do it in about three words.",
+    "es": "Ten cuidado al cruzar.",
+    "en": "Be careful when you cross. (to a friend)"
+  },
+  "examples": [
+    { "es": "Ten cuidado al cruzar.", "en": "Be careful when you cross. (to a friend)" },
+    { "es": "Ten cuidado con el perro.", "en": "Be careful with the dog. (to a friend)" },
+    { "es": "¡Ojo con la cabeza!", "en": "Watch your head!" },
+    { "es": "Tenga cuidado con la plata.", "en": "Be careful with the money. (to someone you address formally)" },
+    { "es": "Tengan cuidado al salir.", "en": "Be careful when you leave. (to you all)" },
+    { "es": "Está lloviendo, así que ten cuidado al manejar.", "en": "It's raining, so be careful when you drive. (to a friend)" }
+  ],
+  "rule": "Warn with *cuidado* and say what to watch.\n\n*Ten cuidado con* + a thing: *con el perro*.\n*Ten cuidado al* + a verb: *al cruzar*, where English says \"when crossing\".\n\nThe first word follows who you talk to: *ten* (friend), *tenga* (*usted*), *tengan* (*ustedes*). Add *mucho* to push it: *ten mucho cuidado*.\n\n*Ojo con* is the quick street version, literally \"eye with\": *¡Ojo con la cabeza!*\n\nA reason first, then the warning, lands better.",
+  "smallPrint": "Teachers call *ten*, *tenga* and *tengan* commands (imperatives) of *tener*.",
+  "readAndPick": [
+    { "es": "Ten cuidado con el perro.", "options": ["I'm careful with the dog.", "Be careful with the dog. (to a friend)", "Be careful with the dog. (formal)"], "answer": 1 },
+    { "es": "Tenga cuidado con la plata.", "options": ["Be careful with the money. (to a friend)", "Be careful with the money. (formal)"], "answer": 1 },
+    { "es": "Tengan cuidado al salir.", "options": ["Be careful when you leave. (to a friend)", "Be careful when you leave. (to you all)"], "answer": 1 },
+    { "es": "¡Ojo con la cabeza!", "options": ["Watch your head!", "Use your head!", "Close your eyes!"], "answer": 0 },
+    { "es": "Ten cuidado al cruzar.", "options": ["Be careful with the street.", "Be careful when you cross."], "answer": 1 },
+    { "es": "Está lloviendo, así que ten cuidado al manejar.", "options": ["It's raining, so be careful with the car.", "It's raining, so I'll drive carefully.", "It's raining, so be careful when you drive."], "answer": 2 },
+    { "es": "Ten mucho cuidado con las medicinas.", "options": ["Be a little careful with the medicines.", "Be very careful with the medicines."], "answer": 1 },
+    { "es": "Tengan mucho cuidado.", "options": ["Be very careful, you all.", "Be very careful. (formal)", "Be very careful. (to a friend)"], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose the right form and type the whole sentence (Be careful with the dog, to a friend): ___ cuidado con el perro. (*Ten* / *Tenga*)", "answer": "Ten cuidado con el perro.", "accept": [], "why": "A friend takes *ten*; *tenga* is for *usted*." },
+    { "prompt": "Choose the right form and type the whole sentence (Be careful when you cross, to a friend): Ten cuidado ___ cruzar. (*con* / *al*)", "answer": "Ten cuidado al cruzar.", "accept": [], "why": "Before a verb you need *al*; *con* goes before a noun." },
+    { "prompt": "Type in Spanish (to someone you address as *usted*): Be careful with the money.", "answer": "Tenga cuidado con la plata.", "accept": [], "why": "*Usted* takes *tenga*, and a thing takes *con*." },
+    { "prompt": "Type in Spanish (to several people): Be careful when you leave.", "answer": "Tengan cuidado al salir.", "accept": [], "why": "A group takes *tengan*, and *al* leads into the verb." },
+    { "prompt": "Type in Spanish: Watch your head!", "answer": "¡Ojo con la cabeza!", "accept": ["Ojo con la cabeza"], "why": "*Ojo con* is the quick warning, followed by the thing." },
+    { "prompt": "Make it stronger (to a friend): Ten cuidado al manejar.", "answer": "Ten mucho cuidado al manejar.", "accept": [], "why": "*Mucho* goes between *ten* and *cuidado* to push the warning." },
+    { "prompt": "Put the reason first (to a friend): It's raining, so be careful when you drive.", "answer": "Está lloviendo, así que ten cuidado al manejar.", "accept": [], "why": "*Así que* links the reason to the warning." }
+  ],
+  "pitfalls": [
+    { "wrong": "Ten cuidado por el perro.", "right": "Ten cuidado con el perro.", "why": "Almost. The thing to watch out for follows *con*." },
+    { "wrong": "Ten cuidado cruzando.", "right": "Ten cuidado al cruzar.", "why": "English uses \"-ing\"; Spanish uses *al* plus the infinitive." },
+    { "wrong": "Tienes cuidado con el perro.", "right": "Ten cuidado con el perro.", "why": "A warning is a command, so *ten*, not the plain *tienes*." }
+  ],
+  "personal": "Think of someone about to do something risky or slippery. Warn them with *ten cuidado con…* or *ten cuidado al…*."
+}

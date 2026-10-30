@@ -1,0 +1,43 @@
+{
+  "node": "p:es-obligatorio",
+  "hook": {
+    "line": "At the EPS counter and on every official form, the rules arrive in the same stiff phrase. Learn to read it, and you stop guessing what the clerk wants from you.",
+    "es": "Es obligatorio presentar la receta.",
+    "en": "It's compulsory to show the prescription."
+  },
+  "examples": [
+    { "es": "Es obligatorio llevar casco.", "en": "Wearing a helmet is compulsory." },
+    { "es": "Es obligatorio presentar la receta.", "en": "It's compulsory to show the prescription." },
+    { "es": "Es obligatorio traer la cédula.", "en": "It's compulsory to bring your ID." },
+    { "es": "Es obligatorio pagar antes de entrar.", "en": "It's compulsory to pay before going in." },
+    { "es": "No es obligatorio, pero se recomienda.", "en": "It isn't compulsory, but it's recommended." },
+    { "es": "Es obligatorio que todos los pacientes lleguen temprano.", "en": "It's compulsory for all patients to arrive early." }
+  ],
+  "rule": "*Es obligatorio* + infinitive says something is required by a rule: *Es obligatorio llevar casco*. Nothing goes between them, no *de*, no *que*.\n\n*No es obligatorio* only means you don't have to. It does not mean forbidden: for a ban, use *está prohibido*.\n\nWhen you say who has to do it, *que* appears and the verb changes: *Es obligatorio que todos lleguen temprano*. Just recognise that form for now.\n\nIt sounds official. With a person, you will use *tienes que*.",
+  "smallPrint": "Teachers call the verb after *que* the subjunctive, and *es obligatorio* an impersonal expression of obligation.",
+  "readAndPick": [
+    { "es": "Es obligatorio llevar casco.", "options": ["Wearing a helmet is optional.", "Wearing a helmet is forbidden.", "Wearing a helmet is compulsory."], "answer": 2 },
+    { "es": "No es obligatorio llevar casco.", "options": ["Wearing a helmet is compulsory.", "Wearing a helmet is not compulsory."], "answer": 1 },
+    { "es": "No es obligatorio, pero se recomienda.", "options": ["It isn't compulsory, but it's recommended.", "It's forbidden, but it's recommended."], "answer": 0 },
+    { "es": "Es obligatorio presentar la receta.", "options": ["It's forbidden to show the prescription.", "It's possible to show the prescription.", "It's compulsory to show the prescription."], "answer": 2 },
+    { "es": "No está permitido entrar sin cita.", "options": ["Going in without an appointment is compulsory.", "Going in without an appointment is not allowed."], "answer": 1 },
+    { "es": "Es obligatorio traer la cédula.", "options": ["Bringing your ID is compulsory.", "Bringing your ID is not compulsory."], "answer": 0 },
+    { "es": "Es obligatorio que todos los pacientes lleguen temprano.", "options": ["All patients arrived early.", "All patients must arrive early.", "All patients want to arrive early."], "answer": 1 },
+    { "es": "Es necesario descansar.", "options": ["Resting is necessary.", "Resting is required by law."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose the right form and type the whole sentence (Wearing a helmet is compulsory): ___ llevar casco. (*Es obligatorio* / *No es obligatorio*)", "answer": "Es obligatorio llevar casco.", "accept": [], "why": "It is required, so there is no *no*." },
+    { "prompt": "Choose the right form and type the whole sentence (You don't have to wear a helmet): ___ llevar casco. (*Es obligatorio* / *No es obligatorio*)", "answer": "No es obligatorio llevar casco.", "accept": [], "why": "You don't have to is *no es obligatorio*." },
+    { "prompt": "Type in Spanish: It's compulsory to show the prescription.", "answer": "Es obligatorio presentar la receta.", "accept": [], "why": "*Es obligatorio* goes straight into the infinitive." },
+    { "prompt": "Type in Spanish: It's compulsory to bring your ID.", "answer": "Es obligatorio traer la cédula.", "accept": [], "why": "The infinitive *traer* follows with no extra word." },
+    { "prompt": "Type in Spanish: It's compulsory to pay before going in.", "answer": "Es obligatorio pagar antes de entrar.", "accept": [], "why": "*Antes de* plus an infinitive says \"before going in\"." },
+    { "prompt": "Make it negative: Es obligatorio pagar antes de entrar.", "answer": "No es obligatorio pagar antes de entrar.", "accept": [], "why": "*No* in front turns the rule off." },
+    { "prompt": "Say it isn't compulsory but it's recommended.", "answer": "No es obligatorio, pero se recomienda.", "accept": [], "why": "*Pero se recomienda* adds the soft advice." }
+  ],
+  "pitfalls": [
+    { "wrong": "Es obligatorio de llevar casco.", "right": "Es obligatorio llevar casco.", "why": "Almost. The infinitive follows directly, with no *de*." },
+    { "wrong": "No es obligatorio entrar sin cita.", "right": "No está permitido entrar sin cita.", "why": "*No es obligatorio* only means you don't have to; for a ban, use *está prohibido*." },
+    { "wrong": "Es obligatorio traes la cédula.", "right": "Es obligatorio traer la cédula.", "why": "After *es obligatorio* the verb stays in its infinitive form." }
+  ],
+  "personal": "Think of a rule where you live or work. Write one thing that is compulsory and one that is not, with *es obligatorio* and *no es obligatorio*."
+}

@@ -1,0 +1,43 @@
+{
+  "node": "p:esta-prohibido",
+  "hook": {
+    "line": "Walk down any street in La Candelaria and the walls are full of short, firm notices. You will read them every day, and sooner or later you will need to say one yourself.",
+    "es": "Está prohibido entrar sin cita.",
+    "en": "Going in without an appointment is forbidden."
+  },
+  "examples": [
+    { "es": "Está prohibido entrar sin cita.", "en": "Going in without an appointment is forbidden." },
+    { "es": "Prohibido el paso.", "en": "No entry." },
+    { "es": "No tocar.", "en": "Do not touch." },
+    { "es": "No está permitido tomar fotos.", "en": "Taking photos is not allowed." },
+    { "es": "No se permite entrar con perros.", "en": "Dogs are not allowed in." },
+    { "es": "Aquí no se puede fumar.", "en": "You can't smoke here." }
+  ],
+  "rule": "Spanish forbids things at three levels.\n\nOn signs: *Prohibido el paso*, *No tocar*. Just the bare infinitive.\n\nOfficial notices: *Está prohibido*, *No está permitido* or *No se permite*, then an infinitive.\n\nEveryday speech: *Aquí no se puede fumar*.\n\nNothing goes between the phrase and the infinitive: no *de*, no *a*. The English \"-ing\" (\"smoking\") becomes an infinitive (*fumar*).\n\nTo tell one person off, use a command: *No fumes aquí*.",
+  "smallPrint": "Teachers call the sign style an infinitive used as a command, and *no se permite* a passive *se*.",
+  "readAndPick": [
+    { "es": "Está prohibido entrar sin cita.", "options": ["You may go in without an appointment.", "Going in without an appointment is forbidden."], "answer": 1 },
+    { "es": "No está permitido tomar fotos.", "options": ["Taking photos is compulsory.", "Taking photos is allowed.", "Taking photos is not allowed."], "answer": 2 },
+    { "es": "No tocar.", "options": ["Please touch.", "Do not touch.", "I don't touch."], "answer": 1 },
+    { "es": "Aquí no se puede fumar.", "options": ["Nobody is smoking here.", "You can't smoke here.", "You may smoke here."], "answer": 1 },
+    { "es": "Aquí se puede fumar.", "options": ["You can smoke here.", "You can't smoke here."], "answer": 0 },
+    { "es": "No fumes aquí, por favor.", "options": ["Smoking is forbidden here.", "He isn't smoking here.", "Don't smoke here, please. (to a friend)"], "answer": 2 },
+    { "es": "No se permite entrar con perros.", "options": ["Dogs can't come in.", "Dogs must come in.", "I don't let dogs in."], "answer": 0 },
+    { "es": "Prohibido el paso.", "options": ["The way is free.", "No entry."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose the right form and type the whole sentence (Taking photos is not allowed): ___ tomar fotos. (*No está permitido* / *Está permitido*)", "answer": "No está permitido tomar fotos.", "accept": [], "why": "*No* turns \"allowed\" into \"not allowed\"." },
+    { "prompt": "Choose the right form and type the whole sentence (You can't smoke here): Aquí ___ fumar. (*no se puede* / *se puede*)", "answer": "Aquí no se puede fumar.", "accept": ["No se puede fumar aquí."], "why": "You can't smoke is *no se puede*, and the infinitive follows." },
+    { "prompt": "Type the sign in Spanish: No entry.", "answer": "Prohibido el paso.", "accept": ["No entrar."], "why": "Signs are short: *prohibido* plus what is banned." },
+    { "prompt": "Type in Spanish: Going in without an appointment is forbidden.", "answer": "Está prohibido entrar sin cita.", "accept": ["Sin cita está prohibido entrar."], "why": "*Está prohibido* goes straight into the infinitive." },
+    { "prompt": "Type in Spanish: Dogs are not allowed in.", "answer": "No se permite entrar con perros.", "accept": ["No se permiten perros."], "why": "*No se permite* is the notice style for what is not allowed." },
+    { "prompt": "Tell one friend not to smoke here: Aquí no se puede fumar.", "answer": "No fumes aquí.", "accept": [], "why": "To one person you use the command *fumes*." },
+    { "prompt": "Turn it into a sign: No se puede tocar.", "answer": "No tocar.", "accept": [], "why": "A sign drops everything and keeps *no* plus the infinitive." }
+  ],
+  "pitfalls": [
+    { "wrong": "Está prohibido de entrar sin cita.", "right": "Está prohibido entrar sin cita.", "why": "Almost. Nothing goes between *prohibido* and the infinitive, so no *de*." },
+    { "wrong": "Es prohibido entrar sin cita.", "right": "Está prohibido entrar sin cita.", "why": "A ban on a notice is a state of things, so Spanish uses *está*." },
+    { "wrong": "No fumas aquí.", "right": "No fumes aquí.", "why": "To tell one person not to do something, the verb takes the command form *fumes*." }
+  ],
+  "personal": "Look around where you are right now. Write one thing that is forbidden or not allowed, with *Está prohibido…* or *No se puede…*."
+}

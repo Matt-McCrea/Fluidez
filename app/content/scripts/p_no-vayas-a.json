@@ -1,0 +1,43 @@
+{
+  "node": "p:no-vayas-a",
+  "hook": {
+    "line": "Warnings in Spanish are often gentler than bans. A grandmother does not forbid you to lose your keys, she just says it before you do.",
+    "es": "No vayas a perder las llaves.",
+    "en": "Mind you don't lose the keys. (to a friend)"
+  },
+  "examples": [
+    { "es": "No vayas a perder las llaves.", "en": "Mind you don't lose the keys. (to a friend)" },
+    { "es": "No te vayas a caer.", "en": "Mind you don't fall. (to a friend)" },
+    { "es": "No vayas a llegar tarde.", "en": "Mind you don't arrive late. (to a friend)" },
+    { "es": "No te vayas a enfermar.", "en": "Mind you don't get sick. (to a friend)" },
+    { "es": "No se le vaya a olvidar la receta.", "en": "Mind you don't forget the prescription. (to someone you address formally)" },
+    { "es": "No vayas a la farmacia sin la receta.", "en": "Don't go to the pharmacy without the prescription. (to a friend)" }
+  ],
+  "rule": "*No vayas a* + infinitive warns about something that might happen by accident. It is softer than a ban: \"mind you don't\".\n\nFor a friend: *No vayas a perder…*\nFor yourself or a mishap that happens to you, add *te*: *No te vayas a caer.*\nFor *usted*: *No se vaya a caer.*\n\nWatch the little *a*. *No vayas a la farmacia* (the pharmacy) really means \"don't go\". *No vayas a perder* (a verb) means \"mind you don't\".",
+  "smallPrint": "Teachers call *vayas* the present subjunctive of *ir*; for now treat *no vayas a* as one block.",
+  "readAndPick": [
+    { "es": "No vayas a perder las llaves.", "options": ["Mind you don't lose the keys.", "Don't go and look for the keys.", "You won't lose the keys."], "answer": 0 },
+    { "es": "No vayas a la farmacia sin la receta.", "options": ["Mind you don't buy the prescription.", "Don't go to the pharmacy without the prescription."], "answer": 1 },
+    { "es": "No te vayas todavía.", "options": ["Mind you don't fall yet.", "Don't leave yet."], "answer": 1 },
+    { "es": "No te vayas a caer.", "options": ["You're not going to fall.", "Don't leave.", "Mind you don't fall."], "answer": 2 },
+    { "es": "No se le vaya a olvidar la receta.", "options": ["Mind you don't forget the prescription. (formal)", "Mind you don't forget the prescription. (to a friend)"], "answer": 0 },
+    { "es": "No vayas a llegar tarde.", "options": ["You didn't arrive late.", "Don't go home late.", "Mind you don't arrive late."], "answer": 2 },
+    { "es": "No te vayas a enfermar.", "options": ["You aren't getting sick.", "Mind you don't get sick."], "answer": 1 },
+    { "es": "No nos vayamos a perder.", "options": ["Let's make sure we don't get lost.", "Make sure you don't get lost."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose the right form and type the whole sentence (Mind you don't lose the keys, to a friend): No ___ a perder las llaves. (*vayas* / *vas*)", "answer": "No vayas a perder las llaves.", "accept": [], "why": "A warning uses *vayas*; *vas* would be a plain statement." },
+    { "prompt": "Choose the right form and type the whole sentence (Mind you don't fall, to a friend): No te ___ a caer. (*vayas* / *vas*)", "answer": "No te vayas a caer.", "accept": [], "why": "Same block, with *te* because the fall happens to you." },
+    { "prompt": "Type in Spanish (to a friend): Mind you don't arrive late.", "answer": "No vayas a llegar tarde.", "accept": [], "why": "*No vayas a* plus the infinitive *llegar*." },
+    { "prompt": "Type in Spanish (to a friend): Mind you don't get sick.", "answer": "No te vayas a enfermar.", "accept": [], "why": "Getting sick happens to you, so *te* goes in." },
+    { "prompt": "Type in Spanish (to someone you address as *usted*): Mind you don't forget the prescription.", "answer": "No se le vaya a olvidar la receta.", "accept": [], "why": "*Usted* gives *se le vaya*; the forgetting happens to them." },
+    { "prompt": "Make it a gentle warning (to a friend): No te caigas.", "answer": "No te vayas a caer.", "accept": [], "why": "*Vayas a* turns a flat order into a \"mind you don't\"." },
+    { "prompt": "Make it formal, to someone you address as *usted*: No te vayas a caer.", "answer": "No se vaya a caer.", "accept": [], "why": "*Usted* swaps *te vayas* for *se vaya*." }
+  ],
+  "pitfalls": [
+    { "wrong": "No vas a perder las llaves.", "right": "No vayas a perder las llaves.", "why": "Almost. *No vas a* says you won't; to warn someone, use *vayas*." },
+    { "wrong": "No vayas perder las llaves.", "right": "No vayas a perder las llaves.", "why": "The little *a* stays before the infinitive." },
+    { "wrong": "No vayas a caer.", "right": "No te vayas a caer.", "why": "When something happens to you, like a fall, add *te*." }
+  ],
+  "personal": "Imagine a friend leaving for a long trip or a first day at a new job. Give them two warnings with *no vayas a…* or *no te vayas a…*."
+}
