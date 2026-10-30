@@ -1,0 +1,90 @@
+{
+  "node": "p:me-hace-el-favor",
+  "hook": {
+    "line": "In Bogotá nobody just says *pásame la sal* to a stranger, and nobody says *please* in a way that sounds flat. The everyday polite request is a little favour formula, and it can turn sharp when you are tired of asking.",
+    "es": "¿Me hace el favor y me pasa la sal?",
+    "en": "Would you pass me the salt, please? (formal)"
+  },
+  "examples": [
+    { "es": "¿Me hace el favor y me pasa la sal?", "en": "Would you pass me the salt, please? (formal)" },
+    { "es": "¿Me haces el favor de cerrar la ventana?", "en": "Would you do me a favour and close the window? (to a friend)" },
+    { "es": "¿Me hace el favor y espera un momento?", "en": "Would you wait a moment, please? (formal)" },
+    { "es": "¿Me haces el favor y me ayudas con las mesas?", "en": "Would you help me with the tables, please? (to a friend)" },
+    { "es": "¿Me hacen el favor y se sientan?", "en": "Would you all take a seat, please?" },
+    { "es": "Hazme el favor de bajar la voz.", "en": "Do me a favour and keep your voice down. (to a friend, sharp)" }
+  ],
+  "rule": "*Hacer el favor* is the Colombian way to say \"please\" to a request. Two frames:\n\n*¿Me hace el favor de* + infinitive\n*¿Me hace el favor y* + a normal verb\n\nThe verb *hacer* matches who you are talking to: *hace* (usted), *haces* (a friend), *hacen* (you all). Keep the rest of the sentence on the same footing: *¿Me hace el favor y me pasa…?*\n\nWatch the tone. With a question mark and a smile it is gentle. As a bare command, *Hazme el favor de…*, it is what a parent says when patience has run out.",
+  "smallPrint": "Teachers call this a courtesy formula with *hacer el favor*.",
+  "readAndPick": [
+    { "es": "¿Me hace el favor y me pasa la sal?", "options": ["Would you pass me the salt, please? (formal)", "Would you pass me the salt, please? (to a friend)", "Would you all pass me the salt, please?"], "answer": 0 },
+    { "es": "¿Me haces el favor de cerrar la ventana?", "options": ["Would you do me a favour and close the window? (formal)", "Would you do me a favour and close the window? (to a friend)", "Would you all do me a favour and close the window?"], "answer": 1 },
+    { "es": "¿Me hacen el favor y se sientan?", "options": ["Would you take a seat, please? (formal)", "Would you take a seat, please? (to a friend)", "Would you all take a seat, please?"], "answer": 2 },
+    { "es": "Hazme el favor de bajar la voz.", "options": ["Do me a favour and keep your voice down. (sharp, to a friend)", "Thank you for keeping your voice down.", "Would you be so kind as to keep your voice down? (formal)"], "answer": 0 },
+    { "es": "¿Me hace el favor y espera un momento?", "options": ["I will wait a moment for you.", "Would you wait a moment, please? (formal)", "Wait a moment, will you? (to a friend)"], "answer": 1 },
+    { "es": "Hágame el favor de no tocar eso.", "options": ["Please don't touch that. (to a friend)", "Please touch that. (formal)", "Please don't touch that. (formal, firm)"], "answer": 2 },
+    { "es": "¿Me haces el favor y me ayudas con las mesas?", "options": ["Would you help me with the tables, please? (to a friend)", "Would you help me with the tables, please? (formal)", "Would you all help me with the tables, please?"], "answer": 0 },
+    { "es": "Hazme el favor de esperar.", "options": ["Would you be so kind as to wait? (formal)", "Thank you for waiting.", "Do me a favour and wait. (sharp, to a friend)"], "answer": 2 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *hace* or *haces*, then type the whole sentence: ¿Me ___ el favor y me pasa la sal? (to a waiter you call *usted*)",
+      "answer": "¿Me hace el favor y me pasa la sal?",
+      "accept": [],
+      "why": "*Pasa* is the *usted* form, so *hace* goes with it."
+    },
+    {
+      "prompt": "Choose *hace* or *haces*, then type the whole sentence: ¿Me ___ el favor de cerrar la ventana? (to a friend)",
+      "answer": "¿Me haces el favor de cerrar la ventana?",
+      "accept": [],
+      "why": "A friend is *tú*, so the verb ends in *-s*."
+    },
+    {
+      "prompt": "Type it in Spanish: Would you wait a moment, please? (formal, use *y*)",
+      "answer": "¿Me hace el favor y espera un momento?",
+      "accept": ["¿Me hace el favor de esperar un momento?"],
+      "why": "After *y* comes a normal verb, in the same *usted* form: *espera*."
+    },
+    {
+      "prompt": "Type it in Spanish: Would you help me with the tables, please? (to a friend, use *y*)",
+      "answer": "¿Me haces el favor y me ayudas con las mesas?",
+      "accept": ["¿Me haces el favor de ayudarme con las mesas?"],
+      "why": "A friend gets *haces* and *ayudas*, both with *-s*."
+    },
+    {
+      "prompt": "Type it in Spanish: Do me a favour and keep your voice down. (to a friend, sharp)",
+      "answer": "Hazme el favor de bajar la voz.",
+      "accept": [],
+      "why": "Without a question, *hazme el favor* is a firm order."
+    },
+    {
+      "prompt": "Make it polite, to a stranger you call *usted*: *¿Me haces el favor de cerrar la ventana?* becomes: Would you close the window, please?",
+      "answer": "¿Me hace el favor de cerrar la ventana?",
+      "accept": ["¿Me hace el favor y cierra la ventana?"],
+      "why": "Swap *haces* for *hace* and the rest stays."
+    },
+    {
+      "prompt": "Make it about *you all*: Would you all take a seat, please? (use *y*)",
+      "answer": "¿Me hacen el favor y se sientan?",
+      "accept": ["¿Me hacen el favor de sentarse?"],
+      "why": "A group needs the *-n* forms: *hacen*, *sientan*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Me haces un favor de cerrar la ventana?",
+      "right": "¿Me haces el favor de cerrar la ventana?",
+      "why": "Almost. This polite formula always uses *el favor*, not *un favor*."
+    },
+    {
+      "wrong": "¿Me hace el favor y pasarme la sal?",
+      "right": "¿Me hace el favor y me pasa la sal?",
+      "why": "After *y* Spanish wants a regular conjugated verb, not an infinitive."
+    },
+    {
+      "wrong": "¿Me haces el favor y me pasa la sal?",
+      "right": "¿Me hace el favor y me pasa la sal?",
+      "why": "Keep one way of addressing the person: *haces* goes with *pasas*, *hace* with *pasa*."
+    }
+  ],
+  "personal": "Think of one small thing you would ask a stranger in a café, like the salt or a seat. Say it with *¿Me hace el favor y…?*"
+}

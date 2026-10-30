@@ -1,0 +1,90 @@
+{
+  "node": "p:digas-lo-que-digas",
+  "hook": {
+    "line": "Tomás has made up his mind about the café, and nothing his friends or Altamira say will change it. Spanish can shut every objection at once by saying the same verb twice.",
+    "es": "Digas lo que digas, voy a ir.",
+    "en": "Whatever you say, I'm going."
+  },
+  "examples": [
+    { "es": "Digas lo que digas, voy a ir.", "en": "Whatever you say, I'm going. (to a friend)" },
+    { "es": "Te pongas como te pongas, no lo voy a hacer.", "en": "However much you carry on, I'm not going to do it. (to a friend)" },
+    { "es": "Hagas lo que hagas, no le digas nada.", "en": "Whatever you do, don't say anything to her. (to a friend)" },
+    { "es": "Diga lo que diga Altamira, no vamos a vender el café.", "en": "Whatever Altamira says, we're not selling the café." },
+    { "es": "Vayas donde vayas, siempre hay un tinto.", "en": "Wherever you go, there's always a tinto. (to a friend)" },
+    { "es": "Vengas cuando vengas, Hernando está en su mesa.", "en": "Whenever you come, Hernando is at his table. (to a friend)" }
+  ],
+  "rule": "To say \"no matter what\", repeat the verb in its *que* form with a small word between: \n\n*Digas lo que digas*: whatever you say\n*Vayas donde vayas*: wherever you go\n*Vengas cuando vengas*: whenever you come\n*Te pongas como te pongas*: however you carry on\n\nBoth verbs are the same verb, the same person, in the *que* form (*dices* becomes *digas*). Then comes the main sentence, ordinary and certain: *voy a ir*.\n\nIt is not a guess. The speaker has already decided.",
+  "smallPrint": "Teachers call this a reduplicated subjunctive concessive.",
+  "readAndPick": [
+    { "es": "Digas lo que digas, voy a ir.", "options": ["Whatever you say, I'm going.", "I'm going because you say so.", "Whatever you said, I went."], "answer": 0 },
+    { "es": "Te pongas como te pongas, no lo voy a hacer.", "options": ["If you get upset, I'll do it.", "However much you carry on, I'm not going to do it.", "You got upset, so I'm not doing it."], "answer": 1 },
+    { "es": "Hagas lo que hagas, no le digas nada.", "options": ["Whatever you did, you told her nothing.", "Whatever you do, tell her everything.", "Whatever you do, don't say anything to her."], "answer": 2 },
+    { "es": "Diga lo que diga Altamira, no vamos a vender el café.", "options": ["Whatever Altamira says, we're not selling the café.", "Altamira says we're not selling the café.", "Whatever Altamira said, we sold the café."], "answer": 0 },
+    { "es": "Vayas donde vayas, siempre hay un tinto.", "options": ["I'm going wherever you go, with a tinto.", "Wherever you went, there was a tinto.", "Wherever you go, there's always a tinto."], "answer": 2 },
+    { "es": "Vengas cuando vengas, Hernando está en su mesa.", "options": ["When you came, Hernando was at his table.", "Whenever you come, Hernando is at his table.", "Hernando will come when you come."], "answer": 1 },
+    { "es": "Digan lo que digan, nosotros seguimos.", "options": ["Whatever they say, we carry on.", "Whatever you say, they carry on.", "Whatever they said, we carried on."], "answer": 0 },
+    { "es": "Pase lo que pase, el café no se vende.", "options": ["What happens is that the café isn't sold.", "Whatever happened, the café wasn't sold.", "Whatever happens, the café isn't for sale."], "answer": 2 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *digas* or *dices*, then type the whole sentence: ___ lo que ___, voy a ir. (Whatever you say, I'm going. To a friend)",
+      "answer": "Digas lo que digas, voy a ir.",
+      "accept": [],
+      "why": "\"No matter what\" always uses the *que* form, *digas*."
+    },
+    {
+      "prompt": "Choose *pongas* or *pones*, then type the whole sentence: Te ___ como te ___, no lo voy a hacer. (However much you carry on, to a friend)",
+      "answer": "Te pongas como te pongas, no lo voy a hacer.",
+      "accept": [],
+      "why": "Both verbs take the same *que* form: *pongas*."
+    },
+    {
+      "prompt": "Type it in Spanish: Whatever you do, don't say anything to her. (to a friend)",
+      "answer": "Hagas lo que hagas, no le digas nada.",
+      "accept": [],
+      "why": "*Hagas lo que hagas* opens, then a negative command with *digas*."
+    },
+    {
+      "prompt": "Type it in Spanish: Whatever Altamira says, we're not selling the café.",
+      "answer": "Diga lo que diga Altamira, no vamos a vender el café.",
+      "accept": ["Diga Altamira lo que diga, no vamos a vender el café."],
+      "why": "Altamira is *she/it*, so the verb is *diga*."
+    },
+    {
+      "prompt": "Type it in Spanish: Wherever you go, there's always a tinto. (to a friend)",
+      "answer": "Vayas donde vayas, siempre hay un tinto.",
+      "accept": [],
+      "why": "For places, use *donde* between the two verbs."
+    },
+    {
+      "prompt": "Change *Digas lo que digas, voy a ir* so that they are the ones talking and we are going: Whatever they say, we're going.",
+      "answer": "Digan lo que digan, vamos a ir.",
+      "accept": [],
+      "why": "*They* needs *digan* twice, and *we* needs *vamos*."
+    },
+    {
+      "prompt": "Type it in Spanish: Whenever you come, Hernando is at his table. (to a friend)",
+      "answer": "Vengas cuando vengas, Hernando está en su mesa.",
+      "accept": [],
+      "why": "For time, use *cuando* between the two verbs."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Dices lo que dices, voy a ir.",
+      "right": "Digas lo que digas, voy a ir.",
+      "why": "Almost. \"No matter what\" needs the *que* form, not the ordinary *dices*."
+    },
+    {
+      "wrong": "Digas lo que dices, voy a ir.",
+      "right": "Digas lo que digas, voy a ir.",
+      "why": "Both halves must match: the same verb, the same *que* form, twice."
+    },
+    {
+      "wrong": "Hagas lo que hagas, no le dices nada.",
+      "right": "Hagas lo que hagas, no le digas nada.",
+      "why": "A negative command also takes the *que* form: *no digas*."
+    }
+  ],
+  "personal": "Think of something you have decided and will not change. Say it with *Digas lo que digas,…* or *Pase lo que pase,…*"
+}

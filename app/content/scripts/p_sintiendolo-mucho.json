@@ -1,0 +1,90 @@
+{
+  "node": "p:sintiendolo-mucho",
+  "hook": {
+    "line": "Someone you respect invites you somewhere you cannot go, and a flat *no puedo* feels too cold. Spanish has a few polite phrases that say no and show you mean it.",
+    "es": "Me temo que no voy a poder.",
+    "en": "I'm afraid I won't be able to."
+  },
+  "examples": [
+    { "es": "Me temo que no voy a poder.", "en": "I'm afraid I won't be able to." },
+    { "es": "Me temo que no va a ser posible.", "en": "I'm afraid that won't be possible." },
+    { "es": "Sintiéndolo mucho, no puedo ir al concierto: tengo turno en el café.", "en": "Much as I regret it, I can't go to the concert: I'm on shift at the café." },
+    { "es": "Sintiéndolo mucho, me resulta imposible acompañarte ese día.", "en": "Much as I regret it, it's impossible for me to go with you that day." },
+    { "es": "Me temo que Vale no va a poder venir hoy.", "en": "I'm afraid Vale won't be able to come today." },
+    { "es": "Me resulta imposible aceptar la oferta de Altamira.", "en": "It's impossible for me to accept Altamira's offer." }
+  ],
+  "rule": "Three polite ways to refuse:\n\n*Me temo que* + a normal verb: \"I'm afraid that…\". *Me temo que no voy a poder.*\n*Sintiéndolo mucho,* + what you cannot do. It means \"much as I regret it\".\n*Me resulta imposible* + infinitive: \"it's impossible for me to…\".\n\n*Me temo* is not real fear. It is a cushion before bad news. *Sintiéndolo mucho* is a little formal, like a letter.\n\nGive the reason after the refusal (*tengo turno en el café*). A bare no still sounds cold, even with the polite frame.",
+  "smallPrint": "Teachers call *sintiéndolo mucho* a gerund used as a concessive phrase.",
+  "readAndPick": [
+    { "es": "Sintiéndolo mucho, no puedo ir al concierto: tengo turno en el café.", "options": ["Much as I regret it, I can't go to the concert: I'm on shift at the café.", "I'm so glad I can go to the concert: I'm on shift at the café.", "They regret that I can't go to the concert: I'm on shift at the café."], "answer": 0 },
+    { "es": "Me temo que no voy a poder.", "options": ["I'm afraid you won't be able to.", "I'm afraid I will be able to.", "I'm afraid I won't be able to."], "answer": 2 },
+    { "es": "Me temo que no va a ser posible.", "options": ["I'm sure that will be possible.", "I'm afraid that won't be possible.", "I'm afraid I'm not going."], "answer": 1 },
+    { "es": "Me temo que Vale no va a poder venir hoy.", "options": ["I'm afraid Vale won't be able to come today.", "Vale is afraid she won't come today.", "I'm afraid I can't come today, Vale."], "answer": 0 },
+    { "es": "Me resulta imposible aceptar la oferta de Altamira.", "options": ["Altamira finds it impossible to accept my offer.", "I accepted the impossible offer from Altamira.", "It's impossible for me to accept Altamira's offer."], "answer": 2 },
+    { "es": "Sintiéndolo mucho, me resulta imposible acompañarte ese día.", "options": ["Much as I regret it, it's impossible for me to go with him that day.", "Much as I regret it, it's impossible for me to go with you that day.", "Much as I regret it, it was impossible for me to go with you that day."], "answer": 1 },
+    { "es": "Me temo que ya no queda tinto.", "options": ["I'm afraid you don't want coffee.", "I'd love for some coffee to be left.", "I'm afraid there's no coffee left."], "answer": 2 },
+    { "es": "Me temo que no vamos a poder vender el café.", "options": ["I'm afraid we won't be able to sell the café.", "I'm afraid I won't be able to sell the café.", "I'm afraid they won't be able to sell the café."], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *Me temo* or *Sintiéndolo mucho*, then type the whole sentence: ___ que no voy a poder.",
+      "answer": "Me temo que no voy a poder.",
+      "accept": [],
+      "why": "Only *me temo* is followed by *que*."
+    },
+    {
+      "prompt": "Type it in Spanish: I'm afraid that won't be possible.",
+      "answer": "Me temo que no va a ser posible.",
+      "accept": [],
+      "why": "*Me temo que* opens, then a regular future with *ir a*."
+    },
+    {
+      "prompt": "Type it in Spanish: I'm afraid Vale won't be able to come today.",
+      "answer": "Me temo que Vale no va a poder venir hoy.",
+      "accept": [],
+      "why": "The *no* sits before *va a poder*, as in any sentence."
+    },
+    {
+      "prompt": "Type it in Spanish: Much as I regret it, I can't go to the concert: I'm on shift at the café.",
+      "answer": "Sintiéndolo mucho, no puedo ir al concierto: tengo turno en el café.",
+      "accept": [],
+      "why": "The reason after the colon makes the refusal feel real."
+    },
+    {
+      "prompt": "Type it in Spanish: It's impossible for me to accept Altamira's offer.",
+      "answer": "Me resulta imposible aceptar la oferta de Altamira.",
+      "accept": [],
+      "why": "*Me resulta imposible* is followed by an infinitive."
+    },
+    {
+      "prompt": "Make it about *we*: *Me temo que no voy a poder.* becomes: I'm afraid we won't be able to.",
+      "answer": "Me temo que no vamos a poder.",
+      "accept": [],
+      "why": "*Me temo* stays; only the verb after *que* changes to *vamos*."
+    },
+    {
+      "prompt": "Type it in Spanish, to a friend: Much as I regret it, it's impossible for me to go with you that day.",
+      "answer": "Sintiéndolo mucho, me resulta imposible acompañarte ese día.",
+      "accept": [],
+      "why": "*Acompañarte* has *te* attached, because the friend is *tú*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Tengo miedo que no voy a poder.",
+      "right": "Me temo que no voy a poder.",
+      "why": "Almost. *Tengo miedo* is real fear; *me temo que* is the polite \"I'm afraid\"."
+    },
+    {
+      "wrong": "Sintiendo mucho, me resulta imposible acompañarte.",
+      "right": "Sintiéndolo mucho, me resulta imposible acompañarte.",
+      "why": "You need the little *lo* (\"it\") on the end, and the accent that goes with it."
+    },
+    {
+      "wrong": "Sintiéndolo mucho, no puedo.",
+      "right": "Sintiéndolo mucho, no puedo ir: tengo turno en el café.",
+      "why": "A bare no still sounds cold, so add the real reason."
+    }
+  ],
+  "personal": "Think of an invitation you would turn down. Refuse it with *Me temo que no…* or *Sintiéndolo mucho,…* and give a reason."
+}

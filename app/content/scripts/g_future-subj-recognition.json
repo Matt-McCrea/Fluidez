@@ -1,0 +1,84 @@
+{
+  "node": "g:future-subj-recognition",
+  "hook": {
+    "line": "Altamira's letter is full of verbs that end in *-re* and nobody speaks that way. Mariana says you will meet them in contracts and in old proverbs, and you only need to read them, never say them.",
+    "es": "Si así fuere, se notificará a las partes.",
+    "en": "If that is the case, the parties will be notified."
+  },
+  "examples": [
+    { "es": "El que no cumpliere será sancionado.", "en": "Whoever fails to comply will be penalised." },
+    { "es": "Adonde fueres, haz lo que vieres.", "en": "Wherever you go, do what you see." },
+    { "es": "Si así fuere, se notificará a las partes.", "en": "If that is the case, the parties will be notified." },
+    { "es": "Quien rompiere el contrato pagará una multa.", "en": "Whoever breaks the contract will pay a fine." },
+    { "es": "Quienes llegaren tarde no entrarán.", "en": "Those who arrive late will not be let in." },
+    { "es": "Si ocurriere algún daño, el propietario responderá.", "en": "If any damage occurs, the owner will answer for it." }
+  ],
+  "rule": "The old \"future\" of the subjunctive talks about something that might happen later: *si así fuere* (\"if that should be so\"), *el que no cumpliere* (\"whoever should fail to comply\").\n\nYou can spot it by the ending: *-re*, *-res*, *-ren*. Take the *ellos* past, drop *-ron*, add *-re*: *cumplieron* gives *cumpliere*, *fueron* gives *fuere*, *vieron* gives *viere*.\n\nToday it lives in laws, contracts and proverbs. In everyday Spanish people say the same thing with the present: *el que no cumpla*, *si es así*.\n\nSo: read it, understand it as \"if or whoever, later\", and never use it yourself.",
+  "smallPrint": "Teachers call this the future subjunctive (*futuro de subjuntivo*).",
+  "readAndPick": [
+    { "es": "Adonde fueres, haz lo que vieres.", "options": ["Wherever he goes, do what you see.", "Wherever you go, do what you see.", "Wherever I go, do what you see."], "answer": 1 },
+    { "es": "Si así fuere, se notificará a las partes.", "options": ["That is how it was, so the parties were told.", "If that is the case, the parties will be notified.", "If that had been the case, the parties would be notified."], "answer": 1 },
+    { "es": "El que no cumpliere será sancionado.", "options": ["Whoever failed to comply was penalised.", "Whoever complied will be rewarded.", "Whoever fails to comply will be penalised."], "answer": 2 },
+    { "es": "Quien rompiere el contrato pagará una multa.", "options": ["Whoever breaks the contract will pay a fine.", "Whoever broke the contract paid a fine.", "Whoever pays a fine breaks the contract."], "answer": 0 },
+    { "es": "Quienes llegaren tarde no entrarán.", "options": ["Those who arrived late did not go in.", "Those who arrive late will not be let in.", "Those who do not go in will arrive late."], "answer": 1 },
+    { "es": "Si ocurriere algún daño, el propietario responderá.", "options": ["The damage occurred, so the owner answered.", "The owner answers because damage occurs.", "If any damage occurs, the owner will answer for it."], "answer": 2 },
+    { "es": "Adonde fueren ellos, iré yo.", "options": ["Wherever they go, I'll go.", "Wherever I go, they'll go.", "They went where I went."], "answer": 0 },
+    { "es": "Haz lo que vieres.", "options": ["I did what he saw.", "Do what he sees.", "Do whatever you see."], "answer": 2 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Say it the everyday way: *El que no cumpliere será sancionado* becomes: Whoever fails to comply will be penalised. Use *cumpla*.",
+      "answer": "El que no cumpla será sancionado.",
+      "accept": ["Quien no cumpla será sancionado."],
+      "why": "Everyday Spanish swaps the old *-re* for the present *que* form, *cumpla*."
+    },
+    {
+      "prompt": "Say it the everyday way: *Si así fuere, se notificará a las partes* becomes: If that is the case, the parties will be notified. Use *es*.",
+      "answer": "Si es así, se notificará a las partes.",
+      "accept": [],
+      "why": "After *si*, everyday Spanish uses the plain present, *es*."
+    },
+    {
+      "prompt": "Choose *rompa* or *rompiere*, the one a contract would use, then type the whole sentence: Quien ___ el contrato pagará una multa.",
+      "answer": "Quien rompiere el contrato pagará una multa.",
+      "accept": [],
+      "why": "Contracts use the *-re* form, so *rompiere* belongs here."
+    },
+    {
+      "prompt": "Type the proverb in Spanish: Wherever you go, do what you see.",
+      "answer": "Adonde fueres, haz lo que vieres.",
+      "accept": [],
+      "why": "The proverb keeps both old forms, *fueres* and *vieres*."
+    },
+    {
+      "prompt": "Say it the everyday way: *Si ocurriere algún daño, el propietario responderá* becomes: If any damage occurs, the owner will answer for it. Use *ocurre*.",
+      "answer": "Si ocurre algún daño, el propietario responderá.",
+      "accept": [],
+      "why": "The plain present *ocurre* says the same thing in everyday Spanish."
+    },
+    {
+      "prompt": "Say it the everyday way: *Quienes llegaren tarde no entrarán* becomes: Those who arrive late will not be let in. Use *lleguen*.",
+      "answer": "Quienes lleguen tarde no entrarán.",
+      "accept": [],
+      "why": "The *-ren* ending turns into the present *que* form, *lleguen*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El que no cumpliere fue sancionado.",
+      "right": "El que no cumpliere será sancionado.",
+      "why": "Almost. This form looks ahead, so what follows is in the future."
+    },
+    {
+      "wrong": "Adonde fuiste, haz lo que viste.",
+      "right": "Adonde fueres, haz lo que vieres.",
+      "why": "*Fueres* is not the past *fuiste*: it means \"wherever you may go\"."
+    },
+    {
+      "wrong": "Si fuere tarde, me voy.",
+      "right": "Si es tarde, me voy.",
+      "why": "No one talks this way. In conversation, use the plain present."
+    }
+  ],
+  "personal": "Think of a rule in your house or your job. Say it in everyday Spanish with *el que no…* or *quien no…*, the way you would instead of the legal *-re* form."
+}
