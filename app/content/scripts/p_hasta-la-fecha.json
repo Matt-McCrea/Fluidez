@@ -1,0 +1,186 @@
+{
+  "node": "p:hasta-la-fecha",
+  "hook": {
+    "line": "News reports and official letters love to say \"so far\" in a serious way. *Hasta la fecha* tells you the situation stands as of today, and it leaves the door open for change.",
+    "es": "Hasta el momento Altamira no ha dicho nada.",
+    "en": "So far Altamira hasn't said anything."
+  },
+  "examples": [
+    {
+      "es": "Hasta la fecha no se ha encontrado al responsable.",
+      "en": "To date, the person responsible has not been found."
+    },
+    {
+      "es": "Hasta el momento no hay heridos.",
+      "en": "So far there are no casualties."
+    },
+    {
+      "es": "De momento seguimos igual.",
+      "en": "For now, we're carrying on as before."
+    },
+    {
+      "es": "Hasta la fecha nadie ha firmado el contrato.",
+      "en": "To date nobody has signed the contract."
+    },
+    {
+      "es": "Hasta el momento Altamira no ha dicho nada.",
+      "en": "So far Altamira hasn't said anything."
+    },
+    {
+      "es": "Hasta la fecha no he recibido respuesta.",
+      "en": "To date I haven't received a reply."
+    }
+  ],
+  "rule": "*Hasta la fecha* and *hasta el momento* mean \"up to now\". They sound formal, like news or official letters.\n\nThey go with the *he / ha* past: *no se ha encontrado*, *no ha dicho nada*. The point is that it still stands today.\n\n*De momento* means \"for now\" and is more casual. It goes with the present: *De momento seguimos igual.*\n\nNote the little words: *la fecha*, *el momento*, never swapped.",
+  "smallPrint": "Teachers call these temporal adverbials: phrases that tell you up to which point in time something is true.",
+  "readAndPick": [
+    {
+      "es": "Hasta el momento Altamira no ha dicho nada.",
+      "options": [
+        "Altamira said nothing at that moment.",
+        "So far Altamira hasn't said anything.",
+        "Altamira will say nothing."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hasta la fecha nadie ha firmado el contrato.",
+      "options": [
+        "To date nobody has signed the contract.",
+        "Nobody signed the contract on that date.",
+        "Nobody will sign the contract."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "De momento seguimos igual.",
+      "options": [
+        "We stayed the same last time.",
+        "We will stay the same forever.",
+        "For now, we're carrying on as before."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Hasta el momento no hay heridos.",
+      "options": [
+        "Nobody was injured at that moment.",
+        "So far there are no casualties.",
+        "There will be no casualties."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hasta la fecha no he recibido respuesta.",
+      "options": [
+        "To date I haven't received a reply.",
+        "I never received a reply.",
+        "I will not receive a reply."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hasta la fecha no se ha encontrado al responsable.",
+      "options": [
+        "The person responsible was found on that date.",
+        "To date, the person responsible has not been found.",
+        "The person responsible will be found."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Hay noticias hasta el momento?",
+      "options": [
+        "Were there any news at that moment?",
+        "Will there be news?",
+        "Is there any news so far?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Hasta la fecha el café sigue abierto.",
+      "options": [
+        "To date the café is still open.",
+        "The café opened on that date.",
+        "The café is closed today."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Hasta ___ fecha nadie ha firmado el contrato.* (*la* or *el*) To date nobody has signed the contract.",
+      "answer": "Hasta la fecha nadie ha firmado el contrato.",
+      "accept": [
+        "Hasta la fecha, nadie ha firmado el contrato."
+      ],
+      "why": "*Fecha* takes *la*; it is *hasta la fecha*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Hasta el momento Altamira no ___ dicho nada.* (*ha* or *dijo*) So far Altamira hasn't said anything.",
+      "answer": "Hasta el momento Altamira no ha dicho nada.",
+      "accept": [
+        "Hasta el momento, Altamira no ha dicho nada."
+      ],
+      "why": "\"So far\" looks back from today, so the *ha dicho* past fits."
+    },
+    {
+      "prompt": "Say: So far there are no casualties.",
+      "answer": "Hasta el momento no hay heridos.",
+      "accept": [
+        "Hasta el momento, no hay heridos."
+      ],
+      "why": "With \"so far\" the present *hay* simply states how things stand now."
+    },
+    {
+      "prompt": "Say: To date I haven't received a reply.",
+      "answer": "Hasta la fecha no he recibido respuesta.",
+      "accept": [
+        "Hasta la fecha, no he recibido respuesta."
+      ],
+      "why": "*No he recibido* is the \"haven't\" past."
+    },
+    {
+      "prompt": "Say: For now, we're carrying on as before.",
+      "answer": "De momento seguimos igual.",
+      "accept": [
+        "De momento, seguimos igual."
+      ],
+      "why": "*De momento* is the casual \"for now\"."
+    },
+    {
+      "prompt": "Change it to the casual one: *Hasta el momento no hay noticias.* (say \"for now\")",
+      "answer": "De momento no hay noticias.",
+      "accept": [
+        "De momento, no hay noticias."
+      ],
+      "why": "Casual \"for now\" is *de momento*, and the rest stays."
+    },
+    {
+      "prompt": "Make it about nobody: *Hasta la fecha el dueño ha firmado el contrato.*",
+      "answer": "Hasta la fecha nadie ha firmado el contrato.",
+      "accept": [
+        "Hasta la fecha, nadie ha firmado el contrato."
+      ],
+      "why": "*Nadie* replaces the subject, and no extra *no* is needed before the verb."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Hasta la momento no hay heridos.",
+      "right": "Hasta el momento no hay heridos.",
+      "why": "Almost. *Momento* is masculine, so it is *el momento*."
+    },
+    {
+      "wrong": "Hasta fecha no se ha encontrado al responsable.",
+      "right": "Hasta la fecha no se ha encontrado al responsable.",
+      "why": "Almost. English drops the article (\"to date\"), but Spanish keeps *la*."
+    },
+    {
+      "wrong": "En el momento seguimos igual.",
+      "right": "De momento seguimos igual.",
+      "why": "Almost. For \"for now\", Spanish says *de momento*."
+    }
+  ],
+  "personal": "Think of something that has not happened yet in your life or your week. Say it: *Hasta la fecha no he…*."
+}

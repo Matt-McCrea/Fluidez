@@ -1,0 +1,178 @@
+{
+  "node": "p:en-apariencia",
+  "hook": {
+    "line": "Everyone in La Candelaria has learned that things are not always what they look like. *En apariencia* lets you describe the surface and quietly say you are not sure about what is underneath.",
+    "es": "En apariencia el café va bien, pero debe mucha plata.",
+    "en": "On the surface the café is doing well, but it owes a lot of money."
+  },
+  "examples": [
+    {
+      "es": "En apariencia todo iba bien.",
+      "en": "On the surface, everything was going well."
+    },
+    {
+      "es": "En apariencia el café va bien, pero debe mucha plata.",
+      "en": "On the surface the café is doing well, but it owes a lot of money."
+    },
+    {
+      "es": "En apariencia el contrato es justo, pero tiene trampa.",
+      "en": "On the surface the contract is fair, but it has a catch."
+    },
+    {
+      "es": "En apariencia no pasó nada.",
+      "en": "On the surface, nothing happened."
+    },
+    {
+      "es": "Tomás tiene cara de no haber dormido.",
+      "en": "Tomás looks like he hasn't slept."
+    },
+    {
+      "es": "Tiene toda la pinta de ser un malentendido.",
+      "en": "It has every sign of being a misunderstanding."
+    }
+  ],
+  "rule": "*En apariencia* describes how things look on the surface, and it hints that the truth may differ. It usually opens the sentence and often waits for a *pero*.\n\nTo say someone or something gives that impression, use:\n*tiene cara de* + infinitive: *Tiene cara de no haber dormido.*\n*tiene (toda) la pinta de* + infinitive: *Tiene toda la pinta de ser un malentendido.*\n\nThe first one is for people's faces; the second works for any situation. Spanish says *en apariencia*, with *en* and no article.",
+  "smallPrint": "Teachers call *en apariencia* a sentence adverb: it comments on the whole sentence, not on one word.",
+  "readAndPick": [
+    {
+      "es": "En apariencia todo iba bien.",
+      "options": [
+        "Everything was going well, I checked it myself.",
+        "Everything went badly in the end.",
+        "On the surface, everything was going well."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tomás tiene cara de no haber dormido.",
+      "options": [
+        "Tomás looks like he hasn't slept.",
+        "Tomás has slept a lot.",
+        "Tomás is not going to sleep."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tiene toda la pinta de ser un malentendido.",
+      "options": [
+        "It was a misunderstanding in the end.",
+        "It has every sign of being a misunderstanding.",
+        "It is certainly a misunderstanding."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "En apariencia el contrato es justo, pero tiene trampa.",
+      "options": [
+        "The contract is unfair, but it looks fair.",
+        "The contract is fair and has no catch.",
+        "On the surface the contract is fair, but it has a catch."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Vale tiene cara de estar feliz.",
+      "options": [
+        "Vale looks happy.",
+        "Vale told me she is happy.",
+        "Vale will be happy."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "En apariencia no pasó nada.",
+      "options": [
+        "Nothing happened, and I am sure of it.",
+        "On the surface, nothing happened.",
+        "Nothing seems to be happening."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Don Hernando tiene cara de estar enojado.",
+      "options": [
+        "Don Hernando got angry.",
+        "Don Hernando told us he is angry.",
+        "Don Hernando looks angry."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El plan tiene pinta de ser una trampa.",
+      "options": [
+        "The plan was a trap.",
+        "The plan looks like a trap.",
+        "The plan is not a trap."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *___ apariencia todo iba bien.* (*En* or *A*) On the surface, everything was going well.",
+      "answer": "En apariencia todo iba bien.",
+      "accept": [
+        "En apariencia, todo iba bien."
+      ],
+      "why": "It is *en apariencia*, with *en*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Tomás ___ cara de no haber dormido.* (*tiene* or *es*) Tomás looks like he hasn't slept.",
+      "answer": "Tomás tiene cara de no haber dormido.",
+      "accept": [],
+      "why": "Looking like something is *tener cara de*, not *ser*."
+    },
+    {
+      "prompt": "Say: On the surface, nothing happened.",
+      "answer": "En apariencia no pasó nada.",
+      "accept": [
+        "En apariencia, no pasó nada."
+      ],
+      "why": "*En apariencia* opens the sentence and the rest stays normal."
+    },
+    {
+      "prompt": "Say: On the surface the contract is fair, but it has a catch.",
+      "answer": "En apariencia el contrato es justo, pero tiene trampa.",
+      "accept": [
+        "En apariencia, el contrato es justo, pero tiene trampa."
+      ],
+      "why": "The surface comes first, then *pero* gives what is underneath."
+    },
+    {
+      "prompt": "Say about Vale: She looks happy.",
+      "answer": "Vale tiene cara de estar feliz.",
+      "accept": [],
+      "why": "*Tener cara de* is followed by an infinitive like *estar*."
+    },
+    {
+      "prompt": "Change it to be about Don Hernando: *Tomás tiene cara de no haber dormido.*",
+      "answer": "Don Hernando tiene cara de no haber dormido.",
+      "accept": [],
+      "why": "Only the person changes; *tiene cara de* stays."
+    },
+    {
+      "prompt": "Make it negative: *Tiene pinta de ser un buen negocio.*",
+      "answer": "No tiene pinta de ser un buen negocio.",
+      "accept": [],
+      "why": "*No* goes in front of *tiene*, as with any verb."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "En la apariencia todo iba bien.",
+      "right": "En apariencia todo iba bien.",
+      "why": "Almost. This set phrase has no article."
+    },
+    {
+      "wrong": "Tomás tiene cara que no durmió.",
+      "right": "Tomás tiene cara de no haber dormido.",
+      "why": "Almost. After *cara de* comes an infinitive, not a *que* clause."
+    },
+    {
+      "wrong": "Por apariencia todo iba bien.",
+      "right": "En apariencia todo iba bien.",
+      "why": "Almost. English says \"on the surface\", and Spanish uses *en*."
+    }
+  ],
+  "personal": "Think of something that looked fine at first and turned out differently. Say it: *En apariencia… pero…*."
+}

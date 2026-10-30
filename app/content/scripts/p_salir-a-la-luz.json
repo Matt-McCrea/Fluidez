@@ -1,0 +1,178 @@
+{
+  "node": "p:salir-a-la-luz",
+  "hook": {
+    "line": "Every neighbourhood has secrets, and in the café you will hear how they come out. *Salir a la luz* is the phrase for a hidden thing becoming public.",
+    "es": "El nombre del dueño salió a la luz ayer.",
+    "en": "The owner's name came to light yesterday."
+  },
+  "examples": [
+    {
+      "es": "La verdad salió a la luz años después.",
+      "en": "The truth came to light years later."
+    },
+    {
+      "es": "El periódico sacó a la luz los contratos.",
+      "en": "The newspaper brought the contracts to light."
+    },
+    {
+      "es": "El nombre del dueño salió a la luz ayer.",
+      "en": "The owner's name came to light yesterday."
+    },
+    {
+      "es": "Mariana sacó a la luz el escándalo del barrio.",
+      "en": "Mariana brought the neighbourhood scandal to light."
+    },
+    {
+      "es": "Nadie quería que el secreto saliera a la luz.",
+      "en": "Nobody wanted the secret to come to light."
+    },
+    {
+      "es": "¿Cuándo salió a la luz el contrato?",
+      "en": "When did the contract come to light?"
+    }
+  ],
+  "rule": "For something hidden that becomes public, Spanish uses \"the light\":\n*salir a la luz* = to come to light. The secret is the subject: *La verdad salió a la luz.*\n*sacar a la luz* = to bring to light. Someone does it: *El periódico sacó a la luz los contratos.*\n\nBoth verbs change like normal: *salió*, *sacó*, *saliera*. The small words *a la luz* never change.\n\nCareful: *dar a luz* is something else. It means to give birth.",
+  "smallPrint": "Teachers call *salir a la luz* an idiomatic expression: the meaning belongs to the whole phrase, not to its words.",
+  "readAndPick": [
+    {
+      "es": "El escándalo salió a la luz el lunes.",
+      "options": [
+        "Someone exposed the scandal on Monday.",
+        "The scandal came out on Monday.",
+        "The scandal will come out on Monday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mariana sacó a la luz el escándalo del barrio.",
+      "options": [
+        "Mariana exposed the neighbourhood scandal.",
+        "The neighbourhood scandal came out on its own.",
+        "Mariana hid the neighbourhood scandal."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La verdad salió a la luz años después.",
+      "options": [
+        "Someone exposed the truth years later.",
+        "The truth was hidden for years.",
+        "The truth came to light years later."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El periódico sacó a la luz los contratos.",
+      "options": [
+        "The contracts came to light in the newspaper.",
+        "The newspaper brought the contracts to light.",
+        "The newspaper lost the contracts."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nadie quería que el secreto saliera a la luz.",
+      "options": [
+        "Nobody wanted the secret to come to light.",
+        "Nobody told the secret.",
+        "Nobody knew that the secret was out."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Cuándo salió a la luz el contrato?",
+      "options": [
+        "When will the contract come to light?",
+        "When did the contract come to light?",
+        "Who brought the contract to light?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El nombre del dueño salió a la luz ayer.",
+      "options": [
+        "Someone revealed the owner's name yesterday.",
+        "The owner's name will come out tomorrow.",
+        "The owner's name came to light yesterday."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Si sale a la luz, Altamira tendrá problemas.",
+      "options": [
+        "If it comes to light, Altamira will have problems.",
+        "Altamira had problems when it came to light.",
+        "If Altamira exposes it, there will be problems."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *La verdad ___ a la luz años después.* (*salió* or *sacó*) The truth came to light years later.",
+      "answer": "La verdad salió a la luz años después.",
+      "accept": [],
+      "why": "The truth came out by itself, so it is *salió*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *El periódico ___ a la luz los contratos.* (*sacó* or *salió*) The newspaper brought the contracts to light.",
+      "answer": "El periódico sacó a la luz los contratos.",
+      "accept": [],
+      "why": "Someone did it, and they brought something out: *sacó*."
+    },
+    {
+      "prompt": "Say: The owner's name came to light yesterday.",
+      "answer": "El nombre del dueño salió a la luz ayer.",
+      "accept": [
+        "Ayer salió a la luz el nombre del dueño."
+      ],
+      "why": "The name is what comes out, so it is the subject of *salió*."
+    },
+    {
+      "prompt": "Say: Mariana brought the neighbourhood scandal to light.",
+      "answer": "Mariana sacó a la luz el escándalo del barrio.",
+      "accept": [],
+      "why": "Mariana did it, so *sacó* with the scandal as the object."
+    },
+    {
+      "prompt": "Say: When did the contract come to light?",
+      "answer": "¿Cuándo salió a la luz el contrato?",
+      "accept": [
+        "¿Cuándo salió el contrato a la luz?"
+      ],
+      "why": "A question word goes first and the verb follows."
+    },
+    {
+      "prompt": "Change it so the contracts came to light by themselves: *El periódico sacó a la luz los contratos.*",
+      "answer": "Los contratos salieron a la luz.",
+      "accept": [
+        "Los contratos salieron a la luz."
+      ],
+      "why": "Now the contracts are the subject, so *salieron* matches *los contratos*."
+    },
+    {
+      "prompt": "Change it to say the truth did not come to light: *La verdad salió a la luz.*",
+      "answer": "La verdad no salió a la luz.",
+      "accept": [],
+      "why": "*No* goes in front of the verb."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La verdad salió a luz años después.",
+      "right": "La verdad salió a la luz años después.",
+      "why": "Almost. You need *la*: without it *a luz* sounds like giving birth."
+    },
+    {
+      "wrong": "Mariana salió a la luz el escándalo.",
+      "right": "Mariana sacó a la luz el escándalo.",
+      "why": "Almost. When someone brings a thing out, Spanish uses *sacar*, not *salir*."
+    },
+    {
+      "wrong": "El escándalo sacó a la luz el lunes.",
+      "right": "El escándalo salió a la luz el lunes.",
+      "why": "Almost. A scandal does not bring anything out; it comes out, so *salió*."
+    }
+  ],
+  "personal": "Think of something that came out in the news or among friends. Say it: *… salió a la luz…*."
+}

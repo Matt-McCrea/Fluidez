@@ -1,0 +1,174 @@
+{
+  "node": "p:ponerse-al-tanto",
+  "hook": {
+    "line": "After a few days away, Tomás always asks the same thing: what did I miss? Spanish has a handful of phrases for being up to date, and they all share the idea of keeping pace.",
+    "es": "¿Estás al tanto de lo que pasó?",
+    "en": "Are you up to speed on what happened?"
+  },
+  "examples": [
+    {
+      "es": "Tengo que ponerme al día con las noticias.",
+      "en": "I have to catch up on the news."
+    },
+    {
+      "es": "¿Estás al tanto de lo que pasó?",
+      "en": "Are you up to speed on what happened?"
+    },
+    {
+      "es": "Te mantengo al corriente.",
+      "en": "I'll keep you posted."
+    },
+    {
+      "es": "Mariana me puso al tanto de todo.",
+      "en": "Mariana brought me up to speed on everything."
+    },
+    {
+      "es": "No estoy al tanto de lo que dijo el senador.",
+      "en": "I'm not up to speed on what the senator said."
+    },
+    {
+      "es": "Vale nos puso al día con las ventas.",
+      "en": "Vale caught us up on sales."
+    }
+  ],
+  "rule": "Spanish uses a few small phrases for being up to date:\n*ponerse al día con* = to catch up on something.\n*estar al tanto de* = to be up to speed on something.\n*poner a alguien al tanto de* = to fill someone in.\n*mantener a alguien al corriente* = to keep someone posted.\n\nThe person goes before the verb (*me puso*, *te mantengo*). After *al tanto* the topic follows with *de*; after *al día* it follows with *con*. The phrases themselves do not change.",
+  "smallPrint": "Teachers call these fixed collocations: words that natives always put together, so you learn the whole block.",
+  "readAndPick": [
+    {
+      "es": "Mariana me puso al tanto de todo.",
+      "options": [
+        "I brought Mariana up to speed on everything.",
+        "Mariana brought me up to speed on everything.",
+        "Mariana is up to speed on everything."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Te mantengo al corriente.",
+      "options": [
+        "You keep me posted.",
+        "I'll keep you posted.",
+        "He keeps you posted."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No estoy al tanto de lo que dijo el senador.",
+      "options": [
+        "I'm not up to speed on what the senator said.",
+        "I'm up to speed on what the senator said.",
+        "The senator isn't up to speed on what I said."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale nos puso al día con las ventas.",
+      "options": [
+        "Vale caught me up on sales.",
+        "We caught Vale up on sales.",
+        "Vale caught us up on sales."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Estás al tanto de lo que pasó?",
+      "options": [
+        "Are you up to speed on what happened?",
+        "Is he up to speed on what happened?",
+        "Am I up to speed on what happened?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Me pones al tanto?",
+      "options": [
+        "Are you up to speed?",
+        "Will you fill me in?",
+        "Can I fill you in?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tengo que ponerme al día con las noticias.",
+      "options": [
+        "I have to catch up on the news.",
+        "I have to tell you the news.",
+        "I have already caught up on the news."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Quiero estar al tanto de la reunión.",
+      "options": [
+        "I want to attend the meeting.",
+        "I want to cancel the meeting.",
+        "I want to be up to speed on the meeting."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *¿Estás ___ tanto de lo que pasó?* (*al* or *en el*) Are you up to speed on what happened?",
+      "answer": "¿Estás al tanto de lo que pasó?",
+      "accept": [],
+      "why": "It is always *al tanto*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Mariana me puso al tanto ___ todo.* (*de* or *en*) Mariana brought me up to speed on everything.",
+      "answer": "Mariana me puso al tanto de todo.",
+      "accept": [],
+      "why": "After *al tanto* the topic comes with *de*."
+    },
+    {
+      "prompt": "Say: I'll keep you posted. (to a friend)",
+      "answer": "Te mantengo al corriente.",
+      "accept": [
+        "Te mantendré al corriente."
+      ],
+      "why": "*Te* is you, and *mantengo* is I keep."
+    },
+    {
+      "prompt": "Say: I have to catch up on the news.",
+      "answer": "Tengo que ponerme al día con las noticias.",
+      "accept": [],
+      "why": "*Me* goes on the end of the infinitive, and *con* gives the topic."
+    },
+    {
+      "prompt": "Say: I'm not up to speed on what the senator said.",
+      "answer": "No estoy al tanto de lo que dijo el senador.",
+      "accept": [],
+      "why": "*No* goes in front of *estoy*."
+    },
+    {
+      "prompt": "Say: Vale caught us up on sales.",
+      "answer": "Vale nos puso al día con las ventas.",
+      "accept": [],
+      "why": "*Nos* is us, placed before the verb."
+    },
+    {
+      "prompt": "Change it to ask a friend: *Estoy al tanto de la situación.*",
+      "answer": "¿Estás al tanto de la situación?",
+      "accept": [],
+      "why": "Only the verb changes to *estás*, and the question marks frame it."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Estoy en el tanto de la situación.",
+      "right": "Estoy al tanto de la situación.",
+      "why": "Almost. The phrase is *al tanto*, one block."
+    },
+    {
+      "wrong": "Estoy al tanto la situación.",
+      "right": "Estoy al tanto de la situación.",
+      "why": "Almost. You need *de* before the topic."
+    },
+    {
+      "wrong": "Te mantengo en corriente.",
+      "right": "Te mantengo al corriente.",
+      "why": "Almost. It is *al corriente*, not *en*."
+    }
+  ],
+  "personal": "Think of a subject you want to be up to speed on this week. Say it: *Quiero estar al tanto de…*."
+}

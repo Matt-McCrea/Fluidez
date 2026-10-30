@@ -1,0 +1,176 @@
+{
+  "node": "p:sostener-que",
+  "hook": {
+    "line": "In the news and at the café, people repeat what others claim without agreeing. *Sostener que* lets you report someone's position while leaving the judgement to the listener.",
+    "es": "El alcalde sostiene que nunca firmó el contrato.",
+    "en": "The mayor maintains that he never signed the contract."
+  },
+  "examples": [
+    {
+      "es": "El alcalde sostiene que nunca firmó el contrato.",
+      "en": "The mayor maintains that he never signed the contract."
+    },
+    {
+      "es": "Mantuvo su versión pese a las pruebas.",
+      "en": "He stuck to his story despite the evidence."
+    },
+    {
+      "es": "El dueño de Altamira sostiene que no sabía nada.",
+      "en": "The owner of Altamira maintains that he knew nothing."
+    },
+    {
+      "es": "Mariana sostiene que tiene pruebas.",
+      "en": "Mariana maintains that she has evidence."
+    },
+    {
+      "es": "Don Hernando sostiene que vio al dueño.",
+      "en": "Don Hernando maintains that he saw the owner."
+    },
+    {
+      "es": "Ella mantuvo su versión hasta el final.",
+      "en": "She stuck to her story to the end."
+    }
+  ],
+  "rule": "*Sostener que* means \"to maintain that\": someone insists on a claim, and you pass it on without vouching for it.\n\nIt is followed by the normal verb: *sostiene que nunca firmó*, *sostiene que tiene pruebas*.\nIt changes like *tener*: *sostengo*, *sostienes*, *sostiene*, *sostenemos*, *sostienen*.\n\nTo say someone stuck to their story, use *mantener su versión*: *Mantuvo su versión pese a las pruebas.*\n\nNo *de* before *que*: never *sostiene de que*.",
+  "smallPrint": "Teachers call this a reporting verb: it presents what someone else says and shows that you are only reporting.",
+  "readAndPick": [
+    {
+      "es": "El alcalde sostiene que nunca firmó el contrato.",
+      "options": [
+        "The mayor maintains that he never signed the contract.",
+        "The mayor never signed the contract, as everyone knows.",
+        "The mayor will never sign the contract."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mariana sostiene que tiene pruebas.",
+      "options": [
+        "Mariana lost the evidence.",
+        "Mariana wants evidence.",
+        "Mariana maintains that she has evidence."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mantuvo su versión pese a las pruebas.",
+      "options": [
+        "He changed his story because of the evidence.",
+        "He stuck to his story despite the evidence.",
+        "He gave the evidence to the police."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Don Hernando sostiene que vio al dueño.",
+      "options": [
+        "Don Hernando maintains that he saw the owner.",
+        "The owner maintains that he saw Don Hernando.",
+        "Don Hernando saw the owner, as I know."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ellos sostienen que el edificio es suyo.",
+      "options": [
+        "He maintains that the building is his.",
+        "They maintain that the building is theirs.",
+        "They maintain that the building was theirs."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Sostengo que el contrato no es válido.",
+      "options": [
+        "He maintains that the contract isn't valid.",
+        "You maintain that the contract isn't valid.",
+        "I maintain that the contract isn't valid."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Ella mantuvo su versión hasta el final.",
+      "options": [
+        "She stuck to her story to the end.",
+        "She will stick to her story to the end.",
+        "She changed her story at the end."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El dueño de Altamira sostiene que no sabía nada.",
+      "options": [
+        "The owner of Altamira knows nothing, I'm sure.",
+        "The owner of Altamira maintains that he knew nothing.",
+        "The owner of Altamira says nobody knew anything."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *El alcalde sostiene ___ nunca firmó el contrato.* (*que* or *de que*) The mayor maintains that he never signed the contract.",
+      "answer": "El alcalde sostiene que nunca firmó el contrato.",
+      "accept": [],
+      "why": "Plain *que* follows the verb, with no *de*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Mariana ___ que tiene pruebas.* (*sostiene* or *sostene*) Mariana maintains that she has evidence.",
+      "answer": "Mariana sostiene que tiene pruebas.",
+      "accept": [],
+      "why": "With *Mariana* the verb ends in *-iene*: *sostiene*."
+    },
+    {
+      "prompt": "Say: Don Hernando maintains that he saw the owner.",
+      "answer": "Don Hernando sostiene que vio al dueño.",
+      "accept": [
+        "Don Hernando sostiene que vio al dueño."
+      ],
+      "why": "*Que* introduces the claim, and the claim keeps its own verb."
+    },
+    {
+      "prompt": "Say: He stuck to his story despite the evidence.",
+      "answer": "Mantuvo su versión pese a las pruebas.",
+      "accept": [],
+      "why": "*Mantener su versión* is the phrase for sticking to a story."
+    },
+    {
+      "prompt": "Say: I maintain that the contract isn't valid.",
+      "answer": "Sostengo que el contrato no es válido.",
+      "accept": [],
+      "why": "*Sostengo* is the *yo* form, like *tengo*."
+    },
+    {
+      "prompt": "Change it to \"they\": *El dueño sostiene que el edificio es suyo.* (use *ellos*)",
+      "answer": "Ellos sostienen que el edificio es suyo.",
+      "accept": [
+        "Ellos sostienen que el edificio es suyo."
+      ],
+      "why": "*Ellos* needs *sostienen*, ending in *-ienen*."
+    },
+    {
+      "prompt": "Change it to \"we\": *Sostengo que el contrato no es válido.*",
+      "answer": "Sostenemos que el contrato no es válido.",
+      "accept": [],
+      "why": "*Nosotros* ends in *-emos*, and the stem has no extra *i*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El alcalde sostiene de que nunca firmó el contrato.",
+      "right": "El alcalde sostiene que nunca firmó el contrato.",
+      "why": "Almost. Spanish does not add *de* before *que* here."
+    },
+    {
+      "wrong": "Mantuvo su versión pese de las pruebas.",
+      "right": "Mantuvo su versión pese a las pruebas.",
+      "why": "Almost. The fixed phrase is *pese a*."
+    },
+    {
+      "wrong": "Sostiene que tener pruebas.",
+      "right": "Sostiene que tiene pruebas.",
+      "why": "Almost. After *que*, the claim needs a verb with its own ending."
+    }
+  ],
+  "personal": "Think of a claim someone made that you are not sure about. Say it: *… sostiene que…*."
+}

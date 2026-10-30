@@ -1,0 +1,172 @@
+{
+  "node": "p:hacer-la-vista-gorda",
+  "hook": {
+    "line": "Sometimes people see exactly what is going on and decide not to. *Hacer la vista gorda* names that choice, and you will hear it whenever someone talks about the authorities.",
+    "es": "Las autoridades hicieron la vista gorda ante los abusos.",
+    "en": "The authorities turned a blind eye to the abuses."
+  },
+  "examples": [
+    {
+      "es": "Las autoridades hicieron la vista gorda ante los abusos.",
+      "en": "The authorities turned a blind eye to the abuses."
+    },
+    {
+      "es": "Prefirió mirar para otro lado.",
+      "en": "She preferred to look the other way."
+    },
+    {
+      "es": "La policía hizo la vista gorda ante el ruido.",
+      "en": "The police turned a blind eye to the noise."
+    },
+    {
+      "es": "No puedo hacer la vista gorda con esto.",
+      "en": "I can't turn a blind eye to this."
+    },
+    {
+      "es": "¿Por qué hiciste la vista gorda?",
+      "en": "Why did you turn a blind eye?"
+    },
+    {
+      "es": "Don Hernando no hace la vista gorda con nadie.",
+      "en": "Don Hernando turns a blind eye to no one."
+    }
+  ],
+  "rule": "*Hacer la vista gorda* means to see something wrong and pretend you did not. It is a choice, never a lack of sight.\n\nOnly *hacer* changes: *hago*, *hizo*, *hicieron*, *hacer*. The rest stays: *la vista gorda*, always *la*, always singular.\n\nTo say what you ignore, use *ante* or *con*: *ante los abusos*, *con esto*.\n\nA second way to say it: *mirar para otro lado*, to look the other way.",
+  "smallPrint": "Teachers call this an idiom: you cannot work out the meaning from the words, so you learn it whole.",
+  "readAndPick": [
+    {
+      "es": "La policía hizo la vista gorda ante el ruido.",
+      "options": [
+        "The police turned a blind eye to the noise.",
+        "The police never heard the noise.",
+        "The police complained about the noise."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No puedo hacer la vista gorda con esto.",
+      "options": [
+        "I can't see this properly.",
+        "I can't turn a blind eye to this.",
+        "I won't be able to do this."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Prefirió mirar para otro lado.",
+      "options": [
+        "She preferred to talk to someone else.",
+        "She preferred to look at the problem.",
+        "She preferred to look the other way."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Las autoridades hicieron la vista gorda ante los abusos.",
+      "options": [
+        "The authorities turned a blind eye to the abuses.",
+        "The authorities stopped the abuses.",
+        "The authorities will turn a blind eye to the abuses."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Por qué hiciste la vista gorda?",
+      "options": [
+        "Why will you turn a blind eye?",
+        "Why did he turn a blind eye?",
+        "Why did you turn a blind eye?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Don Hernando no hace la vista gorda con nadie.",
+      "options": [
+        "Don Hernando turns a blind eye to everyone.",
+        "Don Hernando turns a blind eye to no one.",
+        "Don Hernando can't see anyone."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El alcalde hizo la vista gorda.",
+      "options": [
+        "The mayor turned a blind eye.",
+        "The mayor can't see well.",
+        "The mayor will turn a blind eye."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Muchos hacen la vista gorda cuando les conviene.",
+      "options": [
+        "Many people turn a blind eye when it suits them.",
+        "Many people never see a problem.",
+        "Many people turned a blind eye once."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *El alcalde hizo la ___ gorda.* (*vista* or *vistas*) The mayor turned a blind eye.",
+      "answer": "El alcalde hizo la vista gorda.",
+      "accept": [],
+      "why": "The phrase is always *la vista gorda*, singular."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Las autoridades hicieron la vista gorda ___ los abusos.* (*ante* or *de*) The authorities turned a blind eye to the abuses.",
+      "answer": "Las autoridades hicieron la vista gorda ante los abusos.",
+      "accept": [],
+      "why": "*Ante* introduces what is being ignored."
+    },
+    {
+      "prompt": "Say: The police turned a blind eye to the noise.",
+      "answer": "La policía hizo la vista gorda ante el ruido.",
+      "accept": [],
+      "why": "Only *hacer* changes; *hizo* matches the police."
+    },
+    {
+      "prompt": "Say: I can't turn a blind eye to this.",
+      "answer": "No puedo hacer la vista gorda con esto.",
+      "accept": [],
+      "why": "*Puedo* is followed by the infinitive *hacer*."
+    },
+    {
+      "prompt": "Say to a friend: Why did you turn a blind eye?",
+      "answer": "¿Por qué hiciste la vista gorda?",
+      "accept": [],
+      "why": "*Hiciste* is the *tú* form of the past."
+    },
+    {
+      "prompt": "Change it to say they turned a blind eye: *El alcalde hizo la vista gorda.* (use *los alcaldes*)",
+      "answer": "Los alcaldes hicieron la vista gorda.",
+      "accept": [],
+      "why": "A plural subject needs *hicieron*, but *la vista gorda* stays singular."
+    },
+    {
+      "prompt": "Make it negative: *Don Hernando hace la vista gorda con todos.*",
+      "answer": "Don Hernando no hace la vista gorda con todos.",
+      "accept": [],
+      "why": "*No* goes in front of the verb."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El alcalde hizo las vistas gordas.",
+      "right": "El alcalde hizo la vista gorda.",
+      "why": "Almost. The phrase is fixed: *la vista gorda*, never plural."
+    },
+    {
+      "wrong": "Las autoridades hicieron la vista gorda de los abusos.",
+      "right": "Las autoridades hicieron la vista gorda ante los abusos.",
+      "why": "Almost. English says \"to\", but Spanish uses *ante* (or *con*) here."
+    },
+    {
+      "wrong": "El alcalde hizo el ojo ciego.",
+      "right": "El alcalde hizo la vista gorda.",
+      "why": "Almost. English says \"blind eye\", but Spanish says \"fat sight\": *la vista gorda*."
+    }
+  ],
+  "personal": "Think of a time someone saw something and said nothing. Say it: *… hizo la vista gorda…*."
+}
