@@ -24532,5 +24532,103 @@
     "unit": "u12",
     "theme": "family and travel stories",
     "source": "gen"
+  },
+  {
+    "id": "u12-1022",
+    "es": "¿Llovía cuando saliste?",
+    "en": "Was it raining when you left? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "g:pret-vs-imperfect",
+      "g:preterite-er-ir",
+      "l:llover",
+      "l:salir",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:pret-vs-imperfect",
+      "l:llover"
+    ],
+    "kind": "question",
+    "unit": "u12",
+    "theme": "stories and interruptions",
+    "source": "gen"
+  },
+  {
+    "id": "u12-1023",
+    "es": "¿Cortaste el pan mientras hablaba Vale?",
+    "en": "Did you cut the bread while Vale was talking? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "l:cortar",
+      "l:hablar",
+      "l:pan"
+    ],
+    "targets": [
+      "g:pret-vs-imperfect",
+      "l:cortar"
+    ],
+    "kind": "question",
+    "unit": "u12",
+    "theme": "stories and interruptions",
+    "source": "gen"
+  },
+  {
+    "id": "u12-1024",
+    "es": "¿Estabas en casa cuando llegó el regalo?",
+    "en": "Were you at home when the gift arrived? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "l:casa",
+      "l:estar",
+      "l:llegar",
+      "l:regalo",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:pret-vs-imperfect",
+      "l:regalo"
+    ],
+    "kind": "question",
+    "unit": "u12",
+    "theme": "stories and interruptions",
+    "source": "gen"
+  },
+  {
+    "id": "u12-1025",
+    "es": "¿Qué hacía Simón cuando llegaste?",
+    "en": "What was Simón doing when you arrived? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "g:questions",
+      "l:hacer",
+      "l:llegar",
+      "l:qué",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:pret-vs-imperfect"
+    ],
+    "kind": "question",
+    "unit": "u12",
+    "theme": "stories and interruptions",
+    "source": "gen"
   }
 ]
