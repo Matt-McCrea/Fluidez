@@ -1,0 +1,43 @@
+{
+  "node": "p:te-importaria-inf",
+  "hook": {
+    "line": "Tomás has to leave the café for ten minutes and wants don Hernando to keep an eye on the parrot. In English, \"Would you mind?\" has a trap in the answer: \"No\" means yes. Spanish does the same.",
+    "es": "¿Le importaría cuidar a Simón un rato?",
+    "en": "Would you mind looking after Simón for a while? (formal)"
+  },
+  "examples": [
+    { "es": "¿Te importaría cerrar la ventana?", "en": "Would you mind closing the window? (to a friend)" },
+    { "es": "¿Le importaría esperar un momento?", "en": "Would you mind waiting a moment? (formal)" },
+    { "es": "¿Les importaría esperar afuera?", "en": "Would you all mind waiting outside?" },
+    { "es": "¿Te importaría ayudarme con estas cajas?", "en": "Would you mind helping me with these boxes? (to a friend)" },
+    { "es": "¿Te importaría llamar a Vale?\nNo, para nada.", "en": "Would you mind calling Vale? (to a friend)\nNot at all." },
+    { "es": "¿Te importaría darme tu número?\nSí, me importa.", "en": "Would you mind giving me your number? (to a friend)\nYes, I mind." }
+  ],
+  "rule": "*Importar* works like *gustar*: the job bothers somebody. So the person comes first as *te* (a friend), *le* (formal) or *les* (several people), then *importaría*, then the plain verb: *¿Te importaría cerrar la ventana?*\n\nAnswers follow the English logic:\n*No, para nada.* Not at all, happy to.\n*Sí, me importa.* Yes, it bothers me, a polite refusal.\n\nSo a plain *Sí* is not \"sure\".",
+  "smallPrint": "Teachers call *importaría* the conditional of *importar*, here used to soften a request.",
+  "readAndPick": [
+    { "es": "¿Te importaría cerrar la ventana?", "options": ["Would you mind closing the window? (to a friend)", "Would you mind closing the window? (formal)", "Would you all mind closing the window?"], "answer": 0 },
+    { "es": "¿Le importaría esperar un momento?", "options": ["Would you mind waiting a moment? (to a friend)", "Would you mind waiting a moment? (formal)", "Would you all mind waiting a moment?"], "answer": 1 },
+    { "es": "¿Les importaría esperar afuera?", "options": ["Would you mind waiting outside? (formal)", "Would you mind waiting outside? (to a friend)", "Would you all mind waiting outside?"], "answer": 2 },
+    { "es": "No, para nada.", "options": ["No, I won't do it.", "Not at all, I'm happy to."], "answer": 1 },
+    { "es": "Sí, me importa.", "options": ["Yes, I'll do it.", "Yes, it bothers me."], "answer": 1 },
+    { "es": "¿Te importaría ayudarme con estas cajas?", "options": ["Would you mind helping me with these boxes?", "Would you mind helping him with these boxes?", "Would you mind helping us with these boxes?"], "answer": 0 },
+    { "es": "¿Te importaría darme tu número?", "options": ["Would you mind giving him my number?", "Would you mind giving me your number? (formal)", "Would you mind giving me your number? (to a friend)"], "answer": 2 },
+    { "es": "¿Le importaría decirme dónde está la comisaría?", "options": ["Would you mind telling me where the police station is? (to a friend)", "Would you mind telling me where the police station is? (formal)", "Would you mind telling him where the police station is? (formal)"], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Asking a friend. Pick *te* or *le* and type the whole sentence: *¿___ importaría cerrar la ventana?*", "answer": "¿Te importaría cerrar la ventana?", "accept": [], "why": "A friend is *te*." },
+    { "prompt": "Asking a stranger (formal). Pick *te* or *le* and type the whole sentence: *¿___ importaría esperar un momento?*", "answer": "¿Le importaría esperar un momento?", "accept": [], "why": "A stranger you call *usted* is *le*." },
+    { "prompt": "Type in Spanish, to a friend: Would you mind helping me with these boxes?", "answer": "¿Te importaría ayudarme con estas cajas?", "accept": [], "why": "*Te importaría* plus the plain verb; *-me* on the end means \"me\"." },
+    { "prompt": "Type in Spanish, to a stranger (formal): Would you mind telling me where the police station is?", "answer": "¿Le importaría decirme dónde está la comisaría?", "accept": [], "why": "Formal means *le importaría*, then the plain verb *decirme*." },
+    { "prompt": "A friend asks if you would mind calling Vale. You are happy to. Answer in Spanish: Not at all.", "answer": "No, para nada.", "accept": ["Para nada.", "No, no me importa."], "why": "Saying *no* means it does not bother you." },
+    { "prompt": "Make it about several people: *¿Te importaría esperar afuera?* Say: Would you all mind waiting outside?", "answer": "¿Les importaría esperar afuera?", "accept": [], "why": "Several people means *les*." },
+    { "prompt": "Make it formal: *¿Te importaría darme tu número?* Say: Would you mind giving me your number? (formal)", "answer": "¿Le importaría darme su número?", "accept": [], "why": "Formal changes *te* to *le* and *tu* to *su*." }
+  ],
+  "pitfalls": [
+    { "wrong": "¿Tú importarías cerrar la ventana?", "right": "¿Te importaría cerrar la ventana?", "why": "Almost. *Importar* works like *gustar*: the job bothers you, so the person is *te*, not *tú*." },
+    { "wrong": "Sí, con gusto.", "right": "No, para nada. Con gusto.", "why": "Almost. After \"would you mind?\", *sí* means \"yes, I mind\". When you are happy to, start with *no*." },
+    { "wrong": "¿Te importaría cerrando la ventana?", "right": "¿Te importaría cerrar la ventana?", "why": "Almost. English says \"mind closing\", but Spanish uses the plain verb *cerrar*." }
+  ],
+  "personal": "Think of a small favour you would ask someone you know, and ask it with *¿Te importaría…?*, then answer it yourself with *No, para nada.*"
+}

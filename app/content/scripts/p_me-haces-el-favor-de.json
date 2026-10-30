@@ -1,0 +1,43 @@
+{
+  "node": "p:me-haces-el-favor-de",
+  "hook": {
+    "line": "Tomás needs something from a neighbour, and a bare \"close the door\" would sound rude. Colombians soften almost every request by turning it into a small favour.",
+    "es": "¿Me hace el favor de esperar un momento?",
+    "en": "Will you do me the favour of waiting a moment? (formal)"
+  },
+  "examples": [
+    { "es": "¿Me haces el favor de cerrar la puerta?", "en": "Will you do me the favour of closing the door? (to a friend)" },
+    { "es": "¿Me hace el favor de esperar un momento?", "en": "Will you do me the favour of waiting a moment? (formal)" },
+    { "es": "¿Me harías el favor de traer más pan?", "en": "Would you do me the favour of bringing more bread? (to a friend)" },
+    { "es": "¿Me podrías hacer el favor de llamarlo?", "en": "Could you do me the favour of calling him? (to a friend)" },
+    { "es": "¿Me hacen el favor de hablar más despacio?", "en": "Will you all do me the favour of speaking more slowly?" },
+    { "es": "¿Me haces el favor y me pasas la sal?", "en": "Will you do me the favour and pass me the salt? (to a friend)" }
+  ],
+  "rule": "To ask politely, ask for a favour:\n*¿Me haces el favor de cerrar la puerta?* to a friend.\n*¿Me hace el favor de esperar?* to a stranger or an elder.\n*¿Me hacen el favor de…?* to several people.\n*¿Me harías el favor de…?* or *¿Me podrías hacer el favor de…?* softer, like \"would\" and \"could\".\n\nAfter *de*, use the plain verb: *cerrar*, never *cerrando*.\n\nVery Colombian: swap *de* for *y* and keep going. *¿Me hace el favor y me trae la cuenta?*",
+  "smallPrint": "Teachers call *hacer el favor de* a courtesy formula: a request dressed up as a favour.",
+  "readAndPick": [
+    { "es": "¿Me hace el favor de esperar un momento?", "options": ["Will you do me the favour of waiting a moment? (to a friend)", "Will you do me the favour of waiting a moment? (formal)", "Will you all do me the favour of waiting a moment?"], "answer": 1 },
+    { "es": "¿Me harías el favor de traer más pan?", "options": ["Will you do me the favour of bringing more bread?", "I did you the favour of bringing more bread.", "Would you do me the favour of bringing more bread?"], "answer": 2 },
+    { "es": "¿Me hacen el favor de hablar más despacio?", "options": ["Will you all do me the favour of speaking more slowly?", "Will you do me the favour of speaking more slowly? (formal)", "Will you do me the favour of speaking more slowly? (to a friend)"], "answer": 0 },
+    { "es": "Vale, ¿me haces el favor de llamar al abogado?", "options": ["Vale, I'll do you the favour of calling the lawyer.", "Vale, did you call the lawyer for me?", "Vale, will you do me the favour of calling the lawyer?"], "answer": 2 },
+    { "es": "¿Me podría hacer el favor de llamarlo?", "options": ["Could you do me the favour of calling him? (to a friend)", "Could you do me the favour of calling him? (formal)"], "answer": 1 },
+    { "es": "¿Me haces el favor de abrir la puerta?", "options": ["Will you do me the favour of closing the door?", "Will you do me the favour of opening the door?", "Will you do me the favour of knocking on the door?"], "answer": 1 },
+    { "es": "¿Me haces el favor y me pasas la sal?", "options": ["Will you do me the favour and pass me the salt? (formal)", "Will you all do me the favour and pass me the salt?", "Will you do me the favour and pass me the salt? (to a friend)"], "answer": 2 },
+    { "es": "¿Me hace el favor de cerrar la puerta?", "options": ["Will you do me the favour of closing the door? (formal)", "Would you do me the favour of closing the door? (to a friend)", "Will you all do me the favour of closing the door?"], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Asking a friend. Pick *haces* or *hace* and type the whole sentence: *¿Me ___ el favor de cerrar la puerta?*", "answer": "¿Me haces el favor de cerrar la puerta?", "accept": ["¿Me harías el favor de cerrar la puerta?", "¿Me podrías hacer el favor de cerrar la puerta?"], "why": "With a friend you use the *tú* form, *haces*." },
+    { "prompt": "Asking a stranger (formal). Pick *haces* or *hace* and type the whole sentence: *¿Me ___ el favor de esperar un momento?*", "answer": "¿Me hace el favor de esperar un momento?", "accept": ["¿Me podría hacer el favor de esperar un momento?"], "why": "A stranger gets the *usted* form, *hace*." },
+    { "prompt": "Type in Spanish, to a friend: Would you do me the favour of bringing more bread?", "answer": "¿Me harías el favor de traer más pan?", "accept": ["¿Me podrías hacer el favor de traer más pan?"], "why": "*Harías* is the soft \"would\"; *traer* stays plain after *de*." },
+    { "prompt": "Type in Spanish, to a stranger (formal): Will you do me the favour of closing the door?", "answer": "¿Me hace el favor de cerrar la puerta?", "accept": ["¿Me podría hacer el favor de cerrar la puerta?"], "why": "*Usted* means *hace*, then *de* and the plain verb." },
+    { "prompt": "Type in Spanish, to a friend, using *y* instead of *de*: Will you do me the favour and call the lawyer?", "answer": "¿Me haces el favor y llamas al abogado?", "accept": ["¿Me haces el favor y me llamas al abogado?"], "why": "After *y*, an ordinary present verb follows, just as you would say it in English." },
+    { "prompt": "Make it about several people: *¿Me haces el favor de hablar más despacio?* Say: Will you all do me the favour of speaking more slowly?", "answer": "¿Me hacen el favor de hablar más despacio?", "accept": ["¿Me podrían hacer el favor de hablar más despacio?"], "why": "Several people means *hacen*; the rest stays the same." },
+    { "prompt": "Make it softer, to a friend: *¿Me haces el favor de abrir el café mañana?* Say: Would you do me the favour of opening the café tomorrow?", "answer": "¿Me harías el favor de abrir el café mañana?", "accept": ["¿Me podrías hacer el favor de abrir el café mañana?"], "why": "Change *haces* to *harías* for the softer \"would\"." }
+  ],
+  "pitfalls": [
+    { "wrong": "¿Me haces el favor de cerrando la puerta?", "right": "¿Me haces el favor de cerrar la puerta?", "why": "Almost. English says \"of closing\", but after *de* Spanish wants the plain verb, *cerrar*." },
+    { "wrong": "¿Me haces un favor de cerrar la puerta?", "right": "¿Me haces el favor de cerrar la puerta?", "why": "Almost. With *de* and a verb, the set phrase is *el favor*, not *un favor*." },
+    { "wrong": "¿Me haces el favor de esperar un momento?", "right": "¿Me hace el favor de esperar un momento?", "why": "Almost. With someone you call *usted*, the verb is *hace*, not *haces*." }
+  ],
+  "personal": "Think of one small thing you would really ask a neighbour or a friend, and ask it with *¿Me haces el favor de…?* or *¿Me hace el favor de…?*."
+}
