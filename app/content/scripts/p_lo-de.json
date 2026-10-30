@@ -1,0 +1,172 @@
+{
+  "node": "p:lo-de",
+  "hook": {
+    "line": "Sooner or later a friend brings up something you both know about, and spelling it out would be clumsy. *Lo de* is the shortcut: it points at the whole situation without describing it.",
+    "es": "¿Supiste lo de Andrés?",
+    "en": "Did you hear about Andrés? (to a friend)"
+  },
+  "examples": [
+    {
+      "es": "¿Supiste lo de Andrés?",
+      "en": "Did you hear about Andrés? (to a friend)"
+    },
+    {
+      "es": "Perdón por lo de ayer.",
+      "en": "Sorry about yesterday."
+    },
+    {
+      "es": "Lo del contrato ya está listo.",
+      "en": "The contract thing is ready now."
+    },
+    {
+      "es": "¿Qué pasó con lo de la comisión?",
+      "en": "What happened with the commission business?"
+    },
+    {
+      "es": "Ya sé lo de Vale.",
+      "en": "I already know about Vale."
+    },
+    {
+      "es": "Lo del viernes sigue en pie.",
+      "en": "The Friday plan still stands."
+    }
+  ],
+  "rule": "*Lo de* plus a name, a day or a noun means \"that business with…\" or \"the thing about…\". It points at a situation you both already know, so you never explain it.\n\n*lo de Andrés*: what happened with Andrés\n*lo de ayer*: what went on yesterday\n*lo del contrato*: the contract matter\n\nIt is always *lo*, never *el* or *la*, because it stands for a situation, not a masculine thing. And *de* plus *el* joins up as *del*: *lo del contrato*, but *lo de la comisión*. English uses \"about\", \"that thing with\" or \"the whole\" instead.",
+  "smallPrint": "Teachers call this the neuter article *lo* followed by *de*. The *lo* means \"the matter\", not a masculine noun.",
+  "readAndPick": [
+    {
+      "es": "¿Supiste lo de Andrés?",
+      "options": [
+        "Is this Andrés's?",
+        "Did you hear about Andrés?",
+        "Do you know Andrés?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Perdón por lo de ayer.",
+      "options": [
+        "Sorry about yesterday.",
+        "Sorry I'm late today.",
+        "Sorry, yesterday is mine."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Lo del contrato ya está listo.",
+      "options": [
+        "Is the contract ready?",
+        "The contract is from yesterday.",
+        "The contract thing is ready now."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Ya me contaron lo de Rosa.",
+      "options": [
+        "I already told Rosa.",
+        "They already told me about Rosa.",
+        "Rosa already told me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Y lo del viernes?",
+      "options": [
+        "And Friday's dress?",
+        "And is it Friday?",
+        "And what about the Friday plan?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Gracias por lo de hoy.",
+      "options": [
+        "Thanks for what you did today.",
+        "Thanks, today is over.",
+        "Thanks for the one from today."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hablamos de lo del arriendo mañana.",
+      "options": [
+        "We talked about the rent matter yesterday.",
+        "We'll talk about the rent matter tomorrow.",
+        "I'll talk to the landlord tomorrow."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Lo de Altamira me preocupa.",
+      "options": [
+        "Altamira is worried about me.",
+        "I worry about Altamira's building.",
+        "The Altamira business worries me."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Fill the gap and type the whole sentence: Lo ___ contrato ya está listo. (de / del) The contract thing is ready now.",
+      "answer": "Lo del contrato ya está listo.",
+      "accept": [],
+      "why": "*De* plus *el* always joins into *del*."
+    },
+    {
+      "prompt": "Did you hear about Andrés? (to a friend)",
+      "answer": "¿Supiste lo de Andrés?",
+      "accept": [],
+      "why": "*Lo de* plus the name points at what happened with him."
+    },
+    {
+      "prompt": "Sorry about yesterday.",
+      "answer": "Perdón por lo de ayer.",
+      "accept": [],
+      "why": "*Por lo de* thanks or apologises for a whole situation."
+    },
+    {
+      "prompt": "What happened with the commission business?",
+      "answer": "¿Qué pasó con lo de la comisión?",
+      "accept": [],
+      "why": "*La comisión* is feminine, but *lo* never changes: it names the situation."
+    },
+    {
+      "prompt": "I already know about Vale.",
+      "answer": "Ya sé lo de Vale.",
+      "accept": [],
+      "why": "*Lo de* plus a name means the news about that person."
+    },
+    {
+      "prompt": "The Friday plan still stands.",
+      "answer": "Lo del viernes sigue en pie.",
+      "accept": [],
+      "why": "*De* plus *el viernes* becomes *del viernes*."
+    },
+    {
+      "prompt": "Make it about the situation: Hablamos del contrato mañana.",
+      "answer": "Hablamos de lo del contrato mañana.",
+      "accept": [],
+      "why": "After *de*, *lo del* stays whole: we talk about the contract matter."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Perdón por el de ayer.",
+      "right": "Perdón por lo de ayer.",
+      "why": "Almost. For a situation, use *lo*, never *el* or *la*."
+    },
+    {
+      "wrong": "Lo de el contrato ya está listo.",
+      "right": "Lo del contrato ya está listo.",
+      "why": "*De* and *el* always join as *del*."
+    },
+    {
+      "wrong": "¿Supiste lo Andrés?",
+      "right": "¿Supiste lo de Andrés?",
+      "why": "You need *de* after *lo*: it is the bridge to the person or topic."
+    }
+  ],
+  "personal": "Think of something you and a friend both know about. Write one line with *lo de…*, such as *Perdón por lo de…* or *¿Y lo de…?*"
+}
