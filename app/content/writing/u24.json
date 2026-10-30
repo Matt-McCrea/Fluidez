@@ -1,0 +1,847 @@
+[
+  {
+    "id": "w-u24-01",
+    "unit": "u24",
+    "prompt": "Text Vale, your friend. You saw a flat in Chapinero today. Say what it is not and what it is instead, and add one thing that is a problem.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bno es\\b[^.]*\\bsino\\b",
+        "label": "say what it is not, then what it is, with sino"
+      },
+      {
+        "type": "containsWord",
+        "word": "pero",
+        "label": "add the problem with pero"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Vale, hoy vi el apartamento en Chapinero. No es grande, sino bonito. Tiene mucha luz, pero es ruidoso. Lo bueno es que queda cerca del trabajo.",
+    "focus": "g:pero-sino",
+    "requires": [
+      "c:es-que",
+      "c:lo-bueno-es",
+      "c:tienes",
+      "g:gender-articles",
+      "g:lo-adjective",
+      "g:pero-sino",
+      "g:preterite-er-ir",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:apartamento",
+      "l:bonito",
+      "l:bueno",
+      "l:cerca",
+      "l:grande",
+      "l:hoy",
+      "l:luz",
+      "l:quedar",
+      "l:ruidoso",
+      "l:ser",
+      "l:tener",
+      "l:trabajo",
+      "l:ver",
+      "p:cerca-de",
+      "p:position-de",
+      "p:quantifiers-basic",
+      "p:tiene-mucha-luz"
+    ]
+  },
+  {
+    "id": "w-u24-02",
+    "unit": "u24",
+    "prompt": "Reply to Altamira's agent, an older man you would call usted. Politely say you do not want to move, you want to stay on the corner.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bno quiero\\b[^.]*\\bsino\\b",
+        "label": "no quiero... sino..."
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "quieres",
+          "tienes",
+          "puedes"
+        ],
+        "label": "usted, not tú"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Señor, gracias por su oferta. No quiero mudarme, sino quedarme en la esquina. Aquí tengo mi café y mis clientes. Usted entiende, ¿verdad? Muchas gracias por su tiempo.",
+    "focus": "g:pero-sino",
+    "requires": [
+      "c:gracias-de-nada",
+      "c:no-cierto",
+      "c:quiero",
+      "c:tengo",
+      "g:gender-articles",
+      "g:object-pronoun-position",
+      "g:parecer-quedar",
+      "g:pero-sino",
+      "g:reflexive-routine",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "g:yo-irregular",
+      "l:aquí",
+      "l:café",
+      "l:cliente",
+      "l:entender",
+      "l:esquina",
+      "l:mudarse",
+      "l:oferta",
+      "l:quedar",
+      "l:querer",
+      "l:señor",
+      "l:tener",
+      "l:tiempo",
+      "l:verdad",
+      "p:aqui-ahi-alla",
+      "p:gracias-por",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u24-03",
+    "unit": "u24",
+    "prompt": "Write to your mother, who wants you back in Medellín. Tell her you are not coming back for good, but you will visit her in December.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bno voy a\\b[^.]*\\bsino\\b",
+        "label": "no voy a... sino..."
+      },
+      {
+        "type": "containsWord",
+        "word": "diciembre"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Mamá, te quiero mucho. No voy a volver a Medellín, sino a visitarte en diciembre. Aquí tengo mi trabajo y mis amigos. Te llamo el domingo.",
+    "focus": "g:pero-sino",
+    "requires": [
+      "c:quiero",
+      "c:tengo",
+      "c:voy-a",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:object-pronoun-position",
+      "g:pero-sino",
+      "g:present-ar",
+      "g:stem-boot",
+      "g:yo-irregular",
+      "l:amigo",
+      "l:aquí",
+      "l:diciembre",
+      "l:domingo",
+      "l:ir",
+      "l:llamar",
+      "l:querer",
+      "l:tener",
+      "l:trabajo",
+      "l:visitar",
+      "l:volver",
+      "p:aqui-ahi-alla",
+      "p:days-el-lunes",
+      "p:me-te-nos-objects",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u24-04",
+    "unit": "u24",
+    "prompt": "Doña Gloria, an older neighbour you call usted, says the bigger flat is the better choice. Answer her politely: it is bigger, but you are not convinced.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "aunque",
+        "label": "start with aunque"
+      },
+      {
+        "type": "containsWord",
+        "word": "convence",
+        "label": "use convencer"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "eres",
+          "tienes",
+          "puedes",
+          "quieres"
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Doña Gloria, tiene razón: aunque el apartamento es más grande, no me convence. Es caro y queda lejos de la esquina. Muchas gracias por su ayuda.",
+    "focus": "g:aunque-indicative",
+    "requires": [
+      "c:gracias-de-nada",
+      "c:no-me-convence",
+      "c:tienes",
+      "g:aunque-indicative",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:apartamento",
+      "l:ayuda",
+      "l:caro",
+      "l:convencer",
+      "l:esquina",
+      "l:grande",
+      "l:lejos",
+      "l:quedar",
+      "l:razón",
+      "l:ser",
+      "l:tener",
+      "p:cerca-de",
+      "p:don-dona-nombre",
+      "p:gracias-por",
+      "p:position-de",
+      "p:possessives-basic",
+      "p:senor-don-article",
+      "p:tener-razon"
+    ]
+  },
+  {
+    "id": "w-u24-05",
+    "unit": "u24",
+    "prompt": "Text Mariana, a friend your age. Tell her you like the neighbourhood even though it is far from the centre, and say what you do about it.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "aunque",
+        "label": "use aunque"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "aunque sea",
+          "aunque fuera"
+        ],
+        "label": "aunque + a real fact, no subjunctive"
+      }
+    ],
+    "model": "Mariana, me gusta el barrio, aunque queda lejos del centro. Tomo el bus todos los días y llego en media hora. Es tranquilo y la gente es amable.",
+    "focus": "g:aunque-indicative",
+    "requires": [
+      "c:me-gusta",
+      "c:tranquilo",
+      "g:aunque-indicative",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:present-ar",
+      "g:ser-identity",
+      "l:amable",
+      "l:barrio",
+      "l:bus",
+      "l:centro",
+      "l:día",
+      "l:gente",
+      "l:gustar",
+      "l:hora",
+      "l:lejos",
+      "l:llegar",
+      "l:quedar",
+      "l:ser",
+      "l:tomar",
+      "l:tranquilo",
+      "p:cerca-de",
+      "p:la-gente-singular",
+      "p:position-de",
+      "p:todos-los-dias",
+      "p:veces-al"
+    ]
+  },
+  {
+    "id": "w-u24-06",
+    "unit": "u24",
+    "prompt": "A neighbour, an older woman you call usted, asks how long you have lived on this block. Tell her how long, and why you do not want to leave.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bhace \\w+ (años|meses|año|mes)\\b[^.]*\\bque\\b|\\bdesde hace\\b",
+        "label": "hace... que / desde hace"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "eres",
+          "tienes",
+          "puedes",
+          "quieres"
+        ],
+        "label": "usted, not tú"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Señora, hace tres años que vivo en esta cuadra. Aquí tengo mi trabajo y mis amigos. Trabajo en el café desde hace un año, y no quiero irme.",
+    "focus": "g:hace-que-desde",
+    "requires": [
+      "c:quiero",
+      "c:tengo",
+      "c:trabajo-en",
+      "c:vivo-en",
+      "g:gender-articles",
+      "g:hace-que-desde",
+      "g:present-er-ir",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "g:yo-irregular",
+      "l:amigo",
+      "l:aquí",
+      "l:año",
+      "l:café",
+      "l:cuadra",
+      "l:hace",
+      "l:hacer",
+      "l:irse",
+      "l:querer",
+      "l:señora",
+      "l:tener",
+      "l:trabajo",
+      "l:vivir",
+      "p:aqui-ahi-alla",
+      "p:demonstratives-basic",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u24-07",
+    "unit": "u24",
+    "prompt": "Text a friend comparing two flats you saw. Say the first one is as expensive as the second, and the second is as bright as the first.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\btan \\w+ como\\b",
+        "label": "tan + adjective + como"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      },
+      {
+        "type": "negation"
+      }
+    ],
+    "model": "El apartamento de Chapinero es tan caro como el apartamento de La Candelaria. El apartamento de La Candelaria es tan luminoso como el otro. No hay tanta diferencia como pensaba.",
+    "focus": "g:tanto-como",
+    "requires": [
+      "c:hay",
+      "g:comparatives",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "g:imperfect-habitual",
+      "g:ser-identity",
+      "g:tanto-como",
+      "l:apartamento",
+      "l:caro",
+      "l:diferencia",
+      "l:luminoso",
+      "l:pensar",
+      "l:ser",
+      "p:otro-no-article",
+      "p:tiene-mucha-luz"
+    ]
+  },
+  {
+    "id": "w-u24-08",
+    "unit": "u24",
+    "prompt": "Write to Vale. You both work a lot. Say that you work as much as she does and that you also sleep little. Use tú.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\btanto como\\b",
+        "label": "tanto como (as much as)"
+      },
+      {
+        "type": "verbForm",
+        "inf": "trabajar",
+        "tense": "presente",
+        "person": "yo"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Vale, trabajo tanto como tú, pero hoy estoy muy cansado y quiero dormir. Yo duermo poco, igual que tú. Mañana descansamos un rato juntos, ¿vamos?",
+    "focus": "g:tanto-como",
+    "requires": [
+      "c:igual",
+      "c:quiero",
+      "c:vamos-a",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:present-ar",
+      "g:stem-boot",
+      "g:tanto-como",
+      "g:verb-infinitive",
+      "l:cansado",
+      "l:descansar",
+      "l:dormir",
+      "l:estar",
+      "l:hoy",
+      "l:igual",
+      "l:ir",
+      "l:juntos",
+      "l:mañana",
+      "l:querer",
+      "l:rato",
+      "l:trabajar",
+      "p:poco-un-poco",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u24-09",
+    "unit": "u24",
+    "prompt": "A coworker asks if you will take the flat. You do not know yet: it depends on the price. Answer in a short message and ask what the rent is.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bdepende (del|de la|de los|de las|de)\\b",
+        "label": "depende de + noun"
+      },
+      {
+        "type": "question"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Hola, todavía no sé. Depende del precio. ¿Cuánto es el arriendo? Si es menos de un millón, me interesa. Si no, voy a buscar otro.",
+    "focus": "p:depende-de",
+    "requires": [
+      "c:cuanto-cuesta",
+      "c:depende",
+      "c:hola-buenos-dias",
+      "c:no-se",
+      "c:todavia-no",
+      "c:voy-a",
+      "g:gender-articles",
+      "g:gustar-full",
+      "g:ir-a-plans",
+      "g:present-ar",
+      "g:questions",
+      "g:ser-identity",
+      "g:si-present",
+      "g:yo-irregular",
+      "l:arriendo",
+      "l:buscar",
+      "l:cuánto",
+      "l:depender",
+      "l:interesar",
+      "l:ir",
+      "l:precio",
+      "l:saber",
+      "l:ser",
+      "p:mas-de-number",
+      "p:otro-no-article",
+      "p:question-word-order"
+    ]
+  },
+  {
+    "id": "w-u24-10",
+    "unit": "u24",
+    "prompt": "Write a short ad for the flat you are renting out. Say it has lots of light and a view of the hills, and that it is near a bus stop.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\btiene (mucha luz|vista)\\b",
+        "label": "tiene mucha luz / tiene vista"
+      },
+      {
+        "type": "containsWord",
+        "word": "cerros",
+        "label": "view of the hills"
+      },
+      {
+        "type": "containsWord",
+        "word": "bus"
+      }
+    ],
+    "model": "Se arrienda un apartamento en La Candelaria. Tiene mucha luz y vista a los cerros. Tiene dos habitaciones y un baño. Queda cerca de la parada del bus.",
+    "focus": "p:tiene-mucha-luz",
+    "requires": [
+      "c:tienes",
+      "g:commands-usted",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:stem-boot",
+      "l:apartamento",
+      "l:arriendo",
+      "l:baño",
+      "l:bus",
+      "l:cerca",
+      "l:cerro",
+      "l:habitación",
+      "l:luz",
+      "l:parada",
+      "l:quedar",
+      "l:tener",
+      "l:vestir",
+      "p:cerca-de",
+      "p:position-de",
+      "p:quantifiers-basic",
+      "p:quedar-cerca",
+      "p:tiene-mucha-luz"
+    ]
+  },
+  {
+    "id": "w-u24-11",
+    "unit": "u24",
+    "prompt": "Mariana asks whether you prefer the old flat or the new one. Answer her: say which one you prefer to the other, and why.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bprefiero\\b[^.]*\\b(al|a la|a los|a las|a)\\b",
+        "label": "prefiero X a Y"
+      },
+      {
+        "type": "containsWord",
+        "word": "porque"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Prefiero el apartamento viejo al nuevo. Es más pequeño, pero tiene mucha luz. Además, aquí conozco a todos mis vecinos porque vivo cerca del café.",
+    "focus": "p:preferir-a",
+    "requires": [
+      "c:ademas",
+      "c:porque",
+      "c:tienes",
+      "g:cause-result",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:ser-identity",
+      "g:stem-boot",
+      "g:yo-irregular",
+      "l:además",
+      "l:apartamento",
+      "l:aquí",
+      "l:café",
+      "l:cerca",
+      "l:conocer",
+      "l:luz",
+      "l:nuevo",
+      "l:pequeño",
+      "l:preferir",
+      "l:ser",
+      "l:tener",
+      "l:vecino",
+      "l:viejo",
+      "l:vivir",
+      "p:aqui-ahi-alla",
+      "p:cerca-de",
+      "p:gustar-mas-que",
+      "p:position-de",
+      "p:possessives-basic",
+      "p:preferir-a",
+      "p:prefieres-x-o-y",
+      "p:quantifiers-basic",
+      "p:saber-conocer",
+      "p:tiene-mucha-luz",
+      "p:viejo-antiguo-mayor"
+    ]
+  },
+  {
+    "id": "w-u24-12",
+    "unit": "u24",
+    "prompt": "Tell Vale, on a napkin note, one good and one bad thing about moving to Chapinero. Use the two-sided phrase.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "por un lado"
+      },
+      {
+        "type": "containsWord",
+        "word": "por otro"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Por un lado, el apartamento es más grande y moderno. Por otro, está muy lejos de la esquina y del café. No sé qué hacer, Vale.",
+    "focus": "c:por-un-lado",
+    "requires": [
+      "c:no-se",
+      "c:por-un-lado",
+      "g:discourse-structure",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:indirect-questions",
+      "g:ser-identity",
+      "g:yo-irregular",
+      "l:apartamento",
+      "l:café",
+      "l:esquina",
+      "l:estar",
+      "l:grande",
+      "l:hacer",
+      "l:lado",
+      "l:lejos",
+      "l:moderno",
+      "l:qué",
+      "l:saber",
+      "l:ser",
+      "p:cerca-de",
+      "p:no-se-que-hacer",
+      "p:position-de",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u24-13",
+    "unit": "u24",
+    "prompt": "Write a message to Vale about a plan for the weekend: moving the espresso machine. Say what the idea is, and when.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "la idea es"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(sábado|domingo|mañana|lunes|viernes)\\b",
+        "label": "say when"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Vale, la idea es mover la máquina de espresso el sábado por la mañana. Hernando nos ayuda con el carro. Y todos tomamos un tinto en la esquina.",
+    "focus": "c:la-idea-es",
+    "requires": [
+      "c:la-idea-es",
+      "g:gender-articles",
+      "g:present-ar",
+      "l:ayudar",
+      "l:carro",
+      "l:esquina",
+      "l:idea",
+      "l:mañana",
+      "l:mover",
+      "l:máquina",
+      "l:ser",
+      "l:sábado",
+      "l:tinto",
+      "l:tomar",
+      "p:days-el-lunes",
+      "p:me-te-nos-objects",
+      "p:por-la-manana"
+    ]
+  },
+  {
+    "id": "w-u24-14",
+    "unit": "u24",
+    "prompt": "Mariana asks if you are tired of the whole Altamira matter. Say no, with ¡Qué va!, then tell her what you are doing.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "qué va",
+        "label": "use qué va"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      },
+      {
+        "type": "negation"
+      }
+    ],
+    "model": "Mariana, ¿cansado yo? ¡Qué va! No estoy cansado, estoy muy tranquilo y contento. Hoy hablo con Vale y escribimos todas las razones en una servilleta.",
+    "focus": "c:que-va",
+    "requires": [
+      "c:que-va",
+      "c:tranquilo",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:present-er-ir",
+      "l:cansado",
+      "l:contento",
+      "l:escribir",
+      "l:estar",
+      "l:hablar",
+      "l:hoy",
+      "l:ir",
+      "l:qué",
+      "l:razón",
+      "l:servilleta",
+      "l:tranquilo",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u24-15",
+    "unit": "u24",
+    "prompt": "Your landlady, an older woman you call usted, offers you a flat that has a problem. Tell her it is expensive and far, but that you want it anyway.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "igual"
+      },
+      {
+        "type": "containsWord",
+        "word": "pero"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "quieres",
+          "tienes",
+          "puedes"
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Señora, el apartamento es caro y queda lejos, pero igual lo quiero. Me gusta la vista y la luz. ¿Cuándo puedo verlo otra vez con mi amiga?",
+    "focus": "c:lo-bueno-es",
+    "requires": [
+      "c:igual",
+      "c:me-gusta",
+      "c:puedo",
+      "c:quiero",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:object-pronoun-position",
+      "g:present-ar",
+      "g:questions",
+      "g:ser-identity",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:amiga",
+      "l:apartamento",
+      "l:caro",
+      "l:cuándo",
+      "l:gustar",
+      "l:igual",
+      "l:lejos",
+      "l:luz",
+      "l:poder",
+      "l:quedar",
+      "l:querer",
+      "l:ser",
+      "l:señora",
+      "l:ver",
+      "l:vez",
+      "l:vista",
+      "p:cerca-de",
+      "p:otro-no-article",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u24-16",
+    "unit": "u24",
+    "prompt": "Write Tomás's list for the napkin: two reasons to stay and one reason that does not convince you. Say what is good about staying.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "lo bueno es"
+      },
+      {
+        "type": "containsWord",
+        "word": "no me convence"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Lo bueno es que el café tiene muchos clientes. Además, Vale está contenta aquí y nosotros trabajamos bien juntos. La oferta de Altamira es grande, pero no me convence nada.",
+    "focus": "c:lo-lo-bueno-es",
+    "requires": [
+      "c:ademas",
+      "c:bien-y-tu",
+      "c:es-que",
+      "c:lo-bueno-es",
+      "c:no-me-convence",
+      "c:tienes",
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:lo-adjective",
+      "g:negation-words",
+      "g:present-ar",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:además",
+      "l:aquí",
+      "l:bien",
+      "l:bueno",
+      "l:café",
+      "l:cliente",
+      "l:contento",
+      "l:convencer",
+      "l:estar",
+      "l:grande",
+      "l:juntos",
+      "l:oferta",
+      "l:ser",
+      "l:tener",
+      "l:trabajar",
+      "p:aqui-ahi-alla",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:quantifiers-basic"
+    ]
+  }
+]
