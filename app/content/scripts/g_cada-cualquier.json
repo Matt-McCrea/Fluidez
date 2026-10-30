@@ -1,0 +1,45 @@
+{
+  "node": "g:cada-cualquier",
+  "hook": {
+    "line": "Looking for a place, a table or a cup of coffee, you will often want to say it doesn't matter which, or that you mean every single one. Spanish has small words for both.",
+    "es": "¿Qué día te sirve?\nCualquiera.",
+    "en": "Which day suits you?\nAny of them."
+  },
+  "examples": [
+    { "es": "Cada mesa tiene su historia.", "en": "Each table has its story." },
+    { "es": "Cualquier persona puede venir.", "en": "Anyone can come." },
+    { "es": "Me sirve cualquiera.", "en": "Any of them will do." },
+    { "es": "Cada mañana Vale hace pan.", "en": "Every morning Vale bakes bread." },
+    { "es": "Toda la mañana trabajo en el café.", "en": "I work in the café all morning." },
+    { "es": "Todos los días como aquí.", "en": "I eat here every day." }
+  ],
+  "rule": "*Cada* means 'each' or 'every'. It never changes and never takes an article: *cada mesa*, *cada día*.\n\n*Cualquier* means 'any at all' and goes before a noun: *cualquier día*, *cualquier persona*.\nOn its own it keeps the -a: *cualquiera*.\n\n*Todo* is about the whole thing, and it matches the noun:\n*toda la mañana* (all morning)\n*todo el barrio* (the whole neighbourhood)\n*todos los días* (every day)\n\nSo 'every day' can be *cada día* or *todos los días*.",
+  "smallPrint": "Teachers call *cada*, *cualquier* and *todo* quantifiers; *cualquiera* is an indefinite pronoun.",
+  "readAndPick": [
+    { "es": "Cada cliente pide algo distinto.", "options": ["Any customer orders something different.", "Each customer orders something different."], "answer": 1 },
+    { "es": "Cualquier persona puede venir.", "options": ["Each person can come.", "Anyone can come."], "answer": 1 },
+    { "es": "Me sirve cualquiera.", "options": ["Any of them will do for me.", "I need each one."], "answer": 0 },
+    { "es": "Toda la mañana trabajo en el café.", "options": ["I work in the café every morning.", "I work in the café all morning."], "answer": 1 },
+    { "es": "Todos los días como aquí.", "options": ["I eat here all day.", "I eat here every day."], "answer": 1 },
+    { "es": "Cada mañana Vale hace pan.", "options": ["Vale bakes bread every morning.", "Vale bakes bread all morning."], "answer": 0 },
+    { "es": "Cualquier día puedo ir.", "options": ["I can go every day.", "I can go one day.", "I can go any day."], "answer": 2 },
+    { "es": "Cualquiera puede entrar.", "options": ["Each of them can come in.", "Anyone can come in."], "answer": 1 },
+    { "es": "Todo el barrio conoce a Hernando.", "options": ["The whole neighbourhood knows Hernando.", "Every neighbourhood knows Hernando."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *___ mesa tiene su historia.* (*Cada* or *Cualquiera*)", "answer": "Cada mesa tiene su historia.", "accept": [], "why": "You mean each table in turn, so *cada*." },
+    { "prompt": "Pick and type: *Puedes venir ___ día.* (*cualquier* or *cualquiera*)", "answer": "Puedes venir cualquier día.", "accept": [], "why": "Before a noun it shortens to *cualquier*." },
+    { "prompt": "Pick and type: *Me sirve ___.* (*cualquier* or *cualquiera*)", "answer": "Me sirve cualquiera.", "accept": [], "why": "With no noun after it, it keeps the -a." },
+    { "prompt": "Say: Each customer orders something different.", "answer": "Cada cliente pide algo distinto.", "accept": [], "why": "*Cada* stays singular and has no article." },
+    { "prompt": "Say: Anyone can come in.", "answer": "Cualquiera puede entrar.", "accept": ["Cualquier persona puede entrar."], "why": "Alone it is *cualquiera*; with *persona* it is *cualquier*." },
+    { "prompt": "Say: I work all morning in the café.", "answer": "Toda la mañana trabajo en el café.", "accept": ["Trabajo toda la mañana en el café."], "why": "'All morning' is the whole of it, so *toda la mañana*." },
+    { "prompt": "Say it with *cada*: *Todos los días como aquí.*", "answer": "Cada día como aquí.", "accept": ["Como aquí cada día."], "why": "*Cada* is singular, so *cada día*, not *cada días*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Cada mesas tiene su historia.", "right": "Cada mesa tiene su historia.", "why": "*Cada* always points at one at a time, so the noun stays singular." },
+    { "wrong": "Puedes venir cualquiera día.", "right": "Puedes venir cualquier día.", "why": "Almost. Before a noun, *cualquiera* loses its -a." },
+    { "wrong": "Me sirve cualquier.", "right": "Me sirve cualquiera.", "why": "Nothing follows it, so it keeps the -a: *cualquiera*." },
+    { "wrong": "Cada los días como aquí.", "right": "Cada día como aquí.", "why": "*Cada* never takes an article. Use *todos los días* if you want one." }
+  ],
+  "personal": "Say something true about your week using *cada*, and something you don't mind about using *cualquier* or *cualquiera*."
+}

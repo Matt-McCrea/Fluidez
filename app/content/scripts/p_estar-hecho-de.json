@@ -1,0 +1,44 @@
+{
+  "node": "p:estar-hecho-de",
+  "hook": {
+    "line": "A customer picks up a cup at the café and asks if it's plastic. Spanish gives you two easy ways to say what something is made of.",
+    "es": "¿De qué está hecha la mesa?\nEs de madera.",
+    "en": "What is the table made of?\nIt's made of wood."
+  },
+  "examples": [
+    { "es": "Es de madera.", "en": "It's made of wood." },
+    { "es": "La mesa está hecha de vidrio.", "en": "The table is made of glass." },
+    { "es": "Las sillas están hechas de metal.", "en": "The chairs are made of metal." },
+    { "es": "Mi camisa es de algodón.", "en": "My shirt is made of cotton." },
+    { "es": "Las tazas están hechas a mano.", "en": "The cups are made by hand." },
+    { "es": "¿De qué está hecha la mesa?", "en": "What is the table made of?" }
+  ],
+  "rule": "Two ways to say what something is made of:\n*Es de madera.* (short and easy)\n*Está hecho de madera.* (a little more careful)\n\nBoth work. Pick the short one when in doubt.\n\n*Hecho* is describing the thing, so it matches it: *la mesa está hecha*, *las sillas están hechas*.\n\nWatch *ser de* when a person follows: *La mesa es de Rosa* means it belongs to Rosa. A material means what it's made of.",
+  "smallPrint": "*Hecho* is the participle of *hacer*, used here like an adjective, so it agrees in gender and number.",
+  "readAndPick": [
+    { "es": "La mesa está hecha de madera.", "options": ["The table is made of wood.", "The tables are made of wood."], "answer": 0 },
+    { "es": "Las sillas están hechas de metal.", "options": ["The chair is made of metal.", "The chairs are made of metal."], "answer": 1 },
+    { "es": "El techo es de ladrillo.", "options": ["The roofs are made of brick.", "The roof is made of brick."], "answer": 1 },
+    { "es": "La silla de Rosa está hecha de madera.", "options": ["Rosa's chair is made of wood.", "Rosa made the chair out of wood."], "answer": 0 },
+    { "es": "¿De qué está hecha la mesa?", "options": ["Who made the table?", "What is the table made of?"], "answer": 1 },
+    { "es": "La mesa es de Rosa.", "options": ["The table belongs to Rosa.", "The table is made of wood."], "answer": 0 },
+    { "es": "Mi camisa es de algodón.", "options": ["My shirts are made of cotton.", "My shirt is made of cotton."], "answer": 1 },
+    { "es": "La taza no es de plástico.", "options": ["The cup is made of plastic.", "The cup is not made of plastic."], "answer": 1 },
+    { "es": "Las tazas están hechas a mano.", "options": ["The cups are made by hand.", "The cup is made by hand."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *La mesa está ___ de vidrio.* (*hecho* or *hecha*)", "answer": "La mesa está hecha de vidrio.", "accept": [], "why": "*Mesa* is feminine, so *hecha*." },
+    { "prompt": "Pick and type: *Las sillas están ___ de metal.* (*hecho* or *hechas*)", "answer": "Las sillas están hechas de metal.", "accept": [], "why": "Feminine and more than one, so *hechas*." },
+    { "prompt": "Say: It's made of wood.", "answer": "Es de madera.", "accept": ["Está hecho de madera."], "why": "The short way is *es de* plus the material." },
+    { "prompt": "Ask: What is the table made of?", "answer": "¿De qué está hecha la mesa?", "accept": ["¿De qué es la mesa?"], "why": "*De qué* asks about the material, and *hecha* matches *mesa*." },
+    { "prompt": "Say: My shirt is made of cotton.", "answer": "Mi camisa es de algodón.", "accept": ["Mi camisa está hecha de algodón."], "why": "*Es de* plus the material says what it's made of." },
+    { "prompt": "Make it plural: *La silla es de metal.*", "answer": "Las sillas son de metal.", "accept": ["Las sillas están hechas de metal."], "why": "More than one chair, so *las sillas son*." },
+    { "prompt": "Make it negative: *La taza es de plástico.*", "answer": "La taza no es de plástico.", "accept": [], "why": "*No* goes straight before *es*." }
+  ],
+  "pitfalls": [
+    { "wrong": "La mesa es hecha de madera.", "right": "La mesa está hecha de madera.", "why": "Almost. With *hecho* the verb is *estar*; with just the material it's *es de*." },
+    { "wrong": "Las sillas están hecho de metal.", "right": "Las sillas están hechas de metal.", "why": "*Hecho* describes the chairs, so it matches them: *hechas*." },
+    { "wrong": "La mesa está hecha madera.", "right": "La mesa está hecha de madera.", "why": "English says 'made of wood' too, so keep the *de* before the material." }
+  ],
+  "personal": "Look around you and pick two things. Say what each one is made of with *es de* or *está hecho de*."
+}
