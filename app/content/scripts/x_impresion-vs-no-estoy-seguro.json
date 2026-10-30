@@ -1,0 +1,175 @@
+{
+  "node": "x:impresion-vs-no-estoy-seguro",
+  "hook": {
+    "line": "\"I think he won't come\" and \"I'm not sure he'll come\" feel close in English. In Spanish the verb shows how much you are committing.",
+    "es": "Tengo la impresión de que no vendrá.",
+    "en": "I have a feeling he won't come."
+  },
+  "examples": [
+    {
+      "es": "Tengo la impresión de que no vendrá.",
+      "en": "I have a feeling he won't come."
+    },
+    {
+      "es": "No estoy seguro de que venga.",
+      "en": "I'm not sure he'll come (a man speaking)."
+    },
+    {
+      "es": "Tengo la impresión de que Hernando tiene razón.",
+      "en": "I have a feeling Hernando is right."
+    },
+    {
+      "es": "No estoy seguro de que Hernando tenga razón.",
+      "en": "I'm not sure Hernando is right (a man speaking)."
+    },
+    {
+      "es": "Tengo la impresión de que Altamira va a ganar.",
+      "en": "I have a feeling Altamira is going to win."
+    },
+    {
+      "es": "No estoy segura de que Altamira gane.",
+      "en": "I'm not sure Altamira will win (a woman speaking)."
+    }
+  ],
+  "rule": "A hunch leans one way. You are saying what you believe, so the verb is ordinary: *tiene*, *va a ganar*, *vendrá*.\n\nA doubt does not lean. You refuse to commit, so the verb takes its \"maybe\" form: *tenga*, *gane*, *venga*.\n\n*Tengo la impresión de que…* + ordinary verb\n*No estoy seguro de que…* + \"maybe\" verb\n\nBoth keep *de que*; leave out the *de* and it sounds wrong. *Seguro* changes for a woman: *segura*.\n\nIn English both sound like \"I think maybe\". Spanish tells them apart by the verb.",
+  "smallPrint": "Teachers say the indicative states a belief and the subjunctive leaves it open.",
+  "readAndPick": [
+    {
+      "es": "Tengo la impresión de que Hernando tiene razón.",
+      "options": [
+        "I have a feeling Hernando is right.",
+        "I'm not sure Hernando is right.",
+        "Hernando is definitely wrong."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No estoy seguro de que Hernando tenga razón.",
+      "options": [
+        "I'm not sure Hernando is right.",
+        "I have a feeling Hernando is right.",
+        "I'm sure Hernando is right."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tengo la impresión de que Altamira va a ganar.",
+      "options": [
+        "Altamira won, I'm sure.",
+        "I have a feeling Altamira is going to win.",
+        "I'm not sure Altamira will win."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No estoy segura de que Altamira gane.",
+      "options": [
+        "I'm not sure Altamira will win (a woman speaking).",
+        "I have a feeling Altamira will win (a woman speaking).",
+        "I'm sure Altamira won (a woman speaking)."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tengo la impresión de que el concejo no escucha.",
+      "options": [
+        "I have a feeling the council doesn't listen.",
+        "I'm not sure the council listens.",
+        "The council has no feelings."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No estoy seguro de que el concejo escuche.",
+      "options": [
+        "The council listens, I'm sure.",
+        "I'm not sure the council listens (a man speaking).",
+        "I have a feeling the council doesn't listen."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tengo la impresión de que la audiencia fue larga.",
+      "options": [
+        "I have a feeling the hearing was long.",
+        "I'm not sure the hearing was long.",
+        "I didn't go to the hearing."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No estoy seguro de que la audiencia sea mañana.",
+      "options": [
+        "I'm not sure the hearing is tomorrow (a man speaking).",
+        "I have a feeling the hearing is tomorrow.",
+        "The hearing is tomorrow, I'm sure."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Type the whole sentence, choosing *tiene* or *tenga*: Tengo la impresión de que Hernando ___ razón.",
+      "answer": "Tengo la impresión de que Hernando tiene razón.",
+      "accept": [],
+      "why": "A hunch leans one way, so the verb is the ordinary *tiene*."
+    },
+    {
+      "prompt": "Type the whole sentence, choosing *tiene* or *tenga* (you are a man): No estoy seguro de que Hernando ___ razón.",
+      "answer": "No estoy seguro de que Hernando tenga razón.",
+      "accept": [],
+      "why": "A doubt does not commit, so the verb takes its \"maybe\" form: *tenga*."
+    },
+    {
+      "prompt": "Say it: \"I have a feeling Altamira is going to win.\"",
+      "answer": "Tengo la impresión de que Altamira va a ganar.",
+      "accept": [],
+      "why": "A hunch takes the ordinary verb after *de que*."
+    },
+    {
+      "prompt": "Say it as a woman: \"I'm not sure Altamira will win.\"",
+      "answer": "No estoy segura de que Altamira gane.",
+      "accept": [],
+      "why": "A doubt takes *gane*, and a woman says *segura*."
+    },
+    {
+      "prompt": "Say it as a man: \"I'm not sure the hearing is tomorrow.\"",
+      "answer": "No estoy seguro de que la audiencia sea mañana.",
+      "accept": [],
+      "why": "A doubt takes the \"maybe\" form: *sea*."
+    },
+    {
+      "prompt": "Turn the hunch into a doubt, as a man: Tengo la impresión de que no vendrá.",
+      "answer": "No estoy seguro de que venga.",
+      "accept": [],
+      "why": "The doubt swaps the frame and puts the verb in its \"maybe\" form: *venga*."
+    },
+    {
+      "prompt": "Turn the doubt into a hunch that he is coming: No estoy seguro de que venga.",
+      "answer": "Tengo la impresión de que viene.",
+      "accept": [
+        "Tengo la impresión de que vendrá.",
+        "Tengo la impresión de que va a venir."
+      ],
+      "why": "The hunch brings back the ordinary verb: *viene*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No estoy seguro de que viene.",
+      "right": "No estoy seguro de que venga.",
+      "why": "Almost. A doubt does not commit, so the verb takes its \"maybe\" form: *venga*."
+    },
+    {
+      "wrong": "Tengo la impresión de que venga.",
+      "right": "Tengo la impresión de que viene.",
+      "why": "Almost. A hunch leans one way, so the verb stays ordinary: *viene*."
+    },
+    {
+      "wrong": "Tengo la impresión que no vendrá.",
+      "right": "Tengo la impresión de que no vendrá.",
+      "why": "Almost. This frame keeps its *de*: *impresión de que*."
+    }
+  ],
+  "personal": "Say something you have a feeling about (a team, the weather, a friend's plans) with *Tengo la impresión de que…*. Then say something you are not sure about with *No estoy seguro de que…*."
+}

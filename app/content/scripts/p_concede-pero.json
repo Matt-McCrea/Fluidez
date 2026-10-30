@@ -1,0 +1,174 @@
+{
+  "node": "p:concede-pero",
+  "hook": {
+    "line": "In a debate, jumping straight to \"no\" makes you sound like you did not listen. People who argue well nod first, then push back.",
+    "es": "Puede que tengas razón, pero yo lo veo distinto.",
+    "en": "You may be right, but I see it differently."
+  },
+  "examples": [
+    {
+      "es": "Ya, pero eso cuesta mucha plata.",
+      "en": "Sure, but that costs a lot of money."
+    },
+    {
+      "es": "De acuerdo, pero hay que pensarlo bien.",
+      "en": "All right, but we need to think it through."
+    },
+    {
+      "es": "Puede que tengas razón, pero yo lo veo distinto.",
+      "en": "You may be right (to a friend), but I see it differently."
+    },
+    {
+      "es": "Puede que usted tenga razón, pero el barrio no está de acuerdo.",
+      "en": "You may be right (formal), but the neighbourhood does not agree."
+    },
+    {
+      "es": "No dudo que la mayoría esté contenta, pero mi experiencia fue otra.",
+      "en": "I don't doubt that most people are happy, but my experience was different."
+    },
+    {
+      "es": "No dudo que el proyecto sea bueno, pero es muy caro.",
+      "en": "I don't doubt that the project is good, but it's very expensive."
+    }
+  ],
+  "rule": "Give the other person a point, then say your *pero*. There are three levels.\n\nCasual: *Ya, pero…* or *De acuerdo, pero…*\nNeutral: *Puede que tengas razón, pero…*\nFormal: *No dudo que…, pero…*\n\nAfter *puede que* and *no dudo que*, the verb takes its \"maybe\" form: *tengas*, *tenga*, *esté*, *sea*. You are granting the point, not swearing to it. After *ya* and *de acuerdo* the sentence is ordinary.\n\nEnglish says \"but\" and gets on with it. Spanish usually pays a small compliment first. Skip it and you sound combative.",
+  "smallPrint": "Teachers call this a concession: you accept part of the other view before you counter it.",
+  "readAndPick": [
+    {
+      "es": "Ya, pero eso cuesta mucha plata.",
+      "options": [
+        "Yes, and that costs a lot of money.",
+        "No, that costs a lot of money.",
+        "Sure, but that costs a lot of money."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "De acuerdo, pero hay que pensarlo bien.",
+      "options": [
+        "I disagree, and we need to think it through.",
+        "All right, but we need to think it through.",
+        "All right, so there is no need to think."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Puede que tengas razón, pero yo lo veo distinto.",
+      "options": [
+        "You may be right, but I see it differently.",
+        "I may be right, but you see it differently.",
+        "You are right, and I see it the same way."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No dudo que la mayoría esté contenta, pero mi experiencia fue otra.",
+      "options": [
+        "I doubt that most people are happy, but my experience was different.",
+        "I don't doubt that most people are happy, and my experience was the same.",
+        "I don't doubt that most people are happy, but my experience was different."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Puede que usted tenga razón, pero el barrio no está de acuerdo.",
+      "options": [
+        "You may be right (to a friend), but the neighbourhood does not agree.",
+        "You may be right (formal), but the neighbourhood does not agree.",
+        "The neighbourhood may be right, but you do not agree."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No dudo que el proyecto sea bueno, pero es muy caro.",
+      "options": [
+        "I don't doubt that the project is good, but it's very expensive.",
+        "I doubt that the project is good, and it's very expensive.",
+        "I don't doubt that the project is good, so it's cheap."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "De acuerdo, pero primero hablemos con Hernando.",
+      "options": [
+        "All right, and I already talked to Hernando.",
+        "I disagree, but let's talk to Hernando.",
+        "All right, but let's talk to Hernando first."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Puede que Vale tenga razón, pero yo no estoy convencido.",
+      "options": [
+        "Vale may be right, and I'm convinced (a man speaking).",
+        "Vale may be right, but I'm not convinced (a man speaking).",
+        "Vale is right, but I'm not convinced (a man speaking)."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Type the whole sentence, choosing *sea* or *es*: No dudo que el plan ___ bueno, pero es caro.",
+      "answer": "No dudo que el plan sea bueno, pero es caro.",
+      "accept": [],
+      "why": "After *no dudo que* the verb takes its \"maybe\" form: *sea*."
+    },
+    {
+      "prompt": "Type the whole sentence, choosing *tienes* or *tengas*: Puede que ___ razón, pero yo lo veo distinto.",
+      "answer": "Puede que tengas razón, pero yo lo veo distinto.",
+      "accept": [],
+      "why": "After *puede que* the verb takes its \"maybe\" form: *tengas*."
+    },
+    {
+      "prompt": "Say it: \"Sure, but that costs a lot of money.\"",
+      "answer": "Ya, pero eso cuesta mucha plata.",
+      "accept": [
+        "Ya, pero cuesta mucha plata."
+      ],
+      "why": "*Ya, pero…* is the casual way to nod first."
+    },
+    {
+      "prompt": "Say it to a friend: \"You may be right, but we have no money.\"",
+      "answer": "Puede que tengas razón, pero no tenemos plata.",
+      "accept": [],
+      "why": "*Puede que* plus *tengas* grants the point to a friend."
+    },
+    {
+      "prompt": "Say it: \"All right, but first let's talk to Hernando.\"",
+      "answer": "De acuerdo, pero primero hablemos con Hernando.",
+      "accept": [],
+      "why": "*De acuerdo, pero…* grants the point and then adds your condition."
+    },
+    {
+      "prompt": "Make it formal, speaking to one person you address as *usted*: Puede que tengas razón, pero yo lo veo distinto.",
+      "answer": "Puede que usted tenga razón, pero yo lo veo distinto.",
+      "accept": [],
+      "why": "With *usted* the verb changes from *tengas* to *tenga*."
+    },
+    {
+      "prompt": "Say it: \"I don't doubt that Vale is happy, but my experience was different.\" (Vale is a woman.)",
+      "answer": "No dudo que Vale esté contenta, pero mi experiencia fue otra.",
+      "accept": [],
+      "why": "*No dudo que* is the formal nod, and *esté* is the \"maybe\" form."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Pero eso cuesta mucha plata.",
+      "right": "Ya, pero eso cuesta mucha plata.",
+      "why": "Almost. A bare *pero* sounds combative; a small *ya* or *de acuerdo* first makes it a conversation."
+    },
+    {
+      "wrong": "Puede que tienes razón, pero yo lo veo distinto.",
+      "right": "Puede que tengas razón, pero yo lo veo distinto.",
+      "why": "Almost. *Puede que* is \"maybe\", so the verb takes its \"maybe\" form: *tengas*, not *tienes*."
+    },
+    {
+      "wrong": "No dudo que el proyecto es bueno, pero es muy caro.",
+      "right": "No dudo que el proyecto sea bueno, pero es muy caro.",
+      "why": "Almost. You are granting the point, not swearing to it, so after *no dudo que* use *sea*."
+    }
+  ],
+  "personal": "Think of something a friend or family member believes that you only half agree with. Say it with *Puede que tengas razón, pero…* and finish the sentence with your own view."
+}

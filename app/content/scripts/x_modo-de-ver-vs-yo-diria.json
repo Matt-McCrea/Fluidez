@@ -1,0 +1,172 @@
+{
+  "node": "x:modo-de-ver-vs-yo-diria",
+  "hook": {
+    "line": "Sometimes you want to plant a flag; sometimes you want to float an opinion and see how it lands. Spanish has one phrase for each.",
+    "es": "A mi modo de ver, es la mejor opción.",
+    "en": "The way I see it, it's the best option."
+  },
+  "examples": [
+    {
+      "es": "A mi modo de ver, es la mejor opción.",
+      "en": "The way I see it, it's the best option."
+    },
+    {
+      "es": "Yo diría que es la mejor opción.",
+      "en": "I'd say it's the best option."
+    },
+    {
+      "es": "A mi modo de ver, Altamira se equivoca.",
+      "en": "The way I see it, Altamira is wrong."
+    },
+    {
+      "es": "Yo diría que Altamira se equivoca.",
+      "en": "I'd say Altamira is wrong."
+    },
+    {
+      "es": "A mi modo de ver, la plaza vale la pena.",
+      "en": "The way I see it, the square is worth it."
+    },
+    {
+      "es": "Yo diría que la plaza vale la pena.",
+      "en": "I'd say the square is worth it."
+    }
+  ],
+  "rule": "Both give your opinion, and both are followed by an ordinary verb: *es*, *se equivoca*, *vale*.\n\n*A mi modo de ver, …* is firm. It announces your position, it takes a comma, and you are ready to defend it. It suits a hearing, an essay or a meeting.\n\n*Yo diría que…* is tentative. It leaves room for the other person to disagree. It suits a chat, or a view you are not sure of.\n\nEnglish does the same with \"the way I see it\" and \"I'd say\". Pick the one that matches how sure you are.",
+  "smallPrint": "Teachers say the first phrase asserts an opinion and the second one hedges it.",
+  "readAndPick": [
+    {
+      "es": "A mi modo de ver, es la mejor opción.",
+      "options": [
+        "The way I see it, it's the best option.",
+        "I'd say it's the best option.",
+        "It might be the best option."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Yo diría que es la mejor opción.",
+      "options": [
+        "I'd say it's the best option.",
+        "The way I see it, it's the best option.",
+        "It's definitely the best option."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A mi modo de ver, Altamira se equivoca.",
+      "options": [
+        "Altamira is wrong, maybe.",
+        "The way I see it, Altamira is wrong.",
+        "I'd say Altamira is wrong."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Yo diría que Altamira se equivoca.",
+      "options": [
+        "I'd say Altamira is wrong.",
+        "The way I see it, Altamira is wrong.",
+        "Altamira says it is wrong."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A mi modo de ver, la plaza vale la pena.",
+      "options": [
+        "The way I see it, the square is worth it.",
+        "I'd say the square is worth it.",
+        "I don't know if the square is worth it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Yo diría que la plaza vale la pena.",
+      "options": [
+        "The square is worth it, I insist.",
+        "I'd say the square is worth it.",
+        "The way I see it, the square is worth it."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "A mi modo de ver, el patrimonio es importante.",
+      "options": [
+        "The way I see it, heritage is important.",
+        "I'd say heritage is important.",
+        "Heritage might be important."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Yo diría que el patrimonio es importante.",
+      "options": [
+        "I'd say heritage is important.",
+        "The way I see it, heritage is important.",
+        "I insist that heritage is important."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Type the whole sentence, choosing *A mi modo de ver* or *En mi modo de ver*: ___, es la mejor opción.",
+      "answer": "A mi modo de ver, es la mejor opción.",
+      "accept": [],
+      "why": "The firm phrase starts with *a*: *a mi modo de ver*."
+    },
+    {
+      "prompt": "Type the whole sentence, choosing *es* or *sea*: Yo diría que ___ la mejor opción.",
+      "answer": "Yo diría que es la mejor opción.",
+      "accept": [],
+      "why": "*Yo diría que* is followed by an ordinary verb: *es*."
+    },
+    {
+      "prompt": "Say it firmly: \"The way I see it, Altamira is wrong.\"",
+      "answer": "A mi modo de ver, Altamira se equivoca.",
+      "accept": [],
+      "why": "The firm phrase announces your position."
+    },
+    {
+      "prompt": "Say it tentatively: \"I'd say Altamira is wrong.\"",
+      "answer": "Yo diría que Altamira se equivoca.",
+      "accept": [],
+      "why": "*Yo diría que* leaves room for the other person to disagree."
+    },
+    {
+      "prompt": "Say it firmly: \"The way I see it, the proposal is very expensive.\"",
+      "answer": "A mi modo de ver, la propuesta es muy cara.",
+      "accept": [],
+      "why": "The firm phrase takes a comma and then a normal sentence."
+    },
+    {
+      "prompt": "Soften it: A mi modo de ver, el patrimonio es importante.",
+      "answer": "Yo diría que el patrimonio es importante.",
+      "accept": [],
+      "why": "Swap the firm phrase for *Yo diría que* and drop the comma."
+    },
+    {
+      "prompt": "Make it firm: Yo diría que la plaza vale la pena.",
+      "answer": "A mi modo de ver, la plaza vale la pena.",
+      "accept": [],
+      "why": "Swap *Yo diría que* for the firm phrase and add the comma."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "En mi modo de ver, es la mejor opción.",
+      "right": "A mi modo de ver, es la mejor opción.",
+      "why": "Almost. English says \"in my view\", but this phrase starts with *a*."
+    },
+    {
+      "wrong": "Yo diría que sea la mejor opción.",
+      "right": "Yo diría que es la mejor opción.",
+      "why": "Almost. You are giving an opinion, not a doubt, so the verb stays ordinary: *es*."
+    },
+    {
+      "wrong": "A mi modo de ver que es la mejor opción.",
+      "right": "A mi modo de ver, es la mejor opción.",
+      "why": "Almost. The firm phrase ends with a comma, not *que*."
+    }
+  ],
+  "personal": "Give your view on something local, like a restaurant or a bus route. Say it firmly with *A mi modo de ver, …*, then again more gently with *Yo diría que…*."
+}

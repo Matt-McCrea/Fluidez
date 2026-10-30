@@ -1,0 +1,172 @@
+{
+  "node": "p:se-podria-objetar-que",
+  "hook": {
+    "line": "The strongest way to win an argument is to raise the best objection yourself, then answer it. Spanish has a polite, slightly formal phrase for that.",
+    "es": "Se podría objetar que el proyecto es caro.",
+    "en": "One could object that the project is expensive."
+  },
+  "examples": [
+    {
+      "es": "Se podría objetar que el proyecto es caro.",
+      "en": "One could object that the project is expensive."
+    },
+    {
+      "es": "Se podría objetar que nadie vive en el centro. Sin embargo, el barrio sigue vivo.",
+      "en": "One could object that nobody lives downtown. However, the neighbourhood is still alive."
+    },
+    {
+      "es": "Se podría argumentar que el cambio cuesta mucho.",
+      "en": "One could argue that the change costs a lot."
+    },
+    {
+      "es": "¿Quién podría negar que el barrio necesita ayuda?",
+      "en": "Who could deny that the neighbourhood needs help?"
+    },
+    {
+      "es": "Es caro; ahora bien, dura mucho más.",
+      "en": "It's expensive; having said that, it lasts much longer."
+    }
+  ],
+  "rule": "*Se podría objetar que…* means \"one could object that…\". Nobody in particular objects; you voice the objection for them. The *se* keeps it impersonal and the *podría* keeps it polite.\n\nThen answer it right away with *Sin embargo, …* (however) or *ahora bien, …*. After *que* the verb is ordinary: *es*, *cuesta*, *vive*.\n\nA rhetorical question does the same job: *¿Quién podría negar que…?*\n\nRaise the objection and leave it unanswered, and your opponent gets to keep it.",
+  "smallPrint": "Teachers call this a counterargument followed by a refutation.",
+  "readAndPick": [
+    {
+      "es": "Se podría objetar que el proyecto es caro.",
+      "options": [
+        "One could object that the project is expensive.",
+        "I object because the project is expensive.",
+        "The project could be expensive."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se podría objetar que nadie vive en el centro. Sin embargo, el barrio sigue vivo.",
+      "options": [
+        "I object that nobody lives downtown. However, the neighbourhood is dead.",
+        "One could object that nobody lives downtown. However, the neighbourhood is still alive.",
+        "Nobody objects to living downtown, and the neighbourhood is still alive."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Quién podría negar que el barrio necesita ayuda?",
+      "options": [
+        "Who could deny that the neighbourhood needs help?",
+        "Who could help the neighbourhood?",
+        "Nobody denies that the neighbourhood needs help."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es caro; ahora bien, dura mucho más.",
+      "options": [
+        "It's expensive because it lasts much longer.",
+        "It's cheap, and it lasts much longer.",
+        "It's expensive; having said that, it lasts much longer."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Se podría argumentar que el cambio cuesta mucho.",
+      "options": [
+        "I could argue that the change costs a lot.",
+        "One could argue that the change costs a lot.",
+        "They argued that the change costs a lot."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Podría objetar que el café es pequeño.",
+      "options": [
+        "I could object that the café is small.",
+        "One could object that the café is small.",
+        "He objected that the café is small."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se podría objetar que la plaza es pequeña. Sin embargo, todos la usan.",
+      "options": [
+        "Everyone objects that the square is small. However, they use it.",
+        "One could object that the square is small. However, everyone uses it.",
+        "One could object that the square is small, because everyone uses it."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Se podría objetar que Altamira paga bien. Sin embargo, nadie en el barrio quiere irse.",
+      "options": [
+        "Altamira objects that people pay well. However, nobody wants to leave.",
+        "One could object that Altamira pays well. However, nobody in the neighbourhood wants to leave.",
+        "One could object that Altamira pays well, so nobody wants to leave."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Type the whole sentence, choosing *Se podría* or *Podría*, to say that nobody in particular objects: ___ objetar que el café es pequeño.",
+      "answer": "Se podría objetar que el café es pequeño.",
+      "accept": [],
+      "why": "*Se podría* is the impersonal \"one could\"; *podría* alone would be \"I could\"."
+    },
+    {
+      "prompt": "Say it: \"One could object that the change costs a lot.\"",
+      "answer": "Se podría objetar que el cambio cuesta mucho.",
+      "accept": [],
+      "why": "After *se podría objetar que* the verb is ordinary: *cuesta*."
+    },
+    {
+      "prompt": "Say it: \"Who could deny that the square is important?\"",
+      "answer": "¿Quién podría negar que la plaza es importante?",
+      "accept": [],
+      "why": "The rhetorical question uses *podría* and then *que*."
+    },
+    {
+      "prompt": "Say it: \"One could argue that the change costs a lot.\"",
+      "answer": "Se podría argumentar que el cambio cuesta mucho.",
+      "accept": [],
+      "why": "*Argumentar* works in the same frame as *objetar*."
+    },
+    {
+      "prompt": "Say both sentences: \"One could object that nobody lives downtown. However, the neighbourhood is still alive.\"",
+      "answer": "Se podría objetar que nadie vive en el centro. Sin embargo, el barrio sigue vivo.",
+      "accept": [
+        "Se podría objetar que nadie vive en el centro; sin embargo, el barrio sigue vivo."
+      ],
+      "why": "The objection comes first and *Sin embargo* brings your answer."
+    },
+    {
+      "prompt": "Turn the plain statement into an objection that starts with *Se podría objetar que*: El proyecto es caro.",
+      "answer": "Se podría objetar que el proyecto es caro.",
+      "accept": [],
+      "why": "Put the plain statement after *que* and keep the verb as it is."
+    },
+    {
+      "prompt": "Say it: \"It's expensive; having said that, it lasts much longer.\"",
+      "answer": "Es caro; ahora bien, dura mucho más.",
+      "accept": [
+        "Es caro. Ahora bien, dura mucho más."
+      ],
+      "why": "*Ahora bien* turns the sentence toward your reply."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Se podría objetar de que el proyecto es caro.",
+      "right": "Se podría objetar que el proyecto es caro.",
+      "why": "Almost. English speakers add a little preposition here; Spanish goes straight to *que*."
+    },
+    {
+      "wrong": "Se podría objetar que sea caro.",
+      "right": "Se podría objetar que es caro.",
+      "why": "Almost. You are stating what the objector would claim, so the verb stays ordinary: *es*."
+    },
+    {
+      "wrong": "Se podría objetar que el proyecto es caro.",
+      "right": "Se podría objetar que el proyecto es caro. Sin embargo, dura mucho más.",
+      "why": "An objection with no answer leaves your opponent the last word, so follow it with *Sin embargo*."
+    }
+  ],
+  "personal": "Pick something you believe strongly. Write the best objection to it with *Se podría objetar que…*, then answer it with *Sin embargo, …*."
+}

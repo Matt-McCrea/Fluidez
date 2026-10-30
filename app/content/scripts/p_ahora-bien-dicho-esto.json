@@ -1,0 +1,174 @@
+{
+  "node": "p:ahora-bien-dicho-esto",
+  "hook": {
+    "line": "When you have made your point, a good speaker adds the one thing that keeps it honest. Without it, a text reads like a leaflet.",
+    "es": "Dicho esto, la propuesta tiene cosas buenas.",
+    "en": "That said, the proposal has some good points."
+  },
+  "examples": [
+    {
+      "es": "Dicho esto, la propuesta tiene cosas buenas.",
+      "en": "That said, the proposal has some good points."
+    },
+    {
+      "es": "Ahora bien, el costo es muy alto.",
+      "en": "Having said that, the cost is very high."
+    },
+    {
+      "es": "Dicho esto, habría que hablar con los vecinos.",
+      "en": "That said, we would need to talk to the neighbours."
+    },
+    {
+      "es": "Ahora bien, no todos piensan igual.",
+      "en": "Having said that, not everyone thinks alike."
+    },
+    {
+      "es": "Dicho esto, habría que pensarlo bien.",
+      "en": "That said, we would need to think it through."
+    }
+  ],
+  "rule": "Make your main point first. Then add your reservation with *Dicho esto, …* (that said) or *Ahora bien, …* (having said that).\n\nBoth go at the start of the new sentence, followed by a comma. Nothing changes in the verbs.\n\nTo say what would need doing, use *habría que* plus an infinitive: *habría que pensarlo bien*.\n\nThis is the voice of a meeting, a debate or an essay. With friends you would just say *pero*.",
+  "smallPrint": "Teachers call these discourse markers: small phrases that signal where an argument is turning.",
+  "readAndPick": [
+    {
+      "es": "Dicho esto, la propuesta tiene cosas buenas.",
+      "options": [
+        "That said, the proposal has some good points.",
+        "The proposal says it has good points.",
+        "That said, the proposal has no good points."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ahora bien, el costo es muy alto.",
+      "options": [
+        "Having said that, the cost is very high.",
+        "Now, the cost is very high.",
+        "The cost is very high now."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Dicho esto, habría que hablar con los vecinos.",
+      "options": [
+        "The neighbours said we should talk.",
+        "That said, we would need to talk to the neighbours.",
+        "That said, I talked to the neighbours."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Ahora bien, no todos piensan igual.",
+      "options": [
+        "Having said that, not everyone thinks alike.",
+        "Having said that, everyone thinks alike.",
+        "Not everyone thinks now."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Dicho esto, habría que pensarlo bien.",
+      "options": [
+        "That said, we would need to think it through.",
+        "That said, I thought it through.",
+        "That said, there is no need to think."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ahora bien, Vale no está de acuerdo.",
+      "options": [
+        "Having said that, Vale doesn't agree.",
+        "Vale says she agrees now.",
+        "Having said that, Vale agrees."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Dicho esto, el barrio necesita un cambio.",
+      "options": [
+        "That said, the neighbourhood needs a change.",
+        "The neighbourhood needs a change, which I have said.",
+        "The neighbourhood has said it needs a change."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ahora bien, el proyecto tiene un problema.",
+      "options": [
+        "Now the project has a problem, so I said so.",
+        "Having said that, the project has a problem.",
+        "The project has a problem now."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Type the whole sentence, choosing *habría que* or *habría*: Dicho esto, ___ pensarlo bien.",
+      "answer": "Dicho esto, habría que pensarlo bien.",
+      "accept": [],
+      "why": "The frame is *habría que* plus an infinitive."
+    },
+    {
+      "prompt": "Say it: \"That said, the proposal has some good points.\"",
+      "answer": "Dicho esto, la propuesta tiene cosas buenas.",
+      "accept": [
+        "Dicho eso, la propuesta tiene cosas buenas."
+      ],
+      "why": "*Dicho esto* opens the reservation and takes a comma."
+    },
+    {
+      "prompt": "Say it: \"Having said that, the cost is very high.\"",
+      "answer": "Ahora bien, el costo es muy alto.",
+      "accept": [],
+      "why": "*Ahora bien* is the other way to open the reservation."
+    },
+    {
+      "prompt": "Say it: \"Having said that, not everyone thinks alike.\"",
+      "answer": "Ahora bien, no todos piensan igual.",
+      "accept": [],
+      "why": "The verb does not change after *ahora bien*."
+    },
+    {
+      "prompt": "Say it: \"That said, we would need to talk to the neighbours.\"",
+      "answer": "Dicho esto, habría que hablar con los vecinos.",
+      "accept": [
+        "Ahora bien, habría que hablar con los vecinos."
+      ],
+      "why": "*Habría que* plus an infinitive says what would need to be done."
+    },
+    {
+      "prompt": "Say both sentences: \"The square is important. That said, the project has a problem.\"",
+      "answer": "La plaza es importante. Dicho esto, el proyecto tiene un problema.",
+      "accept": [
+        "La plaza es importante. Ahora bien, el proyecto tiene un problema."
+      ],
+      "why": "The main point comes first and the reservation follows."
+    },
+    {
+      "prompt": "Swap the opener for the other one: Dicho esto, el barrio necesita un cambio.",
+      "answer": "Ahora bien, el barrio necesita un cambio.",
+      "accept": [],
+      "why": "*Ahora bien* and *dicho esto* do the same job here."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Dicho esto que la propuesta tiene cosas buenas.",
+      "right": "Dicho esto, la propuesta tiene cosas buenas.",
+      "why": "Almost. *Dicho esto* is a separate opener, so it takes a comma and no *que*."
+    },
+    {
+      "wrong": "Ahora, el costo es muy alto.",
+      "right": "Ahora bien, el costo es muy alto.",
+      "why": "Almost. *Ahora* alone means \"now\"; you need *bien* to get \"having said that\"."
+    },
+    {
+      "wrong": "Después de decir esto, la propuesta tiene cosas buenas.",
+      "right": "Dicho esto, la propuesta tiene cosas buenas.",
+      "why": "A word-for-word \"after saying this\" is clumsy; *dicho esto* is the short form people use."
+    }
+  ],
+  "personal": "Say one thing you like about your town or neighbourhood. Then add a reservation with *Dicho esto, …* or *Ahora bien, …*."
+}
