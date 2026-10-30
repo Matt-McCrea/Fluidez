@@ -1,0 +1,173 @@
+{
+  "node": "p:no-hasta",
+  "hook": {
+    "line": "Tomás wants answers now, but the lawyer's office keeps telling him the same thing: not yet. In Spanish, not until is built from a small word you might skip, the *no*.",
+    "es": "No firmo nada hasta que hable con la abogada.",
+    "en": "I'm not signing anything until I talk to the lawyer."
+  },
+  "examples": [
+    {
+      "es": "No abren hasta las diez.",
+      "en": "They don't open until ten."
+    },
+    {
+      "es": "La abogada no llega hasta el lunes.",
+      "en": "The lawyer doesn't get here until Monday."
+    },
+    {
+      "es": "No cierro hasta las ocho.",
+      "en": "I don't close until eight."
+    },
+    {
+      "es": "No me voy hasta que llegues.",
+      "en": "I'm not leaving until you get here. (to a friend)"
+    },
+    {
+      "es": "No he hablado con Vale desde ayer.",
+      "en": "I haven't spoken to Vale since yesterday."
+    },
+    {
+      "es": "Abren hasta las diez.",
+      "en": "They are open until ten."
+    }
+  ],
+  "rule": "*Hasta* means until, but the *no* decides the meaning.\n\n*No abren hasta las diez*: they open at ten, not before.\n*Abren hasta las diez*: they are open until ten, then they close.\n\nWith a verb for a single moment (arrive, open, leave), keep the *no* when you mean not until.\n\n*Desde* works the same way for since: *No he hablado con Vale desde ayer.*\n\nFor a whole clause, use *hasta que* and the other vowel, because it hasn't happened yet: *No me voy hasta que llegues.*",
+  "smallPrint": "Teachers call this negation with *hasta*. In parts of Mexico, *llega hasta las seis* alone can mean not until six. In Colombia, keep the *no*.",
+  "readAndPick": [
+    {
+      "es": "No abren hasta las diez.",
+      "options": [
+        "They are open until ten.",
+        "They don't open until ten."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Abren hasta las diez.",
+      "options": [
+        "They are open until ten.",
+        "They don't open until ten."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La abogada no llega hasta el lunes.",
+      "options": [
+        "The lawyer is here until Monday.",
+        "The lawyer doesn't get here until Monday.",
+        "The lawyer never gets here on Monday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No empezamos hasta que llegue Hernando.",
+      "options": [
+        "We won't start until Hernando gets here.",
+        "We started when Hernando arrived.",
+        "We never start with Hernando."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No he hablado con Vale desde ayer.",
+      "options": [
+        "I spoke to Vale yesterday.",
+        "I haven't spoken to Vale since yesterday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No me voy hasta que llegues.",
+      "options": [
+        "I left when you arrived.",
+        "I'm leaving as soon as you arrive.",
+        "I'm not leaving until you arrive."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No hay clientes hasta las nueve.",
+      "options": [
+        "There are customers until nine.",
+        "There are no customers until nine.",
+        "There are no customers after nine."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hernando no viene hasta mañana.",
+      "options": [
+        "Hernando isn't coming tomorrow.",
+        "Hernando came yesterday.",
+        "Hernando doesn't come until tomorrow."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *hasta* or *desde* and type the whole sentence: No abren ___ las diez. (They don't open until ten.)",
+      "answer": "No abren hasta las diez.",
+      "accept": [],
+      "why": "Not until is *no* plus *hasta*."
+    },
+    {
+      "prompt": "Say: The lawyer doesn't get here until Monday.",
+      "answer": "La abogada no llega hasta el lunes.",
+      "accept": [
+        "No llega la abogada hasta el lunes."
+      ],
+      "why": "Keep the *no* in front of the verb, then *hasta* and the time."
+    },
+    {
+      "prompt": "Say: I don't close until eight.",
+      "answer": "No cierro hasta las ocho.",
+      "accept": [],
+      "why": "*No cierro hasta* is not until, in the first person."
+    },
+    {
+      "prompt": "Say: I haven't spoken to Vale since yesterday.",
+      "answer": "No he hablado con Vale desde ayer.",
+      "accept": [],
+      "why": "*Desde* with a *no* works like *hasta*: since a point in time."
+    },
+    {
+      "prompt": "Turn it into not until: *Hernando viene mañana.* (Hernando doesn't come until tomorrow.)",
+      "answer": "Hernando no viene hasta mañana.",
+      "accept": [],
+      "why": "Put *no* before the verb and *hasta* before the time."
+    },
+    {
+      "prompt": "Tell a friend: I'm not leaving until you get here.",
+      "answer": "No me voy hasta que llegues.",
+      "accept": [
+        "No me voy hasta que tú llegues."
+      ],
+      "why": "*Hasta que* about something still to come takes the other vowel: *llegues*."
+    },
+    {
+      "prompt": "Take out the *no* from *No abren hasta las diez.* What do you say now? (They are open until ten.)",
+      "answer": "Abren hasta las diez.",
+      "accept": [],
+      "why": "Without *no*, *hasta* simply means until, so they close at ten."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La abogada llega hasta el lunes.",
+      "right": "La abogada no llega hasta el lunes.",
+      "why": "Without *no*, *hasta* means until, as if she were here until Monday. For not until, keep the *no*."
+    },
+    {
+      "wrong": "No abren hasta que las diez.",
+      "right": "No abren hasta las diez.",
+      "why": "*Hasta que* is for a clause with a verb. A plain time takes just *hasta*."
+    },
+    {
+      "wrong": "No me voy hasta que llegas.",
+      "right": "No me voy hasta que llegues.",
+      "why": "It hasn't happened yet, so *hasta que* takes the other vowel: *llegues*."
+    }
+  ],
+  "personal": "Say one thing you won't do until something else happens, with *no... hasta*."
+}

@@ -1,0 +1,188 @@
+{
+  "node": "g:subj-cuando-future",
+  "hook": {
+    "line": "Vale keeps asking when the café will really be theirs, and nobody can say. When you talk about something that hasn't happened yet, Spanish changes the verb after *cuando*. It is the same vowel switch you already know.",
+    "es": "Cuando el café sea nuestro, vamos a cambiar el menú.",
+    "en": "When the café is ours, we're going to change the menu."
+  },
+  "examples": [
+    {
+      "es": "Cuando llegues, llámame.",
+      "en": "When you get here, call me. (to a friend)"
+    },
+    {
+      "es": "En cuanto sepa algo, te aviso.",
+      "en": "As soon as I know anything, I'll let you know. (to a friend)"
+    },
+    {
+      "es": "Cuando tengamos plata, compramos el edificio.",
+      "en": "When we have the money, we'll buy the building."
+    },
+    {
+      "es": "Espera hasta que llegue la abogada.",
+      "en": "Wait until the lawyer gets here. (to a friend)"
+    },
+    {
+      "es": "¿Qué vas a hacer cuando termines?",
+      "en": "What are you going to do when you finish? (to a friend)"
+    },
+    {
+      "es": "Cuando Vale llegue, empezamos.",
+      "en": "When Vale gets here, we'll start."
+    },
+    {
+      "es": "Voy a descansar cuando termine el mes.",
+      "en": "I'm going to rest when the month ends."
+    }
+  ],
+  "rule": "English hides this one. *When you get here* looks like the present, even though it is about later. Spanish shows it.\n\nWhen *cuando* points to something that hasn't happened yet, the verb after it takes the other vowel: *-ar* verbs take *e*, *-er* and *-ir* verbs take *a*. *Llegar* gives *llegues*, *terminar* gives *termine*, and the irregular ones you know come along: *sepa*, *tengamos*, *sea*, *salga*.\n\nThe same goes for *en cuanto* (as soon as) and *hasta que* (until).\n\nThe test: is it still in the future? Then use this form. The other half of the sentence is usually a future, a command or the plain present: *llámame*, *te aviso*, *empezamos*.",
+  "smallPrint": "Teachers call this the subjunctive in time clauses. What matters is not whether you know the date, only whether it has happened yet.",
+  "readAndPick": [
+    {
+      "es": "Cuando llegues, llámame.",
+      "options": [
+        "When you get here, call me.",
+        "When you got here, you called me.",
+        "Whenever you get here, you call me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Cuando llegas, me llamas.",
+      "options": [
+        "When you get here, call me.",
+        "Whenever you arrive, you call me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "En cuanto sepa algo, te aviso.",
+      "options": [
+        "As soon as I knew something, I told you.",
+        "As soon as you know something, you'll tell me.",
+        "As soon as I know something, I'll tell you."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Cuando termine la reunión, te llamo.",
+      "options": [
+        "When the meeting ends, I'll call you.",
+        "When the meeting ended, I called you."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Cuando terminó la reunión, te llamé.",
+      "options": [
+        "When the meeting ends, I'll call you.",
+        "When the meeting ended, I called you."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Espera hasta que llegue la abogada.",
+      "options": [
+        "Wait, the lawyer already arrived.",
+        "Wait until the lawyer gets here."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cuando tengamos plata, compramos el edificio.",
+      "options": [
+        "Whenever we have money, we buy the building.",
+        "When we have the money, we'll buy the building.",
+        "When we had the money, we bought the building."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cuando Vale llegue, empezamos.",
+      "options": [
+        "When Vale gets here every day, we start.",
+        "When Vale got here, we started.",
+        "When Vale gets here, we'll start."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *llegas* or *llegues* and type the whole sentence: Cuando ___, llámame. (When you get here, call me. To a friend.)",
+      "answer": "Cuando llegues, llámame.",
+      "accept": [],
+      "why": "It hasn't happened yet, so *cuando* takes the other vowel: *llegues*."
+    },
+    {
+      "prompt": "Choose *sé* or *sepa* and type the whole sentence: En cuanto ___ algo, te aviso. (As soon as I know anything, I'll let you know.)",
+      "answer": "En cuanto sepa algo, te aviso.",
+      "accept": [
+        "Te aviso en cuanto sepa algo."
+      ],
+      "why": "It is still in the future, so you need the other vowel: *sepa*."
+    },
+    {
+      "prompt": "Say: When Vale gets here, we'll start.",
+      "answer": "Cuando Vale llegue, empezamos.",
+      "accept": [
+        "Cuando llegue Vale, empezamos.",
+        "Empezamos cuando Vale llegue.",
+        "Empezamos cuando llegue Vale."
+      ],
+      "why": "Vale's arrival is still to come, so *llegue*."
+    },
+    {
+      "prompt": "Tell a friend: Wait until the lawyer gets here.",
+      "answer": "Espera hasta que llegue la abogada.",
+      "accept": [
+        "Espera hasta que la abogada llegue."
+      ],
+      "why": "*Hasta que* about the future works the same way: *llegue*."
+    },
+    {
+      "prompt": "Say: When we have the money, we'll buy the building.",
+      "answer": "Cuando tengamos plata, compramos el edificio.",
+      "accept": [
+        "Cuando tengamos la plata, compramos el edificio.",
+        "Compramos el edificio cuando tengamos plata."
+      ],
+      "why": "*Tenemos* becomes *tengamos* when the money is still to come."
+    },
+    {
+      "prompt": "Change it from a habit to something still to come: *Cuando salgo de la reunión, te llamo.* (When I get out of the meeting, I'll call you.)",
+      "answer": "Cuando salga de la reunión, te llamo.",
+      "accept": [],
+      "why": "Only the verb after *cuando* changes: *salgo* becomes *salga*."
+    },
+    {
+      "prompt": "Ask a friend: What are you going to do when you finish?",
+      "answer": "¿Qué vas a hacer cuando termines?",
+      "accept": [],
+      "why": "Finishing is still ahead, so *termines*, the *-ar* verb with an *e*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Cuando llegas, llámame.",
+      "right": "Cuando llegues, llámame.",
+      "why": "Almost. *Llegas* is for a habit or a fact. For something still to come, use *llegues*."
+    },
+    {
+      "wrong": "Cuando llegaré, te llamo.",
+      "right": "Cuando llegue, te llamo.",
+      "why": "English never puts *will* after *when*, and Spanish doesn't put the future there either."
+    },
+    {
+      "wrong": "Espera hasta que llega la abogada.",
+      "right": "Espera hasta que llegue la abogada.",
+      "why": "The lawyer hasn't arrived yet, so *hasta que* wants the other vowel."
+    },
+    {
+      "wrong": "Cuando llegue ayer, Vale ya estaba aquí.",
+      "right": "Cuando llegué ayer, Vale ya estaba aquí.",
+      "why": "Yesterday has already happened, so use the ordinary past. The accent makes *llegué* (I arrived) different from *llegue*."
+    }
+  ],
+  "personal": "Say something true about your own near future with *cuando* or *en cuanto*."
+}
