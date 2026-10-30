@@ -1,0 +1,189 @@
+{
+  "node": "g:consequence-connectors",
+  "hook": {
+    "line": "Sales are down, and Tomás has to explain to Vale what that means for the café. Saying what happened is easy; saying what follows from it is where you sound like an adult.",
+    "es": "Las ventas bajaron; por lo tanto, cerramos los lunes.",
+    "en": "Sales fell; therefore, we close on Mondays."
+  },
+  "examples": [
+    {
+      "es": "Las ventas bajaron; por lo tanto, cerramos los lunes.",
+      "en": "Sales fell; therefore, we close on Mondays."
+    },
+    {
+      "es": "Llovió mucho, de modo que nos quedamos en casa.",
+      "en": "It rained a lot, so we stayed at home."
+    },
+    {
+      "es": "Estaba tan cansado que se durmió.",
+      "en": "He was so tired that he fell asleep."
+    },
+    {
+      "es": "Hubo tanto ruido que no pude dormir.",
+      "en": "There was so much noise that I couldn't sleep."
+    },
+    {
+      "es": "Había tanta gente que no había mesas.",
+      "en": "There were so many people that there were no tables."
+    },
+    {
+      "es": "Hernando habla tan rápido que nadie lo entiende.",
+      "en": "Hernando talks so fast that nobody understands him."
+    }
+  ],
+  "rule": "Three ways to say what follows from something.\n\n*Por lo tanto* means \"therefore\". It is the formal one: it comes after a semicolon or a full stop, with a comma after it.\n\n*De modo que* means \"so\". It is the everyday one, after a comma: *Llovió, de modo que nos quedamos.*\n\nFor \"so much that\", Spanish builds a pair: *tan* + adjective or adverb + *que*, or *tanto* + noun + *que*. *Tanto* matches its noun: *tanto ruido*, *tanta gente*.\n\nEnglish often drops \"that\": \"so tired he slept\". Spanish never drops *que*.",
+  "smallPrint": "Teachers call these consecutive connectors, because they introduce the consequence.",
+  "readAndPick": [
+    {
+      "es": "Las ventas bajaron; por lo tanto, cerramos los lunes.",
+      "options": [
+        "We close on Mondays, so sales fell.",
+        "Sales fell, so we close on Mondays.",
+        "Sales fell because we close on Mondays."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Llovió mucho, de modo que nos quedamos en casa.",
+      "options": [
+        "It rained a lot, so we stayed at home.",
+        "We stayed at home, so it rained a lot.",
+        "It rained a lot, but we stayed at home."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estaba tan cansado que se durmió.",
+      "options": [
+        "He was tired, but he didn't sleep.",
+        "He fell asleep, so he was tired.",
+        "He was so tired that he fell asleep."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Hubo tanto ruido que no pude dormir.",
+      "options": [
+        "There was so little noise that I couldn't sleep.",
+        "There was so much noise that I couldn't sleep."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es tan caro que no lo compro.",
+      "options": [
+        "It's so expensive that I don't buy it.",
+        "It's cheap, so I buy it.",
+        "It's so expensive that I bought it."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No tengo tiempo; por lo tanto, no voy.",
+      "options": [
+        "I'm not going, so I have no time.",
+        "I have time, so I'm going.",
+        "I have no time, so I'm not going."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tengo tanto trabajo que no puedo salir.",
+      "options": [
+        "I have so much work that I can't go out.",
+        "I have a lot of work, but I can go out.",
+        "I can't go out, so I have work."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ella está tan ocupada que no contesta el celular.",
+      "options": [
+        "She's busy, so she answers the phone.",
+        "She isn't busy, so she doesn't answer.",
+        "She's so busy that she doesn't answer the phone."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Hay mucha gente, de modo que no hay mesa.",
+      "options": [
+        "There's no table, so there are lots of people.",
+        "There are lots of people, so there's no table."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "There are lots of people, so there's no table. Pick the right link: de modo que or tan.",
+      "answer": "Hay mucha gente, de modo que no hay mesa.",
+      "accept": [],
+      "why": "*De modo que* is the everyday \"so\", and it follows a comma."
+    },
+    {
+      "prompt": "I'm so tired (a woman speaking) that I don't want to cook. Pick the right word: tan or tanto.",
+      "answer": "Estoy tan cansada que no quiero cocinar.",
+      "accept": [],
+      "why": "*Cansada* describes you, so the word before it is *tan*."
+    },
+    {
+      "prompt": "There were so many people that there were no tables. Pick the right word: tanta or tan.",
+      "answer": "Había tanta gente que no había mesas.",
+      "accept": [],
+      "why": "*Gente* is a noun, so you need *tanta*, and it matches *gente*."
+    },
+    {
+      "prompt": "Type it in Spanish: It's so late that there are no buses anymore.",
+      "answer": "Es tan tarde que ya no hay buses.",
+      "accept": [],
+      "why": "*Tarde* works like an adjective here, so *tan* comes before it and *que* after."
+    },
+    {
+      "prompt": "Type it in Spanish: There was so much noise that I couldn't sleep.",
+      "answer": "Hubo tanto ruido que no pude dormir.",
+      "accept": [
+        "Había tanto ruido que no pude dormir."
+      ],
+      "why": "*Ruido* is masculine, so *tanto*, and *que* introduces the result."
+    },
+    {
+      "prompt": "Join with por lo tanto (formal): No tengo tiempo. No voy.",
+      "answer": "No tengo tiempo; por lo tanto, no voy.",
+      "accept": [
+        "No tengo tiempo. Por lo tanto, no voy.",
+        "No tengo tiempo, por lo tanto, no voy."
+      ],
+      "why": "*Por lo tanto* sits between the two ideas, with a comma after it."
+    },
+    {
+      "prompt": "Join with de modo que: No llegó el pan. No abrimos.",
+      "answer": "No llegó el pan, de modo que no abrimos.",
+      "accept": [],
+      "why": "*De modo que* follows a comma and keeps its *que*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Estaba tan cansado se durmió.",
+      "right": "Estaba tan cansado que se durmió.",
+      "why": "English can drop \"that\", but Spanish keeps *que* every time."
+    },
+    {
+      "wrong": "Había tan gente que no había mesas.",
+      "right": "Había tanta gente que no había mesas.",
+      "why": "Before a noun use *tanto* and match it; *tan* is only for adjectives and adverbs."
+    },
+    {
+      "wrong": "Es tanto caro que no lo compro.",
+      "right": "Es tan caro que no lo compro.",
+      "why": "*Caro* describes, so it takes the short form *tan*."
+    },
+    {
+      "wrong": "Llovió mucho, de modo nos quedamos en casa.",
+      "right": "Llovió mucho, de modo que nos quedamos en casa.",
+      "why": "*De modo que* is one block, and the *que* cannot go missing."
+    }
+  ],
+  "personal": "Say something true about your day with *tan… que*, like *estoy tan cansado que…*, or with *de modo que*."
+}

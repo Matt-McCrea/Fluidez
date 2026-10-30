@@ -1,0 +1,182 @@
+{
+  "node": "p:agotarse",
+  "hook": {
+    "line": "Mariana gets to the box office ten minutes late, and the clerk gives her the news in the way every Bogotano does: the tickets simply ran out, and nobody is to blame.",
+    "es": "Se agotaron las boletas en dos horas.",
+    "en": "The tickets sold out in two hours."
+  },
+  "examples": [
+    {
+      "es": "Se agotaron las boletas en dos horas.",
+      "en": "The tickets sold out in two hours."
+    },
+    {
+      "es": "Las boletas ya están agotadas.",
+      "en": "The tickets are already sold out."
+    },
+    {
+      "es": "Se agotó el café.",
+      "en": "The coffee ran out."
+    },
+    {
+      "es": "Se me agotó la paciencia.",
+      "en": "I ran out of patience."
+    },
+    {
+      "es": "Se nos agotó la plata.",
+      "en": "We ran out of money."
+    },
+    {
+      "es": "¿Ya se agotó el café?",
+      "en": "Did the coffee run out already?"
+    }
+  ],
+  "rule": "When something sells out or runs out, Spanish lets it happen by itself: *se agotó el café*, *se agotaron las boletas*. The verb matches the thing that ran out, not a person.\n\nTo say who it happened to, add *me*, *te*, *nos* or *les*: *se me agotó la paciencia*, *se nos agotó la plata*. English says \"I ran out\"; Spanish says \"it ran out on me\".\n\nTo describe how things are now, use *estar* with *agotado*, which matches the thing: *las boletas están agotadas*.\n\nThe event is *se agotó*. The state is *está agotado*.",
+  "smallPrint": "Teachers call *se me agotó* an accidental *se*: it happens to you, and nobody did it on purpose. *Estar agotado* about a person means exhausted: *estoy agotada*.",
+  "readAndPick": [
+    {
+      "es": "Se agotaron los tintos.",
+      "options": [
+        "The coffee sold out.",
+        "The coffees sold out.",
+        "The coffees are sold out."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se me agotó la paciencia.",
+      "options": [
+        "We ran out of patience.",
+        "You ran out of patience.",
+        "I ran out of patience."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Se nos agotó la plata.",
+      "options": [
+        "We ran out of money.",
+        "I ran out of money.",
+        "They ran out of money."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se te agotó la paciencia.",
+      "options": [
+        "I ran out of patience.",
+        "You ran out of patience.",
+        "We ran out of patience."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se les agotó la paciencia.",
+      "options": [
+        "We ran out of patience.",
+        "You ran out of patience.",
+        "They ran out of patience."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Las boletas están agotadas.",
+      "options": [
+        "The tickets sold out an hour ago.",
+        "The tickets are selling.",
+        "The tickets are sold out."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Se agotó el café.",
+      "options": [
+        "The coffees ran out.",
+        "The coffee ran out."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Los tintos están agotados.",
+      "options": [
+        "The coffee is sold out.",
+        "The coffees are sold out."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Ya se agotaron las boletas?",
+      "options": [
+        "Is the ticket sold out already?",
+        "Did the tickets sell out already?"
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "The coffee ran out. Pick the right form: se agotó or se agotaron.",
+      "answer": "Se agotó el café.",
+      "accept": [],
+      "why": "*Café* is one thing, so the verb is singular: *se agotó*."
+    },
+    {
+      "prompt": "The tickets are sold out now (the state). Pick the right form: se agotaron or están agotadas.",
+      "answer": "Las boletas están agotadas.",
+      "accept": [
+        "Las boletas ya están agotadas."
+      ],
+      "why": "Describing how things are now uses *estar* plus *agotadas*, matching *boletas*."
+    },
+    {
+      "prompt": "Type it in Spanish: The tickets sold out in two hours.",
+      "answer": "Se agotaron las boletas en dos horas.",
+      "accept": [
+        "En dos horas se agotaron las boletas."
+      ],
+      "why": "*Boletas* is plural, so the verb is *se agotaron*."
+    },
+    {
+      "prompt": "Type it in Spanish: I ran out of patience.",
+      "answer": "Se me agotó la paciencia.",
+      "accept": [],
+      "why": "*Me* says who it happened to, and the verb matches *paciencia*."
+    },
+    {
+      "prompt": "Type it in Spanish: We ran out of money.",
+      "answer": "Se nos agotó la plata.",
+      "accept": [],
+      "why": "*Nos* is \"on us\", and *plata* is singular, so *agotó*."
+    },
+    {
+      "prompt": "Make it negative: Se agotó el café.",
+      "answer": "No se agotó el café.",
+      "accept": [],
+      "why": "*No* goes right before *se*."
+    },
+    {
+      "prompt": "Ask a friend (informal): Did you run out of patience?",
+      "answer": "¿Se te agotó la paciencia?",
+      "accept": [],
+      "why": "*Te* swaps in for *me* to talk about the friend."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Agoté la paciencia.",
+      "right": "Se me agotó la paciencia.",
+      "why": "Almost. In Spanish the patience runs out on you, so the thing is the subject and *me* says who it happened to."
+    },
+    {
+      "wrong": "Se agotó las boletas.",
+      "right": "Se agotaron las boletas.",
+      "why": "The verb matches the thing that ran out, so plural *boletas* needs *agotaron*."
+    },
+    {
+      "wrong": "Las boletas se agotan ahora.",
+      "right": "Las boletas ya están agotadas.",
+      "why": "When the tickets are gone and you are describing how things are, Spanish uses *estar agotado*."
+    }
+  ],
+  "personal": "Say one true thing about something that ran out on you this week, using *se me agotó* or *se nos agotó*, like *se me agotó la paciencia*."
+}
