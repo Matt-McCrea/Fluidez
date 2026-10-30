@@ -1,0 +1,655 @@
+[
+  {
+    "id": "w-u25-01",
+    "unit": "u25",
+    "prompt": "Text Vale, your friend. You gave Hernando the keys to the café this morning and told your mother about the trip. Say both things.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\ble (di|dejé|entregué)\\b[^.]*\\ba \\w+",
+        "label": "say who you gave it to: le di ... a Hernando"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\ble (dije|conté|escribí)\\b[^.]*\\ba \\w+",
+        "label": "say who you told: le dije ... a mi mamá"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Vale, esta mañana le di las llaves del café a Hernando. Le dije a mi mamá que vamos a Medellín. Ella está feliz. Nos vemos pronto.",
+    "focus": "g:le-doubling",
+    "requires": [
+      "c:chao-nos-vemos",
+      "c:vamos-a",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:ir-a-plans",
+      "g:le-doubling",
+      "g:preterite-irregular-strong",
+      "g:relative-que",
+      "l:café",
+      "l:dar",
+      "l:decir",
+      "l:estar",
+      "l:feliz",
+      "l:ir",
+      "l:llave",
+      "l:mamá",
+      "l:mañana",
+      "l:pronto",
+      "l:ver",
+      "p:demonstratives-basic",
+      "p:ir-a-venir-de-place",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u25-02",
+    "unit": "u25",
+    "prompt": "Write to your landlady, an older woman you call usted. Say you sent her the rent yesterday and ask her politely if she can give you the receipt.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\ble (mandé|envié|pagué)[^.]*\\ba (usted|la señora|\\S+)|\\bse lo (mandé|envié)",
+        "label": "say you sent it to her with le"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "te mandé",
+          "puedes",
+          "tienes",
+          "eres"
+        ],
+        "label": "usted, not tú"
+      },
+      {
+        "type": "question"
+      }
+    ],
+    "model": "Señora Elena, ayer le mandé la plata del arriendo a usted por el celular. ¿Me puede dar el recibo, por favor? Muchas gracias por su ayuda.",
+    "focus": "g:le-doubling",
+    "requires": [
+      "c:ayer-anoche",
+      "c:gracias-de-nada",
+      "c:me-puede-ayudar",
+      "c:por-favor",
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:por-para-1",
+      "g:preterite-ar",
+      "g:verb-infinitive",
+      "l:arriendo",
+      "l:ayer",
+      "l:ayuda",
+      "l:celular",
+      "l:dar",
+      "l:favor",
+      "l:mandar",
+      "l:plata",
+      "l:poder",
+      "l:recibo",
+      "l:señora",
+      "p:gracias-por",
+      "p:me-trae",
+      "p:possessives-basic",
+      "p:request-ladder",
+      "p:senor-don-article"
+    ]
+  },
+  {
+    "id": "w-u25-03",
+    "unit": "u25",
+    "prompt": "Text your friend Mariana. Tell her you like the new flower market in Medellín, and say that a friend there gave you a present.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\ba mí me (gusta|gustan|encanta|encantan|parece)\\b",
+        "label": "use a mí me ... to stress yourself"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bme (dio|regaló|compró|dieron|regalaron)",
+        "label": "say what someone gave you"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Mariana, a mí me encanta el mercado de flores en Medellín. Hay flores de todos los colores y mucha gente. Una amiga de Medellín me regaló un recuerdo muy bonito.",
+    "focus": "g:le-doubling",
+    "requires": [
+      "c:hay",
+      "c:me-encanta",
+      "g:gender-articles",
+      "g:gustar-full",
+      "g:hay-vs-esta",
+      "g:prep-pronouns",
+      "g:preterite-ar",
+      "l:amiga",
+      "l:bonito",
+      "l:color",
+      "l:encantar",
+      "l:flor",
+      "l:gente",
+      "l:mercado",
+      "l:recuerdo",
+      "l:regalar",
+      "p:la-gente-singular",
+      "p:me-te-nos-objects",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u25-04",
+    "unit": "u25",
+    "prompt": "Text Vale, your friend. Tell her how the flower parade went: say how people walked, what you really thought and how it ended. Use -mente words.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\w{3,}mente\\b",
+        "label": "use at least one word ending in -mente"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\w{3,}mente\\b[^.]*\\.[^.]*\\w{3,}mente\\b|\\w{3,}mente\\b[^.]*\\w{3,}mente\\b",
+        "label": "use two -mente words"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Vale, el desfile fue increíble. La gente caminaba rápidamente por las calles y cantaba. Realmente me encantó. Después llegamos a la plaza y todo estaba lleno de flores.",
+    "focus": "g:adverbs-mente",
+    "requires": [
+      "g:adverbs-mente",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:gustar-full",
+      "g:imperfect-habitual",
+      "g:imperfect-states",
+      "g:por-para-1",
+      "g:present-ar",
+      "g:preterite-ar",
+      "g:preterite-ser-ir-hacer",
+      "g:ser-identity",
+      "l:calle",
+      "l:caminar",
+      "l:cantar",
+      "l:desfile",
+      "l:después",
+      "l:encantar",
+      "l:estar",
+      "l:flor",
+      "l:gente",
+      "l:increíble",
+      "l:llegar",
+      "l:lleno",
+      "l:plaza",
+      "l:realmente",
+      "l:rápidamente",
+      "l:ser",
+      "p:entonces-de-repente",
+      "p:la-gente-singular",
+      "p:lleno-libre",
+      "p:time-sequence-basic"
+    ]
+  },
+  {
+    "id": "w-u25-05",
+    "unit": "u25",
+    "prompt": "Reply to a customer, an older man you call usted, who complained about slow service. Say you are sorry, that you really want to help, and that you will answer him quickly.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\w{3,}mente\\b",
+        "label": "use a -mente word"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "eres",
+          "tienes",
+          "puedes",
+          "quieres"
+        ],
+        "label": "usted, not tú"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Señor, lo siento mucho. Realmente quiero ayudarle, y mañana mismo le voy a contestar rápidamente. Usted tiene razón en esperar. Muchas gracias por su tiempo.",
+    "focus": "g:adverbs-mente",
+    "requires": [
+      "c:gracias-de-nada",
+      "c:quiero",
+      "c:sentido-pesame",
+      "c:tienes",
+      "c:voy-a",
+      "g:adverbs-mente",
+      "g:indirect-objects",
+      "g:ir-a-plans",
+      "g:object-pronoun-position",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:ayudar",
+      "l:contestar",
+      "l:esperar",
+      "l:ir",
+      "l:mañana",
+      "l:querer",
+      "l:razón",
+      "l:realmente",
+      "l:rápidamente",
+      "l:sentir",
+      "l:señor",
+      "l:tener",
+      "l:tiempo",
+      "p:gracias-por",
+      "p:possessives-basic",
+      "p:tener-razon"
+    ]
+  },
+  {
+    "id": "w-u25-06",
+    "unit": "u25",
+    "prompt": "Write a note to Tomás, your roommate. Explain how you work in the mornings: you get up early, you work in the kitchen, and you don't talk until the first coffee.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\w{3,}mente\\b",
+        "label": "use a -mente word"
+      },
+      {
+        "type": "negation"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Tomás, mañana me levanto muy temprano. Trabajo en la cocina y no hablo antes del primer café. Normalmente estoy mal por la mañana, pero después del café hablo rápidamente. Perdón por eso.",
+    "focus": "g:adverbs-mente",
+    "requires": [
+      "c:normalmente",
+      "c:trabajo-en",
+      "g:adverbs-mente",
+      "g:cause-result",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "l:antes",
+      "l:café",
+      "l:cocina",
+      "l:después",
+      "l:estar",
+      "l:hablar",
+      "l:levantarse",
+      "l:mal",
+      "l:mañana",
+      "l:normalmente",
+      "l:perdón",
+      "l:rápidamente",
+      "l:temprano",
+      "l:trabajar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:demonstratives-basic",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer",
+      "p:por-la-manana",
+      "p:quantifiers-basic",
+      "p:siento-llegar-tarde",
+      "p:time-sequence-basic"
+    ]
+  },
+  {
+    "id": "w-u25-07",
+    "unit": "u25",
+    "prompt": "Text Mariana. Hernando told you something at the café this morning. Pass it on: say what he told you, using me dijo que.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bme (dijo|contó) que\\b",
+        "label": "pass it on with me dijo que / me contó que"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bque \\w+(aba|ía|ba)\\b|\\bque \\w+(aba|ía)\\w*\\b",
+        "label": "the reported part goes in the imperfect (estaba, tenía, quería)"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Mariana, esta mañana Hernando me dijo que tenía una historia triste. Me contó que Rosa quería mucho a su hermano. Dijo que no hablaba de eso porque estaba cansada.",
+    "focus": "g:reported-past-basic",
+    "requires": [
+      "c:me-conto-que",
+      "c:porque",
+      "g:adjective-agreement",
+      "g:cause-result",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-irregular-strong",
+      "g:reported-past-basic",
+      "g:that-clauses",
+      "l:cansado",
+      "l:contar",
+      "l:decir",
+      "l:estar",
+      "l:hablar",
+      "l:hermano",
+      "l:historia",
+      "l:mañana",
+      "l:querer",
+      "l:tener",
+      "l:triste",
+      "p:demonstratives-basic",
+      "p:me-te-nos-objects",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u25-08",
+    "unit": "u25",
+    "prompt": "Message Vale. Her mother told you something at lunch in Medellín. Tell Vale what she said, and what you answered.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bme (dijo|contó|explicó) que\\b",
+        "label": "use me dijo que"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bque \\w+(aba|ía)\\b",
+        "label": "the reported part in the imperfect"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\ble (dije|contesté|respondí)",
+        "label": "say what you replied with le dije"
+      }
+    ],
+    "model": "Vale, tu mamá me contó que Rosa tenía un hermano. Le dije que no sabía nada de eso. Me dijo que estaba muy triste y que no hablaba de él.",
+    "focus": "g:reported-past-basic",
+    "requires": [
+      "c:me-conto-que",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:imperfect-states",
+      "g:indirect-objects",
+      "g:negation-words",
+      "g:prep-pronouns",
+      "g:pret-vs-imperfect",
+      "g:preterite-irregular-strong",
+      "g:reported-past-basic",
+      "g:that-clauses",
+      "l:contar",
+      "l:decir",
+      "l:estar",
+      "l:hablar",
+      "l:hermano",
+      "l:mamá",
+      "l:saber",
+      "l:tener",
+      "l:triste",
+      "p:demonstratives-basic",
+      "p:hedge-knowledge",
+      "p:me-te-nos-objects",
+      "p:possessives-basic",
+      "p:quantifiers-basic",
+      "p:saber-conocer"
+    ]
+  },
+  {
+    "id": "w-u25-09",
+    "unit": "u25",
+    "prompt": "Write to your boss, a woman you call usted. Tell her what the delivery man said: that he was coming at noon and that the road was closed. Ask her if you should wait.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(me )?(dijo|avisó|contó) que\\b",
+        "label": "report it with dijo que"
+      },
+      {
+        "type": "question"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "tienes",
+          "puedes",
+          "eres"
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Señora, el repartidor me dijo que venía al mediodía. También dijo que la carretera estaba cerrada. ¿Usted quiere que lo espere aquí en la oficina o prefiere llamarlo?",
+    "focus": "g:reported-past-basic",
+    "requires": [
+      "g:direct-objects",
+      "g:estar-participle",
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:imperfect-states",
+      "g:object-pronoun-position",
+      "g:pret-vs-imperfect",
+      "g:preterite-irregular-strong",
+      "g:reported-past-basic",
+      "g:stem-boot",
+      "g:subj-wanting",
+      "g:that-clauses",
+      "l:aquí",
+      "l:carretera",
+      "l:cerrar",
+      "l:decir",
+      "l:esperar",
+      "l:estar",
+      "l:llamar",
+      "l:mediodía",
+      "l:oficina",
+      "l:preferir",
+      "l:querer",
+      "l:repartidor",
+      "l:señora",
+      "l:venir",
+      "p:aqui-ahi-alla",
+      "p:me-te-nos-objects",
+      "p:prefieres-x-o-y",
+      "p:telling-time"
+    ]
+  },
+  {
+    "id": "w-u25-10",
+    "unit": "u25",
+    "prompt": "Text Vale. Describe someone you saw at the Feria de las Flores: the woman with the red dress, and the man with the big hat. Say who they are to the others.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(la|el) \\S+ (del|de la|de los|de las) \\S+",
+        "label": "describe with de: la chica de los ojos azules"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(el|la) \\S+ (del|de la|de los|de las) [\\s\\S]*(el|la) \\S+ (del|de la|de los|de las) ",
+        "label": "two people described this way"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Vale, vi a una señora muy elegante. La señora del vestido rojo vendía flores. El señor de la camisa azul es su esposo. Los dos son muy simpáticos.",
+    "focus": "p:de-los-ojos-azules",
+    "requires": [
+      "c:a-cuantas-cuotas",
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:preterite-er-ir",
+      "g:ser-identity",
+      "l:azul",
+      "l:camisa",
+      "l:elegante",
+      "l:esposo",
+      "l:flor",
+      "l:rojo",
+      "l:ser",
+      "l:señor",
+      "l:señora",
+      "l:simpático",
+      "l:vender",
+      "l:ver",
+      "l:vestido",
+      "p:de-los-ojos-azules",
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u25-11",
+    "unit": "u25",
+    "prompt": "Text Mariana about Medellín. Compare it with Bogotá: say the weather and the people, and use tanto como or tan ... como.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\btant[oa]s?\\b[^.]*\\bcomo\\b|\\btan \\w+ como\\b|\\bigual de\\b",
+        "label": "use tanto/tan ... como"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bclima\\b",
+        "label": "mention the weather (clima)"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Mariana, Medellín tiene muy buen clima. Hace calor, pero no tanto como en Cali. La gente es tan amable como en Bogotá, y la comida es muy rica. Me encanta.",
+    "focus": "g:tanto-como",
+    "requires": [
+      "c:buen-clima",
+      "c:me-encanta",
+      "c:tienes",
+      "g:adjective-agreement",
+      "g:comparatives",
+      "g:gender-articles",
+      "g:gustar-full",
+      "g:present-er-ir",
+      "g:ser-identity",
+      "g:stem-boot",
+      "g:tanto-como",
+      "l:amable",
+      "l:buen",
+      "l:calor",
+      "l:clima",
+      "l:comida",
+      "l:encantar",
+      "l:gente",
+      "l:hacer",
+      "l:rico",
+      "l:ser",
+      "l:tener",
+      "p:hace-frio",
+      "p:la-gente-singular",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u25-12",
+    "unit": "u25",
+    "prompt": "Write to a friend who wants to visit. Say where the town is and how far it is from Medellín, and say what a guide told you about it.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bqueda a\\b",
+        "label": "say how far it is with queda a"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bsegún\\b|\\bme (dijo|contó) que\\b",
+        "label": "use según or me dijo que"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Daniela, el pueblo queda a una hora de Medellín. Según mi amigo, es muy bonito y tiene un lago. Me contó que hay un restaurante muy bueno. ¡Ven!",
+    "focus": "c:queda-a-una-hora",
+    "requires": [
+      "c:a-cuantas-cuotas",
+      "c:hay",
+      "c:me-conto-que",
+      "c:queda-a-una-hora",
+      "c:segun",
+      "c:tienes",
+      "g:commands-tu",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:amigo",
+      "l:bonito",
+      "l:bueno",
+      "l:contar",
+      "l:daniel",
+      "l:hora",
+      "l:lago",
+      "l:pueblo",
+      "l:quedar",
+      "l:restaurante",
+      "l:ser",
+      "l:tener",
+      "l:venir",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:possessives-basic",
+      "p:quantifiers-basic",
+      "p:quedar-cerca",
+      "p:un-estudio-muestra-que"
+    ]
+  }
+]
