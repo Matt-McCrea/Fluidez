@@ -1,0 +1,177 @@
+{
+  "node": "p:comparto-su-punto-de-vista",
+  "hook": {
+    "line": "At the public hearing, nobody says *I agree with you* like they would at the café. When Tomás answers the council, he needs the careful, formal version.",
+    "es": "Comparto su punto de vista.",
+    "en": "I share your view. (formal)"
+  },
+  "examples": [
+    {
+      "es": "Comparto su punto de vista.",
+      "en": "I share your view. (formal)"
+    },
+    {
+      "es": "Comparto su punto de vista, aunque tengo una duda.",
+      "en": "I share your view, although I have one doubt. (formal)"
+    },
+    {
+      "es": "Coincido plenamente con lo expuesto.",
+      "en": "I fully agree with what has been said."
+    },
+    {
+      "es": "Coincido plenamente con ustedes.",
+      "en": "I fully agree with you all."
+    },
+    {
+      "es": "Comparto su preocupación por el edificio.",
+      "en": "I share your concern about the building. (formal)"
+    },
+    {
+      "es": "Coincidimos totalmente con la propuesta.",
+      "en": "We completely agree with the proposal."
+    }
+  ],
+  "rule": "At a hearing, in a meeting or in a letter, *estoy de acuerdo* can sound a bit plain. Two upgrades:\n\n*Comparto* + *su punto de vista*, *su opinión*, *su preocupación*. There is no *con*: you share the thing itself.\n*Coincido con* + a person or an idea. Add *plenamente* or *totalmente* to say *fully*.\n\nWith *usted* use *su*. With a friend it becomes *tu punto de vista*, but then it sounds like you're speaking to a committee, so a friend gets *Estoy de acuerdo* instead.\n\nThe polite brake is *aunque tengo una duda*: *although I have one doubt*.",
+  "smallPrint": "Teachers call this the formal register for expressing agreement.",
+  "readAndPick": [
+    {
+      "es": "Comparto su punto de vista.",
+      "options": [
+        "I share your view. (formal)",
+        "I share your view. (to a friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Comparto tu punto de vista.",
+      "options": [
+        "I share your view. (formal)",
+        "I share your view. (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Comparto su opinión.",
+      "options": [
+        "I share your opinion. (formal)",
+        "We share your opinion. (formal)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Compartimos su opinión.",
+      "options": [
+        "I share your opinion. (formal)",
+        "We share your opinion. (formal)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Coincido plenamente con ustedes.",
+      "options": [
+        "I fully agree with you all.",
+        "We fully agree with you all."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Coincidimos plenamente con ustedes.",
+      "options": [
+        "I fully agree with you all.",
+        "We fully agree with you all."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Coincido plenamente con ella.",
+      "options": [
+        "I fully agree with her.",
+        "I fully agree with them."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Comparto su punto de vista, aunque tengo una duda.",
+      "options": [
+        "I share your view, but I have one doubt.",
+        "I share your view, and I have no doubt.",
+        "I don't share your view."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Comparte mi punto de vista.",
+      "options": [
+        "She shares my view.",
+        "I share your view."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *comparto* or *compartimos*, then type the whole sentence: ___ su punto de vista. (I share your view, to a stranger.)",
+      "answer": "Comparto su punto de vista.",
+      "accept": [],
+      "why": "One person speaking means *comparto*, and *usted* means *su*."
+    },
+    {
+      "prompt": "Choose *tu* or *su*, then type the whole sentence: Comparto ___ punto de vista. (I share your view, to a council member you've just met.)",
+      "answer": "Comparto su punto de vista.",
+      "accept": [],
+      "why": "A formal stranger gets *usted*, so the word is *su*."
+    },
+    {
+      "prompt": "Type it in Spanish: I share your concern. (formal)",
+      "answer": "Comparto su preocupación.",
+      "accept": [],
+      "why": "*Compartir* takes the thing itself, with no *con*."
+    },
+    {
+      "prompt": "Type it in Spanish: I fully agree with what has been said.",
+      "answer": "Coincido plenamente con lo expuesto.",
+      "accept": [
+        "Coincido totalmente con lo expuesto."
+      ],
+      "why": "*Coincidir* needs *con* before what you agree with."
+    },
+    {
+      "prompt": "Type it in Spanish: We completely agree with the proposal.",
+      "answer": "Coincidimos totalmente con la propuesta.",
+      "accept": [
+        "Coincidimos plenamente con la propuesta."
+      ],
+      "why": "We is the *-mos* ending, then *con* and what you agree with."
+    },
+    {
+      "prompt": "Make it about *we*: Comparto su opinión.",
+      "answer": "Compartimos su opinión.",
+      "accept": [],
+      "why": "We is the *-mos* ending."
+    },
+    {
+      "prompt": "Make it friendly: Comparto su punto de vista. (to a friend)",
+      "answer": "Comparto tu punto de vista.",
+      "accept": [],
+      "why": "A friend is *tú*, so *su* becomes *tu*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Comparto con su punto de vista.",
+      "right": "Comparto su punto de vista.",
+      "why": "Almost. English says *share with*; here the view itself is what you share, so no *con*."
+    },
+    {
+      "wrong": "Coincido su punto de vista.",
+      "right": "Coincido plenamente con su punto de vista.",
+      "why": "Almost. *Coincidir* always needs *con*."
+    },
+    {
+      "wrong": "Comparto su punto de vista. (said to a close friend over coffee)",
+      "right": "Estoy de acuerdo.",
+      "why": "Almost. *Comparto su punto de vista* is for meetings and letters. Over coffee with a friend, it sounds like you're addressing a committee."
+    }
+  ],
+  "personal": "Imagine you are at the council hearing. Agree with someone you respect, starting with *Comparto su*."
+}

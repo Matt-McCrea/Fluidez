@@ -1,0 +1,178 @@
+{
+  "node": "p:tienes-toda-la-razon",
+  "hook": {
+    "line": "Sooner or later, in every argument, someone is right. Tomás needs to be able to say so warmly, and to say *no* just as clearly when someone else is wrong.",
+    "es": "Tienes toda la razón, debí avisarte antes.",
+    "en": "You're absolutely right, I should have told you sooner."
+  },
+  "examples": [
+    {
+      "es": "Tienes toda la razón, debí avisarte antes.",
+      "en": "You're absolutely right, I should have told you sooner. (to a friend)"
+    },
+    {
+      "es": "Usted tiene toda la razón, don Hernando.",
+      "en": "You're absolutely right, Don Hernando. (formal)"
+    },
+    {
+      "es": "No tienes razón.",
+      "en": "You're wrong. (to a friend)"
+    },
+    {
+      "es": "Estás muy equivocado si piensas que voy a ceder.",
+      "en": "You're very wrong if you think I'm going to give in. (to a man, friend)"
+    },
+    {
+      "es": "No estoy en absoluto de acuerdo con ese análisis.",
+      "en": "I don't agree with that analysis at all."
+    },
+    {
+      "es": "¡En absoluto!",
+      "en": "Not at all!"
+    },
+    {
+      "es": "No, no, eso no es cierto.",
+      "en": "No, no, that's not true."
+    }
+  ],
+  "rule": "To say someone is right, Spanish has *razón*, and you *have* it, as you have hunger: *Tienes razón*. Add *toda* for *completely*: *Tienes toda la razón.* To say they are wrong: *No tienes razón*, or *Estás equivocado* (*equivocada* for a woman).\n\nThese aim at the person, so agreeing is warm and disagreeing is sharp.\n\nFor disagreeing with an idea, aim at the claim: *No estoy en absoluto de acuerdo*, or the short *¡En absoluto!* or *Eso no es cierto*.\n\n*En absoluto* always means *not at all*, never *absolutely yes*.",
+  "smallPrint": "Teachers call these expressions of strong agreement and disagreement.",
+  "readAndPick": [
+    {
+      "es": "Tienes toda la razón.",
+      "options": [
+        "You're completely right.",
+        "You're completely wrong."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No tienes razón.",
+      "options": [
+        "You're right.",
+        "You're wrong."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Usted tiene toda la razón.",
+      "options": [
+        "You're right. (formal)",
+        "You're right. (to a friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tienes toda la razón.",
+      "options": [
+        "You're right. (formal)",
+        "You're right. (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Estás equivocada.",
+      "options": [
+        "You're wrong. (to a woman)",
+        "You're wrong. (to a man)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estás equivocado.",
+      "options": [
+        "You're wrong. (to a woman)",
+        "You're wrong. (to a man)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡En absoluto!",
+      "options": [
+        "Absolutely!",
+        "Not at all!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No estoy en absoluto de acuerdo.",
+      "options": [
+        "I don't agree at all.",
+        "I completely agree."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ustedes no tienen razón.",
+      "options": [
+        "You all are wrong.",
+        "You all are right."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *tienes* or *tiene*, then type the whole sentence: ___ toda la razón. (You're completely right, to a friend.)",
+      "answer": "Tienes toda la razón.",
+      "accept": [],
+      "why": "A friend is *tú*, and *tú* ends in *-s*."
+    },
+    {
+      "prompt": "Choose *tiene* or *tienes*, then type the whole sentence: Usted ___ toda la razón. (You're completely right, formal.)",
+      "answer": "Usted tiene toda la razón.",
+      "accept": [
+        "Tiene toda la razón."
+      ],
+      "why": "*Usted* takes the same verb form as *he* or *she*."
+    },
+    {
+      "prompt": "Type it in Spanish: You're wrong. (to a friend)",
+      "answer": "No tienes razón.",
+      "accept": [],
+      "why": "You *have* reason in Spanish, so being wrong is *not having* it."
+    },
+    {
+      "prompt": "Type it in Spanish: I don't agree at all.",
+      "answer": "No estoy en absoluto de acuerdo.",
+      "accept": [],
+      "why": "*En absoluto* goes before *de acuerdo* to strengthen the *no*."
+    },
+    {
+      "prompt": "Type it in Spanish: You're very wrong. (to a woman)",
+      "answer": "Estás muy equivocada.",
+      "accept": [],
+      "why": "A woman gets the *-a* ending on *equivocada*."
+    },
+    {
+      "prompt": "Make it negative: Tienes razón. (to a friend)",
+      "answer": "No tienes razón.",
+      "accept": [],
+      "why": "Put *no* in front of the verb."
+    },
+    {
+      "prompt": "Make it more complete: Tienes razón. (You're absolutely right, to a friend.)",
+      "answer": "Tienes toda la razón.",
+      "accept": [],
+      "why": "*Toda la* before *razón* means *completely*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Estás razón.",
+      "right": "Tienes razón.",
+      "why": "Almost. In Spanish you *have* reason, so the verb is *tener*."
+    },
+    {
+      "wrong": "Tienes todo la razón.",
+      "right": "Tienes toda la razón.",
+      "why": "Almost. *Razón* is feminine, so *toda*."
+    },
+    {
+      "wrong": "¡En absoluto! (meaning: absolutely yes)",
+      "right": "¡Por supuesto!",
+      "why": "Almost. *En absoluto* on its own always means *not at all*."
+    }
+  ],
+  "personal": "Think of someone who was right last week. Tell them so, starting with *Tienes toda la razón*."
+}

@@ -1,0 +1,165 @@
+{
+  "node": "p:voy-a-defender-que",
+  "hook": {
+    "line": "At the hearing, Tomás gets three minutes. A good speaker says what they'll argue and how many reasons they have, so the room can follow.",
+    "es": "Voy a defender que el café debe quedarse, por dos razones.",
+    "en": "I am going to argue that the café should stay, for two reasons."
+  },
+  "examples": [
+    {
+      "es": "Voy a defender que el barrio debe tener más parques, por tres razones.",
+      "en": "I am going to argue that the neighbourhood should have more parks, for three reasons."
+    },
+    {
+      "es": "En primer lugar, hay menos contaminación.",
+      "en": "Firstly, there is less pollution."
+    },
+    {
+      "es": "Voy a defender que la educación debe ser gratuita.",
+      "en": "I am going to argue that education should be free."
+    },
+    {
+      "es": "Voy a defender que el café debe quedarse en La Candelaria, por dos razones.",
+      "en": "I am going to argue that the café should stay in La Candelaria, for two reasons."
+    },
+    {
+      "es": "En primer lugar, es parte del patrimonio del barrio.",
+      "en": "Firstly, it is part of the neighbourhood's heritage."
+    },
+    {
+      "es": "Vamos a defender que el edificio debe quedarse, por varias razones.",
+      "en": "We are going to argue that the building should stay, for several reasons."
+    }
+  ],
+  "rule": "To open an argument, say your position and promise your structure.\n\n*Voy a defender que* + your claim. It means *I am going to argue that*, and *que* starts a normal sentence: *Voy a defender que el café debe quedarse.*\nThen count: *por dos razones*, *por tres razones*, *por varias razones*.\nThen deliver them in order: *En primer lugar,* ... then *en segundo lugar,* ...\n\nFor several people, *vamos a defender que*.\n\nEnglish says *argue*, but Spanish *defender* is also *defend*. Use it when you stand behind a position.",
+  "smallPrint": "Teachers call this the thesis statement and signposting of an argumentative speech.",
+  "readAndPick": [
+    {
+      "es": "Voy a defender que la educación debe ser gratuita.",
+      "options": [
+        "I am going to argue that education should be free.",
+        "We are going to argue that education should be free."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vamos a defender que la educación debe ser gratuita.",
+      "options": [
+        "I am going to argue that education should be free.",
+        "We are going to argue that education should be free."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Voy a defender que el café debe quedarse, por dos razones.",
+      "options": [
+        "I am going to argue that the café should stay, for two reasons.",
+        "I am going to argue that the café should stay, for three reasons."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Voy a defender que el café debe quedarse, por tres razones.",
+      "options": [
+        "I am going to argue that the café should stay, for two reasons.",
+        "I am going to argue that the café should stay, for three reasons."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "En primer lugar, hay menos contaminación.",
+      "options": [
+        "Firstly, there is less pollution.",
+        "Finally, there is less pollution."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Va a defender que el barrio debe tener más parques.",
+      "options": [
+        "She is going to argue that the neighbourhood should have more parks.",
+        "I am going to argue that the neighbourhood should have more parks."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Voy a defender que el barrio debe tener más parques.",
+      "options": [
+        "She is going to argue that the neighbourhood should have more parks.",
+        "I am going to argue that the neighbourhood should have more parks."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Voy a defender que el parque debe quedarse, por varias razones.",
+      "options": [
+        "I am going to argue that the park should stay, for several reasons.",
+        "I am going to argue that the park should stay, for two reasons.",
+        "I am going to argue that the park should stay, for no reason."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *voy* or *vamos*, then type the whole sentence: ___ a defender que la educación debe ser gratuita. (I am going to argue that education should be free.)",
+      "answer": "Voy a defender que la educación debe ser gratuita.",
+      "accept": [],
+      "why": "One person speaking means *voy*."
+    },
+    {
+      "prompt": "Choose *dos* or *tres*, then type the whole sentence: Voy a defender que el café debe quedarse, por ___ razones. (for three reasons)",
+      "answer": "Voy a defender que el café debe quedarse, por tres razones.",
+      "accept": [],
+      "why": "The number goes between *por* and *razones*."
+    },
+    {
+      "prompt": "Type it in Spanish: I am going to argue that the café should stay in La Candelaria.",
+      "answer": "Voy a defender que el café debe quedarse en La Candelaria.",
+      "accept": [],
+      "why": "*Voy a defender que* is followed by a normal sentence."
+    },
+    {
+      "prompt": "Type it in Spanish: Firstly, it is part of the neighbourhood's heritage.",
+      "answer": "En primer lugar, es parte del patrimonio del barrio.",
+      "accept": [],
+      "why": "*En primer lugar* opens the first reason, and a comma follows."
+    },
+    {
+      "prompt": "Type it in Spanish: We are going to argue that the building should stay, for two reasons.",
+      "answer": "Vamos a defender que el edificio debe quedarse, por dos razones.",
+      "accept": [],
+      "why": "We is *vamos*, and the claim is a normal sentence."
+    },
+    {
+      "prompt": "Make it about *we*: Voy a defender que la educación debe ser gratuita.",
+      "answer": "Vamos a defender que la educación debe ser gratuita.",
+      "accept": [],
+      "why": "We is *vamos*."
+    },
+    {
+      "prompt": "Add a count: Voy a defender que el barrio debe tener más parques. (add: for three reasons)",
+      "answer": "Voy a defender que el barrio debe tener más parques, por tres razones.",
+      "accept": [],
+      "why": "Put the count at the end, after a comma."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Voy a defender el barrio debe tener más parques.",
+      "right": "Voy a defender que el barrio debe tener más parques.",
+      "why": "Almost. English can say *argue the centre should*, but Spanish needs *que* to start the claim."
+    },
+    {
+      "wrong": "Voy a defender que el barrio debe tener más parques, para tres razones.",
+      "right": "Voy a defender que el barrio debe tener más parques, por tres razones.",
+      "why": "Almost. Reasons come with *por*, not *para*."
+    },
+    {
+      "wrong": "Primero lugar, hay menos contaminación.",
+      "right": "En primer lugar, hay menos contaminación.",
+      "why": "Almost. The phrase is *en primer lugar*, with *en*."
+    }
+  ],
+  "personal": "Pick something you believe in and announce your thesis with *Voy a defender que*, then give a number of reasons."
+}

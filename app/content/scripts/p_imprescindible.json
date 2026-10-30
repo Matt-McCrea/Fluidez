@@ -1,0 +1,179 @@
+{
+  "node": "p:imprescindible",
+  "hook": {
+    "line": "Tomás has to walk into a public hearing and say what the café cannot live without. *Important* is too weak for that, and *necessary* is not much stronger.",
+    "es": "Es imprescindible que Vale se quede.",
+    "en": "It's essential that Vale stays."
+  },
+  "examples": [
+    {
+      "es": "Es imprescindible revisar el contrato antes de firmar.",
+      "en": "It's essential to check the contract before signing."
+    },
+    {
+      "es": "Es imprescindible que Vale venga a la audiencia.",
+      "en": "It's essential that Vale comes to the hearing."
+    },
+    {
+      "es": "Es esencial tener un plan a largo plazo.",
+      "en": "It's essential to have a long-term plan."
+    },
+    {
+      "es": "Es fundamental que todos lleguen a tiempo.",
+      "en": "It's essential that everyone arrives on time."
+    },
+    {
+      "es": "Para el café, el tinto es imprescindible.",
+      "en": "For the café, black coffee is essential."
+    },
+    {
+      "es": "Para don Hernando, el tinto de la mañana es indispensable.",
+      "en": "For Don Hernando, his morning tinto is indispensable."
+    },
+    {
+      "es": "¿Es imprescindible que vayamos todos?",
+      "en": "Is it essential that we all go?"
+    }
+  ],
+  "rule": "*Es imprescindible* means *it's essential*, the top of the ladder: *conveniente*, *necesario*, *imprescindible*. *Es fundamental*, *es esencial* and *es indispensable* work the same way.\n\nTalking in general: *es imprescindible* + infinitive. *Es imprescindible firmar.*\nNaming who must do it: *es imprescindible que* + the *-e* or *-a* form. *Es imprescindible que firmes.*\n\nEnglish says *it's essential for you to sign*. Spanish has no *for you*: it uses *que* and a new verb.",
+  "smallPrint": "Teachers call these impersonal expressions of necessity.",
+  "readAndPick": [
+    {
+      "es": "Es imprescindible firmar hoy.",
+      "options": [
+        "It's essential to sign today.",
+        "It's essential that she signs today."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es imprescindible que firme hoy.",
+      "options": [
+        "It's essential to sign today.",
+        "It's essential that she signs today."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es imprescindible que lleguemos temprano.",
+      "options": [
+        "It's essential that we arrive early.",
+        "It's essential that you arrive early."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es fundamental que tú llegues temprano.",
+      "options": [
+        "It's essential that we arrive early.",
+        "It's essential that you arrive early."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es esencial que ella escuche.",
+      "options": [
+        "It's essential that she listens.",
+        "It's essential that they listen."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es esencial que ellos escuchen.",
+      "options": [
+        "It's essential that she listens.",
+        "It's essential that they listen."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No es imprescindible que vengas.",
+      "options": [
+        "It's not essential that you come.",
+        "It's essential that you come."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es imprescindible que vengas.",
+      "options": [
+        "It's not essential that you come.",
+        "It's essential that you come."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es esencial que ellos vengan.",
+      "options": [
+        "It's essential that they come.",
+        "It's essential that I come.",
+        "It's essential that we come."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *llegar* or *llegues*, then type the whole sentence: Es imprescindible ___ a tiempo. (It's essential to arrive on time, in general.)",
+      "answer": "Es imprescindible llegar a tiempo.",
+      "accept": [],
+      "why": "No one in particular is named, so the infinitive does the job."
+    },
+    {
+      "prompt": "Choose *firmes* or *firmar*, then type the whole sentence: Es imprescindible que tú ___ hoy. (It's essential that you sign today.)",
+      "answer": "Es imprescindible que tú firmes hoy.",
+      "accept": [
+        "Es imprescindible que firmes hoy."
+      ],
+      "why": "After *que* comes a new verb in the *-e* or *-a* form, and *tú* ends in *-s*."
+    },
+    {
+      "prompt": "Type it in Spanish: It's essential to check the contract.",
+      "answer": "Es imprescindible revisar el contrato.",
+      "accept": [],
+      "why": "No one is named, so *es imprescindible* is followed by the infinitive."
+    },
+    {
+      "prompt": "Type it in Spanish: It's essential that Vale comes.",
+      "answer": "Es imprescindible que Vale venga.",
+      "accept": [],
+      "why": "A named person after *que* means the *-a* form of the verb."
+    },
+    {
+      "prompt": "Type it in Spanish: It's essential that everyone arrives on time.",
+      "answer": "Es fundamental que todos lleguen a tiempo.",
+      "accept": [],
+      "why": "Everyone is a group, so the verb after *que* takes the *-en* ending."
+    },
+    {
+      "prompt": "Make it about *we*: Es imprescindible que Vale venga. (It's essential that we come.)",
+      "answer": "Es imprescindible que vengamos.",
+      "accept": [],
+      "why": "A new person after *que* means the matching *-a* form, here the *we* one."
+    },
+    {
+      "prompt": "Make it more urgent: change *esencial* to the strongest word on the ladder. Es esencial que lleguen a tiempo.",
+      "answer": "Es imprescindible que lleguen a tiempo.",
+      "accept": [],
+      "why": "*Imprescindible* is the top of the ladder, above *necesario*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Es imprescindible que firmar.",
+      "right": "Es imprescindible firmar.",
+      "why": "Almost. *Que* needs a verb with a person; if no one is named, drop *que* and use the infinitive."
+    },
+    {
+      "wrong": "Es imprescindible que ella firma.",
+      "right": "Es imprescindible que ella firme.",
+      "why": "Almost. After *es imprescindible que*, the verb takes the *-e* or *-a* form, never the plain one."
+    },
+    {
+      "wrong": "Es imprescindible para ti firmar.",
+      "right": "Es imprescindible que firmes.",
+      "why": "Almost. English says *for you to sign*; Spanish has no *for you* here, so use *que* and a new verb."
+    }
+  ],
+  "personal": "Say one thing that is essential in your day, starting with *Es imprescindible*."
+}

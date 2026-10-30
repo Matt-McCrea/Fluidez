@@ -1,0 +1,172 @@
+{
+  "node": "p:no-estoy-seguro-de-que",
+  "hook": {
+    "line": "When Tomás isn't sure the council will listen, he can't say *they will*. He says he doubts it, and Spanish changes the verb to show it.",
+    "es": "No estoy seguro de que me escuchen.",
+    "en": "I'm not sure they'll listen to me."
+  },
+  "examples": [
+    {
+      "es": "No estoy seguro de que venga.",
+      "en": "I'm not sure he's coming. (a man speaking)"
+    },
+    {
+      "es": "No estoy del todo segura de que hayan oído el timbre.",
+      "en": "I'm not entirely sure they heard the doorbell. (a woman speaking)"
+    },
+    {
+      "es": "No estoy convencido de que sea la mejor opción.",
+      "en": "I'm not convinced it's the best option. (a man speaking)"
+    },
+    {
+      "es": "Estoy seguro de que viene.",
+      "en": "I'm sure he's coming. (a man speaking)"
+    },
+    {
+      "es": "No estoy seguro de que el concejo escuche.",
+      "en": "I'm not sure the council will listen. (a man speaking)"
+    },
+    {
+      "es": "¿No estás segura de que Vale quiera quedarse?",
+      "en": "Aren't you sure Vale wants to stay? (to a woman)"
+    }
+  ],
+  "rule": "*Estoy seguro de que* means you're certain, so the verb after it is the plain one: *Estoy seguro de que viene.*\n\nPut *no* in front and you aren't sure, so the verb after *de que* takes the *-e* or *-a* form: *No estoy seguro de que venga.*\n\nSoften with *del todo* (entirely) or swap in *convencido*. Both stay the same: *No estoy del todo seguro de que...*\n\n*Seguro* ends in *-o* for a man and *-a* for a woman. Never drop the *de* before *que*.\n\nFor something already finished, use *haya* plus the *-ado* or *-ido* word: *hayan oído*.",
+  "smallPrint": "Teachers call this the subjunctive after a negated certainty.",
+  "readAndPick": [
+    {
+      "es": "Estoy seguro de que viene.",
+      "options": [
+        "I'm sure he's coming.",
+        "I'm not sure he's coming."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No estoy seguro de que venga.",
+      "options": [
+        "I'm sure he's coming.",
+        "I'm not sure he's coming."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No estoy segura de que venga.",
+      "options": [
+        "I'm not sure he's coming. (a woman speaking)",
+        "I'm not sure he's coming. (a man speaking)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No estoy seguro de que sea posible.",
+      "options": [
+        "I'm not sure it's possible. (a man speaking)",
+        "I'm not sure it's possible. (a woman speaking)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estoy seguro de que escuchan.",
+      "options": [
+        "I'm sure they listen.",
+        "I'm not sure they listen."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No estoy seguro de que escuchen.",
+      "options": [
+        "I'm sure they listen.",
+        "I'm not sure they listen."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No estoy convencido de que sea la mejor opción.",
+      "options": [
+        "I'm convinced it's the best option.",
+        "I'm not convinced it's the best option."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No estoy del todo segura de que hayan oído el timbre.",
+      "options": [
+        "I'm not entirely sure they heard the doorbell.",
+        "I'm entirely sure they heard the doorbell."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Estás seguro de que viene?",
+      "options": [
+        "Are you sure he's coming? (to a man)",
+        "Are you sure he's coming? (to a woman)"
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *viene* or *venga*, then type the whole sentence: No estoy seguro de que ___. (I'm not sure he's coming, a man speaking.)",
+      "answer": "No estoy seguro de que venga.",
+      "accept": [],
+      "why": "Not sure means the *-a* form after *de que*."
+    },
+    {
+      "prompt": "Choose *viene* or *venga*, then type the whole sentence: Estoy seguro de que ___. (I'm sure he's coming, a man speaking.)",
+      "answer": "Estoy seguro de que viene.",
+      "accept": [],
+      "why": "Certain means the plain verb, with no change."
+    },
+    {
+      "prompt": "Type it in Spanish: I'm not sure he's coming. (a woman speaking)",
+      "answer": "No estoy segura de que venga.",
+      "accept": [],
+      "why": "A woman speaking gets *segura*, and doubt gets *venga*."
+    },
+    {
+      "prompt": "Type it in Spanish: I'm not convinced it's the best option. (a man speaking)",
+      "answer": "No estoy convencido de que sea la mejor opción.",
+      "accept": [],
+      "why": "*Convencido* works like *seguro*, with the *-e* or *-a* form after *de que*."
+    },
+    {
+      "prompt": "Type it in Spanish: I'm not sure the council will listen. (a man speaking)",
+      "answer": "No estoy seguro de que el concejo escuche.",
+      "accept": [],
+      "why": "Doubt after *de que* means the *-e* form of *escuchar*."
+    },
+    {
+      "prompt": "Make it negative: Estoy seguro de que viene. (a man speaking)",
+      "answer": "No estoy seguro de que venga.",
+      "accept": [],
+      "why": "Add *no*, then the verb changes to the *-a* form."
+    },
+    {
+      "prompt": "Soften it: No estoy seguro de que venga. (a man speaking, add *entirely*)",
+      "answer": "No estoy del todo seguro de que venga.",
+      "accept": [],
+      "why": "*Del todo* goes right before *seguro* and makes it gentler."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No estoy seguro de que viene.",
+      "right": "No estoy seguro de que venga.",
+      "why": "Almost. When you doubt, the verb after *de que* takes the *-e* or *-a* form."
+    },
+    {
+      "wrong": "No estoy seguro que venga.",
+      "right": "No estoy seguro de que venga.",
+      "why": "Almost. English drops *of*, but Spanish needs *de* before *que*."
+    },
+    {
+      "wrong": "Estoy seguro de que venga.",
+      "right": "Estoy seguro de que viene.",
+      "why": "Almost. When you're certain, the verb stays plain."
+    }
+  ],
+  "personal": "Tell me something you're not completely sure about this week, starting with *No estoy del todo seguro de que* or *segura*."
+}

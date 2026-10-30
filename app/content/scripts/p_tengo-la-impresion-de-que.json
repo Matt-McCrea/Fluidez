@@ -1,0 +1,176 @@
+{
+  "node": "p:tengo-la-impresion-de-que",
+  "hook": {
+    "line": "Sometimes Tomás has a hunch about the council but no proof. *I think* is too sure, so he says it's more of a feeling.",
+    "es": "Tengo la impresión de que Altamira ya decidió.",
+    "en": "I have the feeling Altamira has already decided."
+  },
+  "examples": [
+    {
+      "es": "Tengo la impresión de que la reunión va a ser tensa.",
+      "en": "I have the feeling the meeting is going to be tense."
+    },
+    {
+      "es": "Tengo la sensación de que nos están mintiendo.",
+      "en": "I have the feeling they're lying to us."
+    },
+    {
+      "es": "Tengo mis dudas sobre el nuevo horario.",
+      "en": "I have my doubts about the new timetable."
+    },
+    {
+      "es": "Me da la impresión de que Altamira ya decidió.",
+      "en": "I get the feeling Altamira has already decided."
+    },
+    {
+      "es": "Tengo la impresión de que Vale quiere quedarse.",
+      "en": "I have the feeling Vale wants to stay."
+    },
+    {
+      "es": "¿Tienes la impresión de que Mariana sabe algo?",
+      "en": "Do you have the feeling Mariana knows something? (to a friend)"
+    }
+  ],
+  "rule": "*Tengo la impresión de que* means *I have the feeling that*. It says you suspect something but can't prove it. *Tengo la sensación de que* is the same, and *me da la impresión de que* is *I get the feeling*.\n\nWhat comes next is a normal sentence with the plain verb, because you believe it: *Tengo la impresión de que va a llover.* No *-e* or *-a* form here.\n\nFor doubts about a thing: *Tengo mis dudas sobre* + the thing.\n\nThis is a hedge. If you plan to argue a point, say it straight instead.",
+  "smallPrint": "Teachers call this a hedge, followed by the indicative.",
+  "readAndPick": [
+    {
+      "es": "Tengo la impresión de que va a ganar.",
+      "options": [
+        "I have the feeling he's going to win.",
+        "I have the feeling he won."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tengo la impresión de que ganó.",
+      "options": [
+        "I have the feeling he's going to win.",
+        "I have the feeling he won."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tengo la impresión de que Vale se queda.",
+      "options": [
+        "I have the feeling Vale is staying.",
+        "I'm sure Vale is staying."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tienes la impresión de que miente.",
+      "options": [
+        "You have the feeling he's lying. (to a friend)",
+        "I have the feeling he's lying."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tengo la impresión de que miente.",
+      "options": [
+        "You have the feeling he's lying. (to a friend)",
+        "I have the feeling he's lying."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tenemos la sensación de que nos escuchan.",
+      "options": [
+        "We have the feeling they're listening to us.",
+        "I have the feeling they're listening to me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tengo la sensación de que me escuchan.",
+      "options": [
+        "We have the feeling they're listening to us.",
+        "I have the feeling they're listening to me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tengo mis dudas sobre el horario.",
+      "options": [
+        "I have my doubts about the timetable.",
+        "I'm sure about the timetable."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me da la impresión de que Mariana sabe algo.",
+      "options": [
+        "I get the feeling Mariana knows something.",
+        "Mariana gets the feeling I know something."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *es* or *sea*, then type the whole sentence: Tengo la impresión de que ___ tensa. (I have the feeling it's tense, about the meeting. Use *la reunión*.)",
+      "answer": "Tengo la impresión de que la reunión es tensa.",
+      "accept": [],
+      "why": "A feeling you believe uses the plain verb, *es*."
+    },
+    {
+      "prompt": "Type it in Spanish: I have the feeling Vale wants to stay.",
+      "answer": "Tengo la impresión de que Vale quiere quedarse.",
+      "accept": [
+        "Tengo la sensación de que Vale quiere quedarse."
+      ],
+      "why": "A hunch is followed by a normal sentence."
+    },
+    {
+      "prompt": "Type it in Spanish: I have my doubts about the new timetable.",
+      "answer": "Tengo mis dudas sobre el nuevo horario.",
+      "accept": [],
+      "why": "For doubts about a thing, *sobre* goes before it."
+    },
+    {
+      "prompt": "Type it in Spanish: I get the feeling Altamira has already decided.",
+      "answer": "Me da la impresión de que Altamira ya decidió.",
+      "accept": [],
+      "why": "*Me da* is the way to say *I get* the feeling."
+    },
+    {
+      "prompt": "Type it in Spanish: Do you have the feeling Mariana knows something? (to a friend)",
+      "answer": "¿Tienes la impresión de que Mariana sabe algo?",
+      "accept": [
+        "¿Tienes la sensación de que Mariana sabe algo?"
+      ],
+      "why": "A friend is *tú*, so the verb ends in *-s*."
+    },
+    {
+      "prompt": "Make it about *we*: Tengo la impresión de que miente.",
+      "answer": "Tenemos la impresión de que miente.",
+      "accept": [],
+      "why": "We is the *-mos* ending of *tener*."
+    },
+    {
+      "prompt": "Make it a past guess: Tengo la impresión de que ganó. (change it to: is going to win)",
+      "answer": "Tengo la impresión de que va a ganar.",
+      "accept": [],
+      "why": "A guess about what comes next uses *va a* plus the verb."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Tengo la impresión de que sea tensa.",
+      "right": "Tengo la impresión de que es tensa.",
+      "why": "Almost. A hunch you believe takes the plain verb, not the *-e* or *-a* form."
+    },
+    {
+      "wrong": "Tengo una impresión que miente.",
+      "right": "Tengo la impresión de que miente.",
+      "why": "Almost. Spanish says *la impresión de que*, with *la* and the *de*."
+    },
+    {
+      "wrong": "Tengo la impresión de que el parque debe cerrar. (said to argue your case)",
+      "right": "Voy a defender que el parque debe cerrar.",
+      "why": "Almost. *Tengo la impresión* says you have no evidence, so don't use it for a claim you mean to defend."
+    }
+  ],
+  "personal": "Tell me a hunch you have right now, starting with *Tengo la impresión de que*."
+}
