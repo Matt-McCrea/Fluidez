@@ -1,0 +1,218 @@
+{
+  "id": "sc-u09-d",
+  "unit": "u09",
+  "title": "Twenty past six",
+  "brief": "You're Tomás. It's Friday morning, the day after Vale opened the storeroom door, and you walk into the café late. Say sorry, explain, and find out what needs doing today. Vale is your friend, so use tú with her.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Son las seis y veinte, Tomás.",
+      "npcEn": "It's twenty past six, Tomás.",
+      "intent": "Say sorry, you're running late.",
+      "accept": [
+        "Perdón, Vale. Se me hizo tarde.",
+        "¡Uy, perdón! Se me hizo tarde.",
+        "Perdón. Se me hizo tarde, Vale."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "perdón",
+          "label": "sorry: perdón"
+        }
+      ],
+      "focus": "x:perdon-lo-siento",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Yo estoy aquí desde las cuatro, y tú normalmente llegas a las seis menos cinco. ¿Y hoy?",
+      "npcEn": "I've been here since four, and you normally arrive at five to six. And today?",
+      "intent": "Explain that on Thursdays you go to bed very late.",
+      "accept": [
+        "Los jueves me acuesto muy tarde.",
+        "Es que los jueves me acuesto muy tarde.",
+        "Los jueves me acuesto tarde y no duermo bien."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "acostarse",
+          "tense": "presente",
+          "person": "yo",
+          "label": "I go to bed: me acuesto"
+        }
+      ],
+      "focus": "g:reflexive-routine",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Sí, ya sé. Los jueves a las ocho tú tienes mucho trabajo.",
+      "npcEn": "Yes, I know. On Thursdays at eight you have a lot of work.",
+      "intent": "Change the subject: ask her what needs doing today.",
+      "accept": [
+        "¿Qué hay que hacer hoy?",
+        "¿Y qué hay que hacer hoy?",
+        "Bueno, ¿qué hay que hacer hoy?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask it as a question"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\b(tengo|hay) que hacer\\b",
+          "flags": "i",
+          "label": "what needs doing: ¿qué hay que hacer?"
+        }
+      ],
+      "focus": "g:tener-que-hay-que",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Hay que barrer, limpiar las mesas y pagar el pan de Gloria. Yo tengo que terminar el pan.",
+      "npcEn": "We have to sweep, clean the tables and pay Gloria for the bread. I have to finish the bread.",
+      "intent": "Say you're going to sweep, and after sweeping you'll clean the tables.",
+      "accept": [
+        "Voy a barrer. Después de barrer, limpio las mesas.",
+        "Voy a barrer, y después de barrer, limpio las mesas.",
+        "Primero voy a barrer. Después de barrer, limpio las mesas."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bdespués de barrer\\b",
+          "flags": "i",
+          "label": "after sweeping: después de barrer (the verb stays as it is in the dictionary)"
+        }
+      ],
+      "focus": "g:prep-infinitive",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Tomás, ¿hasta cuándo te quedas en Bogotá?",
+      "npcEn": "Tomás, how long are you staying in Bogotá?",
+      "intent": "Be honest: say you don't know.",
+      "accept": [
+        "No sé, Vale.",
+        "Uy, no sé.",
+        "No lo sé, Vale. No sé."
+      ],
+      "require": [
+        {
+          "type": "negation",
+          "label": "say it with no"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bno (lo )?sé",
+          "flags": "i",
+          "label": "I don't know: no sé"
+        }
+      ],
+      "focus": "p:hedge-knowledge",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Bueno. Hay tinto en la cocina. ¿Quieres uno antes de barrer?",
+      "npcEn": "Okay. There's black coffee in the kitchen. Do you want one before sweeping?",
+      "intent": "Say yes, thanks, and that you're coming.",
+      "accept": [
+        "Sí, gracias. ¡Ya voy!",
+        "¡Ya voy! Muchas gracias, Vale.",
+        "Sí, por favor. Ya voy."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "ya voy",
+          "label": "I'm coming: ya voy"
+        }
+      ],
+      "focus": "c:ya-voy",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:entonces-bueno",
+    "c:es-que",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hay-que",
+    "c:no-se",
+    "c:normalmente",
+    "c:perdon-disculpe",
+    "c:por-favor",
+    "c:se-me-hizo-tarde",
+    "c:tengo",
+    "c:tengo-que",
+    "c:tienes",
+    "c:voy-a",
+    "c:voy-vas",
+    "c:ya-voy",
+    "g:adverbs-mente",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:ir-a-plans",
+    "g:present-ar",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:se-accidental",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:acostarse",
+    "l:antes",
+    "l:aquí",
+    "l:barrer",
+    "l:bien",
+    "l:bueno",
+    "l:cocina",
+    "l:cuándo",
+    "l:después",
+    "l:dormir",
+    "l:estar",
+    "l:favor",
+    "l:hacer",
+    "l:hacerse",
+    "l:hoy",
+    "l:ir",
+    "l:jueves",
+    "l:limpiar",
+    "l:llegar",
+    "l:mesa",
+    "l:normalmente",
+    "l:pagar",
+    "l:pan",
+    "l:perdón",
+    "l:quedarse",
+    "l:querer",
+    "l:qué",
+    "l:saber",
+    "l:ser",
+    "l:tarde",
+    "l:tener",
+    "l:terminar",
+    "l:tinto",
+    "l:trabajo",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:days-el-lunes",
+    "p:ir-a-venir-de-place",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:telling-time",
+    "p:time-sequence-basic"
+  ]
+}
