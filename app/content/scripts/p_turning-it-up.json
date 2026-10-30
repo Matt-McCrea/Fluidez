@@ -1,0 +1,43 @@
+{
+  "node": "p:turning-it-up",
+  "hook": {
+    "line": "Vale texts about everything in capitals and stretched letters, and Tomás keeps missing the tone. Colombians turn the volume up with little prefixes and doubled words, and in chat they stretch a word to show what they really mean.",
+    "es": "Este pan está superbueno.",
+    "en": "This bread is really good."
+  },
+  "examples": [
+    { "es": "Es un hotel superbonito.", "en": "It's a really lovely hotel." },
+    { "es": "Aquí sí sirven café café.", "en": "Here they serve proper coffee." },
+    { "es": "La sopa está rebuena.", "en": "The soup is really good." },
+    { "es": "¿Qué tal la profe?\nPueees, bien.", "en": "How's the teacher?\nWeeell, fine." },
+    { "es": "El examen estuvo superdifícil.", "en": "The exam was really hard." },
+    { "es": "Quiero un tinto tinto, sin leche.", "en": "I want a proper black coffee, no milk." }
+  ],
+  "rule": "English says *really* or *so*. Spanish glues a prefix onto the adjective.\n\n*super-*: *superbueno*, *superfácil*. Written as one word.\n*re-*: *rebueno*, *rebonito*. Very Colombian and Mexican, and a bit more casual.\n\nTo say the real thing, say the word twice: *café café* is proper coffee, not the instant kind.\n\nIn chat, stretched letters carry the tone. *Pueees* is polite disagreement or doubt. *Bueeeno* is reluctance. *Poooor fa* is pleading. Use these with friends only, never in a formal email.",
+  "smallPrint": "Teachers call the prefixes *intensificadores* and the doubled word *reduplicación*.",
+  "readAndPick": [
+    { "es": "La sopa está superrica.", "options": ["The soup is really tasty.", "The soup is a bit tasty.", "The soup is not tasty."], "answer": 0 },
+    { "es": "Quiero un café café.", "options": ["I want two coffees.", "I want a proper coffee.", "I want coffee with milk."], "answer": 1 },
+    { "es": "El examen es superfácil.", "options": ["The exam is a bit easy.", "The exam is really easy.", "The exam is not easy."], "answer": 1 },
+    { "es": "Pueees, no sé.", "options": ["Well, I'm not sure.", "Yes, I know.", "No, I don't want to."], "answer": 0 },
+    { "es": "Mi hermana es rebuena gente.", "options": ["My sister is quite bad.", "My sister is really good people.", "My sister is a good boss."], "answer": 1 },
+    { "es": "Es un carro supercaro.", "options": ["It's a very cheap car.", "It's a very expensive car.", "It's a slightly expensive car."], "answer": 1 },
+    { "es": "Bueeeno, vamos.", "options": ["Fine, let's go (reluctantly).", "Great, let's go (excited).", "No, let's not go."], "answer": 0 },
+    { "es": "Aquí hacen un tinto tinto.", "options": ["They make two black coffees here.", "They make a proper black coffee here.", "They make a bad black coffee here."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose the right form and type the whole sentence (The soup is really good): La sopa está ___. (superbuena / super buena)", "answer": "La sopa está superbuena.", "accept": ["La sopa está rebuena."], "why": "The prefix is glued on, and the ending matches *sopa*." },
+    { "prompt": "Choose the right form and type the whole sentence (It's a really lovely hotel): Es un hotel ___. (superbonito / superbonita)", "answer": "Es un hotel superbonito.", "accept": ["Es un hotel rebonito."], "why": "*Hotel* is masculine, so *superbonito*." },
+    { "prompt": "Type in Spanish: The exam was really hard.", "answer": "El examen estuvo superdifícil.", "accept": ["El examen fue superdifícil.", "El examen estuvo súper difícil."], "why": "*Super-* sits right in front of the adjective." },
+    { "prompt": "Type in Spanish: I want a proper black coffee.", "answer": "Quiero un tinto tinto.", "accept": ["Quiero un café café."], "why": "Saying the word twice means the real thing." },
+    { "prompt": "Make it stronger with super-: La sala es bonita.", "answer": "La sala es superbonita.", "accept": ["La sala es rebonita."], "why": "Glue the prefix to *bonita* and keep its ending." },
+    { "prompt": "Type in Spanish: The soup is really tasty (a woman is talking about her soup).", "answer": "Mi sopa está superrica.", "accept": ["La sopa está superrica."], "why": "*Rica* agrees with *sopa*." },
+    { "prompt": "In a chat, answer a friend with a doubtful well, then say it is fine:", "answer": "Pueees, bien.", "accept": ["Pueees, está bien."], "why": "Stretching the *e* shows hesitation." }
+  ],
+  "pitfalls": [
+    { "wrong": "La sopa está super buena.", "right": "La sopa está superbuena.", "why": "In neat writing the prefix joins the adjective into one word." },
+    { "wrong": "Es una casa superbonito.", "right": "Es una casa superbonita.", "why": "The adjective keeps agreeing with the noun, prefix or not." },
+    { "wrong": "Señor, el servicio fue rebueno.", "right": "Señor, el servicio fue muy bueno.", "why": "*Re-* is casual; in a formal message use *muy*." }
+  ],
+  "personal": "Describe your favourite meal or place with one *super-* word, and say what you would stretch in a chat."
+}

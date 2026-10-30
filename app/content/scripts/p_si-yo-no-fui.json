@@ -1,0 +1,43 @@
+{
+  "node": "p:si-yo-no-fui",
+  "hook": {
+    "line": "Someone has knocked a tray of pastries off the counter, and everyone looks at Tomás. English says it with stress: it wasn't ME. Spanish adds a little *si* and the pronoun to do the same job.",
+    "es": "¡Si yo no fui!",
+    "en": "But it wasn't me!"
+  },
+  "examples": [
+    { "es": "¡Si yo no fui, fue él!", "en": "But it wasn't me, it was him!" },
+    { "es": "¡Si yo no dije nada!", "en": "But I didn't say anything!" },
+    { "es": "Tú hazme caso, que yo sé lo que digo.", "en": "You listen to me, I know what I'm talking about." },
+    { "es": "¡Si yo no hice nada!", "en": "But I didn't do anything!" },
+    { "es": "¡Si tú me dijiste que sí!", "en": "But you told me yes!" },
+    { "es": "¡Si ella no fue, fui yo!", "en": "But she wasn't the one, it was me!" }
+  ],
+  "rule": "To protest that you are innocent, start with *si* and say the pronoun out loud.\n\n*¡Si yo no fui!* is not an \"if\". Here *si* means \"but, come on\". The pronoun *yo* is not needed for grammar, which is why it sounds so pointed.\n\nIt works for anyone: *¡Si ella no fue!* *¡Si tú me dijiste que sí!*\n\nTo take control of a conversation, put *tú* in front of a command: *Tú hazme caso*, you listen to me. Then add *que yo sé lo que digo* to say you know best.\n\nVery casual. Use it with friends and family.",
+  "smallPrint": "Teachers call this an *si enfático* with an explicit subject pronoun: the pronoun carries emphasis, not information.",
+  "readAndPick": [
+    { "es": "¡Si yo no fui!", "options": ["But it wasn't me!", "If I don't go!", "I am not going!"], "answer": 0 },
+    { "es": "¡Si yo no dije nada!", "options": ["If I say nothing!", "But I didn't say anything!", "I'll say nothing!"], "answer": 1 },
+    { "es": "¡Si ella no fue, fui yo!", "options": ["But she wasn't the one, it was me!", "If she goes, I'll go!", "She went and so did I!"], "answer": 0 },
+    { "es": "Tú hazme caso.", "options": ["You listen to me.", "I'll listen to you.", "Do you listen to me?"], "answer": 0 },
+    { "es": "¡Si tú me dijiste que sí!", "options": ["But I told you yes!", "But you told me yes!", "If you tell me yes!"], "answer": 1 },
+    { "es": "¡Si yo no hice nada!", "options": ["I'll do nothing!", "But I didn't do anything!", "If I do nothing!"], "answer": 1 },
+    { "es": "Tú hazme caso, que yo sé lo que digo.", "options": ["Listen to me, I know what I'm saying.", "I'll listen to you, you know what you say.", "He listens to me, he knows."], "answer": 0 },
+    { "es": "¡Si él no fue, fue ella!", "options": ["But he wasn't the one, it was her!", "But it wasn't me, it was her!", "If he goes, she goes!"], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose the right form and type the whole sentence (But it wasn't me!): ¡Si yo no ___! (fui / soy)", "answer": "¡Si yo no fui!", "accept": ["Si yo no fui."], "why": "It happened already, so the past *fui*." },
+    { "prompt": "Choose the right form and type the whole sentence (But I didn't say anything!): ¡Si ___ no dije nada! (yo / me)", "answer": "¡Si yo no dije nada!", "accept": ["Si yo no dije nada."], "why": "The spoken *yo* is what gives the protest its force." },
+    { "prompt": "Type in Spanish: But I didn't do anything!", "answer": "¡Si yo no hice nada!", "accept": ["Si yo no hice nada."], "why": "*Si yo no* plus the past of *hacer*." },
+    { "prompt": "Type in Spanish (about a woman): But she wasn't the one!", "answer": "¡Si ella no fue!", "accept": ["Si ella no fue."], "why": "The pronoun is now *ella* and the verb is *fue*." },
+    { "prompt": "Type in Spanish (to a friend): You listen to me.", "answer": "Tú hazme caso.", "accept": ["Hazme caso."], "why": "A command to a friend, with *tú* in front to take control." },
+    { "prompt": "Make it a protest: Yo no rompí el vaso.", "answer": "¡Si yo no rompí el vaso!", "accept": ["Si yo no rompí el vaso."], "why": "Just add *si* at the start with the same *yo*." },
+    { "prompt": "Type in Spanish: But you told me yes!", "answer": "¡Si tú me dijiste que sí!", "accept": ["Si tú me dijiste que sí."], "why": "*Si tú* points straight at the other person." }
+  ],
+  "pitfalls": [
+    { "wrong": "¡Yo no fui!", "right": "¡Si yo no fui!", "why": "This is fine but flatter; *si* adds the \"come on, really\" feeling." },
+    { "wrong": "¡Si no fui!", "right": "¡Si yo no fui!", "why": "Without *yo* the stress is lost, and the stress is the whole point." },
+    { "wrong": "¡Si yo no soy!", "right": "¡Si yo no fui!", "why": "The blame is about something that already happened, so use the past *fui*." }
+  ],
+  "personal": "Think of something you were once wrongly blamed for, and protest it with *¡Si yo no…!*"
+}

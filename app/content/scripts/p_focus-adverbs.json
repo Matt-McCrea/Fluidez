@@ -1,0 +1,43 @@
+{
+  "node": "p:focus-adverbs",
+  "hook": {
+    "line": "Mariana is recording a podcast and wants her listeners to catch the one detail that matters. In English you lean on the word with your voice. Spanish often drops a small pinpointing word right in front of it.",
+    "es": "Precisamente por eso volví a Bogotá.",
+    "en": "That's exactly why I came back to Bogotá."
+  },
+  "examples": [
+    { "es": "Precisamente por eso decidimos esperar.", "en": "That's exactly why we decided to wait." },
+    { "es": "Tiene de todo, incluso piscina.", "en": "It has everything, even a pool." },
+    { "es": "Me gusta caminar, sobre todo por la mañana.", "en": "I like walking, especially in the morning." },
+    { "es": "Concretamente, necesitamos dos personas más.", "en": "Specifically, we need two more people." },
+    { "es": "Aquí todos toman tinto, incluso Hernando.", "en": "Everyone here drinks black coffee, even Hernando." },
+    { "es": "Me encanta el café, sobre todo el café de Rosa.", "en": "I love coffee, especially Rosa's café." }
+  ],
+  "rule": "Four small words put a spotlight on whatever comes right after them.\n\n*Precisamente*: for exactly that reason, or exactly this one. *Precisamente por eso* = that's exactly why.\n*Concretamente*: specifically, to name the detail.\n*Sobre todo*: especially, the best case among several.\n*Incluso*: even, the surprising extreme.\n\nPut the word just before the thing you are lighting up. English moves your voice. Spanish moves a word, so the listener hears the point even in a text message.",
+  "smallPrint": "Teachers call these *adverbios de foco*, focus adverbs: they point at one part of the sentence.",
+  "readAndPick": [
+    { "es": "Incluso Hernando vino.", "options": ["Even Hernando came.", "Especially Hernando came.", "Only Hernando came."], "answer": 0 },
+    { "es": "Me gustan los postres, sobre todo el flan.", "options": ["I like desserts, even the flan.", "I like desserts, especially the flan.", "I like desserts, exactly the flan."], "answer": 1 },
+    { "es": "Precisamente por eso no fui.", "options": ["That's exactly why I didn't go.", "Even so, I didn't go.", "Especially because of that I didn't go."], "answer": 0 },
+    { "es": "Necesito algo concreto, concretamente dos mesas.", "options": ["I need something, even two tables.", "I need something specific, specifically two tables.", "I need something, especially two tables."], "answer": 1 },
+    { "es": "Todos lo saben, incluso Simón.", "options": ["Everyone knows it, especially Simón.", "Everyone knows it, specifically Simón.", "Everyone knows it, even Simón."], "answer": 2 },
+    { "es": "Trabajo mucho, sobre todo los sábados.", "options": ["I work a lot, especially on Saturdays.", "I work a lot, even on Saturdays.", "I work a lot, specifically on Saturdays."], "answer": 0 },
+    { "es": "Precisamente hoy llegó la carta.", "options": ["Even today the letter arrived.", "Especially today the letter arrived.", "Today of all days the letter arrived."], "answer": 2 },
+    { "es": "No tiene tiempo para nada, incluso para comer.", "options": ["He has no time for anything, not even to eat.", "He has no time for anything, especially to eat.", "He has no time for anything, exactly to eat."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose the right word and type the whole sentence (I like walking, especially in the morning): Me gusta caminar, ___ por la mañana. (sobre todo / incluso)", "answer": "Me gusta caminar, sobre todo por la mañana.", "accept": ["Me gusta caminar sobre todo por la mañana."], "why": "Picking the best case out of several is *sobre todo*." },
+    { "prompt": "Choose the right word and type the whole sentence (Everyone came, even Hernando): Vinieron todos, ___ Hernando. (incluso / precisamente)", "answer": "Vinieron todos, incluso Hernando.", "accept": ["Vinieron todos incluso Hernando."], "why": "Hernando is the surprising extreme, so *incluso*." },
+    { "prompt": "Type in Spanish: That's exactly why we decided to wait.", "answer": "Precisamente por eso decidimos esperar.", "accept": ["Por eso decidimos esperar precisamente."], "why": "*Precisamente* sits before *por eso* to point at the reason." },
+    { "prompt": "Type in Spanish: Specifically, we need two more people.", "answer": "Concretamente, necesitamos dos personas más.", "accept": ["Concretamente necesitamos dos personas más."], "why": "Naming the exact detail is *concretamente*." },
+    { "prompt": "Type in Spanish: It has everything, even a pool.", "answer": "Tiene de todo, incluso piscina.", "accept": ["Tiene de todo, incluso una piscina."], "why": "A pool is the surprising extra, so *incluso*." },
+    { "prompt": "Make it stronger with a word that means especially: Me gusta el café.", "answer": "Me gusta el café, sobre todo por la mañana.", "accept": ["Me gusta el café, sobre todo el café de Rosa.", "Sobre todo me gusta el café de Rosa."], "why": "*Sobre todo* needs a thing or time after it to spotlight." },
+    { "prompt": "Type in Spanish: Everyone knows it, even the parrot.", "answer": "Todos lo saben, incluso el loro.", "accept": ["Todos lo saben, incluso Simón.", "Todos lo saben incluso el loro."], "why": "The unexpected one at the end comes right after *incluso*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Me gusta caminar, incluso por la mañana.", "right": "Me gusta caminar, sobre todo por la mañana.", "why": "*Incluso* says even, as if mornings were surprising; for your favourite moment, use *sobre todo*." },
+    { "wrong": "Especialmente por eso decidimos esperar.", "right": "Precisamente por eso decidimos esperar.", "why": "For that's exactly why, Spanish says *precisamente por eso*." },
+    { "wrong": "Hasta todos vinieron, sobre todo Hernando, que nunca sale.", "right": "Vinieron todos, incluso Hernando, que nunca sale.", "why": "A surprise is *incluso*; *sobre todo* would just mean he came more than the rest." }
+  ],
+  "personal": "Say one thing you love and one place or time you love it most. Use *sobre todo*."
+}
