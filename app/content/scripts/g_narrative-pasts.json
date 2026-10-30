@@ -1,7 +1,7 @@
 {
   "node": "g:narrative-pasts",
   "hook": {
-    "line": "Telling a story is a juggling act: what happened, what the scene looked like, and what had already happened before. Don Hernando always does it in that order.",
+    "line": "Telling a story is a juggling act: what happened, what the scene looked like, and what had already happened before. Don Hernando juggles all three in every story he tells.",
     "es": "Era domingo. Tomás abrió la caja que había encontrado y vio una carta.",
     "en": "It was Sunday. Tomás opened the box he had found and saw a letter."
   },
@@ -116,7 +116,7 @@
       "prompt": "Pick and type the whole sentence: *Cuando llegué, Vale ya ___.* (*salió* or *había salido*) When I arrived, Vale had already left.",
       "answer": "Cuando llegué, Vale ya había salido.",
       "accept": [],
-      "why": "He left before you arrived, so step back with *había*."
+      "why": "She left before you arrived, so step back with *había*."
     },
     {
       "prompt": "Pick and type the whole sentence: *Tomás ___ leyendo cuando sonó el celular.* (*estaba* or *estuvo*) Tomás was reading when the cell phone rang.",
@@ -166,9 +166,9 @@
       "why": "Almost. Weather that sets the scene is background, so it takes the imperfect."
     },
     {
-      "wrong": "Cuando llegué, Vale ya salió.",
-      "right": "Cuando llegué, Vale ya había salido.",
-      "why": "When one thing happened before the other, step back with *había*."
+      "wrong": "Mientras Tomás leyó, Simón cantaba.",
+      "right": "Mientras Tomás leía, Simón cantaba.",
+      "why": "Two things going on at the same time are both background, so both take the imperfect."
     },
     {
       "wrong": "Estuve leyendo cuando sonó el celular.",

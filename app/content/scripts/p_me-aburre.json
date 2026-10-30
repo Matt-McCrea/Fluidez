@@ -6,38 +6,163 @@
     "en": "Meetings bore me."
   },
   "examples": [
-    { "es": "Me aburre oír siempre lo mismo.", "en": "It bores me to hear the same thing all the time." },
-    { "es": "Le motiva mucho el proyecto nuevo.", "en": "The new project really motivates her." },
-    { "es": "Me cansa manejar de noche.", "en": "Driving at night tires me out." },
-    { "es": "A Hernando le aburren las reuniones.", "en": "Meetings bore Hernando." },
-    { "es": "Nos cansa esperar tanto.", "en": "Waiting so long tires us out." },
-    { "es": "¿Te aburre la película?", "en": "Does the film bore you? (to a friend)" }
+    {
+      "es": "Me aburre oír siempre lo mismo.",
+      "en": "It bores me to hear the same thing all the time."
+    },
+    {
+      "es": "Le motiva mucho el proyecto nuevo.",
+      "en": "The new project really motivates her."
+    },
+    {
+      "es": "Me cansa manejar de noche.",
+      "en": "Driving at night tires me out."
+    },
+    {
+      "es": "A Hernando le aburren las reuniones.",
+      "en": "Meetings bore Hernando."
+    },
+    {
+      "es": "Nos cansa esperar tanto.",
+      "en": "Waiting so long tires us out."
+    },
+    {
+      "es": "¿Te aburre la película?",
+      "en": "Does the movie bore you? (to a friend)"
+    }
   ],
   "rule": "Verbs like *aburrir*, *cansar* and *motivar* work like *gustar*. The thing that bores or tires you is the subject, and you are the one who receives it.\n\n*Me aburre la reunión*: the meeting bores me.\n*Me aburren las reuniones*: the verb is plural when the thing is.\n*Le motiva el proyecto*: the project motivates her.\n*Me cansa manejar*: an infinitive counts as one thing.\n\nAdd *A Hernando* before *le* to name who. Say *yo aburro*, and you are the boring one.",
   "smallPrint": "Teachers call these verbs like *gustar*: the cause is the grammatical subject and the person is an indirect object.",
   "readAndPick": [
-    { "es": "Me aburre la reunión.", "options": ["The meeting bores me.", "The meetings bore me."], "answer": 0 },
-    { "es": "Me aburren las reuniones.", "options": ["The meeting bores me.", "The meetings bore me."], "answer": 1 },
-    { "es": "Le cansa manejar de noche.", "options": ["Driving at night tires him.", "Driving at night tires me."], "answer": 0 },
-    { "es": "Me cansa manejar de noche.", "options": ["Driving at night tires him.", "Driving at night tires me."], "answer": 1 },
-    { "es": "Le motiva el proyecto.", "options": ["The project motivates them.", "The project motivates her."], "answer": 1 },
-    { "es": "Les motiva el proyecto.", "options": ["The project motivates them.", "The project motivates her."], "answer": 0 },
-    { "es": "Me aburro en las reuniones.", "options": ["Meetings bore me.", "I get bored in meetings."], "answer": 1 },
-    { "es": "Nos aburre esa serie.", "options": ["That series bores me.", "That series bores us."], "answer": 1 }
+    {
+      "es": "Me aburre la reunión.",
+      "options": [
+        "The meeting bores me.",
+        "The meetings bore me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me aburren las reuniones.",
+      "options": [
+        "The meeting bores me.",
+        "The meetings bore me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Le cansa manejar de noche.",
+      "options": [
+        "Driving at night tires him.",
+        "Driving at night tires me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me cansa manejar de noche.",
+      "options": [
+        "Driving at night tires him.",
+        "Driving at night tires me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Le motiva el proyecto.",
+      "options": [
+        "The project motivates them.",
+        "The project motivates her."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Les motiva el proyecto.",
+      "options": [
+        "The project motivates them.",
+        "The project motivates her."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me aburro en las reuniones.",
+      "options": [
+        "Meetings bore me.",
+        "I get bored in meetings."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nos aburre esa serie.",
+      "options": [
+        "That series bores me.",
+        "That series bores us."
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
-    { "prompt": "Choose the right form and type the whole sentence (Meetings bore me): ___ las reuniones. (Me aburre / Me aburren)", "answer": "Me aburren las reuniones.", "accept": [], "why": "More than one meeting, so the verb is plural: *aburren*." },
-    { "prompt": "Type in Spanish: Driving at night tires me out.", "answer": "Me cansa manejar de noche.", "accept": [], "why": "The thing is driving, so *cansa*, and *me* is you." },
-    { "prompt": "Type in Spanish: The new project really motivates her.", "answer": "Le motiva mucho el proyecto nuevo.", "accept": ["El proyecto nuevo le motiva mucho."], "why": "*Le* is her, and the project is the thing doing it." },
-    { "prompt": "Make it about Hernando: Me cansa manejar de noche.", "answer": "A Hernando le cansa manejar de noche.", "accept": ["Le cansa manejar de noche."], "why": "Name him with *a Hernando* and switch *me* to *le*." },
-    { "prompt": "Make it plural: Me aburre la reunión.", "answer": "Me aburren las reuniones.", "accept": [], "why": "Plural thing, plural verb." },
-    { "prompt": "Make it about us: Me aburre esa serie.", "answer": "Nos aburre esa serie.", "accept": [], "why": "*Nos* is us, and the verb stays as it is." },
-    { "prompt": "Ask a friend if the film bores them.", "answer": "¿Te aburre la película?", "accept": [], "why": "*Te* is your friend, and the film is the thing." }
+    {
+      "prompt": "Choose the right form and type the whole sentence (Meetings bore me): ___ las reuniones. (*Me aburre* or *Me aburren*)",
+      "answer": "Me aburren las reuniones.",
+      "accept": [],
+      "why": "More than one meeting, so the verb is plural: *aburren*."
+    },
+    {
+      "prompt": "Type in Spanish: Driving at night tires me out.",
+      "answer": "Me cansa manejar de noche.",
+      "accept": [],
+      "why": "The thing is driving, so *cansa*, and *me* is you."
+    },
+    {
+      "prompt": "Type in Spanish: The new project really motivates her.",
+      "answer": "Le motiva mucho el proyecto nuevo.",
+      "accept": [
+        "El proyecto nuevo le motiva mucho."
+      ],
+      "why": "*Le* is her, and the project is the thing doing it."
+    },
+    {
+      "prompt": "Make it about Hernando: Me cansa manejar de noche.",
+      "answer": "A Hernando le cansa manejar de noche.",
+      "accept": [
+        "Le cansa manejar de noche."
+      ],
+      "why": "Name him with *a Hernando* and switch *me* to *le*."
+    },
+    {
+      "prompt": "Make it plural: Me aburre la reunión.",
+      "answer": "Me aburren las reuniones.",
+      "accept": [],
+      "why": "Plural thing, plural verb."
+    },
+    {
+      "prompt": "Make it about us: Me aburre esa serie.",
+      "answer": "Nos aburre esa serie.",
+      "accept": [],
+      "why": "*Nos* is us, and the verb stays as it is."
+    },
+    {
+      "prompt": "Ask a friend if the film bores them.",
+      "answer": "¿Te aburre la película?",
+      "accept": [],
+      "why": "*Te* is your friend, and the film is the thing."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Yo aburro las reuniones.", "right": "Me aburren las reuniones.", "why": "Almost. With *yo aburro* you are the one boring the meetings; let the meetings do it to you." },
-    { "wrong": "Me aburre las reuniones.", "right": "Me aburren las reuniones.", "why": "The meetings do the boring, so the verb is plural." },
-    { "wrong": "Me cansa de manejar de noche.", "right": "Me cansa manejar de noche.", "why": "The infinitive follows directly, with no *de*." }
+    {
+      "wrong": "Yo aburro las reuniones.",
+      "right": "Me aburren las reuniones.",
+      "why": "Almost. With *yo aburro* you are the one boring the meetings; let the meetings do it to you."
+    },
+    {
+      "wrong": "Me aburre las reuniones.",
+      "right": "Me aburren las reuniones.",
+      "why": "The meetings do the boring, so the verb is plural."
+    },
+    {
+      "wrong": "Me cansa de manejar de noche.",
+      "right": "Me cansa manejar de noche.",
+      "why": "The infinitive follows directly, with no *de*."
+    }
   ],
   "personal": "Tell us one thing that bores you and one that motivates you. Use *me aburre* and *me motiva*."
 }

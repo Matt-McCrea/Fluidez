@@ -6,39 +6,187 @@
     "en": "I'm afraid of getting it wrong."
   },
   "examples": [
-    { "es": "Tengo miedo a equivocarme.", "en": "I'm afraid of getting it wrong." },
-    { "es": "Le da miedo manejar.", "en": "Driving scares her." },
-    { "es": "A Tomás le da miedo hablar con los clientes.", "en": "Talking to customers scares Tomás." },
-    { "es": "Rosa tenía miedo a perder el café.", "en": "Rosa was afraid of losing the café." },
-    { "es": "Tengo miedo a las alturas.", "en": "I'm afraid of heights." },
-    { "es": "Hernando tiene miedo de quedarse solo.", "en": "Hernando is afraid of being left alone." }
+    {
+      "es": "Tengo miedo a equivocarme.",
+      "en": "I'm afraid of getting it wrong."
+    },
+    {
+      "es": "Le da miedo manejar.",
+      "en": "Driving scares her."
+    },
+    {
+      "es": "A Tomás le da miedo hablar con los clientes.",
+      "en": "Talking to customers scares Tomás."
+    },
+    {
+      "es": "Rosa tenía miedo a perder el café.",
+      "en": "Rosa was afraid of losing the café."
+    },
+    {
+      "es": "Tengo miedo a las alturas.",
+      "en": "I'm afraid of heights."
+    },
+    {
+      "es": "Hernando tiene miedo de quedarse solo.",
+      "en": "Hernando is afraid of being left alone."
+    }
   ],
   "rule": "Two ways to say what you're afraid of:\n\n*Tengo miedo a* + what scares you: *Tengo miedo a las alturas.*\n*Me da miedo* + what scares you: *Le da miedo manejar.* (*A Tomás le da miedo hablar.*)\n\nAfter *miedo*, a verb stays as an infinitive: *miedo a perder*. English says *of losing*; Spanish says *a perder*.\n\nYou'll hear *miedo de* too, with the same meaning: *miedo de quedarse solo*.\n\nThis is for your own fear. Someone else's action takes a longer pattern, coming later.",
   "smallPrint": "Teachers call this a noun complement: *miedo* takes *a* or *de*, then an infinitive when the person afraid is also the one doing it.",
   "readAndPick": [
-    { "es": "Tengo miedo a equivocarme.", "options": ["I'm afraid of getting it wrong.", "I'm afraid you'll get it wrong.", "I got it wrong."], "answer": 0 },
-    { "es": "Le da miedo manejar.", "options": ["Driving scares her.", "She drives with fear.", "I'm afraid to drive."], "answer": 0 },
-    { "es": "Rosa tenía miedo a perder el café.", "options": ["Rosa is afraid of losing the café.", "Rosa was afraid of losing the café.", "Rosa lost the café."], "answer": 1 },
-    { "es": "Tengo miedo a las alturas.", "options": ["I'm afraid of heights.", "I'm afraid of him.", "I'm afraid of falling."], "answer": 0 },
-    { "es": "Hernando tiene miedo de quedarse solo.", "options": ["Hernando is afraid of being left alone.", "Hernando is afraid of the dark.", "Hernando was left alone."], "answer": 0 },
-    { "es": "A Tomás le da miedo hablar con los clientes.", "options": ["Tomás is afraid to talk to the customers.", "Tomás talks to the customers.", "The customers are afraid of Tomás."], "answer": 0 },
-    { "es": "Mi papá tiene miedo de volar.", "options": ["My dad is afraid of flying.", "My dad is afraid of flights.", "My dad is flying."], "answer": 0 },
-    { "es": "Nos da miedo perder la cuadra.", "options": ["Losing the block scares them.", "Losing the block scares us.", "The block is afraid of losing us."], "answer": 1 },
-    { "es": "No tengo miedo a nada.", "options": ["I'm afraid of nothing at all.", "I'm not afraid of anything.", "I'm afraid of something."], "answer": 1 }
+    {
+      "es": "Tengo miedo a equivocarme.",
+      "options": [
+        "I'm afraid of getting it wrong.",
+        "I'm afraid you'll get it wrong.",
+        "I got it wrong."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Le da miedo manejar.",
+      "options": [
+        "Driving scares her.",
+        "She drives with fear.",
+        "I'm afraid to drive."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Rosa tenía miedo a perder el café.",
+      "options": [
+        "Rosa is afraid of losing the café.",
+        "Rosa was afraid of losing the café.",
+        "Rosa lost the café."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tengo miedo a las alturas.",
+      "options": [
+        "I'm afraid of heights.",
+        "I'm afraid of him.",
+        "I'm afraid of falling."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hernando tiene miedo de quedarse solo.",
+      "options": [
+        "Hernando is afraid of being left alone.",
+        "Hernando is afraid of the dark.",
+        "Hernando was left alone."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A Tomás le da miedo hablar con los clientes.",
+      "options": [
+        "Tomás is afraid to talk to the customers.",
+        "Tomás talks to the customers.",
+        "The customers are afraid of Tomás."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mi papá tiene miedo de volar.",
+      "options": [
+        "My dad is afraid of flying.",
+        "My dad is afraid of flights.",
+        "My dad is flying."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nos da miedo perder la cuadra.",
+      "options": [
+        "Losing the block scares them.",
+        "Losing the block scares us.",
+        "The block is afraid of losing us."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No tengo miedo a nada.",
+      "options": [
+        "I'm afraid of nothing at all.",
+        "I'm not afraid of anything.",
+        "I'm afraid of something."
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick and type the whole sentence: *Tengo miedo ___ equivocarme.* (*a* or *por*) I'm afraid of getting it wrong.", "answer": "Tengo miedo a equivocarme.", "accept": ["Tengo miedo de equivocarme."], "why": "*Miedo* links to what scares you with *a* (or *de*), then an infinitive." },
-    { "prompt": "Pick and type the whole sentence: *___ da miedo manejar.* (*Le* or *Les*) Driving scares her.", "answer": "Le da miedo manejar.", "accept": [], "why": "She is one person, so *le*; the fear is what gets done to her." },
-    { "prompt": "Say: I'm afraid of heights.", "answer": "Tengo miedo a las alturas.", "accept": ["Tengo miedo de las alturas."], "why": "A thing that scares you follows *miedo a*." },
-    { "prompt": "Say: Rosa was afraid of losing the café.", "answer": "Rosa tenía miedo a perder el café.", "accept": ["Rosa tenía miedo de perder el café."], "why": "A past fear uses *tenía*, then *a* and the infinitive." },
-    { "prompt": "Say: Losing the block scares us.", "answer": "Nos da miedo perder la cuadra.", "accept": [], "why": "*Nos* means us, and *perder* stays as an infinitive." },
-    { "prompt": "Say: My dad is afraid of flying.", "answer": "Mi papá tiene miedo de volar.", "accept": ["Mi papá tiene miedo a volar.", "Mi papá le tiene miedo a volar."], "why": "*Tiene* matches one person, then *de* or *a* and the infinitive." },
-    { "prompt": "Make it negative: *Tengo miedo a hablar en público.*", "answer": "No tengo miedo a hablar en público.", "accept": ["No tengo miedo de hablar en público."], "why": "Put *no* in front of *tengo*; nothing else changes." }
+    {
+      "prompt": "Pick and type the whole sentence: *Tengo miedo ___ equivocarme.* (*a* or *por*) I'm afraid of getting it wrong.",
+      "answer": "Tengo miedo a equivocarme.",
+      "accept": [
+        "Tengo miedo de equivocarme."
+      ],
+      "why": "*Miedo* links to what scares you with *a* (or *de*), then an infinitive."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *___ da miedo manejar.* (*Le* or *Les*) Driving scares her.",
+      "answer": "Le da miedo manejar.",
+      "accept": [],
+      "why": "She is one person, so *le*: the fear lands on her, the way *me gusta* works."
+    },
+    {
+      "prompt": "Say: I'm afraid of heights.",
+      "answer": "Tengo miedo a las alturas.",
+      "accept": [
+        "Tengo miedo de las alturas."
+      ],
+      "why": "A thing that scares you follows *miedo a*."
+    },
+    {
+      "prompt": "Say: Rosa was afraid of losing the café.",
+      "answer": "Rosa tenía miedo a perder el café.",
+      "accept": [
+        "Rosa tenía miedo de perder el café."
+      ],
+      "why": "A past fear uses *tenía*, then *a* and the infinitive."
+    },
+    {
+      "prompt": "Say: Losing the block scares us.",
+      "answer": "Nos da miedo perder la cuadra.",
+      "accept": [],
+      "why": "*Nos* means us, and *perder* stays as an infinitive."
+    },
+    {
+      "prompt": "Say: My dad is afraid of flying.",
+      "answer": "Mi papá tiene miedo de volar.",
+      "accept": [
+        "Mi papá tiene miedo a volar.",
+        "Mi papá le tiene miedo a volar."
+      ],
+      "why": "*Tiene* matches one person, then *de* or *a* and the infinitive."
+    },
+    {
+      "prompt": "Make it negative: *Tengo miedo a hablar en público.*",
+      "answer": "No tengo miedo a hablar en público.",
+      "accept": [
+        "No tengo miedo de hablar en público."
+      ],
+      "why": "Put *no* in front of *tengo*; nothing else changes."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Soy miedo a equivocarme.", "right": "Tengo miedo a equivocarme.", "why": "Almost. In Spanish you *have* fear, with *tengo*, instead of being afraid." },
-    { "wrong": "Tengo miedo a equivocando.", "right": "Tengo miedo a equivocarme.", "why": "After *a*, a verb stays as an infinitive, not *-ando*." },
-    { "wrong": "Tengo miedo de a perder el café.", "right": "Tengo miedo a perder el café.", "why": "Use *a* or *de*, not both." }
+    {
+      "wrong": "Estoy miedo a equivocarme.",
+      "right": "Tengo miedo a equivocarme.",
+      "why": "Almost. English says *I am afraid*, but in Spanish you *have* fear: *tengo miedo*."
+    },
+    {
+      "wrong": "Tengo miedo a equivocando.",
+      "right": "Tengo miedo a equivocarme.",
+      "why": "After *a*, a verb stays as an infinitive, not *-ando*."
+    },
+    {
+      "wrong": "Me da miedo a manejar.",
+      "right": "Me da miedo manejar.",
+      "why": "With *me da miedo*, the verb comes straight after, with no *a*."
+    }
   ],
   "personal": "Say two things that scare you, one with *Tengo miedo a…* and one with *Me da miedo…*, each followed by a verb in the infinitive."
 }

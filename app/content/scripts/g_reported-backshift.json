@@ -35,7 +35,7 @@
       "en": "Hernando said Rosa had never sold the house."
     }
   ],
-  "rule": "You already know that after *dijo que* the verb steps back: *Estoy cansado* becomes *Dijo que estaba cansado*. Two more steps back work the same way.\n\nSomething that had happened before that moment: the *había* form.\n*Llamé tres veces.* → *Dijo que había llamado tres veces.*\n\nSomething that was going to happen after that moment: the form that means would, the same ending you use for *haría* and *vendría*.\n*Vendré.* → *Prometió que vendría.*\n*Te ayudaré.* → *Me prometió que me ayudaría.*\n\nEnglish does exactly the same (called → had called, will → would), so it should feel familiar. Keep *que*: English can drop that, Spanish can't. And the person told goes before the verb: *me dijo*, *nos prometió*.",
+  "rule": "You already know that after *dijo que* the verb steps back: *Estoy cansado* becomes *Dijo que estaba cansado*. Two more steps back work the same way.\n\nSomething that had happened before that moment: the *había* form.\n*Llamé tres veces.* → *Dijo que había llamado tres veces.*\n\nSomething that was going to happen after that moment: the *would* form, with the *-ía* ending you know from *me gustaría*.\n*Vendré.* → *Prometió que vendría.*\n*Te ayudaré.* → *Me prometió que me ayudaría.*\n\nEnglish does exactly the same (called → had called, will → would), so it should feel familiar. Keep *que*: English can drop that, Spanish can't. And the person told goes before the verb: *me dijo*, *nos prometió*.",
   "smallPrint": "Teachers call this reported speech with backshift: the pluperfect stands in for the past and the conditional for the future, seen from a moment in the past.",
   "readAndPick": [
     {
@@ -135,7 +135,7 @@
       "prompt": "Say: Vale told me she had already opened the café.",
       "answer": "Vale me dijo que ya había abierto el café.",
       "accept": [
-        "Vale me dijo que había abierto el café ya."
+        "Vale me contó que ya había abierto el café."
       ],
       "why": "*Abrir* gives *abierto*, and *había* goes before it."
     },
@@ -164,9 +164,7 @@
     {
       "prompt": "Make it reported: *Ya llamé.* Start with *Me dijo que*.",
       "answer": "Me dijo que ya había llamado.",
-      "accept": [
-        "Me dijo que había llamado ya."
-      ],
+      "accept": [],
       "why": "A finished action before the saying becomes *había llamado*."
     },
     {

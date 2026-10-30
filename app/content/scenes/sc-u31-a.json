@@ -31,8 +31,8 @@
       "npcEn": "Mariana: And how did they pay for it?",
       "intent": "Say they paid with their parents' money, but Joaquín had borrowed money and couldn't pay it back.",
       "accept": [
-        "Con el dinero de sus padres, pero Joaquín había pedido plata prestada y no podía pagarla.",
-        "Usaron el dinero de sus padres. Pero Joaquín había pedido plata y no podía devolverla.",
+        "Con la plata de sus padres, pero Joaquín había pedido plata prestada y no podía pagarla.",
+        "Pagaron con la plata de sus papás. Pero Joaquín había pedido plata y no podía devolverla.",
         "Con la plata de sus padres. Joaquín había pedido más plata y no podía pagarla."
       ],
       "require": [
@@ -49,7 +49,7 @@
       "id": "t3",
       "npc": "Mariana: ¿Y qué pasó esa noche?",
       "npcEn": "Mariana: And what happened that night?",
-      "intent": "Tell what happened in order: he wanted to sell, Rosa refused, they fought, and he left. Use entonces, luego or de repente.",
+      "intent": "Tell what happened in order: he wanted to sell, Rosa refused, they fought, and he left. Use entonces, luego, de repente or de pronto.",
       "accept": [
         "Joaquín quiso vender. Rosa no aceptó, entonces se pelearon y él se fue esa noche.",
         "Primero Joaquín quiso vender el edificio. Rosa no quiso y luego se pelearon. Esa misma noche él se fue.",
@@ -61,7 +61,8 @@
           "words": [
             "entonces",
             "luego",
-            "de repente"
+            "de repente",
+            "de pronto"
           ],
           "label": "link the events: entonces, luego or de repente"
         },
@@ -99,20 +100,19 @@
     {
       "id": "t5",
       "npc": "Mariana: Gracias por contármelo. Ya es tarde.",
-      "npcEn": "Mariana: Thanks for telling me. It is late now.",
-      "intent": "Say you've been talking for two hours and ask her to come and have a coffee.",
+      "npcEn": "Mariana: Thanks for telling me. It's late.",
+      "intent": "Say the two of you have been talking for two hours, and invite her for a coffee.",
       "accept": [
-        "Llevo dos horas hablando. ¿Me acompañas a tomar un tinto?",
-        "Llevo toda la tarde hablando, ¿quieres un tinto?",
-        "Ya llevo dos horas hablando. ¿Tomamos un café?"
+        "Llevamos dos horas hablando. ¿Me acompañas a tomar un tinto?",
+        "Ya llevamos dos horas hablando, ¿quieres un tinto?",
+        "Llevamos dos horas hablando. ¿Tomamos un café?"
       ],
       "require": [
         {
-          "type": "verbForm",
+          "type": "verbFormAny",
           "inf": "llevar",
           "tense": "presente",
-          "person": "yo",
-          "label": "how long you have been at it: llevo"
+          "label": "how long you have been at it: llevamos dos horas"
         },
         {
           "type": "question"
@@ -161,7 +161,6 @@
     "l:cómo",
     "l:dejar",
     "l:devolver",
-    "l:dinero",
     "l:día",
     "l:edificio",
     "l:empezar",
@@ -180,6 +179,7 @@
     "l:noche",
     "l:padres",
     "l:pagar",
+    "l:papá",
     "l:pasar",
     "l:pedir",
     "l:pelearse",
@@ -195,7 +195,6 @@
     "l:terminar",
     "l:tinto",
     "l:tomar",
-    "l:usar",
     "l:vender",
     "p:cuando-basic",
     "p:dates-years",

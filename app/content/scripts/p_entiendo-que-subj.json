@@ -1,43 +1,180 @@
 {
   "node": "p:entiendo-que-subj",
   "hook": {
-    "line": "Someone you care about is upset, and you do not want to fix it, you want them to feel heard. Tomás needs this the day Vale finds out about the offer for the café. One small phrase does it.",
+    "line": "Someone you care about is upset, and you do not want to fix it, you want them to feel heard. Tomás needed this the day Vale found out about Altamira's offer. One small phrase does it.",
     "es": "Entiendo que estés molesta.",
     "en": "I understand that you're upset. (to a woman)"
   },
   "examples": [
-    { "es": "Entiendo que estés molesta con ellos.", "en": "I understand that you're upset with them. (to a woman)" },
-    { "es": "Comprendo que no quieras hablar ahora.", "en": "I understand that you don't want to talk now. (to a friend)" },
-    { "es": "Entiendo que llegas mañana.", "en": "I understand that you're arriving tomorrow. (to a friend)" },
-    { "es": "Entiendo que Tomás esté nervioso.", "en": "I understand that Tomás is nervous." },
-    { "es": "Entiendo que no te guste el cambio.", "en": "I understand that you don't like the change. (to a friend)" },
-    { "es": "Entiendo que vienen el lunes.", "en": "I understand that they're coming on Monday." }
+    {
+      "es": "Entiendo que estés molesta con ellos.",
+      "en": "I understand that you're upset with them. (to a woman)"
+    },
+    {
+      "es": "Comprendo que no quieras hablar ahora.",
+      "en": "I understand that you don't want to talk now. (to a friend)"
+    },
+    {
+      "es": "Entiendo que llegas mañana.",
+      "en": "I gather you're arriving tomorrow. (to a friend)"
+    },
+    {
+      "es": "Entiendo que Tomás esté nervioso.",
+      "en": "I understand that Tomás is nervous."
+    },
+    {
+      "es": "Entiendo que no te guste el cambio.",
+      "en": "I understand that you don't like the change. (to a friend)"
+    },
+    {
+      "es": "Entiendo que vienen el lunes.",
+      "en": "I gather they're coming on Monday."
+    }
   ],
   "rule": "Two meanings hide behind *entiendo que*.\n\nWith the plain verb, you have just taken in a fact: *Entiendo que llegas mañana*. Nothing more.\n\nWith the *-e* style verb (*estés, quieras, esté, tenga, te guste*), you are saying: it makes sense that you feel this. *Entiendo que estés molesta* means \"I get why you're upset\".\n\nSo the verb form carries the kindness. English uses a tone of voice; Spanish changes the ending. *Comprendo que* works the same way.",
   "smallPrint": "Teachers call this the subjunctive after a verb of understanding: it presents the feeling as reasonable instead of reporting it as news.",
   "readAndPick": [
-    { "es": "Entiendo que estés molesta.", "options": ["I understand why you're upset. (to a woman)", "I understand why she's upset."], "answer": 0 },
-    { "es": "Entiendo que esté molesta.", "options": ["I understand why you're upset. (to a woman)", "I understand why she's upset."], "answer": 1 },
-    { "es": "Entiendo que quieres irte.", "options": ["I understand why you'd want to leave.", "I gather that you want to leave."], "answer": 1 },
-    { "es": "Entiendo que quieras irte.", "options": ["I understand why you'd want to leave.", "I gather that you want to leave."], "answer": 0 },
-    { "es": "Comprendo que no tienes tiempo.", "options": ["I gather that you have no time.", "I understand why you have no time."], "answer": 0 },
-    { "es": "Entiendo que no te guste el cambio.", "options": ["I understand why he doesn't like the change.", "I understand why you don't like the change. (to a friend)"], "answer": 1 },
-    { "es": "Entiendo que ustedes estén molestos.", "options": ["I understand why you all are upset.", "I understand why you are upset. (one person)"], "answer": 0 },
-    { "es": "Entiendo que Tomás está nervioso.", "options": ["I understand why Tomás is nervous.", "I see that Tomás is nervous."], "answer": 1 }
+    {
+      "es": "Entiendo que estés molesta.",
+      "options": [
+        "I understand why you're upset. (to a woman)",
+        "I understand why she's upset."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Entiendo que esté molesta.",
+      "options": [
+        "I understand why you're upset. (to a woman)",
+        "I understand why she's upset."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Entiendo que quieres irte.",
+      "options": [
+        "I understand why you'd want to leave.",
+        "I gather that you want to leave."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Entiendo que quieras irte.",
+      "options": [
+        "I understand why you'd want to leave.",
+        "I gather that you want to leave."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Comprendo que no tienes tiempo.",
+      "options": [
+        "I gather that you have no time.",
+        "I understand why you have no time."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Entiendo que no te guste el cambio.",
+      "options": [
+        "I understand why he doesn't like the change.",
+        "I understand why you don't like the change. (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Entiendo que ustedes estén molestos.",
+      "options": [
+        "I understand why you all are upset.",
+        "I understand why you are upset. (one person)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Entiendo que Tomás está nervioso.",
+      "options": [
+        "I understand why Tomás is nervous.",
+        "I see that Tomás is nervous."
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
-    { "prompt": "Choose the right form and type the whole sentence (I understand why you're upset, to a woman): Entiendo que ___ molesta. (estás / estés)", "answer": "Entiendo que estés molesta.", "accept": ["Comprendo que estés molesta."], "why": "You are saying her feeling makes sense, so the verb takes the *-és* ending, *estés*." },
-    { "prompt": "Type in Spanish (to a friend): I understand that you don't want to talk now.", "answer": "Comprendo que no quieras hablar ahora.", "accept": ["Entiendo que no quieras hablar ahora."], "why": "Your friend's feeling is reasonable, so *quieras* and not *quieres*." },
-    { "prompt": "Type in Spanish (to a man): I understand why you're tired.", "answer": "Entiendo que estés cansado.", "accept": ["Comprendo que estés cansado."], "why": "*Estés* shows you accept the feeling, and *cansado* matches a man." },
-    { "prompt": "Type in Spanish (to a friend): I understand that you're arriving tomorrow. (just taking in the news)", "answer": "Entiendo que llegas mañana.", "accept": ["Comprendo que llegas mañana."], "why": "This is only information, so the plain verb *llegas* stays." },
-    { "prompt": "Make it about Vale: Entiendo que estés molesta.", "answer": "Entiendo que Vale esté molesta.", "accept": ["Comprendo que Vale esté molesta."], "why": "For her, *estés* becomes *esté*." },
-    { "prompt": "Make it about you all, all men: Entiendo que estés molesto.", "answer": "Entiendo que ustedes estén molestos.", "accept": ["Comprendo que ustedes estén molestos.", "Entiendo que estén molestos.", "Comprendo que estén molestos."], "why": "For *ustedes* the verb ends in *-én* and the adjective is plural." },
-    { "prompt": "Type in Spanish (to a friend): I understand that you don't like the change.", "answer": "Entiendo que no te guste el cambio.", "accept": ["Comprendo que no te guste el cambio."], "why": "A reasonable feeling again, so *guste* and not *gusta*." }
+    {
+      "prompt": "Choose the right form and type the whole sentence (I understand why you're upset, to a woman): Entiendo que ___ molesta. (*estás* or *estés*)",
+      "answer": "Entiendo que estés molesta.",
+      "accept": [
+        "Comprendo que estés molesta."
+      ],
+      "why": "You are saying her feeling makes sense, so the verb takes the *-és* ending, *estés*."
+    },
+    {
+      "prompt": "Type in Spanish (to a friend): I understand that you don't want to talk now.",
+      "answer": "Comprendo que no quieras hablar ahora.",
+      "accept": [
+        "Entiendo que no quieras hablar ahora."
+      ],
+      "why": "Your friend's feeling is reasonable, so *quieras* and not *quieres*."
+    },
+    {
+      "prompt": "Type in Spanish (to a man): I understand why you're tired.",
+      "answer": "Entiendo que estés cansado.",
+      "accept": [
+        "Comprendo que estés cansado."
+      ],
+      "why": "*Estés* shows you accept the feeling, and *cansado* matches a man."
+    },
+    {
+      "prompt": "Type in Spanish (to a friend): I understand that you're arriving tomorrow. (just taking in the news)",
+      "answer": "Entiendo que llegas mañana.",
+      "accept": [
+        "Comprendo que llegas mañana."
+      ],
+      "why": "This is only information, so the plain verb *llegas* stays."
+    },
+    {
+      "prompt": "Make it about Vale: Entiendo que estés molesta.",
+      "answer": "Entiendo que Vale esté molesta.",
+      "accept": [
+        "Comprendo que Vale esté molesta."
+      ],
+      "why": "For her, *estés* becomes *esté*."
+    },
+    {
+      "prompt": "Make it about you all, all men: Entiendo que estés molesto.",
+      "answer": "Entiendo que ustedes estén molestos.",
+      "accept": [
+        "Comprendo que ustedes estén molestos.",
+        "Entiendo que estén molestos.",
+        "Comprendo que estén molestos."
+      ],
+      "why": "For *ustedes* the verb ends in *-én* and the adjective is plural."
+    },
+    {
+      "prompt": "Type in Spanish (to a friend): I understand that you don't like the change.",
+      "answer": "Entiendo que no te guste el cambio.",
+      "accept": [
+        "Comprendo que no te guste el cambio."
+      ],
+      "why": "A reasonable feeling again, so *guste* and not *gusta*."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Entiendo que estás molesta.", "right": "Entiendo que estés molesta.", "why": "Almost. The first only reports a fact; to say her feeling makes sense, change the ending to *estés*." },
-    { "wrong": "Entiendo que llegues mañana.", "right": "Entiendo que llegas mañana.", "why": "Plain news about what someone does stays in the plain form; the *-e* style is for feelings." },
-    { "wrong": "Entiendo que no te gusta el cambio.", "right": "Entiendo que no te guste el cambio.", "why": "To show you accept the feeling, *gusta* becomes *guste*." }
+    {
+      "wrong": "Entiendo que estás molesta.",
+      "right": "Entiendo que estés molesta.",
+      "why": "Almost. The first only reports a fact; to say her feeling makes sense, change the ending to *estés*."
+    },
+    {
+      "wrong": "Entiendo que llegues mañana.",
+      "right": "Entiendo que llegas mañana.",
+      "why": "Plain news about what someone does stays in the plain form; the *-e* style is for feelings."
+    },
+    {
+      "wrong": "Entiendo que no te gusta el cambio.",
+      "right": "Entiendo que no te guste el cambio.",
+      "why": "To show you accept the feeling, *gusta* becomes *guste*."
+    }
   ],
   "personal": "Think of someone who has been a bit down lately. Write one line to them with *Entiendo que* and a feeling."
 }

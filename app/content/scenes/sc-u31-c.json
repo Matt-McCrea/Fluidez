@@ -31,7 +31,7 @@
     },
     {
       "id": "t2",
-      "npc": "Hernando: Pequeño y siempre lleno. Rosa servía tinto a todos y el pan salía caliente a todas horas. Pero la última noche de Joaquín, vi luz en el café a las tres de la mañana.",
+      "npc": "Hernando: Pequeño y siempre lleno. Rosa les servía tinto a todos y el pan salía caliente a todas horas. Pero la última noche de Joaquín, vi luz en el café a las tres de la mañana.",
       "npcEn": "Hernando: Small and always full. Rosa served coffee to everyone and the bread came out warm at all hours. But on Joaquín's last night, I saw a light in the café at three in the morning.",
       "intent": "Ask what he did when he saw the light on.",
       "accept": [
@@ -57,26 +57,26 @@
     },
     {
       "id": "t3",
-      "npc": "Hernando: Paré el taxi y toqué la puerta. Rosa tenía una taza fría en la mano. Me dijo que Joaquín se había ido y que no iba a volver.",
-      "npcEn": "Hernando: I stopped the taxi and knocked on the door. Rosa had a cold cup in her hand. She told me that Joaquín had left and that he wasn't going to come back.",
-      "intent": "Say how sad, and that you thought she never cried, but now you understand.",
+      "npc": "Hernando: Paré el taxi. En la esquina estaba Joaquín, sin chaqueta, y le presté la mía. Después toqué la puerta. Rosa tenía una taza fría en la mano y me dijo que él no iba a volver.",
+      "npcEn": "Hernando: I stopped the taxi. Joaquín was on the corner, without a jacket, and I lent him mine. Then I knocked on the door. Rosa had a cold cup in her hand and she told me he wasn't going to come back.",
+      "intent": "Say how sad, and that you were planning to ask her about Joaquín one day, but you never did.",
       "accept": [
-        "Qué triste. Yo pensaba que ella nunca lloraba, pero ahora entiendo.",
-        "Ay, mi abuela. Pensaba que nunca lloraba, pero ahora entiendo todo.",
-        "Qué triste. Yo pensaba que ella era fuerte, pero ahora entiendo."
+        "Qué triste. Yo pensaba preguntarle por Joaquín, pero nunca lo hice.",
+        "Qué triste. Iba a preguntarle por Joaquín, pero nunca le pregunté.",
+        "Ay, qué triste. Pensaba preguntarle por su hermano algún día, pero nunca lo hice."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\bpensaba que\\b",
+          "pattern": "\\b(pensaba|iba a)\\b",
           "flags": "i",
-          "label": "I used to think: pensaba que"
+          "label": "the plan you had: pensaba or iba a"
         },
         {
           "type": "regex",
           "pattern": "\\bpero\\b",
           "flags": "i",
-          "label": "then what changed: pero"
+          "label": "then what got in the way: pero"
         }
       ],
       "focus": "p:pensaba-pero",
@@ -86,21 +86,17 @@
       "id": "t4",
       "npc": "Hernando: Ella se puso a llorar y yo me quedé hasta que salió el sol. Después me hizo un tinto. Años más tarde me dijo que nunca había mandado ninguna carta.",
       "npcEn": "Hernando: She started to cry and I stayed until the sun came up. Then she made me a coffee. Years later she told me she had never sent a single letter.",
-      "intent": "Thank him, and say you understand now that she did not send the letters.",
+      "intent": "Thank him, and say Rosa had never told you any of this.",
       "accept": [
-        "Muchas gracias. Ahora entiendo que no mandó ninguna carta.",
-        "Gracias por contarme todo. Ahora entiendo que ella no las mandó por miedo.",
-        "Gracias por contármelo. Por fin entiendo que no las mandó."
+        "Gracias. Rosa nunca me había contado nada de esto.",
+        "Muchas gracias. Mi abuela nunca me había contado eso.",
+        "Gracias por contármelo. Ella nunca me había dicho nada."
       ],
       "require": [
         {
-          "type": "negation",
-          "label": "she did not send them: no..."
-        },
-        {
           "type": "anyVerbInTense",
-          "tense": "preterito",
-          "label": "she did not send them: use the preterite"
+          "tense": "plusc",
+          "label": "she had never told you: nunca me había contado"
         }
       ],
       "focus": "g:pluperfect",
@@ -142,15 +138,18 @@
     "g:comparatives",
     "g:direct-objects",
     "g:double-pronouns",
+    "g:estar-location-states",
     "g:gender-articles",
     "g:imperfect-habitual",
     "g:imperfect-states",
     "g:indefinites",
+    "g:indirect-objects",
     "g:ir-a-plans",
     "g:negation-words",
     "g:object-pronoun-position",
     "g:pluperfect",
     "g:por-para-1",
+    "g:possessives-stressed",
     "g:prep-infinitive",
     "g:present-ar",
     "g:pret-vs-imperfect",
@@ -161,9 +160,8 @@
     "g:preterite-spelling-stem",
     "g:questions",
     "g:reflexive-routine",
-    "g:reported-backshift",
+    "g:reported-past-basic",
     "g:ser-identity",
-    "g:stem-boot",
     "g:that-clauses",
     "g:verbs-of-change",
     "l:abuela",
@@ -175,18 +173,20 @@
     "l:café",
     "l:caliente",
     "l:carta",
+    "l:chaqueta",
     "l:claro",
     "l:contar",
     "l:cómo",
     "l:decir",
     "l:después",
     "l:día",
-    "l:entender",
-    "l:fin",
+    "l:esquina",
+    "l:estar",
     "l:frío",
     "l:fuerte",
     "l:gusto",
     "l:hacer",
+    "l:hermano",
     "l:hora",
     "l:hoy",
     "l:invitar",
@@ -197,7 +197,6 @@
     "l:mandar",
     "l:mano",
     "l:mañana",
-    "l:miedo",
     "l:mujer",
     "l:noche",
     "l:pagar",
@@ -207,6 +206,8 @@
     "l:pensar",
     "l:pequeño",
     "l:ponerse",
+    "l:preguntar",
+    "l:prestar",
     "l:puerta",
     "l:quedarse",
     "l:qué",
@@ -231,17 +232,19 @@
     "p:cuando-basic",
     "p:dates-years",
     "p:demonstratives-basic",
-    "p:entiendo-que-subj",
     "p:entonces-de-repente",
     "p:frequency-scale",
     "p:gracias-por",
     "p:me-te-nos-objects",
+    "p:pensaba-pero",
     "p:pensar-en",
+    "p:pensar-inf",
     "p:personal-a",
     "p:ponerse-a",
     "p:ponerse-a-inf",
     "p:por-la-manana",
     "p:possessives-basic",
+    "p:preguntar-pedir",
     "p:quantifiers-basic",
     "p:question-word-order",
     "p:ser-profession-no-article",

@@ -23,8 +23,8 @@
       "en": "I was going to open the café, but I couldn't find the keys."
     },
     {
-      "es": "Pensábamos viajar a Cartagena, pero no tuvimos plata.",
-      "en": "We were planning to travel to Cartagena, but we didn't have money."
+      "es": "Pensábamos viajar a Cartagena, pero los tiquetes subieron mucho.",
+      "en": "We were planning to travel to Cartagena, but ticket prices shot up."
     },
     {
       "es": "Vale pensaba hacer pan, pero se fue la luz.",
@@ -68,11 +68,11 @@
       "answer": 1
     },
     {
-      "es": "Pensábamos viajar a Cartagena, pero no tuvimos plata.",
+      "es": "Pensábamos viajar a Cartagena, pero los tiquetes subieron mucho.",
       "options": [
-        "We were planning to travel to Cartagena, but we didn't have money.",
-        "I was planning to travel to Cartagena, but I didn't have money.",
-        "We traveled to Cartagena without money."
+        "We were planning to travel to Cartagena, but ticket prices shot up.",
+        "I was planning to travel to Cartagena, but ticket prices shot up.",
+        "We traveled to Cartagena when tickets went up."
       ],
       "answer": 0
     },
@@ -136,17 +136,19 @@
     },
     {
       "prompt": "Say: I was going to call my mom, but I fell asleep.",
-      "answer": "Pensaba llamar a mi mamá, pero me dormí.",
+      "answer": "Iba a llamar a mi mamá, pero me dormí.",
       "accept": [
-        "Iba a llamar a mi mamá, pero me dormí."
+        "Iba a llamar a mi mamá, pero me quedé dormido.",
+        "Iba a llamar a mi mamá, pero me quedé dormida.",
+        "Pensaba llamar a mi mamá, pero me dormí."
       ],
-      "why": "Plan in the imperfect, then the simple past for what happened."
+      "why": "*Iba a* for the plan, then the simple past for what happened."
     },
     {
-      "prompt": "Make it about *we*: *Pensaba viajar a Cartagena, pero no tuve plata.*",
-      "answer": "Pensábamos viajar a Cartagena, pero no tuvimos plata.",
+      "prompt": "Make it about *we*: *Pensaba viajar a Cartagena, pero los tiquetes subieron mucho.*",
+      "answer": "Pensábamos viajar a Cartagena, pero los tiquetes subieron mucho.",
       "accept": [],
-      "why": "Both verbs change to *we*: *pensábamos* and *tuvimos*."
+      "why": "Only the plan changes to *we*: *pensábamos*. What got in the way stays as it was."
     }
   ],
   "pitfalls": [

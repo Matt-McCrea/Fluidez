@@ -1,7 +1,7 @@
 {
   "node": "p:me-sorprende-que",
   "hook": {
-    "line": "Don Hernando has opened the café door every morning for twenty years, so the day he doesn't show up, you say so. Being surprised is how you react to what people do or don't do.",
+    "line": "Don Hernando has walked through the café door every morning for forty years, so the day he doesn't show up, you say so. Being surprised is how you react to what people do or don't do.",
     "es": "Me extraña que Hernando no venga hoy.",
     "en": "It seems odd to me that Hernando isn't coming today."
   },
@@ -169,9 +169,9 @@
       "why": "Almost. Without *me*, *extraño* means *I miss*; the surprised meaning needs *me extraña*."
     },
     {
-      "wrong": "Yo sorprendo su actitud.",
-      "right": "Me sorprende su actitud.",
-      "why": "The attitude does the surprising, and you are the one surprised, so *me sorprende*."
+      "wrong": "Estoy sorprendido que Vale no esté aquí.",
+      "right": "Me sorprende que Vale no esté aquí.",
+      "why": "English says *I'm surprised*; Spanish turns it round, so the fact does the surprising: *me sorprende*."
     }
   ],
   "personal": "Say what surprises you about your own city or neighborhood: *Me sorprende que…* or *Es raro que…*"

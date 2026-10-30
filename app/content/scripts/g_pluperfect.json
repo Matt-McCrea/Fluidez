@@ -6,40 +6,191 @@
     "en": "I didn't know Rosa had written so many letters."
   },
   "examples": [
-    { "es": "Cuando llegué, Vale ya se había ido.", "en": "When I arrived, Vale had already left." },
-    { "es": "Nunca había visto tanta gente.", "en": "I had never seen so many people." },
-    { "es": "¿Ya habías hablado con Hernando?", "en": "Had you already spoken with Hernando?" },
-    { "es": "Todavía no habíamos comido.", "en": "We hadn't eaten yet." },
-    { "es": "Rosa nunca había viajado sola.", "en": "Rosa had never traveled alone." },
-    { "es": "Ellos ya se habían ido.", "en": "They had already left." }
+    {
+      "es": "Cuando llegué, Vale ya se había ido.",
+      "en": "When I arrived, Vale had already left."
+    },
+    {
+      "es": "Nunca había visto tanta gente.",
+      "en": "I had never seen so many people."
+    },
+    {
+      "es": "¿Ya habías hablado con Hernando?",
+      "en": "Had you already spoken with Hernando?"
+    },
+    {
+      "es": "Todavía no habíamos comido.",
+      "en": "We hadn't eaten yet."
+    },
+    {
+      "es": "Rosa nunca había viajado sola.",
+      "en": "Rosa had never traveled alone."
+    },
+    {
+      "es": "Ellos ya se habían ido.",
+      "en": "They had already left."
+    }
   ],
   "rule": "English says *had* plus a verb: *had left*, *had seen*. Spanish does the same with two parts.\n\n*había*, *habías*, *había*, *habíamos*, *habían* + the ending you already know from *he estado*:\n*-ar* verbs: *-ado* (*hablado*)\n*-er* and *-ir* verbs: *-ido* (*comido*, *salido*)\n\nThe odd ones are the same as before: *escrito*, *visto*, *hecho*, *dicho*, *vuelto*.\n\nUse it for something that was already finished before another moment in the past: *Cuando llegué* is the moment, *ya se había ido* is what came earlier.\n\nNothing goes between the two parts, and little words go in front: *ya se había ido*, *nunca había visto*.",
   "smallPrint": "Teachers call this the pluperfect, or past perfect: the past of the past. It is the *he estado* form moved back one step in time.",
   "readAndPick": [
-    { "es": "Cuando llegué, Vale ya se había ido.", "options": ["When I arrived, Vale had already left.", "When I arrived, Vale left.", "When I arrive, Vale will leave."], "answer": 0 },
-    { "es": "Nunca había visto tanta gente.", "options": ["I have never seen so many people.", "I never saw so many people.", "I had never seen so many people."], "answer": 2 },
-    { "es": "Todavía no habíamos comido.", "options": ["They hadn't eaten yet.", "We haven't eaten yet.", "We hadn't eaten yet."], "answer": 2 },
-    { "es": "¿Ya habías hablado con Hernando?", "options": ["Had you already spoken with Hernando?", "Have you already spoken with Hernando?", "Had he already spoken with Hernando?"], "answer": 0 },
-    { "es": "Ellos ya se habían ido.", "options": ["They have already left.", "They had already left.", "We had already left."], "answer": 1 },
-    { "es": "Rosa ya había leído la carta.", "options": ["Rosa has already read the letter.", "Rosa already reads the letter.", "Rosa had already read the letter."], "answer": 2 },
-    { "es": "Cuando llegamos, el café ya había abierto.", "options": ["When we arrived, the café was opening.", "When we arrived, the café had already opened.", "When we arrived, the café opened."], "answer": 1 },
-    { "es": "No sabía que Rosa había escrito tantas cartas.", "options": ["I didn't know Rosa was writing so many letters.", "I didn't know Rosa had written so many letters.", "I don't know that Rosa has written so many letters."], "answer": 1 },
-    { "es": "Cuando me llamaste, ya había salido.", "options": ["When you called me, I had already gone out.", "When you called me, I was going out.", "When you called me, I went out."], "answer": 0 }
+    {
+      "es": "Cuando llegué, Vale ya se había ido.",
+      "options": [
+        "When I arrived, Vale had already left.",
+        "When I arrived, Vale left.",
+        "When I arrive, Vale will leave."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nunca había visto tanta gente.",
+      "options": [
+        "I have never seen so many people.",
+        "I never saw so many people.",
+        "I had never seen so many people."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Todavía no habíamos comido.",
+      "options": [
+        "They hadn't eaten yet.",
+        "We haven't eaten yet.",
+        "We hadn't eaten yet."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Ya habías hablado con Hernando?",
+      "options": [
+        "Had you already spoken with Hernando?",
+        "Have you already spoken with Hernando?",
+        "Had he already spoken with Hernando?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ellos ya se habían ido.",
+      "options": [
+        "They have already left.",
+        "They had already left.",
+        "We had already left."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Rosa ya había leído la carta.",
+      "options": [
+        "Rosa has already read the letter.",
+        "Rosa already reads the letter.",
+        "Rosa had already read the letter."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Cuando llegamos, el café ya había abierto.",
+      "options": [
+        "When we arrived, the café was opening.",
+        "When we arrived, the café had already opened.",
+        "When we arrived, the café opened."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No sabía que Rosa había escrito tantas cartas.",
+      "options": [
+        "I didn't know Rosa was writing so many letters.",
+        "I didn't know Rosa had written so many letters.",
+        "I don't know that Rosa has written so many letters."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cuando me llamaste, ya había salido.",
+      "options": [
+        "When you called me, I had already gone out.",
+        "When you called me, I was going out.",
+        "When you called me, I went out."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick and type the whole sentence: *Cuando llegué, Vale ya se ___ ido.* (*había* or *habían*) When I arrived, Vale had already left.", "answer": "Cuando llegué, Vale ya se había ido.", "accept": [], "why": "Vale is one person, so *había*." },
-    { "prompt": "Pick and type the whole sentence: *Nunca ___ visto tanta gente.* (*había* or *habíamos*) I had never seen so many people.", "answer": "Nunca había visto tanta gente.", "accept": [], "why": "The speaker is *I*, so *había*; *habíamos* would mean *we*." },
-    { "prompt": "Say to a friend: Had you already spoken with Hernando?", "answer": "¿Ya habías hablado con Hernando?", "accept": ["¿Habías hablado ya con Hernando?"], "why": "*Tú* goes with *habías*, then *hablado* from *hablar*." },
-    { "prompt": "Say: We hadn't eaten yet.", "answer": "Todavía no habíamos comido.", "accept": ["No habíamos comido todavía."], "why": "*Habíamos* is *we had*, and *comer* gives *comido*." },
-    { "prompt": "Say: Rosa had never traveled alone.", "answer": "Rosa nunca había viajado sola.", "accept": ["Nunca había viajado sola Rosa."], "why": "*Nunca* sits right before *había*, and *viajar* gives *viajado*." },
-    { "prompt": "Make it negative, with *todavía*: *Vale ya había llegado.*", "answer": "Vale todavía no había llegado.", "accept": ["Vale no había llegado todavía."], "why": "*No* goes straight before *había*; the two parts stay together." },
-    { "prompt": "Make it about *they* (*ellos*): *Vale ya se había ido.*", "answer": "Ellos ya se habían ido.", "accept": ["Ya se habían ido."], "why": "More than one person means *habían*, and *se* stays in front." }
+    {
+      "prompt": "Pick and type the whole sentence: *Cuando llegué, Vale ya se ___ ido.* (*había* or *habían*) When I arrived, Vale had already left.",
+      "answer": "Cuando llegué, Vale ya se había ido.",
+      "accept": [],
+      "why": "Vale is one person, so *había*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Nunca ___ visto tanta gente.* (*había* or *habíamos*) I had never seen so many people.",
+      "answer": "Nunca había visto tanta gente.",
+      "accept": [],
+      "why": "The speaker is *I*, so *había*; *habíamos* would mean *we*."
+    },
+    {
+      "prompt": "Say to a friend: Had you already spoken with Hernando?",
+      "answer": "¿Ya habías hablado con Hernando?",
+      "accept": [
+        "¿Habías hablado ya con Hernando?"
+      ],
+      "why": "*Tú* goes with *habías*, then *hablado* from *hablar*."
+    },
+    {
+      "prompt": "Say: We hadn't eaten yet.",
+      "answer": "Todavía no habíamos comido.",
+      "accept": [
+        "No habíamos comido todavía."
+      ],
+      "why": "*Habíamos* is *we had*, and *comer* gives *comido*."
+    },
+    {
+      "prompt": "Say: Rosa had never traveled alone.",
+      "answer": "Rosa nunca había viajado sola.",
+      "accept": [
+        "Rosa no había viajado nunca sola."
+      ],
+      "why": "*Nunca* sits right before *había*, and *viajar* gives *viajado*."
+    },
+    {
+      "prompt": "Make it negative, with *todavía*: *Vale ya había llegado.*",
+      "answer": "Vale todavía no había llegado.",
+      "accept": [
+        "Vale no había llegado todavía."
+      ],
+      "why": "*No* goes straight before *había*; the two parts stay together."
+    },
+    {
+      "prompt": "Make it about *they* (*ellos*): *Vale ya se había ido.*",
+      "answer": "Ellos ya se habían ido.",
+      "accept": [
+        "Ya se habían ido."
+      ],
+      "why": "More than one person means *habían*, and *se* stays in front."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Cuando llegué, Vale ya se fue.", "right": "Cuando llegué, Vale ya se había ido.", "why": "Almost. If it was already finished before the other moment, Spanish wants *había* plus the ending." },
-    { "wrong": "Había escribido una carta.", "right": "Había escrito una carta.", "why": "*Escribir* has an odd ending, *escrito*, the same one you use after *he*." },
-    { "wrong": "Ya había se ido.", "right": "Ya se había ido.", "why": "Little words like *se* go in front of *había*, not between the two parts." },
-    { "wrong": "Había visto nunca tanta gente.", "right": "Nunca había visto tanta gente.", "why": "*Nunca* goes before *había*; nothing can sit between *had* and the verb ending." }
+    {
+      "wrong": "Cuando llegué, Vale ya se fue.",
+      "right": "Cuando llegué, Vale ya se había ido.",
+      "why": "Almost. If it was already finished before the other moment, Spanish wants *había* plus the ending."
+    },
+    {
+      "wrong": "Había escribido una carta.",
+      "right": "Había escrito una carta.",
+      "why": "*Escribir* has an odd ending, *escrito*, the same one you use after *he*."
+    },
+    {
+      "wrong": "Ya había se ido.",
+      "right": "Ya se había ido.",
+      "why": "Little words like *se* go in front of *había*, not between the two parts."
+    },
+    {
+      "wrong": "Había visto nunca tanta gente.",
+      "right": "Nunca había visto tanta gente.",
+      "why": "*Nunca* goes before *había*; nothing can sit between *had* and the verb ending."
+    }
   ],
   "personal": "Think of this morning. Write two things you had already done before you left home, starting with *Ya había…*, and one thing you hadn't done yet, with *Todavía no había…*."
 }

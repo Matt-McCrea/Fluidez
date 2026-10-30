@@ -2,7 +2,7 @@
   "id": "ch094",
   "unit": "u31",
   "title": "Cuarenta y siete sobres",
-  "text": "Hernando puso su gorra encima del último sobre.\nHernando: Era 2009, y llovía. Yo había vuelto por mi paraguas, y Rosa estaba en esta mesa con un sobre. De repente se puso a llorar.\nHernando: Yo estaba enamorado desde 1983. Esa noche pensaba decírselo todo, pero ella se puso a hablar de Joaquín.\nSimón: ¡Qué pena con usted, Hernando!\nHernando: Justo eso pensé yo.\nVale se rio, y después lloró.\nHernando: Me dijo que le había escrito todos los años, el día de su cumpleaños. Me contó que había ido al correo muchas veces, pero en la puerta siempre se daba la vuelta.\nHernando: Me dijo que una carta sin respuesta era peor que una herida. Una herida, por lo menos, se cierra algún día.\nHernando: Rosa supo otra cosa. En el bar de la Séptima era fácil engañar a Joaquín: un jugador le hacía trampa todas las noches.\nVale: Entonces Joaquín no era un tonto. Era una víctima.\nHernando: Las dos cosas, mija.\nTomás: Ella escribía todos los años, y yo la llamaba una vez al año, en Navidad. Siempre le decía que estaba muy ocupado.\nVale: Tú eras un niño, Tomás. Y Rosa nunca quiso engañar a nadie. Pero esperó demasiado.\nHernando: Esa noche le dije: «Mañana a las ocho la llevo al correo». A las ocho estaba aquí, con la Burra. Ella me dio un tinto y me dijo que no.\nTomás quitó la gorra y abrió el sobre.\n«2024. Querido Joaquín: Esta es la última. Estoy vieja y cansada. Si tú ya no estás, que la lea tu familia. El edificio también es tuyo, y de ellos. Nunca lo vendí. Tu hermana, Rosa».\nVale: Cuarenta y seis años sin hablar. Ahora el beneficio puede ser para la familia de Joaquín.\nTomás: Yo soy su sobrino nieto. Si tiene familia, también es la mía.\nHernando: Y si esa familia firma, Altamira no compra nada.\nTomás le mandó una foto de la carta a Mariana. Mariana contestó en un minuto: «Mañana a las diez les presento a una abogada. Esa carta vale más que un hotel».",
+  "text": "Hernando puso su gorra encima del último sobre.\nHernando: Era 2009, y llovía. Yo había vuelto por mi paraguas, y Rosa estaba en esta mesa con un sobre. De repente se puso a llorar.\nHernando: Yo estaba enamorado de ella desde 1983. Esa noche pensaba decírselo todo, pero ella se puso a hablar de Joaquín.\nSimón: ¡Qué pena con usted, Hernando!\nHernando: Justo eso pensé yo.\nVale se rio, y después lloró.\nHernando: Me dijo que le había escrito todos los años, el día del cumpleaños de Joaquín. Me contó que había ido al correo muchas veces, pero en la puerta siempre se daba la vuelta.\nHernando: Me dijo que una carta sin respuesta era peor que una herida. Una herida, por lo menos, se cierra algún día.\nHernando: Rosa supo otra cosa. En el bar de la Séptima era fácil engañar a Joaquín: un jugador le hacía trampa todas las noches.\nVale: Entonces Joaquín no era un tonto. Era una víctima.\nHernando: Las dos cosas, mija.\nTomás: Ella escribía todos los años, y yo la llamaba una vez al año, en Navidad. Siempre le decía que estaba muy ocupado.\nVale: Tú eras un niño, Tomás. Y Rosa nunca quiso engañar a nadie. Pero esperó demasiado.\nHernando: Esa noche le dije: «Mañana a las ocho la llevo al correo». A las ocho estaba aquí, con la Burra. Ella me dio un tinto y me dijo que no.\nTomás levantó la gorra y abrió el sobre.\n«2024. Querido Joaquín: Esta es la última. Estoy vieja y cansada. Si tú ya no estás, que la lea tu familia. El edificio también es tuyo, y de ellos. Nunca lo vendí. Tu hermana, Rosa».\nVale: Cuarenta y seis años sin hablar, y nunca pensó en su propio beneficio.\nTomás: Yo soy su sobrino nieto. Si tiene familia, también es la mía.\nHernando: Y si esa familia firma, Altamira no compra nada.\nTomás le mandó una foto de la carta a Mariana. Mariana contestó en un minuto: «Mañana a las diez les presento a una abogada. Esa carta vale más que un hotel».",
   "gloss": [
     {
       "es": "Yo había vuelto por mi paraguas",
@@ -17,8 +17,8 @@
       "en": "Suddenly she started crying."
     },
     {
-      "es": "Yo estaba enamorado desde 1983.",
-      "en": "I had been in love since 1983."
+      "es": "Yo estaba enamorado de ella desde 1983.",
+      "en": "I had been in love with her since 1983."
     },
     {
       "es": "Esa noche pensaba decírselo todo",
@@ -81,8 +81,8 @@
       "en": "and theirs"
     },
     {
-      "es": "el beneficio puede ser para la familia de Joaquín",
-      "en": "Joaquín's family could be the ones who benefit"
+      "es": "nunca pensó en su propio beneficio",
+      "en": "she never thought about what was in it for her"
     },
     {
       "es": "sobrino nieto",
@@ -188,7 +188,6 @@
     "c:entonces-bueno",
     "c:era",
     "c:me-conto-que",
-    "c:puede-ser",
     "c:que-pena",
     "c:querido-querida",
     "c:tienes",
@@ -234,10 +233,8 @@
     "p:demonstratives-basic",
     "p:frequency-scale",
     "p:ir-a-venir-de-place",
-    "p:lavarse-las-manos",
     "p:me-te-nos-objects",
     "p:otro-no-article",
-    "p:para-inf",
     "p:pensaba-pero",
     "p:pensar-en",
     "p:personal-a",
@@ -257,7 +254,6 @@
   "lexemes": [
     "l:abogado",
     "l:abrir",
-    "l:ahora",
     "l:aquí",
     "l:año",
     "l:bar",
@@ -297,6 +293,7 @@
     "l:jugador",
     "l:justo",
     "l:le",
+    "l:levantar",
     "l:llamar",
     "l:llevar",
     "l:llorar",
@@ -314,13 +311,12 @@
     "l:pena",
     "l:pensar",
     "l:peor",
-    "l:poder",
     "l:poner",
     "l:ponerse",
     "l:presentar",
+    "l:propio",
     "l:puerta",
     "l:querer",
-    "l:quitar",
     "l:qué",
     "l:repente",
     "l:respuesta",

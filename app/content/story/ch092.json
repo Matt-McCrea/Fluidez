@@ -2,11 +2,11 @@
   "id": "ch092",
   "unit": "u31",
   "title": "La chaqueta detrás de la puerta",
-  "text": "Vale abrió el primer sobre con un cuchillo de cocina. Era medianoche. Tomás leyó despacio, para los dos.\n«Bogotá, diciembre de 1978. Querido Joaquín: Hace un mes que te fuiste, y todavía no he lavado tu taza».\n«Esa noche, cuando llegaste, yo ya había cerrado el café. Y tú ya habías decidido todo».\n«Papá y mamá habían guardado plata toda la vida. Con esa plata, tú y yo habíamos comprado este edificio un año antes. Y tú querías venderlo en una noche».\n«Tú le habías pedido plata prestada a gente peligrosa, y no podías pagar. Nunca me lo habías contado. Ya nos habíamos distanciado mucho antes de esa noche».\nTomás paró. Vale le sirvió más tinto.\nVale: Sigue.\n«Te dije cosas horribles. Te dije que ya no eras mi hermano. Y tú huiste como un ladrón, sin tu chaqueta. La chaqueta todavía está en la cocina, detrás de la puerta».\nSimón bajó de la planta. Caminó encima de la carta y la pisó con mucho cuidado, como un juez.\nVale: ¡Simón! ¡No pises a Rosa!\nSimón: ¡No te lo vas a creer, Vale! ¡Creer! ¡Creer!\nTomás: Ya lo sabemos, Simón.\nEn el papel había un círculo viejo. Tinto, o tal vez Rosa lloró aquí.\n«En la calle todo es campaña, y todos prometen un país nuevo. Yo no quiero un país nuevo. Quiero a mi hermano».\n«Doña Carmen abrió una cafetería al frente. Dice que ahora somos competencia. Eso no me importa. Sin ti, esta casa está muy callada».\nVale: Siete años vi esa chaqueta, y nunca pregunté nada.\nVale fue a la cocina y volvió con una chaqueta vieja de pana. Tomás se la puso. Le quedaba perfecta.\nVale: No te lo vas a creer. Hernando tiene una foto de Joaquín con esta chaqueta, y eres igual a él.\nTomás: Altamira cree que esta guerra empezó con su hotel. Pero había empezado mucho antes.\nVale: Joaquín huyó esa noche, y Rosa se quedó aquí, con la guerra y con la chaqueta.\nEl segundo sobre era más gordo que los otros, y dentro había algo duro.",
+  "text": "En la mesa de la ventana, Vale abrió el primer sobre. Era medianoche. Tomás leyó despacio, para los dos.\n«Bogotá, marzo de 1978. Querido Joaquín: Hace un mes que te fuiste, y todavía no he lavado tu taza».\n«Esa noche, cuando llegaste, yo ya había cerrado el café. Y tú ya habías decidido todo».\n«Papá y mamá habían guardado plata toda la vida. Con esa plata, tú y yo habíamos comprado este edificio un año antes. Y tú querías venderlo en una noche».\n«Tú le habías pedido plata prestada a gente peligrosa, y no podías pagar. Nunca me lo habías contado. Ya nos habíamos distanciado mucho antes de esa noche».\nTomás paró. Vale le sirvió más tinto.\nVale: Sigue.\n«Te dije cosas horribles. Te dije que ya no eras mi hermano. Y tú huiste como un ladrón, sin tu chaqueta. La chaqueta todavía está en la cocina, detrás de la puerta».\nSimón bajó de la planta. Caminó encima de la carta y la pisó con mucho cuidado, como un juez.\nVale: ¡Simón! ¡No pises a Rosa!\nSimón: ¡No te lo vas a creer, Vale! ¡Creer! ¡Creer!\nTomás: Ya lo sabemos, Simón.\nEn el papel había un círculo viejo. Tinto, o tal vez Rosa lloró aquí.\n«En la calle todo es campaña, y todos prometen un país nuevo. Yo no quiero un país nuevo. Quiero a mi hermano».\n«Doña Carmen abrió una cafetería al frente. Dice que ahora somos competencia. Eso no me importa. Sin ti, esta casa está muy callada».\nVale: Siete años vi esa chaqueta, y nunca pregunté nada.\nVale fue a la cocina y volvió con una chaqueta vieja de pana. Tomás se la puso. Le quedaba perfecta.\nVale: No te lo vas a creer. Hernando tiene una foto de Joaquín con esta chaqueta, y eres igual a él.\nTomás: Altamira cree que esta guerra empezó con su hotel. Pero había empezado mucho antes.\nVale: Joaquín huyó esa noche, y Rosa se quedó aquí, con la guerra y con la chaqueta.\nEl segundo sobre era más gordo que los otros.",
   "gloss": [
     {
-      "es": "cuchillo de cocina",
-      "en": "kitchen knife"
+      "es": "En la mesa de la ventana",
+      "en": "At the window table"
     },
     {
       "es": "Era medianoche.",
@@ -74,7 +74,7 @@
     },
     {
       "es": "un círculo viejo",
-      "en": "an old ring"
+      "en": "an old round stain"
     },
     {
       "es": "Tinto, o tal vez Rosa lloró aquí.",
@@ -159,7 +159,7 @@
       "answer": 0
     }
   ],
-  "hook": "The second envelope is fatter than the others, and there is something hard inside it. Tomás and Vale are going to read until morning, and Hernando has a key to the front door.",
+  "hook": "The second envelope is fatter than the others. Tomás and Vale are going to read until morning, and Hernando has a key to the front door.",
   "rereadQuestions": [
     {
       "q": "What had Rosa still not done a month after Joaquín left?",
@@ -243,7 +243,6 @@
     "p:dates-years",
     "p:demonstratives-basic",
     "p:frequency-scale",
-    "p:indefinites-basic",
     "p:ir-a-venir-de-place",
     "p:la-gente-singular",
     "p:me-te-nos-objects",
@@ -287,17 +286,13 @@
     "l:contar",
     "l:cosa",
     "l:creer",
-    "l:cuchillo",
     "l:cuidado",
     "l:círculo",
     "l:decidir",
     "l:decir",
-    "l:dentro",
     "l:despacio",
     "l:detrás",
-    "l:diciembre",
     "l:distanciarse",
-    "l:duro",
     "l:edificio",
     "l:empezar",
     "l:encima",
@@ -325,8 +320,10 @@
     "l:llegar",
     "l:llorar",
     "l:mamá",
+    "l:marzo",
     "l:medianoche",
     "l:mes",
+    "l:mesa",
     "l:noche",
     "l:nuevo",
     "l:pagar",
@@ -359,6 +356,7 @@
     "l:tener",
     "l:tinto",
     "l:vender",
+    "l:ventana",
     "l:ver",
     "l:vez",
     "l:vida",

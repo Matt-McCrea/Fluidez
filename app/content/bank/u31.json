@@ -48,16 +48,19 @@
   },
   {
     "id": "u31-0003",
-    "es": "Cuando Joaquín se fue, Rosa ya se había acostado.",
-    "en": "When Joaquín left, Rosa had already gone to bed.",
+    "es": "Cuando Joaquín llegó esa noche, Rosa ya había lavado las tazas.",
+    "en": "When Joaquín got there that night, Rosa had already washed the cups.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:demonstratives",
+      "g:gender-articles",
       "g:pluperfect",
-      "g:preterite-ser-ir-hacer",
-      "g:reflexive-routine",
-      "l:acostarse",
-      "l:irse",
+      "g:preterite-ar",
+      "l:lavar",
+      "l:llegar",
+      "l:noche",
+      "l:taza",
       "p:cuando-basic"
     ],
     "targets": [
@@ -408,8 +411,8 @@
   },
   {
     "id": "u31-0019",
-    "es": "No sabía que Joaquín había vendido su parte.",
-    "en": "I did not know that Joaquín had sold his share.",
+    "es": "No sabía que Joaquín había querido vender su parte.",
+    "en": "I did not know that Joaquín had wanted to sell his share.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -417,6 +420,7 @@
       "g:pluperfect",
       "g:that-clauses",
       "l:parte",
+      "l:querer",
       "l:saber",
       "l:vender",
       "p:possessives-basic",
@@ -482,19 +486,21 @@
   },
   {
     "id": "u31-0022",
-    "es": "Hernando dijo que Rosa había escrito todos los años.",
-    "en": "Hernando said that Rosa had written every year.",
+    "es": "Hernando nos contó que Rosa había escrito todos los años.",
+    "en": "Hernando told us that Rosa had written every year.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:pluperfect",
-      "g:preterite-irregular-strong",
+      "g:preterite-ar",
       "g:reported-backshift",
       "g:that-clauses",
       "l:año",
-      "l:decir",
+      "l:contar",
       "l:escribir",
+      "p:me-contaron-que",
+      "p:me-te-nos-objects",
       "p:todos-los-dias",
       "p:veces-al"
     ],
@@ -579,16 +585,19 @@
   },
   {
     "id": "u31-0026",
-    "es": "Joaquín había dejado su abrigo en la silla.",
-    "en": "Joaquín had left his coat on the chair.",
+    "es": "Joaquín había dejado su chaqueta detrás de la puerta.",
+    "en": "Joaquín had left his jacket behind the door.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:pluperfect",
-      "l:abrigo",
+      "l:chaqueta",
       "l:dejar",
-      "l:silla",
+      "l:detrás",
+      "l:puerta",
+      "p:cerca-de",
+      "p:position-de",
       "p:possessives-basic"
     ],
     "targets": [
@@ -1125,17 +1134,17 @@
   },
   {
     "id": "u31-0050",
-    "es": "Hernando había visto a Joaquín subir a un bus esa noche.",
-    "en": "Hernando had seen Joaquín get on a bus that night.",
+    "es": "Esa noche Hernando había visto a Joaquín en la esquina, sin chaqueta.",
+    "en": "That night Hernando had seen Joaquín on the corner, without a jacket.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
       "g:gender-articles",
       "g:pluperfect",
-      "l:bus",
+      "l:chaqueta",
+      "l:esquina",
       "l:noche",
-      "l:subir",
       "l:ver",
       "p:personal-a"
     ],
@@ -1387,22 +1396,24 @@
   },
   {
     "id": "u31-0061",
-    "es": "Después de esa noche, Rosa no había vuelto a ver a su hermano.",
-    "en": "After that night, Rosa had not seen her brother again.",
+    "es": "Cuando murió, Rosa no había vuelto a ver a su hermano desde esa noche.",
+    "en": "When she died, Rosa had not seen her brother again since that night.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:a-ver",
       "g:demonstratives",
       "g:pluperfect",
-      "l:después",
+      "g:preterite-spelling-stem",
       "l:hermano",
+      "l:morir",
       "l:noche",
       "l:ver",
       "l:volver",
+      "p:cuando-basic",
+      "p:naci-en",
       "p:personal-a",
-      "p:possessives-basic",
-      "p:time-sequence-basic"
+      "p:possessives-basic"
     ],
     "targets": [
       "g:pluperfect"
@@ -1612,18 +1623,19 @@
   },
   {
     "id": "u31-0070",
-    "es": "Ese lunes Tomás había comprado flores para la tumba de Rosa.",
-    "en": "That Monday Tomás had bought flowers for Rosa's grave.",
+    "es": "Cuando Vale llegó, Tomás ya había comprado flores para la tumba de Rosa.",
+    "en": "When Vale arrived, Tomás had already bought flowers for Rosa's grave.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:demonstratives",
       "g:gender-articles",
       "g:pluperfect",
+      "g:preterite-ar",
       "l:comprar",
       "l:flor",
-      "l:lunes",
+      "l:llegar",
       "l:tumba",
+      "p:cuando-basic",
       "p:para-inf"
     ],
     "targets": [
@@ -1913,21 +1925,20 @@
   },
   {
     "id": "u31-0083",
-    "es": "Hernando dijo que Rosa había escrito todas las semanas.",
-    "en": "Hernando said that Rosa had written every week.",
+    "es": "Hernando explicó que Rosa había puesto la fecha en todos los sobres.",
+    "en": "Hernando explained that Rosa had put the date on every envelope.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:pluperfect",
-      "g:preterite-irregular-strong",
+      "g:preterite-ar",
       "g:reported-backshift",
       "g:that-clauses",
-      "l:decir",
-      "l:escribir",
-      "l:semana",
-      "p:todos-los-dias",
-      "p:veces-al"
+      "l:explicar",
+      "l:fecha",
+      "l:poner",
+      "l:sobre"
     ],
     "targets": [
       "g:pluperfect",
@@ -2206,18 +2217,18 @@
   },
   {
     "id": "u31-0094",
-    "es": "Hernando dijo que Joaquín no los había querido engañar.",
-    "en": "Hernando said that Joaquín had not wanted to deceive them.",
+    "es": "Hernando explicó que Joaquín no había querido engañar a nadie.",
+    "en": "Hernando explained that Joaquín had not wanted to deceive anyone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
+      "g:negation-words",
       "g:pluperfect",
-      "g:preterite-irregular-strong",
+      "g:preterite-ar",
       "g:reported-backshift",
       "g:that-clauses",
-      "l:decir",
       "l:engañar",
+      "l:explicar",
       "l:querer"
     ],
     "targets": [
@@ -2420,8 +2431,8 @@
   },
   {
     "id": "u31-0102",
-    "es": "Rosa me dijo una vez que nunca se había sentido tan feliz como en 1978.",
-    "en": "Rosa once told me that she had never felt as happy as in 1978.",
+    "es": "Rosa me dijo una vez que nunca se había sentido tan feliz como en 1977.",
+    "en": "Rosa once told me that she had never felt as happy as in 1977.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2473,23 +2484,22 @@
   },
   {
     "id": "u31-0104",
-    "es": "Tomás dijo que colocaría la caja encima de la mesa.",
-    "en": "Tomás said he would put the box on top of the table.",
+    "es": "Tomás prometió que colocaría el letrero antes de abrir.",
+    "en": "Tomás promised he would put up the sign before opening.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
       "g:gender-articles",
-      "g:preterite-irregular-strong",
+      "g:prep-infinitive",
+      "g:preterite-er-ir",
       "g:reported-backshift",
       "g:that-clauses",
-      "l:caja",
+      "l:abrir",
+      "l:antes",
       "l:colocar",
-      "l:decir",
-      "l:encima",
-      "l:mesa",
-      "p:cerca-de",
-      "p:position-de"
+      "l:letrero",
+      "l:prometer"
     ],
     "targets": [
       "g:reported-backshift",
@@ -3368,16 +3378,18 @@
   },
   {
     "id": "u31-0137",
-    "es": "Hernando dijo que alguien había visto a Simón.",
-    "en": "Hernando said that someone had seen Simón.",
+    "es": "Hernando avisó que alguien había visto a Simón en la calle.",
+    "en": "Hernando let us know that someone had seen Simón in the street.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:pluperfect",
-      "g:preterite-irregular-strong",
+      "g:preterite-ar",
       "g:reported-backshift",
       "g:that-clauses",
-      "l:decir",
+      "l:avisar",
+      "l:calle",
       "l:ver",
       "p:indefinites-basic",
       "p:personal-a"
@@ -3602,23 +3614,22 @@
   },
   {
     "id": "u31-0146",
-    "es": "Joaquín dijo que había perdido la plata en un mal negocio.",
-    "en": "Joaquín said he had lost the money in a bad deal.",
+    "es": "Joaquín dijo que había perdido la plata jugando cartas.",
+    "en": "Joaquín said he had lost the money playing cards.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:gerund-ways",
       "g:pluperfect",
       "g:preterite-irregular-strong",
       "g:reported-backshift",
       "g:that-clauses",
+      "l:carta",
       "l:decir",
-      "l:mal",
-      "l:negocio",
+      "l:jugar",
       "l:perder",
-      "l:plata",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo"
+      "l:plata"
     ],
     "targets": [
       "g:pluperfect",
@@ -3631,20 +3642,20 @@
   },
   {
     "id": "u31-0147",
-    "es": "Rosa dijo que había leído su carta mil veces.",
-    "en": "Rosa said she had read his letter a thousand times.",
+    "es": "Rosa contó que había empezado esa carta mil veces.",
+    "en": "Rosa said she had started that letter a thousand times.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:demonstratives",
       "g:pluperfect",
-      "g:preterite-irregular-strong",
+      "g:preterite-ar",
       "g:reported-backshift",
       "g:that-clauses",
       "l:carta",
-      "l:decir",
-      "l:leer",
-      "l:vez",
-      "p:possessives-basic"
+      "l:contar",
+      "l:empezar",
+      "l:vez"
     ],
     "targets": [
       "g:pluperfect",
@@ -3991,8 +4002,8 @@
   },
   {
     "id": "u31-0160",
-    "es": "Mi mamá me contó que mi abuela se había quejado del frío todo el invierno.",
-    "en": "My mum told me my grandmother had complained about the cold all winter.",
+    "es": "Mi mamá me contó que mi abuela se había quejado del vecino durante años.",
+    "en": "My mum told me my grandmother had complained about the neighbour for years.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4002,11 +4013,12 @@
       "g:reflexive-routine",
       "g:reported-backshift",
       "l:abuela",
+      "l:año",
       "l:contar",
-      "l:frío",
-      "l:invierno",
       "l:mamá",
       "l:quejarse",
+      "l:vecino",
+      "p:durar-durante",
       "p:possessives-basic"
     ],
     "targets": [
@@ -4203,8 +4215,8 @@
   },
   {
     "id": "u31-0168",
-    "es": "Rosa contó que había conocido a su marido en un bus.",
-    "en": "Rosa said she had met her husband on a bus.",
+    "es": "Rosa contó que había conocido a Hernando en su taxi, un día de lluvia.",
+    "en": "Rosa said she had met Hernando in his taxi, on a rainy day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4213,10 +4225,11 @@
       "g:preterite-ar",
       "g:reported-backshift",
       "g:that-clauses",
-      "l:bus",
       "l:conocer",
       "l:contar",
-      "l:marido",
+      "l:día",
+      "l:lluvia",
+      "l:taxi",
       "p:personal-a",
       "p:possessives-basic",
       "p:saber-conocer"
@@ -4232,22 +4245,23 @@
   },
   {
     "id": "u31-0169",
-    "es": "Hernando contó que había llevado a Joaquín al aeropuerto aquella noche.",
-    "en": "Hernando said that he had taken Joaquín to the airport that night.",
+    "es": "Hernando contó que le había prestado su chaqueta a Joaquín aquella noche.",
+    "en": "Hernando said that he had lent Joaquín his jacket that night.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
-      "g:gender-articles",
+      "g:indirect-objects",
+      "g:le-doubling",
       "g:pluperfect",
       "g:preterite-ar",
       "g:reported-backshift",
       "g:that-clauses",
-      "l:aeropuerto",
+      "l:chaqueta",
       "l:contar",
-      "l:llevar",
       "l:noche",
-      "p:personal-a"
+      "l:prestar",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:pluperfect",
@@ -5912,21 +5926,23 @@
   },
   {
     "id": "u31-0234",
-    "es": "Finalmente, fue una semana muy larga.",
-    "en": "Finally, it was a very long week.",
+    "es": "En resumen, fue una semana muy larga.",
+    "en": "In short, it was a very long week.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
-      "g:adverbs-mente",
+      "g:discourse-structure",
       "g:gender-articles",
       "g:preterite-ser-ir-hacer",
       "g:ser-identity",
-      "l:finalmente",
       "l:largo",
+      "l:resumen",
       "l:semana",
       "l:ser",
       "p:al-final-en-resumen",
+      "p:para-terminar",
+      "p:presenting-to-audience",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -5966,17 +5982,25 @@
   },
   {
     "id": "u31-0236",
-    "es": "En fin, no teníamos plata y no teníamos tiempo.",
-    "en": "Anyway, we had no money and no time.",
+    "es": "En resumen, el negocio iba mal y nadie lo decía.",
+    "en": "In short, the business was going badly and nobody said so.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:imperfect-states",
-      "l:fin",
-      "l:plata",
-      "l:tener",
-      "l:tiempo",
-      "p:al-final-en-resumen"
+      "g:direct-objects",
+      "g:discourse-structure",
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "l:decir",
+      "l:ir",
+      "l:mal",
+      "l:negocio",
+      "l:resumen",
+      "p:al-final-en-resumen",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:para-terminar",
+      "p:presenting-to-audience"
     ],
     "targets": [
       "p:al-final-en-resumen"
@@ -6014,18 +6038,21 @@
   },
   {
     "id": "u31-0238",
-    "es": "En fin, la reunión fue un desastre.",
-    "en": "Anyway, the meeting was a disaster.",
+    "es": "En resumen, la reunión fue un desastre.",
+    "en": "In short, the meeting was a disaster.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:estuvo",
+      "g:discourse-structure",
       "g:gender-articles",
       "l:desastre",
-      "l:fin",
+      "l:resumen",
       "l:reunión",
       "l:ser",
-      "p:al-final-en-resumen"
+      "p:al-final-en-resumen",
+      "p:para-terminar",
+      "p:presenting-to-audience"
     ],
     "targets": [
       "p:al-final-en-resumen"
@@ -6279,17 +6306,16 @@
   },
   {
     "id": "u31-0249",
-    "es": "Llovía mucho cuando Joaquín salió con la maleta.",
-    "en": "It was raining hard when Joaquín left with his suitcase.",
+    "es": "Llovía mucho cuando Joaquín salió sin chaqueta.",
+    "en": "It was raining hard when Joaquín left without a jacket.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:imperfect-habitual",
       "g:pret-vs-imperfect",
       "g:preterite-er-ir",
+      "l:chaqueta",
       "l:llover",
-      "l:maleta",
       "l:salir",
       "p:cuando-basic",
       "p:quantifiers-basic"
@@ -6675,19 +6701,18 @@
   },
   {
     "id": "u31-0265",
-    "es": "Joaquín tomó su abrigo y salió sin decir nada.",
-    "en": "Joaquín took his coat and left without saying anything.",
+    "es": "Joaquín abrió la puerta y salió sin decir nada.",
+    "en": "Joaquín opened the door and left without saying anything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:prep-infinitive",
-      "g:preterite-ar",
       "g:preterite-er-ir",
-      "l:abrigo",
+      "l:abrir",
       "l:decir",
-      "l:salir",
-      "l:tomar",
-      "p:possessives-basic"
+      "l:puerta",
+      "l:salir"
     ],
     "targets": [],
     "kind": "statement",
@@ -8592,8 +8617,8 @@
   },
   {
     "id": "u31-0336",
-    "es": "Me sorprende que Mariana conozca tan bien la historia de la calle.",
-    "en": "It surprises me that Mariana knows the history of the street so well.",
+    "es": "A Tomás le sorprende que Mariana conozca tan bien la historia de la calle.",
+    "en": "It surprises Tomás that Mariana knows the history of the street so well.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8625,8 +8650,8 @@
   },
   {
     "id": "u31-0337",
-    "es": "Me sorprende que el café siga abierto después de tantos años.",
-    "en": "It surprises me that the café is still open after so many years.",
+    "es": "A los turistas les sorprende que el café siga abierto después de tantos años.",
+    "en": "It surprises the tourists that the café is still open after so many years.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8642,6 +8667,7 @@
       "l:después",
       "l:seguir",
       "l:sorprender",
+      "l:turista",
       "p:me-extrana-que",
       "p:me-sorprende-que",
       "p:time-sequence-basic"
@@ -8774,8 +8800,8 @@
   },
   {
     "id": "u31-0342",
-    "es": "Me sorprende que mi sobrino hable tan bien inglés.",
-    "en": "It surprises me that my nephew speaks English so well.",
+    "es": "Nos sorprende que mi sobrino hable tan bien inglés.",
+    "en": "It surprises us that my nephew speaks English so well.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8925,8 +8951,8 @@
   },
   {
     "id": "u31-0347",
-    "es": "Me sorprende que Altamira siga con esa campaña.",
-    "en": "It surprises me that Altamira is going ahead with that campaign.",
+    "es": "¿No te sorprende que Altamira siga con esa campaña?",
+    "en": "Doesn't it surprise you that Altamira is going ahead with that campaign? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9677,24 +9703,28 @@
   },
   {
     "id": "u31-0375",
-    "es": "Joaquín se fue sin decir nada.\nPonte en el lugar de él.",
-    "en": "Joaquín left without saying anything.\nPut yourself in his shoes.",
+    "es": "Joaquín se fue sin decir nada.\nPonte en su lugar: tenía mucho miedo.",
+    "en": "Joaquín left without saying anything.\nPut yourself in his shoes: he was very scared.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
       "g:commands-with-pronouns",
-      "g:gender-articles",
+      "g:imperfect-states",
       "g:prep-infinitive",
-      "g:prep-pronouns",
+      "g:pret-vs-imperfect",
       "g:preterite-ser-ir-hacer",
       "g:verbs-of-change",
       "l:decir",
       "l:irse",
       "l:lugar",
+      "l:miedo",
       "l:ponerse",
-      "p:de-owner",
-      "p:ponerse-en-el-lugar"
+      "l:tener",
+      "p:ponerse-en-el-lugar",
+      "p:possessives-basic",
+      "p:quantifiers-basic",
+      "p:tener-hambre"
     ],
     "targets": [
       "p:ponerse-en-el-lugar"
@@ -10112,20 +10142,17 @@
   },
   {
     "id": "u31-0391",
-    "es": "¿Ustedes quieren animarse a ir mañana al río?",
-    "en": "Do you all want to pluck up the courage to go to the river tomorrow?",
+    "es": "¿Ustedes se animan a ir mañana al río?",
+    "en": "Are you all up for going to the river tomorrow?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:object-pronoun-position",
-      "g:se-impersonal",
-      "g:stem-boot",
-      "g:verb-infinitive",
+      "g:present-ar",
+      "g:reflexive-routine",
       "l:animar",
       "l:ir",
       "l:mañana",
-      "l:querer",
       "l:río",
       "p:animarse-a"
     ],
@@ -10541,19 +10568,22 @@
   },
   {
     "id": "u31-0408",
-    "es": "Tomás se animaba un poco más a hablar con los clientes.",
-    "en": "Tomás was feeling a bit braver about talking to customers.",
+    "es": "Cada día, Tomás se animaba un poco más a hablar con los clientes.",
+    "en": "Every day, Tomás felt a bit braver about talking to customers.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:cada-cualquier",
       "g:gender-articles",
       "g:imperfect-habitual",
       "g:reflexive-routine",
       "l:animar",
       "l:cliente",
+      "l:día",
       "l:hablar",
       "p:poco-un-poco",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:veces-al"
     ],
     "targets": [
       "l:animar"
@@ -10739,8 +10769,8 @@
   },
   {
     "id": "u31-0415",
-    "es": "Rosa se enamoró de un músico en 1975.",
-    "en": "Rosa fell in love with a musician in 1975.",
+    "es": "La mamá de Mariana se enamoró de un músico en 1975.",
+    "en": "Mariana's mother fell in love with a musician in 1975.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10748,6 +10778,7 @@
       "g:preterite-ar",
       "g:reflexive-routine",
       "l:enamorarse",
+      "l:mamá",
       "l:músico",
       "p:dates-years",
       "p:enamorarse-de"
@@ -10762,14 +10793,16 @@
   },
   {
     "id": "u31-0416",
-    "es": "Joaquín se enamoró de una mujer de Medellín.",
-    "en": "Joaquín fell in love with a woman from Medellín.",
+    "es": "Joaquín se enamoró de una mujer de la costa.",
+    "en": "Joaquín fell in love with a woman from the coast.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:claro-listo",
+      "g:gender-articles",
       "g:preterite-ar",
       "g:reflexive-routine",
+      "l:costa",
       "l:enamorarse",
       "l:mujer",
       "p:enamorarse-de"
@@ -11400,22 +11433,21 @@
   },
   {
     "id": "u31-0442",
-    "es": "¿Rosa se enamoró alguna vez?\nSí, de un músico, pero él se fue a Cali.",
-    "en": "Did Rosa ever fall in love?\nYes, with a musician, but he went to Cali.",
+    "es": "¿Hernando se enamoró alguna vez?\nSí, pero nunca se lo dijo a ella.",
+    "en": "Did Hernando ever fall in love?\nYes, but he never told her.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "g:double-pronouns",
       "g:indefinites",
       "g:preterite-ar",
-      "g:preterite-ser-ir-hacer",
+      "g:preterite-irregular-strong",
       "g:reflexive-routine",
+      "l:decir",
       "l:enamorarse",
-      "l:irse",
-      "l:músico",
       "l:vez",
       "p:enamorarse-de",
-      "p:ir-a-venir-de-place"
+      "p:frequency-scale"
     ],
     "targets": [
       "p:enamorarse-de"
@@ -11585,8 +11617,8 @@
   },
   {
     "id": "u31-0449",
-    "es": "El cuarto de Rosa olía raro cuando lo abrimos.",
-    "en": "Rosa's room smelled odd when we opened it.",
+    "es": "El cuarto de Rosa olía a perfume viejo cuando lo abrimos.",
+    "en": "Rosa's room smelled of old perfume when we opened it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11596,9 +11628,12 @@
       "g:present-er-ir",
       "l:abrir",
       "l:oler",
-      "l:raro",
+      "l:perfume",
+      "l:viejo",
       "p:cuando-basic",
-      "p:oler-a-saber-a"
+      "p:le-falta-sal",
+      "p:oler-a-saber-a",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "p:oler-a-saber-a"
@@ -11680,8 +11715,8 @@
   },
   {
     "id": "u31-0453",
-    "es": "Las cartas viejas olían raro.",
-    "en": "The old letters smelled odd.",
+    "es": "Las cartas viejas olían a papel y a tinto.",
+    "en": "The old letters smelled of paper and coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11690,8 +11725,10 @@
       "g:imperfect-habitual",
       "l:carta",
       "l:oler",
-      "l:raro",
+      "l:papel",
+      "l:tinto",
       "l:viejo",
+      "p:le-falta-sal",
       "p:oler-a-saber-a",
       "p:viejo-antiguo-mayor"
     ],
@@ -11705,8 +11742,8 @@
   },
   {
     "id": "u31-0454",
-    "es": "Algo huele raro, ¿no sienten nada?",
-    "en": "Something smells odd, don't you all notice anything?",
+    "es": "Huele a quemado, ¿no sienten nada?",
+    "en": "It smells of burning, can't you all smell anything?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11714,9 +11751,9 @@
       "g:stem-boot",
       "g:yo-irregular",
       "l:oler",
-      "l:raro",
+      "l:quemar",
       "l:sentir",
-      "p:indefinites-basic",
+      "p:le-falta-sal",
       "p:oler-a-saber-a"
     ],
     "targets": [
@@ -11805,16 +11842,17 @@
   },
   {
     "id": "u31-0458",
-    "es": "La torta de Vale sabe delicioso.",
-    "en": "Vale's cake tastes delicious.",
+    "es": "La torta de Vale sabe a naranja.",
+    "en": "Vale's cake tastes of orange.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
-      "l:delicioso",
+      "l:naranja",
       "l:saber",
       "l:torta",
+      "p:le-falta-sal",
       "p:oler-a-saber-a"
     ],
     "targets": [
@@ -11883,17 +11921,18 @@
   },
   {
     "id": "u31-0461",
-    "es": "Sabe rico lo que prepara Hernando.",
-    "en": "What Hernando makes tastes great.",
+    "es": "Esta agua sabe a limón.",
+    "en": "This water tastes of lemon.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
       "g:present-er-ir",
-      "g:relatives-donde-lo-que",
-      "l:preparar",
-      "l:rico",
+      "l:agua",
+      "l:limón",
       "l:saber",
+      "p:demonstratives-basic",
+      "p:el-agua-fria",
+      "p:le-falta-sal",
       "p:oler-a-saber-a"
     ],
     "targets": [
@@ -12050,8 +12089,8 @@
   },
   {
     "id": "u31-0468",
-    "es": "Huele delicioso cuando abrimos el horno.",
-    "en": "It smells delicious when we open the oven.",
+    "es": "Cuando abrimos el horno, toda la casa huele a pan.",
+    "en": "When we open the oven, the whole house smells of bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12059,10 +12098,12 @@
       "g:present-er-ir",
       "g:yo-irregular",
       "l:abrir",
-      "l:delicioso",
+      "l:casa",
       "l:horno",
       "l:oler",
+      "l:pan",
       "p:cuando-basic",
+      "p:le-falta-sal",
       "p:oler-a-saber-a"
     ],
     "targets": [
@@ -12075,21 +12116,21 @@
   },
   {
     "id": "u31-0469",
-    "es": "Cuando entramos, olía muy rico y había música.",
-    "en": "When we went in, it smelled really good and there was music.",
+    "es": "Cuando entramos, olía a café y había música.",
+    "en": "When we went in, it smelled of coffee and there was music.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:imperfect-habitual",
       "g:imperfect-states",
       "g:present-ar",
+      "l:café",
       "l:entrar",
       "l:música",
       "l:oler",
-      "l:rico",
       "p:cuando-basic",
-      "p:oler-a-saber-a",
-      "p:quantifiers-basic"
+      "p:le-falta-sal",
+      "p:oler-a-saber-a"
     ],
     "targets": [
       "p:oler-a-saber-a"
@@ -12130,8 +12171,8 @@
   },
   {
     "id": "u31-0471",
-    "es": "¿A qué huele?\nHuele rico, debe ser el pan de Vale.",
-    "en": "What does it smell like?\nIt smells great, it must be Vale's bread.",
+    "es": "¿A qué huele?\nA pan, debe ser el pan de Vale.",
+    "en": "What's that smell?\nBread, it must be Vale's bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12144,9 +12185,7 @@
       "l:oler",
       "l:pan",
       "l:qué",
-      "l:rico",
       "l:ser",
-      "p:oler-a-saber-a",
       "p:prep-questions-basic"
     ],
     "targets": [
@@ -12185,22 +12224,19 @@
   },
   {
     "id": "u31-0473",
-    "es": "Prueba esta salsa.\nSabe delicioso, ¿qué lleva?",
-    "en": "Try this sauce.\nIt tastes delicious, what's in it?",
+    "es": "Prueba esta salsa.\nUy, sabe a ajo.",
+    "en": "Try this sauce.\nWow, it tastes of garlic.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
       "g:present-er-ir",
-      "g:questions",
       "g:stem-boot",
-      "l:delicioso",
-      "l:llevar",
+      "l:ajo",
       "l:probar",
-      "l:qué",
       "l:saber",
       "l:salsa",
       "p:demonstratives-basic",
+      "p:le-falta-sal",
       "p:oler-a-saber-a"
     ],
     "targets": [
@@ -13444,16 +13480,16 @@
   },
   {
     "id": "u31-0524",
-    "es": "Rosa se leyó todas las cartas de su hermano en una noche.",
-    "en": "Rosa read all of her brother's letters in one night.",
+    "es": "Tomás se leyó todas las cartas de su abuela en una noche.",
+    "en": "Tomás read all of his grandmother's letters in one night.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-spelling-stem",
       "g:reflexive-routine",
+      "l:abuela",
       "l:carta",
-      "l:hermano",
       "l:leer",
       "l:noche",
       "p:comerse-todo",
@@ -13470,8 +13506,8 @@
   },
   {
     "id": "u31-0525",
-    "es": "Tomás se leyó la carta de principio a fin.",
-    "en": "Tomás read the letter from start to finish.",
+    "es": "Vale se leyó la carta de principio a fin.",
+    "en": "Vale read the letter from start to finish.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13520,18 +13556,19 @@
   },
   {
     "id": "u31-0527",
-    "es": "Me bebí un vaso de agua y salí corriendo.",
+    "es": "Me tomé un vaso de agua y salí corriendo.",
     "en": "I drank a glass of water and ran out.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:gerund-ways",
+      "g:preterite-ar",
       "g:preterite-er-ir",
       "l:agua",
-      "l:beber",
       "l:correr",
       "l:salir",
+      "l:tomar",
       "l:vaso",
       "p:comerse-todo",
       "p:container-de",
@@ -13850,17 +13887,17 @@
   },
   {
     "id": "u31-0540",
-    "es": "Rosa se había leído esa carta mil veces.",
-    "en": "Rosa had read that letter a thousand times.",
+    "es": "Hernando ya se había leído todo el periódico antes de las siete.",
+    "en": "Hernando had already read the whole paper before seven.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:demonstratives",
+      "g:gender-articles",
       "g:pluperfect",
-      "g:reflexive-routine",
-      "l:carta",
+      "g:se-impersonal",
+      "l:antes",
       "l:leer",
-      "l:vez"
+      "l:periódico"
     ],
     "targets": [
       "g:pluperfect"
@@ -14311,27 +14348,23 @@
   },
   {
     "id": "u31-0557",
-    "es": "Tomás se pone nervioso y le da miedo hablar con los clientes en español.",
-    "en": "Tomás gets nervous and is scared to speak to customers in Spanish.",
+    "es": "A Tomás todavía le da miedo contestar el teléfono en español.",
+    "en": "Tomás is still scared of answering the phone in Spanish.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:indirect-objects",
       "g:present-ar",
-      "g:present-er-ir",
-      "g:verbs-of-change",
-      "l:cliente",
+      "l:contestar",
       "l:dar",
       "l:español",
-      "l:hablar",
       "l:miedo",
-      "l:nervioso",
-      "l:ponerse",
+      "l:teléfono",
       "p:me-da-miedo",
       "p:me-da-miedo-que",
-      "p:me-pone-nervioso-que",
-      "p:miedo-a"
+      "p:miedo-a",
+      "p:ya-todavia-basic"
     ],
     "targets": [
       "p:miedo-a"
@@ -14392,25 +14425,23 @@
   },
   {
     "id": "u31-0560",
-    "es": "Tengo miedo de que Altamira compre la esquina.",
-    "en": "I'm afraid that Altamira will buy the corner.",
+    "es": "Los vecinos tienen miedo a perder sus casas.",
+    "en": "The neighbours are afraid of losing their homes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:compre-trabaje",
-      "c:tengo",
+      "c:tienes",
       "g:gender-articles",
-      "g:subj-emotion",
-      "g:that-clauses",
-      "g:yo-irregular",
-      "l:comprar",
-      "l:esquina",
+      "g:stem-boot",
+      "l:casa",
       "l:miedo",
+      "l:perder",
       "l:tener",
+      "l:vecino",
       "p:me-da-miedo-que",
       "p:miedo-a",
-      "p:tener-hambre",
-      "p:tengo-miedo-de-que"
+      "p:possessives-basic",
+      "p:tener-hambre"
     ],
     "targets": [
       "p:miedo-a"
@@ -14422,27 +14453,21 @@
   },
   {
     "id": "u31-0561",
-    "es": "Tengo miedo de que Hernando no quiera contarnos más.",
-    "en": "I'm afraid Hernando won't want to tell us any more.",
+    "es": "Hernando tiene miedo de contarnos más.",
+    "en": "Hernando is afraid to tell us any more.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tengo",
+      "c:tienes",
       "g:object-pronoun-position",
-      "g:subj-emotion",
-      "g:subj-wanting",
-      "g:that-clauses",
-      "g:verb-infinitive",
-      "g:yo-irregular",
+      "g:stem-boot",
       "l:contar",
       "l:miedo",
-      "l:querer",
       "l:tener",
       "p:me-da-miedo-que",
       "p:me-te-nos-objects",
       "p:miedo-a",
-      "p:tener-hambre",
-      "p:tengo-miedo-de-que"
+      "p:tener-hambre"
     ],
     "targets": [
       "p:miedo-a"
@@ -14454,25 +14479,21 @@
   },
   {
     "id": "u31-0562",
-    "es": "Vale tiene miedo de que el café cierre.",
-    "en": "Vale is afraid the café will close.",
+    "es": "Vale tiene miedo a perder la cocina de Rosa.",
+    "en": "Vale is afraid of losing Rosa's kitchen.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
       "g:gender-articles",
       "g:stem-boot",
-      "g:subj-emotion",
-      "g:subj-wanting",
-      "g:that-clauses",
-      "l:café",
-      "l:cerrar",
+      "l:cocina",
       "l:miedo",
+      "l:perder",
       "l:tener",
       "p:me-da-miedo-que",
       "p:miedo-a",
-      "p:tener-hambre",
-      "p:tengo-miedo-de-que"
+      "p:tener-hambre"
     ],
     "targets": [
       "p:miedo-a"
@@ -14484,25 +14505,24 @@
   },
   {
     "id": "u31-0563",
-    "es": "Mi mamá tiene miedo de que viaje solo.",
-    "en": "My mum is afraid that I'll travel alone. (a man speaking)",
+    "es": "Mi mamá le tiene miedo al avión.",
+    "en": "My mum is afraid of planes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:le-doubling",
       "g:stem-boot",
-      "g:subj-emotion",
-      "g:subj-wanting",
-      "g:that-clauses",
+      "l:avión",
       "l:mamá",
       "l:miedo",
       "l:tener",
-      "l:viajar",
       "p:me-da-miedo-que",
       "p:miedo-a",
       "p:possessives-basic",
-      "p:tener-hambre",
-      "p:tengo-miedo-de-que"
+      "p:tener-hambre"
     ],
     "targets": [
       "p:miedo-a"
@@ -14540,20 +14560,22 @@
   },
   {
     "id": "u31-0565",
-    "es": "No tengas miedo, yo voy contigo.",
-    "en": "Don't be afraid, I'll go with you.",
+    "es": "Si te da miedo, yo voy contigo.",
+    "en": "If it scares you, I'll go with you. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:voy-vas",
       "g:ir-a-plans",
-      "g:negative-commands",
       "g:prep-pronouns",
+      "g:present-ar",
+      "g:si-present",
+      "l:dar",
       "l:ir",
       "l:miedo",
-      "l:tener",
-      "p:no-tengas-miedo-de",
-      "p:tener-hambre"
+      "p:me-da-miedo",
+      "p:me-da-miedo-que",
+      "p:me-te-nos-objects"
     ],
     "targets": [],
     "kind": "statement",
@@ -14638,24 +14660,19 @@
   },
   {
     "id": "u31-0569",
-    "es": "¿Tienes miedo de que Joaquín no te perdone?",
-    "en": "Are you afraid that Joaquín won't forgive you?",
+    "es": "¿Te da miedo hablar con Joaquín?",
+    "en": "Are you scared to talk to Joaquín? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
-      "g:stem-boot",
-      "g:subj-emotion",
-      "g:subj-wanting",
-      "g:that-clauses",
+      "g:present-ar",
+      "l:dar",
+      "l:hablar",
       "l:miedo",
-      "l:perdonar",
-      "l:tener",
+      "p:me-da-miedo",
       "p:me-da-miedo-que",
       "p:me-te-nos-objects",
-      "p:miedo-a",
-      "p:tener-hambre",
-      "p:tengo-miedo-de-que"
+      "p:miedo-a"
     ],
     "targets": [
       "p:miedo-a"
@@ -14801,24 +14818,18 @@
   },
   {
     "id": "u31-0575",
-    "es": "Tengo miedo a que no me entiendan.",
-    "en": "I'm afraid they won't understand me.",
+    "es": "Tengo miedo a no entender nada.",
+    "en": "I'm afraid of not understanding anything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tengo",
-      "g:relatives-prepositions",
-      "g:subj-relative",
-      "g:subj-wanting",
       "g:yo-irregular",
       "l:entender",
       "l:miedo",
       "l:tener",
       "p:me-da-miedo-que",
-      "p:me-te-nos-objects",
-      "p:miedo-a",
-      "p:tener-hambre",
-      "p:tengo-miedo-de-que"
+      "p:tener-hambre"
     ],
     "targets": [
       "p:miedo-a"
@@ -14981,28 +14992,24 @@
   },
   {
     "id": "u31-0582",
-    "es": "¿Qué tienes?\nTengo miedo de que me despidan.",
-    "en": "What's wrong?\nI'm afraid they'll fire me.",
+    "es": "¿Qué tienes?\nMe da miedo la reunión con el jefe.",
+    "en": "What's wrong?\nThe meeting with my boss scares me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tengo",
+      "c:me-regala",
       "c:tienes",
+      "g:gender-articles",
       "g:questions",
       "g:stem-boot",
-      "g:subj-emotion",
-      "g:subj-wanting",
-      "g:that-clauses",
-      "g:yo-irregular",
-      "l:despedir",
+      "l:dar",
+      "l:jefe",
       "l:miedo",
       "l:qué",
+      "l:reunión",
       "l:tener",
-      "p:me-da-miedo-que",
-      "p:me-te-nos-objects",
-      "p:miedo-a",
-      "p:tener-hambre",
-      "p:tengo-miedo-de-que"
+      "p:me-da-miedo",
+      "p:me-da-miedo-que"
     ],
     "targets": [
       "p:miedo-a"
@@ -15014,30 +15021,25 @@
   },
   {
     "id": "u31-0583",
-    "es": "No tengas miedo de hablar.\nEs que me da pena equivocarme.",
-    "en": "Don't be afraid to speak.\nIt's just that I feel embarrassed making mistakes.",
+    "es": "Di algo, Tomás.\nEs que me da miedo equivocarme.",
+    "en": "Say something, Tomás.\nIt's just that I'm scared of getting it wrong.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:es-que",
       "c:me-regala",
-      "g:negative-commands",
       "g:object-pronoun-position",
+      "g:preterite-irregular-strong",
       "l:dar",
       "l:equivocarse",
-      "l:hablar",
       "l:miedo",
-      "l:pena",
       "l:ser",
-      "l:tener",
       "p:equivocarse",
+      "p:indefinites-basic",
       "p:me-da-miedo",
       "p:me-da-miedo-que",
-      "p:me-da-pena-que",
       "p:me-te-nos-objects",
-      "p:miedo-a",
-      "p:no-tengas-miedo-de",
-      "p:tener-hambre"
+      "p:miedo-a"
     ],
     "targets": [
       "p:miedo-a"
@@ -16246,26 +16248,22 @@
   },
   {
     "id": "u31-0635",
-    "es": "Joaquín llevaba un año trabajando en Caracas cuando Rosa recibió su primera noticia.",
-    "en": "Joaquín had been working in Caracas for a year when Rosa got her first news of him.",
+    "es": "Joaquín llevaba un año fuera cuando Rosa escribió la segunda carta.",
+    "en": "Joaquín had been gone for a year when Rosa wrote the second letter.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:hace-que-desde",
       "g:imperfect-habitual",
       "g:pret-vs-imperfect",
       "g:preterite-er-ir",
       "l:año",
+      "l:carta",
+      "l:escribir",
       "l:llevar",
-      "l:noticia",
-      "l:recibir",
-      "l:trabajar",
       "p:cuando-basic",
-      "p:llevar-tiempo-gerundio",
       "p:ordinal-floor",
-      "p:ordinals-primer-tercer",
-      "p:possessives-basic"
+      "p:ordinals-primer-tercer"
     ],
     "targets": [
       "p:llevar-tiempo-gerundio"
@@ -16633,25 +16631,26 @@
   },
   {
     "id": "u31-0650",
-    "es": "Esa canción me trae buenas memorias de mi juventud.",
+    "es": "Esa canción me trae buenos recuerdos de mi juventud.",
     "en": "That song brings back good memories of my youth.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:demonstratives",
       "g:present-er-ir",
-      "l:buena",
+      "l:bueno",
       "l:canción",
       "l:juventud",
-      "l:memoria",
+      "l:recuerdo",
       "l:traer",
       "p:llevar-traer",
       "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:traer-recuerdos"
     ],
     "targets": [
-      "l:juventud",
-      "l:memoria"
+      "l:juventud"
     ],
     "kind": "statement",
     "unit": "u31",
@@ -16660,8 +16659,8 @@
   },
   {
     "id": "u31-0651",
-    "es": "Tomás no tiene muchas memorias de su abuela, solo unas fotos.",
-    "en": "Tomás doesn't have many memories of his grandmother, only some photos.",
+    "es": "Tomás casi no tiene recuerdos de su abuela; solo tiene un álbum de fotos.",
+    "en": "Tomás has hardly any memories of his grandmother; all he has is a photo album.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16670,14 +16669,14 @@
       "g:stem-boot",
       "l:abuela",
       "l:foto",
-      "l:memoria",
+      "l:recuerdo",
       "l:tener",
+      "l:álbum",
       "p:possessives-basic",
-      "p:quantifiers-basic",
       "p:sobre-todo-solo"
     ],
     "targets": [
-      "l:memoria"
+      "l:álbum"
     ],
     "kind": "statement",
     "unit": "u31",
@@ -16711,8 +16710,8 @@
   },
   {
     "id": "u31-0653",
-    "es": "Si la memoria no me falla, el café abrió en 1962.",
-    "en": "If my memory serves me, the café opened in 1962.",
+    "es": "Si la memoria no me falla, el café abrió en 1977.",
+    "en": "If my memory serves me, the café opened in 1977.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17173,17 +17172,19 @@
   },
   {
     "id": "u31-0672",
-    "es": "Rosa había heredado el edificio de sus padres.",
-    "en": "Rosa had inherited the building from her parents.",
+    "es": "Rosa había heredado de su mamá la costumbre de guardarlo todo.",
+    "en": "Rosa had inherited from her mother the habit of keeping everything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:direct-objects",
       "g:gender-articles",
+      "g:object-pronoun-position",
       "g:pluperfect",
-      "l:edificio",
+      "l:costumbre",
+      "l:guardar",
       "l:heredar",
-      "l:padres",
-      "p:masculine-plural-mixed",
+      "l:mamá",
       "p:possessives-basic"
     ],
     "targets": [
@@ -17464,15 +17465,17 @@
   },
   {
     "id": "u31-0684",
-    "es": "¿Guardas tú el secreto de Joaquín?",
-    "en": "Do you keep Joaquín's secret?",
+    "es": "¿Tú también sabías el secreto de Joaquín?",
+    "en": "Did you know Joaquín's secret too? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
-      "l:guardar",
-      "l:secreto"
+      "g:imperfect-habitual",
+      "l:saber",
+      "l:secreto",
+      "p:saber-conocer",
+      "p:tambien-tampoco"
     ],
     "targets": [
       "l:secreto"
@@ -17484,8 +17487,8 @@
   },
   {
     "id": "u31-0685",
-    "es": "Tomás encontró un álbum de fotos debajo de la cama.",
-    "en": "Tomás found a photo album under the bed.",
+    "es": "Vale encontró un álbum de fotos debajo de la cama de Rosa.",
+    "en": "Vale found a photo album under Rosa's bed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17608,7 +17611,7 @@
   {
     "id": "u31-0690",
     "es": "¿Quién sacó las fotos de este álbum?",
-    "en": "Who took the photos in this album?",
+    "en": "Who took the photos out of this album?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17632,20 +17635,20 @@
   },
   {
     "id": "u31-0691",
-    "es": "Pasé la tarde viendo el álbum de mi juventud.",
-    "en": "I spent the afternoon looking at my youth album.",
+    "es": "Ayer miré con mi hermana el álbum de nuestra juventud.",
+    "en": "Yesterday my sister and I looked through the album from our youth.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "g:gender-articles",
-      "g:gerund-ways",
+      "g:possessives",
       "g:preterite-ar",
+      "l:ayer",
+      "l:hermana",
       "l:juventud",
-      "l:pasar",
-      "l:tarde",
-      "l:ver",
+      "l:mirar",
       "l:álbum",
-      "p:pasarse-la-vida",
       "p:possessives-basic"
     ],
     "targets": [
@@ -17710,19 +17713,18 @@
   },
   {
     "id": "u31-0694",
-    "es": "Hernando recuerda con cariño su juventud en el taxi.",
-    "en": "Hernando fondly remembers his youth in the taxi.",
+    "es": "Hernando habla con cariño de su juventud en el taxi.",
+    "en": "Hernando talks fondly about his youth in the taxi.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:stem-boot",
+      "g:present-ar",
       "l:cariño",
+      "l:hablar",
       "l:juventud",
-      "l:recordar",
       "l:taxi",
-      "p:possessives-basic",
-      "p:recordar-acordarse"
+      "p:possessives-basic"
     ],
     "targets": [
       "l:juventud"
@@ -17807,21 +17809,21 @@
   },
   {
     "id": "u31-0698",
-    "es": "Siempre se acuerda de su juventud con una sonrisa.",
-    "en": "He always remembers his youth with a smile.",
+    "es": "Mi abuelo se ríe cuando piensa en su juventud.",
+    "en": "My grandfather laughs when he thinks about his youth.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:reflexive-routine",
+      "g:se-impersonal",
       "g:stem-boot",
-      "l:acordarse",
+      "g:stem-e-i",
+      "l:abuelo",
       "l:juventud",
-      "l:siempre",
-      "l:sonrisa",
-      "p:frequency-scale",
-      "p:possessives-basic",
-      "p:recordar-acordarse"
+      "l:pensar",
+      "l:reír",
+      "p:cuando-basic",
+      "p:pensar-en",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:juventud"
@@ -17914,8 +17916,8 @@
   },
   {
     "id": "u31-0702",
-    "es": "Mariana se había separado de su pareja justo antes de conocer a Tomás.",
-    "en": "Mariana had separated from her partner just before meeting Tomás.",
+    "es": "Mi vecina se había separado de su esposo justo antes de mudarse aquí.",
+    "en": "My neighbour had separated from her husband just before moving here.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17923,13 +17925,14 @@
       "g:prep-infinitive",
       "g:reflexive-routine",
       "l:antes",
-      "l:conocer",
+      "l:aquí",
+      "l:esposo",
       "l:justo",
-      "l:pareja",
+      "l:mudarse",
       "l:separar",
-      "p:personal-a",
-      "p:possessives-basic",
-      "p:saber-conocer"
+      "l:vecino",
+      "p:aqui-ahi-alla",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:pluperfect"
@@ -17968,18 +17971,20 @@
   },
   {
     "id": "u31-0704",
-    "es": "Rosa y Joaquín se separaron en la estación de buses.",
-    "en": "Rosa and Joaquín parted at the bus station.",
+    "es": "Rosa y Joaquín se separaron después de una discusión horrible.",
+    "en": "Rosa and Joaquín split up after a horrible argument.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "c:claro-listo",
       "g:preterite-ar",
       "g:reflexive-routine",
-      "l:bus",
-      "l:estación",
+      "l:después",
+      "l:discusión",
+      "l:horrible",
       "l:separarse",
-      "p:se-reciproco"
+      "p:se-reciproco",
+      "p:time-sequence-basic"
     ],
     "targets": [
       "l:separarse"
@@ -18169,14 +18174,14 @@
   },
   {
     "id": "u31-0712",
-    "es": "Mi abuelo quiere emigrar a Canadá.",
-    "en": "My grandfather wants to emigrate to Canada.",
+    "es": "Mi primo quiere emigrar a Canadá.",
+    "en": "My cousin wants to emigrate to Canada.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:stem-boot",
-      "l:abuelo",
       "l:emigrar",
+      "l:primo",
       "l:querer",
       "p:possessives-basic"
     ],
@@ -18239,16 +18244,20 @@
   },
   {
     "id": "u31-0715",
-    "es": "Joaquín quería emigrar a Venezuela con su familia.",
-    "en": "Joaquín wanted to emigrate to Venezuela with his family.",
+    "es": "En los años setenta, mucha gente decidió emigrar a Venezuela.",
+    "en": "In the seventies, a lot of people decided to emigrate to Venezuela.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:imperfect-habitual",
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "l:año",
+      "l:decidir",
       "l:emigrar",
-      "l:familia",
-      "l:querer",
-      "p:possessives-basic"
+      "l:gente",
+      "p:decadas-siglos",
+      "p:la-gente-singular",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:emigrar"
@@ -18332,19 +18341,24 @@
   },
   {
     "id": "u31-0719",
-    "es": "Tomás es hijo de dos personas que querían emigrar.",
-    "en": "Tomás is the son of two people who wanted to emigrate.",
+    "es": "Los papás de Tomás decidieron emigrar cuando él era un bebé.",
+    "en": "Tomás's parents decided to emigrate when he was a baby.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:imperfect-habitual",
-      "g:relative-que",
+      "c:era",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-er-ir",
       "g:ser-identity",
+      "l:bebé",
+      "l:decidir",
       "l:emigrar",
-      "l:hijo",
-      "l:persona",
-      "l:querer",
-      "l:ser"
+      "l:papá",
+      "l:ser",
+      "p:cuando-basic",
+      "p:masculine-plural-mixed"
     ],
     "targets": [
       "l:emigrar"
@@ -18589,20 +18603,18 @@
   },
   {
     "id": "u31-0730",
-    "es": "Tomás tiene un colega que le enseña español.",
-    "en": "Tomás has a colleague who teaches him Spanish.",
+    "es": "Mariana tiene un colega que escribe sobre la Candelaria.",
+    "en": "Mariana has a colleague who writes about La Candelaria.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
       "g:gender-articles",
-      "g:indirect-objects",
-      "g:present-ar",
+      "g:present-er-ir",
       "g:relative-que",
       "g:stem-boot",
       "l:colega",
-      "l:enseñar",
-      "l:español",
+      "l:escribir",
       "l:tener"
     ],
     "targets": [
@@ -19079,8 +19091,8 @@
   },
   {
     "id": "u31-0749",
-    "es": "Mira lo que encontré debajo de la cama.\nNo te lo vas a creer, es el álbum de Rosa.",
-    "en": "Look what I found under the bed.\nYou won't believe it, it's Rosa's album.",
+    "es": "Mira lo que encontré en el álbum.\n¡No te lo vas a creer! Es una carta de Rosa.",
+    "en": "Look what I found in the album.\nYou won't believe it! It's a letter from Rosa.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19092,16 +19104,13 @@
       "g:preterite-ar",
       "g:relatives-donde-lo-que",
       "g:ser-identity",
-      "l:cama",
+      "l:carta",
       "l:creer",
-      "l:debajo",
       "l:encontrar",
       "l:irse",
       "l:mirar",
       "l:ser",
-      "l:álbum",
-      "p:cerca-de",
-      "p:position-de"
+      "l:álbum"
     ],
     "targets": [
       "c:no-te-lo-vas-a-creer",
@@ -19175,8 +19184,8 @@
   },
   {
     "id": "u31-0752",
-    "es": "¿Ya hablaste con Joaquín?\nNo te lo vas a creer, contestó el teléfono.",
-    "en": "Have you talked to Joaquín yet?\nYou won't believe it, he answered the phone.",
+    "es": "¿Ya llamaste al banco?\nNo te lo vas a creer: me contestaron a la primera.",
+    "en": "Have you called the bank yet?\nYou won't believe it: they answered first time.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19185,11 +19194,13 @@
       "g:gender-articles",
       "g:ir-a-plans",
       "g:preterite-ar",
+      "l:banco",
       "l:contestar",
       "l:creer",
-      "l:hablar",
       "l:irse",
-      "l:teléfono"
+      "l:llamar",
+      "p:me-te-nos-objects",
+      "p:personal-a"
     ],
     "targets": [
       "c:no-te-lo-vas-a-creer"
@@ -20416,8 +20427,8 @@
   },
   {
     "id": "u31-0803",
-    "es": "Rosa se enamoró de un hombre que estaba enamorado de otra.",
-    "en": "Rosa fell in love with a man who was in love with someone else.",
+    "es": "Mi prima se enamoró de un hombre que estaba enamorado de otra.",
+    "en": "My cousin fell in love with a man who was in love with someone else.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20432,8 +20443,10 @@
       "l:enamorarse",
       "l:estar",
       "l:hombre",
+      "l:prima",
       "p:enamorarse-de",
-      "p:otro-no-article"
+      "p:otro-no-article",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:enamorado",
@@ -20446,13 +20459,14 @@
   },
   {
     "id": "u31-0804",
-    "es": "Joaquín estaba enamorado de Caracas antes de conocerla.",
-    "en": "Joaquín was in love with Caracas before even knowing it.",
+    "es": "Joaquín estaba enamorado del mar antes de conocerlo.",
+    "en": "Joaquín was in love with the sea before he had ever seen it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
       "g:estar-location-states",
+      "g:gender-articles",
       "g:imperfect-states",
       "g:object-pronoun-position",
       "g:prep-infinitive",
@@ -20460,6 +20474,7 @@
       "l:conocer",
       "l:enamorado",
       "l:estar",
+      "l:mar",
       "p:enamorarse-de",
       "p:saber-conocer"
     ],
@@ -20918,8 +20933,8 @@
   },
   {
     "id": "u31-0822",
-    "es": "Las cartas tardaron cuarenta años en llegar a sus manos.",
-    "en": "The letters took forty years to reach his hands.",
+    "es": "Las cartas tardaron casi cincuenta años en llegar a manos de Tomás.",
+    "en": "The letters took almost fifty years to reach Tomás.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20930,7 +20945,6 @@
       "l:llegar",
       "l:mano",
       "l:tardar",
-      "p:possessives-basic",
       "p:tardar-en"
     ],
     "targets": [
@@ -21321,18 +21335,19 @@
   },
   {
     "id": "u31-0838",
-    "es": "Rosa se quejaba del frío en los años setenta.",
-    "en": "Rosa used to complain about the cold in the seventies.",
+    "es": "Rosa nunca se quejaba de nada, ni del trabajo ni de la plata.",
+    "en": "Rosa never complained about anything, not the work and not the money.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:gracias-de-nada",
       "g:gender-articles",
       "g:imperfect-habitual",
       "g:reflexive-routine",
-      "l:año",
-      "l:frío",
+      "l:plata",
       "l:quejarse",
-      "p:decadas-siglos"
+      "l:trabajo",
+      "p:frequency-scale"
     ],
     "targets": [
       "l:quejarse"
@@ -22717,18 +22732,18 @@
   },
   {
     "id": "u31-0895",
-    "es": "Pisé una caja y se rompió.",
-    "en": "I stepped on a box and it broke.",
+    "es": "En el bus, un señor me pisó dos veces.",
+    "en": "On the bus, a man stepped on my foot twice.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
-      "g:preterite-er-ir",
-      "g:reflexive-routine",
-      "l:caja",
+      "l:bus",
       "l:pisar",
-      "l:romperse"
+      "l:señor",
+      "l:vez",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "l:pisar"
@@ -22765,14 +22780,14 @@
   },
   {
     "id": "u31-0897",
-    "es": "Hace años que nadie pisaba ese cuarto.",
+    "es": "Hacía años que nadie pisaba ese cuarto.",
     "en": "It had been years since anyone had set foot in that room.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
       "g:imperfect-habitual",
-      "g:present-er-ir",
+      "g:relative-que",
       "l:año",
       "l:hacer",
       "l:pisar"
@@ -22876,15 +22891,20 @@
   },
   {
     "id": "u31-0902",
-    "es": "Mariana siguió la huella de Joaquín hasta Caracas.",
-    "en": "Mariana followed Joaquín's trail to Caracas.",
+    "es": "Mariana busca alguna huella de Joaquín en los periódicos viejos.",
+    "en": "Mariana is looking for any trace of Joaquín in old newspapers.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
-      "g:preterite-irregular-strong",
+      "g:indefinites",
+      "g:present-ar",
+      "l:buscar",
       "l:huella",
-      "l:seguir"
+      "l:periódico",
+      "l:viejo",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "l:huella"
@@ -23231,18 +23251,18 @@
   },
   {
     "id": "u31-0917",
-    "es": "Altamira involucró a un abogado muy conocido.",
-    "en": "Altamira brought in a very well-known lawyer.",
+    "es": "Altamira quiere involucrar al banco en el negocio.",
+    "en": "Altamira wants to involve the bank in the deal.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ar",
-      "l:abogado",
-      "l:conocer",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:banco",
       "l:involucrar",
-      "p:quantifiers-basic",
-      "p:saber-conocer"
+      "l:negocio",
+      "l:querer"
     ],
     "targets": [
       "l:involucrar"
@@ -23357,22 +23377,18 @@
   },
   {
     "id": "u31-0922",
-    "es": "Voy a odiar este trabajo si sigo así.",
-    "en": "I'm going to hate this job if I carry on like this.",
+    "es": "Rosa nunca quiso odiar a su hermano.",
+    "en": "Rosa never wanted to hate her brother.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:voy-a",
-      "g:ir-a-plans",
-      "g:si-present",
-      "g:yo-irregular",
-      "l:ir",
+      "g:preterite-irregular-strong",
+      "l:hermano",
       "l:odiar",
-      "l:seguir",
-      "l:trabajo",
-      "p:demonstratives-basic",
-      "p:ir-a-venir-de-place",
-      "p:no-soportar-que"
+      "l:querer",
+      "p:frequency-scale",
+      "p:no-soportar-que",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:odiar"
@@ -23437,18 +23453,19 @@
   },
   {
     "id": "u31-0925",
-    "es": "Voy a odiar toda esa reunión.",
-    "en": "I'm going to hate that whole meeting.",
+    "es": "Es difícil odiar el frío de Bogotá con un tinto en la mano.",
+    "en": "It's hard to hate the Bogotá cold with a coffee in your hand.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:voy-a",
-      "g:demonstratives",
-      "g:ir-a-plans",
-      "l:ir",
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:difícil",
+      "l:frío",
+      "l:mano",
       "l:odiar",
-      "l:reunión",
-      "p:ir-a-venir-de-place",
+      "l:ser",
+      "l:tinto",
       "p:no-soportar-que"
     ],
     "targets": [
@@ -23461,21 +23478,20 @@
   },
   {
     "id": "u31-0926",
-    "es": "Dicen que va a odiar el frío de Bogotá.",
-    "en": "They say he is going to hate the cold of Bogotá.",
+    "es": "Hernando dice que no sabe odiar a nadie.",
+    "en": "Hernando says he doesn't know how to hate anyone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:que-va",
-      "g:gender-articles",
+      "g:negation-words",
+      "g:present-er-ir",
       "g:stem-e-i",
+      "g:that-clauses",
       "l:decir",
-      "l:frío",
-      "l:ir",
       "l:odiar",
-      "p:ir-a-venir-de-place",
-      "p:me-contaron-que",
-      "p:no-soportar-que"
+      "l:saber",
+      "p:no-soportar-que",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:odiar"
@@ -23577,23 +23593,18 @@
   },
   {
     "id": "u31-0930",
-    "es": "¿Qué pasó?\nPisé una caja y no me di cuenta.",
-    "en": "What happened?\nI stepped on a box and didn't notice.",
+    "es": "¿Qué pasó?\nSimón pisó la torta de Vale.",
+    "en": "What happened?\nSimón stepped on Vale's cake.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
-      "g:preterite-irregular-strong",
       "g:questions",
-      "g:reflexive-routine",
-      "l:caja",
-      "l:cuenta",
-      "l:darse",
       "l:pasar",
       "l:pisar",
       "l:qué",
-      "p:darse-cuenta-de",
+      "l:torta",
       "p:ocurrir-producirse"
     ],
     "targets": [
@@ -23661,29 +23672,25 @@
   },
   {
     "id": "u31-0933",
-    "es": "¿Qué piensas de Altamira?\nVoy a odiar a esa gente toda la vida.",
-    "en": "What do you think of Altamira?\nI'm going to hate those people all my life.",
+    "es": "¿Qué piensas de Altamira?\nNo quiero odiar a nadie, pero no les creo nada.",
+    "en": "What do you think of Altamira?\nI don't want to hate anyone, but I don't believe a word they say.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:voy-a",
-      "g:demonstratives",
-      "g:gender-articles",
-      "g:ir-a-plans",
+      "c:quiero",
+      "g:indirect-objects",
+      "g:negation-words",
+      "g:present-er-ir",
       "g:questions",
       "g:stem-boot",
-      "l:gente",
-      "l:ir",
+      "l:creer",
       "l:odiar",
       "l:pensar",
+      "l:querer",
       "l:qué",
-      "l:vida",
-      "p:ir-a-venir-de-place",
-      "p:la-gente-singular",
       "p:no-soportar-que",
       "p:pensar-en",
-      "p:que-opinas-de",
-      "p:todos-los-dias"
+      "p:que-opinas-de"
     ],
     "targets": [
       "l:odiar"
@@ -24057,17 +24064,19 @@
   },
   {
     "id": "u31-0949",
-    "es": "Luego abrió Vale la puerta de la cocina.",
-    "en": "Then Vale opened the kitchen door.",
+    "es": "Vale tocó dos veces y luego abrió la puerta de la cocina.",
+    "en": "Vale knocked twice and then opened the kitchen door.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:preterite-ar",
       "g:preterite-er-ir",
       "l:abrir",
       "l:cocina",
       "l:puerta",
-      "p:entonces-de-repente",
+      "l:tocar",
+      "l:vez",
       "p:time-sequence-basic"
     ],
     "targets": [
@@ -24080,20 +24089,23 @@
   },
   {
     "id": "u31-0950",
-    "es": "Después leyó Tomás la última línea en voz alta.",
-    "en": "Then Tomás read the last line out loud.",
+    "es": "Tomás se quedó callado y después leyó la última línea en voz alta.",
+    "en": "Tomás went quiet and then read the last line out loud.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
+      "g:preterite-ar",
       "g:preterite-spelling-stem",
+      "g:reflexive-routine",
       "l:alto",
+      "l:callado",
       "l:después",
       "l:leer",
       "l:línea",
+      "l:quedarse",
       "l:voz",
-      "p:entonces-de-repente",
       "p:time-sequence-basic",
       "p:ver-oir-bien-mal"
     ],
@@ -24224,19 +24236,20 @@
   },
   {
     "id": "u31-0956",
-    "es": "Entonces cerró Rosa la carta y la guardó.",
-    "en": "Then Rosa closed the letter and put it away.",
+    "es": "Rosa firmó la carta y entonces la guardó con las otras.",
+    "en": "Rosa signed the letter and then put it away with the others.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:entonces-bueno",
+      "c:y-que-paso",
       "g:direct-objects",
       "g:gender-articles",
       "g:preterite-ar",
       "l:carta",
-      "l:cerrar",
+      "l:firmar",
       "l:guardar",
-      "p:entonces-de-repente"
+      "p:otro-no-article"
     ],
     "targets": [
       "p:entonces-de-repente"
@@ -24428,16 +24441,17 @@
   },
   {
     "id": "u31-0964",
-    "es": "Luego encontró Mariana una foto de 1978.",
-    "en": "Then Mariana found a photo from 1978.",
+    "es": "Mariana buscó en el archivo y luego encontró una foto de 1978.",
+    "en": "Mariana searched the archive and then found a photo from 1978.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
+      "l:archivo",
+      "l:buscar",
       "l:encontrar",
       "l:foto",
-      "p:entonces-de-repente",
       "p:time-sequence-basic"
     ],
     "targets": [
@@ -24450,18 +24464,21 @@
   },
   {
     "id": "u31-0965",
-    "es": "Después bajó Tomás con la caja en las manos.",
-    "en": "Then Tomás came down with the box in his hands.",
+    "es": "Hubo un ruido arriba, y después bajó Tomás con la caja en las manos.",
+    "en": "There was a noise upstairs, and then Tomás came down with the box in his hands.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:imperfect-states",
       "g:preterite-ar",
+      "l:arriba",
       "l:bajar",
       "l:caja",
       "l:después",
       "l:mano",
-      "p:entonces-de-repente",
+      "l:ruido",
+      "p:event-ser-en",
       "p:time-sequence-basic"
     ],
     "targets": [
@@ -24474,20 +24491,22 @@
   },
   {
     "id": "u31-0966",
-    "es": "Luego comió Simón un pedazo de pan y gritó algo.",
-    "en": "Then Simón ate a piece of bread and screamed something.",
+    "es": "Simón se comió un pedazo de pan y luego gritó algo.",
+    "en": "Simón ate a piece of bread and then screamed something.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
       "g:preterite-er-ir",
+      "g:reflexive-routine",
       "l:comer",
       "l:gritar",
       "l:pan",
       "l:pedazo",
+      "p:comerse-todo",
       "p:container-de",
-      "p:entonces-de-repente",
+      "p:dativo-aspectual",
       "p:indefinites-basic",
       "p:time-sequence-basic"
     ],
@@ -24525,14 +24544,17 @@
   },
   {
     "id": "u31-0968",
-    "es": "Entonces tomó Hernando la palabra.",
-    "en": "Then Hernando took the floor.",
+    "es": "Nadie decía nada. Entonces Hernando tomó la palabra.",
+    "en": "Nobody was saying anything. Then Hernando spoke up.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:entonces-bueno",
       "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:pret-vs-imperfect",
       "g:preterite-ar",
+      "l:decir",
       "l:palabra",
       "l:tomar"
     ],
@@ -24618,16 +24640,17 @@
   },
   {
     "id": "u31-0972",
-    "es": "Luego caminó Tomás hasta la plaza.",
-    "en": "Then Tomás walked to the square.",
+    "es": "Tomás cerró la caja y luego caminó hasta la plaza.",
+    "en": "Tomás closed the box and then walked to the square.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
+      "l:caja",
       "l:caminar",
+      "l:cerrar",
       "l:plaza",
-      "p:entonces-de-repente",
       "p:time-sequence-basic"
     ],
     "targets": [
@@ -24662,8 +24685,8 @@
   },
   {
     "id": "u31-0974",
-    "es": "Después llamó Vale desde la panadería.",
-    "en": "Then Vale called from the bakery.",
+    "es": "Primero llegó un mensaje, y después llamó Vale desde la panadería.",
+    "en": "First a message came, and then Vale called from the bakery.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24671,8 +24694,9 @@
       "g:preterite-ar",
       "l:después",
       "l:llamar",
+      "l:llegar",
+      "l:mensaje",
       "l:panadería",
-      "p:entonces-de-repente",
       "p:time-sequence-basic"
     ],
     "targets": [
@@ -24710,16 +24734,18 @@
   },
   {
     "id": "u31-0976",
-    "es": "Luego volvió la música.",
-    "en": "Then the music came back.",
+    "es": "La música paró un minuto y luego volvió.",
+    "en": "The music stopped for a minute and then came back.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:preterite-ar",
       "g:preterite-er-ir",
+      "l:minuto",
       "l:música",
+      "l:parar",
       "l:volver",
-      "p:entonces-de-repente",
       "p:time-sequence-basic"
     ],
     "targets": [
@@ -24732,18 +24758,18 @@
   },
   {
     "id": "u31-0977",
-    "es": "Después bajó el precio del pan.",
-    "en": "Then the price of bread went down.",
+    "es": "Subió el precio de la harina, y después subió el del pan.",
+    "en": "The price of flour went up, and then the price of bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ar",
-      "l:bajar",
+      "g:preterite-er-ir",
       "l:después",
+      "l:harina",
       "l:pan",
       "l:precio",
-      "p:entonces-de-repente",
+      "l:subir",
       "p:subir-subida",
       "p:time-sequence-basic"
     ],
@@ -24757,16 +24783,19 @@
   },
   {
     "id": "u31-0978",
-    "es": "Entonces llegó la respuesta del banco.",
-    "en": "Then the bank's reply arrived.",
+    "es": "Esperamos un mes. Entonces llegó la respuesta del banco.",
+    "en": "We waited a month. Then the bank's reply arrived.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:entonces-bueno",
       "g:gender-articles",
+      "g:present-ar",
       "g:preterite-ar",
       "l:banco",
+      "l:esperar",
       "l:llegar",
+      "l:mes",
       "l:respuesta",
       "p:entonces-de-repente"
     ],
@@ -24854,21 +24883,21 @@
   },
   {
     "id": "u31-0982",
-    "es": "Finalmente, Joaquín escribió una sola línea: perdón.",
-    "en": "Finally, Joaquín wrote a single line: sorry.",
+    "es": "Al final de la carta, Rosa escribió una sola palabra: perdón.",
+    "en": "At the end of the letter, Rosa wrote a single word: sorry.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:al-final",
       "c:perdon-disculpe",
       "g:adjective-agreement",
-      "g:adverbs-mente",
       "g:gender-articles",
       "g:preterite-er-ir",
+      "l:carta",
       "l:escribir",
-      "l:finalmente",
-      "l:línea",
-      "l:perdón",
-      "p:al-final-en-resumen"
+      "l:final",
+      "l:palabra",
+      "l:perdón"
     ],
     "targets": [
       "p:al-final-en-resumen"
@@ -24998,21 +25027,18 @@
   },
   {
     "id": "u31-0988",
-    "es": "Vale finalmente encontró el álbum debajo de la cama.",
-    "en": "Vale finally found the album under the bed.",
+    "es": "Vale finalmente encontró el álbum en el armario de Rosa.",
+    "en": "Vale finally found the album in Rosa's wardrobe.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adverbs-mente",
       "g:gender-articles",
       "g:preterite-ar",
-      "l:cama",
-      "l:debajo",
+      "l:armario",
       "l:encontrar",
       "l:finalmente",
-      "l:álbum",
-      "p:cerca-de",
-      "p:position-de"
+      "l:álbum"
     ],
     "targets": [
       "l:álbum"
@@ -25074,19 +25100,18 @@
   },
   {
     "id": "u31-0991",
-    "es": "Finalmente, la competencia cerró su café.",
+    "es": "Al final, la competencia cerró su café.",
     "en": "In the end, the competition closed its café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adverbs-mente",
+      "c:al-final",
       "g:gender-articles",
       "g:preterite-ar",
       "l:café",
       "l:cerrar",
       "l:competencia",
-      "l:finalmente",
-      "p:al-final-en-resumen",
+      "l:final",
       "p:possessives-basic"
     ],
     "targets": [
@@ -25100,18 +25125,21 @@
   },
   {
     "id": "u31-0992",
-    "es": "Finalmente la campaña de Altamira terminó.",
-    "en": "In the end, Altamira's campaign ended.",
+    "es": "Total, que la campaña de Altamira no sirvió para nada.",
+    "en": "So anyway, Altamira's campaign was no use at all.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adverbs-mente",
+      "c:para-nada",
+      "c:total-que",
       "g:gender-articles",
-      "g:preterite-ar",
+      "g:negation-words",
+      "g:preterite-spelling-stem",
       "l:campaña",
-      "l:finalmente",
-      "l:terminar",
-      "p:al-final-en-resumen"
+      "l:servir",
+      "l:total",
+      "p:no-servir-para-nada",
+      "p:servir-para"
     ],
     "targets": [
       "l:campaña",
@@ -25176,18 +25204,17 @@
   },
   {
     "id": "u31-0995",
-    "es": "Finalmente, mi tío logró emigrar.",
+    "es": "Al final, mi tío logró emigrar.",
     "en": "In the end, my uncle managed to emigrate.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adverbs-mente",
+      "c:al-final",
       "g:preterite-ar",
       "l:emigrar",
-      "l:finalmente",
+      "l:final",
       "l:lograr",
       "l:tío",
-      "p:al-final-en-resumen",
       "p:intentar-conseguir",
       "p:possessives-basic"
     ],
@@ -25202,18 +25229,17 @@
   },
   {
     "id": "u31-0996",
-    "es": "Finalmente se reconciliaron mis padres.",
+    "es": "Al final mis padres se reconciliaron.",
     "en": "In the end my parents made up.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adverbs-mente",
+      "c:al-final",
       "g:preterite-ar",
       "g:reflexive-routine",
-      "l:finalmente",
+      "l:final",
       "l:padres",
       "l:reconciliarse",
-      "p:al-final-en-resumen",
       "p:masculine-plural-mixed",
       "p:possessives-basic"
     ],
@@ -25353,21 +25379,26 @@
   },
   {
     "id": "u31-1002",
-    "es": "En fin, esa fue la historia de mi abuela.",
-    "en": "Anyway, that was my grandmother's story.",
+    "es": "En resumen, esa es la historia de mi abuela: amor, orgullo y cuarenta y siete cartas.",
+    "en": "In short, that's my grandmother's story: love, pride and forty-seven letters.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
+      "g:discourse-structure",
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
       "g:ser-identity",
       "l:abuela",
-      "l:fin",
+      "l:amor",
+      "l:carta",
       "l:historia",
+      "l:orgullo",
+      "l:resumen",
       "l:ser",
       "p:al-final-en-resumen",
-      "p:possessives-basic"
+      "p:para-terminar",
+      "p:possessives-basic",
+      "p:presenting-to-audience"
     ],
     "targets": [
       "p:al-final-en-resumen"
@@ -25402,22 +25433,25 @@
   },
   {
     "id": "u31-1004",
-    "es": "En fin, lo importante es que Rosa nos dejó el café.",
-    "en": "Anyway, the important thing is that Rosa left us the café.",
+    "es": "En resumen, Rosa nos dejó un café, un loro y una pregunta sin respuesta.",
+    "en": "In short, Rosa left us a café, a parrot and a question with no answer.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:es-que",
+      "g:discourse-structure",
       "g:gender-articles",
-      "g:lo-adjective",
       "g:preterite-ar",
       "l:café",
       "l:dejar",
-      "l:fin",
-      "l:importante",
-      "l:ser",
+      "l:loro",
+      "l:pregunta",
+      "l:respuesta",
+      "l:resumen",
       "p:al-final-en-resumen",
-      "p:me-te-nos-objects"
+      "p:con-sin",
+      "p:me-te-nos-objects",
+      "p:para-terminar",
+      "p:presenting-to-audience"
     ],
     "targets": [
       "p:al-final-en-resumen"
@@ -25523,18 +25557,18 @@
   },
   {
     "id": "u31-1009",
-    "es": "En fin, Hernando tenía razón desde el principio.",
-    "en": "Anyway, Hernando was right from the start.",
+    "es": "Total, que Hernando tenía razón desde el principio.",
+    "en": "So anyway, Hernando was right from the start.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:total-que",
       "g:gender-articles",
       "g:imperfect-states",
-      "l:fin",
       "l:principio",
       "l:razón",
       "l:tener",
-      "p:al-final-en-resumen",
+      "l:total",
       "p:tener-razon"
     ],
     "targets": [
@@ -25572,22 +25606,21 @@
   },
   {
     "id": "u31-1011",
-    "es": "¿Y qué pasó con la casa?\nFinalmente la vendieron.",
+    "es": "¿Y qué pasó con la casa?\nAl final la vendieron.",
     "en": "And what happened to the house?\nIn the end they sold it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:al-final",
       "c:y-que-paso",
-      "g:adverbs-mente",
       "g:direct-objects",
       "g:gender-articles",
       "g:preterite-er-ir",
       "l:casa",
-      "l:finalmente",
+      "l:final",
       "l:pasar",
       "l:qué",
-      "l:vender",
-      "p:al-final-en-resumen"
+      "l:vender"
     ],
     "targets": [
       "p:al-final-en-resumen"
@@ -25624,18 +25657,23 @@
   },
   {
     "id": "u31-1013",
-    "es": "¿Quedó todo claro?\nEn fin, más o menos.",
-    "en": "Is everything clear?\nAnyway, more or less.",
+    "es": "¿Quedó todo claro?\nMás o menos. En resumen: no vendemos.",
+    "en": "Is everything clear?\nMore or less. In short: we're not selling.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:claro-listo",
       "c:mas-o-menos",
+      "g:discourse-structure",
+      "g:present-er-ir",
       "g:preterite-ar",
       "l:claro",
-      "l:fin",
       "l:quedar",
+      "l:resumen",
+      "l:vender",
       "p:al-final-en-resumen",
+      "p:para-terminar",
+      "p:presenting-to-audience",
       "p:quedar-participio"
     ],
     "targets": [
@@ -25674,20 +25712,20 @@
   },
   {
     "id": "u31-1015",
-    "es": "¿Y entonces?\nFinalmente, Rosa cerró la puerta.",
-    "en": "And then?\nIn the end, Rosa closed the door.",
+    "es": "¿Y entonces?\nTotal, que Rosa le cerró la puerta.",
+    "en": "And then?\nSo anyway, Rosa shut the door on him.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:entonces-bueno",
+      "c:total-que",
       "c:y-que-paso",
-      "g:adverbs-mente",
       "g:gender-articles",
+      "g:indirect-objects",
       "g:preterite-ar",
       "l:cerrar",
-      "l:finalmente",
       "l:puerta",
-      "p:al-final-en-resumen"
+      "l:total"
     ],
     "targets": [
       "p:al-final-en-resumen"
@@ -25754,8 +25792,8 @@
   },
   {
     "id": "u31-1018",
-    "es": "Mariana contó que se había leído las cartas en una noche.",
-    "en": "Mariana said she had read the letters in one night.",
+    "es": "Vale contó que se había leído las cartas en una noche.",
+    "en": "Vale said she had read the letters in one night.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -25811,16 +25849,16 @@
   },
   {
     "id": "u31-1020",
-    "es": "Joaquín escribió que extrañaría a su hermana.",
-    "en": "Joaquín wrote that he would miss his sister.",
+    "es": "Joaquín dijo que extrañaría a su hermana.",
+    "en": "Joaquín said he would miss his sister.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
-      "g:preterite-er-ir",
+      "g:preterite-irregular-strong",
       "g:reported-backshift",
       "g:that-clauses",
-      "l:escribir",
+      "l:decir",
       "l:extrañar",
       "l:hermana",
       "p:extranar",
@@ -26068,19 +26106,19 @@
   },
   {
     "id": "u31-1029",
-    "es": "Joaquín escribió que le había costado mucho irse.",
-    "en": "Joaquín wrote that it had been very hard for him to leave.",
+    "es": "Hernando contó que a Joaquín le había costado mucho irse.",
+    "en": "Hernando said it had been very hard for Joaquín to leave.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gustar-full",
       "g:pluperfect",
-      "g:preterite-er-ir",
+      "g:preterite-ar",
       "g:reflexive-routine",
       "g:reported-backshift",
       "g:that-clauses",
+      "l:contar",
       "l:costar",
-      "l:escribir",
       "l:irse",
       "p:quantifiers-basic"
     ],
@@ -26300,8 +26338,8 @@
   },
   {
     "id": "u31-1037",
-    "es": "Rosa dijo que nunca se había enamorado de nadie más.",
-    "en": "Rosa said she had never fallen in love with anyone else.",
+    "es": "Mi tía dijo que nunca se había enamorado de nadie más.",
+    "en": "My aunt said she had never fallen in love with anyone else.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26312,8 +26350,10 @@
       "g:that-clauses",
       "l:decir",
       "l:enamorarse",
+      "l:tía",
       "p:enamorarse-de",
-      "p:frequency-scale"
+      "p:frequency-scale",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:pluperfect",
@@ -26442,19 +26482,19 @@
   },
   {
     "id": "u31-1042",
-    "es": "Tomás dijo que había llevado la caja a casa de Vale.",
+    "es": "Tomás contó que había llevado la caja a casa de Vale.",
     "en": "Tomás said he had taken the box to Vale's house.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:pluperfect",
-      "g:preterite-irregular-strong",
+      "g:preterite-ar",
       "g:reported-backshift",
       "g:that-clauses",
       "l:caja",
       "l:casa",
-      "l:decir",
+      "l:contar",
       "l:llevar"
     ],
     "targets": [
@@ -26709,22 +26749,22 @@
   },
   {
     "id": "u31-1051",
-    "es": "Vale iba a descansar, pero se puso a hacer pan.",
-    "en": "Vale was going to rest, but she started making bread.",
+    "es": "Vale se sentó a descansar, pero a los cinco minutos se puso a hacer pan.",
+    "en": "Vale sat down to rest, but five minutes later she started making bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:imperfect-habitual",
-      "g:ir-a-plans",
-      "g:pret-vs-imperfect",
+      "g:gender-articles",
+      "g:preterite-ar",
       "g:preterite-irregular-strong",
+      "g:reflexive-routine",
       "g:verbs-of-change",
       "l:descansar",
       "l:hacer",
-      "l:ir",
+      "l:minuto",
       "l:pan",
       "l:ponerse",
-      "p:pensaba-pero",
+      "l:sentarse",
       "p:ponerse-a",
       "p:ponerse-a-inf"
     ],
@@ -26739,25 +26779,25 @@
   },
   {
     "id": "u31-1052",
-    "es": "Mariana iba a dormir, pero se puso a revisar sus notas.",
-    "en": "Mariana was going to sleep, but she started going over her notes.",
+    "es": "Mariana se acostó a las diez, pero a la medianoche se puso a revisar sus notas.",
+    "en": "Mariana went to bed at ten, but at midnight she started going over her notes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:imperfect-habitual",
-      "g:ir-a-plans",
-      "g:pret-vs-imperfect",
+      "g:gender-articles",
+      "g:preterite-ar",
       "g:preterite-irregular-strong",
+      "g:reflexive-routine",
       "g:verbs-of-change",
-      "l:dormir",
-      "l:ir",
+      "l:acostarse",
+      "l:medianoche",
       "l:nota",
       "l:ponerse",
       "l:revisar",
-      "p:pensaba-pero",
       "p:ponerse-a",
       "p:ponerse-a-inf",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:telling-time"
     ],
     "targets": [
       "p:pensaba-pero",
@@ -26803,25 +26843,22 @@
   },
   {
     "id": "u31-1054",
-    "es": "Iba a pagar la cuenta, pero Hernando se puso a discutir con el mesero.",
-    "en": "I was going to pay the bill, but Hernando started arguing with the waiter.",
+    "es": "Cuando llegó la cuenta, Hernando se puso a discutir con el mesero.",
+    "en": "When the bill came, Hernando started arguing with the waiter.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:la-cuenta",
       "g:gender-articles",
-      "g:imperfect-habitual",
-      "g:ir-a-plans",
-      "g:pret-vs-imperfect",
+      "g:preterite-ar",
       "g:preterite-irregular-strong",
       "g:verbs-of-change",
       "l:cuenta",
       "l:discutir",
-      "l:ir",
+      "l:llegar",
       "l:mesero",
-      "l:pagar",
       "l:ponerse",
-      "p:pensaba-pero",
+      "p:cuando-basic",
       "p:ponerse-a",
       "p:ponerse-a-inf"
     ],
@@ -26871,25 +26908,20 @@
   },
   {
     "id": "u31-1056",
-    "es": "Iba a preguntarle por su hermano, pero ella se puso a llorar.",
-    "en": "I was going to ask her about her brother, but she started to cry.",
+    "es": "Le pregunté por su hermano y ella se puso a llorar.",
+    "en": "I asked her about her brother and she started to cry.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:imperfect-habitual",
       "g:indirect-objects",
-      "g:ir-a-plans",
-      "g:object-pronoun-position",
       "g:por-para-1",
-      "g:pret-vs-imperfect",
+      "g:preterite-ar",
       "g:preterite-irregular-strong",
       "g:verbs-of-change",
       "l:hermano",
-      "l:ir",
       "l:llorar",
       "l:ponerse",
       "l:preguntar",
-      "p:pensaba-pero",
       "p:ponerse-a",
       "p:ponerse-a-inf",
       "p:possessives-basic",
@@ -26906,26 +26938,21 @@
   },
   {
     "id": "u31-1057",
-    "es": "Íbamos a hablar de Altamira, pero los niños se pusieron a gritar.",
-    "en": "We were going to talk about Altamira, but the kids started shouting.",
+    "es": "En medio de la reunión, los niños se pusieron a gritar.",
+    "en": "In the middle of the meeting, the kids started shouting.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:imperfect-habitual",
-      "g:ir-a-plans",
-      "g:pret-vs-imperfect",
       "g:preterite-irregular-strong",
       "g:verbs-of-change",
       "l:gritar",
-      "l:hablar",
-      "l:ir",
       "l:niño",
       "l:ponerse",
-      "p:pensaba-pero",
+      "l:reunión",
       "p:ponerse-a",
       "p:ponerse-a-inf",
-      "p:presentation-frame"
+      "p:posicion-precisa"
     ],
     "targets": [
       "p:pensaba-pero",
@@ -26938,24 +26965,22 @@
   },
   {
     "id": "u31-1058",
-    "es": "Iba a salir temprano, pero me puse a ordenar los papeles de Rosa.",
-    "en": "I was going to leave early, but I started sorting Rosa's papers.",
+    "es": "El domingo me puse a ordenar los papeles de Rosa y encontré una foto.",
+    "en": "On Sunday I started sorting Rosa's papers and found a photo.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:imperfect-habitual",
-      "g:ir-a-plans",
-      "g:pret-vs-imperfect",
+      "g:preterite-ar",
       "g:preterite-irregular-strong",
       "g:verbs-of-change",
-      "l:ir",
+      "l:domingo",
+      "l:encontrar",
+      "l:foto",
       "l:ordenar",
       "l:papel",
       "l:ponerse",
-      "l:salir",
-      "l:temprano",
-      "p:pensaba-pero",
+      "p:days-el-lunes",
       "p:ponerse-a",
       "p:ponerse-a-inf"
     ],
@@ -27038,23 +27063,19 @@
   },
   {
     "id": "u31-1061",
-    "es": "Vale iba a abrir a las siete, pero se puso a buscar las llaves.",
-    "en": "Vale was going to open at seven, but she started looking for the keys.",
+    "es": "A las siete, Vale se puso a buscar las llaves por todo el café.",
+    "en": "At seven, Vale started looking for the keys all over the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:imperfect-habitual",
-      "g:ir-a-plans",
-      "g:pret-vs-imperfect",
+      "g:por-para-1",
       "g:preterite-irregular-strong",
       "g:verbs-of-change",
-      "l:abrir",
       "l:buscar",
-      "l:ir",
+      "l:café",
       "l:llave",
       "l:ponerse",
-      "p:pensaba-pero",
       "p:ponerse-a",
       "p:ponerse-a-inf",
       "p:telling-time"
@@ -27070,26 +27091,21 @@
   },
   {
     "id": "u31-1062",
-    "es": "Mis tíos iban a viajar, pero se pusieron a discutir por el dinero.",
-    "en": "My aunt and uncle were going to travel, but they started arguing about money.",
+    "es": "En el aeropuerto, mis tíos se pusieron a discutir por el dinero.",
+    "en": "At the airport, my aunt and uncle started arguing about money.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:imperfect-habitual",
-      "g:ir-a-plans",
       "g:por-para-1",
-      "g:pret-vs-imperfect",
       "g:preterite-irregular-strong",
       "g:verbs-of-change",
+      "l:aeropuerto",
       "l:dinero",
       "l:discutir",
-      "l:ir",
       "l:ponerse",
       "l:tío",
-      "l:viajar",
       "p:masculine-plural-mixed",
-      "p:pensaba-pero",
       "p:ponerse-a",
       "p:ponerse-a-inf",
       "p:possessives-basic"
@@ -27141,24 +27157,21 @@
   },
   {
     "id": "u31-1064",
-    "es": "Íbamos a empezar la reunión, pero se puso a sonar el teléfono.",
-    "en": "We were going to start the meeting, but the phone started ringing.",
+    "es": "Apenas empezó la reunión, el teléfono se puso a sonar.",
+    "en": "As soon as the meeting started, the phone started ringing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:imperfect-habitual",
-      "g:ir-a-plans",
-      "g:pret-vs-imperfect",
+      "g:preterite-ar",
       "g:preterite-irregular-strong",
       "g:verbs-of-change",
+      "l:apenas",
       "l:empezar",
-      "l:ir",
       "l:ponerse",
       "l:reunión",
       "l:sonar",
       "l:teléfono",
-      "p:pensaba-pero",
       "p:ponerse-a",
       "p:ponerse-a-inf"
     ],
@@ -27200,19 +27213,19 @@
   },
   {
     "id": "u31-1066",
-    "es": "Iba a comprar pan, pero encontré cerrada la panadería.",
-    "en": "I was going to buy bread, but I found the bakery closed.",
+    "es": "Iba a comprar pan, pero la panadería estaba cerrada.",
+    "en": "I was going to buy bread, but the bakery was closed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:estar-participle",
       "g:gender-articles",
       "g:imperfect-habitual",
+      "g:imperfect-states",
       "g:ir-a-plans",
-      "g:pret-vs-imperfect",
-      "g:preterite-ar",
       "l:cerrar",
       "l:comprar",
-      "l:encontrar",
+      "l:estar",
       "l:ir",
       "l:pan",
       "l:panadería",
@@ -27872,7 +27885,7 @@
   {
     "id": "u31-1092",
     "es": "Nos costó dos años pagar la deuda.",
-    "en": "It took us two years of effort to pay off the debt.",
+    "en": "It took us two years to pay off the debt.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28573,17 +28586,19 @@
   },
   {
     "id": "u31-1120",
-    "es": "Huele rico en el café a las seis de la mañana.",
-    "en": "It smells great in the café at six in the morning.",
+    "es": "A las seis de la mañana, el café huele a pan caliente.",
+    "en": "At six in the morning, the café smells of warm bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:yo-irregular",
       "l:café",
+      "l:caliente",
       "l:mañana",
       "l:oler",
-      "l:rico",
+      "l:pan",
+      "p:le-falta-sal",
       "p:oler-a-saber-a",
       "p:por-la-manana",
       "p:telling-time"
@@ -28624,22 +28639,21 @@
   },
   {
     "id": "u31-1122",
-    "es": "Esta cocina huele raro; creo que hay gas.",
-    "en": "This kitchen smells odd; I think there's gas.",
+    "es": "Esta cocina huele a gas; abre la ventana.",
+    "en": "This kitchen smells of gas; open the window. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:creo-que",
-      "c:hay",
-      "g:hay-vs-esta",
-      "g:that-clauses",
+      "g:gender-articles",
+      "g:present-er-ir",
       "g:yo-irregular",
+      "l:abrir",
       "l:cocina",
-      "l:creer",
       "l:gas",
       "l:oler",
-      "l:raro",
+      "l:ventana",
       "p:demonstratives-basic",
+      "p:le-falta-sal",
       "p:oler-a-saber-a"
     ],
     "targets": [
@@ -28652,18 +28666,19 @@
   },
   {
     "id": "u31-1123",
-    "es": "La casa olía rico los domingos.",
-    "en": "The house smelled great on Sundays.",
+    "es": "El taxi de Hernando siempre olía a tinto.",
+    "en": "Hernando's taxi always smelled of coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-habitual",
-      "l:casa",
-      "l:domingo",
       "l:oler",
-      "l:rico",
-      "p:days-el-lunes",
+      "l:siempre",
+      "l:taxi",
+      "l:tinto",
+      "p:frequency-scale",
+      "p:le-falta-sal",
       "p:oler-a-saber-a"
     ],
     "targets": [
@@ -28956,20 +28971,18 @@
   },
   {
     "id": "u31-1135",
-    "es": "Los recuerdos de la infancia siempre saben rico.",
-    "en": "Childhood memories always taste good.",
+    "es": "Este pan sabe a mi infancia.",
+    "en": "This bread tastes of my childhood.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:present-er-ir",
       "l:infancia",
-      "l:recuerdo",
-      "l:rico",
+      "l:pan",
       "l:saber",
-      "l:siempre",
-      "p:frequency-scale",
-      "p:oler-a-saber-a"
+      "p:demonstratives-basic",
+      "p:le-falta-sal",
+      "p:possessives-basic"
     ],
     "targets": [
       "p:oler-a-saber-a"
@@ -28981,22 +28994,20 @@
   },
   {
     "id": "u31-1136",
-    "es": "Las cartas viejas huelen raro, pero no importa.",
-    "en": "Old letters smell odd, but it doesn't matter.",
+    "es": "Las cartas de Rosa todavía huelen a su perfume.",
+    "en": "Rosa's letters still smell of her perfume.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:gender-articles",
-      "g:present-ar",
       "g:yo-irregular",
       "l:carta",
-      "l:importar",
       "l:oler",
-      "l:raro",
-      "l:viejo",
+      "l:perfume",
+      "p:le-falta-sal",
       "p:oler-a-saber-a",
-      "p:viejo-antiguo-mayor"
+      "p:possessives-basic",
+      "p:ya-todavia-basic"
     ],
     "targets": [
       "p:oler-a-saber-a"
@@ -31265,23 +31276,21 @@
   },
   {
     "id": "u31-1224",
-    "es": "Tengo miedo de que nadie me crea.",
-    "en": "I'm afraid nobody will believe me.",
+    "es": "Me da miedo que nadie me crea.",
+    "en": "It scares me that nobody might believe me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tengo",
+      "c:me-regala",
       "g:subj-emotion",
       "g:subj-wanting",
       "g:that-clauses",
-      "g:yo-irregular",
       "l:creer",
+      "l:dar",
       "l:miedo",
-      "l:tener",
+      "p:me-da-miedo",
       "p:me-da-miedo-que",
       "p:me-te-nos-objects",
-      "p:miedo-a",
-      "p:tener-hambre",
       "p:tengo-miedo-de-que"
     ],
     "targets": [
@@ -31381,30 +31390,22 @@
   },
   {
     "id": "u31-1228",
-    "es": "¿Qué te pasa?\nTengo miedo a que Joaquín no quiera verme.",
-    "en": "What's wrong?\nI'm afraid Joaquín won't want to see me.",
+    "es": "¿Qué te pasa?\nMe dan miedo las tormentas.",
+    "en": "What's wrong?\nStorms scare me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:te-pasa-algo",
-      "c:tengo",
-      "g:object-pronoun-position",
-      "g:relatives-prepositions",
-      "g:subj-relative",
-      "g:subj-wanting",
-      "g:verb-infinitive",
-      "g:yo-irregular",
+      "g:gender-articles",
+      "g:present-ar",
+      "l:dar",
       "l:miedo",
       "l:pasar",
-      "l:querer",
       "l:qué",
-      "l:tener",
-      "l:ver",
+      "l:tormenta",
+      "p:me-da-miedo",
       "p:me-da-miedo-que",
-      "p:me-te-nos-objects",
-      "p:miedo-a",
-      "p:tener-hambre",
-      "p:tengo-miedo-de-que"
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "p:miedo-a"
@@ -31853,11 +31854,12 @@
   },
   {
     "id": "u31-1247",
-    "es": "Mi abuelo murió joven; mi abuela se casó otra vez.",
-    "en": "My grandfather died young; my grandmother married again.",
+    "es": "El abuelo de Mariana murió joven, y su abuela se casó otra vez.",
+    "en": "Mariana's grandfather died young, and her grandmother married again.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:preterite-ar",
       "g:preterite-spelling-stem",
       "g:reflexive-routine",
@@ -32176,20 +32178,22 @@
   },
   {
     "id": "u31-1261",
-    "es": "¿Joaquín volvió alguna vez?\nCreo que sí, pero una sola vez.",
-    "en": "Did Joaquín ever come back?\nI think so, but only once.",
+    "es": "¿Joaquín volvió alguna vez?\nCreo que no. Nadie lo volvió a ver.",
+    "en": "Did Joaquín ever come back?\nI don't think so. Nobody saw him again.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:a-ver",
       "c:creo-que",
-      "g:adjective-agreement",
-      "g:gender-articles",
+      "g:direct-objects",
       "g:indefinites",
       "g:preterite-er-ir",
       "g:that-clauses",
       "l:creer",
+      "l:ver",
       "l:vez",
-      "l:volver"
+      "l:volver",
+      "p:volver-a-inf"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -32199,17 +32203,20 @@
   },
   {
     "id": "u31-1262",
-    "es": "¿Rosa le escribió?\nCreo que no.",
-    "en": "Did Rosa write to him?\nI don't think so.",
+    "es": "¿Rosa le mandó alguna carta?\nCreo que no, ni una.",
+    "en": "Did Rosa send him any letters?\nI don't think so, not one.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:creo-que",
+      "g:gender-articles",
+      "g:indefinites",
       "g:indirect-objects",
-      "g:preterite-er-ir",
+      "g:preterite-ar",
       "g:that-clauses",
+      "l:carta",
       "l:creer",
-      "l:escribir"
+      "l:mandar"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -32511,20 +32518,21 @@
   },
   {
     "id": "u31-1275",
-    "es": "Mariana dijo que había encontrado los papeles del edificio.",
-    "en": "Mariana said she had found the building's papers.",
+    "es": "Mariana nos escribió que había encontrado los papeles del edificio.",
+    "en": "Mariana wrote to us that she had found the building's papers.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:pluperfect",
-      "g:preterite-irregular-strong",
+      "g:preterite-er-ir",
       "g:reported-backshift",
       "g:that-clauses",
-      "l:decir",
       "l:edificio",
       "l:encontrar",
-      "l:papel"
+      "l:escribir",
+      "l:papel",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:pluperfect",
@@ -32537,8 +32545,8 @@
   },
   {
     "id": "u31-1276",
-    "es": "Hernando dijo que Joaquín había llamado una vez desde Caracas.",
-    "en": "Hernando said that Joaquín had called once from Caracas.",
+    "es": "Hernando dijo que Joaquín nunca había llamado, ni una vez.",
+    "en": "Hernando said Joaquín had never called, not once.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32549,7 +32557,9 @@
       "g:that-clauses",
       "l:decir",
       "l:llamar",
-      "l:vez"
+      "l:vez",
+      "p:frequency-scale",
+      "p:ni-emphatic"
     ],
     "targets": [
       "g:pluperfect",
@@ -32860,7 +32870,7 @@
   {
     "id": "u31-1288",
     "es": "A mi tía le costó años hablar de su juventud.",
-    "en": "It took my aunt years of effort to talk about her youth.",
+    "en": "It took my aunt years to be able to talk about her youth.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -33738,25 +33748,24 @@
   },
   {
     "id": "u31-1326",
-    "es": "¿Tienes miedo de que Joaquín no quiera hablar?",
-    "en": "Are you afraid Joaquín won't want to talk?",
+    "es": "¿Te da miedo lo que vas a encontrar en las cartas?",
+    "en": "Are you scared of what you're going to find in the letters? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
-      "g:stem-boot",
-      "g:subj-emotion",
-      "g:subj-wanting",
-      "g:that-clauses",
-      "g:verb-infinitive",
-      "l:hablar",
+      "c:voy-vas",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:present-ar",
+      "g:relatives-donde-lo-que",
+      "l:carta",
+      "l:dar",
+      "l:encontrar",
+      "l:ir",
       "l:miedo",
-      "l:querer",
-      "l:tener",
+      "p:me-da-miedo",
       "p:me-da-miedo-que",
-      "p:miedo-a",
-      "p:tener-hambre",
-      "p:tengo-miedo-de-que"
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "p:miedo-a"
@@ -34240,21 +34249,22 @@
   },
   {
     "id": "u31-1347",
-    "es": "¿Ibas a venir, pero te quedaste en casa?",
-    "en": "Were you going to come, but stayed home?",
+    "es": "Ibas a venir, ¿no? ¿Qué pasó?",
+    "en": "You were going to come, weren't you? What happened? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:imperfect-habitual",
       "g:ir-a-plans",
       "g:pret-vs-imperfect",
       "g:preterite-ar",
-      "g:reflexive-routine",
-      "l:casa",
+      "g:questions",
       "l:ir",
-      "l:quedarse",
+      "l:pasar",
+      "l:qué",
       "l:venir",
-      "p:pensaba-pero"
+      "p:ocurrir-producirse"
     ],
     "targets": [
       "p:pensaba-pero"
@@ -34287,23 +34297,17 @@
   },
   {
     "id": "u31-1349",
-    "es": "¿Iban a cerrar el café, pero cambiaron de idea?",
-    "en": "Were you all going to close the café, but changed your mind?",
+    "es": "¿No iban a cerrar temprano hoy?",
+    "en": "Weren't you all going to close early today?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:imperfect-habitual",
       "g:ir-a-plans",
-      "g:pret-vs-imperfect",
-      "g:preterite-ar",
-      "l:café",
-      "l:cambiar",
       "l:cerrar",
-      "l:idea",
+      "l:hoy",
       "l:ir",
-      "p:cambiar-de-por",
-      "p:pensaba-pero"
+      "l:temprano"
     ],
     "targets": [
       "p:pensaba-pero"
@@ -34817,16 +34821,17 @@
   },
   {
     "id": "u31-1371",
-    "es": "¿Finalmente hablaste con Joaquín?",
-    "en": "Did you finally talk to Joaquín?",
+    "es": "¿Al final hablaste con el abogado?",
+    "en": "Did you end up talking to the lawyer? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adverbs-mente",
+      "c:al-final",
+      "g:gender-articles",
       "g:preterite-ar",
-      "l:finalmente",
-      "l:hablar",
-      "p:al-final-en-resumen"
+      "l:abogado",
+      "l:final",
+      "l:hablar"
     ],
     "targets": [
       "p:al-final-en-resumen"

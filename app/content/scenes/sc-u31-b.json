@@ -3,25 +3,24 @@
   "unit": "u31",
   "title": "What Hernando said",
   "spare": false,
-  "brief": "You're Tomás. Vale saw you talking with Hernando for half an hour, and she wants to know why. Tell her what he said, using the past: what he told you is now said in the past too. She's your friend, so use tú.",
+  "brief": "You're Tomás. Jhon Fredy saw you talking with Hernando for half an hour, and he missed the night you all read the letters. Tell him what Hernando said: when you report it, the verbs shift back into the past. He's your friend, so use tú.",
   "turns": [
     {
       "id": "t1",
-      "npc": "Vale: Oye, te vi con Hernando media hora. ¿Qué te dijo?",
-      "npcEn": "Vale: Hey, I saw you with Hernando for half an hour. What did he tell you?",
+      "npc": "Jhon Fredy: Oye, te vi con Hernando media hora. ¿Qué te dijo?",
+      "npcEn": "Jhon Fredy: Hey, I saw you with Hernando for half an hour. What did he tell you?",
       "intent": "Say he told you that Rosa wrote to Joaquín every year.",
       "accept": [
         "No te lo vas a creer. Me dijo que Rosa le escribía a Joaquín todos los años.",
-        "Hernando me dijo que Rosa le escribía una carta a Joaquín todos los años.",
+        "Hernando me dijo que Rosa le había escrito a Joaquín todos los años.",
         "Me contó que Rosa le escribía todos los años a Joaquín."
       ],
       "require": [
         {
-          "type": "verbForm",
-          "inf": "escribir",
-          "tense": "imperfecto",
-          "person": "él/ella",
-          "label": "what he said, now in the past: escribía"
+          "type": "regex",
+          "pattern": "\\b(escribía|había escrito)\\b",
+          "flags": "i",
+          "label": "what he said, now in the past: escribía or había escrito"
         }
       ],
       "focus": "g:reported-backshift",
@@ -29,13 +28,13 @@
     },
     {
       "id": "t2",
-      "npc": "Vale: ¿Todos los años? ¿Y se las mandaba?",
-      "npcEn": "Vale: Every year? And did she send them to him?",
+      "npc": "Jhon Fredy: ¿Todos los años? ¿Y se las mandaba?",
+      "npcEn": "Jhon Fredy: Every year? And did she send them to him?",
       "intent": "Say no: he told you she never sent them.",
       "accept": [
         "No. Me dijo que nunca se las mandaba.",
         "Hernando me dijo que no, que ella nunca las mandaba.",
-        "No, me contó que nunca mandó ninguna."
+        "No. Me contó que nunca había mandado ninguna."
       ],
       "require": [
         {
@@ -54,21 +53,20 @@
     },
     {
       "id": "t3",
-      "npc": "Vale: Ay, Rosa. ¿Y por qué no las mandaba?",
-      "npcEn": "Vale: Oh, Rosa. And why didn't she send them?",
+      "npc": "Jhon Fredy: Uy. ¿Y por qué no las mandaba?",
+      "npcEn": "Jhon Fredy: Wow. And why didn't she send them?",
       "intent": "Say you asked him the same thing, and he said she was afraid.",
       "accept": [
         "Le pregunté lo mismo. Me dijo que tenía miedo.",
         "Le pregunté lo mismo, y me dijo que Rosa tenía mucho miedo.",
-        "Hernando dijo que ella tenía miedo de la respuesta."
+        "Yo le pregunté lo mismo. Dijo que a ella le daba miedo la respuesta."
       ],
       "require": [
         {
-          "type": "verbForm",
-          "inf": "tener",
-          "tense": "imperfecto",
-          "person": "él/ella",
-          "label": "what she felt, in the past: tenía miedo"
+          "type": "regex",
+          "pattern": "\\b(tenía|daba) (mucho )?miedo",
+          "flags": "i",
+          "label": "what she felt, in the past: tenía miedo or le daba miedo"
         }
       ],
       "focus": "p:miedo-a",
@@ -76,12 +74,12 @@
     },
     {
       "id": "t4",
-      "npc": "Vale: Qué raro. Ayer en la cocina me dijo que Rosa ya no pensaba en Joaquín.",
-      "npcEn": "Vale: How strange. Yesterday in the kitchen he told me that Rosa no longer thought about Joaquín.",
-      "intent": "Say that's odd, because he told you she missed him a lot.",
+      "npc": "Jhon Fredy: Qué raro. Ayer en la cocina me dijo que Rosa ya no pensaba en Joaquín.",
+      "npcEn": "Jhon Fredy: That's strange. Yesterday in the kitchen he told me that Rosa no longer thought about Joaquín.",
+      "intent": "Say that's not what he told you: he told you she missed him a lot.",
       "accept": [
         "Pues a mí me dijo que ella lo extrañaba mucho.",
-        "Qué raro, porque a mí me dijo que Rosa lo extrañaba muchísimo.",
+        "No, a mí me dijo que Rosa lo extrañaba muchísimo.",
         "A mí me contó que lo extrañaba todos los días."
       ],
       "require": [
@@ -98,13 +96,13 @@
     },
     {
       "id": "t5",
-      "npc": "Vale: Entonces hay que leer todas las cartas. Yo traigo el café.",
-      "npcEn": "Vale: Then we have to read all the letters. I'll bring the coffee.",
-      "intent": "Say yes, thanks, and that tonight the two of you will start reading them.",
+      "npc": "Jhon Fredy: Entonces yo quiero leer esas cartas. Yo traigo el pan.",
+      "npcEn": "Jhon Fredy: Then I want to read those letters. I'll bring the bread.",
+      "intent": "Say yes, thanks, and that tonight the two of you will get down to reading them.",
       "accept": [
         "Sí, gracias. Esta noche nos ponemos a leerlas juntos.",
         "Perfecto. Esta noche nos ponemos a leer las cartas.",
-        "Gracias, Vale. Nos ponemos a leerlas después de cerrar."
+        "Gracias. Nos ponemos a leerlas después de cerrar."
       ],
       "require": [
         {
@@ -122,16 +120,15 @@
     "c:ayer-anoche",
     "c:entonces-bueno",
     "c:gracias-de-nada",
-    "c:hay",
-    "c:hay-que",
+    "c:hago-salgo-vengo",
     "c:me-conto-que",
     "c:no-te-lo-vas-a-creer",
     "c:oiga-oye",
-    "c:porque",
     "c:pues",
+    "c:quiero",
     "c:voy-vas",
     "c:ya-no",
-    "g:cause-result",
+    "g:demonstratives",
     "g:direct-objects",
     "g:double-pronouns",
     "g:gender-articles",
@@ -143,6 +140,7 @@
     "g:le-doubling",
     "g:negation-words",
     "g:object-pronoun-position",
+    "g:pluperfect",
     "g:prep-infinitive",
     "g:prep-pronouns",
     "g:present-er-ir",
@@ -151,7 +149,9 @@
     "g:preterite-er-ir",
     "g:preterite-irregular-strong",
     "g:questions",
+    "g:reported-backshift",
     "g:reported-past-basic",
+    "g:stem-boot",
     "g:superlatives",
     "g:that-clauses",
     "g:verb-infinitive",
@@ -159,12 +159,12 @@
     "g:yo-irregular",
     "l:ayer",
     "l:año",
-    "l:café",
     "l:carta",
     "l:cerrar",
     "l:cocina",
     "l:contar",
     "l:creer",
+    "l:dar",
     "l:decir",
     "l:después",
     "l:día",
@@ -178,10 +178,12 @@
     "l:miedo",
     "l:noche",
     "l:oír",
+    "l:pan",
     "l:pensar",
     "l:perfecto",
     "l:ponerse",
     "l:preguntar",
+    "l:querer",
     "l:qué",
     "l:raro",
     "l:respuesta",
@@ -191,7 +193,7 @@
     "p:demonstratives-basic",
     "p:extranar",
     "p:frequency-scale",
-    "p:llevar-traer",
+    "p:me-da-miedo",
     "p:me-da-miedo-que",
     "p:me-te-nos-objects",
     "p:pensar-en",
