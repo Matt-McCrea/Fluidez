@@ -1,0 +1,43 @@
+{
+  "node": "p:imperfecto-sorpresa",
+  "hook": {
+    "line": "You walk into the café and find your friend sitting there, when you were sure he had an exam. English says \"Wait, don't you have an exam?\" Spanish asks it in the past tense, and the tone is part of the message.",
+    "es": "¿Tú no tenías un examen mañana?",
+    "en": "Didn't you have an exam tomorrow?"
+  },
+  "examples": [
+    { "es": "¿Tú no tenías un examen mañana?", "en": "Didn't you have an exam tomorrow? (to a friend)" },
+    { "es": "¿Pero tú no te habías ido?", "en": "But hadn't you left? (to a friend)" },
+    { "es": "¿Usted no trabajaba hoy?", "en": "Weren't you working today? (to a stranger, formal)" },
+    { "es": "¿Vale no venía hoy?", "en": "Wasn't Vale coming today?" },
+    { "es": "¿Ustedes no vivían en Medellín?", "en": "Didn't you all live in Medellín?" },
+    { "es": "¿Tú no eras vegetariano?", "en": "Weren't you a vegetarian? (to a man, a friend)" }
+  ],
+  "rule": "When something does not match what you had understood, Spanish asks about it in the imperfect, even if the thing is about today or tomorrow. The past tense says \"this is what I had in my head\". It is not about time.\n\n*¿Tú no tenías un examen mañana?*\n\nIt shows surprise, and often a mild reproach: the real message is \"so why aren't you studying?\" Don't just answer *sí, lo tenía*. Answer the point: *Sí, pero ya estudié.*\n\nThe usual frame: *¿(Pero) tú no + imperfect…?*",
+  "smallPrint": "Teachers call this the imperfect of surprise: the imperfect used for a fact you believed and now doubt.",
+  "readAndPick": [
+    { "es": "¿Tú no tenías un examen mañana?", "options": ["Wait, don't you have an exam tomorrow? I thought you did.", "Did you not have an exam yesterday?", "You won't have an exam tomorrow."], "answer": 0 },
+    { "es": "¿Pero tú no te habías ido?", "options": ["But won't you leave?", "But hadn't you left? (and yet you are here)", "But didn't you stay?"], "answer": 1 },
+    { "es": "¿Vale no venía hoy?", "options": ["Isn't Vale coming tomorrow?", "Did Vale come yesterday?", "Wasn't Vale supposed to come today?"], "answer": 2 },
+    { "es": "¿Ustedes no vivían en Medellín?", "options": ["Didn't you all live in Medellín? I thought so.", "Don't you all want to live in Medellín?", "Will you all live in Medellín?"], "answer": 0 },
+    { "es": "¿Tú no eras vegetariano?", "options": ["Are you going to be a vegetarian?", "Weren't you a vegetarian? I thought you were.", "You were never a vegetarian."], "answer": 1 },
+    { "es": "¿Usted no trabajaba hoy?", "options": ["You aren't working today, are you?", "Did you work today, sir?", "Weren't you working today, sir?"], "answer": 2 },
+    { "es": "¿Mariana no estaba en Cali?", "options": ["Wasn't Mariana in Cali? I thought she was.", "Is Mariana going to Cali?", "Mariana was never in Cali."], "answer": 0 },
+    { "es": "¿Tú no querías ir al cine?", "options": ["Do you want to go to the movies?", "Didn't you want to go to the movies?", "You didn't go to the movies."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *tienes* or *tenías*, to a friend you are surprised to see: \"Don't you have an exam tomorrow? (I thought you did)\"", "answer": "¿Tú no tenías un examen mañana?", "accept": ["¿No tenías un examen mañana?", "¿Tú no tenías examen mañana?", "¿Pero tú no tenías un examen mañana?"], "why": "The imperfect *tenías* shows you are surprised; *tienes* would be a plain question." },
+    { "prompt": "To a friend: \"But hadn't you left?\"", "answer": "¿Pero tú no te habías ido?", "accept": ["¿Pero no te habías ido?", "¿Tú no te habías ido?", "¿No te habías ido?"], "why": "*Te habías ido* is \"you had gone\", and the *no* makes it a surprised question." },
+    { "prompt": "Say: \"Wasn't Vale coming today?\"", "answer": "¿Vale no venía hoy?", "accept": ["¿Pero Vale no venía hoy?", "¿No venía Vale hoy?"], "why": "*Venía* is the imperfect of *venir*, used for what you understood was planned." },
+    { "prompt": "To a group: \"Didn't you all live in Medellín?\"", "answer": "¿Ustedes no vivían en Medellín?", "accept": ["¿Pero ustedes no vivían en Medellín?", "¿No vivían ustedes en Medellín?"], "why": "*Ustedes* goes with the *-ían* ending." },
+    { "prompt": "Make it formal: *¿Tú no trabajabas hoy?*", "answer": "¿Usted no trabajaba hoy?", "accept": ["¿No trabajaba usted hoy?", "¿No trabajaba hoy?"], "why": "*Usted* takes the same ending as *él*: *trabajaba*." },
+    { "prompt": "To Hernando, formally: \"Weren't you a taxi driver?\"", "answer": "¿Usted no era taxista?", "accept": ["¿No era usted taxista?", "¿Pero usted no era taxista?"], "why": "*Era* is the imperfect of *ser* and fits both *usted* and *él*." },
+    { "prompt": "To a male friend: \"Weren't you a vegetarian?\"", "answer": "¿Tú no eras vegetariano?", "accept": ["¿No eras vegetariano?", "¿Pero tú no eras vegetariano?"], "why": "*Eras* is the *tú* form, and *vegetariano* is masculine because you are talking to a man." }
+  ],
+  "pitfalls": [
+    { "wrong": "¿Tú no tienes un examen mañana?", "right": "¿Tú no tenías un examen mañana?", "why": "Almost. The present is a neutral question; the imperfect tells your friend you are surprised." },
+    { "wrong": "¿Tú no tuviste un examen mañana?", "right": "¿Tú no tenías un examen mañana?", "why": "The preterite means a finished event; for \"I thought you had\" use the imperfect." },
+    { "wrong": "Sí, lo tenía.", "right": "Sí, pero ya estudié.", "why": "The question is really a reproach, so answer the point and not the tense." }
+  ],
+  "personal": "Think of the last time you were surprised to see someone. Ask them out loud: *¿Tú no…?* with the imperfect."
+}

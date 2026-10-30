@@ -1,0 +1,43 @@
+{
+  "node": "p:acabar-por-inf",
+  "hook": {
+    "line": "Hernando's memoir is full of things that happened after a long fight with himself: the job he swore he would never take, the secret he finally told. Spanish has a neat way to say \"in the end, I did it anyway\".",
+    "es": "Al final acabé por vender el taxi.",
+    "en": "In the end I ended up selling the taxi."
+  },
+  "examples": [
+    { "es": "Acabó por confesarlo todo.", "en": "He ended up confessing everything." },
+    { "es": "Acabamos riéndonos del asunto.", "en": "We ended up laughing about it." },
+    { "es": "Si sigues así, acabarás por enfermarte.", "en": "If you carry on like this, you'll end up getting sick." },
+    { "es": "¿Acabaste por hablar con ella?", "en": "Did you end up talking to her? (to a friend)" },
+    { "es": "Tomás no terminó por vender el café.", "en": "Tomás didn't end up selling the café." },
+    { "es": "Terminamos comiendo en casa.", "en": "We ended up eating at home." }
+  ],
+  "rule": "To say you ended up doing something, usually after some resistance or a long road, use *acabar por* or *terminar por* plus the infinitive: *acabó por confesarlo*. You can also drop the *por* and use the gerund: *acabamos riéndonos*. Both mean the same.\n\nThe verb carries the tense: *acabé*, *acabarás*, *terminaron*. What follows stays in the infinitive or gerund.\n\nWatch out: *acabar de* is a different thing. *Acaba de llegar* means \"he has just arrived\". And if nothing was in the way, you just use the plain verb.",
+  "smallPrint": "Teachers call this a resultative periphrasis: a verb that frames the outcome at the end of a process.",
+  "readAndPick": [
+    { "es": "Acabó por aceptar la oferta.", "options": ["He ended up accepting the offer.", "He has just accepted the offer.", "He refused the offer."], "answer": 0 },
+    { "es": "Acaba de aceptar la oferta.", "options": ["He ended up accepting the offer.", "He will accept the offer.", "He has just accepted the offer."], "answer": 2 },
+    { "es": "Acabamos riéndonos del asunto.", "options": ["We stopped laughing about it.", "We ended up laughing about it.", "We were laughing at the end of the matter."], "answer": 1 },
+    { "es": "No acabé por entenderlo.", "options": ["I had just understood it.", "I never ended up understanding it.", "I did not want to understand it."], "answer": 1 },
+    { "es": "Terminaron por vender el local.", "options": ["They refused to sell the premises.", "They finished cleaning the premises.", "They ended up selling the premises."], "answer": 2 },
+    { "es": "¿Acabarás por perdonarlo?", "options": ["Will you end up forgiving him?", "Did you forgive him?", "Are you forgiving him right now?"], "answer": 0 },
+    { "es": "Acabaron peleándose.", "options": ["They stopped fighting.", "They were fighting at the end.", "They ended up fighting."], "answer": 2 },
+    { "es": "Acabé por creerle.", "options": ["I just believed him.", "I ended up believing him.", "I will believe him."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *acabó por* or *acabó de*: \"He ended up telling everything.\"", "answer": "Acabó por contarlo todo.", "accept": ["Terminó por contarlo todo.", "Acabó contándolo todo.", "Terminó contándolo todo."], "why": "*Acabar por* is \"ended up\"; *acabar de* would mean \"has just\"." },
+    { "prompt": "Ask a friend: \"Did you end up buying the car?\"", "answer": "¿Acabaste por comprar el carro?", "accept": ["¿Terminaste por comprar el carro?", "¿Acabaste comprando el carro?", "¿Terminaste comprando el carro?"], "why": "The verb takes the *tú* ending and the action follows in the infinitive." },
+    { "prompt": "Say: \"We ended up laughing about it.\"", "answer": "Acabamos riéndonos del asunto.", "accept": ["Terminamos riéndonos del asunto.", "Acabamos por reírnos del asunto.", "Terminamos por reírnos del asunto."], "why": "With the gerund there is no *por*; with *por* you need the infinitive." },
+    { "prompt": "Make it negative: *Tomás acabó por vender el café.*", "answer": "Tomás no acabó por vender el café.", "accept": ["Tomás no terminó por vender el café.", "Tomás no acabó vendiendo el café.", "Tomás no terminó vendiendo el café."], "why": "*No* goes right before the conjugated verb." },
+    { "prompt": "Say: \"I'll end up forgiving him.\"", "answer": "Acabaré por perdonarlo.", "accept": ["Terminaré por perdonarlo.", "Acabaré perdonándolo.", "Terminaré perdonándolo."], "why": "Only *acabar* changes for the future; *perdonarlo* stays as it is." },
+    { "prompt": "Say with a gerund and no *por*: \"They ended up fighting.\"", "answer": "Acabaron peleándose.", "accept": ["Terminaron peleándose."], "why": "A gerund after *acabar* or *terminar* works on its own, with no *por*." },
+    { "prompt": "Ask a stranger politely (*usted*): \"Did you end up speaking to the owner?\"", "answer": "¿Acabó por hablar con el dueño?", "accept": ["¿Terminó por hablar con el dueño?", "¿Acabó hablando con el dueño?", "¿Terminó hablando con el dueño?"], "why": "*Usted* takes the same ending as *él*: *acabó*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Acabó de aceptar la oferta. (meaning: he ended up accepting)", "right": "Acabó por aceptar la oferta.", "why": "*Acabar de* means \"has just\"; for \"ended up\" use *por* or a gerund." },
+    { "wrong": "Acabamos por riéndonos.", "right": "Acabamos riéndonos.", "why": "Use *por* with an infinitive, or no *por* with a gerund, never both." },
+    { "wrong": "Acabé por llegar a las ocho.", "right": "Al final llegué a las ocho.", "why": "*Acabar por* hints at a struggle or a long wait; for a plain event use the plain verb." }
+  ],
+  "personal": "Think of something you swore you would never do, and did anyway. Say it with *acabar por* or *terminar*: *Acabé por…*"
+}

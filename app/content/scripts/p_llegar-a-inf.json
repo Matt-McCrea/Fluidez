@@ -1,0 +1,43 @@
+{
+  "node": "p:llegar-a-inf",
+  "hook": {
+    "line": "Some things go further than you ever planned: a debt, a feud, a fear. When you tell a life story, you often want to say how far it went. Spanish does that with *llegar a*.",
+    "es": "Llegué a pensar que no volverías.",
+    "en": "I even came to think you wouldn't come back."
+  },
+  "examples": [
+    { "es": "Llegó a vender el carro para pagar la deuda.", "en": "He even sold the car to pay off the debt." },
+    { "es": "Hernando llegó a odiar el tráfico de la Carrera Séptima.", "en": "Hernando came to hate the traffic on Carrera Séptima." },
+    { "es": "¿Llegaste a conocer a mi abuela?", "en": "Did you ever get to meet my grandmother? (to a friend)" },
+    { "es": "No llegué a decírselo.", "en": "I never got to tell her." },
+    { "es": "Llegamos a pasar tres días sin hablar.", "en": "We even went three days without speaking." },
+    { "es": "No llegó a ser famoso, pero lo querían.", "en": "He never became famous, but people loved him." }
+  ],
+  "rule": "*Llegar a* plus an infinitive does not mean arriving. It marks how far something went: you went so far as to do it, or you eventually came to do it. It often goes with *pensar*, *creer*, *odiar*, *ser*.\n\n*Llegué a pensar que…* = \"I even thought that…\"\n*No llegué a decírselo* = \"I never got as far as telling her.\"\n*¿Llegaste a conocerla?* = \"Did you ever get to meet her?\"\n\nThe verb takes the tense; the second verb stays in the infinitive. Compare *Llegó a casa* (he got home), where *a* is followed by a place, not a verb.",
+  "smallPrint": "Teachers call this a limit-reaching periphrasis: the verb marks the extreme point that an action reaches.",
+  "readAndPick": [
+    { "es": "Llegué a pensar que no volverías.", "options": ["I arrived and thought you would not come back.", "I thought you would not come back, so I left.", "I even went so far as to think you would not come back."], "answer": 2 },
+    { "es": "Llegó a vender el carro.", "options": ["He even went as far as selling the car.", "He wanted to sell the car.", "He sold the car as soon as he arrived."], "answer": 0 },
+    { "es": "No llegó a ser famoso.", "options": ["He did not want to be famous.", "He never became famous.", "He arrived famous."], "answer": 1 },
+    { "es": "¿Llegaste a conocerla?", "options": ["Did you like her?", "Did you arrive to find her?", "Did you ever get to meet her?"], "answer": 2 },
+    { "es": "Llegó a casa a las ocho.", "options": ["He got home at eight.", "He even stayed home at eight.", "He went as far as thinking of home at eight."], "answer": 0 },
+    { "es": "Llegamos a odiarnos.", "options": ["We stopped hating each other.", "We came to hate each other.", "We arrived hating each other."], "answer": 1 },
+    { "es": "No llegué a decírselo.", "options": ["I did not want to tell her.", "I did not arrive to tell her.", "I never got to tell her."], "answer": 2 },
+    { "es": "Llegó a dudar de su propio nombre.", "options": ["He even doubted his own name.", "He forgot his own name.", "He arrived doubting his own name."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *llegó a* or *llegó*: \"He even sold the taxi.\"", "answer": "Llegó a vender el taxi.", "accept": ["Él llegó a vender el taxi."], "why": "A verb follows, so you need *llegó a*; plain *llegó* would mean \"he arrived\"." },
+    { "prompt": "To a male friend: \"I even thought you were angry.\"", "answer": "Llegué a pensar que estabas enojado.", "accept": ["Llegué a creer que estabas enojado.", "Yo llegué a pensar que estabas enojado."], "why": "*Llegué a* plus *pensar* gives \"I even thought\"; the *tú* ending in *estabas* says \"you\"." },
+    { "prompt": "Ask a friend: \"Did you ever get to meet Rosa?\"", "answer": "¿Llegaste a conocer a Rosa?", "accept": ["¿Tú llegaste a conocer a Rosa?"], "why": "*Llegaste a* asks whether you got that far; people take *a* before a person you meet." },
+    { "prompt": "Make it negative: *Llegué a decírselo.*", "answer": "No llegué a decírselo.", "accept": ["No se lo llegué a decir."], "why": "*No* goes before *llegué* and the meaning becomes \"never got as far as\"." },
+    { "prompt": "Say: \"We even went three days without speaking.\"", "answer": "Llegamos a pasar tres días sin hablar.", "accept": ["Llegamos a estar tres días sin hablar."], "why": "*Llegamos a* puts the surprise on how long it lasted." },
+    { "prompt": "Change to *they*: *Llegó a odiar el tráfico.*", "answer": "Llegaron a odiar el tráfico.", "accept": ["Ellos llegaron a odiar el tráfico."], "why": "Only *llegó* changes; *odiar* stays in the infinitive." },
+    { "prompt": "Say: \"She never became a writer.\"", "answer": "No llegó a ser escritora.", "accept": ["Ella no llegó a ser escritora.", "No llegó a ser autora."], "why": "*No llegó a ser* means she never reached that point." }
+  ],
+  "pitfalls": [
+    { "wrong": "Llegué para pensar que no volverías.", "right": "Llegué a pensar que no volverías.", "why": "It is *a*, not *para*, and it is not about arriving anywhere." },
+    { "wrong": "No llegué decírselo.", "right": "No llegué a decírselo.", "why": "The little *a* is needed before the infinitive." },
+    { "wrong": "Llegó a vendiendo el carro.", "right": "Llegó a vender el carro.", "why": "After *a*, the second verb is an infinitive, not a gerund." }
+  ],
+  "personal": "Say how far something went in your life: *Llegué a…* Maybe a habit, a worry or a stubborn idea."
+}

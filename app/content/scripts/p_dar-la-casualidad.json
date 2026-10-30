@@ -1,0 +1,43 @@
+{
+  "node": "p:dar-la-casualidad",
+  "hook": {
+    "line": "A good memoir runs on coincidences: the passenger who turned out to be a cousin, the rainy day you happened to have an umbrella. Spanish has a storyteller's phrase for \"it so happened that\".",
+    "es": "Se dio la casualidad de que ese día él también estaba en Medellín.",
+    "en": "It so happened that he was in Medellín that day too."
+  },
+  "examples": [
+    { "es": "Se dio la casualidad de que ese día él también estaba en Medellín.", "en": "It so happened that he was in Medellín that day too." },
+    { "es": "Dio la casualidad de que mi primo la conocía.", "en": "It so happened that my cousin knew her." },
+    { "es": "Se dio la casualidad de que el pasajero era el padre de Mariana.", "en": "It so happened that the passenger was Mariana's father." },
+    { "es": "Se dio la casualidad de que Tomás estaba en el café cuando llamó el abogado.", "en": "It so happened that Tomás was in the café when the lawyer called." },
+    { "es": "Y de casualidad, ese día llevaba el paraguas.", "en": "And by chance, that day I had the umbrella with me." },
+    { "es": "Se dio la casualidad de que los dos conocíamos a Rosa.", "en": "It so happened that we both knew Rosa." }
+  ],
+  "rule": "*Se dio la casualidad de que…* (or just *dio la casualidad de que…*) introduces a coincidence. It works like \"it so happened that\". After *de que* comes a normal sentence, in the indicative, because it is a fact: *se dio la casualidad de que estaba allí*.\n\nIt belongs to storytelling, so it is mostly in the preterite, with the background in the imperfect.\n\nIn everyday Colombian speech, a quick *de casualidad* does the same job: *y de casualidad, llevaba el paraguas*.\n\nDo not confuse it with *darse cuenta de que* (to realise).",
+  "smallPrint": "Teachers call this an impersonal narrative expression: *dar* with *casualidad* as its subject.",
+  "readAndPick": [
+    { "es": "Se dio la casualidad de que ese día él también estaba en Medellín.", "options": ["He planned to be in Medellín that day.", "It so happened that he was in Medellín that day too.", "He was not in Medellín that day."], "answer": 1 },
+    { "es": "Dio la casualidad de que mi primo la conocía.", "options": ["It so happened that my cousin knew her.", "My cousin gave her a coincidence.", "My cousin met her on purpose."], "answer": 0 },
+    { "es": "Se dio la casualidad de que el pasajero era el padre de Mariana.", "options": ["The passenger asked about Mariana's father.", "Mariana's father hired the passenger.", "It so happened that the passenger was Mariana's father."], "answer": 2 },
+    { "es": "De casualidad, ese día llevaba el paraguas.", "options": ["I always carried the umbrella.", "By chance, I had the umbrella that day.", "I forgot the umbrella that day."], "answer": 1 },
+    { "es": "Se dio la casualidad de que Tomás estaba en el café cuando llamó el abogado.", "options": ["Tomás called the lawyer from the café.", "The lawyer called because Tomás was in the café.", "It so happened that Tomás was in the café when the lawyer called."], "answer": 2 },
+    { "es": "Dio la casualidad de que Hernando no tenía plata ese día.", "options": ["It so happened that Hernando had no money that day.", "Hernando gave away his money that day.", "Hernando had a lot of money that day."], "answer": 0 },
+    { "es": "Se dio la casualidad de que los dos conocíamos a Rosa.", "options": ["Rosa knew the two of us on purpose.", "We both met Rosa the same day.", "It so happened that we both knew Rosa."], "answer": 2 },
+    { "es": "Se dio cuenta de que Mariana estaba ahí.", "options": ["It so happened that Mariana was there.", "He realised Mariana was there.", "He gave Mariana a place there."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *se dio la casualidad de que* or *se dio cuenta de que*: \"It so happened that Hernando was driving that night.\"", "answer": "Se dio la casualidad de que Hernando manejaba esa noche.", "accept": ["Dio la casualidad de que Hernando manejaba esa noche.", "Se dio la casualidad de que Hernando estaba manejando esa noche.", "Dio la casualidad de que Hernando estaba manejando esa noche."], "why": "A coincidence is *la casualidad*; *cuenta* would mean he realised something." },
+    { "prompt": "Say: \"It so happened that my cousin knew her.\"", "answer": "Dio la casualidad de que mi primo la conocía.", "accept": ["Se dio la casualidad de que mi primo la conocía."], "why": "*Dio* or *se dio* both work, and the imperfect *conocía* gives the background." },
+    { "prompt": "Say: \"It so happened that we both knew Rosa.\"", "answer": "Se dio la casualidad de que los dos conocíamos a Rosa.", "accept": ["Dio la casualidad de que los dos conocíamos a Rosa.", "Se dio la casualidad de que ambos conocíamos a Rosa."], "why": "The sentence after *de que* is a normal one, with *conocíamos* for \"we knew\"." },
+    { "prompt": "Say: \"It so happened that the passenger was Mariana's father.\"", "answer": "Se dio la casualidad de que el pasajero era el padre de Mariana.", "accept": ["Dio la casualidad de que el pasajero era el padre de Mariana."], "why": "It is a fact, so the clause uses the indicative: *era*." },
+    { "prompt": "Say it the quick way: \"By chance, that day I had the umbrella.\"", "answer": "De casualidad, ese día llevaba el paraguas.", "accept": ["Y de casualidad, ese día llevaba el paraguas.", "Ese día, de casualidad, llevaba el paraguas."], "why": "*De casualidad* gives the same effect in one short phrase." },
+    { "prompt": "Start with *se dio la casualidad de que*: \"Vale was in the café that morning.\"", "answer": "Se dio la casualidad de que Vale estaba en el café esa mañana.", "accept": ["Dio la casualidad de que Vale estaba en el café esa mañana.", "Se dio la casualidad de que Vale estaba en el café aquella mañana."], "why": "Keep the *de que* and then a plain sentence in the imperfect." },
+    { "prompt": "Ask a friend: \"And it so happened that she was there?\"", "answer": "¿Y se dio la casualidad de que ella estaba ahí?", "accept": ["¿Y dio la casualidad de que ella estaba ahí?", "¿Y se dio la casualidad de que ella estaba allí?", "¿Y dio la casualidad de que ella estaba allí?"], "why": "The phrase works fine inside a question; the clause stays indicative." }
+  ],
+  "pitfalls": [
+    { "wrong": "Se dio la casualidad que ella estaba ahí.", "right": "Se dio la casualidad de que ella estaba ahí.", "why": "Keep the *de* before *que*." },
+    { "wrong": "Me di cuenta de que mi primo la conocía. (meaning: it so happened that he knew her)", "right": "Dio la casualidad de que mi primo la conocía.", "why": "*Darse cuenta* is realising something; a coincidence is *dar la casualidad*." },
+    { "wrong": "Se dio la casualidad de que ella esté ahí.", "right": "Se dio la casualidad de que ella estaba ahí.", "why": "It reports a fact, so use the indicative, not the subjunctive." }
+  ],
+  "personal": "Tell one real coincidence from your life: *Se dio la casualidad de que…*"
+}
