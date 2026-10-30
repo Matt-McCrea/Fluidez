@@ -1,0 +1,193 @@
+{
+ "node": "g:time-sequence",
+ "hook": {
+  "line": "Hernando is about to tell his best story, and it happened in 1983. A story needs its own clock: words like *hoy* and *ahora* point at today, so the story borrows a different set.",
+  "es": "Ese día Rosa estaba sola en el café.",
+  "en": "That day Rosa was alone in the café."
+ },
+ "examples": [
+  {
+   "es": "Esa mañana llovía mucho.",
+   "en": "That morning it was raining hard."
+  },
+  {
+   "es": "En ese momento entró el senador.",
+   "en": "At that moment the senator came in."
+  },
+  {
+   "es": "Al principio Rosa no dijo nada.",
+   "en": "At first Rosa said nothing."
+  },
+  {
+   "es": "Primero desayuné y luego salí.",
+   "en": "First I had breakfast and then I went out."
+  },
+  {
+   "es": "¿Y entonces qué hizo Rosa?",
+   "en": "And then what did Rosa do?"
+  },
+  {
+   "es": "Al final, el senador pagó.",
+   "en": "In the end, the senator paid."
+  },
+  {
+   "es": "Esa noche nadie durmió.",
+   "en": "That night nobody slept."
+  },
+  {
+   "es": "Desde ese día, el senador no volvió al café.",
+   "en": "From that day on, the senator didn't come back to the café."
+  }
+ ],
+ "rule": "Words like *hoy*, *esta noche* and *ahora* point at the moment you're speaking. In a story about another day, swap them for the story's own clock:\n*hoy* → *ese día*\n*esta mañana* → *esa mañana*\n*esta noche* → *esa noche*\n*este año* → *ese año*\n*ahora* → *en ese momento* or *entonces*\n\nEnglish does the same (today → that day), but Spanish is stricter about it. *Este* is here and now; *ese* is back there in the story.\n\nThen put the events in a line:\n*primero*: first\n*luego*, *después*, *entonces*: then\n*al final*: in the end\n\n*Al principio* is at first, how things were at the start: *Al principio no entendía nada.* For the first step in a list, use *primero*.\n\nThe next day and two days later get their own lesson in a few days.",
+ "smallPrint": "Teachers call this shifting of time words temporal deixis, and *primero*, *luego*, *al final* are discourse sequencers. The same shift happens when you report what someone said.",
+ "readAndPick": [
+  {
+   "es": "Ese día estaba cansado.",
+   "options": [
+    "Today I'm tired.",
+    "That day I was tired."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Hoy estoy cansado.",
+   "options": [
+    "Today I'm tired.",
+    "That day I was tired."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Esa noche no dormí.",
+   "options": [
+    "That night I didn't sleep.",
+    "Tonight I'm not going to sleep."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Esta noche no voy a dormir.",
+   "options": [
+    "That night I didn't sleep.",
+    "Tonight I'm not going to sleep."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Al principio no entendía nada.",
+   "options": [
+    "In the end I didn't understand anything.",
+    "Then I didn't understand anything.",
+    "At first I didn't understand anything."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Al final todos nos reímos.",
+   "options": [
+    "At first we all laughed.",
+    "In the end we all laughed.",
+    "First we all laughed."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Ese año Rosa abrió el café.",
+   "options": [
+    "That year Rosa opened the café.",
+    "This year Rosa opened the café."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "En ese momento vivía en Toronto.",
+   "options": [
+    "Right now I live in Toronto.",
+    "At that time I was living in Toronto."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Primero desayuné y luego salí.",
+   "options": [
+    "First I went out and then I had breakfast.",
+    "First I had breakfast and then I went out."
+   ],
+   "answer": 1
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "You're telling a story from 1983. Choose *Hoy* or *Ese día* and type the whole sentence: ___ Rosa estaba sola en el café.",
+   "answer": "Ese día Rosa estaba sola en el café.",
+   "accept": [],
+   "why": "The story happened long ago, so *hoy* becomes *ese día*."
+  },
+  {
+   "prompt": "This is how the story ends. Choose *Al principio* or *Al final* and type the whole sentence: ___, el senador pagó.",
+   "answer": "Al final, el senador pagó.",
+   "accept": ["Al final el senador pagó."],
+   "why": "*Al final* closes the story; *al principio* is how things were at the start."
+  },
+  {
+   "prompt": "Type in Spanish: That night nobody slept.",
+   "answer": "Esa noche nadie durmió.",
+   "accept": ["Esa noche no durmió nadie."],
+   "why": "A night in the story is *esa noche*; *esta noche* would be tonight."
+  },
+  {
+   "prompt": "Type in Spanish: First I had breakfast and then I went out.",
+   "answer": "Primero desayuné y luego salí.",
+   "accept": ["Primero desayuné y después salí."],
+   "why": "*Primero* for the first step, *luego* or *después* for the next one."
+  },
+  {
+   "prompt": "Type in Spanish: At that moment the senator came in.",
+   "answer": "En ese momento entró el senador.",
+   "accept": ["En ese momento el senador entró."],
+   "why": "In a story, now becomes *en ese momento*."
+  },
+  {
+   "prompt": "Move it into a story about years ago: *Hoy estoy cansado.*",
+   "answer": "Ese día estaba cansado.",
+   "accept": [],
+   "why": "*Hoy* becomes *ese día*, and the state shifts to the describing past, *estaba*."
+  },
+  {
+   "prompt": "You're telling this a year later: *Esta mañana me levanté tarde.*",
+   "answer": "Esa mañana me levanté tarde.",
+   "accept": [],
+   "why": "*Esta* points at today; a year later it's *esa mañana*."
+  },
+  {
+   "prompt": "Rosa, years later, about the café: *Este año abrimos el café.*",
+   "answer": "Ese año abrimos el café.",
+   "accept": [],
+   "why": "*Este año* is this year; looking back, it's *ese año*."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "En 1983, hoy Rosa estaba sola en el café.",
+   "right": "En 1983, ese día Rosa estaba sola en el café.",
+   "why": "*Hoy* only ever means today. Inside a story, use *ese día*."
+  },
+  {
+   "wrong": "En el final, el senador pagó.",
+   "right": "Al final, el senador pagó.",
+   "why": "In the end is *al final*, with *al*, never *en el*."
+  },
+  {
+   "wrong": "Hace diez años, esta noche no dormí.",
+   "right": "Hace diez años, esa noche no dormí.",
+   "why": "*Esta noche* is tonight; a night in the past is *esa noche*."
+  },
+  {
+   "wrong": "Al principio desayuné y luego salí.",
+   "right": "Primero desayuné y luego salí.",
+   "why": "For the first step in a list, say *primero*. *Al principio* describes how things were at the start."
+  }
+ ],
+ "personal": "Think of a day that changed something for you. Tell it in three lines: *Ese día…*, *Primero…*, *Al final…*"
+}

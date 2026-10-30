@@ -1,0 +1,165 @@
+{
+ "node": "p:dentro-de-vs-despues",
+ "hook": {
+  "line": "English says in two days for the future, and two days later for a story. Spanish keeps the two apart too, and the story version is what Hernando needs for 1983.",
+  "es": "Al día siguiente, el senador volvió con la plata.",
+  "en": "The next day, the senator came back with the money."
+ },
+ "examples": [
+  {
+   "es": "Vuelvo dentro de una hora.",
+   "en": "I'll be back in an hour."
+  },
+  {
+   "es": "Dentro de dos días es mi cumpleaños.",
+   "en": "It's my birthday in two days."
+  },
+  {
+   "es": "Llegó el lunes y dos días después se fue.",
+   "en": "He arrived on Monday and left two days later."
+  },
+  {
+   "es": "Rosa se fue a Medellín y tres meses después volvió.",
+   "en": "Rosa went to Medellín and came back three months later."
+  },
+  {
+   "es": "Al día siguiente, todo cambió.",
+   "en": "The next day, everything changed."
+  },
+  {
+   "es": "La semana anterior, Rosa estaba enferma.",
+   "en": "The week before, Rosa was sick."
+  }
+ ],
+ "rule": "Counting from now, into the future: *dentro de* + the time.\n*Vuelvo dentro de una hora.* I'll be back in an hour.\nYou'll also hear *en una hora*; both are fine.\n\nCounting from a moment in a story: the time + *después*.\n*Dos días después se fue.* He left two days later.\n\nAnd the story's own calendar:\n*mañana* → *al día siguiente*\n*la semana pasada* → *la semana anterior*\n\nSo *dentro de* never goes in a story about the past, and *al día siguiente* never means tomorrow.",
+ "readAndPick": [
+  {
+   "es": "Vuelvo dentro de una hora.",
+   "options": [
+    "I came back an hour later.",
+    "I'll be back in an hour."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Volví una hora después.",
+   "options": [
+    "I came back an hour later.",
+    "I'll be back in an hour."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Dentro de dos días es mi cumpleaños.",
+   "options": [
+    "My birthday was two days later.",
+    "It's my birthday in two days.",
+    "My birthday was two days ago."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Al día siguiente, el senador volvió.",
+   "options": [
+    "The senator is coming back tomorrow.",
+    "The day before, the senator came back.",
+    "The next day, the senator came back."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Mañana me voy.",
+   "options": [
+    "I'm leaving tomorrow.",
+    "The next day I left."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "La semana anterior, Rosa estaba enferma.",
+   "options": [
+    "The week before, Rosa was sick.",
+    "Last week, Rosa was sick."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "La semana pasada fui a Cali.",
+   "options": [
+    "The week before, I went to Cali.",
+    "Last week I went to Cali."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Dentro de un mes abrimos el café.",
+   "options": [
+    "We opened the café a month later.",
+    "We're opening the café in a month."
+   ],
+   "answer": 1
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Choose *dentro de* or *después* and type the whole sentence (I'll call you in a while): Te llamo ___ un rato.",
+   "answer": "Te llamo dentro de un rato.",
+   "accept": ["Te llamo en un rato."],
+   "why": "Counting from now into the future: *dentro de*."
+  },
+  {
+   "prompt": "Choose *dentro de* or *después* and type the whole sentence (a story about last year): Llegó el lunes y dos días ___ se fue.",
+   "answer": "Llegó el lunes y dos días después se fue.",
+   "accept": [],
+   "why": "Counting from a moment in the story: the time, then *después*."
+  },
+  {
+   "prompt": "Type in Spanish: I'll be back in an hour.",
+   "answer": "Vuelvo dentro de una hora.",
+   "accept": ["Vuelvo en una hora."],
+   "why": "From now, forward: *dentro de una hora*."
+  },
+  {
+   "prompt": "Type in Spanish: The next day, everything changed.",
+   "answer": "Al día siguiente, todo cambió.",
+   "accept": ["Al día siguiente todo cambió."],
+   "why": "In a story, the next day is *al día siguiente*, not *mañana*."
+  },
+  {
+   "prompt": "Type in Spanish: Rosa went to Medellín and came back three months later.",
+   "answer": "Rosa se fue a Medellín y tres meses después volvió.",
+   "accept": ["Rosa se fue a Medellín y volvió tres meses después."],
+   "why": "Three months later, counted from when she left: *tres meses después*."
+  },
+  {
+   "prompt": "Move it into a story: *Mañana me voy.* Start with *Al día siguiente…*",
+   "answer": "Al día siguiente me fui.",
+   "accept": [],
+   "why": "*Mañana* becomes *al día siguiente*, and the verb goes into the past."
+  },
+  {
+   "prompt": "Move it into a story: *La semana pasada Rosa estaba enferma.*",
+   "answer": "La semana anterior, Rosa estaba enferma.",
+   "accept": ["La semana anterior Rosa estaba enferma."],
+   "why": "In a story, last week is *la semana anterior*: the week before that moment."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Rosa se fue y dentro de tres meses volvió.",
+   "right": "Rosa se fue y tres meses después volvió.",
+   "why": "*Dentro de* counts from now; in a past story, say *tres meses después*."
+  },
+  {
+   "wrong": "El senador no pagó y mañana volvió.",
+   "right": "El senador no pagó y al día siguiente volvió.",
+   "why": "*Mañana* is always tomorrow from today. In a story it's *al día siguiente*."
+  },
+  {
+   "wrong": "Vuelvo una hora después.",
+   "right": "Vuelvo dentro de una hora.",
+   "why": "Almost. For the future counted from now, Spanish uses *dentro de*."
+  }
+ ],
+ "personal": "What's coming up for you? Say when with *dentro de*: *Dentro de … voy a …*"
+}

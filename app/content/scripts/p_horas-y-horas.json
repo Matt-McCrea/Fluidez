@@ -1,0 +1,161 @@
+{
+ "node": "p:horas-y-horas",
+ "hook": {
+  "line": "Nobody tells a story about a short wait. When it felt endless, Spanish just says the word twice.",
+  "es": "Esperamos horas y horas en el aeropuerto.",
+  "en": "We waited for hours and hours at the airport."
+ },
+ "examples": [
+  {
+   "es": "Caminamos horas y horas.",
+   "en": "We walked for hours and hours."
+  },
+  {
+   "es": "Manejamos kilómetros y kilómetros.",
+   "en": "We drove for kilometres and kilometres."
+  },
+  {
+   "es": "Rosa trabajó años y años en el café.",
+   "en": "Rosa worked in the café for years and years."
+  },
+  {
+   "es": "Le mandé mensajes y mensajes.",
+   "en": "I sent him message after message."
+  },
+  {
+   "es": "Llamé, escribí, insistí, y nada.",
+   "en": "I called, I wrote, I insisted, and nothing."
+  }
+ ],
+ "rule": "To say it went on forever, say the plural word, then *y*, then the same word again:\n*horas y horas*, *días y días*, *cuadras y cuadras*.\nNo for and no number: *Esperamos horas y horas*, not *por horas y horas*.\n\nIt's a feeling, not a count. *Esperé dos horas* is a fact; *esperé horas y horas* is a complaint.\n\nFor exasperation, list what you tried, then *y nada*:\n*Llamé, escribí, insistí, y nada.*\nUse the plain past for each try: *llamé*, *escribí*.",
+ "readAndPick": [
+  {
+   "es": "Esperé horas y horas.",
+   "options": [
+    "I waited two hours.",
+    "I waited for hours and hours."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Esperé dos horas.",
+   "options": [
+    "I waited two hours.",
+    "I waited for hours and hours."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Caminamos cuadras y cuadras.",
+   "options": [
+    "We walked for blocks and blocks.",
+    "We walked two blocks.",
+    "We walked around the block."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Rosa trabajó dos años en el café.",
+   "options": [
+    "Rosa worked in the café for years and years.",
+    "Rosa worked in the café for two years."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Rosa trabajó años y años en el café.",
+   "options": [
+    "Rosa worked in the café for two years.",
+    "Rosa worked in the café for years and years."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Le mandé mensajes y mensajes.",
+   "options": [
+    "I sent him a message.",
+    "I sent him message after message."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Busqué, pregunté, llamé, y nada.",
+   "options": [
+    "I looked, I asked, I called, and nothing.",
+    "I looked and asked, and found it."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Mariana leyó páginas y páginas.",
+   "options": [
+    "Mariana read a couple of pages.",
+    "Mariana read page after page.",
+    "Mariana read the pages."
+   ],
+   "answer": 1
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Choose *dos horas* or *horas y horas* and type the whole sentence (it felt endless): Esperamos ___.",
+   "answer": "Esperamos horas y horas.",
+   "accept": [],
+   "why": "Saying the word twice turns a fact into a feeling: it went on forever."
+  },
+  {
+   "prompt": "Type in Spanish: We walked for hours and hours.",
+   "answer": "Caminamos horas y horas.",
+   "accept": [],
+   "why": "No word for for: just *horas y horas* after the verb."
+  },
+  {
+   "prompt": "Type in Spanish: We drove for kilometres and kilometres.",
+   "answer": "Manejamos kilómetros y kilómetros.",
+   "accept": [],
+   "why": "Same trick with any plural: *kilómetros y kilómetros*."
+  },
+  {
+   "prompt": "Type in Spanish: Rosa worked in the café for years and years.",
+   "answer": "Rosa trabajó años y años en el café.",
+   "accept": ["Rosa trabajó en el café años y años."],
+   "why": "*Años y años* says it felt like a lifetime."
+  },
+  {
+   "prompt": "Type in Spanish: I called, I wrote, I insisted, and nothing.",
+   "answer": "Llamé, escribí, insistí, y nada.",
+   "accept": ["Llamé, escribí, insistí y nada."],
+   "why": "List the tries in the plain past, then close with *y nada*."
+  },
+  {
+   "prompt": "Make it sound endless: *Esperé un día.*",
+   "answer": "Esperé días y días.",
+   "accept": [],
+   "why": "Swap the number for the plural said twice: *días y días*."
+  },
+  {
+   "prompt": "Make it sound endless: *Le mandé un mensaje.*",
+   "answer": "Le mandé mensajes y mensajes.",
+   "accept": [],
+   "why": "Plural, *y*, the same plural again."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Esperamos por horas y horas.",
+   "right": "Esperamos horas y horas.",
+   "why": "English needs for; Spanish doesn't."
+  },
+  {
+   "wrong": "Caminamos hora y hora.",
+   "right": "Caminamos horas y horas.",
+   "why": "Almost. Both words go in the plural."
+  },
+  {
+   "wrong": "He llamado, he escrito, y nada.",
+   "right": "Llamé, escribí, y nada.",
+   "why": "In Colombia the tries go in the plain past: *llamé*, *escribí*."
+  }
+ ],
+ "personal": "Think of the longest wait or walk of your life. Say it the endless way: *Esperé… horas y horas* or *Caminé… cuadras y cuadras*."
+}

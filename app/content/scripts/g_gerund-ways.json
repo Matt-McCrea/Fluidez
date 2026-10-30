@@ -1,0 +1,194 @@
+{
+ "node": "g:gerund-ways",
+ "hook": {
+  "line": "Every anecdote has a how: how you learned something, how someone walked in, how things slowly changed. Spanish says all of that with the *-ando* and *-iendo* form you already use after *estoy*.",
+  "es": "Hernando aprendió a manejar manejando el taxi de su papá.",
+  "en": "Hernando learned to drive by driving his dad's taxi."
+ },
+ "examples": [
+  {
+   "es": "Aprendí español viendo películas.",
+   "en": "I learned Spanish by watching films."
+  },
+  {
+   "es": "¿Cómo aprendiste a cocinar?\nMirando a mi mamá.",
+   "en": "How did you learn to cook? (to a friend)\nBy watching my mom."
+  },
+  {
+   "es": "Hernando llegó al café cantando.",
+   "en": "Hernando arrived at the café singing."
+  },
+  {
+   "es": "Vale cocina escuchando música.",
+   "en": "Vale cooks while listening to music."
+  },
+  {
+   "es": "No vas a aprender nada mirando el celular.",
+   "en": "You're not going to learn anything by looking at your phone. (to a friend)"
+  },
+  {
+   "es": "Rosa contestó sonriendo.",
+   "en": "Rosa answered with a smile."
+  },
+  {
+   "es": "Poco a poco el café va mejorando.",
+   "en": "Little by little the café is getting better."
+  },
+  {
+   "es": "Las cosas van cambiando en el barrio.",
+   "en": "Things are gradually changing in the neighbourhood."
+  }
+ ],
+ "rule": "You know *estoy hablando*. The same *-ando* / *-iendo* word can also stand on its own, next to another verb, and then it does three jobs.\n\nHow you did it (English by + -ing):\n*Aprendí español viendo películas.*\nSpanish has no word for by here. The *-ando* form says it alone.\n\nWhat else was going on (English while + -ing, or just -ing):\n*Llegó cantando.* *Vale cocina escuchando música.*\n\nSlowly, bit by bit: *ir* + the *-ando* form.\n*El café va mejorando.* It's getting better, gradually.\nCompare *va a mejorar*: it's going to get better. The little *a* changes everything.\n\nOne thing it never does: be a thing. English says Swimming is good; Spanish uses the plain verb: *Nadar es bueno.* Same after *me gusta*: *Me gusta cocinar.*\n\nA pronoun sticks on the end and the word takes an accent: *riéndose*, *mirándola*.",
+ "smallPrint": "Teachers call the *-ando* / *-iendo* form the gerund (*el gerundio*). Used alone like this, it is an adverbial gerund; *ir* + gerund is a periphrasis of gradual progress.",
+ "readAndPick": [
+  {
+   "es": "Aprendí español viendo películas.",
+   "options": [
+    "I learned Spanish to watch films.",
+    "I learned Spanish by watching films."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Aprendí español para ver películas.",
+   "options": [
+    "I learned Spanish to watch films.",
+    "I learned Spanish by watching films."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "El café va mejorando.",
+   "options": [
+    "The café is gradually getting better.",
+    "The café is going to get better.",
+    "The café got better."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Las cosas van a cambiar.",
+   "options": [
+    "Things are gradually changing.",
+    "Things changed.",
+    "Things are going to change."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Vale cocina escuchando música.",
+   "options": [
+    "Vale listens to music while cooking.",
+    "Vale cooks while listening to music."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Rosa contestó sonriendo.",
+   "options": [
+    "Rosa answered with a smile.",
+    "Rosa answered and then smiled."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Rosa contestó y sonrió.",
+   "options": [
+    "Rosa answered with a smile.",
+    "Rosa answered and then smiled."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Hernando llegó al café cantando.",
+   "options": [
+    "Hernando came to the café to sing.",
+    "Hernando arrived at the café singing.",
+    "Hernando sings at the café."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Superé el miedo hablando con la gente.",
+   "options": [
+    "I got over my fear by talking to people.",
+    "I got over my fear to talk to people."
+   ],
+   "answer": 0
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Choose *viendo* or *ver* and type the whole sentence (I learned Spanish by watching films): Aprendí español ___ películas.",
+   "answer": "Aprendí español viendo películas.",
+   "accept": [],
+   "why": "By watching is how you learned, and Spanish says how with the *-ando* / *-iendo* form alone."
+  },
+  {
+   "prompt": "Choose *Nadar* or *Nadando* and type the whole sentence (Swimming is good for your health): ___ es bueno para la salud.",
+   "answer": "Nadar es bueno para la salud.",
+   "accept": [],
+   "why": "When the action is the thing you're talking about, Spanish uses the plain verb, not the *-ando* form."
+  },
+  {
+   "prompt": "Choose *va mejorando* or *va a mejorar* and type the whole sentence (the café is slowly getting better): El café ___ poco a poco.",
+   "answer": "El café va mejorando poco a poco.",
+   "accept": ["Poco a poco el café va mejorando."],
+   "why": "*Ir* + the *-ando* form is change in progress; *va a mejorar* would be a promise about later."
+  },
+  {
+   "prompt": "Type in Spanish: I learned to cook by watching my mom.",
+   "answer": "Aprendí a cocinar mirando a mi mamá.",
+   "accept": ["Aprendí a cocinar viendo a mi mamá."],
+   "why": "No word for by: *mirando* on its own tells how."
+  },
+  {
+   "prompt": "Type in Spanish: Hernando arrived at the café singing.",
+   "answer": "Hernando llegó al café cantando.",
+   "accept": ["Hernando llegó cantando al café."],
+   "why": "*Cantando* says what he was doing as he came in."
+  },
+  {
+   "prompt": "Type in Spanish: Things are gradually changing in the neighbourhood.",
+   "answer": "Las cosas van cambiando en el barrio.",
+   "accept": ["En el barrio las cosas van cambiando."],
+   "why": "Gradually changing is *van cambiando*: *ir* plus the *-ando* form."
+  },
+  {
+   "prompt": "Join the two into one sentence with an *-ando* form: *Vale cocina. Escucha música.*",
+   "answer": "Vale cocina escuchando música.",
+   "accept": [],
+   "why": "The second action becomes *escuchando* and rides along with *cocina*."
+  },
+  {
+   "prompt": "Make it about us: *Aprendí español hablando con la gente.*",
+   "answer": "Aprendimos español hablando con la gente.",
+   "accept": [],
+   "why": "Only *aprendí* changes; the *-ando* form never changes for the person."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Nadando es bueno para la salud.",
+   "right": "Nadar es bueno para la salud.",
+   "why": "Almost. English uses -ing as a thing; Spanish uses the plain verb, *nadar*."
+  },
+  {
+   "wrong": "Aprendí español por ver películas.",
+   "right": "Aprendí español viendo películas.",
+   "why": "Don't translate by: the *-ando* / *-iendo* form already means it."
+  },
+  {
+   "wrong": "Me gusta cocinando.",
+   "right": "Me gusta cocinar.",
+   "why": "After *me gusta*, the action is a thing you like, so it's the plain verb."
+  },
+  {
+   "wrong": "El café va a mejorando.",
+   "right": "El café va mejorando.",
+   "why": "No *a* before the *-ando* form. *Va a* goes with *mejorar* and means going to."
+  }
+ ],
+ "personal": "How did you learn something you're good at? Say it with an *-ando* form: *Aprendí a … mirando / leyendo / haciendo …*"
+}

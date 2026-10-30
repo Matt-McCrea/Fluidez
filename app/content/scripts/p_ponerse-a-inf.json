@@ -1,0 +1,156 @@
+{
+ "node": "p:ponerse-a-inf",
+ "hook": {
+  "line": "Tomás has had Rosa's letters in a box for weeks. At some point you stop circling a job and get down to it, and Spanish has a verb for exactly that moment.",
+  "es": "Mañana voy a ponerme a leer las cartas de Rosa.",
+  "en": "Tomorrow I'm going to get down to reading Rosa's letters."
+ },
+ "examples": [
+  {
+   "es": "Voy a ponerme a estudiar.",
+   "en": "I'm going to get down to studying."
+  },
+  {
+   "es": "Vale tiene que ponerse a hacer el pan a las cuatro.",
+   "en": "Vale has to start making the bread at four."
+  },
+  {
+   "es": "No quiero ponerme a llorar.",
+   "en": "I don't want to start crying."
+  },
+  {
+   "es": "Es hora de ponernos a trabajar.",
+   "en": "It's time for us to get to work."
+  },
+  {
+   "es": "Hernando va a ponerse a cantar.",
+   "en": "Hernando is going to start singing."
+  }
+ ],
+ "rule": "*Ponerse a* + a plain verb means to start doing something, but with a push: you get down to it, or it suddenly kicks off.\n*Voy a ponerme a estudiar.* I'm going to get down to studying.\n\nThe *me*, *te*, *se*, *nos* matches the person and sticks on the end: *ponerme*, *ponerse*, *ponernos*. Don't forget the *a* before the second verb.\n\nIn stories you'll meet it in the past, for something that starts out of nowhere:\n*Se puso a llover.* It started to rain.\n*Simón se puso a cantar.* Simón burst into song.\n\nCompare *ponerme la chaqueta*: no *a*, a thing, and it just means put on.",
+ "readAndPick": [
+  {
+   "es": "Voy a ponerme a estudiar.",
+   "options": [
+    "I'm going to get down to studying.",
+    "I'm going to put on my study clothes."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Voy a ponerme la chaqueta.",
+   "options": [
+    "I'm going to get down to my jacket.",
+    "I'm going to put on my jacket."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "No quiero llorar.",
+   "options": [
+    "I don't want to cry.",
+    "I don't want to start crying."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "No quiero ponerme a llorar.",
+   "options": [
+    "I don't want to cry.",
+    "I don't want to start crying."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Hernando va a ponerse a cantar.",
+   "options": [
+    "I'm going to start singing.",
+    "Hernando is going to start singing.",
+    "We're going to start singing."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Voy a ponerme a cantar.",
+   "options": [
+    "I'm going to start singing.",
+    "Hernando is going to start singing.",
+    "We're going to start singing."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Mañana voy a buscar trabajo.",
+   "options": [
+    "Tomorrow I'm going to get down to looking for work.",
+    "Tomorrow I'm going to look for work."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Vamos a ponernos a limpiar el café.",
+   "options": [
+    "They're going to get cleaning the café.",
+    "We're going to get cleaning the café.",
+    "We're going to clean up for the café."
+   ],
+   "answer": 1
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Choose *ponerme a* or *ponerme* and type the whole sentence (I'm going to get down to studying): Voy a ___ estudiar.",
+   "answer": "Voy a ponerme a estudiar.",
+   "accept": [],
+   "why": "Before another verb, it's always *ponerme a*."
+  },
+  {
+   "prompt": "Type in Spanish: I don't want to start crying.",
+   "answer": "No quiero ponerme a llorar.",
+   "accept": [],
+   "why": "Start crying, with a sudden feel: *ponerme a llorar*."
+  },
+  {
+   "prompt": "Type in Spanish: Hernando is going to start singing.",
+   "answer": "Hernando va a ponerse a cantar.",
+   "accept": [],
+   "why": "For Hernando, the little word is *se*: *ponerse*."
+  },
+  {
+   "prompt": "Type in Spanish: Vale has to start making the bread at four.",
+   "answer": "Vale tiene que ponerse a hacer el pan a las cuatro.",
+   "accept": [],
+   "why": "*Tiene que* + *ponerse a* + the job."
+  },
+  {
+   "prompt": "Make it about us: *Voy a ponerme a limpiar el café.*",
+   "answer": "Vamos a ponernos a limpiar el café.",
+   "accept": [],
+   "why": "We is *vamos*, and *me* becomes *nos*: *ponernos*."
+  },
+  {
+   "prompt": "Give it a push: *Mañana voy a leer las cartas de Rosa.* (finally get down to it)",
+   "answer": "Mañana voy a ponerme a leer las cartas de Rosa.",
+   "accept": [],
+   "why": "Put *ponerme a* in front of *leer*."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Voy a ponerme estudiar.",
+   "right": "Voy a ponerme a estudiar.",
+   "why": "Almost. *Ponerse* always takes *a* before the next verb."
+  },
+  {
+   "wrong": "Hernando va a ponerme a cantar.",
+   "right": "Hernando va a ponerse a cantar.",
+   "why": "The little word follows the person: for Hernando it's *ponerse*."
+  },
+  {
+   "wrong": "Voy a ponerme a la chaqueta.",
+   "right": "Voy a ponerme la chaqueta.",
+   "why": "With clothes there's no *a*: *ponerse la chaqueta* is just put on."
+  }
+ ],
+ "personal": "What have you been putting off? Say it: *Mañana voy a ponerme a …*"
+}
