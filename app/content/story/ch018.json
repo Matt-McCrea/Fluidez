@@ -2,7 +2,7 @@
   "id": "ch018",
   "unit": "u08",
   "title": "El traje de domingo",
-  "text": "Un hombre con traje negro entra al café. Tomás sale rápido del mostrador.\nTomás: Buenos días, señor. No vendemos el café. ¡Hoy no!\nHernando: Tomás, soy yo. Es mi traje de domingo. Mi esposa compró este traje en 1985.\nTomás: ¿Y por qué el traje, don Hernando?\nHernando: Porque hoy conoces Bogotá. A ver, ¿has subido a Monserrate?\nTomás: No, nunca he subido.\nVale: ¿Nunca? ¿Y has comido ajiaco?\nTomás: Tampoco.\nHernando: ¿Has jugado tejo?\nTomás: ¿Tejo? Ni idea.\nVale: ¡El ajiaco de Rosa está en su cuaderno, y tú nunca has comido ajiaco!\nTomás: Pero he montado en avión cuarenta veces. Conozco todos los aeropuertos de Canadá.\nHernando: ¡Qué envidia! Yo nunca he montado en avión. Pero he montado a caballo, mijo.\nSimón: ¡Ni idea! ¡Ni idea!\nVale: Y otra cosa. El local del café es arrendado. ¿Has leído el contrato de arriendo?\nTomás: Todavía no. Está en mi armario, con la carta de Rosa.\nVale: Quedan diecinueve días, Tomás, y Altamira ya tiene los metros del café.\nHernando: Entonces hoy, ajiaco. Mañana, tejo. Y el domingo, Monserrate.\nEntra otro hombre. Tiene un traje muy bonito y muy caro.\nHombre: Buenos días. Un capuchino, por favor.\nSimón mira al hombre y no habla. Es la primera vez.",
+  "text": "Un hombre con traje negro entra al café. Tomás sale rápido del mostrador.\nTomás: Buenos días, señor. No vendemos el café.\nHernando: Tomás, soy yo. Es mi traje de domingo. Mi esposa compró este traje en 1985.\nTomás: ¿Y por qué el traje, don Hernando?\nHernando: Porque hoy conoces Bogotá. ¿Has subido a Monserrate?\nTomás: No, nunca he subido.\nVale: ¿Nunca? ¿Y has comido ajiaco?\nTomás: Tampoco.\nHernando: ¿Has jugado tejo?\nTomás: ¿Tejo? Ni idea.\nSimón: ¡Ni idea! ¡Ni idea!\nTomás: Pero he montado en avión cuarenta veces.\nHernando: ¡Qué envidia! Yo nunca he montado en avión. Pero he montado a caballo, mijo.\nVale: El local del café es arrendado. ¿Has leído el contrato de arriendo?\nTomás: Todavía no. Está en mi armario, con la carta de Rosa.\nVale: Quedan diecinueve días, y Altamira ya tiene los metros del café.\nHernando: Entonces hoy, ajiaco. Mañana, tejo. Y el domingo, Monserrate.\nEntra otro hombre. Tiene un traje muy bonito y muy caro.\nHombre: Buenos días. Un capuchino, por favor.\nSimón mira al hombre y no habla. Es la primera vez.",
   "gloss": [
     {
       "es": "el mostrador",
@@ -27,10 +27,6 @@
     {
       "es": "el tejo",
       "en": "tejo (a Colombian game: you throw a metal disc at gunpowder targets)"
-    },
-    {
-      "es": "Conozco todos los aeropuertos de Canadá.",
-      "en": "I know every airport in Canada."
     },
     {
       "es": "he montado a caballo",
@@ -138,7 +134,6 @@
     }
   ],
   "requires": [
-    "c:bien-y-tu",
     "c:entonces-bueno",
     "c:hola-buenos-dias",
     "c:ni-idea",
@@ -156,7 +151,6 @@
     "g:questions",
     "g:ser-identity",
     "g:stem-boot",
-    "g:yo-irregular",
     "p:dates-years",
     "p:days-el-lunes",
     "p:demonstratives-basic",
@@ -167,7 +161,6 @@
     "p:senor-don-article"
   ],
   "lexemes": [
-    "l:aeropuerto",
     "l:ajiaco",
     "l:armario",
     "l:arriendo",
@@ -182,8 +175,6 @@
     "l:comprar",
     "l:conocer",
     "l:contrato",
-    "l:cosa",
-    "l:cuaderno",
     "l:domingo",
     "l:día",
     "l:entrar",
@@ -215,7 +206,6 @@
     "l:tener",
     "l:traje",
     "l:vender",
-    "l:ver",
     "l:vez"
   ]
 }
