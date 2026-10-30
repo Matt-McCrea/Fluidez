@@ -1,0 +1,194 @@
+{
+  "node": "x:se-three-ways",
+  "hook": {
+    "line": "Walk down the block in La Candelaria and *se* is everywhere: on the signs, in the gossip, in everyone's morning. It's the same little word doing three different jobs.",
+    "es": "En el café se come muy bien.",
+    "en": "You eat really well at the café."
+  },
+  "examples": [
+    {
+      "es": "Vale se levanta a las cuatro.",
+      "en": "Vale gets up at four."
+    },
+    {
+      "es": "Hernando se sienta siempre en la misma mesa.",
+      "en": "Hernando always sits at the same table."
+    },
+    {
+      "es": "Tomás y Vale se conocieron en el café.",
+      "en": "Tomás and Vale met at the café."
+    },
+    {
+      "es": "Rosa y Hernando se querían mucho.",
+      "en": "Rosa and Hernando loved each other very much."
+    },
+    {
+      "es": "Se arrienda apartamento.",
+      "en": "Apartment for rent."
+    },
+    {
+      "es": "Aquí se habla inglés.",
+      "en": "English is spoken here."
+    },
+    {
+      "es": "Se necesita mesero.",
+      "en": "Waiter needed."
+    }
+  ],
+  "rule": "Ask one question: who is doing it, and to whom?\n\nOne person, doing it to themselves: *Vale se levanta.* Vale gets (herself) up. This is your daily routine *se*.\n\nTwo or more people, doing it to each other: *Tomás y Vale se conocieron.* They met each other. The verb is plural and there's a pair or a group.\n\nNobody named at all: *Se arrienda apartamento.* Somebody is renting it out, and it doesn't matter who. English says for rent, is spoken, or you (*Aquí se come bien*: you eat well here).\n\nSo look for the person. A name with a singular verb: themselves. A pair with a plural verb and a relationship verb (*conocerse*, *quererse*, *ayudarse*): each other. No person anywhere: people in general.",
+  "smallPrint": "Teachers call these the reflexive *se*, the reciprocal *se* and the impersonal *se*.",
+  "readAndPick": [
+    {
+      "es": "Vale se levanta a las cuatro.",
+      "options": [
+        "Vale gets up at four.",
+        "Vale and someone get each other up at four.",
+        "People get up at four."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tomás y Vale se conocieron en el café.",
+      "options": [
+        "Tomás and Vale met at the café.",
+        "People met at the café.",
+        "Tomás met Vale's family at the café."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se arrienda apartamento.",
+      "options": [
+        "He rents himself an apartment.",
+        "Apartment for rent.",
+        "They rent each other an apartment."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Aquí se habla inglés.",
+      "options": [
+        "He talks to himself in English here.",
+        "They talk to each other in English here.",
+        "English is spoken here."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Rosa y Hernando se querían mucho.",
+      "options": [
+        "Rosa and Hernando loved themselves.",
+        "Rosa and Hernando loved each other very much.",
+        "People loved Rosa and Hernando."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hernando se sienta siempre en la misma mesa.",
+      "options": [
+        "People always sit at the same table.",
+        "Hernando always sits at the same table."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se vive bien en Bogotá.",
+      "options": [
+        "Life is good in Bogotá.",
+        "He lives with himself in Bogotá.",
+        "They live with each other in Bogotá."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale y Tomás se ayudan.",
+      "options": [
+        "People help Vale and Tomás.",
+        "Vale and Tomás help each other.",
+        "Vale helps Tomás."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se necesita mesero.",
+      "options": [
+        "The waiter needs himself.",
+        "Waiter needed.",
+        "The waiters need each other."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *conocieron* or *se conocieron* and type the whole sentence: *Rosa y Hernando ___ en el café.* (Rosa and Hernando met at the café.)",
+      "answer": "Rosa y Hernando se conocieron en el café.",
+      "accept": [
+        "Hernando y Rosa se conocieron en el café."
+      ],
+      "why": "They met each other: a pair, a plural verb and *se*."
+    },
+    {
+      "prompt": "Pick *se levanta* or *levanta* and type the whole sentence: *Vale ___ a las cuatro.*",
+      "answer": "Vale se levanta a las cuatro.",
+      "accept": [],
+      "why": "One person getting herself up: the routine *se*."
+    },
+    {
+      "prompt": "Write the sign in Spanish: House for sale.",
+      "answer": "Se vende casa.",
+      "accept": [],
+      "why": "No seller named, so *se* + the verb for he or she."
+    },
+    {
+      "prompt": "Type in Spanish: English is spoken here.",
+      "answer": "Aquí se habla inglés.",
+      "accept": [
+        "Se habla inglés aquí."
+      ],
+      "why": "Nobody in particular speaks it, so *se habla*."
+    },
+    {
+      "prompt": "Type in Spanish: Hernando always sits at the same table.",
+      "answer": "Hernando se sienta siempre en la misma mesa.",
+      "accept": [
+        "Hernando siempre se sienta en la misma mesa."
+      ],
+      "why": "One person, sitting himself down: routine *se*."
+    },
+    {
+      "prompt": "Make it about two people who love each other: *Rosa quería mucho a Hernando.*",
+      "answer": "Rosa y Hernando se querían mucho.",
+      "accept": [
+        "Hernando y Rosa se querían mucho."
+      ],
+      "why": "Two people, a plural verb and *se*: they loved each other."
+    },
+    {
+      "prompt": "Make it about people in general: *Comemos muy bien en el café.* (You eat really well at the café.)",
+      "answer": "En el café se come muy bien.",
+      "accept": [
+        "Se come muy bien en el café."
+      ],
+      "why": "Nobody named: *se* + the verb for he or she."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Se arriendan apartamento.",
+      "right": "Se arrienda apartamento.",
+      "why": "Almost. Nobody is named, so the verb stays in the he or she form."
+    },
+    {
+      "wrong": "Tomás y Vale conocieron en el café.",
+      "right": "Tomás y Vale se conocieron en el café.",
+      "why": "Met each other needs *se*; without it, they met someone else."
+    },
+    {
+      "wrong": "Inglés es hablado aquí.",
+      "right": "Aquí se habla inglés.",
+      "why": "English says is spoken; Spanish uses *se* with the he or she form instead."
+    }
+  ],
+  "personal": "Write three short lines about your world: one thing you do to yourself every morning, one person you met (*Nos conocimos...*), and one thing people do where you live (*Aquí se...*)."
+}

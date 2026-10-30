@@ -1,0 +1,178 @@
+{
+  "node": "g:diminutives",
+  "hook": {
+    "line": "Listen to the café on a busy morning and half the words seem to end in *-ico* or *-ito*. Nobody is asking for a tiny coffee. They're being friendly.",
+    "es": "¿Me regala un tintico, por favor?",
+    "en": "Could I have a coffee, please? (to a waiter, formal)"
+  },
+  "examples": [
+    {
+      "es": "Espérame un momentico.",
+      "en": "Wait a sec. (to a friend)"
+    },
+    {
+      "es": "Ahorita voy.",
+      "en": "I'm coming in a minute."
+    },
+    {
+      "es": "¿Quieres un poquito de torta?",
+      "en": "Do you want a bit of cake? (to a friend)"
+    },
+    {
+      "es": "Mi abuelita guardaba todas las tarjetas.",
+      "en": "My grandma kept all the cards."
+    },
+    {
+      "es": "Te traje un regalito.",
+      "en": "I brought you a little present. (to a friend)"
+    },
+    {
+      "es": "Vale tiene un gatico.",
+      "en": "Vale has a little cat."
+    },
+    {
+      "es": "Pobrecito Tomás.",
+      "en": "Poor Tomás."
+    }
+  ],
+  "rule": "Add *-ito* or *-ita* to a word and it gets smaller, softer or friendlier: *regalo*, *regalito*; *abuela*, *abuelita*; *poco*, *poquito*.\n\nIn Colombia, when the word ends in *-to* or *-ta*, the ending is *-ico*: *momento*, *momentico*; *rato*, *ratico*; *tinto*, *tintico*; *gato*, *gatico*.\n\nIt keeps the word's *-o* or *-a*: *una casita*, *un gatico*, *las velitas*.\n\nMostly it's about warmth, not size. *¿Me regala un tintico?* is a polite, friendly way to order a normal coffee. *Un momentico* is a moment, said kindly. *Ahorita* means in a bit, and in Colombia that bit can be long.\n\nEnglish does this only now and then (doggy, little bit). Spanish does it all day.",
+  "smallPrint": "Teachers call these diminutives (*diminutivos*). Spelling follows the sound: *poco* becomes *poquito*, so the hard *k* sound stays.",
+  "readAndPick": [
+    {
+      "es": "Vale tiene un gatico.",
+      "options": [
+        "Vale has a little cat.",
+        "Vale has a big cat.",
+        "Vale has two cats."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Pobrecita Vale.",
+      "options": [
+        "Vale is poor.",
+        "Poor Vale.",
+        "Vale's poor friend."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es una casita.",
+      "options": [
+        "It's a big house.",
+        "It's two houses.",
+        "It's a little house."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Te traje un regalito.",
+      "options": [
+        "I brought you a little present. (to a friend)",
+        "I brought you a huge present. (to a friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Un momentico, ya voy.",
+      "options": [
+        "It's a big moment.",
+        "Just a sec, I'm coming."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Quieres un poquito de torta?",
+      "options": [
+        "Do you want a lot of cake? (to a friend)",
+        "Do you want a bit of cake? (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hola, abuelita.",
+      "options": [
+        "Hi, Grandma.",
+        "Hi, Grandpa.",
+        "Hi, little girl."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hablamos un ratico.",
+      "options": [
+        "We talked for hours.",
+        "We talked for a little while."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *tintito* or *tintico* and type the whole line: *¿Me regala un ___?*",
+      "answer": "¿Me regala un tintico?",
+      "accept": [
+        "¿Me regala un tintico, por favor?"
+      ],
+      "why": "*Tinto* ends in *-to*, so in Colombia it's *-ico*."
+    },
+    {
+      "prompt": "Pick *casito* or *casita* and type the whole sentence: *Es una ___.*",
+      "answer": "Es una casita.",
+      "accept": [],
+      "why": "*Casa* is an *-a* word, and the ending keeps it: *casita*."
+    },
+    {
+      "prompt": "Say it the Colombian way, to a friend: Wait a sec. (use *momento*)",
+      "answer": "Espérame un momentico.",
+      "accept": [
+        "Un momentico."
+      ],
+      "why": "*Momento* ends in *-to*, so *momentico*."
+    },
+    {
+      "prompt": "Type in Spanish: I brought you a little present. (to a friend)",
+      "answer": "Te traje un regalito.",
+      "accept": [],
+      "why": "*Regalo* drops its *-o* and takes *-ito*."
+    },
+    {
+      "prompt": "Type in Spanish: I'm coming in a minute. (use *ahora*)",
+      "answer": "Ahorita voy.",
+      "accept": [
+        "Ya voy, ahorita."
+      ],
+      "why": "*Ahorita* is the friendly, Colombian in a bit."
+    },
+    {
+      "prompt": "Make it softer: *¿Quieres un poco de torta?*",
+      "answer": "¿Quieres un poquito de torta?",
+      "accept": [],
+      "why": "*Poco* becomes *poquito*: the *c* turns to *qu* to keep its sound."
+    },
+    {
+      "prompt": "Make it warmer: *Mi abuela guardaba todas las tarjetas.*",
+      "answer": "Mi abuelita guardaba todas las tarjetas.",
+      "accept": [],
+      "why": "*Abuelita* is how most people talk about a grandmother they loved."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Espérame un momentito.",
+      "right": "Espérame un momentico.",
+      "why": "People will understand you, but in Colombia a word ending in *-to* takes *-ico*."
+    },
+    {
+      "wrong": "¿Me regala un pocoito?",
+      "right": "¿Me regala un poquito?",
+      "why": "Drop the last vowel first, and keep the *k* sound with *qu*: *poquito*."
+    },
+    {
+      "wrong": "Una casito.",
+      "right": "Una casita.",
+      "why": "The ending follows the word: *casa* is an *-a* word, so *-ita*."
+    }
+  ],
+  "personal": "Order something at your favourite café the Colombian way, with one *-ico* or *-ito* (*¿Me regala un...?*)."
+}

@@ -1,0 +1,122 @@
+{
+  "node": "p:felicitaciones-por",
+  "hook": {
+    "line": "The partnership is signed, and Vale deserves more than a nod. In English you congratulate someone on something. Spanish uses a different little word.",
+    "es": "¡Felicitaciones por el café, Vale!",
+    "en": "Congratulations on the café, Vale!"
+  },
+  "examples": [
+    { "es": "¡Felicitaciones por el trabajo nuevo!", "en": "Congratulations on the new job!" },
+    { "es": "¡Felicitaciones por el bebé!", "en": "Congratulations on the baby!" },
+    { "es": "¡Felicidades por tu graduación!", "en": "Congratulations on your graduation! (to a friend)" },
+    { "es": "¡Felicitaciones por graduarte!", "en": "Congratulations on graduating! (to a friend)" },
+    { "es": "¡Felicitaciones a los novios!", "en": "Congratulations to the bride and groom!" },
+    { "es": "Lo felicito, don Hernando.", "en": "Congratulations, don Hernando." }
+  ],
+  "rule": "*¡Felicitaciones!* or *¡Felicidades!* works for anything: a birthday, a wedding, a new job. Both are always plural.\n\nTo say what for, English uses on. Spanish uses *por*: *por el bebé*, *por tu graduación*. With an action, *por* + the plain verb: *por graduarte*, *por abrir el café*.\n\nTo say who, use *a*: *¡Felicitaciones a los novios!*\n\nTo a person directly, you can also say *Te felicito* (to a friend) or *Lo felicito*, *La felicito* (formal).",
+  "smallPrint": "In Spain you'll hear *¡Enhorabuena!* for an achievement. In Colombia and most of Latin America, *felicitaciones* covers it.",
+  "readAndPick": [
+    {
+      "es": "¡Felicitaciones por el bebé!",
+      "options": ["Congratulations to the baby!", "Congratulations on the baby!"],
+      "answer": 1
+    },
+    {
+      "es": "¡Felicitaciones a los novios!",
+      "options": ["Congratulations to the bride and groom!", "Congratulations on the wedding!"],
+      "answer": 0
+    },
+    {
+      "es": "¡Felicidades por tu graduación!",
+      "options": ["Congratulations on my graduation!", "Congratulations on her graduation!", "Congratulations on your graduation! (to a friend)"],
+      "answer": 2
+    },
+    {
+      "es": "¡Felicitaciones por graduarte!",
+      "options": ["Congratulations on graduating! (to a friend)", "Thanks for graduating! (to a friend)"],
+      "answer": 0
+    },
+    {
+      "es": "Te felicito por el trabajo nuevo.",
+      "options": ["Congratulations on the new job. (formal)", "Congratulations on the new job. (to a friend)", "Thanks for the new job. (to a friend)"],
+      "answer": 1
+    },
+    {
+      "es": "Lo felicito, don Hernando.",
+      "options": ["Congratulations, don Hernando.", "Thank you, don Hernando."],
+      "answer": 0
+    },
+    {
+      "es": "Gracias por todo.",
+      "options": ["Congratulations on everything.", "Thanks for everything."],
+      "answer": 1
+    },
+    {
+      "es": "¡Felicitaciones a Vale!",
+      "options": ["Congratulations on Vale!", "Congratulations, Vale!", "Congratulations to Vale!"],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *en* or *por* and type the whole line: *¡Felicitaciones ___ el trabajo nuevo!*",
+      "answer": "¡Felicitaciones por el trabajo nuevo!",
+      "accept": [],
+      "why": "English congratulates on; Spanish congratulates *por*."
+    },
+    {
+      "prompt": "Pick *por* or *a* and type the whole line: *¡Felicitaciones ___ los novios!* (to the bride and groom)",
+      "answer": "¡Felicitaciones a los novios!",
+      "accept": ["¡Felicidades a los novios!"],
+      "why": "*A* says who; *por* says what for."
+    },
+    {
+      "prompt": "Type in Spanish: Congratulations on the baby!",
+      "answer": "¡Felicitaciones por el bebé!",
+      "accept": ["¡Felicidades por el bebé!"],
+      "why": "*Por* + the thing."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Congratulations on graduating!",
+      "answer": "¡Felicitaciones por graduarte!",
+      "accept": ["¡Felicidades por graduarte!"],
+      "why": "After *por*, an action stays in its plain form, with *te* on the end."
+    },
+    {
+      "prompt": "Type in Spanish: Congratulations on the new apartment!",
+      "answer": "¡Felicitaciones por el apartamento nuevo!",
+      "accept": ["¡Felicidades por el apartamento nuevo!"],
+      "why": "Same frame, new thing: *por el apartamento nuevo*."
+    },
+    {
+      "prompt": "Say it straight to a friend instead: *¡Felicitaciones por el trabajo nuevo!* (use *felicito*)",
+      "answer": "Te felicito por el trabajo nuevo.",
+      "accept": ["¡Te felicito por el trabajo nuevo!"],
+      "why": "*Te felicito* is I congratulate you; the *por* stays."
+    },
+    {
+      "prompt": "Now to don Hernando (formal): *Te felicito.*",
+      "answer": "Lo felicito.",
+      "accept": ["Lo felicito, don Hernando."],
+      "why": "For *usted*, a man, *te* becomes *lo*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¡Felicitaciones en el trabajo nuevo!",
+      "right": "¡Felicitaciones por el trabajo nuevo!",
+      "why": "Almost. Spanish congratulates you *por* something, not *en* it."
+    },
+    {
+      "wrong": "¡Felicitación!",
+      "right": "¡Felicitaciones!",
+      "why": "As a greeting it's always plural."
+    },
+    {
+      "wrong": "¡Felicitaciones por te graduaste!",
+      "right": "¡Felicitaciones por graduarte!",
+      "why": "After *por*, use the plain verb, not a past form."
+    }
+  ],
+  "personal": "Think of someone who had good news lately and congratulate them in Spanish with *por*."
+}

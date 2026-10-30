@@ -1,0 +1,192 @@
+{
+  "node": "g:exclamations",
+  "hook": {
+    "line": "News is coming at Tomás from every side this week, and silence reads as not caring. A Colombian reacts out loud, fast, in two or three words.",
+    "es": "¡Cuánto tiempo sin verte!",
+    "en": "Long time no see! (to a friend)"
+  },
+  "examples": [
+    {
+      "es": "¡Qué bueno verte, don Hernando!",
+      "en": "How good to see you, don Hernando!"
+    },
+    {
+      "es": "¡Cuánta gente!",
+      "en": "So many people!"
+    },
+    {
+      "es": "¡Cuántos regalos!",
+      "en": "So many presents!"
+    },
+    {
+      "es": "¡Qué bonita sorpresa!",
+      "en": "What a lovely surprise!"
+    },
+    {
+      "es": "¡Qué bien cocina Vale!",
+      "en": "Vale cooks so well!"
+    },
+    {
+      "es": "¡Qué rápido pasa el tiempo!",
+      "en": "Time flies!"
+    },
+    {
+      "es": "¡Qué linda estás!",
+      "en": "You look lovely! (to a woman, a friend)"
+    },
+    {
+      "es": "¡Tan lindo!",
+      "en": "How sweet!"
+    }
+  ],
+  "rule": "You already react with *¡Qué bonito!* and *¡Qué pena!* Now stretch it.\n\n*¡Qué* + describing word + thing: *¡Qué bonita sorpresa!* English says what a lovely surprise; Spanish has no a.\n*¡Qué* + how + verb: *¡Qué bien cocina Vale!* The verb comes straight after, and the person goes to the end.\n*¡Qué bueno* + verb: *¡Qué bueno verte!*\n*¡Cuánto!* for so much, so many. It matches the thing: *cuánto tiempo*, *cuánta gente*, *cuántos regalos*, *cuántas flores*.\n\nThe accent on *qué* and *cuánto* is what makes it a reaction. Without it, *que* is just that, the word in *Que te vaya bien*. And the marks at both ends tell you it's a reaction, not a question: *¡Cuánta gente!* (so many people) against *¿Cuánta gente viene?* (how many people are coming?).\n\nColombians love a short *¡Tan lindo!* for anything sweet.",
+  "smallPrint": "Teachers call these exclamatives (*oraciones exclamativas*). In a longer pattern, *¡Qué día tan largo!*, *tan* goes before the describing word.",
+  "readAndPick": [
+    {
+      "es": "¡Cuánta gente!",
+      "options": [
+        "How many people are there?",
+        "So many people!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Cuánta gente viene?",
+      "options": [
+        "How many people are coming?",
+        "So many people are coming!"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Qué bien cocina Vale!",
+      "options": [
+        "Does Vale cook well?",
+        "Vale cooks well.",
+        "Vale cooks so well!"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¡Que te vaya bien!",
+      "options": [
+        "All the best! (to a friend)",
+        "How well it's going for you!"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Qué tarde es!",
+      "options": [
+        "What time is it?",
+        "It's so late!",
+        "It's late."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Qué hora es?",
+      "options": [
+        "What time is it?",
+        "What a time!"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Cuántos años!",
+      "options": [
+        "How old are you?",
+        "So many years!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Qué linda estás!",
+      "options": [
+        "You look lovely! (to a woman, a friend)",
+        "You look lovely! (to a man, a friend)",
+        "Are you well? (to a woman, a friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Qué bonitas!",
+      "options": [
+        "How pretty! (one thing)",
+        "How pretty! (several things)"
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *cuánto* or *cuánta* and type the whole reaction: *¡___ gente!* (So many people!)",
+      "answer": "¡Cuánta gente!",
+      "accept": [],
+      "why": "*Gente* is a *la* word, so *cuánta*."
+    },
+    {
+      "prompt": "Pick *que* or *qué* and type the whole reaction: *¡___ bueno verte!* (How good to see you!)",
+      "answer": "¡Qué bueno verte!",
+      "accept": [],
+      "why": "A reaction needs the accent: *qué*."
+    },
+    {
+      "prompt": "React in Spanish: So many presents!",
+      "answer": "¡Cuántos regalos!",
+      "accept": [],
+      "why": "Lots of *regalos*, so *cuántos*, with the *-os*."
+    },
+    {
+      "prompt": "React in Spanish: What a lovely surprise! (use *bonita*)",
+      "answer": "¡Qué bonita sorpresa!",
+      "accept": [],
+      "why": "No word for a: just *qué*, then the describing word, then the thing."
+    },
+    {
+      "prompt": "React in Spanish: Long time no see! (to a friend)",
+      "answer": "¡Cuánto tiempo sin verte!",
+      "accept": [
+        "¡Cuánto tiempo!"
+      ],
+      "why": "Literally so much time without seeing you; *tiempo* is an *el* word, so *cuánto*."
+    },
+    {
+      "prompt": "Turn the plain statement into a reaction: *Vale cocina muy bien.*",
+      "answer": "¡Qué bien cocina Vale!",
+      "accept": [],
+      "why": "*Qué bien* goes first, the verb right after, and Vale moves to the end."
+    },
+    {
+      "prompt": "Turn the question into a reaction: *¿Cuánta comida hay?* (So much food!)",
+      "answer": "¡Cuánta comida hay!",
+      "accept": [
+        "¡Cuánta comida!"
+      ],
+      "why": "Same words, new marks: *¡ !* makes it a reaction."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¡Que bonita sorpresa!",
+      "right": "¡Qué bonita sorpresa!",
+      "why": "Almost. Without the accent, *que* is just that; a reaction needs *qué*."
+    },
+    {
+      "wrong": "¡Qué una sorpresa!",
+      "right": "¡Qué sorpresa!",
+      "why": "English says what a surprise, but Spanish drops the a."
+    },
+    {
+      "wrong": "¡Cuánto gente!",
+      "right": "¡Cuánta gente!",
+      "why": "*Cuánto* matches the thing, and *gente* is a *la* word."
+    },
+    {
+      "wrong": "¡Qué bien Vale cocina!",
+      "right": "¡Qué bien cocina Vale!",
+      "why": "The verb comes right after *qué bien*; the person goes to the end."
+    }
+  ],
+  "personal": "Think of the last good news you heard and react to it in Spanish with *¡Qué...!* or *¡Cuánto...!*"
+}

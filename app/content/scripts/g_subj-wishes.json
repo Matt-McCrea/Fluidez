@@ -1,0 +1,134 @@
+{
+  "node": "g:subj-wishes",
+  "hook": {
+    "line": "It's Vale's birthday this week, and a birthday in Colombia comes with a stream of wishes. You already have the verb shape for them; all you need is the word that starts a wish.",
+    "es": "Ojalá Vale no sepa nada de la fiesta.",
+    "en": "I hope Vale doesn't know anything about the party."
+  },
+  "examples": [
+    { "es": "Ojalá no llueva el sábado.", "en": "I hope it doesn't rain on Saturday." },
+    { "es": "Espero que te guste la torta.", "en": "I hope you like the cake. (to a friend)" },
+    { "es": "Ojalá haya torta para todos.", "en": "I hope there's cake for everyone." },
+    { "es": "Espero que estés bien.", "en": "I hope you're well. (to a friend)" },
+    { "es": "Espero que se mejore pronto.", "en": "I hope you get better soon. (formal)" },
+    { "es": "Ojalá puedas venir.", "en": "I hope you can come. (to a friend)" },
+    { "es": "¡Que te vaya bien!", "en": "All the best! (to a friend)" },
+    { "es": "¡Que la pases bien!", "en": "Have fun! (to a friend)" }
+  ],
+  "rule": "Last week you used the wish forms after *quiero que*. Hoping works the same way, because a hope is a wish too.\n\n*Ojalá* + wish form: *Ojalá no llueva.* No *que* needed.\n*Espero que* + wish form: *Espero que te guste.*\n\nEnglish says I hope it doesn't rain, with an ordinary verb. Spanish can't: *Ojalá no llueve* sounds broken. After *ojalá* and *espero que*, the verb always takes the wish shape: *llueva*, *guste*, *estés*, *haya*.\n\nThe same rule as before: if it's your own action, there's no *que*. *Espero verte pronto.* I hope, I see you.\n\nYou've been saying the short versions for months without knowing it. *¡Que te mejores!* and *¡Que te vaya bien!* are wishes with the first part cut off: (I hope) that it goes well for you. Learn those whole for now.",
+  "smallPrint": "Teachers call this the present subjunctive of wishes (*subjuntivo desiderativo*). *Ojalá* comes from Arabic, roughly \"God willing\".",
+  "readAndPick": [
+    {
+      "es": "Espero que estés bien.",
+      "options": ["I hope you're well. (to a friend)", "I hope I'm well.", "I'm sure you're well. (to a friend)"],
+      "answer": 0
+    },
+    {
+      "es": "Espero verte pronto.",
+      "options": ["I hope you see me soon.", "I hope to see you soon.", "I hope she sees you soon."],
+      "answer": 1
+    },
+    {
+      "es": "Ojalá puedas venir.",
+      "options": ["I hope I can come.", "You can come.", "I hope you can come. (to a friend)"],
+      "answer": 2
+    },
+    {
+      "es": "Ojalá pueda ir.",
+      "options": ["I hope I can go.", "I hope you can go. (to a friend)"],
+      "answer": 0
+    },
+    {
+      "es": "Espero que me llames.",
+      "options": ["I hope I call you.", "I hope you call me. (to a friend)", "I hope she calls me."],
+      "answer": 1
+    },
+    {
+      "es": "Espero que me llame.",
+      "options": ["I hope you call me. (to a friend)", "I hope she calls me.", "I call her."],
+      "answer": 1
+    },
+    {
+      "es": "¡Que le vaya bien!",
+      "options": ["All the best! (to a friend)", "All the best! (you all)", "All the best! (formal)"],
+      "answer": 2
+    },
+    {
+      "es": "Ojalá no haga frío.",
+      "options": ["I hope it isn't cold.", "It isn't cold.", "It wasn't cold."],
+      "answer": 0
+    },
+    {
+      "es": "Espero que les guste.",
+      "options": ["I hope you like it. (to a friend)", "I hope I like it.", "I hope you all like it."],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *llueve* or *llueva* and type the whole sentence: *Ojalá no ___ el sábado.* (I hope it doesn't rain on Saturday.)",
+      "answer": "Ojalá no llueva el sábado.",
+      "accept": [],
+      "why": "After *ojalá*, always the wish form."
+    },
+    {
+      "prompt": "Pick *gusta* or *guste* and type the whole sentence, to a friend: *Espero que te ___ la torta.*",
+      "answer": "Espero que te guste la torta.",
+      "accept": [],
+      "why": "*Espero que* is a wish, so *guste*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: I hope you're well.",
+      "answer": "Espero que estés bien.",
+      "accept": ["Ojalá estés bien."],
+      "why": "*Estar* becomes *esté*, and for *tú* it's *estés*, accent and all."
+    },
+    {
+      "prompt": "Type in Spanish: I hope there's cake for everyone.",
+      "answer": "Ojalá haya torta para todos.",
+      "accept": ["Espero que haya torta para todos."],
+      "why": "The wish form of *hay* is *haya*."
+    },
+    {
+      "prompt": "Type in Spanish: I hope to see you soon. (to a friend)",
+      "answer": "Espero verte pronto.",
+      "accept": [],
+      "why": "You're the one seeing, so no *que*: just the plain verb."
+    },
+    {
+      "prompt": "Say it to don Hernando (formal) instead: *Espero que te mejores pronto.*",
+      "answer": "Espero que se mejore pronto.",
+      "accept": ["Ojalá se mejore pronto."],
+      "why": "For *usted*, *te* becomes *se* and the ending loses its *s*."
+    },
+    {
+      "prompt": "Make it about you all: *Espero que te guste.*",
+      "answer": "Espero que les guste.",
+      "accept": [],
+      "why": "For a group, *te* becomes *les*; one thing liked, so *guste* stays."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Ojalá no llueve.",
+      "right": "Ojalá no llueva.",
+      "why": "Almost. *Ojalá* always wants the wish form: *llueva*."
+    },
+    {
+      "wrong": "Espero que te gusta.",
+      "right": "Espero que te guste.",
+      "why": "A hope isn't a fact yet, so Spanish uses the wish form, *guste*."
+    },
+    {
+      "wrong": "Espero que yo pueda ir.",
+      "right": "Espero poder ir.",
+      "why": "When it's your own action, drop *que* and use the plain verb."
+    },
+    {
+      "wrong": "Espero que tú estás bien.",
+      "right": "Espero que estés bien.",
+      "why": "*Estás* is a fact; a hope takes *estés*, and the *tú* can go."
+    }
+  ],
+  "personal": "Write two wishes for someone you know: one with *Ojalá* and one with *Espero que* (*Ojalá mi hermana...*, *Espero que mi amigo...*)."
+}

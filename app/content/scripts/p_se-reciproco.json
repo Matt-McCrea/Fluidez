@@ -1,0 +1,122 @@
+{
+  "node": "p:se-reciproco",
+  "hook": {
+    "line": "Hernando's oldest friend from the taxi rank has died, and he wants to tell Tomás how far back they go. English needs each other for that. Spanish already has the word.",
+    "es": "Nos conocimos en la plaza en 1975.",
+    "en": "We met in the square in 1975."
+  },
+  "examples": [
+    { "es": "Rosa y Hernando se conocieron en el café.", "en": "Rosa and Hernando met at the café." },
+    { "es": "Nos queremos mucho.", "en": "We love each other very much." },
+    { "es": "Vale y Tomás se ayudan mucho.", "en": "Vale and Tomás help each other a lot." },
+    { "es": "Hernando y su amigo se veían todos los días en la plaza.", "en": "Hernando and his friend used to see each other every day in the square." },
+    { "es": "¿Cómo se conocieron?", "en": "How did you two meet? (you all)" },
+    { "es": "Se ayudan el uno al otro.", "en": "They help each other." }
+  ],
+  "rule": "You know *se* and *nos* from daily routines: *me levanto*, *nos levantamos*. With two or more people, the same little words can mean each other.\n\n*Se quieren.* They love each other.\n*Nos ayudamos.* We help each other.\n\nNothing else is needed. English adds each other; Spanish just uses *nos* or *se* with a plural verb. If it could be confused with themselves, add *el uno al otro*.\n\nLots of relationship verbs work this way: *conocerse* (to meet), *casarse*, *verse*, *escribirse*, *entenderse*.",
+  "smallPrint": "Teachers call this the reciprocal *se* (*se recíproco*). It only works with plural verbs.",
+  "readAndPick": [
+    {
+      "es": "Nos queremos mucho.",
+      "options": ["We love them very much.", "We love each other very much.", "They love each other very much."],
+      "answer": 1
+    },
+    {
+      "es": "Los ayudan.",
+      "options": ["They help each other.", "They help them."],
+      "answer": 1
+    },
+    {
+      "es": "Se ayudan.",
+      "options": ["They help each other.", "They help them."],
+      "answer": 0
+    },
+    {
+      "es": "Nos vemos los sábados.",
+      "options": ["They see each other on Saturdays.", "I see them on Saturdays.", "We see each other on Saturdays."],
+      "answer": 2
+    },
+    {
+      "es": "Vale y Tomás se entienden muy bien.",
+      "options": ["Vale and Tomás understand each other very well.", "Vale and Tomás understand him very well."],
+      "answer": 0
+    },
+    {
+      "es": "Los conocieron en la universidad.",
+      "options": ["They met at university.", "They met them at university."],
+      "answer": 1
+    },
+    {
+      "es": "Nos conocimos en Bogotá.",
+      "options": ["They met in Bogotá.", "We met in Bogotá.", "I met them in Bogotá."],
+      "answer": 1
+    },
+    {
+      "es": "Se quieren.",
+      "options": ["We love each other.", "He loves himself.", "They love each other."],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *nos* or *los* and type the whole sentence: *___ queremos mucho.* (We love each other very much.)",
+      "answer": "Nos queremos mucho.",
+      "accept": [],
+      "why": "For we, each other is *nos*."
+    },
+    {
+      "prompt": "Pick *se* or *los* and type the whole sentence: *Vale y Tomás ___ ayudan mucho.* (help each other)",
+      "answer": "Vale y Tomás se ayudan mucho.",
+      "accept": [],
+      "why": "*Se* points back at the same two people; *los* would be someone else."
+    },
+    {
+      "prompt": "Type in Spanish: Rosa and Hernando met at the café.",
+      "answer": "Rosa y Hernando se conocieron en el café.",
+      "accept": ["Hernando y Rosa se conocieron en el café."],
+      "why": "Met each other is *se conocieron*: no word for each other needed."
+    },
+    {
+      "prompt": "Type in Spanish: We met in Bogotá.",
+      "answer": "Nos conocimos en Bogotá.",
+      "accept": [],
+      "why": "We met each other, so *nos*."
+    },
+    {
+      "prompt": "Ask a couple (you all): How did you meet?",
+      "answer": "¿Cómo se conocieron?",
+      "accept": ["¿Cómo se conocieron ustedes?", "¿Ustedes cómo se conocieron?"],
+      "why": "For *ustedes*, each other is *se*."
+    },
+    {
+      "prompt": "Make it about we: *Se ven todos los sábados.*",
+      "answer": "Nos vemos todos los sábados.",
+      "accept": [],
+      "why": "*Se ven* becomes *nos vemos*."
+    },
+    {
+      "prompt": "Make it clear it's each other, not themselves: *Se ayudan.*",
+      "answer": "Se ayudan el uno al otro.",
+      "accept": ["Se ayudan entre ellos."],
+      "why": "*El uno al otro* removes any doubt."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Nos queremos cada otro.",
+      "right": "Nos queremos.",
+      "why": "Almost. *Nos* already means each other; there's nothing to add."
+    },
+    {
+      "wrong": "Rosa y Hernando conocieron en el café.",
+      "right": "Rosa y Hernando se conocieron en el café.",
+      "why": "Without *se*, met has no one to meet; *se* says they met each other."
+    },
+    {
+      "wrong": "Vale y Tomás les ayudan.",
+      "right": "Vale y Tomás se ayudan.",
+      "why": "*Les* points at other people; for each other, use *se*."
+    }
+  ],
+  "personal": "Write one line about how you met someone close to you (*Nos conocimos en...*) and one about what you do for each other."
+}
