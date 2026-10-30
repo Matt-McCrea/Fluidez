@@ -1,0 +1,237 @@
+{
+  "id": "sc-u22-a",
+  "unit": "u22",
+  "title": "Samuel Tomás",
+  "brief": "You're Tomás. Jhon Fredy runs into the café on Wednesday morning with big family news. Congratulate him, react to what he tells you and send him off with your best wishes. He's young and works for you, so use tú.",
+  "spare": false,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "¡Jefe! ¡Anoche mi hermana tuvo un bebé! Un niño.",
+      "npcEn": "Boss! Last night my sister had a baby! A boy.",
+      "intent": "React with \"how great!\" and congratulate him on the baby.",
+      "accept": [
+        "¡Qué bueno! ¡Felicitaciones por el bebé!",
+        "¡Qué bueno, Jhon Fredy! Felicitaciones por el bebé.",
+        "¡Qué bien! Felicitaciones por el bebé."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(^|[¡!.,\\s])qu[eé]\\s+(bueno|buena|bien|mal|horror|lindo|linda|bonito|bonita|gusto|historia|noticia|sorpresa|triste|chévere)",
+          "flags": "i",
+          "label": "react with an exclamation: ¡Qué bueno!, ¡Qué mal!"
+        }
+      ],
+      "focus": "g:exclamations",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Gracias. Mire la foto: es muy pequeño, y tiene mucho pelo.",
+      "npcEn": "Thanks. Look at the photo: he's very small, and he has lots of hair.",
+      "intent": "Say how lovely, and that he's tiny (use the little form: chiquito).",
+      "accept": [
+        "¡Qué lindo! Es chiquito.",
+        "Es chiquito. ¡Qué bonito!",
+        "¡Ay, qué lindo! Está chiquito."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "chiquito",
+            "chiquitico",
+            "pequeñito"
+          ],
+          "label": "make it small and sweet: chiquito"
+        }
+      ],
+      "focus": "g:diminutives",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Mi hermana está en el hospital, muy cansada. ¿Puedo salir a las dos para visitarla?",
+      "npcEn": "My sister is in the hospital, very tired. Can I leave at two to visit her?",
+      "intent": "Say yes, of course, and say you hope his sister rests.",
+      "accept": [
+        "Sí, claro. Ojalá tu hermana descanse.",
+        "Claro que sí. Ojalá tu hermana descanse mucho.",
+        "Claro, sin problema. Ojalá descanse un poco."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "descansar",
+          "tense": "presubj",
+          "person": "él/ella",
+          "label": "I hope she rests: ojalá descanse"
+        }
+      ],
+      "focus": "g:subj-wishes",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Gracias, jefe. Y otra cosa: se llama Samuel Tomás, como usted.",
+      "npcEn": "Thanks, boss. And another thing: he's called Samuel Tomás, like you.",
+      "intent": "Say what a surprise, and that you're really glad.",
+      "accept": [
+        "¡Qué sorpresa! Me alegro mucho.",
+        "¡Qué sorpresa, Jhon Fredy! Me alegro mucho.",
+        "Me alegro mucho. ¡Qué sorpresa!"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bme alegro\\b",
+          "flags": "i",
+          "label": "I'm glad: me alegro"
+        }
+      ],
+      "focus": "c:me-alegro",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Mi hermana dice que el bautizo es en diciembre. Bueno, ya me voy al hospital.",
+      "npcEn": "My sister says the christening is in December. Well, I'm off to the hospital.",
+      "intent": "Tell him to wait a moment (un momentico): there's a little cake (una tortica) for his sister.",
+      "accept": [
+        "Espera un momentico. Hay una tortica para tu hermana.",
+        "Un momentico, Jhon Fredy. Hay una tortica para tu hermana.",
+        "Espera un momentico, por favor. Esta tortica es para tu hermana."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "momentico",
+          "label": "a moment, the Colombian way: un momentico"
+        },
+        {
+          "type": "containsWord",
+          "word": "tortica",
+          "label": "a little cake: una tortica"
+        }
+      ],
+      "focus": "g:diminutives",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "¡Qué amable, jefe! Ella va a estar feliz. ¡Hasta mañana!",
+      "npcEn": "How kind, boss! She's going to be happy. See you tomorrow!",
+      "intent": "Say see you tomorrow, and wish him all the best.",
+      "accept": [
+        "Hasta mañana. ¡Que te vaya bien!",
+        "¡Que te vaya bien, Jhon Fredy! Hasta mañana.",
+        "¡Hasta mañana! Que te vaya bien."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bque te vaya\\b",
+          "flags": "i",
+          "label": "all the best: que te vaya bien"
+        }
+      ],
+      "focus": "c:que-te-vaya-bien",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:ayer-anoche",
+    "c:bien-y-tu",
+    "c:buen-viaje",
+    "c:chao-nos-vemos",
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:me-alegro",
+    "c:muy-amable",
+    "c:ojala",
+    "c:por-favor",
+    "c:puedo",
+    "c:que-bien",
+    "c:se-llama",
+    "c:sin-problema",
+    "c:tienes",
+    "c:un-momentico",
+    "c:voy-vas",
+    "g:adjective-agreement",
+    "g:commands-tu",
+    "g:diminutives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "l:alegrarse",
+    "l:amable",
+    "l:anoche",
+    "l:bautizo",
+    "l:bebé",
+    "l:bien",
+    "l:bonito",
+    "l:bueno",
+    "l:cansado",
+    "l:claro",
+    "l:cosa",
+    "l:decir",
+    "l:descansar",
+    "l:diciembre",
+    "l:esperar",
+    "l:estar",
+    "l:favor",
+    "l:felicitaciones",
+    "l:feliz",
+    "l:foto",
+    "l:hermana",
+    "l:hospital",
+    "l:ir",
+    "l:irse",
+    "l:jefe",
+    "l:lindo",
+    "l:llamarse",
+    "l:mañana",
+    "l:mirar",
+    "l:niño",
+    "l:pelo",
+    "l:pequeño",
+    "l:poder",
+    "l:problema",
+    "l:qué",
+    "l:salir",
+    "l:ser",
+    "l:sorpresa",
+    "l:tener",
+    "l:visitar",
+    "p:demonstratives-basic",
+    "p:exclamations-basic",
+    "p:felicitaciones-por",
+    "p:ir-a-venir-de-place",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:poco-un-poco",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:request-ladder",
+    "p:telling-time"
+  ]
+}

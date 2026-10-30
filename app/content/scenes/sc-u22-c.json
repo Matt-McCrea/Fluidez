@@ -1,0 +1,233 @@
+{
+  "id": "sc-u22-c",
+  "unit": "u22",
+  "title": "Lucía, Hernando's daughter",
+  "brief": "You're Tomás. A woman you've never met comes into the café on Thursday afternoon and asks for you. Find out who she is, answer her news, both sad and happy, and say goodbye warmly. You've only just met her, so use usted.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenas tardes. Usted es Tomás, ¿verdad? Soy Lucía, la hija de Hernando.",
+      "npcEn": "Good afternoon. You're Tomás, right? I'm Lucía, Hernando's daughter.",
+      "intent": "Say yes, it's you, and say what a pleasure to meet her (¡Qué gusto!).",
+      "accept": [
+        "Sí, soy yo. ¡Qué gusto!",
+        "Sí, soy Tomás. ¡Qué gusto conocerla!",
+        "¡Qué gusto, Lucía! Sí, soy yo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(^|[¡!.,\\s])qu[eé]\\s+(bueno|buena|bien|mal|horror|lindo|linda|bonito|bonita|gusto|historia|noticia|sorpresa|triste|chévere)",
+          "flags": "i",
+          "label": "react with an exclamation: ¡Qué bueno!, ¡Qué mal!"
+        }
+      ],
+      "focus": "g:exclamations",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Mi papá me mostró su tarjeta. Gracias. El Mono era como de la familia.",
+      "npcEn": "My dad showed me your card. Thank you. Mono was like family.",
+      "intent": "Give her your condolences.",
+      "accept": [
+        "Lo siento mucho, Lucía. Mi más sentido pésame.",
+        "Mi más sentido pésame.",
+        "Lo siento mucho. Mi más sentido pésame."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "pésame",
+            "lo siento"
+          ],
+          "label": "condolences: mi más sentido pésame"
+        }
+      ],
+      "focus": "c:sentido-pesame",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Gracias. Pero también tengo una buena noticia: mi hijo Andrés se casa en diciembre.",
+      "npcEn": "Thank you. But I also have some good news: my son Andrés is getting married in December.",
+      "intent": "Congratulate her on the wedding (felicitaciones por).",
+      "accept": [
+        "¡Felicitaciones por el matrimonio!",
+        "¡Qué bueno! Felicitaciones por el matrimonio de Andrés.",
+        "¡Felicitaciones por la boda!"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "felicitaciones por",
+          "flags": "i",
+          "label": "congratulations on: felicitaciones por"
+        }
+      ],
+      "focus": "p:felicitaciones-por",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Gracias. La novia es de Cartagena, y es muy linda.",
+      "npcEn": "Thank you. The bride is from Cartagena, and she's very lovely.",
+      "intent": "Ask her where they met.",
+      "accept": [
+        "¿Dónde se conocieron?",
+        "¿Y dónde se conocieron?",
+        "¡Qué bien! ¿Dónde se conocieron ellos?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bse conocieron\\b",
+          "flags": "i",
+          "label": "they met each other: se conocieron, with se"
+        },
+        {
+          "type": "question"
+        }
+      ],
+      "focus": "p:se-reciproco",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "En un bus, en Cartagena. Él no tenía plata y ella le pagó el pasaje.",
+      "npcEn": "On a bus, in Cartagena. He had no money and she paid his fare.",
+      "intent": "React (what a story!) and say you hope they are very happy.",
+      "accept": [
+        "¡Qué historia! Ojalá sean muy felices.",
+        "¡Qué lindo! Ojalá sean muy felices.",
+        "¡Qué historia! Ojalá sean felices."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "ser",
+          "tense": "presubj",
+          "person": "ellos",
+          "label": "I hope they are: ojalá sean"
+        }
+      ],
+      "focus": "g:subj-wishes",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Ah, y mi papá quiere que usted vaya al matrimonio. Con Vale, pero sin el pájaro.",
+      "npcEn": "Oh, and my dad wants you to come to the wedding. With Vale, but without the bird.",
+      "intent": "Say of course, and wish her all the best (she's usted).",
+      "accept": [
+        "Claro que sí. ¡Que le vaya muy bien!",
+        "Claro, con mucho gusto. ¡Que le vaya muy bien, Lucía!",
+        "¡Claro que sí! Que le vaya bien."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bque le vaya\\b",
+          "flags": "i",
+          "label": "all the best, with usted: que le vaya bien"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "que te vaya"
+          ],
+          "label": "use usted (le), not tú (te)"
+        }
+      ],
+      "focus": "c:que-te-vaya-bien",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:era",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:mucho-gusto",
+    "c:no-cierto",
+    "c:ojala",
+    "c:que-bien",
+    "c:que-te-mejores",
+    "c:que-te-vaya-bien",
+    "c:sentido-pesame",
+    "c:si-soy-yo",
+    "c:tengo",
+    "g:adjective-agreement",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:object-pronoun-position",
+    "g:passive-se",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-irregulars",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:bien",
+    "l:boda",
+    "l:buena",
+    "l:bueno",
+    "l:bus",
+    "l:casarse",
+    "l:claro",
+    "l:conocer",
+    "l:diciembre",
+    "l:dónde",
+    "l:familia",
+    "l:felicitaciones",
+    "l:feliz",
+    "l:gusto",
+    "l:hija",
+    "l:hijo",
+    "l:historia",
+    "l:ir",
+    "l:lindo",
+    "l:matrimonio",
+    "l:mostrar",
+    "l:noticia",
+    "l:novia",
+    "l:pagar",
+    "l:papá",
+    "l:pasaje",
+    "l:pesar",
+    "l:plata",
+    "l:pájaro",
+    "l:querer",
+    "l:qué",
+    "l:sentir",
+    "l:ser",
+    "l:tarde",
+    "l:tarjeta",
+    "l:tener",
+    "l:verdad",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:exclamations-basic",
+    "p:felicitaciones-por",
+    "p:ir-a-venir-de-place",
+    "p:me-te-nos-objects",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:se-reciproco"
+  ]
+}

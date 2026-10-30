@@ -1,0 +1,230 @@
+{
+  "id": "sc-u22-b",
+  "unit": "u22",
+  "title": "Six hundred thousand",
+  "brief": "You're Tomás. It's Monday night, the café is closed, and Vale is sitting with the inspector's fine in her hand. React to the bad news, comfort her and look for something good in the week. She's your partner and friend, so use tú.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, mira esto. Seiscientos mil pesos de multa. Por Simón.",
+      "npcEn": "Tomás, look at this. A six hundred thousand peso fine. Because of Simón.",
+      "intent": "React to the bad news: say how awful (¡Qué mal!) and that you're very sorry.",
+      "accept": [
+        "¡Qué mal! Lo siento mucho.",
+        "¡Qué mal, Vale! Lo siento mucho.",
+        "Lo siento mucho, Vale. ¡Qué mal!"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(^|[¡!.,\\s])qu[eé]\\s+(bueno|buena|bien|mal|horror|lindo|linda|bonito|bonita|gusto|historia|noticia|sorpresa|triste|chévere)",
+          "flags": "i",
+          "label": "react with an exclamation: ¡Qué bueno!, ¡Qué mal!"
+        }
+      ],
+      "focus": "g:exclamations",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Y Hernando está tan triste hoy. No sé qué hacer. Tengo ganas de llorar.",
+      "npcEn": "And Hernando is so sad today. I don't know what to do. I feel like crying.",
+      "intent": "Tell her not to cry and not to worry.",
+      "accept": [
+        "No llores, Vale. No te preocupes.",
+        "No te preocupes. No llores.",
+        "Vale, no llores, por favor. No te preocupes."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "llorar",
+          "tense": "presubj",
+          "person": "tú",
+          "label": "don't cry: no llores, not no lloras"
+        }
+      ],
+      "focus": "g:negative-commands",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Y si el café no tiene la plata? Este mes vendimos poco.",
+      "npcEn": "And what if the café doesn't have the money? We sold little this month.",
+      "intent": "Say you don't know, and that you hope Mariana can help you.",
+      "accept": [
+        "No sé. Ojalá Mariana nos pueda ayudar.",
+        "No sé, Vale. Ojalá Mariana pueda ayudar.",
+        "No sé. Ojalá Mariana nos pueda ayudar con la multa."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "poder",
+          "tense": "presubj",
+          "person": "él/ella",
+          "label": "I hope she can: ojalá pueda"
+        }
+      ],
+      "focus": "g:subj-wishes",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Bueno. Por lo menos el sábado fue bonito, ¿no? La fiesta, el contrato.",
+      "npcEn": "Well. At least Saturday was lovely, wasn't it? The party, the contract.",
+      "intent": "Agree, and say what a lovely party it was (¡Qué linda fiesta!).",
+      "accept": [
+        "Sí. ¡Qué linda fiesta!",
+        "¡Sí! ¡Qué bonita fiesta!",
+        "¡Qué linda fiesta! Y ahora somos socios."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "qu[eé]\\s+(linda|bonita|buena|chévere)\\s+fiesta|qu[eé]\\s+fiesta",
+          "flags": "i",
+          "label": "what a party: ¡Qué linda fiesta!"
+        }
+      ],
+      "focus": "g:exclamations",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Estoy muy cansada. Quiero algo dulce.",
+      "npcEn": "I'm very tired. I want something sweet.",
+      "intent": "Offer her a little coffee (un tintico) and a little piece of cake (un pedacito).",
+      "accept": [
+        "¿Quieres un tintico y un pedacito de torta?",
+        "Te hago un tintico. Y hay un pedacito de torta.",
+        "¿Un tintico y un pedacito de torta?"
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "tintico",
+          "label": "a little coffee: un tintico"
+        },
+        {
+          "type": "containsWord",
+          "word": "pedacito",
+          "label": "a little piece: un pedacito"
+        }
+      ],
+      "focus": "g:diminutives",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Gracias, socio. Mañana es el funeral del Mono. Va a ser un día largo.",
+      "npcEn": "Thanks, partner. Tomorrow is Mono's funeral. It's going to be a long day.",
+      "intent": "Say you hope tomorrow is a calm day.",
+      "accept": [
+        "Ojalá mañana sea un día tranquilo.",
+        "Sí. Ojalá mañana sea un día tranquilo.",
+        "Ojalá mañana sea más tranquilo, socia."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "ser",
+          "tense": "presubj",
+          "person": "él/ella",
+          "label": "I hope it is: ojalá sea"
+        }
+      ],
+      "focus": "g:subj-wishes",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hago-salgo-vengo",
+    "c:hay",
+    "c:no-cierto",
+    "c:no-se",
+    "c:no-te-preocupes",
+    "c:ojala",
+    "c:oye-mira",
+    "c:por-favor",
+    "c:que-bien",
+    "c:quiero",
+    "c:sentido-pesame",
+    "c:tengo",
+    "c:tienes",
+    "c:tranquilo",
+    "g:adjective-agreement",
+    "g:diminutives",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:indirect-questions",
+    "g:ir-a-plans",
+    "g:negative-commands",
+    "g:por-para-1",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:subj-irregulars",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:ahora",
+    "l:ayudar",
+    "l:bonito",
+    "l:bueno",
+    "l:café",
+    "l:cansado",
+    "l:contrato",
+    "l:dulce",
+    "l:día",
+    "l:estar",
+    "l:favor",
+    "l:fiesta",
+    "l:funeral",
+    "l:ganas",
+    "l:hacer",
+    "l:hoy",
+    "l:ir",
+    "l:largo",
+    "l:lindo",
+    "l:llorar",
+    "l:mal",
+    "l:mañana",
+    "l:mes",
+    "l:mirar",
+    "l:multa",
+    "l:peso",
+    "l:plata",
+    "l:poder",
+    "l:preocuparse",
+    "l:querer",
+    "l:qué",
+    "l:saber",
+    "l:sentir",
+    "l:ser",
+    "l:socio",
+    "l:sábado",
+    "l:tener",
+    "l:torta",
+    "l:tranquilo",
+    "l:triste",
+    "l:vender",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:exclamations-basic",
+    "p:indefinites-basic",
+    "p:me-te-nos-objects",
+    "p:no-se-que-hacer",
+    "p:poco-un-poco",
+    "p:quantifiers-basic",
+    "p:request-ladder",
+    "p:tener-ganas-de"
+  ]
+}
