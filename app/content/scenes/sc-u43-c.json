@@ -1,0 +1,222 @@
+{
+  "id": "sc-u43-c",
+  "unit": "u43",
+  "title": "Un viajero con frío",
+  "spare": true,
+  "brief": "You're Tomás. A new customer, Yesid, has just arrived in Bogotá from the coast and is freezing. He is about your age, so use tú. Be kind, make a guess about why his trip went wrong, and warm him up.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Yesid: Buenas tardes. Perdona, ¿siempre hace tanto frío aquí?",
+      "npcEn": "Yesid: Good afternoon. Excuse me, is it always this cold here?",
+      "intent": "Say it is almost always cold in the morning, but today is colder than usual.",
+      "accept": [
+        "Casi siempre por la mañana, pero hoy hace más frío de lo normal.",
+        "Por la mañana sí, pero hoy hace más frío que de costumbre.",
+        "Sí, por la mañana casi siempre, aunque hoy hace más frío de lo normal."
+      ],
+      "require": [
+        {
+          "type": "minWords",
+          "n": 6
+        }
+      ],
+      "focus": "g:softening",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Si hubiera sabido, habría traído un abrigo. Nadie me avisó.",
+      "npcEn": "If I had known, I would have brought a coat. Nobody warned me.",
+      "intent": "Say that you are very sorry that nobody had warned him.",
+      "accept": [
+        "Siento mucho que nadie te hubiera avisado.",
+        "Siento mucho que nadie te hubiera dicho nada.",
+        "Siento mucho que no te hubieran avisado."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsiento mucho que\\b.*\\bhubier[ao]n?\\b",
+          "flags": "iu",
+          "label": "start with: siento mucho que + hubiera..."
+        }
+      ],
+      "focus": "p:siento-mucho-que",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Y mi vuelo salió tarde. Si hubiera salido a tiempo, habría llegado de día. ¿Tú qué crees que pasó?",
+      "npcEn": "And my flight left late. If it had left on time, I would have arrived in daylight. What do you think happened?",
+      "intent": "Guess, with a hedge, that the storm probably delayed it.",
+      "accept": [
+        "Probablemente fue por la tormenta.",
+        "Seguramente lo retrasó el temporal.",
+        "Tal vez hubo una tormenta en el camino, no sé."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "probablemente",
+            "seguramente",
+            "tal vez",
+            "quizás",
+            "a lo mejor"
+          ],
+          "label": "hedge your guess: probablemente, seguramente, tal vez..."
+        }
+      ],
+      "focus": "g:softening",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Qué tonto fui. Pensaba que Bogotá era tropical, ¿sabes?",
+      "npcEn": "How silly I was. I thought Bogotá was tropical, you know?",
+      "intent": "Say that you would have thought the same, and offer to make him a hot chocolate.",
+      "accept": [
+        "Yo habría pensado lo mismo. ¿Te preparo un chocolate caliente?",
+        "Yo también habría pensado lo mismo. ¿Quieres un chocolate caliente?",
+        "Habría pensado lo mismo, no te preocupes. ¿Te preparo un chocolate?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bhabría\\s+pensado\\b",
+          "flags": "iu",
+          "label": "use habría pensado"
+        },
+        {
+          "type": "question"
+        }
+      ],
+      "focus": "g:conditional-perfect",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Uf, sí, por favor. ¿Aquí lo sirven con queso, de verdad?",
+      "npcEn": "Oh, yes please. Do they really serve it with cheese here?",
+      "intent": "Say yes, it comes with cheese, and he is going to like it.",
+      "accept": [
+        "Sí, con queso. Ya verás, te va a gustar.",
+        "Sí, aquí va con queso. Te va a gustar, ya verás.",
+        "Claro, con queso. Te va a encantar."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "queso",
+          "label": "mention the cheese"
+        }
+      ],
+      "focus": "g:softening",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:claro-listo",
+    "c:en-serio",
+    "c:era",
+    "c:fui",
+    "c:hola-buenos-dias",
+    "c:no-se",
+    "c:no-te-preocupes",
+    "c:por-favor",
+    "g:adverbs-mente",
+    "g:aunque-indicative",
+    "g:comparatives",
+    "g:conditional-perfect",
+    "g:direct-objects",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:ir-a-plans",
+    "g:lo-adjective",
+    "g:pluperfect-subj",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:ser-identity",
+    "g:si-hypothetical",
+    "g:si-past-unreal",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-past-triggers",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:abrigo",
+    "l:aquí",
+    "l:avisar",
+    "l:buena",
+    "l:caliente",
+    "l:camino",
+    "l:chocolate",
+    "l:claro",
+    "l:costumbre",
+    "l:creer",
+    "l:decir",
+    "l:día",
+    "l:encantar",
+    "l:favor",
+    "l:frío",
+    "l:gustar",
+    "l:hacer",
+    "l:hoy",
+    "l:ir",
+    "l:llegar",
+    "l:mañana",
+    "l:normal",
+    "l:pasar",
+    "l:pensar",
+    "l:perdonar",
+    "l:preocuparse",
+    "l:preparar",
+    "l:probablemente",
+    "l:querer",
+    "l:queso",
+    "l:qué",
+    "l:retrasar",
+    "l:saber",
+    "l:salir",
+    "l:seguramente",
+    "l:sentir",
+    "l:ser",
+    "l:servir",
+    "l:siempre",
+    "l:tarde",
+    "l:temporal",
+    "l:tiempo",
+    "l:tonto",
+    "l:tormenta",
+    "l:traer",
+    "l:tropical",
+    "l:ver",
+    "l:verdad",
+    "l:vez",
+    "l:vuelo",
+    "p:aqui-ahi-alla",
+    "p:event-ser-en",
+    "p:frequency-scale",
+    "p:hace-frio",
+    "p:llegar-a-tiempo",
+    "p:llevar-traer",
+    "p:me-te-nos-objects",
+    "p:pensar-en",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:que-opinas-de",
+    "p:saber-conocer",
+    "p:seguramente-probablemente",
+    "p:siento-mucho-que",
+    "p:tambien-tampoco"
+  ]
+}

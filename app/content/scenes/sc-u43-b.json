@@ -1,0 +1,227 @@
+{
+  "id": "sc-u43-b",
+  "unit": "u43",
+  "title": "Dos caminos",
+  "spare": false,
+  "brief": "You're Tomás, wiping tables with Vale after a long day. She is quick and dry, and a friend, so use tú. Talk about the Toronto job you turned down and what would have happened, then about how things turned out.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Vale: Mariana me contó lo de Toronto. Si tú hubieras firmado el contrato, ¿dónde estarías ahora?",
+      "npcEn": "Vale: Mariana told me about Toronto. If you had signed the contract, where would you be now?",
+      "intent": "Say that if you had accepted, you would be in Toronto.",
+      "accept": [
+        "Si hubiera aceptado, estaría en Toronto.",
+        "Estaría en Toronto, claro. Si hubiera aceptado el contrato, no estaría aquí.",
+        "Si hubiera aceptado el trabajo, ahora mismo estaría en Toronto, con frío."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsi\\b.*\\bhubier[ao]\\b",
+          "flags": "iu",
+          "label": "use si + hubiera..."
+        }
+      ],
+      "focus": "x:si-past-present-unreal",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Y el café? Sin ti, ¿qué habría pasado con el café?",
+      "npcEn": "And the café? Without you, what would have happened to the café?",
+      "intent": "Say that if you had left, the café would have closed.",
+      "accept": [
+        "Si me hubiera ido, el café habría cerrado.",
+        "Si me hubiera ido a Toronto, el café habría cerrado en un mes.",
+        "Creo que, si me hubiera ido, el café habría cerrado."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsi\\b.*\\bhubier[ao]\\b",
+          "flags": "iu",
+          "label": "start the condition: si + hubiera..."
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bhabría\\s+\\p{L}+(ado|ido)\\b",
+          "flags": "iu",
+          "label": "finish with: habría + participle"
+        }
+      ],
+      "focus": "g:si-past-unreal",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Qué dramático. Yo tampoco me quejo. Venir a Bogotá me salió bien. ¿Y a ti, quedarte?",
+      "npcEn": "How dramatic. I'm not complaining either. Coming to Bogotá worked out well for me. And for you, staying?",
+      "intent": "Say that staying worked out well for you, and that leaving would have been worse.",
+      "accept": [
+        "Sí, quedarme me salió bien. Irme habría sido peor.",
+        "Me salió muy bien. Irme habría sido un error.",
+        "Me salió bien, Vale. Habría sido peor irme."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsalió(?!\\p{L})\\s+(muy\\s+)?bien",
+          "flags": "iu",
+          "label": "say it worked out well: me salió bien"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bhabría sido\\b",
+          "flags": "iu",
+          "label": "compare with: habría sido..."
+        }
+      ],
+      "focus": "p:salirle-bien",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Mira, esa carta de Altamira me asustó. Pensé que el café no iba a sobrevivir a esta crisis.",
+      "npcEn": "Look, that letter from Altamira scared me. I thought the café wasn't going to survive this crisis.",
+      "intent": "Say the café has survived worse crises before.",
+      "accept": [
+        "Este café sobrevivió a crisis peores, ya verás.",
+        "El café ya sobrevivió a peores crisis. Va a sobrevivir a esta también.",
+        "Sobrevivió a crisis peores que esta, Vale."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsobreviv\\p{L}*\\s+a\\b",
+          "flags": "iu",
+          "label": "use sobrevivir a"
+        }
+      ],
+      "focus": "p:sobrevivir-a",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Brindo por eso. ¿Y si preparamos pan para celebrar?",
+      "npcEn": "I'll drink to that. And if we make bread to celebrate?",
+      "intent": "Say yes, and ask her what she is going to make.",
+      "accept": [
+        "Sí, claro. ¿Qué vas a preparar?",
+        "Me encanta la idea. ¿Qué pan vas a hacer?",
+        "Vale, hagámoslo. ¿Qué vas a preparar tú?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "avoidsPerson",
+          "person": "ellos",
+          "label": "talk to Vale, not about her"
+        }
+      ],
+      "focus": "g:si-past-unreal",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-mi-tambien",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:creo-que",
+    "c:me-encanta",
+    "c:oye-mira",
+    "c:voy-vas",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:commands-with-pronouns",
+    "g:comparatives",
+    "g:conditional",
+    "g:conditional-perfect",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:pluperfect-subj",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:si-hypothetical",
+    "g:si-past-unreal",
+    "g:si-present",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "l:aceptar",
+    "l:ahora",
+    "l:aquí",
+    "l:asustar",
+    "l:bien",
+    "l:brindar",
+    "l:café",
+    "l:carta",
+    "l:celebrar",
+    "l:cerrar",
+    "l:claro",
+    "l:contar",
+    "l:contrato",
+    "l:creer",
+    "l:crisis",
+    "l:dramático",
+    "l:dónde",
+    "l:encantar",
+    "l:error",
+    "l:estar",
+    "l:firmar",
+    "l:frío",
+    "l:hacer",
+    "l:idea",
+    "l:ir",
+    "l:irse",
+    "l:mes",
+    "l:mirar",
+    "l:pan",
+    "l:pasado",
+    "l:pensar",
+    "l:peor",
+    "l:preparar",
+    "l:quedar",
+    "l:quejarse",
+    "l:qué",
+    "l:salir",
+    "l:ser",
+    "l:sobrevivir",
+    "l:trabajo",
+    "l:venir",
+    "l:ver",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:brindo-por",
+    "p:demonstratives-basic",
+    "p:ir-a-venir-de-place",
+    "p:lo-de",
+    "p:lo-de-noun",
+    "p:lo-de-topic",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:pensar-en",
+    "p:que-tal-si",
+    "p:salirle-bien",
+    "p:sobrevivir-a",
+    "p:tambien-tampoco"
+  ]
+}
