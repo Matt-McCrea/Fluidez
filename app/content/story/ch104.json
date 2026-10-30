@@ -1,0 +1,355 @@
+{
+  "id": "ch104",
+  "unit": "u35",
+  "title": "Una camioneta de pan",
+  "text": "Hernando le ganaba al dominó a Jhon Fredy por primera vez en un mes.\nHernando: Ayer era la fila. Hoy estoy como nuevo.\nSe levantó para cantar victoria, se puso la mano en el pecho y se cayó detrás de su mesa.\nTomás: ¡Llamen una ambulancia!\nHernando abrió los ojos. Estaba blanco, pero hablaba.\nHernando: Ni se te ocurra, mijo. Una ambulancia cuesta una fortuna.\nSimón: ¡Ni se te ocurra! ¡Ni se te ocurra!\nEntonces doña Gloria paró delante del café con la camioneta de la panadería.\nGloria: Obviamente no vamos a esperar. ¡Súbanlo!\nLo subieron entre cien almojábanas calientes.\nHernando: Cuarenta años de taxi, y voy a llegar a la clínica en una camioneta de pan.\nVale: Usted no habla. Usted respira.\nEn urgencias, la fila llegaba hasta la calle.\nHernando: ¿Otra fila? Para ser martes, esto está lleno.\nEnfermera: Aquí todo el mundo tiene que hacer fila, señor.\nPero la enfermera le vio la cara, lo pasó primero y le pidió la cédula.\nHernando: En el zapato, mijo.\nEn el zapato estaba la billetera, y en la billetera, una foto vieja de Rosa, de joven.\nTomás guardó la foto otra vez, con mucho cuidado, y no dijo nada.\nHernando: Mija, le hago una propuesta. Le cambio mi reloj por un tinto, y me voy para mi casa.\nEnfermera: Mi propuesta es otra. Usted se queda esta noche, y mañana lo ve la cardióloga.\nEnfermera: Su abuelo tiene muy mal comportamiento.\nTomás: No es mi abuelo.\nHernando: Casi.\nEn la chaqueta de Hernando, Vale encontró una caja de pastillas sin abrir: «Doctor Mejía. Agosto». Era octubre.\nHernando: Esas pastillas son carísimas, mija. Yo estaba ahorrando para el horno.\nVale: Para mí, usted es más importante que todos los hornos de Bogotá.\nHernando cerró los ojos, pero sonreía.\nVale: Esto no se lo contamos a nadie. Si Altamira lo sabe, va a pensar que ya ganó.\nEnfermera: La cardióloga llega a las siete, y no le gusta repetir nada.\nTomás: Yo no entiendo a los médicos ni en inglés.\nVale: Entonces mañana la escuchamos los dos.",
+  "gloss": [
+    {
+      "es": "dominó",
+      "en": "dominoes"
+    },
+    {
+      "es": "pastillas",
+      "en": "pills"
+    },
+    {
+      "es": "cardióloga",
+      "en": "cardiologist (a woman)"
+    },
+    {
+      "es": "Ayer era la fila. Hoy estoy como nuevo.",
+      "en": "Yesterday it was the queue. Today I'm as good as new."
+    },
+    {
+      "es": "Se levantó para cantar victoria",
+      "en": "He stood up to claim victory"
+    },
+    {
+      "es": "Una ambulancia cuesta una fortuna.",
+      "en": "An ambulance costs a fortune."
+    },
+    {
+      "es": "Lo subieron entre cien almojábanas calientes.",
+      "en": "They lifted him in among a hundred hot almojábanas."
+    },
+    {
+      "es": "Usted no habla. Usted respira.",
+      "en": "You don't talk. You breathe."
+    },
+    {
+      "es": "Para ser martes, esto está lleno.",
+      "en": "For a Tuesday, this place is packed."
+    },
+    {
+      "es": "lo pasó primero",
+      "en": "took him in first"
+    },
+    {
+      "es": "Le cambio mi reloj por un tinto, y me voy para mi casa.",
+      "en": "I'll swap you my watch for a coffee, and I'm off home."
+    },
+    {
+      "es": "Su abuelo tiene muy mal comportamiento.",
+      "en": "Your grandfather is behaving very badly."
+    },
+    {
+      "es": "Casi.",
+      "en": "Almost."
+    },
+    {
+      "es": "sin abrir",
+      "en": "unopened"
+    },
+    {
+      "es": "Yo estaba ahorrando para el horno.",
+      "en": "I was saving for the oven."
+    },
+    {
+      "es": "Esto no se lo contamos a nadie.",
+      "en": "We're not telling anyone about this."
+    },
+    {
+      "es": "Si Altamira lo sabe, va a pensar que ya ganó.",
+      "en": "If Altamira finds out, he'll think he's already won."
+    },
+    {
+      "es": "no le gusta repetir nada",
+      "en": "she doesn't like repeating anything"
+    },
+    {
+      "es": "Yo no entiendo a los médicos ni en inglés.",
+      "en": "I don't understand doctors even in English."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Hernando not want an ambulance?",
+      "options": [
+        "He thinks it costs a fortune",
+        "He prefers the Burra",
+        "He is afraid of hospitals",
+        "He wants to finish the game"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How does Hernando get to the clinic?",
+      "options": [
+        "In Doña Gloria's bakery van",
+        "In an ambulance",
+        "In the Burra",
+        "On the bus"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Tomás find in Hernando's wallet?",
+      "options": [
+        "An old photo of Rosa as a young woman",
+        "Joaquín's letter",
+        "A lottery ticket",
+        "The key to the café"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why did Hernando never take the pills from August?",
+      "options": [
+        "He was saving the money for the café's oven",
+        "He lost them",
+        "He is allergic to them",
+        "Vale hid them"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué dice Hernando cuando la enfermera dice «su abuelo»?",
+      "options": [
+        "Casi.",
+        "No es mi abuelo.",
+        "Ni se te ocurra.",
+        "Gracias, mija."
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Hernando is spending the night at the clinic, and the box of pills he never opened is now in Vale's hands. Tomorrow at seven the cardiologist comes, she doesn't like repeating herself, and Tomás has to understand every word.",
+  "rereadQuestions": [
+    {
+      "q": "Who was Hernando beating at dominoes?",
+      "options": [
+        "Jhon Fredy",
+        "Tomás",
+        "Simón",
+        "Mariana"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Where did Hernando keep his wallet?",
+      "options": [
+        "In his shoe",
+        "In his cap",
+        "In his jacket",
+        "Under his table"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Which month was written on the box of pills?",
+      "options": [
+        "August",
+        "October",
+        "December",
+        "March"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:ayer-anoche",
+    "c:entonces-bueno",
+    "c:era",
+    "c:hacer-fila",
+    "c:hago-salgo-vengo",
+    "c:ni-se-te-ocurra",
+    "c:no-entiendo",
+    "c:no-se",
+    "c:tienes",
+    "c:vamos-a",
+    "c:voy-a",
+    "c:voy-vas",
+    "g:adjective-agreement",
+    "g:adverbs-mente",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:comparatives",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:imperfect-habitual",
+    "g:imperfect-progressive",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-spelling-stem",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:verbs-of-change",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cambiar-de-por",
+    "p:cerca-de",
+    "p:container-de",
+    "p:costar-pagar",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:lavarse-las-manos",
+    "p:lleno-libre",
+    "p:numbers-un-una",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:para-mi",
+    "p:pensar-en",
+    "p:personal-a",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:todos-los-dias",
+    "p:viejo-antiguo-mayor"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:abuelo",
+    "l:agosto",
+    "l:ahorrar",
+    "l:almojábana",
+    "l:ambulancia",
+    "l:aquí",
+    "l:ayer",
+    "l:año",
+    "l:billetera",
+    "l:blanco",
+    "l:caerse",
+    "l:café",
+    "l:caja",
+    "l:caliente",
+    "l:calle",
+    "l:cambiar",
+    "l:camioneta",
+    "l:cantar",
+    "l:cara",
+    "l:caro",
+    "l:casa",
+    "l:cerrar",
+    "l:chaqueta",
+    "l:clínica",
+    "l:comportamiento",
+    "l:contar",
+    "l:costar",
+    "l:cuidado",
+    "l:cédula",
+    "l:decir",
+    "l:delante",
+    "l:detrás",
+    "l:doctor",
+    "l:dominó",
+    "l:encontrar",
+    "l:enfermera",
+    "l:entender",
+    "l:escuchar",
+    "l:esperar",
+    "l:estar",
+    "l:fila",
+    "l:fortuna",
+    "l:foto",
+    "l:ganar",
+    "l:guardar",
+    "l:gustar",
+    "l:hablar",
+    "l:hacer",
+    "l:horno",
+    "l:hoy",
+    "l:importante",
+    "l:inglés",
+    "l:ir",
+    "l:irse",
+    "l:joven",
+    "l:levantarse",
+    "l:llamar",
+    "l:llegar",
+    "l:lleno",
+    "l:mal",
+    "l:mano",
+    "l:martes",
+    "l:mañana",
+    "l:mes",
+    "l:mesa",
+    "l:mija",
+    "l:mijo",
+    "l:mundo",
+    "l:médico",
+    "l:noche",
+    "l:nuevo",
+    "l:obviamente",
+    "l:octubre",
+    "l:ocurrir",
+    "l:ojo",
+    "l:pan",
+    "l:panadería",
+    "l:parar",
+    "l:pasar",
+    "l:pastilla",
+    "l:pecho",
+    "l:pedir",
+    "l:pensar",
+    "l:ponerse",
+    "l:propuesta",
+    "l:quedarse",
+    "l:reloj",
+    "l:repetir",
+    "l:respirar",
+    "l:saber",
+    "l:ser",
+    "l:señor",
+    "l:sonreír",
+    "l:subir",
+    "l:taxi",
+    "l:tener",
+    "l:tinto",
+    "l:urgencia",
+    "l:ver",
+    "l:vez",
+    "l:victoria",
+    "l:viejo",
+    "l:zapato"
+  ]
+}

@@ -1,0 +1,361 @@
+{
+  "id": "ch105",
+  "unit": "u35",
+  "title": "Su español es de Toronto",
+  "text": "La doctora Salcedo entró a las siete en punto. Era joven y hablaba muy rápido, como en la radio.\nSalcedo: ¿El paciente Pacheco?\nHernando: Paciente no, doctora. Impaciente. ¿Otra doctora? Yo conozco una, y es abogada.\nSalcedo: Yo estudié medicina, señor. Vamos a mi consultorio.\nEn el consultorio había un corazón de plástico. Salcedo miró los exámenes.\nSalcedo: El paciente presenta una insuficiencia cardíaca, con una arritmia que hay que controlar con tratamiento farmacológico.\nTomás: Perdón, doctora. ¿Me lo puede repetir, más despacio? Mi español es de Toronto.\nSalcedo: El corazón. Está. Cansado.\nHernando: Hasta yo entendí esa, mijo.\nSalcedo: ¿Qué síntomas tenía? ¿Le faltaba el aire en la escalera?\nHernando: Ningún síntoma. Bueno, un poco, pero eso es la edad.\nSalcedo: ¿Tiene alergia a algún medicamento?\nHernando: Tengo alergia a los médicos.\nSalcedo: ¿Alguna infección este año? ¿Tiene las vacunas al día?\nHernando: Ninguna infección. La última vacuna me la pusieron en 1974.\nSalcedo escribió una receta larga. Tomás la leyó dos veces, como un contrato.\nSalcedo: Una pastilla tres veces por día, con las comidas. Este medicamento no se toma con tinto. El jarabe es para la tos, una cucharada por la noche.\nHernando: ¿Sin tinto? Eso no es medicina, doctora. Es un crimen.\nSalcedo: También le recomiendo una dieta saludable: poca sal, poca grasa y mucha fruta. Y nada de trasnochar.\nHernando: Yo no trasnocho. Yo madrugo. A las cinco ya estoy en el café.\nSalcedo: Entonces desde hoy le prohíbo madrugar. Le recomiendo descansar un mes.\nHernando: Doctora, yo descanso cuando me muera.\nVale: Tranquila, doctora. Eso se puede arreglar.\nSalcedo: Con dolor en el pecho, directo a urgencias. Su nieto me entendió, ¿cierto?\nTomás: Pastilla, tres veces por día. Jarabe, por la noche. Dieta saludable. Dolor, urgencias.\nHernando: Mijo, en diciembre es la reunión de la alcaldía. Yo tengo que estar ahí, en primera fila.\nTomás: Entonces usted hace todo lo que dice la receta, sin trampa.\nEn el café, Hernando pidió una empanada y buscó el salero. No estaba. Vale lo tenía en el delantal.\nSimón: ¡Eso se puede arreglar! ¡Arreglar!",
+  "gloss": [
+    {
+      "es": "Impaciente",
+      "en": "Impatient"
+    },
+    {
+      "es": "doctora",
+      "en": "doctor (a woman)"
+    },
+    {
+      "es": "cucharada",
+      "en": "spoonful"
+    },
+    {
+      "es": "trasnochar",
+      "en": "to stay up late"
+    },
+    {
+      "es": "trasnocho",
+      "en": "I stay up late"
+    },
+    {
+      "es": "madrugar",
+      "en": "to get up very early"
+    },
+    {
+      "es": "madrugo",
+      "en": "I get up very early"
+    },
+    {
+      "es": "delantal",
+      "en": "apron"
+    },
+    {
+      "es": "salero",
+      "en": "salt shaker"
+    },
+    {
+      "es": "como en la radio",
+      "en": "like on the radio"
+    },
+    {
+      "es": "¿Otra doctora? Yo conozco una, y es abogada.",
+      "en": "Another doctor? I know one, and she's a lawyer."
+    },
+    {
+      "es": "insuficiencia cardíaca",
+      "en": "heart failure"
+    },
+    {
+      "es": "arritmia",
+      "en": "arrhythmia (an irregular heartbeat)"
+    },
+    {
+      "es": "tratamiento farmacológico",
+      "en": "drug treatment"
+    },
+    {
+      "es": "Mi español es de Toronto.",
+      "en": "My Spanish is from Toronto."
+    },
+    {
+      "es": "El corazón. Está. Cansado.",
+      "en": "The heart. Is. Tired."
+    },
+    {
+      "es": "¿Le faltaba el aire en la escalera?",
+      "en": "Were you short of breath on the stairs?"
+    },
+    {
+      "es": "¿Tiene las vacunas al día?",
+      "en": "Are your vaccinations up to date?"
+    },
+    {
+      "es": "como un contrato",
+      "en": "like a contract"
+    },
+    {
+      "es": "Es un crimen.",
+      "en": "It's a crime."
+    },
+    {
+      "es": "Eso se puede arreglar.",
+      "en": "That can be arranged."
+    },
+    {
+      "es": "Su nieto me entendió, ¿cierto?",
+      "en": "Your grandson understood me, right?"
+    },
+    {
+      "es": "en primera fila",
+      "en": "in the front row"
+    },
+    {
+      "es": "sin trampa",
+      "en": "no cheating"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Tomás ask the doctor to repeat herself?",
+      "options": [
+        "She speaks fast and uses medical words",
+        "She speaks English",
+        "Hernando keeps interrupting",
+        "The room is noisy"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How often must Hernando take his pill?",
+      "options": [
+        "Three times a day, with meals",
+        "Once a day, at night",
+        "Only when he has pain",
+        "Twice a week"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Vale mean by «Eso se puede arreglar»?",
+      "options": [
+        "She jokes that she could make him rest for good",
+        "She will fix the coffee machine",
+        "She will pay for the medicine",
+        "She will find another doctor"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Hernando want to get better?",
+      "options": [
+        "He wants to be at the city hall meeting in December",
+        "He wants to drive the Burra again",
+        "He wants to go to the coast",
+        "He wants to win at dominoes"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Con qué no se toma el medicamento?",
+      "options": [
+        "Con tinto",
+        "Con agua",
+        "Con jugo de mango",
+        "Con las comidas"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Hernando has a prescription, a diet and orders to stop getting up at dawn, and Vale has his salt shaker in her apron. Tomorrow the whole café starts looking after him, whether he likes it or not.",
+  "rereadQuestions": [
+    {
+      "q": "What is in the doctor's office?",
+      "options": [
+        "A plastic heart",
+        "A photo of Rosa",
+        "A no smoking sign",
+        "A calendar"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "When was Hernando's last vaccination?",
+      "options": [
+        "In 1974",
+        "In 1970",
+        "Last year",
+        "He has never had one"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is the syrup for?",
+      "options": [
+        "His cough",
+        "His heart",
+        "His allergy",
+        "Sleep"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:entonces-bueno",
+    "c:era",
+    "c:hay",
+    "c:hay-que",
+    "c:mas-despacio",
+    "c:no-cierto",
+    "c:no-se",
+    "c:perdon-disculpe",
+    "c:se-puede",
+    "c:tengo",
+    "c:tengo-que",
+    "c:tienes",
+    "c:tranquilo",
+    "c:vamos-a",
+    "g:adjective-agreement",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indefinites",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:parecer-quedar",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-cuando-future",
+    "g:subj-irregulars",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:con-sin",
+    "p:costar-pagar",
+    "p:dates-years",
+    "p:demonstratives-basic",
+    "p:es-tiene-lleva",
+    "p:ir-a-venir-de-place",
+    "p:madrugar-trasnochar",
+    "p:me-te-nos-objects",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:permitir-inf",
+    "p:poco-un-poco",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:quedar-faltar-sobrar",
+    "p:saber-conocer",
+    "p:ser-profession-no-article",
+    "p:telling-time",
+    "p:veces-al"
+  ],
+  "lexemes": [
+    "l:abogado",
+    "l:ahí",
+    "l:aire",
+    "l:alcaldía",
+    "l:alergia",
+    "l:arreglar",
+    "l:año",
+    "l:bueno",
+    "l:buscar",
+    "l:café",
+    "l:cansado",
+    "l:cardíaco",
+    "l:comida",
+    "l:conocer",
+    "l:consultorio",
+    "l:contrato",
+    "l:controlar",
+    "l:corazón",
+    "l:crimen",
+    "l:cucharada",
+    "l:decir",
+    "l:delantal",
+    "l:descansar",
+    "l:despacio",
+    "l:diciembre",
+    "l:dieta",
+    "l:directo",
+    "l:doctor",
+    "l:doctorar",
+    "l:dolor",
+    "l:día",
+    "l:edad",
+    "l:empanada",
+    "l:entender",
+    "l:entrar",
+    "l:escalera",
+    "l:escribir",
+    "l:español",
+    "l:estar",
+    "l:estudiar",
+    "l:examen",
+    "l:faltar",
+    "l:fila",
+    "l:fruta",
+    "l:grasa",
+    "l:hablar",
+    "l:hacer",
+    "l:hoy",
+    "l:impaciente",
+    "l:infección",
+    "l:ir",
+    "l:jarabe",
+    "l:joven",
+    "l:largo",
+    "l:leer",
+    "l:madrugar",
+    "l:medicamento",
+    "l:medicina",
+    "l:mes",
+    "l:mijo",
+    "l:mirar",
+    "l:morirse",
+    "l:médico",
+    "l:nieto",
+    "l:noche",
+    "l:paciente",
+    "l:pastilla",
+    "l:pecho",
+    "l:pedir",
+    "l:perdón",
+    "l:plástico",
+    "l:poder",
+    "l:poner",
+    "l:presentar",
+    "l:prohibir",
+    "l:punto",
+    "l:qué",
+    "l:radio",
+    "l:receta",
+    "l:recomendar",
+    "l:repetir",
+    "l:reunión",
+    "l:rápido",
+    "l:sal",
+    "l:saludable",
+    "l:ser",
+    "l:señor",
+    "l:síntoma",
+    "l:tener",
+    "l:tinto",
+    "l:tomar",
+    "l:tos",
+    "l:trampa",
+    "l:tranquilo",
+    "l:trasnochar",
+    "l:tratamiento",
+    "l:urgencia",
+    "l:vacuna",
+    "l:vez"
+  ]
+}

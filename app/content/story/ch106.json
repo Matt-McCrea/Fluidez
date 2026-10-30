@@ -1,0 +1,334 @@
+{
+  "id": "ch106",
+  "unit": "u35",
+  "title": "Sin sal",
+  "text": "Hernando llegó al café a las nueve y media. En cuarenta años, nunca había llegado después del pan.\nHernando: Buenos días. No me digan nada.\nPero el barrio ya sabía. Doña Gloria se lo contó a la panadería entera, y la panadería, a La Candelaria.\nSeñor de la tienda: A su edad, hay que caminar media hora todos los días.\nSeñora del tercer piso: Y no se debe comer pan blanco.\nJhon Fredy: Y se recomienda dormir un rato después del almuerzo.\nHernando: ¿Y también hay que oír los consejos de todo el mundo?\nVale había pegado con cinta un papel en la máquina de café: «Pastilla de Hernando: 8:00, 14:00, 20:00. Sin tinto».\nTomás puso tres alarmas en su celular nuevo. Simón aprendió el sonido en un día, y ahora lo hacía cada diez minutos.\nA la una, Vale vio que Hernando sacaba un sobre de sal de la gorra.\nSimón: ¡Ni se te ocurra! ¡Ni se te ocurra, Pacheco!\nVale lo guardó con el salero, en el delantal.\nHernando: Esto es una dictadura.\nVale: No, señor. Es una dieta.\nDespués del almuerzo, Hernando miraba la foto de Rosa detrás de la caja.\nHernando: Tengo una pregunta, y quiero la verdad. ¿Ustedes me necesitan aquí, o soy un viejo que ya no sirve?\nVale le tomó la mano.\nVale: Usted nos asustó mucho. Yo pensé que lo perdíamos.\nHernando: Yo también tuve miedo, mija. En la camioneta, entre las almojábanas, pensé en Rosa. Pensé que nunca le dije nada.\nTomás: ¿Nada de qué?\nHernando: Son cosas de viejo, mijo.\nVale: Rosa decía que hay que valorar a la gente antes de perderla. Yo lo valoro mucho, Hernando. Pero sin sal.\nPor la tarde, Tomás sumó todo en el cuaderno de Vale: la clínica, los medicamentos, la ventana, la pieza de Italia y la doctora Uribe. Sumó dos veces, y el número no cambió.\nTomás: ¿Cuánto vendimos este mes?\nVale: Más que nunca.\nTomás: Pues no alcanza. Vendemos más, y debemos más.\nHernando abrió un ojo.\nHernando: Yo puedo vender la Burra.\nVale y Tomás: ¡Jamás!\nSimón: ¡Pastilla! ¡Pastilla, Pacheco!",
+  "gloss": [
+    {
+      "es": "delantal",
+      "en": "apron"
+    },
+    {
+      "es": "dictadura",
+      "en": "dictatorship"
+    },
+    {
+      "es": "salero",
+      "en": "salt shaker"
+    },
+    {
+      "es": "nunca había llegado después del pan",
+      "en": "he had never arrived after the bread"
+    },
+    {
+      "es": "No me digan nada.",
+      "en": "Don't say anything to me."
+    },
+    {
+      "es": "y la panadería, a La Candelaria",
+      "en": "and the bakery told La Candelaria"
+    },
+    {
+      "es": "Señora del tercer piso",
+      "en": "Lady from the third floor"
+    },
+    {
+      "es": "Y se recomienda dormir un rato después del almuerzo.",
+      "en": "And a little nap after lunch is recommended."
+    },
+    {
+      "es": "Vale había pegado con cinta un papel en la máquina de café",
+      "en": "Vale had taped a note to the coffee machine"
+    },
+    {
+      "es": "Simón aprendió el sonido en un día",
+      "en": "Simón learnt the sound in one day"
+    },
+    {
+      "es": "o soy un viejo que ya no sirve",
+      "en": "or am I an old man who's no use any more"
+    },
+    {
+      "es": "Yo pensé que lo perdíamos.",
+      "en": "I thought we were losing you."
+    },
+    {
+      "es": "la pieza de Italia",
+      "en": "the part from Italy"
+    },
+    {
+      "es": "Pues no alcanza. Vendemos más, y debemos más.",
+      "en": "Well, it's not enough. We sell more, and we owe more."
+    },
+    {
+      "es": "Hernando abrió un ojo.",
+      "en": "Hernando opened one eye."
+    },
+    {
+      "es": "Yo puedo vender la Burra.",
+      "en": "I can sell the Burra."
+    },
+    {
+      "es": "Son cosas de viejo, mijo.",
+      "en": "It's old man's stuff, son."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does everyone in the café give Hernando advice?",
+      "options": [
+        "Doña Gloria told the whole neighbourhood",
+        "Vale put a notice in the window",
+        "Mariana wrote about it",
+        "The doctor called them"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Hernando hear the alarm every ten minutes?",
+      "options": [
+        "Simón learnt the sound of Tomás's phone alarm",
+        "Vale set ten alarms",
+        "The coffee machine is broken",
+        "Jhon Fredy is playing a joke"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando almost say about Rosa?",
+      "options": [
+        "That he never told her something",
+        "That she owed him money",
+        "That she sold the café",
+        "That she knew about his heart"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Tomás discover when he adds up the costs?",
+      "options": [
+        "Even though they sell more, they owe more",
+        "The café has made a big profit",
+        "The clinic was free",
+        "Hernando already paid everything"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Dónde tenía Hernando la sal?",
+      "options": [
+        "En la gorra",
+        "En el zapato",
+        "En la chaqueta",
+        "Debajo de la mesa"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Sales are better than ever, but the clinic, the window, the machine part and the lawyer add up to more than the café earns. Tomorrow, over a coffee, Tomás and Vale sit down with every number, and Hernando wants to sell the Burra.",
+  "rereadQuestions": [
+    {
+      "q": "At what times does Hernando take his pill?",
+      "options": [
+        "8:00, 14:00 and 20:00",
+        "7:00, 12:00 and 19:00",
+        "Only at 8:00",
+        "9:30 and 21:30"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "According to the lady from the third floor, what should Hernando not eat?",
+      "options": [
+        "White bread",
+        "Mango",
+        "Salt",
+        "Eggs"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What was Hernando looking at after lunch?",
+      "options": [
+        "The photo of Rosa behind the till",
+        "The numbers in Vale's notebook",
+        "His phone",
+        "The coffee machine"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:hay",
+    "c:hay-que",
+    "c:hola-buenos-dias",
+    "c:ni-se-te-ocurra",
+    "c:no-se",
+    "c:no-sirve",
+    "c:ojo",
+    "c:puedo",
+    "c:pues",
+    "c:quiero",
+    "c:tengo",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:cada-cualquier",
+    "g:comparatives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:imperfect-habitual",
+    "g:impersonal-obligation",
+    "g:indirect-objects",
+    "g:negation-words",
+    "g:negative-commands",
+    "g:object-pronoun-position",
+    "g:pluperfect",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:relative-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:tener-que-hay-que",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:demonstratives-basic",
+    "p:dentro-de-vs-despues",
+    "p:frequency-scale",
+    "p:la-gente-singular",
+    "p:mas-de-number",
+    "p:me-te-nos-objects",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:pensar-en",
+    "p:permitir-inf",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:tambien-tampoco",
+    "p:telling-time",
+    "p:tener-hambre",
+    "p:time-sequence-basic",
+    "p:todos-los-dias",
+    "p:veces-al",
+    "p:viejo-antiguo-mayor"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:ahora",
+    "l:alarma",
+    "l:alcanzar",
+    "l:almojábana",
+    "l:almuerzo",
+    "l:antes",
+    "l:aprender",
+    "l:aquí",
+    "l:asustar",
+    "l:año",
+    "l:barrio",
+    "l:blanco",
+    "l:bueno",
+    "l:café",
+    "l:caja",
+    "l:cambiar",
+    "l:caminar",
+    "l:camioneta",
+    "l:celular",
+    "l:cinta",
+    "l:clínica",
+    "l:comer",
+    "l:consejo",
+    "l:contar",
+    "l:cosa",
+    "l:cuaderno",
+    "l:cuánto",
+    "l:deber",
+    "l:decir",
+    "l:delantal",
+    "l:después",
+    "l:detrás",
+    "l:dictadura",
+    "l:dieta",
+    "l:doctor",
+    "l:dormir",
+    "l:día",
+    "l:edad",
+    "l:entero",
+    "l:foto",
+    "l:gente",
+    "l:gorra",
+    "l:guardar",
+    "l:hacer",
+    "l:hora",
+    "l:llegar",
+    "l:mano",
+    "l:medicamento",
+    "l:mes",
+    "l:miedo",
+    "l:mija",
+    "l:mijo",
+    "l:minuto",
+    "l:mirar",
+    "l:mundo",
+    "l:máquina",
+    "l:necesitar",
+    "l:nuevo",
+    "l:número",
+    "l:ocurrir",
+    "l:ojo",
+    "l:oír",
+    "l:pan",
+    "l:panadería",
+    "l:papel",
+    "l:pastilla",
+    "l:pegar",
+    "l:pensar",
+    "l:perder",
+    "l:pieza",
+    "l:piso",
+    "l:poder",
+    "l:poner",
+    "l:pregunta",
+    "l:querer",
+    "l:qué",
+    "l:rato",
+    "l:recomendar",
+    "l:saber",
+    "l:sacar",
+    "l:sal",
+    "l:ser",
+    "l:servir",
+    "l:señor",
+    "l:señora",
+    "l:sobre",
+    "l:sonido",
+    "l:sumar",
+    "l:tarde",
+    "l:tener",
+    "l:tienda",
+    "l:tinto",
+    "l:tomar",
+    "l:valorar",
+    "l:vender",
+    "l:ventana",
+    "l:ver",
+    "l:verdad",
+    "l:vez",
+    "l:viejo"
+  ]
+}
