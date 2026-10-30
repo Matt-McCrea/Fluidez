@@ -1,0 +1,172 @@
+{
+  "node": "x:para-mi-que-vs-cabe",
+  "hook": {
+    "line": "Everyone has a theory about Altamira. Hernando gives his over a tinto and Mariana gives hers in print. They are both guessing, but one is a hunch and the other keeps the door open, and Spanish makes you pick the right frame.",
+    "es": "Para mí que Altamira ya compró el edificio.",
+    "en": "If you ask me, Altamira has already bought the building."
+  },
+  "examples": [
+    {
+      "es": "Para mí que no viene.",
+      "en": "If you ask me, he's not coming."
+    },
+    {
+      "es": "Cabe la posibilidad de que no venga.",
+      "en": "There's a possibility that he won't come."
+    },
+    {
+      "es": "Para mí que Altamira ya compró el edificio.",
+      "en": "If you ask me, Altamira has already bought the building."
+    },
+    {
+      "es": "Cabe la posibilidad de que Altamira compre el edificio.",
+      "en": "There's a possibility that Altamira will buy the building."
+    },
+    {
+      "es": "Para mí que el alcalde sabe más de lo que dice.",
+      "en": "If you ask me, the mayor knows more than he says."
+    },
+    {
+      "es": "Cabe la posibilidad de que el alcalde sepa más de lo que dice.",
+      "en": "There's a possibility that the mayor knows more than he says."
+    }
+  ],
+  "rule": "Both frames guess, but they guess differently.\n\n*Para mí que* is a hunch, said over coffee. You lean one way, so the verb is plain: *Para mí que no viene.* It is the mood of \"I'd bet\".\n\n*Cabe la posibilidad de que* is formal. You hold the idea open without leaning, so the verb takes the wish form: *Cabe la posibilidad de que no venga.* It suits a report or a meeting.\n\nSo ask two things: do I lean, and who am I talking to? A friend and a lean: *para mí que*. A room and an open door: *cabe la posibilidad de que*.",
+  "smallPrint": "Teachers call this the indicative after an opinion marker versus the subjunctive after an expression of possibility.",
+  "readAndPick": [
+    {
+      "es": "Para mí que no viene.",
+      "options": [
+        "If you ask me, he's not coming.",
+        "There's a possibility that he won't come.",
+        "He may come."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Cabe la posibilidad de que no venga.",
+      "options": [
+        "If you ask me, he's not coming.",
+        "There's a possibility that he won't come.",
+        "He isn't coming for me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Para mí que Altamira ya compró el edificio.",
+      "options": [
+        "There's a possibility that Altamira will buy the building.",
+        "Altamira has already bought the building for me.",
+        "If you ask me, Altamira has already bought the building."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Cabe la posibilidad de que Altamira compre el edificio.",
+      "options": [
+        "If you ask me, Altamira bought the building.",
+        "There's a possibility that Altamira will buy the building.",
+        "Altamira ought to buy the building."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Para mí que el alcalde sabe más de lo que dice.",
+      "options": [
+        "If you ask me, the mayor knows more than he says.",
+        "There's a possibility that the mayor knows more than he says.",
+        "The mayor says more than I know."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Cabe la posibilidad de que el alcalde sepa más de lo que dice.",
+      "options": [
+        "If you ask me, the mayor knows more than he says.",
+        "The mayor says more than I know.",
+        "There's a possibility that the mayor knows more than he says."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Para mí que Tomás se queda.",
+      "options": [
+        "There's a possibility that Tomás will stay.",
+        "If you ask me, Tomás is staying.",
+        "Tomás stays for me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cabe la posibilidad de que Tomás se quede.",
+      "options": [
+        "There's a possibility that Tomás will stay.",
+        "If you ask me, Tomás is staying.",
+        "Tomás is certain to stay."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *viene* or *venga* and type the whole sentence, as a hunch: *Para mí que no ___.*",
+      "answer": "Para mí que no viene.",
+      "accept": [],
+      "why": "A hunch with *para mí que* keeps the plain verb."
+    },
+    {
+      "prompt": "Pick *viene* or *venga* and type the whole sentence, formally: *Cabe la posibilidad de que no ___.*",
+      "answer": "Cabe la posibilidad de que no venga.",
+      "accept": [],
+      "why": "After *cabe la posibilidad de que*, the verb takes the wish form."
+    },
+    {
+      "prompt": "Say: If you ask me, Altamira has already bought the building.",
+      "answer": "Para mí que Altamira ya compró el edificio.",
+      "accept": [],
+      "why": "It is a hunch, so the verb stays plain."
+    },
+    {
+      "prompt": "Say formally: There's a possibility that Altamira will buy the building.",
+      "answer": "Cabe la posibilidad de que Altamira compre el edificio.",
+      "accept": [],
+      "why": "You leave it open, so *compre*."
+    },
+    {
+      "prompt": "Say: If you ask me, the mayor knows more than he says.",
+      "answer": "Para mí que el alcalde sabe más de lo que dice.",
+      "accept": [],
+      "why": "*Para mí que* plus *sabe*: you lean this way."
+    },
+    {
+      "prompt": "Make it formal: *Para mí que Tomás se queda.* (There's a possibility that Tomás will stay.)",
+      "answer": "Cabe la posibilidad de que Tomás se quede.",
+      "accept": [],
+      "why": "Moving from hunch to open possibility changes the frame and the verb."
+    },
+    {
+      "prompt": "Make it a hunch, negative: *Para mí que hay trato.* (If you ask me, there's no deal.)",
+      "answer": "Para mí que no hay trato.",
+      "accept": [],
+      "why": "*No* goes in front of the verb; the verb stays plain."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Para mí que no venga.",
+      "right": "Para mí que no viene.",
+      "why": "Almost. A hunch leans one way, so use the plain verb, not the wish form."
+    },
+    {
+      "wrong": "Cabe la posibilidad de que no viene.",
+      "right": "Cabe la posibilidad de que no venga.",
+      "why": "This frame holds the idea open, so the verb takes the wish form."
+    },
+    {
+      "wrong": "Cabe la posibilidad que no venga.",
+      "right": "Cabe la posibilidad de que no venga.",
+      "why": "Spanish needs *de* before *que* here."
+    }
+  ],
+  "personal": "Give your theory about something small, like whether the bakery will open on time. First as a hunch with *Para mí que...*, then formally with *Cabe la posibilidad de que...*."
+}

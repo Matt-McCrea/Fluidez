@@ -1,0 +1,174 @@
+{
+  "node": "x:imperfecto-tres-usos",
+  "hook": {
+    "line": "Spanish uses the imperfect for things that are not in the past at all: to show surprise, to be polite, and to check something you were told. Tomás has to work out which one he is hearing.",
+    "es": "¿Tú no trabajabas hoy?",
+    "en": "Don't you work today? (to a friend)"
+  },
+  "examples": [
+    {
+      "es": "¿Tú no trabajabas hoy?",
+      "en": "Don't you work today? (to a friend)"
+    },
+    {
+      "es": "Venía a preguntar si tenían una mesa para cuatro.",
+      "en": "I was coming to ask if you had a table for four."
+    },
+    {
+      "es": "El café cerraba mañana, ¿no?",
+      "en": "The café closes tomorrow, doesn't it?"
+    },
+    {
+      "es": "Quería preguntarle algo, don Hernando.",
+      "en": "I wanted to ask you something, don Hernando."
+    },
+    {
+      "es": "¿No estabas en Cartagena esta semana?",
+      "en": "Aren't you in Cartagena this week? (to a friend)"
+    },
+    {
+      "es": "Mariana llegaba mañana, ¿no?",
+      "en": "Mariana arrives tomorrow, doesn't she?"
+    }
+  ],
+  "rule": "All six sentences are about now or tomorrow, yet the verb looks past. The imperfect puts the idea a step away, and that step means three things.\n\nSurprise: you expected something else. *¿Tú no trabajabas hoy?* Usually a question with *no*.\nPoliteness: a softer request. *Venía a preguntar..., quería pedirle...*\nHearsay: you check what you were told. *Mariana llegaba mañana, ¿no?*\n\nTo tell them apart, look at the sentence. A *no* question that shows you expected something else is the first. A request starting with *venía a* or *quería* is the second. A statement with *¿no?* checking a fact is the third.",
+  "smallPrint": "Teachers call these the imperfect of surprise, the imperfect of courtesy and the quotative imperfect, or *imperfecto citativo*.",
+  "readAndPick": [
+    {
+      "es": "¿Tú no trabajabas hoy?",
+      "options": [
+        "Didn't you work yesterday? (to a friend)",
+        "Don't you work today? (to a friend)",
+        "You don't work today."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Venía a preguntar si tenían una mesa para cuatro.",
+      "options": [
+        "I came to ask if you had a table for four.",
+        "I want a table for four.",
+        "I was coming to ask if you had a table for four."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El café cerraba mañana, ¿no?",
+      "options": [
+        "The café closes tomorrow, doesn't it?",
+        "The café closed yesterday, didn't it?",
+        "The café won't close tomorrow."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Quería preguntarle algo, don Hernando.",
+      "options": [
+        "I want to ask you something, don Hernando.",
+        "I wanted to ask you something, don Hernando.",
+        "I asked you something, don Hernando."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿No estabas en Cartagena esta semana?",
+      "options": [
+        "Weren't you in Cartagena last week? (to a friend)",
+        "Aren't you going to Cartagena this week? (to a friend)",
+        "Aren't you in Cartagena this week? (to a friend)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mariana llegaba mañana, ¿no?",
+      "options": [
+        "Mariana arrived yesterday, didn't she?",
+        "Mariana arrives tomorrow, doesn't she?",
+        "Mariana won't arrive tomorrow."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Venía a ver si podíamos hablar un momento.",
+      "options": [
+        "I was coming to see if we could talk for a moment.",
+        "I came and we talked for a moment.",
+        "I'll see if we can talk for a moment."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale, ¿tú no cocinabas hoy?",
+      "options": [
+        "Vale, didn't you cook yesterday?",
+        "Vale, I cook today.",
+        "Vale, don't you cook today?"
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *trabajas* or *trabajabas* and type the whole sentence, showing surprise: *¿Tú no ___ hoy?*",
+      "answer": "¿Tú no trabajabas hoy?",
+      "accept": [],
+      "why": "The imperfect shows you expected something else."
+    },
+    {
+      "prompt": "Pick *vengo* or *venía* and type the whole sentence, as a polite request: *___ a preguntar si tenían una mesa para cuatro.*",
+      "answer": "Venía a preguntar si tenían una mesa para cuatro.",
+      "accept": [],
+      "why": "*Venía a* is gentler than *vengo a*; it does not push."
+    },
+    {
+      "prompt": "Check what you were told: The café closes tomorrow, doesn't it?",
+      "answer": "El café cerraba mañana, ¿no?",
+      "accept": [],
+      "why": "The imperfect plus *¿no?* checks a fact you were given."
+    },
+    {
+      "prompt": "Say politely to don Hernando: I wanted to ask you something.",
+      "answer": "Quería preguntarle algo, don Hernando.",
+      "accept": [
+        "Don Hernando, quería preguntarle algo."
+      ],
+      "why": "*Quería* makes a request softer than *quiero*."
+    },
+    {
+      "prompt": "Show surprise, to a friend: Aren't you in Cartagena this week?",
+      "answer": "¿No estabas en Cartagena esta semana?",
+      "accept": [],
+      "why": "*Estabas* in a *no* question shows you expected something else."
+    },
+    {
+      "prompt": "Check what you were told: Mariana arrives tomorrow, doesn't she?",
+      "answer": "Mariana llegaba mañana, ¿no?",
+      "accept": [],
+      "why": "Same idea: the imperfect and *¿no?* check what you heard."
+    },
+    {
+      "prompt": "Make it a polite request: *Vengo a ver si podemos hablar un momento.* (I was coming to see if we could talk for a moment.)",
+      "answer": "Venía a ver si podíamos hablar un momento.",
+      "accept": [],
+      "why": "Both verbs go to the imperfect and the request becomes softer."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Tú no trabajaste hoy?",
+      "right": "¿Tú no trabajabas hoy?",
+      "why": "Almost. The preterite asks if you did something in the past. To show surprise about today, use the imperfect."
+    },
+    {
+      "wrong": "Vine a preguntar si tenían una mesa para cuatro.",
+      "right": "Venía a preguntar si tenían una mesa para cuatro.",
+      "why": "*Vine a* states what you did. *Venía a* is the soft, polite opening."
+    },
+    {
+      "wrong": "Mariana llegó mañana, ¿no?",
+      "right": "Mariana llegaba mañana, ¿no?",
+      "why": "You cannot arrive tomorrow in the preterite. To check what you were told, use the imperfect."
+    }
+  ],
+  "personal": "Think of something you were told about a friend's plans. Write it as a check with the imperfect and *¿no?*, for example *Tu hermana llegaba el sábado, ¿no?*"
+}

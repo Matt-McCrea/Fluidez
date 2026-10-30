@@ -1,0 +1,189 @@
+{
+  "node": "p:en-cualquier-caso",
+  "hook": {
+    "line": "Everyone in the café has an opinion about Altamira. At some point Tomás has to say: fine, you may be right, but this is what matters. That is what these phrases do.",
+    "es": "Es caro y queda lejos.\nEn cualquier caso, es la única opción.",
+    "en": "It's expensive and it's far away.\nIn any case, it's the only option."
+  },
+  "examples": [
+    {
+      "es": "Es caro y queda lejos.\nEn cualquier caso, es la única opción.",
+      "en": "It's expensive and it's far away.\nIn any case, it's the only option."
+    },
+    {
+      "es": "En todo caso, llámame mañana.",
+      "en": "In any case, call me tomorrow. (to a friend)"
+    },
+    {
+      "es": "De todos modos, gracias.",
+      "en": "Thanks anyway."
+    },
+    {
+      "es": "Al fin y al cabo, nadie me obligó.",
+      "en": "After all, nobody forced me."
+    },
+    {
+      "es": "Puede que Altamira ofrezca más. En cualquier caso, yo no vendo.",
+      "en": "Altamira may offer more. In any case, I'm not selling."
+    },
+    {
+      "es": "¿Y si no viene nadie? De todos modos abrimos a las ocho.",
+      "en": "And if nobody comes? We open at eight anyway."
+    }
+  ],
+  "rule": "These phrases say: \"whatever was just said, this is what counts\". They admit the objection might be true and then set it aside.\n\n*En cualquier caso* and *en todo caso* pick the main line: \"in any case\".\n*De todos modos* is everyday \"anyway\".\n*Al fin y al cabo* gives the deeper reason: \"after all\".\n\nThey do not answer the objection. Used on someone with a real worry, they can sound like you did not listen. And they set aside, where *o sea* and *es decir* say the same thing again.",
+  "smallPrint": "Teachers call these concessive or distancing reformulators: you grant the point and move past it.",
+  "readAndPick": [
+    {
+      "es": "Es caro y queda lejos.\nEn cualquier caso, es la única opción.",
+      "options": [
+        "It's expensive and far away. That is, it's the only option.",
+        "It's expensive and far away. In any case, it's the only option.",
+        "It's expensive and far away, so it's not an option."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "De todos modos, gracias.",
+      "options": [
+        "Thanks anyway.",
+        "Thanks a lot.",
+        "Thanks, I mean."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Al fin y al cabo, nadie me obligó.",
+      "options": [
+        "In other words, nobody forced me.",
+        "Nobody forced me, but I did it.",
+        "After all, nobody forced me."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "En todo caso, llámame mañana.",
+      "options": [
+        "In any case, call me tomorrow. (to a friend)",
+        "Call me tomorrow, I mean. (to a friend)",
+        "In any case, I'll call you tomorrow."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Puede que Altamira ofrezca más. En cualquier caso, yo no vendo.",
+      "options": [
+        "Altamira may offer more. That is, I'm not selling.",
+        "Altamira will offer more, so I'm selling.",
+        "Altamira may offer more. In any case, I'm not selling."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Y si no viene nadie? De todos modos abrimos a las ocho.",
+      "options": [
+        "And if nobody comes? We open at eight anyway.",
+        "And if nobody comes? We open at eight, I mean.",
+        "And if nobody comes? We won't open at eight."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Al fin y al cabo, el café es de Tomás.",
+      "options": [
+        "In other words, the café is Tomás's.",
+        "After all, the café is Tomás's.",
+        "In any case, the café is Tomás's."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tenemos poca plata. En cualquier caso, abrimos mañana.",
+      "options": [
+        "We have little money. That is, we open tomorrow.",
+        "We have little money, so we won't open tomorrow.",
+        "We have little money. In any case, we open tomorrow."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *de todos modos* or *es decir* and type the whole sentence, to set the worry aside: *Llueve mucho. ___, abrimos a las ocho.*",
+      "answer": "Llueve mucho. De todos modos, abrimos a las ocho.",
+      "accept": [
+        "Llueve mucho. De todos modos abrimos a las ocho."
+      ],
+      "why": "You are not rephrasing the rain, you are ignoring it, so *de todos modos*."
+    },
+    {
+      "prompt": "Say: Thanks anyway.",
+      "answer": "De todos modos, gracias.",
+      "accept": [
+        "De todos modos gracias.",
+        "Gracias de todos modos."
+      ],
+      "why": "*De todos modos* is the everyday \"anyway\"."
+    },
+    {
+      "prompt": "Say: After all, nobody forced me.",
+      "answer": "Al fin y al cabo, nadie me obligó.",
+      "accept": [
+        "Al fin y al cabo nadie me obligó."
+      ],
+      "why": "*Al fin y al cabo* gives the final reason: \"after all\"."
+    },
+    {
+      "prompt": "Say: Altamira may offer more. In any case, I'm not selling.",
+      "answer": "Puede que Altamira ofrezca más. En cualquier caso, yo no vendo.",
+      "accept": [
+        "Puede que Altamira ofrezca más. En cualquier caso, no vendo.",
+        "Puede que Altamira ofrezca más. En todo caso, yo no vendo."
+      ],
+      "why": "You grant that the offer may grow, then *en cualquier caso* moves past it."
+    },
+    {
+      "prompt": "Say to a friend: In any case, call me tomorrow.",
+      "answer": "En todo caso, llámame mañana.",
+      "accept": [
+        "En cualquier caso, llámame mañana.",
+        "En todo caso llámame mañana."
+      ],
+      "why": "*En todo caso* and *en cualquier caso* are interchangeable here."
+    },
+    {
+      "prompt": "Turn it into a question with a worry first: *Nadie viene. Abrimos a las ocho.* (And if nobody comes? We open at eight anyway.)",
+      "answer": "¿Y si no viene nadie? De todos modos abrimos a las ocho.",
+      "accept": [
+        "¿Y si no viene nadie? De todos modos, abrimos a las ocho."
+      ],
+      "why": "The worry comes first, and *de todos modos* sets it aside."
+    },
+    {
+      "prompt": "Say: We have little money. In any case, we open tomorrow.",
+      "answer": "Tenemos poca plata. En cualquier caso, abrimos mañana.",
+      "accept": [
+        "Tenemos poca plata. En todo caso, abrimos mañana."
+      ],
+      "why": "*En cualquier caso* steps over the problem and gives the plan."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Es caro. Es decir, de todos modos, es la única opción.",
+      "right": "Es caro. En cualquier caso, es la única opción.",
+      "why": "Almost. *Es decir* says the same thing again. To set a worry aside, use *en cualquier caso*."
+    },
+    {
+      "wrong": "Todos modos, gracias.",
+      "right": "De todos modos, gracias.",
+      "why": "Almost. The phrase is *de todos modos*, with *de* in front."
+    },
+    {
+      "wrong": "Es caro y queda lejos. En cualquier caso, es caro y queda lejos.",
+      "right": "Es caro y queda lejos. En cualquier caso, es la única opción.",
+      "why": "The phrase leads to what matters, so give the conclusion, not the objection again."
+    }
+  ],
+  "personal": "Think of a worry someone has about your plans. Write a sentence that admits it and sets it aside with *de todos modos* or *en cualquier caso*."
+}

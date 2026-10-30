@@ -1,0 +1,78 @@
+{
+  "node": "g:reformulation",
+  "hook": {
+    "line": "Rumours are flying around the café, and half of what Tomás says needs a second try: \"I mean...\", \"that is...\", \"in other words...\". Spanish has small signposts for saying the same thing again, clearer.",
+    "es": "Altamira quiere comprar el edificio, es decir, nuestro café.",
+    "en": "Altamira wants to buy the building, that is, our café."
+  },
+  "examples": [
+    { "es": "Es caro; o sea, no lo podemos pagar.", "en": "It's expensive; I mean, we can't afford it." },
+    { "es": "Es decir, el proyecto se cancela.", "en": "That is, the project is cancelled." },
+    { "es": "Altamira quiere comprar el edificio, es decir, nuestro café.", "en": "Altamira wants to buy the building, that is, our café." },
+    { "es": "Tomás no quiere vender; en otras palabras, el café sigue abierto.", "en": "Tomás doesn't want to sell; in other words, the café stays open." },
+    { "es": "Mariana escribe sobre el barrio; o sea, sobre nosotros.", "en": "Mariana is writing about the neighbourhood; that is, about us." },
+    { "es": "No sé; o sea, no estoy seguro.", "en": "I don't know; I mean, I'm not sure." }
+  ],
+  "rule": "These phrases all say: \"here comes the same idea, put another way\". What follows is never a new fact. It is the first fact, made clearer.\n\n*O sea* is the everyday one, for talking: it spells out what you meant.\n*Es decir* is a notch more careful: it makes something exact. It is at home in writing.\n*En otras palabras* puts it in plainer, often blunter terms.\n*Mejor dicho* is the odd one out: it corrects. \"Or rather\", and the new version replaces the old.\n\nPut a comma on each side, or a semicolon before. Spanish does not need \"that is\" and \"I mean\" as two different jobs: one signpost does both.\n\nUse *o sea* in every sentence and you sound vague. Save it.",
+  "smallPrint": "Teachers call these reformulation markers, or *reformuladores*: they tie a clause back to the one before it.",
+  "readAndPick": [
+    { "es": "Es caro; o sea, no lo podemos pagar.", "options": ["It's expensive; however, we can afford it.", "It's expensive; I mean, we can't afford it.", "It's expensive; for example, we can't afford it."], "answer": 1 },
+    { "es": "Es decir, el proyecto se cancela.", "options": ["That is, the project is cancelled.", "For example, the project is cancelled.", "Besides, the project is cancelled."], "answer": 0 },
+    { "es": "Altamira quiere comprar el edificio, es decir, nuestro café.", "options": ["Altamira wants to buy the building and our café as well.", "Altamira wants to buy our café instead of the building.", "Altamira wants to buy the building, that is, our café."], "answer": 2 },
+    { "es": "Tomás no quiere vender; en otras palabras, el café sigue abierto.", "options": ["Tomás doesn't want to sell; on the other hand, the café is closed.", "Tomás doesn't want to sell; in other words, the café stays open.", "Tomás wants to sell; in other words, the café stays open."], "answer": 1 },
+    { "es": "Mariana escribe sobre el barrio; o sea, sobre nosotros.", "options": ["Mariana is writing about the neighbourhood; that is, about us.", "Mariana is writing about the neighbourhood, but not about us.", "Mariana is writing about us, not the neighbourhood."], "answer": 0 },
+    { "es": "No sé; o sea, no estoy seguro.", "options": ["I know; I mean, I'm sure.", "I don't know, so I'm going to ask.", "I don't know; I mean, I'm not sure."], "answer": 2 },
+    { "es": "Hernando viene todos los días; o sea, conoce el café mejor que nadie.", "options": ["Hernando comes every day; for example, he knows the café better than anyone.", "Hernando comes every day; I mean, he knows the café better than anyone.", "Hernando comes every day, but he doesn't know the café."], "answer": 1 },
+    { "es": "No tengo tiempo hoy; es decir, no puedo ir.", "options": ["I don't have time today; that is, I can't go.", "I don't have time today, but I can go.", "I have time today; that is, I can go."], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *o sea* or *pero* and type the whole sentence: *Es caro; ___, no lo podemos pagar.*",
+      "answer": "Es caro; o sea, no lo podemos pagar.",
+      "accept": ["Es caro, o sea, no lo podemos pagar."],
+      "why": "The second half says the first half again, so it needs *o sea*. *Pero* would push against it."
+    },
+    {
+      "prompt": "Pick *es decir* or *por ejemplo* and type the whole sentence: *Altamira quiere comprar el edificio, ___, nuestro café.*",
+      "answer": "Altamira quiere comprar el edificio, es decir, nuestro café.",
+      "accept": [],
+      "why": "The café is not an example of the building. It is the same thing, named exactly, so *es decir*."
+    },
+    {
+      "prompt": "Say: That is, the project is cancelled.",
+      "answer": "Es decir, el proyecto se cancela.",
+      "accept": [],
+      "why": "*Es decir* opens the clearer version of what was just said."
+    },
+    {
+      "prompt": "Say: Tomás doesn't want to sell; in other words, the café stays open.",
+      "answer": "Tomás no quiere vender; en otras palabras, el café sigue abierto.",
+      "accept": ["Tomás no quiere vender, en otras palabras, el café sigue abierto."],
+      "why": "*En otras palabras* is \"in other words\", word for word."
+    },
+    {
+      "prompt": "Say: Mariana is writing about the neighbourhood; I mean, about us.",
+      "answer": "Mariana escribe sobre el barrio; o sea, sobre nosotros.",
+      "accept": ["Mariana escribe sobre el barrio, o sea, sobre nosotros."],
+      "why": "*O sea* is the spoken \"I mean\". The new words sit right after it."
+    },
+    {
+      "prompt": "Add a restatement with *o sea*: *No tengo tiempo hoy.* (I mean, I can't go.)",
+      "answer": "No tengo tiempo hoy; o sea, no puedo ir.",
+      "accept": ["No tengo tiempo hoy, o sea, no puedo ir."],
+      "why": "Put *o sea* between the two halves and say the point plainly."
+    },
+    {
+      "prompt": "Make it more careful, for writing: *Es caro; o sea, no lo podemos pagar.* Swap *o sea* for *es decir*.",
+      "answer": "Es caro; es decir, no lo podemos pagar.",
+      "accept": ["Es caro, es decir, no lo podemos pagar."],
+      "why": "*Es decir* does the same job as *o sea* with a more careful tone."
+    }
+  ],
+  "pitfalls": [
+    { "wrong": "Es caro; o sea, pero lo podemos pagar.", "right": "Es caro; o sea, no lo podemos pagar.", "why": "Almost. *O sea* repeats the idea, so it never goes with a \"but\". For a contrast, use *pero* alone." },
+    { "wrong": "Altamira quiere comprar el edificio, por ejemplo, nuestro café.", "right": "Altamira quiere comprar el edificio, es decir, nuestro café.", "why": "*Por ejemplo* gives one case out of many. For \"that is\", use *es decir*." },
+    { "wrong": "O sea, o sea, no sé, o sea, no estoy seguro.", "right": "No sé; o sea, no estoy seguro.", "why": "One *o sea* is a signpost. Three in a row and you sound vague." }
+  ],
+  "personal": "Say one true thing about your week and then put it another way. Use *o sea* when you are chatting and *es decir* when you want to sound careful."
+}

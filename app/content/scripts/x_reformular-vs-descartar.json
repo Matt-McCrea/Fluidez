@@ -1,0 +1,185 @@
+{
+  "node": "x:reformular-vs-descartar",
+  "hook": {
+    "line": "When Tomás keeps talking, he does one of two things: he says the same thing again, clearer, or he waves the problem away and moves on. They sound alike in English, but Spanish uses different phrases, and picking the wrong one says something you did not mean.",
+    "es": "Puede que tengas razón; en cualquier caso, hay que decidir hoy.",
+    "en": "You may be right; in any case, we have to decide today."
+  },
+  "examples": [
+    {
+      "es": "Es mañana, es decir, el sábado.",
+      "en": "It's tomorrow, that is, Saturday."
+    },
+    {
+      "es": "Son tres, mejor dicho, cuatro.",
+      "en": "There are three, or rather, four."
+    },
+    {
+      "es": "Puede que tengas razón; en cualquier caso, hay que decidir hoy.",
+      "en": "You may be right; in any case, we have to decide today."
+    },
+    {
+      "es": "Altamira ofrece mucho; es decir, quiere comprar rápido.",
+      "en": "Altamira offers a lot; that is, it wants to buy fast."
+    },
+    {
+      "es": "No sé si el café cierra. De todos modos, vamos a abrir mañana.",
+      "en": "I don't know if the café is closing. Anyway, we're going to open tomorrow."
+    },
+    {
+      "es": "Altamira compra el edificio, o sea, nos quedamos sin café.",
+      "en": "Altamira is buying the building, I mean, we're left without a café."
+    }
+  ],
+  "rule": "One question sorts them: does the second part say the same thing, or does it move past the first?\n\nSame thing, clearer: *es decir*, *o sea*, *en otras palabras*. Corrected: *mejor dicho*. Test: could you put \"that is\" there?\n\nSet aside: *en cualquier caso*, *de todos modos*, *al fin y al cabo*. The first part may be true, and you keep going. Test: could you put \"anyway\" there?\n\nMix them up and you say something else. *Puede que tengas razón; es decir, hay que decidir hoy* claims that being right and deciding today are the same.",
+  "smallPrint": "Teachers call the first group explanatory or rectifying reformulators and the second group distancing reformulators.",
+  "readAndPick": [
+    {
+      "es": "Es mañana, es decir, el sábado.",
+      "options": [
+        "It's tomorrow, in any case Saturday.",
+        "It's tomorrow, that is, Saturday.",
+        "It's tomorrow, but Saturday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Son tres, mejor dicho, cuatro.",
+      "options": [
+        "There are three, or rather, four.",
+        "There are three, anyway, four.",
+        "There are three, for example, four."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Puede que tengas razón; en cualquier caso, hay que decidir hoy.",
+      "options": [
+        "You may be right; that is, we have to decide today.",
+        "You may be right; I mean, we have to decide today.",
+        "You may be right; in any case, we have to decide today."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Altamira ofrece mucho; es decir, quiere comprar rápido.",
+      "options": [
+        "Altamira offers a lot; in any case, it wants to buy fast.",
+        "Altamira offers a lot; that is, it wants to buy fast.",
+        "Altamira offers a lot, but it wants to buy slowly."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No sé si el café cierra. De todos modos, vamos a abrir mañana.",
+      "options": [
+        "I don't know if the café is closing. Anyway, we're going to open tomorrow.",
+        "I don't know if the café is closing. That is, we're going to open tomorrow.",
+        "I don't know if the café is closing, so we're not opening tomorrow."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Altamira compra el edificio, o sea, nos quedamos sin café.",
+      "options": [
+        "Altamira is buying the building; anyway, we're left without a café.",
+        "Altamira is buying the building; after all, we're left without a café.",
+        "Altamira is buying the building, I mean, we're left without a café."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tenemos poca plata. En cualquier caso, abrimos mañana.",
+      "options": [
+        "We have little money. In any case, we open tomorrow.",
+        "We have little money. That is, we open tomorrow.",
+        "We have little money, so we don't open tomorrow."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Al fin y al cabo, el café es de Tomás.",
+      "options": [
+        "I mean, the café is Tomás's.",
+        "That is, the café is Tomás's.",
+        "After all, the café is Tomás's."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *es decir* or *en cualquier caso* and type the whole sentence, to say it again: *Es mañana, ___, el sábado.*",
+      "answer": "Es mañana, es decir, el sábado.",
+      "accept": [
+        "Es mañana; es decir, el sábado."
+      ],
+      "why": "Saturday is the same thing as tomorrow, said exactly, so *es decir*."
+    },
+    {
+      "prompt": "Pick *es decir* or *en cualquier caso* and type the whole sentence, to move past the worry: *Puede que tengas razón; ___, hay que decidir hoy.*",
+      "answer": "Puede que tengas razón; en cualquier caso, hay que decidir hoy.",
+      "accept": [
+        "Puede que tengas razón, en cualquier caso, hay que decidir hoy."
+      ],
+      "why": "Being right is one thing, deciding is another, so you move on with *en cualquier caso*."
+    },
+    {
+      "prompt": "Say: There are three, or rather, four.",
+      "answer": "Son tres, mejor dicho, cuatro.",
+      "accept": [],
+      "why": "*Mejor dicho* swaps the wrong number for the right one."
+    },
+    {
+      "prompt": "Say: Altamira offers a lot; that is, it wants to buy fast.",
+      "answer": "Altamira ofrece mucho; es decir, quiere comprar rápido.",
+      "accept": [
+        "Altamira ofrece mucho, es decir, quiere comprar rápido."
+      ],
+      "why": "The second half spells out the first, so *es decir*."
+    },
+    {
+      "prompt": "Say: I don't know if the café is closing. Anyway, we're going to open tomorrow.",
+      "answer": "No sé si el café cierra. De todos modos, vamos a abrir mañana.",
+      "accept": [
+        "No sé si el café cierra. De todos modos vamos a abrir mañana."
+      ],
+      "why": "The doubt stays; the plan goes on anyway, so *de todos modos*."
+    },
+    {
+      "prompt": "Say again, clearer, with *o sea*: *Altamira compra el edificio.* (I mean, we're left without a café.)",
+      "answer": "Altamira compra el edificio, o sea, nos quedamos sin café.",
+      "accept": [
+        "Altamira compra el edificio; o sea, nos quedamos sin café."
+      ],
+      "why": "*O sea* spells out what the first half really means."
+    },
+    {
+      "prompt": "Set it aside instead of rephrasing: *Tenemos poca plata; es decir, abrimos mañana.* (We have little money. In any case, we open tomorrow.)",
+      "answer": "Tenemos poca plata. En cualquier caso, abrimos mañana.",
+      "accept": [
+        "Tenemos poca plata; en cualquier caso, abrimos mañana.",
+        "Tenemos poca plata. En todo caso, abrimos mañana."
+      ],
+      "why": "Little money does not mean opening tomorrow, so the link has to set it aside."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Puede que tengas razón; es decir, hay que decidir hoy.",
+      "right": "Puede que tengas razón; en cualquier caso, hay que decidir hoy.",
+      "why": "Almost. *Es decir* says the two halves are the same thing. To move past a point, use *en cualquier caso*."
+    },
+    {
+      "wrong": "Es mañana, en cualquier caso, el sábado.",
+      "right": "Es mañana, es decir, el sábado.",
+      "why": "Saturday is a clearer way of saying tomorrow, not a way of ignoring it."
+    },
+    {
+      "wrong": "Son tres, de todos modos, cuatro.",
+      "right": "Son tres, mejor dicho, cuatro.",
+      "why": "To correct a number you just said, use *mejor dicho*."
+    }
+  ],
+  "personal": "Write two sentences about the same worry. In the first, say it again clearer with *es decir* or *o sea*. In the second, set it aside with *de todos modos* or *en cualquier caso*."
+}

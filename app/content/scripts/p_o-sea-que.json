@@ -1,0 +1,78 @@
+{
+  "node": "p:o-sea-que",
+  "hook": {
+    "line": "You have just heard something, and you want to check you got the point: \"So you're telling me...\". Tomás needs this one every time Hernando hints at something instead of saying it.",
+    "es": "O sea que el café no cierra.",
+    "en": "So the café isn't closing."
+  },
+  "examples": [
+    { "es": "O sea que no vienes.", "en": "So you're not coming, then. (to a friend)" },
+    { "es": "O sea que todo fue culpa mía, ¿no?", "en": "So it was all my fault, was it?" },
+    { "es": "¿O sea que Altamira ya compró el edificio?", "en": "So Altamira has already bought the building?" },
+    { "es": "O sea que Tomás se queda.", "en": "So Tomás is staying." },
+    { "es": "No es tímido; mejor dicho, es reservado.", "en": "He isn't shy; or rather, he's reserved." },
+    { "es": "¿O sea que usted no sabía nada?", "en": "So you knew nothing? (to a stranger, formal)" }
+  ],
+  "rule": "*O sea que* + a full sentence says: \"so what you mean is...\". You pull the conclusion out of what the other person said and put it on the table. With a question mark, or a closing *¿no?*, it asks them to confirm. Without one, it can sound pointed.\n\n*Mejor dicho* is a different job. It corrects yourself: the new words replace the old. *Es tímido; mejor dicho, es reservado.*\n\nBoth start a clause, with a comma after *mejor dicho*. Note the *que* in *o sea que*: no *que*, no conclusion.",
+  "smallPrint": "Teachers call *o sea que* a consecutive reformulator, because it draws a consequence, and *mejor dicho* a rectifying one.",
+  "readAndPick": [
+    { "es": "O sea que no vienes.", "options": ["So you're not coming, then. (to a friend)", "So I'm not coming.", "So you came."], "answer": 0 },
+    { "es": "O sea que todo fue culpa mía, ¿no?", "options": ["So it was all your fault, wasn't it?", "So it was all my fault, was it?", "So it will all be my fault, won't it?"], "answer": 1 },
+    { "es": "¿O sea que Altamira ya compró el edificio?", "options": ["Altamira wants to buy the building.", "Altamira will buy the building.", "So Altamira has already bought the building?"], "answer": 2 },
+    { "es": "O sea que Tomás se queda.", "options": ["So Tomás is staying.", "So Tomás is leaving.", "So Tomás stayed."], "answer": 0 },
+    { "es": "No es tímido; mejor dicho, es reservado.", "options": ["He isn't shy; so he's reserved.", "He isn't shy; or rather, he's reserved.", "He isn't shy; for example, he's reserved."], "answer": 1 },
+    { "es": "¿O sea que usted no sabía nada?", "options": ["So you knew nothing? (to a stranger, formal)", "So you know nothing? (to a friend)", "So he knew nothing?"], "answer": 0 },
+    { "es": "Vale dijo que viene. O sea que hay pastel.", "options": ["Vale said she's coming. Or rather, there's cake.", "Vale said she's coming. So there's cake.", "Vale said she's coming, but there's no cake."], "answer": 1 },
+    { "es": "Hay tres ofertas, mejor dicho, dos.", "options": ["There are three offers, so two.", "There are three offers; there are also two.", "There are three offers; or rather, two."], "answer": 2 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *O sea que* or *Mejor dicho* and type the whole sentence, drawing a conclusion: *___ el café no cierra.*",
+      "answer": "O sea que el café no cierra.",
+      "accept": [],
+      "why": "You are concluding from what you heard, so *o sea que*."
+    },
+    {
+      "prompt": "Say to a friend: So you're not coming, then.",
+      "answer": "O sea que no vienes.",
+      "accept": ["¿O sea que no vienes?"],
+      "why": "*O sea que* plus the conclusion. A friend, so *vienes*."
+    },
+    {
+      "prompt": "Ask: So Altamira has already bought the building?",
+      "answer": "¿O sea que Altamira ya compró el edificio?",
+      "accept": ["¿O sea que ya compró Altamira el edificio?"],
+      "why": "The same frame with question marks asks them to confirm."
+    },
+    {
+      "prompt": "Say: So it was all my fault, was it?",
+      "answer": "O sea que todo fue culpa mía, ¿no?",
+      "accept": ["¿O sea que todo fue culpa mía?"],
+      "why": "The closing *¿no?* asks for agreement, like \"was it?\"."
+    },
+    {
+      "prompt": "Correct yourself: He isn't shy; or rather, he's reserved.",
+      "answer": "No es tímido; mejor dicho, es reservado.",
+      "accept": ["No es tímido, mejor dicho, es reservado."],
+      "why": "*Mejor dicho* replaces the first word with a better one."
+    },
+    {
+      "prompt": "Ask a stranger, formally: So you knew nothing?",
+      "answer": "¿O sea que usted no sabía nada?",
+      "accept": ["¿O sea que no sabía nada?"],
+      "why": "Same frame; *usted* and *sabía* keep it formal."
+    },
+    {
+      "prompt": "Make it negative: *O sea que Tomás se queda.* (So Tomás isn't staying.)",
+      "answer": "O sea que Tomás no se queda.",
+      "accept": [],
+      "why": "*No* goes right before *se queda*, just like in any other sentence."
+    }
+  ],
+  "pitfalls": [
+    { "wrong": "O sea Tomás se queda.", "right": "O sea que Tomás se queda.", "why": "Almost. To draw a conclusion with a full sentence, *o sea* needs its *que*." },
+    { "wrong": "Es tímido; o sea que, es reservado.", "right": "No es tímido; mejor dicho, es reservado.", "why": "To swap one word for a better one, use *mejor dicho*, not *o sea que*." },
+    { "wrong": "Hay tres ofertas, mejor dicho, hay tres ofertas.", "right": "Hay tres ofertas, mejor dicho, dos.", "why": "*Mejor dicho* has to bring a new version, or there is nothing to correct." }
+  ],
+  "personal": "Think of something a friend half-said lately. Write the conclusion you drew, starting with *O sea que...*, as if you were checking you understood."
+}
