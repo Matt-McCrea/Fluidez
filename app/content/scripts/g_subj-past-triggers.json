@@ -1,0 +1,208 @@
+{
+  "node": "g:subj-past-triggers",
+  "hook": {
+    "line": "Half of family life is somebody wanting somebody else to do something. Rosa wanted Tomás to take over the café, and now he has to say what she wanted. You need a way to say \"she wanted me to...\".",
+    "es": "Rosa quería que yo abriera el café.",
+    "en": "Rosa wanted me to open the café."
+  },
+  "examples": [
+    {
+      "es": "Quería que vinieras.",
+      "en": "I wanted you to come."
+    },
+    {
+      "es": "Mi papá me pidió que la llamara.",
+      "en": "My dad asked me to call her."
+    },
+    {
+      "es": "Hernando me pidió que me sentara.",
+      "en": "Hernando asked me to sit down."
+    },
+    {
+      "es": "Rosa quería que yo abriera el café.",
+      "en": "Rosa wanted me to open the café."
+    },
+    {
+      "es": "Les pedí que no gritaran.",
+      "en": "I asked them not to shout."
+    },
+    {
+      "es": "¿Querías que te ayudara?",
+      "en": "Did you want me to help you?"
+    },
+    {
+      "es": "Vale se alegró de que Tomás se quedara.",
+      "en": "Vale was glad that Tomás stayed."
+    },
+    {
+      "es": "Me gustó que me escribieras.",
+      "en": "I liked that you wrote to me."
+    }
+  ],
+  "rule": "English says \"I wanted *you to come*\". Spanish splits it into two verbs joined by *que*: *Quería **que** vinieras*.\n\nThe second verb is in the *-ra* form you already know: *vinieras, llamara, abriera, ayudara*. Past wanting, asking, hoping or feeling pulls the next verb into the past with it.\n\n*Quería que vinieras* (I wanted you to come)\n*Me pidió que la llamara* (she asked me to call her)\n*Esperaba que me dijeras* (I hoped you would tell me)\n*Me gustó que escribieras* (I liked that you wrote)\n\nThe person who does the second verb shows in its ending (*-ras* = you, *-ran* = they) or in a name or *yo* beside it. When the wanter and the doer are the same, no *que*: *Quería venir*.",
+  "smallPrint": "Teachers call this the sequence of tenses (*concordancia de tiempos*): a past verb of wanting, asking or feeling is followed by the past subjunctive.",
+  "readAndPick": [
+    {
+      "es": "Quería que vinieras.",
+      "options": [
+        "I wanted you to come.",
+        "I want you to come.",
+        "You wanted me to come."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hernando me pidió que me sentara.",
+      "options": [
+        "Hernando asks me to sit down.",
+        "I asked Hernando to sit down.",
+        "Hernando asked me to sit down."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Les pedí que no gritaran.",
+      "options": [
+        "They asked me not to shout.",
+        "I asked them not to shout.",
+        "I ask them not to shout."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Querías que te ayudara?",
+      "options": [
+        "Do you want me to help you?",
+        "Did you want to help me?",
+        "Did you want me to help you?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Esperaba que me dijeras la verdad.",
+      "options": [
+        "You hoped I would tell you the truth.",
+        "I hoped you would tell me the truth.",
+        "I hope you tell me the truth."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No querían que Tomás vendiera.",
+      "options": [
+        "They didn't want Tomás to sell.",
+        "They don't want Tomás to sell.",
+        "Tomás didn't want to sell."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nos pidieron que cerráramos temprano.",
+      "options": [
+        "We asked them to close early.",
+        "They ask us to close early.",
+        "They asked us to close early."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mi mamá quería que yo estudiara.",
+      "options": [
+        "I wanted my mom to study.",
+        "My mom wanted me to study.",
+        "My mom wants me to study."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Quiero que vengas.",
+      "options": [
+        "I wanted you to come.",
+        "You want me to come.",
+        "I want you to come."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Say \"I wanted you to come.\" Choose *vengas* or *vinieras*, then type the whole sentence: *Quería que ___.*",
+      "answer": "Quería que vinieras.",
+      "accept": [
+        "Yo quería que vinieras."
+      ],
+      "why": "The wanting is in the past (*quería*), so the next verb takes the past *-ra* form."
+    },
+    {
+      "prompt": "Say \"Hernando asked me to sit down.\" Choose *me siente* or *me sentara*, then type it: *Hernando me pidió que ___.*",
+      "answer": "Hernando me pidió que me sentara.",
+      "accept": [],
+      "why": "*Pidió* is past, so the verb after *que* ends in *-ra*."
+    },
+    {
+      "prompt": "Type in Spanish: \"Rosa wanted me to open the café.\"",
+      "answer": "Rosa quería que yo abriera el café.",
+      "accept": [
+        "Rosa quería que abriera el café."
+      ],
+      "why": "*Quería* + *que* + a new verb in *-ra*; the *yo* is optional because *abriera* fits."
+    },
+    {
+      "prompt": "Type in Spanish: \"I asked them not to shout.\"",
+      "answer": "Les pedí que no gritaran.",
+      "accept": [],
+      "why": "*No* goes right before the second verb, and *-ran* is for \"they\"."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: \"Did you want me to help you?\"",
+      "answer": "¿Querías que te ayudara?",
+      "accept": [
+        "¿Tú querías que te ayudara?"
+      ],
+      "why": "*Querías* is you wanting; *ayudara* is me helping, after *que*."
+    },
+    {
+      "prompt": "Make it past. Start from *Nos piden que cerremos temprano* and say \"They asked us to close early.\"",
+      "answer": "Nos pidieron que cerráramos temprano.",
+      "accept": [],
+      "why": "Both verbs step back together: *piden* becomes *pidieron* and *cerremos* becomes *cerráramos*."
+    },
+    {
+      "prompt": "Make it negative: *Querían que Tomás vendiera.* Say \"They didn't want Tomás to sell.\"",
+      "answer": "No querían que Tomás vendiera.",
+      "accept": [],
+      "why": "*No* goes before the first verb, the one that says what they wanted."
+    },
+    {
+      "prompt": "Type in Spanish: \"My mom wanted me to study.\"",
+      "answer": "Mi mamá quería que yo estudiara.",
+      "accept": [
+        "Mi mamá quería que estudiara."
+      ],
+      "why": "*Quería que* is followed by the *-ra* form of the person who does the studying."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Quería que vienes.",
+      "right": "Quería que vinieras.",
+      "why": "After a past *quería*, the second verb takes the past *-ra* form, not the plain present."
+    },
+    {
+      "wrong": "Quería que vengas.",
+      "right": "Quería que vinieras.",
+      "why": "Almost. *Vengas* is for *quiero que*; once the wanting is in the past, the next verb steps back too."
+    },
+    {
+      "wrong": "Quería tú venir.",
+      "right": "Quería que vinieras.",
+      "why": "English can say \"wanted you to come\" with no extra verb. Spanish needs *que* and a verb for the new person."
+    },
+    {
+      "wrong": "Me pidió que la llamo.",
+      "right": "Me pidió que la llamara.",
+      "why": "A past asking needs the past *-ra* form after *que*."
+    }
+  ],
+  "personal": "Think of something your family or a friend once wanted you to do. Type one sentence, for example *Mi mamá quería que yo estudiara* or *Mi papá me pidió que...*"
+}

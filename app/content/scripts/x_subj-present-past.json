@@ -1,0 +1,197 @@
+{
+  "node": "x:subj-present-past",
+  "hook": {
+    "line": "Vale wants something now and wanted something else yesterday, and the café hears about both. Spanish changes the second verb depending on when the wanting happens, so it is worth hearing the two side by side.",
+    "es": "Vale quería que Tomás se quedara.",
+    "en": "Vale wanted Tomás to stay."
+  },
+  "examples": [
+    {
+      "es": "Quiero que vengas.",
+      "en": "I want you to come."
+    },
+    {
+      "es": "Quería que vinieras.",
+      "en": "I wanted you to come."
+    },
+    {
+      "es": "Vale quiere que Tomás se quede.",
+      "en": "Vale wants Tomás to stay."
+    },
+    {
+      "es": "Vale quería que Tomás se quedara.",
+      "en": "Vale wanted Tomás to stay."
+    },
+    {
+      "es": "Hernando quiere que yo le ayude.",
+      "en": "Hernando wants me to help him."
+    },
+    {
+      "es": "Hernando quería que yo le ayudara.",
+      "en": "Hernando wanted me to help him."
+    },
+    {
+      "es": "¿Quieres que te ayude?",
+      "en": "Do you want me to help you?"
+    },
+    {
+      "es": "¿Querías que te ayudara?",
+      "en": "Did you want me to help you?"
+    }
+  ],
+  "rule": "Look at the first verb, not the clock. The first verb decides how the second one ends.\n\nWanting, asking or hoping **now**: the present form you know.\n*Quiero que vengas.*\n*Me pide que me quede.*\n\nWanting, asking or hoping **before**: the *-ra* form.\n*Quería que vinieras.*\n*Me pidió que me quedara.*\n\nSo *quiero*, *pido*, *prefiero* and *espero* go with endings like *-e, -es, -a, -as*. *Quería*, *pedí*, *prefería* and *esperaba* go with *-ra, -ras, -ramos, -ran*. English hides this: \"I want you to come\" and \"I wanted you to come\" both keep \"come\". Spanish shows the time on both verbs.",
+  "smallPrint": "Teachers call this agreement of tenses: a present verb of wanting takes the present subjunctive, a past one the imperfect subjunctive.",
+  "readAndPick": [
+    {
+      "es": "Quiero que vengas.",
+      "options": [
+        "I wanted you to come.",
+        "I want you to come."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Quería que vinieras.",
+      "options": [
+        "I wanted you to come.",
+        "I want you to come."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale quería que Tomás se quedara.",
+      "options": [
+        "Vale wants Tomás to stay.",
+        "Vale wanted Tomás to stay."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hernando quiere que yo le ayude.",
+      "options": [
+        "Hernando wants me to help him.",
+        "Hernando wanted me to help him."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Prefería que cerraras la puerta.",
+      "options": [
+        "I prefer that you close the door.",
+        "I preferred that you close the door."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Les pido que no griten.",
+      "options": [
+        "I asked them not to shout.",
+        "I ask them not to shout."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Les pedí que no gritaran.",
+      "options": [
+        "I ask them not to shout.",
+        "I asked them not to shout."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Esperamos que Mariana escriba.",
+      "options": [
+        "We hope Mariana writes.",
+        "We hoped Mariana would write."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Esperábamos que Mariana escribiera.",
+      "options": [
+        "We hope Mariana writes.",
+        "We hoped Mariana would write."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Say \"I want you to come.\" Choose *vengas* or *vinieras*, then type it: *Quiero que ___.*",
+      "answer": "Quiero que vengas.",
+      "accept": [],
+      "why": "*Quiero* is now, so the second verb is the present form."
+    },
+    {
+      "prompt": "Say \"I wanted you to come.\" Choose *vengas* or *vinieras*, then type it: *Quería que ___.*",
+      "answer": "Quería que vinieras.",
+      "accept": [],
+      "why": "*Quería* is past, so the second verb is the *-ra* form."
+    },
+    {
+      "prompt": "Type in Spanish: \"Vale wants Tomás to stay.\"",
+      "answer": "Vale quiere que Tomás se quede.",
+      "accept": [],
+      "why": "*Quiere* is present, so *se quede* is the present form."
+    },
+    {
+      "prompt": "Make it past: *Vale quiere que Tomás se quede.* Say \"Vale wanted Tomás to stay.\"",
+      "answer": "Vale quería que Tomás se quedara.",
+      "accept": [],
+      "why": "Both verbs move to the past together."
+    },
+    {
+      "prompt": "Make it present: *Me pidió que me quedara.* Say \"He asks me to stay.\"",
+      "answer": "Me pide que me quede.",
+      "accept": [],
+      "why": "Both verbs move to the present together: *pide* and *quede*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: \"Do you want me to help you?\"",
+      "answer": "¿Quieres que te ayude?",
+      "accept": [
+        "¿Tú quieres que te ayude?"
+      ],
+      "why": "*Quieres* is present, so *ayude* is the present form."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: \"Did you want me to help you?\"",
+      "answer": "¿Querías que te ayudara?",
+      "accept": [
+        "¿Tú querías que te ayudara?"
+      ],
+      "why": "*Querías* is past, so *ayudara* takes *-ra*."
+    },
+    {
+      "prompt": "Make it past: *Prefiero que cierres la puerta.* Say \"I preferred that you close the door.\"",
+      "answer": "Prefería que cerraras la puerta.",
+      "accept": [
+        "Prefería que tú cerraras la puerta."
+      ],
+      "why": "*Prefiero* becomes *prefería* and *cierres* becomes *cerraras*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Quería que vengas.",
+      "right": "Quería que vinieras.",
+      "why": "A past first verb needs the *-ra* form after it, even if the coming is still in the future."
+    },
+    {
+      "wrong": "Quiero que vinieras.",
+      "right": "Quiero que vengas.",
+      "why": "With *quiero*, the first verb is now, so the second is the plain present form."
+    },
+    {
+      "wrong": "Hernando quiere que le ayudara.",
+      "right": "Hernando quiere que le ayude.",
+      "why": "Keep the two verbs in the same time: both now, or both past."
+    },
+    {
+      "wrong": "Les pedí que no griten.",
+      "right": "Les pedí que no gritaran.",
+      "why": "*Pedí* is past, so *gritaran* follows it."
+    }
+  ],
+  "personal": "Type two sentences about one person: one about what they want now (*Mi mamá quiere que...*) and one about what they wanted when you were younger (*Mi mamá quería que...*)."
+}

@@ -1,0 +1,169 @@
+{
+  "node": "p:te-importaria-que",
+  "hook": {
+    "line": "Tomás has to ask a lot of favours in his first weeks: a seat, a window, a bit of time. This is the softest, most polite way to ask permission.",
+    "es": "¿Te importaría que me sentara aquí?",
+    "en": "Would you mind if I sat here?"
+  },
+  "examples": [
+    {
+      "es": "¿Te importaría que te llamara mañana?",
+      "en": "Would you mind if I called you tomorrow?"
+    },
+    {
+      "es": "¿Le importaría que abriera la ventana?",
+      "en": "Would you mind if I opened the window? (to someone you address as usted)"
+    },
+    {
+      "es": "¿Te importaría que me sentara aquí?",
+      "en": "Would you mind if I sat here?"
+    },
+    {
+      "es": "¿Les importaría que cerrara la puerta?",
+      "en": "Would you all mind if I closed the door?"
+    },
+    {
+      "es": "¿Te importaría que me llamaras mañana?",
+      "en": "Would you mind calling me tomorrow?"
+    }
+  ],
+  "rule": "Start with *¿Te importaría que...?* (to a friend), *¿Le importaría que...?* (to one *usted*) or *¿Les importaría que...?* (to several people). Then the *-ra* form of the person who would do the thing:\n\n*¿Te importaría que **abriera** la ventana?* (I would open it)\n*¿Te importaría que me **llamaras**?* (you would call me)\n\nThe *-ra* form is part of the pattern, even though nothing happened yet. To say \"no problem\", the answer is *no*: *Claro que no.* \"Yes\" would mean it does bother them.",
+  "readAndPick": [
+    {
+      "es": "¿Te importaría que me sentara aquí?",
+      "options": [
+        "Would you mind if I sat here?",
+        "Would you mind sitting here?",
+        "Did you mind that I sat here?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Te importaría que me llamaras mañana?",
+      "options": [
+        "Would you mind if I called you tomorrow?",
+        "Would you mind calling me tomorrow?",
+        "Did you mind that I called?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Te importaría que te llamara mañana?",
+      "options": [
+        "Would you mind calling me tomorrow?",
+        "Would you mind if I called you tomorrow?",
+        "Would you mind if she called you?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Le importaría que abriera la ventana?",
+      "options": [
+        "Would you (formal) mind if I opened the window?",
+        "Would you (informal) mind if I opened the window?",
+        "Would you all mind if I opened the window?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Les importaría que cerrara la puerta?",
+      "options": [
+        "Would you (formal) mind if I closed the door?",
+        "Would you (informal) mind if I closed the door?",
+        "Would you all mind if I closed the door?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Te importaría que Vale viniera?",
+      "options": [
+        "Would you mind if Vale came?",
+        "Would you mind coming, Vale?",
+        "Does it bother Vale that you came?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Te importaría que pagara yo?",
+      "options": [
+        "Would you mind paying?",
+        "Would you mind if I paid?",
+        "Did you mind that I paid?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Le importaría que me ayudara?",
+      "options": [
+        "Would you (formal) mind if I helped you?",
+        "Would you (formal) mind helping me?",
+        "Would you (informal) mind helping me?"
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Ask a friend: \"Would you mind if I called you tomorrow?\" Choose *llamo* or *llamara*, then type it: *¿Te importaría que te ___ mañana?*",
+      "answer": "¿Te importaría que te llamara mañana?",
+      "accept": [],
+      "why": "After *importaría* the verb goes in the *-ra* form."
+    },
+    {
+      "prompt": "Ask a friend: \"Would you mind if I sat here?\"",
+      "answer": "¿Te importaría que me sentara aquí?",
+      "accept": [],
+      "why": "*Me sentara* is \"I would sit\": the person who acts is you."
+    },
+    {
+      "prompt": "Ask a stranger you address as *usted*: \"Would you mind if I opened the window?\"",
+      "answer": "¿Le importaría que abriera la ventana?",
+      "accept": [],
+      "why": "For *usted*, the pattern starts with *Le*."
+    },
+    {
+      "prompt": "Ask a group: \"Would you all mind if I closed the door?\"",
+      "answer": "¿Les importaría que cerrara la puerta?",
+      "accept": [],
+      "why": "For several people it is *Les importaría*."
+    },
+    {
+      "prompt": "Ask a friend: \"Would you mind calling me tomorrow?\"",
+      "answer": "¿Te importaría que me llamaras mañana?",
+      "accept": [],
+      "why": "Now you is the one who calls, so the verb is *llamaras*."
+    },
+    {
+      "prompt": "Make it formal. Change *¿Te importaría que me sentara aquí?* for one person you address as *usted*.",
+      "answer": "¿Le importaría que me sentara aquí?",
+      "accept": [],
+      "why": "Only *Te* changes to *Le*."
+    },
+    {
+      "prompt": "Answer *¿Te importaría que abriera la puerta?* with \"Of course not.\"",
+      "answer": "Claro que no.",
+      "accept": [
+        "No, claro que no."
+      ],
+      "why": "A \"no\" means it doesn't bother them, so they are happy for you to go ahead."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Te importaría que abro la ventana?",
+      "right": "¿Te importaría que abriera la ventana?",
+      "why": "After *importaría* the verb takes the *-ra* form, not the plain present."
+    },
+    {
+      "wrong": "¿Te importa que abriera la ventana?",
+      "right": "¿Te importaría que abriera la ventana?",
+      "why": "Keep both parts soft: *importaría* goes with *-ra*."
+    },
+    {
+      "wrong": "Sí, claro.",
+      "right": "Claro que no.",
+      "why": "Almost. \"Sí\" would mean \"yes, it bothers me\"; to say \"go ahead\", say *no*."
+    }
+  ],
+  "personal": "Imagine you are visiting someone's home. Ask them one polite permission question, for example *¿Te importaría que...?*"
+}

@@ -1,0 +1,179 @@
+{
+  "node": "p:brindo-por",
+  "hook": {
+    "line": "A café full of regulars, a small celebration and a glass raised: you want to say the right thing. Toasts in Spanish are shorter than you think.",
+    "es": "¡Por los novios!",
+    "en": "To the bride and groom!"
+  },
+  "examples": [
+    {
+      "es": "¡Por los novios!",
+      "en": "To the bride and groom!"
+    },
+    {
+      "es": "Brindo por mis amigos.",
+      "en": "I raise a glass to my friends."
+    },
+    {
+      "es": "Brindemos por el éxito del café.",
+      "en": "Let's drink to the café's success."
+    },
+    {
+      "es": "¡Por Rosa!",
+      "en": "To Rosa!"
+    },
+    {
+      "es": "Brindo por ti.",
+      "en": "I raise a glass to you."
+    },
+    {
+      "es": "¡Salud!",
+      "en": "Cheers!"
+    }
+  ],
+  "rule": "A toast is *¡Por...!* and the thing or person you drink to: *¡Por los novios!*, *¡Por Rosa!*, *¡Por nosotros!* English says \"to\", Spanish says *por*.\n\nWant more words? *Brindo por...* (I raise a glass to...) or *Brindemos por...* (let's drink to...).\n\nWhen glasses touch, say *¡Salud!* It works everywhere in Latin America.",
+  "readAndPick": [
+    {
+      "es": "¡Por los novios!",
+      "options": [
+        "To the bride and groom!",
+        "Because of the bride and groom!",
+        "For the bride and groom to come!"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Brindo por mis amigos.",
+      "options": [
+        "Let's drink to my friends.",
+        "I raise a glass to my friends.",
+        "My friends raise a glass."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Brindemos por la familia.",
+      "options": [
+        "Let's drink to the family.",
+        "I raise a glass to the family.",
+        "The family raises a glass."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Por Rosa!",
+      "options": [
+        "Rosa says cheers!",
+        "To Rosa!",
+        "Rosa, drink!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Brindo por ti.",
+      "options": [
+        "I raise a glass to you.",
+        "You raise a glass to me.",
+        "Let's drink to you."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Por nosotros!",
+      "options": [
+        "To you all!",
+        "To us!",
+        "For us to drink!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Salud!",
+      "options": [
+        "To health!",
+        "Cheers!",
+        "Goodbye!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Por los nuevos dueños!",
+      "options": [
+        "To the new owners!",
+        "Cheers to the owner!",
+        "To the old owners!"
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Toast: \"To the bride and groom!\"",
+      "answer": "¡Por los novios!",
+      "accept": [
+        "Por los novios"
+      ],
+      "why": "A toast is *por* plus who you drink to."
+    },
+    {
+      "prompt": "Say: \"To Rosa!\"",
+      "answer": "¡Por Rosa!",
+      "accept": [
+        "Por Rosa"
+      ],
+      "why": "*Por* then the name."
+    },
+    {
+      "prompt": "Say: \"I raise a glass to my friends.\"",
+      "answer": "Brindo por mis amigos.",
+      "accept": [],
+      "why": "*Brindo* is \"I toast\", then *por*."
+    },
+    {
+      "prompt": "Say: \"Let's drink to the family.\"",
+      "answer": "Brindemos por la familia.",
+      "accept": [],
+      "why": "*Brindemos* is \"let's toast\"."
+    },
+    {
+      "prompt": "Say to one friend: \"I raise a glass to you.\"",
+      "answer": "Brindo por ti.",
+      "accept": [],
+      "why": "After *por*, \"you\" is *ti*."
+    },
+    {
+      "prompt": "Say: \"To us!\"",
+      "answer": "¡Por nosotros!",
+      "accept": [
+        "Por nosotros"
+      ],
+      "why": "*Por nosotros* says it all."
+    },
+    {
+      "prompt": "Say: \"Cheers!\"",
+      "answer": "¡Salud!",
+      "accept": [
+        "Salud"
+      ],
+      "why": "*Salud* means health, and it is what you say when glasses touch."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¡Para los novios!",
+      "right": "¡Por los novios!",
+      "why": "English \"to\" in a toast is *por* in Spanish, never *para*."
+    },
+    {
+      "wrong": "Brindo a Rosa.",
+      "right": "Brindo por Rosa.",
+      "why": "You toast *por* someone, not *a* them."
+    },
+    {
+      "wrong": "Brindo mis amigos.",
+      "right": "Brindo por mis amigos.",
+      "why": "*Brindo* needs *por* before the people you drink to."
+    }
+  ],
+  "personal": "Raise a glass to someone or something that matters to you. Type a toast, for example *Brindo por...* or *¡Por...!*"
+}
