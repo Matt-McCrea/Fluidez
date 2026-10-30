@@ -1,0 +1,189 @@
+{
+  "node": "p:habria-sido-mejor",
+  "hook": {
+    "line": "Two friends are looking at a decision that went wrong. Spanish has two small frames for the gentle \"it would have been better\" and the nosy \"what would you have done?\".",
+    "es": "Habría sido mejor esperar.",
+    "en": "It would have been better to wait."
+  },
+  "examples": [
+    {
+      "es": "Habría sido mejor esperar.",
+      "en": "It would have been better to wait."
+    },
+    {
+      "es": "Habría sido mejor que Joaquín hubiera llamado antes.",
+      "en": "It would have been better if Joaquín had called sooner."
+    },
+    {
+      "es": "¿Qué habrías hecho tú en mi lugar?",
+      "en": "What would you have done in my place? (to a friend)"
+    },
+    {
+      "es": "¿Qué habría hecho usted en mi lugar?",
+      "en": "What would you have done in my place? (formal)"
+    },
+    {
+      "es": "¿Qué habrías hecho si Altamira hubiera comprado el café?",
+      "en": "What would you have done if Altamira had bought the café? (to a friend)"
+    }
+  ],
+  "rule": "For \"it would have been better\", use *habría sido mejor*, then either an infinitive for a general idea or *que* with *hubiera* plus a participle for a specific person:\n\n*Habría sido mejor esperar.*\n*Habría sido mejor que Joaquín hubiera llamado.*\n\nIt is a soft reproach as well as a judgment. To ask what someone would have done, use *¿qué habrías hecho tú?* with *tú*, or *habría hecho usted* in formal speech. Add *si* with *hubieras* to set up the situation.",
+  "smallPrint": "The first frame is the conditional perfect of *ser* followed by the pluperfect subjunctive after *que*.",
+  "readAndPick": [
+    {
+      "es": "Habría sido mejor esperar.",
+      "options": [
+        "It would be better to wait.",
+        "It would have been better to wait.",
+        "It was better to wait."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Qué habrías hecho tú en mi lugar?",
+      "options": [
+        "What would you do in my place?",
+        "What did you do in my place?",
+        "What would you have done in my place?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Habría sido mejor que Joaquín hubiera llamado antes.",
+      "options": [
+        "It would have been better if Joaquín had called sooner.",
+        "It would be better if Joaquín called sooner.",
+        "It will be better if Joaquín calls sooner."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Qué habría hecho usted en mi lugar?",
+      "options": [
+        "What would you do in my place? (formal)",
+        "What would you have done in my place? (formal)",
+        "What would he have done in my place?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Qué habrías hecho si Altamira hubiera comprado el café?",
+      "options": [
+        "What would you do if Altamira bought the café?",
+        "What did you do when Altamira bought the café?",
+        "What would you have done if Altamira had bought the café?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Habría sido mejor que no habláramos de eso.",
+      "options": [
+        "It would have been better if we hadn't talked about it.",
+        "It would be better if we don't talk about it.",
+        "It was better that we didn't talk about it."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Sería mejor esperar.",
+      "options": [
+        "It would have been better to wait.",
+        "It would be better to wait.",
+        "It was better to wait."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Qué harías tú en mi lugar?",
+      "options": [
+        "What would you have done in my place?",
+        "What did you do in my place?",
+        "What would you do in my place?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Habría sido mejor llamar antes.",
+      "options": [
+        "It would have been better to call first.",
+        "It would be better to call first.",
+        "It was good to call first."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the right form and type the whole sentence: *___ sido mejor esperar.* (*Habría* or *Sería*)",
+      "answer": "Habría sido mejor esperar.",
+      "accept": [],
+      "why": "It is about the past, a decision already made, so *habría sido*."
+    },
+    {
+      "prompt": "Pick the right form and type the whole sentence, to a friend: *¿Qué ___ hecho tú en mi lugar?* (*habrías* or *harías*)",
+      "answer": "¿Qué habrías hecho tú en mi lugar?",
+      "accept": [
+        "¿Qué habrías hecho en mi lugar?"
+      ],
+      "why": "For a past situation you need *habrías hecho*."
+    },
+    {
+      "prompt": "Type in Spanish: It would have been better to call sooner.",
+      "answer": "Habría sido mejor llamar antes.",
+      "accept": [
+        "Habría sido mejor llamar más temprano."
+      ],
+      "why": "*Habría sido mejor* plus an infinitive for a general idea."
+    },
+    {
+      "prompt": "Type in Spanish: It would have been better if Joaquín had called sooner.",
+      "answer": "Habría sido mejor que Joaquín hubiera llamado antes.",
+      "accept": [
+        "Habría sido mejor que Joaquín llamara antes."
+      ],
+      "why": "With a specific person, *que* brings *hubiera* plus the participle."
+    },
+    {
+      "prompt": "Type in Spanish, formal: What would you have done in my place?",
+      "answer": "¿Qué habría hecho usted en mi lugar?",
+      "accept": [
+        "¿Qué habría hecho en mi lugar?"
+      ],
+      "why": "*Usted* takes *habría hecho*, no *-s*."
+    },
+    {
+      "prompt": "Change it to a friend: *¿Qué habría hecho usted en mi lugar?*",
+      "answer": "¿Qué habrías hecho tú en mi lugar?",
+      "accept": [
+        "¿Qué habrías hecho en mi lugar?"
+      ],
+      "why": "A friend is *tú*, so *habrías*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: What would you have done if Altamira had bought the café?",
+      "answer": "¿Qué habrías hecho si Altamira hubiera comprado el café?",
+      "accept": [
+        "¿Qué habrías hecho tú si Altamira hubiera comprado el café?"
+      ],
+      "why": "The *si* half takes *hubiera* plus the participle."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Sería mejor que hubieras esperado.",
+      "right": "Habría sido mejor que hubieras esperado.",
+      "why": "Almost. When the judgment is about something that already happened, use *habría sido*, not *sería*."
+    },
+    {
+      "wrong": "Habría sido mejor que esperas.",
+      "right": "Habría sido mejor que hubieras esperado.",
+      "why": "After *que* in this frame you need the subjunctive, *hubieras esperado*, not a plain present."
+    },
+    {
+      "wrong": "¿Qué harías tú si Altamira hubiera comprado el café?",
+      "right": "¿Qué habrías hecho tú si Altamira hubiera comprado el café?",
+      "why": "Keep both halves in the past: *habrías hecho* with *hubiera comprado*."
+    }
+  ],
+  "personal": "Think of a decision that didn't go as planned. Write one sentence starting *Habría sido mejor…*."
+}

@@ -1,0 +1,213 @@
+{
+  "node": "g:si-past-unreal",
+  "hook": {
+    "line": "Everyone in the café has a version of what would have happened. If Rosa had posted one of those letters, would Joaquín have come back? To play that game you need one frame.",
+    "es": "Si hubiera sabido, habría venido antes.",
+    "en": "If I had known, I would have come sooner."
+  },
+  "examples": [
+    {
+      "es": "Si hubiera sabido, habría venido antes.",
+      "en": "If I had known, I would have come sooner."
+    },
+    {
+      "es": "Si Rosa hubiera mandado las cartas, Joaquín habría vuelto.",
+      "en": "If Rosa had sent the letters, Joaquín would have come back."
+    },
+    {
+      "es": "Si no hubiéramos firmado, hoy estaríamos tranquilos.",
+      "en": "If we hadn't signed, we'd be fine today."
+    },
+    {
+      "es": "Si hubiéramos salido más temprano, no habríamos perdido el bus.",
+      "en": "If we had left earlier, we wouldn't have missed the bus."
+    },
+    {
+      "es": "Si Tomás hubiera aceptado el trabajo en Toronto, no estaría aquí hoy.",
+      "en": "If Tomás had taken the job in Toronto, he wouldn't be here today."
+    },
+    {
+      "es": "Si hubiera sabido, hubiera venido antes.",
+      "en": "If I had known, I would have come sooner."
+    }
+  ],
+  "rule": "To imagine a past that didn't happen, put *hubiera* plus a participle after *si*, and *habría* plus a participle in the other half:\n\n*Si hubiera sabido* (if I had known), *habría venido* (I would have come).\n\nThe two halves can swap places: *Habría venido si hubiera sabido.* The *si* half never takes *habría*: English \"if I would have known\" is the trap.\n\nIf the result is about now, use the plain *-ría* ending: *Si no hubiéramos firmado, hoy estaríamos tranquilos.* In everyday Latin American speech you will also hear *hubiera* in both halves: *Si hubiera sabido, hubiera venido.* It is common and fine.",
+  "smallPrint": "Teachers call this the third conditional, or the past unreal conditional (*condicional irreal de pasado*): *si* + pluperfect subjunctive, conditional perfect. With a result in the present it is called mixed.",
+  "readAndPick": [
+    {
+      "es": "Si hubiera sabido, habría venido antes.",
+      "options": [
+        "If I know, I'll come sooner.",
+        "If I knew, I would come sooner.",
+        "If I had known, I would have come sooner."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Si no hubiéramos firmado, hoy estaríamos tranquilos.",
+      "options": [
+        "If we hadn't signed, we'd be fine today.",
+        "If we don't sign, we'll be fine today.",
+        "If we haven't signed, we're fine today."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Si Rosa hubiera mandado las cartas, Joaquín habría vuelto.",
+      "options": [
+        "Rosa sent the letters, so Joaquín came back.",
+        "If Rosa sends the letters, Joaquín will come back.",
+        "If Rosa had sent the letters, Joaquín would have come back."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Habríamos llegado a tiempo si hubiéramos salido antes.",
+      "options": [
+        "We would arrive on time if we left earlier.",
+        "We would have arrived on time if we had left earlier.",
+        "We will arrive on time if we leave earlier."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Si Vale hubiera llamado, la habría ayudado.",
+      "options": [
+        "If Vale had called, I would have helped her.",
+        "If Vale calls, I'll help her.",
+        "If Vale called, I would help her."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Si hubiera llovido, no habríamos ido.",
+      "options": [
+        "If it rains, we won't go.",
+        "If it had rained, we wouldn't have gone.",
+        "If it rained, we wouldn't go."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Si Tomás hubiera aceptado el trabajo, no estaría aquí hoy.",
+      "options": [
+        "If Tomás accepts the job, he won't be here today.",
+        "If Tomás had accepted the job, he would have left yesterday.",
+        "If Tomás had accepted the job, he wouldn't be here today."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No habría pasado nada si Hernando hubiera escuchado.",
+      "options": [
+        "Nothing would have happened if Hernando had listened.",
+        "Nothing happens if Hernando listens.",
+        "Nothing would happen if Hernando listened."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Si hubiera tenido plata, hubiera comprado el carro.",
+      "options": [
+        "If I have money, I'll buy the car.",
+        "If I had had money, I would have bought the car.",
+        "If I had money, I would buy the car."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the right form and type the whole sentence: *Si ___ sabido, habría venido.* (*hubiera* or *habría*)",
+      "answer": "Si hubiera sabido, habría venido.",
+      "accept": [
+        "Si hubiera sabido, hubiera venido.",
+        "Si hubiese sabido, habría venido."
+      ],
+      "why": "The *si* half takes *hubiera*, never *habría*."
+    },
+    {
+      "prompt": "Pick the right form and type the whole sentence: *Si Vale hubiera llamado, la ___ ayudado.* (*habría* or *hubiera*)",
+      "answer": "Si Vale hubiera llamado, la habría ayudado.",
+      "accept": [
+        "Si Vale hubiera llamado, la hubiera ayudado."
+      ],
+      "why": "The result half is the one with *habría*: what would have happened."
+    },
+    {
+      "prompt": "Type in Spanish: If I had known, I would have come sooner.",
+      "answer": "Si hubiera sabido, habría venido antes.",
+      "accept": [
+        "Si hubiera sabido, hubiera venido antes.",
+        "Habría venido antes si hubiera sabido."
+      ],
+      "why": "*Hubiera* plus participle after *si*, *habría* plus participle for the result."
+    },
+    {
+      "prompt": "Type in Spanish: If it had rained, we wouldn't have gone.",
+      "answer": "Si hubiera llovido, no habríamos ido.",
+      "accept": [
+        "Si hubiera llovido, no hubiéramos ido.",
+        "No habríamos ido si hubiera llovido."
+      ],
+      "why": "*No* goes right before *habríamos*, and *ido* is the participle of *ir*."
+    },
+    {
+      "prompt": "Type in Spanish: If Tomás had taken the job in Toronto, he wouldn't be here today.",
+      "answer": "Si Tomás hubiera aceptado el trabajo en Toronto, no estaría aquí hoy.",
+      "accept": [
+        "Si Tomás hubiera aceptado el trabajo en Toronto, hoy no estaría aquí.",
+        "Tomás no estaría aquí hoy si hubiera aceptado el trabajo en Toronto."
+      ],
+      "why": "The result is about today, so it is plain *estaría*, not *habría estado*."
+    },
+    {
+      "prompt": "Make it about *we*: *Si hubiera sabido, habría venido.*",
+      "answer": "Si hubiéramos sabido, habríamos venido.",
+      "accept": [
+        "Si hubiéramos sabido, hubiéramos venido."
+      ],
+      "why": "Both *hubiera* and *habría* change for *we*: *hubiéramos*, *habríamos*."
+    },
+    {
+      "prompt": "Make it negative in the *si* half: *Si hubiera firmado, hoy estaría tranquilo.*",
+      "answer": "Si no hubiera firmado, hoy estaría tranquilo.",
+      "accept": [
+        "Hoy estaría tranquilo si no hubiera firmado."
+      ],
+      "why": "*No* goes right before *hubiera*."
+    },
+    {
+      "prompt": "Type in Spanish: If Vale had called, I would have helped her.",
+      "answer": "Si Vale hubiera llamado, la habría ayudado.",
+      "accept": [
+        "Si Vale hubiera llamado, la hubiera ayudado.",
+        "La habría ayudado si Vale hubiera llamado."
+      ],
+      "why": "*La* (her) goes before *habría*, and *llamado* is the participle."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Si habría sabido, habría venido.",
+      "right": "Si hubiera sabido, habría venido.",
+      "why": "Almost. English says \"if I would have known\", but Spanish keeps *habría* for the result and uses *hubiera* after *si*."
+    },
+    {
+      "wrong": "Si supiera, habría venido.",
+      "right": "Si hubiera sabido, habría venido.",
+      "why": "*Supiera* imagines now; for something that didn't happen in the past you need *hubiera sabido*."
+    },
+    {
+      "wrong": "Si hubiera sabido, venía antes.",
+      "right": "Si hubiera sabido, habría venido antes.",
+      "why": "The result half needs *habría* plus the participle: it is what would have happened."
+    },
+    {
+      "wrong": "Si hubiera tenido plata, viajaría ayer.",
+      "right": "Si hubiera tenido plata, habría viajado ayer.",
+      "why": "A result that belongs to the past is *habría viajado*; plain *viajaría* only fits a result about now."
+    }
+  ],
+  "personal": "Think of one small choice you made last year. Write what would have happened otherwise, starting *Si no hubiera…*."
+}

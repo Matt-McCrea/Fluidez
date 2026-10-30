@@ -1,0 +1,183 @@
+{
+  "node": "p:sobrevivir-a",
+  "hook": {
+    "line": "The block has seen a few crises, and the café is still standing. Spanish has a small set of verbs for coming through hard things, and each picks a different kind of survival.",
+    "es": "La empresa sobrevivió a la crisis.",
+    "en": "The company survived the crisis."
+  },
+  "examples": [
+    {
+      "es": "La empresa sobrevivió a la crisis.",
+      "en": "The company survived the crisis."
+    },
+    {
+      "es": "El puente resistió el terremoto.",
+      "en": "The bridge withstood the earthquake."
+    },
+    {
+      "es": "No aguanté más.",
+      "en": "I couldn't take any more."
+    },
+    {
+      "es": "Yesid no aguanta el frío de Bogotá.",
+      "en": "Yesid can't stand the cold of Bogotá."
+    },
+    {
+      "es": "Rosa sobrevivió a una crisis en el café.",
+      "en": "Rosa survived a crisis at the café."
+    }
+  ],
+  "rule": "Three verbs, three shades:\n\n*Sobrevivir a* is to come through something that could have finished you. Keep the *a*: *sobrevivió a la crisis*.\n\n*Resistir* is to hold up under pressure, like a bridge in an earthquake. It does not need a life-or-death threat. No *a* needed: *resistió el terremoto*.\n\n*Aguantar* is the everyday one: to put up with, to take. *No aguanto el frío.* *No aguanté más.*",
+  "smallPrint": "*Sobrevivir a* takes *a* before the thing you come through, a bit like the personal *a*.",
+  "readAndPick": [
+    {
+      "es": "No aguanté más.",
+      "options": [
+        "I won't take any more.",
+        "I couldn't take any more.",
+        "He couldn't take any more."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No aguanto el frío.",
+      "options": [
+        "I can't stand the cold.",
+        "I couldn't stand the cold.",
+        "I won't stand the cold."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La empresa sobrevivió a la crisis.",
+      "options": [
+        "The company is surviving the crisis.",
+        "The company will survive the crisis.",
+        "The company survived the crisis."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El puente resistió el terremoto.",
+      "options": [
+        "The bridge withstood the earthquake.",
+        "The bridge will withstand the earthquake.",
+        "The earthquake destroyed the bridge."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Rosa sobrevivió a una crisis.",
+      "options": [
+        "Rosa will survive a crisis.",
+        "Rosa survived a crisis.",
+        "Rosa causes a crisis."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Yesid no aguanta el frío.",
+      "options": [
+        "I can't stand the cold.",
+        "You can't stand the cold.",
+        "Yesid can't stand the cold."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Los dos sobrevivieron al invierno.",
+      "options": [
+        "Both of them survived the winter.",
+        "Both of them will survive the winter.",
+        "I survived the winter."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El techo no resistió la lluvia.",
+      "options": [
+        "The roof will not withstand the rain.",
+        "The roof did not withstand the rain.",
+        "The roof withstood the rain."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Aguantas más?",
+      "options": [
+        "Can you take more? (to a friend)",
+        "Can she take more?",
+        "Could you take more?"
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the right form and type the whole sentence: *La empresa sobrevivió ___ la crisis.* (*a* or *de*)",
+      "answer": "La empresa sobrevivió a la crisis.",
+      "accept": [],
+      "why": "*Sobrevivir* takes *a* before what you come through."
+    },
+    {
+      "prompt": "Pick the right verb and type the whole sentence: *El puente ___ el terremoto.* (*resistió* or *sobrevivió*)",
+      "answer": "El puente resistió el terremoto.",
+      "accept": [],
+      "why": "A bridge holds up under pressure, so *resistir* fits."
+    },
+    {
+      "prompt": "Type in Spanish: I couldn't take any more.",
+      "answer": "No aguanté más.",
+      "accept": [
+        "Ya no aguanté más."
+      ],
+      "why": "*Aguantar* in the past tense, *aguanté*, for \"I couldn't take it\"."
+    },
+    {
+      "prompt": "Type in Spanish: Yesid can't stand the cold of Bogotá.",
+      "answer": "Yesid no aguanta el frío de Bogotá.",
+      "accept": [
+        "Yesid no aguanta el frío en Bogotá."
+      ],
+      "why": "Right now, so the present *aguanta*."
+    },
+    {
+      "prompt": "Type in Spanish: Rosa survived a crisis at the café.",
+      "answer": "Rosa sobrevivió a una crisis en el café.",
+      "accept": [
+        "Rosa sobrevivió a una crisis en el café."
+      ],
+      "why": "*Sobrevivió a* plus the crises, with the *a* kept."
+    },
+    {
+      "prompt": "Make it about *we*: *No aguanté más.*",
+      "answer": "No aguantamos más.",
+      "accept": [],
+      "why": "*We* in the past tense ends in *-amos*: *aguantamos*."
+    },
+    {
+      "prompt": "Make it about two people: *La empresa sobrevivió a la crisis.* Use *las dos empresas*.",
+      "answer": "Las dos empresas sobrevivieron a la crisis.",
+      "accept": [],
+      "why": "Plural subject, plural verb: *sobrevivieron*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La empresa sobrevivió la crisis.",
+      "right": "La empresa sobrevivió a la crisis.",
+      "why": "The *a* is the standard form: *sobrevivir a* something."
+    },
+    {
+      "wrong": "La empresa sobrevivió de la crisis.",
+      "right": "La empresa sobrevivió a la crisis.",
+      "why": "English \"survive\" has no little word, but Spanish wants *a*, not *de*."
+    },
+    {
+      "wrong": "El puente sobrevivió el terremoto.",
+      "right": "El puente resistió el terremoto.",
+      "why": "For things that hold up under pressure, such as a bridge or a roof, Spanish says *resistir*."
+    }
+  ],
+  "personal": "What is something you couldn't stand at first and now you put up with? Say it with *No aguantaba…* or *Aguanto…*."
+}

@@ -1,0 +1,197 @@
+{
+  "node": "x:si-past-present-unreal",
+  "hook": {
+    "line": "\"If I had money\" and \"if I'd had money\" sound almost the same in English, but one is about today and the other is about a door that has already closed. Spanish keeps them clearly apart.",
+    "es": "Si tuviera plata, viajaría.",
+    "en": "If I had money, I'd travel."
+  },
+  "examples": [
+    {
+      "es": "Si tuviera plata, viajaría.",
+      "en": "If I had money, I'd travel."
+    },
+    {
+      "es": "Si hubiera tenido plata, habría viajado.",
+      "en": "If I'd had money, I would have travelled."
+    },
+    {
+      "es": "Si Rosa estuviera aquí, nos diría qué hacer.",
+      "en": "If Rosa were here, she would tell us what to do."
+    },
+    {
+      "es": "Si Rosa hubiera estado aquí, nos habría dicho qué hacer.",
+      "en": "If Rosa had been here, she would have told us what to do."
+    },
+    {
+      "es": "Si tuviéramos más tiempo, esperaríamos.",
+      "en": "If we had more time, we would wait."
+    },
+    {
+      "es": "Si hubiéramos tenido más tiempo, habríamos esperado.",
+      "en": "If we'd had more time, we would have waited."
+    }
+  ],
+  "rule": "Ask one question: is the \"if\" about now, or about something already over?\n\nNow, or just imagined: *si tuviera* with the ending *-ría*.\n*Si tuviera plata, viajaría.*\n\nAlready over: *si hubiera tenido* with *habría* plus a participle.\n*Si hubiera tenido plata, habría viajado.*\n\nKeep the two halves in the same time. A word like *ayer* or *el año pasado* tells you to go to the second pair. You may also mix them on purpose: a past \"if\" with a result about today, as in *Si hubiera aceptado, hoy viviría en Toronto.*",
+  "smallPrint": "Teachers call the first pair the present unreal conditional (imperfect subjunctive + conditional), and the second the past unreal conditional (pluperfect subjunctive + conditional perfect).",
+  "readAndPick": [
+    {
+      "es": "Si tuviera plata, viajaría.",
+      "options": [
+        "If I'd had money, I would have travelled.",
+        "If I had money, I'd travel.",
+        "If I have money, I'll travel."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Si hubiera tenido plata, habría viajado.",
+      "options": [
+        "If I'd had money, I would have travelled.",
+        "If I had money, I'd travel.",
+        "I had money, so I travelled."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Si Rosa estuviera aquí, nos diría qué hacer.",
+      "options": [
+        "If Rosa had been here, she would have told us what to do.",
+        "If Rosa is here, she'll tell us what to do.",
+        "If Rosa were here, she would tell us what to do."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Si Rosa hubiera estado aquí, nos habría dicho qué hacer.",
+      "options": [
+        "If Rosa had been here, she would have told us what to do.",
+        "If Rosa were here, she would tell us what to do.",
+        "Rosa is here and she tells us what to do."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Si hubiéramos tenido más tiempo, habríamos esperado.",
+      "options": [
+        "If we had more time, we would wait.",
+        "If we'd had more time, we would have waited.",
+        "If we have more time, we'll wait."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Si tuviéramos más tiempo, esperaríamos.",
+      "options": [
+        "If we had more time, we would wait.",
+        "If we'd had more time, we would have waited.",
+        "If we have more time, we'll wait."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Si hubiera aceptado, hoy viviría en Toronto.",
+      "options": [
+        "If I accepted, I would live in Toronto today.",
+        "If I had accepted, I would have lived in Toronto.",
+        "If I had accepted, I'd be living in Toronto today."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Si no hubiera llovido ayer, habríamos salido.",
+      "options": [
+        "If it hadn't rained yesterday, we would have gone out.",
+        "If it doesn't rain, we'll go out.",
+        "If it didn't rain, we would go out."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Si no lloviera, saldríamos.",
+      "options": [
+        "If it hadn't rained, we would have gone out.",
+        "If it wouldn't rain, we went out.",
+        "If it didn't rain, we would go out."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the right form and type the whole sentence: *Si ___ plata, viajaría.* (*tuviera* or *hubiera tenido*)",
+      "answer": "Si tuviera plata, viajaría.",
+      "accept": [
+        "Si tuviera plata, yo viajaría."
+      ],
+      "why": "The result is *viajaría*, a plain \"would\", so the \"if\" is about now: *tuviera*."
+    },
+    {
+      "prompt": "Pick the right form and type the whole sentence: *Si ___ plata, habría viajado.* (*tuviera* or *hubiera tenido*)",
+      "answer": "Si hubiera tenido plata, habría viajado.",
+      "accept": [
+        "Si hubiera tenido plata, hubiera viajado."
+      ],
+      "why": "*Habría viajado* is about the past, so the \"if\" matches: *hubiera tenido*."
+    },
+    {
+      "prompt": "Type in Spanish: If Rosa were here, she would tell us what to do.",
+      "answer": "Si Rosa estuviera aquí, nos diría qué hacer.",
+      "accept": [
+        "Nos diría qué hacer si Rosa estuviera aquí."
+      ],
+      "why": "Now and imagined: *estuviera* with *diría*."
+    },
+    {
+      "prompt": "Type in Spanish: If Rosa had been here, she would have told us what to do.",
+      "answer": "Si Rosa hubiera estado aquí, nos habría dicho qué hacer.",
+      "accept": [
+        "Si Rosa hubiera estado aquí, nos hubiera dicho qué hacer.",
+        "Nos habría dicho qué hacer si Rosa hubiera estado aquí."
+      ],
+      "why": "Already over: *hubiera estado* with *habría dicho*."
+    },
+    {
+      "prompt": "Move it into the past: *Si tuviéramos más tiempo, esperaríamos.*",
+      "answer": "Si hubiéramos tenido más tiempo, habríamos esperado.",
+      "accept": [
+        "Si hubiéramos tenido más tiempo, hubiéramos esperado."
+      ],
+      "why": "Each half steps back: *hubiéramos tenido* and *habríamos esperado*."
+    },
+    {
+      "prompt": "Bring it to now: *Si hubiera tenido plata, habría viajado.*",
+      "answer": "Si tuviera plata, viajaría.",
+      "accept": [
+        "Si yo tuviera plata, viajaría."
+      ],
+      "why": "Drop the *hubiera* and *habría* and use *tuviera* with *viajaría*."
+    },
+    {
+      "prompt": "Type in Spanish: If I had accepted, I'd be living in Toronto today.",
+      "answer": "Si hubiera aceptado, hoy viviría en Toronto.",
+      "accept": [
+        "Si hubiera aceptado, hoy estaría viviendo en Toronto.",
+        "Hoy viviría en Toronto si hubiera aceptado."
+      ],
+      "why": "A past \"if\" with a result about today: *hubiera aceptado*, then plain *viviría*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Si tuviera plata, habría viajado.",
+      "right": "Si tuviera plata, viajaría.",
+      "why": "Both halves need the same time frame: *tuviera* goes with *viajaría*."
+    },
+    {
+      "wrong": "Si tuviera tiempo ayer, habría ido.",
+      "right": "Si hubiera tenido tiempo ayer, habría ido.",
+      "why": "*Ayer* is already over, so the \"if\" half needs *hubiera tenido*."
+    },
+    {
+      "wrong": "Si hubiera tenido plata, viajo.",
+      "right": "Si hubiera tenido plata, viajaría.",
+      "why": "After an imagined \"if\", the result is always a \"would\" form, never a plain present."
+    }
+  ],
+  "personal": "Write one pair about you. First an imagined \"if\" about now (*Si tuviera…*), then the same idea in the past (*Si hubiera tenido…*)."
+}

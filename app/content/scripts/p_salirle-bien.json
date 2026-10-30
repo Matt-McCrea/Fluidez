@@ -1,0 +1,189 @@
+{
+  "node": "p:salirle-bien",
+  "hook": {
+    "line": "Everyone in the café asks the same thing after a big day: how did it go? Spanish has a neat way to say how something turned out for someone.",
+    "es": "¿Cómo te fue en el examen?",
+    "en": "How did your exam go? (to a friend)"
+  },
+  "examples": [
+    {
+      "es": "¿Cómo te fue en el examen?",
+      "en": "How did your exam go? (to a friend)"
+    },
+    {
+      "es": "Me salió muy bien la entrevista.",
+      "en": "My interview went really well."
+    },
+    {
+      "es": "A Hernando le fue mal en el juzgado.",
+      "en": "It went badly for Hernando at the court."
+    },
+    {
+      "es": "A Vale le salió mal el pastel.",
+      "en": "Vale's cake didn't turn out well."
+    },
+    {
+      "es": "Les ha ido muy bien con el negocio.",
+      "en": "The business has gone very well for them."
+    }
+  ],
+  "rule": "To say how something turned out for someone, use *salir* or *ir* with *bien* or *mal*, and put the person first as *me*, *te*, *le*, *nos* or *les*:\n\n*Me salió bien la entrevista.* (the interview came out well for me)\n*¿Cómo te fue?* (how did it go for you?)\n\nThe thing that turned out is the subject, so the verb agrees with it: *me salieron bien las cosas*. Use *salir* for something you made or did, and *ir* for how a whole event or situation went.",
+  "smallPrint": "This works like *gustar*: the person is the indirect object (*me*, *te*, *le*) and the thing is the subject.",
+  "readAndPick": [
+    {
+      "es": "Te salió mal el examen.",
+      "options": [
+        "Your exam went badly.",
+        "My exam went badly.",
+        "Your exam went well."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me salió muy bien la entrevista.",
+      "options": [
+        "My interview went badly.",
+        "My interview went really well.",
+        "Your interview went really well."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A Vale le fue muy bien.",
+      "options": [
+        "It went very badly for Vale.",
+        "It went very well for me.",
+        "It went very well for Vale."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Cómo les fue en el viaje?",
+      "options": [
+        "How did the trip go for you all?",
+        "How did the trip go for you?",
+        "How did the trip go for him?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A Hernando le salió mal el plan.",
+      "options": [
+        "Hernando's plan turned out well.",
+        "Hernando's plan turned out badly.",
+        "My plan turned out badly."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nos fue mal en el juzgado.",
+      "options": [
+        "It went badly for us at the court.",
+        "It went well for us at the court.",
+        "It went badly for them at the court."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Cómo te fue en la reunión?",
+      "options": [
+        "How did the meeting go for me?",
+        "How did the meeting go for her?",
+        "How did the meeting go for you?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Les ha ido bien con el negocio.",
+      "options": [
+        "The business has gone badly for them.",
+        "The business has gone well for them.",
+        "The business has gone well for him."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me salieron bien las cosas.",
+      "options": [
+        "Things turned out well for me.",
+        "Things turned out badly for me.",
+        "Things turned out well for you."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the right form and type the whole sentence, to a friend: *¿Cómo ___ fue en el examen?* (*te* or *me*)",
+      "answer": "¿Cómo te fue en el examen?",
+      "accept": [],
+      "why": "You are asking about your friend, so the person word is *te*."
+    },
+    {
+      "prompt": "Pick the right form and type the whole sentence: *A Vale le ___ mal el pastel.* (*salió* or *salí*)",
+      "answer": "A Vale le salió mal el pastel.",
+      "accept": [],
+      "why": "The cake is the thing that turned out, so the verb is *salió*."
+    },
+    {
+      "prompt": "Type in Spanish: My interview went really well.",
+      "answer": "Me salió muy bien la entrevista.",
+      "accept": [
+        "La entrevista me salió muy bien.",
+        "Me fue muy bien en la entrevista."
+      ],
+      "why": "*Me* shows who it turned out for, and *la entrevista* is the subject."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: How did your exam go?",
+      "answer": "¿Cómo te fue en el examen?",
+      "accept": [
+        "¿Cómo te salió el examen?"
+      ],
+      "why": "*Te* for your friend, and *fue* for how it went overall."
+    },
+    {
+      "prompt": "Type in Spanish: It went badly for Hernando at the court.",
+      "answer": "A Hernando le fue mal en el juzgado.",
+      "accept": [
+        "A Hernando le salió mal en el juzgado.",
+        "En el juzgado le fue mal a Hernando."
+      ],
+      "why": "*Le* repeats Hernando, and *fue* with *mal* says how it went."
+    },
+    {
+      "prompt": "Change it to *we*: *A Vale le salió mal el pastel.*",
+      "answer": "A nosotros nos salió mal el pastel.",
+      "accept": [
+        "Nos salió mal el pastel."
+      ],
+      "why": "Switch *le* to *nos*; the cake is still the subject, so *salió* stays."
+    },
+    {
+      "prompt": "Make it plural, about things: *Me salió bien la entrevista.* Use *las entrevistas*.",
+      "answer": "Me salieron bien las entrevistas.",
+      "accept": [
+        "Las entrevistas me salieron bien."
+      ],
+      "why": "The verb agrees with the things that turned out, so *salieron*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Yo salí bien en la entrevista.",
+      "right": "Me salió bien la entrevista.",
+      "why": "Almost. *Yo salí bien* means you came out looking good, as in a photo; for how it went, the interview is the subject."
+    },
+    {
+      "wrong": "Me salió bien las entrevistas.",
+      "right": "Me salieron bien las entrevistas.",
+      "why": "The verb agrees with the things that turned out, so plural things need *salieron*."
+    },
+    {
+      "wrong": "¿Cómo fuiste en el examen?",
+      "right": "¿Cómo te fue en el examen?",
+      "why": "The exam is what went, not you: *te fue*, like *gustar*."
+    }
+  ],
+  "personal": "Think of something that went well or badly for you this week. Say it with *Me salió…* or *Me fue…*."
+}
