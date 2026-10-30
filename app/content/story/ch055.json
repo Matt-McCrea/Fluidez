@@ -2,7 +2,7 @@
   "id": "ch055",
   "unit": "u20",
   "title": "¿Dónde está Simón?",
-  "text": "La almojábana de Simón estaba encima de la máquina, sin terminar. Pero Simón no estaba.\nTomás buscó en la cocina, en el baño, debajo de las mesas y detrás de la nevera.\nTomás: ¿Simón? ¿Simón, dónde estás?\nVale: A lo mejor está con Hernando. A veces se va con él a la panadería de la esquina.\nA las siete entró Hernando, solo.\nHernando: Buenos días, familia. ¿Y Simón? ¿Todavía duerme?\nNadie se rió. Hernando miró la máquina y se sentó despacio.\nHernando: ¿Y dónde estará ese pájaro?\nJhon Fredy ya tenía una teoría. Jhon Fredy siempre tiene teorías.\nJhon Fredy: Teoría número uno: Simón salió por la ventana. En la zona hay árboles altos. A lo mejor está en un árbol del parque, con otros loros.\nVale: Simón no sale solo. A Simón no le gusta la calle.\nTomás: Supongo que alguien lo llevó.\nHernando: ¿Y quién se lleva un loro que grita a las cinco de la mañana?\nMariana llegó con el celular en la mano.\nMariana: A lo mejor fue Altamira. Primero el inspector, y ahora Simón.\nVale: ¿Altamira? ¿Y qué hace Altamira con un loro?\nMariana: Nos quiere nerviosos. Supongo que tiene un plan. Siempre tiene un plan.\nJhon Fredy: Teoría número dos: Simón tomó el bus a Medellín. Le gustó el viaje.\nA las ocho entró una señora y pidió un tinto. Todos miraron la máquina. Nadie gritó «¡Tinto!».\nHernando se levantó.\nHernando: Rosa luchó cuarenta años por este café, y Simón luchó con ella. Yo lo busco. Conozco todas las calles de esta zona.\nEn la radio dieron el pronóstico: lluvias fuertes en Bogotá desde el sábado.\nHernando: El sábado. Simón nunca vivió en la calle. Con lluvia, no va a reconocer esta esquina.\nHernando tomó la gorra y salió.",
+  "text": "La almojábana de Simón estaba encima de la máquina, sin terminar. Pero Simón no estaba.\nTomás buscó en la cocina, debajo de las mesas y detrás de la nevera.\nTomás: ¿Simón? ¿Simón, dónde estás?\nVale: A lo mejor está con Hernando. A veces se va con él a la panadería de la esquina.\nA las siete entró Hernando, solo.\nHernando: Buenos días, familia. ¿Y Simón? ¿Todavía duerme?\nNadie se rió. Hernando miró la máquina y se sentó despacio.\nJhon Fredy siempre tiene teorías.\nJhon Fredy: Teoría número uno: Simón salió por la ventana. A lo mejor está en un árbol del parque, con otros loros.\nVale: Simón no sale solo. No le gusta la calle.\nTomás: Supongo que alguien se lo llevó.\nHernando: ¿Y quién se lleva un loro que grita a las cinco de la mañana?\nLlegó Mariana.\nMariana: A lo mejor fueron los de Altamira. Primero el inspector, y ahora Simón.\nVale: ¿Y qué hacen ellos con un loro?\nMariana: Nos quieren nerviosos. Siempre tienen un plan.\nJhon Fredy: Teoría número dos: Simón tomó el bus a Medellín. Le gustó el viaje.\nA las ocho entró una señora y pidió un tinto. Todos miraron la máquina. Nadie gritó «¡Tinto!».\nHernando: Rosa luchó cuarenta años por este café, y Simón luchó con ella. Yo lo busco. Conozco todas las calles de esta zona.\nEn la radio dieron el pronóstico: lluvias fuertes desde el sábado.\nHernando: Simón nunca vivió en la calle. Con lluvia, no va a reconocer esta esquina.\nHernando tomó la gorra y salió.",
   "gloss": [
     {
       "es": "loro",
@@ -21,8 +21,8 @@
       "en": "Sometimes he goes with him to the bakery on the corner."
     },
     {
-      "es": "Nos quiere nerviosos.",
-      "en": "He wants us nervous."
+      "es": "Nos quieren nerviosos.",
+      "en": "They want us nervous."
     },
     {
       "es": "Le gustó el viaje.",
@@ -35,6 +35,10 @@
     {
       "es": "Con lluvia, no va a reconocer esta esquina.",
       "en": "In the rain, he won't recognise this corner."
+    },
+    {
+      "es": "los de Altamira",
+      "en": "the Altamira people"
     }
   ],
   "questions": [
@@ -115,18 +119,14 @@
   "requires": [
     "c:a-lo-mejor",
     "c:con-el-ella",
-    "c:hay",
     "c:hola-buenos-dias",
     "c:supongo-que",
     "c:tienes",
     "g:adjective-agreement",
-    "g:demonstratives",
     "g:direct-objects",
     "g:estar-location-states",
     "g:gender-articles",
     "g:gustar-basic",
-    "g:gustar-full",
-    "g:hay-vs-esta",
     "g:imperfect-states",
     "g:ir-a-plans",
     "g:por-para-1",
@@ -150,7 +150,6 @@
     "p:demonstratives-basic",
     "p:frequency-scale",
     "p:indefinites-basic",
-    "p:lugar-tiene",
     "p:me-te-nos-objects",
     "p:otro-no-article",
     "p:por-la-manana",
@@ -164,15 +163,12 @@
   "lexemes": [
     "l:ahora",
     "l:almojábana",
-    "l:alto",
     "l:año",
-    "l:baño",
     "l:bueno",
     "l:bus",
     "l:buscar",
     "l:café",
     "l:calle",
-    "l:celular",
     "l:cocina",
     "l:conocer",
     "l:dar",
@@ -195,14 +191,11 @@
     "l:inspector",
     "l:ir",
     "l:irse",
-    "l:levantarse",
     "l:llegar",
-    "l:llevar",
     "l:llevarse",
     "l:lluvia",
     "l:loro",
     "l:luchar",
-    "l:mano",
     "l:mañana",
     "l:mejor",
     "l:mesa",
@@ -216,7 +209,6 @@
     "l:pedir",
     "l:plan",
     "l:pronóstico",
-    "l:pájaro",
     "l:querer",
     "l:quién",
     "l:qué",
