@@ -1,0 +1,181 @@
+{
+  "node": "p:dar-marcha-atras",
+  "hook": {
+    "line": "Altamira made an offer, then pulled it, and the whole block is talking about it. One phrase says it all, whether it is a car in a parking lot or a big decision.",
+    "es": "Altamira dio marcha atrás con la oferta.",
+    "en": "Altamira withdrew its offer."
+  },
+  "examples": [
+    {
+      "es": "El gobierno dio marcha atrás con la reforma.",
+      "en": "The government backtracked on the reform."
+    },
+    {
+      "es": "Dio marcha atrás en su decisión de renunciar.",
+      "en": "She went back on her decision to resign."
+    },
+    {
+      "es": "Tomás dio marcha atrás con la venta del café.",
+      "en": "Tomás backed out of selling the café."
+    },
+    {
+      "es": "Ya firmé, no puedo dar marcha atrás.",
+      "en": "I've already signed, I can't back out."
+    },
+    {
+      "es": "¿Vas a dar marcha atrás ahora?",
+      "en": "Are you going to back out now? (to a friend)"
+    },
+    {
+      "es": "Altamira dio marcha atrás con la oferta.",
+      "en": "Altamira withdrew its offer."
+    }
+  ],
+  "rule": "*Marcha atrás* is the reverse gear of a car. *Dar marcha atrás* is to reverse.\n\nBut people use it far more for decisions: to change your mind and undo something. *Dio marcha atrás.*\n\nTo say what you backed out of, add *con* or *en*: *dar marcha atrás con la venta*, *en su decisión*.\n\nEnglish says \"back out\", \"backtrack\" or \"go back on\". Spanish has one phrase, with *dar* and the verb changing for the person.",
+  "smallPrint": "Teachers call this a fixed verb phrase (*locución verbal*). *Echar marcha atrás* means the same.",
+  "readAndPick": [
+    {
+      "es": "Tomás dio marcha atrás con la venta del café.",
+      "options": [
+        "Tomás backed out of selling the café.",
+        "Tomás went ahead with selling the café.",
+        "Tomás sold the café in reverse order."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ya firmé, no puedo dar marcha atrás.",
+      "options": [
+        "I have not signed yet.",
+        "I've already signed, I can't back out.",
+        "I'm signing now, and I can go forward."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El gobierno dio marcha atrás con la reforma.",
+      "options": [
+        "The government approved the reform.",
+        "The government wrote the reform backwards.",
+        "The government backtracked on the reform."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Vas a dar marcha atrás ahora?",
+      "options": [
+        "Are you going to back out now?",
+        "Are you going to sign now?",
+        "Are you going backwards now?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Altamira dio marcha atrás con la oferta.",
+      "options": [
+        "Altamira raised its offer.",
+        "Altamira withdrew its offer.",
+        "Altamira made an offer in reverse."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Dio marcha atrás en su decisión de renunciar.",
+      "options": [
+        "She resigned at once.",
+        "She asked others to resign.",
+        "She went back on her decision to resign."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No des marcha atrás ahora, ya casi terminamos.",
+      "options": [
+        "Don't back out now, we're almost done.",
+        "Don't start now, we're almost late.",
+        "Don't go forward now, we're almost done."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mariana dio marcha atrás y no publicó la nota.",
+      "options": [
+        "Mariana published the story at once.",
+        "Mariana changed her mind and did not publish the story.",
+        "Mariana published the story twice."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *dio* or *dieron*: Altamira ___ marcha atrás con la oferta. Type the whole sentence.",
+      "answer": "Altamira dio marcha atrás con la oferta.",
+      "accept": [],
+      "why": "One company, one verb, so *dio*."
+    },
+    {
+      "prompt": "Choose *con* or *a*: Tomás dio marcha atrás ___ la venta del café. Type the whole sentence.",
+      "answer": "Tomás dio marcha atrás con la venta del café.",
+      "accept": [],
+      "why": "To say what you backed out of, use *con* (or *en*) after *marcha atrás*."
+    },
+    {
+      "prompt": "Type in Spanish: \"I've already signed, I can't back out.\"",
+      "answer": "Ya firmé, no puedo dar marcha atrás.",
+      "accept": [
+        "Ya firmé, no puedo echar marcha atrás."
+      ],
+      "why": "*Dar marcha atrás* follows *puedo* as a plain infinitive."
+    },
+    {
+      "prompt": "Type in Spanish: \"Are you going to back out now?\" (to a friend)",
+      "answer": "¿Vas a dar marcha atrás ahora?",
+      "accept": [
+        "¿Vas a echar marcha atrás ahora?"
+      ],
+      "why": "*Vas a* + *dar marcha atrás* asks about the near future."
+    },
+    {
+      "prompt": "Type in Spanish: \"She went back on her decision to resign.\"",
+      "answer": "Dio marcha atrás en su decisión de renunciar.",
+      "accept": [
+        "Echó marcha atrás en su decisión de renunciar."
+      ],
+      "why": "*En su decisión* names the decision she undid."
+    },
+    {
+      "prompt": "Type in Spanish: \"Mariana changed her mind and did not publish the story.\"",
+      "answer": "Mariana dio marcha atrás y no publicó la nota.",
+      "accept": [],
+      "why": "*Dio marcha atrás* covers the change of mind in one phrase."
+    },
+    {
+      "prompt": "Make it a request to a friend: *Das marcha atrás.* Say \"Don't back out now.\"",
+      "answer": "No des marcha atrás ahora.",
+      "accept": [
+        "No des marcha atrás.",
+        "No eches marcha atrás ahora."
+      ],
+      "why": "After *no*, *tú* commands use *des*, never *das*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Tomás dio marcha atrás de la venta.",
+      "right": "Tomás dio marcha atrás con la venta.",
+      "why": "Almost. English says \"back out of\", but Spanish uses *con* (or *en*)."
+    },
+    {
+      "wrong": "Dio una marcha atrás en su decisión.",
+      "right": "Dio marcha atrás en su decisión.",
+      "why": "Almost. The phrase has no article: *dar marcha atrás*."
+    },
+    {
+      "wrong": "Dio atrás marcha con la reforma.",
+      "right": "Dio marcha atrás con la reforma.",
+      "why": "Almost. The order is fixed: *marcha atrás*."
+    }
+  ],
+  "personal": "Think of something you decided and then undid. Say it with *dar marcha atrás*."
+}

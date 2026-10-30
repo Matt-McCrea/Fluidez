@@ -1,0 +1,174 @@
+{
+  "node": "p:a-reventar",
+  "hook": {
+    "line": "Saturday at the café is a different animal: Tomás cannot find a free table, and he has to say so to Vale in half a second.",
+    "es": "El café está lleno a reventar.",
+    "en": "The café is packed to bursting."
+  },
+  "examples": [
+    {
+      "es": "El estadio estaba lleno a reventar.",
+      "en": "The stadium was packed to bursting."
+    },
+    {
+      "es": "El bus iba hasta el tope.",
+      "en": "The bus was packed."
+    },
+    {
+      "es": "La nevera está repleta de comida.",
+      "en": "The fridge is crammed with food."
+    },
+    {
+      "es": "El café estaba lleno a reventar el sábado.",
+      "en": "The café was packed to bursting on Saturday."
+    },
+    {
+      "es": "La maleta está llena a reventar.",
+      "en": "The suitcase is stuffed full."
+    },
+    {
+      "es": "Mi celular está repleto de fotos.",
+      "en": "My phone is crammed with photos."
+    }
+  ],
+  "rule": "To say something is completely full, use *lleno a reventar*: full until it bursts.\n\nIt works for places, containers and crowds: *El café estaba lleno a reventar.*\n\nTwo more ways to say it:\n*hasta el tope* (to the top): *El bus iba hasta el tope.*\n*repleto de* (crammed with): *La nevera está repleta de comida.*\n\n*Lleno* agrees with what it describes: *llena a reventar* for *la maleta*. *A reventar* itself never changes.\n\nEnglish says \"packed\" or \"jam-packed\". The Spanish picture is bursting.",
+  "smallPrint": "Teachers call this an intensifying phrase (*locución intensificadora*). *Reventar* means to burst.",
+  "readAndPick": [
+    {
+      "es": "El estadio estaba lleno a reventar.",
+      "options": [
+        "The stadium was empty.",
+        "The stadium was packed to bursting.",
+        "The stadium burst into flames."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El bus iba hasta el tope.",
+      "options": [
+        "The bus went to the top of the hill.",
+        "The bus was nearly empty.",
+        "The bus was packed."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La nevera está repleta de comida.",
+      "options": [
+        "The fridge is crammed with food.",
+        "The fridge is out of food.",
+        "The fridge is on top of the food."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El café estaba lleno a reventar el sábado.",
+      "options": [
+        "The café was closed on Saturday.",
+        "The café was packed to bursting on Saturday.",
+        "The café was empty on Saturday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La maleta está llena a reventar.",
+      "options": [
+        "The suitcase is half empty.",
+        "The suitcase burst yesterday.",
+        "The suitcase is stuffed full."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mi celular está repleto de fotos.",
+      "options": [
+        "My phone is crammed with photos.",
+        "My phone has no photos.",
+        "My phone is on top of the photos."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La Plaza de Bolívar estaba llena a reventar.",
+      "options": [
+        "The square was empty at night.",
+        "The square was under repair.",
+        "The square was packed to bursting."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El vaso está lleno a reventar, no le eches más.",
+      "options": [
+        "The glass is full to the brim, don't add more.",
+        "The glass is empty, add more.",
+        "The glass is broken, don't use it."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *lleno* or *llena*: La maleta está ___ a reventar. Type the whole sentence.",
+      "answer": "La maleta está llena a reventar.",
+      "accept": [],
+      "why": "*Maleta* is feminine, so *llena*."
+    },
+    {
+      "prompt": "Choose *lleno* or *llena*: El estadio estaba ___ a reventar. Type the whole sentence.",
+      "answer": "El estadio estaba lleno a reventar.",
+      "accept": [],
+      "why": "*Estadio* is masculine, so *lleno*."
+    },
+    {
+      "prompt": "Type in Spanish: \"The café was packed to bursting on Saturday.\"",
+      "answer": "El café estaba lleno a reventar el sábado.",
+      "accept": [],
+      "why": "*Estaba lleno a reventar* describes the crowd at that moment in the past."
+    },
+    {
+      "prompt": "Type in Spanish: \"The bus was packed.\" Use *hasta el tope*.",
+      "answer": "El bus iba hasta el tope.",
+      "accept": [
+        "El bus iba lleno hasta el tope."
+      ],
+      "why": "*Hasta el tope* is the \"to the top\" way to say it."
+    },
+    {
+      "prompt": "Type in Spanish: \"My phone is crammed with photos.\"",
+      "answer": "Mi celular está repleto de fotos.",
+      "accept": [],
+      "why": "*Repleto de* is followed by what fills it."
+    },
+    {
+      "prompt": "Type in Spanish: \"The fridge is crammed with food.\"",
+      "answer": "La nevera está repleta de comida.",
+      "accept": [],
+      "why": "*Repleta* agrees with *nevera*, and *de* introduces the content."
+    },
+    {
+      "prompt": "Make it plural: *La calle estaba llena a reventar.* Say \"The streets were packed to bursting.\"",
+      "answer": "Las calles estaban llenas a reventar.",
+      "accept": [],
+      "why": "*Lleno* agrees in number and gender, but *a reventar* does not change."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El café estaba lleno por reventar.",
+      "right": "El café estaba lleno a reventar.",
+      "why": "Almost. The fixed phrase uses *a*, not *por*."
+    },
+    {
+      "wrong": "La maleta está lleno a reventar.",
+      "right": "La maleta está llena a reventar.",
+      "why": "Almost. *Lleno* must agree with *maleta*, so it is *llena*."
+    },
+    {
+      "wrong": "La nevera está repleta con comida.",
+      "right": "La nevera está repleta de comida.",
+      "why": "Almost. English says \"crammed with\", but *repleto* takes *de*."
+    }
+  ],
+  "personal": "Tell us about a place that was *lleno a reventar* when you were last there."
+}

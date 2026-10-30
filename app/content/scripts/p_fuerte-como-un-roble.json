@@ -1,0 +1,172 @@
+{
+  "node": "p:fuerte-como-un-roble",
+  "hook": {
+    "line": "Don Hernando is seventy-one and still carries sacks of coffee up the stairs. Tomás wants to say how strong he is, and Spanish has a ready-made picture.",
+    "es": "Don Hernando es fuerte como un roble.",
+    "en": "Don Hernando is as strong as an oak."
+  },
+  "examples": [
+    {
+      "es": "Mi abuelo es fuerte como un roble.",
+      "en": "My grandad is as strong as an ox."
+    },
+    {
+      "es": "Este pan está duro como una piedra.",
+      "en": "This bread is as hard as a rock."
+    },
+    {
+      "es": "Esta maleta es pesada como el plomo.",
+      "en": "This suitcase is as heavy as lead."
+    },
+    {
+      "es": "Don Hernando tiene setenta y un años y es fuerte como un roble.",
+      "en": "Don Hernando is seventy-one and as strong as an oak."
+    },
+    {
+      "es": "Simón es ligero como una pluma.",
+      "en": "Simón is as light as a feather."
+    },
+    {
+      "es": "Mariana es rápida como un rayo.",
+      "en": "Mariana is as quick as lightning."
+    }
+  ],
+  "rule": "Spanish loves a fixed comparison: *adjective + como + a thing*.\n\n*Fuerte como un roble* (strong as an oak). *Duro como una piedra* (hard as a rock). *Pesado como el plomo* (heavy as lead). *Ligero como una pluma* (light as a feather).\n\nThe thing is fixed. Do not swap it: nobody says \"fuerte como un pino\".\n\nThe adjective agrees with who you describe: *Ella es rápida como un rayo.* The thing after *como* never changes.\n\nSome are the same as English, some are not: the oak is the ox.",
+  "smallPrint": "Teachers call these fixed similes (*comparaciones fijas*).",
+  "readAndPick": [
+    {
+      "es": "Mi abuelo es fuerte como un roble.",
+      "options": [
+        "My grandad is as strong as an oak.",
+        "My grandad is as weak as a leaf.",
+        "My grandad is taller than an oak."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Este pan está duro como una piedra.",
+      "options": [
+        "This bread is as soft as a pillow.",
+        "This bread is as hard as a rock.",
+        "This bread is shaped like a rock."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Esta maleta es pesada como el plomo.",
+      "options": [
+        "This suitcase is as light as a feather.",
+        "This suitcase is made of plastic.",
+        "This suitcase is as heavy as lead."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Simón es ligero como una pluma.",
+      "options": [
+        "Simón is as light as a feather.",
+        "Simón is as heavy as lead.",
+        "Simón is as hard as a rock."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mariana es rápida como un rayo.",
+      "options": [
+        "Mariana is as slow as a snail.",
+        "Mariana is as quick as lightning.",
+        "Mariana is as tall as a tower."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El pastel quedó duro como una piedra.",
+      "options": [
+        "The cake came out soft as a cloud.",
+        "The cake came out heavy as lead.",
+        "The cake came out hard as a rock."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Rosa era fuerte como un roble.",
+      "options": [
+        "Rosa was as strong as an oak.",
+        "Rosa is as strong as an oak.",
+        "Rosa will be as strong as an oak."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tomás se quedó callado como una tumba.",
+      "options": [
+        "Tomás shouted like a storm.",
+        "Tomás stayed as quiet as a grave.",
+        "Tomás stood as still as a statue."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *un roble* or *una piedra*: Mi abuelo es fuerte como ___. Type the whole sentence.",
+      "answer": "Mi abuelo es fuerte como un roble.",
+      "accept": [],
+      "why": "Strong people are compared to *un roble*."
+    },
+    {
+      "prompt": "Choose *una piedra* or *una pluma*: Este pan está duro como ___. Type the whole sentence.",
+      "answer": "Este pan está duro como una piedra.",
+      "accept": [],
+      "why": "Hard goes with *una piedra*; *una pluma* is for light things."
+    },
+    {
+      "prompt": "Type in Spanish: \"This suitcase is as heavy as lead.\"",
+      "answer": "Esta maleta es pesada como el plomo.",
+      "accept": [],
+      "why": "*Pesada* agrees with *maleta*, and *como el plomo* stays fixed."
+    },
+    {
+      "prompt": "Type in Spanish: \"Mariana is as quick as lightning.\"",
+      "answer": "Mariana es rápida como un rayo.",
+      "accept": [],
+      "why": "Feminine *rápida* for Mariana, and the thing after *como* does not change."
+    },
+    {
+      "prompt": "Type in Spanish: \"Simón is as light as a feather.\"",
+      "answer": "Simón es ligero como una pluma.",
+      "accept": [],
+      "why": "*Ligero* is masculine for Simón, and *una pluma* is the fixed picture."
+    },
+    {
+      "prompt": "Make it about your grandmother: *Mi abuelo es fuerte como un roble.* Say \"My grandmother is as strong as an oak.\"",
+      "answer": "Mi abuela es fuerte como un roble.",
+      "accept": [],
+      "why": "*Fuerte* has one form for both, and *un roble* stays the same."
+    },
+    {
+      "prompt": "Make it the past: *Rosa es fuerte como un roble.* Say \"Rosa was as strong as an oak.\"",
+      "answer": "Rosa era fuerte como un roble.",
+      "accept": [],
+      "why": "Only the verb changes, to *era*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Mi abuelo es fuerte como un pino.",
+      "right": "Mi abuelo es fuerte como un roble.",
+      "why": "Almost. These comparisons are fixed, so keep the standard picture: the oak."
+    },
+    {
+      "wrong": "Esta maleta es pesada como plomo.",
+      "right": "Esta maleta es pesada como el plomo.",
+      "why": "Almost. This comparison keeps its article: *como el plomo*."
+    },
+    {
+      "wrong": "Mariana es rápido como un rayo.",
+      "right": "Mariana es rápida como un rayo.",
+      "why": "Almost. The adjective agrees with Mariana, so it is feminine: *rápida*."
+    }
+  ],
+  "personal": "Describe someone you know with one fixed comparison, for example *fuerte como un roble* or *rápido como un rayo*."
+}

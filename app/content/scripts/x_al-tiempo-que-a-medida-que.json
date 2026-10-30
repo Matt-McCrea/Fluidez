@@ -1,0 +1,198 @@
+{
+  "node": "x:al-tiempo-que-a-medida-que",
+  "hook": {
+    "line": "Tomás is trying to explain the café to Mariana for her article: things are happening at the same time, and some of them keep changing as the day goes on. Spanish has two small phrases for that, and they are not the same.",
+    "es": "A medida que avanza la tarde, baja la temperatura.",
+    "en": "As the afternoon goes on, the temperature drops."
+  },
+  "examples": [
+    {
+      "es": "Sube la producción al tiempo que cae la demanda.",
+      "en": "Production rises while demand falls."
+    },
+    {
+      "es": "A medida que avanza la tarde, baja la temperatura.",
+      "en": "As the afternoon goes on, the temperature drops."
+    },
+    {
+      "es": "Tomás sonríe al tiempo que dice que no.",
+      "en": "Tomás smiles while he says no."
+    },
+    {
+      "es": "A medida que subimos, hace más frío.",
+      "en": "The higher we climb, the colder it gets."
+    },
+    {
+      "es": "Mariana escribe al tiempo que escucha a Don Hernando.",
+      "en": "Mariana writes while she listens to Don Hernando."
+    },
+    {
+      "es": "A medida que pasaban los meses, Tomás entendía mejor el café.",
+      "en": "As the months went by, Tomás understood the café better."
+    },
+    {
+      "es": "Hablaba al tiempo que caminaba.",
+      "en": "He was talking while he walked."
+    }
+  ],
+  "rule": "Both phrases join two things that go on together, but they do different jobs.\n\n*Al tiempo que* = \"while, at the same moment\". Two actions side by side, often with a twist: one goes up, the other goes down. *Sube el precio al tiempo que baja la calidad.*\n\n*A medida que* = \"as, the more… the more…\". One thing changes step by step, and the other changes with it. *A medida que subimos, hace más frío.*\n\nTest: does it grow or shrink gradually? Use *a medida que*. Just two things at once? Use *al tiempo que*.\n\nEnglish \"while\" and \"as\" cover both. Spanish makes you choose. Both take an ordinary verb here.",
+  "smallPrint": "Teachers call these temporal conjunctions of simultaneity (*al tiempo que*) and of proportional progression (*a medida que*). They sit above plain *mientras* in formal writing and the news.",
+  "readAndPick": [
+    {
+      "es": "A medida que subimos, hace más frío.",
+      "options": [
+        "The higher we climb, the colder it gets.",
+        "We climb while it is cold.",
+        "It was cold before we climbed."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tomás sonríe al tiempo que dice que no.",
+      "options": [
+        "Tomás smiles more and more as he says no.",
+        "Tomás smiles while he says no.",
+        "Tomás smiles after he says no."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Sube la producción al tiempo que cae la demanda.",
+      "options": [
+        "Production rises as demand falls, step by step.",
+        "Production rises because demand falls.",
+        "Production rises while demand falls."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "A medida que avanza la tarde, baja la temperatura.",
+      "options": [
+        "The temperature drops while the afternoon starts.",
+        "As the afternoon goes on, the temperature drops.",
+        "The afternoon goes on because it is cold."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mariana escribe al tiempo que escucha a Don Hernando.",
+      "options": [
+        "Mariana writes and then listens to Don Hernando.",
+        "The more Mariana writes, the more Don Hernando listens.",
+        "Mariana writes while she listens to Don Hernando."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "A medida que pasaban los meses, Tomás entendía mejor el café.",
+      "options": [
+        "As the months went by, Tomás understood the café better.",
+        "Tomás understood the café while the months passed, all at once.",
+        "Tomás understood the café better after a few months."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hablaba al tiempo que caminaba.",
+      "options": [
+        "He talked more the farther he walked.",
+        "He was talking while he walked.",
+        "He walked and then he talked."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A medida que aprendo, hablo con menos miedo.",
+      "options": [
+        "I learn while I speak, without fear.",
+        "I speak without fear because I learned.",
+        "The more I learn, the less afraid I am to speak."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Lo dijo al tiempo que se iba.",
+      "options": [
+        "He said it as he was leaving.",
+        "The more he said it, the more he left.",
+        "He said it after he left."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *al tiempo que* or *a medida que*: ___ subimos, hace más frío. Type the whole sentence.",
+      "answer": "A medida que subimos, hace más frío.",
+      "accept": [],
+      "why": "The cold grows step by step as you climb, so *a medida que*."
+    },
+    {
+      "prompt": "Choose *al tiempo que* or *a medida que*: Tomás sonríe ___ dice que no. Type the whole sentence.",
+      "answer": "Tomás sonríe al tiempo que dice que no.",
+      "accept": [],
+      "why": "Two actions at the very same moment, with no gradual change, so *al tiempo que*."
+    },
+    {
+      "prompt": "Type in Spanish: \"Mariana writes while she listens to Don Hernando.\"",
+      "answer": "Mariana escribe al tiempo que escucha a Don Hernando.",
+      "accept": [
+        "Mariana escribe al tiempo que escucha a Don Hernando."
+      ],
+      "why": "Two things at once, so *al tiempo que* joins them."
+    },
+    {
+      "prompt": "Type in Spanish: \"As the afternoon goes on, the temperature drops.\"",
+      "answer": "A medida que avanza la tarde, baja la temperatura.",
+      "accept": [
+        "Baja la temperatura a medida que avanza la tarde."
+      ],
+      "why": "The temperature changes bit by bit with the afternoon, so *a medida que*, and the order can swap."
+    },
+    {
+      "prompt": "Type in Spanish: \"As the months went by, Tomás understood the café better.\"",
+      "answer": "A medida que pasaban los meses, Tomás entendía mejor el café.",
+      "accept": [
+        "Tomás entendía mejor el café a medida que pasaban los meses."
+      ],
+      "why": "Gradual progress over time, so *a medida que*, with the verb in the past to match."
+    },
+    {
+      "prompt": "Make it about the past: *Hablo al tiempo que camino.* Start with *Hablaba*.",
+      "answer": "Hablaba al tiempo que caminaba.",
+      "accept": [],
+      "why": "Both actions move into the past together, so both verbs change."
+    },
+    {
+      "prompt": "Type in Spanish: \"The more I learn, the less afraid I am to speak.\" Use *a medida que* (I learn, I speak with less fear).",
+      "answer": "A medida que aprendo, hablo con menos miedo.",
+      "accept": [
+        "Hablo con menos miedo a medida que aprendo."
+      ],
+      "why": "My fear shrinks gradually as I learn, which is exactly what *a medida que* shows."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Al tiempo que subimos, hace más frío.",
+      "right": "A medida que subimos, hace más frío.",
+      "why": "Almost. The cold grows as you climb, and that gradual change needs *a medida que*."
+    },
+    {
+      "wrong": "A medida que Tomás sonríe, dice que no.",
+      "right": "Tomás sonríe al tiempo que dice que no.",
+      "why": "Almost. Smiling and saying no happen together but do not grow, so use *al tiempo que*."
+    },
+    {
+      "wrong": "A la medida que avanza la tarde, baja la temperatura.",
+      "right": "A medida que avanza la tarde, baja la temperatura.",
+      "why": "Almost. The phrase has no *la*: it is *a medida que*."
+    },
+    {
+      "wrong": "Hablaba al tiempo caminaba.",
+      "right": "Hablaba al tiempo que caminaba.",
+      "why": "Almost. The phrase always ends in *que*: *al tiempo que*."
+    }
+  ],
+  "personal": "Say one true thing about yourself with *a medida que*, for example how your Spanish or your day changes, then one with *al tiempo que* about two things you do at once."
+}

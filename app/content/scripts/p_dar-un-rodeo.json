@@ -1,0 +1,174 @@
+{
+  "node": "p:dar-un-rodeo",
+  "hook": {
+    "line": "A road is closed and Tomás has to cross Bogotá for a delivery. Everyone he meets has an opinion on the best way round, and the words they use are worth having.",
+    "es": "Dimos un rodeo para evitar el trancón.",
+    "en": "We took a detour to avoid the traffic jam."
+  },
+  "examples": [
+    {
+      "es": "Dimos un rodeo para evitar el trancón.",
+      "en": "We took a detour to avoid the traffic jam."
+    },
+    {
+      "es": "Tomé un atajo por el parque.",
+      "en": "I took a shortcut through the park."
+    },
+    {
+      "es": "Agarramos un atajo y llegamos antes.",
+      "en": "We took a shortcut and got there earlier."
+    },
+    {
+      "es": "Don Hernando dio un rodeo por la Séptima.",
+      "en": "Don Hernando took a detour along the Séptima."
+    },
+    {
+      "es": "Habla sin rodeos, por favor.",
+      "en": "Speak plainly, please. (to a friend)"
+    },
+    {
+      "es": "Mariana le dijo la verdad a Tomás sin rodeos.",
+      "en": "Mariana told Tomás the truth without beating around the bush."
+    }
+  ],
+  "rule": "Two ways to get somewhere:\n\n*Dar un rodeo* = take the long way round, a detour. *Dimos un rodeo.*\n\n*Tomar un atajo* or *agarrar un atajo* = take a shortcut. In Latin America, *agarrar* is very common here. Never *coger*.\n\n*Rodeo* works for talking too. *Sin rodeos* = \"straight out\". *Dar rodeos* = to beat around the bush.\n\nEnglish says \"take\" for both. Spanish uses *dar* for the detour and *tomar* or *agarrar* for the shortcut.",
+  "smallPrint": "Teachers call these collocations: words that natives expect side by side, so you learn them as a pair.",
+  "readAndPick": [
+    {
+      "es": "Dimos un rodeo para evitar el trancón.",
+      "options": [
+        "We took a shortcut to the traffic jam.",
+        "We took a detour to avoid the traffic jam.",
+        "We got stuck in the traffic jam."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tomé un atajo por el parque.",
+      "options": [
+        "I took a shortcut through the park.",
+        "I took the long way round the park.",
+        "I walked in the park all day."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Agarramos un atajo y llegamos antes.",
+      "options": [
+        "We took a detour and got there later.",
+        "We took a shortcut and got there earlier.",
+        "We took a shortcut and got lost."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Habla sin rodeos, por favor.",
+      "options": [
+        "Speak slowly, please.",
+        "Speak plainly, please.",
+        "Don't speak at all, please."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mariana le dijo la verdad a Tomás sin rodeos.",
+      "options": [
+        "Mariana told Tomás the truth bluntly.",
+        "Mariana walked around Tomás to tell him the truth.",
+        "Mariana told Tomás a lie."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tuvimos que dar un rodeo porque cerraron la calle.",
+      "options": [
+        "We took a shortcut because the street was closed.",
+        "We had to take a detour because the street was closed.",
+        "We closed the street ourselves."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No des tantos rodeos y dime qué pasa.",
+      "options": [
+        "Don't take so many shortcuts and tell me what's up.",
+        "Take as many detours as you want.",
+        "Stop beating around the bush and tell me what's going on."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Es mejor dar un rodeo que llegar tarde por el trancón.",
+      "options": [
+        "It's better to take a detour than to be late because of the jam.",
+        "It's better to take a shortcut than to be late because of the jam.",
+        "It's better to wait in the jam than to take a detour."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *dar* or *tomar*: Dimos ___ rodeo para evitar el trancón. Type the whole sentence.",
+      "answer": "Dimos un rodeo para evitar el trancón.",
+      "accept": [],
+      "why": "The long way round is *dar un rodeo*."
+    },
+    {
+      "prompt": "Choose *rodeo* or *atajo*: Tomé un ___ por el parque. Type the whole sentence.",
+      "answer": "Tomé un atajo por el parque.",
+      "accept": [],
+      "why": "A shortcut is *un atajo*, and the verb is *tomar* or *agarrar*."
+    },
+    {
+      "prompt": "Type in Spanish: \"We took a shortcut and got there earlier.\"",
+      "answer": "Agarramos un atajo y llegamos antes.",
+      "accept": [
+        "Tomamos un atajo y llegamos antes."
+      ],
+      "why": "*Agarrar un atajo* is the everyday way to say it."
+    },
+    {
+      "prompt": "Type in Spanish: \"Speak plainly, please.\" (to a friend)",
+      "answer": "Habla sin rodeos, por favor.",
+      "accept": [],
+      "why": "*Sin rodeos* means with no detours, straight to the point."
+    },
+    {
+      "prompt": "Type in Spanish: \"Don Hernando took a detour along the Séptima.\"",
+      "answer": "Don Hernando dio un rodeo por la Séptima.",
+      "accept": [],
+      "why": "The long way is *dar un rodeo*, and *dio* matches one person in the past."
+    },
+    {
+      "prompt": "Type in Spanish: \"We had to take a detour because they closed the street.\"",
+      "answer": "Tuvimos que dar un rodeo porque cerraron la calle.",
+      "accept": [],
+      "why": "*Tener que* + *dar un rodeo* gives \"had to take a detour\"."
+    },
+    {
+      "prompt": "Make it a command to a friend: *Das tantos rodeos.* Say \"Don't take so many detours.\"",
+      "answer": "No des tantos rodeos.",
+      "accept": [],
+      "why": "After *no*, the *tú* command is *des*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Tomamos un rodeo para evitar el trancón.",
+      "right": "Dimos un rodeo para evitar el trancón.",
+      "why": "Almost. A detour goes with *dar*, a shortcut with *tomar* or *agarrar*."
+    },
+    {
+      "wrong": "Dimos un atajo.",
+      "right": "Tomamos un atajo.",
+      "why": "Almost. You do not \"give\" a shortcut; you take it."
+    },
+    {
+      "wrong": "Habla con rodeos, por favor.",
+      "right": "Habla sin rodeos, por favor.",
+      "why": "Almost. To mean \"plainly\" you need *sin*, with no detours."
+    }
+  ],
+  "personal": "Describe how you get to work, school or the shop. Is there a *rodeo* or an *atajo*?"
+}

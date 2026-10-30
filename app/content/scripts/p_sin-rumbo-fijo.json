@@ -1,0 +1,176 @@
+{
+  "node": "p:sin-rumbo-fijo",
+  "hook": {
+    "line": "Tomás has a free afternoon and nowhere to be, so he just walks. A friend asks what he did, and the honest answer has a small phrase in it.",
+    "es": "Caminé por la ciudad sin rumbo fijo.",
+    "en": "I walked around the city aimlessly."
+  },
+  "examples": [
+    {
+      "es": "Caminó por la ciudad sin rumbo fijo.",
+      "en": "He walked around the city aimlessly."
+    },
+    {
+      "es": "El avión salió con rumbo a Lima.",
+      "en": "The plane left bound for Lima."
+    },
+    {
+      "es": "Tomás anduvo por la Candelaria sin rumbo fijo.",
+      "en": "Tomás wandered around La Candelaria with no fixed direction."
+    },
+    {
+      "es": "El bus sale con rumbo a Medellín a las ocho.",
+      "en": "The bus leaves for Medellín at eight."
+    },
+    {
+      "es": "La empresa va a la deriva.",
+      "en": "The company is adrift."
+    },
+    {
+      "es": "Salimos con rumbo a la plaza.",
+      "en": "We set off for the square."
+    }
+  ],
+  "rule": "*Rumbo* is the direction you are heading.\n\n*Con rumbo a* + place = \"bound for\": you know where you are going. *Salimos con rumbo a la plaza.*\n\n*Sin rumbo fijo* = no fixed direction: wandering, aimless. *Anduvo sin rumbo fijo.*\n\n*A la deriva* is \"adrift\", for a boat, but just as often for a company or a life.\n\nEnglish says \"aimlessly\" or \"bound for\". Spanish builds both from the same word, *rumbo*.",
+  "smallPrint": "Teachers call these adverbial phrases of direction. *Sin rumbo* alone works too, without *fijo*.",
+  "readAndPick": [
+    {
+      "es": "Caminó por la ciudad sin rumbo fijo.",
+      "options": [
+        "He walked around the city aimlessly.",
+        "He walked to the city on purpose.",
+        "He walked around the city with a map."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El avión salió con rumbo a Lima.",
+      "options": [
+        "The plane left Lima.",
+        "The plane left bound for Lima.",
+        "The plane was lost over Lima."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La empresa va a la deriva.",
+      "options": [
+        "The company is drifting without direction.",
+        "The company is heading north.",
+        "The company is moving to a new building."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El bus sale con rumbo a Medellín a las ocho.",
+      "options": [
+        "The bus is lost near Medellín.",
+        "The bus comes from Medellín at eight.",
+        "The bus leaves for Medellín at eight."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tomás anduvo por la Candelaria sin rumbo fijo.",
+      "options": [
+        "Tomás walked to La Candelaria for the café.",
+        "Tomás wandered around La Candelaria with no fixed direction.",
+        "Tomás walked around La Candelaria with a fixed plan."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Salimos con rumbo a la plaza.",
+      "options": [
+        "We left the square.",
+        "We wandered around with no plan.",
+        "We set off for the square."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Anduvimos sin rumbo fijo toda la tarde.",
+      "options": [
+        "We wandered with no direction all afternoon.",
+        "We headed straight for the square all afternoon.",
+        "We stayed home all afternoon."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El barco salió con rumbo al sur.",
+      "options": [
+        "The boat is lost in the south.",
+        "The boat left bound for the south.",
+        "The boat came from the south."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *con rumbo a* or *sin rumbo fijo*: Salimos ___ la plaza. Type the whole sentence.",
+      "answer": "Salimos con rumbo a la plaza.",
+      "accept": [],
+      "why": "We know where we are going, so *con rumbo a* + the place."
+    },
+    {
+      "prompt": "Choose *con rumbo a* or *sin rumbo fijo*: Tomás anduvo por la Candelaria ___. Type the whole sentence.",
+      "answer": "Tomás anduvo por la Candelaria sin rumbo fijo.",
+      "accept": [],
+      "why": "He is wandering with no destination, so *sin rumbo fijo*."
+    },
+    {
+      "prompt": "Type in Spanish: \"The bus leaves for Medellín at eight.\"",
+      "answer": "El bus sale con rumbo a Medellín a las ocho.",
+      "accept": [
+        "El bus sale a las ocho con rumbo a Medellín."
+      ],
+      "why": "A known destination, so *con rumbo a* + Medellín."
+    },
+    {
+      "prompt": "Type in Spanish: \"We wandered all afternoon with no fixed direction.\"",
+      "answer": "Anduvimos sin rumbo fijo toda la tarde.",
+      "accept": [
+        "Anduvimos toda la tarde sin rumbo fijo."
+      ],
+      "why": "No destination, so *sin rumbo fijo*."
+    },
+    {
+      "prompt": "Type in Spanish: \"The company is adrift.\"",
+      "answer": "La empresa va a la deriva.",
+      "accept": [],
+      "why": "*A la deriva* is the picture of a boat with no steering, used for companies too."
+    },
+    {
+      "prompt": "Type in Spanish: \"The plane left bound for Lima.\"",
+      "answer": "El avión salió con rumbo a Lima.",
+      "accept": [],
+      "why": "Plane and destination known, so *con rumbo a*."
+    },
+    {
+      "prompt": "Make it about today: *Ayer caminó sin rumbo fijo.* Start with *Hoy* and use *camina*.",
+      "answer": "Hoy camina sin rumbo fijo.",
+      "accept": [],
+      "why": "Only the verb and the time word change, *sin rumbo fijo* stays the same."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Salimos sin rumbo a la plaza.",
+      "right": "Salimos con rumbo a la plaza.",
+      "why": "Almost. If you know the place, it is *con rumbo a*; *sin rumbo* means you do not."
+    },
+    {
+      "wrong": "Caminó sin un rumbo fijo.",
+      "right": "Caminó sin rumbo fijo.",
+      "why": "Almost. After *sin* Spanish drops the article: *sin rumbo fijo*, like \"aimlessly\"."
+    },
+    {
+      "wrong": "El bus sale con rumbo en Medellín.",
+      "right": "El bus sale con rumbo a Medellín.",
+      "why": "Almost. The destination takes *a*, never *en*."
+    }
+  ],
+  "personal": "Tell us about a time you went somewhere *sin rumbo fijo*, or say where you are heading next with *con rumbo a*."
+}
