@@ -31,7 +31,7 @@
       "en": "Everyone spoke at once."
     }
   ],
-  "rule": "*A la vez* and *al mismo tiempo* both mean \"at the same time\". Use them when one person does two things: *Hernando maneja y habla a la vez.* They also join two qualities: *útil y a la vez bonito*.\n\nWhen two different people do two things, use *mientras tanto* (meanwhile), in its own bit of the sentence, set off by commas.\n\nThe verbs do not change, and neither do these phrases.",
+  "rule": "*A la vez* and *al mismo tiempo* both mean \"at the same time\". They usually go at the end, or between two qualities: *Hernando maneja y habla a la vez.* *Es útil y a la vez bonito.* *Todos hablaron a la vez.*\n\n*Mientras tanto* means \"meanwhile\". It opens the second half, after a semicolon or a full stop, and moves the camera to something else happening during that time: *Tomás sirve el café; mientras tanto, Vale abre la caja.*\n\nNone of these phrases ever change.",
   "smallPrint": "Teachers call this simultaneity: two actions or qualities happening or holding together.",
   "readAndPick": [
     {
@@ -114,7 +114,7 @@
       "accept": [
         "Hernando maneja y habla al mismo tiempo."
       ],
-      "why": "One person does two things, so *a la vez*."
+      "why": "Hernando does both things together, so *a la vez*."
     },
     {
       "prompt": "Pick and type the whole sentence: *Tomás sirve el café; ___, Vale abre la caja.* (*a la vez* or *mientras tanto*) Tomás serves the coffee; meanwhile, Vale opens the till.",
@@ -122,7 +122,7 @@
       "accept": [
         "Tomás sirve el café. Mientras tanto, Vale abre la caja."
       ],
-      "why": "Two different people, so *mientras tanto*."
+      "why": "The second half moves to what Vale does meanwhile, so *mientras tanto*."
     },
     {
       "prompt": "Say: It's useful and pretty at the same time.",
@@ -139,7 +139,7 @@
       "accept": [
         "No puedo hablar y escribir al mismo tiempo."
       ],
-      "why": "One person, two actions: *a la vez* at the end."
+      "why": "Two actions together: *a la vez* goes at the end."
     },
     {
       "prompt": "Say: Everyone spoke at once.",
@@ -161,14 +161,14 @@
       "accept": [
         "Ella cocinaba. Mientras tanto, yo lavaba los platos."
       ],
-      "why": "Two people, so *mientras tanto*."
+      "why": "*Mientras tanto* opens the second half, like \"meanwhile\"."
     }
   ],
   "pitfalls": [
     {
-      "wrong": "Vale hace pan y mientras tanto atiende el teléfono.",
-      "right": "Vale hace pan y a la vez atiende el teléfono.",
-      "why": "*Mientras tanto* needs two separate people; for one person's two actions use *a la vez*."
+      "wrong": "Mientras tanto ella cocinaba, yo lavaba los platos.",
+      "right": "Ella cocinaba; mientras tanto, yo lavaba los platos.",
+      "why": "Almost. *Mientras tanto* is \"meanwhile\", not \"while\". It opens the second half, after the first action is told."
     },
     {
       "wrong": "Hablo y escribo en el mismo tiempo.",
@@ -178,7 +178,7 @@
     {
       "wrong": "Ella cocinaba, a la vez yo lavaba los platos.",
       "right": "Ella cocinaba; mientras tanto, yo lavaba los platos.",
-      "why": "Two different people need *mientras tanto*."
+      "why": "*A la vez* can't open a new half like \"meanwhile\" does. That job belongs to *mientras tanto*."
     }
   ],
   "personal": "What two things do you do at once every day? Say it with *a la vez*, for example: *Yo… y… a la vez.*"

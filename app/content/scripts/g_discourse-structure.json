@@ -6,40 +6,196 @@
     "en": "Firstly, the premises are ours."
   },
   "examples": [
-    { "es": "En primer lugar, el local es nuestro.", "en": "Firstly, the premises are ours." },
-    { "es": "Además, el barrio nos apoya.", "en": "What's more, the neighbourhood supports us." },
-    { "es": "Por un lado, es caro; por otro, es muy bonito.", "en": "On the one hand, it's expensive; on the other, it's very nice." },
-    { "es": "En segundo lugar, el café tiene mucha historia.", "en": "Secondly, the café has a lot of history." },
-    { "es": "Por último, necesitamos más tiempo.", "en": "Lastly, we need more time." },
-    { "es": "En resumen, no vendemos.", "en": "In short, we're not selling." }
+    {
+      "es": "En primer lugar, el local es nuestro.",
+      "en": "Firstly, the premises are ours."
+    },
+    {
+      "es": "Además, el barrio nos apoya.",
+      "en": "What's more, the neighbourhood supports us."
+    },
+    {
+      "es": "Por un lado, es caro; por otro, es muy bonito.",
+      "en": "On the one hand, it's expensive; on the other, it's very nice."
+    },
+    {
+      "es": "En segundo lugar, el café tiene mucha historia.",
+      "en": "Secondly, the café has a lot of history."
+    },
+    {
+      "es": "Por último, necesitamos más tiempo.",
+      "en": "Lastly, we need more time."
+    },
+    {
+      "es": "En resumen, no vendemos.",
+      "en": "In short, we're not selling."
+    }
   ],
-  "rule": "Short phrases at the start of a sentence tell the reader where they are in your argument. Each one is followed by a comma.\n\nStarting: *En primer lugar*, *primero*\nContinuing: *en segundo lugar*, *además*\nTwo sides: *por un lado… por otro…*\nFinishing: *por último*, *en resumen*, *en conclusión*\n\nTwo small things English speakers miss. *Primero* becomes *primer* before *lugar*. And *por otro* does not repeat *lado*: *por un lado… por otro*.\n\nUse *además* to add a point, not to switch ideas.",
+  "rule": "Short phrases at the start of a sentence tell the reader where they are in your argument. Each one is followed by a comma.\n\nStarting: *En primer lugar*, *primero*\nContinuing: *en segundo lugar*, *además*\nTwo sides: *por un lado… por otro lado…*\nFinishing: *por último*, *en resumen*, *en conclusión*\n\nTwo small things English speakers miss. *Primero* becomes *primer* before *lugar*. And \"on the other hand\" has no hand in Spanish: it is *por otro lado*, often cut to *por otro*.\n\nUse *además* to add a point, not to switch ideas.",
   "smallPrint": "Teachers call these discourse markers, or *marcadores del discurso*, and the ones that order a text *estructuradores*.",
   "readAndPick": [
-    { "es": "En primer lugar, el local es nuestro.", "options": ["Firstly, the premises are ours.", "In short, the premises are ours.", "What's more, the premises are ours."], "answer": 0 },
-    { "es": "Además, el barrio nos apoya.", "options": ["Firstly, the neighbourhood supports us.", "What's more, the neighbourhood supports us.", "In short, the neighbourhood supports us."], "answer": 1 },
-    { "es": "En resumen, no vendemos.", "options": ["In short, we're not selling.", "Lastly, we're not selling.", "What's more, we're not selling."], "answer": 0 },
-    { "es": "Por un lado, es caro; por otro, es muy bonito.", "options": ["It's expensive, and it's also very nice.", "On the one hand, it's expensive; on the other, it's very nice.", "In short, it's expensive and very nice."], "answer": 1 },
-    { "es": "Por último, necesitamos más tiempo.", "options": ["Firstly, we need more time.", "What's more, we need more time.", "Lastly, we need more time."], "answer": 2 },
-    { "es": "En segundo lugar, el café tiene mucha historia.", "options": ["Secondly, the café has a lot of history.", "Firstly, the café has a lot of history.", "In short, the café has a lot of history."], "answer": 0 },
-    { "es": "Además, el café es barato.", "options": ["In short, the café is cheap.", "Firstly, the café is cheap.", "What's more, the café is cheap."], "answer": 2 },
-    { "es": "En conclusión, el café es de todos.", "options": ["Firstly, the café belongs to everyone.", "In conclusion, the café belongs to everyone.", "On the other hand, the café belongs to everyone."], "answer": 1 },
-    { "es": "Por un lado, me gusta; por otro, es difícil.", "options": ["On the one hand, I like it; on the other, it's hard.", "I like it, so it's hard.", "In short, I like it and it's hard."], "answer": 0 }
+    {
+      "es": "En primer lugar, el local es nuestro.",
+      "options": [
+        "Firstly, the premises are ours.",
+        "In short, the premises are ours.",
+        "What's more, the premises are ours."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Además, el barrio nos apoya.",
+      "options": [
+        "Firstly, the neighbourhood supports us.",
+        "What's more, the neighbourhood supports us.",
+        "In short, the neighbourhood supports us."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "En resumen, no vendemos.",
+      "options": [
+        "In short, we're not selling.",
+        "Lastly, we're not selling.",
+        "What's more, we're not selling."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Por un lado, es caro; por otro, es muy bonito.",
+      "options": [
+        "It's expensive, and it's also very nice.",
+        "On the one hand, it's expensive; on the other, it's very nice.",
+        "In short, it's expensive and very nice."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Por último, necesitamos más tiempo.",
+      "options": [
+        "Firstly, we need more time.",
+        "What's more, we need more time.",
+        "Lastly, we need more time."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "En segundo lugar, el café tiene mucha historia.",
+      "options": [
+        "Secondly, the café has a lot of history.",
+        "Firstly, the café has a lot of history.",
+        "In short, the café has a lot of history."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Además, el café es barato.",
+      "options": [
+        "In short, the café is cheap.",
+        "Firstly, the café is cheap.",
+        "What's more, the café is cheap."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "En conclusión, el café es de todos.",
+      "options": [
+        "Firstly, the café belongs to everyone.",
+        "In conclusion, the café belongs to everyone.",
+        "On the other hand, the café belongs to everyone."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Por un lado, me gusta; por otro, es difícil.",
+      "options": [
+        "On the one hand, I like it; on the other, it's hard.",
+        "I like it, so it's hard.",
+        "In short, I like it and it's hard."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Choose the right opener and type the whole sentence (Firstly, the premises are ours): *___, el local es nuestro.* (*En primer lugar* or *En resumen*)", "answer": "En primer lugar, el local es nuestro.", "accept": ["Primero, el local es nuestro."], "why": "You are starting the argument, so *en primer lugar*." },
-    { "prompt": "Choose the right opener and type the whole sentence (In short, we're not selling): *___, no vendemos.* (*Además* or *En resumen*)", "answer": "En resumen, no vendemos.", "accept": ["En conclusión, no vendemos."], "why": "You are wrapping up, so *en resumen*." },
-    { "prompt": "Type in Spanish: What's more, the neighbourhood supports us.", "answer": "Además, el barrio nos apoya.", "accept": [], "why": "*Además* adds one more point to what you just said." },
-    { "prompt": "Type in Spanish: On the one hand, it's expensive; on the other, it's very nice.", "answer": "Por un lado, es caro; por otro, es muy bonito.", "accept": ["Por un lado es caro; por otro es muy bonito.", "Por un lado, es caro, y por otro, es muy bonito."], "why": "*Por un lado* opens the first side and *por otro* the second." },
-    { "prompt": "Type in Spanish: Secondly, the café has a lot of history.", "answer": "En segundo lugar, el café tiene mucha historia.", "accept": ["En segundo lugar el café tiene mucha historia."], "why": "After *en primer lugar* comes *en segundo lugar*." },
-    { "prompt": "Make it the last point (Lastly, we need more time): *Necesitamos más tiempo.*", "answer": "Por último, necesitamos más tiempo.", "accept": ["Por último necesitamos más tiempo."], "why": "*Por último* goes first and is followed by a comma." },
-    { "prompt": "Add an opener that adds a point: *El café es barato.*", "answer": "Además, el café es barato.", "accept": ["Además el café es barato."], "why": "*Además* tells the reader this is one more reason." }
+    {
+      "prompt": "Choose the right opener and type the whole sentence (Firstly, the premises are ours): *___, el local es nuestro.* (*En primer lugar* or *En resumen*)",
+      "answer": "En primer lugar, el local es nuestro.",
+      "accept": [
+        "Primero, el local es nuestro."
+      ],
+      "why": "You are starting the argument, so *en primer lugar*."
+    },
+    {
+      "prompt": "Choose the right opener and type the whole sentence (In short, we're not selling): *___, no vendemos.* (*Además* or *En resumen*)",
+      "answer": "En resumen, no vendemos.",
+      "accept": [
+        "En conclusión, no vendemos."
+      ],
+      "why": "You are wrapping up, so *en resumen*."
+    },
+    {
+      "prompt": "Type in Spanish: What's more, the neighbourhood supports us.",
+      "answer": "Además, el barrio nos apoya.",
+      "accept": [],
+      "why": "*Además* adds one more point to what you just said."
+    },
+    {
+      "prompt": "Type in Spanish: On the one hand, it's expensive; on the other, it's very nice.",
+      "answer": "Por un lado, es caro; por otro, es muy bonito.",
+      "accept": [
+        "Por un lado es caro; por otro es muy bonito.",
+        "Por un lado, es caro, y por otro, es muy bonito.",
+        "Por un lado, es caro; por otro lado, es muy bonito.",
+        "Por un lado es caro; por otro lado es muy bonito."
+      ],
+      "why": "*Por un lado* opens the first side and *por otro* the second."
+    },
+    {
+      "prompt": "Type in Spanish: Secondly, the café has a lot of history.",
+      "answer": "En segundo lugar, el café tiene mucha historia.",
+      "accept": [
+        "En segundo lugar el café tiene mucha historia."
+      ],
+      "why": "After *en primer lugar* comes *en segundo lugar*."
+    },
+    {
+      "prompt": "Make it the last point (Lastly, we need more time): *Necesitamos más tiempo.*",
+      "answer": "Por último, necesitamos más tiempo.",
+      "accept": [
+        "Por último necesitamos más tiempo."
+      ],
+      "why": "*Por último* goes first and is followed by a comma."
+    },
+    {
+      "prompt": "Add an opener that adds a point: *El café es barato.*",
+      "answer": "Además, el café es barato.",
+      "accept": [
+        "Además el café es barato."
+      ],
+      "why": "*Además* tells the reader this is one more reason."
+    }
   ],
   "pitfalls": [
-    { "wrong": "En primero lugar, el local es nuestro.", "right": "En primer lugar, el local es nuestro.", "why": "Almost. *Primero* shortens to *primer* in front of a masculine noun, and *lugar* is one." },
-    { "wrong": "Por un lado, es caro; por el otro lado, es bonito.", "right": "Por un lado, es caro; por otro, es bonito.", "why": "The second half is just *por otro*, with no *lado* again." },
-    { "wrong": "Además de, el barrio nos apoya.", "right": "Además, el barrio nos apoya.", "why": "On its own, to add a point, it is just *además*. *Además de* needs something after it." },
-    { "wrong": "En resumen el café es de todos.", "right": "En resumen, el café es de todos.", "why": "These openers are followed by a comma." }
+    {
+      "wrong": "En primero lugar, el local es nuestro.",
+      "right": "En primer lugar, el local es nuestro.",
+      "why": "Almost. *Primero* shortens to *primer* in front of a masculine noun, and *lugar* is one."
+    },
+    {
+      "wrong": "Por un lado, es caro; en la otra mano, es bonito.",
+      "right": "Por un lado, es caro; por otro lado, es bonito.",
+      "why": "Spanish has no hand here. The second side is *por otro lado*, or just *por otro*."
+    },
+    {
+      "wrong": "Además de, el barrio nos apoya.",
+      "right": "Además, el barrio nos apoya.",
+      "why": "On its own, to add a point, it is just *además*. *Además de* needs something after it."
+    },
+    {
+      "wrong": "En resumen el café es de todos.",
+      "right": "En resumen, el café es de todos.",
+      "why": "These openers are followed by a comma."
+    }
   ],
   "personal": "Give two reasons you are learning Spanish. Start the first with *En primer lugar* and the second with *Además*."
 }

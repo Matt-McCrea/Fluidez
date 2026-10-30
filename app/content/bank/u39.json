@@ -364,20 +364,18 @@
   },
   {
     "id": "u39-0016",
-    "es": "No quiero vender, a pesar de lo que dice el dinero.",
-    "en": "I don't want to sell, despite what the money says.",
+    "es": "No quiero vender, a pesar de lo que ofrece Altamira.",
+    "en": "I don't want to sell, despite what Altamira is offering.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:quiero",
       "g:concession-despite",
-      "g:gender-articles",
+      "g:present-er-ir",
       "g:relatives-donde-lo-que",
       "g:stem-boot",
-      "g:stem-e-i",
       "g:verb-infinitive",
-      "l:decir",
-      "l:dinero",
+      "l:ofrecer",
       "l:pesar",
       "l:querer",
       "l:vender"
@@ -1449,7 +1447,7 @@
   },
   {
     "id": "u39-0057",
-    "es": "Hernando conoce la ciudad mejor que nadie; sin embargo, nunca sale de la Candelaria.",
+    "es": "Hernando conoce la ciudad mejor que nadie; sin embargo, nunca sale de La Candelaria.",
     "en": "Hernando knows the city better than anyone; however, he never leaves La Candelaria.",
     "accept": [],
     "acceptEn": [],
@@ -2335,20 +2333,23 @@
   },
   {
     "id": "u39-0090",
-    "es": "Hay mucho trabajo; sin embargo, hoy descansamos.",
-    "en": "There's a lot of work; however, today we rest.",
+    "es": "El horno es viejo; sin embargo, el pan sale perfecto.",
+    "en": "The oven is old; however, the bread comes out perfect.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
       "g:concession-despite",
-      "g:hay-vs-esta",
-      "g:present-ar",
-      "l:descansar",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:ser-identity",
       "l:embargo",
-      "l:hoy",
-      "l:trabajo",
-      "p:quantifiers-basic"
+      "l:horno",
+      "l:pan",
+      "l:perfecto",
+      "l:salir",
+      "l:ser",
+      "l:viejo",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "g:concession-despite"
@@ -2747,8 +2748,8 @@
   },
   {
     "id": "u39-0105",
-    "es": "Hoy les voy a hablar de la amistad en el trabajo.",
-    "en": "Today I'm going to talk to you about friendship at work. (to an audience)",
+    "es": "Esta tarde les voy a hablar de la amistad en el trabajo.",
+    "en": "This afternoon I'm going to talk to you about friendship at work. (to an audience)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2758,9 +2759,10 @@
       "g:ir-a-plans",
       "l:amistad",
       "l:hablar",
-      "l:hoy",
       "l:ir",
+      "l:tarde",
       "l:trabajo",
+      "p:demonstratives-basic",
       "p:hoy-les-voy-a-hablar",
       "p:presentation-frame"
     ],
@@ -2835,20 +2837,22 @@
   },
   {
     "id": "u39-0108",
-    "es": "Hoy les voy a hablar de los carros viejos de Bogotá.",
-    "en": "Today I'm going to talk to you about the old cars of Bogotá. (to an audience)",
+    "es": "Buenas noches. Les voy a hablar de los carros viejos de Bogotá.",
+    "en": "Good evening. I'm going to talk to you about the old cars of Bogotá. (to an audience)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hola-buenos-dias",
       "c:voy-a",
       "g:adjective-agreement",
       "g:gender-articles",
       "g:indirect-objects",
       "g:ir-a-plans",
+      "l:buena",
       "l:carro",
       "l:hablar",
-      "l:hoy",
       "l:ir",
+      "l:noche",
       "l:viejo",
       "p:hoy-les-voy-a-hablar",
       "p:presentation-frame",
@@ -2894,8 +2898,8 @@
   },
   {
     "id": "u39-0110",
-    "es": "Hoy les voy a hablar del trabajo de un periodista.",
-    "en": "Today I'm going to talk to you about a journalist's work. (to an audience)",
+    "es": "Mañana les voy a hablar del trabajo de un periodista.",
+    "en": "Tomorrow I'm going to talk to you about a journalist's work. (to an audience)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2904,8 +2908,8 @@
       "g:indirect-objects",
       "g:ir-a-plans",
       "l:hablar",
-      "l:hoy",
       "l:ir",
+      "l:mañana",
       "l:periodista",
       "l:trabajo",
       "p:hoy-les-voy-a-hablar",
@@ -2954,7 +2958,7 @@
   },
   {
     "id": "u39-0112",
-    "es": "Hoy les voy a hablar de los fantasmas de la Candelaria.",
+    "es": "Hoy les voy a hablar de los fantasmas de La Candelaria.",
     "en": "Today I'm going to talk to you about the ghosts of La Candelaria. (to an audience)",
     "accept": [],
     "acceptEn": [],
@@ -2981,17 +2985,17 @@
   },
   {
     "id": "u39-0113",
-    "es": "Hoy les voy a hablar de mis años como taxista.",
-    "en": "Today I'm going to talk to you about my years as a taxi driver. (to an audience)",
+    "es": "Amigos, les voy a hablar de mis años como taxista.",
+    "en": "Friends, I'm going to talk to you about my years as a taxi driver. (to an audience)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:voy-a",
       "g:indirect-objects",
       "g:ir-a-plans",
+      "l:amigo",
       "l:año",
       "l:hablar",
-      "l:hoy",
       "l:ir",
       "l:taxista",
       "p:hoy-les-voy-a-hablar",
@@ -3629,19 +3633,20 @@
   },
   {
     "id": "u39-0138",
-    "es": "¿Sabían que hay un fantasma en la casa de al lado?",
-    "en": "Did you know that there's a ghost in the house next door? (you all)",
+    "es": "¿Sabían que este café tiene un fantasma?",
+    "en": "Did you know that this café has a ghost? (you all)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
       "c:sabian-que",
+      "c:tienes",
       "g:gender-articles",
-      "g:hay-vs-esta",
-      "l:casa",
+      "g:stem-boot",
+      "l:café",
       "l:fantasma",
-      "l:lado",
-      "l:saber"
+      "l:saber",
+      "l:tener",
+      "p:demonstratives-basic"
     ],
     "targets": [
       "c:sabian-que",
@@ -3927,18 +3932,21 @@
   },
   {
     "id": "u39-0151",
-    "es": "En síntesis, Rosa dejó mucho más que un negocio.",
-    "en": "In summary, Rosa left much more than a business.",
+    "es": "En resumen, Rosa dejó mucho más que un negocio.",
+    "en": "In short, Rosa left much more than a business.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparatives",
+      "g:discourse-structure",
       "g:gender-articles",
       "g:preterite-ar",
       "l:dejar",
       "l:negocio",
-      "l:síntesis",
+      "l:resumen",
+      "p:al-final-en-resumen",
       "p:para-terminar",
+      "p:presenting-to-audience",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -3979,21 +3987,24 @@
   },
   {
     "id": "u39-0153",
-    "es": "En síntesis, la clase fue útil y muy larga.",
-    "en": "In summary, the class was useful and very long.",
+    "es": "En conclusión, la clase fue útil y muy larga.",
+    "en": "In conclusion, the class was useful and very long.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
+      "g:discourse-structure",
       "g:gender-articles",
       "g:preterite-ser-ir-hacer",
       "g:ser-identity",
       "l:clase",
+      "l:conclusión",
       "l:largo",
       "l:ser",
-      "l:síntesis",
       "l:útil",
       "p:para-terminar",
+      "p:presentation-frame",
+      "p:presenting-to-audience",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -4031,17 +4042,22 @@
   },
   {
     "id": "u39-0155",
-    "es": "En síntesis, necesitamos más tiempo y más firmas.",
-    "en": "In summary, we need more time and more signatures.",
+    "es": "Para terminar, necesitamos más tiempo y más firmas.",
+    "en": "To finish, we need more time and more signatures.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
       "l:firmar",
       "l:necesitar",
-      "l:síntesis",
+      "l:terminar",
       "l:tiempo",
-      "p:para-terminar"
+      "p:a-lo-largo-de-esta-charla",
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:para-terminar",
+      "p:presentation-frame",
+      "p:presenting-to-audience"
     ],
     "targets": [
       "p:para-terminar"
@@ -4053,12 +4069,13 @@
   },
   {
     "id": "u39-0156",
-    "es": "En síntesis, la presentación salió mejor de lo que pensé.",
-    "en": "In summary, the presentation went better than I thought.",
+    "es": "En resumen, la presentación salió mejor de lo que pensé.",
+    "en": "In short, the presentation went better than I thought.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparatives",
+      "g:discourse-structure",
       "g:gender-articles",
       "g:preterite-ar",
       "g:preterite-er-ir",
@@ -4066,9 +4083,11 @@
       "l:mejor",
       "l:pensar",
       "l:presentación",
+      "l:resumen",
       "l:salir",
-      "l:síntesis",
-      "p:para-terminar"
+      "p:al-final-en-resumen",
+      "p:para-terminar",
+      "p:presenting-to-audience"
     ],
     "targets": [
       "l:presentación",
@@ -4109,16 +4128,21 @@
   },
   {
     "id": "u39-0158",
-    "es": "En síntesis, todos aprendimos algo.",
-    "en": "In summary, we all learned something.",
+    "es": "Para concluir, todos aprendimos algo.",
+    "en": "To conclude, we all learned something.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:preterite-er-ir",
       "l:aprender",
-      "l:síntesis",
+      "l:concluir",
+      "p:a-lo-largo-de-esta-charla",
       "p:indefinites-basic",
-      "p:para-terminar"
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:para-terminar",
+      "p:presentation-frame",
+      "p:presenting-to-audience"
     ],
     "targets": [
       "p:para-terminar"
@@ -4159,18 +4183,21 @@
   },
   {
     "id": "u39-0160",
-    "es": "En síntesis, un café no es solo un negocio.",
-    "en": "In summary, a café is not just a business.",
+    "es": "En conclusión, un café no es solo un negocio.",
+    "en": "In conclusion, a café is not just a business.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:discourse-structure",
       "g:gender-articles",
       "g:ser-identity",
       "l:café",
+      "l:conclusión",
       "l:negocio",
       "l:ser",
-      "l:síntesis",
       "p:para-terminar",
+      "p:presentation-frame",
+      "p:presenting-to-audience",
       "p:sobre-todo-solo"
     ],
     "targets": [
@@ -4183,20 +4210,24 @@
   },
   {
     "id": "u39-0161",
-    "es": "En síntesis, esta ciudad se aprende caminando.",
-    "en": "In summary, this city is learned by walking.",
+    "es": "En resumen, esta ciudad se conoce caminando.",
+    "en": "In short, you get to know this city on foot.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:discourse-structure",
       "g:gerund-ways",
       "g:present-er-ir",
       "g:se-impersonal",
-      "l:aprender",
       "l:caminar",
       "l:ciudad",
-      "l:síntesis",
+      "l:conocer",
+      "l:resumen",
+      "p:al-final-en-resumen",
       "p:demonstratives-basic",
-      "p:para-terminar"
+      "p:para-terminar",
+      "p:presenting-to-audience",
+      "p:saber-conocer"
     ],
     "targets": [
       "p:para-terminar"
@@ -4259,12 +4290,13 @@
   },
   {
     "id": "u39-0164",
-    "es": "¿Puedes decirlo más corto?\nEn síntesis, el café se queda.",
-    "en": "Can you say it shorter? (to a friend)\nIn summary, the café stays.",
+    "es": "¿Puedes decirlo más corto?\nEn resumen, el café se queda.",
+    "en": "Can you say it shorter? (to a friend)\nIn short, the café stays.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
+      "g:discourse-structure",
       "g:gender-articles",
       "g:object-pronoun-position",
       "g:present-ar",
@@ -4276,8 +4308,10 @@
       "l:decir",
       "l:poder",
       "l:quedarse",
-      "l:síntesis",
+      "l:resumen",
+      "p:al-final-en-resumen",
       "p:para-terminar",
+      "p:presenting-to-audience",
       "p:request-ladder"
     ],
     "targets": [
@@ -4320,20 +4354,23 @@
   },
   {
     "id": "u39-0166",
-    "es": "Tomás, ¿cómo termina el texto?\nEn síntesis, con un gracias.",
-    "en": "Tomás, how does the text end?\nIn summary, with a thank you.",
+    "es": "Tomás, ¿y el final?\nEn resumen, el café es de todos. Así termina.",
+    "en": "Tomás, and the ending?\nIn short, the café belongs to everyone. That's how it ends.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:discourse-structure",
       "g:gender-articles",
       "g:present-ar",
-      "g:questions",
-      "l:cómo",
-      "l:síntesis",
+      "g:ser-identity",
+      "l:café",
+      "l:final",
+      "l:resumen",
+      "l:ser",
       "l:terminar",
-      "l:texto",
+      "p:al-final-en-resumen",
       "p:para-terminar",
-      "p:question-word-order"
+      "p:presenting-to-audience"
     ],
     "targets": [
       "p:para-terminar"
@@ -4740,22 +4777,25 @@
   },
   {
     "id": "u39-0181",
-    "es": "Por un lado, es un buen plan; por otro lado, es muy rápido.",
-    "en": "On the one hand, it's a good plan; on the other, it's very fast.",
+    "es": "Por un lado, es un buen plan; por otro lado, hay muy poco tiempo.",
+    "en": "On the one hand, it's a good plan; on the other, there's very little time.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
       "c:por-un-lado",
       "g:discourse-structure",
       "g:gender-articles",
+      "g:hay-vs-esta",
       "g:ser-identity",
       "l:buen",
       "l:lado",
       "l:plan",
-      "l:rápido",
       "l:ser",
+      "l:tiempo",
       "p:bien-bueno",
       "p:bien-mal-vs-bueno-malo",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -4850,18 +4890,22 @@
   },
   {
     "id": "u39-0185",
-    "es": "Por un lado, siento orgullo; por otro lado, siento nervios.",
-    "en": "On the one hand, I feel pride; on the other, I feel nerves.",
+    "es": "Por un lado, siento orgullo; por otro lado, me dan nervios.",
+    "en": "On the one hand, I feel proud; on the other, I get nervous.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:por-un-lado",
       "g:discourse-structure",
+      "g:present-ar",
       "g:stem-boot",
+      "l:dar",
       "l:lado",
       "l:nervio",
       "l:orgullo",
-      "l:sentir"
+      "l:sentir",
+      "p:me-da-miedo",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:discourse-structure"
@@ -4898,21 +4942,24 @@
   },
   {
     "id": "u39-0187",
-    "es": "Por un lado, la gasolina sube; por otro lado, el carro gasta más.",
-    "en": "On the one hand, gas is going up; on the other, the car uses more.",
+    "es": "Por un lado, la gasolina sube; por otro lado, el bus siempre va lleno.",
+    "en": "On the one hand, gas is going up; on the other, the bus is always full.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:por-un-lado",
       "g:discourse-structure",
       "g:gender-articles",
-      "g:present-ar",
+      "g:ir-a-plans",
       "g:present-er-ir",
-      "l:carro",
+      "l:bus",
       "l:gasolina",
-      "l:gastar",
+      "l:ir",
       "l:lado",
+      "l:lleno",
+      "l:siempre",
       "l:subir",
+      "p:frequency-scale",
       "p:subir-subida"
     ],
     "targets": [
@@ -5138,21 +5185,20 @@
   },
   {
     "id": "u39-0196",
-    "es": "Bueno, eso es todo, ¿cierto?\nSí, lo demás es el café.",
-    "en": "Well, that's all, right?\nYes, the rest is the café.",
+    "es": "Bueno, eso es todo. ¿Olvidé algo?\nSí, Tomás: la conclusión.",
+    "en": "Well, that's all. Did I forget anything?\nYes, Tomás: the conclusion.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:algo-mas",
       "c:entonces-bueno",
-      "c:no-cierto",
       "g:gender-articles",
-      "g:lo-adjective",
-      "g:ser-identity",
+      "g:preterite-ar",
       "l:bueno",
-      "l:café",
-      "l:demás",
+      "l:conclusión",
+      "l:olvidar",
       "l:ser",
+      "p:indefinites-basic",
       "p:para-terminar"
     ],
     "targets": [
@@ -5216,19 +5262,20 @@
   },
   {
     "id": "u39-0199",
-    "es": "Bueno, eso es todo. Ahora, un tinto para todos.",
-    "en": "Well, that's all. Now, a black coffee for everyone.",
+    "es": "Bueno, eso es todo. Simón, ahora puedes hablar.",
+    "en": "Well, that's all. Simón, now you can talk.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:algo-mas",
       "c:entonces-bueno",
-      "g:gender-articles",
+      "g:stem-boot",
+      "g:verb-infinitive",
       "l:ahora",
       "l:bueno",
+      "l:hablar",
+      "l:poder",
       "l:ser",
-      "l:tinto",
-      "p:para-inf",
       "p:para-terminar"
     ],
     "targets": [
@@ -5397,8 +5444,8 @@
   },
   {
     "id": "u39-0207",
-    "es": "En síntesis, el barrio es más que un mapa.",
-    "en": "In summary, the neighbourhood is more than a map.",
+    "es": "Para terminar, el barrio es más que un mapa.",
+    "en": "To finish, the neighbourhood is more than a map.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5408,8 +5455,13 @@
       "l:barrio",
       "l:mapa",
       "l:ser",
-      "l:síntesis",
-      "p:para-terminar"
+      "l:terminar",
+      "p:a-lo-largo-de-esta-charla",
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:para-terminar",
+      "p:presentation-frame",
+      "p:presenting-to-audience"
     ],
     "targets": [
       "p:para-terminar"
@@ -5797,7 +5849,7 @@
   {
     "id": "u39-0223",
     "es": "Rosa era una mujer difícil de olvidar.",
-    "en": "Rosa was a woman who's hard to forget.",
+    "en": "Rosa was a hard woman to forget.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6060,20 +6112,20 @@
   },
   {
     "id": "u39-0233",
-    "es": "Su idea es rara de oír en Bogotá.",
-    "en": "His idea is an unusual one to hear in Bogotá.",
+    "es": "Este café es difícil de encontrar sin mapa.",
+    "en": "This café is hard to find without a map.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:ser-identity",
-      "l:idea",
-      "l:oír",
-      "l:raro",
+      "l:café",
+      "l:difícil",
+      "l:encontrar",
+      "l:mapa",
       "l:ser",
       "p:adj-de-inf",
-      "p:dificil-de-inf",
-      "p:possessives-basic"
+      "p:demonstratives-basic",
+      "p:dificil-de-inf"
     ],
     "targets": [
       "p:adj-de-inf",
@@ -6192,19 +6244,19 @@
   },
   {
     "id": "u39-0238",
-    "es": "El pan de Vale es rico de comer a cualquier hora.",
-    "en": "Vale's bread is nice to eat at any time.",
+    "es": "El pan de Vale es fácil de vender a cualquier hora.",
+    "en": "Vale's bread is easy to sell at any time.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
       "g:gender-articles",
       "g:ser-identity",
-      "l:comer",
+      "l:fácil",
       "l:hora",
       "l:pan",
-      "l:rico",
       "l:ser",
+      "l:vender",
       "p:adj-de-inf",
       "p:dificil-de-inf"
     ],
@@ -6271,7 +6323,7 @@
   },
   {
     "id": "u39-0241",
-    "es": "Una presentación corta es fácil de oír.",
+    "es": "Una presentación corta es fácil de escuchar.",
     "en": "A short presentation is easy to listen to.",
     "accept": [],
     "acceptEn": [],
@@ -6280,8 +6332,8 @@
       "g:gender-articles",
       "g:ser-identity",
       "l:corto",
+      "l:escuchar",
       "l:fácil",
-      "l:oír",
       "l:presentación",
       "l:ser",
       "p:adj-de-inf",
@@ -6299,15 +6351,16 @@
   },
   {
     "id": "u39-0242",
-    "es": "El formulario es complejo de llenar.",
-    "en": "The form is complex to fill in.",
+    "es": "El formulario del comité es fácil de llenar.",
+    "en": "The committee's form is easy to fill in.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:complejo",
+      "l:comité",
       "l:formulario",
+      "l:fácil",
       "l:llenar",
       "l:ser",
       "p:adj-de-inf",
@@ -6883,8 +6936,8 @@
   },
   {
     "id": "u39-0265",
-    "es": "¿Cómo está la sopa?\nRica de comer y fácil de hacer.",
-    "en": "How's the soup?\nNice to eat and easy to make.",
+    "es": "¿Cómo está la sopa?\nRica, y fácil de hacer.",
+    "en": "How's the soup?\nDelicious, and easy to make.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6892,7 +6945,6 @@
       "g:adjective-agreement",
       "g:estar-location-states",
       "g:gender-articles",
-      "l:comer",
       "l:cómo",
       "l:estar",
       "l:fácil",
@@ -7239,7 +7291,7 @@
   },
   {
     "id": "u39-0279",
-    "es": "Es agradable caminar por la Candelaria.",
+    "es": "Es agradable caminar por La Candelaria.",
     "en": "It's pleasant to walk around La Candelaria.",
     "accept": [],
     "acceptEn": [],
@@ -7536,7 +7588,7 @@
   {
     "id": "u39-0292",
     "es": "Presentar un proyecto a un comité da nervios.",
-    "en": "Presenting a project to a committee gives you nerves.",
+    "en": "Presenting a project to a committee makes you nervous.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8076,21 +8128,18 @@
   },
   {
     "id": "u39-0316",
-    "es": "No me gusta nada esperar a las visitas de pie.",
-    "en": "I don't like waiting for visitors standing up at all.",
+    "es": "No me gusta nada esperar de pie.",
+    "en": "I don't like waiting on my feet at all.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-gusta",
       "c:no-me-gusta-nada",
-      "g:direct-objects",
       "g:gustar-basic",
       "g:negation-words",
-      "g:present-ar",
       "l:esperar",
       "l:gustar",
       "l:pie",
-      "l:visitar",
       "p:postura"
     ],
     "targets": [],
@@ -9035,7 +9084,7 @@
   {
     "id": "u39-0353",
     "es": "En realidad, se trata de la casa de Rosa.",
-    "en": "Really, it's about Rosa's house.",
+    "en": "Actually, it's about Rosa's house.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9087,18 +9136,18 @@
   },
   {
     "id": "u39-0355",
-    "es": "Mariana, ¿de qué se trata tu último artículo?",
+    "es": "Mariana, ¿de qué trata tu último artículo?",
     "en": "Mariana, what is your latest article about? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "g:reflexive-routine",
       "l:artículo",
       "l:qué",
-      "l:tratarse",
+      "l:tratar",
       "p:possessives-basic",
-      "p:prep-questions-basic"
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "question",
@@ -9108,12 +9157,13 @@
   },
   {
     "id": "u39-0356",
-    "es": "¿De qué se trata la reunión de mañana?",
-    "en": "What is tomorrow's meeting about?",
+    "es": "Mañana hay reunión. ¿De qué se trata?",
+    "en": "There's a meeting tomorrow. What's it about?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "c:hay",
+      "g:hay-vs-esta",
       "g:present-ar",
       "g:reflexive-routine",
       "l:mañana",
@@ -9551,22 +9601,20 @@
   },
   {
     "id": "u39-0373",
-    "es": "La conversación trata de algo que no puedo contar.",
-    "en": "The conversation is about something I can't tell.",
+    "es": "Ese libro trata de un fantasma que toma tinto.",
+    "en": "That book is about a ghost who drinks black coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:puedo",
+      "g:demonstratives",
       "g:gender-articles",
       "g:present-ar",
       "g:relative-que",
-      "g:stem-boot",
-      "g:verb-infinitive",
-      "l:contar",
-      "l:conversación",
-      "l:poder",
+      "l:fantasma",
+      "l:libro",
+      "l:tinto",
+      "l:tomar",
       "l:tratar",
-      "p:indefinites-basic",
       "p:se-trata-de",
       "p:tratar-de"
     ],
@@ -10273,15 +10321,16 @@
   },
   {
     "id": "u39-0402",
-    "es": "Vale forma parte del comité.",
-    "en": "Vale is part of the committee.",
+    "es": "Vale forma parte de un grupo de cocineras de Medellín.",
+    "en": "Vale is part of a group of cooks from Medellín.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:comité",
+      "l:cocinero",
       "l:formar",
+      "l:grupo",
       "l:parte",
       "p:formar-parte-de"
     ],
@@ -10341,14 +10390,14 @@
   },
   {
     "id": "u39-0405",
-    "es": "El barrio pertenece a la localidad de Santa Fe.",
-    "en": "The neighbourhood belongs to the Santa Fe district.",
+    "es": "El café pertenece a la localidad de La Candelaria.",
+    "en": "The café belongs to the La Candelaria district.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
-      "l:barrio",
+      "l:café",
       "l:localidad",
       "l:pertenecer",
       "p:formar-parte-de"
@@ -10753,22 +10802,18 @@
   },
   {
     "id": "u39-0422",
-    "es": "La introducción forma parte del ensayo, no es otra cosa.",
-    "en": "The introduction is part of the essay, it isn't something else.",
+    "es": "La introducción también forma parte del ensayo.",
+    "en": "The introduction is part of the essay too.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "g:ser-identity",
-      "l:cosa",
       "l:ensayo",
       "l:formar",
       "l:introducción",
       "l:parte",
-      "l:ser",
-      "p:formar-parte-de",
-      "p:otro-no-article"
+      "p:formar-parte-de"
     ],
     "targets": [
       "l:ensayo",
@@ -10782,19 +10827,22 @@
   },
   {
     "id": "u39-0423",
-    "es": "¿Eres parte del comité?\nSí, formo parte desde enero.",
+    "es": "¿Eres parte del comité?\nSí, formo parte de él desde enero.",
     "en": "Are you part of the committee? (to a friend)\nYes, I've been part of it since January.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:prep-pronouns",
       "g:present-ar",
       "g:ser-identity",
       "l:comité",
       "l:enero",
       "l:formar",
       "l:parte",
-      "l:ser"
+      "l:ser",
+      "p:de-owner",
+      "p:formar-parte-de"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -11344,7 +11392,7 @@
   {
     "id": "u39-0446",
     "es": "¿Qué clases de pan tienen?\nHay tres tipos: de yuca, de bono y de queso.",
-    "en": "What kinds of bread do you have?\nThere are three kinds: cheese-and-yuca, bono and cheese.",
+    "en": "What kinds of bread do you have?\nThere are three kinds: yuca bread, pandebono and cheese bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11677,19 +11725,17 @@
   },
   {
     "id": "u39-0459",
-    "es": "En la conclusión no se dicen ideas nuevas.",
-    "en": "In the conclusion you don't say new ideas.",
+    "es": "En la conclusión no van ideas nuevas.",
+    "en": "New ideas don't go in the conclusion.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:no-se",
       "g:adjective-agreement",
       "g:gender-articles",
-      "g:passive-se",
-      "g:stem-e-i",
+      "g:ir-a-plans",
       "l:conclusión",
-      "l:decir",
       "l:idea",
+      "l:ir",
       "l:nuevo"
     ],
     "targets": [
@@ -12397,8 +12443,8 @@
   },
   {
     "id": "u39-0489",
-    "es": "Es difícil resumir treinta años en una página.",
-    "en": "It's hard to sum up thirty years on one page.",
+    "es": "Es difícil resumir cuarenta años en una página.",
+    "en": "It's hard to sum up forty years on one page.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13230,8 +13276,8 @@
   },
   {
     "id": "u39-0524",
-    "es": "Mariana da clases en una academia del centro.",
-    "en": "Mariana teaches at an academy downtown.",
+    "es": "Mi prima da clases en una academia del centro.",
+    "en": "My cousin teaches at an academy downtown.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13240,7 +13286,9 @@
       "l:academia",
       "l:centro",
       "l:clase",
-      "l:dar"
+      "l:dar",
+      "l:prima",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:academia"
@@ -13820,21 +13868,17 @@
   },
   {
     "id": "u39-0547",
-    "es": "Mariana se doctoró en historia antes de ser periodista.",
-    "en": "Mariana got her doctorate in history before becoming a journalist.",
+    "es": "La amiga de Mariana se doctoró en historia de La Candelaria.",
+    "en": "Mariana's friend got her doctorate in the history of La Candelaria.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:prep-infinitive",
+      "g:gender-articles",
       "g:preterite-ar",
       "g:reflexive-routine",
-      "g:ser-identity",
-      "l:antes",
+      "l:amiga",
       "l:doctorarse",
-      "l:historia",
-      "l:periodista",
-      "l:ser",
-      "p:ser-profession-no-article"
+      "l:historia"
     ],
     "targets": [
       "l:doctorarse"
@@ -13971,17 +14015,18 @@
   },
   {
     "id": "u39-0553",
-    "es": "Según Hernando, el fantasma vive en la casa de enfrente.",
-    "en": "According to Hernando, the ghost lives in the house across the street.",
+    "es": "Según Hernando, el fantasma del café cierra las puertas.",
+    "en": "According to Hernando, the café's ghost closes the doors.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:segun",
       "g:gender-articles",
-      "g:present-er-ir",
-      "l:casa",
+      "g:stem-boot",
+      "l:café",
+      "l:cerrar",
       "l:fantasma",
-      "l:vivir"
+      "l:puerta"
     ],
     "targets": [
       "l:fantasma"
@@ -14068,8 +14113,8 @@
   },
   {
     "id": "u39-0557",
-    "es": "Mi abuela decía que el fantasma de la cocina era Rosa.",
-    "en": "My grandmother used to say the kitchen ghost was Rosa.",
+    "es": "Rosa decía que el fantasma de la cocina era un señor muy elegante.",
+    "en": "Rosa used to say the ghost in the kitchen was a very elegant gentleman.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14079,12 +14124,13 @@
       "g:imperfect-states",
       "g:ser-identity",
       "g:that-clauses",
-      "l:abuela",
       "l:cocina",
       "l:decir",
+      "l:elegante",
       "l:fantasma",
       "l:ser",
-      "p:possessives-basic"
+      "l:señor",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:fantasma"
@@ -14547,7 +14593,7 @@
   },
   {
     "id": "u39-0576",
-    "es": "Tomás investiga la historia de los judíos en la Candelaria.",
+    "es": "Tomás investiga la historia de los judíos en La Candelaria.",
     "en": "Tomás is researching the history of Jews in La Candelaria.",
     "accept": [],
     "acceptEn": [],
@@ -14851,17 +14897,17 @@
   },
   {
     "id": "u39-0589",
-    "es": "Hernando trasladó sus cosas a la casa de su hija.",
-    "en": "Hernando moved his things to his daughter's house.",
+    "es": "Hernando trasladó sus cosas a la mesa de la ventana.",
+    "en": "Hernando moved his things to the window table.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
-      "l:casa",
       "l:cosa",
-      "l:hija",
+      "l:mesa",
       "l:trasladar",
+      "l:ventana",
       "p:possessives-basic"
     ],
     "targets": [
@@ -14989,17 +15035,19 @@
   },
   {
     "id": "u39-0595",
-    "es": "Tomás afirma su nombre con orgullo.",
-    "en": "Tomás states his name proudly.",
+    "es": "Tomás afirma una cosa: el café no está en venta.",
+    "en": "Tomás states one thing: the café isn't for sale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
       "g:present-ar",
       "l:afirmar",
-      "l:nombre",
-      "l:orgullo",
-      "p:con-sin",
-      "p:possessives-basic"
+      "l:café",
+      "l:cosa",
+      "l:estar",
+      "l:venta"
     ],
     "targets": [
       "l:afirmar"
@@ -15286,19 +15334,18 @@
   },
   {
     "id": "u39-0607",
-    "es": "Esa lectura es larga, pero vale una noche.",
-    "en": "That reading is long, but it's worth a night.",
+    "es": "Esa lectura es larga, pero vale la pena.",
+    "en": "That reading is long, but it's worth it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:vale-spain",
+      "c:vale-la-pena",
       "g:adjective-agreement",
       "g:demonstratives",
-      "g:gender-articles",
       "g:ser-identity",
       "l:largo",
       "l:lectura",
-      "l:noche",
+      "l:pena",
       "l:ser",
       "l:valer"
     ],
@@ -15952,15 +15999,15 @@
   },
   {
     "id": "u39-0635",
-    "es": "El comité va a presionar a Vale antes del plazo.",
-    "en": "The committee is going to pressure Vale before the deadline.",
+    "es": "El banco va a presionar a Tomás antes del plazo.",
+    "en": "The bank is going to pressure Tomás before the deadline.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ir-a-plans",
       "l:antes",
-      "l:comité",
+      "l:banco",
       "l:ir",
       "l:plazo",
       "l:presionar",
@@ -17864,7 +17911,7 @@
   },
   {
     "id": "u39-0718",
-    "es": "Aquel día todo cambió en la Candelaria.",
+    "es": "Aquel día todo cambió en La Candelaria.",
     "en": "That day everything changed in La Candelaria.",
     "accept": [],
     "acceptEn": [],
@@ -18025,7 +18072,7 @@
   },
   {
     "id": "u39-0725",
-    "es": "Hay dos opciones: vender o quedarnos. Esta segunda es la mía.",
+    "es": "Hay dos opciones: vender o quedarnos. La segunda es la mía.",
     "en": "There are two options: sell or stay. The second is mine.",
     "accept": [],
     "acceptEn": [],
@@ -18042,7 +18089,7 @@
       "l:quedar",
       "l:ser",
       "l:vender",
-      "p:demonstratives-basic"
+      "p:hay-varios-tipos"
     ],
     "targets": [],
     "kind": "statement",
@@ -18828,21 +18875,21 @@
   },
   {
     "id": "u39-0760",
-    "es": "Vale es lista y hoy está lista para empezar.",
-    "en": "Vale is clever and today she's ready to start.",
+    "es": "Mariana es lista; a las seis ya está lista con sus preguntas.",
+    "en": "Mariana is clever; by six she's already ready with her questions.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:estar-location-states",
+      "g:gender-articles",
       "g:ser-identity",
-      "l:empezar",
       "l:estar",
-      "l:hoy",
       "l:listo",
+      "l:pregunta",
       "l:ser",
-      "p:para-inf",
-      "p:para-inf-purpose"
+      "p:possessives-basic",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -19129,17 +19176,22 @@
   },
   {
     "id": "u39-0773",
-    "es": "Sobre una roca, Simón repetía la frase del discurso.",
-    "en": "On a rock, Simón was repeating the speech's sentence.",
+    "es": "Vale puso una roca contra la puerta para dejarla abierta.",
+    "en": "Vale put a rock against the door to keep it open.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:direct-objects",
       "g:gender-articles",
-      "g:imperfect-habitual",
-      "l:discurso",
-      "l:frase",
-      "l:repetir",
-      "l:roca"
+      "g:object-pronoun-position",
+      "g:preterite-irregular-strong",
+      "l:abrir",
+      "l:dejar",
+      "l:poner",
+      "l:puerta",
+      "l:roca",
+      "p:para-inf",
+      "p:para-inf-purpose"
     ],
     "targets": [
       "l:roca"
@@ -19231,7 +19283,7 @@
   },
   {
     "id": "u39-0777",
-    "es": "A pesar de mis nervios, Tomás leyó el texto frente a todos.",
+    "es": "A pesar de sus nervios, Tomás leyó el texto frente a todos.",
     "en": "Despite his nerves, Tomás read the text in front of everyone.",
     "accept": [],
     "acceptEn": [],
@@ -19308,17 +19360,15 @@
   },
   {
     "id": "u39-0780",
-    "es": "A pesar de estar en español, el texto sonaba natural.",
-    "en": "Despite being in Spanish, the text sounded natural.",
+    "es": "A pesar de los errores, el texto sonaba natural.",
+    "en": "Despite the mistakes, the text sounded natural.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:concession-despite",
-      "g:estar-location-states",
       "g:gender-articles",
       "g:imperfect-habitual",
-      "l:español",
-      "l:estar",
+      "l:error",
       "l:natural",
       "l:pesar",
       "l:sonar",
@@ -20565,7 +20615,7 @@
   {
     "id": "u39-0829",
     "es": "Hoy les voy a hablar de lo que aprendí escribiendo este texto.",
-    "en": "Today I'm going to talk to you about what I learned writing this text.",
+    "en": "Today I'm going to talk to you about what I learned writing this text. (to an audience)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20595,8 +20645,8 @@
   },
   {
     "id": "u39-0830",
-    "es": "Hoy les voy a hablar de tres vecinos que no se rinden.",
-    "en": "Today I'm going to talk to you about three neighbours who don't give up.",
+    "es": "Esta noche les voy a hablar de tres vecinos que no se rinden.",
+    "en": "Tonight I'm going to talk to you about three neighbours who don't give up. (to an audience)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20608,10 +20658,11 @@
       "g:relative-que",
       "g:stem-e-i",
       "l:hablar",
-      "l:hoy",
       "l:ir",
+      "l:noche",
       "l:rendirse",
       "l:vecino",
+      "p:demonstratives-basic",
       "p:hoy-les-voy-a-hablar",
       "p:presentation-frame"
     ],
@@ -20626,7 +20677,7 @@
   {
     "id": "u39-0831",
     "es": "Hoy les voy a hablar de pan, de memoria y de futuro.",
-    "en": "Today I'm going to talk to you about bread, memory and the future.",
+    "en": "Today I'm going to talk to you about bread, memory and the future. (to an audience)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20653,7 +20704,7 @@
   {
     "id": "u39-0832",
     "es": "Hoy les voy a hablar de lo que cuesta escribir en otro idioma.",
-    "en": "Today I'm going to talk to you about how hard it is to write in another language.",
+    "en": "Today I'm going to talk to you about how hard it is to write in another language. (to an audience)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20683,7 +20734,7 @@
   {
     "id": "u39-0833",
     "es": "Hoy les voy a hablar del primer día de Rosa en el café.",
-    "en": "Today I'm going to talk to you about Rosa's first day at the café.",
+    "en": "Today I'm going to talk to you about Rosa's first day at the café. (to an audience)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20711,8 +20762,8 @@
   },
   {
     "id": "u39-0834",
-    "es": "Hoy les voy a hablar del carro más viejo de la Candelaria.",
-    "en": "Today I'm going to talk to you about the oldest car in La Candelaria.",
+    "es": "Hoy les voy a hablar del carro más viejo de La Candelaria.",
+    "en": "Today I'm going to talk to you about the oldest car in La Candelaria. (to an audience)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21054,17 +21105,23 @@
   },
   {
     "id": "u39-0848",
-    "es": "En síntesis, nada cambia si cambiamos juntos.",
-    "en": "In summary, nothing is lost if we change together.",
+    "es": "En conclusión, el barrio cambia, pero el café se queda.",
+    "en": "In conclusion, the neighbourhood changes, but the café stays.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:discourse-structure",
+      "g:gender-articles",
       "g:present-ar",
-      "g:si-present",
+      "g:reflexive-routine",
+      "l:barrio",
+      "l:café",
       "l:cambiar",
-      "l:juntos",
-      "l:síntesis",
-      "p:para-terminar"
+      "l:conclusión",
+      "l:quedarse",
+      "p:para-terminar",
+      "p:presentation-frame",
+      "p:presenting-to-audience"
     ],
     "targets": [
       "p:para-terminar"
@@ -21101,18 +21158,23 @@
   },
   {
     "id": "u39-0850",
-    "es": "En síntesis, la historia de Rosa es la historia del barrio.",
-    "en": "In summary, Rosa's story is the neighbourhood's story.",
+    "es": "Para concluir, la historia de Rosa es la historia del barrio.",
+    "en": "To conclude, Rosa's story is the neighbourhood's story.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
       "l:barrio",
+      "l:concluir",
       "l:historia",
       "l:ser",
-      "l:síntesis",
-      "p:para-terminar"
+      "p:a-lo-largo-de-esta-charla",
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:para-terminar",
+      "p:presentation-frame",
+      "p:presenting-to-audience"
     ],
     "targets": [
       "p:para-terminar"
@@ -21124,19 +21186,18 @@
   },
   {
     "id": "u39-0851",
-    "es": "En síntesis, tuvimos una semana larga, pero buena.",
-    "en": "In summary, we had a long week, but a good one.",
+    "es": "En síntesis, escribir este texto me cambió.",
+    "en": "In summary, writing this text changed me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
-      "g:gender-articles",
-      "g:preterite-irregular-strong",
-      "l:buena",
-      "l:largo",
-      "l:semana",
+      "g:preterite-ar",
+      "l:cambiar",
+      "l:escribir",
       "l:síntesis",
-      "l:tener",
+      "l:texto",
+      "p:demonstratives-basic",
+      "p:me-te-nos-objects",
       "p:para-terminar"
     ],
     "targets": [
@@ -21174,26 +21235,29 @@
   },
   {
     "id": "u39-0853",
-    "es": "¿Qué te dijo la gerente?\nEn síntesis, que no puede ayudarnos.",
-    "en": "What did the manager tell you? (to a friend)\nIn summary, that she can't help us.",
+    "es": "¿Qué te dijo la gerente?\nEn resumen, que no puede ayudarnos.",
+    "en": "What did the manager tell you? (to a friend)\nIn short, that she can't help us.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:discourse-structure",
       "g:gender-articles",
       "g:object-pronoun-position",
       "g:preterite-irregular-strong",
       "g:questions",
+      "g:relative-que",
       "g:stem-boot",
-      "g:that-clauses",
       "g:verb-infinitive",
       "l:ayudar",
       "l:decir",
       "l:gerente",
       "l:poder",
       "l:qué",
-      "l:síntesis",
+      "l:resumen",
+      "p:al-final-en-resumen",
       "p:me-te-nos-objects",
-      "p:para-terminar"
+      "p:para-terminar",
+      "p:presenting-to-audience"
     ],
     "targets": [
       "l:gerente",
@@ -21511,21 +21575,21 @@
   },
   {
     "id": "u39-0865",
-    "es": "Se trata de cumplir el plazo sin dormir mal.",
-    "en": "It's about meeting the deadline without sleeping badly.",
+    "es": "Se trata de cumplir el plazo y dormir un poco.",
+    "en": "It's about meeting the deadline and getting a bit of sleep.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:prep-infinitive",
       "g:present-ar",
       "g:reflexive-routine",
       "l:cumplir",
       "l:dormir",
-      "l:mal",
       "l:plazo",
       "l:tratarse",
       "p:intentar-conseguir",
+      "p:poco-un-poco",
+      "p:quantifiers-basic",
       "p:se-trata-de",
       "p:tratar-de"
     ],
@@ -22292,7 +22356,7 @@
   {
     "id": "u39-0895",
     "es": "Mariana no sabe cómo presionar a la gerente sin gritar.",
-    "en": "Mariana doesn't know how to press the manager without shouting.",
+    "en": "Mariana doesn't know how to pressure the manager without shouting.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22394,18 +22458,17 @@
   },
   {
     "id": "u39-0899",
-    "es": "¿Qué piensas por un lado y qué piensas por otro lado?",
-    "en": "What do you think on the one hand and what do you think on the other? (to a friend)",
+    "es": "Por un lado te gusta Bogotá, ¿y por otro?",
+    "en": "On the one hand you like Bogotá, and on the other? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:me-gusta",
       "c:por-un-lado",
       "g:discourse-structure",
-      "g:questions",
-      "g:stem-boot",
-      "l:lado",
-      "l:pensar",
-      "l:qué"
+      "g:gustar-basic",
+      "l:gustar",
+      "l:lado"
     ],
     "targets": [
       "g:discourse-structure"
@@ -22417,18 +22480,23 @@
   },
   {
     "id": "u39-0900",
-    "es": "¿Qué ves por un lado y qué ves por otro lado?",
-    "en": "What do you see on the one hand and what do you see on the other? (to a friend)",
+    "es": "Por un lado es tarde, ¿no? Y por otro, mañana no hay clase.",
+    "en": "On the one hand it's late, isn't it? And on the other, there's no class tomorrow.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
+      "c:no-cierto",
       "c:por-un-lado",
       "g:discourse-structure",
-      "g:present-er-ir",
-      "g:questions",
+      "g:hay-vs-esta",
+      "g:ser-identity",
+      "l:clase",
       "l:lado",
-      "l:qué",
-      "l:ver"
+      "l:mañana",
+      "l:ser",
+      "l:tarde",
+      "p:es-de-noche-tarde"
     ],
     "targets": [
       "g:discourse-structure"
@@ -22533,7 +22601,7 @@
   },
   {
     "id": "u39-0905",
-    "es": "¿Por otro lado, a quién le importa el café?",
+    "es": "Por otro lado, ¿a quién le importa el café?",
     "en": "On the other hand, who cares about the café?",
     "accept": [],
     "acceptEn": [],
@@ -22543,11 +22611,11 @@
       "g:gender-articles",
       "g:gustar-full",
       "g:present-ar",
-      "g:questions",
       "l:café",
       "l:importar",
       "l:lado",
-      "l:quién"
+      "l:quién",
+      "p:prep-questions-basic"
     ],
     "targets": [
       "g:discourse-structure"

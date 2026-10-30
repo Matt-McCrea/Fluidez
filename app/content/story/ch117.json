@@ -2,7 +2,7 @@
   "id": "ch117",
   "unit": "u39",
   "title": "Una idea por párrafo",
-  "text": "La oficina de la doctora Lozano tenía más libros que paredes. Hernando llevaba los buñuelos.\nLozano: ¿Weinstein? Claro, el sastre de la puerta verde. Hace veinte años hice un estudio sobre los sastres judíos del centro.\nEn el estudio había una foto: un señor con sombrero, delante de una puerta verde.\nDespués leyó las tres páginas de Tomás.\nLozano: Usted tiene buenas ideas, pero el texto no tiene estructura. El suyo tiene que ser fácil de leer.\nTomás: ¿Y cómo lo hago?\nLozano: Como un ensayo. Una introducción, tres párrafos y una conclusión. En la introducción, usted dice qué va a exponer. En cada párrafo, expone una sola idea. Y en la conclusión, lo dice otra vez, en pocas palabras.\nVale: Es como una torta. Sin estructura, la torta se cae antes de llegar a la mesa.\nVale: Yo estudié en una academia de Medellín. Tengo el certificado en la pared, al lado de la nevera.\nHernando: Yo estudié en otra academia: treinta años en la Burra. Esa academia no da certificado, pero enseña más.\nTomás: En Toronto hice un programa de seis meses para probar software. Nunca escribí un ensayo.\nLozano: Entonces escriba como probaba software. Una idea por párrafo.\nLozano: El comité también pide un resumen de una página y una presentación de diez minutos.\nTomás: ¿Una presentación? ¿En español?\nMariana: Yo investigué a Altamira seis meses. Tú solo tienes que exponer lo que ya sabes.\nLozano: Mañana mis estudiantes del programa de historia van a investigar en el archivo.\nEsa noche, Tomás intentó resumir cuarenta años en una página.\nTomás: Resumir a Rosa es difícil de hacer. Cada frase que corto me duele.\nVale: Pues no la saques. Ponla en la presentación.\nTomás leyó el resumen en voz alta.\nSimón: ¿Sabían que...? ¿Sabían que...?\nHernando: Ese loro quiere hacer la introducción.\nA las once llamó Lozano.\nLozano: En el archivo encontramos una carta de Weinstein de 1979. Le vendió la casa a Rosa muy barata, con una sola condición.\nTomás: ¿Cuál condición?\nLozano: Mañana se la muestro. Es una carta difícil de leer por teléfono.",
+  "text": "La oficina de la doctora Lozano tenía más libros que paredes. Hernando llevaba los buñuelos.\nLozano: ¿Weinstein? Claro, el sastre de la puerta verde. Hace veinte años hice un estudio sobre los sastres judíos del centro.\nEn el estudio había una foto: un señor con sombrero, delante de una puerta verde.\nDespués leyó las tres páginas de Tomás.\nLozano: Usted tiene buenas ideas, pero el texto no tiene estructura. Un texto para un comité tiene que ser fácil de leer.\nTomás: ¿Y cómo lo hago?\nLozano: Como un ensayo. Una introducción, tres párrafos y una conclusión. En la introducción, usted dice qué va a exponer. En cada párrafo, expone una sola idea. Y en la conclusión, lo dice otra vez, en pocas palabras.\nVale: Es como una torta. Sin estructura, la torta se cae antes de llegar a la mesa.\nVale: Yo estudié en una academia de Medellín. Tengo el certificado en la pared, al lado de la nevera.\nHernando: Yo estudié en otra academia: treinta años en la Burra. Esa academia no da certificado, pero enseña más.\nTomás: En Toronto hice un programa de seis meses para probar software. Nunca escribí un ensayo.\nLozano: Entonces escriba como probaba software. Una idea por párrafo.\nLozano: El comité también pide un resumen de una página y una presentación de diez minutos.\nTomás: ¿Una presentación? ¿En español?\nMariana: Yo investigué a Altamira seis meses. Tú solo tienes que exponer lo que ya sabes.\nLozano: Mañana mis estudiantes del programa de historia van a investigar en el archivo.\nEsa noche, Tomás intentó resumir cuarenta años en una página.\nTomás: Rosa es difícil de resumir. Cada frase que corto me duele.\nVale: Pues no la saques. Ponla en la presentación.\nTomás leyó el resumen en voz alta.\nSimón: ¿Sabían que...? ¿Sabían que...?\nHernando: Ese loro quiere hacer la introducción.\nAl otro día llamó Lozano.\nLozano: En el archivo encontramos una carta de Weinstein de 1979. Le vendió la casa a Rosa muy barata, con una sola condición.\nTomás: ¿Cuál condición?\nLozano: Mañana se la muestro. Es una carta difícil de leer por teléfono.",
   "gloss": [
     {
       "es": "tenía más libros que paredes",
@@ -107,7 +107,7 @@
   ],
   "rereadQuestions": [
     {
-      "q": "What was in the photo on page forty?",
+      "q": "What was in the photo in Dr Lozano's study?",
       "options": [
         "A man in a hat in front of a green door",
         "Rosa on her first day",
@@ -145,6 +145,7 @@
     "c:pues",
     "c:que-va",
     "c:sabian-que",
+    "c:sera-otro-dia",
     "c:tengo",
     "c:tienes",
     "g:adjective-agreement",
@@ -166,7 +167,6 @@
     "g:le-doubling",
     "g:negative-commands",
     "g:por-para-1",
-    "g:possessives-stressed",
     "g:prep-infinitive",
     "g:present-ar",
     "g:present-er-ir",
@@ -188,7 +188,6 @@
     "p:dificil-de-inf",
     "p:doler",
     "p:entonces-de-repente",
-    "p:es-adj-inf",
     "p:frequency-scale",
     "p:intentar-conseguir",
     "p:me-duele",
@@ -201,7 +200,6 @@
     "p:quantifiers-basic",
     "p:saber-conocer",
     "p:sobre-todo-solo",
-    "p:telling-time",
     "p:time-sequence-basic",
     "p:ver-oir-bien-mal"
   ],
@@ -233,6 +231,7 @@
     "l:difícil",
     "l:doctor",
     "l:doler",
+    "l:día",
     "l:encontrar",
     "l:ensayo",
     "l:enseñar",

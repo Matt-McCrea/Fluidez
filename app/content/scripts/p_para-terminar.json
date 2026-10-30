@@ -6,38 +6,179 @@
     "en": "To finish, I'll leave you with a question. (to an audience)"
   },
   "examples": [
-    { "es": "En resumen, cocinar no es difícil.", "en": "In short, cooking isn't difficult." },
-    { "es": "Para terminar, les dejo una pregunta.", "en": "To finish, I'll leave you with a question. (to an audience)" },
-    { "es": "En conclusión, todos podemos hacer algo.", "en": "In conclusion, we can all do something." },
-    { "es": "Bueno, eso es todo.", "en": "Well, that's all." },
-    { "es": "Muchas gracias por su atención.", "en": "Thank you very much for your attention." },
-    { "es": "Para concluir, el café es de todos.", "en": "To conclude, the café belongs to everyone." }
+    {
+      "es": "En resumen, cocinar no es difícil.",
+      "en": "In short, cooking isn't difficult."
+    },
+    {
+      "es": "Para terminar, les dejo una pregunta.",
+      "en": "To finish, I'll leave you with a question. (to an audience)"
+    },
+    {
+      "es": "En conclusión, todos podemos hacer algo.",
+      "en": "In conclusion, we can all do something."
+    },
+    {
+      "es": "Bueno, eso es todo.",
+      "en": "Well, that's all."
+    },
+    {
+      "es": "Muchas gracias por su atención.",
+      "en": "Thank you very much for your attention."
+    },
+    {
+      "es": "Para concluir, el café es de todos.",
+      "en": "To conclude, the café belongs to everyone."
+    }
   ],
   "rule": "Close with one of these, then a comma and the summary:\n\n*Para terminar,*\n*En resumen,*\n*En conclusión,*\n\nNothing new goes in the conclusion. Say again, in a sentence, what you have already said.\n\nThen close the talk itself: *Bueno, eso es todo. Muchas gracias por su atención.* The phrase *su atención* is formal, which is right for an audience.",
   "smallPrint": "Teachers call these closing markers, or *marcadores de cierre*.",
   "readAndPick": [
-    { "es": "En resumen, cocinar no es difícil.", "options": ["In short, cooking isn't difficult.", "First, cooking isn't difficult.", "What's more, cooking isn't difficult."], "answer": 0 },
-    { "es": "Para terminar, les dejo una pregunta.", "options": ["To start, I'll ask you a question. (to an audience)", "To finish, I'll leave you with a question. (to an audience)", "To finish, he leaves you with a question."], "answer": 1 },
-    { "es": "En conclusión, todos podemos hacer algo.", "options": ["In conclusion, we can all do something.", "Firstly, we can all do something.", "In conclusion, I can do something."], "answer": 0 },
-    { "es": "Muchas gracias por su atención.", "options": ["Thank you very much for your help.", "Thank you very much for your attention.", "Thank you very much for your time."], "answer": 1 },
-    { "es": "Bueno, eso es todo.", "options": ["Well, that's all.", "Well, that's good.", "Well, that's everything I know."], "answer": 0 },
-    { "es": "Para concluir, el café es de todos.", "options": ["To begin, the café belongs to everyone.", "Besides, the café belongs to everyone.", "To conclude, the café belongs to everyone."], "answer": 2 },
-    { "es": "Por último, necesitamos más tiempo.", "options": ["To conclude, we need more time.", "Lastly, we need more time.", "Firstly, we need more time."], "answer": 1 },
-    { "es": "En resumen, no vendemos.", "options": ["In short, we're not selling.", "At first, we're not selling.", "On the other hand, we're not selling."], "answer": 0 }
+    {
+      "es": "En resumen, cocinar no es difícil.",
+      "options": [
+        "In short, cooking isn't difficult.",
+        "First, cooking isn't difficult.",
+        "What's more, cooking isn't difficult."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Para terminar, les dejo una pregunta.",
+      "options": [
+        "To start, I'll ask you a question. (to an audience)",
+        "To finish, I'll leave you with a question. (to an audience)",
+        "To finish, he leaves you with a question."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "En conclusión, todos podemos hacer algo.",
+      "options": [
+        "In conclusion, we can all do something.",
+        "Firstly, we can all do something.",
+        "In conclusion, I can do something."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Muchas gracias por su atención.",
+      "options": [
+        "Thank you very much for your help.",
+        "Thank you very much for your attention.",
+        "Thank you very much for your time."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Bueno, eso es todo.",
+      "options": [
+        "Well, that's all.",
+        "Well, that's good.",
+        "Well, that's everything I know."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Para concluir, el café es de todos.",
+      "options": [
+        "To begin, the café belongs to everyone.",
+        "Besides, the café belongs to everyone.",
+        "To conclude, the café belongs to everyone."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Por último, necesitamos más tiempo.",
+      "options": [
+        "To conclude, we need more time.",
+        "Lastly, we need more time.",
+        "Firstly, we need more time."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "En resumen, no vendemos.",
+      "options": [
+        "In short, we're not selling.",
+        "At first, we're not selling.",
+        "On the other hand, we're not selling."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Choose the right opener and type the whole sentence (In short, we're not selling): *___, no vendemos.* (*En resumen* or *Además*)", "answer": "En resumen, no vendemos.", "accept": ["En conclusión, no vendemos."], "why": "You are closing, so *en resumen*." },
-    { "prompt": "Type in Spanish (to an audience): To finish, I'll leave you with a question.", "answer": "Para terminar, les dejo una pregunta.", "accept": ["Para terminar les dejo una pregunta."], "why": "*Para terminar* closes, and *les* is the audience." },
-    { "prompt": "Type in Spanish: In conclusion, we can all do something.", "answer": "En conclusión, todos podemos hacer algo.", "accept": ["En conclusión, podemos hacer algo todos."], "why": "*En conclusión* leads into the last idea, and *todos* means \"all of us\"." },
-    { "prompt": "Type in Spanish: In short, cooking isn't difficult.", "answer": "En resumen, cocinar no es difícil.", "accept": ["En resumen, cocinar no es tan difícil."], "why": "*Cocinar* is an infinitive used as the subject." },
-    { "prompt": "Type in Spanish: Thank you very much for your attention.", "answer": "Muchas gracias por su atención.", "accept": ["Gracias por su atención."], "why": "*Su atención* is the formal way to thank a group." },
-    { "prompt": "Type in Spanish: Well, that's all.", "answer": "Bueno, eso es todo.", "accept": [], "why": "*Eso es todo* tells people you have finished." },
-    { "prompt": "Change the opener so it means \"To conclude\": *Para terminar, el café es de todos.*", "answer": "Para concluir, el café es de todos.", "accept": ["En conclusión, el café es de todos."], "why": "*Para concluir* and *para terminar* are the same idea." }
+    {
+      "prompt": "Choose the right opener and type the whole sentence (In short, we're not selling): *___, no vendemos.* (*En resumen* or *Además*)",
+      "answer": "En resumen, no vendemos.",
+      "accept": [
+        "En conclusión, no vendemos."
+      ],
+      "why": "You are closing, so *en resumen*."
+    },
+    {
+      "prompt": "Type in Spanish (to an audience): To finish, I'll leave you with a question.",
+      "answer": "Para terminar, les dejo una pregunta.",
+      "accept": [
+        "Para terminar les dejo una pregunta."
+      ],
+      "why": "*Para terminar* closes, and *les* is the audience."
+    },
+    {
+      "prompt": "Type in Spanish: In conclusion, we can all do something.",
+      "answer": "En conclusión, todos podemos hacer algo.",
+      "accept": [
+        "En conclusión todos podemos hacer algo."
+      ],
+      "why": "*En conclusión* leads into the last idea, and *todos* means \"all of us\"."
+    },
+    {
+      "prompt": "Type in Spanish: In short, cooking isn't difficult.",
+      "answer": "En resumen, cocinar no es difícil.",
+      "accept": [
+        "En resumen, cocinar no es tan difícil."
+      ],
+      "why": "*Cocinar* is an infinitive used as the subject."
+    },
+    {
+      "prompt": "Type in Spanish: Thank you very much for your attention.",
+      "answer": "Muchas gracias por su atención.",
+      "accept": [
+        "Gracias por su atención."
+      ],
+      "why": "*Su atención* is the formal way to thank a group."
+    },
+    {
+      "prompt": "Type in Spanish: Well, that's all.",
+      "answer": "Bueno, eso es todo.",
+      "accept": [],
+      "why": "*Eso es todo* tells people you have finished."
+    },
+    {
+      "prompt": "Change the opener so it means \"To conclude\": *Para terminar, el café es de todos.*",
+      "answer": "Para concluir, el café es de todos.",
+      "accept": [
+        "En conclusión, el café es de todos."
+      ],
+      "why": "*Para concluir* and *para terminar* are the same idea."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Para terminar la charla, el café es de todos.", "right": "Para terminar, el café es de todos.", "why": "Almost. As a closer it stands alone, followed by a comma." },
-    { "wrong": "Gracias por tu atención.", "right": "Gracias por su atención.", "why": "To an audience, use the formal *su*, not *tu*." },
-    { "wrong": "En resumen, además, el café es de todos.", "right": "En resumen, el café es de todos.", "why": "A closing line adds nothing new, so *además* has no place there." }
+    {
+      "wrong": "En corto, el café es de todos.",
+      "right": "En resumen, el café es de todos.",
+      "why": "Almost. \"In short\" is not *en corto*; Spanish says *en resumen*."
+    },
+    {
+      "wrong": "Gracias por tu atención.",
+      "right": "Gracias por su atención.",
+      "why": "To an audience, use the formal *su*, not *tu*."
+    },
+    {
+      "wrong": "En resumen, además, el café es de todos.",
+      "right": "En resumen, el café es de todos.",
+      "why": "A closing line adds nothing new, so *además* has no place there."
+    }
   ],
   "personal": "Close a tiny talk about your week: *Para terminar,* or *En resumen,* followed by one sentence, then *Muchas gracias por su atención*."
 }

@@ -34,14 +34,14 @@
       "accept": [
         "Primero, el café forma parte del barrio.",
         "Primero, el café forma parte de La Candelaria, mi barrio.",
-        "Primero de todo, el café forma parte del barrio."
+        "En primer lugar, el café forma parte del barrio."
       ],
       "require": [
         {
           "type": "regex",
           "pattern": "\\b(en primer lugar|primero)\\b",
           "flags": "iu",
-          "label": "start with: primero"
+          "label": "start with: en primer lugar, or primero"
         }
       ],
       "focus": "g:discourse-structure",
@@ -70,13 +70,13 @@
     },
     {
       "id": "t4",
-      "npc": "En el texto salen Rosa y la empresa Altamira. ¿Cuál de las dos quiere comprar la cuadra?",
-      "npcEn": "In the text, Rosa and the company Altamira appear. Which of the two wants to buy the block?",
-      "intent": "Answer with 'esta' to point back to the company you just heard named: this one wants to buy the block.",
+      "npc": "Bien. Ahora la historia de la casa. Léeme esa parte.",
+      "npcEn": "Good. Now the history of the house. Read me that part.",
+      "intent": "Read her the line from your text: Weinstein sold the house to Rosa, and the latter opened the café in 1979. Point back at Rosa with 'esta'.",
       "accept": [
-        "Esta quiere comprar toda la cuadra.",
-        "Esta empresa quiere comprar la cuadra.",
-        "Altamira. Esta empresa quiere comprar toda la cuadra."
+        "Weinstein le vendió la casa a Rosa. Esta abrió el café en 1979.",
+        "Weinstein le vendió la casa a Rosa, y esta abrió el café en 1979.",
+        "Weinstein le vendió la casa a Rosa; esta abrió el café en 1979."
       ],
       "require": [
         {
@@ -102,9 +102,9 @@
       "require": [
         {
           "type": "regex",
-          "pattern": "\\b(para terminar|en conclusión|en resumen)\\b",
+          "pattern": "\\b(para terminar|para concluir|en conclusión|en resumen)\\b",
           "flags": "iu",
-          "label": "signal the close: para terminar"
+          "label": "signal the close: para terminar, en resumen"
         },
         {
           "type": "regex",
@@ -127,13 +127,17 @@
     "c:hola-buenos-dias",
     "c:voy-a",
     "g:cada-cualquier",
+    "g:commands-tu",
+    "g:commands-with-pronouns",
+    "g:demonstratives",
     "g:discourse-structure",
     "g:gender-articles",
     "g:indirect-objects",
     "g:ir-a-plans",
+    "g:le-doubling",
     "g:possessives",
     "g:present-ar",
-    "g:present-er-ir",
+    "g:preterite-er-ir",
     "g:questions",
     "g:ser-identity",
     "g:stem-boot",
@@ -147,15 +151,12 @@
     "l:bien",
     "l:bueno",
     "l:café",
+    "l:casa",
     "l:comité",
-    "l:comprar",
     "l:conclusión",
-    "l:cuadra",
-    "l:cuál",
     "l:cómo",
     "l:día",
     "l:empezar",
-    "l:empresa",
     "l:escuchar",
     "l:formar",
     "l:hablar",
@@ -164,21 +165,22 @@
     "l:importante",
     "l:importar",
     "l:ir",
+    "l:leer",
+    "l:lugar",
     "l:mantener",
     "l:mañana",
     "l:parte",
-    "l:querer",
     "l:qué",
     "l:razón",
     "l:resumen",
-    "l:salir",
     "l:ser",
     "l:terminar",
-    "l:texto",
     "l:vecino",
+    "l:vender",
     "l:ver",
     "p:a-lo-largo-de-esta-charla",
     "p:al-final-en-resumen",
+    "p:dates-years",
     "p:demonstratives-basic",
     "p:es-adj-inf",
     "p:formar-parte-de",
@@ -196,6 +198,7 @@
     "p:quantifiers-basic",
     "p:telling-time",
     "p:time-sequence-basic",
-    "p:veces-al"
+    "p:veces-al",
+    "p:voy-a-defender-que"
   ]
 }

@@ -273,7 +273,7 @@
         "label": "usted, not tú"
       }
     ],
-    "model": "Señores del comité:\nEn primer lugar, el café existe desde hace más de cincuenta años. Mi abuela Rosa lo abrió y muchas familias de La Candelaria lo consideran suyo. Además, es un lugar donde los vecinos se encuentran todos los días. Por un lado, vendemos café y comida; por otro, ofrecemos un espacio para hablar. En resumen, este lugar es más que un negocio. Gracias por su tiempo y por leer esta carta.\nTomás",
+    "model": "Señores del comité:\nEn primer lugar, el café existe desde hace más de cuarenta años. Mi abuela Rosa lo abrió y muchas familias de La Candelaria lo consideran suyo. Además, es un lugar donde los vecinos se encuentran todos los días. Por un lado, vendemos café y comida; por otro, ofrecemos un espacio para hablar. En resumen, este lugar es más que un negocio. Gracias por su tiempo y por leer esta carta.\nTomás",
     "focus": "g:discourse-structure",
     "requires": [
       "c:ademas",
@@ -741,85 +741,66 @@
   {
     "id": "w-u39-09",
     "unit": "u39",
-    "prompt": "Write to Vale to describe the kinds of customers who come to the café at different times of day. Say there are several kinds and describe them in order: the first, the second, finally.",
+    "prompt": "Write to Mariana to sort the evidence for the statement into kinds. Say how many kinds there are and go through them in order: the first, the second, finally.",
     "minWords": 60,
     "maxWords": 120,
     "constraints": [
       {
         "type": "regex",
         "pattern": "hay (varios|tres|cuatro|dos) (tipos|clases) de",
-        "label": "use hay varios tipos de clientes"
+        "label": "use hay varios tipos de… (or a number)"
       },
       {
         "type": "regex",
-        "pattern": "el primero[\\s\\S]*el segundo",
-        "label": "order them: el primero…, el segundo…"
+        "pattern": "(el primero|la primera)[\\s\\S]*(el segundo|la segunda)",
+        "label": "order them: el primero or la primera, then el segundo or la segunda"
       }
     ],
-    "model": "Vale, esta semana pensé en nuestros clientes. Hay varios tipos de clientes en el café. El primero es el que llega a las siete, pide un tinto y se va corriendo al trabajo. El segundo es el estudiante, que se queda horas con su computadora y casi no compra nada. Por último, están los vecinos como Hernando, que vienen a conversar. Los tres son importantes, y creo que debemos tratarlos igual de bien.",
+    "model": "Mariana, ya ordené las pruebas para la declaración. Hay tres tipos de pruebas. La primera es la carta del señor Weinstein, que explica la condición de la puerta verde. La segunda son las firmas: ya tenemos cuatrocientas. Por último, están las cartas de los vecinos, ciento veinte en total. ¿Crees que el comité va a leer todo? Yo creo que la carta de Weinstein es la más importante.",
     "focus": "p:hay-varios-tipos",
     "requires": [
-      "c:bien-y-tu",
       "c:creo-que",
       "c:hay",
-      "c:igual",
-      "g:adjective-agreement",
-      "g:direct-objects",
+      "c:tienes",
       "g:estar-location-states",
       "g:gender-articles",
-      "g:gerund-ways",
       "g:hay-vs-esta",
       "g:ir-a-plans",
-      "g:negation-words",
-      "g:object-pronoun-position",
       "g:por-para-1",
-      "g:possessives",
       "g:present-ar",
       "g:present-er-ir",
       "g:preterite-ar",
-      "g:reflexive-routine",
       "g:relative-que",
-      "g:relatives-prepositions",
       "g:ser-identity",
-      "g:stem-boot",
-      "g:stem-e-i",
-      "g:tanto-como",
-      "g:tener-que-hay-que",
+      "g:superlatives",
       "g:that-clauses",
-      "l:bien",
-      "l:café",
-      "l:cliente",
-      "l:comprar",
-      "l:computadora",
-      "l:conversar",
-      "l:correr",
+      "l:carta",
+      "l:comité",
+      "l:condición",
       "l:creer",
-      "l:deber",
+      "l:declaración",
       "l:estar",
-      "l:estudiante",
-      "l:hora",
-      "l:igual",
+      "l:explicar",
+      "l:firma",
       "l:importante",
-      "l:irse",
-      "l:llegar",
-      "l:pedir",
-      "l:pensar",
-      "l:quedarse",
-      "l:semana",
+      "l:ir",
+      "l:leer",
+      "l:ordenar",
+      "l:prueba",
+      "l:puerta",
       "l:ser",
-      "l:tinto",
+      "l:señor",
+      "l:tener",
       "l:tipo",
-      "l:trabajo",
-      "l:tratar",
+      "l:total",
       "l:vecino",
-      "l:venir",
-      "p:demonstratives-basic",
-      "p:el-que-la-que",
+      "l:verde",
       "p:hay-varios-tipos",
-      "p:possessives-basic",
+      "p:numbers-un-una",
+      "p:para-inf",
+      "p:por-ciento",
       "p:presentation-frame",
-      "p:telling-time",
-      "p:time-sequence-basic"
+      "p:senor-don-article"
     ]
   },
   {
@@ -920,7 +901,7 @@
   {
     "id": "w-u39-11",
     "unit": "u39",
-    "prompt": "Write a short note to Mariana, who is editing your text, to comment on two paragraphs. Refer back to what you said earlier without repeating the words: use \"the above\" or \"the said\" or \"the latter\".",
+    "prompt": "Write a short note to Mariana, who is editing your text, to comment on two paragraphs. Refer back to what you said earlier without repeating the words: use \"the above\", \"the latter\" or \"the … in question\".",
     "minWords": 60,
     "maxWords": 120,
     "constraints": [
@@ -992,7 +973,7 @@
   {
     "id": "w-u39-12",
     "unit": "u39",
-    "prompt": "Write to your cousin Yesid, someone your age, about what you are trying to do this week. Say what you try to do and what you try to do at the same time, and be honest about it.",
+    "prompt": "Write to your mother in Toronto about what you are trying to do this week. Say what you are trying to do, which two things you are juggling at once, and what you try not to do.",
     "minWords": 60,
     "maxWords": 120,
     "constraints": [
@@ -1007,7 +988,7 @@
         "label": "include a la vez"
       }
     ],
-    "model": "Yesid, esta semana está llena de trabajo. Trato de terminar el ensayo para el comité y, a la vez, atender el café con Vale. No es fácil, pero trato de no enojarme. Todos los días intento escribir un párrafo antes de abrir. Por la noche reviso lo que escribí y lo mando a Mariana. Cuando vengas a Bogotá, te lo leo en voz alta.",
+    "model": "Mamá, esta semana está llena de trabajo. Trato de terminar el ensayo para el comité y, a la vez, atender el café con Vale. No es fácil, pero trato de no enojarme. Todos los días intento escribir un párrafo antes de abrir. Por la noche reviso lo que escribí y lo mando a Mariana. Cuando vengas a Bogotá, te lo leo en voz alta.",
     "focus": "p:tratar-de",
     "requires": [
       "g:adjective-agreement",

@@ -80,11 +80,11 @@
       "answer": 2
     },
     {
-      "es": "Hay varias clases de pan en la panadería de Vale.",
+      "es": "Hay varias clases de pan en el café.",
       "options": [
-        "There are several kinds of bread at Vale's bakery.",
-        "Vale teaches a class on bread.",
-        "There is one kind of bread at Vale's bakery."
+        "There are several kinds of bread at the café.",
+        "The café has a bread class.",
+        "There is one kind of bread at the café."
       ],
       "answer": 0
     },
@@ -137,10 +137,10 @@
       "why": "*Por último* marks the last item in the list."
     },
     {
-      "prompt": "Say: There are several kinds of bread at Vale's bakery.",
-      "answer": "Hay varias clases de pan en la panadería de Vale.",
+      "prompt": "Say: There are several kinds of bread at the café.",
+      "answer": "Hay varias clases de pan en el café.",
       "accept": [
-        "Hay varios tipos de pan en la panadería de Vale."
+        "Hay varios tipos de pan en el café."
       ],
       "why": "*Clases* is feminine, so it takes *varias*."
     },
@@ -169,9 +169,9 @@
       "why": "Say *el primero*, with its article, like \"the first one\"."
     },
     {
-      "wrong": "Al último, está el que nunca paga.",
-      "right": "Por último, está el que nunca paga.",
-      "why": "For \"finally\" in a list, the set phrase is *por último*."
+      "wrong": "Hay varios clases de pan en el café.",
+      "right": "Hay varias clases de pan en el café.",
+      "why": "*Clase* is feminine, so *varias*, even though *tipos* takes *varios*."
     }
   ],
   "personal": "Pick something you know well: music, food, sports. Say how many kinds there are with *Hay tres tipos de…*, then name the first with *El primero es…*"

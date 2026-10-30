@@ -157,7 +157,7 @@
     {
       "wrong": "La película se trata de una familia.",
       "right": "La película trata de una familia.",
-      "why": "Almost. When you name the thing, it is the subject, so *se* drops out: *la película trata de*."
+      "why": "Almost. You will hear this a lot, but in careful writing the named thing is the subject, so *se* drops out: *la película trata de*."
     },
     {
       "wrong": "Se trata una oferta de Altamira.",
@@ -165,9 +165,9 @@
       "why": "The *de* is part of the phrase: it is always *se trata de*."
     },
     {
-      "wrong": "Es de una oferta de Altamira.",
+      "wrong": "Es sobre una oferta de Altamira.",
       "right": "Se trata de una oferta de Altamira.",
-      "why": "Almost. *Es de* says where something comes from; to say what it is about, use *se trata de*."
+      "why": "Almost. English says \"it's about\", but to say what a situation is about, Spanish uses *se trata de*."
     }
   ],
   "personal": "Think of a book or film you like. Say what it is about with *Trata de…* Then think of a situation in your life and say what it is about with *Se trata de…*"

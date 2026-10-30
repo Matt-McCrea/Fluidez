@@ -164,9 +164,9 @@
       "why": "English \"try to\" has no extra word, but Spanish needs *de*."
     },
     {
-      "wrong": "La película se trata de una familia.",
-      "right": "La película trata de una familia.",
-      "why": "Almost. When you name the thing, it is the subject, so *se* drops out."
+      "wrong": "Intento de llegar temprano.",
+      "right": "Intento llegar temprano.",
+      "why": "*Intentar* also means \"try\", but it takes no *de*. Only *tratar* brings *de* along."
     },
     {
       "wrong": "Trato no de llegar tarde.",

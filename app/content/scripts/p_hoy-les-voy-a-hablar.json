@@ -6,38 +6,180 @@
     "en": "Today I'm going to talk to you about the history of the café. (to an audience)"
   },
   "examples": [
-    { "es": "Hoy les voy a hablar de la historia del café.", "en": "Today I'm going to talk to you about the history of the café. (to an audience)" },
-    { "es": "Hoy les voy a hablar del barrio.", "en": "Today I'm going to talk to you about the neighbourhood. (to an audience)" },
-    { "es": "Primero hablaré de los problemas.", "en": "First I'll talk about the problems." },
-    { "es": "Después hablaré de las soluciones.", "en": "Then I'll talk about the solutions." },
-    { "es": "Por último hablaré de lo que podemos hacer.", "en": "Lastly I'll talk about what we can do." },
-    { "es": "¿Sabían que el café tiene casi cien años?", "en": "Did you know the café is almost a hundred years old? (to an audience)" }
+    {
+      "es": "Hoy les voy a hablar de la historia del café.",
+      "en": "Today I'm going to talk to you about the history of the café. (to an audience)"
+    },
+    {
+      "es": "Hoy les voy a hablar del barrio.",
+      "en": "Today I'm going to talk to you about the neighbourhood. (to an audience)"
+    },
+    {
+      "es": "Primero hablaré de los problemas.",
+      "en": "First I'll talk about the problems."
+    },
+    {
+      "es": "Después hablaré de las soluciones.",
+      "en": "Then I'll talk about the solutions."
+    },
+    {
+      "es": "Por último hablaré de lo que podemos hacer.",
+      "en": "Lastly I'll talk about what we can do."
+    },
+    {
+      "es": "¿Sabían que el café tiene más de cuarenta años?",
+      "en": "Did you know the café is more than forty years old? (to an audience)"
+    }
   ],
   "rule": "To open a talk, name the topic with *Hoy les voy a hablar de…*. The *les* means \"you all\", the audience. Use *del* before a masculine noun: *del barrio*.\n\nThen give the roadmap with *hablaré de…* and the order words: *primero*, *después*, *por último*.\n\nA good opening starts with a hook: a question like *¿Sabían que…?* or a surprising fact. Then comes the topic, then the roadmap.\n\nTo one person, change *les* to *te*: *Hoy te voy a hablar de mi familia*.",
   "smallPrint": "Teachers call this a presentation opening, or *introducción de una exposición oral*.",
   "readAndPick": [
-    { "es": "Hoy les voy a hablar del barrio.", "options": ["Today I'm going to talk to you about the neighbourhood. (to an audience)", "Today I talked to you about the neighbourhood. (to an audience)", "Today they are going to talk about the neighbourhood."], "answer": 0 },
-    { "es": "Hoy te voy a hablar de mi familia.", "options": ["Today I'm going to talk to you about my family. (to a friend)", "Today I'm going to talk to you about my family. (to an audience)", "Today he's going to talk about my family."], "answer": 0 },
-    { "es": "Primero hablaré de los problemas.", "options": ["I talked about the problems.", "First I'll talk about the problems.", "Lastly I'll talk about the problems."], "answer": 1 },
-    { "es": "Después hablaré de las soluciones.", "options": ["Then I'll talk about the solutions.", "First I'll talk about the solutions.", "Lastly I'll talk about the solutions."], "answer": 0 },
-    { "es": "Por último hablaré de lo que podemos hacer.", "options": ["First I'll talk about what we can do.", "Then I'll talk about what we can do.", "Lastly I'll talk about what we can do."], "answer": 2 },
-    { "es": "¿Sabían que el café tiene casi cien años?", "options": ["Did you know the café is almost a hundred years old? (to an audience)", "Do you know the café is almost a hundred years old? (to a friend)", "Did they know the café is almost a hundred years old?"], "answer": 0 },
-    { "es": "Hoy les voy a hablar de la historia del café.", "options": ["Today I'm going to talk to you about the café's history. (to an audience)", "Today the café will talk to you about its history.", "Today I'm going to ask you about the café's history. (to an audience)"], "answer": 0 },
-    { "es": "Hoy vamos a hablar del barrio.", "options": ["Today I'm going to talk about the neighbourhood.", "Today we're going to talk about the neighbourhood.", "Today you all are going to talk about the neighbourhood."], "answer": 1 }
+    {
+      "es": "Hoy les voy a hablar del barrio.",
+      "options": [
+        "Today I'm going to talk to you about the neighbourhood. (to an audience)",
+        "Today I talked to you about the neighbourhood. (to an audience)",
+        "Today they are going to talk about the neighbourhood."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hoy te voy a hablar de mi familia.",
+      "options": [
+        "Today I'm going to talk to you about my family. (to a friend)",
+        "Today I'm going to talk to you about my family. (to an audience)",
+        "Today he's going to talk about my family."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Primero hablaré de los problemas.",
+      "options": [
+        "I talked about the problems.",
+        "First I'll talk about the problems.",
+        "Lastly I'll talk about the problems."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Después hablaré de las soluciones.",
+      "options": [
+        "Then I'll talk about the solutions.",
+        "First I'll talk about the solutions.",
+        "Lastly I'll talk about the solutions."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Por último hablaré de lo que podemos hacer.",
+      "options": [
+        "First I'll talk about what we can do.",
+        "Then I'll talk about what we can do.",
+        "Lastly I'll talk about what we can do."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Sabían que el café tiene más de cuarenta años?",
+      "options": [
+        "Did you know the café is more than forty years old? (to an audience)",
+        "Do you know the café is more than forty years old? (to a friend)",
+        "Did they know the café is more than forty years old?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hoy les voy a hablar de la historia del café.",
+      "options": [
+        "Today I'm going to talk to you about the café's history. (to an audience)",
+        "Today the café will talk to you about its history.",
+        "Today I'm going to ask you about the café's history. (to an audience)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hoy vamos a hablar del barrio.",
+      "options": [
+        "Today I'm going to talk about the neighbourhood.",
+        "Today we're going to talk about the neighbourhood.",
+        "Today you all are going to talk about the neighbourhood."
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
-    { "prompt": "Choose the right form and type the whole sentence (Today I'm going to talk to you about the neighbourhood, to an audience): *Hoy ___ voy a hablar del barrio.* (*les* or *te*)", "answer": "Hoy les voy a hablar del barrio.", "accept": [], "why": "An audience is *ustedes*, so *les*." },
-    { "prompt": "Type in Spanish (to an audience): Today I'm going to talk to you about the history of the café.", "answer": "Hoy les voy a hablar de la historia del café.", "accept": ["Les voy a hablar hoy de la historia del café."], "why": "*Hoy les voy a hablar de* names the topic, and *del* is *de* plus *el*." },
-    { "prompt": "Say to one friend: Today I'm going to talk to you about my family.", "answer": "Hoy te voy a hablar de mi familia.", "accept": ["Te voy a hablar de mi familia hoy."], "why": "One friend is *te*, not *les*." },
-    { "prompt": "Type in Spanish: First I'll talk about the problems.", "answer": "Primero hablaré de los problemas.", "accept": ["Primero voy a hablar de los problemas."], "why": "*Hablaré de* is the roadmap form, and *primero* puts it first." },
-    { "prompt": "Type in Spanish: Then I'll talk about the solutions.", "answer": "Después hablaré de las soluciones.", "accept": ["Luego hablaré de las soluciones."], "why": "*Después* is the next step in the order." },
-    { "prompt": "Type in Spanish: Lastly I'll talk about what we can do.", "answer": "Por último hablaré de lo que podemos hacer.", "accept": ["Por último, hablaré de lo que podemos hacer."], "why": "*Por último* ends the list, and *lo que* means \"what\"." },
-    { "prompt": "Ask your audience if they knew the café is almost a hundred years old.", "answer": "¿Sabían que el café tiene casi cien años?", "accept": [], "why": "*¿Sabían que…?* is a quick hook before the topic." }
+    {
+      "prompt": "Choose the right form and type the whole sentence (Today I'm going to talk to you about the neighbourhood, to an audience): *Hoy ___ voy a hablar del barrio.* (*les* or *te*)",
+      "answer": "Hoy les voy a hablar del barrio.",
+      "accept": [
+        "Hoy voy a hablarles del barrio."
+      ],
+      "why": "An audience is *ustedes*, so *les*."
+    },
+    {
+      "prompt": "Type in Spanish (to an audience): Today I'm going to talk to you about the history of the café.",
+      "answer": "Hoy les voy a hablar de la historia del café.",
+      "accept": [
+        "Les voy a hablar hoy de la historia del café.",
+        "Hoy voy a hablarles de la historia del café."
+      ],
+      "why": "*Hoy les voy a hablar de* names the topic, and *del* is *de* plus *el*."
+    },
+    {
+      "prompt": "Say to one friend: Today I'm going to talk to you about my family.",
+      "answer": "Hoy te voy a hablar de mi familia.",
+      "accept": [
+        "Te voy a hablar de mi familia hoy."
+      ],
+      "why": "One friend is *te*, not *les*."
+    },
+    {
+      "prompt": "Type in Spanish: First I'll talk about the problems.",
+      "answer": "Primero hablaré de los problemas.",
+      "accept": [
+        "Primero voy a hablar de los problemas."
+      ],
+      "why": "*Hablaré de* is the roadmap form, and *primero* puts it first."
+    },
+    {
+      "prompt": "Type in Spanish: Then I'll talk about the solutions.",
+      "answer": "Después hablaré de las soluciones.",
+      "accept": [
+        "Luego hablaré de las soluciones."
+      ],
+      "why": "*Después* is the next step in the order."
+    },
+    {
+      "prompt": "Type in Spanish: Lastly I'll talk about what we can do.",
+      "answer": "Por último hablaré de lo que podemos hacer.",
+      "accept": [
+        "Por último, hablaré de lo que podemos hacer."
+      ],
+      "why": "*Por último* ends the list, and *lo que* means \"what\"."
+    },
+    {
+      "prompt": "Ask your audience if they knew the café is more than forty years old.",
+      "answer": "¿Sabían que el café tiene más de cuarenta años?",
+      "accept": [],
+      "why": "*¿Sabían que…?* is a quick hook before the topic."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Hoy les voy hablar del barrio.", "right": "Hoy les voy a hablar del barrio.", "why": "Almost. *Ir* plus infinitive always needs the little *a*: *voy a hablar*." },
-    { "wrong": "Hoy os voy a hablar del barrio.", "right": "Hoy les voy a hablar del barrio.", "why": "In Latin America a group is *ustedes*, so the pronoun is *les*." },
-    { "wrong": "Hoy les voy a hablar de el barrio.", "right": "Hoy les voy a hablar del barrio.", "why": "*De* and *el* always join into *del*." }
+    {
+      "wrong": "Hoy les voy hablar del barrio.",
+      "right": "Hoy les voy a hablar del barrio.",
+      "why": "Almost. *Ir* plus infinitive always needs the little *a*: *voy a hablar*."
+    },
+    {
+      "wrong": "Hoy voy a les hablar del barrio.",
+      "right": "Hoy les voy a hablar del barrio.",
+      "why": "*Les* goes before *voy*, or is glued to the end: *voy a hablarles*. Never in the middle."
+    },
+    {
+      "wrong": "Hoy les voy a hablar de el barrio.",
+      "right": "Hoy les voy a hablar del barrio.",
+      "why": "*De* and *el* always join into *del*."
+    }
   ],
   "personal": "Open a mini talk about yourself: *Hoy les voy a hablar de…* and then name your topic."
 }

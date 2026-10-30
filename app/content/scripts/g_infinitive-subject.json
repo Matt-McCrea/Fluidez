@@ -6,41 +6,189 @@
     "en": "Cooking for so many people isn't easy."
   },
   "examples": [
-    { "es": "Cocinar para tanta gente no es fácil.", "en": "Cooking for so many people isn't easy." },
-    { "es": "Me molesta tener que esperar.", "en": "Having to wait bothers me." },
-    { "es": "Vivir en La Candelaria es una aventura.", "en": "Living in La Candelaria is an adventure." },
-    { "es": "No saber la palabra me da pena.", "en": "Not knowing the word embarrasses me." },
-    { "es": "A Hernando le encanta hablar de fútbol.", "en": "Hernando loves talking about football." },
-    { "es": "¿Te molesta esperar?", "en": "Does waiting bother you? (to a friend)" },
-    { "es": "Hablar español todos los días es útil.", "en": "Speaking Spanish every day is useful." }
+    {
+      "es": "Cocinar para tanta gente no es fácil.",
+      "en": "Cooking for so many people isn't easy."
+    },
+    {
+      "es": "Me molesta tener que esperar.",
+      "en": "Having to wait bothers me."
+    },
+    {
+      "es": "Vivir en La Candelaria es una aventura.",
+      "en": "Living in La Candelaria is an adventure."
+    },
+    {
+      "es": "No saber la palabra me da pena.",
+      "en": "Not knowing the word embarrasses me."
+    },
+    {
+      "es": "A Hernando le encanta hablar de fútbol.",
+      "en": "Hernando loves talking about football."
+    },
+    {
+      "es": "¿Te molesta esperar?",
+      "en": "Does waiting bother you? (to a friend)"
+    },
+    {
+      "es": "Hablar español todos los días es útil.",
+      "en": "Speaking Spanish every day is useful."
+    }
   ],
   "rule": "English turns a verb into a noun by adding *-ing*: \"cooking is easy\", \"waiting bothers me\". Spanish needs no change. The plain infinitive (*cocinar*, *esperar*) can stand at the start of the sentence like any noun.\n\n*Cocinar es fácil.*\n*Esperar me molesta.*\n\nThe verb that follows is always singular, even when the infinitive has a long tail: *Hablar español todos los días es útil*.\n\nFor \"not doing\", put *no* in front of the infinitive: *No saber la palabra me da pena*.\n\nThe infinitive also follows feeling verbs such as *me encanta*, *me molesta*, *me da pena*: *Me encanta caminar por el barrio*. There is never a Spanish *-ando* or *-iendo* in these spots.",
   "smallPrint": "Teachers call this the infinitive used as a noun, or a substantive infinitive. In careful writing you will also see *el* in front: *el saber*.",
   "readAndPick": [
-    { "es": "Esperar me molesta.", "options": ["Waiting bothers me.", "I'm waiting for him.", "He's waiting for me."], "answer": 0 },
-    { "es": "No fumar es sano.", "options": ["Smoking is healthy.", "Smoking isn't healthy.", "Not smoking is healthy."], "answer": 2 },
-    { "es": "Fumar no es sano.", "options": ["Not smoking is healthy.", "Smoking isn't healthy.", "Smoking is healthy."], "answer": 1 },
-    { "es": "Me encanta caminar por el barrio.", "options": ["I love walking around the neighbourhood.", "I love the neighbourhood.", "I walked around the neighbourhood."], "answer": 0 },
-    { "es": "Vivir en La Candelaria es una aventura.", "options": ["I lived in La Candelaria.", "Living in La Candelaria is an adventure.", "La Candelaria is an adventure."], "answer": 1 },
-    { "es": "A Hernando le encanta hablar de fútbol.", "options": ["Hernando talks about football.", "Hernando loves football.", "Hernando loves talking about football."], "answer": 2 },
-    { "es": "¿Te molesta esperar?", "options": ["Does waiting bother you? (to a friend)", "Are you waiting for me? (to a friend)", "Does it bother you? (to a friend)"], "answer": 0 },
-    { "es": "No saber la palabra me da pena.", "options": ["I don't know the word, sorry.", "Not knowing the word embarrasses me.", "Knowing the word embarrasses me."], "answer": 1 },
-    { "es": "Cocinar para tanta gente no es fácil.", "options": ["Cooking for so many people isn't easy.", "Cooking for so many people is easy.", "So many people can't cook."], "answer": 0 }
+    {
+      "es": "Esperar me molesta.",
+      "options": [
+        "Waiting bothers me.",
+        "I'm waiting for him.",
+        "He's waiting for me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No fumar es sano.",
+      "options": [
+        "Smoking is healthy.",
+        "Smoking isn't healthy.",
+        "Not smoking is healthy."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Fumar no es sano.",
+      "options": [
+        "Not smoking is healthy.",
+        "Smoking isn't healthy.",
+        "Smoking is healthy."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me encanta caminar por el barrio.",
+      "options": [
+        "I love walking around the neighbourhood.",
+        "I love the neighbourhood.",
+        "I walked around the neighbourhood."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vivir en La Candelaria es una aventura.",
+      "options": [
+        "I lived in La Candelaria.",
+        "Living in La Candelaria is an adventure.",
+        "La Candelaria is an adventure."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A Hernando le encanta hablar de fútbol.",
+      "options": [
+        "Hernando talks about football.",
+        "Hernando loves football.",
+        "Hernando loves talking about football."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Te molesta esperar?",
+      "options": [
+        "Does waiting bother you? (to a friend)",
+        "Are you waiting for me? (to a friend)",
+        "Does it bother you? (to a friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No saber la palabra me da pena.",
+      "options": [
+        "I don't know the word, sorry.",
+        "Not knowing the word embarrasses me.",
+        "Knowing the word embarrasses me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cocinar para tanta gente no es fácil.",
+      "options": [
+        "Cooking for so many people isn't easy.",
+        "Cooking for so many people is easy.",
+        "So many people can't cook."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Choose the right form and type the whole sentence (Living in Bogotá is an adventure): *___ en Bogotá es una aventura.* (*Vivir* or *Viviendo*)", "answer": "Vivir en Bogotá es una aventura.", "accept": [], "why": "The subject of the sentence is a plain infinitive, never an *-ando* or *-iendo* form." },
-    { "prompt": "Type in Spanish: Cooking is easy.", "answer": "Cocinar es fácil.", "accept": [], "why": "The infinitive does the job of \"cooking\", and the verb after it stays singular." },
-    { "prompt": "Type in Spanish: Waiting bothers me.", "answer": "Esperar me molesta.", "accept": ["Me molesta esperar."], "why": "*Esperar* is the subject, and *me molesta* says it bothers you." },
-    { "prompt": "Ask a friend if waiting bothers them.", "answer": "¿Te molesta esperar?", "accept": ["¿Esperar te molesta?"], "why": "*Te* is your friend, and *esperar* is the thing that bothers." },
-    { "prompt": "Make it negative (Cooking isn't easy): *Cocinar es fácil.*", "answer": "Cocinar no es fácil.", "accept": [], "why": "*No* goes in front of *es*, as always." },
-    { "prompt": "Type in Spanish: Not knowing the word embarrasses me.", "answer": "No saber la palabra me da pena.", "accept": [], "why": "*No* in front of the infinitive means \"not doing\"." },
-    { "prompt": "Make it about *we* (We love walking around the neighbourhood): *Me encanta caminar por el barrio.*", "answer": "Nos encanta caminar por el barrio.", "accept": [], "why": "*Nos encanta* is \"we love\", and *caminar* stays as it is." }
+    {
+      "prompt": "Choose the right form and type the whole sentence (Living in Bogotá is an adventure): *___ en Bogotá es una aventura.* (*Vivir* or *Viviendo*)",
+      "answer": "Vivir en Bogotá es una aventura.",
+      "accept": [],
+      "why": "The subject of the sentence is a plain infinitive, never an *-ando* or *-iendo* form."
+    },
+    {
+      "prompt": "Type in Spanish: Cooking is easy.",
+      "answer": "Cocinar es fácil.",
+      "accept": [],
+      "why": "The infinitive does the job of \"cooking\", and the verb after it stays singular."
+    },
+    {
+      "prompt": "Type in Spanish: Waiting bothers me.",
+      "answer": "Esperar me molesta.",
+      "accept": [
+        "Me molesta esperar."
+      ],
+      "why": "*Esperar* is the subject, and *me molesta* says it bothers you."
+    },
+    {
+      "prompt": "Ask a friend if waiting bothers them.",
+      "answer": "¿Te molesta esperar?",
+      "accept": [
+        "¿Esperar te molesta?"
+      ],
+      "why": "*Te* is your friend, and *esperar* is the thing that bothers."
+    },
+    {
+      "prompt": "Make it negative (Cooking isn't easy): *Cocinar es fácil.*",
+      "answer": "Cocinar no es fácil.",
+      "accept": [],
+      "why": "*No* goes in front of *es*, as always."
+    },
+    {
+      "prompt": "Type in Spanish: Not knowing the word embarrasses me.",
+      "answer": "No saber la palabra me da pena.",
+      "accept": [],
+      "why": "*No* in front of the infinitive means \"not doing\"."
+    },
+    {
+      "prompt": "Make it about *we* (We love walking around the neighbourhood): *Me encanta caminar por el barrio.*",
+      "answer": "Nos encanta caminar por el barrio.",
+      "accept": [],
+      "why": "*Nos encanta* is \"we love\", and *caminar* stays as it is."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Cocinando es fácil.", "right": "Cocinar es fácil.", "why": "Almost. English \"cooking\" ends in *-ing*, but Spanish uses the plain infinitive as the subject." },
-    { "wrong": "Me molesta esperando.", "right": "Me molesta esperar.", "why": "After a feeling verb like *me molesta*, Spanish wants the infinitive, not an *-ando* form." },
-    { "wrong": "Hablar español son útiles.", "right": "Hablar español es útil.", "why": "The subject is one action, so the verb is singular, whatever comes after it." },
-    { "wrong": "Fumar es no sano.", "right": "No fumar es sano.", "why": "To say \"not doing\", put *no* in front of the infinitive." }
+    {
+      "wrong": "Cocinando es fácil.",
+      "right": "Cocinar es fácil.",
+      "why": "Almost. English \"cooking\" ends in *-ing*, but Spanish uses the plain infinitive as the subject."
+    },
+    {
+      "wrong": "Me molesta esperando.",
+      "right": "Me molesta esperar.",
+      "why": "After a feeling verb like *me molesta*, Spanish wants the infinitive, not an *-ando* form."
+    },
+    {
+      "wrong": "Hablar español son útiles.",
+      "right": "Hablar español es útil.",
+      "why": "The subject is one action, so the verb is singular, whatever comes after it."
+    },
+    {
+      "wrong": "Me encanta a caminar por el barrio.",
+      "right": "Me encanta caminar por el barrio.",
+      "why": "English says \"love to walk\", but Spanish puts the infinitive straight after *me encanta*, with no *a*."
+    }
   ],
   "personal": "Say one true thing about yourself with an infinitive as the subject, for example *Me encanta cocinar* or *Esperar me molesta*."
 }

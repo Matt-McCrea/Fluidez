@@ -27,12 +27,12 @@
       "en": "They aren't part of the family."
     },
     {
-      "es": "La Candelaria pertenece al centro de Bogotá.",
+      "es": "La Candelaria forma parte del centro de Bogotá.",
       "en": "La Candelaria is part of downtown Bogotá."
     }
   ],
-  "rule": "To say you are part of a group, use *formar parte de* or *pertenecer a*. The verb changes with who is in:\n\n*formo parte, formas parte, forma parte, formamos parte, forman parte*\n*pertenezco, perteneces, pertenece, pertenecemos, pertenecen*\n\n*De* and *a* join the article: *del equipo*, *al grupo*.\n\nEnglish says \"am part of\" or \"belong to\". Spanish uses a regular verb, and each one has its own little word: *parte de*, *pertenecer a*.",
-  "smallPrint": "Teachers call *formar parte de* and *pertenecer a* verbs of membership: they say which group something belongs to.",
+  "rule": "To say you are part of a group, use *formar parte de* or *pertenecer a*. The verb changes with who is in:\n\n*formo parte, formas parte, forma parte, formamos parte, forman parte*\n*pertenezco, perteneces, pertenece, pertenecemos, pertenecen*\n\n*De* and *a* join the article: *del equipo*, *al grupo*.\n\nEnglish says \"am part of\" or \"belong to\". Spanish uses a verb, and each one has its own little word: *parte de*, *pertenecer a*.",
+  "smallPrint": "Teachers call *formar parte de* and *pertenecer a* verbs of membership. In Colombia you will also hear *hacer parte de*: *Hago parte del equipo*.",
   "readAndPick": [
     {
       "es": "Formo parte del equipo de ventas.",
@@ -98,7 +98,7 @@
       "answer": 0
     },
     {
-      "es": "La Candelaria pertenece al centro de Bogotá.",
+      "es": "La Candelaria forma parte del centro de Bogotá.",
       "options": [
         "La Candelaria is next to downtown Bogotá.",
         "La Candelaria is far from downtown Bogotá.",

@@ -80,11 +80,11 @@
       "answer": 2
     },
     {
-      "es": "La calle es incómoda de caminar.",
+      "es": "Su nombre es difícil de recordar.",
       "options": [
-        "The street is easy to walk along.",
-        "The street is uncomfortable to walk along.",
-        "The street is far to walk."
+        "His name is easy to remember.",
+        "His name is hard to remember.",
+        "He can't remember his name."
       ],
       "answer": 1
     },
