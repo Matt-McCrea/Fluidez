@@ -1,0 +1,183 @@
+{
+  "node": "x:conformarse-no-remedio",
+  "hook": {
+    "line": "With the café under pressure, Tomás keeps saying yes to things he would rather refuse. Spanish splits that into two different feelings: choosing to be satisfied with less, and being left with no choice at all.",
+    "es": "No me quedó más remedio que irme.",
+    "en": "I had no choice but to leave."
+  },
+  "examples": [
+    {
+      "es": "Me conformo con poco.",
+      "en": "I'm content with little."
+    },
+    {
+      "es": "Se conformó con una disculpa.",
+      "en": "She settled for an apology."
+    },
+    {
+      "es": "Nos conformamos con una mesa junto a la ventana.",
+      "en": "We settled for a table by the window."
+    },
+    {
+      "es": "No me quedó más remedio que irme.",
+      "en": "I had no choice but to leave."
+    },
+    {
+      "es": "No nos quedó más remedio que cancelar el viaje.",
+      "en": "We had no choice but to cancel the trip."
+    },
+    {
+      "es": "A Tomás no le quedó más remedio que vender las mesas.",
+      "en": "Tomás had no choice but to sell the tables."
+    }
+  ],
+  "rule": "Both ideas mean \"making do\", but the feeling differs.\n\n*Conformarse con* + a noun is acceptance of less. You take what is on offer: *Me conformo con poco.* Before a verb, add *que*: *Me conformo con que llegues a tiempo.*\n\n*No quedar más remedio que* + an infinitive means the situation forces you. The person goes after *quedar* as *me*, *te*, *le*, *nos*: *No me quedó más remedio que irme.*\n\nSo ask yourself: am I lowering my wishes (*conformarse con*), or is the choice taken away from me (*no quedar más remedio que*)?",
+  "smallPrint": "The first is a pronominal verb followed by *con*; the second is a negative impersonal structure followed by *que* and an infinitive.",
+  "readAndPick": [
+    {
+      "es": "Me conformo con poco.",
+      "options": [
+        "I'm content with little.",
+        "I had no choice but to leave.",
+        "I'm asking for a lot."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No me quedó más remedio que irme.",
+      "options": [
+        "I settled for leaving.",
+        "I had no choice but to leave.",
+        "I left because I wanted to."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se conformó con una disculpa.",
+      "options": [
+        "She demanded an apology.",
+        "She had no choice but to apologise.",
+        "She settled for an apology."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No nos quedó más remedio que cancelar el viaje.",
+      "options": [
+        "We had no choice but to cancel the trip.",
+        "We settled for a shorter trip.",
+        "We cancelled by choice."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nos conformamos con una mesa junto a la ventana.",
+      "options": [
+        "We had to give up the table.",
+        "We settled for a table by the window.",
+        "We booked the best table."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A Tomás no le quedó más remedio que vender las mesas.",
+      "options": [
+        "Tomás settled for cheap tables.",
+        "Tomás loved selling the tables.",
+        "Tomás had no choice but to sell the tables."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Me conformo con que llegues a tiempo.",
+      "options": [
+        "I'll settle for you arriving on time.",
+        "I had no choice but to arrive on time.",
+        "I'm sure you arrived on time."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No te queda más remedio que decirle la verdad.",
+      "options": [
+        "You settle for telling him the truth.",
+        "You have no choice but to tell him the truth.",
+        "You never tell him the truth."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale no se conforma con menos.",
+      "options": [
+        "Vale doesn't have to do less.",
+        "Vale had no choice but to leave.",
+        "Vale won't settle for less."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *conformo* or *quedó*: Me ___ con poco. Type the whole sentence.",
+      "answer": "Me conformo con poco.",
+      "accept": [],
+      "why": "Being content with little is your own acceptance, so *conformo*."
+    },
+    {
+      "prompt": "Choose *conformó* or *quedó*: No me ___ más remedio que irme. Type the whole sentence.",
+      "answer": "No me quedó más remedio que irme.",
+      "accept": [],
+      "why": "Leaving was forced on me, so *no me quedó más remedio*."
+    },
+    {
+      "prompt": "She settled for an apology.",
+      "answer": "Se conformó con una disculpa.",
+      "accept": [],
+      "why": "*Conformarse con* + the thing you accept."
+    },
+    {
+      "prompt": "We had no choice but to cancel the trip.",
+      "answer": "No nos quedó más remedio que cancelar el viaje.",
+      "accept": [],
+      "why": "*Nos* shows who had no choice, and *que* leads into the infinitive."
+    },
+    {
+      "prompt": "Tomás had no choice but to sell the tables.",
+      "answer": "A Tomás no le quedó más remedio que vender las mesas.",
+      "accept": [
+        "No le quedó más remedio a Tomás que vender las mesas."
+      ],
+      "why": "*Le* stands for Tomás, repeated at the start with *a*."
+    },
+    {
+      "prompt": "You have no choice but to tell him the truth. (to a friend)",
+      "answer": "No te queda más remedio que decirle la verdad.",
+      "accept": [],
+      "why": "To a friend the person is *te*."
+    },
+    {
+      "prompt": "Make it about we: Me conformo con poco.",
+      "answer": "Nos conformamos con poco.",
+      "accept": [],
+      "why": "Both the *me* and the verb change to *we*: *nos conformamos*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me conformo que irme.",
+      "right": "No me quedó más remedio que irme.",
+      "why": "Almost. *Conformarse* needs *con*, and \"had no choice\" is a different structure, *no quedar más remedio que*."
+    },
+    {
+      "wrong": "Yo no quedé más remedio que irme.",
+      "right": "No me quedó más remedio que irme.",
+      "why": "Almost. The remedy is what is left to *me*, so the person goes in as *me*, and the verb stays *quedó*."
+    },
+    {
+      "wrong": "No me quedó más remedio irme.",
+      "right": "No me quedó más remedio que irme.",
+      "why": "Almost. You need *que* before the infinitive."
+    }
+  ],
+  "personal": "Think of something you have settled for, and something you had to do. Say one of each: *Me conformo con…* and *No me quedó más remedio que…*."
+}

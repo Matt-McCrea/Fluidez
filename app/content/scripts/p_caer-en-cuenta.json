@@ -1,0 +1,195 @@
+{
+  "node": "p:caer-en-cuenta",
+  "hook": {
+    "line": "Some things you know for weeks and only really see on one particular afternoon. Tomás, going through Hernando's chess notebook, has just had one of those moments, and Spanish has a verb for it.",
+    "es": "Hasta ayer no caí en cuenta de que Hernando ya no volvería.",
+    "en": "It only dawned on me yesterday that Hernando wouldn't be coming back."
+  },
+  "examples": [
+    {
+      "es": "Hasta ayer no caí en cuenta de que era su cumpleaños.",
+      "en": "It only dawned on me yesterday that it was her birthday."
+    },
+    {
+      "es": "De pronto caí en la cuenta de mi error.",
+      "en": "Suddenly I realised my mistake."
+    },
+    {
+      "es": "Vale cayó en cuenta de que había perdido el tiquete.",
+      "en": "Vale realised she had lost the ticket."
+    },
+    {
+      "es": "¿Cuándo caíste en cuenta de que el libro estaba listo?",
+      "en": "When did it hit you that the book was ready? (to a friend)"
+    },
+    {
+      "es": "Caímos en cuenta de que faltaba la llave.",
+      "en": "It dawned on us that the key was missing."
+    },
+    {
+      "es": "Mariana no cayó en cuenta de que era tarde.",
+      "en": "It didn't occur to Mariana that it was late."
+    }
+  ],
+  "rule": "To say that something suddenly clicked, Spanish uses *caer en cuenta de que…*, literally \"to fall into the realisation\".\n\n*Caí en cuenta de que era tarde.* It dawned on me that it was late.\n\nThe verb *caer* changes like any other: *caí*, *caíste*, *cayó*, *caímos*. After *de que* you say what you realised.\n\nEnglish just says \"realise\" for both a slow understanding and a sudden one. Spanish keeps *darse cuenta* for the plain, general sense and uses *caer en cuenta* for the moment the penny drops. Many speakers also say *caer en la cuenta*; both are fine.",
+  "smallPrint": "Teachers call this an idiomatic verb phrase. It is followed by *de que* and a clause, or by *de* and a noun: *caí en cuenta de mi error*.",
+  "readAndPick": [
+    {
+      "es": "Caí en cuenta de que era tarde.",
+      "options": [
+        "It dawned on me that it was late.",
+        "It dawned on her that it was late.",
+        "It dawned on us that it was late."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale cayó en cuenta de que faltaba la llave.",
+      "options": [
+        "I realised the key was missing.",
+        "Vale realised the key was missing.",
+        "You realised the key was missing."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Caímos en cuenta de que el café cerraba hoy.",
+      "options": [
+        "They realised the café closed today.",
+        "I realised the café closed today.",
+        "We realised the café closed today."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Caíste en cuenta de que hoy es lunes?",
+      "options": [
+        "Did it hit you that today is Monday? (to a friend)",
+        "Did it hit her that today is Monday?",
+        "Did it hit me that today is Monday?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "De pronto caí en la cuenta de mi error.",
+      "options": [
+        "I made a mistake on purpose.",
+        "Suddenly I realised my mistake.",
+        "I slowly forgot my mistake."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tomás cayó en cuenta de que Hernando no volvería.",
+      "options": [
+        "Tomás has just spoken to Hernando.",
+        "Tomás forgave Hernando.",
+        "It dawned on Tomás that Hernando wouldn't return."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Los clientes no cayeron en cuenta de que el café cerraba.",
+      "options": [
+        "The customers didn't realise the café was closing.",
+        "The customer didn't realise the café was closing.",
+        "The customers didn't want the café to close."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tomás caerá en cuenta tarde o temprano.",
+      "options": [
+        "Tomás realised it long ago.",
+        "Tomás will realise sooner or later.",
+        "Tomás is realising it right now."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Caí en cuenta de que tenía hambre.",
+      "options": [
+        "I was hungry all day.",
+        "I wanted to eat dinner.",
+        "It suddenly hit me that I was hungry."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *caí* or *cayó*: Vale ___ en cuenta de que era tarde. Type the whole sentence.",
+      "answer": "Vale cayó en cuenta de que era tarde.",
+      "accept": [
+        "Vale cayó en la cuenta de que era tarde."
+      ],
+      "why": "Vale is one person, not me, so the verb is *cayó*."
+    },
+    {
+      "prompt": "Choose *caí* or *caímos*: Mi hermana y yo ___ en cuenta de que faltaba la llave. Type the whole sentence.",
+      "answer": "Mi hermana y yo caímos en cuenta de que faltaba la llave.",
+      "accept": [
+        "Mi hermana y yo caímos en la cuenta de que faltaba la llave."
+      ],
+      "why": "My sister and I is \"we\", so *caímos*."
+    },
+    {
+      "prompt": "It dawned on me that it was late.",
+      "answer": "Caí en cuenta de que era tarde.",
+      "accept": [
+        "Caí en la cuenta de que era tarde."
+      ],
+      "why": "*Caí en cuenta de que* + what you realised."
+    },
+    {
+      "prompt": "When did it hit you that the book was ready? (to a friend)",
+      "answer": "¿Cuándo caíste en cuenta de que el libro estaba listo?",
+      "accept": [
+        "¿Cuándo caíste en la cuenta de que el libro estaba listo?"
+      ],
+      "why": "To a friend, *tú* form: *caíste*."
+    },
+    {
+      "prompt": "Suddenly I realised my mistake.",
+      "answer": "De pronto caí en la cuenta de mi error.",
+      "accept": [
+        "De pronto caí en cuenta de mi error."
+      ],
+      "why": "With a noun, use *de* instead of *de que*."
+    },
+    {
+      "prompt": "Make it negative: Tomás cayó en cuenta de que era tarde.",
+      "answer": "Tomás no cayó en cuenta de que era tarde.",
+      "accept": [
+        "Tomás no cayó en la cuenta de que era tarde."
+      ],
+      "why": "*No* goes right before the verb."
+    },
+    {
+      "prompt": "Make it about we: Caí en cuenta de que tenía hambre.",
+      "answer": "Caímos en cuenta de que teníamos hambre.",
+      "accept": [
+        "Caímos en la cuenta de que teníamos hambre."
+      ],
+      "why": "Both verbs change to *we*: *caímos* and *teníamos*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Caí cuenta de que era tarde.",
+      "right": "Caí en cuenta de que era tarde.",
+      "why": "Almost. The little word *en* is part of the phrase and cannot be dropped."
+    },
+    {
+      "wrong": "Caí en cuenta que era tarde.",
+      "right": "Caí en cuenta de que era tarde.",
+      "why": "Almost. After *cuenta* you need *de que*, as with *darse cuenta de que*."
+    },
+    {
+      "wrong": "Me caí en cuenta de que era tarde.",
+      "right": "Caí en cuenta de que era tarde.",
+      "why": "Almost. Here *caer* has no *me*: say *caí*, not *me caí* (that means \"I fell down\")."
+    }
+  ],
+  "personal": "Think of something you only noticed recently, even something small, and say it: *Hasta ayer no caí en cuenta de que…*."
+}

@@ -1,0 +1,185 @@
+{
+  "node": "g:comparative-advanced-c1",
+  "hook": {
+    "line": "Tomás keeps going round in circles about whether to sell the café, and the harder he thinks, the murkier it gets. Spanish has a neat pattern for exactly that spiral, plus two more for scolding and advising.",
+    "es": "Cuanto más lo pienso, menos lo entiendo.",
+    "en": "The more I think about it, the less I understand it."
+  },
+  "examples": [
+    {
+      "es": "Cuanto más lo pienso, menos lo entiendo.",
+      "en": "The more I think about it, the less I understand it."
+    },
+    {
+      "es": "Cuanto más practico, mejor hablo.",
+      "en": "The more I practise, the better I speak."
+    },
+    {
+      "es": "Cuanto más café tomo, menos duermo.",
+      "en": "The more coffee I drink, the less I sleep."
+    },
+    {
+      "es": "¡Ni que fuera el presidente!",
+      "en": "As if he were the president!"
+    },
+    {
+      "es": "¡Ni que fueras mi jefe!",
+      "en": "As if you were my boss! (to a friend)"
+    },
+    {
+      "es": "Más vale que llegues temprano.",
+      "en": "You'd better get here early. (to a friend)"
+    },
+    {
+      "es": "Más vale que no lo sepa Hernando.",
+      "en": "It's better if Hernando doesn't find out."
+    }
+  ],
+  "rule": "Three fine comparisons.\n\n1. *Cuanto más… (menos)…* means \"the more… the more/less…\". Say *cuanto* + *más* or *menos* in the first half, then *más*, *menos*, *mejor* or *peor* in the second. The verbs stay normal: *Cuanto más practico, mejor hablo.*\n\n2. *Ni que* + a past subjunctive scoffs at an exaggeration: *¡Ni que fueras mi jefe!* It is like \"as if you were…\" and always points at something untrue.\n\n3. *Más vale que* + the present subjunctive gives strong advice: *Más vale que llegues temprano.*\n\nEnglish uses \"the… the…\"; Spanish repeats *más* or *menos* in both halves instead.",
+  "smallPrint": "Teachers call the first one a proportional comparison. In the second and third, the verb after *que* is in the subjunctive.",
+  "readAndPick": [
+    {
+      "es": "Cuanto más lo pienso, menos lo entiendo.",
+      "options": [
+        "The more I think, the less I understand.",
+        "The more I think, the more I understand.",
+        "The less I think, the more I understand."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Cuanto más practico, mejor hablo.",
+      "options": [
+        "The less I practise, the better I speak.",
+        "The more I practise, the better I speak.",
+        "The more I practise, the worse I speak."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cuanto más café tomo, menos duermo.",
+      "options": [
+        "The more coffee I drink, the more I sleep.",
+        "The less coffee I drink, the less I sleep.",
+        "The more coffee I drink, the less I sleep."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¡Ni que fuera el presidente!",
+      "options": [
+        "As if he were the president!",
+        "He is the president!",
+        "He wants to be the president."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Ni que fueras mi jefe!",
+      "options": [
+        "You are my boss.",
+        "As if you were my boss!",
+        "I wish you were my boss."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Más vale que llegues temprano.",
+      "options": [
+        "You arrived early.",
+        "You never arrive early.",
+        "You'd better get here early."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Más vale que no lo sepa Hernando.",
+      "options": [
+        "It's better if Hernando doesn't find out.",
+        "Hernando already knows.",
+        "Hernando would like to know."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Cuanto más tarde llegas, menos tiempo tenemos.",
+      "options": [
+        "The earlier you arrive, the less time we have.",
+        "The later you arrive, the less time we have.",
+        "The later you arrive, the more time we have."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Ni que estuviéramos en Medellín!",
+      "options": [
+        "We are in Medellín.",
+        "They are in Medellín.",
+        "As if we were in Medellín!"
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *más* or *menos*: Cuanto ___ café tomo, menos duermo. Type the whole sentence.",
+      "answer": "Cuanto más café tomo, menos duermo.",
+      "accept": [],
+      "why": "More coffee means less sleep, so the first half takes *más*."
+    },
+    {
+      "prompt": "Choose *llegues* or *llegas*: Más vale que ___ temprano. Type the whole sentence.",
+      "answer": "Más vale que llegues temprano.",
+      "accept": [],
+      "why": "After *más vale que* the verb goes in the subjunctive: *llegues*."
+    },
+    {
+      "prompt": "The more I practise, the better I speak.",
+      "answer": "Cuanto más practico, mejor hablo.",
+      "accept": [],
+      "why": "*Cuanto más…* and then *mejor* in the second half."
+    },
+    {
+      "prompt": "As if you were my boss! (to a friend)",
+      "answer": "¡Ni que fueras mi jefe!",
+      "accept": [],
+      "why": "*Ni que* takes the past subjunctive, *fueras* for *tú*."
+    },
+    {
+      "prompt": "You'd better get here early. (to a friend)",
+      "answer": "Más vale que llegues temprano.",
+      "accept": [],
+      "why": "*Más vale que* + the *tú* subjunctive."
+    },
+    {
+      "prompt": "The more I think about it, the less I understand it.",
+      "answer": "Cuanto más lo pienso, menos lo entiendo.",
+      "accept": [],
+      "why": "*Más* in the first half, *menos* in the second."
+    },
+    {
+      "prompt": "Make it about he: ¡Ni que fueras el presidente!",
+      "answer": "¡Ni que fuera el presidente!",
+      "accept": [],
+      "why": "For *él* or *ella* the past subjunctive ends in *-ra*: *fuera*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El más lo pienso, el menos lo entiendo.",
+      "right": "Cuanto más lo pienso, menos lo entiendo.",
+      "why": "Almost. Spanish has no \"the… the…\": the first half starts with *cuanto*, the second just repeats *más* or *menos*."
+    },
+    {
+      "wrong": "¡Ni que es el presidente!",
+      "right": "¡Ni que fuera el presidente!",
+      "why": "Almost. *Ni que* mocks something untrue, so the verb is in the past subjunctive, not the plain present."
+    },
+    {
+      "wrong": "Más vale que llegas temprano.",
+      "right": "Más vale que llegues temprano.",
+      "why": "Almost. Advice after *más vale que* needs the subjunctive, *llegues*."
+    }
+  ],
+  "personal": "Describe a habit of yours that works like a spiral: *Cuanto más… , más…*."
+}
