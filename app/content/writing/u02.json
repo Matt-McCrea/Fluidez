@@ -525,5 +525,339 @@
       "p:bien-bueno",
       "p:bien-mal-vs-bueno-malo"
     ]
+  },
+  {
+    "id": "w-u02-13",
+    "unit": "u02",
+    "prompt": "Text a friend about your routine: what you eat and what you write. Say it about yourself.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "comer",
+        "tense": "presente",
+        "person": "yo",
+        "label": "say what you eat: como"
+      },
+      {
+        "type": "verbForm",
+        "inf": "escribir",
+        "tense": "presente",
+        "person": "yo",
+        "label": "say what you write: escribo"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Hola. Como en el parque con mi amigo. Escribo mucho, la verdad.",
+    "focus": "g:present-er-ir",
+    "requires": [
+      "c:hola-buenos-dias",
+      "c:la-verdad",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:amigo",
+      "l:comer",
+      "l:escribir",
+      "l:parque",
+      "l:verdad",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u02-14",
+    "unit": "u02",
+    "prompt": "Tell Mariana about a friend: what he eats and what he writes. Write about him, not about you.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "comer",
+        "tense": "presente",
+        "person": "él/ella"
+      },
+      {
+        "type": "verbForm",
+        "inf": "escribir",
+        "tense": "presente",
+        "person": "él/ella"
+      },
+      {
+        "type": "person",
+        "person": "él/ella"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Mi amigo come en el centro. Escribe mucho, la verdad.",
+    "focus": "g:present-er-ir",
+    "requires": [
+      "c:la-verdad",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:amigo",
+      "l:centro",
+      "l:comer",
+      "l:escribir",
+      "l:verdad",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u02-15",
+    "unit": "u02",
+    "prompt": "Text Mariana about where you talk and where you do not. Use I, and include one sentence with no.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "hablar",
+        "tense": "presente",
+        "person": "yo",
+        "label": "say hablo"
+      },
+      {
+        "type": "negation"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "No hablo mucho en el hospital. Hablo con mi amigo en el parque.",
+    "focus": "g:present-ar",
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:amigo",
+      "l:hablar",
+      "l:hospital",
+      "l:parque",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u02-16",
+    "unit": "u02",
+    "prompt": "Tell Mariana about two friends at the park: what they talk about and what they eat. Write about the two of them.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "hablar",
+        "tense": "presente",
+        "person": "ellos"
+      },
+      {
+        "type": "person",
+        "person": "ellos"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Mis amigos hablan mucho en el parque. Comen y escriben mucho.",
+    "focus": "g:present-ar",
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:present-er-ir",
+      "l:amigo",
+      "l:comer",
+      "l:escribir",
+      "l:hablar",
+      "l:parque",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u02-17",
+    "unit": "u02",
+    "prompt": "Message Mariana: tell her where you are and how you are, and where a friend is and how he is.",
+    "minWords": 10,
+    "maxWords": 35,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "estar",
+        "tense": "presente",
+        "person": "yo",
+        "label": "say where or how you are: estoy"
+      },
+      {
+        "type": "verbForm",
+        "inf": "estar",
+        "tense": "presente",
+        "person": "él/ella",
+        "label": "say where or how he is: está"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Hola, Mariana. Estoy en la universidad y estoy muy ocupado. Mi amigo está en el colegio.",
+    "focus": "g:estar-location-states",
+    "requires": [
+      "c:hola-buenos-dias",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:amigo",
+      "l:colegio",
+      "l:estar",
+      "l:ocupado",
+      "l:universidad",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u02-18",
+    "unit": "u02",
+    "prompt": "You meet an older man at the hospital door. Ask him politely (usted) whether he is busy and whether he is tired.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "question"
+      },
+      {
+        "type": "verbForm",
+        "inf": "estar",
+        "tense": "presente",
+        "person": "él/ella",
+        "label": "ask with está (usted)"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "estás",
+          "eres",
+          "tú"
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Buenos días, señor. ¿Está ocupado? ¿Está cansado?",
+    "focus": "g:estar-location-states",
+    "requires": [
+      "c:hola-buenos-dias",
+      "g:estar-location-states",
+      "l:bueno",
+      "l:cansado",
+      "l:día",
+      "l:estar",
+      "l:ocupado",
+      "l:señor"
+    ]
+  },
+  {
+    "id": "w-u02-19",
+    "unit": "u02",
+    "prompt": "Tell a friend how Vale and Don Hernando are. Use a feminine form for Vale and a masculine form for Don Hernando.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "estar",
+        "tense": "presente",
+        "person": "él/ella"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "cansada",
+          "contenta",
+          "ocupada",
+          "nerviosa",
+          "tranquila",
+          "aburrida",
+          "enferma"
+        ],
+        "label": "a feminine -a adjective for Vale"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "cansado",
+          "contento",
+          "ocupado",
+          "nervioso",
+          "tranquilo",
+          "aburrido",
+          "enfermo",
+          "amable"
+        ],
+        "label": "an adjective for Don Hernando"
+      }
+    ],
+    "model": "Vale está cansada, pero está contenta. Don Hernando está ocupado.",
+    "focus": "g:adjective-agreement",
+    "requires": [
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "l:cansado",
+      "l:contento",
+      "l:estar",
+      "l:ocupado",
+      "p:senor-don-article"
+    ]
+  },
+  {
+    "id": "w-u02-20",
+    "unit": "u02",
+    "prompt": "Tell Don Hernando that Vale and Mariana are happy (two women, so plural -as), and say how you are.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "containsAny",
+        "words": [
+          "nerviosas",
+          "cansadas",
+          "ocupadas",
+          "contentas",
+          "aburridas",
+          "tranquilas",
+          "enfermas"
+        ],
+        "label": "a plural feminine adjective (-as)"
+      },
+      {
+        "type": "verbForm",
+        "inf": "estar",
+        "tense": "presente",
+        "person": "yo",
+        "label": "say how you are: estoy"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Vale y Mariana están contentas. Yo estoy cansado y ocupado.",
+    "focus": "g:adjective-agreement",
+    "requires": [
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "l:cansado",
+      "l:contento",
+      "l:estar",
+      "l:ocupado"
+    ]
   }
 ]
