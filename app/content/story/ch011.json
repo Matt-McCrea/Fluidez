@@ -2,12 +2,8 @@
   "id": "ch011",
   "unit": "u05",
   "title": "Nadie sabe nada",
-  "text": "Tomás pregunta a todos: a Vale, a doña Marta, al señor de la tienda de la esquina. Nadie sabe nada.\nTomás: Vale, ¿quién es el hombre de la foto?\nVale: No sé, Tomás. Nunca vi esa foto.\nTomás: Don Hernando, usted conoce a todo el barrio.\nHernando: ¿Yo? No, mijo. Yo aquí no conozco a nadie.\nVale: ¡Don Hernando! Usted conoce a todo el mundo.\nTomás: ¿Y qué edad tiene él en la foto? ¿Veinte años?\nHernando: No sé su edad. No sé su nombre. No sé nada.\nSimón: ¡No sé nada! ¡No sé nada!\nTomás: ¿Era un amigo de Rosa? ¿Un cliente?\nHernando: Era un muchacho tímido. Muy trabajador. No era perezoso como Simón. Y Rosa...\nHernando no termina la frase.\nTomás: ¿Y Rosa qué, don Hernando?\nHernando: Nada, mijo. Hoy pago yo los tintos. Soy un hombre generoso.\nVale: ¿Usted? ¿Generoso? Usted nunca paga.\nHernando deja la plata en la mesa y sale del café. Son las cuatro de la tarde. Hernando nunca sale antes de las seis.\nVale mira la foto. Después mira a Tomás.\nVale: Qué raro, Tomás. Tú eres trabajador, como Rosa. Y un poco tímido... como él.\nTomás mira la foto otra vez. Atrás, escrito a mano, hay un año: 1978.\nTomás: Quedan veinticinco días para el trato. Y ahora tengo dos preguntas: ¿quién es él? ¿Y qué pasó en 1978?",
+  "text": "Tomás pregunta a todos: a doña Marta, al señor de la tienda de la esquina. Nadie sabe nada.\nTomás: Don Hernando, usted conoce a todo el barrio. ¿Quién es el hombre de la foto?\nHernando: ¿Yo? No, mijo. Yo aquí no conozco a nadie.\nVale: ¡Don Hernando! Usted conoce a todo el mundo.\nHernando: No sé nada, mijo.\nSimón: ¡No sé nada! ¡No sé nada!\nTomás: ¿Era un amigo de Rosa?\nHernando: Era un muchacho tímido. Muy trabajador. No era perezoso como Simón. Y Rosa...\nHernando no termina la frase.\nTomás: ¿Y Rosa qué, don Hernando?\nHernando: Nada, mijo. Hoy pago yo los tintos.\nVale: ¿Usted? Usted nunca paga.\nHernando deja la plata en la mesa y sale del café. Son las cuatro de la tarde. Hernando nunca sale antes de las seis.\nVale: Qué raro, Tomás. Tú eres trabajador, como Rosa. Y un poco tímido... como él.\nAtrás de la foto, escrito a mano, hay un año: 1978.\nTomás: Quedan veinticinco días para el trato. Y ahora tengo dos preguntas: ¿quién es él? ¿Y qué pasó en 1978?",
   "gloss": [
-    {
-      "es": "Nunca vi esa foto",
-      "en": "I've never seen that photo"
-    },
     {
       "es": "a todo el barrio",
       "en": "the whole neighbourhood"
@@ -49,12 +45,16 @@
       "en": "How strange"
     },
     {
-      "es": "Atrás, escrito a mano",
-      "en": "On the back, handwritten"
+      "es": "Atrás de la foto, escrito a mano",
+      "en": "On the back of the photo, handwritten"
     },
     {
       "es": "Quedan veinticinco días para el trato",
       "en": "There are twenty-five days left on the bet"
+    },
+    {
+      "es": "Usted nunca paga",
+      "en": "You never pay"
     }
   ],
   "questions": [
@@ -120,7 +120,7 @@
       "answer": 0
     },
     {
-      "q": "Why does Vale laugh at Hernando being «generoso»?",
+      "q": "Why is Vale surprised when Hernando offers to pay for the coffees?",
       "options": [
         "He never pays",
         "He is poor",
@@ -130,12 +130,12 @@
       "answer": 0
     },
     {
-      "q": "How old does Tomás guess the young man is?",
+      "q": "Who does Hernando compare the young man with?",
       "options": [
-        "About twenty",
-        "About fifty",
-        "Seventy-one",
-        "Thirty-four"
+        "Simón: the young man wasn't lazy like him",
+        "Tomás's father",
+        "Don Hernando himself",
+        "Vale"
       ],
       "answer": 0
     }
@@ -146,24 +146,18 @@
     "c:no-hay-nada",
     "c:no-se",
     "c:tengo",
-    "c:tienes",
     "g:gender-articles",
     "g:negation-words",
     "g:present-ar",
     "g:present-er-ir",
-    "g:preterite-er-ir",
     "g:questions",
     "g:ser-identity",
-    "g:stem-boot",
     "g:yo-irregular",
     "p:para-inf",
     "p:personal-a",
-    "p:possessives-basic",
     "p:quantifiers-basic",
     "p:question-word-order",
-    "p:senor-don-article",
-    "p:tener-anos",
-    "p:time-sequence-basic"
+    "p:senor-don-article"
   ],
   "lexemes": [
     "l:ahora",
@@ -174,27 +168,21 @@
     "l:año",
     "l:barrio",
     "l:café",
-    "l:cliente",
     "l:comer",
     "l:conocer",
     "l:dejar",
-    "l:después",
     "l:día",
-    "l:edad",
     "l:escribir",
     "l:esquina",
     "l:foto",
     "l:frase",
-    "l:generoso",
     "l:hombre",
     "l:hoy",
     "l:mano",
     "l:mesa",
     "l:mijo",
-    "l:mirar",
     "l:muchacho",
     "l:mundo",
-    "l:nombre",
     "l:pagar",
     "l:pasar",
     "l:perezoso",
@@ -216,8 +204,6 @@
     "l:tinto",
     "l:trabajador",
     "l:trato",
-    "l:tímido",
-    "l:ver",
-    "l:vez"
+    "l:tímido"
   ]
 }
