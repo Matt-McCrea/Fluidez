@@ -39,7 +39,7 @@
       "en": "Hugs,"
     }
   ],
-  "rule": "A message has three parts: hello, the point, goodbye. Spanish picks each one by who is reading.\n\nHello. To someone you don't know: *Estimado señor Rojas:* or *Estimada señora Rojas:*. To someone close: *Querido* or *Querida* plus the name. The ending matches the reader, not you. After the greeting, Spanish puts a colon where English puts a comma.\n\nThe point. Once you start with *usted*, stay there: *su comentario*, *le*, *lo*, *la*. English has one you for everybody, so it never has to choose; Spanish readers notice a switch.\n\nGoodbye. Formal: *Quedo atento a su respuesta* (*atenta* if you're a woman, *atentos* for a team), *Gracias de antemano*. To friends: *Un abrazo*, *Saludos*.\n\nEnglish says Dear to everyone. Spanish never says *Querido* to a stranger.",
+  "rule": "A message has three parts: hello, the point, goodbye. Spanish picks each one by who is reading.\n\nHello. To someone you don't know: *Estimado señor Rojas:* or *Estimada señora Rojas:*. Colombian work emails often just open with *Cordial saludo*. To someone close: *Querido* or *Querida* plus the name. The ending matches the reader, not you. After the greeting, Spanish puts a colon where English puts a comma.\n\nThe point. Once you start with *usted*, stay there: *su comentario*, *le*, *lo*, *la*. English has one you for everybody, so it never has to choose; Spanish readers notice a switch.\n\nGoodbye. Formal: *Quedo atento a su respuesta* (*atenta* if you're a woman, *atentos* for a team), *Gracias de antemano*. To friends: *Un abrazo*, *Saludos*.\n\nEnglish says Dear to everyone. Spanish never says *Querido* to a stranger.",
   "smallPrint": "Teachers call this written register: the fixed openings and closings of letters and emails (*fórmulas de saludo y despedida*).",
   "readAndPick": [
     {
@@ -103,12 +103,12 @@
       "answer": 0
     },
     {
-      "es": "Buenos días, señora Rojas:",
+      "es": "Un abrazo, Vale",
       "options": [
-        "Good morning, Mr Rojas,",
-        "Good morning, Mrs Rojas,"
+        "Hugs, Vale (to a friend)",
+        "Yours sincerely, Vale (formal)"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "es": "Lo esperamos pronto en el café.",

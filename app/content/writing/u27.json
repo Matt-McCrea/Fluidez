@@ -2,14 +2,14 @@
   {
     "id": "w-u27-01",
     "unit": "u27",
-    "prompt": "Answer a customer's online review of the café. She is an older stranger called Patricia Gómez, so use usted. Open with a formal greeting, thank her for her comment and end by saying you look forward to her reply.",
+    "prompt": "Answer a customer's kind online review of the café. He is a stranger called Andrés Cárdenas, and he loved Vale's cheese bread, so use usted. Open with a formal greeting, thank him for his comment and end by saying you look forward to his reply.",
     "minWords": 25,
     "maxWords": 60,
     "constraints": [
       {
         "type": "regex",
-        "pattern": "^\\s*(estimada|buenas|buenos|cordial)",
-        "label": "open with a formal greeting: Estimada señora Gómez:"
+        "pattern": "^\\s*(estimad[oa]s?|buen[oa]s|cordial)",
+        "label": "open with a formal greeting: Estimado señor Cárdenas:"
       },
       {
         "type": "containsAny",
@@ -18,7 +18,7 @@
           "quedo atenta",
           "quedamos atentos"
         ],
-        "label": "close with quedo atento/atenta a su respuesta"
+        "label": "close with quedo atento (atenta if you're a woman) a su respuesta"
       },
       {
         "type": "avoidsAny",
@@ -31,43 +31,40 @@
         "label": "usted, not tú"
       }
     ],
-    "model": "Buenos días, señora Gómez:\nMuchas gracias por su comentario. Lo siento mucho, y la esperamos otra vez en el café. Esperamos que su próxima visita sea mejor. Cordial saludo.\nQuedo atento a su respuesta.",
+    "model": "Estimado señor Cárdenas:\nMuchas gracias por su comentario tan amable. Vale está muy contenta, y el pan de queso lo espera todos los días a las siete. Esperamos verlo pronto en el café.\nQuedo atento a su respuesta.",
     "focus": "g:written-register-a2",
     "requires": [
       "c:cordial-saludo",
       "c:gracias-de-nada",
-      "c:hola-buenos-dias",
       "c:quedo-atento",
-      "c:sentido-pesame",
       "g:adjective-agreement",
       "g:direct-objects",
+      "g:estar-location-states",
       "g:gender-articles",
+      "g:object-pronoun-position",
       "g:present-ar",
-      "g:ser-identity",
-      "g:subj-irregulars",
-      "g:subj-wishes",
-      "g:that-clauses",
+      "l:amable",
       "l:atento",
-      "l:bueno",
       "l:café",
       "l:comentario",
-      "l:cordial",
+      "l:contento",
       "l:día",
       "l:esperar",
-      "l:mejor",
-      "l:próximo",
+      "l:estar",
+      "l:estimado",
+      "l:pan",
+      "l:pronto",
       "l:quedar",
+      "l:queso",
       "l:respuesta",
-      "l:saludar",
-      "l:sentir",
-      "l:ser",
-      "l:señora",
-      "l:vez",
-      "l:visita",
+      "l:señor",
+      "l:ver",
       "p:gracias-por",
-      "p:otro-no-article",
       "p:possessives-basic",
-      "p:senor-don-article"
+      "p:quantifiers-basic",
+      "p:telling-time",
+      "p:todos-los-dias",
+      "p:veces-al"
     ]
   },
   {
@@ -147,7 +144,7 @@
   {
     "id": "w-u27-03",
     "unit": "u27",
-    "prompt": "Text your friend Mariana, someone your age. Say you are writing to tell her some news: you have a new job in a café. Ask her to call you tonight.",
+    "prompt": "Text your friend Mariana, someone your age. Say you are writing to tell her some news: Vale is giving a cooking class at the café on Saturday, and Mariana is invited. Ask her to call you tonight.",
     "minWords": 25,
     "maxWords": 60,
     "constraints": [
@@ -170,41 +167,43 @@
         "n": 3
       }
     ],
-    "model": "Mariana, te escribo para decirte algo importante. Ya tengo trabajo nuevo en un café, cerca de la plaza. ¿Me puedes llamar esta noche? Quiero hablar contigo.",
+    "model": "Mariana, te escribo para contarte algo. El sábado Vale va a dar una clase de cocina en el café, y tú estás invitada. ¿Me puedes llamar esta noche? Quiero hablar contigo.",
     "focus": "p:le-escribo-para",
     "requires": [
+      "c:bien-y-tu",
       "c:me-puede-ayudar",
       "c:quiero",
-      "c:tengo",
+      "g:estar-location-states",
+      "g:estar-participle",
       "g:gender-articles",
+      "g:ir-a-plans",
       "g:object-pronoun-position",
       "g:prep-pronouns",
       "g:present-er-ir",
       "g:stem-boot",
       "g:verb-infinitive",
-      "g:yo-irregular",
       "l:café",
-      "l:cerca",
-      "l:decir",
+      "l:clase",
+      "l:cocina",
+      "l:contar",
+      "l:dar",
       "l:escribir",
+      "l:estar",
       "l:hablar",
-      "l:importante",
+      "l:invitar",
+      "l:ir",
       "l:llamar",
       "l:noche",
-      "l:nuevo",
-      "l:plaza",
       "l:poder",
       "l:querer",
-      "l:tener",
-      "l:trabajo",
-      "p:cerca-de",
+      "l:sábado",
+      "p:days-el-lunes",
       "p:demonstratives-basic",
       "p:indefinites-basic",
       "p:le-escribo-para",
       "p:me-te-nos-objects",
       "p:para-inf",
       "p:para-inf-purpose",
-      "p:position-de",
       "p:request-ladder"
     ]
   },
@@ -231,7 +230,7 @@
         "n": 3
       }
     ],
-    "model": "Vale, ven temprano el sábado para que me ayudes con los postres nuevos. Llega a las siete para que empecemos pronto. Te espero en el café.",
+    "model": "Vale, ven temprano el sábado para que me ayudes con las tortas nuevas. Llega a las siete para que empecemos pronto. Te espero en el café.",
     "focus": "g:para-que",
     "requires": [
       "g:adjective-agreement",
@@ -246,10 +245,10 @@
       "l:esperar",
       "l:llegar",
       "l:nuevo",
-      "l:postre",
       "l:pronto",
       "l:sábado",
       "l:temprano",
+      "l:torta",
       "l:venir",
       "p:days-el-lunes",
       "p:me-te-nos-objects",
@@ -259,7 +258,7 @@
   {
     "id": "w-u27-05",
     "unit": "u27",
-    "prompt": "Reply to Don Hernando's text. He says he will come to the café every morning from now on. Address him as usted. Tell him you are glad he is there again and that it is great that he sits by the window.",
+    "prompt": "Reply to don Hernando's text. He says that from now on he and a friend from the market will play chess at the café every morning. Address him as usted. Tell him you are glad they are coming, and that it is great that they sit by the window.",
     "minWords": 25,
     "maxWords": 60,
     "constraints": [
@@ -267,7 +266,7 @@
         "type": "subjunctiveAfter",
         "trigger": "me alegra que",
         "within": 3,
-        "label": "after me alegra que, the verb changes: vengas"
+        "label": "after me alegra que, the verb changes: vengan"
       },
       {
         "type": "regex",
@@ -279,41 +278,50 @@
         "n": 3
       }
     ],
-    "model": "Don Hernando, me alegra que usted esté aquí otra vez. Qué bueno que se siente cerca de la ventana. Lo espero mañana con un tinto caliente, como siempre.",
+    "model": "Don Hernando, me alegra que vengan a jugar aquí todas las mañanas. Qué bueno que se sienten cerca de la ventana, porque ahí hay más luz. Los espero mañana con dos tintos calientes, como siempre.",
     "focus": "g:subj-emotion-intro",
     "requires": [
+      "c:hay",
+      "c:porque",
       "c:que-bien",
       "c:que-bueno-que",
+      "g:adjective-agreement",
+      "g:cause-result",
       "g:direct-objects",
-      "g:estar-location-states",
       "g:gender-articles",
       "g:gustar-full",
+      "g:hay-vs-esta",
       "g:present-ar",
       "g:reflexive-routine",
       "g:subj-emotion-intro",
+      "g:subj-irregulars",
       "g:subj-wanting",
       "g:that-clauses",
+      "l:ahí",
       "l:alegrar",
       "l:aquí",
       "l:bueno",
       "l:caliente",
       "l:cerca",
       "l:esperar",
-      "l:estar",
+      "l:jugar",
+      "l:luz",
       "l:mañana",
       "l:qué",
       "l:sentarse",
       "l:siempre",
       "l:tinto",
+      "l:venir",
       "l:ventana",
-      "l:vez",
       "p:aqui-ahi-alla",
       "p:cerca-de",
       "p:don-dona-nombre",
       "p:frequency-scale",
-      "p:otro-no-article",
+      "p:me-encanta-que",
       "p:position-de",
-      "p:senor-don-article"
+      "p:senor-don-article",
+      "p:todos-los-dias",
+      "p:veces-al"
     ]
   },
   {
@@ -326,7 +334,7 @@
       {
         "type": "regex",
         "pattern": "\\bque (te diviertas|descanses|la pases bien|te vaya bien)\\b",
-        "label": "wish her well: Que te diviertas / Que descanses"
+        "label": "wish her well with que: Que te diviertas, Que descanses"
       },
       {
         "type": "minSentences",
@@ -424,7 +432,7 @@
           "vale la pena",
           "lo recomiendo totalmente"
         ],
-        "label": "recommend it: lo recomiendo / vale la pena"
+        "label": "recommend it: lo recomiendo, or vale la pena"
       },
       {
         "type": "minSentences",
@@ -490,7 +498,7 @@
         "label": "usted, not tú"
       }
     ],
-    "model": "Buenos días, señor Pérez:\nLe adjunto mi currículum y una carta. Quiero trabajar con ustedes y estoy libre todas las tardes de la semana. Gracias de antemano por su atención y por su tiempo.\nAtentamente,\nTomás",
+    "model": "Buenos días, señor Pérez:\nLe adjunto mi currículum y una carta. Quiero trabajar con ustedes y estoy libre todas las tardes de la semana. Gracias de antemano por su atención y por su tiempo.\nAtentamente.",
     "focus": "c:adjunto",
     "requires": [
       "c:adjunto",
@@ -600,7 +608,7 @@
         "n": 3
       }
     ],
-    "model": "Mariana, acabo de leer tu artículo. Me gustó mucho. Todavía no te envío mis comentarios, pero te escribo mañana. Ya tengo algunas ideas buenas para el final.",
+    "model": "Mariana, acabo de leer tu borrador. Me gustó mucho la parte de Hernando. Todavía no te he mandado mis comentarios, pero te escribo mañana. Ya tengo algunas ideas buenas para el final.",
     "focus": "g:acabar-de-ya-todavia",
     "requires": [
       "c:tengo",
@@ -609,21 +617,23 @@
       "g:gender-articles",
       "g:gustar-basic",
       "g:indefinites",
+      "g:perfecto-experience",
       "g:present-ar",
       "g:present-er-ir",
       "g:preterite-ar",
       "g:yo-irregular",
       "l:acabar",
-      "l:artículo",
+      "l:borrador",
       "l:buena",
       "l:comentario",
-      "l:enviar",
       "l:escribir",
       "l:final",
       "l:gustar",
       "l:idea",
       "l:leer",
+      "l:mandar",
       "l:mañana",
+      "l:parte",
       "l:tener",
       "p:me-te-nos-objects",
       "p:para-inf",
@@ -634,7 +644,7 @@
   {
     "id": "w-u27-12",
     "unit": "u27",
-    "prompt": "Write the first lines of the café's newsletter for your regular customers. Greet them, say how glad you are that they come every week, and say you hope with a bit of luck to open a second floor.",
+    "prompt": "Write the first lines of the café's newsletter for the neighbours. Greet them, say how great it is that they come every week, and say that with a bit of luck the café will open on Sundays too in December.",
     "minWords": 25,
     "maxWords": 60,
     "constraints": [
@@ -656,38 +666,38 @@
         "n": 3
       }
     ],
-    "model": "Queridos clientes:\nQué bueno que vengan al café cada semana. Gracias por su comentario. Con un poco de suerte, abrimos un segundo piso este año. Los esperamos a todos. Un abrazo,\nTomás",
+    "model": "Queridos vecinos:\nQué bueno que vengan al café todas las semanas. Sin ustedes, esta esquina no es la misma. Con un poco de suerte, en diciembre abrimos también los domingos. Los esperamos a todos.\nUn abrazo,\nVale y Tomás",
     "focus": "g:subj-emotion-intro",
     "requires": [
       "c:con-un-poco-de-suerte",
       "c:que-bien",
       "c:que-bueno-que",
       "c:un-abrazo",
-      "g:cada-cualquier",
       "g:direct-objects",
       "g:gender-articles",
+      "g:prep-pronouns",
       "g:present-ar",
       "g:present-er-ir",
+      "g:ser-identity",
       "g:subj-wanting",
       "l:abrazo",
       "l:abrir",
-      "l:año",
       "l:bueno",
       "l:café",
-      "l:cliente",
-      "l:comentario",
+      "l:diciembre",
+      "l:domingo",
       "l:esperar",
-      "l:piso",
+      "l:esquina",
       "l:querer",
       "l:qué",
       "l:semana",
+      "l:ser",
       "l:suerte",
+      "l:vecino",
       "l:venir",
+      "p:days-el-lunes",
       "p:demonstratives-basic",
-      "p:gracias-por",
-      "p:ordinal-floor",
-      "p:ordinals-primer-tercer",
-      "p:possessives-basic",
+      "p:todos-los-dias",
       "p:veces-al"
     ]
   }

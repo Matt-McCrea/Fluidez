@@ -97,16 +97,16 @@
       "npcEn": "Hahaha. All right, I'll come on Saturday. But far from the bird, please.",
       "intent": "Say how great that she's coming, and close the message formally.",
       "accept": [
-        "¡Qué bueno que viene el sábado! Quedo atento. Atentamente, Tomás.",
-        "Qué bueno que viene. Simón va a estar en la cocina. Atentamente, Tomás Herrera.",
-        "¡Qué bueno que viene! Gracias de antemano. Un cordial saludo, Tomás."
+        "¡Qué bueno que venga el sábado! Simón va a estar en la cocina. Atentamente, Tomás.",
+        "Qué bueno que venga. La esperamos en la mesa de la ventana, lejos de Simón. Saludos, Tomás.",
+        "¡Qué bueno que venga! Quedo atento a su visita. Un cordial saludo, Tomás."
       ],
       "require": [
         {
-          "type": "regex",
-          "pattern": "qu[eé] bueno que",
-          "flags": "i",
-          "label": "react to her news: qué bueno que..."
+          "type": "subjunctiveAfter",
+          "trigger": "bueno que",
+          "within": 2,
+          "label": "react to her news: qué bueno que venga"
         },
         {
           "type": "containsAny",
@@ -130,7 +130,6 @@
     "c:bien-y-tu",
     "c:cordial-saludo",
     "c:entonces-bueno",
-    "c:gracias-de-antemano",
     "c:gracias-de-nada",
     "c:hay",
     "c:hola-buenos-dias",
@@ -144,6 +143,7 @@
     "c:quedo-atento",
     "c:quiero",
     "c:sentido-pesame",
+    "c:un-abrazo",
     "c:voy-vas",
     "g:adjective-agreement",
     "g:commands-usted",
@@ -173,7 +173,6 @@
     "g:that-clauses",
     "g:verb-infinitive",
     "l:alegrar",
-    "l:antemano",
     "l:atentamente",
     "l:atento",
     "l:ayer",
@@ -208,6 +207,7 @@
     "l:ir",
     "l:lejos",
     "l:llegar",
+    "l:mesa",
     "l:oportunidad",
     "l:pena",
     "l:perdón",
@@ -228,7 +228,9 @@
     "l:tarde",
     "l:tinto",
     "l:venir",
+    "l:ventana",
     "l:vez",
+    "l:visita",
     "l:volver",
     "p:bien-bueno",
     "p:bien-mal-vs-bueno-malo",

@@ -1,66 +1,124 @@
 {
   "node": "g:subj-emotion-intro",
   "hook": {
-    "line": "Tomás is answering the café's online reviews, and a good reply starts with how the review made you feel. Spanish reacts to what other people do with the same wish forms you used for hopes.",
-    "es": "Me alegra que a usted le guste nuestro café.",
-    "en": "I'm glad you like our coffee. (formal)"
+    "line": "Mariana has sent round her draft about Altamira, and she wants comments. A good comment starts with how the piece made you feel. Spanish reacts to what other people do with the same wish forms you used for hopes.",
+    "es": "¡Qué bueno que escribas sobre la cuadra!",
+    "en": "It's great that you're writing about the block! (to a friend)"
   },
   "examples": [
-    { "es": "Me alegra que Vale esté aquí.", "en": "I'm glad Vale is here." },
-    { "es": "Me molesta que Simón grite por la mañana.", "en": "It bothers me that Simón yells in the morning." },
-    { "es": "¡Qué bueno que tengas tiempo hoy!", "en": "It's great that you have time today! (to a friend)" },
-    { "es": "¿Te molesta que yo abra la ventana?", "en": "Do you mind if I open the window? (to a friend)" },
-    { "es": "A don Hernando le alegra que Tomás abra temprano.", "en": "Don Hernando is glad that Tomás opens early." },
-    { "es": "Nos molesta que Altamira no conteste.", "en": "It bothers us that Altamira doesn't answer." },
-    { "es": "Qué bueno que no llueva hoy.", "en": "It's great that it isn't raining today." },
-    { "es": "Me alegra estar aquí.", "en": "I'm glad to be here." }
+    {
+      "es": "Me alegra que Vale esté aquí.",
+      "en": "I'm glad Vale is here."
+    },
+    {
+      "es": "Me molesta que Simón grite por la mañana.",
+      "en": "It bothers me that Simón yells in the morning."
+    },
+    {
+      "es": "¡Qué bueno que tengas tiempo hoy!",
+      "en": "It's great that you have time today! (to a friend)"
+    },
+    {
+      "es": "¿Te molesta que yo abra la ventana?",
+      "en": "Do you mind if I open the window? (to a friend)"
+    },
+    {
+      "es": "A don Hernando le alegra que Tomás abra temprano.",
+      "en": "Don Hernando is glad that Tomás opens early."
+    },
+    {
+      "es": "Nos molesta que Altamira no conteste.",
+      "en": "It bothers us that Altamira doesn't answer."
+    },
+    {
+      "es": "Qué bueno que no llueva hoy.",
+      "en": "It's great that it isn't raining today."
+    },
+    {
+      "es": "Me alegra estar aquí.",
+      "en": "I'm glad to be here."
+    }
   ],
   "rule": "*Me alegra* and *me molesta* work just like *me gusta*: the thing that happens does the gladdening or the bothering, and *me*, *te*, *le*, *nos*, *les* say who feels it.\n\nWhen the thing is someone else's action, add *que* and use the wish form: *Me alegra que Vale esté aquí.* *Me molesta que Simón grite.*\n\nThis is the surprise. Vale really is here; it's a fact. English just says is. Spanish still uses the wish form, because you're reacting to the fact, not reporting it.\n\n*¡Qué bueno que...!* (it's great that...) is the warm, everyday version: *¡Qué bueno que tengas tiempo!*\n\nSame rule as with hopes: if it's your own action, there's no *que*, just the plain verb. *Me alegra estar aquí.*",
   "smallPrint": "Teachers call this the subjunctive after emotion (*subjuntivo de emoción*). You'll also hear *Me alegro de que estés bien*, which means the same.",
   "readAndPick": [
     {
       "es": "Me alegra que tú estés aquí.",
-      "options": ["I'm glad to be here.", "I'm glad you're here. (to a friend)", "I'm glad she's here."],
+      "options": [
+        "I'm glad to be here.",
+        "I'm glad you're here. (to a friend)",
+        "I'm glad she's here."
+      ],
       "answer": 1
     },
     {
       "es": "Me alegra estar aquí.",
-      "options": ["I'm glad to be here.", "I'm glad you're here. (to a friend)"],
+      "options": [
+        "I'm glad to be here.",
+        "I'm glad you're here. (to a friend)"
+      ],
       "answer": 0
     },
     {
       "es": "Me molesta que los clientes no saluden.",
-      "options": ["It bothers the customers that I don't say hello.", "It bothers me to not say hello.", "It bothers me that the customers don't say hello."],
+      "options": [
+        "It bothers the customers that I don't say hello.",
+        "It bothers me to not say hello.",
+        "It bothers me that the customers don't say hello."
+      ],
       "answer": 2
     },
     {
       "es": "Nos alegra que ustedes vengan el sábado.",
-      "options": ["I'm glad you all are coming on Saturday.", "We're glad you all are coming on Saturday.", "We're glad to come on Saturday."],
+      "options": [
+        "I'm glad you all are coming on Saturday.",
+        "We're glad you all are coming on Saturday.",
+        "We're glad to come on Saturday."
+      ],
       "answer": 1
     },
     {
       "es": "¿Te molesta que yo abra la ventana?",
-      "options": ["Do you mind opening the window? (to a friend)", "Do you mind if I open the window? (to a friend)"],
+      "options": [
+        "Do you mind opening the window? (to a friend)",
+        "Do you mind if I open the window? (to a friend)"
+      ],
       "answer": 1
     },
     {
       "es": "A Vale le molesta que Simón coma su pan.",
-      "options": ["It bothers Vale that Simón eats her bread.", "It bothers Simón that Vale eats his bread.", "It bothers me that Simón eats Vale's bread."],
+      "options": [
+        "It bothers Vale that Simón eats her bread.",
+        "It bothers Simón that Vale eats his bread.",
+        "It bothers me that Simón eats Vale's bread."
+      ],
       "answer": 0
     },
     {
       "es": "Qué bueno que ustedes puedan venir.",
-      "options": ["It's great that you can come. (to a friend)", "It's great that I can come.", "It's great that you all can come."],
+      "options": [
+        "It's great that you can come. (to a friend)",
+        "It's great that I can come.",
+        "It's great that you all can come."
+      ],
       "answer": 2
     },
     {
       "es": "Le alegra que Tomás abra temprano.",
-      "options": ["I'm glad Tomás opens early.", "Tomás is glad to open early.", "She's glad Tomás opens early."],
+      "options": [
+        "I'm glad Tomás opens early.",
+        "Tomás is glad to open early.",
+        "She's glad Tomás opens early."
+      ],
       "answer": 2
     },
     {
       "es": "Me alegra que usted esté aquí.",
-      "options": ["I'm glad you're here. (formal)", "I'm glad you all are here.", "You're glad I'm here. (formal)"],
+      "options": [
+        "I'm glad you're here. (formal)",
+        "I'm glad you all are here.",
+        "You're glad I'm here. (formal)"
+      ],
       "answer": 0
     }
   ],
@@ -74,13 +132,17 @@
     {
       "prompt": "Pick *tienes* or *tengas* and type the whole sentence, to a friend: *¡Qué bueno que ___ tiempo hoy!*",
       "answer": "¡Qué bueno que tengas tiempo hoy!",
-      "accept": ["Qué bueno que tengas tiempo hoy."],
+      "accept": [
+        "Qué bueno que tengas tiempo hoy."
+      ],
       "why": "*Qué bueno que* is a reaction too, so *tengas*."
     },
     {
       "prompt": "Type in Spanish: It bothers me that Simón yells in the morning.",
       "answer": "Me molesta que Simón grite por la mañana.",
-      "accept": ["Me molesta que Simón grite en la mañana."],
+      "accept": [
+        "Me molesta que Simón grite en la mañana."
+      ],
       "why": "*Me molesta* works like *me gusta*, and *grita* becomes the wish form *grite*."
     },
     {
@@ -110,7 +172,10 @@
     {
       "prompt": "Say it to you all instead: *Qué bueno que puedas venir.*",
       "answer": "Qué bueno que ustedes puedan venir.",
-      "accept": ["¡Qué bueno que ustedes puedan venir!", "Qué bueno que puedan venir."],
+      "accept": [
+        "¡Qué bueno que ustedes puedan venir!",
+        "Qué bueno que puedan venir."
+      ],
       "why": "For *ustedes*, *puedas* becomes *puedan*."
     }
   ],

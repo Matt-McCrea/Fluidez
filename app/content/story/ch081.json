@@ -2,7 +2,7 @@
   "id": "ch081",
   "unit": "u27",
   "title": "Una estrella",
-  "text": "«Una estrella. El café es oscuro, el ajiaco pica y el loro me picó. No lo recomiendo a nadie».\nLa reseña era de un usuario, ElGenio2026.\nVale: ¿Oscuro? ¡Este café tiene la ventana más grande de la cuadra!\nHernando: Y el ajiaco no pica.\nSimón: ¡A nadie! ¡A nadie!\nTomás: Simón, ¿tú le picaste el dedo a alguien?\nSimón miró la pared y no contestó.\nA las nueve, doce usuarios más calificaron el café con una estrella, en la página.\nVale: Esas palabras hieren, Tomás. Yo me levanto a las cuatro para hacer ese pan.\nTomás: Esa gente está equivocada. Tu pan es el mejor de Bogotá. Y mira: usuarios de hoy, sin fotos, sin seguidores. Todos dicen «oscuro».\nHernando: Posiblemente es un solo genio con doce nombres.\nEn la página de ElGenio2026 había un enlace. Tomás tocó el enlace, y apareció Hoteles Altamira.\nHernando: ¡Ahí está el genio! Eso va en el artículo de Mariana.\nTomás contestó las doce reseñas con el mismo saludo y la misma despedida: «Cordial saludo. Posiblemente usted está equivocado de café. Lo esperamos con un tinto. Atentamente, Tomás Herrera».\nVale escribió su primer correo para los clientes. El saludo: «¡Hola, vecinos!». La despedida: «Con cariño, Vale y Simón».\nVale también puso un aviso en la puerta: «Aviso: el ajiaco no pica. El loro sí».\nPor la noche, el correo de Vale tenía ochenta seguidores, y Hernando calificó el ajiaco con cinco estrellas.\nVale: Lo que me hiere no es la reseña. Altamira ya no quiere comprar. Quiere sacarnos de aquí.",
+  "text": "«Una estrella. El café es oscuro, el ajiaco pica y el loro me picó. No lo recomiendo a nadie».\nLa reseña era de un usuario, ElGenio2026.\nVale: ¿Oscuro? ¡Este café tiene la ventana más grande de la cuadra!\nHernando: Y el ajiaco no pica.\nSimón: ¡A nadie! ¡A nadie!\nTomás: Simón, ¿tú le picaste el dedo a alguien?\nSimón miró la pared y no contestó.\nA las nueve, otros doce usuarios calificaron el café con una estrella.\nVale: Esas palabras hieren, Tomás. Yo me levanto a las cuatro para hacer ese pan.\nTomás: Esa gente está equivocada. Tu pan es el mejor de Bogotá. Y mira: usuarios de hoy, sin fotos, sin seguidores. Todos dicen «oscuro».\nHernando: Posiblemente es un solo genio con trece nombres.\nEn la página de ElGenio2026 había un enlace. Tomás tocó el enlace, y apareció Hoteles Altamira.\nHernando: ¡Ahí está el genio! Eso va en el artículo de Mariana.\nTomás contestó las trece reseñas con el mismo saludo y la misma despedida: «Cordial saludo. Posiblemente usted está equivocado de café. Lo esperamos con un tinto. Atentamente, Tomás Herrera».\nVale escribió su primer correo para los clientes. El saludo: «¡Hola, vecinos!». La despedida: «Con cariño, Vale y Simón».\nVale también puso un aviso en la puerta: «Aviso: el ajiaco no pica. El loro sí».\nPor la noche, la página del café tenía ochenta seguidores nuevos, y Hernando calificó el ajiaco con cinco estrellas.\nVale: Lo que me hiere no es la reseña. Altamira ya no quiere comprar. Quiere sacarnos de aquí.",
   "gloss": [
     {
       "es": "loro",
@@ -21,8 +21,8 @@
       "en": "Those words hurt"
     },
     {
-      "es": "un solo genio con doce nombres",
-      "en": "one single genius with twelve names"
+      "es": "un solo genio con trece nombres",
+      "en": "one single genius with thirteen names"
     },
     {
       "es": "calificaron el café con una estrella",
@@ -38,7 +38,7 @@
     },
     {
       "es": "Quiere sacarnos de aquí.",
-      "en": "He wants to get us out of here."
+      "en": "It wants to get us out of here."
     }
   ],
   "questions": [
@@ -105,7 +105,7 @@
       "answer": 0
     },
     {
-      "q": "How many followers does Vale's email have by night?",
+      "q": "How many new followers does the café's page have by night?",
       "options": [
         "Twelve",
         "Forty two",
@@ -165,6 +165,7 @@
     "p:me-te-nos-objects",
     "p:ordinal-floor",
     "p:ordinals-primer-tercer",
+    "p:otro-no-article",
     "p:para-inf",
     "p:para-inf-purpose",
     "p:por-la-manana",
@@ -213,6 +214,7 @@
     "l:mirar",
     "l:noche",
     "l:nombre",
+    "l:nuevo",
     "l:oscuro",
     "l:palabra",
     "l:pan",

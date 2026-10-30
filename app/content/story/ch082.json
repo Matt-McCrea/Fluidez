@@ -2,7 +2,7 @@
   "id": "ch082",
   "unit": "u27",
   "title": "Los propietarios",
-  "text": "Mariana entró al café con dos periódicos y una revista debajo del brazo.\nMariana: Los periódicos no quisieron mi artículo. Tienen miedo. Pero esta revista lo publica el domingo.\nVale: ¡Felicitaciones, Mariana!\nHernando: ¿Y sale mi nombre?\nMariana: Sale. Hernando Pacheco, taxista, setenta y dos años.\nHernando: Mis nietos no leen revistas, pero esta sí la van a leer.\nSimón: ¡Taxista! ¡Setenta y dos años!\nA las diez llegó un mensajero con un sobre blanco. Tomás lo abrió y lo leyó para todos.\n«Señor Tomás Herrera: Le escribo en nombre de los propietarios del edificio de la carrera Cuarta. El contrato de arriendo del café termina en seis meses. Los propietarios necesitan el espacio libre para esa fecha. Atentamente, Restrepo y Asociados, abogados».\nNadie habló. Era un golpe muy duro.\nSimón: ¡Quedo atento!\nVale: Simón, hoy no.\nTomás: ¿Los propietarios? Yo soy propietario. Rosa me dejó su mitad.\nMariana: ¿Y la otra mitad? La carta no dice nombres. Me molesta que una carta tan larga no diga nada. Algo esconden.\nHernando: Los abogados de Altamira. Y nosotros, ¿qué recursos tenemos? Un loro, un taxi y un balde.\nVale tomó la mano de Tomás.\nVale: Qué bueno que estés aquí, Tomás. Rosa siempre dijo que su nieto iba a llegar.\nTomás no dijo nada, pero no le soltó la mano.\nMariana: Tengo una amiga fiscal, y me debe un favor. Si alguien firmó por Joaquín, ella puede investigar.\nTomás: ¿Y si Altamira encontró a Joaquín antes que nosotros?",
+  "text": "Mariana entró al café con dos periódicos y una revista debajo del brazo.\nMariana: Los periódicos no quisieron mi artículo. Tienen miedo. Pero esta revista lo publica el domingo.\nVale: ¡Felicitaciones, Mariana!\nHernando: ¿Y sale mi nombre?\nMariana: Sale. Hernando Pacheco, taxista, setenta y dos años.\nHernando: Mis nietos no leen revistas, pero esta sí la van a leer.\nSimón: ¡Taxista! ¡Setenta y dos años!\nA las diez llegó un mensajero con un sobre blanco. Tomás lo abrió y lo leyó para todos.\n«Señor Tomás Herrera: Le escribo en nombre de los propietarios del edificio de la carrera Cuarta. El contrato de arriendo del café termina en seis meses. Los propietarios necesitan el espacio libre para esa fecha. Atentamente, Restrepo y Asociados, abogados».\nNadie habló. Fue un golpe muy duro.\nSimón: ¡Quedo atento!\nVale: Simón, hoy no.\nTomás: ¿Los propietarios? Yo soy propietario. Rosa me dejó su mitad.\nMariana: ¿Y la otra mitad? La carta no dice nombres. Me molesta que una carta tan larga no diga nada. Algo esconden.\nHernando: Los abogados de Altamira. Y nosotros, ¿qué recursos tenemos? Un loro, un taxi y un balde.\nVale tomó la mano de Tomás.\nVale: Qué bueno que estés aquí, Tomás. Rosa siempre dijo que su nieto iba a llegar.\nTomás no dijo nada, pero no le soltó la mano.\nMariana: Tengo una amiga fiscal, y me debe un favor. Si alguien firmó por Joaquín, ella puede investigar.\nTomás: ¿Y si Altamira encontró a Joaquín antes que nosotros?",
   "gloss": [
     {
       "es": "loro",
@@ -29,8 +29,8 @@
       "en": "need the space vacant by that date"
     },
     {
-      "es": "Fue un golpe para todos.",
-      "en": "It was a blow for everyone."
+      "es": "Fue un golpe muy duro.",
+      "en": "It was a very hard blow."
     },
     {
       "es": "Algo esconden.",
@@ -144,7 +144,6 @@
   "hook": "A letter on behalf of \"the owners\" gives the café six months, and nobody knows who owns the other half. Tomorrow the whole block hears about Altamira's hotel, and everybody has something to say.",
   "requires": [
     "c:atentamente",
-    "c:era",
     "c:que-bien",
     "c:que-bueno-que",
     "c:quedo-atento",
@@ -157,7 +156,6 @@
     "g:gender-articles",
     "g:gustar-full",
     "g:imperfect-habitual",
-    "g:imperfect-states",
     "g:indirect-objects",
     "g:ir-a-plans",
     "g:negation-words",
@@ -168,6 +166,7 @@
     "g:preterite-ar",
     "g:preterite-er-ir",
     "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
     "g:preterite-spelling-stem",
     "g:questions",
     "g:reported-past-basic",

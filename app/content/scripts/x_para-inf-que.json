@@ -1,7 +1,7 @@
 {
   "node": "x:para-inf-que",
   "hook": {
-    "line": "Tomás has a letter from Altamira's lawyers and no idea how to answer it, so he goes to see don Hernando. He isn't there to help; he's there to be helped. In Spanish, that difference is one word.",
+    "line": "Tomás has a letter from Altamira's lawyers and no idea how to answer it, so he takes it to don Hernando's table. He isn't there to help; he's there to be helped. In Spanish, that difference is one word.",
     "es": "Don Hernando, vine para que me ayude con una carta.",
     "en": "Don Hernando, I came so that you could help me with a letter. (formal)"
   },
@@ -23,12 +23,12 @@
       "en": "I speak slowly so that my dad understands me."
     },
     {
-      "es": "Llamé a Hernando para preguntarle por el barrio.",
-      "en": "I called Hernando to ask him about the neighbourhood."
+      "es": "Llamo a Hernando para preguntarle por el barrio.",
+      "en": "I'm calling Hernando to ask him about the neighbourhood."
     },
     {
-      "es": "Llamé a Hernando para que me cuente del barrio.",
-      "en": "I called Hernando so he'd tell me about the neighbourhood."
+      "es": "Llamo a Hernando para que me cuente del barrio.",
+      "en": "I'm calling Hernando so he'll tell me about the neighbourhood."
     },
     {
       "es": "Me levanto temprano para abrir el café.",
@@ -39,7 +39,7 @@
       "en": "I get up early so that Vale finds everything ready."
     }
   ],
-  "rule": "Before you write *para*, ask: who does the second thing?\n\nThe same person: *para* plus the plain verb.\n*Vine para ayudar.* I came, I help.\n*Llamé a Hernando para preguntarle.* I called, I ask.\n\nSomeone else: *para que* plus the wish form.\n*Vine para que me ayudes.* I came, you help.\n*Llamé a Hernando para que me cuente.* I called, he tells.\n\nWatch the second pair. Hernando is in both sentences, but in the first one you do the asking. Mentioning a person doesn't change anything; only who acts does.\n\nEnglish blurs it: to help, for you to help, so you can help. Spanish always makes you pick one of two shapes.",
+  "rule": "Before you write *para*, ask: who does the second thing?\n\nThe same person: *para* plus the plain verb.\n*Vine para ayudar.* I came, I help.\n*Llamo a Hernando para preguntarle.* I call, I ask.\n\nSomeone else: *para que* plus the wish form.\n*Vine para que me ayudes.* I came, you help.\n*Llamo a Hernando para que me cuente.* I call, he tells.\n\nWatch the second pair. Hernando is in both sentences, but in the first one you do the asking. Mentioning a person doesn't change anything; only who acts does.\n\nEnglish blurs it: to help, for you to help, so you can help. Spanish always makes you pick one of two shapes.",
   "smallPrint": "Teachers call this the same subject or different subject rule: *para* plus infinitive versus *para que* plus subjunctive.",
   "readAndPick": [
     {
@@ -59,18 +59,18 @@
       "answer": 1
     },
     {
-      "es": "Llamé a Hernando para que me cuente del barrio.",
+      "es": "Llamo a Hernando para que me cuente del barrio.",
       "options": [
-        "I called Hernando to tell him about the neighbourhood.",
-        "I called Hernando so he'd tell me about the neighbourhood."
+        "I'm calling Hernando to tell him about the neighbourhood.",
+        "I'm calling Hernando so he'll tell me about the neighbourhood."
       ],
       "answer": 1
     },
     {
-      "es": "Llamé a Hernando para preguntarle por el barrio.",
+      "es": "Llamo a Hernando para preguntarle por el barrio.",
       "options": [
-        "I called Hernando to ask him about the neighbourhood.",
-        "I called Hernando so he'd ask about the neighbourhood."
+        "I'm calling Hernando to ask him about the neighbourhood.",
+        "I'm calling Hernando so he'll ask about the neighbourhood."
       ],
       "answer": 0
     },
