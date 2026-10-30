@@ -1,0 +1,164 @@
+{
+  "node": "p:agilizar-tramites",
+  "hook": {
+    "line": "The cooperative's paperwork is slow, and Tomás has to explain in writing what helps and what gets in the way. Formal Spanish has tidy verbs for exactly that.",
+    "es": "El nuevo sistema agiliza los trámites.",
+    "en": "The new system speeds up the paperwork."
+  },
+  "examples": [
+    {
+      "es": "El nuevo sistema agiliza los trámites.",
+      "en": "The new system speeds up the paperwork."
+    },
+    {
+      "es": "La lluvia dificultó el rescate.",
+      "en": "The rain hampered the rescue."
+    },
+    {
+      "es": "Una cuenta en línea agiliza el pago.",
+      "en": "An online account speeds up the payment."
+    },
+    {
+      "es": "Las filas largas dificultan el trámite.",
+      "en": "Long lines hamper the procedure."
+    },
+    {
+      "es": "La cooperativa agiliza los trámites de los asociados.",
+      "en": "The cooperative speeds up the members' paperwork."
+    },
+    {
+      "es": "Esta beca posibilita el acceso a la universidad.",
+      "en": "This grant makes access to university possible."
+    }
+  ],
+  "rule": "In formal writing, a thing is often the subject, and the verb says what it does to a process.\n\n*Agilizar* = make it quicker and smoother: *agiliza los trámites*.\n*Dificultar* = make it harder: *dificultó el rescate*.\n*Posibilitar* = make it possible: *posibilita el acceso*.\n\nNo *a* before the process, and the verb agrees with the thing doing it: *las filas dificultan*.\n\nEnglish often says *makes it faster*. Spanish packs that into one verb. *Agilizar* is about speed, not about making something easy.",
+  "smallPrint": "Teachers call these verbs of facilitation and hindrance, with a process or an access as the object.",
+  "readAndPick": [
+    {
+      "es": "Un solo formulario agilizó los trámites.",
+      "options": [
+        "A single form sped up the paperwork.",
+        "A single form hampered the paperwork."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Las filas largas dificultan el trámite.",
+      "options": [
+        "Long lines speed up the procedure.",
+        "Long lines hamper the procedure."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La lluvia dificultó el rescate.",
+      "options": [
+        "The rain hampered the rescue.",
+        "The rain made the rescue possible."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Una cuenta en línea agiliza el pago.",
+      "options": [
+        "An online account hampers the payment.",
+        "An online account speeds up the payment."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El nuevo sistema dificulta los trámites.",
+      "options": [
+        "The new system hampers the paperwork.",
+        "The new system speeds up the paperwork."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La lluvia dificulta el rescate.",
+      "options": [
+        "The rain hampered the rescue.",
+        "The rain is hampering the rescue."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La cooperativa agiliza los trámites de los asociados.",
+      "options": [
+        "The cooperative speeds up the members' paperwork.",
+        "The cooperative speeds up the members."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Una cuenta en línea agilizó el pago.",
+      "options": [
+        "An online account sped up the payment.",
+        "An online account speeds up the payment."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *agiliza* or *dificulta*, then type the whole sentence: El nuevo sistema ___ los trámites. (speeds up)",
+      "answer": "El nuevo sistema agiliza los trámites.",
+      "accept": [],
+      "why": "*Agilizar* is the verb for making a process quicker."
+    },
+    {
+      "prompt": "Choose *dificulta* or *dificultan*, then type the whole sentence: Las filas largas ___ el trámite. (hamper)",
+      "answer": "Las filas largas dificultan el trámite.",
+      "accept": [],
+      "why": "The subject is plural (*las filas*), so the verb is plural."
+    },
+    {
+      "prompt": "Type it in Spanish: The rain hampered the rescue.",
+      "answer": "La lluvia dificultó el rescate.",
+      "accept": [],
+      "why": "*Dificultó* is the past of *dificultar*, and the process follows with no *a*."
+    },
+    {
+      "prompt": "Type it in Spanish: An online account speeds up the payment.",
+      "answer": "Una cuenta en línea agiliza el pago.",
+      "accept": [],
+      "why": "The thing that helps is the subject, and *agiliza* is its verb."
+    },
+    {
+      "prompt": "Type it in Spanish: A single form sped up the paperwork.",
+      "answer": "Un solo formulario agilizó los trámites.",
+      "accept": [],
+      "why": "*Agilizó* is the past, singular, because one form did it."
+    },
+    {
+      "prompt": "Make it the opposite: El nuevo sistema agiliza los trámites.",
+      "answer": "El nuevo sistema dificulta los trámites.",
+      "accept": [],
+      "why": "Swap *agiliza* for *dificulta* and nothing else changes."
+    },
+    {
+      "prompt": "Put it in the past: Una cuenta en línea agiliza el pago.",
+      "answer": "Una cuenta en línea agilizó el pago.",
+      "accept": [],
+      "why": "The past of *agiliza* is *agilizó*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El sistema agilizó a los trámites.",
+      "right": "El sistema agilizó los trámites.",
+      "why": "Almost. *A* is for people; a process follows the verb directly."
+    },
+    {
+      "wrong": "Las filas largas dificulta el trámite.",
+      "right": "Las filas largas dificultan el trámite.",
+      "why": "Almost. The verb agrees with the thing doing the hampering, and *filas* is plural."
+    },
+    {
+      "wrong": "Una cuenta en línea agilicé el pago.",
+      "right": "Una cuenta en línea agilizó el pago.",
+      "why": "Almost. The account did it, so the verb is third person, *agilizó*, not *agilicé* (I)."
+    }
+  ],
+  "personal": "Think of a process in your life that drags, and say what would speed it up with *agiliza* or what hampers it with *dificulta*."
+}

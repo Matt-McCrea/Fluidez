@@ -1,0 +1,164 @@
+{
+  "node": "p:en-modo-alguno",
+  "hook": {
+    "line": "When the board has to refuse something firmly in writing, a plain *no* sounds too casual. Formal Spanish negates with set phrases instead.",
+    "es": "En modo alguno vamos a permitir que se cancele el proyecto.",
+    "en": "Under no circumstances will we allow the project to be cancelled."
+  },
+  "examples": [
+    {
+      "es": "En modo alguno vamos a permitir que se cancele el proyecto.",
+      "en": "Under no circumstances will we allow the project to be cancelled."
+    },
+    {
+      "es": "En ningún momento se informó a los afectados.",
+      "en": "At no point were those affected informed."
+    },
+    {
+      "es": "En parte alguna se menciona esa cláusula.",
+      "en": "Nowhere is that clause mentioned."
+    },
+    {
+      "es": "En ningún momento dije eso.",
+      "en": "At no point did I say that."
+    },
+    {
+      "es": "En ningún caso se cobra el servicio.",
+      "en": "In no case is the service charged."
+    },
+    {
+      "es": "En modo alguno es mi intención molestar.",
+      "en": "It is in no way my intention to bother anyone."
+    }
+  ],
+  "rule": "To negate firmly, open with a negative phrase and drop the *no*.\n\n*En modo alguno* = in no way. *En parte alguna* = nowhere.\nHere *alguno* comes after the noun and works like *ninguno*.\n\n*En ningún momento*, *en ningún caso* = at no point, in no case. Here *ningún* comes before the noun.\n\nThe verb follows with no *no*: *En ningún momento dije eso.* English needs a helper (*at no point did I*), Spanish does not. In speech, plain *no* or *nunca* is normal.",
+  "smallPrint": "Teachers call this negative polarity with a postposed *alguno* and fronted negative adverbials.",
+  "readAndPick": [
+    {
+      "es": "En modo alguno acepto esa decisión.",
+      "options": [
+        "I accept that decision in some way.",
+        "I in no way accept that decision."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "En parte alguna se menciona esa cláusula.",
+      "options": [
+        "That clause is mentioned nowhere.",
+        "That clause is mentioned somewhere."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "En ningún momento hablamos del precio.",
+      "options": [
+        "At one point we talked about the price.",
+        "At no point did we talk about the price."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "En ningún caso se acepta el pago tarde.",
+      "options": [
+        "Late payment is accepted in no case.",
+        "Late payment is accepted in some cases."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "En ningún momento la junta pidió esa información.",
+      "options": [
+        "At no point did the board ask for that information.",
+        "At one point the board asked for that information."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "En parte alguna del estatuto aparece esa regla.",
+      "options": [
+        "That rule appears in part of the statute.",
+        "That rule appears nowhere in the statute."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "En modo alguno podemos aceptar el cambio.",
+      "options": [
+        "We can in no way accept the change.",
+        "We can accept the change in some way."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "En modo alguno es mi intención molestar.",
+      "options": [
+        "It is partly my intention to bother anyone.",
+        "It is in no way my intention to bother anyone."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *ningún* or *un*, then type the whole sentence: En ___ momento dije eso. (At no point did I say that.)",
+      "answer": "En ningún momento dije eso.",
+      "accept": [],
+      "why": "To negate, *ningún* goes before *momento*."
+    },
+    {
+      "prompt": "Choose *alguno* or *ninguno*, then type the whole sentence: En modo ___ acepto esa decisión. (I in no way accept…)",
+      "answer": "En modo alguno acepto esa decisión.",
+      "accept": [],
+      "why": "After *modo*, the fixed phrase uses *alguno*."
+    },
+    {
+      "prompt": "Type it in Spanish: Nowhere is the contribution mentioned.",
+      "answer": "En parte alguna se habla del aporte.",
+      "accept": [],
+      "why": "*En parte alguna* means nowhere, with *alguno* after the noun."
+    },
+    {
+      "prompt": "Type it in Spanish: At no point did we talk about the price.",
+      "answer": "En ningún momento hablamos del precio.",
+      "accept": [],
+      "why": "*En ningún momento* already carries the negative, so no *no*."
+    },
+    {
+      "prompt": "Type it in Spanish: In no case is late payment accepted.",
+      "answer": "En ningún caso se acepta el pago tarde.",
+      "accept": [],
+      "why": "*En ningún caso* works like *en ningún momento*."
+    },
+    {
+      "prompt": "Make it stronger and formal: Nunca dije eso.",
+      "answer": "En ningún momento dije eso.",
+      "accept": [],
+      "why": "*En ningún momento* is the written version of *nunca*."
+    },
+    {
+      "prompt": "Type it in Spanish: It is in no way my intention to bother anyone.",
+      "answer": "En modo alguno es mi intención molestar.",
+      "accept": [],
+      "why": "The negative phrase opens the sentence and the verb follows."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "En modo alguno no acepto esa decisión.",
+      "right": "En modo alguno acepto esa decisión.",
+      "why": "Almost. The phrase is already negative, so *no* is not needed."
+    },
+    {
+      "wrong": "En momento ninguno dije eso.",
+      "right": "En ningún momento dije eso.",
+      "why": "Almost. With *momento* the word goes before: *ningún momento*."
+    },
+    {
+      "wrong": "En modo ninguno acepto esa decisión.",
+      "right": "En modo alguno acepto esa decisión.",
+      "why": "Almost. After *modo* the fixed phrase is *alguno*."
+    }
+  ],
+  "personal": "Write one firm sentence about something you would never accept, starting with *En modo alguno* or *En ningún caso*."
+}

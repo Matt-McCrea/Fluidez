@@ -1,0 +1,164 @@
+{
+  "node": "p:se-ruega",
+  "hook": {
+    "line": "At the door of the cooperative's meeting room there is a sign. Notices rarely say who is asking, they just ask.",
+    "es": "Se ruega no fumar en las instalaciones.",
+    "en": "Please refrain from smoking on the premises."
+  },
+  "examples": [
+    {
+      "es": "Se ruega no fumar en las instalaciones.",
+      "en": "Please refrain from smoking on the premises."
+    },
+    {
+      "es": "Se ruega a los asistentes que apaguen el celular.",
+      "en": "Attendees are asked to switch off their phones."
+    },
+    {
+      "es": "Se ruega puntualidad.",
+      "en": "Punctuality is requested."
+    },
+    {
+      "es": "Se ruega no dejar bolsas en la entrada.",
+      "en": "Please do not leave bags at the entrance."
+    },
+    {
+      "es": "Se ruega a los clientes que paguen en la caja.",
+      "en": "Customers are asked to pay at the register."
+    },
+    {
+      "es": "Se ruega silencio durante la reunión.",
+      "en": "Silence is requested during the meeting."
+    }
+  ],
+  "rule": "*Se ruega* is a polite request from nobody in particular.\n\n*Se ruega* + infinitive: *Se ruega no fumar.*\n*Se ruega* + noun: *Se ruega puntualidad.*\n*Se ruega a* + who + *que* + a changed verb: *Se ruega a los asistentes que apaguen el celular.*\n\nThe verb after *que* takes the *-en* / *-e* ending (*apaguen*, *lleguen*), not the usual one. English says *please* or *kindly*. Spanish keeps the sentence impersonal.",
+  "smallPrint": "Teachers call this an impersonal *se* request, with the subjunctive after *que*.",
+  "readAndPick": [
+    {
+      "es": "Se ruega no dejar bolsas en la entrada.",
+      "options": [
+        "Please do not leave bags at the entrance.",
+        "Please leave bags at the entrance."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se ruega a los asistentes que apaguen el celular.",
+      "options": [
+        "Attendees are asked to switch off their phones.",
+        "Attendees are asked to leave their phones on."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se ruega silencio durante la reunión.",
+      "options": [
+        "Silence is offered during the meeting.",
+        "Silence is requested during the meeting."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se ruega responder antes del viernes.",
+      "options": [
+        "Please reply before Friday.",
+        "Please reply after Friday."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se ruega a los clientes que paguen en la caja.",
+      "options": [
+        "Customers are asked to pay at the register.",
+        "Customers are asked to pay at the door."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se ruega no usar el celular durante la junta.",
+      "options": [
+        "Please use your phone during the board meeting.",
+        "Please do not use your phone during the board meeting."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se ruega a los asistentes que lleguen temprano.",
+      "options": [
+        "Attendees are asked to arrive early.",
+        "Attendees are asked to arrive late."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se ruega firmar la lista.",
+      "options": [
+        "Please sign the list.",
+        "Please do not sign the list."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *a* or *de*, then type the whole sentence: Se ruega ___ los asistentes que apaguen el celular. (Attendees are asked to switch off their phones.)",
+      "answer": "Se ruega a los asistentes que apaguen el celular.",
+      "accept": [],
+      "why": "The people being asked come after *a*."
+    },
+    {
+      "prompt": "Choose *lleguen* or *llegan*, then type the whole sentence: Se ruega a los asistentes que ___ temprano. (arrive early)",
+      "answer": "Se ruega a los asistentes que lleguen temprano.",
+      "accept": [],
+      "why": "After *se ruega que* the verb takes the changed ending: *lleguen*."
+    },
+    {
+      "prompt": "Type it in Spanish: Please do not use your phone during the meeting. (a notice)",
+      "answer": "Se ruega no usar el celular durante la junta.",
+      "accept": [],
+      "why": "*Se ruega no* + infinitive makes a notice."
+    },
+    {
+      "prompt": "Type it in Spanish: Customers are asked to pay at the register.",
+      "answer": "Se ruega a los clientes que paguen en la caja.",
+      "accept": [],
+      "why": "Who is asked goes after *a*, then *que* and the changed verb."
+    },
+    {
+      "prompt": "Type it in Spanish: Silence is requested during the meeting.",
+      "answer": "Se ruega silencio durante la reunión.",
+      "accept": [],
+      "why": "*Se ruega* can take a noun directly."
+    },
+    {
+      "prompt": "Type it in Spanish: Please reply before Friday. (a notice)",
+      "answer": "Se ruega responder antes del viernes.",
+      "accept": [],
+      "why": "The infinitive follows *se ruega*."
+    },
+    {
+      "prompt": "Make it negative: Se ruega dejar bolsas en la entrada.",
+      "answer": "Se ruega no dejar bolsas en la entrada.",
+      "accept": [],
+      "why": "Put *no* before the infinitive."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Se ruega a los asistentes apaguen el celular.",
+      "right": "Se ruega a los asistentes que apaguen el celular.",
+      "why": "Almost. When you name who is asked, *que* has to introduce the request."
+    },
+    {
+      "wrong": "Se ruega no fuman en las instalaciones.",
+      "right": "Se ruega no fumar en las instalaciones.",
+      "why": "Almost. After *se ruega no*, the verb stays an infinitive."
+    },
+    {
+      "wrong": "Se ruega a los asistentes que apagan el celular.",
+      "right": "Se ruega a los asistentes que apaguen el celular.",
+      "why": "Almost. After *que* in a request, the verb takes the changed ending: *apaguen*."
+    }
+  ],
+  "personal": "Imagine a sign for your own home or office, and write it with *Se ruega*."
+}

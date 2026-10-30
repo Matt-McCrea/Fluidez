@@ -1,0 +1,164 @@
+{
+  "node": "p:no-dude-en",
+  "hook": {
+    "line": "The closing line of every formal letter invites the reader to get in touch. It is polite, short, and always the same few words.",
+    "es": "No dude en llamarme si tiene alguna pregunta.",
+    "en": "Do not hesitate to call me if you (formal) have a question."
+  },
+  "examples": [
+    {
+      "es": "No dude en llamarnos si surge cualquier problema.",
+      "en": "Do not hesitate (formal) to call us if any problem arises."
+    },
+    {
+      "es": "No dude en llamarme si tiene alguna pregunta.",
+      "en": "Do not hesitate (formal) to call me if you have a question."
+    },
+    {
+      "es": "No duden en pedirnos ayuda.",
+      "en": "Do not hesitate (you all) to ask us for help."
+    },
+    {
+      "es": "No dudes en llamarme.",
+      "en": "Do not hesitate (informal) to call me."
+    },
+    {
+      "es": "Estoy a su disposición para cualquier consulta.",
+      "en": "I am at your (formal) disposal for any query."
+    },
+    {
+      "es": "Quedamos a su disposición para resolver sus dudas.",
+      "en": "We remain at your (formal) disposal to answer your questions."
+    }
+  ],
+  "rule": "*No dude en* + infinitive is the polite invitation: do not hesitate to.\n\nIt is a negative command, so it follows the person: *No dude* (usted), *No duden* (ustedes), *No dudes* (tú).\n\nTo close, offer your services: *Estoy a su disposición para…*, *Quedamos a su disposición para…* The thing offered follows *para*.\n\nIn English *do not hesitate* is already a fixed phrase, and so is the Spanish. The *no* here is not a refusal, it is an invitation.",
+  "smallPrint": "Teachers call this a negative command used as a polite offer, a standard close in business letters.",
+  "readAndPick": [
+    {
+      "es": "No dude en llamarme si tiene alguna pregunta.",
+      "options": [
+        "Do not hesitate to call me if you have a question.",
+        "Do not call me if you have a question."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No duden en pedirnos ayuda.",
+      "options": [
+        "Do not hesitate (you all) to ask us for help.",
+        "Do not hesitate (formal, one person) to ask us for help."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No dudes en llamarme.",
+      "options": [
+        "Do not hesitate (formal) to call me.",
+        "Do not hesitate (informal) to call me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Estoy a su disposición para cualquier consulta.",
+      "options": [
+        "We are at your disposal for any query.",
+        "I am at your disposal for any query."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Quedamos a su disposición para resolver sus dudas.",
+      "options": [
+        "We remain at your disposal to answer your questions.",
+        "I remain at your disposal to answer your questions."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No dude en llamarnos si surge cualquier problema.",
+      "options": [
+        "Do not hesitate (formal) to call us if any problem arises.",
+        "Do not hesitate (informal) to call us if any problem arises."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No dude en preguntar por los trámites.",
+      "options": [
+        "Do not ask about the paperwork.",
+        "Do not hesitate to ask about the paperwork."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Quedo a su disposición para cualquier duda.",
+      "options": [
+        "We remain at your disposal for any question.",
+        "I remain at your disposal for any question."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *dude* or *dudes*, then type the whole sentence: No ___ en llamarme. (to a stranger, formal)",
+      "answer": "No dude en llamarme.",
+      "accept": [],
+      "why": "A stranger is *usted*, so the command is *dude*."
+    },
+    {
+      "prompt": "Choose *dude* or *duden*, then type the whole sentence: No ___ en pedirnos ayuda. (to several people)",
+      "answer": "No duden en pedirnos ayuda.",
+      "accept": [],
+      "why": "Several people means *ustedes*, so *duden*."
+    },
+    {
+      "prompt": "Type it in Spanish: Do not hesitate to call me if you (formal) have a question.",
+      "answer": "No dude en llamarme si tiene alguna pregunta.",
+      "accept": [],
+      "why": "*No dude en* + infinitive, then *si* with the condition."
+    },
+    {
+      "prompt": "Type it in Spanish: Do not hesitate to call me. (to a friend)",
+      "answer": "No dudes en llamarme.",
+      "accept": [],
+      "why": "A friend is *tú*, so *dudes*."
+    },
+    {
+      "prompt": "Type it in Spanish: I am at your (formal) disposal for any query.",
+      "answer": "Estoy a su disposición para cualquier consulta.",
+      "accept": [],
+      "why": "*Estoy a su disposición para* + what you offer."
+    },
+    {
+      "prompt": "Type it in Spanish: We remain at your (formal) disposal to answer your questions.",
+      "answer": "Quedamos a su disposición para resolver sus dudas.",
+      "accept": [],
+      "why": "*Quedamos* is the *we* form of the closing line."
+    },
+    {
+      "prompt": "Make it for several people: No dude en llamarme si tiene alguna pregunta.",
+      "answer": "No duden en llamarme si tienen alguna pregunta.",
+      "accept": [],
+      "why": "Both verbs move to the *ustedes* form: *duden*, *tienen*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No dude llamarme si tiene alguna pregunta.",
+      "right": "No dude en llamarme si tiene alguna pregunta.",
+      "why": "Almost. *Dudar* takes *en* before the infinitive."
+    },
+    {
+      "wrong": "No duda en llamarme si tiene alguna pregunta.",
+      "right": "No dude en llamarme si tiene alguna pregunta.",
+      "why": "Almost. A polite negative command uses the changed ending: *dude*, not *duda*."
+    },
+    {
+      "wrong": "Estoy a su disposición por cualquier consulta.",
+      "right": "Estoy a su disposición para cualquier consulta.",
+      "why": "Almost. What you are available for takes *para*."
+    }
+  ],
+  "personal": "Write the last line of a message to a new contact, offering help with *No dude en* or *a su disposición*."
+}

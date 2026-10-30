@@ -1,0 +1,164 @@
+{
+  "node": "p:el-suscrito",
+  "hook": {
+    "line": "Tomás needs a signed certificate for the cooperative, and official papers do not say *I*. They say *the undersigned*.",
+    "es": "El suscrito certifica que Tomás es el dueño del café.",
+    "en": "The undersigned certifies that Tomás is the owner of the café."
+  },
+  "examples": [
+    {
+      "es": "El suscrito certifica que la señora Pérez trabaja en esta entidad.",
+      "en": "The undersigned certifies that Mrs Pérez works for this organisation."
+    },
+    {
+      "es": "La suscrita certifica que Vale trabaja en el café.",
+      "en": "The undersigned (a woman) certifies that Vale works in the café."
+    },
+    {
+      "es": "El suscrito hace constar que la reunión se pospuso.",
+      "en": "The undersigned records that the meeting was postponed."
+    },
+    {
+      "es": "Los abajo firmantes hacemos constar nuestro desacuerdo.",
+      "en": "We, the undersigned, record our disagreement."
+    },
+    {
+      "es": "Los abajo firmantes solicitamos una reunión de la junta.",
+      "en": "We, the undersigned, request a meeting of the board."
+    },
+    {
+      "es": "La suscrita hace constar que recibió el aporte.",
+      "en": "The undersigned (a woman) records that she received the contribution."
+    }
+  ],
+  "rule": "Official papers hide the *I* behind a title.\n\n*El suscrito* / *la suscrita* = the undersigned, one person (a man or a woman). The verb is third person: *certifica*, *hace constar*.\n\n*Los abajo firmantes* = we, the undersigned. The verb is *we*: *hacemos constar*, *solicitamos*.\n\n*Hacer constar* = to put on record. *Certificar* = to certify.\n\nThis is strictly written. Said aloud, it sounds like a joke.",
+  "smallPrint": "Teachers call this the third-person self-reference of legal and administrative writing.",
+  "readAndPick": [
+    {
+      "es": "Los abajo firmantes hacemos constar nuestro desacuerdo.",
+      "options": [
+        "The undersigned records his disagreement.",
+        "We, the undersigned, record our disagreement."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El suscrito certifica que Tomás es el dueño del café.",
+      "options": [
+        "The undersigned certifies that Tomás is the owner of the café.",
+        "Tomás certifies that the undersigned is the owner of the café."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La suscrita certifica que Vale trabaja en el café.",
+      "options": [
+        "The undersigned (a man) certifies that Vale works in the café.",
+        "The undersigned (a woman) certifies that Vale works in the café."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Los abajo firmantes hacemos constar que no hubo quórum.",
+      "options": [
+        "We, the undersigned, record that there was no quorum.",
+        "We, the undersigned, record that there was a quorum."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El suscrito hace constar que la reunión se pospuso.",
+      "options": [
+        "The undersigned records that the meeting was postponed.",
+        "The undersigned records that the meeting was held."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Los abajo firmantes solicitamos una reunión de la junta.",
+      "options": [
+        "The undersigned requests a meeting of the board.",
+        "We, the undersigned, request a meeting of the board."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La suscrita hace constar que recibió el aporte.",
+      "options": [
+        "The undersigned (a woman) records that she received the contribution.",
+        "The undersigned (a man) records that he received the contribution."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El suscrito certifica que la señora Pérez trabaja en esta entidad.",
+      "options": [
+        "We, the undersigned, certify that Mrs Pérez works for this organisation.",
+        "The undersigned certifies that Mrs Pérez works for this organisation."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *El suscrito* or *La suscrita*, then type the whole sentence: ___ certifica que Vale trabaja en el café. (a woman writing)",
+      "answer": "La suscrita certifica que Vale trabaja en el café.",
+      "accept": [],
+      "why": "A woman writing uses the feminine, *la suscrita*."
+    },
+    {
+      "prompt": "Choose *hacemos* or *hace*, then type the whole sentence: Los abajo firmantes ___ constar que no hubo quórum. (We record…)",
+      "answer": "Los abajo firmantes hacemos constar que no hubo quórum.",
+      "accept": [],
+      "why": "*Los abajo firmantes* speak as *we*, so *hacemos*."
+    },
+    {
+      "prompt": "Type it in Spanish: The undersigned (a man) records that the meeting was postponed.",
+      "answer": "El suscrito hace constar que la reunión se pospuso.",
+      "accept": [],
+      "why": "One man: *el suscrito*, with a third-person verb."
+    },
+    {
+      "prompt": "Type it in Spanish: We, the undersigned, request a meeting of the board.",
+      "answer": "Los abajo firmantes solicitamos una reunión de la junta.",
+      "accept": [],
+      "why": "The group speaks as *we*: *solicitamos*."
+    },
+    {
+      "prompt": "Type it in Spanish: The undersigned (a woman) records that she received the contribution.",
+      "answer": "La suscrita hace constar que recibió el aporte.",
+      "accept": [],
+      "why": "*Suscrita* for a woman, *hace constar* for the record."
+    },
+    {
+      "prompt": "Make it a woman writing: El suscrito certifica que Tomás es el dueño del café.",
+      "answer": "La suscrita certifica que Tomás es el dueño del café.",
+      "accept": [],
+      "why": "The article and the ending both change: *la suscrita*."
+    },
+    {
+      "prompt": "Make it a group: El suscrito hace constar que la reunión se pospuso.",
+      "answer": "Los abajo firmantes hacemos constar que la reunión se pospuso.",
+      "accept": [],
+      "why": "A group is *los abajo firmantes*, and the verb becomes *we*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El suscrito certificamos que Tomás es el dueño del café.",
+      "right": "El suscrito certifica que Tomás es el dueño del café.",
+      "why": "Almost. *El suscrito* is one person in the third person, so *certifica*."
+    },
+    {
+      "wrong": "La suscrito certifica que Vale trabaja en el café.",
+      "right": "La suscrita certifica que Vale trabaja en el café.",
+      "why": "Almost. A woman is *la suscrita*, with the *-a* ending."
+    },
+    {
+      "wrong": "Hola, Vale, el suscrito quiere un tinto.",
+      "right": "Hola, Vale, quiero un tinto.",
+      "why": "Almost. *El suscrito* is for written documents; said aloud it sounds like a joke."
+    }
+  ],
+  "personal": "Write a one-line certificate for a friend in the third person, starting with *El suscrito* or *La suscrita*."
+}

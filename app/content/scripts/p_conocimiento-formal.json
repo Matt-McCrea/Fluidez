@@ -1,0 +1,165 @@
+{
+  "node": "p:conocimiento-formal",
+  "hook": {
+    "line": "A formal notice has to say what the board knows and what it does not. Nobody writes *no sé* on an official letter.",
+    "es": "Tenemos conocimiento de que la junta pospuso la reunión.",
+    "en": "We are aware that the board postponed the meeting."
+  },
+  "examples": [
+    {
+      "es": "Tenemos conocimiento de que se detectaron varios casos.",
+      "en": "We are aware that several cases were detected."
+    },
+    {
+      "es": "Desconocemos el paradero de los responsables.",
+      "en": "We do not know the whereabouts of those responsible."
+    },
+    {
+      "es": "Lo ignoro.",
+      "en": "I don't know."
+    },
+    {
+      "es": "Desconozco el resultado de la reunión.",
+      "en": "I do not know the result of the meeting."
+    },
+    {
+      "es": "Tengo conocimiento de que el decreto cambió.",
+      "en": "I am aware that the decree changed."
+    },
+    {
+      "es": "Ignoramos qué pasó con el aporte.",
+      "en": "We do not know what happened to the contribution."
+    }
+  ],
+  "rule": "Formal Spanish has its own ways to say know and don't know.\n\n*Tener conocimiento de que* + a full sentence = *to be aware that*: *Tenemos conocimiento de que…*\n*Desconocer* + a thing = *not to know it*: *Desconocemos el motivo.* With *yo*: *desconozco*.\n*Ignorar* here also means *not to know*: *Lo ignoro*, *ignoramos qué pasó*.\n\nWatch out: *ignorar* is not *to ignore someone*. In a formal text it means you lack the information.",
+  "smallPrint": "Teachers call this the language of formal (un)awareness, with *ignorar* as a false friend.",
+  "readAndPick": [
+    {
+      "es": "Desconocemos el motivo de la decisión.",
+      "options": [
+        "We know the reason for the decision.",
+        "We do not know the reason for the decision."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tenemos conocimiento de que la junta pospuso la reunión.",
+      "options": [
+        "We are aware that the board postponed the meeting.",
+        "We are not aware that the board postponed the meeting."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Desconozco el resultado de la reunión.",
+      "options": [
+        "We do not know the result of the meeting.",
+        "I do not know the result of the meeting."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tengo conocimiento de que el decreto cambió.",
+      "options": [
+        "We are aware that the decree changed.",
+        "I am aware that the decree changed."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Lo ignoro.",
+      "options": [
+        "I know.",
+        "I do not know.",
+        "I am ignoring it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ignoramos qué pasó con el aporte.",
+      "options": [
+        "We know what happened to the contribution.",
+        "We do not know what happened to the contribution."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Desconocemos si el reglamento cambió.",
+      "options": [
+        "We do not know whether the regulation changed.",
+        "We know that the regulation changed."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Tiene usted conocimiento de la resolución?",
+      "options": [
+        "Are you (formal) aware of the resolution?",
+        "Is he aware of the resolution?"
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *Tenemos* or *Desconocemos*, then type the whole sentence: ___ conocimiento de que la junta pospuso la reunión. (We are aware that…)",
+      "answer": "Tenemos conocimiento de que la junta pospuso la reunión.",
+      "accept": [],
+      "why": "*Tener conocimiento de que* means to be aware, so *tenemos* fits."
+    },
+    {
+      "prompt": "Choose *desconozco* or *desconocemos*, then type the whole sentence: Yo ___ el resultado de la reunión. (I do not know)",
+      "answer": "Desconozco el resultado de la reunión.",
+      "accept": [],
+      "why": "Only *yo* has the *zc*: *desconozco*."
+    },
+    {
+      "prompt": "Type it in Spanish: We do not know the date of the meeting.",
+      "answer": "Desconocemos la fecha de la reunión.",
+      "accept": [],
+      "why": "*Desconocemos* takes the thing you do not know straight after it."
+    },
+    {
+      "prompt": "Type it in Spanish: I do not know. (formal, short)",
+      "answer": "Lo ignoro.",
+      "accept": [],
+      "why": "*Ignorar* here is to not know, and *lo* stands for the matter."
+    },
+    {
+      "prompt": "Type it in Spanish: We do not know the reason for the decision.",
+      "answer": "Desconocemos el motivo de la decisión.",
+      "accept": [],
+      "why": "Same verb, a different thing you do not know."
+    },
+    {
+      "prompt": "Make it about *I*: Tenemos conocimiento de que el decreto cambió.",
+      "answer": "Tengo conocimiento de que el decreto cambió.",
+      "accept": [],
+      "why": "*Tener* changes for *yo*: *tengo*."
+    },
+    {
+      "prompt": "Type it in Spanish: We do not know the whereabouts of the associate.",
+      "answer": "Desconocemos el paradero del asociado.",
+      "accept": [],
+      "why": "*De* plus *el* joins as *del*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Tenemos conocimiento que se detectaron varios casos.",
+      "right": "Tenemos conocimiento de que se detectaron varios casos.",
+      "why": "Almost. The phrase is *conocimiento de que*, with *de*."
+    },
+    {
+      "wrong": "Desconozcemos el motivo de la decisión.",
+      "right": "Desconocemos el motivo de la decisión.",
+      "why": "Almost. Only *yo* has *zc*; *nosotros* is just *desconocemos*."
+    },
+    {
+      "wrong": "Tengo conocimiento de el decreto.",
+      "right": "Tengo conocimiento del decreto.",
+      "why": "Almost. *De* and *el* join as *del*."
+    }
+  ],
+  "personal": "Write one formal sentence about something you do not know today, with *desconozco* or *lo ignoro*."
+}
