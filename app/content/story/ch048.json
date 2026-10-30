@@ -2,19 +2,27 @@
   "id": "ch048",
   "unit": "u18",
   "title": "Ida y vuelta",
-  "text": "A las cuatro de la madrugada, la Burra ya esperaba en la calle de Gloria.\nTomás subió con su maleta, y Vale subió con tres bolsas de almojábanas.\nTomás: ¿Tres bolsas? Son nueve horas, no nueve días.\nVale: Son para mi familia. Mi mamá dice que el pan de Bogotá es malo.\nSimón: ¡Buen viaje! ¡Buen viaje!\nHernando: Todavía no, Simón. Primero los pasajes.\nLa estación de buses del Salitre era grande y ruidosa, y eran las cinco menos cuarto.\nVendedora: Buenos días. ¿Para dónde van?\nTomás: Para Medellín, por favor. Dos pasajes para el bus de las cinco y media.\nVendedora: ¿Los quiere sencillos o de ida y vuelta?\nTomás no contestó. Dudó un momento y miró a Vale. En Medellín estaba toda la familia de Vale.\nVale: ¿Qué te pasa? Ida y vuelta, claro. Mi trabajo está en Bogotá.\nVendedora: ¿A nombre de quién?\nTomás: A nombre de Tomás Herrera y Valentina Ospina.\nVendedora: Listo, señor Ospina.\nTomás: No, señora. Herrera. Ospina es ella.\nVendedora: Ah, ¿no son esposos?\nSimón: ¡Me encantaría!\nVale no dijo nada, pero estaba muy roja.\nAntes del bus, Hernando sacó un paquete de su chaqueta.\nHernando: Esto es para la mamá de Vale. Es café de Rosa. El último paquete.\nVale: ¿Para mi mamá? ¿Usted la conoce?\nHernando: Yo no. Pero Rosa sí. Rosa fue a Medellín una vez, en 1990, sola. Nunca me explicó el motivo.\nTomás: ¿Y usted no me dijo eso antes?\nHernando: Usted nunca me preguntó, mijo.\nHernando le dio un abrazo largo.\nHernando: Primero la salud, mijo. Y allá hablan rápido: es necesario oír mucho y hablar poco.\nTomás: Gracias por todo, Hernando.\nSimón: ¡Buen viaje, señor Ospina!\nTomás puso el paquete en la maleta, y la maleta fue debajo del bus con las otras.\nEl bus salió a las cinco y media. Antes de salir de Bogotá, Vale ya dormía en el hombro de Tomás.",
+  "text": "Tres semanas después, a las cuatro de la madrugada, la Burra esperaba en la puerta de Gloria. Tomás subió con su maleta, y Vale con tres bolsas de almojábanas.\nTomás: ¿Tres bolsas? Son nueve horas de viaje, no nueve días.\nVale: Son para mi familia. Según mi mamá, en Bogotá no saben hacer pan.\nA las cinco menos cuarto, la terminal del Salitre ya estaba llena de gente.\nVendedora: Buenos días. ¿Para dónde van?\nTomás: Para Medellín, por favor. Dos pasajes para el bus de las cinco y media.\nVendedora: ¿Sencillos o de ida y vuelta?\nTomás dudó y miró a Vale. ¿Y si Vale se quedaba en Medellín, con su familia?\nVale: ¿Qué te pasa? De ida y vuelta, claro. Mi trabajo está en Bogotá.\nVendedora: ¿A nombre de quién?\nTomás: A nombre de Tomás Herrera y Valentina Ospina.\nVendedora: Listo, señor Ospina.\nTomás: No, señora. Herrera. Ospina es ella.\nVendedora: Ah, ¿no son esposos?\nSimón: ¡Me encantaría!\nVale no dijo nada, pero estaba muy roja.\nAntes del bus, Hernando sacó un paquete de la chaqueta.\nHernando: Para tu mamá, mija. Es café de Rosa, el último paquete. ¿Sabías que Rosa fue a Medellín una vez? En 1990, sola. Nunca me dijo para qué.\nTomás: ¿Y por qué nunca nos contó eso, don Hernando?\nHernando: Porque nadie me preguntó, mijo.\nHernando le dio un abrazo largo.\nHernando: Cuídate, que la salud es lo primero. Y allá hablan muy rápido: hay que oír mucho y hablar poco.\nSimón: ¡Buen viaje, señor Ospina!\nTomás puso el paquete en la maleta, y la maleta fue debajo del bus, con las otras.\nAntes de salir de Bogotá, Vale ya dormía en el hombro de Tomás.",
   "gloss": [
     {
-      "es": "¡Buen viaje!",
-      "en": "Have a good trip!"
+      "es": "Buen viaje",
+      "en": "Have a good trip"
     },
     {
-      "es": "Mi mamá dice que el pan de Bogotá es malo.",
-      "en": "My mom says the bread in Bogotá is bad."
+      "es": "a las cuatro de la madrugada",
+      "en": "at four in the morning"
     },
     {
-      "es": "¿Los quiere sencillos o de ida y vuelta?",
-      "en": "Do you want them single or return?"
+      "es": "Según mi mamá, en Bogotá no saben hacer pan.",
+      "en": "According to my mom, in Bogotá they don't know how to make bread."
+    },
+    {
+      "es": "¿Sencillos o de ida y vuelta?",
+      "en": "Single or return?"
+    },
+    {
+      "es": "¿Y si Vale se quedaba en Medellín, con su familia?",
+      "en": "What if Vale stayed in Medellín, with her family?"
     },
     {
       "es": "Listo, señor Ospina.",
@@ -25,15 +33,15 @@
       "en": "she was bright red (embarrassed)"
     },
     {
-      "es": "Nunca me explicó el motivo.",
-      "en": "She never told me why."
+      "es": "Nunca me dijo para qué.",
+      "en": "She never told me what for."
     },
     {
-      "es": "Primero la salud, mijo.",
-      "en": "Health comes first, son."
+      "es": "Cuídate, que la salud es lo primero.",
+      "en": "Look after yourself, health comes first."
     },
     {
-      "es": "es necesario oír mucho y hablar poco",
+      "es": "hay que oír mucho y hablar poco",
       "en": "you need to listen a lot and talk little"
     }
   ],
@@ -69,7 +77,7 @@
       "answer": 0
     },
     {
-      "q": "¿Qué le da Hernando a Tomás para la mamá de Vale?",
+      "q": "¿Qué le da Hernando a Vale para su mamá?",
       "options": [
         "Un paquete de café de Rosa",
         "Tres bolsas de almojábanas",
@@ -91,19 +99,19 @@
       "answer": 0
     },
     {
-      "q": "At what time does the bus leave?",
+      "q": "Which bus do they buy tickets for?",
       "options": [
-        "Half past five",
-        "Quarter to five",
-        "Four o'clock",
-        "Nine o'clock"
+        "The half past five bus",
+        "The quarter to five bus",
+        "The four o'clock bus",
+        "The nine o'clock bus"
       ],
       "answer": 0
     },
     {
       "q": "Why is Vale taking three bags of almojábanas?",
       "options": [
-        "Her mom says the bread in Bogotá is bad",
+        "Her mom says nobody in Bogotá knows how to make bread",
         "She wants to sell them on the bus",
         "They are for Hernando",
         "She is hungry"
@@ -114,20 +122,21 @@
   "hook": "Vale is asleep on Tomás's shoulder, Rosa's last packet of coffee is in the hold, and nine hours of mountain road lie ahead. Not all of the luggage is going to arrive.",
   "requires": [
     "c:a-nombre-de",
-    "c:bien-y-tu",
     "c:buen-viaje",
     "c:claro-listo",
-    "c:era",
+    "c:hay",
+    "c:hay-que",
     "c:hola-buenos-dias",
     "c:ida-y-vuelta",
     "c:me-encantaria",
     "c:por-favor",
+    "c:porque",
     "c:te-pasa-algo",
-    "c:todavia-no",
     "c:un-abrazo",
     "c:una-vez",
     "g:adjective-agreement",
-    "g:direct-objects",
+    "g:cause-result",
+    "g:commands-tu",
     "g:estar-location-states",
     "g:gender-articles",
     "g:imperfect-habitual",
@@ -143,24 +152,23 @@
     "g:preterite-er-ir",
     "g:preterite-irregular-strong",
     "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:reflexive-routine",
     "g:ser-identity",
-    "g:stem-boot",
-    "g:stem-e-i",
     "g:that-clauses",
+    "g:verb-infinitive",
     "p:aqui-ahi-alla",
-    "p:bien-bueno",
-    "p:bien-mal-vs-bueno-malo",
     "p:cerca-de",
     "p:container-de",
     "p:dates-years",
     "p:demonstratives-basic",
-    "p:es-adj-inf",
     "p:frequency-scale",
-    "p:gracias-por",
     "p:ir-a-venir-de-place",
+    "p:la-gente-singular",
     "p:me-te-nos-objects",
     "p:otro-no-article",
     "p:para-inf",
+    "p:para-inf-purpose",
     "p:por-la-manana",
     "p:position-de",
     "p:possessives-basic",
@@ -182,14 +190,14 @@
     "l:bueno",
     "l:bus",
     "l:café",
-    "l:calle",
     "l:chaqueta",
     "l:claro",
-    "l:conocer",
-    "l:contestar",
+    "l:contar",
+    "l:cuidarse",
     "l:dar",
     "l:debajo",
     "l:decir",
+    "l:después",
     "l:dormir",
     "l:dudar",
     "l:día",
@@ -197,28 +205,25 @@
     "l:encantar",
     "l:esperar",
     "l:esposo",
-    "l:estación",
     "l:estar",
-    "l:explicar",
     "l:familia",
     "l:favor",
-    "l:grande",
+    "l:gente",
     "l:hablar",
+    "l:hacer",
     "l:hombro",
     "l:hora",
     "l:ida",
     "l:ir",
     "l:largo",
     "l:listo",
+    "l:lleno",
     "l:madrugada",
     "l:maleta",
-    "l:malo",
     "l:mamá",
+    "l:mija",
     "l:mijo",
     "l:mirar",
-    "l:momento",
-    "l:motivo",
-    "l:necesario",
     "l:nombre",
     "l:oír",
     "l:pan",
@@ -227,20 +232,23 @@
     "l:pasar",
     "l:poner",
     "l:preguntar",
-    "l:querer",
+    "l:puerta",
+    "l:quedarse",
     "l:quién",
     "l:qué",
     "l:rojo",
-    "l:ruidoso",
     "l:rápido",
+    "l:saber",
     "l:sacar",
     "l:salir",
     "l:salud",
+    "l:semana",
     "l:sencillo",
     "l:ser",
     "l:señor",
     "l:señora",
     "l:subir",
+    "l:terminal",
     "l:trabajo",
     "l:vendedor",
     "l:vez",

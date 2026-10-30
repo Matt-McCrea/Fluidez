@@ -2,7 +2,7 @@
   "id": "ch054",
   "unit": "u19",
   "title": "Quince días",
-  "text": "Jhon Fredy: Buenos días a todos. Hoy les voy a hablar de la máquina de café.\nEran las cinco y media de la mañana. Vale, Tomás y Hernando estaban en las sillas, con sueño. Simón también.\nJhon Fredy: En primer lugar, la máquina tiene veinte años. Además, nadie la limpia. Para terminar, les voy a mostrar unas fotos...\nVale: ¿Para terminar? Son las seis, y hay gente en la puerta.\nHernando: Este joven trabaja de mesero, pero habla como un presidente.\nJhon Fredy: Por ahora trabajo de mesero, señor. Por la tarde soy estudiante, y en cuatro años voy a ser ingeniero.\nA las diez entró un señor con muchos papeles debajo del brazo.\nSeñor: Buenos días. Soy el inspector Duarte, de la Alcaldía. Vengo por los permisos del café.\nTomás le dio los papeles de Rosa. El inspector los leyó despacio.\nInspector: Este permiso es de 2009, señor Herrera. Es un error grave. Sin los permisos al día, se cierra el café.\nSimón: ¿Se puede? ¿Se puede?\nTomás: ¿Cerrar? ¿Cuándo?\nInspector: Tienen quince días.\nJhon Fredy: Señor inspector, ¿usted sabe cuántos tintos vende este café? ¿Sabe cuántas personas...?\nInspector: ¿Y usted quién es?\nJhon Fredy: El mesero. Por ahora.\nPor la tarde llegó Mariana. Escuchó la historia y sacó su cuaderno.\nMariana: Altamira vino el lunes, y el inspector vino el miércoles. Eso no es una coincidencia. Altamira no ataca en la calle. Ataca en la oficina.\nHernando: Nos quieren robar la esquina.\nTomás: El inspector no nombró a Altamira.\nMariana: Claro que no. Un consejo, Tomás: tú no hablas con el inspector sin mí.\nVale miró la foto de Rosa en la pared.\nVale: Rosa protegió este café cuarenta años. Ahora lo protegemos nosotros.\nEsa noche, Tomás cerró el café a las ocho. Simón dormía encima de la máquina.\nAl otro día, Simón no estaba en el café.",
+  "text": "Jhon Fredy: Buenos días a todos. Hoy les voy a hablar de la máquina de café.\nEran las cinco y media de la mañana. Vale y Tomás lo escuchaban sentados, con sueño. Simón también.\nJhon Fredy: En primer lugar, la máquina es italiana, pero tiene veinte años. En segundo lugar, nadie la limpia. Para terminar, les voy a mostrar unas fotos...\nVale: ¿Fotos? Son las seis, y hay gente en la puerta.\nA las siete llegó Hernando. Jhon Fredy servía tintos y todavía hablaba.\nHernando: Este muchacho trabaja de mesero, pero habla como un presidente.\nJhon Fredy: Por ahora trabajo de mesero, señor. Por la tarde estudio, y en cuatro años voy a ser ingeniero.\nA las diez, un señor con muchos papeles debajo del brazo abrió la puerta.\nSeñor: ¿Se puede? Buenos días. Soy el inspector Duarte, de la Alcaldía. Vengo a revisar los permisos del café.\nEl inspector leyó despacio los papeles de Rosa.\nInspector: Este permiso es de 2009, señor Herrera. Ya no sirve, y eso es un error grave. Sin los permisos al día, el café se cierra.\nSimón: ¿Se puede? ¿Se puede?\nTomás: ¿Cerrar? ¿Cuándo?\nInspector: Tienen quince días.\nPor la tarde llegó Mariana. Escuchó la historia y sacó su cuaderno.\nMariana: Altamira vino el lunes, y el inspector vino el miércoles. Eso no es una coincidencia. Antes mandaban a un hombre con gorra. Ahora atacan desde una oficina.\nHernando: Nos quieren robar la esquina.\nTomás: Pero el inspector no nombró a Altamira.\nMariana: Claro que no. Un consejo, Tomás: tú no hablas con ese inspector sin mí.\nVale miró la vieja foto de Rosa, detrás del mostrador.\nVale: Rosa protegió este café más de cuarenta años. Ahora lo protegemos nosotros.\nEsa noche, Tomás cerró a las ocho. Simón dormía encima de la máquina, con media almojábana.\nAl otro día, Simón no estaba.",
   "gloss": [
     {
       "es": "Hoy les voy a hablar de la máquina de café.",
@@ -21,20 +21,40 @@
       "en": "with a lot of papers under his arm"
     },
     {
-      "es": "Sin los permisos al día, se cierra el café.",
+      "es": "¿Se puede?",
+      "en": "May I come in?"
+    },
+    {
+      "es": "de la Alcaldía",
+      "en": "from the city council"
+    },
+    {
+      "es": "Vengo a revisar los permisos del café.",
+      "en": "I've come to check the café's permits."
+    },
+    {
+      "es": "Ya no sirve",
+      "en": "It's no longer valid"
+    },
+    {
+      "es": "Sin los permisos al día, el café se cierra.",
       "en": "Without up-to-date permits, the café gets closed."
     },
     {
-      "es": "Jhon Fredy: El mesero. Por ahora.",
-      "en": "Jhon Fredy: The waiter. For now."
-    },
-    {
-      "es": "Altamira no ataca en la calle. Ataca en la oficina.",
-      "en": "Altamira doesn't attack in the street. He attacks from an office."
+      "es": "Antes mandaban a un hombre con gorra. Ahora atacan desde una oficina.",
+      "en": "Before, they sent a man in a cap. Now they attack from an office."
     },
     {
       "es": "Nos quieren robar la esquina.",
       "en": "They want to steal our corner."
+    },
+    {
+      "es": "tú no hablas con ese inspector sin mí",
+      "en": "you don't talk to that inspector without me"
+    },
+    {
+      "es": "con media almojábana",
+      "en": "with half an almojábana"
     },
     {
       "es": "Al otro día",
@@ -45,7 +65,7 @@
     {
       "q": "What is Jhon Fredy doing at half past five in the morning?",
       "options": [
-        "Giving everyone a talk about the coffee machine",
+        "Giving Vale and Tomás a talk about the coffee machine",
         "Repairing his bicycle",
         "Opening the café alone",
         "Teaching Simón new words"
@@ -55,7 +75,7 @@
     {
       "q": "What problem does the inspector find?",
       "options": [
-        "The café's permit is from 2009 and out of date, so it can be closed",
+        "The café's permit is from 2009 and no longer valid, so it can be closed",
         "The kitchen is dirty",
         "Simón has no papers",
         "Jhon Fredy has no contract"
@@ -86,9 +106,9 @@
   "hook": "Fifteen days to save the café's permits, an inspector who never said Altamira's name, and now Simón is gone. Nobody saw him leave.",
   "rereadQuestions": [
     {
-      "q": "What does Simón shout when the inspector says the café can be closed?",
+      "q": "What does Simón shout after the inspector says the café can be closed?",
       "options": [
-        "May I? May I?",
+        "May I come in? May I come in?",
         "Hello? Hello?",
         "Crazy! Crazy!",
         "Waiter wanted!"
@@ -117,8 +137,6 @@
     }
   ],
   "requires": [
-    "c:ademas",
-    "c:bien-y-tu",
     "c:claro-listo",
     "c:hago-salgo-vengo",
     "c:hay",
@@ -127,6 +145,7 @@
     "c:sera-otro-dia",
     "c:tienes",
     "c:voy-a",
+    "c:ya-no",
     "g:adjective-agreement",
     "g:demonstratives",
     "g:direct-objects",
@@ -137,7 +156,6 @@
     "g:imperfect-states",
     "g:indirect-objects",
     "g:ir-a-plans",
-    "g:por-para-1",
     "g:prep-pronouns",
     "g:present-ar",
     "g:present-er-ir",
@@ -153,9 +171,11 @@
     "g:verb-infinitive",
     "g:yo-irregular",
     "p:cerca-de",
+    "p:con-sin",
     "p:days-el-lunes",
     "p:demonstratives-basic",
     "p:la-gente-singular",
+    "p:mas-de-number",
     "p:me-te-nos-objects",
     "p:ordinal-floor",
     "p:ordinals-primer-tercer",
@@ -166,88 +186,91 @@
     "p:possessives-basic",
     "p:presentation-frame",
     "p:quantifiers-basic",
-    "p:saber-conocer",
     "p:senor-don-article",
     "p:ser-profession-no-article",
     "p:telling-time",
     "p:tener-anos",
-    "p:trabajar-de"
+    "p:trabajar-de",
+    "p:viejo-antiguo-mayor",
+    "p:ya-todavia-basic"
   ],
   "lexemes": [
-    "l:además",
+    "l:abrir",
     "l:ahora",
+    "l:almojábana",
+    "l:antes",
     "l:atacar",
     "l:año",
     "l:brazo",
     "l:bueno",
     "l:café",
-    "l:calle",
     "l:cerrar",
     "l:claro",
     "l:coincidencia",
     "l:consejo",
     "l:cuaderno",
     "l:cuándo",
-    "l:cuánto",
-    "l:dar",
     "l:debajo",
     "l:despacio",
+    "l:detrás",
     "l:dormir",
     "l:día",
     "l:encima",
-    "l:entrar",
     "l:error",
     "l:escuchar",
     "l:esquina",
     "l:estar",
-    "l:estudiante",
+    "l:estudiar",
     "l:foto",
     "l:gente",
+    "l:gorra",
     "l:grave",
     "l:hablar",
     "l:historia",
+    "l:hombre",
     "l:hoy",
     "l:ingeniero",
     "l:inspector",
     "l:ir",
-    "l:joven",
+    "l:italiano",
     "l:leer",
     "l:limpio",
     "l:llegar",
     "l:lugar",
     "l:lunes",
+    "l:mandar",
     "l:mañana",
     "l:mesero",
     "l:mirar",
     "l:miércoles",
+    "l:mostrador",
     "l:mostrar",
+    "l:muchacho",
     "l:máquina",
     "l:noche",
     "l:nombrar",
     "l:oficina",
     "l:papel",
-    "l:pared",
     "l:permiso",
-    "l:persona",
     "l:poder",
     "l:presidente",
     "l:proteger",
     "l:puerta",
     "l:querer",
-    "l:quién",
+    "l:revisar",
     "l:robar",
-    "l:saber",
     "l:sacar",
+    "l:sentar",
     "l:ser",
+    "l:servir",
     "l:señor",
-    "l:silla",
     "l:sueño",
     "l:tarde",
     "l:tener",
     "l:terminar",
     "l:tinto",
     "l:trabajar",
-    "l:vender",
-    "l:venir"
+    "l:venir",
+    "l:viejo"
   ]
 }
