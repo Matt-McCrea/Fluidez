@@ -2,7 +2,7 @@
   "id": "ch023",
   "unit": "u09",
   "title": "Ya es tarde",
-  "text": "Vale: Don Hernando, ¿qué hora es?\nHernando: Son las ocho y diez, mija. Y Tomás está otra vez en el cuarto pequeño, el de la harina.\nVale: Tengo que hacer el pan de mañana, y toda la harina está allá.\nHernando: Hay que esperar un rato, mija.\nVale: ¿Esperar? Es mi harina.\nSimón: ¡Hay que esperar, Vale!\nVale abre la puerta del cuarto. En la computadora de Tomás hay cuatro caras de Toronto. Tomás habla en inglés y no ve a Vale.\nTomás: I'm only here for a few months. Then I'm back in Toronto.\nVale no entra. No toma la harina. Cierra la puerta sin hablar y sale del café.\nA las nueve, Tomás sale del cuarto.\nTomás: ¿Y Vale? ¿No tiene que hacer el pan?\nHernando: Se fue a la panadería de Gloria. Abrió la puerta, mijo, y la cerró otra vez.\nTomás: Tranquilo, don Hernando. Vale no sabe inglés.\nHernando: Inglés no sabe. Pero «Toronto» sí lo entiende.\nTomás mira el reloj de Rosa.\nHernando: ¿Te acuerdas de la carta de Rosa? Rosa perdió a su hermano, Tomás. ¿Tú vas a perder a Vale?\nTomás: ¿Qué hora es?\nHernando: Tarde, mijo. Ya es muy tarde.",
+  "text": "Vale: Don Hernando, ¿qué hora es?\nHernando: Son las ocho y diez, mija. Y Tomás está otra vez en el cuarto de la harina.\nVale: Tengo que hacer el pan de mañana, y toda la harina está allá.\nHernando: Hay que esperar un rato, mija.\nVale: ¿Esperar? Es mi harina.\nVale abre la puerta. En la computadora de Tomás hay cuatro caras de Toronto. Tomás habla en inglés y no ve a Vale.\nTomás: I'm only here for a few months. Then I'm back in Toronto.\nVale cierra la puerta sin hablar y sale del café.\nA las nueve, Tomás sale del cuarto.\nTomás: ¿Y Vale? ¿Y el pan?\nHernando: Se fue a la panadería de Gloria. Abrió la puerta, mijo, y la cerró otra vez.\nTomás: Tranquilo, don Hernando. Vale no sabe inglés.\nHernando: Inglés no sabe. Pero «Toronto» sí lo entiende.\nTomás mira el reloj de Rosa.\nHernando: ¿Te acuerdas de la carta de Rosa? Rosa perdió a su hermano, Tomás. ¿Tú vas a perder a Vale?\nTomás: ¿Qué hora es?\nHernando: Tarde, mijo. Ya es muy tarde.",
   "gloss": [
     {
       "es": "mija",
@@ -13,8 +13,8 @@
       "en": "son (a fond way to talk to a younger man)"
     },
     {
-      "es": "el de la harina",
-      "en": "the flour one"
+      "es": "el cuarto de la harina",
+      "en": "the flour room (the storeroom)"
     },
     {
       "es": "I'm only here for a few months. Then I'm back in Toronto.",
@@ -121,7 +121,6 @@
     "c:que-hora-es",
     "c:tengo",
     "c:tengo-que",
-    "c:tienes",
     "c:voy-vas",
     "g:direct-objects",
     "g:estar-location-states",
@@ -159,7 +158,6 @@
     "l:cerrar",
     "l:computadora",
     "l:entender",
-    "l:entrar",
     "l:esperar",
     "l:estar",
     "l:hablar",
@@ -179,7 +177,6 @@
     "l:mirar",
     "l:pan",
     "l:panadería",
-    "l:pequeño",
     "l:perder",
     "l:puerta",
     "l:qué",
@@ -190,7 +187,6 @@
     "l:ser",
     "l:tarde",
     "l:tener",
-    "l:tomar",
     "l:tranquilo",
     "l:ver",
     "l:vez"
