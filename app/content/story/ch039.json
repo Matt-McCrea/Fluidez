@@ -2,7 +2,7 @@
   "id": "ch039",
   "unit": "u15",
   "title": "Treinta y nueve",
-  "text": "Gloria: ¡Tomás! ¿Qué le pasa, mijo? Son las cinco, y usted todavía está en la cama.\nTomás: Estoy bien, doña Gloria. Tengo que abrir el café. Vale llega a las seis.\nTomás se levantó, pero tenía mucha tos y la cara roja. Gloria le trajo un termómetro.\nGloria: Treinta y nueve, mijo. Usted tiene fiebre.\nTomás: No es fiebre. Es cansancio.\nGloria: ¿Cansancio? Con esa tos y esa fiebre, usted tiene gripa. Es la lluvia de anoche. ¡A la cama!\nA las seis y cinco sonó el celular.\nVale: ¿Aló? Tomás, estoy en el café. No hay tinto, y no hay Tomás. ¿Te pasa algo?\nTomás: Qué pena, Vale. Tengo gripa.\nVale: Bueno. No estoy preocupada, ¿eh? Pero hoy no trabajas. Hoy descansas, ¿de acuerdo?\nTomás: Depende. ¿Quién le hace el tinto a don Hernando?\nSimón: ¡Depende! ¡Depende!\nA las siete, Vale llamó otra vez. Detrás de ella, Hernando gritó: ¡El tinto lo hago yo, mijo! ¡Y es mejor que el de Vale!\nVale: No estoy de acuerdo.\nA las doce, otra vez. A las tres, otra vez.\nVale: ¿Todavía tienes fiebre? No estoy preocupada. Es una pregunta y ya.\nGloria: Cuatro llamadas en un día. Esa niña no está preocupada, claro.\nGloria le subió una aguapanela caliente y le contó las noticias del barrio. Don Julio, el vecino de la casa azul, vendió su casa a Altamira.\nGloria: Ahora somos menos en la cuadra, mijo.\nGloria: Cuando yo estaba enferma, Rosa me subía aguapanela todos los días. Ahora me toca a mí.\nGloria: Otra cosa. Don Hernando siempre es muy tranquilo, pero esta semana está nervioso. Ayer lo vi en la droguería con una orden del médico. Tiene cita el jueves, y no le cuenta a nadie.\nTomás: ¿Y usted cómo sabe?\nGloria: Mijo, en este barrio yo lo sé todo.",
+  "text": "Gloria: ¡Tomás! ¿Qué le pasa, mijo? Son las cinco, y usted todavía está en la cama.\nTomás: Tengo que abrir el café, doña Gloria. Vale llega a las seis.\nTomás se levantó, pero tenía mucha tos y la cara roja. Gloria le trajo un termómetro.\nGloria: Treinta y nueve, mijo. Usted tiene fiebre.\nTomás: No es fiebre. Es cansancio.\nGloria: ¿Cansancio? Eso es gripa, mijo. Es la lluvia de anoche. ¡A la cama!\nA las seis y cinco sonó el celular.\nVale: ¿Aló? Tomás, estoy en el café. No hay tinto, y no hay Tomás. ¿Te pasa algo?\nTomás: Qué pena, Vale. Tengo gripa.\nVale: Bueno. No estoy preocupada, ¿eh? Pero hoy no trabajas. Hoy descansas, ¿de acuerdo?\nTomás: Depende. ¿Quién le hace el tinto a don Hernando?\nA las siete, Vale llamó otra vez. Detrás de ella, Hernando gritó: ¡El tinto lo hago yo, mijo! ¡Y es mejor que el de Vale!\nVale: No estoy de acuerdo.\nA las doce, otra vez. A las tres, otra vez.\nVale: ¿Todavía tienes fiebre? No estoy preocupada. Es una pregunta y ya.\nGloria: Cuatro llamadas en un día. Esa niña no está preocupada, claro.\nGloria le subió una aguapanela caliente.\nGloria: Cuando yo estaba enferma, Rosa me subía aguapanela. Ahora me toca a mí.\nGloria: Otra cosa. Don Hernando está nervioso esta semana. Ayer lo vi en la droguería con una orden del médico. Tiene cita el jueves, y no le cuenta a nadie.\nTomás: ¿Y usted cómo sabe?\nGloria: Mijo, en este barrio yo lo sé todo.",
   "gloss": [
     {
       "es": "mijo",
@@ -37,12 +37,8 @@
       "en": "That girl isn't worried, of course."
     },
     {
-      "es": "Ahora somos menos en la cuadra.",
-      "en": "Now there are fewer of us on the block."
-    },
-    {
-      "es": "Rosa me subía aguapanela todos los días",
-      "en": "Rosa brought aguapanela up to me every day"
+      "es": "Rosa me subía aguapanela",
+      "en": "Rosa used to bring me aguapanela"
     },
     {
       "es": "Ahora me toca a mí.",
@@ -87,12 +83,12 @@
       "answer": 0
     },
     {
-      "q": "¿Qué noticia del barrio cuenta Gloria?",
+      "q": "¿Qué hace Gloria por Tomás en la tarde?",
       "options": [
-        "Don Julio le vendió su casa a Altamira",
-        "Altamira vendió la cuadra",
-        "La tienda está cerrada",
-        "Hernando vendió la Burra"
+        "Le sube una aguapanela caliente",
+        "Abre el café",
+        "Le hace el tinto a don Hernando",
+        "Llama a Vale"
       ],
       "answer": 0
     },
@@ -178,22 +174,16 @@
     "g:stem-boot",
     "g:verb-infinitive",
     "g:yo-irregular",
-    "p:bien-bueno",
-    "p:bien-mal-vs-bueno-malo",
     "p:cerca-de",
     "p:cuando-basic",
     "p:days-el-lunes",
     "p:demonstratives-basic",
-    "p:frequency-scale",
     "p:otro-no-article",
     "p:position-de",
-    "p:possessives-basic",
     "p:quantifiers-basic",
     "p:saber-conocer",
     "p:senor-don-article",
     "p:telling-time",
-    "p:todos-los-dias",
-    "p:veces-al",
     "p:ya-todavia-basic"
   ],
   "lexemes": [
@@ -203,22 +193,18 @@
     "l:ahora",
     "l:anoche",
     "l:ayer",
-    "l:azul",
     "l:barrio",
-    "l:bien",
     "l:bueno",
     "l:café",
     "l:caliente",
     "l:cama",
     "l:cansancio",
     "l:cara",
-    "l:casa",
     "l:celular",
     "l:cita",
     "l:claro",
     "l:contar",
     "l:cosa",
-    "l:cuadra",
     "l:cómo",
     "l:depender",
     "l:descansar",
@@ -243,7 +229,6 @@
     "l:médico",
     "l:nervioso",
     "l:niña",
-    "l:noticias",
     "l:orden",
     "l:pasar",
     "l:pena",
@@ -255,7 +240,6 @@
     "l:saber",
     "l:semana",
     "l:ser",
-    "l:siempre",
     "l:sonar",
     "l:subir",
     "l:subirse",
@@ -266,9 +250,6 @@
     "l:tos",
     "l:trabajar",
     "l:traer",
-    "l:tranquilo",
-    "l:vecino",
-    "l:vender",
     "l:ver",
     "l:vez"
   ]
