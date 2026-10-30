@@ -1,0 +1,178 @@
+{
+  "node": "p:no-servir-para-nada",
+  "hook": {
+    "line": "Every kitchen has a drawer of things nobody uses. When you want to say something is truly useless, *no sirve para nada* does it in four words.",
+    "es": "Ese aparato no sirve para nada, es un cacharro.",
+    "en": "That gadget is no use at all; it's a piece of junk."
+  },
+  "examples": [
+    {
+      "es": "Ese aparato no sirve para nada, es un cacharro.",
+      "en": "That gadget is no use at all; it's a piece of junk."
+    },
+    {
+      "es": "Este paraguas no vale para nada.",
+      "en": "This umbrella is completely useless."
+    },
+    {
+      "es": "Esa mesa aquí es un estorbo.",
+      "en": "That table is just in the way here."
+    },
+    {
+      "es": "La cafetera vieja no sirve para nada.",
+      "en": "The old coffee maker is no use at all."
+    },
+    {
+      "es": "Mi celular viejo ya no sirve para nada.",
+      "en": "My old phone is no use at all any more."
+    },
+    {
+      "es": "Esos zapatos no valen para nada.",
+      "en": "Those shoes are completely useless."
+    }
+  ],
+  "rule": "To say something is useless, use *no servir para nada* or *no valer para nada*. Literally: \"it does not serve for anything\".\n\nSpanish happily uses two negatives: *no* before the verb and *nada* after it. English would not.\nThe verb agrees with the thing: *sirve, sirven*; *vale, valen*.\nTo ask: *¿Sirve para algo?*\nTwo useful nouns: *un cacharro* is a junk gadget, and *un estorbo* is something in the way. Both are masculine.",
+  "smallPrint": "Teachers call this a double negative: in Spanish it is the normal way, not a mistake.",
+  "readAndPick": [
+    {
+      "es": "Este paraguas no vale para nada.",
+      "options": [
+        "This umbrella is completely useless.",
+        "These umbrellas are completely useless.",
+        "This umbrella is worth a lot."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Esos zapatos no valen para nada.",
+      "options": [
+        "That shoe is completely useless.",
+        "Those shoes are completely useless.",
+        "Those shoes are worth a lot."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Esa mesa aquí es un estorbo.",
+      "options": [
+        "That table is expensive here.",
+        "That table is useful here.",
+        "That table is just in the way here."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Ese aparato no sirve para nada, es un cacharro.",
+      "options": [
+        "That gadget is no use at all; it's a piece of junk.",
+        "That gadget is very useful; it's a good one.",
+        "Those gadgets are no use at all."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mi celular viejo ya no sirve para nada.",
+      "options": [
+        "My old phone is still useful.",
+        "My old phone is no use at all any more.",
+        "My old phones are no use at all."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Esta máquina sirve para algo?",
+      "options": [
+        "This machine is good for nothing.",
+        "Do you need the machine for something?",
+        "Is this machine good for anything?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Esos cacharros son un estorbo.",
+      "options": [
+        "Those gadgets are in the way.",
+        "That gadget is in the way.",
+        "Those gadgets are very useful."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La cafetera vieja no sirve para nada.",
+      "options": [
+        "The old coffee makers are no use at all.",
+        "The old coffee maker is no use at all.",
+        "The old coffee maker is still useful."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Este paraguas no ___ para nada.* (*vale* or *valen*) This umbrella is completely useless.",
+      "answer": "Este paraguas no vale para nada.",
+      "accept": [],
+      "why": "One umbrella, so the singular *vale*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Esos zapatos no ___ para nada.* (*sirve* or *sirven*) Those shoes are completely useless.",
+      "answer": "Esos zapatos no sirven para nada.",
+      "accept": [
+        "Esos zapatos no valen para nada."
+      ],
+      "why": "Several shoes, so the plural *sirven*."
+    },
+    {
+      "prompt": "Say: That table is just in the way here.",
+      "answer": "Esa mesa aquí es un estorbo.",
+      "accept": [
+        "Esa mesa es un estorbo aquí."
+      ],
+      "why": "*Estorbo* is masculine, so it takes *un*."
+    },
+    {
+      "prompt": "Say: My old phone is no use at all any more.",
+      "answer": "Mi celular viejo ya no sirve para nada.",
+      "accept": [
+        "Mi celular viejo no sirve para nada ya."
+      ],
+      "why": "*Ya no* means \"no longer\", and *nada* closes the sentence."
+    },
+    {
+      "prompt": "Make it plural: *Ese aparato no sirve para nada.*",
+      "answer": "Esos aparatos no sirven para nada.",
+      "accept": [],
+      "why": "Everything goes plural: *esos*, *aparatos*, *sirven*."
+    },
+    {
+      "prompt": "Ask: Is this machine good for anything?",
+      "answer": "¿Esta máquina sirve para algo?",
+      "accept": [],
+      "why": "In a question, *algo* (anything) replaces *nada*."
+    },
+    {
+      "prompt": "Say: That gadget is junk.",
+      "answer": "Ese aparato es un cacharro.",
+      "accept": [],
+      "why": "*Cacharro* is the everyday word for a useless gadget."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Ese aparato no sirve nada.",
+      "right": "Ese aparato no sirve para nada.",
+      "why": "Almost. English \"no use at all\" hides the little word; Spanish needs *para*."
+    },
+    {
+      "wrong": "Esos aparatos no sirve para nada.",
+      "right": "Esos aparatos no sirven para nada.",
+      "why": "Almost. The verb agrees with the thing, and there are several."
+    },
+    {
+      "wrong": "Esa mesa es una estorbo.",
+      "right": "Esa mesa es un estorbo.",
+      "why": "Almost. *Estorbo* is masculine, even when the table is feminine."
+    }
+  ],
+  "personal": "Think of something at home you never use. Say it: *No sirve para nada.*"
+}

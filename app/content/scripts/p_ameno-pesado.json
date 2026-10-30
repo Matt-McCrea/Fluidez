@@ -1,0 +1,174 @@
+{
+  "node": "p:ameno-pesado",
+  "hook": {
+    "line": "When someone asks \"how was it?\", \"good\" is not much help. *Ameno*, *pesado* and *apasionante* tell them how it felt to sit through.",
+    "es": "Fue una charla muy amena.",
+    "en": "It was a very engaging talk."
+  },
+  "examples": [
+    {
+      "es": "Fue una charla muy amena.",
+      "en": "It was a very engaging talk."
+    },
+    {
+      "es": "Ese libro es pesadísimo.",
+      "en": "That book is incredibly heavy going."
+    },
+    {
+      "es": "La final fue apasionante.",
+      "en": "The final was thrilling."
+    },
+    {
+      "es": "La tertulia fue muy amena.",
+      "en": "The discussion evening was very engaging."
+    },
+    {
+      "es": "La película es un poco pesada, pero tiene buen final.",
+      "en": "The film is a bit heavy going, but it has a good ending."
+    },
+    {
+      "es": "El tipo de la mesa cinco es muy pesado.",
+      "en": "The guy at table five is really annoying."
+    }
+  ],
+  "rule": "Three words, three feelings:\n*Ameno*: easy and pleasant to follow. You never check the clock.\n*Pesado*: heavy going, tedious. Said of a person, it means annoying.\n*Apasionante*: gripping, a notch stronger than *ameno*.\n\nThey are adjectives, so they agree: *una charla amena, un libro pesado*. *Apasionante* has one form for both.\nTo go all the way, add *-ísimo*: *pesadísimo, amenísimo*. That already means \"very\", so skip *muy*.\nWatch out: *amable* means kind, not *ameno*.",
+  "smallPrint": "Teachers call this a lexical cluster: a small family of words you learn together and choose between.",
+  "readAndPick": [
+    {
+      "es": "Fue una charla muy amena.",
+      "options": [
+        "It was a very engaging talk.",
+        "It was a very long talk.",
+        "It was a very heavy going talk."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ese libro es pesadísimo.",
+      "options": [
+        "That book is thrilling.",
+        "That book is incredibly heavy going.",
+        "That book is very pleasant."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La final fue apasionante.",
+      "options": [
+        "The final was dull.",
+        "The final was pleasant.",
+        "The final was thrilling."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La película es un poco pesada, pero tiene buen final.",
+      "options": [
+        "The film is a bit heavy going, but it has a good ending.",
+        "The film is thrilling, but it has a bad ending.",
+        "The film is very engaging, but it is long."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El tipo de la mesa cinco es muy pesado.",
+      "options": [
+        "The guy at table five is very engaging.",
+        "The guy at table five is really annoying.",
+        "The guy at table five is thrilling."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La tertulia fue muy amena.",
+      "options": [
+        "The discussion evening was very tiring.",
+        "The discussion evening was thrilling.",
+        "The discussion evening was very engaging."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Esa clase fue pesadísima.",
+      "options": [
+        "That class was incredibly heavy going.",
+        "That class was extremely thrilling.",
+        "That class was a bit pleasant."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Las charlas fueron amenas.",
+      "options": [
+        "The talk was engaging.",
+        "The talks were engaging.",
+        "The talks were heavy going."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Fue una charla muy ___.* (*amena* or *ameno*) It was a very engaging talk.",
+      "answer": "Fue una charla muy amena.",
+      "accept": [],
+      "why": "*Charla* is feminine, so the adjective ends in *-a*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Ese libro es ___.* (*pesadísimo* or *pesadísima*) That book is incredibly heavy going.",
+      "answer": "Ese libro es pesadísimo.",
+      "accept": [],
+      "why": "*Libro* is masculine, so the adjective ends in *-o*."
+    },
+    {
+      "prompt": "Say: The final was thrilling.",
+      "answer": "La final fue apasionante.",
+      "accept": [],
+      "why": "*Apasionante* has the same form for masculine and feminine."
+    },
+    {
+      "prompt": "Say: The talk was very engaging.",
+      "answer": "La charla fue muy amena.",
+      "accept": [
+        "Fue una charla muy amena."
+      ],
+      "why": "*Ameno* is the word for a talk that is pleasant to follow."
+    },
+    {
+      "prompt": "Say: That class was incredibly heavy going.",
+      "answer": "Esa clase fue pesadísima.",
+      "accept": [],
+      "why": "*-ísimo* already means \"very\", and *clase* is feminine."
+    },
+    {
+      "prompt": "Change the subject to a film: *Ese libro es pesadísimo.*",
+      "answer": "Esa película es pesadísima.",
+      "accept": [],
+      "why": "*Película* is feminine, so *esa* and *pesadísima* follow."
+    },
+    {
+      "prompt": "Make it plural: *La charla fue amena.*",
+      "answer": "Las charlas fueron amenas.",
+      "accept": [],
+      "why": "Article, noun, verb and adjective all go plural."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Fue una charla muy amenísima.",
+      "right": "Fue una charla amenísima.",
+      "why": "Almost. *-ísimo* already means \"very\", so drop *muy*."
+    },
+    {
+      "wrong": "Esa película es pesado.",
+      "right": "Esa película es pesada.",
+      "why": "Almost. The adjective agrees with *película*, which is feminine."
+    },
+    {
+      "wrong": "Fue una charla muy amable.",
+      "right": "Fue una charla muy amena.",
+      "why": "Almost. *Amable* describes kind people. For a talk that is pleasant to follow, use *amena*."
+    }
+  ],
+  "personal": "Think of a book, class or show from this week. Say how it felt: *Fue… / Es…*."
+}

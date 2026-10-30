@@ -1,0 +1,176 @@
+{
+  "node": "p:saltar-a-la-vista",
+  "hook": {
+    "line": "Everyone in a café knows when a show was thrown together or made with love. *Salta a la vista* and *se nota* are how you say what is plain to see.",
+    "es": "Salta a la vista que no ensayaron.",
+    "en": "It's glaringly obvious they didn't rehearse."
+  },
+  "examples": [
+    {
+      "es": "Salta a la vista que no ensayaron.",
+      "en": "It's glaringly obvious they didn't rehearse."
+    },
+    {
+      "es": "Se nota que le puso cariño.",
+      "en": "You can tell she put her heart into it."
+    },
+    {
+      "es": "Salta a la vista que el café necesita pintura.",
+      "en": "It's glaringly obvious the café needs paint."
+    },
+    {
+      "es": "Se nota mucho que Vale cocina con ganas.",
+      "en": "You can really tell Vale cooks with enthusiasm."
+    },
+    {
+      "es": "¿Se nota que estoy nervioso?",
+      "en": "Can you tell I'm nervous?"
+    },
+    {
+      "es": "Salta a la vista que la obra costó muy poco.",
+      "en": "It's glaringly obvious the play cost very little."
+    }
+  ],
+  "rule": "*Salta a la vista que…* literally says \"it jumps to the eye that…\": something is so clear nobody needs proof.\n*Se nota que…* is the everyday twin: \"you can tell that…\". Add *mucho* to push it: *Se nota mucho que…*.\n\nAfter either one, use the ordinary verb (*ensayaron*, *cocina*). You are stating a fact you can see, so no subjunctive.\nLink with plain *que*: never *de que*.\nThe fixed phrase is *a la vista*, not *en la vista*.",
+  "smallPrint": "Teachers call *salta a la vista* an impersonal expression of evidence: no one in particular is doing the noticing.",
+  "readAndPick": [
+    {
+      "es": "Salta a la vista que no ensayaron.",
+      "options": [
+        "It's glaringly obvious they didn't rehearse.",
+        "It's glaringly obvious we didn't rehearse.",
+        "It's glaringly obvious she doesn't rehearse."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se nota que le puso cariño.",
+      "options": [
+        "You can tell they put their hearts into it.",
+        "You can tell she put her heart into it.",
+        "She can tell you put your heart into it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Se nota que estoy nervioso?",
+      "options": [
+        "Can you tell he's nervous?",
+        "Are you nervous that it shows?",
+        "Can you tell I'm nervous?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Se nota mucho que Vale cocina con ganas.",
+      "options": [
+        "You can really tell Vale cooks with enthusiasm.",
+        "You can just about tell Vale cooks with enthusiasm.",
+        "Vale can really tell we cook with enthusiasm."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Salta a la vista que el café necesita pintura.",
+      "options": [
+        "It's glaringly obvious the café needed paint.",
+        "It's glaringly obvious the café needs paint.",
+        "It's glaringly obvious the cafés need paint."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Salta a la vista que la obra costó muy poco.",
+      "options": [
+        "It's glaringly obvious the play will cost very little.",
+        "It's glaringly obvious the play costs a lot.",
+        "It's glaringly obvious the play cost very little."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No se nota que está cansada.",
+      "options": [
+        "You can't tell she's tired.",
+        "You can tell she's tired.",
+        "She can't tell you're tired."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se nota que ya no ensayan.",
+      "options": [
+        "You can tell they've just rehearsed.",
+        "You can tell they no longer rehearse.",
+        "You can tell we no longer rehearse."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Salta a la vista ___ no ensayaron.* (*que* or *de que*) It's glaringly obvious they didn't rehearse.",
+      "answer": "Salta a la vista que no ensayaron.",
+      "accept": [],
+      "why": "Spanish links the two parts with plain *que*, as English does with \"that\"."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Se nota ___ le puso cariño.* (*que* or *lo que*) You can tell she put her heart into it.",
+      "answer": "Se nota que le puso cariño.",
+      "accept": [],
+      "why": "After *se nota* comes *que* and then the thing you can tell."
+    },
+    {
+      "prompt": "Say: It's glaringly obvious the café needs paint.",
+      "answer": "Salta a la vista que el café necesita pintura.",
+      "accept": [
+        "Se nota que el café necesita pintura."
+      ],
+      "why": "The verb after *que* is an ordinary present, because it is a plain fact."
+    },
+    {
+      "prompt": "Say: You can tell Vale put her heart into it.",
+      "answer": "Se nota que Vale le puso cariño.",
+      "accept": [
+        "Se nota que Vale puso cariño."
+      ],
+      "why": "*Se nota que* works for anyone: just add who and what."
+    },
+    {
+      "prompt": "Say, a man speaking to a friend: Can you tell I'm nervous?",
+      "answer": "¿Se nota que estoy nervioso?",
+      "accept": [],
+      "why": "The question keeps the same frame, with *estoy* for how you feel."
+    },
+    {
+      "prompt": "Make it negative: *Se nota que está cansada.* (You can tell she's tired.)",
+      "answer": "No se nota que está cansada.",
+      "accept": [],
+      "why": "Put *no* in front of *se nota*: you can't tell."
+    },
+    {
+      "prompt": "Make it stronger: *Se nota que cocina con ganas.* (You can really tell she cooks with enthusiasm.)",
+      "answer": "Se nota mucho que cocina con ganas.",
+      "accept": [],
+      "why": "*Mucho* goes right after *se nota* and turns the volume up."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Salta a la vista de que no ensayaron.",
+      "right": "Salta a la vista que no ensayaron.",
+      "why": "Almost. English \"obvious that\" has no extra word, and neither does Spanish: plain *que*."
+    },
+    {
+      "wrong": "Salta a la vista que no ensayaran.",
+      "right": "Salta a la vista que no ensayaron.",
+      "why": "Almost. It is a plain fact you can see, so the verb stays in the ordinary past, with no subjunctive."
+    },
+    {
+      "wrong": "Salta en la vista que no ensayaron.",
+      "right": "Salta a la vista que no ensayaron.",
+      "why": "Almost. The set phrase is *a la vista*, and it does not change."
+    }
+  ],
+  "personal": "Think of something that shows when someone cares, or doesn't. Say it: *Se nota que…*."
+}

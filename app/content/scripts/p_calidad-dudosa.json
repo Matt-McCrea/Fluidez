@@ -1,0 +1,174 @@
+{
+  "node": "p:calidad-dudosa",
+  "hook": {
+    "line": "Whether you run a café or review one, sooner or later you have to say how good something is. *De calidad…* gives you a measured, grown-up way to do it.",
+    "es": "Los materiales son de calidad dudosa.",
+    "en": "The materials are of questionable quality."
+  },
+  "examples": [
+    {
+      "es": "Los materiales son de calidad dudosa.",
+      "en": "The materials are of questionable quality."
+    },
+    {
+      "es": "Ofrecemos productos de calidad superior.",
+      "en": "We offer products of superior quality."
+    },
+    {
+      "es": "Hay que mejorar la calidad del servicio.",
+      "en": "The quality of the service has to be improved."
+    },
+    {
+      "es": "Ese café es de muy buena calidad.",
+      "en": "That coffee is of very good quality."
+    },
+    {
+      "es": "El jugo es de calidad media.",
+      "en": "The juice is of average quality."
+    },
+    {
+      "es": "La tela del vestuario es de mala calidad.",
+      "en": "The fabric of the costume is poor quality."
+    }
+  ],
+  "rule": "English says a thing \"is good quality\". Spanish says it is *of* a quality: *es de calidad…*.\n\nTwo patterns:\n*de calidad* + adjective: *dudosa, media, superior, inferior, deficiente*.\n*de* + adjective + *calidad*: *buena, mala, primera, alta, baja*.\n\n*Calidad* is feminine, so the adjective ends in *-a* after it and agrees with it, not with the thing: *un café de calidad superior*.\nTo talk about raising standards: *mejorar la calidad*, *garantizar la calidad*.\n*Pasable* means barely acceptable. It is not praise.",
+  "smallPrint": "Teachers call *de* + noun a descriptive complement: it works like an adjective glued onto the noun.",
+  "readAndPick": [
+    {
+      "es": "Los materiales son de calidad dudosa.",
+      "options": [
+        "The materials are of questionable quality.",
+        "The materials are of superior quality.",
+        "The materials are of average quality."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ofrecemos productos de calidad superior.",
+      "options": [
+        "They offer products of inferior quality.",
+        "We offer products of average quality.",
+        "We offer products of superior quality."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Ese café es de muy buena calidad.",
+      "options": [
+        "That coffee is of very poor quality.",
+        "That coffee is of very good quality.",
+        "That coffee is of questionable quality."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La tela del vestuario es de mala calidad.",
+      "options": [
+        "The fabric of the costume is poor quality.",
+        "The fabric of the costume is good quality.",
+        "The costume is made of cheap fabric."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El jugo es de calidad media.",
+      "options": [
+        "The juice is of low quality.",
+        "The juice is of high quality.",
+        "The juice is of average quality."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Hay que mejorar la calidad del servicio.",
+      "options": [
+        "The service is of very high quality.",
+        "The quality of the service has to be improved.",
+        "The quality of the service is questionable."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La pintura es de calidad baja.",
+      "options": [
+        "The paint is of low quality.",
+        "The paint is of high quality.",
+        "The paint is of average quality."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La comida es pasable, nada más.",
+      "options": [
+        "The food is excellent, nothing more.",
+        "The food is awful, nothing more.",
+        "The food is barely acceptable, nothing more."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Los materiales son de calidad ___.* (*dudosa* or *dudoso*) The materials are of questionable quality.",
+      "answer": "Los materiales son de calidad dudosa.",
+      "accept": [],
+      "why": "The adjective agrees with *calidad*, which is feminine."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Ese café es ___ muy buena calidad.* (*de* or *con*) That coffee is of very good quality.",
+      "answer": "Ese café es de muy buena calidad.",
+      "accept": [],
+      "why": "Spanish says something is *de* a quality."
+    },
+    {
+      "prompt": "Say: The fabric of the costume is poor quality.",
+      "answer": "La tela del vestuario es de mala calidad.",
+      "accept": [],
+      "why": "*De mala calidad* is the plain way to say poor quality."
+    },
+    {
+      "prompt": "Say, as a business: We offer products of superior quality.",
+      "answer": "Ofrecemos productos de calidad superior.",
+      "accept": [],
+      "why": "*Calidad superior* goes after *de calidad*, with *-a* because *calidad* is feminine."
+    },
+    {
+      "prompt": "Say the opposite: *El jugo es de buena calidad.* (The juice is of poor quality.)",
+      "answer": "El jugo es de mala calidad.",
+      "accept": [
+        "El jugo es de baja calidad."
+      ],
+      "why": "Swap *buena* for *mala* (or *baja*) and the verdict flips."
+    },
+    {
+      "prompt": "Make it plural: *La tela es de calidad media.*",
+      "answer": "Las telas son de calidad media.",
+      "accept": [],
+      "why": "Article, noun and verb go plural, but *calidad* stays singular."
+    },
+    {
+      "prompt": "Say: The quality of the service has to be improved.",
+      "answer": "Hay que mejorar la calidad del servicio.",
+      "accept": [],
+      "why": "*Hay que* + a verb says what has to be done."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Los materiales tienen calidad dudosa.",
+      "right": "Los materiales son de calidad dudosa.",
+      "why": "Almost. Spanish does not say things \"have\" a quality here. They *are of* it."
+    },
+    {
+      "wrong": "Los materiales son de calidad dudoso.",
+      "right": "Los materiales son de calidad dudosa.",
+      "why": "Almost. *Calidad* is feminine, so the adjective ends in *-a*."
+    },
+    {
+      "wrong": "Es una calidad buena.",
+      "right": "Es de buena calidad.",
+      "why": "Almost. English makes \"good quality\" a noun phrase; Spanish prefers *de buena calidad*."
+    }
+  ],
+  "personal": "Think of something you own and rate it. Say it: *Es de… calidad*."
+}

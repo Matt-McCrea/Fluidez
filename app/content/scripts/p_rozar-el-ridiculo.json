@@ -1,0 +1,172 @@
+{
+  "node": "p:rozar-el-ridiculo",
+  "hook": {
+    "line": "Some endings are so bad they almost become funny, and some performances are so good you run out of words. *Rozar* lets you say \"it nearly gets there\" in both directions.",
+    "es": "El final roza el ridículo.",
+    "en": "The ending borders on the ridiculous."
+  },
+  "examples": [
+    {
+      "es": "El final roza el ridículo.",
+      "en": "The ending borders on the ridiculous."
+    },
+    {
+      "es": "Su actuación rozó la perfección.",
+      "en": "Her performance bordered on perfection."
+    },
+    {
+      "es": "Esa idea roza el disparate.",
+      "en": "That idea borders on nonsense."
+    },
+    {
+      "es": "La escena roza lo absurdo.",
+      "en": "The scene borders on the absurd."
+    },
+    {
+      "es": "El decorado roza la perfección.",
+      "en": "The set borders on perfection."
+    },
+    {
+      "es": "Su discurso rozó la grosería.",
+      "en": "His speech bordered on rudeness."
+    }
+  ],
+  "rule": "*Rozar* really means \"to brush against\". For a verdict it says something comes very close to an extreme without quite crossing it.\n\nIt works for bad (*el ridículo, el disparate, la grosería*) and for good (*la perfección*).\nThere is no preposition: English \"borders *on*\", Spanish simply *roza el ridículo*.\nThe noun needs its article: *el ridículo, la perfección*. For an adjective idea, use *lo*: *lo absurdo*.\nPut the verb in the tense you need: *roza* now, *rozó* for something finished.",
+  "smallPrint": "Teachers call this a verb with a direct object that has no preposition: *rozar* takes its noun straight, with no *a* or *en*.",
+  "readAndPick": [
+    {
+      "es": "El final roza el ridículo.",
+      "options": [
+        "The ending borders on the ridiculous.",
+        "The ending avoids the ridiculous.",
+        "The ending was ridiculous."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Su actuación rozó la perfección.",
+      "options": [
+        "Her performance borders on perfection.",
+        "Her performance bordered on perfection.",
+        "Her performance was far from perfection."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La escena roza lo absurdo.",
+      "options": [
+        "The scene explains the absurd.",
+        "The scene is perfectly normal.",
+        "The scene borders on the absurd."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Esa idea roza el disparate.",
+      "options": [
+        "That idea borders on nonsense.",
+        "That idea makes sense.",
+        "That idea was nonsense."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El decorado roza la perfección.",
+      "options": [
+        "The set is far from perfect.",
+        "The set borders on perfection.",
+        "The set bordered on perfection."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Su discurso rozó la grosería.",
+      "options": [
+        "His speech borders on rudeness.",
+        "His speech is very polite.",
+        "His speech bordered on rudeness."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La obra rozó el ridículo.",
+      "options": [
+        "The play bordered on the ridiculous.",
+        "The play borders on the ridiculous.",
+        "The play was not ridiculous."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tu respuesta roza lo absurdo.",
+      "options": [
+        "Her answer borders on the absurd.",
+        "Your answer borders on the absurd.",
+        "Your answer bordered on the absurd."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *El final roza ___ ridículo.* (*el* or *en el*) The ending borders on the ridiculous.",
+      "answer": "El final roza el ridículo.",
+      "accept": [],
+      "why": "*Rozar* takes its noun directly, with no preposition."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Su actuación ___ la perfección.* (*rozó* or *roza*) Her performance bordered on perfection.",
+      "answer": "Su actuación rozó la perfección.",
+      "accept": [],
+      "why": "It is over, so use the past *rozó*."
+    },
+    {
+      "prompt": "Say: The scene borders on the absurd.",
+      "answer": "La escena roza lo absurdo.",
+      "accept": [],
+      "why": "An adjective idea takes *lo*: *lo absurdo*."
+    },
+    {
+      "prompt": "Say: The set borders on perfection.",
+      "answer": "El decorado roza la perfección.",
+      "accept": [],
+      "why": "*Perfección* is a noun, so it takes *la*."
+    },
+    {
+      "prompt": "Say: His speech bordered on rudeness.",
+      "answer": "Su discurso rozó la grosería.",
+      "accept": [],
+      "why": "A finished event uses *rozó*."
+    },
+    {
+      "prompt": "Put it in the past: *El final roza el ridículo.*",
+      "answer": "El final rozó el ridículo.",
+      "accept": [],
+      "why": "Only the verb changes, from *roza* to *rozó*."
+    },
+    {
+      "prompt": "Say: Her performance borders on perfection.",
+      "answer": "Su actuación roza la perfección.",
+      "accept": [],
+      "why": "The same verb praises when the noun is good."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El final roza en el ridículo.",
+      "right": "El final roza el ridículo.",
+      "why": "Almost. English says \"borders on\", but *rozar* needs no preposition."
+    },
+    {
+      "wrong": "El final roza ridículo.",
+      "right": "El final roza el ridículo.",
+      "why": "Almost. The noun keeps its article, *el*."
+    },
+    {
+      "wrong": "La escena roza absurdo.",
+      "right": "La escena roza lo absurdo.",
+      "why": "Almost. For an adjective used as an idea, add *lo*: *lo absurdo*."
+    }
+  ],
+  "personal": "Think of a film, a meal or a plan that nearly went too far. Say it: *Roza…*."
+}

@@ -1,0 +1,172 @@
+{
+  "node": "p:resulta-adj-que",
+  "hook": {
+    "line": "Sometimes you want to give a verdict that sounds thought through, not just blurted out. *Resulta… que* says: after thinking about it, this is how it strikes me.",
+    "es": "Resulta absurdo que nadie se diera cuenta antes.",
+    "en": "It's absurd that nobody noticed before."
+  },
+  "examples": [
+    {
+      "es": "Resulta absurdo que nadie se diera cuenta antes.",
+      "en": "It's absurd that nobody noticed before."
+    },
+    {
+      "es": "A la larga resulta más barato reparar que comprar.",
+      "en": "In the long run it works out cheaper to repair than to buy."
+    },
+    {
+      "es": "Me parece de muy mal gusto reírse de eso.",
+      "en": "I think it's in very bad taste to laugh at that."
+    },
+    {
+      "es": "Resulta vergonzoso que el dueño no pida perdón.",
+      "en": "It's shameful that the owner doesn't apologise."
+    },
+    {
+      "es": "Resulta raro que Vale no venga hoy.",
+      "en": "It's strange that Vale isn't coming today."
+    },
+    {
+      "es": "Resulta increíble que tanta gente aplauda eso.",
+      "en": "It's incredible that so many people applaud that."
+    }
+  ],
+  "rule": "*Resulta* + adjective is a verdict that follows from reflection. It is a touch more thoughtful than *es*.\n\nTwo shapes:\n*Resulta* + adjective + *que* + subjunctive, for a reaction: *Resulta raro que Vale no venga*. You are judging the fact, not announcing it, so the verb is subjunctive.\n*Resulta* + adjective + infinitive, for something general: *resulta más barato reparar*.\n\nLink with plain *que*, never *de que*.\n*De buen / mal gusto* judges whether something is socially fitting, not how well it is made.\nCompare *salta a la vista que*, which states a fact and takes the indicative.",
+  "smallPrint": "Teachers call this an impersonal expression of evaluation. It triggers the subjunctive because it reacts to the fact.",
+  "readAndPick": [
+    {
+      "es": "Resulta absurdo que nadie se diera cuenta antes.",
+      "options": [
+        "It's absurd that nobody noticed before.",
+        "Nobody noticed that it was absurd.",
+        "It's absurd that nobody will notice."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "A la larga resulta más barato reparar que comprar.",
+      "options": [
+        "In the long run buying works out cheaper than repairing.",
+        "In the long run repairing works out cheaper than buying.",
+        "In the long run repairing is cheap."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me parece de muy mal gusto reírse de eso.",
+      "options": [
+        "I like laughing at that.",
+        "I think it's in very good taste to laugh at that.",
+        "I think it's in very bad taste to laugh at that."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Resulta vergonzoso que el dueño no pida perdón.",
+      "options": [
+        "It's shameful that the owner doesn't apologise.",
+        "The owner is ashamed to apologise.",
+        "It's shameful that the owner apologised."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Resulta raro que Vale no venga hoy.",
+      "options": [
+        "It's strange that Vale is coming today.",
+        "It's strange that Vale isn't coming today.",
+        "It's strange that Vale didn't come yesterday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Resulta increíble que tanta gente aplauda eso.",
+      "options": [
+        "It's incredible that so many people booed that.",
+        "It's incredible that nobody applauds that.",
+        "It's incredible that so many people applaud that."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La decoración es de muy buen gusto.",
+      "options": [
+        "The decoration is in very good taste.",
+        "The decoration is in very bad taste.",
+        "The decoration is very expensive."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Resulta más fácil escribir una crítica que defenderla.",
+      "options": [
+        "It works out harder to write a review than to defend it.",
+        "It works out easier to write a review than to defend it.",
+        "It works out easy to defend a review."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Resulta vergonzoso que el dueño no ___ perdón.* (*pide* or *pida*) It's shameful that the owner doesn't apologise.",
+      "answer": "Resulta vergonzoso que el dueño no pida perdón.",
+      "accept": [],
+      "why": "A verdict on a fact takes the subjunctive, *pida*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *A la larga resulta más barato ___ que comprar.* (*reparar* or *repara*) In the long run it works out cheaper to repair than to buy.",
+      "answer": "A la larga resulta más barato reparar que comprar.",
+      "accept": [],
+      "why": "For something general, use the infinitive."
+    },
+    {
+      "prompt": "Say: It's strange that Vale isn't coming today.",
+      "answer": "Resulta raro que Vale no venga hoy.",
+      "accept": [],
+      "why": "After *resulta raro que*, the verb is subjunctive: *venga*."
+    },
+    {
+      "prompt": "Say: I think it's in very bad taste to laugh at that.",
+      "answer": "Me parece de muy mal gusto reírse de eso.",
+      "accept": [],
+      "why": "*De muy mal gusto* judges whether something is socially fitting."
+    },
+    {
+      "prompt": "Say: It's incredible that so many people applaud that.",
+      "answer": "Resulta increíble que tanta gente aplauda eso.",
+      "accept": [],
+      "why": "Singular *gente* takes singular *aplauda*, in the subjunctive."
+    },
+    {
+      "prompt": "Make it positive: *Resulta raro que Vale no venga hoy.*",
+      "answer": "Resulta raro que Vale venga hoy.",
+      "accept": [],
+      "why": "Take out the *no* and the subjunctive stays."
+    },
+    {
+      "prompt": "Say: In the long run it works out cheaper to repair.",
+      "answer": "A la larga resulta más barato reparar.",
+      "accept": [],
+      "why": "*A la larga* means \"in the long run\"."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Resulta absurdo que nadie se dio cuenta antes.",
+      "right": "Resulta absurdo que nadie se diera cuenta antes.",
+      "why": "Almost. You are judging the fact, not just reporting it, so the verb is subjunctive."
+    },
+    {
+      "wrong": "Resulta raro de que Vale no venga hoy.",
+      "right": "Resulta raro que Vale no venga hoy.",
+      "why": "Almost. Spanish links with plain *que*, no *de*."
+    },
+    {
+      "wrong": "A la larga resulta más barato reparar de comprar.",
+      "right": "A la larga resulta más barato reparar que comprar.",
+      "why": "Almost. Comparing two things takes *que*, as in \"cheaper than\"."
+    }
+  ],
+  "personal": "Say one thing that strikes you as absurd or strange. Use *Resulta… que…*."
+}
