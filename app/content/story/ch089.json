@@ -1,0 +1,363 @@
+{
+  "id": "ch089",
+  "unit": "u30",
+  "title": "Binoculares",
+  "text": "El lunes festivo, a las siete, la mesa de Hernando seguía sin gorra, sin periódico y sin Hernando.\nVale: Lo llamé seis veces. Me da miedo que le pase algo.\nTomás: Me imagino. Es mi culpa. Voy a buscarlo.\nA las ocho encontraron la Burra en la Séptima, delante del edificio de Hoteles Altamira. Hernando estaba dentro, con un termo de tinto y unos binoculares.\nVale: ¡Qué alivio! Pensé que estaba en el hospital.\nHernando: Estoy vigilando, mija. Un festivo sin gente es el día perfecto para un negocio sucio.\nTomás: Hernando, ayer usted oyó una sola frase.\nHernando: Una frase basta. Me molesta que usted piense en esa plata. Pero no me sorprende. Usted es un extranjero con apellido Herrera.\nTomás: Tiene razón. Llegué con un plan de treinta días. A mí me sorprende que ahora me importe tanto. Si vendo, no es por la plata. Me da miedo que Vale lo pierda todo por mi culpa.\nVale no dijo nada, pero le tomó la mano.\nHernando: Joaquín me dijo: «Cuide a mi hermana». Ahora me toca cuidar su café. Siento que me fui sin terminar el chocolate.\nTomás: Y yo también lo siento.\nEntonces llegó un carro negro, y un señor de chaqueta gris caminó hacia el edificio.\nVale: ¿Ese no es el jefe de permisos? ¿El de la toalla?\nHernando: El mismo. ¿Y qué hace en un hotel un festivo, a las ocho de la mañana?\nTomás tomó tres fotos.\nSimón: ¡Qué rabia! ¡Qué rabia!\nNadie trajo a Simón, pero ahí estaba, debajo del asiento. El señor de la chaqueta gris se dio la vuelta.\nHernando: ¡Abajo todos!\nLos tres se agacharon. Simón saludó con un ala.\nHernando: Ese loro nos va a llevar a la cárcel.\nEn una ventana del tercer piso, Altamira le dio la mano al señor.\nTomás miró las fotos: ahí estaba la mano de Altamira.\nHernando: Mijo, usted ya no es tan extranjero.\nTomás le mandó las fotos a Mariana.\nMariana: «¡No puede ser! Mañana a las nueve, en la cafetería de la alcaldía. Traigan las fotos. Y no traigan al loro».",
+  "gloss": [
+    {
+      "es": "seguía sin gorra, sin periódico y sin Hernando",
+      "en": "still had no cap, no newspaper and no Hernando"
+    },
+    {
+      "es": "Lo llamé seis veces.",
+      "en": "I've called him six times."
+    },
+    {
+      "es": "Me da miedo que le pase algo.",
+      "en": "I'm scared something has happened to him."
+    },
+    {
+      "es": "Me imagino.",
+      "en": "I can imagine."
+    },
+    {
+      "es": "termo",
+      "en": "thermos"
+    },
+    {
+      "es": "binoculares",
+      "en": "binoculars"
+    },
+    {
+      "es": "¡Qué alivio!",
+      "en": "What a relief."
+    },
+    {
+      "es": "Estoy vigilando",
+      "en": "I'm keeping watch"
+    },
+    {
+      "es": "un negocio sucio",
+      "en": "a dirty deal"
+    },
+    {
+      "es": "sucio",
+      "en": "dirty"
+    },
+    {
+      "es": "Una frase basta.",
+      "en": "One sentence is enough."
+    },
+    {
+      "es": "Pero no me sorprende.",
+      "en": "But it doesn't surprise me."
+    },
+    {
+      "es": "A mí me sorprende que ahora me importe tanto.",
+      "en": "What surprises me is that I care so much now."
+    },
+    {
+      "es": "Me da miedo que Vale lo pierda todo por mi culpa.",
+      "en": "I'm scared Vale will lose everything because of me."
+    },
+    {
+      "es": "Ahora me toca cuidar su café.",
+      "en": "Now it's my turn to look after her café."
+    },
+    {
+      "es": "Siento que me fui sin terminar el chocolate.",
+      "en": "I'm sorry I left without finishing my chocolate."
+    },
+    {
+      "es": "Y yo también lo siento.",
+      "en": "And I'm sorry too."
+    },
+    {
+      "es": "se dio la vuelta",
+      "en": "turned around"
+    },
+    {
+      "es": "¡Abajo todos!",
+      "en": "Everybody down."
+    },
+    {
+      "es": "se agacharon",
+      "en": "ducked"
+    },
+    {
+      "es": "ala",
+      "en": "wing"
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "cárcel",
+      "en": "jail"
+    },
+    {
+      "es": "Ese loro nos va a llevar a la cárcel.",
+      "en": "That parrot is going to land us in jail."
+    },
+    {
+      "es": "usted ya no es tan extranjero",
+      "en": "you're not such a foreigner any more"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Where do Tomás and Vale find Hernando?",
+      "options": [
+        "At his flat",
+        "In the Burra, outside Altamira's building",
+        "At the mayor's office",
+        "At Gloria's bakery"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why does Tomás say he might sell?",
+      "options": [
+        "He wants to go back to Toronto",
+        "He needs the money",
+        "He is scared Vale could lose everything because of him",
+        "Mariana told him to"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "What does Tomás photograph?",
+      "options": [
+        "The permits chief going into Altamira's building",
+        "Altamira's new hotel",
+        "Simón on the car roof",
+        "A letter from the lawyers"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué hace Simón cuando el señor mira la Burra?",
+      "options": [
+        "Se esconde",
+        "Saluda con un ala",
+        "Se duerme",
+        "Llora"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does Hernando mean when he says Tomás is \"not such a foreigner any more\"?",
+      "options": [
+        "Tomás's Spanish has improved",
+        "Tomás now cares about the café like one of them",
+        "Tomás has a Colombian passport",
+        "Tomás has stopped wearing his Toronto jacket"
+      ],
+      "answer": 1
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "How many times did Vale call Hernando before they went looking for him?",
+      "options": [
+        "Twice",
+        "Three times",
+        "Six times",
+        "She didn't call"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Where is Altamira standing when he shakes the man's hand?",
+      "options": [
+        "In the street",
+        "At a third floor window",
+        "Inside the black car",
+        "At the café door"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does Mariana ask them not to bring tomorrow?",
+      "options": [
+        "The photo",
+        "Hernando",
+        "The parrot",
+        "The Burra"
+      ],
+      "answer": 2
+    }
+  ],
+  "hook": "Tomás has photos of Altamira shaking hands with the head of the permits office on a public holiday. Tomorrow, in the mayor's office cafeteria, Marta's nephew shows them what is in that email.",
+  "requires": [
+    "c:ayer-anoche",
+    "c:entonces-bueno",
+    "c:fui",
+    "c:me-imagino",
+    "c:me-regala",
+    "c:me-toca",
+    "c:no-me-digas",
+    "c:puede-ser",
+    "c:que-alivio",
+    "c:que-susto",
+    "c:tienes",
+    "c:voy-a",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:commands-usted",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:negative-commands",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:subj-emotion",
+    "g:subj-emotion-intro",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:con-sin",
+    "p:days-el-lunes",
+    "p:de-los-ojos-azules",
+    "p:el-agua-fria",
+    "p:indefinites-basic",
+    "p:la-gente-singular",
+    "p:llevar-traer",
+    "p:me-da-miedo",
+    "p:me-te-nos-objects",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:para-inf",
+    "p:pensar-en",
+    "p:personal-a",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:tambien-tampoco",
+    "p:telling-time",
+    "p:tener-razon"
+  ],
+  "lexemes": [
+    "l:abajo",
+    "l:agacharse",
+    "l:ahora",
+    "l:ahí",
+    "l:ala",
+    "l:alcaldía",
+    "l:alivio",
+    "l:apellido",
+    "l:asiento",
+    "l:ayer",
+    "l:bastar",
+    "l:buscar",
+    "l:cafetería",
+    "l:café",
+    "l:caminar",
+    "l:carro",
+    "l:chaqueta",
+    "l:chocolate",
+    "l:cuidar",
+    "l:culpa",
+    "l:cárcel",
+    "l:dar",
+    "l:darse",
+    "l:debajo",
+    "l:decir",
+    "l:delante",
+    "l:dentro",
+    "l:día",
+    "l:edificio",
+    "l:encontrar",
+    "l:estar",
+    "l:extranjero",
+    "l:festivo",
+    "l:foto",
+    "l:frase",
+    "l:gente",
+    "l:gorra",
+    "l:gris",
+    "l:hacer",
+    "l:hermana",
+    "l:hospital",
+    "l:hotel",
+    "l:imaginarse",
+    "l:importar",
+    "l:ir",
+    "l:jefe",
+    "l:llamar",
+    "l:llegar",
+    "l:llevar",
+    "l:loro",
+    "l:lunes",
+    "l:mandar",
+    "l:mano",
+    "l:mañana",
+    "l:mesa",
+    "l:miedo",
+    "l:mija",
+    "l:mijo",
+    "l:mirar",
+    "l:molestar",
+    "l:negocio",
+    "l:negro",
+    "l:oír",
+    "l:pasar",
+    "l:pensar",
+    "l:perder",
+    "l:perfecto",
+    "l:periódico",
+    "l:permiso",
+    "l:piso",
+    "l:plan",
+    "l:plata",
+    "l:poder",
+    "l:qué",
+    "l:rabia",
+    "l:razón",
+    "l:saludar",
+    "l:seguir",
+    "l:sentir",
+    "l:ser",
+    "l:señor",
+    "l:sorprender",
+    "l:sucio",
+    "l:tener",
+    "l:terminar",
+    "l:termo",
+    "l:tinto",
+    "l:toalla",
+    "l:tocar",
+    "l:tomar",
+    "l:traer",
+    "l:vender",
+    "l:ventana",
+    "l:vez",
+    "l:vigilar",
+    "l:vuelta"
+  ]
+}

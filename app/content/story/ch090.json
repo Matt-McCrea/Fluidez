@@ -1,0 +1,370 @@
+{
+  "id": "ch090",
+  "unit": "u30",
+  "title": "El peor tinto de Bogotá",
+  "text": "La cafetería de la alcaldía tenía el peor tinto de Bogotá y un montón de empleados con sueño.\nMariana: Rosa nos traía aquí de niños, Tomás. Y tú me interrumpías todo el tiempo.\nTomás: Y tú todavía me interrumpes.\nLos dos sonrieron con nostalgia.\nMariana: ¿Celos, Vale?\nVale: ¿Celosa yo? Es el tinto, que está horrible.\nA las nueve llegó Wilson, el sobrino de doña Marta, con gafas de sol, un periódico delante de la cara y una copia del correo.\n«Doctor Rengifo: le confirmo su excursión a San Andrés. Gracias por su ayuda con los permisos».\nMariana estaba emocionada.\nMariana: ¡Una prueba! Llevo un año con esta ilusión.\nWilson: Me da rabia que mi jefe venda la ciudad por una semana de playa. Pero mi nombre no puede salir.\nMariana: Qué lástima. Pero la fiscal no necesita tu nombre.\nWilson lloró un poco detrás del periódico.\nWilson: Perdón. Soy muy sensible. Y tenía la ilusión de un jefe honesto.\nTomás llamó a Altamira allí mismo.\nTomás: Dígale al señor Altamira que mi respuesta es no. Ni hoy, ni el lunes, ni nunca.\nVale lo miró con orgullo y con miedo.\nVale: Me duele que perdamos esa plata. Pero qué alivio.\nEn el café, Hernando estaba emocionado.\nHernando: Ese «ni nunca» era de Rosa. ¡Qué orgullo! ¡Qué nostalgia!\nSimón: ¡Ni nunca! ¡Ni nunca!\nHernando: ¿Y usted por qué está brava, mija?\nVale: No estoy brava, y no soy sensible. Me da rabia que Mariana tenga tantos recuerdos de él.\nHernando: Eso se llama celos. Usted está celosa.\nVale: Usted tiene una personalidad horrible.\nHernando: Y usted tiene la personalidad de Rosa. Por eso la quiero tanto.\nEsa noche, Tomás lavó un montón de tazas sin hablar. Ni se rio con el chiste de Hernando.\nVale: Me da pena que estés así. Mañana es tu día libre, y no te quiero ver aquí.\nVale: Hace siete años que abro este café, con alegría o con tristeza. Mañana lo abro con alegría.\nTomás se fue sin discutir, y Vale sintió una tristeza rara. Qué lástima: ella quería pelear.",
+  "gloss": [
+    {
+      "es": "un montón de empleados con sueño",
+      "en": "a whole lot of sleepy staff"
+    },
+    {
+      "es": "Rosa nos traía aquí de niños",
+      "en": "Rosa used to bring us here when we were kids"
+    },
+    {
+      "es": "Y tú me interrumpías todo el tiempo.",
+      "en": "And you used to interrupt me all the time."
+    },
+    {
+      "es": "sonrieron con nostalgia",
+      "en": "smiled, feeling nostalgic"
+    },
+    {
+      "es": "¿Celos, Vale?",
+      "en": "Jealous, Vale?"
+    },
+    {
+      "es": "con gafas de sol, un periódico delante de la cara y una copia del correo",
+      "en": "with sunglasses, a newspaper in front of his face and a copy of the email"
+    },
+    {
+      "es": "le confirmo su excursión a San Andrés",
+      "en": "I confirm your trip to San Andrés"
+    },
+    {
+      "es": "Mariana estaba emocionada.",
+      "en": "Mariana was moved."
+    },
+    {
+      "es": "Llevo un año con esta ilusión.",
+      "en": "I've been hoping for this for a year."
+    },
+    {
+      "es": "Me da rabia que mi jefe venda la ciudad por una semana de playa.",
+      "en": "It makes me mad that my boss is selling the city for a week at the beach."
+    },
+    {
+      "es": "mi nombre no puede salir",
+      "en": "my name can't come out"
+    },
+    {
+      "es": "Pero la fiscal no necesita tu nombre.",
+      "en": "But the prosecutor doesn't need your name."
+    },
+    {
+      "es": "lloró un poco detrás del periódico",
+      "en": "cried a little behind the newspaper"
+    },
+    {
+      "es": "Y tenía la ilusión de un jefe honesto.",
+      "en": "And I was hoping for an honest boss."
+    },
+    {
+      "es": "allí mismo",
+      "en": "right there"
+    },
+    {
+      "es": "Me duele que perdamos esa plata.",
+      "en": "It hurts that we're losing that money."
+    },
+    {
+      "es": "Pero qué alivio.",
+      "en": "But what a relief."
+    },
+    {
+      "es": "¡Qué orgullo! ¡Qué nostalgia!",
+      "en": "I'm so proud. It makes me so nostalgic."
+    },
+    {
+      "es": "¿Y usted por qué está brava, mija?",
+      "en": "And why are you angry, dear?"
+    },
+    {
+      "es": "Me da rabia que Mariana tenga tantos recuerdos de él.",
+      "en": "It makes me mad that Mariana has so many memories of him."
+    },
+    {
+      "es": "Eso se llama celos.",
+      "en": "That's called jealousy."
+    },
+    {
+      "es": "Ni se rio con el chiste de Hernando.",
+      "en": "He didn't even laugh at Hernando's joke."
+    },
+    {
+      "es": "Me da pena que estés así.",
+      "en": "It makes me sad to see you like this."
+    },
+    {
+      "es": "con alegría o con tristeza",
+      "en": "in happy times and sad times"
+    },
+    {
+      "es": "Vale sintió una tristeza rara",
+      "en": "Vale felt a strange sadness"
+    },
+    {
+      "es": "ella quería pelear",
+      "en": "she wanted a fight"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does the email to Doctor Rengifo show?",
+      "options": [
+        "Altamira arranged his trip to San Andrés and thanked him for the permits",
+        "Joaquín sold his half",
+        "The hotel has been cancelled",
+        "Wilson wants a job at the hotel"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Wilson say about himself?",
+      "options": [
+        "He is very sensitive",
+        "He works for Altamira",
+        "He knew Rosa",
+        "He is leaving the country"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Tomás tell Altamira's office?",
+      "options": [
+        "That he needs more time",
+        "That his answer is no: not today, not Monday, not ever",
+        "That he will sell half",
+        "That he wants a meeting"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Por qué está brava Vale, según Hernando?",
+      "options": [
+        "Porque tiene celos de Mariana",
+        "Porque el pan salió mal",
+        "Porque Tomás vendió el café",
+        "Porque Simón habla mucho"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Vale feel sad at the end?",
+      "options": [
+        "Tomás argued with her",
+        "Tomás went home without arguing, which is not like him",
+        "Hernando left",
+        "Mariana took the photos"
+      ],
+      "answer": 1
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What did Tomás always do to Mariana when they were children?",
+      "options": [
+        "Ate her bread",
+        "Interrupted her",
+        "Hid her glasses",
+        "Called her names"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does Wilson hide behind when he arrives?",
+      "options": [
+        "A menu",
+        "A newspaper",
+        "A cap",
+        "Mariana"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Whose personality does Hernando say Vale has?",
+      "options": [
+        "Mariana's",
+        "Simón's",
+        "Rosa's",
+        "His own"
+      ],
+      "answer": 2
+    }
+  ],
+  "hook": "Vale has given Tomás his first day off in months, and told him not to show his face at the café. Tomorrow she finds out what the café is like without him.",
+  "requires": [
+    "c:aqui-tiene",
+    "c:bien-y-tu",
+    "c:era",
+    "c:me-regala",
+    "c:perdon-disculpe",
+    "c:que-alivio",
+    "c:quiero",
+    "c:se-llama",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:hace-que-desde",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:le-doubling",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-emotion",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:con-sin",
+    "p:costar-pagar",
+    "p:days-el-lunes",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:doler",
+    "p:exclamations-basic",
+    "p:frequency-scale",
+    "p:gracias-por",
+    "p:llevar-traer",
+    "p:me-da-miedo",
+    "p:me-da-pena-que",
+    "p:me-da-rabia-que",
+    "p:me-duele",
+    "p:me-duele-que",
+    "p:me-encanta-que",
+    "p:me-te-nos-objects",
+    "p:personal-a",
+    "p:poco-un-poco",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:senor-don-article",
+    "p:telling-time",
+    "p:todos-los-dias",
+    "p:ya-todavia-basic"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:alcaldía",
+    "l:alegría",
+    "l:alivio",
+    "l:allí",
+    "l:aquí",
+    "l:ayuda",
+    "l:año",
+    "l:bravo",
+    "l:cafetería",
+    "l:café",
+    "l:cara",
+    "l:celos",
+    "l:celoso",
+    "l:chiste",
+    "l:ciudad",
+    "l:confirmar",
+    "l:copia",
+    "l:correo",
+    "l:dar",
+    "l:decir",
+    "l:delante",
+    "l:detrás",
+    "l:discutir",
+    "l:doctor",
+    "l:doler",
+    "l:día",
+    "l:emocionado",
+    "l:empleado",
+    "l:estar",
+    "l:excursión",
+    "l:fiscal",
+    "l:gafas",
+    "l:hablar",
+    "l:hacer",
+    "l:honesto",
+    "l:horrible",
+    "l:hoy",
+    "l:ilusión",
+    "l:interrumpir",
+    "l:irse",
+    "l:jefe",
+    "l:lavar",
+    "l:libre",
+    "l:llamar",
+    "l:llamarse",
+    "l:llegar",
+    "l:llevar",
+    "l:llorar",
+    "l:lunes",
+    "l:lástima",
+    "l:mañana",
+    "l:miedo",
+    "l:mija",
+    "l:mirar",
+    "l:montón",
+    "l:necesitar",
+    "l:niño",
+    "l:noche",
+    "l:nombre",
+    "l:nostalgia",
+    "l:orgullo",
+    "l:pelearse",
+    "l:pena",
+    "l:peor",
+    "l:perder",
+    "l:perdón",
+    "l:periódico",
+    "l:permiso",
+    "l:personalidad",
+    "l:plata",
+    "l:playa",
+    "l:poder",
+    "l:prueba",
+    "l:querer",
+    "l:qué",
+    "l:rabia",
+    "l:raro",
+    "l:recuerdo",
+    "l:respuesta",
+    "l:reír",
+    "l:salir",
+    "l:semana",
+    "l:sensible",
+    "l:sentir",
+    "l:ser",
+    "l:señor",
+    "l:sobrino",
+    "l:sol",
+    "l:sonreír",
+    "l:sueño",
+    "l:taza",
+    "l:tener",
+    "l:tiempo",
+    "l:tinto",
+    "l:traer",
+    "l:tristeza",
+    "l:vender",
+    "l:ver"
+  ]
+}
