@@ -1,0 +1,363 @@
+{
+  "id": "ch093",
+  "unit": "u31",
+  "title": "Nuestra juventud",
+  "text": "A las seis, Hernando encontró a Tomás dormido en la mesa, con la chaqueta de Joaquín puesta.\nHernando: Esa noche yo le presté mi chaqueta. Nunca me la devolvió.\nTomás: Llevamos toda la noche leyendo.\nEn el sobre gordo había fotos de Rosa y Joaquín de jóvenes. Atrás, Rosa había escrito: «Nuestra juventud. Robé estas fotos del álbum de mamá».\nHernando: Así era en su juventud. Ese álbum lo tengo yo.\n«1985. Querido Joaquín: Mamá decía que los hermanos se separan, pero al final siempre se reconcilian. Nosotros nos separamos hace siete años. ¿Cuándo nos vamos a reconciliar? Tengo miedo a morirme antes».\nVale: Y en 1988: «Hoy pagué lo último de tu deuda. Es nuestro secreto. Nadie lo sabe, menos Hernando, y Hernando no habla».\nSimón: ¡Secreto! ¡Secreto!\nHernando: Hernando no. El loro, sí.\nVale: ¿Y el motivo? ¿La plata?\nHernando: La plata, sí. Pero el motivo de tantos años sin hablar fue el orgullo.\nEntonces Tomás leyó una carta de 1993, y de repente se quedó callado.\n«Querido Joaquín: Hoy tu sobrino se fue a Canadá con su esposa y el niño. En esta familia todos quieren emigrar, y yo me quedo con las tazas. Al niño le di una almojábana, y se la comió toda».\nTomás: El niño era yo. Mis papás decidieron emigrar.\nVale le tomó la mano.\nTomás: En Toronto no sabía nada de mis antepasados. Ahora sé que mis antepasados guardaban todo en cajas.\nHernando: Usted heredó un café, una caja de cartas y un loro maleducado.\nTomás: Una herencia rara.\nHernando: La peor herencia es otra. Usted heredó la actitud de Rosa, esa actitud de guardar todo para después. Usted extraña a Vale, ella lo extraña a usted, y nadie dice nada.\nVale miró el piso.\nA las siete llegó Jhon Fredy.\nJhon Fredy: Buenos días, colegas. Mi abuela también guarda todo. Es la memoria de la familia.\nVale: Rosa era la memoria del café. Sabía el tinto de todos los colegas de Hernando.\nQuedaba el último sobre, de 2024.\nHernando: Ese no lo tienen que abrir. Rosa me lo leyó a mí.",
+  "gloss": [
+    {
+      "es": "con la chaqueta de Joaquín puesta",
+      "en": "wearing Joaquín's jacket"
+    },
+    {
+      "es": "Esa noche yo le presté mi chaqueta. Nunca me la devolvió.",
+      "en": "That night I lent him my jacket. He never gave it back."
+    },
+    {
+      "es": "Llevamos toda la noche leyendo.",
+      "en": "We've been reading all night."
+    },
+    {
+      "es": "fotos de Rosa y Joaquín de jóvenes",
+      "en": "photos of Rosa and Joaquín when they were young"
+    },
+    {
+      "es": "Rosa había escrito",
+      "en": "Rosa had written"
+    },
+    {
+      "es": "Nuestra juventud.",
+      "en": "Our youth."
+    },
+    {
+      "es": "Así era en su juventud.",
+      "en": "That's what she was like when she was young."
+    },
+    {
+      "es": "Ese álbum lo tengo yo.",
+      "en": "I'm the one who has that album."
+    },
+    {
+      "es": "los hermanos",
+      "en": "brothers and sisters"
+    },
+    {
+      "es": "los hermanos se separan, pero al final siempre se reconcilian",
+      "en": "brothers and sisters drift apart, but in the end they always make up"
+    },
+    {
+      "es": "Tengo miedo a morirme antes.",
+      "en": "I'm afraid of dying first."
+    },
+    {
+      "es": "Hoy pagué lo último de tu deuda.",
+      "en": "Today I paid the last of your debt."
+    },
+    {
+      "es": "Nadie lo sabe, menos Hernando",
+      "en": "Nobody knows, except Hernando"
+    },
+    {
+      "es": "Hernando no. El loro, sí.",
+      "en": "Hernando doesn't. The parrot does."
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "el motivo de tantos años sin hablar fue el orgullo",
+      "en": "the reason for all those years without speaking was pride"
+    },
+    {
+      "es": "se quedó callado",
+      "en": "went quiet"
+    },
+    {
+      "es": "Hoy tu sobrino se fue a Canadá",
+      "en": "Today your nephew left for Canada"
+    },
+    {
+      "es": "En esta familia todos quieren emigrar, y yo me quedo con las tazas.",
+      "en": "In this family everybody wants to emigrate, and I'm left with the cups."
+    },
+    {
+      "es": "Mis papás decidieron emigrar.",
+      "en": "My parents decided to emigrate."
+    },
+    {
+      "es": "se la comió toda",
+      "en": "he ate the whole thing"
+    },
+    {
+      "es": "mis antepasados guardaban todo en cajas",
+      "en": "my ancestors kept everything in boxes"
+    },
+    {
+      "es": "maleducado",
+      "en": "rude"
+    },
+    {
+      "es": "Una herencia rara.",
+      "en": "A strange inheritance."
+    },
+    {
+      "es": "Usted heredó la actitud de Rosa",
+      "en": "You inherited Rosa's attitude"
+    },
+    {
+      "es": "esa actitud de guardar todo para después",
+      "en": "that habit of keeping everything for later"
+    },
+    {
+      "es": "Buenos días, colegas.",
+      "en": "Morning, colleagues."
+    },
+    {
+      "es": "Es la memoria de la familia.",
+      "en": "She's the family's memory."
+    },
+    {
+      "es": "Sabía el tinto de todos los colegas de Hernando.",
+      "en": "She knew how every one of Hernando's colleagues took his coffee."
+    },
+    {
+      "es": "Quedaba el último sobre",
+      "en": "The last envelope was left"
+    },
+    {
+      "es": "Ese no lo tienen que abrir.",
+      "en": "You don't have to open that one."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Hernando go quiet when he sees the jacket?",
+      "options": [
+        "He thinks Tomás stole it",
+        "He remembers that Joaquín left without a jacket that night and he lent him his own",
+        "He wants it for himself",
+        "He has never seen it before"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does the 1993 letter reveal to Tomás?",
+      "options": [
+        "That Rosa had sold the café",
+        "That the little boy who emigrated to Canada was Tomás himself",
+        "That Joaquín had come back",
+        "That Hernando had written the letters"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does Hernando say Tomás really inherited from Rosa?",
+      "options": [
+        "Her recipes",
+        "Her attitude of saying nothing and keeping everything for later",
+        "Her debts",
+        "Her taxi"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Qué hace Hernando con el sobre de 2024?",
+      "options": [
+        "Dice que no lo tienen que abrir porque Rosa se lo leyó",
+        "Lo tira a la basura",
+        "Se lo da a Jhon Fredy",
+        "Lo manda por correo"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Hernando knew about the letters all along, because Rosa once read one to him. Tomorrow he tells them about that night, and about the morning he waited outside with the Burra.",
+  "rereadQuestions": [
+    {
+      "q": "What had Rosa written on the back of the photos?",
+      "options": [
+        "Our youth. I stole these photos from Mum's album. Don't tell her.",
+        "For my grandson",
+        "Medellín, 1990",
+        "Dear Joaquín"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What did Rosa give the little boy at the airport?",
+      "options": [
+        "A cup",
+        "An almojábana",
+        "A letter",
+        "A photo"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Who has the family photo album now?",
+      "options": [
+        "Gloria",
+        "Hernando",
+        "Vale's mother",
+        "Jhon Fredy's grandmother"
+      ],
+      "answer": 1
+    }
+  ],
+  "requires": [
+    "c:al-final",
+    "c:de-repente",
+    "c:entonces-bueno",
+    "c:era",
+    "c:hola-buenos-dias",
+    "c:me-quedo-con",
+    "c:querido-querida",
+    "c:tengo",
+    "c:tienes",
+    "c:vamos-a",
+    "g:adjective-agreement",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:gender-articles",
+    "g:hace-ago",
+    "g:hace-que-desde",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:pluperfect",
+    "g:possessives",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:comerse-todo",
+    "p:container-de",
+    "p:dates-years",
+    "p:demonstratives-basic",
+    "p:extranar",
+    "p:frequency-scale",
+    "p:hedge-knowledge",
+    "p:ir-a-venir-de-place",
+    "p:masculine-plural-mixed",
+    "p:me-da-miedo-que",
+    "p:me-te-nos-objects",
+    "p:miedo-a",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:saber-conocer",
+    "p:se-reciproco",
+    "p:telling-time",
+    "p:tener-hambre",
+    "p:time-sequence-basic",
+    "p:todos-los-dias"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:abuela",
+    "l:actitud",
+    "l:ahora",
+    "l:almojábana",
+    "l:antepasado",
+    "l:antes",
+    "l:atrás",
+    "l:año",
+    "l:bueno",
+    "l:café",
+    "l:caja",
+    "l:callado",
+    "l:carta",
+    "l:chaqueta",
+    "l:colega",
+    "l:comer",
+    "l:cuándo",
+    "l:dar",
+    "l:decidir",
+    "l:decir",
+    "l:después",
+    "l:deuda",
+    "l:devolver",
+    "l:dormir",
+    "l:día",
+    "l:emigrar",
+    "l:encontrar",
+    "l:escribir",
+    "l:esposa",
+    "l:extrañar",
+    "l:familia",
+    "l:final",
+    "l:foto",
+    "l:gordo",
+    "l:guardar",
+    "l:hablar",
+    "l:hacer",
+    "l:heredar",
+    "l:herencia",
+    "l:hermanos",
+    "l:hoy",
+    "l:irse",
+    "l:joven",
+    "l:juventud",
+    "l:leer",
+    "l:llegar",
+    "l:llevar",
+    "l:loro",
+    "l:maleducado",
+    "l:mamá",
+    "l:mano",
+    "l:memoria",
+    "l:mesa",
+    "l:miedo",
+    "l:mirar",
+    "l:morir",
+    "l:motivo",
+    "l:niño",
+    "l:noche",
+    "l:orgullo",
+    "l:pagar",
+    "l:papá",
+    "l:peor",
+    "l:piso",
+    "l:plata",
+    "l:poner",
+    "l:prestar",
+    "l:quedar",
+    "l:quedarse",
+    "l:querer",
+    "l:raro",
+    "l:reconciliarse",
+    "l:repente",
+    "l:robar",
+    "l:saber",
+    "l:secreto",
+    "l:separarse",
+    "l:ser",
+    "l:siempre",
+    "l:sobre",
+    "l:sobrino",
+    "l:taza",
+    "l:tener",
+    "l:tinto",
+    "l:tomar",
+    "l:álbum"
+  ]
+}

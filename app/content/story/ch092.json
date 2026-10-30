@@ -1,0 +1,368 @@
+{
+  "id": "ch092",
+  "unit": "u31",
+  "title": "La chaqueta detrás de la puerta",
+  "text": "Vale abrió el primer sobre con un cuchillo de cocina. Era medianoche. Tomás leyó despacio, para los dos.\n«Bogotá, diciembre de 1978. Querido Joaquín: Hace un mes que te fuiste, y todavía no he lavado tu taza».\n«Esa noche, cuando llegaste, yo ya había cerrado el café. Y tú ya habías decidido todo».\n«Papá y mamá habían guardado plata toda la vida. Con esa plata, tú y yo habíamos comprado este edificio un año antes. Y tú querías venderlo en una noche».\n«Tú le habías pedido plata prestada a gente peligrosa, y no podías pagar. Nunca me lo habías contado. Ya nos habíamos distanciado mucho antes de esa noche».\nTomás paró. Vale le sirvió más tinto.\nVale: Sigue.\n«Te dije cosas horribles. Te dije que ya no eras mi hermano. Y tú huiste como un ladrón, sin tu chaqueta. La chaqueta todavía está en la cocina, detrás de la puerta».\nSimón bajó de la planta. Caminó encima de la carta y la pisó con mucho cuidado, como un juez.\nVale: ¡Simón! ¡No pises a Rosa!\nSimón: ¡No te lo vas a creer, Vale! ¡Creer! ¡Creer!\nTomás: Ya lo sabemos, Simón.\nEn el papel había un círculo viejo. Tinto, o tal vez Rosa lloró aquí.\n«En la calle todo es campaña, y todos prometen un país nuevo. Yo no quiero un país nuevo. Quiero a mi hermano».\n«Doña Carmen abrió una cafetería al frente. Dice que ahora somos competencia. Eso no me importa. Sin ti, esta casa está muy callada».\nVale: Siete años vi esa chaqueta, y nunca pregunté nada.\nVale fue a la cocina y volvió con una chaqueta vieja de pana. Tomás se la puso. Le quedaba perfecta.\nVale: No te lo vas a creer. Hernando tiene una foto de Joaquín con esta chaqueta, y eres igual a él.\nTomás: Altamira cree que esta guerra empezó con su hotel. Pero había empezado mucho antes.\nVale: Joaquín huyó esa noche, y Rosa se quedó aquí, con la guerra y con la chaqueta.\nEl segundo sobre era más gordo que los otros, y dentro había algo duro.",
+  "gloss": [
+    {
+      "es": "cuchillo de cocina",
+      "en": "kitchen knife"
+    },
+    {
+      "es": "Era medianoche.",
+      "en": "It was midnight."
+    },
+    {
+      "es": "Tomás leyó despacio, para los dos.",
+      "en": "Tomás read slowly, for the two of them."
+    },
+    {
+      "es": "todavía no he lavado tu taza",
+      "en": "I still haven't washed your cup"
+    },
+    {
+      "es": "yo ya había cerrado el café",
+      "en": "I had already closed the café"
+    },
+    {
+      "es": "tú ya habías decidido todo",
+      "en": "you had already decided everything"
+    },
+    {
+      "es": "Papá y mamá habían guardado plata toda la vida.",
+      "en": "Mum and Dad had saved money all their lives."
+    },
+    {
+      "es": "tú y yo habíamos comprado este edificio un año antes",
+      "en": "you and I had bought this building a year before"
+    },
+    {
+      "es": "Tú le habías pedido plata prestada a gente peligrosa",
+      "en": "You had borrowed money from dangerous people"
+    },
+    {
+      "es": "Nunca me lo habías contado.",
+      "en": "You had never told me."
+    },
+    {
+      "es": "Ya nos habíamos distanciado mucho antes de esa noche.",
+      "en": "We had already drifted far apart long before that night."
+    },
+    {
+      "es": "Vale le sirvió más tinto.",
+      "en": "Vale poured him more coffee."
+    },
+    {
+      "es": "Sigue.",
+      "en": "Keep going."
+    },
+    {
+      "es": "tú huiste como un ladrón",
+      "en": "you ran off like a thief"
+    },
+    {
+      "es": "la pisó con mucho cuidado",
+      "en": "he stepped on it very carefully"
+    },
+    {
+      "es": "¡No pises a Rosa!",
+      "en": "Don't step on Rosa."
+    },
+    {
+      "es": "No te lo vas a creer.",
+      "en": "You won't believe it."
+    },
+    {
+      "es": "un círculo viejo",
+      "en": "an old ring"
+    },
+    {
+      "es": "Tinto, o tal vez Rosa lloró aquí.",
+      "en": "Coffee, or maybe Rosa cried here."
+    },
+    {
+      "es": "En la calle todo es campaña",
+      "en": "Out on the street it's all election campaign"
+    },
+    {
+      "es": "Dice que ahora somos competencia.",
+      "en": "She says we're competitors now."
+    },
+    {
+      "es": "Sin ti, esta casa está muy callada.",
+      "en": "Without you, this house is very quiet."
+    },
+    {
+      "es": "Siete años vi esa chaqueta, y nunca pregunté nada.",
+      "en": "For seven years I saw that jacket, and I never asked anything."
+    },
+    {
+      "es": "pana",
+      "en": "corduroy"
+    },
+    {
+      "es": "Le quedaba perfecta.",
+      "en": "It fitted him perfectly."
+    },
+    {
+      "es": "eres igual a él",
+      "en": "you're just like him"
+    },
+    {
+      "es": "Pero había empezado mucho antes.",
+      "en": "But it had started long before."
+    },
+    {
+      "es": "Era más gordo que los otros",
+      "en": "It was fatter than the others"
+    }
+  ],
+  "questions": [
+    {
+      "q": "According to the 1978 letter, how had Rosa and Joaquín bought the building?",
+      "options": [
+        "With their parents' lifelong savings",
+        "With a bank loan",
+        "With Joaquín's card winnings",
+        "With money from Hernando"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why did Joaquín want to sell the building?",
+      "options": [
+        "He wanted to move to Medellín",
+        "He had borrowed money from dangerous people and could not pay it back",
+        "Doña Carmen offered him a lot of money",
+        "Rosa wanted to open a bigger café"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why is Simón's \"¡No te lo vas a creer!\" funny at that moment?",
+      "options": [
+        "Because nobody had said anything surprising",
+        "Because he says it while standing on the letter they can hardly believe",
+        "Because Vale says it first",
+        "Because he says it in English"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Qué trae Vale de la cocina?",
+      "options": [
+        "La chaqueta vieja de Joaquín",
+        "Una foto de Hernando",
+        "Otra caja de cartas",
+        "Un tinto para Simón"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "The second envelope is fatter than the others, and there is something hard inside it. Tomás and Vale are going to read until morning, and Hernando has a key to the front door.",
+  "rereadQuestions": [
+    {
+      "q": "What had Rosa still not done a month after Joaquín left?",
+      "options": [
+        "Opened the café",
+        "Washed his cup",
+        "Paid the bills",
+        "Called Hernando"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Who opened a café across the street in 1978?",
+      "options": [
+        "Doña Gloria",
+        "Doña Carmen",
+        "Beatriz",
+        "Altamira"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does Rosa say she wants, while everyone in the street promises a new country?",
+      "options": [
+        "A new café",
+        "Her brother",
+        "A new president",
+        "A quiet street"
+      ],
+      "answer": 1
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:era",
+    "c:igual",
+    "c:no-te-lo-vas-a-creer",
+    "c:querido-querida",
+    "c:quiero",
+    "c:tienes",
+    "c:todavia-no",
+    "c:voy-vas",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:comparatives",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hace-que-desde",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:negative-commands",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:perfecto-experience",
+    "g:pluperfect",
+    "g:prep-pronouns",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:reflexive-routine",
+    "g:reported-past-basic",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:verbs-of-change",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:cuando-basic",
+    "p:dates-years",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:ir-a-venir-de-place",
+    "p:la-gente-singular",
+    "p:me-te-nos-objects",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:personal-a",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:talla-numero",
+    "p:telling-time",
+    "p:todos-los-dias",
+    "p:viejo-antiguo-mayor",
+    "p:ya-todavia-basic"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:ahora",
+    "l:antes",
+    "l:aquí",
+    "l:año",
+    "l:bajar",
+    "l:cafetería",
+    "l:café",
+    "l:callado",
+    "l:calle",
+    "l:caminar",
+    "l:campaña",
+    "l:carta",
+    "l:casa",
+    "l:cerrar",
+    "l:chaqueta",
+    "l:cocina",
+    "l:competencia",
+    "l:comprar",
+    "l:contar",
+    "l:cosa",
+    "l:creer",
+    "l:cuchillo",
+    "l:cuidado",
+    "l:círculo",
+    "l:decidir",
+    "l:decir",
+    "l:dentro",
+    "l:despacio",
+    "l:detrás",
+    "l:diciembre",
+    "l:distanciarse",
+    "l:duro",
+    "l:edificio",
+    "l:empezar",
+    "l:encima",
+    "l:era",
+    "l:estar",
+    "l:foto",
+    "l:frente",
+    "l:gente",
+    "l:gordo",
+    "l:guardar",
+    "l:guerra",
+    "l:hacer",
+    "l:hermano",
+    "l:horrible",
+    "l:hotel",
+    "l:huir",
+    "l:igual",
+    "l:importar",
+    "l:ir",
+    "l:irse",
+    "l:juez",
+    "l:ladrón",
+    "l:lavar",
+    "l:leer",
+    "l:llegar",
+    "l:llorar",
+    "l:mamá",
+    "l:medianoche",
+    "l:mes",
+    "l:noche",
+    "l:nuevo",
+    "l:pagar",
+    "l:pan",
+    "l:papel",
+    "l:papá",
+    "l:parar",
+    "l:país",
+    "l:pedir",
+    "l:peligroso",
+    "l:perfecto",
+    "l:pisar",
+    "l:planta",
+    "l:plata",
+    "l:poder",
+    "l:ponerse",
+    "l:preguntar",
+    "l:prestar",
+    "l:prometer",
+    "l:puerta",
+    "l:quedar",
+    "l:quedarse",
+    "l:querer",
+    "l:saber",
+    "l:seguir",
+    "l:ser",
+    "l:servir",
+    "l:sobre",
+    "l:taza",
+    "l:tener",
+    "l:tinto",
+    "l:vender",
+    "l:ver",
+    "l:vez",
+    "l:vida",
+    "l:viejo",
+    "l:volver"
+  ]
+}

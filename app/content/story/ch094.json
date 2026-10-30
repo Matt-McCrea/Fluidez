@@ -1,0 +1,345 @@
+{
+  "id": "ch094",
+  "unit": "u31",
+  "title": "Cuarenta y siete sobres",
+  "text": "Hernando puso su gorra encima del último sobre.\nHernando: Era 2009, y llovía. Yo había vuelto por mi paraguas, y Rosa estaba en esta mesa con un sobre. De repente se puso a llorar.\nHernando: Yo estaba enamorado desde 1983. Esa noche pensaba decírselo todo, pero ella se puso a hablar de Joaquín.\nSimón: ¡Qué pena con usted, Hernando!\nHernando: Justo eso pensé yo.\nVale se rio, y después lloró.\nHernando: Me dijo que le había escrito todos los años, el día de su cumpleaños. Me contó que había ido al correo muchas veces, pero en la puerta siempre se daba la vuelta.\nHernando: Me dijo que una carta sin respuesta era peor que una herida. Una herida, por lo menos, se cierra algún día.\nHernando: Rosa supo otra cosa. En el bar de la Séptima era fácil engañar a Joaquín: un jugador le hacía trampa todas las noches.\nVale: Entonces Joaquín no era un tonto. Era una víctima.\nHernando: Las dos cosas, mija.\nTomás: Ella escribía todos los años, y yo la llamaba una vez al año, en Navidad. Siempre le decía que estaba muy ocupado.\nVale: Tú eras un niño, Tomás. Y Rosa nunca quiso engañar a nadie. Pero esperó demasiado.\nHernando: Esa noche le dije: «Mañana a las ocho la llevo al correo». A las ocho estaba aquí, con la Burra. Ella me dio un tinto y me dijo que no.\nTomás quitó la gorra y abrió el sobre.\n«2024. Querido Joaquín: Esta es la última. Estoy vieja y cansada. Si tú ya no estás, que la lea tu familia. El edificio también es tuyo, y de ellos. Nunca lo vendí. Tu hermana, Rosa».\nVale: Cuarenta y seis años sin hablar. Ahora el beneficio puede ser para la familia de Joaquín.\nTomás: Yo soy su sobrino nieto. Si tiene familia, también es la mía.\nHernando: Y si esa familia firma, Altamira no compra nada.\nTomás le mandó una foto de la carta a Mariana. Mariana contestó en un minuto: «Mañana a las diez les presento a una abogada. Esa carta vale más que un hotel».",
+  "gloss": [
+    {
+      "es": "Yo había vuelto por mi paraguas",
+      "en": "I had come back for my umbrella"
+    },
+    {
+      "es": "paraguas",
+      "en": "umbrella"
+    },
+    {
+      "es": "De repente se puso a llorar.",
+      "en": "Suddenly she started crying."
+    },
+    {
+      "es": "Yo estaba enamorado desde 1983.",
+      "en": "I had been in love since 1983."
+    },
+    {
+      "es": "Esa noche pensaba decírselo todo",
+      "en": "That night I was going to tell her everything"
+    },
+    {
+      "es": "¡Qué pena con usted, Hernando!",
+      "en": "How embarrassing for you, Hernando."
+    },
+    {
+      "es": "Justo eso pensé yo.",
+      "en": "That's exactly what I thought."
+    },
+    {
+      "es": "Me dijo que le había escrito todos los años",
+      "en": "She told me she had written to him every year"
+    },
+    {
+      "es": "Me contó que había ido al correo muchas veces",
+      "en": "She told me she had gone to the post office many times"
+    },
+    {
+      "es": "en la puerta siempre se daba la vuelta",
+      "en": "at the door she always turned back"
+    },
+    {
+      "es": "una carta sin respuesta era peor que una herida",
+      "en": "a letter with no answer was worse than a wound"
+    },
+    {
+      "es": "Una herida, por lo menos, se cierra algún día.",
+      "en": "A wound, at least, closes one day."
+    },
+    {
+      "es": "era fácil engañar a Joaquín",
+      "en": "it was easy to trick Joaquín"
+    },
+    {
+      "es": "un jugador le hacía trampa todas las noches",
+      "en": "a player cheated him every night"
+    },
+    {
+      "es": "víctima",
+      "en": "victim"
+    },
+    {
+      "es": "Y Rosa nunca quiso engañar a nadie. Pero esperó demasiado.",
+      "en": "And Rosa never meant to fool anyone. But she waited too long."
+    },
+    {
+      "es": "Mañana a las ocho la llevo al correo.",
+      "en": "Tomorrow at eight I'll take you to the post office."
+    },
+    {
+      "es": "Si tú ya no estás, que la lea tu familia.",
+      "en": "If you're no longer here, let your family read it."
+    },
+    {
+      "es": "y de ellos",
+      "en": "and theirs"
+    },
+    {
+      "es": "el beneficio puede ser para la familia de Joaquín",
+      "en": "Joaquín's family could be the ones who benefit"
+    },
+    {
+      "es": "sobrino nieto",
+      "en": "great nephew"
+    },
+    {
+      "es": "Si tiene familia, también es la mía.",
+      "en": "If he has family, they're my family too."
+    },
+    {
+      "es": "Esa carta vale más que un hotel.",
+      "en": "That letter is worth more than a hotel."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why didn't Hernando tell Rosa he loved her that night in 2009?",
+      "options": [
+        "Simón interrupted him",
+        "She started talking about Joaquín, and he kept quiet again",
+        "He was married to Inés",
+        "He had to drive his taxi"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why did Rosa never post the letters?",
+      "options": [
+        "She had no stamps",
+        "She was afraid that a letter with no answer would hurt more than a wound",
+        "Hernando told her not to",
+        "She did not know where Joaquín lived, so it was pointless"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What else did Rosa find out about the bar on the Séptima?",
+      "options": [
+        "That Joaquín was hiding there",
+        "That a player had been cheating Joaquín every night",
+        "That Joaquín had paid his debt",
+        "That Altamira owned it"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Qué dice la última carta de Rosa?",
+      "options": [
+        "Que el edificio también es de Joaquín y de su familia",
+        "Que Rosa vendió el edificio",
+        "Que Joaquín tiene que pagar",
+        "Que Tomás tiene que volver a Toronto"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why is the last letter suddenly important for the café?",
+      "options": [
+        "It proves Rosa was rich",
+        "If Joaquín's family exists and signs, Altamira cannot buy the building",
+        "It has Altamira's signature",
+        "It is worth a lot of money to collectors"
+      ],
+      "answer": 1
+    }
+  ],
+  "hook": "Mariana is bringing a lawyer at ten tomorrow, and Rosa's last letter is now the most valuable paper in the café. If Joaquín left a family, it could beat all of Altamira's money.",
+  "rereadQuestions": [
+    {
+      "q": "Why had Hernando come back to the café that rainy night?",
+      "options": [
+        "For his cap",
+        "For his umbrella",
+        "For a coffee",
+        "For the Burra's keys"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "On what day did Rosa write to Joaquín every year?",
+      "options": [
+        "On Christmas Day",
+        "On his birthday",
+        "On the day he left",
+        "On her own birthday"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "How often did Tomás call Rosa from Toronto?",
+      "options": [
+        "Every Sunday",
+        "Once a year, at Christmas",
+        "Never",
+        "Every month"
+      ],
+      "answer": 1
+    }
+  ],
+  "requires": [
+    "c:a-cuantas-cuotas",
+    "c:de-repente",
+    "c:entonces-bueno",
+    "c:era",
+    "c:me-conto-que",
+    "c:puede-ser",
+    "c:que-pena",
+    "c:querido-querida",
+    "c:tienes",
+    "c:una-vez",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:comparatives",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indefinites",
+    "g:indirect-objects",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:pluperfect",
+    "g:por-para-1",
+    "g:possessives-stressed",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:quantifiers",
+    "g:reflexive-routine",
+    "g:reported-past-basic",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:that-clauses",
+    "g:verbs-of-change",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:con-sin",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:ir-a-venir-de-place",
+    "p:lavarse-las-manos",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:pensaba-pero",
+    "p:pensar-en",
+    "p:personal-a",
+    "p:ponerse-a",
+    "p:ponerse-a-inf",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:te-presento-a",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:todos-los-dias",
+    "p:veces-al",
+    "p:viejo-antiguo-mayor"
+  ],
+  "lexemes": [
+    "l:abogado",
+    "l:abrir",
+    "l:ahora",
+    "l:aquí",
+    "l:año",
+    "l:bar",
+    "l:beneficio",
+    "l:cansado",
+    "l:carta",
+    "l:cerrar",
+    "l:comprar",
+    "l:contar",
+    "l:contestar",
+    "l:correo",
+    "l:cosa",
+    "l:cumpleaños",
+    "l:dar",
+    "l:darse",
+    "l:decir",
+    "l:después",
+    "l:día",
+    "l:edificio",
+    "l:enamorado",
+    "l:encima",
+    "l:engañar",
+    "l:escribir",
+    "l:esperar",
+    "l:estar",
+    "l:familia",
+    "l:firmar",
+    "l:foto",
+    "l:fácil",
+    "l:gorra",
+    "l:hablar",
+    "l:hacer",
+    "l:herida",
+    "l:hermana",
+    "l:hotel",
+    "l:ir",
+    "l:jugador",
+    "l:justo",
+    "l:le",
+    "l:llamar",
+    "l:llevar",
+    "l:llorar",
+    "l:llover",
+    "l:mandar",
+    "l:mañana",
+    "l:mesa",
+    "l:mija",
+    "l:minuto",
+    "l:nieto",
+    "l:niño",
+    "l:noche",
+    "l:ocupado",
+    "l:paraguas",
+    "l:pena",
+    "l:pensar",
+    "l:peor",
+    "l:poder",
+    "l:poner",
+    "l:ponerse",
+    "l:presentar",
+    "l:puerta",
+    "l:querer",
+    "l:quitar",
+    "l:qué",
+    "l:repente",
+    "l:respuesta",
+    "l:reír",
+    "l:saber",
+    "l:ser",
+    "l:siempre",
+    "l:sobre",
+    "l:sobrino",
+    "l:tener",
+    "l:tinto",
+    "l:tonto",
+    "l:trampa",
+    "l:valer",
+    "l:vender",
+    "l:vez",
+    "l:viejo",
+    "l:volver",
+    "l:vuelta",
+    "l:víctima"
+  ]
+}
