@@ -1,0 +1,91 @@
+{
+  "node": "p:dedicarse-a",
+  "hook": {
+    "line": "In Bogotá, the question that follows your name is almost always what you do. Tomás has a short, honest answer now that the café is his.",
+    "es": "Me dedico al café.",
+    "en": "I work in coffee."
+  },
+  "examples": [
+    { "es": "¿A qué te dedicas?", "en": "What do you do for a living? (to a friend)" },
+    { "es": "Me dedico a vender flores.", "en": "I sell flowers for a living." },
+    { "es": "Mariana se dedica al periodismo.", "en": "Mariana works in journalism." },
+    { "es": "¿A qué se dedica usted?", "en": "What do you do for a living? (to someone formal)" },
+    { "es": "Dedico los sábados a trabajar.", "en": "I devote my Saturdays to working." },
+    { "es": "Quiero dedicar más tiempo al café.", "en": "I want to devote more time to the café." }
+  ],
+  "rule": "*Dedicarse a* is the natural way to say what you do for a living. English says \"What do you do?\" and \"I'm a waiter\". Spanish often says what you give yourself to: *me dedico a*, *te dedicas a*, *se dedica a*.\n\nAfter *a* comes a noun or a verb ending in *-r*:\n*Me dedico a la cocina.*\n*Me dedico a cocinar.*\n\n*A* plus *el* becomes *al*: *Me dedico al café.*\n\nWithout *se*, *dedicar* means to devote something, and *a* still follows: *Dedico los sábados a trabajar.* *Dedicar tiempo a* means to give time to something.",
+  "smallPrint": "Teachers call this a verb that needs a fixed preposition. With *dedicarse* the little word is always *a*, never *en* or *de*.",
+  "readAndPick": [
+    { "es": "Me dedico al café.", "options": ["I work in coffee.", "You work in coffee.", "She works in coffee."], "answer": 0 },
+    { "es": "¿A qué te dedicas?", "options": ["What do you want? (to a friend)", "What do you do for a living? (to a friend)", "What do you do for a living? (to someone formal)"], "answer": 1 },
+    { "es": "Nos dedicamos al café.", "options": ["They work in coffee.", "I work in coffee.", "We work in coffee."], "answer": 2 },
+    { "es": "¿A qué se dedica usted?", "options": ["What do you do for a living? (to someone formal)", "What do you do for a living? (to a friend)", "What does he do for a living?"], "answer": 0 },
+    { "es": "Mariana se dedica a escribir.", "options": ["Mariana wants to write.", "Mariana is going to write.", "Mariana writes for a living."], "answer": 2 },
+    { "es": "No me dedico al periodismo.", "options": ["I work in journalism.", "I don't work in journalism.", "I don't like journalism."], "answer": 1 },
+    { "es": "Ellos se dedican a vender pan.", "options": ["He sells bread for a living.", "They want to sell bread.", "They sell bread for a living."], "answer": 2 },
+    { "es": "Rosa se dedicó al café.", "options": ["Rosa devotes herself to coffee.", "Rosa devoted herself to coffee."], "answer": 1 },
+    { "es": "Tomás dedica mucho tiempo al café.", "options": ["Tomás gives a lot of time to the café.", "Tomás doesn't give much time to the café.", "Tomás wants to give time to the café."], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Mariana ___ al periodismo.* (*se dedica* or *te dedicas*) Mariana works in journalism.",
+      "answer": "Mariana se dedica al periodismo.",
+      "accept": [],
+      "why": "Mariana is *she*, so the verb is *se dedica*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Me dedico ___ café.* (*a* or *al*) I work in coffee.",
+      "answer": "Me dedico al café.",
+      "accept": [],
+      "why": "*A* plus *el* joins into *al*."
+    },
+    {
+      "prompt": "Ask a friend what they do for a living.",
+      "answer": "¿A qué te dedicas?",
+      "accept": [],
+      "why": "To a friend it's *te dedicas*, and *a qué* opens the question."
+    },
+    {
+      "prompt": "Ask someone formal (*usted*) what they do for a living.",
+      "answer": "¿A qué se dedica usted?",
+      "accept": ["¿A qué se dedica?"],
+      "why": "With *usted* the verb is *se dedica*."
+    },
+    {
+      "prompt": "I devote my Saturdays to working.",
+      "answer": "Dedico los sábados a trabajar.",
+      "accept": ["Los sábados los dedico a trabajar."],
+      "why": "*Dedicar* has no *me* here, and *a* introduces what you give the time to."
+    },
+    {
+      "prompt": "Make it negative: *Me dedico a vender flores.*",
+      "answer": "No me dedico a vender flores.",
+      "accept": [],
+      "why": "*No* goes right before *me*."
+    },
+    {
+      "prompt": "Make it about *we*: *Me dedico al café.*",
+      "answer": "Nos dedicamos al café.",
+      "accept": [],
+      "why": "*We* needs *nos* and *dedicamos*; the *al café* stays."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me dedico en la cocina.",
+      "right": "Me dedico a la cocina.",
+      "why": "Almost. English says \"in\" for a line of work, but *dedicarse* always takes *a*."
+    },
+    {
+      "wrong": "Me dedico cocinar.",
+      "right": "Me dedico a cocinar.",
+      "why": "Keep the *a* before a verb too, unlike English."
+    },
+    {
+      "wrong": "Me dedico a el café.",
+      "right": "Me dedico al café.",
+      "why": "*A* and *el* always join into *al*."
+    }
+  ],
+  "personal": "Say what you do for a living, or what you would like to devote more time to, with *me dedico a* or *dedicar tiempo a*."
+}
