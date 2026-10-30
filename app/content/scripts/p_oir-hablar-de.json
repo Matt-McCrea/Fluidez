@@ -1,0 +1,44 @@
+{
+  "node": "p:oir-hablar-de",
+  "hook": {
+    "line": "In the café, news travels faster than the espresso. Don Hernando always opens with one of two questions: have you ever come across something, or have you just heard some news? Spanish keeps these apart.",
+    "es": "¿Supiste que cerraron la calle?",
+    "en": "Did you hear they closed the street?"
+  },
+  "examples": [
+    { "es": "¿Has oído hablar de Botero?", "en": "Have you heard of Botero? (to a friend)" },
+    { "es": "No he oído hablar de ese barrio.", "en": "I haven't heard of that neighbourhood." },
+    { "es": "Oí que cerraron la panadería.", "en": "I heard they closed the bakery." },
+    { "es": "¿Supiste que Laura se va a casar?", "en": "Did you hear Laura is getting married? (to a friend)" },
+    { "es": "¿Viste que Altamira compró otro edificio?", "en": "Did you see that Altamira bought another building? (to a friend)" },
+    { "es": "Hernando oyó que van a cerrar el café.", "en": "Hernando heard they're going to close the café." }
+  ],
+  "rule": "Two ways to say *heard*, for two jobs.\n\n*Oír hablar de* + a noun: have you come across it at all? Use the perfect for this experience. *¿Has oído hablar de Botero?*\n\n*Oír que* + a full sentence: fresh news. *Oí que cerraron la panadería.*\n\nFor asking about news, Latin Americans reach for the past: *¿Supiste que...?* or *¿Viste que...?*, not the perfect. Say *¿Supiste que cerraron la calle?*\n\nAfter *que*, the news is a normal sentence with no change.",
+  "smallPrint": "Teachers call *oír hablar de* an experience phrase; *supiste que* and *viste que* are news openers.",
+  "readAndPick": [
+    { "es": "¿Has oído hablar de Botero?", "options": ["Have you heard of Botero?", "Did you hear Botero called?", "Have you heard Botero speak?"], "answer": 0 },
+    { "es": "Oí que cerraron la panadería.", "options": ["I heard they closed the bakery.", "I've never heard of the bakery.", "I heard the bakery owner speak."], "answer": 0 },
+    { "es": "¿Supiste que Laura se va a casar?", "options": ["Do you know Laura?", "Did you hear Laura is getting married?", "Have you met Laura's husband?"], "answer": 1 },
+    { "es": "No he oído hablar de ese barrio.", "options": ["I haven't heard of that neighbourhood.", "I didn't hear that neighbourhood is closing.", "I haven't talked to that neighbourhood."], "answer": 0 },
+    { "es": "¿Viste que Altamira compró otro edificio?", "options": ["Did you see Altamira's new building?", "Did you hear Altamira bought another building?", "Do you see Altamira's building?"], "answer": 1 },
+    { "es": "Hernando oyó que van a cerrar el café.", "options": ["Hernando is going to close the café.", "Hernando heard they're going to close the café.", "Hernando has never heard of the café."], "answer": 1 },
+    { "es": "¿Has oído hablar de la protesta?", "options": ["Have you ever heard of the protest?", "Did you hear it was a protest?", "Have you heard the protest?"], "answer": 0 },
+    { "es": "¿Supiste que cerraron la calle?", "options": ["Did you know the street is long?", "Did you hear they closed the street?", "Have you ever closed a street?"], "answer": 1 },
+    { "es": "Mi abuela oyó hablar de Altamira.", "options": ["My grandmother heard Altamira speak.", "My grandmother heard of Altamira.", "My grandmother heard that Altamira left."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *de* or *que*: Oí ___ cerraron la panadería.", "answer": "Oí que cerraron la panadería.", "accept": [], "why": "A full sentence of news follows, so *que*." },
+    { "prompt": "Choose *de* or *que*: ¿Has oído hablar ___ Botero?", "answer": "¿Has oído hablar de Botero?", "accept": [], "why": "A name or thing follows, so *hablar de*." },
+    { "prompt": "Say: Have you heard of Botero? (to a friend)", "answer": "¿Has oído hablar de Botero?", "accept": [], "why": "Have you ever come across him: the perfect, plus *hablar de*." },
+    { "prompt": "Say: Did you hear they closed the street? (to a friend)", "answer": "¿Supiste que cerraron la calle?", "accept": ["¿Viste que cerraron la calle?"], "why": "News in Latin America opens with the past: *supiste que*." },
+    { "prompt": "Say: I heard Altamira bought the building.", "answer": "Oí que Altamira compró el edificio.", "accept": [], "why": "*Oí que* plus a normal sentence." },
+    { "prompt": "Say: I haven't heard of that neighbourhood.", "answer": "No he oído hablar de ese barrio.", "accept": [], "why": "*No* goes before *he oído*." },
+    { "prompt": "Make it a question about news: Laura se va a casar. (to a friend)", "answer": "¿Supiste que Laura se va a casar?", "accept": ["¿Viste que Laura se va a casar?"], "why": "Open with *supiste que* and keep the news as is." }
+  ],
+  "pitfalls": [
+    { "wrong": "¿Has oído hablar que cerraron la calle?", "right": "¿Supiste que cerraron la calle?", "why": "Almost. *Hablar de* goes with a thing; a whole piece of news takes *oí que* or *supiste que*." },
+    { "wrong": "Oí hablar que Altamira compró el edificio.", "right": "Oí que Altamira compró el edificio.", "why": "Drop *hablar*: for news you just need *oí que*." },
+    { "wrong": "¿Has oído hablar a Botero?", "right": "¿Has oído hablar de Botero?", "why": "English says *heard of*; Spanish keeps the little word *de*." }
+  ],
+  "personal": "Tell a friend a piece of news you heard this week, starting with *Oí que...*, or ask about someone famous with *¿Has oído hablar de...?*"
+}
