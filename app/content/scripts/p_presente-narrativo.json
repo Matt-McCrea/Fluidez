@@ -1,0 +1,165 @@
+{
+  "node": "p:presente-narrativo",
+  "hook": {
+    "line": "Vale is telling a story over coffee, and she tells it in the present tense because it makes it feel like it is happening right in front of you. You can do the same.",
+    "es": "Ayer voy al mercado y me encuentro a Hernando.",
+    "en": "Yesterday I'm going to the market and I bump into Hernando."
+  },
+  "examples": [
+    {
+      "es": "Le compro un regalo carísimo y ni siquiera me da las gracias.",
+      "en": "I buy her a really expensive present and she doesn't even say thank you."
+    },
+    {
+      "es": "Ayer voy al mercado y me encuentro a Hernando.",
+      "en": "Yesterday I'm going to the market and I bump into Hernando."
+    },
+    {
+      "es": "Entro a la oficina y todos se quedan callados.",
+      "en": "I walk into the office and everyone goes quiet."
+    },
+    {
+      "es": "Anoche llego a casa y no hay luz.",
+      "en": "Last night I get home and there's no power."
+    },
+    {
+      "es": "Le escribo a Mariana y ni siquiera me contesta.",
+      "en": "I write to Mariana and she doesn't even answer me."
+    },
+    {
+      "es": "Entro al café y Simón me grita mi nombre.",
+      "en": "I walk into the café and Simón shouts my name at me."
+    }
+  ],
+  "rule": "When you tell an anecdote among friends, you can use the present tense for things that already happened. A word like *ayer* or *anoche* still tells the listener when. The present just brings the moment closer, like English \"so I walk in and…\".\nIt is casual: stories, complaints, jokes. Once you start, stay in the present until the story ends.",
+  "smallPrint": "Teachers call this the historical present: the present tense used with past meaning.",
+  "readAndPick": [
+    {
+      "es": "Ayer llamo a Vale y no contesta.",
+      "options": [
+        "Tomorrow I'll call Vale and she won't answer.",
+        "Yesterday I called Vale and she didn't answer.",
+        "I call Vale every day and she doesn't answer."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Anoche llego a casa y no hay luz.",
+      "options": [
+        "Tonight I'll get home and there'll be no power.",
+        "Last night I got home and there was no power."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mañana llego a casa y te llamo.",
+      "options": [
+        "Yesterday I got home and called you.",
+        "Tomorrow I'll get home and call you."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Le compro un regalo carísimo y ni siquiera me da las gracias.",
+      "options": [
+        "I'll buy her a really expensive present and she won't even say thank you.",
+        "I bought her a really expensive present and she didn't even say thank you."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Todos los días llego a las ocho.",
+      "options": [
+        "I got there at eight yesterday.",
+        "I get there at eight every day."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El otro día voy al banco y está cerrado.",
+      "options": [
+        "The other day I went to the bank and it was closed.",
+        "The other day I'll go to the bank and it'll be closed."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ayer entro al café y no hay nadie.",
+      "options": [
+        "I always walk into the café and nobody is there.",
+        "Yesterday I walked into the café and nobody was there."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Anoche salgo de la oficina y está lloviendo.",
+      "options": [
+        "Last night I left the office and it was raining.",
+        "Tonight I'll leave the office and it'll be raining."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Tell it as a lively story in the present: Ayer ___ al mercado y me encuentro a Hernando. (voy / fui)",
+      "answer": "Ayer voy al mercado y me encuentro a Hernando.",
+      "accept": [],
+      "why": "In the story present, both verbs stay in the present."
+    },
+    {
+      "prompt": "Tell it as a story in the present: Last night I get home and there's no power.",
+      "answer": "Anoche llego a casa y no hay luz.",
+      "accept": [],
+      "why": "*Anoche* sets the time, and the verbs stay in the present."
+    },
+    {
+      "prompt": "Tell it as a story in the present: I walk into the office and everyone goes quiet.",
+      "answer": "Entro a la oficina y todos se quedan callados.",
+      "accept": [],
+      "why": "Both actions are in the present, joined by *y*."
+    },
+    {
+      "prompt": "Tell it as a story in the present: I write to Mariana and she doesn't even answer me.",
+      "answer": "Le escribo a Mariana y ni siquiera me contesta.",
+      "accept": [],
+      "why": "*Ni siquiera* adds the \"not even\" bite."
+    },
+    {
+      "prompt": "Tell it as a story in the present: I buy her a really expensive present (a woman) and she doesn't even say thank you.",
+      "answer": "Le compro un regalo carísimo y ni siquiera me da las gracias.",
+      "accept": [],
+      "why": "Both verbs are in the present, even though it is a past story."
+    },
+    {
+      "prompt": "Move it into the story present: *Ayer fui al mercado y me encontré a Hernando.*",
+      "answer": "Ayer voy al mercado y me encuentro a Hernando.",
+      "accept": [],
+      "why": "Change both verbs to the present and keep *ayer*."
+    },
+    {
+      "prompt": "Move it into the story present: *Anoche llegué a casa y no había luz.*",
+      "answer": "Anoche llego a casa y no hay luz.",
+      "accept": [],
+      "why": "Both verbs go to the present, and *había* becomes *hay*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Ayer voy por la calle y me encontré a Hernando.",
+      "right": "Ayer voy por la calle y me encuentro a Hernando.",
+      "why": "Almost. Pick one tense for the story and stay in it."
+    },
+    {
+      "wrong": "Ayer estoy yendo al mercado y me encuentro a Hernando.",
+      "right": "Ayer voy al mercado y me encuentro a Hernando.",
+      "why": "Almost. English likes \"I'm going\", but Spanish uses the simple present."
+    },
+    {
+      "wrong": "Entro a la oficina y todos quedan callados.",
+      "right": "Entro a la oficina y todos se quedan callados.",
+      "why": "Almost. \"Go quiet\" is *quedarse callado*, so keep the *se*."
+    }
+  ],
+  "personal": "Tell a short true story from this week in the present, starting with *Ayer…* or *Anoche…*"
+}

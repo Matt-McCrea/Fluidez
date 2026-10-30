@@ -1,0 +1,165 @@
+{
+  "node": "x:tan-que-como-para",
+  "hook": {
+    "line": "After a long night at the café, Vale asks if you were exhausted. There are two honest answers: you fell asleep, or you were not tired enough to.",
+    "es": "Estaba tan cansado que me dormí.",
+    "en": "I was so tired I fell asleep."
+  },
+  "examples": [
+    {
+      "es": "Estaba tan cansado que me dormí.",
+      "en": "I was so tired I fell asleep."
+    },
+    {
+      "es": "No estaba tan cansado como para dormirme.",
+      "en": "I wasn't tired enough to fall asleep."
+    },
+    {
+      "es": "Hace tanto frío que no salgo.",
+      "en": "It's so cold that I'm not going out."
+    },
+    {
+      "es": "No hace tanto frío como para no salir.",
+      "en": "It isn't cold enough to not go out."
+    },
+    {
+      "es": "Es tan caro que no lo compro.",
+      "en": "It's so expensive that I don't buy it."
+    },
+    {
+      "es": "No es tan caro como para no comprarlo.",
+      "en": "It isn't expensive enough to not buy it."
+    }
+  ],
+  "rule": "Spanish has two ways to say \"so… that\".\n*Tan… que* + a normal verb reports something that really happened: *Estaba tan cansado que me dormí.* I did fall asleep.\n*Tan… como para* + an infinitive gives a threshold, \"enough to\": *No estaba tan cansado como para dormirme.* It does not say it happened. It is usually negative.\nQuick test: if the result is a fact, use *que*. If it is only a measure of enough, use *como para*.\nBefore a noun like *frío*, use *tanto*.",
+  "smallPrint": "Teachers call *que* here a result clause and *como para* a clause of degree or purpose.",
+  "readAndPick": [
+    {
+      "es": "Estaba tan cansado que me dormí.",
+      "options": [
+        "I was so tired I fell asleep.",
+        "I wasn't tired enough to fall asleep."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No estaba tan cansado como para dormirme.",
+      "options": [
+        "I was so tired I fell asleep.",
+        "I wasn't tired enough to fall asleep."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hace tanto frío que no salgo.",
+      "options": [
+        "It's so cold that I'm not going out.",
+        "It isn't cold enough to not go out."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No es tan caro como para no comprarlo.",
+      "options": [
+        "It's so expensive that I don't buy it.",
+        "It isn't expensive enough to not buy it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es tan caro que no lo compro.",
+      "options": [
+        "It isn't expensive enough to not buy it.",
+        "It's so expensive that I don't buy it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El ruido era tan fuerte que no oímos nada.",
+      "options": [
+        "The noise was so loud that we heard nothing.",
+        "The noise wasn't loud enough to bother us.",
+        "There was no noise."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No era tan tarde como para cerrar.",
+      "options": [
+        "It wasn't late enough to close.",
+        "It was so late that we closed."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Estás tan cansado como para no ir?",
+      "options": [
+        "Are you so tired that you didn't go?",
+        "Are you tired enough to not go?"
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *que* or *como para*, then type the whole sentence: Estaba tan cansado ___ me dormí. (I was so tired I fell asleep.)",
+      "answer": "Estaba tan cansado que me dormí.",
+      "accept": [],
+      "why": "I really did fall asleep, and a real fact with its own verb takes *que*."
+    },
+    {
+      "prompt": "Choose *que* or *como para*, then type the whole sentence: No estaba tan cansado ___ dormirme. (I wasn't tired enough to fall asleep.)",
+      "answer": "No estaba tan cansado como para dormirme.",
+      "accept": [],
+      "why": "It is a measure of \"enough\" followed by an infinitive."
+    },
+    {
+      "prompt": "Type it in Spanish: It's so cold that I'm not going out.",
+      "answer": "Hace tanto frío que no salgo.",
+      "accept": [],
+      "why": "A real result, so *que* + a normal verb."
+    },
+    {
+      "prompt": "Type it in Spanish: It isn't cold enough to not go out.",
+      "answer": "No hace tanto frío como para no salir.",
+      "accept": [],
+      "why": "A threshold with an infinitive, so *como para*."
+    },
+    {
+      "prompt": "Type it in Spanish: It's so expensive that I don't buy it.",
+      "answer": "Es tan caro que no lo compro.",
+      "accept": [],
+      "why": "The result is a fact, so it takes *que*."
+    },
+    {
+      "prompt": "Turn the fact into a threshold: *Estaba tan cansado que me dormí.* becomes: I wasn't tired enough to fall asleep.",
+      "answer": "No estaba tan cansado como para dormirme.",
+      "accept": [],
+      "why": "Make it negative, swap *que* for *como para*, and use the infinitive."
+    },
+    {
+      "prompt": "Make it negative: *Hernando es tan viejo como para dejar de manejar.* becomes: Hernando isn't old enough to stop driving.",
+      "answer": "Hernando no es tan viejo como para dejar de manejar.",
+      "accept": [],
+      "why": "*No* goes before the verb; *como para* stays."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Estaba tan cansado como para me dormí.",
+      "right": "Estaba tan cansado que me dormí.",
+      "why": "Almost. A real result with its own verb needs *que*."
+    },
+    {
+      "wrong": "No estaba tan cansado que dormirme.",
+      "right": "No estaba tan cansado como para dormirme.",
+      "why": "Almost. For \"enough to\" with an infinitive, use *como para*, not *que*."
+    },
+    {
+      "wrong": "Hace tan frío que no salgo.",
+      "right": "Hace tanto frío que no salgo.",
+      "why": "Almost. *Frío* is a noun here, so it takes *tanto*; *tan* goes before adjectives."
+    }
+  ],
+  "personal": "Tell me something you were so tired, hungry or busy that you did, with *tan… que…*"
+}

@@ -1,0 +1,175 @@
+{
+  "node": "p:como-para",
+  "hook": {
+    "line": "The café has a leaky tap and somebody wants to close for the day. You think that is a bit much.",
+    "es": "No es tan grave como para cancelar.",
+    "en": "It isn't serious enough to cancel."
+  },
+  "examples": [
+    {
+      "es": "No es tan grave como para cancelar.",
+      "en": "It isn't serious enough to cancel."
+    },
+    {
+      "es": "Sabe lo suficiente como para dar la clase.",
+      "en": "She knows enough to teach the class."
+    },
+    {
+      "es": "No es tan ingenuo como para creerse eso.",
+      "en": "He isn't naive enough to believe that."
+    },
+    {
+      "es": "No hace tanto frío como para llevar abrigo.",
+      "en": "It isn't cold enough to wear a coat."
+    },
+    {
+      "es": "¿Es tan importante como para llamar a las once de la noche?",
+      "en": "Is it important enough to call at eleven at night?"
+    },
+    {
+      "es": "Trabaja tanto como para que le suban el sueldo.",
+      "en": "She works enough for them to raise her pay."
+    },
+    {
+      "es": "Es como para llorar.",
+      "en": "It's enough to make you cry."
+    }
+  ],
+  "rule": "*Como para* means \"enough to\". Before it comes *tan* + adjective, *tanto* + noun or verb, or *lo suficiente*. After it comes an infinitive: *No es tan grave como para cancelar.*\nIt is most often negative: \"not bad enough to…\".\nIf a different person does the second thing, use *que* + subjunctive: *Trabaja tanto como para que le suban el sueldo.*\nOn its own, *Es como para…* means \"it's enough to make you…\".",
+  "smallPrint": "Teachers call this a consecutive clause of degree: it says how much of something is needed.",
+  "readAndPick": [
+    {
+      "es": "No es tan grave como para cancelar.",
+      "options": [
+        "It isn't serious enough to cancel.",
+        "It's very serious, so we cancel.",
+        "It's so serious that we cancelled."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es tan caro que no lo compro.",
+      "options": [
+        "It isn't expensive enough to not buy it.",
+        "It's so expensive that I don't buy it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Sabe lo suficiente como para dar la clase.",
+      "options": [
+        "She knows too little to teach the class.",
+        "She knows enough to teach the class."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No es tan ingenuo como para creerse eso.",
+      "options": [
+        "He is too naive to believe that.",
+        "He isn't naive enough to believe that."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es como para llorar.",
+      "options": [
+        "It's enough to make you cry.",
+        "He is going to cry.",
+        "It's about crying."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Es tan importante como para llamar a las once de la noche?",
+      "options": [
+        "Is it so important that you called at eleven at night?",
+        "Is it important enough to call at eleven at night?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Trabaja tanto como para que le suban el sueldo.",
+      "options": [
+        "She works so much to raise her pay.",
+        "She works enough to raise their pay.",
+        "She works enough for them to raise her pay."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No hace tanto frío como para llevar abrigo.",
+      "options": [
+        "It's so cold that you need a coat.",
+        "It isn't cold enough to wear a coat."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *que* or *como para*, then type the whole sentence: No es tan grave ___ cancelar. (It isn't serious enough to cancel.)",
+      "answer": "No es tan grave como para cancelar.",
+      "accept": [],
+      "why": "\"Enough to\" with an infinitive is *como para*."
+    },
+    {
+      "prompt": "Type it in Spanish: It isn't cold enough to wear a coat.",
+      "answer": "No hace tanto frío como para llevar abrigo.",
+      "accept": [
+        "No hace tan frío como para llevar abrigo."
+      ],
+      "why": "*Frío* is a noun here, so it takes *tanto*."
+    },
+    {
+      "prompt": "Type it in Spanish: She knows enough to teach the class.",
+      "answer": "Sabe lo suficiente como para dar la clase.",
+      "accept": [],
+      "why": "*Lo suficiente* is \"enough\" after a verb."
+    },
+    {
+      "prompt": "Type it in Spanish: He isn't naive enough to believe that.",
+      "answer": "No es tan ingenuo como para creerse eso.",
+      "accept": [
+        "No es tan ingenuo como para creer eso."
+      ],
+      "why": "*Tan* + adjective + *como para* + infinitive."
+    },
+    {
+      "prompt": "Type it in Spanish: Is it important enough to call at eleven at night? (to a friend)",
+      "answer": "¿Es tan importante como para llamar a las once de la noche?",
+      "accept": [],
+      "why": "The same pattern works in a question."
+    },
+    {
+      "prompt": "Make it negative: *Es tan grave como para cancelar.* becomes: It isn't serious enough to cancel.",
+      "answer": "No es tan grave como para cancelar.",
+      "accept": [],
+      "why": "*No* goes before the verb, and *como para* stays."
+    },
+    {
+      "prompt": "Type it in Spanish: Hernando isn't old enough to stop driving.",
+      "answer": "Hernando no es tan viejo como para dejar de manejar.",
+      "accept": [],
+      "why": "Both actions have the same person, so an infinitive follows."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No es tan grave para cancelar.",
+      "right": "No es tan grave como para cancelar.",
+      "why": "Almost. After *tan* + adjective, Spanish needs *como* before *para*."
+    },
+    {
+      "wrong": "No es tan grave como para que cancelar.",
+      "right": "No es tan grave como para cancelar.",
+      "why": "Almost. With the same person doing both things, use the infinitive and no *que*."
+    },
+    {
+      "wrong": "Es suficiente grave como para cancelar.",
+      "right": "Es lo suficientemente grave como para cancelar.",
+      "why": "Almost. With an adjective, say *lo suficientemente*, or use *tan*."
+    }
+  ],
+  "personal": "Tell me something you can do, or are willing to do, using *no soy tan… como para…*"
+}

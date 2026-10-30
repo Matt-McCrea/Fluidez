@@ -1,0 +1,167 @@
+{
+  "node": "g:topic-fronting",
+  "hook": {
+    "line": "On the podcast, Mariana asks who signed the sale contract. Starting with the thing itself puts the weight exactly where you want it.",
+    "es": "El contrato lo firmé yo.",
+    "en": "I'm the one who signed the contract."
+  },
+  "examples": [
+    {
+      "es": "El contrato lo firmé yo.",
+      "en": "I'm the one who signed the contract."
+    },
+    {
+      "es": "A Vale no le dije nada.",
+      "en": "I didn't tell Vale anything."
+    },
+    {
+      "es": "Eso no lo sabía.",
+      "en": "That, I didn't know."
+    },
+    {
+      "es": "Las llaves las tiene Vale.",
+      "en": "As for the keys, Vale has them."
+    },
+    {
+      "es": "A Mariana la conozco desde hace años.",
+      "en": "Mariana, I've known for years."
+    },
+    {
+      "es": "Los pasteles los hace Vale.",
+      "en": "As for the pastries, Vale makes them."
+    }
+  ],
+  "rule": "Normally you say who did what. To make a thing the topic, put it first, then repeat it with a small pronoun right before the verb: *El contrato lo firmé yo.*\nThe pronoun matches the thing: *lo, la, los, las*. For a person, add *a*: *A Mariana la conozco.* For \"tell\" or \"give\", it is *le*: *A Vale le dije.*\nThe new information, here *yo*, lands at the end. English does this with stress or \"as for\". Spanish needs the pronoun: never *El contrato firmé yo.*",
+  "smallPrint": "Teachers call this topicalization, with a resumptive pronoun that repeats the fronted object.",
+  "readAndPick": [
+    {
+      "es": "El contrato lo firmé yo.",
+      "options": [
+        "Someone signed the contract for me.",
+        "I'm the one who signed the contract.",
+        "I didn't sign the contract."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Las llaves las tiene Vale.",
+      "options": [
+        "I have the keys, not Vale.",
+        "Vale has the keys.",
+        "Vale gave me the keys."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A Vale no le dije nada.",
+      "options": [
+        "Vale didn't tell me anything.",
+        "I didn't tell Vale anything."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A Mariana la conozco desde hace años.",
+      "options": [
+        "I've known Mariana for years.",
+        "Mariana has known me for years."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Eso no lo sabía.",
+      "options": [
+        "That, I didn't say.",
+        "That, I didn't know."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Los pasteles los hace Vale.",
+      "options": [
+        "I make the pastries.",
+        "Vale buys the pastries.",
+        "Vale makes the pastries."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "A Tomás no lo vi ayer.",
+      "options": [
+        "Tomás didn't see me yesterday.",
+        "I didn't see Tomás yesterday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La noticia la supe por Mariana.",
+      "options": [
+        "I heard the news from Mariana.",
+        "Mariana heard the news from me."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *lo* or *le*, then type the whole sentence: El contrato ___ firmé yo. (I'm the one who signed the contract.)",
+      "answer": "El contrato lo firmé yo.",
+      "accept": [],
+      "why": "The contract is a thing, so the repeating pronoun is *lo*."
+    },
+    {
+      "prompt": "Choose *la* or *las*, then type the whole sentence: Las llaves ___ tiene Vale. (Vale has the keys.)",
+      "answer": "Las llaves las tiene Vale.",
+      "accept": [],
+      "why": "*Llaves* is feminine plural, so the pronoun is *las*."
+    },
+    {
+      "prompt": "Type it in Spanish: I didn't tell Vale anything.",
+      "answer": "A Vale no le dije nada.",
+      "accept": [],
+      "why": "A fronted person gets *a* in front and *le* before the verb."
+    },
+    {
+      "prompt": "Type it in Spanish: That, I didn't know.",
+      "answer": "Eso no lo sabía.",
+      "accept": [],
+      "why": "*Eso* comes first and *lo* repeats it."
+    },
+    {
+      "prompt": "Type it in Spanish: As for the pastries, Vale makes them.",
+      "answer": "Los pasteles los hace Vale.",
+      "accept": [],
+      "why": "The pronoun *los* matches *pasteles*."
+    },
+    {
+      "prompt": "Put Mariana first: *Conozco a Mariana desde hace años.* becomes: Mariana, I've known for years.",
+      "answer": "A Mariana la conozco desde hace años.",
+      "accept": [],
+      "why": "Move the person to the front and add *la* before the verb."
+    },
+    {
+      "prompt": "Put the keys first: *Vale tiene las llaves.* becomes: As for the keys, Vale has them.",
+      "answer": "Las llaves las tiene Vale.",
+      "accept": [],
+      "why": "The thing moves up, the pronoun repeats it, and the person goes last."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El contrato firmé yo.",
+      "right": "El contrato lo firmé yo.",
+      "why": "Almost. A fronted thing needs its pronoun before the verb."
+    },
+    {
+      "wrong": "A Vale no dije nada.",
+      "right": "A Vale no le dije nada.",
+      "why": "Almost. A fronted person with *a* still needs *le* before the verb."
+    },
+    {
+      "wrong": "Las llaves lo tiene Vale.",
+      "right": "Las llaves las tiene Vale.",
+      "why": "Almost. The pronoun must match the thing: feminine plural, so *las*."
+    }
+  ],
+  "personal": "Tell me one thing you did yourself, starting with the thing: *El… lo… yo.*"
+}

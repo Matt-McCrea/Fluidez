@@ -1,0 +1,170 @@
+{
+  "node": "p:como-cuanto-verbo",
+  "hook": {
+    "line": "Rain hammers the window of the café and Don Hernando can't believe it. When a verb itself is what amazes you, Spanish has a short way to say so.",
+    "es": "¡Cómo llueve!",
+    "en": "It's really pouring!"
+  },
+  "examples": [
+    {
+      "es": "¡Cómo llueve!",
+      "en": "It's really pouring!"
+    },
+    {
+      "es": "¡Cómo canta esa mujer!",
+      "en": "That woman can really sing!"
+    },
+    {
+      "es": "¡Cuánto sabe de café!",
+      "en": "He knows so much about coffee!"
+    },
+    {
+      "es": "¡Cuántas cosas han cambiado!",
+      "en": "So many things have changed!"
+    },
+    {
+      "es": "¡Cómo baila Hernando!",
+      "en": "Hernando can really dance!"
+    },
+    {
+      "es": "¡Cuánto te quiero!",
+      "en": "I love you so much!"
+    }
+  ],
+  "rule": "To be amazed at an action, put *cómo* or *cuánto* straight in front of the verb. *Cómo* is about how it happens: *¡Cómo canta!* *Cuánto* is about how much: *¡Cuánto sabe!* Before a verb, *cuánto* never changes. Before a noun it agrees: *¡Cuántas cosas!*\nNothing goes between the exclamation word and the verb, so the subject comes after: *¡Cómo canta esa mujer!*\nFor an adjective or adverb, use *qué* instead: *¡Qué bien canta!*",
+  "smallPrint": "Teachers call these exclamatives: question words used to express surprise instead of asking.",
+  "readAndPick": [
+    {
+      "es": "¡Cómo canta esa mujer!",
+      "options": [
+        "She asks how that woman sings.",
+        "That woman can really sing!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Cómo canta esa mujer?",
+      "options": [
+        "How does that woman sing?",
+        "That woman can really sing!"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Cuántas cosas han cambiado!",
+      "options": [
+        "It has changed so much!",
+        "So many things have changed!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Cuánto ha cambiado el barrio!",
+      "options": [
+        "The neighborhood has changed so much!",
+        "So many neighborhoods have changed!",
+        "How much has the neighborhood changed?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Qué bien canta esa mujer!",
+      "options": [
+        "That woman can really sing!",
+        "How well that woman sings!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Cómo extraño a Rosa!",
+      "options": [
+        "Rosa misses me so much!",
+        "I don't miss Rosa.",
+        "I miss Rosa so much!"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¡Cuánto te quiero!",
+      "options": [
+        "I love you so much!",
+        "You love me so much!"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Cuántos años han pasado?",
+      "options": [
+        "So many years have passed!",
+        "How many years have passed?"
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *cómo* or *qué*, then type the whole sentence: ¡___ llueve! (It's really pouring!)",
+      "answer": "¡Cómo llueve!",
+      "accept": [],
+      "why": "*Llueve* is a verb, so *cómo* goes right in front of it."
+    },
+    {
+      "prompt": "Choose *cuántos* or *cuántas*, then type the whole sentence: ¡___ cosas han cambiado! (So many things have changed!)",
+      "answer": "¡Cuántas cosas han cambiado!",
+      "accept": [],
+      "why": "Before a noun, *cuánto* agrees with it, and *cosas* is feminine plural."
+    },
+    {
+      "prompt": "Type it in Spanish: That woman can really sing!",
+      "answer": "¡Cómo canta esa mujer!",
+      "accept": [],
+      "why": "The subject waits until after the verb."
+    },
+    {
+      "prompt": "Type it in Spanish: Hernando knows so much about coffee!",
+      "answer": "¡Cuánto sabe Hernando de café!",
+      "accept": [
+        "¡Cuánto sabe de café Hernando!"
+      ],
+      "why": "*Cuánto* is about amount, and it stays the same before a verb."
+    },
+    {
+      "prompt": "Type it in Spanish: I miss Rosa so much!",
+      "answer": "¡Cómo extraño a Rosa!",
+      "accept": [
+        "¡Cuánto extraño a Rosa!"
+      ],
+      "why": "Same pattern: the exclamation word, then the verb, then the rest."
+    },
+    {
+      "prompt": "Make it an exclamation about the verb: *Hernando baila muy bien.* becomes: Hernando can really dance!",
+      "answer": "¡Cómo baila Hernando!",
+      "accept": [],
+      "why": "Drop *muy bien* and let *cómo* carry the surprise."
+    },
+    {
+      "prompt": "Make it an exclamation about the amount: *Vale trabaja mucho.* becomes: Vale works so much!",
+      "answer": "¡Cuánto trabaja Vale!",
+      "accept": [],
+      "why": "*Cuánto* replaces *mucho* and moves in front of the verb."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¡Cómo esa mujer canta!",
+      "right": "¡Cómo canta esa mujer!",
+      "why": "Almost. Nothing goes between *cómo* and the verb, so the subject comes after it."
+    },
+    {
+      "wrong": "¡Cómo bien canta!",
+      "right": "¡Qué bien canta esa mujer!",
+      "why": "Almost. With an adverb or adjective, use *qué*; *cómo* goes straight onto a verb."
+    },
+    {
+      "wrong": "¡Cuántos cosas han cambiado!",
+      "right": "¡Cuántas cosas han cambiado!",
+      "why": "Almost. Before a noun, *cuánto* agrees with it: *cosas* is feminine plural."
+    }
+  ],
+  "personal": "Think of someone you know who impresses you. Say it with *¡Cómo…!* or *¡Cuánto…!*"
+}

@@ -1,0 +1,180 @@
+{
+  "node": "p:precisamente-concretamente",
+  "hook": {
+    "line": "Mariana asks why you skipped the neighborhood meeting, and your honest answer is the very thing she would expect. Spanish has a word for that spotlight.",
+    "es": "Precisamente por eso no fui.",
+    "en": "That's exactly why I didn't go."
+  },
+  "examples": [
+    {
+      "es": "Precisamente por eso no fui.",
+      "en": "That's exactly why I didn't go."
+    },
+    {
+      "es": "Justamente de eso quería hablarte.",
+      "en": "That's just what I wanted to talk to you about."
+    },
+    {
+      "es": "Precisamente hoy no puedo.",
+      "en": "Today of all days I can't."
+    },
+    {
+      "es": "Hernando vino precisamente por el tinto.",
+      "en": "Hernando came precisely for the black coffee."
+    },
+    {
+      "es": "Quiero hablar contigo, concretamente del contrato.",
+      "en": "I want to talk to you, specifically about the contract."
+    },
+    {
+      "es": "Justamente ese es el problema.",
+      "en": "That is exactly the problem."
+    }
+  ],
+  "rule": "*Precisamente* and *justamente* shine a spotlight: this and nothing else. They go right before the phrase they point at.\n*Concretamente* and *en concreto* zoom in after a general statement: *Necesito ayuda, concretamente con la cocina.*\nBeware *casualmente*. It means \"by coincidence\", not \"casually\".",
+  "smallPrint": "Teachers call these focus adverbs: they mark which part of the sentence is the point.",
+  "readAndPick": [
+    {
+      "es": "Precisamente por eso no fui.",
+      "options": [
+        "That's why I didn't go.",
+        "That's exactly why I didn't go."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Por eso no fui.",
+      "options": [
+        "That's why I didn't go.",
+        "That's exactly why I didn't go."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hernando vino precisamente por el tinto.",
+      "options": [
+        "Hernando came precisely for the black coffee.",
+        "Hernando came for the black coffee, among other things."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Quiero hablar contigo, concretamente del contrato.",
+      "options": [
+        "I want to talk to you about everything.",
+        "I want to talk to you, specifically about the contract.",
+        "I want to talk to you about a contract, casually."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Justamente ese es el problema.",
+      "options": [
+        "That is a small problem.",
+        "That is not the problem.",
+        "That is exactly the problem."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Casualmente nos vimos en la plaza.",
+      "options": [
+        "We happened to meet in the square.",
+        "We met casually in the square."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Precisamente hoy no puedo.",
+      "options": [
+        "I can't today, sorry.",
+        "Today of all days I can't."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Justamente de eso quería hablarte.",
+      "options": [
+        "That's just what I wanted to talk to you about.",
+        "I wanted to talk to you about something else."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *precisamente* or *casualmente*, then type the whole sentence: ___ por eso no fui. (That's exactly why I didn't go.)",
+      "answer": "Precisamente por eso no fui.",
+      "accept": [
+        "Justamente por eso no fui."
+      ],
+      "why": "*Precisamente* means \"exactly\"; *casualmente* means \"by coincidence\"."
+    },
+    {
+      "prompt": "Type it in Spanish: That's exactly why I called you (to a friend).",
+      "answer": "Precisamente por eso te llamé.",
+      "accept": [
+        "Justamente por eso te llamé."
+      ],
+      "why": "The spotlight word goes right before *por eso*."
+    },
+    {
+      "prompt": "Type it in Spanish: Hernando came precisely for the black coffee.",
+      "answer": "Hernando vino precisamente por el tinto.",
+      "accept": [
+        "Hernando vino justamente por el tinto."
+      ],
+      "why": "Put *precisamente* just before the thing you are pointing at."
+    },
+    {
+      "prompt": "Type it in Spanish: Today of all days I can't.",
+      "answer": "Precisamente hoy no puedo.",
+      "accept": [
+        "Justamente hoy no puedo."
+      ],
+      "why": "The spotlight is on *hoy*, so it comes right after *precisamente*."
+    },
+    {
+      "prompt": "Type it in Spanish: I want to talk to you, specifically about the contract (to a friend).",
+      "answer": "Quiero hablar contigo, concretamente del contrato.",
+      "accept": [
+        "Quiero hablar contigo, en concreto del contrato."
+      ],
+      "why": "*Concretamente* zooms in on the detail after a general statement."
+    },
+    {
+      "prompt": "Add a spotlight on *por eso*: *Por eso no fui a la reunión.* becomes: That's exactly why I didn't go to the meeting.",
+      "answer": "Precisamente por eso no fui a la reunión.",
+      "accept": [
+        "Justamente por eso no fui a la reunión."
+      ],
+      "why": "Just place *precisamente* in front of *por eso*."
+    },
+    {
+      "prompt": "Zoom in: *Necesito ayuda con la cocina.* becomes: I need help, specifically with the kitchen.",
+      "answer": "Necesito ayuda, concretamente con la cocina.",
+      "accept": [
+        "Necesito ayuda, en concreto con la cocina."
+      ],
+      "why": "The general statement comes first, then *concretamente* and the detail."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Precisamente no fui por eso.",
+      "right": "Precisamente por eso no fui.",
+      "why": "Almost. The spotlight word goes right before the phrase it points at."
+    },
+    {
+      "wrong": "Casualmente por eso no fui.",
+      "right": "Precisamente por eso no fui.",
+      "why": "Almost. *Casualmente* means \"by coincidence\"; for \"exactly\", use *precisamente*."
+    },
+    {
+      "wrong": "Necesito ayuda, concreto con la cocina.",
+      "right": "Necesito ayuda, concretamente con la cocina.",
+      "why": "Almost. The adverb ends in *-mente*; *concreto* alone is an adjective."
+    }
+  ],
+  "personal": "Say something true about yourself with *precisamente* or *concretamente*, for example what you want to learn."
+}
