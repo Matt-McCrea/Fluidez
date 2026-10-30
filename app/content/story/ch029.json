@@ -2,12 +2,8 @@
   "id": "ch029",
   "unit": "u11",
   "title": "Al otro lado",
-  "text": "Vale: Tomás, ¿quién es la mujer de las gafas?\nTomás: Es Mariana, la niña de los domingos. Ahora es periodista.\nVale: ¿Y es más simpática que yo?\nSimón: ¡Más simpática! ¡Más simpática!\nTomás: No, no. Es menos simpática que tú. Bueno... es tan simpática como tú.\nVale: Mal, Tomás. Muy mal.\nMariana saca dos fotos de su bolsa y las pone en la mesa.\nMariana: Bueno, Tomás, el examen. Esta es la cuadra en 1995, y esta es la cuadra hoy.\nHernando: En 1995 había más gente en la calle y menos carros. Y yo era más joven y más guapo que Tomás.\nMariana: Primero quería escribir un artículo pequeño, pero la historia resultó más grande. Altamira ya tiene trece casas en la cuadra. Las compró en un año, y paga muy bien.\nTomás: ¿Y el café?\nMariana: El café es más importante que las trece casas. Mira: siete casas a un lado, seis al otro lado, y en la esquina, el café. Altamira quiere un hotel en toda la cuadra. Sin la esquina, no hay hotel.\nVale trae dos almojábanas. Pone una delante de Mariana y otra delante de Tomás.\nMariana: Vale, tu almojábana es mejor que la de Rosa.\nVale: ¿Mejor? No, Mariana. Nadie hace almojábanas como Rosa.\nMariana: Yo comí las almojábanas de Rosa todos los domingos de mi niñez. Esta es mejor.\nVale mira a Mariana un rato. Después sirve un tinto para Mariana.\nHernando: Rosa no quería un hotel. Quería su propio café, en su propia esquina.\nMariana: Y tú tienes derecho a decir que no, Tomás. Pero el local es arrendado, ¿no? Entonces, ¿quién es el dueño?\nTomás: No sé. Está en el contrato, supongo. Pero el contrato es largo y aburrido, y no lo terminé.\nHernando: Cuarenta y siete años de arriendo, y Rosa nunca dijo el nombre del dueño.\nMariana: Pues Altamira ya está buscando a esa persona.",
+  "text": "Vale: ¿Quién es la mujer de las gafas?\nTomás: Es Mariana, la niña de los domingos. Ahora es periodista.\nVale: ¿Y es más simpática que yo?\nSimón: ¡Más simpática! ¡Más simpática!\nTomás: Bueno... es tan simpática como tú.\nVale: Mal, Tomás. Muy mal.\nMariana: Altamira ya tiene trece casas en la cuadra. Pero el café es más importante que las trece casas, porque está en la esquina. Altamira quiere un hotel en toda la cuadra, y sin la esquina, no hay hotel.\nMariana: Vale, esta almojábana es mejor que la de Rosa.\nVale: ¿Mejor? Nadie hace almojábanas como Rosa.\nMariana: Yo comí las almojábanas de Rosa todos los domingos de mi niñez. Esta es mejor.\nVale mira a Mariana un rato y sirve un tinto para ella.\nMariana: Pero el local es arrendado, ¿no? ¿Quién es el dueño?\nTomás: No sé. Está en el contrato, pero el contrato es largo y aburrido, y no lo terminé.\nHernando: Cuarenta y siete años de arriendo, y Rosa nunca dijo el nombre del dueño.\nMariana: Pues Altamira ya está buscando a esa persona.",
   "gloss": [
-    {
-      "es": "mijo",
-      "en": "son (a fond way to talk to a younger man)"
-    },
     {
       "es": "Mal, Tomás. Muy mal.",
       "en": "Wrong answer, Tomás. Very wrong."
@@ -17,28 +13,16 @@
       "en": "the block"
     },
     {
-      "es": "Primero quería escribir un artículo pequeño, pero la historia resultó más grande.",
-      "en": "At first I wanted to write a small article, but the story turned out bigger."
-    },
-    {
-      "es": "siete casas a un lado, seis al otro lado",
-      "en": "seven houses on one side, six on the other side"
+      "es": "porque está en la esquina",
+      "en": "because it is on the corner"
     },
     {
       "es": "Nadie hace almojábanas como Rosa.",
       "en": "Nobody makes almojábanas like Rosa."
     },
     {
-      "es": "Y tú tienes derecho a decir que no",
-      "en": "And you have the right to say no"
-    },
-    {
       "es": "el local es arrendado",
       "en": "the premises are rented"
-    },
-    {
-      "es": "Está en el contrato, supongo.",
-      "en": "It's in the contract, I suppose."
     },
     {
       "es": "aburrido",
@@ -47,6 +31,10 @@
     {
       "es": "Cuarenta y siete años de arriendo",
       "en": "Forty seven years of rent"
+    },
+    {
+      "es": "Está en el contrato",
+      "en": "It's in the contract"
     }
   ],
   "questions": [
@@ -109,7 +97,7 @@
         "Nicer, nicer",
         "The last one",
         "The doll",
-        "I'll take the almojábana"
+        "Wrong answer"
       ],
       "answer": 0
     },
@@ -125,13 +113,12 @@
     }
   ],
   "requires": [
-    "c:bien-y-tu",
     "c:comi",
     "c:entonces-bueno",
-    "c:era",
     "c:hay",
     "c:no-cierto",
     "c:no-se",
+    "c:porque",
     "c:tienes",
     "g:adjective-agreement",
     "g:comparatives",
@@ -141,9 +128,7 @@
     "g:estar-location-states",
     "g:gender-articles",
     "g:hay-vs-esta",
-    "g:imperfect-habitual",
-    "g:imperfect-states",
-    "g:present-ar",
+    "g:prep-pronouns",
     "g:present-er-ir",
     "g:preterite-ar",
     "g:preterite-er-ir",
@@ -152,26 +137,16 @@
     "g:ser-identity",
     "g:stem-boot",
     "g:stem-e-i",
-    "g:verb-infinitive",
     "g:yo-irregular",
-    "p:bien-bueno",
-    "p:bien-mal-vs-bueno-malo",
-    "p:cerca-de",
-    "p:dates-years",
     "p:days-el-lunes",
     "p:demonstratives-basic",
-    "p:es-tiene-lleva",
     "p:frequency-scale",
-    "p:la-gente-singular",
-    "p:otro-no-article",
     "p:para-inf",
     "p:personal-a",
-    "p:position-de",
     "p:possessives-basic",
     "p:quantifiers-basic",
     "p:question-word-order",
     "p:ser-profession-no-article",
-    "p:time-sequence-basic",
     "p:todos-los-dias"
   ],
   "lexemes": [
@@ -179,72 +154,44 @@
     "l:ahora",
     "l:almojábana",
     "l:arriendo",
-    "l:artículo",
     "l:año",
-    "l:bien",
-    "l:bolsa",
     "l:bueno",
     "l:buscar",
     "l:café",
-    "l:calle",
-    "l:carro",
     "l:casa",
     "l:comer",
-    "l:comprar",
     "l:contrato",
     "l:cuadra",
     "l:decir",
-    "l:delante",
-    "l:derecho",
-    "l:después",
     "l:domingo",
     "l:dueño",
     "l:e",
-    "l:escribir",
     "l:esquina",
     "l:estar",
-    "l:examen",
-    "l:foto",
     "l:gafas",
-    "l:gente",
-    "l:grande",
-    "l:guapo",
     "l:hacer",
-    "l:historia",
     "l:hotel",
-    "l:hoy",
     "l:importante",
-    "l:joven",
-    "l:lado",
     "l:largo",
     "l:local",
     "l:mal",
     "l:mejor",
-    "l:mesa",
     "l:mirar",
     "l:mujer",
     "l:niña",
     "l:niñez",
     "l:nombre",
-    "l:pagar",
-    "l:pequeño",
     "l:periodista",
     "l:persona",
-    "l:poner",
-    "l:propio",
     "l:querer",
     "l:quién",
     "l:rato",
-    "l:resultar",
     "l:saber",
-    "l:sacar",
     "l:ser",
     "l:servir",
     "l:simpático",
-    "l:suponer",
     "l:tener",
     "l:terminar",
-    "l:tinto",
-    "l:traer"
+    "l:tinto"
   ]
 }
