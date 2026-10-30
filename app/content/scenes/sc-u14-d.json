@@ -1,0 +1,225 @@
+{
+  "id": "sc-u14-d",
+  "unit": "u14",
+  "title": "A quote for Mariana",
+  "brief": "You're Tomás. Mariana is writing a piece about the café and Altamira, and she messages you on WhatsApp for some quotes. Give her reasons and details, not one-word answers. She's your friend, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Hola, Tomás. Quiero escribir un texto sobre el café. ¿Me ayudas?",
+      "npcEn": "Hi, Tomás. I want to write a piece about the café. Will you help me?",
+      "intent": "Say yes, of course you can help her.",
+      "accept": [
+        "Sí, claro, te puedo ayudar.",
+        "Claro que sí. Puedo ayudarte con el texto.",
+        "Sí, claro. Puedo ayudarte."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(te puedo ayudar|puedo ayudarte|te ayudo)",
+          "flags": "i",
+          "label": "help you: te puedo ayudar, or puedo ayudarte"
+        }
+      ],
+      "focus": "g:object-pronoun-position",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Primero, el café. ¿Qué es para ti?",
+      "npcEn": "First, the café. What is it for you?",
+      "intent": "Say that for you, it's the place that your grandmother opened.",
+      "accept": [
+        "Para mí, es el sitio que abrió mi abuela.",
+        "Para mí, es el café que abrió mi abuela Rosa.",
+        "Pues, para mí es el lugar que abrió mi abuela."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "para mí",
+          "label": "for me: para mí"
+        },
+        {
+          "type": "regex",
+          "pattern": "que abri[oó]",
+          "flags": "i",
+          "label": "the place that she opened: el sitio que abrió…"
+        }
+      ],
+      "focus": "g:relative-que",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Y tú no vendes el café. ¿Por qué?",
+      "npcEn": "And you're not selling the café. Why?",
+      "intent": "Say your grandmother worked there for forty years, so you're not selling it.",
+      "accept": [
+        "Mi abuela trabajó aquí cuarenta años, así que no lo vendo.",
+        "Mi abuela trabajó aquí cuarenta años. Por eso no lo vendo.",
+        "Como mi abuela trabajó aquí cuarenta años, no lo vendo."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "así que",
+            "por eso",
+            "como"
+          ],
+          "label": "join the reason and the result: así que, por eso, or como at the start"
+        },
+        {
+          "type": "negation",
+          "label": "you're not selling it: no lo vendo"
+        }
+      ],
+      "focus": "g:cause-result",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Altamira me mandó un correo. Para ellos, el café no es importante.",
+      "npcEn": "Altamira sent me an email. For them, the café isn't important.",
+      "intent": "Say that's not true, and give an example: Don Hernando comes every day.",
+      "accept": [
+        "No es verdad. Por ejemplo, don Hernando viene todos los días.",
+        "No es cierto. Por ejemplo, Hernando viene aquí todos los días.",
+        "No es verdad. Hernando, por ejemplo, viene todos los días."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "por ejemplo",
+          "label": "for example: por ejemplo"
+        },
+        {
+          "type": "negation",
+          "label": "that's not true: no es verdad"
+        }
+      ],
+      "focus": "c:por-ejemplo",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Muy bien. ¿Y qué necesitas ahora?",
+      "npcEn": "Very good. And what do you need now?",
+      "intent": "Say you need a year, to save the café.",
+      "accept": [
+        "Necesito un año para salvar el café.",
+        "Ahora necesito un año, para salvar el café.",
+        "Pues, necesito un año para salvar el café."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "para salvar",
+          "flags": "i",
+          "label": "to save the café: para salvar"
+        }
+      ],
+      "focus": "p:para-inf-purpose",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Gracias, Tomás. Te mando el texto mañana.",
+      "npcEn": "Thanks, Tomás. I'll send you the piece tomorrow.",
+      "intent": "Thank her, say you're going to read it, and sign off with a hug.",
+      "accept": [
+        "Gracias, Mariana. Lo voy a leer. Un abrazo.",
+        "Gracias. Voy a leerlo. Un abrazo.",
+        "Mil gracias. Lo voy a leer mañana. Un abrazo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(lo voy a leer|voy a leerlo)",
+          "flags": "i",
+          "label": "read it: lo voy a leer, or voy a leerlo"
+        },
+        {
+          "type": "containsWord",
+          "word": "un abrazo",
+          "label": "sign off: un abrazo"
+        }
+      ],
+      "focus": "g:object-pronoun-position",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:por-ejemplo",
+    "c:puedo",
+    "c:pues",
+    "c:quiero",
+    "c:un-abrazo",
+    "c:voy-a",
+    "g:cause-result",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "l:abrazo",
+    "l:abrir",
+    "l:abuela",
+    "l:ahora",
+    "l:aquí",
+    "l:ayudar",
+    "l:año",
+    "l:bien",
+    "l:café",
+    "l:claro",
+    "l:correo",
+    "l:día",
+    "l:ejemplo",
+    "l:escribir",
+    "l:importante",
+    "l:ir",
+    "l:leer",
+    "l:lugar",
+    "l:mandar",
+    "l:mañana",
+    "l:necesitar",
+    "l:poder",
+    "l:querer",
+    "l:qué",
+    "l:salvar",
+    "l:ser",
+    "l:sitio",
+    "l:texto",
+    "l:trabajar",
+    "l:vender",
+    "l:venir",
+    "l:verdad",
+    "p:aqui-ahi-alla",
+    "p:demonstratives-basic",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:para-mi",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:senor-don-article",
+    "p:time-sequence-basic",
+    "p:todos-los-dias",
+    "p:veces-al"
+  ]
+}
