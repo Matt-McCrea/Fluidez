@@ -1,0 +1,210 @@
+{
+  "id": "sc-u36-a",
+  "unit": "u36",
+  "title": "Los números de Rosa",
+  "spare": false,
+  "brief": "You're Tomás, sitting down with Vale after closing to go through the café's books. She's a friend, so use tú. Say what has been sold, compare this year to last, and draw a conclusion.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Vale: Ya cerré la caja. Mira, este mes se vendió muchísimo más. ¿Qué crees que pasó?",
+      "npcEn": "Vale: I closed the till. Look, a lot more was sold this month. What do you think happened?",
+      "intent": "Say that since the review, much more has been sold (use se).",
+      "accept": [
+        "Desde la reseña se vende mucho más.",
+        "Creo que desde la reseña se vendieron más cosas.",
+        "Se vende mucho más desde que salió la reseña."
+      ],
+      "require": [
+        {
+          "type": "sePassive",
+          "label": "use se: se vendió, se vendieron"
+        }
+      ],
+      "focus": "g:passive-se",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Vale: Exacto. Y mira la cifra: vendimos mucho más que el año pasado.",
+      "npcEn": "Vale: Exactly. And look at the figure: we sold much more than last year.",
+      "intent": "Say that you can't believe it, and that it is more than you expected.",
+      "accept": [
+        "No lo puedo creer. Es más de lo que esperaba.",
+        "Es más de lo que pensaba, qué increíble.",
+        "Vendimos más de lo que yo esperaba."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "más de lo que",
+          "flags": "i",
+          "label": "more than I expected: más de lo que"
+        }
+      ],
+      "focus": "p:mas-de-lo-que",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Vale: Lo que vendo yo es la mitad del dinero que entra. Pero ojo con los gastos.",
+      "npcEn": "Vale: What I sell is half of the money that comes in. But watch the expenses.",
+      "intent": "Say that the expenses are higher than the sales, so there is no profit (use a connector).",
+      "accept": [
+        "Los gastos son más altos que las ventas, por lo tanto no hay ganancia.",
+        "Gastamos más de lo que ganamos, así que no queda ganancia.",
+        "Los gastos son mayores que las ventas, de modo que no ganamos nada."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "por lo tanto",
+            "así que",
+            "de modo que",
+            "por eso"
+          ],
+          "label": "draw the conclusion with por lo tanto, así que or de modo que"
+        }
+      ],
+      "focus": "g:consequence-connectors",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Vale: Los abogados cuestan una fortuna. ¿Qué hacemos?",
+      "npcEn": "Vale: The lawyers cost a fortune. What do we do?",
+      "intent": "Say that the expenses are bigger than the profit.",
+      "accept": [
+        "Los gastos son más grandes que la ganancia.",
+        "Es increíble: los gastos son más grandes que lo que ganamos.",
+        "Los gastos son mayores que la ganancia."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(más \\w+ que|mayor)",
+          "flags": "i",
+          "label": "bigger than: más grandes que, mayores que"
+        }
+      ],
+      "focus": "g:comparatives-advanced",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Vale: Entonces hay que pensar algo. Gracias por quedarte hasta tarde.",
+      "npcEn": "Vale: Then we have to think of something. Thanks for staying late.",
+      "intent": "Thank her and say you count on her.",
+      "accept": [
+        "Gracias a ti. Cuento contigo.",
+        "Cuento contigo, Vale. Gracias por todo.",
+        "Gracias, Vale. Cuento contigo para lo que sigue."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "contigo",
+          "label": "count on her: cuento contigo"
+        }
+      ],
+      "focus": "p:contar-con",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:creo-que",
+    "c:cuenta-conmigo",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hay-que",
+    "c:ojo",
+    "c:oye-mira",
+    "c:puedo",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:comparatives",
+    "g:consequence-connectors",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:passive-se",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "l:abogado",
+    "l:alto",
+    "l:año",
+    "l:caja",
+    "l:cerrar",
+    "l:cifra",
+    "l:contar",
+    "l:cosa",
+    "l:costar",
+    "l:creer",
+    "l:dinero",
+    "l:entrar",
+    "l:esperar",
+    "l:exacto",
+    "l:fortuna",
+    "l:ganancia",
+    "l:ganar",
+    "l:gastar",
+    "l:gasto",
+    "l:grande",
+    "l:hacer",
+    "l:increíble",
+    "l:mayor",
+    "l:mes",
+    "l:mirar",
+    "l:mitad",
+    "l:modo",
+    "l:ojo",
+    "l:pasado",
+    "l:pasar",
+    "l:pensar",
+    "l:poder",
+    "l:quedar",
+    "l:qué",
+    "l:reseña",
+    "l:salir",
+    "l:seguir",
+    "l:ser",
+    "l:tarde",
+    "l:vender",
+    "l:venta",
+    "p:demonstratives-basic",
+    "p:es-tiene-lleva",
+    "p:fracciones-de",
+    "p:gracias-a-por-culpa-de",
+    "p:gracias-por",
+    "p:indefinites-basic",
+    "p:mas-de-lo-que",
+    "p:mayor-menor",
+    "p:ojo-con-no-confies",
+    "p:para-inf",
+    "p:por-culpa-de",
+    "p:quantifiers-basic",
+    "p:ten-cuidado-con",
+    "p:time-pasado-que-viene",
+    "p:viejo-antiguo-mayor"
+  ]
+}

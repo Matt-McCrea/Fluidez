@@ -1,0 +1,199 @@
+{
+  "id": "sc-u36-f",
+  "unit": "u36",
+  "title": "Preguntas de una periodista",
+  "spare": false,
+  "brief": "You're Tomás, being interviewed by Mariana for an article on small businesses on your street. She's a friend, so use tú. Give figures, compare years and say what follows from them.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Mariana: Primero lo básico. ¿Qué cambió en el café este año?",
+      "npcEn": "Mariana: First the basics. What changed in the café this year?",
+      "intent": "Say that the prices were not raised, and that the number of customers went up.",
+      "accept": [
+        "No se subieron los precios, pero aumentó el número de clientes.",
+        "Los precios no subieron y los clientes aumentaron.",
+        "No subimos los precios, pero hay más clientes."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "aumentó",
+            "subió",
+            "más clientes",
+            "aumentaron"
+          ],
+          "label": "say customers went up"
+        }
+      ],
+      "focus": "p:subir-subida",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Mariana: ¿Y de cuánto fue el aumento de las ventas?",
+      "npcEn": "Mariana: And how large was the increase in sales?",
+      "intent": "Say it was around forty percent.",
+      "accept": [
+        "Fue de un cuarenta por ciento.",
+        "Más o menos un cuarenta por ciento.",
+        "Fue casi un cuarenta por ciento."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "por ciento",
+            "%"
+          ],
+          "label": "give the figure with por ciento"
+        }
+      ],
+      "focus": "p:por-ciento",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Mariana: Impresionante. ¿Y los gastos?",
+      "npcEn": "Mariana: Impressive. And the expenses?",
+      "intent": "Say the expenses went up too, so profit is lower than the sales suggest.",
+      "accept": [
+        "Los gastos también subieron, por lo tanto la ganancia es menor de lo que parece.",
+        "Subieron también, así que la ganancia es menor que las ventas.",
+        "Los gastos subieron más que las ventas, de modo que ganamos menos."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "por lo tanto",
+            "de modo que",
+            "así que",
+            "tan",
+            "por eso"
+          ],
+          "label": "link the result with por lo tanto, así que or de modo que"
+        }
+      ],
+      "focus": "g:consequence-connectors",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Mariana: ¿Qué se aprende de todo esto?",
+      "npcEn": "Mariana: What do we learn from all this?",
+      "intent": "Say that a small business should not spend more than it earns (use deber).",
+      "accept": [
+        "Un negocio pequeño no debe gastar más de lo que gana.",
+        "No se debe gastar más de lo que se gana.",
+        "Un negocio no debería gastar más de lo que gana."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "deb",
+          "flags": "i",
+          "label": "use deber"
+        },
+        {
+          "type": "negation",
+          "label": "not spend more"
+        }
+      ],
+      "focus": "g:deber-modal",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Mariana: Perfecto, ya tengo la cita. Gracias por tu tiempo.",
+      "npcEn": "Mariana: Perfect, I have my quote. Thanks for your time.",
+      "intent": "Thank her and say you'll bring her a coffee.",
+      "accept": [
+        "Gracias a ti. Te traigo un tinto.",
+        "Gracias, Mariana. Ahora te traigo un café.",
+        "De nada. Te voy a traer un tinto."
+      ],
+      "require": [],
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:mas-o-menos",
+    "c:no-se",
+    "c:tengo",
+    "c:voy-a",
+    "g:cause-result",
+    "g:comparatives",
+    "g:conditional",
+    "g:consequence-connectors",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:impersonal-obligation",
+    "g:ir-a-plans",
+    "g:lo-adjective",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:tener-que-hay-que",
+    "g:yo-irregular",
+    "l:ahora",
+    "l:aprender",
+    "l:aumentar",
+    "l:aumento",
+    "l:año",
+    "l:básico",
+    "l:café",
+    "l:cambiar",
+    "l:cita",
+    "l:cliente",
+    "l:cuánto",
+    "l:deber",
+    "l:ganancia",
+    "l:ganar",
+    "l:gastar",
+    "l:gasto",
+    "l:impresionante",
+    "l:ir",
+    "l:menor",
+    "l:modo",
+    "l:negocio",
+    "l:número",
+    "l:parecer",
+    "l:pequeño",
+    "l:perfecto",
+    "l:precio",
+    "l:qué",
+    "l:ser",
+    "l:subir",
+    "l:subirse",
+    "l:tener",
+    "l:tiempo",
+    "l:tinto",
+    "l:traer",
+    "l:venta",
+    "p:demonstratives-basic",
+    "p:gracias-a-por-culpa-de",
+    "p:gracias-por",
+    "p:llevar-traer",
+    "p:mas-de-lo-que",
+    "p:mayor-menor",
+    "p:me-te-nos-objects",
+    "p:por-ciento",
+    "p:por-culpa-de",
+    "p:possessives-basic",
+    "p:subir-subida",
+    "p:tendrias-que",
+    "p:time-sequence-basic"
+  ]
+}

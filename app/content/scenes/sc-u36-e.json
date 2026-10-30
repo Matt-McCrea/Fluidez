@@ -1,0 +1,228 @@
+{
+  "id": "sc-u36-e",
+  "unit": "u36",
+  "title": "Café con Don Hernando",
+  "spare": false,
+  "brief": "You're Tomás, with Don Hernando at the chess table. He's much older than you, so use usted. He wants to know how the business is doing and gives you his taxi-driver view of the economy.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenas tardes, Tomás. Veo que el café ahora se llena todos los días.",
+      "npcEn": "Good afternoon, Tomás. I see the café fills up every day now.",
+      "intent": "Greet him and say yes, many more people come now than before.",
+      "accept": [
+        "Buenas tardes, Don Hernando. Sí, viene mucha más gente que antes.",
+        "Sí, don Hernando. Ahora viene más gente que antes.",
+        "Buenas tardes. Es verdad, hay más clientes que antes."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "más \\w+ que",
+          "flags": "i",
+          "label": "more than before: más gente que antes"
+        }
+      ],
+      "focus": "g:comparatives-advanced",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Cuando yo manejaba el taxi, los precios subían todos los años. ¿Cree que eso pasa hoy?",
+      "npcEn": "When I drove a taxi, prices went up every year. Do you think that happens today?",
+      "intent": "Say that yes, everything gets more expensive every year (use usted).",
+      "accept": [
+        "Sí, don Hernando. Cada vez todo es más caro.",
+        "Claro. Cada año todo cuesta más.",
+        "Sí, cada vez es más caro vivir."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "cada vez",
+            "cada año",
+            "más caro",
+            "más cara"
+          ],
+          "label": "every time more: cada vez más"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "tienes",
+            "crees"
+          ],
+          "label": "use usted"
+        }
+      ],
+      "focus": "g:comparatives-advanced",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Una carrera costaba mil pesos. Hoy se paga mucho más.",
+      "npcEn": "A ride cost a thousand pesos. Today you pay much more.",
+      "intent": "Say that now many things are paid with the phone (use se).",
+      "accept": [
+        "Hoy muchas cosas se pagan con el celular.",
+        "Ahora casi todo se paga con el celular.",
+        "Ahora se pagan muchas cosas con el celular."
+      ],
+      "require": [
+        {
+          "type": "sePassive",
+          "label": "use se: se vendió, se vendieron"
+        }
+      ],
+      "focus": "g:passive-se",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Es verdad. Con razón a mí no me alcanza la plata. Debería ahorrar más.",
+      "npcEn": "True. No wonder my money isn't enough. I should save more.",
+      "intent": "Say that he should not worry, and that you can count on him.",
+      "accept": [
+        "No se preocupe, don Hernando. Cuente conmigo.",
+        "No se preocupe. Puede contar conmigo.",
+        "Tranquilo, don Hernando. Cuente con nosotros."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "cuente con",
+            "contar con",
+            "cuenta con"
+          ],
+          "label": "count on: cuente conmigo"
+        }
+      ],
+      "focus": "p:contar-con",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Gracias, muchacho. Jaque mate en tres jugadas.",
+      "npcEn": "Thanks, lad. Checkmate in three moves.",
+      "intent": "Say bien hecho, and that you'll pay for his coffee.",
+      "accept": [
+        "¡Bien hecho, don Hernando! El café va por mi cuenta.",
+        "Bien hecho. Hoy le invito el tinto.",
+        "Bien hecho, don Hernando. Yo pago el tinto."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "bien hecho"
+          ],
+          "label": "praise him: bien hecho"
+        }
+      ],
+      "focus": "c:bien-hecho",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-mi-tambien",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:no-se",
+    "c:no-te-preocupes",
+    "c:tranquilo",
+    "g:cada-cualquier",
+    "g:commands-usted",
+    "g:comparatives",
+    "g:conditional",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:passive-se",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-wanting",
+    "g:tener-que-hay-que",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:ahora",
+    "l:ahorrar",
+    "l:alcanzar",
+    "l:antes",
+    "l:año",
+    "l:bien",
+    "l:buena",
+    "l:café",
+    "l:caro",
+    "l:carrera",
+    "l:celular",
+    "l:claro",
+    "l:cliente",
+    "l:contar",
+    "l:cosa",
+    "l:costar",
+    "l:creer",
+    "l:cuenta",
+    "l:deber",
+    "l:día",
+    "l:gente",
+    "l:hacer",
+    "l:hoy",
+    "l:invitar",
+    "l:ir",
+    "l:jugada",
+    "l:llenar",
+    "l:manejar",
+    "l:matar",
+    "l:muchacho",
+    "l:pagar",
+    "l:pasar",
+    "l:peso",
+    "l:plata",
+    "l:poder",
+    "l:precio",
+    "l:preocuparse",
+    "l:razón",
+    "l:ser",
+    "l:subir",
+    "l:tarde",
+    "l:taxi",
+    "l:tinto",
+    "l:tranquilo",
+    "l:venir",
+    "l:ver",
+    "l:verdad",
+    "l:vez",
+    "l:vivir",
+    "p:contar-con",
+    "p:contar-dos-sentidos",
+    "p:costar-pagar",
+    "p:cuando-basic",
+    "p:demonstratives-basic",
+    "p:disponer-de",
+    "p:don-dona-nombre",
+    "p:es-adj-inf",
+    "p:la-gente-singular",
+    "p:me-te-nos-objects",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:request-ladder",
+    "p:senor-don-article",
+    "p:subir-subida",
+    "p:tendrias-que",
+    "p:todos-los-dias",
+    "p:veces-al"
+  ]
+}

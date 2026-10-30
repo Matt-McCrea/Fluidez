@@ -1,0 +1,225 @@
+{
+  "id": "sc-u36-b",
+  "unit": "u36",
+  "title": "Una cita en el banco",
+  "spare": false,
+  "brief": "You're Tomás, at the bank asking about a loan to cover the café's legal costs. The officer is a stranger, so use usted. Explain the situation, ask about the interest, and give your reasons.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenos días. Soy la señora Ortiz, del área de crédito. ¿En qué puedo ayudarle?",
+      "npcEn": "Good morning. I'm Mrs. Ortiz from the credit department. How can I help you?",
+      "intent": "Say you have a café and need a loan for legal costs (use usted).",
+      "accept": [
+        "Buenos días. Tengo un café y necesito un préstamo para los gastos legales.",
+        "Buenos días, señora. Necesito un crédito para pagar a un abogado.",
+        "Tengo un café en La Candelaria y necesito un préstamo."
+      ],
+      "require": [
+        {
+          "type": "avoidsAny",
+          "words": [
+            "tienes",
+            "necesitas"
+          ],
+          "label": "use the yo form, not tú forms"
+        }
+      ],
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Entiendo. Y su café, ¿cómo va? ¿Se vende bien?",
+      "npcEn": "I see. And your café, how is it doing? Does it sell well?",
+      "intent": "Say that sales have gone up a lot, so you have more customers than before.",
+      "accept": [
+        "Muy bien. Las ventas subieron mucho, así que tenemos más clientes que antes.",
+        "Se vende mucho más que el año pasado, por eso tenemos más clientes.",
+        "Bien. Tenemos más clientes que antes, por lo tanto vendemos más."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "por lo tanto",
+            "de modo que",
+            "así que",
+            "tan",
+            "por eso"
+          ],
+          "label": "link the result with así que, por eso or por lo tanto"
+        }
+      ],
+      "focus": "g:consequence-connectors",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Qué bien. Pero un crédito depende de los gastos. ¿Cuánto debe usted ahora?",
+      "npcEn": "Good. But a loan depends on expenses. How much do you owe now?",
+      "intent": "Say you owe more than you earn each month.",
+      "accept": [
+        "Debo más de lo que gano cada mes.",
+        "Ahora debo más de lo que gano al mes.",
+        "Debemos más de lo que ganamos cada mes."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "más de lo que",
+          "flags": "i",
+          "label": "more than you earn: más de lo que gano"
+        }
+      ],
+      "focus": "p:mas-de-lo-que",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Ya veo. El interés es del doce por ciento. ¿Le parece alta?",
+      "npcEn": "I see. The interest is twelve percent. Does it seem high to you?",
+      "intent": "Say it seems higher than at the other bank, and ask what the monthly payment would be.",
+      "accept": [
+        "Me parece más alta que en el otro banco. ¿Cuánto sería la cuota mensual?",
+        "Es más alta que la del otro banco. ¿De cuánto es la cuota al mes?",
+        "Sí, es más alta que en el otro banco. ¿Cuánto pagaría cada mes?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask the monthly payment"
+        },
+        {
+          "type": "regex",
+          "pattern": "más alta que",
+          "flags": "i",
+          "label": "higher than: más alta que"
+        }
+      ],
+      "focus": "g:comparatives-advanced",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Le preparo una oferta. Venga el viernes y la firmamos.",
+      "npcEn": "I'll prepare an offer for you. Come on Friday and we'll sign it.",
+      "intent": "Thank her and say you will be there on Friday.",
+      "accept": [
+        "Muchas gracias, señora. El viernes estaré aquí.",
+        "Gracias. Vengo el viernes sin falta.",
+        "Perfecto, gracias. Nos vemos el viernes."
+      ],
+      "require": [],
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:chao-nos-vemos",
+    "c:cuanto-cuesta",
+    "c:depende",
+    "c:gracias-de-nada",
+    "c:hago-salgo-vengo",
+    "c:hola-buenos-dias",
+    "c:puedo",
+    "c:que-bien",
+    "c:tengo",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:cada-cualquier",
+    "g:cause-result",
+    "g:comparatives",
+    "g:conditional",
+    "g:consequence-connectors",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:abogado",
+    "l:ahora",
+    "l:alto",
+    "l:antes",
+    "l:aquí",
+    "l:ayudar",
+    "l:año",
+    "l:banco",
+    "l:bien",
+    "l:bueno",
+    "l:café",
+    "l:cliente",
+    "l:crédito",
+    "l:cuota",
+    "l:cuánto",
+    "l:cómo",
+    "l:deber",
+    "l:depender",
+    "l:día",
+    "l:entender",
+    "l:estar",
+    "l:falta",
+    "l:firmar",
+    "l:ganar",
+    "l:gasto",
+    "l:interés",
+    "l:ir",
+    "l:legal",
+    "l:mensual",
+    "l:mes",
+    "l:necesitar",
+    "l:oferta",
+    "l:pagar",
+    "l:parecer",
+    "l:pasado",
+    "l:perfecto",
+    "l:poder",
+    "l:preparar",
+    "l:préstamo",
+    "l:qué",
+    "l:ser",
+    "l:señora",
+    "l:subir",
+    "l:tener",
+    "l:vender",
+    "l:venir",
+    "l:venta",
+    "l:ver",
+    "l:viernes",
+    "l:área",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:con-sin",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:el-agua-fria",
+    "p:es-tiene-lleva",
+    "p:mas-de-lo-que",
+    "p:nos-vemos-a-las",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:por-ciento",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:senor-don-article",
+    "p:subir-subida",
+    "p:time-pasado-que-viene",
+    "p:veces-al"
+  ]
+}

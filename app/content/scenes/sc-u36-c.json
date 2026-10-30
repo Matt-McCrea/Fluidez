@@ -1,0 +1,232 @@
+{
+  "id": "sc-u36-c",
+  "unit": "u36",
+  "title": "Mil firmas y una torta",
+  "spare": false,
+  "brief": "You're Tomás, in the café with Mariana, who has an idea for raising money online. She's your friend, so use tú. Report what was raised, say what was sold, and compare the results with the goal.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Mariana: Tomás, mira el celular. La campaña lleva tres días y ya hay mucha gente donando.",
+      "npcEn": "Mariana: Tomás, look at your phone. The campaign has been going three days and lots of people are already donating.",
+      "intent": "Say that a lot of money has been raised in three days (use se).",
+      "accept": [
+        "Se consiguió muchísimo dinero en tres días.",
+        "Qué locura, se ha juntado mucho dinero en tres días.",
+        "Se juntó mucha plata en tres días."
+      ],
+      "require": [
+        {
+          "type": "sePassive",
+          "label": "use se: se vendió, se vendieron"
+        }
+      ],
+      "focus": "g:passive-se",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Mariana: Y esto no es todo. Los clientes de siempre cuentan contigo.",
+      "npcEn": "Mariana: And that's not all. The regulars count on you.",
+      "intent": "Say that you didn't expect so much help, and that it is more than you hoped.",
+      "accept": [
+        "No esperaba tanta ayuda. Es más de lo que esperaba.",
+        "Es más ayuda de lo que yo pensaba, de verdad.",
+        "Recibimos más de lo que esperábamos."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "más (\\w+ )?de lo que",
+          "flags": "i",
+          "label": "more than you hoped: más de lo que"
+        }
+      ],
+      "focus": "p:mas-de-lo-que",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Mariana: Vale preparó cien tortas para los clientes que ayudaron. Ya se agotaron.",
+      "npcEn": "Mariana: Vale made a hundred cakes for the customers who helped. They're already sold out.",
+      "intent": "Say that they sold out faster than she thought.",
+      "accept": [
+        "Se agotaron más rápido de lo que ella pensaba.",
+        "Se agotaron más rápido de lo que pensábamos.",
+        "Qué bien, se acabaron más rápido de lo que creíamos."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "más rápido",
+            "más pronto",
+            "más rápido de lo que"
+          ],
+          "label": "faster than: más rápido de lo que"
+        },
+        {
+          "type": "regex",
+          "pattern": "de lo que",
+          "flags": "i",
+          "label": "than she thought: de lo que"
+        }
+      ],
+      "focus": "g:comparatives-advanced",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Mariana: La meta era diez millones y ya vamos por veinte. Es mucho más.",
+      "npcEn": "Mariana: The goal was ten million and we're already at twenty. That's much more.",
+      "intent": "Say that you have enough now, so you can pay the lawyer.",
+      "accept": [
+        "Entonces ya tenemos suficiente, de modo que podemos pagar al abogado.",
+        "Con eso alcanza, así que le pagamos al abogado.",
+        "Tenemos más de lo que pedíamos, por lo tanto podemos pagar al abogado."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "por lo tanto",
+            "de modo que",
+            "así que",
+            "tan",
+            "por eso"
+          ],
+          "label": "link the result with así que, de modo que or por lo tanto"
+        }
+      ],
+      "focus": "g:consequence-connectors",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Mariana: Escribí la nota. Va en el periódico mañana.",
+      "npcEn": "Mariana: I wrote the article. It goes in the paper tomorrow.",
+      "intent": "Tell her good job, and thank her for everything.",
+      "accept": [
+        "Bien hecho, Mariana. Gracias por todo.",
+        "¡Bien hecho! Mil gracias por tu ayuda.",
+        "Gracias por todo, Mariana. Bien hecho."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "bien hecho",
+            "buen trabajo"
+          ],
+          "label": "praise her: bien hecho"
+        }
+      ],
+      "focus": "c:bien-hecho",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:en-serio",
+    "c:entonces-bueno",
+    "c:era",
+    "c:hay",
+    "c:oye-mira",
+    "c:que-bien",
+    "c:tienes",
+    "g:cause-result",
+    "g:commands-usted",
+    "g:comparatives",
+    "g:consequence-connectors",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:hace-que-desde",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:para-que",
+    "g:passive-se",
+    "g:perfecto-experience",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:verb-infinitive",
+    "l:abogado",
+    "l:acabar",
+    "l:agotarse",
+    "l:alcanzar",
+    "l:ayuda",
+    "l:ayudar",
+    "l:bien",
+    "l:campaña",
+    "l:celular",
+    "l:cliente",
+    "l:conseguir",
+    "l:contar",
+    "l:creer",
+    "l:dinero",
+    "l:donar",
+    "l:día",
+    "l:escribir",
+    "l:esperar",
+    "l:gente",
+    "l:hacer",
+    "l:ir",
+    "l:juntarse",
+    "l:llevar",
+    "l:locura",
+    "l:mañana",
+    "l:meter",
+    "l:mirar",
+    "l:modo",
+    "l:nota",
+    "l:pagar",
+    "l:pedir",
+    "l:pensar",
+    "l:periódico",
+    "l:plata",
+    "l:podar",
+    "l:poder",
+    "l:preparar",
+    "l:qué",
+    "l:recibir",
+    "l:rápido",
+    "l:ser",
+    "l:siempre",
+    "l:suficiente",
+    "l:tener",
+    "l:torta",
+    "l:verdad",
+    "p:agotarse",
+    "p:contar-con",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:gracias-por",
+    "p:intentar-conseguir",
+    "p:ir-venir",
+    "p:la-gente-singular",
+    "p:mas-de-lo-que",
+    "p:numbers-un-una",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:quantifiers-basic"
+  ]
+}

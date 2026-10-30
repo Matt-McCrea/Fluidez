@@ -1,0 +1,218 @@
+{
+  "id": "sc-u36-d",
+  "unit": "u36",
+  "title": "Precios en la plaza",
+  "spare": false,
+  "brief": "You're Tomás, shopping for the café's ingredients at the market. The seller is a stranger, so use usted. Ask prices, comment on figures and see what is left.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Pase, pase, joven. ¿Qué se le ofrece?",
+      "npcEn": "Come in, come in, young man. What can I get you?",
+      "intent": "Ask how much the kilo of pork is (a cuánto está).",
+      "accept": [
+        "¿A cuánto está el kilo de cerdo?",
+        "Buenas. ¿A cómo está el kilo de cerdo?",
+        "Hola, ¿a cuánto está el cerdo?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "a (cuánto|cómo) est",
+          "flags": "i",
+          "label": "ask with ¿a cuánto está...?"
+        }
+      ],
+      "focus": "p:a-cuanto-esta",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Está a veinte mil el kilo. Pero la subida del precio no es mía, es de los proveedores.",
+      "npcEn": "It's twenty thousand a kilo. But the price rise isn't mine, it's the suppliers'.",
+      "intent": "Say the price went up a lot and is higher than last month.",
+      "accept": [
+        "Subió mucho. Está más cara que el mes pasado.",
+        "El precio subió, es más alto que el mes pasado.",
+        "Subió bastante, está más cara que antes."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "subió",
+            "aumentó",
+            "más cara",
+            "más alto",
+            "más alta"
+          ],
+          "label": "say it went up: subió, más cara"
+        }
+      ],
+      "focus": "p:subir-subida",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Pues sí. La harina sí está en oferta, con un diez por ciento de descuento.",
+      "npcEn": "Well, yes. The flour is on sale, with a ten percent discount.",
+      "intent": "Say you'll take ten kilos, because most of what you use is flour.",
+      "accept": [
+        "Me llevo diez kilos, porque la mayoría de lo que uso es harina.",
+        "Entonces diez kilos de harina, por favor. La mayoría de mis recetas la llevan.",
+        "Deme diez kilos. La mayoría de lo que hacemos lleva harina."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "la mayoría",
+            "la mayor parte"
+          ],
+          "label": "most of: la mayoría de"
+        }
+      ],
+      "focus": "p:la-mayoria-de",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Diez kilos... ¿y los huevos? Se agotaron esta mañana, ¡se vendieron todos!",
+      "npcEn": "Ten kilos... and the eggs? They sold out this morning, they all sold!",
+      "intent": "Ask when more eggs are sold here (use se).",
+      "accept": [
+        "¿Cuándo se venden más huevos aquí?",
+        "¿A qué hora se venden los huevos nuevos?",
+        "¿Cuándo se vuelven a vender huevos?"
+      ],
+      "require": [
+        {
+          "type": "sePassive",
+          "label": "use se: se vendió, se vendieron"
+        },
+        {
+          "type": "question",
+          "label": "ask a question"
+        }
+      ],
+      "focus": "g:passive-se",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Mañana llegan temprano. Son cuarenta mil por todo lo demás.",
+      "npcEn": "They arrive early tomorrow. That's forty thousand for the rest.",
+      "intent": "Pay, thank the seller and say goodbye until tomorrow.",
+      "accept": [
+        "Aquí tiene. Muchas gracias, hasta mañana.",
+        "Gracias, señor. Hasta mañana.",
+        "Perfecto, aquí está la plata. Hasta mañana."
+      ],
+      "require": [],
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-como-esta",
+    "c:a-que-hora",
+    "c:alo",
+    "c:aqui-tiene",
+    "c:chao-nos-vemos",
+    "c:como-estas",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:por-favor",
+    "c:porque",
+    "c:pues",
+    "c:siga-siga",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:comparatives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:lo-adjective",
+    "g:passive-se",
+    "g:por-para-1",
+    "g:possessives-stressed",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:quantifiers",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:se-accidental",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verbs-of-change",
+    "l:agotarse",
+    "l:alto",
+    "l:antes",
+    "l:aquí",
+    "l:buena",
+    "l:cara",
+    "l:cerdo",
+    "l:cuándo",
+    "l:cuánto",
+    "l:cómo",
+    "l:demás",
+    "l:descuento",
+    "l:estar",
+    "l:favor",
+    "l:hacer",
+    "l:harina",
+    "l:hora",
+    "l:huevo",
+    "l:joven",
+    "l:kilo",
+    "l:llegar",
+    "l:llevar",
+    "l:llevarse",
+    "l:mayoría",
+    "l:mañana",
+    "l:mes",
+    "l:nuevo",
+    "l:oferta",
+    "l:ofrecer",
+    "l:pasado",
+    "l:pasar",
+    "l:perfecto",
+    "l:plata",
+    "l:precio",
+    "l:proveedor",
+    "l:qué",
+    "l:receta",
+    "l:ser",
+    "l:señor",
+    "l:subir",
+    "l:temprano",
+    "l:tener",
+    "l:usar",
+    "l:vender",
+    "l:volverse",
+    "p:a-cuanto-esta",
+    "p:agotarse",
+    "p:aqui-ahi-alla",
+    "p:container-de",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:en-oferta",
+    "p:es-tiene-lleva",
+    "p:estar-a",
+    "p:estar-a-price",
+    "p:la-mayoria-de",
+    "p:llegar-a-tiempo",
+    "p:no-es-x-es-y",
+    "p:por-ciento",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:subir-subida",
+    "p:time-pasado-que-viene",
+    "p:volver-a-inf"
+  ]
+}
