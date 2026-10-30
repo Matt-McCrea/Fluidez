@@ -1,0 +1,44 @@
+{
+  "node": "p:confiar-en-que",
+  "hook": {
+    "line": "Sometimes *espero que* feels too light. When you really believe things will work out, you can say so with more weight.",
+    "es": "Confío en que todo salga bien.",
+    "en": "I'm confident everything will turn out fine."
+  },
+  "examples": [
+    { "es": "Confío en que todo salga bien.", "en": "I'm confident everything will turn out fine." },
+    { "es": "Confío en ti.", "en": "I trust you. (to a friend)" },
+    { "es": "Confiamos en que el negocio crezca este año.", "en": "We're confident the business will grow this year." },
+    { "es": "Mariana confía en que el juez escuche a la familia.", "en": "Mariana is confident the judge will listen to the family." },
+    { "es": "No confío en que Altamira nos deje en paz.", "en": "I'm not confident Altamira will leave us in peace." },
+    { "es": "¿Confías en que el abogado nos ayude?", "en": "Are you confident the lawyer will help us? (to a friend)" }
+  ],
+  "rule": "*Confiar en* means \"to trust\". With a person, it is simple: *Confío en ti*.\n\nTo say you are confident about something that has not happened yet, add *que* and use the \"asking\" ending, the same one you learned after *te recomiendo que*: *Confío en que todo salga bien*.\n\nTwo things to keep: the little word *en* stays before *que*, and the verb after it changes its ending (*sale* becomes *salga*, *crece* becomes *crezca*). It is a firmer, slightly more formal cousin of *espero que*.",
+  "smallPrint": "Teachers call this a hope or expectation phrase. Like other wishes, it takes the subjunctive.",
+  "readAndPick": [
+    { "es": "Confío en ti.", "options": ["I trust you.", "I trust him.", "You trust me."], "answer": 0 },
+    { "es": "Confío en que todo salga bien.", "options": ["I'm confident everything will turn out fine.", "I'm sure everything turned out fine.", "I trust everyone."], "answer": 0 },
+    { "es": "Confiamos en que el negocio crezca este año.", "options": ["We trust the business owner this year.", "We're confident the business will grow this year.", "We hope the business grew last year."], "answer": 1 },
+    { "es": "No confío en que Altamira nos deje en paz.", "options": ["I'm confident Altamira will leave us in peace.", "I'm not confident Altamira will leave us in peace.", "I don't trust that we left Altamira in peace."], "answer": 1 },
+    { "es": "¿Confías en que el abogado nos ayude?", "options": ["Are you confident the lawyer will help us?", "Do you trust the lawyer who helped us?", "Am I confident the lawyer will help you?"], "answer": 0 },
+    { "es": "Mariana confía en Vale.", "options": ["Vale trusts Mariana.", "Mariana trusts Vale.", "Mariana is confident Vale will come."], "answer": 1 },
+    { "es": "Confío en que Hernando venga mañana.", "options": ["I'm confident Hernando will come tomorrow.", "I trust Hernando, who came yesterday.", "Hernando is confident I will come tomorrow."], "answer": 0 },
+    { "es": "Confiamos en que usted nos ayude.", "options": ["We trust that he helps us.", "We're confident you will help us. (formal)", "You trust that we will help."], "answer": 1 },
+    { "es": "Confío en que ellos entiendan.", "options": ["I'm confident they will understand.", "I'm confident I will understand.", "They are confident I understand."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *sale* or *salga* and type the whole sentence: *Confío en que todo ___ bien.*", "answer": "Confío en que todo salga bien.", "accept": [], "why": "After *confío en que*, the verb takes the \"asking\" form: *salga*." },
+    { "prompt": "Type in Spanish, to a friend: I trust you.", "answer": "Confío en ti.", "accept": ["Yo confío en ti."], "why": "With a person, *confiar en* is just *en* plus the person." },
+    { "prompt": "Type in Spanish: We're confident the business will grow this year.", "answer": "Confiamos en que el negocio crezca este año.", "accept": ["Confiamos en que este año el negocio crezca."], "why": "*Confiamos en que*, then *crezca*, the changed form of *crece*." },
+    { "prompt": "Type in Spanish: I'm confident Hernando will come tomorrow.", "answer": "Confío en que Hernando venga mañana.", "accept": ["Confío en que mañana Hernando venga.", "Yo confío en que Hernando venga mañana."], "why": "*Venga* is the changed form of *viene*." },
+    { "prompt": "Make it negative: *Confío en que Altamira nos deje en paz.* Say: I'm not confident Altamira will leave us in peace.", "answer": "No confío en que Altamira nos deje en paz.", "accept": ["Yo no confío en que Altamira nos deje en paz."], "why": "Put *no* in front of *confío*; the rest stays the same." },
+    { "prompt": "Type in Spanish, to a friend: Are you confident the lawyer will help us?", "answer": "¿Confías en que el abogado nos ayude?", "accept": ["¿Tú confías en que el abogado nos ayude?"], "why": "*Confías* is the *tú* form, and *ayude* is the changed form of *ayuda*." },
+    { "prompt": "Type in Spanish: Mariana is confident the judge will listen to the family.", "answer": "Mariana confía en que el juez escuche a la familia.", "accept": [], "why": "*Confía* for Mariana, then *en que* and the changed form *escuche*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Confío que todo salga bien.", "right": "Confío en que todo salga bien.", "why": "Almost. *Confiar* always keeps *en*, even before *que*." },
+    { "wrong": "Confío en que todo sale bien.", "right": "Confío en que todo salga bien.", "why": "Almost. You are talking about something not yet true, so the verb takes the \"asking\" ending." },
+    { "wrong": "Confío de ti.", "right": "Confío en ti.", "why": "Almost. Spanish trusts *en* someone, not \"of\" them." }
+  ],
+  "personal": "Say one thing you are confident will go well this month, starting with *Confío en que*."
+}

@@ -1,0 +1,46 @@
+{
+  "node": "g:subj-influence",
+  "hook": {
+    "line": "When the family's future is on the line, everyone around you has advice, and you will want to give some back. Spanish has a neat way to say \"I recommend that you...\" and \"I'm asking you to...\".",
+    "es": "Te recomiendo que hables con un abogado.",
+    "en": "I recommend that you talk to a lawyer."
+  },
+  "examples": [
+    { "es": "Te recomiendo que hables con un abogado.", "en": "I recommend that you talk to a lawyer. (to a friend)" },
+    { "es": "Le pido que me escuche.", "en": "I'm asking him to listen to me." },
+    { "es": "Les aconsejo que no firmen nada.", "en": "I advise you not to sign anything. (to a group)" },
+    { "es": "Vale te pide que cocines hoy.", "en": "Vale is asking you to cook today. (to a friend)" },
+    { "es": "No te recomiendo que vendas el café.", "en": "I don't recommend that you sell the café. (to a friend)" },
+    { "es": "¿Qué me recomiendas que pida?", "en": "What do you recommend that I order? (to a friend)" }
+  ],
+  "rule": "To tell someone what you advise or ask of them, use three pieces:\n\n*Te recomiendo* + *que* + a new verb form.\n\nThe person you are advising comes first (*te*, *le*, *les*, *me*). Then the advice verb: *recomiendo*, *pido*, *aconsejo*, *sugiero*. Then *que*. The verb after *que* is for the other person's action, and it changes its ending to the \"asking\" form.\n\nFor *-ar* verbs the ending switches to *-e*: *hablas* becomes *hables*. For *-er* and *-ir* verbs it switches to *-a*: *comes* becomes *comas*, *escribes* becomes *escribas*.\n\nEnglish says \"I recommend that you talk\" or just \"I'd talk to...\". Spanish always keeps *que* and the changed ending.",
+  "smallPrint": "Teachers call this the subjunctive after verbs of influence: you are trying to influence what someone else does.",
+  "readAndPick": [
+    { "es": "Te recomiendo que hables con un abogado.", "options": ["I recommend that you talk to a lawyer.", "I recommend that he talks to a lawyer.", "You recommend that I talk to a lawyer."], "answer": 0 },
+    { "es": "Le pido que me escuche.", "options": ["He asks me to listen.", "I ask him to listen to me.", "I ask you to listen to him."], "answer": 1 },
+    { "es": "Les aconsejo que no firmen nada.", "options": ["I advise you all not to sign anything.", "They advise me not to sign anything.", "I advise you all to sign everything."], "answer": 0 },
+    { "es": "Vale te pide que cocines hoy.", "options": ["Vale asks me to cook today.", "You ask Vale to cook today.", "Vale asks you to cook today."], "answer": 2 },
+    { "es": "No te recomiendo que vendas el café.", "options": ["I recommend that you sell the café.", "I don't recommend that you sell the café.", "I don't recommend that he sells the café."], "answer": 1 },
+    { "es": "¿Qué me recomiendas que pida?", "options": ["What do I recommend that you order?", "What do you recommend that I order?", "What do you recommend that she orders?"], "answer": 1 },
+    { "es": "Te pido que me ayudes.", "options": ["I ask you to help me.", "You ask me to help you.", "I ask him to help me."], "answer": 0 },
+    { "es": "Mariana te recomienda que pruebes el tinto.", "options": ["Mariana recommends that you try the black coffee.", "You recommend that Mariana tries the black coffee.", "Mariana recommends that I try the black coffee."], "answer": 0 },
+    { "es": "Nos piden que escribamos un plan.", "options": ["We ask them to write a plan.", "They ask us to write a plan.", "They ask us to read a plan."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *hablas* or *hables* and type the whole sentence: *Te recomiendo que ___ con un abogado.*", "answer": "Te recomiendo que hables con un abogado.", "accept": [], "why": "After *te recomiendo que*, an *-ar* verb takes *-es* instead of *-as*." },
+    { "prompt": "Pick *comes* or *comas* and type the whole sentence: *Te recomiendo que ___ algo.*", "answer": "Te recomiendo que comas algo.", "accept": [], "why": "An *-er* verb switches to *-a* after *que*: *comas*." },
+    { "prompt": "Type in Spanish: I'm asking him to listen to me.", "answer": "Le pido que me escuche.", "accept": ["Yo le pido que me escuche."], "why": "*Le* is the person you ask, and *escuche* is the changed ending for *él*." },
+    { "prompt": "Type in Spanish, to a friend: I ask you to help me.", "answer": "Te pido que me ayudes.", "accept": ["Yo te pido que me ayudes."], "why": "*Te* for the friend, *que*, then *ayudes*, the changed form of *ayudas*." },
+    { "prompt": "Type in Spanish, to a friend: I recommend that you sleep more.", "answer": "Te recomiendo que duermas más.", "accept": ["Yo te recomiendo que duermas más."], "why": "*Dormir* changes in the middle (*duermes*) and the ending switches to *-as*." },
+    { "prompt": "Make it negative: *Te recomiendo que vendas el café.* Say: I don't recommend that you sell the café. (to a friend)", "answer": "No te recomiendo que vendas el café.", "accept": ["Yo no te recomiendo que vendas el café."], "why": "Put *no* in front of the whole advice verb." },
+    { "prompt": "Type in Spanish, to a group: I advise you not to sign anything.", "answer": "Les aconsejo que no firmen nada.", "accept": ["Yo les aconsejo que no firmen nada."], "why": "*Les* for a group, and *no* goes right before the changed verb." },
+    { "prompt": "Type in Spanish, to a friend: What do you recommend that I order?", "answer": "¿Qué me recomiendas que pida?", "accept": ["¿Qué me recomiendas que yo pida?"], "why": "*Me* is the person getting the advice, and *pida* is the changed form of *pido*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Te recomiendo que hablas con un abogado.", "right": "Te recomiendo que hables con un abogado.", "why": "Almost. After advice or a request, the verb after *que* changes its ending: *hables*, not *hablas*." },
+    { "wrong": "Te recomiendo que hables a un abogado.", "right": "Te recomiendo que hables con un abogado.", "why": "Almost. To talk to someone, Spanish says *hablar con*." },
+    { "wrong": "Te pido que tú me ayudes.", "right": "Te pido que me ayudes.", "why": "Almost. *Te* already says who is doing the helping, so *tú* is not needed." },
+    { "wrong": "Le pido escuche.", "right": "Le pido que me escuche.", "why": "Almost. Spanish keeps *que* here, even though English can drop \"that\"." }
+  ],
+  "personal": "Tell a friend one thing you recommend that they do this week, starting with *Te recomiendo que*."
+}
