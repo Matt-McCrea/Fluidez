@@ -1,0 +1,186 @@
+{
+  "id": "sc-u60-f",
+  "unit": "u60",
+  "title": "Ensayo con goteras",
+  "brief": "You're Tomás, watching the neighbourhood theatre group rehearse in the café. Mariana is writing about it and asks you for quotable lines. She is a friend, so use tú. Be funny and fair.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Mariana: Llevan dos horas ensayando el monólogo y no se ha caído nadie. ¿Qué te parece la coreografía?",
+      "npcEn": "Mariana: They've been rehearsing the monologue for two hours and nobody has fallen over. What do you think of the choreography?",
+      "intent": "Say, politely, that it leaves a lot to be desired (use: deja mucho que desear).",
+      "accept": [
+        "Con cariño, la coreografía deja mucho que desear.",
+        "La verdad es que la coreografía deja mucho que desear.",
+        "Es linda, pero deja bastante que desear."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bdeja(ba)? (mucho|bastante) que desear\\b",
+          "flags": "iu",
+          "label": "use: deja mucho que desear"
+        }
+      ],
+      "focus": "p:dejar-mucho-que-desear",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Mariana: Y el final, cuando el actor llora con el sombrero en la mano.",
+      "npcEn": "Mariana: And the ending, when the actor cries with his hat in his hand.",
+      "intent": "Say the ending borders on the ridiculous (use: roza el ridículo).",
+      "accept": [
+        "El final roza el ridículo, pero es tierno.",
+        "Ese llanto con el sombrero roza el ridículo.",
+        "Para mí, esa escena roza el ridículo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\broza(ba)? el rid[ií]culo\\b",
+          "flags": "iu",
+          "label": "use: roza el ridículo"
+        }
+      ],
+      "focus": "p:rozar-el-ridiculo",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Mariana: Salta a la vista que ensayaron poco. ¿Tú lo notaste?",
+      "npcEn": "Mariana: It's glaringly obvious they rehearsed little. Did you notice it?",
+      "intent": "Say yes, it's obvious, but that the guionista (writer) did hit the mark with the text (use: salta a la vista).",
+      "accept": [
+        "Sí, salta a la vista, pero el guionista dio en el clavo con el texto.",
+        "Claro que salta a la vista. Aun así, el texto es un acierto.",
+        "Salta a la vista, sí. Aunque el guionista escribió un texto de lo más ameno."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsalta a la vista\\b",
+          "flags": "iu",
+          "label": "use: salta a la vista"
+        }
+      ],
+      "focus": "p:saltar-a-la-vista",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Mariana: Perfecto, esto va a la columna. ¿Una última frase para el titular?",
+      "npcEn": "Mariana: Perfect, this goes in the column. One last line for the headline?",
+      "intent": "Give her a line for the headline with an extreme adjective (use: de lo más + adjective).",
+      "accept": [
+        "Una noche de lo más divertida en La Esquina de Rosa.",
+        "Un ensayo de lo más entrañable, con goteras y todo.",
+        "Una función de lo más original."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bde lo m[aá]s \\S+",
+          "flags": "iu",
+          "label": "use: de lo más + adjective"
+        }
+      ],
+      "focus": "p:de-lo-mas-adj",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:claro-listo",
+    "c:es-que",
+    "c:la-verdad",
+    "c:no-se",
+    "g:adjective-agreement",
+    "g:aunque-indicative",
+    "g:concession-despite",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:hace-que-desde",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:parecer-quedar",
+    "g:perfecto-experience",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:quantifiers",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:superlatives",
+    "g:that-clauses",
+    "l:acierto",
+    "l:actor",
+    "l:ameno",
+    "l:caer",
+    "l:cariño",
+    "l:claro",
+    "l:clavo",
+    "l:columna",
+    "l:coreografía",
+    "l:dar",
+    "l:dejar",
+    "l:desear",
+    "l:divertirse",
+    "l:ensayar",
+    "l:ensayo",
+    "l:entrañable",
+    "l:escena",
+    "l:escribir",
+    "l:final",
+    "l:frase",
+    "l:función",
+    "l:gotera",
+    "l:guionista",
+    "l:hora",
+    "l:ir",
+    "l:lindo",
+    "l:llevar",
+    "l:llorar",
+    "l:mano",
+    "l:monólogo",
+    "l:noche",
+    "l:notar",
+    "l:original",
+    "l:parecer",
+    "l:perfecto",
+    "l:qué",
+    "l:ridículo",
+    "l:rozar",
+    "l:saltar",
+    "l:ser",
+    "l:sombrero",
+    "l:texto",
+    "l:tierno",
+    "l:titularse",
+    "l:verdad",
+    "l:vista",
+    "p:ameno-pesado",
+    "p:cuando-basic",
+    "p:dar-en-el-clavo",
+    "p:de-lo-mas-adj",
+    "p:dejar-mucho-que-desear",
+    "p:demonstratives-basic",
+    "p:ir-a-venir-de-place",
+    "p:llevar-tiempo-gerundio",
+    "p:para-inf",
+    "p:para-mi",
+    "p:poco-un-poco",
+    "p:pues-claro-que",
+    "p:quantifiers-basic",
+    "p:rozar-el-ridiculo",
+    "p:saltar-a-la-vista",
+    "p:ser-un-acierto",
+    "p:te-parece-bien-que"
+  ]
+}

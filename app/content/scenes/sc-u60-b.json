@@ -1,0 +1,243 @@
+{
+  "id": "sc-u60-b",
+  "unit": "u60",
+  "title": "La crítica del periódico",
+  "brief": "You're Tomás. A newspaper critic has reviewed the café with mixed words, and Vale reads you the worst lines. She is quick and dry; you're friends, so use tú. React, defend the café, and plan an answer.",
+  "spare": false,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Vale: Salió la crítica en el periódico. Dice que el servicio deja mucho que desear. ¿Qué opinas?",
+      "npcEn": "Vale: The review came out in the paper. It says the service leaves a lot to be desired. What do you think?",
+      "intent": "Say the critic hit the nail on the head about the service (use: dar en el clavo).",
+      "accept": [
+        "Creo que el crítico dio en el clavo con lo del servicio.",
+        "Dio en el clavo, Vale: el sábado tardamos una hora.",
+        "Pues en esto la crítica dio en el clavo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bdi(o|eron) en el clavo\\b",
+          "flags": "iu",
+          "label": "use: dio en el clavo"
+        }
+      ],
+      "focus": "p:dar-en-el-clavo",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Vale: También escribe que la máquina de espresso no sirve para nada. ¡Mi máquina!",
+      "npcEn": "Vale: He also writes that the espresso machine is no use at all. My machine!",
+      "intent": "Defend the machine: say it works, and that the useless thing is the old fridge (use: no sirve para nada).",
+      "accept": [
+        "La máquina funciona bien. La que no sirve para nada es la nevera vieja.",
+        "Tu máquina es genial; la nevera es la que no sirve para nada.",
+        "Esa máquina funciona; lo que no sirve para nada es el horno viejo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bno (sirve|valen?|sirven) para nada\\b",
+          "flags": "iu",
+          "label": "use: no sirve para nada"
+        }
+      ],
+      "focus": "p:no-servir-para-nada",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Vale: Y la última frase: «Un café con carácter, pero sin planificación». Dice que le gustó y que no le gustó.",
+      "npcEn": "Vale: And the last line: \"A café with character, but without planning.\" He says he liked it and he didn't.",
+      "intent": "Give your opinion of that with a sentence that starts with resulta + adjective + que (use: resulta absurdo que...).",
+      "accept": [
+        "Resulta curioso que le guste y no le guste a la vez.",
+        "Resulta injusto que hable de planificación sin conocer el barrio.",
+        "Resulta raro que un crítico no sepa lo que piensa."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bresulta \\S+ que\\b",
+          "flags": "iu",
+          "label": "use: resulta + adjective + que"
+        }
+      ],
+      "focus": "p:resulta-adj-que",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Vale: Entonces, ¿qué le contestamos?",
+      "npcEn": "Vale: So what do we reply to him?",
+      "intent": "Answer with the emphasised word first, as in 'Poco importa el tono' (start with mucho, poco, difícil or fácil).",
+      "accept": [
+        "Poco importa el tono: lo que cuenta es mejorar.",
+        "Mucho hemos aprendido de esa crítica, y no nos molestamos.",
+        "Difícil es contestar sin perder la calma, pero lo intentaré."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "^\\W*(mucho|poco|dif[ií]cil|f[aá]cil)\\b",
+          "flags": "iu",
+          "label": "start with the emphasised word: mucho, poco, difícil or fácil"
+        }
+      ],
+      "focus": "g:word-order-style",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Vale: Vale, escríbela tú. Yo te traigo un tinto y me quedo a leerla.",
+      "npcEn": "Vale: Fine, you write it. I'll bring you a black coffee and stay to read it.",
+      "intent": "Thank her and say you'll write the reply tonight.",
+      "accept": [
+        "Gracias, Vale. Esta noche la escribo.",
+        "Muchas gracias. Esta noche escribiré la respuesta.",
+        "Gracias por el tinto. La escribo esta noche, lo prometo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bgracias\\b",
+          "flags": "iu",
+          "label": "thank her"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bnoche\\b",
+          "flags": "iu",
+          "label": "say you'll write it tonight"
+        }
+      ],
+      "focus": "p:resulta-adj-que",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:creo-que",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:no-sirve",
+    "c:para-nada",
+    "c:pues",
+    "g:adjective-agreement",
+    "g:commands-tu",
+    "g:commands-with-pronouns",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:gustar-full",
+    "g:indirect-objects",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:perfecto-experience",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:relatives-prepositions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-irregulars",
+    "g:subj-value",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:aprender",
+    "l:barrio",
+    "l:bien",
+    "l:café",
+    "l:calmar",
+    "l:carácter",
+    "l:clavo",
+    "l:conocer",
+    "l:contar",
+    "l:contestar",
+    "l:creer",
+    "l:crítica",
+    "l:crítico",
+    "l:curioso",
+    "l:dar",
+    "l:decir",
+    "l:dejar",
+    "l:desear",
+    "l:difícil",
+    "l:escribir",
+    "l:frase",
+    "l:funcionar",
+    "l:genial",
+    "l:gustar",
+    "l:hablar",
+    "l:hora",
+    "l:horno",
+    "l:importar",
+    "l:injusto",
+    "l:intentar",
+    "l:leer",
+    "l:mejorar",
+    "l:molestar",
+    "l:máquina",
+    "l:nevera",
+    "l:noche",
+    "l:opinar",
+    "l:pensar",
+    "l:perder",
+    "l:periódico",
+    "l:planificación",
+    "l:prometer",
+    "l:quedarse",
+    "l:qué",
+    "l:raro",
+    "l:respuesta",
+    "l:resultar",
+    "l:saber",
+    "l:salir",
+    "l:ser",
+    "l:servicio",
+    "l:servir",
+    "l:sábado",
+    "l:tardar",
+    "l:tinto",
+    "l:tono",
+    "l:traer",
+    "l:vez",
+    "l:viejo",
+    "p:a-la-vez",
+    "p:aguantar-conservar-la-calma",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:con-sin",
+    "p:dar-en-el-clavo",
+    "p:days-el-lunes",
+    "p:dejar-mucho-que-desear",
+    "p:demonstratives-basic",
+    "p:el-que-la-que",
+    "p:gracias-por",
+    "p:llevar-traer",
+    "p:lo-de",
+    "p:lo-de-topic",
+    "p:me-te-nos-objects",
+    "p:no-servir-para-nada",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:que-opinas-de",
+    "p:resulta-adj-que",
+    "p:saber-conocer",
+    "p:servir-para",
+    "p:tardar-en",
+    "p:viejo-antiguo-mayor"
+  ]
+}

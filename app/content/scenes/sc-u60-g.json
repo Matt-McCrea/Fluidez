@@ -1,0 +1,206 @@
+{
+  "id": "sc-u60-g",
+  "unit": "u60",
+  "title": "En el aire",
+  "brief": "You're Tomás, a guest on a local radio show. The host introduces the programme and asks about the café. You play yourself, so use usted if he does, and keep answers open but clear.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Locutor: Bienvenidos. A lo largo de esta charla hablaremos del barrio. Tomás, ¿qué hace especial a su café?",
+      "npcEn": "Host: Welcome. Over the course of this talk we'll talk about the neighbourhood. Tomás, what makes your café special?",
+      "intent": "Say that your café is not just any café, because it was your grandmother's.",
+      "accept": [
+        "No es un café cualquiera: era de mi abuela Rosa.",
+        "Mi café no es uno cualquiera, porque fue de mi abuela.",
+        "Lo especial es que no es un café cualquiera, es el de mi abuela."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcualquiera\\b",
+          "flags": "iu",
+          "label": "use: cualquiera"
+        }
+      ],
+      "focus": "p:un-x-cualquiera",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Locutor: Qué bonito. ¿Y volver a abrir fue un acierto, económicamente hablando?",
+      "npcEn": "Host: How lovely. And was reopening a good call, economically speaking?",
+      "intent": "Say that reopening was a good call, but money is short (use: fue un acierto + infinitive, and plata no hay).",
+      "accept": [
+        "Fue un acierto reabrir el café, aunque plata no hay.",
+        "Reabrir fue un acierto. Plata no hay, pero hay clientes.",
+        "Fue un acierto volver a abrir. Plata no hay, claro."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bfue un acierto\\b",
+          "flags": "iu",
+          "label": "use: fue un acierto"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bplata no hay\\b",
+          "flags": "iu",
+          "label": "use: plata no hay"
+        }
+      ],
+      "focus": "p:ser-un-acierto",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Locutor: Los oyentes preguntan por el piso original y la barra. ¿Valió la pena conservarlos?",
+      "npcEn": "Host: Listeners are asking about the original floor and the counter. Was it worth keeping them?",
+      "intent": "Answer with one of your two favourite details, using 'lo mejor de... es...'.",
+      "accept": [
+        "Sí. Lo mejor de la barra es que todavía huele a café de los años setenta.",
+        "Valió la pena. Lo mejor del piso es que cuenta la historia del barrio.",
+        "Mucho. Lo mejor de todo es que los vecinos reconocen cada baldosa."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo mejor de(l| la| todo)? ?\\S*",
+          "flags": "iu",
+          "label": "use: lo mejor de... es..."
+        }
+      ],
+      "focus": "p:lo-mejor-de",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Locutor: Para ir cerrando, ¿un mensaje para los oyentes?",
+      "npcEn": "Host: To start wrapping up, a message for the listeners?",
+      "intent": "Invite the listeners to come by, and thank the host.",
+      "accept": [
+        "Vengan cuando quieran, el tinto es de la casa. Gracias por invitarme.",
+        "Los espero en la Candelaria. Muchas gracias por esta charla.",
+        "Pasen cualquier día por el café. Gracias por la invitación."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bgracias\\b",
+          "flags": "iu",
+          "label": "thank the host"
+        }
+      ],
+      "focus": "p:a-lo-largo-de-esta-charla",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:claro-listo",
+    "c:era",
+    "c:es-que",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:porque",
+    "g:adjective-agreement",
+    "g:adverbs-mente",
+    "g:cada-cualquier",
+    "g:cause-result",
+    "g:commands-usted",
+    "g:direct-objects",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:hay-vs-esta",
+    "g:imperfect-states",
+    "g:lo-adjective",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-cuando-future",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:yo-irregular",
+    "l:abrir",
+    "l:abuela",
+    "l:acierto",
+    "l:año",
+    "l:baldosa",
+    "l:barra",
+    "l:barrio",
+    "l:bienvenido",
+    "l:bonito",
+    "l:café",
+    "l:casa",
+    "l:cerrar",
+    "l:charla",
+    "l:claro",
+    "l:cliente",
+    "l:conservar",
+    "l:contar",
+    "l:día",
+    "l:económicamente",
+    "l:especial",
+    "l:esperar",
+    "l:hablar",
+    "l:hacer",
+    "l:historia",
+    "l:invitación",
+    "l:invitar",
+    "l:ir",
+    "l:largo",
+    "l:locutor",
+    "l:mejor",
+    "l:mensaje",
+    "l:oler",
+    "l:original",
+    "l:oyente",
+    "l:pasar",
+    "l:pena",
+    "l:piso",
+    "l:plata",
+    "l:preguntar",
+    "l:querer",
+    "l:qué",
+    "l:reconocer",
+    "l:ser",
+    "l:tinto",
+    "l:valer",
+    "l:vecino",
+    "l:venir",
+    "l:volver",
+    "p:a-lo-largo-de",
+    "p:a-lo-largo-de-esta-charla",
+    "p:contar-dos-sentidos",
+    "p:decadas-siglos",
+    "p:demonstratives-basic",
+    "p:gracias-por",
+    "p:hoy-les-voy-a-hablar",
+    "p:le-falta-sal",
+    "p:lo-mejor-de",
+    "p:los-de-la-camiseta",
+    "p:me-te-nos-objects",
+    "p:no-es-x-es-y",
+    "p:oler-a-saber-a",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:pase-lo-que-pase",
+    "p:personalmente-tecnicamente",
+    "p:plata-no-hay",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:ser-un-acierto",
+    "p:un-x-cualquiera",
+    "p:valer-la-pena",
+    "p:volver-a-inf",
+    "p:ya-todavia-basic"
+  ]
+}

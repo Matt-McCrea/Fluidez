@@ -1,0 +1,228 @@
+{
+  "id": "sc-u60-d",
+  "unit": "u60",
+  "title": "El libro sobre el mostrador",
+  "brief": "You're Tomás. Don Hernando has put his poetry book on the counter and asks for your honest opinion. He is courtly and much older, so use usted. Praise what works, name what doesn't, and thank him.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Hernando: Buenos días, Tomás. Quiero su opinión sincera sobre mi libro. ¿Qué es lo mejor?",
+      "npcEn": "Hernando: Good morning, Tomás. I want your honest opinion of my book. What is the best thing about it?",
+      "intent": "Say the best thing about the book is the poem about the taxi (use: lo mejor del libro es...), speaking to him as usted.",
+      "accept": [
+        "Lo mejor del libro es el poema del taxi, don Hernando.",
+        "Lo mejor de su libro es el poema sobre el taxi.",
+        "Para mí, lo mejor del libro es el poema del taxi."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo mejor del? \\S+",
+          "flags": "iu",
+          "label": "use: lo mejor del libro es..."
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "tu libro",
+            "eres"
+          ],
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "p:lo-mejor-de",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Hernando: Me alegra. Hay versos, sin embargo, que usted encontrará pesados. Sea franco.",
+      "npcEn": "Hernando: I'm glad. There are lines, however, that you will find heavy going. Be frank.",
+      "intent": "Frankly say that the last part is a bit heavy going, but that the first part is very engaging (use: pesado, ameno).",
+      "accept": [
+        "La última parte es un poco pesada, pero la primera es muy amena.",
+        "Francamente, el final resulta pesado, aunque el comienzo es amenísimo.",
+        "Hay una parte pesada al final, pero el resto es muy ameno."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(pesad[oa]s?|pesad[ií]sim[oa]s?)\\b",
+          "flags": "iu",
+          "label": "say something is heavy going: pesado"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bamen[oa]s?\\b|\\bamen[ií]sim[oa]s?\\b",
+          "flags": "iu",
+          "label": "say something is engaging: ameno"
+        }
+      ],
+      "focus": "p:ameno-pesado",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Hernando: Se lo agradezco. Dígame, ¿hice bien en leerlo aquí, delante de los vecinos?",
+      "npcEn": "Hernando: I thank you. Tell me, was I right to read it here in front of the neighbours?",
+      "intent": "Reassure him: tell him he was right to read it here (use: hizo bien en...).",
+      "accept": [
+        "Hizo bien en leerlo aquí, don Hernando.",
+        "Claro que hizo bien en leerlo aquí. La gente lo escuchó con atención.",
+        "Hizo muy bien en leerlo delante de todos."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bhizo (muy )?bien en\\b",
+          "flags": "iu",
+          "label": "use: hizo bien en + infinitive"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "hiciste"
+          ],
+          "label": "use usted (hizo), not tú (hiciste)"
+        }
+      ],
+      "focus": "p:haces-bien-en",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Hernando: Entonces dejaré el libro sobre el mostrador. Un poeta nunca se va sin un café.",
+      "npcEn": "Hernando: Then I'll leave the book on the counter. A poet never leaves without a coffee.",
+      "intent": "Thank him and offer him a coffee on the house, as a question with usted.",
+      "accept": [
+        "Gracias, don Hernando. ¿Le sirvo un tinto?",
+        "Muchas gracias. ¿Quiere un tinto, invita la casa?",
+        "Con mucho gusto. ¿Le preparo un café?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "te sirvo",
+            "quieres"
+          ],
+          "label": "use usted (le), not tú (te)"
+        }
+      ],
+      "focus": "p:haces-bien-en",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:al-final",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:mucho-gusto",
+    "c:quiero",
+    "g:adjective-agreement",
+    "g:adverbs-mente",
+    "g:aunque-indicative",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:concession-despite",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:hay-vs-esta",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:lo-adjective",
+    "g:object-pronoun-position",
+    "g:passive-ser",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:agradecer",
+    "l:alegrar",
+    "l:ameno",
+    "l:amén",
+    "l:aquí",
+    "l:atención",
+    "l:bien",
+    "l:bueno",
+    "l:café",
+    "l:casa",
+    "l:claro",
+    "l:comienzo",
+    "l:decir",
+    "l:dejar",
+    "l:delante",
+    "l:día",
+    "l:embargo",
+    "l:encontrar",
+    "l:escuchar",
+    "l:final",
+    "l:francamente",
+    "l:franco",
+    "l:gente",
+    "l:gusto",
+    "l:hacer",
+    "l:invitar",
+    "l:irse",
+    "l:leer",
+    "l:libro",
+    "l:mejor",
+    "l:mostrador",
+    "l:opinión",
+    "l:parte",
+    "l:pesar",
+    "l:poema",
+    "l:poeta",
+    "l:preparar",
+    "l:querer",
+    "l:qué",
+    "l:resto",
+    "l:resultar",
+    "l:ser",
+    "l:servir",
+    "l:sincero",
+    "l:taxi",
+    "l:tinto",
+    "l:vecino",
+    "l:verso",
+    "p:alegrarse-de-que",
+    "p:ameno-pesado",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cerca-de",
+    "p:don-dona-nombre",
+    "p:frequency-scale",
+    "p:haces-bien-en",
+    "p:la-gente-singular",
+    "p:lo-mejor-de",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:para-mi",
+    "p:poco-un-poco",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:pues-claro-que",
+    "p:quantifiers-basic",
+    "p:senor-don-article",
+    "p:te-lo-agradezco"
+  ]
+}

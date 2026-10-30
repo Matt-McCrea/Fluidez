@@ -1,0 +1,174 @@
+{
+  "id": "sc-u60-e",
+  "unit": "u60",
+  "title": "Para chuparse los dedos",
+  "brief": "You're Tomás. Vale has made a new dessert for the reopening and wants your verdict before it goes on the menu. She is quick and dry, and you're friends, so use tú. Judge it, ask a fair question, and say what the café needs next.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Vale: Prueba esto. Es mi pastel de chocolate nuevo. Y no me mientas.",
+      "npcEn": "Vale: Try this. It's my new chocolate cake. And don't lie to me.",
+      "intent": "Say it is finger-licking good (use: para chuparse los dedos).",
+      "accept": [
+        "Está para chuparse los dedos, Vale.",
+        "Es un pastel para chuparse los dedos.",
+        "Te quedó para chuparse los dedos."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bpara chuparse los dedos\\b",
+          "flags": "iu",
+          "label": "use: para chuparse los dedos"
+        }
+      ],
+      "focus": "c:para-chuparse-los-dedos",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Vale: ¿En serio? ¿Y la masa? La probé veinte veces hasta dar con el punto.",
+      "npcEn": "Vale: Really? And the dough? I tried it twenty times until I got it just right.",
+      "intent": "Say the dough is done to perfection (use: a la perfección).",
+      "accept": [
+        "La masa está hecha a la perfección.",
+        "Está a la perfección, se nota que ensayaste mucho.",
+        "Sí, la masa te salió a la perfección."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\ba la perfecci[oó]n\\b",
+          "flags": "iu",
+          "label": "use: a la perfección"
+        }
+      ],
+      "focus": "c:a-la-perfeccion",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Vale: Mariana dice que los postres están en pleno auge en Bogotá. ¿Crees que nos conviene vender más?",
+      "npcEn": "Vale: Mariana says desserts are booming in Bogotá. Do you think it makes sense for us to sell more?",
+      "intent": "Say that, with desserts booming, it makes sense (use: en pleno auge).",
+      "accept": [
+        "Sí, con los postres en pleno auge nos conviene vender más.",
+        "Creo que sí, el negocio de los postres está en pleno auge.",
+        "Claro, ahora que todo está en pleno auge, hay que aprovechar."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\ben pleno auge\\b",
+          "flags": "iu",
+          "label": "use: en pleno auge"
+        }
+      ],
+      "focus": "c:en-pleno-auge",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Vale: Lo mejor de este pastel es el precio, ¿no?",
+      "npcEn": "Vale: The best thing about this cake is the price, isn't it?",
+      "intent": "Disagree playfully: the best thing is the taste, and where it falls down is the price (use: lo mejor de... es... / donde falla es...).",
+      "accept": [
+        "No, lo mejor del pastel es el sabor; donde falla es en el precio.",
+        "Lo mejor de tu pastel es el sabor. Donde falla es en el tamaño, es pequeño.",
+        "Lo mejor del pastel es el chocolate, y donde falla es en el precio."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo mejor de(l| la| tu| este| esta)? \\S+",
+          "flags": "iu",
+          "label": "use: lo mejor de... es..."
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bdonde falla es\\b",
+          "flags": "iu",
+          "label": "use: donde falla es..."
+        }
+      ],
+      "focus": "p:lo-mejor-de",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-la-perfeccion",
+    "c:claro-listo",
+    "c:creo-que",
+    "c:en-pleno-auge",
+    "c:en-serio",
+    "c:hay",
+    "c:hay-que",
+    "c:no-cierto",
+    "c:para-chuparse-los-dedos",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:estar-participle",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:impersonal-obligation",
+    "g:lo-adjective",
+    "g:negative-commands",
+    "g:parecer-quedar",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "l:ahora",
+    "l:aprovechar",
+    "l:auge",
+    "l:chocolate",
+    "l:chupar",
+    "l:claro",
+    "l:convenir",
+    "l:creer",
+    "l:dar",
+    "l:decir",
+    "l:dedo",
+    "l:ensayar",
+    "l:estar",
+    "l:fallar",
+    "l:hacer",
+    "l:masa",
+    "l:mejor",
+    "l:mentir",
+    "l:negocio",
+    "l:notar",
+    "l:nuevo",
+    "l:pastel",
+    "l:pequeño",
+    "l:perfección",
+    "l:pleno",
+    "l:postre",
+    "l:precio",
+    "l:probar",
+    "l:punto",
+    "l:quedar",
+    "l:sabor",
+    "l:salir",
+    "l:ser",
+    "l:serio",
+    "l:tamaño",
+    "l:vender",
+    "l:vez",
+    "p:demonstratives-basic",
+    "p:lo-mejor-de",
+    "p:me-te-nos-objects",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:saltar-a-la-vista"
+  ]
+}

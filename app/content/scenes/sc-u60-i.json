@@ -1,0 +1,208 @@
+{
+  "id": "sc-u60-i",
+  "unit": "u60",
+  "title": "Una tarde en la tertulia",
+  "brief": "You're Tomás. A visitor from Medellín, Camila, comes to the afternoon tertulia and speaks with vos. You're about her age, so use tú. Recommend what to see, give your view of a reading, and invite her back.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Camila: Hola, ¿eres Tomás? Me dijeron que acá hay tertulia todos los jueves. ¿Qué tal es?",
+      "npcEn": "Camila: Hi, are you Tomás? They told me there's a tertulia here every Thursday. What's it like?",
+      "intent": "Say it's very engaging and that you'd say it's not an ordinary tertulia (use: ameno, cualquiera).",
+      "accept": [
+        "Es muy amena, y no es una tertulia cualquiera.",
+        "Mucho: la tertulia es amenísima y nada común, no es una cualquiera.",
+        "Te va a gustar, es de lo más amena. No es una tertulia cualquiera."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bamen[oa]s?\\b|\\bamen[ií]sim[oa]s?\\b",
+          "flags": "iu",
+          "label": "say it's engaging: ameno"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bcualquiera\\b",
+          "flags": "iu",
+          "label": "use: cualquiera"
+        }
+      ],
+      "focus": "p:ameno-pesado",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Camila: Ojo, que yo leo poesía pesada. Ven a las seis y me cuentas si te gustó.",
+      "npcEn": "Camila: Careful, I read heavy poetry. Come at six and tell me whether you liked it.",
+      "intent": "Tell her you'll be there at six, and that you can tell her whether you liked it.",
+      "accept": [
+        "Aquí estaré a las seis y te cuento si me gustó.",
+        "Vengo a las seis, y después te digo si me gustó.",
+        "A las seis estaré aquí. Luego te cuento qué me pareció."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(seis)\\b",
+          "flags": "iu",
+          "label": "mention six o'clock"
+        }
+      ],
+      "focus": "g:voseo-recognition",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Camila: Hoy leyeron una carta de doña Rosa. ¿Qué piensas del texto?",
+      "npcEn": "Camila: Today they read a letter from doña Rosa. What do you think of the text?",
+      "intent": "Say Rosa hit the nail on the head, and that you can tell she wrote it with love (use: dar en el clavo, se nota).",
+      "accept": [
+        "Rosa dio en el clavo: se nota que lo escribió con cariño.",
+        "Mi abuela dio en el clavo con cada línea. Se nota el cariño.",
+        "Dio en el clavo con cada palabra, y se nota que lo hizo con cariño."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bdi(o|jo) en el clavo\\b|\\bdio en el clavo\\b",
+          "flags": "iu",
+          "label": "use: dio en el clavo"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bse nota\\b",
+          "flags": "iu",
+          "label": "use: se nota"
+        }
+      ],
+      "focus": "p:dar-en-el-clavo",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Camila: Pues yo vuelvo cualquier jueves. Quien quisiere, que venga, como dice el letrero.",
+      "npcEn": "Camila: Well, I'll come back any Thursday. Whoever wishes to, let them come, as the sign says.",
+      "intent": "Say goodbye and invite her to come any day, with coffee on you (use: cualquier día).",
+      "accept": [
+        "Ven cualquier día, Camila. El tinto va por la casa.",
+        "Cualquier día me parece bien. Hasta pronto, Camila.",
+        "Cualquier día eres bienvenida. Hasta el jueves."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcualquier d[ií]a\\b",
+          "flags": "iu",
+          "label": "use: cualquier día"
+        }
+      ],
+      "focus": "x:cualquier-dia-un-dia-cualquiera",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:hago-salgo-vengo",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:me-parece-bien",
+    "c:ojo",
+    "c:pues",
+    "c:te-cuento-que",
+    "g:cada-cualquier",
+    "g:commands-tu",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:future-subj-recognition",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:hay-vs-esta",
+    "g:ir-a-plans",
+    "g:parecer-quedar",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-free-relatives",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:abuela",
+    "l:acá",
+    "l:amén",
+    "l:aquí",
+    "l:bien",
+    "l:bienvenida",
+    "l:cariño",
+    "l:carta",
+    "l:casa",
+    "l:clavo",
+    "l:común",
+    "l:contar",
+    "l:dar",
+    "l:decir",
+    "l:después",
+    "l:día",
+    "l:escribir",
+    "l:estar",
+    "l:gustar",
+    "l:hacer",
+    "l:hoy",
+    "l:ir",
+    "l:jueves",
+    "l:leer",
+    "l:letrero",
+    "l:línea",
+    "l:notar",
+    "l:ojo",
+    "l:palabra",
+    "l:parecer",
+    "l:pensar",
+    "l:pesar",
+    "l:poesía",
+    "l:pronto",
+    "l:querer",
+    "l:qué",
+    "l:ser",
+    "l:tertulia",
+    "l:texto",
+    "l:tinto",
+    "l:venir",
+    "l:volver",
+    "p:ameno-pesado",
+    "p:aqui-ahi-alla",
+    "p:dar-en-el-clavo",
+    "p:days-el-lunes",
+    "p:de-lo-mas-adj",
+    "p:entonces-de-repente",
+    "p:me-te-nos-objects",
+    "p:pensar-en",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:que-opinas-de",
+    "p:que-subj-deseo",
+    "p:que-subj-repeated-order",
+    "p:saltar-a-la-vista",
+    "p:senor-don-article",
+    "p:te-parece-bien-que",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:todos-los-dias",
+    "p:un-x-cualquiera"
+  ]
+}

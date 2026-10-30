@@ -1,0 +1,216 @@
+{
+  "id": "sc-u60-h",
+  "unit": "u60",
+  "title": "El hombre de Altamira",
+  "brief": "You're Tomás. A smooth representative from Altamira visits the café, praising it a little too much. Stay polite but firm, use usted (he is a stranger and older), and show you can read between the lines.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Representante: Qué lugar encantador. Todo aquí es de calidad superior. Qué lástima que el edificio sea tan viejo.",
+      "npcEn": "Representative: What a charming place. Everything here is of superior quality. What a pity the building is so old.",
+      "intent": "Say, with an evaluative adverb, that the old building is the point (use: sencillamente, francamente, sinceramente...).",
+      "accept": [
+        "Francamente, el edificio viejo es lo que nos hace distintos.",
+        "Sencillamente, esa edad es lo que nos gusta del lugar.",
+        "Sinceramente, no cambiaría ni una pared."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(sinceramente|francamente|sencillamente|lamentablemente|honestamente|claramente)\\b",
+          "flags": "iu",
+          "label": "use an adverb like francamente or sencillamente"
+        }
+      ],
+      "focus": "g:evaluative-adverbs",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Representante: Nosotros construimos con materiales modernos. Los de aquí son de calidad dudosa, usted lo sabe.",
+      "npcEn": "Representative: We build with modern materials. The ones here are of questionable quality, you know that.",
+      "intent": "Reply that his comment is nonsense: the beams are the best thing about the place (use: lo mejor de... es...).",
+      "accept": [
+        "Perdone, pero lo mejor de este edificio son sus vigas.",
+        "Con respeto, lo mejor del local es la madera original.",
+        "No lo creo. Lo mejor de esta casa es lo que usted llama viejo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo mejor de(l| esta| este| la)? \\S+",
+          "flags": "iu",
+          "label": "use: lo mejor de... es..."
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "eres",
+            "tienes"
+          ],
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "p:lo-mejor-de",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Representante: Le ofrecemos una cifra muy generosa. Piénselo, no es un negocio cualquiera.",
+      "npcEn": "Representative: We offer you a very generous figure. Think it over, it's not just any deal.",
+      "intent": "Say that for you, this isn't just any café, so the figure doesn't matter (use: poco importa..., fronted).",
+      "accept": [
+        "Poco importa la cifra, señor. Este no es un café cualquiera.",
+        "Mucho me ofrece, pero este no es un café cualquiera.",
+        "Poco me importa el dinero cuando se trata de la casa de mi abuela."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "^\\W*(mucho|poco|dif[ií]cil|f[aá]cil)\\b",
+          "flags": "iu",
+          "label": "start with the emphasised word: mucho, poco, difícil or fácil"
+        }
+      ],
+      "focus": "g:word-order-style",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Representante: Entiendo. Aquí tiene mi tarjeta, por si cambia de opinión.",
+      "npcEn": "Representative: I understand. Here is my card, in case you change your mind.",
+      "intent": "Take it politely, but say you doubt you will change your mind (use usted).",
+      "accept": [
+        "Gracias, pero dudo que cambie de opinión.",
+        "Se la agradezco. Lamentablemente para usted, no creo que cambie de opinión.",
+        "La guardo, pero sinceramente no creo que cambie de opinión."
+      ],
+      "require": [
+        {
+          "type": "avoidsAny",
+          "words": [
+            "cambies",
+            "tu opinión"
+          ],
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "g:evaluative-adverbs",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:aqui-tiene",
+    "c:creo-que",
+    "c:gracias-de-nada",
+    "c:me-importa-un-comino",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:adverbs-mente",
+    "g:cada-cualquier",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:indirect-objects",
+    "g:lo-adjective",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:subj-doubt",
+    "g:subj-irregulars",
+    "g:subj-value",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:abuela",
+    "l:agradecer",
+    "l:aquí",
+    "l:café",
+    "l:calidad",
+    "l:cambiar",
+    "l:casa",
+    "l:cifra",
+    "l:construir",
+    "l:creer",
+    "l:dinero",
+    "l:distinto",
+    "l:dudar",
+    "l:dudosa",
+    "l:e",
+    "l:edad",
+    "l:edificio",
+    "l:encantador",
+    "l:entender",
+    "l:francamente",
+    "l:generoso",
+    "l:guardar",
+    "l:gustar",
+    "l:hacer",
+    "l:importar",
+    "l:lamentablemente",
+    "l:llamar",
+    "l:local",
+    "l:lugar",
+    "l:lástima",
+    "l:madera",
+    "l:material",
+    "l:mejor",
+    "l:moderno",
+    "l:negocio",
+    "l:ofrecer",
+    "l:opinión",
+    "l:original",
+    "l:pared",
+    "l:pensar",
+    "l:perdonar",
+    "l:qué",
+    "l:representante",
+    "l:respeto",
+    "l:saber",
+    "l:sencillamente",
+    "l:ser",
+    "l:señor",
+    "l:sinceramente",
+    "l:superior",
+    "l:tarjeta",
+    "l:tener",
+    "l:tratarse",
+    "l:viejo",
+    "l:viga",
+    "p:aqui-ahi-alla",
+    "p:caerse-lastimarse",
+    "p:calidad-dudosa",
+    "p:cambiar-de-por",
+    "p:cuando-basic",
+    "p:demonstratives-basic",
+    "p:es-una-lastima-que",
+    "p:lo-mejor-de",
+    "p:los-de-la-camiseta",
+    "p:me-da-pena-que",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:se-trata-de",
+    "p:sencillamente",
+    "p:te-lo-agradezco",
+    "p:tratar-de",
+    "p:un-x-cualquiera",
+    "p:viejo-antiguo-mayor"
+  ]
+}

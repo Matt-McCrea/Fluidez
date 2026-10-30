@@ -1,0 +1,235 @@
+{
+  "id": "sc-u60-c",
+  "unit": "u60",
+  "title": "Lo que dice el loro",
+  "brief": "You're Tomás, late after closing. Mariana has read your draft reply to the critic and talks it over with you, then Vale asks the question you've been avoiding. Be honest in your own voice; Mariana and Vale are friends, so use tú.",
+  "spare": false,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Mariana: Leí tu respuesta al crítico. Es larga. ¿Cuál es la idea principal?",
+      "npcEn": "Mariana: I read your reply to the critic. It's long. What's the main idea?",
+      "intent": "Say the main idea, with an adverb that comments on your own sentence (use: sinceramente, francamente, sencillamente...).",
+      "accept": [
+        "Sinceramente, la idea es que el café es del barrio, no de un crítico.",
+        "La idea es, francamente, que este café pertenece al barrio.",
+        "Lo que digo, sencillamente, es que el café es de todos."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(sinceramente|francamente|sencillamente|lamentablemente|afortunadamente|honestamente|claramente)\\b",
+          "flags": "iu",
+          "label": "use an adverb like sinceramente or francamente"
+        }
+      ],
+      "focus": "g:evaluative-adverbs",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Mariana: ¿No te parece un poco duro el tono con el crítico?",
+      "npcEn": "Mariana: Don't you think the tone is a bit harsh on the critic?",
+      "intent": "Say no: you simply say what you think (use: sencillamente).",
+      "accept": [
+        "No, sencillamente digo lo que pienso.",
+        "Para nada, Mariana. Sencillamente escribo lo que pienso.",
+        "No es duro, es sencillamente sincero."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsencillamente\\b",
+          "flags": "iu",
+          "label": "use: sencillamente"
+        }
+      ],
+      "focus": "p:sencillamente",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Mariana: Bien. Y para terminar, ¿qué es lo mejor de tu café?",
+      "npcEn": "Mariana: Good. And to finish, what is the best thing about your café?",
+      "intent": "Say what the best thing is, using the verdict line (use: lo mejor de... es...).",
+      "accept": [
+        "Lo mejor del café es la gente que viene.",
+        "Lo mejor de este lugar es que todos se conocen.",
+        "Lo mejor de La Esquina de Rosa es el olor del pan por la mañana."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo mejor de(l| la| los| las| este| esta| mi| tu)? \\S+",
+          "flags": "iu",
+          "label": "use: lo mejor de... es..."
+        }
+      ],
+      "focus": "p:lo-mejor-de",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Vale: Tomás, ¿sigues aquí solo por unos meses?\nSimón: ¡Qué pena con usted!",
+      "npcEn": "Vale: Tomás, are you still only here for a few months?\nSimón: How embarrassing for you!",
+      "intent": "Laugh and answer Vale with the emphasised word first, as in 'Difícil es decirlo'.",
+      "accept": [
+        "Difícil es decirlo, Vale. Hasta el loro lo sabe mejor que yo.",
+        "Poco sé todavía, la verdad. Mucho ha cambiado todo.",
+        "Difícil es contestar con el loro mirándome."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "^\\W*(mucho|poco|dif[ií]cil|f[aá]cil)\\b",
+          "flags": "iu",
+          "label": "start with the emphasised word: mucho, poco, difícil or fácil"
+        }
+      ],
+      "focus": "g:word-order-style",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Vale: Bueno, de momento sigues aquí. ¿Un tinto para celebrar la respuesta?",
+      "npcEn": "Vale: Well, for now you're still here. A black coffee to celebrate the reply?",
+      "intent": "Accept warmly and say, with an adverb, that you're happy to stay a while.",
+      "accept": [
+        "Claro que sí. Sinceramente, me alegra seguir aquí.",
+        "Con gusto. Por suerte, todavía no me voy.",
+        "Sí, por favor. Afortunadamente, me quedo un rato."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(sinceramente|francamente|por suerte|afortunadamente|felizmente|honestamente)\\b",
+          "flags": "iu",
+          "label": "use an adverb like sinceramente or por suerte"
+        }
+      ],
+      "focus": "g:evaluative-adverbs",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:entonces-bueno",
+    "c:es-que",
+    "c:la-idea-es",
+    "c:la-verdad",
+    "c:para-nada",
+    "c:por-favor",
+    "c:por-suerte",
+    "c:que-pena",
+    "c:todavia-no",
+    "c:voy-vas",
+    "g:adjective-agreement",
+    "g:adverbs-mente",
+    "g:comparatives",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:gustar-full",
+    "g:ir-a-plans",
+    "g:lo-adjective",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:passive-se",
+    "g:perfecto-experience",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:afortunadamente",
+    "l:alegrar",
+    "l:aquí",
+    "l:barrio",
+    "l:bien",
+    "l:bueno",
+    "l:café",
+    "l:cambiar",
+    "l:celebrar",
+    "l:claro",
+    "l:conocer",
+    "l:contestar",
+    "l:crítico",
+    "l:cuál",
+    "l:decir",
+    "l:difícil",
+    "l:duro",
+    "l:escribir",
+    "l:favor",
+    "l:francamente",
+    "l:gente",
+    "l:gusto",
+    "l:idea",
+    "l:irse",
+    "l:largo",
+    "l:leer",
+    "l:loro",
+    "l:lugar",
+    "l:mañana",
+    "l:mejor",
+    "l:mes",
+    "l:mirar",
+    "l:momento",
+    "l:olor",
+    "l:pan",
+    "l:parecer",
+    "l:pena",
+    "l:pensar",
+    "l:pertenecer",
+    "l:principal",
+    "l:quedarse",
+    "l:qué",
+    "l:rato",
+    "l:respuesta",
+    "l:saber",
+    "l:seguir",
+    "l:sencillamente",
+    "l:ser",
+    "l:sinceramente",
+    "l:sincero",
+    "l:suerte",
+    "l:terminar",
+    "l:tinto",
+    "l:tono",
+    "l:venir",
+    "l:verdad",
+    "p:a-lo-largo-de-esta-charla",
+    "p:aqui-ahi-alla",
+    "p:demonstratives-basic",
+    "p:formar-parte-de",
+    "p:hasta-la-fecha",
+    "p:hay-varios-tipos",
+    "p:la-gente-singular",
+    "p:lo-mejor-de",
+    "p:me-te-nos-objects",
+    "p:no-es-x-es-y",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:poco-un-poco",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:presentation-frame",
+    "p:presenting-to-audience",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:saber-conocer",
+    "p:se-reciproco",
+    "p:sencillamente",
+    "p:ya-todavia-basic"
+  ]
+}

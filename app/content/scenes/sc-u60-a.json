@@ -1,0 +1,184 @@
+{
+  "id": "sc-u60-a",
+  "unit": "u60",
+  "title": "Un martes cualquiera",
+  "brief": "You're Tomás, on the morning the café reopens. Jaime, who delivers the beans, is from Medellín and speaks with vos, but you answer him with tú. Say what makes today different and invite him back.",
+  "spare": false,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Jaime: Buenas, Tomás. ¿Eres el nuevo dueño? Ojo, que este café era de doña Rosa.",
+      "npcEn": "Jaime: Morning, Tomás. Are you the new owner? Careful, this café was doña Rosa's.",
+      "intent": "Say yes, and that for you this is not just any café (use: un café cualquiera).",
+      "accept": [
+        "Sí, soy yo, y para mí este no es un café cualquiera.",
+        "Soy yo, sí. Pero no es un café cualquiera, era de mi abuela.",
+        "Sí, el dueño soy yo. Para mí no es un café cualquiera."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bno es un caf[eé] cualquiera\\b",
+          "flags": "iu",
+          "label": "say it is not just any café: no es un café cualquiera"
+        }
+      ],
+      "focus": "p:un-x-cualquiera",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Jaime: Yo traigo el grano todos los martes y nunca pasa nada. Hoy parece un martes cualquiera.",
+      "npcEn": "Jaime: I bring the beans every Tuesday and nothing ever happens. Today looks like just any Tuesday.",
+      "intent": "Tell him that today is not an ordinary Tuesday, because the café reopens (use: un martes cualquiera).",
+      "accept": [
+        "Hoy no es un martes cualquiera: reabrimos el café.",
+        "Para nosotros no es un martes cualquiera, hoy abrimos otra vez.",
+        "No lo es, Jaime. Hoy no es un martes cualquiera, es el día de la reapertura."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bun martes cualquiera\\b",
+          "flags": "iu",
+          "label": "use: un martes cualquiera"
+        }
+      ],
+      "focus": "p:un-x-cualquiera",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Jaime: Tienes razón. Yo paso por el barrio toda la semana. ¿Cuándo quieres que pase a probar el tinto?",
+      "npcEn": "Jaime: You're right. I pass through the neighbourhood all week. When do you want me to come by and try the black coffee?",
+      "intent": "Tell him to come by any day this week and that the coffee is on you (use: cualquier día).",
+      "accept": [
+        "Pasa cualquier día de esta semana, el tinto va por la casa.",
+        "Ven cualquier día y te invito un tinto.",
+        "Cualquier día me parece bien, Jaime. El tinto lo pago yo."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcualquier d[ií]a\\b",
+          "flags": "iu",
+          "label": "use: cualquier día (any day)"
+        }
+      ],
+      "focus": "x:cualquier-dia-un-dia-cualquiera",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Jaime: Como dicen los abogados: quien lo probare, volverá. ¡Hasta pronto, Tomás!",
+      "npcEn": "Jaime: As the lawyers say: whoever shall taste it will return. See you soon, Tomás!",
+      "intent": "Say goodbye and tell him you'll be waiting for him here.",
+      "accept": [
+        "Aquí te espero, Jaime. Hasta pronto.",
+        "Te esperamos aquí, Jaime. Que te vaya bien.",
+        "Hasta pronto, Jaime. Aquí estaré esperándote."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(esper)",
+          "flags": "iu",
+          "label": "say you will wait for him"
+        }
+      ],
+      "focus": "g:future-subj-recognition",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:alo",
+    "c:bien-y-tu",
+    "c:buen-viaje",
+    "c:era",
+    "c:me-parece-bien",
+    "c:ojo",
+    "c:quien-sabe",
+    "c:si-soy-yo",
+    "c:tienes",
+    "g:cada-cualquier",
+    "g:commands-tu",
+    "g:direct-objects",
+    "g:estar-gerund",
+    "g:future-promises",
+    "g:future-subj-recognition",
+    "g:gender-articles",
+    "g:imperfect-states",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-free-relatives",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:abogado",
+    "l:abrir",
+    "l:abuela",
+    "l:aquí",
+    "l:barrio",
+    "l:bien",
+    "l:buena",
+    "l:café",
+    "l:casa",
+    "l:cuándo",
+    "l:decir",
+    "l:dueño",
+    "l:día",
+    "l:esperar",
+    "l:estar",
+    "l:grano",
+    "l:hoy",
+    "l:invitar",
+    "l:ir",
+    "l:jaime",
+    "l:martes",
+    "l:nuevo",
+    "l:ojo",
+    "l:pagar",
+    "l:parecer",
+    "l:pasar",
+    "l:probar",
+    "l:probarse",
+    "l:pronto",
+    "l:querer",
+    "l:razón",
+    "l:reapertura",
+    "l:semana",
+    "l:ser",
+    "l:tener",
+    "l:tinto",
+    "l:traer",
+    "l:venir",
+    "l:vez",
+    "l:volver",
+    "p:aqui-ahi-alla",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:llevar-traer",
+    "p:me-te-nos-objects",
+    "p:no-es-x-es-y",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:para-mi",
+    "p:possessives-basic",
+    "p:senor-don-article",
+    "p:tener-razon",
+    "p:todos-los-dias",
+    "p:un-x-cualquiera"
+  ]
+}
