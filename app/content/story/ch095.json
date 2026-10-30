@@ -1,0 +1,323 @@
+{
+  "id": "ch095",
+  "unit": "u32",
+  "title": "Un tinto sin azúcar",
+  "text": "La doctora Beatriz Uribe no quiso tinto.\nUribe: Gracias, pero no tomo café después de las nueve.\nHernando: ¿Y entonces para qué vino a un café?\nUribe leyó la carta de Rosa y las escrituras del edificio. Nadie habló.\nUribe: La parte de Rosa ahora es suya, señor Herrera. La parte de Joaquín sigue a nombre de Joaquín. Pero hace dos años, un señor firmó un contrato de arriendo con Altamira en nombre de Joaquín. Todo el edificio, por treinta años.\nTomás: ¿Cuál señor?\nUribe: Un señor con un papel muy viejo y una firma muy rara. Les recomiendo que busquen a Joaquín, o a sus herederos. Si la familia de Joaquín aparece y pide su parte, ese contrato no vale nada.\nHernando: ¿Nada?\nUribe: Cero pesos. Les aconsejo que no pierdan tiempo. En diciembre hay una audiencia en la alcaldía.\nMariana: Beatriz, tengo que pedirte un favor. ¿Me echas una mano con este caso?\nUribe: Lo siento, pero no puedo. Estoy sola, sin asistente, y no estoy disponible antes de enero.\nSimón: ¿Me echas una mano? ¿Una mano?\nUribe miró al loro, y después la foto de Rosa detrás de la caja.\nUribe: ¿Rosa Herrera? En 1998 yo estudiaba derecho aquí cerca. En la temporada de exámenes, Rosa me daba un tinto todas las noches, y nunca me cobró.\nVale: Decía que los estudiantes mejoran el ambiente del café.\nUribe: Mi intención era decir que no. Pero le debo cinco años de tintos a Rosa.\nTomás: ¿Y cuánto cobra usted?\nUribe: Un tinto sin azúcar.\nHernando: Rosa decía que un tinto regalado vuelve. Tardó veintiocho años, pero volvió.\nUribe: Les pido una cosa: que no hablen con nadie de Joaquín. Si encuentran a Joaquín antes que ustedes, le van a ofrecer plata para vender.\nHernando: ¿Y el loro?\nUribe: Les sugiero que el loro duerma en la cocina.\nSimón: ¡Cero pesos! ¡Cero!\nEsa noche, Vale abrió un cuaderno nuevo encima de la mesa de Hernando.\nVale: Si este edificio va a ser nuestro, el café necesita un plan de verdad. Tú me echas una mano con los números.",
+  "gloss": [
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "audiencia",
+      "en": "hearing"
+    },
+    {
+      "es": "La parte de Joaquín sigue a nombre de Joaquín.",
+      "en": "Joaquín's share is still in Joaquín's name."
+    },
+    {
+      "es": "en nombre de Joaquín",
+      "en": "on Joaquín's behalf"
+    },
+    {
+      "es": "Un señor con un papel muy viejo y una firma muy rara.",
+      "en": "A man with a very old document and a very strange signature."
+    },
+    {
+      "es": "Cero pesos.",
+      "en": "Zero pesos."
+    },
+    {
+      "es": "Les aconsejo que no pierdan tiempo.",
+      "en": "I advise you not to waste time."
+    },
+    {
+      "es": "En la temporada de exámenes",
+      "en": "During exam season"
+    },
+    {
+      "es": "Mi intención era decir que no.",
+      "en": "I meant to say no."
+    },
+    {
+      "es": "Pero le debo cinco años de tintos a Rosa.",
+      "en": "But I owe Rosa five years of coffees."
+    },
+    {
+      "es": "un tinto regalado vuelve",
+      "en": "a coffee given away comes back"
+    },
+    {
+      "es": "Tardó veintiocho años, pero volvió.",
+      "en": "It took twenty-eight years, but it came back."
+    },
+    {
+      "es": "Les sugiero que el loro duerma en la cocina.",
+      "en": "I suggest that the parrot sleeps in the kitchen."
+    },
+    {
+      "es": "Les pido una cosa: que no hablen con nadie de Joaquín.",
+      "en": "I'm asking you one thing: don't talk to anyone about Joaquín."
+    },
+    {
+      "es": "Decía que los estudiantes mejoran el ambiente del café.",
+      "en": "She used to say students make the café's atmosphere better."
+    }
+  ],
+  "questions": [
+    {
+      "q": "According to Dra. Uribe, what happens if Joaquín's family turns up and asks for its share?",
+      "options": [
+        "Altamira has to pay them twice as much",
+        "Altamira's lease on the building is worth nothing",
+        "Tomás loses his half of the building",
+        "The hearing in December is cancelled"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why does Dra. Uribe say no to Mariana at first?",
+      "options": [
+        "She works alone, with no assistant, and is not free until January",
+        "She thinks the case is hopeless",
+        "She works for Altamira",
+        "She does not like parrots"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What makes her change her mind?",
+      "options": [
+        "Vale offers her a lot of money",
+        "Hernando tells her a joke",
+        "She sees Rosa's photo and remembers the free coffees Rosa gave her as a student",
+        "Mariana promises to put her in the magazine"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "¿Cuánto cobra la doctora Uribe?",
+      "options": [
+        "Un tinto",
+        "Cinco años de trabajo",
+        "Cero pesos y un pan",
+        "La mitad del edificio"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Uribe warn them before she leaves?",
+      "options": [
+        "Altamira's lawyers could find Joaquín first and offer him money to sell",
+        "The parrot could tell the neighbours everything",
+        "Mariana's article comes out on Sunday",
+        "The café's coffee is too strong"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Dra. Uribe has given them one clear job: find Joaquín or his heirs before Altamira does, and before the hearing in December. Tonight Vale opens a new notebook to plan the café as if it were already theirs, and she needs Tomás for the numbers.",
+  "rereadQuestions": [
+    {
+      "q": "Why does Hernando tease Dra. Uribe when she arrives?",
+      "options": [
+        "She is late",
+        "She refuses a coffee in a café",
+        "She brings her own coffee",
+        "She sits at his table"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What were the terms of the lease the mystery man signed with Altamira?",
+      "options": [
+        "Half the building, for ten years",
+        "Only the café, for six months",
+        "The whole building, for thirty years",
+        "The bakery and the café, for two years"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "What did Rosa give Beatriz every night during exam season?",
+      "options": [
+        "A coffee, free",
+        "A bread roll and a loan",
+        "A table to sleep at",
+        "Money for the bus"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:a-nombre-de",
+    "c:en-serio",
+    "c:entonces-bueno",
+    "c:era",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:lo-siento-pero-no-puedo",
+    "c:me-echas-una-mano",
+    "c:puedo",
+    "c:tengo",
+    "c:tengo-que",
+    "c:tengo-que-pedirte-un-favor",
+    "c:y-que-paso",
+    "g:adjective-agreement",
+    "g:demonstratives",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hace-ago",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:por-para-1",
+    "g:possessives",
+    "g:possessives-stressed",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-influence",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:con-sin",
+    "p:dates-years",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:personal-a",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:senor-don-article",
+    "p:tardar-en",
+    "p:time-sequence-basic",
+    "p:todos-los-dias",
+    "p:veces-al",
+    "p:viejo-antiguo-mayor"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:aconsejar",
+    "l:ahora",
+    "l:alcaldía",
+    "l:ambiente",
+    "l:antes",
+    "l:aparecer",
+    "l:aquí",
+    "l:arriendo",
+    "l:asistente",
+    "l:audiencia",
+    "l:azúcar",
+    "l:año",
+    "l:buscar",
+    "l:café",
+    "l:caja",
+    "l:carta",
+    "l:caso",
+    "l:cerca",
+    "l:cero",
+    "l:cobrar",
+    "l:cocina",
+    "l:contrato",
+    "l:cosa",
+    "l:cuaderno",
+    "l:cuál",
+    "l:cuánto",
+    "l:darse",
+    "l:deber",
+    "l:decir",
+    "l:derecho",
+    "l:después",
+    "l:detrás",
+    "l:diciembre",
+    "l:disponible",
+    "l:doctor",
+    "l:dormir",
+    "l:echar",
+    "l:edificio",
+    "l:encima",
+    "l:encontrar",
+    "l:enero",
+    "l:escritura",
+    "l:estar",
+    "l:estudiante",
+    "l:estudiar",
+    "l:examen",
+    "l:familia",
+    "l:favor",
+    "l:firma",
+    "l:firmar",
+    "l:foto",
+    "l:hablar",
+    "l:hacer",
+    "l:heredero",
+    "l:intención",
+    "l:ir",
+    "l:leer",
+    "l:loro",
+    "l:mano",
+    "l:mejorar",
+    "l:mesa",
+    "l:mirar",
+    "l:necesitar",
+    "l:noche",
+    "l:nombre",
+    "l:nuevo",
+    "l:número",
+    "l:ofrecer",
+    "l:papel",
+    "l:parte",
+    "l:pedir",
+    "l:perder",
+    "l:peso",
+    "l:plan",
+    "l:plata",
+    "l:poder",
+    "l:querer",
+    "l:qué",
+    "l:raro",
+    "l:recomendar",
+    "l:regalar",
+    "l:seguir",
+    "l:sentir",
+    "l:ser",
+    "l:señor",
+    "l:sugerir",
+    "l:tardar",
+    "l:temporada",
+    "l:tener",
+    "l:tiempo",
+    "l:tinto",
+    "l:tomar",
+    "l:valer",
+    "l:vender",
+    "l:verdad",
+    "l:viejo",
+    "l:vino",
+    "l:volver"
+  ]
+}

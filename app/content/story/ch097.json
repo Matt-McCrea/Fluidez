@@ -1,0 +1,319 @@
+{
+  "id": "ch097",
+  "unit": "u32",
+  "title": "El número siete",
+  "text": "Cuando Jhon Fredy abrió el café, el menú de la pared ya no tenía precios.\n«Antes de diciembre. Uno: buscar a Joaquín Herrera, o a su familia, en Santa Marta. Dos: Hernando llama a los taxistas de la costa. Tres: Mariana, grupos de Facebook. Cuatro: ir a la comisaría con la firma falsa. Cinco: hablar con el banco del horno. Seis: no hablar con Altamira».\nAl final había una línea más, casi invisible: «Siete: decirle a Vale que».\nA las siete entró un adolescente con el celular en la mano. Leyó la pared.\nAdolescente: Me regala un número cuatro, por favor.\nJhon Fredy: El cuatro es la comisaría, parce.\nEl adolescente se fue sin tinto.\nA las ocho llegaron todos.\nHernando: Pienso llamar hoy mismo a todos mis colegas de la costa.\nMariana: Y yo pienso escribir en los grupos de Santa Marta. Sin nombres, sin Altamira.\nTomás: Cuando terminemos la lista, hablamos con la doctora Uribe otra vez. Quedamos en vernos aquí el viernes.\nVale: ¿Y el número siete?\nTomás se puso rojo.\nTomás: Ese no es para hoy.\nVale: ¿Cuándo, entonces?\nTomás: Cuando encontremos a Joaquín.\nVale no contestó, pero su mirada dijo mucho.\nHernando: Ustedes dos me tienen cansado.\nA las once, un camión blanco paró delante del café. Dos señores con un metro bajaron y midieron la puerta, la ventana y la esquina.\nHernando: Conozco ese camión. Es de Altamira.\nTomás: Perdón, ¿qué miden?\nSeñor: El lobby, señor. Cuando ustedes se vayan, aquí va el piano.\nTomás no dijo nada. Le echó una mirada larga al camión, y volvió a entrar.\nMariana: Mi amigo del canal de televisión puede venir con una cámara.\nTomás: Todavía no. La doctora Uribe quedó en llamarnos el lunes.\nTomás tomó la tiza y escribió un número más, en grande: «Ocho: rápido».\nSimón: ¡Apúrate! ¡Apúrate!\nHernando: Por primera vez, el loro tiene razón.\nEsa noche, Mariana publicó su mensaje en doce grupos de Santa Marta.\n«¿Alguien conoció a Joaquín Herrera, un bogotano que llegó a Santa Marta en 1978? Es un asunto de familia».",
+  "gloss": [
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "bogotano",
+      "en": "man from Bogotá"
+    },
+    {
+      "es": "¡Apúrate!",
+      "en": "Hurry up."
+    },
+    {
+      "es": "el menú de la pared ya no tenía precios",
+      "en": "the menu on the wall no longer had any prices"
+    },
+    {
+      "es": "Cinco: hablar con el banco del horno.",
+      "en": "Five: talk to the bank about the oven."
+    },
+    {
+      "es": "Al final había una línea más, casi invisible",
+      "en": "At the bottom there was one more line, almost invisible"
+    },
+    {
+      "es": "Siete: decirle a Vale que",
+      "en": "Seven: tell Vale that"
+    },
+    {
+      "es": "Me regala un número cuatro, por favor.",
+      "en": "A number four, please."
+    },
+    {
+      "es": "El cuatro es la comisaría, parce.",
+      "en": "Number four is the police station, mate."
+    },
+    {
+      "es": "Pienso llamar hoy mismo a todos mis colegas de la costa.",
+      "en": "I'm planning to call all my old colleagues on the coast this very day."
+    },
+    {
+      "es": "Quedamos en vernos aquí el viernes.",
+      "en": "We agreed to meet here on Friday."
+    },
+    {
+      "es": "su mirada dijo mucho",
+      "en": "the look on her face said a lot"
+    },
+    {
+      "es": "Ustedes dos me tienen cansado.",
+      "en": "You two wear me out."
+    },
+    {
+      "es": "Cuando ustedes se vayan, aquí va el piano.",
+      "en": "When you leave, the piano goes here."
+    },
+    {
+      "es": "Le echó una mirada larga al camión",
+      "en": "He gave the truck a long look"
+    },
+    {
+      "es": "La doctora Uribe quedó en llamarnos el lunes.",
+      "en": "Dr Uribe said she would call us on Monday."
+    },
+    {
+      "es": "tiza",
+      "en": "chalk"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does the teenager leave without a coffee?",
+      "options": [
+        "The café is closed",
+        "He orders 'number four' from Tomás's list, and number four is the police station",
+        "Jhon Fredy is rude to him",
+        "He has no money"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why does Tomás go red?",
+      "options": [
+        "Vale asks him about number seven on the list",
+        "Hernando tells a joke about him",
+        "He spills the coffee",
+        "Simón calls him a tourist"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What are the men from the white truck doing?",
+      "options": [
+        "Delivering a new oven",
+        "Measuring the café for the hotel lobby",
+        "Looking for Joaquín",
+        "Bringing Hernando's newspaper"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Qué piensa hacer Hernando hoy mismo?",
+      "options": [
+        "Llamar a sus colegas de la costa",
+        "Ir a la comisaría",
+        "Hablar con Altamira",
+        "Escribir en Facebook"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Tomás say no to the TV camera for now?",
+      "options": [
+        "He is shy",
+        "They are waiting for Dra. Uribe, who agreed to call on Monday",
+        "Mariana's friend is busy",
+        "The camera is broken"
+      ],
+      "answer": 1
+    }
+  ],
+  "hook": "Altamira's men are already measuring the café for a piano, and Mariana's question is now in twelve Santa Marta groups. Tomorrow the search for Joaquín really begins, and so do the answers.",
+  "rereadQuestions": [
+    {
+      "q": "What does Tomás plan to take to the police station?",
+      "options": [
+        "The forged signature",
+        "Rosa's letters",
+        "Hernando's taxi papers",
+        "The oven receipt"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Tomás add to the list after the truck leaves?",
+      "options": [
+        "Seven: tell Vale",
+        "Eight: fast",
+        "Nine: buy a piano",
+        "Eight: call Altamira"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "When does Tomás say he will deal with number seven?",
+      "options": [
+        "On Friday",
+        "When they find Joaquín",
+        "After the hearing",
+        "Never"
+      ],
+      "answer": 1
+    }
+  ],
+  "requires": [
+    "c:al-final",
+    "c:apurate",
+    "c:entonces-bueno",
+    "c:me-regala",
+    "c:perdon-disculpe",
+    "c:por-favor",
+    "c:tienes",
+    "c:todavia-no",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:demonstratives",
+    "g:gender-articles",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:present-ar",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-cuando-future",
+    "g:subj-irregulars",
+    "g:subj-wanting",
+    "g:verb-infinitive",
+    "g:verbs-of-change",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:cuando-basic",
+    "p:dates-years",
+    "p:days-el-lunes",
+    "p:indefinites-basic",
+    "p:ir-a-venir-de-place",
+    "p:me-te-nos-objects",
+    "p:me-trae",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:pensar-en",
+    "p:pensar-inf",
+    "p:personal-a",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:quedar-en",
+    "p:saber-conocer",
+    "p:telling-time",
+    "p:tener-razon",
+    "p:volver-a-inf"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:adolescente",
+    "l:amigo",
+    "l:antes",
+    "l:apúrate",
+    "l:aquí",
+    "l:asunto",
+    "l:bajar",
+    "l:banco",
+    "l:blanco",
+    "l:bogotano",
+    "l:buscar",
+    "l:café",
+    "l:camión",
+    "l:canal",
+    "l:cansado",
+    "l:celular",
+    "l:colega",
+    "l:comisaría",
+    "l:conocer",
+    "l:contestar",
+    "l:costa",
+    "l:cuándo",
+    "l:cámara",
+    "l:decir",
+    "l:delante",
+    "l:diciembre",
+    "l:doctor",
+    "l:echar",
+    "l:encontrar",
+    "l:entrar",
+    "l:escribir",
+    "l:esquina",
+    "l:falso",
+    "l:familia",
+    "l:favor",
+    "l:final",
+    "l:firma",
+    "l:grande",
+    "l:grupo",
+    "l:hablar",
+    "l:horno",
+    "l:hoy",
+    "l:invisible",
+    "l:ir",
+    "l:irse",
+    "l:largo",
+    "l:leer",
+    "l:listo",
+    "l:llamar",
+    "l:llegar",
+    "l:loro",
+    "l:lunes",
+    "l:línea",
+    "l:mano",
+    "l:medir",
+    "l:mensaje",
+    "l:menú",
+    "l:metro",
+    "l:mirada",
+    "l:noche",
+    "l:nombre",
+    "l:número",
+    "l:parar",
+    "l:parce",
+    "l:pared",
+    "l:pensar",
+    "l:perdón",
+    "l:piano",
+    "l:poder",
+    "l:ponerse",
+    "l:precio",
+    "l:publicar",
+    "l:puerta",
+    "l:quedar",
+    "l:qué",
+    "l:razón",
+    "l:regalar",
+    "l:rojo",
+    "l:rápido",
+    "l:ser",
+    "l:señor",
+    "l:taxista",
+    "l:televisión",
+    "l:tener",
+    "l:terminar",
+    "l:tinto",
+    "l:tomar",
+    "l:venir",
+    "l:ventana",
+    "l:ver",
+    "l:vez",
+    "l:viernes",
+    "l:volver"
+  ]
+}
