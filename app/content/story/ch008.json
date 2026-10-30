@@ -2,7 +2,7 @@
   "id": "ch008",
   "unit": "u04",
   "title": "El señor Mango",
-  "text": "Domingo. Llegan las señoras de los taxistas, y tienen hambre.\nDoña Marta: Vale, mija, ¿qué verdura hay? ¿Papa, tomate, cebolla?\nVale: Hoy no hay verdura, doña Marta. Solo hay mango.\nDoña Marta: ¿Mango? Ay, no. Tomás, vamos a la plaza de mercado.\nEn la plaza, doña Marta pregunta precios de puesto en puesto.\nDoña Marta: ¿A cómo está el kilo de papa?\nVendedor: A dos mil pesos. Aquí vendo barato, señora.\nDoña Marta: ¿Barato? ¡Qué caro! ¿Y la libra de tomate?\nVendedor: Mil quinientos.\nDoña Marta: ¿Y cuánto cuestan los bananos?\nVendedor: Tres mil pesos la libra. El banano está caro esta semana.\nEntonces el vendedor mira a Tomás.\nVendedor: Un momento... ¿Usted no es el señor de las cuarenta libras de mango? ¡El señor Mango!\nTomás: Sí, señor. Soy yo.\nVendedor: Para el señor Mango, buen precio.\nDoña Marta: Entonces dos kilos de papa, una libra de tomate y una libra de cebolla. Y dos libras de banano, a buen precio, ¿no?\nDoña Marta paga con la plata de Vale. Tomás lleva las bolsas: cinco bolsas.\nDiez de la noche. El café está cerrado y Vale cuenta la plata.\nVale: Vendimos trescientos tintos, jugo de mango y papas con hogao.\nTomás escribe el total en la pizarra: $412.000.\nTomás: Gracias por todo, don Hernando.\nHernando: Gracias por el tinto de Rosa, mijo. Y el sábado que viene, ¡más!\nSimón: ¿Qué tal el fin de semana? ¿Qué tal el fin de semana?\nTomás: Cansado, Simón. Quedan veintiocho días. Y mañana, ¿quién arregla la cafetera?",
+  "text": "Domingo. Llegan las señoras de los taxistas, y tienen hambre.\nDoña Marta: Vale, mija, ¿qué verdura hay?\nVale: Hoy no hay verdura, doña Marta. Solo hay mango.\nDoña Marta: ¿Mango? Ay, no. Tomás, vamos a la plaza de mercado.\nDoña Marta: ¿A cómo está el kilo de papa?\nVendedor: A dos mil pesos. Aquí vendo barato, señora.\nDoña Marta: ¿Barato? ¡Qué caro!\nEl vendedor mira a Tomás.\nVendedor: Un momento... ¿Usted no es el señor de las cuarenta libras de mango? ¡El señor Mango!\nVendedor: Para el señor Mango, buen precio.\nDoña Marta: Entonces dos kilos de papa, una libra de tomate y una libra de cebolla.\nDoña Marta paga con la plata de Vale. Tomás lleva las bolsas: cinco bolsas.\nDiez de la noche. El café está cerrado y Vale cuenta la plata.\nVale: Vendimos trescientos tintos, jugo de mango y papas con hogao.\nTomás escribe el total en la pizarra: $412.000.\nSimón: ¿Qué tal el fin de semana? ¿Qué tal el fin de semana?\nTomás: Cansado, Simón. Quedan veintiocho días. Y mañana, ¿quién arregla la cafetera?",
   "gloss": [
     {
       "es": "Doña Marta",
@@ -13,20 +13,12 @@
       "en": "the market hall (what Colombians call a covered food market)"
     },
     {
-      "es": "de puesto en puesto",
-      "en": "from stall to stall"
-    },
-    {
       "es": "¿Usted no es el señor de las cuarenta libras de mango?",
       "en": "Aren't you the man with the forty pounds of mango?"
     },
     {
       "es": "Para el señor Mango, buen precio.",
       "en": "For Mr Mango, a good price."
-    },
-    {
-      "es": "Y dos libras de banano, a buen precio, ¿no?",
-      "en": "And two pounds of bananas, at a good price, right?"
     },
     {
       "es": "papas con hogao",
@@ -91,7 +83,7 @@
         "Who is going to fix the espresso machine",
         "Whether doña Marta will come back",
         "Simón's health",
-        "The price of bananas"
+        "The price of potatoes"
       ],
       "answer": 0
     }
@@ -134,7 +126,6 @@
     "c:como-estas",
     "c:entonces-bueno",
     "c:hay",
-    "c:no-cierto",
     "c:que-tal-el-fin",
     "c:tienes",
     "c:vamos-a",
@@ -147,22 +138,16 @@
     "g:questions",
     "g:ser-identity",
     "g:stem-boot",
-    "p:costar-pagar",
-    "p:days-el-lunes",
-    "p:demonstratives-basic",
     "p:exclamations-basic",
-    "p:gracias-por",
     "p:ir-a-venir-de-place",
     "p:para-inf",
     "p:question-word-order",
     "p:senor-don-article",
-    "p:tener-hambre",
-    "p:time-pasado-que-viene"
+    "p:tener-hambre"
   ],
   "lexemes": [
     "l:aquí",
     "l:arreglar",
-    "l:banano",
     "l:barato",
     "l:bolsa",
     "l:buen",
@@ -173,8 +158,6 @@
     "l:cebolla",
     "l:cerrar",
     "l:contar",
-    "l:costar",
-    "l:cuánto",
     "l:cómo",
     "l:domingo",
     "l:día",
@@ -193,7 +176,6 @@
     "l:mañana",
     "l:mercado",
     "l:mija",
-    "l:mijo",
     "l:mirar",
     "l:momento",
     "l:noche",
@@ -204,8 +186,6 @@
     "l:plata",
     "l:plaza",
     "l:precio",
-    "l:preguntar",
-    "l:puesto",
     "l:quedar",
     "l:quién",
     "l:qué",
@@ -213,7 +193,6 @@
     "l:ser",
     "l:señor",
     "l:señora",
-    "l:sábado",
     "l:taxista",
     "l:tener",
     "l:tinto",
@@ -221,7 +200,6 @@
     "l:total",
     "l:vendedor",
     "l:vender",
-    "l:venir",
     "l:verdura"
   ]
 }
