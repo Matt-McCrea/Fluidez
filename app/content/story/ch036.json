@@ -2,7 +2,7 @@
   "id": "ch036",
   "unit": "u14",
   "title": "La última frase",
-  "text": "La Burra volvió despacio a La Candelaria. Por fin, en la Séptima, Hernando habló.\nHernando: Esa llave era de Joaquín. Es la llave de la puerta de la cocina. Antes de su viaje, en 1978, la dejó en el café, para Rosa.\nTomás: ¿Y la escritura?\nHernando: No sé dónde está, mijo. Es la verdad. Pero Rosa escribía todo. Lee la carta otra vez.\nEn el café, Mariana esperaba con una noticia terrible.\nMariana: Altamira compró el contrato de arriendo del café. El contrato termina en un año.\nTomás: O sea, en un año no hay café.\nSimón: ¡O sea! ¡O sea!\nHernando: Simón, por favor. Hoy no.\nEsa tarde, Tomás trajo la carta de su cuarto. Nunca la terminó: era larga y difícil. Ahora la leyó toda. Al final había una frase que nadie conocía.\nTomás: «Joaquín, el edificio que compramos tú y yo en 1977 es de los dos».\nMariana: ¿Rosa y Joaquín compraron el edificio?\nHernando cerró los ojos un momento.\nMariana: Entonces el contrato que compró Altamira es una cosa, y el edificio es otra. No es fácil, Tomás. Pero es posible.\nTomás: Tengo que llamar a Vale.\nPero Vale ya iba en el bus de la una para Medellín, para el cumpleaños de su mamá. Tomás la llamó.\nVale: ¿Aló? ¿Tomás? Estoy en el bus, en la montaña, y no hay buena señal.\nTomás: Vale, ¡la carta! Rosa... Joaquín... el edificio... ¡y Altamira!\nVale: Tomás, no entiendo nada. ¿Es algo bueno o algo terrible?\nY la llamada se cortó.\nHernando: Un ejemplo perfecto de español, mijo.\nMariana: Escribe un mensaje, Tomás. Un texto largo, con detalles. Además, tú escribes mejor que hablas.\nTomás miró el celular. Escribir en español era difícil. Escribir a Vale era más difícil.",
+  "text": "La Burra volvió despacio a La Candelaria. En la Séptima, Hernando por fin habló.\nHernando: Esa llave era de Joaquín. Es la llave de la cocina. La dejó en el café para Rosa antes de su viaje, en 1978.\nTomás: ¿Y la escritura?\nHernando: No sé dónde está, mijo. Lee la carta de Rosa otra vez.\nEn el café, Mariana tenía una noticia terrible.\nMariana: Altamira compró el contrato de arriendo del café. Termina en un año.\nEsa tarde, Tomás leyó toda la carta. Al final había una frase:\n«Joaquín, el edificio que compramos tú y yo en 1977 es de los dos».\nMariana: Entonces el contrato es una cosa, y el edificio es otra.\nTomás llamó a Vale. Ella iba en el bus para Medellín, al cumpleaños de su mamá.\nTomás: ¡Vale, la carta! Rosa... Joaquín... el edificio...\nVale: No entiendo nada. Estoy en la montaña y no hay buena señal.\nY la llamada se cortó.\nTomás miró el celular. Escribir en español era difícil. Escribir a Vale era más difícil.",
   "gloss": [
     {
       "es": "La Burra volvió despacio a La Candelaria.",
@@ -13,12 +13,12 @@
       "en": "Carrera 7, the long avenue back to the centre"
     },
     {
-      "es": "Antes de su viaje",
-      "en": "Before he went away"
+      "es": "antes de su viaje",
+      "en": "before he went away"
     },
     {
-      "es": "la dejó en el café, para Rosa",
-      "en": "he left it at the café, for Rosa"
+      "es": "La dejó en el café para Rosa",
+      "en": "He left it at the café for Rosa"
     },
     {
       "es": "mijo",
@@ -33,16 +33,8 @@
       "en": "the lease (the rental contract)"
     },
     {
-      "es": "Tomás trajo la carta de su cuarto",
-      "en": "Tomás brought the letter from his room"
-    },
-    {
       "es": "es de los dos",
       "en": "belongs to both of us"
-    },
-    {
-      "es": "Hernando cerró los ojos un momento.",
-      "en": "Hernando closed his eyes for a moment."
     },
     {
       "es": "no hay buena señal",
@@ -53,15 +45,15 @@
       "en": "And the call cut out."
     },
     {
-      "es": "Además, tú escribes mejor que hablas.",
-      "en": "Besides, you write better than you speak."
+      "es": "al cumpleaños de su mamá",
+      "en": "to her mother's birthday"
     }
   ],
   "questions": [
     {
       "q": "What does Hernando finally tell Tomás about the key?",
       "options": [
-        "It was Joaquín's key to the kitchen door, and he left it at the café for Rosa in 1978",
+        "It was Joaquín's key to the kitchen, and he left it at the café for Rosa in 1978",
         "It opens the notary's office",
         "Rosa lost it in 1978",
         "It belongs to Altamira"
@@ -89,11 +81,11 @@
       "answer": 0
     },
     {
-      "q": "¿Por qué Tomás no habla bien con Vale?",
+      "q": "¿Por qué Vale no entiende a Tomás?",
       "options": [
-        "Porque Vale está en el bus, en la montaña, y la llamada se corta",
-        "Porque Vale no contesta",
-        "Porque Simón tiene el celular",
+        "Porque está en el bus, en la montaña, y no hay buena señal",
+        "Porque Tomás habla en inglés",
+        "Porque Simón grita",
         "Porque Vale está en Toronto"
       ],
       "answer": 0
@@ -121,33 +113,25 @@
       "answer": 0
     },
     {
-      "q": "Why had Tomás never finished Rosa's letter?",
+      "q": "What does Hernando tell Tomás to do?",
       "options": [
-        "It was long and difficult",
-        "Simón took it",
-        "It was in English",
-        "Hernando kept it"
+        "Read Rosa's letter again",
+        "Call the notary",
+        "Sell the café",
+        "Ask Mariana"
       ],
       "answer": 0
     }
   ],
   "hook": "Vale is on a mountain road with no signal, and Tomás has news too big for his phone Spanish. Tonight he tries to write her the longest message of his life.",
   "requires": [
-    "c:ademas",
     "c:al-final",
     "c:donde-esta",
     "c:entonces-bueno",
     "c:era",
     "c:hay",
-    "c:la-verdad",
     "c:no-entiendo",
     "c:no-se",
-    "c:o-sea",
-    "c:por-favor",
-    "c:tengo",
-    "c:tengo-que",
-    "g:adjective-agreement",
-    "g:comparatives",
     "g:demonstratives",
     "g:direct-objects",
     "g:estar-location-states",
@@ -158,10 +142,8 @@
     "g:negation-words",
     "g:present-ar",
     "g:present-er-ir",
-    "g:pret-vs-imperfect",
     "g:preterite-ar",
     "g:preterite-er-ir",
-    "g:preterite-irregular-strong",
     "g:preterite-spelling-stem",
     "g:reflexive-routine",
     "g:relative-que",
@@ -171,72 +153,50 @@
     "g:yo-irregular",
     "p:dates-years",
     "p:es-adj-inf",
-    "p:frequency-scale",
-    "p:indefinites-basic",
     "p:otro-no-article",
     "p:para-inf",
     "p:personal-a",
-    "p:possessives-basic",
-    "p:saber-conocer"
+    "p:possessives-basic"
   ],
   "lexemes": [
-    "l:además",
-    "l:ahora",
     "l:antes",
     "l:arriendo",
     "l:año",
     "l:buena",
-    "l:bueno",
     "l:bus",
     "l:café",
     "l:carta",
     "l:celular",
-    "l:cerrar",
     "l:cocina",
     "l:comprar",
-    "l:conocer",
     "l:contrato",
     "l:cortarse",
     "l:cosa",
     "l:cumpleaños",
     "l:dejar",
     "l:despacio",
-    "l:detalle",
     "l:difícil",
     "l:dónde",
     "l:edificio",
-    "l:ejemplo",
     "l:entender",
     "l:escribir",
     "l:escritura",
     "l:español",
-    "l:esperar",
     "l:estar",
-    "l:favor",
     "l:fin",
     "l:final",
     "l:frase",
-    "l:fácil",
     "l:hablar",
-    "l:hoy",
     "l:ir",
-    "l:largo",
     "l:leer",
     "l:llamada",
     "l:llamar",
     "l:llave",
     "l:mamá",
-    "l:mejor",
-    "l:mensaje",
     "l:mijo",
     "l:mirar",
-    "l:momento",
     "l:montaña",
     "l:noticia",
-    "l:ojo",
-    "l:perfecto",
-    "l:posible",
-    "l:puerta",
     "l:saber",
     "l:ser",
     "l:señal",
@@ -244,9 +204,6 @@
     "l:tener",
     "l:terminar",
     "l:terrible",
-    "l:texto",
-    "l:traer",
-    "l:verdad",
     "l:vez",
     "l:viaje",
     "l:volver"
