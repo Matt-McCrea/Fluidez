@@ -2,7 +2,7 @@
   "id": "ch026",
   "unit": "u10",
   "title": "La fila",
-  "text": "Vale abre la puerta del café a las seis, y en la calle ya hay una fila.\nEl número veinte de la fila es Hernando.\nHernando: ¡Cuarenta años en este café, y hoy hago fila!\nHernando lee en su celular la reseña de la bloguera: «La Esquina de Rosa. El servicio: surreal. La comida: número uno en La Candelaria».\nVale: ¿Surreal? ¿Qué quiere decir eso?\nTomás: Quiere decir yo.\nSimón: ¡No la recomiendo! ¡No la recomiendo!\nUna señora: ¿Hay buñuelos? Quiero seis para llevar. Y dos almojábanas.\nUn estudiante: ¿El pandebono y la almojábana son iguales?\nVale: No, pero se parecen: los dos son salados y llevan queso. Y el buñuelo es grande y también salado.\nSimón: ¡Se parecen! ¡Se parecen!\nEstudiante: Entonces, un buñuelo grande y un pandebono, por favor.\nHernando: ¿Y para el cliente número uno?\nVale: Para usted, un tinto de la casa, don Hernando.\nA las nueve, la fila llega a la esquina. En la esquina hay un hombre con traje. Mira la fila y no está contento. Es Ricardo Altamira.\nVale: Tomás, este buñuelo es para ti. Sin ti no hay fila.\nTomás: ¿Y el lunes a las siete? ¿Vienes conmigo?\nVale: Hoy es lunes, Tomás. Contigo, sí. A las siete.\nTomás come una almojábana y cierra los ojos. Tiene seis años otra vez, y Rosa canta.",
+  "text": "A las seis, Vale abre la puerta del café, y en la calle ya hay una fila.\nEl número veinte de la fila es Hernando.\nHernando: ¡Cuarenta años en este café, y hoy hago fila!\nEn su celular, Hernando lee la reseña de la bloguera: «La Esquina de Rosa. El servicio: surreal. La comida: número uno en La Candelaria».\nVale: ¿Surreal? ¿Qué quiere decir eso?\nTomás: Quiere decir... el mesero.\nSimón: ¡No la recomiendo! ¡No la recomiendo!\nUna señora: ¿Hay buñuelos? Seis para llevar, por favor. Y dos almojábanas.\nUn estudiante: ¿El pandebono y la almojábana son iguales?\nVale: No, pero se parecen: los dos son salados y llevan queso. El buñuelo también, pero es grande y redondo, como una pelota.\nSimón: ¡Se parecen! ¡Se parecen!\nEstudiante: Entonces, un buñuelo grande y un pandebono, por favor.\nHernando: ¿Y para el cliente número uno?\nVale: Usted es el número veinte, don Hernando. Pero para usted, un tinto de la casa.\nA las nueve, la fila llega hasta la otra esquina. Allá hay un hombre con traje. Mira la fila y no está contento. Es Ricardo Altamira.\nVale: Tomás, este buñuelo es para ti. Sin ti no hay fila.\nTomás: ¿Y el lunes a las siete? ¿Todavía quieres hablar conmigo?\nVale: Hoy es lunes, Tomás. Sí, contigo sí. A las siete.\nTomás come una almojábana y cierra los ojos. Tiene seis años otra vez, y Rosa canta.",
   "gloss": [
     {
       "es": "la reseña",
@@ -18,19 +18,39 @@
     },
     {
       "es": "¡Cuarenta años en este café, y hoy hago fila!",
-      "en": "Forty years in this café, and today I'm queuing."
+      "en": "Forty years in this café, and today I'm queuing!"
     },
     {
-      "es": "Quiere decir yo.",
-      "en": "It means me."
+      "es": "número uno en La Candelaria",
+      "en": "number one in La Candelaria"
+    },
+    {
+      "es": "Quiere decir... el mesero.",
+      "en": "It means... the waiter."
+    },
+    {
+      "es": "redondo",
+      "en": "round"
+    },
+    {
+      "es": "como una pelota",
+      "en": "like a ball"
     },
     {
       "es": "un tinto de la casa",
       "en": "a coffee on the house"
     },
     {
+      "es": "hasta la otra esquina",
+      "en": "all the way to the other corner"
+    },
+    {
       "es": "Sin ti no hay fila.",
       "en": "Without you there's no queue."
+    },
+    {
+      "es": "¿Todavía quieres hablar conmigo?",
+      "en": "Do you still want to talk with me?"
     },
     {
       "es": "Tiene seis años otra vez, y Rosa canta.",
@@ -59,7 +79,7 @@
       "answer": 0
     },
     {
-      "q": "Who is watching the queue from the corner?",
+      "q": "Who is watching the queue from the other corner?",
       "options": [
         "Ricardo Altamira",
         "The blogger",
@@ -91,12 +111,12 @@
       "answer": 0
     },
     {
-      "q": "What does Simón shout when Vale asks what surreal means?",
+      "q": "What does Tomás forget?",
       "options": [
-        "I don't recommend it",
-        "The bill, please",
-        "To take away",
-        "Delicious"
+        "That today is Monday",
+        "Hernando's tinto",
+        "The prices",
+        "The blogger's name"
       ],
       "answer": 0
     },
@@ -117,7 +137,6 @@
     "c:hay",
     "c:para-llevar",
     "c:por-favor",
-    "c:quiero",
     "c:tienes",
     "g:adjective-agreement",
     "g:direct-objects",
@@ -133,6 +152,7 @@
     "g:stem-boot",
     "g:verb-infinitive",
     "g:yo-irregular",
+    "p:aqui-ahi-alla",
     "p:con-sin",
     "p:days-el-lunes",
     "p:demonstratives-basic",
@@ -142,10 +162,12 @@
     "p:possessives-basic",
     "p:senor-don-article",
     "p:telling-time",
-    "p:tener-anos"
+    "p:tener-anos",
+    "p:ya-todavia-basic"
   ],
   "lexemes": [
     "l:abrir",
+    "l:allá",
     "l:almojábana",
     "l:año",
     "l:buñuelo",
@@ -166,6 +188,7 @@
     "l:favor",
     "l:fila",
     "l:grande",
+    "l:hablar",
     "l:hacer",
     "l:hombre",
     "l:hoy",
@@ -174,17 +197,20 @@
     "l:llegar",
     "l:llevar",
     "l:lunes",
+    "l:mesero",
     "l:mirar",
     "l:número",
     "l:ojo",
     "l:pandebono",
     "l:parar",
     "l:parecerse",
+    "l:pelota",
     "l:puerta",
     "l:querer",
     "l:queso",
     "l:qué",
     "l:recomendar",
+    "l:redondo",
     "l:reseña",
     "l:salado",
     "l:ser",
@@ -193,7 +219,6 @@
     "l:tener",
     "l:tinto",
     "l:traje",
-    "l:venir",
     "l:vez"
   ]
 }

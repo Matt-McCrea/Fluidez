@@ -2,27 +2,43 @@
   "id": "ch023",
   "unit": "u09",
   "title": "Ya es tarde",
-  "text": "Vale: Don Hernando, ¿qué hora es?\nHernando: Son las ocho y diez, mija. Y Tomás está en el cuarto pequeño, otra vez.\nVale: Tengo que hacer el pan de mañana, y toda la harina está allá.\nHernando: Hay que esperar un rato, mija.\nVale: No tengo que esperar. Es mi harina.\nSimón: ¡Hay que esperar, Vale! ¡Esperar, esperar!\nVale abre la puerta del cuarto. En la computadora de Tomás hay cuatro caras de Toronto. Tomás habla en inglés y no ve a Vale.\nTomás: I'm only here for a few months.\nVale no entra. No toma la harina. Cierra la puerta sin hablar y sale del café.\nA las nueve, Tomás sale del cuarto.\nTomás: ¿Y Vale? ¿No tiene que hacer el pan?\nHernando: Se fue a la panadería de Gloria. Abrió la puerta, Tomás, y la cerró.\nTomás: Tranquilo, don Hernando. Vale no sabe inglés.\nHernando: ¿Te acuerdas de tu primer día? Vale te habló en inglés.\nTomás mira el reloj de Rosa.\nHernando: Rosa perdió a su hermano, Tomás. ¿Tú vas a perder a Vale?\nTomás: ¿Qué hora es?\nHernando: Tarde, Tomás. Ya es tarde, mijo.",
+  "text": "Vale: Don Hernando, ¿qué hora es?\nHernando: Son las ocho y diez, mija. Y Tomás está otra vez en el cuarto pequeño, el de la harina.\nVale: Tengo que hacer el pan de mañana, y toda la harina está allá.\nHernando: Hay que esperar un rato, mija.\nVale: ¿Esperar? Es mi harina.\nSimón: ¡Hay que esperar, Vale!\nVale abre la puerta del cuarto. En la computadora de Tomás hay cuatro caras de Toronto. Tomás habla en inglés y no ve a Vale.\nTomás: I'm only here for a few months. Then I'm back in Toronto.\nVale no entra. No toma la harina. Cierra la puerta sin hablar y sale del café.\nA las nueve, Tomás sale del cuarto.\nTomás: ¿Y Vale? ¿No tiene que hacer el pan?\nHernando: Se fue a la panadería de Gloria. Abrió la puerta, mijo, y la cerró otra vez.\nTomás: Tranquilo, don Hernando. Vale no sabe inglés.\nHernando: Inglés no sabe. Pero «Toronto» sí lo entiende.\nTomás mira el reloj de Rosa.\nHernando: ¿Te acuerdas de la carta de Rosa? Rosa perdió a su hermano, Tomás. ¿Tú vas a perder a Vale?\nTomás: ¿Qué hora es?\nHernando: Tarde, mijo. Ya es muy tarde.",
   "gloss": [
     {
       "es": "mija",
       "en": "my dear (to a woman)"
     },
     {
-      "es": "I'm only here for a few months",
-      "en": "I'm only here for a few months (Tomás says it in English)"
+      "es": "mijo",
+      "en": "son (a fond way to talk to a younger man)"
+    },
+    {
+      "es": "el de la harina",
+      "en": "the flour one"
+    },
+    {
+      "es": "I'm only here for a few months. Then I'm back in Toronto.",
+      "en": "Tomás says it in English: he is only in Bogotá for a few months, then he goes back to Toronto."
     },
     {
       "es": "cuatro caras de Toronto",
       "en": "four faces from Toronto"
     },
     {
-      "es": "Abrió la puerta, Tomás, y la cerró.",
-      "en": "She opened the door, Tomás, and she closed it."
+      "es": "Abrió la puerta, mijo, y la cerró otra vez.",
+      "en": "She opened the door, son, and closed it again."
     },
     {
-      "es": "Tarde, Tomás. Ya es tarde, mijo.",
-      "en": "Late, Tomás. It's already late, son. (too late?)"
+      "es": "Inglés no sabe. Pero «Toronto» sí lo entiende.",
+      "en": "She doesn't know English. But \"Toronto\", that she understands."
+    },
+    {
+      "es": "¿Te acuerdas de la carta de Rosa?",
+      "en": "Do you remember Rosa's letter?"
+    },
+    {
+      "es": "Tarde, mijo. Ya es muy tarde.",
+      "en": "Late, son. It's already very late. (too late?)"
     }
   ],
   "questions": [
@@ -49,10 +65,10 @@
     {
       "q": "Why is Tomás wrong to feel safe?",
       "options": [
-        "Vale speaks English: she spoke English to him on his first day",
+        "Vale doesn't speak English, but she understood the word Toronto",
         "Vale didn't open the door",
-        "Hernando speaks English too",
-        "Vale was at Gloria's bakery"
+        "Hernando translated everything for her",
+        "Vale was at Gloria's bakery the whole time"
       ],
       "answer": 0
     },
@@ -66,7 +82,7 @@
       "answer": 0
     }
   ],
-  "hook": "Vale heard every word, in a language Tomás forgot she speaks. Tomorrow at five he has a café to open and an apology to make, and Vale is not answering her phone.",
+  "hook": "Vale doesn't speak English, but she understood one word: Toronto. Tomorrow at five he has a café to open and an apology to make, and Vale is not answering her phone.",
   "rereadQuestions": [
     {
       "q": "What time is it when Vale asks Hernando?",
@@ -126,11 +142,9 @@
     "p:aqui-ahi-alla",
     "p:es-de-noche-tarde",
     "p:ir-a-venir-de-place",
-    "p:me-te-nos-objects",
-    "p:ordinal-floor",
-    "p:ordinals-primer-tercer",
     "p:personal-a",
     "p:possessives-basic",
+    "p:quantifiers-basic",
     "p:saber-conocer",
     "p:senor-don-article",
     "p:telling-time"
@@ -141,9 +155,10 @@
     "l:allá",
     "l:café",
     "l:cara",
+    "l:carta",
     "l:cerrar",
     "l:computadora",
-    "l:día",
+    "l:entender",
     "l:entrar",
     "l:esperar",
     "l:estar",
@@ -153,6 +168,7 @@
     "l:hermano",
     "l:hora",
     "l:i",
+    "l:in",
     "l:inglés",
     "l:ir",
     "l:irse",

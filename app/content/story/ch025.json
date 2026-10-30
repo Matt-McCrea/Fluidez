@@ -2,7 +2,7 @@
   "id": "ch025",
   "unit": "u10",
   "title": "No la recomiendo",
-  "text": "Sábado, once de la mañana. Tomás practica con Simón.\nTomás: ¿Le provoca algo de tomar, señor? Hay limonada y aguapanela.\nSimón: ¡Aguapanela fría!\nEn la pizarra está la carta de hoy: «Ajiaco con pollo. Bandeja: arroz, fríjoles, carne, huevo y plátano. Pescado con ensalada. Arepa con queso y empanadas».\nA las doce llegan los taxistas.\nHernando: Una bandeja, mijo. Mucha carne, mucho arroz, muchos fríjoles y dos plátanos. Sin ensalada.\nTaxista: Yo quiero una arepa con queso y huevo, y una limonada.\nOtro taxista: ¿Me regala tres empanadas?\nA la una entra una mujer con gafas y un cuaderno. Es la bloguera.\nMujer: ¿Qué me recomienda?\nTomás: El ajiaco, señora. Es la sopa de la casa, con pollo y mazorca.\nMujer: Quiero el ajiaco y el pescado.\nTomás: ¿El pescado? No la recomiendo.\nMujer: ¿Cómo? ¿No recomienda la sopa?\nTomás: No, no. La sopa no... La sopa sí... ¡Ay!\nSimón: ¡Qué rico! ¡Qué rico!\nLa mujer escribe en el cuaderno. Después come toda la sopa sin hablar.\nMujer: ¿Cuánto le debo?\nLa mujer paga y sale. En la mesa hay un vaso de aguapanela y diez mil pesos de propina.\nVale: ¿Qué pasó con la bloguera, Tomás?\nTomás: Yo hablé del pescado, y ella entendió la sopa.\nVale: ¡Ay, Tomás!\nTomás: Vale, ¿nos vemos mañana a las siete? Para hablar.\nVale: Mañana no puedo. ¿Mejor el lunes?\nTomás: Listo, el lunes a las siete.",
+  "text": "Sábado, once de la mañana. Tomás practica con Simón.\nTomás: ¿Le provoca algo de tomar, señor? Hay limonada y aguapanela.\nSimón: ¡Aguapanela fría!\nEn la pizarra está la carta de hoy: «Ajiaco con pollo. Bandeja: arroz, fríjoles, carne, huevo y plátano. Pescado con ensalada. Arepa con queso. Empanadas».\nA las doce llegan los taxistas.\nHernando: Una bandeja, mijo. Mucha carne, mucho arroz, muchos fríjoles y dos plátanos. Sin ensalada.\nTaxista: Para mí, una arepa con queso y huevo, y una limonada.\nOtro taxista: ¿Me regala tres empanadas?\nA la una entra una mujer con sombrero y un cuaderno. Es la bloguera.\nMujer: ¿Qué me recomienda?\nTomás: El ajiaco, señora. Es la sopa de la casa, con pollo y mazorca.\nMujer: Bueno. ¿Y el pescado?\nTomás: ¿El pescado? No la recomiendo.\nMujer: ¿Cómo? ¿No me recomienda la sopa?\nTomás: No, no. La sopa no... La sopa sí... ¡Ay!\nSimón: ¡Qué rico! ¡Qué rico!\nLa mujer escribe en el cuaderno. Después come toda la sopa sin hablar.\nMujer: ¿Cuánto le debo?\nLa mujer paga y sale. En la mesa hay un plato vacío y diez mil pesos de propina.\nVale: ¿Qué pasó con la bloguera, Tomás?\nTomás: Yo hablaba del pescado, ¡y ella entendió «la sopa»!\nVale: ¡Ay, Tomás!\nTomás: Vale, ¿nos vemos mañana a las siete? Para hablar.\nVale: Mañana no puedo. ¿Mejor el lunes?\nTomás: Listo. El lunes a las siete.",
   "gloss": [
     {
       "es": "la pizarra",
@@ -25,16 +25,24 @@
       "en": "Cold aguapanela (a drink of raw cane sugar and water)"
     },
     {
+      "es": "sombrero",
+      "en": "hat"
+    },
+    {
       "es": "Es la sopa de la casa",
       "en": "It's the house soup"
     },
     {
       "es": "No la recomiendo.",
-      "en": "I don't recommend it. (la means a feminine thing, like la sopa, but el pescado needs lo)"
+      "en": "I don't recommend it. (la points to a feminine thing, like la sopa; el pescado needs lo)"
     },
     {
-      "es": "Yo hablé del pescado, y ella entendió la sopa.",
-      "en": "I was talking about the fish, and she understood the soup."
+      "es": "un plato vacío",
+      "en": "an empty plate"
+    },
+    {
+      "es": "Yo hablaba del pescado, ¡y ella entendió «la sopa»!",
+      "en": "I was talking about the fish, and she heard \"the soup\"!"
     }
   ],
   "questions": [
@@ -87,7 +95,7 @@
       "answer": 0
     }
   ],
-  "hook": "The blogger left a notebook full of notes, an empty bowl and a big tip. Somewhere in Bogotá tonight, she is writing about La Esquina de Rosa.",
+  "hook": "The blogger left an empty plate and a big tip, and she took her notebook full of notes with her. Somewhere in Bogotá tonight, she is writing about La Esquina de Rosa.",
   "rereadQuestions": [
     {
       "q": "Who is Tomás practising with before lunch?",
@@ -102,7 +110,7 @@
     {
       "q": "What is left on the blogger's table?",
       "options": [
-        "A glass of aguapanela and a 10,000 peso tip",
+        "An empty plate and a 10,000 peso tip",
         "Her notebook",
         "Half the soup",
         "A business card"
@@ -124,12 +132,12 @@
     "c:chao-nos-vemos",
     "c:claro-listo",
     "c:cuanto-le-debo",
+    "c:entonces-bueno",
     "c:hay",
     "c:me-regala",
     "c:puedo",
     "c:que-me-recomienda",
     "c:que-rico",
-    "c:quiero",
     "c:te-provoca",
     "g:direct-objects",
     "g:estar-location-states",
@@ -144,6 +152,7 @@
     "g:ser-identity",
     "g:stem-boot",
     "p:days-el-lunes",
+    "p:me-te-nos-objects",
     "p:nos-vemos-a-las",
     "p:para-inf",
     "p:por-la-manana",
@@ -157,6 +166,7 @@
     "l:arepa",
     "l:arroz",
     "l:bandeja",
+    "l:bueno",
     "l:carne",
     "l:carta",
     "l:casa",
@@ -167,6 +177,7 @@
     "l:deber",
     "l:después",
     "l:empanada",
+    "l:empanar",
     "l:ensalada",
     "l:entender",
     "l:entrar",
@@ -174,7 +185,6 @@
     "l:estar",
     "l:fríjol",
     "l:frío",
-    "l:gafas",
     "l:hablar",
     "l:hoy",
     "l:huevo",
@@ -189,17 +199,18 @@
     "l:mijo",
     "l:mujer",
     "l:pagar",
+    "l:parar",
     "l:pasar",
     "l:pescado",
     "l:peso",
     "l:pizarra",
+    "l:plato",
     "l:plátano",
     "l:poder",
     "l:pollo",
     "l:practicar",
     "l:propina",
     "l:provocar",
-    "l:querer",
     "l:queso",
     "l:qué",
     "l:recomendar",
@@ -209,11 +220,12 @@
     "l:ser",
     "l:señor",
     "l:señora",
+    "l:sombrero",
     "l:sopa",
     "l:sábado",
     "l:taxista",
     "l:tomar",
-    "l:vaso",
+    "l:vaciar",
     "l:ver"
   ]
 }

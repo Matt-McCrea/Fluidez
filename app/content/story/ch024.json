@@ -2,35 +2,35 @@
   "id": "ch024",
   "unit": "u10",
   "title": "Una carta sin precios",
-  "text": "Son las cinco. Tomás abre el café solo. Vale no contesta el celular.\nA las seis entra Vale, y no mira a Tomás.\nTomás: Vale, lo siento. Anoche escribí a Toronto: «No, gracias».\nVale: ¿Y por qué?\nTomás: Porque me gusta el café. Me gustan las seis de la mañana. Y me gusta el pan de Vale.\nSimón: ¡La cuenta, por favor!\nTomás pone una carta en la mesa.\nVale: ¿Otra carta? ¿Otra carta de 1979?\nTomás: No. Es una carta de comida. Un menú nuevo.\nVale lee: «Sábados: ajiaco. Todos los días: jugos de fruta. De postre: la torta de Vale».\nHernando: ¡Me encanta! ¿Y qué me recomienda, mija?\nVale: Recomiendo el tinto, don Hernando. Como todos los días.\nVale escribe los precios en el menú.\nVale: A los clientes no les gustan las cartas sin precios.\nTomás: ¿Y a ti te gusta?\nVale: Me gusta la torta. Tú todavía no.\nHernando mira su celular. Una bloguera de comida muy famosa visita La Candelaria el sábado.\nHernando: A mis nietos les encanta esa bloguera. Ella come en un café, y al otro día hay fila. Y Altamira no compra un café con fila.\nVale: Entonces, el sábado, ajiaco. Y tú, Tomás, eres el mesero.",
+  "text": "Viernes, cinco de la mañana. Tomás abre el café solo. Vale no contesta el celular.\nA las seis entra Vale, y no mira a Tomás.\nTomás: Vale, lo siento. Anoche contesté el correo de Toronto: «No, gracias».\nVale: ¿Y por qué?\nTomás: Porque me gusta el café. Me gustan las cinco de la mañana. Y me gusta tu pan.\nSimón: ¡La cuenta, por favor!\nTomás pone una carta en la mesa.\nVale: ¿Otra carta? ¿Otra carta de Rosa?\nTomás: No. Esta carta es para los clientes. Es un menú nuevo.\nVale lee: «Sábados: ajiaco. Todos los días: jugos de fruta y buñuelos. De postre: la torta de Vale».\nHernando: ¡Me encanta! ¿Y qué me recomienda la chef?\nVale: El tinto, don Hernando. Como todos los días.\nVale: A los clientes no les gustan las cartas sin precios.\nVale escribe los precios en el menú.\nTomás: ¿Y a ti? ¿Te gusta?\nVale: La torta, sí. Tú, todavía no.\nHernando mira su celular. Una bloguera de comida muy famosa visita La Candelaria el sábado.\nHernando: A mis nietos les encanta esa bloguera. Ella come en un café, y al otro día hay fila en la puerta. Y un café con fila no necesita a Altamira.\nVale: Entonces, el sábado, ajiaco. Y tú, Tomás, eres el mesero.",
   "gloss": [
     {
       "es": "bloguera",
       "en": "blogger (a woman)"
     },
     {
-      "es": "mija",
-      "en": "my dear (to a woman)"
+      "es": "Anoche contesté el correo de Toronto: «No, gracias».",
+      "en": "Last night I answered the email from Toronto: \"No, thanks.\""
     },
     {
-      "es": "Anoche escribí a Toronto: «No, gracias».",
-      "en": "Last night I wrote to Toronto: \"No, thanks.\""
+      "es": "Esta carta es para los clientes.",
+      "en": "This carta is for the customers. (una carta is a letter, and also a menu)"
     },
     {
-      "es": "Es una carta de comida.",
-      "en": "It's a food menu."
+      "es": "la chef",
+      "en": "the chef"
     },
     {
-      "es": "Me gusta la torta. Tú todavía no.",
-      "en": "I like the cake. You, not yet."
+      "es": "La torta, sí. Tú, todavía no.",
+      "en": "The cake, yes. You, not yet."
     },
     {
-      "es": "al otro día hay fila",
-      "en": "the next day there's a queue"
+      "es": "al otro día hay fila en la puerta",
+      "en": "the next day there's a queue at the door"
     },
     {
-      "es": "Y Altamira no compra un café con fila.",
-      "en": "And Altamira doesn't buy a café with a queue."
+      "es": "Y un café con fila no necesita a Altamira.",
+      "en": "And a café with a queue doesn't need Altamira."
     }
   ],
   "questions": [
@@ -45,7 +45,7 @@
       "answer": 0
     },
     {
-      "q": "What does Vale mean by \"Me gusta la torta. Tú todavía no.\"",
+      "q": "What does Vale mean by \"La torta, sí. Tú, todavía no.\"",
       "options": [
         "She likes his menu, but she hasn't forgiven him yet",
         "She doesn't like cake",
@@ -107,12 +107,12 @@
       "answer": 0
     },
     {
-      "q": "Who in Hernando's family loves the blogger?",
+      "q": "What did Tomás write to the company in Toronto?",
       "options": [
-        "His grandchildren",
-        "His wife",
-        "His daughter's husband",
-        "Nobody"
+        "No, thanks",
+        "Yes, I'm coming",
+        "See you on Thursday",
+        "Nothing"
       ],
       "answer": 0
     }
@@ -139,12 +139,13 @@
     "g:hay-vs-esta",
     "g:present-ar",
     "g:present-er-ir",
-    "g:preterite-er-ir",
+    "g:preterite-ar",
     "g:questions",
     "g:ser-identity",
-    "g:stem-boot",
     "p:days-el-lunes",
+    "p:demonstratives-basic",
     "p:masculine-plural-mixed",
+    "p:para-inf",
     "p:por-la-manana",
     "p:possessives-basic",
     "p:quantifiers-basic",
@@ -157,14 +158,16 @@
     "l:abrir",
     "l:ajiaco",
     "l:anoche",
+    "l:buñuelo",
     "l:café",
     "l:carta",
     "l:celular",
+    "l:chef",
     "l:cliente",
     "l:comer",
     "l:comida",
-    "l:comprar",
     "l:contestar",
+    "l:correo",
     "l:cuenta",
     "l:día",
     "l:encantar",
@@ -181,14 +184,15 @@
     "l:menú",
     "l:mesa",
     "l:mesero",
-    "l:mija",
     "l:mirar",
+    "l:necesitar",
     "l:nieto",
     "l:nuevo",
     "l:pan",
     "l:poner",
     "l:postre",
     "l:precio",
+    "l:puerta",
     "l:qué",
     "l:recomendar",
     "l:sentir",
@@ -196,6 +200,7 @@
     "l:sábado",
     "l:tinto",
     "l:torta",
+    "l:viernes",
     "l:visitar"
   ]
 }

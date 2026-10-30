@@ -2,7 +2,7 @@
   "id": "ch029",
   "unit": "u11",
   "title": "Al otro lado",
-  "text": "Vale: Tomás, ¿quién es la mujer de las gafas?\nTomás: Es Mariana, la niña de los domingos. Ahora es periodista.\nVale: ¿Y es más simpática que yo?\nSimón: ¡Más simpática! ¡Más simpática!\nTomás: No, no. Es menos simpática que tú. Bueno... es tan simpática como tú.\nVale: Mal, Tomás. Muy mal.\nMariana trae dos fotos de la cuadra. Las saca de su bolsa y las pone en la mesa.\nMariana: Bueno, Tomás, el examen. Esta es la cuadra en 1995, y esta es la cuadra hoy.\nHernando: En 1995 había más gente en la calle, y menos carros. Y yo era más joven y más guapo que Tomás.\nMariana: Todo comenzó con un artículo pequeño. Pero la historia resultó más grande que un artículo. Altamira ya tiene trece casas en la cuadra. Las compró en un año, y paga muy bien.\nTomás: ¿Y la casa de Gloria? ¿Y el café?\nMariana: Gloria no vende. Y el café es más importante que las trece casas. Mira la foto. Las trece casas están a un lado del café, y la casa de Gloria está al otro lado. El café está en la esquina, en el centro. Altamira quiere un hotel en toda la cuadra, y sin la esquina, no hay hotel.\nVale pone una almojábana delante de Mariana. Después pone otra delante de Tomás.\nMariana: Vale, tu almojábana es mejor que la almojábana de Rosa.\nVale: ¿Mejor? No, Mariana.\nMariana: Sí, mejor. Rosa también lo decía.\nVale mira a Mariana un rato. Después sirve un tinto para Mariana.\nHernando: Rosa no quería un hotel. Rosa quería su propio café, en su propia esquina.\nMariana: Y es tu derecho, Tomás. Pero una pregunta: el edificio del café, ¿de quién es? ¿Quién es el dueño?\nTomás: De Rosa, ¿no?\nHernando: No, mijo. Rosa pagaba arriendo, todos los meses. Cuarenta y siete años de arriendo. ¿No leíste el contrato?\nTomás: Sí... más o menos. Era largo y aburrido.\nMariana: Entonces el dueño es otra persona. Y Altamira ya está buscando a esa persona.",
+  "text": "Vale: Tomás, ¿quién es la mujer de las gafas?\nTomás: Es Mariana, la niña de los domingos. Ahora es periodista.\nVale: ¿Y es más simpática que yo?\nSimón: ¡Más simpática! ¡Más simpática!\nTomás: No, no. Es menos simpática que tú. Bueno... es tan simpática como tú.\nVale: Mal, Tomás. Muy mal.\nMariana saca dos fotos de su bolsa y las pone en la mesa.\nMariana: Bueno, Tomás, el examen. Esta es la cuadra en 1995, y esta es la cuadra hoy.\nHernando: En 1995 había más gente en la calle y menos carros. Y yo era más joven y más guapo que Tomás.\nMariana: Primero quería escribir un artículo pequeño, pero la historia resultó más grande. Altamira ya tiene trece casas en la cuadra. Las compró en un año, y paga muy bien.\nTomás: ¿Y el café?\nMariana: El café es más importante que las trece casas. Mira: siete casas a un lado, seis al otro lado, y en la esquina, el café. Altamira quiere un hotel en toda la cuadra. Sin la esquina, no hay hotel.\nVale trae dos almojábanas. Pone una delante de Mariana y otra delante de Tomás.\nMariana: Vale, tu almojábana es mejor que la de Rosa.\nVale: ¿Mejor? No, Mariana. Nadie hace almojábanas como Rosa.\nMariana: Yo comí las almojábanas de Rosa todos los domingos de mi niñez. Esta es mejor.\nVale mira a Mariana un rato. Después sirve un tinto para Mariana.\nHernando: Rosa no quería un hotel. Quería su propio café, en su propia esquina.\nMariana: Y tú tienes derecho a decir que no, Tomás. Pero el local es arrendado, ¿no? Entonces, ¿quién es el dueño?\nTomás: No sé. Está en el contrato, supongo. Pero el contrato es largo y aburrido, y no lo terminé.\nHernando: Cuarenta y siete años de arriendo, y Rosa nunca dijo el nombre del dueño.\nMariana: Pues Altamira ya está buscando a esa persona.",
   "gloss": [
     {
       "es": "mijo",
@@ -10,27 +10,43 @@
     },
     {
       "es": "Mal, Tomás. Muy mal.",
-      "en": "Wrong, Tomás. Very wrong."
+      "en": "Wrong answer, Tomás. Very wrong."
     },
     {
-      "es": "La historia resultó más grande que un artículo.",
-      "en": "The story turned out bigger than an article."
+      "es": "la cuadra",
+      "en": "the block"
     },
     {
-      "es": "a un lado del café",
-      "en": "on one side of the café"
+      "es": "Primero quería escribir un artículo pequeño, pero la historia resultó más grande.",
+      "en": "At first I wanted to write a small article, but the story turned out bigger."
     },
     {
-      "es": "al otro lado",
-      "en": "on the other side"
+      "es": "siete casas a un lado, seis al otro lado",
+      "en": "seven houses on one side, six on the other side"
     },
     {
-      "es": "Y es tu derecho, Tomás.",
-      "en": "And it's your right, Tomás."
+      "es": "Nadie hace almojábanas como Rosa.",
+      "en": "Nobody makes almojábanas like Rosa."
     },
     {
-      "es": "Rosa pagaba arriendo.",
-      "en": "Rosa used to pay rent."
+      "es": "Y tú tienes derecho a decir que no",
+      "en": "And you have the right to say no"
+    },
+    {
+      "es": "el local es arrendado",
+      "en": "the premises are rented"
+    },
+    {
+      "es": "Está en el contrato, supongo.",
+      "en": "It's in the contract, I suppose."
+    },
+    {
+      "es": "aburrido",
+      "en": "boring"
+    },
+    {
+      "es": "Cuarenta y siete años de arriendo",
+      "en": "Forty seven years of rent"
     }
   ],
   "questions": [
@@ -65,16 +81,17 @@
       "answer": 0
     },
     {
-      "q": "¿De quién es el edificio del café?",
+      "q": "¿Quién es el dueño del local del café?",
       "options": [
-        "De otra persona, no de Rosa",
-        "De Rosa",
-        "De Hernando",
-        "De Gloria"
+        "Nadie sabe: Rosa pagaba arriendo",
+        "Rosa",
+        "Hernando",
+        "Altamira"
       ],
       "answer": 0
     }
   ],
+  "hook": "Rosa paid rent on the café for forty seven years and never said who owned it, and Altamira is already looking for that person. Tonight the rain comes, and the lights go out.",
   "rereadQuestions": [
     {
       "q": "How many houses on the block does Altamira already have?",
@@ -97,24 +114,24 @@
       "answer": 0
     },
     {
-      "q": "Who does not want to sell?",
+      "q": "Why hasn't Tomás found the owner's name?",
       "options": [
-        "Gloria",
-        "Hernando's children",
-        "The teacher",
-        "Vale"
+        "He never finished reading the long, boring contract",
+        "Hernando hid the contract",
+        "The contract is in Toronto",
+        "Mariana has it"
       ],
       "answer": 0
     }
   ],
-  "hook": "Rosa paid rent on the café for forty years, so somebody else owns the corner, and Altamira is already looking for them. Tonight the rain comes, and the lights go out.",
   "requires": [
     "c:bien-y-tu",
+    "c:comi",
     "c:entonces-bueno",
     "c:era",
     "c:hay",
-    "c:mas-o-menos",
     "c:no-cierto",
+    "c:no-se",
     "c:tienes",
     "g:adjective-agreement",
     "g:comparatives",
@@ -130,31 +147,32 @@
     "g:present-er-ir",
     "g:preterite-ar",
     "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
     "g:questions",
     "g:ser-identity",
     "g:stem-boot",
     "g:stem-e-i",
+    "g:verb-infinitive",
+    "g:yo-irregular",
     "p:bien-bueno",
     "p:bien-mal-vs-bueno-malo",
     "p:cerca-de",
     "p:dates-years",
     "p:days-el-lunes",
-    "p:de-owner",
     "p:demonstratives-basic",
     "p:es-tiene-lleva",
+    "p:frequency-scale",
     "p:la-gente-singular",
     "p:otro-no-article",
     "p:para-inf",
     "p:personal-a",
     "p:position-de",
     "p:possessives-basic",
-    "p:prep-questions-basic",
     "p:quantifiers-basic",
     "p:question-word-order",
     "p:ser-profession-no-article",
     "p:time-sequence-basic",
-    "p:todos-los-dias",
-    "p:veces-al"
+    "p:todos-los-dias"
   ],
   "lexemes": [
     "l:aburrido",
@@ -171,8 +189,7 @@
     "l:calle",
     "l:carro",
     "l:casa",
-    "l:centro",
-    "l:comenzar",
+    "l:comer",
     "l:comprar",
     "l:contrato",
     "l:cuadra",
@@ -182,7 +199,8 @@
     "l:después",
     "l:domingo",
     "l:dueño",
-    "l:edificio",
+    "l:e",
+    "l:escribir",
     "l:esquina",
     "l:estar",
     "l:examen",
@@ -191,6 +209,7 @@
     "l:gente",
     "l:grande",
     "l:guapo",
+    "l:hacer",
     "l:historia",
     "l:hotel",
     "l:hoy",
@@ -198,33 +217,34 @@
     "l:joven",
     "l:lado",
     "l:largo",
-    "l:leer",
+    "l:local",
     "l:mal",
     "l:mejor",
-    "l:mes",
     "l:mesa",
-    "l:mijo",
     "l:mirar",
     "l:mujer",
     "l:niña",
+    "l:niñez",
+    "l:nombre",
     "l:pagar",
     "l:pequeño",
     "l:periodista",
     "l:persona",
     "l:poner",
-    "l:pregunta",
     "l:propio",
     "l:querer",
     "l:quién",
     "l:rato",
     "l:resultar",
+    "l:saber",
     "l:sacar",
     "l:ser",
     "l:servir",
     "l:simpático",
+    "l:suponer",
     "l:tener",
+    "l:terminar",
     "l:tinto",
-    "l:traer",
-    "l:vender"
+    "l:traer"
   ]
 }

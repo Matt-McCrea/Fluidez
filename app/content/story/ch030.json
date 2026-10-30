@@ -2,7 +2,7 @@
   "id": "ch030",
   "unit": "u12",
   "title": "Se fue la luz",
-  "text": "Llovía mucho en La Candelaria, y era el cumpleaños de don Hernando.\nHernando: Setenta y dos años, mija. ¿Y mi regalo?\nVale: Su regalo es una torta de chocolate. Y hoy no paga el tinto.\nHernando: Pero yo nunca pago el tinto.\nTomás puso una foto vieja en la mesa. En la foto, Rosa y Hernando eran jóvenes y bailaban tango.\nHernando miró la foto un largo rato y no habló.\nA las nueve, Tomás cerraba la puerta y Vale contaba la plata del día. De repente, se fue la luz.\nTomás: ¿Cortaron la luz?\nHernando: Con este clima, siempre cortan la luz. Entonces, un cuento de cumpleaños.\nHernando: Una noche de lluvia, yo esperaba en mi taxi. De repente, una señora subió.\nVale: ¿Y qué pasó?\nHernando: La señora no habló. Pagó con un billete de 1950 y se fue.\nTomás: ¿En serio?\nHernando: En serio, mijo. Todavía tengo el billete.\nSimón: ¡A la orden! ¡A la orden, señor!\nVale: Simón, el café está cerrado.\nEn ese momento, oyeron un ruido en el mostrador: un ladrillo, otro ladrillo.\nTomás: Vale... el cuaderno de Rosa estaba en ese mostrador.\nSimón: ¡A la orden!",
+  "text": "Llovía mucho en La Candelaria, y era el cumpleaños de don Hernando.\nHernando: Setenta y dos años, mija. ¿Y mi regalo?\nVale: Su regalo es una torta de chocolate. Y hoy no paga el tinto.\nHernando: Pero yo nunca pago el tinto.\nTomás puso en la mesa una foto del álbum de Rosa. En la foto, Rosa y Hernando eran jóvenes y bailaban tango.\nVale: ¿Y usted no bailaba tango, don Hernando?\nHernando miró la foto un largo rato y no dijo nada.\nA las nueve, Tomás cerraba la puerta y Vale contaba la plata del día. De repente, se fue la luz.\nTomás: ¿Cortaron la luz?\nHernando: Con este clima, siempre la cortan. Entonces, un cuento de cumpleaños.\nHernando: Una noche de lluvia, yo esperaba en mi taxi. De repente, subió una señora.\nVale: ¿Y qué pasó?\nHernando: La señora no habló en todo el viaje. Me pagó con un billete de 1950 y se fue.\nTomás: ¿En serio?\nHernando: En serio, mijo. Todavía tengo el billete.\nSimón: ¡A la orden! ¡A la orden, señor!\nVale: Simón, el café está cerrado.\nEntonces oyeron un ruido en el mostrador: un ladrillo, y otro ladrillo.\nTomás: Vale... el cuaderno de Rosa estaba en ese mostrador.\nSimón: ¡A la orden!",
   "gloss": [
     {
       "es": "mija",
@@ -33,12 +33,28 @@
       "en": "Did they cut the power?"
     },
     {
+      "es": "siempre la cortan",
+      "en": "they always cut it"
+    },
+    {
       "es": "un largo rato",
       "en": "for a long while"
     },
     {
       "es": "yo esperaba en mi taxi",
       "en": "I was waiting in my taxi"
+    },
+    {
+      "es": "no habló en todo el viaje",
+      "en": "didn't speak the whole trip"
+    },
+    {
+      "es": "un billete de 1950",
+      "en": "a banknote from 1950"
+    },
+    {
+      "es": "un ladrillo",
+      "en": "a brick"
     }
   ],
   "questions": [
@@ -93,6 +109,7 @@
       "answer": 0
     }
   ],
+  "hook": "Someone is pulling bricks out of the counter where Rosa hid her notebook, and the only one greeting them is Simón. Tomorrow somebody finds a light.",
   "rereadQuestions": [
     {
       "q": "How old is Hernando today?",
@@ -125,10 +142,10 @@
       "answer": 0
     }
   ],
-  "hook": "Someone is pulling bricks out of the counter where Rosa hid her notebook, and the only one greeting them is Simón. Tomorrow somebody finds a light.",
   "requires": [
     "c:a-la-orden",
     "c:abierto-cerrado",
+    "c:bien-y-tu",
     "c:de-repente",
     "c:en-serio",
     "c:entonces-bueno",
@@ -137,10 +154,12 @@
     "c:y-que-paso",
     "g:adjective-agreement",
     "g:demonstratives",
+    "g:direct-objects",
     "g:estar-location-states",
     "g:gender-articles",
     "g:imperfect-habitual",
     "g:imperfect-states",
+    "g:negation-words",
     "g:present-ar",
     "g:preterite-ar",
     "g:preterite-er-ir",
@@ -152,12 +171,12 @@
     "p:demonstratives-basic",
     "p:es-tiene-lleva",
     "p:frequency-scale",
+    "p:me-te-nos-objects",
     "p:otro-no-article",
     "p:possessives-basic",
     "p:quantifiers-basic",
     "p:senor-don-article",
     "p:telling-time",
-    "p:viejo-antiguo-mayor",
     "p:ya-todavia-basic"
   ],
   "lexemes": [
@@ -173,6 +192,7 @@
     "l:cuaderno",
     "l:cuento",
     "l:cumpleaños",
+    "l:decir",
     "l:día",
     "l:esperar",
     "l:estar",
@@ -190,7 +210,6 @@
     "l:mija",
     "l:mijo",
     "l:mirar",
-    "l:momento",
     "l:mostrador",
     "l:noche",
     "l:orden",
@@ -216,6 +235,7 @@
     "l:tener",
     "l:tinto",
     "l:torta",
-    "l:viejo"
+    "l:viaje",
+    "l:álbum"
   ]
 }
