@@ -1,0 +1,184 @@
+{
+ "node": "p:aplazar-posponer",
+ "hook": {
+  "line": "The assembly will not happen on the date everyone hoped for, and somebody chose that. Spanish has two verbs for a delay somebody decided, and other words for one that just happens.",
+  "es": "Pospusimos la reunión para el lunes.",
+  "en": "We postponed the meeting until Monday."
+ },
+ "examples": [
+  {
+   "es": "La asamblea se aplazó hasta nuevo aviso.",
+   "en": "The assembly was postponed until further notice."
+  },
+  {
+   "es": "Pospusimos la reunión para el lunes.",
+   "en": "We postponed the meeting until Monday."
+  },
+  {
+   "es": "La junta decidió posponer la votación.",
+   "en": "The board decided to postpone the vote."
+  },
+  {
+   "es": "Aplazaron la asamblea para el sábado.",
+   "en": "They postponed the assembly until Saturday."
+  },
+  {
+   "es": "El vuelo tuvo una demora de dos horas.",
+   "en": "The flight had a two-hour delay."
+  },
+  {
+   "es": "El bus llegó con un retraso de veinte minutos.",
+   "en": "The bus arrived with a twenty-minute delay."
+  }
+ ],
+ "rule": "*Aplazar* and *posponer* mean someone decided to move it to later. The new date follows *para* or *hasta*: *para el lunes*, *hasta nuevo aviso* (until further notice).\n\n*Posponer* is built on *poner*, so it is irregular: *pospuse*, *pospusimos*. With no one named, use *se*: *se aplazó*.\n\nWhen nobody chose the delay, Spanish does not use these verbs. It says *una demora* or *un retraso de dos horas*.",
+ "smallPrint": "Teachers call *se aplazó* the passive *se*: the thing is postponed and nobody is named.",
+ "readAndPick": [
+  {
+   "es": "Pospusimos la reunión para el lunes.",
+   "options": [
+    "We brought the meeting forward to Monday.",
+    "We held the meeting on Monday.",
+    "We postponed the meeting until Monday."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "La asamblea se aplazó hasta nuevo aviso.",
+   "options": [
+    "The assembly was cancelled for good.",
+    "The assembly was postponed until further notice.",
+    "The assembly was held without notice."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "El vuelo tuvo una demora de dos horas.",
+   "options": [
+    "The flight had a two-hour delay.",
+    "The flight was cancelled two hours ago.",
+    "The flight lasts two hours."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "La junta decidió posponer la votación.",
+   "options": [
+    "The board decided to hold the vote.",
+    "The board decided to cancel the vote.",
+    "The board decided to postpone the vote."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Aplazaron la asamblea para el sábado.",
+   "options": [
+    "They held the assembly on Saturday.",
+    "They postponed the assembly until Saturday.",
+    "They brought the assembly forward to Saturday."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "El bus llegó con un retraso de veinte minutos.",
+   "options": [
+    "The bus arrived twenty minutes late.",
+    "The bus arrived twenty minutes early.",
+    "The bus waited twenty minutes."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Tuvimos que aplazar el pago.",
+   "options": [
+    "We had to make the payment.",
+    "We had to cancel the payment.",
+    "We had to postpone the payment."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Se pospuso la asamblea.",
+   "options": [
+    "The assembly was postponed.",
+    "The assembly postponed something.",
+    "The assembly was brought forward."
+   ],
+   "answer": 0
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Choose *para* or *por*: Pospusimos la reunión ___ el lunes. Type the whole sentence.",
+   "answer": "Pospusimos la reunión para el lunes.",
+   "accept": [
+    "Aplazamos la reunión para el lunes."
+   ],
+   "why": "The new date comes after *para*."
+  },
+  {
+   "prompt": "Say: The assembly was postponed until further notice.",
+   "answer": "La asamblea se aplazó hasta nuevo aviso.",
+   "accept": [
+    "La asamblea se pospuso hasta nuevo aviso."
+   ],
+   "why": "*Se aplazó* leaves out who decided, and *hasta nuevo aviso* is the fixed phrase."
+  },
+  {
+   "prompt": "Say: We postponed the meeting until Monday.",
+   "answer": "Pospusimos la reunión para el lunes.",
+   "accept": [
+    "Aplazamos la reunión para el lunes."
+   ],
+   "why": "Either verb works, and *para* introduces the new date."
+  },
+  {
+   "prompt": "Say: The board decided to postpone the vote.",
+   "answer": "La junta decidió posponer la votación.",
+   "accept": [
+    "La junta decidió aplazar la votación."
+   ],
+   "why": "After *decidió*, the verb stays in the infinitive."
+  },
+  {
+   "prompt": "Say: The flight had a two-hour delay. (nobody chose it)",
+   "answer": "El vuelo tuvo una demora de dos horas.",
+   "accept": [
+    "El vuelo tuvo un retraso de dos horas."
+   ],
+   "why": "Nobody chose it, so Spanish uses *demora* or *retraso*, not *aplazar*."
+  },
+  {
+   "prompt": "Make it about *they*: *Pospusimos la reunión para el lunes.*",
+   "answer": "Pospusieron la reunión para el lunes.",
+   "accept": [
+    "Aplazaron la reunión para el lunes."
+   ],
+   "why": "*They* in the past ends in *-ieron* for *posponer*."
+  },
+  {
+   "prompt": "Make it about *I*: *Tuvimos que aplazar el pago.*",
+   "answer": "Tuve que aplazar el pago.",
+   "accept": [],
+   "why": "*Tuve* is the *I* form of *tener* in the past."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "El vuelo tuvo un aplazamiento de dos horas.",
+   "right": "El vuelo tuvo una demora de dos horas.",
+   "why": "A delay nobody chose is a *demora* or *retraso*. *Aplazar* is for decisions."
+  },
+  {
+   "wrong": "Pospuse la reunión en el lunes.",
+   "right": "Pospuse la reunión para el lunes.",
+   "why": "The new date follows *para*, not *en*."
+  },
+  {
+   "wrong": "Posponí la reunión para el lunes.",
+   "right": "Pospuse la reunión para el lunes.",
+   "why": "*Posponer* is irregular like *poner*: *pospuse*, not *posponí*."
+  }
+ ],
+ "personal": "Say something you would like to put off: *Quiero posponer…* or *Voy a aplazar…*, and when it moves to with *para*."
+}

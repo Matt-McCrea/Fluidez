@@ -1,0 +1,180 @@
+{
+ "node": "p:con-antelacion",
+ "hook": {
+  "line": "Altamira's notice asks the neighbours to reply early enough to count. Tomás needs the phrase that means \"with time to spare\".",
+  "es": "Hay que reservar con antelación.",
+  "en": "You have to book in advance."
+ },
+ "examples": [
+  {
+   "es": "Hay que reservar con antelación.",
+   "en": "You have to book in advance."
+  },
+  {
+   "es": "Reservé la mesa con antelación.",
+   "en": "I booked the table in advance."
+  },
+  {
+   "es": "Tienen que entregar los documentos con antelación.",
+   "en": "They have to hand in the documents in advance."
+  },
+  {
+   "es": "Pague por anticipado, por favor.",
+   "en": "Please pay in advance. (formal)"
+  },
+  {
+   "es": "Compramos los boletos con antelación.",
+   "en": "We bought the tickets in advance."
+  },
+  {
+   "es": "Avísenos con antelación si no puede venir.",
+   "en": "Let us know in advance if you can't come. (formal)"
+  }
+ ],
+ "rule": "*Con antelación* means early enough: it sits after the verb, like \"in advance\".\n\nSame idea: *con anticipación* (very common in Colombia) and *por anticipado*, mostly for paying.\n\nThe opposite is *con posterioridad*: afterwards, in formal writing.\n\nDon't confuse it with *de antemano*, which is for thanking or knowing before: *gracias de antemano*.\n\nOnly the preposition is tricky: it is *con*, never *en*.",
+ "smallPrint": "Teachers call these adverbial phrases: a preposition and a noun that act like one adverb.",
+ "readAndPick": [
+  {
+   "es": "Hay que reservar con antelación.",
+   "options": [
+    "You have to book later.",
+    "You have to book in advance.",
+    "You have to cancel the booking."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Con posterioridad se firmó el acuerdo.",
+   "options": [
+    "The agreement was signed afterwards.",
+    "The agreement was signed in advance.",
+    "The agreement was never signed."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Reservé la mesa con antelación.",
+   "options": [
+    "I cancelled the table.",
+    "I will book the table.",
+    "I booked the table in advance."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Pague por anticipado, por favor.",
+   "options": [
+    "Please pay afterwards.",
+    "Please pay in advance.",
+    "Please pay the bill."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Compramos los boletos con antelación.",
+   "options": [
+    "We bought the tickets in advance.",
+    "We bought the tickets afterwards.",
+    "We lost the tickets."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Avísenos con anticipación.",
+   "options": [
+    "Let us know afterwards.",
+    "We let you know.",
+    "Let us know in advance."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Los socios recibieron el aviso con antelación.",
+   "options": [
+    "The members sent the notice later.",
+    "The members received the notice in advance.",
+    "The members ignored the notice."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Con posterioridad se aclararon los hechos.",
+   "options": [
+    "The facts were clarified in advance.",
+    "The facts were never clear.",
+    "The facts were clarified afterwards."
+   ],
+   "answer": 2
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Choose *antelación* or *posterioridad*: Hay que reservar con ___. (in advance) Type the whole sentence.",
+   "answer": "Hay que reservar con antelación.",
+   "accept": [],
+   "why": "*Antelación* is before, *posterioridad* is after."
+  },
+  {
+   "prompt": "Say: I booked the table in advance.",
+   "answer": "Reservé la mesa con antelación.",
+   "accept": [
+    "Reservé la mesa con anticipación."
+   ],
+   "why": "*Con antelación* goes after the verb and its object."
+  },
+  {
+   "prompt": "Say: We bought the tickets in advance.",
+   "answer": "Compramos los boletos con antelación.",
+   "accept": [
+    "Compramos los boletos con anticipación."
+   ],
+   "why": "*Compramos* is the *we* form, and *con antelación* closes the sentence."
+  },
+  {
+   "prompt": "Say, formal: Please pay in advance.",
+   "answer": "Pague por anticipado, por favor.",
+   "accept": [
+    "Por favor, pague por anticipado."
+   ],
+   "why": "*Pague* is the polite command, and *por anticipado* fits paying."
+  },
+  {
+   "prompt": "Make it about *they*: *Reservé la mesa con antelación.*",
+   "answer": "Reservaron la mesa con antelación.",
+   "accept": [],
+   "why": "*They* in the past ends in *-aron*."
+  },
+  {
+   "prompt": "Choose *con* or *en*: Avísenos ___ antelación si no puede venir. Type the whole sentence.",
+   "answer": "Avísenos con antelación si no puede venir.",
+   "accept": [],
+   "why": "The phrase is always *con antelación*."
+  },
+  {
+   "prompt": "Say: They have to hand in the documents in advance.",
+   "answer": "Tienen que entregar los documentos con antelación.",
+   "accept": [
+    "Tienen que entregar los documentos con anticipación."
+   ],
+   "why": "*Tienen que* + infinitive, then the phrase last."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Hay que reservar en antelación.",
+   "right": "Hay que reservar con antelación.",
+   "why": "English \"in\" tempts you, but the Spanish preposition is *con*."
+  },
+  {
+   "wrong": "Gracias con antelación.",
+   "right": "Gracias de antemano.",
+   "why": "To thank someone before they do it, Spanish says *de antemano*."
+  },
+  {
+   "wrong": "Avísenos con posterioridad si no puede venir.",
+   "right": "Avísenos con antelación si no puede venir.",
+   "why": "*Posterioridad* looks like \"posterior\" and means afterwards. For early, use *antelación*."
+  }
+ ],
+ "personal": "Say something you do ahead of time, or should: *Siempre reservo con antelación* or *Pago por anticipado*."
+}

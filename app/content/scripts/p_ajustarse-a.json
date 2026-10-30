@@ -1,0 +1,172 @@
+{
+ "node": "p:ajustarse-a",
+ "hook": {
+  "line": "Altamira's papers promise that everything follows the statutes. Tomás wants to say whether something really keeps to the rules, and the verb for that comes with an *a* attached.",
+  "es": "El procedimiento se ajusta a la ley.",
+  "en": "The procedure complies with the law."
+ },
+ "examples": [
+  {
+   "es": "El procedimiento se ajusta a la ley.",
+   "en": "The procedure complies with the law."
+  },
+  {
+   "es": "Atengámonos a los estatutos.",
+   "en": "Let's abide by the statutes."
+  },
+  {
+   "es": "Nos tenemos que ajustar al nuevo reglamento.",
+   "en": "We have to comply with the new regulations."
+  },
+  {
+   "es": "La resolución se ajusta a los estatutos.",
+   "en": "The resolution complies with the statutes."
+  },
+  {
+   "es": "El contrato no se ajusta a la ley.",
+   "en": "The contract does not comply with the law."
+  },
+  {
+   "es": "Todos los socios se deben ajustar al reglamento.",
+   "en": "All the members must comply with the regulations."
+  }
+ ],
+ "rule": "*Ajustarse a* means to comply with a rule: a law, a statute, a regulation. The *a* is always there (*al* before *el*), where English says \"with\".\n\nA thing complies: *se ajusta a*. People must: *se deben ajustar a*. Negative: *no se ajusta a*.\n\nTwo cousins: *atenerse a* = to abide by (*atengámonos a* is \"let's abide by\"), and *adecuarse a* = to adapt to. *Tendrá que atenerse a las consecuencias* is a warning: you will face the consequences.",
+ "smallPrint": "Teachers call these prepositional verbs: the *a* is part of the verb, not an extra.",
+ "readAndPick": [
+  {
+   "es": "El procedimiento se ajusta a la ley.",
+   "options": [
+    "The procedure breaks the law.",
+    "The procedure explains the law.",
+    "The procedure complies with the law."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "El contrato no se ajusta a la ley.",
+   "options": [
+    "The contract does not comply with the law.",
+    "The contract complies with the law.",
+    "The contract is not signed yet."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Atengámonos a los estatutos.",
+   "options": [
+    "Let's change the statutes.",
+    "Let's abide by the statutes.",
+    "Let's write the statutes."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Nos tenemos que ajustar al nuevo reglamento.",
+   "options": [
+    "We have to write the new regulations.",
+    "We have to cancel the new regulations.",
+    "We have to comply with the new regulations."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "La resolución se ajusta a los estatutos.",
+   "options": [
+    "The resolution complies with the statutes.",
+    "The resolution replaces the statutes.",
+    "The resolution breaks the statutes."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Todos los socios se deben ajustar al reglamento.",
+   "options": [
+    "All the members wrote the regulations.",
+    "All the members must comply with the regulations.",
+    "None of the members knows the regulations."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Esa decisión no se ajusta a los estatutos.",
+   "options": [
+    "That decision complies with the statutes.",
+    "That decision changes the statutes.",
+    "That decision does not comply with the statutes."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "La propuesta no se ajusta al reglamento.",
+   "options": [
+    "The proposal complies with the regulations.",
+    "The proposal does not comply with the regulations.",
+    "The proposal replaces the regulations."
+   ],
+   "answer": 1
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Choose *a* or *con*: El procedimiento se ajusta ___ la ley. Type the whole sentence.",
+   "answer": "El procedimiento se ajusta a la ley.",
+   "accept": [],
+   "why": "Spanish says *ajustarse a*, where English says \"comply with\"."
+  },
+  {
+   "prompt": "Choose *a* or *al*: Todos los socios se deben ajustar ___ reglamento. Type the whole sentence.",
+   "answer": "Todos los socios se deben ajustar al reglamento.",
+   "accept": [],
+   "why": "*A* and *el* join into *al*."
+  },
+  {
+   "prompt": "Say: The resolution complies with the statutes.",
+   "answer": "La resolución se ajusta a los estatutos.",
+   "accept": [],
+   "why": "A thing complies, so *se ajusta a*."
+  },
+  {
+   "prompt": "Say: The contract does not comply with the law.",
+   "answer": "El contrato no se ajusta a la ley.",
+   "accept": [],
+   "why": "*No* goes before *se*."
+  },
+  {
+   "prompt": "Say: Let's abide by the statutes.",
+   "answer": "Atengámonos a los estatutos.",
+   "accept": [],
+   "why": "*Atengámonos a* is the *let's* form of *atenerse a*."
+  },
+  {
+   "prompt": "Make it negative: *La propuesta se ajusta a los estatutos.*",
+   "answer": "La propuesta no se ajusta a los estatutos.",
+   "accept": [],
+   "why": "*No* goes right before *se*."
+  },
+  {
+   "prompt": "Make it plural: *La resolución se ajusta al estatuto.*",
+   "answer": "Las resoluciones se ajustan al estatuto.",
+   "accept": [],
+   "why": "Several resolutions need the plural *se ajustan*."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "El procedimiento se ajusta con la ley.",
+   "right": "El procedimiento se ajusta a la ley.",
+   "why": "English \"comply with\" tempts you to say *con*, but this verb takes *a*."
+  },
+  {
+   "wrong": "Todos los socios se deben ajustar el reglamento.",
+   "right": "Todos los socios se deben ajustar al reglamento.",
+   "why": "The rule needs its *a*, and with *el* it becomes *al*."
+  },
+  {
+   "wrong": "El contrato ajusta a la ley.",
+   "right": "El contrato se ajusta a la ley.",
+   "why": "The *se* belongs to the verb: it is *ajustarse a*."
+  }
+ ],
+ "personal": "Say a rule you try to follow: *Me ajusto a…* is more than you need yet, so try *Hay que ajustarse a…* and name the rule."
+}
