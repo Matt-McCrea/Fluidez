@@ -1,0 +1,43 @@
+{
+  "node": "p:lo-que-mas-me-gusta",
+  "hook": {
+    "line": "Ask someone what they like about Bogotá and you won't get a list, you'll get a favourite. Spanish has a ready-made opener for the best and the worst.",
+    "es": "Lo que más me gusta de Bogotá son los domingos de ciclovía.",
+    "en": "What I like most about Bogotá is the Sunday ciclovía."
+  },
+  "examples": [
+    { "es": "Lo que más me gusta de Bogotá son los domingos de ciclovía.", "en": "What I like most about Bogotá is the Sunday ciclovía." },
+    { "es": "Lo que menos me gusta es el tráfico.", "en": "What I like least is the traffic." },
+    { "es": "¿Qué es lo que más te gusta de tu barrio?", "en": "What do you like most about your neighbourhood? (to a friend)" },
+    { "es": "Lo que más le gusta a Vale es cocinar.", "en": "What Vale likes most is cooking." },
+    { "es": "Lo que menos me gusta de la ciudad es la contaminación.", "en": "What I like least about the city is the pollution." },
+    { "es": "Lo que más nos gusta son las tardes en el café.", "en": "What we like most is the afternoons in the café." }
+  ],
+  "rule": "To single out your favourite, start with *lo que más me gusta*. For the thing you like least, swap *más* for *menos*: *lo que menos me gusta*.\n\nThen add *de* plus the place or topic, if you want: *de Bogotá*.\n\nAfter *es* or *son*, name the thing. The verb must match it: *es el tráfico*, *son los domingos*. A verb in the infinitive counts as one thing: *es cocinar*.\n\nThe *me* can change: *te*, *le*, *nos*. English says \"what I like most\" in the same order, so this one is easy to copy.",
+  "smallPrint": "Teachers call this a relative clause with *lo que*, built on *gustar* plus a comparative.",
+  "readAndPick": [
+    { "es": "Lo que más me gusta de Bogotá son los domingos de ciclovía.", "options": ["What I like least about Bogotá is the Sunday ciclovía.", "What I like most about Bogotá is the Sunday ciclovía.", "I like Bogotá on Sundays."], "answer": 1 },
+    { "es": "Lo que menos me gusta es el tráfico.", "options": ["What I like most is the traffic.", "What I like least is the traffic."], "answer": 1 },
+    { "es": "¿Qué es lo que más te gusta de tu barrio?", "options": ["What do you like least about your neighbourhood? (to a friend)", "What does she like most about her neighbourhood?", "What do you like most about your neighbourhood? (to a friend)"], "answer": 2 },
+    { "es": "Lo que más le gusta a Vale es cocinar.", "options": ["What Vale likes most is cooking.", "What I like most is cooking.", "What Vale likes least is cooking."], "answer": 0 },
+    { "es": "Lo que menos me gusta de la ciudad es la contaminación.", "options": ["What I like most about the city is the pollution.", "What I like least about the city is the pollution."], "answer": 1 },
+    { "es": "Lo que más nos gusta son las tardes en el café.", "options": ["What we like most is the afternoons in the café.", "What I like most is the afternoons in the café.", "What they like most is the afternoons in the café."], "answer": 0 },
+    { "es": "Lo que menos le gusta a Don Hernando es esperar.", "options": ["What Don Hernando likes most is waiting.", "What Don Hernando likes least is waiting."], "answer": 1 },
+    { "es": "Lo que más me gusta son las arepas de mi abuela.", "options": ["What I like least is my grandmother's arepas.", "What I like most is my grandmother's arepas.", "What my grandmother likes most is arepas."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *es* or *son* and type the whole sentence: *Lo que más me gusta ___ los domingos de ciclovía.*", "answer": "Lo que más me gusta son los domingos de ciclovía.", "accept": [], "why": "The thing named is plural (*los domingos*), so the verb is *son*." },
+    { "prompt": "Pick *más* or *menos* and type the whole sentence. You hate it: *Lo que ___ me gusta es el tráfico.*", "answer": "Lo que menos me gusta es el tráfico.", "accept": [], "why": "The thing you like least is *menos*." },
+    { "prompt": "Type in Spanish: What I like most is cooking.", "answer": "Lo que más me gusta es cocinar.", "accept": [], "why": "An infinitive counts as one thing, so *es*." },
+    { "prompt": "Type in Spanish, asking a friend: What do you like most about your neighbourhood?", "answer": "¿Qué es lo que más te gusta de tu barrio?", "accept": ["¿Lo que más te gusta de tu barrio?"], "why": "To a friend, *te* replaces *me*." },
+    { "prompt": "Type in Spanish: What Vale likes most is cooking.", "answer": "Lo que más le gusta a Vale es cocinar.", "accept": ["A Vale lo que más le gusta es cocinar."], "why": "For another person it is *le gusta*, plus *a Vale*." },
+    { "prompt": "Change it to the thing you like least: *Lo que más me gusta es el tráfico.* Say: What I like least is the traffic.", "answer": "Lo que menos me gusta es el tráfico.", "accept": [], "why": "Swap *más* for *menos*; nothing else moves." },
+    { "prompt": "Type in Spanish: What we like most is the afternoons in the café.", "answer": "Lo que más nos gusta son las tardes en el café.", "accept": [], "why": "*Nos* is for we, and *las tardes* is plural, so *son*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Lo que más me gusta es los domingos de ciclovía.", "right": "Lo que más me gusta son los domingos de ciclovía.", "why": "Almost. The verb agrees with what comes after it: plural, so *son*." },
+    { "wrong": "Que más me gusta es el tráfico.", "right": "Lo que más me gusta es el tráfico.", "why": "Almost. Spanish needs *lo* in front: *lo que*, \"the thing that\"." },
+    { "wrong": "Lo que más gusto es cocinar.", "right": "Lo que más me gusta es cocinar.", "why": "Almost. *Gustar* needs *me* to say who likes it: *me gusta*." }
+  ],
+  "personal": "Tell us what you like most and least about the place you live, using *Lo que más me gusta* and *Lo que menos me gusta*."
+}

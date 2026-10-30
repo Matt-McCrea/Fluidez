@@ -1,0 +1,43 @@
+{
+  "node": "p:yo-diria-que",
+  "hook": {
+    "line": "Saying \"it's too expensive\" flat out can sound blunt, especially to a stranger. A softer opener lets you give your opinion and still keep the peace.",
+    "es": "Yo diría que es más caro.",
+    "en": "I'd say it's more expensive."
+  },
+  "examples": [
+    { "es": "Yo diría que es más caro.", "en": "I'd say it's more expensive." },
+    { "es": "Yo diría que Altamira tiene prisa.", "en": "I'd say Altamira is in a hurry." },
+    { "es": "Yo no diría que es malo, pero no me encanta.", "en": "I wouldn't say it's bad, but I don't love it." },
+    { "es": "Yo no diría eso.", "en": "I wouldn't say that." },
+    { "es": "Yo no diría que es el mejor café del barrio.", "en": "I wouldn't say it's the best café in the neighbourhood." },
+    { "es": "¿Tú qué dirías?", "en": "What would you say? (to a friend)" }
+  ],
+  "rule": "*Diría* means \"I would say\". It is softer than *digo*, the way \"I'd say\" is softer than \"I say\". The *yo* is optional, but it adds a polite, personal touch.\n\nAfter *yo diría que*, give your opinion as it is: *es más caro*, *tiene prisa*.\n\nWith *no*, you are declining to claim it: *no diría que es malo*. Here the verb stays plain. (Some speakers use the wish form after *no diría que*, and nobody will correct you.)\n\nYou can stop after the verb: *Yo no diría eso*.",
+  "smallPrint": "Teachers call *diría* the conditional of *decir*. Used like this it softens, rather than talking about a condition.",
+  "readAndPick": [
+    { "es": "Yo diría que es más caro.", "options": ["I'd say it's more expensive.", "I said it's more expensive.", "I say it's more expensive."], "answer": 0 },
+    { "es": "Yo no diría eso.", "options": ["I wouldn't say that.", "I don't say that.", "I wouldn't say anything."], "answer": 0 },
+    { "es": "Yo diría que Altamira tiene prisa.", "options": ["I wouldn't say Altamira is in a hurry.", "I'd say Altamira is in a hurry."], "answer": 1 },
+    { "es": "Yo no diría que es malo, pero no me encanta.", "options": ["I wouldn't say it's bad, but I don't love it.", "I'd say it's bad, and I don't love it.", "I wouldn't say it's good, but I love it."], "answer": 0 },
+    { "es": "¿Tú qué dirías?", "options": ["What did you say? (to a friend)", "What would you say? (to a friend)", "What would I say?"], "answer": 1 },
+    { "es": "Yo diría que es una buena idea.", "options": ["I'd say it's a good idea.", "I wouldn't say it's a good idea."], "answer": 0 },
+    { "es": "Yo no diría que es el mejor café del barrio.", "options": ["I'd say it's the best café in the neighbourhood.", "I wouldn't say it's the best café in the neighbourhood.", "I said it's the best café in the neighbourhood."], "answer": 1 },
+    { "es": "Yo diría que Vale cocina mejor que yo.", "options": ["I'd say Vale cooks better than me.", "I'd say I cook better than Vale.", "I wouldn't say Vale cooks better than me."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *digo* or *diría* and type the whole sentence, softly: *Yo ___ que es más caro.*", "answer": "Yo diría que es más caro.", "accept": ["Diría que es más caro."], "why": "*Diría* is the soft \"I'd say\"." },
+    { "prompt": "Type in Spanish: I'd say Altamira is in a hurry.", "answer": "Yo diría que Altamira tiene prisa.", "accept": ["Diría que Altamira tiene prisa."], "why": "After *yo diría que*, the opinion keeps its plain verb: *tiene*." },
+    { "prompt": "Type in Spanish: I wouldn't say that.", "answer": "Yo no diría eso.", "accept": ["No diría eso."], "why": "Put *no* before *diría*." },
+    { "prompt": "Type in Spanish, asking a friend: What would you say?", "answer": "¿Tú qué dirías?", "accept": ["¿Qué dirías tú?", "¿Qué dirías?"], "why": "*Dirías* is the *tú* form of the same soft verb." },
+    { "prompt": "Make it negative: *Yo diría que es una buena idea.* Say: I wouldn't say it's a good idea.", "answer": "Yo no diría que es una buena idea.", "accept": ["No diría que es una buena idea."], "why": "Add *no*; the verb after stays plain." },
+    { "prompt": "Type in Spanish: I'd say Vale cooks better than me.", "answer": "Yo diría que Vale cocina mejor que yo.", "accept": ["Diría que Vale cocina mejor que yo."], "why": "Same frame, new opinion: *yo diría que* plus the plain verb." },
+    { "prompt": "Type in Spanish: I wouldn't say it's bad, but I don't love it.", "answer": "Yo no diría que es malo, pero no me encanta.", "accept": ["No diría que es malo, pero no me encanta."], "why": "*Pero* joins the two halves, as in English." }
+  ],
+  "pitfalls": [
+    { "wrong": "Yo diré que es más caro.", "right": "Yo diría que es más caro.", "why": "Almost. *Diré* means \"I will say\"; for the soft \"I'd say\" you need *diría*." },
+    { "wrong": "Yo diría es más caro.", "right": "Yo diría que es más caro.", "why": "Almost. A whole opinion after \"say\" needs *que*." },
+    { "wrong": "Yo no diría que lo.", "right": "Yo no diría eso.", "why": "Almost. To refer to what someone said, use *eso*." }
+  ],
+  "personal": "Give a gentle opinion about your day, your city or a café, starting with *Yo diría que*."
+}

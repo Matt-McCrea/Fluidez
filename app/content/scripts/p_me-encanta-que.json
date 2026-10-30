@@ -1,0 +1,43 @@
+{
+  "node": "p:me-encanta-que",
+  "hook": {
+    "line": "You can love a thing, like coffee, but you can also love what somebody does, like calling you. When the action belongs to someone else, Spanish adds a small piece.",
+    "es": "Me encanta que me llamen.",
+    "en": "I love it when people call me."
+  },
+  "examples": [
+    { "es": "Me gusta el silencio.", "en": "I like silence." },
+    { "es": "Me gusta que haya silencio.", "en": "I like it when it's quiet." },
+    { "es": "¿Te gusta que te regalen flores?", "en": "Do you like it when people give you flowers? (to a friend)" },
+    { "es": "Me encanta que me llamen.", "en": "I love it when people call me." },
+    { "es": "Me gusta que Vale cocine para todos.", "en": "I like it when Vale cooks for everyone." },
+    { "es": "Me gusta cocinar.", "en": "I like cooking." }
+  ],
+  "rule": "Liking a thing is easy: *me gusta el silencio*, a noun, no *que*.\n\nLiking what somebody else does needs *que* plus a new clause: *me gusta que haya silencio*, *me encanta que me llamen*. The verb after *que* takes the wish form (*haya*, *llamen*, *cocine*).\n\nIf you are the one doing it, skip *que* and use the infinitive: *me gusta cocinar*.\n\nSo the question is: whose action is it? Yours, an infinitive. Someone else's, *que* and the wish form. English hides the difference in \"I like it when\".",
+  "smallPrint": "Teachers call this the subjunctive after verbs of emotion and preference when the subject changes.",
+  "readAndPick": [
+    { "es": "Me gusta que haya silencio.", "options": ["I like silence.", "I like it when it's quiet.", "I liked the silence."], "answer": 1 },
+    { "es": "Me gusta el silencio.", "options": ["I like silence.", "I like it when it's quiet."], "answer": 0 },
+    { "es": "¿Te gusta que te regalen flores?", "options": ["Do you like giving flowers? (to a friend)", "Do you like flowers? (to a friend)", "Do you like it when people give you flowers? (to a friend)"], "answer": 2 },
+    { "es": "Me encanta que me llamen.", "options": ["I love calling people.", "I love it when people call me.", "I love their calls."], "answer": 1 },
+    { "es": "Me gusta cocinar.", "options": ["I like cooking.", "I like it when Vale cooks.", "I like the kitchen."], "answer": 0 },
+    { "es": "Me gusta que Vale cocine para todos.", "options": ["I love cooking for everyone.", "I like it when Vale cooks for everyone."], "answer": 1 },
+    { "es": "Me gusta que mi abuela me visite.", "options": ["I like visiting my grandmother.", "I like it when my grandmother visits me."], "answer": 1 },
+    { "es": "Me encanta bailar.", "options": ["I love dancing.", "I love it when they dance.", "I love it when she dances."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *llaman* or *llamen* and type the whole sentence: *Me encanta que me ___.*", "answer": "Me encanta que me llamen.", "accept": [], "why": "Someone else does the calling, so *que* and the wish form: *llamen*." },
+    { "prompt": "Pick *cocinar* or *que cocine* and type the whole sentence. You do the cooking: *Me gusta ___.*", "answer": "Me gusta cocinar.", "accept": [], "why": "When you do it yourself, the infinitive is enough." },
+    { "prompt": "Type in Spanish: I like it when it's quiet.", "answer": "Me gusta que haya silencio.", "accept": [], "why": "A new clause needs *que*, and *haya* is the wish form of *hay*." },
+    { "prompt": "Type in Spanish, asking a friend: Do you like it when people give you flowers?", "answer": "¿Te gusta que te regalen flores?", "accept": [], "why": "*Te* for a friend, then *que* and *regalen*." },
+    { "prompt": "Type in Spanish: I like it when Vale cooks for everyone.", "answer": "Me gusta que Vale cocine para todos.", "accept": [], "why": "Vale does the action, so *que* and *cocine*." },
+    { "prompt": "Make it about a thing, not an action: Say: I like silence.", "answer": "Me gusta el silencio.", "accept": [], "why": "A plain noun needs no *que*." },
+    { "prompt": "Type in Spanish: I like it when my grandmother visits me.", "answer": "Me gusta que mi abuela me visite.", "accept": [], "why": "Your grandmother does the visiting, so *que* and *visite*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Me gusta que me llaman.", "right": "Me gusta que me llamen.", "why": "Almost. After *me gusta que* the verb takes the wish form, *llamen*." },
+    { "wrong": "Me gusta que cocino.", "right": "Me gusta cocinar.", "why": "Almost. If you are the one cooking, use the infinitive, no *que*." },
+    { "wrong": "Me encanta que el silencio.", "right": "Me encanta el silencio.", "why": "Almost. A noun needs no *que*; keep *que* for a clause with its own verb." }
+  ],
+  "personal": "Say something other people do that you love, starting *Me encanta que*."
+}

@@ -1,0 +1,43 @@
+{
+  "node": "p:estar-a-favor-de",
+  "hook": {
+    "line": "At a neighbourhood meeting nobody wants a vague answer: are you for it or against it? Spanish gives you two short phrases for taking a side.",
+    "es": "Estoy en contra de que cierren la biblioteca.",
+    "en": "I'm against them closing the library."
+  },
+  "examples": [
+    { "es": "Estoy a favor del nuevo parque.", "en": "I'm in favour of the new park." },
+    { "es": "¿Estás a favor o en contra?", "en": "Are you for or against? (to a friend)" },
+    { "es": "Estoy en contra de que cierren la biblioteca.", "en": "I'm against them closing the library." },
+    { "es": "Mariana está a favor de hablar con Altamira.", "en": "Mariana is in favour of talking to Altamira." },
+    { "es": "Don Hernando está en contra de vender el café.", "en": "Don Hernando is against selling the café." },
+    { "es": "No estoy a favor de que cierren el café.", "en": "I'm not in favour of them closing the café." }
+  ],
+  "rule": "To take a side, use *estar* plus *a favor de* (for) or *en contra de* (against). After *de* you can put:\n\na noun: *a favor del parque* (*de* + *el* becomes *del*)\nan infinitive: *en contra de vender*\n*que* plus a clause: *en contra de que cierren*\n\nThat last verb takes the wish form (*cierren*, *abran*), because you are judging something that may or may not happen.\n\nEnglish says \"I'm for it\" with *be*, and so does Spanish: *estoy*, never *soy*. Keep the *de* before *que*.",
+  "smallPrint": "Teachers call this a prepositional phrase of position. With *que*, the verb that follows is in the subjunctive.",
+  "readAndPick": [
+    { "es": "Estoy a favor del nuevo parque.", "options": ["I'm against the new park.", "I'm in favour of the new park.", "I'm in favour of the old park."], "answer": 1 },
+    { "es": "Estoy en contra de que cierren la biblioteca.", "options": ["I'm in favour of them closing the library.", "I'm against them closing the library.", "I'm against closing the library myself."], "answer": 1 },
+    { "es": "¿Estás a favor o en contra?", "options": ["Are you for or against? (to a friend)", "Is she for or against?", "Am I for or against?"], "answer": 0 },
+    { "es": "Mariana está a favor de hablar con Altamira.", "options": ["Mariana is against talking to Altamira.", "Mariana is in favour of talking to Altamira.", "Mariana spoke to Altamira."], "answer": 1 },
+    { "es": "Don Hernando está en contra de vender el café.", "options": ["Don Hernando is in favour of selling the café.", "Don Hernando sold the café.", "Don Hernando is against selling the café."], "answer": 2 },
+    { "es": "No estoy a favor de que cierren el café.", "options": ["I'm not in favour of them closing the café.", "I'm in favour of them closing the café."], "answer": 0 },
+    { "es": "Estamos en contra de la basura en la calle.", "options": ["We're in favour of rubbish in the street.", "They're against rubbish in the street.", "We're against rubbish in the street."], "answer": 2 },
+    { "es": "Estoy a favor de que abran más temprano.", "options": ["I'm against them opening earlier.", "I'm in favour of them opening earlier."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *a favor* or *en contra* and type the whole sentence. You love the idea: *Estoy ___ del nuevo parque.*", "answer": "Estoy a favor del nuevo parque.", "accept": [], "why": "Loving the idea means you are for it: *a favor*." },
+    { "prompt": "Pick *cierran* or *cierren* and type the whole sentence: *Estoy en contra de que ___ la biblioteca.*", "answer": "Estoy en contra de que cierren la biblioteca.", "accept": [], "why": "After *de que* the verb takes the wish form: *cierren*." },
+    { "prompt": "Type in Spanish: I'm in favour of the new park.", "answer": "Estoy a favor del nuevo parque.", "accept": ["Estoy a favor del parque nuevo."], "why": "*A favor de* plus *el* contracts to *del*." },
+    { "prompt": "Type in Spanish, asking a friend: Are you for or against?", "answer": "¿Estás a favor o en contra?", "accept": ["¿Estás en contra o a favor?"], "why": "To a friend, *estás*: a side is a state you are in, so *estar*." },
+    { "prompt": "Type in Spanish: Don Hernando is against selling the café.", "answer": "Don Hernando está en contra de vender el café.", "accept": [], "why": "After *de*, an infinitive works: *vender*." },
+    { "prompt": "Make it negative: *Estoy a favor de que cierren el café.* Say: I'm not in favour of them closing the café.", "answer": "No estoy a favor de que cierren el café.", "accept": [], "why": "Put *no* before *estoy*; the wish form *cierren* stays." },
+    { "prompt": "Type in Spanish: Mariana is in favour of talking to Altamira.", "answer": "Mariana está a favor de hablar con Altamira.", "accept": [], "why": "Mariana is one person, so *está*, then *a favor de* and the infinitive." }
+  ],
+  "pitfalls": [
+    { "wrong": "Soy a favor del parque.", "right": "Estoy a favor del parque.", "why": "Almost. Taking a side is a position you are in, so Spanish uses *estar*." },
+    { "wrong": "Estoy en contra que cierren la biblioteca.", "right": "Estoy en contra de que cierren la biblioteca.", "why": "Almost. *En contra* always needs its *de*, even in front of *que*." },
+    { "wrong": "Estoy en contra de que cierran la biblioteca.", "right": "Estoy en contra de que cierren la biblioteca.", "why": "Almost. After *de que* the verb switches to the wish form, *cierren*." }
+  ],
+  "personal": "Think of one thing in your town you are for or against. Say it with *Estoy a favor de* or *Estoy en contra de*."
+}

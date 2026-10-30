@@ -1,0 +1,43 @@
+{
+  "node": "g:lo-adjective",
+  "hook": {
+    "line": "When the day has gone badly, Spanish speakers sort it out in one breath: the good part, the bad part, the part that matters. Three little words do it for you.",
+    "es": "Lo bueno es que tenemos clientes.",
+    "en": "The good thing is we have customers."
+  },
+  "examples": [
+    { "es": "Lo bueno es que tenemos clientes.", "en": "The good thing is we have customers." },
+    { "es": "Lo peor fue la espera.", "en": "The worst part was the wait." },
+    { "es": "Lo importante es seguir.", "en": "What matters is to keep going." },
+    { "es": "Lo malo es que no hay parqueadero.", "en": "The bad thing is that there's no car park." },
+    { "es": "Lo difícil es empezar.", "en": "The hard part is starting." },
+    { "es": "Lo mejor es el olor del café.", "en": "The best thing is the smell of the café." }
+  ],
+  "rule": "Put *lo* in front of an adjective and you get \"the ___ thing\" or \"the ___ part\": *lo bueno*, *lo malo*, *lo difícil*, *lo importante*. It also works with *mejor* and *peor*: *lo mejor*, *lo peor*.\n\nThen *es* (or *fue*, for something over):\n*Lo bueno es que tenemos clientes.*\n*Lo peor fue la espera.*\n\nThe *lo* never changes for gender or number, even if the thing is a *la espera*. Add *de* plus the topic at the end: *lo mejor es el olor del café*.\n\nEnglish needs extra words, \"the ___ thing\" or \"the ___ part\". Spanish just needs *lo*.",
+  "smallPrint": "Teachers call this the neuter article *lo* used with an adjective to make an abstract noun.",
+  "readAndPick": [
+    { "es": "Lo bueno es que tenemos clientes.", "options": ["The bad thing is we have customers.", "The good thing is we have customers.", "The good thing is we had customers."], "answer": 1 },
+    { "es": "Lo peor fue la espera.", "options": ["The best part was the wait.", "The worst part was the wait.", "The worst part is the wait."], "answer": 1 },
+    { "es": "Lo importante es seguir.", "options": ["What matters is to keep going.", "What matters was to keep going.", "What's hard is to keep going."], "answer": 0 },
+    { "es": "Lo malo es que no hay parqueadero.", "options": ["The bad thing is that there's no car park.", "The good thing is that there's a car park."], "answer": 0 },
+    { "es": "Lo difícil es empezar.", "options": ["The easy part is starting.", "The hard part is starting.", "The hard part was starting."], "answer": 1 },
+    { "es": "Lo mejor es el olor del café.", "options": ["The best thing is the smell of the café.", "The worst thing is the smell of the café."], "answer": 0 },
+    { "es": "Lo mejor fue conocer a Vale.", "options": ["The best part is meeting Vale.", "The best part was meeting Vale.", "The worst part was meeting Vale."], "answer": 1 },
+    { "es": "Lo peor es el tráfico de la ciudad.", "options": ["The worst thing is the traffic of the city.", "The best thing is the traffic of the city.", "The worst thing is the city of the traffic."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *bueno* or *malo* and type the whole sentence: *Lo ___ es que tenemos clientes.* (The good thing is we have customers.)", "answer": "Lo bueno es que tenemos clientes.", "accept": [], "why": "Having customers is good news, so *bueno*." },
+    { "prompt": "Pick *es* or *fue* and type the whole sentence. The wait is over: *Lo peor ___ la espera.*", "answer": "Lo peor fue la espera.", "accept": [], "why": "It already happened, so *fue*." },
+    { "prompt": "Type in Spanish: What matters is to keep going.", "answer": "Lo importante es seguir.", "accept": [], "why": "*Lo* plus the adjective, then *es* and the infinitive." },
+    { "prompt": "Type in Spanish: The bad thing is that there's no car park.", "answer": "Lo malo es que no hay parqueadero.", "accept": [], "why": "A full clause after the adjective needs *es que*." },
+    { "prompt": "Type in Spanish: The hard part is starting.", "answer": "Lo difícil es empezar.", "accept": [], "why": "*Difícil* does not change; only *lo* goes in front." },
+    { "prompt": "Type in Spanish: The best thing is the smell of the café.", "answer": "Lo mejor es el olor del café.", "accept": [], "why": "*De* plus the place names whose smell or traffic it is." },
+    { "prompt": "Type in Spanish: The worst thing is the traffic of the city.", "answer": "Lo peor es el tráfico de la ciudad.", "accept": [], "why": "*Lo peor*, then *es*, the thing, and *de* plus the place." }
+  ],
+  "pitfalls": [
+    { "wrong": "La buena es que tenemos clientes.", "right": "Lo bueno es que tenemos clientes.", "why": "Almost. For an idea rather than a noun, Spanish uses *lo*, not *la* or *el*." },
+    { "wrong": "Lo buena es la espera.", "right": "Lo bueno es la espera.", "why": "Almost. After *lo* the adjective always stays in its basic masculine form." },
+    { "wrong": "Lo malo es no hay parqueadero.", "right": "Lo malo es que no hay parqueadero.", "why": "Almost. A full clause after *es* needs *que*." }
+  ],
+  "personal": "Think about your last week. Say one thing that was good, using *Lo bueno es que* or *Lo mejor fue*."
+}
