@@ -1,0 +1,193 @@
+{
+  "id": "sc-u37-c",
+  "unit": "u37",
+  "title": "Mala línea",
+  "spare": true,
+  "brief": "You're Tomás, answering the café phone. The line is bad and the caller may be a stranger, so use usted. Say you can't hear well, take a message and check you understood it.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "¿Aló? ¿Hola? Casi no se oye.",
+      "npcEn": "Hello? Hello? It's hard to hear.",
+      "intent": "Say you can hardly hear him well and ask if he hears you.",
+      "accept": [
+        "No lo oigo bien. ¿Usted me escucha?",
+        "Lo oigo muy mal. ¿Me escucha?",
+        "Casi no lo oigo bien. ¿Me escucha usted?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\boigo\\b",
+          "flags": "i",
+          "label": "say you hear badly: no lo oigo bien"
+        }
+      ],
+      "focus": "p:ver-oir-bien-mal",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Ahora sí. Habla Jairo. ¿Se encuentra don Hernando?",
+      "npcEn": "Now I can. This is Jairo. Is don Hernando there?",
+      "intent": "Say he isn't in right now and ask if he wants to leave a message.",
+      "accept": [
+        "En este momento no se encuentra. ¿Quiere dejarle un mensaje?",
+        "Ahorita no se encuentra. ¿Quiere dejar un mensaje?",
+        "No se encuentra ahora. ¿Quiere dejarle un mensaje?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "no se encuentra",
+          "flags": "i",
+          "label": "he isn't in: no se encuentra"
+        }
+      ],
+      "focus": "c:no-se-encuentra",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Sí. Dígale que Marisol quiere hablar con Tomás, el nieto de Rosa.",
+      "npcEn": "Yes. Tell him Marisol wants to speak to Tomás, Rosa's grandson.",
+      "intent": "Say you are Tomás and ask what she wants to talk about.",
+      "accept": [
+        "Yo soy Tomás. ¿De qué quiere hablar?",
+        "Soy Tomás. ¿De qué quiere hablar conmigo?",
+        "Yo soy Tomás. ¿Para qué quiere hablar conmigo?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(de|para|sobre) qu[eé]",
+          "flags": "i",
+          "label": "ask about what: ¿De qué quiere hablar?"
+        }
+      ],
+      "focus": "g:questions-prepositions",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Es por lo del abuelo Herrera. Ella prefiere hablar en persona, en Taganga.",
+      "npcEn": "It's about the Herrera grandfather. She prefers to talk in person, in Taganga.",
+      "intent": "Check you understood: ask if she wants you to go to Taganga.",
+      "accept": [
+        "¿Quiere que vaya a Taganga?",
+        "Entonces, ¿ella quiere que yo vaya a Taganga?",
+        "O sea, ¿me pide que vaya a Taganga?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "que (yo )?vaya",
+          "flags": "i",
+          "label": "check what she asks: quiere que vaya"
+        }
+      ],
+      "focus": "g:reported-requests",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Exacto. Se va a cortar la llamada. Hasta pronto.",
+      "npcEn": "Exactly. The call is going to drop. See you soon.",
+      "intent": "Thank him and say goodbye.",
+      "accept": [
+        "Gracias, Jairo. Hasta pronto.",
+        "Muchas gracias por llamar. Hasta luego.",
+        "Gracias por el mensaje. Hasta pronto."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "gracias"
+          ]
+        }
+      ],
+      "focus": "c:eso-seria-todo",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:ahorita",
+    "c:alo",
+    "c:bien-y-tu",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:le-dejo-razon",
+    "c:no-se",
+    "c:no-se-encuentra",
+    "c:o-sea",
+    "c:oiga-oye",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:diminutives",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:reflexive-routine",
+    "g:reformulation",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-influence",
+    "g:subj-irregulars",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:abuelo",
+    "l:ahora",
+    "l:ahorita",
+    "l:bien",
+    "l:cortar",
+    "l:decir",
+    "l:dejar",
+    "l:encontrarse",
+    "l:escuchar",
+    "l:exacto",
+    "l:hablar",
+    "l:ir",
+    "l:irse",
+    "l:llamada",
+    "l:llamar",
+    "l:mal",
+    "l:mensaje",
+    "l:momento",
+    "l:nieto",
+    "l:oír",
+    "l:pedir",
+    "l:persona",
+    "l:preferir",
+    "l:pronto",
+    "l:querer",
+    "l:qué",
+    "l:ser",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:gracias-por",
+    "p:ir-a-venir-de-place",
+    "p:lo-de",
+    "p:lo-de-topic",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:podria-hablar-con",
+    "p:prefieres-x-o-y",
+    "p:preguntar-pedir",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:senor-don-article",
+    "p:time-sequence-basic",
+    "p:ver-oir-bien-mal"
+  ]
+}

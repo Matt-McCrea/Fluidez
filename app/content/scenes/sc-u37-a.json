@@ -1,0 +1,189 @@
+{
+  "id": "sc-u37-a",
+  "unit": "u37",
+  "title": "Para don Evaristo",
+  "spare": false,
+  "brief": "You're Tomás, calling a number in Santa Marta to reach a man who may know about the Herrera family. You don't know the woman who answers, so use usted. Ask for him, leave a message and check one detail.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenas tardes, habla Nelly.",
+      "npcEn": "Good afternoon, this is Nelly.",
+      "intent": "Greet her and politely ask if you could speak to don Evaristo.",
+      "accept": [
+        "Buenas tardes. ¿Podría hablar con don Evaristo, por favor?",
+        "¿Se encuentra don Evaristo?",
+        "Buenas tardes. Quería hablar con don Evaristo, por favor."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "podr[ií]a|encuentra|quer[ií]a",
+          "flags": "i",
+          "label": "ask politely: ¿Podría hablar con…?"
+        }
+      ],
+      "focus": "p:podria-hablar-con",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "En este momento no se encuentra. ¿De parte de quién?",
+      "npcEn": "He isn't in at the moment. Who's calling?",
+      "intent": "Say you are Tomás, Rosa's grandson, and that you are calling from Bogotá.",
+      "accept": [
+        "Soy Tomás, el nieto de Rosa. Llamo desde Bogotá.",
+        "De parte de Tomás, el nieto de Rosa. Llamo de Bogotá.",
+        "Mi nombre es Tomás. Soy el nieto de Rosa y llamo desde Bogotá."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "Tomás"
+        }
+      ],
+      "focus": "p:podria-hablar-con",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Ah, el nieto de doña Rosa. ¿Quiere dejar un mensaje?",
+      "npcEn": "Ah, doña Rosa's grandson. Do you want to leave a message?",
+      "intent": "Ask her to tell don Evaristo to call you back.",
+      "accept": [
+        "Sí, dígale que me llame, por favor.",
+        "Por favor, dígale a don Evaristo que me llame.",
+        "Sí. Dígale que me llame esta noche, por favor."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bque (me )?llame\\b",
+          "flags": "i",
+          "label": "pass on a request: dígale que me llame"
+        }
+      ],
+      "focus": "g:reported-requests",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Con gusto se lo digo.",
+      "npcEn": "Gladly, I'll tell him.",
+      "intent": "Politely ask if she knows whether he will be back tomorrow.",
+      "accept": [
+        "¿Sabe si vuelve mañana?",
+        "Y por casualidad, ¿sabe si don Evaristo viene mañana?",
+        "Una pregunta: ¿sabe si él regresa mañana?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsi\\b",
+          "flags": "i",
+          "label": "ask indirectly with si: ¿Sabe si…?"
+        }
+      ],
+      "focus": "g:indirect-questions",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Creo que sí, viene todos los días. ¿Algo más?",
+      "npcEn": "I think so, he comes every day. Anything else?",
+      "intent": "Say that is all, thank her and say goodbye.",
+      "accept": [
+        "No, eso sería todo. Muchas gracias.",
+        "Eso sería todo, gracias. Hasta luego.",
+        "No, nada más. Muchas gracias por su ayuda."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "gracias"
+          ]
+        }
+      ],
+      "focus": "c:eso-seria-todo",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:algo-mas",
+    "c:con-mucho-gusto",
+    "c:creo-que",
+    "c:de-parte-de-quien",
+    "c:eso-seria-todo",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:no-se",
+    "c:no-se-encuentra",
+    "c:por-favor",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:conditional",
+    "g:double-pronouns",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:reported-requests",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-relative",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:ayuda",
+    "l:buena",
+    "l:casualidad",
+    "l:creer",
+    "l:decir",
+    "l:dejar",
+    "l:día",
+    "l:encontrarse",
+    "l:favor",
+    "l:gusto",
+    "l:hablar",
+    "l:llamar",
+    "l:llamarse",
+    "l:mañana",
+    "l:mensaje",
+    "l:momento",
+    "l:nieto",
+    "l:noche",
+    "l:nombre",
+    "l:parte",
+    "l:poder",
+    "l:pregunta",
+    "l:querer",
+    "l:quién",
+    "l:regresar",
+    "l:saber",
+    "l:ser",
+    "l:tarde",
+    "l:venir",
+    "l:volver",
+    "p:demonstratives-basic",
+    "p:gracias-por",
+    "p:podria-hablar-con",
+    "p:por-casualidad",
+    "p:possessives-basic",
+    "p:queria-cortesia",
+    "p:request-ladder",
+    "p:saber-conocer",
+    "p:se-puede-me-dejas",
+    "p:senor-don-article",
+    "p:te-importaria",
+    "p:time-sequence-basic",
+    "p:todos-los-dias",
+    "p:veces-al"
+  ]
+}
