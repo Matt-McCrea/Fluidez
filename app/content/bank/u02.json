@@ -28695,5 +28695,627 @@
     "unit": "u02",
     "theme": "how much",
     "source": "gen"
+  },
+  {
+    "id": "u02-1290",
+    "es": "¿Trabajas mucho?",
+    "en": "Do you work a lot? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:trabajar",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:present-ar",
+      "p:quantifiers-basic"
+    ],
+    "kind": "question",
+    "unit": "u02",
+    "theme": "how much",
+    "source": "gen"
+  },
+  {
+    "id": "u02-1291",
+    "es": "¿Comes mucho?",
+    "en": "Do you eat a lot? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "l:comer",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:present-er-ir",
+      "p:quantifiers-basic"
+    ],
+    "kind": "question",
+    "unit": "u02",
+    "theme": "how much",
+    "source": "gen"
+  },
+  {
+    "id": "u02-1292",
+    "es": "¿Hablas mucho con Vale?",
+    "en": "Do you talk a lot with Vale? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:hablar",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:present-ar",
+      "p:quantifiers-basic"
+    ],
+    "kind": "question",
+    "unit": "u02",
+    "theme": "how much",
+    "source": "gen"
+  },
+  {
+    "id": "u02-1293",
+    "es": "¿Tomás trabaja mucho en el centro?",
+    "en": "Does Tomás work a lot downtown?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:centro",
+      "l:trabajar",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:present-ar",
+      "l:centro",
+      "p:quantifiers-basic"
+    ],
+    "kind": "question",
+    "unit": "u02",
+    "theme": "how much",
+    "source": "gen"
+  },
+  {
+    "id": "u02-1294",
+    "es": "¿Vale escribe mucho?",
+    "en": "Does Vale write a lot?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "l:escribir",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:present-er-ir",
+      "l:escribir",
+      "p:quantifiers-basic"
+    ],
+    "kind": "question",
+    "unit": "u02",
+    "theme": "how much",
+    "source": "gen"
+  },
+  {
+    "id": "u02-1295",
+    "es": "Simón habla mucho.",
+    "en": "Simón talks a lot.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:hablar",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:present-ar",
+      "p:quantifiers-basic"
+    ],
+    "kind": "statement",
+    "unit": "u02",
+    "theme": "how much",
+    "source": "gen"
+  },
+  {
+    "id": "u02-1296",
+    "es": "Mis amigos hablan mucho.",
+    "en": "My friends talk a lot.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:amigo",
+      "l:hablar",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:present-ar",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ],
+    "kind": "statement",
+    "unit": "u02",
+    "theme": "how much",
+    "source": "gen"
+  },
+  {
+    "id": "u02-1297",
+    "es": "¿Tu amigo vive en el centro?",
+    "en": "Does your friend live downtown? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:amigo",
+      "l:centro",
+      "l:vivir",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:present-er-ir",
+      "l:centro",
+      "l:vivir",
+      "p:possessives-basic"
+    ],
+    "kind": "question",
+    "unit": "u02",
+    "theme": "whose",
+    "source": "gen"
+  },
+  {
+    "id": "u02-1298",
+    "es": "¿Tus amigos hablan con Vale?",
+    "en": "Do your friends talk with Vale? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:amigo",
+      "l:hablar",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:present-ar",
+      "p:possessives-basic"
+    ],
+    "kind": "question",
+    "unit": "u02",
+    "theme": "whose",
+    "source": "gen"
+  },
+  {
+    "id": "u02-1299",
+    "es": "¿Mis amigos viven en tu barrio?",
+    "en": "Do my friends live in your neighbourhood? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "l:amigo",
+      "l:barrio",
+      "l:vivir",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:present-er-ir",
+      "l:barrio",
+      "l:vivir",
+      "p:possessives-basic"
+    ],
+    "kind": "question",
+    "unit": "u02",
+    "theme": "whose",
+    "source": "gen"
+  },
+  {
+    "id": "u02-1300",
+    "es": "Mi amigo trabaja en el hospital.",
+    "en": "My friend works at the hospital.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:amigo",
+      "l:hospital",
+      "l:trabajar",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:present-ar",
+      "l:hospital",
+      "p:possessives-basic"
+    ],
+    "kind": "statement",
+    "unit": "u02",
+    "theme": "whose",
+    "source": "gen"
+  },
+  {
+    "id": "u02-1301",
+    "es": "Tu amigo vive en mi barrio.",
+    "en": "Your friend lives in my neighbourhood. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "l:amigo",
+      "l:barrio",
+      "l:vivir",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:present-er-ir",
+      "l:barrio",
+      "l:vivir",
+      "p:possessives-basic"
+    ],
+    "kind": "statement",
+    "unit": "u02",
+    "theme": "whose",
+    "source": "gen"
+  },
+  {
+    "id": "u02-1302",
+    "es": "Tus amigos comen mucho en el centro.",
+    "en": "Your friends eat a lot downtown. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:amigo",
+      "l:centro",
+      "l:comer",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:present-er-ir",
+      "l:centro",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ],
+    "kind": "statement",
+    "unit": "u02",
+    "theme": "whose",
+    "source": "gen"
+  },
+  {
+    "id": "u02-1303",
+    "es": "Mi amigo no escribe mucho.",
+    "en": "My friend doesn't write much.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "l:amigo",
+      "l:escribir",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:present-er-ir",
+      "l:escribir",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ],
+    "kind": "statement",
+    "unit": "u02",
+    "theme": "whose",
+    "source": "gen"
+  },
+  {
+    "id": "u02-1304",
+    "es": "¿Tu amigo habla bien?",
+    "en": "Does your friend speak well? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:bien-y-tu",
+      "g:present-ar",
+      "l:amigo",
+      "l:bien",
+      "l:hablar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "c:bien-y-tu",
+      "g:present-ar",
+      "p:bien-mal-vs-bueno-malo",
+      "p:possessives-basic"
+    ],
+    "kind": "question",
+    "unit": "u02",
+    "theme": "well and good",
+    "source": "gen"
+  },
+  {
+    "id": "u02-1305",
+    "es": "¿Vale cocina bien?",
+    "en": "Does Vale cook well?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:bien-y-tu",
+      "g:present-ar",
+      "l:bien",
+      "l:cocinar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
+    ],
+    "targets": [
+      "c:bien-y-tu",
+      "g:present-ar",
+      "p:bien-mal-vs-bueno-malo"
+    ],
+    "kind": "question",
+    "unit": "u02",
+    "theme": "well and good",
+    "source": "gen"
+  },
+  {
+    "id": "u02-1306",
+    "es": "¿Escribes bien en inglés?",
+    "en": "Do you write well in English? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:bien-y-tu",
+      "g:present-er-ir",
+      "l:bien",
+      "l:escribir",
+      "l:inglés",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
+    ],
+    "targets": [
+      "c:bien-y-tu",
+      "g:present-er-ir",
+      "l:escribir",
+      "p:bien-mal-vs-bueno-malo"
+    ],
+    "kind": "question",
+    "unit": "u02",
+    "theme": "well and good",
+    "source": "gen"
+  },
+  {
+    "id": "u02-1307",
+    "es": "¿Tu jefe está bien?",
+    "en": "Is your boss well? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:bien-y-tu",
+      "g:estar-location-states",
+      "l:bien",
+      "l:estar",
+      "l:jefe",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "c:bien-y-tu",
+      "g:estar-location-states",
+      "l:jefe",
+      "p:bien-mal-vs-bueno-malo",
+      "p:possessives-basic"
+    ],
+    "kind": "question",
+    "unit": "u02",
+    "theme": "well and good",
+    "source": "gen"
+  },
+  {
+    "id": "u02-1308",
+    "es": "¿Tu hermana está mal?",
+    "en": "Is your sister unwell? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "l:estar",
+      "l:hermana",
+      "l:mal",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:estar-location-states",
+      "p:bien-mal-vs-bueno-malo",
+      "p:possessives-basic"
+    ],
+    "kind": "question",
+    "unit": "u02",
+    "theme": "well and good",
+    "source": "gen"
+  },
+  {
+    "id": "u02-1309",
+    "es": "¿Tu amigo es bueno?",
+    "en": "Is your friend good? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:amigo",
+      "l:bueno",
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "p:bien-mal-vs-bueno-malo",
+      "p:possessives-basic"
+    ],
+    "kind": "question",
+    "unit": "u02",
+    "theme": "well and good",
+    "source": "gen"
+  },
+  {
+    "id": "u02-1310",
+    "es": "Tomás escribe mal en español.",
+    "en": "Tomás writes badly in Spanish.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "l:escribir",
+      "l:español",
+      "l:mal",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
+    ],
+    "targets": [
+      "g:present-er-ir",
+      "l:escribir",
+      "p:bien-mal-vs-bueno-malo"
+    ],
+    "kind": "statement",
+    "unit": "u02",
+    "theme": "well and good",
+    "source": "gen"
+  },
+  {
+    "id": "u02-1311",
+    "es": "Don Hernando no está mal.",
+    "en": "Don Hernando is not doing badly.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "l:estar",
+      "l:mal",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:senor-don-article"
+    ],
+    "targets": [
+      "g:estar-location-states",
+      "p:bien-mal-vs-bueno-malo",
+      "p:senor-don-article"
+    ],
+    "kind": "statement",
+    "unit": "u02",
+    "theme": "well and good",
+    "source": "gen"
+  },
+  {
+    "id": "u02-1312",
+    "es": "Es un libro muy malo.",
+    "en": "It is a very bad book.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:libro",
+      "l:malo",
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "l:libro",
+      "p:bien-mal-vs-bueno-malo",
+      "p:quantifiers-basic"
+    ],
+    "kind": "statement",
+    "unit": "u02",
+    "theme": "well and good",
+    "source": "gen"
+  },
+  {
+    "id": "u02-1313",
+    "es": "El café de Vale es muy bueno.",
+    "en": "Vale's coffee is very good.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:bueno",
+      "l:café",
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "p:bien-mal-vs-bueno-malo",
+      "p:quantifiers-basic"
+    ],
+    "kind": "statement",
+    "unit": "u02",
+    "theme": "well and good",
+    "source": "gen"
+  },
+  {
+    "id": "u02-1314",
+    "es": "Mi jefe habla muy bien.",
+    "en": "My boss speaks very well.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:bien-y-tu",
+      "g:present-ar",
+      "l:bien",
+      "l:hablar",
+      "l:jefe",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "c:bien-y-tu",
+      "g:present-ar",
+      "l:jefe",
+      "p:bien-mal-vs-bueno-malo",
+      "p:possessives-basic"
+    ],
+    "kind": "statement",
+    "unit": "u02",
+    "theme": "well and good",
+    "source": "gen"
+  },
+  {
+    "id": "u02-1315",
+    "es": "Mi computadora funciona mal.",
+    "en": "My computer works badly.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:computadora",
+      "l:funcionar",
+      "l:mal",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:present-ar",
+      "l:computadora",
+      "p:bien-mal-vs-bueno-malo",
+      "p:possessives-basic"
+    ],
+    "kind": "statement",
+    "unit": "u02",
+    "theme": "well and good",
+    "source": "gen"
   }
 ]
