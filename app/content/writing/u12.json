@@ -419,7 +419,7 @@
     "constraints": [
       {
         "type": "regex",
-        "pattern": "\\b(más|menos) \\w+ que\\b|\\b(más|menos) que\\b",
+        "pattern": "\\b(más|menos) \\S+ que\\b|\\b(más|menos) que\\b",
         "label": "compare with más or menos ... que"
       },
       {
@@ -618,6 +618,236 @@
       "l:rápido",
       "l:ver",
       "p:es-tiene-lleva"
+    ]
+  },
+  {
+    "id": "w-u12-16",
+    "unit": "u12",
+    "prompt": "Don Hernando, whom you call usted, asks why you were late to the café this morning. Answer in two or three short sentences: what the weather was like and what you did in the end.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "anyVerbInTense",
+        "tense": "imperfecto",
+        "label": "use the imperfect for the weather"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "preterito",
+        "label": "use the preterite for what you did"
+      },
+      {
+        "type": "containsWord",
+        "word": "final",
+        "label": "use al final"
+      }
+    ],
+    "model": "Llovía mucho y hacía frío. Al final tomé un taxi.",
+    "focus": "g:pret-vs-imperfect",
+    "requires": [
+      "c:al-final",
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:preterite-ar",
+      "l:final",
+      "l:frío",
+      "l:hacer",
+      "l:llover",
+      "l:taxi",
+      "l:tomar",
+      "p:hace-frio",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u12-17",
+    "unit": "u12",
+    "prompt": "Your brother wasn't at your cousin's birthday. Text him two short sentences: how the party was (use the imperfect) and one thing that happened (use the preterite).",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "anyVerbInTense",
+        "tense": "imperfecto",
+        "label": "use the imperfect for how the party was"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "preterito",
+        "label": "use the preterite for what happened"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "La fiesta era muy bonita. Mi tío me dio un regalo.",
+    "focus": "g:pret-vs-imperfect",
+    "requires": [
+      "c:era",
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:preterite-irregular-strong",
+      "g:ser-identity",
+      "l:bonito",
+      "l:dar",
+      "l:fiesta",
+      "l:regalo",
+      "l:ser",
+      "l:tío",
+      "p:me-te-nos-objects",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u12-18",
+    "unit": "u12",
+    "prompt": "Your friend Mariana asks which is better, Vale's café or Rosa's café. Reply with two short sentences comparing them.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(más|menos) \\S+ que\\b",
+        "label": "compare with más or menos ... que"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "El café de Rosa es más pequeño que el café de Vale. Pero es más bonito.",
+    "focus": "g:comparatives",
+    "requires": [
+      "g:comparatives",
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:bonito",
+      "l:café",
+      "l:pequeño",
+      "l:ser"
+    ]
+  },
+  {
+    "id": "w-u12-19",
+    "unit": "u12",
+    "prompt": "A friend your age asks if the book or the movie was better. Reply in two short sentences: say what the movie was like (imperfect) and compare it with the book.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(más|menos) \\S+ que\\b|\\bmejor que\\b|\\bpeor que\\b",
+        "label": "compare with más/menos ... que or mejor/peor que"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "imperfecto",
+        "label": "use the imperfect for what the movie was like"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "La película era más corta que el libro. Pero fue mejor.",
+    "focus": "g:comparatives",
+    "requires": [
+      "c:era",
+      "g:adjective-agreement",
+      "g:comparatives",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:preterite-ser-ir-hacer",
+      "g:ser-identity",
+      "l:corto",
+      "l:libro",
+      "l:mejor",
+      "l:película",
+      "l:ser"
+    ]
+  },
+  {
+    "id": "w-u12-20",
+    "unit": "u12",
+    "prompt": "Your friend Vale asks why you didn't hear the phone. Text her two short sentences: what you were doing (use estaba + -ando/-iendo) and what happened then (preterite).",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bestaba \\w+(ando|iendo|yendo)\\b",
+        "label": "say what you were doing: estaba + -ando/-iendo"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "preterito",
+        "label": "use the preterite for what happened"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Estaba comiendo en la cocina. De repente llegó mi hermano.",
+    "focus": "g:imperfect-progressive",
+    "requires": [
+      "c:de-repente",
+      "g:gender-articles",
+      "g:imperfect-progressive",
+      "g:imperfect-states",
+      "g:preterite-ar",
+      "l:cocina",
+      "l:comer",
+      "l:estar",
+      "l:hermano",
+      "l:llegar",
+      "l:repente",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u12-21",
+    "unit": "u12",
+    "prompt": "Tell your mother (tú) about last night's storm in two short sentences: what it was doing when you got home, and what you did.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bestaba \\w+(ando|iendo|yendo)\\b",
+        "label": "say what was going on: estaba + -ando/-iendo"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "preterito",
+        "label": "use the preterite for what you did"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Estaba lloviendo mucho cuando llegué a casa. Entré rápido.",
+    "focus": "g:imperfect-progressive",
+    "requires": [
+      "g:imperfect-progressive",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "g:preterite-spelling-stem",
+      "l:casa",
+      "l:entrar",
+      "l:estar",
+      "l:llegar",
+      "l:llover",
+      "l:rápido",
+      "p:cuando-basic",
+      "p:hace-frio",
+      "p:quantifiers-basic"
     ]
   }
 ]
