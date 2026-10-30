@@ -30708,5 +30708,159 @@
     "unit": "u13",
     "theme": "questions on the move",
     "source": "gen"
+  },
+  {
+    "id": "u13-1310",
+    "es": "¿Dónde bajo?\nVen, Tomás, baja aquí.",
+    "en": "Where do I get off?\nCome on, Tomás, get off here.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:commands-tu",
+      "g:questions",
+      "l:aquí",
+      "l:bajar",
+      "l:dónde",
+      "l:venir",
+      "p:aqui-ahi-alla"
+    ],
+    "targets": [
+      "g:commands-tu"
+    ],
+    "kind": "question",
+    "unit": "u13",
+    "theme": "asking the way, commands",
+    "source": "gen"
+  },
+  {
+    "id": "u13-1311",
+    "es": "¿Me dejas en el parque?\nTen el pasaje, Tomás.",
+    "en": "Can you drop me at the park?\nHold on to your fare, Tomás.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:commands-tu",
+      "g:gender-articles",
+      "g:present-ar",
+      "l:dejar",
+      "l:parque",
+      "l:pasaje",
+      "l:tener",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:commands-tu"
+    ],
+    "kind": "question",
+    "unit": "u13",
+    "theme": "asking the way, commands",
+    "source": "gen"
+  },
+  {
+    "id": "u13-1312",
+    "es": "¿Dónde espero?\nSal aquí y espera.",
+    "en": "Where do I wait?\nGo out here and wait.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:commands-tu",
+      "g:present-ar",
+      "g:questions",
+      "l:aquí",
+      "l:dónde",
+      "l:esperar",
+      "l:salir",
+      "p:aqui-ahi-alla"
+    ],
+    "targets": [
+      "g:commands-tu"
+    ],
+    "kind": "question",
+    "unit": "u13",
+    "theme": "asking the way, commands",
+    "source": "gen"
+  },
+  {
+    "id": "u13-1313",
+    "es": "¿Con permiso, dónde pago?\nPon la tarjeta aquí.",
+    "en": "Excuse me, where do I pay?\nPut your card here.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:perdon-disculpe",
+      "g:commands-tu",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:questions",
+      "l:aquí",
+      "l:dónde",
+      "l:pagar",
+      "l:permiso",
+      "l:poner",
+      "l:tarjeta",
+      "p:aqui-ahi-alla"
+    ],
+    "targets": [
+      "g:commands-tu"
+    ],
+    "kind": "question",
+    "unit": "u13",
+    "theme": "asking the way, commands",
+    "source": "gen"
+  },
+  {
+    "id": "u13-1314",
+    "es": "¿Oye, Vale, dónde subo?\nVen, sube aquí.",
+    "en": "Hey, Vale, where do I get on?\nCome on, get on here.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:oiga-oye",
+      "g:commands-tu",
+      "g:present-er-ir",
+      "g:questions",
+      "l:aquí",
+      "l:dónde",
+      "l:oír",
+      "l:subir",
+      "l:venir",
+      "p:aqui-ahi-alla"
+    ],
+    "targets": [
+      "g:commands-tu"
+    ],
+    "kind": "question",
+    "unit": "u13",
+    "theme": "asking the way, commands",
+    "source": "gen"
+  },
+  {
+    "id": "u13-1315",
+    "es": "¿Con permiso, Tomás, dónde dobla el bus?\nVen, dobla aquí.",
+    "en": "Excuse me, Tomás, where does the bus turn?\nCome on, it turns here.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:perdon-disculpe",
+      "g:commands-tu",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:questions",
+      "l:aquí",
+      "l:bus",
+      "l:doblar",
+      "l:dónde",
+      "l:permiso",
+      "l:venir",
+      "p:aqui-ahi-alla",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:commands-tu"
+    ],
+    "kind": "question",
+    "unit": "u13",
+    "theme": "asking the way, commands",
+    "source": "gen"
   }
 ]
