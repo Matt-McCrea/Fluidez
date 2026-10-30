@@ -1,0 +1,305 @@
+{
+  "id": "ch083",
+  "unit": "u28",
+  "title": "Hotel Esquina Real",
+  "text": "A las siete y diez, alguien golpeó la ventana del café con una cuchara. Era doña Gloria, con un papel en la otra mano.\nGloria: ¡Abran, que esto no puede esperar!\nGloria entró y pegó el papel en la puerta, por dentro.\n«Hoteles Altamira invita a los vecinos de La Candelaria a conocer el Hotel Esquina Real. Jueves, seis de la tarde, en la parroquia».\nAbajo había una imagen: un hotel de ocho pisos, de esquina a esquina. Donde estaba el café, ahora había un lobby con plantas y un piano.\nTomás: Nos pusieron un piano.\nHernando: Rosa era más real que ese piano.\nSimón: ¡Esquina Real! ¡Esquina Real!\nVale: Simón, tú no vas el jueves.\nA las nueve, medio barrio estaba en el café.\nMarta: Yo creo que un hotel trae trabajo. Mi nieto busca empleo hace un año, y es un muchacho muy trabajador.\nSimón: ¡No creo! ¡No creo!\nGloria: ¿Trabajo? Mi panadería tiene treinta años en esta cuadra. No creo que esos turistas compren ni una almojábana. Para mí, es el fin.\nMarta: Los turistas también tienen hambre, Gloria.\nGloria: Sí, pero comen en el hotel, mija.\nHernando: Y no creo que a Altamira le importe su nieto, Marta. Le importa su plata.\nMarta: Usted le tiene odio a Altamira, Hernando. Y el odio no lo deja pensar.\nHernando: No es odio. Es otro sentimiento. Yo quiero esta cuadra, y usted también.\nMariana llegó sin aire.\nMariana: Altamira visitó a seis vecinos, uno por uno. A unos les ofreció plata, y a otros les habló de problemas con el arriendo. Eso se llama presión.\nMarta: A mí también me visitaron dos señores de traje.\nGloria le sirvió un tinto a Marta, sin cobrar.\nGloria: Tranquila, mija. No está sola.\nVale: No creo que Altamira quiera vecinos en esa reunión. Quiere aplausos.\nTomás: Entonces vamos todos.\nVale: ¿Vas a hablar? ¿Delante de toda la cuadra?\nTomás: No creo que pueda, la verdad.\nGloria: Mijo, usted va a hablar. Y fuerte.\nTomás miró la imagen otra vez. Abajo, más pequeño, decía: «Ricardo Altamira presenta el hotel en persona».",
+  "gloss": [
+    {
+      "es": "parroquia",
+      "en": "parish hall"
+    },
+    {
+      "es": "lobby",
+      "en": "hotel lobby"
+    },
+    {
+      "es": "¡Abran, que esto no puede esperar!",
+      "en": "Open up, this can't wait!"
+    },
+    {
+      "es": "de esquina a esquina",
+      "en": "from corner to corner"
+    },
+    {
+      "es": "Nos pusieron un piano.",
+      "en": "They gave us a piano."
+    },
+    {
+      "es": "Mi nieto busca empleo hace un año",
+      "en": "My grandson has been looking for work for a year"
+    },
+    {
+      "es": "No creo que esos turistas compren ni una almojábana.",
+      "en": "I don't think those tourists will buy a single almojábana."
+    },
+    {
+      "es": "no creo que a Altamira le importe su nieto",
+      "en": "I don't think Altamira cares about your grandson"
+    },
+    {
+      "es": "Usted le tiene odio a Altamira",
+      "en": "You hate Altamira"
+    },
+    {
+      "es": "el odio no lo deja pensar",
+      "en": "hatred won't let you think"
+    },
+    {
+      "es": "sin aire",
+      "en": "out of breath"
+    },
+    {
+      "es": "Eso se llama presión.",
+      "en": "That's called pressure."
+    },
+    {
+      "es": "sin cobrar",
+      "en": "without charging"
+    },
+    {
+      "es": "No creo que pueda, la verdad.",
+      "en": "I don't think I can, to be honest."
+    },
+    {
+      "es": "más pequeño",
+      "en": "in smaller letters"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does the poster announce?",
+      "options": [
+        "A street party on Thursday",
+        "A presentation of Altamira's hotel for the neighbours",
+        "A new bakery on the block",
+        "A sale at Marta's shop"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What has replaced the café in the picture of the hotel?",
+      "options": [
+        "A swimming pool",
+        "A car park",
+        "A lobby with plants and a piano",
+        "A souvenir shop"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Why does Marta think the hotel might be good?",
+      "options": [
+        "She wants to sell her shop",
+        "Her grandson has been looking for work for a year",
+        "She likes tourists",
+        "Altamira is her friend"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Qué piensa Gloria del hotel?",
+      "options": [
+        "Que es el fin de su panadería",
+        "Que trae trabajo",
+        "Que es muy bonito",
+        "Que es bueno para los turistas"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What has Mariana found out?",
+      "options": [
+        "Altamira has visited six neighbours one by one, offering money to some and hinting at rent problems to others",
+        "Altamira has sold the hotel",
+        "Marta works for Altamira",
+        "The meeting has been cancelled"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What does Gloria use to knock on the café window?",
+      "options": [
+        "A key",
+        "A spoon",
+        "Her umbrella",
+        "A loaf of bread"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "How many floors does the hotel in the picture have?",
+      "options": [
+        "Four",
+        "Six",
+        "Eight",
+        "Twelve"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "What does Gloria do for Marta when she admits Altamira's men visited her?",
+      "options": [
+        "She serves her a tinto, without charging",
+        "She gives her a glass of water",
+        "She gives her a copy of the poster",
+        "She walks her home"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Altamira will present the Hotel Esquina Real himself on Thursday, and Gloria has decided that Tomás is going to speak, loudly. Tomorrow the whole neighbourhood fills the parish hall.",
+  "requires": [
+    "c:a-mi-tambien",
+    "c:bien-y-tu",
+    "c:creo-que",
+    "c:entonces-bueno",
+    "c:era",
+    "c:la-verdad",
+    "c:quiero",
+    "c:se-llama",
+    "c:tienes",
+    "c:tranquilo",
+    "c:voy-vas",
+    "g:adjective-agreement",
+    "g:commands-usted",
+    "g:comparatives",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:hace-ago",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-spelling-stem",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "p:cerca-de",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:indefinites-basic",
+    "p:llevar-traer",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:para-mi",
+    "p:personal-a",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:tambien-tampoco",
+    "p:telling-time",
+    "p:tener-anos",
+    "p:tener-hambre"
+  ],
+  "lexemes": [
+    "l:abajo",
+    "l:abrir",
+    "l:ahora",
+    "l:aire",
+    "l:almojábana",
+    "l:aplauso",
+    "l:arriendo",
+    "l:año",
+    "l:barrio",
+    "l:buscar",
+    "l:café",
+    "l:cobrar",
+    "l:comer",
+    "l:comprar",
+    "l:conocer",
+    "l:creer",
+    "l:cuadra",
+    "l:cuchara",
+    "l:decir",
+    "l:dejar",
+    "l:delante",
+    "l:dentro",
+    "l:empleo",
+    "l:entrar",
+    "l:esperar",
+    "l:esquina",
+    "l:estar",
+    "l:fin",
+    "l:fuerte",
+    "l:golpear",
+    "l:hablar",
+    "l:hacer",
+    "l:hambre",
+    "l:hotel",
+    "l:imagen",
+    "l:importar",
+    "l:invitar",
+    "l:ir",
+    "l:jueves",
+    "l:llamarse",
+    "l:llegar",
+    "l:mano",
+    "l:mija",
+    "l:mijo",
+    "l:mirar",
+    "l:muchacho",
+    "l:nieto",
+    "l:odio",
+    "l:ofrecer",
+    "l:panadería",
+    "l:papel",
+    "l:pegar",
+    "l:pensar",
+    "l:pequeño",
+    "l:persona",
+    "l:piano",
+    "l:piso",
+    "l:planta",
+    "l:plata",
+    "l:poder",
+    "l:poner",
+    "l:presentar",
+    "l:presión",
+    "l:problema",
+    "l:puerta",
+    "l:querer",
+    "l:real",
+    "l:reunión",
+    "l:sentimiento",
+    "l:ser",
+    "l:servir",
+    "l:señor",
+    "l:tarde",
+    "l:tener",
+    "l:tinto",
+    "l:trabajador",
+    "l:trabajar",
+    "l:trabajo",
+    "l:traer",
+    "l:traje",
+    "l:tranquilo",
+    "l:turista",
+    "l:vecino",
+    "l:ventana",
+    "l:verdad",
+    "l:vez",
+    "l:visitar"
+  ]
+}

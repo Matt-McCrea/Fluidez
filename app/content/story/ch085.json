@@ -1,0 +1,316 @@
+{
+  "id": "ch085",
+  "unit": "u28",
+  "title": "Cien años de historia",
+  "text": "Tomás sujetó el micro con las dos manos. El micro hizo un sonido horrible, y los niños de la primera fila gritaron.\nTomás: Perdón. Hola a todos.\nSu voz salió muy baja.\nGloria: ¡Más fuerte, mijo! ¡Es importante que todos lo oigan!\nVale: Tranquilo. Habla despacio, como con los clientes.\nTomás: Me llamo Tomás Herrera, y soy el nieto de Rosa. Cuando llegué a Bogotá, tenía una maleta y un plan: vender el café en treinta días y volver a Toronto.\nTomás: El señor Altamira dice que lo mejor es vender. Puede ser. Y es una pena que en este barrio haya basura y ladrones. Pero no creo que un hotel sea la solución para todo.\nTomás: Las piedras de esa esquina tienen cien años. Ahí Hernando tomó su primer tinto hace cuarenta años. Ahí Vale hace el mejor pan de Bogotá. Y ahí mi abuela pagó la deuda de su hermano, tinto por tinto. No creo que sea justo que una esquina con cien años de historia termine como el lobby de un hotel. Con un piano que nadie toca.\nNadie se movió. Entonces habló Simón.\nSimón: ¡Y fuerte! ¡Y fuerte!\nToda la parroquia se rió, y después aplaudió.\nGloria: ¡Votemos! ¿Quién quiere el hotel?\nDoce manos subieron. Marta tenía la mano medio levantada, pero la bajó.\nMarta: Mi nieto puede estudiar en otra parte. Yo no tengo otra cuadra.\nGloria: ¿Y quién quiere la esquina de Rosa?\nEsta vez hubo cien manos arriba, o más. Debajo de la silla, Vale sujetó la mano de Tomás, y no la soltó.\nAltamira sonrió.\nAltamira: Muy bonito, señor Herrera. Pero una parroquia no es el lugar adecuado para decidir el futuro de la ciudad. Les anuncio que la alcaldía ya firmó los permisos del hotel.\nMariana: ¿Ya? ¿Tan rápido?\nEn la calle, el muchacho le dio un sobre a Tomás. En el sobre había un papel con un número: $1.500.000.000. Y debajo: «Para comprar su mitad. Tiene hasta el lunes».\nVale leyó el número dos veces. Tomás esperó una palabra de ella, pero Vale no dijo nada.",
+  "gloss": [
+    {
+      "es": "parroquia",
+      "en": "parish hall"
+    },
+    {
+      "es": "micro",
+      "en": "mic"
+    },
+    {
+      "es": "lobby",
+      "en": "hotel lobby"
+    },
+    {
+      "es": "aplaudió",
+      "en": "applauded"
+    },
+    {
+      "es": "Su voz salió muy baja.",
+      "en": "His voice came out very quiet."
+    },
+    {
+      "es": "¡Es importante que todos lo oigan!",
+      "en": "It's important that everyone hears you!"
+    },
+    {
+      "es": "lo mejor es vender",
+      "en": "the best thing is to sell"
+    },
+    {
+      "es": "es una pena que en este barrio haya basura y ladrones",
+      "en": "it's a shame there's rubbish and thieves in this neighbourhood"
+    },
+    {
+      "es": "no creo que un hotel sea la solución para todo",
+      "en": "I don't think a hotel is the answer to everything"
+    },
+    {
+      "es": "tinto por tinto",
+      "en": "one coffee at a time"
+    },
+    {
+      "es": "No creo que sea justo que una esquina con cien años de historia termine como el lobby de un hotel.",
+      "en": "I don't think it's fair that a corner with a hundred years of history ends up as a hotel lobby."
+    },
+    {
+      "es": "medio levantada",
+      "en": "half raised"
+    },
+    {
+      "es": "y no la soltó",
+      "en": "and didn't let go"
+    },
+    {
+      "es": "el lugar adecuado",
+      "en": "the right place"
+    },
+    {
+      "es": "la alcaldía ya firmó los permisos",
+      "en": "the mayor's office has already signed the permits"
+    },
+    {
+      "es": "Para comprar su mitad",
+      "en": "To buy your half"
+    },
+    {
+      "es": "Tiene hasta el lunes",
+      "en": "You have until Monday"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What was Tomás's plan when he arrived in Bogotá a year ago?",
+      "options": [
+        "To open a hotel",
+        "To sell the café in thirty days and go back to Toronto",
+        "To find Joaquín",
+        "To learn to bake"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What is the main point of Tomás's speech?",
+      "options": [
+        "The hotel will bring too many tourists",
+        "It isn't fair for a corner with a hundred years of history to become a hotel lobby",
+        "Altamira should pay more",
+        "The neighbours should sell quickly"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why does Marta lower her hand?",
+      "options": [
+        "Gloria tells her to",
+        "She decides her grandson can study somewhere else, but she has no other block",
+        "Altamira looks at her",
+        "She didn't understand the question"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Qué anuncia Altamira después de la votación?",
+      "options": [
+        "Que la alcaldía ya firmó los permisos del hotel",
+        "Que no va a construir el hotel",
+        "Que compra la panadería",
+        "Que Joaquín vive en Bogotá"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What does Simón shout after the speech?",
+      "options": [
+        "¡Esquina Real!",
+        "¡Y fuerte!",
+        "¡No creo!",
+        "¡Tinto por tinto!"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "How many people vote for the hotel?",
+      "options": [
+        "None",
+        "Twelve",
+        "Fifty",
+        "More than a hundred"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What is the deadline on Altamira's offer?",
+      "options": [
+        "Friday",
+        "Sunday",
+        "Monday",
+        "Six months"
+      ],
+      "answer": 2
+    }
+  ],
+  "hook": "Altamira offers $1.500.000.000 for Tomás's half, the permits are already signed, and Vale has said nothing. Tomorrow they finally talk about the money, and they don't agree.",
+  "requires": [
+    "c:creo-que",
+    "c:entonces-bueno",
+    "c:hasta-el-lunes",
+    "c:lo-mejor-es",
+    "c:me-llamo",
+    "c:perdon-disculpe",
+    "c:puede-ser",
+    "c:tengo",
+    "c:tienes",
+    "c:tranquilo",
+    "g:adjective-agreement",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:hace-ago",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-irregulars",
+    "g:subj-value",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:cuando-basic",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:numbers-un-una",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:senor-don-article",
+    "p:tener-anos",
+    "p:time-sequence-basic"
+  ],
+  "lexemes": [
+    "l:abuela",
+    "l:adecuado",
+    "l:ahí",
+    "l:alcaldía",
+    "l:anunciar",
+    "l:aplaudir",
+    "l:arriba",
+    "l:año",
+    "l:bajar",
+    "l:bajo",
+    "l:barrio",
+    "l:basura",
+    "l:bonito",
+    "l:café",
+    "l:calle",
+    "l:ciudad",
+    "l:cliente",
+    "l:comprar",
+    "l:creer",
+    "l:cuadra",
+    "l:dar",
+    "l:debajo",
+    "l:decidir",
+    "l:decir",
+    "l:despacio",
+    "l:después",
+    "l:deuda",
+    "l:día",
+    "l:esperar",
+    "l:esquina",
+    "l:estudiar",
+    "l:fila",
+    "l:firmar",
+    "l:fuerte",
+    "l:futuro",
+    "l:gritar",
+    "l:hablar",
+    "l:hacer",
+    "l:hermano",
+    "l:historia",
+    "l:horrible",
+    "l:hotel",
+    "l:importante",
+    "l:justo",
+    "l:ladrón",
+    "l:leer",
+    "l:levantarse",
+    "l:llamarse",
+    "l:llegar",
+    "l:lugar",
+    "l:lunes",
+    "l:maleta",
+    "l:mano",
+    "l:mejor",
+    "l:mijo",
+    "l:mitad",
+    "l:mover",
+    "l:muchacho",
+    "l:nieto",
+    "l:niño",
+    "l:número",
+    "l:oír",
+    "l:pagar",
+    "l:palabra",
+    "l:pan",
+    "l:papel",
+    "l:parte",
+    "l:pena",
+    "l:perdón",
+    "l:permiso",
+    "l:piano",
+    "l:piedra",
+    "l:plan",
+    "l:poder",
+    "l:querer",
+    "l:quién",
+    "l:reír",
+    "l:rápido",
+    "l:salir",
+    "l:ser",
+    "l:señor",
+    "l:silla",
+    "l:sobre",
+    "l:soltar",
+    "l:solución",
+    "l:sonido",
+    "l:sonreír",
+    "l:subir",
+    "l:sujetar",
+    "l:tener",
+    "l:terminar",
+    "l:tinto",
+    "l:tocar",
+    "l:tomar",
+    "l:tranquilo",
+    "l:vender",
+    "l:vez",
+    "l:volver",
+    "l:votar",
+    "l:voz"
+  ]
+}

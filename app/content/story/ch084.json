@@ -1,0 +1,318 @@
+{
+  "id": "ch084",
+  "unit": "u28",
+  "title": "La comunidad",
+  "text": "El jueves a las seis, había ciento veinte vecinos en la parroquia. Adelante, al lado de una pantalla, estaba Ricardo Altamira.\nAltamira: Sé que en esta comunidad hay problemas: la basura, la contaminación, los robos. Y, sobre todo, la inseguridad.\nSeñor: ¡A mí me robaron el celular aquí al frente!\nSeñora: ¡Y a mí, la bicicleta! Con tanta inseguridad, esa calle es de los ladrones.\nAltamira: Yo propongo una solución. Un hotel trae luz, cámaras y seguridad. En general, en las calles con hoteles hay menos robos.\nVale: Te veo nervioso.\nTomás: Estoy pensando en Rosa. Ella nunca tuvo cámaras. Tenía un balde.\nAltamira: Además, el hotel ofrece educación para los jóvenes: cursos de cocina y de inglés. La alcaldía apoya el hotel, y un ministro viene a abrirlo.\nHernando: ¿Un ministro? Una vez, un senador no quiso pagar un tinto en esta cuadra. Rosa le echó un balde de agua.\nToda la parroquia se rió. Altamira también, pero no con los ojos.\nAltamira: Esto no es política, señor Pacheco. Es una solución para la ciudad.\nGloria: Si viene un ministro, es política. Soy ciudadana y saco la basura a tiempo. ¿Por qué tengo que irme yo, y no los ladrones? Yo propongo otra solución: más luz y menos contaminación.\nEn ese momento entró Jhon Fredy, con Simón en el hombro.\nJhon Fredy: Perdón. Lloró toda la tarde.\nSimón: ¡Esquina Real! ¡Esquina Real!\nMedio barrio se rió y aplaudió.\nMariana: Yo también soy ciudadana, y periodista. ¿Qué dice la alcaldía de las doce reseñas de una estrella contra La Esquina de Rosa? ¿Eso también es educación?\nAltamira: No entiendo la pregunta, señora. Yo no quiero una guerra con la comunidad.\nHernando: Pero la guerra ya la empezó usted.\nAltamira pasó a la última imagen: el lobby, con el piano, donde ahora estaba el café.\nAltamira: Lo encuentro muy bonito. Casi toda la cuadra ya vendió. Un solo vecino dice que no.\nAltamira: Señor Herrera, ¿por qué no nos explica a todos por qué?\nUn muchacho le dio el micro, y ciento veinte vecinos miraron a Tomás.",
+  "gloss": [
+    {
+      "es": "parroquia",
+      "en": "parish hall"
+    },
+    {
+      "es": "lobby",
+      "en": "hotel lobby"
+    },
+    {
+      "es": "aplaudió",
+      "en": "applauded"
+    },
+    {
+      "es": "micro",
+      "en": "mic"
+    },
+    {
+      "es": "¡A mí me robaron el celular aquí al frente!",
+      "en": "Somebody stole my phone right across the street!"
+    },
+    {
+      "es": "Esa calle es de los ladrones.",
+      "en": "That street belongs to the thieves."
+    },
+    {
+      "es": "Te veo nervioso.",
+      "en": "You look nervous."
+    },
+    {
+      "es": "Un ministro viene a abrirlo.",
+      "en": "A minister is coming to open it."
+    },
+    {
+      "es": "Rosa le echó un balde de agua.",
+      "en": "Rosa threw a bucket of water over him."
+    },
+    {
+      "es": "saco la basura a tiempo",
+      "en": "I put the rubbish out on time"
+    },
+    {
+      "es": "Lloró toda la tarde.",
+      "en": "He cried all afternoon."
+    },
+    {
+      "es": "Pero la guerra ya la empezó usted.",
+      "en": "But you already started the war."
+    },
+    {
+      "es": "Lo encuentro muy bonito.",
+      "en": "I find it very beautiful."
+    },
+    {
+      "es": "¿por qué no nos explica a todos por qué?",
+      "en": "why don't you explain to all of us why?"
+    },
+    {
+      "es": "Altamira también, pero no con los ojos.",
+      "en": "Altamira did too, but not with his eyes."
+    },
+    {
+      "es": "Con tanta inseguridad",
+      "en": "With so much crime"
+    },
+    {
+      "es": "Una vez, un senador no quiso pagar un tinto en esta cuadra.",
+      "en": "Once, a senator refused to pay for a tinto on this block."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Which problems does Altamira say his hotel will solve?",
+      "options": [
+        "Traffic and noise",
+        "Rubbish, pollution, robberies and above all insecurity",
+        "Unemployment and high rents",
+        "Bad coffee and slow service"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why does the whole hall laugh at Hernando?",
+      "options": [
+        "He falls off his chair",
+        "He tells them about the senator who wouldn't pay and got Rosa's bucket of water",
+        "He calls Altamira a parrot",
+        "He sings a bolero"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What is Gloria's main complaint?",
+      "options": [
+        "She doesn't want tourists in her bakery",
+        "She is a citizen who puts her rubbish out on time, so why should she have to go and not the thieves",
+        "The meeting started late",
+        "Nobody asked her to speak"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Qué grita Simón cuando ve la imagen del hotel?",
+      "options": [
+        "¡Esquina Real!",
+        "¡No creo!",
+        "¡Quedo atento!",
+        "¡Muy mal!"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Altamira do at the end?",
+      "options": [
+        "He leaves the hall",
+        "He says almost the whole block has sold and asks Tomás to explain why he says no",
+        "He offers Marta's grandson a job",
+        "He apologises for the reviews"
+      ],
+      "answer": 1
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What did one neighbour have stolen right across the street?",
+      "options": [
+        "Her bicycle",
+        "His phone",
+        "His car",
+        "Her bag"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What courses does the hotel offer young people?",
+      "options": [
+        "Cooking and English",
+        "Dance and music",
+        "Driving and accounting",
+        "Coffee and baking"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Jhon Fredy bring Simón to the meeting?",
+      "options": [
+        "Vale asked him to",
+        "Simón cried all afternoon",
+        "Simón had to see a vet",
+        "Hernando forgot him in the taxi"
+      ],
+      "answer": 1
+    }
+  ],
+  "hook": "A hundred and twenty neighbours are waiting, and Tomás has a microphone in his hand and a Spanish he has never used in public. Tomorrow he speaks.",
+  "requires": [
+    "c:ademas",
+    "c:claro-listo",
+    "c:hay",
+    "c:no-entiendo",
+    "c:perdon-disculpe",
+    "c:quiero",
+    "c:tengo",
+    "c:tengo-que",
+    "c:una-vez",
+    "g:adjective-agreement",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:object-pronoun-position",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:con-sin",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:en-general",
+    "p:encontrar-ver-adj",
+    "p:frequency-scale",
+    "p:llevar-traer",
+    "p:me-te-nos-objects",
+    "p:nos-vemos-a-las",
+    "p:numbers-un-una",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:pensar-en",
+    "p:por-que-no",
+    "p:position-de",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:sobre-todo",
+    "p:tambien-tampoco",
+    "p:telling-time",
+    "p:todos-los-dias"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:adelante",
+    "l:además",
+    "l:agua",
+    "l:ahora",
+    "l:alcaldía",
+    "l:aplaudir",
+    "l:apoyar",
+    "l:aquí",
+    "l:barrio",
+    "l:basura",
+    "l:bicicleta",
+    "l:bonito",
+    "l:café",
+    "l:calle",
+    "l:celular",
+    "l:ciudad",
+    "l:ciudadano",
+    "l:cocina",
+    "l:comunidad",
+    "l:contaminación",
+    "l:cuadra",
+    "l:curso",
+    "l:cámara",
+    "l:dar",
+    "l:decir",
+    "l:echar",
+    "l:educación",
+    "l:empezar",
+    "l:encontrar",
+    "l:entender",
+    "l:entrar",
+    "l:estar",
+    "l:estrella",
+    "l:explicar",
+    "l:frente",
+    "l:general",
+    "l:guerra",
+    "l:hombro",
+    "l:hotel",
+    "l:imagen",
+    "l:inglés",
+    "l:inseguridad",
+    "l:irse",
+    "l:joven",
+    "l:jueves",
+    "l:lado",
+    "l:ladrón",
+    "l:llorar",
+    "l:luz",
+    "l:ministro",
+    "l:mirar",
+    "l:momento",
+    "l:muchacho",
+    "l:nervioso",
+    "l:ofrecer",
+    "l:ojo",
+    "l:pagar",
+    "l:pantalla",
+    "l:pasar",
+    "l:pensar",
+    "l:perdón",
+    "l:periodista",
+    "l:piano",
+    "l:política",
+    "l:pregunta",
+    "l:problema",
+    "l:proponer",
+    "l:querer",
+    "l:qué",
+    "l:reseña",
+    "l:reír",
+    "l:robar",
+    "l:robo",
+    "l:saber",
+    "l:sacar",
+    "l:seguridad",
+    "l:senador",
+    "l:ser",
+    "l:señor",
+    "l:señora",
+    "l:solución",
+    "l:tarde",
+    "l:tener",
+    "l:tiempo",
+    "l:tinto",
+    "l:traer",
+    "l:vecino",
+    "l:vender",
+    "l:venir",
+    "l:ver",
+    "l:vez"
+  ]
+}
