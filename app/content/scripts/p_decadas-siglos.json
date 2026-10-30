@@ -1,0 +1,43 @@
+{
+  "node": "p:decadas-siglos",
+  "hook": {
+    "line": "Everyone in La Candelaria has a story about when something happened: when the café opened, when the neighbourhood changed, when their parents met. You need a way to say \"back in the eighties\" without giving a year.",
+    "es": "Rosa abrió el café a mediados de los ochenta.",
+    "en": "Rosa opened the café in the mid-eighties."
+  },
+  "examples": [
+    { "es": "Mis papás se conocieron a finales de los setenta.", "en": "My parents met in the late seventies." },
+    { "es": "Esa canción era famosa en los años ochenta.", "en": "That song was famous in the eighties." },
+    { "es": "La casa se construyó a principios del siglo XX.", "en": "The house was built in the early 20th century." },
+    { "es": "Me mudé a mediados de 2015.", "en": "I moved in mid-2015." },
+    { "es": "Rosa abrió el café a mediados de los ochenta.", "en": "Rosa opened the café in the mid-eighties." },
+    { "es": "¿Qué hacías en los años noventa?", "en": "What were you doing in the nineties? (to a friend)" }
+  ],
+  "rule": "For a decade, say *en los años ochenta*, or shorter, *en los ochenta*. The number stays as it is: no *-s*, no apostrophe.\n\nTo say early, middle or late, use:\n*a principios de* (early)\n*a mediados de* (mid)\n*a finales de* (late)\n\nThen the period: *a finales de los setenta*, *a mediados de 2015*, *a principios del siglo XX*. Remember *de* plus *el* becomes *del*.\n\nCenturies are written in Roman numerals but said as ordinary numbers: *siglo XX* is *siglo veinte*.",
+  "smallPrint": "Teachers call *principios, mediados, finales* time expressions for locating a point inside a period.",
+  "readAndPick": [
+    { "es": "Mis papás se conocieron a finales de los setenta.", "options": ["My parents met in the early seventies.", "My parents met in the mid-seventies.", "My parents met in the late seventies."], "answer": 2 },
+    { "es": "Rosa abrió el café a mediados de los ochenta.", "options": ["Rosa opened the café in the early eighties.", "Rosa opened the café in the mid-eighties.", "Rosa opened the café in the late eighties."], "answer": 1 },
+    { "es": "Esa casa es del siglo veinte.", "options": ["That house is from the nineteenth century.", "That house is from the twentieth century.", "That house is from the twenty-first century."], "answer": 1 },
+    { "es": "Me mudé a principios de 2015.", "options": ["I moved at the start of 2015.", "I moved in the middle of 2015.", "I moved at the end of 2015."], "answer": 0 },
+    { "es": "Mi papá nació a finales de los sesenta.", "options": ["My dad was born in the late seventies.", "My dad was born in the late sixties.", "My dad was born in the early sixties."], "answer": 1 },
+    { "es": "La casa se construyó a principios del siglo XX.", "options": ["The house was built at the end of the 20th century.", "The house was built in the middle of the 20th century.", "The house was built at the start of the 20th century."], "answer": 2 },
+    { "es": "Me mudé a Bogotá a mediados de año.", "options": ["I moved to Bogotá in the middle of the year.", "I moved to Bogotá at the end of the year.", "I moved to Bogotá at the start of the year."], "answer": 0 },
+    { "es": "Mi abuela llegó a Bogotá en los años cincuenta.", "options": ["My grandmother arrived in Bogotá fifty years ago.", "My grandmother arrived in Bogotá in the sixties.", "My grandmother arrived in Bogotá in the fifties."], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *Mis papás se conocieron ___ los setenta.* (*a finales de* or *a principios de*) My parents met in the late seventies.", "answer": "Mis papás se conocieron a finales de los setenta.", "accept": [], "why": "*Finales* means the end of a period, so \"late\"." },
+    { "prompt": "Pick and type the whole sentence: *La casa es ___ siglo veinte.* (*de el* or *del*) The house is from the twentieth century.", "answer": "La casa es del siglo veinte.", "accept": [], "why": "*De* and *el* always squeeze into *del*." },
+    { "prompt": "Say: My dad was born in the late sixties.", "answer": "Mi papá nació a finales de los sesenta.", "accept": [], "why": "*A finales de* plus *los sesenta*, with no *-s* on the number." },
+    { "prompt": "Say: I moved to Bogotá in mid-2015.", "answer": "Me mudé a Bogotá a mediados de 2015.", "accept": [], "why": "*A mediados de* works with a year just as it does with a decade." },
+    { "prompt": "Ask a friend: What were you doing in the nineties?", "answer": "¿Qué hacías en los años noventa?", "accept": ["¿Qué hacías en los noventa?"], "why": "*Años* can stay or go: *los años noventa* and *los noventa* mean the same." },
+    { "prompt": "Make it shorter: *Esa canción era famosa en los años ochenta.* Drop the word for years.", "answer": "Esa canción era famosa en los ochenta.", "accept": [], "why": "In everyday Spanish, *los ochenta* is enough." },
+    { "prompt": "Change early to mid: *Rosa abrió el café a principios de los ochenta.*", "answer": "Rosa abrió el café a mediados de los ochenta.", "accept": [], "why": "*Mediados* is the middle of a period, so \"mid\"." }
+  ],
+  "pitfalls": [
+    { "wrong": "Era famosa en los ochentas.", "right": "Era famosa en los ochenta.", "why": "Almost. A decade number never takes an *-s* in Spanish." },
+    { "wrong": "Se conocieron a final de los setenta.", "right": "Se conocieron a finales de los setenta.", "why": "In this expression *finales* is plural." },
+    { "wrong": "Se construyó a principios de el siglo XX.", "right": "Se construyó a principios del siglo XX.", "why": "*De* and *el* squeeze into *del*." }
+  ],
+  "personal": "Say when something true about your family happened, using *a principios de*, *a mediados de* or *a finales de*, like *Mis abuelos se casaron a mediados de los cincuenta*."
+}

@@ -1,0 +1,43 @@
+{
+  "node": "p:parecer-vs-parecerse",
+  "hook": {
+    "line": "In a café full of regulars, you will hear who looks like whom all day: who has Rosa's eyes, who seems tired. English uses \"look like\" and \"seem\" loosely. Spanish uses a different verb for each.",
+    "es": "Tomás se parece a su abuela.",
+    "en": "Tomás looks like his grandmother."
+  },
+  "examples": [
+    { "es": "Parece cansado hoy.", "en": "He seems tired today." },
+    { "es": "Parece un adolescente.", "en": "He looks like a teenager." },
+    { "es": "Se parece mucho a su papá.", "en": "He looks a lot like his dad." },
+    { "es": "Tomás se parece a su abuela.", "en": "Tomás looks like his grandmother." },
+    { "es": "Mariana parece muy tranquila.", "en": "Mariana seems very calm." },
+    { "es": "Nos parecemos mucho.", "en": "We look very much alike." }
+  ],
+  "rule": "*Parecer* (no *se*) gives an impression, followed by an adjective or a noun: *parece cansado*, *parece un adolescente*, *esa casa parece un museo*.\n\n*Parecerse a* (with *se*) says two people or things resemble each other, and it always takes *a*: *se parece a su papá*, *me parezco a mi mamá*, *nos parecemos mucho*.\n\nSo *parece cansado* is how he seems; *se parece a su papá* is who he looks like. Don't mix them: no *parece a*, no *se parece cansado*.",
+  "smallPrint": "Teachers call *parecerse* a pronominal verb: the *se* is part of the verb, not an extra word.",
+  "readAndPick": [
+    { "es": "Vale parece feliz hoy.", "options": ["Vale looks like her mom.", "Vale seems happy today."], "answer": 1 },
+    { "es": "Mi hermana se parece a mí.", "options": ["My sister looks like me.", "My sister seems happy to me."], "answer": 0 },
+    { "es": "Esa casa parece un museo.", "options": ["That house is next to a museum.", "That house belongs to a museum.", "That house looks like a museum."], "answer": 2 },
+    { "es": "Hernando parece más joven.", "options": ["Hernando looks like a young man.", "Hernando seems younger.", "Hernando is the youngest."], "answer": 1 },
+    { "es": "Tomás y su abuela se parecen.", "options": ["Tomás and his grandmother seem tired.", "Tomás and his grandmother look alike.", "Tomás and his grandmother are close."], "answer": 1 },
+    { "es": "Me parezco a mi mamá.", "options": ["I look like my mom.", "My mom seems like me.", "I seem tired to my mom."], "answer": 0 },
+    { "es": "Mi hermana parece cansada.", "options": ["My sister looks like me.", "My sister seems tired.", "My sister is tired of me."], "answer": 1 },
+    { "es": "¿A quién te pareces?", "options": ["Who do you like?", "Who do you seem to be?", "Who do you look like?"], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *Tomás ___ a su abuela.* (*parece* or *se parece*) Tomás looks like his grandmother.", "answer": "Tomás se parece a su abuela.", "accept": [], "why": "A resemblance to a person is *parecerse a*." },
+    { "prompt": "Pick and type the whole sentence: *Mariana ___ muy tranquila.* (*parece* or *se parece*) Mariana seems very calm.", "answer": "Mariana parece muy tranquila.", "accept": [], "why": "An impression with an adjective is plain *parecer*." },
+    { "prompt": "Say: My sister looks like me.", "answer": "Mi hermana se parece a mí.", "accept": [], "why": "*Se parece a* plus the person; *mí* takes the accent." },
+    { "prompt": "Say: Hernando seems younger.", "answer": "Hernando parece más joven.", "accept": [], "why": "No *se*, because this is an impression, not a resemblance." },
+    { "prompt": "Ask a friend: Who do you look like?", "answer": "¿A quién te pareces?", "accept": ["¿A quién te pareces tú?"], "why": "*Parecerse* needs *a*, so the question starts with *a quién*." },
+    { "prompt": "Change \"looks like a person\" to \"seems\": *Tomás se parece a su abuela.* Say Tomás seems tired.", "answer": "Tomás parece cansado.", "accept": [], "why": "Drop *se* and *a*, then add the adjective." },
+    { "prompt": "Say: That house looks like a museum.", "answer": "Esa casa parece un museo.", "accept": [], "why": "A visual impression with a noun is plain *parecer*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Tomás parece a su abuela.", "right": "Tomás se parece a su abuela.", "why": "Almost. To look like a person you need *se parece a*." },
+    { "wrong": "Tomás se parece cansado.", "right": "Tomás parece cansado.", "why": "For how someone seems, drop the *se*." },
+    { "wrong": "Me parezco mi mamá.", "right": "Me parezco a mi mamá.", "why": "*Parecerse* always needs *a* before the person." }
+  ],
+  "personal": "Say who in your family you look like, with *Me parezco a…*, and how someone close to you seems today, with *parece…*."
+}

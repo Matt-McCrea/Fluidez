@@ -1,0 +1,43 @@
+{
+  "node": "p:actualmente",
+  "hook": {
+    "line": "*Actualmente* looks like \"actually\", so every English speaker uses it that way once. Spanish has a few small words for \"now\", \"lately\" and \"actually\", and each has its own job.",
+    "es": "Actualmente vivo en Bogotá.",
+    "en": "I currently live in Bogotá."
+  },
+  "examples": [
+    { "es": "Actualmente vivo en Bogotá.", "en": "I currently live in Bogotá." },
+    { "es": "En realidad no es tan caro.", "en": "Actually, it's not that expensive." },
+    { "es": "Últimamente tengo mucho trabajo.", "en": "I've had a lot of work lately." },
+    { "es": "Hoy en día todo el mundo tiene celular.", "en": "Nowadays everyone has a cell phone." },
+    { "es": "De hecho, Vale es de Medellín.", "en": "In fact, Vale is from Medellín." },
+    { "es": "Parece caro, pero en realidad es barato.", "en": "It seems expensive, but actually it's cheap." }
+  ],
+  "rule": "*Actualmente* means \"at the moment\", never \"actually\". It is a false friend.\n\nUse these instead:\n*actualmente*, *hoy en día*: now, these days\n*en realidad*, *de hecho*: actually, in fact\n*últimamente*: lately\n\nSo *En realidad no soy de Bogotá* corrects someone, while *Actualmente vivo en Bogotá* says where you live now.\n\nThey usually sit at the start of the sentence, followed by a comma only for *de hecho*.",
+  "smallPrint": "Teachers call these false cognates, or *falsos amigos*, and the words that open a sentence this way discourse markers.",
+  "readAndPick": [
+    { "es": "Actualmente estudio español.", "options": ["I'm actually studying Spanish.", "I'm currently studying Spanish.", "I used to study Spanish."], "answer": 1 },
+    { "es": "En realidad prefiero el tinto sin azúcar.", "options": ["Right now I prefer black coffee without sugar.", "Lately I prefer black coffee without sugar.", "Actually, I prefer black coffee without sugar."], "answer": 2 },
+    { "es": "Últimamente duermo poco.", "options": ["Lately I sleep little.", "Actually I sleep little.", "Currently I never sleep."], "answer": 0 },
+    { "es": "Hoy en día casi nadie escribe cartas.", "options": ["Lately almost nobody writes letters.", "Nowadays almost nobody writes letters.", "In fact almost nobody writes letters."], "answer": 1 },
+    { "es": "De hecho, el café es de mi abuela.", "options": ["These days the café is my grandmother's.", "Lately the café is my grandmother's.", "In fact, the café is my grandmother's."], "answer": 2 },
+    { "es": "Actualmente Vale trabaja en el café.", "options": ["Vale currently works at the café.", "Vale actually works at the café.", "Vale used to work at the café."], "answer": 0 },
+    { "es": "Parece caro, pero en realidad es barato.", "options": ["It seems expensive, but nowadays it's cheap.", "It seems expensive, but actually it's cheap.", "It seems expensive, but lately it's cheap."], "answer": 1 },
+    { "es": "¿Dónde trabajas actualmente?", "options": ["Where do you currently work? (to a friend)", "Where do you actually work? (to a friend)", "Where did you work lately? (to a friend)"], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *___ vivo en Bogotá.* (*Actualmente* or *En realidad*) I currently live in Bogotá.", "answer": "Actualmente vivo en Bogotá.", "accept": ["Hoy en día vivo en Bogotá."], "why": "You mean \"at the moment\", and that is *actualmente*." },
+    { "prompt": "Pick and type the whole sentence: *___ no soy de Bogotá.* (*Actualmente* or *En realidad*) Actually, I'm not from Bogotá.", "answer": "En realidad no soy de Bogotá.", "accept": ["De hecho no soy de Bogotá.", "De hecho, no soy de Bogotá."], "why": "\"Actually\" is *en realidad*, never *actualmente*." },
+    { "prompt": "Say: Lately I sleep little.", "answer": "Últimamente duermo poco.", "accept": ["Últimamente yo duermo poco."], "why": "\"Lately\" is *últimamente*, and the accent stays on the *ú*." },
+    { "prompt": "Say: Nowadays almost nobody writes letters.", "answer": "Hoy en día casi nadie escribe cartas.", "accept": ["Actualmente casi nadie escribe cartas."], "why": "*Hoy en día* is the everyday way to say \"these days\"." },
+    { "prompt": "Ask a friend: Where do you currently work?", "answer": "¿Dónde trabajas actualmente?", "accept": ["¿Actualmente dónde trabajas?", "¿Dónde trabajas hoy en día?"], "why": "*Actualmente* can close the question, just like \"currently\"." },
+    { "prompt": "Say: In fact, Vale is from Medellín.", "answer": "De hecho, Vale es de Medellín.", "accept": ["De hecho Vale es de Medellín.", "En realidad, Vale es de Medellín.", "En realidad Vale es de Medellín."], "why": "*De hecho* adds a fact that backs up what was just said." },
+    { "prompt": "Change the opener so it means \"lately\": *Actualmente Hernando viene menos al café.*", "answer": "Últimamente Hernando viene menos al café.", "accept": [], "why": "*Actualmente* is \"now\" and *últimamente* is \"lately\"." }
+  ],
+  "pitfalls": [
+    { "wrong": "Actualmente no es tan caro.", "right": "En realidad no es tan caro.", "why": "Almost. *Actualmente* means \"at the moment\"; for \"actually\" use *en realidad*." },
+    { "wrong": "Actualmente he dormido mal.", "right": "Últimamente he dormido mal.", "why": "For \"lately\" Spanish has its own word: *últimamente*." },
+    { "wrong": "En día de hoy todo el mundo tiene celular.", "right": "Hoy en día todo el mundo tiene celular.", "why": "The set phrase is *hoy en día*, in that order." }
+  ],
+  "personal": "Write two true lines: one with *actualmente* about what you do now, and one with *en realidad* that corrects a wrong idea people have about you."
+}

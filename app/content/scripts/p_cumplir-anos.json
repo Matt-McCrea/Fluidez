@@ -1,0 +1,43 @@
+{
+  "node": "p:cumplir-anos",
+  "hook": {
+    "line": "Birthdays are the quickest way to make friends in Colombia, and the first thing people ask is how old you are turning. Spanish splits \"I'm thirty\" from \"I turn thirty\" with two different verbs.",
+    "es": "Mi hermana cumple veinte años mañana.",
+    "en": "My sister turns twenty tomorrow."
+  },
+  "examples": [
+    { "es": "Mi hermana cumple veinte años mañana.", "en": "My sister turns twenty tomorrow." },
+    { "es": "¿Cuántos años cumples?", "en": "How old are you turning? (to a friend)" },
+    { "es": "Tengo treinta años.", "en": "I'm thirty." },
+    { "es": "Hernando cumple setenta y dos años en marzo.", "en": "Hernando turns seventy-two in March." },
+    { "es": "Vale cumplió veintiocho años ayer.", "en": "Vale turned twenty-eight yesterday." },
+    { "es": "El café cumple cien años este mes.", "en": "The café turns a hundred this month." }
+  ],
+  "rule": "Two verbs, two ideas.\n\n*Tener* + number + *años* says how old someone is: *tengo treinta años*. English says \"I am thirty\"; Spanish says \"I have thirty years\".\n\n*Cumplir* + number + *años* is the moment you reach that age: *cumplo treinta años el sábado*, *Vale cumplió veintiocho años ayer*.\n\nThe birthday itself is *el cumpleaños*, and *cumplir años* alone means \"to have a birthday\": *No cumplo años hasta diciembre.*",
+  "smallPrint": "*Cumplir* literally means \"to complete\" or \"to fulfil\", which is why it also covers keeping a promise.",
+  "readAndPick": [
+    { "es": "Mi sobrina cumple diez años el lunes.", "options": ["My niece turns ten on Monday.", "My niece is ten years old.", "My niece turned ten on Monday."], "answer": 0 },
+    { "es": "Mi papá tiene sesenta años.", "options": ["My dad turns sixty.", "My dad is sixty.", "My dad turned sixty."], "answer": 1 },
+    { "es": "Vale cumplió veintiocho años ayer.", "options": ["Vale is twenty-eight.", "Vale turns twenty-eight tomorrow.", "Vale turned twenty-eight yesterday."], "answer": 2 },
+    { "es": "Cumplo treinta y cinco años el sábado.", "options": ["I'm thirty-five.", "I turn thirty-five on Saturday.", "I turned thirty-five on Saturday."], "answer": 1 },
+    { "es": "¿Cuántos años tiene Simón?", "options": ["How old is Simón?", "How old is Simón turning?"], "answer": 0 },
+    { "es": "¿Cuántos años cumple tu hermano?", "options": ["How old is your brother?", "How old is your brother turning?"], "answer": 1 },
+    { "es": "Mariana cumplió treinta y tres años en mayo.", "options": ["Mariana turned thirty-three in May.", "Mariana will turn thirty-three in May.", "Mariana is thirty-three."], "answer": 0 },
+    { "es": "El café cumple cien años este mes.", "options": ["The café is a hundred years old.", "The café turned a hundred last month.", "The café turns a hundred this month."], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *Mi hermana ___ veinte años mañana.* (*tiene* or *cumple*) My sister turns twenty tomorrow.", "answer": "Mi hermana cumple veinte años mañana.", "accept": [], "why": "She reaches twenty tomorrow, and reaching an age is *cumplir*." },
+    { "prompt": "Pick and type the whole sentence: *Mi papá ___ sesenta años.* (*tiene* or *cumple*) My dad is sixty.", "answer": "Mi papá tiene sesenta años.", "accept": [], "why": "How old he is right now is *tener*." },
+    { "prompt": "Ask a friend: How old are you turning?", "answer": "¿Cuántos años cumples?", "accept": ["¿Cuántos años vas a cumplir?"], "why": "*Cumples* is the *you* form, and the question is about the age you are reaching." },
+    { "prompt": "Say: Hernando turns seventy-two in March.", "answer": "Hernando cumple setenta y dos años en marzo.", "accept": [], "why": "A future birthday uses *cumple*, as in English \"turns\"." },
+    { "prompt": "Say: I turn thirty-five on Saturday.", "answer": "Cumplo treinta y cinco años el sábado.", "accept": ["Yo cumplo treinta y cinco años el sábado."], "why": "*Cumplo* is the *I* form." },
+    { "prompt": "Turn the fact into the event: *Mi sobrina tiene diez años.* Say she turns ten on Monday.", "answer": "Mi sobrina cumple diez años el lunes.", "accept": [], "why": "Swap *tiene* for *cumple* to talk about reaching the age." },
+    { "prompt": "Turn it into a question about the age: *Tu hermano cumple veinte años.* Ask a friend how old his brother is turning.", "answer": "¿Cuántos años cumple tu hermano?", "accept": ["¿Cuántos años va a cumplir tu hermano?"], "why": "*Cuántos años* replaces the number and keeps *cumple*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Mi hermana tiene veinte años mañana.", "right": "Mi hermana cumple veinte años mañana.", "why": "Almost. \"Turns\" is *cumple*; *tiene* says how old she is already." },
+    { "wrong": "Cumplo treinta años.", "right": "Tengo treinta años.", "why": "If you simply are thirty, use *tener*. *Cumplo* means you are turning thirty." },
+    { "wrong": "Soy treinta años.", "right": "Tengo treinta años.", "why": "Spanish does not say \"I am thirty\"; it says \"I have thirty years\"." }
+  ],
+  "personal": "Say when your birthday is and how old you are turning, with *Cumplo… años en…*."
+}

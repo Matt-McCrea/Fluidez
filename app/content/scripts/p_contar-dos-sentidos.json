@@ -1,0 +1,43 @@
+{
+  "node": "p:contar-dos-sentidos",
+  "hook": {
+    "line": "Hernando tells stories, and then Vale counts the till. One verb does both jobs, so you can tell a story and count the money with the same word.",
+    "es": "Hernando siempre cuenta unos chistes buenísimos.",
+    "en": "Hernando always tells great jokes."
+  },
+  "examples": [
+    { "es": "Hernando siempre cuenta unos chistes buenísimos.", "en": "Hernando always tells great jokes." },
+    { "es": "Vale contó la plata dos veces.", "en": "Vale counted the money twice." },
+    { "es": "Cuéntame todo.", "en": "Tell me everything. (to a friend)" },
+    { "es": "Cuenta hasta diez.", "en": "Count to ten. (to a friend)" },
+    { "es": "Hernando nos contó una anécdota.", "en": "Hernando told us an anecdote." },
+    { "es": "¿Me cuentas una historia?", "en": "Will you tell me a story? (to a friend)" }
+  ],
+  "rule": "*Contar* means both \"to tell\" and \"to count\". What comes after it decides which.\n\nA joke, story, news or secret: you tell it. *Cuenta chistes*, *cuéntame todo*.\n\nMoney, chairs, people or numbers: you count them. *Contó la plata*, *cuenta hasta diez*.\n\nThe stem changes like *poder*: *cuento, cuentas, cuenta, contamos, cuentan*. In the past it doesn't: *conté, contó*.\n\n*Cuéntame* (tell me) is the friendliest way to ask for a story.",
+  "smallPrint": "Teachers call this polysemy: one verb with several meanings. A third one, *contar con* (to rely on), comes later.",
+  "readAndPick": [
+    { "es": "Conté las monedas.", "options": ["I counted the coins.", "I told a story about coins."], "answer": 0 },
+    { "es": "Hernando cuenta historias de cuando era taxista.", "options": ["Hernando counts stories from his taxi days.", "Hernando tells stories from his taxi days."], "answer": 1 },
+    { "es": "Cuenta hasta diez.", "options": ["Tell me ten stories. (to a friend)", "Tell me about ten. (to a friend)", "Count to ten. (to a friend)"], "answer": 2 },
+    { "es": "Vale cuenta las sillas del café.", "options": ["Vale counts the café's chairs.", "Vale tells the café's chairs a story."], "answer": 0 },
+    { "es": "Cuéntame todo.", "options": ["Count everything for me. (to a friend)", "Tell me everything. (to a friend)"], "answer": 1 },
+    { "es": "Voy a contar la plata de la caja.", "options": ["I'm going to tell a story about the money in the till.", "I'm going to count the money in the till."], "answer": 1 },
+    { "es": "Mi abuela contaba cuentos todas las noches.", "options": ["My grandmother used to count tales every night.", "My grandmother used to tell stories every night."], "answer": 1 },
+    { "es": "No cuentes el secreto.", "options": ["Don't tell the secret. (to a friend)", "Don't count the secret. (to a friend)"], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *Hernando siempre ___ unos chistes buenísimos.* (*cuenta* or *conta*) Hernando always tells great jokes.", "answer": "Hernando siempre cuenta unos chistes buenísimos.", "accept": [], "why": "The *o* of *contar* becomes *ue* in the present." },
+    { "prompt": "Pick and type the whole sentence: *Voy a ___ la plata de la caja.* (*contar* or *cuento*) I'm going to count the money in the till.", "answer": "Voy a contar la plata de la caja.", "accept": [], "why": "After *voy a* the verb stays in the infinitive, with no stem change." },
+    { "prompt": "Say to a friend: Tell me everything.", "answer": "Cuéntame todo.", "accept": [], "why": "*Cuenta* plus *me*, with the accent keeping the stress in place." },
+    { "prompt": "Say: Vale counted the money twice.", "answer": "Vale contó la plata dos veces.", "accept": [], "why": "*Contó* is the past of *contar*, and the stem doesn't change." },
+    { "prompt": "Say to a friend: Count to ten.", "answer": "Cuenta hasta diez.", "accept": [], "why": "Numbers are counted with *contar*, and *hasta* gives the limit." },
+    { "prompt": "Make it past: *Hernando nos cuenta una anécdota.* He told us an anecdote.", "answer": "Hernando nos contó una anécdota.", "accept": [], "why": "In the past, *contar* uses *contó*, without the *ue*." },
+    { "prompt": "Ask a friend: Will you tell me a story?", "answer": "¿Me cuentas una historia?", "accept": ["¿Me cuentas un cuento?"], "why": "*Me* is who hears it, and *cuentas* is the *you* form." }
+  ],
+  "pitfalls": [
+    { "wrong": "Hernando conta chistes buenísimos.", "right": "Hernando cuenta chistes buenísimos.", "why": "Almost. In the present, the stem becomes *cuent-*." },
+    { "wrong": "Cuenta me todo.", "right": "Cuéntame todo.", "why": "The pronoun joins the end of the command, and an accent keeps the stress." },
+    { "wrong": "¿Me dices una historia?", "right": "¿Me cuentas una historia?", "why": "You tell a story with *contar*, not *decir*." }
+  ],
+  "personal": "Write one line about a story you like to tell with *cuento*, and one about something you count often, like *Cuento los días…*."
+}
