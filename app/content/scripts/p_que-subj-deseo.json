@@ -1,0 +1,174 @@
+{
+  "node": "p:que-subj-deseo",
+  "hook": {
+    "line": "You've been saying *Que descanses* as a whole phrase for a while. Colombians also say just *Descansa*. It's the same wish in two shapes, and neither one is more polite.",
+    "es": "Que descanses, mañana es un día largo.",
+    "en": "Rest well, tomorrow is a long day. (to a friend)"
+  },
+  "examples": [
+    {
+      "es": "Que te diviertas.",
+      "en": "Have fun. (to a friend)"
+    },
+    {
+      "es": "Diviértete.",
+      "en": "Enjoy yourself. (to a friend)"
+    },
+    {
+      "es": "Que te mejores pronto.",
+      "en": "Get well soon. (to a friend)"
+    },
+    {
+      "es": "Mejórate pronto.",
+      "en": "Get better soon. (to a friend)"
+    },
+    {
+      "es": "Que se mejore pronto.",
+      "en": "Get well soon. (formal)"
+    },
+    {
+      "es": "Diviértanse en la fiesta.",
+      "en": "Enjoy yourselves at the party. (you all)"
+    }
+  ],
+  "rule": "Shape one: *que* plus the wish form, the end of *espero que* with the front cut off. *Que te diviertas.* *Que descanses.* The little word goes before the verb.\n\nShape two: the command form, with the little word stuck on the end. *Diviértete.* *Descansa.* *Mejórate.*\n\nSame meaning, same warmth. Pick whichever comes out first.\n\nFor *usted*: *Que se mejore* or *Mejórese*. For a group: *Que se diviertan* or *Diviértanse*.\n\nDon't mix the two: *que* always comes with the wish form.",
+  "readAndPick": [
+    {
+      "es": "Que te diviertas.",
+      "options": [
+        "Have fun. (to a friend)",
+        "Have fun. (formal)",
+        "You're having fun."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Diviértanse en la fiesta.",
+      "options": [
+        "Enjoy yourself at the party. (to a friend)",
+        "Enjoy yourselves at the party. (you all)",
+        "They enjoy the party."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Que se mejore pronto.",
+      "options": [
+        "Get well soon. (to a friend)",
+        "I hope I get better soon.",
+        "Get well soon. (formal)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mejórate pronto.",
+      "options": [
+        "Get better soon. (to a friend)",
+        "Get better soon. (formal)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Que descanse, don Hernando.",
+      "options": [
+        "Rest well, don Hernando. (formal)",
+        "Don Hernando is resting."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Descansa, te lo mereces.",
+      "options": [
+        "She's resting, she deserves it.",
+        "Get some rest, you deserve it. (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Que disfruten la comida.",
+      "options": [
+        "Enjoy your meal. (to a friend)",
+        "Enjoy your meal. (formal)",
+        "Enjoy your meal. (you all)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Que duermas bien.",
+      "options": [
+        "I sleep well.",
+        "Sleep well. (to a friend)",
+        "Sleep well. (formal)"
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *diviertes* or *diviertas* and type the whole wish, to a friend: *Que te ___ en Cartagena.*",
+      "answer": "Que te diviertas en Cartagena.",
+      "accept": [],
+      "why": "After *que*, the wish form: *diviertas*."
+    },
+    {
+      "prompt": "Pick *Descansa* or *Descansas* and type the whole line, to a friend: *___, te lo mereces.*",
+      "answer": "Descansa, te lo mereces.",
+      "accept": [],
+      "why": "Without *que* it's the command shape, so *Descansa*."
+    },
+    {
+      "prompt": "Say to a friend, with the *que* shape: Get well soon.",
+      "answer": "Que te mejores pronto.",
+      "accept": [
+        "Que te mejores."
+      ],
+      "why": "*Que*, then *te*, then the wish form *mejores*."
+    },
+    {
+      "prompt": "Say to don Hernando (formal), with the *que* shape: Get well soon.",
+      "answer": "Que se mejore pronto.",
+      "accept": [
+        "Que se mejore."
+      ],
+      "why": "For *usted*, *te* becomes *se* and the *s* at the end goes."
+    },
+    {
+      "prompt": "Say the same wish in the other shape: *Que te diviertas.*",
+      "answer": "Diviértete.",
+      "accept": [],
+      "why": "In the command shape, *te* goes on the end: *Diviértete*."
+    },
+    {
+      "prompt": "Say the same wish in the other shape: *Disfruta el viaje.*",
+      "answer": "Que disfrutes el viaje.",
+      "accept": [],
+      "why": "With *que*, *disfruta* becomes the wish form *disfrutes*."
+    },
+    {
+      "prompt": "Make it for a group (you all): *Que te diviertas en la fiesta.*",
+      "answer": "Que se diviertan en la fiesta.",
+      "accept": [
+        "Diviértanse en la fiesta."
+      ],
+      "why": "For *ustedes*, *te* becomes *se* and the verb ends in *n*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Que te diviertes.",
+      "right": "Que te diviertas.",
+      "why": "Almost. After *que*, a wish takes the wish form: *diviertas*."
+    },
+    {
+      "wrong": "Te diviertas.",
+      "right": "Que te diviertas.",
+      "why": "Without *que* the wish falls apart; say *Que te diviertas* or *Diviértete*."
+    },
+    {
+      "wrong": "Que diviértete.",
+      "right": "Diviértete.",
+      "why": "Pick one shape: *Diviértete* on its own, or *Que te diviertas*."
+    }
+  ],
+  "personal": "Think of someone you'll see this week. Write the wish you'll give them, in both shapes (*Que descanses* and *Descansa*, or *Que te diviertas* and *Diviértete*)."
+}

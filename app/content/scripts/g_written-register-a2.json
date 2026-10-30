@@ -1,0 +1,198 @@
+{
+  "node": "g:written-register-a2",
+  "hook": {
+    "line": "The café has online reviews now, and Tomás has to answer them in writing. Written Spanish dresses up a little: it has its own way to say hello, its own way to sign off, and it keeps *usted* from the first line to the last.",
+    "es": "Muchas gracias por su comentario tan agradable. Lo esperamos pronto en el café.",
+    "en": "Thank you very much for your kind comment. We hope to see you at the café soon. (to a man, formal)"
+  },
+  "examples": [
+    {
+      "es": "Estimado señor Rojas:",
+      "en": "Dear Mr Rojas,"
+    },
+    {
+      "es": "Querida abuela:",
+      "en": "Dear Grandma,"
+    },
+    {
+      "es": "¿Me podría enviar la información?",
+      "en": "Could you send me the information? (formal)"
+    },
+    {
+      "es": "Muchas gracias por su atención.",
+      "en": "Thank you very much for your attention."
+    },
+    {
+      "es": "Quedo atento a su respuesta.",
+      "en": "I look forward to your reply. (a man writing)"
+    },
+    {
+      "es": "Quedamos atentos.",
+      "en": "We look forward to hearing from you."
+    },
+    {
+      "es": "Gracias de antemano.",
+      "en": "Thanks in advance."
+    },
+    {
+      "es": "Un abrazo,",
+      "en": "Hugs,"
+    }
+  ],
+  "rule": "A message has three parts: hello, the point, goodbye. Spanish picks each one by who is reading.\n\nHello. To someone you don't know: *Estimado señor Rojas:* or *Estimada señora Rojas:*. To someone close: *Querido* or *Querida* plus the name. The ending matches the reader, not you. After the greeting, Spanish puts a colon where English puts a comma.\n\nThe point. Once you start with *usted*, stay there: *su comentario*, *le*, *lo*, *la*. English has one you for everybody, so it never has to choose; Spanish readers notice a switch.\n\nGoodbye. Formal: *Quedo atento a su respuesta* (*atenta* if you're a woman, *atentos* for a team), *Gracias de antemano*. To friends: *Un abrazo*, *Saludos*.\n\nEnglish says Dear to everyone. Spanish never says *Querido* to a stranger.",
+  "smallPrint": "Teachers call this written register: the fixed openings and closings of letters and emails (*fórmulas de saludo y despedida*).",
+  "readAndPick": [
+    {
+      "es": "Quedo atenta a su respuesta.",
+      "options": [
+        "I look forward to your reply. (a man writing)",
+        "I look forward to your reply. (a woman writing)",
+        "We look forward to your reply."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Quedamos atentos.",
+      "options": [
+        "We look forward to hearing from you.",
+        "I look forward to hearing from you. (a man writing)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Querida abuela:",
+      "options": [
+        "Dear Grandpa,",
+        "Dear Grandma,"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Quedo atento a su respuesta.",
+      "options": [
+        "I look forward to your reply. (a man writing)",
+        "I look forward to your reply. (a woman writing)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Me podría enviar la información?",
+      "options": [
+        "Could I send you the information?",
+        "Could you send me the information? (to a friend)",
+        "Could you send me the information? (formal)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Esperamos verla pronto.",
+      "options": [
+        "We hope to see you soon. (to a man, formal)",
+        "We hope to see you soon. (to a woman, formal)",
+        "I hope to see you soon. (to a woman, formal)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Gracias por su reseña.",
+      "options": [
+        "Thanks for your review. (formal)",
+        "Thanks for my review.",
+        "Thanks for our review."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Buenos días, señora Rojas:",
+      "options": [
+        "Good morning, Mr Rojas,",
+        "Good morning, Mrs Rojas,"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Lo esperamos pronto en el café.",
+      "options": [
+        "We hope to see her at the café soon.",
+        "We hope to see you at the café soon. (to a man, formal)",
+        "I hope to see you at the café soon. (to a man, formal)"
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *Querido* or *Querida* and type the opening of a letter to your grandmother: *___ abuela:*",
+      "answer": "Querida abuela:",
+      "accept": [],
+      "why": "Your grandmother is a woman, and the greeting matches the reader."
+    },
+    {
+      "prompt": "You're Mariana, closing a formal email. Pick *atento* or *atenta* and type the whole line: *Quedo ___ a su respuesta.*",
+      "answer": "Quedo atenta a su respuesta.",
+      "accept": [],
+      "why": "*Atento* describes the writer, so a woman writes *atenta*."
+    },
+    {
+      "prompt": "Open a formal email to Mr Rojas.",
+      "answer": "Estimado señor Rojas:",
+      "accept": [],
+      "why": "*Estimado* for someone you don't know, and a colon after the name."
+    },
+    {
+      "prompt": "Write to a customer (formal): Thank you very much for your attention.",
+      "answer": "Muchas gracias por su atención.",
+      "accept": [],
+      "why": "*Su* is the formal your."
+    },
+    {
+      "prompt": "Ask a supplier you don't know: Could you send me the information?",
+      "answer": "¿Me podría enviar la información?",
+      "accept": [
+        "¿Podría enviarme la información?"
+      ],
+      "why": "*Podría* with no *s* is the polite form for *usted*."
+    },
+    {
+      "prompt": "Make it formal: *Gracias por tu comentario.*",
+      "answer": "Gracias por su comentario.",
+      "accept": [],
+      "why": "With *usted*, *tu* becomes *su*."
+    },
+    {
+      "prompt": "You're writing for the whole café team now: *Quedo atento a su respuesta.*",
+      "answer": "Quedamos atentos a su respuesta.",
+      "accept": [],
+      "why": "A team is *we*, so *quedamos*, and *atento* goes plural."
+    },
+    {
+      "prompt": "Make it formal, to a man: *Te esperamos pronto en el café.*",
+      "answer": "Lo esperamos pronto en el café.",
+      "accept": [],
+      "why": "For *usted*, *te* becomes *lo* for a man (*la* for a woman)."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Querido Mariana:",
+      "right": "Querida Mariana:",
+      "why": "Almost. The greeting matches the person reading, and Mariana is a woman."
+    },
+    {
+      "wrong": "Querido señor Rojas:",
+      "right": "Estimado señor Rojas:",
+      "why": "*Querido* is for people you're close to; a stranger gets *Estimado*."
+    },
+    {
+      "wrong": "Quedo atento a tu respuesta.",
+      "right": "Quedo atento a su respuesta.",
+      "why": "You opened with *usted*, so stay there: *su respuesta*, not *tu*."
+    },
+    {
+      "wrong": "Gracias por tu comentario. Lo esperamos pronto.",
+      "right": "Gracias por su comentario. Lo esperamos pronto.",
+      "why": "Pick one: *lo* is formal, so *tu* has to become *su* too."
+    }
+  ],
+  "personal": "Write a three line email to a hotel or a café you know: a formal greeting, one question with *¿Me podría...?*, and a closing such as *Quedo atento a su respuesta* (*atenta* if you're a woman)."
+}

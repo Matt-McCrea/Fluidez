@@ -1,0 +1,182 @@
+{
+  "node": "x:para-inf-que",
+  "hook": {
+    "line": "Tomás has a letter from Altamira's lawyers and no idea how to answer it, so he goes to see don Hernando. He isn't there to help; he's there to be helped. In Spanish, that difference is one word.",
+    "es": "Don Hernando, vine para que me ayude con una carta.",
+    "en": "Don Hernando, I came so that you could help me with a letter. (formal)"
+  },
+  "examples": [
+    {
+      "es": "Vine para ayudar.",
+      "en": "I came to help."
+    },
+    {
+      "es": "Vine para que me ayudes.",
+      "en": "I came so that you could help me. (to a friend)"
+    },
+    {
+      "es": "Estudio español para hablar con mi abuela.",
+      "en": "I'm studying Spanish to talk with my grandmother."
+    },
+    {
+      "es": "Hablo despacio para que mi papá me entienda.",
+      "en": "I speak slowly so that my dad understands me."
+    },
+    {
+      "es": "Llamé a Hernando para preguntarle por el barrio.",
+      "en": "I called Hernando to ask him about the neighbourhood."
+    },
+    {
+      "es": "Llamé a Hernando para que me cuente del barrio.",
+      "en": "I called Hernando so he'd tell me about the neighbourhood."
+    },
+    {
+      "es": "Me levanto temprano para abrir el café.",
+      "en": "I get up early to open the café."
+    },
+    {
+      "es": "Me levanto temprano para que Vale encuentre todo listo.",
+      "en": "I get up early so that Vale finds everything ready."
+    }
+  ],
+  "rule": "Before you write *para*, ask: who does the second thing?\n\nThe same person: *para* plus the plain verb.\n*Vine para ayudar.* I came, I help.\n*Llamé a Hernando para preguntarle.* I called, I ask.\n\nSomeone else: *para que* plus the wish form.\n*Vine para que me ayudes.* I came, you help.\n*Llamé a Hernando para que me cuente.* I called, he tells.\n\nWatch the second pair. Hernando is in both sentences, but in the first one you do the asking. Mentioning a person doesn't change anything; only who acts does.\n\nEnglish blurs it: to help, for you to help, so you can help. Spanish always makes you pick one of two shapes.",
+  "smallPrint": "Teachers call this the same subject or different subject rule: *para* plus infinitive versus *para que* plus subjunctive.",
+  "readAndPick": [
+    {
+      "es": "Traigo la torta para que la prueben.",
+      "options": [
+        "I'm bringing the cake so you all can try it.",
+        "I'm bringing the cake to try it with you all."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Traigo la torta para probarla con ustedes.",
+      "options": [
+        "I'm bringing the cake so you all can try it.",
+        "I'm bringing the cake to try it with you all."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Llamé a Hernando para que me cuente del barrio.",
+      "options": [
+        "I called Hernando to tell him about the neighbourhood.",
+        "I called Hernando so he'd tell me about the neighbourhood."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Llamé a Hernando para preguntarle por el barrio.",
+      "options": [
+        "I called Hernando to ask him about the neighbourhood.",
+        "I called Hernando so he'd ask about the neighbourhood."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Te mando la foto para que la veas.",
+      "options": [
+        "I'm sending you the photo so I can see it.",
+        "I'm sending you the photo so you can see it. (to a friend)",
+        "You're sending me the photo so I can see it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me levanto temprano para abrir el café.",
+      "options": [
+        "I get up early so Vale can open the café.",
+        "I get up early so they can open the café.",
+        "I get up early to open the café."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mariana escribe para que la gente sepa la verdad.",
+      "options": [
+        "Mariana writes to find out the truth.",
+        "Mariana writes so that people know the truth."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Escribo para entender lo que pasa.",
+      "options": [
+        "I write to understand what's happening.",
+        "I write so you understand what's happening."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Le dejo las llaves a Vale para que cierre.",
+      "options": [
+        "I'm leaving the keys with Vale so I can lock up.",
+        "I'm leaving the keys with Vale so she can lock up."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *ayudar* or *que me ayudes* and type the whole sentence: *Vine para ___.* (I came to help.)",
+      "answer": "Vine para ayudar.",
+      "accept": [],
+      "why": "You came and you help: one person, plain verb."
+    },
+    {
+      "prompt": "Pick *verla* or *que la veas* and type the whole sentence, to a friend: *Te mando la foto para ___.* (so you can see it)",
+      "answer": "Te mando la foto para que la veas.",
+      "accept": [],
+      "why": "Your friend does the seeing, so *para que la veas*."
+    },
+    {
+      "prompt": "Type in Spanish: I'm studying Spanish to talk with my grandmother.",
+      "answer": "Estudio español para hablar con mi abuela.",
+      "accept": [],
+      "why": "You study and you talk, so no *que*."
+    },
+    {
+      "prompt": "Type in Spanish: I speak slowly so that my dad understands me.",
+      "answer": "Hablo despacio para que mi papá me entienda.",
+      "accept": [],
+      "why": "Your dad does the understanding, so *para que* and *entienda*."
+    },
+    {
+      "prompt": "Type in Spanish: I'm leaving the keys with Vale so she can lock up.",
+      "answer": "Le dejo las llaves a Vale para que cierre.",
+      "accept": [],
+      "why": "Vale locks up, so *para que cierre*. No *pueda* needed."
+    },
+    {
+      "prompt": "Change who does it. Now it's so that Vale finds everything ready: *Me levanto temprano para abrir el café.*",
+      "answer": "Me levanto temprano para que Vale encuentre todo listo.",
+      "accept": [],
+      "why": "Vale is the one finding, so *para que* and the wish form *encuentre*."
+    },
+    {
+      "prompt": "Change who does it. Now you want to try the cake with them yourself: *Traigo la torta para que la prueben.* (to try it with you all)",
+      "answer": "Traigo la torta para probarla con ustedes.",
+      "accept": [],
+      "why": "Back to one person, so drop *que* and use *probarla*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Estudio español para que hablo con mi abuela.",
+      "right": "Estudio español para hablar con mi abuela.",
+      "why": "Almost. You study and you talk, so just *para hablar*."
+    },
+    {
+      "wrong": "Hablo despacio para mi papá entender.",
+      "right": "Hablo despacio para que mi papá me entienda.",
+      "why": "When someone else acts, Spanish needs *para que* and the wish form."
+    },
+    {
+      "wrong": "Le dejo las llaves a Vale para que cierra.",
+      "right": "Le dejo las llaves a Vale para que cierre.",
+      "why": "*Para que* takes the wish form: *cierre*, not *cierra*."
+    }
+  ],
+  "personal": "Write two true lines that start the same way: one with *para* plus a verb (why you do something for yourself), one with *para que* (why you do it for someone else). Try *Estudio español para...* and *Estudio español para que...*"
+}

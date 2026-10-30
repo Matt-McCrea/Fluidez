@@ -1,0 +1,164 @@
+{
+  "node": "p:le-escribo-para",
+  "hook": {
+    "line": "Spanish emails get to the point in the first line: who you're writing to and why. One small frame does both jobs.",
+    "es": "Le escribo para confirmar la cita del jueves.",
+    "en": "I'm writing to confirm Thursday's appointment. (formal)"
+  },
+  "examples": [
+    {
+      "es": "Le escribo para pedirle información sobre el curso.",
+      "en": "I'm writing to ask you for information about the course. (formal)"
+    },
+    {
+      "es": "Te escribo para invitarte a almorzar.",
+      "en": "I'm writing to invite you to lunch. (to a friend)"
+    },
+    {
+      "es": "Les escribo para avisarles que el café cierra el lunes.",
+      "en": "I'm writing to let you know that the café is closed on Monday. (you all)"
+    },
+    {
+      "es": "Le escribo para agradecerle su comentario.",
+      "en": "I'm writing to thank you for your comment. (formal)"
+    },
+    {
+      "es": "Te escribo para darte las gracias.",
+      "en": "I'm writing to say thank you. (to a friend)"
+    }
+  ],
+  "rule": "*Le escribo para* plus a verb: I'm writing to...\n\nThe first word says who's reading: *le* for *usted*, *te* for a friend, *les* for a group. The verb after *para* usually carries the same little word on its end: *pedirle*, *invitarte*, *avisarles*.\n\nKeep the two matching. *Le escribo para pedirte* starts formal and slips into friendly halfway; Spanish readers notice.\n\nEnglish says I'm writing to, but Spanish uses *para*, never *a*.",
+  "readAndPick": [
+    {
+      "es": "Le escribo para confirmar la reserva del sábado.",
+      "options": [
+        "I'm writing to confirm Saturday's reservation. (to a friend)",
+        "I'm writing to confirm Saturday's reservation. (formal)",
+        "I'm writing to confirm Saturday's reservation. (you all)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Te escribo para invitarte a almorzar.",
+      "options": [
+        "I'm writing to invite you to lunch. (to a friend)",
+        "I'm writing to invite you to lunch. (formal)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Les escribo para avisarles que el café cierra el lunes.",
+      "options": [
+        "I'm writing to let you know the café is closed on Monday. (formal)",
+        "I'm writing to let you know the café is closed on Monday. (to a friend)",
+        "I'm writing to let you know the café is closed on Monday. (you all)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Te escribo para felicitarte.",
+      "options": [
+        "I'm writing to congratulate you. (formal)",
+        "I'm writing to congratulate you. (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Le escribí para pedirle información.",
+      "options": [
+        "I wrote to you to ask for information. (formal)",
+        "I'm writing to ask you for information. (formal)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Le escribo para agradecerle su comentario.",
+      "options": [
+        "I'm writing to thank you for my comment.",
+        "I'm writing to thank you for your comment. (formal)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Les escribo para invitarlos a la fiesta del café.",
+      "options": [
+        "I'm writing to invite you all to the café's party.",
+        "I'm writing to invite you to the café's party. (formal)",
+        "I'm writing to invite them to the café's party."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Le escribo para pedirle una cita.",
+      "options": [
+        "I'm writing to ask you for an appointment. (formal)",
+        "I'm writing to ask you for an appointment. (to a friend)"
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *Le* or *Te* and type the whole sentence, writing to your friend Mariana: *___ escribo para invitarte a almorzar.*",
+      "answer": "Te escribo para invitarte a almorzar.",
+      "accept": [],
+      "why": "Mariana is a friend, and *invitarte* already says *tú*, so *Te*."
+    },
+    {
+      "prompt": "Pick *pedirte* or *pedirle* and type the whole sentence, writing to a school you don't know: *Le escribo para ___ información sobre el curso.*",
+      "answer": "Le escribo para pedirle información sobre el curso.",
+      "accept": [],
+      "why": "You started with *Le*, so the verb takes *le* too."
+    },
+    {
+      "prompt": "Start a formal email: I'm writing to confirm Saturday's reservation.",
+      "answer": "Le escribo para confirmar la reserva del sábado.",
+      "accept": [],
+      "why": "Formal reader, so *Le escribo*; then *para* plus the plain verb."
+    },
+    {
+      "prompt": "Write to a friend: I'm writing to say thank you.",
+      "answer": "Te escribo para darte las gracias.",
+      "accept": [
+        "Te escribo para agradecerte."
+      ],
+      "why": "*Te* at the start, *darte* at the end: both friendly."
+    },
+    {
+      "prompt": "Write to the café's customers (you all): I'm writing to let you know that the café is closed on Monday.",
+      "answer": "Les escribo para avisarles que el café cierra el lunes.",
+      "accept": [],
+      "why": "A group of readers gets *les* in both places."
+    },
+    {
+      "prompt": "Make it formal, writing to a man: *Te escribo para invitarte a almorzar.*",
+      "answer": "Le escribo para invitarlo a almorzar.",
+      "accept": [],
+      "why": "For *usted*, *te* becomes *le*, and invite him is *invitarlo*."
+    },
+    {
+      "prompt": "Make it formal: *Te escribo para preguntarte por el precio del arriendo.*",
+      "answer": "Le escribo para preguntarle por el precio del arriendo.",
+      "accept": [],
+      "why": "Both *te* words become *le*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Le escribo para pedirte información.",
+      "right": "Le escribo para pedirle información.",
+      "why": "Almost. You started with *usted*, so the verb takes *le* too."
+    },
+    {
+      "wrong": "Le escribo a pedirle información.",
+      "right": "Le escribo para pedirle información.",
+      "why": "I'm writing to is *para* in Spanish, never *a*."
+    },
+    {
+      "wrong": "Te escribo para invitarle a almorzar.",
+      "right": "Te escribo para invitarte a almorzar.",
+      "why": "*Te* means a friend, so the verb ends in *te* as well."
+    }
+  ],
+  "personal": "Write the first line of a real email you need to send this week, with *Le escribo para...* or *Te escribo para...*"
+}

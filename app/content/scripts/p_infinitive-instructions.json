@@ -1,0 +1,168 @@
+{
+  "node": "p:infinitive-instructions",
+  "hook": {
+    "line": "Vale is putting signs up in the café kitchen, mostly to protect her cakes from Tomás. Signs, recipes and forms in Spanish talk to nobody in particular, so they use the plain dictionary form of the verb.",
+    "es": "No tocar las tortas.",
+    "en": "Do not touch the cakes."
+  },
+  "examples": [
+    {
+      "es": "No fumar.",
+      "en": "No smoking."
+    },
+    {
+      "es": "Mantener la puerta cerrada.",
+      "en": "Keep the door closed."
+    },
+    {
+      "es": "Pelar y picar la cebolla.",
+      "en": "Peel and chop the onion."
+    },
+    {
+      "es": "Marcar el número.",
+      "en": "Dial the number."
+    },
+    {
+      "es": "No dejar comida en la nevera.",
+      "en": "Do not leave food in the fridge."
+    },
+    {
+      "es": "Pagar en la caja.",
+      "en": "Pay at the till."
+    }
+  ],
+  "rule": "On signs, in recipes and on forms, Spanish uses the plain verb, the *-ar*, *-er*, *-ir* form from the dictionary. *No* goes in front.\n\nEnglish uses a command (Keep, Peel, Dial) or an *-ing* (No smoking). Spanish does neither: *No fumar*, *Mantener la puerta cerrada*.\n\nIt isn't rude. It speaks to anyone who reads it, so it never has to choose between *tú* and *usted*.\n\nWhen you're talking to a real person, switch back to a command: *No fumes*, *Paga en la caja*.",
+  "readAndPick": [
+    {
+      "es": "No fumar.",
+      "options": [
+        "No smoking.",
+        "I don't smoke.",
+        "Don't smoke. (to a friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No fumes.",
+      "options": [
+        "No smoking. (a sign)",
+        "Don't smoke. (to a friend)",
+        "He doesn't smoke."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Marcar el número.",
+      "options": [
+        "I dial the number.",
+        "She dials the number.",
+        "Dial the number. (instructions)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mantener la puerta cerrada.",
+      "options": [
+        "We keep the door closed.",
+        "Keep the door closed. (a sign)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No tocar.",
+      "options": [
+        "Do not touch. (a sign)",
+        "I'm not touching it."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Pagar en la caja.",
+      "options": [
+        "I pay at the till.",
+        "Pay at the till. (a sign)",
+        "They pay at the till."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Paga en la caja.",
+      "options": [
+        "Pay at the till. (a sign)",
+        "Pay at the till. (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Firmar aquí.",
+      "options": [
+        "Sign here. (on a form)",
+        "I'm signing here.",
+        "She signs here."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *fumar* or *fumes* and type the sign: *No ___.*",
+      "answer": "No fumar.",
+      "accept": [],
+      "why": "A sign talks to anyone, so the plain verb: *fumar*."
+    },
+    {
+      "prompt": "Pick *Marca* or *Marcar* and type the printed instruction: *___ el número.*",
+      "answer": "Marcar el número.",
+      "accept": [],
+      "why": "Printed instructions use the dictionary form."
+    },
+    {
+      "prompt": "Write a sign for the kitchen: Do not touch the cakes.",
+      "answer": "No tocar las tortas.",
+      "accept": [],
+      "why": "*No* in front, then the plain verb."
+    },
+    {
+      "prompt": "Write the first step of a recipe: Peel and chop the onion.",
+      "answer": "Pelar y picar la cebolla.",
+      "accept": [],
+      "why": "Both verbs stay in the plain form, joined by *y*."
+    },
+    {
+      "prompt": "Write a sign for the door: Keep the door closed.",
+      "answer": "Mantener la puerta cerrada.",
+      "accept": [],
+      "why": "Keep is *mantener*, and *cerrada* matches *la puerta*."
+    },
+    {
+      "prompt": "You're talking to a friend now, not writing a sign: *No fumar.*",
+      "answer": "No fumes.",
+      "accept": [],
+      "why": "Speaking to a friend, you switch to the *tú* command: *No fumes*."
+    },
+    {
+      "prompt": "Turn what you'd say to a friend into a sign: *Paga en la caja.*",
+      "answer": "Pagar en la caja.",
+      "accept": [],
+      "why": "A sign uses the plain verb: *pagar*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No fumando.",
+      "right": "No fumar.",
+      "why": "Almost. English says No smoking, but Spanish uses the plain verb: *fumar*."
+    },
+    {
+      "wrong": "No fumes.",
+      "right": "No fumar.",
+      "why": "On a sign for everyone, use the plain verb; *No fumes* is said to one friend."
+    },
+    {
+      "wrong": "Fumar no.",
+      "right": "No fumar.",
+      "why": "*No* goes in front of the verb, never after it."
+    }
+  ],
+  "personal": "Write two signs for your own kitchen or front door, with *No* plus a plain verb and one plain verb on its own (*No dejar...*, *Cerrar...*)."
+}

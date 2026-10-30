@@ -1,0 +1,181 @@
+{
+  "node": "g:para-que",
+  "hook": {
+    "line": "Vale is writing the café's first newsletter, and every line has a reason behind it: so the neighbours come back, so they try the new bread. When the reason is about someone else doing something, Spanish adds one small word.",
+    "es": "Vale hace pan de queso para que los clientes vuelvan.",
+    "en": "Vale makes cheese bread so that the customers come back."
+  },
+  "examples": [
+    {
+      "es": "Te dejo la llave para que abras mañana.",
+      "en": "I'm leaving you the key so you can open tomorrow. (to a friend)"
+    },
+    {
+      "es": "Hablo despacio para que me entiendas.",
+      "en": "I speak slowly so that you understand me. (to a friend)"
+    },
+    {
+      "es": "Mariana nos mandó el artículo para que lo leamos.",
+      "en": "Mariana sent us the article so that we'd read it."
+    },
+    {
+      "es": "Te llamo para que no te preocupes.",
+      "en": "I'm calling so you won't worry. (to a friend)"
+    },
+    {
+      "es": "¿Qué hago para que Simón no hable tanto?",
+      "en": "What do I do so that Simón doesn't talk so much?"
+    },
+    {
+      "es": "Abrimos temprano para que los taxistas tomen un tinto.",
+      "en": "We open early so the taxi drivers can have a black coffee."
+    },
+    {
+      "es": "Guardé un pedazo de torta para que lo pruebes.",
+      "en": "I saved a piece of cake so you can try it. (to a friend)"
+    }
+  ],
+  "rule": "You already say why you do things with *para* plus the plain verb: *Ahorro plata para comprar un carro.* I save, I buy.\n\nWhen the second action belongs to someone else, Spanish says *para que* and uses the wish form, the same one you know from *quiero que*:\n*Te dejo la llave para que abras.* I leave the key, you open.\n*Hablo despacio para que me entiendas.* I speak, you understand.\n\nEnglish hides this in many ways: so you can, so that you'll, for you to. Spanish has one: *para que* plus the wish form. No *puedas*, no future, just *abras*, *entiendas*, *vuelvan*.\n\nTwo things never happen after *para que*: the plain verb (*para que abrir*) and the ordinary present (*para que abres*).",
+  "smallPrint": "Teachers call this a purpose clause (*oración final*). *Para que* always takes the present subjunctive.",
+  "readAndPick": [
+    {
+      "es": "Te dejo la llave para que abras mañana.",
+      "options": [
+        "I'm leaving you the key so you can open tomorrow. (to a friend)",
+        "I'm leaving you the key so I can open tomorrow."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Necesito tu número para llamarte.",
+      "options": [
+        "I need your number so you can call me. (to a friend)",
+        "I need your number to call you. (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Te doy mi número para que me llames.",
+      "options": [
+        "I'm giving you my number so I can call you. (to a friend)",
+        "I'm giving you my number so you can call me. (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mariana nos mandó el artículo para que lo leamos.",
+      "options": [
+        "Mariana sent us the article so she could read it.",
+        "Mariana sent us the article so that we'd read it.",
+        "Mariana sent them the article so they'd read it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Abrimos temprano para que los taxistas tomen un tinto.",
+      "options": [
+        "We open early so we can have a black coffee.",
+        "We open early so the taxi drivers can have a black coffee."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Pongo música para que la gente se quede.",
+      "options": [
+        "I put music on so that people stay.",
+        "I put music on so that I stay."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Qué hago para que Simón no hable tanto?",
+      "options": [
+        "What do I do so that I don't talk so much?",
+        "What does Simón do so he doesn't talk so much?",
+        "What do I do so that Simón doesn't talk so much?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Llamo al abogado para que lea la carta.",
+      "options": [
+        "I'm calling the lawyer so that he reads the letter.",
+        "I'm calling the lawyer so that I can read the letter."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Te llamo para que no te preocupes.",
+      "options": [
+        "I'm calling so I won't worry.",
+        "I'm calling so you won't worry. (to a friend)",
+        "You're calling so I won't worry."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *abres* or *abras* and type the whole sentence, to a friend: *Te dejo la llave para que ___ mañana.*",
+      "answer": "Te dejo la llave para que abras mañana.",
+      "accept": [],
+      "why": "After *para que*, always the wish form: *abras*."
+    },
+    {
+      "prompt": "Pick *llamarme* or *que me llames* and type the whole sentence, to a friend: *Te doy mi número para ___.* (so you can call me)",
+      "answer": "Te doy mi número para que me llames.",
+      "accept": [],
+      "why": "Your friend does the calling, so *para que me llames*."
+    },
+    {
+      "prompt": "Tell a friend: I'm calling so you won't worry.",
+      "answer": "Te llamo para que no te preocupes.",
+      "accept": [],
+      "why": "Your friend does the worrying, so *para que* and *preocupes*."
+    },
+    {
+      "prompt": "Type in Spanish: We open early so the taxi drivers can have a black coffee.",
+      "answer": "Abrimos temprano para que los taxistas tomen un tinto.",
+      "accept": [],
+      "why": "The drivers do the drinking, so *para que tomen*. No *puedan* needed."
+    },
+    {
+      "prompt": "Tell a friend: I saved a piece of cake so you can try it.",
+      "answer": "Guardé un pedazo de torta para que lo pruebes.",
+      "accept": [
+        "Te guardé un pedazo de torta para que lo pruebes."
+      ],
+      "why": "*Probar* becomes *pruebes* for *tú*, and *lo* is the piece."
+    },
+    {
+      "prompt": "Change who does it. Now you're saving so your son can buy a car: *Ahorro plata para comprar un carro.*",
+      "answer": "Ahorro plata para que mi hijo compre un carro.",
+      "accept": [],
+      "why": "A second person buys, so *para que* and the wish form *compre*."
+    },
+    {
+      "prompt": "Say it to you all (*ustedes*): *Te llamo para que no te preocupes.*",
+      "answer": "Los llamo para que no se preocupen.",
+      "accept": [],
+      "why": "For *ustedes*, *te* becomes *los* and *se*, and the verb ends in *n*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Te dejo la llave para que abres mañana.",
+      "right": "Te dejo la llave para que abras mañana.",
+      "why": "Almost. *Para que* always takes the wish form: *abras*, not *abres*."
+    },
+    {
+      "wrong": "Te doy mi número para llamarme.",
+      "right": "Te doy mi número para que me llames.",
+      "why": "With the plain verb, the caller is you. Your friend calls, so *para que me llames*."
+    },
+    {
+      "wrong": "Ahorro plata para que compre un carro.",
+      "right": "Ahorro plata para comprar un carro.",
+      "why": "If you're the one buying, drop *que* and use the plain verb."
+    }
+  ],
+  "personal": "Write two true lines about something you do for someone else, and why: *Llamo a mi mamá los domingos para que...*, *Cocino los sábados para que...*"
+}
