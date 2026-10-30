@@ -61,7 +61,7 @@ Write `content/_queue/runs/$RUN.results.json`, a JSON array of `{"id": string, "
 - `RESULT: ok` gives ok true, limitHit false.
 - `RESULT: fail: ...` gives ok false, limitHit false (optionally add a `"reason"` field).
 - `RESULT: limit` gives ok false, limitHit true.
-- A subagent that errored or returned no RESULT line: omit it (counts as unfinished).
+- A subagent that errored or returned no RESULT line: omit it; settle gates its outputs anyway if they all exist (the gate is the authority), and releases the job only if any output is missing.
 
 ## 6. Settle
 

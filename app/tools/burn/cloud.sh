@@ -9,6 +9,11 @@ if [ -z "$(git config user.email || true)" ]; then
   git config user.name "Fluidez burn"
   git config user.email "burn@fluidez.local"
 fi
+# jobs.jsonl merge driver (git runs it with cwd = repo root)
+if [ -z "$(git config merge.jobsjsonl.driver || true)" ]; then
+  git config merge.jobsjsonl.name "Fluidez job queue merge"
+  git config merge.jobsjsonl.driver "node $(git rev-parse --show-toplevel)/app/tools/burn/merge-jobs.mjs %O %A %B"
+fi
 
 need_branch() {
   local b
@@ -149,7 +154,8 @@ const j=JSON.parse(fs.readFileSync(`${RUNS}/${RUN}.leased.json`,"utf8")).find(x=
 let r=[];try{r=JSON.parse(fs.readFileSync(RES,"utf8"))}catch{}
 const x=r.find(y=>y.id===id);
 const sj=JSON.parse(fs.readFileSync(`${RUNS}/${RUN}.stray.json`,"utf8")).perJob[id]||"";
-const state=!x?"unfinished":x.limitHit?"limit":(x.ok&&!sj)?"ok":"fail";
+const allOut=j.outputs.every(o=>fs.existsSync(o));
+const state=x?(x.limitHit?"limit":(x.ok&&!sj)?"ok":"fail"):(!allOut?"unfinished":sj?"fail":"ok");
 console.log(JSON.stringify({state,kind:j.kind,band:j.band,unit:j.unit||"",outputs:j.outputs,reason:sj||(x&&x.reason)||"agent reported failure"}));
 ' "$id")
     state=$(node -p "JSON.parse(process.argv[1]).state" "$info")
