@@ -1,0 +1,260 @@
+{
+  "id": "ch064",
+  "unit": "u22",
+  "title": "El tiempo vuela",
+  "text": "El lunes era festivo, y todos los clientes querían felicitar a Vale.\nHernando llegó a las diez, con su traje de los domingos.\nHernando: Anoche murió el Mono Ríos, mi amigo de la parada de taxis. Cincuenta años juntos.\nVale le tomó la mano.\nJhon Fredy: Se dice «mi más sentido pésame».\nTomás: Hernando, mi más sentido pésame.\nHernando: Gracias, mijo. El Mono no tenía parientes. Los taxistas éramos sus parientes.\nHernando: Estuvo en mi matrimonio. En el matrimonio fue el primero en felicitarnos y el último en salir. Y en el bautizo de Lucía, y en el bautizo de mi nieto. ¡Cómo se divertía ese hombre!\nHernando: En diciembre hacía la novena en la parada, con un nacimiento enorme y cien velitas.\nVale: ¿Un nacimiento en una parada de taxis?\nHernando: Con velitas y todo. Y este diciembre, ¿quién hace la novena?\nA las once entró el inspector Duarte.\nInspector: Los inspectores no tenemos festivos.\nEl inspector miró a Simón.\nInspector: ¿Un pájaro en un café? Eso es una multa.\nSimón: ¡Mi más sentido pésame!\nEl inspector escribió la multa: $600.000. Vale no dijo nada. No era el día.\nHernando: El funeral es mañana a las nueve, y el entierro a las once. ¿Me acompañan?\nTomás: Claro. ¿Cuántos invitados hay?\nHernando: En un entierro no hay invitados, mijo.\nSimón voló a su hombro.\nHernando: El Mono siempre decía: «En mi funeral, quiero que todos se diviertan. El tiempo vuela». Y vuela, mijo.\nEsa noche, Vale puso una vela para el Mono. Tomás puso otra vela, para Rosa.",
+  "gloss": [
+    {
+      "es": "su traje de los domingos",
+      "en": "his Sunday suit"
+    },
+    {
+      "es": "el Mono Ríos",
+      "en": "Mono Ríos (Mono is a nickname: 'Blondie')"
+    },
+    {
+      "es": "la parada de taxis",
+      "en": "the taxi rank"
+    },
+    {
+      "es": "Cincuenta años juntos.",
+      "en": "Fifty years together."
+    },
+    {
+      "es": "Vale le tomó la mano.",
+      "en": "Vale took his hand."
+    },
+    {
+      "es": "Se dice «mi más sentido pésame».",
+      "en": "You say 'my deepest condolences'."
+    },
+    {
+      "es": "Los taxistas éramos sus parientes.",
+      "en": "We taxi drivers were his relatives."
+    },
+    {
+      "es": "el primero en felicitarnos y el último en salir",
+      "en": "the first to congratulate us and the last to leave"
+    },
+    {
+      "es": "¡Cómo se divertía ese hombre!",
+      "en": "How that man enjoyed himself!"
+    },
+    {
+      "es": "un nacimiento enorme y cien velitas",
+      "en": "a huge nativity scene and a hundred little candles"
+    },
+    {
+      "es": "Con velitas y todo.",
+      "en": "Little candles and all."
+    },
+    {
+      "es": "multa",
+      "en": "fine (a penalty you pay)"
+    },
+    {
+      "es": "No era el día.",
+      "en": "It wasn't the day for it."
+    },
+    {
+      "es": "¿Me acompañan?",
+      "en": "Will you come with me?"
+    },
+    {
+      "es": "El tiempo vuela.",
+      "en": "Time flies."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Who was the Mono Ríos?",
+      "options": [
+        "Hernando's friend from the taxi rank for fifty years",
+        "Hernando's brother",
+        "An inspector from the city",
+        "Vale's cousin"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does the inspector give the café a fine?",
+      "options": [
+        "There is a parrot in the café",
+        "The coffee is cold",
+        "The café opened on a holiday",
+        "The bathroom has no door"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Vale say nothing about the fine?",
+      "options": [
+        "It isn't the day for a fight, because Hernando is grieving",
+        "She agrees with the inspector",
+        "She didn't hear him",
+        "She is happy about it"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué hacía el Mono en diciembre?",
+      "options": [
+        "La novena en la parada, con un nacimiento",
+        "Un viaje a Medellín",
+        "Una fiesta en el café",
+        "Nada, trabajaba"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Tomorrow is the funeral, and Tomás has never been to one in Spanish. He has one night to learn what you write to a friend who has lost his oldest friend.",
+  "rereadQuestions": [
+    {
+      "q": "What did the Mono always say?",
+      "options": [
+        "At my funeral I want everyone to enjoy themselves. Time flies.",
+        "Never drive at night.",
+        "Taxis are better than buses.",
+        "Don't trust Altamira."
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who are the two candles for?",
+      "options": [
+        "One for the Mono, one for Rosa",
+        "Both for Vale's birthday",
+        "One for Hernando, one for Simón",
+        "For the novena"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando answer when Tomás asks how many guests there are?",
+      "options": [
+        "At a burial there are no guests",
+        "About a hundred",
+        "Only the family",
+        "Just the taxi drivers"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:ayer-anoche",
+    "c:claro-listo",
+    "c:era",
+    "c:estuvo",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:quiero",
+    "c:sentido-pesame",
+    "c:tienes",
+    "g:demonstratives",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-irregulars",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:event-ser-en",
+    "p:exclamations-basic",
+    "p:frequency-scale",
+    "p:me-te-nos-objects",
+    "p:naci-en",
+    "p:numbers-un-una",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:question-word-order",
+    "p:telling-time",
+    "p:time-sequence-basic"
+  ],
+  "lexemes": [
+    "l:acompañar",
+    "l:amigo",
+    "l:anoche",
+    "l:año",
+    "l:bautizo",
+    "l:café",
+    "l:claro",
+    "l:cliente",
+    "l:cuánto",
+    "l:cómo",
+    "l:decir",
+    "l:diciembre",
+    "l:divertirse",
+    "l:domingo",
+    "l:día",
+    "l:enorme",
+    "l:entierro",
+    "l:entrar",
+    "l:escribir",
+    "l:estar",
+    "l:felicitar",
+    "l:festivo",
+    "l:funeral",
+    "l:hacer",
+    "l:hombre",
+    "l:hombro",
+    "l:inspector",
+    "l:invitado",
+    "l:juntos",
+    "l:llegar",
+    "l:lunes",
+    "l:mano",
+    "l:matrimonio",
+    "l:mañana",
+    "l:mijo",
+    "l:mirar",
+    "l:morir",
+    "l:multa",
+    "l:nacimiento",
+    "l:nieto",
+    "l:noche",
+    "l:novena",
+    "l:parada",
+    "l:pariente",
+    "l:pesar",
+    "l:poner",
+    "l:pájaro",
+    "l:pésame",
+    "l:querer",
+    "l:quién",
+    "l:salir",
+    "l:sentir",
+    "l:ser",
+    "l:siempre",
+    "l:taxi",
+    "l:taxista",
+    "l:tener",
+    "l:tiempo",
+    "l:tomar",
+    "l:traje",
+    "l:vela",
+    "l:velita",
+    "l:volar"
+  ]
+}

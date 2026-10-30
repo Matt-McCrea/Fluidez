@@ -1,0 +1,276 @@
+{
+  "id": "ch063",
+  "unit": "u22",
+  "title": "¡Sorpresa!",
+  "text": "El papel estaba en la nevera, debajo de los huevos: «Sábado, nueve de la noche. Fiesta para Vale. Ella no puede saber nada».\nEl sábado, Vale llegó a las cinco. Se despertó a las tres, por la torta de la boda.\nTomás: Buenos días, socia.\nVale: Todavía no soy tu socia. Firmo esta noche.\nSimón: ¡Feliz cumpleaños! ¡Feliz cumpleaños!\nVale: ¿Simón dijo algo?\nJhon Fredy: Simón le dice eso a todo el mundo. Ayer se lo dijo a un señor de ochenta años.\nA las diez, Vale salió con la torta en un taxi.\nTomás: ¡Que te vaya bien!\nHernando: ¡Que la pases bien, mija!\nVale esperó un momento en la puerta, y se fue con los ojos tristes.\nPor la tarde, el café se llenó de amigos.\nA las nueve no había luz. Vale abrió la puerta, muy cansada.\nTodos: ¡Sorpresa! ¡Feliz cumpleaños!\nSimón: ¡Que te vaya bien!\nVale se rió, y después lloró.\nTomás le dio una caja pequeña, con el lapicero de Rosa.\nTomás: Rosa firmaba todo con este lapicero. Quiero que firmes con él.\nEn el banco de la puerta, donde Rosa tomaba su tinto, Vale y Tomás firmaron el contrato.\nHernando tomó su taza para brindar.\nHernando: Socios, ojalá tengan mucho éxito. Y ojalá Rosa los vea.\nJhon Fredy: Yo también quiero decir algo. Primero, la máquina de café...\nTodos: ¡No!\nCelebraron hasta la una. Al final, Vale bailó con Tomás.\nVale: Gracias, socio.\nA la una y diez sonó el celular de Hernando, y Hernando se quedó muy serio.",
+  "gloss": [
+    {
+      "es": "debajo de los huevos",
+      "en": "under the eggs"
+    },
+    {
+      "es": "Ella no puede saber nada.",
+      "en": "She can't know anything."
+    },
+    {
+      "es": "por la torta de la boda",
+      "en": "because of the wedding cake"
+    },
+    {
+      "es": "a todo el mundo",
+      "en": "to everybody"
+    },
+    {
+      "es": "A las nueve no había luz.",
+      "en": "At nine the lights were off."
+    },
+    {
+      "es": "lapicero",
+      "en": "pen"
+    },
+    {
+      "es": "En el banco de la puerta",
+      "en": "On the bench by the door"
+    },
+    {
+      "es": "para brindar",
+      "en": "to make a toast"
+    },
+    {
+      "es": "Y ojalá Rosa los vea.",
+      "en": "And I hope Rosa can see you."
+    },
+    {
+      "es": "Celebraron hasta la una.",
+      "en": "They celebrated until one o'clock."
+    },
+    {
+      "es": "se fue con los ojos tristes",
+      "en": "she left with sad eyes"
+    },
+    {
+      "es": "el café se llenó de amigos",
+      "en": "the café filled up with friends"
+    },
+    {
+      "es": "Socios, ojalá tengan mucho éxito.",
+      "en": "Partners, I hope you have a lot of success."
+    },
+    {
+      "es": "Hernando se quedó muy serio",
+      "en": "Hernando went very serious"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Vale leave for the wedding with sad eyes?",
+      "options": [
+        "She thinks nobody remembered her birthday",
+        "She burned the cake",
+        "Tomás won't sign the contract",
+        "The taxi is late"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How does Jhon Fredy explain Simón's 'Happy birthday'?",
+      "options": [
+        "Simón says it to everybody, even an eighty year old man",
+        "It is Simón's birthday",
+        "Simón heard it on the radio",
+        "Hernando taught him that morning"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is Tomás's present for Vale?",
+      "options": [
+        "Rosa's pen, to sign the contract",
+        "A new oven",
+        "A plane ticket to Medellín",
+        "A cake"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Dónde firmó Vale el contrato?",
+      "options": [
+        "En el banco de la puerta",
+        "En la cocina",
+        "En la oficina del notario",
+        "En el taxi"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What happens at ten past one?",
+      "options": [
+        "Hernando gets a phone call that makes him serious",
+        "The lights go out again",
+        "Altamira arrives",
+        "Simón flies away"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "The party is over, the contract is signed, and Hernando's phone has rung at an hour when it never rings. On Monday the inspector is due back too.",
+  "rereadQuestions": [
+    {
+      "q": "Where was the secret party plan hidden?",
+      "options": [
+        "In the fridge, under the eggs",
+        "In Simón's cage",
+        "Under the counter",
+        "In Mariana's notebook"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does everybody shout 'No' at Jhon Fredy?",
+      "options": [
+        "He starts another long speech about the coffee machine",
+        "He wants to dance",
+        "He eats the last cake",
+        "He wants to sign the contract"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does the bench by the door matter?",
+      "options": [
+        "Rosa used to drink her tinto there",
+        "Hernando bought it",
+        "Altamira wants it",
+        "Vale was born there"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:al-final",
+    "c:ayer-anoche",
+    "c:bien-y-tu",
+    "c:buen-viaje",
+    "c:con-el-ella",
+    "c:feliz-cumpleanos",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:ojala",
+    "c:que-la-pases-bien",
+    "c:quiero",
+    "c:todavia-no",
+    "g:adjective-agreement",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:negation-words",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "p:cerca-de",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:indefinites-basic",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:tambien-tampoco",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:todos-los-dias"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:amigo",
+    "l:ayer",
+    "l:año",
+    "l:bailar",
+    "l:banco",
+    "l:bien",
+    "l:boda",
+    "l:brindar",
+    "l:bueno",
+    "l:café",
+    "l:caja",
+    "l:cansado",
+    "l:celebrar",
+    "l:celular",
+    "l:contrato",
+    "l:cumpleaños",
+    "l:dar",
+    "l:debajo",
+    "l:decir",
+    "l:despertarse",
+    "l:después",
+    "l:día",
+    "l:esperar",
+    "l:estar",
+    "l:feliz",
+    "l:fiesta",
+    "l:final",
+    "l:firmar",
+    "l:huevo",
+    "l:ir",
+    "l:irse",
+    "l:llegar",
+    "l:llenar",
+    "l:llorar",
+    "l:luz",
+    "l:mija",
+    "l:momento",
+    "l:mundo",
+    "l:máquina",
+    "l:nevera",
+    "l:noche",
+    "l:ojo",
+    "l:papel",
+    "l:pasar",
+    "l:pequeño",
+    "l:poder",
+    "l:puerta",
+    "l:quedarse",
+    "l:querer",
+    "l:reír",
+    "l:saber",
+    "l:salir",
+    "l:ser",
+    "l:serio",
+    "l:señor",
+    "l:socio",
+    "l:sonar",
+    "l:sorpresa",
+    "l:sábado",
+    "l:tarde",
+    "l:taxi",
+    "l:taza",
+    "l:tener",
+    "l:tinto",
+    "l:tomar",
+    "l:torta",
+    "l:triste",
+    "l:ver",
+    "l:éxito"
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "id": "ch065",
+  "unit": "u22",
+  "title": "Cuarenta y siete diciembres",
+  "text": "A las siete de la mañana, Vale cosía el traje de Hernando.\nVale: No se mueva, Hernando. Un momentico.\nHernando: Rosa me cosía la ropa. Cuarenta años, y nunca aprendí.\nTomás revisaba su mensaje por quinta vez. «Querido Hernando: lo siento mucho. El Mono era...». No le gustó.\nTomás: No soy capaz. Tampoco en inglés soy capaz.\nVale: Escribe poquito, pero de verdad.\nHernando reunió a los taxistas en la parada.\nAntes de salir, Hernando buscó algo debajo del asiento de la Burra, y cayeron muchas tarjetas.\n«¡Feliz Navidad, Hernando! Rosa. 1979».\nHabía cuarenta y siete tarjetas: cuarenta y siete diciembres.\nTomás: ¿Usted las guardó todas?\nHernando: Todas. Es raro, ¿no? Un viejo con tarjeticas.\nTomás: No es raro.\nTomás leyó la última. «Feliz Navidad, Hernando. Si un día viene mi nieto, cuídelo».\nTomás no dijo nada. Hernando tampoco.\nEn el funeral, Tomás le dio una tarjeta, como Rosa: «El Mono tenía razón: el tiempo vuela. Lo acompaño en este momento. Tomás».\nHernando la guardó con las tarjetas de Rosa.\nAl final, todos los taxis sonaron juntos, y Simón gritó desde la Burra:\nSimón: ¡Que se diviertan!\nTodo el mundo se rió, y Hernando más que nadie.\nHernando: Eso es lo que quería el Mono.\nPor la tarde, Mariana revisó la multa del inspector.\nMariana: Esta multa es un error. Si es necesario, hablamos con un juez. Pero primero necesitamos todos los papeles del café, a nombre de ustedes.\nVale y Tomás se miraron. Los papeles de Rosa estaban en tres cajas, y ninguna tenía orden.",
+  "gloss": [
+    {
+      "es": "Vale cosía el traje de Hernando.",
+      "en": "Vale was sewing Hernando's suit."
+    },
+    {
+      "es": "No se mueva, Hernando.",
+      "en": "Don't move, Hernando."
+    },
+    {
+      "es": "Un momentico.",
+      "en": "Just a sec."
+    },
+    {
+      "es": "por quinta vez",
+      "en": "for the fifth time"
+    },
+    {
+      "es": "No soy capaz.",
+      "en": "I can't do it."
+    },
+    {
+      "es": "poquito",
+      "en": "a little bit"
+    },
+    {
+      "es": "Hernando reunió a los taxistas en la parada",
+      "en": "Hernando gathered the taxi drivers at the rank"
+    },
+    {
+      "es": "buscó algo debajo del asiento de la Burra",
+      "en": "looked for something under the Burra's seat"
+    },
+    {
+      "es": "y cayeron muchas tarjetas",
+      "en": "and lots of cards fell out"
+    },
+    {
+      "es": "cuarenta y siete diciembres",
+      "en": "forty seven Decembers"
+    },
+    {
+      "es": "Si un día viene mi nieto, cuídelo.",
+      "en": "If my grandson comes one day, look after him."
+    },
+    {
+      "es": "Lo acompaño en este momento.",
+      "en": "I'm with you at this time."
+    },
+    {
+      "es": "y Hernando más que nadie",
+      "en": "and Hernando most of all"
+    },
+    {
+      "es": "multa",
+      "en": "fine (a penalty you pay)"
+    },
+    {
+      "es": "a nombre de ustedes",
+      "en": "in your names"
+    },
+    {
+      "es": "ninguna tenía orden",
+      "en": "none of them was in any order"
+    },
+    {
+      "es": "todos los taxis sonaron juntos",
+      "en": "all the taxis honked together"
+    },
+    {
+      "es": "Un viejo con tarjeticas.",
+      "en": "An old man and his little cards."
+    },
+    {
+      "es": "No le gustó.",
+      "en": "He didn't like it."
+    }
+  ],
+  "questions": [
+    {
+      "q": "What falls out from under the Burra's seat?",
+      "options": [
+        "Forty seven Christmas cards from Rosa",
+        "Joaquín's key",
+        "Altamira's letter",
+        "Photos of Hernando's grandchildren"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What did Rosa write on the last card?",
+      "options": [
+        "If my grandson comes one day, look after him",
+        "Sell the café",
+        "Happy birthday, Hernando",
+        "Don't trust Altamira"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does everyone laugh at the funeral?",
+      "options": [
+        "Simón shouts 'Enjoy yourselves', which is what the Mono wanted",
+        "Tomás falls over",
+        "The Burra won't start",
+        "Jhon Fredy gives a speech"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué necesitan para hablar con un juez?",
+      "options": [
+        "Todos los papeles del café",
+        "Un pájaro nuevo",
+        "Una torta",
+        "Un taxi"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "To fight the fine in front of a judge, the café needs every paper in the owners' names, and Rosa kept hers in three boxes with no order at all. Tomorrow Tomás meets Colombian paperwork.",
+  "rereadQuestions": [
+    {
+      "q": "Who used to sew Hernando's clothes?",
+      "options": [
+        "Rosa",
+        "Gloria",
+        "His daughter Lucía",
+        "The Mono"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What advice does Vale give Tomás about his message?",
+      "options": [
+        "Write a little, but make it true",
+        "Write it in English",
+        "Copy a message from the internet",
+        "Ask Mariana to write it"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando do with Tomás's card?",
+      "options": [
+        "He keeps it with Rosa's cards",
+        "He reads it out loud",
+        "He gives it to the Mono's family",
+        "He leaves it in the café"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:a-nombre-de",
+    "c:al-final",
+    "c:en-serio",
+    "c:era",
+    "c:feliz-navidad",
+    "c:no-cierto",
+    "c:no-se",
+    "c:que-la-pases-bien",
+    "c:querido-querida",
+    "c:sentido-pesame",
+    "c:un-momentico",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:comparatives",
+    "g:diminutives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:negation-words",
+    "g:negative-commands",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-spelling-stem",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:subj-wishes",
+    "p:cerca-de",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:me-te-nos-objects",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:poco-un-poco",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:se-reciproco",
+    "p:telling-time",
+    "p:tener-razon",
+    "p:time-sequence-basic",
+    "p:todos-los-dias",
+    "p:viejo-antiguo-mayor"
+  ],
+  "lexemes": [
+    "l:acompañar",
+    "l:antes",
+    "l:aprender",
+    "l:asiento",
+    "l:año",
+    "l:buscar",
+    "l:caer",
+    "l:café",
+    "l:caja",
+    "l:capaz",
+    "l:coser",
+    "l:cuidar",
+    "l:dar",
+    "l:debajo",
+    "l:decir",
+    "l:diciembre",
+    "l:divertirse",
+    "l:día",
+    "l:error",
+    "l:escribir",
+    "l:estar",
+    "l:feliz",
+    "l:final",
+    "l:funeral",
+    "l:gritar",
+    "l:guardar",
+    "l:gustar",
+    "l:hablar",
+    "l:inglés",
+    "l:inspector",
+    "l:juez",
+    "l:juntos",
+    "l:leer",
+    "l:mañana",
+    "l:mensaje",
+    "l:mirar",
+    "l:momento",
+    "l:mover",
+    "l:multa",
+    "l:mundo",
+    "l:necesario",
+    "l:necesitar",
+    "l:nieto",
+    "l:nombre",
+    "l:orden",
+    "l:papel",
+    "l:parada",
+    "l:poquito",
+    "l:querer",
+    "l:raro",
+    "l:razón",
+    "l:reunir",
+    "l:revisar",
+    "l:reír",
+    "l:ropa",
+    "l:salir",
+    "l:sentir",
+    "l:ser",
+    "l:sonar",
+    "l:tarde",
+    "l:tarjeta",
+    "l:taxi",
+    "l:taxista",
+    "l:tener",
+    "l:tiempo",
+    "l:traje",
+    "l:venir",
+    "l:verdad",
+    "l:vez",
+    "l:viejo",
+    "l:volar"
+  ]
+}
