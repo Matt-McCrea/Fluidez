@@ -1,0 +1,43 @@
+{
+  "node": "p:ser-un-acierto",
+  "hook": {
+    "line": "A good review does not just say \"nice\". It says which decision was right. Mariana wants to say that keeping Rosa's old counter was a good call, and Spanish has a neat frame for exactly that.",
+    "es": "Fue un acierto conservar el mostrador.",
+    "en": "Keeping the counter was a good call."
+  },
+  "examples": [
+    { "es": "Fue un acierto cambiar de director.", "en": "Changing director was a good call." },
+    { "es": "Fue un gran acierto abrir la terraza.", "en": "Opening the terrace was a great call." },
+    { "es": "Contratar a Vale fue un acierto.", "en": "Hiring Vale was a good call." },
+    { "es": "Fue un desacierto subir los precios.", "en": "Raising the prices was a mistake." },
+    { "es": "La música fue un desacierto.", "en": "The music was a poor choice." },
+    { "es": "Es un acierto no cambiar el menú.", "en": "Not changing the menu is a good call." }
+  ],
+  "rule": "To say a decision was right, use *ser un acierto*. The decision itself is an infinitive: *Fue un acierto abrir la terraza*. You can also put it first: *Abrir la terraza fue un acierto*.\n\nTo say it was wrong, swap the noun for *un desacierto*.\n\nYou can add *gran* to stress it: *un gran acierto*.\n\nIt also works with plain nouns: *La música fue un desacierto*.\n\nEnglish says \"it was a good call to...\" or just uses an *-ing* subject. Spanish uses the infinitive both times.",
+  "smallPrint": "Teachers call this an infinitive used as a subject, with a noun predicate that evaluates it.",
+  "readAndPick": [
+    { "es": "Fue un acierto cambiar de director.", "options": ["Changing director was a mistake.", "Changing director was a good call.", "Changing director will be a good call."], "answer": 1 },
+    { "es": "Fue un desacierto subir los precios.", "options": ["Raising the prices was a mistake.", "Raising the prices was a good call.", "Raising the prices will be a mistake."], "answer": 0 },
+    { "es": "Contratar a Vale fue un acierto.", "options": ["Vale hired someone, and it was a mistake.", "Hiring Vale was a mistake.", "Hiring Vale was a good call."], "answer": 2 },
+    { "es": "La música fue un desacierto.", "options": ["The music was a poor choice.", "The music was a great choice.", "The music is a poor choice."], "answer": 0 },
+    { "es": "Fue un gran acierto abrir la terraza.", "options": ["Opening the terrace was a small mistake.", "Opening the terrace was a great call.", "Opening the terrace was a good call."], "answer": 1 },
+    { "es": "Es un acierto no cambiar el menú.", "options": ["Not changing the menu is a mistake.", "Changing the menu is a good call.", "Not changing the menu is a good call."], "answer": 2 },
+    { "es": "Fue un desacierto cerrar la cocina.", "options": ["Closing the kitchen was a mistake.", "Closing the kitchen was a good call.", "Opening the kitchen was a mistake."], "answer": 0 },
+    { "es": "Abrir la terraza fue un acierto.", "options": ["Opening the terrace was a mistake.", "Opening the terrace was a good call.", "Opening the terrace will be a good call."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *acierto* or *desacierto* and type the whole sentence, to say it was a good call: *Fue un ___ abrir la terraza.*", "answer": "Fue un acierto abrir la terraza.", "accept": [], "why": "A right decision is an *acierto*; *desacierto* would mean it was wrong." },
+    { "prompt": "Pick *acierto* or *desacierto* and type the whole sentence, to say it was a mistake: *Fue un ___ subir los precios.*", "answer": "Fue un desacierto subir los precios.", "accept": [], "why": "A wrong decision is a *desacierto*." },
+    { "prompt": "Type in Spanish: Changing director was a good call.", "answer": "Fue un acierto cambiar de director.", "accept": ["Cambiar de director fue un acierto."], "why": "*Fue un acierto*, then the decision as an infinitive." },
+    { "prompt": "Type in Spanish: Hiring Vale was a good call.", "answer": "Contratar a Vale fue un acierto.", "accept": ["Fue un acierto contratar a Vale."], "why": "The infinitive can go first or last." },
+    { "prompt": "Type in Spanish: The music was a poor choice.", "answer": "La música fue un desacierto.", "accept": [], "why": "A plain noun can be the subject too." },
+    { "prompt": "Make it stronger: *Fue un acierto abrir la terraza.* Say it was a great call.", "answer": "Fue un gran acierto abrir la terraza.", "accept": [], "why": "*Gran* goes before *acierto* to stress it." },
+    { "prompt": "Make it the opposite: *Fue un acierto cambiar de director.* Say it was a mistake.", "answer": "Fue un desacierto cambiar de director.", "accept": [], "why": "Swap *acierto* for *desacierto* and keep the rest." }
+  ],
+  "pitfalls": [
+    { "wrong": "Fue un acierto cambiando de director.", "right": "Fue un acierto cambiar de director.", "why": "Almost. Spanish uses the infinitive here, not the *-ando* form that English *-ing* suggests." },
+    { "wrong": "Fue una acierto abrir la terraza.", "right": "Fue un acierto abrir la terraza.", "why": "Almost. *Acierto* is masculine, so *un*." },
+    { "wrong": "Fue un acierto que abrir la terraza.", "right": "Fue un acierto abrir la terraza.", "why": "Almost. The infinitive follows directly, with no *que*." }
+  ],
+  "personal": "Think of a decision you made that turned out well and say so with *Fue un acierto...*."
+}

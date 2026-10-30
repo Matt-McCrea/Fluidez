@@ -1,0 +1,43 @@
+{
+  "node": "p:fuera-de-serie",
+  "hook": {
+    "line": "Some praise is too big for \"very good\". Tomás wants to say that Vale's cakes are in a league of their own, and Spanish has an exact phrase for someone or something that stands out from the rest.",
+    "es": "Vale es una pastelera fuera de serie.",
+    "en": "Vale is a pastry chef in a league of her own."
+  },
+  "examples": [
+    { "es": "Es una cantante fuera de serie.", "en": "She's a singer in a league of her own." },
+    { "es": "Es un espectáculo fuera de lo común.", "en": "It's an out-of-the-ordinary show." },
+    { "es": "Vale es una pastelera fuera de serie.", "en": "Vale is a pastry chef in a league of her own." },
+    { "es": "Hernando es un narrador fuera de serie.", "en": "Hernando is a storyteller in a league of his own." },
+    { "es": "Tienen un equipo fuera de serie.", "en": "They have an outstanding team." },
+    { "es": "Mariana es un fuera de serie.", "en": "Mariana is one of a kind." }
+  ],
+  "rule": "Put *fuera de serie* right after the person or thing you are praising: *una cantante fuera de serie*, *un equipo fuera de serie*. It never changes for masculine, feminine or plural.\n\nYou can also make it a noun: *un fuera de serie* is someone outstanding.\n\n*Fuera de lo común* means out of the ordinary. It is usually good, but it can be neutral.\n\nEnglish uses an adjective before the noun (\"outstanding\"). Spanish puts this phrase after it.",
+  "smallPrint": "Teachers call these post-nominal modifiers: the phrase works as an adjective that goes after its noun.",
+  "readAndPick": [
+    { "es": "Es una cantante fuera de serie.", "options": ["She's a singer in a league of her own.", "She's an ordinary singer.", "She was a singer in a league of her own."], "answer": 0 },
+    { "es": "Es un espectáculo fuera de lo común.", "options": ["It's a boring show.", "It's an out-of-the-ordinary show.", "It's an ordinary show."], "answer": 1 },
+    { "es": "Vale es una pastelera fuera de serie.", "options": ["Vale is an ordinary pastry chef.", "Vale is a pastry chef who is out of work.", "Vale is a pastry chef in a league of her own."], "answer": 2 },
+    { "es": "Hernando es un narrador fuera de serie.", "options": ["Hernando is a storyteller in a league of his own.", "Hernando is an ordinary storyteller.", "Hernando was a storyteller in a league of his own."], "answer": 0 },
+    { "es": "Tienen un equipo fuera de serie.", "options": ["They have no team.", "They have an ordinary team.", "They have an outstanding team."], "answer": 2 },
+    { "es": "Mariana es un fuera de serie.", "options": ["Mariana is one of a kind.", "Mariana is out of series.", "Mariana is out of the country."], "answer": 0 },
+    { "es": "La tertulia fue algo fuera de lo común.", "options": ["The gathering was nothing special.", "The gathering was something out of the ordinary.", "The gathering was the same as always."], "answer": 1 },
+    { "es": "Son unos músicos fuera de serie.", "options": ["He is an outstanding musician.", "They are outstanding musicians.", "They are ordinary musicians."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *una* or *un* and type the whole sentence: *Vale es ___ pastelera fuera de serie.*", "answer": "Vale es una pastelera fuera de serie.", "accept": [], "why": "*Pastelera* is feminine, so *una*." },
+    { "prompt": "Pick *una* or *un* and type the whole sentence: *Hernando es ___ narrador fuera de serie.*", "answer": "Hernando es un narrador fuera de serie.", "accept": [], "why": "*Narrador* is masculine, so *un*." },
+    { "prompt": "Type in Spanish: She's a singer in a league of her own.", "answer": "Es una cantante fuera de serie.", "accept": [], "why": "Noun first, then *fuera de serie*." },
+    { "prompt": "Type in Spanish: They have an outstanding team.", "answer": "Tienen un equipo fuera de serie.", "accept": [], "why": "The phrase goes after *equipo*." },
+    { "prompt": "Type in Spanish: It's an out-of-the-ordinary show.", "answer": "Es un espectáculo fuera de lo común.", "accept": [], "why": "*Fuera de lo común* works the same way, after the noun." },
+    { "prompt": "Make it plural: *Es un músico fuera de serie.* Type: They are outstanding musicians.", "answer": "Son unos músicos fuera de serie.", "accept": [], "why": "Only the noun and verb become plural; *fuera de serie* never changes." },
+    { "prompt": "Use it as a noun: *Mariana es una periodista fuera de serie.* Type: Mariana is one of a kind.", "answer": "Mariana es un fuera de serie.", "accept": [], "why": "Drop the noun and put *un* before the phrase." }
+  ],
+  "pitfalls": [
+    { "wrong": "Es una fuera de serie cantante.", "right": "Es una cantante fuera de serie.", "why": "Almost. The phrase goes after the noun it describes." },
+    { "wrong": "Son unos músicos fueras de series.", "right": "Son unos músicos fuera de serie.", "why": "Almost. The phrase is fixed and never takes a plural ending." },
+    { "wrong": "Es una pastelera de serie fuera.", "right": "Es una pastelera fuera de serie.", "why": "Almost. The order is fixed: *fuera de serie*." }
+  ],
+  "personal": "Think of someone you admire and say what makes them special with *fuera de serie*."
+}

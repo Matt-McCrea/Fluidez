@@ -1,0 +1,43 @@
+{
+  "node": "p:dar-en-el-clavo",
+  "hook": {
+    "line": "When someone says exactly the right thing, English hits a nail on the head, and Spanish does the same, but with a different preposition. Hernando says it whenever a customer finally guesses what Rosa's secret ingredient was.",
+    "es": "Diste en el clavo con ese regalo.",
+    "en": "You hit the nail on the head with that present."
+  },
+  "examples": [
+    { "es": "Diste en el clavo con ese regalo.", "en": "You hit the nail on the head with that present. (to a friend)" },
+    { "es": "La crítica dio en el clavo.", "en": "The review hit the nail on the head." },
+    { "es": "Dimos en el clavo con el nombre del café.", "en": "We hit the nail on the head with the name of the café." },
+    { "es": "Mariana dio en el clavo: el problema es el precio.", "en": "Mariana hit the nail on the head: the problem is the price." },
+    { "es": "No di en el clavo con el menú.", "en": "I didn't hit the nail on the head with the menu." },
+    { "es": "Usted dio en el clavo, Hernando.", "en": "You hit the nail on the head, Hernando. (formal)" }
+  ],
+  "rule": "*Dar en el clavo* means to get exactly right. *Dar* changes with the person: *di*, *diste*, *dio*, *dimos*, *dieron*. The rest is fixed: *en el clavo*.\n\nAdd *con* for what you got right: *dar en el clavo con el nombre*.\n\nTo say you missed, use *no*: *No di en el clavo*.\n\nEnglish says \"on the head\". Spanish just says \"in the nail\".",
+  "smallPrint": "Teachers call this an idiom: the meaning is the whole phrase, not the words one by one.",
+  "readAndPick": [
+    { "es": "Diste en el clavo con ese regalo.", "options": ["I hit the nail on the head with that present.", "You hit the nail on the head with that present.", "She hit the nail on the head with that present."], "answer": 1 },
+    { "es": "La crítica dio en el clavo.", "options": ["The review hit the nail on the head.", "The review missed the point.", "The review hit the nail on the head, I did."], "answer": 0 },
+    { "es": "Dimos en el clavo con el nombre del café.", "options": ["They hit the nail on the head with the name of the café.", "We missed with the name of the café.", "We hit the nail on the head with the name of the café."], "answer": 2 },
+    { "es": "No di en el clavo con el menú.", "options": ["I didn't hit the nail on the head with the menu.", "I hit the nail on the head with the menu.", "You didn't hit the nail on the head with the menu."], "answer": 0 },
+    { "es": "Mariana dio en el clavo: el problema es el precio.", "options": ["Mariana missed the point: the problem is the price.", "Mariana hit the nail on the head: the problem is the price.", "Mariana hit a nail: the problem is the price."], "answer": 1 },
+    { "es": "Usted dio en el clavo, Hernando.", "options": ["You hit the nail on the head, Hernando. (formal)", "I hit the nail on the head, Hernando.", "You hit the nail on the head, Hernando. (to a friend)"], "answer": 0 },
+    { "es": "Vale no dio en el clavo con la receta.", "options": ["Vale got the recipe exactly right.", "Vale did not get the recipe right.", "I did not get the recipe right."], "answer": 1 },
+    { "es": "Dieron en el clavo con el decorado.", "options": ["They hit the nail on the head with the decor.", "We hit the nail on the head with the decor.", "She hit the nail on the head with the decor."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *diste* or *dio* and type the whole sentence, to a friend: *___ en el clavo con ese regalo.*", "answer": "Diste en el clavo con ese regalo.", "accept": [], "why": "You are talking to a friend (*tú*), so *diste*." },
+    { "prompt": "Pick *di* or *dimos* and type the whole sentence, about us: *___ en el clavo con el nombre del café.*", "answer": "Dimos en el clavo con el nombre del café.", "accept": [], "why": "It is *we*, so *dimos*." },
+    { "prompt": "Type in Spanish: The review hit the nail on the head.", "answer": "La crítica dio en el clavo.", "accept": [], "why": "One review, so *dio*." },
+    { "prompt": "Type in Spanish: I didn't hit the nail on the head with the menu.", "answer": "No di en el clavo con el menú.", "accept": [], "why": "*No* goes before *di*, and *con* names what you missed." },
+    { "prompt": "Type in Spanish, to Hernando, formally: You hit the nail on the head, Hernando.", "answer": "Usted dio en el clavo, Hernando.", "accept": ["Dio en el clavo, Hernando."], "why": "*Usted* takes the same form as *he* or *she*: *dio*." },
+    { "prompt": "Say it about Mariana: *Diste en el clavo.* Type: Mariana hit the nail on the head.", "answer": "Mariana dio en el clavo.", "accept": [], "why": "The verb changes to match the person, *dio*." },
+    { "prompt": "Make it negative: *Dimos en el clavo con el menú.*", "answer": "No dimos en el clavo con el menú.", "accept": [], "why": "*No* goes straight before the verb." }
+  ],
+  "pitfalls": [
+    { "wrong": "Diste el clavo en la cabeza.", "right": "Diste en el clavo.", "why": "Almost. Spanish has no \"head\" here, just *dar en el clavo*." },
+    { "wrong": "Diste en el clavo de ese regalo.", "right": "Diste en el clavo con ese regalo.", "why": "Almost. What you got right follows *con*." },
+    { "wrong": "Diste en clavo.", "right": "Diste en el clavo.", "why": "Almost. The *el* is part of the phrase." }
+  ],
+  "personal": "Think of the last time someone said something that was exactly right, and tell them *Diste en el clavo*."
+}

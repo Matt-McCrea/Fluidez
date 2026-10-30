@@ -1,0 +1,43 @@
+{
+  "node": "p:plata-no-hay",
+  "hook": {
+    "line": "When Don Hernando says he does not drink something, he does not say *no tomo café*. He puts the coffee first and lets the sentence land on it. It is how Colombians sound firm and a little dramatic about money, food and habits.",
+    "es": "Plata no hay.",
+    "en": "Money, there isn't any."
+  },
+  "examples": [
+    { "es": "Plata no hay.", "en": "Money, there isn't any." },
+    { "es": "Café no tomo, prefiero el té.", "en": "Coffee I don't drink, I prefer tea." },
+    { "es": "Discos tiene por montones.", "en": "Records, he has loads of." },
+    { "es": "Sillas no hay, pero mesas sí.", "en": "Chairs there aren't, but tables there are." },
+    { "es": "Carne no comemos, somos vegetarianos.", "en": "Meat we don't eat, we're vegetarians." },
+    { "es": "Carro no tengo, voy a pie.", "en": "A car I don't have, I go on foot." }
+  ],
+  "rule": "To stress a thing, move it to the front. Use the bare noun: no *el*, no *la*, no *un*. And add no pronoun: not *café no lo tomo* but *café no tomo*.\n\nThe verb follows, with its *no* if it is negative: *Plata no hay*.\n\nIt names a whole kind of thing (any money, any coffee) and often hints at a contrast: *but tea, yes*.\n\nWith a definite noun the pronoun comes back: *El café no lo tomo frío*.",
+  "smallPrint": "Teachers call this topicalisation of an indefinite object. A bare noun fronted this way takes no clitic pronoun.",
+  "readAndPick": [
+    { "es": "Plata no hay.", "options": ["Money, there isn't any.", "The money isn't here, someone took it.", "There is plenty of money."], "answer": 0 },
+    { "es": "Café no tomo, prefiero el té.", "options": ["I drink coffee, not tea.", "I don't drink the coffee someone just made.", "Coffee I don't drink, I prefer tea."], "answer": 2 },
+    { "es": "El café no lo tomo frío.", "options": ["I don't drink coffee at all.", "I don't drink my coffee cold.", "Cold coffee is the one I drink."], "answer": 1 },
+    { "es": "Discos tiene por montones.", "options": ["He has no records.", "He sells records.", "Records, he has loads of."], "answer": 2 },
+    { "es": "Sillas no hay, pero mesas sí.", "options": ["There are chairs but no tables.", "There are no chairs, but there are tables.", "There are neither chairs nor tables."], "answer": 1 },
+    { "es": "Carro no tengo, voy a pie.", "options": ["I have no car, I walk.", "I have a car, but I walk.", "I don't have the car today, I walk."], "answer": 0 },
+    { "es": "Carne no comemos, somos vegetarianos.", "options": ["We don't eat meat, we're vegetarians.", "I don't eat meat, I'm vegetarian.", "We eat meat, we're not vegetarians."], "answer": 0 },
+    { "es": "La carne no la comemos fría.", "options": ["We don't eat meat at all.", "We eat cold meat.", "We don't eat the meat cold."], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "Choose *Carne* or *La carne* and type the whole sentence, a man speaking about himself: *___ no como, soy vegetariano.*", "answer": "Carne no como, soy vegetariano.", "accept": [], "why": "You mean meat as a kind of food, so the bare noun, no article." },
+    { "prompt": "Type in Spanish, noun first: There's no money.", "answer": "Plata no hay.", "accept": [], "why": "Bare noun first, then *no hay*, and no pronoun." },
+    { "prompt": "Type in Spanish, noun first: Coffee I don't drink, I prefer tea. (I)", "answer": "Café no tomo, prefiero el té.", "accept": [], "why": "*Café* leads, bare, with no *lo*." },
+    { "prompt": "Move the noun to the front: *No hay sillas.*", "answer": "Sillas no hay.", "accept": [], "why": "Bare noun, then *no hay*." },
+    { "prompt": "Move the noun to the front: *No tengo carro.* (I)", "answer": "Carro no tengo.", "accept": [], "why": "*Carro* leads, bare, and the verb keeps its *no*." },
+    { "prompt": "Say it about *we*: *Café no tomo.*", "answer": "Café no tomamos.", "accept": [], "why": "The verb changes to *tomamos*, and the pattern stays the same." },
+    { "prompt": "Type in Spanish, noun first: He has loads of records. (he)", "answer": "Discos tiene por montones.", "accept": [], "why": "*Discos* leads, bare, and *por montones* means loads." }
+  ],
+  "pitfalls": [
+    { "wrong": "Plata no la hay.", "right": "Plata no hay.", "why": "Almost. A bare noun in front takes no pronoun, so no *la*." },
+    { "wrong": "La plata no hay.", "right": "Plata no hay.", "why": "Almost. For \"any money\" at all, drop the article." },
+    { "wrong": "Plata hay no.", "right": "Plata no hay.", "why": "Almost. The *no* stays right before the verb." }
+  ],
+  "personal": "Say one thing you never eat or drink, noun first, like *Café no tomo*."
+}

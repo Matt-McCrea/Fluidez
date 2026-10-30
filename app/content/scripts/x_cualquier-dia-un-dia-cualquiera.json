@@ -1,0 +1,43 @@
+{
+  "node": "x:cualquier-dia-un-dia-cualquiera",
+  "hook": {
+    "line": "Tomás wants to tell Vale she can drop by *any* day, and later to say that the morning Altamira came was just an *ordinary* one. In English that is two different words. In Spanish it is one word, and the only thing that changes is which side of the noun it sits on.",
+    "es": "Ven cualquier día.",
+    "en": "Come any day."
+  },
+  "examples": [
+    { "es": "Ven cualquier día.", "en": "Come any day. (to a friend)" },
+    { "es": "Era un día cualquiera.", "en": "It was an ordinary day." },
+    { "es": "Cualquier persona puede entrar al café.", "en": "Anyone can come into the café." },
+    { "es": "Fue una tarde cualquiera.", "en": "It was an ordinary afternoon." },
+    { "es": "Puedes venir a cualquier hora.", "en": "You can come at any time. (to a friend)" },
+    { "es": "Es un tinto cualquiera, nada especial.", "en": "It's an ordinary coffee, nothing special." }
+  ],
+  "rule": "Before the noun, *cualquier* means *any*: you choose, it makes no difference. *Cualquier día*, *cualquier hora*.\n\nAfter the noun, *cualquiera* means *ordinary*: nothing special about it. *Un día cualquiera*, *una tarde cualquiera*.\n\nThe shape changes too. Before a noun it is short and the same for masculine and feminine: *cualquier día*, *cualquier persona*. After a noun it keeps its full ending: *un día cualquiera*.\n\nEnglish needs two different words. Spanish uses one word and lets its position carry the meaning.",
+  "smallPrint": "Teachers call the shortening of *cualquiera* before a noun apocope, the same thing that turns *bueno* into *buen*. The meaning change follows the position of the adjective.",
+  "readAndPick": [
+    { "es": "Ven cualquier día.", "options": ["Come any day.", "Come on an ordinary day.", "Come every day."], "answer": 0 },
+    { "es": "Era un día cualquiera.", "options": ["It was any day you like.", "It was an ordinary day.", "It was a special day."], "answer": 1 },
+    { "es": "Cualquier persona puede entrar al café.", "options": ["An ordinary person can come into the café.", "Everyone has come into the café.", "Anyone can come into the café."], "answer": 2 },
+    { "es": "Fue una tarde cualquiera.", "options": ["It was an ordinary afternoon.", "It was any afternoon you choose.", "It was a long afternoon."], "answer": 0 },
+    { "es": "Puedes venir a cualquier hora.", "options": ["You can come at an ordinary hour.", "You can come every hour.", "You can come at any time."], "answer": 2 },
+    { "es": "Es un tinto cualquiera, nada especial.", "options": ["It's an ordinary coffee, nothing special.", "Any coffee will do, nothing special.", "It's a special coffee."], "answer": 0 },
+    { "es": "Cualquier mesa sirve.", "options": ["An ordinary table will do.", "Any table will do.", "Every table is free."], "answer": 1 },
+    { "es": "Fue un martes cualquiera.", "options": ["It was any Tuesday you like.", "It was a special Tuesday.", "It was an ordinary Tuesday."], "answer": 2 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *cualquier* or *cualquiera* and type the whole sentence, to say \"Come any day\" to a friend: *Ven ___ día.*", "answer": "Ven cualquier día.", "accept": [], "why": "It comes before the noun and means *any*, so the short form *cualquier*." },
+    { "prompt": "Pick *cualquier* or *cualquiera* and type the whole sentence, to say \"It was an ordinary day\": *Era un día ___.*", "answer": "Era un día cualquiera.", "accept": ["Fue un día cualquiera."], "why": "It comes after the noun and means *ordinary*, so the full form *cualquiera*." },
+    { "prompt": "Type in Spanish: Anyone can come into the café.", "answer": "Cualquier persona puede entrar al café.", "accept": [], "why": "*Cualquier* goes before *persona* and stays short, even though *persona* is feminine." },
+    { "prompt": "Type in Spanish: It was an ordinary afternoon.", "answer": "Fue una tarde cualquiera.", "accept": ["Era una tarde cualquiera."], "why": "*Cualquiera* goes after the noun to mean *ordinary*." },
+    { "prompt": "Type in Spanish, to a friend: You can come at any time.", "answer": "Puedes venir a cualquier hora.", "accept": [], "why": "*Cualquier* before *hora* means *any*." },
+    { "prompt": "Turn it into \"ordinary\": *Fue cualquier martes.* Type: It was an ordinary Tuesday.", "answer": "Fue un martes cualquiera.", "accept": ["Era un martes cualquiera."], "why": "Moving the word after the noun, with *un*, changes *any* into *ordinary*." },
+    { "prompt": "Turn it into \"any\": *Era un martes cualquiera.* Type: Any Tuesday will do.", "answer": "Cualquier martes sirve.", "accept": ["Sirve cualquier martes."], "why": "Moving the word before the noun, in its short form, changes *ordinary* into *any*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Era un día cualquier.", "right": "Era un día cualquiera.", "why": "Almost. After the noun the word keeps its full ending, *cualquiera*." },
+    { "wrong": "Cualquiera persona puede entrar.", "right": "Cualquier persona puede entrar.", "why": "Almost. Before a noun the word shortens to *cualquier*, even before a feminine noun." },
+    { "wrong": "Ven un día cualquiera.", "right": "Ven cualquier día.", "why": "Almost. *Un día cualquiera* means an ordinary day, so it sounds as if you are inviting someone on a dull one. For \"any day you like\" put *cualquier* first." }
+  ],
+  "personal": "Tell a friend which day they can visit you, with *cualquier*. Then describe a day that was nothing special, with *cualquiera*."
+}

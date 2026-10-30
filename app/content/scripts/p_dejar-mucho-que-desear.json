@@ -1,0 +1,43 @@
+{
+  "node": "p:dejar-mucho-que-desear",
+  "hook": {
+    "line": "A critic who writes \"the service was terrible\" sounds angry. A critic who writes that it *leaves a lot to be desired* sounds calm and far more damning. Tomás is about to read a review like that of his own café.",
+    "es": "El servicio deja mucho que desear.",
+    "en": "The service leaves a lot to be desired."
+  },
+  "examples": [
+    { "es": "El servicio deja mucho que desear.", "en": "The service leaves a lot to be desired." },
+    { "es": "La organización dejó bastante que desear.", "en": "The organisation left quite a lot to be desired." },
+    { "es": "El final de la película deja que desear.", "en": "The ending of the film leaves something to be desired." },
+    { "es": "La limpieza del baño dejaba mucho que desear.", "en": "The cleanliness of the bathroom used to leave a lot to be desired." },
+    { "es": "Las sillas dejan bastante que desear.", "en": "The chairs leave quite a lot to be desired." },
+    { "es": "Su última novela deja un poco que desear.", "en": "Her latest novel leaves a little to be desired." }
+  ],
+  "rule": "The thing you are judging is the subject, and *dejar* is the verb. Then comes how much, then *que desear*:\n\n*dejar mucho que desear* (a lot)\n*dejar bastante que desear* (quite a lot)\n*dejar un poco que desear* (a little)\n*dejar que desear* (some)\n\n*Dejar* changes with time and number: *deja*, *dejó*, *dejaba*, *dejan*. The rest stays fixed, always *que desear*.\n\nIt is polite on the surface and harsh underneath, which is why reviewers love it.",
+  "smallPrint": "Teachers call this a fixed expression, or collocation: the pieces cannot be swapped for synonyms.",
+  "readAndPick": [
+    { "es": "El servicio deja mucho que desear.", "options": ["The service is excellent.", "The service leaves a lot to be desired.", "The service left a lot to be desired."], "answer": 1 },
+    { "es": "La organización dejó bastante que desear.", "options": ["The organisation left quite a lot to be desired.", "The organisation leaves quite a lot to be desired.", "The organisation will leave quite a lot to be desired."], "answer": 0 },
+    { "es": "Las sillas dejan bastante que desear.", "options": ["The chair leaves quite a lot to be desired.", "The chairs left quite a lot to be desired.", "The chairs leave quite a lot to be desired."], "answer": 2 },
+    { "es": "El final de la película deja que desear.", "options": ["The ending of the film leaves something to be desired.", "The ending of the film is perfect.", "Everyone wants the ending of the film."], "answer": 0 },
+    { "es": "La limpieza del baño dejaba mucho que desear.", "options": ["The cleanliness of the bathroom leaves a lot to be desired.", "The cleanliness of the bathroom left a lot to be desired once.", "The cleanliness of the bathroom used to leave a lot to be desired."], "answer": 2 },
+    { "es": "Su última novela deja un poco que desear.", "options": ["Her latest novel is quite poor.", "Her latest novel leaves a little to be desired.", "Her latest novel leaves a lot to be desired."], "answer": 1 },
+    { "es": "La atención dejó un poco que desear.", "options": ["The service left a little to be desired.", "The service left a lot to be desired.", "The service leaves a little to be desired."], "answer": 0 },
+    { "es": "La música deja mucho que desear.", "options": ["The music leaves a little to be desired.", "The music leaves a lot to be desired.", "The music left a lot to be desired."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *deja* or *dejan* and type the whole sentence: *Las sillas ___ mucho que desear.*", "answer": "Las sillas dejan mucho que desear.", "accept": [], "why": "*Las sillas* is plural, so the verb is *dejan*." },
+    { "prompt": "Pick *deja* or *dejó* and type the whole sentence, about something that already happened: *La organización ___ bastante que desear.*", "answer": "La organización dejó bastante que desear.", "accept": [], "why": "It is finished and judged now, so the past form *dejó*." },
+    { "prompt": "Type in Spanish: The service leaves a lot to be desired.", "answer": "El servicio deja mucho que desear.", "accept": ["La atención deja mucho que desear."], "why": "Thing judged, *deja*, *mucho*, then *que desear*." },
+    { "prompt": "Type in Spanish: The ending of the film leaves something to be desired.", "answer": "El final de la película deja que desear.", "accept": [], "why": "With no amount word, it just means some, so *deja que desear*." },
+    { "prompt": "Type in Spanish: Her latest novel leaves a little to be desired.", "answer": "Su última novela deja un poco que desear.", "accept": [], "why": "*Un poco* softens it to a gentle complaint." },
+    { "prompt": "Make it stronger: *La música deja un poco que desear.* Say it leaves a lot.", "answer": "La música deja mucho que desear.", "accept": [], "why": "Swap the amount word, *un poco* for *mucho*, and nothing else changes." },
+    { "prompt": "Make it about the chairs: *La silla deja mucho que desear.* Type: The chairs leave a lot to be desired.", "answer": "Las sillas dejan mucho que desear.", "accept": [], "why": "Plural noun, plural verb: *dejan*." }
+  ],
+  "pitfalls": [
+    { "wrong": "El servicio deja mucho a desear.", "right": "El servicio deja mucho que desear.", "why": "Almost. The fixed piece is *que desear*, not *a desear*." },
+    { "wrong": "El servicio deja mucho de desear.", "right": "El servicio deja mucho que desear.", "why": "Almost. Again *que desear*, never *de*." },
+    { "wrong": "Las sillas deja mucho que desear.", "right": "Las sillas dejan mucho que desear.", "why": "Almost. The verb agrees with what you are judging, so plural *sillas* needs *dejan*." }
+  ],
+  "personal": "Pick a place you know and write one polite but damning sentence about it with *deja mucho que desear*."
+}
