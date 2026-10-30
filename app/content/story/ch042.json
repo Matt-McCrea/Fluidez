@@ -2,7 +2,7 @@
   "id": "ch042",
   "unit": "u16",
   "title": "Setecientos mil",
-  "text": "Doctor Mejía: Señor Pacheco, el corazón está bien. Usted va a vivir muchos años.\nHernando: ¿Muchos años? Entonces voy a ver el fin de Altamira. Y ahora quiero un tinto.\nEn la calle, Tomás le dio un abrazo. Hernando tenía los ojos rojos.\nHernando: Gracias, mijo. Ahora, a San Victorino. Vale te espera desde las nueve.\nSan Victorino era otro mundo: gente, música y vendedores en todas las calles.\nVendedora: ¿Qué talla usa, joven? ¿Y qué número calza?\nTomás: No, gracias, señora. Solo estoy mirando.\nVale estaba en una tienda de sillas.\nVale: ¡Tomás! ¿Dónde estaban?\nTomás: En el banco. Una conversación larga.\nHernando: Y yo en la droguería.\nVale los miró a los dos, pero no dijo nada.\nVale: Necesito doce sillas. ¿Cuánto valen?\nVendedor: Ochenta mil la silla. Hay rojas, azules, blancas y negras.\nTomás: Las azules son muy bonitas.\nVale: Las blancas, en un mes, están grises. Negras. Y le doy cincuenta mil.\nVendedor: ¿Cincuenta? Setenta.\nVale: Cincuenta y cinco, y las compro hoy.\nVendedor: Bueno. Usted gana.\nEntonces Tomás vio el sillón. Era enorme, viejo y morado.\nVendedor: Es de un bar de salsa de 1975. El material es excelente.\nTomás: ¡Es perfecto para el café! ¿Cuánto vale?\nVendedor: Seiscientos mil.\nTomás: Bueno... ¿le doy setecientos?\nVale: ¡Tomás! Tienes que ofrecer menos, no más.\nVendedor: ¡Setecientos! Trato hecho.\nVale tocó el sillón.\nVale: ¿Excelente? Este material es más viejo que don Hernando.\nHernando: Oiga.\nVale: Tomás, hay que devolver eso.\nTomás: No lo voy a devolver. Mañana llega al café.\nHernando: Mijo, ¿y eso sí entra en el café?\nTomás: Claro.\nSonó el celular de Tomás. Era un mensaje de Mariana: «Noche de salsa en un bar de La Candelaria. ¿Vienes?»\nVale estaba al lado, y leyó el mensaje también. Miró el sillón, muy seria.\nVale: Tomás, mañana tenemos que hablar.",
+  "text": "Doctor Mejía: Señor Pacheco, el corazón está bien. Usted va a vivir muchos años.\nHernando: ¿Muchos años? Entonces voy a ver el fin de Altamira. Y ahora quiero un tinto.\nEn la calle, Tomás le dio un abrazo. Hernando tenía los ojos rojos.\nHernando: Gracias, mijo. Ahora, a San Victorino. Vale te espera desde las nueve.\nSan Victorino era otro mundo: gente, música y vendedores en todas las calles.\nVendedora: ¿Qué talla usa, joven? ¿Y qué número calza?\nTomás: No, gracias, señora. Solo estoy mirando.\nVale estaba en una tienda de sillas.\nVale: ¡Tomás! ¿Dónde estaban?\nTomás: En el banco.\nHernando: Y yo en la droguería.\nVale los miró a los dos, pero no dijo nada.\nVale: Necesito doce sillas negras. ¿Cuánto valen?\nVendedor: Ochenta mil la silla.\nVale: Le doy cincuenta mil.\nVendedor: ¿Cincuenta? Setenta.\nVale: Cincuenta y cinco, y las compro hoy.\nVendedor: Bueno. Usted gana.\nEntonces Tomás vio el sillón. Era enorme, viejo y morado.\nVendedor: Es de un bar de salsa de 1975.\nTomás: ¡Es perfecto para el café! ¿Cuánto vale?\nVendedor: Seiscientos mil.\nTomás: Bueno... ¿le doy setecientos?\nVale: ¡Tomás! Tienes que ofrecer menos, no más.\nVendedor: ¡Setecientos! Trato hecho.\nVale: Este sillón es más viejo que don Hernando. Hay que devolverlo.\nHernando: ¡Oiga! Y mijo, ¿eso sí entra en el café?\nTomás: Claro.\nSonó el celular de Tomás. Era un mensaje de Mariana: «Noche de salsa en un bar de La Candelaria. ¿Vienes?»\nVale leyó el mensaje también. Miró el sillón, muy seria.\nVale: Tomás, mañana tenemos que hablar.",
   "gloss": [
     {
       "es": "mijo",
@@ -29,10 +29,6 @@
       "en": "And I was at the pharmacy."
     },
     {
-      "es": "en un mes, están grises",
-      "en": "in a month they're grey"
-    },
-    {
       "es": "Usted gana.",
       "en": "You win."
     },
@@ -53,8 +49,8 @@
       "en": "and will that really go into the café?"
     },
     {
-      "es": "Vale estaba al lado",
-      "en": "Vale was next to him"
+      "es": "Hay que devolverlo.",
+      "en": "You have to return it."
     }
   ],
   "questions": [
@@ -153,14 +149,13 @@
     "g:direct-objects",
     "g:estar-location-states",
     "g:gender-articles",
-    "g:hay-vs-esta",
     "g:imperfect-states",
     "g:indirect-objects",
     "g:ir-a-plans",
     "g:negation-words",
+    "g:object-pronoun-position",
     "g:present-ar",
     "g:present-er-ir",
-    "g:pret-vs-imperfect",
     "g:preterite-ar",
     "g:preterite-er-ir",
     "g:preterite-irregular-strong",
@@ -187,20 +182,16 @@
   "lexemes": [
     "l:abrazo",
     "l:ahora",
-    "l:azul",
     "l:año",
     "l:banco",
     "l:bar",
     "l:bien",
-    "l:blanco",
-    "l:bonito",
     "l:bueno",
     "l:café",
     "l:calle",
     "l:celular",
     "l:claro",
     "l:comprar",
-    "l:conversación",
     "l:corazón",
     "l:cuánto",
     "l:dar",
@@ -213,24 +204,17 @@
     "l:entrar",
     "l:esperar",
     "l:estar",
-    "l:excelente",
     "l:fin",
     "l:ganar",
     "l:gente",
-    "l:gris",
     "l:hablar",
     "l:hacer",
     "l:hoy",
     "l:ir",
     "l:joven",
-    "l:lado",
-    "l:largo",
     "l:leer",
-    "l:llegar",
-    "l:material",
     "l:mañana",
     "l:mensaje",
-    "l:mes",
     "l:mijo",
     "l:mirar",
     "l:morado",
@@ -259,7 +243,6 @@
     "l:tener",
     "l:tienda",
     "l:tinto",
-    "l:tocar",
     "l:tratar",
     "l:usar",
     "l:valer",
