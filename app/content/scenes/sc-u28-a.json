@@ -3,17 +3,17 @@
   "unit": "u28",
   "title": "The meeting",
   "spare": false,
-  "brief": "You're Tomás, at the neighbourhood meeting about Altamira's hotel. Doña Gloria, a neighbour, is running things and you've just met her, so use usted. Say what you think, and say what you don't think.",
+  "brief": "You're Tomás, at the neighbourhood meeting about Altamira's hotel. Doña Gloria, the loud neighbour from the bakery, is running things. She is older, so use usted. Say what you think, and say what you don't think.",
   "turns": [
     {
       "id": "t1",
-      "npc": "Buenas noches. Yo soy Gloria, vecina del barrio. ¿Usted es el dueño del café de la esquina?",
-      "npcEn": "Good evening. I'm Gloria, a neighbour. Are you the owner of the café on the corner?",
-      "intent": "Greet her, say yes, you're Tomás, and say it's important that the neighbours speak tonight.",
+      "npc": "Buenas noches, Tomás. Ya casi empezamos. ¿Usted va a hablar esta noche?",
+      "npcEn": "Good evening, Tomás. We're about to start. Are you going to speak tonight?",
+      "intent": "Say yes, and say it's important that the neighbours speak tonight.",
       "accept": [
-        "Buenas noches, señora Gloria. Sí, soy Tomás. Es importante que hablemos esta noche.",
-        "Sí, soy Tomás, el dueño del café. Es importante que todos los vecinos hablen hoy.",
-        "Mucho gusto. Soy Tomás, sí. Es importante que los vecinos opinen esta noche."
+        "Buenas noches, doña Gloria. Sí, voy a hablar. Es importante que hablemos esta noche.",
+        "Sí, señora. Es importante que todos los vecinos hablen hoy.",
+        "Sí. Es importante que los vecinos opinen esta noche."
       ],
       "require": [
         {
@@ -55,8 +55,8 @@
     },
     {
       "id": "t3",
-      "npc": "Pues el dueño de la panadería cree que el hotel es una gran idea. Dice que habrá trabajo para todos.",
-      "npcEn": "Well, the owner of the bakery thinks the hotel is a great idea. He says there will be work for everyone.",
+      "npc": "Pues el señor de la tienda de al lado cree que el hotel es una gran idea. Dice que habrá trabajo para todos.",
+      "npcEn": "Well, the man from the shop next door thinks the hotel is a great idea. He says there will be work for everyone.",
       "intent": "Say the worst thing is that your café would close.",
       "accept": [
         "Lo peor es que mi café va a cerrar.",
@@ -81,7 +81,7 @@
       "intent": "Say you do want the neighbourhood to improve, but you don't think a hotel is the answer.",
       "accept": [
         "Sí, señora, quiero que mejore. Pero no creo que un hotel sea la solución.",
-        "Para nada. Pero no creo que un hotel sea lo mejor para el barrio.",
+        "No, para nada. Quiero que mejore, pero no creo que un hotel sea lo mejor para el barrio.",
         "Sí, señora. Pero no creo que un hotel sea una buena idea."
       ],
       "require": [
@@ -116,7 +116,7 @@
           "type": "regex",
           "pattern": "\\blo (bueno|mejor)\\b",
           "flags": "i",
-          "label": "start with lo bueno"
+          "label": "start with lo bueno or lo mejor"
         }
       ],
       "focus": "g:lo-adjective",
@@ -133,12 +133,12 @@
     "c:hola-buenos-dias",
     "c:lo-bueno-es",
     "c:lo-mejor-es",
-    "c:mucho-gusto",
     "c:no-cierto",
     "c:para-nada",
     "c:pues",
     "c:quiero",
     "c:tienes",
+    "c:voy-a",
     "g:conditional",
     "g:demonstratives",
     "g:direct-objects",
@@ -178,7 +178,7 @@
     "l:creer",
     "l:cuadra",
     "l:decir",
-    "l:dueño",
+    "l:empezar",
     "l:escuchar",
     "l:esquina",
     "l:estar",
@@ -192,6 +192,7 @@
     "l:importante",
     "l:ir",
     "l:justo",
+    "l:lado",
     "l:mejor",
     "l:mejorar",
     "l:nervioso",
@@ -204,15 +205,18 @@
     "l:querer",
     "l:qué",
     "l:ser",
+    "l:señor",
     "l:señora",
     "l:solución",
     "l:tener",
+    "l:tienda",
     "l:trabajo",
     "l:vecino",
     "p:aqui-ahi-alla",
     "p:bien-bueno",
     "p:bien-mal-vs-bueno-malo",
     "p:demonstratives-basic",
+    "p:don-dona-nombre",
     "p:indefinites-basic",
     "p:numbers-un-una",
     "p:para-inf",

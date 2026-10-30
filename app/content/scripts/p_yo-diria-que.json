@@ -37,7 +37,7 @@
   "pitfalls": [
     { "wrong": "Yo diré que es más caro.", "right": "Yo diría que es más caro.", "why": "Almost. *Diré* means \"I will say\"; for the soft \"I'd say\" you need *diría*." },
     { "wrong": "Yo diría es más caro.", "right": "Yo diría que es más caro.", "why": "Almost. A whole opinion after \"say\" needs *que*." },
-    { "wrong": "Yo no diría que lo.", "right": "Yo no diría eso.", "why": "Almost. To refer to what someone said, use *eso*." }
+    { "wrong": "Yo diria que es más caro.", "right": "Yo diría que es más caro.", "why": "Almost. *Diría* needs its accent on the *í*, or it isn't the same word." }
   ],
   "personal": "Give a gentle opinion about your day, your city or a café, starting with *Yo diría que*."
 }

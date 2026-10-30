@@ -6,169 +6,38 @@
     "en": "In my opinion, public transport is expensive."
   },
   "examples": [
-    {
-      "es": "A mí me parece que el barrio está más seguro.",
-      "en": "I think the neighbourhood is safer."
-    },
-    {
-      "es": "En mi opinión, el transporte público es caro.",
-      "en": "In my opinion, public transport is expensive."
-    },
-    {
-      "es": "Desde mi punto de vista, la basura es el problema.",
-      "en": "From my point of view, the rubbish is the problem."
-    },
-    {
-      "es": "A Hernando le parece que la alcaldía no hace nada.",
-      "en": "Hernando thinks the council does nothing."
-    },
-    {
-      "es": "En tu opinión, ¿quién tiene razón?",
-      "en": "In your opinion, who's right? (to a friend)"
-    },
-    {
-      "es": "Desde nuestro punto de vista, el precio es alto.",
-      "en": "From our point of view, the price is high."
-    }
+    { "es": "A mí me parece que el barrio está más seguro.", "en": "I think the neighbourhood is safer." },
+    { "es": "En mi opinión, el transporte público es caro.", "en": "In my opinion, public transport is expensive." },
+    { "es": "Desde mi punto de vista, la basura es el problema.", "en": "From my point of view, the rubbish is the problem." },
+    { "es": "A Hernando le parece que la alcaldía no hace nada.", "en": "Hernando thinks the council does nothing." },
+    { "es": "En tu opinión, ¿quién tiene razón?", "en": "In your opinion, who's right? (to a friend)" },
+    { "es": "Desde nuestro punto de vista, el precio es alto.", "en": "From our point of view, the price is high." }
   ],
   "rule": "Three ready-made starters:\n*En mi opinión,* *Desde mi punto de vista,* and *A mí me parece que*.\n\nAfter the first two, put a comma and then a normal sentence. After *me parece que*, no comma.\n\nSwap *mi* for *tu*, *su*, *nuestro*, or swap *a mí me* for *a ti te*, *a Hernando le*, *a nosotros nos*.\n\nWhen you are stating your view positively, the verb after is the normal one: *es caro*, *está seguro*. The wish form shows up only when you say you *don't* think so.\n\n*Me parece que* is everyday speech. *Desde mi punto de vista* sounds more measured.",
   "smallPrint": "Teachers call these opinion markers (*marcadores de opinión*).",
   "readAndPick": [
-    {
-      "es": "A Hernando le parece que la alcaldía no hace nada.",
-      "options": [
-        "I think the council does nothing.",
-        "Hernando thinks the council does nothing.",
-        "Hernando thinks I do nothing."
-      ],
-      "answer": 1
-    },
-    {
-      "es": "En mi opinión, el transporte público es caro.",
-      "options": [
-        "In your opinion, public transport is expensive.",
-        "In my opinion, public transport is expensive.",
-        "In his opinion, public transport is expensive."
-      ],
-      "answer": 1
-    },
-    {
-      "es": "En tu opinión, ¿quién tiene razón?",
-      "options": [
-        "In your opinion, who's right? (to a friend)",
-        "In my opinion, who's right?",
-        "In her opinion, who's right?"
-      ],
-      "answer": 0
-    },
-    {
-      "es": "A mí me parece que el barrio está más seguro.",
-      "options": [
-        "Hernando thinks the neighbourhood is safer.",
-        "I think the neighbourhood is safer.",
-        "You think the neighbourhood is safer."
-      ],
-      "answer": 1
-    },
-    {
-      "es": "Desde nuestro punto de vista, el precio es alto.",
-      "options": [
-        "From my point of view, the price is high.",
-        "From their point of view, the price is high.",
-        "From our point of view, the price is high."
-      ],
-      "answer": 2
-    },
-    {
-      "es": "Desde mi punto de vista, la basura es el problema.",
-      "options": [
-        "From my point of view, the rubbish is the problem.",
-        "From your point of view, the rubbish is the problem.",
-        "From his point of view, the rubbish is the problem."
-      ],
-      "answer": 0
-    },
-    {
-      "es": "A nosotros nos parece que la calle es peligrosa.",
-      "options": [
-        "It seems to me that the street is dangerous.",
-        "It seems to us that the street is dangerous.",
-        "It seems to them that the street is dangerous."
-      ],
-      "answer": 1
-    },
-    {
-      "es": "A Mariana le parece que la gente tiene miedo.",
-      "options": [
-        "Mariana thinks people are afraid.",
-        "I think people are afraid.",
-        "Mariana thinks I'm afraid."
-      ],
-      "answer": 0
-    }
+    { "es": "A Hernando le parece que la alcaldía no hace nada.", "options": ["I think the council does nothing.", "Hernando thinks the council does nothing.", "Hernando thinks I do nothing."], "answer": 1 },
+    { "es": "En mi opinión, el transporte público es caro.", "options": ["In your opinion, public transport is expensive.", "In my opinion, public transport is expensive.", "In his opinion, public transport is expensive."], "answer": 1 },
+    { "es": "En tu opinión, ¿quién tiene razón?", "options": ["In your opinion, who's right? (to a friend)", "In my opinion, who's right?", "In her opinion, who's right?"], "answer": 0 },
+    { "es": "A mí me parece que el barrio está más seguro.", "options": ["Hernando thinks the neighbourhood is safer.", "I think the neighbourhood is safer.", "You think the neighbourhood is safer."], "answer": 1 },
+    { "es": "Desde nuestro punto de vista, el precio es alto.", "options": ["From my point of view, the price is high.", "From their point of view, the price is high.", "From our point of view, the price is high."], "answer": 2 },
+    { "es": "Desde mi punto de vista, la basura es el problema.", "options": ["From my point of view, the rubbish is the problem.", "From your point of view, the rubbish is the problem.", "From his point of view, the rubbish is the problem."], "answer": 0 },
+    { "es": "A nosotros nos parece que la calle es peligrosa.", "options": ["It seems to me that the street is dangerous.", "It seems to us that the street is dangerous.", "It seems to them that the street is dangerous."], "answer": 1 },
+    { "es": "A Mariana le parece que la gente tiene miedo.", "options": ["Mariana thinks people are afraid.", "I think people are afraid.", "Mariana thinks I'm afraid."], "answer": 0 }
   ],
   "yourTurn": [
-    {
-      "prompt": "Type in Spanish: In my opinion, public transport is expensive.",
-      "answer": "En mi opinión, el transporte público es caro.",
-      "accept": [],
-      "why": "*En mi opinión* is followed by a comma and a normal sentence."
-    },
-    {
-      "prompt": "Type in Spanish: From my point of view, the rubbish is the problem.",
-      "answer": "Desde mi punto de vista, la basura es el problema.",
-      "accept": [],
-      "why": "*Desde mi punto de vista* works the same way, with *mi* for you."
-    },
-    {
-      "prompt": "Type in Spanish: I think the neighbourhood is safer.",
-      "answer": "A mí me parece que el barrio está más seguro.",
-      "accept": [
-        "Me parece que el barrio está más seguro."
-      ],
-      "why": "*Me parece que* needs no comma, and the verb after it is the normal one."
-    },
-    {
-      "prompt": "Type in Spanish: Hernando thinks the council does nothing.",
-      "answer": "A Hernando le parece que la alcaldía no hace nada.",
-      "accept": [],
-      "why": "Swap *a mí me* for *a Hernando le*."
-    },
-    {
-      "prompt": "Ask a friend: In your opinion, who's right?",
-      "answer": "En tu opinión, ¿quién tiene razón?",
-      "accept": [],
-      "why": "For a friend, use *tu*."
-    },
-    {
-      "prompt": "Make it about us: *A mí me parece que la calle es peligrosa.*",
-      "answer": "A nosotros nos parece que la calle es peligrosa.",
-      "accept": [],
-      "why": "*A mí me* becomes *a nosotros nos*, and *parece* stays."
-    },
-    {
-      "prompt": "Change *En mi opinión* to *Desde mi punto de vista*: *En mi opinión, hay mucha basura.*",
-      "answer": "Desde mi punto de vista, hay mucha basura.",
-      "accept": [],
-      "why": "The two starters are interchangeable, and the rest of the sentence stays."
-    }
+    { "prompt": "Type in Spanish: In my opinion, public transport is expensive.", "answer": "En mi opinión, el transporte público es caro.", "accept": [], "why": "*En mi opinión* is followed by a comma and a normal sentence." },
+    { "prompt": "Type in Spanish: From my point of view, the rubbish is the problem.", "answer": "Desde mi punto de vista, la basura es el problema.", "accept": [], "why": "*Desde mi punto de vista* works the same way, with *mi* for you." },
+    { "prompt": "Type in Spanish: I think the neighbourhood is safer.", "answer": "A mí me parece que el barrio está más seguro.", "accept": ["Me parece que el barrio está más seguro."], "why": "*Me parece que* needs no comma, and the verb after it is the normal one." },
+    { "prompt": "Type in Spanish: Hernando thinks the council does nothing.", "answer": "A Hernando le parece que la alcaldía no hace nada.", "accept": [], "why": "Swap *a mí me* for *a Hernando le*." },
+    { "prompt": "Ask a friend: In your opinion, who's right?", "answer": "En tu opinión, ¿quién tiene razón?", "accept": [], "why": "For a friend, use *tu*." },
+    { "prompt": "Make it about us: *A mí me parece que la calle es peligrosa.*", "answer": "A nosotros nos parece que la calle es peligrosa.", "accept": [], "why": "*A mí me* becomes *a nosotros nos*, and *parece* stays." },
+    { "prompt": "Change *En mi opinión* to *Desde mi punto de vista*: *En mi opinión, hay mucha basura.*", "answer": "Desde mi punto de vista, hay mucha basura.", "accept": [], "why": "The two starters are interchangeable, and the rest of the sentence stays." }
   ],
   "pitfalls": [
-    {
-      "wrong": "Para mi opinión, el precio es alto.",
-      "right": "En mi opinión, el precio es alto.",
-      "why": "Almost. English *for* doesn't carry over: the Spanish starter is *en mi opinión*."
-    },
-    {
-      "wrong": "En mi punto de vista, la basura es el problema.",
-      "right": "Desde mi punto de vista, la basura es el problema.",
-      "why": "The set phrase starts with *desde*, not *en*."
-    },
-    {
-      "wrong": "Me parece que sea caro.",
-      "right": "Me parece que es caro.",
-      "why": "When you state your view positively, the verb is the normal one: *es*."
-    }
+    { "wrong": "Para mi opinión, el precio es alto.", "right": "En mi opinión, el precio es alto.", "why": "Almost. Spanish says *in* my opinion too: *en mi opinión*." },
+    { "wrong": "En mi opinión que el precio es alto.", "right": "En mi opinión, el precio es alto.", "why": "Almost. No *que* after *en mi opinión*: just a comma and the sentence." },
+    { "wrong": "Me parece que sea caro.", "right": "Me parece que es caro.", "why": "When you state your view positively, the verb is the normal one: *es*." }
   ],
   "personal": "Give your view on something in your own street, once with *En mi opinión,* and once with *A mí me parece que*."
 }

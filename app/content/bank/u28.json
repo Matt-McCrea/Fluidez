@@ -1,29 +1,26 @@
 [
   {
     "id": "u28-0001",
-    "es": "¿Y tú qué opinas?\nNo creo que tengas razón.",
-    "en": "And what's your opinion? (to a friend)\nI don't think you're right. (to a friend)",
+    "es": "Hernando dice que va a llover.\nNo creo que tenga razón.",
+    "en": "Hernando says it's going to rain.\nI don't think he's right.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
+      "c:aqui-tiene",
       "c:creo-que",
-      "g:present-ar",
-      "g:questions",
-      "g:subj-wanting",
+      "c:que-va",
+      "g:ir-a-plans",
+      "g:stem-e-i",
       "g:that-clauses",
       "l:creer",
-      "l:opinar",
-      "l:qué",
+      "l:decir",
+      "l:ir",
+      "l:llover",
       "l:razón",
       "l:tener",
-      "p:que-opinas-de",
       "p:tener-razon"
     ],
-    "targets": [
-      "l:opinar",
-      "p:que-opinas-de"
-    ],
+    "targets": [],
     "kind": "dialogue",
     "unit": "u28",
     "theme": "not convinced",
@@ -194,23 +191,23 @@
   },
   {
     "id": "u28-0008",
-    "es": "¿Qué dices tú?\nNo creo que ustedes estén listos.",
-    "en": "What do you say? (to a friend)\nI don't think you all are ready.",
+    "es": "¿Empezamos la reunión?\nNo creo que ustedes estén listos.",
+    "en": "Shall we start the meeting?\nI don't think you all are ready.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:creo-que",
       "g:adjective-agreement",
       "g:estar-location-states",
-      "g:questions",
-      "g:stem-e-i",
+      "g:gender-articles",
+      "g:present-ar",
       "g:subj-wanting",
       "g:that-clauses",
       "l:creer",
-      "l:decir",
+      "l:empezar",
       "l:estar",
       "l:listo",
-      "l:qué"
+      "l:reunión"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -270,8 +267,8 @@
   },
   {
     "id": "u28-0011",
-    "es": "¿Usted qué opina?\nNo creo que mi abuela venda el café.",
-    "en": "What do you think? (polite)\nI don't think my grandmother would sell the café.",
+    "es": "¿Usted qué opina?\nNo creo que mi tía venda la casa.",
+    "en": "What do you think? (polite)\nI don't think my aunt will sell the house.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -281,11 +278,11 @@
       "g:questions",
       "g:subj-wanting",
       "g:that-clauses",
-      "l:abuela",
-      "l:café",
+      "l:casa",
       "l:creer",
       "l:opinar",
       "l:qué",
+      "l:tía",
       "l:vender",
       "p:possessives-basic",
       "p:que-opinas-de"
@@ -407,26 +404,25 @@
   },
   {
     "id": "u28-0016",
-    "es": "¿Quieres opinar?\nNo creo que tarden mucho.",
-    "en": "Do you want to give your opinion? (to a friend)\nI don't think they'll take long.",
+    "es": "¿Esperamos a los vecinos?\nNo creo que tarden mucho.",
+    "en": "Shall we wait for the neighbours?\nI don't think they'll take long.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:creo-que",
-      "g:stem-boot",
+      "g:gender-articles",
+      "g:present-ar",
       "g:subj-wanting",
       "g:that-clauses",
-      "g:verb-infinitive",
       "l:creer",
-      "l:opinar",
-      "l:querer",
+      "l:esperar",
       "l:tardar",
+      "l:vecino",
+      "p:personal-a",
       "p:quantifiers-basic",
       "p:tardar-en"
     ],
-    "targets": [
-      "l:opinar"
-    ],
+    "targets": [],
     "kind": "dialogue",
     "unit": "u28",
     "theme": "not convinced",
@@ -684,25 +680,25 @@
   },
   {
     "id": "u28-0026",
-    "es": "¿Quieres opinar?\nNo creo que a ellos les importe.",
-    "en": "Do you want to give your opinion? (to a friend)\nI don't think they care.",
+    "es": "¿Les contamos a los vecinos?\nNo creo que a ellos les importe.",
+    "en": "Shall we tell the neighbours?\nI don't think they care.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:creo-que",
+      "g:gender-articles",
       "g:gustar-full",
-      "g:stem-boot",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:present-ar",
       "g:subj-wanting",
       "g:that-clauses",
-      "g:verb-infinitive",
+      "l:contar",
       "l:creer",
       "l:importar",
-      "l:opinar",
-      "l:querer"
+      "l:vecino"
     ],
-    "targets": [
-      "l:opinar"
-    ],
+    "targets": [],
     "kind": "dialogue",
     "unit": "u28",
     "theme": "not convinced",
@@ -738,24 +734,26 @@
   },
   {
     "id": "u28-0028",
-    "es": "¿Qué dices tú?\nNo creo que estés hablando en serio.",
-    "en": "What do you say? (to a friend)\nI don't think you're serious. (to a friend)",
+    "es": "Voy a vender el café.\nNo creo que estés hablando en serio.",
+    "en": "I'm going to sell the café.\nI don't think you're serious. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:creo-que",
       "c:en-serio",
+      "c:voy-a",
       "g:estar-gerund",
-      "g:questions",
-      "g:stem-e-i",
+      "g:gender-articles",
+      "g:ir-a-plans",
       "g:subj-wanting",
       "g:that-clauses",
+      "l:café",
       "l:creer",
-      "l:decir",
       "l:estar",
       "l:hablar",
-      "l:qué",
-      "l:serio"
+      "l:ir",
+      "l:serio",
+      "l:vender"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -1389,8 +1387,8 @@
   },
   {
     "id": "u28-0051",
-    "es": "¿Quieres opinar?\nNo me parece que Vale esté enojada.",
-    "en": "Do you want to give your opinion? (to a friend)\nI don't think Vale is angry.",
+    "es": "¿Vale está enojada?\nNo me parece que esté enojada. Está cansada.",
+    "en": "Is Vale angry?\nI don't think she's angry. She's tired.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1398,20 +1396,16 @@
       "g:estar-location-states",
       "g:parecer-quedar",
       "g:present-er-ir",
-      "g:stem-boot",
       "g:subj-opinion-negated",
       "g:subj-wanting",
       "g:that-clauses",
-      "g:verb-infinitive",
+      "l:cansado",
       "l:enojado",
       "l:estar",
-      "l:opinar",
-      "l:parecer",
-      "l:querer"
+      "l:parecer"
     ],
     "targets": [
-      "g:subj-opinion-negated",
-      "l:opinar"
+      "g:subj-opinion-negated"
     ],
     "kind": "dialogue",
     "unit": "u28",
@@ -1653,37 +1647,28 @@
   },
   {
     "id": "u28-0060",
-    "es": "¿Y a ti qué te parece?\nNo opino que sea una mala idea.",
-    "en": "And what do you make of it? (to a friend)\nI don't think it's a bad idea.",
+    "es": "El carro hace un ruido raro.\nNo me parece que sea tan grave.",
+    "en": "The car is making a strange noise.\nI don't think it's that serious.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:a-mi-tambien",
       "g:gender-articles",
-      "g:gustar-full",
       "g:parecer-quedar",
-      "g:prep-pronouns",
-      "g:present-ar",
       "g:present-er-ir",
-      "g:questions",
       "g:ser-identity",
       "g:subj-irregulars",
       "g:subj-opinion-negated",
       "g:that-clauses",
-      "l:idea",
-      "l:mala",
-      "l:opinar",
+      "l:carro",
+      "l:grave",
+      "l:hacer",
       "l:parecer",
-      "l:qué",
-      "l:ser",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo",
-      "p:te-parece-bien-que"
+      "l:raro",
+      "l:ruido",
+      "l:ser"
     ],
     "targets": [
-      "g:subj-opinion-negated",
-      "l:opinar",
-      "p:te-parece-bien-que"
+      "g:subj-opinion-negated"
     ],
     "kind": "dialogue",
     "unit": "u28",
@@ -1939,7 +1924,7 @@
   {
     "id": "u28-0070",
     "es": "Creo que pensamos igual.",
-    "en": "I think we think the same.",
+    "en": "I think we see it the same way.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2019,19 +2004,20 @@
   },
   {
     "id": "u28-0073",
-    "es": "Creo que usted tiene un error.",
-    "en": "I think you have a mistake. (polite)",
+    "es": "Creo que hay un error en la cuenta.",
+    "en": "I think there's a mistake in the bill.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:creo-que",
-      "c:tienes",
+      "c:hay",
+      "c:la-cuenta",
       "g:gender-articles",
-      "g:stem-boot",
+      "g:hay-vs-esta",
       "g:that-clauses",
       "l:creer",
-      "l:error",
-      "l:tener"
+      "l:cuenta",
+      "l:error"
     ],
     "targets": [],
     "kind": "statement",
@@ -2113,7 +2099,7 @@
   {
     "id": "u28-0077",
     "es": "¿Tú qué piensas?\nCreo que no, Mariana.",
-    "en": "What do you think? (to a friend)\nI think not, Mariana.",
+    "en": "What do you think? (to a friend)\nI don't think so, Mariana.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2184,8 +2170,8 @@
   },
   {
     "id": "u28-0080",
-    "es": "¿Y a ti qué te parece?\nMe parece que tienes mucha razón.",
-    "en": "And what do you make of it? (to a friend)\nI think you're very right. (to a friend)",
+    "es": "¿Y a ti qué te parece?\nMe parece que tienes razón.",
+    "en": "And what do you make of it? (to a friend)\nI think you're right. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2202,8 +2188,8 @@
       "l:qué",
       "l:razón",
       "l:tener",
-      "p:quantifiers-basic",
-      "p:te-parece-bien-que"
+      "p:te-parece-bien-que",
+      "p:tener-razon"
     ],
     "targets": [
       "p:te-parece-bien-que"
@@ -2662,7 +2648,7 @@
   {
     "id": "u28-0097",
     "es": "¿Llueve mañana?\nCreo que no.",
-    "en": "Will it rain tomorrow?\nI think not.",
+    "en": "Will it rain tomorrow?\nI don't think so.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2707,7 +2693,7 @@
   {
     "id": "u28-0099",
     "es": "¿Ya cerró la alcaldía?\nMe parece que no.",
-    "en": "Has city hall closed yet?\nI think not.",
+    "en": "Has city hall closed yet?\nI don't think so.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2731,7 +2717,7 @@
   {
     "id": "u28-0100",
     "es": "¿Piensas que ganamos?\nPienso que sí.",
-    "en": "Do you think we win?\nI think so.",
+    "en": "Do you think we'll win?\nI think so.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3012,7 +2998,7 @@
   {
     "id": "u28-0113",
     "es": "¿Le parece que es suficiente?",
-    "en": "Does it seem enough to you? (polite)",
+    "en": "Does it seem like enough to you? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3967,8 +3953,8 @@
   },
   {
     "id": "u28-0151",
-    "es": "¡Qué bueno que Rosa vea esto!",
-    "en": "How great that Rosa gets to see this!",
+    "es": "¡Qué bueno que tu mamá vea esto!",
+    "en": "How great that your mum gets to see this! (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3976,9 +3962,11 @@
       "c:que-bueno-que",
       "g:subj-wanting",
       "l:bueno",
+      "l:mamá",
       "l:qué",
       "l:ver",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:possessives-basic"
     ],
     "targets": [],
     "kind": "statement",
@@ -4255,18 +4243,20 @@
   },
   {
     "id": "u28-0162",
-    "es": "Espero que todo salga bien.",
-    "en": "I hope everything goes well.",
+    "es": "Espero que la reunión salga bien.",
+    "en": "I hope the meeting goes well.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
+      "g:gender-articles",
       "g:present-ar",
       "g:subj-wanting",
       "g:subj-wishes",
       "g:that-clauses",
       "l:bien",
       "l:esperar",
+      "l:reunión",
       "l:salir",
       "p:bien-bueno",
       "p:bien-mal-vs-bueno-malo"
@@ -4802,15 +4792,14 @@
   },
   {
     "id": "u28-0187",
-    "es": "Odiamos las filas largas.",
-    "en": "We hate long queues.",
+    "es": "Odiamos esperar bajo la lluvia.",
+    "en": "We hate waiting in the rain.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:gender-articles",
-      "l:fila",
-      "l:largo"
+      "l:esperar",
+      "l:lluvia"
     ],
     "targets": [],
     "kind": "statement",
@@ -5588,20 +5577,23 @@
   },
   {
     "id": "u28-0222",
-    "es": "Me alegra que Vale tenga un premio.",
-    "en": "I'm glad Vale has a prize.",
+    "es": "Me alegra que le den un premio a Vale.",
+    "en": "I'm glad they're giving Vale a prize.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:aqui-tiene",
       "g:gender-articles",
       "g:gustar-full",
+      "g:indirect-objects",
+      "g:le-doubling",
       "g:present-ar",
       "g:subj-emotion-intro",
+      "g:subj-wanting",
       "g:that-clauses",
       "l:alegrar",
+      "l:dar",
       "l:premio",
-      "l:tener"
+      "p:me-encanta-que"
     ],
     "targets": [
       "g:subj-emotion-intro",
@@ -5771,13 +5763,13 @@
   },
   {
     "id": "u28-0230",
-    "es": "Todavía no voto.",
-    "en": "I'm not voting yet.",
+    "es": "Todavía no he votado.",
+    "en": "I haven't voted yet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:todavia-no",
-      "g:present-ar",
+      "g:perfecto-experience",
       "l:votar"
     ],
     "targets": [
@@ -6067,8 +6059,8 @@
   },
   {
     "id": "u28-0243",
-    "es": "En general, el servicio es rápido.",
-    "en": "In general, the service is fast.",
+    "es": "El servicio es rápido, en general.",
+    "en": "The service is fast, in general.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6170,8 +6162,8 @@
   },
   {
     "id": "u28-0247",
-    "es": "En general, Hernando llega primero.",
-    "en": "In general, Hernando arrives first.",
+    "es": "Hernando llega primero, en general.",
+    "en": "Hernando arrives first, in general.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6269,8 +6261,8 @@
   },
   {
     "id": "u28-0251",
-    "es": "En general, el transporte público funciona bien.",
-    "en": "In general, public transport works well.",
+    "es": "El transporte público funciona bien, en general.",
+    "en": "Public transport works well, in general.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6378,8 +6370,8 @@
   },
   {
     "id": "u28-0255",
-    "es": "En general, los domingos son muy tranquilos.",
-    "en": "In general, Sundays are very quiet.",
+    "es": "Los domingos son muy tranquilos, en general.",
+    "en": "Sundays are very quiet, in general.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6432,8 +6424,8 @@
   },
   {
     "id": "u28-0257",
-    "es": "En general, Simón habla poco por la mañana.",
-    "en": "In general, Simón talks little in the morning.",
+    "es": "Simón habla poco por la mañana, en general.",
+    "en": "Simón talks little in the morning, in general.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6509,16 +6501,18 @@
   },
   {
     "id": "u28-0260",
-    "es": "En general, no estoy de acuerdo con el hotel.",
-    "en": "In general, I don't agree with the hotel.",
+    "es": "En general, no me gustan los hoteles grandes.",
+    "en": "In general, I don't like big hotels.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:estoy-de-acuerdo",
+      "g:adjective-agreement",
       "g:gender-articles",
-      "l:acuerdo",
-      "l:estar",
+      "g:gustar-basic",
+      "g:present-ar",
       "l:general",
+      "l:grande",
+      "l:gustar",
       "l:hotel",
       "p:en-general",
       "p:por-lo-general"
@@ -6533,8 +6527,8 @@
   },
   {
     "id": "u28-0261",
-    "es": "En general, el barrio está mejor que antes.",
-    "en": "In general, the neighbourhood is better than before.",
+    "es": "El barrio está mejor que antes, en general.",
+    "en": "The neighbourhood is better than before, in general.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6584,8 +6578,8 @@
   },
   {
     "id": "u28-0263",
-    "es": "En general, los turistas son simpáticos.",
-    "en": "In general, tourists are nice.",
+    "es": "Los turistas son simpáticos, en general.",
+    "en": "Tourists are nice, in general.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6634,20 +6628,21 @@
   },
   {
     "id": "u28-0265",
-    "es": "Por lo general, llego a las ocho.",
-    "en": "Generally, I arrive at eight.",
+    "es": "Por lo general, llego al café antes que Vale.",
+    "en": "Generally, I get to the café before Vale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:lo-adjective",
       "g:present-ar",
+      "l:antes",
+      "l:café",
       "l:general",
       "l:llegar",
       "p:en-general",
       "p:frequency-scale",
-      "p:por-lo-general",
-      "p:telling-time"
+      "p:por-lo-general"
     ],
     "targets": [
       "g:lo-adjective",
@@ -6897,21 +6892,20 @@
   },
   {
     "id": "u28-0275",
-    "es": "¿Quién gana?\nEn general, ganan los de siempre.",
-    "en": "Who wins?\nIn general, the usual people win.",
+    "es": "¿Quién gana?\nEn general, gana el más rico.",
+    "en": "Who wins?\nIn general, the richest one wins.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
       "g:questions",
+      "g:superlatives",
       "l:ganar",
       "l:general",
       "l:quién",
-      "l:siempre",
+      "l:rico",
       "p:en-general",
-      "p:frequency-scale",
-      "p:los-de-la-camiseta",
       "p:por-lo-general"
     ],
     "targets": [
@@ -6924,20 +6918,20 @@
   },
   {
     "id": "u28-0276",
-    "es": "¿Y los vecinos?\nPor lo general, están de acuerdo.",
-    "en": "And the neighbours?\nGenerally, they agree.",
+    "es": "¿Y los vecinos?\nPor lo general, están contentos.",
+    "en": "And the neighbours?\nGenerally, they're happy.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:estar-location-states",
       "g:gender-articles",
       "g:lo-adjective",
-      "l:acuerdo",
+      "l:contento",
       "l:estar",
       "l:general",
       "l:vecino",
       "p:en-general",
-      "p:estar-de-acuerdo-con-en",
       "p:frequency-scale",
       "p:por-lo-general"
     ],
@@ -7104,8 +7098,8 @@
   },
   {
     "id": "u28-0283",
-    "es": "Vale cocina muy bien, sobre todo el pan.",
-    "en": "Vale cooks very well, especially the bread.",
+    "es": "Vale cocina muy bien, sobre todo los postres.",
+    "en": "Vale cooks very well, especially desserts.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7114,7 +7108,7 @@
       "g:present-ar",
       "l:bien",
       "l:cocinar",
-      "l:pan",
+      "l:postre",
       "p:bien-bueno",
       "p:bien-mal-vs-bueno-malo",
       "p:focus-adverbs",
@@ -7448,18 +7442,18 @@
   },
   {
     "id": "u28-0296",
-    "es": "Echo de menos mi casa, sobre todo la cocina.",
-    "en": "I miss my house, especially the kitchen.",
+    "es": "Me gusta el apartamento, sobre todo la cocina.",
+    "en": "I like the apartment, especially the kitchen.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:me-gusta",
       "g:gender-articles",
-      "g:present-ar",
-      "l:casa",
+      "g:gustar-basic",
+      "l:apartamento",
       "l:cocina",
-      "l:echar",
+      "l:gustar",
       "p:focus-adverbs",
-      "p:possessives-basic",
       "p:sobre-todo",
       "p:sobre-todo-solo"
     ],
@@ -7687,19 +7681,20 @@
   },
   {
     "id": "u28-0305",
-    "es": "Quiero mejorar mi español, sobre todo hablando.",
-    "en": "I want to improve my Spanish, especially my speaking.",
+    "es": "Quiero mejorar mi español, sobre todo cuando hablo.",
+    "en": "I want to improve my Spanish, especially when I speak.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:quiero",
-      "g:gerund-ways",
+      "g:present-ar",
       "g:stem-boot",
       "g:verb-infinitive",
       "l:español",
       "l:hablar",
       "l:mejorar",
       "l:querer",
+      "p:cuando-basic",
       "p:focus-adverbs",
       "p:possessives-basic",
       "p:sobre-todo",
@@ -7715,8 +7710,8 @@
   },
   {
     "id": "u28-0306",
-    "es": "Hay que cuidar el parque, sobre todo en verano.",
-    "en": "We have to take care of the park, especially in summer.",
+    "es": "Hay que cuidar el parque, sobre todo en vacaciones.",
+    "en": "We have to take care of the park, especially during the holidays.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7726,7 +7721,7 @@
       "g:verb-infinitive",
       "l:cuidar",
       "l:parque",
-      "l:verano",
+      "l:vacación",
       "p:focus-adverbs",
       "p:sobre-todo",
       "p:sobre-todo-solo"
@@ -7847,7 +7842,7 @@
   {
     "id": "u28-0311",
     "es": "Encuentro a Vale muy cansada.",
-    "en": "I find Vale very tired.",
+    "en": "Vale seems very tired to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7867,7 +7862,7 @@
   {
     "id": "u28-0312",
     "es": "Encuentro a mi madre un poco triste.",
-    "en": "I find my mother a bit sad.",
+    "en": "My mother seems a bit sad to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8317,7 +8312,7 @@
   {
     "id": "u28-0333",
     "es": "La veo cansada.",
-    "en": "I see her tired.",
+    "en": "She looks tired to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8339,7 +8334,7 @@
   {
     "id": "u28-0334",
     "es": "Lo veo muy tranquilo.",
-    "en": "I see him very calm.",
+    "en": "He looks very calm to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8362,7 +8357,7 @@
   {
     "id": "u28-0335",
     "es": "Veo a Hernando muy triste.",
-    "en": "I see Hernando very sad.",
+    "en": "Hernando looks very sad to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8381,7 +8376,7 @@
   {
     "id": "u28-0336",
     "es": "Veo a Vale más feliz.",
-    "en": "I see Vale happier.",
+    "en": "Vale looks happier to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8444,7 +8439,7 @@
   {
     "id": "u28-0339",
     "es": "Los veo preocupados.",
-    "en": "I see them worried.",
+    "en": "They look worried to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8466,7 +8461,7 @@
   {
     "id": "u28-0340",
     "es": "Veo a mi madre muy contenta con el café.",
-    "en": "I see my mother very happy with the café.",
+    "en": "My mother seems very happy with the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8491,7 +8486,7 @@
   {
     "id": "u28-0341",
     "es": "Veo a los vecinos más unidos.",
-    "en": "I see the neighbours more united.",
+    "en": "The neighbours seem more united to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8512,7 +8507,7 @@
   {
     "id": "u28-0342",
     "es": "¿Cómo me ves?",
-    "en": "How do you see me? (to a friend)",
+    "en": "How do I look to you? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8576,7 +8571,7 @@
   {
     "id": "u28-0345",
     "es": "¿Cómo ves a Tomás?",
-    "en": "How do you see Tomás? (to a friend)",
+    "en": "How does Tomás seem to you? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8659,16 +8654,16 @@
   },
   {
     "id": "u28-0349",
-    "es": "Yo veo muy difícil el cambio del alcalde.",
-    "en": "I see the mayor changing as very unlikely.",
+    "es": "Yo veo muy difícil el plan del alcalde.",
+    "en": "The mayor's plan looks very difficult to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:yo-irregular",
       "l:alcalde",
-      "l:cambio",
       "l:difícil",
+      "l:plan",
       "l:ver",
       "p:quantifiers-basic"
     ],
@@ -8681,7 +8676,7 @@
   {
     "id": "u28-0350",
     "es": "Encuentro a mi vecino muy preocupado.",
-    "en": "I find my neighbour very worried.",
+    "en": "My neighbour seems very worried to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9026,7 +9021,7 @@
   {
     "id": "u28-0365",
     "es": "No pienso en otra cosa.",
-    "en": "I can't think of anything else.",
+    "en": "I don't think about anything else.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9942,16 +9937,24 @@
   },
   {
     "id": "u28-0406",
-    "es": "Estoy en contra de la contaminación.",
-    "en": "I'm against pollution.",
+    "es": "Estoy en contra de más carros en el centro. La contaminación ya es muy alta.",
+    "en": "I'm against more cars downtown. The pollution is already very high.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:estar-location-states",
       "g:gender-articles",
+      "g:ser-identity",
+      "l:alto",
+      "l:carro",
+      "l:centro",
       "l:contaminación",
       "l:estar",
-      "p:estar-a-favor-de"
+      "l:ser",
+      "p:es-tiene-lleva",
+      "p:estar-a-favor-de",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:contaminación",
@@ -10666,16 +10669,17 @@
   },
   {
     "id": "u28-0438",
-    "es": "La comunidad habla los jueves.",
-    "en": "The community talks on Thursdays.",
+    "es": "La comunidad hace una reunión los jueves.",
+    "en": "The community holds a meeting on Thursdays.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
+      "g:present-er-ir",
       "l:comunidad",
-      "l:hablar",
+      "l:hacer",
       "l:jueves",
+      "l:reunión",
       "p:days-el-lunes"
     ],
     "targets": [
@@ -11692,13 +11696,12 @@
   },
   {
     "id": "u28-0484",
-    "es": "¿Y tú, qué opinas?\nNo me parece que Altamira sea tan generosa.",
+    "es": "¿Y tú, qué opinas?\nNo me parece que Altamira sea tan generoso.",
     "en": "And you, what do you think? (to a friend)\nI don't think Altamira is that generous.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
-      "g:adjective-agreement",
       "g:parecer-quedar",
       "g:present-ar",
       "g:present-er-ir",
@@ -11989,8 +11992,8 @@
   },
   {
     "id": "u28-0493",
-    "es": "¿Qué dices tú?\nNo me parece que Vale tenga un error.",
-    "en": "What do you say? (to a friend)\nI don't think Vale has made a mistake.",
+    "es": "¿Qué dices tú?\nNo me parece que Vale tenga la culpa.",
+    "en": "What do you say? (to a friend)\nI don't think Vale is to blame.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12002,8 +12005,8 @@
       "g:stem-e-i",
       "g:subj-opinion-negated",
       "g:that-clauses",
+      "l:culpa",
       "l:decir",
-      "l:error",
       "l:parecer",
       "l:qué",
       "l:tener"
@@ -12238,30 +12241,29 @@
   },
   {
     "id": "u28-0501",
-    "es": "¿Quieres opinar?\nNo me parece que la gente salga de noche.",
-    "en": "Do you want to give your opinion? (to a friend)\nI don't think people go out at night.",
+    "es": "¿Hay gente en la calle de noche?\nNo me parece que la gente salga mucho.",
+    "en": "Are there people on the street at night?\nI don't think people go out much.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
       "g:gender-articles",
+      "g:hay-vs-esta",
       "g:parecer-quedar",
       "g:present-er-ir",
-      "g:stem-boot",
       "g:subj-opinion-negated",
       "g:subj-wanting",
       "g:that-clauses",
-      "g:verb-infinitive",
+      "l:calle",
       "l:gente",
       "l:noche",
-      "l:opinar",
       "l:parecer",
-      "l:querer",
       "l:salir",
-      "p:la-gente-singular"
+      "p:la-gente-singular",
+      "p:quantifiers-basic"
     ],
     "targets": [
-      "g:subj-opinion-negated",
-      "l:opinar"
+      "g:subj-opinion-negated"
     ],
     "kind": "dialogue",
     "unit": "u28",
@@ -12332,7 +12334,7 @@
   },
   {
     "id": "u28-0504",
-    "es": "¿No te parece una barbaridad de dinero?",
+    "es": "¿No te parece una barbaridad de plata?",
     "en": "Don't you think it's a crazy amount of money? (to a friend)",
     "accept": [],
     "acceptEn": [],
@@ -12341,8 +12343,8 @@
       "g:parecer-quedar",
       "g:present-er-ir",
       "l:barbaridad",
-      "l:dinero",
-      "l:parecer"
+      "l:parecer",
+      "l:plata"
     ],
     "targets": [],
     "kind": "question",
@@ -12941,22 +12943,18 @@
   },
   {
     "id": "u28-0525",
-    "es": "Mi madre no cree que yo coma bien.",
-    "en": "My mother doesn't think I eat well.",
+    "es": "Mi madre no cree que yo vuelva a Toronto.",
+    "en": "My mother doesn't think I'll go back to Toronto.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
       "g:present-er-ir",
       "g:subj-opinion-negated",
       "g:subj-wanting",
       "g:that-clauses",
-      "l:bien",
-      "l:comer",
       "l:creer",
       "l:madre",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo",
+      "l:volver",
       "p:possessives-basic"
     ],
     "targets": [
@@ -13395,13 +13393,14 @@
   },
   {
     "id": "u28-0542",
-    "es": "No opino que el hotel sea una mala idea.",
+    "es": "No me parece que el hotel sea una mala idea.",
     "en": "I don't think the hotel is a bad idea.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
+      "g:parecer-quedar",
+      "g:present-er-ir",
       "g:ser-identity",
       "g:subj-irregulars",
       "g:subj-opinion-negated",
@@ -13409,14 +13408,13 @@
       "l:hotel",
       "l:idea",
       "l:mala",
-      "l:opinar",
+      "l:parecer",
       "l:ser",
       "p:bien-bueno",
       "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
-      "g:subj-opinion-negated",
-      "l:opinar"
+      "g:subj-opinion-negated"
     ],
     "kind": "statement",
     "unit": "u28",
@@ -13425,12 +13423,13 @@
   },
   {
     "id": "u28-0543",
-    "es": "¿Cuál es tu opinión?\nNo opino que sea momento de gritar.",
+    "es": "¿Cuál es tu opinión?\nNo me parece que sea momento de gritar.",
     "en": "What's your opinion? (to a friend)\nI don't think it's time to shout.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
+      "g:parecer-quedar",
+      "g:present-er-ir",
       "g:questions",
       "g:ser-identity",
       "g:subj-irregulars",
@@ -13439,15 +13438,14 @@
       "l:cuál",
       "l:gritar",
       "l:momento",
-      "l:opinar",
       "l:opinión",
+      "l:parecer",
       "l:ser",
       "p:possessives-basic",
       "p:question-word-order"
     ],
     "targets": [
-      "g:subj-opinion-negated",
-      "l:opinar"
+      "g:subj-opinion-negated"
     ],
     "kind": "dialogue",
     "unit": "u28",
@@ -13456,12 +13454,13 @@
   },
   {
     "id": "u28-0544",
-    "es": "¿Qué dices tú?\nNo opino que tengamos que esperar más.",
+    "es": "¿Qué dices tú?\nNo me parece que tengamos que esperar más.",
     "en": "What do you say? (to a friend)\nI don't think we have to wait any longer.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
+      "g:parecer-quedar",
+      "g:present-er-ir",
       "g:questions",
       "g:stem-e-i",
       "g:subj-opinion-negated",
@@ -13470,13 +13469,12 @@
       "g:verb-infinitive",
       "l:decir",
       "l:esperar",
-      "l:opinar",
+      "l:parecer",
       "l:qué",
       "l:tener"
     ],
     "targets": [
-      "g:subj-opinion-negated",
-      "l:opinar"
+      "g:subj-opinion-negated"
     ],
     "kind": "dialogue",
     "unit": "u28",
@@ -13485,23 +13483,23 @@
   },
   {
     "id": "u28-0545",
-    "es": "No opino que Altamira tenga toda la culpa.",
+    "es": "No me parece que Altamira tenga toda la culpa.",
     "en": "I don't think Altamira is entirely to blame.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:aqui-tiene",
       "g:gender-articles",
-      "g:present-ar",
+      "g:parecer-quedar",
+      "g:present-er-ir",
       "g:subj-opinion-negated",
       "g:that-clauses",
       "l:culpa",
-      "l:opinar",
+      "l:parecer",
       "l:tener"
     ],
     "targets": [
-      "g:subj-opinion-negated",
-      "l:opinar"
+      "g:subj-opinion-negated"
     ],
     "kind": "statement",
     "unit": "u28",
@@ -13510,13 +13508,14 @@
   },
   {
     "id": "u28-0546",
-    "es": "¿Tú qué piensas?\nNo opino que la solución sea fácil.",
-    "en": "What do you think? (to a friend)\nI don't think the solution is easy.",
+    "es": "¿Tú qué piensas?\nNo me parece que la solución sea tan fácil.",
+    "en": "What do you think? (to a friend)\nI don't think the solution is that easy.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
+      "g:parecer-quedar",
+      "g:present-er-ir",
       "g:questions",
       "g:ser-identity",
       "g:stem-boot",
@@ -13524,7 +13523,7 @@
       "g:subj-opinion-negated",
       "g:that-clauses",
       "l:fácil",
-      "l:opinar",
+      "l:parecer",
       "l:pensar",
       "l:qué",
       "l:ser",
@@ -13533,7 +13532,6 @@
     ],
     "targets": [
       "g:subj-opinion-negated",
-      "l:opinar",
       "l:solución",
       "p:que-opinas-de"
     ],
@@ -13544,16 +13542,16 @@
   },
   {
     "id": "u28-0547",
-    "es": "No imagino que Hernando venda su taxi.",
+    "es": "No me imagino que Hernando venda su taxi.",
     "en": "I can't imagine Hernando selling his taxi.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
+      "c:me-imagino",
       "g:subj-opinion-negated",
       "g:subj-wanting",
       "g:that-clauses",
-      "l:imaginar",
+      "l:imaginarse",
       "l:taxi",
       "l:vender",
       "p:possessives-basic"
@@ -13568,19 +13566,21 @@
   },
   {
     "id": "u28-0548",
-    "es": "No imagino que Rosa quiera un hotel.",
-    "en": "I can't imagine Rosa wanting a hotel.",
+    "es": "No me parece que el hotel respete la historia de Rosa.",
+    "en": "I don't think the hotel respects Rosa's history.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
+      "g:parecer-quedar",
+      "g:present-er-ir",
       "g:subj-opinion-negated",
       "g:subj-wanting",
       "g:that-clauses",
+      "l:historia",
       "l:hotel",
-      "l:imaginar",
-      "l:querer"
+      "l:parecer",
+      "l:respetar"
     ],
     "targets": [
       "g:subj-opinion-negated"
@@ -13592,13 +13592,15 @@
   },
   {
     "id": "u28-0549",
-    "es": "¿Y tú qué opinas?\nNo opino que sea justo.",
-    "en": "And what's your opinion? (to a friend)\nI don't think it's fair.",
+    "es": "¿Y tú qué opinas?\nNo me parece que sea justo para Marta.",
+    "en": "And what's your opinion? (to a friend)\nI don't think it's fair to Marta.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
+      "g:parecer-quedar",
       "g:present-ar",
+      "g:present-er-ir",
       "g:questions",
       "g:ser-identity",
       "g:subj-irregulars",
@@ -13606,8 +13608,10 @@
       "g:that-clauses",
       "l:justo",
       "l:opinar",
+      "l:parecer",
       "l:qué",
       "l:ser",
+      "p:para-inf",
       "p:que-opinas-de"
     ],
     "targets": [
@@ -13622,23 +13626,23 @@
   },
   {
     "id": "u28-0550",
-    "es": "No opino que Tomás tenga la culpa.",
+    "es": "No me parece que Tomás tenga la culpa.",
     "en": "I don't think Tomás is to blame.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:aqui-tiene",
       "g:gender-articles",
-      "g:present-ar",
+      "g:parecer-quedar",
+      "g:present-er-ir",
       "g:subj-opinion-negated",
       "g:that-clauses",
       "l:culpa",
-      "l:opinar",
+      "l:parecer",
       "l:tener"
     ],
     "targets": [
-      "g:subj-opinion-negated",
-      "l:opinar"
+      "g:subj-opinion-negated"
     ],
     "kind": "statement",
     "unit": "u28",
@@ -13647,7 +13651,7 @@
   },
   {
     "id": "u28-0551",
-    "es": "¿Y a ti qué te parece?\nNo opino que el precio sea alto.",
+    "es": "¿Y a ti qué te parece?\nNo me parece que el precio sea alto.",
     "en": "And what do you make of it? (to a friend)\nI don't think the price is high.",
     "accept": [],
     "acceptEn": [],
@@ -13657,7 +13661,6 @@
       "g:gustar-full",
       "g:parecer-quedar",
       "g:prep-pronouns",
-      "g:present-ar",
       "g:present-er-ir",
       "g:questions",
       "g:ser-identity",
@@ -13665,7 +13668,6 @@
       "g:subj-opinion-negated",
       "g:that-clauses",
       "l:alto",
-      "l:opinar",
       "l:parecer",
       "l:precio",
       "l:qué",
@@ -13675,7 +13677,6 @@
     ],
     "targets": [
       "g:subj-opinion-negated",
-      "l:opinar",
       "p:te-parece-bien-que"
     ],
     "kind": "dialogue",
@@ -13711,22 +13712,26 @@
   },
   {
     "id": "u28-0553",
-    "es": "¿Vale tiene razón?\nNo me parece que no la tenga.",
+    "es": "¿Vale tiene razón?\nNo me parece que esté equivocada.",
     "en": "Is Vale right?\nI don't think she's wrong.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:aqui-tiene",
       "c:tienes",
-      "g:direct-objects",
+      "g:adjective-agreement",
+      "g:estar-location-states",
       "g:parecer-quedar",
       "g:present-er-ir",
       "g:stem-boot",
       "g:subj-opinion-negated",
+      "g:subj-wanting",
       "g:that-clauses",
+      "l:equivocado",
+      "l:estar",
       "l:parecer",
       "l:razón",
       "l:tener",
+      "p:equivocarse",
       "p:tener-razon"
     ],
     "targets": [
@@ -13740,7 +13745,7 @@
   {
     "id": "u28-0554",
     "es": "¿El hotel trae trabajo?\nNo nos parece que traiga mucho.",
-    "en": "Does the hotel bring jobs?\nWe don't think it brings many.",
+    "en": "Does the hotel bring jobs?\nWe don't think it brings much.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13928,25 +13933,24 @@
   },
   {
     "id": "u28-0561",
-    "es": "¿Es tarde ya?\nNo opino que lo sea.",
-    "en": "Is it late already?\nI don't think it is.",
+    "es": "¿Es tarde ya?\nNo me parece que sea tan tarde.",
+    "en": "Is it late already?\nI don't think it's that late.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
-      "g:present-ar",
+      "g:parecer-quedar",
+      "g:present-er-ir",
       "g:ser-identity",
       "g:subj-irregulars",
       "g:subj-opinion-negated",
       "g:that-clauses",
-      "l:opinar",
+      "l:parecer",
       "l:ser",
       "l:tarde",
       "p:es-de-noche-tarde"
     ],
     "targets": [
-      "g:subj-opinion-negated",
-      "l:opinar"
+      "g:subj-opinion-negated"
     ],
     "kind": "dialogue",
     "unit": "u28",
@@ -13955,26 +13959,26 @@
   },
   {
     "id": "u28-0562",
-    "es": "¿Es culpa mía?\nNo opino que lo sea.",
-    "en": "Is it my fault?\nI don't think it is. (to a friend)",
+    "es": "¿Yo tengo la culpa?\nNo me parece que la tengas.",
+    "en": "Am I to blame?\nI don't think you are. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tengo",
       "g:direct-objects",
-      "g:possessives-stressed",
-      "g:present-ar",
-      "g:ser-identity",
-      "g:subj-irregulars",
+      "g:gender-articles",
+      "g:parecer-quedar",
+      "g:present-er-ir",
       "g:subj-opinion-negated",
+      "g:subj-wanting",
       "g:that-clauses",
+      "g:yo-irregular",
       "l:culpa",
-      "l:opinar",
-      "l:ser",
-      "p:por-culpa-de"
+      "l:parecer",
+      "l:tener"
     ],
     "targets": [
-      "g:subj-opinion-negated",
-      "l:opinar"
+      "g:subj-opinion-negated"
     ],
     "kind": "dialogue",
     "unit": "u28",
@@ -14101,20 +14105,20 @@
   },
   {
     "id": "u28-0567",
-    "es": "Todos piensan lo mismo.\nNo nos parece que todos lo piensen.",
-    "en": "Everyone thinks the same.\nWe don't think everyone does.",
+    "es": "Todos piensan lo mismo.\nNo creemos que sea así.",
+    "en": "Everyone thinks the same.\nWe don't think that's the case.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
-      "g:parecer-quedar",
       "g:present-er-ir",
+      "g:ser-identity",
       "g:stem-boot",
+      "g:subj-irregulars",
       "g:subj-opinion-negated",
-      "g:subj-wanting",
       "g:that-clauses",
-      "l:parecer",
-      "l:pensar"
+      "l:creer",
+      "l:pensar",
+      "l:ser"
     ],
     "targets": [
       "g:subj-opinion-negated"
@@ -14320,8 +14324,8 @@
   },
   {
     "id": "u28-0574",
-    "es": "¿Tú qué piensas?\nNo me parece que la basura salga a tiempo.",
-    "en": "What do you think? (to a friend)\nI don't think the trash goes out on time.",
+    "es": "¿Tú qué piensas?\nNo me parece que recojan la basura todos los días.",
+    "en": "What do you think? (to a friend)\nI don't think they collect the trash every day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14334,13 +14338,15 @@
       "g:subj-wanting",
       "g:that-clauses",
       "l:basura",
+      "l:día",
       "l:parecer",
       "l:pensar",
       "l:qué",
-      "l:salir",
-      "l:tiempo",
-      "p:llegar-a-tiempo",
-      "p:que-opinas-de"
+      "l:recoger",
+      "p:entregar-recoger",
+      "p:que-opinas-de",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "g:subj-opinion-negated",
@@ -14631,16 +14637,19 @@
   },
   {
     "id": "u28-0584",
-    "es": "Mi vecina no cree que el robo fuera un accidente.",
-    "en": "My neighbour doesn't think the robbery was an accident.",
+    "es": "Mi vecina no cree que los robos paren pronto.",
+    "en": "My neighbour doesn't think the robberies will stop soon.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
+      "g:subj-opinion-negated",
+      "g:subj-wanting",
       "g:that-clauses",
-      "l:accidente",
       "l:creer",
+      "l:parar",
+      "l:pronto",
       "l:robo",
       "l:vecino",
       "p:possessives-basic"
@@ -16358,8 +16367,8 @@
   },
   {
     "id": "u28-0652",
-    "es": "Es una pena que los pequeños paguen más.",
-    "en": "It's a shame that the small ones pay more.",
+    "es": "Es una pena que los negocios pequeños paguen más.",
+    "en": "It's a shame that small businesses pay more.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16369,6 +16378,7 @@
       "g:subj-value",
       "g:subj-wanting",
       "g:that-clauses",
+      "l:negocio",
       "l:pagar",
       "l:pena",
       "l:pequeño",
@@ -17853,8 +17863,8 @@
   },
   {
     "id": "u28-0705",
-    "es": "Estoy a favor de hablar con los de Altamira.",
-    "en": "I'm in favour of talking to the Altamira people.",
+    "es": "Estoy a favor de hablar con la gente de Altamira.",
+    "en": "I'm in favour of talking to the people from Altamira.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17862,9 +17872,10 @@
       "g:gender-articles",
       "l:estar",
       "l:favor",
+      "l:gente",
       "l:hablar",
       "p:estar-a-favor-de",
-      "p:los-de-la-camiseta"
+      "p:la-gente-singular"
     ],
     "targets": [
       "p:estar-a-favor-de"
@@ -18107,21 +18118,24 @@
   },
   {
     "id": "u28-0715",
-    "es": "Estoy en contra de que usen piedras en la plaza.",
-    "en": "I'm against them using stones in the square.",
+    "es": "Estoy en contra de que cambien las piedras viejas de la plaza.",
+    "en": "I'm against them changing the old stones in the square.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:estar-location-states",
       "g:gender-articles",
       "g:subj-value",
       "g:subj-wanting",
       "g:that-clauses",
+      "l:cambiar",
       "l:estar",
       "l:piedra",
       "l:plaza",
-      "l:usar",
-      "p:estar-a-favor-de"
+      "l:viejo",
+      "p:estar-a-favor-de",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "g:subj-value",
@@ -18181,15 +18195,18 @@
   },
   {
     "id": "u28-0718",
-    "es": "Estamos en contra de que nadie nos pregunte.",
-    "en": "We're against nobody asking us.",
+    "es": "Estamos en contra de que decidan sin preguntarnos.",
+    "en": "We're against them deciding without asking us.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
+      "g:object-pronoun-position",
+      "g:prep-infinitive",
       "g:subj-value",
       "g:subj-wanting",
       "g:that-clauses",
+      "l:decidir",
       "l:estar",
       "l:preguntar",
       "p:estar-a-favor-de",
@@ -19246,20 +19263,25 @@
   },
   {
     "id": "u28-0762",
-    "es": "Lo mejor de Bogotá es su gente.",
-    "en": "The best thing about Bogotá is its people.",
+    "es": "Bogotá tiene muchas cosas buenas, pero lo mejor es su gente.",
+    "en": "Bogotá has a lot of good things, but the best thing is its people.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:lo-mejor-es",
+      "c:tienes",
       "g:lo-adjective",
       "g:ser-identity",
-      "g:superlatives",
+      "g:stem-boot",
+      "l:buena",
+      "l:cosa",
       "l:gente",
       "l:mejor",
       "l:ser",
+      "l:tener",
       "p:la-gente-singular",
-      "p:lo-mejor-de",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:lo-adjective"
@@ -19297,8 +19319,8 @@
   },
   {
     "id": "u28-0764",
-    "es": "Lo mejor de hoy fue ver a Hernando reír.",
-    "en": "The best thing about today was seeing Hernando laugh.",
+    "es": "Hoy lo mejor fue ver a Hernando reír.",
+    "en": "Today the best thing was seeing Hernando laugh.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19311,7 +19333,6 @@
       "l:reír",
       "l:ser",
       "l:ver",
-      "p:lo-mejor-de",
       "p:personal-a"
     ],
     "targets": [
@@ -19395,8 +19416,8 @@
   },
   {
     "id": "u28-0768",
-    "es": "Lo mejor de la ciudad son los parques.",
-    "en": "The best thing about the city is its parks.",
+    "es": "En la ciudad, lo mejor son los parques.",
+    "en": "In the city, the best thing is the parks.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19407,8 +19428,7 @@
       "l:ciudad",
       "l:mejor",
       "l:parque",
-      "l:ser",
-      "p:lo-mejor-de"
+      "l:ser"
     ],
     "targets": [
       "g:lo-adjective"
@@ -19555,8 +19575,8 @@
   },
   {
     "id": "u28-0775",
-    "es": "Lo importante no es ganar, es que nos oigan.",
-    "en": "What matters isn't winning, it's that they hear us.",
+    "es": "Lo importante no es ganar. Lo importante es que nos escuchen.",
+    "en": "What matters isn't winning. What matters is that they listen to us.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19564,12 +19584,11 @@
       "g:lo-adjective",
       "g:ser-identity",
       "g:subj-wanting",
+      "l:escuchar",
       "l:ganar",
       "l:importante",
-      "l:oír",
       "l:ser",
-      "p:me-te-nos-objects",
-      "p:no-es-x-es-y"
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:lo-adjective"
@@ -19771,8 +19790,8 @@
   },
   {
     "id": "u28-0784",
-    "es": "Lo difícil de ser nuevo en el barrio es que nadie te conoce.",
-    "en": "The hard part of being new in the neighbourhood is that nobody knows you.",
+    "es": "Cuando eres nuevo en el barrio, lo difícil es que nadie te conoce.",
+    "en": "When you're new in the neighbourhood, the hard part is that nobody knows you.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19786,8 +19805,7 @@
       "l:difícil",
       "l:nuevo",
       "l:ser",
-      "p:adj-de-inf",
-      "p:dificil-de-inf",
+      "p:cuando-basic",
       "p:me-te-nos-objects",
       "p:saber-conocer"
     ],
@@ -19801,21 +19819,21 @@
   },
   {
     "id": "u28-0785",
-    "es": "Lo difícil de cocinar para cien personas es el tiempo.",
-    "en": "The hard part of cooking for a hundred people is the time.",
+    "es": "Cuando cocinas para cien personas, lo difícil es el tiempo.",
+    "en": "When you cook for a hundred people, the hard part is the time.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:lo-adjective",
+      "g:present-ar",
       "g:ser-identity",
       "l:cocinar",
       "l:difícil",
       "l:persona",
       "l:ser",
       "l:tiempo",
-      "p:adj-de-inf",
-      "p:dificil-de-inf",
+      "p:cuando-basic",
       "p:numbers-un-una",
       "p:para-inf"
     ],
@@ -19943,17 +19961,19 @@
   },
   {
     "id": "u28-0791",
-    "es": "Lo único bueno es la paz.",
-    "en": "The only good thing is peace.",
+    "es": "Lo único bueno del día fue el tinto.",
+    "en": "The only good thing about the day was the coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:lo-adjective",
+      "g:preterite-ser-ir-hacer",
       "g:ser-identity",
       "l:bueno",
-      "l:paz",
+      "l:día",
       "l:ser",
+      "l:tinto",
       "l:único"
     ],
     "targets": [
@@ -20417,8 +20437,8 @@
   },
   {
     "id": "u28-0811",
-    "es": "Lo normal es llegar a tiempo.",
-    "en": "The normal thing is to arrive on time.",
+    "es": "Lo normal es llegar temprano.",
+    "en": "The normal thing is to arrive early.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20427,7 +20447,7 @@
       "l:llegar",
       "l:normal",
       "l:ser",
-      "l:tiempo",
+      "l:temprano",
       "p:llegar-a-tiempo"
     ],
     "targets": [
@@ -20440,19 +20460,22 @@
   },
   {
     "id": "u28-0812",
-    "es": "Lo normal es el ruido de los viernes.",
-    "en": "The normal thing is the Friday noise.",
+    "es": "Los viernes hay ruido, y eso es lo normal.",
+    "en": "On Fridays there's noise, and that's normal.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
       "g:gender-articles",
+      "g:hay-vs-esta",
       "g:lo-adjective",
       "g:ser-identity",
       "l:normal",
       "l:ruido",
       "l:ser",
       "l:viernes",
-      "p:days-el-lunes"
+      "p:days-el-lunes",
+      "p:demonstratives-basic"
     ],
     "targets": [
       "g:lo-adjective"
@@ -20747,14 +20770,15 @@
   },
   {
     "id": "u28-0826",
-    "es": "Lo dulce del pan de Vale es lo que más gusta.",
-    "en": "The sweetness of Vale's bread is what people like most.",
+    "es": "Lo que más me gusta del pan de Vale es lo dulce.",
+    "en": "What I like most about Vale's bread is the sweetness.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:me-gusta",
       "c:que-mas",
       "g:gender-articles",
-      "g:present-ar",
+      "g:gustar-basic",
       "g:relatives-donde-lo-que",
       "g:ser-identity",
       "l:dulce",
@@ -20774,7 +20798,7 @@
   {
     "id": "u28-0827",
     "es": "Lo caro no siempre es lo mejor.",
-    "en": "The expensive isn't always the best.",
+    "en": "Expensive isn't always best.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20819,7 +20843,7 @@
   {
     "id": "u28-0829",
     "es": "Lo nuevo da miedo, pero lo viejo es lo que queremos.",
-    "en": "The new is scary, but the old is what we want.",
+    "en": "New things are scary, but what we want is the old.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21509,19 +21533,20 @@
   },
   {
     "id": "u28-0857",
-    "es": "Lo difícil de jurar es cumplir.",
-    "en": "The hard part of swearing is keeping your word.",
+    "es": "Jurar es fácil. Lo difícil es cumplir.",
+    "en": "Swearing is easy. The hard part is keeping your word.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:lo-adjective",
       "g:ser-identity",
+      "g:verb-infinitive",
       "l:cumplir",
       "l:difícil",
+      "l:fácil",
       "l:jurar",
       "l:ser",
-      "p:adj-de-inf",
-      "p:dificil-de-inf"
+      "p:es-adj-inf"
     ],
     "targets": [
       "g:lo-adjective",
@@ -25366,7 +25391,7 @@
   {
     "id": "u28-0999",
     "es": "¿Te parece bien que vaya yo?\nClaro, me parece perfecto.",
-    "en": "Is it OK if I go?\nOf course, that's perfect.",
+    "en": "Is it OK with you if I go? (to a friend)\nOf course, that's perfect.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26554,25 +26579,28 @@
   },
   {
     "id": "u28-1043",
-    "es": "¿Quieres opinar?\nYo diría que es más caro.",
-    "en": "Do you want to give your opinion? (to a friend)\nI'd say it's more expensive.",
+    "es": "¿Qué tal el café nuevo de la otra cuadra?\nYo diría que es más caro.",
+    "en": "How's the new café on the next block?\nI'd say it's more expensive.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
+      "g:gender-articles",
+      "g:questions",
       "g:ser-identity",
-      "g:stem-boot",
       "g:that-clauses",
-      "g:verb-infinitive",
+      "l:café",
       "l:caro",
+      "l:cuadra",
       "l:decir",
-      "l:opinar",
-      "l:querer",
+      "l:nuevo",
+      "l:qué",
       "l:ser",
+      "p:otro-no-article",
+      "p:te-parece-bien-que",
       "p:yo-diria-que"
     ],
     "targets": [
-      "l:opinar",
       "p:yo-diria-que"
     ],
     "kind": "dialogue",
@@ -26848,22 +26876,20 @@
   },
   {
     "id": "u28-1053",
-    "es": "¿Quieres opinar?\nYo diría que no.",
-    "en": "Do you want to give your opinion? (to a friend)\nI'd say no.",
+    "es": "¿Firmamos hoy?\nYo diría que no.",
+    "en": "Shall we sign today?\nI'd say no.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
-      "g:stem-boot",
+      "g:present-ar",
       "g:that-clauses",
-      "g:verb-infinitive",
       "l:decir",
-      "l:opinar",
-      "l:querer",
+      "l:firmar",
+      "l:hoy",
       "p:yo-diria-que"
     ],
     "targets": [
-      "l:opinar",
       "p:yo-diria-que"
     ],
     "kind": "dialogue",
@@ -27446,18 +27472,18 @@
   },
   {
     "id": "u28-1076",
-    "es": "Yo diría que nosotros estamos de acuerdo.",
-    "en": "I'd say we agree.",
+    "es": "Yo diría que pensamos igual.",
+    "en": "I'd say we think the same.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:igual",
       "g:conditional",
-      "g:estar-location-states",
+      "g:present-ar",
       "g:that-clauses",
-      "l:acuerdo",
       "l:decir",
-      "l:estar",
-      "p:estar-de-acuerdo-con-en",
+      "l:igual",
+      "l:pensar",
       "p:yo-diria-que"
     ],
     "targets": [
@@ -27539,8 +27565,8 @@
   },
   {
     "id": "u28-1079",
-    "es": "Diría que la inseguridad es el primer problema.",
-    "en": "I'd say insecurity is the first problem.",
+    "es": "Diría que la inseguridad es el problema número uno.",
+    "en": "I'd say insecurity is problem number one.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27550,10 +27576,9 @@
       "g:that-clauses",
       "l:decir",
       "l:inseguridad",
+      "l:número",
       "l:problema",
       "l:ser",
-      "p:ordinal-floor",
-      "p:ordinals-primer-tercer",
       "p:yo-diria-que"
     ],
     "targets": [
@@ -28170,24 +28195,23 @@
   },
   {
     "id": "u28-1102",
-    "es": "¿Te encanta que te digan lo que piensas?",
-    "en": "Do you love it when people tell you what you think? (to a friend)",
+    "es": "¿Te gusta que te pidan tu opinión?",
+    "en": "Do you like it when people ask for your opinion? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gustar-full",
-      "g:present-ar",
-      "g:relatives-donde-lo-que",
-      "g:stem-boot",
+      "c:me-gusta",
+      "g:gustar-basic",
       "g:subj-emotion-intro",
       "g:subj-wanting",
       "g:that-clauses",
-      "l:decir",
-      "l:encantar",
-      "l:pensar",
-      "p:entusiasmar-fascinar",
+      "l:gustar",
+      "l:opinión",
+      "l:pedir",
       "p:me-encanta-que",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:possessives-basic",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "g:subj-emotion-intro",
@@ -28200,8 +28224,8 @@
   },
   {
     "id": "u28-1103",
-    "es": "¿Le encanta que el café esté lleno?",
-    "en": "Does she love it when the café is full?",
+    "es": "¿A Vale le encanta que el café esté lleno?",
+    "en": "Does Vale love it when the café is full?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28450,23 +28474,23 @@
   },
   {
     "id": "u28-1112",
-    "es": "No me gusta que me hablen sin mirarme.",
-    "en": "I don't like it when they talk to me without looking at me.",
+    "es": "No me gusta que lleguen tarde a la reunión.",
+    "en": "I don't like it when people arrive late to the meeting.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-gusta",
+      "g:gender-articles",
       "g:gustar-basic",
-      "g:object-pronoun-position",
-      "g:prep-infinitive",
       "g:subj-emotion-intro",
       "g:subj-wanting",
       "g:that-clauses",
       "l:gustar",
-      "l:hablar",
-      "l:mirar",
-      "p:me-encanta-que",
-      "p:me-te-nos-objects"
+      "l:llegar",
+      "l:reunión",
+      "l:tarde",
+      "p:llegar-a-tiempo",
+      "p:me-encanta-que"
     ],
     "targets": [
       "g:subj-emotion-intro",
@@ -28669,8 +28693,8 @@
   },
   {
     "id": "u28-1120",
-    "es": "A Vale no le gusta que le toquen la cocina.",
-    "en": "Vale doesn't like people touching her kitchen.",
+    "es": "A Vale no le gusta que la gente entre a su cocina.",
+    "en": "Vale doesn't like people coming into her kitchen.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28678,18 +28702,14 @@
       "g:gustar-basic",
       "g:gustar-full",
       "g:present-ar",
-      "g:subj-emotion-intro",
-      "g:subj-wanting",
       "g:that-clauses",
       "l:cocina",
+      "l:gente",
       "l:gustar",
-      "l:tocar",
-      "p:me-encanta-que"
+      "p:la-gente-singular",
+      "p:possessives-basic"
     ],
-    "targets": [
-      "g:subj-emotion-intro",
-      "p:me-encanta-que"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u28",
     "theme": "glad, bothered, in love with",
@@ -28779,8 +28799,8 @@
   },
   {
     "id": "u28-1124",
-    "es": "Me molesta que la gente tire basura.",
-    "en": "It bothers me that people throw trash.",
+    "es": "Me molesta que la gente deje la basura en la esquina.",
+    "en": "It bothers me that people leave their trash on the corner.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28791,9 +28811,10 @@
       "g:subj-wanting",
       "g:that-clauses",
       "l:basura",
+      "l:dejar",
+      "l:esquina",
       "l:gente",
       "l:molestar",
-      "l:tirar",
       "p:la-gente-singular"
     ],
     "targets": [
@@ -28884,8 +28905,8 @@
   },
   {
     "id": "u28-1128",
-    "es": "Me molesta que lleguen sin avisar.",
-    "en": "It bothers me when they arrive without warning.",
+    "es": "Me molesta que lleguen sin saludar.",
+    "en": "It bothers me when people arrive without saying hello.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28895,9 +28916,9 @@
       "g:subj-emotion-intro",
       "g:subj-wanting",
       "g:that-clauses",
-      "l:avisar",
       "l:llegar",
       "l:molestar",
+      "l:saludar",
       "p:me-encanta-que"
     ],
     "targets": [
@@ -30522,13 +30543,14 @@
   },
   {
     "id": "u28-1195",
-    "es": "Es adecuado que hable primero el más joven.",
-    "en": "It's appropriate that the youngest speaks first.",
+    "es": "Me parece adecuado que hable primero el más joven.",
+    "en": "I think it's right for the youngest to speak first.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:ser-identity",
+      "g:parecer-quedar",
+      "g:present-er-ir",
       "g:subj-value",
       "g:subj-wanting",
       "g:superlatives",
@@ -30536,7 +30558,7 @@
       "l:adecuado",
       "l:hablar",
       "l:joven",
-      "l:ser",
+      "l:parecer",
       "p:apropiado-para",
       "p:time-sequence-basic"
     ],
@@ -30551,8 +30573,8 @@
   },
   {
     "id": "u28-1196",
-    "es": "La ropa adecuada para Bogotá es una chaqueta.",
-    "en": "The right clothes for Bogotá are a jacket.",
+    "es": "Para Bogotá, una chaqueta siempre es la ropa adecuada.",
+    "en": "For Bogotá, a jacket is always the right clothing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -30563,7 +30585,9 @@
       "l:chaqueta",
       "l:ropa",
       "l:ser",
+      "l:siempre",
       "p:apropiado-para",
+      "p:frequency-scale",
       "p:para-inf"
     ],
     "targets": [
@@ -30883,8 +30907,8 @@
   },
   {
     "id": "u28-1210",
-    "es": "La piedra de la plaza tiene cien años.",
-    "en": "The stone of the square is a hundred years old.",
+    "es": "Las piedras de la plaza tienen cien años.",
+    "en": "The stones in the square are a hundred years old.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -30998,17 +31022,18 @@
   },
   {
     "id": "u28-1215",
-    "es": "Hay mucha piedra en esta calle.",
-    "en": "There's a lot of stone on this street.",
+    "es": "Hay una piedra grande en la puerta del café.",
+    "en": "There's a big stone at the café door.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hay",
+      "g:gender-articles",
       "g:hay-vs-esta",
-      "l:calle",
+      "l:café",
+      "l:grande",
       "l:piedra",
-      "p:demonstratives-basic",
-      "p:quantifiers-basic"
+      "l:puerta"
     ],
     "targets": [
       "l:piedra"
@@ -31020,24 +31045,26 @@
   },
   {
     "id": "u28-1216",
-    "es": "Estoy en contra de que usen piedras.",
-    "en": "I'm against them using stones.",
+    "es": "Es una pena que los niños tiren piedras en el parque.",
+    "en": "It's a shame that children throw stones in the park.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
+      "g:gender-articles",
+      "g:ser-identity",
       "g:subj-value",
       "g:subj-wanting",
       "g:that-clauses",
-      "l:estar",
+      "l:niño",
+      "l:parque",
+      "l:pena",
       "l:piedra",
-      "l:usar",
-      "p:estar-a-favor-de"
+      "l:ser",
+      "l:tirar"
     ],
     "targets": [
       "g:subj-value",
-      "l:piedra",
-      "p:estar-a-favor-de"
+      "l:piedra"
     ],
     "kind": "statement",
     "unit": "u28",
@@ -31498,7 +31525,7 @@
   {
     "id": "u28-1237",
     "es": "No creo que opinen igual.",
-    "en": "I don't think they think the same.",
+    "en": "I don't think they see it the same way.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -31521,7 +31548,7 @@
   {
     "id": "u28-1238",
     "es": "Me gusta que mis hijos opinen.",
-    "en": "I like it that my children give their opinions.",
+    "en": "I like that my children give their opinions.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -31568,7 +31595,7 @@
   {
     "id": "u28-1240",
     "es": "La veo muy contenta en el café.",
-    "en": "I see her very happy in the café.",
+    "en": "She seems very happy at the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -31593,7 +31620,7 @@
   {
     "id": "u28-1241",
     "es": "Te veo preocupada, Mariana.",
-    "en": "I see you worried, Mariana.",
+    "en": "You look worried, Mariana.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -31615,7 +31642,7 @@
   {
     "id": "u28-1242",
     "es": "La veo más tranquila que ayer.",
-    "en": "I see her calmer than yesterday.",
+    "en": "She seems calmer than yesterday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -31665,7 +31692,7 @@
   {
     "id": "u28-1244",
     "es": "Lo veo nervioso antes de hablar.",
-    "en": "I see him nervous before speaking.",
+    "en": "He seems nervous before speaking.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -31711,7 +31738,7 @@
   {
     "id": "u28-1246",
     "es": "Lo veo difícil, pero hay que intentarlo.",
-    "en": "I see it as hard, but we have to try.",
+    "en": "It looks hard to me, but we have to try.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -31738,7 +31765,7 @@
   {
     "id": "u28-1247",
     "es": "Lo veo claro: hay que hablar con todos.",
-    "en": "I see it clearly: we have to talk to everyone.",
+    "en": "It's clear to me: we have to talk to everyone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -31761,19 +31788,16 @@
   },
   {
     "id": "u28-1248",
-    "es": "Lo veo muy lejos de la solución.",
-    "en": "I see it very far from a solution.",
+    "es": "Veo la solución muy lejos.",
+    "en": "The solution looks very far off to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
       "g:gender-articles",
       "g:yo-irregular",
       "l:lejos",
       "l:solución",
       "l:ver",
-      "p:cerca-de",
-      "p:position-de",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -31787,7 +31811,7 @@
   {
     "id": "u28-1249",
     "es": "Los veo muy unidos.",
-    "en": "I see them very united.",
+    "en": "They seem very united to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -31809,7 +31833,7 @@
   {
     "id": "u28-1250",
     "es": "Los veo más alegres hoy.",
-    "en": "I see them happier today.",
+    "en": "They seem happier today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -31831,8 +31855,8 @@
   },
   {
     "id": "u28-1251",
-    "es": "Las veo muy tristes, a las dos.",
-    "en": "I see the two of them very sad.",
+    "es": "Las veo muy tristes a las dos.",
+    "en": "Both of them seem very sad to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -31932,7 +31956,7 @@
   {
     "id": "u28-1255",
     "es": "Te veo bien en ese trabajo.",
-    "en": "I think you look good in that job. (to a friend)",
+    "en": "I can see you doing well in that job. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32000,18 +32024,16 @@
   },
   {
     "id": "u28-1258",
-    "es": "Me veo mal para hablar mañana.",
-    "en": "I don't see myself speaking well tomorrow.",
+    "es": "No me veo listo para hablar mañana.",
+    "en": "I don't feel ready to speak tomorrow.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:yo-irregular",
       "l:hablar",
-      "l:mal",
+      "l:listo",
       "l:mañana",
       "l:ver",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo",
       "p:encontrar-ver-adj",
       "p:me-te-nos-objects",
       "p:para-inf",
@@ -32028,7 +32050,7 @@
   {
     "id": "u28-1259",
     "es": "¿Cómo la ves?",
-    "en": "How do you see her? (to a friend)",
+    "en": "How does she seem to you? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32073,7 +32095,7 @@
   {
     "id": "u28-1261",
     "es": "¿Cómo los ves?",
-    "en": "How do you see them? (to a friend)",
+    "en": "How do they seem to you? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32095,7 +32117,7 @@
   {
     "id": "u28-1262",
     "es": "¿Cómo ves a Hernando hoy?",
-    "en": "How do you see Hernando today? (to a friend)",
+    "en": "How does Hernando seem to you today? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32201,7 +32223,7 @@
   {
     "id": "u28-1267",
     "es": "¿La ves cansada?",
-    "en": "Do you see her as tired? (to a friend)",
+    "en": "Does she seem tired to you? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32289,7 +32311,7 @@
   {
     "id": "u28-1271",
     "es": "Te encuentro más cansado que ayer.",
-    "en": "I find you more tired than yesterday. (to a man)",
+    "en": "You seem more tired than yesterday. (to a man)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32314,7 +32336,7 @@
   {
     "id": "u28-1272",
     "es": "Te encuentro muy cambiado.",
-    "en": "I find you very changed. (to a man)",
+    "en": "You look very different. (to a man)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32337,7 +32359,7 @@
   {
     "id": "u28-1273",
     "es": "Te encuentro muy contenta.",
-    "en": "I find you very happy. (to a woman)",
+    "en": "You seem very happy. (to a woman)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32466,7 +32488,7 @@
   {
     "id": "u28-1279",
     "es": "Lo encuentro muy alto para esta calle.",
-    "en": "I find it too tall for this street.",
+    "en": "I find it very tall for this street.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32626,7 +32648,7 @@
   {
     "id": "u28-1286",
     "es": "¿Cómo la ves?\nLa veo cansada, pero contenta.",
-    "en": "How do you see her?\nI see her tired, but happy.",
+    "en": "How does she seem to you?\nShe seems tired, but happy.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32679,7 +32701,7 @@
   {
     "id": "u28-1288",
     "es": "¿Y el plan?\nLo veo difícil.",
-    "en": "And the plan?\nI see it as hard.",
+    "en": "And the plan?\nIt looks hard to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32703,7 +32725,7 @@
   {
     "id": "u28-1289",
     "es": "¿Cómo ves a Tomás?\nLo veo más tranquilo.",
-    "en": "How do you see Tomás?\nI see him calmer.",
+    "en": "How does Tomás seem to you?\nHe seems calmer.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -33118,18 +33140,19 @@
   },
   {
     "id": "u28-1305",
-    "es": "En general, la gente de Bogotá es muy amable.",
-    "en": "In general, people in Bogotá are very friendly.",
+    "es": "En general, la gente aquí saluda en la calle.",
+    "en": "In general, people here say hello in the street.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:muy-amable",
       "g:gender-articles",
-      "g:ser-identity",
-      "l:amable",
+      "g:present-ar",
+      "l:aquí",
+      "l:calle",
       "l:general",
       "l:gente",
-      "l:ser",
+      "l:saludar",
+      "p:aqui-ahi-alla",
       "p:en-general",
       "p:la-gente-singular",
       "p:por-lo-general"
@@ -34281,7 +34304,7 @@
   {
     "id": "u28-1346",
     "es": "¿Qué opinas de lo que contó Hernando?",
-    "en": "What do you think of what Hernando told us?? (to a friend)",
+    "en": "What do you think of what Hernando told us? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -34523,25 +34546,24 @@
   },
   {
     "id": "u28-1355",
-    "es": "Lo mejor de cerrar tarde es la gente que llega.",
-    "en": "The best thing about closing late is the people who come.",
+    "es": "Cuando cerramos tarde, lo mejor es la gente que llega.",
+    "en": "When we close late, the best thing is the people who come.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:lo-mejor-es",
       "g:gender-articles",
       "g:lo-adjective",
       "g:present-ar",
-      "g:relative-que",
       "g:ser-identity",
-      "g:superlatives",
       "l:cerrar",
       "l:gente",
       "l:llegar",
       "l:mejor",
       "l:ser",
       "l:tarde",
-      "p:la-gente-singular",
-      "p:lo-mejor-de"
+      "p:cuando-basic",
+      "p:la-gente-singular"
     ],
     "targets": [
       "g:lo-adjective"
@@ -34580,21 +34602,20 @@
   },
   {
     "id": "u28-1357",
-    "es": "Lo difícil de vivir solo es cocinar para uno.",
-    "en": "The hard part of living alone is cooking for one.",
+    "es": "Cuando vives solo, lo difícil es cocinar para uno.",
+    "en": "When you live alone, the hard part is cooking for one.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:lo-adjective",
+      "g:present-er-ir",
       "g:ser-identity",
       "l:cocinar",
       "l:difícil",
       "l:ser",
       "l:vivir",
-      "p:adj-de-inf",
-      "p:dificil-de-inf",
-      "p:para-inf",
-      "p:sobre-todo-solo"
+      "p:cuando-basic",
+      "p:para-inf"
     ],
     "targets": [
       "g:lo-adjective"
@@ -34781,24 +34802,23 @@
   },
   {
     "id": "u28-1365",
-    "es": "Lo peor de la basura es el olor.",
-    "en": "The worst thing about trash is the smell.",
+    "es": "Cuando votamos, lo mejor es que todos opinan.",
+    "en": "When we vote, the best thing is that everyone has a say.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "c:es-que",
+      "c:lo-mejor-es",
       "g:lo-adjective",
-      "g:ser-identity",
-      "g:superlatives",
-      "l:basura",
-      "l:olor",
-      "l:peor",
+      "g:present-ar",
+      "l:mejor",
+      "l:opinar",
       "l:ser",
-      "p:lo-mejor-de"
+      "l:votar",
+      "p:cuando-basic"
     ],
     "targets": [
-      "g:lo-adjective",
-      "l:basura"
+      "g:lo-adjective"
     ],
     "kind": "statement",
     "unit": "u28",
@@ -34860,21 +34880,20 @@
   },
   {
     "id": "u28-1368",
-    "es": "Lo bueno de esta silla es que es vieja.",
-    "en": "The good thing about this chair is that it's old.",
+    "es": "Lo bueno de esta silla es que era de Rosa.",
+    "en": "The good thing about this chair is that it was Rosa's.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
       "c:es-que",
-      "g:adjective-agreement",
+      "g:imperfect-states",
       "g:lo-adjective",
       "g:ser-identity",
       "l:bueno",
       "l:ser",
       "l:silla",
-      "l:viejo",
-      "p:demonstratives-basic",
-      "p:viejo-antiguo-mayor"
+      "p:demonstratives-basic"
     ],
     "targets": [
       "g:lo-adjective"
@@ -34941,22 +34960,26 @@
   },
   {
     "id": "u28-1371",
-    "es": "Lo mejor de mis vecinos es que me saludan.",
-    "en": "The best thing about my neighbours is that they greet me.",
+    "es": "Mis vecinos me saludan todos los días, y eso es lo mejor.",
+    "en": "My neighbours greet me every day, and that's the best thing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:es-que",
+      "g:gender-articles",
       "g:lo-adjective",
       "g:present-ar",
+      "g:ser-identity",
       "g:superlatives",
+      "l:día",
       "l:mejor",
       "l:saludar",
       "l:ser",
       "l:vecino",
-      "p:lo-mejor-de",
+      "p:demonstratives-basic",
       "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "g:lo-adjective"
@@ -35017,20 +35040,19 @@
   },
   {
     "id": "u28-1374",
-    "es": "Lo difícil de la política es ponerse de acuerdo.",
-    "en": "The hard part of politics is agreeing.",
+    "es": "Lo difícil en política es escuchar al otro.",
+    "en": "The hard part in politics is listening to the other side.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:lo-adjective",
-      "g:reflexive-routine",
       "g:ser-identity",
-      "l:acuerdo",
       "l:difícil",
+      "l:escuchar",
       "l:política",
-      "l:ponerse",
-      "l:ser"
+      "l:ser",
+      "p:otro-no-article"
     ],
     "targets": [
       "g:lo-adjective",
@@ -35515,8 +35537,8 @@
   },
   {
     "id": "u28-1394",
-    "es": "¿Es importante que vayas?\nSí, es importante que estés ahí.",
-    "en": "Is it important that you go?\nYes, it's important that you're there.",
+    "es": "¿Es importante que yo vaya?\nSí, es importante que estés ahí.",
+    "en": "Is it important that I go?\nYes, it's important that you're there. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -35915,24 +35937,24 @@
   },
   {
     "id": "u28-1409",
-    "es": "Mariana toma notas y no cree que nadie esté de acuerdo.",
-    "en": "Mariana takes notes and doesn't think anyone agrees.",
+    "es": "Mariana toma notas y no cree que el plan sea serio.",
+    "en": "Mariana takes notes and doesn't think the plan is serious.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
-      "g:negation-words",
+      "g:gender-articles",
       "g:present-ar",
       "g:present-er-ir",
+      "g:ser-identity",
+      "g:subj-irregulars",
       "g:subj-opinion-negated",
-      "g:subj-wanting",
       "g:that-clauses",
-      "l:acuerdo",
       "l:creer",
-      "l:estar",
       "l:nota",
-      "l:tomar",
-      "p:estar-de-acuerdo-con-en"
+      "l:plan",
+      "l:ser",
+      "l:serio",
+      "l:tomar"
     ],
     "targets": [
       "g:subj-opinion-negated"
@@ -35966,8 +35988,8 @@
   },
   {
     "id": "u28-1411",
-    "es": "Para Vale, el hotel es el final de la panadería.",
-    "en": "For Vale, the hotel is the end of the bakery.",
+    "es": "Para doña Gloria, el hotel es el final de su panadería.",
+    "en": "For Doña Gloria, the hotel is the end of her bakery.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -35977,7 +35999,9 @@
       "l:hotel",
       "l:panadería",
       "l:ser",
-      "p:para-inf"
+      "p:para-inf",
+      "p:possessives-basic",
+      "p:senor-don-article"
     ],
     "targets": [],
     "kind": "statement",
@@ -35987,21 +36011,19 @@
   },
   {
     "id": "u28-1412",
-    "es": "La reunión empieza a las siete en la biblioteca.",
-    "en": "The meeting starts at seven in the library.",
+    "es": "La reunión empieza a las seis, en la iglesia.",
+    "en": "The meeting starts at six, at the church.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:stem-boot",
-      "l:biblioteca",
       "l:empezar",
+      "l:iglesia",
       "l:reunión",
       "p:telling-time"
     ],
-    "targets": [
-      "l:biblioteca"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u28",
     "theme": "the meeting (story colour)",
@@ -36029,26 +36051,24 @@
   },
   {
     "id": "u28-1414",
-    "es": "La biblioteca está llena de sillas y de gente enojada.",
-    "en": "The library is full of chairs and angry people.",
+    "es": "La sala está llena de sillas y de gente enojada.",
+    "en": "The hall is full of chairs and angry people.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:estar-location-states",
       "g:gender-articles",
-      "l:biblioteca",
       "l:enojado",
       "l:estar",
       "l:gente",
       "l:lleno",
+      "l:sala",
       "l:silla",
       "p:la-gente-singular",
       "p:lleno-libre"
     ],
-    "targets": [
-      "l:biblioteca"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u28",
     "theme": "the meeting (story colour)",
@@ -36346,7 +36366,7 @@
   {
     "id": "u28-1427",
     "es": "¿Y Altamira?\nDice que el hotel es lo mejor para el barrio.",
-    "en": "And Altamira?\nIt says the hotel is the best thing for the neighbourhood.",
+    "en": "And Altamira?\nHe says the hotel is the best thing for the neighbourhood.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -36373,7 +36393,7 @@
   },
   {
     "id": "u28-1428",
-    "es": "¿Qué piensa Doña Gloria?\nQue es importante que todos digan lo que piensan.",
+    "es": "¿Qué piensa doña Gloria?\nQue es importante que todos digan lo que piensan.",
     "en": "What does Doña Gloria think?\nThat it's important that everyone says what they think.",
     "accept": [],
     "acceptEn": [],
@@ -36453,7 +36473,7 @@
   },
   {
     "id": "u28-1431",
-    "es": "Me alegra que Doña Gloria hable tan fuerte.",
+    "es": "Me alegra que doña Gloria hable tan fuerte.",
     "en": "I'm glad Doña Gloria speaks so loudly.",
     "accept": [],
     "acceptEn": [],

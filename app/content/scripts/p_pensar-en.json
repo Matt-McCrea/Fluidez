@@ -13,7 +13,7 @@
     { "es": "¿En qué piensas?", "en": "What are you thinking about? (to a friend)" },
     { "es": "¿Qué piensa usted del barrio?", "en": "What do you think of the neighbourhood? (formal)" }
   ],
-  "rule": "English uses \"think\" for everything. Spanish splits it by what follows *pensar*.\n\n*pensar en* + a person or thing: what is on your mind. *Pienso en mi abuela.*\n\n*pensar que* + a sentence: your opinion. *Pienso que es un error.*\n\n*pensar* + a plain verb: a plan. *Pienso mudarme.*\n\nTo ask what someone makes of something, use *¿Qué piensas de...?* To ask what is on their mind, use *¿En qué piensas?*\n\nNever say *pensar sobre* or *pensar de* for \"think about\". It is *en*.",
+  "rule": "English uses \"think\" for everything. Spanish splits it by what follows *pensar*.\n\n*pensar en* + a person or thing: what is on your mind. *Pienso en mi abuela.*\n\n*pensar que* + a sentence: your opinion. *Pienso que es un error.*\n\n*pensar* + a plain verb: a plan. *Pienso mudarme.*\n\nTo ask what someone makes of something, use *¿Qué piensas de...?* To ask what is on their mind, use *¿En qué piensas?*\n\nFor someone or something on your mind, it is *en*, not *sobre* or *de*.",
   "smallPrint": "Teachers call this a verb with a fixed preposition: *pensar en*. Notice that *pensar que* means the same as *creer que* here.",
   "readAndPick": [
     { "es": "Pienso mucho en mi abuela.", "options": ["I think my grandmother is great.", "I think about my grandmother a lot.", "I'm planning to visit my grandmother."], "answer": 1 },
@@ -23,68 +23,21 @@
     { "es": "¿En qué piensas?", "options": ["What do you think of it? (to a friend)", "What are you thinking about? (to a friend)"], "answer": 1 },
     { "es": "¿Qué piensa usted del barrio?", "options": ["What do you think of the neighbourhood? (formal)", "What are you thinking about in the neighbourhood? (formal)"], "answer": 0 },
     { "es": "Tomás piensa que Altamira miente.", "options": ["Tomás is thinking about Altamira.", "Tomás thinks Altamira is lying.", "Tomás is planning to lie to Altamira."], "answer": 1 },
-    { "es": "Pienso abrir más temprano.", "options": ["I'm planning to open earlier.", "I'm thinking about opening earlier."], "answer": 0 }
+    { "es": "Pienso abrir más temprano.", "options": ["I'm planning to open earlier.", "I think it opens earlier."], "answer": 0 }
   ],
   "yourTurn": [
-    {
-      "prompt": "Pick *en* or *de* and type the whole sentence: *Pienso mucho ___ mi abuela.*",
-      "answer": "Pienso mucho en mi abuela.",
-      "accept": [],
-      "why": "To have someone on your mind, Spanish uses *pensar en*."
-    },
-    {
-      "prompt": "Type in Spanish: I think it's a mistake.",
-      "answer": "Pienso que es un error.",
-      "accept": ["Creo que es un error."],
-      "why": "An opinion is *pienso que* plus a full sentence."
-    },
-    {
-      "prompt": "Type in Spanish: I'm planning to move.",
-      "answer": "Pienso mudarme.",
-      "accept": [],
-      "why": "A plan is *pensar* followed straight by a plain verb."
-    },
-    {
-      "prompt": "Type in Spanish, to a friend: What are you thinking about?",
-      "answer": "¿En qué piensas?",
-      "accept": [],
-      "why": "Thinking about is *pensar en*, and the question word comes after *en*."
-    },
-    {
-      "prompt": "Type in Spanish, formal: What do you think of the neighbourhood?",
-      "answer": "¿Qué piensa usted del barrio?",
-      "accept": ["¿Qué piensa del barrio?"],
-      "why": "To ask for an opinion, *¿Qué piensa(s) de...?*"
-    },
-    {
-      "prompt": "Type in Spanish: Vale is thinking about opening another shop.",
-      "answer": "Vale piensa en abrir otra tienda.",
-      "accept": [],
-      "why": "Thinking about an action is *pensar en* plus the plain verb."
-    },
-    {
-      "prompt": "Type in Spanish: I'm planning to open earlier.",
-      "answer": "Pienso abrir más temprano.",
-      "accept": [],
-      "why": "With no *en* and a plain verb, *pienso* means I plan to."
-    }
+    { "prompt": "Pick *en* or *de* and type the whole sentence: *Pienso mucho ___ mi abuela.*", "answer": "Pienso mucho en mi abuela.", "accept": [], "why": "To have someone on your mind, Spanish uses *pensar en*." },
+    { "prompt": "Type in Spanish: I think it's a mistake.", "answer": "Pienso que es un error.", "accept": ["Creo que es un error."], "why": "An opinion is *pienso que* plus a full sentence." },
+    { "prompt": "Type in Spanish: I'm planning to move.", "answer": "Pienso mudarme.", "accept": [], "why": "A plan is *pensar* followed straight by a plain verb." },
+    { "prompt": "Type in Spanish, to a friend: What are you thinking about?", "answer": "¿En qué piensas?", "accept": [], "why": "Thinking about is *pensar en*, and the question word comes after *en*." },
+    { "prompt": "Type in Spanish, formal: What do you think of the neighbourhood?", "answer": "¿Qué piensa usted del barrio?", "accept": ["¿Qué piensa del barrio?"], "why": "To ask for an opinion, *¿Qué piensa(s) de...?*" },
+    { "prompt": "Type in Spanish: Vale is thinking about opening another shop.", "answer": "Vale piensa en abrir otra tienda.", "accept": [], "why": "Thinking about an action is *pensar en* plus the plain verb." },
+    { "prompt": "Type in Spanish: I'm planning to open earlier.", "answer": "Pienso abrir más temprano.", "accept": [], "why": "With no *en* and a plain verb, *pienso* means I plan to." }
   ],
   "pitfalls": [
-    {
-      "wrong": "Pienso sobre mi abuela.",
-      "right": "Pienso en mi abuela.",
-      "why": "Almost. English \"about\" is *en* after *pensar*, never *sobre*."
-    },
-    {
-      "wrong": "Pienso de mi abuela.",
-      "right": "Pienso en mi abuela.",
-      "why": "Almost. *Pensar de* only shows up in *¿Qué piensas de...?*, which asks an opinion."
-    },
-    {
-      "wrong": "Pienso en que es un error.",
-      "right": "Pienso que es un error.",
-      "why": "Almost. For an opinion there is no *en*: *pienso que* plus the sentence."
-    }
+    { "wrong": "Pienso sobre mi abuela.", "right": "Pienso en mi abuela.", "why": "Almost. English \"about\" is *en* after *pensar*, never *sobre*." },
+    { "wrong": "Pienso de mi abuela.", "right": "Pienso en mi abuela.", "why": "Almost. *Pensar de* only shows up in *¿Qué piensas de...?*, which asks an opinion." },
+    { "wrong": "Pienso en que es un error.", "right": "Pienso que es un error.", "why": "Almost. For an opinion there is no *en*: *pienso que* plus the sentence." }
   ],
   "personal": "Tell us one person or place you often think about, with *Pienso en...*, and one plan you have, with *Pienso* plus a verb."
 }

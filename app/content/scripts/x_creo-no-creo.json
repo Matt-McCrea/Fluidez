@@ -25,69 +25,22 @@
     { "es": "¿Crees que Hernando sabe algo?", "options": ["Do you think Hernando knows something? (to a friend)", "Don't you think Hernando knows something? (to a friend)", "I think Hernando knows something."], "answer": 0 },
     { "es": "No, no creo que sepa nada.", "options": ["No, I think he knows nothing.", "No, I don't think he knows anything.", "No, he doesn't think I know anything."], "answer": 1 },
     { "es": "Creo que Tomás va a vender.", "options": ["I don't think Tomás is going to sell.", "I think Tomás is going to sell."], "answer": 1 },
-    { "es": "No creo que Tomás venda el café.", "options": ["I think Tomás sells the café.", "I don't think Tomás will sell the café.", "I think Tomás won't sell the café."], "answer": 1 },
+    { "es": "No creo que Tomás venda el café.", "options": ["I think Tomás sells the café.", "I don't think Tomás will sell the café.", "I think Tomás sold the café."], "answer": 1 },
     { "es": "No me parece que Tomás tenga razón.", "options": ["I think Tomás is right.", "I don't think Tomás is right.", "I think you're right."], "answer": 1 }
   ],
   "yourTurn": [
-    {
-      "prompt": "Pick *viene* or *venga* and type the whole sentence: *No creo que Vale ___ hoy.*",
-      "answer": "No creo que Vale venga hoy.",
-      "accept": [],
-      "why": "The *no* is in front of *creo*, so *venga*."
-    },
-    {
-      "prompt": "Pick *no viene* or *no venga* and type the whole sentence: *Creo que Vale ___ hoy.*",
-      "answer": "Creo que Vale no viene hoy.",
-      "accept": ["Creo que no viene Vale hoy."],
-      "why": "The *no* is after *que*, so nothing is refused and the verb stays *viene*."
-    },
-    {
-      "prompt": "Type in Spanish: I think people are happy.",
-      "answer": "Creo que la gente está contenta.",
-      "accept": ["Me parece que la gente está contenta."],
-      "why": "A plain claim keeps the plain verb: *está*."
-    },
-    {
-      "prompt": "Type in Spanish: I don't think people are happy.",
-      "answer": "No creo que la gente esté contenta.",
-      "accept": ["No me parece que la gente esté contenta."],
-      "why": "Refusing the claim means *esté*."
-    },
-    {
-      "prompt": "Say it the other way: *Creo que Tomás no vende el café.*",
-      "answer": "No creo que Tomás venda el café.",
-      "accept": [],
-      "why": "Move the *no* in front of *creo* and the verb becomes *venda*."
-    },
-    {
-      "prompt": "Say it the other way: *No creo que Mariana escriba hoy.*",
-      "answer": "Creo que Mariana no escribe hoy.",
-      "accept": ["Creo que no escribe Mariana hoy."],
-      "why": "Move the *no* after *que* and the verb goes back to plain: *escribe*."
-    },
-    {
-      "prompt": "Answer a friend's question with a doubtful no: *¿Crees que Hernando sabe algo?*",
-      "answer": "No creo que sepa nada.",
-      "accept": ["No, no creo que sepa nada."],
-      "why": "A doubtful answer is *no creo que* plus the wish form: *sepa*."
-    }
+    { "prompt": "Pick *viene* or *venga* and type the whole sentence: *No creo que Vale ___ hoy.*", "answer": "No creo que Vale venga hoy.", "accept": [], "why": "The *no* is in front of *creo*, so *venga*." },
+    { "prompt": "Pick *no viene* or *no venga* and type the whole sentence: *Creo que Vale ___ hoy.*", "answer": "Creo que Vale no viene hoy.", "accept": ["Creo que no viene Vale hoy."], "why": "The *no* is after *que*, so nothing is refused and the verb stays *viene*." },
+    { "prompt": "Type in Spanish: I think people are happy.", "answer": "Creo que la gente está contenta.", "accept": ["Me parece que la gente está contenta."], "why": "A plain claim keeps the plain verb: *está*." },
+    { "prompt": "Type in Spanish: I don't think people are happy.", "answer": "No creo que la gente esté contenta.", "accept": ["No me parece que la gente esté contenta."], "why": "Refusing the claim means *esté*." },
+    { "prompt": "Say it the other way: *Creo que Tomás no vende el café.*", "answer": "No creo que Tomás venda el café.", "accept": [], "why": "Move the *no* in front of *creo* and the verb becomes *venda*." },
+    { "prompt": "Say it the other way: *No creo que Mariana escriba hoy.*", "answer": "Creo que Mariana no escribe hoy.", "accept": ["Creo que no escribe Mariana hoy."], "why": "Move the *no* after *que* and the verb goes back to plain: *escribe*." },
+    { "prompt": "Answer a friend's question with a doubtful no: *¿Crees que Hernando sabe algo?*", "answer": "No creo que sepa nada.", "accept": ["No, no creo que sepa nada."], "why": "A doubtful answer is *no creo que* plus the wish form: *sepa*." }
   ],
   "pitfalls": [
-    {
-      "wrong": "No creo que Tomás vende el café.",
-      "right": "No creo que Tomás venda el café.",
-      "why": "Almost. A *no* in front of *creo* switches the next verb to *venda*."
-    },
-    {
-      "wrong": "Creo que Tomás venda el café.",
-      "right": "Creo que Tomás vende el café.",
-      "why": "Almost. With no *no* in front of *creo*, the claim stays plain: *vende*."
-    },
-    {
-      "wrong": "Creo que no venga.",
-      "right": "Creo que no viene.",
-      "why": "Careful. A *no* after *que* does not change the verb; only a *no* in front of *creo* does."
-    }
+    { "wrong": "No creo que Tomás vende el café.", "right": "No creo que Tomás venda el café.", "why": "Almost. A *no* in front of *creo* switches the next verb to *venda*." },
+    { "wrong": "Creo que Tomás venda el café.", "right": "Creo que Tomás vende el café.", "why": "Almost. With no *no* in front of *creo*, the claim stays plain: *vende*." },
+    { "wrong": "Creo que no venga.", "right": "Creo que no viene.", "why": "Careful. A *no* after *que* does not change the verb; only a *no* in front of *creo* does." }
   ],
   "personal": "Think of something people in your town believe. Say whether you agree, using *Creo que...* or *No creo que...*."
 }

@@ -1,9 +1,9 @@
 {
   "node": "p:sobre-todo",
   "hook": {
-    "line": "Mariana asks Tomás what he likes about the neighbourhood. He likes a lot of it, but one thing stands out, and Spanish has two words for that.",
-    "es": "Me gusta el barrio, sobre todo la Candelaria.",
-    "en": "I like the neighbourhood, especially La Candelaria."
+    "line": "Mariana asks Tomás what he likes about the neighbourhood. He likes a lot of it, but one thing stands out, and Spanish flags it with two little words.",
+    "es": "Me gusta el barrio, sobre todo la gente.",
+    "en": "I like the neighbourhood, especially the people."
   },
   "examples": [
     { "es": "Me gustan los deportes, sobre todo el fútbol.", "en": "I like sport, especially football." },
@@ -23,68 +23,21 @@
     { "es": "Vale cocina muchos postres, sobre todo tortas.", "options": ["Vale makes lots of desserts, especially cakes.", "Vale only makes cakes."], "answer": 0 },
     { "es": "Simón grita mucho, sobre todo por la mañana.", "options": ["Simón screams only in the morning.", "Simón screams a lot, especially in the morning.", "Simón screams more than anyone."], "answer": 1 },
     { "es": "Me importa el barrio, sobre todo la seguridad.", "options": ["The neighbourhood matters to me, especially safety.", "The neighbourhood is on top of safety."], "answer": 0 },
-    { "es": "Quiero dormir, sobre todo.", "options": ["I want to sleep, above all.", "I want to sleep over everything."], "answer": 0 }
+    { "es": "Necesito dormir, sobre todo.", "options": ["Above all, I need sleep.", "I need to sleep on top of everything."], "answer": 0 }
   ],
   "yourTurn": [
-    {
-      "prompt": "Pick *sobre todo* or *sobretodo* and type the whole sentence: *Me gusta el barrio, ___ la Candelaria.*",
-      "answer": "Me gusta el barrio, sobre todo la Candelaria.",
-      "accept": [],
-      "why": "It is written as two words: *sobre todo*."
-    },
-    {
-      "prompt": "Type in Spanish: I like sport, especially football.",
-      "answer": "Me gustan los deportes, sobre todo el fútbol.",
-      "accept": ["Me gusta el deporte, sobre todo el fútbol."],
-      "why": "General statement first, then the standout case after *sobre todo*."
-    },
-    {
-      "prompt": "Type in Spanish: Customers come a lot, especially on Saturdays.",
-      "answer": "Los clientes vienen mucho, sobre todo los sábados.",
-      "accept": [],
-      "why": "The standout case comes right after *sobre todo*."
-    },
-    {
-      "prompt": "Type in Spanish: I'm doing it for my family, above all.",
-      "answer": "Lo hago por mi familia, sobre todo.",
-      "accept": [],
-      "why": "*Sobre todo* can come last as a short extra."
-    },
-    {
-      "prompt": "Type in Spanish, to a friend: Above all, don't talk to Altamira.",
-      "answer": "Sobre todo, no hables con Altamira.",
-      "accept": ["Sobre todo no hables con Altamira."],
-      "why": "Put it first to flag the most important thing."
-    },
-    {
-      "prompt": "Type in Spanish: Simón screams a lot, especially in the morning.",
-      "answer": "Simón grita mucho, sobre todo por la mañana.",
-      "accept": ["Simón grita mucho, sobre todo en la mañana."],
-      "why": "General claim, then *sobre todo* and the time that stands out."
-    },
-    {
-      "prompt": "Type in Spanish: The neighbourhood matters to me, especially safety.",
-      "answer": "Me importa el barrio, sobre todo la seguridad.",
-      "accept": [],
-      "why": "The statement comes first and *sobre todo* picks out safety."
-    }
+    { "prompt": "Pick *sobre todo* or *sobretodo* and type the whole sentence: *Me gusta el barrio, ___ la gente.*", "answer": "Me gusta el barrio, sobre todo la gente.", "accept": [], "why": "It is written as two words: *sobre todo*." },
+    { "prompt": "Type in Spanish: I like sport, especially football.", "answer": "Me gustan los deportes, sobre todo el fútbol.", "accept": ["Me gusta el deporte, sobre todo el fútbol."], "why": "General statement first, then the standout case after *sobre todo*." },
+    { "prompt": "Type in Spanish: Customers come a lot, especially on Saturdays.", "answer": "Los clientes vienen mucho, sobre todo los sábados.", "accept": [], "why": "The standout case comes right after *sobre todo*." },
+    { "prompt": "Type in Spanish: I'm doing it for my family, above all.", "answer": "Lo hago por mi familia, sobre todo.", "accept": [], "why": "*Sobre todo* can come last as a short extra." },
+    { "prompt": "Type in Spanish, to a friend: Above all, don't talk to Altamira.", "answer": "Sobre todo, no hables con Altamira.", "accept": ["Sobre todo no hables con Altamira."], "why": "Put it first to flag the most important thing." },
+    { "prompt": "Type in Spanish: Simón screams a lot, especially in the morning.", "answer": "Simón grita mucho, sobre todo por la mañana.", "accept": ["Simón grita mucho, sobre todo en la mañana."], "why": "General claim, then *sobre todo* and the time that stands out." },
+    { "prompt": "Type in Spanish: The neighbourhood matters to me, especially safety.", "answer": "Me importa el barrio, sobre todo la seguridad.", "accept": [], "why": "The statement comes first and *sobre todo* picks out safety." }
   ],
   "pitfalls": [
-    {
-      "wrong": "Me gusta el barrio, sobretodo la Candelaria.",
-      "right": "Me gusta el barrio, sobre todo la Candelaria.",
-      "why": "Almost. It is two words; *sobretodo* is a wrong spelling."
-    },
-    {
-      "wrong": "Me gustan los deportes, sobre todos el fútbol.",
-      "right": "Me gustan los deportes, sobre todo el fútbol.",
-      "why": "Almost. The phrase never changes: *todo* stays singular."
-    },
-    {
-      "wrong": "Me gustan los deportes, sobre todo y el fútbol.",
-      "right": "Me gustan los deportes, sobre todo el fútbol.",
-      "why": "Almost. No *y* is needed; the standout case follows straight after."
-    }
+    { "wrong": "Me gusta el barrio, sobretodo la gente.", "right": "Me gusta el barrio, sobre todo la gente.", "why": "Almost. It is two words; *sobretodo* is a wrong spelling." },
+    { "wrong": "Me gustan los deportes, sobre todos el fútbol.", "right": "Me gustan los deportes, sobre todo el fútbol.", "why": "Almost. The phrase never changes: *todo* stays singular." },
+    { "wrong": "Me gustan los deportes, sobre todo y el fútbol.", "right": "Me gustan los deportes, sobre todo el fútbol.", "why": "Almost. No *y* is needed; the standout case follows straight after." }
   ],
   "personal": "Say one thing you like about your life here, then add *sobre todo* and the best part."
 }

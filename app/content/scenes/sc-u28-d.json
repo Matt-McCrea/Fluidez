@@ -11,9 +11,9 @@
       "npcEn": "Good morning, young man. Look at that rubbish in the street, again. What do you think?",
       "intent": "Greet him and say you see it looking bad too.",
       "accept": [
-        "Buenos días, señor Hernando. Yo también la veo muy mal.",
+        "Buenos días, don Hernando. Yo también la veo muy mal.",
         "Buenos días. La veo peor que ayer, sí.",
-        "Señor Hernando, buenos días. Sí, yo la veo mucho peor."
+        "Don Hernando, buenos días. Sí, yo la veo mucho peor."
       ],
       "require": [
         {
@@ -39,8 +39,8 @@
       "npcEn": "In general, Bogotá is getting better. But there is a lot of insecurity, especially at night.",
       "intent": "Say you agree, and that it's important he doesn't go out alone at night.",
       "accept": [
-        "Estoy de acuerdo. Es importante que usted no salga solo de noche.",
-        "Es importante que no camine solo de noche, señor Hernando.",
+        "Sí, señor. Es importante que usted no salga solo de noche.",
+        "Es importante que no camine solo de noche, don Hernando.",
         "Tiene razón. Es importante que no salga solo."
       ],
       "require": [
@@ -62,7 +62,7 @@
       "accept": [
         "¿Y usted qué opina? ¿Cuál es el problema más grande del barrio?",
         "¿Cuál cree usted que es el peor problema del barrio?",
-        "¿Qué es lo que más le molesta del barrio, señor Hernando?"
+        "¿Qué es lo que más le molesta del barrio, don Hernando?"
       ],
       "require": [
         {
@@ -100,7 +100,7 @@
       "npcEn": "Then I'm going. I'll go to the next meeting, jacket and all.",
       "intent": "Thank him and say you like it that he is coming.",
       "accept": [
-        "Gracias, señor Hernando. Me gusta que usted venga. Le guardo la mejor silla.",
+        "Gracias, don Hernando. Me gusta que usted venga. Le guardo la mejor silla.",
         "Qué bueno. Me gusta que usted nos acompañe.",
         "Muchas gracias. Me gusta que venga, de verdad."
       ],
@@ -123,7 +123,6 @@
     "c:creo-que",
     "c:en-serio",
     "c:entonces-bueno",
-    "c:estoy-de-acuerdo",
     "c:gracias-de-nada",
     "c:hay",
     "c:hola-buenos-dias",
@@ -163,7 +162,6 @@
     "g:verb-infinitive",
     "g:yo-irregular",
     "l:acompañar",
-    "l:acuerdo",
     "l:alcalde",
     "l:alcaldía",
     "l:ayer",
@@ -182,7 +180,6 @@
     "l:cuál",
     "l:decir",
     "l:día",
-    "l:estar",
     "l:general",
     "l:gente",
     "l:grande",
@@ -237,6 +234,7 @@
     "p:bien-bueno",
     "p:bien-mal-vs-bueno-malo",
     "p:demonstratives-basic",
+    "p:don-dona-nombre",
     "p:en-general",
     "p:encontrar-ver-adj",
     "p:focus-adverbs",

@@ -6,201 +6,43 @@
     "en": "I don't think Altamira wants to talk to us."
   },
   "examples": [
-    {
-      "es": "Creo que tienes razón.",
-      "en": "I think you're right. (to a friend)"
-    },
-    {
-      "es": "No creo que tengas razón.",
-      "en": "I don't think you're right. (to a friend)"
-    },
-    {
-      "es": "Creo que Vale está en la cocina.",
-      "en": "I think Vale is in the kitchen."
-    },
-    {
-      "es": "No creo que Vale esté en la cocina.",
-      "en": "I don't think Vale is in the kitchen."
-    },
-    {
-      "es": "Me parece que es justo.",
-      "en": "I think it's fair."
-    },
-    {
-      "es": "No me parece que sea justo.",
-      "en": "I don't think it's fair."
-    },
-    {
-      "es": "¿Crees que Vale viene hoy?",
-      "en": "Do you think Vale is coming today? (to a friend)"
-    },
-    {
-      "es": "No creo que Vale venga hoy.",
-      "en": "I don't think Vale is coming today."
-    }
+    { "es": "Creo que tienes razón.", "en": "I think you're right. (to a friend)" },
+    { "es": "No creo que tengas razón.", "en": "I don't think you're right. (to a friend)" },
+    { "es": "Creo que Vale está en la cocina.", "en": "I think Vale is in the kitchen." },
+    { "es": "No creo que Vale esté en la cocina.", "en": "I don't think Vale is in the kitchen." },
+    { "es": "Me parece que es justo.", "en": "I think it's fair." },
+    { "es": "No me parece que sea justo.", "en": "I don't think it's fair." },
+    { "es": "¿Crees que Vale viene hoy?", "en": "Do you think Vale is coming today? (to a friend)" },
+    { "es": "No creo que Vale venga hoy.", "en": "I don't think Vale is coming today." }
   ],
   "rule": "Compare the pairs above. *Creo que tienes razón* puts a claim on the table, so the verb stays as it is: *tienes*, *está*, *es*.\n\n*No creo que tengas razón* declines to put the claim on the table. Spanish marks that by switching the verb to the wish form: *tengas*, *esté*, *sea*, *venga*.\n\nSo the *no* in front of *creo* is the trigger. The same goes for *me parece*: *Me parece que es justo*, but *No me parece que sea justo*.\n\nA question like *¿Crees que viene?* usually keeps the plain verb, because you are still just asking.\n\nEnglish never changes the verb here (I think it is, I don't think it is), so watch for the *no*.",
   "smallPrint": "Teachers call this the subjunctive after a negated opinion verb. The plain form is the indicative.",
   "readAndPick": [
-    {
-      "es": "No creo que Vale esté en la cocina.",
-      "options": [
-        "I think Vale is in the kitchen.",
-        "I don't think Vale is in the kitchen.",
-        "I think Vale isn't in the kitchen."
-      ],
-      "answer": 1
-    },
-    {
-      "es": "Creo que tienes razón.",
-      "options": [
-        "I don't think you're right. (to a friend)",
-        "I think you're right. (to a friend)"
-      ],
-      "answer": 1
-    },
-    {
-      "es": "No me parece que sea justo.",
-      "options": [
-        "I think it's fair.",
-        "I don't think it's fair.",
-        "I think it was fair."
-      ],
-      "answer": 1
-    },
-    {
-      "es": "Creo que Altamira quiere comprar el barrio.",
-      "options": [
-        "I don't think Altamira wants to buy the neighbourhood.",
-        "I think Altamira wants to buy the neighbourhood."
-      ],
-      "answer": 1
-    },
-    {
-      "es": "No creo que ellos vengan.",
-      "options": [
-        "I think they're coming.",
-        "I don't think they're coming.",
-        "I don't think you all are coming."
-      ],
-      "answer": 1
-    },
-    {
-      "es": "Me parece que Altamira miente.",
-      "options": [
-        "I think Altamira is lying.",
-        "I don't think Altamira is lying.",
-        "It seems to me Altamira lied."
-      ],
-      "answer": 0
-    },
-    {
-      "es": "No creo que mi abuela lo sepa.",
-      "options": [
-        "I think my grandmother knows it.",
-        "I don't think my grandmother knows it."
-      ],
-      "answer": 1
-    },
-    {
-      "es": "Creo que Mariana tiene la respuesta.",
-      "options": [
-        "I don't think Mariana has the answer.",
-        "I think Mariana has the answer."
-      ],
-      "answer": 1
-    },
-    {
-      "es": "No creo que podamos abrir hoy.",
-      "options": [
-        "I don't think we can open today.",
-        "I think we can open today.",
-        "I don't think they can open today."
-      ],
-      "answer": 0
-    }
+    { "es": "No creo que Vale esté en la cocina.", "options": ["I think Vale is in the kitchen.", "I don't think Vale is in the kitchen.", "I think Vale was in the kitchen."], "answer": 1 },
+    { "es": "Creo que tienes razón.", "options": ["I don't think you're right. (to a friend)", "I think you're right. (to a friend)"], "answer": 1 },
+    { "es": "No me parece que sea justo.", "options": ["I think it's fair.", "I don't think it's fair.", "I think it was fair."], "answer": 1 },
+    { "es": "Creo que Altamira quiere comprar el barrio.", "options": ["I don't think Altamira wants to buy the neighbourhood.", "I think Altamira wants to buy the neighbourhood."], "answer": 1 },
+    { "es": "No creo que ellos vengan.", "options": ["I think they're coming.", "I don't think they're coming.", "I don't think you all are coming."], "answer": 1 },
+    { "es": "Me parece que Altamira miente.", "options": ["I think Altamira is lying.", "I don't think Altamira is lying.", "It seems to me Altamira lied."], "answer": 0 },
+    { "es": "No creo que mi abuela lo sepa.", "options": ["I think my grandmother knows it.", "I don't think my grandmother knows it."], "answer": 1 },
+    { "es": "Creo que Mariana tiene la respuesta.", "options": ["I don't think Mariana has the answer.", "I think Mariana has the answer."], "answer": 1 },
+    { "es": "No creo que podamos abrir hoy.", "options": ["I don't think we can open today.", "I think we can open today.", "I don't think they can open today."], "answer": 0 }
   ],
   "yourTurn": [
-    {
-      "prompt": "Pick *está* or *esté* and type the whole sentence: *No creo que Vale ___ en la cocina.*",
-      "answer": "No creo que Vale esté en la cocina.",
-      "accept": [],
-      "why": "After *no creo que* the verb takes the wish form: *esté*."
-    },
-    {
-      "prompt": "Pick *tienes* or *tengas* and type the whole sentence, to a friend: *Creo que ___ razón.*",
-      "answer": "Creo que tienes razón.",
-      "accept": [],
-      "why": "With no *no* in front, you are claiming it, so the plain verb: *tienes*."
-    },
-    {
-      "prompt": "Type in Spanish: I don't think it's fair.",
-      "answer": "No creo que sea justo.",
-      "accept": [
-        "No me parece que sea justo."
-      ],
-      "why": "The negative opinion calls for the wish form of *ser*: *sea*."
-    },
-    {
-      "prompt": "Type in Spanish: I think Altamira wants to buy the neighbourhood.",
-      "answer": "Creo que Altamira quiere comprar el barrio.",
-      "accept": [
-        "Me parece que Altamira quiere comprar el barrio."
-      ],
-      "why": "A plain opinion keeps the plain verb: *quiere*."
-    },
-    {
-      "prompt": "Make it negative: *Creo que Vale viene hoy.*",
-      "answer": "No creo que Vale venga hoy.",
-      "accept": [
-        "No me parece que Vale venga hoy."
-      ],
-      "why": "Add *no* and the verb moves to the wish form: *venga*."
-    },
-    {
-      "prompt": "Make it negative: *Me parece que es justo.*",
-      "answer": "No me parece que sea justo.",
-      "accept": [
-        "No creo que sea justo."
-      ],
-      "why": "*No me parece que* works like *no creo que*: *sea*."
-    },
-    {
-      "prompt": "Type in Spanish, to a friend: I don't think you have the answer.",
-      "answer": "No creo que tengas la respuesta.",
-      "accept": [
-        "No creo que sepas la respuesta."
-      ],
-      "why": "Negative opinion, so *tengas* (or *sepas*), never *tienes*."
-    },
-    {
-      "prompt": "Type in Spanish: I don't think we can open today.",
-      "answer": "No creo que podamos abrir hoy.",
-      "accept": [],
-      "why": "The wish form of *poder* for *we* is *podamos*."
-    }
+    { "prompt": "Pick *está* or *esté* and type the whole sentence: *No creo que Vale ___ en la cocina.*", "answer": "No creo que Vale esté en la cocina.", "accept": [], "why": "After *no creo que* the verb takes the wish form: *esté*." },
+    { "prompt": "Pick *tienes* or *tengas* and type the whole sentence, to a friend: *Creo que ___ razón.*", "answer": "Creo que tienes razón.", "accept": [], "why": "With no *no* in front, you are claiming it, so the plain verb: *tienes*." },
+    { "prompt": "Type in Spanish: I don't think it's fair.", "answer": "No creo que sea justo.", "accept": ["No me parece que sea justo."], "why": "The negative opinion calls for the wish form of *ser*: *sea*." },
+    { "prompt": "Type in Spanish: I think Altamira wants to buy the neighbourhood.", "answer": "Creo que Altamira quiere comprar el barrio.", "accept": ["Me parece que Altamira quiere comprar el barrio."], "why": "A plain opinion keeps the plain verb: *quiere*." },
+    { "prompt": "Make it negative: *Creo que Vale viene hoy.*", "answer": "No creo que Vale venga hoy.", "accept": ["No me parece que Vale venga hoy."], "why": "Add *no* and the verb moves to the wish form: *venga*." },
+    { "prompt": "Make it negative: *Me parece que es justo.*", "answer": "No me parece que sea justo.", "accept": ["No creo que sea justo."], "why": "*No me parece que* works like *no creo que*: *sea*." },
+    { "prompt": "Type in Spanish, to a friend: I don't think you have the answer.", "answer": "No creo que tengas la respuesta.", "accept": ["No creo que sepas la respuesta."], "why": "Negative opinion, so *tengas* (or *sepas*), never *tienes*." },
+    { "prompt": "Type in Spanish: I don't think we can open today.", "answer": "No creo que podamos abrir hoy.", "accept": [], "why": "The wish form of *poder* for *we* is *podamos*." }
   ],
   "pitfalls": [
-    {
-      "wrong": "No creo que es una buena idea.",
-      "right": "No creo que sea una buena idea.",
-      "why": "Almost. English keeps *is* after I don't think; Spanish switches to *sea*."
-    },
-    {
-      "wrong": "Creo que sea verdad.",
-      "right": "Creo que es verdad.",
-      "why": "Almost. Without a *no* you are claiming it, so the verb stays plain: *es*."
-    },
-    {
-      "wrong": "No creo que Vale viene hoy.",
-      "right": "No creo que Vale venga hoy.",
-      "why": "Almost. *No creo que* always pulls the next verb into the wish form: *venga*."
-    },
-    {
-      "wrong": "Creo que no tengas la respuesta.",
-      "right": "Creo que no tienes la respuesta.",
-      "why": "Careful. A *no* after *que* does not trigger the switch; only a *no* in front of *creo* does, so here the verb stays plain: *tienes*."
-    }
+    { "wrong": "No creo que es una buena idea.", "right": "No creo que sea una buena idea.", "why": "Almost. English keeps *is* after I don't think; Spanish switches to *sea*." },
+    { "wrong": "Creo que sea verdad.", "right": "Creo que es verdad.", "why": "Almost. Without a *no* you are claiming it, so the verb stays plain: *es*." },
+    { "wrong": "No creo que Vale viene hoy.", "right": "No creo que Vale venga hoy.", "why": "Almost. *No creo que* always pulls the next verb into the wish form: *venga*." },
+    { "wrong": "Creo que no tengas la respuesta.", "right": "Creo que no tienes la respuesta.", "why": "Careful. A *no* after *que* does not trigger the switch; only a *no* in front of *creo* does, so here the verb stays plain: *tienes*." }
   ],
   "personal": "Say one thing you think about Bogotá with *creo que*, then one thing you don't think with *no creo que*. For example: *Creo que el café es bueno. No creo que el tráfico sea fácil.*"
 }

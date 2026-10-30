@@ -1,18 +1,18 @@
 {
   "id": "sc-u28-e",
   "unit": "u28",
-  "title": "The baker's side",
+  "title": "The neighbour's side",
   "spare": true,
-  "brief": "You're Tomás. Don Arturo, the baker who is in favour of the hotel, walks into your café to talk. He is older than you, so use usted. Stay polite while you disagree, and look for something you can do together.",
+  "brief": "You're Tomás. Don Arturo, who runs the shop next door and is in favour of the hotel, walks into your café to talk. He is older than you, so use usted. Stay polite while you disagree, and look for something you can do together.",
   "turns": [
     {
       "id": "t1",
-      "npc": "Buenas. Soy Arturo, de la panadería de la esquina. Anoche usted habló muy bonito, pero no estoy de acuerdo con usted.",
-      "npcEn": "Hello. I'm Arturo, from the bakery on the corner. Last night you spoke very nicely, but I don't agree with you.",
+      "npc": "Buenas, vecino. Anoche usted habló muy bonito, pero yo no pienso igual.",
+      "npcEn": "Hello, neighbour. Last night you spoke very nicely, but I don't see it the same way.",
       "intent": "Say you're glad he came, and ask why he's in favour of the hotel.",
       "accept": [
-        "Buenas, señor Arturo. Me alegra que quiera hablar conmigo. ¿Por qué está a favor del hotel?",
-        "Mucho gusto, señor Arturo. Me alegra que venga a hablar. ¿Por qué usted está a favor del hotel?",
+        "Buenas, don Arturo. Me alegra que quiera hablar conmigo. ¿Por qué está a favor del hotel?",
+        "Buenas, don Arturo. Me alegra que venga a hablar. ¿Por qué usted está a favor del hotel?",
         "Buenas tardes. Me alegra que usted esté aquí. ¿Está a favor del hotel? ¿Por qué?"
       ],
       "require": [
@@ -32,13 +32,13 @@
     },
     {
       "id": "t2",
-      "npc": "Porque mi panadería casi no vende. Qué bueno que lleguen más personas al barrio.",
-      "npcEn": "Because my bakery hardly sells. It's great that more people are coming to the neighbourhood.",
-      "intent": "Say you understand, but you don't think the tourists will buy his bread.",
+      "npc": "Porque mi tienda casi no vende. Qué bueno que lleguen más personas al barrio.",
+      "npcEn": "Because my shop hardly sells anything. It's great that more people are coming to the neighbourhood.",
+      "intent": "Say you understand, but you don't think the tourists will buy in his shop.",
       "accept": [
-        "Entiendo, pero no creo que los turistas compren su pan.",
-        "Lo entiendo, señor Arturo, pero no creo que el hotel traiga clientes a su panadería.",
-        "Entiendo. No creo que ellos compren pan aquí, porque el hotel tendrá restaurante."
+        "Entiendo, pero no creo que los turistas compren en su tienda.",
+        "Lo entiendo, don Arturo, pero no creo que el hotel traiga clientes a su tienda.",
+        "Entiendo. No creo que ellos compren aquí, porque el hotel tendrá restaurante."
       ],
       "require": [
         {
@@ -59,13 +59,13 @@
     },
     {
       "id": "t3",
-      "npc": "¿Cómo? ¿Usted dice que mi pan no es bueno?",
-      "npcEn": "What? Are you saying my bread isn't good?",
-      "intent": "Say no, you don't think that: his bread is the best in the barrio.",
+      "npc": "¿Cómo? ¿Usted dice que mi tienda no es buena?",
+      "npcEn": "What? Are you saying my shop isn't any good?",
+      "intent": "Say no, you don't think that: his shop is the best in the barrio.",
       "accept": [
-        "No, para nada. Su pan es el mejor del barrio.",
-        "No, señor Arturo. No creo que su pan sea malo, al contrario.",
-        "No, para nada. Su pan es lo mejor de La Candelaria."
+        "No, para nada. Su tienda es la mejor del barrio.",
+        "No, don Arturo. No creo que su tienda sea mala, al contrario.",
+        "No, para nada. Su tienda es la mejor de La Candelaria."
       ],
       "require": [
         {
@@ -111,7 +111,7 @@
       "accept": [
         "Me parece muy bien. Estoy a favor de ir juntos. ¿Le sirvo un tinto?",
         "Claro, me parece muy bien. ¿Quiere un tinto?",
-        "Sí, señor Arturo. Estoy a favor de proponer algo juntos. Le invito un tinto."
+        "Sí, don Arturo. Estoy a favor de proponer algo juntos. Lo invito a un tinto."
       ],
       "require": [
         {
@@ -136,9 +136,8 @@
     "c:creo-que",
     "c:entonces-bueno",
     "c:es-que",
-    "c:estoy-de-acuerdo",
     "c:hola-buenos-dias",
-    "c:mucho-gusto",
+    "c:igual",
     "c:no-cierto",
     "c:para-nada",
     "c:porque",
@@ -168,7 +167,6 @@
     "g:superlatives",
     "g:that-clauses",
     "g:verb-infinitive",
-    "l:acuerdo",
     "l:alcaldía",
     "l:alegrar",
     "l:anoche",
@@ -191,25 +189,23 @@
     "l:decir",
     "l:durar",
     "l:entender",
-    "l:esquina",
     "l:estar",
     "l:favor",
     "l:ganar",
-    "l:gusto",
     "l:hablar",
     "l:hotel",
     "l:idea",
+    "l:igual",
     "l:importante",
     "l:invitar",
     "l:ir",
     "l:joven",
     "l:juntos",
     "l:llegar",
-    "l:malo",
+    "l:mala",
     "l:mejor",
-    "l:pan",
-    "l:panadería",
     "l:parecer",
+    "l:pensar",
     "l:persona",
     "l:proponer",
     "l:querer",
@@ -217,18 +213,20 @@
     "l:restaurante",
     "l:ser",
     "l:servir",
-    "l:señor",
     "l:tarde",
     "l:tener",
+    "l:tienda",
     "l:tinto",
     "l:traer",
     "l:turista",
+    "l:vecino",
     "l:vender",
     "l:venir",
     "l:viejo",
     "p:aqui-ahi-alla",
     "p:bien-bueno",
     "p:bien-mal-vs-bueno-malo",
+    "p:don-dona-nombre",
     "p:durar-durante",
     "p:estar-a-favor-de",
     "p:indefinites-basic",
@@ -238,10 +236,12 @@
     "p:me-parece-bien-que",
     "p:otro-no-article",
     "p:para-inf",
+    "p:personal-a",
     "p:possessives-basic",
     "p:prep-questions-basic",
     "p:quantifiers-basic",
     "p:senor-don-article",
+    "p:te-invito-a",
     "p:viejo-antiguo-mayor"
   ]
 }

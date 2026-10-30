@@ -67,13 +67,13 @@
       "intent": "Say you've been thinking about a library for the community.",
       "accept": [
         "Pienso en una biblioteca para la comunidad.",
-        "He pensado en una biblioteca con un café para los vecinos.",
+        "Pensé en una biblioteca con un café para los vecinos.",
         "Estoy pensando en una biblioteca para la comunidad."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\b(pienso|pensando|pensado|pensamos) en\\b",
+          "pattern": "\\b(pienso|pensando|pensé|pensamos) en\\b",
           "flags": "i",
           "label": "say you're thinking of it: pienso en..."
         },
@@ -165,10 +165,10 @@
     "g:lo-adjective",
     "g:object-pronoun-position",
     "g:parecer-quedar",
-    "g:perfecto-experience",
     "g:por-para-1",
     "g:present-ar",
     "g:present-er-ir",
+    "g:preterite-ar",
     "g:questions",
     "g:ser-identity",
     "g:stem-boot",
