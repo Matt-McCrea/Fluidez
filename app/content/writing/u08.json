@@ -513,5 +513,169 @@
       "l:qué",
       "p:frequency-scale"
     ]
+  },
+  {
+    "id": "w-u08-16",
+    "unit": "u08",
+    "prompt": "Vale is planning a day trip and asks whether you have ever ridden a horse. You have, exactly once. Text her back, someone your age.",
+    "minWords": 5,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "montar",
+        "tense": "perfecto",
+        "person": "yo",
+        "label": "he montado"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "una vez"
+        ],
+        "label": "say una vez"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "monté",
+          "montaste"
+        ],
+        "label": "use he montado, not the simple past"
+      }
+    ],
+    "model": "He montado a caballo una vez. ¿Y tú?",
+    "focus": "g:perfecto-experience",
+    "requires": [
+      "c:bien-y-tu",
+      "c:una-vez",
+      "g:perfecto-experience",
+      "l:caballo",
+      "l:montar",
+      "l:vez"
+    ]
+  },
+  {
+    "id": "w-u08-17",
+    "unit": "u08",
+    "prompt": "At a hotel, a guest your age asks if you have tried the breakfast yet. You haven't, and you ask her the same.",
+    "minWords": 5,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "probar",
+        "tense": "perfecto",
+        "person": "yo",
+        "label": "todavía no he probado"
+      },
+      {
+        "type": "containsWord",
+        "word": "todavía"
+      },
+      {
+        "type": "question"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "probé",
+          "probaste"
+        ],
+        "label": "use he probado, not the simple past"
+      }
+    ],
+    "model": "Todavía no he probado el café. ¿Y tú?",
+    "focus": "g:perfecto-experience",
+    "requires": [
+      "c:bien-y-tu",
+      "c:todavia-no",
+      "g:gender-articles",
+      "g:perfecto-experience",
+      "l:café",
+      "l:probarse"
+    ]
+  },
+  {
+    "id": "w-u08-18",
+    "unit": "u08",
+    "prompt": "Mariana asks by text what the hotel on the coast is like. Tell her in two short sentences: it is very nice, but there are too many people.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bmuy\\s+\\w+",
+        "label": "muy + adjective"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bdemasiad[oa]s?\\b",
+        "label": "demasiado, demasiada or similar"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "mucho bonito",
+          "mucha bonita",
+          "muy gente"
+        ],
+        "label": "muy before an adjective, mucho before a noun"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "El hotel es muy bonito. Hay demasiada gente.",
+    "focus": "g:quantifiers",
+    "requires": [
+      "c:hay",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "g:quantifiers",
+      "g:ser-identity",
+      "l:bonito",
+      "l:gente",
+      "l:hotel",
+      "l:ser",
+      "p:la-gente-singular",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u08-19",
+    "unit": "u08",
+    "prompt": "Your cousin in Toronto asks how the café is going. Write two sentences: there is little money, but you work quite a lot.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(poco|poca|pocos|pocas)\\s+\\w+",
+        "label": "poco or poca before a noun"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bbastante\\b",
+        "label": "bastante"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Hay poca plata. Pero trabajo bastante.",
+    "focus": "g:quantifiers",
+    "requires": [
+      "c:hay",
+      "g:hay-vs-esta",
+      "g:present-ar",
+      "g:quantifiers",
+      "l:plata",
+      "l:trabajar",
+      "p:poco-un-poco",
+      "p:quantifiers-basic"
+    ]
   }
 ]
