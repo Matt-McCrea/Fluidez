@@ -2,7 +2,7 @@
   "id": "ch017",
   "unit": "u07",
   "title": "Ocho metros",
-  "text": "Tomás, Vale y Hernando bajan rápido. Delante del café hay dos hombres con chalecos azules: Grupo Altamira.\nLos hombres cuentan metros: la calle, la casa de al lado, la puerta del café.\nHombre: El café de la esquina: ocho metros.\nOtro hombre: Y la casa de al lado: doce.\nTomás: Buenos días. ¿Qué hacen acá?\nHombre: Trabajamos, señor. Somos de Altamira. La empresa quiere toda la cuadra.\nTomás trata de decir algo serio. Abre la boca, y sale el español de ayer.\nTomás: ¡Siga, siga! Está en su casa.\nVale: ¡Tomás! No es su casa. ¡Es la casa de Rosa!\nHernando mira el nombre de Altamira y escupe en la calle.\nSimón: ¡Altamira no! ¡Altamira no!\nHernando: Mira esta cuadra, Tomás. Aquí hay casas muy viejas y mucha gente buena.\nVale: Y todo queda cerquita: la panadería, la droguería, la tienda de la esquina.\nTomás: Y demasiados hombres de Altamira.\nHernando mira la calle un momento.\nHernando: En esta calle, Joaquín y yo jugamos fútbol muchas noches.\nTomás: ¿Joaquín era su amigo?\nHernando: Sí, mijo. Era el amigo de todo el mundo.\nTomás: ¿Y dónde está ahora?\nHernando no contesta. Entra al café, solo.\nVale: Tomás, quedan veintiún días, y necesitamos mucha plata.\nTomás mira el café. Ocho metros. Cuarenta y siete años.",
+  "text": "Tomás, Vale y Hernando bajan rápido. Delante del café hay dos hombres con chalecos azules: Grupo Altamira. Cuentan metros.\nHombre: El café de la esquina: ocho metros.\nTomás: Buenos días. ¿Qué hacen acá?\nHombre: Trabajamos, señor. Somos de Altamira. La empresa quiere toda la cuadra.\nTomás trata de decir algo serio. Abre la boca, y sale el español de ayer.\nTomás: ¡Siga, siga! Está en su casa.\nVale: ¡Tomás! No es su casa. ¡Es la casa de Rosa!\nHernando escupe en la calle.\nSimón: ¡Altamira no! ¡Altamira no!\nHernando: Mira esta cuadra, Tomás. Aquí hay casas muy viejas y mucha gente buena.\nVale: Y todo queda cerquita: la panadería, la droguería, la tienda de la esquina.\nTomás: Y demasiados hombres de Altamira.\nHernando: En esta calle, Joaquín y yo jugamos fútbol muchas noches.\nTomás: ¿Joaquín era su amigo?\nHernando: Sí, mijo. Era el amigo de todo el mundo.\nTomás: ¿Y dónde está ahora?\nHernando no contesta. Entra al café, solo.\nVale: Tomás, quedan veintiún días, y necesitamos mucha plata.\nTomás mira el café. Ocho metros. Cuarenta y siete años.",
   "gloss": [
     {
       "es": "bajan rápido",
@@ -15,10 +15,6 @@
     {
       "es": "chalecos azules",
       "en": "blue vests"
-    },
-    {
-      "es": "la casa de al lado",
-      "en": "the house next door"
     },
     {
       "es": "trata de decir algo serio",
@@ -49,7 +45,7 @@
     {
       "q": "What are the two men doing in the street?",
       "options": [
-        "Measuring the street, the house next door and the café for Grupo Altamira",
+        "Measuring the café for Grupo Altamira",
         "Selling bread",
         "Looking for Tomás's room",
         "Fixing the shower"
@@ -88,7 +84,7 @@
     {
       "q": "What does Hernando do when Tomás asks where Joaquín is now?",
       "options": [
-        "He doesn't answer: he goes in and orders a tinto",
+        "He doesn't answer: he goes into the café alone",
         "He says Joaquín is in Medellín",
         "He calls Joaquín",
         "He shows Tomás a letter"
@@ -195,18 +191,14 @@
     "l:hacer",
     "l:hombre",
     "l:jugar",
-    "l:lado",
     "l:metro",
     "l:mijo",
     "l:mirar",
-    "l:momento",
     "l:mundo",
     "l:necesitar",
     "l:noche",
-    "l:nombre",
     "l:panadería",
     "l:plata",
-    "l:puerta",
     "l:quedar",
     "l:querer",
     "l:qué",
