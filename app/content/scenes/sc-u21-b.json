@@ -1,0 +1,228 @@
+{
+  "id": "sc-u21-b",
+  "unit": "u21",
+  "title": "Flowers on Saturday",
+  "spare": true,
+  "brief": "You're Tomás. You've just found out that Saturday is Vale's birthday, and you want to surprise her. Ask Don Hernando for help without Vale finding out. He's older than you, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenos días, joven. Usted no durmió anoche, ¿verdad? ¿Qué le pasa?",
+      "npcEn": "Good morning, young man. You didn't sleep last night, did you? What's the matter?",
+      "intent": "Say sorry to bother him, but can he help you with something.",
+      "accept": [
+        "Qué pena molestarlo, pero ¿me puede ayudar con algo?",
+        "Qué pena molestarlo. ¿Me puede ayudar?",
+        "Qué pena molestarlo, pero necesito su ayuda."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bqu[eé] pena molestarlo\\b",
+          "flags": "i",
+          "label": "sorry to bother you: qué pena molestarlo"
+        }
+      ],
+      "focus": "c:que-pena-molestarlo",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Para usted, todos los favores. Dígame.",
+      "npcEn": "For you, any favour at all. Tell me.",
+      "intent": "Say you want him to help you with a surprise for Vale.",
+      "accept": [
+        "Quiero que me ayude con una sorpresa para Vale.",
+        "El sábado es el cumpleaños de Vale, y quiero que me ayude con una sorpresa.",
+        "Quiero que me ayude, por favor. Es una sorpresa para Vale."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "ayudar",
+          "tense": "presubj",
+          "person": "él/ella",
+          "label": "I want you (usted) to help: quiero que me ayude"
+        }
+      ],
+      "focus": "g:subj-wanting",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Una sorpresa para el cumpleaños? Muy bien. ¿Y qué quiere que haga yo?",
+      "npcEn": "A surprise for her birthday? Very good. And what do you want me to do?",
+      "intent": "Ask him if he could buy flowers on Saturday morning.",
+      "accept": [
+        "¿Podría comprar flores el sábado por la mañana?",
+        "¿Podría comprar unas flores el sábado?",
+        "Por favor, ¿podría comprar flores el sábado por la mañana?"
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "poder",
+          "tense": "condicional",
+          "person": "él/ella",
+          "label": "could you (usted): ¿podría…?"
+        },
+        {
+          "type": "question"
+        }
+      ],
+      "focus": "g:conditional",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Con gusto. Pero Vale me pregunta todo. Si me pregunta algo, ¿qué le digo?",
+      "npcEn": "Gladly. But Vale asks me everything. If she asks me something, what do I tell her?",
+      "intent": "Tell him not to tell her anything.",
+      "accept": [
+        "No le diga nada, por favor.",
+        "Por favor, no le diga nada.",
+        "No le diga nada. Es una sorpresa."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "decir",
+          "tense": "presubj",
+          "person": "él/ella",
+          "label": "don't tell (usted): no le diga"
+        },
+        {
+          "type": "negation",
+          "label": "tell him not to: start with no"
+        }
+      ],
+      "focus": "g:negative-commands",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Yo no digo nada. Pero Simón sí habla, y habla mucho.",
+      "npcEn": "I won't say a thing. But Simón does talk, and he talks a lot.",
+      "intent": "Say that then you want Simón to be with him on Saturday.",
+      "accept": [
+        "Entonces quiero que Simón esté con usted el sábado.",
+        "Quiero que Simón esté en la casa de usted el sábado.",
+        "Es verdad. Quiero que Simón esté con usted el sábado por la mañana."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "estar",
+          "tense": "presubj",
+          "person": "él/ella",
+          "label": "I want Simón to be: quiero que esté"
+        }
+      ],
+      "focus": "g:subj-irregulars",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Simón en mi casa todo un día. Bueno, lo hago por Vale, no por usted.",
+      "npcEn": "Simón in my house for a whole day. Well, I'm doing it for Vale, not for you.",
+      "intent": "Thank him and tell him not to worry, you'll pay for the flowers.",
+      "accept": [
+        "Muchas gracias. No se preocupe, yo pago las flores.",
+        "Gracias. No se preocupe, yo pago.",
+        "No se preocupe, yo pago las flores. Muchas gracias."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bno se preocupe\\b",
+          "flags": "i",
+          "label": "to usted: no se preocupe, not no te preocupes"
+        }
+      ],
+      "focus": "c:no-te-preocupes",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:ayer-anoche",
+    "c:bien-y-tu",
+    "c:con-mucho-gusto",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hago-salgo-vengo",
+    "c:hola-buenos-dias",
+    "c:me-puede-ayudar",
+    "c:no-cierto",
+    "c:no-se",
+    "c:no-te-preocupes",
+    "c:por-favor",
+    "c:que-pena",
+    "c:quiero",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:conditional",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:indirect-objects",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:anoche",
+    "l:ayuda",
+    "l:ayudar",
+    "l:bien",
+    "l:bueno",
+    "l:casa",
+    "l:comprar",
+    "l:cumpleaños",
+    "l:decir",
+    "l:dormir",
+    "l:día",
+    "l:estar",
+    "l:favor",
+    "l:flor",
+    "l:gusto",
+    "l:hablar",
+    "l:hacer",
+    "l:joven",
+    "l:mañana",
+    "l:molestar",
+    "l:necesitar",
+    "l:pagar",
+    "l:parar",
+    "l:pasar",
+    "l:pena",
+    "l:poder",
+    "l:preguntar",
+    "l:preocuparse",
+    "l:querer",
+    "l:qué",
+    "l:ser",
+    "l:sorpresa",
+    "l:sábado",
+    "l:verdad",
+    "p:days-el-lunes",
+    "p:de-owner",
+    "p:indefinites-basic",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:request-ladder",
+    "p:te-importaria"
+  ]
+}

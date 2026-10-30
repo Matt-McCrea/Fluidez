@@ -1,0 +1,238 @@
+{
+  "id": "sc-u21-c",
+  "unit": "u21",
+  "title": "Off the record",
+  "spare": true,
+  "brief": "You're Tomás. Mariana has heard about Altamira's phone call and comes into the café with her notebook. Ask her for a favour and set some limits on what she writes. She's your friend, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "¡Tomás! Vale me contó todo. Altamira te llamó y te habló de sus amigos en el gobierno, ¿no?",
+      "npcEn": "Tomás! Vale told me everything. Altamira called you and talked about his friends in the government, didn't he?",
+      "intent": "Say yes, it's true, and ask her if she can do you a favour.",
+      "accept": [
+        "Sí, es verdad. ¿Me haces un favor?",
+        "Sí. Mariana, ¿me haces un favor?",
+        "Es verdad. ¿Te puedo pedir un favor?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "me haces un favor|te puedo pedir un favor",
+          "flags": "i",
+          "label": "a favour: ¿me haces un favor?"
+        },
+        {
+          "type": "question"
+        }
+      ],
+      "focus": "c:me-haces-un-favor",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Depende. ¿Qué favor?",
+      "npcEn": "It depends. What favour?",
+      "intent": "Say you want her to look for information about Altamira.",
+      "accept": [
+        "Quiero que busques información sobre Altamira.",
+        "Quiero que busques información sobre sus amigos en el gobierno.",
+        "Necesito que busques información sobre Altamira."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "buscar",
+          "tense": "presubj",
+          "person": "tú",
+          "label": "I want you to look: quiero que busques"
+        }
+      ],
+      "focus": "g:subj-wanting",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Eso ya lo hago, es mi trabajo. Voy a escribir sobre Altamira. ¿Puedo escribir tu nombre?",
+      "npcEn": "I already do that, it's my job. I'm going to write about Altamira. Can I write your name?",
+      "intent": "Say no: tell her not to write your name.",
+      "accept": [
+        "No, no escribas mi nombre, por favor.",
+        "Por favor, no escribas mi nombre.",
+        "No escribas mi nombre, Mariana."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "escribir",
+          "tense": "presubj",
+          "person": "tú",
+          "label": "don't write: no escribas, not no escribes"
+        },
+        {
+          "type": "negation",
+          "label": "tell her not to: start with no"
+        }
+      ],
+      "focus": "g:negative-commands",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Bueno. ¿Y el nombre del café? ¿Quieres que hable con Vale?",
+      "npcEn": "OK. And the café's name? Do you want me to talk to Vale?",
+      "intent": "Say no: first you want to talk to Vale yourself.",
+      "accept": [
+        "No, primero quiero hablar yo con Vale.",
+        "Primero quiero hablar con Vale. Ella es mi socia.",
+        "No. Yo quiero hablar con ella primero."
+      ],
+      "require": [
+        {
+          "type": "infinitiveUsed",
+          "inf": "hablar",
+          "label": "you do it yourself: quiero hablar"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "que hable"
+          ],
+          "label": "same person, so no que: quiero hablar, not quiero que hable"
+        }
+      ],
+      "focus": "x:inf-vs-que-subj",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¿Tu socia? ¡Qué bien! Pero, ¿y si Altamira me llama a mí?",
+      "npcEn": "Your partner? Great! But what if Altamira calls me?",
+      "intent": "Say you want her to be careful.",
+      "accept": [
+        "Quiero que tengas cuidado.",
+        "Quiero que tengas mucho cuidado, Mariana.",
+        "Entonces quiero que tengas cuidado."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "tener",
+          "tense": "presubj",
+          "person": "tú",
+          "label": "I want you to be careful: quiero que tengas cuidado"
+        }
+      ],
+      "focus": "g:subj-irregulars",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Siempre tengo cuidado. Bueno, me voy a trabajar. ¿Me regalas un tinto para el camino?",
+      "npcEn": "I'm always careful. Right, I'm off to work. Can I have a coffee for the road?",
+      "intent": "Say of course, and tell her not to pay.",
+      "accept": [
+        "Claro que sí. No pagues, es para ti.",
+        "Claro. Y no pagues nada.",
+        "Con gusto, pero no pagues. Es un regalo."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "pagar",
+          "tense": "presubj",
+          "person": "tú",
+          "label": "don't pay: no pagues, not no pagas"
+        },
+        {
+          "type": "negation",
+          "label": "tell her not to: start with no"
+        }
+      ],
+      "focus": "g:negative-commands",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:compre-trabaje",
+    "c:con-el-ella",
+    "c:con-mucho-gusto",
+    "c:depende",
+    "c:entonces-bueno",
+    "c:hago-salgo-vengo",
+    "c:me-haces-un-favor",
+    "c:no-cierto",
+    "c:por-favor",
+    "c:puedo",
+    "c:que-bien",
+    "c:quiero",
+    "c:tengo",
+    "c:voy-a",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:negative-commands",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:questions",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:amigo",
+    "l:bien",
+    "l:bueno",
+    "l:buscar",
+    "l:café",
+    "l:camino",
+    "l:claro",
+    "l:contar",
+    "l:cuidado",
+    "l:depender",
+    "l:escribir",
+    "l:favor",
+    "l:gobierno",
+    "l:gusto",
+    "l:hablar",
+    "l:hacer",
+    "l:información",
+    "l:ir",
+    "l:irse",
+    "l:llamar",
+    "l:necesitar",
+    "l:nombre",
+    "l:pagar",
+    "l:pedir",
+    "l:poder",
+    "l:querer",
+    "l:qué",
+    "l:regalar",
+    "l:regalo",
+    "l:ser",
+    "l:siempre",
+    "l:socio",
+    "l:tener",
+    "l:tinto",
+    "l:trabajar",
+    "l:trabajo",
+    "l:verdad",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:me-te-nos-objects",
+    "p:me-trae",
+    "p:no-es-x-es-y",
+    "p:para-inf",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:request-ladder",
+    "p:time-sequence-basic"
+  ]
+}

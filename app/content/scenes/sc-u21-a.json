@@ -1,0 +1,235 @@
+{
+  "id": "sc-u21-a",
+  "unit": "u21",
+  "title": "House rules for Jhon Fredy",
+  "brief": "You're Tomás. It's Jhon Fredy's first Monday on his own in the café, and he wants to know the new rules before the customers arrive. Tell him what you want him to do and what not to do. He's young and works for you, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenos días, jefe. Vale dice que hoy hay reglas nuevas. ¿Qué quiere que haga primero?",
+      "npcEn": "Good morning, boss. Vale says there are new rules today. What do you want me to do first?",
+      "intent": "Say you want him to clean the tables before eight.",
+      "accept": [
+        "Quiero que limpies las mesas antes de las ocho.",
+        "Primero, quiero que limpies las mesas.",
+        "Jhon Fredy, quiero que limpies las mesas antes de las ocho."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "limpiar",
+          "tense": "presubj",
+          "person": "tú",
+          "label": "I want you to clean: quiero que limpies"
+        }
+      ],
+      "focus": "g:subj-wanting",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Listo. ¿Y el celular? Siempre lo tengo en la mano.",
+      "npcEn": "Done. And my phone? I always have it in my hand.",
+      "intent": "Tell him not to use his phone in the café.",
+      "accept": [
+        "No uses el celular en el café.",
+        "Por favor, no uses el celular en el café.",
+        "No uses el celular aquí, por favor."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "usar",
+          "tense": "presubj",
+          "person": "tú",
+          "label": "don't use: no uses, not no usas"
+        }
+      ],
+      "focus": "g:negative-commands",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Ay, jefe. ¿Y si me llama mi mamá?",
+      "npcEn": "Oh, boss. And what if my mum calls me?",
+      "intent": "Say no problem, but you need him to be in the kitchen at ten.",
+      "accept": [
+        "Sin problema, pero necesito que estés en la cocina a las diez.",
+        "Sin problema. Pero a las diez necesito que estés en la cocina con Vale.",
+        "Bueno, sin problema. Necesito que estés en la cocina a las diez."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "estar",
+          "tense": "presubj",
+          "person": "tú",
+          "label": "I need you to be: necesito que estés"
+        }
+      ],
+      "focus": "g:subj-irregulars",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Otra cosa: ayer Simón quería pan y le di un poco. ¿Está mal?",
+      "npcEn": "Another thing: yesterday Simón wanted bread and I gave him a bit. Is that wrong?",
+      "intent": "Say yes, and tell him not to give Simón bread.",
+      "accept": [
+        "Sí. No le des pan.",
+        "Sí, está mal. No le des pan.",
+        "Sí. No le des pan, por favor. Simón come fruta."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "dar",
+          "tense": "presubj",
+          "person": "tú",
+          "label": "don't give: no le des, not no le das"
+        }
+      ],
+      "focus": "g:negative-commands",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Ya. ¿Algo más, jefe?",
+      "npcEn": "Right. Anything else, boss?",
+      "intent": "Say yes: you want him to be kind to Don Hernando.",
+      "accept": [
+        "Sí. Quiero que seas amable con don Hernando.",
+        "Quiero que seas amable con don Hernando. Es como mi familia.",
+        "Una cosa más: quiero que seas amable con don Hernando."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "ser",
+          "tense": "presubj",
+          "person": "tú",
+          "label": "I want you to be: quiero que seas"
+        }
+      ],
+      "focus": "g:subj-irregulars",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Claro. ¿Y me puedo ir a las cinco hoy? Es el cumpleaños de mi hermana.",
+      "npcEn": "Sure. And can I leave at five today? It's my sister's birthday.",
+      "intent": "Say yes, no problem, and tell him not to worry.",
+      "accept": [
+        "Sí, sin problema. No te preocupes.",
+        "Claro que sí. No te preocupes.",
+        "No te preocupes, sin problema."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bno te preocupes\\b",
+          "flags": "i",
+          "label": "don't worry: no te preocupes"
+        }
+      ],
+      "focus": "c:no-te-preocupes",
+      "next": null
+    }
+  ],
+  "spare": false,
+  "requires": [
+    "c:algo-mas",
+    "c:ayer-anoche",
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:no-te-preocupes",
+    "c:por-favor",
+    "c:puedo",
+    "c:quiero",
+    "c:sin-problema",
+    "c:tengo",
+    "g:adjective-agreement",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:indirect-objects",
+    "g:negative-commands",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-irregulars",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:amable",
+    "l:antes",
+    "l:aquí",
+    "l:ayer",
+    "l:bueno",
+    "l:café",
+    "l:celular",
+    "l:claro",
+    "l:cocina",
+    "l:comer",
+    "l:cosa",
+    "l:cumpleaños",
+    "l:dar",
+    "l:decir",
+    "l:día",
+    "l:estar",
+    "l:familia",
+    "l:favor",
+    "l:fruta",
+    "l:hacer",
+    "l:hermana",
+    "l:hoy",
+    "l:ir",
+    "l:jefe",
+    "l:limpiar",
+    "l:listo",
+    "l:llamar",
+    "l:mal",
+    "l:mamá",
+    "l:mano",
+    "l:mesa",
+    "l:necesitar",
+    "l:nuevo",
+    "l:pan",
+    "l:poder",
+    "l:preocuparse",
+    "l:problema",
+    "l:querer",
+    "l:qué",
+    "l:regla",
+    "l:ser",
+    "l:siempre",
+    "l:tener",
+    "l:usar",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:frequency-scale",
+    "p:ir-a-venir-de-place",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:poco-un-poco",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:que-tal-si",
+    "p:request-ladder",
+    "p:senor-don-article",
+    "p:telling-time",
+    "p:time-sequence-basic"
+  ]
+}
