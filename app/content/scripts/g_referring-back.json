@@ -1,0 +1,199 @@
+{
+ "node": "g:referring-back",
+ "hook": {
+  "line": "Write two sentences about two people and you will repeat their names until it sounds like a list. Spanish has a small set of words that point back at what you just said, so you can keep a paragraph moving. Today you meet them.",
+  "es": "Rosa y Hernando eran amigos. Este todavía viene al café.",
+  "en": "Rosa and Hernando were friends. The latter still comes to the café."
+ },
+ "examples": [
+  {
+   "es": "Tomás habló con Vale y con Mariana; esta dijo que no tiene tiempo.",
+   "en": "Tomás spoke with Vale and with Mariana; the latter said she has no time."
+  },
+  {
+   "es": "Rosa y Hernando eran amigos. Este todavía viene al café.",
+   "en": "Rosa and Hernando were friends. The latter still comes to the café."
+  },
+  {
+   "es": "Tomás tiene un carro y una bicicleta. Esta es nueva y aquel es viejo.",
+   "en": "Tomás has a car and a bicycle. The latter is new and the former is old."
+  },
+  {
+   "es": "Mariana escribió un artículo sobre el café. Dicho artículo salió el domingo.",
+   "en": "Mariana wrote an article about the café. The article in question came out on Sunday."
+  },
+  {
+   "es": "El gerente recibió una solicitud. Dicha solicitud llegó ayer.",
+   "en": "The manager received a request. The request in question arrived yesterday."
+  },
+  {
+   "es": "El plazo termina el viernes. Lo anterior no significa que vayamos a cerrar el café.",
+   "en": "The deadline ends on Friday. The above does not mean that we are going to close the café."
+  },
+  {
+   "es": "Vale y Mariana viven en el mismo barrio.",
+   "en": "Vale and Mariana live in the same neighborhood."
+  }
+ ],
+ "rule": "Spanish likes to point back instead of repeating a name.\n\n*Este*, *esta* point to the last thing you named: 'the latter'. *Aquel*, *aquella* point to the one named before: 'the former'. They match the gender of what they point to, so Mariana is *esta* and Hernando is *este*.\n\n*Dicho*, *dicha* + noun means 'the one I just mentioned': *dicho artículo*, *dicha solicitud*. It replaces *el*, so never say *dicho el artículo*. It sounds formal, like writing.\n\n*El mismo*, *la misma*: the same one. The *el* or *la* stays.\n\n*Lo anterior* points back to a whole idea, not one noun. *Esto* and *eso* work too.\n\nEnglish does this with 'the latter' or just repeats the name. In chat you can repeat the name too. In a written text, these words make it flow.",
+ "smallPrint": "Teachers call this anaphora, a word that refers back to something already said. *Dicho* is used here as a referring adjective.",
+ "readAndPick": [
+  {
+   "es": "Tomás habló con Vale y con Mariana; esta dijo que no tiene tiempo.",
+   "options": [
+    "Vale has no time.",
+    "Tomás has no time.",
+    "Mariana has no time."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Rosa y Hernando eran amigos. Este todavía viene al café.",
+   "options": [
+    "Hernando still comes to the café.",
+    "Rosa still comes to the café.",
+    "Both of them still come to the café."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Tomás tiene una bicicleta y un carro. Este es nuevo.",
+   "options": [
+    "The bicycle is new.",
+    "The car is new.",
+    "Both are new."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Tomás tiene un carro y una bicicleta. Aquel es viejo.",
+   "options": [
+    "The bicycle is old.",
+    "Both are old.",
+    "The car is old."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Dicha solicitud llegó ayer.",
+   "options": [
+    "The request in question arrived yesterday.",
+    "I sent a request yesterday.",
+    "A new request will arrive tomorrow."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Lo anterior no significa que vayamos a cerrar.",
+   "options": [
+    "What comes next does not mean that we are going to close.",
+    "What was said above does not mean that we are going to close.",
+    "The previous café does not mean that we are going to close."
+   ],
+   "answer": 1
+  },
+  {
+   "es": "Mariana y Tomás viven en el mismo barrio.",
+   "options": [
+    "They live in different neighborhoods.",
+    "They live in a neighborhood nearby.",
+    "They live in the same neighborhood."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Tomás habló con Don Hernando y con Mariana; aquel dijo que sí.",
+   "options": [
+    "Don Hernando said yes.",
+    "Mariana said yes.",
+    "Tomás said yes."
+   ],
+   "answer": 0
+  },
+  {
+   "es": "Hernando conoce a Tomás. Este es el nuevo dueño del café.",
+   "options": [
+    "Hernando is the new owner of the café.",
+    "Both are the new owners of the café.",
+    "Tomás is the new owner of the café."
+   ],
+   "answer": 2
+  },
+  {
+   "es": "Mariana escribió un artículo. Dicho artículo salió el domingo.",
+   "options": [
+    "The article in question came out on Sunday.",
+    "Mariana is writing an article on Sunday.",
+    "An article will come out on Sunday."
+   ],
+   "answer": 0
+  }
+ ],
+ "yourTurn": [
+  {
+   "prompt": "Pick *este* or *esta* for 'the latter' (Mariana). Type the whole sentence: Tomás spoke with Vale and with Mariana; the latter said she has no time.",
+   "answer": "Tomás habló con Vale y con Mariana; esta dijo que no tiene tiempo.",
+   "accept": [],
+   "why": "Mariana is a woman, so the pointing word is *esta*."
+  },
+  {
+   "prompt": "Pick *este* or *esta*. Type the whole sentence: Rosa and Hernando were friends. The latter still comes to the café.",
+   "answer": "Rosa y Hernando eran amigos. Este todavía viene al café.",
+   "accept": [],
+   "why": "The last one named is Hernando, so *este*."
+  },
+  {
+   "prompt": "Pick *dicho* or *dicha*. Type the whole sentence: The manager received a request. The request in question arrived yesterday.",
+   "answer": "El gerente recibió una solicitud. Dicha solicitud llegó ayer.",
+   "accept": [],
+   "why": "*Solicitud* is feminine, so *dicha*, and it replaces *la*."
+  },
+  {
+   "prompt": "Type it in Spanish: Vale and Mariana live in the same neighborhood.",
+   "answer": "Vale y Mariana viven en el mismo barrio.",
+   "accept": [],
+   "why": "*Barrio* is masculine, so *el mismo*."
+  },
+  {
+   "prompt": "Type it in Spanish: Tomás has a car and a bicycle. The latter is new.",
+   "answer": "Tomás tiene un carro y una bicicleta. Esta es nueva.",
+   "accept": [],
+   "why": "The bicycle was named last and is feminine, so *esta*."
+  },
+  {
+   "prompt": "Change it so that the former (Vale) is the one with no time: Tomás habló con Vale y con Mariana; esta dijo que no tiene tiempo.",
+   "answer": "Tomás habló con Vale y con Mariana; aquella dijo que no tiene tiempo.",
+   "accept": [],
+   "why": "*Aquella* points to the one named first, and Vale is a woman."
+  },
+  {
+   "prompt": "Type it in Spanish: The deadline ends on Friday. The above does not mean that we are going to close the café.",
+   "answer": "El plazo termina el viernes. Lo anterior no significa que vayamos a cerrar el café.",
+   "accept": [],
+   "why": "*Lo anterior* points back at the whole idea, so it is always *lo*."
+  }
+ ],
+ "pitfalls": [
+  {
+   "wrong": "Tomás habló con Vale y con Mariana; este dijo que no tiene tiempo.",
+   "right": "Tomás habló con Vale y con Mariana; esta dijo que no tiene tiempo.",
+   "why": "Almost. *Este* has to match the person it points to, and Mariana is *esta*."
+  },
+  {
+   "wrong": "Mariana escribió un artículo. Dicho el artículo salió el domingo.",
+   "right": "Mariana escribió un artículo. Dicho artículo salió el domingo.",
+   "why": "Almost. *Dicho* already does the job of 'the', so *el* does not follow it."
+  },
+  {
+   "wrong": "Vale y Mariana viven en mismo barrio.",
+   "right": "Vale y Mariana viven en el mismo barrio.",
+   "why": "Almost. English says 'the same' and Spanish needs the *el* too: *el mismo*."
+  },
+  {
+   "wrong": "Tomás habló con Vale y con Mariana; la última dijo que no tiene tiempo.",
+   "right": "Tomás habló con Vale y con Mariana; esta dijo que no tiene tiempo.",
+   "why": "Almost. Spanish does not say 'the last one' for 'the latter'; *esta* does the pointing."
+  }
+ ],
+ "personal": "Name two people in one sentence, then point back at the second with *este* or *esta*. For example: *Hablé con mi hermano y con mi jefa; esta dijo que sí.*"
+}
