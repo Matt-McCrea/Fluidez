@@ -635,5 +635,112 @@
       "p:para-inf-purpose",
       "p:se-puede-me-dejas"
     ]
+  },
+  {
+    "id": "w-u19-13",
+    "unit": "u19",
+    "prompt": "Write a short sign for the café door for customers. Say that you can pay by card, that a waiter is needed, and that Spanish and English are spoken here.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bse puede pagar\\b",
+        "label": "say you can pay with se puede pagar"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bse (necesita|busca)\\b",
+        "label": "say a waiter is needed with se necesita or se busca"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bse hablan?\\b",
+        "label": "say what is spoken with se habla"
+      }
+    ],
+    "model": "Hola a todos. Aquí se puede pagar con tarjeta o en efectivo. Se necesita mesero para las mañanas. En el café se habla español e inglés. Gracias por venir.",
+    "focus": "g:se-impersonal",
+    "requires": [
+      "c:se-busca",
+      "c:se-puede",
+      "c:tarjeta-o-efectivo",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:se-impersonal",
+      "l:aquí",
+      "l:café",
+      "l:efectivo",
+      "l:español",
+      "l:hablar",
+      "l:inglés",
+      "l:mañana",
+      "l:mesero",
+      "l:necesitar",
+      "l:pagar",
+      "l:poder",
+      "l:tarjeta",
+      "l:venir",
+      "p:aqui-ahi-alla",
+      "p:gracias-por",
+      "p:para-inf"
+    ]
+  },
+  {
+    "id": "w-u19-14",
+    "unit": "u19",
+    "prompt": "Your friend Jhon Fredy starts at the café tomorrow and asks how things work. Text him (someone your age): say what is done there in the morning, that English is spoken with the tourists, and that a cook is wanted too.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bse (trabaja|habla|necesita|busca|come|abre|vende)\\b",
+        "label": "use se for what people do in general"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bse (necesita|busca)\\b",
+        "label": "say a cook is wanted with se busca or se necesita"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "usted",
+          "trabaje",
+          "hable"
+        ],
+        "label": "tú, not usted"
+      }
+    ],
+    "model": "Hola, Jhon Fredy. Mañana empiezas y te cuento rápido. Por la mañana se trabaja mucho y con los turistas se habla inglés. También se busca un cocinero. Llega a las siete y media, por favor.",
+    "focus": "g:se-impersonal",
+    "requires": [
+      "c:hola-buenos-dias",
+      "c:por-favor",
+      "c:se-busca",
+      "g:commands-tu",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:se-impersonal",
+      "g:stem-boot",
+      "l:buscar",
+      "l:cocinero",
+      "l:contar",
+      "l:empezar",
+      "l:favor",
+      "l:hablar",
+      "l:inglés",
+      "l:llegar",
+      "l:mañana",
+      "l:rápido",
+      "l:trabajar",
+      "l:turista",
+      "p:me-te-nos-objects",
+      "p:por-la-manana",
+      "p:quantifiers-basic",
+      "p:request-ladder",
+      "p:telling-time"
+    ]
   }
 ]
