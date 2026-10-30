@@ -1,0 +1,648 @@
+[
+  {
+    "id": "w-u26-01",
+    "unit": "u26",
+    "prompt": "Text your friend Vale. She asked how you learned to cook so well. Say you learned by watching videos and by practising with your grandmother.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b\\w+(ando|iendo)\\b",
+        "label": "use a gerund: viendo, practicando"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Vale, aprendí a cocinar viendo videos en mi celular. También aprendí practicando con mi abuela. Ella siempre está cocinando en la casa. Ahora cocino mucho mejor que antes.",
+    "focus": "g:gerund-ways",
+    "requires": [
+      "g:comparatives",
+      "g:estar-gerund",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:gerund-ways",
+      "g:present-ar",
+      "g:preterite-er-ir",
+      "l:abuela",
+      "l:ahora",
+      "l:antes",
+      "l:aprender",
+      "l:casa",
+      "l:celular",
+      "l:cocinar",
+      "l:estar",
+      "l:mejor",
+      "l:practicar",
+      "l:siempre",
+      "l:ver",
+      "l:video",
+      "p:frequency-scale",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u26-02",
+    "unit": "u26",
+    "prompt": "Tell Mariana, a friend your age, what your landlady said this morning: that the apartment was too small for three people and that she was going to call you tomorrow.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(me dijo|dijo) que\\b",
+        "label": "report it with me dijo que"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "me dice que"
+        ],
+        "label": "past: me dijo, not me dice"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Mariana, hablé con la señora esta mañana. Me dijo que el apartamento era muy pequeño. También me dijo que estaba cansada y ocupada. Ahora no sé qué hacer.",
+    "focus": "g:reported-past-basic",
+    "requires": [
+      "c:era",
+      "c:no-se",
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:indirect-questions",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "g:preterite-irregular-strong",
+      "g:reported-past-basic",
+      "g:ser-identity",
+      "g:that-clauses",
+      "g:yo-irregular",
+      "l:ahora",
+      "l:apartamento",
+      "l:cansado",
+      "l:decir",
+      "l:estar",
+      "l:hablar",
+      "l:hacer",
+      "l:mañana",
+      "l:ocupado",
+      "l:pequeño",
+      "l:qué",
+      "l:saber",
+      "l:ser",
+      "l:señora",
+      "p:demonstratives-basic",
+      "p:me-te-nos-objects",
+      "p:no-se-que-hacer",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u26-03",
+    "unit": "u26",
+    "prompt": "Tell a coworker, someone your age, what happened on your trip to Cartagena, in order: first, then, and finally. Use words that mark the order.",
+    "minWords": 30,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "containsAny",
+        "words": [
+          "primero",
+          "ese día",
+          "al día siguiente",
+          "al final"
+        ],
+        "label": "mark the order: primero, ese día, al día siguiente, al final"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "preterito"
+      },
+      {
+        "type": "minSentences",
+        "n": 4
+      }
+    ],
+    "model": "Primero llegamos al hotel y dejamos las maletas. Ese día comimos pescado en la playa. Al día siguiente fuimos a un mercado muy bonito. Al final compré un regalo para mi mamá.",
+    "focus": "g:time-sequence",
+    "requires": [
+      "c:al-final",
+      "c:compre-trabaje",
+      "g:demonstratives",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:preterite-ar",
+      "g:preterite-er-ir",
+      "g:preterite-ser-ir-hacer",
+      "l:bonito",
+      "l:comer",
+      "l:comprar",
+      "l:dejar",
+      "l:día",
+      "l:final",
+      "l:hotel",
+      "l:ir",
+      "l:llegar",
+      "l:maleta",
+      "l:mamá",
+      "l:mercado",
+      "l:pescado",
+      "l:playa",
+      "l:regalo",
+      "l:siguiente",
+      "p:dentro-de-vs-despues",
+      "p:ir-a-venir-de-place",
+      "p:para-inf",
+      "p:possessives-basic",
+      "p:quantifiers-basic",
+      "p:time-sequence-basic"
+    ]
+  },
+  {
+    "id": "w-u26-04",
+    "unit": "u26",
+    "prompt": "Text your mother, whom you call tú. You are at the airport. Say you just landed, that you have not eaten yet, and that you will call her later.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bacabo de \\w+",
+        "label": "say you just did it: acabo de llegar"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\btodavía no\\b",
+        "label": "say not yet: todavía no"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Mamá, acabo de llegar al aeropuerto y todo está bien. Todavía no he comido nada porque hay mucha gente. Te llamo más tarde desde el hotel. Un beso.",
+    "focus": "g:acabar-de-ya-todavia",
+    "requires": [
+      "c:bien-y-tu",
+      "c:hay",
+      "c:porque",
+      "c:todavia-no",
+      "g:acabar-de-ya-todavia",
+      "g:cause-result",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "g:negation-words",
+      "g:perfecto-experience",
+      "g:present-ar",
+      "l:acabar",
+      "l:aeropuerto",
+      "l:beso",
+      "l:bien",
+      "l:comer",
+      "l:estar",
+      "l:gente",
+      "l:hotel",
+      "l:llamar",
+      "l:llegar",
+      "l:tarde",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:la-gente-singular",
+      "p:me-te-nos-objects",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u26-05",
+    "unit": "u26",
+    "prompt": "Text a friend you want to tell something exciting: you met a famous actor at the café. Start with the question that gets their attention, then say what happened.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "¿sabes qué me pasó\\?",
+        "label": "open with ¿Sabes qué me pasó?"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "¿Sabes qué me pasó? Conocí a un actor famoso en el café. Me pidió un tinto y me dijo que Bogotá es increíble. Todavía no lo puedo creer.",
+    "focus": "c:sabes-que-me-paso",
+    "requires": [
+      "c:puedo",
+      "c:sabes-que-me-paso",
+      "c:todavia-no",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "g:preterite-irregular-strong",
+      "g:preterite-spelling-stem",
+      "g:ser-identity",
+      "g:stem-boot",
+      "g:that-clauses",
+      "g:verb-infinitive",
+      "l:actor",
+      "l:café",
+      "l:conocer",
+      "l:creer",
+      "l:decir",
+      "l:famoso",
+      "l:increíble",
+      "l:pasar",
+      "l:pedir",
+      "l:poder",
+      "l:qué",
+      "l:saber",
+      "l:ser",
+      "l:tinto",
+      "p:me-te-nos-objects",
+      "p:personal-a",
+      "p:preguntar-pedir",
+      "p:saber-conocer"
+    ]
+  },
+  {
+    "id": "w-u26-06",
+    "unit": "u26",
+    "prompt": "Write to your friend Hernando, who is older but speaks to you as tú. Tell him about a bad morning: you went to the bank and it was closed. Use the phrase for an unexpected twist.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bresulta que\\b",
+        "label": "use resulta que"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Hernando, fui al banco esta mañana porque necesitaba plata. Resulta que estaba cerrado por un problema. Esperé una hora afuera con mucha gente. ¡Qué de malas!",
+    "focus": "c:resulta-que",
+    "requires": [
+      "c:fui",
+      "c:porque",
+      "c:que-de-malas",
+      "c:resulta-que",
+      "g:cause-result",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:imperfect-states",
+      "g:por-para-1",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "g:preterite-ser-ir-hacer",
+      "l:afuera",
+      "l:banco",
+      "l:cerrar",
+      "l:esperar",
+      "l:estar",
+      "l:gente",
+      "l:hora",
+      "l:ir",
+      "l:mala",
+      "l:mañana",
+      "l:necesitar",
+      "l:plata",
+      "l:problema",
+      "l:qué",
+      "l:resultar",
+      "p:demonstratives-basic",
+      "p:ir-a-venir-de-place",
+      "p:la-gente-singular",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u26-07",
+    "unit": "u26",
+    "prompt": "Reply to a message from Vale, who asked about your weekend at the beach. Tell her you had a great time and who you went with.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bla pas(é|amos|aron)\\b",
+        "label": "say you had a good time: la pasé / la pasamos"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(con|bien|genial|buenísimo|increíble)\\b",
+        "label": "say with whom"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Vale, la pasamos buenísimo en la playa. Fui con mis primos y con mi amigo Simón. Comimos mucho pescado y jugamos fútbol. Quiero ir otra vez.",
+    "focus": "p:pasarla-bien",
+    "requires": [
+      "c:fui",
+      "c:quiero",
+      "g:adjective-agreement",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:preterite-ar",
+      "g:preterite-er-ir",
+      "g:preterite-ser-ir-hacer",
+      "g:stem-boot",
+      "g:superlatives",
+      "g:verb-infinitive",
+      "l:amigo",
+      "l:bueno",
+      "l:comer",
+      "l:fútbol",
+      "l:ir",
+      "l:jugar",
+      "l:pasar",
+      "l:pescado",
+      "l:playa",
+      "l:primo",
+      "l:querer",
+      "l:ser",
+      "l:vez",
+      "p:masculine-plural-mixed",
+      "p:otro-no-article",
+      "p:pasarla-bien",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u26-08",
+    "unit": "u26",
+    "prompt": "Tell Mariana about the long wait at the doctor's office yesterday. Stress that it was hours and hours, and say what you did while you waited.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bhoras y horas\\b",
+        "label": "use horas y horas"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "preterito"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Mariana, ayer esperé horas y horas en el hospital. Hablé con una señora y miré el celular. Al final el doctor me vio a las seis. Estoy muy cansada.",
+    "focus": "p:horas-y-horas",
+    "requires": [
+      "c:al-final",
+      "c:ayer-anoche",
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:preterite-er-ir",
+      "l:ayer",
+      "l:cansado",
+      "l:celular",
+      "l:doctor",
+      "l:esperar",
+      "l:estar",
+      "l:final",
+      "l:hablar",
+      "l:hora",
+      "l:hospital",
+      "l:mirar",
+      "l:señora",
+      "l:ver",
+      "p:horas-y-horas",
+      "p:me-te-nos-objects",
+      "p:quantifiers-basic",
+      "p:telling-time"
+    ]
+  },
+  {
+    "id": "w-u26-09",
+    "unit": "u26",
+    "prompt": "Write to Hernando, an older friend you call tú. Tell him you no longer work at the bank, that you already sold your car, and that you have not found a new job yet.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bya no\\b",
+        "label": "say no longer: ya no trabajo"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bya (vendí|lo vendí)(?!\\w)",
+        "label": "say already: ya vendí"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\btodavía no\\b",
+        "label": "say not yet: todavía no"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Hernando, ya no trabajo en el banco. Ya vendí mi carro y ahora camino a todas partes. Todavía no encuentro otro trabajo, pero busco todos los días.",
+    "focus": "g:acabar-de-ya-todavia",
+    "requires": [
+      "c:todavia-no",
+      "c:trabajo-en",
+      "c:ya-no",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:preterite-er-ir",
+      "g:stem-boot",
+      "l:ahora",
+      "l:banco",
+      "l:buscar",
+      "l:caminar",
+      "l:carro",
+      "l:día",
+      "l:encontrar",
+      "l:partir",
+      "l:trabajar",
+      "l:trabajo",
+      "l:vender",
+      "p:otro-no-article",
+      "p:possessives-basic",
+      "p:todos-los-dias",
+      "p:veces-al"
+    ]
+  },
+  {
+    "id": "w-u26-10",
+    "unit": "u26",
+    "prompt": "Text your friend Vale about plans. The café opens a new menu soon. Say it opens in two days, and the big party is after the weekend.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bdentro de \\w+ \\w+",
+        "label": "use dentro de + time: dentro de dos días"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bdespués d(e|el) \\w+",
+        "label": "use después de for after something"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Vale, el café abre el menú nuevo dentro de dos días. La fiesta grande es después del fin de semana. Tú vienes, ¿verdad? Necesito tu ayuda.",
+    "focus": "p:dentro-de-vs-despues",
+    "requires": [
+      "c:no-cierto",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:abrir",
+      "l:ayuda",
+      "l:café",
+      "l:dentro",
+      "l:después",
+      "l:día",
+      "l:fiesta",
+      "l:fin",
+      "l:grande",
+      "l:menú",
+      "l:necesitar",
+      "l:nuevo",
+      "l:semana",
+      "l:ser",
+      "l:venir",
+      "l:verdad",
+      "p:dentro-de-vs-despues",
+      "p:possessives-basic",
+      "p:time-sequence-basic"
+    ]
+  },
+  {
+    "id": "w-u26-11",
+    "unit": "u26",
+    "prompt": "A friend your age just told you she spilled coffee on her boss at a meeting. Write her a short reply reacting to the story: surprise, then sympathy.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "¡?no me digas!?",
+        "label": "react with ¡No me digas!"
+      },
+      {
+        "type": "regex",
+        "pattern": "qué (oso|pena|de malas|mala suerte)",
+        "label": "show sympathy: ¡Qué oso! / ¡Qué de malas!"
+      },
+      {
+        "type": "question"
+      }
+    ],
+    "model": "¡No me digas! ¡Qué oso! ¿Y qué te dijo tu jefe? Yo no sé qué hacer en esa situación. Mañana hablamos con más tiempo. Ahora tengo que salir.",
+    "focus": "c:no-me-digas",
+    "requires": [
+      "c:no-me-digas",
+      "c:no-se",
+      "c:que-oso",
+      "c:tengo",
+      "c:tengo-que",
+      "g:demonstratives",
+      "g:indirect-questions",
+      "g:present-ar",
+      "g:preterite-irregular-strong",
+      "g:questions",
+      "g:verb-infinitive",
+      "g:yo-irregular",
+      "l:ahora",
+      "l:decir",
+      "l:hablar",
+      "l:hacer",
+      "l:jefe",
+      "l:mañana",
+      "l:oso",
+      "l:qué",
+      "l:saber",
+      "l:salir",
+      "l:situación",
+      "l:tener",
+      "l:tiempo",
+      "p:me-te-nos-objects",
+      "p:no-se-que-hacer",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u26-12",
+    "unit": "u26",
+    "prompt": "Tell Mariana about your day: you missed the bus, walked home in the rain and found the door locked. Use the phrase that wraps up a long story.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\btotal,? que\\b",
+        "label": "wrap up with total, que"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "preterito"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Mariana, perdí el bus y caminé hasta mi casa bajo la lluvia. Total, que llegué y la puerta estaba cerrada. Mi hermano no contestó el celular. ¡Imagínate!",
+    "focus": "c:total-que",
+    "requires": [
+      "c:imaginate",
+      "c:total-que",
+      "g:estar-participle",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "g:preterite-er-ir",
+      "g:preterite-spelling-stem",
+      "l:bus",
+      "l:caminar",
+      "l:casa",
+      "l:celular",
+      "l:cerrar",
+      "l:contestar",
+      "l:estar",
+      "l:hermano",
+      "l:imaginarse",
+      "l:llegar",
+      "l:lluvia",
+      "l:perder",
+      "l:puerta",
+      "l:total",
+      "p:possessives-basic"
+    ]
+  }
+]
