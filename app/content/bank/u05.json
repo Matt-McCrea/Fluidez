@@ -28685,5 +28685,287 @@
     "unit": "u05",
     "theme": "nothing, nobody, never (more)",
     "source": "gen"
+  },
+  {
+    "id": "u05-1216",
+    "es": "¿Tu prima o tú, quién es mayor?",
+    "en": "Your cousin or you, who is older? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:questions",
+      "g:ser-identity",
+      "l:mayor",
+      "l:prima",
+      "l:quién",
+      "l:ser",
+      "p:mayor-menor",
+      "p:possessives-basic",
+      "p:question-word-order",
+      "p:viejo-antiguo-mayor"
+    ],
+    "targets": [
+      "p:mayor-menor"
+    ],
+    "kind": "question",
+    "unit": "u05",
+    "theme": "family ages",
+    "source": "gen"
+  },
+  {
+    "id": "u05-1217",
+    "es": "¿Tu primo es mayor o menor?",
+    "en": "Is your cousin older or younger? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:mayor",
+      "l:menor",
+      "l:primo",
+      "l:ser",
+      "p:mayor-menor",
+      "p:possessives-basic",
+      "p:viejo-antiguo-mayor"
+    ],
+    "targets": [
+      "p:mayor-menor"
+    ],
+    "kind": "question",
+    "unit": "u05",
+    "theme": "family ages",
+    "source": "gen"
+  },
+  {
+    "id": "u05-1218",
+    "es": "¿Vale es mayor o menor?",
+    "en": "Is Vale older or younger?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:mayor",
+      "l:menor",
+      "l:ser",
+      "p:mayor-menor",
+      "p:viejo-antiguo-mayor"
+    ],
+    "targets": [
+      "p:mayor-menor"
+    ],
+    "kind": "question",
+    "unit": "u05",
+    "theme": "family ages",
+    "source": "gen"
+  },
+  {
+    "id": "u05-1219",
+    "es": "¿Tu tío es mayor o menor?",
+    "en": "Is your uncle older or younger? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:mayor",
+      "l:menor",
+      "l:ser",
+      "l:tío",
+      "p:mayor-menor",
+      "p:possessives-basic",
+      "p:viejo-antiguo-mayor"
+    ],
+    "targets": [
+      "p:mayor-menor"
+    ],
+    "kind": "question",
+    "unit": "u05",
+    "theme": "family ages",
+    "source": "gen"
+  },
+  {
+    "id": "u05-1220",
+    "es": "¿Tu novio es mayor o menor?",
+    "en": "Is your boyfriend older or younger? (to a woman)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:mayor",
+      "l:menor",
+      "l:novio",
+      "l:ser",
+      "p:mayor-menor",
+      "p:possessives-basic",
+      "p:viejo-antiguo-mayor"
+    ],
+    "targets": [
+      "p:mayor-menor"
+    ],
+    "kind": "question",
+    "unit": "u05",
+    "theme": "family ages",
+    "source": "gen"
+  },
+  {
+    "id": "u05-1221",
+    "es": "Mi primo es mayor, tiene treinta y cuatro años.",
+    "en": "My cousin is the older one, he's thirty-four.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:año",
+      "l:mayor",
+      "l:primo",
+      "l:ser",
+      "l:tener",
+      "p:mayor-menor",
+      "p:possessives-basic",
+      "p:tener-anos",
+      "p:viejo-antiguo-mayor"
+    ],
+    "targets": [
+      "p:mayor-menor"
+    ],
+    "kind": "dialogue",
+    "unit": "u05",
+    "theme": "family ages",
+    "source": "gen"
+  },
+  {
+    "id": "u05-1222",
+    "es": "Mi hermano es mayor, tiene cuarenta años.",
+    "en": "My brother is the older one, he's forty.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:año",
+      "l:hermano",
+      "l:mayor",
+      "l:ser",
+      "l:tener",
+      "p:mayor-menor",
+      "p:possessives-basic",
+      "p:tener-anos",
+      "p:viejo-antiguo-mayor"
+    ],
+    "targets": [
+      "p:mayor-menor"
+    ],
+    "kind": "statement",
+    "unit": "u05",
+    "theme": "family ages",
+    "source": "gen"
+  },
+  {
+    "id": "u05-1223",
+    "es": "Soy menor, mi hermana tiene treinta años.",
+    "en": "I'm the younger one, my sister is thirty.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:año",
+      "l:hermana",
+      "l:menor",
+      "l:ser",
+      "l:tener",
+      "p:mayor-menor",
+      "p:possessives-basic",
+      "p:tener-anos"
+    ],
+    "targets": [
+      "p:mayor-menor"
+    ],
+    "kind": "statement",
+    "unit": "u05",
+    "theme": "family ages",
+    "source": "gen"
+  },
+  {
+    "id": "u05-1224",
+    "es": "Mi hijo es menor, tiene cuatro años.",
+    "en": "My son is the younger one, he's four.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:año",
+      "l:hijo",
+      "l:menor",
+      "l:ser",
+      "l:tener",
+      "p:mayor-menor",
+      "p:possessives-basic",
+      "p:tener-anos"
+    ],
+    "targets": [
+      "p:mayor-menor"
+    ],
+    "kind": "statement",
+    "unit": "u05",
+    "theme": "family ages",
+    "source": "gen"
+  },
+  {
+    "id": "u05-1225",
+    "es": "Hernando es mayor, tiene setenta y un años.",
+    "en": "Hernando is the older one, he's seventy-one.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:gender-articles",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:año",
+      "l:mayor",
+      "l:ser",
+      "l:tener",
+      "p:mayor-menor",
+      "p:numbers-un-una",
+      "p:viejo-antiguo-mayor"
+    ],
+    "targets": [
+      "p:mayor-menor"
+    ],
+    "kind": "statement",
+    "unit": "u05",
+    "theme": "family ages",
+    "source": "gen"
+  },
+  {
+    "id": "u05-1226",
+    "es": "Mi abuela es mayor, mi abuelo es menor.",
+    "en": "My grandmother is the older one, my grandfather is the younger one.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:abuela",
+      "l:abuelo",
+      "l:mayor",
+      "l:menor",
+      "l:ser",
+      "p:mayor-menor",
+      "p:possessives-basic",
+      "p:viejo-antiguo-mayor"
+    ],
+    "targets": [
+      "p:mayor-menor"
+    ],
+    "kind": "statement",
+    "unit": "u05",
+    "theme": "family ages",
+    "source": "gen"
   }
 ]
