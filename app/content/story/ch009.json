@@ -2,7 +2,7 @@
   "id": "ch009",
   "unit": "u05",
   "title": "¿Es guapo?",
-  "text": "Lunes, seis de la mañana. La cafetera todavía no funciona, y hoy Tomás hace el tinto en el chocolatero de Rosa.\nTomás: A ver... el agua, el café... ¿y ahora qué?\nSuena el celular de Vale. Es una videollamada.\nVale: ¡Camila! ¡Y mamá! Tomás, son mi hermana Camila y mi mamá, desde Medellín.\nMamá: ¿Y él es el canadiense? A ver, Vale, ¿cómo es? ¿Es guapo?\nVale: Es... normal.\nCamila: ¿Normal? Mamá, es alto y es muy guapo.\nTomás: Buenos días, señora. Mucho gusto. Soy Tomás, el canadiense normal.\nSimón: ¡Normal! ¡Normal!\nCamila: Tomás, ¿y tienes hermanos?\nTomás: No, soy hijo único.\nMamá: ¿Y usted tiene novia, Tomás?\nVale: ¡Mamá!\nTomás: No, señora. Tengo un café, un loro y veintiocho días.\nCamila: Pues Vale tampoco tiene novio.\nVale: ¡Camila! Bueno, chao, chao.\nVale cuelga. Está roja.\nVale: ¡Ay, qué pena, Tomás! Mi mamá es así. ¿Y tu familia? ¿Hablas con tu papá?\nTomás: Los domingos, sí. Pero de Rosa nunca hablamos.\nA las siete llega Hernando, con un sobre grande.\nHernando: ¡Buenos días! ¡Traigo fotos de mis nietos!\nSimón: ¿Tiene novia? ¿Tiene novia?\nVale: Rosa también tenía fotos, Tomás. Hay un álbum allá, en el estante.",
+  "text": "Lunes, seis de la mañana. La cafetera todavía no funciona, y hoy Tomás hace el tinto en el chocolatero de Rosa.\nSuena el celular de Vale. Es una videollamada.\nVale: ¡Camila! ¡Y mamá! Tomás, son mi hermana Camila y mi mamá, desde Medellín.\nMamá: ¿Y él es el canadiense? A ver, Vale, ¿cómo es? ¿Es guapo?\nVale: Es... normal.\nCamila: ¿Normal? Mamá, es alto y es muy guapo.\nTomás: Buenos días, señora. Mucho gusto. Soy Tomás, el canadiense normal.\nSimón: ¡Normal! ¡Normal!\nCamila: Tomás, ¿y tienes hermanos?\nTomás: No, soy hijo único.\nMamá: ¿Y usted tiene novia, Tomás?\nVale: ¡Mamá!\nTomás: No, señora. Tengo un café, un loro y veintiocho días.\nCamila: Pues Vale tampoco tiene novio.\nVale: ¡Camila! Bueno, chao, chao.\nVale cuelga. Está roja.\nVale: ¡Ay, qué pena, Tomás! Mi mamá es así. ¿Y tu familia? ¿Hablas con tu papá?\nTomás: Los domingos, sí. Pero de Rosa nunca hablamos.\nA las siete llega Hernando, con fotos de sus nietos.\nSimón: ¿Tiene novia? ¿Tiene novia?\nVale: Rosa también tenía fotos, Tomás. Hay un álbum allá, en el estante.",
   "gloss": [
     {
       "es": "la cafetera",
@@ -19,10 +19,6 @@
     {
       "es": "A ver",
       "en": "Let's see"
-    },
-    {
-      "es": "¿y ahora qué?",
-      "en": "and now what?"
     },
     {
       "es": "Suena el celular",
@@ -67,10 +63,6 @@
     {
       "es": "Mi mamá es así",
       "en": "My mum is like that"
-    },
-    {
-      "es": "Traigo fotos",
-      "en": "I've brought photos"
     },
     {
       "es": "Rosa también tenía fotos",
@@ -183,7 +175,6 @@
     "g:gender-articles",
     "g:present-ar",
     "g:present-er-ir",
-    "g:questions",
     "g:ser-identity",
     "g:stem-boot",
     "g:yo-irregular",
@@ -192,8 +183,6 @@
     "p:quantifiers-basic"
   ],
   "lexemes": [
-    "l:agua",
-    "l:ahora",
     "l:allá",
     "l:alto",
     "l:bueno",
@@ -210,7 +199,6 @@
     "l:familia",
     "l:foto",
     "l:funcionar",
-    "l:grande",
     "l:guapo",
     "l:gusto",
     "l:hablar",
@@ -234,11 +222,9 @@
     "l:rojo",
     "l:ser",
     "l:señora",
-    "l:sobre",
     "l:sonar",
     "l:tener",
     "l:tinto",
-    "l:traer",
     "l:ver",
     "l:videollamada",
     "l:álbum",
