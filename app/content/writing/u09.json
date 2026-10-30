@@ -475,5 +475,233 @@
       "l:temprano",
       "p:telling-time"
     ]
+  },
+  {
+    "id": "w-u09-13",
+    "unit": "u09",
+    "prompt": "A client is waiting and you are running behind. Text Vale, your coworker, to say you are late and on your way. Use two short sentences.",
+    "minWords": 5,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "se me hizo tarde",
+        "label": "say it with se me hizo tarde"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bya voy\\b",
+        "label": "add ya voy"
+      }
+    ],
+    "model": "Perdón, se me hizo tarde. Ya voy.",
+    "focus": "g:reflexive-routine",
+    "requires": [
+      "c:perdon-disculpe",
+      "c:se-me-hizo-tarde",
+      "c:voy-vas",
+      "c:ya-voy",
+      "g:ir-a-plans",
+      "g:se-accidental",
+      "l:hacerse",
+      "l:ir",
+      "l:perdón",
+      "l:tarde"
+    ]
+  },
+  {
+    "id": "w-u09-14",
+    "unit": "u09",
+    "prompt": "Mariana, a friend your age, asks how you get ready when you have an early shift. Text her back in two sentences.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bme (levanto|despierto|ducho|baño|visto|lavo)\\b",
+        "label": "say what you do with me + verb"
+      },
+      {
+        "type": "containsWord",
+        "word": "temprano"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Me levanto temprano y me ducho con jabón. Me lavo los dientes también.",
+    "focus": "g:reflexive-routine",
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "l:diente",
+      "l:ducharse",
+      "l:jabón",
+      "l:lavarse",
+      "l:levantarse",
+      "l:temprano",
+      "p:lavarse-las-manos"
+    ]
+  },
+  {
+    "id": "w-u09-15",
+    "unit": "u09",
+    "prompt": "Vale asks whether you have the soap and the towel for the café bathroom. Answer in two short sentences and use lo or la so you don't repeat the nouns.",
+    "minWords": 6,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(lo|la) (tengo|compro|limpio|uso|necesito|traigo)\\b",
+        "label": "use lo or la before the verb"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "tengo el jabón",
+          "compro la toalla"
+        ],
+        "label": "don't repeat the noun after the verb"
+      }
+    ],
+    "model": "El jabón, lo tengo aquí. La toalla, la compro mañana.",
+    "focus": "g:direct-objects",
+    "requires": [
+      "c:tengo",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:yo-irregular",
+      "l:aquí",
+      "l:comprar",
+      "l:jabón",
+      "l:mañana",
+      "l:tener",
+      "l:toalla",
+      "p:aqui-ahi-alla"
+    ]
+  },
+  {
+    "id": "w-u09-16",
+    "unit": "u09",
+    "prompt": "Don Hernando, an older man you call usted, asks about the clock and the towels in the café. Reply in two short sentences, using lo and las so you don't repeat the nouns.",
+    "minWords": 6,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\blo (tengo|limpio|uso|compro|necesito)\\b",
+        "label": "use lo before the verb"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\blas (tengo|limpio|uso|compro|necesito)\\b",
+        "label": "use las before the verb"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "eres",
+          "tienes",
+          "quieres"
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "El reloj, lo tengo aquí, don Hernando. Las toallas, las compro hoy.",
+    "focus": "g:direct-objects",
+    "requires": [
+      "c:tengo",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:yo-irregular",
+      "l:aquí",
+      "l:comprar",
+      "l:hoy",
+      "l:reloj",
+      "l:tener",
+      "l:toalla",
+      "p:aqui-ahi-alla",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
+    ]
+  },
+  {
+    "id": "w-u09-17",
+    "unit": "u09",
+    "prompt": "You are leaving a note for the person who covers your shift on how the cleaning goes. Write two short sentences using antes de or después de plus a verb.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(antes de|después de) (barrer|planchar|limpiar|lavar|pagar|abrir|cerrar|comer|cenar)\\b",
+        "label": "use antes de or después de + a verb"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Antes de barrer, abro la puerta. Después de planchar, limpio el baño.",
+    "focus": "g:prep-infinitive",
+    "requires": [
+      "g:gender-articles",
+      "g:prep-infinitive",
+      "g:present-ar",
+      "g:present-er-ir",
+      "l:abrir",
+      "l:antes",
+      "l:barrer",
+      "l:baño",
+      "l:después",
+      "l:limpiar",
+      "l:planchar",
+      "l:puerta",
+      "p:time-sequence-basic"
+    ]
+  },
+  {
+    "id": "w-u09-18",
+    "unit": "u09",
+    "prompt": "Text your friend Mariana, who asks what you do when you get home after work. Answer in two sentences with al or después de plus a verb.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(al|después de|antes de) [a-zñáéíóú]+(ar|er|ir)\\b",
+        "label": "use al, antes de or después de + a verb"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bme (ducho|lavo|acuesto|baño)\\b",
+        "label": "include a me verb"
+      }
+    ],
+    "model": "Al llegar a casa, me ducho. Después de cenar, me lavo los dientes.",
+    "focus": "g:prep-infinitive",
+    "requires": [
+      "g:gender-articles",
+      "g:prep-infinitive",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "l:casa",
+      "l:cenar",
+      "l:después",
+      "l:diente",
+      "l:ducharse",
+      "l:lavarse",
+      "l:llegar",
+      "p:lavarse-las-manos",
+      "p:time-sequence-basic"
+    ]
   }
 ]
