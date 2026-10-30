@@ -751,5 +751,220 @@
       "p:poco-un-poco",
       "p:quantifiers-basic"
     ]
+  },
+  {
+    "id": "w-u15-13",
+    "unit": "u15",
+    "prompt": "Mariana is feeling low after a bad week. Text her, someone your age, to invite her to the café with you and say the coffee is on you.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(conmigo|contigo|para ti|para mí)\\b",
+        "label": "use a pronoun after a preposition (conmigo, para ti...)"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "conmigo",
+          "contigo"
+        ],
+        "label": "use conmigo or contigo"
+      },
+      {
+        "type": "question",
+        "label": "ask her to come"
+      }
+    ],
+    "model": "Mariana, ¿vienes conmigo al café hoy? Yo estoy tranquilo y tengo tiempo para ti. El café es para ti, y también hay pan. Para mí, hablar contigo es muy importante.",
+    "focus": "g:prep-pronouns",
+    "requires": [
+      "c:hay",
+      "c:tengo",
+      "c:tranquilo",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "g:prep-pronouns",
+      "g:ser-identity",
+      "g:stem-boot",
+      "g:yo-irregular",
+      "l:café",
+      "l:estar",
+      "l:hablar",
+      "l:hoy",
+      "l:importante",
+      "l:pan",
+      "l:ser",
+      "l:tener",
+      "l:tiempo",
+      "l:tranquilo",
+      "l:venir",
+      "p:es-adj-inf",
+      "p:ir-venir",
+      "p:para-inf",
+      "p:para-mi",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u15-14",
+    "unit": "u15",
+    "prompt": "Vale asks who the last slice of cake is for. Answer her, someone your age, in a few sentences.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bpara (ti|mí)\\b",
+        "label": "say who it is for (para ti, para mí)"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "para tú",
+          "para yo",
+          "con yo",
+          "con tú",
+          "para mi "
+        ],
+        "label": "ti and mí after a preposition, not tú or yo"
+      },
+      {
+        "type": "verbForm",
+        "inf": "estar",
+        "tense": "presente",
+        "person": "yo",
+        "label": "say how you are with estoy"
+      }
+    ],
+    "model": "Vale, el pan es para ti, no es para mí. Yo estoy muy contento hoy y tengo mucho tiempo. Contigo siempre estoy tranquilo. ¿Quieres comer conmigo en el café?",
+    "focus": "g:prep-pronouns",
+    "requires": [
+      "c:tengo",
+      "c:tranquilo",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:prep-pronouns",
+      "g:ser-identity",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "g:yo-irregular",
+      "l:café",
+      "l:comer",
+      "l:contento",
+      "l:estar",
+      "l:hoy",
+      "l:pan",
+      "l:querer",
+      "l:ser",
+      "l:siempre",
+      "l:tener",
+      "l:tiempo",
+      "l:tranquilo",
+      "p:frequency-scale",
+      "p:para-inf",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u15-15",
+    "unit": "u15",
+    "prompt": "Vale shows you the café's new menu and asks what you think. Reply to her, someone your age.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bme (parece|parecen)\\b",
+        "label": "give your opinion with me parece"
+      },
+      {
+        "type": "question",
+        "label": "ask what she thinks"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Vale, el menú nuevo me parece muy bueno. Los precios me parecen buenos, y el café con leche es perfecto. Pero la tarjeta es pequeña y me parece difícil. ¿Y a ti, te gusta?",
+    "focus": "g:parecer-quedar",
+    "requires": [
+      "c:a-mi-tambien",
+      "c:me-gusta",
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:parecer-quedar",
+      "g:prep-pronouns",
+      "g:present-er-ir",
+      "g:ser-identity",
+      "l:bueno",
+      "l:café",
+      "l:difícil",
+      "l:gustar",
+      "l:leche",
+      "l:menú",
+      "l:nuevo",
+      "l:parecer",
+      "l:pequeño",
+      "l:perfecto",
+      "l:precio",
+      "l:ser",
+      "l:tarjeta",
+      "p:con-sin",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u15-16",
+    "unit": "u15",
+    "prompt": "Your friend Tomás asks if his old jacket still fits. Answer him, someone your age.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bte (queda|quedan)\\b",
+        "label": "say how it fits him (te queda, te quedan)"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bme (parece|parecen)\\b",
+        "label": "add an opinion with me parece"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Tomás, la chaqueta me parece bonita, pero los zapatos te quedan pequeños y me parecen viejos. El color azul es perfecto para ti. ¿Es nueva?",
+    "focus": "g:parecer-quedar",
+    "requires": [
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:parecer-quedar",
+      "g:prep-pronouns",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:ser-identity",
+      "l:azul",
+      "l:bonito",
+      "l:chaqueta",
+      "l:color",
+      "l:nuevo",
+      "l:parecer",
+      "l:pequeño",
+      "l:perfecto",
+      "l:quedar",
+      "l:ser",
+      "l:viejo",
+      "l:zapatos",
+      "p:para-inf",
+      "p:talla-numero",
+      "p:viejo-antiguo-mayor"
+    ]
   }
 ]
