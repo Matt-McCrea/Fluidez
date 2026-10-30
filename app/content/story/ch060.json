@@ -2,7 +2,7 @@
   "id": "ch060",
   "unit": "u21",
   "title": "El peor enemigo del pez",
-  "text": "«Señor Herrera: le ofrezco un trato».\nTomás abrió la carta de Altamira delante de todos.\n«Abrimos un hotel en el oeste de la ciudad, con un café en la primera planta. Usted puede ser el director. Por su parte de La Esquina de Rosa, le ofrezco mucha plata. Le aconsejo una cosa: piénselo rápido».\nVale: ¿Un hotel en el oeste? Ese trato es una trampa.\nTomás: Ya lo sé. Leer no es firmar.\nVale: Te sugiero una cosa: tírala.\nTomás: ¿Me lo sugieres o me lo exiges?\nVale: Te lo exijo.\nTomás: Yo te ofrezco una sociedad, y tú me exiges cosas. Quiero que me tengas confianza.\nVale: ¡Y yo quiero que hables claro! ¿Quién se encarga de los papeles?\nTomás: ¡Yo me encargo! ¡Esa es mi responsabilidad!\nVale: ¿Y el pan? ¿Esa responsabilidad también es tuya?\nEn la mesa de la ventana, una pareja dejó de comer. Una señora de la planta de arriba abrió la puerta.\nHernando se levantó.\nHernando: Esto, Rosa lo prohibía. Y yo también lo prohíbo.\nJhon Fredy: ¿Puedo sugerir algo? Altamira es un león, y nosotros somos un pez.\nHernando: Los leones no comen pescado, joven.\nJhon Fredy: Exacto. El peor enemigo de un pez es otro pez.\nHernando: Le aconsejo un pan, joven. Con pan en la boca no hay teorías.\nLa pareja de la ventana pagó y salió.\nVale: Necesito tu ayuda en la cocina, Tomás, no tus planes. Una sociedad es trabajo.\nTomás: Y yo necesito tu ayuda con Altamira, no tus órdenes.\nSimón: ¡Te lo exijo! ¡Te lo exijo!\nVale entró en la cocina. La carta se quedó en la mesa, al lado del tinto frío.\nEra el peor día del año, y todavía eran las nueve de la mañana.",
+  "text": "«Señor Herrera: le ofrezco un trato».\nTomás abrió la carta de Altamira delante de todos.\n«Abrimos un hotel en el oeste de la ciudad, con un café en la primera planta. Usted puede ser el director. Por su parte de La Esquina de Rosa, le ofrezco mucha plata.»\nVale: ¿Un hotel en el oeste? Ese trato es una trampa.\nTomás: Ya lo sé. Leer no es firmar.\nVale: Te sugiero una cosa: tírala.\nTomás: ¿Me lo sugieres o me lo exiges?\nVale: Te lo exijo.\nTomás: Yo te ofrezco una sociedad, y tú me exiges cosas. Quiero que me tengas confianza.\nVale: ¡Y yo quiero que hables claro! ¿Quién se encarga de los papeles?\nTomás: ¡Yo me encargo! ¡Esa es mi responsabilidad!\nEn la mesa de la ventana, una pareja dejó de comer. Una señora de la planta de arriba abrió la puerta.\nHernando se levantó.\nHernando: Esto, Rosa lo prohibía. Y yo también lo prohíbo.\nJhon Fredy: ¿Puedo sugerir algo? Altamira es un león, y nosotros somos un pez.\nHernando: Los leones no comen pescado, joven.\nJhon Fredy: Exacto. El peor enemigo de un pez es otro pez.\nLa pareja de la ventana pagó y salió.\nVale: Necesito tu ayuda en la cocina, Tomás, no tus planes.\nTomás: Y yo necesito tu ayuda con Altamira, no tus órdenes.\nSimón: ¡Te lo exijo! ¡Te lo exijo!\nVale entró en la cocina. La carta se quedó en la mesa, al lado del tinto frío.\nEra el peor día del año, y todavía eran las nueve de la mañana.",
   "gloss": [
     {
       "es": "«Señor Herrera: le ofrezco un trato».",
@@ -11,10 +11,6 @@
     {
       "es": "en la primera planta",
       "en": "on the first floor"
-    },
-    {
-      "es": "Le aconsejo una cosa: piénselo rápido.",
-      "en": "I advise you one thing: think about it quickly."
     },
     {
       "es": "Ese trato es una trampa.",
@@ -51,14 +47,6 @@
     {
       "es": "Los leones no comen pescado, joven.",
       "en": "Lions don't eat fish, young man."
-    },
-    {
-      "es": "Le aconsejo un pan, joven. Con pan en la boca no hay teorías.",
-      "en": "I advise a bread roll, young man. With bread in your mouth there are no theories."
-    },
-    {
-      "es": "Una sociedad es trabajo.",
-      "en": "A partnership is work."
     },
     {
       "es": "todavía eran las nueve de la mañana",
@@ -154,23 +142,19 @@
     "c:bien-y-tu",
     "c:claro-listo",
     "c:era",
-    "c:hay",
     "c:puede-ser",
     "c:puedo",
     "c:quiero",
     "g:commands-tu",
-    "g:commands-usted",
     "g:commands-with-pronouns",
     "g:demonstratives",
     "g:direct-objects",
     "g:double-pronouns",
     "g:gender-articles",
-    "g:hay-vs-esta",
     "g:imperfect-habitual",
     "g:imperfect-states",
     "g:indirect-objects",
     "g:por-para-1",
-    "g:possessives-stressed",
     "g:present-ar",
     "g:present-er-ir",
     "g:preterite-ar",
@@ -186,7 +170,6 @@
     "g:verb-infinitive",
     "g:yo-irregular",
     "p:cerca-de",
-    "p:de-owner",
     "p:dejar-de-inf",
     "p:demonstratives-basic",
     "p:indefinites-basic",
@@ -206,11 +189,9 @@
   ],
   "lexemes": [
     "l:abrir",
-    "l:aconsejar",
     "l:arriba",
     "l:ayuda",
     "l:año",
-    "l:boca",
     "l:café",
     "l:carta",
     "l:ciudad",
@@ -244,11 +225,9 @@
     "l:ofrecer",
     "l:orden",
     "l:pagar",
-    "l:pan",
     "l:papel",
     "l:pareja",
     "l:parte",
-    "l:pensar",
     "l:peor",
     "l:pescado",
     "l:pez",
@@ -262,7 +241,6 @@
     "l:querer",
     "l:quién",
     "l:responsabilidad",
-    "l:rápido",
     "l:saber",
     "l:salir",
     "l:ser",
@@ -271,10 +249,8 @@
     "l:sociedad",
     "l:sugerir",
     "l:tener",
-    "l:teoría",
     "l:tinto",
     "l:tirar",
-    "l:trabajo",
     "l:trampa",
     "l:trato",
     "l:ventana"
