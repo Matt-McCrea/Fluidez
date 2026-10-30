@@ -1,0 +1,45 @@
+{
+  "node": "g:reporting-verbs-mood",
+  "hook": {
+    "line": "When someone tells you what the lawyer said, you need to know one thing: was it news, or was it an instruction? Spanish marks the difference in the verb ending.",
+    "es": "Me advirtió que no fuera.",
+    "en": "He warned me not to go."
+  },
+  "examples": [
+    { "es": "Me advirtió que era peligroso.", "en": "He warned me it was dangerous." },
+    { "es": "Me advirtió que no fuera.", "en": "He warned me not to go." },
+    { "es": "Insistió en que pagáramos.", "en": "She insisted that we pay." },
+    { "es": "Me recordó que la reunión era a las tres.", "en": "He reminded me that the meeting was at three." },
+    { "es": "Me recordó que llamara a Vale.", "en": "He reminded me to call Vale." },
+    { "es": "Mariana me dijo que el acta estaba lista.", "en": "Mariana told me the minutes were ready." }
+  ],
+  "rule": "Verbs like *advertir*, *recordar*, *decir* and *insistir en* can do two jobs after *que*.\n\nIf they pass on **news**, the verb after *que* is a normal one: *Me advirtió que era peligroso* (it was dangerous).\n\nIf they push someone to **act**, the verb takes the \"opposite\" ending, the past one: *Me advirtió que no fuera* (not to go), *Insistió en que pagáramos*, *Me recordó que llamara a Vale*.\n\nSo ask: is the second half a fact, or something someone should do? English changes the structure (\"to go\"). Spanish keeps *que* and changes the verb.",
+  "smallPrint": "Teachers call this mood selection: reporting verbs take the indicative to inform and the subjunctive to influence. After a past verb, the subjunctive is the imperfect one.",
+  "readAndPick": [
+    { "es": "Me advirtió que no fuera.", "options": ["He warned me that he wasn't going.", "He warned me not to go.", "He warned me that nobody went."], "answer": 1 },
+    { "es": "Me advirtió que era peligroso.", "options": ["He warned me not to do it.", "He asked me to be careful.", "He warned me it was dangerous."], "answer": 2 },
+    { "es": "Insistió en que pagáramos.", "options": ["She insisted that we pay.", "She insisted that we had paid.", "She insisted that she would pay."], "answer": 0 },
+    { "es": "Me recordó que la reunión era a las tres.", "options": ["He reminded me to hold the meeting at three.", "He reminded me that the meeting was at three.", "He reminded me to be at the meeting at three."], "answer": 1 },
+    { "es": "Me recordó que llamara a Vale.", "options": ["He reminded me that Vale called.", "He reminded me that I called Vale.", "He reminded me to call Vale."], "answer": 2 },
+    { "es": "Mariana me dijo que el acta estaba lista.", "options": ["Mariana told me the minutes were ready.", "Mariana told me to get the minutes ready.", "Mariana asked me if the minutes were ready."], "answer": 0 },
+    { "es": "Mariana me dijo que revisara el acta.", "options": ["Mariana told me the minutes were checked.", "Mariana told me she had checked the minutes.", "Mariana told me to check the minutes."], "answer": 2 },
+    { "es": "Nos advirtieron que el tanque estaba vacío.", "options": ["They warned us to empty the tank.", "They warned us the tank was empty.", "They warned us not to use the tank."], "answer": 1 },
+    { "es": "Vale insistió en que probáramos el pastel.", "options": ["Vale insisted that we try the cake.", "Vale insisted that we tried the cake.", "Vale insisted that the cake was good."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick the right form and type the sentence: *Me advirtió que no ___.* (fue / fuera) Meaning: He warned me not to go.", "answer": "Me advirtió que no fuera.", "accept": [], "why": "He is telling me what to do, so the verb takes the \"opposite\" ending: *fuera*." },
+    { "prompt": "Type in Spanish: He warned me it was dangerous.", "answer": "Me advirtió que era peligroso.", "accept": [], "why": "It is news, so the verb stays normal: *era*." },
+    { "prompt": "Type in Spanish: She insisted that we pay.", "answer": "Insistió en que pagáramos.", "accept": ["Ella insistió en que pagáramos."], "why": "She wants us to act, so *pagáramos*, and *insistir* needs *en que*." },
+    { "prompt": "Type in Spanish: He reminded me that the meeting was at three.", "answer": "Me recordó que la reunión era a las tres.", "accept": [], "why": "A fact about the meeting, so *era*." },
+    { "prompt": "Type in Spanish: He reminded me to call Vale.", "answer": "Me recordó que llamara a Vale.", "accept": [], "why": "A reminder to do something takes *llamara*." },
+    { "prompt": "Turn the news into an order: *Mariana me dijo que el acta estaba lista.* Say: Mariana told me to check the minutes.", "answer": "Mariana me dijo que revisara el acta.", "accept": ["Mariana me dijo que leyera el acta."], "why": "An order takes the \"opposite\" ending: *revisara*." },
+    { "prompt": "Type in Spanish: They warned us the tank was empty.", "answer": "Nos advirtieron que el tanque estaba vacío.", "accept": [], "why": "It is news about the tank, so *estaba*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Me recordó que llamo a Vale.", "right": "Me recordó que llamara a Vale.", "why": "Almost. A reminder to do something takes the past \"opposite\" form, *llamara*." },
+    { "wrong": "Me advirtió que no iba.", "right": "Me advirtió que no fuera.", "why": "Almost. *No iba* means he warned that he himself wasn't going; for \"not to go\" use *fuera*." },
+    { "wrong": "Insistió en que pagamos.", "right": "Insistió en que pagáramos.", "why": "Almost. When she wants us to pay, the verb takes *pagáramos*." },
+    { "wrong": "Me recordó que la reunión fuera a las tres.", "right": "Me recordó que la reunión era a las tres.", "why": "Almost. The meeting time is a fact, so the verb stays normal: *era*." }
+  ],
+  "personal": "Think of something a friend or relative once warned you about. Say it with *Me advirtió que…* and decide: fact (*era*) or order (*no fuera*)."
+}

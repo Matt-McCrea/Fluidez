@@ -1,0 +1,43 @@
+{
+  "node": "p:fijarse-reparar-en",
+  "hook": {
+    "line": "Detectives, witnesses and gossips all live on one question: did you notice? Spanish says it with *fijarse*, and it always wants *en*.",
+    "es": "¿Te fijaste en el color del carro?",
+    "en": "Did you notice the colour of the car? (to a friend)"
+  },
+  "examples": [
+    { "es": "¿Te fijaste en el color del carro?", "en": "Did you notice the colour of the car? (to a friend)" },
+    { "es": "No me fijé en la placa.", "en": "I didn't notice the number plate." },
+    { "es": "Nadie reparó en el detalle.", "en": "Nobody noticed the detail." },
+    { "es": "Fíjate en la puerta: está abierta.", "en": "Notice the door: it's open. (to a friend)" },
+    { "es": "¿Se fijó usted en la hora?", "en": "Did you notice the time? (formal)" },
+    { "es": "Nos fijamos en que nadie hablaba.", "en": "We noticed that nobody was talking." }
+  ],
+  "rule": "English says \"notice the colour\". Spanish says *fijarse en el color*: the word *en* always comes before the thing you noticed.\n\n*Fijarse* is reflexive, so it carries *me, te, se, nos*: *me fijé, te fijaste, se fijó*. A command is *fíjate en…* (to a friend) or *fíjese en…* (formal).\n\n*Reparar en* means the same, a little more formal, and it is not reflexive: *nadie reparó en el detalle*.\n\nBoth also take *en que* plus a full clause: *me fijé en que…*.",
+  "smallPrint": "Teachers call these prepositional verbs: the verb and its *en* belong together. *Reparar en* (notice) has nothing to do with *reparar* (fix).",
+  "readAndPick": [
+    { "es": "¿Te fijaste en el color del carro?", "options": ["Did you (a friend) notice the colour of the car?", "Did he notice the colour of the car?", "Did you (formal) notice the colour of the car?"], "answer": 0 },
+    { "es": "No me fijé en la placa.", "options": ["She didn't notice the number plate.", "You didn't notice the number plate.", "I didn't notice the number plate."], "answer": 2 },
+    { "es": "Nadie reparó en el detalle.", "options": ["Nobody repaired the detail.", "Nobody noticed the detail.", "Nobody forgot the detail."], "answer": 1 },
+    { "es": "Fíjate en la puerta: está abierta.", "options": ["I noticed the door: it's open.", "Notice the door: it's open. (formal)", "Notice the door: it's open. (to a friend)"], "answer": 2 },
+    { "es": "¿Se fijó usted en la hora?", "options": ["Did you (formal) notice the time?", "Did you (a friend) notice the time?", "Did I notice the time?"], "answer": 0 },
+    { "es": "Nos fijamos en que nadie hablaba.", "options": ["They noticed that nobody was talking.", "I noticed that nobody was talking.", "We noticed that nobody was talking."], "answer": 2 },
+    { "es": "Ella no se fijó en nosotros.", "options": ["She didn't notice us.", "We didn't notice her.", "She didn't notice me."], "answer": 0 },
+    { "es": "Fíjese en el sello, por favor.", "options": ["Look at the stamp, please. (to a friend)", "Look at the stamp, please. (formal)", "I noticed the stamp, please."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick the right form and type the sentence (to a friend): *¿Te ___ en el color del carro?* (fijaste / fijé)", "answer": "¿Te fijaste en el color del carro?", "accept": [], "why": "*Te* goes with *fijaste*, the form for a friend." },
+    { "prompt": "Type in Spanish: I didn't notice the number plate.", "answer": "No me fijé en la placa.", "accept": [], "why": "*Fijarse* is reflexive: *me fijé*, then *en*." },
+    { "prompt": "Type in Spanish: Nobody noticed the detail.", "answer": "Nadie reparó en el detalle.", "accept": ["Nadie se fijó en el detalle."], "why": "*Reparar en* means notice and has no *se*." },
+    { "prompt": "Type in Spanish (to a friend): Notice the door.", "answer": "Fíjate en la puerta.", "accept": [], "why": "The friend command is *fíjate*, and *en* comes before the thing." },
+    { "prompt": "Make it formal: *Fíjate en la puerta.* Say: Notice the door. (formal)", "answer": "Fíjese en la puerta.", "accept": [], "why": "The formal command is *fíjese*." },
+    { "prompt": "Type in Spanish: Did you (formal) notice the time?", "answer": "¿Se fijó en la hora?", "accept": ["¿Se fijó usted en la hora?"], "why": "*Usted* takes *se fijó*." },
+    { "prompt": "Type in Spanish: We didn't notice the stamp.", "answer": "No nos fijamos en el sello.", "accept": [], "why": "For *nosotros* the reflexive word is *nos*." }
+  ],
+  "pitfalls": [
+    { "wrong": "¿Te fijaste el color del carro?", "right": "¿Te fijaste en el color del carro?", "why": "Almost. English drops the preposition, but Spanish keeps *en*." },
+    { "wrong": "No fijé en la placa.", "right": "No me fijé en la placa.", "why": "Almost. *Fijarse* is reflexive, so it needs *me*." },
+    { "wrong": "Nadie se reparó en el detalle.", "right": "Nadie reparó en el detalle.", "why": "Almost. *Reparar en* is not reflexive: no *se*." }
+  ],
+  "personal": "Say one thing you noticed today, big or small, with *Me fijé en…*."
+}

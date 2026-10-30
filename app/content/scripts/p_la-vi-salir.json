@@ -1,0 +1,43 @@
+{
+  "node": "p:la-vi-salir",
+  "hook": {
+    "line": "Witnesses never say \"I saw that she left\". They say \"I saw her leave\", and Spanish packs that into three tight words.",
+    "es": "La vi salir del edificio.",
+    "en": "I saw her leave the building."
+  },
+  "examples": [
+    { "es": "La vi salir del edificio.", "en": "I saw her leave the building." },
+    { "es": "Lo oí llegar a las tres.", "en": "I heard him come in at three." },
+    { "es": "Nunca la había visto llorar.", "en": "I'd never seen her cry." },
+    { "es": "Los vimos discutir en la calle.", "en": "We saw them (men) argue in the street." },
+    { "es": "¿Lo viste entrar?", "en": "Did you see him go in? (to a friend)" },
+    { "es": "Las oímos hablar de Altamira.", "en": "We heard them (women) talk about Altamira." }
+  ],
+  "rule": "English: \"I saw her leave\". Spanish keeps the same order of ideas: *la vi salir*.\n\nThe person you saw or heard becomes a small word before *vi* or *oí*: *lo* (him), *la* (her), *los*, *las* (them), *te*, *me*. After it comes the plain *-r* verb for what they did.\n\nThe small word goes before the seeing verb, even in *había visto*: *nunca la había visto llorar*.\n\nIn Latin America, use *lo* and *la*, not *le*.",
+  "smallPrint": "Teachers call *ver* and *oír* plus an infinitive a perception construction: the pronoun is the object of the first verb and the subject of the infinitive.",
+  "readAndPick": [
+    { "es": "La vi salir del edificio.", "options": ["I saw him leave the building.", "I saw them leave the building.", "I saw her leave the building."], "answer": 2 },
+    { "es": "Lo oí llegar a las tres.", "options": ["I heard her come in at three.", "I heard him come in at three.", "He heard me come in at three."], "answer": 1 },
+    { "es": "Los vimos discutir en la calle.", "options": ["We saw them argue in the street.", "We saw him argue in the street.", "They saw us argue in the street."], "answer": 0 },
+    { "es": "Las oímos hablar de Altamira.", "options": ["We heard her talk about Altamira.", "They heard us talk about Altamira.", "We heard them (women) talk about Altamira."], "answer": 2 },
+    { "es": "¿Lo viste entrar?", "options": ["Did you see her go in?", "Did you see him go in?", "Did he see you go in?"], "answer": 1 },
+    { "es": "Nunca la había visto llorar.", "options": ["I'd never seen him cry.", "I'd never seen her laugh.", "I'd never seen her cry."], "answer": 2 },
+    { "es": "Te vi cruzar la calle.", "options": ["I saw you cross the street.", "You saw me cross the street.", "I saw her cross the street."], "answer": 0 },
+    { "es": "Me oyeron cantar en la cocina.", "options": ["I heard them sing in the kitchen.", "They heard me sing in the kitchen.", "They heard you sing in the kitchen."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick the right word and type the sentence (you saw a woman): *___ vi salir del edificio.* (La / Lo)", "answer": "La vi salir del edificio.", "accept": [], "why": "*La* stands for a woman." },
+    { "prompt": "Type in Spanish: I heard him come in at three.", "answer": "Lo oí llegar a las tres.", "accept": [], "why": "*Lo* is him, and the verb after *oí* stays plain: *llegar*." },
+    { "prompt": "Type in Spanish: We saw them (men) argue in the street.", "answer": "Los vimos discutir en la calle.", "accept": [], "why": "*Los* stands for several men." },
+    { "prompt": "Type in Spanish (to a friend): Did you see her go in?", "answer": "¿La viste entrar?", "accept": [], "why": "*La* goes before *viste*, and *entrar* stays plain." },
+    { "prompt": "Make it about a man: *La vi salir del edificio.* Say: I saw him leave the building.", "answer": "Lo vi salir del edificio.", "accept": [], "why": "Only the small word changes: *la* becomes *lo*." },
+    { "prompt": "Make it about you (a friend): *La vi salir del edificio.* Say: I saw you leave the building.", "answer": "Te vi salir del edificio.", "accept": [], "why": "*Te* is you, a friend, and it goes before *vi*." },
+    { "prompt": "Type in Spanish: I'd never seen him cry.", "answer": "Nunca lo había visto llorar.", "accept": ["No lo había visto llorar nunca"], "why": "The small word sits before *había visto*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Vi ella salir del edificio.", "right": "La vi salir del edificio.", "why": "Almost. Spanish uses the small word *la* before the verb, not *ella* after it." },
+    { "wrong": "Lo oí llegué a las tres.", "right": "Lo oí llegar a las tres.", "why": "Almost. The thing they did stays as the plain *-r* verb." },
+    { "wrong": "Nunca había la visto llorar.", "right": "Nunca la había visto llorar.", "why": "Almost. The small word goes before the whole *había visto*." }
+  ],
+  "personal": "Say something you often hear or see someone do at home or at work, with *Lo* or *La* before the verb."
+}

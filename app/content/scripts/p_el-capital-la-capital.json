@@ -1,0 +1,43 @@
+{
+  "node": "p:el-capital-la-capital",
+  "hook": {
+    "line": "Altamira has money, and the city has a capital. Same word, but one little article tells the listener which you mean.",
+    "es": "Altamira tiene mucho capital.",
+    "en": "Altamira has a lot of capital."
+  },
+  "examples": [
+    { "es": "Bogotá es la capital de Colombia.", "en": "Bogotá is the capital of Colombia." },
+    { "es": "La empresa necesita más capital.", "en": "The company needs more capital." },
+    { "es": "El capital inicial fue de cien millones.", "en": "The starting capital was a hundred million." },
+    { "es": "La capital de Antioquia es Medellín.", "en": "The capital of Antioquia is Medellín." },
+    { "es": "Altamira tiene mucho capital.", "en": "Altamira has a lot of capital." },
+    { "es": "Para comprar el edificio necesitamos el capital.", "en": "To buy the building we need the capital." }
+  ],
+  "rule": "English uses \"capital\" for both, Spanish splits them by gender.\n\n*La capital* is the main city: *la capital de Colombia*.\n\n*El capital* is money to invest: *el capital inicial*, *mucho capital*.\n\nSo the article is the clue. When there is no article (*más capital*), the meaning is already clear from the sentence.",
+  "smallPrint": "Teachers call these nouns that change meaning with gender, like *el policía* (the officer) and *la policía* (the police force).",
+  "readAndPick": [
+    { "es": "Bogotá es la capital de Colombia.", "options": ["Bogotá is the capital (the city) of Colombia.", "Bogotá is the capital (the money) of Colombia."], "answer": 0 },
+    { "es": "El capital inicial fue de cien millones.", "options": ["The starting capital (the city) was a hundred million.", "The starting capital (the money) was a hundred million."], "answer": 1 },
+    { "es": "La capital de Antioquia es Medellín.", "options": ["The capital (the money) of Antioquia is Medellín.", "The capital (the city) of Antioquia is Medellín."], "answer": 1 },
+    { "es": "Altamira tiene mucho capital.", "options": ["Altamira has a lot of capital (the money).", "Altamira has a lot of capital (the city)."], "answer": 0 },
+    { "es": "Para comprar el edificio necesitamos el capital.", "options": ["To buy the building we need the capital (the city).", "To buy the building we need the capital (the money)."], "answer": 1 },
+    { "es": "La capital es muy grande y siempre hay tráfico.", "options": ["The capital (the city) is very big and there is always traffic.", "The capital (the money) is very big and there is always traffic."], "answer": 0 },
+    { "es": "El capital de la empresa bajó este año.", "options": ["The company's capital (the city) fell this year.", "The company's capital (the money) fell this year."], "answer": 1 },
+    { "es": "La capital de Perú es Lima.", "options": ["The capital (the money) of Peru is Lima.", "The capital (the city) of Peru is Lima."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick the right article and type the sentence: *Bogotá es ___ capital de Colombia.* (la / el)", "answer": "Bogotá es la capital de Colombia.", "accept": [], "why": "The city is *la capital*." },
+    { "prompt": "Pick the right article and type the sentence (money): *___ capital inicial fue de cien millones.* (El / La)", "answer": "El capital inicial fue de cien millones.", "accept": [], "why": "Money is *el capital*." },
+    { "prompt": "Type in Spanish: The capital of Antioquia is Medellín.", "answer": "La capital de Antioquia es Medellín.", "accept": [], "why": "A city, so *la capital*." },
+    { "prompt": "Type in Spanish: To buy the building we need the capital (money).", "answer": "Para comprar el edificio necesitamos el capital.", "accept": [], "why": "Money, so *el capital*." },
+    { "prompt": "Type in Spanish: Altamira has a lot of capital (money).", "answer": "Altamira tiene mucho capital.", "accept": [], "why": "*Capital* as money is masculine, so *mucho*." },
+    { "prompt": "Type in Spanish: The capital (the city) is very big.", "answer": "La capital es muy grande.", "accept": [], "why": "The city is *la capital*." },
+    { "prompt": "Say it about money, not a city: *La capital de la empresa bajó este año.* Say: The company's capital (money) fell this year.", "answer": "El capital de la empresa bajó este año.", "accept": [], "why": "Only the article changes, and it changes the meaning." }
+  ],
+  "pitfalls": [
+    { "wrong": "El capital de Colombia es Bogotá.", "right": "La capital de Colombia es Bogotá.", "why": "Almost. A city is feminine: *la capital*." },
+    { "wrong": "La capital inicial fue de cien millones.", "right": "El capital inicial fue de cien millones.", "why": "Almost. Money is masculine: *el capital*." },
+    { "wrong": "Altamira tiene mucha capital.", "right": "Altamira tiene mucho capital.", "why": "Almost. For money, *capital* is masculine, so *mucho*." }
+  ],
+  "personal": "Name the capital of a country you know with *La capital de … es …*, then say whether you have a lot of *capital* or not."
+}

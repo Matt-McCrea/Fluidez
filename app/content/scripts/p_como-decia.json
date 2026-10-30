@@ -1,0 +1,43 @@
+{
+  "node": "p:como-decia",
+  "hook": {
+    "line": "Someone interrupts, the talk wanders off, and you want your point back without sounding annoyed. Spanish has a polite handle for that.",
+    "es": "Como decía, me gustaría empezar por la historia del café.",
+    "en": "As I was saying, I'd like to start with the history of the café."
+  },
+  "examples": [
+    { "es": "Como decía, me gustaría empezar por la historia del café.", "en": "As I was saying, I'd like to start with the history of the café." },
+    { "es": "Como te estaba diciendo, el barrio ha cambiado mucho.", "en": "As I was telling you (a friend), the neighbourhood has changed a lot." },
+    { "es": "Volviendo a lo de antes, ¿vienes o no?", "en": "Going back to what we were saying, are you coming or not? (to a friend)" },
+    { "es": "Como les decía, la reunión es a las tres.", "en": "As I was telling you all, the meeting is at three." },
+    { "es": "Como le decía, no vamos a vender.", "en": "As I was telling you (formal), we are not going to sell." },
+    { "es": "Como me decía Vale, el horno no funciona.", "en": "As Vale was telling me, the oven isn't working." }
+  ],
+  "rule": "To pick up a thought after an interruption, start with *como* plus a past \"was saying\": *como decía* (as I was saying) or *como te estaba diciendo* (as I was telling you).\n\nThe little word shows who you were talking to: *te* (a friend), *le* (one person, formal), *les* (you all), *me* (they were telling you). Either *decía* or *estaba diciendo* works.\n\nTo go back to a topic, use *volviendo a* plus the topic: *volviendo a lo de antes* (going back to what we were saying).\n\nThen simply carry on with your sentence.",
+  "smallPrint": "Teachers call this a discourse marker that resumes a topic. The imperfect says the talking was already under way.",
+  "readAndPick": [
+    { "es": "Como te estaba diciendo, no voy a vender.", "options": ["As I was telling you (a friend), I'm not going to sell.", "As I was telling you (formal), I'm not going to sell.", "As I was telling you all, I'm not going to sell."], "answer": 0 },
+    { "es": "Como le decía, la reunión es mañana.", "options": ["As I was telling you all, the meeting is tomorrow.", "As I was telling you (a friend), the meeting is tomorrow.", "As I was telling you (formal), the meeting is tomorrow."], "answer": 2 },
+    { "es": "Como les decía, el café cierra a las seis.", "options": ["As I was telling you all, the café closes at six.", "As I was telling you (formal), the café closes at six.", "As I was telling you (a friend), the café closes at six."], "answer": 0 },
+    { "es": "Volviendo a lo de antes, ¿vienes o no?", "options": ["Going back to what we were saying, are you coming or not?", "Let's change the subject, are you coming or not?", "As you were saying, are you coming or not?"], "answer": 0 },
+    { "es": "Como decía, me gustaría empezar por el principio.", "options": ["As you said, I'd like to start at the beginning.", "As I was saying, I'd like to start at the beginning.", "As they say, I'd like to start at the beginning."], "answer": 1 },
+    { "es": "Como me decía Vale, el horno no funciona.", "options": ["As I was telling Vale, the oven isn't working.", "As Vale was telling you, the oven isn't working.", "As Vale was telling me, the oven isn't working."], "answer": 2 },
+    { "es": "Como te decía, ya hablé con el dueño.", "options": ["As I was telling you (a friend), I already spoke with the owner.", "As I was telling you (a friend), I'm going to speak with the owner.", "As you were telling me, I already spoke with the owner."], "answer": 0 },
+    { "es": "Como decía mi abuela, hay que ser amable.", "options": ["As my grandmother says, you have to be kind.", "As my grandmother used to say, you have to be kind.", "As I told my grandmother, you have to be kind."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick the right form and type the sentence: *Como ___, me gustaría empezar.* (decía / dije)", "answer": "Como decía, me gustaría empezar.", "accept": [], "why": "*Decía* says you were already in the middle of talking." },
+    { "prompt": "Type in Spanish: As I was saying, the café opens at eight.", "answer": "Como decía, el café abre a las ocho.", "accept": ["Como estaba diciendo, el café abre a las ocho."], "why": "*Como decía* picks the thought back up, then the sentence carries on." },
+    { "prompt": "Type in Spanish (to a friend): As I was telling you, I'm not going to sell.", "answer": "Como te estaba diciendo, no voy a vender.", "accept": ["Como te decía, no voy a vender."], "why": "*Te* shows you are talking to a friend." },
+    { "prompt": "Type in Spanish (to a group): As I was telling you all, the meeting is at three.", "answer": "Como les decía, la reunión es a las tres.", "accept": ["Como les estaba diciendo, la reunión es a las tres."], "why": "*Les* is for several people." },
+    { "prompt": "Type in Spanish (to a friend): Going back to what we were saying, are you coming?", "answer": "Volviendo a lo de antes, ¿vienes?", "accept": ["Volviendo a lo de antes, ¿vienes o no?"], "why": "*Volviendo a lo de antes* takes you back to the old topic." },
+    { "prompt": "Make it formal (to one person): *Como te decía, ya hablé con el dueño.* Say: As I was telling you (formal), I already spoke with the owner.", "answer": "Como le decía, ya hablé con el dueño.", "accept": ["Como le estaba diciendo, ya hablé con el dueño."], "why": "Only *te* changes to *le* for a formal *usted*." },
+    { "prompt": "Type in Spanish: As Vale was telling me, the oven isn't working.", "answer": "Como me decía Vale, el horno no funciona.", "accept": ["Como me estaba diciendo Vale, el horno no funciona."], "why": "*Me* shows that Vale was telling you." }
+  ],
+  "pitfalls": [
+    { "wrong": "Como decir, me gustaría empezar.", "right": "Como decía, me gustaría empezar.", "why": "Almost. English \"as saying\" has no tense, but Spanish needs the past *decía*." },
+    { "wrong": "Como te decía a ustedes, la reunión es a las tres.", "right": "Como les decía, la reunión es a las tres.", "why": "Almost. The little word already names the people: *les* for you all." },
+    { "wrong": "Volver a lo de antes, ¿vienes o no?", "right": "Volviendo a lo de antes, ¿vienes o no?", "why": "Almost. To say \"going back to\" you need *volviendo*, not the plain verb." }
+  ],
+  "personal": "Think of the last time someone cut you off. How would you have taken your thought back? Start with *Como decía, …*."
+}
