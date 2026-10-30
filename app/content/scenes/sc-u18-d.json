@@ -1,0 +1,256 @@
+{
+  "id": "sc-u18-d",
+  "unit": "u18",
+  "title": "The green door",
+  "brief": "You're Tomás. It's Sunday morning in Medellín, your last day, and you're taking the metro alone with flowers to say goodbye to Vale's grandmother. A woman at the station offers to help; she's a stranger, so use usted. At the end you phone Vale, so use tú with her.",
+  "spare": false,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenos días, joven. ¿Está perdido? ¿Le ayudo?",
+      "npcEn": "Good morning, young man. Are you lost? Can I help you?",
+      "intent": "Say yes, please: you're going to the Ospinas' house, on Carrera 70.",
+      "accept": [
+        "Sí, por favor. Voy para la casa de los Ospina, en la carrera 70.",
+        "Sí, gracias. Voy a la casa de los Ospina, en la carrera setenta.",
+        "Buenos días. Sí, voy para la carrera 70, a la casa de los Ospina."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(para|a) la (casa|carrera)\\b",
+          "flags": "i",
+          "label": "where you're headed: para la carrera 70 (a la works too)"
+        }
+      ],
+      "focus": "g:por-para-1",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Ah, eso es fácil. Tome el metro hasta Floresta y bájese ahí. ¿Y esas flores? ¿Son para su abuela?",
+      "npcEn": "Ah, that's easy. Take the metro to Floresta and get off there. And those flowers? Are they for your grandmother?",
+      "intent": "Say no, they aren't for yours: they're for Vale's grandmother.",
+      "accept": [
+        "No, no son para la mía. Son para la abuela de Vale.",
+        "No, la mía vive en Toronto. Son para la abuela de Vale.",
+        "No, señora. Son para la abuela de Vale, no para la mía."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bla m[ií]a\\b",
+          "flags": "i",
+          "label": "mine (my grandmother): la mía"
+        },
+        {
+          "type": "negation",
+          "label": "start with no"
+        }
+      ],
+      "focus": "g:possessives-stressed",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¡Qué bien! Bueno, mijo: de Floresta, siga tres cuadras derecho, doble a la izquierda y busque la casa de la puerta verde.",
+      "npcEn": "How nice! Right, dear: from Floresta, go three blocks straight on, turn left and look for the house with the green door.",
+      "intent": "She spoke very fast. Say sorry, you didn't understand, and ask her to repeat it for you more slowly.",
+      "accept": [
+        "Perdón, no entendí. Repítamelo más despacio, por favor.",
+        "Perdón, no entendí. ¿Me lo repite más despacio, por favor?",
+        "Perdón, señora, no entendí. Repítamelo, por favor, más despacio."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\brep[ií]tamelo\\b|\\bme lo repite\\b",
+          "flags": "i",
+          "label": "repeat it for me: repítamelo (me, then lo, on the end)"
+        }
+      ],
+      "focus": "g:commands-with-pronouns",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Tres cuadras. A la izquierda. Puerta verde. Un momento, ¿los Ospina? ¡Yo vivo al lado! ¿Y usted no bailó con la abuela en la fiesta? ¡Yo lo vi!",
+      "npcEn": "Three blocks. Left. Green door. Wait a moment, the Ospinas? I live next door! And didn't you dance with the grandmother at the party? I saw you!",
+      "intent": "Say yes, that was you, and say sorry for all the music.",
+      "accept": [
+        "Sí, era yo. Perdón por la música.",
+        "Sí, señora, fui yo. ¡Qué pena con usted por la música!",
+        "Ay, sí, era yo. Perdón por toda esa música."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bpor\\b.*m[uú]sica|\\bpor (el|la) (ruido|bulla)\\b",
+          "flags": "i",
+          "label": "sorry for something takes por: perdón por la música"
+        }
+      ],
+      "focus": "x:por-para",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Tranquilo, mijo. Cuando la abuela pone música, nadie duerme en la carrera 70. Vamos juntos, yo también voy para allá.",
+      "npcEn": "Don't worry, dear. When the grandmother puts music on, nobody sleeps on Carrera 70. Let's go together, I'm going there too.",
+      "intent": "Twenty minutes later you're at the green door, and nobody opens. Phone Vale: tell her you've arrived and you're at the door.",
+      "accept": [
+        "Vale, ya llegué. Estoy en la puerta.",
+        "Hola, Vale. Ya llegué, estoy aquí en la puerta.",
+        "¡Ya llegué! Estoy en la puerta de tu casa."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bya llegu[eé]",
+          "flags": "i",
+          "label": "I'm here: ya llegué"
+        }
+      ],
+      "focus": "c:ya-llegue",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Vale: ¡Por fin! El bus sale a las dos. ¿Y esas flores? ¿Son para mí?",
+      "npcEn": "Vale: Finally! The bus leaves at two. And those flowers? Are they for me?",
+      "intent": "Tell her no, they're for her grandmother, and tell her to open the door for you.",
+      "accept": [
+        "No, son para tu abuela. Ábreme la puerta, por favor.",
+        "Son para tu abuela, no para ti. ¡Ábreme!",
+        "No, no son para ti. Son para tu abuela. Ábreme, por favor."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bpara tu abuela\\b",
+          "flags": "i",
+          "label": "who they're for takes para: para tu abuela"
+        },
+        {
+          "type": "regex",
+          "pattern": "(^|[^a-záéíóúñ])[aá]breme\\b",
+          "flags": "i",
+          "label": "open up for me: ábreme (me rides on the end)"
+        }
+      ],
+      "focus": "g:commands-with-pronouns",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:entonces-bueno",
+    "c:era",
+    "c:fui",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:le-ayudo",
+    "c:mas-despacio",
+    "c:perdon-disculpe",
+    "c:por-favor",
+    "c:que-bien",
+    "c:que-pena",
+    "c:siga",
+    "c:tranquilo",
+    "c:voy-a",
+    "c:voy-vas",
+    "c:ya-llegue",
+    "g:commands-tu",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-states",
+    "g:ir-a-plans",
+    "g:por-para-1",
+    "g:possessives-stressed",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "l:abrir",
+    "l:abuela",
+    "l:ahí",
+    "l:allá",
+    "l:aquí",
+    "l:ayudar",
+    "l:bailar",
+    "l:bajarse",
+    "l:bien",
+    "l:bueno",
+    "l:bus",
+    "l:buscar",
+    "l:carrera",
+    "l:casa",
+    "l:cuadra",
+    "l:derecho",
+    "l:despacio",
+    "l:doblar",
+    "l:dormir",
+    "l:día",
+    "l:entender",
+    "l:estar",
+    "l:favor",
+    "l:fiesta",
+    "l:fin",
+    "l:flor",
+    "l:fácil",
+    "l:ir",
+    "l:izquierda",
+    "l:joven",
+    "l:juntos",
+    "l:lado",
+    "l:llegar",
+    "l:metro",
+    "l:mijo",
+    "l:momento",
+    "l:música",
+    "l:parar",
+    "l:pena",
+    "l:perder",
+    "l:perdón",
+    "l:poner",
+    "l:puerta",
+    "l:qué",
+    "l:repetir",
+    "l:salir",
+    "l:seguir",
+    "l:ser",
+    "l:señora",
+    "l:tomar",
+    "l:tranquilo",
+    "l:ver",
+    "l:verde",
+    "l:vivir",
+    "p:aqui-ahi-alla",
+    "p:cuando-basic",
+    "p:demonstratives-basic",
+    "p:directions-cuadras",
+    "p:ir-a-venir-de-place",
+    "p:los-garcia",
+    "p:me-te-nos-objects",
+    "p:no-es-x-es-y",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:request-ladder",
+    "p:siento-llegar-tarde",
+    "p:street-names",
+    "p:subirse-bajarse",
+    "p:tambien-tampoco",
+    "p:telling-time"
+  ]
+}
