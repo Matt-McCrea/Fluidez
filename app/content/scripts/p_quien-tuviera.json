@@ -1,0 +1,122 @@
+{
+  "node": "p:quien-tuviera",
+  "hook": {
+    "line": "Mariana is off to Cartagena again, and Tomás hasn't had a day off in months. English says \"I wish I had...\". Spanish squeezes the whole wish into one exclamation.",
+    "es": "¡Quién tuviera tiempo para viajar como tú!",
+    "en": "I wish I had time to travel like you! (to a friend)"
+  },
+  "examples": [
+    { "es": "¡Quién tuviera tiempo para viajar como tú!", "en": "I wish I had time to travel like you! (to a friend)" },
+    { "es": "¡Quién pudiera dormir así!", "en": "If only I could sleep like that!" },
+    { "es": "¡Quién fuera Simón, sin preocupaciones!", "en": "I wish I were Simón, with no worries!" },
+    { "es": "¡Quién estuviera ahora en Medellín!", "en": "I wish I were in Medellín right now!" },
+    { "es": "¡Quién supiera cocinar como Vale!", "en": "I wish I could cook like Vale!" },
+    { "es": "¡Quién tuviera tu paciencia!", "en": "I wish I had your patience! (to a friend)" }
+  ],
+  "rule": "*¡Quién tuviera...!* means \"I wish I had...\", usually about something someone else has or does. *Quién* looks like \"who\", but here it always means *I*, so never add *yo*.\nThe verb takes the *-ra* past form: *tuviera*, *pudiera*, *fuera*, *estuviera*, *supiera*. The wish is about now, even though the form looks like the past.\nThere is no \"I wish\" word at all. The exclamation marks and a sigh do the work, with a little envy and a little humour.",
+  "smallPrint": "Teachers call this a wish exclamative: *quién* + imperfect subjunctive, for a wish that is hard to reach.",
+  "readAndPick": [
+    {
+      "es": "¡Quién tuviera tiempo para viajar como tú!",
+      "options": ["I wish I had time to travel like you!", "Who had time to travel like you?", "Who has time to travel like you?"],
+      "answer": 0
+    },
+    {
+      "es": "¿Quién tiene tiempo para viajar?",
+      "options": ["I wish I had time to travel.", "Who had time to travel?", "Who has time to travel?"],
+      "answer": 2
+    },
+    {
+      "es": "¡Quién pudiera dormir así!",
+      "options": ["Who could sleep like that?", "If only I could sleep like that!", "Whoever sleeps like that!"],
+      "answer": 1
+    },
+    {
+      "es": "¡Quién estuviera ahora en Medellín!",
+      "options": ["Who was in Medellín right now?", "Nobody is in Medellín now.", "I wish I were in Medellín right now!"],
+      "answer": 2
+    },
+    {
+      "es": "¿Quién estuvo en Medellín?",
+      "options": ["I wish I had been in Medellín.", "Who was in Medellín?", "Who will be in Medellín?"],
+      "answer": 1
+    },
+    {
+      "es": "¡Quién supiera cocinar como Vale!",
+      "options": ["I wish I could cook like Vale!", "Who knew how to cook like Vale?", "Vale wishes she could cook."],
+      "answer": 0
+    },
+    {
+      "es": "¡Quién tuviera tu paciencia!",
+      "options": ["You wish you had patience.", "Who has your patience?", "I wish I had your patience!"],
+      "answer": 2
+    },
+    {
+      "es": "¡Quién fuera Simón, sin preocupaciones!",
+      "options": ["Who was Simón, without worries?", "I wish I were Simón, with no worries!", "Simón wishes he had no worries."],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *tuviera* or *tuvo*, then type the whole sentence: ¡Quién ___ tiempo para viajar como tú! (I wish I had time to travel like you!)",
+      "answer": "¡Quién tuviera tiempo para viajar como tú!",
+      "accept": [],
+      "why": "A wish needs the *-ra* form, not the plain past."
+    },
+    {
+      "prompt": "Choose *pudiera* or *puede*, then type the whole sentence: ¡Quién ___ dormir así! (If only I could sleep like that!)",
+      "answer": "¡Quién pudiera dormir así!",
+      "accept": [],
+      "why": "*Pudiera* is the *-ra* form of *poder*."
+    },
+    {
+      "prompt": "Type it in Spanish: I wish I had your patience! (to a friend)",
+      "answer": "¡Quién tuviera tu paciencia!",
+      "accept": [],
+      "why": "*Quién* + *tuviera* is the whole wish; there is no *yo*."
+    },
+    {
+      "prompt": "Type it in Spanish: I wish I were in Medellín right now!",
+      "answer": "¡Quién estuviera ahora en Medellín!",
+      "accept": ["¡Quién estuviera en Medellín ahora!"],
+      "why": "*Estuviera* is the *-ra* form of *estar*."
+    },
+    {
+      "prompt": "Type it in Spanish: I wish I could cook like Vale!",
+      "answer": "¡Quién supiera cocinar como Vale!",
+      "accept": [],
+      "why": "\"Know how to\" is *saber*, and its wish form is *supiera*."
+    },
+    {
+      "prompt": "Turn the question into a wish: *¿Quién puede dormir así?* becomes: If only I could sleep like that!",
+      "answer": "¡Quién pudiera dormir así!",
+      "accept": [],
+      "why": "Change *puede* to *pudiera* and swap the question marks for exclamation marks."
+    },
+    {
+      "prompt": "Type it in Spanish: I wish I lived in Cartagena!",
+      "answer": "¡Quién viviera en Cartagena!",
+      "accept": [],
+      "why": "For an *-ir* verb, *vivir* becomes *viviera*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¡Quién tengo tiempo para viajar!",
+      "right": "¡Quién tuviera tiempo para viajar!",
+      "why": "Almost. The wish needs the *-ra* form; *tengo* is just \"I have\"."
+    },
+    {
+      "wrong": "¡Quién yo tuviera tu paciencia!",
+      "right": "¡Quién tuviera tu paciencia!",
+      "why": "Almost. *Quién* already means \"I\" here, so *yo* is not needed."
+    },
+    {
+      "wrong": "¡Quién tendría tu paciencia!",
+      "right": "¡Quién tuviera tu paciencia!",
+      "why": "Almost. Wishes use the *-ra* form, not the *-ría* \"would\" form."
+    }
+  ],
+  "personal": "Say what you envy about a friend or neighbour. Start with *¡Quién tuviera...!* or *¡Quién pudiera...!*"
+}

@@ -1,0 +1,122 @@
+{
+  "node": "p:hasta-la-coronilla",
+  "hook": {
+    "line": "The building site next door starts at six every morning. Tomás has had enough, and Spanish has vivid ways to say so without swearing.",
+    "es": "Estoy hasta la coronilla del ruido.",
+    "en": "I'm sick to death of the noise."
+  },
+  "examples": [
+    { "es": "Estoy hasta la coronilla de sus excusas.", "en": "I'm sick to death of his excuses." },
+    { "es": "Estoy hasta la coronilla de que me llamen a las diez de la noche.", "en": "I'm sick to death of them calling me at ten at night." },
+    { "es": "Me saca de quicio que llegue siempre tarde.", "en": "It drives me up the wall that he's always late." },
+    { "es": "Me puso de mal genio que no me avisaran.", "en": "It put me in a foul mood that they didn't tell me." },
+    { "es": "Estoy hasta la coronilla de esperar.", "en": "I'm sick to death of waiting." },
+    { "es": "Hoy Vale está de mal genio.", "en": "Vale is in a bad mood today." }
+  ],
+  "rule": "Three friendly ways to say you've had enough.\n*Estar hasta la coronilla de* + noun or infinitive: \"sick to death of\". The top of your head is full. For what someone does, add *que* + subjunctive: *de que me llamen*.\n*Sacar de quicio*: the thing is the subject, you are *me*. *Me saca de quicio que llegue tarde.*\n*Estar de mal genio*: in a bad mood.\nSpain's *hasta las narices* is understood here, but you will hear *coronilla* more.",
+  "smallPrint": "Teachers call these idiomatic expressions of annoyance. They take *que* + subjunctive when they react to something someone does.",
+  "readAndPick": [
+    {
+      "es": "Estoy hasta la coronilla de sus excusas.",
+      "options": ["I'm sick to death of his excuses.", "His excuses made me happy.", "I'm making excuses up to the top."],
+      "answer": 0
+    },
+    {
+      "es": "Me saca de quicio que llegue siempre tarde.",
+      "options": ["I'm always late and it bothers him.", "He took me out of the house when he was late.", "It drives me up the wall that he's always late."],
+      "answer": 2
+    },
+    {
+      "es": "Estoy hasta la coronilla de esperar.",
+      "options": ["I'm happy to wait.", "I'm sick to death of waiting.", "I'm still waiting."],
+      "answer": 1
+    },
+    {
+      "es": "Hoy Vale está de mal genio.",
+      "options": ["Vale is feeling brilliant today.", "Vale has a bad temper by nature.", "Vale is in a bad mood today."],
+      "answer": 2
+    },
+    {
+      "es": "Vale es de mal genio.",
+      "options": ["Vale has a bad temper by nature.", "Vale is in a bad mood today.", "Vale is a great cook."],
+      "answer": 0
+    },
+    {
+      "es": "Me puso de mal genio que no me avisaran.",
+      "options": ["It put me in a good mood that they told me.", "It put me in a bad mood that they didn't tell me.", "I told them about my bad mood."],
+      "answer": 1
+    },
+    {
+      "es": "Estoy hasta la coronilla de que me llamen a las diez de la noche.",
+      "options": ["I'm sick to death of calling them at ten at night.", "I'm sick of the ten o'clock night call.", "I'm sick to death of them calling me at ten at night."],
+      "answer": 2
+    },
+    {
+      "es": "El ruido de la obra me saca de quicio.",
+      "options": ["The noise from the building site drives me up the wall.", "I make the noise at the building site.", "The building site is far from the noise."],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *de* or *con*, then type the whole sentence: Estoy hasta la coronilla ___ sus excusas. (I'm sick to death of his excuses.)",
+      "answer": "Estoy hasta la coronilla de sus excusas.",
+      "accept": [],
+      "why": "The thing you're sick of follows *de*."
+    },
+    {
+      "prompt": "Choose *llamen* or *llaman*, then type the whole sentence: Estoy hasta la coronilla de que me ___ a las diez de la noche. (I'm sick to death of them calling me at ten at night.)",
+      "answer": "Estoy hasta la coronilla de que me llamen a las diez de la noche.",
+      "accept": [],
+      "why": "A feeling about what others do takes *que* and the subjunctive."
+    },
+    {
+      "prompt": "Type it in Spanish: I'm sick to death of waiting.",
+      "answer": "Estoy hasta la coronilla de esperar.",
+      "accept": [],
+      "why": "When it's you doing the verb, *de* plus the infinitive is enough."
+    },
+    {
+      "prompt": "Type it in Spanish: It drives me up the wall that he's always late.",
+      "answer": "Me saca de quicio que llegue siempre tarde.",
+      "accept": ["Me saca de quicio que siempre llegue tarde."],
+      "why": "The lateness is the subject of *saca*, and you are *me*."
+    },
+    {
+      "prompt": "Type it in Spanish: Vale is in a bad mood today.",
+      "answer": "Hoy Vale está de mal genio.",
+      "accept": ["Vale está de mal genio hoy."],
+      "why": "A mood for today takes *está de*."
+    },
+    {
+      "prompt": "Say it to a friend: *Me saca de quicio que llegue siempre tarde.* becomes: It drives you up the wall that he's always late.",
+      "answer": "Te saca de quicio que llegue siempre tarde.",
+      "accept": ["Te saca de quicio que siempre llegue tarde."],
+      "why": "Swap *me* for *te*: the person who is annoyed is *you*."
+    },
+    {
+      "prompt": "Say it about Vale: *Estoy hasta la coronilla de sus excusas.* becomes: Vale is sick to death of his excuses.",
+      "answer": "Vale está hasta la coronilla de sus excusas.",
+      "accept": [],
+      "why": "For *Vale* the verb is *está*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Estoy hasta la cabeza de sus excusas.",
+      "right": "Estoy hasta la coronilla de sus excusas.",
+      "why": "Almost. The idiom is fixed: *coronilla* is the very top of the head."
+    },
+    {
+      "wrong": "Estoy hasta la coronilla que me llamen.",
+      "right": "Estoy hasta la coronilla de que me llamen.",
+      "why": "Almost. Keep *de* before *que*."
+    },
+    {
+      "wrong": "Yo saco de quicio que llegue tarde.",
+      "right": "Me saca de quicio que llegue tarde.",
+      "why": "Almost. The lateness does the driving, so it is the subject, and you are *me*."
+    }
+  ],
+  "personal": "Tell me what drives you up the wall. Use *Me saca de quicio que...* or *Estoy hasta la coronilla de...*"
+}

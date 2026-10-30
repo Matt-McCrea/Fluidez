@@ -1,0 +1,122 @@
+{
+  "node": "p:ya-era-hora-de-que",
+  "hook": {
+    "line": "Tomás has waited weeks for the plumber, and he finally shows up. English says \"About time!\" Spanish says it too, with a little more edge than *por fin*.",
+    "es": "¡Ya era hora de que llegaras!",
+    "en": "About time you got here! (to a friend)"
+  },
+  "examples": [
+    { "es": "¡Ya era hora de que llegaras!", "en": "About time you got here! (to a friend)" },
+    { "es": "¡Ya era hora de que arreglaran la calle!", "en": "About time they fixed the street!" },
+    { "es": "¡Ya era hora!", "en": "About time!" },
+    { "es": "¡Ya era hora de que Tomás aprendiera a hacer tinto!", "en": "About time Tomás learned to make black coffee!" },
+    { "es": "¡Ya es hora de que te vayas a dormir!", "en": "It's high time you went to bed! (to a friend)" },
+    { "es": "¡Ya era hora de descansar!", "en": "About time for a rest!" }
+  ],
+  "rule": "Say *ya era hora* when something finally happens and you are glad, but a bit cross it took so long.\n*¡Ya era hora!* on its own: About time!\n*¡Ya era hora de que...!* + a verb in the *-ra* past form (*llegaras*, *arreglaran*, *aprendiera*). The ending shows who did it.\nNo new person doing it? Skip *que*: *¡Ya era hora de descansar!*\nStill waiting? *¡Ya es hora de que te vayas a dormir!*, with the present form (*vayas*).",
+  "smallPrint": "Teachers call the *-ra* verb the imperfect subjunctive: a feeling about something that has happened takes the subjunctive.",
+  "readAndPick": [
+    {
+      "es": "¡Ya era hora de que llegaras!",
+      "options": ["About time you got here! (to a friend)", "About time I got here!", "About time they got here!"],
+      "answer": 0
+    },
+    {
+      "es": "¡Ya era hora de que arreglaran la calle!",
+      "options": ["About time I fixed the street!", "About time you fixed the street!", "About time they fixed the street!"],
+      "answer": 2
+    },
+    {
+      "es": "¡Ya era hora!",
+      "options": ["Not yet!", "About time!", "What time is it?"],
+      "answer": 1
+    },
+    {
+      "es": "¡Ya es hora de que te vayas a dormir!",
+      "options": ["It was high time you went to bed!", "It's high time I went to bed!", "It's high time you went to bed!"],
+      "answer": 2
+    },
+    {
+      "es": "¡Ya era hora de que Tomás aprendiera a hacer tinto!",
+      "options": ["About time Tomás learned to make black coffee!", "Tomás is about to learn to make black coffee.", "Tomás never learned to make black coffee."],
+      "answer": 0
+    },
+    {
+      "es": "¡Ya era hora de descansar!",
+      "options": ["They finally rested.", "About time you rested!", "About time for a rest!"],
+      "answer": 2
+    },
+    {
+      "es": "Todavía no es hora de que cerremos.",
+      "options": ["It's not yet time for us to close.", "We already closed.", "It was time for us to close."],
+      "answer": 0
+    },
+    {
+      "es": "¡Ya era hora de que Vale volviera!",
+      "options": ["Vale is coming back soon.", "About time Vale came back!", "Vale never came back."],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *llegaras* or *llegar*, then type the whole sentence: ¡Ya era hora de que ___! (About time you got here, to a friend.)",
+      "answer": "¡Ya era hora de que llegaras!",
+      "accept": [],
+      "why": "A new person doing it needs *que* and the *-ra* form."
+    },
+    {
+      "prompt": "Choose *arreglaran* or *arreglan*, then type the whole sentence: ¡Ya era hora de que ___ la calle! (About time they fixed the street!)",
+      "answer": "¡Ya era hora de que arreglaran la calle!",
+      "accept": [],
+      "why": "After *ya era hora de que* the verb takes the *-ra* past form."
+    },
+    {
+      "prompt": "Type it in Spanish: About time!",
+      "answer": "¡Ya era hora!",
+      "accept": [],
+      "why": "On its own, *ya era hora* is the whole exclamation."
+    },
+    {
+      "prompt": "Type it in Spanish: About time Tomás learned to make black coffee!",
+      "answer": "¡Ya era hora de que Tomás aprendiera a hacer tinto!",
+      "accept": [],
+      "why": "*Tomás* is the new person, so *que* and the *-ra* form come in."
+    },
+    {
+      "prompt": "Type it in Spanish: It's high time you went to bed. (to a friend)",
+      "answer": "¡Ya es hora de que te vayas a dormir!",
+      "accept": [],
+      "why": "Still going on, so *es* and the present form *vayas*."
+    },
+    {
+      "prompt": "Say it about *Vale*: *¡Ya era hora de que llegaras!* becomes: About time Vale got here!",
+      "answer": "¡Ya era hora de que Vale llegara!",
+      "accept": [],
+      "why": "For *Vale* (or *él*, *ella*) the ending is *-ara*."
+    },
+    {
+      "prompt": "Say it to a group: *¡Ya era hora de que llegaras!* becomes: About time you all got here!",
+      "answer": "¡Ya era hora de que llegaran!",
+      "accept": ["¡Ya era hora de que ustedes llegaran!"],
+      "why": "For *ustedes* the ending is *-aran*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¡Ya era hora de que llegas!",
+      "right": "¡Ya era hora de que llegaras!",
+      "why": "Almost. After *ya era hora de que* the verb takes the *-ra* past form, not the plain present."
+    },
+    {
+      "wrong": "¡Ya era tiempo de que llegaras!",
+      "right": "¡Ya era hora de que llegaras!",
+      "why": "Almost. For \"about time\" Spanish says *hora*, not *tiempo*."
+    },
+    {
+      "wrong": "¡Ya era hora de que descansar!",
+      "right": "¡Ya era hora de descansar!",
+      "why": "Almost. If no new person does it, drop *que* and use the infinitive."
+    }
+  ],
+  "personal": "Tell me about something you were glad finally happened. Start with *¡Ya era hora de que...!*"
+}

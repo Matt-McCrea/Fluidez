@@ -1,0 +1,122 @@
+{
+  "node": "p:no-me-extrana-que",
+  "hook": {
+    "line": "Vale calls from Medellín and Tomás can hardly speak. The kindest thing she can say is not advice. It is to tell him his reaction makes sense.",
+    "es": "No me extraña que estés tan cansado.",
+    "en": "No wonder you're so tired. (to a man)"
+  },
+  "examples": [
+    { "es": "No me extraña que estés tan disgustado.", "en": "No wonder you're so upset. (to a man)" },
+    { "es": "Me imagino lo que debes de estar pasando.", "en": "I can imagine what you must be going through." },
+    { "es": "No me extraña nada que se haya ido.", "en": "It doesn't surprise me at all that she left." },
+    { "es": "No me extraña que Vale esté cansada.", "en": "No wonder Vale is tired." },
+    { "es": "No me extraña que no durmieras anoche.", "en": "No wonder you didn't sleep last night. (to a friend)" },
+    { "es": "Me imagino lo que sientes.", "en": "I can imagine what you feel. (to a friend)" }
+  ],
+  "rule": "To tell someone their reaction makes sense, Spanish has two warm options.\n*No me extraña que* + subjunctive: \"no wonder...\". Add *nada* to press the point: *No me extraña nada que...*\n*Me imagino lo que* + verb: \"I can imagine what...\".\nEnglish says \"no wonder you're upset\" with a plain verb. Spanish puts the verb in the subjunctive (*estés*, *esté*, *durmieras*), because it is a reaction to the fact.\nTry these instead of *te compadezco*, which can sound distant.",
+  "smallPrint": "Teachers call *no me extraña que* an expression of emotion, which takes the subjunctive.",
+  "readAndPick": [
+    {
+      "es": "No me extraña que estés tan disgustado.",
+      "options": ["It surprises me that you're so upset.", "No wonder you're so upset.", "I'm sorry you're so upset."],
+      "answer": 1
+    },
+    {
+      "es": "Me extraña que estés tan tranquilo.",
+      "options": ["No wonder you're so calm.", "I'm glad you're so calm.", "It surprises me that you're so calm."],
+      "answer": 2
+    },
+    {
+      "es": "No me extraña nada que se haya ido.",
+      "options": ["It doesn't surprise me at all that she left.", "It surprises me that she left.", "I'm not surprised she'll leave."],
+      "answer": 0
+    },
+    {
+      "es": "Me imagino lo que sientes.",
+      "options": ["I imagine what I feel.", "I imagined what you felt.", "I can imagine what you feel."],
+      "answer": 2
+    },
+    {
+      "es": "No me extraña que no durmieras anoche.",
+      "options": ["No wonder you didn't sleep last night.", "No wonder you won't sleep tonight.", "I didn't sleep last night."],
+      "answer": 0
+    },
+    {
+      "es": "No me extraña que Vale esté cansada.",
+      "options": ["Vale is surprised that I'm tired.", "No wonder Vale was tired.", "No wonder Vale is tired."],
+      "answer": 2
+    },
+    {
+      "es": "Me imagino lo que debes de estar pasando.",
+      "options": ["I can't imagine what you're going through.", "I can imagine what you must be going through.", "I imagine what happened to you."],
+      "answer": 1
+    },
+    {
+      "es": "No me extraña que quieran vender.",
+      "options": ["No wonder you want to sell.", "I'm not surprised that I want to sell.", "No wonder they want to sell."],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *estés* or *estás*, then type the whole sentence: No me extraña que ___ tan disgustado. (No wonder you're so upset. To a man.)",
+      "answer": "No me extraña que estés tan disgustado.",
+      "accept": [],
+      "why": "After *no me extraña que*, the verb is in the subjunctive: *estés*."
+    },
+    {
+      "prompt": "Choose *esté* or *está*, then type the whole sentence: No me extraña que Vale ___ cansada. (No wonder Vale is tired.)",
+      "answer": "No me extraña que Vale esté cansada.",
+      "accept": [],
+      "why": "*Esté* is the subjunctive form for *Vale*."
+    },
+    {
+      "prompt": "Type it in Spanish: No wonder you didn't sleep last night. (to a friend)",
+      "answer": "No me extraña que no durmieras anoche.",
+      "accept": [],
+      "why": "It happened last night, so the verb takes the *-ra* form: *durmieras*."
+    },
+    {
+      "prompt": "Type it in Spanish: I can imagine what you feel. (to a friend)",
+      "answer": "Me imagino lo que sientes.",
+      "accept": [],
+      "why": "*Me imagino lo que* is followed by an ordinary verb."
+    },
+    {
+      "prompt": "Type it in Spanish: It doesn't surprise me at all that she left.",
+      "answer": "No me extraña nada que se haya ido.",
+      "accept": [],
+      "why": "*Nada* presses the point, and *haya ido* is the subjunctive for a past event."
+    },
+    {
+      "prompt": "Press the point with *nada*: *No me extraña que estés tan disgustado.* becomes: It doesn't surprise me at all that you're so upset. (to a man)",
+      "answer": "No me extraña nada que estés tan disgustado.",
+      "accept": [],
+      "why": "*Nada* goes right after *extraña*."
+    },
+    {
+      "prompt": "Say it about Vale, a woman: *No me extraña que estés tan cansado.* becomes: No wonder Vale is so tired.",
+      "answer": "No me extraña que Vale esté tan cansada.",
+      "accept": [],
+      "why": "For *Vale* the subjunctive is *esté*, and a woman is *cansada*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No me extraña que estás tan disgustado.",
+      "right": "No me extraña que estés tan disgustado.",
+      "why": "Almost. After *no me extraña que* the verb is in the subjunctive: *estés*."
+    },
+    {
+      "wrong": "No extraño que estés cansado.",
+      "right": "No me extraña que estés cansado.",
+      "why": "Almost. Without *me*, *extraño* means \"I miss\"."
+    },
+    {
+      "wrong": "Te compadezco por lo que pasas.",
+      "right": "Me imagino lo que debes de estar pasando.",
+      "why": "Almost. *Te compadezco* can sound distant; *me imagino lo que...* sounds like a friend."
+    }
+  ],
+  "personal": "Think of a friend who had a rough week. Tell them their reaction makes sense with *No me extraña que...*"
+}

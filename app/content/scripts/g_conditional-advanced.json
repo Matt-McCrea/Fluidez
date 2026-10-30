@@ -1,0 +1,138 @@
+{
+  "node": "g:conditional-advanced",
+  "hook": {
+    "line": "Everyone around Tomás is asking \"what if?\" this week: what if he had known, what if Altamira offers more. Spanish has tidy ways to set a condition without saying *si* every time.",
+    "es": "De haberlo sabido, no habría venido.",
+    "en": "Had I known, I wouldn't have come."
+  },
+  "examples": [
+    { "es": "De haberlo sabido, no habría venido.", "en": "Had I known, I wouldn't have come." },
+    { "es": "Como no llegues a tiempo, nos vamos sin ti.", "en": "If you're not on time, we're leaving without you. (to a friend)" },
+    { "es": "Abrimos mañana, a no ser que llueva mucho.", "en": "We open tomorrow, unless it rains a lot." },
+    { "es": "Te presto el carro, con tal de que me lo devuelvas hoy.", "en": "I'll lend you the car, as long as you give it back today. (to a friend)" },
+    { "es": "De haber llegado antes, habríamos visto a Hernando.", "en": "Had we arrived earlier, we would have seen Hernando." },
+    { "es": "Como no me avises, no sé a qué hora abrir.", "en": "If you don't let me know, I won't know what time to open. (to a friend)" }
+  ],
+  "rule": "Four ways to set a condition without *si*.\n*De* + *haber* + *-ado/-ido* looks back: *de haberlo sabido*, \"had I known\". The result usually uses *habría*.\n*Como* + subjunctive is a warning: *como no llegues*. The result is plain: *nos vamos*. With an ordinary verb, *como* means \"since\": *Como no llegaste, nos fuimos.*\n*A no ser que* + subjunctive: \"unless\".\n*Con tal de que* + subjunctive: \"as long as\".\nThe subjunctive endings you already know (*llegues*, *llueva*, *devuelvas*) are the signal that the thing has not happened yet.",
+  "smallPrint": "Teachers call these conditional clauses without *si*: *de* + compound infinitive, *como* + subjunctive, and the connectors *a no ser que* and *con tal de que*.",
+  "readAndPick": [
+    {
+      "es": "De haberlo sabido, no habría venido.",
+      "options": ["Had I known, I wouldn't have come.", "I knew, so I didn't come.", "If I know, I won't come."],
+      "answer": 0
+    },
+    {
+      "es": "Como no llegues a tiempo, nos vamos sin ti.",
+      "options": ["Since you didn't arrive on time, we left without you.", "You arrived on time, so we're going with you.", "If you're not on time, we're leaving without you."],
+      "answer": 2
+    },
+    {
+      "es": "Como no llegaste a tiempo, nos fuimos sin ti.",
+      "options": ["If you're not on time, we'll leave without you.", "Since you weren't on time, we left without you.", "If you hadn't been on time, we would have left."],
+      "answer": 1
+    },
+    {
+      "es": "Abrimos mañana, a no ser que llueva mucho.",
+      "options": ["We open tomorrow, even if it rains.", "We open tomorrow, because it rains a lot.", "We open tomorrow, unless it rains a lot."],
+      "answer": 2
+    },
+    {
+      "es": "Te presto el carro, con tal de que me lo devuelvas hoy.",
+      "options": ["I'll lend you the car, as long as you give it back today.", "I'll lend you the car, but not if you need it today.", "I'm lending you the car because you gave it back today."],
+      "answer": 0
+    },
+    {
+      "es": "De haber llegado antes, habríamos visto a Hernando.",
+      "options": ["We arrived early and saw Hernando.", "If we arrive early, we'll see Hernando.", "Had we arrived earlier, we would have seen Hernando."],
+      "answer": 2
+    },
+    {
+      "es": "No vendemos, a no ser que Altamira ofrezca más.",
+      "options": ["We sold because Altamira offered more.", "We won't sell unless Altamira offers more.", "We'll sell if Altamira offers less."],
+      "answer": 1
+    },
+    {
+      "es": "Como me llames tarde otra vez, no contesto.",
+      "options": ["Since you called late again, I didn't answer.", "When you called late, I answered.", "If you call me late again, I won't answer."],
+      "answer": 2
+    },
+    {
+      "es": "Salgo contigo con tal de que no llueva.",
+      "options": ["I'll go out with you as long as it doesn't rain.", "I went out with you although it rained.", "I'll go out with you unless you want to stay in."],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *De* or *Si*, then type the whole sentence: ___ haberlo sabido, no habría venido. (Had I known, I wouldn't have come.)",
+      "answer": "De haberlo sabido, no habría venido.",
+      "accept": [],
+      "why": "This \"had I known\" version starts with *de* and a compound infinitive."
+    },
+    {
+      "prompt": "Choose *llegues* or *llegas*, then type the whole sentence: Como no ___ a tiempo, nos vamos sin ti. (If you're not on time, we're leaving without you. To a friend.)",
+      "answer": "Como no llegues a tiempo, nos vamos sin ti.",
+      "accept": [],
+      "why": "A warning with *como* takes the subjunctive."
+    },
+    {
+      "prompt": "Choose *llueva* or *llueve*, then type the whole sentence: Abrimos mañana, a no ser que ___ mucho. (We open tomorrow, unless it rains a lot.)",
+      "answer": "Abrimos mañana, a no ser que llueva mucho.",
+      "accept": ["Abrimos mañana a no ser que llueva mucho."],
+      "why": "*A no ser que* always takes the subjunctive."
+    },
+    {
+      "prompt": "Type it in Spanish: I'll lend you the car, as long as you give it back today. (to a friend)",
+      "answer": "Te presto el carro, con tal de que me lo devuelvas hoy.",
+      "accept": ["Te presto el carro con tal de que me lo devuelvas hoy.", "Con tal de que me lo devuelvas hoy, te presto el carro."],
+      "why": "*Con tal de que* is followed by the subjunctive: *devuelvas*."
+    },
+    {
+      "prompt": "Type it in Spanish: Had we arrived earlier, we would have seen Hernando.",
+      "answer": "De haber llegado antes, habríamos visto a Hernando.",
+      "accept": ["De haber llegado antes habríamos visto a Hernando."],
+      "why": "*De haber* + *llegado* looks back, and *habríamos visto* gives the result."
+    },
+    {
+      "prompt": "Type it in Spanish: We won't sell unless Altamira offers more.",
+      "answer": "No vendemos, a no ser que Altamira ofrezca más.",
+      "accept": ["No vendemos a no ser que Altamira ofrezca más.", "A no ser que Altamira ofrezca más, no vendemos."],
+      "why": "*A no ser que* means \"unless\" and is followed by *ofrezca*."
+    },
+    {
+      "prompt": "Make it a warning with *como*: *Si no me avisas, no sé a qué hora abrir.* becomes: If you don't let me know, I won't know what time to open. (to a friend)",
+      "answer": "Como no me avises, no sé a qué hora abrir.",
+      "accept": [],
+      "why": "*Como no* plus the subjunctive does the job of *si no*."
+    },
+    {
+      "prompt": "Rewrite it with *de*: *Si hubiera llegado antes, habría visto a Hernando.* becomes: Had I arrived earlier, I would have seen Hernando.",
+      "answer": "De haber llegado antes, habría visto a Hernando.",
+      "accept": ["De haber llegado antes habría visto a Hernando."],
+      "why": "*Si hubiera* becomes *de haber*, and the rest stays."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Como no llegas a tiempo, nos vamos sin ti.",
+      "right": "Como no llegues a tiempo, nos vamos sin ti.",
+      "why": "Almost. A warning with *como* needs the subjunctive: *llegues*. With *llegas*, *como* sounds like \"since\"."
+    },
+    {
+      "wrong": "Si haberlo sabido, no habría venido.",
+      "right": "De haberlo sabido, no habría venido.",
+      "why": "Almost. *Si* does not go before the infinitive; this one starts with *de*."
+    },
+    {
+      "wrong": "Te presto el carro, con tal de que me lo devuelves hoy.",
+      "right": "Te presto el carro, con tal de que me lo devuelvas hoy.",
+      "why": "Almost. After *con tal de que* the verb is in the subjunctive."
+    },
+    {
+      "wrong": "Abrimos mañana, a no ser que llueve mucho.",
+      "right": "Abrimos mañana, a no ser que llueva mucho.",
+      "why": "Almost. *A no ser que* always takes the subjunctive: *llueva*."
+    }
+  ],
+  "personal": "Make a promise or a warning to a friend, something true for you. Use *con tal de que* or *como no*."
+}
