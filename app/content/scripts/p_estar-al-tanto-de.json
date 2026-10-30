@@ -1,0 +1,179 @@
+{
+  "node": "p:estar-al-tanto-de",
+  "hook": {
+    "line": "In a café where everyone has news, the useful question is who is in the know. Spanish has a neat phrase for being up to date, and another for knowing just a little.",
+    "es": "¿Está al tanto de los cambios?",
+    "en": "Are you up to date on the changes? (formal)"
+  },
+  "examples": [
+    {
+      "es": "¿Está al tanto de los cambios?",
+      "en": "Are you up to date on the changes? (formal)"
+    },
+    {
+      "es": "Mariana siempre está al tanto de todo.",
+      "en": "Mariana is always up to date on everything."
+    },
+    {
+      "es": "Sí, estoy al tanto, gracias.",
+      "en": "Yes, I'm up to date, thanks."
+    },
+    {
+      "es": "Estamos informados de que hubo un retraso.",
+      "en": "We have been informed that there was a delay."
+    },
+    {
+      "es": "Tengo nociones de cocina.",
+      "en": "I have some knowledge of cooking."
+    }
+  ],
+  "rule": "*Estar al tanto de* is \"to be up to date on\" something. Always *estar*, because it is a state: *estoy al tanto*, *está al tanto*, *están al tanto*. After *de* put what you know about.\n\n*Estoy al tanto de lo que pasó.*\n\nMore formal is *estar informado de*. For a little knowledge, not mastery, use *tener nociones de*: *Tengo nociones de cocina* (I know the basics).",
+  "smallPrint": "Teachers call *estar al tanto de* an idiomatic expression of awareness (*locución*).",
+  "readAndPick": [
+    {
+      "es": "Estoy al tanto.",
+      "options": [
+        "I'm up to date.",
+        "I'm in a hurry.",
+        "I'm not sure."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Está al tanto de los cambios?",
+      "options": [
+        "Are you up to date on the changes? (formal)",
+        "Are you up to date on the changes? (to a friend)",
+        "Is he up to date on the changes?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estamos informados de que hubo un retraso.",
+      "options": [
+        "We have been informed that there was a delay.",
+        "They have been informed that there was a delay.",
+        "I was informed that there was a delay."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tengo nociones de cocina.",
+      "options": [
+        "I'm an expert cook.",
+        "I know a little about cooking.",
+        "I want to cook."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mariana siempre está al tanto de todo.",
+      "options": [
+        "Mariana never knows anything.",
+        "Mariana always knows about everything.",
+        "Mariana is always in a hurry."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No estoy al tanto de eso.",
+      "options": [
+        "I'm not up to date on that.",
+        "I'm up to date on that.",
+        "I'm not here for that."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Están al tanto de la situación.",
+      "options": [
+        "I'm up to date on the situation.",
+        "They are up to date on the situation.",
+        "We are up to date on the situation."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tienen nociones de periodismo.",
+      "options": [
+        "They are experts in journalism.",
+        "They have some knowledge of journalism.",
+        "They want to study journalism."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Estás al tanto de lo que pasó?",
+      "options": [
+        "Are you up to date on what happened? (to a friend)",
+        "Are you up to date on what happened? (formal)",
+        "Am I up to date on what happened?"
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *estoy* or *soy*, and type the whole sentence: I'm up to date on the changes.",
+      "answer": "Estoy al tanto de los cambios.",
+      "accept": [],
+      "why": "Being informed is a state, so it takes *estar*."
+    },
+    {
+      "prompt": "Type in Spanish, formal: Are you up to date on the changes?",
+      "answer": "¿Está al tanto de los cambios?",
+      "accept": [
+        "¿Usted está al tanto de los cambios?"
+      ],
+      "why": "*Usted* takes *está*."
+    },
+    {
+      "prompt": "Type in Spanish: Mariana is always up to date on everything.",
+      "answer": "Mariana siempre está al tanto de todo.",
+      "accept": [],
+      "why": "*Siempre* can sit before *está*."
+    },
+    {
+      "prompt": "Make it negative: *Estoy al tanto de eso.* (I'm not up to date on that.)",
+      "answer": "No estoy al tanto de eso.",
+      "accept": [],
+      "why": "*No* goes before the verb."
+    },
+    {
+      "prompt": "Type in Spanish: We are up to date on the situation.",
+      "answer": "Estamos al tanto de la situación.",
+      "accept": [],
+      "why": "For *we*, *estamos*."
+    },
+    {
+      "prompt": "Type in Spanish: I have some knowledge of cooking.",
+      "answer": "Tengo nociones de cocina.",
+      "accept": [],
+      "why": "*Tener nociones de* is for knowing just the basics."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Are you up to date on what happened?",
+      "answer": "¿Estás al tanto de lo que pasó?",
+      "accept": [],
+      "why": "To a friend, *estás*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Soy al tanto de los cambios.",
+      "right": "Estoy al tanto de los cambios.",
+      "why": "Almost. Being informed is a state, and states use *estar*."
+    },
+    {
+      "wrong": "Estoy al tanto con los cambios.",
+      "right": "Estoy al tanto de los cambios.",
+      "why": "The phrase always links to what you know with *de*."
+    },
+    {
+      "wrong": "Estoy al tanto de que sobre eso.",
+      "right": "Estoy al tanto de eso.",
+      "why": "Choose one: *de eso* for a thing, *de que* before a full clause."
+    }
+  ],
+  "personal": "Say what you are up to date on in your own life, with *Estoy al tanto de…*."
+}

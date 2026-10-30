@@ -1,0 +1,212 @@
+{
+  "node": "g:future-perfect",
+  "hook": {
+    "line": "Mariana has been waiting for her source for an hour, and he isn't answering. Everyone at the café starts guessing what happened, and Spanish has a compact way to guess about the past.",
+    "es": "No contesta; se habrá dormido.",
+    "en": "He's not answering; he must have fallen asleep."
+  },
+  "examples": [
+    {
+      "es": "No contesta; se habrá dormido.",
+      "en": "He's not answering; he must have fallen asleep."
+    },
+    {
+      "es": "Habrán llegado ya.",
+      "en": "They'll have arrived by now."
+    },
+    {
+      "es": "¿Dónde habré dejado las llaves?",
+      "en": "Where can I have left my keys?"
+    },
+    {
+      "es": "Mariana no ha llegado. Se habrá perdido.",
+      "en": "Mariana hasn't arrived. She must have got lost."
+    },
+    {
+      "es": "Ya habrás leído el mensaje.",
+      "en": "You'll have read the message by now (to a friend)."
+    },
+    {
+      "es": "¿Quién habrá dejado esta taza aquí?",
+      "en": "Who can have left this cup here?"
+    },
+    {
+      "es": "Para el viernes ya habremos terminado.",
+      "en": "By Friday we'll have finished."
+    }
+  ],
+  "rule": "You already know how to guess about now: *Estará en casa* (he's probably home). To guess about something that already happened, add a second piece: the future of *haber* plus the *-ado* or *-ido* word.\n\n*habré*, *habrás*, *habrá*, *habremos*, *habrán* + *dormido*, *llegado*, *dejado*\n\n*Se ha dormido* is a fact: he has fallen asleep. *Se habrá dormido* is your guess: he must have fallen asleep. English says \"must have\", \"will have\" or \"can have\". Spanish just changes *ha* to *habrá*.\n\nThe ending word never changes (*habrán llegado*, never *llegados*), and nothing goes between the two pieces. Put *ya* before them.\n\nThe same form also looks ahead to a deadline: *Para el viernes habremos terminado* (by Friday we'll have finished).",
+  "smallPrint": "Teachers call this the future perfect (*futuro perfecto*): when it guesses about the past, it is the future perfect of probability.",
+  "readAndPick": [
+    {
+      "es": "Se habrá dormido.",
+      "options": [
+        "He must have fallen asleep.",
+        "He fell asleep.",
+        "He is falling asleep."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se ha dormido.",
+      "options": [
+        "He must have fallen asleep.",
+        "He has fallen asleep."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Habrán llegado ya.",
+      "options": [
+        "They have arrived.",
+        "They arrive soon.",
+        "They must have arrived by now."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Llegarán pronto.",
+      "options": [
+        "They must have arrived.",
+        "They will probably arrive soon."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Dónde habré dejado el celular?",
+      "options": [
+        "Where did you leave the phone?",
+        "Where will I leave the phone?",
+        "Where can I have left my phone?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mariana ya lo habrá leído.",
+      "options": [
+        "Mariana has read it.",
+        "Mariana must have read it by now.",
+        "Mariana will read it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ya habrás leído el mensaje.",
+      "options": [
+        "You must have read the message by now (to a friend).",
+        "I must have read the message by now.",
+        "You will see the news (to a friend)."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Don Hernando se habrá ido a casa.",
+      "options": [
+        "Don Hernando is going home.",
+        "Don Hernando went home.",
+        "Don Hernando must have gone home."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Nos habremos equivocado de calle.",
+      "options": [
+        "They must have taken the wrong street.",
+        "We must have taken the wrong street.",
+        "I must have taken the wrong street."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Mariana doesn't answer her phone. Guess: she must have fallen asleep. Choose *se habrá dormido* or *se ha dormido*, then type the whole sentence.",
+      "answer": "Mariana se habrá dormido.",
+      "accept": [
+        "Se habrá dormido Mariana.",
+        "Se habrá dormido."
+      ],
+      "why": "A guess about the past uses *habrá*; *ha* would state it as a fact."
+    },
+    {
+      "prompt": "Choose *habrán llegado* or *han llegado*, and type the whole sentence: They must have arrived by now.",
+      "answer": "Habrán llegado ya.",
+      "accept": [
+        "Ya habrán llegado."
+      ],
+      "why": "*Must have* is a guess, so the form is *habrán*; *ya* goes before or after the pair, never inside it."
+    },
+    {
+      "prompt": "Type in Spanish: Where can I have left my keys?",
+      "answer": "¿Dónde habré dejado las llaves?",
+      "accept": [
+        "¿Dónde habré dejado mis llaves?"
+      ],
+      "why": "*I* in a guess is *habré*, followed by *dejado*."
+    },
+    {
+      "prompt": "Type in Spanish: Don Hernando must have gone home.",
+      "answer": "Don Hernando se habrá ido a casa.",
+      "accept": [
+        "Se habrá ido a casa don Hernando."
+      ],
+      "why": "*Se habrá ido* is the guess about someone leaving; the little word *se* stays in front."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: You must have read the message by now.",
+      "answer": "Ya habrás leído el mensaje.",
+      "accept": [
+        "habrás leído ya el mensaje.",
+        "Habrás leído el mensaje ya."
+      ],
+      "why": "To a friend the form is *habrás*."
+    },
+    {
+      "prompt": "Turn the fact into a guess: *Vale se ha ido.* Vale must have left.",
+      "answer": "Vale se habrá ido.",
+      "accept": [
+        "Se habrá ido Vale."
+      ],
+      "why": "Swap *ha* for *habrá* and keep the last word the same."
+    },
+    {
+      "prompt": "Make it about we: We must have made a mistake.",
+      "answer": "Nos habremos equivocado.",
+      "accept": [
+        "Nos habremos equivocado."
+      ],
+      "why": "*We* is *habremos*, and *nos* comes before it."
+    },
+    {
+      "prompt": "Type in Spanish: Who can have left this cup here?",
+      "answer": "¿Quién habrá dejado esta taza aquí?",
+      "accept": [
+        "¿Quién habrá dejado aquí esta taza?"
+      ],
+      "why": "A question that wonders about the past uses the same *habrá* plus *dejado*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Habrán llegados ya.",
+      "right": "Habrán llegado ya.",
+      "why": "Almost. The last word never changes for gender or number after *haber*."
+    },
+    {
+      "wrong": "Habrá ya llegado.",
+      "right": "Ya habrá llegado.",
+      "why": "Nothing can sit between *habrá* and the last word, so *ya* moves in front."
+    },
+    {
+      "wrong": "Ayer habré visto a Mariana.",
+      "right": "Ayer vi a Mariana.",
+      "why": "This form is for guessing or for a deadline, not for saying what you know happened."
+    },
+    {
+      "wrong": "Se habra dormido.",
+      "right": "Se habrá dormido.",
+      "why": "The accent on the last syllable of *habrá* is always there."
+    }
+  ],
+  "personal": "Think of someone who hasn't answered you today. Guess what happened with *se habrá…* or *habrá…*."
+}

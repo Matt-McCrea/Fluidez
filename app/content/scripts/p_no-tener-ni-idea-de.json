@@ -1,0 +1,181 @@
+{
+  "node": "p:no-tener-ni-idea-de",
+  "hook": {
+    "line": "Sooner or later someone asks you something you truly cannot answer. Spanish has a friendly, slightly stronger way to say so than a plain \"I don't know\".",
+    "es": "No tengo ni idea de dónde están las llaves.",
+    "en": "I have no idea where the keys are."
+  },
+  "examples": [
+    {
+      "es": "No tengo ni idea de qué hacer.",
+      "en": "I have no idea what to do."
+    },
+    {
+      "es": "No tengo ni idea de dónde están las llaves.",
+      "en": "I have no idea where the keys are."
+    },
+    {
+      "es": "No tienes ni idea de cuántos años tiene don Hernando.",
+      "en": "You have no idea how old don Hernando is (to a friend)."
+    },
+    {
+      "es": "No tenía ni idea de que estuvieras en Bogotá.",
+      "en": "I had no idea you were in Bogotá."
+    },
+    {
+      "es": "¿Quién llamó?\nNi idea.",
+      "en": "Who called?\nNo idea."
+    }
+  ],
+  "rule": "*No tengo ni idea de* is \"I have no idea\" with a little extra push: *ni* means not even. After *de*, put a question word (*qué*, *dónde*, *quién*, *cuánto*) or a noun.\n\n*No tengo ni idea de qué hacer.*\n\nIt bends like *tener*: *no tienes ni idea*, *no tiene ni idea*, *no teníamos ni idea*.\n\nFor something you did not know was true, use *de que*. In the past, the next verb is usually in the \"-ra\" form: *No tenía ni idea de que estuvieras aquí.* Among friends, a bare *Ni idea* is a complete answer.",
+  "smallPrint": "Teachers call *ni idea* an emphatic negative expression of ignorance (*expresión de desconocimiento*).",
+  "readAndPick": [
+    {
+      "es": "No tengo ni idea de qué hacer.",
+      "options": [
+        "I have no idea what to do.",
+        "I have an idea of what to do.",
+        "I did not know what to do."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tengo una idea.",
+      "options": [
+        "I have no idea.",
+        "I have an idea."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No tienes ni idea de cuántos años tiene don Hernando.",
+      "options": [
+        "I have no idea how old don Hernando is.",
+        "You have no idea how old don Hernando is."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No tenía ni idea de que estuvieras aquí.",
+      "options": [
+        "I have no idea you are here.",
+        "I had no idea you were here.",
+        "I will have no idea you are here."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No tenemos ni idea de dónde está.",
+      "options": [
+        "We have no idea where it is.",
+        "They have no idea where it is.",
+        "I have no idea where it is."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No tienen ni idea de quién es.",
+      "options": [
+        "He has no idea who it is.",
+        "They have no idea who it is.",
+        "You have no idea who it is (to a friend)."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ni idea.",
+      "options": [
+        "No idea.",
+        "I have an idea.",
+        "What an idea."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No teníamos ni idea de dónde estaba.",
+      "options": [
+        "We have no idea where he is.",
+        "We had no idea where he was.",
+        "We will have no idea where he is."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No tiene ni idea de cocinar.",
+      "options": [
+        "She has no idea how to cook.",
+        "She has no idea what is cooking.",
+        "They have no idea how to cook."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *tengo* or *tienes*, and type the whole sentence: I have no idea what to do.",
+      "answer": "No tengo ni idea de qué hacer.",
+      "accept": [],
+      "why": "*I* goes with *tengo*, and *qué* asks what."
+    },
+    {
+      "prompt": "Type in Spanish: I have no idea where the keys are.",
+      "answer": "No tengo ni idea de dónde están las llaves.",
+      "accept": [],
+      "why": "After *de* comes the question word, then the clause."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: You have no idea how old don Hernando is.",
+      "answer": "No tienes ni idea de cuántos años tiene don Hernando.",
+      "accept": [
+        "No tienes ni idea de cuántos años tiene don Hernando."
+      ],
+      "why": "To a friend, *tener* becomes *tienes*."
+    },
+    {
+      "prompt": "Type in Spanish: We have no idea who it is.",
+      "answer": "No tenemos ni idea de quién es.",
+      "accept": [
+        "No tenemos ni idea de quién es él."
+      ],
+      "why": "For *we*, *tenemos*; *quién* is who."
+    },
+    {
+      "prompt": "Say it in the past: *No tengo ni idea de dónde está.* (We had no idea where it was.)",
+      "answer": "No teníamos ni idea de dónde estaba.",
+      "accept": [],
+      "why": "Past and plural: *teníamos* and *estaba*."
+    },
+    {
+      "prompt": "Type in Spanish: They have no idea how to cook.",
+      "answer": "No tienen ni idea de cocinar.",
+      "accept": [],
+      "why": "With a verb after *de*, use the plain infinitive."
+    },
+    {
+      "prompt": "Type the quick friend answer to *¿Quién llamó?*: No idea.",
+      "answer": "Ni idea.",
+      "accept": [
+        "Ni idea"
+      ],
+      "why": "Among friends, *ni idea* alone is enough."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No tengo idea qué hacer.",
+      "right": "No tengo ni idea de qué hacer.",
+      "why": "The little word *de* links the idea to what comes after."
+    },
+    {
+      "wrong": "Tengo ni idea de qué hacer.",
+      "right": "No tengo ni idea de qué hacer.",
+      "why": "*Ni idea* needs *no* before the verb, just like English \"no idea\"."
+    },
+    {
+      "wrong": "No tenía ni idea de que estás aquí.",
+      "right": "No tenía ni idea de que estuvieras aquí.",
+      "why": "After *no tenía ni idea de que*, Spanish uses the \"-ra\" form for something you did not expect."
+    }
+  ],
+  "personal": "Say one thing you honestly have no idea about, with *No tengo ni idea de…*."
+}

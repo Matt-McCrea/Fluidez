@@ -1,0 +1,189 @@
+{
+  "node": "p:es-verdad-eso-de-que",
+  "hook": {
+    "line": "A rumour is going around the block and you want to check it politely, without calling anyone a liar. Spanish lets you hold a claim at arm's length.",
+    "es": "¿Es verdad eso de que van a cerrar la sede?",
+    "en": "Is it true that they're going to close the office?"
+  },
+  "examples": [
+    {
+      "es": "¿Es verdad eso de que van a cerrar la sede?",
+      "en": "Is it true that they're going to close the office?"
+    },
+    {
+      "es": "¿Es cierto que te ganaste la lotería?",
+      "en": "Is it true that you won the lottery?"
+    },
+    {
+      "es": "Vienes el sábado, ¿cierto?",
+      "en": "You're coming on Saturday, right?"
+    },
+    {
+      "es": "Usted firmó el contrato, ¿no es así?",
+      "en": "You signed the contract, isn't that so? (formal)"
+    },
+    {
+      "es": "¿Es verdad que Vale se va a Medellín?",
+      "en": "Is it true that Vale is moving to Medellín?"
+    }
+  ],
+  "rule": "To check a claim, ask *¿Es verdad que…?* or *¿Es cierto que…?* and then say the claim as normal, with an ordinary verb.\n\nAdding *eso de* makes it a rumour you have heard: *¿Es verdad eso de que…?* It sounds like \"is it true, all this about…?\"\n\nTo confirm something you think you know, put *¿cierto?* at the end, as English does with \"right?\". Formal speech uses *¿no es así?*.",
+  "smallPrint": "Teachers call *¿cierto?* and *¿no es así?* confirmation tags (*coletillas de confirmación*).",
+  "readAndPick": [
+    {
+      "es": "¿Es verdad eso de que van a cerrar la sede?",
+      "options": [
+        "Is it true that they will close the office?",
+        "Did they close the office?",
+        "They will close the office, right?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vienes el sábado, ¿cierto?",
+      "options": [
+        "Are you coming on Saturday?",
+        "You're coming on Saturday, right?",
+        "You came on Saturday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Es cierto que te ganaste la lotería?",
+      "options": [
+        "Is it true that you won the lottery?",
+        "You will win the lottery.",
+        "I won the lottery."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Usted firmó el contrato, ¿no es así?",
+      "options": [
+        "You signed the contract, isn't that so? (formal)",
+        "You signed the contract, right? (to a friend)",
+        "I signed the contract."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Es verdad que Vale se va a Medellín?",
+      "options": [
+        "Vale went to Medellín.",
+        "Is it true that Vale is moving to Medellín?",
+        "Vale is not going to Medellín."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Eso de que se va a Medellín.",
+      "options": [
+        "That talk about her moving to Medellín.",
+        "She is going to Medellín tomorrow.",
+        "I want to go to Medellín."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Es cierto que cerraron la sede?",
+      "options": [
+        "Is it true that they will close the office?",
+        "Is it true that they closed the office?",
+        "They never closed the office."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hablas con Mariana, ¿cierto?",
+      "options": [
+        "You talk to Mariana, right?",
+        "Do I talk to Mariana?",
+        "Talk to Mariana."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Es verdad eso de que Altamira compró la cuadra?",
+      "options": [
+        "Is it true that Altamira is going to buy the block?",
+        "Is it true that Altamira bought the block?",
+        "Altamira did not buy the block."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *verdad* or *cierto*, and type the whole sentence: Is it true that you won the lottery? (to a friend)",
+      "answer": "¿Es verdad que te ganaste la lotería?",
+      "accept": [
+        "¿Es cierto que te ganaste la lotería?"
+      ],
+      "why": "Both *verdad* and *cierto* work; the claim after *que* is a normal sentence."
+    },
+    {
+      "prompt": "Type in Spanish: Is it true that they're going to close the office?",
+      "answer": "¿Es verdad eso de que van a cerrar la sede?",
+      "accept": [
+        "¿Es cierto eso de que van a cerrar la sede?"
+      ],
+      "why": "*Eso de* holds the rumour at a distance."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: You're coming on Saturday, right?",
+      "answer": "Vienes el sábado, ¿cierto?",
+      "accept": [
+        "¿Vienes el sábado, cierto?"
+      ],
+      "why": "Close the sentence with *¿cierto?*."
+    },
+    {
+      "prompt": "Type in Spanish, formal: You signed the contract, isn't that so?",
+      "answer": "Usted firmó el contrato, ¿no es así?",
+      "accept": [
+        "Firmó el contrato, ¿no es así?"
+      ],
+      "why": "*¿No es así?* is the polite tag."
+    },
+    {
+      "prompt": "Type in Spanish: Is it true that Vale is moving to Medellín?",
+      "answer": "¿Es verdad que Vale se va a Medellín?",
+      "accept": [
+        "¿Es cierto que Vale se va a Medellín?"
+      ],
+      "why": "The claim after *que* keeps its normal verb."
+    },
+    {
+      "prompt": "Turn the statement into a check: *Altamira compró la cuadra.* Is it true that Altamira bought the block?",
+      "answer": "¿Es verdad que Altamira compró la cuadra?",
+      "accept": [
+        "¿Es cierto que Altamira compró la cuadra?"
+      ],
+      "why": "Put *¿Es verdad que…?* in front and keep the sentence."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: You talk to Mariana, right?",
+      "answer": "Hablas con Mariana, ¿cierto?",
+      "accept": [],
+      "why": "Tag questions go at the end."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Es verdad que cierren la sede?",
+      "right": "¿Es verdad que cierran la sede?",
+      "why": "Almost. When you check a claim, the verb stays in its normal form."
+    },
+    {
+      "wrong": "¿Es verdad de que van a cerrar?",
+      "right": "¿Es verdad que van a cerrar?",
+      "why": "No *de* here; only *eso de que* has one."
+    },
+    {
+      "wrong": "¿Es verdad eso que van a cerrar?",
+      "right": "¿Es verdad eso de que van a cerrar?",
+      "why": "The phrase is *eso de que*, with *de*."
+    }
+  ],
+  "personal": "Think of a rumour you heard lately and check it with *¿Es verdad eso de que…?*."
+}

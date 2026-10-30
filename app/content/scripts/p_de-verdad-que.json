@@ -1,0 +1,183 @@
+{
+  "node": "p:de-verdad-que",
+  "hook": {
+    "line": "Someone tells you something outrageous and a plain \"really?\" does not cover it. Spanish has a few ways to push back, from a shocked reaction to a pointed question.",
+    "es": "¡¿De verdad que te fuiste sin decirme nada?!",
+    "en": "You really left without telling me anything?!"
+  },
+  "examples": [
+    {
+      "es": "¡¿De verdad que te fuiste sin decirme nada?!",
+      "en": "You really left without telling me anything?!"
+    },
+    {
+      "es": "¡¿En serio te vas mañana?!",
+      "en": "Are you seriously leaving tomorrow?!"
+    },
+    {
+      "es": "¿Cómo puedes decir que no te importa?",
+      "en": "How can you say you don't care?"
+    },
+    {
+      "es": "¿Cómo puede afirmar eso sin evidencia?",
+      "en": "How can you claim that without evidence? (formal)"
+    }
+  ],
+  "rule": "For shock, start with *¡¿De verdad que…?!* or *¡¿En serio…?!* and then say the news as a normal sentence. The double marks *¡¿ ?!* show you are both surprised and asking.\n\nTo challenge a claim, ask *¿Cómo puedes decir que…?* to a friend, or *¿Cómo puede afirmar…?* to someone you address as *usted*. It means \"how can you say that?\" and it sounds sharp, so keep it for when you mean it.",
+  "smallPrint": "Teachers call this a rhetorical question of surprise or challenge (*pregunta retórica*).",
+  "readAndPick": [
+    {
+      "es": "¡¿De verdad que te fuiste?!",
+      "options": [
+        "You really left?!",
+        "Will you leave?",
+        "I really left."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡¿En serio te vas mañana?!",
+      "options": [
+        "Are you seriously leaving tomorrow?!",
+        "I am leaving tomorrow.",
+        "Did you leave yesterday?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Cómo puedes decir que no te importa?",
+      "options": [
+        "How can I say that I don't care?",
+        "How can you say you don't care?",
+        "Why does it not matter?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Cómo puede afirmar eso sin evidencia?",
+      "options": [
+        "How can you claim that without evidence? (formal)",
+        "How can you claim that without evidence? (to a friend)",
+        "How can I claim that without evidence?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡¿De verdad que vendieron la casa?!",
+      "options": [
+        "You really sold the house?!",
+        "They really sold the house?!",
+        "I really sold the house?!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Cómo puedes pensar eso?",
+      "options": [
+        "How can you think that?",
+        "How can I think that?",
+        "Why do they think that?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡¿En serio llegaste a las cinco?!",
+      "options": [
+        "Are you seriously arriving at five?!",
+        "Did you seriously arrive at five?!",
+        "I seriously arrive at five."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡¿De verdad que no sabes nada?!",
+      "options": [
+        "I really know nothing?!",
+        "You really know nothing?!",
+        "They really know nothing?!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Cómo puede decir que no sabe nada?",
+      "options": [
+        "How can he say he knows nothing?",
+        "How can I say I know nothing?",
+        "How can you say you know nothing (to a friend)?"
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *de verdad que* or *en serio*, and type the whole sentence: You really left without telling me anything?!",
+      "answer": "¡¿De verdad que te fuiste sin decirme nada?!",
+      "accept": [
+        "¡¿En serio te fuiste sin decirme nada?!"
+      ],
+      "why": "Both open a shocked question; *que* follows only *de verdad*."
+    },
+    {
+      "prompt": "Type in Spanish: Are you seriously leaving tomorrow?",
+      "answer": "¡¿En serio te vas mañana?!",
+      "accept": [
+        "¡¿De verdad que te vas mañana?!"
+      ],
+      "why": "Use the double marks for surprise."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: How can you say you don't care?",
+      "answer": "¿Cómo puedes decir que no te importa?",
+      "accept": [],
+      "why": "*Puedes* is the friend form; the claim after *que* is normal."
+    },
+    {
+      "prompt": "Type in Spanish, formal: How can you claim that without evidence?",
+      "answer": "¿Cómo puede afirmar eso sin evidencia?",
+      "accept": [
+        "¿Cómo puede usted afirmar eso sin evidencia?"
+      ],
+      "why": "*Puede* is the *usted* form."
+    },
+    {
+      "prompt": "Type in Spanish: They really sold the house?!",
+      "answer": "¡¿De verdad que vendieron la casa?!",
+      "accept": [
+        "¡¿En serio vendieron la casa?!"
+      ],
+      "why": "The news after *que* is an ordinary sentence."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: How can you think that?",
+      "answer": "¿Cómo puedes pensar eso?",
+      "accept": [],
+      "why": "*Pensar* works the same as *decir* here."
+    },
+    {
+      "prompt": "Type in Spanish: You really know nothing?! (to a friend)",
+      "answer": "¡¿De verdad que no sabes nada?!",
+      "accept": [
+        "¡¿En serio no sabes nada?!"
+      ],
+      "why": "Keep *no* before the verb."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¡¿De verdad que te vayas?!",
+      "right": "¡¿De verdad que te vas?!",
+      "why": "After *de verdad que*, the verb stays in its normal form."
+    },
+    {
+      "wrong": "¿Cómo puedes decir que no te importe?",
+      "right": "¿Cómo puedes decir que no te importa?",
+      "why": "You are quoting what the person said, so the verb stays normal."
+    },
+    {
+      "wrong": "De verdad que te fuiste?",
+      "right": "¿De verdad que te fuiste?",
+      "why": "A Spanish question always opens with its own upside-down mark."
+    }
+  ],
+  "personal": "Think of something surprising a friend might tell you and react with *¡¿De verdad que…?!*."
+}

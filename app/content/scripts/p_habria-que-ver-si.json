@@ -1,0 +1,179 @@
+{
+  "node": "p:habria-que-ver-si",
+  "hook": {
+    "line": "Everyone promises things in this neighborhood: the work will be ready, the permit will come. You do not want to say \"I don't believe you\", only \"let's wait and see\".",
+    "es": "Dijeron que la obra estará lista en marzo; habría que ver si es verdad.",
+    "en": "They said the building work will be finished in March; we'll have to see if it's true."
+  },
+  "examples": [
+    {
+      "es": "Dijeron que la obra estará lista en marzo; habría que ver si es verdad.",
+      "en": "They said the building work will be finished in March; we'll have to see if it's true."
+    },
+    {
+      "es": "Habría que ver si nos dan el permiso.",
+      "en": "It remains to be seen whether they'll give us permission."
+    },
+    {
+      "es": "Habría que ver si Altamira dice la verdad.",
+      "en": "We'd have to see whether Altamira is telling the truth."
+    },
+    {
+      "es": "Dijeron que llega a las ocho; habría que ver si llega a tiempo.",
+      "en": "They said he arrives at eight; we'd have to see if he arrives on time."
+    }
+  ],
+  "rule": "*Habría que ver si* is a polite way to doubt something: it remains to be seen whether it is true. It never names who should check, so nobody gets accused.\n\nAfter *si*, use a normal verb, as in English: *habría que ver si es verdad*, *si nos dan el permiso*.\n\nIt often follows a claim you have just heard: *Dijeron que… habría que ver si…*. There is no *que* after *si*, and no subjunctive.",
+  "smallPrint": "Teachers call this an impersonal conditional used to express scepticism (*escepticismo cortés*).",
+  "readAndPick": [
+    {
+      "es": "Habría que ver si es verdad.",
+      "options": [
+        "We'd have to see if it's true.",
+        "It is true.",
+        "I saw that it's true."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Habría que ver si nos dan el permiso.",
+      "options": [
+        "They gave us the permit.",
+        "It remains to be seen whether they'll give us the permit.",
+        "We must give them the permit."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Habría que ver si Altamira dice la verdad.",
+      "options": [
+        "Altamira tells the truth.",
+        "We'd have to see whether Altamira is telling the truth.",
+        "Altamira would have to see the truth."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Dijeron que llega a las ocho; habría que ver.",
+      "options": [
+        "They said he arrives at eight; we'll have to see.",
+        "He arrived at eight.",
+        "I know he arrives at eight."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Habría que ver si llega a tiempo.",
+      "options": [
+        "It remains to be seen whether he arrives on time.",
+        "He arrives on time.",
+        "He should arrive on time."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Habría que ver si de verdad lo hizo.",
+      "options": [
+        "He really did it.",
+        "We'd have to see whether he really did it.",
+        "He would really do it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Habría que ver si es cierto.",
+      "options": [
+        "We'd have to see if it's true.",
+        "It's certainly true.",
+        "I would like to see it."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Dijeron que la obra estará lista; habría que ver si es verdad.",
+      "options": [
+        "They said the work will be ready; we'd have to see if it's true.",
+        "The work is ready.",
+        "The work was ready."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Habría que ver si te creen.",
+      "options": [
+        "We'd have to see whether they believe you.",
+        "They believe you.",
+        "You would have to believe them."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *es* or *sea*, and type the whole sentence: We'd have to see if it's true.",
+      "answer": "Habría que ver si es verdad.",
+      "accept": [
+        "Habría que ver si es cierto."
+      ],
+      "why": "After *si* use the normal verb *es*."
+    },
+    {
+      "prompt": "Type in Spanish: It remains to be seen whether they'll give us permission.",
+      "answer": "Habría que ver si nos dan el permiso.",
+      "accept": [],
+      "why": "*Nos dan* is the normal present; no subjunctive."
+    },
+    {
+      "prompt": "Type in Spanish: We'd have to see whether Altamira is telling the truth.",
+      "answer": "Habría que ver si Altamira dice la verdad.",
+      "accept": [],
+      "why": "The verb after *si* is the usual one."
+    },
+    {
+      "prompt": "Type in Spanish: We'd have to see if he arrives on time.",
+      "answer": "Habría que ver si llega a tiempo.",
+      "accept": [],
+      "why": "*Habría que ver si* plus a normal verb."
+    },
+    {
+      "prompt": "Add the doubt to the claim: *Dijeron que la obra estará lista.* They said the work will be ready; we'd have to see if it's true.",
+      "answer": "Dijeron que la obra estará lista; habría que ver si es verdad.",
+      "accept": [
+        "Dijeron que la obra estará lista, pero habría que ver si es verdad."
+      ],
+      "why": "Put the claim first, then the doubt."
+    },
+    {
+      "prompt": "Type in Spanish: We'd have to see whether they believe you.",
+      "answer": "Habría que ver si te creen.",
+      "accept": [],
+      "why": "*Te creen* is the normal verb after *si*."
+    },
+    {
+      "prompt": "Type in Spanish: We'd have to see if he really did it.",
+      "answer": "Habría que ver si de verdad lo hizo.",
+      "accept": [
+        "Habría que ver si lo hizo de verdad."
+      ],
+      "why": "*De verdad* keeps the doubt gentle."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Habría que ver que es verdad.",
+      "right": "Habría que ver si es verdad.",
+      "why": "Almost. You are asking whether, so you need *si*, not *que*."
+    },
+    {
+      "wrong": "Habría que ver si sea verdad.",
+      "right": "Habría que ver si es verdad.",
+      "why": "No subjunctive after *si*; the verb stays normal."
+    },
+    {
+      "wrong": "Tendría que ver si es verdad.",
+      "right": "Habría que ver si es verdad.",
+      "why": "*Tendría que* needs a someone; *habría que* is for nobody in particular."
+    }
+  ],
+  "personal": "Think of a promise you have heard lately and say *Habría que ver si…*."
+}
