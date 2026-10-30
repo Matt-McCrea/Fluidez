@@ -1,0 +1,241 @@
+{
+  "id": "sc-u55-b",
+  "unit": "u55",
+  "title": "Ventanilla tres",
+  "brief": "You're Tomás at the commercial registry window. The clerk is a stranger and a civil servant, so use usted all the way. You need to register the cooperative: say what is done, in what order, and ask what remains.",
+  "spare": false,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Funcionaria: Buenas. Pase, por favor. ¿Qué trámite viene a hacer hoy?",
+      "npcEn": "Clerk: Hello. Come up, please. What procedure are you here to do today?",
+      "intent": "Say you come to register a cooperative, and ask what you need (use usted).",
+      "accept": [
+        "Buenos días. Vengo a registrar una cooperativa. ¿Qué necesito?",
+        "Vengo a inscribir una cooperativa. ¿Qué documentos necesito?",
+        "Buenos días, señora. Quiero registrar nuestra cooperativa. ¿Qué debo traer?"
+      ],
+      "require": [
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        },
+        {
+          "type": "question"
+        }
+      ],
+      "focus": "g:questions",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Funcionaria: Primero lo primero: ¿ya tiene los estatutos?",
+      "npcEn": "Clerk: First things first: do you already have the statutes?",
+      "intent": "Say the statutes are approved and signed (use: an absolute phrase like Aprobados y firmados los estatutos,).",
+      "accept": [
+        "Aprobados los estatutos, solo falta el registro.",
+        "Firmados los estatutos, vengo a entregarlos.",
+        "Una vez aprobados los estatutos, los firmamos todos."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\b(aprobados|firmados|aprobado|firmado)\\b",
+          "flags": "iu",
+          "label": "use an absolute phrase: aprobados / firmados + noun"
+        }
+      ],
+      "focus": "g:absolute-constructions",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Funcionaria: Bien. Hay que entregar la solicitud con antelación, ¿sabe? Se atiende por orden de llegada.",
+      "npcEn": "Clerk: Good. The application has to be submitted in advance, you know. People are served in order of arrival.",
+      "intent": "Say you have all the papers with you already, and ask if you can leave them today (use usted).",
+      "accept": [
+        "Ya tengo todo aquí. ¿Puedo dejarlo hoy?",
+        "Traigo los papeles desde antes. ¿Se los puedo dejar hoy?",
+        "Todo está listo, señora. ¿Puedo entregárselo hoy?"
+      ],
+      "require": [
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        },
+        {
+          "type": "question"
+        }
+      ],
+      "focus": "x:antemano-antelacion",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Funcionaria: Sí. Tras la revisión de los documentos, le llamamos para la inscripción.",
+      "npcEn": "Clerk: Yes. After the review of the documents, we will call you for the registration.",
+      "intent": "Ask how long the review takes, using a noun (use: la revisión).",
+      "accept": [
+        "¿Cuánto tarda la revisión de los documentos?",
+        "¿Cuánto demora la revisión?",
+        "Perdone, ¿cuánto dura la revisión de los papeles?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\brevisión\\b",
+          "flags": "iu",
+          "label": "use: la revisión"
+        }
+      ],
+      "focus": "g:nominalisation",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Funcionaria: Unos cinco días hábiles. Dicho esto, el plazo para el registro vence en octubre.",
+      "npcEn": "Clerk: About five working days. That said, the deadline for registration runs out in October.",
+      "intent": "Thank her and say goodbye, politely.",
+      "accept": [
+        "Muchas gracias, señora. Que tenga un buen día.",
+        "Gracias por su ayuda. Hasta luego.",
+        "Se lo agradezco mucho. Buenos días."
+      ],
+      "require": [
+        {
+          "type": "avoidsPerson",
+          "person": "tú",
+          "label": "use usted, not tú"
+        }
+      ],
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:alo",
+    "c:aqui-tiene",
+    "c:bien-y-tu",
+    "c:gracias-de-nada",
+    "c:hago-salgo-vengo",
+    "c:hay",
+    "c:hay-que",
+    "c:hola-buenos-dias",
+    "c:por-favor",
+    "c:puedo",
+    "c:quiero",
+    "c:siga-siga",
+    "c:tengo",
+    "c:tienes",
+    "c:una-vez",
+    "g:adjective-agreement",
+    "g:commands-usted",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:indirect-objects",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:possessives",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:se-impersonal",
+    "g:stem-boot",
+    "g:subj-wishes",
+    "g:tener-que-hay-que",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:agradecer",
+    "l:antelación",
+    "l:antes",
+    "l:aprobar",
+    "l:aquí",
+    "l:atender",
+    "l:ayuda",
+    "l:bien",
+    "l:buen",
+    "l:buena",
+    "l:bueno",
+    "l:cooperativa",
+    "l:cuánto",
+    "l:deber",
+    "l:decir",
+    "l:dejar",
+    "l:demora",
+    "l:documento",
+    "l:durar",
+    "l:día",
+    "l:entregar",
+    "l:estar",
+    "l:estatuto",
+    "l:faltar",
+    "l:favor",
+    "l:firmar",
+    "l:funcionario",
+    "l:hacer",
+    "l:hoy",
+    "l:hábil",
+    "l:inscribirse",
+    "l:inscripción",
+    "l:listo",
+    "l:llamar",
+    "l:llegada",
+    "l:necesitar",
+    "l:octubre",
+    "l:orden",
+    "l:papel",
+    "l:pasar",
+    "l:perdonar",
+    "l:plazo",
+    "l:poder",
+    "l:querer",
+    "l:qué",
+    "l:registrar",
+    "l:registro",
+    "l:revisión",
+    "l:saber",
+    "l:señora",
+    "l:solicitud",
+    "l:tardar",
+    "l:tener",
+    "l:traer",
+    "l:trámite",
+    "l:vencer",
+    "l:venir",
+    "l:vez",
+    "p:ahora-bien-dicho-esto",
+    "p:aproximar-cifras",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:con-antelacion",
+    "p:con-sin",
+    "p:demonstratives-basic",
+    "p:durar-durante",
+    "p:entregar-recoger",
+    "p:gracias-por",
+    "p:llevar-traer",
+    "p:para-inf",
+    "p:por-orden-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:que-subj-deseo",
+    "p:quedar-faltar-sobrar",
+    "p:question-word-order",
+    "p:request-ladder",
+    "p:saber-conocer",
+    "p:sobre-todo-solo",
+    "p:tardar-en",
+    "p:te-lo-agradezco",
+    "p:time-sequence-basic",
+    "p:tras-inf",
+    "p:unos-approx",
+    "p:vencer-plazo"
+  ]
+}

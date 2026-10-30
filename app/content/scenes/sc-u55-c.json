@@ -1,0 +1,200 @@
+{
+  "id": "sc-u55-c",
+  "unit": "u55",
+  "title": "Del estatuto a la piscina",
+  "brief": "You're Tomás, on the phone with your cousin Yesid, who teases you about sounding like a form. He's family, so use tú. Explain what the cooperative needs in plain words, then wish him luck with his pool lessons.",
+  "spare": true,
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Yesid: Primo, me dicen que ahora hablas como un decreto. ¿Qué hicieron esta semana?",
+      "npcEn": "Yesid: Cousin, they tell me you now talk like a decree. What did you all do this week?",
+      "intent": "Say you all signed the statutes of the cooperative this week.",
+      "accept": [
+        "Firmamos los estatutos de la cooperativa esta semana.",
+        "Esta semana firmamos el estatuto de la cooperativa, primo.",
+        "Ya firmamos los estatutos, Yesid."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "firmar",
+          "tense": "preterito",
+          "person": "nosotros",
+          "label": "use: firmamos"
+        }
+      ],
+      "focus": "g:preterite-ar",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Yesid: ¿Y qué tengo que hacer yo? Dime en cristiano.",
+      "npcEn": "Yesid: And what do I have to do? Tell me in plain language.",
+      "intent": "Tell him all he has to do is sign here (use: basta con que + subjunctive).",
+      "accept": [
+        "Basta con que firmes aquí.",
+        "Basta con que firmes aquí, primo, nada más.",
+        "Solo basta con que firmes aquí."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bbasta con que firmes\\b",
+          "flags": "iu",
+          "label": "use: basta con que firmes"
+        }
+      ],
+      "focus": "p:basta-con",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Yesid: ¿Y el edificio? ¿Es de la cooperativa o de la familia?",
+      "npcEn": "Yesid: And the building? Is it the cooperative's or the family's?",
+      "intent": "Say it belongs to the family, whose members are now all associates (use: cuyos).",
+      "accept": [
+        "Es de la familia, cuyos miembros son ahora asociados.",
+        "Es de la familia, cuyos miembros somos todos asociados.",
+        "Es de nuestra familia, cuyos miembros firmamos como asociados."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bcuyos\\b",
+          "flags": "iu",
+          "label": "use: cuyos"
+        }
+      ],
+      "focus": "g:cuyo-relatives",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Yesid: Pues yo vine a Bogotá a enseñarle a nadar a Jhon Fredy. ¡Y no sabe flotar!",
+      "npcEn": "Yesid: Well, I came to Bogotá to teach Jhon Fredy to swim. And he can't float!",
+      "intent": "Wish him luck by saying you hope he learns soon (use: ojalá + subjunctive).",
+      "accept": [
+        "¡Ojalá aprenda pronto!",
+        "¡Ojalá aprenda a nadar antes de diciembre!",
+        "¡Ojalá no se hunda en la primera clase!"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "(?<![\\p{L}])ojalá(?![\\p{L}])",
+          "flags": "iu",
+          "label": "use: ojalá + subjunctive"
+        },
+        {
+          "type": "subjunctiveAfter",
+          "trigger": "ojalá",
+          "label": "after ojalá, use the subjunctive"
+        }
+      ],
+      "focus": "g:wish-exclamatives",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Yesid: Gracias, primo. Mañana te cuento. ¡Un abrazo!",
+      "npcEn": "Yesid: Thanks, cousin. Tomorrow I'll tell you. A hug!",
+      "intent": "Say goodbye warmly, to a relative (use tú).",
+      "accept": [
+        "Un abrazo, Yesid. Hablamos mañana.",
+        "Chao, primo. Cuídate mucho.",
+        "Hasta mañana, Yesid. Un abrazo para Jhon Fredy."
+      ],
+      "require": [
+        {
+          "type": "avoidsPerson",
+          "person": "ellos",
+          "label": "keep it to one person"
+        }
+      ],
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:chao-nos-vemos",
+    "c:gracias-de-nada",
+    "c:no-se",
+    "c:ojala",
+    "c:pues",
+    "c:que-tengo-que-hacer",
+    "c:tengo",
+    "c:tengo-que",
+    "c:un-abrazo",
+    "g:adjective-agreement",
+    "g:commands-tu",
+    "g:commands-with-pronouns",
+    "g:cuyo-relatives",
+    "g:gender-articles",
+    "g:indirect-objects",
+    "g:le-doubling",
+    "g:object-pronoun-position",
+    "g:possessives",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-value",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:abrazo",
+    "l:ahora",
+    "l:antes",
+    "l:aprender",
+    "l:aquí",
+    "l:asociado",
+    "l:asociarse",
+    "l:bastar",
+    "l:clase",
+    "l:contar",
+    "l:cooperativa",
+    "l:cristiano",
+    "l:cuidarse",
+    "l:decir",
+    "l:decreto",
+    "l:diciembre",
+    "l:edificio",
+    "l:enseñar",
+    "l:estatuto",
+    "l:familia",
+    "l:firmar",
+    "l:flotar",
+    "l:hablar",
+    "l:hacer",
+    "l:hundirse",
+    "l:mañana",
+    "l:miembro",
+    "l:nadar",
+    "l:primo",
+    "l:pronto",
+    "l:qué",
+    "l:saber",
+    "l:semana",
+    "l:ser",
+    "l:tener",
+    "l:venir",
+    "p:aqui-ahi-alla",
+    "p:basta-con",
+    "p:demonstratives-basic",
+    "p:me-te-nos-objects",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:para-inf",
+    "p:quantifiers-basic",
+    "p:que-subj-deseo",
+    "p:saber-conocer",
+    "p:saludos-de-mi-parte",
+    "p:sobre-todo-solo"
+  ]
+}
