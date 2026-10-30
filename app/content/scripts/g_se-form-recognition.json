@@ -1,0 +1,195 @@
+{
+  "node": "g:se-form-recognition",
+  "hook": {
+    "line": "Open an old novel, a legal letter or a newspaper editorial and you will meet *hubiese* and *fuese*. They look like new verbs. They are not: they are a twin of a form you already know, and spotting the twin is enough.",
+    "es": "Si lo hubiese sabido, no habría venido.",
+    "en": "If I had known, I wouldn't have come."
+  },
+  "examples": [
+    {
+      "es": "Si lo hubiese sabido, no habría venido.",
+      "en": "If I had known, I wouldn't have come."
+    },
+    {
+      "es": "Me pidió que fuese puntual.",
+      "en": "She asked me to be punctual."
+    },
+    {
+      "es": "Si tuviese más tiempo, viajaría más.",
+      "en": "If I had more time, I would travel more."
+    },
+    {
+      "es": "Querían que comiésemos con ellos.",
+      "en": "They wanted us to eat with them."
+    },
+    {
+      "es": "Me dijo que hablase más despacio.",
+      "en": "He told me to speak more slowly."
+    },
+    {
+      "es": "Si Rosa lo hubiese sabido, no lo habría vendido.",
+      "en": "If Rosa had known, she wouldn't have sold it."
+    },
+    {
+      "es": "Si lo hubiera sabido, no habría venido.",
+      "en": "If I had known, I wouldn't have come."
+    }
+  ],
+  "rule": "You already know the past subjunctive ending in *-ra*: *hubiera*, *fuera*, *tuviera*. It has a twin ending in *-se*, with exactly the same meaning and uses:\n*hubiese*, *fuese*, *tuviese*, *hablase*, *comiese*\n\nSo *Si lo hubiese sabido* and *Si lo hubiera sabido* are the same sentence.\n\nThe endings are *-se, -ses, -se, -semos, -seis, -sen*, and *nosotros* gets an accent: *hubiésemos*, *comiésemos*.\n\nIn Colombia you will see the *-se* form mostly in books, news and formal letters, so recognise it and keep saying the *-ra* form yourself.",
+  "smallPrint": "Teachers call this the imperfect subjunctive in *-se*. The *-ra* and *-se* forms are two spellings of one tense.",
+  "readAndPick": [
+    {
+      "es": "Si lo hubiese sabido, no habría venido.",
+      "options": [
+        "If I had known, I wouldn't have come.",
+        "If I know, I won't come.",
+        "If I knew, I wouldn't come."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me pidió que fuese puntual.",
+      "options": [
+        "She asks me to be punctual.",
+        "She asked me whether I was punctual.",
+        "She asked me to be punctual."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Si tuviese más tiempo, viajaría más.",
+      "options": [
+        "When I have more time, I travel more.",
+        "If I had more time, I would travel more.",
+        "If I had had more time, I would have traveled more."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Querían que comiésemos con ellos.",
+      "options": [
+        "They wanted us to eat with them.",
+        "They wanted to eat with us.",
+        "We wanted them to eat with us."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me dijo que hablase más despacio.",
+      "options": [
+        "He told me he speaks more slowly.",
+        "He told me to speak more slowly.",
+        "He will tell me to speak more slowly."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Si Rosa lo hubiese sabido, no lo habría vendido.",
+      "options": [
+        "If Rosa knew it, she wouldn't sell it.",
+        "Rosa knew it and didn't sell it.",
+        "If Rosa had known, she wouldn't have sold it."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Ojalá lo hubiese sabido.",
+      "options": [
+        "I hope I know it.",
+        "I wish I had known.",
+        "I wish I knew it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Si hubiésemos salido antes, no habríamos perdido el tren.",
+      "options": [
+        "If we had left earlier, we wouldn't have missed the train.",
+        "If they had left earlier, they wouldn't have missed the train.",
+        "If we leave earlier, we won't miss the train."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No creía que Hernando fuese tan fuerte.",
+      "options": [
+        "I don't think Hernando will be so strong.",
+        "Hernando isn't so strong.",
+        "I didn't think Hernando was so strong."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *hubiese* or *habría* and type the whole sentence: *Si lo ___ sabido, no habría venido.*",
+      "answer": "Si lo hubiese sabido, no habría venido.",
+      "accept": [
+        "Si lo hubiera sabido, no habría venido."
+      ],
+      "why": "The *if* half takes *hubiese* (or *hubiera*); *habría* belongs to the result half."
+    },
+    {
+      "prompt": "Pick *fuese* or *fue* and type the whole sentence: *Me pidió que ___ puntual.* (She asked me to be punctual.)",
+      "answer": "Me pidió que fuese puntual.",
+      "accept": [
+        "Me pidió que fuera puntual."
+      ],
+      "why": "After *pidió que*, the past subjunctive *fuese* (or *fuera*) is needed, not the simple past *fue*."
+    },
+    {
+      "prompt": "Say it using the *-se* form: If I had more time, I would travel more.",
+      "answer": "Si tuviese más tiempo, viajaría más.",
+      "accept": [
+        "Si tuviera más tiempo, viajaría más."
+      ],
+      "why": "*Tuviese* is *tuviera* with the *-se* ending, and the result half uses *viajaría*."
+    },
+    {
+      "prompt": "Say it using the *-se* form: They wanted us to eat with them.",
+      "answer": "Querían que comiésemos con ellos.",
+      "accept": [
+        "Querían que comiéramos con ellos."
+      ],
+      "why": "*Comiésemos* is the *nosotros* form, with the accent on the vowel before *-semos*."
+    },
+    {
+      "prompt": "Rewrite it with the *-ra* twin: *Si lo hubiese sabido, no habría venido.*",
+      "answer": "Si lo hubiera sabido, no habría venido.",
+      "accept": [],
+      "why": "Swap *-se* for *-ra* and the meaning stays the same."
+    },
+    {
+      "prompt": "Rewrite it with the *-se* twin: *Si hubieran vendido el café, Tomás se habría ido.*",
+      "answer": "Si hubiesen vendido el café, Tomás se habría ido.",
+      "accept": [],
+      "why": "*Hubieran* and *hubiesen* are the same form in two spellings."
+    },
+    {
+      "prompt": "Make it about Rosa: *Si lo hubiese sabido, no habría venido.*",
+      "answer": "Si Rosa lo hubiese sabido, no habría venido.",
+      "accept": [
+        "Si lo hubiese sabido Rosa, no habría venido."
+      ],
+      "why": "The form *hubiese* is the same for *yo* and *ella*, so the name does the work."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Si lo habría sabido, no habría venido.",
+      "right": "Si lo hubiese sabido, no habría venido.",
+      "why": "The *if* half takes *hubiese* or *hubiera*, never *habría*."
+    },
+    {
+      "wrong": "Si lo hubiese sabía, no habría venido.",
+      "right": "Si lo hubiese sabido, no habría venido.",
+      "why": "After *hubiese* comes the participle *sabido*, not the past form *sabía*."
+    },
+    {
+      "wrong": "Si hubiesemos salido antes, no habríamos perdido el tren.",
+      "right": "Si hubiésemos salido antes, no habríamos perdido el tren.",
+      "why": "The *nosotros* form of this tense always carries an accent on the vowel before *-semos*."
+    }
+  ],
+  "personal": "Say one thing you wish you had done differently, starting with *Ojalá* or *Si*. For example, *Ojalá lo hubiese sabido.*"
+}

@@ -1,0 +1,197 @@
+{
+  "node": "g:spain-pasts",
+  "hook": {
+    "line": "Lucía from Madrid says *hoy he desayunado* where you would say *hoy desayuné*. Same meaning, different habit, and it will be in every conversation with someone from Spain.",
+    "es": "Hoy he desayunado en casa.",
+    "en": "I had breakfast at home today."
+  },
+  "examples": [
+    {
+      "es": "Hoy he desayunado en casa.",
+      "en": "I had breakfast at home today."
+    },
+    {
+      "es": "Esta mañana he ido al médico.",
+      "en": "I went to the doctor this morning."
+    },
+    {
+      "es": "¿Has visto a Vale hoy?",
+      "en": "Have you seen Vale today? (to a friend)"
+    },
+    {
+      "es": "Hoy no he comido nada.",
+      "en": "I didn't eat anything today."
+    },
+    {
+      "es": "Esta tarde han llamado de la oficina.",
+      "en": "The office called this afternoon."
+    },
+    {
+      "es": "Hoy hemos abierto tarde.",
+      "en": "We opened late today."
+    },
+    {
+      "es": "Ayer fui al mercado.",
+      "en": "I went to the market yesterday."
+    }
+  ],
+  "rule": "In Colombia, something finished is in the simple past: *Hoy desayuné.* *Esta mañana fui al médico.*\n\nIn Spain, if the time is still going (*hoy*, *esta mañana*, *esta semana*, *este año*), they use *he* + participle: *Hoy he desayunado.* *Esta mañana he ido al médico.*\n\nSo the *he* form does not mean *I have* here. It is just a past, and your English *I had breakfast* is the right idea.\n\nOnce the time is over, both countries agree: *Ayer fui al mercado.*\n\nYou do not need to produce this. Understand it, and know that it is a normal accent, not a mistake. Keep the *he* form for experience, as in *¿Has estado en Cartagena?*",
+  "smallPrint": "Teachers call this the *pretérito perfecto compuesto*. In Spain it covers a past that still touches the present.",
+  "readAndPick": [
+    {
+      "es": "Esta mañana he ido al médico.",
+      "options": [
+        "I'm going to the doctor this morning.",
+        "I went to the doctor this morning.",
+        "I used to go to the doctor in the mornings."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hoy no he comido nada.",
+      "options": [
+        "I won't eat anything today.",
+        "I never eat anything.",
+        "I didn't eat anything today."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Has visto a Vale hoy?",
+      "options": [
+        "Have you seen Vale today?",
+        "Will you see Vale today?",
+        "Do you see Vale every day?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Esta tarde han llamado de la oficina.",
+      "options": [
+        "The office will call this afternoon.",
+        "The office called this afternoon.",
+        "The office calls every afternoon."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hoy he llegado temprano.",
+      "options": [
+        "I used to arrive early.",
+        "I'll arrive early today.",
+        "I arrived early today."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Esta noche he dormido fatal.",
+      "options": [
+        "I slept badly tonight.",
+        "I'll sleep badly tonight.",
+        "I always sleep badly."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hoy hemos abierto tarde.",
+      "options": [
+        "They opened late today.",
+        "We opened late today.",
+        "We will open late today."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Este año he viajado mucho.",
+      "options": [
+        "I will travel a lot this year.",
+        "I traveled a lot last year.",
+        "I have traveled a lot this year."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Ya he terminado.",
+      "options": [
+        "I have already finished.",
+        "I will finish soon.",
+        "I never finish."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *he ido* or *fui* and type the whole sentence, the way Lucía says it: *Esta mañana ___ al médico.*",
+      "answer": "Esta mañana he ido al médico.",
+      "accept": [],
+      "why": "Lucía's morning is still today, so Spain uses *he* + the participle *ido*."
+    },
+    {
+      "prompt": "Pick *hemos abierto* or *abrimos* and type the whole sentence, the way it's said in Colombia: *Hoy ___ tarde.*",
+      "answer": "Hoy abrimos tarde.",
+      "accept": [
+        "Abrimos tarde hoy."
+      ],
+      "why": "In Colombia a finished event stays in the simple past, even for today."
+    },
+    {
+      "prompt": "Say it like Lucía: I had breakfast at home today.",
+      "answer": "Hoy he desayunado en casa.",
+      "accept": [
+        "He desayunado en casa hoy."
+      ],
+      "why": "*Hoy* is still going, so Spain says *he desayunado*."
+    },
+    {
+      "prompt": "Say it like Lucía, to a friend: Have you eaten today?",
+      "answer": "¿Has comido hoy?",
+      "accept": [
+        "¿Hoy has comido?"
+      ],
+      "why": "*Has* is the helper for *tú*, and the participle *comido* never changes."
+    },
+    {
+      "prompt": "Say it the Colombian way: *Hoy he llegado temprano.*",
+      "answer": "Hoy llegué temprano.",
+      "accept": [
+        "Llegué temprano hoy."
+      ],
+      "why": "Colombia swaps *he llegado* for the simple past *llegué*."
+    },
+    {
+      "prompt": "Say it the Spain way: *Hoy hablé con Vale.*",
+      "answer": "Hoy he hablado con Vale.",
+      "accept": [
+        "He hablado con Vale hoy."
+      ],
+      "why": "Spain uses *he* + participle for today: *he hablado*."
+    },
+    {
+      "prompt": "Make it negative: *Hoy he tomado café.*",
+      "answer": "Hoy no he tomado café.",
+      "accept": [
+        "No he tomado café hoy."
+      ],
+      "why": "*No* goes right before the helper *he*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Ayer he ido al mercado.",
+      "right": "Ayer fui al mercado.",
+      "why": "Even in Spain, *ayer* is over, so it takes the simple past. The *he* form is for time that is still today."
+    },
+    {
+      "wrong": "Esta mañana he fui al médico.",
+      "right": "Esta mañana he ido al médico.",
+      "why": "After *he* you need the participle *ido*, not the simple past."
+    },
+    {
+      "wrong": "Hoy he comió en casa.",
+      "right": "Hoy he comido en casa.",
+      "why": "The participle ends in *-ado* or *-ido* and never changes. The person lives in *he*."
+    }
+  ],
+  "personal": "Tell Lucía one thing you have done today, the Madrid way, starting with *Hoy he…* or *Esta mañana he…*, for example *Hoy he trabajado mucho.*"
+}

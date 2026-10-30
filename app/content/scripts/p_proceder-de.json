@@ -1,0 +1,178 @@
+{
+  "node": "p:proceder-de",
+  "hook": {
+    "line": "Every old building in La Candelaria has a story, and every word has a family tree. When someone asks where something comes from, there are some more formal verbs for the answer.",
+    "es": "El café procede de Etiopía.",
+    "en": "Coffee comes from Ethiopia."
+  },
+  "examples": [
+    {
+      "es": "Muchas palabras provienen del árabe.",
+      "en": "Many words come from Arabic."
+    },
+    {
+      "es": "El café procede de Etiopía.",
+      "en": "Coffee comes from Ethiopia."
+    },
+    {
+      "es": "La costumbre tiene su origen en la Edad Media.",
+      "en": "The custom has its origins in the Middle Ages."
+    },
+    {
+      "es": "Esta iglesia se remonta al siglo XVI.",
+      "en": "This church dates back to the 16th century."
+    },
+    {
+      "es": "¿De dónde procede esa palabra?",
+      "en": "Where does that word come from?"
+    },
+    {
+      "es": "Mi familia procede de Medellín.",
+      "en": "My family comes from Medellín."
+    }
+  ],
+  "rule": "To say where something comes from in writing or careful speech, use *proceder de* or *provenir de*:\n*El café procede de Etiopía.*\n*Muchas palabras provienen del árabe.*\n\nThe verb agrees with what comes: *proviene* for one thing, *provienen* for several. In everyday talk, *venir de* does the same job.\n\nFor origins in time, use *tener su origen en* and *remontarse a* (to date back to): *se remonta al siglo XVI*.",
+  "smallPrint": "Teachers call these verbs of origin. *Provenir* conjugates like *venir*.",
+  "readAndPick": [
+    {
+      "es": "El café procede de Etiopía.",
+      "options": [
+        "Coffee comes from Ethiopia.",
+        "Coffee is going to Ethiopia.",
+        "Coffee is cheaper in Ethiopia."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Esta iglesia se remonta al siglo XVI.",
+      "options": [
+        "This church will be built in the 16th century.",
+        "This church dates back to the 16th century.",
+        "This church was closed in the 16th century."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Muchas palabras provienen del árabe.",
+      "options": [
+        "Many words are translated into Arabic.",
+        "Many words are hard in Arabic.",
+        "Many words come from Arabic."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La costumbre tiene su origen en la Edad Media.",
+      "options": [
+        "The custom ended in the Middle Ages.",
+        "The custom has its origins in the Middle Ages.",
+        "The custom is unknown in the Middle Ages."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿De dónde procede esa palabra?",
+      "options": [
+        "Where is that word going?",
+        "Where does that word end?",
+        "Where does that word come from?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mi familia procede de Medellín.",
+      "options": [
+        "My family comes from Medellín.",
+        "My family is moving to Medellín.",
+        "My family doesn't know Medellín."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El edificio se remonta a 1920.",
+      "options": [
+        "The building will open in 1920.",
+        "The building was destroyed in 1920.",
+        "The building dates back to 1920."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Esta receta procede de mi abuela.",
+      "options": [
+        "This recipe is for my grandmother.",
+        "This recipe comes from my grandmother.",
+        "This recipe is without my grandmother."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *de* or *a* and type the whole sentence: *El café procede ___ Etiopía.*",
+      "answer": "El café procede de Etiopía.",
+      "accept": [],
+      "why": "*Proceder* always goes with *de*: it comes from."
+    },
+    {
+      "prompt": "Pick *del* or *de el* and type the whole sentence: *Muchas palabras provienen ___ árabe.*",
+      "answer": "Muchas palabras provienen del árabe.",
+      "accept": [],
+      "why": "*De* + *el* always joins into *del*."
+    },
+    {
+      "prompt": "Say: My family comes from Medellín.",
+      "answer": "Mi familia procede de Medellín.",
+      "accept": [
+        "Mi familia proviene de Medellín.",
+        "Mi familia viene de Medellín."
+      ],
+      "why": "All three verbs mean comes from, followed by *de*."
+    },
+    {
+      "prompt": "Say: The building dates back to 1920.",
+      "answer": "El edificio se remonta a 1920.",
+      "accept": [],
+      "why": "*Remontarse* takes *a*: back to a date."
+    },
+    {
+      "prompt": "Ask: Where does that word come from?",
+      "answer": "¿De dónde procede esa palabra?",
+      "accept": [
+        "¿De dónde proviene esa palabra?",
+        "¿De dónde viene esa palabra?"
+      ],
+      "why": "*De dónde* opens the question and the verb agrees with *palabra*."
+    },
+    {
+      "prompt": "Say it the everyday way, with *venir*: *El café procede de Etiopía.*",
+      "answer": "El café viene de Etiopía.",
+      "accept": [],
+      "why": "In daily speech *viene de* replaces the formal *procede de*."
+    },
+    {
+      "prompt": "Make it plural: *Esa palabra proviene del inglés.*",
+      "answer": "Esas palabras provienen del inglés.",
+      "accept": [],
+      "why": "Several words need *esas* and the plural verb *provienen*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El café procede en Etiopía.",
+      "right": "El café procede de Etiopía.",
+      "why": "\"Comes from\" is always *de*, whatever the place."
+    },
+    {
+      "wrong": "Esa palabra provienen del inglés.",
+      "right": "Esa palabra proviene del inglés.",
+      "why": "One word takes *proviene*, several words take *provienen*."
+    },
+    {
+      "wrong": "La iglesia se remonta en el siglo XVI.",
+      "right": "La iglesia se remonta al siglo XVI.",
+      "why": "*Remontarse* takes *a*, meaning back to."
+    }
+  ],
+  "personal": "Say where something you like comes from, for example your family, a food or a word: *… procede de …*."
+}

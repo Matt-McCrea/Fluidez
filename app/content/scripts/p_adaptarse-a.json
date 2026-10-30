@@ -1,0 +1,181 @@
+{
+  "node": "p:adaptarse-a",
+  "hook": {
+    "line": "Everyone in Bogotá asks the new arrival the same thing: have you got used to the altitude, the traffic, the food? You will want the right verb for it.",
+    "es": "Ya me acostumbré a la comida.",
+    "en": "I've got used to the food now."
+  },
+  "examples": [
+    {
+      "es": "Mariana se adaptó al horario de la oficina.",
+      "en": "Mariana adapted to the office schedule."
+    },
+    {
+      "es": "Ya me acostumbré a la comida.",
+      "en": "I've got used to the food now."
+    },
+    {
+      "es": "Fue un periodo de adaptación difícil.",
+      "en": "It was a difficult period of adjustment."
+    },
+    {
+      "es": "Tomás se adaptó rápido a la ciudad.",
+      "en": "Tomás adapted quickly to the city."
+    },
+    {
+      "es": "¿Ya te acostumbraste al tráfico?",
+      "en": "Have you got used to the traffic yet? (to a friend)"
+    },
+    {
+      "es": "Todavía no me acostumbro al ruido de la calle.",
+      "en": "I still haven't got used to the noise of the street."
+    }
+  ],
+  "rule": "Two verbs cover \"adapting\": *adaptarse a* and *acostumbrarse a*. Both are reflexive (*me, te, se, nos*) and both are followed by *a*:\n*me acostumbré a la comida*\n*se adaptó a la ciudad*\n\nBefore *el*, *a* joins it: *al horario*, *al ruido*. Before a verb, *a* stays: *me acostumbré a vivir lejos*.\n\nEnglish says \"adapt to\" and \"used to\", and some learners drop the *a*. Do not. The noun is *adaptación*.",
+  "smallPrint": "Teachers call this a verb with a fixed preposition: the *a* belongs to the verb.",
+  "readAndPick": [
+    {
+      "es": "Ya me acostumbré a la comida.",
+      "options": [
+        "I've got used to the food now.",
+        "I still haven't got used to the food.",
+        "I'm used to cooking the food."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Todavía no me acostumbro al ruido de la calle.",
+      "options": [
+        "I've got used to the street noise now.",
+        "I'll never hear the street noise.",
+        "I still haven't got used to the street noise."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tomás se adaptó rápido a la ciudad.",
+      "options": [
+        "Tomás wants to adapt to the city.",
+        "Tomás adapted quickly to the city.",
+        "Tomás is slowly adapting to the city."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me acostumbré a vivir lejos de la familia.",
+      "options": [
+        "I got used to living far from family.",
+        "I moved far from family.",
+        "I miss living with family."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale se adaptó a una cocina más grande.",
+      "options": [
+        "Vale wants a bigger kitchen.",
+        "Vale adapted to a bigger kitchen.",
+        "Vale is adapting to a smaller kitchen."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Fue un periodo de adaptación difícil.",
+      "options": [
+        "It was a difficult trip.",
+        "It was a difficult time for the café.",
+        "It was a difficult period of adjustment."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Los niños se adaptan rápido.",
+      "options": [
+        "Children adapt quickly.",
+        "Children adapted quickly.",
+        "Children will adapt quickly."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me acostumbré a tomar tinto sin azúcar.",
+      "options": [
+        "I stopped drinking black coffee.",
+        "I got used to drinking black coffee without sugar.",
+        "I want to drink black coffee."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *a* or *de* and type the whole sentence: *Me acostumbré ___ la comida.*",
+      "answer": "Me acostumbré a la comida.",
+      "accept": [],
+      "why": "*Acostumbrarse* always takes *a*."
+    },
+    {
+      "prompt": "Pick *al* or *el* and type the whole sentence: *Mariana se adaptó ___ horario.*",
+      "answer": "Mariana se adaptó al horario.",
+      "accept": [],
+      "why": "*A* + *el* joins into *al*."
+    },
+    {
+      "prompt": "Say: I still haven't got used to the noise.",
+      "answer": "Todavía no me acostumbro al ruido.",
+      "accept": [
+        "No me acostumbro al ruido todavía."
+      ],
+      "why": "*Me acostumbro* is the *yo* form, followed by *a* + *el* = *al*."
+    },
+    {
+      "prompt": "Say: Tomás adapted quickly to the city.",
+      "answer": "Tomás se adaptó rápido a la ciudad.",
+      "accept": [
+        "Tomás se adaptó a la ciudad rápido."
+      ],
+      "why": "*Se adaptó* is reflexive, and *a la* comes before the thing he adapted to."
+    },
+    {
+      "prompt": "Ask a friend: Have you got used to the traffic yet?",
+      "answer": "¿Ya te acostumbraste al tráfico?",
+      "accept": [
+        "¿Te acostumbraste ya al tráfico?",
+        "¿Te acostumbraste al tráfico ya?"
+      ],
+      "why": "*Te* matches *tú* and the verb ends in *-aste*."
+    },
+    {
+      "prompt": "Make it about us: *Me acostumbré a la comida.*",
+      "answer": "Nos acostumbramos a la comida.",
+      "accept": [],
+      "why": "*Nos* and *-amos* both say *we*."
+    },
+    {
+      "prompt": "Ask it as a question to a friend: *Me acostumbré al clima.*",
+      "answer": "¿Te acostumbraste al clima?",
+      "accept": [
+        "¿Ya te acostumbraste al clima?"
+      ],
+      "why": "*Te* and *-aste* are the *tú* pair."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me adapté el clima.",
+      "right": "Me adapté al clima.",
+      "why": "The *a* is obligatory, and *a* + *el* becomes *al*."
+    },
+    {
+      "wrong": "Me acostumbré con la comida.",
+      "right": "Me acostumbré a la comida.",
+      "why": "English \"used to\" tempts other words, but this verb always takes *a*."
+    },
+    {
+      "wrong": "Me acostumbré vivir lejos.",
+      "right": "Me acostumbré a vivir lejos.",
+      "why": "The *a* stays in front of an infinitive too."
+    }
+  ],
+  "personal": "Say one thing you have got used to, or have not yet, with *me acostumbré a…* or *no me acostumbro a…*."
+}

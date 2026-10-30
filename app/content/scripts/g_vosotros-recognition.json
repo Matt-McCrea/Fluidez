@@ -1,0 +1,199 @@
+{
+  "node": "g:vosotros-recognition",
+  "hook": {
+    "line": "A friend from Madrid is about to walk into the café, and she will say *vosotros* and *habéis* and *venid* without noticing. You will not say these yourself, but you will hear them, and you should not freeze.",
+    "es": "¿Cómo estáis?",
+    "en": "How are you all?"
+  },
+  "examples": [
+    {
+      "es": "¿Vosotros qué queréis?",
+      "en": "What do you all want?"
+    },
+    {
+      "es": "¿Cómo estáis?",
+      "en": "How are you all?"
+    },
+    {
+      "es": "¿Habéis comido ya?",
+      "en": "Have you all eaten yet?"
+    },
+    {
+      "es": "Venid mañana.",
+      "en": "Come tomorrow. (to several friends)"
+    },
+    {
+      "es": "Os lo dije.",
+      "en": "I told you all."
+    },
+    {
+      "es": "Vosotros sois de Madrid.",
+      "en": "You all are from Madrid."
+    },
+    {
+      "es": "¿Dónde vivís?",
+      "en": "Where do you all live?"
+    }
+  ],
+  "rule": "In Spain, *you all* among friends is *vosotros*, not *ustedes*. It has its own verb endings:\n*habláis*, *coméis*, *vivís*\n*sois*, *estáis*, *tenéis*, *queréis*, *habéis*\n\nSo *vosotros sois* is *ustedes son*, and *¿Cómo estáis?* is *¿Cómo están?*. Look for the ending *-áis*, *-éis* or *-ís*.\n\nTwo more clues. *Os* is the object word, like *les*: *Os lo dije*. And a command to a group drops the final *r* and adds *d*: *venid*, *comed*, *id*.\n\nColombia uses *ustedes* and you keep doing that. Here you only need to recognise the Spain version when you read it or hear it.",
+  "smallPrint": "Teachers call this the *vosotros* form, the second person plural. *Vosotras* is the same thing for a group of women.",
+  "soundTip": "The ending *-áis* sounds like the English word *eyes*, and the stress lands on it: *estáis* is roughly *es-TIES*.",
+  "readAndPick": [
+    {
+      "es": "¿Cómo estáis?",
+      "options": [
+        "How are you? (to one friend)",
+        "How are you all?",
+        "How are they?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Habéis comido ya?",
+      "options": [
+        "Have you all eaten yet?",
+        "Have we eaten yet?",
+        "Have they eaten yet?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Venid mañana.",
+      "options": [
+        "They come tomorrow.",
+        "Come tomorrow. (to one person)",
+        "Come tomorrow. (to several friends)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Os lo dije.",
+      "options": [
+        "I told them.",
+        "I told you all.",
+        "She told me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vosotros sois de Madrid.",
+      "options": [
+        "We are from Madrid.",
+        "They are from Madrid.",
+        "You all are from Madrid."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Dónde vivís?",
+      "options": [
+        "Where do you all live?",
+        "Where do I live?",
+        "Where do they live?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Qué hacéis hoy?",
+      "options": [
+        "What are we doing today?",
+        "What are you all doing today?",
+        "What are they doing today?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vosotros habláis muy rápido.",
+      "options": [
+        "They talk very fast.",
+        "We talk very fast.",
+        "You all talk very fast."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Os gusta Bogotá?",
+      "options": [
+        "Do I like Bogotá?",
+        "Do you all like Bogotá?",
+        "Do they like Bogotá?"
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *estáis* or *están* and type the whole sentence, the Spain way for a group of friends: *¿Cómo ___?*",
+      "answer": "¿Cómo estáis?",
+      "accept": [],
+      "why": "*Estáis* is the *vosotros* form, and the *-áis* ending is the giveaway."
+    },
+    {
+      "prompt": "Pick *tenéis* or *tienen* and type the whole sentence, in the Spain way: *Vosotros ___ razón.* (You all are right.)",
+      "answer": "Vosotros tenéis razón.",
+      "accept": [
+        "Tenéis razón."
+      ],
+      "why": "*Tenéis* is *tener* with the *vosotros* ending."
+    },
+    {
+      "prompt": "Say it as a friend from Madrid would: Have you all eaten yet?",
+      "answer": "¿Habéis comido ya?",
+      "accept": [
+        "¿Ya habéis comido?",
+        "¿Vosotros habéis comido ya?"
+      ],
+      "why": "*Habéis* is the *vosotros* form of the helper *haber*."
+    },
+    {
+      "prompt": "Say it the Spain way: Where are you all?",
+      "answer": "¿Dónde estáis?",
+      "accept": [
+        "¿Dónde estáis vosotros?",
+        "¿Vosotros dónde estáis?"
+      ],
+      "why": "*Estáis* ends in *-áis*, so it speaks to a group of friends."
+    },
+    {
+      "prompt": "Say it the way people say it in Colombia: *¿Cómo estáis?*",
+      "answer": "¿Cómo están?",
+      "accept": [
+        "¿Cómo están ustedes?",
+        "¿Ustedes cómo están?"
+      ],
+      "why": "In Colombia the group gets *ustedes* and the *-n* ending."
+    },
+    {
+      "prompt": "Turn it into Spain's version: *¿Tienen hambre?* (you all)",
+      "answer": "¿Tenéis hambre?",
+      "accept": [
+        "¿Vosotros tenéis hambre?"
+      ],
+      "why": "*Tenéis* replaces *tienen* when you say *vosotros*."
+    },
+    {
+      "prompt": "Turn it into a command for a group of friends in Spain: *Vengan mañana.*",
+      "answer": "Venid mañana.",
+      "accept": [],
+      "why": "The *vosotros* command is the infinitive with the final *r* swapped for *d*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Vosotros son de Madrid.",
+      "right": "Vosotros sois de Madrid.",
+      "why": "*Vosotros* has its own verb form: *sois*. *Son* goes with *ustedes*."
+    },
+    {
+      "wrong": "Vosotros comeis pan.",
+      "right": "Vosotros coméis pan.",
+      "why": "The accent marks the stress on *é*, which sounds like *eyes*: *co-MEIS*."
+    },
+    {
+      "wrong": "¿Vosotros qué queréis?",
+      "right": "¿Ustedes qué quieren?",
+      "why": "Said in Bogotá, *vosotros* sounds like Madrid, so you keep *ustedes* for your own Spanish."
+    }
+  ],
+  "personal": "A friend from Madrid asks you and a friend *¿Qué hacéis hoy?* Answer for the two of you, using the *nosotros* form, for example *Hoy trabajamos en el café.*"
+}
