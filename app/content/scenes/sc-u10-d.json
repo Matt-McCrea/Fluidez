@@ -1,0 +1,231 @@
+{
+  "id": "sc-u10-d",
+  "unit": "u10",
+  "title": "Lunch to go",
+  "brief": "You're Tomás. The café is too busy to cook lunch for the team, so you go to the little restaurant on the corner to buy food to take back for you, Vale, Mariana and Don Hernando. Order what everyone likes, pay, and ask for what's missing. The owner is a stranger, so use usted with her.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenas tardes, joven. ¿Para comer aquí o para llevar?",
+      "npcEn": "Good afternoon, young man. To eat here or to take away?",
+      "intent": "Say it's to take away, and ask if there's ajiaco today.",
+      "accept": [
+        "Para llevar, por favor. ¿Hay ajiaco hoy?",
+        "Buenas tardes. Para llevar. ¿Hoy hay ajiaco?",
+        "Es para llevar, señora. ¿Tiene ajiaco hoy?"
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "para llevar",
+          "label": "to take away: para llevar"
+        },
+        {
+          "type": "question",
+          "label": "ask it as a question"
+        }
+      ],
+      "focus": "c:para-llevar",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Hoy no hay ajiaco. Hay sopa de pollo, bandeja y empanadas. ¿Para quién es?",
+      "npcEn": "There's no ajiaco today. There's chicken soup, bandeja and empanadas. Who is it for?",
+      "intent": "Say Don Hernando loves the bandeja and Vale likes the empanadas.",
+      "accept": [
+        "A don Hernando le encanta la bandeja, y a Vale le gustan las empanadas.",
+        "Es para mis amigos. A don Hernando le encanta la bandeja. A Vale le gustan las empanadas.",
+        "A Vale le gustan las empanadas, y a don Hernando le encanta la bandeja."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\ble (gustan|encantan)\\b",
+          "flags": "i",
+          "label": "she likes them (plural): le gustan las empanadas"
+        }
+      ],
+      "focus": "g:gustar-full",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Entonces, una bandeja y empanadas. ¿Y la sopa no?",
+      "npcEn": "So, a bandeja and empanadas. And not the soup?",
+      "intent": "Say Mariana always orders the soup, so two soups: one for her and one for you.",
+      "accept": [
+        "Mariana siempre pide la sopa. Entonces, dos sopas: una para ella y una para mí.",
+        "Sí, dos sopas, una para ella y una para mí. Mariana siempre pide sopa.",
+        "Mariana pide sopa de pollo, y yo también. Una para ella y una para mí."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "pedir",
+          "tense": "presente",
+          "person": "él/ella",
+          "label": "she orders: pide (the e changes to i)"
+        },
+        {
+          "type": "containsWord",
+          "word": "para mí",
+          "label": "for me: para mí"
+        }
+      ],
+      "focus": "g:stem-e-i",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Un momento. ¿Usted es el mesero del café de doña Rosa? ¡Ese café es muy famoso!",
+      "npcEn": "Just a moment. Are you the waiter from Doña Rosa's café? That café is very famous!",
+      "intent": "Say yes, and tell her she has to come and eat Vale's buñuelos.",
+      "accept": [
+        "Sí, señora. Usted tiene que venir a comer los buñuelos de Vale.",
+        "Sí, soy yo. Tiene que venir al café. Los buñuelos de Vale son deliciosos.",
+        "Sí. ¡Tiene que comer los buñuelos de Vale!"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\btiene que\\b",
+          "flags": "i",
+          "label": "you (usted) have to: tiene que"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "tienes que"
+          ],
+          "label": "use usted (tiene que), not tú (tienes que)"
+        }
+      ],
+      "focus": "g:tener-que-hay-que",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¡Claro que sí! Listo: una bandeja, dos sopas y seis empanadas.",
+      "npcEn": "Of course! Done: a bandeja, two soups and six empanadas.",
+      "intent": "Thank her and ask how much you owe her.",
+      "accept": [
+        "Gracias, señora. ¿Cuánto le debo?",
+        "Muchas gracias. ¿Cuánto le debo?",
+        "¡Qué rico! Gracias. ¿Cuánto le debo, señora?"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "cu[aá]nto le debo",
+          "flags": "i",
+          "label": "what do I owe you: ¿cuánto le debo?"
+        }
+      ],
+      "focus": "c:cuanto-le-debo",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Son cuarenta mil pesos. ¡Y buen provecho para todos!",
+      "npcEn": "That's forty thousand pesos. And enjoy your meal, all of you!",
+      "intent": "There are no spoons for the soups. Ask her for two spoons, please.",
+      "accept": [
+        "Gracias. ¿Me pasa dos cucharas, por favor?",
+        "Perdón, no hay cucharas. ¿Me pasa dos, por favor?",
+        "Muchas gracias. ¿Me pasa dos cucharas para las sopas?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask it as a question"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bme pasa\\b",
+          "flags": "i",
+          "label": "could you pass me (usted): ¿me pasa…?"
+        }
+      ],
+      "focus": "p:me-trae",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:buen-provecho",
+    "c:claro-listo",
+    "c:cuanto-le-debo",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:para-llevar",
+    "c:perdon-disculpe",
+    "c:por-favor",
+    "c:que-rico",
+    "c:si-soy-yo",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:demonstratives",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:gustar-full",
+    "g:hay-vs-esta",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:verb-infinitive",
+    "l:ajiaco",
+    "l:amigo",
+    "l:aquí",
+    "l:bandeja",
+    "l:buen",
+    "l:buena",
+    "l:buñuelo",
+    "l:café",
+    "l:claro",
+    "l:comer",
+    "l:cuchara",
+    "l:cuánto",
+    "l:deber",
+    "l:delicioso",
+    "l:empanada",
+    "l:encantar",
+    "l:famoso",
+    "l:favor",
+    "l:gustar",
+    "l:hoy",
+    "l:joven",
+    "l:listo",
+    "l:llevar",
+    "l:mesero",
+    "l:momento",
+    "l:pasar",
+    "l:pedir",
+    "l:perdón",
+    "l:peso",
+    "l:pollo",
+    "l:provecho",
+    "l:quién",
+    "l:qué",
+    "l:rico",
+    "l:ser",
+    "l:señora",
+    "l:siempre",
+    "l:sopa",
+    "l:tarde",
+    "l:tener",
+    "l:venir",
+    "p:frequency-scale",
+    "p:me-te-nos-objects",
+    "p:me-trae",
+    "p:para-inf",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:senor-don-article",
+    "p:tambien-tampoco"
+  ]
+}
