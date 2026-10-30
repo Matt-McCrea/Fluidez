@@ -1,0 +1,44 @@
+{
+  "node": "p:tener-el-gusto-de",
+  "hook": {
+    "line": "Sooner or later you will have to stand up in front of a room and introduce someone, or write an invitation that sounds like you mean it. Among friends you would never say this out loud, but on stage or on a card it is exactly right.",
+    "es": "Tengo el gusto de presentarles a nuestra nueva directora.",
+    "en": "It is my pleasure to introduce you to our new director."
+  },
+  "examples": [
+    { "es": "Tengo el gusto de presentarles a nuestra nueva directora.", "en": "It is my pleasure to introduce you (all) to our new director." },
+    { "es": "Nos complace invitarlos a la presentación de nuestra nueva línea.", "en": "We are pleased to invite you (all) to the launch of our new line." },
+    { "es": "Tengo el placer de anunciarles que el proyecto fue aprobado.", "en": "I have the pleasure of announcing to you (all) that the project was approved." },
+    { "es": "Tenemos el gusto de invitarlos a la reunión del sábado.", "en": "We have the pleasure of inviting you (all) to the meeting on Saturday." },
+    { "es": "Tenemos el placer de presentarles el nuevo menú.", "en": "We have the pleasure of presenting to you (all) the new menu." },
+    { "es": "Nos complace anunciarles que Vale será la nueva jefa de cocina.", "en": "We are pleased to announce to you (all) that Vale will be the new head of the kitchen." }
+  ],
+  "rule": "This is the polite way to say \"I'm pleased to…\" at the start of an invitation, a toast or a presentation. There are two frames.\n\n*Tengo el gusto de* + verb (or *el placer de*, *el honor de*): *Tengo el gusto de invitarlos*. Use *Tenemos* when a group speaks.\n\n*Nos complace* + verb: *Nos complace informarles*. Here there is no *de*.\n\nThe verb after it always stays in its plain *-r* form: *presentarles*, *invitarlos*, *anunciarles*. The little word on the end (*les*, *los*) says who you are talking to.\n\nWatch the register. English can say \"I'm pleased to meet you\" to anyone. This Spanish is for stages, letters and cards. To a friend at the door, just say *Mucho gusto*.",
+  "smallPrint": "Teachers call these fixed frames formulaic expressions of courtesy. *Complacer* works like *gustar*: the thing that pleases is what comes after it.",
+  "readAndPick": [
+    { "es": "Tengo el gusto de presentarles a nuestra nueva directora.", "options": ["It is my pleasure to introduce you (all) to our new director.", "We are pleased to introduce you (all) to our new director.", "It is my pleasure to meet our new director."], "answer": 0 },
+    { "es": "Tenemos el gusto de invitarlos a la reunión del sábado.", "options": ["I have the pleasure of inviting you (all) to the meeting on Saturday.", "We have the pleasure of inviting you (all) to the meeting on Saturday.", "We have the pleasure of attending the meeting on Saturday."], "answer": 1 },
+    { "es": "Nos complace invitarlos a la presentación de nuestra nueva línea.", "options": ["We are pleased to invite you (all) to the launch of our new line.", "I am pleased to invite you (all) to the launch of our new line.", "We were pleased to invite you (all) to the launch of our new line."], "answer": 0 },
+    { "es": "Tengo el placer de anunciarles que el proyecto fue aprobado.", "options": ["I have the pleasure of announcing to you (all) that the project will be approved.", "I have the pleasure of announcing to you (all) that the project was approved.", "I had the pleasure of announcing to you (all) that the project was approved."], "answer": 1 },
+    { "es": "Tengo el gusto de invitarlo a la junta.", "options": ["I have the pleasure of inviting you (all) to the meeting.", "I have the pleasure of inviting you (one man, formal) to the meeting.", "We have the pleasure of inviting you (one man, formal) to the meeting."], "answer": 1 },
+    { "es": "Nos complace anunciarles que Vale será la nueva jefa de cocina.", "options": ["We are pleased to announce to you (all) that Vale was the head of the kitchen.", "We are pleased to announce to you (all) that Vale is the head of the kitchen.", "We are pleased to announce to you (all) that Vale will be the new head of the kitchen."], "answer": 2 },
+    { "es": "Tenemos el placer de presentarles el nuevo menú.", "options": ["I have the pleasure of presenting to you (all) the new menu.", "We have the pleasure of presenting to you (all) the new menu.", "We have the pleasure of presenting to you (all) the old menu."], "answer": 1 },
+    { "es": "Tengo el honor de presentar a Don Hernando.", "options": ["It is my honour to present Don Hernando.", "It is our honour to present Don Hernando.", "It is my honour to meet Don Hernando."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *Tengo* or *Tenemos* (a whole team is speaking) and type the sentence: *___ el gusto de invitarlos a la reunión del sábado.*", "answer": "Tenemos el gusto de invitarlos a la reunión del sábado.", "accept": ["Tenemos el placer de invitarlos a la reunión del sábado."], "why": "A group speaking uses *tenemos*; the rest of the frame stays the same." },
+    { "prompt": "Type in Spanish: It is my pleasure to introduce you (all) to our new director.", "answer": "Tengo el gusto de presentarles a nuestra nueva directora.", "accept": ["Tengo el placer de presentarles a nuestra nueva directora."], "why": "*Tengo el gusto de* + *presentarles*; *gusto* and *placer* are interchangeable here." },
+    { "prompt": "Type in Spanish: We are pleased to invite you (all) to the launch of our new line.", "answer": "Nos complace invitarlos a la presentación de nuestra nueva línea.", "accept": [], "why": "*Nos complace* goes straight into the plain verb, with no *de*." },
+    { "prompt": "Type in Spanish: I have the pleasure of announcing to you (all) that the project was approved.", "answer": "Tengo el placer de anunciarles que el proyecto fue aprobado.", "accept": ["Tengo el gusto de anunciarles que el proyecto fue aprobado."], "why": "After *anunciarles*, *que* introduces the news, just like \"that\"." },
+    { "prompt": "Make it about one man, formal: *Tenemos el gusto de invitarlos a la reunión del sábado.* Say: We have the pleasure of inviting you (one man, formal) to the meeting on Saturday.", "answer": "Tenemos el gusto de invitarlo a la reunión del sábado.", "accept": ["Tenemos el placer de invitarlo a la reunión del sábado."], "why": "*Los* means \"you all\"; for one man, formal, the ending becomes *lo*." },
+    { "prompt": "Type in Spanish: We have the pleasure of presenting to you (all) the new menu.", "answer": "Tenemos el placer de presentarles el nuevo menú.", "accept": ["Tenemos el gusto de presentarles el nuevo menú."], "why": "A group speaks (*tenemos*) to a group (*les*)." },
+    { "prompt": "Type in Spanish: We are pleased to announce to you (all) that Vale will be the new head of the kitchen.", "answer": "Nos complace anunciarles que Vale será la nueva jefa de cocina.", "accept": [], "why": "*Nos complace* + *anunciarles* + *que* gives you the whole announcement." }
+  ],
+  "pitfalls": [
+    { "wrong": "Tengo el gusto presentarles a nuestra directora.", "right": "Tengo el gusto de presentarles a nuestra directora.", "why": "Almost. The frame needs *de* before the verb: *tengo el gusto de*." },
+    { "wrong": "Tengo el gusto de presento a nuestra directora.", "right": "Tengo el gusto de presentarles a nuestra directora.", "why": "Almost. After *de* the verb stays in its plain *-r* form, as English does with \"to\"." },
+    { "wrong": "Nos complace de invitarlos a la reunión.", "right": "Nos complace invitarlos a la reunión.", "why": "Almost. *Nos complace* takes the plain verb directly, with no *de*." },
+    { "wrong": "Tengo gusto de invitarlos a la reunión.", "right": "Tengo el gusto de invitarlos a la reunión.", "why": "Almost. The fixed phrase includes the little word *el*." }
+  ],
+  "personal": "Write one formal line announcing something true or imaginary, such as a birthday dinner, using *Tengo el gusto de* or *Nos complace*."
+}

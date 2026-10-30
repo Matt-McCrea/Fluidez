@@ -1,0 +1,45 @@
+{
+  "node": "g:nominalisation",
+  "hook": {
+    "line": "Official Spanish loves nouns. Where a friend says \"after we signed\", a notice on the door says \"after the signing\". Learn the trick and legal and administrative texts stop looking like a wall.",
+    "es": "Tras la firma del contrato, se anunció el cierre del local.",
+    "en": "After the contract was signed, the closure of the premises was announced."
+  },
+  "examples": [
+    { "es": "Tras la firma del contrato, se anunció el cierre del local.", "en": "After the contract was signed, the closure of the premises was announced." },
+    { "es": "La llegada de Yesid cambió todo.", "en": "Yesid's arrival changed everything." },
+    { "es": "La venta del edificio preocupa a Don Hernando.", "en": "The sale of the building worries Don Hernando." },
+    { "es": "La entrega de los documentos es el lunes.", "en": "The delivery of the documents is on Monday." },
+    { "es": "La apertura del café es a las ocho.", "en": "The opening of the café is at eight." },
+    { "es": "Con la llegada de Altamira, el barrio cambió.", "en": "With the arrival of Altamira, the neighbourhood changed." },
+    { "es": "La toma de decisiones es lenta.", "en": "Decision-making is slow." }
+  ],
+  "rule": "Spanish can turn an action into a thing. *Firmar* (to sign) becomes *la firma* (the signing); *cerrar* becomes *el cierre*; *llegar* becomes *la llegada*; *vender* becomes *la venta*; *abrir* becomes *la apertura*.\n\nWho or what the action belongs to follows with *de*: *la llegada de Yesid*, *la venta del edificio*. The English \"Yesid's arrival\" turns around.\n\nThis lets you squeeze a whole clause into a short opener. Instead of \"After the contract was signed\", write *Tras la firma del contrato*. Instead of \"When Yesid arrived\", write *Con la llegada de Yesid*.\n\nEvery one of these is a real noun with its own gender: *la* firma, *el* cierre. Learn each with its little word, because the ending does not always tell you.",
+  "smallPrint": "Teachers call this nominalisation: making a noun from a verb. The nouns are often called deverbal nouns.",
+  "readAndPick": [
+    { "es": "Tras la firma del contrato, Tomás habló con Vale.", "options": ["After the contract was signed, Tomás spoke with Vale.", "Before the contract was signed, Tomás spoke with Vale.", "Because of the contract, Tomás spoke with Vale."], "answer": 0 },
+    { "es": "La llegada de Yesid cambió todo.", "options": ["Yesid's departure changed everything.", "Yesid's arrival changed everything.", "Yesid changed everything."], "answer": 1 },
+    { "es": "La venta del edificio preocupa a Don Hernando.", "options": ["The purchase of the building worries Don Hernando.", "The building worries Don Hernando.", "The sale of the building worries Don Hernando."], "answer": 2 },
+    { "es": "La compra del edificio es imposible.", "options": ["The purchase of the building is impossible.", "The sale of the building is impossible.", "The building is impossible."], "answer": 0 },
+    { "es": "Antes de la reunión, hablé con Vale.", "options": ["After the meeting, I spoke with Vale.", "During the meeting, I spoke with Vale.", "Before the meeting, I spoke with Vale."], "answer": 2 },
+    { "es": "El cierre del café fue una sorpresa.", "options": ["The closure of the café was a surprise.", "The opening of the café was a surprise.", "The café was a surprise."], "answer": 0 },
+    { "es": "La entrega de los documentos es el lunes.", "options": ["The documents are delivered on Monday.", "The delivery of the documents is on Monday.", "The delivery of the document is on Monday."], "answer": 1 },
+    { "es": "Con la llegada de Altamira, el barrio cambió.", "options": ["With the arrival of Altamira, the neighbourhood changed.", "With the departure of Altamira, the neighbourhood changed.", "When Altamira arrives, the neighbourhood changes."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *llegada* or *llegar* and type the sentence: *La ___ de Yesid cambió todo.*", "answer": "La llegada de Yesid cambió todo.", "accept": [], "why": "After *la* you need the noun, *llegada*, not the verb." },
+    { "prompt": "Pick *cierre* or *cerrar* and type the sentence: *El ___ del café fue una sorpresa.*", "answer": "El cierre del café fue una sorpresa.", "accept": [], "why": "*Cierre* is the noun for \"the closing\", and it is masculine." },
+    { "prompt": "Type in Spanish: The sale of the building worries Don Hernando.", "answer": "La venta del edificio preocupa a Don Hernando.", "accept": [], "why": "*De* + *el* joins into *del*, and *a* comes before a person." },
+    { "prompt": "Type in Spanish: The opening of the café is at eight.", "answer": "La apertura del café es a las ocho.", "accept": [], "why": "*Apertura* is the noun for \"the opening\"." },
+    { "prompt": "Say it with a noun after *Tras*: *Después de firmar el contrato, Tomás habló con Vale.* Say: After the contract was signed, Tomás spoke with Vale.", "answer": "Tras la firma del contrato, Tomás habló con Vale.", "accept": ["Después de la firma del contrato, Tomás habló con Vale."], "why": "*Firmar* becomes *la firma*, and *del contrato* says what was signed." },
+    { "prompt": "Say it with a noun after *Con*: *Cuando llegó Yesid, todos se alegraron.* Say: With the arrival of Yesid, everyone was glad.", "answer": "Con la llegada de Yesid, todos se alegraron.", "accept": [], "why": "*Cuando llegó Yesid* shrinks to *con la llegada de Yesid*." },
+    { "prompt": "Type in Spanish: The delivery of the documents is on Monday.", "answer": "La entrega de los documentos es el lunes.", "accept": [], "why": "*Entrega* is the noun, and *de los documentos* says what is delivered." }
+  ],
+  "pitfalls": [
+    { "wrong": "La firmar del contrato es mañana.", "right": "La firma del contrato es mañana.", "why": "Almost. After *la* you need the noun *firma*, not the verb *firmar*." },
+    { "wrong": "El llegada de Yesid cambió todo.", "right": "La llegada de Yesid cambió todo.", "why": "Almost. *Llegada* is feminine, so it takes *la*." },
+    { "wrong": "La venta el edificio preocupa a Don Hernando.", "right": "La venta del edificio preocupa a Don Hernando.", "why": "Almost. The owner follows with *de*, and *de* + *el* becomes *del*." },
+    { "wrong": "Yesid llegada cambió todo.", "right": "La llegada de Yesid cambió todo.", "why": "Almost. In Spanish the noun comes first and the owner follows with *de*; there is no \"Yesid's\" shortcut." }
+  ],
+  "personal": "Write one sentence about your own town or job that starts with a noun made from a verb, such as *La apertura de…* or *La llegada de…*."
+}

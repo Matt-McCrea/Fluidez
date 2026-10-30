@@ -1,0 +1,43 @@
+{
+  "node": "p:solicitar",
+  "hook": {
+    "line": "When you need something from an office, a bank or a board, asking nicely is not enough: the request has to sound official. One verb does the job, and it is the one you will see on every form.",
+    "es": "Solicito la revisión del expediente.",
+    "en": "I request a review of the file."
+  },
+  "examples": [
+    { "es": "Solicito la revisión del expediente.", "en": "I request a review of the file." },
+    { "es": "Solicitamos su autorización para usar su nombre.", "en": "We request your permission to use your name." },
+    { "es": "Solicito una cita con la directora.", "en": "I request an appointment with the director." },
+    { "es": "Solicito una copia del contrato.", "en": "I request a copy of the contract." },
+    { "es": "Solicitamos la aprobación del reglamento.", "en": "We request the approval of the regulations." },
+    { "es": "Solicito permiso para cerrar el café.", "en": "I request permission to close the café." }
+  ],
+  "rule": "*Solicitar* is the written, official \"to ask for\". It is followed directly by what you want: *Solicito una copia del contrato*. There is no *para* in front of the thing.\n\nThe formal touch is to name the request as a noun: *la revisión del expediente*, *la aprobación del reglamento*, rather than \"that you review the file\".\n\nTo ask for permission to do something, use *su autorización para* or *permiso para* + plain verb: *Solicitamos su autorización para usar su nombre*.\n\nAt a counter or among friends, nobody says *solicito*. There you say *¿Me regala…?* or *¿Me da…?*. Keep *solicito* for letters, forms and boards.",
+  "smallPrint": "Teachers call this the institutional register of requesting. The noun after *solicito* is usually a nominalisation of a verb.",
+  "readAndPick": [
+    { "es": "Solicito la revisión del expediente.", "options": ["I request a review of the file.", "We request a review of the file.", "I request a copy of the file."], "answer": 0 },
+    { "es": "Solicitamos la aprobación del reglamento.", "options": ["I request the approval of the regulations.", "We request the approval of the regulations.", "We request the cancellation of the regulations."], "answer": 1 },
+    { "es": "Solicito una cita con la directora.", "options": ["I request a copy from the director.", "We request an appointment with the director.", "I request an appointment with the director."], "answer": 2 },
+    { "es": "Solicito permiso para cerrar el café.", "options": ["I request permission to close the café.", "I request permission to open the café.", "I requested permission to close the café."], "answer": 0 },
+    { "es": "Solicitamos su autorización para usar su nombre.", "options": ["I request your permission to use your name.", "We request your permission to use your name.", "We request your permission to use my name."], "answer": 1 },
+    { "es": "Solicito una copia del contrato.", "options": ["I request a copy of the contract.", "I request the cancellation of the contract.", "I request the approval of the contract."], "answer": 0 },
+    { "es": "Solicito el cambio de fecha.", "options": ["I request a change of address.", "I request a change of date.", "I request a copy of the date."], "answer": 1 },
+    { "es": "Solicitamos la cancelación de la reunión.", "options": ["We request the cancellation of the meeting.", "We request the approval of the meeting.", "I request the cancellation of the meeting."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick *Solicito* or *Solicitamos* (a whole group is asking) and type the sentence: *___ la aprobación del reglamento.*", "answer": "Solicitamos la aprobación del reglamento.", "accept": [], "why": "A group asking uses *solicitamos*." },
+    { "prompt": "Type in Spanish: I request a review of the file.", "answer": "Solicito la revisión del expediente.", "accept": [], "why": "The thing you ask for follows *solicito* directly." },
+    { "prompt": "Type in Spanish: We request your permission to use your name.", "answer": "Solicitamos su autorización para usar su nombre.", "accept": ["Solicitamos su permiso para usar su nombre."], "why": "*Para* + plain verb says what the permission is for." },
+    { "prompt": "Type in Spanish: I request an appointment with the director.", "answer": "Solicito una cita con la directora.", "accept": [], "why": "No *para* is needed before *una cita*." },
+    { "prompt": "Type in Spanish: I request a copy of the contract.", "answer": "Solicito una copia del contrato.", "accept": [], "why": "*De* + *el* joins into *del*." },
+    { "prompt": "Make it about we: *Solicito la revisión del contrato.* Say: We request a review of the contract.", "answer": "Solicitamos la revisión del contrato.", "accept": [], "why": "*Solicito* becomes *solicitamos* for \"we\"." },
+    { "prompt": "Type in Spanish: I request a change of date.", "answer": "Solicito el cambio de fecha.", "accept": [], "why": "*Cambio* is the noun for \"change\", with *el*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Solicito para una cita con la directora.", "right": "Solicito una cita con la directora.", "why": "Almost. *Solicitar* takes what you want directly, with no *para*." },
+    { "wrong": "Solicitamos su autorización usar su nombre.", "right": "Solicitamos su autorización para usar su nombre.", "why": "Almost. *Para* links the permission to what it is for." },
+    { "wrong": "Solicito un café.", "right": "¿Me regala un café, por favor?", "why": "Almost. *Solicito* belongs on paper; at a counter you ask with *¿me regala…?*." }
+  ],
+  "personal": "Write one formal request you might really send, such as for a copy, an appointment or a change of date, starting with *Solicito*."
+}

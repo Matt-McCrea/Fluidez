@@ -1,0 +1,43 @@
+{
+  "node": "p:para-que-rhetorical",
+  "hook": {
+    "line": "Everyone has had the day when the effort feels wasted. Spanish has a question for that mood, and nobody expects you to answer it.",
+    "es": "¿Para qué me esfuerzo si nadie lo nota?",
+    "en": "Why do I bother if nobody notices?"
+  },
+  "examples": [
+    { "es": "¿Para qué me esfuerzo si nadie lo nota?", "en": "Why do I bother if nobody notices?" },
+    { "es": "¿Para qué voy a la junta si nadie me escucha?", "en": "Why do I go to the meeting if nobody listens to me?" },
+    { "es": "¿Para qué cocino tanto si nadie viene?", "en": "Why do I cook so much if nobody comes?" },
+    { "es": "¿Para qué luchamos si ya perdimos?", "en": "Why do we fight if we have already lost?" },
+    { "es": "¿Y para qué le dijiste?", "en": "And why on earth did you tell her? (to a friend)" },
+    { "es": "¿Para qué te preocupas tanto?", "en": "Why do you worry so much? (to a friend)" }
+  ],
+  "rule": "*¿Para qué…?* can be a real question: *¿Para qué quieres el celular?* is \"What do you want the phone for?\". But with a plain present verb and a *si* part that explains why it is pointless, it means \"Why bother?\".\n\nThe frame is *¿Para qué* + verb + *si* + the reason it is useless. The question is a complaint, so no answer is expected. Answering it literally sounds odd, and funny.\n\nAbout the past, it becomes a criticism: *¿Y para qué le dijiste?* means \"Why on earth did you tell her?\". With *tanto* it tuts: *¿Para qué te preocupas tanto?*\n\nKeep *¿Por qué?* for real causes.",
+  "smallPrint": "Teachers call this a rhetorical question. The purpose word *para* makes it about the point of the action, not the cause.",
+  "readAndPick": [
+    { "es": "¿Para qué cocino tanto si nadie viene?", "options": ["Why do we cook so much if nobody comes?", "Why do I cook so much if nobody comes?", "Why do you cook so much if nobody comes? (to a friend)"], "answer": 1 },
+    { "es": "¿Para qué luchamos si ya perdimos?", "options": ["Why do I fight if I have already lost?", "Why do we fight if we have already lost?", "Why do we fight if we have already won?"], "answer": 1 },
+    { "es": "¿Y para qué le dijiste?", "options": ["And why on earth did you tell her? (to a friend)", "And why on earth will you tell her? (to a friend)", "And why on earth did I tell her?"], "answer": 0 },
+    { "es": "¿Para qué te preocupas tanto?", "options": ["Why do I worry so much?", "Why do you worry so much? (to a friend)", "Why do we worry so much?"], "answer": 1 },
+    { "es": "¿Para qué me esfuerzo si nadie lo nota?", "options": ["Why do I bother if nobody notices?", "Why do you bother if nobody notices? (to a friend)", "Why do I bother if everybody notices?"], "answer": 0 },
+    { "es": "¿Para qué voy a la junta si nadie me escucha?", "options": ["Why do I go to the meeting if nobody listens to me?", "Why do I go to the meeting if nobody listens to you?", "Why do we go to the meeting if nobody listens to us?"], "answer": 0 },
+    { "es": "¿Para qué insistimos si no escuchan?", "options": ["Why do I insist if they don't listen?", "Why do we insist if they don't listen?", "Why do we insist if they listen?"], "answer": 1 },
+    { "es": "¿Para qué luchamos si Altamira ya compró todo?", "options": ["Why do we fight if Altamira has already bought everything?", "Why do we fight if Altamira is going to buy everything?", "Why do we fight if Altamira has bought nothing?"], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "You are talking about yourself. Pick *cocino* or *cocinas* and type the sentence: *¿Para qué ___ tanto si nadie viene?*", "answer": "¿Para qué cocino tanto si nadie viene?", "accept": [], "why": "You are complaining about yourself, so the verb is the *yo* form." },
+    { "prompt": "Type in Spanish: Why do I bother if nobody notices?", "answer": "¿Para qué me esfuerzo si nadie lo nota?", "accept": [], "why": "*Me esfuerzo* is \"I make an effort\", and *si* gives the reason it is pointless." },
+    { "prompt": "Type in Spanish: Why do we fight if we have already lost?", "answer": "¿Para qué luchamos si ya perdimos?", "accept": [], "why": "*Luchamos* for \"we\", and *ya perdimos* for \"we have already lost\"." },
+    { "prompt": "Type in Spanish, to a friend: And why on earth did you tell her?", "answer": "¿Y para qué le dijiste?", "accept": [], "why": "*Dijiste* is the past for *tú*; the opening *Y* adds the scolding." },
+    { "prompt": "Type in Spanish: Why do I go to the meeting if nobody listens to me?", "answer": "¿Para qué voy a la junta si nadie me escucha?", "accept": [], "why": "*Voy* is \"I go\", and *nadie me escucha* is the pointless part." },
+    { "prompt": "Make it about we: *¿Para qué insisto si no escuchan?* Say: Why do we insist if they don't listen?", "answer": "¿Para qué insistimos si no escuchan?", "accept": [], "why": "Only the first verb changes: *insisto* becomes *insistimos*." },
+    { "prompt": "Type in Spanish, to a friend: Why do you worry so much?", "answer": "¿Para qué te preocupas tanto?", "accept": [], "why": "*Te preocupas* is the *tú* form, and *tanto* adds the tut." }
+  ],
+  "pitfalls": [
+    { "wrong": "¿Por qué me esfuerzo si nadie lo nota?", "right": "¿Para qué me esfuerzo si nadie lo nota?", "why": "Almost. *Por qué* asks for the cause; *para qué* asks about the point, which is what \"why bother\" means." },
+    { "wrong": "¿Para qué esfuerzo si nadie lo nota?", "right": "¿Para qué me esfuerzo si nadie lo nota?", "why": "Almost. \"Make an effort\" needs *me*: *me esfuerzo*." },
+    { "wrong": "¿Para qué cocino tanto? Para ganar plata.", "right": "¿Para qué cocino tanto si nadie viene?", "why": "Almost. As a complaint, it is not answered; add the *si* part that says why it is pointless." }
+  ],
+  "personal": "Think of something you do that sometimes feels pointless, and say it with *¿Para qué…? si…*."
+}
