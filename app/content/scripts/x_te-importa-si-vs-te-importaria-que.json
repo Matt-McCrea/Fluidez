@@ -1,9 +1,9 @@
 {
   "node": "x:te-importa-si-vs-te-importaria-que",
   "hook": {
-    "line": "The café is full and Tomás needs a seat. Ask a friend and you can be quick. Ask a stranger and you want to sound careful.",
-    "es": "¿Le importaría que me sentara aquí?",
-    "en": "Would you mind if I sat here? (formal)"
+    "line": "Mariana wants a photo of Joaquín's blue notebook. With Yesid she can be quick. With his grandmother, a woman she has just met, she wants to sound careful.",
+    "es": "¿Le importaría que le tomara una foto al cuaderno?",
+    "en": "Would you mind if I took a photo of the notebook? (formal)"
   },
   "examples": [
     {
@@ -123,7 +123,9 @@
     {
       "prompt": "Type in Spanish, to a friend: Do you mind if I sit here?",
       "answer": "¿Te importa si me siento aquí?",
-      "accept": [],
+      "accept": [
+        "¿Te importa si me siento acá?"
+      ],
       "why": "A friend and a quick ask: *importa si* plus the present."
     },
     {

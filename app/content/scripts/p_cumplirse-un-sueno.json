@@ -1,9 +1,9 @@
 {
   "node": "p:cumplirse-un-sueno",
   "hook": {
-    "line": "The café is open, and Tomás and Vale are raising a glass. In Spanish a dream does not get achieved: it comes true, and it happens to you.",
-    "es": "Se nos cumplió el sueño de abrir el café.",
-    "en": "Our dream of opening the café came true."
+    "line": "Joaquín dreamed of going back to Bogotá, and it never happened. In Spanish a dream does not get achieved: it comes true, and it happens to you.",
+    "es": "A Joaquín no se le cumplió el sueño de volver.",
+    "en": "Joaquín's dream of going back never came true."
   },
   "examples": [
     {

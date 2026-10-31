@@ -1,25 +1,25 @@
 [
   {
     "id": "u41-0001",
-    "es": "¿Por qué estás en la calle?\nVale me dijo que esperara afuera.",
-    "en": "Why are you out in the street?\nVale told me to wait outside.",
+    "es": "¿Qué haces en la calle?\nVale me dijo que esperara afuera.",
+    "en": "What are you doing out in the street?\nVale told me to wait outside.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
       "g:gender-articles",
       "g:imperfect-subj",
+      "g:present-er-ir",
       "g:preterite-irregular-strong",
+      "g:questions",
       "g:reported-commands-past",
       "g:that-clauses",
       "l:afuera",
       "l:calle",
       "l:decir",
       "l:esperar",
-      "l:estar",
+      "l:hacer",
       "l:qué",
-      "p:me-te-nos-objects",
-      "p:prep-questions-basic"
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:reported-commands-past"
@@ -31,8 +31,8 @@
   },
   {
     "id": "u41-0002",
-    "es": "¿Por qué madrugaste hoy?\nMi jefe me dijo que llegara a las siete.",
-    "en": "Why did you get up early today?\nMy boss told me to arrive at seven.",
+    "es": "¿Y eso que madrugaste?\nMi jefe me dijo que llegara a las siete.",
+    "en": "How come you got up early?\nMy boss told me to arrive at seven.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -40,18 +40,17 @@
       "g:imperfect-subj",
       "g:preterite-ar",
       "g:preterite-irregular-strong",
+      "g:relative-que",
       "g:reported-commands-past",
       "g:that-clauses",
       "l:decir",
-      "l:hoy",
       "l:jefe",
       "l:llegar",
       "l:madrugar",
-      "l:qué",
+      "p:demonstratives-basic",
       "p:madrugar-trasnochar",
       "p:me-te-nos-objects",
       "p:possessives-basic",
-      "p:prep-questions-basic",
       "p:telling-time"
     ],
     "targets": [
@@ -124,12 +123,11 @@
   },
   {
     "id": "u41-0005",
-    "es": "¿Qué te dijo el doctor?\nEl doctor me explicó que descansara más.",
-    "en": "What did the doctor tell you?\nThe doctor explained to me that I should rest more.",
+    "es": "¿Qué te dijo el doctor?\nEl doctor me dijo que descansara más.",
+    "en": "What did the doctor tell you?\nThe doctor told me to rest more.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:me-explico",
       "g:gender-articles",
       "g:imperfect-subj",
       "g:preterite-irregular-strong",
@@ -139,7 +137,6 @@
       "l:decir",
       "l:descansar",
       "l:doctor",
-      "l:explicar",
       "l:qué",
       "p:me-te-nos-objects"
     ],
@@ -336,24 +333,24 @@
   },
   {
     "id": "u41-0012",
-    "es": "¿Por qué pararon la música?\nEl vecino nos gritó que apagáramos la música.",
-    "en": "Why did you stop the music?\nThe neighbour shouted at us to turn off the music.",
+    "es": "¿Qué pasó con la música?\nEl vecino nos gritó que apagáramos la música.",
+    "en": "What happened to the music?\nThe neighbour shouted at us to turn off the music.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-subj",
       "g:preterite-ar",
+      "g:questions",
       "g:reported-commands-past",
       "g:that-clauses",
       "l:apagar",
       "l:gritar",
       "l:música",
-      "l:parar",
+      "l:pasar",
       "l:qué",
       "l:vecino",
-      "p:me-te-nos-objects",
-      "p:prep-questions-basic"
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:reported-commands-past"
@@ -365,12 +362,13 @@
   },
   {
     "id": "u41-0013",
-    "es": "¿Por qué no contestas preguntas?\nMi hermano me dijo que no hablara con nadie.",
-    "en": "Why don't you answer questions?\nMy brother told me not to talk to anyone.",
+    "es": "¿Por qué no le contestas a nadie?\nMi hermano me dijo que no hablara con nadie.",
+    "en": "Why aren't you answering anyone?\nMy brother told me not to talk to anyone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:imperfect-subj",
+      "g:indirect-objects",
       "g:negation-words",
       "g:present-ar",
       "g:preterite-irregular-strong",
@@ -380,7 +378,6 @@
       "l:decir",
       "l:hablar",
       "l:hermano",
-      "l:pregunta",
       "l:qué",
       "p:me-te-nos-objects",
       "p:por-que-no",
@@ -397,22 +394,23 @@
   },
   {
     "id": "u41-0014",
-    "es": "¿Ya firmaste todo?\nLa abogada me explicó que firmara solo al final.",
-    "en": "Have you signed everything?\nThe lawyer explained that I should sign only at the end.",
+    "es": "¿Ya firmaste todo?\nEl abogado me dijo que firmara solo al final.",
+    "en": "Have you signed everything?\nThe lawyer told me to sign only at the end.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:al-final",
-      "c:me-explico",
       "g:gender-articles",
       "g:imperfect-subj",
       "g:preterite-ar",
+      "g:preterite-irregular-strong",
       "g:reported-commands-past",
       "g:that-clauses",
       "l:abogado",
-      "l:explicar",
+      "l:decir",
       "l:final",
-      "l:firmar"
+      "l:firmar",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:reported-commands-past"
@@ -625,16 +623,16 @@
   },
   {
     "id": "u41-0022",
-    "es": "¿Te explicaron que llenaras este formulario?",
-    "en": "Did they explain that you should fill out this form? (to a friend)",
+    "es": "¿Te dijeron que llenaras este formulario?",
+    "en": "Did they tell you to fill out this form? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:imperfect-subj",
-      "g:preterite-ar",
+      "g:preterite-irregular-strong",
       "g:reported-commands-past",
       "g:that-clauses",
-      "l:explicar",
+      "l:decir",
       "l:formulario",
       "l:llenar",
       "p:demonstratives-basic",
@@ -801,26 +799,23 @@
   },
   {
     "id": "u41-0029",
-    "es": "¿Por qué saliste tan rápido?\nMi mamá me dijo que volviera temprano.",
-    "en": "Why did you leave so fast?\nMy mom told me to come back early.",
+    "es": "¿Y esa prisa?\nMi mamá me dijo que volviera temprano.",
+    "en": "What's the rush?\nMy mom told me to come back early.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:demonstratives",
       "g:imperfect-subj",
-      "g:preterite-er-ir",
       "g:preterite-irregular-strong",
       "g:reported-commands-past",
       "g:that-clauses",
       "l:decir",
       "l:mamá",
-      "l:qué",
-      "l:rápido",
-      "l:salir",
+      "l:prisa",
       "l:temprano",
       "l:volver",
       "p:me-te-nos-objects",
-      "p:possessives-basic",
-      "p:prep-questions-basic"
+      "p:possessives-basic"
     ],
     "targets": [
       "g:reported-commands-past"
@@ -1100,19 +1095,19 @@
   },
   {
     "id": "u41-0040",
-    "es": "El señor nos explicó que camináramos despacio.",
-    "en": "The man explained that we should walk slowly.",
+    "es": "El señor nos dijo que camináramos despacio.",
+    "en": "The man told us to walk slowly.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-subj",
-      "g:preterite-ar",
+      "g:preterite-irregular-strong",
       "g:reported-commands-past",
       "g:that-clauses",
       "l:caminar",
+      "l:decir",
       "l:despacio",
-      "l:explicar",
       "l:señor",
       "p:me-te-nos-objects"
     ],
@@ -1177,19 +1172,19 @@
   },
   {
     "id": "u41-0043",
-    "es": "Les expliqué que no compraran los tiquetes todavía.",
-    "en": "I explained to them that they should not buy the tickets yet.",
+    "es": "Les dije que no compraran los tiquetes todavía.",
+    "en": "I told them not to buy the tickets yet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-subj",
       "g:indirect-objects",
-      "g:preterite-spelling-stem",
+      "g:preterite-irregular-strong",
       "g:reported-commands-past",
       "g:that-clauses",
       "l:comprar",
-      "l:explicar",
+      "l:decir",
       "l:tiquete",
       "p:ya-todavia-basic"
     ],
@@ -1467,16 +1462,16 @@
   },
   {
     "id": "u41-0054",
-    "es": "Nos explicó que trabajáramos en parejas.",
-    "en": "She explained that we should work in pairs.",
+    "es": "Nos dijo que trabajáramos en parejas.",
+    "en": "She told us to work in pairs.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:imperfect-subj",
-      "g:preterite-ar",
+      "g:preterite-irregular-strong",
       "g:reported-commands-past",
       "g:that-clauses",
-      "l:explicar",
+      "l:decir",
       "l:pareja",
       "l:trabajar",
       "p:me-te-nos-objects"
@@ -2018,24 +2013,25 @@
   },
   {
     "id": "u41-0075",
-    "es": "Me explicó que mirara bien antes de decidir.",
-    "en": "He explained that I should look carefully before deciding.",
+    "es": "Me dijo que mirara bien antes de decidir.",
+    "en": "He told me to look carefully before deciding.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
-      "c:me-explico",
       "g:imperfect-subj",
       "g:prep-infinitive",
+      "g:preterite-irregular-strong",
       "g:reported-commands-past",
       "g:that-clauses",
       "l:antes",
       "l:bien",
       "l:decidir",
-      "l:explicar",
+      "l:decir",
       "l:mirar",
       "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo"
+      "p:bien-mal-vs-bueno-malo",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:reported-commands-past"
@@ -2673,8 +2669,8 @@
   },
   {
     "id": "u41-0097",
-    "es": "¿Por qué van a la reunión?\nNos pidieron que fuéramos a la reunión.",
-    "en": "Why are you going to the meeting?\nThey asked us to go to the meeting.",
+    "es": "¿Van a la reunión?\nSí, nos pidieron que fuéramos.",
+    "en": "Are you all going to the meeting?\nYes, they asked us to go.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2682,16 +2678,16 @@
       "g:imperfect-subj",
       "g:ir-a-plans",
       "g:preterite-spelling-stem",
+      "g:ser-identity",
       "g:subj-past-triggers",
       "g:that-clauses",
       "l:ir",
       "l:pedir",
-      "l:qué",
       "l:reunión",
+      "l:ser",
       "p:ir-a-venir-de-place",
       "p:me-te-nos-objects",
-      "p:preguntar-pedir",
-      "p:prep-questions-basic"
+      "p:preguntar-pedir"
     ],
     "targets": [
       "g:subj-past-triggers"
@@ -2738,28 +2734,26 @@
   },
   {
     "id": "u41-0099",
-    "es": "¿Por qué saliste temprano?\nMi hermana me pidió que no llegara tarde.",
-    "en": "Why did you leave early?\nMy sister asked me not to be late.",
+    "es": "¿Ya te vas?\nSí, mi hermana me pidió que no llegara tarde.",
+    "en": "Are you leaving already?\nYes, my sister asked me not to be late.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:voy-vas",
       "g:imperfect-subj",
-      "g:preterite-er-ir",
+      "g:ir-a-plans",
       "g:preterite-spelling-stem",
       "g:subj-past-triggers",
       "g:that-clauses",
       "l:hermana",
+      "l:irse",
       "l:llegar",
       "l:pedir",
-      "l:qué",
-      "l:salir",
       "l:tarde",
-      "l:temprano",
       "p:llegar-a-tiempo",
       "p:me-te-nos-objects",
       "p:possessives-basic",
-      "p:preguntar-pedir",
-      "p:prep-questions-basic"
+      "p:preguntar-pedir"
     ],
     "targets": [
       "g:subj-past-triggers"
@@ -3093,24 +3087,22 @@
   },
   {
     "id": "u41-0111",
-    "es": "¿Por qué camina tanto Hernando?\nEl médico le recomendó que caminara todos los días.",
-    "en": "Why does Hernando walk so much?\nThe doctor recommended that he walk every day.",
+    "es": "¿Hernando camina todos los días?\nSí, el médico le recomendó que caminara.",
+    "en": "Does Hernando walk every day?\nYes, the doctor recommended that he walk.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-subj",
       "g:indirect-objects",
+      "g:present-ar",
       "g:preterite-ar",
       "g:subj-past-triggers",
       "g:that-clauses",
       "l:caminar",
-      "l:camino",
       "l:día",
       "l:médico",
-      "l:qué",
       "l:recomendar",
-      "p:prep-questions-basic",
       "p:todos-los-dias",
       "p:veces-al"
     ],
@@ -3124,26 +3116,19 @@
   },
   {
     "id": "u41-0112",
-    "es": "¿Por qué llamaron al restaurante tan pronto?\nNos recomendaron que reserváramos con tiempo.",
-    "en": "Why did you call the restaurant so early?\nThey recommended that we book ahead.",
+    "es": "¿Ya reservaron?\nSí, nos recomendaron que reserváramos con tiempo.",
+    "en": "Have you all booked yet?\nYes, they recommended that we book ahead.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:imperfect-subj",
       "g:preterite-ar",
       "g:subj-past-triggers",
       "g:that-clauses",
-      "l:llamar",
-      "l:pronto",
-      "l:qué",
       "l:recomendar",
       "l:reservar",
-      "l:restaurante",
       "l:tiempo",
-      "p:me-te-nos-objects",
-      "p:personal-a",
-      "p:prep-questions-basic"
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:subj-past-triggers"
@@ -3338,8 +3323,8 @@
   },
   {
     "id": "u41-0119",
-    "es": "¿Por qué no fuiste a la fiesta?\nMi jefe insistió en que trabajáramos el sábado.",
-    "en": "Why didn't you go to the party?\nMy boss insisted that we work on Saturday.",
+    "es": "¿No fuiste a la fiesta?\nNo, mi jefe insistió en que trabajáramos el sábado.",
+    "en": "Didn't you go to the party?\nNo, my boss insisted that we work on Saturday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3353,14 +3338,11 @@
       "l:insistir",
       "l:ir",
       "l:jefe",
-      "l:qué",
       "l:sábado",
       "l:trabajar",
       "p:days-el-lunes",
       "p:ir-a-venir-de-place",
-      "p:por-que-no",
-      "p:possessives-basic",
-      "p:prep-questions-basic"
+      "p:possessives-basic"
     ],
     "targets": [
       "g:subj-past-triggers"
@@ -3372,22 +3354,22 @@
   },
   {
     "id": "u41-0120",
-    "es": "¿Por qué Tomás durmió hasta tarde?\nVale insistió en que Tomás descansara.",
-    "en": "Why did Tomás sleep late?\nVale insisted that Tomás get some rest.",
+    "es": "¿Tomás todavía está durmiendo?\nSí, Vale insistió en que descansara.",
+    "en": "Is Tomás still sleeping?\nYes, Vale insisted that he rest.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:estar-gerund",
+      "g:estar-location-states",
       "g:imperfect-subj",
       "g:preterite-er-ir",
-      "g:preterite-spelling-stem",
       "g:subj-past-triggers",
       "g:that-clauses",
       "l:descansar",
       "l:dormir",
+      "l:estar",
       "l:insistir",
-      "l:qué",
-      "l:tarde",
-      "p:prep-questions-basic"
+      "p:ya-todavia-basic"
     ],
     "targets": [
       "g:subj-past-triggers"
@@ -3955,24 +3937,28 @@
   },
   {
     "id": "u41-0140",
-    "es": "¿Por qué viniste?\nMi abuela me pidió que viniera.",
-    "en": "Why did you come?\nMy grandmother asked me to come.",
+    "es": "¿Y tú qué haces aquí?\nMi abuela me pidió que viniera.",
+    "en": "And what are you doing here?\nMy grandmother asked me to come.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:bien-y-tu",
       "g:imperfect-subj",
-      "g:preterite-irregular-strong",
+      "g:present-er-ir",
       "g:preterite-spelling-stem",
+      "g:questions",
       "g:subj-past-triggers",
       "g:that-clauses",
       "l:abuela",
+      "l:aquí",
+      "l:hacer",
       "l:pedir",
       "l:qué",
       "l:venir",
+      "p:aqui-ahi-alla",
       "p:me-te-nos-objects",
       "p:possessives-basic",
-      "p:preguntar-pedir",
-      "p:prep-questions-basic"
+      "p:preguntar-pedir"
     ],
     "targets": [
       "g:subj-past-triggers"
@@ -4348,12 +4334,12 @@
   },
   {
     "id": "u41-0154",
-    "es": "¿Por qué estás de mal humor?\nNo me gustó que nadie me avisara.",
-    "en": "Why are you in a bad mood?\nI did not like that nobody told me.",
+    "es": "¿Y esa cara?\nNo me gustó que nadie me avisara.",
+    "en": "What's with that face?\nI did not like that nobody told me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
+      "g:demonstratives",
       "g:gustar-basic",
       "g:imperfect-subj",
       "g:negation-words",
@@ -4361,13 +4347,9 @@
       "g:subj-past-triggers",
       "g:that-clauses",
       "l:avisar",
-      "l:estar",
+      "l:cara",
       "l:gustar",
-      "l:humor",
-      "l:mal",
-      "l:qué",
-      "p:me-te-nos-objects",
-      "p:prep-questions-basic"
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:subj-past-triggers"
@@ -4938,17 +4920,17 @@
   },
   {
     "id": "u41-0173",
-    "es": "¿Por qué te fuiste del banco?\nMe molestó que me hicieran esperar dos horas.",
-    "en": "Why did you leave the bank?\nIt bothered me that they made me wait two hours.",
+    "es": "¿Hiciste la vuelta en el banco?\nNo. Me molestó que me hicieran esperar dos horas, y me fui.",
+    "en": "Did you get the errand done at the bank?\nNo. It bothered me that they made me wait two hours, and I left.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:fui",
       "g:gender-articles",
       "g:gustar-full",
       "g:imperfect-subj",
       "g:preterite-ar",
       "g:preterite-ser-ir-hacer",
-      "g:ser-identity",
       "g:subj-past-triggers",
       "g:that-clauses",
       "l:banco",
@@ -4956,11 +4938,10 @@
       "l:hacer",
       "l:hora",
       "l:molestar",
-      "l:qué",
       "l:ser",
+      "l:vuelta",
       "p:me-encanta-que",
-      "p:me-te-nos-objects",
-      "p:prep-questions-basic"
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:subj-past-triggers"
@@ -5174,27 +5155,29 @@
   },
   {
     "id": "u41-0181",
-    "es": "¿Por qué te fuiste de Colombia?\nMis padres no aceptaban que me fuera tan lejos.",
-    "en": "Why did you leave Colombia?\nMy parents did not accept that I was going so far away.",
+    "es": "¿Tus papás te apoyaron cuando te fuiste?\nNo, no aceptaban que me fuera tan lejos.",
+    "en": "Did your parents support you when you left?\nNo, they did not accept that I was going so far away.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:imperfect-habitual",
       "g:imperfect-subj",
       "g:pret-vs-imperfect",
+      "g:preterite-ar",
       "g:preterite-ser-ir-hacer",
       "g:ser-identity",
       "g:subj-past-triggers",
       "g:that-clauses",
       "l:aceptar",
+      "l:apoyar",
       "l:lejos",
-      "l:padres",
-      "l:qué",
+      "l:papá",
       "l:ser",
+      "p:cuando-basic",
       "p:masculine-plural-mixed",
       "p:me-te-nos-objects",
-      "p:possessives-basic",
-      "p:prep-questions-basic"
+      "p:no-es-x-es-y",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:subj-past-triggers"
@@ -5372,8 +5355,8 @@
   },
   {
     "id": "u41-0188",
-    "es": "¿Creías que Altamira diera la cara?",
-    "en": "Did you think Altamira would show his face? (to a friend)",
+    "es": "¿Esperabas que Altamira diera la cara?",
+    "en": "Did you expect Altamira to show his face? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5383,8 +5366,8 @@
       "g:subj-past-triggers",
       "g:that-clauses",
       "l:cara",
-      "l:creer",
-      "l:dar"
+      "l:dar",
+      "l:esperar"
     ],
     "targets": [
       "g:subj-past-triggers"
@@ -5762,24 +5745,22 @@
   },
   {
     "id": "u41-0203",
-    "es": "¿Sabías que Joaquín murió?\nNo, no creía que fuera tan pronto.",
-    "en": "Did you know Joaquín had died?\nNo, I did not think it would be so soon.",
+    "es": "¿Sabías que Joaquín guardaba un cuaderno?\nNo, no creía que escribiera nada.",
+    "en": "Did you know Joaquín kept a notebook?\nNo, I did not think he wrote anything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:imperfect-habitual",
       "g:imperfect-subj",
-      "g:pret-vs-imperfect",
-      "g:preterite-spelling-stem",
-      "g:ser-identity",
+      "g:negation-words",
       "g:subj-past-triggers",
       "g:that-clauses",
       "l:creer",
-      "l:morir",
-      "l:pronto",
+      "l:cuaderno",
+      "l:escribir",
+      "l:guardar",
       "l:saber",
-      "l:ser",
-      "p:naci-en",
       "p:no-es-x-es-y",
       "p:saber-conocer"
     ],
@@ -6787,17 +6768,19 @@
   },
   {
     "id": "u41-0250",
-    "es": "Sería lindo que Rosa y Joaquín se hablaran otra vez.",
-    "en": "It would be nice if Rosa and Joaquín spoke to each other again.",
+    "es": "Sería lindo que las dos familias se hablaran otra vez.",
+    "en": "It would be nice if the two families talked to each other again.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
+      "g:gender-articles",
       "g:imperfect-subj",
-      "g:reflexive-routine",
+      "g:passive-se",
       "g:ser-identity",
       "g:subj-past-triggers",
       "g:that-clauses",
+      "l:familia",
       "l:hablar",
       "l:lindo",
       "l:ser",
@@ -6916,19 +6899,21 @@
   },
   {
     "id": "u41-0255",
-    "es": "¿Qué desea?\nOjalá tuviera mil pesos más.",
-    "en": "What do you wish for?\nI wish I had a thousand pesos more.",
+    "es": "Pide un deseo.\nOjalá Altamira se fuera del barrio.",
+    "en": "Make a wish.\nI wish Altamira would leave the neighbourhood.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ojala",
+      "g:gender-articles",
       "g:imperfect-subj",
-      "g:present-ar",
-      "g:questions",
-      "l:desear",
-      "l:peso",
-      "l:qué",
-      "l:tener"
+      "g:stem-e-i",
+      "l:barrio",
+      "l:deseo",
+      "l:irse",
+      "l:pedir",
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -7102,17 +7087,23 @@
   },
   {
     "id": "u41-0263",
-    "es": "Ya viene el hotel.\nOjalá no viniera.",
-    "en": "The hotel is coming.\nI wish it were not coming.",
+    "es": "Van a construir un hotel aquí.\nOjalá no fuera verdad.",
+    "en": "They are going to build a hotel here.\nI wish it were not true.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ojala",
       "g:gender-articles",
       "g:imperfect-subj",
-      "g:stem-boot",
+      "g:ir-a-plans",
+      "g:ser-identity",
+      "l:aquí",
+      "l:construir",
       "l:hotel",
-      "l:venir"
+      "l:ir",
+      "l:ser",
+      "l:verdad",
+      "p:aqui-ahi-alla"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -7245,20 +7236,19 @@
   },
   {
     "id": "u41-0269",
-    "es": "¿Compraste el tiquete?\nOjalá pudiera comprarlo.",
-    "en": "Did you buy the ticket?\nI wish I could buy it.",
+    "es": "¿Compraste el tiquete?\nTodavía no. Ojalá tuviera la plata.",
+    "en": "Did you buy the ticket?\nNot yet. I wish I had the money.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ojala",
-      "g:direct-objects",
+      "c:todavia-no",
       "g:gender-articles",
       "g:imperfect-subj",
-      "g:object-pronoun-position",
       "g:preterite-ar",
-      "g:verb-infinitive",
       "l:comprar",
-      "l:poder",
+      "l:plata",
+      "l:tener",
       "l:tiquete"
     ],
     "targets": [],
@@ -7623,20 +7613,21 @@
   },
   {
     "id": "u41-0285",
-    "es": "Mi abuela me abrazó como si me esperara hace años.",
+    "es": "Mi abuela me abrazó como si me estuviera esperando desde hace años.",
     "en": "My grandmother hugged me as if she had been waiting for me for years.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:como-si",
+      "g:estar-gerund",
       "g:imperfect-subj",
-      "g:present-er-ir",
       "g:preterite-ar",
       "l:abrazar",
       "l:abuela",
       "l:año",
       "l:esperar",
-      "l:hacer",
+      "l:estar",
+      "l:hace",
       "p:me-te-nos-objects",
       "p:possessives-basic"
     ],
@@ -8025,20 +8016,20 @@
   },
   {
     "id": "u41-0301",
-    "es": "El cuarto estaba tan frío como si no hubiera ventanas.",
-    "en": "The room was as cold as if there were no windows.",
+    "es": "El cuarto estaba frío, como si no tuviera techo.",
+    "en": "The room was cold, as if it had no roof.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:como-si",
-      "g:comparatives",
       "g:estar-location-states",
       "g:gender-articles",
       "g:imperfect-states",
       "g:imperfect-subj",
       "l:estar",
       "l:frío",
-      "l:ventana"
+      "l:techo",
+      "l:tener"
     ],
     "targets": [
       "g:como-si"
@@ -8282,12 +8273,13 @@
   },
   {
     "id": "u41-0312",
-    "es": "Llora como si fuera niño.",
-    "en": "He cries like a child.",
+    "es": "Llora como si fuera un niño.",
+    "en": "He cries as if he were a child.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:como-si",
+      "g:gender-articles",
       "g:imperfect-subj",
       "g:present-ar",
       "g:ser-identity",
@@ -8400,19 +8392,20 @@
   },
   {
     "id": "u41-0317",
-    "es": "Pagó como si fuera una oferta.",
-    "en": "He paid as if it were a bargain.",
+    "es": "Pagó como si le sobrara la plata.",
+    "en": "He paid as if he had money to spare.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:como-si",
       "g:gender-articles",
+      "g:gustar-full",
       "g:imperfect-subj",
       "g:preterite-ar",
-      "g:ser-identity",
-      "l:oferta",
       "l:pagar",
-      "l:ser"
+      "l:plata",
+      "l:sobrar",
+      "p:quedar-faltar-sobrar"
     ],
     "targets": [
       "g:como-si"
@@ -9141,22 +9134,17 @@
   },
   {
     "id": "u41-0347",
-    "es": "¿Acaso crees que estoy hablando como si fuera un experto?",
-    "en": "Do you by any chance think I am talking as if I were an expert? (to a friend)",
+    "es": "¿Acaso hablo como si fuera un experto?",
+    "en": "Do I talk as if I were an expert, by any chance?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:como-si",
-      "g:estar-gerund",
-      "g:estar-location-states",
       "g:gender-articles",
       "g:imperfect-subj",
-      "g:present-er-ir",
+      "g:present-ar",
       "g:ser-identity",
-      "g:that-clauses",
       "l:acaso",
-      "l:creer",
-      "l:estar",
       "l:experto",
       "l:hablar",
       "l:ser"
@@ -9172,16 +9160,19 @@
   },
   {
     "id": "u41-0348",
-    "es": "¿Me hablas así como si no nos conociéramos?",
-    "en": "Do you talk to me like this, as if we did not know each other? (to a friend)",
+    "es": "¿Vas a hablarme así, como si no nos conociéramos?",
+    "en": "Are you going to talk to me like that, as if we did not know each other? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:voy-vas",
       "g:como-si",
       "g:imperfect-subj",
-      "g:present-ar",
+      "g:ir-a-plans",
+      "g:object-pronoun-position",
       "l:conocer",
       "l:hablar",
+      "l:ir",
       "p:me-te-nos-objects",
       "p:saber-conocer"
     ],
@@ -9756,8 +9747,8 @@
   },
   {
     "id": "u41-0372",
-    "es": "Qué raro, como si alguien cantara en la calle.",
-    "en": "How strange, as if someone were singing in the street.",
+    "es": "Qué raro: suena como si alguien cantara en la calle.",
+    "en": "How strange: it sounds as if someone were singing in the street.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9765,10 +9756,12 @@
       "g:gender-articles",
       "g:imperfect-subj",
       "g:questions",
+      "g:stem-boot",
       "l:calle",
       "l:cantar",
       "l:qué",
       "l:raro",
+      "l:sonar",
       "p:indefinites-basic"
     ],
     "targets": [
@@ -9834,13 +9827,12 @@
   },
   {
     "id": "u41-0375",
-    "es": "Como si fuera ayer, veo ese día.",
-    "en": "As if it were yesterday, I see that day.",
+    "es": "Veo ese día como si fuera ayer.",
+    "en": "I see that day as if it were yesterday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ayer-anoche",
-      "g:cause-result",
       "g:como-si",
       "g:demonstratives",
       "g:imperfect-subj",
@@ -9970,8 +9962,8 @@
   },
   {
     "id": "u41-0380",
-    "es": "¿Cómo estás?\nComo si hubiera una piedra en el pecho.",
-    "en": "How are you?\nAs if there were a stone on my chest.",
+    "es": "¿Cómo estás?\nMal. Siento como si tuviera una piedra en el pecho.",
+    "en": "How are you?\nBad. It feels as if I had a stone on my chest.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9980,10 +9972,14 @@
       "g:estar-location-states",
       "g:gender-articles",
       "g:imperfect-subj",
+      "g:stem-boot",
       "l:cómo",
       "l:estar",
+      "l:mal",
       "l:pecho",
-      "l:piedra"
+      "l:piedra",
+      "l:sentir",
+      "l:tener"
     ],
     "targets": [
       "g:como-si"
@@ -9995,8 +9991,8 @@
   },
   {
     "id": "u41-0381",
-    "es": "¿Qué te dijo?\nMe habló como si fuera su jefe.",
-    "en": "What did he tell you?\nHe spoke to me as if he were his boss.",
+    "es": "¿Qué te dijo?\nMe habló como si fuera mi jefe.",
+    "en": "What did he tell you?\nHe spoke to me as if he were my boss.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10140,14 +10136,17 @@
   },
   {
     "id": "u41-0386",
-    "es": "¿Todo bien?\nSí, sigo como si nada.",
-    "en": "All good?\nYes, I carry on as if nothing were wrong.",
+    "es": "¿Y Vale sigue brava?\nNo, ya está como si nada.",
+    "en": "Is Vale still angry?\nNo, she is already acting as if nothing happened.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
-      "g:yo-irregular",
-      "l:bien",
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "g:negation-words",
+      "g:stem-e-i",
+      "l:bravo",
+      "l:estar",
       "l:seguir"
     ],
     "targets": [],
@@ -10363,7 +10362,7 @@
   {
     "id": "u41-0395",
     "es": "Hernando dice que no hay derecho a que Altamira compre todo.",
-    "en": "Hernando says it's not right that Altamira buy everything.",
+    "en": "Hernando says it's not right that Altamira buys everything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10503,8 +10502,8 @@
   },
   {
     "id": "u41-0400",
-    "es": "Mi mamá repetía que no hay derecho a que la familia no se hable.",
-    "en": "My mom kept saying it's not right that the family does not talk.",
+    "es": "Mi mamá siempre dice que no hay derecho a que la familia no se hable.",
+    "en": "My mom always says it's not right that the family does not talk to each other.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10513,17 +10512,19 @@
       "c:no-se",
       "g:gender-articles",
       "g:hay-vs-esta",
-      "g:imperfect-habitual",
       "g:relatives-prepositions",
       "g:se-impersonal",
+      "g:stem-e-i",
       "g:subj-relative",
       "g:subj-wanting",
       "g:that-clauses",
+      "l:decir",
       "l:derecho",
       "l:familia",
       "l:hablar",
       "l:mamá",
-      "l:repetir",
+      "l:siempre",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -13108,25 +13109,26 @@
   },
   {
     "id": "u41-0498",
-    "es": "Quiero decir algo.\nAdelante. Brindo por lo que digas.",
-    "en": "I want to say something.\nGo ahead. I toast whatever you say.",
+    "es": "Quiero decir unas palabras.\nAdelante, y después brindamos por ti.",
+    "en": "I want to say a few words.\nGo ahead, and then we will drink to you.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:quiero",
+      "g:gender-articles",
       "g:por-para-1",
+      "g:prep-pronouns",
       "g:present-ar",
-      "g:relatives-donde-lo-que",
       "g:stem-boot",
-      "g:subj-relative",
-      "g:subj-wanting",
       "g:verb-infinitive",
       "l:adelante",
       "l:brindar",
       "l:decir",
+      "l:después",
+      "l:palabra",
       "l:querer",
       "p:brindo-por",
-      "p:indefinites-basic"
+      "p:time-sequence-basic"
     ],
     "targets": [
       "p:brindo-por"
@@ -13178,17 +13180,19 @@
   },
   {
     "id": "u41-0501",
-    "es": "Su sueño se cumplió: volvió a ver a su hermano.",
-    "en": "Her dream came true: she saw her brother again.",
+    "es": "A mi tía se le cumplió el sueño: volvió a ver a su hermano.",
+    "en": "My aunt's dream came true: she saw her brother again.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:a-ver",
+      "g:gender-articles",
       "g:preterite-er-ir",
-      "g:se-impersonal",
+      "g:se-accidental",
       "l:cumplir",
       "l:hermano",
       "l:sueño",
+      "l:tía",
       "l:ver",
       "l:volver",
       "p:cumplirse-un-sueno",
@@ -13230,11 +13234,12 @@
   },
   {
     "id": "u41-0503",
-    "es": "Rosa quería ver el mar, pero no se le cumplió el sueño.",
-    "en": "Rosa wanted to see the sea, but the dream never came true for her.",
+    "es": "Rosa quería volver a ver a Joaquín, pero no se le cumplió el sueño.",
+    "en": "Rosa wanted to see Joaquín again, but her dream never came true.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:a-ver",
       "c:no-se",
       "g:gender-articles",
       "g:imperfect-habitual",
@@ -13243,11 +13248,13 @@
       "g:se-accidental",
       "g:verb-infinitive",
       "l:cumplir",
-      "l:mar",
       "l:querer",
       "l:sueño",
       "l:ver",
-      "p:cumplirse-un-sueno"
+      "l:volver",
+      "p:cumplirse-un-sueno",
+      "p:personal-a",
+      "p:volver-a-inf"
     ],
     "targets": [
       "p:cumplirse-un-sueno"
@@ -13605,12 +13612,13 @@
   },
   {
     "id": "u41-0518",
-    "es": "Lo que dijo la abuela se cumplió: volvió Joaquín.",
-    "en": "What the grandmother said came true: Joaquín returned.",
+    "es": "Lo que dijo la abuela se cumplió: la familia volvió a hablarse.",
+    "en": "What Grandma said came true: the family started talking again.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:object-pronoun-position",
       "g:preterite-er-ir",
       "g:preterite-irregular-strong",
       "g:relatives-donde-lo-que",
@@ -13618,7 +13626,10 @@
       "l:abuela",
       "l:cumplir",
       "l:decir",
-      "l:volver"
+      "l:familia",
+      "l:hablar",
+      "l:volver",
+      "p:volver-a-inf"
     ],
     "targets": [],
     "kind": "statement",
@@ -14400,7 +14411,7 @@
   {
     "id": "u41-0550",
     "es": "Mi hermana estrena carro este fin de semana.",
-    "en": "My sister is getting her new car this weekend.",
+    "en": "My sister is driving her new car for the first time this weekend.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14522,8 +14533,8 @@
   },
   {
     "id": "u41-0555",
-    "es": "Mi abuela me regaló un abrigo para estrenar el invierno.",
-    "en": "My grandmother gave me a coat to start the winter with.",
+    "es": "Mi abuela me regaló un abrigo para estrenar en Navidad.",
+    "en": "My grandmother gave me a coat to wear for the first time at Christmas.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14532,7 +14543,6 @@
       "l:abrigo",
       "l:abuela",
       "l:estrenar",
-      "l:invierno",
       "l:regalar",
       "p:estrenar",
       "p:me-te-nos-objects",
@@ -14869,15 +14879,16 @@
   },
   {
     "id": "u41-0569",
-    "es": "No quise estrenar nada sin Vale.",
-    "en": "I did not want to use anything new without Vale.",
+    "es": "No quise estrenar el horno sin Vale.",
+    "en": "I did not want to use the oven for the first time without Vale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:negation-words",
+      "g:gender-articles",
       "g:preterite-irregular-strong",
       "g:verb-infinitive",
       "l:estrenar",
+      "l:horno",
       "l:querer",
       "p:estrenar"
     ],
@@ -14968,21 +14979,20 @@
   },
   {
     "id": "u41-0573",
-    "es": "Tomás estrenó su mono de cocinero el primer día.",
-    "en": "Tomás wore his new cook's overalls the first day.",
+    "es": "Hoy el niño mono de la vecina estrenó zapatos.",
+    "en": "Today the neighbour's blond boy wore new shoes for the first time.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
-      "l:cocinero",
-      "l:día",
       "l:estrenar",
+      "l:hoy",
       "l:mono",
-      "p:estrenar",
-      "p:ordinal-floor",
-      "p:ordinals-primer-tercer",
-      "p:possessives-basic"
+      "l:niño",
+      "l:vecino",
+      "l:zapatos",
+      "p:estrenar"
     ],
     "targets": [
       "l:mono",
@@ -15436,14 +15446,15 @@
   },
   {
     "id": "u41-0592",
-    "es": "Ojalá no me arrepintiera mañana.",
-    "en": "I wish I would not regret it tomorrow.",
+    "es": "Ojalá no me arrepienta mañana.",
+    "en": "I hope I do not regret it tomorrow.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ojala",
-      "g:imperfect-subj",
       "g:reflexive-routine",
+      "g:subj-irregulars",
+      "g:subj-wishes",
       "l:arrepentirse",
       "l:mañana"
     ],
@@ -15641,19 +15652,19 @@
   },
   {
     "id": "u41-0601",
-    "es": "Joaquín lamentaba cada carta que no mandó.",
-    "en": "Joaquín regretted every letter he did not send.",
+    "es": "Joaquín lamentaba cada llamada que no hizo.",
+    "en": "Joaquín regretted every call he did not make.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
       "g:imperfect-habitual",
       "g:pret-vs-imperfect",
-      "g:preterite-ar",
+      "g:preterite-ser-ir-hacer",
       "g:relative-que",
-      "l:carta",
+      "l:hacer",
       "l:lamentar",
-      "l:mandar"
+      "l:llamada"
     ],
     "targets": [
       "l:lamentar"
@@ -15715,8 +15726,8 @@
   },
   {
     "id": "u41-0604",
-    "es": "Perdí el tren.\nLo lamento, de verdad.",
-    "en": "I missed the train.\nI am sorry, really.",
+    "es": "Perdí el bus.\nLo lamento, de verdad.",
+    "en": "I missed the bus.\nI am sorry, really.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15725,9 +15736,9 @@
       "g:gender-articles",
       "g:present-ar",
       "g:preterite-er-ir",
+      "l:bus",
       "l:lamentar",
       "l:perder",
-      "l:tren",
       "l:verdad"
     ],
     "targets": [
@@ -15740,12 +15751,12 @@
   },
   {
     "id": "u41-0605",
-    "es": "Lamentamos molestarle.\nNo es molestia.",
+    "es": "Lamentamos molestarlo.\nNo es molestia.",
     "en": "We are sorry to bother you.\nIt is no bother.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gustar-full",
+      "g:direct-objects",
       "g:object-pronoun-position",
       "g:present-ar",
       "g:ser-identity",
@@ -15980,7 +15991,7 @@
   },
   {
     "id": "u41-0615",
-    "es": "Hernando le dijo al juez que le concediera la palabra.",
+    "es": "Hernando le pidió al juez que le concediera la palabra.",
     "en": "Hernando asked the judge to give him the floor.",
     "accept": [],
     "acceptEn": [],
@@ -15989,13 +16000,14 @@
       "g:imperfect-subj",
       "g:indirect-objects",
       "g:le-doubling",
-      "g:preterite-irregular-strong",
+      "g:preterite-spelling-stem",
       "g:relative-que",
       "g:subj-relative",
       "l:conceder",
-      "l:decir",
       "l:juez",
-      "l:palabra"
+      "l:palabra",
+      "l:pedir",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "l:conceder"
@@ -16481,15 +16493,16 @@
   },
   {
     "id": "u41-0636",
-    "es": "Rosa y Joaquín intercambiaban cartas de niños.",
-    "en": "Rosa and Joaquín used to exchange letters as children.",
+    "es": "De niños, Rosa y Joaquín intercambiaban juguetes y secretos.",
+    "en": "As children, Rosa and Joaquín used to swap toys and secrets.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:imperfect-habitual",
-      "l:carta",
       "l:intercambiar",
-      "l:niño"
+      "l:juguete",
+      "l:niño",
+      "l:secreto"
     ],
     "targets": [
       "l:intercambiar"
@@ -16641,7 +16654,7 @@
   {
     "id": "u41-0643",
     "es": "Yesid no estaba dispuesto todavía.",
-    "en": "Yesid was not ready yet.",
+    "en": "Yesid was not willing yet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16660,7 +16673,7 @@
   {
     "id": "u41-0644",
     "es": "¿Estás dispuesta, o prefieres esperar?",
-    "en": "Are you ready, or would you rather wait? (to a friend)",
+    "en": "Are you willing, or would you rather wait? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17011,19 +17024,18 @@
   },
   {
     "id": "u41-0658",
-    "es": "La lista del registro estaba en blanco.",
-    "en": "The register list was blank.",
+    "es": "El registro del hotel tenía su nombre.",
+    "en": "The hotel register had his name in it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
-      "g:estar-location-states",
       "g:gender-articles",
       "g:imperfect-states",
-      "l:blanco",
-      "l:estar",
-      "l:listo",
-      "l:registro"
+      "l:hotel",
+      "l:nombre",
+      "l:registro",
+      "l:tener",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:registro"
@@ -17656,19 +17668,21 @@
   },
   {
     "id": "u41-0685",
-    "es": "El mecánico llevaba un mono azul lleno de grasa.",
-    "en": "The mechanic wore blue overalls covered in grease.",
+    "es": "El mecánico es un señor mono, con los brazos llenos de grasa.",
+    "en": "The mechanic is a blond man with his arms covered in grease.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
-      "g:imperfect-habitual",
-      "l:azul",
+      "g:ser-identity",
+      "l:brazo",
       "l:grasa",
       "l:lleno",
-      "l:llevar",
       "l:mecánico",
-      "l:mono"
+      "l:mono",
+      "l:ser",
+      "l:señor"
     ],
     "targets": [
       "l:mono"
@@ -17680,17 +17694,16 @@
   },
   {
     "id": "u41-0686",
-    "es": "Tomás se puso un mono de cocinero.",
-    "en": "Tomás put on cook's overalls.",
+    "es": "En Taganga todos le dicen «el mono» a Tomás.",
+    "en": "In Taganga everyone calls Tomás «the blond one».",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-irregular-strong",
-      "g:verbs-of-change",
-      "l:cocinero",
-      "l:mono",
-      "l:ponerse"
+      "g:indirect-objects",
+      "g:stem-e-i",
+      "l:decir",
+      "l:mono"
     ],
     "targets": [
       "l:mono"
@@ -17702,20 +17715,25 @@
   },
   {
     "id": "u41-0687",
-    "es": "Necesito un mono nuevo para trabajar en el carro.",
-    "en": "I need new overalls to work on the car.",
+    "es": "De niño yo era mono, pero ahora tengo el pelo oscuro.",
+    "en": "As a child I was blond, but now my hair is dark.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
+      "c:tengo",
       "g:gender-articles",
-      "g:present-ar",
-      "l:carro",
+      "g:imperfect-states",
+      "g:ser-identity",
+      "g:yo-irregular",
+      "l:ahora",
       "l:mono",
-      "l:necesitar",
-      "l:nuevo",
-      "l:trabajar",
-      "p:para-inf",
-      "p:para-inf-purpose"
+      "l:niño",
+      "l:oscuro",
+      "l:pelo",
+      "l:ser",
+      "l:tener",
+      "p:es-tiene-lleva"
     ],
     "targets": [
       "l:mono"
@@ -18056,7 +18074,7 @@
   {
     "id": "u41-0701",
     "es": "¿Acaso crees que no me importa?",
-    "en": "Do you think by any chance that I do not care? (to a friend)",
+    "en": "Do you really think I do not care? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18078,7 +18096,7 @@
   {
     "id": "u41-0702",
     "es": "¿Acaso no te lo dije ayer?",
-    "en": "Didn't I tell you yesterday, by any chance? (to a friend)",
+    "en": "Didn't I tell you yesterday? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18127,7 +18145,7 @@
   {
     "id": "u41-0704",
     "es": "¿Acaso quieres que me vaya?",
-    "en": "Do you want me to leave, by any chance? (to a friend)",
+    "en": "What, do you want me to leave? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18150,7 +18168,7 @@
   {
     "id": "u41-0705",
     "es": "¿Acaso Altamira piensa que somos tontos?",
-    "en": "Does Altamira think we are fools, by any chance?",
+    "en": "Does Altamira really think we are fools?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18247,17 +18265,16 @@
   },
   {
     "id": "u41-0709",
-    "es": "El árbol de la plaza estaba desnudo en agosto.",
-    "en": "The tree in the square was bare in August.",
+    "es": "Sin hojas, el árbol de la plaza parecía desnudo.",
+    "en": "Without its leaves, the tree in the square looked bare.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
       "g:gender-articles",
-      "g:imperfect-states",
-      "l:agosto",
+      "g:imperfect-habitual",
       "l:desnudo",
-      "l:estar",
+      "l:hoja",
+      "l:parecer",
       "l:plaza",
       "l:árbol"
     ],
@@ -18642,7 +18659,7 @@
   {
     "id": "u41-0725",
     "es": "Arrastraba una maleta pesada por toda la calle.",
-    "en": "I dragged a heavy suitcase all along the street.",
+    "en": "I was dragging a heavy suitcase all along the street.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18735,7 +18752,7 @@
   {
     "id": "u41-0729",
     "es": "La caja era muy pesada y la arrastramos entre dos.",
-    "en": "The box was very heavy and we dragged it between us.",
+    "en": "The box was very heavy and the two of us dragged it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18909,14 +18926,13 @@
   },
   {
     "id": "u41-0736",
-    "es": "El café estaba en pleno centro de Bogotá.",
-    "en": "The café was right in the middle of Bogotá.",
+    "es": "El café está en pleno centro de Bogotá.",
+    "en": "The café is right in the middle of Bogotá.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
       "g:gender-articles",
-      "g:imperfect-states",
       "l:café",
       "l:centro",
       "l:estar",
@@ -19114,7 +19130,7 @@
   },
   {
     "id": "u41-0745",
-    "es": "Nos sentamos en la sombra a esperar al taxi.",
+    "es": "Nos sentamos en la sombra a esperar el taxi.",
     "en": "We sat in the shade to wait for the taxi.",
     "accept": [],
     "acceptEn": [],
@@ -19125,8 +19141,7 @@
       "l:esperar",
       "l:sentarse",
       "l:sombra",
-      "l:taxi",
-      "p:personal-a"
+      "l:taxi"
     ],
     "targets": [
       "l:sombra"
@@ -19212,7 +19227,7 @@
   },
   {
     "id": "u41-0749",
-    "es": "¿Te gustaría que hiciéramos un campamento con los niños?",
+    "es": "¿Te gustaría que fuéramos de campamento con los niños?",
     "en": "Would you like us to go camping with the children? (to a friend)",
     "accept": [],
     "acceptEn": [],
@@ -19221,12 +19236,13 @@
       "g:gender-articles",
       "g:gustar-basic",
       "g:imperfect-subj",
+      "g:ser-identity",
       "g:subj-past-triggers",
       "g:that-clauses",
       "l:campamento",
       "l:gustar",
-      "l:hacer",
       "l:niño",
+      "l:ser",
       "p:me-encanta-que",
       "p:te-invito-a"
     ],
@@ -19361,8 +19377,8 @@
   },
   {
     "id": "u41-0755",
-    "es": "Vale dijo que fuera lento y cuidadoso con el horno.",
-    "en": "Vale said to be slow and careful with the oven.",
+    "es": "Vale me dijo que fuera lento y cuidadoso con el horno.",
+    "en": "Vale told me to be slow and careful with the oven.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19376,7 +19392,8 @@
       "l:decir",
       "l:horno",
       "l:lento",
-      "l:ser"
+      "l:ser",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:reported-commands-past",
@@ -19753,20 +19770,20 @@
   },
   {
     "id": "u41-0773",
-    "es": "La carta de Joaquín decía que Rosa lo perdonara.",
-    "en": "Joaquín's letter said that Rosa should forgive him.",
+    "es": "Mi abuelo me dijo que perdonara a Rosa.",
+    "en": "My grandfather told me to forgive Rosa.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
-      "g:gender-articles",
-      "g:imperfect-habitual",
       "g:imperfect-subj",
+      "g:preterite-irregular-strong",
       "g:reported-commands-past",
       "g:that-clauses",
-      "l:carta",
+      "l:abuelo",
       "l:decir",
-      "l:perdonar"
+      "l:perdonar",
+      "p:me-te-nos-objects",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:reported-commands-past"
@@ -19803,21 +19820,21 @@
   },
   {
     "id": "u41-0775",
-    "es": "Me escribió Mariana que fuera urgente a la oficina.",
-    "en": "Mariana wrote to me to go to the office urgently.",
+    "es": "Mariana me escribió que fuera rápido a la oficina.",
+    "en": "Mariana wrote to me to go to the office quickly.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-subj",
       "g:preterite-er-ir",
-      "g:relative-que",
+      "g:reported-commands-past",
       "g:ser-identity",
-      "g:subj-relative",
+      "g:that-clauses",
       "l:escribir",
       "l:oficina",
+      "l:rápido",
       "l:ser",
-      "l:urgente",
       "p:me-te-nos-objects"
     ],
     "targets": [],
@@ -19887,22 +19904,22 @@
   },
   {
     "id": "u41-0778",
-    "es": "El médico le explicó que no cargara nada pesado.",
-    "en": "The doctor explained to him that he should not carry anything heavy.",
+    "es": "El médico le dijo que no cargara las cajas del café.",
+    "en": "The doctor told him not to carry the café's boxes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-subj",
       "g:indirect-objects",
-      "g:negation-words",
-      "g:preterite-ar",
+      "g:preterite-irregular-strong",
       "g:reported-commands-past",
       "g:that-clauses",
+      "l:café",
+      "l:caja",
       "l:cargar",
-      "l:explicar",
+      "l:decir",
       "l:médico",
-      "l:pesar",
       "p:cargar-descargar"
     ],
     "targets": [
@@ -20026,18 +20043,18 @@
   },
   {
     "id": "u41-0783",
-    "es": "Mariana nos explicó que escribiéramos cada palabra.",
-    "en": "Mariana explained that we should write down every word.",
+    "es": "Mariana nos dijo que escribiéramos cada palabra.",
+    "en": "Mariana told us to write down every word.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
       "g:imperfect-subj",
-      "g:preterite-ar",
+      "g:preterite-irregular-strong",
       "g:reported-commands-past",
       "g:that-clauses",
+      "l:decir",
       "l:escribir",
-      "l:explicar",
       "l:palabra",
       "p:me-te-nos-objects"
     ],
@@ -20265,21 +20282,19 @@
   },
   {
     "id": "u41-0792",
-    "es": "Me dijo que fuera lento con el pan.",
-    "en": "She told me to go slowly with the bread.",
+    "es": "Hernando me dijo que manejara más lento.",
+    "en": "Hernando told me to drive more slowly.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:imperfect-subj",
       "g:preterite-irregular-strong",
       "g:reported-commands-past",
-      "g:ser-identity",
       "g:that-clauses",
       "l:decir",
       "l:lento",
-      "l:pan",
-      "l:ser",
+      "l:manejar",
+      "p:ir-a-velocidad",
       "p:me-te-nos-objects"
     ],
     "targets": [
@@ -20346,26 +20361,21 @@
   },
   {
     "id": "u41-0795",
-    "es": "Les expliqué que anteriormente no hacíamos eso, pero que lo intentaran.",
-    "en": "I explained to them that we did not do that before, but that they should try it.",
+    "es": "Anteriormente cerrábamos a las seis, pero Vale quiere abrir hasta las nueve.",
+    "en": "Previously we closed at six, but Vale wants to stay open until nine.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adverbs-mente",
-      "g:direct-objects",
+      "g:gender-articles",
       "g:imperfect-habitual",
-      "g:imperfect-subj",
-      "g:indirect-objects",
-      "g:pret-vs-imperfect",
-      "g:preterite-spelling-stem",
-      "g:reported-past-basic",
-      "g:subj-wishes",
-      "g:that-clauses",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:abrir",
       "l:anteriormente",
-      "l:explicar",
-      "l:hacer",
-      "l:intentar",
-      "p:demonstratives-basic"
+      "l:cerrar",
+      "l:querer",
+      "p:telling-time"
     ],
     "targets": [
       "l:anteriormente"
@@ -20377,23 +20387,25 @@
   },
   {
     "id": "u41-0796",
-    "es": "Me explicó que fuéramos al campamento antes de que llovieran.",
-    "en": "She explained that we should go to the campsite before it rained.",
+    "es": "El guía nos dijo que hiciéramos el campamento lejos del río.",
+    "en": "The guide told us to set up camp away from the river.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:me-explico",
       "g:gender-articles",
       "g:imperfect-subj",
+      "g:preterite-irregular-strong",
       "g:reported-commands-past",
-      "g:subj-purpose-full",
       "g:that-clauses",
-      "l:antes",
       "l:campamento",
-      "l:explicar",
-      "l:ir",
-      "l:llover",
-      "p:ir-a-venir-de-place"
+      "l:decir",
+      "l:guía",
+      "l:hacer",
+      "l:lejos",
+      "l:río",
+      "p:cerca-de",
+      "p:me-te-nos-objects",
+      "p:position-de"
     ],
     "targets": [
       "g:reported-commands-past",
@@ -20406,24 +20418,25 @@
   },
   {
     "id": "u41-0797",
-    "es": "La guía nos dijo que atravesáramos el río con cuidado.",
-    "en": "The guide told us to cross the river carefully.",
+    "es": "Mi abuela me dijo que nunca atravesara la avenida sin mirar.",
+    "en": "My grandmother told me never to cross the avenue without looking.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
       "g:gender-articles",
       "g:imperfect-subj",
-      "g:present-ar",
+      "g:prep-infinitive",
       "g:preterite-irregular-strong",
       "g:reported-commands-past",
       "g:that-clauses",
+      "l:abuela",
       "l:atravesar",
-      "l:cuidado",
+      "l:avenida",
       "l:decir",
-      "l:guiar",
-      "l:río",
-      "p:me-te-nos-objects"
+      "l:mirar",
+      "p:frequency-scale",
+      "p:me-te-nos-objects",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:reported-commands-past",
@@ -20808,21 +20821,21 @@
   },
   {
     "id": "u41-0812",
-    "es": "¿Qué respondió el médico?\nQue no comiera tanta azúcar.",
-    "en": "What did the doctor answer?\nThat I should not eat so much sugar.",
+    "es": "¿Y el médico?\nMe dijo que no comiera tanta azúcar.",
+    "en": "And the doctor?\nHe told me not to eat so much sugar.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-subj",
-      "g:preterite-er-ir",
-      "g:questions",
-      "g:subj-wishes",
+      "g:preterite-irregular-strong",
+      "g:reported-commands-past",
+      "g:that-clauses",
       "l:azúcar",
       "l:comer",
+      "l:decir",
       "l:médico",
-      "l:qué",
-      "l:responder"
+      "p:me-te-nos-objects"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -20907,22 +20920,23 @@
   },
   {
     "id": "u41-0816",
-    "es": "¿Qué les explicó el señor?\nQue atravesáramos despacio.",
-    "en": "What did the man explain to you all?\nThat we should cross slowly.",
+    "es": "¿Qué les dijo el policía?\nQue atravesáramos por el puente.",
+    "en": "What did the police officer tell you all?\nTo cross by the bridge.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-subj",
       "g:indirect-objects",
-      "g:preterite-ar",
+      "g:por-para-1",
+      "g:preterite-irregular-strong",
       "g:questions",
       "g:subj-wishes",
       "l:atravesar",
-      "l:despacio",
-      "l:explicar",
+      "l:decir",
+      "l:policía",
+      "l:puente",
       "l:qué",
-      "l:señor",
       "p:que-subj-deseo"
     ],
     "targets": [
@@ -21073,21 +21087,22 @@
   },
   {
     "id": "u41-0822",
-    "es": "Se rió como si fuera un niño infantil.",
-    "en": "He laughed as if he were a childish boy.",
+    "es": "Hernando pelea con Simón como si los dos tuvieran cinco años. Qué infantil.",
+    "en": "Hernando argues with Simón as if they were both five years old. How childish.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:como-si",
       "g:gender-articles",
       "g:imperfect-subj",
-      "g:preterite-irregular-strong",
-      "g:se-impersonal",
-      "g:ser-identity",
+      "g:present-ar",
+      "g:questions",
+      "l:año",
       "l:infantil",
-      "l:niño",
-      "l:reír",
-      "l:ser"
+      "l:pelear",
+      "l:qué",
+      "l:tener",
+      "p:tener-anos"
     ],
     "targets": [
       "g:como-si",
@@ -21203,8 +21218,8 @@
   },
   {
     "id": "u41-0827",
-    "es": "Dudo que Altamira cambie, y dudaba que cambiara hace un año.",
-    "en": "I doubt Altamira will change, and I doubted he would a year ago.",
+    "es": "Dudo que Altamira cambie, y hace un año dudaba que cambiara.",
+    "en": "I doubt Altamira will change, and a year ago I doubted he would.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21490,18 +21505,18 @@
   },
   {
     "id": "u41-0837",
-    "es": "Ojalá fuera menos pesado el camino.",
-    "en": "I wish the road were less heavy going.",
+    "es": "Ojalá este trabajo no fuera tan pesado.",
+    "en": "I wish this job were not so exhausting.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ojala",
-      "g:gender-articles",
       "g:imperfect-subj",
       "g:ser-identity",
-      "l:camino",
       "l:pesado",
-      "l:ser"
+      "l:ser",
+      "l:trabajo",
+      "p:demonstratives-basic"
     ],
     "targets": [
       "l:pesado"
@@ -21558,16 +21573,17 @@
   },
   {
     "id": "u41-0840",
-    "es": "Ojalá el hotel no tuviera reconocimiento del alcalde.",
-    "en": "I wish the hotel did not have the mayor's backing.",
+    "es": "Ojalá Rosa tuviera el reconocimiento que merece.",
+    "en": "I wish Rosa got the recognition she deserves.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ojala",
       "g:gender-articles",
       "g:imperfect-subj",
-      "l:alcalde",
-      "l:hotel",
+      "g:present-er-ir",
+      "g:relative-que",
+      "l:merecer",
       "l:reconocimiento",
       "l:tener"
     ],
@@ -21581,8 +21597,8 @@
   },
   {
     "id": "u41-0841",
-    "es": "La maleta de Joaquín es pesada y está llena de cartas.",
-    "en": "Joaquín's suitcase is heavy and full of letters.",
+    "es": "La maleta vieja de Rosa es pesada y está llena de cartas.",
+    "en": "Rosa's old suitcase is heavy and full of letters.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21596,7 +21612,9 @@
       "l:maleta",
       "l:pesado",
       "l:ser",
-      "p:lleno-libre"
+      "l:viejo",
+      "p:lleno-libre",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "l:pesado"
@@ -22100,19 +22118,21 @@
   },
   {
     "id": "u41-0861",
-    "es": "¿Pensabas que Rosa guardara tantos secretos?",
-    "en": "Did you think Rosa would keep so many secrets? (to a friend)",
+    "es": "¿Te sorprendió que Rosa guardara tantos secretos?",
+    "en": "Did it surprise you that Rosa kept so many secrets? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:imperfect-habitual",
+      "g:gustar-full",
       "g:imperfect-subj",
+      "g:preterite-er-ir",
       "g:subj-past-triggers",
       "g:that-clauses",
       "l:guardar",
-      "l:pensar",
       "l:secreto",
-      "p:pensar-en"
+      "l:sorprender",
+      "p:me-extrana-que",
+      "p:me-sorprende-que"
     ],
     "targets": [
       "g:subj-past-triggers"
@@ -22507,8 +22527,8 @@
   },
   {
     "id": "u41-0877",
-    "es": "¿Qué te explicó el médico que comieras?",
-    "en": "What did the doctor explain you should eat? (to a friend)",
+    "es": "¿Qué te recomendó el médico que comieras?",
+    "en": "What did the doctor recommend that you eat? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22519,9 +22539,9 @@
       "g:relative-que",
       "g:subj-relative",
       "l:comer",
-      "l:explicar",
       "l:médico",
       "l:qué",
+      "l:recomendar",
       "p:me-te-nos-objects"
     ],
     "targets": [],
@@ -22556,19 +22576,20 @@
   },
   {
     "id": "u41-0879",
-    "es": "¿Quién te contestó que esperaras?",
-    "en": "Who answered you that you should wait? (to a friend)",
+    "es": "¿Quién te dijo que trajeras a Simón?",
+    "en": "Who told you to bring Simón? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:imperfect-subj",
-      "g:preterite-ar",
+      "g:preterite-irregular-strong",
       "g:questions",
       "g:reported-commands-past",
       "g:that-clauses",
-      "l:contestar",
-      "l:esperar",
+      "l:decir",
       "l:quién",
+      "l:traer",
+      "p:llevar-traer",
       "p:me-te-nos-objects"
     ],
     "targets": [
@@ -22637,8 +22658,8 @@
   },
   {
     "id": "u41-0882",
-    "es": "¿Qué les repitió la señora que no hicieran?",
-    "en": "What did the lady repeat to them not to do?",
+    "es": "¿Qué les pidió la señora que no tocaran?",
+    "en": "What did the lady ask them not to touch?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22649,10 +22670,11 @@
       "g:questions",
       "g:relative-que",
       "g:subj-relative",
-      "l:hacer",
+      "l:pedir",
       "l:qué",
-      "l:repetir",
-      "l:señora"
+      "l:señora",
+      "l:tocar",
+      "p:preguntar-pedir"
     ],
     "targets": [],
     "kind": "question",
@@ -22711,20 +22733,20 @@
   },
   {
     "id": "u41-0885",
-    "es": "¿Te explicaron que dejaras tus cosas en la entrada?",
-    "en": "Did they explain that you should leave your things at the entrance? (to a friend)",
+    "es": "¿Te dijeron que dejaras tus cosas en la entrada?",
+    "en": "Did they tell you to leave your things at the entrance? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-subj",
-      "g:preterite-ar",
+      "g:preterite-irregular-strong",
       "g:reported-commands-past",
       "g:that-clauses",
       "l:cosa",
+      "l:decir",
       "l:dejar",
       "l:entrada",
-      "l:explicar",
       "p:me-te-nos-objects",
       "p:possessives-basic"
     ],
@@ -22920,20 +22942,22 @@
   },
   {
     "id": "u41-0893",
-    "es": "¿Me tratas así como si yo fuera tu enemigo?",
-    "en": "Do you treat me like this as if I were your enemy? (to a friend)",
+    "es": "¿Desde cuándo me tratas como si fuera un cliente más?",
+    "en": "Since when do you treat me as if I were just another customer? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:como-si",
+      "g:gender-articles",
       "g:imperfect-subj",
       "g:present-ar",
       "g:ser-identity",
-      "l:enemigo",
+      "l:cliente",
+      "l:cuándo",
       "l:ser",
       "l:tratar",
       "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "p:prep-questions-basic"
     ],
     "targets": [
       "g:como-si"
@@ -23372,8 +23396,8 @@
   },
   {
     "id": "u41-0910",
-    "es": "¿Quién desafió al patrón de Hernando?",
-    "en": "Who defied Hernando's boss?",
+    "es": "¿Quién desafió al patrón de Yesid?",
+    "en": "Who defied Yesid's boss?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23471,21 +23495,19 @@
   },
   {
     "id": "u41-0914",
-    "es": "¿Es pesada la caja de cartas, o solo lenta de abrir?",
-    "en": "Is the box of letters heavy, or just slow to open?",
+    "es": "¿Es pesada la caja, o solo eres lento?",
+    "en": "Is the box heavy, or are you just slow? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
       "g:ser-identity",
-      "l:abrir",
       "l:caja",
-      "l:carta",
       "l:lento",
       "l:pesado",
       "l:ser",
-      "p:container-de"
+      "p:sobre-todo-solo"
     ],
     "targets": [
       "l:lento",
@@ -23571,16 +23593,17 @@
   },
   {
     "id": "u41-0918",
-    "es": "¿Cuándo vamos a estrenar el café nuevo?",
-    "en": "When are we going to open the new café?",
+    "es": "¿Cuándo vamos a estrenar la cafetera nueva?",
+    "en": "When are we going to try out the new coffee maker?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:vamos-a",
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:ir-a-plans",
       "g:questions",
-      "l:café",
+      "l:cafetera",
       "l:cuándo",
       "l:estrenar",
       "l:ir",

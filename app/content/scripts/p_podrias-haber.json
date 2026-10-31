@@ -1,7 +1,7 @@
 {
   "node": "p:podrias-haber",
   "hook": {
-    "line": "Tomás wasn't told about the letters, and Vale knew. There's a gentle way to say \"you could have told me\" without starting a fight.",
+    "line": "Tomás's grandmother kept the letters to Joaquín for decades, and nobody in the café said a word about them. There's a gentle way to say \"you could have told me\" without starting a fight.",
     "es": "Podrías haberme avisado.",
     "en": "You could have told me."
   },
@@ -31,7 +31,7 @@
       "en": "I should have called you."
     }
   ],
-  "rule": "English says \"could have\" or \"should have\" plus a participle. Spanish does the same in three pieces:\n\n*Podrías* / *Deberías* + *haber* + the *-ado* or *-ido* form\n*Podrías **haber llegado** más temprano.*\n\n*Podrías* is \"you could\", *deberías* \"you should\". Change them for the person: *podría*, *podrían*, *debería*. *Haber* and the participle never change. A pronoun sticks to *haber*, in one word: *haberme avisado*, *haberlo hecho*.",
+  "rule": "English says \"could have\" or \"should have\" plus a participle. Spanish does the same in three pieces:\n\n*Podrías* / *Deberías* + *haber* + the *-ado* or *-ido* form\n*Podrías **haber llegado** más temprano.*\n\n*Podrías* is \"you could\", *deberías* \"you should\". Change them for the person: *podría*, *podrían*, *debería*. *Haber* and the participle never change. A pronoun sticks to *haber*, in one word: *haberme avisado*, *haberlo hecho*. It can also go in front of the whole thing: *Me podrías haber avisado*. Both are everyday Spanish.",
   "readAndPick": [
     {
       "es": "Podrías haberme avisado.",
@@ -110,7 +110,11 @@
     {
       "prompt": "Say to a friend: \"You could have told me.\"",
       "answer": "Podrías haberme avisado.",
-      "accept": [],
+      "accept": [
+        "Me podrías haber avisado.",
+        "Podrías haberme dicho.",
+        "Me podrías haber dicho."
+      ],
       "why": "*Podrías* + *haber* + the participle, with *me* stuck to *haber*."
     },
     {
@@ -122,25 +126,34 @@
     {
       "prompt": "Say to a friend: \"You could have come earlier.\"",
       "answer": "Podrías haber llegado más temprano.",
-      "accept": [],
+      "accept": [
+        "Podrías haber venido más temprano."
+      ],
       "why": "The participle *llegado* never changes."
     },
     {
       "prompt": "Say to a friend: \"You should have told me the truth.\"",
       "answer": "Deberías haberme dicho la verdad.",
-      "accept": [],
+      "accept": [
+        "Me deberías haber dicho la verdad."
+      ],
       "why": "*Dicho* is the irregular participle of *decir*, and *me* sticks to *haber*."
     },
     {
       "prompt": "Say: \"They could have told me.\"",
       "answer": "Podrían haberme avisado.",
-      "accept": [],
+      "accept": [
+        "Me podrían haber avisado.",
+        "Podrían haberme dicho."
+      ],
       "why": "For \"they\", *podrías* becomes *podrían*."
     },
     {
       "prompt": "Say: \"I should have called you.\"",
       "answer": "Debería haberte llamado.",
-      "accept": [],
+      "accept": [
+        "Te debería haber llamado."
+      ],
       "why": "For \"I\", *deberías* becomes *debería*, and *te* sticks to *haber*."
     },
     {
@@ -154,7 +167,7 @@
     {
       "wrong": "Podrías haber me avisado.",
       "right": "Podrías haberme avisado.",
-      "why": "The pronoun joins *haber* in one word."
+      "why": "The pronoun joins *haber* in one word, or goes before *podrías*: *me podrías haber avisado*."
     },
     {
       "wrong": "Podrías haber llamó.",

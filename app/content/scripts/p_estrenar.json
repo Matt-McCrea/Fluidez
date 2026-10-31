@@ -16,7 +16,7 @@
     },
     {
       "es": "Vale estrenó la cocina nueva.",
-      "en": "Vale used her new kitchen for the first time."
+      "en": "Vale used the new kitchen for the first time."
     },
     {
       "es": "¿Vas a estrenar ropa el treinta y uno?",
@@ -132,7 +132,7 @@
       "why": "A film does not wear anything; it opens, so it takes *se*."
     },
     {
-      "prompt": "Type in Spanish: Vale used her new kitchen for the first time.",
+      "prompt": "Type in Spanish: Vale used the new kitchen for the first time.",
       "answer": "Vale estrenó la cocina nueva.",
       "accept": [],
       "why": "The thing follows *estrenó* directly."

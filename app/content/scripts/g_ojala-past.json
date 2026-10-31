@@ -39,7 +39,7 @@
       "en": "I hope you come tomorrow."
     }
   ],
-  "rule": "*Ojalá* means \"I wish\" or \"let's hope\". There is no *yo* and usually no *que*; the verb after it does the work.\n\n*Ojalá* + **-ra form** = a wish about something that isn't true, or probably won't be:\n*Ojalá tuviera más plata.* (I don't have it.)\n*Ojalá estuvieras aquí.* (You aren't here.)\n\n*Ojalá* + **present form** = a real hope:\n*Ojalá vengas mañana.* (You might.)\n\nEnglish uses \"were\" and \"had\" for this: \"I wish I *had*\". Spanish uses the same *-ra* endings you know from *quería que vinieras*. The time is now, even though the form looks past.",
+  "rule": "*Ojalá* means \"I wish\" or \"let's hope\". There is no *yo*, and *que* after it is optional (*ojalá que...* is very common in Colombia); the verb after it does the work.\n\n*Ojalá* + **-ra form** = a wish about something that isn't true, or probably won't be:\n*Ojalá tuviera más plata.* (I don't have it.)\n*Ojalá estuvieras aquí.* (You aren't here.)\n\n*Ojalá* + **present form** = a real hope:\n*Ojalá vengas mañana.* (You might.)\n\nEnglish uses \"were\" and \"had\" for this: \"I wish I *had*\". Spanish uses the same *-ra* endings you know from *quería que vinieras*. The time is now, even though the form looks past.",
   "smallPrint": "Teachers call this a counterfactual wish: *ojalá* with the imperfect subjunctive for something contrary to present reality.",
   "readAndPick": [
     {
@@ -128,49 +128,69 @@
     {
       "prompt": "Say \"I wish you were here.\" Choose *estés* or *estuvieras*, then type it: *Ojalá ___ aquí.*",
       "answer": "Ojalá estuvieras aquí.",
-      "accept": [],
+      "accept": [
+        "Ojalá que estuvieras aquí.",
+        "Ojalá estuvieras acá."
+      ],
       "why": "You are not here, so it is a wish, and wishes take the *-ra* form."
     },
     {
       "prompt": "Say \"I hope you come tomorrow.\" Choose *vengas* or *vinieras*, then type it: *Ojalá ___ mañana.*",
       "answer": "Ojalá vengas mañana.",
-      "accept": [],
+      "accept": [
+        "Ojalá que vengas mañana."
+      ],
       "why": "Coming tomorrow could really happen, so it is a hope, with the present form."
     },
     {
       "prompt": "Type in Spanish: \"I wish I had more money.\"",
       "answer": "Ojalá tuviera más plata.",
-      "accept": [],
+      "accept": [
+        "Ojalá que tuviera más plata."
+      ],
       "why": "You don't have it, so *tuviera* (*-ra*), with no *yo* needed."
     },
     {
       "prompt": "Type in Spanish: \"If only it were that easy.\"",
       "answer": "Ojalá fuera tan fácil.",
-      "accept": [],
+      "accept": [
+        "Ojalá que fuera tan fácil."
+      ],
       "why": "*Fuera* is the *-ra* form of *ser* for \"it is not that easy\"."
     },
     {
       "prompt": "Type in Spanish: \"I wish we could stay.\"",
       "answer": "Ojalá pudiéramos quedarnos.",
-      "accept": [],
+      "accept": [
+        "Ojalá que pudiéramos quedarnos."
+      ],
       "why": "For \"we\", the *-ra* form gets an accent: *pudiéramos*."
     },
     {
       "prompt": "Type in Spanish: \"I wish Rosa were here.\"",
       "answer": "Ojalá Rosa estuviera aquí.",
-      "accept": [],
+      "accept": [
+        "Ojalá que Rosa estuviera aquí.",
+        "Ojalá Rosa estuviera acá."
+      ],
       "why": "Rosa is not here, so *estuviera*."
     },
     {
       "prompt": "Make it a hope: *Ojalá tuviera razón.* Say \"I hope I'm right.\"",
       "answer": "Ojalá tenga razón.",
-      "accept": [],
+      "accept": [
+        "Ojalá que tenga razón.",
+        "Ojalá yo tenga razón.",
+        "Ojalá que yo tenga razón."
+      ],
       "why": "A real hope takes the present form (*tenga*), not *tuviera*."
     },
     {
       "prompt": "Make it negative: *Ojalá Altamira comprara la calle.* Say \"I wish Altamira wouldn't buy the street.\"",
       "answer": "Ojalá Altamira no comprara la calle.",
-      "accept": [],
+      "accept": [
+        "Ojalá que Altamira no comprara la calle."
+      ],
       "why": "*No* goes right before the verb."
     }
   ],
@@ -178,12 +198,12 @@
     {
       "wrong": "Ojalá estás aquí.",
       "right": "Ojalá estuvieras aquí.",
-      "why": "After *ojalá* the verb is never the plain present of fact; use *-ra* for a wish."
+      "why": "After *ojalá* the verb is never the everyday present (*estás*); for a wish about now, use the *-ra* form."
     },
     {
       "wrong": "Ojalá tendría más plata.",
       "right": "Ojalá tuviera más plata.",
-      "why": "Where English says \"would have\", Spanish uses the *-ra* form after *ojalá*, not the *-ía* \"would\" form."
+      "why": "*Tendría* is the \"would\" form. After *ojalá*, English \"I had\" is the *-ra* form: *tuviera*."
     },
     {
       "wrong": "Ojalá Rosa esté aquí.",

@@ -1,9 +1,9 @@
 {
   "node": "g:subj-past-triggers",
   "hook": {
-    "line": "Half of family life is somebody wanting somebody else to do something. Rosa wanted Tomás to take over the café, and now he has to say what she wanted. You need a way to say \"she wanted me to...\".",
-    "es": "Rosa quería que yo abriera el café.",
-    "en": "Rosa wanted me to open the café."
+    "line": "Half of family life is somebody wanting somebody else to do something. Before he died, Joaquín asked his wife for one thing, and now she has to pass it on. You need a way to say \"he asked me to...\" and \"he wanted them to...\".",
+    "es": "Joaquín le pidió a Eulalia que la familia hiciera las paces.",
+    "en": "Joaquín asked Eulalia to make sure the family made peace."
   },
   "examples": [
     {

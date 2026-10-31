@@ -124,7 +124,9 @@
     {
       "prompt": "Choose *fuera* or *iba*, for \"he told me to go\": Me dijo que ___ a la reunión. Type the whole sentence.",
       "answer": "Me dijo que fuera a la reunión.",
-      "accept": [],
+      "accept": [
+        "Él me dijo que fuera a la reunión."
+      ],
       "why": "An order needs the *-ra* form; *iba* only reports what he was doing."
     },
     {
@@ -166,7 +168,9 @@
     {
       "prompt": "Report it: Rosa's request to Tomás was *Cuida el café*. Start with *Rosa le pidió a Tomás*.",
       "answer": "Rosa le pidió a Tomás que cuidara el café.",
-      "accept": [],
+      "accept": [
+        "Rosa le pidió a Tomás que cuidara del café."
+      ],
       "why": "The command becomes *que* plus the *-ra* verb."
     }
   ],

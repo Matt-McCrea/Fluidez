@@ -126,19 +126,25 @@
     {
       "prompt": "Say: \"I raise a glass to my friends.\"",
       "answer": "Brindo por mis amigos.",
-      "accept": [],
+      "accept": [
+        "¡Brindo por mis amigos!"
+      ],
       "why": "*Brindo* is \"I toast\", then *por*."
     },
     {
       "prompt": "Say: \"Let's drink to the family.\"",
       "answer": "Brindemos por la familia.",
-      "accept": [],
+      "accept": [
+        "¡Brindemos por la familia!"
+      ],
       "why": "*Brindemos* is \"let's toast\"."
     },
     {
       "prompt": "Say to one friend: \"I raise a glass to you.\"",
       "answer": "Brindo por ti.",
-      "accept": [],
+      "accept": [
+        "¡Brindo por ti!"
+      ],
       "why": "After *por*, \"you\" is *ti*."
     },
     {

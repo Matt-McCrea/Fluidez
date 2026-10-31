@@ -3,7 +3,7 @@
   "unit": "u41",
   "title": "Lo que pidió Joaquín",
   "spare": false,
-  "brief": "You're Tomás, in the sitting room of Yesid's grandmother, who has just told you what Joaquín wanted before he died. She is much older than you, so use usted. Say what you wish, ask what else he asked of her, report what Yesid told you, and say what you would like.",
+  "brief": "You're Tomás, in the sitting room of Yesid's grandmother, who has just told you what Joaquín wanted before he died. She is much older than you, so use usted. Say what you wish, ask what else he asked of her, report what Yesid asked of you, and say what you would like.",
   "turns": [
     {
       "id": "t1",
@@ -11,9 +11,9 @@
       "npcEn": "Thank you for coming all the way here, Tomás. Joaquín always wanted someone from the family to go back to Bogotá.",
       "intent": "Say you wish he were still alive so you could meet him.",
       "accept": [
-        "Ojalá viviera todavía, señora. Me gustaría conocerlo.",
+        "Ojalá estuviera vivo, señora. Me gustaría conocerlo.",
         "Ojalá él viviera todavía para que yo pudiera conocerlo.",
-        "Ojalá pudiera conocerlo, señora. Ojalá viviera."
+        "Ojalá pudiera conocerlo, señora."
       ],
       "require": [
         {
@@ -63,13 +63,13 @@
     },
     {
       "id": "t3",
-      "npc": "Mi nieto Yesid todavía está enojado. ¿Qué le dijo a usted cuando lo llamó?",
-      "npcEn": "My grandson Yesid is still angry. What did he say to you when you called him?",
-      "intent": "Say he told you not to call him any more.",
+      "npc": "Mi nieto Yesid habló con usted en el barco. ¿Qué le pidió?",
+      "npcEn": "My grandson Yesid talked to you on the boat. What did he ask you?",
+      "intent": "Say he asked you not to lie to him.",
       "accept": [
-        "Me dijo que no lo llamara más.",
-        "Me pidió que no lo llamara más, señora.",
-        "Ayer Yesid me dijo que no lo llamara más."
+        "Me pidió que no le mintiera.",
+        "Yesid me pidió que no le mintiera, señora.",
+        "Me dijo que no le mintiera nunca."
       ],
       "require": [
         {
@@ -85,7 +85,7 @@
         },
         {
           "type": "negation",
-          "label": "he said not to call"
+          "label": "he asked you not to"
         }
       ],
       "focus": "g:reported-commands-past",
@@ -141,7 +141,6 @@
   ],
   "requires": [
     "c:algo-mas",
-    "c:ayer-anoche",
     "c:bien-y-tu",
     "c:claro-listo",
     "c:con-el-ella",
@@ -164,6 +163,7 @@
     "g:indirect-objects",
     "g:indirect-questions",
     "g:le-doubling",
+    "g:negation-words",
     "g:object-pronoun-position",
     "g:para-que",
     "g:prep-infinitive",
@@ -186,14 +186,13 @@
     "l:ahora",
     "l:antes",
     "l:aquí",
-    "l:ayer",
+    "l:barco",
     "l:bien",
     "l:café",
     "l:claro",
     "l:conocer",
     "l:contar",
     "l:decir",
-    "l:enojado",
     "l:estar",
     "l:familia",
     "l:ganar",
@@ -201,7 +200,7 @@
     "l:gusto",
     "l:hablar",
     "l:hacer",
-    "l:llamar",
+    "l:mentir",
     "l:morir",
     "l:necesitar",
     "l:nieto",
@@ -219,13 +218,13 @@
     "l:venir",
     "l:vez",
     "l:vivir",
+    "l:vivo",
     "l:volver",
     "p:aqui-ahi-alla",
     "p:bien-bueno",
     "p:bien-mal-vs-bueno-malo",
     "p:contar-con",
     "p:contar-dos-sentidos",
-    "p:cuando-basic",
     "p:demonstratives-basic",
     "p:frequency-scale",
     "p:gracias-por",

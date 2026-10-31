@@ -1,9 +1,9 @@
 {
   "node": "p:te-importaria-que",
   "hook": {
-    "line": "Tomás has to ask a lot of favours in his first weeks: a seat, a window, a bit of time. This is the softest, most polite way to ask permission.",
-    "es": "¿Te importaría que me sentara aquí?",
-    "en": "Would you mind if I sat here?"
+    "line": "Tomás is a guest in the house of Yesid's grandmother, a woman he met an hour ago. Every small thing needs asking, and this is the softest way to ask permission.",
+    "es": "¿Le importaría que me sentara aquí?",
+    "en": "Would you mind if I sat here? (to someone you address as usted)"
   },
   "examples": [
     {
@@ -112,7 +112,9 @@
     {
       "prompt": "Ask a friend: \"Would you mind if I sat here?\"",
       "answer": "¿Te importaría que me sentara aquí?",
-      "accept": [],
+      "accept": [
+        "¿Te importaría que me sentara acá?"
+      ],
       "why": "*Me sentara* is \"I would sit\": the person who acts is you."
     },
     {
@@ -130,7 +132,9 @@
     {
       "prompt": "Ask a friend: \"Would you mind calling me tomorrow?\"",
       "answer": "¿Te importaría que me llamaras mañana?",
-      "accept": [],
+      "accept": [
+        "¿Te importaría llamarme mañana?"
+      ],
       "why": "Now you is the one who calls, so the verb is *llamaras*."
     },
     {
@@ -143,7 +147,9 @@
       "prompt": "Answer *¿Te importaría que abriera la puerta?* with \"Of course not.\"",
       "answer": "Claro que no.",
       "accept": [
-        "No, claro que no."
+        "No, claro que no.",
+        "No, para nada.",
+        "Para nada."
       ],
       "why": "A \"no\" means it doesn't bother them, so they are happy for you to go ahead."
     }
@@ -157,7 +163,7 @@
     {
       "wrong": "¿Te importa que abriera la ventana?",
       "right": "¿Te importaría que abriera la ventana?",
-      "why": "Keep both parts soft: *importaría* goes with *-ra*."
+      "why": "Mixing the two is the slip. Either *¿Te importa que abra...?* or the softer *¿Te importaría que abriera...?*: *importaría* goes with *-ra*."
     },
     {
       "wrong": "Sí, claro.",

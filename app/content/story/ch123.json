@@ -2,7 +2,7 @@
   "id": "ch123",
   "unit": "u41",
   "title": "El lenguaje de las manos",
-  "text": "Bajo el agua nadie habla, así que Yesid les enseñó otro lenguaje.\nYesid: Esta mano es «todo bien». Esta es «me falta aire». Cuidado, que no son iguales.\nVale y Mariana intercambiaron una mirada.\nYesid: Soy consciente de una cosa: esa casa de Bogotá vale mucha plata, y yo vivo en un cuarto con un ventilador.\nTomás: No le puedo prometer plata. Solo la verdad. Y no le voy a hacer un truco, como Duarte.\nMariana: Altamira tiene un truco para todo. Hasta los muertos le firman.\nYesid: Mi tío Wilson no es malo. Está atrapado en deudas hace años. Se arrepiente, y lamenta mucho la venta de la cédula.\nTomás: Si se arrepiente, que lo diga delante del comité.\nYesid: ¿Un arrepentimiento delante de los abogados de Altamira?\nMariana: Delante de un abogado vale poco. Delante de una periodista, mucho.\nEn el agua, Tomás quería decir «todo bien» y dijo lo otro. Yesid lo subió en tres segundos.\nVale: Eso fue infantil, Tomás.\nTomás: No fue infantil. Fue un problema de lenguaje.\nEn el barco, Tomás quedó atrapado en el traje de buceo, y Vale lo ayudó. Él fue muy consciente de sus manos en la espalda.\nYesid: Mi abuelo vivió treinta años con ese arrepentimiento. Su último deseo era un encuentro: sentarse con Rosa, tomarse un tinto y no decir nada.\nTomás: Ese encuentro ya no puede ser. Pero puede haber otro, en la misma mesa.\nVale: Eso también es una reconciliación.\nYesid: ¿Una reconciliación? Cuarenta y seis años sin hablar por orgullo. Eso es infantil.\nTomás: Por eso alguien tiene que terminarlo. Lamento no tener una respuesta mejor.\nYesid se rio.\nYesid: Usted no vende humo. Mi abuela tiene un deseo: quiere que yo esté en Bogotá el día del comité. Y yo estoy dispuesto. Pero mi jefe no concede vacaciones en temporada alta. Ni a su mamá se las concede.\nVale: ¿Y usted de verdad está dispuesto?\nYesid le dio a Tomás una máscara de buceo vieja. Tomás le dio su gorra de Toronto. Intercambiaron regalos como dos niños.\nYesid: Mañana hablo con mi jefe.",
+  "text": "Bajo el agua nadie habla, así que Yesid les enseñó otro lenguaje.\nYesid: Esta mano es «todo bien». Esta es «me falta aire». Cuidado, que no son iguales.\nVale y Mariana intercambiaron una mirada.\nYesid: Soy consciente de una cosa: esa casa de Bogotá vale mucha plata, y yo vivo en un cuarto con un ventilador.\nTomás: No le puedo prometer plata. Solo la verdad. Y no le voy a hacer un truco, como Duarte.\nMariana: Altamira tiene un truco para todo. Hasta los muertos le firman.\nYesid: Mi tío Wilson no es malo. Está atrapado en deudas hace años. Se arrepiente, y lamenta mucho la venta de la cédula.\nTomás: Si se arrepiente, que lo diga delante del comité.\nYesid: ¿Un arrepentimiento delante de los abogados de Altamira?\nMariana: Delante de un abogado vale poco. Delante de una periodista, mucho.\nEn el agua, Tomás quería decir «todo bien» y dijo lo otro. Yesid lo subió en tres segundos.\nVale: Eso fue infantil, Tomás.\nTomás: No fue infantil. Fue un problema de lenguaje.\nEn el barco, Tomás quedó atrapado en el traje de buceo, y Vale lo ayudó. Él fue muy consciente de sus manos en la espalda.\nYesid: Mi abuelo vivió treinta años con ese arrepentimiento. Su último deseo era un encuentro: sentarse con Rosa, tomarse un tinto y no decir nada.\nTomás: Ese encuentro ya no puede ser. Pero puede haber otro, en la misma mesa.\nVale: Eso también es una reconciliación.\nYesid: ¿Una reconciliación? Más de treinta años sin hablar por orgullo. Eso sí es infantil.\nTomás: Por eso alguien tiene que terminarlo. Lamento no tener una respuesta mejor.\nYesid se rio.\nYesid: Usted no vende humo. Mi abuela tiene un deseo: quiere que yo esté en Bogotá el día del comité. Y yo estoy dispuesto. Pero mi jefe no concede vacaciones en temporada alta. Ni a su mamá se las concede.\nVale: ¿Y usted de verdad está dispuesto?\nYesid le dio a Tomás una máscara de buceo vieja. Tomás le dio su gorra de Toronto. Intercambiaron regalos como dos niños.\nYesid: Mañana hablo con mi jefe.",
   "gloss": [
     {
       "es": "me falta aire",
@@ -153,6 +153,7 @@
     "c:ya-no",
     "g:adjective-agreement",
     "g:cause-result",
+    "g:comparatives-advanced",
     "g:demonstratives",
     "g:direct-objects",
     "g:double-pronouns",
@@ -190,6 +191,7 @@
     "p:demonstratives-basic",
     "p:el-agua-fria",
     "p:indefinites-basic",
+    "p:mas-de-number",
     "p:otro-no-article",
     "p:para-inf",
     "p:poco-un-poco",

@@ -1,9 +1,9 @@
 {
   "node": "x:subj-present-past",
   "hook": {
-    "line": "Vale wants something now and wanted something else yesterday, and the café hears about both. Spanish changes the second verb depending on when the wanting happens, so it is worth hearing the two side by side.",
-    "es": "Vale quería que Tomás se quedara.",
-    "en": "Vale wanted Tomás to stay."
+    "line": "Doña Eulalia wants the family to make peace now, and Joaquín wanted exactly the same thing before he died. Spanish changes the second verb depending on when the wanting happens, so hear the two side by side.",
+    "es": "Joaquín quería que la familia hiciera las paces.",
+    "en": "Joaquín wanted the family to make peace."
   },
   "examples": [
     {
@@ -77,8 +77,8 @@
     {
       "es": "Prefería que cerraras la puerta.",
       "options": [
-        "I prefer that you close the door.",
-        "I preferred that you close the door."
+        "I prefer you to close the door.",
+        "I preferred you to close the door."
       ],
       "answer": 1
     },
@@ -163,7 +163,7 @@
       "why": "*Querías* is past, so *ayudara* takes *-ra*."
     },
     {
-      "prompt": "Make it past: *Prefiero que cierres la puerta.* Say \"I preferred that you close the door.\"",
+      "prompt": "Make it past: *Prefiero que cierres la puerta.* Say \"I preferred you to close the door.\"",
       "answer": "Prefería que cerraras la puerta.",
       "accept": [
         "Prefería que tú cerraras la puerta."
