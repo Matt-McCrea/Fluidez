@@ -1,0 +1,345 @@
+{
+  "id": "ch122",
+  "unit": "u41",
+  "title": "El cuaderno azul",
+  "text": "Tomás llegó a las siete, con hambre, sin abogado y con un pantalón blanco que le escogió Vale.\nVale: Con ese pantalón luces como un novio.\nTomás: ¿Novio de quién?\nVale no contestó.\nLa abuela de Yesid, doña Eulalia, tenía ochenta años y una voz tranquila que nadie interrumpía.\nEulalia: Así que usted es el nieto de Rosa. Joaquín también era mono cuando llegó a Taganga.\nSirvió mojarra con patacones. Tomás comió con las manos, y una gota de grasa cayó en el pantalón blanco. Vale cerró los ojos.\nDespués sacó un cuaderno azul, viejo y gordo.\nEulalia: Joaquín no escribía cartas. Escribía aquí una línea cada año, el día del cumpleaños de Rosa.\nTomás: «1979. Hoy cumple Rosa. No la llamé». «2008. Hoy cumple Rosa. Compré un pasaje a Bogotá, y no lo usé».\nEulalia: Él quería volver. Pero temía que Rosa le cerrara la puerta en la cara.\nTomás: Rosa nunca cerró esa puerta. Ni para un taxista sin plata.\nEulalia: En 2010, antes de morirse, me hizo una petición. Me pidió que la familia hiciera las paces. No quería que los nietos heredaran el orgullo de los abuelos.\nEulalia: Después vino ese señor de camisa blanca. Me pidió que le vendiera la cédula de mi marido, como quien compra una gallina. Mi hijo le dijo que sí.\nEulalia: No hay derecho a que usen el nombre de un muerto para quitarle la casa a su hermana.\nEntonces sonó muy fuerte una nota de voz de Hernando.\nHernando: «Mijo, ¿ya comieron? Simón, salude a la señora».\nSimón: «¡No hay derecho! ¡No hay derecho, parce!»\nTomás no sabía dónde meterse. La señora se rio hasta llorar.\nEulalia: ¿Ese pájaro era de Rosa? Entonces ya entiendo todo.\nVale le limpió el pantalón con una servilleta y un poco de limón. La mancha no se fue, pero Tomás no se movió.\nYesid: Abuela, cuenta conmigo. Pero si esa casa de Bogotá es de la familia, ¿yo qué gano?\nLa abuela no contestó. Le pasó el cuaderno a Tomás.\nEulalia: Joaquín también preguntaba eso. Por eso se murió aquí.",
+  "gloss": [
+    {
+      "es": "Con ese pantalón luces como un novio.",
+      "en": "In those trousers you look like a groom."
+    },
+    {
+      "es": "una voz tranquila que nadie interrumpía",
+      "en": "a calm voice that nobody interrupted"
+    },
+    {
+      "es": "mono",
+      "en": "blond, fair-haired"
+    },
+    {
+      "es": "mojarra",
+      "en": "a whole fried fish, a Caribbean favourite"
+    },
+    {
+      "es": "patacones",
+      "en": "fried green plantain"
+    },
+    {
+      "es": "Una gota de grasa cayó en el pantalón blanco.",
+      "en": "A drop of grease fell on the white trousers."
+    },
+    {
+      "es": "Hoy cumple Rosa.",
+      "en": "It's Rosa's birthday today."
+    },
+    {
+      "es": "temía que Rosa le cerrara la puerta en la cara",
+      "en": "he was afraid Rosa would shut the door in his face"
+    },
+    {
+      "es": "Me pidió que la familia hiciera las paces.",
+      "en": "He asked me to make sure the family made peace."
+    },
+    {
+      "es": "No quería que los nietos heredaran el orgullo de los abuelos.",
+      "en": "He didn't want the grandchildren to inherit their grandparents' pride."
+    },
+    {
+      "es": "Me pidió que le vendiera la cédula de mi marido, como quien compra una gallina.",
+      "en": "He asked me to sell him my husband's ID card, like someone buying a chicken."
+    },
+    {
+      "es": "No hay derecho a que usen el nombre de un muerto para quitarle la casa a su hermana.",
+      "en": "It isn't right for them to use a dead man's name to take his sister's house."
+    },
+    {
+      "es": "servilleta",
+      "en": "napkin"
+    },
+    {
+      "es": "una nota de voz",
+      "en": "a voice message"
+    },
+    {
+      "es": "Tomás no sabía dónde meterse.",
+      "en": "Tomás wanted the ground to swallow him."
+    },
+    {
+      "es": "Abuela, cuenta conmigo.",
+      "en": "Grandma, you can count on me."
+    },
+    {
+      "es": "¿yo qué gano?",
+      "en": "what do I get out of it?"
+    },
+    {
+      "es": "Por eso se murió aquí.",
+      "en": "That's why he died here."
+    }
+  ],
+  "questions": [
+    {
+      "q": "What did Joaquín write in the blue notebook?",
+      "options": [
+        "One line every year on Rosa's birthday",
+        "Letters to Rosa that he never posted",
+        "The names of the fish he caught",
+        "A list of his debts"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why didn't Joaquín go back to Bogotá, according to doña Eulalia?",
+      "options": [
+        "He was afraid Rosa would shut the door in his face",
+        "He had no money for the ticket",
+        "He hated the cold",
+        "Rosa told him never to come back"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What did Joaquín ask doña Eulalia before he died?",
+      "options": [
+        "To make sure the family made peace",
+        "To sell his ID card",
+        "To burn the notebook",
+        "To keep the family away from Bogotá"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué dijo Simón en la nota de voz?",
+      "options": [
+        "¡No hay derecho!",
+        "¡Cuenta conmigo!",
+        "¡Hoteles Altamira, a la orden!",
+        "¡Que les vaya bien!"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Yesid want to know at the end?",
+      "options": [
+        "What he gets out of helping",
+        "Who Duarte works for",
+        "When the hearing is",
+        "Why Tomás came without a lawyer"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What happened in the 2008 line of the notebook?",
+      "options": [
+        "Joaquín bought a ticket to Bogotá and didn't use it",
+        "Joaquín phoned Rosa",
+        "Joaquín got as far as the phone",
+        "Joaquín sent Rosa a photo"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who sold Joaquín's ID card to the man in the white shirt?",
+      "options": [
+        "Doña Eulalia's son",
+        "Doña Eulalia",
+        "Yesid",
+        "Nobody"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Vale use to clean Tomás's trousers?",
+      "options": [
+        "A napkin and a bit of lime",
+        "Coconut water",
+        "Sea water",
+        "Yesid's T-shirt"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Yesid has asked the question nobody wanted to answer: what does he get out of it. Tomorrow Tomás has to answer him honestly, without promising anything he cannot keep.",
+  "requires": [
+    "c:compre-trabaje",
+    "c:cuenta-conmigo",
+    "c:entonces-bueno",
+    "c:era",
+    "c:hay",
+    "c:no-hay-derecho",
+    "c:no-se",
+    "c:tranquilo",
+    "g:adjective-agreement",
+    "g:cada-cualquier",
+    "g:cause-result",
+    "g:commands-usted",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:le-doubling",
+    "g:object-pronoun-position",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:relatives-prepositions",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:subj-past-triggers",
+    "g:subj-relative",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "p:aqui-ahi-alla",
+    "p:con-sin",
+    "p:cuando-basic",
+    "p:dates-years",
+    "p:de-los-ojos-azules",
+    "p:demonstratives-basic",
+    "p:entonces-de-repente",
+    "p:es-tiene-lleva",
+    "p:frequency-scale",
+    "p:mancharse",
+    "p:masculine-plural-mixed",
+    "p:me-te-nos-objects",
+    "p:naci-en",
+    "p:no-se-que-hacer",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:personal-a",
+    "p:poco-un-poco",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:telling-time",
+    "p:tener-anos",
+    "p:time-sequence-basic",
+    "p:veces-al",
+    "p:viejo-antiguo-mayor"
+  ],
+  "lexemes": [
+    "l:abogado",
+    "l:abuela",
+    "l:abuelos",
+    "l:antes",
+    "l:aquí",
+    "l:azul",
+    "l:año",
+    "l:blanco",
+    "l:caer",
+    "l:camisa",
+    "l:cara",
+    "l:carta",
+    "l:casa",
+    "l:cerrar",
+    "l:comer",
+    "l:comprar",
+    "l:contar",
+    "l:contestar",
+    "l:cuaderno",
+    "l:cumpleaños",
+    "l:cumplir",
+    "l:cédula",
+    "l:decir",
+    "l:derecho",
+    "l:después",
+    "l:día",
+    "l:dónde",
+    "l:entender",
+    "l:escoger",
+    "l:escribir",
+    "l:familia",
+    "l:fuerte",
+    "l:gallina",
+    "l:ganar",
+    "l:gordo",
+    "l:gota",
+    "l:grasa",
+    "l:hacer",
+    "l:hambre",
+    "l:heredar",
+    "l:hermana",
+    "l:hijo",
+    "l:hoy",
+    "l:interrumpir",
+    "l:irse",
+    "l:limpiar",
+    "l:limón",
+    "l:llamar",
+    "l:llegar",
+    "l:llorar",
+    "l:luz",
+    "l:línea",
+    "l:manchar",
+    "l:mano",
+    "l:marido",
+    "l:meterse",
+    "l:mijo",
+    "l:mono",
+    "l:morir",
+    "l:morirse",
+    "l:mover",
+    "l:nieto",
+    "l:nombre",
+    "l:nota",
+    "l:novio",
+    "l:ojo",
+    "l:orgullo",
+    "l:pantalón",
+    "l:parce",
+    "l:pasaje",
+    "l:pasar",
+    "l:paz",
+    "l:pedir",
+    "l:petición",
+    "l:plata",
+    "l:preguntar",
+    "l:puerta",
+    "l:pájaro",
+    "l:querer",
+    "l:quitar",
+    "l:quién",
+    "l:qué",
+    "l:reír",
+    "l:saber",
+    "l:sacar",
+    "l:saludar",
+    "l:ser",
+    "l:servilleta",
+    "l:servir",
+    "l:señor",
+    "l:señora",
+    "l:sonar",
+    "l:taxista",
+    "l:temer",
+    "l:tener",
+    "l:tranquilo",
+    "l:usar",
+    "l:vender",
+    "l:venir",
+    "l:viejo",
+    "l:volver",
+    "l:voz"
+  ]
+}

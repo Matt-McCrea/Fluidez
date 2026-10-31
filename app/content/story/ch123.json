@@ -1,0 +1,294 @@
+{
+  "id": "ch123",
+  "unit": "u41",
+  "title": "El lenguaje de las manos",
+  "text": "Bajo el agua nadie habla, así que Yesid les enseñó otro lenguaje.\nYesid: Esta mano es «todo bien». Esta es «me falta aire». Cuidado, que no son iguales.\nVale y Mariana intercambiaron una mirada.\nYesid: Soy consciente de una cosa: esa casa de Bogotá vale mucha plata, y yo vivo en un cuarto con un ventilador.\nTomás: No le puedo prometer plata. Solo la verdad. Y no le voy a hacer un truco, como Duarte.\nMariana: Altamira tiene un truco para todo. Hasta los muertos le firman.\nYesid: Mi tío Wilson no es malo. Está atrapado en deudas hace años. Se arrepiente, y lamenta mucho la venta de la cédula.\nTomás: Si se arrepiente, que lo diga delante del comité.\nYesid: ¿Un arrepentimiento delante de los abogados de Altamira?\nMariana: Delante de un abogado vale poco. Delante de una periodista, mucho.\nEn el agua, Tomás quería decir «todo bien» y dijo lo otro. Yesid lo subió en tres segundos.\nVale: Eso fue infantil, Tomás.\nTomás: No fue infantil. Fue un problema de lenguaje.\nEn el barco, Tomás quedó atrapado en el traje de buceo, y Vale lo ayudó. Él fue muy consciente de sus manos en la espalda.\nYesid: Mi abuelo vivió treinta años con ese arrepentimiento. Su último deseo era un encuentro: sentarse con Rosa, tomarse un tinto y no decir nada.\nTomás: Ese encuentro ya no puede ser. Pero puede haber otro, en la misma mesa.\nVale: Eso también es una reconciliación.\nYesid: ¿Una reconciliación? Cuarenta y seis años sin hablar por orgullo. Eso es infantil.\nTomás: Por eso alguien tiene que terminarlo. Lamento no tener una respuesta mejor.\nYesid se rio.\nYesid: Usted no vende humo. Mi abuela tiene un deseo: quiere que yo esté en Bogotá el día del comité. Y yo estoy dispuesto. Pero mi jefe no concede vacaciones en temporada alta. Ni a su mamá se las concede.\nVale: ¿Y usted de verdad está dispuesto?\nYesid le dio a Tomás una máscara de buceo vieja. Tomás le dio su gorra de Toronto. Intercambiaron regalos como dos niños.\nYesid: Mañana hablo con mi jefe.",
+  "gloss": [
+    {
+      "es": "me falta aire",
+      "en": "I'm out of air"
+    },
+    {
+      "es": "Está atrapado en deudas hace años",
+      "en": "He has been trapped in debt for years"
+    },
+    {
+      "es": "Ese encuentro ya no puede ser.",
+      "en": "That meeting can't happen any more."
+    },
+    {
+      "es": "usted no vende humo",
+      "en": "you don't sell empty promises"
+    },
+    {
+      "es": "temporada alta",
+      "en": "high season"
+    },
+    {
+      "es": "máscara de buceo",
+      "en": "diving mask"
+    },
+    {
+      "es": "lamenta mucho la venta de la cédula",
+      "en": "he is very sorry he sold the ID card"
+    },
+    {
+      "es": "Hasta los muertos le firman.",
+      "en": "Even the dead sign for them."
+    },
+    {
+      "es": "Delante de un abogado vale poco.",
+      "en": "In front of a lawyer it's worth little."
+    },
+    {
+      "es": "que lo diga delante del comité",
+      "en": "he should say it in front of the committee"
+    },
+    {
+      "es": "Cuidado, que no son iguales.",
+      "en": "Careful, they're not the same."
+    },
+    {
+      "es": "traje de buceo",
+      "en": "wetsuit"
+    },
+    {
+      "es": "ventilador",
+      "en": "fan"
+    },
+    {
+      "es": "quiere que yo esté en Bogotá el día del comité",
+      "en": "she wants me to be in Bogotá on the day of the committee"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does Tomás promise Yesid?",
+      "options": [
+        "Only the truth, even if he doesn't like it",
+        "Half the money from the building",
+        "A job in the café",
+        "A new boat"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why did Yesid's uncle sell the copy of the ID card?",
+      "options": [
+        "He was trapped in debt and needed the money",
+        "Duarte threatened him",
+        "He wanted to hurt Rosa's family",
+        "He didn't know what it was for"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What was Joaquín's last wish, according to Yesid?",
+      "options": [
+        "To sit at a table with Rosa, have a coffee and say nothing",
+        "To own the house in Bogotá",
+        "To be buried in Bogotá",
+        "To buy his own boat"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué le impide a Yesid ir a Bogotá?",
+      "options": [
+        "Su jefe no concede vacaciones en temporada alta",
+        "Su abuela no quiere",
+        "No tiene pasaporte",
+        "Le tiene miedo al frío"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What went wrong under the water?",
+      "options": [
+        "Tomás made the 'out of air' sign by mistake",
+        "Tomás lost his mask",
+        "Vale saw a shark",
+        "Mariana fell off the boat"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What do Tomás and Yesid exchange?",
+      "options": [
+        "An old diving mask and Tomás's Toronto cap",
+        "Phone numbers",
+        "Two photos of Joaquín",
+        "Two beers"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Mariana say about Altamira?",
+      "options": [
+        "They have a trick for everything, even the dead sign for them",
+        "They always lose in the end",
+        "They are afraid of journalists",
+        "They pay their debts on time"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Yesid is willing to go to Bogotá, but his boss gives nobody time off in high season. Tomorrow Yesid asks him, and the flight home leaves whether Yesid has an answer or not.",
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:en-que-le-puedo-servir",
+    "c:en-serio",
+    "c:era",
+    "c:la-verdad",
+    "c:no-me-digas",
+    "c:ojo",
+    "c:puede-ser",
+    "c:puedo",
+    "c:tienes",
+    "c:vivo-en",
+    "c:voy-a",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-hypothetical",
+    "g:si-present",
+    "g:stem-boot",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cerca-de",
+    "p:demonstratives-basic",
+    "p:el-agua-fria",
+    "p:indefinites-basic",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:poco-un-poco",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:que-subj-deseo",
+    "p:quedar-faltar-sobrar",
+    "p:queria-cortesia",
+    "p:sobre-todo-solo",
+    "p:unos-approx",
+    "p:viejo-antiguo-mayor"
+  ],
+  "lexemes": [
+    "l:abogado",
+    "l:abuela",
+    "l:abuelo",
+    "l:agua",
+    "l:aire",
+    "l:alto",
+    "l:arrepentimiento",
+    "l:arrepentirse",
+    "l:atrapado",
+    "l:ayudar",
+    "l:año",
+    "l:barco",
+    "l:bien",
+    "l:casa",
+    "l:comité",
+    "l:conceder",
+    "l:consciente",
+    "l:cosa",
+    "l:cuidado",
+    "l:cédula",
+    "l:dar",
+    "l:decir",
+    "l:delante",
+    "l:deseo",
+    "l:deuda",
+    "l:disponer",
+    "l:día",
+    "l:encuentro",
+    "l:enseñar",
+    "l:espalda",
+    "l:estar",
+    "l:faltar",
+    "l:firmar",
+    "l:gorra",
+    "l:haber",
+    "l:hablar",
+    "l:hacer",
+    "l:humo",
+    "l:igual",
+    "l:infantil",
+    "l:intercambiar",
+    "l:ir",
+    "l:jefe",
+    "l:lamentar",
+    "l:lenguaje",
+    "l:malo",
+    "l:mamá",
+    "l:mano",
+    "l:mañana",
+    "l:mejor",
+    "l:mesa",
+    "l:mirada",
+    "l:morir",
+    "l:máscara",
+    "l:niño",
+    "l:orgullo",
+    "l:periodista",
+    "l:plata",
+    "l:poder",
+    "l:problema",
+    "l:prometer",
+    "l:quedar",
+    "l:querer",
+    "l:reconciliación",
+    "l:regalo",
+    "l:respuesta",
+    "l:reír",
+    "l:segundo",
+    "l:sentarse",
+    "l:ser",
+    "l:subir",
+    "l:temporada",
+    "l:tener",
+    "l:terminar",
+    "l:tinto",
+    "l:tomar",
+    "l:traje",
+    "l:truco",
+    "l:tío",
+    "l:vacación",
+    "l:valer",
+    "l:vender",
+    "l:venta",
+    "l:verdad",
+    "l:viejo",
+    "l:vivir"
+  ]
+}

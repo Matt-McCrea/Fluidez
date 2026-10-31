@@ -1,0 +1,323 @@
+{
+  "id": "ch124",
+  "unit": "u41",
+  "title": "La suegra del patrón",
+  "text": "El patrón de Yesid tenía una voz de trueno y tres barcos en el muelle.\nYesid: Patrón, necesito una semana libre. Me voy para Bogotá.\nPatrón: ¿En temporada alta? Si se va, no vuelve.\nVale: Ojalá Hernando estuviera aquí. Él le hablaría a ese señor de hombre a hombre.\nTomás: Ojalá fuera tan fácil.\nEl celular de Mariana sonó: un investigador de la Fiscalía.\nMariana: Quiere hablar con Wilson. Dice que un nieto de Joaquín, en persona, delante del comité, vale más que cien papeles.\nYesid miró el mar, y después la gorra de Toronto que tenía en la mano.\nYesid: Patrón, en ocho años nunca le pedí nada. Me voy, con puesto o sin puesto.\nEra la primera vez que alguien desafiaba al patrón delante de los turistas. Un turista alemán aplaudió.\nPatrón: A mí no me desafía nadie, muchacho.\nEntonces habló una voz detrás de los barcos.\nEulalia: Elkin, mijo. ¿Ya almorzó?\nEl patrón se puso blanco, y la voz de trueno desapareció.\nEulalia: Este señor es el marido de mi hija. Yo soy su suegra, y todavía me debe tres almuerzos de domingo.\nEulalia: Yesid va a atravesar el país para cumplir la petición de su abuelo, y usted le va a guardar el puesto. ¿Verdad, Elkin?\nPatrón: Sí, suegra.\nNadie se rio. Solo el alemán, que no entendía nada.\nPor la tarde, doña Eulalia pidió el cuaderno azul y un esfero.\nEulalia: Este año, la línea la escribe usted.\nTomás escribió despacio, con su letra de Toronto: «Hoy un Herrera vuelve a Bogotá».\nEulalia le dio un beso en la cabeza.\nEulalia: Ojalá Joaquín estuviera aquí para leer esto.\nYesid: Abuela, de pronto sí está. Me voy el lunes en bus. Veinte horas para atravesar el país. Mi abuelo nunca hizo ese viaje.\nTomás: Lo hace usted.\nEn el aeropuerto llegó otro mensaje del investigador: «Yesid necesita un documento de una notaría. Y en una notaría solo ayudan a quien habla con mucho respeto».\nMariana: ¿Tú sabes pedir algo con respeto?\nTomás: Sé pedir un tinto.\nVale: Entonces tenemos una semana para enseñarte.",
+  "gloss": [
+    {
+      "es": "aplaudió",
+      "en": "clapped"
+    },
+    {
+      "es": "Si se va, no vuelve.",
+      "en": "If you go, you don't come back."
+    },
+    {
+      "es": "Él le hablaría a ese señor de hombre a hombre.",
+      "en": "He would talk to that man man to man."
+    },
+    {
+      "es": "la Fiscalía",
+      "en": "the public prosecutor's office"
+    },
+    {
+      "es": "en persona",
+      "en": "in person"
+    },
+    {
+      "es": "se puso blanco, y la voz de trueno desapareció",
+      "en": "went white, and the thundering voice disappeared"
+    },
+    {
+      "es": "me debe tres almuerzos de domingo",
+      "en": "he owes me three Sunday lunches"
+    },
+    {
+      "es": "usted le va a guardar el puesto",
+      "en": "you are going to keep his job for him"
+    },
+    {
+      "es": "con su letra de Toronto",
+      "en": "in his Toronto handwriting"
+    },
+    {
+      "es": "Ojalá Joaquín estuviera aquí para leer esto.",
+      "en": "I wish Joaquín were here to read this."
+    },
+    {
+      "es": "notaría",
+      "en": "notary's office"
+    },
+    {
+      "es": "una voz de trueno",
+      "en": "a thundering voice"
+    },
+    {
+      "es": "de pronto sí está",
+      "en": "maybe he is"
+    },
+    {
+      "es": "esfero",
+      "en": "pen (Colombia)"
+    },
+    {
+      "es": "Este año, la línea la escribe usted.",
+      "en": "This year, you write the line."
+    },
+    {
+      "es": "Me voy, con puesto o sin puesto.",
+      "en": "I'm going, job or no job."
+    },
+    {
+      "es": "Dice que un nieto de Joaquín, en persona, delante del comité, vale más que cien papeles.",
+      "en": "He says a grandson of Joaquín, in person, in front of the committee, is worth more than a hundred papers."
+    },
+    {
+      "es": "Y en una notaría solo ayudan a quien habla con mucho respeto.",
+      "en": "And at a notary's office they only help people who speak with great respect."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Yesid's boss finally agree to keep his job?",
+      "options": [
+        "Doña Eulalia is his mother-in-law, and she tells him to",
+        "Mariana threatens to write about him",
+        "The German tourist pays him",
+        "Tomás offers him money"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does the investigator want?",
+      "options": [
+        "To talk to Wilson",
+        "To close the café",
+        "To buy Yesid's boat",
+        "To interview Simón"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Tomás write in the blue notebook?",
+      "options": [
+        "Today a Herrera goes back to Bogotá",
+        "Today is Rosa's birthday",
+        "Today I didn't call",
+        "Today we won"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Cómo va a viajar Yesid a Bogotá?",
+      "options": [
+        "En bus, el lunes",
+        "En avión, con Tomás",
+        "En el barco de su patrón",
+        "En la Burra, con Hernando"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "Who applauds when Yesid stands up to his boss?",
+      "options": [
+        "A German tourist",
+        "Mariana",
+        "Doña Eulalia",
+        "Elkin"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What did Eulalia's son-in-law, Elkin, fail to give her?",
+      "options": [
+        "Three Sunday lunches",
+        "A boat",
+        "A week off",
+        "A pen"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is Yesid holding when he decides to go?",
+      "options": [
+        "Tomás's Toronto cap",
+        "The blue notebook",
+        "An old diving mask",
+        "His phone"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Yesid crosses the country on Monday, and the committee is waiting. First, though, a Bogotá notary has to be asked with great respect, and Tomás only knows how to ask for a coffee.",
+  "requires": [
+    "c:a-mi-tambien",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:de-pronto",
+    "c:entonces-bueno",
+    "c:era",
+    "c:ojala",
+    "c:tienes",
+    "c:voy-vas",
+    "g:adjective-agreement",
+    "g:comparatives",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:relative-que",
+    "g:relatives-prepositions",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:verbs-of-change",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:me-te-nos-objects",
+    "p:numbers-un-una",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:sobre-todo-solo",
+    "p:time-sequence-basic",
+    "p:transport-en",
+    "p:ya-todavia-basic"
+  ],
+  "lexemes": [
+    "l:abuela",
+    "l:abuelo",
+    "l:aeropuerto",
+    "l:alemán",
+    "l:almorzar",
+    "l:almuerzo",
+    "l:alto",
+    "l:aplaudir",
+    "l:aquí",
+    "l:atravesar",
+    "l:ayudar",
+    "l:azul",
+    "l:año",
+    "l:barco",
+    "l:beso",
+    "l:blanco",
+    "l:bus",
+    "l:cabeza",
+    "l:celular",
+    "l:comité",
+    "l:cuaderno",
+    "l:cumplir",
+    "l:dar",
+    "l:deber",
+    "l:decir",
+    "l:delante",
+    "l:desafiar",
+    "l:desaparecer",
+    "l:despacio",
+    "l:después",
+    "l:detrás",
+    "l:documento",
+    "l:domingo",
+    "l:enseñar",
+    "l:entender",
+    "l:escribir",
+    "l:esfero",
+    "l:estar",
+    "l:fácil",
+    "l:gorra",
+    "l:guardar",
+    "l:hablar",
+    "l:hacer",
+    "l:hija",
+    "l:hombre",
+    "l:hora",
+    "l:hoy",
+    "l:investigador",
+    "l:ir",
+    "l:irse",
+    "l:leer",
+    "l:letra",
+    "l:libre",
+    "l:llegar",
+    "l:lunes",
+    "l:línea",
+    "l:mano",
+    "l:mar",
+    "l:marido",
+    "l:mensaje",
+    "l:mijo",
+    "l:mirar",
+    "l:muchacho",
+    "l:muelle",
+    "l:necesitar",
+    "l:nieto",
+    "l:notar",
+    "l:papel",
+    "l:patrón",
+    "l:país",
+    "l:pedir",
+    "l:persona",
+    "l:petición",
+    "l:ponerse",
+    "l:pronto",
+    "l:puesto",
+    "l:querer",
+    "l:respeto",
+    "l:reír",
+    "l:saber",
+    "l:semana",
+    "l:ser",
+    "l:señor",
+    "l:sonar",
+    "l:suegra",
+    "l:tarde",
+    "l:temporada",
+    "l:tener",
+    "l:tinto",
+    "l:trueno",
+    "l:turista",
+    "l:valer",
+    "l:verdad",
+    "l:vez",
+    "l:viaje",
+    "l:volver",
+    "l:voz"
+  ]
+}
