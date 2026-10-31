@@ -1,0 +1,364 @@
+{
+  "id": "ch149",
+  "unit": "u46",
+  "title": "Declined",
+  "text": "A las cinco de la mañana, Tomás llevaba una hora delante de la misma página en inglés. Era el nuevo informe de Altamira para sus socios.\nEn la página siete había una tabla pequeña, con dos fechas: el sábado del almuerzo y el lunes de la obra. Al lado de cada fecha, la misma palabra: «declined».\nVale bajó con el delantal puesto.\nVale: ¿Qué dice?\nTomás: Dice que se reunieron dos veces con el heredero. Y que las dos veces el heredero rechazó la oferta.\nTomás tradujo el párrafo en voz alta, despacio, como si cada palabra costara plata.\nTomás: «La compañía suspendió las conversaciones con la familia, tras dos reuniones sin acuerdo».\nVale: ¿Y dónde dice que Yesid los buscó?\nTomás: En ningún lado. No dice que él los buscara. No dice que pidiera nada.\nMariana llegó a las siete y leyó la tabla tres veces.\nMariana: En español mienten para la prensa. En inglés no pueden mentirles a los que ponen la plata. Este informe refleja lo que pasó de verdad.\nHernando: Ese inglés de Toronto ya pagó todos los tintos que le debe a esta casa.\nSimón: ¡Declined! ¡Declined, parce!\nHernando: Ahora el loro también es bilingüe. Lo que faltaba.\nTomás subió a la terraza. Yesid estaba otra vez al lado del tanque, con una llave en la mano.\nTomás: Tengo que decirte algo. No es que no te creyera. Bueno, sí. No te creí del todo.\nYesid: Ya sé. Lo vi en tu cara, hermano, el día del tanque.\nTomás: Yo no vi que estuvieras asustado. Pensé que estabas escondiendo algo.\nYesid: Estaba escondiendo algo. Estaba entre la espada y la pared: mi tío de un lado y ustedes del otro.\nTomás: Nunca dijiste que fuera tu tío el que te pedía que vendieras.\nYesid: No dije muchas cosas. En mi familia, eso se aprende antes que a nadar.\nLe mostró el celular. Por fin había un mensaje del tío: «No es que me guste, mijo, pero hiciste bien».\nTomás le pasó otra llave. Trabajaron media hora sin hablar. Cuando Yesid abrió la llave del tanque, el agua salió clara por primera vez en una semana.\nYesid: ¿Ves? Solo había que limpiar.\nAbajo, Vale tenía la agenda abierta en la mesa de la ventana. Llevaba años escribiendo en ella solo pedidos de tortas. Hoy había escrito otra cosa, con letra grande: «Comida para Yesid. Sin preguntas».\nMariana dejó el informe y miró a todos.\nMariana: Esta historia no cabe en un artículo. Quiero que la gente la oiga: Hernando, Yesid, y Rosa en sus cartas.\nHernando: ¿Y el loro?\nMariana: El loro, antes que nadie.\nSimón: ¡Antes que nadie! ¡Antes que nadie, parce!",
+  "gloss": [
+    {
+      "es": "socios",
+      "en": "partners, investors"
+    },
+    {
+      "es": "tabla",
+      "en": "table, chart"
+    },
+    {
+      "es": "heredero",
+      "en": "heir"
+    },
+    {
+      "es": "delantal",
+      "en": "apron"
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "bilingüe",
+      "en": "bilingual"
+    },
+    {
+      "es": "Lo que faltaba.",
+      "en": "That's all we needed."
+    },
+    {
+      "es": "llave",
+      "en": "wrench; tap"
+    },
+    {
+      "es": "salió clara",
+      "en": "came out clear"
+    },
+    {
+      "es": "entre la espada y la pared",
+      "en": "between a rock and a hard place"
+    },
+    {
+      "es": "el que te pedía que vendieras",
+      "en": "the one who was asking you to sell"
+    },
+    {
+      "es": "eso se aprende antes que a nadar",
+      "en": "you learn that before you learn to swim"
+    },
+    {
+      "es": "No es que me guste, mijo, pero hiciste bien.",
+      "en": "It's not that I like it, son, but you did the right thing."
+    },
+    {
+      "es": "como si cada palabra costara plata",
+      "en": "as if every word cost money"
+    },
+    {
+      "es": "Sin preguntas.",
+      "en": "No questions."
+    },
+    {
+      "es": "Esta historia no cabe en un artículo.",
+      "en": "This story doesn't fit in an article."
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does the table in Altamira's English report show?",
+      "options": [
+        "Two meetings with the heir, and both times he declined",
+        "That Yesid asked for an offer",
+        "That the hotel is finished",
+        "That the café owes money"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Mariana trust the English report more than the Spanish press release?",
+      "options": [
+        "Altamira can lie to the press, but not to the people who put in the money",
+        "It was written by Tomás",
+        "It has more photos",
+        "Wilson wrote it"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Tomás admit to Yesid on the roof?",
+      "options": [
+        "That he didn't completely believe him",
+        "That he read his messages",
+        "That he called his uncle",
+        "That he wants to sell the house"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué le escribió el tío a Yesid?",
+      "options": [
+        "Que no le gustaba, pero que Yesid hizo bien",
+        "Que no le iba a hablar nunca más",
+        "Que Altamira tenía razón",
+        "Que venía a Bogotá"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What has Vale written in her diary, which she usually uses for cake orders?",
+      "options": [
+        "Food for Yesid. No questions.",
+        "Call the lawyer.",
+        "Buy a new tank.",
+        "Podcast on Monday."
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How does Yesid describe the position he was in?",
+      "options": [
+        "Between his uncle on one side and the café on the other",
+        "Between Vale and Tomás",
+        "Between Taganga and Bogotá",
+        "Between two lawyers"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What English word does Simón pick up?",
+      "options": [
+        "Declined",
+        "Investors",
+        "Breakfast",
+        "Sorry"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Mariana wants to tell the whole story with real voices, and the first one she wants on the microphone is a parrot. Tomorrow the café becomes a recording studio, and everyone has to say exactly what they mean.",
+  "requires": [
+    "c:bien-y-tu",
+    "c:en-serio",
+    "c:entonces-bueno",
+    "c:era",
+    "c:es-que",
+    "c:oiga-oye",
+    "c:quiero",
+    "c:tengo",
+    "c:tengo-que",
+    "g:adjective-agreement",
+    "g:cada-cualquier",
+    "g:como-si",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:hace-que-desde",
+    "g:imperfect-habitual",
+    "g:imperfect-progressive",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indefinites",
+    "g:indirect-objects",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:pluperfect",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:relatives-prepositions",
+    "g:reported-commands-past",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-past-triggers",
+    "g:subj-perception-negated",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:caber",
+    "p:cerca-de",
+    "p:con-sin",
+    "p:costar-pagar",
+    "p:cuando-basic",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:el-agua-fria",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:la-gente-singular",
+    "p:llevar-tiempo-gerundio",
+    "p:me-te-nos-objects",
+    "p:medir-pesar-caber",
+    "p:ninguna-parte",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:pensar-en",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:quedar-faltar-sobrar",
+    "p:saber-conocer",
+    "p:se-reciproco",
+    "p:sobre-todo-solo",
+    "p:telling-time",
+    "p:tras-inf",
+    "p:ver-oir-bien-mal"
+  ],
+  "lexemes": [
+    "l:abajo",
+    "l:abrir",
+    "l:acuerdo",
+    "l:agenda",
+    "l:agua",
+    "l:ahora",
+    "l:almuerzo",
+    "l:alto",
+    "l:antes",
+    "l:aprender",
+    "l:artículo",
+    "l:asustado",
+    "l:año",
+    "l:bajar",
+    "l:bien",
+    "l:bilingüe",
+    "l:bueno",
+    "l:buscar",
+    "l:caber",
+    "l:cara",
+    "l:carta",
+    "l:casa",
+    "l:celular",
+    "l:clara",
+    "l:comer",
+    "l:compañía",
+    "l:conversación",
+    "l:cosa",
+    "l:costar",
+    "l:creer",
+    "l:deber",
+    "l:decir",
+    "l:dejar",
+    "l:delantal",
+    "l:delante",
+    "l:despacio",
+    "l:día",
+    "l:dónde",
+    "l:esconder",
+    "l:escribir",
+    "l:espada",
+    "l:español",
+    "l:estar",
+    "l:faltar",
+    "l:familia",
+    "l:fecha",
+    "l:fin",
+    "l:gente",
+    "l:grande",
+    "l:gustar",
+    "l:hablar",
+    "l:hacer",
+    "l:heredero",
+    "l:hermano",
+    "l:historia",
+    "l:hora",
+    "l:hoy",
+    "l:informe",
+    "l:inglés",
+    "l:lado",
+    "l:leer",
+    "l:letra",
+    "l:limpiar",
+    "l:llave",
+    "l:llegar",
+    "l:llevar",
+    "l:loro",
+    "l:lunes",
+    "l:mano",
+    "l:mañana",
+    "l:mensaje",
+    "l:mentir",
+    "l:mesa",
+    "l:mijo",
+    "l:mirar",
+    "l:mostrar",
+    "l:nadar",
+    "l:nuevo",
+    "l:obra",
+    "l:oferta",
+    "l:oír",
+    "l:pagar",
+    "l:palabra",
+    "l:parce",
+    "l:pared",
+    "l:pasar",
+    "l:pedir",
+    "l:pensar",
+    "l:pequeño",
+    "l:plata",
+    "l:poder",
+    "l:poner",
+    "l:pregunta",
+    "l:prensa",
+    "l:página",
+    "l:párrafo",
+    "l:querer",
+    "l:qué",
+    "l:rechazar",
+    "l:reflejar",
+    "l:reunirse",
+    "l:reunión",
+    "l:saber",
+    "l:salir",
+    "l:semana",
+    "l:ser",
+    "l:socio",
+    "l:subir",
+    "l:suspender",
+    "l:sábado",
+    "l:tabla",
+    "l:tanque",
+    "l:tener",
+    "l:terraza",
+    "l:tinto",
+    "l:torta",
+    "l:trabajar",
+    "l:traducir",
+    "l:tío",
+    "l:vender",
+    "l:ventana",
+    "l:ver",
+    "l:verdad",
+    "l:vez",
+    "l:voz"
+  ]
+}

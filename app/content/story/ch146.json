@@ -1,0 +1,336 @@
+{
+  "id": "ch146",
+  "unit": "u46",
+  "title": "El acta",
+  "text": "La doctora Uribe pidió un tinto y que nadie la interrumpiera. Abrió un cuaderno y escribió: «Acta. Testimonio de Tomás Herrera».\nUribe: Empiece por el principio. ¿Qué le contó Yesid?\nTomás: Que el abogado le dijo que sabían quién era él. Que le ofreció dos veces lo que vale su parte. Y que le pidió que no le contara nada a nadie.\nUribe: ¿Le pidió, o le exigió? En un acta, cada palabra declara algo distinto.\nTomás: Recuerdo que dijo «me pidió». De eso me acuerdo.\nUribe: En cuanto al funcionario nuevo, ¿mencionó algún nombre?\nTomás: No mencionó ninguno. Solo comentó que ya tenían a alguien en la alcaldía.\nUribe: Un político del distrito, seguramente. No vamos a adivinar.\nHernando: Yo sí adivino. Es el concejal del barrio. Lo conozco por la sonrisa.\nUribe: Un juez no admite adivinanzas, don Hernando. Si Yesid declara esto ante la Fiscalía General de la Nación, su testimonio vale oro. Plata en secreto, con el comité decidiendo: eso es una bomba.\nTomás miró su taza.\nUribe: ¿Hay algo más, señor Herrera?\nTomás: La noche antes de la audiencia, Yesid habló por teléfono. Dijo: «Todavía no. Solo si a la casa no le pasa nada». Después me dijo que era su mamá.\nUribe: ¿Y usted le creyó?\nTomás: Esa noche, sí.\nUribe lo escribió en el acta, sin comentar nada.\nPor la noche, la asamblea de vecinos llenó el café para hablar de la obra.\nGloria: Primer punto: una queja formal a la alcaldía del distrito. Segundo punto: no hay segundo punto. Por cierto, alguien tiene que escribir el acta.\nA las ocho llegó el concejal, con un fotógrafo. Era un político de sonrisa grande.\nConcejal: Mi oficina está al servicio de la nación. Perdón, del barrio.\nHernando: Hablando de la nación, ¿usted no votó a favor de tumbar las seis casas?\nConcejal: No me he olvidado de este barrio, señor. Nunca.\nSimón: ¡Nunca! ¡Nunca, parce!\nEntonces Gloria soltó la bomba sin querer.\nGloria: Y en cuanto a la obra, Wilson dice que el primo de Tomás estuvo allá con el jefe.\nTodas las cabezas se dieron la vuelta. Yesid se puso de pie.\nYesid: Es verdad, estuve allá dos veces. Me ofrecieron plata y dije que no. Mañana lo declaro ante un juez.\nMariana dejó de escribir.\nGloria: Bueno. Pasamos a la votación. ¿Quién está a favor de la queja?\nTodos levantaron la mano, también Yesid. Simón levantó un ala.\nHernando: Hasta el loro vota.\nGloria: Esta asamblea no admite votos de pájaros.\nEn la votación también votó el concejal, para la foto.\nA las diez llamó Uribe.\nUribe: Altamira sacó un comunicado. Dicen que fue Yesid quien los buscó a ellos.",
+  "gloss": [
+    {
+      "es": "acta",
+      "en": "minutes, official record"
+    },
+    {
+      "es": "adivinanzas",
+      "en": "guesses"
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "Fiscalía General de la Nación",
+      "en": "the Attorney General's Office"
+    },
+    {
+      "es": "vale oro",
+      "en": "is worth its weight in gold"
+    },
+    {
+      "es": "¿Le pidió, o le exigió?",
+      "en": "Did he ask him, or demand it?"
+    },
+    {
+      "es": "Lo conozco por la sonrisa.",
+      "en": "I know him by his smile."
+    },
+    {
+      "es": "concejal",
+      "en": "city councillor"
+    },
+    {
+      "es": "queja formal",
+      "en": "formal complaint"
+    },
+    {
+      "es": "soltó la bomba sin querer",
+      "en": "dropped the bombshell without meaning to"
+    },
+    {
+      "es": "Todas las cabezas se dieron la vuelta.",
+      "en": "Every head turned."
+    },
+    {
+      "es": "Plata en secreto, con el comité decidiendo",
+      "en": "Secret money, while the committee is deciding"
+    },
+    {
+      "es": "Esta asamblea no admite votos de pájaros.",
+      "en": "This assembly does not accept votes from birds."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Dr Uribe care whether the lawyer \"asked\" or \"demanded\"?",
+      "options": [
+        "In official minutes, each word states something different",
+        "She is correcting Tomás's grammar",
+        "She thinks Yesid is lying",
+        "She wants a shorter report"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Tomás finally tell Uribe that he had kept to himself?",
+      "options": [
+        "That he overheard Yesid on the phone the night before the hearing, saying \"not yet\"",
+        "That Yesid signed the sale",
+        "That he saw Yesid at the building site",
+        "That Vale doesn't trust him"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How does the neighbourhood find out about Yesid's meetings?",
+      "options": [
+        "Gloria mentions what Wilson told her, in the middle of the assembly",
+        "Mariana publishes it",
+        "The councillor announces it",
+        "Yesid sends everyone a message"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué dice el comunicado de Altamira?",
+      "options": [
+        "Que fue Yesid quien los buscó a ellos",
+        "Que van a cerrar la obra",
+        "Que el concejal trabaja para ellos",
+        "Que el café es patrimonio"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What did Uribe ask for before she started?",
+      "options": [
+        "A tinto, and for nobody to interrupt her",
+        "A glass of wine",
+        "A quiet table upstairs",
+        "Yesid's phone"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Hernando think the official is the local councillor?",
+      "options": [
+        "He recognises him by his smile",
+        "He saw him at the site office",
+        "Wilson told him",
+        "He read it in Mariana's article"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Simón do during the vote?",
+      "options": [
+        "He raises a wing",
+        "He shouts \"Nunca\"",
+        "He flies out of the window",
+        "He sits on the councillor's head"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Altamira says Yesid went looking for them, not the other way round. Tomorrow Tomás has to choose between two versions of the same lunch, and Yesid has to explain who he was really talking to that night.",
+  "requires": [
+    "c:algo-mas",
+    "c:bien-y-tu",
+    "c:entonces-bueno",
+    "c:era",
+    "c:estuvo",
+    "c:hay",
+    "c:perdon-disculpe",
+    "c:por-cierto",
+    "c:tienes",
+    "c:todavia-no",
+    "c:vamos-a",
+    "g:adverbs-mente",
+    "g:cada-cualquier",
+    "g:commands-usted",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indefinites",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:perfecto-experience",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:reported-past-basic",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-past-triggers",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:verbs-of-change",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:dejar-de-inf",
+    "p:demonstratives-basic",
+    "p:don-dona-nombre",
+    "p:el-agua-fria",
+    "p:en-cuanto-a",
+    "p:entonces-de-repente",
+    "p:estar-a-favor-de",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:me-contaron-que",
+    "p:me-te-nos-objects",
+    "p:no-me-olvido-de",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:personal-a",
+    "p:por-cierto-hablando-de",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:postura",
+    "p:preguntar-pedir",
+    "p:recordar-acordarse",
+    "p:saber-conocer",
+    "p:seguramente-probablemente",
+    "p:senor-don-article",
+    "p:si-solo-si-siempre-y-cuando",
+    "p:sobre-todo-solo",
+    "p:telling-time",
+    "p:time-sequence-basic"
+  ],
+  "lexemes": [
+    "l:abogado",
+    "l:abrir",
+    "l:acordarse",
+    "l:acta",
+    "l:adivinanzas",
+    "l:adivinar",
+    "l:admitir",
+    "l:ala",
+    "l:alcaldía",
+    "l:allá",
+    "l:antes",
+    "l:asamblea",
+    "l:audiencia",
+    "l:barrio",
+    "l:bomba",
+    "l:bueno",
+    "l:buscar",
+    "l:cabeza",
+    "l:café",
+    "l:casa",
+    "l:comentar",
+    "l:comité",
+    "l:comunicado",
+    "l:concejal",
+    "l:conocer",
+    "l:contar",
+    "l:creer",
+    "l:cuaderno",
+    "l:cuanto",
+    "l:darse",
+    "l:decidir",
+    "l:decir",
+    "l:declarar",
+    "l:dejar",
+    "l:después",
+    "l:distinto",
+    "l:distrito",
+    "l:doctor",
+    "l:empezar",
+    "l:escribir",
+    "l:estar",
+    "l:exigir",
+    "l:favor",
+    "l:formal",
+    "l:foto",
+    "l:fotógrafo",
+    "l:funcionario",
+    "l:grande",
+    "l:hablar",
+    "l:interrumpir",
+    "l:ir",
+    "l:jefe",
+    "l:juez",
+    "l:levantar",
+    "l:llamar",
+    "l:llegar",
+    "l:llenar",
+    "l:loro",
+    "l:mamá",
+    "l:mano",
+    "l:mañana",
+    "l:mencionar",
+    "l:mirar",
+    "l:nación",
+    "l:noche",
+    "l:nombre",
+    "l:nuevo",
+    "l:obra",
+    "l:oficina",
+    "l:ofrecer",
+    "l:olvidar",
+    "l:oro",
+    "l:palabra",
+    "l:parce",
+    "l:parte",
+    "l:pasar",
+    "l:pedir",
+    "l:perdón",
+    "l:pie",
+    "l:plata",
+    "l:político",
+    "l:ponerse",
+    "l:primo",
+    "l:principio",
+    "l:punto",
+    "l:pájaro",
+    "l:queja",
+    "l:querer",
+    "l:quién",
+    "l:qué",
+    "l:recordar",
+    "l:saber",
+    "l:sacar",
+    "l:secreto",
+    "l:seguramente",
+    "l:ser",
+    "l:servicio",
+    "l:señor",
+    "l:soltar",
+    "l:sonrisa",
+    "l:taza",
+    "l:teléfono",
+    "l:tener",
+    "l:testimonio",
+    "l:tinto",
+    "l:tumbarse",
+    "l:valer",
+    "l:vecino",
+    "l:verdad",
+    "l:vez",
+    "l:votación",
+    "l:votar",
+    "l:voto",
+    "l:vuelta"
+  ]
+}

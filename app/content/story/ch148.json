@@ -1,0 +1,327 @@
+{
+  "id": "ch148",
+  "unit": "u46",
+  "title": "El declarante",
+  "text": "La sala de espera de la Fiscalía tenía cuarenta sillas de plástico azul y una pantalla sin sonido. A las nueve menos diez, Yesid todavía no había llegado.\nTomás: Salió del café hacia las siete, caminando.\nVale: Va a llegar.\nLo dijo dos veces, como si quisiera convencerse.\nHernando también había venido. En la puerta, dijo ser el abuelo del declarante.\nGuardia: ¿Usted también es Herrera?\nHernando: De corazón, señor.\nTras mirarle la gorra un rato, el guardia lo dejó pasar.\nA las nueve y veinte entró Yesid, sin aire, con la chaqueta de su abuelo en la mano.\nYesid: Perdón. Había un carro negro en la esquina del café. Tomé tres buses para que no me siguiera.\nUribe: ¿Quieres decir que te estaban vigilando?\nYesid: Quiero decir que no quise averiguarlo.\nLa declaración duró dos horas. Solo Uribe entró con él. En la pantalla salía un político sin sonido, y Hernando le puso las palabras.\nHernando: Ahora afirma que va a arreglar todas las calles de Bogotá. Ahora reconoce que nunca ha montado en bus. Y ahora sugiere que la culpa es de los taxistas.\nHasta Vale se rio, y llevaba tres días seria.\nA las once y media salió Uribe con la declaración.\nUribe: Escuchen cómo quedó. «El declarante afirmó que se reunió dos veces con un abogado de Grupo Altamira. Sostuvo que fue la empresa la que lo buscó, con la ayuda de un familiar. Aseguró que el abogado le ofreció dos veces el valor de su parte, y que le pidió que guardara silencio. Reconoció que no le contó la verdad a su familia de Bogotá».\nTomás: ¿Y el tío?\nUribe: Ahí está la sorpresa. Nadie le preguntó por el tío, y Yesid soltó que fue él quien vendió la cédula de Joaquín.\nYesid salió detrás, con la cara blanca.\nYesid: Esta mañana le mandé un mensaje a mi tío. Le dije que iba a contar la verdad, toda, y que lo sentía.\nVale: ¿Y qué te contestó?\nYesid: Nada todavía.\nTomás: ¿Y tu abuela?\nYesid: Mi abuela dice que Joaquín habría hecho lo mismo. Y que alguien en la familia tenía que hablar.\nEn la escalera, Uribe recibió una llamada.\nUribe: Según dicen en la Fiscalía, ya saben de quién es el carro negro. La placa de don Hernando es de Inversiones Bellavista.\nTomás: ¿Bellavista? ¿La empresa de fachada que nos mostró Duarte?\nUribe: La misma. Altamira afirma que Yesid los buscó. Pero fueron ellos los que le mandaron el carro.\nHernando: Cuarenta años manejando, y mi mejor carrera la hice con una servilleta.\nYesid miraba la calle, buscando un carro negro.\nTomás quería decirle algo, pero no le salió nada.",
+  "gloss": [
+    {
+      "es": "sala de espera",
+      "en": "waiting room"
+    },
+    {
+      "es": "declarante",
+      "en": "the person giving the statement"
+    },
+    {
+      "es": "servilleta",
+      "en": "napkin"
+    },
+    {
+      "es": "De corazón, señor.",
+      "en": "At heart, sir."
+    },
+    {
+      "es": "Tras mirarle la gorra un rato",
+      "en": "After looking at his cap for a while"
+    },
+    {
+      "es": "Quiero decir que no quise averiguarlo.",
+      "en": "I mean I didn't want to find out."
+    },
+    {
+      "es": "Hernando le puso las palabras",
+      "en": "Hernando supplied the words"
+    },
+    {
+      "es": "Escuchen cómo quedó.",
+      "en": "Listen to how it came out."
+    },
+    {
+      "es": "Ahí está la sorpresa.",
+      "en": "That's the surprise."
+    },
+    {
+      "es": "empresa de fachada",
+      "en": "shell company"
+    },
+    {
+      "es": "mi mejor carrera la hice con una servilleta",
+      "en": "my best fare was done with a napkin"
+    },
+    {
+      "es": "no le salió nada",
+      "en": "nothing came out"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why was Yesid late for his statement?",
+      "options": [
+        "A black car was parked on the café's corner, so he took three buses so it couldn't follow him",
+        "He overslept",
+        "His uncle stopped him",
+        "He got lost in Bogotá"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What did Yesid say in his statement that nobody had asked about?",
+      "options": [
+        "That it was his uncle who sold Joaquín's ID",
+        "That he had accepted the money",
+        "That Vale knew everything",
+        "That Hernando was his grandfather"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why is the number plate important?",
+      "options": [
+        "The car belongs to Inversiones Bellavista, so Altamira sent the car, and Yesid did not go looking for them",
+        "It proves Yesid has a car",
+        "It belongs to the councillor",
+        "It shows the lawyer lives nearby"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué dijo ser Hernando en la puerta?",
+      "options": [
+        "El abuelo del declarante",
+        "El abogado de Yesid",
+        "Un taxista de la Fiscalía",
+        "El tío de Vale"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "How many times does Vale say \"Va a llegar\"?",
+      "options": [
+        "Twice",
+        "Once",
+        "Three times",
+        "She doesn't say it"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What words does Hernando put in the politician's mouth?",
+      "options": [
+        "That he'll fix every street, that he has never taken a bus, and that it's the taxi drivers' fault",
+        "That he loves the café",
+        "That he will resign",
+        "That Altamira is innocent"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What did Yesid's grandmother say?",
+      "options": [
+        "That Joaquín would have done the same, and that someone in the family had to speak",
+        "That he should come home",
+        "That his uncle was right",
+        "That she would never forgive him"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "The car was Altamira's all along, and Yesid told the truth even about his own uncle. Tomorrow Tomás has to tell Yesid that he doubted him, and Altamira's English report for investors has a new paragraph.",
+  "requires": [
+    "c:con-el-ella",
+    "c:la-verdad",
+    "c:perdon-disculpe",
+    "c:que-va",
+    "c:quiero",
+    "c:segun",
+    "c:todavia-no",
+    "g:adjective-agreement",
+    "g:commands-usted",
+    "g:como-si",
+    "g:conditional-perfect",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:imperfect-habitual",
+    "g:imperfect-progressive",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:para-que",
+    "g:perfecto-experience",
+    "g:pluperfect",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:relatives-prepositions",
+    "g:reported-past-basic",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-past-triggers",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "p:aqui-ahi-alla",
+    "p:con-sin",
+    "p:contar-dos-sentidos",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:dice-ser",
+    "p:durar-durante",
+    "p:frequency-scale",
+    "p:hacia-las-nueve",
+    "p:indefinites-basic",
+    "p:me-te-nos-objects",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:queria-cortesia",
+    "p:quieres-decir-que",
+    "p:reporting-verbs-stance",
+    "p:saber-conocer",
+    "p:segun-dicen",
+    "p:senor-don-article",
+    "p:siento-llegar-tarde",
+    "p:sobre-todo-solo",
+    "p:tambien-tampoco",
+    "p:telling-time",
+    "p:transport-en",
+    "p:tras-inf",
+    "p:un-estudio-muestra-que",
+    "p:ya-todavia-basic"
+  ],
+  "lexemes": [
+    "l:abogado",
+    "l:abuela",
+    "l:abuelo",
+    "l:afirmar",
+    "l:ahora",
+    "l:ahí",
+    "l:aire",
+    "l:arreglar",
+    "l:asegurar",
+    "l:averiguar",
+    "l:ayuda",
+    "l:azul",
+    "l:año",
+    "l:blanco",
+    "l:bus",
+    "l:buscar",
+    "l:café",
+    "l:calle",
+    "l:caminar",
+    "l:cara",
+    "l:carrera",
+    "l:carro",
+    "l:chaqueta",
+    "l:contar",
+    "l:contestar",
+    "l:convencer",
+    "l:corazón",
+    "l:culpa",
+    "l:cédula",
+    "l:cómo",
+    "l:decir",
+    "l:declaración",
+    "l:declarante",
+    "l:dejar",
+    "l:detrás",
+    "l:durar",
+    "l:día",
+    "l:empresa",
+    "l:entrar",
+    "l:escalera",
+    "l:escuchar",
+    "l:espera",
+    "l:esquina",
+    "l:estar",
+    "l:fachada",
+    "l:familia",
+    "l:familiar",
+    "l:gorra",
+    "l:guardar",
+    "l:guardia",
+    "l:hablar",
+    "l:hacer",
+    "l:hora",
+    "l:ir",
+    "l:llamada",
+    "l:llegar",
+    "l:llevar",
+    "l:mandar",
+    "l:manejar",
+    "l:mano",
+    "l:mañana",
+    "l:mejor",
+    "l:mensaje",
+    "l:mirar",
+    "l:montar",
+    "l:mostrar",
+    "l:negro",
+    "l:ofrecer",
+    "l:palabra",
+    "l:pantalla",
+    "l:parte",
+    "l:pasar",
+    "l:pedir",
+    "l:perdón",
+    "l:placa",
+    "l:plástico",
+    "l:político",
+    "l:poner",
+    "l:preguntar",
+    "l:puerta",
+    "l:quedar",
+    "l:querer",
+    "l:quién",
+    "l:qué",
+    "l:rato",
+    "l:recibir",
+    "l:reconocer",
+    "l:reunirse",
+    "l:reír",
+    "l:saber",
+    "l:sala",
+    "l:salir",
+    "l:seguir",
+    "l:sentir",
+    "l:ser",
+    "l:serio",
+    "l:servilleta",
+    "l:señor",
+    "l:silenciar",
+    "l:silla",
+    "l:soltar",
+    "l:sonido",
+    "l:sorpresa",
+    "l:sostener",
+    "l:sugerir",
+    "l:taxista",
+    "l:tener",
+    "l:tomar",
+    "l:tío",
+    "l:valor",
+    "l:vender",
+    "l:venir",
+    "l:verdad",
+    "l:vez",
+    "l:vigilar"
+  ]
+}
