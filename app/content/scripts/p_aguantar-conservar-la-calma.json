@@ -1,188 +1,188 @@
 {
- "node": "p:aguantar-conservar-la-calma",
- "hook": {
-  "line": "Sooner or later in Bogotá someone will say the building is being sold, or the bill is higher than you thought. Spanish has two small verbs for what you do next: keep your head, or grit your teeth and wait it out.",
-  "es": "Conservó la calma pese a la presión.",
-  "en": "She kept her calm despite the pressure."
- },
- "examples": [
-  {
-   "es": "Conservó la calma pese a la presión.",
-   "en": "She kept her calm despite the pressure."
+  "node": "p:aguantar-conservar-la-calma",
+  "hook": {
+    "line": "Sooner or later in Bogotá someone will say the building is being sold, or the bill is higher than you thought. Spanish has two small verbs for what you do next: keep your head, or grit your teeth and wait it out.",
+    "es": "Conservó la calma pese a la presión.",
+    "en": "She kept her calm despite the pressure."
   },
-  {
-   "es": "Aguanté hasta el final.",
-   "en": "I held out until the end."
-  },
-  {
-   "es": "Mantengan la calma, por favor.",
-   "en": "Please stay calm. (you all)"
-  },
-  {
-   "es": "Tomás perdió la calma cuando llegó la carta.",
-   "en": "Tomás lost his calm when the letter arrived."
-  },
-  {
-   "es": "No aguanto más este ruido.",
-   "en": "I can't stand this noise any more."
-  },
-  {
-   "es": "Me tocó aguantármelo.",
-   "en": "I had to put up with it."
-  }
- ],
- "rule": "Two ideas, two verbs.\n\n*Conservar la calma* (or *mantener*, *guardar*) is something you do: you work to stay in control. Its opposite is *perder la calma*. Always keep *la*: *la calma*, never just *calma*.\n\n*Aguantar* is endurance: you take it and do not break. *Aguanté hasta el final* means you lasted. With *no*, it means you have had enough: *No aguanto más*.\n\n*Aguantarse* is to put up with something you cannot change, or bite your tongue: *Me tocó aguantármelo*.\n\nNo preposition follows *aguantar*: you stand something, you do not stand \"of\" it.",
- "smallPrint": "Teachers would call *conservar la calma* a verb plus noun collocation, and *aguantarse* a reflexive of resignation.",
- "readAndPick": [
-  {
-   "es": "Aguanté hasta el final.",
-   "options": [
-    "He held out until the end.",
-    "I held out until the end.",
-    "I will hold out until the end."
-   ],
-   "answer": 1
-  },
-  {
-   "es": "Conservó la calma pese a la presión.",
-   "options": [
-    "She lost her calm despite the pressure.",
-    "I kept my calm despite the pressure.",
-    "She kept her calm despite the pressure."
-   ],
-   "answer": 2
-  },
-  {
-   "es": "Tomás perdió la calma cuando llegó la carta.",
-   "options": [
-    "Tomás kept his calm when the letter arrived.",
-    "Tomás lost his calm when the letter arrived.",
-    "Tomás loses his calm when the letter arrives."
-   ],
-   "answer": 1
-  },
-  {
-   "es": "No aguanto más este ruido.",
-   "options": [
-    "I can't stand this noise any more.",
-    "He can't stand this noise any more.",
-    "I can stand this noise some more."
-   ],
-   "answer": 0
-  },
-  {
-   "es": "Mantengan la calma, por favor.",
-   "options": [
-    "Please stay calm. (to one person, formal)",
-    "Please stay calm. (to a friend)",
-    "Please stay calm. (you all)"
-   ],
-   "answer": 2
-  },
-  {
-   "es": "Mantén la calma.",
-   "options": [
-    "Stay calm. (to a friend)",
-    "Stay calm. (you all)",
-    "I stay calm."
-   ],
-   "answer": 0
-  },
-  {
-   "es": "Aguantaron hasta el final.",
-   "options": [
-    "I held out until the end.",
-    "They held out until the end.",
-    "We held out until the end."
-   ],
-   "answer": 1
-  },
-  {
-   "es": "Ya no mantengo la calma.",
-   "options": [
-    "I no longer keep my calm.",
-    "I never lost my calm.",
-    "She no longer keeps her calm."
-   ],
-   "answer": 0
-  }
- ],
- "yourTurn": [
-  {
-   "prompt": "Tomás lost his calm. Pick *perdió* or *conservó* and type the whole sentence: *Tomás ___ la calma.*",
-   "answer": "Tomás perdió la calma.",
-   "accept": [],
-   "why": "*Perder* means to lose, and *conservar* means to keep, so the meaning picks the verb."
-  },
-  {
-   "prompt": "Type in Spanish: I held out until the end.",
-   "answer": "Aguanté hasta el final.",
-   "accept": [
-    "Yo aguanté hasta el final."
-   ],
-   "why": "*Aguanté* is \"I\" in the past, and it is endurance, so *aguantar* fits."
-  },
-  {
-   "prompt": "Type in Spanish: Please stay calm. (you all)",
-   "answer": "Mantengan la calma, por favor.",
-   "accept": [
-    "Por favor, mantengan la calma.",
-    "Conserven la calma, por favor.",
-    "Por favor, conserven la calma."
-   ],
-   "why": "For \"you all\" the command ends in *-engan*, and *la calma* keeps its *la*."
-  },
-  {
-   "prompt": "Type in Spanish: I can't stand this noise any more.",
-   "answer": "No aguanto más este ruido.",
-   "accept": [
-    "Ya no aguanto más este ruido.",
-    "Ya no aguanto este ruido.",
-    "No aguanto este ruido."
-   ],
-   "why": "*No aguanto* means \"I can't stand\", and nothing sits between it and the thing."
-  },
-  {
-   "prompt": "Say it about yourself: *Conservó la calma pese a la presión.* Say: I kept my calm despite the pressure.",
-   "answer": "Conservé la calma pese a la presión.",
-   "accept": [
-    "Yo conservé la calma pese a la presión."
-   ],
-   "why": "The ending *-é* says it was me."
-  },
-  {
-   "prompt": "Say it to a friend: stay calm.",
-   "answer": "Mantén la calma.",
-   "accept": [
-    "Conserva la calma."
-   ],
-   "why": "To one friend the command is short: *mantén*."
-  },
-  {
-   "prompt": "Type in Spanish: She lost her calm in the meeting.",
-   "answer": "Perdió la calma en la reunión.",
-   "accept": [
-    "Ella perdió la calma en la reunión."
-   ],
-   "why": "*Perdió* is \"she lost\", and *la calma* is the thing lost."
-  }
- ],
- "pitfalls": [
-  {
-   "wrong": "Conservé calma pese a la presión.",
-   "right": "Conservé la calma pese a la presión.",
-   "why": "Almost. Spanish keeps the article here: *la calma*, where English says just \"calm\"."
-  },
-  {
-   "wrong": "No aguanto de este ruido.",
-   "right": "No aguanto este ruido.",
-   "why": "Almost. *Aguantar* takes its object directly, with no *de*."
-  },
-  {
-   "wrong": "Aguanté el final.",
-   "right": "Aguanté hasta el final.",
-   "why": "Almost. To last \"until\" the end you need *hasta*."
-  }
- ],
- "personal": "Think of the last time something tested you. Say whether you *conservé la calma* or *perdí la calma*, or what you *aguanté*."
+  "examples": [
+    {
+      "es": "Conservó la calma pese a la presión.",
+      "en": "She kept her calm despite the pressure."
+    },
+    {
+      "es": "Aguanté hasta el final.",
+      "en": "I held out until the end."
+    },
+    {
+      "es": "Mantengan la calma, por favor.",
+      "en": "Please stay calm. (you all)"
+    },
+    {
+      "es": "Tomás perdió la calma cuando llegó la carta.",
+      "en": "Tomás lost his calm when the letter arrived."
+    },
+    {
+      "es": "No aguanto más este ruido.",
+      "en": "I can't stand this noise any more."
+    },
+    {
+      "es": "Me tocó aguantármelo.",
+      "en": "I had to put up with it."
+    }
+  ],
+  "rule": "Two ideas, two verbs.\n\n*Conservar la calma* (or *mantener*, *guardar*) is something you do: you work to stay in control. Its opposite is *perder la calma*. In these phrases keep *la*: *conservar la calma*, never *conservar calma*.\n\n*Aguantar* is endurance: you take it and do not break. *Aguanté hasta el final* means you lasted. With *no*, it means you have had enough: *No aguanto más*.\n\n*Aguantarse* is to put up with something you cannot change, or bite your tongue: *Me tocó aguantármelo*.\n\nNo preposition follows *aguantar*: you stand something, you do not stand \"of\" it.",
+  "smallPrint": "Teachers would call *conservar la calma* a verb plus noun collocation, and *aguantarse* a reflexive of resignation.",
+  "readAndPick": [
+    {
+      "es": "Aguanté hasta el final.",
+      "options": [
+        "He held out until the end.",
+        "I held out until the end.",
+        "I will hold out until the end."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Conservó la calma pese a la presión.",
+      "options": [
+        "She lost her calm despite the pressure.",
+        "I kept my calm despite the pressure.",
+        "She kept her calm despite the pressure."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tomás perdió la calma cuando llegó la carta.",
+      "options": [
+        "Tomás kept his calm when the letter arrived.",
+        "Tomás lost his calm when the letter arrived.",
+        "Tomás loses his calm when the letter arrives."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No aguanto más este ruido.",
+      "options": [
+        "I can't stand this noise any more.",
+        "He can't stand this noise any more.",
+        "I can stand this noise some more."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mantengan la calma, por favor.",
+      "options": [
+        "Please stay calm. (to one person, formal)",
+        "Please stay calm. (to a friend)",
+        "Please stay calm. (you all)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mantén la calma.",
+      "options": [
+        "Stay calm. (to a friend)",
+        "Stay calm. (you all)",
+        "I stay calm."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Aguantaron hasta el final.",
+      "options": [
+        "I held out until the end.",
+        "They held out until the end.",
+        "We held out until the end."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ya no aguanto más.",
+      "options": [
+        "I can't take it any more.",
+        "I'll hold on a bit longer.",
+        "She can't take it any more."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Tomás lost his calm. Pick *perdió* or *conservó* and type the whole sentence: *Tomás ___ la calma.*",
+      "answer": "Tomás perdió la calma.",
+      "accept": [],
+      "why": "*Perder* means to lose, and *conservar* means to keep, so the meaning picks the verb."
+    },
+    {
+      "prompt": "Type in Spanish: I held out until the end.",
+      "answer": "Aguanté hasta el final.",
+      "accept": [
+        "Yo aguanté hasta el final."
+      ],
+      "why": "*Aguanté* is \"I\" in the past, and it is endurance, so *aguantar* fits."
+    },
+    {
+      "prompt": "Type in Spanish: Please stay calm. (you all)",
+      "answer": "Mantengan la calma, por favor.",
+      "accept": [
+        "Por favor, mantengan la calma.",
+        "Conserven la calma, por favor.",
+        "Por favor, conserven la calma."
+      ],
+      "why": "For \"you all\" the command ends in *-engan*, and *la calma* keeps its *la*."
+    },
+    {
+      "prompt": "Type in Spanish: I can't stand this noise any more.",
+      "answer": "No aguanto más este ruido.",
+      "accept": [
+        "Ya no aguanto más este ruido.",
+        "Ya no aguanto este ruido.",
+        "No aguanto este ruido."
+      ],
+      "why": "*No aguanto* means \"I can't stand\", and nothing sits between it and the thing."
+    },
+    {
+      "prompt": "Say it about yourself: *Conservó la calma pese a la presión.* Say: I kept my calm despite the pressure.",
+      "answer": "Conservé la calma pese a la presión.",
+      "accept": [
+        "Yo conservé la calma pese a la presión."
+      ],
+      "why": "The ending *-é* says it was me."
+    },
+    {
+      "prompt": "Say it to a friend: stay calm.",
+      "answer": "Mantén la calma.",
+      "accept": [
+        "Conserva la calma."
+      ],
+      "why": "To one friend the command is short: *mantén*."
+    },
+    {
+      "prompt": "Type in Spanish: She lost her calm in the meeting.",
+      "answer": "Perdió la calma en la reunión.",
+      "accept": [
+        "Ella perdió la calma en la reunión."
+      ],
+      "why": "*Perdió* is \"she lost\", and *la calma* is the thing lost."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Conservé calma pese a la presión.",
+      "right": "Conservé la calma pese a la presión.",
+      "why": "Almost. Spanish keeps the article here: *la calma*, where English says just \"calm\"."
+    },
+    {
+      "wrong": "No aguanto de este ruido.",
+      "right": "No aguanto este ruido.",
+      "why": "Almost. *Aguantar* takes its object directly, with no *de*."
+    },
+    {
+      "wrong": "Aguanté el final.",
+      "right": "Aguanté hasta el final.",
+      "why": "Almost. To last \"until\" the end you need *hasta*."
+    }
+  ],
+  "personal": "Think of the last time something tested you. Say whether you *conservé la calma* or *perdí la calma*, or what you *aguanté*."
 }

@@ -47,7 +47,7 @@
       "es": "Se le quebró la voz.",
       "options": [
         "My voice cracked.",
-        "Your voice cracked.",
+        "Their voices cracked.",
         "Her voice cracked."
       ],
       "answer": 2
@@ -55,7 +55,7 @@
     {
       "es": "Se nos puso la piel de gallina.",
       "options": [
-        "Their skin got goosebumps.",
+        "They got goosebumps.",
         "We got goosebumps.",
         "I got goosebumps."
       ],
@@ -91,9 +91,9 @@
     {
       "es": "Se les puso la piel de gallina.",
       "options": [
-        "Their skin got goosebumps.",
-        "Her skin got goosebumps.",
-        "Your skin got goosebumps."
+        "They got goosebumps.",
+        "She got goosebumps.",
+        "I got goosebumps."
       ],
       "answer": 0
     },

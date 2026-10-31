@@ -1,7 +1,7 @@
 {
   "node": "x:conformarse-no-remedio",
   "hook": {
-    "line": "With the café under pressure, Tomás keeps saying yes to things he would rather refuse. Spanish splits that into two different feelings: choosing to be satisfied with less, and being left with no choice at all.",
+    "line": "This week Tomás settles for small comforts and swallows things he cannot change. Spanish keeps those apart: choosing to be content with less, and being left with no choice at all.",
     "es": "No me quedó más remedio que irme.",
     "en": "I had no choice but to leave."
   },
@@ -31,7 +31,7 @@
       "en": "Tomás had no choice but to sell the tables."
     }
   ],
-  "rule": "Both ideas mean \"making do\", but the feeling differs.\n\n*Conformarse con* + a noun is acceptance of less. You take what is on offer: *Me conformo con poco.* Before a verb, add *que*: *Me conformo con que llegues a tiempo.*\n\n*No quedar más remedio que* + an infinitive means the situation forces you. The person goes after *quedar* as *me*, *te*, *le*, *nos*: *No me quedó más remedio que irme.*\n\nSo ask yourself: am I lowering my wishes (*conformarse con*), or is the choice taken away from me (*no quedar más remedio que*)?",
+  "rule": "Both ideas mean \"making do\", but the feeling differs.\n\n*Conformarse con* is acceptance of less. You take what is on offer: *Me conformo con poco.* For someone else's action, add *que* and the subjunctive: *Me conformo con que llegues a tiempo.*\n\n*No quedar más remedio que* + an infinitive means the situation forces you. The person goes after *quedar* as *me*, *te*, *le*, *nos*: *No me quedó más remedio que irme.*\n\nSo ask yourself: am I lowering my wishes (*conformarse con*), or is the choice taken away from me (*no quedar más remedio que*)?",
   "smallPrint": "The first is a pronominal verb followed by *con*; the second is a negative impersonal structure followed by *que* and an infinitive.",
   "readAndPick": [
     {
@@ -156,7 +156,7 @@
       "why": "To a friend the person is *te*."
     },
     {
-      "prompt": "Make it about we: Me conformo con poco.",
+      "prompt": "Make it about us: Me conformo con poco.",
       "answer": "Nos conformamos con poco.",
       "accept": [],
       "why": "Both the *me* and the verb change to *we*: *nos conformamos*."
@@ -164,9 +164,9 @@
   ],
   "pitfalls": [
     {
-      "wrong": "Me conformo que irme.",
+      "wrong": "Me conformé con irme.",
       "right": "No me quedó más remedio que irme.",
-      "why": "Almost. *Conformarse* needs *con*, and \"had no choice\" is a different structure, *no quedar más remedio que*."
+      "why": "Almost. *Me conformé con irme* sounds as if leaving was a small prize you accepted. When you were forced, say *no me quedó más remedio que*."
     },
     {
       "wrong": "Yo no quedé más remedio que irme.",

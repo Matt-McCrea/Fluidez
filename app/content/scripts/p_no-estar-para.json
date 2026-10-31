@@ -1,183 +1,184 @@
 {
- "node": "p:no-estar-para",
- "hook": {
-  "line": "Some days you are standing right there and still not available. A man whose block is being bought out has earned a day like that, and Spanish lets him say so in four words.",
-  "es": "Dile que no estoy para nadie.",
-  "en": "Tell him I'm not available to anyone."
- },
- "examples": [
-  {
-   "es": "Dile que no estoy para nadie.",
-   "en": "Tell him I'm not available to anyone."
+  "node": "p:no-estar-para",
+  "hook": {
+    "line": "Some days you are standing right there and still not available. A man whose block is being bought out has earned a day like that, and Spanish lets him say so in four words.",
+    "es": "Dile que no estoy para nadie.",
+    "en": "Tell him I'm not available to anyone."
   },
-  {
-   "es": "Hoy no estoy para bromas.",
-   "en": "I'm in no mood for jokes today."
-  },
-  {
-   "es": "Ya no estoy para fiestas.",
-   "en": "I'm too old for parties now."
-  },
-  {
-   "es": "Don Hernando no está para discusiones hoy.",
-   "en": "Don Hernando is in no mood for arguments today."
-  },
-  {
-   "es": "No estamos para discusiones, Tomás.",
-   "en": "We're in no mood for arguments, Tomás."
-  },
-  {
-   "es": "Hoy no estás para chistes, ¿verdad?",
-   "en": "You're in no mood for jokes today, are you? (to a friend)"
-  }
- ],
- "rule": "*No estar para* + something means \"I'm not up for it\". You are there; you just cannot or will not deal with it.\n\nThe something is a person or a thing: *nadie* (nobody), *bromas*, *fiestas*, *discusiones*.\n\nIt always uses *estar*, because it is a state you are in today: *Hoy no estoy para bromas*. Never *ser*.\n\n*Ya no estoy para* + plural noun says you are past it, too old or too tired: *Ya no estoy para fiestas*.\n\nIt is nearly always negative. English says \"in no mood for\"; Spanish just says \"not for\".",
- "smallPrint": "Teachers file this under *estar para*, \"to be in a state fit for\", used in the negative as a fixed frame.",
- "readAndPick": [
-  {
-   "es": "Hoy no estoy para bromas.",
-   "options": [
-    "I'm in no mood for jokes today.",
-    "You're in no mood for jokes today.",
-    "He is in no mood for jokes today."
-   ],
-   "answer": 0
-  },
-  {
-   "es": "Don Hernando no está para discusiones hoy.",
-   "options": [
-    "I'm in no mood for arguments today.",
-    "We're in no mood for arguments today.",
-    "Don Hernando is in no mood for arguments today."
-   ],
-   "answer": 2
-  },
-  {
-   "es": "No estamos para discusiones, Tomás.",
-   "options": [
-    "We're in no mood for arguments, Tomás.",
-    "They're in no mood for arguments, Tomás.",
-    "I'm in no mood for arguments, Tomás."
-   ],
-   "answer": 0
-  },
-  {
-   "es": "Hoy no estás para chistes, ¿verdad?",
-   "options": [
-    "I'm in no mood for jokes today, am I?",
-    "You're in no mood for jokes today, are you? (to a friend)",
-    "She's in no mood for jokes today, is she?"
-   ],
-   "answer": 1
-  },
-  {
-   "es": "Ya no estoy para fiestas.",
-   "options": [
-    "I'm too old for parties now.",
-    "I don't like parties.",
-    "I'm not at the party now."
-   ],
-   "answer": 0
-  },
-  {
-   "es": "Dile que no estoy para nadie.",
-   "options": [
-    "Tell him I'm not available to anyone.",
-    "Tell him I'm not here.",
-    "Tell him nobody is available."
-   ],
-   "answer": 0
-  },
-  {
-   "es": "No estaba para paseos.",
-   "options": [
-    "She isn't in the mood for walks.",
-    "She wasn't in the mood for walks.",
-    "She will not be in the mood for walks."
-   ],
-   "answer": 1
-  },
-  {
-   "es": "Ya no estás para fiestas.",
-   "options": [
-    "I'm too old for parties now.",
-    "You're too old for parties now. (to a friend)",
-    "We're too old for parties now."
-   ],
-   "answer": 1
-  }
- ],
- "yourTurn": [
-  {
-   "prompt": "About yourself, pick *estoy* or *estás* and type: *Hoy no ___ para bromas.*",
-   "answer": "Hoy no estoy para bromas.",
-   "accept": [],
-   "why": "*Estoy* is the \"I\" form of *estar*."
-  },
-  {
-   "prompt": "Type in Spanish: Tell him I'm not available to anyone.",
-   "answer": "Dile que no estoy para nadie.",
-   "accept": [
-    "Dile que hoy no estoy para nadie."
-   ],
-   "why": "*Dile* means \"tell him\", and *no estoy para nadie* does the refusing."
-  },
-  {
-   "prompt": "Type in Spanish: I'm too old for parties now.",
-   "answer": "Ya no estoy para fiestas.",
-   "accept": [
-    "Ya no estoy para fiestas."
-   ],
-   "why": "*Ya no* says \"no longer\", so it is past your time for it."
-  },
-  {
-   "prompt": "Type in Spanish: We're in no mood for arguments.",
-   "answer": "No estamos para discusiones.",
-   "accept": [],
-   "why": "*Estamos* is \"we are\", and *para* points at what you cannot face."
-  },
-  {
-   "prompt": "Make it about Don Hernando: *Hoy no estoy para discusiones.* Say: Don Hernando is in no mood for arguments today.",
-   "answer": "Don Hernando hoy no está para discusiones.",
-   "accept": [
-    "Hoy Don Hernando no está para discusiones.",
-    "Don Hernando no está para discusiones hoy."
-   ],
-   "why": "Only the verb changes, from *estoy* to *está*."
-  },
-  {
-   "prompt": "Type in Spanish: You're in no mood for jokes today, are you? (to a friend)",
-   "answer": "Hoy no estás para chistes, ¿verdad?",
-   "accept": [
-    "Hoy no estás para bromas, ¿verdad?"
-   ],
-   "why": "*Estás* is \"you are\", and *¿verdad?* turns it into a question."
-  },
-  {
-   "prompt": "Type in Spanish: She wasn't in the mood for walks.",
-   "answer": "No estaba para paseos.",
-   "accept": [
-    "Ella no estaba para paseos."
-   ],
-   "why": "*Estaba* puts the state in the past."
-  }
- ],
- "pitfalls": [
-  {
-   "wrong": "No soy para bromas.",
-   "right": "No estoy para bromas.",
-   "why": "Almost. This is a state you are in today, so Spanish uses *estar*, not *ser*."
-  },
-  {
-   "wrong": "No estoy en el humor para bromas.",
-   "right": "No estoy para bromas.",
-   "why": "Almost. Spanish skips \"in the mood\": *no estoy para* already says it."
-  },
-  {
-   "wrong": "Estoy no para nadie.",
-   "right": "No estoy para nadie.",
-   "why": "Almost. *No* goes before the verb."
-  }
- ],
- "personal": "What are you in no mood for right now? Finish it: *Hoy no estoy para…*."
+  "examples": [
+    {
+      "es": "Dile que no estoy para nadie.",
+      "en": "Tell him I'm not available to anyone."
+    },
+    {
+      "es": "Hoy no estoy para bromas.",
+      "en": "I'm in no mood for jokes today."
+    },
+    {
+      "es": "Ya no estoy para fiestas.",
+      "en": "I'm too old for parties now."
+    },
+    {
+      "es": "Don Hernando no está para discusiones hoy.",
+      "en": "Don Hernando is in no mood for arguments today."
+    },
+    {
+      "es": "No estamos para discusiones, Tomás.",
+      "en": "We're in no mood for arguments, Tomás."
+    },
+    {
+      "es": "Hoy no estás para chistes, ¿verdad?",
+      "en": "You're in no mood for jokes today, are you? (to a friend)"
+    }
+  ],
+  "rule": "*No estar para* + something means \"I'm not up for it\". You are there; you just cannot or will not deal with it.\n\nThe something is a person or a thing: *nadie* (nobody), *bromas*, *fiestas*, *discusiones*.\n\nIt always uses *estar*, because it is a state you are in today: *Hoy no estoy para bromas*. Never *ser*.\n\n*Ya no estoy para* + plural noun says you are past it, too old or too tired: *Ya no estoy para fiestas*.\n\nIt is nearly always negative. English says \"in no mood for\"; Spanish just says \"not for\".",
+  "smallPrint": "Teachers file this under *estar para*, \"to be in a state fit for\", used in the negative as a fixed frame.",
+  "readAndPick": [
+    {
+      "es": "Hoy no estoy para bromas.",
+      "options": [
+        "I'm in no mood for jokes today.",
+        "You're in no mood for jokes today.",
+        "He is in no mood for jokes today."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Don Hernando no está para discusiones hoy.",
+      "options": [
+        "I'm in no mood for arguments today.",
+        "We're in no mood for arguments today.",
+        "Don Hernando is in no mood for arguments today."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No estamos para discusiones, Tomás.",
+      "options": [
+        "We're in no mood for arguments, Tomás.",
+        "They're in no mood for arguments, Tomás.",
+        "I'm in no mood for arguments, Tomás."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hoy no estás para chistes, ¿verdad?",
+      "options": [
+        "I'm in no mood for jokes today, am I?",
+        "You're in no mood for jokes today, are you? (to a friend)",
+        "She's in no mood for jokes today, is she?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ya no estoy para fiestas.",
+      "options": [
+        "I'm too old for parties now.",
+        "I don't like parties.",
+        "I'm not at the party now."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Dile que no estoy para nadie.",
+      "options": [
+        "Tell him I'm not available to anyone.",
+        "Tell him I'm not here.",
+        "Tell him nobody is available."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No estaba para paseos.",
+      "options": [
+        "She isn't in the mood for walks.",
+        "She wasn't in the mood for walks.",
+        "She will not be in the mood for walks."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ya no estás para fiestas.",
+      "options": [
+        "I'm too old for parties now.",
+        "You're too old for parties now. (to a friend)",
+        "We're too old for parties now."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "About yourself, pick *estoy* or *estás* and type: *Hoy no ___ para bromas.*",
+      "answer": "Hoy no estoy para bromas.",
+      "accept": [],
+      "why": "*Estoy* is the \"I\" form of *estar*."
+    },
+    {
+      "prompt": "Type in Spanish: Tell him I'm not available to anyone.",
+      "answer": "Dile que no estoy para nadie.",
+      "accept": [
+        "Dile que hoy no estoy para nadie."
+      ],
+      "why": "*Dile* means \"tell him\", and *no estoy para nadie* does the refusing."
+    },
+    {
+      "prompt": "Type in Spanish: I'm too old for parties now.",
+      "answer": "Ya no estoy para fiestas.",
+      "accept": [
+        "Yo ya no estoy para fiestas."
+      ],
+      "why": "*Ya no* says \"no longer\", so it is past your time for it."
+    },
+    {
+      "prompt": "Type in Spanish: We're in no mood for arguments.",
+      "answer": "No estamos para discusiones.",
+      "accept": [],
+      "why": "*Estamos* is \"we are\", and *para* points at what you cannot face."
+    },
+    {
+      "prompt": "Make it about Don Hernando: *Hoy no estoy para discusiones.* Say: Don Hernando is in no mood for arguments today.",
+      "answer": "Don Hernando hoy no está para discusiones.",
+      "accept": [
+        "Hoy Don Hernando no está para discusiones.",
+        "Don Hernando no está para discusiones hoy."
+      ],
+      "why": "Only the verb changes, from *estoy* to *está*."
+    },
+    {
+      "prompt": "Type in Spanish: You're in no mood for jokes today, are you? (to a friend)",
+      "answer": "Hoy no estás para chistes, ¿verdad?",
+      "accept": [
+        "Hoy no estás para bromas, ¿verdad?",
+        "No estás para chistes hoy, ¿verdad?"
+      ],
+      "why": "*Estás* is \"you are\", and *¿verdad?* turns it into a question."
+    },
+    {
+      "prompt": "Type in Spanish: She wasn't in the mood for walks.",
+      "answer": "No estaba para paseos.",
+      "accept": [
+        "Ella no estaba para paseos."
+      ],
+      "why": "*Estaba* puts the state in the past."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No soy para bromas.",
+      "right": "No estoy para bromas.",
+      "why": "Almost. This is a state you are in today, so Spanish uses *estar*, not *ser*."
+    },
+    {
+      "wrong": "No estoy en el humor para bromas.",
+      "right": "No estoy para bromas.",
+      "why": "Almost. Spanish skips \"in the mood\": *no estoy para* already says it."
+    },
+    {
+      "wrong": "Estoy no para nadie.",
+      "right": "No estoy para nadie.",
+      "why": "Almost. *No* goes before the verb."
+    }
+  ],
+  "personal": "What are you in no mood for right now? Finish it: *Hoy no estoy para…*."
 }

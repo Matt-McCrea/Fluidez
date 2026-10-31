@@ -123,7 +123,9 @@
     {
       "prompt": "If I could turn back time, I'd tell her I love her.",
       "answer": "Si pudiera devolver el tiempo, le diría que la quiero.",
-      "accept": [],
+      "accept": [
+        "Si pudiera devolver el tiempo, le diría que la amo."
+      ],
       "why": "*Si pudiera* + the conditional *diría*."
     },
     {

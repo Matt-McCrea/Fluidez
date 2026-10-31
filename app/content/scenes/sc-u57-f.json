@@ -7,8 +7,8 @@
   "turns": [
     {
       "id": "t1",
-      "npc": "El empleado: Buenos días. Vengo con el pedido de las memorias de don Hernando. Lamento mucho su pérdida.",
-      "npcEn": "The clerk: Good morning. I have the order of Don Hernando's memoirs. I'm very sorry for your loss.",
+      "npc": "El empleado: Buenos días. Aquí tiene el pedido de las memorias de don Hernando. Lamento mucho su pérdida.",
+      "npcEn": "The clerk: Good morning. Here is the order of Don Hernando's memoirs. I'm very sorry for your loss.",
       "intent": "Thank him and say that although it's a sad day, it's a relief to have the books on time (use: si bien).",
       "accept": [
         "Gracias. Si bien es un día triste, es un alivio tener los libros a tiempo.",
@@ -117,8 +117,8 @@
     },
     {
       "id": "t6",
-      "npc": "El empleado: Son treinta cajas. ¿Se las cargo yo solo hasta su carro?",
-      "npcEn": "The clerk: It's thirty boxes. Shall I carry them all by myself to your car?",
+      "npc": "El empleado: Son treinta cajas. ¿Se las cargo yo solo hasta el taxi?",
+      "npcEn": "The clerk: It's thirty boxes. Shall I carry them all by myself to the taxi?",
       "intent": "Refuse with the chunk ¡Eso sí que no! and offer to help.",
       "accept": [
         "¡Eso sí que no! Las cargamos entre los dos.",
@@ -138,11 +138,11 @@
     }
   ],
   "requires": [
+    "c:aqui-tiene",
     "c:bien-y-tu",
     "c:en-serio",
     "c:eso-si-que-no",
     "c:gracias-de-nada",
-    "c:hago-salgo-vengo",
     "c:hay",
     "c:hola-buenos-dias",
     "c:me-lo-llevo",
@@ -194,12 +194,12 @@
     "g:superlatives",
     "g:that-clauses",
     "g:verb-infinitive",
-    "g:yo-irregular",
     "l:adelante",
     "l:aguantar",
     "l:ahora",
     "l:alegrar",
     "l:alivio",
+    "l:aquí",
     "l:ayudar",
     "l:año",
     "l:bien",
@@ -211,7 +211,6 @@
     "l:capítulo",
     "l:cargar",
     "l:cargo",
-    "l:carro",
     "l:cobrar",
     "l:conciencia",
     "l:conservar",
@@ -269,10 +268,10 @@
     "l:ser",
     "l:siempre",
     "l:tardar",
+    "l:taxi",
     "l:tener",
     "l:tiempo",
     "l:triste",
-    "l:venir",
     "l:verdad",
     "p:aguantar-conservar-la-calma",
     "p:bien-bueno",

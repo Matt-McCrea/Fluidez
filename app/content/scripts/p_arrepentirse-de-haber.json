@@ -1,7 +1,7 @@
 {
   "node": "p:arrepentirse-de-haber",
   "hook": {
-    "line": "Tomás keeps replaying the last conversation he had with Rosa. There are three ways to say \"I wish I hadn't\" in Spanish, and each has a different weight.",
+    "line": "Tomás keeps replaying the chess games he lost to Don Hernando on purpose. Spanish has three ways to talk about regret, and each has a different weight.",
     "es": "Me arrepiento de no haberle dicho nada.",
     "en": "I regret not having said anything to him."
   },
@@ -31,7 +31,7 @@
       "en": "Don't you regret having left so quickly? (to a friend)"
     }
   ],
-  "rule": "Three frames cover regret:\n\n1. *Me arrepiento de (no) haber* + participle: *Me arrepiento de haber vendido el carro.* A strong, heartfelt regret.\n2. *No debí* + infinitive, or *No debí haber* + participle: *No debí gritarle.* \"I shouldn't have.\"\n3. *Tendría que haber* + participle: *Tendría que haberme quedado.* \"I should have.\"\n\nThe pronoun attaches to *haber*, not to the participle: *haberle dicho*, *haberme quedado*.\n\nAfter *de*, Spanish uses the infinitive. English says \"I regret saying\", never \"I regret that I said\".",
+  "rule": "Three frames cover regret:\n\n1. *Me arrepiento de (no) haber* + participle: *Me arrepiento de haber vendido el carro.* A strong, heartfelt regret.\n2. *No debí* + infinitive, or *No debí haber* + participle: *No debí gritarle.* \"I shouldn't have.\"\n3. *Tendría que haber* + participle: *Tendría que haberme quedado.* \"I should have.\"\n\nThe pronoun attaches to *haber*, not to the participle: *haberle dicho*, *haberme quedado*.\n\nAfter *de*, Spanish uses the infinitive (*de haber dicho*), even where English would say \"I regret that I said\".",
   "smallPrint": "Teachers call *haber* + participle the perfect infinitive, and *tendría que haber* the conditional perfect of obligation.",
   "readAndPick": [
     {
@@ -55,7 +55,7 @@
     {
       "es": "Me arrepiento de no haberle dicho nada.",
       "options": [
-        "I regret telling him nothing about it.",
+        "I regret telling him everything.",
         "I regret that he didn't tell me anything.",
         "I regret not having said anything to him."
       ],
@@ -123,14 +123,18 @@
     {
       "prompt": "I shouldn't have shouted at her.",
       "answer": "No debí gritarle.",
-      "accept": [],
+      "accept": [
+        "No debí haberle gritado.",
+        "No tendría que haberle gritado."
+      ],
       "why": "*No debí* + infinitive says \"I shouldn't have\"."
     },
     {
       "prompt": "I shouldn't have gone.",
       "answer": "No debí haber ido.",
       "accept": [
-        "No debí ir."
+        "No debí ir.",
+        "No tendría que haber ido."
       ],
       "why": "*No debí haber ido* is the full form; the short one drops *haber*."
     },
@@ -150,7 +154,8 @@
       "prompt": "I should have told her the truth.",
       "answer": "Tendría que haberle dicho la verdad.",
       "accept": [
-        "Debí haberle dicho la verdad."
+        "Debí haberle dicho la verdad.",
+        "Debí decirle la verdad."
       ],
       "why": "*Tendría que haber* + participle, with *le* on *haber*."
     }
@@ -169,7 +174,7 @@
     {
       "wrong": "Debería no haber ido.",
       "right": "No debí haber ido.",
-      "why": "Almost. For \"I shouldn't have\", put *no* before *debí*."
+      "why": "Almost. Spanish puts *no* first: *No debí haber ido* or *No debería haber ido*."
     }
   ],
   "personal": "Say one thing you regret doing, and one you regret not doing, using *Me arrepiento de…*."

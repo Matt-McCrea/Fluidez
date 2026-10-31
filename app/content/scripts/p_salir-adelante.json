@@ -134,7 +134,7 @@
       "prompt": "How did you pull through? (to a friend, after the divorce)",
       "answer": "¿Cómo saliste adelante después del divorcio?",
       "accept": [
-        "¿Cómo saliste adelante después del divorcio?"
+        "¿Cómo saliste adelante después de tu divorcio?"
       ],
       "why": "*Saliste* is the past for *tú*, and *adelante* stays the same."
     },
@@ -154,7 +154,8 @@
       "prompt": "The family pulled through thanks to the neighbours.",
       "answer": "La familia salió adelante gracias a los vecinos.",
       "accept": [
-        "Salió adelante la familia gracias a los vecinos."
+        "Salió adelante la familia gracias a los vecinos.",
+        "Gracias a los vecinos, la familia salió adelante."
       ],
       "why": "One family, so *salió*. *Gracias a* says what helped."
     }

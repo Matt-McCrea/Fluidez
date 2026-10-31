@@ -1,7 +1,7 @@
 {
   "node": "p:me-sorprende-me-sorprendo",
   "hook": {
-    "line": "Tomás wants to tell Mariana how he feels about the café, and he notices two ways of saying it: the thing surprises him, or he is the one who gets surprised. Spanish keeps them apart.",
+    "line": "Vale's niece learns to make arepas in a single afternoon, and Tomás wants to say so. Spanish gives him two ways: the thing surprises him, or he is the one who gets surprised.",
     "es": "Me sorprende lo rápido que aprende.",
     "en": "It surprises me how fast she learns."
   },
@@ -98,11 +98,11 @@
       "answer": 0
     },
     {
-      "es": "Me sorprendo cuando oigo esa canción.",
+      "es": "Me sorprendo cada vez que la veo bailar.",
       "options": [
-        "That song surprises me.",
-        "I get surprised when I hear that song.",
-        "You get surprised when you hear that song."
+        "Seeing her dance surprises her.",
+        "I'm surprised every time I see her dance.",
+        "You're surprised every time you see her dance."
       ],
       "answer": 1
     }

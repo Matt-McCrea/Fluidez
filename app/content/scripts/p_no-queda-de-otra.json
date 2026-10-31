@@ -6,54 +6,104 @@
     "en": "There's no choice but to close today."
   },
   "examples": [
-    { "es": "No hay más remedio que esperar hasta mañana.", "en": "There's nothing for it but to wait until tomorrow." },
-    { "es": "No queda de otra que pagar.", "en": "There's no option but to pay." },
-    { "es": "Toca madrugar.", "en": "We have no choice but to get up early." },
-    { "es": "No queda de otra que vender el café.", "en": "There's no choice but to sell the café." },
-    { "es": "¿No hay más remedio que cerrar todo el día?", "en": "Is there really no choice but to close all day?" },
-    { "es": "Toca esperar la respuesta de Altamira.", "en": "We just have to wait for Altamira's answer." }
+    {
+      "es": "No hay más remedio que esperar hasta mañana.",
+      "en": "There's nothing for it but to wait until tomorrow."
+    },
+    {
+      "es": "No queda de otra que pagar.",
+      "en": "There's no option but to pay."
+    },
+    {
+      "es": "Toca madrugar.",
+      "en": "We have no choice but to get up early."
+    },
+    {
+      "es": "No queda de otra que vender el café.",
+      "en": "There's no choice but to sell the café."
+    },
+    {
+      "es": "¿No hay más remedio que cerrar todo el día?",
+      "en": "Is there really no choice but to close all day?"
+    },
+    {
+      "es": "Toca esperar la respuesta de Altamira.",
+      "en": "We just have to wait for Altamira's answer."
+    }
   ],
   "rule": "All three frames say the same thing: you have no choice, so you do it. English says \"there's nothing for it but to...\" or \"I guess we have to...\". Spanish keeps a fixed frame and then a plain infinitive:\n*No hay más remedio que* + infinitive\n*No queda de otra que* + infinitive (everyday in Latin America)\n*Toca* + infinitive (short and very Colombian)\nNobody is named, so the same sentence works for *I*, *we* or anyone. The mood is a shrug, not anger.",
   "smallPrint": "Teachers call these impersonal expressions of necessity. Here *tocar* means that something falls to you to do.",
   "readAndPick": [
     {
       "es": "No queda de otra que pagar.",
-      "options": ["We can pay another time.", "There's no option but to pay.", "Nobody else is going to pay."],
+      "options": [
+        "We can pay another time.",
+        "There's no option but to pay.",
+        "Nobody else is going to pay."
+      ],
       "answer": 1
     },
     {
       "es": "Toca madrugar.",
-      "options": ["We have no choice but to get up early.", "It's too early to get up.", "We got up early."],
+      "options": [
+        "We have no choice but to get up early.",
+        "It's too early to get up.",
+        "We got up early."
+      ],
       "answer": 0
     },
     {
       "es": "No hay más remedio que esperar hasta mañana.",
-      "options": ["There's no more waiting until tomorrow.", "I'd rather wait until tomorrow.", "There's nothing for it but to wait until tomorrow."],
+      "options": [
+        "There's no more waiting until tomorrow.",
+        "I'd rather wait until tomorrow.",
+        "There's nothing for it but to wait until tomorrow."
+      ],
       "answer": 2
     },
     {
       "es": "No queda de otra que vender el café.",
-      "options": ["We'd rather sell the café.", "There's no choice but to sell the café.", "Nobody is left to sell the café."],
+      "options": [
+        "We'd rather sell the café.",
+        "There's no choice but to sell the café.",
+        "Nobody is left to sell the café."
+      ],
       "answer": 1
     },
     {
       "es": "Toca esperar la respuesta de Altamira.",
-      "options": ["Altamira is waiting for our answer.", "Altamira has already answered.", "We just have to wait for Altamira's answer."],
+      "options": [
+        "Altamira is waiting for our answer.",
+        "Altamira has already answered.",
+        "We just have to wait for Altamira's answer."
+      ],
       "answer": 2
     },
     {
       "es": "¿No hay más remedio que cerrar todo el día?",
-      "options": ["Is there really no choice but to close all day?", "Did we close all day?", "Why is it closed all day?"],
+      "options": [
+        "Is there really no choice but to close all day?",
+        "Did we close all day?",
+        "Why is it closed all day?"
+      ],
       "answer": 0
     },
     {
       "es": "No hubo más remedio que cerrar.",
-      "options": ["I want to close.", "I didn't close.", "There was no choice but to close."],
+      "options": [
+        "I want to close.",
+        "I didn't close.",
+        "There was no choice but to close."
+      ],
       "answer": 2
     },
     {
       "es": "No hay más remedio que llamar a Vale.",
-      "options": ["Vale has to call us.", "There's no way around it: we have to call Vale.", "We shouldn't call Vale."],
+      "options": [
+        "Vale has to call us.",
+        "There's no way around it: we have to call Vale.",
+        "We shouldn't call Vale."
+      ],
       "answer": 1
     }
   ],
@@ -73,19 +123,28 @@
     {
       "prompt": "Type it in Spanish: There's no choice but to sell the café.",
       "answer": "No queda de otra que vender el café.",
-      "accept": ["No hay más remedio que vender el café."],
+      "accept": [
+        "No hay más remedio que vender el café.",
+        "Toca vender el café."
+      ],
       "why": "Both frames are everyday; each is followed by the infinitive."
     },
     {
       "prompt": "Type it in Spanish: There's nothing for it but to wait until tomorrow.",
       "answer": "No hay más remedio que esperar hasta mañana.",
-      "accept": ["No queda de otra que esperar hasta mañana."],
+      "accept": [
+        "No queda de otra que esperar hasta mañana.",
+        "Toca esperar hasta mañana."
+      ],
       "why": "The frame plus *esperar* says it all."
     },
     {
       "prompt": "Type it in Spanish: We have no choice but to get up early.",
       "answer": "Toca madrugar.",
-      "accept": ["No queda de otra que madrugar.", "No hay más remedio que madrugar."],
+      "accept": [
+        "No queda de otra que madrugar.",
+        "No hay más remedio que madrugar."
+      ],
       "why": "*Toca* is the shortest of the three frames."
     },
     {

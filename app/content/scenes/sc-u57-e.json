@@ -54,13 +54,13 @@
     },
     {
       "id": "t3",
-      "npc": "Vale: ¿Y si no sale bien? ¿Y si Altamira se queda con la cuadra?",
-      "npcEn": "Vale: And what if it doesn't work out? What if Altamira ends up with the block?",
+      "npc": "Vale: ¿Y si no sale bien? ¿Y si el café no da para los dos?",
+      "npcEn": "Vale: And what if it doesn't work out? What if the café doesn't earn enough for both of us?",
       "intent": "Reassure her: say you are crossing your fingers (use: cruzo los dedos para que + subjunctive).",
       "accept": [
         "Cruzo los dedos para que todo salga bien.",
         "Cruzo los dedos para que el café funcione.",
-        "Yo cruzo los dedos para que Altamira se rinda."
+        "Yo cruzo los dedos para que nos vaya bien."
       ],
       "require": [
         {
@@ -122,8 +122,8 @@
     },
     {
       "id": "t6",
-      "npc": "Vale: Entonces abramos el café. Hoy toca el pan de cada día.",
-      "npcEn": "Vale: Then let's open the café. Today it's the daily bread.",
+      "npc": "Vale: Entonces abramos. Para la gente del barrio, este café es el pan de cada día.",
+      "npcEn": "Vale: Then let's open. For the people of the neighbourhood, this café is part of everyday life.",
       "intent": "Say let's go for it, and that whatever happens, happens (use: Hágale and que sea lo que Dios quiera).",
       "accept": [
         "¡Hágale, pues! Y que sea lo que Dios quiera.",
@@ -180,6 +180,7 @@
     "g:preterite-ser-ir-hacer",
     "g:reflexive-routine",
     "g:relatives-donde-lo-que",
+    "g:ser-identity",
     "g:si-present",
     "g:stem-boot",
     "g:subj-irregulars",
@@ -200,6 +201,7 @@
     "l:arrepentirse",
     "l:arriba",
     "l:año",
+    "l:barrio",
     "l:bien",
     "l:buscar",
     "l:café",
@@ -210,7 +212,7 @@
     "l:consultar",
     "l:creer",
     "l:cruzar",
-    "l:cuadra",
+    "l:dar",
     "l:decidir",
     "l:dedo",
     "l:dejar",
@@ -224,9 +226,9 @@
     "l:funcionar",
     "l:ganas",
     "l:gato",
+    "l:gente",
     "l:hacer",
     "l:horrible",
-    "l:hoy",
     "l:ir",
     "l:justo",
     "l:llevar",
@@ -245,7 +247,6 @@
     "l:quedarse",
     "l:querer",
     "l:quién",
-    "l:rendirse",
     "l:respuesta",
     "l:rápido",
     "l:saber",
@@ -253,7 +254,6 @@
     "l:ser",
     "l:tablero",
     "l:tener",
-    "l:tocar",
     "l:trabajo",
     "l:traer",
     "l:tristeza",
@@ -270,6 +270,7 @@
     "p:demonstratives-basic",
     "p:entrarle-algo",
     "p:exclamations-basic",
+    "p:la-gente-singular",
     "p:llevar-traer",
     "p:me-te-nos-objects",
     "p:para-inf",

@@ -1,7 +1,7 @@
 {
   "node": "p:parece-mentira-que",
   "hook": {
-    "line": "A year has gone by since Rosa's funeral. When Tomás says what everyone is thinking, he reaches for the phrase Colombians use when time or news feels unreal.",
+    "line": "On the café's anniversary, Gloria looks around and says what everyone is thinking. She reaches for the phrase Colombians use when time or news feels unreal.",
     "es": "¡Parece mentira que ya haya pasado un año!",
     "en": "I can't believe a year has gone by already!"
   },
@@ -152,7 +152,9 @@
     {
       "prompt": "Make it a plain guess: Parece mentira que ya haya pasado un año.",
       "answer": "Parece que ya pasó un año.",
-      "accept": [],
+      "accept": [
+        "Parece que ya ha pasado un año."
+      ],
       "why": "A guess takes *parece que* with the indicative, not the subjunctive."
     }
   ],

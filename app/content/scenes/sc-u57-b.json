@@ -28,12 +28,12 @@
     },
     {
       "id": "t2",
-      "npc": "Mariana: En el libro, Hernando cuenta que tú perdías a propósito. ¿Él lo sabía?",
-      "npcEn": "Mariana: In the book, Hernando says you lost on purpose. Did he know?",
-      "intent": "Say you only realized when you read that page that he had always known (use: caí en cuenta de que).",
+      "npc": "Mariana: En su último cuaderno, Hernando cuenta que tú perdías a propósito. ¿Él lo sabía?",
+      "npcEn": "Mariana: In his last notebook, Hernando says you lost on purpose. Did he know?",
+      "intent": "Say you only realised when you read his notebook that he had always known (use: caí en cuenta de que).",
       "accept": [
         "Hasta que leí esa página no caí en cuenta de que él lo sabía.",
-        "Caí en cuenta de que lo sabía desde el principio cuando leí el capítulo.",
+        "Caí en cuenta de que lo sabía desde el principio cuando leí el cuaderno.",
         "Ayer caí en cuenta de que él siempre lo supo."
       ],
       "require": [
@@ -98,7 +98,7 @@
       "npcEn": "Mariana: Last question, to close the piece: what would you say to Hernando if you had him in front of you?",
       "intent": "Say what you would tell or ask him if he were here (use: si + imperfect subjunctive, then the conditional).",
       "accept": [
-        "Si lo tuviera delante, le diría que siempre jugó mejor que yo.",
+        "Si lo tuviera delante, le diría que el libro quedó muy bueno.",
         "Si pudiera hablar con él, le pediría una última partida.",
         "Si estuviera aquí, le daría las gracias por todo."
       ],
@@ -121,11 +121,11 @@
       "id": "t6",
       "npc": "Mariana: Gracias, Tomás. Con esto la nota queda completa. ¿Te traigo un tinto?",
       "npcEn": "Mariana: Thanks, Tomás. With this the piece is complete. Shall I bring you a black coffee?",
-      "intent": "Thank her and say yes to the coffee.",
+      "intent": "Thank her, say yes to the coffee and say you're worn out (use: estoy molido).",
       "accept": [
-        "Gracias, Mariana. Un tinto me vendría bien.",
+        "Gracias, Mariana. Un tinto me vendría bien, que estoy molido.",
         "Sí, gracias. Un tinto, por favor. Estoy molido.",
-        "Gracias a ti. Sí, tráeme un tinto."
+        "Gracias a ti. Sí, tráeme un tinto, que estoy molido."
       ],
       "require": [
         {
@@ -134,6 +134,12 @@
             "gracias"
           ],
           "label": "say thanks"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bmolid[oa]\\b",
+          "flags": "iu",
+          "label": "use: estoy molido"
         }
       ],
       "focus": "c:estoy-molido",
@@ -154,7 +160,6 @@
     "c:si-quieres",
     "g:commands-tu",
     "g:commands-with-pronouns",
-    "g:comparatives",
     "g:conditional",
     "g:conditional-perfect",
     "g:demonstratives",
@@ -201,11 +206,11 @@
     "l:bueno",
     "l:cabeza",
     "l:caer",
-    "l:capítulo",
     "l:casa",
     "l:cerrar",
     "l:completar",
     "l:contar",
+    "l:cuaderno",
     "l:cuenta",
     "l:cómo",
     "l:dar",
@@ -228,7 +233,6 @@
     "l:llevar",
     "l:lograr",
     "l:línea",
-    "l:mejor",
     "l:moler",
     "l:molestar",
     "l:noche",
@@ -281,6 +285,7 @@
     "p:possessives-basic",
     "p:prefieres-x-o-y",
     "p:preguntar-pedir",
+    "p:quantifiers-basic",
     "p:que-subj-deseo",
     "p:que-tal-si",
     "p:romperse-la-cabeza",

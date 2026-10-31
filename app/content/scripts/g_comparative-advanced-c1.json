@@ -32,10 +32,10 @@
     },
     {
       "es": "Más vale que no lo sepa Hernando.",
-      "en": "It's better if Hernando doesn't find out."
+      "en": "Hernando had better not find out."
     }
   ],
-  "rule": "Three fine comparisons.\n\n1. *Cuanto más… (menos)…* means \"the more… the more/less…\". Say *cuanto* + *más* or *menos* in the first half, then *más*, *menos*, *mejor* or *peor* in the second. The verbs stay normal: *Cuanto más practico, mejor hablo.*\n\n2. *Ni que* + a past subjunctive scoffs at an exaggeration: *¡Ni que fueras mi jefe!* It is like \"as if you were…\" and always points at something untrue.\n\n3. *Más vale que* + the present subjunctive gives strong advice: *Más vale que llegues temprano.*\n\nEnglish uses \"the… the…\"; Spanish repeats *más* or *menos* in both halves instead.",
+  "rule": "Three ways to weigh things up.\n\n1. *Cuanto más… (menos)…* means \"the more… the more/less…\". Say *cuanto* + *más* or *menos* in the first half, then *más*, *menos*, *mejor* or *peor* in the second. The verbs stay normal: *Cuanto más practico, mejor hablo.*\n\n2. *Ni que* + a past subjunctive scoffs at an exaggeration: *¡Ni que fueras mi jefe!* It is like \"as if you were…\" and always points at something untrue.\n\n3. *Más vale que* + the present subjunctive gives strong advice: *Más vale que llegues temprano.*\n\nEnglish uses \"the… the…\"; Spanish repeats *más* or *menos* in both halves instead.",
   "smallPrint": "Teachers call the first one a proportional comparison. In the second and third, the verb after *que* is in the subjunctive.",
   "readAndPick": [
     {
@@ -95,7 +95,7 @@
     {
       "es": "Más vale que no lo sepa Hernando.",
       "options": [
-        "It's better if Hernando doesn't find out.",
+        "Hernando had better not find out.",
         "Hernando already knows.",
         "Hernando would like to know."
       ],
@@ -158,7 +158,7 @@
       "why": "*Más* in the first half, *menos* in the second."
     },
     {
-      "prompt": "Make it about he: ¡Ni que fueras el presidente!",
+      "prompt": "Make it about him: ¡Ni que fueras el presidente!",
       "answer": "¡Ni que fuera el presidente!",
       "accept": [],
       "why": "For *él* or *ella* the past subjunctive ends in *-ra*: *fuera*."

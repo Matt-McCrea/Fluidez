@@ -166,7 +166,7 @@
       "why": "*No* goes right before the verb."
     },
     {
-      "prompt": "Make it about we: Caí en cuenta de que tenía hambre.",
+      "prompt": "Make it about us: Caí en cuenta de que tenía hambre.",
       "answer": "Caímos en cuenta de que teníamos hambre.",
       "accept": [
         "Caímos en la cuenta de que teníamos hambre."

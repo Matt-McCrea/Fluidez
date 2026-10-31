@@ -405,21 +405,22 @@
   },
   {
     "id": "u57-0016",
-    "es": "Cuanto más lo extraño, menos me atrevo a entrar en su mesa de siempre.",
-    "en": "The more I miss him, the less I dare to go near his usual table.",
+    "es": "Cuanto más lo extraño, menos me atrevo a sentarme en su mesa de siempre.",
+    "en": "The more I miss him, the less I dare to sit at his usual table.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparative-advanced-c1",
       "g:direct-objects",
+      "g:object-pronoun-position",
       "g:present-ar",
       "g:present-er-ir",
       "g:reflexive-routine",
       "l:atreverse",
       "l:cuanto",
-      "l:entrar",
       "l:extrañar",
       "l:mesa",
+      "l:sentar",
       "l:siempre",
       "p:decidirse-atreverse-a",
       "p:extranar",
@@ -624,8 +625,8 @@
   },
   {
     "id": "u57-0024",
-    "es": "Cuanto más escondía la alegría, más lo notaban todos.",
-    "en": "The more I hid my cheerfulness, the more everyone noticed.",
+    "es": "Cuanto más escondía la alegría, más la notaban todos.",
+    "en": "The more I hid my cheerfulness, the more everyone noticed it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1047,8 +1048,8 @@
   },
   {
     "id": "u57-0040",
-    "es": "Cuanto más oscuro estaba el cielo, más fuerte sonaban los claxon.",
-    "en": "The darker the sky was, the louder the horns sounded.",
+    "es": "Cuanto más oscuro estaba el cielo, más ruido hacían los taxis.",
+    "en": "The darker the sky got, the more noise the taxis made.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1058,12 +1059,12 @@
       "g:imperfect-habitual",
       "g:imperfect-states",
       "l:cielo",
-      "l:claxon",
       "l:cuanto",
       "l:estar",
-      "l:fuerte",
+      "l:hacer",
       "l:oscuro",
-      "l:sonar"
+      "l:ruido",
+      "l:taxi"
     ],
     "targets": [
       "g:comparative-advanced-c1"
@@ -2258,25 +2259,23 @@
   },
   {
     "id": "u57-0084",
-    "es": "¿Por qué no comes?\nCuanto menos hambre tengo, menos ganas de vivir me quedan.",
-    "en": "Why don't you eat? (to a friend)\nThe less hungry I am, the less desire to live I have left.",
+    "es": "¿Por qué no comes?\nCuanto más triste estoy, menos hambre tengo.",
+    "en": "Why don't you eat? (to a friend)\nThe sadder I am, the less hungry I get.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tengo",
       "g:comparative-advanced-c1",
-      "g:parecer-quedar",
-      "g:present-ar",
+      "g:estar-location-states",
       "g:present-er-ir",
       "g:yo-irregular",
       "l:comer",
       "l:cuanto",
-      "l:ganas",
+      "l:estar",
       "l:hambre",
-      "l:quedar",
       "l:qué",
       "l:tener",
-      "l:vivir",
+      "l:triste",
       "p:por-que-no",
       "p:prep-questions-basic"
     ],
@@ -2505,8 +2504,8 @@
   },
   {
     "id": "u57-0092",
-    "es": "¿Qué tal el libro?\nCuanto más lo leemos, más orgulloso estoy de él.",
-    "en": "How is the book?\nThe more we read it, the prouder of him I am.",
+    "es": "¿Qué tal el libro?\nCuanto más lo leo, más orgulloso estoy de él.",
+    "en": "How is the book?\nThe more I read it, the prouder of him I am.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2801,8 +2800,8 @@
   },
   {
     "id": "u57-0103",
-    "es": "Cuanto más mayor soy, más me importan las despedidas.",
-    "en": "The older I am, the more farewells matter to me.",
+    "es": "Cuanto más viejo me pongo, más me importan las despedidas.",
+    "en": "The older I get, the more farewells matter to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2810,12 +2809,14 @@
       "g:gender-articles",
       "g:gustar-full",
       "g:present-ar",
-      "g:ser-identity",
+      "g:verbs-of-change",
+      "g:yo-irregular",
       "l:cuanto",
       "l:despedida",
       "l:importar",
-      "l:mayor",
-      "l:ser"
+      "l:ponerse",
+      "l:viejo",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "g:comparative-advanced-c1"
@@ -2880,24 +2881,23 @@
   },
   {
     "id": "u57-0106",
-    "es": "Cuanto más caro es el café, menos me lo disfruto sin él.",
-    "en": "The more expensive the coffee is, the less I enjoy it without him.",
+    "es": "Cuanto más rico me queda el tinto, más lo extraño a él.",
+    "en": "The better my black coffee turns out, the more I miss him.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparative-advanced-c1",
       "g:direct-objects",
-      "g:double-pronouns",
       "g:gender-articles",
-      "g:prep-pronouns",
+      "g:parecer-quedar",
       "g:present-ar",
-      "g:ser-identity",
-      "l:café",
-      "l:caro",
       "l:cuanto",
-      "l:disfrutar",
-      "l:ser",
-      "p:me-te-nos-objects"
+      "l:extrañar",
+      "l:quedar",
+      "l:rico",
+      "l:tinto",
+      "p:extranar",
+      "p:personal-a"
     ],
     "targets": [
       "g:comparative-advanced-c1"
@@ -2964,8 +2964,8 @@
   },
   {
     "id": "u57-0109",
-    "es": "Cuanto más pronto salimos, más fácil encontramos sitio en la iglesia.",
-    "en": "The sooner we leave, the more easily we find a place in the church.",
+    "es": "Cuanto más temprano salimos, más fácil encontramos puesto en la iglesia.",
+    "en": "The earlier we leave, the easier it is to find a seat in the church.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2977,9 +2977,9 @@
       "l:encontrar",
       "l:fácil",
       "l:iglesia",
-      "l:pronto",
+      "l:puesto",
       "l:salir",
-      "l:sitio"
+      "l:temprano"
     ],
     "targets": [
       "g:comparative-advanced-c1"
@@ -3042,8 +3042,8 @@
   },
   {
     "id": "u57-0112",
-    "es": "Cuanto menos lo esperábamos, más cerca llegaba el final.",
-    "en": "The less we expected it, the nearer the end was.",
+    "es": "Cuanto menos lo esperábamos, antes llegó el final.",
+    "en": "The less we expected it, the sooner the end came.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3051,7 +3051,9 @@
       "g:direct-objects",
       "g:gender-articles",
       "g:imperfect-habitual",
-      "l:cerca",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "l:antes",
       "l:cuanto",
       "l:esperar",
       "l:final",
@@ -4153,20 +4155,18 @@
   },
   {
     "id": "u57-0152",
-    "es": "De haber sido tú, ¿habrías perdonado a Simón por morderte?",
-    "en": "Had you been me, would you have forgiven Simón for biting you?",
+    "es": "De haberte mordido Simón, ¿lo habrías perdonado?",
+    "en": "Had Simón bitten you, would you have forgiven him? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional-advanced",
       "g:conditional-perfect",
-      "g:infinitive-perfect",
+      "g:direct-objects",
       "g:object-pronoun-position",
-      "g:por-para-1",
       "l:haber",
       "l:morder",
       "l:perdonar",
-      "l:ser",
       "p:me-te-nos-objects"
     ],
     "targets": [
@@ -5680,7 +5680,7 @@
   {
     "id": "u57-0204",
     "es": "Como no coma, se me muere.\nNo digas eso, Vale, solo está cansado.",
-    "en": "If he doesn't eat, he'll die on me.\nDon't exaggerate, Vale, he's just tired.",
+    "en": "If he doesn't eat, he'll die on me.\nDon't say that, Vale, he's just tired.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6095,20 +6095,19 @@
   },
   {
     "id": "u57-0218",
-    "es": "Como no tomes un descanso, el cuerpo te va a pasar la cuenta.",
-    "en": "If you don't take a break, your body is going to send you the bill. (to a friend)",
+    "es": "Como no tomes un descanso, el cuerpo te va a pasar factura.",
+    "en": "If you don't take a break, your body is going to make you pay. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:la-cuenta",
       "g:cause-result",
       "g:conditional-advanced",
       "g:gender-articles",
       "g:ir-a-plans",
       "g:subj-wanting",
-      "l:cuenta",
       "l:cuerpo",
       "l:descanso",
+      "l:factura",
       "l:ir",
       "l:pasar",
       "l:tomar",
@@ -6528,28 +6527,28 @@
   },
   {
     "id": "u57-0233",
-    "es": "Como te sientas culpable, recuerda que él te perdonó hace mucho.",
-    "en": "If you feel guilty, remember that he forgave you long ago. (to a friend)",
+    "es": "Como te sigas sintiendo culpable, te leo lo que escribió de ti.",
+    "en": "If you keep feeling guilty, I'll read you what he wrote about you. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cause-result",
       "g:conditional-advanced",
+      "g:gerund-ways",
+      "g:prep-pronouns",
       "g:present-er-ir",
-      "g:preterite-ar",
-      "g:reflexive-routine",
-      "g:stem-boot",
-      "g:subj-irregulars",
-      "g:that-clauses",
+      "g:preterite-er-ir",
+      "g:relatives-donde-lo-que",
+      "g:subj-wanting",
       "l:culpable",
-      "l:hacer",
-      "l:perdonar",
-      "l:recordar",
-      "l:sentirse",
+      "l:escribir",
+      "l:leer",
+      "l:seguir",
+      "l:sentir",
+      "p:comerse-todo",
       "p:como-me-entere",
       "p:me-te-nos-objects",
-      "p:quantifiers-basic",
-      "p:recordar-acordarse"
+      "p:seguir-gerundio"
     ],
     "targets": [
       "g:conditional-advanced"
@@ -8427,8 +8426,8 @@
   },
   {
     "id": "u57-0294",
-    "es": "Si bien respondo siempre que sí, hoy no estoy para nadie.",
-    "en": "Although I always say yes, today I'm not available for anyone.",
+    "es": "Si bien siempre digo que sí, hoy no estoy para nadie.",
+    "en": "Although I always say yes, today I'm not available to anyone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8436,12 +8435,13 @@
       "g:concessive-advanced",
       "g:estar-location-states",
       "g:negation-words",
-      "g:present-er-ir",
       "g:si-present",
+      "g:that-clauses",
+      "g:yo-irregular",
       "l:bien",
+      "l:decir",
       "l:estar",
       "l:hoy",
-      "l:responder",
       "l:siempre",
       "p:frequency-scale",
       "p:no-estar-para",
@@ -9183,29 +9183,29 @@
   },
   {
     "id": "u57-0321",
-    "es": "Aun cuando su voz quede grabada en mi memoria, quiero escuchar de nuevo la grabación.",
-    "en": "Even if his voice stays etched in my memory, I want to listen to the recording again.",
+    "es": "Aun cuando tengo su voz grabada en la memoria, quiero oír otra vez la grabación.",
+    "en": "Even though I have his voice etched in my memory, I want to hear the recording again.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:quiero",
+      "c:tengo",
       "g:concessive-advanced",
       "g:gender-articles",
       "g:stem-boot",
-      "g:subj-cuando-future",
-      "g:subj-wanting",
       "g:verb-infinitive",
-      "l:escuchar",
+      "g:yo-irregular",
       "l:grabación",
       "l:grabar",
       "l:memoria",
-      "l:nuevo",
-      "l:quedar",
+      "l:oír",
       "l:querer",
+      "l:tener",
+      "l:vez",
       "l:voz",
-      "p:possessives-basic",
-      "p:quedar-grabado",
-      "p:quedar-participio"
+      "p:cuando-basic",
+      "p:otro-no-article",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:concessive-advanced",
@@ -9937,7 +9937,7 @@
   },
   {
     "id": "u57-0348",
-    "es": "¿Aun cuando no tengas fuerzas, vas a ir?",
+    "es": "Aun cuando no tengas fuerzas, ¿vas a ir?",
     "en": "Even if you have no strength, are you going to go? (to a friend)",
     "accept": [],
     "acceptEn": [],
@@ -9961,7 +9961,7 @@
   },
   {
     "id": "u57-0349",
-    "es": "¿Aun cuando se moleste la familia, vas a contarlo todo?",
+    "es": "Aun cuando se moleste la familia, ¿vas a contarlo todo?",
     "en": "Even if the family gets angry, are you going to tell everything? (to a friend)",
     "accept": [],
     "acceptEn": [],
@@ -10015,23 +10015,21 @@
   },
   {
     "id": "u57-0351",
-    "es": "¿Cómo sigues sonriendo, si bien has perdido tanto?",
-    "en": "How do you keep smiling, although you have lost so much? (to a friend)",
+    "es": "¿Cómo sigues sonriendo, aun cuando perdiste tanto?",
+    "en": "How do you keep smiling, even though you lost so much? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
       "g:concessive-advanced",
       "g:gerund-ways",
-      "g:perfecto-experience",
+      "g:preterite-er-ir",
       "g:questions",
-      "g:si-present",
       "g:stem-e-i",
-      "l:bien",
       "l:cómo",
       "l:perder",
       "l:seguir",
       "l:sonreír",
+      "p:cuando-basic",
       "p:seguir-gerundio"
     ],
     "targets": [
@@ -10070,7 +10068,7 @@
   },
   {
     "id": "u57-0353",
-    "es": "¿Si bien ya sabías la verdad, por qué no dijiste nada?",
+    "es": "Si bien ya sabías la verdad, ¿por qué no dijiste nada?",
     "en": "Although you already knew the truth, why didn't you say anything? (to a friend)",
     "accept": [],
     "acceptEn": [],
@@ -10082,13 +10080,13 @@
       "g:negation-words",
       "g:pret-vs-imperfect",
       "g:preterite-irregular-strong",
-      "g:questions",
       "l:bien",
       "l:decir",
       "l:qué",
       "l:saber",
       "l:verdad",
       "p:por-que-no",
+      "p:prep-questions-basic",
       "p:saber-conocer"
     ],
     "targets": [
@@ -10562,7 +10560,7 @@
   },
   {
     "id": "u57-0368",
-    "es": "Había dormido poco toda la semana; de ahí que se le notara tan agotado.",
+    "es": "Había dormido poco toda la semana; de ahí que se le viera tan agotado.",
     "en": "He had slept little all week; hence he looked so exhausted.",
     "accept": [],
     "acceptEn": [],
@@ -10576,9 +10574,10 @@
       "l:agotado",
       "l:ahí",
       "l:dormir",
-      "l:notar",
       "l:semana",
+      "l:ver",
       "p:aqui-ahi-alla",
+      "p:encontrar-ver-adj",
       "p:quantifiers-basic",
       "p:todos-los-dias"
     ],
@@ -11029,8 +11028,8 @@
   },
   {
     "id": "u57-0383",
-    "es": "Hernando manejó carro durante cuarenta años; de ahí que lo conociera media ciudad.",
-    "en": "Hernando drove for forty years; hence half the city knew him.",
+    "es": "Hernando manejó taxi durante cincuenta años; de ahí que lo conociera media ciudad.",
+    "en": "Hernando drove a taxi for fifty years; hence half the city knew him.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11041,10 +11040,10 @@
       "g:that-clauses",
       "l:ahí",
       "l:año",
-      "l:carro",
       "l:ciudad",
       "l:conocer",
       "l:manejar",
+      "l:taxi",
       "p:aqui-ahi-alla",
       "p:durar-durante",
       "p:saber-conocer"
@@ -11222,23 +11221,29 @@
   },
   {
     "id": "u57-0389",
-    "es": "Había pasado demasiado tiempo sin hablar con Vale; de ahí que murmurara su nombre.",
-    "en": "He had gone too long without talking to Vale; hence he murmured her name.",
+    "es": "Vale llevaba meses sin venir; de ahí que Simón gritara su nombre al verla.",
+    "en": "Vale hadn't come for months; hence Simón shouted her name when he saw her.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:consecutive-advanced",
-      "g:imperfect-states",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:hace-que-desde",
+      "g:imperfect-habitual",
+      "g:imperfect-subj",
+      "g:object-pronoun-position",
       "g:prep-infinitive",
-      "g:quantifiers",
       "g:that-clauses",
       "l:ahí",
-      "l:hablar",
-      "l:murmurar",
+      "l:gritar",
+      "l:llevar",
+      "l:mes",
       "l:nombre",
-      "l:pasado",
-      "l:tiempo",
+      "l:venir",
+      "l:ver",
       "p:aqui-ahi-alla",
+      "p:llevar-sin-inf",
       "p:possessives-basic"
     ],
     "targets": [
@@ -11345,8 +11350,8 @@
   },
   {
     "id": "u57-0393",
-    "es": "La lluvia no cesó en toda la tarde; de ahí que el cortejo fuera lento.",
-    "en": "The rain did not stop all afternoon; hence the procession was slow.",
+    "es": "La lluvia no paró en toda la tarde; de ahí que el cortejo fuera lento.",
+    "en": "The rain didn't stop all afternoon; hence the procession was slow.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11355,10 +11360,10 @@
       "g:preterite-ar",
       "g:that-clauses",
       "l:ahí",
-      "l:cesar",
       "l:cortejo",
       "l:lento",
       "l:lluvia",
+      "l:parar",
       "l:tarde",
       "p:aqui-ahi-alla",
       "p:todos-los-dias"
@@ -11373,23 +11378,22 @@
   },
   {
     "id": "u57-0394",
-    "es": "Dejó una carta para cada uno; de ahí que todos queramos leerla en voz baja.",
-    "en": "He left a letter for each of us; hence we all want to read it quietly.",
+    "es": "Dejó una carta para cada uno; de ahí que nadie quiera leer la suya en voz alta.",
+    "en": "He left a letter for each of us; hence nobody wants to read theirs out loud.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:cada-cualquier",
       "g:consecutive-advanced",
-      "g:direct-objects",
       "g:gender-articles",
-      "g:object-pronoun-position",
+      "g:possessives-stressed",
       "g:preterite-ar",
       "g:subj-wanting",
       "g:that-clauses",
       "g:verb-infinitive",
       "l:ahí",
-      "l:bajo",
+      "l:alto",
       "l:carta",
       "l:dejar",
       "l:leer",
@@ -11436,25 +11440,24 @@
   },
   {
     "id": "u57-0396",
-    "es": "Cada taxista tocó el claxon tres veces; de ahí que se oyera en toda La Candelaria.",
-    "en": "Each taxi driver sounded the horn three times; hence it was heard all over La Candelaria.",
+    "es": "Eran trescientos taxis; de ahí que se oyeran en toda La Candelaria.",
+    "en": "There were three hundred taxis; hence they were heard all over La Candelaria.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:cada-cualquier",
       "g:consecutive-advanced",
       "g:gender-articles",
+      "g:imperfect-states",
       "g:imperfect-subj",
-      "g:preterite-ar",
-      "g:se-impersonal",
+      "g:passive-se",
+      "g:ser-identity",
       "g:that-clauses",
       "l:ahí",
-      "l:claxon",
       "l:oír",
-      "l:taxista",
-      "l:tocar",
-      "l:vez",
-      "p:aqui-ahi-alla"
+      "l:ser",
+      "l:taxi",
+      "p:aqui-ahi-alla",
+      "p:numbers-un-una"
     ],
     "targets": [
       "g:consecutive-advanced"
@@ -11653,15 +11656,14 @@
   },
   {
     "id": "u57-0403",
-    "es": "Nunca fue un hombre de lágrimas; de ahí que nos hayan sorprendido las de hoy.",
-    "en": "He was never a man of tears; hence today's have surprised us.",
+    "es": "Los taxistas no son hombres de lágrimas; de ahí que nos hayan sorprendido las de hoy.",
+    "en": "Taxi drivers aren't men of tears; hence today's took us by surprise.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:consecutive-advanced",
       "g:gender-articles",
       "g:gustar-full",
-      "g:preterite-ser-ir-hacer",
       "g:ser-identity",
       "g:subj-perfect",
       "g:that-clauses",
@@ -11671,8 +11673,8 @@
       "l:lágrima",
       "l:ser",
       "l:sorprender",
+      "l:taxista",
       "p:aqui-ahi-alla",
-      "p:frequency-scale",
       "p:los-de-la-camiseta"
     ],
     "targets": [
@@ -11745,7 +11747,7 @@
   {
     "id": "u57-0406",
     "es": "Vale es muy decidida; de ahí que se haya quedado.",
-    "en": "Vale is very determined; hence she has stayed.",
+    "en": "Vale is very determined; hence she stayed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11772,24 +11774,25 @@
   },
   {
     "id": "u57-0407",
-    "es": "Pasó la vida en la calle; de ahí que muriera con las manos de conductor.",
-    "en": "He spent his life on the street; hence he died with a driver's hands.",
+    "es": "Pasó cincuenta años en un taxi; de ahí que conociera cada calle de Bogotá.",
+    "en": "He spent fifty years in a taxi; hence he knew every street in Bogotá.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:cada-cualquier",
       "g:consecutive-advanced",
       "g:gender-articles",
       "g:imperfect-subj",
       "g:preterite-ar",
       "g:that-clauses",
       "l:ahí",
+      "l:año",
       "l:calle",
-      "l:conductor",
-      "l:mano",
-      "l:morir",
+      "l:conocer",
       "l:pasar",
-      "l:vida",
-      "p:aqui-ahi-alla"
+      "l:taxi",
+      "p:aqui-ahi-alla",
+      "p:saber-conocer"
     ],
     "targets": [
       "g:consecutive-advanced"
@@ -12171,23 +12174,28 @@
   },
   {
     "id": "u57-0420",
-    "es": "Despedimos a Hernando en casa. Por consiguiente, la familia pidió silencio.",
-    "en": "We said goodbye to Hernando at home. Consequently, the family asked for silence.",
+    "es": "La familia quería una despedida íntima. Por consiguiente, no se publicó la hora del entierro.",
+    "en": "The family wanted a private goodbye. Consequently, the time of the burial wasn't published.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-se",
       "g:consecutive-advanced",
       "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:passive-se",
       "g:por-para-1",
-      "g:present-ar",
-      "g:present-er-ir",
-      "g:preterite-spelling-stem",
-      "l:casa",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
       "l:consiguiente",
-      "l:despedir",
+      "l:despedida",
+      "l:entierro",
       "l:familia",
-      "l:pedir",
-      "l:silenciar"
+      "l:hora",
+      "l:publicar",
+      "l:querer",
+      "l:íntimo",
+      "p:queria-cortesia"
     ],
     "targets": [
       "g:consecutive-advanced"
@@ -12371,23 +12379,22 @@
   },
   {
     "id": "u57-0427",
-    "es": "Se agotó el tinto. Por consiguiente, pasamos a hervir agua para todos.",
-    "en": "The black coffee ran out. Consequently, we moved on to boiling water for everyone.",
+    "es": "Se acabó el tinto. Por consiguiente, Vale preparó agua de panela para todos.",
+    "en": "The black coffee ran out. Consequently, Vale made agua de panela for everyone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:consecutive-advanced",
       "g:gender-articles",
+      "g:passive-se",
       "g:por-para-1",
       "g:preterite-ar",
-      "g:reflexive-routine",
-      "l:agotarse",
+      "l:acabar",
       "l:agua",
       "l:consiguiente",
-      "l:hervir",
-      "l:pasar",
+      "l:panel",
+      "l:preparar",
       "l:tinto",
-      "p:agotarse",
       "p:para-inf"
     ],
     "targets": [
@@ -12429,23 +12436,22 @@
   },
   {
     "id": "u57-0429",
-    "es": "Hernando no dejó hijos. Por consiguiente, el café y el libro quedan a cargo de Tomás.",
-    "en": "Hernando left no children. Consequently, the café and the book are left in Tomás's care.",
+    "es": "Hernando dejó todo por escrito. Por consiguiente, Lucía no tuvo que adivinar nada.",
+    "en": "Hernando left everything in writing. Consequently, Lucía didn't have to guess anything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:consecutive-advanced",
-      "g:gender-articles",
+      "g:negation-words",
       "g:por-para-1",
-      "g:present-ar",
       "g:preterite-ar",
-      "l:café",
-      "l:cargo",
+      "g:preterite-irregular-strong",
+      "g:verb-infinitive",
+      "l:adivinar",
       "l:consiguiente",
       "l:dejar",
-      "l:hijos",
-      "l:libro",
-      "l:quedar"
+      "l:escribir",
+      "l:tener"
     ],
     "targets": [
       "g:consecutive-advanced"
@@ -12457,8 +12463,8 @@
   },
   {
     "id": "u57-0430",
-    "es": "Sonaron los claxon durante diez minutos. Por consiguiente, muchos vecinos salieron a mirar.",
-    "en": "The horns sounded for ten minutes. Consequently, many neighbours came out to look.",
+    "es": "El ruido de los taxis duró diez minutos. Por consiguiente, muchos vecinos salieron a mirar.",
+    "en": "The noise of the taxis lasted ten minutes. Consequently, many neighbours came out to look.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12467,12 +12473,13 @@
       "g:por-para-1",
       "g:preterite-ar",
       "g:preterite-er-ir",
-      "l:claxon",
       "l:consiguiente",
+      "l:durar",
       "l:minuto",
       "l:mirar",
+      "l:ruido",
       "l:salir",
-      "l:sonar",
+      "l:taxi",
       "l:vecino",
       "p:durar-durante",
       "p:quantifiers-basic"
@@ -12896,8 +12903,8 @@
   },
   {
     "id": "u57-0445",
-    "es": "Así pues, nadie podrá decir que no nos despedimos.",
-    "en": "Thus, nobody will be able to say that we did not say goodbye.",
+    "es": "Nadie podrá decir, así pues, que no nos despedimos.",
+    "en": "Nobody will be able to say, then, that we did not say goodbye.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12948,8 +12955,8 @@
   },
   {
     "id": "u57-0447",
-    "es": "Así pues, la última partida quedó sin terminar.",
-    "en": "So the last game was left unfinished.",
+    "es": "La última partida quedó, así pues, sin terminar.",
+    "en": "The last game was left, then, unfinished.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12995,8 +13002,8 @@
   },
   {
     "id": "u57-0449",
-    "es": "Así pues, hay que quedarse a ayudar a Tomás.",
-    "en": "So we must stay and help Tomás.",
+    "es": "Hay que quedarse, así pues, a ayudar a Tomás.",
+    "en": "We must stay, then, and help Tomás.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13020,8 +13027,8 @@
   },
   {
     "id": "u57-0450",
-    "es": "Así pues, Altamira tendrá que esperar.",
-    "en": "So Altamira will have to wait.",
+    "es": "Altamira, así pues, tendrá que esperar.",
+    "en": "Altamira, then, will have to wait.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13070,22 +13077,23 @@
   },
   {
     "id": "u57-0452",
-    "es": "Así pues, fue mejor que no lo supiera.",
-    "en": "So it was better that he did not know.",
+    "es": "Fue mejor, así pues, que no lo supiera.",
+    "en": "It was better, then, that he did not know.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:pues",
-      "g:comparatives",
       "g:consecutive-advanced",
       "g:direct-objects",
       "g:imperfect-subj",
       "g:preterite-ser-ir-hacer",
       "g:ser-identity",
-      "g:subj-relative",
+      "g:subj-past-triggers",
+      "g:that-clauses",
       "l:mejor",
       "l:saber",
       "l:ser",
+      "p:que-subj-repeated-order",
       "p:saber-conocer"
     ],
     "targets": [
@@ -13173,8 +13181,8 @@
   },
   {
     "id": "u57-0456",
-    "es": "Así pues, Tomás tendrá que aprender a vivir sin su rival.",
-    "en": "So Tomás will have to learn to live without his rival.",
+    "es": "Tomás tendrá que aprender, así pues, a vivir sin su rival.",
+    "en": "Tomás will have to learn, then, to live without his rival.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13222,19 +13230,17 @@
   },
   {
     "id": "u57-0458",
-    "es": "Así pues, nos despedimos de Hernando con claxon y flores.",
-    "en": "So we said goodbye to Hernando with horns and flowers.",
+    "es": "Así pues, despedimos a Hernando con ruido y con flores.",
+    "en": "So we said goodbye to Hernando with noise and with flowers.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:pues",
       "g:consecutive-advanced",
       "g:present-er-ir",
-      "g:reflexive-routine",
-      "l:claxon",
-      "l:despedirse",
+      "l:despedir",
       "l:flor",
-      "p:se-reciproco"
+      "l:ruido"
     ],
     "targets": [
       "g:consecutive-advanced"
@@ -13303,8 +13309,8 @@
   },
   {
     "id": "u57-0461",
-    "es": "Así pues, no hay motivo para sentirse culpable.",
-    "en": "So there is no reason to feel guilty.",
+    "es": "No hay motivo, así pues, para sentirse culpable.",
+    "en": "There is no reason, then, to feel guilty.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13403,8 +13409,8 @@
   },
   {
     "id": "u57-0465",
-    "es": "Así pues, el duelo apenas empieza.",
-    "en": "So the mourning is only just beginning.",
+    "es": "El duelo, así pues, apenas empieza.",
+    "en": "The mourning, then, is only just beginning.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13452,8 +13458,8 @@
   },
   {
     "id": "u57-0467",
-    "es": "Así pues, el luto durará lo que tenga que durar.",
-    "en": "So the mourning will last as long as it has to.",
+    "es": "El luto durará, así pues, lo que tenga que durar.",
+    "en": "The mourning will last, then, as long as it has to.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13468,7 +13474,8 @@
       "l:durar",
       "l:luto",
       "l:tener",
-      "p:durar-durante"
+      "p:durar-durante",
+      "p:lo-que-cosa-que"
     ],
     "targets": [
       "g:consecutive-advanced",
@@ -13481,7 +13488,7 @@
   },
   {
     "id": "u57-0468",
-    "es": "¿Así pues, ya no hay nada que hacer?",
+    "es": "Así pues, ¿ya no hay nada que hacer?",
     "en": "So, is there nothing left to do?",
     "accept": [],
     "acceptEn": [],
@@ -13506,7 +13513,7 @@
   },
   {
     "id": "u57-0469",
-    "es": "¿Por consiguiente, lo que se firmó ayer ya no vale?",
+    "es": "Por consiguiente, ¿lo que se firmó ayer ya no vale?",
     "en": "Consequently, what was signed yesterday is no longer valid?",
     "accept": [],
     "acceptEn": [],
@@ -13535,24 +13542,24 @@
   },
   {
     "id": "u57-0470",
-    "es": "¿De ahí que hoy el barrio huela distinto, o me lo parece?",
-    "en": "Hence the neighbourhood smells different today, or is it just me?",
+    "es": "Vale cocinó toda la noche; ¿de ahí que la cuadra huela distinto?",
+    "en": "Vale cooked all night; is that why the block smells different?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:consecutive-advanced",
       "g:gender-articles",
-      "g:parecer-quedar",
-      "g:present-er-ir",
+      "g:preterite-ar",
       "g:subj-wanting",
       "g:that-clauses",
       "l:ahí",
-      "l:barrio",
+      "l:cocinar",
+      "l:cuadra",
       "l:distinto",
-      "l:hoy",
+      "l:noche",
       "l:oler",
-      "l:parecer",
-      "p:aqui-ahi-alla"
+      "p:aqui-ahi-alla",
+      "p:todos-los-dias"
     ],
     "targets": [
       "g:consecutive-advanced"
@@ -13564,7 +13571,7 @@
   },
   {
     "id": "u57-0471",
-    "es": "¿Así pues, vas a quedarte en Bogotá para siempre?",
+    "es": "Así pues, ¿vas a quedarte en Bogotá para siempre?",
     "en": "So, are you going to stay in Bogotá for good? (to a friend)",
     "accept": [],
     "acceptEn": [],
@@ -13751,7 +13758,7 @@
   },
   {
     "id": "u57-0478",
-    "es": "Así pues, ¿lo despedimos con aplausos?\nCon aplausos y con claxon.",
+    "es": "Así pues, ¿lo despedimos con aplausos?\nCon aplausos y con pitos.",
     "en": "So, do we see him off with applause?\nWith applause and with horns.",
     "accept": [],
     "acceptEn": [],
@@ -13761,8 +13768,8 @@
       "g:direct-objects",
       "g:present-er-ir",
       "l:aplauso",
-      "l:claxon",
-      "l:despedir"
+      "l:despedir",
+      "l:pito"
     ],
     "targets": [
       "g:consecutive-advanced"
@@ -13801,22 +13808,26 @@
   },
   {
     "id": "u57-0480",
-    "es": "Hernando siempre decía que de cualquier hoyo se sale adelante.",
-    "en": "Hernando always said that you can pull through any hole.",
+    "es": "Hernando siempre decía que uno sale adelante de cualquier cosa, menos de un trancón en la Séptima.",
+    "en": "Hernando always said you can pull through anything except a traffic jam on Séptima.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
+      "g:gender-articles",
       "g:imperfect-habitual",
       "g:present-er-ir",
-      "g:se-impersonal",
       "g:that-clauses",
       "l:adelante",
+      "l:cosa",
       "l:decir",
-      "l:hoyo",
       "l:salir",
       "l:siempre",
+      "l:trancón",
+      "l:unir",
       "p:frequency-scale",
+      "p:generic-tu-uno",
+      "p:mas-de-number",
       "p:salir-adelante"
     ],
     "targets": [
@@ -14495,23 +14506,24 @@
   },
   {
     "id": "u57-0505",
-    "es": "Parece mentira que sigan sonando los claxon a esta hora.",
-    "en": "It's hard to believe the horns are still sounding at this hour.",
+    "es": "Parece mentira que se sigan oyendo los pitos a esta hora.",
+    "en": "It's hard to believe the horns can still be heard at this hour.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:gerund-ways",
+      "g:passive-se",
       "g:present-er-ir",
       "g:subj-value",
       "g:subj-wanting",
       "g:that-clauses",
-      "l:claxon",
       "l:hora",
       "l:mentira",
+      "l:oír",
       "l:parecer",
+      "l:pito",
       "l:seguir",
-      "l:sonar",
       "p:demonstratives-basic",
       "p:parece-mentira-que",
       "p:seguir-gerundio"
@@ -14774,7 +14786,7 @@
   },
   {
     "id": "u57-0515",
-    "es": "Es increíble que todavía huela a su colonia en el café.",
+    "es": "Es increíble que el café todavía huela a su colonia.",
     "en": "It's incredible that the café still smells of his cologne.",
     "accept": [],
     "acceptEn": [],
@@ -14859,7 +14871,7 @@
   },
   {
     "id": "u57-0518",
-    "es": "¿Parece mentira que ya no esté, verdad?",
+    "es": "Parece mentira que ya no esté, ¿verdad?",
     "en": "It's hard to believe he's no longer here, isn't it?",
     "accept": [],
     "acceptEn": [],
@@ -14913,16 +14925,17 @@
   },
   {
     "id": "u57-0520",
-    "es": "¿No te parece mentira que hace una semana todavía bromeaba?",
+    "es": "¿No te parece mentira que hace una semana todavía bromeara?",
     "en": "Doesn't it seem unreal to you that a week ago he was still joking? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:hace-ago",
-      "g:imperfect-habitual",
+      "g:imperfect-subj",
       "g:parecer-quedar",
       "g:present-er-ir",
+      "g:subj-past-triggers",
       "g:that-clauses",
       "l:bromear",
       "l:hacer",
@@ -15005,12 +15018,15 @@
   },
   {
     "id": "u57-0523",
-    "es": "¡Parece mentira que sigas aquí, Vale!\nParece mentira para mí también.",
+    "es": "¡Parece mentira que sigas aquí, Vale!\nA mí también me parece mentira.",
     "en": "I can't believe you're still here, Vale!\nI can't believe it either.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:a-mi-tambien",
       "g:commands-tu",
+      "g:gustar-full",
+      "g:parecer-quedar",
       "g:prep-pronouns",
       "g:present-er-ir",
       "g:subj-value",
@@ -15021,7 +15037,6 @@
       "l:parecer",
       "l:seguir",
       "p:aqui-ahi-alla",
-      "p:para-inf",
       "p:parece-mentira-que"
     ],
     "targets": [
@@ -15913,7 +15928,7 @@
   {
     "id": "u57-0556",
     "es": "Me sorprende lo bien que te lo tomas.\nNo creas, por dentro estoy hecho pedazos.",
-    "en": "It surprises me how well you're taking it.\nDon't think so, inside I'm in pieces.",
+    "en": "It surprises me how well you're taking it.\nDon't believe it, inside I'm in pieces.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16181,7 +16196,7 @@
   },
   {
     "id": "u57-0565",
-    "es": "Se me puso la piel de gallina cuando empezaron los claxon.",
+    "es": "Se me puso la piel de gallina cuando empezaron los pitos.",
     "en": "I got goosebumps when the horns started.",
     "accept": [],
     "acceptEn": [],
@@ -16190,10 +16205,10 @@
       "g:preterite-ar",
       "g:preterite-irregular-strong",
       "g:se-accidental",
-      "l:claxon",
       "l:empezar",
       "l:gallina",
       "l:piel",
+      "l:pito",
       "l:ponerse",
       "p:cuando-basic",
       "p:se-me-body",
@@ -16426,8 +16441,8 @@
   },
   {
     "id": "u57-0574",
-    "es": "Se le hizo un nudo en la garganta al abrir la puerta.",
-    "en": "He got a lump in his throat when he opened the door.",
+    "es": "A Tomás se le hizo un nudo en la garganta al abrir la puerta del café.",
+    "en": "Tomás got a lump in his throat when he opened the café door.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16436,6 +16451,7 @@
       "g:preterite-ser-ir-hacer",
       "g:se-accidental",
       "l:abrir",
+      "l:café",
       "l:garganta",
       "l:hacerse",
       "l:nudo",
@@ -16790,7 +16806,7 @@
   },
   {
     "id": "u57-0587",
-    "es": "Se me puso la piel de gallina.\nA mí también, con tanto claxon.",
+    "es": "Se me puso la piel de gallina.\nA mí también, con tanto pito.",
     "en": "I got goosebumps.\nMe too, with all that honking.",
     "accept": [],
     "acceptEn": [],
@@ -16800,9 +16816,9 @@
       "g:prep-pronouns",
       "g:preterite-irregular-strong",
       "g:se-accidental",
-      "l:claxon",
       "l:gallina",
       "l:piel",
+      "l:pito",
       "l:ponerse",
       "p:se-me-body",
       "p:se-me-involuntary"
@@ -17896,7 +17912,7 @@
   {
     "id": "u57-0628",
     "es": "Pregúntale a Vale si se queda. El no ya lo tienes.",
-    "en": "Ask Vale if she is staying. You already have the no.",
+    "en": "Ask Vale if she is staying. The worst she can say is no.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17926,7 +17942,7 @@
   {
     "id": "u57-0629",
     "es": "Habla con el banco, que el no ya lo tienes.",
-    "en": "Talk to the bank, you already have the no.",
+    "en": "Talk to the bank, you've got nothing to lose.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17951,7 +17967,7 @@
   {
     "id": "u57-0630",
     "es": "Tú pídele la renta más baja al dueño, el no ya lo tienes.",
-    "en": "You ask the landlord for a lower rent, you already have the no.",
+    "en": "You ask the landlord for a lower rent, you've got nothing to lose.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17984,7 +18000,7 @@
   {
     "id": "u57-0631",
     "es": "Escríbele a la editorial; total, el no ya lo tienes.",
-    "en": "Write to the publisher; after all, you already have the no.",
+    "en": "Write to the publisher; after all, the worst they can say is no.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18012,7 +18028,7 @@
   {
     "id": "u57-0632",
     "es": "Si te da miedo preguntarle, recuerda que el no ya lo tienes.",
-    "en": "If you're afraid to ask him, remember that you already have the no.",
+    "en": "If you're afraid to ask him, remember that the worst he can say is no.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18047,7 +18063,7 @@
   {
     "id": "u57-0633",
     "es": "Invítala al homenaje, que el no ya lo tienes.",
-    "en": "Invite her to the tribute, you already have the no.",
+    "en": "Invite her to the tribute, the worst she can say is no.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18075,7 +18091,7 @@
   {
     "id": "u57-0634",
     "es": "Pide el último tinto de Hernando, que el no ya lo tienes.",
-    "en": "Ask for Hernando's last black coffee, you already have the no.",
+    "en": "Ask for Hernando's last black coffee, you've got nothing to lose.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18100,7 +18116,7 @@
   {
     "id": "u57-0635",
     "es": "Hazle la pregunta al abogado: el no ya lo tienes.",
-    "en": "Ask the lawyer the question: you already have the no.",
+    "en": "Ask the lawyer the question: the worst he can say is no.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18128,7 +18144,7 @@
   {
     "id": "u57-0636",
     "es": "No me atrevo a llamarla.\nLlámala, el no ya lo tienes.",
-    "en": "I don't dare call her.\nCall her, you already have the no.",
+    "en": "I don't dare call her.\nCall her, the worst she can say is no.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18157,7 +18173,7 @@
   {
     "id": "u57-0637",
     "es": "¿Y si me dice que no?\nPues el no ya lo tienes, Tomás.",
-    "en": "And if she says no?\nWell, you already have the no, Tomás.",
+    "en": "And if she says no?\nWell, you've got nothing to lose, Tomás.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19556,22 +19572,19 @@
   },
   {
     "id": "u57-0692",
-    "es": "Hernando añoraba su taxi, aunque lo vendió hace años.",
-    "en": "Hernando longed for his taxi, even though he sold it years ago.",
+    "es": "Hernando añoraba manejar su taxi, aunque ya se lo había alquilado a otro.",
+    "en": "Hernando longed to drive his taxi, even though he had already rented it out to someone else.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:aunque-indicative",
-      "g:direct-objects",
+      "g:double-pronouns",
       "g:imperfect-habitual",
-      "g:present-er-ir",
-      "g:pret-vs-imperfect",
-      "g:preterite-er-ir",
-      "l:año",
+      "g:pluperfect",
+      "l:alquilar",
       "l:añorar",
-      "l:hacer",
+      "l:manejar",
       "l:taxi",
-      "l:vender",
+      "p:otro-no-article",
       "p:possessives-basic"
     ],
     "targets": [
@@ -20244,19 +20257,18 @@
   },
   {
     "id": "u57-0718",
-    "es": "Vale se arrepiente de haberse ido de Bogotá tan joven.",
-    "en": "Vale regrets having left Bogotá so young.",
+    "es": "Vale se arrepiente de no haber venido antes a Bogotá.",
+    "en": "Vale regrets not having come to Bogotá sooner.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:object-pronoun-position",
+      "g:infinitive-perfect",
       "g:reflexive-routine",
-      "g:se-impersonal",
       "g:stem-boot",
+      "l:antes",
       "l:arrepentirse",
       "l:haber",
-      "l:ir",
-      "l:joven",
+      "l:venir",
       "p:arrepentirse-de",
       "p:arrepentirse-de-haber"
     ],
@@ -20327,23 +20339,20 @@
   },
   {
     "id": "u57-0721",
-    "es": "Se arrepintió de haber vendido el taxi sin pensarlo.",
-    "en": "He regretted having sold the taxi without thinking.",
+    "es": "Se arrepintió de haber dejado el taxi tan tarde.",
+    "en": "He regretted having given up the taxi so late.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
       "g:gender-articles",
       "g:infinitive-perfect",
-      "g:object-pronoun-position",
-      "g:prep-infinitive",
       "g:preterite-spelling-stem",
       "g:reflexive-routine",
       "l:arrepentirse",
+      "l:dejar",
       "l:haber",
-      "l:pensar",
+      "l:tarde",
       "l:taxi",
-      "l:vender",
       "p:arrepentirse-de",
       "p:arrepentirse-de-haber"
     ],
@@ -21132,23 +21141,26 @@
   },
   {
     "id": "u57-0751",
-    "es": "Tendría que haberlo acompañado.\nYa has sufrido bastante.",
-    "en": "I should have gone with him.\nYou've suffered enough.",
+    "es": "Tendría que haberlo acompañado.\nY él te habría mandado para la casa.",
+    "en": "I should have gone with him.\nAnd he would have sent you home.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
+      "g:conditional-perfect",
       "g:direct-objects",
+      "g:gender-articles",
       "g:object-pronoun-position",
-      "g:perfecto-experience",
-      "g:quantifiers",
       "g:verb-infinitive",
       "l:acompañar",
+      "l:casa",
       "l:haber",
-      "l:sufrir",
+      "l:mandar",
       "l:tener",
       "p:arrepentirse-de-haber",
+      "p:me-te-nos-objects",
       "p:no-deberias-haberlo-hecho",
+      "p:para-inf",
       "p:tendrias-que"
     ],
     "targets": [
@@ -21308,7 +21320,7 @@
   {
     "id": "u57-0757",
     "es": "Si volviera a nacer, aprendería a decir las cosas a tiempo.",
-    "en": "If I had my life over, I'd learn to say things on time.",
+    "en": "If I had my life over, I'd learn to say things in time.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21476,24 +21488,25 @@
   },
   {
     "id": "u57-0763",
-    "es": "Si pudiera devolver el tiempo, le diría a Hernando que ganó la última partida.",
-    "en": "If I could turn back time, I'd tell Hernando that he won the last game.",
+    "es": "Si pudiera devolver el tiempo, le diría a Hernando que lo dejaba ganar.",
+    "en": "If I could turn back time, I'd tell Hernando that I was letting him win.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
+      "g:direct-objects",
       "g:gender-articles",
+      "g:imperfect-habitual",
       "g:imperfect-subj",
       "g:indirect-objects",
       "g:le-doubling",
-      "g:preterite-ar",
       "g:relative-que",
       "g:si-hypothetical",
       "g:verb-infinitive",
       "l:decir",
+      "l:dejar",
       "l:devolver",
       "l:ganar",
-      "l:partida",
       "l:poder",
       "l:tiempo",
       "p:si-volviera-a-nacer"
@@ -21508,8 +21521,8 @@
   },
   {
     "id": "u57-0764",
-    "es": "Si pudiera devolver el tiempo, me quedaría en Toronto una semana más con mi abuela.",
-    "en": "If I could turn back time, I'd stay in Toronto one more week with my grandmother.",
+    "es": "Si pudiera devolver el tiempo, me quedaría en Bogotá una semana más con mi abuela.",
+    "en": "If I could turn back time, I'd stay in Bogotá one more week with my grandmother.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21621,29 +21634,26 @@
   },
   {
     "id": "u57-0768",
-    "es": "Si pudiera volver al pasado, compraría un reloj para cada hora que perdimos.",
-    "en": "If I could go back to the past, I'd buy a watch for every hour we lost.",
+    "es": "Si pudiera volver al pasado, le pediría a Rosa sus recetas.",
+    "en": "If I could go back to the past, I'd ask Rosa for her recipes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:cada-cualquier",
       "g:conditional",
       "g:gender-articles",
       "g:imperfect-subj",
-      "g:preterite-er-ir",
-      "g:relative-que",
+      "g:indirect-objects",
+      "g:le-doubling",
       "g:si-hypothetical",
       "g:verb-infinitive",
-      "l:comprar",
-      "l:hora",
       "l:pasado",
-      "l:perder",
+      "l:pedir",
       "l:poder",
-      "l:reloj",
+      "l:receta",
       "l:volver",
-      "p:para-inf",
-      "p:si-volviera-a-nacer",
-      "p:veces-al"
+      "p:possessives-basic",
+      "p:preguntar-pedir",
+      "p:si-volviera-a-nacer"
     ],
     "targets": [
       "p:si-volviera-a-nacer"
@@ -21796,23 +21806,24 @@
   },
   {
     "id": "u57-0774",
-    "es": "Si tuviera otra chance, no me iría de Medellín sin despedirme.",
-    "en": "If I had another chance, I wouldn't leave Medellín without saying goodbye.",
+    "es": "Si pudiera repetir ese día, no me iría de Medellín sin despedirme.",
+    "en": "If I could live that day again, I wouldn't leave Medellín without saying goodbye.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
+      "g:demonstratives",
       "g:imperfect-subj",
       "g:object-pronoun-position",
       "g:prep-infinitive",
       "g:reflexive-routine",
       "g:si-hypothetical",
-      "l:chance",
+      "g:verb-infinitive",
       "l:despedir",
+      "l:día",
       "l:irse",
-      "l:tener",
-      "p:otro-no-article",
-      "p:si-volviera-a-nacer"
+      "l:poder",
+      "l:repetir"
     ],
     "targets": [
       "p:si-volviera-a-nacer"
@@ -21964,7 +21975,7 @@
   },
   {
     "id": "u57-0780",
-    "es": "Si pudiera devolver el tiempo, ¿qué cambiarías?",
+    "es": "Si pudieras devolver el tiempo, ¿qué cambiarías?",
     "en": "If you could turn back time, what would you change? (to a friend)",
     "accept": [],
     "acceptEn": [],
@@ -21993,7 +22004,7 @@
   {
     "id": "u57-0781",
     "es": "Si volvieras a nacer, ¿serías otra vez taxista?",
-    "en": "If you were born again, would you be a taxi driver again?",
+    "en": "If you were born again, would you be a taxi driver again? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22077,7 +22088,7 @@
   },
   {
     "id": "u57-0784",
-    "es": "¿Si volviera a nacer, estudiaría lo mismo?",
+    "es": "Si volviera a nacer, ¿estudiaría lo mismo?",
     "en": "If I had my life over, would I study the same thing?",
     "accept": [],
     "acceptEn": [],
@@ -23799,23 +23810,28 @@
   },
   {
     "id": "u57-0847",
-    "es": "Doña Marta, quisiera expresarle mi más sentido pésame y ofrecerle mi ayuda.",
-    "en": "Doña Marta, I would like to express my deepest condolences and offer you my help.",
+    "es": "Doña Marta, quisiera expresarle mi más sentido pésame; cuente conmigo para lo que necesite.",
+    "en": "Doña Marta, I would like to express my deepest condolences; count on me for whatever you need.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:mi-mas-sentido-pesame",
       "c:sentido-pesame",
-      "g:indirect-objects",
-      "g:object-pronoun-position",
-      "l:ayuda",
+      "g:commands-usted",
+      "g:prep-pronouns",
+      "g:relatives-donde-lo-que",
+      "g:subj-relative",
+      "g:subj-wanting",
+      "l:contar",
       "l:expresar",
-      "l:ofrecer",
+      "l:necesitar",
       "l:pésame",
       "l:querer",
       "l:sentir",
+      "p:contar-con",
+      "p:contar-dos-sentidos",
       "p:don-dona-nombre",
-      "p:possessives-basic",
+      "p:para-inf",
       "p:senor-don-article"
     ],
     "targets": [
@@ -23855,22 +23871,23 @@
   },
   {
     "id": "u57-0849",
-    "es": "Quisiera expresarle mi más sentido pésame por una pérdida tan grande para el barrio.",
-    "en": "I would like to express my deepest condolences for a loss so great for the neighbourhood.",
+    "es": "Es una pérdida enorme para el barrio. Quisiera expresarle mi más sentido pésame.",
+    "en": "It's an enormous loss for the neighbourhood. I would like to express my deepest condolences.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:mi-mas-sentido-pesame",
       "c:sentido-pesame",
       "g:gender-articles",
-      "g:por-para-1",
+      "g:ser-identity",
       "l:barrio",
+      "l:enorme",
       "l:expresar",
-      "l:grande",
       "l:pérdida",
       "l:pésame",
       "l:querer",
       "l:sentir",
+      "l:ser",
       "p:para-inf"
     ],
     "targets": [
@@ -23883,8 +23900,8 @@
   },
   {
     "id": "u57-0850",
-    "es": "Con respeto, quisiera expresarle mi más sentido pésame a usted y a los suyos.",
-    "en": "With respect, I would like to express my deepest condolences to you and yours.",
+    "es": "Con todo respeto, quisiera expresarle mi más sentido pésame a usted y a los suyos.",
+    "en": "With all respect, I would like to express my deepest condolences to you and yours.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23892,11 +23909,13 @@
       "c:sentido-pesame",
       "g:gender-articles",
       "g:possessives-stressed",
+      "g:present-ar",
       "l:expresar",
       "l:pésame",
       "l:querer",
-      "l:respeto",
-      "l:sentir"
+      "l:respetar",
+      "l:sentir",
+      "p:sin-animo-de"
     ],
     "targets": [
       "c:mi-mas-sentido-pesame"
@@ -23908,8 +23927,8 @@
   },
   {
     "id": "u57-0851",
-    "es": "Vale, quisiera expresarle mi más sentido pésame, aunque sé que no basta.",
-    "en": "Vale, I would like to express my deepest condolences to you, although I know it is not enough.",
+    "es": "Lucía, quisiera expresarle mi más sentido pésame, aunque sé que no basta.",
+    "en": "Lucía, I would like to express my deepest condolences to you, although I know it isn't enough.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23921,6 +23940,7 @@
       "g:yo-irregular",
       "l:bastar",
       "l:expresar",
+      "l:lucía",
       "l:pésame",
       "l:querer",
       "l:saber",
@@ -23937,27 +23957,24 @@
   },
   {
     "id": "u57-0852",
-    "es": "Mi jefe me pidió que dijera: quisiera expresarle mi más sentido pésame.",
-    "en": "My boss asked me to say: I would like to express my deepest condolences.",
+    "es": "Vengo de parte de la editorial: quisiera expresarle mi más sentido pésame.",
+    "en": "I've come on behalf of the publisher: I would like to express my deepest condolences.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hago-salgo-vengo",
       "c:mi-mas-sentido-pesame",
       "c:sentido-pesame",
-      "g:imperfect-subj",
-      "g:preterite-spelling-stem",
-      "g:subj-past-triggers",
-      "g:that-clauses",
-      "l:decir",
+      "g:gender-articles",
+      "g:yo-irregular",
+      "l:editorial",
       "l:expresar",
-      "l:jefe",
-      "l:pedir",
+      "l:parte",
       "l:pésame",
       "l:querer",
       "l:sentir",
-      "p:me-te-nos-objects",
-      "p:possessives-basic",
-      "p:preguntar-pedir"
+      "l:venir",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "c:mi-mas-sentido-pesame"
@@ -24001,26 +24018,30 @@
   },
   {
     "id": "u57-0854",
-    "es": "Al llegar a la puerta, quisiera expresarle mi más sentido pésame, pensó Mariana, pero no lo dijo.",
-    "en": "At the door, \"I would like to express my deepest condolences,\" Mariana thought, but did not say it.",
+    "es": "En la puerta, Mariana repitió en voz baja: «Quisiera expresarle mi más sentido pésame». Después entró.",
+    "en": "At the door, Mariana repeated under her breath: \"I would like to express my deepest condolences.\" Then she went in.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:mi-mas-sentido-pesame",
       "c:sentido-pesame",
-      "g:direct-objects",
+      "g:adjective-agreement",
       "g:gender-articles",
-      "g:prep-infinitive",
       "g:preterite-ar",
-      "g:preterite-irregular-strong",
-      "l:decir",
+      "g:preterite-spelling-stem",
+      "l:bajo",
+      "l:después",
+      "l:entrar",
       "l:expresar",
-      "l:llegar",
-      "l:pensar",
       "l:puerta",
       "l:pésame",
       "l:querer",
-      "l:sentir"
+      "l:repetir",
+      "l:sentir",
+      "l:voz",
+      "p:entonces-de-repente",
+      "p:time-sequence-basic",
+      "p:ver-oir-bien-mal"
     ],
     "targets": [
       "c:mi-mas-sentido-pesame"
@@ -24285,14 +24306,19 @@
   },
   {
     "id": "u57-0865",
-    "es": "¿Y ahora qué?\nQue sea lo que Dios quiera.",
-    "en": "And now what?\nWhatever will be, will be.",
+    "es": "¿Y ahora qué hacemos?\nEsperar, y que sea lo que Dios quiera.",
+    "en": "And now what do we do?\nWait, and whatever will be, will be.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:que-sea-lo-que-dios-quiera",
+      "g:present-er-ir",
       "g:questions",
+      "g:subj-wishes",
+      "g:verb-infinitive",
       "l:ahora",
+      "l:esperar",
+      "l:hacer",
       "l:querer",
       "l:qué",
       "l:ser"
@@ -24308,7 +24334,7 @@
   {
     "id": "u57-0866",
     "es": "¿Ya enviaste el correo?\nSí. Ahora que sea lo que Dios quiera.",
-    "en": "Did you send the email?\nYes, whatever will be, will be.",
+    "en": "Did you send the email?\nYes. Now, whatever will be, will be.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -25104,7 +25130,7 @@
   },
   {
     "id": "u57-0898",
-    "es": "Perdió una partida, ¿y qué? No te lo tomes a pecho.",
+    "es": "Perdiste una partida, ¿y qué? No te lo tomes a pecho.",
     "en": "You lost a game, so what? Don't take it to heart.",
     "accept": [],
     "acceptEn": [],
@@ -26462,18 +26488,18 @@
   },
   {
     "id": "u57-0951",
-    "es": "El quiosco de prensa expuso su foto en la portada.",
-    "en": "The newspaper kiosk displayed his photo on the front page.",
+    "es": "En el quiosco, todos los periódicos tenían su foto en la portada.",
+    "en": "At the kiosk, every newspaper had his photo on the front page.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-irregular-strong",
-      "l:exponer",
+      "g:imperfect-states",
       "l:foto",
+      "l:periódico",
       "l:portada",
-      "l:prensa",
       "l:quiosco",
+      "l:tener",
       "p:possessives-basic"
     ],
     "targets": [
@@ -26486,17 +26512,18 @@
   },
   {
     "id": "u57-0952",
-    "es": "Hernando recogía el diario en el quiosco antes de abrir.",
-    "en": "Hernando picked up the paper at the kiosk before opening.",
+    "es": "Hernando recogía el periódico en el quiosco antes de llegar al café.",
+    "en": "Hernando picked up the paper at the kiosk before getting to the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-habitual",
       "g:prep-infinitive",
-      "l:abrir",
       "l:antes",
-      "l:diario",
+      "l:café",
+      "l:llegar",
+      "l:periódico",
       "l:quiosco",
       "l:recoger",
       "p:entregar-recoger"
@@ -26578,11 +26605,12 @@
   },
   {
     "id": "u57-0956",
-    "es": "Vale estaba comprometida con otro restaurante, pero lo dejó.",
-    "en": "Vale was committed to another restaurant, but she left it.",
+    "es": "Vale estaba muy comprometida con su trabajo en Medellín, pero lo dejó.",
+    "en": "Vale was very committed to her job in Medellín, but she left it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:trabajo-en",
       "g:direct-objects",
       "g:estar-participle",
       "g:imperfect-states",
@@ -26591,8 +26619,9 @@
       "l:comprometerse",
       "l:dejar",
       "l:estar",
-      "l:restaurante",
-      "p:otro-no-article"
+      "l:trabajo",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
     ],
     "targets": [],
     "kind": "statement",
@@ -26659,25 +26688,24 @@
   },
   {
     "id": "u57-0959",
-    "es": "No me extraña que Vale se haya quedado: aquí tiene su sitio.",
-    "en": "No wonder Vale has stayed: she has her place here.",
+    "es": "No me extraña que Vale se haya quedado: aquí está su lugar.",
+    "en": "No wonder Vale stayed: her place is here.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:aqui-tiene",
-      "c:tienes",
+      "g:estar-location-states",
       "g:gustar-full",
       "g:present-ar",
       "g:reflexive-routine",
-      "g:stem-boot",
       "g:subj-emotion",
       "g:subj-perfect",
       "g:that-clauses",
       "l:aquí",
+      "l:estar",
       "l:extrañar",
+      "l:lugar",
       "l:quedar",
-      "l:sitio",
-      "l:tener",
+      "p:aqui-ahi-alla",
       "p:me-extrana-que",
       "p:me-sorprende-que",
       "p:no-me-extrana-que",
@@ -28782,8 +28810,8 @@
   },
   {
     "id": "u57-1034",
-    "es": "¡Quién tuviera otro carro para llegar más rápido!",
-    "en": "If only I had another car to get there faster!",
+    "es": "¡Quién tuviera carro para llegar más rápido!",
+    "en": "If only I had a car to get there faster!",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28795,7 +28823,6 @@
       "l:rápido",
       "l:tener",
       "p:exclamations-basic",
-      "p:otro-no-article",
       "p:para-inf",
       "p:para-inf-purpose",
       "p:question-word-order",
@@ -28941,26 +28968,26 @@
   },
   {
     "id": "u57-1040",
-    "es": "¿Quién tuviera una hora más con él?",
-    "en": "If only we had one more hour with him?",
+    "es": "¡Quién tuviera una hora más con él!",
+    "en": "If only I had one more hour with him!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:con-el-ella",
       "g:gender-articles",
       "g:imperfect-subj",
-      "g:questions",
       "g:wish-exclamatives",
       "l:hora",
       "l:quién",
       "l:tener",
+      "p:exclamations-basic",
       "p:question-word-order",
       "p:quien-tuviera"
     ],
     "targets": [
       "p:quien-tuviera"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u57",
     "theme": "no me extraña, hasta la coronilla, quién tuviera",
     "source": "gen"
@@ -29248,7 +29275,7 @@
   },
   {
     "id": "u57-1051",
-    "es": "Estaba por irme a dormir cuando oí los claxon.",
+    "es": "Estaba por irme a dormir cuando oí los pitos.",
     "en": "I was about to go to bed when I heard the horns.",
     "accept": [],
     "acceptEn": [],
@@ -29260,11 +29287,11 @@
       "g:por-para-1",
       "g:pret-vs-imperfect",
       "g:preterite-er-ir",
-      "l:claxon",
       "l:dormir",
       "l:estar",
       "l:irse",
       "l:oír",
+      "l:pito",
       "p:cuando-basic",
       "p:estar-por"
     ],
@@ -29328,8 +29355,8 @@
   },
   {
     "id": "u57-1054",
-    "es": "Hernando estaba por dejar el café a Tomás cuando le dieron la noticia del médico.",
-    "en": "Hernando was about to leave the café to Tomás when the doctor gave him the news.",
+    "es": "Hernando estaba por terminar el libro cuando le dieron la noticia del médico.",
+    "en": "Hernando was about to finish the book when the doctor gave him the news.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29340,12 +29367,12 @@
       "g:por-para-1",
       "g:pret-vs-imperfect",
       "g:preterite-irregular-strong",
-      "l:café",
       "l:dar",
-      "l:dejar",
       "l:estar",
+      "l:libro",
       "l:médico",
       "l:noticia",
+      "l:terminar",
       "p:cuando-basic",
       "p:estar-por"
     ],
@@ -29556,8 +29583,8 @@
   },
   {
     "id": "u57-1062",
-    "es": "Vale tiene pensado cocinar el pan favorito de Hernando para el aniversario.",
-    "en": "Vale plans to bake Hernando's favourite bread for the anniversary.",
+    "es": "Vale tiene pensado hacer el pan favorito de Hernando para el aniversario.",
+    "en": "Vale plans to make Hernando's favourite bread for the anniversary.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29565,8 +29592,8 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:aniversario",
-      "l:cocinar",
       "l:favorito",
+      "l:hacer",
       "l:pan",
       "l:pensar",
       "l:tener",
@@ -31254,8 +31281,8 @@
   },
   {
     "id": "u57-1128",
-    "es": "La constancia de Hernando le permitió publicar su libro a los setenta y uno.",
-    "en": "Hernando's perseverance allowed him to publish his book at seventy-one.",
+    "es": "La constancia de Hernando le permitió publicar su primer libro a los setenta y tantos.",
+    "en": "Hernando's perseverance allowed him to publish his first book in his seventies.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -31267,7 +31294,8 @@
       "l:libro",
       "l:permitir",
       "l:publicar",
-      "p:numbers-un-una",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer",
       "p:permitir-inf",
       "p:possessives-basic"
     ],
@@ -31402,21 +31430,23 @@
   },
   {
     "id": "u57-1134",
-    "es": "Se me quebró la costumbre de abrir a las siete cuando él faltó.",
-    "en": "The habit of opening at seven broke when he was gone.",
+    "es": "El café estuvo a punto de quebrar el año en que murió Rosa.",
+    "en": "The café nearly went bankrupt the year Rosa died.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:estuvo",
       "g:gender-articles",
-      "g:preterite-ar",
-      "g:se-accidental",
-      "l:abrir",
-      "l:costumbre",
-      "l:faltar",
+      "g:preterite-irregular-strong",
+      "g:preterite-spelling-stem",
+      "g:relatives-prepositions",
+      "l:año",
+      "l:café",
+      "l:estar",
+      "l:morir",
+      "l:punto",
       "l:quebrar",
-      "p:cuando-basic",
-      "p:quedar-faltar-sobrar",
-      "p:telling-time"
+      "p:naci-en"
     ],
     "targets": [
       "l:quebrar"
@@ -31480,21 +31510,18 @@
   },
   {
     "id": "u57-1137",
-    "es": "No quiero quebrar la rutina del café más de un día.",
-    "en": "I don't want to break the routine of the café for more than a day.",
+    "es": "Muchos negocios del barrio quebraron en la pandemia, pero el café no.",
+    "en": "Many businesses in the neighbourhood went bankrupt in the pandemic, but not the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:quiero",
       "g:gender-articles",
-      "g:stem-boot",
-      "g:verb-infinitive",
+      "g:preterite-ar",
+      "l:barrio",
       "l:café",
-      "l:día",
+      "l:negocio",
       "l:quebrar",
-      "l:querer",
-      "l:rutina",
-      "p:mas-de-number"
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:quebrar"
@@ -32175,14 +32202,14 @@
   },
   {
     "id": "u57-1161",
-    "es": "¿Por qué viniste?\nNo vine porque me invitaran, sino porque lo debía.",
-    "en": "Why did you come?\nI didn't come because they invited me, but because I owed it.",
+    "es": "¿Por qué viniste?\nNo vine porque me invitaran, sino porque se lo debía.",
+    "en": "Why did you come?\nI didn't come because they invited me, but because I owed it to him.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:porque",
       "g:cause-result",
-      "g:direct-objects",
+      "g:double-pronouns",
       "g:imperfect-habitual",
       "g:imperfect-subj",
       "g:pero-sino",
@@ -32417,18 +32444,16 @@
   },
   {
     "id": "u57-1171",
-    "es": "Me conformo con que el libro llegue a tiempo, y llegó.",
-    "en": "I'll settle for the book arriving on time, and it did.",
+    "es": "Me conformo con que el libro llegara a tiempo.",
+    "en": "I'm content that the book arrived in time.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ar",
-      "g:subj-wanting",
+      "g:imperfect-subj",
       "g:that-clauses",
       "l:libro",
-      "l:llegar",
-      "l:llegue",
+      "l:llegara",
       "l:tiempo",
       "p:conformarse-con"
     ],
@@ -32512,7 +32537,7 @@
   {
     "id": "u57-1175",
     "es": "Con un café caliente y su compañía, me conformo.",
-    "en": "With a hot coffee and your company, I'm content.",
+    "en": "With a hot coffee and your company, I'm content. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32937,16 +32962,17 @@
   },
   {
     "id": "u57-1192",
-    "es": "¿Hay más remedio que esperar?",
-    "en": "Is there any choice but to wait?",
+    "es": "¿No hay otro remedio que esperar?",
+    "en": "Is there no other choice but to wait?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hay",
-      "g:comparatives",
       "g:hay-vs-esta",
       "l:esperar",
-      "l:remedio"
+      "l:remedio",
+      "p:no-quedar-mas-remedio",
+      "p:otro-no-article"
     ],
     "targets": [],
     "kind": "question",
@@ -34011,15 +34037,14 @@
   },
   {
     "id": "u57-1231",
-    "es": "Me da cargo de conciencia disfrutar del pan con él ausente.",
-    "en": "I feel guilty enjoying the bread with him gone.",
+    "es": "Me da cargo de conciencia disfrutar del pan sin él.",
+    "en": "I feel guilty enjoying the bread without him.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:con-el-ella",
       "c:me-regala",
       "g:gender-articles",
-      "l:ausente",
+      "g:prep-pronouns",
       "l:cargo",
       "l:conciencia",
       "l:dar",
@@ -35826,7 +35851,7 @@
   },
   {
     "id": "u57-1300",
-    "es": "¿Y si hubiera llegado Vale el sábado en lugar del lunes?",
+    "es": "¿Y si Vale hubiera llegado el sábado en lugar del lunes?",
     "en": "What if Vale had arrived on Saturday instead of Monday?",
     "accept": [],
     "acceptEn": [],
@@ -35840,9 +35865,7 @@
       "l:lunes",
       "l:sábado",
       "p:days-el-lunes",
-      "p:estaria-bien-que",
-      "p:que-tal-si",
-      "p:y-si-hubieramos"
+      "p:estaria-bien-que"
     ],
     "targets": [
       "p:y-si-hubieramos"
@@ -35854,7 +35877,7 @@
   },
   {
     "id": "u57-1301",
-    "es": "¿Y si hubiera salido el libro un mes antes?",
+    "es": "¿Y si el libro hubiera salido un mes antes?",
     "en": "What if the book had come out a month earlier?",
     "accept": [],
     "acceptEn": [],
@@ -35867,9 +35890,7 @@
       "l:libro",
       "l:mes",
       "l:salir",
-      "p:estaria-bien-que",
-      "p:que-tal-si",
-      "p:y-si-hubieramos"
+      "p:estaria-bien-que"
     ],
     "targets": [
       "p:y-si-hubieramos"
@@ -35983,12 +36004,14 @@
   },
   {
     "id": "u57-1306",
-    "es": "¿Y si hubiera tomado su mano esa noche?",
+    "es": "¿Y si le hubiera tomado la mano esa noche?",
     "en": "What if I had held his hand that night?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
+      "g:gender-articles",
+      "g:indirect-objects",
       "g:pluperfect-subj",
       "g:si-hypothetical",
       "g:si-past-unreal",
@@ -35996,7 +36019,6 @@
       "l:noche",
       "l:tomar",
       "p:estaria-bien-que",
-      "p:possessives-basic",
       "p:que-tal-si",
       "p:y-si-hubieramos"
     ],
@@ -36010,8 +36032,8 @@
   },
   {
     "id": "u57-1307",
-    "es": "¿Y si no hubiera vendido el taxi?",
-    "en": "What if he hadn't sold the taxi?",
+    "es": "¿Y si hubiera dejado el taxi diez años antes?",
+    "en": "What if he had given up the taxi ten years earlier?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -36019,9 +36041,12 @@
       "g:pluperfect-subj",
       "g:si-hypothetical",
       "g:si-past-unreal",
+      "l:antes",
+      "l:año",
+      "l:dejar",
       "l:taxi",
-      "l:vender",
       "p:estaria-bien-que",
+      "p:que-tal-si",
       "p:y-si-hubieramos"
     ],
     "targets": [
@@ -36167,17 +36192,19 @@
   },
   {
     "id": "u57-1313",
-    "es": "¿Y si hubiésemos operado a tiempo?",
-    "en": "What if we had operated in time?",
+    "es": "¿Y si lo hubieran operado a tiempo?",
+    "en": "What if they had operated on him in time?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:direct-objects",
       "g:pluperfect-subj",
       "g:si-hypothetical",
       "g:si-past-unreal",
       "l:operar",
       "l:tiempo",
       "p:estaria-bien-que",
+      "p:me-hubieras-dicho",
       "p:que-tal-si",
       "p:y-si-hubieramos"
     ],
@@ -36191,24 +36218,21 @@
   },
   {
     "id": "u57-1314",
-    "es": "¿Y si lo hubiera sabido y no nos lo dijo?",
-    "en": "What if he had known and didn't tell us?",
+    "es": "¿Y si él lo hubiera sabido todo el tiempo?",
+    "en": "What if he had known all along?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
-      "g:double-pronouns",
+      "g:gender-articles",
       "g:pluperfect-subj",
-      "g:preterite-irregular-strong",
       "g:si-hypothetical",
       "g:si-past-unreal",
-      "l:decir",
       "l:saber",
+      "l:tiempo",
       "p:estaria-bien-que",
-      "p:me-te-nos-objects",
-      "p:que-tal-si",
       "p:saber-conocer",
-      "p:y-si-hubieramos"
+      "p:todos-los-dias"
     ],
     "targets": [
       "p:y-si-hubieramos"
@@ -36274,7 +36298,7 @@
   },
   {
     "id": "u57-1317",
-    "es": "¿Y si decidiera Vale quedarse para siempre?",
+    "es": "¿Y si Vale decidiera quedarse para siempre?",
     "en": "What if Vale decided to stay for good?",
     "accept": [],
     "acceptEn": [],
@@ -36287,9 +36311,7 @@
       "l:siempre",
       "p:estaria-bien-que",
       "p:frequency-scale",
-      "p:para-inf",
-      "p:que-tal-si",
-      "p:y-si-hubieramos"
+      "p:para-inf"
     ],
     "targets": [
       "p:y-si-hubieramos"
@@ -36301,7 +36323,7 @@
   },
   {
     "id": "u57-1318",
-    "es": "¿Y si retirara Altamira la oferta?",
+    "es": "¿Y si Altamira retirara la oferta?",
     "en": "What if Altamira withdrew the offer?",
     "accept": [],
     "acceptEn": [],
@@ -36311,9 +36333,7 @@
       "g:si-hypothetical",
       "l:oferta",
       "l:retirar",
-      "p:estaria-bien-que",
-      "p:que-tal-si",
-      "p:y-si-hubieramos"
+      "p:estaria-bien-que"
     ],
     "targets": [
       "p:y-si-hubieramos"
@@ -36550,22 +36570,15 @@
   },
   {
     "id": "u57-1327",
-    "es": "¿Y si fuera todo esto una despedida y no un final?",
+    "es": "¿Y si todo esto fuera una despedida y no un final?",
     "en": "What if all this were a goodbye and not an ending?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:imperfect-subj",
-      "g:ser-identity",
-      "g:si-hypothetical",
       "l:despedida",
       "l:final",
-      "l:ser",
-      "p:demonstratives-basic",
-      "p:estaria-bien-que",
-      "p:que-tal-si",
-      "p:y-si-hubieramos"
+      "p:demonstratives-basic"
     ],
     "targets": [
       "p:y-si-hubieramos"
@@ -36577,7 +36590,7 @@
   },
   {
     "id": "u57-1328",
-    "es": "¿Y si hubiese avisado usted antes?",
+    "es": "¿Y si usted me hubiera avisado antes?",
     "en": "What if you had told me sooner? (polite)",
     "accept": [],
     "acceptEn": [],
@@ -36588,8 +36601,7 @@
       "l:antes",
       "l:avisar",
       "p:estaria-bien-que",
-      "p:que-tal-si",
-      "p:y-si-hubieramos"
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "p:y-si-hubieramos"
@@ -36601,7 +36613,7 @@
   },
   {
     "id": "u57-1329",
-    "es": "¿Y si no hubiese vuelto Vale a Bogotá?",
+    "es": "¿Y si Vale no hubiera vuelto a Bogotá?",
     "en": "What if Vale hadn't come back to Bogotá?",
     "accept": [],
     "acceptEn": [],
@@ -36610,8 +36622,7 @@
       "g:si-hypothetical",
       "g:si-past-unreal",
       "l:volver",
-      "p:estaria-bien-que",
-      "p:y-si-hubieramos"
+      "p:estaria-bien-que"
     ],
     "targets": [
       "p:y-si-hubieramos"
@@ -38310,11 +38321,12 @@
   },
   {
     "id": "u57-1388",
-    "es": "¿Si quiere irse, que se vaya?",
-    "en": "If she wants to leave, let her leave?",
+    "es": "Si quiere irse, que se vaya, ¿no?",
+    "en": "If she wants to leave, let her leave, right?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:reflexive-routine",
       "g:si-hypothetical",
       "g:si-present",
@@ -38337,20 +38349,19 @@
   },
   {
     "id": "u57-1389",
-    "es": "¿Si quieres que te acompañe, que te acompañe yo?",
-    "en": "If you want me to go with you, shall I go with you? (to a friend)",
+    "es": "Si quieres que te acompañe, te acompaño, ¿sí?",
+    "en": "If you want me to go with you, I'll go with you, OK? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:si-quieres",
+      "g:present-ar",
       "g:si-present",
-      "g:subj-influence",
       "g:subj-wanting",
       "g:that-clauses",
       "l:acompañar",
       "l:querer",
-      "p:me-te-nos-objects",
-      "p:que-subj-deseo"
+      "p:me-te-nos-objects"
     ],
     "targets": [],
     "kind": "question",
@@ -38360,8 +38371,8 @@
   },
   {
     "id": "u57-1390",
-    "es": "Si quiere venderme el café, que venga con el abogado.\nPues que venga.",
-    "en": "If he wants to sell me the café, let him come with the lawyer.\nWell, let him come.",
+    "es": "Si quiere comprarme el café, que venga con el abogado.\nPues que venga.",
+    "en": "If he wants to buy the café from me, let him come with the lawyer.\nWell, let him come.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -38378,8 +38389,8 @@
       "g:verb-infinitive",
       "l:abogado",
       "l:café",
+      "l:comprar",
       "l:querer",
-      "l:vender",
       "l:venir",
       "p:me-te-nos-objects",
       "p:que-subj-deseo",
@@ -38457,7 +38468,7 @@
   {
     "id": "u57-1393",
     "es": "¿Y si ella no quiere venir?\nSi no quiere venir, que no venga.",
-    "en": "And if she doesn't want to come?\nIf she doesn't want to come, let her not come.",
+    "en": "And if she doesn't want to come?\nIf she doesn't want to come, let her stay away.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -38504,18 +38515,21 @@
   },
   {
     "id": "u57-1395",
-    "es": "La caza de ofertas de Altamira empezó el mismo día del entierro.",
-    "en": "Altamira's hunt for deals started on the very day of the burial.",
+    "es": "Altamira salió de caza de casas viejas el mismo día del entierro.",
+    "en": "Altamira went hunting for old houses on the very day of the burial.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
-      "g:preterite-ar",
+      "g:preterite-er-ir",
+      "l:casa",
       "l:caza",
       "l:día",
-      "l:empezar",
       "l:entierro",
-      "l:oferta"
+      "l:salir",
+      "l:viejo",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "l:caza"
@@ -38956,8 +38970,8 @@
   },
   {
     "id": "u57-1413",
-    "es": "Son tantas células cansadas que el cuerpo se rinde de repente.",
-    "en": "So many tired cells that the body suddenly gives up.",
+    "es": "Con tantas células cansadas, un día el cuerpo se rinde de repente.",
+    "en": "With so many tired cells, one day the body suddenly gives up.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -38965,15 +38979,13 @@
       "g:adjective-agreement",
       "g:gender-articles",
       "g:reflexive-routine",
-      "g:relative-que",
-      "g:ser-identity",
       "g:stem-e-i",
       "l:cansado",
       "l:cuerpo",
       "l:célula",
+      "l:día",
       "l:rendirse",
-      "l:repente",
-      "l:ser"
+      "l:repente"
     ],
     "targets": [
       "l:célula"
@@ -39009,14 +39021,16 @@
   },
   {
     "id": "u57-1415",
-    "es": "Es una persona muy fina: nunca levantaba la voz.",
-    "en": "He's a very refined person: he never raised his voice.",
+    "es": "Era una persona muy fina: nunca levantaba la voz.",
+    "en": "He was a very refined person: he never raised his voice.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
       "g:adjective-agreement",
       "g:gender-articles",
       "g:imperfect-habitual",
+      "g:imperfect-states",
       "g:ser-identity",
       "l:fino",
       "l:levantar",
@@ -39061,7 +39075,7 @@
   {
     "id": "u57-1417",
     "es": "Vale cortó la masa fina como una hoja de papel.",
-    "en": "Vale rolled the dough thin as a sheet of paper.",
+    "en": "Vale cut the dough as thin as a sheet of paper.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -40167,7 +40181,7 @@
   },
   {
     "id": "u57-1458",
-    "es": "¿Vienes porque te sientas obligada o porque quieres acompañarme?",
+    "es": "¿Vienes porque te sientes obligada o porque quieres acompañarme?",
     "en": "Are you coming because you feel obliged or because you want to keep me company? (to a woman)",
     "accept": [],
     "acceptEn": [],
@@ -40181,9 +40195,10 @@
       "l:acompañar",
       "l:obligar",
       "l:querer",
-      "l:sentarse",
+      "l:sentirse",
       "l:venir",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:sentirse-mal"
     ],
     "targets": [],
     "kind": "question",
@@ -40228,31 +40243,32 @@
   },
   {
     "id": "u57-1460",
-    "es": "¿Te molesta que venda?\nNo me molesta porque sea el café, sino porque era de ellos.",
-    "en": "Does it bother you that I'm selling?\nIt doesn't bother me because it's the café, but because it was theirs.",
+    "es": "¿Te molesta que venda las mesas?\nNo me molesta porque sean viejas, sino porque eran de Rosa.",
+    "en": "Does it bother you that I'm selling the tables?\nIt doesn't bother me because they're old, but because they were Rosa's.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:era",
       "c:porque",
+      "g:adjective-agreement",
       "g:cause-result",
       "g:gender-articles",
       "g:gustar-full",
       "g:imperfect-states",
       "g:pero-sino",
-      "g:prep-pronouns",
       "g:present-ar",
       "g:ser-identity",
       "g:subj-emotion-intro",
       "g:subj-irregulars",
       "g:subj-wanting",
       "g:that-clauses",
-      "l:café",
+      "l:mesa",
       "l:molestar",
       "l:ser",
       "l:vender",
+      "l:viejo",
       "p:me-encanta-que",
-      "p:no-porque-sino-porque"
+      "p:no-porque-sino-porque",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "p:no-porque-sino-porque"
@@ -40767,25 +40783,27 @@
   },
   {
     "id": "u57-1481",
-    "es": "Tengo cargo de conciencia porque nunca le dije que ganó la última partida.",
-    "en": "I feel guilty because I never told him he won the last game.",
+    "es": "Tengo cargo de conciencia porque nunca le dije que lo dejaba ganar.",
+    "en": "I feel guilty because I never told him I was letting him win.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:porque",
       "c:tengo",
       "g:cause-result",
-      "g:gender-articles",
+      "g:direct-objects",
+      "g:imperfect-habitual",
       "g:indirect-objects",
-      "g:preterite-ar",
+      "g:pret-vs-imperfect",
       "g:preterite-irregular-strong",
+      "g:reported-past-basic",
       "g:that-clauses",
       "g:yo-irregular",
       "l:cargo",
       "l:conciencia",
       "l:decir",
+      "l:dejar",
       "l:ganar",
-      "l:partida",
       "l:tener",
       "p:cargo-de-conciencia",
       "p:frequency-scale"
@@ -40881,20 +40899,19 @@
   },
   {
     "id": "u57-1485",
-    "es": "A Vale le da cargo de conciencia ocupar su habitación.",
-    "en": "Vale feels guilty occupying his room.",
+    "es": "A Vale le da cargo de conciencia ocupar el cuarto de Rosa.",
+    "en": "Vale feels guilty occupying Rosa's room.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:indirect-objects",
       "g:present-ar",
       "l:cargo",
       "l:conciencia",
       "l:dar",
-      "l:habitación",
       "l:ocupar",
-      "p:cargo-de-conciencia",
-      "p:possessives-basic"
+      "p:cargo-de-conciencia"
     ],
     "targets": [
       "p:cargo-de-conciencia"
@@ -40967,17 +40984,17 @@
   },
   {
     "id": "u57-1488",
-    "es": "Siento cargo de conciencia cada vez que Simón repite su voz.",
-    "en": "I feel guilty every time Simón repeats his voice.",
+    "es": "Siento cargo de conciencia cada vez que Simón imita su voz.",
+    "en": "I feel guilty every time Simón imitates his voice.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
+      "g:present-ar",
       "g:stem-boot",
-      "g:stem-e-i",
       "l:cargo",
       "l:conciencia",
-      "l:repetir",
+      "l:imitar",
       "l:sentir",
       "l:vez",
       "l:voz",
@@ -42200,7 +42217,7 @@
   },
   {
     "id": "u57-1534",
-    "es": "¿Te entró sed?\nSed no, me entró ganas de salir corriendo.",
+    "es": "¿Te entró sed?\nSed no, me entraron ganas de salir corriendo.",
     "en": "Did you get thirsty?\nNot thirst, I felt like running away.",
     "accept": [],
     "acceptEn": [],
@@ -42358,20 +42375,20 @@
   },
   {
     "id": "u57-1540",
-    "es": "La imagen de Vale llegando al aeropuerto quedó grabada en las cámaras.",
-    "en": "The image of Vale arriving at the airport was recorded on the cameras.",
+    "es": "La imagen de Vale llegando a la terminal quedó grabada en las cámaras.",
+    "en": "The image of Vale arriving at the bus station was recorded on the cameras.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:gerund-ways",
       "g:preterite-ar",
-      "l:aeropuerto",
       "l:cámara",
       "l:grabar",
       "l:imagen",
       "l:llegar",
       "l:quedar",
+      "l:terminal",
       "p:quedar-grabado",
       "p:quedar-participio"
     ],
@@ -42468,19 +42485,19 @@
   },
   {
     "id": "u57-1544",
-    "es": "El sonido de los claxon quedó grabado en la piel del barrio.",
-    "en": "The sound of the horns stayed etched in the skin of the neighbourhood.",
+    "es": "El ruido de los taxis quedó grabado en la piel del barrio.",
+    "en": "The noise of the taxis stayed etched in the skin of the neighbourhood.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
       "l:barrio",
-      "l:claxon",
       "l:grabar",
       "l:piel",
       "l:quedar",
-      "l:sonido",
+      "l:ruido",
+      "l:taxi",
       "p:quedar-grabado",
       "p:quedar-participio"
     ],
@@ -43039,7 +43056,7 @@
   },
   {
     "id": "u57-1564",
-    "es": "Me rompo la cabeza y no encuentro la manera de decírselo.\nDísela sin adornos.",
+    "es": "Me rompo la cabeza y no encuentro la manera de decírselo.\nDíselo sin adornos.",
     "en": "I rack my brains and can't find a way to tell her.\nTell her without frills.",
     "accept": [],
     "acceptEn": [],
@@ -43533,7 +43550,7 @@
   {
     "id": "u57-1581",
     "es": "Caí en cuenta de que no he llorado.\nYa llegará.",
-    "en": "I've just realised that I haven't cried.\nIt will come.",
+    "en": "I realised that I haven't cried.\nIt will come.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -43706,8 +43723,8 @@
   },
   {
     "id": "u57-1587",
-    "es": "Si quieren hacer sonar el claxon, que lo hagan con fuerza.",
-    "en": "If they want to sound the horn, let them do it loudly.",
+    "es": "Si quieren tocar el pito, que lo toquen con fuerza.",
+    "en": "If they want to honk, let them honk loudly.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -43719,11 +43736,10 @@
       "g:subj-wanting",
       "g:that-clauses",
       "g:verb-infinitive",
-      "l:claxon",
       "l:fuerza",
-      "l:hacer",
+      "l:pito",
       "l:querer",
-      "l:sonar",
+      "l:tocar",
       "p:que-subj-deseo",
       "p:si-quieres-que"
     ],
@@ -44112,11 +44128,12 @@
   },
   {
     "id": "u57-1600",
-    "es": "¿Y si quiere ayudar, que ayude?",
-    "en": "And if he wants to help, let him help?",
+    "es": "Y si quiere ayudar, que ayude, ¿no?",
+    "en": "And if he wants to help, let him help, right?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:si-present",
       "g:stem-boot",
       "g:subj-wanting",
@@ -44139,11 +44156,12 @@
   },
   {
     "id": "u57-1601",
-    "es": "¿Y si quieren quedarse, que se queden?",
-    "en": "And if they want to stay, let them stay?",
+    "es": "Y si quieren quedarse, que se queden, ¿no?",
+    "en": "And if they want to stay, let them stay, right?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:reflexive-routine",
       "g:si-present",
       "g:stem-boot",
@@ -44168,23 +44186,23 @@
   },
   {
     "id": "u57-1602",
-    "es": "¿Y si quiere marcharse sola, que se marche?",
-    "en": "And if she wants to leave on her own, let her go?",
+    "es": "Y si quiere irse sola, que se vaya sola, ¿no?",
+    "en": "And if she wants to leave on her own, let her go on her own, right?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:adjective-agreement",
       "g:reflexive-routine",
       "g:si-hypothetical",
       "g:si-present",
       "g:stem-boot",
-      "g:subj-wanting",
+      "g:subj-irregulars",
       "g:that-clauses",
       "g:verb-infinitive",
-      "l:marcharse",
+      "l:irse",
       "l:querer",
       "p:que-subj-deseo",
-      "p:que-subj-repeated-order",
       "p:que-tal-si",
       "p:si-quieres-que"
     ],
@@ -44829,20 +44847,25 @@
   },
   {
     "id": "u57-1625",
-    "es": "Parece mentira que su silla siga caliente.",
-    "en": "It's hard to believe his chair is still warm.",
+    "es": "Parece mentira que su silla siga ahí, esperándolo.",
+    "en": "It's hard to believe his chair is still there, waiting for him.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:siga",
+      "g:direct-objects",
+      "g:gerund-ways",
+      "g:object-pronoun-position",
       "g:present-er-ir",
       "g:subj-value",
       "g:that-clauses",
-      "l:caliente",
+      "l:ahí",
+      "l:esperar",
       "l:mentira",
       "l:parecer",
       "l:seguir",
       "l:silla",
+      "p:aqui-ahi-alla",
       "p:parece-mentira-que",
       "p:possessives-basic"
     ],
@@ -45055,7 +45078,7 @@
   },
   {
     "id": "u57-1633",
-    "es": "¿Parece mentira que haya pasado tan rápido, verdad?",
+    "es": "Parece mentira que haya pasado tan rápido, ¿verdad?",
     "en": "It's hard to believe it went so fast, isn't it?",
     "accept": [],
     "acceptEn": [],
@@ -45235,12 +45258,11 @@
   },
   {
     "id": "u57-1639",
-    "es": "Parece mentira que ya sea lunes.\nPara mí sigue siendo el domingo.",
+    "es": "Parece mentira que ya sea lunes.\nPara mí sigue siendo domingo.",
     "en": "It's hard to believe it's already Monday.\nFor me it's still Sunday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:gerund-ways",
       "g:prep-pronouns",
       "g:present-er-ir",
@@ -46092,20 +46114,20 @@
   },
   {
     "id": "u57-1670",
-    "es": "Hernando admiraba a Rosa; su admiración nunca se la dijo en voz alta.",
-    "en": "Hernando admired Rosa; he never said his admiration out loud.",
+    "es": "Hernando admiraba a Rosa, pero nunca le confesó su admiración en voz alta.",
+    "en": "Hernando admired Rosa, but he never confessed his admiration to her out loud.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
-      "g:double-pronouns",
       "g:imperfect-habitual",
+      "g:indirect-objects",
       "g:pret-vs-imperfect",
-      "g:preterite-irregular-strong",
+      "g:preterite-ar",
       "l:admiración",
       "l:admirar",
       "l:alto",
-      "l:decir",
+      "l:confesar",
       "l:voz",
       "p:frequency-scale",
       "p:possessives-basic",
@@ -46241,16 +46263,16 @@
   },
   {
     "id": "u57-1676",
-    "es": "Faltó tacto en el telegrama de Altamira.",
-    "en": "Altamira's telegram lacked tact.",
+    "es": "Faltó tacto en el mensaje de Altamira.",
+    "en": "Altamira's message lacked tact.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
       "l:faltar",
+      "l:mensaje",
       "l:tacto",
-      "l:telegrama",
       "p:quedar-faltar-sobrar"
     ],
     "targets": [
@@ -46319,8 +46341,8 @@
   },
   {
     "id": "u57-1679",
-    "es": "La melancolía de los domingos me da por pensar en él.",
-    "en": "The melancholy of Sundays makes me think of him.",
+    "es": "Con la melancolía de los domingos, me da por pensar en él.",
+    "en": "With Sunday melancholy, I find myself thinking of him.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -46829,18 +46851,17 @@
   },
   {
     "id": "u57-1697",
-    "es": "¡Quién supiera decir adiós sin que se acabe!",
-    "en": "If only I knew how to say goodbye without it ending!",
+    "es": "¡Quién supiera decir adiós sin que duela!",
+    "en": "If only I knew how to say goodbye without it hurting!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:imperfect-subj",
-      "g:se-impersonal",
       "g:subj-purpose-full",
       "g:subj-wanting",
       "g:wish-exclamatives",
-      "l:acabar",
       "l:decir",
+      "l:doler",
       "l:quién",
       "l:saber",
       "p:exclamations-basic",
@@ -46886,27 +46907,27 @@
   },
   {
     "id": "u57-1699",
-    "es": "¿Quién pudiera hablar con él un minuto más?",
-    "en": "If only we could talk with him one more minute?",
+    "es": "¡Quién pudiera hablar con él un minuto más!",
+    "en": "If only I could talk with him one more minute!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:con-el-ella",
       "g:gender-articles",
       "g:imperfect-subj",
-      "g:questions",
       "g:verb-infinitive",
       "g:wish-exclamatives",
       "l:hablar",
       "l:minuto",
       "l:poder",
       "l:quién",
+      "p:exclamations-basic",
       "p:quien-tuviera"
     ],
     "targets": [
       "p:quien-tuviera"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u57",
     "theme": "lo que queda por decir",
     "source": "gen"
@@ -47345,14 +47366,16 @@
   },
   {
     "id": "u57-1715",
-    "es": "Estoy por cerrar y ya.\nNo, estás por descansar un rato.",
-    "en": "I'm tempted to close and be done.\nNo, you're about to rest for a while.",
+    "es": "Estoy por cerrar y ya.\nNo cierres. Descansa un rato y ya.",
+    "en": "I'm tempted to close and be done with it.\nDon't close. Just rest for a while.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
       "g:gender-articles",
+      "g:negative-commands",
       "g:por-para-1",
+      "g:present-ar",
       "l:cerrar",
       "l:descansar",
       "l:estar",
@@ -47690,7 +47713,7 @@
   },
   {
     "id": "u57-1727",
-    "es": "Estoy hasta la coronilla de oír \"lo siento mucho\" sin que nadie lo diga de verdad.",
+    "es": "Estoy hasta la coronilla de oír «lo siento mucho» sin que nadie lo diga de verdad.",
     "en": "I'm sick to death of hearing \"I'm so sorry\" without anyone meaning it.",
     "accept": [],
     "acceptEn": [],
@@ -48152,12 +48175,14 @@
   },
   {
     "id": "u57-1744",
-    "es": "Ya era hora de que lloviera sobre el cementerio.",
-    "en": "About time it rained on the cemetery.",
+    "es": "Ya era hora de que lloviera: la tierra del cementerio estaba seca.",
+    "en": "About time it rained: the earth at the cemetery was dry.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:era",
+      "g:adjective-agreement",
+      "g:estar-location-states",
       "g:gender-articles",
       "g:imperfect-states",
       "g:imperfect-subj",
@@ -48165,9 +48190,12 @@
       "g:subj-past-triggers",
       "g:that-clauses",
       "l:cementerio",
+      "l:estar",
       "l:hora",
       "l:llover",
+      "l:seco",
       "l:ser",
+      "l:tierra",
       "p:ya-era-hora-de-que"
     ],
     "targets": [
@@ -48180,7 +48208,7 @@
   },
   {
     "id": "u57-1745",
-    "es": "¡Ya era hora de que dijéramos \"gracias\" a los vecinos!",
+    "es": "¡Ya era hora de que les dijéramos «gracias» a los vecinos!",
     "en": "About time we said \"thank you\" to the neighbours!",
     "accept": [],
     "acceptEn": [],
@@ -48190,6 +48218,7 @@
       "g:gender-articles",
       "g:imperfect-states",
       "g:imperfect-subj",
+      "g:indirect-objects",
       "g:ser-identity",
       "g:subj-past-triggers",
       "g:that-clauses",
@@ -48830,7 +48859,7 @@
   },
   {
     "id": "u57-1768",
-    "es": "Se me puso la carne de gallina al oír tantos claxon juntos.",
+    "es": "Se me puso la piel de gallina al oír tantos pitos juntos.",
     "en": "I got goosebumps hearing so many horns together.",
     "accept": [],
     "acceptEn": [],
@@ -48839,13 +48868,14 @@
       "g:prep-infinitive",
       "g:preterite-irregular-strong",
       "g:se-accidental",
-      "l:carne",
-      "l:claxon",
       "l:gallina",
       "l:juntos",
       "l:oír",
+      "l:piel",
+      "l:pito",
       "l:ponerse",
-      "p:se-me-body"
+      "p:se-me-body",
+      "p:se-me-involuntary"
     ],
     "targets": [
       "p:se-me-body"
@@ -48911,13 +48941,12 @@
   },
   {
     "id": "u57-1771",
-    "es": "Se me cayó el alma a los pies cuando me dijeron que no había visto a nadie.",
-    "en": "My heart sank when they told me he hadn't seen anyone.",
+    "es": "Se me cayó el alma a los pies cuando me dijeron que había muerto solo.",
+    "en": "My heart sank when they told me he had died alone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:negation-words",
       "g:pluperfect",
       "g:preterite-irregular-strong",
       "g:preterite-spelling-stem",
@@ -48927,12 +48956,11 @@
       "l:alma",
       "l:caerse",
       "l:decir",
+      "l:morir",
       "l:pie",
-      "l:ver",
       "p:cuando-basic",
       "p:el-agua-fria",
       "p:me-te-nos-objects",
-      "p:personal-a",
       "p:se-me-body"
     ],
     "targets": [
@@ -48972,20 +49000,20 @@
   },
   {
     "id": "u57-1773",
-    "es": "Se le hizo un nudo en la voz a Vale al nombrar a Rosa.",
-    "en": "Vale's voice caught when she named Rosa.",
+    "es": "A Vale se le quebró la voz al nombrar a Rosa.",
+    "en": "Vale's voice broke when she named Rosa.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:prep-infinitive",
-      "g:preterite-ser-ir-hacer",
+      "g:preterite-ar",
       "g:se-accidental",
-      "l:hacerse",
       "l:nombrar",
-      "l:nudo",
+      "l:quebrar",
       "l:voz",
-      "p:se-me-body"
+      "p:se-me-body",
+      "p:se-me-involuntary"
     ],
     "targets": [
       "p:se-me-body"
@@ -49134,7 +49162,7 @@
   },
   {
     "id": "u57-1779",
-    "es": "¿Te acuerdas del último claxon?\nSe me puso la piel de gallina.",
+    "es": "¿Te acuerdas del último pito?\nSe me puso la piel de gallina.",
     "en": "Do you remember the last horn?\nI got goosebumps.",
     "accept": [],
     "acceptEn": [],
@@ -49145,9 +49173,9 @@
       "g:se-accidental",
       "g:stem-boot",
       "l:acordarse",
-      "l:claxon",
       "l:gallina",
       "l:piel",
+      "l:pito",
       "l:ponerse",
       "p:se-me-body",
       "p:se-me-involuntary"
@@ -49529,16 +49557,16 @@
   },
   {
     "id": "u57-1793",
-    "es": "No nos queda más remedio que despedir al barrio de otra manera.",
-    "en": "We have no choice but to say goodbye to the neighbourhood in another way.",
+    "es": "No nos queda más remedio que despedirlo de otra manera.",
+    "en": "We have no choice but to say goodbye to him in another way.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparatives",
-      "g:gender-articles",
+      "g:direct-objects",
+      "g:object-pronoun-position",
       "g:parecer-quedar",
       "g:present-ar",
-      "l:barrio",
       "l:despedir",
       "l:manera",
       "l:quedar",
@@ -49853,7 +49881,7 @@
   },
   {
     "id": "u57-1806",
-    "es": "Mantuvo la calma hasta que oyó los claxon.",
+    "es": "Mantuvo la calma hasta que oyó los pitos.",
     "en": "She kept calm until she heard the horns.",
     "accept": [],
     "acceptEn": [],
@@ -49864,9 +49892,9 @@
       "g:preterite-irregular-strong",
       "g:preterite-spelling-stem",
       "l:calmar",
-      "l:claxon",
       "l:mantener",
       "l:oír",
+      "l:pito",
       "p:aguantar-conservar-la-calma"
     ],
     "targets": [
@@ -50152,16 +50180,16 @@
   },
   {
     "id": "u57-1817",
-    "es": "Su voz grabada en el libro es un recuerdo imborrable.",
-    "en": "His voice recorded in the book is an unforgettable memory.",
+    "es": "Su voz, grabada en el celular de Mariana, es un recuerdo imborrable.",
+    "en": "His voice, recorded on Mariana's phone, is an unforgettable memory.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
+      "l:celular",
       "l:grabar",
       "l:imborrable",
-      "l:libro",
       "l:recuerdo",
       "l:ser",
       "l:voz",
@@ -50288,12 +50316,13 @@
   },
   {
     "id": "u57-1822",
-    "es": "Me rompí la cabeza por qué no le había preguntado nada.",
-    "en": "I racked my brains over why I hadn't asked him anything.",
+    "es": "Me rompí la cabeza pensando por qué no le había preguntado nada.",
+    "en": "I racked my brains wondering why I hadn't asked him anything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:gerund-ways",
       "g:indirect-objects",
       "g:indirect-questions",
       "g:negation-words",
@@ -50301,6 +50330,7 @@
       "g:preterite-er-ir",
       "g:reflexive-routine",
       "l:cabeza",
+      "l:pensar",
       "l:preguntar",
       "l:qué",
       "l:romperse",
@@ -50679,23 +50709,24 @@
   },
   {
     "id": "u57-1836",
-    "es": "Cuanto más cerca del cementerio, más silencio hacía el barrio.",
-    "en": "The closer to the cemetery, the quieter the neighbourhood became.",
+    "es": "Cuanto más cerca estábamos del cementerio, más callado se ponía el barrio.",
+    "en": "The closer we got to the cemetery, the quieter the neighbourhood became.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparative-advanced-c1",
+      "g:estar-location-states",
       "g:gender-articles",
       "g:imperfect-habitual",
-      "g:present-ar",
+      "g:imperfect-states",
+      "g:verbs-of-change",
       "l:barrio",
+      "l:callado",
       "l:cementerio",
       "l:cerca",
       "l:cuanto",
-      "l:hacer",
-      "l:silenciar",
-      "p:cerca-de",
-      "p:position-de"
+      "l:estar",
+      "l:ponerse"
     ],
     "targets": [
       "g:comparative-advanced-c1"
@@ -50876,24 +50907,25 @@
   },
   {
     "id": "u57-1843",
-    "es": "La editorial entregó el libro tarde. Por consiguiente, Hernando solo lo vio en una caja.",
-    "en": "The publisher delivered the book late. Consequently, Hernando saw it only in a box.",
+    "es": "La editorial entregó el libro tarde. Por consiguiente, Hernando solo alcanzó a ver una prueba.",
+    "en": "The publisher delivered the book late. Consequently, Hernando only got to see a proof copy.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:a-ver",
       "g:consecutive-advanced",
-      "g:direct-objects",
       "g:gender-articles",
       "g:por-para-1",
       "g:preterite-ar",
-      "g:preterite-er-ir",
-      "l:caja",
+      "l:alcanzar",
       "l:consiguiente",
       "l:editorial",
       "l:entregar",
       "l:libro",
+      "l:prueba",
       "l:tarde",
       "l:ver",
+      "p:alcanzar-a-distinguir",
       "p:entregar-recoger",
       "p:sobre-todo-solo"
     ],
@@ -52115,7 +52147,7 @@
   },
   {
     "id": "u57-1886",
-    "es": "No había más sitio en el cementerio. Por consiguiente, tuvimos que esperar.",
+    "es": "No había más espacio en el cementerio. Por consiguiente, tuvimos que esperar.",
     "en": "There was no more room at the cemetery. Consequently, we had to wait.",
     "accept": [],
     "acceptEn": [],
@@ -52128,8 +52160,8 @@
       "g:verb-infinitive",
       "l:cementerio",
       "l:consiguiente",
+      "l:espacio",
       "l:esperar",
-      "l:sitio",
       "l:tener"
     ],
     "targets": [
@@ -52248,22 +52280,25 @@
   },
   {
     "id": "u57-1891",
-    "es": "De haber dejado el café en otras manos, Hernando no habría sido tan feliz.",
-    "en": "Had he left the café in other hands, Hernando would not have been so happy.",
+    "es": "De haber vendido Rosa el café, Hernando no habría tenido dónde tomarse el tinto.",
+    "en": "Had Rosa sold the café, Hernando wouldn't have had anywhere to drink his coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional-advanced",
       "g:conditional-perfect",
       "g:gender-articles",
+      "g:indirect-questions",
       "g:infinitive-perfect",
+      "g:object-pronoun-position",
+      "g:se-impersonal",
       "l:café",
-      "l:dejar",
-      "l:feliz",
+      "l:dónde",
       "l:haber",
-      "l:mano",
-      "l:ser",
-      "p:otro-no-article"
+      "l:tener",
+      "l:tinto",
+      "l:tomar",
+      "l:vender"
     ],
     "targets": [
       "g:conditional-advanced"
@@ -52425,8 +52460,8 @@
   },
   {
     "id": "u57-1898",
-    "es": "Tomás es comprometido con el barrio, aunque no lo diga.",
-    "en": "Tomás is committed to the neighbourhood, even if he doesn't say it.",
+    "es": "Tomás es muy comprometido con el barrio, aunque no lo diga.",
+    "en": "Tomás is very committed to the neighbourhood, even if he doesn't say it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -52438,7 +52473,8 @@
       "l:barrio",
       "l:comprometido",
       "l:decir",
-      "l:ser"
+      "l:ser",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:comprometido"
@@ -52473,8 +52509,8 @@
   },
   {
     "id": "u57-1900",
-    "es": "El abogado es comprometido y no cobra por las horas extra.",
-    "en": "The lawyer is committed and doesn't charge for extra hours.",
+    "es": "El abogado es muy comprometido y no cobra las horas extra.",
+    "en": "The lawyer is very committed and doesn't charge for extra hours.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -52487,7 +52523,7 @@
       "l:extra",
       "l:hora",
       "l:ser",
-      "p:costar-pagar"
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:comprometido"
@@ -52499,11 +52535,12 @@
   },
   {
     "id": "u57-1901",
-    "es": "Mi vecino es comprometido: llegó con una olla de sopa y se quedó a lavar los platos.",
-    "en": "My neighbour is committed: he arrived with a pot of soup and stayed to wash the dishes.",
+    "es": "Mi vecino es comprometido de verdad: llegó con una olla de sopa y se quedó a lavar los platos.",
+    "en": "My neighbour is truly committed: he arrived with a pot of soup and stayed to wash the dishes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:en-serio",
       "g:gender-articles",
       "g:preterite-ar",
       "g:reflexive-routine",
@@ -52517,6 +52554,7 @@
       "l:ser",
       "l:sopa",
       "l:vecino",
+      "l:verdad",
       "p:possessives-basic"
     ],
     "targets": [
@@ -52529,8 +52567,8 @@
   },
   {
     "id": "u57-1902",
-    "es": "Si bien Tomás es comprometido con su oficio, hoy lloró como cualquiera.",
-    "en": "Although Tomás is committed to his trade, today he cried like anyone.",
+    "es": "Si bien Tomás es muy comprometido con su oficio, hoy lloró como cualquiera.",
+    "en": "Although Tomás is very committed to his trade, today he cried like anyone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -52546,7 +52584,8 @@
       "l:llorar",
       "l:oficio",
       "l:ser",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:concessive-advanced",
@@ -52559,8 +52598,8 @@
   },
   {
     "id": "u57-1903",
-    "es": "Simón es muy protegido en este café: nadie toca su jaula.",
-    "en": "Simón is very sheltered in this café: nobody touches his cage.",
+    "es": "En este café, Simón es muy protegido: nadie toca su jaula.",
+    "en": "In this café, Simón is well protected: nobody touches his cage.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -52585,17 +52624,21 @@
   },
   {
     "id": "u57-1904",
-    "es": "Mi primo es muy protegido, y no sabe qué hacer con el dolor.",
-    "en": "My cousin is very sheltered, and doesn't know what to do with pain.",
+    "es": "Mi primo era muy protegido de niño, y ahora no sabe qué hacer con el dolor.",
+    "en": "My cousin was very sheltered as a child, and now he doesn't know what to do with pain.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
       "g:gender-articles",
+      "g:imperfect-states",
       "g:indirect-questions",
       "g:present-er-ir",
       "g:ser-identity",
+      "l:ahora",
       "l:dolor",
       "l:hacer",
+      "l:niño",
       "l:primo",
       "l:protegido",
       "l:qué",
@@ -52616,22 +52659,21 @@
   },
   {
     "id": "u57-1905",
-    "es": "Vale dice que Tomás es muy protegido por el barrio entero.",
-    "en": "Vale says that Tomás is very protected by the whole neighbourhood.",
+    "es": "Vale dice que el barrio entero tiene protegido a Tomás.",
+    "en": "Vale says the whole neighbourhood keeps Tomás protected.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:gender-articles",
-      "g:por-para-1",
-      "g:ser-identity",
+      "g:stem-boot",
       "g:stem-e-i",
       "g:that-clauses",
       "l:barrio",
       "l:decir",
       "l:entero",
       "l:proteger",
-      "l:ser",
-      "p:quantifiers-basic"
+      "l:tener"
     ],
     "targets": [],
     "kind": "statement",
@@ -52641,19 +52683,24 @@
   },
   {
     "id": "u57-1906",
-    "es": "Aunque es muy protegido, aprendió a caminar solo por la ciudad.",
-    "en": "Although he is very sheltered, he learned to walk the city alone.",
+    "es": "Aunque era muy protegido, aprendió a moverse solo por la ciudad.",
+    "en": "Although he was very sheltered, he learned to get around the city alone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
       "g:aunque-indicative",
       "g:gender-articles",
+      "g:imperfect-states",
+      "g:object-pronoun-position",
       "g:por-para-1",
+      "g:pret-vs-imperfect",
       "g:preterite-er-ir",
+      "g:se-impersonal",
       "g:ser-identity",
       "l:aprender",
-      "l:caminar",
       "l:ciudad",
+      "l:mover",
       "l:protegido",
       "l:ser",
       "p:quantifiers-basic"
@@ -52668,21 +52715,24 @@
   },
   {
     "id": "u57-1907",
-    "es": "Todo hijo único es muy protegido, o eso dicen.",
-    "en": "Every only child is very sheltered, or so they say.",
+    "es": "Dicen que el hijo único es siempre protegido.",
+    "en": "They say an only child is always sheltered.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hijo-unico",
+      "g:gender-articles",
       "g:ser-identity",
       "g:stem-e-i",
+      "g:that-clauses",
       "l:decir",
       "l:hijo",
       "l:protegido",
       "l:ser",
+      "l:siempre",
       "l:único",
-      "p:demonstratives-basic",
-      "p:quantifiers-basic"
+      "p:frequency-scale",
+      "p:me-contaron-que"
     ],
     "targets": [
       "l:protegido"
@@ -52694,17 +52744,15 @@
   },
   {
     "id": "u57-1908",
-    "es": "Tomás siempre fue muy protegido por Rosa.",
-    "en": "Tomás was always very protected by Rosa.",
+    "es": "Rosa siempre tuvo a Tomás muy protegido.",
+    "en": "Rosa always kept Tomás very protected.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:por-para-1",
-      "g:preterite-ser-ir-hacer",
-      "g:ser-identity",
+      "g:preterite-irregular-strong",
       "l:proteger",
-      "l:ser",
       "l:siempre",
+      "l:tener",
       "p:frequency-scale",
       "p:quantifiers-basic"
     ],
@@ -52716,13 +52764,14 @@
   },
   {
     "id": "u57-1909",
-    "es": "Mi sobrino es muy protegido en casa, y nunca había cruzado una calle solo.",
-    "en": "My nephew is very sheltered at home, and had never crossed a street alone.",
+    "es": "Mi sobrino es tan protegido en casa que nunca había cruzado una calle solo.",
+    "en": "My nephew is so sheltered at home that he had never crossed a street alone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:pluperfect",
+      "g:relative-que",
       "g:ser-identity",
       "l:calle",
       "l:casa",
@@ -52731,8 +52780,7 @@
       "l:ser",
       "l:sobrino",
       "p:frequency-scale",
-      "p:possessives-basic",
-      "p:quantifiers-basic"
+      "p:possessives-basic"
     ],
     "targets": [
       "l:protegido"
@@ -52799,28 +52847,27 @@
   },
   {
     "id": "u57-1912",
-    "es": "Es muy protegido por sus padres, y por eso todo le duele el doble.",
-    "en": "He is very sheltered by his parents, and so everything hurts him twice as much.",
+    "es": "Creció tan protegido por sus padres que ahora todo le duele el doble.",
+    "en": "He grew up so sheltered by his parents that now everything hurts him twice as much.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:cause-result",
       "g:gender-articles",
       "g:gustar-full",
       "g:por-para-1",
-      "g:ser-identity",
+      "g:preterite-er-ir",
+      "g:relative-que",
       "g:stem-boot",
+      "l:ahora",
+      "l:crecer",
       "l:doble",
       "l:doler",
       "l:padres",
       "l:proteger",
-      "l:ser",
-      "p:demonstratives-basic",
       "p:doler",
       "p:masculine-plural-mixed",
       "p:me-duele",
-      "p:possessives-basic",
-      "p:quantifiers-basic"
+      "p:possessives-basic"
     ],
     "targets": [],
     "kind": "statement",

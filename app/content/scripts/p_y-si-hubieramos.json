@@ -123,7 +123,9 @@
     {
       "prompt": "What if we'd never met?",
       "answer": "¿Y si no nos hubiéramos conocido?",
-      "accept": [],
+      "accept": [
+        "¿Y si nunca nos hubiéramos conocido?"
+      ],
       "why": "*No* and *nos* both go before *hubiéramos*."
     },
     {
