@@ -1,0 +1,422 @@
+{
+  "id": "ch127",
+  "unit": "u42",
+  "title": "Música de espera",
+  "text": "El notario Arciniegas le entregó la copia en un sobre con dos sellos.\nTomás: Le agradezco mucho su paciencia, doctor.\nArciniegas: Ahora sí habla usted como un bogotano. Salude a su loro de mi parte.\nEn la Burra, Tomás le mandó un audio a Yesid.\nTomás: Hermano, ya tenemos la copia. Te lo agradezco de verdad.\nYesid: Tranquilo. Doña Teresa me está engordando con arepas. Aquí me quedo hasta que abran la vía.\nA las diez, Tomás llamó al juzgado desde la mesa de la ventana. Vale, Hernando y Mariana se sentaron alrededor del celular, como en una sesión de espiritismo.\nOperadora: Juzgado Cuarto Civil, buenos días.\nTomás: Buenos días, señora. ¿Me comunica con el secretario del despacho, por favor?\nOperadora: Permítame un momento.\nSonó una flauta. Era «Para Elisa», muy lenta. Sonó tres veces, y después contestó alguien del archivo, que colgó sin decir adiós. Tomás llamó otra vez. Otra vez la flauta.\nHernando: Esa canción la tocaban en los buses en 1985.\nPor fin contestó una voz seca, muy correcta.\nBenavides: Secretaría del despacho, habla Gustavo Benavides.\nTomás se puso de pie, como en una iglesia.\nTomás: Doctor Benavides, muy buenos días. Le habla Tomás Herrera. Le agradecería que me indicara cómo solicitarle al juez una prueba de laboratorio.\nBenavides: ¿Sobre qué asunto, señor Herrera?\nTomás: Una huella. Alguien firmó un contrato con el nombre de un muerto.\nBenavides: Eso debe presentarse por escrito, en papel, con dos copias. Y lo antes posible. El juez sale de vacaciones el viernes.\nToda la mañana, Tomás había practicado en voz alta delante de la planta. Alguien había estado escuchando.\nSimón: ¡Le agradecería que me pasara el tinto! ¡Le agradecería, parce!\nHubo una pausa larga en el teléfono. Hernando le tapó el pico al loro, demasiado tarde.\nBenavides: Señor Herrera, ¿ese es el loro de la televisión?\nTomás: Lamentablemente, doctor.\nBenavides: Mi hija lo sigue en internet. Lo ve todas las noches.\nPor primera vez, la voz seca sonó un poco humana.\nBenavides: Traiga el escrito el jueves a las ocho, antes de que el despacho se llene. Y salúdeme al loro.\nColgó con la camisa mojada.\nVale: Lo hiciste en formal perfecto. Hasta el loro te salió bien.\nMariana: El escrito lo hago yo esta noche. Tú lo firmas.\nHernando: Y yo lo llevo en la Burra.\nSimón: ¡Le agradecería! ¡Le agradecería que...!\nVale: Que te calles, Simón. Te lo pido con todo respeto.\nA las cuatro sonó el celular de Tomás. Era un número que no conocía.\nMujer: Buenas tardes, señor Herrera. Le habla Daniela Rey, asistente del señor Ricardo Altamira. El señor Altamira sabe lo de la huella, y le gustaría invitarlo a su oficina mañana.",
+  "gloss": [
+    {
+      "es": "notario",
+      "en": "notary"
+    },
+    {
+      "es": "sellos",
+      "en": "stamps"
+    },
+    {
+      "es": "bogotano",
+      "en": "person from Bogotá"
+    },
+    {
+      "es": "Le agradezco mucho su paciencia, doctor.",
+      "en": "I'm very grateful for your patience, doctor."
+    },
+    {
+      "es": "Salude a su loro de mi parte.",
+      "en": "Say hello to your parrot for me."
+    },
+    {
+      "es": "Te lo agradezco de verdad.",
+      "en": "I really appreciate it."
+    },
+    {
+      "es": "Doña Teresa me está engordando con arepas.",
+      "en": "Doña Teresa is fattening me up with arepas."
+    },
+    {
+      "es": "hasta que abran la vía",
+      "en": "until they open the road"
+    },
+    {
+      "es": "juzgado",
+      "en": "court"
+    },
+    {
+      "es": "como en una sesión de espiritismo",
+      "en": "as if at a séance"
+    },
+    {
+      "es": "Operadora",
+      "en": "Operator"
+    },
+    {
+      "es": "¿Me comunica con el secretario del despacho, por favor?",
+      "en": "Could you put me through to the court clerk, please?"
+    },
+    {
+      "es": "flauta",
+      "en": "flute"
+    },
+    {
+      "es": "contestó alguien del archivo, que colgó sin decir adiós",
+      "en": "someone from the archive answered and hung up without saying goodbye"
+    },
+    {
+      "es": "una voz seca",
+      "en": "a dry voice"
+    },
+    {
+      "es": "Le agradecería que me indicara cómo solicitarle al juez una prueba de laboratorio.",
+      "en": "I would be grateful if you could tell me how to ask the judge for a lab test."
+    },
+    {
+      "es": "Eso debe presentarse por escrito",
+      "en": "That must be submitted in writing"
+    },
+    {
+      "es": "le tapó el pico al loro",
+      "en": "covered the parrot's beak"
+    },
+    {
+      "es": "Lamentablemente",
+      "en": "Unfortunately"
+    },
+    {
+      "es": "el escrito",
+      "en": "the written request"
+    },
+    {
+      "es": "antes de que el despacho se llene",
+      "en": "before the office fills up"
+    },
+    {
+      "es": "salúdeme al loro",
+      "en": "say hello to the parrot for me"
+    },
+    {
+      "es": "Hasta el loro te salió bien.",
+      "en": "Even the parrot worked out for you."
+    },
+    {
+      "es": "Que te calles, Simón.",
+      "en": "Be quiet, Simón."
+    },
+    {
+      "es": "Te lo pido con todo respeto.",
+      "en": "I ask you with all due respect."
+    },
+    {
+      "es": "asistente",
+      "en": "assistant"
+    },
+    {
+      "es": "El señor Altamira sabe lo de la huella",
+      "en": "Mr Altamira knows about the fingerprint"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Tomás stand up during the call?",
+      "options": [
+        "He feels the clerk deserves it, as if he were in a church",
+        "He wants to see the parrot",
+        "The phone has no signal",
+        "Vale tells him to"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does the clerk need, and by when?",
+      "options": [
+        "A written request with two copies, before the judge goes on holiday on Friday",
+        "A phone call from Yesid on Monday",
+        "The original contract by tonight",
+        "Nothing, he can order the test himself"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does the clerk become a little friendlier?",
+      "options": [
+        "His daughter follows Simón online",
+        "Tomás offers him a coffee",
+        "He knew Rosa",
+        "Mariana interviewed him once"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Quién llama a Tomás al final?",
+      "options": [
+        "La asistente de Ricardo Altamira",
+        "El secretario del juzgado",
+        "Doña Teresa",
+        "El notario Arciniegas"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What music does Tomás hear while he waits?",
+      "options": [
+        "\"Für Elise\" on a slow flute",
+        "A bolero",
+        "A Christmas song",
+        "Nothing, just silence"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who first answers when Tomás is put through?",
+      "options": [
+        "Someone in the archive, who hangs up",
+        "The judge",
+        "Doña Teresa",
+        "Altamira's assistant"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Where is Yesid staying while the road is closed?",
+      "options": [
+        "With doña Teresa in Bucaramanga",
+        "In a hotel in Bogotá",
+        "On the bus",
+        "With his uncle Wilson"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Altamira already knows about the fingerprint, and now his polished assistant wants Tomás in their office. Tomorrow Tomás has to ask for something with a smile, while Mariana's recorder runs in his pocket.",
+  "requires": [
+    "c:bien-y-tu",
+    "c:en-serio",
+    "c:era",
+    "c:hago-salgo-vengo",
+    "c:hola-buenos-dias",
+    "c:permitame-un-momento",
+    "c:por-favor",
+    "c:tienes",
+    "c:tranquilo",
+    "g:adjective-agreement",
+    "g:adverbs-mente",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:gustar-basic",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:le-doubling",
+    "g:object-pronoun-position",
+    "g:pluperfect",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:quantifiers",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-e-i",
+    "g:subj-cuando-future",
+    "g:subj-past-triggers",
+    "g:subj-purpose-full",
+    "g:subj-wanting",
+    "g:tener-que-hay-que",
+    "g:that-clauses",
+    "g:verbs-of-change",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cerca-de",
+    "p:dates-years",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:don-dona-nombre",
+    "p:event-ser-en",
+    "p:humedo-mojado",
+    "p:indefinites-basic",
+    "p:le-agradeceria-que",
+    "p:llevar-traer",
+    "p:lo-antes-posible",
+    "p:lo-de",
+    "p:lo-de-topic",
+    "p:me-comunica-con",
+    "p:me-te-nos-objects",
+    "p:nos-vemos-a-las",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:personal-a",
+    "p:poco-un-poco",
+    "p:posicion-precisa",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:postura",
+    "p:preguntar-pedir",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:saludos-de-mi-parte",
+    "p:senor-don-article",
+    "p:te-invito-a",
+    "p:te-lo-agradezco",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:todos-los-dias",
+    "p:veces-al",
+    "p:ver-oir-bien-mal"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:agradecer",
+    "l:ahora",
+    "l:alrededor",
+    "l:alto",
+    "l:antes",
+    "l:aquí",
+    "l:archivo",
+    "l:arepa",
+    "l:asistente",
+    "l:asunto",
+    "l:audio",
+    "l:bien",
+    "l:bogotano",
+    "l:buena",
+    "l:bueno",
+    "l:bus",
+    "l:calle",
+    "l:camisa",
+    "l:canción",
+    "l:celular",
+    "l:colgar",
+    "l:comer",
+    "l:comunicar",
+    "l:conocer",
+    "l:contestar",
+    "l:contrato",
+    "l:copia",
+    "l:correcto",
+    "l:cómo",
+    "l:deber",
+    "l:decir",
+    "l:delante",
+    "l:despacho",
+    "l:después",
+    "l:doctor",
+    "l:día",
+    "l:engordar",
+    "l:entregar",
+    "l:escribir",
+    "l:escuchar",
+    "l:estar",
+    "l:favor",
+    "l:fin",
+    "l:firmar",
+    "l:formal",
+    "l:gustar",
+    "l:hablar",
+    "l:hacer",
+    "l:hermano",
+    "l:hija",
+    "l:huella",
+    "l:humano",
+    "l:iglesia",
+    "l:indicar",
+    "l:internet",
+    "l:invitar",
+    "l:jueves",
+    "l:juez",
+    "l:juzgado",
+    "l:laboratorio",
+    "l:lamentablemente",
+    "l:largo",
+    "l:lento",
+    "l:llamar",
+    "l:llenar",
+    "l:llevar",
+    "l:loro",
+    "l:mandar",
+    "l:mañana",
+    "l:mesa",
+    "l:mojado",
+    "l:momento",
+    "l:morir",
+    "l:mujer",
+    "l:noche",
+    "l:nombre",
+    "l:número",
+    "l:oficina",
+    "l:operador",
+    "l:paciencia",
+    "l:papel",
+    "l:parce",
+    "l:parte",
+    "l:pasarse",
+    "l:pausa",
+    "l:pedir",
+    "l:perfecto",
+    "l:permitir",
+    "l:pico",
+    "l:pie",
+    "l:planta",
+    "l:ponerse",
+    "l:posible",
+    "l:practicar",
+    "l:presentar",
+    "l:prueba",
+    "l:quedarse",
+    "l:qué",
+    "l:respeto",
+    "l:saber",
+    "l:salir",
+    "l:saludar",
+    "l:seco",
+    "l:secretario",
+    "l:secretaría",
+    "l:seguir",
+    "l:sello",
+    "l:sentarse",
+    "l:ser",
+    "l:sesión",
+    "l:señor",
+    "l:señora",
+    "l:sobre",
+    "l:solicitar",
+    "l:sonar",
+    "l:tapar",
+    "l:tarde",
+    "l:televisión",
+    "l:teléfono",
+    "l:tener",
+    "l:tinto",
+    "l:tocar",
+    "l:traer",
+    "l:tranquilo",
+    "l:vacación",
+    "l:ventana",
+    "l:ver",
+    "l:verdad",
+    "l:vez",
+    "l:viernes",
+    "l:voz",
+    "l:vía"
+  ]
+}

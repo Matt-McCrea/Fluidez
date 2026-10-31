@@ -1,0 +1,420 @@
+{
+  "id": "ch129",
+  "unit": "u42",
+  "title": "Huelga",
+  "text": "La pancarta cubría toda la entrada del juzgado: «SINDICATO JUDICIAL EN HUELGA».\nHernando: Yo estuve veinte años en el sindicato de taxistas. Una huelga siempre llega el día que uno más la necesita abierta.\nEn la puerta los esperaba un muchacho con chaleco y muchas carpetas.\nMuchacho: ¿El señor Herrera? Soy el ayudante del doctor Benavides. El doctor está en la huelga, pero me dejó una nota.\nLa nota decía: «Si viene el señor del loro, atiéndalo».\nAyudante: Hay un juez sustituto para las urgencias. Déjeme ver su disponibilidad.\nAyudante: El sustituto no tiene disponibilidad hasta el lunes, pero su escrito ya está radicado. El lunes el sustituto firma la orden.\nTomás: Es muy amable de su parte, joven.\nAyudante: Amable no. Mi jefe me da miedo.\nPor la tarde, Mariana encontró a Duarte en una cafetería de Chapinero.\nDuarte: Usted es la entrevistadora. Yo soy el entrevistado. Él, ¿qué es?\nMariana: Él es el dueño del café que usted quería quitarle a una muerta.\nDuarte: Que quede claro: no fue un despido. Fue una renuncia.\nMariana: ¿Una renuncia? Altamira dice que fue un despido.\nDuarte: Altamira dice muchas cosas. Ayer su bufete me puso una demanda. Mañana sale en los periódicos que yo hice todo solo.\nMariana: ¿Y la señorita Rey?\nDuarte: Le dieron un ascenso. Por sonreír. Yo trabajé quince años para ese hombre, y nunca recibí un ascenso.\nDuarte tenía la camisa mal planchada.\nDuarte: A mi edad, el desempleo no es una etapa. Es un destino.\nTomás: Yo también conocí el desempleo. En Toronto me despidieron por correo, un viernes a las cinco.\nDuarte lo miró por primera vez.\nDuarte: ¿Puedo hacerle una pregunta, señor Herrera? ¿Por qué no vendió?\nTomás: No me dio tiempo de pensarlo. Cuando llegué, ese café ya era mi familia.\nMariana: Un buen entrevistador no deja que el entrevistado pregunte. La pregunta es mía: ¿quién puso esa huella?\nDuarte: Un muchacho del bufete. Le pagaron trescientos mil pesos. Yo tengo su nombre, y tengo el correo de Altamira que lo ordenó.\nDuarte: Se lo doy al juez sustituto el lunes, con una condición: quiero que el bufete retire la demanda. Si no, ustedes no tienen nada. Su abuela habría dicho que sí en un segundo.\nTomás: ¿Usted conoció a Rosa?\nDuarte: Una vez fui al café a hacer una oferta. Me sirvió un tinto y no me dejó hablar.\nDuarte: Altamira contaba con una sola cosa: que los Herrera nunca se hablaban. Si Joaquín hubiera vuelto a Bogotá una sola vez, nadie habría podido usar su nombre.\nEsa noche, Yesid llamó desde un bus.\nYesid: Hermano, abrieron la vía. Llego mañana a las cinco. ¿Allá hace frío?",
+  "gloss": [
+    {
+      "es": "pancarta",
+      "en": "banner"
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "señorita",
+      "en": "Miss"
+    },
+    {
+      "es": "juzgado",
+      "en": "court"
+    },
+    {
+      "es": "SINDICATO JUDICIAL EN HUELGA",
+      "en": "COURT WORKERS' UNION ON STRIKE"
+    },
+    {
+      "es": "Una huelga siempre llega el día que uno más la necesita abierta.",
+      "en": "A strike always comes on the day you most need the place open."
+    },
+    {
+      "es": "chaleco",
+      "en": "vest"
+    },
+    {
+      "es": "carpetas",
+      "en": "folders"
+    },
+    {
+      "es": "atiéndalo",
+      "en": "look after him"
+    },
+    {
+      "es": "juez sustituto",
+      "en": "stand-in judge"
+    },
+    {
+      "es": "su escrito ya está radicado",
+      "en": "your written request has been filed"
+    },
+    {
+      "es": "Es muy amable de su parte, joven.",
+      "en": "That is very kind of you, young man."
+    },
+    {
+      "es": "Mi jefe me da miedo.",
+      "en": "My boss scares me."
+    },
+    {
+      "es": "Él es el dueño del café que usted quería quitarle a una muerta.",
+      "en": "He owns the café you wanted to take from a dead woman."
+    },
+    {
+      "es": "Que quede claro",
+      "en": "Let me be clear"
+    },
+    {
+      "es": "bufete",
+      "en": "law firm"
+    },
+    {
+      "es": "su bufete me puso una demanda",
+      "en": "his law firm sued me"
+    },
+    {
+      "es": "Le dieron un ascenso. Por sonreír.",
+      "en": "They gave her a promotion. For smiling."
+    },
+    {
+      "es": "mal planchada",
+      "en": "badly ironed"
+    },
+    {
+      "es": "el desempleo no es una etapa",
+      "en": "unemployment is not a phase"
+    },
+    {
+      "es": "me despidieron por correo",
+      "en": "they fired me by email"
+    },
+    {
+      "es": "No me dio tiempo de pensarlo.",
+      "en": "I didn't have time to think about it."
+    },
+    {
+      "es": "Un buen entrevistador no deja que el entrevistado pregunte.",
+      "en": "A good interviewer does not let the interviewee ask the questions."
+    },
+    {
+      "es": "Su abuela habría dicho que sí en un segundo.",
+      "en": "Your grandmother would have said yes in a second."
+    },
+    {
+      "es": "Altamira contaba con una sola cosa",
+      "en": "Altamira was counting on one thing"
+    },
+    {
+      "es": "Si Joaquín hubiera vuelto a Bogotá una sola vez, nadie habría podido usar su nombre.",
+      "en": "If Joaquín had come back to Bogotá just once, nobody could have used his name."
+    },
+    {
+      "es": "abrieron la vía",
+      "en": "they have opened the road"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does the clerk's assistant help Tomás?",
+      "options": [
+        "The clerk left a note telling him to look after \"the man with the parrot\"",
+        "Tomás pays him",
+        "Hernando knows him from the taxi union",
+        "The strike is over"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Duarte insist about leaving Altamira?",
+      "options": [
+        "He says he resigned and was not fired",
+        "He says he was fired by email",
+        "He says he still works there",
+        "He says Paola fired him"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is Duarte's condition for giving his evidence?",
+      "options": [
+        "That the law firm drops its lawsuit against him",
+        "That Tomás sells the café",
+        "That Mariana does not publish his name",
+        "A job at the café"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Quién puso la huella en el contrato, según Duarte?",
+      "options": [
+        "Un muchacho del bufete",
+        "El tío de Yesid",
+        "Paola Rey",
+        "El notario"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What was Altamira counting on, according to Duarte?",
+      "options": [
+        "That the Herreras never spoke to each other",
+        "That the court would go on strike",
+        "That Tomás would go back to Toronto",
+        "That Rosa had no letters"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "How did Tomás lose his job in Toronto?",
+      "options": [
+        "By email, on a Friday at five",
+        "In a meeting with his boss",
+        "By phone",
+        "He resigned"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How did Rosa treat Duarte when he came to the café?",
+      "options": [
+        "She served him a coffee and did not let him speak",
+        "She threw him out",
+        "She signed his offer",
+        "She called the police"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How long did Hernando belong to the taxi drivers' union?",
+      "options": [
+        "Twenty years",
+        "Two years",
+        "Forty years",
+        "He never belonged to it"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Duarte's words stay with everyone: if Joaquín had come back just once, none of this would have happened. Tomorrow at five Yesid steps off a bus into Bogotá, and he has packed for the Caribbean.",
+  "requires": [
+    "c:a-cuantas-cuotas",
+    "c:ayer-anoche",
+    "c:claro-listo",
+    "c:compre-trabaje",
+    "c:era",
+    "c:fui",
+    "c:hasta-el-lunes",
+    "c:hay",
+    "c:me-regala",
+    "c:muy-amable",
+    "c:puedo",
+    "c:quiero",
+    "c:tengo",
+    "c:tienes",
+    "c:una-vez",
+    "g:adjective-agreement",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:demonstratives",
+    "g:diminutives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:passive-se",
+    "g:por-para-1",
+    "g:possessives-stressed",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:si-hypothetical",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-influence",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:amable-de-su-parte",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:con-sin",
+    "p:contar-con",
+    "p:costar-pagar",
+    "p:cuando-basic",
+    "p:dar-tiempo",
+    "p:days-el-lunes",
+    "p:de-owner",
+    "p:dejame-que-te-ayude",
+    "p:frequency-scale",
+    "p:hace-frio",
+    "p:ir-a-venir-de-place",
+    "p:los-garcia",
+    "p:me-da-miedo",
+    "p:me-da-miedo-que",
+    "p:me-te-nos-objects",
+    "p:no-hasta",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:para-inf",
+    "p:personal-a",
+    "p:por-la-manana",
+    "p:por-que-no",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:prep-questions-basic",
+    "p:puedo-hacerte-una-pregunta",
+    "p:quantifiers-basic",
+    "p:que-subj-deseo",
+    "p:quedar-participio",
+    "p:question-word-order",
+    "p:saber-conocer",
+    "p:se-reciproco",
+    "p:senor-don-article",
+    "p:tambien-tampoco",
+    "p:telling-time"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:abuela",
+    "l:allá",
+    "l:amable",
+    "l:ascenso",
+    "l:atender",
+    "l:ayer",
+    "l:ayudante",
+    "l:año",
+    "l:buen",
+    "l:bufete",
+    "l:bus",
+    "l:cafetería",
+    "l:café",
+    "l:camisa",
+    "l:carpeta",
+    "l:chaleco",
+    "l:claro",
+    "l:condición",
+    "l:conocer",
+    "l:contar",
+    "l:correo",
+    "l:cosa",
+    "l:cubrir",
+    "l:dar",
+    "l:decir",
+    "l:dejar",
+    "l:demanda",
+    "l:desempleo",
+    "l:despedir",
+    "l:despido",
+    "l:destino",
+    "l:disponibilidad",
+    "l:doctor",
+    "l:dueño",
+    "l:día",
+    "l:edad",
+    "l:encontrar",
+    "l:entrada",
+    "l:entrevistado",
+    "l:entrevistador",
+    "l:escribir",
+    "l:esperar",
+    "l:estar",
+    "l:etapa",
+    "l:familia",
+    "l:firmar",
+    "l:frío",
+    "l:hablar",
+    "l:hacer",
+    "l:hermano",
+    "l:hombre",
+    "l:huelga",
+    "l:huella",
+    "l:ir",
+    "l:jefe",
+    "l:joven",
+    "l:juez",
+    "l:juzgado",
+    "l:llamar",
+    "l:llegar",
+    "l:loro",
+    "l:lunes",
+    "l:mal",
+    "l:mañana",
+    "l:miedo",
+    "l:mirar",
+    "l:morir",
+    "l:muchacho",
+    "l:necesitar",
+    "l:noche",
+    "l:nombre",
+    "l:nota",
+    "l:oferta",
+    "l:orden",
+    "l:ordenar",
+    "l:pagar",
+    "l:pancarta",
+    "l:parte",
+    "l:pensar",
+    "l:periódico",
+    "l:peso",
+    "l:planchado",
+    "l:poder",
+    "l:poner",
+    "l:pregunta",
+    "l:preguntar",
+    "l:puerta",
+    "l:quedar",
+    "l:querer",
+    "l:quitar",
+    "l:quién",
+    "l:qué",
+    "l:recibir",
+    "l:renuncia",
+    "l:retirar",
+    "l:salir",
+    "l:ser",
+    "l:servir",
+    "l:señor",
+    "l:señorito",
+    "l:siempre",
+    "l:sindicato",
+    "l:sonreír",
+    "l:sustituto",
+    "l:tarde",
+    "l:taxista",
+    "l:tener",
+    "l:tiempo",
+    "l:tinto",
+    "l:trabajar",
+    "l:unir",
+    "l:urgencia",
+    "l:usar",
+    "l:vender",
+    "l:venir",
+    "l:ver",
+    "l:vez",
+    "l:viernes",
+    "l:volver",
+    "l:vía"
+  ]
+}

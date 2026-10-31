@@ -1,0 +1,384 @@
+{
+  "id": "ch128",
+  "unit": "u42",
+  "title": "Dos grabadoras",
+  "text": "Mariana le metió la grabadora en el bolsillo de la camisa y le dio una sola instrucción.\nMariana: Sonríe todo el tiempo.\nVale le puso en las manos un pastel de queso.\nVale: En Medellín nadie llega con las manos vacías.\nTomás: ¿Ni a la casa del enemigo?\nVale: Menos a la casa del enemigo.\nLas oficinas de Altamira estaban en una antigua fábrica de chocolate, toda de vidrio por dentro. Todavía olía un poco a cacao.\nPaola Rey tenía un traje blanco y una sonrisa que no se movía nunca. Puso un aparato pequeño sobre la mesa.\nPaola: Por seguridad, grabamos todas nuestras reuniones. Me imagino que no le molesta.\nTomás: Para nada.\nTomás sonrió. En su bolsillo, la grabadora de Mariana también trabajaba.\nPaola: Usted antes se dedicaba al software, ¿verdad? Y ahora se dedica a los cafés.\nPaola: El señor Altamira quiere enterrar este asunto. Enfoquémonos en el futuro. Si usted retira la solicitud del laboratorio, nosotros retiramos el contrato y le pagamos el doble por su mitad.\nTomás respiró, y subió la escalera de Vale.\nTomás: Le agradezco la oferta. ¿Sería posible ver el contrato original? Solo un momentico.\nPaola: Lo siento mucho. Está prohibido que los documentos salgan de esta oficina.\nTomás: No quería sacarlo. Quería mirarlo.\nPaola: Entonces le pido un poquito de paciencia. Antes quería decirle algo, señor Herrera. El señor Duarte ya no trabaja con nosotros. Si hubo algún problema con ese contrato, fue cosa de él.\nTomás sonrió. Le dolía la cara.\nTomás: ¿Y el señor Altamira no sabía nada?\nPaola: El señor Altamira firma muchos papeles.\nEntonces Tomás se movió, y su brazo tocó el bolsillo. La grabadora de Mariana empezó a sonar, muy fuerte, con la voz de Simón: «¡Le agradecería que me pasara el tinto! ¡Le agradecería, parce!». Era la llamada de ayer. Mariana la había grabado para reírse.\nLa sonrisa de Paola desapareció un segundo. Miró el bolsillo de Tomás, y después su propio aparato.\nPaola: Ya veo. Entonces somos dos.\nTomás: Tres, con el loro.\nPaola apagó su aparato. Por primera vez, su sonrisa se movió.\nPaola: Mi jefe me dio esta reunión porque sé sonreír. Pero yo no entierro a nadie. Si yo fuera usted, buscaría a Duarte antes que él.\nTomás: ¿Por qué me lo dice?\nPaola: Porque usted trajo un pastel.\nEn la calle, Tomás llamó a Mariana.\nMariana: ¿Y? ¿Sonreíste?\nTomás: Tanto que no siento la boca. Mariana, despidieron a Duarte. Y Altamira le quiere echar la culpa de todo.\nMariana: Entonces Duarte ya no tiene jefe que proteger. Lo busco esta noche.\nTomás miró la fábrica. En la ventana del tercer piso, Paola comía pastel de queso.",
+  "gloss": [
+    {
+      "es": "grabadora",
+      "en": "recorder"
+    },
+    {
+      "es": "pastel de queso",
+      "en": "cheese pastry"
+    },
+    {
+      "es": "con las manos vacías",
+      "en": "empty-handed"
+    },
+    {
+      "es": "Menos a la casa del enemigo.",
+      "en": "Especially not to the enemy's house."
+    },
+    {
+      "es": "vidrio",
+      "en": "glass"
+    },
+    {
+      "es": "cacao",
+      "en": "cocoa"
+    },
+    {
+      "es": "Para nada.",
+      "en": "Not at all."
+    },
+    {
+      "es": "Enfoquémonos en el futuro.",
+      "en": "Let's focus on the future."
+    },
+    {
+      "es": "Si usted retira la solicitud del laboratorio",
+      "en": "If you withdraw the request for the lab"
+    },
+    {
+      "es": "le pagamos el doble por su mitad",
+      "en": "we will pay you double for your half"
+    },
+    {
+      "es": "subió la escalera de Vale",
+      "en": "climbed Vale's ladder"
+    },
+    {
+      "es": "momentico",
+      "en": "a quick moment"
+    },
+    {
+      "es": "Está prohibido que los documentos salgan de esta oficina.",
+      "en": "Documents are not allowed to leave this office."
+    },
+    {
+      "es": "fue cosa de él",
+      "en": "that was his doing"
+    },
+    {
+      "es": "El señor Altamira firma muchos papeles.",
+      "en": "Mr Altamira signs a lot of papers."
+    },
+    {
+      "es": "Mariana la había grabado para reírse.",
+      "en": "Mariana had recorded it for a laugh."
+    },
+    {
+      "es": "Tres, con el loro.",
+      "en": "Three, counting the parrot."
+    },
+    {
+      "es": "Pero yo no entierro a nadie.",
+      "en": "But I don't bury anyone."
+    },
+    {
+      "es": "Si yo fuera usted, buscaría a Duarte antes que él.",
+      "en": "If I were you, I would look for Duarte before he does."
+    },
+    {
+      "es": "Tanto que no siento la boca.",
+      "en": "So much I can't feel my mouth."
+    },
+    {
+      "es": "despidieron a Duarte",
+      "en": "they fired Duarte"
+    },
+    {
+      "es": "Altamira le quiere echar la culpa de todo",
+      "en": "Altamira wants to blame him for everything"
+    },
+    {
+      "es": "Entonces Duarte ya no tiene jefe que proteger.",
+      "en": "Then Duarte has no boss left to protect."
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does Altamira offer through Paola?",
+      "options": [
+        "To drop the contract and pay double, if Tomás drops the lab request",
+        "To build the hotel somewhere else",
+        "A job for Tomás in software",
+        "To pay Yesid's bus ticket"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who does Paola blame for any \"irregularity\" with the contract?",
+      "options": [
+        "Duarte, who no longer works for them",
+        "Yesid's uncle",
+        "The notary",
+        "Tomás"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How does Paola find out that Tomás is recording?",
+      "options": [
+        "His arm sets off the recorder, and it plays Simón's voice",
+        "Mariana phones during the meeting",
+        "She searches his pockets",
+        "The guard tells her"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Por qué le da Paola el consejo sobre Duarte?",
+      "options": [
+        "Porque Tomás trajo un pastel",
+        "Porque Tomás le pagó",
+        "Porque Mariana se lo pidió",
+        "Porque su jefe se lo ordenó"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What did the building used to be?",
+      "options": [
+        "A chocolate factory",
+        "A bank",
+        "A church",
+        "A hotel"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Paola already know about Tomás?",
+      "options": [
+        "That he used to work in software",
+        "That he is afraid of planes",
+        "That he cannot swim",
+        "Where Yesid is staying"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is Paola doing at the very end?",
+      "options": [
+        "Eating the cheese pastry at a window",
+        "Phoning Altamira",
+        "Throwing the pastry away",
+        "Following Tomás into the street"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Altamira has fired Duarte and plans to blame him for everything, so Duarte has nobody left to protect. Tomorrow Mariana finds him, and the court where Tomás must deliver his request has gone on strike.",
+  "requires": [
+    "c:ayer-anoche",
+    "c:entonces-bueno",
+    "c:era",
+    "c:me-imagino",
+    "c:no-cierto",
+    "c:no-se",
+    "c:para-nada",
+    "c:porque",
+    "c:sentido-pesame",
+    "c:tienes",
+    "c:un-momentico",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:conditional",
+    "g:demonstratives",
+    "g:diminutives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indefinites",
+    "g:indirect-objects",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:passive-se",
+    "g:pluperfect",
+    "g:por-para-1",
+    "g:possessives",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-hypothetical",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-past-triggers",
+    "g:subj-value",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:costar-pagar",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:doler",
+    "p:empezar-terminar",
+    "p:es-adj-inf",
+    "p:es-obligatorio",
+    "p:esta-prohibido",
+    "p:esta-prohibido-que",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:le-agradeceria-que",
+    "p:llevar-traer",
+    "p:me-duele",
+    "p:me-te-nos-objects",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:personal-a",
+    "p:poco-un-poco",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:queria-cortesia",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:seria-posible",
+    "p:sobre-todo-solo",
+    "p:somos-cuatro",
+    "p:te-lo-agradezco",
+    "p:time-sequence-basic",
+    "p:todos-los-dias",
+    "p:viejo-antiguo-mayor",
+    "p:ya-todavia-basic"
+  ],
+  "lexemes": [
+    "l:agradecer",
+    "l:ahora",
+    "l:antes",
+    "l:antiguo",
+    "l:apagar",
+    "l:aparato",
+    "l:asunto",
+    "l:ayer",
+    "l:blanco",
+    "l:boca",
+    "l:bolsillo",
+    "l:brazo",
+    "l:buscar",
+    "l:cacao",
+    "l:café",
+    "l:calle",
+    "l:camisa",
+    "l:cara",
+    "l:casa",
+    "l:chocolate",
+    "l:comer",
+    "l:contrato",
+    "l:cosa",
+    "l:culpa",
+    "l:dar",
+    "l:decir",
+    "l:dedicar",
+    "l:dentro",
+    "l:desaparecer",
+    "l:despedir",
+    "l:después",
+    "l:doble",
+    "l:documento",
+    "l:doler",
+    "l:echar",
+    "l:empezar",
+    "l:enemigo",
+    "l:enterrar",
+    "l:escalera",
+    "l:estar",
+    "l:firmar",
+    "l:fuerte",
+    "l:futuro",
+    "l:fábrica",
+    "l:grabadora",
+    "l:grabar",
+    "l:imaginarse",
+    "l:instrucción",
+    "l:jefe",
+    "l:laboratorio",
+    "l:llamada",
+    "l:llamar",
+    "l:llegar",
+    "l:loro",
+    "l:mano",
+    "l:mesa",
+    "l:meter",
+    "l:mirar",
+    "l:mitad",
+    "l:molestar",
+    "l:mover",
+    "l:noche",
+    "l:oferta",
+    "l:oficina",
+    "l:oler",
+    "l:original",
+    "l:paciencia",
+    "l:pagar",
+    "l:papel",
+    "l:parce",
+    "l:pasarse",
+    "l:pastel",
+    "l:pedir",
+    "l:pequeño",
+    "l:piso",
+    "l:poner",
+    "l:poquito",
+    "l:posible",
+    "l:problema",
+    "l:prohibir",
+    "l:propio",
+    "l:proteger",
+    "l:querer",
+    "l:queso",
+    "l:qué",
+    "l:respirar",
+    "l:retirar",
+    "l:reunión",
+    "l:reír",
+    "l:saber",
+    "l:sacar",
+    "l:salir",
+    "l:seguridad",
+    "l:sentir",
+    "l:ser",
+    "l:señor",
+    "l:solicitud",
+    "l:sonar",
+    "l:sonreír",
+    "l:sonrisa",
+    "l:subir",
+    "l:tener",
+    "l:tiempo",
+    "l:tinto",
+    "l:tocar",
+    "l:trabajar",
+    "l:traer",
+    "l:traje",
+    "l:vacío",
+    "l:ventana",
+    "l:ver",
+    "l:verdad",
+    "l:vez",
+    "l:vidrio",
+    "l:voz"
+  ]
+}

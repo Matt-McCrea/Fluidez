@@ -1,0 +1,408 @@
+{
+  "id": "ch126",
+  "unit": "u42",
+  "title": "Hermano",
+  "text": "Tomás escribió toda la noche un discurso para Yesid. A las cinco y diez entró la llamada. Yesid tenía la voz ronca.\nYesid: El aire de este bus es una nevera. Tengo la garganta destrozada.\nTomás leyó su papel.\nTomás: Estimado Yesid, le ruego que perdone la hora. Quería pedirle un favor de enorme importancia.\nYesid: ¿Estimado? ¿Quién se murió?\nVale le quitó el papel.\nVale: Es tu amigo, no un juez. Nada de formal. Háblale informal.\nTomás: Yesid, hermano. Necesito que te bajes en Bucaramanga, busques una notaría y firmes una autorización. Vas a perder un día entero.\nYesid: Para serte sincero, no me gusta nada. Hace ocho años gané una beca para estudiar en Bogotá. No había plata para el pasaje, y perdí la beca. Este es mi primer viaje a Bogotá, y ahora usted me lo corta en dos.\nTomás: Lo sé. No hace falta que lo hagas por mí. Hazlo por tu abuelo.\nYesid: Bueno. Por mi abuelo, y porque me lo pidió como un amigo.\nSimón: ¡Estimado! ¡Le ruego, le ruego!\nYesid: ¿Ese loro también quiere algo?\nVale: ¿Ves? Lo informal funciona.\nA las once llegó un audio desde Bucaramanga.\nYesid: En la notaría me atendió doña Teresa, una señora mayor. Me trató con un respeto que no conocía. Me dio miel para la garganta y me llamó «joven». Nadie me había dicho «joven» con tanta cortesía.\nHernando: En Santander la gente es así: educada, pero directa. Te dicen que eres un bruto con una amabilidad que da miedo.\nVale: Y usted, Hernando, es grosero con cariño.\nHernando: Ser grosero con cariño es un arte, mija.\nA las doce, la foto de la autorización llegó al celular de Tomás, con firma, sello y una huella del pulgar de Yesid.\nMariana llegó corriendo.\nMariana: Lo de la huella ya tiene solución. Una amiga mía trabaja en un laboratorio de la Fiscalía. Con la copia de la notaría, el laboratorio compara las dos huellas y escribe un informe.\nTomás: ¿Cuánto tarda el informe?\nMariana: Tres días. Pero el laboratorio solo trabaja con la orden de un juez.\nVale: Déjame que te ayude. ¿Cómo se consigue eso?\nMariana: Primero hay que hablar con el secretario del juzgado. Y a un secretario de juzgado no se le habla como a un notario.\nTomás: ¿Más formal todavía?\nMariana: Mucho más. Con un secretario, la amabilidad no basta: la cortesía es la mitad del trámite. Hay que ser educado hasta los huesos.\nA las seis de la tarde llegó otro audio.\nYesid: Hermano, un derrumbe cerró la vía a Bogotá. Doña Teresa me ofreció su sofá. Con tanto respeto, ya me siento de la familia.",
+  "gloss": [
+    {
+      "es": "Tomás escribió toda la noche un discurso para Yesid.",
+      "en": "Tomás wrote a speech for Yesid all night."
+    },
+    {
+      "es": "ronca",
+      "en": "hoarse"
+    },
+    {
+      "es": "El aire de este bus es una nevera.",
+      "en": "The air in this bus is a fridge."
+    },
+    {
+      "es": "destrozada",
+      "en": "wrecked"
+    },
+    {
+      "es": "Estimado Yesid, le ruego que perdone la hora.",
+      "en": "Dear Yesid, I beg you to forgive the hour."
+    },
+    {
+      "es": "un favor de enorme importancia",
+      "en": "a favour of enormous importance"
+    },
+    {
+      "es": "¿Quién se murió?",
+      "en": "Who died?"
+    },
+    {
+      "es": "Háblale informal.",
+      "en": "Talk to him casually."
+    },
+    {
+      "es": "notaría",
+      "en": "notary's office"
+    },
+    {
+      "es": "Para serte sincero, no me gusta nada.",
+      "en": "To be honest with you, I don't like it at all."
+    },
+    {
+      "es": "ahora usted me lo corta en dos",
+      "en": "now you cut it in two for me"
+    },
+    {
+      "es": "No hace falta que lo hagas por mí.",
+      "en": "You don't have to do it for me."
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "Me trató con un respeto que no conocía.",
+      "en": "She treated me with a respect I had never known."
+    },
+    {
+      "es": "miel",
+      "en": "honey"
+    },
+    {
+      "es": "Te dicen que eres un bruto con una amabilidad que da miedo.",
+      "en": "They tell you you are a brute with a kindness that is frightening."
+    },
+    {
+      "es": "Y usted, Hernando, es grosero con cariño.",
+      "en": "And you, Hernando, are rude with affection."
+    },
+    {
+      "es": "sello",
+      "en": "stamp"
+    },
+    {
+      "es": "pulgar",
+      "en": "thumb"
+    },
+    {
+      "es": "Lo de la huella ya tiene solución.",
+      "en": "The fingerprint business can be solved now."
+    },
+    {
+      "es": "la Fiscalía",
+      "en": "the public prosecutor's office"
+    },
+    {
+      "es": "Déjame que te ayude.",
+      "en": "Let me help you."
+    },
+    {
+      "es": "secretario del juzgado",
+      "en": "court clerk"
+    },
+    {
+      "es": "Hay que ser educado hasta los huesos.",
+      "en": "You have to be polite to the bone."
+    },
+    {
+      "es": "la cortesía es la mitad del trámite",
+      "en": "courtesy is half the paperwork"
+    },
+    {
+      "es": "un derrumbe cerró la vía",
+      "en": "a landslide has closed the road"
+    },
+    {
+      "es": "Con tanto respeto, ya me siento de la familia.",
+      "en": "With so much respect, I already feel like family."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Yesid ask \"¿Quién se murió?\"",
+      "options": [
+        "Tomás starts the call far too formally",
+        "Tomás tells him someone has died",
+        "Hernando is in hospital",
+        "He has heard bad news on the bus"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What did Yesid lose eight years ago?",
+      "options": [
+        "A scholarship to study biology in Bogotá",
+        "His first boat",
+        "His job",
+        "His grandfather's notebook"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Yesid finally agree to get off the bus?",
+      "options": [
+        "For his grandfather, and because Tomás asked him as a friend",
+        "Because Tomás offers to pay him",
+        "Because his boss tells him to",
+        "Because he is ill"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué necesita el laboratorio para comparar las huellas?",
+      "options": [
+        "La orden de un juez",
+        "La firma de Hernando",
+        "Una foto de Joaquín",
+        "Un informe de la notaría"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What does doña Teresa give Yesid?",
+      "options": [
+        "Honey for his throat",
+        "A coffee",
+        "A bus ticket",
+        "A blanket"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How does Vale describe Hernando?",
+      "options": [
+        "Rude, but with a lot of affection",
+        "Polite but direct",
+        "Always formal",
+        "Too shy to speak"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is on the authorization in the photo?",
+      "options": [
+        "A signature, a stamp and Yesid's thumbprint",
+        "Only a signature",
+        "A photo of Joaquín",
+        "Doña Teresa's phone number"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Yesid is stuck in Bucaramanga, and without a judge's order there is no lab report. Tomorrow Tomás phones the court, where the clerk expects even more respect than a notary, and Simón is listening.",
+  "requires": [
+    "c:bien-y-tu",
+    "c:entonces-bueno",
+    "c:hay",
+    "c:hay-que",
+    "c:me-gusta",
+    "c:me-llamo",
+    "c:no-me-gusta-nada",
+    "c:no-se",
+    "c:para-serte-sincero",
+    "c:porque",
+    "c:tengo",
+    "c:tienes",
+    "c:voy-vas",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:commands-tu",
+    "g:commands-with-pronouns",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:gustar-basic",
+    "g:hace-ago",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:lo-adjective",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:pluperfect",
+    "g:por-para-1",
+    "g:possessives-stressed",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:se-accidental",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-influence",
+    "g:subj-relative",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:brindo-por",
+    "p:dejame-que-te-ayude",
+    "p:demonstratives-basic",
+    "p:fracciones-de",
+    "p:indefinites-basic",
+    "p:intentar-conseguir",
+    "p:la-gente-singular",
+    "p:lo-de",
+    "p:lo-de-topic",
+    "p:mayor-menor",
+    "p:me-te-nos-objects",
+    "p:naci-en",
+    "p:no-hace-falta-que",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:queria-cortesia",
+    "p:question-word-order",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:sobre-todo-solo",
+    "p:subirse-bajarse",
+    "p:tardar-en",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:todos-los-dias",
+    "p:viejo-antiguo-mayor",
+    "p:ya-todavia-basic"
+  ],
+  "lexemes": [
+    "l:abuelo",
+    "l:ahora",
+    "l:aire",
+    "l:amabilidad",
+    "l:amiga",
+    "l:amigo",
+    "l:arte",
+    "l:atender",
+    "l:audio",
+    "l:autorización",
+    "l:ayudar",
+    "l:año",
+    "l:bajarse",
+    "l:bastar",
+    "l:beca",
+    "l:bruto",
+    "l:bueno",
+    "l:bus",
+    "l:buscar",
+    "l:cariño",
+    "l:celular",
+    "l:cerrar",
+    "l:comparar",
+    "l:conocer",
+    "l:conseguir",
+    "l:copia",
+    "l:correr",
+    "l:cortar",
+    "l:cortesía",
+    "l:cuánto",
+    "l:cómo",
+    "l:dar",
+    "l:decir",
+    "l:dejar",
+    "l:derrumbe",
+    "l:destrozado",
+    "l:directo",
+    "l:discurso",
+    "l:día",
+    "l:educado",
+    "l:enorme",
+    "l:entero",
+    "l:entrar",
+    "l:escribir",
+    "l:estimado",
+    "l:estudiar",
+    "l:falta",
+    "l:familia",
+    "l:favor",
+    "l:firma",
+    "l:firmar",
+    "l:formal",
+    "l:foto",
+    "l:funcionar",
+    "l:ganar",
+    "l:garganta",
+    "l:gente",
+    "l:grosero",
+    "l:gustar",
+    "l:hablar",
+    "l:hacer",
+    "l:hermano",
+    "l:hora",
+    "l:huella",
+    "l:hueso",
+    "l:importancia",
+    "l:informal",
+    "l:informe",
+    "l:ir",
+    "l:joven",
+    "l:juez",
+    "l:juzgado",
+    "l:laboratorio",
+    "l:leer",
+    "l:llamada",
+    "l:llamar",
+    "l:llegar",
+    "l:loro",
+    "l:mayor",
+    "l:miedo",
+    "l:miel",
+    "l:mija",
+    "l:mitad",
+    "l:morirse",
+    "l:necesitar",
+    "l:nevera",
+    "l:noche",
+    "l:notar",
+    "l:ofrecer",
+    "l:orden",
+    "l:papel",
+    "l:pasaje",
+    "l:pedir",
+    "l:perder",
+    "l:perdonar",
+    "l:plata",
+    "l:pulgar",
+    "l:querer",
+    "l:quitar",
+    "l:quién",
+    "l:respeto",
+    "l:rogar",
+    "l:ronca",
+    "l:saber",
+    "l:secretario",
+    "l:sellar",
+    "l:sentirse",
+    "l:ser",
+    "l:señora",
+    "l:sincero",
+    "l:sofá",
+    "l:solución",
+    "l:tardar",
+    "l:tarde",
+    "l:tener",
+    "l:trabajar",
+    "l:tratar",
+    "l:trámite",
+    "l:ver",
+    "l:viaje",
+    "l:voz",
+    "l:vía"
+  ]
+}

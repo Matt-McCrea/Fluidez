@@ -1,0 +1,411 @@
+{
+  "id": "ch125",
+  "unit": "u42",
+  "title": "Cinco tintos",
+  "text": "Mientras el bus de Yesid salía de Santa Marta, Vale escribía cinco frases con tiza en la pared del menú.\nVale: Las cinco piden lo mismo.\nTomás: «Dame un tinto». «¿Me regalas un tinto?». «¿Me podría dar un tinto, por favor?». «¿Será que me regala un tintico?». «Le agradecería mucho que me regalara un tinto».\nVale: La primera, para un hermano; la segunda, para un amigo; la tercera, para un desconocido. La cuarta es muy bogotana: pides sin pedir. La quinta es para un notario.\nVale: Hoy no hay desayuno hasta que me pidas algo bien.\nTomás: Vale, ¿me podría dar un pan?\nVale: ¿Ahora me hablas de usted? ¿Soy tu notario?\nTomás: Dame un pan.\nVale: Así le hablas a un perro.\nSimón: ¡Dame un tinto, parce!\nHernando: El loro aprende más rápido que usted, mijo. ¿Pedimos un domicilio?\nVale: ¿Un domicilio? ¿En un café? Rosa se levantaría de la tumba.\nPidieron tres arepas a la panadería de doña Gloria, a veinte metros, y el domicilio costó más que las arepas.\nA las nueve, Hernando sacó la Burra del taller.\nHernando: Huela, mijo. ¿Sí lo huele? Combustible nuevo.\nTomás: Yo huelo un accidente.\nVale: Cuando quieras, me cuentas cómo te fue.\nLa notaría quedaba en la avenida Jiménez. La puerta de vidrio decía HALE. Tomás empujó tres veces.\nVigilante: Caballero, ahí dice «hale». Hale.\nTomás haló, y Hernando se rio tan fuerte que una señora dejó caer su cédula.\nTomás: Hola. ¿Me pasas una copia de un documento?\nLa recepcionista lo miró como si le hubiera pedido un riñón.\nHernando: Suba, mijo. Suba la escalera de Vale.\nTomás: Buenos días, señorita. Perdone que la moleste. ¿Será que el notario me puede atender?\nEl notario Arciniegas tenía un traje gris y una voz de iglesia.\nTomás: Señor notario, quería pedirle un favor. Hace dos años, un hombre firmó aquí un contrato con el nombre de Joaquín Herrera, mi tío abuelo. Le agradecería que me permitiera ver ese documento.\nArciniegas: Para alguien de Toronto, usted habla muy bien.\nArciniegas: Aquí está: firma y huella.\nHernando: Joaquín se murió en 2010, doctor. Esa huella es de otro dedo.\nArciniegas: Eso no me corresponde. La copia solo se la puedo dar al heredero, en persona o con una autorización firmada ante notario.\nTomás: El heredero está en un bus, entre Santa Marta y Bogotá.\nArciniegas: Entonces dígale que se baje del bus. Y, caballero, la gorra no es apropiada en una notaría.\nHernando se la quitó como en la misa.\nHernando: Rosa me decía lo mismo, doctor. Cuarenta años, y nunca le hice caso.\nEn la puerta, Tomás haló sin pensar.\nTomás llamó a Yesid, pero su bus no tenía señal desde Valledupar.",
+  "gloss": [
+    {
+      "es": "tiza",
+      "en": "chalk"
+    },
+    {
+      "es": "tintico",
+      "en": "a little coffee (affectionate)"
+    },
+    {
+      "es": "¿Será que me regala un tintico?",
+      "en": "Could you possibly give me a little coffee?"
+    },
+    {
+      "es": "Le agradecería mucho que me regalara un tinto.",
+      "en": "I would be very grateful if you gave me a coffee."
+    },
+    {
+      "es": "desconocido",
+      "en": "stranger"
+    },
+    {
+      "es": "bogotana",
+      "en": "typical of Bogotá"
+    },
+    {
+      "es": "pides sin pedir",
+      "en": "you ask without asking"
+    },
+    {
+      "es": "notario",
+      "en": "notary"
+    },
+    {
+      "es": "notaría",
+      "en": "notary's office"
+    },
+    {
+      "es": "¿Ahora me hablas de usted?",
+      "en": "Are you calling me usted now?"
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "Rosa se levantaría de la tumba.",
+      "en": "Rosa would rise from her grave."
+    },
+    {
+      "es": "el domicilio costó más que las arepas",
+      "en": "the delivery cost more than the arepas"
+    },
+    {
+      "es": "Yo huelo un accidente.",
+      "en": "I can smell an accident."
+    },
+    {
+      "es": "Cuando quieras, me cuentas cómo te fue.",
+      "en": "Whenever you like, tell me how it went."
+    },
+    {
+      "es": "vidrio",
+      "en": "glass"
+    },
+    {
+      "es": "vigilante",
+      "en": "security guard"
+    },
+    {
+      "es": "hale",
+      "en": "pull"
+    },
+    {
+      "es": "haló",
+      "en": "pulled"
+    },
+    {
+      "es": "recepcionista",
+      "en": "receptionist"
+    },
+    {
+      "es": "como si le hubiera pedido un riñón",
+      "en": "as if he had asked her for a kidney"
+    },
+    {
+      "es": "señorita",
+      "en": "miss"
+    },
+    {
+      "es": "Perdone que la moleste.",
+      "en": "Sorry to bother you."
+    },
+    {
+      "es": "una voz de iglesia",
+      "en": "a church voice"
+    },
+    {
+      "es": "tío abuelo",
+      "en": "great-uncle"
+    },
+    {
+      "es": "Eso no me corresponde.",
+      "en": "That's not my job."
+    },
+    {
+      "es": "heredero",
+      "en": "heir"
+    },
+    {
+      "es": "firmada ante notario",
+      "en": "signed in front of a notary"
+    },
+    {
+      "es": "Hernando se la quitó como en la misa.",
+      "en": "Hernando took it off as if he were at Mass."
+    },
+    {
+      "es": "señal",
+      "en": "signal"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does nobody get breakfast at first?",
+      "options": [
+        "Vale wants Tomás to ask for something properly first",
+        "The oven is broken",
+        "Gloria's bakery is closed",
+        "Hernando ate everything"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is wrong with \"¿me podría dar un pan?\" when Tomás says it to Vale?",
+      "options": [
+        "It is far too formal for her",
+        "It is rude",
+        "It is in the wrong tense",
+        "There is no bread"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does the notary find?",
+      "options": [
+        "A signature and a very clear fingerprint in Joaquín's name",
+        "Rosa's will",
+        "A photo of Duarte",
+        "Nothing at all"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿A quién le puede dar la copia el notario?",
+      "options": [
+        "Al heredero, o a alguien con su autorización",
+        "A cualquier persona",
+        "Solo a un abogado",
+        "Solo a Hernando"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What problem does Tomás have at the end?",
+      "options": [
+        "Yesid, the heir, is on a bus with no signal",
+        "The Burra has broken down again",
+        "He has lost the copy",
+        "The notary is closing for good"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What happens at the notary's glass door?",
+      "options": [
+        "Tomás pushes a door that says \"pull\"",
+        "Hernando gets stuck",
+        "The door is locked",
+        "Simón flies in"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What cost more than the arepas?",
+      "options": [
+        "The delivery",
+        "The coffee",
+        "The petrol",
+        "The Burra"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando say Rosa used to tell him?",
+      "options": [
+        "The same thing about his cap",
+        "To drive more slowly",
+        "To pay for his coffee",
+        "To stop telling jokes"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "The heir has to get off his bus and sign at a notary somewhere on the way, and it will cost him a day he does not have. Tomorrow Tomás has to ask Yesid for that, not as he would ask a notary, but as a friend.",
+  "requires": [
+    "c:bien-y-tu",
+    "c:como-te-fue",
+    "c:cuando-quieras",
+    "c:empuje-hale",
+    "c:entonces-bueno",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:me-puede-ayudar",
+    "c:me-regala",
+    "c:pedir-un-domicilio",
+    "c:por-favor",
+    "c:puedo",
+    "g:adjective-agreement",
+    "g:commands-tu",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:como-si",
+    "g:comparatives",
+    "g:conditional",
+    "g:demonstratives",
+    "g:diminutives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:hace-ago",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:le-doubling",
+    "g:object-pronoun-position",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:reflexive-routine",
+    "g:reported-requests",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-cuando-future",
+    "g:subj-emotion",
+    "g:subj-past-triggers",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:dates-years",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:me-te-nos-objects",
+    "p:me-trae",
+    "p:naci-en",
+    "p:no-hasta",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:permitir-inf",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:queria-cortesia",
+    "p:request-ladder",
+    "p:senor-don-article",
+    "p:sobre-todo-solo",
+    "p:street-names",
+    "p:subirse-bajarse",
+    "p:te-importaria",
+    "p:telling-time"
+  ],
+  "lexemes": [
+    "l:abuelo",
+    "l:accidente",
+    "l:agradecer",
+    "l:ahora",
+    "l:ahí",
+    "l:amigo",
+    "l:aprender",
+    "l:apropiado",
+    "l:aquí",
+    "l:arepa",
+    "l:atender",
+    "l:autorización",
+    "l:avenida",
+    "l:año",
+    "l:bajarse",
+    "l:bien",
+    "l:bogotano",
+    "l:bueno",
+    "l:bus",
+    "l:caballero",
+    "l:caer",
+    "l:café",
+    "l:caso",
+    "l:combustible",
+    "l:contar",
+    "l:contrato",
+    "l:copia",
+    "l:corresponde",
+    "l:costar",
+    "l:cédula",
+    "l:cómo",
+    "l:dar",
+    "l:decir",
+    "l:dedo",
+    "l:dejar",
+    "l:desayuno",
+    "l:desconocido",
+    "l:doctor",
+    "l:documento",
+    "l:domicilio",
+    "l:día",
+    "l:empujar",
+    "l:escalera",
+    "l:escribir",
+    "l:estar",
+    "l:favor",
+    "l:firmar",
+    "l:frase",
+    "l:fuerte",
+    "l:gorra",
+    "l:gris",
+    "l:hablar",
+    "l:hacer",
+    "l:heredero",
+    "l:hermano",
+    "l:hombre",
+    "l:hoy",
+    "l:huella",
+    "l:iglesia",
+    "l:levantarse",
+    "l:llamar",
+    "l:loro",
+    "l:menú",
+    "l:metro",
+    "l:mijo",
+    "l:mirar",
+    "l:misa",
+    "l:molestar",
+    "l:morirse",
+    "l:nombre",
+    "l:notar",
+    "l:nuevo",
+    "l:oler",
+    "l:pan",
+    "l:panadería",
+    "l:parce",
+    "l:pared",
+    "l:pasar",
+    "l:pedir",
+    "l:pensar",
+    "l:perdonar",
+    "l:permitir",
+    "l:perro",
+    "l:persona",
+    "l:poder",
+    "l:puerta",
+    "l:quedar",
+    "l:querer",
+    "l:quitarse",
+    "l:recepcionista",
+    "l:regalar",
+    "l:reír",
+    "l:riñón",
+    "l:rápido",
+    "l:sacar",
+    "l:salir",
+    "l:ser",
+    "l:señal",
+    "l:señor",
+    "l:señora",
+    "l:señorito",
+    "l:subir",
+    "l:taller",
+    "l:tener",
+    "l:tinto",
+    "l:traje",
+    "l:tumba",
+    "l:tío",
+    "l:ver",
+    "l:vez",
+    "l:vidrio",
+    "l:vigilante",
+    "l:voz"
+  ]
+}
