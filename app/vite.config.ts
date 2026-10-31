@@ -30,7 +30,9 @@ function firstWindowGlobs(): string[] {
   ];
 }
 
+// BASE_PATH is set by the GitHub Pages workflow ('/Fluidez/'); dev, tests and local builds stay at '/'.
 export default defineConfig({
+  base: process.env.BASE_PATH ?? '/',
   plugins: [
     preact(),
     VitePWA({
