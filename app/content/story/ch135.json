@@ -1,0 +1,370 @@
+{
+  "id": "ch135",
+  "unit": "u44",
+  "title": "Detrás del espejo",
+  "text": "El sábado a las doce y media, Yesid llevaba veinte minutos delante del espejo del baño, con una camisa de Tomás y una corbata de Hernando.\nVale: ¿Y tanta elegancia, primo? ¿Tiene novia en Bogotá?\nYesid: Voy a almorzar con un amigo de mi tío.\nVale: ¿Con corbata? En la costa nadie usa corbata.\nYesid: Por eso. Quiero que vean que en Bogotá me va bien.\nSalió a la una menos diez y no dijo a qué restaurante iba.\nA las dos llegó la doctora Uribe, con cara de lunes.\nUribe: El comité los recibe el jueves a las nueve. Y Altamira mandó el informe de un ingeniero: la casa es un peligro, no tiene ningún valor histórico y hay que tumbarla.\nTomás: Aunque ese ingeniero tenga diez títulos, la casa no se cae. Lo tengo clarísimo.\nUribe: Por más que usted lo tenga clarísimo, el comité quiere pruebas, no sentimientos.\nHernando: Yo conozco a un brujo en la calle del Embudo. Por veinte mil pesos, le cambia la suerte a Altamira.\nVale: Aunque el brujo lo haga gratis, Hernando, no.\nSimón: ¡Lo tengo clarísimo! ¡Clarísimo, parce!\nMariana: La raíz del problema no es la casa. Es la esquina. Altamira necesita este terreno para su hotel de lujo.\nUribe: Si el comité protege la casa, ganamos tiempo. Pero a largo plazo, Altamira va a seguir intentándolo.\nTomás: Entonces necesitamos pruebas que no se caigan.\nVale miró el espejo grande del pasillo.\nVale: Rosa escondía la plata del mes detrás de ese espejo. Decía que los ladrones nunca miran detrás de su propia cara.\nEntre los dos lo bajaron. Detrás no había plata. Había un sobre gordo, lleno de fotos.\nLa puerta verde en 1979, recién pintada. Rosa, el primer día, con una olla enorme. Los vecinos levantando una pared después del temblor de 1983.\nHernando tomó una foto con las dos manos. Era él, con treinta años menos y el pelo corto, al lado de la Burra recién comprada.\nHernando: Miren qué pelo. Eso sí era un lujo.\nMariana: Una casa que los vecinos arreglaron con sus propias manos tiene raíces. Aunque el ingeniero diga lo contrario, aquí hay historia.\nTomás pasó las fotos una por una. En todas, la casa estaba de pie.\nA las cinco volvió Yesid, sin corbata, con una caja de chocolates de lujo.\nYesid: Almorzamos y ya. Nada importante.\nSimón: ¡Lo tengo clarísimo!\nTodos se rieron, menos Yesid, que subió a ducharse.\nTomás tuvo una sensación rara, como cuando una prueba de software pasa demasiado fácil.\nEsa noche llamó Uribe.\nUribe: El comité decidió que la reunión del jueves va a ser pública. Puede venir todo el barrio. Y el ingeniero de Altamira también.",
+  "gloss": [
+    {
+      "es": "tanta elegancia",
+      "en": "so much elegance"
+    },
+    {
+      "es": "Quiero que vean que en Bogotá me va bien.",
+      "en": "I want them to see that I'm doing well in Bogotá."
+    },
+    {
+      "es": "con cara de lunes",
+      "en": "with a Monday-morning face"
+    },
+    {
+      "es": "hay que tumbarla",
+      "en": "it has to be knocked down"
+    },
+    {
+      "es": "Lo tengo clarísimo.",
+      "en": "I'm absolutely sure of it."
+    },
+    {
+      "es": "Por más que usted lo tenga clarísimo",
+      "en": "However sure you are of it"
+    },
+    {
+      "es": "brujo",
+      "en": "witch doctor"
+    },
+    {
+      "es": "le cambia la suerte a Altamira",
+      "en": "he changes Altamira's luck"
+    },
+    {
+      "es": "Aunque el brujo lo haga gratis",
+      "en": "Even if the witch doctor does it for free"
+    },
+    {
+      "es": "La raíz del problema",
+      "en": "The root of the problem"
+    },
+    {
+      "es": "a largo plazo",
+      "en": "in the long run"
+    },
+    {
+      "es": "necesitamos pruebas que no se caigan",
+      "en": "we need evidence that won't fall down"
+    },
+    {
+      "es": "Decía que los ladrones nunca miran detrás de su propia cara.",
+      "en": "She used to say that thieves never look behind their own face."
+    },
+    {
+      "es": "temblor",
+      "en": "earthquake"
+    },
+    {
+      "es": "Eso sí era un lujo.",
+      "en": "Now that was a luxury."
+    },
+    {
+      "es": "tiene raíces",
+      "en": "has roots"
+    },
+    {
+      "es": "sensación",
+      "en": "feeling"
+    },
+    {
+      "es": "como cuando una prueba de software pasa demasiado fácil",
+      "en": "like when a software test passes too easily"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Yesid say he is wearing a tie to lunch?",
+      "options": [
+        "He wants his uncle's friends to see he is doing well in Bogotá",
+        "He has a job interview",
+        "Vale asked him to",
+        "It is cold in Bogotá"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Altamira's engineer say in his report?",
+      "options": [
+        "The house is dangerous, has no historic value and must be knocked down",
+        "The house can be repaired cheaply",
+        "The house belongs to Altamira",
+        "The café makes too much noise"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué encuentran Tomás y Vale detrás del espejo?",
+      "options": [
+        "Un sobre lleno de fotos",
+        "La plata del mes",
+        "Una carta de Joaquín",
+        "Nada"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does everyone laugh when Yesid comes back?",
+      "options": [
+        "Simón says «¡Lo tengo clarísimo!» just after Yesid says the lunch was nothing important",
+        "Yesid has lost Hernando's tie",
+        "Yesid brought cheap chocolates",
+        "Yesid fell on the stairs"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What does Hernando offer to do about Altamira?",
+      "options": [
+        "Pay a witch doctor in the calle del Embudo to put a spell on him",
+        "Drive him out of the city in the Burra",
+        "Write to the newspaper",
+        "Call the police"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is Hernando beside in his old photo?",
+      "options": [
+        "The Burra, newly bought",
+        "Rosa's piano",
+        "The green door",
+        "Simón's plant"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What news does Uribe give at night?",
+      "options": [
+        "The meeting on Thursday will be public",
+        "The meeting is cancelled",
+        "Altamira has withdrawn his report",
+        "Yesid has to go back to Taganga"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "The hearing on Thursday will be public: the whole neighbourhood can come, and so can Altamira's engineer. Tomorrow a notice appears on the green door, and Mariana finds out exactly what Altamira wants to build.",
+  "requires": [
+    "c:a-largo-plazo",
+    "c:aqui-tiene",
+    "c:bien-y-tu",
+    "c:entonces-bueno",
+    "c:era",
+    "c:hay",
+    "c:hay-que",
+    "c:la-raiz-del-problema",
+    "c:lo-tengo-clarisimo",
+    "c:no-se",
+    "c:quiero",
+    "c:tengo",
+    "c:tienes",
+    "c:voy-a",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:commands-usted",
+    "g:comparatives",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indefinites",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:lo-adjective",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:passive-se",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:quantifiers",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:subj-concessive",
+    "g:subj-irregulars",
+    "g:subj-relative",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:caerse-lastimarse",
+    "p:cerca-de",
+    "p:container-de",
+    "p:cuando-basic",
+    "p:dates-years",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:mas-de-number",
+    "p:me-te-nos-objects",
+    "p:nos-vemos-a-las",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:para-inf",
+    "p:personal-a",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:postura",
+    "p:recien-participio",
+    "p:request-ladder",
+    "p:saber-conocer",
+    "p:salirle-bien",
+    "p:seguir-gerundio",
+    "p:telling-time",
+    "p:time-sequence-basic"
+  ],
+  "lexemes": [
+    "l:almorzar",
+    "l:amigo",
+    "l:aquí",
+    "l:arreglar",
+    "l:año",
+    "l:bajar",
+    "l:barrio",
+    "l:baño",
+    "l:bien",
+    "l:brujo",
+    "l:caerse",
+    "l:caja",
+    "l:calle",
+    "l:cambiar",
+    "l:camisa",
+    "l:cara",
+    "l:casa",
+    "l:chocolate",
+    "l:claro",
+    "l:comité",
+    "l:comprar",
+    "l:conocer",
+    "l:contrario",
+    "l:corbata",
+    "l:cortar",
+    "l:costa",
+    "l:decidir",
+    "l:decir",
+    "l:delante",
+    "l:después",
+    "l:detrás",
+    "l:doctor",
+    "l:ducharse",
+    "l:día",
+    "l:elegancia",
+    "l:enorme",
+    "l:esconder",
+    "l:espejo",
+    "l:esquina",
+    "l:estar",
+    "l:foto",
+    "l:fácil",
+    "l:ganar",
+    "l:gordo",
+    "l:grande",
+    "l:gratis",
+    "l:hacer",
+    "l:historia",
+    "l:histórico",
+    "l:hotel",
+    "l:importante",
+    "l:informe",
+    "l:ingeniero",
+    "l:intentar",
+    "l:ir",
+    "l:jueves",
+    "l:lado",
+    "l:ladrón",
+    "l:largo",
+    "l:levantarse",
+    "l:llamar",
+    "l:llegar",
+    "l:llenar",
+    "l:llevar",
+    "l:lujo",
+    "l:lunes",
+    "l:mandar",
+    "l:mano",
+    "l:mes",
+    "l:minuto",
+    "l:mirar",
+    "l:necesitar",
+    "l:noche",
+    "l:novia",
+    "l:olla",
+    "l:parce",
+    "l:pared",
+    "l:pasar",
+    "l:pasillo",
+    "l:peligro",
+    "l:pelo",
+    "l:peso",
+    "l:pie",
+    "l:pintar",
+    "l:plata",
+    "l:plazo",
+    "l:poder",
+    "l:primo",
+    "l:problema",
+    "l:propio",
+    "l:proteger",
+    "l:prueba",
+    "l:puerta",
+    "l:público",
+    "l:querer",
+    "l:qué",
+    "l:raro",
+    "l:raíz",
+    "l:recibir",
+    "l:recién",
+    "l:restaurante",
+    "l:reunión",
+    "l:reír",
+    "l:salir",
+    "l:seguir",
+    "l:sensación",
+    "l:sentimiento",
+    "l:ser",
+    "l:sobre",
+    "l:subir",
+    "l:suerte",
+    "l:sábado",
+    "l:temblor",
+    "l:tener",
+    "l:terreno",
+    "l:tiempo",
+    "l:tomar",
+    "l:tumbarse",
+    "l:tío",
+    "l:título",
+    "l:usar",
+    "l:valor",
+    "l:vecino",
+    "l:venir",
+    "l:ver",
+    "l:verde",
+    "l:volver"
+  ]
+}

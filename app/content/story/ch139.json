@@ -1,0 +1,374 @@
+{
+  "id": "ch139",
+  "unit": "u44",
+  "title": "Nueve velas",
+  "text": "El viernes a las nueve, Hernando seguía con el traje de la audiencia. Había dormido con él, y ahora no podía deshacer el nudo de la corbata.\nVale: Quieto. Así no llega vivo a la decisión.\nLe deshizo el nudo en diez segundos.\nA las diez, el salón estaba lleno otra vez. En la puerta había una profesora con un grupo escolar del barrio. Los niños traían dibujos de la casa: la puerta verde, la mesa de la ventana, y un loro verde más grande que el edificio.\nGloria llegó sin cartera. Simón venía con Jhon Fredy, con permiso especial.\nPinzón leyó la decisión con un tono tranquilo.\nPinzón: Es cierto que la casa necesita reparaciones. Pero el comité considera que no solo tiene valor histórico, sino también un valor para la comunidad. De hecho, las pruebas de los vecinos son más completas que el informe del ingeniero. El ingeniero de Altamira, en cambio, nunca entró en la casa.\nSimón escondió la cabeza debajo del ala.\nPinzón: Por lo tanto, el comité no puede decidir todavía. Pedimos un estudio independiente de la estructura, y vamos a tomar la decisión dentro de tres meses. Hasta entonces, nadie toca la casa. Grupo Altamira se compromete a no hacer ninguna obra.\nGloria: ¿Y entonces? ¿Ganamos o perdimos?\nSimón sacó la cabeza.\nSimón: ¡Sin duda alguna!\nPinzón: Ni lo uno ni lo otro, señora. Ganaron tres meses.\nMariana: Uribe lo dijo el sábado. Ganamos tiempo.\nAl salir, el abogado de la corbata rosada le habló a Tomás en un tono muy amable, y por eso daba frío.\nAbogado: En tres meses pueden pasar muchas cosas, señor Herrera.\nDespués miró a Yesid. Solo un segundo. Yesid miró por la ventana.\nVale lo vio todo, y no dijo nada.\nPor la tarde, el café celebró el cumpleaños de Rosa, con un día de retraso. Vale hizo la torta de naranja de Rosa. Noventa velas no cabían, así que puso nueve.\nHernando: Una por cada década. Y la última por mí.\nPegaron los dibujos escolares al lado de la foto de la puerta verde.\nTomás: Hace un año, yo pensaba que una casa era una inversión. Ahora pienso que es una promesa.\nVale: Entonces comprométete.\nTomás: Me comprometo. Tres meses, y más si hace falta.\nHernando sopló las velas, y quedó una encendida.\nHernando: Ahí está Rosa. Siempre la última en irse.\nSimón: ¡Desde luego! ¡Desde luego, parce!\nA las nueve sonó el celular de Mariana. Cuando colgó, tenía otra cara.\nMariana: Era mi fuente de la alcaldía. Dice que Rengifo salió del país anoche. Y dice que antes recibió plata de Altamira.\nYesid dejó su pedazo de torta en el plato, sin probarlo.",
+  "gloss": [
+    {
+      "es": "nudo",
+      "en": "knot"
+    },
+    {
+      "es": "Así no llega vivo a la decisión.",
+      "en": "At this rate you won't live to hear the decision."
+    },
+    {
+      "es": "dibujos",
+      "en": "drawings"
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "Es cierto que la casa necesita reparaciones.",
+      "en": "It's true that the house needs repairs."
+    },
+    {
+      "es": "no solo tiene valor histórico, sino también un valor para la comunidad",
+      "en": "it has not only historic value but also value for the community"
+    },
+    {
+      "es": "De hecho",
+      "en": "In fact"
+    },
+    {
+      "es": "en cambio",
+      "en": "on the other hand"
+    },
+    {
+      "es": "Grupo Altamira se compromete a no hacer ninguna obra.",
+      "en": "Grupo Altamira commits to doing no building work."
+    },
+    {
+      "es": "Ni lo uno ni lo otro",
+      "en": "Neither one nor the other"
+    },
+    {
+      "es": "y por eso daba frío",
+      "en": "and that's why it was chilling"
+    },
+    {
+      "es": "con un día de retraso",
+      "en": "a day late"
+    },
+    {
+      "es": "Noventa velas no cabían, así que puso nueve.",
+      "en": "Ninety candles would not fit, so she put nine."
+    },
+    {
+      "es": "Entonces comprométete.",
+      "en": "Then commit."
+    },
+    {
+      "es": "y más si hace falta",
+      "en": "and more if need be"
+    },
+    {
+      "es": "Siempre la última en irse.",
+      "en": "Always the last one to leave."
+    },
+    {
+      "es": "mi fuente de la alcaldía",
+      "en": "my source at the mayor's office"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does the committee decide?",
+      "options": [
+        "To ask for an independent study and decide in three months",
+        "To protect the house for ever",
+        "To let Altamira knock it down",
+        "To close the café"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does the lawyer's friendly tone feel cold?",
+      "options": [
+        "Because he is warning Tomás that a lot can happen in three months",
+        "Because he is shouting",
+        "Because he speaks in English",
+        "Because he is ill"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Por qué pone Vale solo nueve velas?",
+      "options": [
+        "Porque noventa no cabían en la torta",
+        "Porque Rosa tenía nueve años",
+        "Porque no tenía más",
+        "Porque Hernando lo pidió"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What news does Mariana's source give?",
+      "options": [
+        "Rengifo left the country last night, and he allegedly took money from Altamira",
+        "Altamira has sold the hotel",
+        "The committee changed its mind",
+        "Yesid's grandmother is coming to Bogotá"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "Who undoes Hernando's tie?",
+      "options": [
+        "Vale",
+        "Gloria",
+        "Tomás",
+        "Hernando himself"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is unusual about the parrot in the children's drawings?",
+      "options": [
+        "He is bigger than the building",
+        "He is blue",
+        "He is wearing a tie",
+        "He is asleep"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Yesid do when he hears Mariana's news?",
+      "options": [
+        "He puts down his piece of cake without tasting it",
+        "He leaves the café",
+        "He laughs",
+        "He calls his mother"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "The committee has given them three months, and Mariana's source says Rengifo has fled the country with Altamira's money. Tomorrow Mariana starts checking every word of that story, and Yesid is very quiet.",
+  "requires": [
+    "c:ayer-anoche",
+    "c:con-el-ella",
+    "c:desde-luego",
+    "c:en-cambio",
+    "c:entonces-bueno",
+    "c:era",
+    "c:muy-amable",
+    "c:perdon-disculpe",
+    "c:sin-duda-alguna",
+    "c:tienes",
+    "c:tranquilo",
+    "c:vamos-a",
+    "c:y-que-paso",
+    "g:adjective-agreement",
+    "g:cada-cualquier",
+    "g:cause-result",
+    "g:commands-tu",
+    "g:commands-with-pronouns",
+    "g:comparatives",
+    "g:consequence-connectors",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hace-ago",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indefinites",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:pero-sino",
+    "g:pluperfect",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "p:a-mi-modo-de-ver",
+    "p:actualmente",
+    "p:aqui-ahi-alla",
+    "p:caber",
+    "p:cerca-de",
+    "p:container-de",
+    "p:cuando-basic",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:dentro-de-vs-despues",
+    "p:el-agua-fria",
+    "p:entonces-de-repente",
+    "p:frequency-scale",
+    "p:lleno-libre",
+    "p:llevar-traer",
+    "p:medir-pesar-caber",
+    "p:nos-vemos-a-las",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:pensar-en",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:senor-don-article",
+    "p:sobre-todo-solo",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:ya-todavia-basic"
+  ],
+  "lexemes": [
+    "l:abogado",
+    "l:ahora",
+    "l:ahí",
+    "l:ala",
+    "l:alcaldía",
+    "l:amable",
+    "l:anoche",
+    "l:antes",
+    "l:audiencia",
+    "l:año",
+    "l:barrio",
+    "l:caber",
+    "l:cabeza",
+    "l:café",
+    "l:cambio",
+    "l:cara",
+    "l:cartera",
+    "l:casa",
+    "l:celebrar",
+    "l:celular",
+    "l:colgar",
+    "l:comité",
+    "l:completar",
+    "l:comprometerse",
+    "l:comunidad",
+    "l:considerar",
+    "l:corbata",
+    "l:cosa",
+    "l:cumpleaños",
+    "l:dar",
+    "l:debajo",
+    "l:decidir",
+    "l:decir",
+    "l:decisión",
+    "l:dejar",
+    "l:dentro",
+    "l:deshacer",
+    "l:después",
+    "l:dibujo",
+    "l:dormir",
+    "l:duda",
+    "l:década",
+    "l:día",
+    "l:edificio",
+    "l:encender",
+    "l:entrar",
+    "l:escolar",
+    "l:esconder",
+    "l:especial",
+    "l:estar",
+    "l:estructura",
+    "l:estudio",
+    "l:falta",
+    "l:foto",
+    "l:frío",
+    "l:fuente",
+    "l:ganar",
+    "l:grande",
+    "l:grupo",
+    "l:hablar",
+    "l:hacer",
+    "l:histórico",
+    "l:independiente",
+    "l:informe",
+    "l:ingeniero",
+    "l:inversión",
+    "l:ir",
+    "l:irse",
+    "l:lado",
+    "l:leer",
+    "l:llegar",
+    "l:lleno",
+    "l:loro",
+    "l:mes",
+    "l:mesa",
+    "l:mirar",
+    "l:naranja",
+    "l:necesitar",
+    "l:niño",
+    "l:nudo",
+    "l:obra",
+    "l:parce",
+    "l:pasar",
+    "l:país",
+    "l:pedazo",
+    "l:pedir",
+    "l:pegar",
+    "l:pensar",
+    "l:perder",
+    "l:permiso",
+    "l:plata",
+    "l:plato",
+    "l:poder",
+    "l:poner",
+    "l:probarse",
+    "l:profesora",
+    "l:promesa",
+    "l:prueba",
+    "l:puerta",
+    "l:quedar",
+    "l:quieto",
+    "l:recibir",
+    "l:reparación",
+    "l:retraso",
+    "l:rosado",
+    "l:sacar",
+    "l:salir",
+    "l:salón",
+    "l:seguir",
+    "l:segundo",
+    "l:ser",
+    "l:señor",
+    "l:señora",
+    "l:siempre",
+    "l:sonar",
+    "l:soplar",
+    "l:sábado",
+    "l:tarde",
+    "l:tener",
+    "l:tiempo",
+    "l:tocar",
+    "l:tomar",
+    "l:tono",
+    "l:torta",
+    "l:traer",
+    "l:traje",
+    "l:tranquilo",
+    "l:unir",
+    "l:valor",
+    "l:vecino",
+    "l:vela",
+    "l:venir",
+    "l:ventana",
+    "l:ver",
+    "l:verde",
+    "l:vez",
+    "l:viernes",
+    "l:vivo"
+  ]
+}
