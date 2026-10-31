@@ -71,7 +71,7 @@
     {
       "id": "t4",
       "npc": "Vale: Tomás, ¿sigues aquí solo por unos meses?\nSimón: ¡Qué pena con usted!",
-      "npcEn": "Vale: Tomás, are you still only here for a few months?\nSimón: How embarrassing for you!",
+      "npcEn": "Vale: Tomás, are you still only here for a few months?\nSimón: I'm so sorry!",
       "intent": "Laugh and answer Vale with the emphasised word first, as in 'Difícil es decirlo'.",
       "accept": [
         "Difícil es decirlo, Vale. Hasta el loro lo sabe mejor que yo.",

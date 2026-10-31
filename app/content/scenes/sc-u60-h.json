@@ -30,7 +30,7 @@
       "id": "t2",
       "npc": "Representante: Nosotros construimos con materiales modernos. Los de aquí son de calidad dudosa, usted lo sabe.",
       "npcEn": "Representative: We build with modern materials. The ones here are of questionable quality, you know that.",
-      "intent": "Reply that his comment is nonsense: the beams are the best thing about the place (use: lo mejor de... es...).",
+      "intent": "Disagree politely: the best thing about the building is exactly what he calls old (use: lo mejor de… es…).",
       "accept": [
         "Perdone, pero lo mejor de este edificio son sus vigas.",
         "Con respeto, lo mejor del local es la madera original.",

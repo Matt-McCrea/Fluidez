@@ -147,7 +147,9 @@
     {
       "prompt": "Say: In the long run it works out cheaper to repair.",
       "answer": "A la larga resulta más barato reparar.",
-      "accept": [],
+      "accept": [
+        "Resulta más barato reparar a la larga."
+      ],
       "why": "*A la larga* means \"in the long run\"."
     }
   ],

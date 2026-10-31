@@ -169,7 +169,7 @@
         "n": 6
       }
     ],
-    "model": "Vale, ya leí tu mensaje y quiero decirte lo que pienso. Haces bien en no firmar nada todavía. Sé que la oferta de Altamira suena muy bien y que la plata te vendría muy bien, pero un contrato que no entiendes nunca es buena idea. Haces mal en quedarte sola con esa duda, así que mañana a las ocho vamos juntos a hablar con la abogada. ¿Puedes llevar los papeles que te mandaron? Yo llevo el café, que tú sabes que sin él no pienso. Además, haces bien en defender tu receta, porque es tuya y de nadie más. Hace tres meses no sabías si ibas a quedarte en Bogotá, y ahora eres la razón por la que la gente hace fila los sábados. No dejes que nadie te haga sentir pequeña. Si al final decides vender, te voy a apoyar igual, pero quiero que lo decidas con calma y con toda la información. Cuéntame cómo amaneces. Un abrazo.",
+    "model": "Vale, ya leí tu mensaje y quiero decirte lo que pienso. Haces bien en no firmar nada todavía. Sé que la oferta de Altamira suena muy bien y que la plata te vendría muy bien, pero un contrato que no entiendes nunca es buena idea. Haces mal en quedarte sola con esa duda, así que mañana a las ocho vamos juntos a hablar con la abogada. ¿Puedes llevar los papeles que te mandaron? Yo llevo el café, que tú sabes que sin él no pienso. Además, haces bien en defender tu receta, porque es tuya y de nadie más. Hace un año nadie conocía tus postres, y ahora eres la razón por la que la gente hace fila los sábados. No dejes que nadie te haga sentir pequeña. Si al final decides vender, te voy a apoyar igual, pero quiero que lo decidas con calma y con toda la información. Cuéntame cómo amaneces. Un abrazo.",
     "focus": "p:haces-bien-en",
     "requires": [
       "c:ademas",
@@ -220,10 +220,12 @@
       "l:además",
       "l:ahora",
       "l:apoyar",
+      "l:año",
       "l:bien",
       "l:buena",
       "l:café",
       "l:calma",
+      "l:conocer",
       "l:contar",
       "l:contrato",
       "l:cómo",
@@ -250,13 +252,13 @@
       "l:mandar",
       "l:mañana",
       "l:mensaje",
-      "l:mes",
       "l:oferta",
       "l:papel",
       "l:pensar",
       "l:pequeño",
       "l:plata",
       "l:poder",
+      "l:postre",
       "l:quedar",
       "l:querer",
       "l:razón",
@@ -443,7 +445,7 @@
   {
     "id": "w-u60-04",
     "unit": "u60",
-    "prompt": "Tell Mariana about the play you saw last night with Hernando. She's your friend, so use tú. Use the intensifier de lo más twice to describe how strange, serious or simple things were.",
+    "prompt": "Tell Mariana about the play you saw last night with Vale. She's your friend, so use tú. Use the intensifier de lo más twice to describe how strange, serious or simple things were.",
     "minWords": 150,
     "maxWords": 250,
     "constraints": [
@@ -468,7 +470,7 @@
         "n": 6
       }
     ],
-    "model": "Mariana, anoche fui al teatro con Hernando y tengo que contarte. La obra fue de lo más extraña, pero te juro que no me aburrí ni un minuto. Empieza con un monólogo de diez minutos en la oscuridad, y el actor, que es de lo más serio, no se mueve ni una vez. Yo pensé que iba a ser pesada, y resulta que el silencio te atrapa. El decorado es de lo más sencillo: una mesa, dos sillas y una ventana pintada. El vestuario, en cambio, es una locura. Hernando dijo que parecía un sueño de su infancia y casi se pone a llorar. ¿Y tú, qué hiciste? ¿Pudiste escribir tu artículo? Si tienes tiempo el viernes, vamos otra vez y te lo muestro. Lo digo en serio: te va a encantar, y después podemos cenar algo. Pregúntale a Vale si quiere venir también, pero no le cuentes el final. Un beso y hablamos pronto.",
+    "model": "Mariana, anoche fui al teatro con Vale y tengo que contarte. La obra fue de lo más extraña, pero te juro que no me aburrí ni un minuto. Empieza con un monólogo de diez minutos en la oscuridad, y el actor, que es de lo más serio, no se mueve ni una vez. Yo pensé que iba a ser pesada, y resulta que el silencio te atrapa. El decorado es de lo más sencillo: una mesa, dos sillas y una ventana pintada. El vestuario, en cambio, es una locura. Vale dijo que parecía un sueño de su infancia en Medellín y casi se pone a llorar. ¿Y tú, qué hiciste? ¿Pudiste escribir tu artículo? Si tienes tiempo el viernes, vamos otra vez y te lo muestro. Lo digo en serio: te va a encantar, y después podemos cenar algo. Pregúntale a Yesid si quiere venir también, pero no le cuentes el final. Un beso y hablamos pronto.",
     "focus": "p:de-lo-mas-adj",
     "requires": [
       "c:ayer-anoche",
@@ -917,7 +919,7 @@
         "n": 6
       }
     ],
-    "model": "Querido comité: me piden que organice una feria de libros en el café y con gusto lo hago, pero hay que ser realistas. Plata no hay, eso ya lo saben. Tiempo tampoco sobra, porque el mes que viene tenemos la tertulia, la exposición y el aniversario de mi abuela. Sillas tenemos veinte, y hacen falta cuarenta. Ayuda sí hay: Vale ofrece sus postres, Hernando prestará sus libros y los vecinos del tercer piso traerán mesas. Con eso, creo que podemos hacer algo sencillo y digno. Les propongo cobrar un precio simbólico en la puerta y vender café y pan de la casa. Lo que salga lo guardamos para la viga nueva. Café no vamos a regalar, por mucho que Hernando proteste. Si están de acuerdo, díganmelo antes del viernes y me pongo a hacer los carteles. Si no, también díganmelo, y buscamos otra solución. Gracias por su paciencia de siempre.",
+    "model": "Querido comité: me piden que organice una feria de libros en el café y con gusto lo hago, pero hay que ser realistas. Plata no hay, eso ya lo saben. Tiempo tampoco sobra, porque el mes que viene tenemos la tertulia, la exposición y el aniversario de mi abuela. Sillas tenemos veinte, y hacen falta cuarenta. Ayuda sí hay: Vale ofrece sus postres, Mariana prestará los libros de su colección y los vecinos del tercer piso traerán mesas. Con eso, creo que podemos hacer algo sencillo y digno. Les propongo cobrar un precio simbólico en la puerta y vender café y pan de la casa. Lo que salga lo guardamos para la viga nueva. Café no vamos a regalar, por mucho que Simón proteste. Si están de acuerdo, díganmelo antes del viernes y me pongo a hacer los carteles. Si no, también díganmelo, y buscamos otra solución. Gracias por su paciencia de siempre.",
     "focus": "p:plata-no-hay",
     "requires": [
       "c:con-mucho-gusto",
@@ -966,6 +968,7 @@
       "l:cartel",
       "l:casa",
       "l:cobrar",
+      "l:colección",
       "l:comité",
       "l:creer",
       "l:decir",
@@ -1191,14 +1194,14 @@
   {
     "id": "w-u60-09",
     "unit": "u60",
-    "prompt": "Don Hernando has asked for your opinion of the first chapters of his memoir. Write him a respectful note (usted): say where he got it exactly right, praise the best thing about the book, and name one weaker chapter.",
+    "prompt": "Don Hernando's memoir has just come out, and his editor, Señora Ortiz, has asked you for an honest opinion for the second edition. Write her a respectful note (usted): say where Hernando got it exactly right, praise the best thing about the book, and name one weaker chapter.",
     "minWords": 150,
     "maxWords": 250,
     "constraints": [
       {
         "type": "regex",
         "pattern": "\\b(di|dio|dieron|das|da|dan|dar|dará|diste|dieras|dé) en el clavo",
-        "label": "say he got it exactly right with dar en el clavo"
+        "label": "say where he got it exactly right with dar en el clavo"
       },
       {
         "type": "avoidsAny",
@@ -1210,7 +1213,7 @@
           "puedes",
           "quieres"
         ],
-        "label": "an older stranger: usted, not tú"
+        "label": "someone you hardly know: usted, not tú"
       },
       {
         "type": "regex",
@@ -1222,7 +1225,7 @@
         "n": 6
       }
     ],
-    "model": "Estimado don Hernando: terminé anoche su libro y quiero contarle lo que pienso, sin adornos y con mucho respeto. Usted dio en el clavo con el capítulo del taxi, el de la noche de la lluvia. Se nota que lo vivió, y uno huele el asfalto mojado mientras lee. Lo mejor del libro es esa voz suya, tranquila y burlona, que nunca se cree más importante que los pasajeros. Hay un capítulo que me pareció más flojo: el de los políticos. Ahí usted explica demasiado, y el lector ya entendió. Yo lo acortaría a la mitad. Pero son detalles. Lo importante es que el libro tiene corazón, y eso no se aprende. Cuando lo puse sobre el mostrador, tres clientes lo tomaron en sus manos antes de que yo pudiera decirles qué era. Mi abuela lo habría leído de una sola sentada. Gracias por confiarme las primeras páginas. Quedo atento a su respuesta.",
+    "model": "Estimada señora Ortiz: terminé anoche el libro de don Hernando y quiero contarle lo que pienso, sin adornos y con mucho respeto. Hernando dio en el clavo con el capítulo del taxi, el de la noche de la lluvia. Se nota que lo vivió, y uno huele el asfalto mojado mientras lee. Lo mejor del libro es esa voz suya, tranquila y burlona, que nunca se cree más importante que los pasajeros. Hay un capítulo que me pareció más flojo: el de los políticos. Ahí explica demasiado, y el lector ya entendió. Yo lo acortaría a la mitad, aunque sé que él habría discutido conmigo una hora. Pero son detalles. Lo importante es que el libro tiene corazón, y eso no se aprende. Cuando lo puse sobre el mostrador, tres clientes lo tomaron en sus manos antes de que yo pudiera decirles qué era. Mi abuela lo habría leído de una sola sentada. Gracias por confiar en mí para esta segunda edición. Quedo atento a su respuesta.",
     "focus": "p:dar-en-el-clavo",
     "requires": [
       "c:ayer-anoche",
@@ -1236,6 +1239,7 @@
       "c:tienes",
       "c:tranquilo",
       "g:adjective-agreement",
+      "g:aunque-indicative",
       "g:comparatives",
       "g:conditional",
       "g:conditional-perfect",
@@ -1251,6 +1255,7 @@
       "g:object-pronoun-position",
       "g:parecer-quedar",
       "g:possessives-stressed",
+      "g:prep-pronouns",
       "g:present-ar",
       "g:present-er-ir",
       "g:pret-vs-imperfect",
@@ -1287,10 +1292,13 @@
       "l:dar",
       "l:decir",
       "l:detalle",
+      "l:discutir",
+      "l:edición",
       "l:entender",
       "l:estimado",
       "l:explicar",
       "l:flojo",
+      "l:hora",
       "l:importante",
       "l:lector",
       "l:leer",
@@ -1310,14 +1318,15 @@
       "l:poder",
       "l:político",
       "l:poner",
-      "l:página",
       "l:quedar",
       "l:querer",
       "l:qué",
       "l:respeto",
       "l:respuesta",
+      "l:saber",
       "l:sentar",
       "l:ser",
+      "l:señora",
       "l:taxi",
       "l:tener",
       "l:terminar",
@@ -1326,6 +1335,7 @@
       "l:vivir",
       "l:voz",
       "p:aqui-ahi-alla",
+      "p:confiar-en-que",
       "p:cuando-basic",
       "p:dar-en-el-clavo",
       "p:demonstratives-basic",
@@ -1336,12 +1346,13 @@
       "p:humedo-mojado",
       "p:lo-mejor-de",
       "p:los-de-la-camiseta",
-      "p:me-te-nos-objects",
       "p:ordinal-floor",
       "p:ordinals-primer-tercer",
+      "p:para-inf",
       "p:por-la-manana",
       "p:possessives-basic",
       "p:quantifiers-basic",
+      "p:saber-conocer",
       "p:saltar-a-la-vista",
       "p:senor-don-article"
     ]
@@ -1691,7 +1702,7 @@
         "n": 6
       }
     ],
-    "model": "Querido diario: hoy fue un martes cualquiera, y por eso quiero escribirlo antes de que se me olvide. Me desperté a las seis, abrí el café y Simón me recibió con un grito, como siempre. No pasó nada especial. Hernando llegó a las ocho, pidió su tinto y se sentó junto a la ventana a corregir su libro. Vale estaba en la cocina, y el olor a pan lo llenaba todo. A mediodía entró una señora que preguntó si podía quedarse a leer sin pedir nada, y le dije que esta casa no es un restaurante cualquiera. Se quedó cuatro horas. Cuando se fue, dejó una nota debajo de la taza: decía que hacía años no se sentía tan tranquila en un lugar público. Pensé que eso valía más que la caja del día. Antes, un martes así me parecía aburrido. Ahora lo entiendo: cualquier día puede ser el mejor si uno presta atención. Mañana vendrá el crítico y estaré nervioso, así que quería guardar este momento.",
+    "model": "Querido diario: hoy fue un martes cualquiera, y por eso quiero escribirlo antes de que se me olvide. Me desperté a las seis, abrí el café y Simón me recibió con un grito, como siempre. No pasó nada especial. Mariana llegó a las ocho, pidió su tinto y se sentó junto a la ventana a corregir un artículo. Vale estaba en la cocina, y el olor a pan lo llenaba todo. A mediodía entró una señora que preguntó si podía quedarse a leer sin pedir nada, y le dije que esta casa no es un restaurante cualquiera. Se quedó cuatro horas. Cuando se fue, dejó una nota debajo de la taza: decía que hacía años no se sentía tan tranquila en un lugar público. Pensé que eso valía más que la caja del día. Antes, un martes así me parecía aburrido. Ahora lo entiendo: cualquier día puede ser el mejor si uno presta atención. Mañana vendrá el crítico y estaré nervioso, así que quería guardar este momento.",
     "focus": "p:un-x-cualquiera",
     "requires": [
       "c:antes-de-que-se-me-olvide",
@@ -1733,6 +1744,7 @@
       "l:aburrido",
       "l:ahora",
       "l:antes",
+      "l:artículo",
       "l:atención",
       "l:año",
       "l:café",
@@ -1760,7 +1772,6 @@
       "l:irse",
       "l:junto",
       "l:leer",
-      "l:libro",
       "l:llegar",
       "l:llenar",
       "l:lugar",

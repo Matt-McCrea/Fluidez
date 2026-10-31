@@ -2,7 +2,7 @@
   "id": "sc-u60-a",
   "unit": "u60",
   "title": "Un martes cualquiera",
-  "brief": "You're Tomás, on the morning the café reopens. Jaime, who delivers the beans, is from Medellín and speaks with vos, but you answer him with tú. Say what makes today different and invite him back.",
+  "brief": "You're Tomás, on the morning the café reopens. Jaime, who has delivered the beans from Medellín for years, drops by. Use tú with him. Say what makes today different and invite him back.",
   "spare": false,
   "turns": [
     {
@@ -53,7 +53,7 @@
       "npcEn": "Jaime: You're right. I pass through the neighbourhood all week. When do you want me to come by and try the black coffee?",
       "intent": "Tell him to come by any day this week and that the coffee is on you (use: cualquier día).",
       "accept": [
-        "Pasa cualquier día de esta semana, el tinto va por la casa.",
+        "Pasa cualquier día de esta semana, el tinto corre por mi cuenta.",
         "Ven cualquier día y te invito un tinto.",
         "Cualquier día me parece bien, Jaime. El tinto lo pago yo."
       ],
@@ -108,7 +108,6 @@
     "g:future-subj-recognition",
     "g:gender-articles",
     "g:imperfect-states",
-    "g:ir-a-plans",
     "g:negation-words",
     "g:object-pronoun-position",
     "g:por-para-1",
@@ -133,7 +132,8 @@
     "l:bien",
     "l:buena",
     "l:café",
-    "l:casa",
+    "l:correr",
+    "l:cuenta",
     "l:cuándo",
     "l:decir",
     "l:dueño",

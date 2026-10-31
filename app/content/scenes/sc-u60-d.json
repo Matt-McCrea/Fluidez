@@ -1,19 +1,19 @@
 {
   "id": "sc-u60-d",
   "unit": "u60",
-  "title": "El libro sobre el mostrador",
-  "brief": "You're Tomás. Don Hernando has put his poetry book on the counter and asks for your honest opinion. He is courtly and much older, so use usted. Praise what works, name what doesn't, and thank him.",
+  "title": "Los versos de doña Cecilia",
+  "brief": "You're Tomás. Doña Cecilia, a retired teacher from the block, has put her poetry book on the counter next to Hernando's and asks for your honest opinion. She is courtly and much older, so use usted. Praise what works, name what doesn't, and thank her.",
   "spare": true,
   "turns": [
     {
       "id": "t1",
-      "npc": "Hernando: Buenos días, Tomás. Quiero su opinión sincera sobre mi libro. ¿Qué es lo mejor?",
-      "npcEn": "Hernando: Good morning, Tomás. I want your honest opinion of my book. What is the best thing about it?",
-      "intent": "Say the best thing about the book is the poem about the taxi (use: lo mejor del libro es...), speaking to him as usted.",
+      "npc": "Doña Cecilia: Buenos días, Tomás. Quiero su opinión sincera sobre mi libro. ¿Qué es lo mejor?",
+      "npcEn": "Doña Cecilia: Good morning, Tomás. I want your honest opinion of my book. What is the best thing about it?",
+      "intent": "Say the best thing about the book is the poem about the market, speaking to her as usted (use: lo mejor del libro es…).",
       "accept": [
-        "Lo mejor del libro es el poema del taxi, don Hernando.",
-        "Lo mejor de su libro es el poema sobre el taxi.",
-        "Para mí, lo mejor del libro es el poema del taxi."
+        "Lo mejor del libro es el poema del mercado, doña Cecilia.",
+        "Lo mejor de su libro es el poema sobre el mercado.",
+        "Para mí, lo mejor del libro es el poema del mercado."
       ],
       "require": [
         {
@@ -36,9 +36,9 @@
     },
     {
       "id": "t2",
-      "npc": "Hernando: Me alegra. Hay versos, sin embargo, que usted encontrará pesados. Sea franco.",
-      "npcEn": "Hernando: I'm glad. There are lines, however, that you will find heavy going. Be frank.",
-      "intent": "Frankly say that the last part is a bit heavy going, but that the first part is very engaging (use: pesado, ameno).",
+      "npc": "Doña Cecilia: Me alegra. Hay versos, sin embargo, que usted encontrará pesados. Sea franco.",
+      "npcEn": "Doña Cecilia: I'm glad. There are lines, however, that you will find heavy going. Be frank.",
+      "intent": "Say that the last part is a bit heavy going, but that the first part is very engaging (use: pesado, ameno).",
       "accept": [
         "La última parte es un poco pesada, pero la primera es muy amena.",
         "Francamente, el final resulta pesado, aunque el comienzo es amenísimo.",
@@ -63,12 +63,12 @@
     },
     {
       "id": "t3",
-      "npc": "Hernando: Se lo agradezco. Dígame, ¿hice bien en leerlo aquí, delante de los vecinos?",
-      "npcEn": "Hernando: I thank you. Tell me, was I right to read it here in front of the neighbours?",
-      "intent": "Reassure him: tell him he was right to read it here (use: hizo bien en...).",
+      "npc": "Doña Cecilia: Se lo agradezco. Dígame, ¿hice bien en leerlo aquí, delante de los vecinos?",
+      "npcEn": "Doña Cecilia: Thank you. Tell me, was I right to read it here, in front of the neighbours?",
+      "intent": "Reassure her: tell her she was right to read it here (use: hizo bien en…).",
       "accept": [
-        "Hizo bien en leerlo aquí, don Hernando.",
-        "Claro que hizo bien en leerlo aquí. La gente lo escuchó con atención.",
+        "Hizo bien en leerlo aquí, doña Cecilia.",
+        "Claro que hizo bien en leerlo aquí. La gente la escuchó con atención.",
         "Hizo muy bien en leerlo delante de todos."
       ],
       "require": [
@@ -91,12 +91,12 @@
     },
     {
       "id": "t4",
-      "npc": "Hernando: Entonces dejaré el libro sobre el mostrador. Un poeta nunca se va sin un café.",
-      "npcEn": "Hernando: Then I'll leave the book on the counter. A poet never leaves without a coffee.",
-      "intent": "Thank him and offer him a coffee on the house, as a question with usted.",
+      "npc": "Doña Cecilia: Entonces dejaré el libro sobre el mostrador, al lado del de Hernando. Una poeta nunca se va sin un café.",
+      "npcEn": "Doña Cecilia: Then I'll leave the book on the counter, next to Hernando's. A poet never leaves without a coffee.",
+      "intent": "Thank her and offer her a coffee on the house, as a question with usted.",
       "accept": [
-        "Gracias, don Hernando. ¿Le sirvo un tinto?",
-        "Muchas gracias. ¿Quiere un tinto, invita la casa?",
+        "Gracias, doña Cecilia. ¿Le sirvo un tinto?",
+        "Muchas gracias. ¿Le provoca un tinto? Invita la casa.",
         "Con mucho gusto. ¿Le preparo un café?"
       ],
       "require": [
@@ -182,9 +182,11 @@
     "l:hacer",
     "l:invitar",
     "l:irse",
+    "l:lado",
     "l:leer",
     "l:libro",
     "l:mejor",
+    "l:mercado",
     "l:mostrador",
     "l:opinión",
     "l:parte",
@@ -192,6 +194,7 @@
     "l:poema",
     "l:poeta",
     "l:preparar",
+    "l:provocar",
     "l:querer",
     "l:qué",
     "l:resto",
@@ -199,7 +202,6 @@
     "l:ser",
     "l:servir",
     "l:sincero",
-    "l:taxi",
     "l:tinto",
     "l:vecino",
     "l:verso",

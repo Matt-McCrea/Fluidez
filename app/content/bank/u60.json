@@ -266,19 +266,21 @@
   },
   {
     "id": "u60-0010",
-    "es": "¿Haría usted bien en aceptar la oferta del hotel?",
-    "en": "Would you be right to accept the hotel's offer? (polite)",
+    "es": "¿Hizo bien Vale en rechazar la oferta del hotel?",
+    "en": "Was Vale right to turn down the hotel's offer?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
-      "g:conditional",
       "g:gender-articles",
-      "l:aceptar",
+      "g:preterite-ser-ir-hacer",
       "l:bien",
       "l:hacer",
       "l:hotel",
-      "l:oferta"
+      "l:oferta",
+      "l:rechazar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [],
     "kind": "question",
@@ -604,7 +606,7 @@
   {
     "id": "u60-0022",
     "es": "Haces bien en quedarte con el tinto, el jugo está muy dulce.",
-    "en": "You do well to stick with the black coffee, the juice is watery. (to a friend)",
+    "en": "You do well to stick with the black coffee, the juice is very sweet. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -910,8 +912,8 @@
   },
   {
     "id": "u60-0032",
-    "es": "¿Hace usted bien en publicar una crítica tan dura?",
-    "en": "Is it right of you to publish such a harsh review? (polite)",
+    "es": "¿Usted cree que hace bien en publicar una crítica tan dura?",
+    "en": "Do you think you're right to publish such a harsh review? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -919,11 +921,16 @@
       "g:adjective-agreement",
       "g:gender-articles",
       "g:present-er-ir",
+      "g:that-clauses",
       "l:bien",
+      "l:creer",
       "l:crítica",
       "l:duro",
       "l:hacer",
-      "l:publicar"
+      "l:publicar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:haces-bien-en"
     ],
     "targets": [],
     "kind": "question",
@@ -959,14 +966,17 @@
   },
   {
     "id": "u60-0034",
-    "es": "¿Por qué haces mal en decir lo que piensas?",
-    "en": "Why would you be wrong to say what you think? (to a friend)",
+    "es": "¿Por qué dices que hago mal en decir lo que pienso?",
+    "en": "Why do you say I'm wrong to say what I think? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-er-ir",
+      "c:hago-salgo-vengo",
       "g:relatives-donde-lo-que",
       "g:stem-boot",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "g:yo-irregular",
       "l:decir",
       "l:hacer",
       "l:mal",
@@ -1018,12 +1028,11 @@
   },
   {
     "id": "u60-0036",
-    "es": "Hizo mal en irse sin despedirse de la sala.",
-    "en": "He was wrong to leave without saying goodbye to the room.",
+    "es": "Hizo mal en irse sin despedirse de nadie.",
+    "en": "He was wrong to leave without saying goodbye to anyone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:prep-infinitive",
       "g:preterite-ser-ir-hacer",
       "g:reflexive-routine",
@@ -1031,7 +1040,6 @@
       "l:hacer",
       "l:irse",
       "l:mal",
-      "l:sala",
       "p:bien-bueno",
       "p:bien-mal-vs-bueno-malo",
       "p:haces-bien-en"
@@ -1270,14 +1278,14 @@
   },
   {
     "id": "u60-0045",
-    "es": "Hizo muy mal en hablar mal de Rosa en la tertulia.",
-    "en": "He was very wrong to speak ill of Rosa at the discussion evening.",
+    "es": "Hizo muy mal en criticar a Rosa en la tertulia.",
+    "en": "He was very wrong to criticise Rosa at the discussion evening.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ser-ir-hacer",
-      "l:hablar",
+      "l:criticar",
       "l:hacer",
       "l:mal",
       "l:tertulia",
@@ -1470,7 +1478,7 @@
   },
   {
     "id": "u60-0052",
-    "es": "Lo mejor de vivir en La Candelaria es el ruido de las campanas.",
+    "es": "Lo mejor de vivir en La Candelaria es el sonido de las campanas.",
     "en": "The best thing about living in La Candelaria is the sound of the bells.",
     "accept": [],
     "acceptEn": [],
@@ -1481,8 +1489,8 @@
       "g:superlatives",
       "l:campana",
       "l:mejor",
-      "l:ruido",
       "l:ser",
+      "l:sonido",
       "l:vivir"
     ],
     "targets": [],
@@ -2062,22 +2070,25 @@
   },
   {
     "id": "u60-0073",
-    "es": "Lo peor del invierno aquí es el frío de los pies.",
-    "en": "The worst thing about winter here is cold feet.",
+    "es": "Lo peor del invierno aquí es que la ropa nunca se seca.",
+    "en": "The worst thing about the rainy season here is that the washing never dries.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:es-que",
       "g:gender-articles",
       "g:lo-adjective",
-      "g:ser-identity",
+      "g:present-ar",
+      "g:reflexive-routine",
       "g:superlatives",
       "l:aquí",
-      "l:frío",
       "l:invierno",
       "l:peor",
-      "l:pie",
+      "l:ropa",
+      "l:secarse",
       "l:ser",
       "p:aqui-ahi-alla",
+      "p:frequency-scale",
       "p:lo-mejor-de"
     ],
     "targets": [
@@ -2090,7 +2101,7 @@
   },
   {
     "id": "u60-0074",
-    "es": "¿Cuál es lo mejor de la nueva carta del café?",
+    "es": "¿Qué es lo mejor de la nueva carta del café?",
     "en": "What's the best thing about the café's new menu?",
     "accept": [],
     "acceptEn": [],
@@ -2103,9 +2114,9 @@
       "g:superlatives",
       "l:café",
       "l:carta",
-      "l:cuál",
       "l:mejor",
       "l:nuevo",
+      "l:qué",
       "l:ser"
     ],
     "targets": [],
@@ -2140,7 +2151,7 @@
   },
   {
     "id": "u60-0076",
-    "es": "¿Cuál fue lo mejor del concierto de anoche?",
+    "es": "¿Qué fue lo mejor del concierto de anoche?",
     "en": "What was the best thing about last night's concert?",
     "accept": [],
     "acceptEn": [],
@@ -2154,8 +2165,8 @@
       "g:superlatives",
       "l:anoche",
       "l:concierto",
-      "l:cuál",
       "l:mejor",
+      "l:qué",
       "l:ser"
     ],
     "targets": [],
@@ -2844,21 +2855,22 @@
   },
   {
     "id": "u60-0101",
-    "es": "A lo largo de esta presentación Tomás contó cómo llegó al barrio.",
-    "en": "Over the course of this presentation Tomás told how he came to the neighbourhood.",
+    "es": "A lo largo de esta charla, Tomás contará cómo llegó al barrio.",
+    "en": "Over the course of this talk, Tomás will tell how he came to the neighbourhood.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:future-promises",
       "g:gender-articles",
       "g:indirect-questions",
       "g:lo-adjective",
       "g:preterite-ar",
       "l:barrio",
+      "l:charla",
       "l:contar",
       "l:cómo",
       "l:largo",
       "l:llegar",
-      "l:presentación",
       "p:a-lo-largo-de",
       "p:a-lo-largo-de-esta-charla",
       "p:demonstratives-basic"
@@ -3108,7 +3120,7 @@
   {
     "id": "u60-0110",
     "es": "Para ir terminando, les propongo una pregunta para la tertulia.",
-    "en": "To finish off, I'd like to put a question to you for the discussion.",
+    "en": "To finish off, I'm putting a question to you all for the discussion.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3254,7 +3266,7 @@
   {
     "id": "u60-0115",
     "es": "A lo largo de este curso aprenderán a escribir una reseña.",
-    "en": "Over the course of this course you will learn to write a review. (you all)",
+    "en": "Throughout this course you will learn to write a review. (you all)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4740,7 +4752,7 @@
   {
     "id": "u60-0169",
     "es": "La sala quedó de lo más bonita con las cartas en la pared.",
-    "en": "The room looks really pretty with the letters on the wall.",
+    "en": "The room ended up looking really pretty with the letters on the wall.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4842,22 +4854,26 @@
   },
   {
     "id": "u60-0173",
-    "es": "¿Fue la cena de lo más incómoda para ti también?",
-    "en": "Was the dinner extremely awkward for you too? (to a friend)",
+    "es": "¿La cena estuvo de lo más incómoda o fue idea mía?",
+    "en": "Was the dinner really awkward, or was it just me?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:estuvo",
       "g:adjective-agreement",
+      "g:estar-location-states",
       "g:gender-articles",
-      "g:prep-pronouns",
+      "g:possessives-stressed",
+      "g:preterite-irregular-strong",
       "g:preterite-ser-ir-hacer",
       "g:ser-identity",
       "g:superlatives",
       "l:cena",
+      "l:estar",
+      "l:idea",
       "l:incómodo",
       "l:ser",
-      "p:de-lo-mas-adj",
-      "p:para-inf"
+      "p:de-lo-mas-adj"
     ],
     "targets": [
       "p:de-lo-mas-adj"
@@ -4896,20 +4912,19 @@
   },
   {
     "id": "u60-0175",
-    "es": "¿Por qué es el final de lo más extraño?",
-    "en": "Why is the ending so extremely strange?",
+    "es": "¿No te pareció el final de lo más extraño?",
+    "en": "Didn't the ending seem really strange to you? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:ser-identity",
+      "g:parecer-quedar",
+      "g:preterite-er-ir",
       "g:superlatives",
       "l:extraño",
       "l:final",
-      "l:qué",
-      "l:ser",
-      "p:de-lo-mas-adj",
-      "p:prep-questions-basic"
+      "l:parecer",
+      "p:de-lo-mas-adj"
     ],
     "targets": [
       "p:de-lo-mas-adj"
@@ -5513,20 +5528,22 @@
   },
   {
     "id": "u60-0198",
-    "es": "Un día cualquiera de estos me voy a atrever a cantar.",
-    "en": "One of these ordinary days I'm going to dare to sing.",
+    "es": "Me atreví a cantar un jueves cualquiera, sin avisarle a nadie.",
+    "en": "I worked up the courage to sing one ordinary Thursday, without telling anyone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:voy-a",
       "g:cada-cualquier",
-      "g:demonstratives",
       "g:gender-articles",
-      "g:ir-a-plans",
+      "g:indirect-objects",
+      "g:object-pronoun-position",
+      "g:prep-infinitive",
+      "g:preterite-er-ir",
+      "g:reflexive-routine",
       "l:atreverse",
+      "l:avisar",
       "l:cantar",
-      "l:día",
-      "l:irse",
+      "l:jueves",
       "p:decidirse-atreverse-a",
       "p:un-x-cualquiera"
     ],
@@ -5569,21 +5586,21 @@
   },
   {
     "id": "u60-0200",
-    "es": "Una tarde cualquiera, ¿vienes a tomar algo?",
-    "en": "Any old afternoon, will you come for a drink? (to a friend)",
+    "es": "Una tarde cualquiera, Simón aprendió a silbar el himno.",
+    "en": "One ordinary afternoon, Simón learned to whistle the anthem.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
       "g:gender-articles",
-      "g:stem-boot",
-      "l:tarde",
-      "l:tomar",
-      "l:venir",
-      "p:indefinites-basic"
+      "g:preterite-er-ir",
+      "l:aprender",
+      "l:himno",
+      "l:silbar",
+      "l:tarde"
     ],
     "targets": [],
-    "kind": "dialogue",
+    "kind": "statement",
     "unit": "u60",
     "theme": "un x cualquiera, ordinary and any old",
     "source": "gen"
@@ -5852,7 +5869,7 @@
   {
     "id": "u60-0211",
     "es": "Tráeme una silla cualquiera, la que sea.",
-    "en": "Bring me any chair, whichever. (to a friend)",
+    "en": "Bring me any chair, whichever one. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5990,7 +6007,7 @@
   {
     "id": "u60-0216",
     "es": "Un pintor cualquiera no habría visto esa luz.",
-    "en": "Just any painter wouldn't have seen that light.",
+    "en": "An ordinary painter wouldn't have seen that light.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6109,20 +6126,25 @@
   },
   {
     "id": "u60-0221",
-    "es": "¿Te quedas a cenar un día cualquiera de esta semana?",
-    "en": "Will you stay for dinner any day this week? (to a friend)",
+    "es": "¿Para ti es un día cualquiera, o te acuerdas de qué fecha es?",
+    "en": "Is it an ordinary day for you, or do you remember what date it is? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
       "g:gender-articles",
-      "g:present-ar",
+      "g:prep-pronouns",
+      "g:questions",
       "g:reflexive-routine",
-      "l:cenar",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:acordarse",
       "l:día",
-      "l:quedarse",
-      "l:semana",
-      "p:demonstratives-basic",
+      "l:fecha",
+      "l:qué",
+      "l:ser",
+      "p:para-inf",
+      "p:recordar-acordarse",
       "p:un-x-cualquiera"
     ],
     "targets": [
@@ -6163,7 +6185,7 @@
   {
     "id": "u60-0223",
     "es": "Una persona cualquiera no entra a la cocina de Vale.",
-    "en": "Just any person doesn't walk into Vale's kitchen.",
+    "en": "Not just anyone walks into Vale's kitchen.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6353,7 +6375,7 @@
   {
     "id": "u60-0230",
     "es": "Un libro cualquiera no cambia una vida, pero este sí.",
-    "en": "Just any book doesn't change a life, but this one did.",
+    "en": "An ordinary book doesn't change a life, but this one does.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6662,21 +6684,20 @@
   },
   {
     "id": "u60-0242",
-    "es": "Pregunté por un plato cualquiera del menú y me trajeron el mejor.",
-    "en": "I asked for any dish on the menu and they brought me the best one.",
+    "es": "Pedí un plato cualquiera del menú y me trajeron el mejor.",
+    "en": "I ordered any old dish on the menu and they brought me the best one.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
       "g:gender-articles",
-      "g:por-para-1",
-      "g:preterite-ar",
+      "g:preterite-er-ir",
       "g:preterite-irregular-strong",
       "g:superlatives",
       "l:mejor",
       "l:menú",
+      "l:pedir",
       "l:plato",
-      "l:preguntar",
       "l:traer",
       "p:llevar-traer",
       "p:me-te-nos-objects",
@@ -7144,7 +7165,7 @@
   {
     "id": "u60-0261",
     "es": "Ganas no tengo de contestarle a ese crítico.",
-    "en": "The urge I haven't got to answer that critic.",
+    "en": "Any wish to answer that critic, I haven't got.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7670,22 +7691,19 @@
   },
   {
     "id": "u60-0283",
-    "es": "Mapas tengo por montones, pero Hernando ya no necesitaba ninguno.",
-    "en": "Maps I have loads of, but Hernando didn't need any.",
+    "es": "Mapas no necesito: Hernando me enseñó cada calle.",
+    "en": "Maps I don't need: Hernando taught me every street.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tengo",
-      "c:ya-no",
-      "g:imperfect-habitual",
-      "g:indefinites",
-      "g:negation-words",
-      "g:por-para-1",
-      "g:yo-irregular",
+      "g:cada-cualquier",
+      "g:present-ar",
+      "g:preterite-ar",
+      "l:calle",
+      "l:enseñar",
       "l:mapa",
-      "l:montón",
       "l:necesitar",
-      "l:tener",
+      "p:me-te-nos-objects",
       "p:plata-no-hay"
     ],
     "targets": [
@@ -7839,7 +7857,7 @@
   {
     "id": "u60-0290",
     "es": "Preguntas tengo para regalar, ¿quiere alguna?",
-    "en": "Questions I've got to give away, would you like one?",
+    "en": "Questions I've got to give away, would you like one? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8147,17 +8165,18 @@
   },
   {
     "id": "u60-0302",
-    "es": "Té necesitamos más, se nos acabó el verde.",
-    "en": "Tea we need more of, we ran out of green.",
+    "es": "Té verde no queda, se nos acabó ayer.",
+    "en": "Green tea there isn't any left, we ran out yesterday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "c:ayer-anoche",
       "g:present-ar",
       "g:preterite-ar",
       "g:se-accidental",
       "l:acabar",
-      "l:necesitar",
+      "l:ayer",
+      "l:quedar",
       "l:té",
       "l:verde"
     ],
@@ -8245,19 +8264,21 @@
   },
   {
     "id": "u60-0306",
-    "es": "Cuentos tenía Hernando por montones, uno para cada cuadra.",
-    "en": "Stories Hernando had by the dozen, one for each block.",
+    "es": "Cuentos tenía Hernando por montones, y ninguno era corto.",
+    "en": "Stories Hernando had by the dozen, and not one of them was short.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:cada-cualquier",
+      "c:era",
       "g:imperfect-states",
+      "g:indefinites",
       "g:por-para-1",
-      "l:cuadra",
+      "g:ser-identity",
+      "l:corto",
       "l:cuento",
       "l:montón",
-      "l:tener",
-      "p:para-inf"
+      "l:ser",
+      "l:tener"
     ],
     "targets": [],
     "kind": "statement",
@@ -8375,7 +8396,7 @@
   {
     "id": "u60-0311",
     "es": "Lluvia no había en el pronóstico, y mire cómo cae.",
-    "en": "Rain there wasn't in the forecast, and look how it's coming down.",
+    "en": "Rain there wasn't in the forecast, and look how it's coming down. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8401,7 +8422,7 @@
   {
     "id": "u60-0312",
     "es": "Vergüenza no tiene ese hombre, mire lo que escribió.",
-    "en": "Shame that man hasn't got, look what he wrote.",
+    "en": "Shame that man hasn't got, look what he wrote. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9622,7 +9643,7 @@
   {
     "id": "u60-0358",
     "es": "Poner las cartas en la pared fue todo un acierto.",
-    "en": "Putting the letters on the wall was quite a stroke of luck.",
+    "en": "Putting the letters on the wall was a really smart move.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9796,7 +9817,7 @@
   {
     "id": "u60-0365",
     "es": "Que Hernando escribiera su libro fue un acierto para todos.",
-    "en": "That Hernando wrote his book was a stroke of luck for all of us.",
+    "en": "Hernando writing his book was a good call for all of us.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9966,7 +9987,7 @@
   {
     "id": "u60-0371",
     "es": "Qué acierto el tuyo, el pastel salió perfecto.",
-    "en": "What a good call of yours, the cake came out perfect. (to a friend)",
+    "en": "What a good call on your part, the cake came out perfect. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10089,7 +10110,7 @@
   {
     "id": "u60-0376",
     "es": "Fue un verdadero acierto no vender en el primer mes.",
-    "en": "It was a real stroke of luck not to sell in the first month.",
+    "en": "It was a really good call not to sell in the first month.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10470,7 +10491,7 @@
   {
     "id": "u60-0390",
     "es": "Fue todo un acierto venir temprano, mira la fila.",
-    "en": "Coming early was quite a stroke of luck, look at the queue. (to a friend)",
+    "en": "Coming early was a really good call, look at the queue. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10581,7 +10602,7 @@
   {
     "id": "u60-0394",
     "es": "La música de fondo es un acierto, no molesta y acompaña.",
-    "en": "The background music is a good choice, it doesn't bother and it accompanies.",
+    "en": "The background music is a good choice, it isn't intrusive and it keeps you company.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10762,23 +10783,30 @@
   },
   {
     "id": "u60-0401",
-    "es": "Qué buen acierto, Simón, ya no dices groserías.",
-    "en": "What a good call, Simón, you don't swear any more.",
+    "es": "Fue un acierto enseñarle otra palabra a Simón: ya no dice groserías.",
+    "en": "Teaching Simón another word was a good call: he doesn't swear any more.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ya-no",
-      "g:questions",
-      "g:stem-boot",
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:object-pronoun-position",
+      "g:preterite-ser-ir-hacer",
+      "g:ser-identity",
       "g:stem-e-i",
-      "l:acertar",
-      "l:buen",
+      "l:acierto",
       "l:decir",
+      "l:enseñar",
       "l:grosería",
-      "l:qué"
+      "l:palabra",
+      "l:ser",
+      "p:otro-no-article",
+      "p:ser-un-acierto"
     ],
     "targets": [],
-    "kind": "dialogue",
+    "kind": "statement",
     "unit": "u60",
     "theme": "acierto, more",
     "source": "gen"
@@ -10971,19 +10999,22 @@
   },
   {
     "id": "u60-0409",
-    "es": "La atención al público dejó bastante que desear en la inauguración.",
-    "en": "The service to the public left quite a lot to be desired at the opening.",
+    "es": "La señal del celular deja bastante que desear en el sótano del teatro.",
+    "en": "The phone signal leaves quite a lot to be desired in the theatre basement.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:present-ar",
       "g:quantifiers",
       "g:that-clauses",
-      "l:atención",
-      "l:dejó",
+      "l:celular",
+      "l:dejar",
       "l:desear",
-      "l:inauguración",
-      "l:público"
+      "l:señal",
+      "l:sótano",
+      "l:teatro",
+      "p:dejar-mucho-que-desear"
     ],
     "targets": [],
     "kind": "statement",
@@ -10993,8 +11024,8 @@
   },
   {
     "id": "u60-0410",
-    "es": "Ese conferenciante deja mucho que desear, ¿vamos al café?",
-    "en": "That speaker leaves a lot to be desired, shall we go to the café?",
+    "es": "Esa charla deja mucho que desear, ¿vamos al café?",
+    "en": "That talk leaves a lot to be desired, shall we go to the café?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11004,7 +11035,7 @@
       "g:present-ar",
       "g:that-clauses",
       "l:café",
-      "l:conferenciante",
+      "l:charla",
       "l:dejar",
       "l:desear",
       "l:ir",
@@ -11768,7 +11799,7 @@
   {
     "id": "u60-0438",
     "es": "Dar en el clavo a la primera no es normal.",
-    "en": "Hitting the nail on the head at the first try isn't normal.",
+    "en": "Hitting the nail on the head first time isn't normal.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12304,26 +12335,27 @@
   },
   {
     "id": "u60-0457",
-    "es": "Hernando era un narrador fuera de serie, aunque nunca escribió.",
-    "en": "Hernando was a storyteller in a league of his own, although he never wrote.",
+    "es": "Hernando era un narrador fuera de serie, mucho antes de escribir su libro.",
+    "en": "Hernando was a storyteller in a league of his own, long before he wrote his book.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:era",
-      "g:aunque-indicative",
       "g:gender-articles",
       "g:imperfect-states",
-      "g:pret-vs-imperfect",
-      "g:preterite-er-ir",
+      "g:prep-infinitive",
       "g:ser-identity",
+      "l:antes",
       "l:escribir",
+      "l:libro",
       "l:narrador",
       "l:ser",
       "l:serie",
       "p:cerca-de",
-      "p:frequency-scale",
       "p:fuera-de-serie",
-      "p:position-de"
+      "p:position-de",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "p:fuera-de-serie"
@@ -12983,25 +13015,26 @@
   },
   {
     "id": "u60-0481",
-    "es": "Un pastel fuera de serie, pidió el crítico, y se lo comió todo.",
-    "en": "An outstanding cake, said the critic, and he ate all of it.",
+    "es": "El crítico pidió un pastel cualquiera y le llegó uno fuera de serie.",
+    "en": "The critic ordered any old cake and got an outstanding one.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:double-pronouns",
+      "g:cada-cualquier",
       "g:gender-articles",
-      "g:preterite-er-ir",
+      "g:indirect-objects",
+      "g:preterite-ar",
       "g:preterite-spelling-stem",
-      "l:comer",
       "l:crítico",
+      "l:llegar",
       "l:pastel",
       "l:pedir",
       "l:serie",
       "p:cerca-de",
-      "p:comerse-todo",
       "p:fuera-de-serie",
       "p:position-de",
-      "p:preguntar-pedir"
+      "p:preguntar-pedir",
+      "p:un-x-cualquiera"
     ],
     "targets": [
       "p:fuera-de-serie"
@@ -13547,8 +13580,8 @@
   },
   {
     "id": "u60-0501",
-    "es": "Se nota que la orquesta no ensayó juntos esta semana.",
-    "en": "You can tell the orchestra didn't rehearse together this week.",
+    "es": "Se nota que los músicos no ensayaron juntos esta semana.",
+    "en": "You can tell the musicians didn't rehearse together this week.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13559,8 +13592,8 @@
       "g:that-clauses",
       "l:ensayar",
       "l:juntos",
+      "l:músico",
       "l:notar",
-      "l:orquesta",
       "l:semana",
       "p:demonstratives-basic",
       "p:saltar-a-la-vista"
@@ -14153,26 +14186,27 @@
   },
   {
     "id": "u60-0523",
-    "es": "Se nota que ayer fue festivo: hay menos gente.",
-    "en": "You can tell yesterday was a holiday: there are fewer people.",
+    "es": "Se nota que mañana es festivo: todo el mundo está de buen humor.",
+    "en": "You can tell tomorrow is a holiday: everyone's in a good mood.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:ayer-anoche",
-      "c:hay",
-      "g:hay-vs-esta",
+      "g:estar-location-states",
+      "g:gender-articles",
       "g:present-ar",
-      "g:preterite-ser-ir-hacer",
       "g:se-impersonal",
       "g:ser-identity",
       "g:that-clauses",
-      "l:ayer",
+      "l:buen",
+      "l:estar",
       "l:festivo",
-      "l:gente",
+      "l:humor",
+      "l:mañana",
+      "l:mundo",
       "l:notar",
       "l:ser",
-      "p:la-gente-singular",
-      "p:saltar-a-la-vista"
+      "p:saltar-a-la-vista",
+      "p:todos-los-dias"
     ],
     "targets": [
       "p:saltar-a-la-vista"
@@ -14184,25 +14218,22 @@
   },
   {
     "id": "u60-0524",
-    "es": "Salta a la vista que la cocina estaba limpia desde la noche anterior.",
-    "en": "It's glaringly obvious the kitchen had been clean since the night before.",
+    "es": "Salta a la vista que alguien limpió la cocina anoche.",
+    "en": "It's glaringly obvious that someone cleaned the kitchen last night.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
-      "g:estar-location-states",
+      "c:ayer-anoche",
       "g:gender-articles",
-      "g:imperfect-states",
       "g:present-ar",
+      "g:preterite-ar",
       "g:relative-que",
-      "l:anterior",
+      "l:anoche",
       "l:cocina",
-      "l:estar",
-      "l:limpio",
-      "l:noche",
+      "l:limpiar",
       "l:saltar",
       "l:vista",
-      "p:dentro-de-vs-despues",
+      "p:indefinites-basic",
       "p:saltar-a-la-vista"
     ],
     "targets": [
@@ -15241,7 +15272,7 @@
   },
   {
     "id": "u60-0564",
-    "es": "Tomás compró tinto de mala calidad por error y Vale lo notó al instante.",
+    "es": "Tomás compró café de mala calidad por error y Vale lo notó al instante.",
     "en": "Tomás bought poor quality coffee by mistake and Vale noticed instantly.",
     "accept": [],
     "acceptEn": [],
@@ -15249,13 +15280,13 @@
       "g:direct-objects",
       "g:gender-articles",
       "g:preterite-ar",
+      "l:café",
       "l:calidad",
       "l:comprar",
       "l:error",
       "l:instante",
       "l:mala",
       "l:notar",
-      "l:tinto",
       "p:calidad-dudosa",
       "p:costar-pagar"
     ],
@@ -15401,8 +15432,8 @@
   },
   {
     "id": "u60-0570",
-    "es": "El señor Altamira habla de calidad cuando quiere decir precio.",
-    "en": "Mr Altamira talks about quality when he means price.",
+    "es": "La gente de Altamira habla de calidad cuando quiere decir precio.",
+    "en": "The Altamira people talk about quality when they mean price.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15412,12 +15443,12 @@
       "g:verb-infinitive",
       "l:calidad",
       "l:decir",
+      "l:gente",
       "l:hablar",
       "l:precio",
       "l:querer",
-      "l:señor",
       "p:cuando-basic",
-      "p:senor-don-article"
+      "p:la-gente-singular"
     ],
     "targets": [],
     "kind": "statement",
@@ -15970,18 +16001,18 @@
   },
   {
     "id": "u60-0592",
-    "es": "La crueldad de esa frase roza el insulto.",
-    "en": "The cruelty of that sentence borders on insult.",
+    "es": "El tono de esa frase roza el insulto.",
+    "en": "The tone of that sentence borders on insult.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
       "g:gender-articles",
       "g:present-ar",
-      "l:crueldad",
       "l:frase",
       "l:insulto",
       "l:rozar",
+      "l:tono",
       "p:rozar-el-ridiculo"
     ],
     "targets": [
@@ -16574,7 +16605,7 @@
   {
     "id": "u60-0615",
     "es": "Esa gira de seis países roza lo imposible.",
-    "en": "That six country tour borders on the impossible.",
+    "en": "That tour of six countries borders on the impossible.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16921,8 +16952,8 @@
   },
   {
     "id": "u60-0628",
-    "es": "Tu novela es amena de leer, te lo juro.",
-    "en": "Your novel is a pleasure to read, I swear. (to a friend)",
+    "es": "Tu novela es muy amena, te lo juro.",
+    "en": "Your novel is really engaging, I swear. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16932,12 +16963,12 @@
       "g:ser-identity",
       "l:amén",
       "l:jurar",
-      "l:leer",
       "l:novela",
       "l:ser",
       "p:ameno-pesado",
       "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "p:ameno-pesado"
@@ -17338,22 +17369,20 @@
   },
   {
     "id": "u60-0644",
-    "es": "Hoy el café está pesado, hay demasiada gente.",
-    "en": "Today the café is heavy going, there are too many people.",
+    "es": "Hoy el ambiente en el café está pesado, nadie habla.",
+    "en": "Today the atmosphere in the café is heavy, nobody's talking.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
       "g:estar-location-states",
       "g:gender-articles",
-      "g:hay-vs-esta",
-      "g:quantifiers",
+      "g:present-ar",
+      "l:ambiente",
       "l:café",
       "l:estar",
-      "l:gente",
+      "l:hablar",
       "l:hoy",
-      "l:pesar",
-      "p:la-gente-singular"
+      "l:pesar"
     ],
     "targets": [],
     "kind": "statement",
@@ -17830,8 +17859,8 @@
   },
   {
     "id": "u60-0663",
-    "es": "Mi profesor es apasionante, nunca miro el reloj.",
-    "en": "My teacher is thrilling, I never look at the clock.",
+    "es": "Las clases de mi profesor son apasionantes, nunca miro el reloj.",
+    "en": "My teacher's classes are thrilling, I never look at the clock.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17839,6 +17868,7 @@
       "g:present-ar",
       "g:ser-identity",
       "l:apasionante",
+      "l:clase",
       "l:mirar",
       "l:profesor",
       "l:reloj",
@@ -18821,7 +18851,7 @@
   {
     "id": "u60-0699",
     "es": "Esa cámara es un cacharro, las fotos salen mal.",
-    "en": "That camera is a piece of junk, the photos come out blurry.",
+    "en": "That camera is a piece of junk, the photos come out badly.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18881,8 +18911,8 @@
   },
   {
     "id": "u60-0701",
-    "es": "El paraguas roto no sirve para nada, pero la lluvia sí.",
-    "en": "The broken umbrella is no use at all, but the rain is.",
+    "es": "Con este viento, el paraguas no sirve para nada.",
+    "en": "In this wind, the umbrella is no use at all.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18890,10 +18920,10 @@
       "c:para-nada",
       "g:gender-articles",
       "g:negation-words",
-      "l:lluvia",
       "l:paraguas",
-      "l:romper",
       "l:servir",
+      "l:viento",
+      "p:demonstratives-basic",
       "p:no-servir-para-nada",
       "p:servir-para"
     ],
@@ -19252,13 +19282,13 @@
   },
   {
     "id": "u60-0715",
-    "es": "Resulta muy cómodo trabajar con Vale.",
-    "en": "It's very comfortable working with Vale.",
+    "es": "Resulta muy fácil trabajar con Vale.",
+    "en": "It's very easy working with Vale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:cómodo",
+      "l:fácil",
       "l:resultar",
       "l:trabajar",
       "p:quantifiers-basic",
@@ -20077,23 +20107,24 @@
   },
   {
     "id": "u60-0747",
-    "es": "Resulta increíble que Tomás hable tanto después de un año.",
-    "en": "It's incredible that Tomás talks so much after a year.",
+    "es": "Resulta increíble que Tomás hable tan bien ahora.",
+    "en": "It's incredible that Tomás speaks so well now.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "c:bien-y-tu",
       "g:present-ar",
       "g:subj-value",
       "g:subj-wanting",
       "g:that-clauses",
-      "l:año",
-      "l:después",
+      "l:ahora",
+      "l:bien",
       "l:hablar",
       "l:increíble",
       "l:resultar",
-      "p:resulta-adj-que",
-      "p:time-sequence-basic"
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:resulta-adj-que"
     ],
     "targets": [
       "p:resulta-adj-que"
@@ -20232,15 +20263,20 @@
   },
   {
     "id": "u60-0753",
-    "es": "Vendrán simplemente Marta y Pepe, nadie más.",
-    "en": "Just Marta and Pepe will come, nobody else.",
+    "es": "No es nada grave, simplemente un resfriado.",
+    "en": "It's nothing serious, simply a cold.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adverbs-mente",
-      "g:future-promises",
+      "g:gender-articles",
+      "g:negation-words",
+      "g:ser-identity",
+      "l:grave",
+      "l:resfriado",
+      "l:ser",
       "l:simplemente",
-      "l:venir",
+      "p:no-es-nada-adj",
       "p:sencillamente"
     ],
     "targets": [
@@ -21199,8 +21235,8 @@
   },
   {
     "id": "u60-0789",
-    "es": "Hoy el café está sencillamente lleno hasta la puerta.",
-    "en": "Today the café is simply full to the door.",
+    "es": "Hoy el café está sencillamente a reventar.",
+    "en": "Today the café is simply packed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21210,9 +21246,9 @@
       "l:café",
       "l:estar",
       "l:hoy",
-      "l:lleno",
-      "l:puerta",
+      "l:reventar",
       "l:sencillamente",
+      "p:a-reventar",
       "p:sencillamente"
     ],
     "targets": [
@@ -22224,7 +22260,7 @@
   {
     "id": "u60-0832",
     "es": "Seguramente, Tomás está escribiendo su respuesta ahora mismo.",
-    "en": "Surely, Tomás is writing his reply right now.",
+    "en": "Most likely, Tomás is writing his reply right now.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22564,8 +22600,8 @@
   },
   {
     "id": "u60-0846",
-    "es": "Afortunadamente, nadie perdió el tren.",
-    "en": "Fortunately, nobody missed the train.",
+    "es": "Afortunadamente, nadie perdió el bus.",
+    "en": "Fortunately, nobody missed the bus.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22573,8 +22609,8 @@
       "g:gender-articles",
       "g:preterite-er-ir",
       "l:afortunadamente",
-      "l:perder",
-      "l:tren"
+      "l:bus",
+      "l:perder"
     ],
     "targets": [],
     "kind": "statement",
@@ -22736,7 +22772,7 @@
   {
     "id": "u60-0854",
     "es": "Seguramente, la tertulia terminará después de la medianoche.",
-    "en": "Surely, the discussion evening will end after midnight.",
+    "en": "Most likely, the discussion evening will end after midnight.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22877,20 +22913,17 @@
   },
   {
     "id": "u60-0860",
-    "es": "Lamentablemente, Mariana no pudo asistir a la presentación.",
-    "en": "Sadly, Mariana couldn't attend the presentation.",
+    "es": "Lamentablemente, la presentación empezó sin Mariana.",
+    "en": "Sadly, the presentation started without Mariana.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adverbs-mente",
       "g:gender-articles",
-      "g:preterite-irregular-strong",
-      "g:verb-infinitive",
-      "l:asistir",
+      "g:preterite-ar",
+      "l:empezar",
       "l:lamentablemente",
-      "l:poder",
-      "l:presentación",
-      "p:asistir-faltar"
+      "l:presentación"
     ],
     "targets": [],
     "kind": "statement",
@@ -22923,8 +22956,8 @@
   },
   {
     "id": "u60-0862",
-    "es": "Honestamente, el café necesita más ayuda de la que admite.",
-    "en": "Honestly, the café needs more help than it admits.",
+    "es": "Honestamente, Tomás necesita más ayuda de la que admite.",
+    "en": "Honestly, Tomás needs more help than he admits.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22936,7 +22969,6 @@
       "g:relatives-prepositions",
       "l:admitir",
       "l:ayuda",
-      "l:café",
       "l:honestamente",
       "l:necesitar",
       "p:mas-de-lo-que"
@@ -23748,17 +23780,17 @@
   },
   {
     "id": "u60-0897",
-    "es": "Pronto llegará el invierno y con él los turistas.",
-    "en": "Winter will soon be here, and with it the tourists.",
+    "es": "Pronto llegará diciembre y con él los turistas.",
+    "en": "December will soon be here, and with it the tourists.",
     "accept": [
-      "El invierno llegará pronto y con él los turistas."
+      "Diciembre llegará pronto y con él los turistas."
     ],
     "acceptEn": [],
     "requires": [
       "c:con-el-ella",
       "g:future-promises",
       "g:gender-articles",
-      "l:invierno",
+      "l:diciembre",
       "l:llegar",
       "l:pronto",
       "l:turista"
@@ -24091,21 +24123,17 @@
   },
   {
     "id": "u60-0912",
-    "es": "Muchas gracias les doy por venir esta noche.",
-    "en": "Thank you all so much for coming tonight. (you all)",
+    "es": "A todos ustedes, gracias por venir esta noche.",
+    "en": "All of you, thank you for coming tonight. (you all)",
     "accept": [
-      "Les doy muchas gracias por venir esta noche."
+      "Gracias a todos ustedes por venir esta noche."
     ],
     "acceptEn": [],
     "requires": [
-      "c:gracias-de-nada",
-      "g:indirect-objects",
-      "g:por-para-1",
-      "g:yo-irregular",
-      "l:dar",
       "l:noche",
       "l:venir",
-      "p:demonstratives-basic"
+      "p:demonstratives-basic",
+      "p:gracias-por"
     ],
     "targets": [],
     "kind": "statement",
@@ -27049,16 +27077,17 @@
   },
   {
     "id": "u60-1030",
-    "es": "El vestuario de la tertulia fue formal, pero cómodo.",
-    "en": "The dress code for the discussion evening was formal, but comfortable.",
+    "es": "El vestuario de los bailarines fue lo más aplaudido de la tertulia.",
+    "en": "The dancers' costumes got the most applause at the discussion evening.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ser-ir-hacer",
       "g:ser-identity",
-      "l:cómodo",
-      "l:formal",
+      "g:superlatives",
+      "l:aplaudir",
+      "l:bailarín",
       "l:ser",
       "l:tertulia",
       "l:vestuario"
@@ -27818,19 +27847,18 @@
   },
   {
     "id": "u60-1061",
-    "es": "Echaron al cliente grosero y lo expulsaron del café.",
-    "en": "They threw the rude customer out and expelled him from the café.",
+    "es": "Expulsaron del café al cliente grosero, y nadie protestó.",
+    "en": "They threw the rude customer out of the café, and nobody objected.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
       "g:gender-articles",
       "g:preterite-ar",
       "l:café",
       "l:cliente",
-      "l:echar",
       "l:expulsar",
-      "l:grosero"
+      "l:grosero",
+      "l:protestar"
     ],
     "targets": [
       "l:expulsar"
@@ -28671,7 +28699,7 @@
   {
     "id": "u60-1096",
     "es": "Nada supera la pureza de una nota bien tocada.",
-    "en": "Nothing beats the purity of a well played note.",
+    "en": "Nothing beats the purity of a well-played note.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28958,18 +28986,18 @@
   },
   {
     "id": "u60-1108",
-    "es": "La obra cambia de compás a mitad de la canción.",
-    "en": "The piece changes time halfway through the song.",
+    "es": "La pieza cambia de compás a mitad de camino.",
+    "en": "The piece changes time halfway through.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
       "l:cambiar",
-      "l:canción",
+      "l:camino",
       "l:compás",
       "l:mitad",
-      "l:obra",
+      "l:pieza",
       "p:cambiar-de-por"
     ],
     "targets": [
@@ -32947,7 +32975,7 @@
   {
     "id": "u60-1267",
     "es": "¿Cuántos años tenía Hernando cuando dejó el taxi?",
-    "en": "How old was Hernando when he left the taxi?",
+    "en": "How old was Hernando when he gave up driving the taxi?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -33612,7 +33640,7 @@
   {
     "id": "u60-1295",
     "es": "¿Cuánta creatividad cabe en un menú de tres platos?",
-    "en": "How much creativity fits in a three course menu?",
+    "en": "How much creativity fits in a three-course menu?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -33716,20 +33744,22 @@
   },
   {
     "id": "u60-1299",
-    "es": "Lamentablemente, ¿tenemos que cerrar los lunes?",
-    "en": "Do we unfortunately have to close on Mondays?",
+    "es": "Lamentablemente, hoy no hay pastel, ¿le sirvo otra cosa?",
+    "en": "Unfortunately, there's no cake today, can I get you something else? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
+      "c:hay",
       "g:adverbs-mente",
-      "g:gender-articles",
-      "g:verb-infinitive",
-      "l:cerrar",
+      "g:hay-vs-esta",
+      "g:indirect-objects",
+      "g:stem-e-i",
+      "l:cosa",
+      "l:hoy",
       "l:lamentablemente",
-      "l:lunes",
-      "l:tener",
-      "p:days-el-lunes"
+      "l:pastel",
+      "l:servir",
+      "p:otro-no-article"
     ],
     "targets": [],
     "kind": "question",
@@ -33760,18 +33790,24 @@
   },
   {
     "id": "u60-1301",
-    "es": "¿Hace usted bien en callar lo que sabe?",
-    "en": "Are you right to keep quiet about what you know? (polite)",
+    "es": "¿Usted cree que hago bien en callar lo que sé?",
+    "en": "Do you think I'm right to keep quiet about what I know? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
+      "c:hago-salgo-vengo",
       "g:present-er-ir",
       "g:relatives-donde-lo-que",
+      "g:that-clauses",
+      "g:yo-irregular",
       "l:bien",
       "l:callar",
+      "l:creer",
       "l:hacer",
       "l:saber",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:saber-conocer"
     ],
     "targets": [],
@@ -33832,7 +33868,7 @@
   },
   {
     "id": "u60-1304",
-    "es": "¿Cuál es lo mejor de abrir un café en esta calle?",
+    "es": "¿Qué es lo mejor de abrir un café en esta calle?",
     "en": "What's the best thing about opening a café on this street?",
     "accept": [],
     "acceptEn": [],
@@ -33845,8 +33881,8 @@
       "l:abrir",
       "l:café",
       "l:calle",
-      "l:cuál",
       "l:mejor",
+      "l:qué",
       "l:ser",
       "p:demonstratives-basic"
     ],
@@ -33905,20 +33941,21 @@
   },
   {
     "id": "u60-1307",
-    "es": "¿Un martes cualquiera te sirve para la cena?",
-    "en": "Does an ordinary Tuesday work for dinner? (to a friend)",
+    "es": "¿Te parece un martes cualquiera? Hoy cumple años Vale.",
+    "en": "Does it seem like an ordinary Tuesday to you? It's Vale's birthday today. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
       "g:gender-articles",
-      "g:stem-e-i",
-      "l:cena",
+      "g:parecer-quedar",
+      "g:present-er-ir",
+      "l:año",
+      "l:cumplir",
+      "l:hoy",
       "l:martes",
-      "l:servir",
-      "p:me-te-nos-objects",
-      "p:para-inf",
-      "p:servir-para",
+      "l:parecer",
+      "p:cumplir-anos",
       "p:un-x-cualquiera"
     ],
     "targets": [
@@ -34670,7 +34707,7 @@
   },
   {
     "id": "u60-1338",
-    "es": "Me pareció ameno, aunque duró mucho.",
+    "es": "Me pareció amena, aunque duró mucho.",
     "en": "I found it engaging, though it lasted a long time.",
     "accept": [],
     "acceptEn": [],
@@ -34679,7 +34716,7 @@
       "g:parecer-quedar",
       "g:preterite-ar",
       "g:preterite-er-ir",
-      "l:ameno",
+      "l:amén",
       "l:durar",
       "l:parecer",
       "p:ameno-pesado",
@@ -35255,7 +35292,7 @@
   {
     "id": "u60-1363",
     "es": "Mejor me lo piensas bien antes de firmar.",
-    "en": "Better you think it over properly before signing. (to a friend)",
+    "en": "You'd better think it over properly before signing. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -35435,7 +35472,7 @@
   {
     "id": "u60-1370",
     "es": "A lo largo de la noche iremos viendo, ¿está bien?",
-    "en": "Over the course of the night we'll see, all right?",
+    "en": "Over the course of the night we'll see how it goes, all right?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -35464,19 +35501,24 @@
   },
   {
     "id": "u60-1371",
-    "es": "Un día cualquiera de estos te invito a cenar.",
-    "en": "One of these ordinary days I'll invite you to dinner. (to a friend)",
+    "es": "No hace falta una fecha especial: te invito a cenar un martes cualquiera.",
+    "en": "We don't need a special date: I'll take you to dinner on any old Tuesday. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
-      "g:demonstratives",
       "g:gender-articles",
       "g:present-ar",
+      "g:present-er-ir",
       "l:cenar",
-      "l:día",
+      "l:especial",
+      "l:falta",
+      "l:fecha",
+      "l:hacer",
       "l:invitar",
+      "l:martes",
       "p:me-te-nos-objects",
+      "p:no-hace-falta-que",
       "p:te-invito-a",
       "p:un-x-cualquiera"
     ],
@@ -35846,7 +35888,7 @@
   {
     "id": "u60-1387",
     "es": "¡Qué pena con usted!",
-    "en": "How embarrassing for you! (polite)",
+    "en": "I'm so sorry! (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -35902,7 +35944,7 @@
   {
     "id": "u60-1390",
     "es": "¡Qué bueno que viniste, Mariana!",
-    "en": "How good that you came, Mariana!",
+    "en": "I'm so glad you came, Mariana!",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -36539,17 +36581,19 @@
   },
   {
     "id": "u60-1417",
-    "es": "Todavía no, ¿sale bien parado el café?",
-    "en": "Not yet, does the café come out well? (to a friend)",
+    "es": "Todavía no lo leo, ¿sale bien parado el café?",
+    "en": "I haven't read it yet, does the café come off well? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
       "c:todavia-no",
+      "g:direct-objects",
       "g:gender-articles",
       "g:present-er-ir",
       "l:bien",
       "l:café",
+      "l:leer",
       "l:parar",
       "l:salir",
       "p:bien-bueno",

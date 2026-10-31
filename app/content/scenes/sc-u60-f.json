@@ -7,8 +7,8 @@
   "turns": [
     {
       "id": "t1",
-      "npc": "Mariana: Llevan dos horas ensayando el monólogo y no se ha caído nadie. ¿Qué te parece la coreografía?",
-      "npcEn": "Mariana: They've been rehearsing the monologue for two hours and nobody has fallen over. What do you think of the choreography?",
+      "npc": "Mariana: Llevan dos horas ensayando la obra y no se ha caído nadie. ¿Qué te parece la coreografía?",
+      "npcEn": "Mariana: They've been rehearsing the play for two hours and nobody has fallen over. What do you think of the choreography?",
       "intent": "Say, politely, that it leaves a lot to be desired (use: deja mucho que desear).",
       "accept": [
         "Con cariño, la coreografía deja mucho que desear.",
@@ -51,7 +51,7 @@
       "id": "t3",
       "npc": "Mariana: Salta a la vista que ensayaron poco. ¿Tú lo notaste?",
       "npcEn": "Mariana: It's glaringly obvious they rehearsed little. Did you notice it?",
-      "intent": "Say yes, it's obvious, but that the guionista (writer) did hit the mark with the text (use: salta a la vista).",
+      "intent": "Say yes, it's obvious, but add something good about the text (use: salta a la vista).",
       "accept": [
         "Sí, salta a la vista, pero el guionista dio en el clavo con el texto.",
         "Claro que salta a la vista. Aun así, el texto es un acierto.",
@@ -72,7 +72,7 @@
       "id": "t4",
       "npc": "Mariana: Perfecto, esto va a la columna. ¿Una última frase para el titular?",
       "npcEn": "Mariana: Perfect, this goes in the column. One last line for the headline?",
-      "intent": "Give her a line for the headline with an extreme adjective (use: de lo más + adjective).",
+      "intent": "Give her a line for the headline with de lo más + adjective.",
       "accept": [
         "Una noche de lo más divertida en La Esquina de Rosa.",
         "Un ensayo de lo más entrañable, con goteras y todo.",
@@ -148,9 +148,9 @@
     "l:llevar",
     "l:llorar",
     "l:mano",
-    "l:monólogo",
     "l:noche",
     "l:notar",
+    "l:obra",
     "l:original",
     "l:parecer",
     "l:perfecto",

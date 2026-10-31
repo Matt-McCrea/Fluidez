@@ -2,17 +2,17 @@
   "id": "sc-u60-i",
   "unit": "u60",
   "title": "Una tarde en la tertulia",
-  "brief": "You're Tomás. A visitor from Medellín, Camila, comes to the afternoon tertulia and speaks with vos. You're about her age, so use tú. Recommend what to see, give your view of a reading, and invite her back.",
+  "brief": "You're Tomás. Florencia, a poet visiting from Cali, comes to the Thursday tertulia. You're about her age, so use tú. Tell her what it's like, give your view of a reading, and invite her back.",
   "spare": true,
   "turns": [
     {
       "id": "t1",
-      "npc": "Camila: Hola, ¿eres Tomás? Me dijeron que acá hay tertulia todos los jueves. ¿Qué tal es?",
-      "npcEn": "Camila: Hi, are you Tomás? They told me there's a tertulia here every Thursday. What's it like?",
+      "npc": "Florencia: Hola, ¿tú eres Tomás? Me dijeron que acá hay tertulia todos los jueves. ¿Qué tal es?",
+      "npcEn": "Florencia: Hi, are you Tomás? They told me there's a tertulia here every Thursday. What's it like?",
       "intent": "Say it's very engaging and that you'd say it's not an ordinary tertulia (use: ameno, cualquiera).",
       "accept": [
         "Es muy amena, y no es una tertulia cualquiera.",
-        "Mucho: la tertulia es amenísima y nada común, no es una cualquiera.",
+        "La tertulia es amenísima, nada que ver con una tertulia cualquiera.",
         "Te va a gustar, es de lo más amena. No es una tertulia cualquiera."
       ],
       "require": [
@@ -34,8 +34,8 @@
     },
     {
       "id": "t2",
-      "npc": "Camila: Ojo, que yo leo poesía pesada. Ven a las seis y me cuentas si te gustó.",
-      "npcEn": "Camila: Careful, I read heavy poetry. Come at six and tell me whether you liked it.",
+      "npc": "Florencia: Ojo, que yo leo poesía pesada. Ven a las seis y me cuentas si te gustó.",
+      "npcEn": "Florencia: Careful, I read heavy poetry. Come at six and tell me whether you liked it.",
       "intent": "Tell her you'll be there at six, and that you can tell her whether you liked it.",
       "accept": [
         "Aquí estaré a las seis y te cuento si me gustó.",
@@ -50,23 +50,23 @@
           "label": "mention six o'clock"
         }
       ],
-      "focus": "g:voseo-recognition",
+      "focus": "g:word-order-style",
       "next": "t3"
     },
     {
       "id": "t3",
-      "npc": "Camila: Hoy leyeron una carta de doña Rosa. ¿Qué piensas del texto?",
-      "npcEn": "Camila: Today they read a letter from doña Rosa. What do you think of the text?",
+      "npc": "Florencia: Hoy leyeron una carta de doña Rosa. ¿Qué piensas del texto?",
+      "npcEn": "Florencia: Today they read a letter from doña Rosa. What do you think of the text?",
       "intent": "Say Rosa hit the nail on the head, and that you can tell she wrote it with love (use: dar en el clavo, se nota).",
       "accept": [
-        "Rosa dio en el clavo: se nota que lo escribió con cariño.",
+        "Rosa dio en el clavo: se nota que la escribió con cariño.",
         "Mi abuela dio en el clavo con cada línea. Se nota el cariño.",
-        "Dio en el clavo con cada palabra, y se nota que lo hizo con cariño."
+        "Dio en el clavo con cada palabra, y se nota que la escribió con cariño."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\bdi(o|jo) en el clavo\\b|\\bdio en el clavo\\b",
+          "pattern": "\\bd(io|i|iste|imos|ieron) en el clavo\\b",
           "flags": "iu",
           "label": "use: dio en el clavo"
         },
@@ -82,12 +82,12 @@
     },
     {
       "id": "t4",
-      "npc": "Camila: Pues yo vuelvo cualquier jueves. Quien quisiere, que venga, como dice el letrero.",
-      "npcEn": "Camila: Well, I'll come back any Thursday. Whoever wishes to, let them come, as the sign says.",
+      "npc": "Florencia: Pues yo vuelvo cualquier jueves. Quien quisiere, que venga, como dice el letrero.",
+      "npcEn": "Florencia: Well, I'll come back any Thursday. Whoever wishes to, let them come, as the sign says.",
       "intent": "Say goodbye and invite her to come any day, with coffee on you (use: cualquier día).",
       "accept": [
-        "Ven cualquier día, Camila. El tinto va por la casa.",
-        "Cualquier día me parece bien. Hasta pronto, Camila.",
+        "Ven cualquier día, Florencia. El tinto corre por cuenta de la casa.",
+        "Cualquier día me parece bien. Hasta pronto, Florencia.",
         "Cualquier día eres bienvenida. Hasta el jueves."
       ],
       "require": [
@@ -110,6 +110,7 @@
     "c:me-parece-bien",
     "c:ojo",
     "c:pues",
+    "c:que-va",
     "c:te-cuento-que",
     "g:cada-cualquier",
     "g:commands-tu",
@@ -128,7 +129,6 @@
     "g:preterite-ar",
     "g:preterite-er-ir",
     "g:preterite-irregular-strong",
-    "g:preterite-ser-ir-hacer",
     "g:preterite-spelling-stem",
     "g:questions",
     "g:relative-que",
@@ -152,16 +152,17 @@
     "l:carta",
     "l:casa",
     "l:clavo",
-    "l:común",
     "l:contar",
+    "l:correr",
+    "l:cuenta",
     "l:dar",
     "l:decir",
     "l:después",
     "l:día",
     "l:escribir",
     "l:estar",
+    "l:florencia",
     "l:gustar",
-    "l:hacer",
     "l:hoy",
     "l:ir",
     "l:jueves",
@@ -183,6 +184,7 @@
     "l:texto",
     "l:tinto",
     "l:venir",
+    "l:ver",
     "l:volver",
     "p:ameno-pesado",
     "p:aqui-ahi-alla",

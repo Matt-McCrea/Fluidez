@@ -61,7 +61,7 @@
       "accept": [
         "Sí. Lo mejor de la barra es que todavía huele a café de los años setenta.",
         "Valió la pena. Lo mejor del piso es que cuenta la historia del barrio.",
-        "Mucho. Lo mejor de todo es que los vecinos reconocen cada baldosa."
+        "Claro que sí. Lo mejor de todo es que los vecinos reconocen cada baldosa."
       ],
       "require": [
         {
@@ -196,7 +196,6 @@
     "p:plata-no-hay",
     "p:possessives-basic",
     "p:preguntar-pedir",
-    "p:quantifiers-basic",
     "p:ser-un-acierto",
     "p:un-x-cualquiera",
     "p:valer-la-pena",

@@ -141,7 +141,8 @@
    "prompt": "Type in Spanish: I just came to say hello.",
    "answer": "Vine simplemente a saludar.",
    "accept": [
-    "Vine sencillamente a saludar."
+    "Vine sencillamente a saludar.",
+    "Simplemente vine a saludar."
    ],
    "why": "Here *simplemente* means just, with no other reason."
   },

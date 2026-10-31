@@ -1,9 +1,9 @@
 {
  "node": "p:haces-bien-en",
  "hook": {
-  "line": "Sooner or later a friend asks, \"Should I do it?\" A flat yes feels cold. Telling them they are right (or wrong) to do it gives your opinion and shows you are on their side.",
+  "line": "Sooner or later a friend asks, \"Should I do it?\" A flat yes feels cold. Telling them they're right (or wrong) to do it gives your opinion and shows you're on their side.",
   "es": "Haces bien en no firmar nada hoy.",
-  "en": "You're right not to sign anything today."
+  "en": "You're right not to sign anything today. (to a friend)"
  },
  "examples": [
   {
@@ -23,8 +23,8 @@
    "en": "You were right to tell the truth. (to a friend)"
   },
   {
-   "es": "Hacemos mal en discutir con Hernando.",
-   "en": "We're wrong to argue with Hernando."
+   "es": "Hacemos mal en discutir con Mariana.",
+   "en": "We're wrong to argue with Mariana."
   },
   {
    "es": "Haces bien en no firmar nada hoy.",
@@ -89,11 +89,11 @@
    "answer": 0
   },
   {
-   "es": "Hacemos mal en discutir con Hernando.",
+   "es": "Hacemos mal en discutir con Mariana.",
    "options": [
-    "They're wrong to argue with Hernando.",
-    "We're right to argue with Hernando.",
-    "We're wrong to argue with Hernando."
+    "They're wrong to argue with Mariana.",
+    "We're right to argue with Mariana.",
+    "We're wrong to argue with Mariana."
    ],
    "answer": 2
   },
@@ -115,8 +115,8 @@
    "why": "*Bien* says the person is right to do it."
   },
   {
-   "prompt": "Type in Spanish: You're wrong to argue with Hernando. (to a friend)",
-   "answer": "Haces mal en discutir con Hernando.",
+   "prompt": "Type in Spanish: You're wrong to argue with Mariana. (to a friend)",
+   "answer": "Haces mal en discutir con Mariana.",
    "accept": [],
    "why": "*Mal* says they are wrong, and *en* comes before the infinitive."
   },

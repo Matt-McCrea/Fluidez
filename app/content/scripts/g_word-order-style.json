@@ -19,8 +19,8 @@
    "en": "It hardly matters now."
   },
   {
-   "es": "Poco queda del café de Rosa.",
-   "en": "Little is left of Rosa's café."
+   "es": "Poco queda del edificio original.",
+   "en": "Little is left of the original building."
   },
   {
    "es": "Mucho he aprendido aquí.",
@@ -62,11 +62,11 @@
    "answer": 2
   },
   {
-   "es": "Poco queda del café de Rosa.",
+   "es": "Poco queda del edificio original.",
    "options": [
-    "Little is left of Rosa's café.",
+    "Little is left of the original building.",
     "A lot is left of Rosa's café.",
-    "Rosa's café is nearly open."
+    "The original building is still standing."
    ],
    "answer": 0
   },
@@ -133,8 +133,8 @@
    "why": "Move *mucho* to the front, and the subject follows the verb."
   },
   {
-   "prompt": "Type in Spanish: Little is left of Rosa's café.",
-   "answer": "Poco queda del café de Rosa.",
+   "prompt": "Type in Spanish: Little is left of the original building.",
+   "answer": "Poco queda del edificio original.",
    "accept": [],
    "why": "*Poco* leads and the thing left comes after the verb."
   },
@@ -160,7 +160,7 @@
   {
    "wrong": "Poco no importa ya.",
    "right": "Poco importa ya.",
-   "why": "Almost. *Poco* at the front already carries the \"hardly\", so skip the extra *no*."
+   "why": "Almost. *Poco* at the front already means \"hardly\". Adding *no* turns it into a double negative that Spanish does not use here."
   },
   {
    "wrong": "Muy ha cambiado el barrio desde entonces.",

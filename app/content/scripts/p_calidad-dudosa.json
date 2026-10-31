@@ -31,7 +31,7 @@
       "en": "The fabric of the costume is poor quality."
     }
   ],
-  "rule": "English says a thing \"is good quality\". Spanish says it is *of* a quality: *es de calidad…*.\n\nTwo patterns:\n*de calidad* + adjective: *dudosa, media, superior, inferior, deficiente*.\n*de* + adjective + *calidad*: *buena, mala, primera, alta, baja*.\n\n*Calidad* is feminine, so the adjective ends in *-a* after it and agrees with it, not with the thing: *un café de calidad superior*.\nTo talk about raising standards: *mejorar la calidad*, *garantizar la calidad*.\n*Pasable* means barely acceptable. It is not praise.",
+  "rule": "English says a thing \"is good quality\". Spanish says it is *of* a quality: *es de calidad…*.\n\nTwo patterns:\n*de calidad* + adjective: *dudosa, media, superior, inferior, deficiente*.\n*de* + adjective + *calidad*: *buena, mala, primera, alta, baja*.\n\nThe adjective agrees with *calidad*, which is feminine, not with the thing: *un café de calidad dudosa*. Words like *superior* have one form anyway.\nTo talk about raising standards: *mejorar la calidad*, *garantizar la calidad*.\n*Pasable* means barely acceptable. It is not praise.",
   "smallPrint": "Teachers call *de* + noun a descriptive complement: it works like an adjective glued onto the noun.",
   "readAndPick": [
     {
@@ -89,7 +89,7 @@
       "answer": 1
     },
     {
-      "es": "La pintura es de calidad baja.",
+      "es": "La pintura es de baja calidad.",
       "options": [
         "The paint is of low quality.",
         "The paint is of high quality.",
@@ -130,7 +130,7 @@
       "prompt": "Say, as a business: We offer products of superior quality.",
       "answer": "Ofrecemos productos de calidad superior.",
       "accept": [],
-      "why": "*Calidad superior* goes after *de calidad*, with *-a* because *calidad* is feminine."
+      "why": "*Superior* goes after *calidad*, and it has the same form for masculine and feminine."
     },
     {
       "prompt": "Say the opposite: *El jugo es de buena calidad.* (The juice is of poor quality.)",
@@ -141,7 +141,7 @@
       "why": "Swap *buena* for *mala* (or *baja*) and the verdict flips."
     },
     {
-      "prompt": "Make it plural: *La tela es de calidad media.*",
+      "prompt": "Make it plural: *La tela es de calidad media.* (The fabrics are of average quality.)",
       "answer": "Las telas son de calidad media.",
       "accept": [],
       "why": "Article, noun and verb go plural, but *calidad* stays singular."
