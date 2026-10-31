@@ -35,7 +35,7 @@
       "en": "I went to the market yesterday."
     }
   ],
-  "rule": "In Colombia, something finished is in the simple past: *Hoy desayuné.* *Esta mañana fui al médico.*\n\nIn Spain, if the time is still going (*hoy*, *esta mañana*, *esta semana*, *este año*), they use *he* + participle: *Hoy he desayunado.* *Esta mañana he ido al médico.*\n\nSo the *he* form does not mean *I have* here. It is just a past, and your English *I had breakfast* is the right idea.\n\nOnce the time is over, both countries agree: *Ayer fui al mercado.*\n\nYou do not need to produce this. Understand it, and know that it is a normal accent, not a mistake. Keep the *he* form for experience, as in *¿Has estado en Cartagena?*",
+  "rule": "In Colombia, anything finished goes in the simple past: *Hoy desayuné.* *Esta mañana fui al médico.*\n\nIn Spain, if the time is still going (*hoy*, *esta mañana*, *esta semana*, *este año*), they use *he* + participle: *Hoy he desayunado.* *Esta mañana he ido al médico.*\n\nSo the *he* form does not mean *I have* here. It is just a past, and your English *I had breakfast* is the right idea.\n\nOnce the time is over, both countries agree: *Ayer fui al mercado.*\n\nYou do not need to produce this. Understand it, and know that it is a normal accent, not a mistake. Keep the *he* form for experience and for \"not yet\", as in *¿Has estado en Cartagena?* and *Todavía no he terminado.* One more Spain habit: *esta noche* can mean last night, so *Esta noche he dormido fatal* is about the night that just ended.",
   "smallPrint": "Teachers call this the *pretérito perfecto compuesto*. In Spain it covers a past that still touches the present.",
   "readAndPick": [
     {
@@ -86,7 +86,7 @@
     {
       "es": "Esta noche he dormido fatal.",
       "options": [
-        "I slept badly tonight.",
+        "I slept badly last night.",
         "I'll sleep badly tonight.",
         "I always sleep badly."
       ],

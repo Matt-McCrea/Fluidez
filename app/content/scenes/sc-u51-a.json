@@ -3,17 +3,17 @@
   "unit": "u51",
   "title": "Madrid en la mesa tres",
   "spare": false,
-  "brief": "You're Tomás, behind the counter. Lucía, a food blogger from Madrid, arrives with two friends who say vosotros all day. You understand them, but you answer the way Colombians do: with ustedes, and with the plain past (ayer, hoy, esta mañana).",
+  "brief": "You're Tomás, behind the counter. Lucía, a food blogger from Madrid, comes in first; her two friends are still at the hotel. She says hemos ido and he desayunado without noticing. You understand her, but you answer the way Colombians do: with ustedes, and with the plain past (ayer, hoy, esta mañana).",
   "turns": [
     {
       "id": "t1",
-      "npc": "Lucía: Buenas. ¿Ya han abierto? Nos han dicho que aquí hay buen café.",
-      "npcEn": "Lucía: Hello. Have you opened yet? They told us the coffee is good here.",
-      "intent": "Say yes, you're open, and ask what they would like to drink (they are three, so use ustedes).",
+      "npc": "Lucía: Buenas. ¿Ya han abierto? Me han dicho que aquí hay buen café.",
+      "npcEn": "Lucía: Hello. Have you opened yet? They told me the coffee is good here.",
+      "intent": "Say yes, you opened a while ago (the Colombian way: ya abrimos), and ask what she would like to drink.",
       "accept": [
-        "Sí, ya abrimos. ¿Qué quieren tomar?",
-        "Claro, pasen. ¿Qué les sirvo?",
-        "Sí, abrimos hace un momento. ¿Qué van a tomar?"
+        "Sí, ya abrimos. ¿Qué quieres tomar?",
+        "Claro, abrimos a las siete. ¿Qué le sirvo?",
+        "Sí, abrimos hace un momento. ¿Qué vas a tomar?"
       ],
       "require": [
         {
@@ -22,10 +22,9 @@
         {
           "type": "avoidsAny",
           "words": [
-            "queréis",
-            "abrís"
+            "hemos abierto"
           ],
-          "label": "answer with ustedes forms (quieren), not vosotros forms"
+          "label": "answer the Colombian way: ya abrimos, not hemos abierto"
         }
       ],
       "focus": "g:spain-pasts",
@@ -55,11 +54,11 @@
     },
     {
       "id": "t3",
-      "npc": "Lucía: Esta mañana hemos ido a la plaza de Bolívar y hemos comido unas empanadas. ¿Nos entiendes bien? Hablamos rápido.",
-      "npcEn": "Lucía: This morning we went to Plaza de Bolívar and had some empanadas. Do you understand us well? We talk fast.",
-      "intent": "Say you understand everything, and retell it the Colombian way: this morning they went to the plaza and ate empanadas.",
+      "npc": "Lucía: Esta mañana mis amigas y yo hemos ido a la plaza de Bolívar y hemos comido unas empanadas. ¿Me entiendes bien? Hablo muy rápido.",
+      "npcEn": "Lucía: This morning my friends and I went to Plaza de Bolívar and had some empanadas. Do you understand me all right? I talk very fast.",
+      "intent": "Say you understand everything, and retell it the Colombian way: this morning they (she and her friends) went to the plaza and ate empanadas.",
       "accept": [
-        "Los entiendo bien. Esta mañana fueron a la plaza y comieron empanadas.",
+        "Te entiendo bien. Esta mañana fueron a la plaza y comieron empanadas.",
         "Entiendo todo. O sea, esta mañana fueron a la plaza de Bolívar y comieron empanadas.",
         "Claro que sí. Fueron a la plaza esta mañana y comieron empanadas, ¿cierto?"
       ],
@@ -77,7 +76,7 @@
     },
     {
       "id": "t4",
-      "npc": "Lucía: ¡Qué rollo! He dejado el teléfono en el hotel y no tengo cómo llamar a mis amigas.",
+      "npc": "Lucía: ¡Qué rollo! He dejado el teléfono en el hotel y no puedo llamar a mis amigas.",
       "npcEn": "Lucía: What a drag! I left my phone at the hotel and I can't call my friends.",
       "intent": "Offer her your celular to make the call, and ask which hotel it is.",
       "accept": [
@@ -129,11 +128,11 @@
     "c:no-entiendo",
     "c:no-te-preocupes",
     "c:o-sea",
+    "c:puedo",
     "c:que-pena",
     "c:se-llama",
-    "c:tengo",
+    "c:voy-vas",
     "g:adjective-agreement",
-    "g:commands-usted",
     "g:direct-objects",
     "g:estar-location-states",
     "g:gender-articles",
@@ -141,7 +140,6 @@
     "g:hay-vs-esta",
     "g:imperfect-states",
     "g:indirect-objects",
-    "g:indirect-questions",
     "g:ir-a-plans",
     "g:perfecto-experience",
     "g:present-ar",
@@ -191,9 +189,9 @@
     "l:mañana",
     "l:momento",
     "l:necesitar",
-    "l:pasar",
     "l:pena",
     "l:plaza",
+    "l:poder",
     "l:preparar",
     "l:problema",
     "l:quedar",
@@ -205,7 +203,6 @@
     "l:ser",
     "l:servir",
     "l:teléfono",
-    "l:tener",
     "l:tinto",
     "l:tomar",
     "l:traer",
@@ -229,7 +226,9 @@
     "p:por-culpa-de",
     "p:possessives-basic",
     "p:prep-questions-basic",
+    "p:quantifiers-basic",
     "p:quedar-cerca",
-    "p:question-word-order"
+    "p:question-word-order",
+    "p:telling-time"
   ]
 }

@@ -1,387 +1,387 @@
 {
- "id": "ch170",
- "unit": "u51",
- "title": "Vale, vale",
- "text": "A las cinco, el café estaba tan callado que Tomás oyó la nevera. Nadie cantaba en la cocina ni le hablaba al horno.\nVale había dejado una lista en la puerta: «Harina a las cinco. No le grites al horno, que no te va a contestar».\nGloria vino de su panadería a ayudar.\nLa primera bandeja salió negra. Simón miró la segunda y no dijo nada, que era peor.\nA las nueve entraron tres turistas con una cámara.\nMujer: ¡Anda! ¡Es el pájaro del pódcast!\nSimón: ¡Anda! ¡Anda, parce!\nMujer: Soy Lucía, de Madrid. Escribo sobre comida en internet, y estos son Álvaro y Pilar. Hemos visto el catálogo de Pan de Rosa y hemos cruzado el Atlántico por un pandebono.\nHernando: Mi hija también se llama Lucía, y también llega sin avisar.\nTomás: ¿Qué les provoca?\nLucía: Vale. Pues tres cafés y tres pandebonos de los famosos.\nTomás miró hacia la cocina sin querer.\nLa madrileña probó un pandebono, lo dejó y lo dibujó en su cuaderno, como quien dibuja a un enfermo.\nLucía: Está rico, pero no es el de las fotos. ¿Quién los hace? ¿Y cuándo vuelve?\nTomás: Vale, la pastelera. Está en Medellín, y no sé cuándo vuelve.\nLucía: Vale.\nSimón: ¡Vale! ¡Vale, parce!\nSimón voló a la puerta de la cocina y se quedó mirando adentro, esperando.\nPilar: ¡Qué rollo! ¿Hemos venido desde Madrid para nada?\nHernando: Aquí todos la extrañamos, señora, pero solo el pájaro lo dice.\nÁlvaro: La página del café se cae cada cinco minutos. Yo trabajo con servidores, y ese servidor es un desastre.\nTomás se dio cuenta de algo raro: les entendía todo. Las zetas, los plurales raros, y esa palabra que aquí era un nombre. Cuando llegó, no entendía ni a Gloria.\nLucía: Oye, tú no eres de aquí, ¿verdad? Tienes un acento rarísimo. A mí me suenas a colombiano total.\nTomás: Soy de Toronto. Bueno, de aquí.\nEn la cocina, a Gloria se le cayó la bandeja de la risa.\nHernando: Este café es como un pozo. El que se acerca, se cae adentro. Yo llevo cuarenta años en el fondo.\nÁlvaro: ¿Y no se aburre usted ahí abajo?\nHernando: Nunca. Pero esta semana el fondo está más oscuro.\nAl cerrar, Tomás se quedó solo con la lista de Vale en la mano.\nTomás: No me puedo acostumbrar, Simón.\nSimón seguía en la puerta de la cocina.\nA las diez escribió Lucía: «Mañana nos enseñas Bogotá. Vale es la pastelera, ¿no? Quiero hablar con ella, aunque sea por teléfono».\nVale mandó una foto del local de Laureles, con un horno nuevo y brillante, y debajo: «Es precioso. Y no huele a nada».",
- "gloss": [
-  {
-   "es": "Lucía",
-   "en": "Lucía (a food blogger from Madrid; Hernando's daughter has the same name)"
-  },
-  {
-   "es": "Álvaro",
-   "en": "Álvaro (one of Lucía's friends)"
-  },
-  {
-   "es": "Pilar",
-   "en": "Pilar (one of Lucía's friends)"
-  },
-  {
-   "es": "¡Anda!",
-   "en": "Oh wow (Spain)"
-  },
-  {
-   "es": "pódcast",
-   "en": "podcast"
-  },
-  {
-   "es": "Hemos visto el catálogo de Pan de Rosa y hemos cruzado el Atlántico por un pandebono",
-   "en": "We saw the Pan de Rosa catalogue and crossed the Atlantic for a pandebono"
-  },
-  {
-   "es": "¿Qué les provoca?",
-   "en": "What would you like?"
-  },
-  {
-   "es": "Vale. Pues tres cafés",
-   "en": "OK. Three coffees, then (in Spain, vale means OK)"
-  },
-  {
-   "es": "madrileña",
-   "en": "woman from Madrid"
-  },
-  {
-   "es": "como quien dibuja a un enfermo",
-   "en": "like someone drawing a sick patient"
-  },
-  {
-   "es": "pastelera",
-   "en": "pastry chef"
-  },
-  {
-   "es": "¡Qué rollo!",
-   "en": "What a drag (Spain)"
-  },
-  {
-   "es": "¿Hemos venido desde Madrid para nada?",
-   "en": "Have we come all the way from Madrid for nothing?"
-  },
-  {
-   "es": "zetas",
-   "en": "z sounds (Spain pronounces z and soft c like English th)"
-  },
-  {
-   "es": "los plurales raros",
-   "en": "the odd plurals (Spain's vosotros)"
-  },
-  {
-   "es": "Tienes un acento rarísimo",
-   "en": "You have a really strange accent"
-  },
-  {
-   "es": "A mí me suenas a colombiano total",
-   "en": "To me you sound completely Colombian"
-  },
-  {
-   "es": "a Gloria se le cayó la bandeja de la risa",
-   "en": "Gloria dropped the tray laughing"
-  },
-  {
-   "es": "El que se acerca, se cae adentro",
-   "en": "Whoever comes close falls in"
-  },
-  {
-   "es": "¿Y no se aburre usted ahí abajo?",
-   "en": "And don't you get bored down there?"
-  },
-  {
-   "es": "No me puedo acostumbrar",
-   "en": "I can't get used to it"
-  },
-  {
-   "es": "Mañana nos enseñas Bogotá",
-   "en": "Tomorrow you're showing us Bogotá"
-  }
- ],
- "questions": [
-  {
-   "q": "Why does Tomás look towards the kitchen when Lucía orders?",
-   "options": [
-    "She says \"vale\", and it sounds like Vale's name",
-    "He hears the oven burning",
-    "Gloria calls him",
-    "Simón flies into the kitchen"
-   ],
-   "answer": 0
-  },
-  {
-   "q": "Why have Lucía and her friends come to the café?",
-   "options": [
-    "To buy the house for a hotel",
-    "For the pandebonos they saw in the catalogue",
-    "To visit Hernando's daughter",
-    "To record a podcast with Simón"
-   ],
-   "answer": 1
-  },
-  {
-   "q": "What does Tomás realise while the visitors talk?",
-   "options": [
-    "That they are laughing at him",
-    "That he cannot follow Spain's Spanish",
-    "That he understands everything they say",
-    "That they know Vale"
-   ],
-   "answer": 2
-  },
-  {
-   "q": "¿Qué piensa Lucía del acento de Tomás?",
-   "options": [
-    "Que suena a canadiense",
-    "Que suena a madrileño",
-    "Que no tiene acento",
-    "Que suena a colombiano"
-   ],
-   "answer": 3
-  },
-  {
-   "q": "What does Vale's message at the end suggest?",
-   "options": [
-    "The new bakery is beautiful, but something is missing",
-    "She has bought a new oven for the café",
-    "She is coming back tomorrow",
-    "She does not like Medellín at all"
-   ],
-   "answer": 0
-  }
- ],
- "hook": "Lucía wants a tour of Bogotá tomorrow and wants to talk to the pastry chef, even by phone. Hernando has a taxi, and Tomás has a pastry chef who is not answering.",
- "rereadQuestions": [
-  {
-   "q": "What does Vale's list tell Tomás not to do?",
-   "options": [
-    "Burn the flour",
-    "Shout at the oven",
-    "Open before five",
-    "Let Simón into the kitchen"
-   ],
-   "answer": 1
-  },
-  {
-   "q": "What does Álvaro say about the café's website?",
-   "options": [
-    "It is very pretty",
-    "It has no prices",
-    "It goes down every five minutes",
-    "It is only in English"
-   ],
-   "answer": 2
-  },
-  {
-   "q": "What does Hernando compare the café to?",
-   "options": [
-    "A well",
-    "A taxi",
-    "A bus station",
-    "A bakery in Madrid"
-   ],
-   "answer": 0
-  }
- ],
- "requires": [
-  "c:anda-spain",
-  "c:con-el-ella",
-  "c:entonces-bueno",
-  "c:era",
-  "c:no-cierto",
-  "c:no-se",
-  "c:oiga-oye",
-  "c:para-nada",
-  "c:puedo",
-  "c:pues",
-  "c:quiero",
-  "c:se-llama",
-  "c:soy-de",
-  "c:tienes",
-  "g:adjective-agreement",
-  "g:cada-cualquier",
-  "g:demonstratives",
-  "g:direct-objects",
-  "g:estar-location-states",
-  "g:gender-articles",
-  "g:gerund-ways",
-  "g:gustar-full",
-  "g:hace-que-desde",
-  "g:imperfect-habitual",
-  "g:imperfect-states",
-  "g:indirect-objects",
-  "g:indirect-questions",
-  "g:ir-a-plans",
-  "g:le-doubling",
-  "g:negation-words",
-  "g:negative-commands",
-  "g:perfecto-experience",
-  "g:pluperfect",
-  "g:por-para-1",
-  "g:prep-infinitive",
-  "g:prep-pronouns",
-  "g:present-ar",
-  "g:present-er-ir",
-  "g:pret-vs-imperfect",
-  "g:preterite-ar",
-  "g:preterite-er-ir",
-  "g:preterite-irregular-strong",
-  "g:preterite-spelling-stem",
-  "g:questions",
-  "g:reflexive-routine",
-  "g:relative-que",
-  "g:relatives-donde-lo-que",
-  "g:relatives-prepositions",
-  "g:se-accidental",
-  "g:ser-identity",
-  "g:stem-boot",
-  "g:stem-e-i",
-  "g:subj-concessive",
-  "g:subj-irregulars",
-  "g:superlatives",
-  "g:that-clauses",
-  "g:verb-infinitive",
-  "g:yo-irregular",
-  "p:aburrir-aburrirse",
-  "p:acercarse-alejarse",
-  "p:aqui-ahi-alla",
-  "p:cuando-basic",
-  "p:darse-cuenta-de",
-  "p:demonstratives-basic",
-  "p:el-que-la-que",
-  "p:exclamations-basic",
-  "p:extranar",
-  "p:frequency-scale",
-  "p:indefinites-basic",
-  "p:ir-a-venir-de-place",
-  "p:le-falta-sal",
-  "p:llevar-tiempo-gerundio",
-  "p:los-de-la-camiseta",
-  "p:me-aburre-que",
-  "p:me-te-nos-objects",
-  "p:oler-a-saber-a",
-  "p:ordinal-floor",
-  "p:ordinals-primer-tercer",
-  "p:possessives-basic",
-  "p:sobre-todo-solo",
-  "p:telling-time",
-  "p:tiene-mucha-luz"
- ],
- "lexemes": [
-  "l:abajo",
-  "l:aburrirse",
-  "l:acento",
-  "l:acercarse",
-  "l:acostumbrar",
-  "l:adentro",
-  "l:ahí",
-  "l:andar",
-  "l:aquí",
-  "l:avisar",
-  "l:ayudar",
-  "l:año",
-  "l:bandeja",
-  "l:brillante",
-  "l:bueno",
-  "l:caerse",
-  "l:café",
-  "l:callado",
-  "l:cantar",
-  "l:catálogo",
-  "l:cerrar",
-  "l:cocina",
-  "l:colombiano",
-  "l:comida",
-  "l:contestar",
-  "l:cruzar",
-  "l:cuaderno",
-  "l:cuenta",
-  "l:cuándo",
-  "l:cámara",
-  "l:darse",
-  "l:debajo",
-  "l:decir",
-  "l:dejar",
-  "l:desastre",
-  "l:dibujar",
-  "l:enfermo",
-  "l:enseñar",
-  "l:entender",
-  "l:entrar",
-  "l:escribir",
-  "l:esperar",
-  "l:estar",
-  "l:extrañar",
-  "l:famoso",
-  "l:fondo",
-  "l:foto",
-  "l:gritar",
-  "l:hablar",
-  "l:hacer",
-  "l:harina",
-  "l:hija",
-  "l:horno",
-  "l:internet",
-  "l:ir",
-  "l:listo",
-  "l:llamarse",
-  "l:llegar",
-  "l:llevar",
-  "l:local",
-  "l:lucía",
-  "l:madrileño",
-  "l:mandar",
-  "l:mano",
-  "l:mañana",
-  "l:minuto",
-  "l:mirar",
-  "l:mujer",
-  "l:negro",
-  "l:nevera",
-  "l:nombre",
-  "l:nuevo",
-  "l:oler",
-  "l:oscuro",
-  "l:oír",
-  "l:palabra",
-  "l:panadería",
-  "l:pandebono",
-  "l:parce",
-  "l:pastelera",
-  "l:peor",
-  "l:pilar",
-  "l:plural",
-  "l:poder",
-  "l:pozo",
-  "l:precioso",
-  "l:probar",
-  "l:provocar",
-  "l:puerta",
-  "l:página",
-  "l:pájaro",
-  "l:pódcast",
-  "l:quedarse",
-  "l:querer",
-  "l:quién",
-  "l:qué",
-  "l:raro",
-  "l:rico",
-  "l:risa",
-  "l:rollo",
-  "l:saber",
-  "l:salir",
-  "l:seguir",
-  "l:semana",
-  "l:ser",
-  "l:servidor",
-  "l:señora",
-  "l:sonar",
-  "l:teléfono",
-  "l:tener",
-  "l:total",
-  "l:trabajar",
-  "l:turista",
-  "l:venir",
-  "l:ver",
-  "l:verdad",
-  "l:volar",
-  "l:volver",
-  "l:zeta",
-  "l:álvaro"
- ]
+  "id": "ch170",
+  "unit": "u51",
+  "title": "Vale, vale",
+  "text": "A las cinco, el café estaba tan callado que Tomás oyó la nevera. Nadie cantaba en la cocina ni le hablaba al horno.\nVale había dejado una lista en la puerta: «Harina a las cinco. No le grites al horno, que no te va a contestar».\nGloria vino de su panadería a ayudar.\nLa primera bandeja salió negra. Simón miró la segunda y no dijo nada, que era peor.\nA las nueve entraron tres turistas con una cámara.\nMujer: ¡Anda! ¡Es el pájaro del pódcast!\nSimón: ¡Anda! ¡Anda, parce!\nMujer: Soy Lucía, de Madrid. Escribo sobre comida en internet, y estos son Álvaro y Pilar. Hemos visto el catálogo de Pan de Rosa y hemos cruzado el Atlántico por un pandebono.\nHernando: Mi hija también se llama Lucía, y también llega sin avisar.\nTomás: ¿Qué les provoca?\nLucía: Vale. Pues tres cafés y tres pandebonos de los famosos.\nTomás miró hacia la cocina sin querer.\nLa madrileña probó un pandebono, lo dejó y lo dibujó en su cuaderno, como quien dibuja a un enfermo.\nLucía: Está rico, pero no es el de las fotos. ¿Quién los hace? ¿Y cuándo vuelve?\nTomás: Vale, la pastelera. Está en Medellín, y no sé cuándo vuelve.\nLucía: Vale.\nSimón: ¡Vale! ¡Vale, parce!\nSimón voló a la puerta de la cocina y se quedó mirando adentro, esperando.\nPilar: ¡Qué rollo! ¿Hemos venido desde Madrid para nada?\nHernando: Aquí todos la extrañamos, señora, pero solo el pájaro lo dice.\nÁlvaro: La página del café se cae cada cinco minutos. Yo trabajo con servidores, y ese servidor es un desastre.\nTomás se dio cuenta de algo raro: les entendía todo. Las zetas, los plurales raros, y esa palabra que aquí era un nombre. Cuando llegó, no entendía ni a Gloria.\nLucía: Oye, tú no eres de aquí, ¿verdad? Tienes un acento rarísimo. A mí me suenas a colombiano total.\nTomás: Soy de Toronto. Bueno, de aquí.\nEn la cocina, a Gloria se le cayó la bandeja de la risa.\nHernando: Este café es como un pozo. El que se acerca, se cae adentro. Yo llevo cuarenta años en el fondo.\nÁlvaro: ¿Y no se aburre usted ahí abajo?\nHernando: Nunca. Pero esta semana el fondo está más oscuro.\nAl cerrar, Tomás se quedó solo con la lista de Vale en la mano.\nTomás: No me puedo acostumbrar, Simón.\nSimón seguía en la puerta de la cocina.\nA las diez escribió Lucía: «Mañana nos enseñas Bogotá. Vale es la pastelera, ¿no? Quiero hablar con ella, aunque sea por teléfono».\nVale mandó una foto del local de Laureles, con un horno nuevo y brillante, y debajo: «Es precioso. Y no huele a nada».",
+  "gloss": [
+    {
+      "es": "Lucía",
+      "en": "Lucía (a food blogger from Madrid; Hernando's daughter has the same name)"
+    },
+    {
+      "es": "Álvaro",
+      "en": "Álvaro (one of Lucía's friends)"
+    },
+    {
+      "es": "Pilar",
+      "en": "Pilar (one of Lucía's friends)"
+    },
+    {
+      "es": "¡Anda!",
+      "en": "Oh wow (Spain)"
+    },
+    {
+      "es": "pódcast",
+      "en": "podcast"
+    },
+    {
+      "es": "Hemos visto el catálogo de Pan de Rosa y hemos cruzado el Atlántico por un pandebono",
+      "en": "We saw the Pan de Rosa catalogue and crossed the Atlantic for a pandebono"
+    },
+    {
+      "es": "¿Qué les provoca?",
+      "en": "What would you like?"
+    },
+    {
+      "es": "Vale. Pues tres cafés",
+      "en": "OK. Three coffees, then (in Spain, vale means OK)"
+    },
+    {
+      "es": "madrileña",
+      "en": "woman from Madrid"
+    },
+    {
+      "es": "como quien dibuja a un enfermo",
+      "en": "like someone drawing a sick patient"
+    },
+    {
+      "es": "pastelera",
+      "en": "pastry chef"
+    },
+    {
+      "es": "¡Qué rollo!",
+      "en": "What a drag (Spain)"
+    },
+    {
+      "es": "¿Hemos venido desde Madrid para nada?",
+      "en": "Have we come all the way from Madrid for nothing?"
+    },
+    {
+      "es": "zetas",
+      "en": "z sounds (Spain pronounces z and soft c like English th)"
+    },
+    {
+      "es": "los plurales raros",
+      "en": "the odd plurals (Spain's vosotros)"
+    },
+    {
+      "es": "Tienes un acento rarísimo",
+      "en": "You have a really strange accent"
+    },
+    {
+      "es": "A mí me suenas a colombiano total",
+      "en": "To me you sound completely Colombian"
+    },
+    {
+      "es": "a Gloria se le cayó la bandeja de la risa",
+      "en": "Gloria dropped the tray laughing"
+    },
+    {
+      "es": "El que se acerca, se cae adentro",
+      "en": "Whoever comes close falls in"
+    },
+    {
+      "es": "¿Y no se aburre usted ahí abajo?",
+      "en": "And don't you get bored down there?"
+    },
+    {
+      "es": "No me puedo acostumbrar",
+      "en": "I can't get used to it"
+    },
+    {
+      "es": "Mañana nos enseñas Bogotá",
+      "en": "Tomorrow you're showing us Bogotá"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Tomás look towards the kitchen when Lucía orders?",
+      "options": [
+        "She says \"vale\", and it sounds like Vale's name",
+        "He hears the oven burning",
+        "Gloria calls him",
+        "Simón flies into the kitchen"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why have Lucía and her friends come to the café?",
+      "options": [
+        "To buy the house for a hotel",
+        "For the pandebonos they saw in the catalogue",
+        "To visit Hernando's daughter",
+        "To record a podcast with Simón"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does Tomás realise while the visitors talk?",
+      "options": [
+        "That they are laughing at him",
+        "That he cannot follow Spain's Spanish",
+        "That he understands everything they say",
+        "That they know Vale"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "¿Qué piensa Lucía del acento de Tomás?",
+      "options": [
+        "Que suena a canadiense",
+        "Que suena a madrileño",
+        "Que no tiene acento",
+        "Que suena a colombiano"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "What does Vale's message at the end suggest?",
+      "options": [
+        "The new bakery is beautiful, but something is missing",
+        "She has bought a new oven for the café",
+        "She is coming back tomorrow",
+        "She does not like Medellín at all"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Lucía wants a tour of Bogotá tomorrow and wants to talk to the pastry chef, even by phone. Hernando has a taxi, and Tomás has a pastry chef who is not answering.",
+  "rereadQuestions": [
+    {
+      "q": "What does Vale's list tell Tomás not to do?",
+      "options": [
+        "Burn the flour",
+        "Shout at the oven",
+        "Open before five",
+        "Let Simón into the kitchen"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does Álvaro say about the café's website?",
+      "options": [
+        "It is very pretty",
+        "It has no prices",
+        "It goes down every five minutes",
+        "It is only in English"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "What does Hernando compare the café to?",
+      "options": [
+        "A well",
+        "A taxi",
+        "A bus station",
+        "A bakery in Madrid"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:anda-spain",
+    "c:con-el-ella",
+    "c:entonces-bueno",
+    "c:era",
+    "c:no-cierto",
+    "c:no-se",
+    "c:oiga-oye",
+    "c:para-nada",
+    "c:puedo",
+    "c:pues",
+    "c:quiero",
+    "c:se-llama",
+    "c:soy-de",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:cada-cualquier",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:gustar-full",
+    "g:hace-que-desde",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:negative-commands",
+    "g:perfecto-experience",
+    "g:pluperfect",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:relatives-prepositions",
+    "g:se-accidental",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-concessive",
+    "g:subj-irregulars",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:aburrir-aburrirse",
+    "p:acercarse-alejarse",
+    "p:aqui-ahi-alla",
+    "p:cuando-basic",
+    "p:darse-cuenta-de",
+    "p:demonstratives-basic",
+    "p:el-que-la-que",
+    "p:exclamations-basic",
+    "p:extranar",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:ir-a-venir-de-place",
+    "p:le-falta-sal",
+    "p:llevar-tiempo-gerundio",
+    "p:los-de-la-camiseta",
+    "p:me-aburre-que",
+    "p:me-te-nos-objects",
+    "p:oler-a-saber-a",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:possessives-basic",
+    "p:sobre-todo-solo",
+    "p:telling-time",
+    "p:tiene-mucha-luz"
+  ],
+  "lexemes": [
+    "l:abajo",
+    "l:aburrirse",
+    "l:acento",
+    "l:acercarse",
+    "l:acostumbrar",
+    "l:adentro",
+    "l:ahí",
+    "l:andar",
+    "l:aquí",
+    "l:avisar",
+    "l:ayudar",
+    "l:año",
+    "l:bandeja",
+    "l:brillante",
+    "l:bueno",
+    "l:caerse",
+    "l:café",
+    "l:callado",
+    "l:cantar",
+    "l:catálogo",
+    "l:cerrar",
+    "l:cocina",
+    "l:colombiano",
+    "l:comida",
+    "l:contestar",
+    "l:cruzar",
+    "l:cuaderno",
+    "l:cuenta",
+    "l:cuándo",
+    "l:cámara",
+    "l:darse",
+    "l:debajo",
+    "l:decir",
+    "l:dejar",
+    "l:desastre",
+    "l:dibujar",
+    "l:enfermo",
+    "l:enseñar",
+    "l:entender",
+    "l:entrar",
+    "l:escribir",
+    "l:esperar",
+    "l:estar",
+    "l:extrañar",
+    "l:famoso",
+    "l:fondo",
+    "l:foto",
+    "l:gritar",
+    "l:hablar",
+    "l:hacer",
+    "l:harina",
+    "l:hija",
+    "l:horno",
+    "l:internet",
+    "l:ir",
+    "l:listo",
+    "l:llamarse",
+    "l:llegar",
+    "l:llevar",
+    "l:local",
+    "l:lucía",
+    "l:madrileño",
+    "l:mandar",
+    "l:mano",
+    "l:mañana",
+    "l:minuto",
+    "l:mirar",
+    "l:mujer",
+    "l:negro",
+    "l:nevera",
+    "l:nombre",
+    "l:nuevo",
+    "l:oler",
+    "l:oscuro",
+    "l:oír",
+    "l:palabra",
+    "l:panadería",
+    "l:pandebono",
+    "l:parce",
+    "l:pastelera",
+    "l:peor",
+    "l:pilar",
+    "l:plural",
+    "l:poder",
+    "l:pozo",
+    "l:precioso",
+    "l:probar",
+    "l:provocar",
+    "l:puerta",
+    "l:página",
+    "l:pájaro",
+    "l:pódcast",
+    "l:quedarse",
+    "l:querer",
+    "l:quién",
+    "l:qué",
+    "l:raro",
+    "l:rico",
+    "l:risa",
+    "l:rollo",
+    "l:saber",
+    "l:salir",
+    "l:seguir",
+    "l:semana",
+    "l:ser",
+    "l:servidor",
+    "l:señora",
+    "l:sonar",
+    "l:teléfono",
+    "l:tener",
+    "l:total",
+    "l:trabajar",
+    "l:turista",
+    "l:venir",
+    "l:ver",
+    "l:verdad",
+    "l:volar",
+    "l:volver",
+    "l:zeta",
+    "l:álvaro"
+  ]
 }

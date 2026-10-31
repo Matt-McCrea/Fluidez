@@ -1,7 +1,7 @@
 {
   "node": "p:proceder-de",
   "hook": {
-    "line": "Every old building in La Candelaria has a story, and every word has a family tree. When someone asks where something comes from, there are some more formal verbs for the answer.",
+    "line": "Every old building in La Candelaria has a story, and every word has a family tree. When a guide, a menu or a journalist explains where something comes from, they reach for a dressier verb than *venir*.",
     "es": "El café procede de Etiopía.",
     "en": "Coffee comes from Ethiopia."
   },
@@ -98,11 +98,11 @@
       "answer": 2
     },
     {
-      "es": "Esta receta procede de mi abuela.",
+      "es": "Esta receta procede de Antioquia.",
       "options": [
-        "This recipe is for my grandmother.",
-        "This recipe comes from my grandmother.",
-        "This recipe is without my grandmother."
+        "This recipe is famous in Antioquia.",
+        "This recipe comes from Antioquia.",
+        "This recipe is going to Antioquia."
       ],
       "answer": 1
     }
@@ -125,14 +125,17 @@
       "answer": "Mi familia procede de Medellín.",
       "accept": [
         "Mi familia proviene de Medellín.",
-        "Mi familia viene de Medellín."
+        "Mi familia viene de Medellín.",
+        "Mi familia es de Medellín."
       ],
       "why": "All three verbs mean comes from, followed by *de*."
     },
     {
       "prompt": "Say: The building dates back to 1920.",
       "answer": "El edificio se remonta a 1920.",
-      "accept": [],
+      "accept": [
+        "El edificio data de 1920."
+      ],
       "why": "*Remontarse* takes *a*: back to a date."
     },
     {

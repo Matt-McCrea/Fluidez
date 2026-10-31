@@ -190,9 +190,9 @@
       "why": "The accent marks the stress on *é*, which sounds like *eyes*: *co-MEIS*."
     },
     {
-      "wrong": "¿Vosotros qué queréis?",
-      "right": "¿Ustedes qué quieren?",
-      "why": "Said in Bogotá, *vosotros* sounds like Madrid, so you keep *ustedes* for your own Spanish."
+      "wrong": "Os veo mañana, Mariana.",
+      "right": "Te veo mañana, Mariana.",
+      "why": "*Os* always means a group. One friend gets *te*."
     }
   ],
   "personal": "A friend from Madrid asks you and a friend *¿Qué hacéis hoy?* Answer for the two of you, using the *nosotros* form, for example *Hoy trabajamos en el café.*"

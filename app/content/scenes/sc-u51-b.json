@@ -32,7 +32,7 @@
     },
     {
       "id": "t2",
-      "npc": "Vale: Anoche, después de hablar con mi mamá. Si lo hubiese sabido antes, te lo habría dicho. Perdona.",
+      "npc": "Vale: Anoche, después de hablar con mi mamá. Si lo hubiera sabido antes, te lo habría dicho. Perdona.",
       "npcEn": "Vale: Last night, after talking to my mom. If I had known sooner, I would have told you. Sorry.",
       "intent": "Tell her it's fine, and that if you had been in her place you would have done the same (use si yo hubiera estado).",
       "accept": [
@@ -43,7 +43,7 @@
       "require": [
         {
           "type": "regex",
-          "pattern": "\\bhubiera\\b",
+          "pattern": "\\bhubi(era|ese)\\b",
           "flags": "iu",
           "label": "use: si hubiera + participle"
         }
@@ -53,13 +53,13 @@
     },
     {
       "id": "t3",
-      "npc": "Vale: Mi mamá me pidió que fuese con cuidado, pero ya sabes cómo soy.",
-      "npcEn": "Vale: My mom asked me to be careful, but you know what I'm like.",
-      "intent": "Ask whether fuese means the same as fuera.",
+      "npc": "Vale: Mi abuela me escribió una carta muy formal: «Quisiera que tuvieses mucho cuidado en Medellín». Ella escribe así.",
+      "npcEn": "Vale: My grandmother wrote me a very formal letter: «I would like you to be very careful in Medellín». That's how she writes.",
+      "intent": "Ask whether tuviese means the same as tuviera.",
       "accept": [
-        "¿Fuese es lo mismo que fuera?",
-        "¿Dices fuese o fuera? ¿Es igual?",
-        "Una pregunta: ¿fuese y fuera significan lo mismo?"
+        "¿Tuviese es lo mismo que tuviera?",
+        "¿Tuviese y tuviera son iguales?",
+        "Una pregunta: ¿tuviese y tuviera significan lo mismo?"
       ],
       "require": [
         {
@@ -67,8 +67,8 @@
         },
         {
           "type": "containsWord",
-          "word": "fuera",
-          "label": "ask about fuera"
+          "word": "tuviera",
+          "label": "ask about tuviera"
         }
       ],
       "focus": "g:se-form-recognition",
@@ -76,8 +76,8 @@
     },
     {
       "id": "t4",
-      "npc": "Vale: Es igual. Casi nadie lo dice hablando, pero se ve en los libros. ¿Me ayudas con las cajas?",
-      "npcEn": "Vale: It's the same. Almost nobody says it when talking, but you see it in books. Will you help me with the boxes?",
+      "npc": "Vale: Es igual. Casi nadie lo dice hablando, pero se ve en los libros y en las cartas de las abuelas. ¿Me ayudas con las cajas?",
+      "npcEn": "Vale: It's the same. Almost nobody says it out loud, but you see it in books and in grandmothers' letters. Will you help me with the boxes?",
       "intent": "Say yes, and ask what time her bus leaves.",
       "accept": [
         "Claro. ¿A qué hora sale tu bus?",
@@ -132,6 +132,7 @@
     "c:tranquilo",
     "c:voy-a",
     "c:voy-vas",
+    "g:adjective-agreement",
     "g:conditional-perfect",
     "g:direct-objects",
     "g:double-pronouns",
@@ -140,7 +141,6 @@
     "g:gerund-ways",
     "g:gustar-full",
     "g:imperfect-subj",
-    "g:indirect-questions",
     "g:ir-a-plans",
     "g:negation-words",
     "g:negative-commands",
@@ -153,19 +153,19 @@
     "g:present-er-ir",
     "g:preterite-ar",
     "g:preterite-er-ir",
-    "g:preterite-spelling-stem",
     "g:questions",
     "g:se-form-recognition",
     "g:se-impersonal",
     "g:ser-identity",
     "g:si-hypothetical",
     "g:si-past-unreal",
+    "g:softening",
     "g:stem-boot",
     "g:stem-e-i",
-    "g:subj-past-triggers",
     "g:subj-relative",
     "g:that-clauses",
     "g:verbs-of-change",
+    "l:abuela",
     "l:aceptar",
     "l:alegrarse",
     "l:anoche",
@@ -176,16 +176,18 @@
     "l:bus",
     "l:café",
     "l:caja",
+    "l:carta",
     "l:claro",
     "l:cuidado",
     "l:cuándo",
-    "l:cómo",
     "l:decidir",
     "l:decir",
     "l:después",
+    "l:escribir",
     "l:esperar",
     "l:estar",
     "l:extrañar",
+    "l:formal",
     "l:gusto",
     "l:hablar",
     "l:hacer",
@@ -201,12 +203,12 @@
     "l:mes",
     "l:oferta",
     "l:pasar",
-    "l:pedir",
     "l:perdonar",
     "l:ponerse",
     "l:pregunta",
     "l:pronto",
     "l:prueba",
+    "l:querer",
     "l:qué",
     "l:saber",
     "l:salir",
@@ -222,9 +224,9 @@
     "p:days-el-lunes",
     "p:extranar",
     "p:llevar-traer",
+    "p:masculine-plural-mixed",
     "p:me-te-nos-objects",
     "p:possessives-basic",
-    "p:preguntar-pedir",
     "p:quantifiers-basic",
     "p:question-word-order",
     "p:saber-conocer",

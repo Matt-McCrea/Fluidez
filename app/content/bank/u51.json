@@ -761,7 +761,7 @@
   {
     "id": "u51-0031",
     "es": "Estáis en vuestra casa, de verdad.",
-    "en": "You all are at home here, really. (Spain)",
+    "en": "This is your home too, really. (Spain)",
     "accept": [
       "Están en su casa, de verdad."
     ],
@@ -1048,21 +1048,22 @@
   },
   {
     "id": "u51-0042",
-    "es": "¿Creéis que Altamira compra todo el barrio?",
-    "en": "Do you all think Altamira is buying the whole neighbourhood? (Spain)",
+    "es": "¿Creéis que Altamira va a comprar todo el barrio?",
+    "en": "Do you all think Altamira is going to buy the whole neighbourhood? (Spain)",
     "accept": [
-      "¿Creen que Altamira compra todo el barrio?"
+      "¿Creen que Altamira va a comprar todo el barrio?"
     ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
+      "g:ir-a-plans",
       "g:present-er-ir",
       "g:that-clauses",
       "g:vosotros-recognition",
       "l:barrio",
       "l:comprar",
-      "l:creer"
+      "l:creer",
+      "l:ir"
     ],
     "targets": [
       "g:vosotros-recognition"
@@ -1328,7 +1329,7 @@
   {
     "id": "u51-0052",
     "es": "Venís cansados del avión, ¿verdad?",
-    "en": "You all arrive tired from the plane, right? (Spain)",
+    "en": "You all are tired from the flight, right? (Spain)",
     "accept": [
       "Vienen cansados del avión, ¿verdad?"
     ],
@@ -1541,10 +1542,10 @@
   },
   {
     "id": "u51-0060",
-    "es": "¿Por qué reís tanto?",
-    "en": "Why are you all laughing so much? (Spain)",
+    "es": "¿De qué os reís tanto?",
+    "en": "What are you all laughing at so much? (Spain)",
     "accept": [
-      "¿Por qué ríen tanto?"
+      "¿De qué se ríen tanto?"
     ],
     "acceptEn": [],
     "requires": [
@@ -1552,6 +1553,7 @@
       "g:vosotros-recognition",
       "l:qué",
       "l:reír",
+      "p:me-te-nos-objects",
       "p:prep-questions-basic"
     ],
     "targets": [
@@ -1856,22 +1858,23 @@
   },
   {
     "id": "u51-0072",
-    "es": "Tomás os recibe con una sonrisa, aunque estáis tarde.",
-    "en": "Tomás welcomes you all with a smile, even though you are late. (Spain)",
+    "es": "Tomás os recibe con una sonrisa, aunque llegáis tarde.",
+    "en": "Tomás welcomes you all with a smile, even though you're late. (Spain)",
     "accept": [
-      "Tomás los recibe con una sonrisa, aunque están tarde."
+      "Tomás los recibe con una sonrisa, aunque llegan tarde."
     ],
     "acceptEn": [],
     "requires": [
       "g:aunque-indicative",
-      "g:estar-location-states",
       "g:gender-articles",
+      "g:present-ar",
       "g:present-er-ir",
       "g:vosotros-recognition",
-      "l:estar",
+      "l:llegar",
       "l:recibir",
       "l:sonrisa",
       "l:tarde",
+      "p:llegar-a-tiempo",
       "p:me-te-nos-objects"
     ],
     "targets": [
@@ -3877,19 +3880,21 @@
   },
   {
     "id": "u51-0149",
-    "es": "Ni vosotros ni yo tenemos la culpa, pero decidís vosotros.",
-    "en": "Neither you all nor I are to blame, but you all decide. (Spain)",
+    "es": "Ni vosotros ni yo tenemos la culpa, así que no os preocupéis.",
+    "en": "Neither you all nor I am to blame, so don't worry. (Spain)",
     "accept": [
-      "Ni ustedes ni yo tenemos la culpa, pero deciden ustedes."
+      "Ni ustedes ni yo tenemos la culpa, así que no se preocupen."
     ],
     "acceptEn": [],
     "requires": [
       "c:tienes",
+      "g:cause-result",
       "g:gender-articles",
-      "g:present-er-ir",
+      "g:reflexive-routine",
+      "g:subj-wanting",
       "g:vosotros-recognition",
       "l:culpa",
-      "l:decidir",
+      "l:preocuparse",
       "l:tener"
     ],
     "targets": [
@@ -3902,7 +3907,7 @@
   },
   {
     "id": "u51-0150",
-    "es": "Con vosotros aquí todo es más fácil. Venid más seguido.",
+    "es": "Con vosotros aquí todo es más fácil. Venid más a menudo.",
     "en": "With you all here everything is easier. Come more often. (Spain)",
     "accept": [
       "Con ustedes aquí todo es más fácil. Vengan más seguido."
@@ -3913,7 +3918,7 @@
       "g:vosotros-recognition",
       "l:aquí",
       "l:fácil",
-      "l:seguir",
+      "l:menudo",
       "l:ser",
       "l:venir",
       "p:aqui-ahi-alla"
@@ -3984,10 +3989,10 @@
   },
   {
     "id": "u51-0153",
-    "es": "Lo hablamos entre vosotros y yo cuando podáis.",
-    "en": "We'll talk it over between you all and me when you can. (Spain)",
+    "es": "Lo hablamos cuando podáis, sin prisa.",
+    "en": "We'll talk it over when you all can, no rush. (Spain)",
     "accept": [
-      "Lo hablamos entre ustedes y yo cuando puedan."
+      "Lo hablamos cuando puedan, sin prisa."
     ],
     "acceptEn": [],
     "requires": [
@@ -3996,6 +4001,7 @@
       "g:vosotros-recognition",
       "l:hablar",
       "l:podar",
+      "l:prisa",
       "p:cuando-basic"
     ],
     "targets": [
@@ -4217,15 +4223,14 @@
   },
   {
     "id": "u51-0162",
-    "es": "Hoy he desayunado un pan con tomate, ¡anda!",
-    "en": "Today I had a bread with tomato for breakfast, imagine! (Spain)",
+    "es": "¡Anda! Hoy he desayunado pan con tomate, como en Madrid.",
+    "en": "Well, what do you know! Today I had bread with tomato for breakfast, like in Madrid. (Spain)",
     "accept": [
-      "Hoy desayuné un pan con tomate, ¡anda!"
+      "¡Anda! Hoy desayuné pan con tomate, como en Madrid."
     ],
     "acceptEn": [],
     "requires": [
       "c:anda-spain",
-      "g:gender-articles",
       "g:perfecto-experience",
       "l:andar",
       "l:desayunar",
@@ -4461,22 +4466,25 @@
   },
   {
     "id": "u51-0171",
-    "es": "Hoy he dormido muy bien, ¿y vosotros? Dormís poco.",
-    "en": "Today I slept very well, and you all? You sleep little. (Spain)",
+    "es": "Esta noche he dormido muy bien, ¿y vosotros? Parecéis cansados.",
+    "en": "I slept really well last night, and you all? You look tired. (Spain)",
     "accept": [
-      "Hoy dormí muy bien, ¿y ustedes? Duermen poco."
+      "Anoche dormí muy bien, ¿y ustedes? Parecen cansados."
     ],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
+      "g:adjective-agreement",
       "g:perfecto-experience",
       "g:present-er-ir",
       "g:vosotros-recognition",
       "l:bien",
+      "l:cansado",
       "l:dormir",
-      "l:hoy",
-      "p:poco-un-poco",
-      "p:quantifiers-basic"
+      "l:noche",
+      "l:parecer",
+      "p:demonstratives-basic",
+      "p:parecer-vs-parecerse"
     ],
     "targets": [
       "g:vosotros-recognition"
@@ -4594,23 +4602,20 @@
   },
   {
     "id": "u51-0176",
-    "es": "Esta noche he soñado con Madrid, y vosotros queréis volver, ¿verdad?",
-    "en": "Last night I dreamed about Madrid, and you all want to go back, right? (Spain)",
+    "es": "Esta noche he soñado con Madrid. ¿Vosotros también lo echáis de menos?",
+    "en": "Last night I dreamed about Madrid. Do you all miss it too? (Spain)",
     "accept": [
-      "Esta noche soñé con Madrid, y ustedes quieren volver, ¿verdad?"
+      "Anoche soñé con Madrid. ¿Ustedes también lo extrañan?"
     ],
     "acceptEn": [],
     "requires": [
-      "c:no-cierto",
+      "g:direct-objects",
       "g:perfecto-experience",
-      "g:present-er-ir",
-      "g:verb-infinitive",
+      "g:present-ar",
       "g:vosotros-recognition",
+      "l:echar",
       "l:noche",
-      "l:querer",
       "l:soñar",
-      "l:verdad",
-      "l:volver",
       "p:demonstratives-basic",
       "p:sonar-con",
       "p:sonar-con-ganas"
@@ -4653,14 +4658,13 @@
   },
   {
     "id": "u51-0178",
-    "es": "Hoy he probado la miel del café y queréis más, ¿verdad?",
-    "en": "Today I tried the café's honey and you all want more, right? (Spain)",
+    "es": "Hoy he probado la miel del café. ¿Vosotros queréis un poco?",
+    "en": "Today I tried the café's honey. Do you all want some? (Spain)",
     "accept": [
-      "Hoy probé la miel del café y ustedes quieren más, ¿verdad?"
+      "Hoy probé la miel del café. ¿Ustedes quieren un poco?"
     ],
     "acceptEn": [],
     "requires": [
-      "c:no-cierto",
       "g:gender-articles",
       "g:perfecto-experience",
       "g:present-er-ir",
@@ -4670,7 +4674,8 @@
       "l:miel",
       "l:probarse",
       "l:querer",
-      "l:verdad"
+      "p:poco-un-poco",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:vosotros-recognition",
@@ -4706,10 +4711,10 @@
   },
   {
     "id": "u51-0180",
-    "es": "Hoy hemos comido tarde porque venís siempre a las tres.",
-    "en": "Today we ate late because you all always come at three. (Spain)",
+    "es": "Hoy hemos comido tarde porque siempre llegáis a las tres.",
+    "en": "Today we ate late because you all always arrive at three. (Spain)",
     "accept": [
-      "Hoy comimos tarde porque ustedes siempre vienen a las tres."
+      "Hoy comimos tarde porque ustedes siempre llegan a las tres."
     ],
     "acceptEn": [],
     "requires": [
@@ -4717,13 +4722,13 @@
       "g:cause-result",
       "g:gender-articles",
       "g:perfecto-experience",
-      "g:present-er-ir",
+      "g:present-ar",
       "g:vosotros-recognition",
       "l:comer",
       "l:hoy",
+      "l:llegar",
       "l:siempre",
       "l:tarde",
-      "l:venir",
       "p:frequency-scale",
       "p:telling-time"
     ],
@@ -4808,22 +4813,24 @@
   },
   {
     "id": "u51-0184",
-    "es": "¿Qué has hecho hoy, Tomás? Me lo cuentas todo.",
+    "es": "¿Qué has hecho hoy, Tomás? Cuéntamelo todo.",
     "en": "What did you do today, Tomás? Tell me everything. (Spain)",
     "accept": [
-      "¿Qué hiciste hoy, Tomás? Me cuentas todo."
+      "¿Qué hiciste hoy, Tomás? Cuéntamelo todo."
     ],
     "acceptEn": [],
     "requires": [
+      "g:commands-tu",
+      "g:commands-with-pronouns",
       "g:direct-objects",
       "g:double-pronouns",
       "g:perfecto-experience",
       "g:questions",
-      "g:stem-boot",
       "l:contar",
       "l:hacer",
       "l:hoy",
       "l:qué",
+      "p:contar-dos-sentidos",
       "p:me-te-nos-objects"
     ],
     "targets": [],
@@ -4860,20 +4867,20 @@
   },
   {
     "id": "u51-0186",
-    "es": "Esta tarde hemos ido a Monserrate y venimos agotados.",
+    "es": "Esta tarde hemos ido a Monserrate y estamos agotados.",
     "en": "This afternoon we went to Monserrate and we're exhausted. (Spain)",
     "accept": [
-      "Esta tarde fuimos a Monserrate y venimos agotados."
+      "Esta tarde fuimos a Monserrate y estamos agotados."
     ],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
+      "g:estar-location-states",
       "g:perfecto-experience",
-      "g:present-er-ir",
       "l:agotado",
+      "l:estar",
       "l:ir",
       "l:tarde",
-      "l:venir",
       "p:demonstratives-basic",
       "p:ir-a-venir-de-place"
     ],
@@ -5011,10 +5018,10 @@
   },
   {
     "id": "u51-0192",
-    "es": "Hoy ha sido un día largo, pero hemos reído mucho.",
-    "en": "It has been a long day, but we have laughed a lot. (Spain)",
+    "es": "Hoy ha sido un día largo, pero nos hemos reído mucho.",
+    "en": "Today was a long day, but we laughed a lot. (Spain)",
     "accept": [
-      "Hoy fue un día largo, pero reímos mucho."
+      "Hoy fue un día largo, pero nos reímos mucho."
     ],
     "acceptEn": [],
     "requires": [
@@ -5025,6 +5032,7 @@
       "l:largo",
       "l:reír",
       "l:ser",
+      "p:me-te-nos-objects",
       "p:quantifiers-basic"
     ],
     "targets": [],
@@ -5235,19 +5243,21 @@
   },
   {
     "id": "u51-0201",
-    "es": "Esta tarde he escuchado a Hernando contar su vida de taxista.",
-    "en": "This afternoon I listened to Hernando tell his life as a taxi driver. (Spain)",
+    "es": "Esta tarde he escuchado a Hernando contar historias de sus años de taxista.",
+    "en": "This afternoon I listened to Hernando tell stories from his years as a taxi driver. (Spain)",
     "accept": [
-      "Esta tarde escuché a Hernando contar su vida de taxista."
+      "Esta tarde escuché a Hernando contar historias de sus años de taxista."
     ],
     "acceptEn": [],
     "requires": [
       "g:perfecto-experience",
+      "l:año",
       "l:contar",
       "l:escuchar",
+      "l:historia",
       "l:tarde",
       "l:taxista",
-      "l:vida",
+      "p:contar-dos-sentidos",
       "p:demonstratives-basic",
       "p:personal-a",
       "p:possessives-basic"
@@ -5305,21 +5315,22 @@
   },
   {
     "id": "u51-0204",
-    "es": "Hoy he sentido que entiendo a todos, ¡anda!",
-    "en": "Today I felt that I understand everyone, wow! (Spain)",
+    "es": "¡Anda! Hoy he entendido a todo el mundo.",
+    "en": "Well, how about that! Today I understood everyone. (Spain)",
     "accept": [
-      "Hoy sentí que entiendo a todos, ¡anda!"
+      "¡Anda! Hoy entendí a todo el mundo."
     ],
     "acceptEn": [],
     "requires": [
       "c:anda-spain",
+      "g:gender-articles",
       "g:perfecto-experience",
-      "g:stem-boot",
-      "g:that-clauses",
       "l:andar",
       "l:entender",
       "l:hoy",
-      "l:sentir"
+      "l:mundo",
+      "p:personal-a",
+      "p:todos-los-dias"
     ],
     "targets": [
       "c:anda-spain"
@@ -5495,10 +5506,10 @@
   },
   {
     "id": "u51-0212",
-    "es": "Nunca he probado el ajiaco tan bueno como este.",
+    "es": "Nunca he probado un ajiaco tan bueno como este.",
     "en": "I've never had ajiaco as good as this.",
     "accept": [
-      "Nunca probé el ajiaco tan bueno como este."
+      "Nunca probé un ajiaco tan bueno como este."
     ],
     "acceptEn": [],
     "requires": [
@@ -5561,20 +5572,21 @@
   },
   {
     "id": "u51-0215",
-    "es": "¿Habéis estado en Cartagena? Queréis ir.",
-    "en": "Have you all been to Cartagena? You want to go. (Spain)",
+    "es": "¿Habéis estado en Cartagena? Si no, tenéis que ir.",
+    "en": "Have you all been to Cartagena? If not, you have to go. (Spain)",
     "accept": [
-      "¿Ustedes han estado en Cartagena? Quieren ir."
+      "¿Han estado en Cartagena? Si no, tienen que ir."
     ],
     "acceptEn": [],
     "requires": [
       "g:perfecto-experience",
       "g:present-er-ir",
+      "g:si-present",
       "g:verb-infinitive",
       "g:vosotros-recognition",
       "l:estar",
       "l:ir",
-      "l:querer"
+      "l:tener"
     ],
     "targets": [
       "g:vosotros-recognition"
@@ -5607,19 +5619,18 @@
   },
   {
     "id": "u51-0217",
-    "es": "Este siglo ha cambiado mucho el barrio.",
-    "en": "This century the neighbourhood has changed a lot.",
+    "es": "En los últimos años el barrio ha cambiado mucho.",
+    "en": "In the last few years the neighbourhood has changed a lot.",
     "accept": [
-      "Este siglo cambió mucho el barrio."
+      "En los últimos años el barrio cambió mucho."
     ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:perfecto-experience",
+      "l:año",
       "l:barrio",
       "l:cambiar",
-      "l:siglo",
-      "p:demonstratives-basic",
       "p:quantifiers-basic"
     ],
     "targets": [],
@@ -5798,17 +5809,18 @@
   },
   {
     "id": "u51-0225",
-    "es": "Hoy no he podido dormir.",
-    "en": "I couldn't sleep today. (Spain)",
+    "es": "Esta noche no he podido dormir.",
+    "en": "I couldn't sleep last night. (Spain)",
     "accept": [
-      "Hoy no pude dormir."
+      "Anoche no pude dormir."
     ],
     "acceptEn": [],
     "requires": [
       "g:perfecto-experience",
       "l:dormir",
-      "l:hoy",
-      "l:poder"
+      "l:noche",
+      "l:poder",
+      "p:demonstratives-basic"
     ],
     "targets": [],
     "kind": "statement",
@@ -5819,7 +5831,7 @@
   {
     "id": "u51-0226",
     "es": "Hoy no he tenido tiempo de leer.",
-    "en": "Today I haven't had time to read. (Spain)",
+    "en": "I didn't have time to read today. (Spain)",
     "accept": [
       "Hoy no tuve tiempo de leer."
     ],
@@ -5840,7 +5852,7 @@
   {
     "id": "u51-0227",
     "es": "Esta noche no he cenado porque tenía el estómago raro.",
-    "en": "Tonight I didn't have dinner because my stomach felt strange. (Spain)",
+    "en": "I didn't have dinner tonight because my stomach felt strange. (Spain)",
     "accept": [
       "Esta noche no cené porque tenía el estómago raro."
     ],
@@ -5889,7 +5901,7 @@
   {
     "id": "u51-0229",
     "es": "Hoy no hemos abierto hasta las nueve.",
-    "en": "Today we haven't opened until nine. (Spain)",
+    "en": "We didn't open until nine today. (Spain)",
     "accept": [
       "Hoy no abrimos hasta las nueve."
     ],
@@ -5985,18 +5997,18 @@
   },
   {
     "id": "u51-0233",
-    "es": "Hoy he ido al banco.\nAquí decimos que fuiste al banco.",
-    "en": "Today I went to the bank. (Spain)\nHere we say that you went to the bank.",
+    "es": "Hoy he ido al banco.\nAquí diríamos: hoy fui al banco.",
+    "en": "Today I went to the bank. (Spain)\nHere we'd say: hoy fui al banco.",
     "accept": [
-      "Hoy fui al banco.\\nAquí decimos que fuiste al banco."
+      "Hoy fui al banco.\nAquí diríamos: hoy fui al banco."
     ],
     "acceptEn": [],
     "requires": [
+      "c:fui",
+      "g:conditional",
       "g:gender-articles",
       "g:perfecto-experience",
-      "g:present-er-ir",
       "g:preterite-ser-ir-hacer",
-      "g:that-clauses",
       "l:aquí",
       "l:banco",
       "l:decir",
@@ -6013,10 +6025,10 @@
   },
   {
     "id": "u51-0234",
-    "es": "¿Habéis visto a Simón hoy o queréis verlo?\nYa lo vimos, y nos ha dicho hola.",
-    "en": "Have you all seen Simón today or do you want to see him? (Spain)\nWe already saw him, and he said hello to us. (Spain)",
+    "es": "¿Habéis visto a Simón hoy o queréis verlo?\nSí, ya lo hemos visto, y nos ha dicho hola.",
+    "en": "Have you all seen Simón today or do you want to see him? (Spain)\nYes, we already saw him, and he said hello to us. (Spain)",
     "accept": [
-      "¿Ya vieron a Simón hoy o quieren verlo?\\nYa lo vimos, y nos dijo hola."
+      "¿Ya vieron a Simón hoy o quieren verlo?\nSí, ya lo vimos, y nos dijo hola."
     ],
     "acceptEn": [],
     "requires": [
@@ -6024,7 +6036,6 @@
       "g:object-pronoun-position",
       "g:perfecto-experience",
       "g:present-er-ir",
-      "g:preterite-er-ir",
       "g:verb-infinitive",
       "g:vosotros-recognition",
       "l:decir",
@@ -6336,8 +6347,8 @@
   },
   {
     "id": "u51-0247",
-    "es": "En Madrid usan he ido para hoy y fui para ayer.",
-    "en": "In Madrid they use he ido for today and fui for yesterday.",
+    "es": "Lucía nunca dice ayer he ido; para ayer usa fui, como nosotros.",
+    "en": "Lucía never says ayer he ido; for yesterday she uses fui, like us.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6346,10 +6357,14 @@
       "g:perfecto-experience",
       "g:present-ar",
       "g:preterite-ser-ir-hacer",
+      "g:stem-e-i",
       "l:ayer",
-      "l:hoy",
+      "l:decir",
       "l:ir",
+      "l:lucía",
+      "l:ser",
       "l:usar",
+      "p:frequency-scale",
       "p:para-inf"
     ],
     "targets": [],
@@ -6388,25 +6403,19 @@
   },
   {
     "id": "u51-0249",
-    "es": "Aquí se dice esta mañana fui, y suena muy normal.",
-    "en": "Here people say esta mañana fui, and it sounds perfectly normal.",
+    "es": "A Hernando, el he ido de Lucía le suena a película española.",
+    "en": "To Hernando, Lucía's he ido sounds like a Spanish film.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:fui",
-      "g:preterite-ser-ir-hacer",
-      "g:se-impersonal",
+      "g:gender-articles",
+      "g:indirect-objects",
       "g:stem-boot",
-      "g:stem-e-i",
-      "l:aquí",
-      "l:decir",
-      "l:mañana",
-      "l:normal",
-      "l:ser",
-      "l:sonar",
-      "p:aqui-ahi-alla",
-      "p:demonstratives-basic",
-      "p:quantifiers-basic"
+      "l:española",
+      "l:he",
+      "l:ir",
+      "l:película",
+      "l:sonar"
     ],
     "targets": [],
     "kind": "statement",
@@ -6445,23 +6454,19 @@
   },
   {
     "id": "u51-0251",
-    "es": "Ella cuenta lo de ayer con fui y lo de hoy con he ido.",
-    "en": "She tells yesterday's events with fui and today's with he ido.",
+    "es": "Tomás descubre que entiende a Lucía sin traducir nada.",
+    "en": "Tomás discovers he understands Lucía without translating anything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:ayer-anoche",
-      "c:fui",
+      "g:prep-infinitive",
+      "g:present-er-ir",
       "g:stem-boot",
-      "l:ayer",
-      "l:contar",
-      "l:fui",
-      "l:he",
-      "l:hoy",
-      "l:ir",
-      "p:lo-de",
-      "p:lo-de-noun",
-      "p:lo-de-topic"
+      "g:that-clauses",
+      "l:descubrir",
+      "l:entender",
+      "l:traducir",
+      "p:personal-a"
     ],
     "targets": [],
     "kind": "statement",
@@ -6644,21 +6649,25 @@
   },
   {
     "id": "u51-0259",
-    "es": "Esta mañana han venido tres turistas y han preguntado si vosotros queréis mesa.",
-    "en": "This morning three tourists came and asked whether you all want a table. (Spain)",
+    "es": "Esta mañana han venido tres turistas preguntando por vosotros. ¿Sois famosos o qué?",
+    "en": "This morning three tourists came asking for you all. Are you famous or what? (Spain)",
     "accept": [
-      "Esta mañana vinieron tres turistas y preguntaron si ustedes quieren mesa."
+      "Esta mañana vinieron tres turistas preguntando por ustedes. ¿Son famosos o qué?"
     ],
     "acceptEn": [],
     "requires": [
-      "g:indirect-questions",
+      "g:adjective-agreement",
+      "g:gerund-ways",
       "g:perfecto-experience",
-      "g:present-er-ir",
+      "g:por-para-1",
+      "g:questions",
+      "g:ser-identity",
       "g:vosotros-recognition",
+      "l:famoso",
       "l:mañana",
-      "l:mesa",
       "l:preguntar",
-      "l:querer",
+      "l:qué",
+      "l:ser",
       "l:turista",
       "l:venir",
       "p:demonstratives-basic",
@@ -6698,10 +6707,10 @@
   },
   {
     "id": "u51-0261",
-    "es": "Hoy he subido a Monserrate y mañana subís vosotros.",
-    "en": "Today I went up Monserrate and tomorrow you all go up. (Spain)",
+    "es": "Hoy he subido a Monserrate, y mañana subís vosotros.",
+    "en": "Today I went up Monserrate, and tomorrow you all go up. (Spain)",
     "accept": [
-      "Hoy subí a Monserrate y mañana suben ustedes."
+      "Hoy subí a Monserrate, y mañana suben ustedes."
     ],
     "acceptEn": [],
     "requires": [
@@ -7558,24 +7567,24 @@
   },
   {
     "id": "u51-0294",
-    "es": "Mariana me pidió que escribiese la historia con calma.",
-    "en": "Mariana asked me to write the story calmly.",
+    "es": "Mariana insistía en que le contase la historia sin prisa.",
+    "en": "Mariana kept insisting that I tell her the story without rushing.",
     "accept": [
-      "Mariana me pidió que escribiera la historia con calma."
+      "Mariana insistía en que le contara la historia sin prisa."
     ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-spelling-stem",
+      "g:imperfect-habitual",
+      "g:indirect-objects",
       "g:se-form-recognition",
       "g:subj-past-triggers",
       "g:that-clauses",
-      "l:calma",
-      "l:escribir",
+      "l:contar",
       "l:historia",
-      "l:pedir",
-      "p:me-te-nos-objects",
-      "p:preguntar-pedir"
+      "l:insistir",
+      "l:prisa",
+      "p:contar-dos-sentidos"
     ],
     "targets": [
       "g:se-form-recognition"
@@ -7587,20 +7596,25 @@
   },
   {
     "id": "u51-0295",
-    "es": "Quería que Simón dijese mi nombre.",
-    "en": "I wanted Simón to say my name.",
+    "es": "Me encantaba que Simón dijese mi nombre al entrar.",
+    "en": "I loved it when Simón said my name as I came in.",
     "accept": [
-      "Quería que Simón dijera mi nombre."
+      "Me encantaba que Simón dijera mi nombre al entrar."
     ],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
+      "g:gustar-full",
       "g:imperfect-habitual",
+      "g:prep-infinitive",
       "g:se-form-recognition",
       "g:subj-past-triggers",
       "g:that-clauses",
       "l:decir",
+      "l:encantar",
+      "l:entrar",
       "l:nombre",
-      "l:querer",
+      "p:entusiasmar-fascinar",
       "p:possessives-basic"
     ],
     "targets": [
@@ -7745,20 +7759,21 @@
   },
   {
     "id": "u51-0301",
-    "es": "Quería que Tomás aprendiese a bailar.",
-    "en": "I wanted Tomás to learn to dance.",
+    "es": "Vale soñaba con que Tomás aprendiese a bailar.",
+    "en": "Vale dreamed of Tomás learning to dance.",
     "accept": [
-      "Quería que Tomás aprendiera a bailar."
+      "Vale soñaba con que Tomás aprendiera a bailar."
     ],
     "acceptEn": [],
     "requires": [
       "g:imperfect-habitual",
       "g:se-form-recognition",
-      "g:subj-past-triggers",
       "g:that-clauses",
       "l:aprender",
       "l:bailar",
-      "l:querer"
+      "l:soñar",
+      "p:sonar-con",
+      "p:sonar-con-ganas"
     ],
     "targets": [
       "g:se-form-recognition"
@@ -7964,25 +7979,27 @@
   },
   {
     "id": "u51-0309",
-    "es": "Hernando me pidió que lo llevase al mercado.",
-    "en": "Hernando asked me to take him to the market.",
+    "es": "A Hernando le encantaba que lo llevasen en su viejo taxi.",
+    "en": "Hernando loved it when people drove him around in his old taxi.",
     "accept": [
-      "Hernando me pidió que lo llevara al mercado."
+      "A Hernando le encantaba que lo llevaran en su viejo taxi."
     ],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
-      "g:gender-articles",
-      "g:preterite-spelling-stem",
+      "g:gustar-full",
+      "g:imperfect-habitual",
       "g:se-form-recognition",
       "g:subj-past-triggers",
       "g:that-clauses",
+      "l:encantar",
       "l:llevar",
-      "l:mercado",
-      "l:pedir",
-      "p:me-te-nos-objects",
-      "p:personal-a",
-      "p:preguntar-pedir"
+      "l:taxi",
+      "l:viejo",
+      "p:entusiasmar-fascinar",
+      "p:me-encanta-que",
+      "p:possessives-basic",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "g:se-form-recognition"
@@ -8656,7 +8673,7 @@
   {
     "id": "u51-0335",
     "es": "¿Qué pasaría si no hubiese aceptado?\nNo estaría en Medellín.",
-    "en": "What would happen if she hadn't accepted?\nShe wouldn't be in Medellín.",
+    "en": "What would things be like if she hadn't accepted?\nShe wouldn't be in Medellín.",
     "accept": [
       "¿Qué pasaría si no hubiera aceptado?\\nNo estaría en Medellín."
     ],
@@ -8681,10 +8698,10 @@
   },
   {
     "id": "u51-0336",
-    "es": "Ojalá Vale se quedase.\nYa, pero tiene que irse.",
-    "en": "If only Vale would stay.\nI know, but she has to go.",
+    "es": "Ojalá Vale se quedase.\nSí, ya sé, pero tiene que irse.",
+    "en": "If only Vale would stay.\nYes, I know, but she has to go.",
     "accept": [
-      "Ojalá Vale se quedara.\\nYa, pero tiene que irse."
+      "Ojalá Vale se quedara.\nSí, ya sé, pero tiene que irse."
     ],
     "acceptEn": [],
     "requires": [
@@ -8694,10 +8711,12 @@
       "g:se-form-recognition",
       "g:stem-boot",
       "g:verb-infinitive",
+      "g:yo-irregular",
       "l:irse",
       "l:quedarse",
+      "l:saber",
       "l:tener",
-      "p:concede-pero"
+      "p:saber-conocer"
     ],
     "targets": [
       "g:se-form-recognition"
@@ -8817,24 +8836,24 @@
   },
   {
     "id": "u51-0341",
-    "es": "Me pidió que fuésemos a la fiesta.",
-    "en": "She asked us to go to the party.",
+    "es": "Lucía propuso que fuésemos todos a bailar salsa.",
+    "en": "Lucía suggested we all go salsa dancing.",
     "accept": [
-      "Me pidió que fuéramos a la fiesta."
+      "Lucía propuso que fuéramos todos a bailar salsa."
     ],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:preterite-spelling-stem",
+      "g:preterite-irregular-strong",
       "g:se-form-recognition",
+      "g:ser-identity",
       "g:subj-past-triggers",
       "g:that-clauses",
-      "l:fiesta",
-      "l:ir",
-      "l:pedir",
-      "p:ir-a-venir-de-place",
-      "p:me-te-nos-objects",
-      "p:preguntar-pedir"
+      "l:bailar",
+      "l:lucía",
+      "l:proponer",
+      "l:salsa",
+      "l:ser",
+      "p:te-propongo-que"
     ],
     "targets": [
       "g:se-form-recognition"
@@ -10205,24 +10224,21 @@
   },
   {
     "id": "u51-0391",
-    "es": "¿Quién sabe si Altamira quisiese comprar también el parque?",
-    "en": "Who knows whether Altamira might want to buy the park too?",
+    "es": "¿Y si Altamira quisiese comprar también el parque?",
+    "en": "What if Altamira wanted to buy the park too?",
     "accept": [
-      "¿Quién sabe si Altamira quisiera comprar también el parque?"
+      "¿Y si Altamira quisiera comprar también el parque?"
     ],
     "acceptEn": [],
     "requires": [
-      "c:quien-sabe",
       "g:gender-articles",
-      "g:indirect-questions",
       "g:se-form-recognition",
       "g:si-hypothetical",
       "g:verb-infinitive",
       "l:comprar",
       "l:parque",
       "l:querer",
-      "l:quién",
-      "l:saber"
+      "p:estaria-bien-que"
     ],
     "targets": [
       "g:se-form-recognition"
@@ -10385,8 +10401,8 @@
   },
   {
     "id": "u51-0398",
-    "es": "Para Tomás, la adaptación al español fue lenta.",
-    "en": "For Tomás, adapting to Spanish was slow.",
+    "es": "Para Tomás, volver a hablar español fue una adaptación lenta.",
+    "en": "For Tomás, speaking Spanish again was a slow adjustment.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10396,10 +10412,13 @@
       "g:ser-identity",
       "l:adaptación",
       "l:español",
+      "l:hablar",
       "l:lento",
       "l:ser",
+      "l:volver",
       "p:adaptarse-a",
-      "p:para-inf"
+      "p:para-inf",
+      "p:volver-a-inf"
     ],
     "targets": [
       "p:adaptarse-a"
@@ -10437,19 +10456,16 @@
   },
   {
     "id": "u51-0400",
-    "es": "Mi adaptación al frío todavía no termina.",
-    "en": "My adaptation to the cold still isn't over.",
+    "es": "Todavía no me acostumbro al frío de las mañanas.",
+    "en": "I still haven't got used to the morning cold.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:todavia-no",
       "g:gender-articles",
-      "g:present-ar",
-      "l:adaptación",
       "l:frío",
-      "l:terminar",
-      "p:adaptarse-a",
-      "p:possessives-basic"
+      "l:mañana",
+      "p:adaptarse-a"
     ],
     "targets": [
       "p:adaptarse-a"
@@ -10461,20 +10477,15 @@
   },
   {
     "id": "u51-0401",
-    "es": "La adaptación de Lucía al clima fue rápida.",
-    "en": "Lucía's adaptation to the weather was quick.",
+    "es": "Lucía se adaptó al clima en dos días.",
+    "en": "Lucía adapted to the weather in two days.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
-      "g:ser-identity",
-      "l:adaptación",
       "l:clima",
-      "l:rápido",
-      "l:ser",
-      "p:adaptarse-a"
+      "l:día",
+      "l:lucía"
     ],
     "targets": [
       "p:adaptarse-a"
@@ -10486,20 +10497,22 @@
   },
   {
     "id": "u51-0402",
-    "es": "Una buena adaptación depende de la paciencia.",
-    "en": "A good adjustment depends on patience.",
+    "es": "Hernando dice que nunca se va a acostumbrar a los celulares.",
+    "en": "Hernando says he's never going to get used to cell phones.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:depende",
       "g:gender-articles",
-      "l:adaptación",
-      "l:buena",
-      "l:depender",
-      "l:paciencia",
+      "g:ir-a-plans",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:acostumbrar",
+      "l:celular",
+      "l:decir",
+      "l:irse",
       "p:adaptarse-a",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo"
+      "p:frequency-scale",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "p:adaptarse-a"
@@ -10511,20 +10524,16 @@
   },
   {
     "id": "u51-0403",
-    "es": "Después de un mes, la adaptación ya era más fácil.",
-    "en": "After a month, the adjustment was already easier.",
+    "es": "Después de un mes, ya nos acostumbramos al ruido de la calle.",
+    "en": "After a month, we got used to the street noise.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:era",
       "g:gender-articles",
-      "g:imperfect-states",
-      "g:ser-identity",
-      "l:adaptación",
+      "l:calle",
       "l:después",
-      "l:fácil",
       "l:mes",
-      "l:ser",
+      "l:ruido",
       "p:adaptarse-a",
       "p:time-sequence-basic"
     ],
@@ -10752,18 +10761,18 @@
   },
   {
     "id": "u51-0412",
-    "es": "Con paciencia, la adaptación llega sola.",
-    "en": "With patience, adjustment comes by itself.",
+    "es": "Al principio me costó, pero me adapté a los horarios de la cocina.",
+    "en": "At first it was hard, but I adapted to the kitchen's hours.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:gender-articles",
-      "g:present-ar",
-      "l:adaptación",
-      "l:llegar",
-      "l:paciencia",
-      "p:adaptarse-a"
+      "g:gustar-full",
+      "g:preterite-ar",
+      "l:cocina",
+      "l:costar",
+      "l:horario",
+      "l:principio"
     ],
     "targets": [
       "p:adaptarse-a"
@@ -10873,24 +10882,24 @@
   },
   {
     "id": "u51-0417",
-    "es": "Hay una adaptación necesaria cuando se cambia de país.",
-    "en": "There is a necessary adaptation when you change countries.",
+    "es": "Cuando uno cambia de país, la adaptación lleva meses.",
+    "en": "When you move to another country, adjusting takes months.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
-      "g:adjective-agreement",
       "g:gender-articles",
-      "g:hay-vs-esta",
       "g:present-ar",
-      "g:se-impersonal",
+      "g:present-er-ir",
       "l:adaptación",
       "l:cambiar",
-      "l:necesario",
+      "l:llevar",
+      "l:mes",
       "l:país",
+      "l:unir",
       "p:adaptarse-a",
       "p:cambiar-de-por",
-      "p:cuando-basic"
+      "p:cuando-basic",
+      "p:generic-tu-uno"
     ],
     "targets": [
       "p:adaptarse-a"
@@ -10953,20 +10962,16 @@
   },
   {
     "id": "u51-0420",
-    "es": "La adaptación es más fácil con buenos amigos.",
-    "en": "Adjusting is easier with good friends.",
+    "es": "Con buenos amigos, uno se adapta a cualquier ciudad.",
+    "en": "With good friends, you can adapt to any city.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
-      "g:gender-articles",
-      "g:ser-identity",
-      "l:adaptación",
+      "g:cada-cualquier",
       "l:amigo",
       "l:bueno",
-      "l:fácil",
-      "l:ser",
-      "p:adaptarse-a"
+      "l:ciudad"
     ],
     "targets": [
       "p:adaptarse-a"
@@ -11242,18 +11247,20 @@
   },
   {
     "id": "u51-0431",
-    "es": "Acostumbrar a un loro a no gritar es casi imposible.",
-    "en": "Getting a parrot used to not screaming is almost impossible.",
+    "es": "Acostumbrar a un turista a la altura de Bogotá no es cosa de un día.",
+    "en": "Getting a tourist used to Bogotá's altitude doesn't happen in a day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
       "l:acostumbrar",
-      "l:gritar",
-      "l:imposible",
-      "l:loro",
+      "l:altura",
+      "l:cosa",
+      "l:día",
       "l:ser",
+      "l:turista",
+      "p:a-la-altura-de",
       "p:adaptarse-a"
     ],
     "targets": [
@@ -11347,19 +11354,21 @@
   },
   {
     "id": "u51-0435",
-    "es": "Tomás tiene que acostumbrar sus oídos al español de España.",
-    "en": "Tomás has to train his ears to Spain's Spanish.",
+    "es": "Rosa supo acostumbrar a todo el barrio a desayunar en su café.",
+    "en": "Rosa managed to get the whole neighbourhood used to having breakfast at her café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
       "g:gender-articles",
-      "g:stem-boot",
+      "g:preterite-irregular-strong",
       "l:acostumbrar",
-      "l:español",
-      "l:oído",
-      "l:tener",
-      "p:possessives-basic"
+      "l:barrio",
+      "l:café",
+      "l:desayunar",
+      "l:saber",
+      "p:adaptarse-a",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
       "l:acostumbrar"
@@ -11798,17 +11807,19 @@
   },
   {
     "id": "u51-0453",
-    "es": "El jugo de mora proviene de las montañas.",
-    "en": "Mora juice comes from the mountains.",
+    "es": "Las moras de este jugo provienen de una finca de Boyacá.",
+    "en": "The blackberries in this juice come from a farm in Boyacá.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:claro-listo",
       "g:gender-articles",
       "g:stem-boot",
+      "l:finca",
       "l:jugo",
-      "l:montaña",
       "l:mora",
       "l:provenir",
+      "p:demonstratives-basic",
       "p:proceder-de"
     ],
     "targets": [
@@ -12077,19 +12088,20 @@
   },
   {
     "id": "u51-0464",
-    "es": "El tinto tiene su origen en las fincas cafeteras.",
-    "en": "Black coffee has its origins in the coffee farms.",
+    "es": "Esta canción tiene su origen en los pueblos del río Magdalena.",
+    "en": "This song has its origins in the towns along the Magdalena River.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
       "g:gender-articles",
       "g:stem-boot",
-      "l:cafetera",
-      "l:finca",
+      "l:canción",
       "l:origen",
+      "l:pueblo",
+      "l:río",
       "l:tener",
-      "l:tinto",
+      "p:demonstratives-basic",
       "p:possessives-basic",
       "p:proceder-de"
     ],
@@ -12186,21 +12198,19 @@
   },
   {
     "id": "u51-0468",
-    "es": "Su miedo a los cambios tiene su origen en un viaje largo.",
-    "en": "His fear of changes has its origins in a long trip.",
+    "es": "La puntualidad de Hernando tiene su origen en sus años de taxista.",
+    "en": "Hernando's punctuality has its origins in his years as a taxi driver.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
       "g:gender-articles",
       "g:stem-boot",
-      "l:cambio",
-      "l:largo",
-      "l:miedo",
+      "l:año",
       "l:origen",
+      "l:puntualidad",
+      "l:taxista",
       "l:tener",
-      "l:viaje",
-      "p:miedo-a",
       "p:possessives-basic",
       "p:proceder-de"
     ],
@@ -12636,18 +12646,25 @@
   },
   {
     "id": "u51-0485",
-    "es": "¿De dónde provienes tú?\nProcedo de Medellín.",
-    "en": "Where do you come from?\nI come from Medellín.",
+    "es": "¿De dónde procede tu familia?\nMi familia proviene de Medellín, pero yo nací aquí.",
+    "en": "Where does your family come from?\nMy family comes from Medellín, but I was born here.",
     "accept": [
-      "¿De dónde eres tú?\\nSoy de Medellín."
+      "¿De dónde es tu familia?\nMi familia es de Medellín, pero yo nací aquí."
     ],
     "acceptEn": [],
     "requires": [
       "g:present-er-ir",
+      "g:preterite-er-ir",
       "g:stem-boot",
+      "l:aquí",
       "l:dónde",
+      "l:familia",
+      "l:nacer",
       "l:proceder",
       "l:provenir",
+      "p:aqui-ahi-alla",
+      "p:naci-en",
+      "p:possessives-basic",
       "p:prep-questions-basic",
       "p:proceder-de",
       "p:question-word-order"
@@ -13900,23 +13917,30 @@
   },
   {
     "id": "u51-0536",
-    "es": "¿Hablas distinto aquí?\nCiertamente, cambio un poco el acento.",
-    "en": "Do you speak differently here?\nCertainly, I change my accent a little.",
+    "es": "¿Es verdad que cambias el acento aquí?\nCiertamente, aunque no me doy cuenta.",
+    "en": "Is it true you change your accent here?\nCertainly, though I don't notice.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adverbs-mente",
+      "g:aunque-indicative",
       "g:gender-articles",
       "g:present-ar",
+      "g:reflexive-routine",
+      "g:ser-identity",
+      "g:that-clauses",
+      "g:yo-irregular",
       "l:acento",
       "l:aquí",
       "l:cambiar",
       "l:ciertamente",
-      "l:distinto",
-      "l:hablar",
+      "l:cuenta",
+      "l:darse",
+      "l:ser",
+      "l:verdad",
       "p:aqui-ahi-alla",
-      "p:poco-un-poco",
-      "p:quantifiers-basic"
+      "p:darse-cuenta-de",
+      "p:es-verdad-eso-de-que"
     ],
     "targets": [
       "l:acento",
@@ -13960,19 +13984,22 @@
   },
   {
     "id": "u51-0538",
-    "es": "Ciertamente, el español cambia de país en país.",
-    "en": "Certainly, Spanish changes from country to country.",
+    "es": "El español cambia ciertamente de país en país, pero nos entendemos todos.",
+    "en": "Spanish certainly changes from country to country, but we all understand each other.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adverbs-mente",
       "g:gender-articles",
       "g:present-ar",
+      "g:present-er-ir",
       "l:cambiar",
       "l:ciertamente",
+      "l:entender",
       "l:español",
       "l:país",
-      "p:cambiar-de-por"
+      "p:me-te-nos-objects",
+      "p:se-reciproco"
     ],
     "targets": [
       "l:ciertamente"
@@ -14008,8 +14035,8 @@
   },
   {
     "id": "u51-0540",
-    "es": "Ciertamente, Altamira tiene mucho dinero.",
-    "en": "Certainly, Altamira has a lot of money.",
+    "es": "Altamira tiene ciertamente mucho dinero, pero no tiene paciencia.",
+    "en": "Altamira certainly has a lot of money, but it has no patience.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14018,6 +14045,7 @@
       "g:stem-boot",
       "l:ciertamente",
       "l:dinero",
+      "l:paciencia",
       "l:tener",
       "p:quantifiers-basic"
     ],
@@ -14051,8 +14079,8 @@
   },
   {
     "id": "u51-0542",
-    "es": "Ciertamente, esa es la mejor torta del barrio.",
-    "en": "Certainly, that is the best cake in the neighbourhood.",
+    "es": "Esa es, ciertamente, la mejor torta del barrio.",
+    "en": "That is certainly the best cake in the neighbourhood.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14830,15 +14858,17 @@
   },
   {
     "id": "u51-0574",
-    "es": "No dejó ni un rastro del huésped.",
-    "en": "There wasn't a trace of the guest.",
+    "es": "El huésped se fue sin dejar rastro.",
+    "en": "The guest left without a trace.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ar",
+      "g:prep-infinitive",
+      "g:preterite-ser-ir-hacer",
       "l:dejar",
       "l:huésped",
+      "l:irse",
       "l:rastro"
     ],
     "targets": [
@@ -14852,17 +14882,18 @@
   },
   {
     "id": "u51-0575",
-    "es": "El tren marcha a las ocho en punto.",
-    "en": "The train leaves at eight sharp.",
+    "es": "¿Cómo marcha el café sin Vale?",
+    "en": "How is the café going without Vale?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
+      "g:questions",
+      "l:café",
+      "l:cómo",
       "l:marchar",
-      "l:punto",
-      "l:tren",
-      "p:telling-time"
+      "p:question-word-order"
     ],
     "targets": [
       "l:marchar"
@@ -14874,18 +14905,16 @@
   },
   {
     "id": "u51-0576",
-    "es": "El bus marcha despacio por la avenida.",
-    "en": "The bus travels slowly along the avenue.",
+    "es": "El reloj de Rosa ya no marcha.",
+    "en": "Rosa's clock doesn't work any more.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ya-no",
       "g:gender-articles",
-      "g:por-para-1",
       "g:present-ar",
-      "l:avenida",
-      "l:bus",
-      "l:despacio",
-      "l:marchar"
+      "l:marchar",
+      "l:reloj"
     ],
     "targets": [
       "l:marchar"
@@ -14919,14 +14948,18 @@
   },
   {
     "id": "u51-0578",
-    "es": "Mañana marchamos hacia Cartagena.",
-    "en": "Tomorrow we head off to Cartagena.",
+    "es": "Los soldados marchaban por la Séptima el día de la independencia.",
+    "en": "The soldiers marched along Séptima on Independence Day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:por-para-1",
+      "l:día",
+      "l:independencia",
       "l:marchar",
-      "l:mañana"
+      "l:soldado"
     ],
     "targets": [
       "l:marchar"
@@ -14962,20 +14995,22 @@
   },
   {
     "id": "u51-0580",
-    "es": "Quien marcha de viaje debe llevar poco.",
-    "en": "Whoever sets off on a trip should carry little.",
+    "es": "Las cosas marchan bien en el café desde que llegó Lucía.",
+    "en": "Things have been going well at the café since Lucía arrived.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:bien-y-tu",
+      "g:gender-articles",
       "g:present-ar",
-      "g:present-er-ir",
-      "g:relatives-donde-lo-que",
-      "g:tener-que-hay-que",
-      "l:deber",
-      "l:llevar",
+      "g:preterite-ar",
+      "l:bien",
+      "l:café",
+      "l:cosa",
+      "l:llegar",
       "l:marchar",
-      "l:viaje",
-      "p:quantifiers-basic"
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "l:marchar"
@@ -15204,16 +15239,20 @@
   },
   {
     "id": "u51-0590",
-    "es": "No tomo azúcar, pero con miel sí tomo té.",
-    "en": "I don't take sugar, but with honey I do drink tea.",
+    "es": "No le pongo azúcar al té, solo miel.",
+    "en": "I don't put sugar in my tea, just honey.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:yo-irregular",
       "l:azúcar",
       "l:miel",
-      "l:tomar",
-      "l:té"
+      "l:poner",
+      "l:té",
+      "p:sobre-todo-solo"
     ],
     "targets": [
       "l:miel"
@@ -15475,15 +15514,15 @@
   },
   {
     "id": "u51-0601",
-    "es": "En enero toda la hierba del parque está mojada.",
-    "en": "In January all the grass in the park is wet.",
+    "es": "En abril toda la hierba del parque está mojada.",
+    "en": "In April all the grass in the park is wet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:estar-location-states",
       "g:gender-articles",
-      "l:enero",
+      "l:abril",
       "l:estar",
       "l:hierba",
       "l:mojado",
@@ -16246,8 +16285,8 @@
   },
   {
     "id": "u51-0633",
-    "es": "Hago una revisión del menú cada primavera.",
-    "en": "I review the menu every spring.",
+    "es": "Hago una revisión del menú cada seis meses.",
+    "en": "I review the menu every six months.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16257,8 +16296,9 @@
       "g:yo-irregular",
       "l:hacer",
       "l:menú",
-      "l:primavera",
-      "l:revisión"
+      "l:mes",
+      "l:revisión",
+      "p:veces-al"
     ],
     "targets": [
       "l:revisión"
@@ -16375,7 +16415,7 @@
   {
     "id": "u51-0638",
     "es": "Parce, ese man siempre llega tarde.",
-    "en": "Mate, that guy is always late.",
+    "en": "Dude, that guy is always late.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16818,17 +16858,22 @@
   },
   {
     "id": "u51-0657",
-    "es": "Vale quiere librar a la cocina del desorden.",
-    "en": "Vale wants to free the kitchen from the mess.",
+    "es": "Hernando dice que solo un tinto lo puede librar del frío de Bogotá.",
+    "en": "Hernando says only a black coffee can save him from the Bogotá cold.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:direct-objects",
       "g:gender-articles",
       "g:stem-boot",
-      "l:cocina",
-      "l:desorden",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:decir",
+      "l:frío",
       "l:librar",
-      "l:querer"
+      "l:poder",
+      "l:tinto",
+      "p:sobre-todo-solo"
     ],
     "targets": [
       "l:librar"
@@ -17179,10 +17224,10 @@
   },
   {
     "id": "u51-0673",
-    "es": "¿Has visto mi cuaderno?\nSí, la he dejado en la mesa.",
+    "es": "¿Has visto mi cuaderno?\nSí, lo he dejado en la mesa.",
     "en": "Have you seen my notebook? (Spain)\nYes, I left it on the table. (Spain)",
     "accept": [
-      "¿Viste mi cuaderno?\\nSí, la dejé en la mesa."
+      "¿Viste mi cuaderno?\nSí, lo dejé en la mesa."
     ],
     "acceptEn": [],
     "requires": [
@@ -17569,11 +17614,12 @@
   },
   {
     "id": "u51-0688",
-    "es": "¿Pagamos a medias?\nVale, tú pagas el postre.",
-    "en": "Shall we split the bill?\nFine, you pay for dessert.",
+    "es": "¿Pagamos a medias?\nVale, pero el postre lo pagas tú.",
+    "en": "Shall we split the bill?\nOK, but you're paying for dessert.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:direct-objects",
       "g:gender-articles",
       "g:present-ar",
       "l:media",
@@ -17614,16 +17660,17 @@
   },
   {
     "id": "u51-0690",
-    "es": "¿Quieres tinto o jugo?\nVale, un tinto.",
-    "en": "Do you want black coffee or juice?\nAll right, a black coffee.",
+    "es": "¿Te pongo un tinto?\nVale, pero sin azúcar.",
+    "en": "Shall I get you a black coffee?\nOK, but no sugar.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:stem-boot",
-      "l:jugo",
-      "l:querer",
-      "l:tinto"
+      "g:yo-irregular",
+      "l:azúcar",
+      "l:poner",
+      "l:tinto",
+      "p:me-te-nos-objects"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -17821,8 +17868,8 @@
   },
   {
     "id": "u51-0699",
-    "es": "Anoche vimos qué rollo de película en la tele, ¡tres horas!",
-    "en": "Last night we watched such a boring film on TV, three hours!",
+    "es": "Anoche vimos en la tele una película de tres horas. ¡Qué rollo de película!",
+    "en": "Last night we watched a three-hour film on TV. What a boring film!",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17960,23 +18007,22 @@
   },
   {
     "id": "u51-0704",
-    "es": "¿Qué rollo de película es esa? Llevamos dos horas aquí.",
-    "en": "What a tedious film is that? We've been here two hours.",
+    "es": "¡Qué rollo de película! Llevamos dos horas aquí y no pasa nada.",
+    "en": "What a dull film! We've been here two hours and nothing happens.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:que-rollo-spain",
-      "g:demonstratives",
       "g:hace-que-desde",
+      "g:negation-words",
       "g:present-ar",
-      "g:ser-identity",
       "l:aquí",
       "l:hora",
       "l:llevar",
+      "l:pasar",
       "l:película",
       "l:qué",
       "l:rollo",
-      "l:ser",
       "p:aqui-ahi-alla",
       "p:llevar-tiempo-gerundio"
     ],
@@ -18015,18 +18061,22 @@
   },
   {
     "id": "u51-0706",
-    "es": "Me da rollo ir sola al banco.",
-    "en": "I can't be bothered going to the bank alone.",
+    "es": "Lucía dice que hacer cola en el banco es un rollo.",
+    "en": "Lucía says queuing at the bank is a drag.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:me-regala",
-      "g:adjective-agreement",
       "g:gender-articles",
+      "g:ser-identity",
+      "g:stem-e-i",
+      "g:that-clauses",
       "l:banco",
-      "l:dar",
-      "l:ir",
-      "l:rollo"
+      "l:cola",
+      "l:decir",
+      "l:hacer",
+      "l:lucía",
+      "l:rollo",
+      "l:ser"
     ],
     "targets": [
       "l:rollo"
@@ -18039,7 +18089,7 @@
   {
     "id": "u51-0707",
     "es": "Mamá, te echo mucho de menos desde que vivo en Bogotá.",
-    "en": "Mum, I miss you a lot since I've lived in Bogotá.",
+    "en": "Mum, I've missed you a lot since I've been living in Bogotá.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18080,17 +18130,17 @@
   },
   {
     "id": "u51-0709",
-    "es": "Lucía, te echo mucho de menos cuando vuelves a Madrid.",
-    "en": "Lucía, I miss you a lot when you go back to Madrid.",
+    "es": "Te echo mucho de menos, escribió Lucía desde el avión.",
+    "en": "I miss you a lot, Lucía wrote from the plane.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:echar-de-menos-spain",
-      "g:stem-boot",
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "l:avión",
       "l:echar",
-      "l:lucía",
-      "l:volver",
-      "p:cuando-basic"
+      "l:escribir"
     ],
     "targets": [
       "c:echar-de-menos-spain"
@@ -18145,16 +18195,21 @@
   },
   {
     "id": "u51-0712",
-    "es": "Hernando, te echo mucho de menos cuando no vienes.",
-    "en": "Hernando, I miss you a lot when you don't come.",
+    "es": "Simón repite «te echo mucho de menos» sin saber qué significa.",
+    "en": "Simón repeats «I miss you a lot» without knowing what it means.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:echar-de-menos-spain",
-      "g:stem-boot",
+      "c:que-significa",
+      "g:prep-infinitive",
+      "g:stem-e-i",
       "l:echar",
-      "l:venir",
-      "p:cuando-basic"
+      "l:qué",
+      "l:repetir",
+      "l:saber",
+      "l:significar",
+      "p:saber-conocer"
     ],
     "targets": [
       "c:echar-de-menos-spain"
@@ -18166,19 +18221,19 @@
   },
   {
     "id": "u51-0713",
-    "es": "Ya sé que te echo mucho de menos, pero no lo digo.",
-    "en": "I know I miss you a lot, but I don't say it.",
+    "es": "Nunca te lo digo, pero te echo mucho de menos.",
+    "en": "I never tell you, but I miss you a lot.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:echar-de-menos-spain",
       "g:direct-objects",
-      "g:that-clauses",
+      "g:double-pronouns",
       "g:yo-irregular",
       "l:decir",
       "l:echar",
-      "l:saber",
-      "p:saber-conocer"
+      "p:frequency-scale",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "c:echar-de-menos-spain"
@@ -18216,18 +18271,21 @@
   },
   {
     "id": "u51-0715",
-    "es": "Cuando cierro el café, te echo mucho de menos, Rosa.",
-    "en": "When I close the café, I miss you a lot, Rosa.",
+    "es": "Desde Bogotá, Pilar le dijo a su perro por videollamada: te echo mucho de menos.",
+    "en": "From Bogotá, Pilar told her dog on a video call: I miss you a lot.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:echar-de-menos-spain",
-      "g:gender-articles",
-      "g:stem-boot",
-      "l:café",
-      "l:cerrar",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:por-para-1",
+      "g:preterite-irregular-strong",
+      "l:decir",
       "l:echar",
-      "p:cuando-basic"
+      "l:perro",
+      "l:videollamada",
+      "p:possessives-basic"
     ],
     "targets": [
       "c:echar-de-menos-spain"
@@ -18442,19 +18500,21 @@
   },
   {
     "id": "u51-0725",
-    "es": "Creo que Tomás entiende todo, pero no lo dice.",
-    "en": "I think Tomás understands everything, but he doesn't say so.",
+    "es": "Creo que Tomás ya no necesita que le traduzcan nada.",
+    "en": "I think Tomás no longer needs anyone to translate anything for him.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:creo-que",
-      "g:direct-objects",
-      "g:stem-boot",
-      "g:stem-e-i",
+      "c:ya-no",
+      "g:indirect-objects",
+      "g:negation-words",
+      "g:present-ar",
+      "g:subj-wanting",
       "g:that-clauses",
       "l:creer",
-      "l:decir",
-      "l:entender"
+      "l:necesitar",
+      "l:traducir"
     ],
     "targets": [],
     "kind": "statement",
@@ -18713,22 +18773,23 @@
   },
   {
     "id": "u51-0736",
-    "es": "¿Crees que está bien?\nNo creo que esté bien.",
-    "en": "Do you think it's fine?\nI don't think it's fine.",
+    "es": "¿Crees que la torta está lista?\nNo creo que esté lista todavía.",
+    "en": "Do you think the cake is ready?\nI don't think it's ready yet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
       "c:creo-que",
-      "c:que-este-bien",
+      "g:adjective-agreement",
       "g:estar-location-states",
+      "g:gender-articles",
       "g:present-er-ir",
+      "g:subj-wanting",
       "g:that-clauses",
-      "l:bien",
       "l:creer",
       "l:estar",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo"
+      "l:listo",
+      "l:torta",
+      "p:ya-todavia-basic"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -18738,19 +18799,17 @@
   },
   {
     "id": "u51-0737",
-    "es": "Tomás es aburrido con los papeles, pero hoy está aburrido de verdad.",
-    "en": "Tomás is boring with paperwork, but today he is truly bored.",
+    "es": "Tomás no es aburrido, pero hoy está aburrido de verdad.",
+    "en": "Tomás isn't boring, but today he's truly bored.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:en-serio",
       "g:estar-location-states",
-      "g:gender-articles",
       "g:ser-identity",
       "l:aburrido",
       "l:estar",
       "l:hoy",
-      "l:papel",
       "l:ser",
       "l:verdad",
       "p:aburrir-aburrirse",
@@ -18811,23 +18870,25 @@
   },
   {
     "id": "u51-0740",
-    "es": "La sopa es fría, pero esta está fría porque la dejaron.",
-    "en": "The soup is a cold one, but this one is cold because it was left out.",
+    "es": "El gazpacho es frío, pero esta sopa está fría porque nadie se la comió.",
+    "en": "Gazpacho is cold, but this soup is cold because nobody ate it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:porque",
       "g:cause-result",
-      "g:direct-objects",
+      "g:double-pronouns",
       "g:estar-location-states",
       "g:gender-articles",
-      "g:preterite-ar",
+      "g:preterite-er-ir",
       "g:ser-identity",
-      "l:dejar",
+      "l:comer",
       "l:estar",
       "l:frío",
+      "l:gazpacho",
       "l:ser",
       "l:sopa",
+      "p:comerse-todo",
       "p:demonstratives-basic"
     ],
     "targets": [],
@@ -18863,21 +18924,21 @@
   },
   {
     "id": "u51-0742",
-    "es": "Tomás es cansado como jefe, pero hoy está cansado de verdad.",
-    "en": "Tomás is tiresome as a boss, but today he's really tired.",
+    "es": "Este trabajo es cansado, y yo hoy estoy cansadísimo.",
+    "en": "This job is tiring, and today I'm exhausted.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:en-serio",
+      "g:adjective-agreement",
       "g:estar-location-states",
       "g:ser-identity",
+      "g:superlatives",
       "l:cansado",
       "l:estar",
       "l:hoy",
-      "l:jefe",
       "l:ser",
-      "l:verdad",
-      "p:estar-harto-de"
+      "l:trabajo",
+      "p:demonstratives-basic"
     ],
     "targets": [],
     "kind": "statement",
@@ -18939,16 +19000,16 @@
   },
   {
     "id": "u51-0745",
-    "es": "Simón es verde, pero hoy está verde de ira.",
-    "en": "Simón is green, but today he's green with rage.",
+    "es": "Simón es verde, y hoy está verde de envidia.",
+    "en": "Simón is green, and today he's green with envy.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
       "g:ser-identity",
+      "l:envidia",
       "l:estar",
       "l:hoy",
-      "l:ira",
       "l:ser",
       "l:verde"
     ],
@@ -18985,22 +19046,22 @@
   },
   {
     "id": "u51-0747",
-    "es": "¿Cómo es Vale?\nEs muy tranquila, pero hoy está nerviosa.",
-    "en": "What is Vale like?\nShe's very calm, but today she's nervous.",
+    "es": "¿Cómo es Mariana?\nEs muy seria, pero hoy está contentísima.",
+    "en": "What is Mariana like?\nShe's very serious, but today she's really happy.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:como-es",
-      "c:tranquilo",
       "g:adjective-agreement",
       "g:estar-location-states",
       "g:ser-identity",
+      "g:superlatives",
+      "l:contento",
       "l:cómo",
       "l:estar",
       "l:hoy",
-      "l:nervioso",
       "l:ser",
-      "l:tranquilo",
+      "l:serio",
       "p:quantifiers-basic",
       "p:question-word-order"
     ],
@@ -19012,12 +19073,11 @@
   },
   {
     "id": "u51-0748",
-    "es": "¿Está aburrida Lucía?\nNo, es así, siempre callada.",
-    "en": "Is Lucía bored?\nNo, that's just how she is, always quiet.",
+    "es": "¿Está aburrido Hernando?\nNo, es así, siempre callado.",
+    "en": "Is Hernando bored?\nNo, that's just how he is, always quiet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:estar-location-states",
       "g:ser-identity",
       "l:aburrido",
@@ -19238,7 +19298,7 @@
   {
     "id": "u51-0758",
     "es": "Que no se repita el error de ayer.",
-    "en": "Let yesterday's mistake not be repeated.",
+    "en": "Don't let yesterday's mistake happen again.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19323,23 +19383,22 @@
   },
   {
     "id": "u51-0762",
-    "es": "¿Qué pasó con el pan?\nQue lo haga Vale, como siempre.",
-    "en": "What happened with the bread?\nLet Vale make it, as always.",
+    "es": "¿Y el pan de mañana?\nQue lo haga Vale antes de irse.",
+    "en": "And tomorrow's bread?\nLet Vale make it before she leaves.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
       "g:gender-articles",
-      "g:preterite-ar",
-      "g:questions",
+      "g:prep-infinitive",
+      "g:reflexive-routine",
       "g:subj-wanting",
       "g:subj-wishes",
+      "l:antes",
       "l:hacer",
+      "l:irse",
+      "l:mañana",
       "l:pan",
-      "l:pasar",
-      "l:qué",
-      "l:siempre",
-      "p:frequency-scale",
       "p:que-subj-deseo"
     ],
     "targets": [],
@@ -19350,12 +19409,13 @@
   },
   {
     "id": "u51-0763",
-    "es": "¿Puedo pasar?\nQue pase, que pase.",
-    "en": "May I come in?\nLet him in, let him in.",
+    "es": "Hernando pregunta si puede pasar.\nQue pase, que pase.",
+    "en": "Hernando's asking if he can come in.\nLet him in, let him in.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:puedo",
+      "g:indirect-questions",
+      "g:present-ar",
       "g:stem-boot",
       "g:subj-wanting",
       "g:subj-wishes",
@@ -19363,6 +19423,8 @@
       "g:verb-infinitive",
       "l:pasar",
       "l:poder",
+      "l:preguntar",
+      "p:preguntar-pedir",
       "p:que-subj-deseo"
     ],
     "targets": [],
@@ -19422,22 +19484,26 @@
   },
   {
     "id": "u51-0766",
-    "es": "Quien tuviese un mes de prueba como Vale, estaría contento.",
-    "en": "Whoever had a trial month like Vale would be happy.",
-    "accept": [],
+    "es": "Cualquiera estaría contento si le ofreciesen un mes de prueba como a Vale.",
+    "en": "Anyone would be happy if they were offered a trial month like Vale.",
+    "accept": [
+      "Cualquiera estaría contento si le ofrecieran un mes de prueba como a Vale."
+    ],
     "acceptEn": [],
     "requires": [
+      "g:cada-cualquier",
       "g:conditional",
       "g:estar-location-states",
       "g:gender-articles",
-      "g:relatives-donde-lo-que",
+      "g:indirect-objects",
+      "g:le-doubling",
       "g:se-form-recognition",
-      "g:subj-free-relatives",
+      "g:si-hypothetical",
       "l:contento",
       "l:estar",
       "l:mes",
-      "l:prueba",
-      "l:tener"
+      "l:ofrecer",
+      "l:prueba"
     ],
     "targets": [
       "g:se-form-recognition"
@@ -19475,7 +19541,9 @@
     "id": "u51-0768",
     "es": "Vale pidió que Tomás no se sintiese culpable.",
     "en": "Vale asked Tomás not to feel guilty.",
-    "accept": [],
+    "accept": [
+      "Vale pidió que Tomás no se sintiera culpable."
+    ],
     "acceptEn": [],
     "requires": [
       "c:no-se",
@@ -19500,7 +19568,9 @@
     "id": "u51-0769",
     "es": "Tomás quería que Vale decidiese sin presión.",
     "en": "Tomás wanted Vale to decide without pressure.",
-    "accept": [],
+    "accept": [
+      "Tomás quería que Vale decidiera sin presión."
+    ],
     "acceptEn": [],
     "requires": [
       "g:imperfect-habitual",
@@ -19523,7 +19593,9 @@
     "id": "u51-0770",
     "es": "Si Vale tuviese miedo, no habría aceptado.",
     "en": "If Vale were afraid, she wouldn't have accepted.",
-    "accept": [],
+    "accept": [
+      "Si Vale tuviera miedo, no habría aceptado."
+    ],
     "acceptEn": [],
     "requires": [
       "g:conditional-perfect",
@@ -19546,7 +19618,9 @@
     "id": "u51-0771",
     "es": "Lucía deseaba que Vale pudiese probar una vida nueva.",
     "en": "Lucía hoped Vale could try a new life.",
-    "accept": [],
+    "accept": [
+      "Lucía deseaba que Vale pudiera probar una vida nueva."
+    ],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
@@ -19573,20 +19647,22 @@
   },
   {
     "id": "u51-0772",
-    "es": "Dejé la bicicleta en el carril de la derecha y se la llevaron.",
-    "en": "I left my bike in the right lane and they took it.",
+    "es": "Por el carril de la derecha van los buses, así que ten cuidado.",
+    "en": "The buses use the right lane, so be careful. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
+      "g:cause-result",
+      "g:commands-tu",
       "g:gender-articles",
-      "g:preterite-ar",
-      "g:reflexive-routine",
-      "l:bicicleta",
+      "g:ir-a-plans",
+      "g:por-para-1",
+      "l:bus",
       "l:carril",
-      "l:dejar",
+      "l:cuidado",
       "l:derecha",
-      "l:llevarse"
+      "l:ir",
+      "l:tener"
     ],
     "targets": [
       "l:carril"
@@ -19727,18 +19803,21 @@
   },
   {
     "id": "u51-0778",
-    "es": "Vale quiere librar a su madre de las preocupaciones.",
-    "en": "Vale wants to free her mother from worries.",
+    "es": "Un buen gato puede librar la cocina de ratones.",
+    "en": "A good cat can rid the kitchen of mice.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:stem-boot",
+      "l:buen",
+      "l:cocina",
+      "l:gato",
       "l:librar",
-      "l:madre",
-      "l:preocupación",
-      "l:querer",
-      "p:possessives-basic"
+      "l:poder",
+      "l:ratón",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "l:librar"
@@ -19893,8 +19972,8 @@
   },
   {
     "id": "u51-0785",
-    "es": "Una rama de olivo cuelga sobre la puerta del café.",
-    "en": "An olive branch hangs over the café's door.",
+    "es": "Una rama de eucalipto cuelga sobre la puerta del café.",
+    "en": "A eucalyptus branch hangs over the café's door.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19902,7 +19981,6 @@
       "g:stem-boot",
       "l:café",
       "l:colgar",
-      "l:olivo",
       "l:puerta",
       "l:rama"
     ],
@@ -19945,7 +20023,9 @@
     "id": "u51-0787",
     "es": "Si fuese posible, Vale se llevaría la cocina entera a Medellín.",
     "en": "If it were possible, Vale would take the whole kitchen to Medellín.",
-    "accept": [],
+    "accept": [
+      "Si fuera posible, Vale se llevaría la cocina entera a Medellín."
+    ],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
@@ -19973,7 +20053,9 @@
     "id": "u51-0788",
     "es": "Tomás tenía miedo de que Vale no volviese.",
     "en": "Tomás was afraid that Vale wouldn't come back.",
-    "accept": [],
+    "accept": [
+      "Tomás tenía miedo de que Vale no volviera."
+    ],
     "acceptEn": [],
     "requires": [
       "g:imperfect-states",
@@ -20000,7 +20082,9 @@
     "id": "u51-0789",
     "es": "Ojalá pudiésemos hablar con Rosa una vez más.",
     "en": "If only we could talk to Rosa once more.",
-    "accept": [],
+    "accept": [
+      "Ojalá pudiéramos hablar con Rosa una vez más."
+    ],
     "acceptEn": [],
     "requires": [
       "c:ojala",
@@ -20021,23 +20105,30 @@
   },
   {
     "id": "u51-0790",
-    "es": "Lucía preguntó si pudiese probar la receta del pan.",
-    "en": "Lucía asked if she could try the bread recipe.",
-    "accept": [],
+    "es": "Lucía preguntó si Vale le dejaría probar la receta del pan, aunque fuese una vez.",
+    "en": "Lucía asked whether Vale would let her try the bread recipe, even just once.",
+    "accept": [
+      "Lucía preguntó si Vale le dejaría probar la receta del pan, aunque fuera una vez."
+    ],
     "acceptEn": [],
     "requires": [
+      "c:una-vez",
+      "g:conditional",
       "g:gender-articles",
+      "g:indirect-objects",
       "g:indirect-questions",
       "g:preterite-ar",
       "g:se-form-recognition",
-      "g:si-hypothetical",
-      "g:verb-infinitive",
+      "g:ser-identity",
+      "g:subj-concessive",
+      "l:dejar",
       "l:lucía",
       "l:pan",
-      "l:poder",
       "l:preguntar",
       "l:probarse",
       "l:receta",
+      "l:ser",
+      "l:vez",
       "p:preguntar-pedir"
     ],
     "targets": [
@@ -20052,7 +20143,9 @@
     "id": "u51-0791",
     "es": "Aunque pudiese, no vendería el café.",
     "en": "Even if I could, I wouldn't sell the café.",
-    "accept": [],
+    "accept": [
+      "Aunque pudiera, no vendería el café."
+    ],
     "acceptEn": [],
     "requires": [
       "g:conditional",
@@ -20075,7 +20168,9 @@
     "id": "u51-0792",
     "es": "Se hizo tarde y los amigos de Lucía no querían que terminase la noche.",
     "en": "It got late and Lucía's friends didn't want the night to end.",
-    "accept": [],
+    "accept": [
+      "Se hizo tarde y los amigos de Lucía no querían que terminara la noche."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -20106,7 +20201,9 @@
     "id": "u51-0793",
     "es": "Fue Hernando quien me pidió que escribiese esta carta.",
     "en": "It was Hernando who asked me to write this letter.",
-    "accept": [],
+    "accept": [
+      "Fue Hernando quien me pidió que escribiera esta carta."
+    ],
     "acceptEn": [],
     "requires": [
       "g:preterite-ser-ir-hacer",
@@ -20383,7 +20480,8 @@
     "es": "Sentaos aquí, hay sitio.\nGracias, qué amable.",
     "en": "Sit here, there's room.\nThanks, how kind.",
     "accept": [
-      "Siéntense aquí, hay sitio.\\nGracias, qué amable."
+      "Siéntense aquí, hay puesto.\nGracias, qué amable.",
+      "Siéntense aquí, hay sitio.\nGracias, qué amable."
     ],
     "acceptEn": [],
     "requires": [
@@ -20411,22 +20509,23 @@
   },
   {
     "id": "u51-0804",
-    "es": "¿Os gusta la música?\nSí, pero preferís el silencio por la mañana.",
-    "en": "Do you all like the music?\nYes, but you all prefer silence in the morning.",
+    "es": "¿Queréis que baje la música?\nSí, por la mañana preferimos el silencio.",
+    "en": "Do you all want me to turn the music down?\nYes, in the morning we prefer silence.",
     "accept": [
-      "¿Les gusta la música?\\nSí, pero prefieren el silencio por la mañana."
+      "¿Quieren que baje la música?\nSí, por la mañana preferimos el silencio."
     ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:gustar-basic",
-      "g:present-ar",
       "g:present-er-ir",
+      "g:subj-wanting",
+      "g:that-clauses",
       "g:vosotros-recognition",
-      "l:gustar",
+      "l:bajar",
       "l:mañana",
       "l:música",
       "l:preferir",
+      "l:querer",
       "l:silencio",
       "p:por-la-manana",
       "p:prefieres-x-o-y"
@@ -20471,25 +20570,25 @@
   },
   {
     "id": "u51-0806",
-    "es": "¿Habéis dormido bien?\nSí, y queréis un desayuno enorme, ¿verdad?",
-    "en": "Have you all slept well? (Spain)\nYes, and you all want a huge breakfast, right?",
+    "es": "¿Habéis dormido bien? ¿Queréis desayunar?\nSí, y queremos un desayuno enorme.",
+    "en": "Have you all slept well? Do you want breakfast? (Spain)\nYes, and we want a huge breakfast.",
     "accept": [
-      "¿Durmieron bien?\\nSí, y quieren un desayuno enorme, ¿verdad?"
+      "¿Durmieron bien? ¿Quieren desayunar?\nSí, y queremos un desayuno enorme."
     ],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
-      "c:no-cierto",
       "g:gender-articles",
       "g:perfecto-experience",
       "g:present-er-ir",
+      "g:verb-infinitive",
       "g:vosotros-recognition",
       "l:bien",
+      "l:desayunar",
       "l:desayuno",
       "l:dormir",
       "l:enorme",
-      "l:querer",
-      "l:verdad"
+      "l:querer"
     ],
     "targets": [
       "g:vosotros-recognition"
@@ -20626,17 +20725,16 @@
   },
   {
     "id": "u51-0811",
-    "es": "¿Por qué reís?\nPorque Simón dice vale con acento de Madrid.",
-    "en": "Why are you all laughing?\nBecause Simón says vale with a Madrid accent.",
+    "es": "¿De qué os reís?\nDe Simón, que dice vale con acento de Madrid.",
+    "en": "What are you all laughing at?\nAt Simón, who says vale with a Madrid accent.",
     "accept": [
-      "¿Por qué ríen?\\nPorque Simón dice vale con acento de Madrid."
+      "¿De qué se ríen?\nDe Simón, que dice vale con acento de Madrid."
     ],
     "acceptEn": [],
     "requires": [
-      "c:porque",
       "c:vale-spain",
-      "g:cause-result",
       "g:present-er-ir",
+      "g:relative-que",
       "g:stem-e-i",
       "g:vosotros-recognition",
       "l:acento",
@@ -20644,6 +20742,7 @@
       "l:qué",
       "l:reír",
       "l:valer",
+      "p:me-te-nos-objects",
       "p:prep-questions-basic"
     ],
     "targets": [
@@ -20658,27 +20757,24 @@
   },
   {
     "id": "u51-0812",
-    "es": "¿Habéis visto el tranvía o queréis subir?\nYa lo vimos, pero preferimos caminar.",
-    "en": "Have you all seen the tram or do you want to get on?\nWe already saw it, but we'd rather walk.",
+    "es": "¿Tenéis tranvía en Madrid?\nSolo uno pequeño. El bonito es el de Lisboa.",
+    "en": "Do you all have a tram in Madrid?\nOnly a small one. The pretty one is Lisbon's.",
     "accept": [
-      "¿Han visto el tranvía o quieren subir?\\nYa lo vimos, pero preferimos caminar."
+      "¿Tienen tranvía en Madrid?\nSolo uno pequeño. El bonito es el de Lisboa."
     ],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
       "g:gender-articles",
-      "g:perfecto-experience",
       "g:present-er-ir",
-      "g:preterite-er-ir",
-      "g:verb-infinitive",
       "g:vosotros-recognition",
-      "l:caminar",
-      "l:preferir",
-      "l:querer",
-      "l:subir",
+      "l:bonito",
+      "l:e",
+      "l:pequeño",
+      "l:tener",
       "l:tranvía",
-      "l:ver",
-      "p:prefieres-x-o-y"
+      "l:unir",
+      "p:los-de-la-camiseta",
+      "p:sobre-todo-solo"
     ],
     "targets": [
       "g:vosotros-recognition",
@@ -20751,26 +20847,25 @@
   },
   {
     "id": "u51-0815",
-    "es": "¿De dónde procede tu acento?\nProcede de Toronto, aunque no lo creas.",
-    "en": "Where does your accent come from?\nIt comes from Toronto, believe it or not.",
+    "es": "¿De dónde procede la palabra chévere?\nNadie lo sabe con seguridad.",
+    "en": "Where does the word chévere come from?\nNobody knows for sure.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:aunque-indicative",
       "g:direct-objects",
-      "g:present-ar",
+      "g:gender-articles",
       "g:present-er-ir",
-      "l:acento",
-      "l:crear",
+      "l:chévere",
       "l:dónde",
+      "l:palabra",
       "l:proceder",
-      "p:possessives-basic",
+      "l:saber",
+      "l:seguridad",
       "p:prep-questions-basic",
-      "p:proceder-de",
-      "p:question-word-order"
+      "p:question-word-order",
+      "p:saber-conocer"
     ],
     "targets": [
-      "l:acento",
       "l:proceder",
       "p:proceder-de"
     ],
@@ -20887,22 +20982,18 @@
   },
   {
     "id": "u51-0819",
-    "es": "¿Es lo mismo carro que auto?\nPara un hispanohablante, sí, pero cambia según el país.",
-    "en": "Is carro the same as auto?\nFor a Spanish speaker, yes, but it changes depending on the country.",
+    "es": "¿Todos los hispanohablantes dicen celular?\nNo, en España dicen móvil.",
+    "en": "Do all Spanish speakers say celular?\nNo, in Spain they say móvil.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:es-lo-mismo",
-      "c:segun",
+      "g:adjective-agreement",
       "g:gender-articles",
-      "g:present-ar",
-      "l:auto",
-      "l:cambiar",
-      "l:carro",
+      "g:stem-e-i",
+      "l:celular",
+      "l:decir",
       "l:hispanohablante",
-      "l:país",
-      "l:ser",
-      "p:para-inf"
+      "l:móvil"
     ],
     "targets": [
       "l:hispanohablante"
@@ -20914,21 +21005,21 @@
   },
   {
     "id": "u51-0820",
-    "es": "¿Qué dialecto hablan en la costa?\nUno muy rápido y muy cantado.",
-    "en": "What dialect do they speak on the coast?\nA very fast and sing-song one.",
+    "es": "¿Entiendes el dialecto de la costa?\nCasi todo, menos cuando hablan rápido.",
+    "en": "Do you understand the coastal dialect?\nAlmost all of it, except when they talk fast.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-entiendo",
       "g:gender-articles",
       "g:present-ar",
-      "g:questions",
-      "l:cantar",
+      "g:stem-boot",
       "l:costa",
       "l:dialecto",
+      "l:entender",
       "l:hablar",
-      "l:qué",
       "l:rápido",
-      "p:quantifiers-basic"
+      "p:cuando-basic"
     ],
     "targets": [
       "l:dialecto"
@@ -21106,7 +21197,7 @@
   },
   {
     "id": "u51-0827",
-    "es": "¿Dibujaste tú este mapa?\nSí, con el pozo del patio al centro.",
+    "es": "¿Dibujaste tú este mapa?\nSí, con el pozo del patio en el centro.",
     "en": "Did you draw this map?\nYes, with the yard well in the middle.",
     "accept": [],
     "acceptEn": [],
@@ -21261,18 +21352,24 @@
   },
   {
     "id": "u51-0833",
-    "es": "¿Marchas hoy a Medellín?\nSí, a las seis de la mañana.",
-    "en": "Are you leaving for Medellín today?\nYes, at six in the morning.",
+    "es": "¿Cómo marcha todo en Medellín?\nBien, aunque la cocina es enorme.",
+    "en": "How's everything going in Medellín?\nFine, though the kitchen is huge.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:bien-y-tu",
+      "g:aunque-indicative",
       "g:gender-articles",
       "g:present-ar",
-      "l:hoy",
+      "g:questions",
+      "g:ser-identity",
+      "l:bien",
+      "l:cocina",
+      "l:cómo",
+      "l:enorme",
       "l:marchar",
-      "l:mañana",
-      "p:por-la-manana",
-      "p:telling-time"
+      "l:ser",
+      "p:question-word-order"
     ],
     "targets": [
       "l:marchar"
@@ -21284,20 +21381,19 @@
   },
   {
     "id": "u51-0834",
-    "es": "¿Quién quiere librar al café de Altamira?\nNadie, solo nosotros.",
-    "en": "Who wants to free the café from Altamira?\nNobody, only us.",
+    "es": "¿Quién va a librar al café de Altamira?\nNosotros, ¿quién más?",
+    "en": "Who's going to save the café from Altamira?\nUs, who else?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:ir-a-plans",
       "g:questions",
-      "g:stem-boot",
       "l:café",
+      "l:ir",
       "l:librar",
-      "l:querer",
       "l:quién",
-      "p:question-word-order",
-      "p:sobre-todo-solo"
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "l:librar"
@@ -21661,20 +21757,21 @@
   },
   {
     "id": "u51-0849",
-    "es": "¿Dónde está el rastro de la receta perdida?",
-    "en": "Where is the trail of the lost recipe?",
+    "es": "¿Por qué hay un rastro de barro desde la puerta hasta la cocina?",
+    "en": "Why is there a trail of mud from the door to the kitchen?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:donde-esta",
-      "g:estar-location-states",
+      "c:hay",
       "g:gender-articles",
-      "l:dónde",
-      "l:estar",
-      "l:perder",
+      "g:hay-vs-esta",
+      "l:barro",
+      "l:cocina",
+      "l:puerta",
+      "l:qué",
       "l:rastro",
-      "l:receta",
-      "p:question-word-order"
+      "p:desde-hasta",
+      "p:prep-questions-basic"
     ],
     "targets": [
       "l:rastro"
@@ -21712,7 +21809,7 @@
   {
     "id": "u51-0851",
     "es": "¿Dónde guardaste la capa de Rosa?",
-    "en": "Where did you keep Rosa's cape? (to a friend)",
+    "en": "Where did you put Rosa's cape away? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21834,7 +21931,9 @@
     "id": "u51-0856",
     "es": "¿Habrías preferido que Vale no se marchase?",
     "en": "Would you have preferred that Vale hadn't left? (to a friend)",
-    "accept": [],
+    "accept": [
+      "¿Habrías preferido que Vale no se marchara?"
+    ],
     "acceptEn": [],
     "requires": [
       "c:no-se",

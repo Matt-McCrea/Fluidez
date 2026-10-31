@@ -124,7 +124,8 @@
       "prompt": "Say: I still haven't got used to the noise.",
       "answer": "Todavía no me acostumbro al ruido.",
       "accept": [
-        "No me acostumbro al ruido todavía."
+        "No me acostumbro al ruido todavía.",
+        "Aún no me acostumbro al ruido."
       ],
       "why": "*Me acostumbro* is the *yo* form, followed by *a* + *el* = *al*."
     },
@@ -132,7 +133,9 @@
       "prompt": "Say: Tomás adapted quickly to the city.",
       "answer": "Tomás se adaptó rápido a la ciudad.",
       "accept": [
-        "Tomás se adaptó a la ciudad rápido."
+        "Tomás se adaptó a la ciudad rápido.",
+        "Tomás se adaptó rápidamente a la ciudad.",
+        "Tomás se adaptó a la ciudad rápidamente."
       ],
       "why": "*Se adaptó* is reflexive, and *a la* comes before the thing he adapted to."
     },
