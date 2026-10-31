@@ -4,3 +4,6 @@ content/_queue/*.lock
 tools/vocab/data/
 test-results
 playwright-report
+
+# playtest browser profiles and screenshots
+tools/playtest/.runs/
