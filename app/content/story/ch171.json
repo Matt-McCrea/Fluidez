@@ -1,0 +1,375 @@
+{
+  "id": "ch171",
+  "unit": "u51",
+  "title": "Guía de cultura",
+  "text": "Hernando lavó la Burra a las seis y se puso la gorra de los domingos.\nHernando: Hoy no soy taxista. Soy guía de cultura colombiana.\nLos tres españoles subieron atrás, y Tomás adelante, de traductor.\nPilar: ¿Traductor de qué, si hablamos el mismo idioma?\nHernando: Eso dicen todos, hasta que piden un tinto en Madrid.\nEn la Séptima, Hernando señaló dos líneas de hierro viejo en la calle.\nHernando: Por aquí pasaba el tranvía. Mi papá manejó el tranvía hasta el cuarenta y ocho. Yo heredé el oficio.\nEn la Caracas, la Burra se metió en el carril de los buses rojos. Un policía la paró.\nPolicía: Señor, ese carril es solo para buses.\nHernando: La Burra es casi un bus, mi capitán. Hoy lleva cultura internacional.\nEl policía miró a Simón y los dejó ir.\nÁlvaro, hijo de un marinero de Vigo, preguntó por el primo de Taganga.\nTomás: Yesid también es marinero. Pero él no dice barca. Dice lancha.\nÁlvaro: Mi padre tenía una barca pequeña, y la quería más que a mi madre.\nHernando: Entre marineros no hay diferencia, mijo. Solo que el de Taganga no sabe lo que es el frío.\nAlmorzaron ajiaco en la plaza de mercado.\nLucía: Somos casi 600 millones de hispanohablantes, y cada país tiene su variedad. Mira esta expresión: tú dices «¡qué pena!» cuando yo diría «lo siento».\nTomás: Yo antes pensaba que la variedad de Bogotá era el español de verdad, y la de ustedes un dialecto.\nÁlvaro: ¿Un dialecto? ¡Anda ya! Nosotros somos el original.\nHernando: El original lo hablaba mi mamá, y no lo entendía nadie.\nPilar: Yo veo más semejanza que diferencia. El tinto, el pan, las abuelas. La semejanza está en la cocina.\nTomás oyó su propia voz. Decía «mijo», «parce» y «¡qué pena con ustedes!» sin pensar. Tenía el acento de Rosa.\nLucía: ¿Ves? Para los hispanohablantes de Madrid, tú tienes acento colombiano total. Esa expresión tuya lo dice todo.\nLucía: La recepcionista del hotel nos dijo que no fuéramos a La Candelaria, porque pronto va a cambiar todo. Y nos regaló esto.\nEra un folleto de Grupo Altamira, con un hotel de lujo dibujado donde estaba el café.\nHernando: Esa recepcionista está muy bien informada. Demasiado.\nPor la tarde, la madrileña le pidió el celular a Tomás y llamó a Medellín. Esta vez Vale contestó.\nLucía: Aquí te echan muchísimo de menos.\nVale: ¿Me echan de menos? En Colombia decimos que me extrañan.\nLucía: Pues las dos cosas. Sobre todo el pájaro.\nSe fue al patio y volvió muy seria.\nLucía: Me ha dicho que le han ofrecido un mes de prueba. Y que contesta el jueves.",
+  "gloss": [
+    {
+      "es": "Lucía",
+      "en": "Lucía (the food blogger from Madrid)"
+    },
+    {
+      "es": "Álvaro",
+      "en": "Álvaro (Lucía's friend, from Vigo in Galicia)"
+    },
+    {
+      "es": "Pilar",
+      "en": "Pilar (Lucía's friend)"
+    },
+    {
+      "es": "madrileña",
+      "en": "woman from Madrid"
+    },
+    {
+      "es": "de traductor",
+      "en": "as the translator"
+    },
+    {
+      "es": "dos líneas de hierro viejo",
+      "en": "two old iron rails"
+    },
+    {
+      "es": "Yo heredé el oficio",
+      "en": "I inherited the trade"
+    },
+    {
+      "es": "la Caracas",
+      "en": "Avenida Caracas, a main avenue with bus lanes"
+    },
+    {
+      "es": "mi capitán",
+      "en": "captain (a friendly way to address a police officer)"
+    },
+    {
+      "es": "lancha",
+      "en": "motorboat"
+    },
+    {
+      "es": "el de Taganga no sabe lo que es el frío",
+      "en": "the one from Taganga doesn't know what cold is"
+    },
+    {
+      "es": "¡Anda ya!",
+      "en": "Oh, come off it (Spain)"
+    },
+    {
+      "es": "Nosotros somos el original",
+      "en": "We're the original"
+    },
+    {
+      "es": "El original lo hablaba mi mamá, y no lo entendía nadie",
+      "en": "My mum spoke the original, and nobody understood it"
+    },
+    {
+      "es": "acento colombiano total",
+      "en": "a totally Colombian accent"
+    },
+    {
+      "es": "que no fuéramos a La Candelaria",
+      "en": "not to go to La Candelaria"
+    },
+    {
+      "es": "Aquí te echan muchísimo de menos",
+      "en": "They miss you so much here (Spain)"
+    },
+    {
+      "es": "Me ha dicho que le han ofrecido un mes de prueba",
+      "en": "She told me she's been offered a trial month"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does Hernando say about the tram on Séptima?",
+      "options": [
+        "He drove it as a young man",
+        "His father drove it until 1948",
+        "It still runs on Sundays",
+        "Altamira wants to bring it back"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why does the policeman stop the Burra?",
+      "options": [
+        "It is driving in the bus lane",
+        "It has no lights",
+        "Simón is shouting",
+        "Hernando has no licence"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Tomás notice about his own Spanish?",
+      "options": [
+        "He still thinks in English",
+        "He speaks like someone from Madrid",
+        "He says mijo, parce and qué pena without thinking, with Rosa's accent",
+        "He cannot understand Álvaro"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Why is the hotel receptionist's advice worrying?",
+      "options": [
+        "She was rude to Lucía",
+        "She gave them a map with the wrong streets",
+        "She works for Hernando's daughter",
+        "She handed out an Altamira leaflet with a hotel where the café is"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "¿Qué le han ofrecido a Vale?",
+      "options": [
+        "Un mes de prueba en Medellín",
+        "Un viaje a Madrid",
+        "Un trabajo en el hotel",
+        "Una barca"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Vale has been offered a trial month in Medellín, and she told Lucía before she told Tomás. She answers on Thursday, and Tomás has to decide whether to call her first.",
+  "rereadQuestions": [
+    {
+      "q": "What does Álvaro's father love more than his wife, according to Álvaro?",
+      "options": [
+        "His small boat",
+        "His dog",
+        "Football",
+        "The sea air"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Where does Pilar say the similarity between their countries lies?",
+      "options": [
+        "In the music",
+        "In the kitchen",
+        "In the churches",
+        "In the accents"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does Vale say Colombians say instead of echar de menos?",
+      "options": [
+        "Me duele",
+        "Extrañar",
+        "Querer",
+        "Recordar"
+      ],
+      "answer": 1
+    }
+  ],
+  "requires": [
+    "c:anda-spain",
+    "c:bien-y-tu",
+    "c:en-serio",
+    "c:era",
+    "c:hay",
+    "c:lo-siento-pero-no-puedo",
+    "c:oye-mira",
+    "c:porque",
+    "c:pues",
+    "c:que-pena",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:cada-cualquier",
+    "g:cause-result",
+    "g:comparatives",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:perfecto-experience",
+    "g:por-para-1",
+    "g:possessives-stressed",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:quantifiers",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:reported-commands-past",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verbs-of-change",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cuando-basic",
+    "p:days-el-lunes",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:extranar",
+    "p:focus-adverbs",
+    "p:ir-a-venir-de-place",
+    "p:lavarse-las-manos",
+    "p:los-de-la-camiseta",
+    "p:masculine-plural-mixed",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:pensar-en",
+    "p:personal-a",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:ser-profession-no-article",
+    "p:sobre-todo",
+    "p:sobre-todo-solo",
+    "p:telling-time",
+    "p:viejo-antiguo-mayor",
+    "p:yo-diria-que"
+  ],
+  "lexemes": [
+    "l:abuela",
+    "l:acento",
+    "l:adelante",
+    "l:ajiaco",
+    "l:almorzar",
+    "l:andar",
+    "l:antes",
+    "l:aquí",
+    "l:atrás",
+    "l:barca",
+    "l:bien",
+    "l:bus",
+    "l:café",
+    "l:calle",
+    "l:cambiar",
+    "l:capitán",
+    "l:carril",
+    "l:celular",
+    "l:cocina",
+    "l:colombiano",
+    "l:contestar",
+    "l:cosa",
+    "l:cultura",
+    "l:decir",
+    "l:dejar",
+    "l:dialecto",
+    "l:dibujar",
+    "l:diferencia",
+    "l:diferenciar",
+    "l:domingo",
+    "l:echar",
+    "l:entender",
+    "l:español",
+    "l:estar",
+    "l:expresión",
+    "l:extrañar",
+    "l:folleto",
+    "l:frío",
+    "l:gorra",
+    "l:guiar",
+    "l:hablar",
+    "l:heredar",
+    "l:hierro",
+    "l:hijo",
+    "l:hispanohablante",
+    "l:hotel",
+    "l:hoy",
+    "l:idioma",
+    "l:informar",
+    "l:internacional",
+    "l:ir",
+    "l:irse",
+    "l:jueves",
+    "l:lancha",
+    "l:lavar",
+    "l:llamar",
+    "l:llevar",
+    "l:lucía",
+    "l:lujo",
+    "l:línea",
+    "l:madre",
+    "l:madrileño",
+    "l:mamá",
+    "l:manejar",
+    "l:marinero",
+    "l:mercado",
+    "l:mes",
+    "l:meterse",
+    "l:mijo",
+    "l:mirar",
+    "l:oficio",
+    "l:ofrecer",
+    "l:original",
+    "l:oír",
+    "l:padre",
+    "l:pan",
+    "l:papá",
+    "l:parar",
+    "l:parce",
+    "l:pasar",
+    "l:patio",
+    "l:país",
+    "l:pedir",
+    "l:pena",
+    "l:pensar",
+    "l:pequeño",
+    "l:pilar",
+    "l:plaza",
+    "l:policía",
+    "l:ponerse",
+    "l:preguntar",
+    "l:primo",
+    "l:pronto",
+    "l:propio",
+    "l:prueba",
+    "l:pájaro",
+    "l:querer",
+    "l:qué",
+    "l:recepcionista",
+    "l:regalar",
+    "l:rojo",
+    "l:saber",
+    "l:semejanza",
+    "l:sentir",
+    "l:ser",
+    "l:serio",
+    "l:señalar",
+    "l:señor",
+    "l:subir",
+    "l:tarde",
+    "l:taxista",
+    "l:tener",
+    "l:tinto",
+    "l:total",
+    "l:traductor",
+    "l:tranvía",
+    "l:variedad",
+    "l:ver",
+    "l:verdad",
+    "l:vez",
+    "l:viejo",
+    "l:volver",
+    "l:voz",
+    "l:álvaro"
+  ]
+}

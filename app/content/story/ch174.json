@@ -1,0 +1,359 @@
+{
+  "id": "ch174",
+  "unit": "u51",
+  "title": "La cómoda se queda",
+  "text": "El cuarto de Vale cabía en tres cajas y una maleta. Lo único que no cabía era la cómoda de Rosa.\nVale: La cómoda se queda. Era de ella, y ahora es de la casa.\nEn el último cajón había un delantal viejo, con las letras «V. O.» bordadas en azul. Era el primer delantal que le dio Rosa.\nVale lo colgó al lado del horno.\nVale: Que alguien lo use mientras no estoy. Pero que no lo queme.\nAbajo, los españoles esperaban con las mochilas.\nLucía: Nos marchamos a Cartagena a las diez.\nHernando: ¿Se marchan? Aquí uno se va. Marcharse suena a desfile militar.\nMariana llegó sin dormir. Había buscado toda la noche la cuenta del comentario.\nMariana: La abrieron el viernes, desde una red de Chapinero. La misma red de una oficina de Grupo Altamira. No es una prueba, pero es una pista.\nLucía: Si lo hubiese sabido, habría escrito un artículo mucho más duro.\nMariana: No es necesario. Mire.\nDebajo había 300 respuestas, de Madrid, de Lima y de Toronto. «Ese café no se toca». «Voy en enero». «Guárdenme un pandebono».\nMariana: Querían que tuviésemos miedo. Y ahora el café tiene amigos en cuatro países.\nSimón: ¡Miedo no! ¡Miedo no, parce!\nLucía le compró a Gloria miel para el viaje y le regaló a Tomás una página de su cuaderno: el pandebono enfermo del primer día, dibujado con cariño.\nLucía: Me voy satisfecha. He comido bien, he llorado y he aprendido qué es un man.\nPilar: Y ella nunca se va satisfecha de ningún sitio.\nDesde la esquina de la Séptima, Lucía dijo adiós dos veces.\nA las seis llegó la Burra por las cajas.\nVale abrazó a todos y buscó a Simón. Estaba en la rama más alta del árbol del patio, y no quería bajar.\nVale: Simón, es solo un mes.\nSimón no dijo nada.\nVale le dejó en la mesa una galleta de miel, de las que hacía Rosa.\nVale: Las recetas están en el cajón. Y no le grites al horno.\nTomás: Te va a ir muy bien en Medellín.\nVale: Ya lo sé. Eso es lo que me da miedo.\nLa Burra dobló la esquina.\nEsa noche el café tenía las mismas mesas, las mismas sillas y las mismas paredes. Pero era enorme. Tomás limpió dos veces el mismo piso, para hacer ruido.\nA las nueve, Simón bajó de la rama y probó la galleta.\nA las diez tocaron la puerta verde. Era Hernando, con una caja llena de cuadernos viejos.\nHernando: Mijo, usted que ahora escribe tan bonito. Aquí hay cincuenta años de Bogotá vistos desde un taxi. Antes de que se me olviden, quiero que los escribamos juntos.",
+  "gloss": [
+    {
+      "es": "Lucía",
+      "en": "Lucía (the food blogger from Madrid)"
+    },
+    {
+      "es": "Pilar",
+      "en": "Pilar (Lucía's friend)"
+    },
+    {
+      "es": "delantal",
+      "en": "apron"
+    },
+    {
+      "es": "con las letras «V. O.» bordadas en azul",
+      "en": "with the letters V. O. embroidered in blue"
+    },
+    {
+      "es": "Que alguien lo use mientras no estoy",
+      "en": "Somebody should use it while I'm away"
+    },
+    {
+      "es": "Nos marchamos a Cartagena",
+      "en": "We're off to Cartagena (Spain says marcharse for leaving)"
+    },
+    {
+      "es": "Marcharse suena a desfile militar",
+      "en": "Marcharse sounds like a military parade"
+    },
+    {
+      "es": "desde una red de Chapinero",
+      "en": "from a network in Chapinero (a Bogotá neighbourhood)"
+    },
+    {
+      "es": "Si lo hubiese sabido, habría escrito un artículo mucho más duro",
+      "en": "If I'd known, I'd have written a much tougher article"
+    },
+    {
+      "es": "Ese café no se toca",
+      "en": "Hands off that café"
+    },
+    {
+      "es": "Guárdenme un pandebono",
+      "en": "Save me a pandebono"
+    },
+    {
+      "es": "Querían que tuviésemos miedo",
+      "en": "They wanted us to be scared"
+    },
+    {
+      "es": "He comido bien, he llorado y he aprendido qué es un man",
+      "en": "I've eaten well, I've cried and I've learnt what a man is"
+    },
+    {
+      "es": "Ya lo sé. Eso es lo que me da miedo",
+      "en": "I know. That's what scares me"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Vale leave Rosa's chest of drawers behind?",
+      "options": [
+        "It is too heavy for the Burra",
+        "It was Rosa's, and now it belongs to the house",
+        "Correa does not want it",
+        "Tomás asks her to"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What has Mariana found out about the account that left the warning?",
+      "options": [
+        "It belongs to Lucía's friend",
+        "It was opened in Madrid",
+        "It was opened on a network shared with an Altamira office",
+        "It was a joke by Gloria"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "¿Cómo se va Lucía de Bogotá?",
+      "options": [
+        "Muy enfadada",
+        "Satisfecha",
+        "Enferma",
+        "Sin despedirse"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does Vale mean when she says that a good result is what scares her?",
+      "options": [
+        "If Medellín works out, she may not come back",
+        "She is afraid of the bus",
+        "She thinks Correa will cheat her",
+        "She does not trust Tomás with the oven"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Tomás clean the same floor twice?",
+      "options": [
+        "Gloria tells him to",
+        "The floor is very dirty",
+        "Lucía is coming back",
+        "To make some noise in the empty café"
+      ],
+      "answer": 3
+    }
+  ],
+  "hook": "Vale is gone for a month, and the café has never felt so big. Hernando has brought fifty years of Bogotá in a box of old notebooks, and he wants Tomás to help him turn them into a book.",
+  "rereadQuestions": [
+    {
+      "q": "What does Vale hang next to the oven?",
+      "options": [
+        "Rosa's photo",
+        "Her first apron from Rosa",
+        "A list of recipes",
+        "Lucía's drawing"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does Lucía give Tomás before she leaves?",
+      "options": [
+        "A jar of honey",
+        "A ticket to Madrid",
+        "A page from her notebook with the sick pandebono drawn on it",
+        "Her phone number"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Where is Simón when Vale tries to say goodbye?",
+      "options": [
+        "On the highest branch of the tree in the patio",
+        "In the kitchen",
+        "On Hernando's shoulder",
+        "In the Burra"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:era",
+    "c:hay",
+    "c:la-cuenta",
+    "c:me-regala",
+    "c:no-se",
+    "c:quiero",
+    "c:tienes",
+    "c:voy-vas",
+    "g:adjective-agreement",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:conditional-perfect",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indefinites",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:lo-adjective",
+    "g:lo-que-intensity",
+    "g:negation-words",
+    "g:negative-commands",
+    "g:perfecto-experience",
+    "g:pluperfect",
+    "g:pluperfect-subj",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:relatives-prepositions",
+    "g:se-accidental",
+    "g:se-form-recognition",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-hypothetical",
+    "g:si-past-unreal",
+    "g:stem-boot",
+    "g:subj-past-triggers",
+    "g:subj-purpose-full",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:caber",
+    "p:cerca-de",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:generic-tu-uno",
+    "p:indefinites-basic",
+    "p:me-da-miedo",
+    "p:me-da-miedo-que",
+    "p:me-te-nos-objects",
+    "p:medir-pesar-caber",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:personal-a",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:sobre-todo-solo",
+    "p:telling-time",
+    "p:tener-hambre",
+    "p:todos-los-dias",
+    "p:viejo-antiguo-mayor"
+  ],
+  "lexemes": [
+    "l:abajo",
+    "l:abrazar",
+    "l:abrir",
+    "l:ahora",
+    "l:alto",
+    "l:amigo",
+    "l:antes",
+    "l:aprender",
+    "l:aquí",
+    "l:artículo",
+    "l:azul",
+    "l:año",
+    "l:bajar",
+    "l:bien",
+    "l:bonito",
+    "l:bordado",
+    "l:buscar",
+    "l:caber",
+    "l:café",
+    "l:caja",
+    "l:cajón",
+    "l:cariño",
+    "l:casa",
+    "l:colgar",
+    "l:comentario",
+    "l:comer",
+    "l:comprar",
+    "l:cuaderno",
+    "l:cuenta",
+    "l:cómoda",
+    "l:dar",
+    "l:debajo",
+    "l:decir",
+    "l:dejar",
+    "l:delantal",
+    "l:desfile",
+    "l:dibujar",
+    "l:doblar",
+    "l:dormir",
+    "l:duro",
+    "l:día",
+    "l:enero",
+    "l:enfermo",
+    "l:enorme",
+    "l:escribir",
+    "l:español",
+    "l:esperar",
+    "l:esquina",
+    "l:estar",
+    "l:galleta",
+    "l:gritar",
+    "l:guardar",
+    "l:hacer",
+    "l:horno",
+    "l:ir",
+    "l:irse",
+    "l:juntos",
+    "l:lado",
+    "l:letra",
+    "l:limpiar",
+    "l:llegar",
+    "l:llenar",
+    "l:llorar",
+    "l:lucía",
+    "l:maleta",
+    "l:man",
+    "l:marcharse",
+    "l:mes",
+    "l:mesa",
+    "l:miedo",
+    "l:miel",
+    "l:mijo",
+    "l:militar",
+    "l:mirar",
+    "l:mochila",
+    "l:necesario",
+    "l:noche",
+    "l:oficina",
+    "l:olvidar",
+    "l:pandebono",
+    "l:parce",
+    "l:pared",
+    "l:patio",
+    "l:país",
+    "l:pilar",
+    "l:piso",
+    "l:pista",
+    "l:probar",
+    "l:prueba",
+    "l:puerta",
+    "l:página",
+    "l:quedarse",
+    "l:quemar",
+    "l:querer",
+    "l:qué",
+    "l:rama",
+    "l:receta",
+    "l:red",
+    "l:regalar",
+    "l:respuesta",
+    "l:ruido",
+    "l:saber",
+    "l:satisfacer",
+    "l:ser",
+    "l:silla",
+    "l:sitio",
+    "l:sonar",
+    "l:taxi",
+    "l:tener",
+    "l:tocar",
+    "l:usar",
+    "l:ver",
+    "l:verde",
+    "l:vez",
+    "l:viaje",
+    "l:viejo",
+    "l:viernes",
+    "l:árbol",
+    "l:único"
+  ]
+}

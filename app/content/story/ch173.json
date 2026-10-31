@@ -1,0 +1,368 @@
+{
+  "id": "ch173",
+  "unit": "u51",
+  "title": "El café que habla colombiano",
+  "text": "Vale llegó a las siete y diez, con la misma maleta pequeña y sin pandebonos. Entró a la cocina, olió el horno e hizo una cara.\nVale: ¿Quién quemó mi horno?\nGloria: El canadiense. Y yo, un poco.\nSimón bajó del palo al hombro de Vale y no dijo nada. Solo le metió el pico en el pelo.\nEn la mesa tres, Lucía se levantó como si llegara una actriz.\nLucía: ¡Por fin! Llevamos cinco días comiendo pandebonos de Tomás. Hemos sufrido mucho.\nVale: Lo siento. Ya sé que son un desastre.\nLucía empezó la entrevista allí mismo.\nLucía: Para mis lectores: ¿de dónde procede el pandebono?\nVale: Proviene del Valle del Cauca. Dicen que de una hacienda, hace más de cien años. Pero la receta de esta casa procede de doña Rosa, y la de doña Rosa, de su mamá.\nLucía: ¿Y tú? Eres de Medellín, ¿no? ¿Te ha costado vivir en Bogotá?\nVale: El primer año lloraba de frío. Después aprendí a vivir con la lluvia y con los bogotanos, que hablan como si pidieran perdón.\nHernando: Ella habla como si diera órdenes. Por eso la queremos.\nÁlvaro: En Madrid, eso es hablar normal.\nAl final, Vale se quedó de pie en el centro del café, con las manos en el delantal.\nVale: Bueno. Les tengo que decir algo a todos. Acepté el mes de prueba. Me voy el domingo.\nPor un momento, nadie respiró. Hasta Simón se quedó quieto.\nHernando: Un mes es poco. Yo una vez tuve una gripa de un mes.\nGloria: ¿Y quién nos hace el pan?\nVale: Ustedes. Les dejé las recetas escritas. Y Tomás ya no quema todo, solo la mitad.\nTomás: Me alegro por ti. De verdad.\nVale lo miró, como buscando la trampa. No la encontró.\nTomás: Y si vuelves, el horno te espera. Y si no vuelves, el horno también.\nLucía se secó los ojos con la mano.\nLucía: Perdón, es que lloro por todo.\nPilar: Es verdad. Ha llorado en la boda de su prima y en el aeropuerto.\nLucía: ¡Qué rollo! ¿Por qué cuentas eso?\nSimón: ¡Qué rollo! ¡Qué rollo, parce!\nEsa noche cerraron tarde. Vale le enseñó a Tomás a hacer la masa sin pelear con ella.\nVale: No la toques tanto. Ella sabe lo que tiene que hacer.\nTomás: ¿Hablas de la masa?\nVale: Hablo de la masa.\nA las once, Lucía mandó el enlace de su artículo. Se llamaba «El café que habla colombiano», y tenía una foto de Vale y Tomás en la cocina, llenos de harina, sin saber que alguien los miraba.\nDebajo ya había un comentario. Era de una cuenta nueva, sin foto: «Disfruten el café mientras puedan».",
+  "gloss": [
+    {
+      "es": "Lucía",
+      "en": "Lucía (the food blogger from Madrid)"
+    },
+    {
+      "es": "Álvaro",
+      "en": "Álvaro (Lucía's friend)"
+    },
+    {
+      "es": "Pilar",
+      "en": "Pilar (Lucía's friend)"
+    },
+    {
+      "es": "pico",
+      "en": "beak"
+    },
+    {
+      "es": "como si llegara una actriz",
+      "en": "as if an actress had arrived"
+    },
+    {
+      "es": "Hemos sufrido mucho",
+      "en": "We've suffered a lot"
+    },
+    {
+      "es": "¿de dónde procede el pandebono?",
+      "en": "where does pandebono come from?"
+    },
+    {
+      "es": "hacienda",
+      "en": "large country estate"
+    },
+    {
+      "es": "¿Te ha costado vivir en Bogotá?",
+      "en": "Has it been hard for you to live in Bogotá?"
+    },
+    {
+      "es": "bogotanos",
+      "en": "people from Bogotá"
+    },
+    {
+      "es": "que hablan como si pidieran perdón",
+      "en": "who talk as if they were apologising"
+    },
+    {
+      "es": "delantal",
+      "en": "apron"
+    },
+    {
+      "es": "Yo una vez tuve una gripa de un mes",
+      "en": "I once had a cold that lasted a month"
+    },
+    {
+      "es": "Ha llorado en la boda de su prima y en el aeropuerto",
+      "en": "She cried at her cousin's wedding and at the airport"
+    },
+    {
+      "es": "Ella sabe lo que tiene que hacer",
+      "en": "It knows what it has to do"
+    },
+    {
+      "es": "Disfruten el café mientras puedan",
+      "en": "Enjoy the café while you can"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does Vale announce to everyone?",
+      "options": [
+        "She has turned down Correa",
+        "She is going back to Medellín for good",
+        "She has accepted the trial month and leaves on Sunday",
+        "She is opening a bakery in Madrid"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "How is Tomás's reaction different from last week?",
+      "options": [
+        "He is angry again",
+        "He says nothing at all",
+        "He asks her to stay",
+        "He is honestly glad for her and tells her the oven will wait"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "¿De dónde procede la receta de pandebono de la casa?",
+      "options": [
+        "De doña Rosa, y antes, de su mamá",
+        "De Madrid",
+        "De un libro de Correa",
+        "De Gloria"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "When Vale says \"Hablo de la masa\", what is the reader meant to feel?",
+      "options": [
+        "That she is only talking about cooking",
+        "That she may also be talking about Tomás and herself",
+        "That she is angry with Gloria",
+        "That the dough is ruined"
+      ],
+      "answer": 1
+    }
+  ],
+  "hook": "Vale leaves on Sunday, and she still has a room to empty. Under Lucía's article a new account with no photo has left a warning, and the Spaniards are leaving too.",
+  "rereadQuestions": [
+    {
+      "q": "Who burnt Vale's oven, according to Gloria?",
+      "options": [
+        "Simón",
+        "Hernando",
+        "The Canadian, and Gloria a little",
+        "Lucía"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "What does Hernando compare Vale's trial month to?",
+      "options": [
+        "A taxi ride",
+        "A cold that lasted a month",
+        "A wedding",
+        "A football season"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What is the title of Lucía's article?",
+      "options": [
+        "El café que habla colombiano",
+        "El loro de Bogotá",
+        "Pan de Rosa",
+        "Medellín o Madrid"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:al-final",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:con-el-ella",
+    "c:en-serio",
+    "c:entonces-bueno",
+    "c:era",
+    "c:es-que",
+    "c:lo-siento-pero-no-puedo",
+    "c:me-alegro",
+    "c:no-cierto",
+    "c:perdon-disculpe",
+    "c:tengo",
+    "c:tengo-que",
+    "c:tienes",
+    "c:una-vez",
+    "c:voy-vas",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:commands-usted",
+    "g:como-si",
+    "g:comparatives-advanced",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:gustar-full",
+    "g:hace-que-desde",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:negative-commands",
+    "g:perfecto-experience",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-cuando-future",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:detenerse-estar-parado",
+    "p:encontrar-participle",
+    "p:entonces-de-repente",
+    "p:exclamations-basic",
+    "p:indefinites-basic",
+    "p:lavarse-las-manos",
+    "p:llevar-tiempo-gerundio",
+    "p:los-de-la-camiseta",
+    "p:mas-de-number",
+    "p:me-aburre-que",
+    "p:me-contaron-que",
+    "p:me-te-nos-objects",
+    "p:mientras-subj",
+    "p:numbers-un-una",
+    "p:ojo-con-no-confies",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:para-inf",
+    "p:pedir-disculpas-por",
+    "p:poco-un-poco",
+    "p:possessives-basic",
+    "p:postura",
+    "p:prep-questions-basic",
+    "p:proceder-de",
+    "p:quantifiers-basic",
+    "p:que-tal-si",
+    "p:question-word-order",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:sobre-todo-solo",
+    "p:telling-time",
+    "p:ten-cuidado-con",
+    "p:time-sequence-basic"
+  ],
+  "lexemes": [
+    "l:aceptar",
+    "l:actriz",
+    "l:aeropuerto",
+    "l:alegrarse",
+    "l:allí",
+    "l:aprender",
+    "l:artículo",
+    "l:año",
+    "l:bajar",
+    "l:boda",
+    "l:bogotano",
+    "l:bueno",
+    "l:buscar",
+    "l:café",
+    "l:canadiense",
+    "l:cara",
+    "l:casa",
+    "l:centro",
+    "l:cerrar",
+    "l:cocina",
+    "l:colombiano",
+    "l:comentario",
+    "l:comer",
+    "l:costar",
+    "l:cuenta",
+    "l:dar",
+    "l:debajo",
+    "l:decir",
+    "l:dejar",
+    "l:delantal",
+    "l:desastre",
+    "l:después",
+    "l:disfrutar",
+    "l:domingo",
+    "l:día",
+    "l:dónde",
+    "l:empezar",
+    "l:encontrar",
+    "l:enlace",
+    "l:enseñar",
+    "l:entrar",
+    "l:entrevista",
+    "l:escribir",
+    "l:esperar",
+    "l:fin",
+    "l:final",
+    "l:foto",
+    "l:frío",
+    "l:gripa",
+    "l:hablar",
+    "l:hacer",
+    "l:hacienda",
+    "l:harina",
+    "l:hombro",
+    "l:horno",
+    "l:irse",
+    "l:lector",
+    "l:levantarse",
+    "l:llamarse",
+    "l:llegar",
+    "l:lleno",
+    "l:llevar",
+    "l:llorar",
+    "l:lluvia",
+    "l:lucía",
+    "l:maleta",
+    "l:mamá",
+    "l:mandar",
+    "l:mano",
+    "l:masa",
+    "l:mes",
+    "l:mesa",
+    "l:meter",
+    "l:mirar",
+    "l:mitad",
+    "l:momento",
+    "l:noche",
+    "l:normal",
+    "l:nuevo",
+    "l:ojo",
+    "l:oler",
+    "l:orden",
+    "l:palo",
+    "l:pan",
+    "l:pandebono",
+    "l:parce",
+    "l:pedir",
+    "l:pelearse",
+    "l:pelo",
+    "l:pequeño",
+    "l:perdón",
+    "l:pico",
+    "l:pie",
+    "l:pilar",
+    "l:poder",
+    "l:prima",
+    "l:proceder",
+    "l:provenir",
+    "l:prueba",
+    "l:quedarse",
+    "l:quemar",
+    "l:querer",
+    "l:quieto",
+    "l:quién",
+    "l:qué",
+    "l:receta",
+    "l:respirar",
+    "l:rollo",
+    "l:saber",
+    "l:secarse",
+    "l:sentir",
+    "l:ser",
+    "l:sufrir",
+    "l:tarde",
+    "l:tener",
+    "l:tocar",
+    "l:trampa",
+    "l:verdad",
+    "l:vez",
+    "l:vivir",
+    "l:volver",
+    "l:álvaro"
+  ]
+}

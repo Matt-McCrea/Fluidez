@@ -1,0 +1,371 @@
+{
+ "id": "ch172",
+ "unit": "u51",
+ "title": "Ha sido esta mañana",
+ "text": "Tomás tuvo el celular en la mano hasta las dos de la mañana. Escribió once mensajes para Vale y no mandó ninguno.\nA las ocho, Lucía abrió la computadora en la mesa tres.\nLucía: Necesito a alguien que lea esto. Tú eres de aquí y de allá, así que eres perfecto.\nEl texto empezaba así: «Hoy hemos desayunado en La Esquina de Rosa, un café de La Candelaria con un loro que habla mejor que nosotros».\nTomás: Aquí diríamos «desayunamos».\nLucía: Pero es que ha sido hace dos horas. «Desayunamos» suena a otro día.\nTomás: Para un colombiano, esta mañana ya es otro día.\nLucía: ¡Anda! Entonces en Colombia todo es pasado.\nTomás siguió leyendo: «Hemos probado unas galletas muy feas y muy ricas, hechas por un canadiense».\nTomás: ¿Feas?\nLucía: Feas. Pero me he comido cuatro.\nA las diez llegó Hernando, con una bolsa de la farmacia. Su hija lo había llevado a la revisión del médico, por la caída.\nHernando: Esta mañana he ido a la revisión, y el médico dice que estoy muy bien.\nTomás: ¿Ha ido? Don Hernando, usted fue.\nHernando: Fui, he ido, da igual. El médico me ha prohibido el tinto, mijo.\nGloria: ¿Y entonces qué va a tomar?\nHernando: Agua de hierbas. Como las vacas.\nCuando llegó la taza, la miró como a un enemigo.\nPilar volvió de la plaza con lana gris sobre los hombros.\nPilar: ¡Anda, qué capa más bonita! Me la llevo a Madrid.\nHernando: No es una capa. Es una ruana. Con una capa uno vuela; con una ruana, uno se queda.\nGloria leyó el texto detrás de la madrileña.\nGloria: Ponga también lo del man de Medellín. Ese man se quiere llevar a nuestra pastelera.\nLucía: ¿Qué es un man?\nTomás: Un señor. Pero sin corbata.\nSimón: ¡Ese man! ¡Ese man, parce!\nAl mediodía, Tomás salió al patio y llamó a Vale. Contestó al primer timbre.\nVale: Pensé que ibas a escribir.\nTomás: Once mensajes. No mandé ninguno.\nVale: ¿Y qué decían?\nTomás: Que vayas. Que el mes de prueba es tuyo, y que tienes que probar. Que no lo hagas por Correa, ni por mí, sino por ti.\nVale se quedó callada.\nTomás: Y que te voy a echar mucho de menos.\nVale: ¿Ahora hablas como la madrileña?\nTomás: Ya ves. Se me pegó.\nVale se rio, y Tomás oyó el ruido de una cocina grande detrás.\nVale: Mañana a las siete llego a Bogotá. Tengo que decirles algo a todos, y prefiero hacerlo en persona.\nCuando Tomás volvió, Hernando estaba echando el agua de hierbas en la planta de Gloria.\nHernando: He decidido que esta planta necesita más hierbas que yo.",
+ "gloss": [
+  {
+   "es": "Lucía",
+   "en": "Lucía (the food blogger from Madrid)"
+  },
+  {
+   "es": "Pilar",
+   "en": "Pilar (Lucía's friend)"
+  },
+  {
+   "es": "Tú eres de aquí y de allá",
+   "en": "You're from here and from there"
+  },
+  {
+   "es": "hemos desayunado",
+   "en": "we had breakfast (Spain uses this past for earlier today)"
+  },
+  {
+   "es": "loro",
+   "en": "parrot"
+  },
+  {
+   "es": "Pero es que ha sido hace dos horas",
+   "en": "But it was two hours ago"
+  },
+  {
+   "es": "Me he comido cuatro",
+   "en": "I've eaten four"
+  },
+  {
+   "es": "he ido a la revisión",
+   "en": "I went for my check-up (said the Spain way)"
+  },
+  {
+   "es": "El médico me ha prohibido el tinto",
+   "en": "The doctor has banned black coffee"
+  },
+  {
+   "es": "con lana gris sobre los hombros",
+   "en": "with grey wool over her shoulders"
+  },
+  {
+   "es": "ruana",
+   "en": "ruana (a woollen Andean poncho)"
+  },
+  {
+   "es": "Con una capa uno vuela; con una ruana, uno se queda",
+   "en": "In a cape you fly; in a ruana, you stay"
+  },
+  {
+   "es": "madrileña",
+   "en": "woman from Madrid"
+  },
+  {
+   "es": "pastelera",
+   "en": "pastry chef"
+  },
+  {
+   "es": "Ese man se quiere llevar a nuestra pastelera",
+   "en": "That guy wants to take our pastry chef away"
+  },
+  {
+   "es": "Te voy a echar mucho de menos",
+   "en": "I'm going to miss you a lot (the Spain way)"
+  },
+  {
+   "es": "Se me pegó",
+   "en": "I picked it up (literally: it stuck to me)"
+  }
+ ],
+ "questions": [
+  {
+   "q": "Why does Lucía say \"hemos desayunado\" and not \"desayunamos\"?",
+   "options": [
+    "Breakfast was two hours ago, and in Spain that is still the same day",
+    "She made a mistake",
+    "She has not had breakfast yet",
+    "She is talking about yesterday"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What has the doctor told Hernando at his check-up?",
+   "options": [
+    "He has to move to Chía",
+    "He must not drive the Burra",
+    "He is very well, but no more black coffee",
+    "He has to stop climbing stairs"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "What does Tomás finally tell Vale on the phone?",
+   "options": [
+    "That she must stay in Bogotá",
+    "That she should take the trial month for herself, and he will miss her",
+    "That the café is closing",
+    "That Lucía wants to buy her pastries"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "¿Qué es un «man», según Tomás?",
+   "options": [
+    "Un señor, pero sin corbata",
+    "Un amigo de Madrid",
+    "Un loro",
+    "Un médico"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Why does Vale want to come to Bogotá tomorrow?",
+   "options": [
+    "To fetch her oven",
+    "To meet Lucía for the blog",
+    "To tell everyone something in person",
+    "To see Hernando's doctor"
+   ],
+   "answer": 2
+  }
+ ],
+ "hook": "Vale arrives in Bogotá at seven tomorrow with something to tell everyone in person. Lucía and her friends will be at table three, and they have been waiting all week to meet her.",
+ "rereadQuestions": [
+  {
+   "q": "Who made the ugly but tasty biscuits in Lucía's text?",
+   "options": [
+    "Gloria",
+    "A Canadian, Tomás",
+    "Vale",
+    "Hernando's daughter"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "What does Hernando do with his herbal drink at the end?",
+   "options": [
+    "Pours it into Gloria's plant",
+    "Gives it to Simón",
+    "Drinks all of it",
+    "Takes it home"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How many messages did Tomás write to Vale without sending them?",
+   "options": [
+    "Two",
+    "Four",
+    "Seven",
+    "Eleven"
+   ],
+   "answer": 3
+  }
+ ],
+ "requires": [
+  "c:anda-spain",
+  "c:bien-y-tu",
+  "c:claro-listo",
+  "c:entonces-bueno",
+  "c:es-que",
+  "c:fui",
+  "c:igual",
+  "c:me-lo-llevo",
+  "c:que-va",
+  "c:sera-otro-dia",
+  "c:tengo",
+  "c:tengo-que",
+  "c:tienes",
+  "c:voy-a",
+  "c:y-que-paso",
+  "g:adjective-agreement",
+  "g:cause-result",
+  "g:commands-usted",
+  "g:comparatives",
+  "g:conditional",
+  "g:demonstratives",
+  "g:direct-objects",
+  "g:estar-location-states",
+  "g:gender-articles",
+  "g:gerund-ways",
+  "g:hace-ago",
+  "g:imperfect-habitual",
+  "g:imperfect-progressive",
+  "g:imperfect-states",
+  "g:indefinites",
+  "g:indirect-objects",
+  "g:ir-a-plans",
+  "g:negation-words",
+  "g:object-pronoun-position",
+  "g:perfecto-experience",
+  "g:pero-sino",
+  "g:pluperfect",
+  "g:por-para-1",
+  "g:possessives",
+  "g:possessives-stressed",
+  "g:prep-pronouns",
+  "g:present-ar",
+  "g:present-er-ir",
+  "g:pret-vs-imperfect",
+  "g:preterite-ar",
+  "g:preterite-er-ir",
+  "g:preterite-irregular-strong",
+  "g:preterite-ser-ir-hacer",
+  "g:preterite-spelling-stem",
+  "g:questions",
+  "g:reflexive-routine",
+  "g:relative-que",
+  "g:se-accidental",
+  "g:se-impersonal",
+  "g:ser-identity",
+  "g:stem-boot",
+  "g:stem-e-i",
+  "g:subj-irregulars",
+  "g:subj-relative",
+  "g:subj-wanting",
+  "g:subj-wishes",
+  "g:that-clauses",
+  "g:verb-infinitive",
+  "g:yo-irregular",
+  "p:aqui-ahi-alla",
+  "p:bien-bueno",
+  "p:bien-mal-vs-bueno-malo",
+  "p:brindo-por",
+  "p:cerca-de",
+  "p:con-sin",
+  "p:cuando-basic",
+  "p:dar-igual",
+  "p:de-owner",
+  "p:demonstratives-basic",
+  "p:don-dona-nombre",
+  "p:el-agua-fria",
+  "p:generic-tu-uno",
+  "p:indefinites-basic",
+  "p:ir-a-venir-de-place",
+  "p:lo-de",
+  "p:lo-de-topic",
+  "p:me-te-nos-objects",
+  "p:ordinal-floor",
+  "p:ordinals-primer-tercer",
+  "p:orgulloso-admiracion",
+  "p:para-inf",
+  "p:pensar-en",
+  "p:personal-a",
+  "p:por-la-manana",
+  "p:position-de",
+  "p:possessives-basic",
+  "p:prefieres-x-o-y",
+  "p:quantifiers-basic",
+  "p:que-subj-deseo",
+  "p:refuse-es-que",
+  "p:seguir-gerundio",
+  "p:senor-don-article",
+  "p:telling-time"
+ ],
+ "lexemes": [
+  "l:abrir",
+  "l:agua",
+  "l:ahora",
+  "l:allá",
+  "l:andar",
+  "l:aquí",
+  "l:bien",
+  "l:bolsa",
+  "l:bonito",
+  "l:café",
+  "l:callado",
+  "l:canadiense",
+  "l:capa",
+  "l:caída",
+  "l:celular",
+  "l:cocina",
+  "l:colombiano",
+  "l:comer",
+  "l:computadora",
+  "l:contestar",
+  "l:corbata",
+  "l:dar",
+  "l:decidir",
+  "l:decir",
+  "l:desayunar",
+  "l:detrás",
+  "l:día",
+  "l:echar",
+  "l:empezar",
+  "l:enemigo",
+  "l:escribir",
+  "l:estar",
+  "l:farmacia",
+  "l:feo",
+  "l:galleta",
+  "l:grande",
+  "l:gris",
+  "l:hablar",
+  "l:hacer",
+  "l:hierba",
+  "l:hija",
+  "l:hombros",
+  "l:hora",
+  "l:hoy",
+  "l:igual",
+  "l:ir",
+  "l:lana",
+  "l:leer",
+  "l:llamar",
+  "l:llegar",
+  "l:llevar",
+  "l:llevarse",
+  "l:loro",
+  "l:lucía",
+  "l:madrileño",
+  "l:man",
+  "l:mandar",
+  "l:mano",
+  "l:mañana",
+  "l:mediodía",
+  "l:mejor",
+  "l:mensaje",
+  "l:mes",
+  "l:mesa",
+  "l:mijo",
+  "l:mirar",
+  "l:médico",
+  "l:necesitar",
+  "l:oír",
+  "l:parce",
+  "l:pasado",
+  "l:pastelera",
+  "l:patio",
+  "l:pegarse",
+  "l:pensar",
+  "l:perfecto",
+  "l:persona",
+  "l:pilar",
+  "l:planta",
+  "l:plaza",
+  "l:poner",
+  "l:preferir",
+  "l:probarse",
+  "l:prohibir",
+  "l:prueba",
+  "l:quedarse",
+  "l:querer",
+  "l:qué",
+  "l:revisión",
+  "l:reír",
+  "l:rico",
+  "l:ruana",
+  "l:ruido",
+  "l:salir",
+  "l:seguir",
+  "l:ser",
+  "l:señor",
+  "l:sonar",
+  "l:taza",
+  "l:tener",
+  "l:texto",
+  "l:timbre",
+  "l:tinto",
+  "l:tomar",
+  "l:vaca",
+  "l:ver",
+  "l:volver",
+  "l:vuelo"
+ ]
+}
