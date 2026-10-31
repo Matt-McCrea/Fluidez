@@ -3,17 +3,17 @@
   "unit": "u42",
   "title": "Una llamada a la notaría",
   "spare": false,
-  "brief": "You're Tomás, calling the notary's office about Rosa's house. The receptionist doesn't know you, and the notary is a very formal man, so use usted all the way through. Get put through, leave a message, and say thank you properly.",
+  "brief": "You're Tomás, calling the notary's office about Rosa's house. The receptionist doesn't know you, and the notary, Doctor Arciniegas, is a very formal man, so use usted all the way through. Get put through, leave a message, and say thank you properly.",
   "turns": [
     {
       "id": "t1",
       "npc": "Marta: Notaría Cuarta, buenos días. ¿En qué le puedo ayudar?",
       "npcEn": "Marta: Fourth Notary's Office, good morning. How can I help you?",
-      "intent": "Greet her and ask her, politely and formally, to put you through to Dr Barrera.",
+      "intent": "Greet her and ask her, politely and formally, to put you through to Doctor Arciniegas.",
       "accept": [
-        "Buenos días. ¿Me comunica con el doctor Barrera, por favor?",
-        "Buenos días, señorita. ¿Me podría comunicar con el doctor Barrera?",
-        "Buenas. Necesito hablar con el doctor Barrera. ¿Me comunica con él, por favor?"
+        "Buenos días. ¿Me comunica con el doctor Arciniegas, por favor?",
+        "Buenos días, señorita. ¿Me podría comunicar con el doctor Arciniegas?",
+        "Buenas. Necesito hablar con el doctor Arciniegas. ¿Me comunica con él, por favor?"
       ],
       "require": [
         {
@@ -59,20 +59,20 @@
     },
     {
       "id": "t3",
-      "npc": "Marta: ¿Es por lo de la casa de doña Rosa?",
-      "npcEn": "Marta: Is it about the matter of Doña Rosa's house?",
-      "intent": "Say yes, it's about the house matter, and that Rosa was your grandmother.",
+      "npc": "Marta: ¿Es por lo del contrato de la casa de doña Rosa?",
+      "npcEn": "Marta: Is it about the contract for Doña Rosa's house?",
+      "intent": "Say yes, it's about that matter (lo de…), and that Rosa was your grandmother.",
       "accept": [
-        "Sí, es por lo de la casa. Doña Rosa era mi abuela.",
+        "Sí, es por lo del contrato. Doña Rosa era mi abuela.",
         "Sí, señorita, es por lo de la casa de mi abuela Rosa.",
-        "Así es. Lo de la casa de doña Rosa, ella era mi abuela."
+        "Así es, por lo de la casa. Mi abuela era doña Rosa."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\blo de la\\b",
+          "pattern": "\\blo del?\\b",
           "flags": "iu",
-          "label": "refer to the matter with: lo de..."
+          "label": "refer to the matter with: lo de... / lo del..."
         },
         {
           "type": "containsWord",
@@ -87,7 +87,7 @@
       "id": "t4",
       "npc": "Marta: Lo que pasa es que el doctor viaja mañana, pero yo le paso su mensaje hoy mismo.",
       "npcEn": "Marta: The thing is, the doctor is travelling tomorrow, but I'll pass your message on to him today.",
-      "intent": "Thank her warmly and formally for her help.",
+      "intent": "Thank her warmly and formally for her help, with agradecer.",
       "accept": [
         "Se lo agradezco mucho, señorita.",
         "Le agradezco mucho su ayuda.",
@@ -185,6 +185,7 @@
     "l:bueno",
     "l:casa",
     "l:comunicar",
+    "l:contrato",
     "l:decir",
     "l:dejar",
     "l:dele",

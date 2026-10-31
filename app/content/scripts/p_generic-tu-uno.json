@@ -133,17 +133,13 @@
     {
       "prompt": "Say it about anyone, with *uno*: *Cuando estoy cansado, todo me molesta.*",
       "answer": "Cuando uno está cansado, todo le molesta.",
-      "accept": [
-        "Cuando uno está cansada, todo le molesta."
-      ],
+      "accept": [],
       "why": "With *uno* the verb is *está* and the pronoun is *le*."
     },
     {
       "prompt": "Say it with generic *tú*: *Aquí uno aprende rápido.*",
       "answer": "Aquí aprendes rápido.",
-      "accept": [
-        "Aquí tú aprendes rápido."
-      ],
+      "accept": [],
       "why": "*Uno* takes the *él* form; generic *tú* takes the *tú* form."
     },
     {
@@ -173,9 +169,9 @@
       "why": "Almost. *Te* belongs with *tú*; with *uno* the matching pronoun is *le*."
     },
     {
-      "wrong": "Llegas y tienes que esperar tres horas.",
-      "right": "Llegas y te toca esperar tres horas.",
-      "why": "Understood, but *te toca* is how people really complain: the waiting simply falls to you."
+      "wrong": "Tú trabajas todo el día y no te alcanza la plata.",
+      "right": "Trabajas todo el día y no te alcanza la plata.",
+      "why": "Almost. Saying *tú* points at the listener; leave it out and \"you\" means anyone."
     }
   ],
   "personal": "Choose something that annoys you about your city. Say it as if it happens to everyone, with *uno* or generic *tú*."

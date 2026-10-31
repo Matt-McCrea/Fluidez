@@ -11,7 +11,7 @@
       "npcEn": "Hernando: Tomás, Simón shouted \"give me bread\" at a customer. I'm embarrassed.",
       "intent": "Tell him there is no need for him to worry, she laughed.",
       "accept": [
-        "No hace falta que se preocupe, Hernando. Ella se rió.",
+        "No hace falta que se preocupe, don Hernando. Ella se rió.",
         "Tranquilo, don Hernando, no hace falta que se preocupe. Se rió mucho.",
         "No hace falta que se disculpe, don Hernando. Ella se rió."
       ],

@@ -31,7 +31,7 @@
       "en": "Tomás has already spoken with Hernando, I suppose."
     }
   ],
-  "rule": "Say the sentence as a plain statement, then add *supongo* or *imagino* after a comma at the end.\n\nIn English you would put \"I suppose\" up front (\"I suppose they got there fine\"), or at the end, as here. Spanish also has *Supongo que…* at the start, but the trailing tag is lighter: you have already said it, and now you take a half step back.\n\n*Supongo* hedges what you guess. *Imagino* often adds \"and you know this too\": *Ya sabes que hay reunión, imagino.*\n\nNothing else changes. The verb before the tag stays an ordinary statement, with no *yo* and no extra *que*.",
+  "rule": "Say the sentence as a plain statement, then add *supongo* or *imagino* after a comma at the end.\n\nIn English you would put \"I suppose\" up front (\"I suppose they got there fine\"), or at the end, as here. Spanish also has *Supongo que…* at the start, but the trailing tag is lighter: you have already said it, and now you take a half step back.\n\n*Supongo* and *imagino* work the same way here; *imagino* sounds a little warmer, as if you were picturing the other person's day.\n\nNothing else changes. The verb before the tag stays an ordinary statement, with no *yo* and no extra *que*.",
   "smallPrint": "Teachers call this a trailing parenthetical or hedge: a verb of thinking used as a tag to soften what came before.",
   "readAndPick": [
     {
@@ -128,7 +128,7 @@
       "accept": [
         "Ya sabes que hay reunión a las tres, supongo."
       ],
-      "why": "*Imagino* adds \"and you know this too\"."
+      "why": "The statement comes first, then the tag after a comma."
     },
     {
       "prompt": "Add a hedge with *supongo* to this statement: *El taller abre a las ocho.* Type the whole sentence.",
@@ -165,9 +165,9 @@
   ],
   "pitfalls": [
     {
-      "wrong": "Supongo, terminamos el martes.",
-      "right": "Terminamos el martes, supongo.",
-      "why": "Almost. To soften after the fact, the tag comes last, after a comma."
+      "wrong": "Supongo terminamos el martes.",
+      "right": "Supongo que terminamos el martes.",
+      "why": "Almost. At the front, Spanish needs *que*: *supongo que…*. Only the tag at the end stands alone."
     },
     {
       "wrong": "Terminamos el martes, yo supongo.",

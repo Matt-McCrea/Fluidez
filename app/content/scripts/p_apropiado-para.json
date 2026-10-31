@@ -27,11 +27,11 @@
       "en": "A T-shirt isn't appropriate for the interview."
     },
     {
-      "es": "Ese tono no es apropiado para el jefe.",
-      "en": "That tone isn't appropriate for the boss."
+      "es": "Ese tono no es apropiado para una carta formal.",
+      "en": "That tone isn't appropriate for a formal letter."
     }
   ],
-  "rule": "*Apropiado* and *adecuado* judge whether something fits the situation, not whether it is good. A T-shirt is fine; it just isn't *apropiada para la entrevista*.\n\nThey agree with the thing described: *ropa apropiada*, *un lugar adecuado*. After *para* comes a noun or an infinitive.\n\nFor something that crossed a line, use *estar fuera de lugar*: *Ese comentario estuvo fuera de lugar*. Add *in-* to flip it: *inapropiado*.\n\n*Conveniente* means advisable, not \"convenient\".",
+  "rule": "*Apropiado* and *adecuado* judge whether something fits the situation, not whether it is good. A T-shirt is fine; it just isn't *apropiada para la entrevista*. Add *in-* to flip it: *inapropiado*.\n\nThey agree with the thing described: *ropa apropiada*, *un lugar adecuado*. After *para* comes a noun or an infinitive.\n\nFor something that crossed a line, use *estar fuera de lugar*: *Ese comentario estuvo fuera de lugar*.\n\n*Conveniente* means advisable, not \"convenient\".",
   "smallPrint": "Teachers call this *adecuación*: how well something suits its context. *Fuera de lugar* is a set phrase with *estar*.",
   "readAndPick": [
     {
@@ -80,11 +80,11 @@
       "answer": 0
     },
     {
-      "es": "Ese tono no es apropiado para el jefe.",
+      "es": "Ese tono no es apropiado para una carta formal.",
       "options": [
-        "That tone is good for the boss.",
-        "That tone isn't appropriate for the boss.",
-        "The boss's tone isn't appropriate."
+        "That tone is good for a formal letter.",
+        "That tone isn't appropriate for a formal letter.",
+        "That letter's tone isn't formal."
       ],
       "answer": 1
     },
@@ -135,12 +135,12 @@
       "why": "An action as the subject takes the plain infinitive, and *apropiado* stays masculine."
     },
     {
-      "prompt": "Type in Spanish: That tone isn't appropriate for the boss.",
-      "answer": "Ese tono no es apropiado para el jefe.",
+      "prompt": "Type in Spanish: That tone isn't appropriate for a formal letter.",
+      "answer": "Ese tono no es apropiado para una carta formal.",
       "accept": [
-        "Ese tono no es adecuado para el jefe."
+        "Ese tono no es adecuado para una carta formal."
       ],
-      "why": "*Apropiado para* + the person or occasion it has to fit."
+      "why": "*Apropiado para* + the occasion it has to fit."
     },
     {
       "prompt": "Make it positive: *Esa ropa no es apropiada para la reunión.*",

@@ -82,9 +82,9 @@
     {
       "es": "Le agradecería que me explicara la situación.",
       "options": [
-        "I would be grateful if I explained the process.",
+        "I would be grateful if I explained the situation to you.",
         "I would be grateful if you explained the situation to me.",
-        "I would be grateful if you had explained the process."
+        "I would be grateful if you had explained the situation to me."
       ],
       "answer": 1
     },
@@ -160,9 +160,9 @@
       "why": "Almost. After *agradecería que* use the *-ra* form, not the plain present."
     },
     {
-      "wrong": "Te agradecería que me enviaras la factura, Vale.",
+      "wrong": "Le agradecería que me enviaría la factura.",
       "right": "Le agradecería que me enviara la factura.",
-      "why": "Almost. With a friend this sounds stiff or ironic; save it for someone you call *usted*."
+      "why": "Almost. English says \"would\" twice, but only *agradecería* takes it; after *que* comes the *-ra* form, *enviara*."
     },
     {
       "wrong": "Le agradecería si me enviara la factura.",

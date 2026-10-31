@@ -6,38 +6,182 @@
     "en": "Madam, allow me to help you with your bags."
   },
   "examples": [
-    { "es": "Déjame que te ayude.", "en": "Let me help you. (to a friend)" },
-    { "es": "Déjame ayudarte con eso.", "en": "Let me help you with that. (to a friend)" },
-    { "es": "Deja, yo lo hago.", "en": "Leave it, I'll do it. (to a friend)" },
-    { "es": "Deja, yo pago.", "en": "Leave it, I'll pay. (to a friend)" },
-    { "es": "Señora, permítame ayudarla con las bolsas.", "en": "Madam, allow me to help you with your bags." },
-    { "es": "Permítame ayudarlo con la puerta.", "en": "Allow me to help you with the door. (to a man, formal)" }
+    {
+      "es": "Déjame que te ayude.",
+      "en": "Let me help you. (to a friend)"
+    },
+    {
+      "es": "Déjame ayudarte con eso.",
+      "en": "Let me help you with that. (to a friend)"
+    },
+    {
+      "es": "Deja, yo lo hago.",
+      "en": "Leave it, I'll do it. (to a friend)"
+    },
+    {
+      "es": "Deja, yo pago.",
+      "en": "Leave it, I'll pay. (to a friend)"
+    },
+    {
+      "es": "Señora, permítame ayudarla con las bolsas.",
+      "en": "Madam, allow me to help you with your bags."
+    },
+    {
+      "es": "Permítame ayudarlo con la puerta.",
+      "en": "Allow me to help you with the door. (to a man, formal)"
+    }
   ],
   "rule": "With a friend, say *déjame* (\"let me\") and then either *que* plus a wish-form verb, or an infinitive: *déjame que te ayude*, *déjame ayudarte*.\n\nTo take over a job, say *deja* and then what you will do: *Deja, yo lo hago*.\n\nWith a stranger or an older person, use *permítame* plus an infinitive. The person you help becomes *la* for a woman and *lo* for a man: *ayudarla*, *ayudarlo*.\n\nIn Colombia, *que* often disappears in speech: *déjame te ayudo*.",
   "smallPrint": "Teachers call *deja* and *permítame* commands, and *ayude* the subjunctive. Using *déjame* or *permítame* as a polite offer is a courtesy formula.",
   "readAndPick": [
-    { "es": "Déjame que te ayude.", "options": ["Help me, please. (to a friend)", "Let me help you. (to a friend)", "Let me help you. (formal)"], "answer": 1 },
-    { "es": "Señora, permítame ayudarla con las bolsas.", "options": ["Madam, help me with my bags.", "Madam, they allowed me to help with the bags.", "Madam, allow me to help you with your bags."], "answer": 2 },
-    { "es": "Deja, yo lo hago.", "options": ["Leave it, you do it.", "Leave it, I'll do it.", "Leave it, he did it."], "answer": 1 },
-    { "es": "Permítame ayudarlo con la puerta.", "options": ["Allow me to help you with the door. (to a woman, formal)", "Let me help you with the door. (to a friend)", "Allow me to help you with the door. (to a man, formal)"], "answer": 2 },
-    { "es": "Déjame que te acompañe.", "options": ["Let me go with you. (formal)", "Let me go with you. (to a friend)", "Go with me. (to a friend)"], "answer": 1 },
-    { "es": "Deja, yo pago.", "options": ["Leave it, I'll pay.", "Leave it, you pay.", "Leave it, they paid."], "answer": 0 },
-    { "es": "Déjame ayudarte con eso.", "options": ["Let me help you with that. (formal)", "Help me with that. (to a friend)", "Let me help you with that. (to a friend)"], "answer": 2 },
-    { "es": "Permítame ayudarla con la caja.", "options": ["Allow me to help you with the box. (to a woman, formal)", "Allow me to help you with the box. (to a man, formal)", "Let me help you with the box. (to a friend)"], "answer": 0 }
+    {
+      "es": "Déjame que te ayude.",
+      "options": [
+        "Help me, please. (to a friend)",
+        "Let me help you. (to a friend)",
+        "Let me help you. (formal)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Señora, permítame ayudarla con las bolsas.",
+      "options": [
+        "Madam, help me with my bags.",
+        "Madam, they allowed me to help with the bags.",
+        "Madam, allow me to help you with your bags."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Deja, yo lo hago.",
+      "options": [
+        "Leave it, you do it.",
+        "Leave it, I'll do it.",
+        "Leave it, he did it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Permítame ayudarlo con la puerta.",
+      "options": [
+        "Allow me to help you with the door. (to a woman, formal)",
+        "Let me help you with the door. (to a friend)",
+        "Allow me to help you with the door. (to a man, formal)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Déjame que te acompañe.",
+      "options": [
+        "Let me go with you. (formal)",
+        "Let me go with you. (to a friend)",
+        "Go with me. (to a friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Deja, yo pago.",
+      "options": [
+        "Leave it, I'll pay.",
+        "Leave it, you pay.",
+        "Leave it, they paid."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Déjame ayudarte con eso.",
+      "options": [
+        "Let me help you with that. (formal)",
+        "Help me with that. (to a friend)",
+        "Let me help you with that. (to a friend)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Permítame ayudarla con la caja.",
+      "options": [
+        "Allow me to help you with the box. (to a woman, formal)",
+        "Allow me to help you with the box. (to a man, formal)",
+        "Let me help you with the box. (to a friend)"
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Your friend is carrying two bags. Pick *Déjame que te ayude* or *Permítame ayudarla* and type it.", "answer": "Déjame que te ayude.", "accept": ["Déjame que te ayude"], "why": "A friend is *tú*, so *déjame* plus *te* fits." },
-    { "prompt": "Type in Spanish: Let me help you with that. (to a friend, use an infinitive)", "answer": "Déjame ayudarte con eso.", "accept": ["Déjame ayudarte con eso"], "why": "With an infinitive, *te* attaches to the end: *ayudarte*." },
-    { "prompt": "Type in Spanish: Madam, allow me to help you with your bags.", "answer": "Señora, permítame ayudarla con las bolsas.", "accept": ["Permítame ayudarla con las bolsas, señora."], "why": "For a woman you don't know, *permítame* and *la* keep it respectful." },
-    { "prompt": "Type in Spanish: Leave it, I'll pay. (to a friend)", "answer": "Deja, yo pago.", "accept": ["Deja, yo pago"], "why": "*Deja* stops your friend, then you say what you will do." },
-    { "prompt": "Make it formal for a man, starting with *Permítame*: *Déjame ayudarte.*", "answer": "Permítame ayudarlo.", "accept": ["Permítame ayudarlo con eso."], "why": "*Permítame* is the formal offer, and *lo* stands for a man." },
-    { "prompt": "Type in Spanish: Let me help you with the door. (to a friend)", "answer": "Déjame ayudarte con la puerta.", "accept": ["Déjame que te ayude con la puerta."], "why": "Both *déjame ayudarte* and *déjame que te ayude* work with a friend." },
-    { "prompt": "Type in Spanish: Don Hernando, allow me to help you with the box.", "answer": "Don Hernando, permítame ayudarlo con la caja.", "accept": ["Permítame ayudarlo con la caja, don Hernando."], "why": "An older man gets *permítame* and *lo*." }
+    {
+      "prompt": "Your friend is carrying two bags. Pick *Déjame que te ayude* or *Permítame ayudarla* and type it.",
+      "answer": "Déjame que te ayude.",
+      "accept": [
+        "Déjame que te ayude"
+      ],
+      "why": "A friend is *tú*, so *déjame* plus *te* fits."
+    },
+    {
+      "prompt": "Type in Spanish: Let me help you with that. (to a friend, use an infinitive)",
+      "answer": "Déjame ayudarte con eso.",
+      "accept": [
+        "Déjame ayudarte con eso"
+      ],
+      "why": "With an infinitive, *te* attaches to the end: *ayudarte*."
+    },
+    {
+      "prompt": "Type in Spanish: Madam, allow me to help you with your bags.",
+      "answer": "Señora, permítame ayudarla con las bolsas.",
+      "accept": [
+        "Permítame ayudarla con las bolsas, señora.",
+        "Señora, permítame ayudarla con sus bolsas."
+      ],
+      "why": "For a woman you don't know, *permítame* and *la* keep it respectful."
+    },
+    {
+      "prompt": "Type in Spanish: Leave it, I'll pay. (to a friend)",
+      "answer": "Deja, yo pago.",
+      "accept": [
+        "Deja, yo pago"
+      ],
+      "why": "*Deja* stops your friend, then you say what you will do."
+    },
+    {
+      "prompt": "Make it formal for a man, starting with *Permítame*: *Déjame ayudarte.*",
+      "answer": "Permítame ayudarlo.",
+      "accept": [
+        "Permítame ayudarlo"
+      ],
+      "why": "*Permítame* is the formal offer, and *lo* stands for a man."
+    },
+    {
+      "prompt": "Type in Spanish: Let me help you with the door. (to a friend)",
+      "answer": "Déjame ayudarte con la puerta.",
+      "accept": [
+        "Déjame que te ayude con la puerta."
+      ],
+      "why": "Both *déjame ayudarte* and *déjame que te ayude* work with a friend."
+    },
+    {
+      "prompt": "Type in Spanish: Don Hernando, allow me to help you with the box.",
+      "answer": "Don Hernando, permítame ayudarlo con la caja.",
+      "accept": [
+        "Permítame ayudarlo con la caja, don Hernando."
+      ],
+      "why": "An older man gets *permítame* and *lo*."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Déjame que te ayudo.", "right": "Déjame que te ayude.", "why": "Almost. After *déjame que*, the verb takes its wish form, *ayude*." },
-    { "wrong": "Permíteme ayudarla, señora.", "right": "Permítame ayudarla, señora.", "why": "Almost. *Permíteme* is for a friend; to a *señora* the command is *permítame*." },
-    { "wrong": "Déjame que ayudarte.", "right": "Déjame ayudarte.", "why": "Almost. Pick either *que* plus a conjugated verb or a bare infinitive, not both." }
+    {
+      "wrong": "Déjame que te ayudo.",
+      "right": "Déjame que te ayude.",
+      "why": "Almost. After *déjame que*, the verb takes its wish form, *ayude*."
+    },
+    {
+      "wrong": "Permíteme ayudarla, señora.",
+      "right": "Permítame ayudarla, señora.",
+      "why": "Almost. *Permíteme* is for a friend; to a *señora* the command is *permítame*."
+    },
+    {
+      "wrong": "Déjame que ayudarte.",
+      "right": "Déjame ayudarte.",
+      "why": "Almost. Pick either *que* plus a conjugated verb or a bare infinitive, not both."
+    }
   ],
   "personal": "Picture a neighbour carrying something heavy. Type what you would say to them to offer help."
 }

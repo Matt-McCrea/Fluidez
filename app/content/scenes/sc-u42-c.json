@@ -1,19 +1,19 @@
 {
   "id": "sc-u42-c",
   "unit": "u42",
-  "title": "El carro de Yesid",
+  "title": "El carro de Camilo",
   "spare": true,
-  "brief": "You're Tomás at Yesid's garage. He's an old friend, so use tú and keep it warm. You need to borrow his car on Saturday to move the espresso machine, and he is going to make you earn it.",
+  "brief": "You're Tomás at the garage where Hernando's old taxi gets fixed. Camilo, the mechanic, is your age and by now a friend, so use tú and keep it warm. You need to borrow his car on Saturday to move the espresso machine, and he is going to make you earn it.",
   "turns": [
     {
       "id": "t1",
-      "npc": "Yesid: ¡Tomás! Cuánto tiempo sin verte por el taller. ¿Pasó algo?",
-      "npcEn": "Yesid: Tomás! It's been so long since I saw you at the garage. Did something happen?",
+      "npc": "Camilo: ¡Tomás! Cuánto tiempo sin verte por el taller. ¿Se volvió a dañar la Burra?",
+      "npcEn": "Camilo: Tomás! It's been so long since I saw you at the garage. Has the Burra broken down again?",
       "intent": "Ask him, as a friend, whether he would do you a favour.",
       "accept": [
-        "Yesid, ¿me harías un favor?",
-        "Hola, Yesid. Necesito pedirte algo. ¿Me harías un favor?",
-        "¿Me harías un favor, Yesid?"
+        "Camilo, ¿me harías un favor?",
+        "Hola, Camilo. Necesito pedirte algo. ¿Me harías un favor?",
+        "No, tranquilo. ¿Me harías un favor, Camilo?"
       ],
       "require": [
         {
@@ -35,13 +35,13 @@
     },
     {
       "id": "t2",
-      "npc": "Yesid: Depende. ¿De qué se trata?",
-      "npcEn": "Yesid: Depends. What is it about?",
+      "npc": "Camilo: Depende. ¿De qué se trata?",
+      "npcEn": "Camilo: Depends. What is it about?",
       "intent": "Say that Vale told you to ask him for the car on Saturday.",
       "accept": [
         "Vale me dijo que te pidiera el carro el sábado.",
         "Es que Vale me dijo que te pidiera el carro prestado para el sábado.",
-        "Vale me pidió que te pidiera el carro, Yesid. Es para el sábado."
+        "Vale me pidió que te pidiera el carro, Camilo. Es para el sábado."
       ],
       "require": [
         {
@@ -63,8 +63,8 @@
     },
     {
       "id": "t3",
-      "npc": "Yesid: ¿Y qué vas a hacer con él?",
-      "npcEn": "Yesid: And what are you going to do with it?",
+      "npc": "Camilo: ¿Y qué vas a hacer con él?",
+      "npcEn": "Camilo: And what are you going to do with it?",
       "intent": "Say you need it to move the espresso machine, and ask him to lend it to you.",
       "accept": [
         "Necesito llevar la máquina de espresso al café. ¿Me lo prestas?",
@@ -91,12 +91,12 @@
     },
     {
       "id": "t4",
-      "npc": "Yesid: Ya veremos. Ese carro huele raro desde el martes, creo que es el combustible.",
-      "npcEn": "Yesid: We'll see. That car has smelled strange since Tuesday, I think it's the fuel.",
+      "npc": "Camilo: Ya veremos. Ese carro huele raro desde el martes, creo que es el combustible.",
+      "npcEn": "Camilo: We'll see. That car has smelled strange since Tuesday, I think it's the fuel.",
       "intent": "Offer to help him look at it (Déjame que...).",
       "accept": [
         "Déjame que te ayude a revisarlo.",
-        "Déjame que te ayude con eso, Yesid.",
+        "Déjame que te ayude con eso, Camilo.",
         "Déjame que te ayude, no me cuesta nada."
       ],
       "require": [
@@ -119,13 +119,13 @@
     },
     {
       "id": "t5",
-      "npc": "Yesid: No hace falta, yo lo arreglo. Bueno, si no hay más remedio, te lo presto, pero que sea la última vez que me lo devuelves sin combustible.",
-      "npcEn": "Yesid: There's no need, I'll fix it. Well, if there's no other way, I'll lend it to you, but let it be the last time you give it back to me with no fuel.",
+      "npc": "Camilo: No hace falta, yo lo arreglo. Bueno, si no hay más remedio, te lo presto, pero que sea la última vez que me lo devuelvas sin combustible.",
+      "npcEn": "Camilo: There's no need, I'll fix it. Well, if there's no other way, I'll lend it to you, but let it be the last time you give it back to me with no fuel.",
       "intent": "Promise it's the last time, and say you don't know how to thank him.",
       "accept": [
         "Te lo prometo. No sé cómo agradecértelo.",
         "Palabra. Es la última vez, y no sé cómo agradecértelo, de verdad.",
-        "Prometido, Yesid. No sé cómo agradecértelo."
+        "Prometido, Camilo. No sé cómo agradecértelo."
       ],
       "require": [
         {
@@ -147,12 +147,12 @@
     },
     {
       "id": "t6",
-      "npc": "Yesid: Cuando quieras pasas por las llaves. Tú trae la máquina entera.",
-      "npcEn": "Yesid: Whenever you like, come by for the keys. You just bring the whole machine.",
+      "npc": "Camilo: Cuando quieras pasas por las llaves. Eso sí, me lo devuelves entero.",
+      "npcEn": "Camilo: Come by for the keys whenever you like. Just give it back to me in one piece.",
       "intent": "Say you'll pick up the keys tomorrow at nine, and wish for it all to go well (crucemos los dedos).",
       "accept": [
         "Mañana a las nueve paso por las llaves. Crucemos los dedos para que todo salga bien.",
-        "Paso por ellas mañana a las nueve. Crucemos los dedos para que la máquina llegue entera.",
+        "Paso por ellas mañana a las nueve. Crucemos los dedos para que el carro vuelva entero.",
         "Mañana temprano paso. Y crucemos los dedos para que todo salga bien."
       ],
       "require": [
@@ -194,9 +194,9 @@
     "c:te-lo-prometo",
     "c:tengo",
     "c:tengo-que",
+    "c:tranquilo",
     "c:voy-vas",
     "c:ya-veremos",
-    "g:adjective-agreement",
     "g:commands-tu",
     "g:commands-with-pronouns",
     "g:conditional",
@@ -208,6 +208,7 @@
     "g:hay-vs-esta",
     "g:imperfect-subj",
     "g:ir-a-plans",
+    "g:lo-adjective",
     "g:negation-words",
     "g:object-pronoun-position",
     "g:para-que",
@@ -216,7 +217,7 @@
     "g:prep-pronouns",
     "g:present-ar",
     "g:present-er-ir",
-    "g:preterite-ar",
+    "g:preterite-er-ir",
     "g:preterite-irregular-strong",
     "g:preterite-spelling-stem",
     "g:questions",
@@ -229,6 +230,7 @@
     "g:subj-wanting",
     "g:that-clauses",
     "g:verb-infinitive",
+    "g:verbs-of-change",
     "g:yo-irregular",
     "l:agradecer",
     "l:arreglar",
@@ -236,6 +238,7 @@
     "l:bien",
     "l:bueno",
     "l:café",
+    "l:camilo",
     "l:carro",
     "l:combustible",
     "l:costar",
@@ -243,18 +246,19 @@
     "l:cruzar",
     "l:cuánto",
     "l:cómo",
+    "l:dañar",
     "l:decir",
     "l:dedo",
     "l:dejar",
     "l:depender",
     "l:devolver",
+    "l:devuelva",
     "l:entero",
     "l:falta",
     "l:favor",
     "l:hacer",
     "l:ir",
     "l:llave",
-    "l:llegar",
     "l:llevar",
     "l:martes",
     "l:mañana",
@@ -281,19 +285,21 @@
     "l:temprano",
     "l:tener",
     "l:tiempo",
-    "l:traer",
+    "l:tranquilo",
     "l:tratarse",
     "l:ver",
     "l:verdad",
     "l:vez",
+    "l:volver",
+    "l:volverse",
     "p:bien-bueno",
     "p:bien-mal-vs-bueno-malo",
+    "p:con-sin",
     "p:costarle",
     "p:days-el-lunes",
     "p:dejame-que-te-ayude",
     "p:demonstratives-basic",
     "p:indefinites-basic",
-    "p:llevar-traer",
     "p:me-haces-el-favor-de",
     "p:me-harias-un-favor",
     "p:me-te-nos-objects",

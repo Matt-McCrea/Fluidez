@@ -31,7 +31,7 @@
       "en": "Tomás is bad at waiting."
     }
   ],
-  "rule": "English says \"I'm good at it\". Spanish says \"it gives itself well to me\": *Se me da bien cocinar*.\n\nThe person is *me, te, le, nos, les*. Add *a Vale* or *a mí* to name or stress who.\n\nThe skill is what *se da*, so a plural skill makes the verb plural: *Se me dan mal los números*. A verb stays singular: *Se me da bien cocinar*.\n\nAnother way: *tener facilidad para* + noun: *Mariana tiene facilidad para los idiomas*.",
+  "rule": "English says \"I'm good at it\". Spanish says \"it gives itself well to me\": *Se me da bien cocinar*.\n\nThe person is *me, te, le, nos, les*. Add *a Vale* or *a mí* to name or stress who.\n\nThe skill is what *se da*, so a plural skill makes the verb plural: *Se me dan mal los números*. An action stays singular: *Se me da bien cocinar*.\n\nAnother way: *tener facilidad para* + noun: *Mariana tiene facilidad para los idiomas*. In Colombia you will also hear *soy bueno para cocinar*.",
   "smallPrint": "Teachers call this a *gustar*-type construction: the skill is the subject and the person is the indirect object.",
   "readAndPick": [
     {
@@ -121,10 +121,12 @@
       "why": "*Números* is plural, so the verb is *dan*."
     },
     {
-      "prompt": "Choose *da* or *dan*: Se me ___ bien cocinar. Type the whole sentence.",
-      "answer": "Se me da bien cocinar.",
-      "accept": [],
-      "why": "A verb counts as one thing, so *da*."
+      "prompt": "Choose *da* or *dan*: A Mariana se le ___ bien escribir. Type the whole sentence.",
+      "answer": "A Mariana se le da bien escribir.",
+      "accept": [
+        "Se le da bien escribir a Mariana."
+      ],
+      "why": "An action counts as one thing, so *da*."
     },
     {
       "prompt": "Type in Spanish, to a friend: Are you good at driving?",
@@ -169,9 +171,9 @@
       "why": "Almost. *Números* is plural, so the verb is *dan*."
     },
     {
-      "wrong": "A Vale se la da bien cocinar.",
-      "right": "A Vale se le da bien cocinar.",
-      "why": "Almost. The person is always *le* (to her), never *la*."
+      "wrong": "Soy bueno en cocinar.",
+      "right": "Se me da bien cocinar.",
+      "why": "Almost. *Bueno en* copies English \"good at\"; say *se me da bien* (or *soy bueno para*)."
     }
   ],
   "personal": "Say one thing that comes easily to you and one that doesn't: *Se me da bien…* and *Se me da mal…*"

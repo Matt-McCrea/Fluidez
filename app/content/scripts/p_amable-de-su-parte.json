@@ -6,38 +6,167 @@
     "en": "That's very kind of you. (formal)"
   },
   "examples": [
-    { "es": "Muy amable de su parte.", "en": "That's very kind of you. (formal)" },
-    { "es": "Qué detalle de tu parte.", "en": "How thoughtful of you. (to a friend)" },
-    { "es": "Fue muy amable de tu parte venir a verme.", "en": "It was very kind of you to come and see me. (to a friend)" },
-    { "es": "Fue muy generoso al invitarnos.", "en": "It was very generous of him to invite us." },
-    { "es": "Es muy amable de su parte ayudarnos.", "en": "It's very kind of you to help us. (formal)" },
-    { "es": "Muy lindo de tu parte.", "en": "That's very lovely of you. (to a friend)" }
+    {
+      "es": "Muy amable de su parte.",
+      "en": "That's very kind of you. (formal)"
+    },
+    {
+      "es": "Qué detalle de tu parte.",
+      "en": "How thoughtful of you. (to a friend)"
+    },
+    {
+      "es": "Fue muy amable de tu parte venir a verme.",
+      "en": "It was very kind of you to come and see me. (to a friend)"
+    },
+    {
+      "es": "Fue muy generoso al invitarnos.",
+      "en": "It was very generous of him to invite us."
+    },
+    {
+      "es": "Es muy amable de su parte ayudarnos.",
+      "en": "It's very kind of you to help us. (formal)"
+    },
+    {
+      "es": "Muy lindo de tu parte.",
+      "en": "That's really sweet of you. (to a friend)"
+    }
   ],
   "rule": "English says \"kind of you\". Spanish says \"kind of your part\": the quality, then *de su parte* (for *usted*) or *de tu parte* (for *tú*).\n\n*Muy amable de su parte.* To name the kind act, add an infinitive: *Fue muy amable de tu parte venir a verme.*\n\nTo praise someone not in the conversation, use *al* plus an infinitive: *Fue muy generoso al invitarnos*, \"in inviting us\".\n\nUse *ser*, not *estar*: the kindness belongs to the act. Often *Muy amable* alone is enough.",
   "smallPrint": "Teachers call *al* plus an infinitive a temporal infinitive clause, \"on doing\".",
   "readAndPick": [
-    { "es": "Muy amable de su parte.", "options": ["That's very kind of you. (formal)", "That's very kind of him.", "That's very kind of you. (to a friend)"], "answer": 0 },
-    { "es": "Qué detalle de tu parte.", "options": ["How thoughtful of me.", "How thoughtful of her.", "How thoughtful of you. (to a friend)"], "answer": 2 },
-    { "es": "Fue muy amable de tu parte venir a verme.", "options": ["It was very kind of him to come and see me.", "It was very kind of you to come and see me. (to a friend)", "It will be very kind of you to come and see me."], "answer": 1 },
-    { "es": "Fue muy generoso al invitarnos.", "options": ["It was very generous of us to invite him.", "It was very generous of you to invite me.", "It was very generous of him to invite us."], "answer": 2 },
-    { "es": "Muy lindo de tu parte.", "options": ["That's very lovely of you. (to a friend)", "That's very lovely of you. (formal)", "That's very lovely of me."], "answer": 0 },
-    { "es": "Es muy amable de su parte ayudarnos.", "options": ["It's very kind of us to help you.", "It's very kind of you to help me. (formal)", "It's very kind of you to help us. (formal)"], "answer": 2 },
-    { "es": "Fue muy amable al ayudarme.", "options": ["It was very kind of me to help him.", "It was very kind of him to help me.", "It was very kind of him to help us."], "answer": 1 },
-    { "es": "Qué amable de su parte.", "options": ["How kind of you. (to a friend)", "How kind of him.", "How kind of you. (formal)"], "answer": 2 }
+    {
+      "es": "Muy amable de su parte.",
+      "options": [
+        "That's very kind of you. (formal)",
+        "That's very kind of him.",
+        "That's very kind of you. (to a friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Qué detalle de tu parte.",
+      "options": [
+        "How thoughtful of me.",
+        "How thoughtful of her.",
+        "How thoughtful of you. (to a friend)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Fue muy amable de tu parte venir a verme.",
+      "options": [
+        "It was very kind of him to come and see me.",
+        "It was very kind of you to come and see me. (to a friend)",
+        "It will be very kind of you to come and see me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Fue muy generoso al invitarnos.",
+      "options": [
+        "It was very generous of us to invite him.",
+        "It was very generous of you to invite me.",
+        "It was very generous of him to invite us."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Muy lindo de tu parte.",
+      "options": [
+        "That's really sweet of you. (to a friend)",
+        "That's really sweet of you. (formal)",
+        "That's really sweet of me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es muy amable de su parte ayudarnos.",
+      "options": [
+        "It's very kind of us to help you.",
+        "It's very kind of you to help me. (formal)",
+        "It's very kind of you to help us. (formal)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Fue muy amable al ayudarme.",
+      "options": [
+        "It was very kind of me to help him.",
+        "It was very kind of him to help me.",
+        "It was very kind of him to help us."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Qué amable de su parte.",
+      "options": [
+        "How kind of you. (to a friend)",
+        "How kind of him.",
+        "How kind of you. (formal)"
+      ],
+      "answer": 2
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick *de su parte* or *de tu parte* for someone you call *usted*, then type the whole sentence: That's very kind of you. *Muy amable ___.*", "answer": "Muy amable de su parte.", "accept": [], "why": "*Su parte* is the *usted* version of \"of you\"." },
-    { "prompt": "Type in Spanish, to a friend: How thoughtful of you.", "answer": "Qué detalle de tu parte.", "accept": [], "why": "A *detalle* is a thoughtful touch, and *de tu parte* gives \"of you\"." },
-    { "prompt": "Type in Spanish, to a friend: It was very kind of you to come and see me.", "answer": "Fue muy amable de tu parte venir a verme.", "accept": [], "why": "The act comes last, as an infinitive: *venir a verme*." },
-    { "prompt": "Type in Spanish: It was very generous of him to invite us.", "answer": "Fue muy generoso al invitarnos.", "accept": [], "why": "For a third person, *al* plus an infinitive means \"in inviting\"." },
-    { "prompt": "Make it formal. *Fue muy amable de tu parte venir a verme.* Say, to someone you call *usted*: It was very kind of you to come and see me.", "answer": "Fue muy amable de su parte venir a verme.", "accept": [], "why": "Only *tu* becomes *su*." },
-    { "prompt": "Type in Spanish: It was very kind of him to help me.", "answer": "Fue muy amable al ayudarme.", "accept": [], "why": "*Al* plus an infinitive; the *me* sticks to the end of *ayudar*." },
-    { "prompt": "Type in Spanish, to someone you call *usted*: How kind of you.", "answer": "Qué amable de su parte.", "accept": [], "why": "*Qué* plus the quality works like \"how kind\"." }
+    {
+      "prompt": "Pick *de su parte* or *de tu parte* for someone you call *usted*, then type the whole sentence: That's very kind of you. *Muy amable ___.*",
+      "answer": "Muy amable de su parte.",
+      "accept": [],
+      "why": "*Su parte* is the *usted* version of \"of you\"."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: How thoughtful of you.",
+      "answer": "Qué detalle de tu parte.",
+      "accept": [],
+      "why": "A *detalle* is a thoughtful touch, and *de tu parte* gives \"of you\"."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: It was very kind of you to come and see me.",
+      "answer": "Fue muy amable de tu parte venir a verme.",
+      "accept": [],
+      "why": "The act comes last, as an infinitive: *venir a verme*."
+    },
+    {
+      "prompt": "Type in Spanish: It was very generous of him to invite us.",
+      "answer": "Fue muy generoso al invitarnos.",
+      "accept": [],
+      "why": "For a third person, *al* plus an infinitive means \"in inviting\"."
+    },
+    {
+      "prompt": "Make it formal. *Fue muy amable de tu parte venir a verme.* Say, to someone you call *usted*: It was very kind of you to come and see me.",
+      "answer": "Fue muy amable de su parte venir a verme.",
+      "accept": [],
+      "why": "Only *tu* becomes *su*."
+    },
+    {
+      "prompt": "Type in Spanish: It was very kind of him to help me.",
+      "answer": "Fue muy amable al ayudarme.",
+      "accept": [],
+      "why": "*Al* plus an infinitive; the *me* sticks to the end of *ayudar*."
+    },
+    {
+      "prompt": "Type in Spanish, to someone you call *usted*: How kind of you.",
+      "answer": "Qué amable de su parte.",
+      "accept": [],
+      "why": "*Qué* plus the quality works like \"how kind\"."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Eres muy amable de tu parte.", "right": "Muy amable de tu parte.", "why": "Almost. The phrase already says \"of you\", so no *eres* is needed." },
-    { "wrong": "Fue muy amable de ti venir a verme.", "right": "Fue muy amable de tu parte venir a verme.", "why": "Almost. English \"of you\" is *de tu parte* in Spanish, not *de ti*." },
-    { "wrong": "Estuvo muy amable de su parte.", "right": "Fue muy amable de su parte.", "why": "Almost. Praise for an act takes *ser* (*fue*), because the kindness belongs to the act, not to a passing mood." }
+    {
+      "wrong": "Eres muy amable de tu parte.",
+      "right": "Muy amable de tu parte.",
+      "why": "Almost. The phrase already says \"of you\", so no *eres* is needed."
+    },
+    {
+      "wrong": "Fue muy amable de ti venir a verme.",
+      "right": "Fue muy amable de tu parte venir a verme.",
+      "why": "Almost. English \"of you\" is *de tu parte* in Spanish, not *de ti*."
+    },
+    {
+      "wrong": "Estuvo muy amable de su parte.",
+      "right": "Fue muy amable de su parte.",
+      "why": "Almost. Praise for an act takes *ser* (*fue*), because the kindness belongs to the act, not to a passing mood."
+    }
   ],
   "personal": "Remember something kind someone did for you recently. Thank them in one line, starting with *Fue muy amable de tu parte…* or *Muy amable de su parte*."
 }

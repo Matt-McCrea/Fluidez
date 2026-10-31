@@ -1,7 +1,7 @@
 {
   "node": "p:lo-antes-posible",
   "hook": {
-    "line": "Don Hernando's carro won't start and he needs the mechanic today. \"Soon\" won't do: he wants it as soon as possible, and he says so politely.",
+    "line": "Don Hernando's old taxi won't start and he needs the mechanic today. \"Soon\" won't do: he wants it as soon as possible, and he says so politely.",
     "es": "Llámeme lo antes posible.",
     "en": "Call me as soon as possible. (formal)"
   },
@@ -31,7 +31,7 @@
       "en": "I need the car as soon as possible."
     }
   ],
-  "rule": "*Lo antes posible* is a fixed block meaning \"as soon as possible\". It never changes: *Llámeme lo antes posible*.\n\nFor \"as fast or as well as you can\", use *lo más* or *lo mejor* + *que* + *poder*:\n*Vine lo más rápido que pude.*\n*Hágalo lo mejor que pueda.*\n\n*Poder* follows the time. *Pude* is for something that already happened, *pueda* or *puedo* for what is still ahead. There is no *tan* and no *como*.",
+  "rule": "*Lo antes posible* is a fixed block meaning \"as soon as possible\". It never changes: *Llámeme lo antes posible*.\n\nFor \"as fast or as well as you can\", use *lo más* or *lo mejor* + *que* + *poder*:\n*Vine lo más rápido que pude.*\n*Hágalo lo mejor que pueda.*\n\n*Poder* follows the time. *Pude* is for something that already happened, *puedo* for what you usually do, and *pueda* for what is still ahead. There is no *tan* and no *como*.",
   "smallPrint": "Teachers call this the neuter *lo* with a comparative: *lo más rápido*, *lo mejor*.",
   "readAndPick": [
     {
@@ -53,11 +53,11 @@
       "answer": 0
     },
     {
-      "es": "Vengo lo más rápido que pueda.",
+      "es": "Llego lo más rápido que pueda.",
       "options": [
-        "I came as fast as I could.",
-        "I always come as fast as I want.",
-        "I'll come as fast as I can."
+        "I got there as fast as I could.",
+        "I always get there as fast as I want.",
+        "I'll get there as fast as I can."
       ],
       "answer": 2
     },

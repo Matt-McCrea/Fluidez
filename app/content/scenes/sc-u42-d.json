@@ -3,12 +3,12 @@
   "unit": "u42",
   "title": "La grabadora de Altamira",
   "spare": true,
-  "brief": "You're Tomás, sitting across from Ricardo Altamira's polished assistant, Camila. A recorder sits on the table and everything you say is on the record. Stay formal, stay polite, smile, and still get your point across.",
+  "brief": "You're Tomás, sitting across from Ricardo Altamira's polished assistant, Paola Rey. A recorder sits on the table and everything you say is on the record. Stay formal, stay polite, smile, and still get your point across.",
   "turns": [
     {
       "id": "t1",
-      "npc": "Camila: Buenas tardes, señor Herrera. Le aviso que esta conversación queda grabada. ¿Le parece bien?",
-      "npcEn": "Camila: Good afternoon, Mr Herrera. I should let you know that this conversation is being recorded. Is that all right with you?",
+      "npc": "Paola: Buenas tardes, señor Herrera. Le aviso que esta conversación queda grabada. ¿Le parece bien?",
+      "npcEn": "Paola: Good afternoon, Mr Herrera. I should let you know that this conversation is being recorded. Is that all right with you?",
       "intent": "Say that is fine, and ask permission to make a comment before you begin.",
       "accept": [
         "Está bien. Antes de empezar, ¿me permite un comentario?",
@@ -33,8 +33,8 @@
     },
     {
       "id": "t2",
-      "npc": "Camila: Por supuesto, dígame.",
-      "npcEn": "Camila: Of course, go ahead.",
+      "npc": "Paola: Por supuesto, dígame.",
+      "npcEn": "Paola: Of course, go ahead.",
       "intent": "Begin with 'to be honest' (formal) and say you don't find it appropriate to buy the whole block without talking to the neighbours.",
       "accept": [
         "Para serle sincero, no me parece apropiado comprar toda la cuadra sin hablar con los vecinos.",
@@ -63,8 +63,8 @@
     },
     {
       "id": "t3",
-      "npc": "Camila: Entiendo su posición. El señor Altamira estaría encantado de recibirlo. ¿Le propongo una reunión con él?",
-      "npcEn": "Camila: I understand your position. Mr Altamira would be delighted to receive you. Shall I suggest a meeting with him?",
+      "npc": "Paola: Entiendo su posición. El señor Altamira estaría encantado de recibirlo. ¿Le propongo una reunión con él?",
+      "npcEn": "Paola: I understand your position. Mr Altamira would be delighted to receive you. Shall I suggest a meeting with him?",
       "intent": "Say yes, and ask her to arrange it soon, starting with 'Le agradecería que...'.",
       "accept": [
         "Me parece bien. Le agradecería que organizara la reunión lo antes posible.",
@@ -89,13 +89,13 @@
     },
     {
       "id": "t4",
-      "npc": "Camila: Entonces confirmo que usted viene solo y retira la demanda.",
-      "npcEn": "Camila: Then I'll confirm that you are coming alone and withdrawing the lawsuit.",
-      "intent": "Correct her politely: you did not say that, and you are not withdrawing the lawsuit.",
+      "npc": "Paola: Entonces confirmo que usted viene solo y retira la solicitud del laboratorio.",
+      "npcEn": "Paola: Then I'll confirm that you are coming alone and withdrawing the request for the lab.",
+      "intent": "Correct her politely: you did not say that, and you are not withdrawing the request.",
       "accept": [
-        "Disculpe, pero yo no dije eso. No voy a retirar la demanda.",
-        "Perdone, pero no he dicho eso, y no pienso retirar la demanda.",
-        "No, señorita, yo no dije eso. La demanda no se retira."
+        "Disculpe, pero yo no dije eso. No voy a retirar la solicitud.",
+        "Perdone, pero yo nunca dije eso, y no pienso retirar la solicitud.",
+        "No, señorita, eso no lo dije. La solicitud sigue en pie."
       ],
       "require": [
         {
@@ -104,7 +104,7 @@
         },
         {
           "type": "regex",
-          "pattern": "\\bno (he dicho|dije)\\b",
+          "pattern": "\\b(no|nunca)\\s+(lo\\s+)?(he dicho|dije)\\b",
           "flags": "iu",
           "label": "say you didn't say it: no dije eso"
         },
@@ -119,13 +119,13 @@
     },
     {
       "id": "t5",
-      "npc": "Camila: Tiene razón, me equivoqué. Entonces, el lunes a las diez, ¿le parece bien?",
-      "npcEn": "Camila: You are right, I made a mistake. So, Monday at ten, does that suit you?",
+      "npc": "Paola: Tiene razón, me equivoqué. Entonces, el lunes a las diez, ¿le parece bien?",
+      "npcEn": "Paola: You are right, I made a mistake. So, Monday at ten, does that suit you?",
       "intent": "Accept Monday at ten, thank her, and wish her the best (le deseo lo mejor).",
       "accept": [
         "Me parece bien, el lunes a las diez. Muchas gracias, y le deseo lo mejor.",
         "Perfecto. Hasta el lunes, y le deseo lo mejor.",
-        "El lunes a las diez está bien. Le deseo lo mejor, Camila."
+        "El lunes a las diez está bien. Le deseo lo mejor, Paola."
       ],
       "require": [
         {
@@ -156,7 +156,6 @@
     "c:hola-buenos-dias",
     "c:le-deseo-lo-mejor",
     "c:me-parece-bien",
-    "c:no-se",
     "c:no-te-preocupes",
     "c:perdon-disculpe",
     "c:tienes",
@@ -174,7 +173,6 @@
     "g:ir-a-plans",
     "g:object-pronoun-position",
     "g:parecer-quedar",
-    "g:perfecto-experience",
     "g:por-para-1",
     "g:prep-infinitive",
     "g:prep-pronouns",
@@ -185,6 +183,7 @@
     "g:reflexive-routine",
     "g:ser-identity",
     "g:stem-boot",
+    "g:stem-e-i",
     "g:subj-past-triggers",
     "g:superlatives",
     "g:that-clauses",
@@ -205,7 +204,6 @@
     "l:creer",
     "l:cuadra",
     "l:decir",
-    "l:demanda",
     "l:desear",
     "l:disculpar",
     "l:empezar",
@@ -216,6 +214,7 @@
     "l:grabar",
     "l:hablar",
     "l:ir",
+    "l:laboratorio",
     "l:lunes",
     "l:mejor",
     "l:organizar",
@@ -224,6 +223,7 @@
     "l:perdonar",
     "l:perfecto",
     "l:permitir",
+    "l:pie",
     "l:posible",
     "l:posición",
     "l:problema",
@@ -232,13 +232,14 @@
     "l:razón",
     "l:recibir",
     "l:retirar",
-    "l:retirarse",
     "l:reunión",
+    "l:seguir",
     "l:semana",
     "l:ser",
     "l:señor",
     "l:señorito",
     "l:sincero",
+    "l:solicitud",
     "l:suponer",
     "l:tarde",
     "l:tener",
@@ -252,6 +253,7 @@
     "p:demonstratives-basic",
     "p:equivocarse",
     "p:es-adj-inf",
+    "p:frequency-scale",
     "p:intentar-conseguir",
     "p:le-agradeceria-que",
     "p:lo-antes-posible",

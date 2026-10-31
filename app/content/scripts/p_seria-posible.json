@@ -1,7 +1,7 @@
 {
   "node": "p:seria-posible",
   "hook": {
-    "line": "Tomás is on the phone with an office and cannot see the person. Two phrases ask for something formal without sounding like a command: it asks whether it is possible, not whether he has permission.",
+    "line": "Tomás is on the phone with an office and cannot see anyone's face. *¿Sería posible…?* asks whether something can be done, so nobody feels ordered about and nobody has to give permission.",
     "es": "¿Sería posible cambiar la cita para el jueves?",
     "en": "Would it be possible to move the appointment to Thursday?"
   },
@@ -98,13 +98,13 @@
       "answer": 0
     },
     {
-      "es": "¿Podría confirmar mi reserva?",
+      "es": "¿Podría confirmarme la reserva?",
       "options": [
-        "Could you confirm my booking?",
-        "Could I confirm my booking?",
-        "I confirmed my booking."
+        "Could you confirm the booking for me?",
+        "Could I confirm the booking?",
+        "I confirmed the booking."
       ],
-      "answer": 1
+      "answer": 0
     }
   ],
   "yourTurn": [
@@ -112,7 +112,7 @@
       "prompt": "Choose *cambiar* or *cambiara*: ¿Sería posible ___ la cita para el jueves? Type the whole sentence.",
       "answer": "¿Sería posible cambiar la cita para el jueves?",
       "accept": [],
-      "why": "Nobody new does it, so the infinitive is enough."
+      "why": "No one is named as doing it, so the plain infinitive is enough."
     },
     {
       "prompt": "Choose *enviar* or *enviara*: ¿Sería posible que me ___ el documento hoy? Type the whole sentence.",
@@ -121,8 +121,8 @@
       "why": "After *que* another person acts, so the verb needs the *-ra* form."
     },
     {
-      "prompt": "Type in Spanish, on the phone: Would it be possible to move the appointment to Thursday?",
-      "answer": "¿Sería posible cambiar la cita para el jueves?",
+      "prompt": "Type in Spanish, on the phone: Would it be possible to book a table for four?",
+      "answer": "¿Sería posible reservar una mesa para cuatro?",
       "accept": [],
       "why": "*Sería posible* + infinitive for something you want done."
     },
@@ -154,7 +154,7 @@
   "pitfalls": [
     {
       "wrong": "¿Sería posible que cambiar la cita?",
-      "right": "¿Sería posible cambiar la cita para el jueves?",
+      "right": "¿Sería posible cambiar la cita?",
       "why": "Almost. With *que* you need a verb with an ending; without a new person, just use the infinitive."
     },
     {

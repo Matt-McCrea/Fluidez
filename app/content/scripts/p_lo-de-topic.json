@@ -3,41 +3,184 @@
   "hook": {
     "line": "When everybody already knows about a problem, nobody wants to explain it again. Spanish packs the whole matter into two small words.",
     "es": "Lo de la reunión me tiene preocupado.",
-    "en": "The meeting thing has me worried."
+    "en": "The meeting thing has me worried. (a man speaking)"
   },
   "examples": [
-    { "es": "Lo de la reunión me tiene preocupado.", "en": "The meeting thing has me worried. (a man speaking)" },
-    { "es": "¿Cómo va lo del trabajo nuevo?", "en": "How's the new job thing going?" },
-    { "es": "Lo de ayer fue un error.", "en": "What happened yesterday was a mistake." },
-    { "es": "Siento mucho lo de doña Rosa.", "en": "I'm so sorry about what happened with Doña Rosa." },
-    { "es": "¿Qué pasó con lo de Altamira?", "en": "What happened with the Altamira business?" },
-    { "es": "Gracias por lo de ayer.", "en": "Thanks for yesterday." }
+    {
+      "es": "Lo de la reunión me tiene preocupado.",
+      "en": "The meeting thing has me worried. (a man speaking)"
+    },
+    {
+      "es": "¿Cómo va lo del trabajo nuevo?",
+      "en": "How's the new job thing going?"
+    },
+    {
+      "es": "Lo de ayer fue un error.",
+      "en": "What happened yesterday was a mistake."
+    },
+    {
+      "es": "Siento mucho lo de doña Rosa.",
+      "en": "I'm so sorry about what happened with Doña Rosa."
+    },
+    {
+      "es": "¿Qué pasó con lo de Altamira?",
+      "en": "What happened with the Altamira business?"
+    },
+    {
+      "es": "Gracias por lo de ayer.",
+      "en": "Thanks for yesterday."
+    }
   ],
   "rule": "*Lo de* plus a noun means \"the matter of…\", something you and the listener already know about. English has no single word for it, so it says \"the … thing\", \"that business\" or \"what happened with…\".\n\n*Lo* never changes for gender or number: *lo de la reunión*, *lo de los papeles*. With *el*, *de* and *el* join: *lo del trabajo*.\n\nIt only works with shared context. If the listener has no idea, spell it out.",
   "smallPrint": "Teachers call *lo* here the neuter article. It turns a whole situation into something you can talk about.",
   "readAndPick": [
-    { "es": "Lo de la reunión me tiene preocupado.", "options": ["The meeting thing has me worried. (a man speaking)", "The meeting thing has me worried. (a woman speaking)", "The meetings worry him."], "answer": 0 },
-    { "es": "¿Cómo va lo del trabajo nuevo?", "options": ["Where is the new job?", "Who has the new job?", "How's the new job thing going?"], "answer": 2 },
-    { "es": "Lo de ayer fue un error.", "options": ["Yesterday I made a mistake.", "What happened yesterday was a mistake.", "Yesterday was a holiday."], "answer": 1 },
-    { "es": "Siento mucho lo de doña Rosa.", "options": ["I really like Doña Rosa.", "I miss Doña Rosa's café.", "I'm so sorry about what happened with Doña Rosa."], "answer": 2 },
-    { "es": "¿Qué pasó con lo de Altamira?", "options": ["What happened with the Altamira business?", "Who is Altamira?", "Where is Altamira?"], "answer": 0 },
-    { "es": "Lo de la beca sigue pendiente.", "options": ["The scholarship was awarded last week.", "The scholarship matter is still pending.", "The scholarships are still pending."], "answer": 1 },
-    { "es": "Lo del apartamento ya está listo.", "options": ["The apartment is far away.", "The apartments are ready.", "The apartment matter is already sorted."], "answer": 2 },
-    { "es": "Hablamos de lo del contrato mañana.", "options": ["We'll talk about the contract matter tomorrow.", "We talked about the contract yesterday.", "We'll talk to the contract tomorrow."], "answer": 0 }
+    {
+      "es": "Lo de la reunión me tiene preocupado.",
+      "options": [
+        "The meeting thing has me worried. (a man speaking)",
+        "The meeting thing has me worried. (a woman speaking)",
+        "The meetings worry him."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Cómo va lo del trabajo nuevo?",
+      "options": [
+        "Where is the new job?",
+        "Who has the new job?",
+        "How's the new job thing going?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Lo de ayer fue un error.",
+      "options": [
+        "Yesterday I made a mistake.",
+        "What happened yesterday was a mistake.",
+        "Yesterday was a holiday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Siento mucho lo de doña Rosa.",
+      "options": [
+        "I really like Doña Rosa.",
+        "I miss Doña Rosa's café.",
+        "I'm so sorry about what happened with Doña Rosa."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Qué pasó con lo de Altamira?",
+      "options": [
+        "What happened with the Altamira business?",
+        "Who is Altamira?",
+        "Where is Altamira?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Lo de la beca sigue pendiente.",
+      "options": [
+        "The scholarship was awarded last week.",
+        "The scholarship matter is still pending.",
+        "The scholarships are still pending."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Lo del apartamento ya está listo.",
+      "options": [
+        "The apartment is far away.",
+        "The apartments are ready.",
+        "The apartment matter is already sorted."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Hablamos de lo del contrato mañana.",
+      "options": [
+        "We'll talk about the contract matter tomorrow.",
+        "We talked about the contract yesterday.",
+        "We'll talk to the contract tomorrow."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick *Lo de* or *La de* and type the whole sentence: *___ ayer fue un error.*", "answer": "Lo de ayer fue un error.", "accept": ["Lo de ayer fue un error"], "why": "*Lo* is neutral, so it never takes *la*." },
-    { "prompt": "Type in Spanish: How's the scholarship thing going?", "answer": "¿Cómo va lo de la beca?", "accept": ["Cómo va lo de la beca"], "why": "*Lo de* plus *la beca* packs the whole matter into the question." },
-    { "prompt": "Type in Spanish: I'm so sorry about what happened with Doña Rosa.", "answer": "Siento mucho lo de doña Rosa.", "accept": ["Siento mucho lo de doña Rosa"], "why": "*Lo de* plus a name points to what happened to that person." },
-    { "prompt": "Type in Spanish: What happened with the Altamira business?", "answer": "¿Qué pasó con lo de Altamira?", "accept": ["Qué pasó con lo de Altamira"], "why": "After *con*, *lo de* still means \"the matter of\"." },
-    { "prompt": "Swap the topic to the contract (*de* and *el* join into *del*): *Lo de la reunión me tiene preocupado.*", "answer": "Lo del contrato me tiene preocupado.", "accept": ["Lo del contrato me tiene preocupado"], "why": "*De* plus *el* becomes *del*, and *lo* stays the same." },
-    { "prompt": "Type in Spanish: The apartment matter is already sorted.", "answer": "Lo del apartamento ya está listo.", "accept": ["Lo del apartamento ya está listo"], "why": "*Lo del* plus a noun is the whole matter, and *listo* stays masculine." },
-    { "prompt": "Type in Spanish: Thanks for yesterday.", "answer": "Gracias por lo de ayer.", "accept": ["Gracias por lo de ayer"], "why": "*Lo de ayer* covers everything that happened yesterday." }
+    {
+      "prompt": "Pick *Lo de* or *La de* and type the whole sentence: *___ ayer fue un error.*",
+      "answer": "Lo de ayer fue un error.",
+      "accept": [
+        "Lo de ayer fue un error"
+      ],
+      "why": "*Lo* is neutral, so it never takes *la*."
+    },
+    {
+      "prompt": "Type in Spanish: How's the scholarship thing going?",
+      "answer": "¿Cómo va lo de la beca?",
+      "accept": [
+        "Cómo va lo de la beca"
+      ],
+      "why": "*Lo de* plus *la beca* packs the whole matter into the question."
+    },
+    {
+      "prompt": "Type in Spanish: I'm so sorry about what happened with Doña Rosa.",
+      "answer": "Siento mucho lo de doña Rosa.",
+      "accept": [
+        "Siento mucho lo de doña Rosa"
+      ],
+      "why": "*Lo de* plus a name points to what happened to that person."
+    },
+    {
+      "prompt": "Type in Spanish: What happened with the Altamira business?",
+      "answer": "¿Qué pasó con lo de Altamira?",
+      "accept": [
+        "Qué pasó con lo de Altamira"
+      ],
+      "why": "After *con*, *lo de* still means \"the matter of\"."
+    },
+    {
+      "prompt": "Swap the topic to the contract (*de* and *el* join into *del*): *Lo de la reunión me tiene preocupado.*",
+      "answer": "Lo del contrato me tiene preocupado.",
+      "accept": [
+        "Lo del contrato me tiene preocupado"
+      ],
+      "why": "*De* plus *el* becomes *del*, and *lo* stays the same."
+    },
+    {
+      "prompt": "Type in Spanish: The apartment matter is already sorted.",
+      "answer": "Lo del apartamento ya está listo.",
+      "accept": [
+        "Lo del apartamento ya está listo"
+      ],
+      "why": "*Lo del* plus a noun is the whole matter, and *listo* stays masculine."
+    },
+    {
+      "prompt": "Type in Spanish: Thanks for yesterday.",
+      "answer": "Gracias por lo de ayer.",
+      "accept": [
+        "Gracias por lo de ayer"
+      ],
+      "why": "*Lo de ayer* covers everything that happened yesterday."
+    }
   ],
   "pitfalls": [
-    { "wrong": "La de la reunión me tiene preocupado.", "right": "Lo de la reunión me tiene preocupado.", "why": "Almost. It is not a feminine noun; *lo* is the neutral \"matter\", even before *la reunión*." },
-    { "wrong": "¿Cómo va lo de el trabajo nuevo?", "right": "¿Cómo va lo del trabajo nuevo?", "why": "Almost. *De* and *el* always join into *del*." },
-    { "wrong": "Lo sobre la reunión me tiene preocupado.", "right": "Lo de la reunión me tiene preocupado.", "why": "Almost. Spanish links the matter with *de*, not with *sobre*." }
+    {
+      "wrong": "La de la reunión me tiene preocupado.",
+      "right": "Lo de la reunión me tiene preocupado.",
+      "why": "Almost. It is not a feminine noun; *lo* is the neutral \"matter\", even before *la reunión*."
+    },
+    {
+      "wrong": "¿Cómo va lo de el trabajo nuevo?",
+      "right": "¿Cómo va lo del trabajo nuevo?",
+      "why": "Almost. *De* and *el* always join into *del*."
+    },
+    {
+      "wrong": "Lo sobre la reunión me tiene preocupado.",
+      "right": "Lo de la reunión me tiene preocupado.",
+      "why": "Almost. Spanish links the matter with *de*, not with *sobre*."
+    }
   ],
   "personal": "What is one ongoing matter in your life that people around you know about? Type a sentence about it with *lo de*."
 }

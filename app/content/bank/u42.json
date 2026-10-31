@@ -332,8 +332,8 @@
   },
   {
     "id": "u42-0013",
-    "es": "¿Le llevo una silla? No hace falta, gracias, estoy bien de pie.",
-    "en": "Shall I bring you a chair? No need, thanks, I'm fine standing.",
+    "es": "¿Le llevo una silla?\nNo hace falta, gracias, estoy bien de pie.",
+    "en": "Shall I bring you a chair?\nNo need, thanks, I'm fine standing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -358,7 +358,7 @@
     "targets": [
       "p:no-hace-falta-que"
     ],
-    "kind": "question",
+    "kind": "dialogue",
     "unit": "u42",
     "theme": "no hace falta",
     "source": "gen"
@@ -642,7 +642,7 @@
   {
     "id": "u42-0023",
     "es": "Para sacar el pasaporte no es necesario que pida cita.",
-    "en": "To get the passport you don't need to make an appointment. (a man speaking about himself)",
+    "en": "To get the passport, you don't need to make an appointment. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -892,8 +892,8 @@
   },
   {
     "id": "u42-0032",
-    "es": "¿Le sirvo más? No hace falta, señora, ya comí bastante.",
-    "en": "Shall I serve you more? There's no need, madam, I've already eaten enough.",
+    "es": "¿Le sirvo más?\nNo hace falta, señora, ya comí bastante.",
+    "en": "Shall I serve you more?\nThere's no need, madam, I've already eaten enough.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -913,7 +913,7 @@
     "targets": [
       "p:no-hace-falta-que"
     ],
-    "kind": "question",
+    "kind": "dialogue",
     "unit": "u42",
     "theme": "no hace falta",
     "source": "gen"
@@ -1262,25 +1262,27 @@
   },
   {
     "id": "u42-0045",
-    "es": "Sin pedir perdón y sin excusas: no hace falta que lo hagas más difícil.",
-    "en": "No apologies and no excuses: you don't need to make it harder. (to a friend)",
+    "es": "Ya sé que lo sientes, no hace falta que lo hagas más difícil.",
+    "en": "I know you're sorry, you don't need to make it harder. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
-      "g:prep-infinitive",
       "g:present-er-ir",
       "g:relative-que",
+      "g:stem-boot",
       "g:subj-relative",
       "g:subj-wanting",
+      "g:that-clauses",
+      "g:yo-irregular",
       "l:difícil",
-      "l:excusa",
       "l:falta",
       "l:hacer",
-      "l:pedir",
-      "l:perdón",
+      "l:saber",
+      "l:sentir",
       "p:no-hace-falta-que",
-      "p:pedir-disculpas-por"
+      "p:saber-conocer",
+      "p:siento-llegar-tarde"
     ],
     "targets": [
       "p:no-hace-falta-que"
@@ -1590,8 +1592,8 @@
   },
   {
     "id": "u42-0057",
-    "es": "No me dejes que me vaya sin despedirme de Rosa.",
-    "en": "Don't let me leave without saying goodbye to Rosa. (to a friend)",
+    "es": "No me dejes que me vaya sin despedirme de doña Cecilia.",
+    "en": "Don't let me leave without saying goodbye to Doña Cecilia. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1606,7 +1608,8 @@
       "l:despedir",
       "l:irse",
       "p:dejame-que-te-ayude",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:senor-don-article"
     ],
     "targets": [
       "p:dejame-que-te-ayude"
@@ -1892,7 +1895,7 @@
   {
     "id": "u42-0068",
     "es": "Mamá, déjame que yo lleve a Simón a la ventana.",
-    "en": "Mum, let me take Simón to the window.",
+    "en": "Mom, let me take Simón to the window.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2128,8 +2131,8 @@
   },
   {
     "id": "u42-0077",
-    "es": "Permítame que la felicite por el discurso, doña Rosa.",
-    "en": "Allow me to congratulate you on the speech, Doña Rosa.",
+    "es": "Permítame que la felicite por el discurso, doña Pilar.",
+    "en": "Allow me to congratulate you on the speech, Doña Pilar.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2323,8 +2326,8 @@
   },
   {
     "id": "u42-0084",
-    "es": "Doña Rosa, la buscan en la puerta.",
-    "en": "Doña Rosa, someone is asking for you at the door.",
+    "es": "Doña Marta, la buscan en la puerta.",
+    "en": "Doña Marta, someone is asking for you at the door.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2568,7 +2571,7 @@
   {
     "id": "u42-0094",
     "es": "Muy buenas tardes, doña Luz.",
-    "en": "Very good afternoon, Doña Luz.",
+    "en": "A very good afternoon to you, Doña Luz.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2740,8 +2743,8 @@
   },
   {
     "id": "u42-0101",
-    "es": "Doña Rosa, el pan de hoy quedó mejor que nunca.",
-    "en": "Doña Rosa, today's bread came out better than ever.",
+    "es": "Doña Inés, el pan de hoy quedó mejor que nunca.",
+    "en": "Doña Inés, today's bread came out better than ever.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2978,8 +2981,8 @@
   },
   {
     "id": "u42-0110",
-    "es": "Doña Rosa, Simón no quiere comer hoy.",
-    "en": "Doña Rosa, Simón doesn't want to eat today.",
+    "es": "Don Hernando, Simón no quiere comer hoy.",
+    "en": "Don Hernando, Simón doesn't want to eat today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3186,8 +3189,8 @@
   },
   {
     "id": "u42-0118",
-    "es": "Doña Rosa, ¿le ayudo con el pedido?",
-    "en": "Doña Rosa, shall I help you with the order?",
+    "es": "Doña Gloria, ¿le ayudo con el pedido?",
+    "en": "Doña Gloria, shall I help you with the order?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3276,8 +3279,8 @@
   },
   {
     "id": "u42-0122",
-    "es": "Doña Rosa, ¿me reconoce?",
-    "en": "Doña Rosa, do you recognise me?",
+    "es": "Doña Teresa, ¿me reconoce?",
+    "en": "Doña Teresa, do you recognise me?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3481,7 +3484,7 @@
   {
     "id": "u42-0130",
     "es": "Ya la comunico, un momento.",
-    "en": "I'll put you through to her now, just a moment. (polite)",
+    "en": "I'll put you through now, just a moment. (to a woman)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3689,20 +3692,19 @@
   },
   {
     "id": "u42-0138",
-    "es": "Quiero que me comunique con la oficina de la señora Pardo.",
-    "en": "I'd like you to put me through to Mrs Pardo's office.",
+    "es": "Necesito que me comunique con la oficina de la señora Pardo.",
+    "en": "I need you to put me through to Mrs Pardo's office. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:quiero",
       "g:gender-articles",
+      "g:present-ar",
       "g:reflexive-routine",
-      "g:stem-boot",
       "g:subj-wanting",
       "g:that-clauses",
       "l:comunicarse",
+      "l:necesitar",
       "l:oficina",
-      "l:querer",
       "l:señora",
       "p:me-comunica-con",
       "p:senor-don-article"
@@ -3717,12 +3719,12 @@
   },
   {
     "id": "u42-0139",
-    "es": "Ya le comunico, no cuelgue.",
-    "en": "I'll put you through now, don't hang up. (polite)",
+    "es": "Ya lo comunico, no cuelgue.",
+    "en": "I'll put you through now, don't hang up. (to a man)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:indirect-objects",
+      "g:direct-objects",
       "g:negative-commands",
       "g:present-ar",
       "l:colgar",
@@ -3939,8 +3941,8 @@
   },
   {
     "id": "u42-0147",
-    "es": "Un momento, doña Rosa, ya la comunico con la sucursal.",
-    "en": "Just a moment, Doña Rosa, I'll put you through to the branch now.",
+    "es": "Un momento, doña Aura, ya la comunico con la sucursal.",
+    "en": "Just a moment, Doña Aura, I'll put you through to the branch now.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4050,19 +4052,18 @@
   },
   {
     "id": "u42-0151",
-    "es": "Permítame un momento, por favor, no cuelgue.",
-    "en": "One moment, please, don't hang up.",
+    "es": "Permítame un momento mientras busco su pedido.",
+    "en": "Allow me a moment while I look for your order. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:permitame-un-momento",
-      "c:por-favor",
-      "g:negative-commands",
-      "l:colgar",
-      "l:favor",
+      "g:present-ar",
+      "l:buscar",
       "l:momento",
+      "l:pedido",
       "l:permitir",
-      "p:request-ladder"
+      "p:possessives-basic"
     ],
     "targets": [
       "c:permitame-un-momento"
@@ -4352,19 +4353,20 @@
   },
   {
     "id": "u42-0162",
-    "es": "Si no lo pueden atender hoy, ¿me comunican con su ayudante?",
-    "en": "If they can't see him today, could you put me through to his assistant?",
+    "es": "Si el doctor no me puede atender hoy, ¿me comunica con su ayudante?",
+    "en": "If the doctor can't see me today, could you put me through to his assistant?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
+      "c:me-puede-ayudar",
+      "g:gender-articles",
       "g:present-ar",
       "g:si-present",
-      "g:stem-boot",
       "g:verb-infinitive",
       "l:atender",
       "l:ayudante",
       "l:comunicar",
+      "l:doctor",
       "l:hoy",
       "l:poder",
       "p:me-comunica-con",
@@ -4525,8 +4527,8 @@
   },
   {
     "id": "u42-0168",
-    "es": "En este momento no la puede atender, doña Rosa, ¿le devuelve la llamada?",
-    "en": "She can't take your call right now, Doña Rosa, shall she call you back?",
+    "es": "En este momento no la puede atender, doña Cecilia, ¿le devuelve la llamada?",
+    "en": "She can't take your call right now, Doña Cecilia, shall she call you back?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4642,8 +4644,8 @@
   },
   {
     "id": "u42-0172",
-    "es": "Le agradecería que no volviera a llegar tarde, señor Prieto.",
-    "en": "I would be grateful if you didn't arrive late again, Mr Prieto.",
+    "es": "Señor Prieto, le agradecería que no volviera a llegar tarde.",
+    "en": "Mr Prieto, I would be grateful if you didn't arrive late again.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4791,8 +4793,8 @@
   },
   {
     "id": "u42-0177",
-    "es": "Le agradecería que apagara el celular durante la reunión.",
-    "en": "I would appreciate it if you turned off your phone during the meeting. (polite)",
+    "es": "Durante la reunión, le agradecería que apagara el celular.",
+    "en": "During the meeting, I would appreciate it if you turned off your phone. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4848,8 +4850,8 @@
   },
   {
     "id": "u42-0179",
-    "es": "Le agradecería que me devolviera la llamada cuando pueda.",
-    "en": "I would appreciate it if you called me back when you can. (polite)",
+    "es": "Cuando pueda, le agradecería que me devolviera la llamada.",
+    "en": "When you can, I would appreciate it if you called me back. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4905,12 +4907,13 @@
   },
   {
     "id": "u42-0181",
-    "es": "Le agradecería que no fumara en esta entrada.",
-    "en": "I would appreciate it if you didn't smoke at this entrance. (polite)",
+    "es": "Señora, le agradecería que no fumara en la entrada.",
+    "en": "Madam, I would appreciate it if you didn't smoke at the entrance.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
+      "g:gender-articles",
       "g:imperfect-subj",
       "g:indirect-objects",
       "g:subj-past-triggers",
@@ -4918,7 +4921,7 @@
       "l:agradecer",
       "l:entrada",
       "l:fumar",
-      "p:demonstratives-basic",
+      "l:señora",
       "p:le-agradeceria-que"
     ],
     "targets": [
@@ -4931,24 +4934,26 @@
   },
   {
     "id": "u42-0182",
-    "es": "Le agradecería que me trajera la cuenta, por favor.",
-    "en": "I would be grateful if you brought me the bill, please. (polite)",
+    "es": "Si no es molestia, le agradecería que me enviara la cuenta por correo.",
+    "en": "If it's no trouble, I would be grateful if you sent me the bill by email. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:la-cuenta",
-      "c:por-favor",
       "g:conditional",
       "g:imperfect-subj",
       "g:indirect-objects",
+      "g:ser-identity",
+      "g:si-present",
       "g:subj-past-triggers",
       "g:that-clauses",
       "l:agradecer",
+      "l:correo",
       "l:cuenta",
-      "l:favor",
-      "l:traer",
+      "l:enviar",
+      "l:molestia",
+      "l:ser",
       "p:le-agradeceria-que",
-      "p:llevar-traer",
       "p:me-te-nos-objects"
     ],
     "targets": [
@@ -5142,8 +5147,8 @@
   },
   {
     "id": "u42-0189",
-    "es": "Le agradecería que escribiera su nombre completo en el formulario.",
-    "en": "I would be grateful if you wrote your full name on the form. (polite)",
+    "es": "En el formulario, le agradecería que escribiera su nombre completo.",
+    "en": "On the form, I would be grateful if you wrote your full name. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5201,20 +5206,25 @@
   },
   {
     "id": "u42-0191",
-    "es": "Le agradecería que no hablara de este asunto fuera de aquí.",
-    "en": "I would appreciate it if you didn't talk about this matter outside this room. (polite)",
+    "es": "Este asunto queda entre nosotros: le agradecería que no hablara de él fuera de aquí.",
+    "en": "This matter stays between us: I would appreciate it if you didn't talk about it outside this room. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
       "g:imperfect-subj",
       "g:indirect-objects",
+      "g:prep-pronouns",
+      "g:present-ar",
+      "g:ser-identity",
       "g:subj-past-triggers",
       "g:that-clauses",
       "l:agradecer",
       "l:aquí",
       "l:asunto",
       "l:hablar",
+      "l:quedar",
+      "l:ser",
       "p:aqui-ahi-alla",
       "p:cerca-de",
       "p:demonstratives-basic",
@@ -5343,21 +5353,20 @@
   },
   {
     "id": "u42-0196",
-    "es": "Le agradecería que se sentara, por favor, y esperara su turno.",
-    "en": "I would be grateful if you sat down, please, and waited your turn. (polite)",
+    "es": "Mientras espera su turno, le agradecería que se sentara.",
+    "en": "While you wait your turn, I would be grateful if you sat down. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:por-favor",
       "g:conditional",
       "g:imperfect-subj",
       "g:indirect-objects",
+      "g:present-ar",
       "g:reflexive-routine",
       "g:subj-past-triggers",
       "g:that-clauses",
       "l:agradecer",
       "l:esperar",
-      "l:favor",
       "l:sentarse",
       "l:turno",
       "p:le-agradeceria-que",
@@ -5744,7 +5753,7 @@
   },
   {
     "id": "u42-0211",
-    "es": "Lo mejor es que cuanto antes pidamos una cita en la notaría.",
+    "es": "Lo mejor es que pidamos una cita en la notaría cuanto antes.",
     "en": "The best thing is for us to book an appointment at the notary's as soon as possible.",
     "accept": [],
     "acceptEn": [],
@@ -6284,15 +6293,17 @@
   },
   {
     "id": "u42-0231",
-    "es": "Le agradezco mucho su paciencia.",
-    "en": "I'm very grateful for your patience. (polite)",
+    "es": "Le agradezco mucho su paciencia con nuestros papeles.",
+    "en": "I'm very grateful for your patience with our papers. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:indirect-objects",
+      "g:possessives",
       "g:yo-irregular",
       "l:agradecer",
       "l:paciencia",
+      "l:papel",
       "p:possessives-basic",
       "p:quantifiers-basic",
       "p:te-lo-agradezco"
@@ -6619,7 +6630,7 @@
   {
     "id": "u42-0244",
     "es": "Se lo agradezco de corazón, don Hernando.",
-    "en": "I thank you from the heart, Don Hernando.",
+    "en": "I thank you from the bottom of my heart, Don Hernando.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6962,7 +6973,7 @@
   {
     "id": "u42-0257",
     "es": "Simón no agradece nada, pero igual lo queremos.",
-    "en": "Simón thanks us for nothing, but we love him anyway.",
+    "en": "Simón is never grateful for anything, but we love him anyway.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7168,15 +7179,15 @@
   },
   {
     "id": "u42-0265",
-    "es": "No hay de qué. Fue un placer ayudarle.",
-    "en": "Don't mention it. It was a pleasure to help you. (polite)",
+    "es": "No hay de qué. Fue un placer ayudarlo.",
+    "en": "Don't mention it. It was a pleasure to help you. (polite, to a man)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hay",
+      "g:direct-objects",
       "g:gender-articles",
       "g:hay-vs-esta",
-      "g:indirect-objects",
       "g:indirect-questions",
       "g:object-pronoun-position",
       "g:preterite-ser-ir-hacer",
@@ -7407,8 +7418,8 @@
   },
   {
     "id": "u42-0275",
-    "es": "Le deseo lo mejor, doña Rosa, y gracias por todo.",
-    "en": "I wish you all the best, Doña Rosa, and thanks for everything.",
+    "es": "Le deseo lo mejor, doña Pilar, y gracias por todo.",
+    "en": "I wish you all the best, Doña Pilar, and thanks for everything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7748,22 +7759,23 @@
   },
   {
     "id": "u42-0288",
-    "es": "Es muy amable en preguntar, pero ya estoy mejor de la garganta.",
-    "en": "It's very kind of you to ask, but my throat is better now. (polite)",
+    "es": "Qué amable de su parte preguntar, pero ya estoy mejor de la garganta.",
+    "en": "How kind of you to ask, but my throat is better now. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:muy-amable",
       "g:estar-location-states",
       "g:gender-articles",
-      "g:ser-identity",
       "l:amable",
       "l:estar",
       "l:garganta",
       "l:mejor",
+      "l:parte",
       "l:preguntar",
-      "l:ser",
+      "l:qué",
       "p:amable-de-su-parte",
+      "p:possessives-basic",
       "p:preguntar-pedir"
     ],
     "targets": [
@@ -8388,19 +8400,24 @@
   },
   {
     "id": "u42-0311",
-    "es": "Gracias, qué amable de tu parte llamar tan temprano.",
-    "en": "Thanks, how kind of you to call so early. (to a friend)",
+    "es": "Llamaste tan temprano para felicitarme; qué amable de tu parte.",
+    "en": "You called so early to congratulate me; how kind of you. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:gracias-de-nada",
       "c:muy-amable",
+      "g:object-pronoun-position",
+      "g:preterite-ar",
       "l:amable",
+      "l:felicitar",
       "l:llamar",
       "l:parte",
       "l:qué",
       "l:temprano",
       "p:amable-de-su-parte",
+      "p:me-te-nos-objects",
+      "p:para-inf",
+      "p:para-inf-purpose",
       "p:possessives-basic"
     ],
     "targets": [
@@ -8524,13 +8541,14 @@
   },
   {
     "id": "u42-0316",
-    "es": "Mariana se lo agradeció todo al editor por teléfono.",
+    "es": "Mariana le agradeció todo al editor por teléfono.",
     "en": "Mariana thanked the editor for everything over the phone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:double-pronouns",
       "g:gender-articles",
+      "g:indirect-objects",
+      "g:le-doubling",
       "g:preterite-er-ir",
       "l:agradecer",
       "l:editor",
@@ -8548,7 +8566,7 @@
   {
     "id": "u42-0317",
     "es": "Se lo agradezco, pero tengo que irme.",
-    "en": "Thanks for that, but I have to go. (polite)",
+    "en": "I appreciate it, but I have to go. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8572,7 +8590,7 @@
   {
     "id": "u42-0318",
     "es": "Te lo agradezco y te prometo devolvértelo pronto.",
-    "en": "I appreciate it and I promise to pay you back soon. (to a friend)",
+    "en": "I appreciate it and I promise to give it back to you soon. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8624,19 +8642,25 @@
   },
   {
     "id": "u42-0320",
-    "es": "Se lo agradecería menos si no llegara tan tarde.",
-    "en": "I'd be less grateful if he didn't arrive so late.",
+    "es": "Le agradecería que la próxima vez no llegara tan tarde.",
+    "en": "I'd be grateful if next time you didn't arrive so late. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:conditional",
-      "g:double-pronouns",
+      "g:gender-articles",
       "g:imperfect-subj",
-      "g:si-hypothetical",
+      "g:indirect-objects",
+      "g:subj-past-triggers",
+      "g:that-clauses",
       "l:agradecer",
       "l:llegar",
+      "l:próximo",
       "l:tarde",
-      "p:le-agradeceria-que"
+      "l:vez",
+      "p:le-agradeceria-que",
+      "p:time-pasado-que-viene"
     ],
     "targets": [
       "p:le-agradeceria-que"
@@ -8649,7 +8673,7 @@
   {
     "id": "u42-0321",
     "es": "Dale saludos a tu mamá de mi parte.",
-    "en": "Say hi to your mum for me. (to a friend)",
+    "en": "Say hi to your mom for me. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8797,7 +8821,7 @@
   {
     "id": "u42-0327",
     "es": "Mi mamá les manda saludos a todos en el café.",
-    "en": "My mum sends greetings to everyone at the café.",
+    "en": "My mom sends greetings to everyone at the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8959,26 +8983,23 @@
   },
   {
     "id": "u42-0333",
-    "es": "Tomás le manda un abrazo a su abuela cada vez que pasa por el café.",
-    "en": "Tomás sends a hug to his grandmother every time he passes by the café.",
+    "es": "Tomás le manda un abrazo a su mamá en Toronto cada domingo.",
+    "en": "Tomás sends a hug to his mom in Toronto every Sunday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:un-abrazo",
       "g:cada-cualquier",
-      "g:gender-articles",
       "g:indirect-objects",
       "g:le-doubling",
-      "g:por-para-1",
       "g:present-ar",
       "l:abrazo",
-      "l:abuela",
-      "l:café",
+      "l:domingo",
+      "l:mamá",
       "l:mandar",
-      "l:pasar",
-      "l:vez",
       "p:possessives-basic",
-      "p:saludos-de-mi-parte"
+      "p:saludos-de-mi-parte",
+      "p:veces-al"
     ],
     "targets": [
       "p:saludos-de-mi-parte"
@@ -9066,7 +9087,7 @@
   {
     "id": "u42-0337",
     "es": "Vale, mándale un abrazo a tu mamá de parte de todos.",
-    "en": "Vale, send your mum a hug from all of us.",
+    "en": "Vale, send your mom a hug from all of us.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9150,7 +9171,7 @@
   {
     "id": "u42-0340",
     "es": "Me saludas a tu mamá y le dices que el pan le queda guardado.",
-    "en": "Say hello to your mum for me and tell her her bread is being kept for her. (to a friend)",
+    "en": "Say hello to your mom for me and tell her her bread is being kept for her. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10682,22 +10703,23 @@
   },
   {
     "id": "u42-0394",
-    "es": "¿Sería posible esperar hasta el lunes para la respuesta?",
-    "en": "Would it be possible to wait until Monday for the answer?",
+    "es": "Si no es mucha molestia, ¿sería posible esperar hasta el lunes?",
+    "en": "If it's not too much trouble, would it be possible to wait until Monday?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hasta-el-lunes",
       "g:conditional",
-      "g:gender-articles",
       "g:ser-identity",
+      "g:si-present",
       "l:esperar",
       "l:lunes",
+      "l:molestia",
       "l:posible",
-      "l:respuesta",
       "l:ser",
       "p:es-adj-inf",
-      "p:para-inf",
+      "p:no-es-x-es-y",
+      "p:quantifiers-basic",
       "p:seria-posible"
     ],
     "targets": [
@@ -10710,14 +10732,15 @@
   },
   {
     "id": "u42-0395",
-    "es": "¿Sería posible reservar el salón para el sábado por la noche?",
-    "en": "Would it be possible to book the room for Saturday night?",
+    "es": "Para el cumpleaños de Hernando, ¿sería posible reservar el salón el sábado por la noche?",
+    "en": "For Hernando's birthday, would it be possible to book the room on Saturday night?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
       "g:gender-articles",
       "g:ser-identity",
+      "l:cumpleaños",
       "l:noche",
       "l:posible",
       "l:reservar",
@@ -10740,17 +10763,19 @@
   },
   {
     "id": "u42-0396",
-    "es": "¿Sería posible que Yesid viniera con nosotros?",
-    "en": "Would it be possible for Yesid to come with us?",
+    "es": "Oiga, ¿sería posible que Yesid viniera con nosotros?",
+    "en": "Excuse me, would it be possible for Yesid to come with us? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:oiga-oye",
       "g:conditional",
       "g:imperfect-subj",
       "g:prep-pronouns",
       "g:ser-identity",
       "g:subj-past-triggers",
       "g:that-clauses",
+      "l:oír",
       "l:posible",
       "l:ser",
       "l:venir",
@@ -10796,8 +10821,8 @@
   },
   {
     "id": "u42-0398",
-    "es": "¿Sería posible abrir una ventana? Hace mucho calor.",
-    "en": "Would it be possible to open a window? It's very hot.",
+    "es": "Hace mucho calor aquí. ¿Sería posible abrir una ventana?",
+    "en": "It's very hot in here. Would it be possible to open a window?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10806,11 +10831,13 @@
       "g:present-er-ir",
       "g:ser-identity",
       "l:abrir",
+      "l:aquí",
       "l:calor",
       "l:hacer",
       "l:posible",
       "l:ser",
       "l:ventana",
+      "p:aqui-ahi-alla",
       "p:es-adj-inf",
       "p:hace-frio",
       "p:quantifiers-basic",
@@ -10826,8 +10853,8 @@
   },
   {
     "id": "u42-0399",
-    "es": "Doña Rosa, ¿sería posible guardarme un pastel para mañana?",
-    "en": "Doña Rosa, would it be possible to save me a cake for tomorrow?",
+    "es": "Doña Gloria, ¿sería posible guardarme un pastel para mañana?",
+    "en": "Doña Gloria, would it be possible to save me a cake for tomorrow?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11173,7 +11200,7 @@
   {
     "id": "u42-0411",
     "es": "Mi mamá me prohibía que comiera dulces antes de la cena.",
-    "en": "My mum used to forbid me to eat sweets before dinner.",
+    "en": "My mom used to forbid me to eat sweets before dinner.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11423,23 +11450,22 @@
   },
   {
     "id": "u42-0420",
-    "es": "Está prohibido que alguien entre al taller sin casco.",
-    "en": "Nobody is allowed to enter the workshop without a helmet.",
+    "es": "Está prohibido entrar al taller sin casco.",
+    "en": "Going into the workshop without a helmet is forbidden.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
       "g:gender-articles",
-      "g:that-clauses",
       "l:casco",
+      "l:entrar",
       "l:estar",
       "l:prohibir",
       "l:taller",
       "p:con-sin",
       "p:es-obligatorio",
       "p:esta-prohibido",
-      "p:esta-prohibido-que",
-      "p:indefinites-basic"
+      "p:esta-prohibido-que"
     ],
     "targets": [
       "l:taller",
@@ -11644,12 +11670,14 @@
   },
   {
     "id": "u42-0428",
-    "es": "Prohíbo que pasen a la oficina sin avisar.",
-    "en": "I forbid anyone to come into the office without notice.",
+    "es": "Les prohíbo que pasen a la oficina sin avisar.",
+    "en": "I forbid you all to come into the office without warning.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:indirect-objects",
+      "g:le-doubling",
       "g:prep-infinitive",
       "g:present-er-ir",
       "g:subj-influence",
@@ -11732,21 +11760,20 @@
   },
   {
     "id": "u42-0431",
-    "es": "Tomás prohíbe que Simón hable con los clientes de mala forma.",
-    "en": "Tomás forbids Simón from speaking rudely to customers.",
+    "es": "Tomás prohíbe que Simón les grite a los clientes.",
+    "en": "Tomás forbids Simón to shout at the customers.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
+      "g:indirect-objects",
+      "g:le-doubling",
       "g:present-er-ir",
       "g:subj-influence",
       "g:subj-wanting",
       "g:that-clauses",
       "l:cliente",
-      "l:formar",
-      "l:hablar",
-      "l:mala",
+      "l:gritar",
       "l:prohibir",
       "p:esta-prohibido-que"
     ],
@@ -12475,8 +12502,8 @@
   },
   {
     "id": "u42-0457",
-    "es": "Mariana dijo: ¿puedo hacerle una pregunta difícil?",
-    "en": "Mariana said: may I ask you a difficult question?",
+    "es": "Antes de grabar, Mariana preguntó: ¿puedo hacerle una pregunta difícil?",
+    "en": "Before recording, Mariana asked: may I ask you a difficult question?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12484,14 +12511,18 @@
       "g:gender-articles",
       "g:indirect-objects",
       "g:object-pronoun-position",
-      "g:preterite-irregular-strong",
+      "g:prep-infinitive",
+      "g:preterite-ar",
       "g:stem-boot",
       "g:verb-infinitive",
-      "l:decir",
+      "l:antes",
       "l:difícil",
+      "l:grabar",
       "l:hacer",
       "l:poder",
       "l:pregunta",
+      "l:preguntar",
+      "p:preguntar-pedir",
       "p:puedo-hacerte-una-pregunta"
     ],
     "targets": [
@@ -13205,8 +13236,8 @@
   },
   {
     "id": "u42-0482",
-    "es": "¿Puedo hacerle una pregunta a Simón? Perdón, a usted, Hernando.",
-    "en": "Can I ask Simón a question? Sorry, I mean you, Hernando.",
+    "es": "¿Puedo hacerle una pregunta a Simón? Perdón, a usted, don Hernando.",
+    "en": "Can I ask Simón a question? Sorry, I mean you, Don Hernando.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13222,7 +13253,9 @@
       "l:perdón",
       "l:poder",
       "l:pregunta",
-      "p:puedo-hacerte-una-pregunta"
+      "p:don-dona-nombre",
+      "p:puedo-hacerte-una-pregunta",
+      "p:senor-don-article"
     ],
     "targets": [
       "p:puedo-hacerte-una-pregunta"
@@ -13335,8 +13368,8 @@
   },
   {
     "id": "u42-0487",
-    "es": "¿Me harías un favor y cerrarías la ventana?",
-    "en": "Would you do me a favour and close the window? (to a friend)",
+    "es": "¿Me harías el favor de cerrar la ventana?",
+    "en": "Would you do me the favour of closing the window? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13346,8 +13379,11 @@
       "l:favor",
       "l:hacer",
       "l:ventana",
+      "p:me-hace-el-favor",
+      "p:me-haces-el-favor-de",
       "p:me-harias-un-favor",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:request-ladder"
     ],
     "targets": [
       "p:me-harias-un-favor"
@@ -13414,8 +13450,8 @@
   },
   {
     "id": "u42-0490",
-    "es": "Hernando, ¿me haría un favor? Pase por el taller.",
-    "en": "Hernando, would you do me a favour? Go by the workshop.",
+    "es": "Don Hernando, ¿me haría un favor? Pase por el taller.",
+    "en": "Don Hernando, would you do me a favour? Go by the workshop.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13428,8 +13464,10 @@
       "l:hacerse",
       "l:pasar",
       "l:taller",
+      "p:don-dona-nombre",
       "p:me-haces-el-favor-de",
-      "p:me-harias-un-favor"
+      "p:me-harias-un-favor",
+      "p:senor-don-article"
     ],
     "targets": [
       "l:taller",
@@ -13524,21 +13562,27 @@
   },
   {
     "id": "u42-0494",
-    "es": "¿Les haría un favor a los clientes y bajaría la música?",
-    "en": "Would you do the customers a favour and turn the music down?",
+    "es": "¿Me haría el favor de bajar la música? Los clientes no se oyen.",
+    "en": "Would you do me the favour of turning the music down? The customers can't hear each other. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-se",
       "g:conditional",
       "g:gender-articles",
-      "g:indirect-objects",
-      "g:le-doubling",
+      "g:passive-se",
+      "g:verbs-of-change",
+      "g:yo-irregular",
       "l:bajar",
       "l:cliente",
       "l:favor",
-      "l:hacer",
+      "l:hacerse",
       "l:música",
-      "p:me-harias-un-favor"
+      "l:oír",
+      "p:me-hace-el-favor",
+      "p:me-haces-el-favor-de",
+      "p:me-harias-un-favor",
+      "p:request-ladder"
     ],
     "targets": [
       "p:me-harias-un-favor"
@@ -13582,8 +13626,8 @@
   },
   {
     "id": "u42-0496",
-    "es": "¿Me harías un favor y llamarías a Mariana?",
-    "en": "Would you do me a favour and call Mariana? (to a friend)",
+    "es": "¿Me harías el favor de llamar a Mariana?",
+    "en": "Would you do me the favour of calling Mariana? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13592,9 +13636,12 @@
       "l:favor",
       "l:hacer",
       "l:llamar",
+      "p:me-hace-el-favor",
+      "p:me-haces-el-favor-de",
       "p:me-harias-un-favor",
       "p:me-te-nos-objects",
-      "p:personal-a"
+      "p:personal-a",
+      "p:request-ladder"
     ],
     "targets": [
       "p:me-harias-un-favor"
@@ -13666,7 +13713,7 @@
   },
   {
     "id": "u42-0499",
-    "es": "Necesitaría que me hiciera una carta de recomendación.",
+    "es": "Necesitaría que me escribiera una carta de recomendación.",
     "en": "I'd need you to write me a letter of recommendation. (polite)",
     "accept": [],
     "acceptEn": [],
@@ -13674,11 +13721,11 @@
       "g:conditional",
       "g:gender-articles",
       "g:imperfect-subj",
+      "g:reflexive-routine",
       "g:subj-past-triggers",
       "g:that-clauses",
-      "g:verbs-of-change",
       "l:carta",
-      "l:hacerse",
+      "l:escribirse",
       "l:necesitar",
       "l:recomendación",
       "p:me-harias-un-favor"
@@ -13854,20 +13901,19 @@
   },
   {
     "id": "u42-0506",
-    "es": "Si me hicieras un favor, te invito a almorzar.",
-    "en": "If you did me a favour, I'd treat you to lunch. (to a friend)",
+    "es": "Si me haces este favor, te invito a almorzar.",
+    "en": "If you do me this favour, I'll treat you to lunch. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:imperfect-subj",
+      "c:me-haces-un-favor",
       "g:present-ar",
-      "g:si-hypothetical",
+      "g:si-present",
       "l:almorzar",
       "l:favor",
       "l:hacer",
       "l:invitar",
-      "p:me-haces-el-favor-de",
+      "p:demonstratives-basic",
       "p:me-te-nos-objects",
       "p:te-invito-a"
     ],
@@ -14777,20 +14823,24 @@
   },
   {
     "id": "u42-0540",
-    "es": "Tomás dijo: quisiera hablar con usted a solas.",
-    "en": "Tomás said: I'd like to speak to you alone.",
+    "es": "Tomás se acercó al abogado: quisiera hablar con usted a solas.",
+    "en": "Tomás went up to the lawyer: I'd like to speak to you alone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
+      "g:gender-articles",
       "g:imperfect-subj",
       "g:prep-pronouns",
-      "g:preterite-irregular-strong",
+      "g:preterite-ar",
+      "g:reflexive-routine",
       "g:softening",
       "g:verb-infinitive",
-      "l:decir",
+      "l:abogado",
+      "l:acercarse",
       "l:hablar",
-      "l:querer"
+      "l:querer",
+      "p:acercarse-alejarse"
     ],
     "targets": [
       "g:softening"
@@ -15909,24 +15959,27 @@
   },
   {
     "id": "u42-0582",
-    "es": "Lo que pasa es que Simón no come si no lo mira nadie.",
-    "en": "The thing is Simón doesn't eat unless someone watches him.",
+    "es": "Lo que pasa es que el loro solo come cuando alguien lo mira.",
+    "en": "The thing is the parrot only eats when someone watches him.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:es-que",
       "c:oye-mira",
       "g:direct-objects",
-      "g:negation-words",
+      "g:gender-articles",
       "g:present-ar",
       "g:present-er-ir",
       "g:relatives-donde-lo-que",
-      "g:si-present",
       "l:comer",
+      "l:loro",
       "l:mirar",
       "l:pasar",
       "l:ser",
-      "p:lo-que-pasa-es-que"
+      "p:cuando-basic",
+      "p:indefinites-basic",
+      "p:lo-que-pasa-es-que",
+      "p:sobre-todo-solo"
     ],
     "targets": [
       "p:lo-que-pasa-es-que"
@@ -16493,7 +16546,7 @@
   {
     "id": "u42-0602",
     "es": "Con dos trabajos no me alcanza el tiempo ni para dormir.",
-    "en": "With two jobs I don't have time even to sleep.",
+    "en": "With two jobs I don't even have time to sleep.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16608,8 +16661,8 @@
   },
   {
     "id": "u42-0606",
-    "es": "Lo que pasa es que el sindicato no quiere hablar con la fábrica.",
-    "en": "The thing is that the union doesn't want to talk to the factory.",
+    "es": "Lo que pasa es que el sindicato no quiere hablar con los dueños de la fábrica.",
+    "en": "The thing is that the union doesn't want to talk to the factory owners.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16619,6 +16672,7 @@
       "g:relatives-donde-lo-que",
       "g:stem-boot",
       "g:verb-infinitive",
+      "l:dueño",
       "l:fábrica",
       "l:hablar",
       "l:pasar",
@@ -17230,7 +17284,7 @@
   {
     "id": "u42-0629",
     "es": "Gracias por lo del domingo, estuvo muy bien.",
-    "en": "Thanks for the Sunday thing, it was really nice.",
+    "en": "Thanks for Sunday, it was really nice.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17396,21 +17450,19 @@
   },
   {
     "id": "u42-0635",
-    "es": "Lo del ruido de la calle no nos deja dormir.",
-    "en": "The street noise thing doesn't let us sleep.",
+    "es": "Lo del ruido ya lo hablamos con los vecinos.",
+    "en": "We already talked to the neighbours about the noise thing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:direct-objects",
       "g:gender-articles",
       "g:present-ar",
-      "l:calle",
-      "l:dejar",
-      "l:dormir",
+      "l:hablar",
       "l:ruido",
+      "l:vecino",
       "p:lo-de",
-      "p:lo-de-topic",
-      "p:me-te-nos-objects",
-      "p:se-puede-me-dejas"
+      "p:lo-de-topic"
     ],
     "targets": [
       "p:lo-de-topic"
@@ -17683,17 +17735,18 @@
   },
   {
     "id": "u42-0646",
-    "es": "Gracias por lo del favor, me salvaste.",
-    "en": "Thanks for the favour thing, you saved me. (to a friend)",
+    "es": "Gracias por lo de anoche, me salvaste.",
+    "en": "Thanks for last night, you saved me. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "c:ayer-anoche",
       "g:preterite-ar",
-      "l:favor",
+      "l:anoche",
       "l:salvar",
       "p:gracias-por",
       "p:lo-de",
+      "p:lo-de-noun",
       "p:lo-de-topic",
       "p:me-te-nos-objects"
     ],
@@ -18503,21 +18556,23 @@
   },
   {
     "id": "u42-0679",
-    "es": "Esa puerta no se abre sola, imagino.",
-    "en": "That door doesn't open by itself, I imagine.",
+    "es": "Esa puerta se queda abierta toda la noche, imagino.",
+    "en": "That door stays open all night, I imagine.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:no-se",
-      "g:adjective-agreement",
       "g:demonstratives",
+      "g:gender-articles",
       "g:present-ar",
-      "g:present-er-ir",
-      "g:se-impersonal",
+      "g:reflexive-routine",
       "l:abrir",
       "l:imaginar",
+      "l:noche",
       "l:puerta",
-      "p:supongo-imagino-tag"
+      "l:quedarse",
+      "p:quedar-participio",
+      "p:supongo-imagino-tag",
+      "p:todos-los-dias"
     ],
     "targets": [
       "p:supongo-imagino-tag"
@@ -19457,7 +19512,7 @@
   {
     "id": "u42-0715",
     "es": "Tu respuesta no fue apropiada, pidamos disculpas.",
-    "en": "Your reply wasn't appropriate, let's apologise.",
+    "en": "Your reply wasn't appropriate, let's apologise. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19983,12 +20038,15 @@
   },
   {
     "id": "u42-0734",
-    "es": "Hernando dice que antes todo era más apropiado y más educado.",
-    "en": "Hernando says that before, everything was more appropriate and more polite.",
+    "es": "Hernando dice que antes la gente era más educada y hablaba de forma más apropiada.",
+    "en": "Hernando says that people used to be more polite and spoke more appropriately.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:era",
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:imperfect-habitual",
       "g:imperfect-states",
       "g:ser-identity",
       "g:stem-e-i",
@@ -19997,8 +20055,12 @@
       "l:apropiado",
       "l:decir",
       "l:educado",
+      "l:forma",
+      "l:gente",
+      "l:hablar",
       "l:ser",
-      "p:apropiado-para"
+      "p:apropiado-para",
+      "p:la-gente-singular"
     ],
     "targets": [
       "l:apropiado",
@@ -20089,20 +20151,26 @@
   },
   {
     "id": "u42-0738",
-    "es": "A mí se me da peor limpiar que cocinar.",
-    "en": "I'm worse at cleaning than at cooking.",
+    "es": "A mí se me da muy mal limpiar, pero cocinar me encanta.",
+    "en": "I'm really bad at cleaning, but I love cooking.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:me-encanta",
       "c:me-regala",
-      "g:comparatives",
+      "g:gustar-full",
       "g:prep-pronouns",
       "g:se-accidental",
       "l:cocinar",
       "l:darse",
+      "l:encantar",
       "l:limpiar",
-      "l:peor",
-      "p:darsele-bien"
+      "l:mal",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:darsele-bien",
+      "p:darsele-bien-mal",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "p:darsele-bien"
@@ -20114,15 +20182,17 @@
   },
   {
     "id": "u42-0739",
-    "es": "A Simón se le dan mejor las voces de las mujeres.",
-    "en": "Simón is better at women's voices.",
+    "es": "A Simón se le dan mejor las voces de mujer que de hombre.",
+    "en": "Simón is better at women's voices than men's.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:comparatives",
       "g:gender-articles",
       "g:present-ar",
       "g:se-accidental",
       "l:darse",
+      "l:hombre",
       "l:mejor",
       "l:mujer",
       "l:voz",
@@ -20193,22 +20263,24 @@
   },
   {
     "id": "u42-0742",
-    "es": "A mi hermano se le dan peor las entrevistas que a mí.",
-    "en": "My brother is worse at interviews than I am.",
+    "es": "A mi hermano se le dan muy mal las entrevistas.",
+    "en": "My brother is really bad at interviews.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:comparatives",
       "g:gender-articles",
-      "g:prep-pronouns",
       "g:present-ar",
       "g:se-accidental",
       "l:darse",
       "l:entrevista",
       "l:hermano",
-      "l:peor",
+      "l:mal",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:darsele-bien",
-      "p:possessives-basic"
+      "p:darsele-bien-mal",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "p:darsele-bien"
@@ -20271,8 +20343,8 @@
   },
   {
     "id": "u42-0745",
-    "es": "A nosotros se nos dan peor las reuniones largas.",
-    "en": "We are worse at long meetings.",
+    "es": "A nosotros se nos dan muy mal las reuniones largas.",
+    "en": "We're really bad at long meetings.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20282,9 +20354,13 @@
       "g:se-accidental",
       "l:darse",
       "l:largo",
-      "l:peor",
+      "l:mal",
       "l:reunión",
-      "p:darsele-bien"
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:darsele-bien",
+      "p:darsele-bien-mal",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "p:darsele-bien"
@@ -20373,21 +20449,25 @@
   },
   {
     "id": "u42-0749",
-    "es": "A la abogada se le da mejor explicar las cosas con calma.",
-    "en": "The lawyer is better at explaining things calmly.",
+    "es": "A la abogada se le da muy bien explicar las cosas con calma.",
+    "en": "The lawyer is very good at explaining things calmly.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:bien-y-tu",
       "g:gender-articles",
       "g:present-ar",
       "g:se-accidental",
       "l:abogado",
+      "l:bien",
       "l:calma",
       "l:cosa",
       "l:darse",
       "l:explicar",
-      "l:mejor",
-      "p:darsele-bien"
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:darsele-bien",
+      "p:darsele-bien-mal"
     ],
     "targets": [
       "p:darsele-bien"
@@ -20556,20 +20636,22 @@
   },
   {
     "id": "u42-0756",
-    "es": "A ellos se les da bastante peor madrugar que a mí.",
-    "en": "They are quite a bit worse at getting up early than I am.",
+    "es": "A ellos no se les da bien madrugar.",
+    "en": "They're not good at getting up early.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:comparatives",
-      "g:prep-pronouns",
+      "c:bien-y-tu",
+      "c:no-se",
       "g:present-ar",
-      "g:quantifiers",
       "g:se-accidental",
+      "l:bien",
       "l:darse",
       "l:madrugar",
-      "l:peor",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:darsele-bien",
+      "p:darsele-bien-mal",
       "p:madrugar-trasnochar"
     ],
     "targets": [
@@ -20772,22 +20854,28 @@
   },
   {
     "id": "u42-0764",
-    "es": "Se me da peor hablar con jefes que escribirles.",
-    "en": "I'm worse at talking to bosses than at writing to them.",
+    "es": "Se me da bien escribirles a los jefes, pero hablar con ellos no.",
+    "en": "I'm good at writing to bosses, but not at talking to them.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:bien-y-tu",
       "c:me-regala",
-      "g:comparatives",
+      "g:gender-articles",
       "g:indirect-objects",
+      "g:le-doubling",
       "g:object-pronoun-position",
+      "g:prep-pronouns",
       "g:se-accidental",
+      "l:bien",
       "l:darse",
       "l:escribir",
       "l:hablar",
       "l:jefe",
-      "l:peor",
-      "p:darsele-bien"
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:darsele-bien",
+      "p:darsele-bien-mal"
     ],
     "targets": [
       "p:darsele-bien"
@@ -20903,20 +20991,24 @@
   },
   {
     "id": "u42-0769",
-    "es": "A la jueza se le da peor sonreír que a nadie.",
-    "en": "The judge is worse at smiling than anyone.",
+    "es": "A la jueza no se le da bien sonreír.",
+    "en": "The judge isn't good at smiling.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:comparatives",
+      "c:bien-y-tu",
+      "c:no-se",
       "g:gender-articles",
       "g:present-ar",
       "g:se-accidental",
+      "l:bien",
       "l:darse",
       "l:juez",
-      "l:peor",
       "l:sonreír",
-      "p:darsele-bien"
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:darsele-bien",
+      "p:darsele-bien-mal"
     ],
     "targets": [
       "l:sonreír",
@@ -20954,22 +21046,26 @@
   },
   {
     "id": "u42-0771",
-    "es": "Con los clientes difíciles se me da mejor esperar y sonreír.",
-    "en": "With difficult customers I'm better at waiting and smiling.",
+    "es": "Con los clientes difíciles, se me da bien esperar y sonreír.",
+    "en": "With difficult customers, I'm good at waiting and smiling.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:bien-y-tu",
       "c:me-regala",
       "g:adjective-agreement",
       "g:gender-articles",
       "g:se-accidental",
+      "l:bien",
       "l:cliente",
       "l:darse",
       "l:difícil",
       "l:esperar",
-      "l:mejor",
       "l:sonreír",
-      "p:darsele-bien"
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:darsele-bien",
+      "p:darsele-bien-mal"
     ],
     "targets": [
       "l:sonreír",
@@ -20982,8 +21078,8 @@
   },
   {
     "id": "u42-0772",
-    "es": "Cuando uno tiene prisa, se le da peor todo.",
-    "en": "When you're in a hurry, everything goes worse.",
+    "es": "Cuando uno tiene prisa, todo se le da peor.",
+    "en": "When you're in a hurry, you're worse at everything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21038,7 +21134,7 @@
   {
     "id": "u42-0774",
     "es": "A mi mamá se le daban mejor las cuentas que a mi papá.",
-    "en": "My mum was better at accounts than my dad.",
+    "en": "My mom was better at accounts than my dad.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21113,22 +21209,25 @@
   },
   {
     "id": "u42-0777",
-    "es": "Primero lavamos las manos y secamos bien con la toalla.",
-    "en": "First we wash our hands and dry them well with the towel.",
+    "es": "Primero nos lavamos las manos y después nos las secamos bien.",
+    "en": "First we wash our hands and then we dry them well.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
+      "g:direct-objects",
       "g:gender-articles",
       "g:present-ar",
+      "g:reflexive-routine",
       "l:bien",
-      "l:lavar",
+      "l:después",
+      "l:lavarse",
       "l:mano",
-      "l:secar",
-      "l:toalla",
+      "l:secarse",
       "p:bien-bueno",
       "p:bien-mal-vs-bueno-malo",
       "p:lavarse-las-manos",
+      "p:nosotros-instructions",
       "p:time-sequence-basic"
     ],
     "targets": [],
@@ -21558,20 +21657,20 @@
   },
   {
     "id": "u42-0794",
-    "es": "Primero prendemos el horno y esperamos diez minutos.",
-    "en": "First we turn the oven on and wait ten minutes.",
+    "es": "Prendemos el horno y sacamos los huevos de la nevera.",
+    "en": "We turn the oven on and take the eggs out of the fridge.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
       "g:present-er-ir",
-      "l:esperar",
       "l:horno",
-      "l:minuto",
+      "l:huevo",
+      "l:nevera",
       "l:prender",
-      "p:nosotros-instructions",
-      "p:time-sequence-basic"
+      "l:sacar",
+      "p:nosotros-instructions"
     ],
     "targets": [
       "l:prender",
@@ -21714,19 +21813,18 @@
   },
   {
     "id": "u42-0800",
-    "es": "Primero tomamos la temperatura y esperamos al doctor.",
-    "en": "First we take the temperature and wait for the doctor.",
+    "es": "Primero tomamos la temperatura y revisamos la garganta.",
+    "en": "First we take the temperature and check the throat.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:doctor",
-      "l:esperar",
+      "l:garganta",
+      "l:revisar",
       "l:temperatura",
       "l:tomar",
       "p:nosotros-instructions",
-      "p:personal-a",
       "p:time-sequence-basic"
     ],
     "targets": [
@@ -21739,8 +21837,8 @@
   },
   {
     "id": "u42-0801",
-    "es": "Luego mezclamos los colores y esperamos a que se seque la pared.",
-    "en": "Then we mix the colours and wait for the wall to dry.",
+    "es": "Primero lavamos la pared y esperamos a que se seque.",
+    "en": "First we wash the wall and wait for it to dry.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21750,12 +21848,10 @@
       "g:subj-wanting",
       "g:subj-wishes",
       "g:that-clauses",
-      "l:color",
       "l:esperar",
-      "l:mezclar",
+      "l:lavar",
       "l:pared",
       "l:secarse",
-      "p:entonces-de-repente",
       "p:nosotros-instructions",
       "p:time-sequence-basic"
     ],
@@ -21795,20 +21891,23 @@
   },
   {
     "id": "u42-0803",
-    "es": "Primero ponemos la mesa y servimos la sopa caliente.",
-    "en": "First we set the table and serve the hot soup.",
+    "es": "Ahora nos lavamos las manos y servimos la sopa caliente.",
+    "en": "Now we wash our hands and serve the hot soup.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:present-ar",
       "g:present-er-ir",
+      "g:reflexive-routine",
+      "l:ahora",
       "l:caliente",
-      "l:mesa",
-      "l:poner",
+      "l:lavarse",
+      "l:mano",
       "l:servir",
       "l:sopa",
-      "p:nosotros-instructions",
-      "p:time-sequence-basic"
+      "p:lavarse-las-manos",
+      "p:nosotros-instructions"
     ],
     "targets": [
       "p:nosotros-instructions"
@@ -21935,19 +22034,20 @@
   },
   {
     "id": "u42-0809",
-    "es": "Primero esperamos la señal y sacamos los papeles de la bolsa.",
-    "en": "First we wait for the signal and take the papers out of the bag.",
+    "es": "Primero esperamos al juez y sacamos los papeles en silencio.",
+    "en": "First we wait for the judge and take out the papers in silence.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:bolsa",
       "l:esperar",
+      "l:juez",
       "l:papel",
       "l:sacar",
-      "l:señal",
+      "l:silencio",
       "p:nosotros-instructions",
+      "p:personal-a",
       "p:time-sequence-basic"
     ],
     "targets": [
@@ -21960,26 +22060,30 @@
   },
   {
     "id": "u42-0810",
-    "es": "Entonces nos acostamos un rato y descansamos la garganta.",
-    "en": "So we lie down for a while and rest our throat.",
+    "es": "¿Nos tomamos la pastilla para la garganta y dormimos un rato?",
+    "en": "Shall we take our throat pill and sleep for a while?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:entonces-bueno",
       "g:gender-articles",
       "g:present-ar",
-      "g:reflexive-routine",
-      "l:acostarse",
-      "l:descansar",
+      "g:present-er-ir",
+      "l:dormir",
       "l:garganta",
+      "l:pastilla",
       "l:rato",
-      "p:nosotros-instructions"
+      "l:tomar",
+      "p:comerse-todo",
+      "p:dativo-aspectual",
+      "p:me-te-nos-objects",
+      "p:nosotros-instructions",
+      "p:para-inf"
     ],
     "targets": [
       "l:garganta",
       "p:nosotros-instructions"
     ],
-    "kind": "statement",
+    "kind": "question",
     "unit": "u42",
     "theme": "we do it together, instructions and care",
     "source": "gen"
@@ -22015,15 +22119,15 @@
   },
   {
     "id": "u42-0812",
-    "es": "Primero prendemos la luz y revisamos las llaves.",
-    "en": "First we turn on the light and check the keys.",
+    "es": "Primero prendemos la luz y revisamos el gas.",
+    "en": "First we turn on the light and check the gas.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
       "g:present-er-ir",
-      "l:llave",
+      "l:gas",
       "l:luz",
       "l:prender",
       "l:revisar",
@@ -22189,20 +22293,24 @@
   },
   {
     "id": "u42-0819",
-    "es": "En esa oficina uno siempre espera una hora, con cita o sin cita.",
-    "en": "In that office you always wait an hour, with an appointment or without.",
+    "es": "En esa oficina llegas y te toca esperar una hora, con cita o sin cita.",
+    "en": "In that office you show up and have to wait an hour, with an appointment or without.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
       "g:gender-articles",
+      "g:gustar-full",
       "g:present-ar",
       "l:cita",
       "l:esperar",
       "l:hora",
+      "l:llegar",
       "l:oficina",
-      "l:siempre",
-      "p:frequency-scale"
+      "l:tocar",
+      "p:generic-tu-uno",
+      "p:madrugar-trasnochar",
+      "p:no-queda-de-otra"
     ],
     "targets": [],
     "kind": "statement",
@@ -22294,12 +22402,12 @@
   },
   {
     "id": "u42-0823",
-    "es": "Si uno pide con amabilidad, casi siempre le ayudan.",
+    "es": "Si uno pide con amabilidad, casi siempre lo ayudan.",
     "en": "If you ask kindly, they almost always help you.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:indirect-objects",
+      "g:direct-objects",
       "g:present-ar",
       "g:present-er-ir",
       "g:si-present",
@@ -22723,21 +22831,24 @@
   },
   {
     "id": "u42-0839",
-    "es": "Allá uno paga la cuenta en la caja, no en la mesa.",
-    "en": "Over there you pay the bill at the till, not at the table.",
+    "es": "Allá llegas y te toca pagar en la caja, no en la mesa.",
+    "en": "Over there you arrive and have to pay at the till, not at the table.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:la-cuenta",
       "g:gender-articles",
+      "g:gustar-full",
       "g:present-ar",
       "l:allá",
       "l:caja",
-      "l:cuenta",
+      "l:llegar",
       "l:mesa",
       "l:pagar",
+      "l:tocar",
       "p:aqui-ahi-alla",
-      "p:generic-tu-uno"
+      "p:generic-tu-uno",
+      "p:madrugar-trasnochar",
+      "p:no-queda-de-otra"
     ],
     "targets": [
       "p:generic-tu-uno"
@@ -22943,7 +23054,7 @@
   {
     "id": "u42-0847",
     "es": "Uno también se equivoca, y no pasa nada.",
-    "en": "You also make mistakes, and nothing happens.",
+    "en": "You make mistakes too, and it's no big deal.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23024,21 +23135,21 @@
   },
   {
     "id": "u42-0850",
-    "es": "Donde uno nace queda siempre en el corazón.",
-    "en": "The place where you are born stays in your heart always.",
+    "es": "El lugar donde uno nace se queda en el corazón.",
+    "en": "The place where you're born stays in your heart.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
       "g:present-er-ir",
+      "g:reflexive-routine",
       "g:relatives-donde-lo-que",
       "l:corazón",
+      "l:lugar",
       "l:nacer",
-      "l:quedar",
-      "l:siempre",
+      "l:quedarse",
       "l:unir",
-      "p:frequency-scale",
       "p:generic-tu-uno"
     ],
     "targets": [
@@ -23051,18 +23162,17 @@
   },
   {
     "id": "u42-0851",
-    "es": "Porque uno no lo cuenta, la gente cree que todo está bien.",
-    "en": "Because you don't tell it, people think everything is fine.",
+    "es": "Si uno no cuenta nada, la gente cree que todo está bien.",
+    "en": "If you don't tell anyone anything, people think everything is fine.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
-      "c:porque",
-      "g:cause-result",
-      "g:direct-objects",
       "g:estar-location-states",
       "g:gender-articles",
+      "g:negation-words",
       "g:present-er-ir",
+      "g:si-present",
       "g:stem-boot",
       "g:that-clauses",
       "l:bien",
@@ -23280,24 +23390,23 @@
   },
   {
     "id": "u42-0859",
-    "es": "Mi disponibilidad es total, puedo empezar el lunes mismo.",
-    "en": "My availability is total, I can start this very Monday.",
+    "es": "Tengo total disponibilidad: puedo empezar este mismo lunes.",
+    "en": "I'm fully available: I can start this very Monday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:puedo",
-      "g:gender-articles",
-      "g:ser-identity",
+      "c:tengo",
       "g:stem-boot",
       "g:verb-infinitive",
+      "g:yo-irregular",
       "l:disponibilidad",
       "l:empezar",
       "l:lunes",
       "l:poder",
-      "l:ser",
+      "l:tener",
       "l:total",
-      "p:days-el-lunes",
-      "p:possessives-basic"
+      "p:demonstratives-basic"
     ],
     "targets": [
       "l:disponibilidad"
@@ -23976,8 +24085,8 @@
   },
   {
     "id": "u42-0884",
-    "es": "¿Ya le pagaron el despido a Hernando, el hijo?",
-    "en": "Have they paid Hernando's son his severance yet?",
+    "es": "¿Ya le explicaron al hijo de Hernando el motivo del despido?",
+    "en": "Have they explained the reason for the dismissal to Hernando's son yet?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23986,8 +24095,9 @@
       "g:le-doubling",
       "g:preterite-ar",
       "l:despido",
+      "l:explicar",
       "l:hijo",
-      "l:pagar"
+      "l:motivo"
     ],
     "targets": [
       "l:despido"
@@ -24112,7 +24222,7 @@
   },
   {
     "id": "u42-0889",
-    "es": "Quedó el desempleo en el diez por ciento, y los jóvenes lo sienten más.",
+    "es": "El desempleo quedó en el diez por ciento, y los jóvenes lo sienten más.",
     "en": "Unemployment stood at ten per cent, and young people feel it more.",
     "accept": [],
     "acceptEn": [],
@@ -24271,8 +24381,8 @@
   },
   {
     "id": "u42-0895",
-    "es": "Le conté al encargado mi decisión con una carta educada.",
-    "en": "I told the manager my decision with a polite letter.",
+    "es": "Le presenté mi renuncia al encargado con una carta muy educada.",
+    "en": "I handed my resignation to the manager in a very polite letter.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24282,11 +24392,13 @@
       "g:le-doubling",
       "g:preterite-ar",
       "l:carta",
-      "l:contar",
-      "l:decisión",
       "l:educado",
       "l:encargado",
-      "p:possessives-basic"
+      "l:presentar",
+      "l:renuncia",
+      "p:possessives-basic",
+      "p:quantifiers-basic",
+      "p:renunciar-a"
     ],
     "targets": [
       "l:educado",
@@ -24349,8 +24461,8 @@
   },
   {
     "id": "u42-0898",
-    "es": "Después del despido, Hernando empezó a arreglar relojes.",
-    "en": "After being dismissed, Hernando started fixing watches.",
+    "es": "Después del despido, mi papá empezó a arreglar relojes.",
+    "en": "After being dismissed, my dad started fixing watches.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24361,8 +24473,10 @@
       "l:despido",
       "l:después",
       "l:empezar",
+      "l:papá",
       "l:reloj",
       "p:empezar-terminar",
+      "p:possessives-basic",
       "p:time-sequence-basic"
     ],
     "targets": [
@@ -24484,13 +24598,11 @@
   },
   {
     "id": "u42-0903",
-    "es": "Se lo ruego, disculpe, quisiera explicarle lo que pasó.",
-    "en": "I beg you, excuse me, I'd like to explain to you what happened. (polite)",
+    "es": "Se lo ruego, quisiera explicarle lo que pasó.",
+    "en": "I beg you, I'd like to explain to you what happened. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:perdon-disculpe",
-      "g:commands-usted",
       "g:double-pronouns",
       "g:imperfect-subj",
       "g:indirect-objects",
@@ -24500,7 +24612,6 @@
       "g:softening",
       "g:stem-boot",
       "g:verb-infinitive",
-      "l:disculpar",
       "l:explicar",
       "l:pasar",
       "l:querer",
@@ -24517,8 +24628,8 @@
   },
   {
     "id": "u42-0904",
-    "es": "Se lo ruego, no cuelgue, ya lo comunico con el encargado.",
-    "en": "I beg you, don't hang up, I'll put you through to the manager now. (polite)",
+    "es": "Se lo ruego, no cuelgue; enseguida lo comunico con el encargado.",
+    "en": "I beg you, don't hang up; I'll put you through to the manager right away. (to a man)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24531,9 +24642,9 @@
       "l:colgar",
       "l:comunicar",
       "l:encargado",
+      "l:enseguida",
       "l:rogar",
-      "p:me-comunica-con",
-      "p:podria-hablar-con"
+      "p:me-comunica-con"
     ],
     "targets": [
       "l:comunicar",
@@ -25195,15 +25306,13 @@
   },
   {
     "id": "u42-0930",
-    "es": "Quisiera pedirle una cortesía: hable más despacio, por favor.",
-    "en": "I'd like to ask you a courtesy: speak more slowly, please. (polite)",
+    "es": "Quisiera pedirle algo, con toda cortesía: ¿podría hablar más despacio?",
+    "en": "I'd like to ask you something, with all courtesy: could you speak more slowly? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:mas-despacio",
-      "c:por-favor",
-      "g:commands-usted",
-      "g:gender-articles",
+      "g:conditional",
       "g:imperfect-subj",
       "g:indirect-objects",
       "g:object-pronoun-position",
@@ -25211,11 +25320,14 @@
       "g:verb-infinitive",
       "l:cortesía",
       "l:despacio",
-      "l:favor",
       "l:hablar",
       "l:pedir",
+      "l:poder",
       "l:querer",
-      "p:request-ladder"
+      "p:indefinites-basic",
+      "p:request-ladder",
+      "p:se-puede-me-dejas",
+      "p:te-importaria"
     ],
     "targets": [
       "g:softening",
@@ -25419,21 +25531,19 @@
   },
   {
     "id": "u42-0938",
-    "es": "Huelo el pan desde la calle y se me abre el hambre.",
+    "es": "Huelo el pan desde la calle y me da hambre.",
     "en": "I smell the bread from the street and it makes me hungry.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:me-regala",
       "g:gender-articles",
-      "g:present-er-ir",
-      "g:se-accidental",
       "g:yo-irregular",
-      "l:abrir",
       "l:calle",
+      "l:dar",
       "l:hambre",
       "l:oler",
-      "l:pan",
-      "p:el-agua-fria"
+      "l:pan"
     ],
     "targets": [
       "l:oler"
@@ -25719,19 +25829,24 @@
   },
   {
     "id": "u42-0949",
-    "es": "Llevé el carro al taller y no me cobraron el combustible.",
-    "en": "I took the car to the workshop and they didn't charge me for the fuel.",
+    "es": "Llevé el carro al taller porque olía a combustible.",
+    "en": "I took the car to the workshop because it smelled of fuel.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:porque",
+      "g:cause-result",
       "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:pret-vs-imperfect",
       "g:preterite-ar",
       "l:carro",
-      "l:cobrar",
       "l:combustible",
       "l:llevar",
+      "l:oler",
       "l:taller",
-      "p:me-te-nos-objects"
+      "p:le-falta-sal",
+      "p:oler-a-saber-a"
     ],
     "targets": [
       "l:combustible",
@@ -25772,7 +25887,7 @@
   {
     "id": "u42-0951",
     "es": "El taller cierra a las cinco, así que llega lo antes posible.",
-    "en": "The workshop closes at five, so get there as soon as possible.",
+    "en": "The workshop closes at five, so get there as soon as possible. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -25851,8 +25966,8 @@
   },
   {
     "id": "u42-0954",
-    "es": "Enterramos a Rosa en un día soleado, con todo el barrio presente.",
-    "en": "We buried Rosa on a sunny day, with the whole neighbourhood there.",
+    "es": "Enterramos a Rosa con todo el barrio presente.",
+    "en": "We buried Rosa with the whole neighbourhood there.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -25860,10 +25975,8 @@
       "g:present-ar",
       "g:subj-wanting",
       "l:barrio",
-      "l:día",
       "l:enterrar",
-      "l:presente",
-      "l:soleado"
+      "l:presente"
     ],
     "targets": [
       "l:enterrar"
@@ -26419,20 +26532,20 @@
   },
   {
     "id": "u42-0976",
-    "es": "HALE, dice el letrero, y todos empujan igual.",
-    "en": "PULL, says the sign, and everyone pushes anyway.",
+    "es": "Empujé tres veces antes de ver que decía HALE.",
+    "en": "I pushed three times before I saw it said PULL.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:empuje-hale",
-      "c:igual",
-      "g:gender-articles",
-      "g:present-ar",
-      "g:stem-e-i",
+      "g:imperfect-habitual",
+      "g:prep-infinitive",
+      "g:pret-vs-imperfect",
+      "l:antes",
       "l:decir",
       "l:empujar",
-      "l:igual",
-      "l:letrero"
+      "l:ver",
+      "l:vez"
     ],
     "targets": [
       "c:empuje-hale"
@@ -26512,24 +26625,21 @@
   },
   {
     "id": "u42-0980",
-    "es": "HALE, dice la puerta del banco, y el guardia sonríe al verme empujar.",
-    "en": "PULL, says the bank door, and the guard smiles as he watches me push.",
+    "es": "EMPUJE, dice el letrero, y el guardia sonríe cuando alguien hala.",
+    "en": "PUSH, says the sign, and the guard smiles when someone pulls.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:empuje-hale",
       "g:gender-articles",
-      "g:object-pronoun-position",
-      "g:prep-infinitive",
       "g:stem-e-i",
-      "l:banco",
       "l:decir",
       "l:empujar",
       "l:guardia",
-      "l:puerta",
+      "l:hala",
+      "l:letrero",
       "l:sonreír",
-      "l:ver",
-      "p:me-te-nos-objects"
+      "p:indefinites-basic"
     ],
     "targets": [
       "c:empuje-hale",
@@ -26542,19 +26652,23 @@
   },
   {
     "id": "u42-0981",
-    "es": "EMPUJE, dice la puerta, pero yo ya la empujé tres veces.",
-    "en": "PUSH, says the door, but I've already pushed it three times.",
+    "es": "HALE, dice la puerta del banco, y el guardia se ríe de los que empujan.",
+    "en": "PULL, says the bank door, and the guard laughs at the people who push.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:empuje-hale",
-      "g:direct-objects",
       "g:gender-articles",
+      "g:present-ar",
+      "g:relatives-prepositions",
+      "g:se-impersonal",
       "g:stem-e-i",
+      "l:banco",
       "l:decir",
       "l:empujar",
+      "l:guardia",
       "l:puerta",
-      "l:vez"
+      "l:reír"
     ],
     "targets": [
       "c:empuje-hale"
@@ -26566,19 +26680,21 @@
   },
   {
     "id": "u42-0982",
-    "es": "HALE, dice la puerta de la oficina del juez, y nadie la hala.",
-    "en": "PULL, says the door of the judge's office, and nobody pulls it.",
+    "es": "La puerta del juez decía HALE, y yo empujé con todas mis fuerzas.",
+    "en": "The judge's door said PULL, and I pushed with all my strength.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:empuje-hale",
       "g:gender-articles",
-      "g:stem-e-i",
+      "g:imperfect-habitual",
+      "g:pret-vs-imperfect",
       "l:decir",
-      "l:hala",
+      "l:empujar",
+      "l:fuerza",
       "l:juez",
-      "l:oficina",
-      "l:puerta"
+      "l:puerta",
+      "p:possessives-basic"
     ],
     "targets": [
       "c:empuje-hale"
@@ -26714,22 +26830,25 @@
   },
   {
     "id": "u42-0988",
-    "es": "El domicilio cuesta más los domingos, no sé por qué.",
-    "en": "Delivery costs more on Sundays, I don't know why.",
+    "es": "Los domingos el domicilio sale más caro, no sé por qué.",
+    "en": "On Sundays delivery works out more expensive, I don't know why.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:no-se",
       "g:gender-articles",
       "g:indirect-questions",
-      "g:stem-boot",
+      "g:present-er-ir",
       "g:yo-irregular",
-      "l:costar",
+      "l:caro",
       "l:domicilio",
       "l:domingo",
       "l:qué",
       "l:saber",
-      "p:days-el-lunes"
+      "l:salir",
+      "p:days-el-lunes",
+      "p:en-oferta",
+      "p:gasto-inversion"
     ],
     "targets": [
       "l:domicilio"
@@ -26764,19 +26883,21 @@
   },
   {
     "id": "u42-0990",
-    "es": "El domicilio cuesta lo mismo que el pan, ¡es un robo!",
-    "en": "The delivery costs the same as the bread, it's a rip-off!",
+    "es": "¡Cobran por el domicilio lo mismo que por el pan! Es un robo.",
+    "en": "They charge the same for delivery as for the bread! It's a rip-off.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:por-para-1",
+      "g:present-ar",
       "g:ser-identity",
-      "g:stem-boot",
-      "l:costar",
+      "l:cobrar",
       "l:domicilio",
       "l:pan",
       "l:robo",
-      "l:ser"
+      "l:ser",
+      "p:costar-pagar"
     ],
     "targets": [
       "l:domicilio"
@@ -26887,8 +27008,8 @@
   },
   {
     "id": "u42-0995",
-    "es": "¿Vamos al museo el sábado? Cuando quieras.",
-    "en": "Shall we go to the museum on Saturday? Whenever you like.",
+    "es": "¿Vamos al museo el sábado?\nCuando quieras.",
+    "en": "Shall we go to the museum on Saturday?\nWhenever you like.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26905,7 +27026,7 @@
     "targets": [
       "c:cuando-quieras"
     ],
-    "kind": "question",
+    "kind": "dialogue",
     "unit": "u42",
     "theme": "whenever, we'll see, if there's no other way",
     "source": "gen"
@@ -27102,8 +27223,8 @@
   },
   {
     "id": "u42-1004",
-    "es": "¿Me compras uno? Bueno, ya veremos.",
-    "en": "Will you buy me one? Well, we'll see.",
+    "es": "¿Me compras uno?\nBueno, ya veremos.",
+    "en": "Will you buy me one?\nWell, we'll see.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27118,7 +27239,7 @@
     "targets": [
       "c:ya-veremos"
     ],
-    "kind": "question",
+    "kind": "dialogue",
     "unit": "u42",
     "theme": "whenever, we'll see, if there's no other way",
     "source": "gen"
@@ -27151,8 +27272,8 @@
   },
   {
     "id": "u42-1006",
-    "es": "¿Vamos a Cartagena en diciembre? Ya veremos, depende de la plata.",
-    "en": "Are we going to Cartagena in December? We'll see, it depends on the money.",
+    "es": "¿Vamos a Cartagena en diciembre?\nYa veremos, depende de la plata.",
+    "en": "Are we going to Cartagena in December?\nWe'll see, it depends on the money.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27171,7 +27292,7 @@
     "targets": [
       "c:ya-veremos"
     ],
-    "kind": "question",
+    "kind": "dialogue",
     "unit": "u42",
     "theme": "whenever, we'll see, if there's no other way",
     "source": "gen"
@@ -27274,8 +27395,8 @@
   },
   {
     "id": "u42-1011",
-    "es": "¿Puedo salir esta noche? Ya veremos cómo te portas hoy.",
-    "en": "Can I go out tonight? We'll see how you behave today.",
+    "es": "¿Puedo salir esta noche?\nYa veremos cómo te portas hoy.",
+    "en": "Can I go out tonight?\nWe'll see how you behave today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27298,7 +27419,7 @@
     "targets": [
       "c:ya-veremos"
     ],
-    "kind": "question",
+    "kind": "dialogue",
     "unit": "u42",
     "theme": "whenever, we'll see, if there's no other way",
     "source": "gen"
@@ -27410,22 +27531,25 @@
   },
   {
     "id": "u42-1016",
-    "es": "Bueno, si no hay más remedio, vendemos el horno viejo.",
-    "en": "Well, if there's no other way, we sell the old oven.",
+    "es": "Si no hay más remedio, vendemos el horno viejo, pero me duele.",
+    "en": "If there's no other way, we'll sell the old oven, but it hurts me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:entonces-bueno",
       "c:hay",
       "c:si-no-hay-mas-remedio",
       "g:gender-articles",
+      "g:gustar-full",
       "g:hay-vs-esta",
       "g:present-er-ir",
-      "l:bueno",
+      "g:stem-boot",
+      "l:doler",
       "l:horno",
       "l:remedio",
       "l:vender",
       "l:viejo",
+      "p:doler",
+      "p:me-duele",
       "p:viejo-antiguo-mayor"
     ],
     "targets": [
@@ -27464,19 +27588,17 @@
   },
   {
     "id": "u42-1018",
-    "es": "Bueno, si no hay más remedio, le hablamos a Yesid.",
-    "en": "Well, if there's no other way, we talk to Yesid.",
+    "es": "Le hablamos a Yesid, si no hay más remedio.",
+    "en": "We'll talk to Yesid, if there's no other way.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:entonces-bueno",
       "c:hay",
       "c:si-no-hay-mas-remedio",
       "g:hay-vs-esta",
       "g:indirect-objects",
       "g:le-doubling",
       "g:present-ar",
-      "l:bueno",
       "l:hablar",
       "l:remedio"
     ],
@@ -27515,18 +27637,16 @@
   },
   {
     "id": "u42-1020",
-    "es": "Bueno, si no hay más remedio, pagamos la multa.",
-    "en": "Well, if there's no other way, we pay the fine.",
+    "es": "Si no hay más remedio, pagamos la multa y ya.",
+    "en": "If there's no other way, we pay the fine and that's that.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:entonces-bueno",
       "c:hay",
       "c:si-no-hay-mas-remedio",
       "g:gender-articles",
       "g:hay-vs-esta",
       "g:present-ar",
-      "l:bueno",
       "l:multa",
       "l:pagar",
       "l:remedio"
@@ -27591,16 +27711,22 @@
   },
   {
     "id": "u42-1023",
-    "es": "Bueno, pero que sea la última vez.",
-    "en": "OK, but this is the last time.",
+    "es": "Está bien, pasa, pero que sea la última vez.",
+    "en": "All right, come in, but let it be the last time. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:entonces-bueno",
+      "c:bien-y-tu",
       "c:que-sea-la-ultima-vez",
-      "l:bueno",
+      "g:estar-location-states",
+      "g:present-ar",
+      "l:bien",
+      "l:estar",
+      "l:pasar",
       "l:ser",
-      "l:vez"
+      "l:vez",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
       "c:que-sea-la-ultima-vez"
@@ -27784,8 +27910,8 @@
   },
   {
     "id": "u42-1031",
-    "es": "Hernando le prestó el taxi a su sobrino, pero que sea la última vez.",
-    "en": "Hernando lent his taxi to his nephew, but let it be the last time.",
+    "es": "Hernando le prestó el taxi a su sobrino y le dijo: que sea la última vez.",
+    "en": "Hernando lent his taxi to his nephew and told him: let it be the last time.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27794,6 +27920,8 @@
       "g:indirect-objects",
       "g:le-doubling",
       "g:preterite-ar",
+      "g:preterite-irregular-strong",
+      "l:decir",
       "l:prestar",
       "l:ser",
       "l:sobrino",
@@ -27811,20 +27939,17 @@
   },
   {
     "id": "u42-1032",
-    "es": "Vale, dejo que pruebes el pastel, pero que sea la última vez.",
-    "en": "Vale, I'll let you try the cake, but let it be the last time.",
+    "es": "Tomás, te dejo probar el pastel, pero que sea la última vez.",
+    "en": "Tomás, I'll let you taste the cake, but let it be the last time.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:bueno-te-dejo",
       "c:que-sea-la-ultima-vez",
       "g:gender-articles",
-      "g:present-ar",
-      "g:subj-influence",
-      "g:subj-wanting",
-      "g:that-clauses",
       "l:dejar",
       "l:pastel",
-      "l:probar",
+      "l:probarse",
       "l:ser",
       "l:vez"
     ],
@@ -28042,24 +28167,21 @@
   },
   {
     "id": "u42-1041",
-    "es": "Para ser sinceros, el café necesita más ayuda de la que creíamos.",
-    "en": "To be honest, the café needs more help than we thought.",
+    "es": "Para ser sinceros, solos no podemos salvar el café.",
+    "en": "To be honest, we can't save the café on our own.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:para-serte-sincero",
-      "g:comparatives",
+      "g:adjective-agreement",
       "g:gender-articles",
-      "g:imperfect-habitual",
-      "g:present-ar",
-      "g:relatives-prepositions",
-      "l:ayuda",
+      "g:present-er-ir",
+      "g:verb-infinitive",
       "l:café",
-      "l:creer",
-      "l:necesitar",
+      "l:poder",
+      "l:salvar",
       "l:ser",
-      "l:sincero",
-      "p:mas-de-lo-que"
+      "l:sincero"
     ],
     "targets": [
       "c:para-serte-sincero"
@@ -28131,18 +28253,22 @@
   },
   {
     "id": "u42-1044",
-    "es": "No sé cómo agradecértelo, de todo corazón.",
-    "en": "I don't know how to thank you, with all my heart. (to a friend)",
+    "es": "Me salvaste la semana; no sé cómo agradecértelo.",
+    "en": "You saved my week; I don't know how to thank you. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:no-se",
       "c:no-se-como-agradecertelo",
+      "g:gender-articles",
+      "g:preterite-ar",
       "g:yo-irregular",
       "l:agradecer",
-      "l:corazón",
       "l:cómo",
-      "l:saber"
+      "l:saber",
+      "l:salvar",
+      "l:semana",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "c:no-se-como-agradecertelo"
@@ -28264,18 +28390,22 @@
   },
   {
     "id": "u42-1049",
-    "es": "Después de la reunión, no sé cómo agradecértelo, Yesid.",
-    "en": "After the meeting, I don't know how to thank you, Yesid.",
+    "es": "Yesid, después de lo que hiciste en la reunión, no sé cómo agradecértelo.",
+    "en": "Yesid, after what you did at the meeting, I don't know how to thank you.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:no-se",
       "c:no-se-como-agradecertelo",
+      "c:que-hiciste",
       "g:gender-articles",
+      "g:preterite-ser-ir-hacer",
+      "g:relatives-donde-lo-que",
       "g:yo-irregular",
       "l:agradecer",
       "l:cómo",
       "l:después",
+      "l:hacer",
       "l:reunión",
       "l:saber",
       "p:time-sequence-basic"
@@ -28319,8 +28449,8 @@
   },
   {
     "id": "u42-1051",
-    "es": "Con lo que hiciste por Rosa, no sé cómo agradecértelo.",
-    "en": "With what you did for Rosa, I don't know how to thank you. (to a friend)",
+    "es": "Por todo lo que hiciste por Rosa, no sé cómo agradecértelo.",
+    "en": "For everything you did for Rosa, I don't know how to thank you. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28371,15 +28501,14 @@
   },
   {
     "id": "u42-1053",
-    "es": "Crucemos los dedos, que mañana abre el café otra vez.",
-    "en": "Let's keep our fingers crossed, the café opens again tomorrow.",
+    "es": "Mañana abre el café otra vez; crucemos los dedos.",
+    "en": "The café opens again tomorrow; let's keep our fingers crossed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:crucemos-los-dedos",
       "g:gender-articles",
       "g:present-er-ir",
-      "g:relative-que",
       "l:abrir",
       "l:café",
       "l:cruzar",
@@ -28421,20 +28550,22 @@
   },
   {
     "id": "u42-1055",
-    "es": "Crucemos los dedos para que el horno funcione el domingo.",
-    "en": "Let's keep our fingers crossed that the oven works on Sunday.",
+    "es": "Crucemos los dedos: el horno tiene que funcionar el domingo.",
+    "en": "Let's keep our fingers crossed: the oven has to work on Sunday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:crucemos-los-dedos",
+      "c:tienes",
       "g:gender-articles",
-      "g:para-que",
-      "g:subj-wanting",
+      "g:stem-boot",
+      "g:verb-infinitive",
       "l:cruzar",
       "l:dedo",
       "l:domingo",
       "l:funcionar",
       "l:horno",
+      "l:tener",
       "p:days-el-lunes"
     ],
     "targets": [
@@ -28472,20 +28603,23 @@
   },
   {
     "id": "u42-1057",
-    "es": "Crucemos los dedos para que me den la beca.",
-    "en": "Let's keep our fingers crossed that they give me the scholarship.",
+    "es": "Me dan la respuesta de la beca el lunes. Crucemos los dedos.",
+    "en": "They give me the answer about the scholarship on Monday. Let's keep our fingers crossed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:crucemos-los-dedos",
       "g:gender-articles",
-      "g:para-que",
-      "g:subj-wanting",
+      "g:present-ar",
       "l:beca",
       "l:cruzar",
       "l:dar",
       "l:dedo",
-      "p:me-te-nos-objects"
+      "l:lunes",
+      "l:respuesta",
+      "p:days-el-lunes",
+      "p:me-te-nos-objects",
+      "p:me-trae"
     ],
     "targets": [
       "c:crucemos-los-dedos",
@@ -28520,8 +28654,8 @@
   },
   {
     "id": "u42-1059",
-    "es": "Le deseo lo mejor en el taller nuevo, don Hernando.",
-    "en": "I wish you the best in the new workshop, Don Hernando.",
+    "es": "A usted, don Hernando, le deseo lo mejor en el taller nuevo.",
+    "en": "To you, Don Hernando, I wish the best in the new workshop.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28702,8 +28836,8 @@
   },
   {
     "id": "u42-1066",
-    "es": "Permítame un momento, tengo otra llamada.",
-    "en": "One moment, please, I have another call.",
+    "es": "Tengo otra llamada; permítame un momento.",
+    "en": "I have another call; one moment, please.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28750,8 +28884,8 @@
   },
   {
     "id": "u42-1068",
-    "es": "Permítame un momento, doña Rosa, la sala está ocupada.",
-    "en": "One moment, Doña Rosa, the room is occupied.",
+    "es": "Doña Luz, la sala está ocupada; permítame un momento.",
+    "en": "Doña Luz, the room is occupied; one moment, please.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28778,8 +28912,8 @@
   },
   {
     "id": "u42-1069",
-    "es": "Permítame un momento, señor, el doctor ya viene.",
-    "en": "One moment, sir, the doctor is coming now.",
+    "es": "El doctor ya viene, señor. Permítame un momento.",
+    "en": "The doctor is coming now, sir. One moment, please.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28824,8 +28958,8 @@
   },
   {
     "id": "u42-1071",
-    "es": "Permítame un momento, estoy buscando su turno en la lista.",
-    "en": "One moment, I'm looking for your turn on the list.",
+    "es": "Estoy buscando su turno en la lista, permítame un momento.",
+    "en": "I'm looking for your place on the list, one moment.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28915,27 +29049,27 @@
   },
   {
     "id": "u42-1074",
-    "es": "Quisiera leer el contrato con calma, pero no me dio tiempo de revisarlo.",
-    "en": "I'd like to read the contract calmly, but I didn't have time to review it.",
+    "es": "Quisiera revisar el contrato con calma, pero hoy no me da tiempo de hacerlo.",
+    "en": "I'd like to go over the contract calmly, but I don't have time to do it today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:me-regala",
       "g:direct-objects",
       "g:gender-articles",
       "g:imperfect-subj",
       "g:object-pronoun-position",
-      "g:preterite-irregular-strong",
       "g:softening",
       "g:verb-infinitive",
       "l:calma",
       "l:contrato",
       "l:dar",
-      "l:leer",
+      "l:hacer",
+      "l:hoy",
       "l:querer",
       "l:revisar",
       "l:tiempo",
-      "p:dar-tiempo",
-      "p:me-te-nos-objects"
+      "p:dar-tiempo"
     ],
     "targets": [
       "g:softening",
@@ -29196,7 +29330,7 @@
   {
     "id": "u42-1083",
     "es": "Quisiera quedarme a ayudar, lo que pasa es que mi mamá me espera.",
-    "en": "I'd like to stay and help, the thing is my mum is waiting for me.",
+    "en": "I'd like to stay and help, the thing is my mom is waiting for me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29289,7 +29423,7 @@
   {
     "id": "u42-1086",
     "es": "Quisiera tener más tiempo para el café, lo que pasa es que el sindicato me llama.",
-    "en": "I'd like to have more time for the café, the thing is the union keeps calling me.",
+    "en": "I'd like to have more time for the café, the thing is the union is calling me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29324,8 +29458,8 @@
   },
   {
     "id": "u42-1087",
-    "es": "Hoy no me dio tiempo de almorzar, pero ya quisiera una sopa caliente.",
-    "en": "I didn't have time to have lunch today, but right now I'd love a hot soup.",
+    "es": "Hoy no me dio tiempo de almorzar; quisiera una sopa caliente ya mismo.",
+    "en": "I didn't have time to have lunch today; I'd like a hot soup right now.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29389,8 +29523,8 @@
   },
   {
     "id": "u42-1089",
-    "es": "Quisiéramos tener el pedido hoy, lo que pasa es que faltan dos horas.",
-    "en": "We'd like to have the order today, the thing is two hours are missing.",
+    "es": "Quisiéramos tener el pedido hoy; lo que pasa es que la tienda cierra en dos horas.",
+    "en": "We'd like to have the order today; the thing is the shop closes in two hours.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29400,8 +29534,9 @@
       "g:present-ar",
       "g:relatives-donde-lo-que",
       "g:softening",
+      "g:stem-boot",
       "g:verb-infinitive",
-      "l:faltar",
+      "l:cerrar",
       "l:hora",
       "l:hoy",
       "l:pasar",
@@ -29409,8 +29544,8 @@
       "l:querer",
       "l:ser",
       "l:tener",
-      "p:lo-que-pasa-es-que",
-      "p:quedar-faltar-sobrar"
+      "l:tienda",
+      "p:lo-que-pasa-es-que"
     ],
     "targets": [
       "g:softening",
@@ -29685,25 +29820,29 @@
   },
   {
     "id": "u42-1098",
-    "es": "Quisiera ayudar, pero lo que pasa es que mi disponibilidad es poca.",
-    "en": "I'd like to help, but the thing is my availability is small.",
+    "es": "Quisiera ayudar, pero lo que pasa es que esta semana tengo poca disponibilidad.",
+    "en": "I'd like to help, but the thing is I have little availability this week.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:es-que",
+      "c:tengo",
       "g:imperfect-subj",
       "g:present-ar",
       "g:relatives-donde-lo-que",
-      "g:ser-identity",
       "g:softening",
       "g:verb-infinitive",
+      "g:yo-irregular",
       "l:ayudar",
       "l:disponibilidad",
       "l:pasar",
       "l:querer",
+      "l:semana",
       "l:ser",
+      "l:tener",
+      "p:demonstratives-basic",
       "p:lo-que-pasa-es-que",
-      "p:possessives-basic",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -29873,8 +30012,8 @@
   },
   {
     "id": "u42-1104",
-    "es": "Quisiera pedirte un favor: ¿me harías una llamada al abogado?",
-    "en": "I'd like to ask you a favour: would you make a call to the lawyer for me? (to a friend)",
+    "es": "Quisiera pedirte algo: ¿llamarías tú al abogado?",
+    "en": "I'd like to ask you something: would you call the lawyer? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29885,13 +30024,11 @@
       "g:softening",
       "g:verb-infinitive",
       "l:abogado",
-      "l:favor",
-      "l:hacer",
-      "l:llamada",
+      "l:llamar",
       "l:pedir",
       "l:querer",
-      "p:me-te-nos-objects",
-      "p:preguntar-pedir"
+      "p:indefinites-basic",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:softening"
@@ -29933,27 +30070,24 @@
   },
   {
     "id": "u42-1106",
-    "es": "Permítame que le diga que quisiera pagar ahora mismo.",
-    "en": "Allow me to tell you that I'd like to pay right now.",
+    "es": "Permítame que pague yo esta vez, don Hernando.",
+    "en": "Allow me to pay this time, Don Hernando.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:commands-usted",
       "g:commands-with-pronouns",
-      "g:imperfect-subj",
-      "g:indirect-objects",
       "g:subj-influence",
-      "g:subj-past-triggers",
       "g:subj-wanting",
       "g:that-clauses",
-      "g:verb-infinitive",
-      "l:ahora",
-      "l:decir",
       "l:pagar",
       "l:permitir",
-      "l:querer",
+      "l:vez",
       "p:dejame-que-te-ayude",
-      "p:me-te-nos-objects"
+      "p:demonstratives-basic",
+      "p:don-dona-nombre",
+      "p:me-te-nos-objects",
+      "p:senor-don-article"
     ],
     "targets": [
       "p:dejame-que-te-ayude"
@@ -30230,8 +30364,8 @@
   },
   {
     "id": "u42-1115",
-    "es": "Buenas tardes, quisiera hablar con el encargado. Ya lo comunico.",
-    "en": "Good afternoon, I'd like to speak to the manager. I'll put you through now.",
+    "es": "Buenas tardes, quisiera hablar con el encargado.\nYa lo comunico.",
+    "en": "Good afternoon, I'd like to speak to the manager.\nI'll put you through now.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -30257,18 +30391,19 @@
       "l:encargado",
       "p:me-comunica-con"
     ],
-    "kind": "statement",
+    "kind": "dialogue",
     "unit": "u42",
     "theme": "softened offers, favours and requests",
     "source": "gen"
   },
   {
     "id": "u42-1116",
-    "es": "En este momento no lo puede atender, pero quisiera dejarle un mensaje.",
-    "en": "He can't take your call right now, but I'd like to leave him a message.",
+    "es": "En este momento no lo puede atender.\nEntonces quisiera dejarle un mensaje.",
+    "en": "He can't take your call right now. (to a man)\nThen I'd like to leave him a message.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:entonces-bueno",
       "g:direct-objects",
       "g:gender-articles",
       "g:imperfect-subj",
@@ -30290,7 +30425,7 @@
       "g:softening",
       "p:me-comunica-con"
     ],
-    "kind": "statement",
+    "kind": "dialogue",
     "unit": "u42",
     "theme": "softened offers, favours and requests",
     "source": "gen"
@@ -30387,7 +30522,7 @@
   {
     "id": "u42-1120",
     "es": "Necesito que el abogado me llame lo antes posible, quisiera resolver una duda.",
-    "en": "I need the lawyer to call me as soon as possible, I'd like to resolve a doubt.",
+    "en": "I need the lawyer to call me as soon as possible, I'd like to clear up a question.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -30513,8 +30648,8 @@
   },
   {
     "id": "u42-1124",
-    "es": "Cuanto antes quisiera salir de este trámite, pero parece eterno.",
-    "en": "I'd like to be out of this paperwork as soon as possible, but it seems endless.",
+    "es": "Quisiera terminar este trámite cuanto antes, pero parece eterno.",
+    "en": "I'd like to finish this paperwork as soon as possible, but it seems endless.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -30527,7 +30662,7 @@
       "l:eterno",
       "l:parecer",
       "l:querer",
-      "l:salir",
+      "l:terminar",
       "l:trámite",
       "p:demonstratives-basic",
       "p:lo-antes-posible"
@@ -30604,24 +30739,25 @@
   },
   {
     "id": "u42-1127",
-    "es": "Si me hicieras un favor, quisiera pedirte que cuidaras a Simón.",
-    "en": "If you did me a favour, I'd like to ask you to look after Simón. (to a friend)",
+    "es": "¿Me harías un favor? Necesito que alguien cuide a Simón el domingo.",
+    "en": "Would you do me a favour? I need someone to look after Simón on Sunday. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:conditional",
       "g:gender-articles",
-      "g:imperfect-subj",
-      "g:object-pronoun-position",
-      "g:si-hypothetical",
-      "g:subj-past-triggers",
+      "g:present-ar",
+      "g:subj-wanting",
       "g:that-clauses",
-      "g:verb-infinitive",
       "l:cuidar",
+      "l:domingo",
       "l:favor",
       "l:hacer",
-      "l:pedir",
-      "l:querer",
+      "l:necesitar",
+      "p:days-el-lunes",
+      "p:indefinites-basic",
       "p:me-haces-el-favor-de",
+      "p:me-harias-un-favor",
       "p:me-te-nos-objects",
       "p:personal-a"
     ],
@@ -31348,17 +31484,19 @@
   },
   {
     "id": "u42-1153",
-    "es": "Ahora nos sentamos y escuchamos a todos con atención.",
-    "en": "Now we sit down and listen to everyone carefully.",
+    "es": "Ahora nos ponemos los zapatos y salimos.",
+    "en": "Now we put our shoes on and go out.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
-      "g:reflexive-routine",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:verbs-of-change",
       "l:ahora",
-      "l:atención",
-      "l:escuchar",
-      "l:sentarse",
+      "l:ponerse",
+      "l:salir",
+      "l:zapatos",
+      "p:lavarse-las-manos",
       "p:nosotros-instructions"
     ],
     "targets": [
@@ -31371,8 +31509,8 @@
   },
   {
     "id": "u42-1154",
-    "es": "Luego mezclamos el pan con el azúcar y esperamos un rato.",
-    "en": "Then we mix the bread with the sugar and wait a while.",
+    "es": "Luego mezclamos la harina con el azúcar y esperamos un rato.",
+    "en": "Then we mix the flour with the sugar and wait a while.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -31380,8 +31518,8 @@
       "g:present-ar",
       "l:azúcar",
       "l:esperar",
+      "l:harina",
       "l:mezclar",
-      "l:pan",
       "l:rato",
       "p:entonces-de-repente",
       "p:nosotros-instructions",
@@ -31449,19 +31587,18 @@
   },
   {
     "id": "u42-1157",
-    "es": "Entonces nos acostamos temprano y respiramos tranquilos.",
-    "en": "So we go to bed early and breathe calmly.",
+    "es": "Ahora nos calmamos y respiramos tranquilos.",
+    "en": "Now we calm down and breathe calmly.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:entonces-bueno",
       "g:adjective-agreement",
       "g:present-ar",
-      "g:reflexive-routine",
-      "l:acostarse",
+      "l:ahora",
+      "l:calmar",
       "l:respirar",
-      "l:temprano",
       "l:tranquilo",
+      "p:me-te-nos-objects",
       "p:nosotros-instructions"
     ],
     "targets": [
@@ -31835,7 +31972,7 @@
   {
     "id": "u42-1171",
     "es": "Qué comentario tan fuera de lugar, Yesid.",
-    "en": "What a comment out of place, Yesid.",
+    "en": "What an out of place comment, Yesid.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -31853,16 +31990,13 @@
   },
   {
     "id": "u42-1172",
-    "es": "Está prohibido que alguien hable con los jueces fuera de la sala.",
-    "en": "Nobody is allowed to talk to the judges outside the courtroom.",
+    "es": "Está prohibido hablar con los jueces fuera de la sala.",
+    "en": "Talking to the judges outside the courtroom is forbidden.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
       "g:gender-articles",
-      "g:subj-value",
-      "g:subj-wanting",
-      "g:that-clauses",
       "l:estar",
       "l:hablar",
       "l:juez",
@@ -31872,7 +32006,6 @@
       "p:es-obligatorio",
       "p:esta-prohibido",
       "p:esta-prohibido-que",
-      "p:indefinites-basic",
       "p:position-de"
     ],
     "targets": [
@@ -31971,8 +32104,8 @@
   },
   {
     "id": "u42-1176",
-    "es": "Te lo agradezco, Hernando, de verdad.",
-    "en": "I appreciate it, Hernando, truly.",
+    "es": "Te lo agradezco, Yesid, de verdad.",
+    "en": "I appreciate it, Yesid, truly.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32256,18 +32389,19 @@
   },
   {
     "id": "u42-1187",
-    "es": "La cortesía abre más puertas que la prisa.",
-    "en": "Courtesy opens more doors than haste.",
+    "es": "Un poco de cortesía no le cuesta nada a nadie.",
+    "en": "A little courtesy costs nobody anything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:comparatives",
       "g:gender-articles",
-      "g:present-er-ir",
-      "l:abrir",
+      "g:gustar-full",
+      "g:negation-words",
+      "g:stem-boot",
       "l:cortesía",
-      "l:prisa",
-      "l:puerta"
+      "l:costar",
+      "p:poco-un-poco",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:cortesía"
@@ -32357,8 +32491,8 @@
   },
   {
     "id": "u42-1191",
-    "es": "Se lo ruego, doña Rosa, no se vaya sin su pan.",
-    "en": "I beg you, Doña Rosa, don't leave without your bread.",
+    "es": "Se lo ruego, doña Teresa, no se vaya sin su pan.",
+    "en": "I beg you, Doña Teresa, don't leave without your bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32436,19 +32570,20 @@
   },
   {
     "id": "u42-1194",
-    "es": "Enterramos a Rosa en un día de lluvia y con mucha gente.",
-    "en": "We buried Rosa on a rainy day with many people.",
+    "es": "El día que enterramos a Rosa, hasta Simón se quedó callado.",
+    "en": "The day we buried Rosa, even Simón went quiet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
+      "g:preterite-ar",
+      "g:reflexive-routine",
+      "g:relative-que",
+      "l:callado",
       "l:día",
       "l:enterrar",
-      "l:gente",
-      "l:lluvia",
-      "p:la-gente-singular",
-      "p:quantifiers-basic"
+      "l:quedarse"
     ],
     "targets": [
       "l:enterrar"
@@ -32460,18 +32595,20 @@
   },
   {
     "id": "u42-1195",
-    "es": "Con el desempleo así, ningún empleado quiere quejarse.",
-    "en": "With unemployment like this, no employee wants to complain.",
+    "es": "Hay tanto desempleo que nadie quiere quejarse del jefe.",
+    "en": "There's so much unemployment that nobody wants to complain about the boss.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
       "g:gender-articles",
-      "g:indefinites",
+      "g:hay-vs-esta",
       "g:reflexive-routine",
+      "g:relative-que",
       "g:stem-boot",
       "g:verb-infinitive",
       "l:desempleo",
-      "l:empleado",
+      "l:jefe",
       "l:quejarse",
       "l:querer"
     ],
@@ -32565,19 +32702,22 @@
   },
   {
     "id": "u42-1199",
-    "es": "No sé cómo agradecértelo, Tomás, de verdad.",
-    "en": "I don't know how to thank you, Tomás, truly.",
+    "es": "Tomás, nunca nadie hizo tanto por mí; no sé cómo agradecértelo.",
+    "en": "Tomás, nobody ever did so much for me; I don't know how to thank you.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:en-serio",
       "c:no-se",
       "c:no-se-como-agradecertelo",
+      "g:por-para-1",
+      "g:prep-pronouns",
+      "g:preterite-ser-ir-hacer",
       "g:yo-irregular",
       "l:agradecer",
       "l:cómo",
+      "l:hacer",
       "l:saber",
-      "l:verdad"
+      "p:frequency-scale"
     ],
     "targets": [
       "c:no-se-como-agradecertelo"
@@ -33042,7 +33182,7 @@
   {
     "id": "u42-1216",
     "es": "Los lunes no me alcanza el tiempo ni para tomar un tinto.",
-    "en": "On Mondays I don't have time even for a black coffee.",
+    "en": "On Mondays I don't even have time for a black coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -33161,8 +33301,8 @@
   },
   {
     "id": "u42-1221",
-    "es": "Le agradecería que me pasara el azúcar.",
-    "en": "I would be grateful if you passed me the sugar. (polite)",
+    "es": "Le agradecería que me pasara el azúcar, si no es molestia.",
+    "en": "I would be grateful if you passed me the sugar, if it's no trouble. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -33171,11 +33311,15 @@
       "g:imperfect-subj",
       "g:indirect-objects",
       "g:reflexive-routine",
+      "g:ser-identity",
+      "g:si-present",
       "g:subj-past-triggers",
       "g:that-clauses",
       "l:agradecer",
       "l:azúcar",
+      "l:molestia",
       "l:pasarse",
+      "l:ser",
       "p:le-agradeceria-que"
     ],
     "targets": [
@@ -34409,15 +34553,15 @@
   },
   {
     "id": "u42-1273",
-    "es": "¿No tienes por qué preocuparte, verdad?",
+    "es": "No tienes por qué preocuparte, ¿verdad?",
     "en": "You have no reason to worry, right? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:no-cierto",
       "c:tienes",
+      "g:indirect-questions",
       "g:object-pronoun-position",
-      "g:questions",
       "g:reflexive-routine",
       "g:stem-boot",
       "l:preocuparse",
@@ -34676,7 +34820,7 @@
   {
     "id": "u42-1284",
     "es": "¿Qué te parece si lo dejamos para el lunes?",
-    "en": "What do you think if we leave it for Monday? (to a friend)",
+    "en": "How about we leave it for Monday? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -34726,7 +34870,7 @@
   {
     "id": "u42-1286",
     "es": "¿Y si le escribimos una carta formal a la alcaldía?",
-    "en": "And if we write a formal letter to the mayor's office?",
+    "en": "What if we write a formal letter to the mayor's office?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -34752,7 +34896,7 @@
   {
     "id": "u42-1287",
     "es": "¿Hasta cuándo puedo entregar la solicitud de la beca?",
-    "en": "Until when can I hand in the scholarship application?",
+    "en": "How long do I have to hand in the scholarship application?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -34809,14 +34953,13 @@
   },
   {
     "id": "u42-1289",
-    "es": "¿A quién le agradezco por el pan de hoy?",
+    "es": "¿A quién le agradezco el pan de hoy?",
     "en": "Whom do I thank for today's bread?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:indirect-objects",
-      "g:por-para-1",
       "g:yo-irregular",
       "l:agradecer",
       "l:hoy",
@@ -34859,7 +35002,7 @@
   {
     "id": "u42-1291",
     "es": "¿Se puede entrar o está prohibido?",
-    "en": "Can one go in or is it forbidden?",
+    "en": "Can people go in, or is it forbidden?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -34883,7 +35026,7 @@
   {
     "id": "u42-1292",
     "es": "¿Prefieres que te llame hoy o mañana?",
-    "en": "Do you prefer that I call you today or tomorrow? (to a friend)",
+    "en": "Do you prefer me to call you today or tomorrow? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -34927,20 +35070,17 @@
   },
   {
     "id": "u42-1294",
-    "es": "¿Cuándo es la entrevista del entrevistado?",
-    "en": "When is the interviewee's interview?",
+    "es": "¿El entrevistado ya llegó o lo esperamos?",
+    "en": "Has the interviewee arrived yet, or shall we wait for him?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:direct-objects",
       "g:gender-articles",
-      "g:questions",
-      "g:ser-identity",
-      "l:cuándo",
-      "l:entrevista",
+      "g:preterite-ar",
       "l:entrevistado",
-      "l:ser",
-      "p:event-ser-en",
-      "p:question-word-order"
+      "l:esperar",
+      "l:llegar"
     ],
     "targets": [
       "l:entrevistado"
@@ -34952,17 +35092,16 @@
   },
   {
     "id": "u42-1295",
-    "es": "¿Quién empuja y quién hala esta puerta?",
-    "en": "Who pushes and who pulls this door?",
+    "es": "¿Esta puerta se empuja o se hala?",
+    "en": "Do you push or pull this door?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "g:questions",
+      "g:se-impersonal",
       "l:empujar",
       "l:hala",
       "l:puerta",
-      "l:quién",
       "p:demonstratives-basic"
     ],
     "targets": [],

@@ -33,8 +33,8 @@
     },
     {
       "id": "t2",
-      "npc": "Secretario: Llegó esta mañana, sí. Pero está prohibido que alguien lo vea sin la firma del juez.",
-      "npcEn": "Clerk: It arrived this morning, yes. But it is forbidden for anyone to see it without the judge's signature.",
+      "npc": "Secretario: Llegó esta mañana, sí. Pero está prohibido mostrarlo sin la firma del juez.",
+      "npcEn": "Clerk: It arrived this morning, yes. But it is forbidden to show it without the judge's signature.",
       "intent": "Ask whether it would be possible to read it today, here at the counter.",
       "accept": [
         "Entiendo. ¿Sería posible leerlo hoy aquí mismo?",
@@ -60,7 +60,7 @@
       "id": "t3",
       "npc": "Secretario: Tendría que pedírselo al juez, y sale de la sala a las cuatro. ¿Puede esperar una hora?",
       "npcEn": "Clerk: You would have to ask the judge, and he comes out of the courtroom at four. Can you wait an hour?",
-      "intent": "Say politely that you can't, you don't have time today, and give a reason.",
+      "intent": "Say politely that you can't, you don't have time today (no me alcanza el tiempo / no me da tiempo), and give a reason.",
       "accept": [
         "Lo siento, hoy no me alcanza el tiempo para esperar tanto. Tengo que abrir el café.",
         "Qué pena, pero hoy no me da tiempo de esperar una hora.",
@@ -170,7 +170,6 @@
     "g:ser-identity",
     "g:stem-boot",
     "g:subj-relative",
-    "g:subj-value",
     "g:subj-wanting",
     "g:that-clauses",
     "g:verb-infinitive",
@@ -208,6 +207,7 @@
     "l:llevar",
     "l:mañana",
     "l:mostrador",
+    "l:mostrar",
     "l:parte",
     "l:pedir",
     "l:pena",
@@ -242,7 +242,6 @@
     "p:es-obligatorio",
     "p:esta-prohibido",
     "p:esta-prohibido-que",
-    "p:indefinites-basic",
     "p:me-te-nos-objects",
     "p:no-hace-falta-que",
     "p:nos-vemos-a-las",

@@ -1,7 +1,7 @@
 {
   "node": "p:me-comunica-con",
   "hook": {
-    "line": "Tomás has to call the taller about the car, and a polite voice picks up. In Colombia you don't ask whether someone is there: you ask to be put through, and you use *usted*.",
+    "line": "Tomás has to call the court, and a polite voice picks up. In Colombia you don't ask whether someone is there: you ask to be put through, and you use *usted*.",
     "es": "¿Me comunica con la señora Gómez?",
     "en": "Could you put me through to Mrs Gómez? (formal)"
   },
@@ -31,7 +31,7 @@
       "en": "Who shall I put you through to? (to a man)"
     }
   ],
-  "rule": "Spanish doesn't ask whether someone *is there*. It asks to be connected: *¿Me comunica con…?*, always with *usted*. The person goes after *con*.\n\nThe receptionist answers *Ya lo comunico* to a man or *Ya la comunico* to a woman. Here *lo* and *la* mean \"you\", never *le*.\n\nIf the person is busy: *En este momento no lo puede atender* (or *la*).\n\nSpain says *¿me pone con…?*. You will recognise it, but in Colombia use *comunicar*.",
+  "rule": "Spanish doesn't ask whether someone *is there*. It asks to be connected: *¿Me comunica con…?*, always with *usted*. The person goes after *con*.\n\nThe receptionist answers *Ya lo comunico* to a man or *Ya la comunico* to a woman. Here *lo* and *la* mean \"you\". You will also hear *ya le comunico*, but *lo* and *la* are the safe choice.\n\nIf the person is busy: *En este momento no lo puede atender* (or *la*).\n\nSpain says *¿me pone con…?*. You will recognise it, but in Colombia use *comunicar*.",
   "smallPrint": "Teachers call *lo* and *la* here direct object pronouns: they stand for the person being connected.",
   "readAndPick": [
     {
@@ -140,7 +140,8 @@
       "prompt": "Type in Spanish: She can't take your call right now. (to a man)",
       "answer": "En este momento no lo puede atender.",
       "accept": [
-        "Ahora no lo puede atender."
+        "Ahora no lo puede atender.",
+        "No lo puede atender en este momento."
       ],
       "why": "*Lo* is the man calling, and *no puede atender* means she can't see to him."
     },
@@ -166,9 +167,9 @@
       "why": "Almost. Connecting someone is always *comunicar con*, never *a*."
     },
     {
-      "wrong": "Ya le comunico con el doctor.",
-      "right": "Ya lo comunico con el doctor.",
-      "why": "Almost. Here *lo* (to a man) and *la* (to a woman) stand for the person you connect."
+      "wrong": "¿Me conecta con la señora Gómez?",
+      "right": "¿Me comunica con la señora Gómez?",
+      "why": "Almost. On the phone, Spanish uses *comunicar*; *conectar* is for cables and the internet."
     },
     {
       "wrong": "¿Me comunicas con el doctor?",

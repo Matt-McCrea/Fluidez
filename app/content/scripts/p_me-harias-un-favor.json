@@ -91,8 +91,8 @@
     {
       "es": "Este mueble pesa muchísimo.",
       "options": [
-        "This piece of furniture is really heavy, and I'd like some help.",
-        "I'd like you to buy this piece of furniture.",
+        "This piece of furniture is really heavy.",
+        "This piece of furniture was really heavy.",
         "This piece of furniture is really light."
       ],
       "answer": 0
@@ -115,10 +115,12 @@
       "why": "The conditional *harías* is the polite, \"would you\" form."
     },
     {
-      "prompt": "Type in Spanish, to a friend: Would you do me a favour?",
-      "answer": "¿Me harías un favor?",
-      "accept": [],
-      "why": "*Hacer un favor* needs *un* and the conditional."
+      "prompt": "Type in Spanish, to a friend: Would you do me a big favour?",
+      "answer": "¿Me harías un gran favor?",
+      "accept": [
+        "¿Me harías un favor grande?"
+      ],
+      "why": "*Gran* goes before the noun; *grande* goes after it."
     },
     {
       "prompt": "Type in Spanish, to a friend: I'd need you to look after the kids on Saturday.",
@@ -148,7 +150,7 @@
       "prompt": "Type in Spanish, as a hint: I need someone to help me with the boxes.",
       "answer": "Necesito que alguien me ayude con las cajas.",
       "accept": [],
-      "why": "With *alguien*, the next verb is in the subjunctive: *ayude*."
+      "why": "After *necesito que*, the verb takes its wish form: *ayude*."
     }
   ],
   "pitfalls": [

@@ -31,7 +31,7 @@
       "en": "I do want to go; the thing is I'm really tired. (a woman speaking)"
     }
   ],
-  "rule": "*Lo que pasa es que* means \"the thing is…\". It cushions an excuse, an explanation or bad news. Without it, the next sentence can sound blunt.\n\nIt is one fixed block, then an ordinary full sentence in the tense you need: *Lo que pasa es que no tengo tiempo*; *Lo que pasa es que llegué tarde*.\n\nThe opener itself stays in the present, *pasa*.\n\nThe chattier, shorter cousin is *Es que…*",
+  "rule": "*Lo que pasa es que* means \"the thing is…\". It cushions an excuse, an explanation or bad news. Without it, the next sentence can sound blunt.\n\nIt is one fixed block, then an ordinary full sentence in the tense you need: *Lo que pasa es que no tengo tiempo*; *Lo que pasa es que llegué tarde*.\n\nIn everyday talk the opener stays *pasa*, even when the news is in the past. When you tell a story, you may hear *lo que pasaba era que…*\n\nThe chattier, shorter cousin is *Es que…*",
   "smallPrint": "Teachers call this a pseudo-cleft: *lo que* + verb + *ser* puts the explanation at the end, where it lands.",
   "readAndPick": [
     {
@@ -118,7 +118,7 @@
       "prompt": "Choose *pasa* or *pasó*: Lo que ___ es que no tengo tiempo. Type the whole sentence.",
       "answer": "Lo que pasa es que no tengo tiempo.",
       "accept": [],
-      "why": "The opener stays in the present: *pasa*."
+      "why": "When you explain right now, the opener is *pasa*."
     },
     {
       "prompt": "Type in Spanish: The thing is my car won't start.",
