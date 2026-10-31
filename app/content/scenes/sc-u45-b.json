@@ -33,7 +33,7 @@
       "id": "t2",
       "npc": "Hernando: Eso dice el comunicado de la empresa. ¿Y qué se dice en el barrio?",
       "npcEn": "Hernando: That is what the company's statement says. And what is being said in the neighbourhood?",
-      "intent": "Say that people say the hotel won't be ready on time (use the impersonal se: se dice que).",
+      "intent": "Say what people in the neighbourhood are saying about the hotel (use the impersonal se: se dice que, se cree que).",
       "accept": [
         "Se dice que el hotel no estará listo a tiempo.",
         "Se cree que es un truco de Altamira.",
@@ -54,7 +54,7 @@
       "id": "t3",
       "npc": "Hernando: ¿Y usted cómo lo sabe?",
       "npcEn": "Hernando: And how do you know?",
-      "intent": "Say that someone told you the workers have no cement (use: Me contaron que).",
+      "intent": "Say that someone told you the building work is going badly (use: Me contaron que).",
       "accept": [
         "Me contaron que los obreros llevan una semana sin cemento.",
         "Me contaron que la obra va muy lenta.",
@@ -73,12 +73,12 @@
     },
     {
       "id": "t4",
-      "npc": "Hernando: Entonces Altamira presume demasiado. ¿Y nosotros qué hacemos mientras tanto?",
-      "npcEn": "Hernando: So Altamira is boasting too much. And what do we do in the meantime?",
+      "npc": "Hernando: Entonces Altamira promete demasiado. ¿Y nosotros qué hacemos mientras tanto?",
+      "npcEn": "Hernando: So Altamira is promising too much. And what do we do in the meantime?",
       "intent": "Say you stay open as long as there is no decision (use: Mientras no + subjunctive).",
       "accept": [
         "Mientras no haya una decisión, nos quedamos aquí.",
-        "Mientras la ciudad no decida, seguimos abriendo el café.",
+        "Mientras la ciudad no decida, el café sigue abierto.",
         "Seguimos aquí mientras no haya una respuesta oficial."
       ],
       "require": [
@@ -93,12 +93,12 @@
     },
     {
       "id": "t5",
-      "npc": "Hernando: Eso me gusta oír. Le invito un tinto, joven.",
-      "npcEn": "Hernando: I like to hear that. I'll buy you a coffee, young man.",
+      "npc": "Hernando: Así me gusta. Le invito un tinto, joven.",
+      "npcEn": "Hernando: That's the spirit. Let me buy you a coffee, young man.",
       "intent": "Thank him politely and say goodbye until tomorrow (he is older, so use usted).",
       "accept": [
-        "Muchas gracias, Don Hernando. Hasta mañana.",
-        "Se lo agradezco mucho, Don Hernando.",
+        "Muchas gracias, don Hernando. Hasta mañana.",
+        "Se lo agradezco mucho, don Hernando.",
         "Gracias, con gusto. Hasta mañana."
       ],
       "require": [
@@ -130,7 +130,6 @@
     "g:estar-location-states",
     "g:future-promises",
     "g:gender-articles",
-    "g:gerund-ways",
     "g:gustar-basic",
     "g:hace-que-desde",
     "g:hay-vs-esta",
@@ -182,8 +181,8 @@
     "l:obra",
     "l:obrero",
     "l:oficial",
-    "l:oír",
     "l:periódico",
+    "l:prometer",
     "l:pronto",
     "l:quedarse",
     "l:qué",
@@ -210,7 +209,6 @@
     "p:mientras-subj",
     "p:quantifiers-basic",
     "p:saber-conocer",
-    "p:seguir-gerundio",
     "p:senor-don-article",
     "p:si-pero-que",
     "p:te-lo-agradezco",

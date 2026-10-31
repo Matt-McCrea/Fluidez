@@ -16,7 +16,7 @@
     },
     {
       "es": "Se produjo un incendio en La Candelaria.",
-      "en": "A fire occurred in La Candelaria."
+      "en": "A fire broke out in La Candelaria."
     },
     {
       "es": "Nadie sabe cómo sucedió.",
@@ -55,7 +55,7 @@
       "es": "Se produjo un incendio.",
       "options": [
         "A man lit a fire on purpose.",
-        "A fire occurred."
+        "A fire broke out."
       ],
       "answer": 1
     },
@@ -121,7 +121,8 @@
       "answer": "El accidente ocurrió de madrugada.",
       "accept": [
         "El accidente sucedió de madrugada.",
-        "El accidente se produjo de madrugada."
+        "El accidente se produjo de madrugada.",
+        "El accidente ocurrió en la madrugada."
       ],
       "why": "\"In the early hours\" is *de madrugada*."
     },
@@ -134,7 +135,7 @@
       "why": "The neutral verbs are *ocurrió* and *sucedió*."
     },
     {
-      "prompt": "Type in Spanish, news style: A fire occurred in La Candelaria.",
+      "prompt": "Type in Spanish, news style: A fire broke out in La Candelaria.",
       "answer": "Se produjo un incendio en La Candelaria.",
       "accept": [],
       "why": "News style is *se produjo* plus the event."
@@ -168,7 +169,7 @@
     {
       "wrong": "El accidente ocurrió a la madrugada.",
       "right": "El accidente ocurrió de madrugada.",
-      "why": "Almost. \"In the early hours\" is *de madrugada*."
+      "why": "Almost. \"In the early hours\" is *de madrugada* (or *en la madrugada*)."
     }
   ],
   "personal": "Tell something small that happened to you this week, news style, with *ocurrió* or *se produjo*."

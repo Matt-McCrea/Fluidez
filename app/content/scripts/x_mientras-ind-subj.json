@@ -2,8 +2,8 @@
   "node": "x:mientras-ind-subj",
   "hook": {
     "line": "Vale tells Tomás two things in one breath: what she does while he works, and what she will do only as long as the café survives. Both start with *mientras*, but the verb gives away which is which.",
-    "es": "Mientras Tomás atienda, yo cocino.",
-    "en": "As long as Tomás is serving, I'll cook."
+    "es": "Mientras atiendes, yo cocino. Y mientras el café siga abierto, yo me quedo.",
+    "en": "While you serve, I cook. And as long as the café stays open, I'm staying."
   },
   "examples": [
     {
@@ -31,7 +31,7 @@
       "en": "While I waited, I read the newspaper."
     }
   ],
-  "rule": "*Mientras* does two jobs, and the verb tells you which one.\n\nTwo things happening at the same time, \"while\": an ordinary verb. *Mientras cocinas, pongo la mesa.* Both are facts.\n\nA condition, \"as long as\": the wish form. *Mientras haya trabajo, me quedo.* It may or may not come true.\n\nTest: can you say \"while\" in English? Ordinary verb. Does \"as long as\" fit better? Wish form.\n\nIn the past it is always an ordinary verb: *Mientras estudiaba, trabajaba.*\n\nIt works just like *cuando*.",
+  "rule": "*Mientras* does two jobs, and the verb tells you which one.\n\nTwo things happening at the same time, \"while\": an ordinary verb. *Mientras cocinas, pongo la mesa.* Both are facts.\n\nA condition, \"as long as\": the wish form. *Mientras haya trabajo, me quedo.* It may or may not come true.\n\nTest: can you say \"while\" in English? Ordinary verb. Does \"as long as\" fit better? Wish form.\n\nIn the past it is always an ordinary verb: *Mientras estudiaba, trabajaba.*",
   "smallPrint": "Teachers call this indicative for simultaneous time and subjunctive for a condition that is not yet real.",
   "readAndPick": [
     {

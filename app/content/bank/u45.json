@@ -43,7 +43,7 @@
   {
     "id": "u45-0003",
     "es": "¿Dónde habré dejado las llaves?",
-    "en": "Where can I have left my keys?",
+    "en": "Where could I have left my keys?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -86,7 +86,7 @@
   {
     "id": "u45-0005",
     "es": "Tomás habrá abierto el café a las siete.",
-    "en": "Tomás will have opened the café at seven.",
+    "en": "Tomás must have opened the café at seven.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -178,7 +178,7 @@
   {
     "id": "u45-0009",
     "es": "¿Quién habrá escrito esa carta?",
-    "en": "Who can have written that letter?",
+    "en": "Who could have written that letter?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -378,7 +378,7 @@
   {
     "id": "u45-0018",
     "es": "¿Habrá visto el jefe el mensaje?",
-    "en": "Can the boss have seen the message?",
+    "en": "I wonder if the boss has seen the message.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -469,8 +469,8 @@
   },
   {
     "id": "u45-0022",
-    "es": "Estarán cansados; han trabajado desde las cinco.",
-    "en": "They must be tired; they have worked since five.",
+    "es": "Estarán cansados; empezaron a trabajar a las cinco.",
+    "en": "They must be tired; they started work at five.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -478,10 +478,14 @@
       "g:estar-location-states",
       "g:future-promises",
       "g:gender-articles",
-      "g:perfecto-experience",
+      "g:preterite-ar",
+      "g:verb-infinitive",
       "l:cansado",
+      "l:empezar",
       "l:estar",
-      "l:trabajar"
+      "l:trabajar",
+      "p:empezar-terminar",
+      "p:telling-time"
     ],
     "targets": [],
     "kind": "statement",
@@ -512,7 +516,7 @@
   {
     "id": "u45-0024",
     "es": "¿Cuánto habrá costado ese edificio?",
-    "en": "How much can that building have cost?",
+    "en": "I wonder how much that building cost.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -618,7 +622,7 @@
   {
     "id": "u45-0029",
     "es": "¿Qué habrá pasado con el concejal?",
-    "en": "What can have happened to the councillor?",
+    "en": "What could have happened to the councillor?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -774,7 +778,7 @@
   {
     "id": "u45-0036",
     "es": "¿Habrá llegado el periódico de hoy?",
-    "en": "Can today's newspaper have arrived?",
+    "en": "I wonder if today's paper has arrived.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -860,12 +864,13 @@
   },
   {
     "id": "u45-0040",
-    "es": "Hernando habrá manejado mil kilómetros en su vida.",
-    "en": "Hernando must have driven a thousand kilometres in his life.",
+    "es": "Hernando habrá manejado un millón de kilómetros en su vida.",
+    "en": "Hernando must have driven a million kilometres in his life.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:future-perfect",
+      "g:gender-articles",
       "l:kilómetro",
       "l:manejar",
       "l:vida",
@@ -907,7 +912,7 @@
   {
     "id": "u45-0042",
     "es": "¿Habrán entendido lo que dijo la jueza?",
-    "en": "Can they have understood what the judge said?",
+    "en": "I wonder if they understood what the judge said.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1144,7 +1149,7 @@
   {
     "id": "u45-0053",
     "es": "Nadie lo habrá leído hasta el final.",
-    "en": "Nobody can have read it to the end.",
+    "en": "Nobody will have read it to the end.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1236,11 +1241,12 @@
   },
   {
     "id": "u45-0057",
-    "es": "Tomás no ha abierto.\nSe habrá quedado dormido.",
+    "es": "Tomás todavía no ha abierto.\nSe habrá quedado dormido.",
     "en": "Tomás hasn't opened up.\nHe must have overslept.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:todavia-no",
       "g:future-perfect",
       "g:perfecto-experience",
       "g:reflexive-routine",
@@ -1260,7 +1266,7 @@
   {
     "id": "u45-0058",
     "es": "¿Por qué estará cerrada la sede?\nHabrán salido a una reunión.",
-    "en": "Why can the office be closed?\nThey must have gone out to a meeting.",
+    "en": "Why would the office be closed?\nThey must have gone out to a meeting.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1289,7 +1295,7 @@
   {
     "id": "u45-0059",
     "es": "¿Dónde habrán puesto el periódico?\nLo habrá guardado Hernando.",
-    "en": "Where can they have put the newspaper?\nHernando must have put it away.",
+    "en": "Where could they have put the newspaper?\nHernando must have put it away.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1364,7 +1370,7 @@
   {
     "id": "u45-0062",
     "es": "¿Qué hora será?\nYa serán las tres.",
-    "en": "What time can it be?\nIt must be three already.",
+    "en": "What time could it be?\nIt must be three already.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1412,7 +1418,7 @@
   {
     "id": "u45-0064",
     "es": "¿Cuántos años tendrá ese loro?",
-    "en": "How old can that parrot be?",
+    "en": "How old could that parrot be?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1434,7 +1440,7 @@
   {
     "id": "u45-0065",
     "es": "¿Dónde estará Simón ahora?",
-    "en": "Where can Simón be now?",
+    "en": "Where could Simón be now?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1455,7 +1461,7 @@
   {
     "id": "u45-0066",
     "es": "¿Quién será esa mujer?",
-    "en": "Who can that woman be?",
+    "en": "Who could that woman be?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1477,7 +1483,7 @@
   {
     "id": "u45-0067",
     "es": "¿Estará abierta la panadería?",
-    "en": "Can the bakery be open?",
+    "en": "I wonder if the bakery is open.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1592,17 +1598,15 @@
   },
   {
     "id": "u45-0073",
-    "es": "Serán unas cien personas en la sala.",
+    "es": "Habrá unas cien personas en la sala.",
     "en": "There must be about a hundred people in the room.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
       "g:gender-articles",
-      "g:ser-identity",
+      "g:imperfect-states",
       "l:persona",
       "l:sala",
-      "l:ser",
       "p:aproximar-cifras",
       "p:numbers-un-una",
       "p:unos-approx"
@@ -1705,7 +1709,7 @@
   {
     "id": "u45-0078",
     "es": "¿Quién habrá sido el primero en enterarse?",
-    "en": "Who can have been the first to find out?",
+    "en": "Who could have been the first to find out?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1751,7 +1755,7 @@
   {
     "id": "u45-0080",
     "es": "¿Se habrá enterado Altamira?",
-    "en": "Can Altamira have found out?",
+    "en": "I wonder if Altamira has found out.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1771,7 +1775,7 @@
   {
     "id": "u45-0081",
     "es": "¿No habrá leído mi correo todavía?",
-    "en": "Can he not have read my email yet?",
+    "en": "Could he still not have read my email?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1792,7 +1796,7 @@
   {
     "id": "u45-0082",
     "es": "¿Habré cerrado la puerta con llave?",
-    "en": "Can I have locked the door?",
+    "en": "I wonder if I locked the door.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2371,8 +2375,8 @@
   },
   {
     "id": "u45-0108",
-    "es": "Según Mariana, el concejal habría viajado el lunes.",
-    "en": "According to Mariana, the councillor allegedly travelled on Monday.",
+    "es": "El concejal habría viajado el lunes, según Mariana.",
+    "en": "The councillor allegedly travelled on Monday, according to Mariana.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2460,7 +2464,7 @@
   {
     "id": "u45-0112",
     "es": "Según el comunicado, la sede cerraría el viernes.",
-    "en": "According to the statement, the office is to close on Friday, it says.",
+    "en": "According to the statement, the office will close on Friday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2504,8 +2508,8 @@
   },
   {
     "id": "u45-0114",
-    "es": "Según el periódico, habría más de cien afectados.",
-    "en": "According to the newspaper, there are reportedly more than a hundred people affected.",
+    "es": "Habría más de cien afectados, según el periódico.",
+    "en": "There are reportedly more than a hundred people affected, according to the newspaper.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2516,8 +2520,7 @@
       "l:afectar",
       "l:periódico",
       "p:mas-de-number",
-      "p:numbers-un-una",
-      "p:un-estudio-muestra-que"
+      "p:numbers-un-una"
     ],
     "targets": [],
     "kind": "statement",
@@ -2593,8 +2596,8 @@
   },
   {
     "id": "u45-0118",
-    "es": "Según un testigo, el cheque habría llegado en septiembre.",
-    "en": "According to a witness, the cheque allegedly arrived in September.",
+    "es": "El cheque habría llegado en septiembre, según un testigo.",
+    "en": "The cheque allegedly arrived in September, according to a witness.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2604,8 +2607,7 @@
       "l:cheque",
       "l:llegar",
       "l:septiembre",
-      "l:testigo",
-      "p:un-estudio-muestra-que"
+      "l:testigo"
     ],
     "targets": [],
     "kind": "statement",
@@ -2705,21 +2707,20 @@
   },
   {
     "id": "u45-0123",
-    "es": "Según la televisión, el tráfico estaría cerrado en el centro.",
-    "en": "According to television, traffic is reportedly closed downtown.",
+    "es": "Las calles del centro estarían cerradas, según la televisión.",
+    "en": "The streets downtown are reportedly closed, according to television.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:segun",
       "g:conditional",
-      "g:estar-location-states",
+      "g:estar-participle",
       "g:gender-articles",
+      "l:calle",
       "l:centro",
       "l:cerrar",
       "l:estar",
-      "l:televisión",
-      "l:tráfico",
-      "p:un-estudio-muestra-que"
+      "l:televisión"
     ],
     "targets": [],
     "kind": "statement",
@@ -2729,8 +2730,8 @@
   },
   {
     "id": "u45-0124",
-    "es": "Según un vecino, las obras empezarían el lunes.",
-    "en": "According to a neighbour, the works would start on Monday.",
+    "es": "Las obras empezarían el lunes, según un vecino.",
+    "en": "The work is reportedly starting on Monday, according to a neighbour.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2741,8 +2742,7 @@
       "l:lunes",
       "l:obra",
       "l:vecino",
-      "p:days-el-lunes",
-      "p:un-estudio-muestra-que"
+      "p:days-el-lunes"
     ],
     "targets": [],
     "kind": "statement",
@@ -2836,19 +2836,20 @@
   },
   {
     "id": "u45-0129",
-    "es": "Según una versión, habría un segundo documento.",
-    "en": "According to one version, there is reportedly a second document.",
+    "es": "Existiría un segundo documento que nadie ha visto.",
+    "en": "A second document that nobody has seen reportedly exists.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:segun",
+      "g:conditional",
       "g:gender-articles",
-      "g:imperfect-states",
+      "g:perfecto-experience",
+      "g:relative-que",
       "l:documento",
-      "l:versión",
+      "l:existir",
+      "l:ver",
       "p:ordinal-floor",
-      "p:ordinals-primer-tercer",
-      "p:un-estudio-muestra-que"
+      "p:ordinals-primer-tercer"
     ],
     "targets": [],
     "kind": "statement",
@@ -2944,8 +2945,8 @@
   },
   {
     "id": "u45-0134",
-    "es": "Según algunos periódicos, el hotel tendría cien habitaciones.",
-    "en": "According to some newspapers, the hotel will reportedly have a hundred rooms.",
+    "es": "El hotel tendría cien habitaciones, según algunos periódicos.",
+    "en": "The hotel will reportedly have a hundred rooms, according to some newspapers.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2958,8 +2959,7 @@
       "l:periódico",
       "l:tener",
       "p:lugar-tiene",
-      "p:numbers-un-una",
-      "p:un-estudio-muestra-que"
+      "p:numbers-un-una"
     ],
     "targets": [],
     "kind": "statement",
@@ -3057,8 +3057,8 @@
   },
   {
     "id": "u45-0139",
-    "es": "Según el diario, el gobierno sabría todo desde enero.",
-    "en": "According to the paper, the government has reportedly known everything since January.",
+    "es": "El gobierno sabría todo desde enero, según el diario.",
+    "en": "The government has reportedly known everything since January, according to the paper.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3069,8 +3069,7 @@
       "l:enero",
       "l:gobierno",
       "l:saber",
-      "p:saber-conocer",
-      "p:un-estudio-muestra-que"
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -3673,7 +3672,7 @@
   {
     "id": "u45-0164",
     "es": "¿Altamira pagó?\nSegún Mariana, habría pagado, pero falta confirmarlo.",
-    "en": "Did Altamira pay?\nAccording to Mariana, he allegedly paid, but it still has to be confirmed.",
+    "en": "Did Altamira pay?\nAccording to Mariana, it allegedly paid, but it still has to be confirmed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3725,14 +3724,14 @@
   },
   {
     "id": "u45-0166",
-    "es": "¿Y la empresa qué dice?\nDice que no habría pagado nada.",
+    "es": "¿Y la empresa qué dice?\nDice que no pagó nada.",
     "en": "And what does the company say?\nIt says it didn't pay anything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:conditional-perfect",
       "g:gender-articles",
       "g:negation-words",
+      "g:preterite-ar",
       "g:questions",
       "g:stem-e-i",
       "g:that-clauses",
@@ -3872,19 +3871,18 @@
   },
   {
     "id": "u45-0172",
-    "es": "¿El concejal estaría fuera del país?",
-    "en": "Is the councillor supposedly out of the country?",
+    "es": "¿Y quién tendría ahora los documentos?",
+    "en": "And who is supposed to have the documents now?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
-      "g:estar-location-states",
       "g:gender-articles",
-      "l:concejal",
-      "l:estar",
-      "l:país",
-      "p:cerca-de",
-      "p:position-de"
+      "g:questions",
+      "l:ahora",
+      "l:documento",
+      "l:quién",
+      "l:tener"
     ],
     "targets": [],
     "kind": "question",
@@ -4000,7 +3998,7 @@
   {
     "id": "u45-0178",
     "es": "¿Qué diría la empresa sobre las acusaciones?",
-    "en": "What is the company supposed to be saying about the accusations?",
+    "en": "What would the company say about the accusations?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4077,13 +4075,13 @@
   },
   {
     "id": "u45-0181",
-    "es": "Se dice que el alcalde habría viajado a Madrid.",
-    "en": "It's said that the mayor reportedly travelled to Madrid.",
+    "es": "Se dice que el alcalde viajó a Madrid.",
+    "en": "It's said that the mayor travelled to Madrid.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:conditional-perfect",
       "g:gender-articles",
+      "g:preterite-ar",
       "g:se-impersonal",
       "g:stem-e-i",
       "g:that-clauses",
@@ -4225,8 +4223,8 @@
   },
   {
     "id": "u45-0187",
-    "es": "El hotel se habría construido sin permiso, pero nadie lo sabe.",
-    "en": "The hotel was reportedly built without a permit, but nobody knows.",
+    "es": "El hotel se habría construido sin permiso, pero nadie lo sabe con seguridad.",
+    "en": "The hotel was reportedly built without a permit, but nobody knows for sure.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4239,6 +4237,7 @@
       "l:hotel",
       "l:permiso",
       "l:saber",
+      "l:seguridad",
       "p:saber-conocer"
     ],
     "targets": [],
@@ -4511,14 +4510,16 @@
   },
   {
     "id": "u45-0200",
-    "es": "Según el estudio, la gente leería menos el periódico.",
-    "en": "According to the study, people reportedly read the newspaper less.",
+    "es": "Según el estudio, la gente lee menos el periódico que antes.",
+    "en": "According to the study, people read the newspaper less than before.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:segun",
-      "g:conditional",
+      "g:comparatives",
       "g:gender-articles",
+      "g:present-er-ir",
+      "l:antes",
       "l:estudio",
       "l:gente",
       "l:leer",
@@ -4534,8 +4535,8 @@
   },
   {
     "id": "u45-0201",
-    "es": "Según la encuesta, el alcalde tendría menos votos que antes.",
-    "en": "According to the poll, the mayor reportedly has fewer votes than before.",
+    "es": "El alcalde tendría menos votos que antes, según la encuesta.",
+    "en": "The mayor reportedly has fewer votes than before, according to the poll.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4547,8 +4548,7 @@
       "l:antes",
       "l:encuesta",
       "l:tener",
-      "l:voto",
-      "p:un-estudio-muestra-que"
+      "l:voto"
     ],
     "targets": [],
     "kind": "statement",
@@ -4847,22 +4847,23 @@
   },
   {
     "id": "u45-0214",
-    "es": "Hernando no tiene ni idea de cómo funcionan las redes del celular.",
-    "en": "Hernando has no idea how phone networks work.",
+    "es": "Hernando no tiene ni idea de cómo funcionan las redes sociales.",
+    "en": "Hernando has no idea how social media works.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ni-idea",
       "c:tienes",
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:indirect-questions",
       "g:present-ar",
       "g:stem-boot",
-      "l:celular",
       "l:cómo",
       "l:funcionar",
       "l:idea",
       "l:red",
+      "l:social",
       "l:tener",
       "p:no-tener-ni-idea-de"
     ],
@@ -6141,19 +6142,21 @@
   },
   {
     "id": "u45-0264",
-    "es": "Me dijeron que cerraron la sede.\n¿Es verdad eso de que cerraron hoy?",
-    "en": "They told me they closed the office.\nIs it true they closed today?",
+    "es": "Me dijeron que cerraron la sede.\n¿Es verdad eso de que la cerraron sin avisar?",
+    "en": "They told me they closed the office.\nIs it true they closed it without warning?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:direct-objects",
       "g:gender-articles",
+      "g:prep-infinitive",
       "g:preterite-ar",
       "g:preterite-irregular-strong",
       "g:ser-identity",
       "g:that-clauses",
+      "l:avisar",
       "l:cerrar",
       "l:decir",
-      "l:hoy",
       "l:sede",
       "l:ser",
       "l:verdad",
@@ -6330,7 +6333,7 @@
   {
     "id": "u45-0271",
     "es": "¿En serio van a cerrar la sede?",
-    "en": "Are they seriously going to close the office? (you all)",
+    "en": "Are they seriously going to close the office?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6461,7 +6464,7 @@
   {
     "id": "u45-0276",
     "es": "El hotel no es de Altamira.\n¿De verdad que no? Yo vi su nombre.",
-    "en": "The hotel isn't Altamira's.\nIt really isn't? I saw his name.",
+    "en": "The hotel isn't Altamira's.\nIt really isn't? I saw its name.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7788,16 +7791,18 @@
   },
   {
     "id": "u45-0326",
-    "es": "Hay dos veces más clientes los sábados.",
-    "en": "There are twice as many customers on Saturdays.",
+    "es": "Los sábados vienen tres veces más clientes que los lunes.",
+    "en": "Three times as many customers come on Saturdays as on Mondays.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
+      "g:comparatives",
       "g:gender-articles",
-      "g:hay-vs-esta",
+      "g:stem-boot",
       "l:cliente",
+      "l:lunes",
       "l:sábado",
+      "l:venir",
       "l:vez",
       "p:days-el-lunes",
       "p:duplicarse"
@@ -7812,16 +7817,16 @@
   },
   {
     "id": "u45-0327",
-    "es": "Los precios crecieron un 8 % en un año.",
-    "en": "Prices grew by 8% in a year.",
+    "es": "Los precios subieron un 8 % en un año.",
+    "en": "Prices rose by 8% in a year.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-er-ir",
       "l:año",
-      "l:crecer",
       "l:precio",
+      "l:subir",
       "p:duplicarse",
       "p:subir-subida"
     ],
@@ -8561,8 +8566,8 @@
   },
   {
     "id": "u45-0358",
-    "es": "La tasa de lluvia fue la más alta en diez años.",
-    "en": "The rainfall rate was the highest in ten years.",
+    "es": "La tasa de accidentes fue la más alta en diez años.",
+    "en": "The accident rate was the highest in ten years.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8571,9 +8576,9 @@
       "g:preterite-ser-ir-hacer",
       "g:ser-identity",
       "g:superlatives",
+      "l:accidente",
       "l:alto",
       "l:año",
-      "l:lluvia",
       "l:ser",
       "l:tasa",
       "p:indice-tasa"
@@ -9429,8 +9434,8 @@
   },
   {
     "id": "u45-0393",
-    "es": "Un robo ocurrió ayer cerca de la plaza.",
-    "en": "A robbery took place yesterday near the square.",
+    "es": "El robo ocurrió ayer cerca de la plaza.",
+    "en": "The robbery took place yesterday near the square.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9456,7 +9461,7 @@
   },
   {
     "id": "u45-0394",
-    "es": "Un cambio importante se produjo en la sede esta semana.",
+    "es": "Esta semana se produjo un cambio importante en la sede.",
     "en": "An important change took place at the office this week.",
     "accept": [],
     "acceptEn": [],
@@ -9483,17 +9488,15 @@
   },
   {
     "id": "u45-0395",
-    "es": "La reunión ocurrió a puerta cerrada.",
-    "en": "The meeting took place behind closed doors.",
+    "es": "Todo ocurrió a puerta cerrada.",
+    "en": "It all happened behind closed doors.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:preterite-er-ir",
       "l:cerrar",
       "l:ocurrir",
       "l:puerta",
-      "l:reunión",
       "p:ocurrir-producirse"
     ],
     "targets": [
@@ -9526,7 +9529,7 @@
   },
   {
     "id": "u45-0397",
-    "es": "Dos accidentes más ocurrieron en la misma esquina.",
+    "es": "En la misma esquina ocurrieron dos accidentes más.",
     "en": "Two more accidents happened on the same corner.",
     "accept": [],
     "acceptEn": [],
@@ -9535,7 +9538,8 @@
       "g:preterite-er-ir",
       "l:accidente",
       "l:esquina",
-      "l:ocurrir"
+      "l:ocurrir",
+      "p:ocurrir-producirse"
     ],
     "targets": [],
     "kind": "statement",
@@ -9545,18 +9549,19 @@
   },
   {
     "id": "u45-0398",
-    "es": "La falta de luz se produjo a las diez de la noche.",
-    "en": "The power failure occurred at ten at night.",
+    "es": "El corte de luz se produjo a las diez de la noche.",
+    "en": "The power cut happened at ten at night.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-irregular-strong",
       "g:reflexive-routine",
-      "l:falta",
+      "l:corte",
       "l:luz",
       "l:noche",
       "l:producirse",
+      "p:el-orden-la-orden",
       "p:ocurrir-producirse",
       "p:por-la-manana",
       "p:telling-time"
@@ -10028,8 +10033,8 @@
   },
   {
     "id": "u45-0416",
-    "es": "Cabe destacar que el café no está a la venta.",
-    "en": "It is worth noting that the café is not for sale.",
+    "es": "Cabe recordar que el café no está a la venta.",
+    "en": "It is worth recalling that the café is not for sale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10039,17 +10044,17 @@
       "g:that-clauses",
       "l:caber",
       "l:café",
-      "l:destacar",
       "l:estar",
+      "l:recordar",
       "l:venta",
       "p:cabe-destacar",
       "p:cabe-preguntarse",
       "p:caber",
       "p:entre-las-ventajas-destaca",
-      "p:medir-pesar-caber"
+      "p:medir-pesar-caber",
+      "p:recordar-acordarse"
     ],
     "targets": [
-      "l:destacar",
       "p:cabe-destacar"
     ],
     "kind": "statement",
@@ -10059,29 +10064,28 @@
   },
   {
     "id": "u45-0417",
-    "es": "Cabe destacar que Mariana publicó la historia sin dinero de nadie.",
-    "en": "It is worth noting that Mariana published the story with nobody's money.",
+    "es": "Cabe añadir que Mariana no recibió dinero de nadie por la historia.",
+    "en": "It should be added that Mariana took no money from anyone for the story.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:negation-words",
+      "g:por-para-1",
       "g:present-er-ir",
-      "g:preterite-ar",
+      "g:preterite-er-ir",
       "g:that-clauses",
+      "l:añadir",
       "l:caber",
-      "l:destacar",
       "l:dinero",
       "l:historia",
-      "l:publicar",
+      "l:recibir",
       "p:cabe-destacar",
       "p:cabe-preguntarse",
       "p:caber",
-      "p:con-sin",
-      "p:entre-las-ventajas-destaca",
       "p:medir-pesar-caber"
     ],
     "targets": [
-      "l:destacar",
       "p:cabe-destacar"
     ],
     "kind": "statement",
@@ -10123,8 +10127,8 @@
   },
   {
     "id": "u45-0419",
-    "es": "Cabe destacar que Simón fue el primero en dar la noticia.",
-    "en": "It is worth noting that Simón was the first to break the news.",
+    "es": "Cabe mencionar que Simón fue el primero en dar la noticia.",
+    "en": "It is worth mentioning that Simón was the first to break the news.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10135,7 +10139,7 @@
       "g:that-clauses",
       "l:caber",
       "l:dar",
-      "l:destacar",
+      "l:mencionar",
       "l:noticia",
       "l:ser",
       "p:cabe-destacar",
@@ -10146,7 +10150,6 @@
       "p:time-sequence-basic"
     ],
     "targets": [
-      "l:destacar",
       "p:cabe-destacar"
     ],
     "kind": "statement",
@@ -10952,7 +10955,7 @@
   {
     "id": "u45-0448",
     "es": "No vendemos, a menos que Altamira suba su oferta.",
-    "en": "We're not selling unless Altamira raises his offer.",
+    "en": "We're not selling unless Altamira raises its offer.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11195,8 +11198,8 @@
   },
   {
     "id": "u45-0457",
-    "es": "¿Contamos la historia hoy?\nSí, siempre y cuando esté revisada.",
-    "en": "Do we tell the story today?\nYes, as long as it's been checked.",
+    "es": "¿Publicamos la historia hoy?\nSí, siempre y cuando esté revisada.",
+    "en": "Do we publish the story today?\nYes, as long as it's been checked.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11205,13 +11208,12 @@
       "g:present-ar",
       "g:subj-cuando-future",
       "g:subj-wanting",
-      "l:contar",
       "l:estar",
       "l:historia",
       "l:hoy",
+      "l:publicar",
       "l:revisar",
       "l:siempre",
-      "p:contar-dos-sentidos",
       "p:frequency-scale",
       "p:si-pero-que",
       "p:si-solo-si-siempre-y-cuando"
@@ -11749,8 +11751,8 @@
   },
   {
     "id": "u45-0479",
-    "es": "¿No te parece que el diario cuenta demasiado?",
-    "en": "Don't you think the paper tells too much?",
+    "es": "¿No te parece que el artículo es demasiado largo?",
+    "en": "Don't you think the article is too long?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11758,11 +11760,14 @@
       "g:parecer-quedar",
       "g:present-er-ir",
       "g:quantifiers",
+      "g:ser-identity",
       "g:that-clauses",
-      "l:cuenta",
-      "l:diario",
+      "l:artículo",
+      "l:largo",
       "l:parecer",
-      "p:no-crees-que"
+      "l:ser",
+      "p:no-crees-que",
+      "p:no-es-nada-adj"
     ],
     "targets": [
       "p:no-crees-que"
@@ -12194,8 +12199,8 @@
   },
   {
     "id": "u45-0496",
-    "es": "Creo que el concejal sigue en el país.",
-    "en": "I think the councillor is still in the country.",
+    "es": "Creo que el concejal sigue escondido en Bogotá.",
+    "en": "I think the councillor is still hiding in Bogotá.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12205,7 +12210,7 @@
       "g:that-clauses",
       "l:concejal",
       "l:creer",
-      "l:país",
+      "l:esconder",
       "l:seguir"
     ],
     "targets": [],
@@ -12481,19 +12486,19 @@
   },
   {
     "id": "u45-0509",
-    "es": "No creo que Simón entienda lo que dice.",
-    "en": "I don't think Simón understands what he says.",
+    "es": "No creo que Simón entienda las noticias de la radio.",
+    "en": "I don't think Simón understands the news on the radio.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:creo-que",
-      "g:relatives-donde-lo-que",
-      "g:stem-e-i",
+      "g:gender-articles",
       "g:subj-wanting",
       "g:that-clauses",
       "l:creer",
-      "l:decir",
-      "l:entender"
+      "l:entender",
+      "l:noticias",
+      "l:radio"
     ],
     "targets": [],
     "kind": "statement",
@@ -12635,7 +12640,7 @@
   {
     "id": "u45-0516",
     "es": "¿Crees que lo van a publicar?\nCreo que no.",
-    "en": "Do you think they're going to publish it?\nI think not.",
+    "en": "Do you think they're going to publish it?\nI don't think so.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12657,7 +12662,7 @@
   {
     "id": "u45-0517",
     "es": "¿Será verdad que cerraron la sede?\nQuién sabe.",
-    "en": "Can it be true that they closed the office?\nWho knows.",
+    "en": "Could it be true that they closed the office?\nWho knows.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12785,7 +12790,7 @@
   {
     "id": "u45-0522",
     "es": "¿Habrá sido Simón el que abrió la puerta?\nQuién sabe.",
-    "en": "Can it have been Simón who opened the door?\nWho knows.",
+    "en": "Could it have been Simón who opened the door?\nWho knows.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12889,7 +12894,7 @@
   {
     "id": "u45-0526",
     "es": "¿Se habrá enterado el alcalde?\nQuién sabe.",
-    "en": "Can the mayor have found out?\nWho knows.",
+    "en": "Has the mayor found out, I wonder?\nWho knows.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12940,12 +12945,13 @@
   },
   {
     "id": "u45-0528",
-    "es": "¿Llegará hoy el paquete?\nQuién sabe, el correo es un milagro.",
-    "en": "Will the package arrive today?\nWho knows, the post is a miracle.",
+    "es": "¿Llegará hoy el paquete?\nQuién sabe, con este correo sería un milagro.",
+    "en": "Will the package arrive today?\nWho knows, with this postal service it would be a miracle.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:quien-sabe",
+      "g:conditional",
       "g:future-promises",
       "g:gender-articles",
       "g:ser-identity",
@@ -12956,7 +12962,8 @@
       "l:paquete",
       "l:quién",
       "l:saber",
-      "l:ser"
+      "l:ser",
+      "p:demonstratives-basic"
     ],
     "targets": [
       "c:quien-sabe",
@@ -13984,7 +13991,7 @@
   {
     "id": "u45-0564",
     "es": "Para ser tan caro, el pan no es tan bueno.",
-    "en": "For being so expensive, the bread isn't that good.",
+    "en": "For something so expensive, the bread isn't that good.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14094,7 +14101,7 @@
   {
     "id": "u45-0568",
     "es": "Para ser Hernando, llegó muy temprano.",
-    "en": "For Hernando, he arrived very early.",
+    "en": "By Hernando's standards, he arrived very early.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14359,8 +14366,8 @@
   },
   {
     "id": "u45-0578",
-    "es": "Para ser un cigarrillo, huele muy fuerte.",
-    "en": "For a cigarette, it smells very strong.",
+    "es": "Para ser un cigarrillo tan pequeño, huele muy fuerte.",
+    "en": "For such a small cigarette, it smells very strong.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14370,6 +14377,7 @@
       "l:cigarrillo",
       "l:fuerte",
       "l:oler",
+      "l:pequeño",
       "l:ser",
       "p:para-inf",
       "p:para-inf-purpose",
@@ -14628,7 +14636,7 @@
   {
     "id": "u45-0588",
     "es": "De hecho, Mariana ya tenía la historia desde enero.",
-    "en": "In fact, Mariana already had the story since January.",
+    "en": "In fact, Mariana had had the story since January.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14648,14 +14656,12 @@
   },
   {
     "id": "u45-0589",
-    "es": "No solo escribe artículos, además hace programas de radio.",
+    "es": "No solo escribe artículos; también hace programas de radio.",
     "en": "She doesn't only write articles, she also makes radio programmes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:ademas",
       "g:present-er-ir",
-      "l:además",
       "l:artículo",
       "l:escribir",
       "l:hacer",
@@ -15053,7 +15059,7 @@
   {
     "id": "u45-0605",
     "es": "Altamira dice que no pagó nada.\nEs cierto que lo dice, pero no lo prueba.",
-    "en": "Altamira says he paid nothing.\nIt's true that he says so, but he doesn't prove it.",
+    "en": "Altamira says it paid nothing.\nIt's true that it says so, but it doesn't prove it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16282,7 +16288,7 @@
   },
   {
     "id": "u45-0654",
-    "es": "La emisora de Hernando transmite desde el 1980.",
+    "es": "La emisora de Hernando transmite desde 1980.",
     "en": "Hernando's radio station has been broadcasting since 1980.",
     "accept": [],
     "acceptEn": [],
@@ -17057,19 +17063,20 @@
   },
   {
     "id": "u45-0686",
-    "es": "Hernando se hizo daño en una caída en la escalera.",
-    "en": "Hernando got hurt in a fall on the stairs.",
+    "es": "El vecino de arriba se rompió un brazo en una caída en la escalera.",
+    "en": "The upstairs neighbour broke an arm in a fall on the stairs.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
-      "g:verbs-of-change",
+      "g:preterite-er-ir",
+      "g:reflexive-routine",
+      "l:arriba",
+      "l:brazo",
       "l:caída",
-      "l:daño",
       "l:escalera",
-      "l:hacerse",
-      "p:caerse-lastimarse",
+      "l:romperse",
+      "l:vecino",
       "p:subir-subida"
     ],
     "targets": [
@@ -17206,20 +17213,18 @@
   },
   {
     "id": "u45-0692",
-    "es": "No sé nada de él recientemente.",
-    "en": "I haven't heard anything from him recently.",
+    "es": "Mariana habló recientemente con la familia del concejal.",
+    "en": "Mariana recently spoke with the councillor's family.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:no-hay-nada",
-      "c:no-se",
       "g:adverbs-mente",
-      "g:negation-words",
-      "g:prep-pronouns",
-      "g:yo-irregular",
-      "l:recientemente",
-      "l:saber",
-      "p:hedge-knowledge"
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:concejal",
+      "l:familia",
+      "l:hablar",
+      "l:recientemente"
     ],
     "targets": [
       "l:recientemente"
@@ -17981,7 +17986,7 @@
   {
     "id": "u45-0724",
     "es": "Encontraron un cigarrillo apagado cerca de la puerta.",
-    "en": "They found a put out cigarette near the door.",
+    "en": "They found a stubbed-out cigarette near the door.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18056,13 +18061,12 @@
   },
   {
     "id": "u45-0727",
-    "es": "Simón se calla cuando hay oscuridad.",
-    "en": "Simón goes quiet when it's dark.",
+    "es": "Simón se calla en la oscuridad.",
+    "en": "Simón goes quiet in the dark.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
-      "g:hay-vs-esta",
+      "g:gender-articles",
       "l:callo",
       "l:oscuridad"
     ],
@@ -18098,17 +18102,21 @@
   },
   {
     "id": "u45-0729",
-    "es": "Mariana trabaja hasta la oscuridad de la noche.",
-    "en": "Mariana works until the dark of night.",
+    "es": "Mariana siguió escribiendo en la oscuridad, sin prender la luz.",
+    "en": "Mariana kept writing in the dark, without turning on the light.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
-      "l:noche",
+      "g:gerund-ways",
+      "g:prep-infinitive",
+      "g:preterite-irregular-strong",
+      "l:escribir",
+      "l:luz",
       "l:oscuridad",
-      "l:trabajar",
-      "p:por-la-manana"
+      "l:prender",
+      "l:seguir",
+      "p:seguir-gerundio"
     ],
     "targets": [
       "l:oscuridad"
@@ -18570,19 +18578,22 @@
   },
   {
     "id": "u45-0748",
-    "es": "Durante el embarazo, Vale tuvo que dejar la cocina.",
-    "en": "During the pregnancy, Vale had to leave the kitchen.",
+    "es": "Durante el embarazo, mi hermana siguió trabajando en la cocina.",
+    "en": "During her pregnancy, my sister kept working in the kitchen.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:gerund-ways",
       "g:preterite-irregular-strong",
-      "g:verb-infinitive",
       "l:cocina",
-      "l:dejar",
       "l:embarazo",
-      "l:tener",
-      "p:durar-durante"
+      "l:hermana",
+      "l:seguir",
+      "l:trabajar",
+      "p:durar-durante",
+      "p:possessives-basic",
+      "p:seguir-gerundio"
     ],
     "targets": [
       "l:embarazo"
@@ -18698,21 +18709,22 @@
   },
   {
     "id": "u45-0753",
-    "es": "Rosa era cantante antes de abrir el café.",
-    "en": "Rosa was a singer before opening the café.",
+    "es": "Mi abuela era cantante antes de abrir su tienda.",
+    "en": "My grandmother was a singer before she opened her shop.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:era",
-      "g:gender-articles",
       "g:imperfect-states",
       "g:prep-infinitive",
       "g:ser-identity",
       "l:abrir",
+      "l:abuela",
       "l:antes",
-      "l:café",
       "l:cantante",
       "l:ser",
+      "l:tienda",
+      "p:possessives-basic",
       "p:ser-profession-no-article"
     ],
     "targets": [
@@ -19503,7 +19515,7 @@
   {
     "id": "u45-0784",
     "es": "No tendrá ni idea de lo que firmó, pobre hombre.",
-    "en": "He won't have any idea what he signed, poor man.",
+    "en": "He probably has no idea what he signed, poor man.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20151,8 +20163,8 @@
   },
   {
     "id": "u45-0808",
-    "es": "¿Ya está al tanto, señor Hernando?\nClaro, lo oí en la emisora.",
-    "en": "Are you already aware, Mr. Hernando?\nOf course, I heard it on the radio station.",
+    "es": "¿Ya está al tanto, don Hernando?\nClaro, lo oí en la emisora.",
+    "en": "Are you already aware, don Hernando?\nOf course, I heard it on the radio station.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20165,7 +20177,7 @@
       "l:emisora",
       "l:estar",
       "l:oír",
-      "l:señor",
+      "p:don-dona-nombre",
       "p:estar-al-tanto-de",
       "p:ponerse-al-tanto",
       "p:senor-don-article"
@@ -20234,22 +20246,21 @@
   },
   {
     "id": "u45-0811",
-    "es": "Es cierto que el concejal salió del país el lunes.",
-    "en": "It is true that the councillor left the country on Monday.",
+    "es": "Es cierto que el concejal no ha vuelto a su oficina.",
+    "en": "It is true that the councillor hasn't been back to his office.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-er-ir",
+      "g:perfecto-experience",
       "g:ser-identity",
       "g:that-clauses",
       "l:concejal",
-      "l:lunes",
-      "l:país",
-      "l:salir",
+      "l:oficina",
       "l:ser",
-      "p:days-el-lunes",
-      "p:es-verdad-eso-de-que"
+      "l:volver",
+      "p:es-verdad-eso-de-que",
+      "p:possessives-basic"
     ],
     "targets": [
       "p:es-verdad-eso-de-que"
@@ -20562,8 +20573,8 @@
   },
   {
     "id": "u45-0824",
-    "es": "¿Es verdad eso de que el parqueadero del hotel tendrá cien carros?",
-    "en": "Is it true that the hotel's car park will have a hundred cars?",
+    "es": "¿Es verdad eso de que el parqueadero del hotel tendrá espacio para cien carros?",
+    "en": "Is it true that the hotel's parking lot will have room for a hundred cars?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20572,6 +20583,7 @@
       "g:ser-identity",
       "g:that-clauses",
       "l:carro",
+      "l:espacio",
       "l:hotel",
       "l:parqueadero",
       "l:ser",
@@ -20580,7 +20592,8 @@
       "p:demonstratives-basic",
       "p:es-verdad-eso-de-que",
       "p:eso-de-que",
-      "p:numbers-un-una"
+      "p:numbers-un-una",
+      "p:para-inf"
     ],
     "targets": [
       "p:es-verdad-eso-de-que"
@@ -20797,8 +20810,8 @@
   },
   {
     "id": "u45-0833",
-    "es": "¡¿De verdad que el hotel va a tener una torre?!",
-    "en": "The hotel is really going to have a tower?!",
+    "es": "¡¿De verdad que el hotel va a tener piscina en el techo?!",
+    "en": "The hotel is really going to have a pool on the roof?!",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20808,13 +20821,13 @@
       "g:relative-que",
       "l:hotel",
       "l:ir",
+      "l:piscina",
+      "l:techo",
       "l:tener",
-      "l:torre",
       "l:verdad",
       "p:de-verdad-que"
     ],
     "targets": [
-      "l:torre",
       "p:de-verdad-que"
     ],
     "kind": "question",
@@ -20872,8 +20885,8 @@
   },
   {
     "id": "u45-0836",
-    "es": "¿En serio nos dijeron que la sede estaba cerrada?",
-    "en": "They seriously told us the office was closed?",
+    "es": "¿En serio te dijeron que la sede estaba cerrada?",
+    "en": "They seriously told you the office was closed?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21129,7 +21142,7 @@
   {
     "id": "u45-0845",
     "es": "Hay que ver si Altamira cumple lo que prometió.",
-    "en": "We'll have to see whether Altamira keeps what he promised.",
+    "en": "We'll have to see whether Altamira does what it promised.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21379,8 +21392,8 @@
   },
   {
     "id": "u45-0854",
-    "es": "Habría que ver si el periódico cambia el error.",
-    "en": "It remains to be seen whether the paper changes the mistake.",
+    "es": "Habría que ver si el periódico arregla el error.",
+    "en": "It remains to be seen whether the paper fixes the mistake.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21389,7 +21402,7 @@
       "g:indirect-questions",
       "g:present-ar",
       "g:that-clauses",
-      "l:cambiar",
+      "l:arreglar",
       "l:error",
       "l:periódico",
       "l:ver",
@@ -21499,7 +21512,7 @@
   {
     "id": "u45-0858",
     "es": "¿Será cierto que se fue del país?\nHabría que verificarlo.",
-    "en": "Can it be true that he left the country?\nIt would have to be checked.",
+    "en": "Could it be true that he left the country?\nIt would have to be checked.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21529,7 +21542,7 @@
   {
     "id": "u45-0859",
     "es": "Altamira promete que no despedirá a nadie.\nHay que ver si lo cumple.",
-    "en": "Altamira promises he won't fire anyone.\nWe'll have to see if he keeps it.",
+    "en": "Altamira promises it won't fire anyone.\nWe'll have to see if it keeps its word.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21848,8 +21861,8 @@
   },
   {
     "id": "u45-0871",
-    "es": "Cabe destacar que la panadería de Vale abrió sin ayuda de nadie.",
-    "en": "It is worth noting that Vale's bakery opened without anyone's help.",
+    "es": "Cabe destacar que la panadería de la esquina abrió sin ayuda de nadie.",
+    "en": "It is worth noting that the bakery on the corner opened without anyone's help.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21861,6 +21874,7 @@
       "l:ayuda",
       "l:caber",
       "l:destacar",
+      "l:esquina",
       "l:panadería",
       "p:cabe-destacar",
       "p:cabe-preguntarse",
@@ -22734,7 +22748,7 @@
   {
     "id": "u45-0902",
     "es": "Para ser tan caro, el café no tiene mucha gente.",
-    "en": "For being so expensive, the café doesn't have many people.",
+    "en": "For somewhere so expensive, the café doesn't have many people.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22856,7 +22870,7 @@
   {
     "id": "u45-0906",
     "es": "Para ser tan pequeño, el apartamento tiene mucha luz.",
-    "en": "For being so small, the apartment has a lot of light.",
+    "en": "For such a small apartment, it gets a lot of light.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22887,7 +22901,7 @@
   {
     "id": "u45-0907",
     "es": "Para ser tan viejo, Hernando maneja increíble.",
-    "en": "For someone so old, Hernando drives incredibly.",
+    "en": "For someone so old, Hernando drives incredibly well.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22913,7 +22927,7 @@
   {
     "id": "u45-0908",
     "es": "Para ser apenas las nueve, la sede ya estaba llena.",
-    "en": "For it barely being nine, the office was already full.",
+    "en": "For barely nine o'clock, the office was already full.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23093,7 +23107,7 @@
   {
     "id": "u45-0914",
     "es": "Para ser tan temprano, hay mucha gente en la fila.",
-    "en": "For being so early, there are a lot of people in the line.",
+    "en": "For so early, there are a lot of people in the line.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23122,7 +23136,7 @@
   {
     "id": "u45-0915",
     "es": "Para llevar solo dos años, el periódico ya tiene mucha fama.",
-    "en": "For having been going just two years, the newspaper already has a lot of fame.",
+    "en": "For a paper that's only two years old, it's already very well known.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23391,19 +23405,20 @@
   },
   {
     "id": "u45-0925",
-    "es": "Escuché que la cantante canta en el café el viernes.",
-    "en": "I heard the singer is singing at the café on Friday.",
+    "es": "Escuché que la cantante se presenta en el café el viernes.",
+    "en": "I heard the singer is performing at the café on Friday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
       "g:preterite-ar",
+      "g:se-impersonal",
       "g:that-clauses",
       "l:café",
       "l:cantante",
-      "l:cantar",
       "l:escuchar",
+      "l:presentar",
       "l:viernes",
       "p:days-el-lunes",
       "p:me-contaron-que"
@@ -23523,7 +23538,7 @@
   {
     "id": "u45-0930",
     "es": "Oí que Altamira va a visitar el café.\n¿En serio? Que traiga plata.",
-    "en": "I heard Altamira is going to visit the café.\nSeriously? He'd better bring money.",
+    "en": "I heard Altamira is going to visit the café.\nSeriously? They'd better bring money.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24072,18 +24087,18 @@
   },
   {
     "id": "u45-0951",
-    "es": "La tasa de turistas extranjeros subió después de la feria.",
-    "en": "The rate of foreign tourists rose after the fair.",
+    "es": "La cifra de turistas extranjeros subió después de la feria.",
+    "en": "The number of foreign tourists rose after the fair.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-er-ir",
+      "l:cifra",
       "l:después",
       "l:extranjero",
       "l:feria",
       "l:subir",
-      "l:tasa",
       "l:turista",
       "p:indice-tasa",
       "p:time-sequence-basic"
@@ -24419,16 +24434,17 @@
   },
   {
     "id": "u45-0965",
-    "es": "Mi alquiler cuesta dos veces más que el de Vale.",
-    "en": "My rent costs twice as much as Vale's.",
+    "es": "Mi arriendo es tres veces más caro que el de Vale.",
+    "en": "My rent is three times as expensive as Vale's.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparatives",
       "g:gender-articles",
-      "g:stem-boot",
-      "l:alquiler",
-      "l:costar",
+      "g:ser-identity",
+      "l:arriendo",
+      "l:caro",
+      "l:ser",
       "l:vez",
       "p:duplicarse",
       "p:los-de-la-camiseta",
@@ -24444,16 +24460,16 @@
   },
   {
     "id": "u45-0966",
-    "es": "Los salarios de los periodistas crecieron un 4 %.",
-    "en": "Journalists' salaries grew by 4%.",
+    "es": "Los salarios de los periodistas subieron un 4 %.",
+    "en": "Journalists' salaries rose by 4%.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-er-ir",
-      "l:crecer",
       "l:periodista",
       "l:salario",
+      "l:subir",
       "p:duplicarse",
       "p:por-ciento"
     ],
@@ -24685,21 +24701,17 @@
   },
   {
     "id": "u45-0976",
-    "es": "Alrededor de unas cuarenta personas esperaban en la sede.",
-    "en": "Around forty people were waiting at the office.",
+    "es": "Unas cuarenta personas esperaban en la sede.",
+    "en": "About forty people were waiting at the office.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-habitual",
-      "l:alrededor",
       "l:esperar",
       "l:persona",
       "l:sede",
       "p:aproximar-cifras",
-      "p:cerca-de",
-      "p:posicion-precisa",
-      "p:position-de",
       "p:unos-approx"
     ],
     "targets": [
@@ -25163,20 +25175,21 @@
   },
   {
     "id": "u45-0996",
-    "es": "¿Cuántos años tiene Hernando?\nUnos setenta y uno.",
-    "en": "How old is Hernando?\nSeventy-one.",
+    "es": "¿Cuántos años tiene Hernando?\nUnos setenta, creo.",
+    "en": "How old is Hernando?\nAbout seventy, I think.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:creo-que",
       "c:tienes",
       "g:gender-articles",
       "g:questions",
       "g:stem-boot",
       "l:año",
+      "l:creer",
       "l:cuánto",
       "l:tener",
       "p:aproximar-cifras",
-      "p:numbers-un-una",
       "p:tener-anos",
       "p:unos-approx"
     ],
@@ -25190,8 +25203,8 @@
   },
   {
     "id": "u45-0997",
-    "es": "¿Cuánto tardó la reunión?\nComo dos horas.",
-    "en": "How long did the meeting take?\nAbout two hours.",
+    "es": "¿Cuánto duró la reunión?\nComo dos horas.",
+    "en": "How long did the meeting last?\nAbout two hours.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -25201,12 +25214,12 @@
       "g:questions",
       "l:comer",
       "l:cuánto",
+      "l:durar",
       "l:hora",
       "l:reunión",
-      "l:tardar",
       "p:aproximar-cifras",
+      "p:durar-durante",
       "p:question-word-order",
-      "p:tardar-en",
       "p:unos-approx"
     ],
     "targets": [
@@ -26000,19 +26013,19 @@
   },
   {
     "id": "u45-1030",
-    "es": "El concejal se encuentra fuera de Bogotá.",
-    "en": "The councillor is outside Bogotá.",
+    "es": "La jueza se encuentra en Cali hasta el lunes.",
+    "en": "The judge is in Cali until Monday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hasta-el-lunes",
       "g:gender-articles",
       "g:reflexive-routine",
       "g:stem-boot",
-      "l:concejal",
       "l:encontrarse",
-      "p:cerca-de",
-      "p:encontrarse-hallarse",
-      "p:position-de"
+      "l:juez",
+      "l:lunes",
+      "p:encontrarse-hallarse"
     ],
     "targets": [
       "p:encontrarse-hallarse"
@@ -26422,23 +26435,19 @@
   },
   {
     "id": "u45-1047",
-    "es": "Mientras tenga plata, Tomás seguirá pagando el alquiler.",
-    "en": "As long as he has money, Tomás will keep paying the rent.",
+    "es": "Mientras tenga plata, Tomás no va a vender.",
+    "en": "As long as he has money, Tomás isn't going to sell.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:aqui-tiene",
-      "g:future-promises",
-      "g:gender-articles",
-      "g:gerund-ways",
+      "g:ir-a-plans",
       "g:subj-cuando-future",
-      "l:alquiler",
-      "l:pagar",
+      "l:ir",
       "l:plata",
-      "l:seguir",
       "l:tener",
-      "p:mientras-subj",
-      "p:seguir-gerundio"
+      "l:vender",
+      "p:mientras-subj"
     ],
     "targets": [
       "p:mientras-subj"
@@ -26450,22 +26459,19 @@
   },
   {
     "id": "u45-1048",
-    "es": "Mientras Hernando maneje su taxi, conoceré cada calle.",
-    "en": "As long as Hernando drives his taxi, I'll know every street.",
+    "es": "Mientras Hernando me acompañe, no me pierdo en Bogotá.",
+    "en": "As long as Hernando is with me, I won't get lost in Bogotá.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:cada-cualquier",
-      "g:future-promises",
+      "g:reflexive-routine",
+      "g:stem-boot",
       "g:subj-cuando-future",
       "g:subj-wanting",
-      "l:calle",
-      "l:conocer",
-      "l:manejar",
-      "l:taxi",
-      "p:mientras-subj",
-      "p:possessives-basic",
-      "p:saber-conocer"
+      "l:acompañar",
+      "l:perderse",
+      "p:me-te-nos-objects",
+      "p:mientras-subj"
     ],
     "targets": [
       "p:mientras-subj"
@@ -26858,21 +26864,25 @@
   },
   {
     "id": "u45-1063",
-    "es": "¿No te parece que el hotel va a cambiar el barrio?",
-    "en": "Don't you think the hotel is going to change the neighbourhood?",
+    "es": "¿No te parece que la gente del barrio está cansada de tanto ruido?",
+    "en": "Don't you think the people in the neighbourhood are tired of so much noise?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
+      "g:estar-location-states",
       "g:gender-articles",
-      "g:ir-a-plans",
       "g:parecer-quedar",
       "g:present-er-ir",
       "g:that-clauses",
       "l:barrio",
-      "l:cambiar",
-      "l:hotel",
-      "l:ir",
+      "l:cansado",
+      "l:estar",
+      "l:gente",
       "l:parecer",
+      "l:ruido",
+      "p:estar-harto-de",
+      "p:la-gente-singular",
       "p:no-crees-que"
     ],
     "targets": [
@@ -26940,18 +26950,19 @@
   },
   {
     "id": "u45-1066",
-    "es": "¿No te parece que los periódicos cuentan demasiado?",
-    "en": "Don't you think the newspapers tell too much?",
+    "es": "¿No te parece que los periódicos hablan demasiado del hotel?",
+    "en": "Don't you think the papers talk too much about the hotel?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:parecer-quedar",
+      "g:present-ar",
       "g:present-er-ir",
       "g:quantifiers",
-      "g:stem-boot",
       "g:that-clauses",
-      "l:contar",
+      "l:hablar",
+      "l:hotel",
       "l:parecer",
       "l:periódico",
       "p:no-crees-que"
@@ -27140,22 +27151,22 @@
   },
   {
     "id": "u45-1073",
-    "es": "Se cree que el concejal salió del país el lunes.",
-    "en": "It is believed that the councillor left the country on Monday.",
+    "es": "Se cree que el concejal tenía otra cuenta en el extranjero.",
+    "en": "It is believed that the councillor had another account abroad.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:imperfect-states",
       "g:present-er-ir",
-      "g:preterite-er-ir",
       "g:se-impersonal",
       "g:that-clauses",
       "l:concejal",
       "l:creer",
-      "l:lunes",
-      "l:país",
-      "l:salir",
-      "p:days-el-lunes"
+      "l:cuenta",
+      "l:extranjero",
+      "l:tener",
+      "p:otro-no-article"
     ],
     "targets": [],
     "kind": "statement",
@@ -27625,8 +27636,8 @@
   },
   {
     "id": "u45-1093",
-    "es": "Dicen que Altamira tiene un juez en el bolsillo.",
-    "en": "They say Altamira has a judge in his pocket.",
+    "es": "Dicen que Altamira tiene amigos en todos los juzgados.",
+    "en": "They say Altamira has friends in every courthouse.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27635,9 +27646,9 @@
       "g:stem-boot",
       "g:stem-e-i",
       "g:that-clauses",
-      "l:bolsillo",
+      "l:amigo",
       "l:decir",
-      "l:juez",
+      "l:juzgado",
       "l:tener",
       "p:me-contaron-que"
     ],
@@ -28274,20 +28285,18 @@
   },
   {
     "id": "u45-1120",
-    "es": "Se cuenta que Simón sabe decir cinco palabras.",
-    "en": "It's said that Simón knows how to say five words.",
+    "es": "Se cuenta que Simón aprendió a hablar con Rosa.",
+    "en": "It's said that Simón learned to talk with Rosa.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-er-ir",
+      "g:preterite-er-ir",
       "g:se-impersonal",
       "g:stem-boot",
       "g:that-clauses",
+      "l:aprender",
       "l:contar",
-      "l:decir",
-      "l:palabra",
-      "l:saber",
-      "p:saber-conocer"
+      "l:hablar"
     ],
     "targets": [],
     "kind": "statement",
@@ -28469,16 +28478,16 @@
   },
   {
     "id": "u45-1128",
-    "es": "Se les avisó a los vecinos con solo un día de aviso.",
-    "en": "The neighbours were told with only a day's notice.",
+    "es": "Se les avisó a los vecinos solo un día antes.",
+    "en": "The neighbours were only told a day before.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
       "g:se-accidental",
+      "l:antes",
       "l:avisar",
-      "l:aviso",
       "l:día",
       "l:vecino",
       "p:sobre-todo-solo"
@@ -28795,7 +28804,7 @@
   {
     "id": "u45-1141",
     "es": "Para cuando salga el diario, Altamira ya habrá llamado a su abogado.",
-    "en": "By the time the paper comes out, Altamira will already have called his lawyer.",
+    "en": "By the time the paper comes out, Altamira will already have called its lawyer.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29195,7 +29204,7 @@
   {
     "id": "u45-1158",
     "es": "¿Habrán publicado ya la corrección?",
-    "en": "Can they have published the correction already?",
+    "en": "I wonder if they've published the correction yet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29215,7 +29224,7 @@
   {
     "id": "u45-1159",
     "es": "¿Quién habrá filtrado esos documentos?",
-    "en": "Who can have leaked those documents?",
+    "en": "Who could have leaked those documents?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29238,7 +29247,7 @@
   {
     "id": "u45-1160",
     "es": "¿Qué habrá querido decir con eso?",
-    "en": "What can he have meant by that?",
+    "en": "What could he have meant by that?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29260,7 +29269,7 @@
   {
     "id": "u45-1161",
     "es": "¿Habrá visto Simón al ladrón?",
-    "en": "Can Simón have seen the thief?",
+    "en": "Could Simón have seen the thief?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29280,7 +29289,7 @@
   {
     "id": "u45-1162",
     "es": "¿Se habrá dado cuenta Altamira de que lo seguían?",
-    "en": "Can Altamira have realised he was being followed?",
+    "en": "Could Altamira have realised it was being followed?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29305,7 +29314,7 @@
   {
     "id": "u45-1163",
     "es": "¿Habrá pensado Rosa en perdonar a su hermano?",
-    "en": "Can Rosa have thought about forgiving her brother?",
+    "en": "Could Rosa have thought about forgiving her brother?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29327,7 +29336,7 @@
   {
     "id": "u45-1164",
     "es": "¿Dónde habrá puesto Vale la receta?",
-    "en": "Where can Vale have put the recipe?",
+    "en": "Where could Vale have put the recipe?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29350,7 +29359,7 @@
   {
     "id": "u45-1165",
     "es": "¿Cuántas personas habrán leído el artículo?",
-    "en": "How many people can have read the article?",
+    "en": "I wonder how many people have read the article.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29373,7 +29382,7 @@
   {
     "id": "u45-1166",
     "es": "¿Para qué habrá llamado el abogado tan tarde?",
-    "en": "Why can the lawyer have called so late?",
+    "en": "Why would the lawyer have called so late?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29399,7 +29408,7 @@
   {
     "id": "u45-1167",
     "es": "¿Cuánto habrá pagado Altamira por ese silencio?",
-    "en": "How much can Altamira have paid for that silence?",
+    "en": "How much could Altamira have paid for that silence?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29512,19 +29521,20 @@
   },
   {
     "id": "u45-1172",
-    "es": "Si no ha llegado, se habrá perdido en el tráfico.",
-    "en": "If he hasn't arrived, he must have got lost in traffic.",
+    "es": "Si todavía no llega, se habrá quedado en un trancón.",
+    "en": "If he still isn't here, he must have got stuck in a traffic jam.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:todavia-no",
       "g:future-perfect",
       "g:gender-articles",
-      "g:perfecto-experience",
+      "g:present-ar",
       "g:reflexive-routine",
       "g:si-present",
       "l:llegar",
-      "l:perder",
-      "l:tráfico"
+      "l:quedar",
+      "l:trancón"
     ],
     "targets": [
       "g:future-perfect"
@@ -29578,8 +29588,8 @@
   },
   {
     "id": "u45-1175",
-    "es": "Simón es callado, pero hoy está muy hablador.",
-    "en": "Simón is quiet, but today he is very talkative.",
+    "es": "Simón es muy hablador, pero hoy está callado.",
+    "en": "Simón is very talkative, but today he's quiet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29600,8 +29610,8 @@
   },
   {
     "id": "u45-1176",
-    "es": "Vale es nerviosa por naturaleza, pero hoy está tranquila.",
-    "en": "Vale is nervous by nature, but today she is calm.",
+    "es": "Mi tía es nerviosa por naturaleza, pero hoy está tranquila.",
+    "en": "My aunt is nervous by nature, but today she's calm.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29615,7 +29625,9 @@
       "l:naturaleza",
       "l:nervioso",
       "l:ser",
-      "l:tranquilo"
+      "l:tranquilo",
+      "l:tía",
+      "p:possessives-basic"
     ],
     "targets": [],
     "kind": "statement",
@@ -29697,18 +29709,19 @@
   },
   {
     "id": "u45-1180",
-    "es": "El periódico es serio, pero hoy está raro.",
-    "en": "The newspaper is serious, but today it looks strange.",
+    "es": "El editor es serio, pero hoy está de buen humor.",
+    "en": "The editor is serious, but today he's in a good mood.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
       "g:gender-articles",
       "g:ser-identity",
+      "l:buen",
+      "l:editor",
       "l:estar",
       "l:hoy",
-      "l:periódico",
-      "l:raro",
+      "l:humor",
       "l:ser",
       "l:serio"
     ],
@@ -29967,20 +29980,20 @@
   },
   {
     "id": "u45-1192",
-    "es": "Creo que Hernando tiene razón en eso.",
-    "en": "I think Hernando is right about that.",
+    "es": "Creo que en eso Hernando no se equivoca.",
+    "en": "I think Hernando isn't wrong about that.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:creo-que",
-      "c:tienes",
-      "g:stem-boot",
+      "c:no-se",
+      "g:present-ar",
+      "g:reflexive-routine",
       "g:that-clauses",
       "l:creer",
-      "l:razón",
-      "l:tener",
+      "l:equivocarse",
       "p:demonstratives-basic",
-      "p:tener-razon"
+      "p:equivocarse"
     ],
     "targets": [],
     "kind": "statement",

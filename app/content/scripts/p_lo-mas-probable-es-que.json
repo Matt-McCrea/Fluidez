@@ -6,38 +6,176 @@
     "en": "Hernando most likely won't come today."
   },
   "examples": [
-    { "es": "Lo más probable es que ya se haya ido.", "en": "He has most likely already left." },
-    { "es": "Lo más seguro es que llueva esta tarde.", "en": "It will almost certainly rain this afternoon." },
-    { "es": "Hay muchas probabilidades de que Vale gane el concurso.", "en": "There's a good chance Vale will win the contest." },
-    { "es": "Lo más probable es que Tomás se quede con el café.", "en": "Tomás will most likely keep the café." },
-    { "es": "Hay pocas probabilidades de que el café cierre.", "en": "There's little chance the café will close." },
-    { "es": "Lo más lógico es que hables primero con Vale.", "en": "The most logical thing is for you to talk to Vale first." }
+    {
+      "es": "Lo más probable es que ya se haya ido.",
+      "en": "He has most likely already left."
+    },
+    {
+      "es": "Lo más seguro es que llueva esta tarde.",
+      "en": "It will almost certainly rain this afternoon."
+    },
+    {
+      "es": "Hay muchas probabilidades de que Vale gane el concurso.",
+      "en": "There's a good chance Vale will win the contest."
+    },
+    {
+      "es": "Lo más probable es que Tomás se quede con el café.",
+      "en": "Tomás will most likely keep the café."
+    },
+    {
+      "es": "Hay pocas probabilidades de que el café cierre.",
+      "en": "There's little chance the café will close."
+    },
+    {
+      "es": "Lo más lógico es que hables primero con Vale.",
+      "en": "The most logical thing is for you to talk to Vale first."
+    }
   ],
   "rule": "English hides a verb in \"most likely he's left\". Spanish says it as a frame:\n*Lo más probable es que*\n*Lo más seguro es que*\n*Lo más lógico es que*\n*Hay muchas (pocas) probabilidades de que*\n\nAfter the frame, the verb goes into the subjunctive: *llueva*, *quede*, *gane*. For something that has already happened, use the subjunctive perfect: *se haya ido*. Keep the *que*, and keep the *de* in *probabilidades de que*.",
   "smallPrint": "Teachers call these expressions of probability. They need the subjunctive because the speaker is not claiming that it is a fact.",
   "readAndPick": [
-    { "es": "Lo más seguro es que llueva esta tarde.", "options": ["It will almost certainly rain this afternoon.", "It almost certainly rained this afternoon.", "There's little chance of rain this afternoon."], "answer": 0 },
-    { "es": "Hay pocas probabilidades de que Vale llegue hoy.", "options": ["Vale will surely arrive today.", "There's little chance Vale will arrive today.", "Vale arrived today."], "answer": 1 },
-    { "es": "Lo más probable es que ya se haya ido.", "options": ["He will most likely leave soon.", "He definitely left.", "He has most likely already left."], "answer": 2 },
-    { "es": "Lo más probable es que Tomás se quede en Bogotá.", "options": ["Tomás will most likely stay in Bogotá.", "Tomás most likely stayed in Bogotá.", "Tomás wants to stay in Bogotá."], "answer": 0 },
-    { "es": "Hay muchas probabilidades de que Mariana publique el artículo.", "options": ["There's little chance Mariana will publish the article.", "There's a good chance Mariana will publish the article.", "Mariana published the article."], "answer": 1 },
-    { "es": "Lo más lógico es que hables con Don Hernando primero.", "options": ["The most logical thing is for me to talk to Don Hernando first.", "The most logical thing is for him to talk to Don Hernando first.", "The most logical thing is for you to talk to Don Hernando first."], "answer": 2 },
-    { "es": "Lo más probable es que no hayan terminado todavía.", "options": ["They most likely haven't finished yet.", "They most likely won't finish.", "They most likely finished."], "answer": 0 },
-    { "es": "Lo más seguro es que el precio suba el próximo mes.", "options": ["The price almost certainly went up last month.", "The price will almost certainly go up next month.", "The price might go down next month."], "answer": 1 }
+    {
+      "es": "Lo más seguro es que llueva esta tarde.",
+      "options": [
+        "It will almost certainly rain this afternoon.",
+        "It almost certainly rained this afternoon.",
+        "There's little chance of rain this afternoon."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hay pocas probabilidades de que Vale llegue hoy.",
+      "options": [
+        "Vale will surely arrive today.",
+        "There's little chance Vale will arrive today.",
+        "Vale arrived today."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Lo más probable es que ya se haya ido.",
+      "options": [
+        "He will most likely leave soon.",
+        "He definitely left.",
+        "He has most likely already left."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Lo más probable es que Tomás se quede en Bogotá.",
+      "options": [
+        "Tomás will most likely stay in Bogotá.",
+        "Tomás most likely stayed in Bogotá.",
+        "Tomás wants to stay in Bogotá."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hay muchas probabilidades de que Mariana publique el artículo.",
+      "options": [
+        "There's little chance Mariana will publish the article.",
+        "There's a good chance Mariana will publish the article.",
+        "Mariana published the article."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Lo más lógico es que hables con don Hernando primero.",
+      "options": [
+        "The most logical thing is for me to talk to Don Hernando first.",
+        "The most logical thing is for him to talk to Don Hernando first.",
+        "The most logical thing is for you to talk to Don Hernando first."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Lo más probable es que no hayan terminado todavía.",
+      "options": [
+        "They most likely haven't finished yet.",
+        "They most likely won't finish.",
+        "They most likely finished."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Lo más seguro es que el precio suba el próximo mes.",
+      "options": [
+        "The price almost certainly went up last month.",
+        "The price will almost certainly go up next month.",
+        "The price might go down next month."
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick and type the whole sentence: *Lo más seguro es que ___ esta tarde.* (*llueve* or *llueva*) It will almost certainly rain this afternoon.", "answer": "Lo más seguro es que llueva esta tarde.", "accept": ["Lo más seguro es que esta tarde llueva."], "why": "After *lo más seguro es que*, the verb goes into the subjunctive: *llueva*." },
-    { "prompt": "Pick and type the whole sentence: *Hay muchas probabilidades de que Vale ___ el concurso.* (*gana* or *gane*) There's a good chance Vale will win the contest.", "answer": "Hay muchas probabilidades de que Vale gane el concurso.", "accept": ["Hay muchas probabilidades de que Vale gane el concurso."], "why": "*Probabilidades de que* also takes the subjunctive: *gane*." },
-    { "prompt": "Say: He has most likely already left.", "answer": "Lo más probable es que ya se haya ido.", "accept": ["Lo más probable es que se haya ido ya."], "why": "Something already finished uses the subjunctive perfect: *se haya ido*." },
-    { "prompt": "Say: There's little chance the café will close.", "answer": "Hay pocas probabilidades de que el café cierre.", "accept": ["Hay pocas probabilidades de que cierre el café."], "why": "*Pocas probabilidades* is the opposite of *muchas*, and the verb is still subjunctive: *cierre*." },
-    { "prompt": "Say to a friend: The most logical thing is for you to talk to Vale first.", "answer": "Lo más lógico es que hables primero con Vale.", "accept": ["Lo más lógico es que primero hables con Vale.", "Lo más lógico es que hables con Vale primero."], "why": "*Lo más lógico es que* works like the other frames, and *hables* is the subjunctive of *tú*." },
-    { "prompt": "Make it less sure with *hay pocas probabilidades de que*: *Lo más seguro es que Tomás se quede con el café.*", "answer": "Hay pocas probabilidades de que Tomás se quede con el café.", "accept": [], "why": "Swap the frame and the subjunctive *venda* stays." },
-    { "prompt": "Put it in the past, as \"he has most likely fallen asleep\": *Lo más probable es que Simón se duerma.*", "answer": "Lo más probable es que Simón se haya dormido.", "accept": [], "why": "For a finished action, *haya* plus the participle replaces *duerma*." }
+    {
+      "prompt": "Pick and type the whole sentence: *Lo más seguro es que ___ esta tarde.* (*llueve* or *llueva*) It will almost certainly rain this afternoon.",
+      "answer": "Lo más seguro es que llueva esta tarde.",
+      "accept": [
+        "Lo más seguro es que esta tarde llueva."
+      ],
+      "why": "After *lo más seguro es que*, the verb goes into the subjunctive: *llueva*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Hay muchas probabilidades de que Vale ___ el concurso.* (*gana* or *gane*) There's a good chance Vale will win the contest.",
+      "answer": "Hay muchas probabilidades de que Vale gane el concurso.",
+      "accept": [],
+      "why": "*Probabilidades de que* also takes the subjunctive: *gane*."
+    },
+    {
+      "prompt": "Say: He has most likely already left.",
+      "answer": "Lo más probable es que ya se haya ido.",
+      "accept": [
+        "Lo más probable es que se haya ido ya."
+      ],
+      "why": "Something already finished uses the subjunctive perfect: *se haya ido*."
+    },
+    {
+      "prompt": "Say: There's little chance the café will close.",
+      "answer": "Hay pocas probabilidades de que el café cierre.",
+      "accept": [
+        "Hay pocas probabilidades de que cierre el café."
+      ],
+      "why": "*Pocas probabilidades* is the opposite of *muchas*, and the verb is still subjunctive: *cierre*."
+    },
+    {
+      "prompt": "Say to a friend: The most logical thing is for you to talk to Vale first.",
+      "answer": "Lo más lógico es que hables primero con Vale.",
+      "accept": [
+        "Lo más lógico es que primero hables con Vale.",
+        "Lo más lógico es que hables con Vale primero."
+      ],
+      "why": "*Lo más lógico es que* works like the other frames, and *hables* is the subjunctive of *tú*."
+    },
+    {
+      "prompt": "Make it less sure with *hay pocas probabilidades de que*: *Lo más seguro es que Tomás se quede con el café.*",
+      "answer": "Hay pocas probabilidades de que Tomás se quede con el café.",
+      "accept": [],
+      "why": "Swap the frame; the subjunctive *quede* stays."
+    },
+    {
+      "prompt": "Put it in the past, as \"he has most likely fallen asleep\": *Lo más probable es que Simón se duerma.*",
+      "answer": "Lo más probable es que Simón se haya dormido.",
+      "accept": [],
+      "why": "For a finished action, *haya* plus the participle replaces *duerma*."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Lo más probable es que viene.", "right": "Lo más probable es que venga.", "why": "Almost. After *lo más probable es que*, Spanish uses the subjunctive, not the normal verb." },
-    { "wrong": "Hay muchas probabilidades que gane.", "right": "Hay muchas probabilidades de que gane.", "why": "Keep the *de*: the frame is *probabilidades de que*." },
-    { "wrong": "Lo más probable es ya se haya ido.", "right": "Lo más probable es que ya se haya ido.", "why": "English drops \"that\" in \"most likely he's left\", but Spanish always keeps *que*." }
+    {
+      "wrong": "Lo más probable es que viene.",
+      "right": "Lo más probable es que venga.",
+      "why": "Almost. After *lo más probable es que*, Spanish uses the subjunctive, not the normal verb."
+    },
+    {
+      "wrong": "Hay muchas probabilidades que gane.",
+      "right": "Hay muchas probabilidades de que gane.",
+      "why": "Keep the *de*: the frame is *probabilidades de que*."
+    },
+    {
+      "wrong": "Lo más probable es ya se haya ido.",
+      "right": "Lo más probable es que ya se haya ido.",
+      "why": "English drops \"that\" in \"most likely he's left\", but Spanish always keeps *que*."
+    }
   ],
   "personal": "Write one prediction about your week with *lo más probable es que*, and one long shot with *hay pocas probabilidades de que*."
 }

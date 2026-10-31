@@ -118,13 +118,13 @@
   ],
   "yourTurn": [
     {
-      "prompt": "Pick the right word and type the whole sentence: *(Para / Por) ser tan joven, sabe mucho.* (a surprise)",
+      "prompt": "Pick the right word and type the whole sentence: *___ ser tan joven, sabe mucho.* (*Para* or *Por*, a surprise)",
       "answer": "Para ser tan joven, sabe mucho.",
       "accept": [],
       "why": "A surprise measured against what you would expect takes *para*."
     },
     {
-      "prompt": "Pick the right word and type the whole sentence: *(Para / Por) ser tan joven, no la contrataron.* (a cause)",
+      "prompt": "Pick the right word and type the whole sentence: *___ ser tan joven, no la contrataron.* (*Para* or *Por*, a cause)",
       "answer": "Por ser tan joven, no la contrataron.",
       "accept": [],
       "why": "A cause, \"because\", takes *por*."
@@ -163,6 +163,8 @@
       "prompt": "Say it as a compliment to a friend: the cake came out good, and it was your first time.",
       "answer": "La torta quedó muy buena para ser la primera vez.",
       "accept": [
+        "La torta te quedó muy buena para ser la primera vez.",
+        "La torta te quedó muy buena para ser tu primera vez.",
         "La torta quedó buena para ser la primera vez."
       ],
       "why": "*Para ser la primera vez* is the standard \"for a first time\"."
@@ -172,7 +174,7 @@
     {
       "wrong": "Por ser tan joven, sabe mucho.",
       "right": "Para ser tan joven, sabe mucho.",
-      "why": "Almost. *Por* would mean \"because he's young\", which makes no sense here; \"for someone so young\" takes *para*."
+      "why": "Almost. *Por* would mean \"because she's so young\", which makes no sense here; \"for someone so young\" takes *para*."
     },
     {
       "wrong": "Habla muy bien para tener un año aquí.",

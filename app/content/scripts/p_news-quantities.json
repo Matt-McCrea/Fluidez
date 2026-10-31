@@ -6,38 +6,175 @@
     "en": "The population doubled in ten years."
   },
   "examples": [
-    { "es": "Las ventas cayeron en torno a un 15 %.", "en": "Sales fell by around 15%." },
-    { "es": "La población se duplicó en diez años.", "en": "The population doubled in ten years." },
-    { "es": "El precio se redujo a la mitad.", "en": "The price was halved." },
-    { "es": "Un tercio de los estudiantes no votó.", "en": "A third of the students didn't vote." },
-    { "es": "Cerca de mil personas asistieron.", "en": "Close to a thousand people attended." },
-    { "es": "Los clientes se triplicaron este año.", "en": "The customers tripled this year." }
+    {
+      "es": "Las ventas cayeron en torno a un 15 %.",
+      "en": "Sales fell by around 15%."
+    },
+    {
+      "es": "La población se duplicó en diez años.",
+      "en": "The population doubled in ten years."
+    },
+    {
+      "es": "El precio se redujo a la mitad.",
+      "en": "The price was halved."
+    },
+    {
+      "es": "Un tercio de los estudiantes no votó.",
+      "en": "A third of the students didn't vote."
+    },
+    {
+      "es": "Cerca de mil personas asistieron.",
+      "en": "Close to a thousand people attended."
+    },
+    {
+      "es": "Los clientes se triplicaron este año.",
+      "en": "Customers tripled this year."
+    }
   ],
   "rule": "For change, Spanish adds *se* to the verb: *se duplicó* (doubled), *se triplicó* (tripled), *se redujo a la mitad* (was halved). The verb agrees with what changed: *los clientes se triplicaron*.\n\nFor fractions: *un tercio de*, *dos tercios de*, *la mitad de*, then *los* and the group.\n\nFor \"around\": *en torno a* or *cerca de*, then the figure.",
   "smallPrint": "Teachers call this the language of describing figures and trends. *Se duplicó* is the reflexive passive that you already know from *se vende*.",
   "readAndPick": [
-    { "es": "Las ventas se duplicaron este año.", "options": ["Sales halved this year.", "Sales doubled this year.", "Sales tripled this year."], "answer": 1 },
-    { "es": "El precio del tinto se redujo a la mitad.", "options": ["The price of black coffee doubled.", "The price of black coffee fell by a third.", "The price of black coffee was halved."], "answer": 2 },
-    { "es": "Dos tercios de los vecinos votaron.", "options": ["One third of the neighbours voted.", "Two thirds of the neighbours voted.", "Half of the neighbours voted."], "answer": 1 },
-    { "es": "Los turistas se triplicaron en diez años.", "options": ["The tourists tripled in ten years.", "The tourists doubled in ten years.", "The tourists were halved in ten years."], "answer": 0 },
-    { "es": "Cerca de mil personas asistieron.", "options": ["Exactly a thousand people attended.", "Close to a thousand people attended.", "More than a thousand people attended."], "answer": 1 },
-    { "es": "Un tercio de los estudiantes no votó.", "options": ["A third of the students didn't vote.", "Two thirds of the students didn't vote.", "Half of the students didn't vote."], "answer": 0 },
-    { "es": "La población se duplicó en veinte años.", "options": ["The population tripled in twenty years.", "The population was halved in twenty years.", "The population doubled in twenty years."], "answer": 2 },
-    { "es": "Las ventas cayeron en torno a un 15 %.", "options": ["Sales rose by around 15%.", "Sales fell by exactly 15%.", "Sales fell by around 15%."], "answer": 2 }
+    {
+      "es": "Las ventas se duplicaron este año.",
+      "options": [
+        "Sales halved this year.",
+        "Sales doubled this year.",
+        "Sales tripled this year."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El precio del tinto se redujo a la mitad.",
+      "options": [
+        "The price of black coffee doubled.",
+        "The price of black coffee fell by a third.",
+        "The price of black coffee was halved."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Dos tercios de los vecinos votaron.",
+      "options": [
+        "One third of the neighbours voted.",
+        "Two thirds of the neighbours voted.",
+        "Half of the neighbours voted."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Los turistas se triplicaron en diez años.",
+      "options": [
+        "Tourists tripled in ten years.",
+        "Tourists doubled in ten years.",
+        "Tourists were halved in ten years."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Cerca de mil personas asistieron.",
+      "options": [
+        "Exactly a thousand people attended.",
+        "Close to a thousand people attended.",
+        "More than a thousand people attended."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Un tercio de los estudiantes no votó.",
+      "options": [
+        "A third of the students didn't vote.",
+        "Two thirds of the students didn't vote.",
+        "Half of the students didn't vote."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La población se duplicó en veinte años.",
+      "options": [
+        "The population tripled in twenty years.",
+        "The population was halved in twenty years.",
+        "The population doubled in twenty years."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Las ventas cayeron en torno a un 15 %.",
+      "options": [
+        "Sales rose by around 15%.",
+        "Sales fell by exactly 15%.",
+        "Sales fell by around 15%."
+      ],
+      "answer": 2
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick and type the whole sentence: *El precio ___ a la mitad.* (*se redujo* or *se duplicó*) The price was halved.", "answer": "El precio se redujo a la mitad.", "accept": [], "why": "*A la mitad* means \"to half\", so the verb is *se redujo*." },
-    { "prompt": "Pick and type the whole sentence: *La población ___ en diez años.* (*se duplicó* or *se redujo*) The population doubled in ten years.", "answer": "La población se duplicó en diez años.", "accept": [], "why": "\"Doubled\" is *se duplicó*." },
-    { "prompt": "Say: A third of the students didn't vote.", "answer": "Un tercio de los estudiantes no votó.", "accept": ["Un tercio de los estudiantes no votaron."], "why": "*Un tercio de* is followed by *los* and the group." },
-    { "prompt": "Say: Sales fell by around 15%.", "answer": "Las ventas cayeron en torno a un 15 %.", "accept": ["Las ventas cayeron en torno a un 15%."], "why": "\"Around\" is *en torno a*, followed by the figure." },
-    { "prompt": "Say: Close to a thousand people attended.", "answer": "Cerca de mil personas asistieron.", "accept": ["En torno a mil personas asistieron."], "why": "*Cerca de* gives an approximate number, just like \"close to\"." },
-    { "prompt": "Change *Las ventas se duplicaron* so that the customers tripled.", "answer": "Los clientes se triplicaron.", "accept": ["Los clientes del café se triplicaron."], "why": "The verb agrees with the thing that changed: *los clientes se triplicaron*." },
-    { "prompt": "Say: Two thirds of the neighbours voted.", "answer": "Dos tercios de los vecinos votaron.", "accept": [], "why": "With *dos* the fraction is plural: *tercios*." }
+    {
+      "prompt": "Pick and type the whole sentence: *El precio ___ a la mitad.* (*se redujo* or *se duplicó*) The price was halved.",
+      "answer": "El precio se redujo a la mitad.",
+      "accept": [],
+      "why": "*A la mitad* means \"to half\", so the verb is *se redujo*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *La población ___ en diez años.* (*se duplicó* or *se redujo*) The population doubled in ten years.",
+      "answer": "La población se duplicó en diez años.",
+      "accept": [],
+      "why": "\"Doubled\" is *se duplicó*."
+    },
+    {
+      "prompt": "Say: A third of the students didn't vote.",
+      "answer": "Un tercio de los estudiantes no votó.",
+      "accept": [
+        "Un tercio de los estudiantes no votaron."
+      ],
+      "why": "*Un tercio de* is followed by *los* and the group."
+    },
+    {
+      "prompt": "Say: Sales fell by around 15%.",
+      "answer": "Las ventas cayeron en torno a un 15 %.",
+      "accept": [
+        "Las ventas cayeron en torno a un 15%."
+      ],
+      "why": "\"Around\" is *en torno a*, followed by the figure."
+    },
+    {
+      "prompt": "Say: Close to a thousand people attended.",
+      "answer": "Cerca de mil personas asistieron.",
+      "accept": [
+        "En torno a mil personas asistieron."
+      ],
+      "why": "*Cerca de* gives an approximate number, just like \"close to\"."
+    },
+    {
+      "prompt": "Change *Las ventas se duplicaron* so that the customers tripled.",
+      "answer": "Los clientes se triplicaron.",
+      "accept": [
+        "Los clientes del café se triplicaron."
+      ],
+      "why": "The verb agrees with the thing that changed: *los clientes se triplicaron*."
+    },
+    {
+      "prompt": "Say: Two thirds of the neighbours voted.",
+      "answer": "Dos tercios de los vecinos votaron.",
+      "accept": [],
+      "why": "With *dos* the fraction is plural: *tercios*."
+    }
   ],
   "pitfalls": [
-    { "wrong": "La población duplicó en diez años.", "right": "La población se duplicó en diez años.", "why": "Almost. When something grows by itself, Spanish adds *se*: *se duplicó*." },
-    { "wrong": "Un tercio de estudiantes no votó.", "right": "Un tercio de los estudiantes no votó.", "why": "Spanish keeps the article after *de*: *de los estudiantes*." },
-    { "wrong": "El precio se redujo la mitad.", "right": "El precio se redujo a la mitad.", "why": "You need the *a*: *se redujo a la mitad*." }
+    {
+      "wrong": "La población duplicó en diez años.",
+      "right": "La población se duplicó en diez años.",
+      "why": "Almost. When something grows by itself, Spanish adds *se*: *se duplicó*."
+    },
+    {
+      "wrong": "Un tercio de estudiantes no votó.",
+      "right": "Un tercio de los estudiantes no votó.",
+      "why": "Spanish keeps the article after *de*: *de los estudiantes*."
+    },
+    {
+      "wrong": "El precio se redujo la mitad.",
+      "right": "El precio se redujo a la mitad.",
+      "why": "You need the *a*: *se redujo a la mitad*."
+    }
   ],
   "personal": "Write a headline about your town or your workplace with a real change in it, using *se duplicó*, *se triplicó* or *un tercio de*, and add an approximate figure with *cerca de* or *en torno a*."
 }

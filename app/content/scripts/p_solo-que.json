@@ -3,7 +3,7 @@
   "hook": {
     "line": "You like the plan. You just have one small problem with it. *Pero* can sound like a flat no, so Bogotanos soften it.",
     "es": "Me encantaría ir, solo que no tengo plata.",
-    "en": "I'd love to go, only I've got no money."
+    "en": "I'd love to go, it's just that I have no money."
   },
   "examples": [
     {
@@ -12,7 +12,7 @@
     },
     {
       "es": "Me encantaría ir, solo que no tengo plata.",
-      "en": "I'd love to go, only I've got no money."
+      "en": "I'd love to go, it's just that I have no money."
     },
     {
       "es": "Tenía buena intención, solo que no me expliqué bien.",
@@ -118,13 +118,13 @@
   ],
   "yourTurn": [
     {
-      "prompt": "Pick the right words and type the whole sentence: *La casa es linda, (solo que / porque) queda muy lejos.*",
+      "prompt": "Pick the right words and type the whole sentence: *La casa es linda, ___ queda muy lejos.* (*solo que* or *porque*)",
       "answer": "La casa es linda, solo que queda muy lejos.",
       "accept": [],
       "why": "You are adding a small limitation to something good, which is what *solo que* does."
     },
     {
-      "prompt": "Pick the right word and type the whole sentence: *El plan es bueno, (solo que / por eso) es un poco caro.*",
+      "prompt": "Pick the right words and type the whole sentence: *El plan es bueno, ___ es un poco caro.* (*solo que* or *por eso*)",
       "answer": "El plan es bueno, solo que es un poco caro.",
       "accept": [],
       "why": "*Por eso* gives a result; *solo que* adds a snag."
@@ -176,9 +176,9 @@
       "why": "Spanish puts a comma before *solo que*, like the pause in English."
     },
     {
-      "wrong": "Solo que quiero ir, solo que no puedo.",
+      "wrong": "Quiero ir, solo no puedo.",
       "right": "Quiero ir, solo que no puedo.",
-      "why": "*Solo que* comes second, after the thing that is true. It doesn't open the sentence."
+      "why": "English says \"I just can't\", but Spanish needs the *que* to join the second sentence."
     }
   ],
   "personal": "Tell us about something you like, with one small catch, using *solo que*."

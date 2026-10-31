@@ -20,7 +20,7 @@
     },
     {
       "es": "Este mes vendemos tres veces más pasteles que el mes pasado.",
-      "en": "This month we sell three times more pastries than last month."
+      "en": "This month we're selling three times more pastries than last month."
     },
     {
       "es": "La economía creció un 3 %.",
@@ -115,7 +115,7 @@
       "prompt": "Type in Spanish: Sales tripled this year.",
       "answer": "Las ventas se triplicaron este año.",
       "accept": [],
-      "why": "\"Tripled\" is *se triplicó*, plural to match *las ventas*."
+      "why": "\"Tripled\" is *se triplicaron* here, plural to match *las ventas*."
     },
     {
       "prompt": "Type in Spanish: Now I earn three times more than before.",

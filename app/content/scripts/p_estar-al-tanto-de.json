@@ -170,9 +170,9 @@
       "why": "The phrase always links to what you know with *de*."
     },
     {
-      "wrong": "Estoy al tanto de que sobre eso.",
-      "right": "Estoy al tanto de eso.",
-      "why": "Choose one: *de eso* for a thing, *de que* before a full clause."
+      "wrong": "Tengo nociones en cocina.",
+      "right": "Tengo nociones de cocina.",
+      "why": "English says \"some knowledge in\", but *nociones* is followed by *de*, just like *al tanto de*."
     }
   ],
   "personal": "Say what you are up to date on in your own life, with *Estoy al tanto de…*."

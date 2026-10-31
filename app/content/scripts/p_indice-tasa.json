@@ -24,14 +24,14 @@
     },
     {
       "es": "Un millar de personas firmó la carta.",
-      "en": "A thousand or so people signed the letter."
+      "en": "About a thousand people signed the letter."
     },
     {
       "es": "Centenares de personas esperaban afuera.",
       "en": "Hundreds of people were waiting outside."
     }
   ],
-  "rule": "News Spanish measures things with a short noun, then *de*, then what is measured.\n\n*La tasa de* is a rate: *la tasa de desempleo*.\n*El índice de* is a level or index: *el índice de pobreza*.\n*La cifra de* is a figure or total: *la cifra de visitantes*.\n*El porcentaje de* is a share.\n\nThere is no article after *de*: *tasa de desempleo*. Do not say *número* for a rate.\n\nFor rough big numbers: *un millar de* (about a thousand), *centenares de* (hundreds of), *decenas de* (dozens of).",
+  "rule": "News Spanish measures things with a short noun, then *de*, then what is measured.\n\n*La tasa de* is a rate: *la tasa de desempleo*.\n*El índice de* is a level or index: *el índice de pobreza*.\n*La cifra de* is a figure or total: *la cifra de visitantes*.\n*El porcentaje de* is a share.\n\nUsually no article follows *de*: *tasa de desempleo*. Do not say *número* for a rate.\n\nFor rough big numbers: *un millar de* (about a thousand), *centenares de* (hundreds of), *decenas de* (dozens of).",
   "smallPrint": "Teachers call *tasa*, *índice* and *cifra* quantity nouns: they sit in front of the thing being counted.",
   "readAndPick": [
     {

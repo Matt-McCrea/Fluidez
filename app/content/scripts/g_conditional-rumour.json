@@ -6,38 +6,174 @@
     "en": "According to the paper, the company allegedly paid bribes."
   },
   "examples": [
-    { "es": "Según el diario, la empresa habría pagado sobornos.", "en": "According to the paper, the company allegedly paid bribes." },
-    { "es": "El acusado estaría fuera del país.", "en": "The accused is reportedly abroad." },
-    { "es": "Según un vecino, Altamira ya habría comprado tres edificios.", "en": "According to a neighbour, Altamira has reportedly already bought three buildings." },
-    { "es": "Según la radio, el presidente viajaría mañana a Cartagena.", "en": "According to the radio, the president is reportedly travelling to Cartagena tomorrow." },
-    { "es": "La policía tendría pruebas.", "en": "The police reportedly have evidence." },
-    { "es": "Según una vecina, el dueño vendería el edificio.", "en": "According to a neighbour, the owner is reportedly going to sell the building." }
+    {
+      "es": "Según el diario, la empresa habría pagado sobornos.",
+      "en": "According to the paper, the company allegedly paid bribes."
+    },
+    {
+      "es": "El acusado estaría fuera del país.",
+      "en": "The accused is reportedly abroad."
+    },
+    {
+      "es": "Según un vecino, Altamira ya habría comprado tres edificios.",
+      "en": "According to a neighbour, Altamira has reportedly already bought three buildings."
+    },
+    {
+      "es": "Según la radio, el presidente viajaría mañana a Cartagena.",
+      "en": "According to the radio, the president is reportedly travelling to Cartagena tomorrow."
+    },
+    {
+      "es": "La policía tendría pruebas.",
+      "en": "The police reportedly have evidence."
+    },
+    {
+      "es": "Según una vecina, el dueño vendería el edificio.",
+      "en": "According to a neighbour, the owner is reportedly going to sell the building."
+    }
   ],
   "rule": "Say *La empresa pagó sobornos* and you stand behind it. Put the verb in the conditional and you only pass it on: \"that is what I am told\".\n\nFor now or later, use the simple conditional: *estaría*, *tendría*, *vendería*.\nFor the past, use the conditional perfect: *habría pagado*, *habría comprado*.\n\nThere is no \"if\" and no \"would\" here. English adds words like \"allegedly\" or \"reportedly\", while Spanish changes the verb. It lives in news and formal reports, and a *según...* often names the source.",
   "smallPrint": "Teachers call this the conditional of rumour, or *condicional de rumor*, and in journalism it is a way of reporting without taking responsibility for the claim.",
   "readAndPick": [
-    { "es": "Según el diario, la empresa habría pagado sobornos.", "options": ["The company allegedly paid bribes.", "The company paid bribes, and the paper is sure.", "Nobody paid bribes."], "answer": 0 },
-    { "es": "El acusado estaría fuera del país.", "options": ["The accused is definitely abroad.", "The accused is reportedly abroad.", "The accused would like to leave the country."], "answer": 1 },
-    { "es": "El alcalde firmó el contrato.", "options": ["The mayor reportedly signed the contract.", "The mayor might sign the contract.", "The mayor signed the contract (stated as fact)."], "answer": 2 },
-    { "es": "Según un vecino, Altamira ya habría comprado tres edificios.", "options": ["Altamira will buy three buildings.", "A neighbour is sure that Altamira bought three buildings.", "A neighbour says that Altamira has reportedly already bought three buildings."], "answer": 2 },
-    { "es": "Según la radio, el presidente viajaría mañana a Cartagena.", "options": ["The president will definitely travel to Cartagena.", "The president is reportedly travelling to Cartagena tomorrow.", "The president travelled to Cartagena yesterday."], "answer": 1 },
-    { "es": "La policía tendría pruebas.", "options": ["The police reportedly have evidence.", "The police had evidence.", "The police need evidence."], "answer": 0 },
-    { "es": "Según una vecina, el dueño vendería el edificio.", "options": ["The owner has sold the building.", "The owner wants to buy the building.", "The owner is reportedly going to sell the building."], "answer": 2 },
-    { "es": "Hernando habría salido antes de las ocho.", "options": ["Hernando will leave before eight.", "Hernando reportedly left before eight.", "Hernando leaves before eight every day."], "answer": 1 }
+    {
+      "es": "Según el diario, la empresa habría pagado sobornos.",
+      "options": [
+        "The company allegedly paid bribes.",
+        "The company paid bribes, and the paper is sure.",
+        "Nobody paid bribes."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El acusado estaría fuera del país.",
+      "options": [
+        "The accused is definitely abroad.",
+        "The accused is reportedly abroad.",
+        "The accused would like to leave the country."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El alcalde firmó el contrato.",
+      "options": [
+        "The mayor reportedly signed the contract.",
+        "The mayor might sign the contract.",
+        "The mayor signed the contract (stated as fact)."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Según un vecino, Altamira ya habría comprado tres edificios.",
+      "options": [
+        "Altamira will buy three buildings.",
+        "A neighbour is sure that Altamira bought three buildings.",
+        "A neighbour says that Altamira has reportedly already bought three buildings."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Según la radio, el presidente viajaría mañana a Cartagena.",
+      "options": [
+        "The president will definitely travel to Cartagena.",
+        "The president is reportedly travelling to Cartagena tomorrow.",
+        "The president travelled to Cartagena yesterday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La policía tendría pruebas.",
+      "options": [
+        "The police reportedly have evidence.",
+        "The police had evidence.",
+        "The police need evidence."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Según una vecina, el dueño vendería el edificio.",
+      "options": [
+        "The owner has sold the building.",
+        "The owner wants to buy the building.",
+        "The owner is reportedly going to sell the building."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Hernando habría salido antes de las ocho.",
+      "options": [
+        "Hernando will leave before eight.",
+        "Hernando reportedly left before eight.",
+        "Hernando leaves before eight every day."
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick and type the whole sentence: *Según el diario, la empresa ___ sobornos.* (*pagó* or *habría pagado*) According to the paper, the company allegedly paid bribes.", "answer": "Según el diario, la empresa habría pagado sobornos.", "accept": [], "why": "For a claim about the past that you only pass on, use the conditional perfect: *habría pagado*." },
-    { "prompt": "Pick and type the whole sentence: *El acusado ___ fuera del país.* (*está* or *estaría*) The accused is reportedly abroad.", "answer": "El acusado estaría fuera del país.", "accept": [], "why": "For a claim about now, the simple conditional *estaría* keeps your distance." },
-    { "prompt": "Say: According to a neighbour, Altamira has reportedly already bought three buildings.", "answer": "Según un vecino, Altamira ya habría comprado tres edificios.", "accept": ["Según un vecino, Altamira habría comprado ya tres edificios."], "why": "*Habría comprado* reports the purchase without vouching for it." },
-    { "prompt": "Say: According to the radio, the president is reportedly travelling to Cartagena tomorrow.", "answer": "Según la radio, el presidente viajaría mañana a Cartagena.", "accept": ["Según la radio, el presidente viajaría a Cartagena mañana.", "El presidente viajaría mañana a Cartagena, según la radio."], "why": "*Viajaría* turns a plan into a reported plan." },
-    { "prompt": "Say: The police reportedly have evidence.", "answer": "La policía tendría pruebas.", "accept": ["Según fuentes cercanas, la policía tendría pruebas."], "why": "*Tendría* is the conditional of *tener*, and it does not promise that the evidence exists." },
-    { "prompt": "Make it negative: *El alcalde habría firmado el contrato.* (reportedly the mayor did not sign)", "answer": "El alcalde no habría firmado el contrato.", "accept": [], "why": "*No* goes in front of *habría*, just like with any other verb." },
-    { "prompt": "Turn this fact into a rumour: *Hernando salió antes de las ocho.*", "answer": "Hernando habría salido antes de las ocho.", "accept": [], "why": "The conditional perfect turns a plain past into a reported past." }
+    {
+      "prompt": "Pick and type the whole sentence: *Según el diario, la empresa ___ sobornos.* (*pagó* or *habría pagado*) According to the paper, the company allegedly paid bribes.",
+      "answer": "Según el diario, la empresa habría pagado sobornos.",
+      "accept": [],
+      "why": "For a claim about the past that you only pass on, use the conditional perfect: *habría pagado*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *El acusado ___ fuera del país.* (*está* or *estaría*) The accused is reportedly abroad.",
+      "answer": "El acusado estaría fuera del país.",
+      "accept": [],
+      "why": "For a claim about now, the simple conditional *estaría* keeps your distance."
+    },
+    {
+      "prompt": "Say: According to a neighbour, Altamira has reportedly already bought three buildings.",
+      "answer": "Según un vecino, Altamira ya habría comprado tres edificios.",
+      "accept": [
+        "Según un vecino, Altamira habría comprado ya tres edificios."
+      ],
+      "why": "*Habría comprado* reports the purchase without vouching for it."
+    },
+    {
+      "prompt": "Say: According to the radio, the president is reportedly travelling to Cartagena tomorrow.",
+      "answer": "Según la radio, el presidente viajaría mañana a Cartagena.",
+      "accept": [
+        "Según la radio, el presidente viajaría a Cartagena mañana.",
+        "El presidente viajaría mañana a Cartagena, según la radio."
+      ],
+      "why": "*Viajaría* turns a plan into a reported plan."
+    },
+    {
+      "prompt": "Say: The police reportedly have evidence.",
+      "answer": "La policía tendría pruebas.",
+      "accept": [
+        "Según fuentes cercanas, la policía tendría pruebas."
+      ],
+      "why": "*Tendría* is the conditional of *tener*, and it does not promise that the evidence exists."
+    },
+    {
+      "prompt": "Make it negative: *El alcalde habría firmado el contrato.* (The mayor reportedly did not sign the contract.)",
+      "answer": "El alcalde no habría firmado el contrato.",
+      "accept": [],
+      "why": "*No* goes in front of *habría*, just like with any other verb."
+    },
+    {
+      "prompt": "Turn this fact into a rumour: *Hernando salió antes de las ocho.*",
+      "answer": "Hernando habría salido antes de las ocho.",
+      "accept": [],
+      "why": "The conditional perfect turns a plain past into a reported past."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Según el diario, la empresa habrá pagado sobornos.", "right": "Según el diario, la empresa habría pagado sobornos.", "why": "Almost. *Habrá pagado* is you guessing, while *habría pagado* passes on what the source says." },
-    { "wrong": "Según el diario, la empresa pagaría sobornos el año pasado.", "right": "Según el diario, la empresa habría pagado sobornos el año pasado.", "why": "For something that already happened, you need the conditional perfect." },
-    { "wrong": "Yo vi que el alcalde habría firmado el contrato.", "right": "Yo vi que el alcalde firmó el contrato.", "why": "If you saw it yourself, you vouch for it, so use the plain past." }
+    {
+      "wrong": "Según el diario, la empresa habrá pagado sobornos.",
+      "right": "Según el diario, la empresa habría pagado sobornos.",
+      "why": "Almost. *Habrá pagado* is you guessing, while *habría pagado* passes on what the source says."
+    },
+    {
+      "wrong": "Según el diario, la empresa pagaría sobornos el año pasado.",
+      "right": "Según el diario, la empresa habría pagado sobornos el año pasado.",
+      "why": "For something that already happened, you need the conditional perfect."
+    },
+    {
+      "wrong": "Yo vi que el alcalde habría firmado el contrato.",
+      "right": "Yo vi que el alcalde firmó el contrato.",
+      "why": "If you saw it yourself, you vouch for it, so use the plain past."
+    }
   ],
   "personal": "Write two harmless bits of gossip you have heard about a neighbour or a famous person. Start each one with *según...* and put the verb in the conditional."
 }

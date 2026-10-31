@@ -1,7 +1,7 @@
 {
   "node": "p:me-contaron-que",
   "hook": {
-    "line": "In Bogotá nobody asks \"Is it true?\" straight out. Tomás hears the news about Mariana from a regular and answers the polite way: state what you heard, and let the other person confirm.",
+    "line": "In Bogotá, asking \"Is it true?\" straight out can sound like an interrogation. Tomás hears the news about Mariana from a regular and answers the polite way: state what you heard, and let the other person confirm.",
     "es": "Me contaron que Mariana escribe sobre Altamira.",
     "en": "I heard Mariana is writing about Altamira."
   },

@@ -118,7 +118,7 @@
       "why": "Both open a shocked question; *que* follows only *de verdad*."
     },
     {
-      "prompt": "Type in Spanish: Are you seriously leaving tomorrow?",
+      "prompt": "Type in Spanish, to a friend: Are you seriously leaving tomorrow?!",
       "answer": "¡¿En serio te vas mañana?!",
       "accept": [
         "¡¿De verdad que te vas mañana?!"

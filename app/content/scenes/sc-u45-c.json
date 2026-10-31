@@ -3,12 +3,12 @@
   "unit": "u45",
   "title": "Una llamada de la emisora",
   "spare": true,
-  "brief": "Camila, an editor at the radio station, calls you for background on the councillor story. She doesn't know you, so use usted. Say how well you follow the case, report what is only alleged, give an approximate number and predict what Altamira will say.",
+  "brief": "Camila, an editor at the radio station, calls you for background on the Rengifo story. She doesn't know you, so use usted. Say how well you follow the case, report what is only alleged, give an approximate number and predict what Altamira will say.",
   "turns": [
     {
       "id": "t1",
-      "npc": "Camila: Buenas tardes, soy Camila, de la emisora. Mariana dice que usted conoce el caso del concejal. ¿Está al tanto de todo?",
-      "npcEn": "Camila: Good afternoon, this is Camila from the radio station. Mariana says you know the case of the councillor. Are you up to date on everything?",
+      "npc": "Camila: Buenas tardes, soy Camila, de la emisora. Mariana dice que usted conoce el caso Rengifo. ¿Está al tanto de todo?",
+      "npcEn": "Camila: Good afternoon, this is Camila from the radio station. Mariana says you know the Rengifo case. Are you up to date on everything?",
       "intent": "Say you are up to date on what the newspaper says (use: estoy al tanto de).",
       "accept": [
         "Sí, estoy al tanto de lo que dice el periódico.",
@@ -28,13 +28,13 @@
     },
     {
       "id": "t2",
-      "npc": "Camila: Entonces dígame, ¿es cierto que el concejal salió del país?",
-      "npcEn": "Camila: Then tell me, is it true that the councillor left the country?",
+      "npc": "Camila: Entonces dígame una cosa: ¿Rengifo sí salió del país?",
+      "npcEn": "Camila: Then tell me something: did Rengifo really leave the country?",
       "intent": "Answer carefully: according to the paper, he reportedly left (use the conditional: habría salido).",
       "accept": [
-        "Según el periódico, el concejal habría salido del país.",
-        "Al parecer, el concejal habría salido del país, pero nadie lo confirma.",
-        "El concejal habría salido del país, según una fuente."
+        "Según el periódico, Rengifo habría salido del país.",
+        "Según los vecinos, Rengifo habría salido del país, pero nadie lo confirma.",
+        "Rengifo habría salido del país, según una fuente."
       ],
       "require": [
         {
@@ -75,7 +75,7 @@
       "intent": "Say it most likely won't tell the whole truth (use: Lo más probable es que + subjunctive).",
       "accept": [
         "Lo más probable es que no diga toda la verdad.",
-        "Lo más probable es que digan algo parecido.",
+        "Lo más probable es que no diga nada nuevo.",
         "No tengo ni idea, pero lo más probable es que no."
       ],
       "require": [
@@ -96,7 +96,7 @@
       "intent": "Thank her and say goodbye until tomorrow (she is a stranger, so use usted).",
       "accept": [
         "Gracias a usted. Hasta mañana.",
-        "Encantado. Hasta mañana, Camila.",
+        "Muchas gracias a usted, Camila. Hasta mañana.",
         "Con mucho gusto. Hasta pronto."
       ],
       "require": [
@@ -137,10 +137,9 @@
     "g:future-promises",
     "g:gender-articles",
     "g:hay-vs-esta",
-    "g:hedging-distance",
     "g:indirect-objects",
     "g:lo-adjective",
-    "g:prep-infinitive",
+    "g:negation-words",
     "g:present-ar",
     "g:present-er-ir",
     "g:preterite-ar",
@@ -159,14 +158,13 @@
     "l:carta",
     "l:caso",
     "l:cerca",
-    "l:concejal",
     "l:confirmar",
     "l:conocer",
+    "l:cosa",
     "l:creer",
     "l:cuánto",
     "l:decir",
     "l:emisora",
-    "l:encantado",
     "l:estar",
     "l:firmar",
     "l:fuente",
@@ -178,7 +176,7 @@
     "l:llamar",
     "l:mañana",
     "l:negar",
-    "l:parecer",
+    "l:nuevo",
     "l:país",
     "l:periódico",
     "l:persona",
@@ -193,11 +191,9 @@
     "l:vecino",
     "l:verdad",
     "p:aproximar-cifras",
-    "p:es-verdad-eso-de-que",
     "p:estar-al-tanto-de",
     "p:gracias-a-por-culpa-de",
     "p:gracias-por",
-    "p:indefinites-basic",
     "p:la-gente-singular",
     "p:lo-mas-probable-es-que",
     "p:me-te-nos-objects",
@@ -207,7 +203,6 @@
     "p:ponerse-al-tanto",
     "p:por-culpa-de",
     "p:possessives-basic",
-    "p:presuntamente-al-parecer",
     "p:saber-conocer",
     "p:un-estudio-muestra-que",
     "p:unos-approx"

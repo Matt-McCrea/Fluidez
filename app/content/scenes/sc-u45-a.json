@@ -3,16 +3,16 @@
   "unit": "u45",
   "title": "Sin contestar",
   "spare": false,
-  "brief": "You're helping Mariana at a café table while she writes her story about Altamira and the suspended councillor. She's a friend, so use tú. Guess, report carefully what is only alleged, give a number, and admit what you don't know.",
+  "brief": "You're helping Mariana at a café table while she writes her follow-up story about Altamira and Rengifo, the suspended official. She's a friend, so use tú. Guess, report carefully what is only alleged, give a number, and admit what you don't know.",
   "turns": [
     {
       "id": "t1",
-      "npc": "Mariana: El concejal lleva dos días sin contestar el teléfono. ¿Dónde estará?",
-      "npcEn": "Mariana: The councillor hasn't answered his phone for two days. Where can he be?",
+      "npc": "Mariana: Rengifo lleva dos días sin contestar el teléfono. ¿Dónde estará?",
+      "npcEn": "Mariana: Rengifo hasn't answered his phone for two days. Where could he be?",
       "intent": "Guess where he is: he has probably left the country (use the future perfect: se habrá ido).",
       "accept": [
         "Se habrá ido del país.",
-        "Ya se habrá marchado de Bogotá.",
+        "Ya se habrá ido de Bogotá.",
         "Habrá salido de viaje, ¿no?"
       ],
       "require": [
@@ -28,13 +28,13 @@
     },
     {
       "id": "t2",
-      "npc": "Mariana: Mi fuente dice que Altamira le pagó al concejal suspendido, pero no puedo escribirlo como un hecho. ¿Cómo lo digo?",
-      "npcEn": "Mariana: My source says Altamira paid the suspended councillor, but I can't write it as a fact. How do I put it?",
-      "intent": "Tell her to write that Altamira allegedly paid the councillor (use the conditional: habría pagado).",
+      "npc": "Mariana: Mi fuente dice que Altamira le pagó a Rengifo, pero no puedo escribirlo como un hecho. ¿Cómo lo digo?",
+      "npcEn": "Mariana: My source says Altamira paid Rengifo, but I can't write it as a fact. How do I put it?",
+      "intent": "Tell her to write that Altamira allegedly paid Rengifo (use the conditional: habría pagado).",
       "accept": [
-        "Escribe que Altamira habría pagado al concejal.",
-        "Según una fuente, Altamira habría pagado al concejal.",
-        "Altamira habría pagado dinero al concejal, según tu fuente."
+        "Escribe que Altamira le habría pagado a Rengifo.",
+        "Según una fuente, Altamira le habría pagado a Rengifo.",
+        "Altamira le habría pagado a Rengifo, según tu fuente."
       ],
       "require": [
         {
@@ -70,8 +70,8 @@
     },
     {
       "id": "t4",
-      "npc": "Mariana: En las redes dicen que el concejal ya está en Miami. ¿Tú qué crees? ¿Será verdad?",
-      "npcEn": "Mariana: On social media they say the councillor is already in Miami. What do you think? Could it be true?",
+      "npc": "Mariana: En las redes dicen que Rengifo ya está en Miami. ¿Tú qué crees? ¿Será verdad?",
+      "npcEn": "Mariana: On social media they say Rengifo is already in Miami. What do you think? Could it be true?",
       "intent": "Say you don't know (use: Quién sabe, No tengo ni idea or Habría que ver si).",
       "accept": [
         "Quién sabe.",
@@ -148,13 +148,11 @@
     "l:año",
     "l:barrio",
     "l:claro",
-    "l:concejal",
     "l:contestar",
     "l:creer",
     "l:cuánto",
     "l:cómo",
     "l:decir",
-    "l:dinero",
     "l:duplicarse",
     "l:día",
     "l:dónde",
@@ -168,7 +166,6 @@
     "l:invitar",
     "l:ir",
     "l:llevar",
-    "l:marcharse",
     "l:pagar",
     "l:país",
     "l:perfecto",
@@ -181,7 +178,6 @@
     "l:salir",
     "l:ser",
     "l:subir",
-    "l:suspender",
     "l:teléfono",
     "l:tener",
     "l:tinto",

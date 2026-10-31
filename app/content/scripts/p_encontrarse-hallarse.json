@@ -1,9 +1,9 @@
 {
   "node": "p:encontrarse-hallarse",
   "hook": {
-    "line": "Tomás is reading the news about Altamira. In a report, nobody simply \"is\" somewhere: people and things *se encuentran* there. You will meet this in newspapers, announcements and polite phone calls.",
-    "es": "El dueño de Altamira no se encuentra en el país.",
-    "en": "The owner of Altamira is not in the country."
+    "line": "Tomás is reading the news about the councillor. In a report, nobody simply \"is\" somewhere: people and things *se encuentran* there. You will meet this in newspapers, announcements and polite phone calls.",
+    "es": "El concejal no se encuentra en el país.",
+    "en": "The councillor is not in the country."
   },
   "examples": [
     {

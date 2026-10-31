@@ -118,13 +118,13 @@
   ],
   "yourTurn": [
     {
-      "prompt": "Pick the right form and type the whole sentence (to a friend): *¿No crees que (es / sea) un poco tarde?*",
+      "prompt": "Pick the right form and type the whole sentence (to a friend): *¿No crees que ___ un poco tarde?* (*es* or *sea*)",
       "answer": "¿No crees que es un poco tarde?",
       "accept": [],
       "why": "You are stating what you believe, so the indicative *es* follows the question."
     },
     {
-      "prompt": "Pick the right form and type the whole sentence: *No creo que (es / sea) un poco tarde.*",
+      "prompt": "Pick the right form and type the whole sentence: *No creo que ___ un poco tarde.* (*es* or *sea*)",
       "answer": "No creo que sea un poco tarde.",
       "accept": [],
       "why": "A plain statement of doubt takes the subjunctive *sea*."

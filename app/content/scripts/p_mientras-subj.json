@@ -118,13 +118,13 @@
   ],
   "yourTurn": [
     {
-      "prompt": "Pick the right verb and type the whole sentence (as long as): *Mientras (hay / haya) trabajo, me quedo.*",
+      "prompt": "Pick the right verb and type the whole sentence (as long as): *Mientras ___ trabajo, me quedo.* (*hay* or *haya*)",
       "answer": "Mientras haya trabajo, me quedo.",
       "accept": [],
       "why": "\"As long as\" is a condition, so the verb goes in the subjunctive: *haya*."
     },
     {
-      "prompt": "Pick the right verb and type the whole sentence (while, at the same time): *Mientras Vale (cocina / cocine), Tomás atiende.*",
+      "prompt": "Pick the right verb and type the whole sentence (while, at the same time): *Mientras Vale ___, Tomás atiende.* (*cocina* or *cocine*)",
       "answer": "Mientras Vale cocina, Tomás atiende.",
       "accept": [],
       "why": "Two things happening together are facts, so the indicative *cocina* fits."
@@ -141,7 +141,7 @@
       "prompt": "Type it in Spanish (to a friend): You can use the car as long as you look after it.",
       "answer": "Puedes usar el carro mientras lo cuides.",
       "accept": [
-        "Puedes usar el carro mientras lo cuides."
+        "Mientras lo cuides, puedes usar el carro."
       ],
       "why": "*Cuidar* is an *-ar* verb, so *tú* takes *cuides*."
     },

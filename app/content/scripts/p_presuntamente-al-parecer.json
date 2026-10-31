@@ -6,38 +6,180 @@
     "en": "Apparently the fire started in the kitchen."
   },
   "examples": [
-    { "es": "Según fuentes de la Fiscalía, el concejal habría recibido dinero.", "en": "According to sources in the Prosecutor's Office, the councillor allegedly received money." },
-    { "es": "Al parecer, el incendio empezó en la cocina.", "en": "Apparently the fire started in the kitchen." },
-    { "es": "El sospechoso presuntamente robó tres celulares.", "en": "The suspect allegedly stole three mobile phones." },
-    { "es": "Según fuentes cercanas a la familia, el concejal estaría en Panamá.", "en": "According to sources close to the family, the councillor is reportedly in Panama." },
-    { "es": "Al parecer, Altamira no tiene todos los permisos.", "en": "Apparently Altamira doesn't have all the permits." },
-    { "es": "Los dueños presuntamente ocultaron los documentos.", "en": "The owners allegedly hid the documents." }
+    {
+      "es": "Según fuentes de la Fiscalía, el concejal habría recibido dinero.",
+      "en": "According to sources in the Prosecutor's Office, the councillor allegedly received money."
+    },
+    {
+      "es": "Al parecer, el incendio empezó en la cocina.",
+      "en": "Apparently the fire started in the kitchen."
+    },
+    {
+      "es": "El sospechoso presuntamente robó tres celulares.",
+      "en": "The suspect allegedly stole three phones."
+    },
+    {
+      "es": "Según fuentes cercanas a la familia, el concejal estaría en Panamá.",
+      "en": "According to sources close to the family, the councillor is reportedly in Panama."
+    },
+    {
+      "es": "Al parecer, Altamira no tiene todos los permisos.",
+      "en": "Apparently Altamira doesn't have all the permits."
+    },
+    {
+      "es": "Los dueños presuntamente ocultaron los documentos.",
+      "en": "The owners allegedly hid the documents."
+    }
   ],
   "rule": "Three ways to say \"reported, not proven\":\n*presuntamente*: allegedly. It is for accusations, and it sits next to the verb, which stays in the plain past.\n*al parecer*: apparently. It opens the sentence, and the verb is normal.\n*según fuentes de...*: according to sources at... It pairs with the conditional you just met: *habría recibido*.\n\nYou do not need to stack them. One signal per sentence is enough.",
   "smallPrint": "Teachers call these hedges, or *marcadores de distanciamiento*: words that put distance between the writer and the claim.",
   "readAndPick": [
-    { "es": "El sospechoso presuntamente robó tres celulares.", "options": ["The suspect allegedly stole three phones.", "The suspect stole three phones, and everybody knows.", "The suspect denies stealing three phones."], "answer": 0 },
-    { "es": "Al parecer, el incendio empezó en la cocina.", "options": ["The fire started in the kitchen, as everyone saw.", "Apparently the fire started in the kitchen.", "The fire may start in the kitchen."], "answer": 1 },
-    { "es": "Según fuentes de la Fiscalía, el concejal habría recibido dinero.", "options": ["The prosecutor says the councillor will receive money.", "The councillor paid money to the prosecutor.", "According to sources in the Prosecutor's Office, the councillor allegedly received money."], "answer": 2 },
-    { "es": "Al parecer, Altamira no tiene todos los permisos.", "options": ["Altamira has no permits at all.", "Apparently Altamira does not have all the permits.", "Altamira will never have the permits."], "answer": 1 },
-    { "es": "Presuntamente, los dueños ocultaron los documentos.", "options": ["The owners hide the documents.", "The owners are going to hide the documents.", "The owners allegedly hid the documents."], "answer": 2 },
-    { "es": "Según fuentes cercanas a la familia, el concejal estaría en Panamá.", "options": ["The councillor was in Panama.", "The councillor is reportedly in Panama.", "The councillor will go to Panama."], "answer": 1 },
-    { "es": "El concejal recibió dinero.", "options": ["The councillor received money (stated as fact).", "The councillor allegedly received money.", "The councillor apparently receives money."], "answer": 0 },
-    { "es": "Al parecer, Vale ganó el concurso.", "options": ["Vale won the contest, it is official.", "Vale should win the contest.", "Apparently Vale won the contest."], "answer": 2 }
+    {
+      "es": "El sospechoso presuntamente robó tres celulares.",
+      "options": [
+        "The suspect allegedly stole three phones.",
+        "The suspect stole three phones, and everybody knows.",
+        "The suspect denies stealing three phones."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Al parecer, el incendio empezó en la cocina.",
+      "options": [
+        "The fire started in the kitchen, as everyone saw.",
+        "Apparently the fire started in the kitchen.",
+        "The fire may start in the kitchen."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Según fuentes de la Fiscalía, el concejal habría recibido dinero.",
+      "options": [
+        "The prosecutor says the councillor will receive money.",
+        "The councillor paid money to the prosecutor.",
+        "According to sources in the Prosecutor's Office, the councillor allegedly received money."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Al parecer, Altamira no tiene todos los permisos.",
+      "options": [
+        "Altamira has no permits at all.",
+        "Apparently Altamira does not have all the permits.",
+        "Altamira will never have the permits."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Presuntamente, los dueños ocultaron los documentos.",
+      "options": [
+        "The owners hide the documents.",
+        "The owners are going to hide the documents.",
+        "The owners allegedly hid the documents."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Según fuentes cercanas a la familia, el concejal estaría en Panamá.",
+      "options": [
+        "The councillor was in Panama.",
+        "The councillor is reportedly in Panama.",
+        "The councillor will go to Panama."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El concejal recibió dinero.",
+      "options": [
+        "The councillor received money (stated as fact).",
+        "The councillor allegedly received money.",
+        "The councillor apparently receives money."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Al parecer, Vale ganó el concurso.",
+      "options": [
+        "Vale won the contest, it is official.",
+        "Vale should win the contest.",
+        "Apparently Vale won the contest."
+      ],
+      "answer": 2
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick and type the whole sentence: *El sospechoso ___ robó tres celulares.* (*presuntamente* or *realmente*) The suspect allegedly stole three phones.", "answer": "El sospechoso presuntamente robó tres celulares.", "accept": [], "why": "\"Allegedly\" in a crime story is *presuntamente*." },
-    { "prompt": "Pick and type the whole sentence: *___, el incendio empezó en la cocina.* (*Al parecer* or *Por supuesto*) Apparently the fire started in the kitchen.", "answer": "Al parecer, el incendio empezó en la cocina.", "accept": ["Al parecer el incendio empezó en la cocina."], "why": "*Al parecer* means \"apparently\", while *por supuesto* means \"of course\"." },
-    { "prompt": "Say: According to sources in the Prosecutor's Office, the councillor allegedly received money.", "answer": "Según fuentes de la Fiscalía, el concejal habría recibido dinero.", "accept": ["Según fuentes de la Fiscalía el concejal habría recibido dinero."], "why": "*Según fuentes de...* goes with the conditional perfect for the past." },
-    { "prompt": "Say: Apparently Altamira doesn't have all the permits.", "answer": "Al parecer, Altamira no tiene todos los permisos.", "accept": ["Al parecer Altamira no tiene todos los permisos."], "why": "*Al parecer* is followed by a normal verb." },
-    { "prompt": "Say: The owners allegedly hid the documents.", "answer": "Los dueños presuntamente ocultaron los documentos.", "accept": ["Presuntamente, los dueños ocultaron los documentos.", "Presuntamente los dueños ocultaron los documentos."], "why": "*Presuntamente* can sit before the verb or at the start of the sentence." },
-    { "prompt": "Make it a rumour with *al parecer*: *Vale ganó el concurso.*", "answer": "Al parecer, Vale ganó el concurso.", "accept": ["Al parecer Vale ganó el concurso."], "why": "Add *al parecer* in front and keep the verb as it was." },
-    { "prompt": "Rewrite with *según fuentes cercanas a la familia* and the conditional: *El concejal está en Panamá.*", "answer": "Según fuentes cercanas a la familia, el concejal estaría en Panamá.", "accept": ["Según fuentes cercanas a la familia el concejal estaría en Panamá."], "why": "The source plus *estaría* reports where he is without promising it." }
+    {
+      "prompt": "Pick and type the whole sentence: *El sospechoso ___ robó tres celulares.* (*presuntamente* or *realmente*) The suspect allegedly stole three phones.",
+      "answer": "El sospechoso presuntamente robó tres celulares.",
+      "accept": [],
+      "why": "\"Allegedly\" in a crime story is *presuntamente*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *___, el incendio empezó en la cocina.* (*Al parecer* or *Por supuesto*) Apparently the fire started in the kitchen.",
+      "answer": "Al parecer, el incendio empezó en la cocina.",
+      "accept": [
+        "Al parecer el incendio empezó en la cocina."
+      ],
+      "why": "*Al parecer* means \"apparently\", while *por supuesto* means \"of course\"."
+    },
+    {
+      "prompt": "Say: According to sources in the Prosecutor's Office, the councillor allegedly received money.",
+      "answer": "Según fuentes de la Fiscalía, el concejal habría recibido dinero.",
+      "accept": [
+        "Según fuentes de la Fiscalía el concejal habría recibido dinero."
+      ],
+      "why": "*Según fuentes de...* goes with the conditional perfect for the past."
+    },
+    {
+      "prompt": "Say: Apparently Altamira doesn't have all the permits.",
+      "answer": "Al parecer, Altamira no tiene todos los permisos.",
+      "accept": [
+        "Al parecer Altamira no tiene todos los permisos."
+      ],
+      "why": "*Al parecer* is followed by a normal verb."
+    },
+    {
+      "prompt": "Say: The owners allegedly hid the documents.",
+      "answer": "Los dueños presuntamente ocultaron los documentos.",
+      "accept": [
+        "Presuntamente, los dueños ocultaron los documentos.",
+        "Presuntamente los dueños ocultaron los documentos."
+      ],
+      "why": "*Presuntamente* can sit before the verb or at the start of the sentence."
+    },
+    {
+      "prompt": "Make it a rumour with *al parecer*: *Vale ganó el concurso.*",
+      "answer": "Al parecer, Vale ganó el concurso.",
+      "accept": [
+        "Al parecer Vale ganó el concurso."
+      ],
+      "why": "Add *al parecer* in front and keep the verb as it was."
+    },
+    {
+      "prompt": "Rewrite with *según fuentes cercanas a la familia* and the conditional: *El concejal está en Panamá.*",
+      "answer": "Según fuentes cercanas a la familia, el concejal estaría en Panamá.",
+      "accept": [
+        "Según fuentes cercanas a la familia el concejal estaría en Panamá."
+      ],
+      "why": "The source plus *estaría* reports where he is without promising it."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Presuntamente, mi hermano llega tarde.", "right": "Al parecer, mi hermano llega tarde.", "why": "Almost. *Presuntamente* is for accusations, so for everyday \"apparently\" use *al parecer*." },
-    { "wrong": "Según fuentes de la Fiscalía, el concejal recibió dinero.", "right": "Según fuentes de la Fiscalía, el concejal habría recibido dinero.", "why": "The plain past makes the paper vouch for it, while the conditional keeps its distance." },
-    { "wrong": "Al parecer que el incendio empezó en la cocina.", "right": "Al parecer, el incendio empezó en la cocina.", "why": "No *que* after *al parecer*, which works like the English \"apparently\"." }
+    {
+      "wrong": "Presuntamente, mi hermano llega tarde.",
+      "right": "Al parecer, mi hermano llega tarde.",
+      "why": "Almost. *Presuntamente* is for accusations, so for everyday \"apparently\" use *al parecer*."
+    },
+    {
+      "wrong": "Según fuentes de la Fiscalía, el concejal recibió dinero.",
+      "right": "Según fuentes de la Fiscalía, el concejal habría recibido dinero.",
+      "why": "The plain past makes the paper vouch for it, while the conditional keeps its distance."
+    },
+    {
+      "wrong": "Al parecer que el incendio empezó en la cocina.",
+      "right": "Al parecer, el incendio empezó en la cocina.",
+      "why": "No *que* after *al parecer*, which works like the English \"apparently\"."
+    }
   ],
   "personal": "Write two lines of local news about something that is only reported, not proven: one with *al parecer* and one with *según fuentes de...*."
 }

@@ -31,7 +31,7 @@
       "en": "What do we have to bear in mind?"
     }
   ],
-  "rule": "*Hay que tener en cuenta* flags something that must weigh on the decision. It is not an aside: it is a real limit on the conclusion.\n\nAfter it comes either a thing or a full sentence with *que*: *hay que tener en cuenta el tráfico*, *hay que tener en cuenta que el presupuesto es limitado*. The verb after *que* is in the ordinary indicative.\n\n*Hay que* has no subject, like English \"one has to\". Add *no* in front and it means \"there's no need to\": *no hay que tener en cuenta los rumores*.",
+  "rule": "*Hay que tener en cuenta* flags something that must weigh on the decision. It is not an aside: it is a real limit on the conclusion.\n\nAfter it comes either a thing or a full sentence with *que*: *hay que tener en cuenta el tráfico*, *hay que tener en cuenta que el presupuesto es limitado*. The verb after *que* is in the ordinary indicative.\n\n*Hay que* has no subject, like English \"one has to\". Add *no* in front and it means \"we shouldn't\": *no hay que tener en cuenta los rumores*.",
   "smallPrint": "Teachers call *hay que* an impersonal obligation. The frame is neutral to formal, so it suits reports and meetings.",
   "readAndPick": [
     {
@@ -118,13 +118,13 @@
   ],
   "yourTurn": [
     {
-      "prompt": "Pick the right word and type the whole sentence: *Hay que tener (en cuenta / a cuenta) el tráfico.*",
+      "prompt": "Pick the right words and type the whole sentence: *Hay que tener ___ el tráfico.* (*en cuenta* or *a cuenta*)",
       "answer": "Hay que tener en cuenta el tráfico.",
       "accept": [],
       "why": "The fixed phrase is *tener en cuenta*, \"to take into account\"."
     },
     {
-      "prompt": "Pick the right word and type the whole sentence: *Hay que tener en cuenta (el / que el) presupuesto es limitado.*",
+      "prompt": "Pick the right words and type the whole sentence: *Hay que tener en cuenta ___ presupuesto es limitado.* (*el* or *que el*)",
       "answer": "Hay que tener en cuenta que el presupuesto es limitado.",
       "accept": [],
       "why": "A full sentence needs *que* in front of it; a plain thing does not."

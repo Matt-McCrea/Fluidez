@@ -16,11 +16,11 @@
     },
     {
       "es": "¿Dónde habré dejado las llaves?",
-      "en": "Where can I have left my keys?"
+      "en": "Where could I have left my keys?"
     },
     {
       "es": "Mariana no ha llegado. Se habrá perdido.",
-      "en": "Mariana hasn't arrived. She must have got lost."
+      "en": "Mariana hasn't arrived. She must have gotten lost."
     },
     {
       "es": "Ya habrás leído el mensaje.",
@@ -28,14 +28,14 @@
     },
     {
       "es": "¿Quién habrá dejado esta taza aquí?",
-      "en": "Who can have left this cup here?"
+      "en": "Who could have left this cup here?"
     },
     {
       "es": "Para el viernes ya habremos terminado.",
       "en": "By Friday we'll have finished."
     }
   ],
-  "rule": "You already know how to guess about now: *Estará en casa* (he's probably home). To guess about something that already happened, add a second piece: the future of *haber* plus the *-ado* or *-ido* word.\n\n*habré*, *habrás*, *habrá*, *habremos*, *habrán* + *dormido*, *llegado*, *dejado*\n\n*Se ha dormido* is a fact: he has fallen asleep. *Se habrá dormido* is your guess: he must have fallen asleep. English says \"must have\", \"will have\" or \"can have\". Spanish just changes *ha* to *habrá*.\n\nThe ending word never changes (*habrán llegado*, never *llegados*), and nothing goes between the two pieces. Put *ya* before them.\n\nThe same form also looks ahead to a deadline: *Para el viernes habremos terminado* (by Friday we'll have finished).",
+  "rule": "You already know how to guess about now: *Estará en casa* (he's probably home). To guess about something that already happened, add a second piece: the future of *haber* plus the *-ado* or *-ido* word.\n\n*habré*, *habrás*, *habrá*, *habremos*, *habrán* + *dormido*, *llegado*, *dejado*\n\n*Se ha dormido* is a fact: he has fallen asleep. *Se habrá dormido* is your guess: he must have fallen asleep. English says \"must have\", \"will have\" or \"can have\". Spanish just changes *ha* to *habrá*.\n\nThe ending word never changes (*habrán llegado*, never *llegados*), and nothing goes between the two pieces: *ya* sits before or after the pair, never inside it.\n\nThe same form also looks ahead to a deadline: *Para el viernes habremos terminado* (by Friday we'll have finished).",
   "smallPrint": "Teachers call this the future perfect (*futuro perfecto*): when it guesses about the past, it is the future perfect of probability.",
   "readAndPick": [
     {
@@ -77,7 +77,7 @@
       "options": [
         "Where did you leave the phone?",
         "Where will I leave the phone?",
-        "Where can I have left my phone?"
+        "Where could I have left my phone?"
       ],
       "answer": 2
     },
@@ -137,7 +137,7 @@
       "why": "*Must have* is a guess, so the form is *habrán*; *ya* goes before or after the pair, never inside it."
     },
     {
-      "prompt": "Type in Spanish: Where can I have left my keys?",
+      "prompt": "Type in Spanish: Where could I have left my keys?",
       "answer": "¿Dónde habré dejado las llaves?",
       "accept": [
         "¿Dónde habré dejado mis llaves?"
@@ -156,7 +156,7 @@
       "prompt": "Type in Spanish, to a friend: You must have read the message by now.",
       "answer": "Ya habrás leído el mensaje.",
       "accept": [
-        "habrás leído ya el mensaje.",
+        "Habrás leído ya el mensaje.",
         "Habrás leído el mensaje ya."
       ],
       "why": "To a friend the form is *habrás*."
@@ -172,13 +172,11 @@
     {
       "prompt": "Make it about we: We must have made a mistake.",
       "answer": "Nos habremos equivocado.",
-      "accept": [
-        "Nos habremos equivocado."
-      ],
+      "accept": [],
       "why": "*We* is *habremos*, and *nos* comes before it."
     },
     {
-      "prompt": "Type in Spanish: Who can have left this cup here?",
+      "prompt": "Type in Spanish: Who could have left this cup here?",
       "answer": "¿Quién habrá dejado esta taza aquí?",
       "accept": [
         "¿Quién habrá dejado aquí esta taza?"

@@ -118,13 +118,13 @@
   ],
   "yourTurn": [
     {
-      "prompt": "Pick the right form and type the whole sentence: *Sus declaraciones (provocó / provocaron) una gran polémica.*",
+      "prompt": "Pick the right form and type the whole sentence: *Sus declaraciones ___ una gran polémica.* (*provocó* or *provocaron*)",
       "answer": "Sus declaraciones provocaron una gran polémica.",
       "accept": [],
       "why": "The verb matches the cause, and *declaraciones* is plural."
     },
     {
-      "prompt": "Pick the right word and type the whole sentence: *El incendio fue provocado (por / de) un cigarrillo.*",
+      "prompt": "Pick the right word and type the whole sentence: *El incendio fue provocado ___ un cigarrillo.* (*por* or *de*)",
       "answer": "El incendio fue provocado por un cigarrillo.",
       "accept": [],
       "why": "\"Caused by\" takes *por*."

@@ -126,9 +126,7 @@
     {
       "prompt": "Type in Spanish, to a friend: You have no idea how old don Hernando is.",
       "answer": "No tienes ni idea de cuántos años tiene don Hernando.",
-      "accept": [
-        "No tienes ni idea de cuántos años tiene don Hernando."
-      ],
+      "accept": [],
       "why": "To a friend, *tener* becomes *tienes*."
     },
     {
@@ -140,7 +138,7 @@
       "why": "For *we*, *tenemos*; *quién* is who."
     },
     {
-      "prompt": "Say it in the past: *No tengo ni idea de dónde está.* (We had no idea where it was.)",
+      "prompt": "Put it in the past: *No tenemos ni idea de dónde está.* (We had no idea where it was.)",
       "answer": "No teníamos ni idea de dónde estaba.",
       "accept": [],
       "why": "Past and plural: *teníamos* and *estaba*."
@@ -169,7 +167,7 @@
     {
       "wrong": "Tengo ni idea de qué hacer.",
       "right": "No tengo ni idea de qué hacer.",
-      "why": "*Ni idea* needs *no* before the verb, just like English \"no idea\"."
+      "why": "Spanish needs *no* before the verb as well as *ni*: two negatives, one meaning."
     },
     {
       "wrong": "No tenía ni idea de que estás aquí.",
