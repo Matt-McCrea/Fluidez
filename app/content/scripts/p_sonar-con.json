@@ -6,54 +6,104 @@
     "en": "I dream of having my own boat."
   },
   "examples": [
-    { "es": "Sueño con vivir junto al mar.", "en": "I dream of living by the sea." },
-    { "es": "Mi sueño es tener una finca.", "en": "My dream is to have a farm." },
-    { "es": "Yesid sueña con tener su propio barco.", "en": "Yesid dreams of having his own boat." },
-    { "es": "Soñaba con una casa grande.", "en": "I used to dream of a big house." },
-    { "es": "Mariana sueña con escribir un libro.", "en": "Mariana dreams of writing a book." },
-    { "es": "¿Con qué sueñas?", "en": "What do you dream of? (to a friend)" }
+    {
+      "es": "Sueño con vivir junto al mar.",
+      "en": "I dream of living by the sea."
+    },
+    {
+      "es": "Mi sueño es tener una finca.",
+      "en": "My dream is to have a farm."
+    },
+    {
+      "es": "Yesid sueña con tener su propio barco.",
+      "en": "Yesid dreams of having his own boat."
+    },
+    {
+      "es": "Soñaba con una casa grande.",
+      "en": "I used to dream of a big house."
+    },
+    {
+      "es": "Mariana sueña con escribir un libro.",
+      "en": "Mariana dreams of writing a book."
+    },
+    {
+      "es": "¿Con qué sueñas?",
+      "en": "What do you dream of? (to a friend)"
+    }
   ],
   "rule": "To say what you dream of, use *soñar con*, and always *con*: *sueño con vivir junto al mar*. English says *dream of*, but *de* is wrong here.\n\nAfter *con* comes a verb in the infinitive or a noun: *sueño con viajar*, *sueño con una casa*.\n\n*Soñar* changes its vowel like *poder*: *sueño*, *sueñas*, *sueña*, *soñamos*, *sueñan*.\n\nThe other way: *mi sueño es* + infinitive. *Mi sueño es abrir otro café.*\n\nBoth work for night dreams too: *Anoche soñé con Rosa.*",
   "smallPrint": "Teachers call this a verb with a fixed preposition (*verbo preposicional*): *soñar* always comes with *con*.",
   "readAndPick": [
     {
       "es": "Sueño con vivir junto al mar.",
-      "options": ["I dream of living by the sea.", "I lived by the sea.", "I'm living by the sea."],
+      "options": [
+        "I dream of living by the sea.",
+        "I lived by the sea.",
+        "I'm living by the sea."
+      ],
       "answer": 0
     },
     {
       "es": "Mi sueño es tener una finca.",
-      "options": ["I have a farm.", "My dream is to have a farm.", "My dream was a farm."],
+      "options": [
+        "I have a farm.",
+        "My dream is to have a farm.",
+        "My dream was a farm."
+      ],
       "answer": 1
     },
     {
       "es": "Yesid sueña con tener su propio barco.",
-      "options": ["I dream of having my own boat.", "Yesid dreams of having his own boat.", "Yesid had his own boat."],
+      "options": [
+        "I dream of having my own boat.",
+        "Yesid dreams of having his own boat.",
+        "Yesid had his own boat."
+      ],
       "answer": 1
     },
     {
       "es": "Soñaba con una casa grande.",
-      "options": ["I used to dream of a big house.", "I dream of a big house.", "I'll dream of a big house."],
+      "options": [
+        "I used to dream of a big house.",
+        "I dream of a big house.",
+        "I'll dream of a big house."
+      ],
       "answer": 0
     },
     {
       "es": "¿Con qué sueñas?",
-      "options": ["What do you dream of? (to a friend)", "What do you all dream of?", "Who do you dream of?"],
+      "options": [
+        "What do you dream of? (to a friend)",
+        "What do you all dream of?",
+        "Who do you dream of?"
+      ],
       "answer": 0
     },
     {
       "es": "Soñamos con volver a Santa Marta.",
-      "options": ["They dream of going back to Santa Marta.", "We dream of going back to Santa Marta.", "I dream of going back to Santa Marta."],
+      "options": [
+        "They dream of going back to Santa Marta.",
+        "We dream of going back to Santa Marta.",
+        "I dream of going back to Santa Marta."
+      ],
       "answer": 1
     },
     {
       "es": "Mariana sueña con escribir un libro.",
-      "options": ["Mariana dreams of writing a book.", "Mariana wrote a book.", "Mariana is writing a book."],
+      "options": [
+        "Mariana dreams of writing a book.",
+        "Mariana wrote a book.",
+        "Mariana is writing a book."
+      ],
       "answer": 0
     },
     {
       "es": "Anoche soñé con la playa.",
-      "options": ["Last night I dreamed about the beach.", "Last night I went to the beach.", "Last night I dream of the beach."],
+      "options": [
+        "Last night I dreamed about the beach.",
+        "Last night I went to the beach.",
+        "Tonight I'll dream about the beach."
+      ],
       "answer": 0
     }
   ],
@@ -67,7 +117,9 @@
     {
       "prompt": "Pick *sueño* or *soño* and type the whole sentence: *Yo ___ con tener un barco.* (I dream of having a boat.)",
       "answer": "Yo sueño con tener un barco.",
-      "accept": ["Sueño con tener un barco."],
+      "accept": [
+        "Sueño con tener un barco."
+      ],
       "why": "The vowel changes in the *yo* form: *o* becomes *ue*."
     },
     {

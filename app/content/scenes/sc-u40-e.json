@@ -8,7 +8,7 @@
     {
       "id": "t1",
       "npc": "Hernando: Buenas noches, Tomás. ¿Llegaron bien? Simón pregunta por ustedes, grita sus nombres todo el día.",
-      "npcEn": "Hernando: Good evening, Tomás. Did you arrive well? Simón asks for you all, he shouts your names all day.",
+      "npcEn": "Hernando: Good evening, Tomás. Did you all get there safely? Simón asks about you all, he shouts your names all day.",
       "intent": "Say yes, you arrived well, and ask how Simón is.",
       "accept": [
         "Sí, llegamos bien, Don Hernando. ¿Cómo está Simón?",

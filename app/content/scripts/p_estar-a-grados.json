@@ -6,54 +6,103 @@
     "en": "It's thirty degrees today."
   },
   "examples": [
-    { "es": "Hoy estamos a treinta grados.", "en": "It's thirty degrees today." },
-    { "es": "En Santa Marta estamos a treinta y cinco grados.", "en": "It's thirty five degrees in Santa Marta." },
-    { "es": "En Bogotá estamos a catorce grados.", "en": "It's fourteen degrees in Bogotá." },
-    { "es": "¿A cuántos grados estamos?", "en": "What's the temperature? (literally: how many degrees are we at?)" },
-    { "es": "Anoche estuvimos a dos grados bajo cero.", "en": "Last night it was two degrees below zero." },
-    { "es": "Hoy hace treinta grados.", "en": "It's thirty degrees today." }
+    {
+      "es": "Hoy estamos a treinta grados.",
+      "en": "It's thirty degrees today."
+    },
+    {
+      "es": "En Santa Marta estamos a treinta y cinco grados.",
+      "en": "It's thirty five degrees in Santa Marta."
+    },
+    {
+      "es": "En Bogotá estamos a catorce grados.",
+      "en": "It's fourteen degrees in Bogotá."
+    },
+    {
+      "es": "¿A cuántos grados estamos?",
+      "en": "What's the temperature? (literally: how many degrees are we at?)"
+    },
+    {
+      "es": "Anoche estuvimos a dos grados bajo cero.",
+      "en": "Last night it was two degrees below zero."
+    },
+    {
+      "es": "Hoy hace treinta grados.",
+      "en": "It's thirty degrees today."
+    }
   ],
   "rule": "To give the temperature, say *estamos a* plus the number and *grados*: *estamos a treinta grados*. Think of it as where you are on the thermometer, the same *a* as in prices.\n\nTo ask, *¿A cuántos grados estamos?*\n\nBelow zero is *bajo cero*: *a dos grados bajo cero*.\n\n*Hace treinta grados* works too, and is just as common. English says *it's thirty degrees*, but Spanish does not use *es* or *tiene* for weather: not *es treinta grados*.",
   "smallPrint": "Grammars file this under *estar a* for changing measures: temperature, prices, distances. It uses the same *a* frame.",
   "readAndPick": [
     {
       "es": "Hoy estamos a treinta grados.",
-      "options": ["It's thirty degrees today.", "We are thirty today.", "There are thirty degrees."],
+      "options": [
+        "It's thirty degrees today.",
+        "We are thirty today.",
+        "There are thirty degrees."
+      ],
       "answer": 0
     },
     {
       "es": "En Bogotá estamos a catorce grados.",
-      "options": ["It's fourteen degrees in Bogotá.", "Bogotá is fourteen kilometres away.", "I'm fourteen in Bogotá."],
+      "options": [
+        "It's fourteen degrees in Bogotá.",
+        "Bogotá is fourteen kilometres away.",
+        "I'm fourteen in Bogotá."
+      ],
       "answer": 0
     },
     {
       "es": "¿A cuántos grados estamos?",
-      "options": ["How old are we?", "What's the temperature?", "How far are we?"],
+      "options": [
+        "How old are we?",
+        "What's the temperature?",
+        "How far are we?"
+      ],
       "answer": 1
     },
     {
       "es": "Anoche estuvimos a dos grados bajo cero.",
-      "options": ["Last night it was two degrees above zero.", "Last night it was two degrees below zero.", "Tonight it will be two degrees below zero."],
+      "options": [
+        "Last night it was two degrees above zero.",
+        "Last night it was two degrees below zero.",
+        "Tonight it will be two degrees below zero."
+      ],
       "answer": 1
     },
     {
       "es": "Hoy hace treinta grados.",
-      "options": ["It's thirty degrees today.", "I did thirty degrees today."],
+      "options": [
+        "It's thirty degrees today.",
+        "I did thirty degrees today."
+      ],
       "answer": 0
     },
     {
       "es": "Estamos a cero grados.",
-      "options": ["It's zero degrees.", "It's ten degrees.", "It's below zero."],
+      "options": [
+        "It's zero degrees.",
+        "It's ten degrees.",
+        "It's below zero."
+      ],
       "answer": 0
     },
     {
       "es": "En Santa Marta estamos a treinta y cinco grados.",
-      "options": ["It's thirty degrees in Santa Marta.", "It's thirty five degrees in Santa Marta.", "It's fifteen degrees in Santa Marta."],
+      "options": [
+        "It's thirty degrees in Santa Marta.",
+        "It's thirty five degrees in Santa Marta.",
+        "It's fifteen degrees in Santa Marta."
+      ],
       "answer": 1
     },
     {
       "es": "Esta mañana estábamos a veintiocho grados.",
-      "options": ["This morning it was twenty eight degrees.", "This morning it's twenty eight degrees.", "Tomorrow morning it will be twenty eight degrees."],
+      "options": [
+        "This morning it was twenty eight degrees.",
+        "This morning it's twenty eight degrees.",
+        "Tomorrow morning it will be twenty eight degrees."
+      ],
       "answer": 0
     }
   ],
@@ -73,19 +122,26 @@
     {
       "prompt": "Type in Spanish: It's thirty five degrees in Santa Marta.",
       "answer": "En Santa Marta estamos a treinta y cinco grados.",
-      "accept": ["En Santa Marta hace treinta y cinco grados."],
+      "accept": [
+        "En Santa Marta hace treinta y cinco grados.",
+        "Estamos a treinta y cinco grados en Santa Marta."
+      ],
       "why": "*Estamos a* or *hace* plus the number and *grados*."
     },
     {
       "prompt": "Type in Spanish: What's the temperature today? (literally: how many degrees are we at?)",
       "answer": "¿A cuántos grados estamos hoy?",
-      "accept": ["¿A cuántos grados estamos?"],
+      "accept": [
+        "¿A cuántos grados estamos?"
+      ],
       "why": "*A cuántos grados* keeps the *a* from the answer."
     },
     {
       "prompt": "Type in Spanish: Last night it was two degrees below zero.",
       "answer": "Anoche estuvimos a dos grados bajo cero.",
-      "accept": ["Anoche estábamos a dos grados bajo cero."],
+      "accept": [
+        "Anoche estábamos a dos grados bajo cero."
+      ],
       "why": "*Bajo cero* means below zero, and the *a* stays in front of the number."
     },
     {
@@ -97,7 +153,9 @@
     {
       "prompt": "Make it past, for this morning: *Hoy estamos a veinte grados.*",
       "answer": "Esta mañana estábamos a veinte grados.",
-      "accept": ["Esta mañana estuvimos a veinte grados."],
+      "accept": [
+        "Esta mañana estuvimos a veinte grados."
+      ],
       "why": "The same frame, just *estábamos* in the past."
     }
   ],
@@ -113,9 +171,9 @@
       "why": "Don't drop the *a*: it is the little word that points at the number."
     },
     {
-      "wrong": "Hoy tengo treinta grados.",
-      "right": "Hoy estamos a treinta grados.",
-      "why": "*Tengo* is for you (*tengo calor*); the weather's temperature uses *estamos a*."
+      "wrong": "Hoy hace a treinta grados.",
+      "right": "Hoy hace treinta grados.",
+      "why": "That mixes the two frames: the *a* goes with *estamos*, not with *hace*."
     }
   ],
   "personal": "Say the temperature where you are right now, or in your favourite city: *Hoy estamos a…* or *Hoy hace…*."

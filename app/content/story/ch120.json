@@ -2,7 +2,7 @@
   "id": "ch120",
   "unit": "u40",
   "title": "Viento del noroeste",
-  "text": "El mosquito llegó antes que el sol. A las cinco, Tomás tenía once picaduras en un brazo.\nTomás: En Toronto, los mosquitos por lo menos esperan el verano.\nVale: Y en la ducha hay una araña del tamaño de tu mano. Ella tiene más miedo que tú.\nA las seis, la arena estaba fría, y los pescadores volvían con las redes llenas.\nYesid: Mi abuelo era pescador. Cuando llegó de Bogotá, no sabía ni nadar.\nMariana: ¿Y por qué se quedó aquí?\nYesid: Decía que el Caribe no hace preguntas.\nUna ola grande llegó hasta los pies de Tomás, y él saltó como un gato.\nYesid: Hoy el viento viene del noroeste, y con viento del noroeste cada ola es una pared. Mañana viene del suroeste.\nYesid abrió un coco con un cuchillo y se lo dio a Vale.\nYesid: Este coco viene de esa palmera. Decía que una palmera es como la gente de la costa: el viento la dobla, pero no la rompe.\nTomás tocó la palmera. Era la primera cosa de Joaquín que tocaba.\nYesid: Aquí, en la arena, las tortugas ponen sus huevos. Mi abuelo cuidaba las tortugas de noche, con una linterna.\nLa humedad era terrible.\nMariana: Con esta humedad, hasta mis ideas están cansadas.\nYesid: Cuando mi abuelo extrañaba Bogotá, subía a la sierra, donde hay niebla y pinos. Se sentaba debajo de un pino, en la niebla, y no hablaba con nadie.\nHernando llamó por video, con Simón.\nHernando: ¿Y qué tal el Caribe? Yo lo conocí en 1972, y no me gustó. Mucha agua.\nSimón: ¡Hoteles Altamira, a la orden!\nYesid: ¿Ese loro trabaja para Altamira?\nHernando: No, mijo. Ese loro trabaja para el que le dé comida.\nYesid: Hace dos años vino un señor de Bogotá, de camisa blanca. Preguntó por mi abuelo como si estuviera vivo, y quería una copia de la cédula.\nMariana: ¿Y se la dieron?\nYesid: Mi abuela no. Mi tío sí, por cien mil pesos.\nYesid: Mañana, con viento del suroeste, los llevo al lugar favorito de mi abuelo. Allá les digo el nombre del señor.",
+  "text": "El mosquito llegó antes que el sol. A las cinco, Tomás tenía once picaduras en un brazo.\nTomás: En Toronto, los mosquitos por lo menos esperan el verano.\nVale: Y en la ducha hay una araña del tamaño de tu mano. Esa araña tiene más miedo que tú.\nA las seis, la arena estaba fría, y los pescadores volvían con las redes llenas.\nYesid: Mi abuelo era pescador. Cuando llegó de Bogotá, no sabía ni nadar.\nMariana: ¿Y por qué se quedó aquí?\nYesid: Decía que el Caribe no hace preguntas.\nUna ola grande llegó hasta los pies de Tomás, y él saltó como un gato.\nYesid: Hoy el viento viene del noroeste, y con viento del noroeste cada ola es una pared. Mañana viene del suroeste.\nYesid abrió un coco con un cuchillo y se lo dio a Vale.\nYesid: Este coco viene de esa palmera. Mi abuelo decía que una palmera es como la gente de la costa: el viento la dobla, pero no la rompe.\nTomás tocó la palmera. Era la primera cosa de Joaquín que tocaba.\nYesid: Aquí, en la arena, las tortugas ponen sus huevos. Mi abuelo cuidaba las tortugas de noche, con una linterna.\nLa humedad era terrible.\nMariana: Con esta humedad, hasta mis ideas están cansadas.\nYesid: Cuando mi abuelo extrañaba Bogotá, subía a la sierra, donde hay niebla y pinos. Se sentaba debajo de un pino, en la niebla, y no hablaba con nadie.\nHernando llamó por video, con Simón.\nHernando: ¿Y qué tal el Caribe?\nSimón: ¡Hoteles Altamira, a la orden!\nYesid: ¿Ese loro trabaja para Altamira?\nHernando: No, mijo. Ese loro trabaja para el que le dé comida.\nYesid: Hace dos años vino un señor de Bogotá, de camisa blanca. Preguntó por mi abuelo como si estuviera vivo, y quería una copia de la cédula.\nMariana: ¿Y se la dieron?\nYesid: Mi abuela no. Mi tío sí, por cien mil pesos.\nYesid: Mañana, con viento del suroeste, los llevo al lugar favorito de mi abuelo. Allá les digo el nombre del señor.",
   "gloss": [
     {
       "es": "picaduras",
@@ -63,12 +63,12 @@
   ],
   "questions": [
     {
-      "q": "Why can't the boat go out today?",
+      "q": "Why are the waves so dangerous today?",
       "options": [
-        "The wind is coming from the north-west",
+        "The wind is coming from the north-west, and with that wind every wave is a wall",
         "Yesid's boss needs the boat",
-        "Mariana is afraid of the sea",
-        "There are turtles on the beach"
+        "There is a storm coming from Bogotá",
+        "The turtles are laying eggs"
       ],
       "answer": 0
     },
@@ -125,12 +125,12 @@
       "answer": 0
     },
     {
-      "q": "When did Hernando first see the Caribbean, and what did he think?",
+      "q": "What does Simón shout during the video call?",
       "options": [
-        "In 1972, and he didn't like it: too much water",
-        "In 1980, and he loved it",
-        "Never, he has never been",
-        "In 2010, at Joaquín's funeral"
+        "«¡Hoteles Altamira, a la orden!»",
+        "«¡Que les vaya bien, parce!»",
+        "«¡Socorro!»",
+        "«¡Buenos días!»"
       ],
       "answer": 0
     },
@@ -158,7 +158,6 @@
     "g:direct-objects",
     "g:estar-location-states",
     "g:gender-articles",
-    "g:gustar-basic",
     "g:hace-ago",
     "g:hay-vs-esta",
     "g:imperfect-habitual",
@@ -187,9 +186,7 @@
     "p:aqui-ahi-alla",
     "p:cerca-de",
     "p:cuando-basic",
-    "p:dates-years",
     "p:demonstratives-basic",
-    "p:el-agua-fria",
     "p:extranar",
     "p:ir-a-venir-de-place",
     "p:la-gente-singular",
@@ -201,7 +198,6 @@
     "p:position-de",
     "p:possessives-basic",
     "p:preguntar-pedir",
-    "p:quantifiers-basic",
     "p:queria-cortesia",
     "p:saber-conocer",
     "p:telling-time"
@@ -210,7 +206,6 @@
     "l:abrir",
     "l:abuela",
     "l:abuelo",
-    "l:agua",
     "l:allá",
     "l:antes",
     "l:aquí",
@@ -223,7 +218,6 @@
     "l:cansado",
     "l:coco",
     "l:comida",
-    "l:conocer",
     "l:copia",
     "l:cosa",
     "l:costa",
@@ -244,7 +238,6 @@
     "l:gato",
     "l:gente",
     "l:grande",
-    "l:gustar",
     "l:hablar",
     "l:hacer",
     "l:hotel",

@@ -13,7 +13,7 @@
       "accept": [
         "Estamos a unos 35 grados, y la humedad es terrible.",
         "Más o menos a 35 grados. La humedad es horrible.",
-        "Hoy estamos a 35 grados y todo es muy húmedo."
+        "Hace como 35 grados y todo es muy húmedo."
       ],
       "require": [
         {
@@ -76,8 +76,8 @@
     },
     {
       "id": "t4",
-      "npc": "Mariana: Perfecto. Oye, ¿y Vale? La vi pasar muy rápido hacia el hotel.",
-      "npcEn": "Mariana: Perfect. Hey, what about Vale? I saw her go by very fast towards the hotel.",
+      "npc": "Mariana: Perfecto. Oye, ¿y Vale? Pasó muy rápido hacia el hotel.",
+      "npcEn": "Mariana: Perfect. Hey, what about Vale? She went by very fast towards the hotel.",
       "intent": "Say you don't know, and that Vale always walks as if she were in a hurry.",
       "accept": [
         "No sé. Vale siempre camina como si tuviera prisa.",
@@ -97,7 +97,7 @@
     },
     {
       "id": "t5",
-      "npc": "Mariana: Bien. Apago la grabadora. ¿Quieres leer el texto antes de que la publique?",
+      "npc": "Mariana: Bien. Apago la grabadora. ¿Quieres leer el texto antes de que lo publique?",
       "npcEn": "Mariana: Good. I'm turning off the recorder. Do you want to read the text before I publish it?",
       "intent": "Say yes and politely ask whether she could send you the text tonight.",
       "accept": [
@@ -140,7 +140,8 @@
     "g:object-pronoun-position",
     "g:prep-infinitive",
     "g:present-ar",
-    "g:preterite-er-ir",
+    "g:present-er-ir",
+    "g:preterite-ar",
     "g:questions",
     "g:ser-identity",
     "g:si-hypothetical",
@@ -167,6 +168,7 @@
     "l:grabadora",
     "l:grabar",
     "l:grado",
+    "l:hacer",
     "l:horrible",
     "l:hotel",
     "l:hoy",
@@ -202,7 +204,6 @@
     "l:terrible",
     "l:texto",
     "l:tráfico",
-    "l:ver",
     "p:aproximar-cifras",
     "p:cerca-de",
     "p:cuando-basic",
@@ -212,7 +213,6 @@
     "p:frequency-scale",
     "p:humedo-mojado",
     "p:indefinites-basic",
-    "p:la-vi-salir",
     "p:llegar-a-tiempo",
     "p:me-te-nos-objects",
     "p:ordinal-floor",

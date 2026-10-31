@@ -1,7 +1,7 @@
 {
   "id": "sc-u40-b",
   "unit": "u40",
-  "title": "Treinta y cuatro grados",
+  "title": "Un horno con vista al mar",
   "brief": "You're Tomás on the hotel patio in Santa Marta at nine in the morning, already hot. Vale, who is quick and dry, is teasing you. Complain about the heat, imagine something better and make a deal. You and Vale are friends, so use tú.",
   "spare": false,
   "turns": [
@@ -81,7 +81,7 @@
     {
       "id": "t4",
       "npc": "Vale: Bueno, tienes razón. Un pescador dice que en Taganga se ven tortugas por la tarde.",
-      "npcEn": "Vale: Bueno, you're right. A fisherman says you can see turtles in Taganga in the afternoon.",
+      "npcEn": "Vale: OK, you're right. A fisherman says you can see turtles in Taganga in the afternoon.",
       "intent": "Ask Vale if she would come with you if you went in the afternoon.",
       "accept": [
         "¿Vendrías conmigo si fuéramos por la tarde?",
@@ -111,8 +111,8 @@
     },
     {
       "id": "t5",
-      "npc": "Vale: Vendría. Pero tú invitas el jugo, como si fueras el dueño del hotel. ¿Trato hecho?",
-      "npcEn": "Vale: I'd come. But you buy the juice, as if you were the owner of the hotel. Deal?",
+      "npc": "Vale: Vendría. Pero tú pagas los jugos. No me mires como si fuera mucha plata. ¿Trato hecho?",
+      "npcEn": "Vale: I'd come. But you're paying for the juices. Don't look at me as if it were a lot of money. Deal?",
       "intent": "Accept the deal and say you'll pay, as if you were rich.",
       "accept": [
         "Trato hecho. Pago yo, como si fuera rico.",
@@ -149,6 +149,7 @@
     "g:gender-articles",
     "g:hay-vs-esta",
     "g:imperfect-subj",
+    "g:negative-commands",
     "g:passive-se",
     "g:prep-pronouns",
     "g:present-ar",
@@ -187,7 +188,6 @@
     "l:hoy",
     "l:humedad",
     "l:húmedo",
-    "l:invitar",
     "l:ir",
     "l:jugo",
     "l:mal",
@@ -197,6 +197,7 @@
     "l:pagar",
     "l:pescador",
     "l:piscina",
+    "l:plata",
     "l:querer",
     "l:qué",
     "l:razón",
@@ -226,6 +227,7 @@
     "p:humedo-mojado",
     "p:ir-venir",
     "p:lo-mejor-seria-que",
+    "p:me-te-nos-objects",
     "p:por-la-manana",
     "p:quantifiers-basic",
     "p:tener-razon",

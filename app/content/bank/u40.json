@@ -116,18 +116,16 @@
   },
   {
     "id": "u40-0005",
-    "es": "Si no hubiera esa ola grande, podríamos nadar hasta la isla.",
-    "en": "If there weren't that big wave, we could swim to the island.",
+    "es": "Si no hubiera tanta ola, podríamos nadar hasta la isla.",
+    "en": "If there weren't so many waves, we could swim to the island.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
-      "g:demonstratives",
       "g:gender-articles",
       "g:imperfect-subj",
       "g:si-hypothetical",
       "g:verb-infinitive",
-      "l:grande",
       "l:isla",
       "l:nadar",
       "l:ola",
@@ -806,7 +804,7 @@
   {
     "id": "u40-0030",
     "es": "Si tuvieras que vivir en una isla, ¿qué llevarías?",
-    "en": "If you had to live on an island, what would you take?",
+    "en": "If you had to live on an island, what would you take? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -834,7 +832,7 @@
   {
     "id": "u40-0031",
     "es": "Si encontraras una botella en la arena, ¿la abrirías?",
-    "en": "If you found a bottle in the sand, would you open it?",
+    "en": "If you found a bottle in the sand, would you open it? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1216,7 +1214,7 @@
   {
     "id": "u40-0045",
     "es": "Si el viento viniera del noroeste, haría menos calor.",
-    "en": "If the wind came from the northwest, it would be less hot.",
+    "en": "If the wind came from the northwest, it would be cooler.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1989,7 +1987,7 @@
   },
   {
     "id": "u40-0074",
-    "es": "Si la playa fuera de nosotros, no dejaríamos entrar a nadie.",
+    "es": "Si la playa fuera nuestra, no dejaríamos entrar a nadie.",
     "en": "If the beach were ours, we wouldn't let anyone in.",
     "accept": [],
     "acceptEn": [],
@@ -1997,12 +1995,10 @@
       "g:conditional",
       "g:gender-articles",
       "g:negation-words",
-      "g:prep-pronouns",
+      "g:possessives",
       "l:dejar",
       "l:entrar",
-      "l:playa",
-      "p:cerca-de",
-      "p:position-de"
+      "l:playa"
     ],
     "targets": [],
     "kind": "statement",
@@ -2553,22 +2549,22 @@
   },
   {
     "id": "u40-0095",
-    "es": "Si Altamira no comprara toda la cuadra, Rosa seguiría tranquila en su café.",
-    "en": "If Altamira weren't buying the whole block, Rosa's café would carry on quietly.",
+    "es": "Si Altamira no quisiera toda la cuadra, el barrio estaría tranquilo.",
+    "en": "If Altamira didn't want the whole block, the neighborhood would be at peace.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tranquilo",
       "g:conditional",
+      "g:estar-location-states",
       "g:gender-articles",
       "g:imperfect-subj",
       "g:si-hypothetical",
-      "l:café",
-      "l:comprar",
+      "l:barrio",
       "l:cuadra",
-      "l:seguir",
-      "l:tranquilo",
-      "p:possessives-basic"
+      "l:estar",
+      "l:querer",
+      "l:tranquilo"
     ],
     "targets": [
       "g:imperfect-subj",
@@ -2773,20 +2769,19 @@
   },
   {
     "id": "u40-0103",
-    "es": "Si cada etapa durara menos, terminaríamos antes del invierno.",
-    "en": "If each stage lasted less, we would finish before winter.",
+    "es": "Si cada etapa durara menos, terminaríamos antes de diciembre.",
+    "en": "If each stage lasted less, we would finish before December.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
       "g:conditional",
-      "g:gender-articles",
       "g:imperfect-subj",
       "g:si-hypothetical",
       "l:antes",
+      "l:diciembre",
       "l:durar",
       "l:etapa",
-      "l:invierno",
       "l:terminar",
       "p:durar-durante"
     ],
@@ -2855,7 +2850,7 @@
   },
   {
     "id": "u40-0106",
-    "es": "Si el curso incluyera formación en el trabajo, me apuntaría.",
+    "es": "Si el curso incluyera formación en el trabajo, me inscribiría.",
     "en": "If the course included on-the-job training, I would sign up.",
     "accept": [],
     "acceptEn": [],
@@ -2865,10 +2860,10 @@
       "g:imperfect-subj",
       "g:reflexive-routine",
       "g:si-hypothetical",
-      "l:apuntarse",
       "l:curso",
       "l:formación",
       "l:incluir",
+      "l:inscribirse",
       "l:trabajo"
     ],
     "targets": [
@@ -3080,21 +3075,25 @@
   },
   {
     "id": "u40-0114",
-    "es": "Si el mar mejorara mi humor, no volvería a la oficina.",
-    "en": "If the sea improved my mood, I wouldn't go back to the office.",
+    "es": "Si viviera junto al mar, estaría siempre de buen humor.",
+    "en": "If I lived by the sea, I would always be in a good mood.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
+      "g:estar-location-states",
       "g:gender-articles",
       "g:imperfect-subj",
       "g:si-hypothetical",
+      "l:buen",
+      "l:estar",
       "l:humor",
+      "l:junto",
       "l:mar",
-      "l:mejorar",
-      "l:oficina",
-      "l:volver",
-      "p:possessives-basic"
+      "l:siempre",
+      "l:vivir",
+      "p:frequency-scale",
+      "p:posicion-precisa"
     ],
     "targets": [
       "g:imperfect-subj",
@@ -3109,7 +3108,7 @@
   {
     "id": "u40-0115",
     "es": "Si tuviera mejor humor, me reiría de todo esto.",
-    "en": "If I were in a better mood, I would laugh at all this.",
+    "en": "If I had a better sense of humor, I would laugh at all this.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3189,19 +3188,22 @@
   },
   {
     "id": "u40-0118",
-    "es": "Si nos despidiéramos ahora, nos veríamos en Bogotá.",
-    "en": "If we said goodbye now, we would see each other in Bogotá.",
+    "es": "Si nos despidiéramos ahora, no veríamos las tortugas esta noche.",
+    "en": "If we said goodbye now, we wouldn't see the turtles tonight.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
+      "g:gender-articles",
       "g:imperfect-subj",
       "g:reflexive-routine",
       "g:si-hypothetical",
       "l:ahora",
       "l:despedirse",
+      "l:noche",
+      "l:tortuga",
       "l:ver",
-      "p:me-te-nos-objects"
+      "p:demonstratives-basic"
     ],
     "targets": [
       "g:imperfect-subj",
@@ -3323,20 +3325,21 @@
   },
   {
     "id": "u40-0123",
-    "es": "Si tuviera la alianza de Rosa, la guardaría en una caja.",
-    "en": "If I had Rosa's wedding band, I would keep it in a box.",
+    "es": "Si me casara, no me quitaría nunca la alianza.",
+    "en": "If I got married, I would never take off my wedding band.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
-      "g:direct-objects",
       "g:gender-articles",
       "g:imperfect-subj",
+      "g:negation-words",
+      "g:reflexive-routine",
       "g:si-hypothetical",
       "l:alianza",
-      "l:caja",
-      "l:guardar",
-      "l:tener"
+      "l:casarse",
+      "l:quitarse",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:imperfect-subj",
@@ -3350,20 +3353,19 @@
   },
   {
     "id": "u40-0124",
-    "es": "Si Hernando llevara todavía su alianza, no estaría solo.",
-    "en": "If Hernando still wore his wedding band, he wouldn't be alone.",
+    "es": "Si Hernando se quitara la alianza, se sentiría solo.",
+    "en": "If Hernando took off his wedding band, he would feel alone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
-      "g:estar-location-states",
+      "g:gender-articles",
       "g:imperfect-subj",
+      "g:reflexive-routine",
       "g:si-hypothetical",
       "l:alianza",
-      "l:estar",
-      "l:llevar",
-      "p:possessives-basic",
-      "p:ya-todavia-basic"
+      "l:quitarse",
+      "l:sentirse"
     ],
     "targets": [
       "g:imperfect-subj",
@@ -3661,7 +3663,7 @@
   {
     "id": "u40-0135",
     "es": "Si un turista gritara socorro, los pescadores lo oirían.",
-    "en": "If a tourist shouted for help, the fishermen would hear.",
+    "en": "If a tourist shouted for help, the fishermen would hear him.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3796,19 +3798,22 @@
   },
   {
     "id": "u40-0140",
-    "es": "Si tuviéramos que arriesgar, arriesgaríamos por el barrio.",
-    "en": "If we had to take a risk, we would take it for the neighborhood.",
+    "es": "Si tuviéramos que arriesgarlo todo, lo haríamos por el barrio.",
+    "en": "If we had to risk everything, we would do it for the neighborhood.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
+      "g:direct-objects",
       "g:gender-articles",
       "g:imperfect-subj",
+      "g:object-pronoun-position",
       "g:por-para-1",
       "g:si-hypothetical",
       "g:verb-infinitive",
       "l:arriesgar",
       "l:barrio",
+      "l:hacer",
       "l:tener"
     ],
     "targets": [
@@ -3963,21 +3968,26 @@
   },
   {
     "id": "u40-0146",
-    "es": "Si Tomás hablara nuevamente con Yesid, le pediría perdón.",
-    "en": "If Tomás spoke with Yesid again, he would apologize to him.",
+    "es": "Si Tomás hablara nuevamente con Yesid, le preguntaría por el señor de camisa blanca.",
+    "en": "If Tomás spoke with Yesid again, he would ask him about the man in the white shirt.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:adverbs-mente",
       "g:conditional",
+      "g:gender-articles",
       "g:imperfect-subj",
       "g:indirect-objects",
+      "g:por-para-1",
       "g:si-hypothetical",
+      "l:blanco",
+      "l:camisa",
       "l:hablar",
       "l:nuevamente",
-      "l:pedir",
-      "l:perdón",
-      "p:pedir-disculpas-por",
+      "l:preguntar",
+      "l:señor",
+      "p:de-los-ojos-azules",
       "p:preguntar-pedir"
     ],
     "targets": [
@@ -4071,8 +4081,8 @@
   },
   {
     "id": "u40-0150",
-    "es": "Si nos reuniéramos nuevamente, hablaríamos despacio.",
-    "en": "If we met again, we would talk slowly.",
+    "es": "Si nos reuniéramos nuevamente, hablaríamos sin prisa.",
+    "en": "If we met again, we would talk without rushing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4081,9 +4091,9 @@
       "g:imperfect-subj",
       "g:reflexive-routine",
       "g:si-hypothetical",
-      "l:despacio",
       "l:hablar",
       "l:nuevamente",
+      "l:prisa",
       "l:reunirse"
     ],
     "targets": [
@@ -4280,8 +4290,8 @@
   },
   {
     "id": "u40-0158",
-    "es": "Si fuera ciego, conocería el mar por su sonido.",
-    "en": "If I were blind, I would know the sea by its sound.",
+    "es": "Si Simón se quedara ciego, reconocería a Tomás por la voz.",
+    "en": "If Simón went blind, he would recognize Tomás by his voice.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4289,15 +4299,12 @@
       "g:gender-articles",
       "g:imperfect-subj",
       "g:por-para-1",
-      "g:ser-identity",
+      "g:reflexive-routine",
       "g:si-hypothetical",
       "l:ciego",
-      "l:conocer",
-      "l:mar",
-      "l:ser",
-      "l:sonido",
-      "p:possessives-basic",
-      "p:saber-conocer"
+      "l:quedarse",
+      "l:reconocer",
+      "l:voz"
     ],
     "targets": [
       "g:imperfect-subj",
@@ -4418,19 +4425,21 @@
   },
   {
     "id": "u40-0163",
-    "es": "¿Qué le dirías a Altamira si la vieras?",
-    "en": "What would you say to Altamira if you saw her? (to a friend)",
+    "es": "¿Qué le dirías al jefe de Altamira si lo vieras?",
+    "en": "What would you say to Altamira's boss if you saw him? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
       "g:direct-objects",
+      "g:gender-articles",
       "g:imperfect-subj",
       "g:indirect-objects",
       "g:le-doubling",
       "g:questions",
       "g:si-hypothetical",
       "l:decir",
+      "l:jefe",
       "l:qué",
       "l:ver"
     ],
@@ -4985,18 +4994,19 @@
   },
   {
     "id": "u40-0184",
-    "es": "¿Qué harías si el reto fuera aún más difícil?",
-    "en": "What would you do if the challenge were even harder? (to a friend)",
+    "es": "¿Seguirías intentando si el reto fuera aún más difícil?",
+    "en": "Would you keep trying if the challenge were even harder? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
       "g:gender-articles",
-      "g:questions",
+      "g:gerund-ways",
       "l:difícil",
-      "l:hacer",
-      "l:qué",
-      "l:reto"
+      "l:intentar",
+      "l:reto",
+      "l:seguir",
+      "p:seguir-gerundio"
     ],
     "targets": [
       "l:reto"
@@ -5070,8 +5080,8 @@
   },
   {
     "id": "u40-0187",
-    "es": "¿Qué harías si estuvieras de mal humor todo el día?",
-    "en": "What would you do if you were in a bad mood all day? (to a friend)",
+    "es": "¿Con quién hablarías si estuvieras de mal humor todo el día?",
+    "en": "Who would you talk to if you were in a bad mood all day? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5079,14 +5089,14 @@
       "g:estar-location-states",
       "g:gender-articles",
       "g:imperfect-subj",
-      "g:questions",
       "g:si-hypothetical",
       "l:día",
       "l:estar",
-      "l:hacer",
+      "l:hablar",
       "l:humor",
       "l:mal",
-      "l:qué",
+      "l:quién",
+      "p:prep-questions-basic",
       "p:todos-los-dias"
     ],
     "targets": [
@@ -5185,25 +5195,21 @@
   },
   {
     "id": "u40-0191",
-    "es": "¿Le dirías a Yesid que lo sientes si hablaran nuevamente?",
-    "en": "Would you tell Yesid you're sorry if you talked again? (to a friend)",
+    "es": "¿Le contarías todo a Yesid si hablaras nuevamente con él?",
+    "en": "Would you tell Yesid everything if you talked to him again? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:con-el-ella",
       "g:adverbs-mente",
       "g:conditional",
-      "g:direct-objects",
       "g:imperfect-subj",
       "g:indirect-objects",
       "g:le-doubling",
-      "g:relative-que",
       "g:si-hypothetical",
-      "g:stem-boot",
-      "l:decir",
+      "l:contar",
       "l:hablar",
-      "l:nuevamente",
-      "l:sentir",
-      "p:siento-llegar-tarde"
+      "l:nuevamente"
     ],
     "targets": [
       "g:imperfect-subj",
@@ -6664,7 +6670,7 @@
   {
     "id": "u40-0248",
     "es": "Camina por la playa como si fuera la dueña.",
-    "en": "She walks along the beach as if she owned it.",
+    "en": "She walks along the beach as if she were the owner.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7487,23 +7493,22 @@
   },
   {
     "id": "u40-0281",
-    "es": "El mar es tan azul como si tuviera luz propia.",
-    "en": "The sea is so blue it is as if it had its own light.",
+    "es": "El mar se ve como si tuviera luz propia.",
+    "en": "The sea looks as if it had its own light.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:como-si",
-      "g:comparatives",
       "g:gender-articles",
       "g:imperfect-subj",
-      "g:ser-identity",
-      "l:azul",
+      "g:present-er-ir",
+      "g:se-impersonal",
       "l:luz",
       "l:mar",
       "l:propio",
-      "l:ser",
       "l:tener",
+      "l:ver",
       "p:tiene-mucha-luz"
     ],
     "targets": [
@@ -7517,8 +7522,8 @@
   },
   {
     "id": "u40-0282",
-    "es": "El cielo está tan azul como si fuera de mentira.",
-    "en": "The sky is so blue it is as if it weren't real.",
+    "es": "El cielo está tan azul que es como si fuera de mentira.",
+    "en": "The sky is so blue it's as if it weren't real.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7528,6 +7533,7 @@
       "g:gender-articles",
       "g:imperfect-subj",
       "g:ser-identity",
+      "g:that-clauses",
       "l:azul",
       "l:cielo",
       "l:estar",
@@ -7574,8 +7580,8 @@
   },
   {
     "id": "u40-0284",
-    "es": "Hace tanto calor como si estuviéramos dentro de un horno.",
-    "en": "It's so hot it feels as if we were inside an oven.",
+    "es": "Con este calor me siento como si estuviera dentro de un horno.",
+    "en": "With this heat I feel as if I were inside an oven.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7583,15 +7589,15 @@
       "g:estar-location-states",
       "g:gender-articles",
       "g:imperfect-subj",
-      "g:present-er-ir",
-      "g:tanto-como",
+      "g:reflexive-routine",
+      "g:stem-boot",
       "l:calor",
       "l:dentro",
       "l:estar",
-      "l:hacer",
       "l:horno",
-      "p:dentro-de-vs-despues",
-      "p:hace-frio"
+      "l:sentirse",
+      "p:demonstratives-basic",
+      "p:dentro-de-vs-despues"
     ],
     "targets": [
       "g:como-si",
@@ -7714,22 +7720,24 @@
   },
   {
     "id": "u40-0289",
-    "es": "La tortuga nada despacio, como si no tuviera ningún reto.",
-    "en": "The turtle swims slowly, as if it had no challenge at all.",
+    "es": "Para la tortuga, cruzar la playa es un reto, pero avanza como si fuera fácil.",
+    "en": "For the turtle, crossing the beach is a challenge, but it moves on as if it were easy.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:como-si",
       "g:gender-articles",
       "g:imperfect-subj",
-      "g:indefinites",
-      "g:negation-words",
       "g:present-ar",
-      "l:despacio",
-      "l:nadar",
+      "g:ser-identity",
+      "l:avanzar",
+      "l:cruzar",
+      "l:fácil",
+      "l:playa",
       "l:reto",
-      "l:tener",
-      "l:tortuga"
+      "l:ser",
+      "l:tortuga",
+      "p:para-inf"
     ],
     "targets": [
       "g:como-si",
@@ -7804,7 +7812,7 @@
   {
     "id": "u40-0292",
     "es": "Un coco cayó de la palmera como si fuera una piedra.",
-    "en": "A coconut fell from the palm tree like a stone.",
+    "en": "A coconut fell from the palm tree as if it were a stone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7973,21 +7981,20 @@
   },
   {
     "id": "u40-0298",
-    "es": "El pan está tan suave como si lo hicieran ahora mismo.",
-    "en": "The bread is so soft it is as if they were making it right now.",
+    "es": "El pan sigue suave, como si saliera ahora del horno.",
+    "en": "The bread is still soft, as if it were just coming out of the oven.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:como-si",
-      "g:comparatives",
-      "g:direct-objects",
-      "g:estar-location-states",
       "g:gender-articles",
       "g:imperfect-subj",
+      "g:stem-e-i",
       "l:ahora",
-      "l:estar",
-      "l:hacer",
+      "l:horno",
       "l:pan",
+      "l:salir",
+      "l:seguir",
       "l:suave"
     ],
     "targets": [
@@ -8476,12 +8483,11 @@
   },
   {
     "id": "u40-0317",
-    "es": "¿Tienes sueño?\nEs que camino como si estuviera dormido.",
-    "en": "Are you sleepy?\nIt's that I walk as if I were asleep. (a man speaking)",
+    "es": "¿Tienes sueño?\nSí, camino como si estuviera dormido.",
+    "en": "Are you sleepy?\nYes, I'm walking as if I were asleep. (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:es-que",
       "c:tienes",
       "g:como-si",
       "g:estar-location-states",
@@ -8491,7 +8497,6 @@
       "l:caminar",
       "l:dormir",
       "l:estar",
-      "l:ser",
       "l:sueño",
       "l:tener",
       "p:tener-hambre"
@@ -8507,8 +8512,8 @@
   },
   {
     "id": "u40-0318",
-    "es": "Estás cansada.\nMe siento como si corriera diez kilómetros.",
-    "en": "You look tired.\nI feel as if I were running ten kilometers. (a woman speaking)",
+    "es": "Estás cansada.\nSí, es como si tuviera cien años.",
+    "en": "You're tired.\nYes, it's as if I were a hundred years old. (a woman speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8516,13 +8521,14 @@
       "g:como-si",
       "g:estar-location-states",
       "g:imperfect-subj",
-      "g:reflexive-routine",
-      "g:stem-boot",
+      "g:ser-identity",
+      "l:año",
       "l:cansado",
-      "l:correr",
       "l:estar",
-      "l:kilómetro",
-      "l:sentirse"
+      "l:ser",
+      "l:tener",
+      "p:numbers-un-una",
+      "p:tener-anos"
     ],
     "targets": [
       "g:como-si",
@@ -8535,23 +8541,26 @@
   },
   {
     "id": "u40-0319",
-    "es": "¿Qué te pasa?\nNada. Es como si el mundo estuviera dormido.",
-    "en": "What's wrong?\nNothing. It's as if the world were asleep.",
+    "es": "¿Qué te pasa?\nNada. Es que me siento como si estuviera lejos de todo.",
+    "en": "What's wrong?\nNothing. I just feel as if I were far from everything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:es-que",
       "c:te-pasa-algo",
       "g:como-si",
       "g:estar-location-states",
-      "g:gender-articles",
       "g:imperfect-subj",
-      "g:ser-identity",
-      "l:dormir",
+      "g:reflexive-routine",
+      "g:stem-boot",
       "l:estar",
-      "l:mundo",
+      "l:lejos",
       "l:pasar",
       "l:qué",
-      "l:ser"
+      "l:sentirse",
+      "l:ser",
+      "p:cerca-de",
+      "p:position-de"
     ],
     "targets": [
       "g:como-si",
@@ -8713,18 +8722,16 @@
   },
   {
     "id": "u40-0326",
-    "es": "Parece como si fuera ayer.",
-    "en": "It feels as if it were yesterday.",
+    "es": "Es como si fuera ayer.",
+    "en": "It's as if it were yesterday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ayer-anoche",
       "g:como-si",
       "g:imperfect-subj",
-      "g:present-er-ir",
       "g:ser-identity",
       "l:ayer",
-      "l:parecer",
       "l:ser"
     ],
     "targets": [
@@ -8813,20 +8820,18 @@
   },
   {
     "id": "u40-0330",
-    "es": "Me gusta estar aquí, como si el mundo fuera más pequeño.",
-    "en": "I like being here, as if the world were smaller.",
+    "es": "Aquí me siento como si el mundo fuera más pequeño.",
+    "en": "Here I feel as if the world were smaller.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:me-gusta",
-      "g:estar-location-states",
       "g:gender-articles",
-      "g:gustar-basic",
+      "g:reflexive-routine",
+      "g:stem-boot",
       "l:aquí",
-      "l:estar",
-      "l:gustar",
       "l:mundo",
       "l:pequeño",
+      "l:sentirse",
       "p:aqui-ahi-alla"
     ],
     "targets": [],
@@ -8889,8 +8894,8 @@
   },
   {
     "id": "u40-0333",
-    "es": "Lo dijo como si lo dijera en serio.",
-    "en": "She said it as if she meant it.",
+    "es": "Lo dijo como si fuera en serio.",
+    "en": "She said it as if it were for real.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8899,7 +8904,9 @@
       "g:direct-objects",
       "g:imperfect-subj",
       "g:preterite-irregular-strong",
+      "g:ser-identity",
       "l:decir",
+      "l:ser",
       "l:serio"
     ],
     "targets": [
@@ -9152,8 +9159,8 @@
   },
   {
     "id": "u40-0343",
-    "es": "Empujó la puerta como si fuera muy grande.",
-    "en": "He pushed the door as if it were very big.",
+    "es": "Empujó la puerta como si pesara mil kilos.",
+    "en": "He pushed the door as if it weighed a thousand kilos.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9161,12 +9168,13 @@
       "g:gender-articles",
       "g:imperfect-subj",
       "g:preterite-ar",
-      "g:ser-identity",
       "l:empujar",
-      "l:grande",
+      "l:kilo",
+      "l:pesar",
       "l:puerta",
-      "l:ser",
-      "p:quantifiers-basic"
+      "p:medir-pesar",
+      "p:medir-pesar-caber",
+      "p:pesar-pesarse"
     ],
     "targets": [
       "g:como-si",
@@ -9233,8 +9241,8 @@
   },
   {
     "id": "u40-0346",
-    "es": "Pidió el expediente como si fuera una orden.",
-    "en": "He asked for the file as if it were an order.",
+    "es": "Pidió el expediente como si tuviera mucha prisa.",
+    "en": "He asked for the file as if he were in a big hurry.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9242,12 +9250,13 @@
       "g:gender-articles",
       "g:imperfect-subj",
       "g:preterite-spelling-stem",
-      "g:ser-identity",
       "l:expediente",
-      "l:orden",
       "l:pedir",
-      "l:ser",
-      "p:preguntar-pedir"
+      "l:prisa",
+      "l:tener",
+      "p:preguntar-pedir",
+      "p:quantifiers-basic",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:como-si",
@@ -9286,7 +9295,7 @@
   },
   {
     "id": "u40-0348",
-    "es": "Sospecho de ese hombre, porque habla como si supiera algo.",
+    "es": "Sospecho de ese hombre porque habla como si supiera algo.",
     "en": "I suspect that man, because he talks as if he knew something.",
     "accept": [],
     "acceptEn": [],
@@ -9568,20 +9577,31 @@
   },
   {
     "id": "u40-0358",
-    "es": "La diversión empezó como si alguien diera una orden.",
-    "en": "The fun started as if someone were giving an order.",
+    "es": "Para los niños, el mar es pura diversión: saltan las olas como si no tuvieran miedo de nada.",
+    "en": "For the kids, the sea is pure fun: they jump the waves as if they weren't afraid of anything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:gracias-de-nada",
+      "g:adjective-agreement",
       "g:como-si",
       "g:gender-articles",
       "g:imperfect-subj",
-      "g:preterite-ar",
-      "l:dar",
+      "g:negation-words",
+      "g:present-ar",
+      "g:ser-identity",
       "l:diversión",
-      "l:empezar",
-      "l:orden",
-      "p:indefinites-basic"
+      "l:mar",
+      "l:miedo",
+      "l:niño",
+      "l:olas",
+      "l:puro",
+      "l:saltar",
+      "l:ser",
+      "l:tener",
+      "p:me-da-miedo-que",
+      "p:para-inf",
+      "p:tener-hambre"
     ],
     "targets": [
       "g:como-si",
@@ -9692,20 +9712,17 @@
   },
   {
     "id": "u40-0363",
-    "es": "Esta mañana estábamos a 27 grados, pero ahora son casi las doce.",
-    "en": "This morning it was 27 degrees, but now it's almost twelve.",
+    "es": "Esta mañana estábamos a 27 grados, pero ahora estamos a 34.",
+    "en": "This morning it was 27 degrees, but now it's 34.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
-      "g:gender-articles",
       "g:imperfect-states",
-      "g:ser-identity",
       "l:ahora",
       "l:estar",
       "l:grado",
       "l:mañana",
-      "l:ser",
       "p:demonstratives-basic",
       "p:estar-a",
       "p:estar-a-grados"
@@ -10280,8 +10297,8 @@
   },
   {
     "id": "u40-0386",
-    "es": "¿A cuánto estamos ahora?\nA 31 grados. Menos mal que hay brisa.",
-    "en": "What's the temperature now?\nThirty-one degrees. Thank goodness there's a breeze.",
+    "es": "¿Y ahora?\nAhora estamos a 31 grados. Menos mal que hay brisa.",
+    "en": "And now?\nNow it's 31 degrees. Thank goodness there's a breeze.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10292,15 +10309,11 @@
       "g:hay-vs-esta",
       "l:ahora",
       "l:brisa",
-      "l:cuánto",
       "l:estar",
       "l:grado",
       "l:mal",
-      "p:a-cuanto-esta",
       "p:estar-a",
-      "p:estar-a-grados",
-      "p:estar-a-price",
-      "p:prep-questions-basic"
+      "p:estar-a-grados"
     ],
     "targets": [
       "p:estar-a-grados"
@@ -10420,9 +10433,7 @@
     "id": "u40-0391",
     "es": "¿A cuántos grados estamos ahora mismo?",
     "en": "What's the temperature right now?",
-    "accept": [
-      "¿A cuánto estamos ahora mismo?"
-    ],
+    "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
@@ -10559,8 +10570,8 @@
   },
   {
     "id": "u40-0397",
-    "es": "¿Estaban a cuántos grados cuando saliste de Bogotá?",
-    "en": "What was the temperature when you left Bogotá? (to a friend)",
+    "es": "¿A cuántos grados estaban en Bogotá cuando saliste?",
+    "en": "What was the temperature in Bogotá when you left? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10568,12 +10579,12 @@
       "g:imperfect-states",
       "g:pret-vs-imperfect",
       "g:preterite-er-ir",
-      "g:questions",
       "l:cuánto",
       "l:estar",
       "l:grado",
       "l:salir",
-      "p:cuando-basic"
+      "p:cuando-basic",
+      "p:prep-questions-basic"
     ],
     "targets": [],
     "kind": "question",
@@ -10583,17 +10594,15 @@
   },
   {
     "id": "u40-0398",
-    "es": "Con 35 grados, el café casi no vende tinto.",
-    "en": "At 35 degrees, the café hardly sells any black coffee.",
+    "es": "Con 35 grados, nadie en Santa Marta pide tinto.",
+    "en": "At 35 degrees, nobody in Santa Marta orders black coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:present-er-ir",
-      "l:café",
+      "g:stem-e-i",
       "l:grado",
+      "l:pedir",
       "l:tinto",
-      "l:vender",
       "p:estar-a-grados"
     ],
     "targets": [
@@ -10633,8 +10642,8 @@
   },
   {
     "id": "u40-0400",
-    "es": "A 32 grados, Hernando duerme la siesta debajo de un árbol.",
-    "en": "At 32 degrees, Hernando takes a nap under a tree.",
+    "es": "A 32 grados, Yesid duerme la siesta debajo de un árbol.",
+    "en": "At 32 degrees, Yesid takes a nap under a tree.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10659,20 +10668,19 @@
   },
   {
     "id": "u40-0401",
-    "es": "A 34 grados, Simón no habla; solo abre el pico.",
-    "en": "At 34 degrees, Simón doesn't talk; he just opens his beak.",
+    "es": "A 34 grados, hasta los perros duermen todo el día.",
+    "en": "At 34 degrees, even the dogs sleep all day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
-      "g:present-er-ir",
-      "l:abrir",
+      "g:stem-boot",
+      "l:dormir",
+      "l:día",
       "l:grado",
-      "l:hablar",
-      "l:pico",
+      "l:perro",
       "p:estar-a-grados",
-      "p:sobre-todo-solo"
+      "p:todos-los-dias"
     ],
     "targets": [
       "p:estar-a-grados"
@@ -10684,8 +10692,8 @@
   },
   {
     "id": "u40-0402",
-    "es": "Estuvimos a 38 grados en el tren y nadie se quejó.",
-    "en": "It was 38 degrees on the train and nobody complained.",
+    "es": "Estuvimos a 38 grados en el aeropuerto y nadie se quejó.",
+    "en": "It was 38 degrees at the airport and nobody complained.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10694,10 +10702,10 @@
       "g:preterite-ar",
       "g:preterite-irregular-strong",
       "g:reflexive-routine",
+      "l:aeropuerto",
       "l:estar",
       "l:grado",
       "l:quejarse",
-      "l:tren",
       "p:estar-a",
       "p:estar-a-grados"
     ],
@@ -10712,7 +10720,7 @@
   {
     "id": "u40-0403",
     "es": "En Bogotá estamos a 12 grados, pero este fin de semana vamos a estar a 33.",
-    "en": "In Bogotá it's 12 degrees, but this weekend we're going to be at 33.",
+    "en": "In Bogotá it's 12 degrees, but this weekend it's going to be 33.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10767,12 +10775,11 @@
   },
   {
     "id": "u40-0405",
-    "es": "Las noches en Taganga están a 25 grados, casi frescas.",
-    "en": "The nights in Taganga are about 25 degrees, almost cool.",
+    "es": "En Taganga, por la noche, estamos a 25 grados, casi fresco.",
+    "en": "In Taganga, at night, it's 25 degrees, almost cool.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:estar-location-states",
       "g:gender-articles",
       "l:estar",
@@ -10780,7 +10787,8 @@
       "l:grado",
       "l:noche",
       "p:estar-a",
-      "p:estar-a-grados"
+      "p:estar-a-grados",
+      "p:por-la-manana"
     ],
     "targets": [
       "p:estar-a-grados"
@@ -10792,18 +10800,18 @@
   },
   {
     "id": "u40-0406",
-    "es": "Dentro de la tienda estábamos a 39 grados.",
-    "en": "Inside the tent it was 39 degrees.",
+    "es": "Dentro del bus estábamos a 39 grados.",
+    "en": "Inside the bus it was 39 degrees.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
       "g:gender-articles",
       "g:imperfect-states",
+      "l:bus",
       "l:dentro",
       "l:estar",
       "l:grado",
-      "l:tienda",
       "p:cerca-de",
       "p:estar-a",
       "p:estar-a-grados",
@@ -10871,24 +10879,20 @@
   },
   {
     "id": "u40-0409",
-    "es": "La humedad es muy alta en Santa Marta, y el clima es húmedo todo el año.",
-    "en": "The humidity is very high in Santa Marta, and the climate is humid all year.",
+    "es": "Con la humedad de Santa Marta, hasta los libros se ponen húmedos.",
+    "en": "With the Santa Marta humidity, even books get damp.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
-      "g:ser-identity",
-      "l:alto",
-      "l:año",
-      "l:clima",
+      "g:present-er-ir",
+      "g:verbs-of-change",
       "l:humedad",
       "l:húmedo",
-      "l:ser",
-      "p:es-tiene-lleva",
-      "p:humedo-mojado",
-      "p:quantifiers-basic",
-      "p:todos-los-dias"
+      "l:libro",
+      "l:ponerse",
+      "p:humedo-mojado"
     ],
     "targets": [
       "l:humedad",
@@ -10958,16 +10962,15 @@
   },
   {
     "id": "u40-0412",
-    "es": "La pared del hotel está húmeda por la humedad del mar.",
-    "en": "The hotel wall is damp from the humidity of the sea.",
+    "es": "La humedad del mar deja húmeda hasta la pared del hotel.",
+    "en": "The sea humidity leaves even the hotel wall damp.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
-      "g:estar-location-states",
       "g:gender-articles",
-      "g:por-para-1",
-      "l:estar",
+      "g:present-ar",
+      "l:dejar",
       "l:hotel",
       "l:humedad",
       "l:húmedo",
@@ -11330,22 +11333,22 @@
   },
   {
     "id": "u40-0427",
-    "es": "La arena mojada es más suave para caminar.",
-    "en": "Wet sand is softer to walk on.",
+    "es": "La arena mojada se siente suave bajo los pies.",
+    "en": "Wet sand feels soft underfoot.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
-      "g:ser-identity",
+      "g:reflexive-routine",
+      "g:stem-boot",
       "l:arena",
-      "l:caminar",
       "l:mojado",
-      "l:ser",
+      "l:pie",
+      "l:sentirse",
       "l:suave",
       "p:humedo-mojado",
-      "p:para-inf",
-      "p:para-inf-purpose"
+      "p:sentirse-mal"
     ],
     "targets": [
       "l:arena",
@@ -11421,7 +11424,7 @@
   {
     "id": "u40-0430",
     "es": "Si saliera sin paraguas, volvería mojado a casa.",
-    "en": "If I went out without an umbrella, I would come home wet.",
+    "en": "If I went out without an umbrella, I would come home wet. (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11633,8 +11636,8 @@
   },
   {
     "id": "u40-0438",
-    "es": "Simón está mojado porque se metió en la lluvia.",
-    "en": "Simón is wet because he went out in the rain.",
+    "es": "Simón está mojado porque se quedó afuera bajo la lluvia.",
+    "en": "Simón is wet because he stayed out in the rain.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11642,12 +11645,13 @@
       "g:cause-result",
       "g:estar-location-states",
       "g:gender-articles",
-      "g:preterite-er-ir",
+      "g:preterite-ar",
       "g:reflexive-routine",
+      "l:afuera",
       "l:estar",
       "l:lluvia",
-      "l:meterse",
       "l:mojado",
+      "l:quedarse",
       "p:humedo-mojado"
     ],
     "targets": [
@@ -11845,7 +11849,7 @@
   },
   {
     "id": "u40-0446",
-    "es": "Ahí no, que la silla está mojada.",
+    "es": "Ahí no, la silla está mojada.",
     "en": "Not there, the chair is wet.",
     "accept": [],
     "acceptEn": [],
@@ -11853,7 +11857,6 @@
       "g:adjective-agreement",
       "g:estar-location-states",
       "g:gender-articles",
-      "g:that-clauses",
       "l:ahí",
       "l:estar",
       "l:mojado",
@@ -11976,19 +11979,22 @@
   },
   {
     "id": "u40-0451",
-    "es": "Llovió tarde y el expediente quedó mojado.",
-    "en": "It rained late and the file got wet.",
+    "es": "Dejé la ventana abierta, llovió y el expediente quedó mojado.",
+    "en": "I left the window open, it rained and the file got wet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
       "g:preterite-er-ir",
+      "l:abrir",
+      "l:dejar",
       "l:expediente",
       "l:llover",
       "l:mojado",
       "l:quedar",
-      "l:tarde",
+      "l:ventana",
+      "p:encontrar-participle",
       "p:humedo-mojado"
     ],
     "targets": [
@@ -12080,18 +12086,17 @@
   },
   {
     "id": "u40-0455",
-    "es": "Mi sueño es aprender a bucear.",
-    "en": "My dream is to learn to dive.",
+    "es": "Sueño con aprender a bucear.",
+    "en": "I dream of learning to dive.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:ser-identity",
+      "g:stem-boot",
       "l:aprender",
       "l:bucear",
-      "l:ser",
-      "l:sueño",
-      "p:possessives-basic",
-      "p:sonar-con"
+      "l:soñar",
+      "p:sonar-con",
+      "p:sonar-con-ganas"
     ],
     "targets": [
       "p:sonar-con"
@@ -12127,24 +12132,20 @@
   },
   {
     "id": "u40-0457",
-    "es": "Mi sueño es ver una tortuga desde abajo del agua.",
-    "en": "My dream is to see a turtle from underwater.",
+    "es": "Sueño con ver una tortuga bajo el agua.",
+    "en": "I dream of seeing a turtle underwater.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:ser-identity",
-      "l:abajo",
+      "g:stem-boot",
       "l:agua",
-      "l:ser",
-      "l:sueño",
+      "l:soñar",
       "l:tortuga",
       "l:ver",
-      "p:cerca-de",
       "p:el-agua-fria",
-      "p:position-de",
-      "p:possessives-basic",
-      "p:sonar-con"
+      "p:sonar-con",
+      "p:sonar-con-ganas"
     ],
     "targets": [
       "l:tortuga",
@@ -12181,20 +12182,19 @@
   },
   {
     "id": "u40-0459",
-    "es": "Mi sueño es despertar con el sonido del mar.",
-    "en": "My dream is to wake up to the sound of the sea.",
+    "es": "Sueño con despertar con el sonido del mar.",
+    "en": "I dream of waking up to the sound of the sea.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:ser-identity",
+      "g:stem-boot",
       "l:despertarse",
       "l:mar",
-      "l:ser",
       "l:sonido",
-      "l:sueño",
-      "p:possessives-basic",
-      "p:sonar-con"
+      "l:soñar",
+      "p:sonar-con",
+      "p:sonar-con-ganas"
     ],
     "targets": [
       "p:sonar-con"
@@ -12206,21 +12206,20 @@
   },
   {
     "id": "u40-0460",
-    "es": "Mi sueño es pasar un invierno entero en la costa.",
-    "en": "My dream is to spend a whole winter on the coast.",
+    "es": "Vale sueña con pasar un diciembre entero en la costa.",
+    "en": "Vale dreams of spending a whole December on the coast.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:ser-identity",
+      "g:stem-boot",
       "l:costa",
+      "l:diciembre",
       "l:entero",
-      "l:invierno",
       "l:pasar",
-      "l:ser",
-      "l:sueño",
-      "p:possessives-basic",
-      "p:sonar-con"
+      "l:soñar",
+      "p:sonar-con",
+      "p:sonar-con-ganas"
     ],
     "targets": [
       "p:sonar-con"
@@ -12259,20 +12258,18 @@
   },
   {
     "id": "u40-0462",
-    "es": "Mi sueño es hablar español sin pensar.",
-    "en": "My dream is to speak Spanish without thinking.",
+    "es": "Tomás sueña con entender todos los chistes de Hernando.",
+    "en": "Tomás dreams of understanding all of Hernando's jokes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:prep-infinitive",
-      "g:ser-identity",
-      "l:español",
-      "l:hablar",
-      "l:pensar",
-      "l:ser",
-      "l:sueño",
-      "p:possessives-basic",
-      "p:sonar-con"
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:chiste",
+      "l:entender",
+      "l:soñar",
+      "p:sonar-con",
+      "p:sonar-con-ganas"
     ],
     "targets": [
       "p:sonar-con"
@@ -12284,19 +12281,18 @@
   },
   {
     "id": "u40-0463",
-    "es": "Mi sueño es cocinar para cincuenta personas.",
-    "en": "My dream is to cook for fifty people.",
+    "es": "Vale sueña con cocinar para cincuenta personas.",
+    "en": "Vale dreams of cooking for fifty people.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:ser-identity",
+      "g:stem-boot",
       "l:cocinar",
       "l:persona",
-      "l:ser",
-      "l:sueño",
+      "l:soñar",
       "p:para-inf",
-      "p:possessives-basic",
-      "p:sonar-con"
+      "p:sonar-con",
+      "p:sonar-con-ganas"
     ],
     "targets": [
       "p:sonar-con"
@@ -12308,21 +12304,20 @@
   },
   {
     "id": "u40-0464",
-    "es": "Mi sueño es recorrer toda la costa en un bus viejo.",
-    "en": "My dream is to travel the whole coast on an old bus.",
+    "es": "Hernando sueña con recorrer toda la costa en un bus viejo.",
+    "en": "Hernando dreams of traveling the whole coast on an old bus.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:ser-identity",
+      "g:stem-boot",
       "l:bus",
       "l:costa",
       "l:recorrer",
-      "l:ser",
-      "l:sueño",
+      "l:soñar",
       "l:viejo",
-      "p:possessives-basic",
       "p:sonar-con",
+      "p:sonar-con-ganas",
       "p:viejo-antiguo-mayor"
     ],
     "targets": [
@@ -12335,18 +12330,19 @@
   },
   {
     "id": "u40-0465",
-    "es": "Mi sueño es vivir sin problemas con Altamira.",
-    "en": "My dream is to live without problems with Altamira.",
+    "es": "Sueño con una semana sin noticias de Altamira.",
+    "en": "I dream of a week without news from Altamira.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:ser-identity",
-      "l:problema",
-      "l:ser",
-      "l:sueño",
-      "l:vivir",
-      "p:possessives-basic",
-      "p:sonar-con"
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:noticias",
+      "l:semana",
+      "l:soñar",
+      "p:con-sin",
+      "p:sonar-con",
+      "p:sonar-con-ganas"
     ],
     "targets": [
       "p:sonar-con"
@@ -12486,7 +12482,7 @@
   {
     "id": "u40-0471",
     "es": "Su sueño es dar la vuelta al mundo en barco.",
-    "en": "His dream is to sail around the world.",
+    "en": "His dream is to go around the world by boat.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12564,19 +12560,22 @@
   },
   {
     "id": "u40-0474",
-    "es": "Su sueño es hablar con Rosa una vez más.",
-    "en": "His dream is to talk to Rosa once more.",
+    "es": "Su sueño es volver a manejar un taxi amarillo.",
+    "en": "His dream is to drive a yellow taxi again.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:una-vez",
+      "g:gender-articles",
       "g:ser-identity",
-      "l:hablar",
+      "l:amarillo",
+      "l:manejar",
       "l:ser",
       "l:sueño",
-      "l:vez",
+      "l:taxi",
+      "l:volver",
       "p:possessives-basic",
-      "p:sonar-con"
+      "p:sonar-con",
+      "p:volver-a-inf"
     ],
     "targets": [
       "p:sonar-con"
@@ -12616,7 +12615,7 @@
   {
     "id": "u40-0476",
     "es": "Nuestro sueño es tener una casa pequeña junto a la playa.",
-    "en": "Our dream is to have a small house on the beach.",
+    "en": "Our dream is to have a small house next to the beach.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12993,7 +12992,7 @@
   {
     "id": "u40-0491",
     "es": "¿Y el tuyo?\nMi sueño es vivir sin prisa.",
-    "en": "And yours?\nMy dream is to live without hurry.",
+    "en": "And yours?\nMy dream is to live without rushing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13017,21 +13016,21 @@
   },
   {
     "id": "u40-0492",
-    "es": "Mi sueño es abrir el café otra vez.",
-    "en": "My dream is to open the café again.",
+    "es": "Sueño con ver el café lleno otra vez.",
+    "en": "I dream of seeing the café full again.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:ser-identity",
-      "l:abrir",
+      "g:stem-boot",
       "l:café",
-      "l:ser",
-      "l:sueño",
+      "l:lleno",
+      "l:soñar",
+      "l:ver",
       "l:vez",
       "p:otro-no-article",
-      "p:possessives-basic",
-      "p:sonar-con"
+      "p:sonar-con",
+      "p:sonar-con-ganas"
     ],
     "targets": [
       "p:sonar-con"
@@ -13066,18 +13065,18 @@
   },
   {
     "id": "u40-0494",
-    "es": "Mi sueño es dormir diez horas.",
-    "en": "My dream is to sleep ten hours.",
+    "es": "Sueño con dormir diez horas seguidas.",
+    "en": "I dream of sleeping ten hours straight.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:ser-identity",
+      "g:stem-boot",
       "l:dormir",
       "l:hora",
-      "l:ser",
-      "l:sueño",
-      "p:possessives-basic",
-      "p:sonar-con"
+      "l:seguir",
+      "l:soñar",
+      "p:sonar-con",
+      "p:sonar-con-ganas"
     ],
     "targets": [
       "p:sonar-con"
@@ -13089,20 +13088,18 @@
   },
   {
     "id": "u40-0495",
-    "es": "Mi sueño es escuchar música en la playa.",
-    "en": "My dream is to listen to music on the beach.",
+    "es": "Sueño con una hamaca, música y nada más.",
+    "en": "I dream of a hammock, music and nothing else.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:ser-identity",
-      "l:escuchar",
+      "g:stem-boot",
+      "l:hamaca",
       "l:música",
-      "l:playa",
-      "l:ser",
-      "l:sueño",
-      "p:possessives-basic",
-      "p:sonar-con"
+      "l:soñar",
+      "p:sonar-con",
+      "p:sonar-con-ganas"
     ],
     "targets": [
       "p:sonar-con"
@@ -13196,20 +13193,18 @@
   },
   {
     "id": "u40-0499",
-    "es": "Mi sueño es bailar con ella en la playa.",
-    "en": "My dream is to dance with her on the beach.",
+    "es": "Tomás sueña con bailar con Vale en la playa.",
+    "en": "Tomás dreams of dancing with Vale on the beach.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:con-el-ella",
       "g:gender-articles",
-      "g:ser-identity",
+      "g:stem-boot",
       "l:bailar",
       "l:playa",
-      "l:ser",
-      "l:sueño",
-      "p:possessives-basic",
-      "p:sonar-con"
+      "l:soñar",
+      "p:sonar-con",
+      "p:sonar-con-ganas"
     ],
     "targets": [
       "p:sonar-con"
@@ -13221,19 +13216,21 @@
   },
   {
     "id": "u40-0500",
-    "es": "Mi sueño es vivir sin ese expediente.",
-    "en": "My dream is to live without that file.",
+    "es": "Sueño con cerrar ese expediente para siempre.",
+    "en": "I dream of closing that file for good.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
-      "g:ser-identity",
+      "g:stem-boot",
+      "l:cerrar",
       "l:expediente",
-      "l:ser",
-      "l:sueño",
-      "l:vivir",
-      "p:possessives-basic",
-      "p:sonar-con"
+      "l:siempre",
+      "l:soñar",
+      "p:frequency-scale",
+      "p:para-inf",
+      "p:sonar-con",
+      "p:sonar-con-ganas"
     ],
     "targets": [
       "l:expediente",
@@ -13246,20 +13243,21 @@
   },
   {
     "id": "u40-0501",
-    "es": "Santa Marta tiene una costa caribe de playas tranquilas.",
-    "en": "Santa Marta has a Caribbean coast of calm beaches.",
+    "es": "Santa Marta es la ciudad más antigua de la costa caribe.",
+    "en": "Santa Marta is the oldest city on the Caribbean coast.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
       "g:adjective-agreement",
       "g:gender-articles",
-      "g:stem-boot",
+      "g:ser-identity",
+      "g:superlatives",
+      "l:antiguo",
       "l:caribe",
+      "l:ciudad",
       "l:costa",
-      "l:playa",
-      "l:tener",
-      "l:tranquilo"
+      "l:ser",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "l:caribe"
@@ -13303,21 +13301,23 @@
   },
   {
     "id": "u40-0503",
-    "es": "El mar caribe es más cálido de lo que pensaba.",
-    "en": "The Caribbean sea is warmer than I thought.",
+    "es": "El agua caribe es más cálida de lo que pensaba.",
+    "en": "The Caribbean water is warmer than I thought.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:comparatives",
       "g:gender-articles",
       "g:imperfect-habitual",
       "g:relatives-donde-lo-que",
       "g:ser-identity",
+      "l:agua",
       "l:caribe",
       "l:cálido",
-      "l:mar",
       "l:pensar",
-      "l:ser"
+      "l:ser",
+      "p:el-agua-fria"
     ],
     "targets": [
       "l:caribe"
@@ -13527,12 +13527,14 @@
   },
   {
     "id": "u40-0512",
-    "es": "Con corte de luz, el ascensor no funciona.",
-    "en": "With a power cut, the elevator doesn't work.",
+    "es": "Cuando hay corte de luz, el ascensor no funciona.",
+    "en": "When there's a power cut, the elevator doesn't work.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
       "g:gender-articles",
+      "g:hay-vs-esta",
       "g:present-ar",
       "l:ascensor",
       "l:corte",
@@ -13550,8 +13552,8 @@
   },
   {
     "id": "u40-0513",
-    "es": "Hubo cortes de luz justo cuando Vale sacaba el pan del horno.",
-    "en": "There were power cuts just as Vale was taking the bread out of the oven.",
+    "es": "Hubo un corte de luz justo cuando Vale sacaba el pan del horno.",
+    "en": "There was a power cut just as Vale was taking the bread out of the oven.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13564,7 +13566,9 @@
       "l:luz",
       "l:pan",
       "l:sacar",
-      "p:cuando-basic"
+      "p:cuando-basic",
+      "p:el-orden-la-orden",
+      "p:event-ser-en"
     ],
     "targets": [
       "l:corte"
@@ -13735,17 +13739,19 @@
   },
   {
     "id": "u40-0520",
-    "es": "El alimento favorito de Simón es la fruta.",
-    "en": "Simón's favorite food is fruit.",
+    "es": "La fruta es el mejor alimento para Simón.",
+    "en": "Fruit is the best food for Simón.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
+      "g:superlatives",
       "l:alimento",
-      "l:favorito",
       "l:fruta",
-      "l:ser"
+      "l:mejor",
+      "l:ser",
+      "p:para-inf"
     ],
     "targets": [
       "l:alimento"
@@ -13757,18 +13763,19 @@
   },
   {
     "id": "u40-0521",
-    "es": "Los pescadores nos dan casi todo el alimento del pueblo.",
-    "en": "The fishermen give us almost all of the village's food.",
+    "es": "Casi todo el alimento del pueblo lo traen los pescadores.",
+    "en": "The fishermen bring almost all the village's food.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:direct-objects",
       "g:gender-articles",
-      "g:present-ar",
+      "g:present-er-ir",
       "l:alimento",
-      "l:dar",
       "l:pescador",
       "l:pueblo",
-      "p:me-te-nos-objects"
+      "l:traer",
+      "p:llevar-traer"
     ],
     "targets": [
       "l:alimento",
@@ -14190,20 +14197,25 @@
   },
   {
     "id": "u40-0538",
-    "es": "Los niños tienen diversión asegurada con una pelota y una ola.",
-    "en": "The kids have fun guaranteed with a ball and a wave.",
+    "es": "Con una pelota y una buena ola, los niños tienen diversión para toda la tarde.",
+    "en": "With a ball and a good wave, the kids have fun for the whole afternoon.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
       "g:gender-articles",
       "g:stem-boot",
-      "l:asegurar",
+      "l:buena",
       "l:diversión",
       "l:niño",
       "l:ola",
       "l:pelota",
-      "l:tener"
+      "l:tarde",
+      "l:tener",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:para-inf",
+      "p:todos-los-dias"
     ],
     "targets": [
       "l:diversión",
@@ -14293,8 +14305,8 @@
   },
   {
     "id": "u40-0542",
-    "es": "Mucha diversión y poco dormir. Así fue el viaje.",
-    "en": "Lots of fun and little sleep. That's how the trip was.",
+    "es": "Mucha diversión y pocas horas de sueño. Así fue el viaje.",
+    "en": "Lots of fun and few hours of sleep. That's how the trip was.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14302,9 +14314,11 @@
       "g:preterite-ser-ir-hacer",
       "g:ser-identity",
       "l:diversión",
-      "l:dormir",
+      "l:hora",
       "l:ser",
+      "l:sueño",
       "l:viaje",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -14477,23 +14491,21 @@
   },
   {
     "id": "u40-0549",
-    "es": "En alta mar, el socorro está lejos y nadie lo oye.",
-    "en": "On the open sea, help is far away and nobody hears you.",
+    "es": "En alta mar, el socorro puede tardar horas.",
+    "en": "On the open sea, help can take hours.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:oiga-oye",
       "g:adjective-agreement",
-      "g:direct-objects",
-      "g:estar-location-states",
       "g:gender-articles",
+      "g:stem-boot",
+      "g:verb-infinitive",
       "l:alto",
-      "l:estar",
-      "l:lejos",
+      "l:hora",
       "l:mar",
-      "l:oír",
+      "l:poder",
       "l:socorro",
-      "p:cerca-de"
+      "l:tardar"
     ],
     "targets": [
       "l:socorro"
@@ -14505,20 +14517,18 @@
   },
   {
     "id": "u40-0550",
-    "es": "El pino más alto de la montaña tenía niebla arriba.",
-    "en": "The tallest pine on the mountain had fog at the top.",
+    "es": "El pino más alto desaparecía en la niebla.",
+    "en": "The tallest pine disappeared into the fog.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:imperfect-states",
+      "g:imperfect-habitual",
       "g:superlatives",
       "l:alto",
-      "l:arriba",
-      "l:montaña",
+      "l:desaparecer",
       "l:niebla",
-      "l:pino",
-      "l:tener"
+      "l:pino"
     ],
     "targets": [
       "l:niebla",
@@ -14878,7 +14888,7 @@
   },
   {
     "id": "u40-0565",
-    "es": "Del hotel se ve el noroeste de la ciudad.",
+    "es": "Desde el hotel se ve el noroeste de la ciudad.",
     "en": "From the hotel you can see the northwest of the city.",
     "accept": [],
     "acceptEn": [],
@@ -15176,7 +15186,7 @@
   {
     "id": "u40-0577",
     "es": "Me siento cómodo con Yesid; habla sin prisa.",
-    "en": "I feel comfortable with Yesid; he talks without hurry.",
+    "en": "I feel comfortable with Yesid; he talks unhurriedly.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15350,15 +15360,14 @@
   },
   {
     "id": "u40-0584",
-    "es": "Este pan está suave por dentro y caliente.",
-    "en": "This bread is soft inside and warm.",
+    "es": "Este pan está caliente y suave por dentro.",
+    "en": "This bread is warm and soft inside.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:commands-usted",
       "g:estar-location-states",
       "g:por-para-1",
-      "l:calentar",
+      "l:caliente",
       "l:dentro",
       "l:estar",
       "l:pan",
@@ -15399,19 +15408,18 @@
   },
   {
     "id": "u40-0586",
-    "es": "Su voz suave nos hizo bajar la voz.",
-    "en": "Her soft voice made us lower our own.",
+    "es": "Hablaba con una voz tan suave que todos nos callamos.",
+    "en": "She spoke in such a soft voice that we all went quiet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
-      "l:bajar",
-      "l:hacer",
+      "g:imperfect-habitual",
+      "g:that-clauses",
+      "l:callamos",
+      "l:hablar",
       "l:suave",
-      "l:voz",
-      "p:me-te-nos-objects",
-      "p:possessives-basic"
+      "l:voz"
     ],
     "targets": [
       "l:suave"
@@ -15554,7 +15562,7 @@
   },
   {
     "id": "u40-0592",
-    "es": "Si el reto fuera menos grande, no me daría miedo.",
+    "es": "Si el reto fuera más pequeño, no me daría miedo.",
     "en": "If the challenge were smaller, I wouldn't be afraid.",
     "accept": [],
     "acceptEn": [],
@@ -15563,8 +15571,8 @@
       "g:gender-articles",
       "g:reflexive-routine",
       "l:darse",
-      "l:grande",
       "l:miedo",
+      "l:pequeño",
       "l:reto",
       "p:me-da-miedo",
       "p:me-da-miedo-que"
@@ -15579,18 +15587,16 @@
   },
   {
     "id": "u40-0593",
-    "es": "¿Aceptas el reto?\nClaro, me da miedo, pero lo acepto.",
-    "en": "Do you accept the challenge?\nOf course. It scares me, but I accept. (to a friend)",
+    "es": "¿Aceptas el reto?\nMe da miedo, pero sí, lo acepto.",
+    "en": "Do you accept the challenge? (to a friend)\nIt scares me, but yes, I accept.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:claro-listo",
       "c:me-regala",
       "g:direct-objects",
       "g:gender-articles",
       "g:present-ar",
       "l:aceptar",
-      "l:claro",
       "l:dar",
       "l:miedo",
       "l:reto",
@@ -15870,17 +15876,25 @@
   },
   {
     "id": "u40-0605",
-    "es": "Joaquín quedó ciego antes de morir.",
-    "en": "Joaquín went blind before he died.",
+    "es": "El abuelo de Yesid conocía a un pescador ciego que salía al mar todos los días.",
+    "en": "Yesid's grandfather knew a blind fisherman who went out to sea every day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:prep-infinitive",
-      "g:preterite-ar",
-      "l:antes",
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:relative-que",
+      "l:abuelo",
       "l:ciego",
-      "l:morir",
-      "l:quedar"
+      "l:conocer",
+      "l:día",
+      "l:mar",
+      "l:pescador",
+      "l:salir",
+      "p:personal-a",
+      "p:saber-conocer",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "l:ciego"
@@ -15892,14 +15906,16 @@
   },
   {
     "id": "u40-0606",
-    "es": "Mariana sospecha de ese expediente.",
-    "en": "Mariana is suspicious of that file.",
+    "es": "Mariana sospecha de una firma del expediente.",
+    "en": "Mariana is suspicious of a signature in the file.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:demonstratives",
+      "c:claro-listo",
+      "g:gender-articles",
       "g:present-ar",
       "l:expediente",
+      "l:firma",
       "l:sospechar"
     ],
     "targets": [
@@ -16273,7 +16289,7 @@
   {
     "id": "u40-0622",
     "es": "No estás de buen humor hoy, ¿verdad?\nEs que no dormí.",
-    "en": "You're not in a good mood today, are you?\nI didn't sleep. (to a friend)",
+    "en": "You're not in a good mood today, are you? (to a friend)\nIt's just that I didn't sleep.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16376,20 +16392,23 @@
   },
   {
     "id": "u40-0626",
-    "es": "Vale vive una etapa nueva desde que llegó al café.",
-    "en": "Vale has been in a new stage since she got to the café.",
+    "es": "Para Vale, llegar al café fue el comienzo de una etapa nueva.",
+    "en": "For Vale, coming to the café was the start of a new stage.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:claro-listo",
       "g:adjective-agreement",
       "g:gender-articles",
-      "g:present-er-ir",
-      "g:preterite-ar",
+      "g:preterite-ser-ir-hacer",
+      "g:ser-identity",
       "l:café",
+      "l:comienzo",
       "l:etapa",
       "l:llegar",
       "l:nuevo",
-      "l:vivir"
+      "l:ser",
+      "p:para-inf"
     ],
     "targets": [
       "l:etapa"
@@ -16401,8 +16420,8 @@
   },
   {
     "id": "u40-0627",
-    "es": "¿En qué etapa está el caso?\nEn la primera, todavía.",
-    "en": "What stage is the case at?\nThe first, still.",
+    "es": "¿En qué etapa está el caso?\nTodavía en la primera.",
+    "en": "What stage is the case at?\nStill the first.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16546,8 +16565,8 @@
   },
   {
     "id": "u40-0633",
-    "es": "La alianza de Rosa todavía está en la caja del café.",
-    "en": "Rosa's wedding band is still in the café box.",
+    "es": "La alianza de Rosa todavía está en una caja, en el café.",
+    "en": "Rosa's wedding band is still in a box at the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16569,18 +16588,22 @@
   },
   {
     "id": "u40-0634",
-    "es": "Vale mira la alianza de Tomás y no dice nada.",
-    "en": "Vale looks at Tomás's wedding band and says nothing.",
+    "es": "Vale le pregunta a Hernando por qué todavía lleva la alianza.",
+    "en": "Vale asks Hernando why he still wears his wedding band.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:oye-mira",
       "g:gender-articles",
-      "g:negation-words",
-      "g:stem-e-i",
+      "g:indirect-objects",
+      "g:indirect-questions",
+      "g:le-doubling",
+      "g:present-ar",
       "l:alianza",
-      "l:decir",
-      "l:mirar"
+      "l:llevar",
+      "l:preguntar",
+      "l:qué",
+      "p:preguntar-pedir",
+      "p:ya-todavia-basic"
     ],
     "targets": [
       "l:alianza"
@@ -16689,8 +16712,8 @@
   },
   {
     "id": "u40-0639",
-    "es": "El hueco no es muy hondo; hay que profundar el hueco.",
-    "en": "The hole isn't very deep; it has to be deepened.",
+    "es": "No es muy hondo; hay que profundar el hueco un poco más.",
+    "en": "It isn't very deep; the hole needs to be deepened a little more.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16704,6 +16727,7 @@
       "l:profundar",
       "l:ser",
       "p:no-es-nada-adj",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -16740,8 +16764,8 @@
   },
   {
     "id": "u40-0641",
-    "es": "Hay que profundar el hueco antes de la lluvia.",
-    "en": "The hole has to be deepened before the rain.",
+    "es": "Hay que profundar el canal, o el agua va a entrar a la casa.",
+    "en": "The channel has to be deepened, or the water will get into the house.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16749,10 +16773,14 @@
       "c:hay-que",
       "g:gender-articles",
       "g:hay-vs-esta",
-      "l:antes",
-      "l:hueco",
-      "l:lluvia",
-      "l:profundar"
+      "g:ir-a-plans",
+      "l:agua",
+      "l:canal",
+      "l:casa",
+      "l:entrar",
+      "l:ir",
+      "l:profundar",
+      "p:el-agua-fria"
     ],
     "targets": [
       "l:profundar"
@@ -16792,18 +16820,23 @@
   },
   {
     "id": "u40-0643",
-    "es": "Con una pala y tiempo, podemos profundar el hueco.",
-    "en": "With a shovel and time, we can deepen the hole.",
+    "es": "Yesid dice que con una pala y paciencia se puede profundar cualquier hueco.",
+    "en": "Yesid says that with a shovel and patience you can deepen any hole.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:se-puede",
+      "g:cada-cualquier",
       "g:gender-articles",
-      "g:present-er-ir",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:decir",
       "l:hueco",
+      "l:paciencia",
       "l:pala",
       "l:poder",
       "l:profundar",
-      "l:tiempo"
+      "p:se-puede-me-dejas"
     ],
     "targets": [
       "l:profundar"
@@ -16913,7 +16946,7 @@
   },
   {
     "id": "u40-0648",
-    "es": "Nadie arriesga tanto como un pescador en tormenta.",
+    "es": "Nadie arriesga tanto como un pescador en una tormenta.",
     "en": "Nobody takes risks like a fisherman in a storm.",
     "accept": [],
     "acceptEn": [],
@@ -17054,16 +17087,18 @@
   },
   {
     "id": "u40-0654",
-    "es": "La araña caminaba entre dos palmeras.",
-    "en": "The spider was walking between two palm trees.",
+    "es": "Una araña había hecho su casa entre dos palmeras.",
+    "en": "A spider had made its home between two palm trees.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:imperfect-habitual",
+      "g:pluperfect",
       "l:araña",
-      "l:caminar",
-      "l:palmera"
+      "l:casa",
+      "l:hacer",
+      "l:palmera",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:araña",
@@ -17182,7 +17217,7 @@
   },
   {
     "id": "u40-0659",
-    "es": "Compré un repelente contra el mosquito.\nPues úsalo, que hoy hay muchos.",
+    "es": "Compré un repelente contra los mosquitos.\nPues úsalo, que hoy hay muchos.",
     "en": "I bought repellent against mosquitoes.\nWell, use it, there are a lot today.",
     "accept": [],
     "acceptEn": [],
@@ -17347,20 +17382,17 @@
   },
   {
     "id": "u40-0665",
-    "es": "Escribí tu nombre en la arena y vino una ola.",
-    "en": "I wrote your name in the sand and a wave came.",
+    "es": "Una ola llenó de arena todo el libro de Mariana.",
+    "en": "A wave filled Mariana's whole book with sand.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-er-ir",
-      "g:preterite-irregular-strong",
+      "g:preterite-ar",
       "l:arena",
-      "l:escribir",
-      "l:nombre",
-      "l:ola",
-      "l:venir",
-      "p:possessives-basic"
+      "l:libro",
+      "l:llenar",
+      "l:ola"
     ],
     "targets": [
       "l:arena",
@@ -17447,8 +17479,8 @@
   },
   {
     "id": "u40-0669",
-    "es": "Compré un coco frío en la playa por dos mil pesos.",
-    "en": "I bought a cold coconut on the beach for two thousand pesos.",
+    "es": "Compré un coco frío en la playa por cinco mil pesos.",
+    "en": "I bought a cold coconut on the beach for five thousand pesos.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17691,15 +17723,17 @@
   },
   {
     "id": "u40-0679",
-    "es": "Si Yesid puede, nos lleva en su barco.",
-    "en": "If Yesid can, he'll take us on his boat.",
+    "es": "Si Yesid puede, nos lleva en el barco de su jefe.",
+    "en": "If Yesid can, he'll take us in his boss's boat.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:present-ar",
       "g:si-present",
       "g:stem-boot",
       "l:barco",
+      "l:jefe",
       "l:llevar",
       "l:poder",
       "p:llevar-traer",
@@ -17714,8 +17748,8 @@
   },
   {
     "id": "u40-0680",
-    "es": "Si Yesid pudiera, nos llevaría a la isla en su barco.",
-    "en": "If Yesid could, he would take us to the island in his boat.",
+    "es": "Si Yesid tuviera barco, nos llevaría a la isla.",
+    "en": "If Yesid had a boat, he would take us to the island.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17726,11 +17760,10 @@
       "l:barco",
       "l:isla",
       "l:llevar",
-      "l:poder",
+      "l:tener",
       "p:llevar-traer",
       "p:me-te-nos-objects",
-      "p:personal-a",
-      "p:possessives-basic"
+      "p:personal-a"
     ],
     "targets": [
       "g:imperfect-subj",
@@ -17993,7 +18026,7 @@
   {
     "id": "u40-0691",
     "es": "Si tengo plata, compro un barco.",
-    "en": "If I have money, I buy a boat.",
+    "en": "If I have money, I'll buy a boat.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18016,7 +18049,7 @@
   {
     "id": "u40-0692",
     "es": "Si no ganamos el caso, perdemos el edificio.",
-    "en": "If we don't win the case, we lose the building.",
+    "en": "If we don't win the case, we'll lose the building.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18304,18 +18337,17 @@
   },
   {
     "id": "u40-0704",
-    "es": "Ojalá tuviera un barco tan bueno como el barco de Yesid.",
-    "en": "I wish I had a boat as good as Yesid's boat.",
+    "es": "Ojalá Yesid tuviera su propio barco.",
+    "en": "I wish Yesid had his own boat.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ojala",
-      "g:comparatives",
-      "g:gender-articles",
       "g:imperfect-subj",
       "l:barco",
-      "l:bueno",
-      "l:tener"
+      "l:propio",
+      "l:tener",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:imperfect-subj"
@@ -18915,8 +18947,8 @@
   },
   {
     "id": "u40-0729",
-    "es": "Si no fuera por esta ola, llegaríamos más rápido.",
-    "en": "If it weren't for this wave, we would arrive faster.",
+    "es": "Si no fuera por tanta ola, llegaríamos más rápido.",
+    "en": "If it weren't for all the waves, we would arrive faster.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18928,8 +18960,7 @@
       "l:llegar",
       "l:ola",
       "l:rápido",
-      "l:ser",
-      "p:demonstratives-basic"
+      "l:ser"
     ],
     "targets": [
       "g:imperfect-subj",
@@ -18966,17 +18997,20 @@
   },
   {
     "id": "u40-0731",
-    "es": "Si tuviera hambre, comería.",
-    "en": "If I were hungry, I would eat.",
+    "es": "Si tuviera hambre, te lo diría.",
+    "en": "If I were hungry, I'd tell you. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
+      "g:direct-objects",
+      "g:double-pronouns",
       "g:imperfect-subj",
       "g:si-hypothetical",
-      "l:comer",
+      "l:decir",
       "l:hambre",
       "l:tener",
+      "p:me-te-nos-objects",
       "p:tener-hambre"
     ],
     "targets": [
@@ -19239,13 +19273,16 @@
   },
   {
     "id": "u40-0745",
-    "es": "Tal vez fuera mejor hablar con Yesid primero.",
+    "es": "Tal vez sería mejor hablar con Yesid primero.",
     "en": "Maybe it would be better to talk to Yesid first.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:conditional",
+      "g:ser-identity",
       "l:hablar",
       "l:mejor",
+      "l:ser",
       "l:vez",
       "p:time-sequence-basic"
     ],
@@ -19335,16 +19372,20 @@
   },
   {
     "id": "u40-0749",
-    "es": "Como si nada, Vale volvió a su pan.",
-    "en": "As if nothing had happened, Vale went back to her bread.",
+    "es": "Vale volvió a su pan como si no oyera nada.",
+    "en": "Vale went back to her bread as if she couldn't hear anything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:cause-result",
+      "g:como-si",
+      "g:imperfect-subj",
+      "g:negation-words",
       "g:preterite-er-ir",
+      "l:oír",
       "l:pan",
       "l:volver",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:ver-oir-bien-mal"
     ],
     "targets": [],
     "kind": "statement",
@@ -19354,17 +19395,22 @@
   },
   {
     "id": "u40-0750",
-    "es": "Como si nada, Simón empezó a cantar.",
-    "en": "As if nothing had happened, Simón started to sing.",
+    "es": "Simón empezó a cantar, como si fuera su concierto.",
+    "en": "Simón started singing, as if it were his concert.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:cause-result",
+      "g:como-si",
+      "g:imperfect-subj",
       "g:preterite-ar",
+      "g:ser-identity",
       "g:verb-infinitive",
       "l:cantar",
+      "l:concierto",
       "l:empezar",
-      "p:empezar-terminar"
+      "l:ser",
+      "p:empezar-terminar",
+      "p:possessives-basic"
     ],
     "targets": [],
     "kind": "statement",
@@ -19374,14 +19420,20 @@
   },
   {
     "id": "u40-0751",
-    "es": "Mariana lo escuchó todo como si nada.",
-    "en": "Mariana listened to it all as if nothing had happened.",
+    "es": "Mariana lo escuchó todo sin decir nada, como si ya lo supiera.",
+    "en": "Mariana listened to it all without saying anything, as if she already knew.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:como-si",
       "g:direct-objects",
+      "g:imperfect-subj",
+      "g:prep-infinitive",
       "g:preterite-ar",
-      "l:escuchar"
+      "l:decir",
+      "l:escuchar",
+      "l:saber",
+      "p:saber-conocer"
     ],
     "targets": [],
     "kind": "statement",
@@ -19489,19 +19541,20 @@
   },
   {
     "id": "u40-0756",
-    "es": "Mariana revisó el expediente como si fuera un mapa.",
-    "en": "Mariana studied the file as if it were a map.",
+    "es": "Hernando leyó el expediente como si fuera una carta de amor.",
+    "en": "Hernando read the file as if it were a love letter.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:como-si",
       "g:gender-articles",
       "g:imperfect-subj",
-      "g:preterite-ar",
+      "g:preterite-spelling-stem",
       "g:ser-identity",
+      "l:amor",
+      "l:carta",
       "l:expediente",
-      "l:mapa",
-      "l:revisar",
+      "l:leer",
       "l:ser"
     ],
     "targets": [
@@ -19697,29 +19750,25 @@
   },
   {
     "id": "u40-0764",
-    "es": "Esta noche el mar parece negro, como si fuera de noche para siempre.",
-    "en": "Tonight the sea looks black, as if it were night forever.",
+    "es": "Esta noche el mar está tan negro que es como si no existiera.",
+    "en": "Tonight the sea is so black it's as if it didn't exist.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:como-si",
+      "g:comparatives",
+      "g:estar-location-states",
       "g:gender-articles",
       "g:imperfect-subj",
-      "g:present-er-ir",
       "g:ser-identity",
-      "l:comer",
+      "g:that-clauses",
+      "l:estar",
+      "l:existir",
       "l:mar",
       "l:negro",
       "l:noche",
-      "l:parecer",
       "l:ser",
-      "l:siempre",
-      "p:cerca-de",
-      "p:demonstratives-basic",
-      "p:es-de-noche-tarde",
-      "p:frequency-scale",
-      "p:para-inf",
-      "p:position-de"
+      "p:demonstratives-basic"
     ],
     "targets": [
       "g:como-si",
@@ -19732,11 +19781,12 @@
   },
   {
     "id": "u40-0765",
-    "es": "La luna estaba tan grande como si fuera a caerse.",
-    "en": "The moon was so big it looked as if it were going to fall.",
+    "es": "La luna estaba tan grande que era como si fuera a caerse.",
+    "en": "The moon was so big it was as if it were going to fall.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
       "g:como-si",
       "g:comparatives",
       "g:estar-location-states",
@@ -19745,11 +19795,13 @@
       "g:imperfect-subj",
       "g:ir-a-plans",
       "g:reflexive-routine",
+      "g:that-clauses",
       "l:caerse",
       "l:estar",
       "l:grande",
       "l:ir",
-      "l:luna"
+      "l:luna",
+      "l:ser"
     ],
     "targets": [
       "g:como-si",
@@ -19762,13 +19814,12 @@
   },
   {
     "id": "u40-0766",
-    "es": "El agua estaba tan transparente como si no hubiera agua.",
-    "en": "The water was so clear that it was as if there were no water.",
+    "es": "El agua estaba transparente, como si no hubiera agua.",
+    "en": "The water was clear, as if there were no water.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:como-si",
-      "g:comparatives",
       "g:estar-location-states",
       "g:gender-articles",
       "g:imperfect-states",
@@ -19789,18 +19840,18 @@
   },
   {
     "id": "u40-0767",
-    "es": "El bus iba tan lleno como si fuera el último.",
-    "en": "The bus was so full it was as if it were the last one.",
+    "es": "El bus iba lleno, como si fuera el último del día.",
+    "en": "The bus was full, as if it were the last one of the day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:como-si",
-      "g:comparatives",
       "g:gender-articles",
       "g:imperfect-habitual",
       "g:imperfect-subj",
       "g:ser-identity",
       "l:bus",
+      "l:día",
       "l:ir",
       "l:lleno",
       "l:ser"
@@ -19816,21 +19867,24 @@
   },
   {
     "id": "u40-0768",
-    "es": "Hay tanta gente en la playa como si fuera Navidad.",
-    "en": "There are so many people on the beach it's as if it were Christmas.",
+    "es": "La playa está llena de gente, como si fuera Navidad.",
+    "en": "The beach is full of people, as if it were Christmas.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
+      "g:adjective-agreement",
       "g:como-si",
+      "g:estar-location-states",
       "g:gender-articles",
-      "g:hay-vs-esta",
       "g:imperfect-subj",
       "g:ser-identity",
+      "l:estar",
       "l:gente",
+      "l:lleno",
       "l:playa",
       "l:ser",
-      "p:la-gente-singular"
+      "p:la-gente-singular",
+      "p:lleno-libre"
     ],
     "targets": [
       "g:como-si",
@@ -20305,12 +20359,11 @@
   },
   {
     "id": "u40-0790",
-    "es": "Yo no lo creo, Vale.",
+    "es": "No creo, Vale.",
     "en": "I don't think so, Vale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
       "g:present-er-ir",
       "l:creer"
     ],
@@ -20656,8 +20709,8 @@
   },
   {
     "id": "u40-0806",
-    "es": "¿Cómo reaccionaría Hernando si viera el mar por primera vez?",
-    "en": "How would Hernando react if he saw the sea for the first time?",
+    "es": "¿Cómo reaccionaría Hernando si viera a Simón en la playa?",
+    "en": "How would Hernando react if he saw Simón on the beach?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20667,12 +20720,10 @@
       "g:questions",
       "g:si-hypothetical",
       "l:cómo",
-      "l:mar",
+      "l:playa",
       "l:reaccionar",
       "l:ver",
-      "l:vez",
-      "p:ordinal-floor",
-      "p:ordinals-primer-tercer",
+      "p:personal-a",
       "p:question-word-order"
     ],
     "targets": [
@@ -20803,17 +20854,20 @@
   },
   {
     "id": "u40-0811",
-    "es": "¿Cuánto costaría un barco como el barco de Yesid?",
-    "en": "How much would a boat like Yesid's boat cost?",
+    "es": "¿Cuánto costaría un barco como el que quiere Yesid?",
+    "en": "How much would a boat like the one Yesid wants cost?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
       "g:gender-articles",
       "g:questions",
+      "g:relatives-prepositions",
+      "g:stem-boot",
       "l:barco",
       "l:costar",
       "l:cuánto",
+      "l:querer",
       "p:costar-pagar",
       "p:question-word-order"
     ],
@@ -20853,14 +20907,13 @@
   },
   {
     "id": "u40-0813",
-    "es": "¿Qué sería de nosotros sin el café?",
-    "en": "What would become of us without the café?",
+    "es": "¿Qué sería de Simón sin el café?",
+    "en": "What would become of Simón without the café?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
-      "g:prep-pronouns",
       "g:questions",
       "l:café",
       "l:qué",
@@ -20896,22 +20949,22 @@
   },
   {
     "id": "u40-0815",
-    "es": "¿Dónde estaríamos hoy si Rosa no tuviera este café?",
-    "en": "Where would we be today if Rosa didn't have this café?",
+    "es": "¿Dónde estaríamos hoy si no existiera el café de Rosa?",
+    "en": "Where would we be today if Rosa's café didn't exist?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
       "g:estar-location-states",
+      "g:gender-articles",
       "g:imperfect-subj",
       "g:questions",
       "g:si-hypothetical",
       "l:café",
       "l:dónde",
       "l:estar",
-      "l:hoy",
-      "l:tener",
-      "p:demonstratives-basic"
+      "l:existir",
+      "l:hoy"
     ],
     "targets": [
       "g:imperfect-subj",
@@ -21071,21 +21124,19 @@
   },
   {
     "id": "u40-0822",
-    "es": "¿Aceptarías ese reto, si fuera tuyo?",
-    "en": "Would you accept that challenge, if it were yours? (to a friend)",
+    "es": "¿Aceptarías ese reto si te pagaran?",
+    "en": "Would you accept that challenge if they paid you? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
       "g:demonstratives",
       "g:imperfect-subj",
-      "g:possessives-stressed",
-      "g:ser-identity",
       "g:si-hypothetical",
       "l:aceptar",
+      "l:pagar",
       "l:reto",
-      "l:ser",
-      "p:de-owner"
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:imperfect-subj",
@@ -21807,8 +21858,8 @@
   },
   {
     "id": "u40-0850",
-    "es": "¿Quién entrena a los turistas de Taganga?",
-    "en": "Who trains the tourists in Taganga?",
+    "es": "¿Quién entrena al equipo de fútbol de Taganga?",
+    "en": "Who trains the Taganga football team?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21816,8 +21867,10 @@
       "g:present-ar",
       "g:questions",
       "l:entrenar",
+      "l:equipo",
+      "l:fútbol",
       "l:quién",
-      "l:turista"
+      "p:question-word-order"
     ],
     "targets": [
       "l:entrenar"
@@ -22037,20 +22090,22 @@
   },
   {
     "id": "u40-0860",
-    "es": "¿Qué reto te gusta más, bucear o navegar?",
-    "en": "Which challenge do you like more, diving or sailing? (to a friend)",
+    "es": "¿Qué es un reto más grande para ti, bucear o navegar?",
+    "en": "What's a bigger challenge for you, diving or sailing? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:me-gusta",
-      "g:gustar-basic",
+      "g:gender-articles",
+      "g:prep-pronouns",
       "g:questions",
+      "g:ser-identity",
       "l:bucear",
-      "l:gustar",
+      "l:grande",
       "l:navegar",
       "l:qué",
       "l:reto",
-      "p:gustar-mas-que"
+      "l:ser",
+      "p:para-inf"
     ],
     "targets": [
       "l:reto"
@@ -22138,20 +22193,19 @@
   },
   {
     "id": "u40-0864",
-    "es": "¿Dónde queda el noroeste de la ciudad?",
-    "en": "Where is the northwest of the city?",
+    "es": "¿Qué barrios hay en el noroeste de la ciudad?",
+    "en": "What neighborhoods are there in the northwest of the city?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
       "g:gender-articles",
-      "g:present-ar",
+      "g:hay-vs-esta",
       "g:questions",
+      "l:barrio",
       "l:ciudad",
-      "l:dónde",
       "l:noroeste",
-      "l:quedar",
-      "p:quedar-cerca",
-      "p:question-word-order"
+      "l:qué"
     ],
     "targets": [
       "l:noroeste"
@@ -22481,7 +22535,7 @@
   {
     "id": "u40-0878",
     "es": "¿Qué te pasa? Me miras como si estuviera loco.",
-    "en": "What's up with you? You look at me as if I were crazy.",
+    "en": "What's up with you? You look at me as if I were crazy. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22639,21 +22693,21 @@
   },
   {
     "id": "u40-0884",
-    "es": "Este ascensor no funciona.\nPues empuja el botón otra vez.",
-    "en": "This elevator isn't working.\nWell, push the button again.",
+    "es": "La puerta del ascensor no abre.\nEmpújala con fuerza.",
+    "en": "The elevator door won't open.\nPush it hard. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:pues",
+      "g:commands-tu",
+      "g:commands-with-pronouns",
+      "g:direct-objects",
       "g:gender-articles",
-      "g:present-ar",
+      "g:present-er-ir",
+      "l:abrir",
       "l:ascensor",
-      "l:botón",
       "l:empujar",
-      "l:funcionar",
-      "l:vez",
-      "p:demonstratives-basic",
-      "p:otro-no-article"
+      "l:fuerza",
+      "l:puerta"
     ],
     "targets": [
       "l:ascensor",
@@ -22666,18 +22720,20 @@
   },
   {
     "id": "u40-0885",
-    "es": "¿Cuánto falta para el expediente?\nUna etapa más.",
-    "en": "How much is left of the file?\nOne more stage.",
+    "es": "¿Cuánto falta para cerrar el expediente?\nUna etapa más.",
+    "en": "How much is left before we close the file?\nOne more stage.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:questions",
+      "l:cerrar",
       "l:cuánto",
       "l:etapa",
       "l:expediente",
       "l:falta",
-      "p:para-inf"
+      "p:para-inf",
+      "p:para-inf-purpose"
     ],
     "targets": [
       "l:etapa",
@@ -22771,23 +22827,25 @@
   },
   {
     "id": "u40-0889",
-    "es": "Si vuelves a Bogotá, ¿qué harás?\nCerraré el expediente y abriré el café.",
-    "en": "If you go back to Bogotá, what will you do?\nI'll close the file and open the café.",
+    "es": "Si vuelves a Bogotá, ¿qué harás?\nLe llevaré el expediente al abogado.",
+    "en": "If you go back to Bogotá, what will you do? (to a friend)\nI'll take the file to the lawyer.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
       "g:gender-articles",
+      "g:indirect-objects",
+      "g:le-doubling",
       "g:questions",
       "g:si-present",
       "g:stem-boot",
-      "l:abrir",
-      "l:café",
-      "l:cerrar",
+      "l:abogado",
       "l:expediente",
       "l:hacer",
+      "l:llevar",
       "l:qué",
-      "l:volver"
+      "l:volver",
+      "p:llevar-traer"
     ],
     "targets": [
       "l:expediente"
@@ -22824,8 +22882,8 @@
   },
   {
     "id": "u40-0891",
-    "es": "Si fueras tú, ¿qué dirías?\nNo diría nada.",
-    "en": "If you were me, what would you say?\nI wouldn't say anything.",
+    "es": "Si fueras yo, ¿qué dirías?\nNo diría nada.",
+    "en": "If you were me, what would you say? (to a friend)\nI wouldn't say anything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22851,20 +22909,20 @@
   },
   {
     "id": "u40-0892",
-    "es": "Ojalá pudiera ir con ustedes. ¿Y tú, vienes?",
-    "en": "I wish I could go with you all. And you, are you coming? (to a friend)",
+    "es": "Ojalá pudiera ir con ustedes, pero mañana trabajo.",
+    "en": "I wish I could go with you all, but I'm working tomorrow.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
       "c:ojala",
       "g:imperfect-subj",
       "g:prep-pronouns",
-      "g:stem-boot",
+      "g:present-ar",
       "g:verb-infinitive",
       "l:ir",
+      "l:mañana",
       "l:poder",
-      "l:venir"
+      "l:trabajar"
     ],
     "targets": [
       "g:imperfect-subj"
@@ -22876,18 +22934,19 @@
   },
   {
     "id": "u40-0893",
-    "es": "Ojalá tuviera tiempo. ¿Y tú, tienes?",
-    "en": "I wish I had time. And you, do you? (to a friend)",
+    "es": "¿Tienes tiempo esta semana?\nOjalá tuviera, pero no.",
+    "en": "Do you have time this week? (to a friend)\nI wish I did, but no.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
       "c:ojala",
       "c:tienes",
       "g:imperfect-subj",
       "g:stem-boot",
+      "l:semana",
       "l:tener",
-      "l:tiempo"
+      "l:tiempo",
+      "p:demonstratives-basic"
     ],
     "targets": [
       "g:imperfect-subj"
@@ -22899,21 +22958,16 @@
   },
   {
     "id": "u40-0894",
-    "es": "Ojalá fuera domingo. ¿Qué haces hoy?",
-    "en": "I wish it were Sunday. What are you doing today? (to a friend)",
+    "es": "Ojalá fuera viernes.",
+    "en": "I wish it were Friday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ojala",
       "g:imperfect-subj",
-      "g:present-er-ir",
-      "g:questions",
       "g:ser-identity",
-      "l:domingo",
-      "l:hacer",
-      "l:hoy",
-      "l:qué",
       "l:ser",
+      "l:viernes",
       "p:days-el-lunes"
     ],
     "targets": [
@@ -22950,19 +23004,17 @@
   },
   {
     "id": "u40-0896",
-    "es": "Ojalá hiciera menos calor. ¿No tienes calor?",
-    "en": "I wish it weren't so hot. Aren't you hot? (to a friend)",
+    "es": "Con este calor, ojalá estuviéramos en Bogotá.",
+    "en": "With this heat, I wish we were in Bogotá.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ojala",
-      "c:tienes",
+      "g:estar-location-states",
       "g:imperfect-subj",
-      "g:stem-boot",
       "l:calor",
-      "l:hacer",
-      "l:tener",
-      "p:tener-hambre"
+      "l:estar",
+      "p:demonstratives-basic"
     ],
     "targets": [
       "g:imperfect-subj"
@@ -23000,23 +23052,25 @@
   },
   {
     "id": "u40-0898",
-    "es": "Ojalá viviera cerca de aquí. ¿Y usted dónde vive?",
-    "en": "I wish I lived near here. And where do you live? (polite)",
+    "es": "Ojalá viviera cerca de aquí; vendría todos los días.",
+    "en": "I wish I lived near here; I would come every day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
       "c:ojala",
+      "g:conditional",
+      "g:gender-articles",
       "g:imperfect-subj",
-      "g:present-er-ir",
-      "g:questions",
       "l:aquí",
       "l:cerca",
-      "l:dónde",
+      "l:día",
+      "l:venir",
       "l:vivir",
       "p:aqui-ahi-alla",
       "p:cerca-de",
-      "p:position-de"
+      "p:position-de",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "g:imperfect-subj"
@@ -23028,20 +23082,18 @@
   },
   {
     "id": "u40-0899",
-    "es": "Ojalá no lloviera mañana. ¿Tú qué opinas?",
-    "en": "I wish it didn't rain tomorrow. What do you think? (to a friend)",
+    "es": "Ojalá no lloviera todas las tardes.",
+    "en": "I wish it didn't rain every afternoon.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ojala",
+      "g:gender-articles",
       "g:imperfect-subj",
-      "g:present-ar",
-      "g:questions",
       "l:llover",
-      "l:mañana",
-      "l:opinar",
-      "l:qué",
-      "p:que-opinas-de"
+      "l:tarde",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "g:imperfect-subj"
@@ -23102,7 +23154,7 @@
   },
   {
     "id": "u40-0902",
-    "es": "Ojalá estuviera más cerca la playa. ¿Cuánto falta?",
+    "es": "Ojalá la playa estuviera más cerca. ¿Cuánto falta?",
     "en": "I wish the beach were closer. How much further is it?",
     "accept": [],
     "acceptEn": [],
@@ -23423,12 +23475,14 @@
   },
   {
     "id": "u40-0915",
-    "es": "Ese barco es de mi abuelo.\nEs precioso. ¿Todavía funciona?",
+    "es": "Ese barco era de mi abuelo.\nEs precioso. ¿Todavía funciona?",
     "en": "That boat was my grandfather's.\nIt's beautiful. Does it still work?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
       "g:demonstratives",
+      "g:imperfect-states",
       "g:present-ar",
       "g:ser-identity",
       "l:abuelo",
@@ -23575,7 +23629,7 @@
   },
   {
     "id": "u40-0921",
-    "es": "Ese pescador conoce a tu abuelo.\nTodo el pueblo lo conocía.",
+    "es": "Ese pescador conocía a tu abuelo.\nTodo el pueblo lo conocía.",
     "en": "That fisherman knew your grandfather.\nThe whole village knew him.",
     "accept": [],
     "acceptEn": [],
@@ -23584,7 +23638,6 @@
       "g:direct-objects",
       "g:gender-articles",
       "g:imperfect-habitual",
-      "g:present-er-ir",
       "l:abuelo",
       "l:conocer",
       "l:pescador",
@@ -23603,21 +23656,19 @@
   },
   {
     "id": "u40-0922",
-    "es": "Aquel hombre es Joaquín.\nNo, Joaquín murió hace años.",
-    "en": "That man is Joaquín.\nNo, Joaquín died years ago.",
+    "es": "¿Aquel hombre es el hermano de Joaquín?\nNo, es su primo.",
+    "en": "Is that man Joaquín's brother?\nNo, he's his cousin.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
-      "g:present-er-ir",
-      "g:preterite-spelling-stem",
+      "g:gender-articles",
       "g:ser-identity",
-      "l:año",
-      "l:hacer",
+      "l:hermano",
       "l:hombre",
-      "l:morir",
+      "l:primo",
       "l:ser",
-      "p:naci-en"
+      "p:possessives-basic"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -23778,7 +23829,7 @@
   {
     "id": "u40-0928",
     "es": "Aquel día no dije nada.\nY hoy tampoco.",
-    "en": "That day I said nothing.\nAnd today neither.",
+    "en": "That day I said nothing.\nAnd not today either.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23952,7 +24003,7 @@
   {
     "id": "u40-0935",
     "es": "Lo dicho: mañana salimos a las seis.\nYa lo sé.",
-    "en": "As said: tomorrow we leave at six.\nI already know.",
+    "en": "As I said: tomorrow we leave at six.\nI already know.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24260,8 +24311,8 @@
   },
   {
     "id": "u40-0947",
-    "es": "¿Qué le dirías a Yesid si estuviera en tu lugar?",
-    "en": "What would you say to Yesid if he were in your place? (to a friend)",
+    "es": "¿Qué le dirías a Yesid si estuvieras en mi lugar?",
+    "en": "What would you say to Yesid if you were in my place? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24477,19 +24528,18 @@
   },
   {
     "id": "u40-0955",
-    "es": "¿Qué empujarías primero, la puerta o el barco?",
-    "en": "What would you push first, the door or the boat? (to a friend)",
+    "es": "¿Empujarías el barco o esperarías a los pescadores?",
+    "en": "Would you push the boat or wait for the fishermen? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
       "g:gender-articles",
-      "g:questions",
       "l:barco",
       "l:empujar",
-      "l:puerta",
-      "l:qué",
-      "p:time-sequence-basic"
+      "l:esperar",
+      "l:pescador",
+      "p:personal-a"
     ],
     "targets": [
       "l:empujar"
@@ -24523,21 +24573,18 @@
   },
   {
     "id": "u40-0957",
-    "es": "¿Qué te daría más diversión, bucear o dormir en la playa?",
-    "en": "Which would be more fun for you, diving or sleeping on the beach? (to a friend)",
+    "es": "¿Dónde habría más diversión, en la playa o en el pueblo?",
+    "en": "Where would there be more fun, on the beach or in the village?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:conditional",
       "g:gender-articles",
+      "g:imperfect-states",
       "g:questions",
-      "l:bucear",
-      "l:dar",
       "l:diversión",
-      "l:dormir",
+      "l:dónde",
       "l:playa",
-      "l:qué",
-      "p:me-te-nos-objects"
+      "l:pueblo"
     ],
     "targets": [
       "l:diversión"
@@ -24573,24 +24620,21 @@
   },
   {
     "id": "u40-0959",
-    "es": "¿Cuál sería tu humor ideal para un viaje largo?",
-    "en": "What would be your ideal mood for a long trip? (to a friend)",
+    "es": "¿Con quién estarías de mejor humor en un viaje largo?",
+    "en": "Who would you be in a better mood with on a long trip? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
+      "g:estar-location-states",
       "g:gender-articles",
-      "g:questions",
-      "g:ser-identity",
-      "l:cuál",
+      "l:estar",
       "l:humor",
-      "l:ideal",
       "l:largo",
-      "l:ser",
+      "l:mejor",
+      "l:quién",
       "l:viaje",
-      "p:para-inf",
-      "p:possessives-basic",
-      "p:question-word-order"
+      "p:prep-questions-basic"
     ],
     "targets": [
       "l:humor"

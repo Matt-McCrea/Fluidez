@@ -2,17 +2,17 @@
   "id": "sc-u40-a",
   "unit": "u40",
   "title": "Un barco propio",
-  "brief": "You're Tomás on the beach at Taganga, meeting Yesid, a diving instructor and the grandson of Joaquín, a friend of your grandmother's. He is young and direct, so use tú. Talk about what you would do if things were different.",
+  "brief": "You're Tomás on the beach at Taganga, meeting Yesid, a diving instructor and the grandson of Joaquín, your grandmother Rosa's brother. The two old siblings stopped speaking decades ago. Yesid is young and direct, so use tú. Talk about what you would do if things were different.",
   "spare": false,
   "turns": [
     {
       "id": "t1",
-      "npc": "Yesid: Tú eres Tomás, el nieto de Rosa, ¿verdad? Yo soy Yesid, el nieto de Joaquín. Mi abuelo hablaba mucho de ella.",
-      "npcEn": "Yesid: You're Tomás, Rosa's grandson, right? I'm Yesid, Joaquín's grandson. My grandfather used to talk about her a lot.",
+      "npc": "Yesid: Tú eres Tomás, el nieto de Rosa, ¿verdad? Yo soy Yesid, el nieto de Joaquín. Somos familia, aunque nuestros abuelos no se hablaban.",
+      "npcEn": "Yesid: You're Tomás, Rosa's grandson, right? I'm Yesid, Joaquín's grandson. We're family, even though our grandparents didn't speak to each other.",
       "intent": "Say that if your grandmother were here, she would be happy to meet him.",
       "accept": [
         "Si mi abuela estuviera aquí, estaría feliz de conocerte.",
-        "Mucho gusto, Yesid. Si Rosa estuviera aquí, estaría muy feliz de verte.",
+        "Mucho gusto, Yesid. Si Rosa estuviera aquí, estaría muy feliz de conocerte.",
         "Sí, soy Tomás. Si ella estuviera aquí, se alegraría de conocerte."
       ],
       "require": [
@@ -149,8 +149,10 @@
     "c:me-encantaria",
     "c:mucho-gusto",
     "c:no-cierto",
+    "c:no-se",
     "c:si-quieres",
     "c:tienes",
+    "g:aunque-indicative",
     "g:como-si",
     "g:conditional",
     "g:direct-objects",
@@ -161,7 +163,9 @@
     "g:indirect-questions",
     "g:negation-words",
     "g:object-pronoun-position",
+    "g:passive-se",
     "g:por-para-1",
+    "g:possessives",
     "g:possessives-stressed",
     "g:prep-pronouns",
     "g:present-ar",
@@ -179,7 +183,7 @@
     "g:yo-irregular",
     "l:abrir",
     "l:abuela",
-    "l:abuelo",
+    "l:abuelos",
     "l:alegrarse",
     "l:aquí",
     "l:averiguar",
@@ -241,6 +245,7 @@
     "p:indefinites-basic",
     "p:la-gente-singular",
     "p:llevar-traer",
+    "p:masculine-plural-mixed",
     "p:me-te-nos-objects",
     "p:para-inf",
     "p:personal-a",
@@ -248,6 +253,7 @@
     "p:possessives-basic",
     "p:quantifiers-basic",
     "p:saber-conocer",
+    "p:se-reciproco",
     "p:sonar-con",
     "p:tambien-tampoco"
   ]

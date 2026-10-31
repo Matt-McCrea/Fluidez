@@ -2,7 +2,7 @@
   "id": "ch121",
   "unit": "u40",
   "title": "Tres cervezas",
-  "text": "Mariana rezaba en voz baja desde que el barco salió del muelle. No sabía nadar, y no se lo había dicho a nadie.\nMariana: Si supiera nadar, no estaría rezando.\nYesid: Tranquila, que hoy el mar está de buen humor. Nadie arriesga nada.\nPararon en una playa pequeña, de agua tan transparente que se veían los peces.\nYesid: Este era el lugar favorito de mi abuelo. Venía solo, a pensar.\nSacó una tarjeta vieja de la billetera.\nYesid: Mi tío la tenía guardada. «Hernán Duarte. Inversiones RA».\nMariana: Otra vez Ricardo Altamira.\nYesid les enseñó a bucear. Vale bajó antes que todos, como si fuera un pez. Tomás se quedó en la superficie, con la cabeza afuera.\nYesid: Si usted no mete la cabeza, no ve nada.\nTomás la metió. Debajo de él pasó una tortuga, como una señora que va a la iglesia. Tomás salió a la superficie con los ojos enormes, y la metió nuevamente.\nYesid: Este barco es de mi jefe. Si yo tuviera plata, me compraría mi propio barco.\nVale: ¿Y qué nombre le pondrías?\nYesid: Joaquín y Rosa. Los dos juntos, por fin. Si mi abuelo estuviera vivo, le daría pena todo esto: cuarenta años sin hablar con su hermana, y ahora un señor que firma con su nombre.\nTomás: Si Rosa estuviera viva, ya estaría en el barco de Duarte, con una escoba.\nYesid se rio.\nEsa noche, Tomás y Vale caminaron por la playa, bajo la luna.\nVale: Si no existiera Altamira, ¿dónde estarías ahora?\nTomás: En Toronto, probando software. Y no te conocería.\nVale: ¿Y eso te gustaría?\nTomás: No.\nTomás le quitó a Vale un poco de arena de la cara, y no retiró la mano.\nMariana venía por la arena con tres cervezas frías.\nMariana: ¿Interrumpo algo?\nTomás y Vale: ¡No!\nMariana: Lo dijeron como si fuera una canción.\nVale no miró a Tomás en toda la noche, y Tomás no miró otra cosa.\nA las once, Yesid escribió: «Mi abuela llegó antes. Quiere verlos mañana a las siete. Que el nieto de Rosa venga con hambre y sin abogado».",
+  "text": "Mariana rezaba en voz baja desde que el barco salió del muelle. No sabía nadar, y no se lo había dicho a nadie.\nMariana: Si supiera nadar, no estaría rezando.\nYesid: Tranquila, que hoy el mar está de buen humor. Nadie arriesga nada.\nPararon en una playa pequeña, de agua tan transparente que se veían los peces.\nYesid: Este era el lugar favorito de mi abuelo. Venía solo, a pensar.\nSacó una tarjeta vieja de la billetera.\nYesid: Mi tío la tenía guardada. «Hernán Duarte. Inversiones RA».\nMariana: Otra vez Ricardo Altamira.\nYesid les enseñó a bucear. Vale bajó antes que todos, como si fuera un pez. Tomás se quedó en la superficie, con la cabeza afuera.\nYesid: Si usted no mete la cabeza, no ve nada.\nTomás la metió. Debajo de él pasó una tortuga, como una señora que va a la iglesia. Tomás salió a la superficie con los ojos enormes, y la metió nuevamente.\nYesid: Este barco es de mi jefe. Si yo tuviera plata, me compraría mi propio barco.\nVale: ¿Y qué nombre le pondrías?\nYesid: Joaquín y Rosa. Los dos juntos, por fin. Si mi abuelo estuviera vivo, le daría pena todo esto: cuarenta años sin hablar con su hermana, y ahora un señor que firma con su nombre.\nTomás: Si Rosa estuviera viva, ya estaría en la oficina de Duarte, con una escoba.\nYesid se rio.\nEsa noche, Tomás y Vale caminaron por la playa, bajo la luna.\nVale: Si no existiera Altamira, ¿dónde estarías ahora?\nTomás: En Toronto, probando software. Y no te conocería.\nVale: ¿Y eso te gustaría?\nTomás: No.\nTomás le quitó a Vale un poco de arena de la cara, y no retiró la mano.\nMariana venía por la arena con tres cervezas frías.\nMariana: ¿Interrumpo algo?\nTomás y Vale: ¡No!\nMariana: Lo dijeron como si fuera una canción.\nVale no miró a Tomás en toda la noche, y Tomás no miró otra cosa.\nA las once, Yesid escribió: «Mi abuela llegó antes. Quiere verlos mañana a las siete. Que el nieto de Rosa venga con hambre y sin abogado».",
   "gloss": [
     {
       "es": "en voz baja",
@@ -143,7 +143,7 @@
     {
       "q": "What does Tomás say Rosa would do if she were alive?",
       "options": [
-        "She would already be on Duarte's boat with a broom",
+        "She would already be at Duarte's office with a broom",
         "She would sell the café",
         "She would cry",
         "She would call the police"
@@ -295,6 +295,7 @@
     "l:noche",
     "l:nombre",
     "l:nuevamente",
+    "l:oficina",
     "l:ojo",
     "l:parar",
     "l:pasar",
