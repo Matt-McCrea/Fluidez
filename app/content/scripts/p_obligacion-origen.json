@@ -31,7 +31,7 @@
       "en": "You have no obligation to stay. (to a friend)"
     }
   ],
-  "rule": "Two frames, two sources.\n\nYour own duty: *Es mi obligación* + verb, or *Estoy obligado a* + verb.\n\nSomething outside forces you: *El contrato me obliga a* + verb, *Las circunstancias nos obligaron a* + verb.\n\nTo say nothing forces you: *Nada me obliga a* + verb, or *No tengo obligación de* + verb. That means \"you don't have to\", not \"you can't\".\n\nAfter *obligar* you always need *a*. *Obligación* takes no *a*: *es mi obligación informar*.",
+  "rule": "Two frames, two sources.\n\nA duty you carry: *Es mi obligación* + verb, or *Estoy obligado a* + verb (you are bound to do it).\n\nSomething outside forces you: *El contrato me obliga a* + verb, *Las circunstancias nos obligaron a* + verb.\n\nTo say nothing forces you: *Nada me obliga a* + verb, or *No tengo obligación de* + verb. That means \"you don't have to\", not \"you can't\".\n\nAfter *obligar* you always need *a*. *Obligación* takes no *a*: *es mi obligación informar*.",
   "smallPrint": "*Obligado* is a participle: *estoy obligado*, *estamos obligadas*. It agrees with the person.",
   "readAndPick": [
     {
@@ -119,7 +119,7 @@
       "accept": [
         "Yo estoy obligado a declarar."
       ],
-      "why": "*Estar obligado a* is your own duty, with *a* before the verb."
+      "why": "Being obliged is a state you are in, so *estar*, and *a* comes before the verb."
     },
     {
       "prompt": "Type in Spanish: The contract obliges us to pay at the end of the month.",
@@ -154,7 +154,7 @@
     {
       "wrong": "Soy obligado a declarar.",
       "right": "Estoy obligado a declarar.",
-      "why": "Almost. Being obliged is a state that someone put you in, so it takes *estar*."
+      "why": "Almost. Being obliged is a state you are in, so it takes *estar*."
     },
     {
       "wrong": "El contrato me obliga declarar.",

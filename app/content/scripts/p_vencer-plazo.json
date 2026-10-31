@@ -1,174 +1,174 @@
 {
- "node": "p:vencer-plazo",
- "hook": {
-  "line": "Deadlines, passports and milk all share one verb. Tomás finds that out when a paper he needs for the café is about to run out.",
-  "es": "El plazo vence el viernes.",
-  "en": "The deadline runs out on Friday."
- },
- "examples": [
-  {
-   "es": "El plazo vence el viernes.",
-   "en": "The deadline runs out on Friday."
+  "node": "p:vencer-plazo",
+  "hook": {
+    "line": "Deadlines, passports and milk all share one verb. Tomás finds that out when a paper he needs for the café is about to run out.",
+    "es": "El plazo vence el viernes.",
+    "en": "The deadline runs out on Friday."
   },
-  {
-   "es": "La leche está vencida.",
-   "en": "The milk is past its date."
-  },
-  {
-   "es": "Se me venció el pasaporte.",
-   "en": "My passport expired."
-  },
-  {
-   "es": "¿Cuándo vence el plazo?",
-   "en": "When does the deadline run out?"
-  },
-  {
-   "es": "La garantía vence en junio.",
-   "en": "The warranty expires in June."
-  },
-  {
-   "es": "Se nos venció el arriendo.",
-   "en": "Our lease ran out."
-  }
- ],
- "rule": "*Vencer* means to run out: a deadline, a contract, a passport, milk.\n\n*Vence* says it will run out: *el plazo vence el viernes*. *Está vencido* says it already has: *la leche está vencida*. The ending matches the thing.\n\nWhen it happens to you, use the *se* that means it was not your doing: *se me venció el pasaporte*, *se nos venció el arriendo*.\n\nIn Colombia, food and papers are *vencidos*. Spain says *caducado*, so you may hear it, but *vencido* is the safe word here.",
- "smallPrint": "Teachers call *se me venció* the accidental *se*, and *vencido* a participle used as an adjective.",
- "readAndPick": [
-  {
-   "es": "El plazo vence el viernes.",
-   "options": [
-    "The deadline ran out on Friday.",
-    "The deadline runs out on Friday.",
-    "The deadline is set by Friday."
-   ],
-   "answer": 1
-  },
-  {
-   "es": "La leche está vencida.",
-   "options": [
-    "The milk is fresh.",
-    "The milk is past its date.",
-    "The milk will run out."
-   ],
-   "answer": 1
-  },
-  {
-   "es": "Se me venció el pasaporte.",
-   "options": [
-    "My passport expired.",
-    "I renewed my passport.",
-    "I lost my passport."
-   ],
-   "answer": 0
-  },
-  {
-   "es": "Se nos venció el arriendo.",
-   "options": [
-    "They ended the lease.",
-    "We signed the lease.",
-    "Our lease ran out."
-   ],
-   "answer": 2
-  },
-  {
-   "es": "¿Cuándo vence el plazo?",
-   "options": [
-    "When does the deadline run out?",
-    "Who set the deadline?",
-    "How long was the deadline?"
-   ],
-   "answer": 0
-  },
-  {
-   "es": "La garantía vence en junio.",
-   "options": [
-    "The warranty began in June.",
-    "The warranty expires in June.",
-    "The warranty covers June."
-   ],
-   "answer": 1
-  },
-  {
-   "es": "Los permisos están vencidos.",
-   "options": [
-    "The permits will expire soon.",
-    "The permit is expired.",
-    "The permits are expired."
-   ],
-   "answer": 2
-  },
-  {
-   "es": "El plazo ya venció.",
-   "options": [
-    "The deadline never runs out.",
-    "The deadline has already run out.",
-    "The deadline will run out soon."
-   ],
-   "answer": 1
-  }
- ],
- "yourTurn": [
-  {
-   "prompt": "Choose *es* or *está*: La leche ___ vencida. Type the whole sentence.",
-   "answer": "La leche está vencida.",
-   "accept": [],
-   "why": "It has reached that state, so *está*."
-  },
-  {
-   "prompt": "Say: The deadline runs out on Friday.",
-   "answer": "El plazo vence el viernes.",
-   "accept": [],
-   "why": "*Vence* is the *it* form of *vencer*."
-  },
-  {
-   "prompt": "Say: My passport expired.",
-   "answer": "Se me venció el pasaporte.",
-   "accept": [],
-   "why": "*Se me* says it happened to you, not by your choice."
-  },
-  {
-   "prompt": "Ask: When does the deadline run out?",
-   "answer": "¿Cuándo vence el plazo?",
-   "accept": [],
-   "why": "The question word comes first, then *vence*."
-  },
-  {
-   "prompt": "Say about Hernando: His permit expired.",
-   "answer": "Se le venció el permiso.",
-   "accept": [
-    "Se le venció el permiso a Hernando."
-   ],
-   "why": "*Se le* is the same idea as *se me*, but about someone else."
-  },
-  {
-   "prompt": "Make it plural: *El permiso está vencido.*",
-   "answer": "Los permisos están vencidos.",
-   "accept": [],
-   "why": "The verb and the ending both go plural."
-  },
-  {
-   "prompt": "Move it to the past: *El plazo vence mañana.*",
-   "answer": "El plazo venció ayer.",
-   "accept": [],
-   "why": "*Venció* is the past of *vence*, and *ayer* means yesterday."
-  }
- ],
- "pitfalls": [
-  {
-   "wrong": "La leche está caducada.",
-   "right": "La leche está vencida.",
-   "why": "*Caducado* is the Spain word. In Colombia, milk and papers are *vencidos*."
-  },
-  {
-   "wrong": "Yo vencí el pasaporte.",
-   "right": "Se me venció el pasaporte.",
-   "why": "You did not do it, it happened to you, so Spanish uses *se me*."
-  },
-  {
-   "wrong": "La leche es vencida.",
-   "right": "La leche está vencida.",
-   "why": "It is a state the milk has reached, so *está*, not *es*."
-  }
- ],
- "personal": "Look around you and say something that expires soon: *Se me va a vencer…* is too much for now, so try *El plazo vence…* or *Mi … está vencido.*"
+  "examples": [
+    {
+      "es": "El plazo vence el viernes.",
+      "en": "The deadline runs out on Friday."
+    },
+    {
+      "es": "La leche está vencida.",
+      "en": "The milk is past its date."
+    },
+    {
+      "es": "Se me venció el pasaporte.",
+      "en": "My passport expired."
+    },
+    {
+      "es": "¿Cuándo vence el plazo?",
+      "en": "When does the deadline run out?"
+    },
+    {
+      "es": "La garantía vence en junio.",
+      "en": "The warranty expires in June."
+    },
+    {
+      "es": "Se nos venció el arriendo.",
+      "en": "Our lease ran out."
+    }
+  ],
+  "rule": "*Vencer* means to run out: a deadline, a contract, a passport, milk.\n\n*Vence* says it will run out: *el plazo vence el viernes*. *Está vencido* says it already has: *la leche está vencida*. The ending matches the thing.\n\nWhen it happens to you, use the *se* that means it was not your doing: *se me venció el pasaporte*, *se nos venció el arriendo*.\n\nIn Colombia, food and papers are *vencidos*. Spain says *caducado*, so you may hear it, but *vencido* is the safe word here.",
+  "smallPrint": "Teachers call *se me venció* the accidental *se*, and *vencido* a participle used as an adjective.",
+  "readAndPick": [
+    {
+      "es": "El plazo vence el viernes.",
+      "options": [
+        "The deadline ran out on Friday.",
+        "The deadline runs out on Friday.",
+        "The deadline is set by Friday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La leche está vencida.",
+      "options": [
+        "The milk is fresh.",
+        "The milk is past its date.",
+        "The milk will run out."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se me venció el pasaporte.",
+      "options": [
+        "My passport expired.",
+        "I renewed my passport.",
+        "I lost my passport."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se nos venció el arriendo.",
+      "options": [
+        "They ended the lease.",
+        "We signed the lease.",
+        "Our lease ran out."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Cuándo vence el plazo?",
+      "options": [
+        "When does the deadline run out?",
+        "Who set the deadline?",
+        "How long was the deadline?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La garantía vence en junio.",
+      "options": [
+        "The warranty began in June.",
+        "The warranty expires in June.",
+        "The warranty covers June."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Los permisos están vencidos.",
+      "options": [
+        "The permits will expire soon.",
+        "The permit is expired.",
+        "The permits are expired."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El plazo ya venció.",
+      "options": [
+        "The deadline never runs out.",
+        "The deadline has already run out.",
+        "The deadline will run out soon."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *es* or *está*: La leche ___ vencida. Type the whole sentence.",
+      "answer": "La leche está vencida.",
+      "accept": [],
+      "why": "It has reached that state, so *está*."
+    },
+    {
+      "prompt": "Say: The deadline runs out on Friday.",
+      "answer": "El plazo vence el viernes.",
+      "accept": [],
+      "why": "*Vence* is the *it* form of *vencer*."
+    },
+    {
+      "prompt": "Say: My passport expired.",
+      "answer": "Se me venció el pasaporte.",
+      "accept": [],
+      "why": "*Se me* says it happened to you, not by your choice."
+    },
+    {
+      "prompt": "Ask: When does the deadline run out?",
+      "answer": "¿Cuándo vence el plazo?",
+      "accept": [],
+      "why": "The question word comes first, then *vence*."
+    },
+    {
+      "prompt": "Say about Hernando: His permit expired.",
+      "answer": "Se le venció el permiso.",
+      "accept": [
+        "Se le venció el permiso a Hernando."
+      ],
+      "why": "*Se le* is the same idea as *se me*, but about someone else."
+    },
+    {
+      "prompt": "Make it plural: *El permiso está vencido.*",
+      "answer": "Los permisos están vencidos.",
+      "accept": [],
+      "why": "The verb and the ending both go plural."
+    },
+    {
+      "prompt": "Move it to the past: *El plazo vence mañana.*",
+      "answer": "El plazo venció ayer.",
+      "accept": [],
+      "why": "*Venció* is the past of *vence*, and *ayer* means yesterday."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La leche está caducada.",
+      "right": "La leche está vencida.",
+      "why": "Almost. *Caducado* is the Spain word. In Colombia, milk and papers are *vencidos*."
+    },
+    {
+      "wrong": "Yo vencí el pasaporte.",
+      "right": "Se me venció el pasaporte.",
+      "why": "Almost. You did not do it, it happened to you, so Spanish uses *se me*."
+    },
+    {
+      "wrong": "La leche es vencida.",
+      "right": "La leche está vencida.",
+      "why": "Almost. It is a state the milk has reached, so *está*, not *es*."
+    }
+  ],
+  "personal": "Name something of yours that expires soon, or already has: *Mi … vence en …* or *Mi … está vencido.*"
 }

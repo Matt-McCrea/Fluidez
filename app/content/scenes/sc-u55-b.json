@@ -32,7 +32,7 @@
       "id": "t2",
       "npc": "Funcionaria: Primero lo primero: ¿ya tiene los estatutos?",
       "npcEn": "Clerk: First things first: do you already have the statutes?",
-      "intent": "Say the statutes are approved and signed (use: an absolute phrase like Aprobados y firmados los estatutos,).",
+      "intent": "Say the statutes are already approved and signed, opening with a participle (like Firmados los estatutos, …).",
       "accept": [
         "Aprobados los estatutos, solo falta el registro.",
         "Firmados los estatutos, vengo a entregarlos.",
@@ -43,7 +43,7 @@
           "type": "regex",
           "pattern": "\\b(aprobados|firmados|aprobado|firmado)\\b",
           "flags": "iu",
-          "label": "use an absolute phrase: aprobados / firmados + noun"
+          "label": "open with a participle: aprobados / firmados + noun"
         }
       ],
       "focus": "g:absolute-constructions",
@@ -53,17 +53,18 @@
       "id": "t3",
       "npc": "Funcionaria: Bien. Hay que entregar la solicitud con antelación, ¿sabe? Se atiende por orden de llegada.",
       "npcEn": "Clerk: Good. The application has to be submitted in advance, you know. People are served in order of arrival.",
-      "intent": "Say you have all the papers with you already, and ask if you can leave them today (use usted).",
+      "intent": "Say you knew that beforehand, so you brought everything, and ask if you can leave it today (use: de antemano).",
       "accept": [
-        "Ya tengo todo aquí. ¿Puedo dejarlo hoy?",
-        "Traigo los papeles desde antes. ¿Se los puedo dejar hoy?",
-        "Todo está listo, señora. ¿Puedo entregárselo hoy?"
+        "Lo sabía de antemano, así que traje todo. ¿Puedo dejarlo hoy?",
+        "Ya lo sabía de antemano. Aquí tengo todo. ¿Se lo puedo dejar hoy?",
+        "Sí, lo sabía de antemano y traje los papeles. ¿Puedo entregarlos hoy?"
       ],
       "require": [
         {
-          "type": "avoidsPerson",
-          "person": "tú",
-          "label": "use usted, not tú"
+          "type": "regex",
+          "pattern": "\\bde antemano\\b",
+          "flags": "iu",
+          "label": "use: de antemano"
         },
         {
           "type": "question"
@@ -98,8 +99,8 @@
     },
     {
       "id": "t5",
-      "npc": "Funcionaria: Unos cinco días hábiles. Dicho esto, el plazo para el registro vence en octubre.",
-      "npcEn": "Clerk: About five working days. That said, the deadline for registration runs out in October.",
+      "npc": "Funcionaria: Unos cinco días hábiles. Eso sí, el plazo para el registro vence en octubre.",
+      "npcEn": "Clerk: About five working days. Mind you, the deadline for registration runs out in October.",
       "intent": "Thank her and say goodbye, politely.",
       "accept": [
         "Muchas gracias, señora. Que tenga un buen día.",
@@ -133,17 +134,20 @@
     "c:tienes",
     "c:una-vez",
     "g:adjective-agreement",
+    "g:cause-result",
     "g:commands-usted",
     "g:direct-objects",
     "g:double-pronouns",
-    "g:estar-location-states",
     "g:gender-articles",
+    "g:imperfect-habitual",
     "g:indirect-objects",
     "g:object-pronoun-position",
     "g:por-para-1",
     "g:possessives",
     "g:present-ar",
     "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-irregular-strong",
     "g:questions",
     "g:se-impersonal",
     "g:stem-boot",
@@ -153,7 +157,7 @@
     "g:yo-irregular",
     "l:agradecer",
     "l:antelación",
-    "l:antes",
+    "l:antemano",
     "l:aprobar",
     "l:aquí",
     "l:atender",
@@ -165,14 +169,12 @@
     "l:cooperativa",
     "l:cuánto",
     "l:deber",
-    "l:decir",
     "l:dejar",
     "l:demora",
     "l:documento",
     "l:durar",
     "l:día",
     "l:entregar",
-    "l:estar",
     "l:estatuto",
     "l:faltar",
     "l:favor",
@@ -183,7 +185,6 @@
     "l:hábil",
     "l:inscribirse",
     "l:inscripción",
-    "l:listo",
     "l:llamar",
     "l:llegada",
     "l:necesitar",
@@ -209,7 +210,6 @@
     "l:vencer",
     "l:venir",
     "l:vez",
-    "p:ahora-bien-dicho-esto",
     "p:aproximar-cifras",
     "p:aqui-ahi-alla",
     "p:bien-bueno",

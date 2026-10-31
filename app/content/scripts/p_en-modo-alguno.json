@@ -3,12 +3,12 @@
   "hook": {
     "line": "When the board has to refuse something firmly in writing, a plain *no* sounds too casual. Formal Spanish negates with set phrases instead.",
     "es": "En modo alguno vamos a permitir que se cancele el proyecto.",
-    "en": "Under no circumstances will we allow the project to be cancelled."
+    "en": "In no way will we allow the project to be cancelled."
   },
   "examples": [
     {
       "es": "En modo alguno vamos a permitir que se cancele el proyecto.",
-      "en": "Under no circumstances will we allow the project to be cancelled."
+      "en": "In no way will we allow the project to be cancelled."
     },
     {
       "es": "En ningún momento se informó a los afectados.",
@@ -114,7 +114,7 @@
     },
     {
       "prompt": "Type it in Spanish: Nowhere is the contribution mentioned.",
-      "answer": "En parte alguna se habla del aporte.",
+      "answer": "En parte alguna se menciona el aporte.",
       "accept": [],
       "why": "*En parte alguna* means nowhere, with *alguno* after the noun."
     },

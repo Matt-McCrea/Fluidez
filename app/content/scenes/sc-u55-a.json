@@ -13,7 +13,7 @@
       "accept": [
         "Propongo que los gastos se repartan a partes iguales.",
         "Yo diría que se paguen a partes iguales entre todos los asociados.",
-        "Los gastos se reparten a partes iguales, señora Mariana."
+        "Que los gastos se repartan a partes iguales entre todos."
       ],
       "require": [
         {
@@ -28,13 +28,13 @@
     },
     {
       "id": "t2",
-      "npc": "Mariana: Anotado. Ahora el estatuto: ¿cómo quedó aprobado?",
+      "npc": "Mariana: Anotado. Ahora los estatutos: ¿cómo quedaron aprobados?",
       "npcEn": "Mariana: Noted. Now the statutes: how were they approved?",
       "intent": "Say the statutes were approved by consensus (use: por consenso).",
       "accept": [
-        "Quedó aprobado por consenso.",
-        "El estatuto se aprobó por consenso, sin votos en contra.",
-        "Se aprobó por consenso, señora."
+        "Quedaron aprobados por consenso.",
+        "Los estatutos se aprobaron por consenso, sin votos en contra.",
+        "Se aprobaron por consenso."
       ],
       "require": [
         {
@@ -49,13 +49,13 @@
     },
     {
       "id": "t3",
-      "npc": "Mariana: Falta una firma. ¿Quién es la vecina de la panadería?",
-      "npcEn": "Mariana: One signature is missing. Who is the neighbour from the bakery?",
-      "intent": "Say it is Doña Lucía, whose bakery is next to the café (use: cuya).",
+      "npc": "Mariana: Falta una firma. ¿Quién es la señora de la tienda?",
+      "npcEn": "Mariana: One signature is missing. Who is the lady from the shop?",
+      "intent": "Say it's Doña Fanny, whose shop is on this same block (use: cuya).",
       "accept": [
-        "Es doña Lucía, cuya panadería queda al lado del café.",
-        "Doña Lucía, cuya panadería está junto al café, es la asociada que falta.",
-        "Es la señora Lucía, cuya panadería está al lado."
+        "Es doña Fanny, cuya tienda queda en esta cuadra.",
+        "Doña Fanny, cuya tienda está en la misma cuadra, es la asociada que falta.",
+        "Es doña Fanny, la señora cuya tienda está aquí en la cuadra."
       ],
       "require": [
         {
@@ -74,9 +74,9 @@
       "npcEn": "Mariana: And when does the cooperative start operating, in your view?",
       "intent": "Say it starts after the signing of the statutes, using a noun rather than a verb (use: tras la firma / después de la firma).",
       "accept": [
-        "Empieza tras la firma del estatuto.",
-        "Después de la firma del estatuto, la cooperativa empieza a funcionar.",
-        "Tras la firma del estatuto, el lunes mismo."
+        "Empieza tras la firma de los estatutos.",
+        "Después de la firma de los estatutos, la cooperativa empieza a funcionar.",
+        "Tras la firma de los estatutos, el lunes mismo."
       ],
       "require": [
         {
@@ -95,8 +95,8 @@
       "npcEn": "Mariana: Perfect. The session is closed. A coffee before we go?",
       "intent": "Thank her and accept the coffee, politely.",
       "accept": [
-        "Con mucho gusto, señora. Muchas gracias por su trabajo.",
-        "Sí, gracias. Yo invito a todos, esta vez por la casa.",
+        "Con mucho gusto. Muchas gracias por su trabajo, Mariana.",
+        "Sí, gracias. Hoy invito yo.",
         "Claro, un tinto me viene bien. Gracias, Mariana."
       ],
       "require": [
@@ -134,11 +134,11 @@
     "g:preterite-ar",
     "g:questions",
     "g:reported-requests",
-    "g:se-impersonal",
     "g:ser-identity",
     "g:stem-boot",
     "g:subj-influence",
     "g:subj-wanting",
+    "g:subj-wishes",
     "g:that-clauses",
     "g:verb-infinitive",
     "g:yo-irregular",
@@ -146,15 +146,15 @@
     "l:anotar",
     "l:antes",
     "l:aprobar",
+    "l:aquí",
     "l:asociarse",
     "l:bien",
     "l:buena",
-    "l:café",
-    "l:casa",
     "l:cerrar",
     "l:claro",
     "l:consenso",
     "l:cooperativa",
+    "l:cuadra",
     "l:cuándo",
     "l:cómo",
     "l:decir",
@@ -168,14 +168,12 @@
     "l:funcionar",
     "l:gasto",
     "l:gusto",
+    "l:hoy",
     "l:igual",
     "l:invitar",
     "l:irse",
-    "l:junto",
-    "l:lado",
     "l:lunes",
     "l:pagar",
-    "l:panadería",
     "l:parte",
     "l:perfecto",
     "l:poder",
@@ -188,16 +186,15 @@
     "l:sesión",
     "l:señora",
     "l:tarde",
+    "l:tienda",
     "l:tinto",
     "l:trabajo",
-    "l:vecino",
     "l:venir",
-    "l:vez",
     "l:voto",
     "p:a-partes-iguales",
+    "p:aqui-ahi-alla",
     "p:bien-bueno",
     "p:bien-mal-vs-bueno-malo",
-    "p:cerca-de",
     "p:days-el-lunes",
     "p:demonstratives-basic",
     "p:don-dona-nombre",
@@ -206,8 +203,6 @@
     "p:gracias-por",
     "p:me-te-nos-objects",
     "p:por-consenso",
-    "p:posicion-precisa",
-    "p:position-de",
     "p:possessives-basic",
     "p:que-opinas-de",
     "p:quedar-cerca",

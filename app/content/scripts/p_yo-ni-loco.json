@@ -6,38 +6,181 @@
     "en": "Me, talk to Altamira? No way! (a man speaking)"
   },
   "examples": [
-    { "es": "¿Yo, hablar con Altamira? ¡Ni loco!", "en": "Me, talk to Altamira? No way! (a man speaking)" },
-    { "es": "¿Yo, pedirle perdón? ¡Ni loca!", "en": "Me, apologise to him? No way! (a woman speaking)" },
-    { "es": "¿Yo, trabajar el domingo? ¡Ni loco!", "en": "Me, work on Sunday? No way! (a man speaking)" },
-    { "es": "¿Yo pagando eso? ¡Jamás!", "en": "Me, paying for that? Never!" },
-    { "es": "¿Nosotros, aceptar eso? ¡Ni locos!", "en": "Us, accept that? No way! (men or a mixed group speaking)" },
-    { "es": "¿Yo, vender el café? ¡Ni loca!", "en": "Me, sell the café? No way! (a woman speaking)" }
+    {
+      "es": "¿Yo, hablar con Altamira? ¡Ni loco!",
+      "en": "Me, talk to Altamira? No way! (a man speaking)"
+    },
+    {
+      "es": "¿Yo, pedirle perdón? ¡Ni loca!",
+      "en": "Me, apologise to him? No way! (a woman speaking)"
+    },
+    {
+      "es": "¿Yo, trabajar el domingo? ¡Ni loco!",
+      "en": "Me, work on Sunday? No way! (a man speaking)"
+    },
+    {
+      "es": "¿Yo pagando eso? ¡Jamás!",
+      "en": "Me, paying for that? Never!"
+    },
+    {
+      "es": "¿Nosotros, aceptar eso? ¡Ni locos!",
+      "en": "Us, accept that? No way! (men or a mixed group speaking)"
+    },
+    {
+      "es": "¿Yo, vender el café? ¡Ni loca!",
+      "en": "Me, sell the café? No way! (a woman speaking)"
+    }
   ],
   "rule": "This is not a real question. You echo the idea back with *yo* and a plain verb, like \"Me, do that?\", and then reject it.\n\nThe echo is *¿Yo, trabajar el domingo?*: just *yo* and the plain *-r* verb, with no \"do I\" or \"would I\". With *-ando* you get a more scornful picture: *¿Yo pagando eso?*\n\nThen comes *¡Ni loco!*, literally \"not even crazy\". It agrees with whoever speaks: *loco* for a man, *loca* for a woman, *locos* or *locas* for a group. *¡Jamás!* (never) is the stronger alternative.\n\nThis is for family, friends and arguments, not for your boss.",
   "smallPrint": "Teachers call the echo a bare infinitive used for rejection. *Ni loco* is a negative exclamation that agrees with the speaker.",
   "readAndPick": [
-    { "es": "¿Yo, vender el café? ¡Ni loca!", "options": ["Me, sell the café? No way! (a man speaking)", "Me, sell the café? No way! (a woman speaking)", "Us, sell the café? No way! (a group speaking)"], "answer": 1 },
-    { "es": "¿Yo, trabajar el domingo? ¡Ni loco!", "options": ["Me, work on Sunday? No way! (a woman speaking)", "Us, work on Sunday? No way! (a group speaking)", "Me, work on Sunday? No way! (a man speaking)"], "answer": 2 },
-    { "es": "¿Nosotros, aceptar eso? ¡Ni locos!", "options": ["Me, accept that? No way! (a man speaking)", "Us, accept that? No way! (men or a mixed group speaking)", "Us, accept that? No way! (women speaking)"], "answer": 1 },
-    { "es": "¿Nosotras, pagar más? ¡Ni locas!", "options": ["Us, pay more? No way! (women speaking)", "Us, pay more? No way! (men speaking)", "Me, pay more? No way! (a woman speaking)"], "answer": 0 },
-    { "es": "¿Yo pagando eso? ¡Jamás!", "options": ["I paid for that? Never!", "Me, paying for that? Never!", "Will I pay for that? Never!"], "answer": 1 },
-    { "es": "¿Yo, firmar ese contrato? ¡Ni loca!", "options": ["Me, sign that contract? No way! (a woman speaking)", "Me, sign that contract? No way! (a man speaking)", "Me, sign this contract? No way! (a woman speaking)"], "answer": 0 },
-    { "es": "¿Yo, hablar con Altamira? ¡Ni loco!", "options": ["Me, talk to Altamira? No way! (a woman speaking)", "Me, talk to Don Hernando? No way! (a man speaking)", "Me, talk to Altamira? No way! (a man speaking)"], "answer": 2 },
-    { "es": "¿Ustedes, aceptar ese precio? ¡Ni locos!", "options": ["You (all), accept that price? No way! (men or a mixed group speaking)", "Us, accept that price? No way! (men or a mixed group speaking)", "You (all), accept that price? No way! (women speaking)"], "answer": 0 }
+    {
+      "es": "¿Yo, vender el café? ¡Ni loca!",
+      "options": [
+        "Me, sell the café? No way! (a man speaking)",
+        "Me, sell the café? No way! (a woman speaking)",
+        "Us, sell the café? No way! (a group speaking)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Yo, trabajar el domingo? ¡Ni loco!",
+      "options": [
+        "Me, work on Sunday? No way! (a woman speaking)",
+        "Us, work on Sunday? No way! (a group speaking)",
+        "Me, work on Sunday? No way! (a man speaking)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Nosotros, aceptar eso? ¡Ni locos!",
+      "options": [
+        "Me, accept that? No way! (a man speaking)",
+        "Us, accept that? No way! (men or a mixed group speaking)",
+        "Us, accept that? No way! (women speaking)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Nosotras, pagar más? ¡Ni locas!",
+      "options": [
+        "Us, pay more? No way! (women speaking)",
+        "Us, pay more? No way! (men speaking)",
+        "Me, pay more? No way! (a woman speaking)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Yo pagando eso? ¡Jamás!",
+      "options": [
+        "I paid for that? Never!",
+        "Me, paying for that? Never!",
+        "Will I pay for that? Never!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Yo, firmar ese contrato? ¡Ni loca!",
+      "options": [
+        "Me, sign that contract? No way! (a woman speaking)",
+        "Me, sign that contract? No way! (a man speaking)",
+        "Me, sign this contract? No way! (a woman speaking)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Yo, hablar con Altamira? ¡Ni loco!",
+      "options": [
+        "Me, talk to Altamira? No way! (a woman speaking)",
+        "Me, talk to Don Hernando? No way! (a man speaking)",
+        "Me, talk to Altamira? No way! (a man speaking)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Yo, prestarle plata a Yesid? ¡Ni loca!",
+      "options": [
+        "Me, lend Yesid money? No way! (a man speaking)",
+        "Me, lend Yesid money? No way! (a woman speaking)",
+        "Us, lend Yesid money? No way! (women speaking)"
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
-    { "prompt": "You are a woman. Pick *loco* or *loca* and type the sentence: *¿Yo, vender el café? ¡Ni ___!*", "answer": "¿Yo, vender el café? ¡Ni loca!", "accept": ["¿Yo vender el café? ¡Ni loca!"], "why": "A woman speaking uses *loca*." },
-    { "prompt": "Type in Spanish (a man speaking): Me, work on Sunday? No way!", "answer": "¿Yo, trabajar el domingo? ¡Ni loco!", "accept": ["¿Yo trabajar el domingo? ¡Ni loco!"], "why": "*Yo* plus the plain verb echoes the idea; *loco* because a man speaks." },
-    { "prompt": "Type in Spanish (a woman speaking): Me, sign that contract? No way!", "answer": "¿Yo, firmar ese contrato? ¡Ni loca!", "accept": ["¿Yo firmar ese contrato? ¡Ni loca!"], "why": "*Firmar* stays plain, and *loca* matches the speaker." },
-    { "prompt": "Type in Spanish (men or a mixed group speaking): Us, accept that? No way!", "answer": "¿Nosotros, aceptar eso? ¡Ni locos!", "accept": ["¿Nosotros aceptar eso? ¡Ni locos!"], "why": "A group speaking takes *locos*." },
-    { "prompt": "Type in Spanish (a man speaking): Me, talk to Altamira? No way!", "answer": "¿Yo, hablar con Altamira? ¡Ni loco!", "accept": ["¿Yo hablar con Altamira? ¡Ni loco!"], "why": "Echo with *yo*, then reject with *¡Ni loco!*." },
-    { "prompt": "Make a woman say it: *¿Yo, hablar con Altamira? ¡Ni loco!* Say: Me, talk to Altamira? No way! (a woman speaking)", "answer": "¿Yo, hablar con Altamira? ¡Ni loca!", "accept": ["¿Yo hablar con Altamira? ¡Ni loca!"], "why": "Only the ending changes: *loco* becomes *loca*." },
-    { "prompt": "Type in Spanish: Me, paying for that? Never!", "answer": "¿Yo pagando eso? ¡Jamás!", "accept": ["¿Yo, pagando eso? ¡Jamás!"], "why": "*Pagando* gives the scornful picture, and *¡Jamás!* does not change." }
+    {
+      "prompt": "You are a woman. Pick *loco* or *loca* and type the sentence: *¿Yo, vender el café? ¡Ni ___!*",
+      "answer": "¿Yo, vender el café? ¡Ni loca!",
+      "accept": [
+        "¿Yo vender el café? ¡Ni loca!"
+      ],
+      "why": "A woman speaking uses *loca*."
+    },
+    {
+      "prompt": "Type in Spanish (a man speaking): Me, work on Sunday? No way!",
+      "answer": "¿Yo, trabajar el domingo? ¡Ni loco!",
+      "accept": [
+        "¿Yo trabajar el domingo? ¡Ni loco!"
+      ],
+      "why": "*Yo* plus the plain verb echoes the idea; *loco* because a man speaks."
+    },
+    {
+      "prompt": "Type in Spanish (a woman speaking): Me, sign that contract? No way!",
+      "answer": "¿Yo, firmar ese contrato? ¡Ni loca!",
+      "accept": [
+        "¿Yo firmar ese contrato? ¡Ni loca!"
+      ],
+      "why": "*Firmar* stays plain, and *loca* matches the speaker."
+    },
+    {
+      "prompt": "Type in Spanish (men or a mixed group speaking): Us, accept that? No way!",
+      "answer": "¿Nosotros, aceptar eso? ¡Ni locos!",
+      "accept": [
+        "¿Nosotros aceptar eso? ¡Ni locos!"
+      ],
+      "why": "A group speaking takes *locos*."
+    },
+    {
+      "prompt": "Type in Spanish (a man speaking): Me, talk to Altamira? No way!",
+      "answer": "¿Yo, hablar con Altamira? ¡Ni loco!",
+      "accept": [
+        "¿Yo hablar con Altamira? ¡Ni loco!"
+      ],
+      "why": "Echo with *yo*, then reject with *¡Ni loco!*."
+    },
+    {
+      "prompt": "Make a woman say it: *¿Yo, hablar con Altamira? ¡Ni loco!* Say: Me, talk to Altamira? No way! (a woman speaking)",
+      "answer": "¿Yo, hablar con Altamira? ¡Ni loca!",
+      "accept": [
+        "¿Yo hablar con Altamira? ¡Ni loca!"
+      ],
+      "why": "Only the ending changes: *loco* becomes *loca*."
+    },
+    {
+      "prompt": "Type in Spanish: Me, paying for that? Never!",
+      "answer": "¿Yo pagando eso? ¡Jamás!",
+      "accept": [
+        "¿Yo, pagando eso? ¡Jamás!"
+      ],
+      "why": "*Pagando* gives the scornful picture, and *¡Jamás!* does not change."
+    }
   ],
   "pitfalls": [
-    { "wrong": "¿Yo, trabajo el domingo? ¡Ni loco!", "right": "¿Yo, trabajar el domingo? ¡Ni loco!", "why": "Almost. The echo uses the plain *-r* verb, not a conjugated one." },
-    { "wrong": "¡No loco!", "right": "¡Ni loco!", "why": "Almost. The set phrase uses *ni*, meaning \"not even\"." },
-    { "wrong": "¿Yo, vender el café? ¡Ni loco!", "right": "¿Yo, vender el café? ¡Ni loca!", "why": "Almost. When a woman speaks, *loco* becomes *loca*." }
+    {
+      "wrong": "¿Yo, trabajo el domingo? ¡Ni loco!",
+      "right": "¿Yo, trabajar el domingo? ¡Ni loco!",
+      "why": "Almost. The echo uses the plain *-r* verb, not a conjugated one."
+    },
+    {
+      "wrong": "¡No loco!",
+      "right": "¡Ni loco!",
+      "why": "Almost. The set phrase uses *ni*, meaning \"not even\"."
+    },
+    {
+      "wrong": "¿Yo, vender el café? ¡Ni loco!",
+      "right": "¿Yo, vender el café? ¡Ni loca!",
+      "why": "Almost. When a woman speaks, *loco* becomes *loca*."
+    }
   ],
   "personal": "Think of something a friend might ask you to do that you would never do, and answer it with *¿Yo, …? ¡Ni loco!* or *¡Ni loca!*."
 }

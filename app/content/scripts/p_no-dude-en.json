@@ -7,8 +7,8 @@
   },
   "examples": [
     {
-      "es": "No dude en llamarnos si surge cualquier problema.",
-      "en": "Do not hesitate (formal) to call us if any problem arises."
+      "es": "No dude en llamarnos si surge algún problema.",
+      "en": "Do not hesitate (formal) to call us if any problem comes up."
     },
     {
       "es": "No dude en llamarme si tiene alguna pregunta.",
@@ -75,10 +75,10 @@
       "answer": 0
     },
     {
-      "es": "No dude en llamarnos si surge cualquier problema.",
+      "es": "No dude en llamarnos si surge algún problema.",
       "options": [
-        "Do not hesitate (formal) to call us if any problem arises.",
-        "Do not hesitate (informal) to call us if any problem arises."
+        "Do not hesitate (formal) to call us if any problem comes up.",
+        "Do not hesitate (informal) to call us if any problem comes up."
       ],
       "answer": 0
     },

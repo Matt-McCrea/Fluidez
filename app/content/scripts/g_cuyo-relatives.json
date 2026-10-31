@@ -15,8 +15,8 @@
       "en": "I know a woman whose son works at City Hall."
     },
     {
-      "es": "Es una tienda cuyas empleadas son todas mujeres.",
-      "en": "It's a shop whose employees are all women."
+      "es": "Es una tienda cuyas empleadas son todas de Cali.",
+      "en": "It's a shop whose employees are all from Cali."
     },
     {
       "es": "Don Hernando, cuyo carro tiene treinta años, nunca llega tarde.",
@@ -98,11 +98,11 @@
       "answer": 2
     },
     {
-      "es": "Conozco a unos socios cuyo voto fue decisivo.",
+      "es": "Conozco a unos socios cuyos votos fueron decisivos.",
       "options": [
-        "I know some members whose vote was decisive.",
         "I know some members whose votes were decisive.",
-        "I know a member whose vote was decisive."
+        "I know a member whose votes were decisive.",
+        "I know some members who voted for a decision."
       ],
       "answer": 0
     }
@@ -115,8 +115,8 @@
     },
     {
       "prompt": "Pick *cuya* or *cuyas* and type the whole sentence: *Es una tienda ___ empleadas son todas mujeres.*",
-      "answer": "Es una tienda cuyas empleadas son todas mujeres.",
-      "why": "*Empleadas* is feminine and plural, so *cuyas*."
+      "answer": "Es una tienda cuyas empleadas son todas de Cali.",
+      "why": "*Empleadas* is feminine and plural, so *cuyas*, whatever the shop is."
     },
     {
       "prompt": "Type in Spanish: I know a woman whose son works at City Hall.",
@@ -167,7 +167,7 @@
     {
       "wrong": "El edificio, cuyos los dueños viven en Miami, será vendido.",
       "right": "El edificio, cuyos dueños viven en Miami, será vendido.",
-      "why": "Almost. *Cuyo* already means \"whose the\", so no *los* follows it."
+      "why": "Almost. *Cuyo* already does the job of *los*, so no article follows it."
     },
     {
       "wrong": "¿Cuyo carro es este?",

@@ -6,25 +6,106 @@
     "en": "The profits are split equally."
   },
   "examples": [
-    { "es": "Las ganancias se reparten a partes iguales.", "en": "The profits are split equally." },
-    { "es": "Cada socio recibe en proporción a su aporte.", "en": "Each partner receives a share in proportion to their contribution." },
-    { "es": "Pagamos la cuenta a partes iguales.", "en": "We split the bill equally." },
-    { "es": "La herencia se dividió a partes iguales.", "en": "The inheritance was divided equally." },
-    { "es": "Las ganancias se reparten en proporción al aporte de cada socio.", "en": "The profits are split in proportion to each partner's contribution." },
-    { "es": "¿Se reparte a partes iguales o en proporción al aporte?", "en": "Is it split equally or in proportion to the contribution?" }
+    {
+      "es": "Las ganancias se reparten a partes iguales.",
+      "en": "The profits are split equally."
+    },
+    {
+      "es": "Cada socio recibe una parte en proporción a su aporte.",
+      "en": "Each partner receives a share in proportion to their contribution."
+    },
+    {
+      "es": "Pagamos la cuenta a partes iguales.",
+      "en": "We split the bill equally."
+    },
+    {
+      "es": "La herencia se dividió a partes iguales.",
+      "en": "The inheritance was divided equally."
+    },
+    {
+      "es": "Las ganancias se reparten en proporción al aporte de cada socio.",
+      "en": "The profits are split in proportion to each partner's contribution."
+    },
+    {
+      "es": "¿Se reparte a partes iguales o en proporción al aporte?",
+      "en": "Is it split equally or in proportion to the contribution?"
+    }
   ],
   "rule": "Two different ideas, two frames. They are not synonyms.\n\n*a partes iguales*: everyone gets the same share. Literally \"in equal parts\".\n*en proporción a* + what counts: each gets more or less depending on it, like *en proporción al aporte*.\n\nThey go with verbs of sharing out: *repartir*, *dividir*, *pagar*. The usual form is the *se* one: *Se reparte a partes iguales*. English \"equally\" is one word; Spanish needs the whole phrase, with *partes* in the plural.",
   "smallPrint": "Both belong to the formal register of statutes and inheritance documents. *En proporción a* turns into *al* before *el*: *en proporción al aporte*.",
   "readAndPick": [
-    { "es": "Las ganancias se reparten a partes iguales.", "options": ["Everyone gets the same share.", "Whoever put in more gets more."], "answer": 0 },
-    { "es": "Las ganancias se reparten en proporción al aporte de cada socio.", "options": ["Everyone gets the same share.", "Whoever put in more gets more."], "answer": 1 },
-    { "es": "Pagamos la cuenta a partes iguales.", "options": ["We each paid what we ate.", "We split the bill equally."], "answer": 1 },
-    { "es": "La herencia se dividió a partes iguales.", "options": ["The inheritance was divided equally.", "The inheritance was divided according to need."], "answer": 0 },
-    { "es": "Cada socio recibe en proporción a su aporte.", "options": ["Each partner receives the same.", "Each partner receives a share in proportion to their contribution."], "answer": 1 },
-    { "es": "¿Se reparte a partes iguales o en proporción al aporte?", "options": ["Is it split equally or in proportion to the contribution?", "Who split it, and when?"], "answer": 0 },
-    { "es": "El trabajo se reparte a partes iguales entre Vale y Tomás.", "options": ["Vale does more of the work than Tomás.", "Vale and Tomás share the work equally."], "answer": 1 },
-    { "es": "El pago se hace en proporción al tamaño del apartamento.", "options": ["The payment depends on the size of the apartment.", "Everyone pays the same, whatever the apartment."], "answer": 0 },
-    { "es": "Si todos aportan lo mismo, las ganancias se reparten a partes iguales.", "options": ["If everyone contributes the same, the profits are split equally.", "If everyone contributes differently, the profits are split equally."], "answer": 0 }
+    {
+      "es": "Las ganancias se reparten a partes iguales.",
+      "options": [
+        "Everyone gets the same share.",
+        "Whoever put in more gets more."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Las ganancias se reparten en proporción al aporte de cada socio.",
+      "options": [
+        "Everyone gets the same share.",
+        "Whoever put in more gets more."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Pagamos la cuenta a partes iguales.",
+      "options": [
+        "We each paid what we ate.",
+        "We split the bill equally."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La herencia se dividió a partes iguales.",
+      "options": [
+        "The inheritance was divided equally.",
+        "The inheritance was divided according to need."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Cada socio recibe una parte en proporción a su aporte.",
+      "options": [
+        "Each partner receives the same.",
+        "Each partner receives a share in proportion to their contribution."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Se reparte a partes iguales o en proporción al aporte?",
+      "options": [
+        "Is it split equally or in proportion to the contribution?",
+        "Who split it, and when?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El trabajo se reparte a partes iguales entre Vale y Tomás.",
+      "options": [
+        "Vale does more of the work than Tomás.",
+        "Vale and Tomás share the work equally."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El pago se hace en proporción al tamaño del apartamento.",
+      "options": [
+        "The payment depends on the size of the apartment.",
+        "Everyone pays the same, whatever the apartment."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Si todos aportan lo mismo, las ganancias se reparten a partes iguales.",
+      "options": [
+        "If everyone contributes the same, the profits are split equally.",
+        "If everyone contributes differently, the profits are split equally."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
     {
@@ -36,7 +117,9 @@
     {
       "prompt": "Choose *a partes iguales* or *en proporción al aporte* and type the whole sentence: Las ganancias se reparten ___. (The profits go by what each partner put in.)",
       "answer": "Las ganancias se reparten en proporción al aporte.",
-      "accept": ["Las ganancias se reparten en proporción al aporte de cada socio."],
+      "accept": [
+        "Las ganancias se reparten en proporción al aporte de cada socio."
+      ],
       "why": "When the share depends on the contribution, you need *en proporción a*."
     },
     {
@@ -65,7 +148,7 @@
     },
     {
       "prompt": "Say: Each partner receives a share in proportion to their contribution.",
-      "answer": "Cada socio recibe en proporción a su aporte.",
+      "answer": "Cada socio recibe una parte en proporción a su aporte.",
       "accept": [],
       "why": "*En proporción a* is followed by *su aporte*, the thing that counts."
     }
@@ -82,8 +165,8 @@
       "why": "Almost. Both words are plural: equal parts."
     },
     {
-      "wrong": "Cada socio recibe a partes iguales a su aporte.",
-      "right": "Cada socio recibe en proporción a su aporte.",
+      "wrong": "Cada socio recibe una parte a partes iguales a su aporte.",
+      "right": "Cada socio recibe una parte en proporción a su aporte.",
       "why": "Almost. A share that depends on the contribution is not equal, so it needs *en proporción a*."
     }
   ],

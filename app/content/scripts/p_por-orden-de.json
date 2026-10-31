@@ -114,9 +114,9 @@
       "why": "The criterion, *llegada*, follows *por orden de*."
     },
     {
-      "prompt": "Pick *de llegada* or *de la llegada* and type the whole sentence: *Se atiende por orden ___.*",
-      "answer": "Se atiende por orden de llegada.",
-      "why": "The criterion takes no article."
+      "prompt": "Pick *de edad* or *de la edad* and type the whole sentence: *Entran por orden ___.*",
+      "answer": "Entran por orden de edad.",
+      "why": "The criterion after *por orden* takes no article."
     },
     {
       "prompt": "Type in Spanish: The topics will be dealt with in order of priority.",

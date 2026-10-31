@@ -494,24 +494,19 @@
   },
   {
     "id": "u55-0019",
-    "es": "Yesid, cuyo abuelo era de la familia de Rosa, llegó ayer a Bogotá.",
-    "en": "Yesid, whose grandfather was from Rosa's family, arrived in Bogotá yesterday.",
+    "es": "Yesid, cuya familia vive en Taganga, llegó ayer a Bogotá.",
+    "en": "Yesid, whose family lives in Taganga, arrived in Bogotá yesterday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ayer-anoche",
-      "c:era",
       "g:cuyo-relatives",
-      "g:gender-articles",
-      "g:imperfect-states",
-      "g:pret-vs-imperfect",
+      "g:present-er-ir",
       "g:preterite-ar",
-      "g:ser-identity",
-      "l:abuelo",
       "l:ayer",
       "l:familia",
       "l:llegar",
-      "l:ser"
+      "l:vivir"
     ],
     "targets": [
       "g:cuyo-relatives"
@@ -954,7 +949,7 @@
   },
   {
     "id": "u55-0036",
-    "es": "Hay una cláusula por cuya razón nadie quiere firmar.",
+    "es": "Hay una cláusula por cuya culpa nadie quiere firmar.",
     "en": "There is a clause because of which nobody wants to sign.",
     "accept": [],
     "acceptEn": [],
@@ -967,9 +962,9 @@
       "g:stem-boot",
       "g:verb-infinitive",
       "l:cláusula",
+      "l:culpa",
       "l:firmar",
-      "l:querer",
-      "l:razón"
+      "l:querer"
     ],
     "targets": [
       "g:cuyo-relatives"
@@ -1331,23 +1326,22 @@
   },
   {
     "id": "u55-0050",
-    "es": "Vino un señor cuyo apellido olvidé, preguntaba por ti.",
-    "en": "A man came, whose surname I forgot, asking for you. (to a friend)",
+    "es": "Vino un señor, cuyo apellido olvidé, a preguntar por ti.",
+    "en": "A man whose surname I forgot came asking for you. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cuyo-relatives",
       "g:gender-articles",
-      "g:imperfect-habitual",
       "g:por-para-1",
       "g:prep-pronouns",
-      "g:pret-vs-imperfect",
       "g:preterite-ar",
+      "g:preterite-irregular-strong",
       "l:apellido",
       "l:olvidar",
       "l:preguntar",
       "l:señor",
-      "l:vino",
+      "l:venir",
       "p:preguntar-pedir"
     ],
     "targets": [
@@ -1412,19 +1406,21 @@
   },
   {
     "id": "u55-0053",
-    "es": "Necesitamos un plan cuya aprobación no depende de Altamira.",
-    "en": "We have a plan whose approval does not depend on Altamira.",
+    "es": "Necesitamos un plan cuya aprobación no dependa de Altamira.",
+    "en": "We need a plan whose approval does not depend on Altamira.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:depende",
       "g:cuyo-relatives",
       "g:gender-articles",
       "g:present-ar",
+      "g:subj-wanting",
       "l:aprobación",
       "l:depender",
       "l:necesitar",
-      "l:plan"
+      "l:plan",
+      "p:depende-de",
+      "p:depender-de"
     ],
     "targets": [
       "g:cuyo-relatives",
@@ -1464,22 +1460,22 @@
   },
   {
     "id": "u55-0055",
-    "es": "No hay nadie cuya opinión vale más que la de la asamblea.",
+    "es": "No hay nadie cuya opinión valga más que la de la asamblea.",
     "en": "There is nobody whose opinion is worth more than the assembly's.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hay",
       "c:no-hay-nada",
-      "c:vale-spain",
       "g:comparatives",
       "g:cuyo-relatives",
       "g:gender-articles",
       "g:hay-vs-esta",
       "g:negation-words",
+      "g:subj-wanting",
       "l:asamblea",
       "l:opinión",
-      "l:valer",
+      "l:valga",
       "p:los-de-la-camiseta"
     ],
     "targets": [
@@ -1517,21 +1513,24 @@
   },
   {
     "id": "u55-0057",
-    "es": "Conozco un abogado cuyo horario es cómodo.",
-    "en": "I know a lawyer whose hours are convenient.",
+    "es": "La notaría, cuyo horario es cómodo, abre también los sábados.",
+    "en": "The notary's office, whose hours are convenient, also opens on Saturdays.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:conditional",
       "g:cuyo-relatives",
+      "g:direct-objects",
       "g:gender-articles",
+      "g:present-er-ir",
       "g:ser-identity",
-      "g:yo-irregular",
-      "l:abogado",
-      "l:conocer",
+      "l:abrir",
       "l:cómodo",
       "l:horario",
+      "l:notar",
       "l:ser",
-      "p:saber-conocer"
+      "l:sábado",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:cuyo-relatives"
@@ -1760,21 +1759,23 @@
   },
   {
     "id": "u55-0066",
-    "es": "Jhon Fredy, cuyo mejor chiste es el de la piscina, aprende a bucear.",
-    "en": "Jhon Fredy, whose best joke is the one about the pool, is learning to dive.",
+    "es": "Jhon Fredy, cuyo mejor chiste es el de la piscina, aprende a tirarse de cabeza.",
+    "en": "Jhon Fredy, whose best joke is the one about the pool, is learning to dive in head first.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cuyo-relatives",
       "g:gender-articles",
       "g:present-er-ir",
+      "g:reflexive-routine",
       "g:ser-identity",
       "l:aprender",
-      "l:bucear",
+      "l:cabeza",
       "l:chiste",
       "l:mejor",
       "l:piscina",
       "l:ser",
+      "l:tirarse",
       "p:los-de-la-camiseta"
     ],
     "targets": [
@@ -4520,16 +4521,17 @@
   },
   {
     "id": "u55-0173",
-    "es": "La orden del día ya está en la mesa.",
-    "en": "The agenda is already on the table.",
+    "es": "Ya está impreso el orden del día.",
+    "en": "The agenda is already printed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
+      "g:estar-participle",
       "g:gender-articles",
       "l:día",
       "l:estar",
-      "l:mesa",
+      "l:imprimir",
       "l:orden",
       "p:el-orden-la-orden"
     ],
@@ -4860,20 +4862,22 @@
   },
   {
     "id": "u55-0187",
-    "es": "¿Por orden de qué se atiende aquí?",
-    "en": "In what order are people served here?",
+    "es": "¿Hay que pedir turno o pasan por orden de llegada?",
+    "en": "Do you need to get a ticket, or do people go in order of arrival?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
+      "c:hay-que",
       "g:por-para-1",
-      "g:questions",
-      "g:se-impersonal",
-      "g:stem-boot",
-      "l:aquí",
-      "l:atender",
+      "g:present-ar",
+      "g:verb-infinitive",
+      "l:llegada",
       "l:orden",
-      "l:qué",
-      "p:aqui-ahi-alla"
+      "l:pasar",
+      "l:pedir",
+      "l:turno",
+      "p:por-orden-de"
     ],
     "targets": [],
     "kind": "question",
@@ -5077,23 +5081,25 @@
   },
   {
     "id": "u55-0196",
-    "es": "El poder en nombre de otro agiliza el voto de los que no pueden venir.",
-    "en": "Proxy voting speeds up the vote of those who cannot come.",
+    "es": "Votar por poder agiliza la asamblea cuando muchos socios no pueden venir.",
+    "en": "Proxy voting speeds up the assembly when many members cannot come.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:por-para-1",
       "g:present-ar",
-      "g:relatives-prepositions",
       "g:stem-boot",
       "g:verb-infinitive",
       "l:agilizar",
-      "l:nombre",
+      "l:asamblea",
       "l:poder",
+      "l:socio",
       "l:venir",
-      "l:voto",
+      "l:votar",
       "p:agilizar-tramites",
-      "p:otro-no-article"
+      "p:cuando-basic",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "p:agilizar-tramites"
@@ -6537,21 +6543,21 @@
   },
   {
     "id": "u55-0255",
-    "es": "Yo, el suscrito, declaro que los datos son ciertos.",
-    "en": "I, the undersigned, declare that the information is true.",
+    "es": "El suscrito declara bajo juramento que los datos son ciertos.",
+    "en": "The undersigned declares under oath that the information is true.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
+      "g:relative-que",
       "g:ser-identity",
-      "g:that-clauses",
       "l:dato",
       "l:declarar",
+      "l:juramento",
       "l:ser",
       "l:suscribirse",
-      "p:el-suscrito",
-      "p:reporting-verbs-stance"
+      "p:el-suscrito"
     ],
     "targets": [
       "p:el-suscrito"
@@ -7242,18 +7248,17 @@
   },
   {
     "id": "u55-0282",
-    "es": "¿Se ruega aquí también apagar el celular?",
-    "en": "Is switching off your phone also requested here?",
+    "es": "¿Aquí también se ruega silencio?",
+    "en": "Is silence requested here too?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "g:present-ar",
       "g:se-impersonal",
       "g:stem-boot",
-      "l:apagar",
       "l:aquí",
-      "l:celular",
       "l:rogar",
+      "l:silenciar",
       "p:aqui-ahi-alla",
       "p:le-ruego-que",
       "p:se-ruega"
@@ -7684,7 +7689,7 @@
   {
     "id": "u55-0299",
     "es": "Cualquier duda, no dude en escribir a Mariana.",
-    "en": "Any doubt, do not hesitate to write to Mariana.",
+    "en": "Any questions, do not hesitate to write to Mariana.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8064,19 +8069,23 @@
   },
   {
     "id": "u55-0313",
-    "es": "Tiene el gusto de presentar a la junta la señora Pérez.",
-    "en": "Mrs Pérez has the pleasure of presenting to the board.",
+    "es": "La señora Pérez tiene el gusto de presentarles el informe de la junta.",
+    "en": "Mrs Pérez has the pleasure of presenting the board's report to you all.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
       "g:gender-articles",
+      "g:indirect-objects",
+      "g:object-pronoun-position",
       "g:stem-boot",
       "l:gusto",
+      "l:informe",
       "l:junta",
       "l:presentar",
       "l:señora",
       "l:tener",
+      "p:presenting-to-audience",
       "p:senor-don-article",
       "p:tener-el-gusto-de"
     ],
@@ -8091,20 +8100,20 @@
   },
   {
     "id": "u55-0314",
-    "es": "¿Tiene usted el gusto de conocer a la presidenta?",
-    "en": "Do you have the pleasure of knowing the chairwoman? (polite)",
+    "es": "¿Ya tuvo el gusto de conocer a la presidenta?",
+    "en": "Have you had the pleasure of meeting the chairwoman yet? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
       "g:gender-articles",
-      "g:stem-boot",
+      "g:preterite-irregular-strong",
       "l:conocer",
       "l:gusto",
       "l:presidente",
       "l:tener",
       "p:personal-a",
-      "p:saber-conocer"
+      "p:saber-conocer",
+      "p:tener-el-gusto-de"
     ],
     "targets": [],
     "kind": "question",
@@ -8163,26 +8172,23 @@
   },
   {
     "id": "u55-0317",
-    "es": "Mucho gusto, tengo el gusto de ser vecino suyo.",
-    "en": "Nice to meet you, I have the pleasure of being your neighbour.",
+    "es": "Mucho gusto. Es un placer tenerlo de vecino.",
+    "en": "Nice to meet you. It's a pleasure to have you as a neighbour. (polite, to a man)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:mucho-gusto",
-      "c:tengo",
+      "g:direct-objects",
       "g:gender-articles",
-      "g:possessives-stressed",
+      "g:object-pronoun-position",
       "g:ser-identity",
-      "g:yo-irregular",
       "l:gusto",
+      "l:placer",
       "l:ser",
       "l:tener",
-      "l:vecino",
-      "p:tener-el-gusto-de"
+      "l:vecino"
     ],
-    "targets": [
-      "p:tener-el-gusto-de"
-    ],
+    "targets": [],
     "kind": "dialogue",
     "unit": "u55",
     "theme": "letters, notices and polite formulas",
@@ -8729,17 +8735,19 @@
   },
   {
     "id": "u55-0340",
-    "es": "Sin otro particular, Tomás firma esta carta.",
-    "en": "With nothing further to add, Tomás signs this letter.",
+    "es": "Sin otro particular, firmo a nombre de la cooperativa.",
+    "en": "With nothing further to add, I sign on behalf of the cooperative.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:a-nombre-de",
       "c:sin-otro-particular",
+      "g:gender-articles",
       "g:present-ar",
-      "l:carta",
+      "l:cooperativa",
       "l:firmar",
-      "l:particular",
-      "p:demonstratives-basic"
+      "l:nombre",
+      "l:particular"
     ],
     "targets": [
       "c:sin-otro-particular",
@@ -10028,7 +10036,7 @@
   {
     "id": "u55-0390",
     "es": "¿Yo, trabajar el domingo? ¡Ni loco!",
-    "en": "Me, work on Sunday? No way!",
+    "en": "Me, work on Sunday? No way! (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10100,7 +10108,7 @@
   {
     "id": "u55-0393",
     "es": "¿Yo, firmar eso sin leerlo? ¡Ni loco!",
-    "en": "Me, sign that without reading it? No way!",
+    "en": "Me, sign that without reading it? No way! (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10171,7 +10179,7 @@
   {
     "id": "u55-0396",
     "es": "¿Yo, dejar solo a Simón? ¡Ni loco!",
-    "en": "Me, leave Simón alone? No way!",
+    "en": "Me, leave Simón alone? No way! (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10215,7 +10223,7 @@
   {
     "id": "u55-0398",
     "es": "¿Yo, madrugar un sábado? ¡Ni loco!",
-    "en": "Me, get up early on a Saturday? No way!",
+    "en": "Me, get up early on a Saturday? No way! (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10284,23 +10292,26 @@
   },
   {
     "id": "u55-0401",
-    "es": "¿Tú, bucear en esa piscina fría? ¡Ni loco!",
-    "en": "You, dive in that cold pool? No way! (to a friend, a man)",
+    "es": "¿Yo, ponerme corbata para la asamblea? ¡Ni loco!",
+    "en": "Me, wear a tie to the assembly? No way! (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:demonstratives",
-      "l:bucear",
-      "l:frío",
+      "g:gender-articles",
+      "g:object-pronoun-position",
+      "l:asamblea",
+      "l:corbata",
       "l:loco",
-      "l:piscina",
+      "l:poner",
+      "p:me-te-nos-objects",
       "p:ni-emphatic",
+      "p:para-inf",
       "p:yo-ni-loco"
     ],
     "targets": [
       "p:yo-ni-loco"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u55",
     "theme": "requests, complaints and no way",
     "source": "gen"
@@ -10354,7 +10365,7 @@
   {
     "id": "u55-0404",
     "es": "¿Yo, mudarme otra vez? ¡Ni loco!",
-    "en": "Me, move again? No way!",
+    "en": "Me, move again? No way! (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10424,7 +10435,7 @@
   {
     "id": "u55-0407",
     "es": "¿Yo, cantar en la asamblea? ¡Ni loco!",
-    "en": "Me, sing at the assembly? No way!",
+    "en": "Me, sing at the assembly? No way! (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10975,21 +10986,18 @@
   },
   {
     "id": "u55-0427",
-    "es": "El reglamento está formado por veinte artículos.",
-    "en": "The regulations are made up of twenty articles.",
+    "es": "El reglamento consta de veinte artículos.",
+    "en": "The regulations consist of twenty articles.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
-      "g:estar-participle",
       "g:gender-articles",
-      "g:por-para-1",
+      "g:present-ar",
       "l:artículo",
-      "l:estar",
-      "l:formar",
+      "l:constar",
       "l:reglamento",
       "p:constar-de",
-      "p:se-divide-en"
+      "p:se-entiende-por"
     ],
     "targets": [
       "l:reglamento",
@@ -11166,22 +11174,18 @@
   },
   {
     "id": "u55-0434",
-    "es": "El expediente está compuesto por cuarenta páginas.",
-    "en": "The file is made up of forty pages.",
+    "es": "El expediente consta de cuarenta páginas.",
+    "en": "The file consists of forty pages.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
-      "g:estar-participle",
       "g:gender-articles",
-      "g:por-para-1",
-      "l:componerse",
-      "l:estar",
+      "g:present-ar",
+      "l:constar",
       "l:expediente",
       "l:página",
-      "p:caracterizarse-por",
       "p:constar-de",
-      "p:se-divide-en"
+      "p:se-entiende-por"
     ],
     "targets": [
       "p:constar-de"
@@ -11220,24 +11224,20 @@
   },
   {
     "id": "u55-0436",
-    "es": "El menú del café está compuesto por cinco platos y dos postres.",
-    "en": "The café's menu is made up of five dishes and two desserts.",
+    "es": "El menú del café consta de cinco platos y dos postres.",
+    "en": "The café's menu consists of five dishes and two desserts.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
-      "g:estar-participle",
       "g:gender-articles",
-      "g:por-para-1",
+      "g:present-ar",
       "l:café",
-      "l:componerse",
-      "l:estar",
+      "l:constar",
       "l:menú",
       "l:plato",
       "l:postre",
-      "p:caracterizarse-por",
       "p:constar-de",
-      "p:se-divide-en"
+      "p:se-entiende-por"
     ],
     "targets": [
       "p:constar-de"
@@ -11275,8 +11275,8 @@
   },
   {
     "id": "u55-0438",
-    "es": "El edificio está formado por tres plantas y un patio.",
-    "en": "The building is made up of three floors and a patio.",
+    "es": "La casa está formada por dos pisos y un patio.",
+    "en": "The house is made up of two floors and a patio.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11284,11 +11284,11 @@
       "g:estar-participle",
       "g:gender-articles",
       "g:por-para-1",
-      "l:edificio",
+      "l:casa",
       "l:estar",
       "l:formar",
       "l:patio",
-      "l:planta",
+      "l:piso",
       "p:constar-de",
       "p:se-divide-en"
     ],
@@ -11980,18 +11980,22 @@
   },
   {
     "id": "u55-0465",
-    "es": "Con este voto damos fin a la asamblea.",
-    "en": "With this vote we bring the assembly to a close.",
+    "es": "La votación de hoy pone fin a una larga espera.",
+    "en": "Today's vote puts an end to a long wait.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:a-cuantas-cuotas",
+      "g:adjective-agreement",
       "g:gender-articles",
-      "g:present-ar",
-      "l:asamblea",
-      "l:dar",
+      "g:present-er-ir",
+      "l:espera",
       "l:fin",
-      "l:voto",
-      "p:demonstratives-basic"
+      "l:hoy",
+      "l:largo",
+      "l:poner",
+      "l:votación",
+      "p:dar-comienzo-poner-fin"
     ],
     "targets": [],
     "kind": "statement",
@@ -12202,17 +12206,18 @@
   },
   {
     "id": "u55-0474",
-    "es": "Se me venció la cédula y no la he renovado.",
-    "en": "My ID expired and I haven't renewed it.",
+    "es": "Se me venció el pasaporte y todavía no lo he renovado.",
+    "en": "My passport expired and I haven't renewed it yet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:todavia-no",
       "g:direct-objects",
       "g:gender-articles",
       "g:perfecto-experience",
       "g:preterite-er-ir",
       "g:se-accidental",
-      "l:cédula",
+      "l:pasaporte",
       "l:renovar",
       "l:vencer",
       "p:vencer-plazo"
@@ -12816,7 +12821,7 @@
   {
     "id": "u55-0498",
     "es": "Con posterioridad se supo la verdad.",
-    "en": "The truth was subsequently known.",
+    "en": "The truth came out later.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13638,14 +13643,17 @@
   },
   {
     "id": "u55-0531",
-    "es": "Respetemos los estatutos.",
-    "en": "Let's respect the statutes.",
+    "es": "Atengámonos a lo que dicen los estatutos.",
+    "en": "Let's abide by what the statutes say.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:relatives-donde-lo-que",
+      "g:stem-e-i",
+      "l:decir",
       "l:estatuto",
-      "l:respetar"
+      "p:ajustarse-a"
     ],
     "targets": [
       "l:estatuto"
@@ -13797,18 +13805,22 @@
   },
   {
     "id": "u55-0538",
-    "es": "Quien no cumple, paga las consecuencias.",
-    "en": "Whoever does not comply pays the consequences.",
+    "es": "Quien no se ajuste al reglamento tendrá que asumir las consecuencias.",
+    "en": "Whoever does not comply with the regulations will have to face the consequences.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-se",
+      "g:future-promises",
       "g:gender-articles",
-      "g:present-ar",
-      "g:present-er-ir",
       "g:relatives-donde-lo-que",
+      "g:verb-infinitive",
+      "l:ajuste",
+      "l:asumir",
       "l:consecuencia",
-      "l:cumplir",
-      "l:pagar"
+      "l:reglamento",
+      "l:tener",
+      "p:ajustarse-a"
     ],
     "targets": [],
     "kind": "statement",
@@ -13818,19 +13830,19 @@
   },
   {
     "id": "u55-0539",
-    "es": "Nos mantenemos en lo decidido por la asamblea.",
-    "en": "We stand by what the assembly decided.",
+    "es": "La junta se ajusta a lo decidido por la asamblea.",
+    "en": "The board abides by what the assembly decided.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:lo-adjective",
       "g:por-para-1",
-      "g:present-er-ir",
-      "g:reflexive-routine",
+      "l:ajusta",
       "l:asamblea",
       "l:decidir",
-      "l:mantenerse"
+      "l:junta",
+      "p:ajustarse-a"
     ],
     "targets": [],
     "kind": "statement",
@@ -13909,17 +13921,19 @@
   },
   {
     "id": "u55-0543",
-    "es": "La receta de Vale se ajusta a la de Rosa, casi al gramo.",
-    "en": "Vale's recipe sticks to Rosa's, almost to the gram.",
+    "es": "El diseño del letrero se ajusta a lo que exige el Instituto.",
+    "en": "The design of the sign complies with what the Institute requires.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:present-er-ir",
+      "g:relatives-donde-lo-que",
       "l:ajusta",
-      "l:gramo",
-      "l:receta",
-      "p:ajustarse-a",
-      "p:los-de-la-camiseta"
+      "l:diseño",
+      "l:exigir",
+      "l:letrero",
+      "p:ajustarse-a"
     ],
     "targets": [
       "p:ajustarse-a"
@@ -14315,21 +14329,19 @@
   },
   {
     "id": "u55-0560",
-    "es": "Falta el consenso de los herederos de Joaquín.",
-    "en": "The consensus of Joaquín's heirs is missing.",
+    "es": "Falta el consentimiento de los herederos de Joaquín.",
+    "en": "We still need the consent of Joaquín's heirs.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:consenso",
+      "l:consentimiento",
       "l:faltar",
       "l:heredero",
       "p:quedar-faltar-sobrar"
     ],
-    "targets": [
-      "l:consenso"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u55",
     "theme": "postponing, abiding by, consensus, splitting equally",
@@ -14520,14 +14532,16 @@
   },
   {
     "id": "u55-0568",
-    "es": "Cada socio recibe en proporción a su aporte.",
+    "es": "Cada socio recibe una parte en proporción a su aporte.",
     "en": "Each partner receives a share in proportion to their contribution.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
+      "g:gender-articles",
       "g:present-er-ir",
       "l:aporte",
+      "l:parte",
       "l:proporción",
       "l:recibir",
       "l:socio",
@@ -14676,20 +14690,27 @@
   },
   {
     "id": "u55-0574",
-    "es": "El voto vale lo mismo para todos, a partes iguales.",
-    "en": "The vote is worth the same for everyone, equal shares.",
+    "es": "Cada asociado tiene un voto: el poder se reparte a partes iguales.",
+    "en": "Each member has one vote: power is shared equally.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:vale-spain",
+      "c:tienes",
       "g:adjective-agreement",
+      "g:cada-cualquier",
       "g:gender-articles",
+      "g:present-er-ir",
+      "g:se-impersonal",
+      "g:stem-boot",
+      "l:asociarse",
       "l:igual",
       "l:parte",
-      "l:valer",
+      "l:poder",
+      "l:repartir",
+      "l:tener",
       "l:voto",
       "p:a-partes-iguales",
-      "p:para-inf"
+      "p:repartir-entre"
     ],
     "targets": [
       "p:a-partes-iguales"
@@ -14752,8 +14773,8 @@
   },
   {
     "id": "u55-0577",
-    "es": "Los costos de mantenimiento se reparten en proporción a cada piso.",
-    "en": "The maintenance costs are shared in proportion to each floor.",
+    "es": "Los costos de mantenimiento se reparten en proporción al tamaño de cada apartamento.",
+    "en": "The maintenance costs are shared in proportion to the size of each apartment.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14761,11 +14782,12 @@
       "g:gender-articles",
       "g:passive-se",
       "g:present-er-ir",
+      "l:apartamento",
       "l:costo",
       "l:mantenimiento",
-      "l:piso",
       "l:proporción",
       "l:repartir",
+      "l:tamaño",
       "p:a-partes-iguales",
       "p:repartir-entre"
     ],
@@ -14780,8 +14802,8 @@
   },
   {
     "id": "u55-0578",
-    "es": "Las ganancias no se pagan a partes iguales, sino según el aporte.",
-    "en": "The profits are not paid in equal parts but according to contribution.",
+    "es": "Las ganancias no se reparten a partes iguales, sino según el aporte.",
+    "en": "The profits are not split equally but according to contribution.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14791,13 +14813,14 @@
       "g:gender-articles",
       "g:passive-se",
       "g:pero-sino",
-      "g:present-ar",
+      "g:present-er-ir",
       "l:aporte",
       "l:ganancia",
       "l:igual",
-      "l:pagar",
       "l:parte",
-      "p:a-partes-iguales"
+      "l:repartir",
+      "p:a-partes-iguales",
+      "p:repartir-entre"
     ],
     "targets": [
       "l:aporte",
@@ -14914,19 +14937,19 @@
   },
   {
     "id": "u55-0583",
-    "es": "Yo pago más porque aporté más, es en proporción.",
-    "en": "I pay more because I contributed more, it's in proportion.",
+    "es": "Yo recibo más porque aporté más: es en proporción.",
+    "en": "I get more because I put in more: it's proportional.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:porque",
       "g:cause-result",
-      "g:present-ar",
+      "g:present-er-ir",
       "g:preterite-ar",
       "g:ser-identity",
       "l:aportar",
-      "l:pagar",
       "l:proporción",
+      "l:recibir",
       "l:ser"
     ],
     "targets": [],
@@ -16267,7 +16290,7 @@
   {
     "id": "u55-0642",
     "es": "Hecha la ley, hecha la trampa.",
-    "en": "Once the law is made, the loophole is made.",
+    "en": "Every law has its loophole.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16347,19 +16370,18 @@
   },
   {
     "id": "u55-0646",
-    "es": "Entregadas las llaves, Hernando se marchó sin decir adiós.",
+    "es": "Entregadas las llaves, Hernando se fue sin decir adiós.",
     "en": "The keys handed over, Hernando left without saying goodbye.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:prep-infinitive",
-      "g:preterite-ar",
-      "g:reflexive-routine",
+      "g:preterite-ser-ir-hacer",
       "l:decir",
       "l:entregar",
+      "l:irse",
       "l:llave",
-      "l:marcharse",
       "p:entregar-recoger"
     ],
     "targets": [],
@@ -16487,16 +16509,16 @@
   },
   {
     "id": "u55-0652",
-    "es": "Muerta Rosa, el café quedó en manos de Tomás.",
-    "en": "With Rosa dead, the café passed into Tomás's hands.",
+    "es": "Fallecida Rosa, el café quedó en manos de Tomás.",
+    "en": "Rosa having died, the café passed into Tomás's hands.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
       "l:café",
+      "l:fallecer",
       "l:mano",
-      "l:morir",
       "l:quedar"
     ],
     "targets": [],
@@ -16620,8 +16642,8 @@
   },
   {
     "id": "u55-0658",
-    "es": "Localizado Yesid, la familia pudo firmar.",
-    "en": "Yesid found, the family could sign.",
+    "es": "Localizado el tío, la familia pudo firmar.",
+    "en": "The uncle found, the family could sign.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16631,7 +16653,8 @@
       "l:familia",
       "l:firmar",
       "l:localizado",
-      "l:poder"
+      "l:poder",
+      "l:tío"
     ],
     "targets": [],
     "kind": "statement",
@@ -16861,8 +16884,8 @@
   },
   {
     "id": "u55-0668",
-    "es": "Cumplido el aviso con antelación, no hubo multa.",
-    "en": "With notice given in advance, there was no fine.",
+    "es": "Dado el aviso con antelación, no hubo multa.",
+    "en": "Notice having been given in advance, there was no fine.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16870,7 +16893,7 @@
       "g:imperfect-states",
       "l:antelación",
       "l:aviso",
-      "l:cumplir",
+      "l:dar",
       "l:multa",
       "p:con-antelacion",
       "p:con-sin"
@@ -17050,16 +17073,19 @@
   },
   {
     "id": "u55-0676",
-    "es": "Una vez conocida la noticia, Altamira calló.",
-    "en": "Once the news was known, Altamira fell silent.",
+    "es": "Una vez conocida la noticia, Altamira guardó silencio.",
+    "en": "Once the news was known, Altamira kept quiet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:una-vez",
       "g:gender-articles",
-      "l:calló",
+      "g:present-ar",
+      "g:preterite-ar",
       "l:conocer",
+      "l:guardar",
       "l:noticia",
+      "l:silenciar",
       "l:vez",
       "p:saber-conocer"
     ],
@@ -17071,8 +17097,8 @@
   },
   {
     "id": "u55-0677",
-    "es": "Una vez conocido el resultado, Tomás abrazó a Vale.",
-    "en": "Once the result was known, Tomás hugged Vale.",
+    "es": "Una vez conocido el resultado, Tomás abrazó a Hernando.",
+    "en": "Once the result was known, Tomás hugged Hernando.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17141,8 +17167,8 @@
   },
   {
     "id": "u55-0680",
-    "es": "Dado el caso, pedimos que se aplace la decisión.",
-    "en": "In that case, we ask that the decision be postponed.",
+    "es": "Dada la hora, pedimos que se aplace la decisión.",
+    "en": "Given the time, we ask that the decision be postponed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17153,9 +17179,9 @@
       "g:subj-wanting",
       "g:that-clauses",
       "l:aplazar",
-      "l:caso",
       "l:dar",
       "l:decisión",
+      "l:hora",
       "l:pedir",
       "p:adelantar-aplazar",
       "p:aplazar-posponer"
@@ -17393,8 +17419,8 @@
   },
   {
     "id": "u55-0691",
-    "es": "Llegado el invierno, el café se llenó de turistas.",
-    "en": "When winter came, the café filled with tourists.",
+    "es": "Llegadas las vacaciones de diciembre, el café se llenó de turistas.",
+    "en": "When the December holidays came, the café filled with tourists.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17402,10 +17428,11 @@
       "g:preterite-ar",
       "g:se-impersonal",
       "l:café",
-      "l:invierno",
+      "l:diciembre",
       "l:llegar",
       "l:llenar",
-      "l:turista"
+      "l:turista",
+      "l:vacación"
     ],
     "targets": [],
     "kind": "statement",
@@ -17820,19 +17847,20 @@
   },
   {
     "id": "u55-0710",
-    "es": "Con la llegada del invierno, bajó el trabajo en la piscina.",
-    "en": "With the arrival of winter, work at the pool dropped.",
+    "es": "Con la llegada de las lluvias, la piscina se quedó vacía.",
+    "en": "With the arrival of the rains, the pool was left empty.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:trabajo-en",
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:preterite-ar",
-      "l:bajar",
-      "l:invierno",
+      "g:reflexive-routine",
       "l:llegada",
+      "l:lluvia",
       "l:piscina",
-      "l:trabajo"
+      "l:quedarse",
+      "l:vacío"
     ],
     "targets": [],
     "kind": "statement",
@@ -18260,19 +18288,19 @@
   },
   {
     "id": "u55-0730",
-    "es": "A raíz de la protesta, bajó el precio de la vivienda.",
-    "en": "Following the protest, housing prices fell.",
+    "es": "A raíz de la protesta, la alcaldía revisó el plan de vivienda.",
+    "en": "Following the protest, the mayor's office reviewed the housing plan.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
-      "l:bajar",
-      "l:precio",
+      "l:alcaldía",
+      "l:plan",
       "l:protesta",
       "l:raíz",
-      "l:vivienda",
-      "p:subir-subida"
+      "l:revisar",
+      "l:vivienda"
     ],
     "targets": [
       "l:vivienda"
@@ -18922,17 +18950,17 @@
   },
   {
     "id": "u55-0760",
-    "es": "La defensa del edificio ocupó todo el verano.",
-    "en": "The defence of the building took up the whole summer.",
+    "es": "La defensa del edificio ocupó todo el año.",
+    "en": "The defence of the building took up the whole year.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
+      "l:año",
       "l:defensa",
       "l:edificio",
       "l:ocupar",
-      "l:verano",
       "p:todos-los-dias"
     ],
     "targets": [],
@@ -19582,16 +19610,18 @@
   },
   {
     "id": "u55-0789",
-    "es": "El descubrimiento de la ley protegió el barrio.",
-    "en": "The discovery of the law protected the neighbourhood.",
+    "es": "El descubrimiento de los planos originales ayudó a proteger la casa.",
+    "en": "The discovery of the original plans helped protect the house.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-er-ir",
-      "l:barrio",
+      "g:preterite-ar",
+      "l:ayudar",
+      "l:casa",
       "l:descubrimiento",
-      "l:ley",
+      "l:original",
+      "l:plano",
       "l:proteger"
     ],
     "targets": [],
@@ -19812,16 +19842,16 @@
   },
   {
     "id": "u55-0799",
-    "es": "Con la llegada de Yesid, ya somos quórum.",
-    "en": "With Yesid's arrival, we are now a quorum.",
+    "es": "Con la llegada de Yesid, ya hay quórum.",
+    "en": "With Yesid's arrival, we now have a quorum.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
       "g:gender-articles",
-      "g:ser-identity",
+      "g:hay-vs-esta",
       "l:llegada",
-      "l:quórum",
-      "l:ser"
+      "l:quórum"
     ],
     "targets": [
       "l:quórum"
@@ -20314,20 +20344,20 @@
   },
   {
     "id": "u55-0818",
-    "es": "Estoy obligado a firmar, aunque basta con una copia.",
-    "en": "I am obliged to sign, although a copy is enough. (a man speaking)",
+    "es": "Estoy obligado a presentar la cédula, pero basta con una fotocopia.",
+    "en": "I am obliged to show my ID, but a photocopy is enough. (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:aunque-indicative",
       "g:estar-location-states",
       "g:gender-articles",
       "g:present-ar",
       "l:bastar",
-      "l:copia",
+      "l:cédula",
       "l:estar",
-      "l:firmar",
+      "l:fotocopia",
       "l:obligar",
+      "l:presentar",
       "p:basta-con",
       "p:obligacion-origen"
     ],
@@ -20648,19 +20678,23 @@
   },
   {
     "id": "u55-0830",
-    "es": "En ningún caso condenamos a quien pide ayuda.",
-    "en": "In no case do we condemn someone who asks for help.",
+    "es": "Condenamos el ataque, pero en ningún caso vamos a responder de la misma forma.",
+    "en": "We condemn the attack, but under no circumstances will we respond in the same way.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:vamos-a",
+      "g:gender-articles",
       "g:indefinites",
+      "g:ir-a-plans",
       "g:present-ar",
-      "g:relatives-prepositions",
-      "g:stem-e-i",
-      "l:ayuda",
+      "l:ataque",
       "l:caso",
       "l:condenar",
-      "l:pedir",
+      "l:formar",
+      "l:ir",
+      "l:responder",
+      "p:condenar",
       "p:en-modo-alguno"
     ],
     "targets": [
@@ -20895,23 +20929,24 @@
   },
   {
     "id": "u55-0839",
-    "es": "Nos parece lamentable la actitud de Altamira, y en ningún momento la entenderemos.",
-    "en": "We find Altamira's attitude regrettable, and at no point will we understand it.",
+    "es": "Nos parece lamentable la actitud de Altamira, que en ningún momento nos avisó.",
+    "en": "We find Altamira's attitude regrettable: at no point did they warn us.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
-      "g:future-promises",
       "g:gender-articles",
       "g:indefinites",
       "g:parecer-quedar",
       "g:present-er-ir",
+      "g:preterite-ar",
+      "g:relative-que",
       "l:actitud",
-      "l:entender",
+      "l:avisar",
       "l:lamentable",
       "l:momento",
       "l:parecer",
-      "p:en-modo-alguno"
+      "p:en-modo-alguno",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "p:en-modo-alguno"
@@ -21033,16 +21068,20 @@
   },
   {
     "id": "u55-0844",
-    "es": "En modo alguno, condenamos ese ataque.",
-    "en": "Not at all, we condemn that attack.",
+    "es": "¿Justificarlo? En modo alguno. Condenamos ese ataque.",
+    "en": "Justify it? In no way. We condemn that attack.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
+      "g:direct-objects",
       "g:indefinites",
+      "g:object-pronoun-position",
       "g:present-ar",
+      "g:verb-infinitive",
       "l:ataque",
       "l:condenar",
+      "l:justificar",
       "l:modo",
       "p:condenar",
       "p:en-modo-alguno"
@@ -21059,8 +21098,8 @@
   },
   {
     "id": "u55-0845",
-    "es": "Nos parece lamentable, y en ningún momento lo vamos a permitir.",
-    "en": "We find it regrettable, and at no point are we going to allow it.",
+    "es": "Nos parece lamentable, y en modo alguno lo vamos a permitir.",
+    "en": "We find it regrettable, and we will in no way allow it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21072,7 +21111,7 @@
       "g:present-er-ir",
       "l:ir",
       "l:lamentable",
-      "l:momento",
+      "l:modo",
       "l:parecer",
       "l:permitir",
       "p:en-modo-alguno"
@@ -21172,25 +21211,23 @@
   },
   {
     "id": "u55-0849",
-    "es": "La orden del juez se cumple por orden de llegada de los documentos.",
-    "en": "The judge's order is carried out in the order the documents arrive.",
+    "es": "Por orden del juez, los documentos se revisan por orden de llegada.",
+    "en": "By order of the judge, the documents are reviewed in order of arrival.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:passive-se",
       "g:por-para-1",
-      "g:present-er-ir",
-      "g:se-impersonal",
-      "l:cumplir",
+      "g:present-ar",
       "l:documento",
       "l:juez",
       "l:llegada",
       "l:orden",
-      "p:el-orden-la-orden",
+      "l:revisar",
       "p:por-orden-de"
     ],
     "targets": [
-      "p:el-orden-la-orden",
       "p:por-orden-de"
     ],
     "kind": "statement",
@@ -21517,19 +21554,19 @@
   },
   {
     "id": "u55-0862",
-    "es": "La Corte Suprema falló, y la orden se cumple por orden de fecha.",
-    "en": "The Supreme Court ruled, and the order is carried out by date.",
+    "es": "La Corte Suprema falló, y la orden ya se está cumpliendo.",
+    "en": "The Supreme Court ruled, and the order is already being carried out.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:estar-gerund",
+      "g:estar-location-states",
       "g:gender-articles",
-      "g:por-para-1",
-      "g:present-er-ir",
       "g:preterite-ar",
       "g:se-impersonal",
       "l:cumplir",
+      "l:estar",
       "l:fallar",
-      "l:fecha",
       "l:orden",
       "p:el-orden-la-orden"
     ],
@@ -21543,23 +21580,27 @@
   },
   {
     "id": "u55-0863",
-    "es": "Los pagos se hacen por orden de llegada, según el orden del día.",
-    "en": "Payments are made in order of arrival, according to the agenda.",
+    "es": "Según el orden del día, primero se leen las cartas, por orden de llegada.",
+    "en": "According to the agenda, the letters are read first, in order of arrival.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:segun",
       "g:gender-articles",
+      "g:passive-se",
       "g:por-para-1",
       "g:present-er-ir",
-      "g:verbs-of-change",
+      "l:carta",
       "l:día",
-      "l:hacerse",
+      "l:leer",
       "l:llegada",
       "l:orden",
-      "l:pago",
+      "p:comerse-todo",
+      "p:dativo-aspectual",
       "p:el-orden-la-orden",
-      "p:por-orden-de"
+      "p:por-orden-de",
+      "p:time-sequence-basic",
+      "p:un-estudio-muestra-que"
     ],
     "targets": [
       "p:el-orden-la-orden",
@@ -21598,20 +21639,21 @@
   },
   {
     "id": "u55-0865",
-    "es": "¿Cuál es el orden del día y por qué orden se discute?",
-    "en": "What is the agenda and in what order is it discussed?",
+    "es": "¿Cuál es el orden del día? ¿Y en qué orden se discuten los puntos?",
+    "en": "What is the agenda? And in what order are the items discussed?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:passive-se",
       "g:present-er-ir",
       "g:questions",
-      "g:se-impersonal",
       "g:ser-identity",
       "l:cuál",
       "l:discutir",
       "l:día",
       "l:orden",
+      "l:punto",
       "l:qué",
       "l:ser",
       "p:el-orden-la-orden",
@@ -21656,19 +21698,18 @@
   },
   {
     "id": "u55-0867",
-    "es": "A la orden, por orden de llegada le atiendo enseguida.",
-    "en": "At your service, in order of arrival I'll see you right away.",
+    "es": "A la orden, señora. Por orden de llegada, usted sigue.",
+    "en": "At your service, madam. In order of arrival, you're next.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:a-la-orden",
-      "g:indirect-objects",
       "g:por-para-1",
-      "g:stem-boot",
-      "l:atender",
-      "l:enseguida",
+      "g:stem-e-i",
       "l:llegada",
       "l:orden",
+      "l:seguir",
+      "l:señora",
       "p:por-orden-de"
     ],
     "targets": [
@@ -21681,19 +21722,21 @@
   },
   {
     "id": "u55-0868",
-    "es": "Estoy en orden, por orden de lista me toca el quinto.",
-    "en": "I'm in order, going by the list I'm fifth.",
+    "es": "Tengo los papeles en orden, y por orden de lista me toca de quinto.",
+    "en": "I have my papers in order, and going by the list I'm fifth.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-toca",
+      "c:tengo",
       "g:adjective-agreement",
-      "g:estar-location-states",
       "g:gender-articles",
       "g:por-para-1",
-      "l:estar",
+      "g:yo-irregular",
       "l:listo",
       "l:orden",
+      "l:papel",
+      "l:tener",
       "l:tocar",
       "p:el-orden-la-orden",
       "p:por-orden-de"
@@ -21709,8 +21752,8 @@
   },
   {
     "id": "u55-0869",
-    "es": "Eso es una orden, no un favor, y se hace por orden de prioridad.",
-    "en": "That is an order, not a favour, and it is done in order of priority.",
+    "es": "Es una orden de la junta: los arreglos se hacen por orden de prioridad.",
+    "en": "It's an order from the board: repairs are done in order of priority.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21719,12 +21762,13 @@
       "g:present-er-ir",
       "g:ser-identity",
       "g:verbs-of-change",
-      "l:favor",
+      "l:arreglo",
       "l:hacerse",
+      "l:junta",
       "l:orden",
       "l:prioridad",
       "l:ser",
-      "p:demonstratives-basic",
+      "p:el-orden-la-orden",
       "p:por-orden-de"
     ],
     "targets": [
@@ -21906,22 +21950,21 @@
   },
   {
     "id": "u55-0876",
-    "es": "Solicitamos una cita que agilice la firma del contrato.",
-    "en": "We request an appointment that speeds up the signing of the contract.",
+    "es": "Solicitamos una cita para agilizar la firma del contrato.",
+    "en": "We request an appointment to speed up the signing of the contract.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "g:relative-que",
-      "g:subj-relative",
-      "g:subj-wanting",
       "l:agilizar",
       "l:cita",
       "l:contrato",
       "l:firma",
       "l:solicitar",
       "p:agilizar-tramites",
+      "p:para-inf",
+      "p:para-inf-purpose",
       "p:por-todo-lo-anterior-solicito",
       "p:solicitar"
     ],
@@ -21936,21 +21979,22 @@
   },
   {
     "id": "u55-0877",
-    "es": "Tomás solicitó un poder para Yesid, y eso agiliza la venta.",
-    "en": "Tomás requested a power of attorney for Yesid, and that speeds up the sale.",
+    "es": "Tomás le solicitó un poder a Yesid para agilizar los trámites.",
+    "en": "Tomás asked Yesid for a power of attorney to speed up the paperwork.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
+      "g:indirect-objects",
+      "g:le-doubling",
       "g:preterite-ar",
       "l:agilizar",
       "l:poder",
       "l:solicitar",
-      "l:venta",
+      "l:trámite",
       "p:agilizar-tramites",
-      "p:demonstratives-basic",
       "p:para-inf",
+      "p:para-inf-purpose",
       "p:por-todo-lo-anterior-solicito",
       "p:solicitar"
     ],
@@ -21965,17 +22009,17 @@
   },
   {
     "id": "u55-0878",
-    "es": "Yesid solicitó la ciudadanía, y el abogado agiliza el trámite.",
-    "en": "Yesid applied for citizenship, and the lawyer speeds up the process.",
+    "es": "Yesid solicitó el cambio de dirección, y la abogada agilizó el trámite.",
+    "en": "Yesid applied for a change of address, and the lawyer sped up the process.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
       "g:preterite-ar",
       "l:abogado",
       "l:agilizar",
-      "l:ciudadanía",
+      "l:cambio",
+      "l:dirección",
       "l:solicitar",
       "l:trámite",
       "p:agilizar-tramites",
@@ -21993,8 +22037,8 @@
   },
   {
     "id": "u55-0879",
-    "es": "Se solicita a los socios un documento que agilice el registro.",
-    "en": "Members are requested to provide a document that speeds up registration.",
+    "es": "Se solicita a los socios que traigan la cédula, para agilizar el registro.",
+    "en": "Members are asked to bring their ID, to speed up registration.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22005,11 +22049,15 @@
       "g:subj-relative",
       "g:subj-wanting",
       "l:agilizar",
-      "l:documento",
+      "l:cédula",
       "l:registro",
       "l:socio",
       "l:solicitar",
+      "l:traer",
       "p:agilizar-tramites",
+      "p:llevar-traer",
+      "p:para-inf",
+      "p:para-inf-purpose",
       "p:solicitar"
     ],
     "targets": [
@@ -22083,8 +22131,8 @@
   },
   {
     "id": "u55-0882",
-    "es": "La ventanilla única agiliza lo que solicitan los vecinos.",
-    "en": "The single counter speeds up what the neighbours request.",
+    "es": "La ventanilla única agiliza todo lo que solicitan los vecinos.",
+    "en": "The single counter speeds up everything the neighbours request.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22199,35 +22247,36 @@
   },
   {
     "id": "u55-0886",
-    "es": "¿Solicitó usted el certificado, o lo agilizó otra persona?",
-    "en": "Did you request the certificate, or did someone else speed it up? (polite)",
+    "es": "¿Solicitó usted el certificado en línea? Así se agiliza mucho.",
+    "en": "Did you request the certificate online? That speeds it up a lot. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
       "g:gender-articles",
+      "g:present-ar",
       "g:preterite-ar",
+      "g:se-impersonal",
       "l:agilizar",
       "l:certificado",
-      "l:persona",
+      "l:línea",
       "l:solicitar",
       "p:agilizar-tramites",
-      "p:otro-no-article",
+      "p:quantifiers-basic",
       "p:solicitar"
     ],
     "targets": [
       "p:agilizar-tramites",
       "p:solicitar"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u55",
     "theme": "speeding up requests; knowing and referring",
     "source": "gen"
   },
   {
     "id": "u55-0887",
-    "es": "¿Cómo agiliza la cooperativa lo que solicitan los socios?",
-    "en": "How does the cooperative speed up what the members request?",
+    "es": "¿Cómo puede la cooperativa agilizar lo que solicitan los socios?",
+    "en": "How can the cooperative speed up what the members request?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22235,9 +22284,11 @@
       "g:present-ar",
       "g:questions",
       "g:relatives-donde-lo-que",
+      "g:stem-boot",
       "l:agilizar",
       "l:cooperativa",
       "l:cómo",
+      "l:poder",
       "l:socio",
       "l:solicitar",
       "p:agilizar-tramites",
@@ -22312,29 +22363,28 @@
   },
   {
     "id": "u55-0890",
-    "es": "Tenemos conocimiento de que Altamira envió una carta, y en relación con ella responderemos.",
-    "en": "We are aware that Altamira sent a letter, and we will reply in relation to it.",
+    "es": "Tenemos conocimiento de que Altamira envió una carta, y la responderemos punto por punto.",
+    "en": "We are aware that Altamira sent a letter, and we will answer it point by point.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:con-el-ella",
       "c:tienes",
+      "g:direct-objects",
       "g:future-promises",
       "g:gender-articles",
+      "g:por-para-1",
       "g:preterite-ar",
       "g:that-clauses",
       "l:carta",
       "l:conocimiento",
       "l:enviar",
-      "l:relación",
+      "l:punto",
       "l:responder",
       "l:tener",
-      "p:conocimiento-formal",
-      "p:en-relacion-con"
+      "p:conocimiento-formal"
     ],
     "targets": [
-      "p:conocimiento-formal",
-      "p:en-relacion-con"
+      "p:conocimiento-formal"
     ],
     "kind": "statement",
     "unit": "u55",
@@ -22482,15 +22532,17 @@
   },
   {
     "id": "u55-0896",
-    "es": "En relación con la herencia, la familia desconoce el paradero de Joaquín.",
-    "en": "In relation to the inheritance, the family does not know Joaquín's whereabouts.",
+    "es": "En relación con la herencia, la familia desconoce el paradero de algunos nietos de Joaquín.",
+    "en": "In relation to the inheritance, the family does not know the whereabouts of some of Joaquín's grandchildren.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:indefinites",
       "l:desconoce",
       "l:familia",
       "l:herencia",
+      "l:nieto",
       "l:paradero",
       "l:relación",
       "p:conocimiento-formal",
@@ -22748,19 +22800,20 @@
   },
   {
     "id": "u55-0905",
-    "es": "¿En relación con qué punto tiene usted conocimiento de algo?",
-    "en": "In relation to which item do you have any knowledge? (polite)",
+    "es": "¿Tiene usted conocimiento de algo en relación con el cobro del agua?",
+    "en": "Are you aware of anything regarding the water charge? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
-      "g:questions",
+      "g:gender-articles",
       "g:stem-boot",
+      "l:agua",
+      "l:cobro",
       "l:conocimiento",
-      "l:punto",
-      "l:qué",
       "l:relación",
       "l:tener",
+      "p:el-agua-fria",
       "p:en-relacion-con",
       "p:indefinites-basic"
     ],
@@ -22804,23 +22857,22 @@
   },
   {
     "id": "u55-0907",
-    "es": "¿Desconoce usted el paradero del dueño en relación con el cobro?",
-    "en": "Do you not know the owner's whereabouts in relation to the charge? (polite)",
+    "es": "¿Desconoce usted quién firmó el acta?",
+    "en": "Do you not know who signed the minutes? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "l:cobro",
+      "g:preterite-ar",
+      "g:questions",
+      "l:acta",
       "l:desconoce",
-      "l:dueño",
-      "l:paradero",
-      "l:relación",
-      "p:conocimiento-formal",
-      "p:en-relacion-con"
+      "l:firmar",
+      "l:quién",
+      "p:conocimiento-formal"
     ],
     "targets": [
-      "p:conocimiento-formal",
-      "p:en-relacion-con"
+      "p:conocimiento-formal"
     ],
     "kind": "question",
     "unit": "u55",
@@ -22883,8 +22935,8 @@
   },
   {
     "id": "u55-0910",
-    "es": "Tengo conocimiento de eso, en relación con la última reunión.",
-    "en": "I know about that, regarding the last meeting.",
+    "es": "Tengo conocimiento de eso desde la última reunión.",
+    "en": "I have been aware of that since the last meeting.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22892,16 +22944,13 @@
       "g:gender-articles",
       "g:yo-irregular",
       "l:conocimiento",
-      "l:relación",
       "l:reunión",
       "l:tener",
       "p:conocimiento-formal",
-      "p:demonstratives-basic",
-      "p:en-relacion-con"
+      "p:demonstratives-basic"
     ],
     "targets": [
-      "p:conocimiento-formal",
-      "p:en-relacion-con"
+      "p:conocimiento-formal"
     ],
     "kind": "dialogue",
     "unit": "u55",
@@ -23038,22 +23087,24 @@
   },
   {
     "id": "u55-0915",
-    "es": "El suscrito, miembro de la junta, está integrado a la cooperativa desde marzo.",
-    "en": "The undersigned, a member of the board, has been part of the cooperative since March.",
+    "es": "El suscrito, miembro de la junta, hace constar que pertenece a la cooperativa desde marzo.",
+    "en": "The undersigned, a member of the board, records that he has belonged to the cooperative since March.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
-      "g:estar-participle",
       "g:gender-articles",
+      "g:present-er-ir",
+      "g:that-clauses",
+      "l:constar",
       "l:cooperativa",
-      "l:estar",
-      "l:integrar",
+      "l:hacer",
       "l:junta",
       "l:marzo",
       "l:miembro",
+      "l:pertenecer",
       "l:suscribirse",
-      "p:el-suscrito"
+      "p:el-suscrito",
+      "p:formar-parte-de"
     ],
     "targets": [
       "l:cooperativa",
@@ -23100,8 +23151,8 @@
   },
   {
     "id": "u55-0917",
-    "es": "El suscrito certifica que el jurado está constituido por tres personas.",
-    "en": "The undersigned certifies that the jury is made up of three people.",
+    "es": "El suscrito certifica que la comisión está constituida por tres abogadas.",
+    "en": "The undersigned certifies that the commission is made up of three lawyers (women).",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23111,11 +23162,11 @@
       "g:por-para-1",
       "g:present-ar",
       "g:that-clauses",
+      "l:abogado",
       "l:certificar",
+      "l:comisión",
       "l:constituir",
       "l:estar",
-      "l:jurado",
-      "l:persona",
       "l:suscribirse",
       "p:constar-de",
       "p:el-suscrito",
@@ -23198,28 +23249,24 @@
   },
   {
     "id": "u55-0920",
-    "es": "El suscrito solicita la copia de un acta que está compuesta por cinco páginas.",
-    "en": "The undersigned requests the copy of minutes that are made up of five pages.",
+    "es": "El suscrito solicita una copia completa del acta, que consta de cinco páginas.",
+    "en": "The undersigned requests a complete copy of the minutes, which consist of five pages.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
-      "g:estar-participle",
       "g:gender-articles",
-      "g:por-para-1",
       "g:present-ar",
       "g:relative-que",
       "l:acta",
-      "l:componerse",
+      "l:completar",
+      "l:constar",
       "l:copia",
-      "l:estar",
       "l:página",
       "l:solicitar",
       "l:suscribirse",
-      "p:caracterizarse-por",
       "p:constar-de",
       "p:el-suscrito",
-      "p:se-divide-en",
+      "p:se-entiende-por",
       "p:solicitar"
     ],
     "targets": [
@@ -23267,22 +23314,24 @@
   },
   {
     "id": "u55-0922",
-    "es": "El suscrito, Tomás, certifica que el café ocupa una vivienda de tres plantas.",
-    "en": "The undersigned, Tomás, certifies that the café occupies a home of three floors.",
+    "es": "El suscrito, Tomás Herrera, certifica que el café está en el primer piso y la vivienda en el segundo.",
+    "en": "The undersigned, Tomás Herrera, certifies that the café is on the ground floor and the living quarters on the first.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
+      "g:estar-location-states",
       "g:gender-articles",
-      "g:present-ar",
       "g:that-clauses",
       "l:café",
       "l:certificar",
-      "l:ocupar",
-      "l:planta",
+      "l:estar",
+      "l:piso",
       "l:suscribirse",
       "l:vivienda",
-      "p:el-suscrito"
+      "p:el-suscrito",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer"
     ],
     "targets": [
       "l:vivienda",
@@ -23295,24 +23344,22 @@
   },
   {
     "id": "u55-0923",
-    "es": "La suscrita certifica que Vale está integrada al equipo desde su apertura.",
+    "es": "La suscrita certifica que Vale forma parte del equipo desde la apertura.",
     "en": "The undersigned certifies that Vale has been part of the team since the opening. (a woman)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
-      "g:estar-participle",
       "g:gender-articles",
       "g:present-ar",
       "g:that-clauses",
       "l:apertura",
       "l:certificar",
       "l:equipo",
-      "l:estar",
-      "l:integrar",
+      "l:formar",
+      "l:parte",
       "l:suscribirse",
       "p:el-suscrito",
-      "p:possessives-basic"
+      "p:formar-parte-de"
     ],
     "targets": [
       "p:el-suscrito"
@@ -23502,29 +23549,24 @@
   },
   {
     "id": "u55-0930",
-    "es": "¿Está formada por tres socios la comisión que firma el suscrito?",
-    "en": "Is the commission the undersigned signs made up of three members?",
+    "es": "¿De cuántos socios consta la comisión que representa el suscrito?",
+    "en": "How many members does the commission that the undersigned represents consist of?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
-      "g:estar-participle",
       "g:gender-articles",
-      "g:por-para-1",
       "g:present-ar",
       "g:relative-que",
       "l:comisión",
-      "l:estar",
-      "l:firmar",
-      "l:formar",
+      "l:constar",
+      "l:cuánto",
+      "l:representar",
       "l:socio",
       "l:suscribirse",
-      "p:constar-de",
       "p:el-suscrito",
-      "p:se-divide-en"
+      "p:prep-questions-basic"
     ],
     "targets": [
-      "p:constar-de",
       "p:el-suscrito"
     ],
     "kind": "question",
@@ -23534,25 +23576,21 @@
   },
   {
     "id": "u55-0931",
-    "es": "El suscrito soy yo, pero la junta está formada por cinco personas.",
-    "en": "The undersigned is me, but the board is made up of five people.",
+    "es": "Firmo como el suscrito, pero la junta consta de cinco personas.",
+    "en": "I sign as the undersigned, but the board consists of five people.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:si-soy-yo",
-      "g:estar-location-states",
-      "g:estar-participle",
       "g:gender-articles",
-      "g:por-para-1",
-      "l:estar",
-      "l:formar",
+      "g:present-ar",
+      "l:constar",
+      "l:firmar",
       "l:junta",
       "l:persona",
-      "l:ser",
       "l:suscribirse",
       "p:constar-de",
       "p:el-suscrito",
-      "p:se-divide-en"
+      "p:se-entiende-por"
     ],
     "targets": [
       "l:junta",
@@ -24030,13 +24068,12 @@
   },
   {
     "id": "u55-0947",
-    "es": "Se ruega a los socios que se aplace la visita hasta nuevo aviso.",
+    "es": "Se ruega a los socios que aplacen la visita hasta nuevo aviso.",
     "en": "Members are asked to put off the visit until further notice.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:passive-se",
       "g:relative-que",
       "g:se-impersonal",
       "g:stem-boot",
@@ -24236,31 +24273,26 @@
   },
   {
     "id": "u55-0954",
-    "es": "Tengo el gusto de decirle que no dude en llamarme.",
-    "en": "I am pleased to tell you not to hesitate to call me. (polite)",
+    "es": "Para cualquier duda, no dude en llamarme a este número.",
+    "en": "If you have any questions, do not hesitate to call me on this number. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tengo",
-      "g:gender-articles",
-      "g:indirect-objects",
+      "g:cada-cualquier",
+      "g:negative-commands",
       "g:object-pronoun-position",
+      "g:present-ar",
       "g:reflexive-routine",
-      "g:reported-requests",
-      "g:subj-wanting",
-      "g:that-clauses",
-      "g:yo-irregular",
-      "l:decir",
       "l:dudar",
-      "l:gusto",
       "l:llamar",
-      "l:tener",
+      "l:número",
+      "p:demonstratives-basic",
       "p:no-dude-en",
-      "p:tener-el-gusto-de"
+      "p:para-inf",
+      "p:personal-a"
     ],
     "targets": [
-      "p:no-dude-en",
-      "p:tener-el-gusto-de"
+      "p:no-dude-en"
     ],
     "kind": "statement",
     "unit": "u55",
@@ -24368,8 +24400,8 @@
   },
   {
     "id": "u55-0958",
-    "es": "Tengo el gusto de felicitarlos, y no dude en decirme si falta algo.",
-    "en": "I have the pleasure of congratulating you, and do not hesitate to tell me if something is missing.",
+    "es": "Tengo el gusto de felicitarlos, y no duden en decirme si falta algo.",
+    "en": "I have the pleasure of congratulating you all, and do not hesitate to tell me if something is missing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24466,7 +24498,7 @@
   },
   {
     "id": "u55-0961",
-    "es": "Tengo el placer de saludar a la junta; no dude en contar conmigo.",
+    "es": "Tengo el placer de saludar a la junta; no duden en contar conmigo.",
     "en": "I have the pleasure of greeting the board; do not hesitate to count on me.",
     "accept": [],
     "acceptEn": [],
@@ -24528,30 +24560,28 @@
   },
   {
     "id": "u55-0963",
-    "es": "Tengo el gusto de ser su vecino, no dude en tocar a mi puerta.",
-    "en": "I have the pleasure of being your neighbour, do not hesitate to knock on my door.",
+    "es": "Ahora somos vecinos: no dude en tocar a mi puerta si necesita algo.",
+    "en": "We're neighbours now: do not hesitate to knock on my door if you need anything. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tengo",
-      "g:gender-articles",
       "g:negative-commands",
+      "g:present-ar",
       "g:ser-identity",
-      "g:yo-irregular",
+      "g:si-present",
+      "l:ahora",
       "l:dudar",
-      "l:gusto",
+      "l:necesitar",
       "l:puerta",
       "l:ser",
-      "l:tener",
       "l:tocar",
       "l:vecino",
+      "p:indefinites-basic",
       "p:no-dude-en",
-      "p:possessives-basic",
-      "p:tener-el-gusto-de"
+      "p:possessives-basic"
     ],
     "targets": [
-      "p:no-dude-en",
-      "p:tener-el-gusto-de"
+      "p:no-dude-en"
     ],
     "kind": "statement",
     "unit": "u55",
@@ -24663,31 +24693,34 @@
   },
   {
     "id": "u55-0967",
-    "es": "Tengo el gusto de escribirle, y no dude en responder cuando pueda.",
-    "en": "I have the pleasure of writing to you, and do not hesitate to reply when you can.",
+    "es": "Le agradezco su carta. No dude en escribirme de nuevo si algo no queda claro.",
+    "en": "Thank you for your letter. Do not hesitate to write to me again if anything is unclear. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tengo",
-      "g:gender-articles",
+      "c:claro-listo",
       "g:indirect-objects",
       "g:negative-commands",
       "g:object-pronoun-position",
-      "g:subj-cuando-future",
-      "g:subj-wanting",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "g:si-present",
       "g:yo-irregular",
+      "l:agradecer",
+      "l:carta",
+      "l:claro",
       "l:dudar",
       "l:escribir",
-      "l:gusto",
-      "l:poder",
-      "l:responder",
-      "l:tener",
+      "l:nuevo",
+      "l:quedar",
+      "p:indefinites-basic",
       "p:no-dude-en",
-      "p:tener-el-gusto-de"
+      "p:possessives-basic",
+      "p:quedar-participio",
+      "p:te-lo-agradezco"
     ],
     "targets": [
-      "p:no-dude-en",
-      "p:tener-el-gusto-de"
+      "p:no-dude-en"
     ],
     "kind": "statement",
     "unit": "u55",
@@ -24786,29 +24819,27 @@
   },
   {
     "id": "u55-0971",
-    "es": "Tengo el gusto de recibirla, no dude en pasar.",
-    "en": "I have the pleasure of receiving you, do not hesitate to come in. (to a woman, polite)",
+    "es": "Es un gusto recibirla, señora. Siga, por favor.",
+    "en": "It's a pleasure to welcome you, madam. Come in, please.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tengo",
+      "c:por-favor",
+      "c:siga",
+      "g:commands-usted",
       "g:direct-objects",
       "g:gender-articles",
-      "g:negative-commands",
       "g:object-pronoun-position",
-      "g:yo-irregular",
-      "l:dudar",
+      "g:ser-identity",
+      "l:favor",
       "l:gusto",
-      "l:pasar",
       "l:recibir",
-      "l:tener",
-      "p:no-dude-en",
-      "p:tener-el-gusto-de"
+      "l:seguir",
+      "l:ser",
+      "l:señora",
+      "p:request-ladder"
     ],
-    "targets": [
-      "p:no-dude-en",
-      "p:tener-el-gusto-de"
-    ],
+    "targets": [],
     "kind": "dialogue",
     "unit": "u55",
     "theme": "notices, invitations, deadlines and postponements",
@@ -25167,8 +25198,8 @@
   },
   {
     "id": "u55-0984",
-    "es": "Dimos comienzo a la sesión cuando se venció el plazo de espera.",
-    "en": "We began the session when the waiting period ran out.",
+    "es": "Pasada media hora, se venció el plazo de espera y dimos comienzo a la sesión.",
+    "en": "After half an hour, the waiting period ran out and we began the session.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -25180,10 +25211,11 @@
       "l:comenzar",
       "l:dar",
       "l:espera",
+      "l:hora",
+      "l:pasar",
       "l:plazo",
       "l:sesión",
       "l:vencer",
-      "p:cuando-basic",
       "p:dar-comienzo-poner-fin",
       "p:vencer-plazo"
     ],
@@ -25225,23 +25257,23 @@
   },
   {
     "id": "u55-0986",
-    "es": "Al darse comienzo a las obras, se venció la paciencia del barrio.",
-    "en": "When the works began, the neighbourhood's patience ran out.",
+    "es": "Las obras dieron comienzo justo cuando vencía el permiso.",
+    "en": "The works began just as the permit was expiring.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:passive-se",
-      "g:prep-infinitive",
-      "g:preterite-er-ir",
-      "g:reflexive-routine",
+      "g:imperfect-habitual",
+      "g:pret-vs-imperfect",
+      "g:preterite-irregular-strong",
       "g:stem-boot",
-      "l:barrio",
       "l:comenzar",
-      "l:darse",
+      "l:dar",
+      "l:justo",
       "l:obra",
-      "l:paciencia",
+      "l:permiso",
       "l:vencer",
+      "p:cuando-basic",
       "p:dar-comienzo-poner-fin",
       "p:vencer-plazo"
     ],
@@ -25256,29 +25288,25 @@
   },
   {
     "id": "u55-0987",
-    "es": "Venció el plazo para pagar, pero la junta puso fin a la multa.",
-    "en": "The deadline for payment expired, but the board put an end to the fine.",
+    "es": "Venció el plazo para pagar, pero la junta perdonó la multa.",
+    "en": "The deadline for payment expired, but the board waived the fine.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:preterite-ar",
       "g:preterite-er-ir",
-      "g:preterite-irregular-strong",
-      "l:fin",
       "l:junta",
       "l:multa",
       "l:pagar",
+      "l:perdonar",
       "l:plazo",
-      "l:poner",
       "l:vencer",
-      "p:dar-comienzo-poner-fin",
       "p:para-inf",
       "p:para-inf-purpose",
       "p:vencer-plazo"
     ],
     "targets": [
-      "l:junta",
-      "p:dar-comienzo-poner-fin",
       "p:vencer-plazo"
     ],
     "kind": "statement",
@@ -25722,8 +25750,8 @@
   },
   {
     "id": "u55-1002",
-    "es": "La cooperativa pospuso la compra, y se aprobó por consenso.",
-    "en": "The cooperative postponed the purchase, and it was approved by consensus.",
+    "es": "La cooperativa pospuso la compra del horno, y la decisión se tomó por consenso.",
+    "en": "The cooperative postponed buying the oven, and the decision was taken by consensus.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -25732,11 +25760,13 @@
       "g:preterite-ar",
       "g:preterite-irregular-strong",
       "g:se-impersonal",
-      "l:aprobar",
       "l:compra",
       "l:consenso",
       "l:cooperativa",
+      "l:decisión",
+      "l:horno",
       "l:posponer",
+      "l:tomar",
       "p:adelantar-aplazar",
       "p:aplazar-posponer",
       "p:por-consenso"
@@ -26050,20 +26080,22 @@
   },
   {
     "id": "u55-1014",
-    "es": "Jhon Fredy hizo algo asombroso: pasó tres minutos bajo el agua.",
-    "en": "Jhon Fredy did something astonishing: he spent three minutes underwater.",
+    "es": "Jhon Fredy hizo algo asombroso: nadó la piscina entera sin parar.",
+    "en": "Jhon Fredy did something astonishing: he swam the whole length of the pool without stopping.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
+      "g:prep-infinitive",
       "g:preterite-ar",
       "g:preterite-ser-ir-hacer",
-      "l:agua",
       "l:asombroso",
+      "l:entero",
       "l:hacer",
-      "l:minuto",
-      "l:pasar",
-      "p:el-agua-fria",
+      "l:nadar",
+      "l:parar",
+      "l:piscina",
       "p:indefinites-basic"
     ],
     "targets": [
@@ -26442,18 +26474,18 @@
   },
   {
     "id": "u55-1030",
-    "es": "La corte decidió un castigo ejemplar contra la empresa.",
+    "es": "La corte impuso un castigo ejemplar a la empresa.",
     "en": "The court imposed an exemplary punishment on the company.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-er-ir",
+      "g:preterite-irregular-strong",
       "l:castigo",
       "l:corte",
-      "l:decidir",
       "l:ejemplar",
       "l:empresa",
+      "l:imponer",
       "p:el-orden-la-orden"
     ],
     "targets": [
@@ -26911,21 +26943,22 @@
   },
   {
     "id": "u55-1049",
-    "es": "Un buen café mejora el bienestar de cualquier mañana.",
-    "en": "A good coffee improves the well-being of any morning.",
+    "es": "Un buen tinto por la mañana es puro bienestar.",
+    "en": "A good black coffee in the morning is pure well-being.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:cada-cualquier",
       "g:gender-articles",
-      "g:present-ar",
+      "g:ser-identity",
       "l:bienestar",
       "l:buen",
-      "l:café",
       "l:mañana",
-      "l:mejorar",
+      "l:puro",
+      "l:ser",
+      "l:tinto",
       "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo"
+      "p:bien-mal-vs-bueno-malo",
+      "p:por-la-manana"
     ],
     "targets": [
       "l:bienestar"
@@ -27037,18 +27070,22 @@
   },
   {
     "id": "u55-1054",
-    "es": "Sin mantenimiento, el techo no llega a otro invierno.",
-    "en": "Without maintenance, the roof will not make it to another winter.",
+    "es": "Sin mantenimiento, el techo no aguanta otra temporada de lluvias.",
+    "en": "Without maintenance, the roof won't survive another rainy season.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:invierno",
-      "l:llegar",
+      "l:aguantar",
+      "l:lluvia",
       "l:mantenimiento",
       "l:techo",
-      "p:otro-no-article"
+      "l:temporada",
+      "p:aguantar-conservar-la-calma",
+      "p:no-soporto-que",
+      "p:otro-no-article",
+      "p:sobrevivir-a"
     ],
     "targets": [
       "l:mantenimiento"
@@ -27230,7 +27267,7 @@
   {
     "id": "u55-1062",
     "es": "Esta novela me tiene despierto, no puedo dormir.",
-    "en": "This novel is keeping me awake, I can't sleep.",
+    "en": "This novel is keeping me awake, I can't sleep. (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27856,7 +27893,7 @@
   {
     "id": "u55-1088",
     "es": "¿Yo, esperar tres meses por un sello? ¡Ni loco!",
-    "en": "Me, wait three months for a stamp? No way!",
+    "en": "Me, wait three months for a stamp? No way! (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27957,7 +27994,7 @@
   {
     "id": "u55-1092",
     "es": "¿Yo, firmar una cláusula que no entiendo? ¡Ni loco!",
-    "en": "Me, sign a clause I do not understand? No way!",
+    "en": "Me, sign a clause I do not understand? No way! (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28009,7 +28046,7 @@
   {
     "id": "u55-1094",
     "es": "¿Yo, tirarme a la piscina fría? ¡Ni loco!",
-    "en": "Me, jump into the cold pool? No way!",
+    "en": "Me, jump into the cold pool? No way! (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28107,7 +28144,7 @@
   {
     "id": "u55-1098",
     "es": "¿Yo, aceptar un castigo que no merezco? ¡Ni loco!",
-    "en": "Me, accept a punishment I don't deserve? No way!",
+    "en": "Me, accept a punishment I don't deserve? No way! (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28337,7 +28374,7 @@
   {
     "id": "u55-1108",
     "es": "¿Yo, madrugar para esa reunión? ¡Ni loco!",
-    "en": "Me, get up early for that meeting? No way!",
+    "en": "Me, get up early for that meeting? No way! (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28429,7 +28466,7 @@
   {
     "id": "u55-1112",
     "es": "¿Yo, olvidar lo que hizo Altamira? ¡Ni loco!",
-    "en": "Me, forget what Altamira did? No way!",
+    "en": "Me, forget what Altamira did? No way! (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28478,7 +28515,7 @@
   {
     "id": "u55-1114",
     "es": "¿Yo, apretarme en ese carro con cinco personas? ¡Ni loco!",
-    "en": "Me, squeeze into that car with five people? No way!",
+    "en": "Me, squeeze into that car with five people? No way! (a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28889,7 +28926,7 @@
   {
     "id": "u55-1128",
     "es": "¿Para qué te molestas con Simón si es un loro?",
-    "en": "Why get annoyed with Simón if he is a parrot? (to a friend)",
+    "en": "Why get annoyed with Simón if he's just a parrot? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29590,22 +29627,19 @@
   },
   {
     "id": "u55-1154",
-    "es": "La asamblea condena el uso del petróleo para calentar la plaza.",
-    "en": "The assembly condemns the use of oil to heat the square.",
+    "es": "La asamblea condena el derrame de petróleo en el río.",
+    "en": "The assembly condemns the oil spill in the river.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
       "l:asamblea",
-      "l:calentar",
       "l:condenar",
+      "l:derrame",
       "l:petróleo",
-      "l:plaza",
-      "l:uso",
-      "p:condenar",
-      "p:para-inf",
-      "p:para-inf-purpose"
+      "l:río",
+      "p:condenar"
     ],
     "targets": [
       "l:petróleo",
@@ -29728,20 +29762,20 @@
   },
   {
     "id": "u55-1159",
-    "es": "Mi mamá condena mis pocas horas de sueño.",
-    "en": "My mum condemns my few hours of sleep.",
+    "es": "Mi mamá condena cualquier tipo de abuso.",
+    "en": "My mum condemns any kind of abuse.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:cada-cualquier",
       "g:present-ar",
+      "l:abuso",
       "l:condenar",
-      "l:hora",
       "l:mamá",
-      "l:sueño",
+      "l:tipo",
       "p:condenar",
-      "p:poco-un-poco",
       "p:possessives-basic",
-      "p:quantifiers-basic"
+      "p:que-tipo-de"
     ],
     "targets": [
       "p:condenar"
@@ -30108,19 +30142,19 @@
   },
   {
     "id": "u55-1175",
-    "es": "Hernando entra por orden de llegada, aunque siempre llegue primero.",
-    "en": "Hernando goes in by order of arrival, although he always arrives first.",
+    "es": "Hernando entra por orden de llegada, o sea, siempre de primero.",
+    "en": "Hernando goes in by order of arrival, which means always first.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:o-sea",
       "g:por-para-1",
       "g:present-ar",
-      "g:subj-concessive",
-      "g:subj-wanting",
+      "g:reformulation",
       "l:entrar",
       "l:llegada",
-      "l:llegar",
       "l:orden",
+      "l:ser",
       "l:siempre",
       "p:frequency-scale",
       "p:por-orden-de",
@@ -30181,8 +30215,8 @@
   },
   {
     "id": "u55-1178",
-    "es": "¿Por orden de qué se reparten las ganancias?",
-    "en": "In what order are the profits shared out?",
+    "es": "¿Los turnos de la cocina se reparten por orden de antigüedad?",
+    "en": "Are the kitchen shifts handed out in order of seniority?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -30190,11 +30224,12 @@
       "g:passive-se",
       "g:por-para-1",
       "g:present-er-ir",
-      "g:questions",
-      "l:ganancia",
+      "l:antigüedad",
+      "l:cocina",
       "l:orden",
-      "l:qué",
       "l:repartir",
+      "l:turno",
+      "p:por-orden-de",
       "p:repartir-entre"
     ],
     "targets": [],
@@ -30897,8 +30932,8 @@
   },
   {
     "id": "u55-1206",
-    "es": "Tengo el gusto de contarles que Jhon Fredy ya sabe bucear.",
-    "en": "I have the pleasure of telling you that Jhon Fredy can now dive.",
+    "es": "Tengo el gusto de contarles que Jhon Fredy ya se tira de cabeza.",
+    "en": "I have the pleasure of telling you that Jhon Fredy can now dive in head first.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -30906,16 +30941,16 @@
       "g:gender-articles",
       "g:indirect-objects",
       "g:object-pronoun-position",
-      "g:present-er-ir",
+      "g:present-ar",
+      "g:reflexive-routine",
       "g:that-clauses",
       "g:yo-irregular",
-      "l:bucear",
+      "l:cabeza",
       "l:contar",
       "l:gusto",
-      "l:saber",
       "l:tener",
+      "l:tirarse",
       "p:presenting-to-audience",
-      "p:saber-conocer",
       "p:tener-el-gusto-de"
     ],
     "targets": [
@@ -31048,26 +31083,26 @@
   },
   {
     "id": "u55-1212",
-    "es": "El gusto es mío; tenga el gusto de pasar.",
-    "en": "The pleasure is mine; please do come in. (polite)",
+    "es": "El gusto es mío, señora. Siga, por favor.",
+    "en": "The pleasure is mine, madam. Come in, please.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:aqui-tiene",
+      "c:por-favor",
+      "c:siga",
       "g:commands-usted",
       "g:gender-articles",
       "g:possessives-stressed",
       "g:ser-identity",
+      "l:favor",
       "l:gusto",
-      "l:pasar",
+      "l:seguir",
       "l:ser",
-      "l:tener",
+      "l:señora",
       "p:de-owner",
-      "p:tener-el-gusto-de"
+      "p:request-ladder"
     ],
-    "targets": [
-      "p:tener-el-gusto-de"
-    ],
+    "targets": [],
     "kind": "dialogue",
     "unit": "u55",
     "theme": "no way, why bother",
@@ -31480,19 +31515,17 @@
   },
   {
     "id": "u55-1229",
-    "es": "El arriendo se ajusta cada año a lo que sube la vida.",
+    "es": "El arriendo se ajusta cada año al costo de vida.",
     "en": "The rent is adjusted each year to the cost of living.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
       "g:gender-articles",
-      "g:present-er-ir",
-      "g:relatives-donde-lo-que",
       "l:ajusta",
       "l:arriendo",
       "l:año",
-      "l:subir",
+      "l:costo",
       "l:vida",
       "p:veces-al"
     ],
@@ -31728,29 +31761,31 @@
   },
   {
     "id": "u55-1240",
-    "es": "Las ganancias se reparten a partes iguales, como se ajusta a los estatutos.",
-    "en": "The profits are shared in equal parts, as the statutes require.",
+    "es": "Como mandan los estatutos, lo que sobra se reparte a partes iguales.",
+    "en": "As the statutes require, whatever is left over is split equally.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
+      "g:cause-result",
       "g:gender-articles",
-      "g:passive-se",
+      "g:present-ar",
       "g:present-er-ir",
-      "l:ajusta",
+      "g:relatives-donde-lo-que",
+      "g:se-impersonal",
       "l:estatuto",
-      "l:ganancia",
       "l:igual",
+      "l:mandar",
       "l:parte",
       "l:repartir",
+      "l:sobrar",
       "p:a-partes-iguales",
-      "p:ajustarse-a",
+      "p:lo-que-cosa-que",
+      "p:quedar-faltar-sobrar",
       "p:repartir-entre"
     ],
     "targets": [
-      "l:estatuto",
-      "p:a-partes-iguales",
-      "p:ajustarse-a"
+      "p:a-partes-iguales"
     ],
     "kind": "statement",
     "unit": "u55",
@@ -31903,22 +31938,25 @@
   },
   {
     "id": "u55-1246",
-    "es": "Los socios votan a partes iguales, sin importar el aporte.",
-    "en": "The members vote equally, regardless of contribution.",
+    "es": "Los turnos de limpieza se reparten a partes iguales, sin importar el aporte.",
+    "en": "The cleaning shifts are shared equally, regardless of contribution.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
+      "g:passive-se",
       "g:prep-infinitive",
-      "g:present-ar",
+      "g:present-er-ir",
       "l:aporte",
       "l:igual",
       "l:importar",
+      "l:limpieza",
       "l:parte",
-      "l:socio",
-      "l:votar",
-      "p:a-partes-iguales"
+      "l:repartir",
+      "l:turno",
+      "p:a-partes-iguales",
+      "p:repartir-entre"
     ],
     "targets": [
       "l:aporte",
@@ -32191,13 +32229,14 @@
   },
   {
     "id": "u55-1256",
-    "es": "Cada quien recibe en proporción a su aporte, no a partes iguales.",
-    "en": "Each person receives in proportion to their contribution, not in equal parts.",
+    "es": "Cada quien recibe una parte en proporción a su aporte, no a partes iguales.",
+    "en": "Each person receives a share in proportion to their contribution, not an equal one.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:cada-cualquier",
+      "g:gender-articles",
       "g:present-er-ir",
       "g:relatives-donde-lo-que",
       "l:aporte",
@@ -32382,8 +32421,8 @@
   },
   {
     "id": "u55-1263",
-    "es": "Con antelación suficiente, el aviso llegó a todos los vecinos.",
-    "en": "With enough notice, the announcement reached all the neighbours.",
+    "es": "El aviso llegó con antelación suficiente a todos los vecinos.",
+    "en": "The notice reached all the neighbours with plenty of time to spare.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -33426,8 +33465,8 @@
   },
   {
     "id": "u55-1303",
-    "es": "En modo alguno es esa tu obligación, Hernando.",
-    "en": "That is in no way your duty, Hernando.",
+    "es": "En modo alguno es esa su obligación, don Hernando.",
+    "en": "That is in no way your duty, Don Hernando. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -33437,8 +33476,10 @@
       "l:modo",
       "l:obligación",
       "l:ser",
+      "p:don-dona-nombre",
       "p:en-modo-alguno",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:senor-don-article"
     ],
     "targets": [
       "l:obligación",
@@ -33474,20 +33515,18 @@
   },
   {
     "id": "u55-1305",
-    "es": "En ningún momento dije que firmaría.",
-    "en": "At no point did I say I would sign.",
+    "es": "En ningún momento prometí mi firma.",
+    "en": "At no point did I promise my signature.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:conditional",
       "g:indefinites",
-      "g:preterite-irregular-strong",
-      "g:reported-backshift",
-      "g:that-clauses",
-      "l:decir",
-      "l:firmar",
+      "g:preterite-er-ir",
+      "l:firma",
       "l:momento",
-      "p:en-modo-alguno"
+      "l:prometer",
+      "p:en-modo-alguno",
+      "p:possessives-basic"
     ],
     "targets": [
       "p:en-modo-alguno"
@@ -33499,14 +33538,14 @@
   },
   {
     "id": "u55-1306",
-    "es": "En ningún caso, señor, eso no es posible.",
-    "en": "In no case, sir, that is not possible.",
+    "es": "En modo alguno, señor. Eso no es posible.",
+    "en": "In no way, sir. That is not possible.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:indefinites",
       "g:ser-identity",
-      "l:caso",
+      "l:modo",
       "l:posible",
       "l:ser",
       "l:señor",
@@ -34437,21 +34476,19 @@
   },
   {
     "id": "u55-1341",
-    "es": "Esa es la semilla cuyo árbol da sombra a todo el patio.",
-    "en": "That is the seed whose tree gives shade to the whole patio.",
+    "es": "Ese es el árbol cuya semilla plantó Rosa.",
+    "en": "That is the tree whose seed Rosa planted.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cuyo-relatives",
       "g:demonstratives",
       "g:gender-articles",
-      "g:present-ar",
+      "g:preterite-ar",
       "g:ser-identity",
-      "l:dar",
-      "l:patio",
+      "l:plantar",
       "l:semilla",
       "l:ser",
-      "l:sombra",
       "l:árbol"
     ],
     "targets": [
@@ -34774,30 +34811,29 @@
   },
   {
     "id": "u55-1353",
-    "es": "La señora Pérez, cuya cédula estaba vencida, no pudo votar.",
-    "en": "Mrs Pérez, whose ID had expired, could not vote.",
+    "es": "La señora Pérez, cuyo nombre no estaba en la lista, no pudo votar.",
+    "en": "Mrs Pérez, whose name was not on the list, could not vote.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:cuyo-relatives",
-      "g:estar-participle",
+      "g:estar-location-states",
       "g:gender-articles",
       "g:imperfect-states",
       "g:pret-vs-imperfect",
       "g:preterite-irregular-strong",
       "g:verb-infinitive",
-      "l:cédula",
       "l:estar",
+      "l:listo",
+      "l:nombre",
       "l:poder",
       "l:señora",
-      "l:vencer",
       "l:votar",
-      "p:senor-don-article",
-      "p:vencer-plazo"
+      "p:senor-don-article"
     ],
     "targets": [
-      "g:cuyo-relatives",
-      "p:vencer-plazo"
+      "g:cuyo-relatives"
     ],
     "kind": "statement",
     "unit": "u55",
@@ -35131,21 +35167,20 @@
   },
   {
     "id": "u55-1366",
-    "es": "¡Quién lo hubiera pensado, el loro votó con nosotros!",
-    "en": "Who would have thought it, the parrot voted with us!",
+    "es": "¡Quién lo hubiera pensado, el loro callado en una asamblea!",
+    "en": "Who would have thought it, the parrot quiet at an assembly!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
       "g:gender-articles",
       "g:pluperfect-subj",
-      "g:prep-pronouns",
-      "g:preterite-ar",
       "g:wish-exclamatives",
+      "l:asamblea",
+      "l:callado",
       "l:loro",
       "l:pensar",
       "l:quién",
-      "l:votar",
       "p:exclamations-basic"
     ],
     "targets": [
@@ -35185,19 +35220,17 @@
   },
   {
     "id": "u55-1368",
-    "es": "¡Quién te lo hubiera contado, Vale!",
-    "en": "Who would have told you, Vale!",
+    "es": "¡Quién lo hubiera adivinado, Vale!",
+    "en": "Who would have guessed it, Vale!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
-      "g:double-pronouns",
       "g:pluperfect-subj",
       "g:wish-exclamatives",
-      "l:contar",
+      "l:adivinar",
       "l:quién",
-      "p:exclamations-basic",
-      "p:me-te-nos-objects"
+      "p:exclamations-basic"
     ],
     "targets": [
       "g:wish-exclamatives"
@@ -35669,8 +35702,8 @@
   },
   {
     "id": "u55-1389",
-    "es": "Simón es un loro callado, pero hoy está callado de más.",
-    "en": "Simón is a quiet parrot, but today he is too quiet.",
+    "es": "Simón no es un loro callado, pero hoy está callado.",
+    "en": "Simón is not a quiet parrot, but today he is quiet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -35714,20 +35747,22 @@
   },
   {
     "id": "u55-1391",
-    "es": "Yesid es cansado de oír, y hoy está cansado de viajar.",
-    "en": "Yesid is tiresome to listen to, and today he is tired from travelling.",
+    "es": "Yesid es muy activo, pero hoy está cansado del viaje.",
+    "en": "Yesid is very active, but today he is tired from the trip.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
+      "g:gender-articles",
       "g:ser-identity",
+      "l:activo",
       "l:cansado",
       "l:estar",
       "l:hoy",
-      "l:oír",
       "l:ser",
-      "l:viajar",
-      "p:estar-harto-de"
+      "l:viaje",
+      "p:estar-harto-de",
+      "p:quantifiers-basic"
     ],
     "targets": [],
     "kind": "statement",
@@ -36264,17 +36299,25 @@
   },
   {
     "id": "u55-1414",
-    "es": "¡Quién lo hubiera dicho, Hernando!",
-    "en": "Who would have thought it, Hernando!",
+    "es": "¡Quién hubiera dicho que Gloria iba a ser presidenta!",
+    "en": "Who would have said Gloria would end up as chairwoman!",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
+      "g:imperfect-habitual",
+      "g:ir-a-plans",
       "g:pluperfect-subj",
+      "g:ser-identity",
+      "g:that-clauses",
       "g:wish-exclamatives",
       "l:decir",
+      "l:ir",
+      "l:presidente",
       "l:quién",
-      "p:exclamations-basic"
+      "l:ser",
+      "p:exclamations-basic",
+      "p:question-word-order",
+      "p:quien-tuviera"
     ],
     "targets": [
       "g:wish-exclamatives"
@@ -36361,21 +36404,25 @@
   },
   {
     "id": "u55-1418",
-    "es": "¡Quién lo hubiera sabido antes de firmar!",
-    "en": "If only we had known before signing!",
+    "es": "¡Quién hubiera leído la letra pequeña antes de firmar!",
+    "en": "If only someone had read the small print before signing!",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
+      "g:adjective-agreement",
+      "g:gender-articles",
       "g:pluperfect-subj",
       "g:prep-infinitive",
       "g:wish-exclamatives",
       "l:antes",
       "l:firmar",
+      "l:leer",
+      "l:letra",
+      "l:pequeño",
       "l:quién",
-      "l:saber",
       "p:exclamations-basic",
-      "p:saber-conocer"
+      "p:question-word-order",
+      "p:quien-tuviera"
     ],
     "targets": [
       "g:wish-exclamatives"
@@ -36509,19 +36556,28 @@
   },
   {
     "id": "u55-1425",
-    "es": "¿Quién lo hubiera dicho, verdad?",
-    "en": "Who would have thought it, right?",
+    "es": "¡Quién hubiera pensado que el loro iba a tener razón!",
+    "en": "Who would have thought the parrot would be right!",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:no-cierto",
-      "g:direct-objects",
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:ir-a-plans",
       "g:pluperfect-subj",
-      "g:questions",
+      "g:that-clauses",
       "g:wish-exclamatives",
-      "l:decir",
+      "l:ir",
+      "l:loro",
+      "l:pensar",
       "l:quién",
-      "l:verdad"
+      "l:razón",
+      "l:tener",
+      "p:exclamations-basic",
+      "p:pensar-en",
+      "p:question-word-order",
+      "p:quien-tuviera",
+      "p:tener-razon"
     ],
     "targets": [
       "g:wish-exclamatives"
@@ -36577,18 +36633,25 @@
   },
   {
     "id": "u55-1428",
-    "es": "¡Quién lo hubiera dicho! Gracias por todo.",
-    "en": "Who would have thought it! Thanks for everything.",
+    "es": "¡Quién me hubiera dicho que iba a extrañar los trámites!",
+    "en": "Who would have told me I'd miss the paperwork!",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:ir-a-plans",
       "g:pluperfect-subj",
+      "g:that-clauses",
       "g:wish-exclamatives",
       "l:decir",
+      "l:extrañar",
+      "l:ir",
       "l:quién",
+      "l:trámite",
       "p:exclamations-basic",
-      "p:gracias-por"
+      "p:extranar",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:wish-exclamatives"
@@ -36623,17 +36686,26 @@
   },
   {
     "id": "u55-1430",
-    "es": "¿Quién lo hubiera pensado, Tomás?",
-    "en": "Who would have thought it, Tomás?",
+    "es": "¡Quién hubiera pensado que don Libardo iba a firmar antes que nadie!",
+    "en": "Who would have thought Don Libardo would sign before anyone else!",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
+      "g:imperfect-habitual",
+      "g:ir-a-plans",
       "g:pluperfect-subj",
-      "g:questions",
+      "g:that-clauses",
       "g:wish-exclamatives",
+      "l:antes",
+      "l:firmar",
+      "l:ir",
       "l:pensar",
-      "l:quién"
+      "l:quién",
+      "p:exclamations-basic",
+      "p:pensar-en",
+      "p:question-word-order",
+      "p:quien-tuviera",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:wish-exclamatives"

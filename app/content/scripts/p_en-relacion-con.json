@@ -6,38 +6,171 @@
     "en": "In response to your request, we are sending you the catalogue."
   },
   "examples": [
-    { "es": "En relación con su comunicación del 3 de mayo, les informamos que el pedido ya fue enviado.", "en": "With reference to your letter of 3 May, we wish to inform you (all) that the order has already been sent." },
-    { "es": "Les escribo con respecto al pedido número 4521.", "en": "I am writing to you (all) regarding order number 4521." },
-    { "es": "En atención a su solicitud, le enviamos el catálogo.", "en": "In response to your request, we are sending you (formal) the catalogue." },
-    { "es": "Con respecto al contrato, tengo una duda.", "en": "Regarding the contract, I have a question." },
-    { "es": "En atención a su llamada, le confirmamos la cita.", "en": "In response to your call, we confirm the appointment to you (formal)." },
-    { "es": "Le escribo con respecto a su reclamo.", "en": "I am writing to you (formal) regarding your complaint." }
+    {
+      "es": "En relación con su comunicación del 3 de mayo, les informamos que el pedido ya fue enviado.",
+      "en": "With reference to your letter of 3 May, we wish to inform you (all) that the order has already been sent."
+    },
+    {
+      "es": "Les escribo con respecto al pedido número 4521.",
+      "en": "I am writing to you (all) regarding order number 4521."
+    },
+    {
+      "es": "En atención a su solicitud, le enviamos el catálogo.",
+      "en": "In response to your request, we are sending you (formal) the catalogue."
+    },
+    {
+      "es": "Con respecto al contrato, tengo una duda.",
+      "en": "Regarding the contract, I have a question."
+    },
+    {
+      "es": "En atención a su llamada, le confirmamos la cita.",
+      "en": "In response to your call, we confirm the appointment to you (formal)."
+    },
+    {
+      "es": "Le escribo con respecto a su reclamo.",
+      "en": "I am writing to you (formal) regarding your complaint."
+    }
   ],
   "rule": "Three openers do the same job: *En relación con*, *Con respecto a* and *En atención a*. Each is followed by a noun (what the letter is about), then a comma and your point.\n\n*En relación con* and *Con respecto a* mean \"regarding\". *En atención a* means \"in response to\": use it when you are answering something you received, such as a request or a call.\n\nThe noun after them is a thing, not a clause: *con respecto al contrato*, never \"regarding that there is a contract\". That is why nominalisation matters here.\n\nRemember *a* + *el* = *al*. Among friends, this sounds like a form. Keep it for letters and emails.",
   "smallPrint": "Teachers call these prepositional phrases or discourse markers of topic introduction. They set the topic before the main clause.",
   "readAndPick": [
-    { "es": "Con respecto al contrato, tengo una duda.", "options": ["Regarding the contract, I have a question.", "Without the contract, I have a question.", "After the contract, I have a question."], "answer": 0 },
-    { "es": "Les escribo con respecto al pedido número 4521.", "options": ["I am writing to you (formal) regarding order number 4521.", "I am writing to you (all) regarding order number 4521.", "I am writing to you (all) after order number 4521."], "answer": 1 },
-    { "es": "Le escribo con respecto a su reclamo.", "options": ["I am writing to you (all) regarding your complaint.", "I am writing to you (formal) regarding your complaint.", "I am writing to you (formal) because of my complaint."], "answer": 1 },
-    { "es": "En atención a su solicitud, le enviamos el catálogo.", "options": ["In response to your request, we are sending you the catalogue.", "Without your request, we are sending you the catalogue.", "Regarding your catalogue, we are sending you the request."], "answer": 0 },
-    { "es": "En atención a su llamada, les confirmamos la cita.", "options": ["In response to your call, we confirm the appointment to you (formal).", "In response to your call, we confirm the appointment to you (all).", "In response to our call, we confirm the appointment to you (all)."], "answer": 1 },
-    { "es": "En relación con la entrega, no hay problema.", "options": ["Regarding the delivery, there is no problem.", "After the delivery, there is no problem.", "Regarding the delivery, there is a problem."], "answer": 0 },
-    { "es": "Les escribo en relación con la venta del edificio.", "options": ["I am writing to you (all) regarding the sale of the building.", "I am writing to you (all) regarding the purchase of the building.", "I am writing to you (formal) regarding the sale of the building."], "answer": 0 },
-    { "es": "En relación con su pregunta, la respuesta es sí.", "options": ["Regarding your question, the answer is no.", "Regarding my question, the answer is yes.", "Regarding your question, the answer is yes."], "answer": 2 }
+    {
+      "es": "Con respecto al contrato, tengo una duda.",
+      "options": [
+        "Regarding the contract, I have a question.",
+        "Without the contract, I have a question.",
+        "After the contract, I have a question."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Les escribo con respecto al pedido número 4521.",
+      "options": [
+        "I am writing to you (formal) regarding order number 4521.",
+        "I am writing to you (all) regarding order number 4521.",
+        "I am writing to you (all) after order number 4521."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Le escribo con respecto a su reclamo.",
+      "options": [
+        "I am writing to you (all) regarding your complaint.",
+        "I am writing to you (formal) regarding your complaint.",
+        "I am writing to you (formal) because of my complaint."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "En atención a su solicitud, le enviamos el catálogo.",
+      "options": [
+        "In response to your request, we are sending you the catalogue.",
+        "Without your request, we are sending you the catalogue.",
+        "Regarding your catalogue, we are sending you the request."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "En atención a su llamada, les confirmamos la cita.",
+      "options": [
+        "In response to your call, we confirm the appointment to you (formal).",
+        "In response to your call, we confirm the appointment to you (all).",
+        "In response to our call, we confirm the appointment to you (all)."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "En relación con la entrega, no hay problema.",
+      "options": [
+        "Regarding the delivery, there is no problem.",
+        "After the delivery, there is no problem.",
+        "Regarding the delivery, there is a problem."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Les escribo en relación con la venta del edificio.",
+      "options": [
+        "I am writing to you (all) regarding the sale of the building.",
+        "I am writing to you (all) regarding the purchase of the building.",
+        "I am writing to you (formal) regarding the sale of the building."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "En relación con su pregunta, la respuesta es sí.",
+      "options": [
+        "Regarding your question, the answer is no.",
+        "Regarding my question, the answer is yes.",
+        "Regarding your question, the answer is yes."
+      ],
+      "answer": 2
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick *al* or *el* and type the sentence: *Con respecto ___ contrato, tengo una duda.*", "answer": "Con respecto al contrato, tengo una duda.", "accept": ["En relación con el contrato, tengo una duda."], "why": "*A* + *el* always joins into *al*." },
-    { "prompt": "Type in Spanish: In response to your request, we are sending you (formal) the catalogue.", "answer": "En atención a su solicitud, le enviamos el catálogo.", "accept": [], "why": "*En atención a* answers something you received, such as a request." },
-    { "prompt": "Type in Spanish: I am writing to you (all) regarding order number 4521.", "answer": "Les escribo con respecto al pedido número 4521.", "accept": ["Les escribo en relación con el pedido número 4521."], "why": "*Les* is \"to you all\", and *al pedido* is *a* + *el* joined." },
-    { "prompt": "Type in Spanish: In response to your call, we confirm the appointment to you (formal).", "answer": "En atención a su llamada, le confirmamos la cita.", "accept": [], "why": "Opener, comma, then your point: *le confirmamos la cita*." },
-    { "prompt": "Type in Spanish: I am writing to you (formal) regarding your complaint.", "answer": "Le escribo con respecto a su reclamo.", "accept": ["Le escribo en relación con su reclamo."], "why": "*Le* is one person, formal; *su reclamo* needs no *el*." },
-    { "prompt": "Say it with the other opener: *Con respecto al contrato, tengo una duda.* Say it with *En relación con*.", "answer": "En relación con el contrato, tengo una duda.", "accept": [], "why": "*En relación con* is followed by *el*, which does not join with *con*." },
-    { "prompt": "Make it for you (all): *En atención a su llamada, le confirmamos la cita.* Say: In response to your call, we confirm the appointment to you (all).", "answer": "En atención a su llamada, les confirmamos la cita.", "accept": [], "why": "*Le* becomes *les* when you write to more than one person." }
+    {
+      "prompt": "Pick *al* or *el* and type the sentence: *Con respecto ___ contrato, tengo una duda.*",
+      "answer": "Con respecto al contrato, tengo una duda.",
+      "accept": [],
+      "why": "*A* + *el* always joins into *al*."
+    },
+    {
+      "prompt": "Type in Spanish: In response to your request, we are sending you (formal) the catalogue.",
+      "answer": "En atención a su solicitud, le enviamos el catálogo.",
+      "accept": [],
+      "why": "*En atención a* answers something you received, such as a request."
+    },
+    {
+      "prompt": "Type in Spanish: I am writing to you (all) regarding order number 4521.",
+      "answer": "Les escribo con respecto al pedido número 4521.",
+      "accept": [
+        "Les escribo en relación con el pedido número 4521."
+      ],
+      "why": "*Les* is \"to you all\", and *al pedido* is *a* + *el* joined."
+    },
+    {
+      "prompt": "Type in Spanish: In response to your call, we confirm the appointment to you (formal).",
+      "answer": "En atención a su llamada, le confirmamos la cita.",
+      "accept": [],
+      "why": "Opener, comma, then your point: *le confirmamos la cita*."
+    },
+    {
+      "prompt": "Type in Spanish: I am writing to you (formal) regarding your complaint.",
+      "answer": "Le escribo con respecto a su reclamo.",
+      "accept": [
+        "Le escribo en relación con su reclamo."
+      ],
+      "why": "*Le* is one person, formal; *su reclamo* needs no *el*."
+    },
+    {
+      "prompt": "Say it with the other opener: *Con respecto al contrato, tengo una duda.* Say it with *En relación con*.",
+      "answer": "En relación con el contrato, tengo una duda.",
+      "accept": [],
+      "why": "*En relación con* is followed by *el*, which does not join with *con*."
+    },
+    {
+      "prompt": "Make it for you (all): *En atención a su llamada, le confirmamos la cita.* Say: In response to your call, we confirm the appointment to you (all).",
+      "answer": "En atención a su llamada, les confirmamos la cita.",
+      "accept": [],
+      "why": "*Le* becomes *les* when you write to more than one person."
+    }
   ],
   "pitfalls": [
-    { "wrong": "En relación el contrato, tengo una duda.", "right": "En relación con el contrato, tengo una duda.", "why": "Almost. This opener needs *con* before what the letter is about." },
-    { "wrong": "Con respecto a el contrato, tengo una duda.", "right": "Con respecto al contrato, tengo una duda.", "why": "Almost. *A* + *el* must join into *al*." },
-    { "wrong": "En atención de su solicitud, le enviamos el catálogo.", "right": "En atención a su solicitud, le enviamos el catálogo.", "why": "Almost. The set phrase is *en atención a*." }
+    {
+      "wrong": "En relación el contrato, tengo una duda.",
+      "right": "En relación con el contrato, tengo una duda.",
+      "why": "Almost. This opener needs *con* before what the letter is about."
+    },
+    {
+      "wrong": "Con respecto a el contrato, tengo una duda.",
+      "right": "Con respecto al contrato, tengo una duda.",
+      "why": "Almost. *A* + *el* must join into *al*."
+    },
+    {
+      "wrong": "En atención de su solicitud, le enviamos el catálogo.",
+      "right": "En atención a su solicitud, le enviamos el catálogo.",
+      "why": "Almost. The set phrase is *en atención a*."
+    }
   ],
   "personal": "Write the opening of a formal email about a real thing in your life, such as a bill or a booking, starting with *En relación con* or *Con respecto a*."
 }

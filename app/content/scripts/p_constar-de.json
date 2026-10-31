@@ -1,177 +1,177 @@
 {
- "node": "p:constar-de",
- "hook": {
-  "line": "The cooperative's statutes land on Tomás's desk, and the first thing a document like that does is say what the group is made of.",
-  "es": "La junta consta de siete socios.",
-  "en": "The board consists of seven members."
- },
- "examples": [
-  {
-   "es": "El examen consta de tres partes.",
-   "en": "The exam consists of three parts."
+  "node": "p:constar-de",
+  "hook": {
+    "line": "The cooperative's statutes land on Tomás's desk, and the first thing a document like that does is say what the group is made of.",
+    "es": "La junta consta de siete socios.",
+    "en": "The board consists of seven members."
   },
-  {
-   "es": "La junta consta de siete socios.",
-   "en": "The board consists of seven members."
-  },
-  {
-   "es": "El comité está integrado por expertos de cinco países.",
-   "en": "The committee is made up of experts from five countries."
-  },
-  {
-   "es": "El reglamento consta de diez artículos.",
-   "en": "The regulations consist of ten articles."
-  },
-  {
-   "es": "La asociación está constituida por vecinos de La Candelaria.",
-   "en": "The association is made up of neighbours from La Candelaria."
-  },
-  {
-   "es": "¿De cuántas partes consta el estatuto?",
-   "en": "How many parts does the statute consist of?"
-  }
- ],
- "rule": "Two ways to say what something is made of.\n\n*Constar de* + the parts: *consta de tres partes*. It is an ordinary verb, so it agrees: *consta* for one thing, *constan* for several.\n\n*Estar integrado / constituido / conformado por* + the members: *está integrada por siete socios*. The ending matches the thing described: *integrada* for *la junta*, *integrado* for *el comité*. In Colombian texts *conformado* is very common.\n\nEnglish \"consists of\" and \"is made up of\" both fit. Both are formal: they belong to statutes, reports and notices.",
- "smallPrint": "Teachers call *integrado por* a passive participle: it is the *estar + participle* you already know, with *por* naming the members.",
- "readAndPick": [
-  {
-   "es": "El examen consta de tres partes.",
-   "options": [
-    "The exam consists of three parts.",
-    "The exam is three hours long.",
-    "The exam is on the third part."
-   ],
-   "answer": 0
-  },
-  {
-   "es": "Los estatutos constan de dos capítulos.",
-   "options": [
-    "The statute consists of two chapters.",
-    "The statutes were read in two chapters.",
-    "The statutes consist of two chapters."
-   ],
-   "answer": 2
-  },
-  {
-   "es": "La junta está integrada por cinco asociados.",
-   "options": [
-    "Five members have joined the board.",
-    "The board is made up of five members.",
-    "The board is meeting five members."
-   ],
-   "answer": 1
-  },
-  {
-   "es": "¿De cuántas partes consta el reglamento?",
-   "options": [
-    "How long is the regulation?",
-    "Who wrote the regulation?",
-    "How many parts does the regulation consist of?"
-   ],
-   "answer": 2
-  },
-  {
-   "es": "El comité está constituido por expertos.",
-   "options": [
-    "The committee is made up of experts.",
-    "The committee is looking for experts.",
-    "The committee was founded by one expert."
-   ],
-   "answer": 0
-  },
-  {
-   "es": "Las reglas constan de diez artículos.",
-   "options": [
-    "The rule consists of ten articles.",
-    "The rules consist of ten articles.",
-    "The rules were passed in ten articles."
-   ],
-   "answer": 1
-  },
-  {
-   "es": "La cooperativa está formada por cuarenta vecinos.",
-   "options": [
-    "The cooperative has forty neighbours at the door.",
-    "The cooperative is forty years old.",
-    "The cooperative is made up of forty neighbours."
-   ],
-   "answer": 2
-  },
-  {
-   "es": "El decreto consta de un solo artículo.",
-   "options": [
-    "The decree has several articles.",
-    "The decree consists of a single article.",
-    "The decree is signed by one person."
-   ],
-   "answer": 1
-  }
- ],
- "yourTurn": [
-  {
-   "prompt": "Choose *consta* or *constan*: El reglamento ___ de diez artículos. Type the whole sentence.",
-   "answer": "El reglamento consta de diez artículos.",
-   "accept": [],
-   "why": "One regulation, so the singular *consta*."
-  },
-  {
-   "prompt": "Choose *consta* or *constan*: Los estatutos ___ de tres partes. Type the whole sentence.",
-   "answer": "Los estatutos constan de tres partes.",
-   "accept": [],
-   "why": "Several statutes, so the plural *constan*."
-  },
-  {
-   "prompt": "Say: The board consists of seven members.",
-   "answer": "La junta consta de siete socios.",
-   "accept": [
-    "La junta está integrada por siete socios.",
-    "La junta está constituida por siete socios."
-   ],
-   "why": "*Constar de* names the parts, and *está integrada por* says the same thing."
-  },
-  {
-   "prompt": "Say: The committee is made up of experts from five countries.",
-   "answer": "El comité está integrado por expertos de cinco países.",
-   "accept": [
-    "El comité está constituido por expertos de cinco países."
-   ],
-   "why": "The members follow *por*, and *integrado* matches *el comité*."
-  },
-  {
-   "prompt": "Ask: How many parts does the statute consist of?",
-   "answer": "¿De cuántas partes consta el estatuto?",
-   "accept": [],
-   "why": "*Constar de* keeps its *de*, so it goes in front of the question word."
-  },
-  {
-   "prompt": "Choose *de* or *por*: La asociación está constituida ___ vecinos de La Candelaria. Type the whole sentence.",
-   "answer": "La asociación está constituida por vecinos de La Candelaria.",
-   "accept": [],
-   "why": "After *estar constituido*, the members come with *por*."
-  },
-  {
-   "prompt": "Make it plural: *El decreto consta de dos artículos.*",
-   "answer": "Los decretos constan de dos artículos.",
-   "accept": [],
-   "why": "Several decrees need the plural *constan*."
-  }
- ],
- "pitfalls": [
-  {
-   "wrong": "El examen consiste de tres partes.",
-   "right": "El examen consta de tres partes.",
-   "why": "*Consistir* takes *en* and says what something comes down to. For what it is made of, use *constar de*."
-  },
-  {
-   "wrong": "La junta está integrada de siete socios.",
-   "right": "La junta está integrada por siete socios.",
-   "why": "The members come after *por*, not *de*."
-  },
-  {
-   "wrong": "La junta está integrado por siete socios.",
-   "right": "La junta está integrada por siete socios.",
-   "why": "The ending agrees with the thing: *la junta* is feminine, so *integrada*."
-  }
- ],
- "personal": "Say what a group you know is made of: your family, a team, a club. *Mi equipo consta de…* or *Mi club está integrado por…*."
+  "examples": [
+    {
+      "es": "El examen consta de tres partes.",
+      "en": "The exam consists of three parts."
+    },
+    {
+      "es": "La junta consta de siete socios.",
+      "en": "The board consists of seven members."
+    },
+    {
+      "es": "El comité está integrado por expertos de cinco países.",
+      "en": "The committee is made up of experts from five countries."
+    },
+    {
+      "es": "El reglamento consta de diez artículos.",
+      "en": "The regulations consist of ten articles."
+    },
+    {
+      "es": "La asociación está constituida por vecinos de La Candelaria.",
+      "en": "The association is made up of neighbours from La Candelaria."
+    },
+    {
+      "es": "¿De cuántas partes consta el estatuto?",
+      "en": "How many parts does the statute consist of?"
+    }
+  ],
+  "rule": "Two ways to say what something is made of.\n\n*Constar de* + the parts: *consta de tres partes*. It is an ordinary verb, so it agrees: *consta* for one thing, *constan* for several.\n\n*Estar integrado*, *constituido* or *conformado por* + the members: *está integrada por siete socios*. The ending matches the thing described: *integrada* for *la junta*, *integrado* for *el comité*. In Colombian texts *conformado* is very common.\n\nEnglish \"consists of\" and \"is made up of\" both fit. Both are formal: they belong to statutes, reports and notices.",
+  "smallPrint": "Teachers call *integrado por* a passive participle: it is the *estar + participle* you already know, with *por* naming the members.",
+  "readAndPick": [
+    {
+      "es": "El examen consta de tres partes.",
+      "options": [
+        "The exam consists of three parts.",
+        "The exam is three hours long.",
+        "The exam is on the third part."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Los estatutos constan de dos capítulos.",
+      "options": [
+        "The statute consists of two chapters.",
+        "The statutes were read in two chapters.",
+        "The statutes consist of two chapters."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La junta está integrada por cinco asociados.",
+      "options": [
+        "Five members have joined the board.",
+        "The board is made up of five members.",
+        "The board is meeting five members."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿De cuántas partes consta el reglamento?",
+      "options": [
+        "How long is the regulation?",
+        "Who wrote the regulation?",
+        "How many parts does the regulation consist of?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El comité está constituido por expertos.",
+      "options": [
+        "The committee is made up of experts.",
+        "The committee is looking for experts.",
+        "The committee was founded by one expert."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Las reglas constan de diez artículos.",
+      "options": [
+        "The rule consists of ten articles.",
+        "The rules consist of ten articles.",
+        "The rules were passed in ten articles."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La cooperativa está formada por cuarenta vecinos.",
+      "options": [
+        "The cooperative has forty neighbours at the door.",
+        "The cooperative is forty years old.",
+        "The cooperative is made up of forty neighbours."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El decreto consta de un solo artículo.",
+      "options": [
+        "The decree has several articles.",
+        "The decree consists of a single article.",
+        "The decree is signed by one person."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *consta* or *constan*: El reglamento ___ de diez artículos. Type the whole sentence.",
+      "answer": "El reglamento consta de diez artículos.",
+      "accept": [],
+      "why": "One regulation, so the singular *consta*."
+    },
+    {
+      "prompt": "Choose *consta* or *constan*: Los estatutos ___ de tres partes. Type the whole sentence.",
+      "answer": "Los estatutos constan de tres partes.",
+      "accept": [],
+      "why": "Several statutes, so the plural *constan*."
+    },
+    {
+      "prompt": "Say: The board consists of seven members.",
+      "answer": "La junta consta de siete socios.",
+      "accept": [
+        "La junta está integrada por siete socios.",
+        "La junta está constituida por siete socios."
+      ],
+      "why": "*Constar de* names the parts, and *está integrada por* says the same thing."
+    },
+    {
+      "prompt": "Say: The committee is made up of experts from five countries.",
+      "answer": "El comité está integrado por expertos de cinco países.",
+      "accept": [
+        "El comité está constituido por expertos de cinco países."
+      ],
+      "why": "The members follow *por*, and *integrado* matches *el comité*."
+    },
+    {
+      "prompt": "Ask: How many parts does the statute consist of?",
+      "answer": "¿De cuántas partes consta el estatuto?",
+      "accept": [],
+      "why": "*Constar de* keeps its *de*, so it goes in front of the question word."
+    },
+    {
+      "prompt": "Choose *de* or *por*: La asociación está constituida ___ vecinos de La Candelaria. Type the whole sentence.",
+      "answer": "La asociación está constituida por vecinos de La Candelaria.",
+      "accept": [],
+      "why": "After *estar constituido*, the members come with *por*."
+    },
+    {
+      "prompt": "Make it plural: *El decreto consta de dos artículos.*",
+      "answer": "Los decretos constan de dos artículos.",
+      "accept": [],
+      "why": "Several decrees need the plural *constan*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El examen consiste de tres partes.",
+      "right": "El examen consta de tres partes.",
+      "why": "Almost. *Consistir* takes *en* and says what something comes down to. For what it is made of, use *constar de*."
+    },
+    {
+      "wrong": "La junta está integrada de siete socios.",
+      "right": "La junta está integrada por siete socios.",
+      "why": "Almost. The members come after *por*, not *de*."
+    },
+    {
+      "wrong": "La junta está integrado por siete socios.",
+      "right": "La junta está integrada por siete socios.",
+      "why": "Almost. The ending agrees with the thing: *la junta* is feminine, so *integrada*."
+    }
+  ],
+  "personal": "Say what a group you know is made of: your family, a team, a club. *Mi equipo consta de…* or *Mi club está integrado por…*."
 }

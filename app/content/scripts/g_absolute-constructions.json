@@ -3,28 +3,109 @@
   "hook": {
     "line": "Meeting minutes, statutes and contracts keep opening sentences with a single word like *aprobado* or *firmado*. Learn to spot it and the whole formal register gets easier to read, and to write.",
     "es": "Dicho esto, pasemos al siguiente punto.",
-    "en": "Having said that, let's move on to the next point."
+    "en": "That said, let's move on to the next point."
   },
   "examples": [
-    { "es": "Una vez aprobado el plan, comenzarán las obras.", "en": "Once the plan is approved, work will begin." },
-    { "es": "Terminada la reunión, todos se fueron.", "en": "Once the meeting was over, everyone left." },
-    { "es": "Firmados los estatutos, la cooperativa existe.", "en": "Once the statutes are signed, the cooperative exists." },
-    { "es": "Hecho el pago, recibirá el recibo.", "en": "Once the payment is made, you will receive the receipt. (formal)" },
-    { "es": "Cerrada la votación, se contaron los votos.", "en": "Once the vote was closed, the votes were counted." },
-    { "es": "Resuelto el problema, abrimos otra vez.", "en": "Once the problem was solved, we opened again." }
+    {
+      "es": "Una vez aprobado el plan, comenzarán las obras.",
+      "en": "Once the plan is approved, work will begin."
+    },
+    {
+      "es": "Terminada la reunión, todos se fueron.",
+      "en": "Once the meeting was over, everyone left."
+    },
+    {
+      "es": "Firmados los estatutos, la cooperativa existe.",
+      "en": "Once the statutes are signed, the cooperative exists."
+    },
+    {
+      "es": "Hecho el pago, le enviaremos el recibo.",
+      "en": "Once the payment is made, we will send you the receipt. (formal)"
+    },
+    {
+      "es": "Cerrada la votación, se contaron los votos.",
+      "en": "Once the vote was closed, the votes were counted."
+    },
+    {
+      "es": "Resuelto el problema, abrimos otra vez.",
+      "en": "Once the problem was solved, we opened again."
+    }
   ],
   "rule": "Each example opens with a past participle followed by the thing it describes: *aprobado el plan*, *terminada la reunión*. No *haber*, no *que*, no extra verb. It is a shortcut for \"once that was done\".\n\nThe participle agrees with its noun like an adjective:\n*aprobado el plan*\n*aprobada la propuesta*\n*firmados los estatutos*\n\nThe phrase only sets the scene, so the main clause can be about something else: *Terminada la reunión, todos se fueron.* It almost always comes first.\n\nAdd *una vez* in front to make the timing obvious: *Una vez aprobado el plan*. English has a faint cousin in \"that done\"; Spanish uses it everywhere in writing. *Dicho esto* (\"that said\") is a set phrase for moving on.",
   "smallPrint": "Teachers call these absolute constructions: the participle clause has its own subject, separate from the main clause. They are much more common in writing than in speech.",
   "readAndPick": [
-    { "es": "Una vez aprobado el plan, comenzarán las obras.", "options": ["Work will begin before the plan is approved.", "Once the plan is approved, work will begin."], "answer": 1 },
-    { "es": "Terminada la reunión, todos se fueron.", "options": ["Once the meeting was over, everyone left.", "Everyone left before the meeting ended."], "answer": 0 },
-    { "es": "Firmados los estatutos, la cooperativa existe.", "options": ["Once the statute is signed, the cooperative exists.", "Once the statutes are signed, the cooperative exists."], "answer": 1 },
-    { "es": "Una vez firmado el estatuto, la cooperativa existe.", "options": ["Once the statute is signed, the cooperative exists.", "Once the statutes are signed, the cooperative exists."], "answer": 0 },
-    { "es": "Cerrada la votación, se contaron los votos.", "options": ["Once the votes were counted, the vote was closed.", "Once the vote was closed, the votes were counted."], "answer": 1 },
-    { "es": "Hecho el pago, recibirá el recibo.", "options": ["Once the payment is made, you will receive the receipt. (formal)", "Once the receipt arrives, you will make the payment. (formal)"], "answer": 0 },
-    { "es": "Resuelto el problema, abrimos otra vez.", "options": ["Once we opened again, the problem was solved.", "Once the problem was solved, we opened again."], "answer": 1 },
-    { "es": "Dicho esto, pasemos al siguiente punto.", "options": ["That said, let's move on to the next point.", "That said, they moved on to the next point."], "answer": 0 },
-    { "es": "Una vez recibidos los aportes, se repartirán las ganancias.", "options": ["Once the profits are split, the contributions will be received.", "Once the contributions are received, the profits will be split."], "answer": 1 }
+    {
+      "es": "Una vez aprobado el plan, comenzarán las obras.",
+      "options": [
+        "Work will begin before the plan is approved.",
+        "Once the plan is approved, work will begin."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Terminada la reunión, todos se fueron.",
+      "options": [
+        "Once the meeting was over, everyone left.",
+        "Everyone left before the meeting ended."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Firmados los estatutos, la cooperativa existe.",
+      "options": [
+        "Once the statute is signed, the cooperative exists.",
+        "Once the statutes are signed, the cooperative exists."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Una vez firmado el estatuto, la cooperativa existe.",
+      "options": [
+        "Once the statute is signed, the cooperative exists.",
+        "Once the statutes are signed, the cooperative exists."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Cerrada la votación, se contaron los votos.",
+      "options": [
+        "Once the votes were counted, the vote was closed.",
+        "Once the vote was closed, the votes were counted."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hecho el pago, le enviaremos el recibo.",
+      "options": [
+        "Once the payment is made, we will send you the receipt. (formal)",
+        "Once the receipt arrives, we will send you the payment. (formal)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Resuelto el problema, abrimos otra vez.",
+      "options": [
+        "Once we opened again, the problem was solved.",
+        "Once the problem was solved, we opened again."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Dicho esto, pasemos al siguiente punto.",
+      "options": [
+        "That said, let's move on to the next point.",
+        "That said, they moved on to the next point."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Una vez recibidos los aportes, se repartirán las ganancias.",
+      "options": [
+        "Once the profits are split, the contributions will be received.",
+        "Once the contributions are received, the profits will be split."
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
     {
@@ -36,17 +117,21 @@
     {
       "prompt": "Choose *firmado* or *firmados* and type the whole sentence: ___ los estatutos, la cooperativa existe.",
       "answer": "Firmados los estatutos, la cooperativa existe.",
-      "accept": ["Una vez firmados los estatutos, la cooperativa existe."],
+      "accept": [
+        "Una vez firmados los estatutos, la cooperativa existe."
+      ],
       "why": "*Estatutos* is plural, so the participle is plural too."
     },
     {
       "prompt": "Say: Once the meeting was over, everyone left.",
       "answer": "Terminada la reunión, todos se fueron.",
-      "accept": ["Una vez terminada la reunión, todos se fueron."],
+      "accept": [
+        "Una vez terminada la reunión, todos se fueron."
+      ],
       "why": "Participle first, matching *reunión*, then the main clause."
     },
     {
-      "prompt": "Say: Having said that, let's move on to the next point.",
+      "prompt": "Say: That said, let's move on to the next point.",
       "answer": "Dicho esto, pasemos al siguiente punto.",
       "accept": [],
       "why": "*Dicho esto* is a ready-made phrase for changing the subject."
@@ -54,13 +139,17 @@
     {
       "prompt": "Say: Once the vote was closed, the votes were counted.",
       "answer": "Cerrada la votación, se contaron los votos.",
-      "accept": ["Una vez cerrada la votación, se contaron los votos."],
+      "accept": [
+        "Una vez cerrada la votación, se contaron los votos."
+      ],
       "why": "*Votación* is feminine singular, so *cerrada*."
     },
     {
       "prompt": "Shorten it with a participle: *Una vez que aprobaron el plan, comenzaron las obras.*",
       "answer": "Una vez aprobado el plan, comenzaron las obras.",
-      "accept": ["Aprobado el plan, comenzaron las obras."],
+      "accept": [
+        "Aprobado el plan, comenzaron las obras."
+      ],
       "why": "Drop *que* and the verb, keep the participle and the noun."
     },
     {

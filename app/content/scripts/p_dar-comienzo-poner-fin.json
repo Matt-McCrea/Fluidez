@@ -1,172 +1,172 @@
 {
- "node": "p:dar-comienzo-poner-fin",
- "hook": {
-  "line": "On official papers nothing simply starts or stops. When Altamira's lawyer reads the notice to the neighbours, a session gets a *comienzo* and a conflict gets a *fin*.",
-  "es": "La presidenta dio comienzo a la sesión.",
-  "en": "The chairwoman began the session."
- },
- "examples": [
-  {
-   "es": "Mañana darán comienzo los actos.",
-   "en": "The ceremonies will commence tomorrow."
+  "node": "p:dar-comienzo-poner-fin",
+  "hook": {
+    "line": "On official papers nothing simply starts or stops. When Altamira's lawyer reads the notice to the neighbours, a session gets a *comienzo* and a conflict gets a *fin*.",
+    "es": "La presidenta dio comienzo a la sesión.",
+    "en": "The chairwoman began the session."
   },
-  {
-   "es": "El acuerdo puso fin a la huelga.",
-   "en": "The agreement put an end to the strike."
-  },
-  {
-   "es": "La presidenta dio comienzo a la sesión.",
-   "en": "The chairwoman began the session."
-  },
-  {
-   "es": "La junta dio comienzo a la asamblea a las nueve.",
-   "en": "The board began the assembly at nine."
-  },
-  {
-   "es": "Pongamos fin a esta discusión.",
-   "en": "Let's put an end to this discussion."
-  },
-  {
-   "es": "El tribunal puso fin al caso.",
-   "en": "The court put an end to the case."
-  }
- ],
- "rule": "This is the formal way to say begin and end. *Dar comienzo a* = begin. *Poner fin a* = end.\n\nThe noun does the work (*comienzo*, *fin*) and the verb just changes: *dio comienzo*, *darán comienzo*, *puso fin*, *pongamos fin*. What you start or stop follows *a* (*al* before *el*): *puso fin al caso*.\n\nIt sounds like a ceremony or a statute, and English \"commence\" and \"bring to an end\" sound the same way. Among friends, use *empezar* and *terminar*.",
- "smallPrint": "Teachers call these light-verb phrases: a common verb plus a noun doing the job of one verb.",
- "readAndPick": [
-  {
-   "es": "La presidenta dio comienzo a la sesión.",
-   "options": [
-    "The chairwoman ended the session.",
-    "The chairwoman began the session.",
-    "The chairwoman cancelled the session."
-   ],
-   "answer": 1
-  },
-  {
-   "es": "El acuerdo puso fin a la huelga.",
-   "options": [
-    "The agreement ended the strike.",
-    "The agreement began the strike.",
-    "The agreement avoided the strike."
-   ],
-   "answer": 0
-  },
-  {
-   "es": "Mañana darán comienzo los actos.",
-   "options": [
-    "The ceremonies began yesterday.",
-    "The ceremonies were cancelled.",
-    "The ceremonies will commence tomorrow."
-   ],
-   "answer": 2
-  },
-  {
-   "es": "Pongamos fin a esta discusión.",
-   "options": [
-    "Let's start this discussion.",
-    "Let's put an end to this discussion.",
-    "Let's keep this discussion going."
-   ],
-   "answer": 1
-  },
-  {
-   "es": "Hoy damos comienzo a la reunión.",
-   "options": [
-    "Today we begin the meeting.",
-    "Today we end the meeting.",
-    "Today we skip the meeting."
-   ],
-   "answer": 0
-  },
-  {
-   "es": "El tribunal puso fin al caso.",
-   "options": [
-    "The court opened the case.",
-    "The court studied the case.",
-    "The court put an end to the case."
-   ],
-   "answer": 2
-  },
-  {
-   "es": "Dieron comienzo a las obras en abril.",
-   "options": [
-    "They will begin the works in April.",
-    "They began the works in April.",
-    "They finished the works in April."
-   ],
-   "answer": 1
-  },
-  {
-   "es": "Los vecinos pusieron fin al conflicto.",
-   "options": [
-    "The neighbours started the conflict.",
-    "The neighbours ended the conflict.",
-    "The neighbours heard about the conflict."
-   ],
-   "answer": 1
-  }
- ],
- "yourTurn": [
-  {
-   "prompt": "Choose *comienzo* or *fin*: La presidenta dio ___ a la sesión. (She began it.) Type the whole sentence.",
-   "answer": "La presidenta dio comienzo a la sesión.",
-   "accept": [],
-   "why": "*Dar comienzo* means begin."
-  },
-  {
-   "prompt": "Choose *comienzo* or *fin*: El acuerdo puso ___ a la huelga. (It ended it.) Type the whole sentence.",
-   "answer": "El acuerdo puso fin a la huelga.",
-   "accept": [],
-   "why": "*Poner fin* means end."
-  },
-  {
-   "prompt": "Choose *a* or *al*: El tribunal puso fin ___ caso. Type the whole sentence.",
-   "answer": "El tribunal puso fin al caso.",
-   "accept": [],
-   "why": "*A* and *el* join into *al*."
-  },
-  {
-   "prompt": "Say: The board began the assembly at nine.",
-   "answer": "La junta dio comienzo a la asamblea a las nueve.",
-   "accept": [],
-   "why": "*Dio comienzo a* + the thing you begin."
-  },
-  {
-   "prompt": "Say: Let's put an end to this discussion.",
-   "answer": "Pongamos fin a esta discusión.",
-   "accept": [],
-   "why": "*Pongamos* is the *let's* form of *poner*."
-  },
-  {
-   "prompt": "Make it about the future: *La junta dio comienzo a la asamblea.*",
-   "answer": "La junta dará comienzo a la asamblea.",
-   "accept": [],
-   "why": "*Dará* is the future of *dar*."
-  },
-  {
-   "prompt": "Turn it around so it ends: *El alcalde dio comienzo a la ceremonia.*",
-   "answer": "El alcalde puso fin a la ceremonia.",
-   "accept": [],
-   "why": "*Poner fin a* is the opposite of *dar comienzo a*."
-  }
- ],
- "pitfalls": [
-  {
-   "wrong": "Dieron comienzo la reunión.",
-   "right": "Dieron comienzo a la reunión.",
-   "why": "What starts needs *a* in front of it."
-  },
-  {
-   "wrong": "El acuerdo puso fin de la huelga.",
-   "right": "El acuerdo puso fin a la huelga.",
-   "why": "It is *poner fin a*, never *de*."
-  },
-  {
-   "wrong": "¿Damos comienzo a comer?",
-   "right": "¿Empezamos a comer?",
-   "why": "*Dar comienzo* is for ceremonies and papers. With friends at the table, use *empezar*."
-  }
- ],
- "personal": "Open or close an imaginary meeting the formal way: *Doy comienzo a la sesión.* or *Pongo fin a esta reunión.*"
+  "examples": [
+    {
+      "es": "Mañana darán comienzo los actos.",
+      "en": "The ceremonies will commence tomorrow."
+    },
+    {
+      "es": "El acuerdo puso fin a la huelga.",
+      "en": "The agreement put an end to the strike."
+    },
+    {
+      "es": "La presidenta dio comienzo a la sesión.",
+      "en": "The chairwoman began the session."
+    },
+    {
+      "es": "La junta dio comienzo a la asamblea a las nueve.",
+      "en": "The board began the assembly at nine."
+    },
+    {
+      "es": "Pongamos fin a esta discusión.",
+      "en": "Let's put an end to this discussion."
+    },
+    {
+      "es": "El tribunal puso fin al caso.",
+      "en": "The court put an end to the case."
+    }
+  ],
+  "rule": "This is the formal way to say begin and end. *Dar comienzo a* = begin. *Poner fin a* = end.\n\nThe noun does the work (*comienzo*, *fin*) and the verb just changes: *dio comienzo*, *darán comienzo*, *puso fin*, *pongamos fin*. What you start or stop follows *a* (*al* before *el*): *puso fin al caso*. The event itself can also be the subject, with no *a*: *mañana darán comienzo los actos*.\n\nIt sounds like a ceremony or a statute, and English \"commence\" and \"bring to an end\" sound the same way. Among friends, use *empezar* and *terminar*.",
+  "smallPrint": "Teachers call these light-verb phrases: a common verb plus a noun doing the job of one verb.",
+  "readAndPick": [
+    {
+      "es": "La presidenta dio comienzo a la sesión.",
+      "options": [
+        "The chairwoman ended the session.",
+        "The chairwoman began the session.",
+        "The chairwoman cancelled the session."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El acuerdo puso fin a la huelga.",
+      "options": [
+        "The agreement ended the strike.",
+        "The agreement began the strike.",
+        "The agreement avoided the strike."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mañana darán comienzo los actos.",
+      "options": [
+        "The ceremonies began yesterday.",
+        "The ceremonies were cancelled.",
+        "The ceremonies will commence tomorrow."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Pongamos fin a esta discusión.",
+      "options": [
+        "Let's start this discussion.",
+        "Let's put an end to this discussion.",
+        "Let's keep this discussion going."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hoy damos comienzo a la reunión.",
+      "options": [
+        "Today we begin the meeting.",
+        "Today we end the meeting.",
+        "Today we skip the meeting."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El tribunal puso fin al caso.",
+      "options": [
+        "The court opened the case.",
+        "The court studied the case.",
+        "The court put an end to the case."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Dieron comienzo a las obras en abril.",
+      "options": [
+        "They will begin the works in April.",
+        "They began the works in April.",
+        "They finished the works in April."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Los vecinos pusieron fin al conflicto.",
+      "options": [
+        "The neighbours started the conflict.",
+        "The neighbours ended the conflict.",
+        "The neighbours heard about the conflict."
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *comienzo* or *fin*: La presidenta dio ___ a la sesión. (She began it.) Type the whole sentence.",
+      "answer": "La presidenta dio comienzo a la sesión.",
+      "accept": [],
+      "why": "*Dar comienzo* means begin."
+    },
+    {
+      "prompt": "Choose *comienzo* or *fin*: El acuerdo puso ___ a la huelga. (It ended it.) Type the whole sentence.",
+      "answer": "El acuerdo puso fin a la huelga.",
+      "accept": [],
+      "why": "*Poner fin* means end."
+    },
+    {
+      "prompt": "Choose *a* or *al*: El tribunal puso fin ___ caso. Type the whole sentence.",
+      "answer": "El tribunal puso fin al caso.",
+      "accept": [],
+      "why": "*A* and *el* join into *al*."
+    },
+    {
+      "prompt": "Say: The board began the assembly at nine.",
+      "answer": "La junta dio comienzo a la asamblea a las nueve.",
+      "accept": [],
+      "why": "*Dio comienzo a* + the thing you begin."
+    },
+    {
+      "prompt": "Say: Let's put an end to this discussion.",
+      "answer": "Pongamos fin a esta discusión.",
+      "accept": [],
+      "why": "*Pongamos* is the *let's* form of *poner*."
+    },
+    {
+      "prompt": "Make it about the future: *La junta dio comienzo a la asamblea.*",
+      "answer": "La junta dará comienzo a la asamblea.",
+      "accept": [],
+      "why": "*Dará* is the future of *dar*."
+    },
+    {
+      "prompt": "Turn it around so it ends: *El alcalde dio comienzo a la ceremonia.*",
+      "answer": "El alcalde puso fin a la ceremonia.",
+      "accept": [],
+      "why": "*Poner fin a* is the opposite of *dar comienzo a*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Dieron comienzo la reunión.",
+      "right": "Dieron comienzo a la reunión.",
+      "why": "Almost. What starts needs *a* in front of it."
+    },
+    {
+      "wrong": "El acuerdo puso fin de la huelga.",
+      "right": "El acuerdo puso fin a la huelga.",
+      "why": "Almost. It is *poner fin a*, never *de*."
+    },
+    {
+      "wrong": "¿Damos comienzo a comer?",
+      "right": "¿Empezamos a comer?",
+      "why": "Almost. *Dar comienzo* is for ceremonies and papers. With friends at the table, use *empezar*."
+    }
+  ],
+  "personal": "Open or close an imaginary meeting the formal way: *Doy comienzo a la sesión.* or *Pongo fin a esta reunión.*"
 }

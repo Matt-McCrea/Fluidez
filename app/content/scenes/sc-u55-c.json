@@ -35,7 +35,7 @@
       "accept": [
         "Basta con que firmes aquí.",
         "Basta con que firmes aquí, primo, nada más.",
-        "Solo basta con que firmes aquí."
+        "Tranquilo, basta con que firmes aquí."
       ],
       "require": [
         {
@@ -52,11 +52,11 @@
       "id": "t3",
       "npc": "Yesid: ¿Y el edificio? ¿Es de la cooperativa o de la familia?",
       "npcEn": "Yesid: And the building? Is it the cooperative's or the family's?",
-      "intent": "Say it belongs to the family, whose members are now all associates (use: cuyos).",
+      "intent": "Say it now belongs to the cooperative, whose members include the whole family (use: cuyos).",
       "accept": [
-        "Es de la familia, cuyos miembros son ahora asociados.",
-        "Es de la familia, cuyos miembros somos todos asociados.",
-        "Es de nuestra familia, cuyos miembros firmamos como asociados."
+        "Es de la cooperativa, cuyos asociados son la familia y los vecinos.",
+        "Ahora es de la cooperativa, cuyos socios incluyen a toda la familia.",
+        "Es de la cooperativa, cuyos dueños somos todos nosotros, primo."
       ],
       "require": [
         {
@@ -124,8 +124,8 @@
     "c:que-tengo-que-hacer",
     "c:tengo",
     "c:tengo-que",
+    "c:tranquilo",
     "c:un-abrazo",
-    "g:adjective-agreement",
     "g:commands-tu",
     "g:commands-with-pronouns",
     "g:cuyo-relatives",
@@ -133,7 +133,6 @@
     "g:indirect-objects",
     "g:le-doubling",
     "g:object-pronoun-position",
-    "g:possessives",
     "g:present-ar",
     "g:present-er-ir",
     "g:preterite-irregular-strong",
@@ -153,7 +152,6 @@
     "l:antes",
     "l:aprender",
     "l:aquí",
-    "l:asociado",
     "l:asociarse",
     "l:bastar",
     "l:clase",
@@ -164,6 +162,7 @@
     "l:decir",
     "l:decreto",
     "l:diciembre",
+    "l:dueño",
     "l:edificio",
     "l:enseñar",
     "l:estatuto",
@@ -173,8 +172,8 @@
     "l:hablar",
     "l:hacer",
     "l:hundirse",
+    "l:incluir",
     "l:mañana",
-    "l:miembro",
     "l:nadar",
     "l:primo",
     "l:pronto",
@@ -182,7 +181,10 @@
     "l:saber",
     "l:semana",
     "l:ser",
+    "l:socio",
     "l:tener",
+    "l:tranquilo",
+    "l:vecino",
     "l:venir",
     "p:aqui-ahi-alla",
     "p:basta-con",
@@ -194,7 +196,6 @@
     "p:quantifiers-basic",
     "p:que-subj-deseo",
     "p:saber-conocer",
-    "p:saludos-de-mi-parte",
-    "p:sobre-todo-solo"
+    "p:saludos-de-mi-parte"
   ]
 }
