@@ -1,7 +1,7 @@
 {
   "node": "p:como-para",
   "hook": {
-    "line": "The café has a leaky tap and somebody wants to close for the day. You think that is a bit much.",
+    "line": "The café has a leaky tap and somebody wants to close for the day. You think that's a bit much.",
     "es": "No es tan grave como para cancelar.",
     "en": "It isn't serious enough to cancel."
   },
@@ -116,9 +116,7 @@
     {
       "prompt": "Type it in Spanish: It isn't cold enough to wear a coat.",
       "answer": "No hace tanto frío como para llevar abrigo.",
-      "accept": [
-        "No hace tan frío como para llevar abrigo."
-      ],
+      "accept": [],
       "why": "*Frío* is a noun here, so it takes *tanto*."
     },
     {

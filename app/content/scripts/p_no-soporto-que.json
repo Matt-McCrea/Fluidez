@@ -161,17 +161,17 @@
     {
       "wrong": "No soporto que me interrumpen.",
       "right": "No soporto que me interrumpan.",
-      "why": "After *no soporto que*, the verb takes its \"other\" ending, so *-ar* verbs switch to *-en*."
+      "why": "Almost. After *no soporto que*, the verb takes its \"other\" ending, so *-ar* verbs switch to *-en*."
     },
     {
       "wrong": "Odio que llego tarde.",
       "right": "Odio llegar tarde.",
-      "why": "When you are the one doing both verbs, Spanish uses the infinitive and drops *que*."
+      "why": "Almost. When you are the one doing both verbs, Spanish uses the infinitive and drops *que*."
     },
     {
-      "wrong": "Me doy asco la basura.",
-      "right": "Me da asco la basura.",
-      "why": "The rubbish does the disgusting, so the verb agrees with it (*da*) and *me* is just you."
+      "wrong": "No lo soporto que me interrumpan.",
+      "right": "No soporto que me interrumpan.",
+      "why": "Almost. English needs \"it\", Spanish doesn't: the *que* part is already the thing you can't stand."
     }
   ],
   "personal": "Say something true about you: *No soporto que…* or *Odio que…* plus a verb in its \"other\" ending, like *No soporto que me llamen a las seis.*"

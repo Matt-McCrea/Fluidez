@@ -61,14 +61,14 @@
       "npcEn": "Hernando: And the parrot? Even the taxi drivers ask me about Simón.",
       "intent": "Say everybody knows Simón now: put Simón first (A Simón lo ...).",
       "accept": [
-        "A Simón lo conocen ya en todo el país.",
+        "A Simón ya lo conocen en todo el país.",
         "Al loro lo reconocen hasta en la calle.",
         "A Simón lo saludan los clientes como a una estrella."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\b(simón|(al |el )loro)\\s+(lo|los|le|les)\\b",
+          "pattern": "\\b(simón|loro)\\s+(ya\\s+|todos\\s+)?(lo|los|le|les)\\b",
           "flags": "iu",
           "label": "start with Simón, then lo"
         }

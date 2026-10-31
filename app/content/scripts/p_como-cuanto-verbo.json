@@ -70,10 +70,11 @@
     {
       "es": "¡Qué bien canta esa mujer!",
       "options": [
-        "That woman can really sing!",
-        "How well that woman sings!"
+        "How well that woman sings!",
+        "How does that woman sing?",
+        "That woman sings a lot!"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "es": "¡Cómo extraño a Rosa!",

@@ -20,7 +20,7 @@
     },
     {
       "es": "No hace tanto frío como para no salir.",
-      "en": "It isn't cold enough to not go out."
+      "en": "It isn't cold enough to stay in."
     },
     {
       "es": "Es tan caro que no lo compro.",
@@ -54,7 +54,7 @@
       "es": "Hace tanto frío que no salgo.",
       "options": [
         "It's so cold that I'm not going out.",
-        "It isn't cold enough to not go out."
+        "It isn't cold enough to stay in."
       ],
       "answer": 0
     },
@@ -120,7 +120,7 @@
       "why": "A real result, so *que* + a normal verb."
     },
     {
-      "prompt": "Type it in Spanish: It isn't cold enough to not go out.",
+      "prompt": "Type it in Spanish: It isn't cold enough to stay in.",
       "answer": "No hace tanto frío como para no salir.",
       "accept": [],
       "why": "A threshold with an infinitive, so *como para*."
@@ -138,8 +138,8 @@
       "why": "Make it negative, swap *que* for *como para*, and use the infinitive."
     },
     {
-      "prompt": "Make it negative: *Hernando es tan viejo como para dejar de manejar.* becomes: Hernando isn't old enough to stop driving.",
-      "answer": "Hernando no es tan viejo como para dejar de manejar.",
+      "prompt": "Make it negative: *El problema es tan grave como para cerrar.* becomes: The problem isn't serious enough to close.",
+      "answer": "El problema no es tan grave como para cerrar.",
       "accept": [],
       "why": "*No* goes before the verb; *como para* stays."
     }

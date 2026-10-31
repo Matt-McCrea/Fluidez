@@ -1,7 +1,7 @@
 {
   "node": "p:me-aburre-que",
   "hook": {
-    "line": "Don Hernando tells the same story about the 1986 taxi strike every Tuesday. Sooner or later you will want to say, politely, that it bores you.",
+    "line": "Don Hernando tells the same story about the 1986 taxi strike every Tuesday. Sooner or later you'll want to say that it bores you.",
     "es": "Me aburre que siempre hablen de lo mismo.",
     "en": "It bores me that they always talk about the same thing."
   },
@@ -161,17 +161,17 @@
     {
       "wrong": "Yo aburro que hablen de lo mismo.",
       "right": "Me aburre que hablen de lo mismo.",
-      "why": "The talking bores you, so the verb agrees with it (*aburre*) and you are *me*."
+      "why": "Almost. The talking bores you, so the verb agrees with it (*aburre*) and you are *me*."
     },
     {
       "wrong": "Me aburre que siempre hablan de lo mismo.",
       "right": "Me aburre que siempre hablen de lo mismo.",
-      "why": "After *me aburre que*, the verb takes its \"other\" ending, so *hablan* becomes *hablen*."
+      "why": "Almost. After *me aburre que*, the verb takes its \"other\" ending, so *hablan* becomes *hablen*."
     },
     {
       "wrong": "Me aburro esperar el bus.",
       "right": "Me aburre esperar el bus.",
-      "why": "Without *de*, the waiting is what bores you, so use *aburre*. If you are the one getting bored, add *de*: *Me aburro de esperar*."
+      "why": "Almost. Without *de*, the waiting is what bores you, so use *aburre*. If you are the one getting bored, add *de*: *Me aburro de esperar*."
     }
   ],
   "personal": "Say something true about you: *Me aburre que…* or *Me aburre…* plus something that bores you, like *Me aburre que las reuniones duren tanto.*"

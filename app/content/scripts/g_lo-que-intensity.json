@@ -136,7 +136,8 @@
       "prompt": "Type in Spanish: Look how late it is.",
       "answer": "Mira lo tarde que es.",
       "accept": [
-        "Fíjate en lo tarde que es."
+        "Fíjate en lo tarde que es.",
+        "Mira qué tarde es."
       ],
       "why": "*Lo tarde que es* is \"how late it is\", and *mira* or *fíjate en* points at it."
     },
@@ -159,17 +160,17 @@
     {
       "wrong": "Mira cómo difícil es.",
       "right": "Mira lo difícil que es.",
-      "why": "English \"how\" before an adjective is *lo* + adjective + *que*, not *cómo*."
+      "why": "Almost. English \"how\" before an adjective is *lo* + adjective + *que*, not *cómo*."
     },
     {
       "wrong": "Mira lo difícil es.",
       "right": "Mira lo difícil que es.",
-      "why": "The *que* is the hinge that joins the adjective to the rest, so it cannot be left out."
+      "why": "Almost. The *que* is the hinge that joins the adjective to the rest, so it cannot be left out."
     },
     {
       "wrong": "Mira lo cansado que estoy. (a woman speaking)",
       "right": "Mira lo cansada que estoy.",
-      "why": "The adjective inside *lo… que* still matches the person it describes."
+      "why": "Almost. The adjective inside *lo… que* still matches the person it describes."
     }
   ],
   "personal": "Say something true about you: *Con lo… que…* or *¡Lo… que…!* with an adjective, like *Con lo cansado que estoy, no voy a salir.*"

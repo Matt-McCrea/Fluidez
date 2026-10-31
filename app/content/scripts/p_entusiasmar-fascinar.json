@@ -6,38 +6,177 @@
     "en": "I'm excited that they're playing live."
   },
   "examples": [
-    { "es": "Me apasiona que toquen en vivo.", "en": "I love it that they play live." },
-    { "es": "Me emociona mucho que vengas a visitarnos.", "en": "I'm really excited that you're coming to visit us. (to a friend)" },
-    { "es": "Me fascina la historia de Cartagena.", "en": "I'm fascinated by the history of Cartagena." },
-    { "es": "Me ilusiona viajar contigo.", "en": "I'm looking forward to travelling with you." },
-    { "es": "Estoy feliz de que estés aquí.", "en": "I'm happy that you're here. (to a friend)" },
-    { "es": "A Hernando le fascinan los carros viejos.", "en": "Hernando is fascinated by old cars." }
+    {
+      "es": "Me apasiona que toquen en vivo.",
+      "en": "I love it that they play live."
+    },
+    {
+      "es": "Me emociona mucho que vengas a visitarnos.",
+      "en": "I'm really excited that you're coming to visit us. (to a friend)"
+    },
+    {
+      "es": "Me fascina la historia de Cartagena.",
+      "en": "I'm fascinated by the history of Cartagena."
+    },
+    {
+      "es": "Me ilusiona viajar contigo.",
+      "en": "I'm looking forward to travelling with you."
+    },
+    {
+      "es": "Estoy feliz de que estés aquí.",
+      "en": "I'm happy that you're here. (to a friend)"
+    },
+    {
+      "es": "A Hernando le fascinan los carros viejos.",
+      "en": "Hernando is fascinated by old cars."
+    }
   ],
   "rule": "These verbs work like *gustar*: the thing that thrills you is the subject, and *me, te, le* says who feels it.\n\n*Me fascina / Me apasiona / Me emociona / Me ilusiona*, then a noun or an infinitive.\n*Me fascinan los carros*: plural thing, plural verb.\nWith a new clause, use *que* and the subjunctive: *Me emociona que vengas*.\n*Me ilusiona* is about looking forward to something.\n\nAnother route is *Estoy feliz de que + subjunctive*. The person who feels is the subject there.\n\nQuick reaction: *¡Qué bueno que vengas!*",
   "smallPrint": "Teachers call these *verbos de afección*. Like *gustar*, they trigger the subjunctive when the thing that moves you is a different person's action.",
   "readAndPick": [
-    { "es": "Me fascina la historia de Cartagena.", "options": ["I'm fascinated by the history of Cartagena.", "Cartagena is fascinated by me.", "I wrote about Cartagena."], "answer": 0 },
-    { "es": "Me ilusiona viajar contigo.", "options": ["I'm tired of travelling with you.", "I'm looking forward to travelling with you.", "I travelled with you."], "answer": 1 },
-    { "es": "A Hernando le fascinan los carros.", "options": ["Hernando is fascinated by cars.", "I am fascinated by Hernando's cars.", "Cars fascinate me."], "answer": 0 },
-    { "es": "Me emociona que vengas.", "options": ["I'm excited that you're coming.", "I'm excited that I'm coming.", "I'm excited that they came."], "answer": 0 },
-    { "es": "Me fascinan los perros.", "options": ["I'm fascinated by the dog.", "I'm fascinated by dogs.", "Dogs are fascinated by me."], "answer": 1 },
-    { "es": "Estoy feliz de que estés aquí.", "options": ["I'm happy that you're here.", "You're happy that I'm here.", "I was happy there."], "answer": 0 },
-    { "es": "Le apasiona la música.", "options": ["I'm passionate about music.", "She is passionate about music.", "They are passionate about music."], "answer": 1 },
-    { "es": "Nos emociona que toquen en vivo.", "options": ["They are excited that we play live.", "We're excited that they play live.", "I'm excited that they play live."], "answer": 1 }
+    {
+      "es": "Me fascina la historia de Cartagena.",
+      "options": [
+        "I'm fascinated by the history of Cartagena.",
+        "Cartagena is fascinated by me.",
+        "I wrote about Cartagena."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me ilusiona viajar contigo.",
+      "options": [
+        "I'm tired of travelling with you.",
+        "I'm looking forward to travelling with you.",
+        "I travelled with you."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A Hernando le fascinan los carros.",
+      "options": [
+        "Hernando is fascinated by cars.",
+        "I am fascinated by Hernando's cars.",
+        "Cars fascinate me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me emociona que vengas.",
+      "options": [
+        "I'm excited that you're coming.",
+        "I'm excited that I'm coming.",
+        "I'm excited that they came."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me fascinan los perros.",
+      "options": [
+        "I'm fascinated by the dog.",
+        "I'm fascinated by dogs.",
+        "Dogs are fascinated by me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Estoy feliz de que estés aquí.",
+      "options": [
+        "I'm happy that you're here.",
+        "You're happy that I'm here.",
+        "I was happy there."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Le apasiona la música.",
+      "options": [
+        "I'm passionate about music.",
+        "She is passionate about music.",
+        "They are passionate about music."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nos emociona que toquen en vivo.",
+      "options": [
+        "They are excited that we play live.",
+        "We're excited that they play live.",
+        "I'm excited that they play live."
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
-    { "prompt": "Choose the right form and type the whole sentence (I'm fascinated by the history of Cartagena): Me ___ la historia de Cartagena. (fascina / fascinan)", "answer": "Me fascina la historia de Cartagena.", "accept": [], "why": "*La historia* is one thing, so the verb is singular." },
-    { "prompt": "Choose the right form and type the whole sentence (I'm fascinated by old cars): Me ___ los carros viejos. (fascina / fascinan)", "answer": "Me fascinan los carros viejos.", "accept": [], "why": "*Los carros* is plural, so *fascinan*." },
-    { "prompt": "Type in Spanish (to a friend): I'm really excited that you're coming to visit us.", "answer": "Me emociona mucho que vengas a visitarnos.", "accept": ["Me emociona que vengas a visitarnos."], "why": "A new subject after *que* needs the subjunctive, *vengas*." },
-    { "prompt": "Type in Spanish: I'm looking forward to travelling with you (to a friend).", "answer": "Me ilusiona viajar contigo.", "accept": ["Me ilusiona mucho viajar contigo."], "why": "*Me ilusiona* plus an infinitive." },
-    { "prompt": "Type in Spanish (to a friend): I'm happy that you're here.", "answer": "Estoy feliz de que estés aquí.", "accept": ["Estoy contento de que estés aquí."], "why": "*Estoy feliz de que* is followed by the subjunctive *estés*." },
-    { "prompt": "Make it about Hernando: Me fascinan los carros viejos.", "answer": "A Hernando le fascinan los carros viejos.", "accept": ["A Hernando le fascinan los carros."], "why": "*Le* stands for Hernando, and *fascinan* still agrees with the cars." },
-    { "prompt": "Type in Spanish: We are excited that they play live.", "answer": "Nos emociona que toquen en vivo.", "accept": ["Nos apasiona que toquen en vivo."], "why": "*Nos* means we feel it, and *toquen* is the subjunctive for the band." }
+    {
+      "prompt": "Choose the right form and type the whole sentence (I'm fascinated by the history of Cartagena): Me ___ la historia de Cartagena. (fascina / fascinan)",
+      "answer": "Me fascina la historia de Cartagena.",
+      "accept": [],
+      "why": "*La historia* is one thing, so the verb is singular."
+    },
+    {
+      "prompt": "Choose the right form and type the whole sentence (I'm fascinated by old cars): Me ___ los carros viejos. (fascina / fascinan)",
+      "answer": "Me fascinan los carros viejos.",
+      "accept": [],
+      "why": "*Los carros* is plural, so *fascinan*."
+    },
+    {
+      "prompt": "Type in Spanish (to a friend): I'm really excited that you're coming to visit us.",
+      "answer": "Me emociona mucho que vengas a visitarnos.",
+      "accept": [
+        "Me emociona que vengas a visitarnos."
+      ],
+      "why": "A new subject after *que* needs the subjunctive, *vengas*."
+    },
+    {
+      "prompt": "Type in Spanish: I'm looking forward to travelling with you (to a friend).",
+      "answer": "Me ilusiona viajar contigo.",
+      "accept": [
+        "Me ilusiona mucho viajar contigo."
+      ],
+      "why": "*Me ilusiona* plus an infinitive."
+    },
+    {
+      "prompt": "Type in Spanish (to a friend): I'm happy that you're here.",
+      "answer": "Estoy feliz de que estés aquí.",
+      "accept": [
+        "Estoy contento de que estés aquí."
+      ],
+      "why": "*Estoy feliz de que* is followed by the subjunctive *estés*."
+    },
+    {
+      "prompt": "Make it about Hernando: Me fascinan los carros viejos.",
+      "answer": "A Hernando le fascinan los carros viejos.",
+      "accept": [
+        "A Hernando le fascinan los carros."
+      ],
+      "why": "*Le* stands for Hernando, and *fascinan* still agrees with the cars."
+    },
+    {
+      "prompt": "Type in Spanish: We are excited that they play live.",
+      "answer": "Nos emociona que toquen en vivo.",
+      "accept": [
+        "Nos apasiona que toquen en vivo."
+      ],
+      "why": "*Nos* means we feel it, and *toquen* is the subjunctive for the band."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Yo fascino la historia de Cartagena.", "right": "Me fascina la historia de Cartagena.", "why": "The history does the fascinating; you are the one it fascinates, so *me*." },
-    { "wrong": "Me fascina los carros.", "right": "Me fascinan los carros.", "why": "Like *gustar*, the verb agrees with the thing, and cars are plural." },
-    { "wrong": "Me emociona que vienes.", "right": "Me emociona que vengas.", "why": "A feeling about someone else's action takes the subjunctive, *vengas*." }
+    {
+      "wrong": "Yo fascino la historia de Cartagena.",
+      "right": "Me fascina la historia de Cartagena.",
+      "why": "Almost. The history does the fascinating; you are the one it fascinates, so *me*."
+    },
+    {
+      "wrong": "Me fascina los carros.",
+      "right": "Me fascinan los carros.",
+      "why": "Almost. Like *gustar*, the verb agrees with the thing, and cars are plural."
+    },
+    {
+      "wrong": "Me emociona que vienes.",
+      "right": "Me emociona que vengas.",
+      "why": "Almost. A feeling about someone else's action takes the subjunctive, *vengas*."
+    }
   ],
   "personal": "Tell us one thing that really excites you, or someone's visit you look forward to. Use *me emociona*, *me ilusiona* or *me fascina*."
 }

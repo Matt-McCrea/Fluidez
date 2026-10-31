@@ -6,38 +6,182 @@
     "en": "Of course I told you."
   },
   "examples": [
-    { "es": "¿Le diste la dirección?\nPues claro que se la di.", "en": "Did you give him the address?\nOf course I gave it to him." },
-    { "es": "Te juro que no fui yo.", "en": "I swear it wasn't me." },
-    { "es": "Le aseguro que le devolvió hasta el último peso.", "en": "I assure you he paid back every last peso. (formal)" },
-    { "es": "¿Vienes mañana?\nPor supuesto que sí.", "en": "Are you coming tomorrow?\nOf course." },
-    { "es": "¿Ya cerraste la caja?\nPues claro que la cerré.", "en": "Did you close the till yet?\nOf course I closed it." },
-    { "es": "Te juro que lo voy a hacer hoy.", "en": "I swear I'm going to do it today." }
+    {
+      "es": "¿Le diste la dirección?\nPues claro que se la di.",
+      "en": "Did you give him the address?\nOf course I gave it to him."
+    },
+    {
+      "es": "Te juro que no fui yo.",
+      "en": "I swear it wasn't me."
+    },
+    {
+      "es": "Le aseguro que le devolvió hasta el último peso.",
+      "en": "I assure you he paid back every last peso. (formal)"
+    },
+    {
+      "es": "¿Vienes mañana?\nPor supuesto que sí.",
+      "en": "Are you coming tomorrow?\nOf course."
+    },
+    {
+      "es": "¿Ya cerraste la caja?\nPues claro que la cerré.",
+      "en": "Did you close the till yet?\nOf course I closed it."
+    },
+    {
+      "es": "Te juro que lo voy a hacer hoy.",
+      "en": "I swear I'm going to do it today."
+    }
   ],
   "rule": "When someone doubts you, one word is not enough. Spanish repeats the verb and adds *que*.\n\n*Pues claro que + verb*: of course I did. Repeat what was asked: *¿Lo cerraste? Pues claro que lo cerré.* It can sound a bit offended, which is the point.\n*Por supuesto que sí / no*: of course (not). Calmer.\n*Te juro que…*: I swear that…, with friends.\n*Le aseguro que…*: I assure you that…, to someone you address as *usted*.\n\nThe sentence after *que* is a normal one, with the pronouns it needs.",
   "smallPrint": "Teachers call this *refuerzo de la aserción*: you reinforce a statement that someone questioned.",
   "readAndPick": [
-    { "es": "Pues claro que lo hice.", "options": ["Of course I did it.", "I don't know if I did it.", "I didn't do it."], "answer": 0 },
-    { "es": "Te juro que no fui yo.", "options": ["I swear it wasn't me.", "I swear it was me.", "I hope it wasn't me."], "answer": 0 },
-    { "es": "Le aseguro que llegamos a tiempo.", "options": ["I assure you we arrived on time (to a friend).", "I assure you we arrived on time (formal).", "He assures us we arrived on time."], "answer": 1 },
-    { "es": "Por supuesto que no.", "options": ["Of course not.", "Of course.", "Maybe not."], "answer": 0 },
-    { "es": "¿Se lo dijiste?\nPues claro que se lo dije.", "options": ["Of course I told him.", "Of course he told me.", "Of course I'll tell him."], "answer": 0 },
-    { "es": "Por supuesto que sí.", "options": ["Of course not.", "Of course.", "I'm not sure."], "answer": 1 },
-    { "es": "Te juro que voy a venir.", "options": ["I swear I came.", "I swear I'm going to come.", "I swear you'll come."], "answer": 1 },
-    { "es": "Pues claro que vamos a ir.", "options": ["Of course we went.", "Of course we're going to go.", "Of course they're going to go."], "answer": 1 }
+    {
+      "es": "Pues claro que lo hice.",
+      "options": [
+        "Of course I did it.",
+        "I don't know if I did it.",
+        "I didn't do it."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Te juro que no fui yo.",
+      "options": [
+        "I swear it wasn't me.",
+        "I swear it was me.",
+        "I hope it wasn't me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Le aseguro que llegamos a tiempo.",
+      "options": [
+        "I assure you we arrived on time (to a friend).",
+        "I assure you we arrived on time (formal).",
+        "He assures us we arrived on time."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Por supuesto que no.",
+      "options": [
+        "Of course not.",
+        "Of course.",
+        "Maybe not."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Se lo dijiste?\nPues claro que se lo dije.",
+      "options": [
+        "Of course I told him.",
+        "Of course he told me.",
+        "Of course I'll tell him."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Por supuesto que sí.",
+      "options": [
+        "Of course not.",
+        "Of course.",
+        "I'm not sure."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Te juro que voy a venir.",
+      "options": [
+        "I swear I came.",
+        "I swear I'm going to come.",
+        "I swear you'll come."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Pues claro que vamos a ir.",
+      "options": [
+        "Of course we went.",
+        "Of course we're going to go.",
+        "Of course they're going to go."
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
-    { "prompt": "Choose the right form and type the whole sentence (a friend asks: did you close the till? Answer: of course I closed it): Pues claro que ___ cerré. (la / lo)", "answer": "Pues claro que la cerré.", "accept": ["Pues claro que sí, la cerré."], "why": "*La caja* is feminine, so the pronoun is *la*." },
-    { "prompt": "Type in Spanish (to a friend): I swear it wasn't me.", "answer": "Te juro que no fui yo.", "accept": ["Te juro que yo no fui."], "why": "To a friend, *te juro que*." },
-    { "prompt": "Type in Spanish (formal, to a customer): I assure you we are open.", "answer": "Le aseguro que estamos abiertos.", "accept": ["Le aseguro que está abierto."], "why": "With *usted*, the pronoun is *le*." },
-    { "prompt": "Answer a friend who asks if you're coming tomorrow, calmly saying of course:", "answer": "Por supuesto que sí.", "accept": ["Por supuesto que voy.", "Pues claro que sí."], "why": "*Por supuesto que sí* confirms without sounding offended." },
-    { "prompt": "Answer: ¿Le diste la dirección? Say of course you gave it to him.", "answer": "Pues claro que se la di.", "accept": ["Pues claro que se la di a él."], "why": "*Le* plus *la* becomes *se la*, and the verb repeats in the past." },
-    { "prompt": "Make it a promise (to a friend): Voy a llamar a Vale.", "answer": "Te juro que voy a llamar a Vale.", "accept": ["Te juro que llamo a Vale."], "why": "*Te juro que* goes in front and the rest stays the same." },
-    { "prompt": "Type in Spanish: Of course not.", "answer": "Por supuesto que no.", "accept": ["Pues claro que no."], "why": "*Que no* confirms a negative." }
+    {
+      "prompt": "Choose the right form and type the whole sentence (a friend asks: did you close the till? Answer: of course I closed it): Pues claro que ___ cerré. (la / lo)",
+      "answer": "Pues claro que la cerré.",
+      "accept": [
+        "Pues claro que sí, la cerré."
+      ],
+      "why": "*La caja* is feminine, so the pronoun is *la*."
+    },
+    {
+      "prompt": "Type in Spanish (to a friend): I swear it wasn't me.",
+      "answer": "Te juro que no fui yo.",
+      "accept": [
+        "Te juro que yo no fui."
+      ],
+      "why": "To a friend, *te juro que*."
+    },
+    {
+      "prompt": "Type in Spanish (formal, to a customer): I assure you we are open.",
+      "answer": "Le aseguro que estamos abiertos.",
+      "accept": [
+        "Le aseguro que está abierto."
+      ],
+      "why": "With *usted*, the pronoun is *le*."
+    },
+    {
+      "prompt": "Answer a friend who asks if you're coming tomorrow, calmly saying of course:",
+      "answer": "Por supuesto que sí.",
+      "accept": [
+        "Por supuesto que voy.",
+        "Pues claro que sí."
+      ],
+      "why": "*Por supuesto que sí* confirms without sounding offended."
+    },
+    {
+      "prompt": "Answer: ¿Le diste la dirección? Say of course you gave it to him.",
+      "answer": "Pues claro que se la di.",
+      "accept": [
+        "Pues claro que se la di a él."
+      ],
+      "why": "*Le* plus *la* becomes *se la*, and the verb repeats in the past."
+    },
+    {
+      "prompt": "Make it a promise (to a friend): Voy a llamar a Vale.",
+      "answer": "Te juro que voy a llamar a Vale.",
+      "accept": [
+        "Te juro que llamo a Vale."
+      ],
+      "why": "*Te juro que* goes in front and the rest stays the same."
+    },
+    {
+      "prompt": "Type in Spanish: Of course not.",
+      "answer": "Por supuesto que no.",
+      "accept": [
+        "Pues claro que no."
+      ],
+      "why": "*Que no* confirms a negative."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Claro que sí lo dije.", "right": "Pues claro que lo dije.", "why": "To sound mildly offended, add *pues* and repeat the verb without *sí*." },
-    { "wrong": "Te aseguro que no fui yo, señor.", "right": "Le aseguro que no fui yo, señor.", "why": "Speaking to *usted* you need *le*, not *te*." },
-    { "wrong": "Pues claro que la di.", "right": "Pues claro que se la di.", "why": "When you give something to him or her, *le la* becomes *se la*." }
+    {
+      "wrong": "Claro que sí lo dije.",
+      "right": "Pues claro que lo dije.",
+      "why": "Almost. To sound mildly offended, add *pues* and repeat the verb without *sí*."
+    },
+    {
+      "wrong": "Te aseguro que no fui yo, señor.",
+      "right": "Le aseguro que no fui yo, señor.",
+      "why": "Almost. Speaking to *usted* you need *le*, not *te*."
+    },
+    {
+      "wrong": "Pues claro que la di.",
+      "right": "Pues claro que se la di.",
+      "why": "Almost. When you give something to him or her, *le la* becomes *se la*."
+    }
   ],
   "personal": "Think of someone who doubts you. Answer them with *pues claro que* and the verb they asked about."
 }

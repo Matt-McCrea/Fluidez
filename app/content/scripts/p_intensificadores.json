@@ -123,7 +123,9 @@
     {
       "prompt": "Type in Spanish: It's super hard.",
       "answer": "Es súper difícil.",
-      "accept": [],
+      "accept": [
+        "Es superdifícil."
+      ],
       "why": "*Súper* is the casual way to turn it up."
     },
     {
@@ -150,7 +152,12 @@
     {
       "prompt": "Make it stronger than *muy*: *Es muy caro.*",
       "answer": "Es increíblemente caro.",
-      "accept": [],
+      "accept": [
+        "Es realmente caro.",
+        "Es sumamente caro.",
+        "Es súper caro.",
+        "Es supercaro."
+      ],
       "why": "*Increíblemente* says \"incredibly\" where *muy* only says \"very\"."
     }
   ],
@@ -158,17 +165,17 @@
     {
       "wrong": "Es muy imposible.",
       "right": "Es completamente imposible.",
-      "why": "*Imposible* can't be a little bit true, so use *completamente* instead of *muy*."
+      "why": "Almost. *Imposible* can't be a little bit true, so use *completamente* instead of *muy*."
     },
     {
       "wrong": "Es muy falso.",
       "right": "Es totalmente falso.",
-      "why": "*Muy falso* sounds weak, because *falso* is all or nothing."
+      "why": "Almost. *Muy falso* sounds weak, because *falso* is all or nothing."
     },
     {
       "wrong": "Es también tarde para llamar.",
       "right": "Es demasiado tarde para llamar.",
-      "why": "*También* means \"also\". For \"too much\", say *demasiado*."
+      "why": "Almost. *También* means \"also\". For \"too much\", say *demasiado*."
     }
   ],
   "personal": "Say something true about you or the city, with a stronger word than *muy*, like *Bogotá es increíblemente grande.*"

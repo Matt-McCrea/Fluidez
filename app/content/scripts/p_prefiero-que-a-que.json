@@ -12,7 +12,7 @@
     },
     {
       "es": "Prefiero que llueva a que haga este calor.",
-      "en": "I'd rather it rained than be this hot."
+      "en": "I'd rather it rained than have this heat."
     },
     {
       "es": "Prefiero que me llames a que me escribas.",
@@ -91,9 +91,9 @@
     {
       "es": "Prefiero que llueva a que haga este calor.",
       "options": [
-        "I'd rather it was this hot than rained.",
+        "I'd rather have this heat than rain.",
         "I'd rather it rained than snowed.",
-        "I'd rather it rained than be this hot."
+        "I'd rather it rained than have this heat."
       ],
       "answer": 2
     },
@@ -137,7 +137,7 @@
       "why": "*Llames* and *escribas* are both \"other\" endings for *tú*, joined by *a que*."
     },
     {
-      "prompt": "Type in Spanish: I'd rather it rained than be this hot.",
+      "prompt": "Type in Spanish: I'd rather it rained than have this heat.",
       "answer": "Prefiero que llueva a que haga este calor.",
       "accept": [],
       "why": "Both weather verbs take the \"other\" ending: *llueva* and *haga*."
@@ -159,17 +159,17 @@
     {
       "wrong": "Prefiero que me dicen la verdad.",
       "right": "Prefiero que me digan la verdad.",
-      "why": "After *prefiero que*, the verb takes its \"other\" ending, so *dicen* becomes *digan*."
+      "why": "Almost. After *prefiero que*, the verb takes its \"other\" ending, so *dicen* becomes *digan*."
     },
     {
       "wrong": "Prefiero que me llames que me escribas.",
       "right": "Prefiero que me llames a que me escribas.",
-      "why": "English \"than\" becomes *a que* in this pattern, so a bare *que* between the two halves is not enough."
+      "why": "Almost. English \"than\" becomes *a que* in this pattern, so a bare *que* between the two halves is not enough."
     },
     {
       "wrong": "Prefiero que yo me quede en casa a que yo salga.",
       "right": "Prefiero quedarme en casa a salir.",
-      "why": "When one person chooses and does, Spanish uses the infinitive instead of repeating \"I\"."
+      "why": "Almost. When one person chooses and does, Spanish uses the infinitive instead of repeating \"I\"."
     }
   ],
   "personal": "Say something true about you: *Prefiero que…* plus *a que…*, like *Prefiero que me hablen claro a que me mientan.*"

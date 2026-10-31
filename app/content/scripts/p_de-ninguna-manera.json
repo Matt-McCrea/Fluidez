@@ -6,38 +6,181 @@
     "en": "There's no way I'm selling the café."
   },
   "examples": [
-    { "es": "De ninguna manera pienso disculparme.", "en": "There's no way I'm going to apologise." },
-    { "es": "No hay razón alguna para cancelar.", "en": "There is no reason whatsoever to cancel." },
-    { "es": "¡Que no, te digo!", "en": "No, I'm telling you!" },
-    { "es": "No ha llamado nadie, que yo sepa.", "en": "Nobody has called, as far as I know." },
-    { "es": "De ninguna manera.", "en": "No way." },
-    { "es": "No tenemos problema alguno, que yo sepa.", "en": "We have no problem at all, as far as I know." }
+    {
+      "es": "De ninguna manera pienso disculparme.",
+      "en": "There's no way I'm going to apologise."
+    },
+    {
+      "es": "No hay razón alguna para cancelar.",
+      "en": "There is no reason whatsoever to cancel."
+    },
+    {
+      "es": "¡Que no, te digo!",
+      "en": "No, I'm telling you!"
+    },
+    {
+      "es": "No ha llamado nadie, que yo sepa.",
+      "en": "Nobody has called, as far as I know."
+    },
+    {
+      "es": "De ninguna manera.",
+      "en": "No way."
+    },
+    {
+      "es": "No tenemos problema alguno, que yo sepa.",
+      "en": "We have no problem at all, as far as I know."
+    }
   ],
   "rule": "Four ways to say no with extra weight.\n\n*De ninguna manera*: no way. Firm, neutral, works with anyone. Also *de ningún modo*.\n*¡Que no, te digo!*: no, I'm telling you. Casual, a bit impatient, with friends.\n*No hay razón alguna*: no reason whatsoever. Formal. Put *alguno* after the noun, and keep *no* before the verb.\n*No…, que yo sepa*: not as far as I know. A soft no that leaves room for being wrong.\n\nNo extra *no* is needed after *de ninguna manera*, but the other forms do keep it.",
   "smallPrint": "Teachers call *que yo sepa* a restrictive clause: it limits your claim to what you know. The *sepa* is a subjunctive.",
   "readAndPick": [
-    { "es": "De ninguna manera lo vendo.", "options": ["No way I'm selling it.", "Maybe I'll sell it.", "I sold it yesterday."], "answer": 0 },
-    { "es": "No ha llamado nadie, que yo sepa.", "options": ["Nobody has called, as far as I know.", "Nobody has called, I'm sure.", "Somebody called, I think."], "answer": 0 },
-    { "es": "¡Que no, te digo!", "options": ["Yes, I'm telling you!", "No, I'm telling you!", "I don't tell you!"], "answer": 1 },
-    { "es": "No hay razón alguna para esperar.", "options": ["There is some reason to wait.", "There is no reason whatsoever to wait.", "I don't have a reason to leave."], "answer": 1 },
-    { "es": "De ningún modo.", "options": ["No way.", "Maybe.", "Of course."], "answer": 0 },
-    { "es": "Que yo sepa, no hay problema.", "options": ["I'm sure there's no problem.", "As far as I know, there's no problem.", "I know there's a problem."], "answer": 1 },
-    { "es": "No tenemos problema alguno.", "options": ["We have no problem at all.", "We have some problem.", "We have a big problem."], "answer": 0 },
-    { "es": "De ninguna manera pienso ir.", "options": ["There's no way I'm going.", "I think I'll go.", "I went anyway."], "answer": 0 }
+    {
+      "es": "De ninguna manera lo vendo.",
+      "options": [
+        "No way I'm selling it.",
+        "Maybe I'll sell it.",
+        "I sold it yesterday."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No ha llamado nadie, que yo sepa.",
+      "options": [
+        "Nobody has called, as far as I know.",
+        "Nobody has called, I'm sure.",
+        "Somebody called, I think."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Que no, te digo!",
+      "options": [
+        "Yes, I'm telling you!",
+        "No, I'm telling you!",
+        "I don't tell you!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No hay razón alguna para esperar.",
+      "options": [
+        "There is some reason to wait.",
+        "There is no reason whatsoever to wait.",
+        "I don't have a reason to leave."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "De ningún modo.",
+      "options": [
+        "No way.",
+        "Maybe.",
+        "Of course."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Que yo sepa, no hay problema.",
+      "options": [
+        "I'm sure there's no problem.",
+        "As far as I know, there's no problem.",
+        "I know there's a problem."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No tenemos problema alguno.",
+      "options": [
+        "We have no problem at all.",
+        "We have some problem.",
+        "We have a big problem."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "De ninguna manera pienso ir.",
+      "options": [
+        "There's no way I'm going.",
+        "I think I'll go.",
+        "I went anyway."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Choose the right form and type the whole sentence (There's no way I'm selling the café): De ninguna ___ vendo el café. (manera / razón)", "answer": "De ninguna manera vendo el café.", "accept": ["De ningún modo vendo el café."], "why": "The firm no is *de ninguna manera*." },
-    { "prompt": "Choose the right form and type the whole sentence (There is no reason whatsoever to cancel): No hay razón ___ para cancelar. (alguna / ninguna)", "answer": "No hay razón alguna para cancelar.", "accept": ["No hay ninguna razón para cancelar."], "why": "*Alguna* goes after the noun and the *no* stays before the verb." },
-    { "prompt": "Type in Spanish: No way.", "answer": "De ninguna manera.", "accept": ["De ningún modo."], "why": "Short and firm." },
-    { "prompt": "Type in Spanish (to a friend, impatient): No, I'm telling you!", "answer": "¡Que no, te digo!", "accept": ["Que no, te digo."], "why": "To a friend, *te digo*." },
-    { "prompt": "Type in Spanish: Nobody has called, as far as I know.", "answer": "No ha llamado nadie, que yo sepa.", "accept": ["Que yo sepa, no ha llamado nadie."], "why": "*Que yo sepa* softens the claim." },
-    { "prompt": "Make it softer by adding as far as you know: No hay problema.", "answer": "No hay problema, que yo sepa.", "accept": ["Que yo sepa, no hay problema."], "why": "You add *que yo sepa* at the end." },
-    { "prompt": "Make it firm: Pienso disculparme.", "answer": "De ninguna manera pienso disculparme.", "accept": ["De ningún modo pienso disculparme."], "why": "*De ninguna manera* starts the sentence and no second *no* is needed." }
+    {
+      "prompt": "Choose the right form and type the whole sentence (There's no way I'm selling the café): De ninguna ___ vendo el café. (manera / razón)",
+      "answer": "De ninguna manera vendo el café.",
+      "accept": [
+        "De ningún modo vendo el café."
+      ],
+      "why": "The firm no is *de ninguna manera*."
+    },
+    {
+      "prompt": "Choose the right form and type the whole sentence (There is no reason whatsoever to cancel): No hay razón ___ para cancelar. (alguna / ninguna)",
+      "answer": "No hay razón alguna para cancelar.",
+      "accept": [
+        "No hay ninguna razón para cancelar."
+      ],
+      "why": "*Alguna* goes after the noun and the *no* stays before the verb."
+    },
+    {
+      "prompt": "Type in Spanish: No way.",
+      "answer": "De ninguna manera.",
+      "accept": [
+        "De ningún modo."
+      ],
+      "why": "Short and firm."
+    },
+    {
+      "prompt": "Type in Spanish (to a friend, impatient): No, I'm telling you!",
+      "answer": "¡Que no, te digo!",
+      "accept": [
+        "Que no, te digo."
+      ],
+      "why": "To a friend, *te digo*."
+    },
+    {
+      "prompt": "Type in Spanish: Nobody has called, as far as I know.",
+      "answer": "No ha llamado nadie, que yo sepa.",
+      "accept": [
+        "Que yo sepa, no ha llamado nadie."
+      ],
+      "why": "*Que yo sepa* softens the claim."
+    },
+    {
+      "prompt": "Make it softer by adding as far as you know: No hay problema.",
+      "answer": "No hay problema, que yo sepa.",
+      "accept": [
+        "Que yo sepa, no hay problema."
+      ],
+      "why": "You add *que yo sepa* at the end."
+    },
+    {
+      "prompt": "Make it firm: Pienso disculparme.",
+      "answer": "De ninguna manera pienso disculparme.",
+      "accept": [
+        "De ningún modo pienso disculparme."
+      ],
+      "why": "*De ninguna manera* starts the sentence and no second *no* is needed."
+    }
   ],
   "pitfalls": [
-    { "wrong": "De ninguna manera no pienso disculparme.", "right": "De ninguna manera pienso disculparme.", "why": "*De ninguna manera* already carries the negative, so skip the extra *no*." },
-    { "wrong": "Hay razón alguna para cancelar.", "right": "No hay razón alguna para cancelar.", "why": "*Alguna* in this meaning needs *no* before the verb." },
-    { "wrong": "No ha llamado nadie, que yo sé.", "right": "No ha llamado nadie, que yo sepa.", "why": "The fixed phrase uses *sepa*, not *sé*." }
+    {
+      "wrong": "De ninguna manera no pienso disculparme.",
+      "right": "De ninguna manera pienso disculparme.",
+      "why": "Almost. *De ninguna manera* already carries the negative, so skip the extra *no*."
+    },
+    {
+      "wrong": "Hay razón alguna para cancelar.",
+      "right": "No hay razón alguna para cancelar.",
+      "why": "Almost. *Alguna* in this meaning needs *no* before the verb."
+    },
+    {
+      "wrong": "No ha llamado nadie, que yo sé.",
+      "right": "No ha llamado nadie, que yo sepa.",
+      "why": "Almost. The fixed phrase uses *sepa*, not *sé*."
+    }
   ],
   "personal": "Say one thing you would never do, starting with *de ninguna manera*."
 }

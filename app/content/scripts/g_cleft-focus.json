@@ -6,44 +6,204 @@
     "en": "It was Rosa who opened this café."
   },
   "examples": [
-    { "es": "Fue Vale quien encontró la carta.", "en": "It was Vale who found the letter." },
-    { "es": "Lo que no entiendo es por qué.", "en": "What I don't understand is why." },
-    { "es": "Es aquí donde todo empezó.", "en": "This is where it all began." },
-    { "es": "Fue ayer cuando llegó la carta.", "en": "It was yesterday that the letter arrived." },
-    { "es": "¿Fuiste tú quien dejó la puerta abierta?", "en": "Was it you who left the door open?" },
-    { "es": "Lo que quiero es hablar con Mariana.", "en": "What I want is to talk to Mariana." },
-    { "es": "No fue Vale quien lo dijo, fue Mariana.", "en": "It wasn't Vale who said it, it was Mariana." }
+    {
+      "es": "Fue Vale quien encontró la carta.",
+      "en": "It was Vale who found the letter."
+    },
+    {
+      "es": "Lo que no entiendo es por qué.",
+      "en": "What I don't understand is why."
+    },
+    {
+      "es": "Es aquí donde todo empezó.",
+      "en": "This is where it all began."
+    },
+    {
+      "es": "Fue ayer cuando llegó la carta.",
+      "en": "It was yesterday that the letter arrived."
+    },
+    {
+      "es": "¿Fuiste tú quien dejó la puerta abierta?",
+      "en": "Was it you who left the door open?"
+    },
+    {
+      "es": "Lo que quiero es hablar con Mariana.",
+      "en": "What I want is to talk to Mariana."
+    },
+    {
+      "es": "No fue Vale quien lo dijo, fue Mariana.",
+      "en": "It wasn't Vale who said it, it was Mariana."
+    }
   ],
-  "rule": "To put the spotlight on one piece, Spanish builds a frame with *ser*, and the piece you want heard goes right after it.\n\nA person: *Fue Vale quien encontró la carta.* (several people: *Fueron los vecinos quienes firmaron.*)\nA place: *Es aquí donde todo empezó.*\nA time: *Fue ayer cuando llegó la carta.*\nA thing or an idea: *Lo que quiero es hablar con Mariana.*\n\nSo the recipe is *ser* + the highlight + *quien* / *donde* / *cuando* + the rest. With things, flip it: *lo que* + the rest + *es* + the highlight.\n\n*Ser* keeps the time of the story: *fue* for something finished, *es* for now. English underlines a word with its voice, \"It was VALE who...\". Spanish rearranges instead.",
+  "rule": "To put the spotlight on one piece, Spanish builds a frame with *ser*, and the piece you want heard goes right after it.\n\nA person: *Fue Vale quien encontró la carta.* (several people: *Fueron los vecinos quienes firmaron.*)\nA place: *Es aquí donde todo empezó.*\nA time: *Fue ayer cuando llegó la carta.*\nA thing or an idea: *Lo que quiero es hablar con Mariana.*\n\nSo the recipe is *ser* + the highlight + *quien* / *donde* / *cuando* + the rest. With things, flip it: *lo que* + the rest + *es* + the highlight.\n\n*Ser* usually follows the time of the story: *fue* for something finished, *es* for now. English underlines a word with its voice, \"It was VALE who...\". Spanish rearranges instead.",
   "smallPrint": "Teachers call these cleft sentences. The second kind, *lo que... es...*, is also called a pseudo-cleft.",
   "readAndPick": [
-    { "es": "Fue Vale quien encontró la carta.", "options": ["It is Vale who finds the letter.", "It was Vale who found the letter.", "It will be Vale who finds the letter."], "answer": 1 },
-    { "es": "Fueron los vecinos quienes firmaron la carta.", "options": ["It was a neighbour who signed the letter.", "It will be the neighbours who sign the letter.", "It was the neighbours who signed the letter."], "answer": 2 },
-    { "es": "Lo que no entiendo es por qué.", "options": ["What I don't understand is why.", "What I understand is why.", "What you don't understand is why."], "answer": 0 },
-    { "es": "Es aquí donde todo empezó.", "options": ["This is where it all ended.", "This is where it all began.", "This is when it all began."], "answer": 1 },
-    { "es": "Fue ayer cuando llegó la carta.", "options": ["It was here that the letter arrived.", "It will be tomorrow that the letter arrives.", "It was yesterday that the letter arrived."], "answer": 2 },
-    { "es": "¿Fuiste tú quien dejó la puerta abierta?", "options": ["Was it you who left the door open?", "Was it Vale who left the door open?", "Was it me who left the door open?"], "answer": 0 },
-    { "es": "Lo que quiero es hablar con Mariana.", "options": ["What I wanted was to talk to Mariana.", "What I want is to talk to Mariana.", "What Mariana wants is to talk to me."], "answer": 1 },
-    { "es": "Fue en la cocina donde Vale encontró la carta.", "options": ["It was Vale who found the letter in the kitchen.", "It was the letter that Vale found in the kitchen.", "It was in the kitchen that Vale found the letter."], "answer": 2 },
-    { "es": "No fue Vale quien lo dijo, fue Mariana.", "options": ["It wasn't Vale who said it, it was Mariana.", "It was Vale who said it, not Mariana.", "Vale didn't say it, but Mariana did not either."], "answer": 0 }
+    {
+      "es": "Fue Vale quien encontró la carta.",
+      "options": [
+        "It is Vale who finds the letter.",
+        "It was Vale who found the letter.",
+        "It will be Vale who finds the letter."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Fueron los vecinos quienes firmaron la carta.",
+      "options": [
+        "It was a neighbour who signed the letter.",
+        "It will be the neighbours who sign the letter.",
+        "It was the neighbours who signed the letter."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Lo que no entiendo es por qué.",
+      "options": [
+        "What I don't understand is why.",
+        "What I understand is why.",
+        "What you don't understand is why."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es aquí donde todo empezó.",
+      "options": [
+        "This is where it all ended.",
+        "This is where it all began.",
+        "This is when it all began."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Fue ayer cuando llegó la carta.",
+      "options": [
+        "It was here that the letter arrived.",
+        "It will be tomorrow that the letter arrives.",
+        "It was yesterday that the letter arrived."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Fuiste tú quien dejó la puerta abierta?",
+      "options": [
+        "Was it you who left the door open?",
+        "Was it Vale who left the door open?",
+        "Was it me who left the door open?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Lo que quiero es hablar con Mariana.",
+      "options": [
+        "What I wanted was to talk to Mariana.",
+        "What I want is to talk to Mariana.",
+        "What Mariana wants is to talk to me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Fue en la cocina donde Vale encontró la carta.",
+      "options": [
+        "It was Vale who found the letter in the kitchen.",
+        "It was the letter that Vale found in the kitchen.",
+        "It was in the kitchen that Vale found the letter."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No fue Vale quien lo dijo, fue Mariana.",
+      "options": [
+        "It wasn't Vale who said it, it was Mariana.",
+        "It was Vale who said it, not Mariana.",
+        "Vale didn't say it, but Mariana did not either."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Choose *quien* or *quienes* and type the whole sentence: *Fueron los vecinos ___ firmaron la carta.* (It was the neighbours who signed the letter.)", "answer": "Fueron los vecinos quienes firmaron la carta.", "accept": [], "why": "The neighbours are several people, so *quienes*." },
-    { "prompt": "Choose *lo que* or *que* and type the whole sentence: *___ necesito es un tinto.* (What I need is a black coffee.)", "answer": "Lo que necesito es un tinto.", "accept": [], "why": "\"What\" at the start of a frame is *lo que*." },
-    { "prompt": "Choose *fue* or *es* and type the whole sentence. It happened already: *___ ayer cuando llegó la carta.*", "answer": "Fue ayer cuando llegó la carta.", "accept": [], "why": "The letter already arrived, so *ser* goes into the past: *fue*." },
-    { "prompt": "Type in Spanish: It was Tomás who called Vale.", "answer": "Fue Tomás quien llamó a Vale.", "accept": [], "why": "*Fue* + the person + *quien* + the rest." },
-    { "prompt": "Type in Spanish: What I don't understand is why.", "answer": "Lo que no entiendo es por qué.", "accept": [], "why": "*Lo que* + what you don't understand, then *es* and the highlight." },
-    { "prompt": "Type in Spanish: This is where it all began.", "answer": "Es aquí donde todo empezó.", "accept": ["Fue aquí donde todo empezó."], "why": "For a place, the frame is *ser* + the place + *donde*." },
-    { "prompt": "Make it negative and add the correction: *Fue Vale quien lo dijo.* (It wasn't Vale who said it, it was Mariana.)", "answer": "No fue Vale quien lo dijo, fue Mariana.", "accept": [], "why": "*No* goes in front of *fue*, and the second half names the right person." },
-    { "prompt": "Type in Spanish, to a friend: Was it you who left the door open?", "answer": "¿Fuiste tú quien dejó la puerta abierta?", "accept": [], "why": "*Fuiste* matches *tú*, and *quien* still points at the person." },
-    { "prompt": "Type in Spanish: What I want is to talk to Mariana.", "answer": "Lo que quiero es hablar con Mariana.", "accept": [], "why": "The thing you want comes last, right after *es*." }
+    {
+      "prompt": "Choose *quien* or *quienes* and type the whole sentence: *Fueron los vecinos ___ firmaron la carta.* (It was the neighbours who signed the letter.)",
+      "answer": "Fueron los vecinos quienes firmaron la carta.",
+      "accept": [],
+      "why": "The neighbours are several people, so *quienes*."
+    },
+    {
+      "prompt": "Choose *lo que* or *que* and type the whole sentence: *___ necesito es un tinto.* (What I need is a black coffee.)",
+      "answer": "Lo que necesito es un tinto.",
+      "accept": [],
+      "why": "\"What\" at the start of a frame is *lo que*."
+    },
+    {
+      "prompt": "Choose *fue* or *es* and type the whole sentence. It happened already: *___ ayer cuando llegó la carta.*",
+      "answer": "Fue ayer cuando llegó la carta.",
+      "accept": [],
+      "why": "The letter already arrived, so *ser* goes into the past: *fue*."
+    },
+    {
+      "prompt": "Type in Spanish: It was Tomás who called Vale.",
+      "answer": "Fue Tomás quien llamó a Vale.",
+      "accept": [],
+      "why": "*Fue* + the person + *quien* + the rest."
+    },
+    {
+      "prompt": "Type in Spanish: What I don't understand is why.",
+      "answer": "Lo que no entiendo es por qué.",
+      "accept": [],
+      "why": "*Lo que* + what you don't understand, then *es* and the highlight."
+    },
+    {
+      "prompt": "Type in Spanish: This is where it all began.",
+      "answer": "Es aquí donde todo empezó.",
+      "accept": [
+        "Fue aquí donde todo empezó."
+      ],
+      "why": "For a place, the frame is *ser* + the place + *donde*."
+    },
+    {
+      "prompt": "Make it negative and add the correction: *Fue Vale quien lo dijo.* (It wasn't Vale who said it, it was Mariana.)",
+      "answer": "No fue Vale quien lo dijo, fue Mariana.",
+      "accept": [],
+      "why": "*No* goes in front of *fue*, and the second half names the right person."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend: Was it you who left the door open?",
+      "answer": "¿Fuiste tú quien dejó la puerta abierta?",
+      "accept": [],
+      "why": "*Fuiste* matches *tú*, and *quien* still points at the person."
+    },
+    {
+      "prompt": "Type in Spanish: What I want is to talk to Mariana.",
+      "answer": "Lo que quiero es hablar con Mariana.",
+      "accept": [],
+      "why": "The thing you want comes last, right after *es*."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Fue Vale que encontró la carta.", "right": "Fue Vale quien encontró la carta.", "why": "Almost. After a person the careful choice is *quien*, which points straight back at Vale." },
-    { "wrong": "Fueron los vecinos quien firmó la carta.", "right": "Fueron los vecinos quienes firmaron la carta.", "why": "Almost. Once the highlight is plural, *quienes* and the verb are plural too." },
-    { "wrong": "Que necesito es un tinto.", "right": "Lo que necesito es un tinto.", "why": "Almost. To say \"what\" at the start, Spanish needs *lo que*, not a bare *que*." },
-    { "wrong": "Lo que no entiendo es porque.", "right": "Lo que no entiendo es por qué.", "why": "Almost. \"Why\" as a question is two words, with an accent on *qué*." },
-    { "wrong": "Es Vale quien encontró la carta.", "right": "Fue Vale quien encontró la carta.", "why": "Almost. The finding is over, so *ser* has to go into the past as well." }
+    {
+      "wrong": "Fue Vale que encontró la carta.",
+      "right": "Fue Vale quien encontró la carta.",
+      "why": "Almost. After a person the careful choice is *quien*, which points straight back at Vale."
+    },
+    {
+      "wrong": "Fueron los vecinos quien firmó la carta.",
+      "right": "Fueron los vecinos quienes firmaron la carta.",
+      "why": "Almost. Once the highlight is plural, *quienes* and the verb are plural too."
+    },
+    {
+      "wrong": "Que necesito es un tinto.",
+      "right": "Lo que necesito es un tinto.",
+      "why": "Almost. To say \"what\" at the start, Spanish needs *lo que*, not a bare *que*."
+    },
+    {
+      "wrong": "Lo que no entiendo es porque.",
+      "right": "Lo que no entiendo es por qué.",
+      "why": "Almost. \"Why\" as a question is two words, with an accent on *qué*."
+    },
+    {
+      "wrong": "Fue Vale quién encontró la carta.",
+      "right": "Fue Vale quien encontró la carta.",
+      "why": "Almost. This *quien* isn't asking anything, so it has no accent."
+    }
   ],
   "personal": "Think of someone who helped you, or something you really want right now. Say one true sentence with *Fue... quien* or *Lo que quiero es...*."
 }

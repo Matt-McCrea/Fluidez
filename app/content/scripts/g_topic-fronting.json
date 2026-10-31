@@ -1,7 +1,7 @@
 {
   "node": "g:topic-fronting",
   "hook": {
-    "line": "On the podcast, Mariana asks who signed the sale contract. Starting with the thing itself puts the weight exactly where you want it.",
+    "line": "On the podcast, Mariana asks who signed the café's new lease. Tomás starts with the contract itself, so the weight falls on who did it.",
     "es": "El contrato lo firmé yo.",
     "en": "I'm the one who signed the contract."
   },

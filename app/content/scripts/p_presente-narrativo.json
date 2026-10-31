@@ -3,7 +3,7 @@
   "hook": {
     "line": "Vale is telling a story over coffee, and she tells it in the present tense because it makes it feel like it is happening right in front of you. You can do the same.",
     "es": "Ayer voy al mercado y me encuentro a Hernando.",
-    "en": "Yesterday I'm going to the market and I bump into Hernando."
+    "en": "So yesterday I go to the market and I bump into Hernando."
   },
   "examples": [
     {
@@ -12,7 +12,7 @@
     },
     {
       "es": "Ayer voy al mercado y me encuentro a Hernando.",
-      "en": "Yesterday I'm going to the market and I bump into Hernando."
+      "en": "So yesterday I go to the market and I bump into Hernando."
     },
     {
       "es": "Entro a la oficina y todos se quedan callados.",
@@ -31,7 +31,7 @@
       "en": "I walk into the café and Simón shouts my name at me."
     }
   ],
-  "rule": "When you tell an anecdote among friends, you can use the present tense for things that already happened. A word like *ayer* or *anoche* still tells the listener when. The present just brings the moment closer, like English \"so I walk in and…\".\nIt is casual: stories, complaints, jokes. Once you start, stay in the present until the story ends.",
+  "rule": "When you tell an anecdote among friends, you can use the present tense for things that already happened. A word like *ayer* or *anoche* still tells the listener when. The present just brings the moment closer, like English \"so I walk in and…\".\nIt is casual: stories, complaints, jokes. Once you start, don't flip back and forth inside the same scene.",
   "smallPrint": "Teachers call this the historical present: the present tense used with past meaning.",
   "readAndPick": [
     {
@@ -126,7 +126,7 @@
       "why": "*Ni siquiera* adds the \"not even\" bite."
     },
     {
-      "prompt": "Tell it as a story in the present: I buy her a really expensive present (a woman) and she doesn't even say thank you.",
+      "prompt": "Tell it as a story in the present, about a woman: I buy her a really expensive present and she doesn't even say thank you.",
       "answer": "Le compro un regalo carísimo y ni siquiera me da las gracias.",
       "accept": [],
       "why": "Both verbs are in the present, even though it is a past story."
