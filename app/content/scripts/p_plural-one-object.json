@@ -19,8 +19,8 @@
       "en": "I need some new trousers."
     },
     {
-      "es": "Bajó por las escaleras.",
-      "en": "She went down the stairs."
+      "es": "Vale bajó por las escaleras.",
+      "en": "Vale went down the stairs."
     },
     {
       "es": "Los lentes de Don Hernando están en la mesa.",
@@ -107,11 +107,11 @@
       "answer": 0
     },
     {
-      "es": "Bajó por las escaleras.",
+      "es": "Vale bajó por las escaleras.",
       "options": [
-        "She went down the stairs.",
-        "She went up the stairs.",
-        "She stayed on the stairs."
+        "Vale went down the stairs.",
+        "Vale went up the stairs.",
+        "Vale stayed on the stairs."
       ],
       "answer": 0
     }

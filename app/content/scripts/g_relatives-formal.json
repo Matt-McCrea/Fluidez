@@ -22,9 +22,9 @@
     { "es": "Mariana, a quien conocí en el café, escribe para un periódico.", "options": ["Mariana, who met me at the café, writes for a newspaper.", "Mariana, whom I met at the café, writes for a newspaper.", "Mariana, whom we met at the café, writes for a newspaper."], "answer": 1 },
     { "es": "La puerta, la cual es muy vieja, no cierra bien.", "options": ["The doors, which are very old, don't close well.", "The door, which is very old, doesn't close well."], "answer": 1 },
     { "es": "Mis vecinos, quienes son doctores, trabajan mucho.", "options": ["My neighbour, who is a doctor, works a lot.", "My neighbours, who are doctors, work a lot."], "answer": 1 },
-    { "es": "El proyecto, el cual presentó Altamira, no nos gustó.", "options": ["The projects, which Altamira presented, didn't please us.", "The project, which Altamira presented, didn't please us."], "answer": 1 },
+    { "es": "El proyecto, el cual presentó Altamira, tiene doce pisos.", "options": ["The projects, which Altamira presented, have twelve floors.", "The project, which Altamira presented, has twelve floors."], "answer": 1 },
     { "es": "Vale, de quien hablamos ayer, hace los mejores postres.", "options": ["Vale, who talked about us yesterday, makes the best desserts.", "Vale, whom we talked about yesterday, makes the best desserts."], "answer": 1 },
-    { "es": "Los proyectos, los cuales presentó Altamira, no nos gustaron.", "options": ["The project, which Altamira presented, didn't please us.", "The projects, which Altamira presented, didn't please us."], "answer": 1 },
+    { "es": "Los proyectos, los cuales presentó Altamira, tienen doce pisos.", "options": ["The project, which Altamira presented, has twelve floors.", "The projects, which Altamira presented, have twelve floors."], "answer": 1 },
     { "es": "La calle, en la cual vivimos, es muy tranquila.", "options": ["The street, which we live on, is very quiet.", "The street, which they live on, is very quiet.", "The street, which I live on, is very quiet."], "answer": 0 }
   ],
   "yourTurn": [
@@ -34,7 +34,7 @@
     { "prompt": "Make it plural: Mi vecino, quien es doctor, trabaja mucho.", "answer": "Mis vecinos, quienes son doctores, trabajan mucho.", "accept": [], "why": "Everything follows the plural: *mis*, *vecinos*, *quienes*, *son*, *trabajan*." },
     { "prompt": "Type in Spanish: The street, which we live on, is very quiet. Use *cual*.", "answer": "La calle, en la cual vivimos, es muy tranquila.", "accept": [], "why": "The preposition *en* comes before *la cual*, matching feminine *calle*." },
     { "prompt": "Type in Spanish: Rosa, who opened the café, was Tomás's grandmother.", "answer": "Rosa, quien abrió el café, era la abuela de Tomás.", "accept": [], "why": "A detail about a person in commas: *quien*." },
-    { "prompt": "Make it singular: Los proyectos, los cuales presentó Altamira, no nos gustaron.", "answer": "El proyecto, el cual presentó Altamira, no nos gustó.", "accept": [], "why": "*Los cuales* shrinks to *el cual*, and the verb *gustó* follows." }
+    { "prompt": "Make it singular: Los proyectos, los cuales presentó Altamira, tienen doce pisos.", "answer": "El proyecto, el cual presentó Altamira, tiene doce pisos.", "accept": [], "why": "*Los cuales* shrinks to *el cual*, and the verb *tiene* follows." }
   ],
   "pitfalls": [
     { "wrong": "Los vecinos, quien llevan años aquí, no quieren vender.", "right": "Los vecinos, quienes llevan años aquí, no quieren vender.", "why": "Almost. *Quien* has a plural, *quienes*, for more than one person." },

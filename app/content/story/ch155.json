@@ -2,7 +2,7 @@
   "id": "ch155",
   "unit": "u48",
   "title": "Sesenta centímetros",
-  "text": "La arquitecta del Instituto llegó a las siete en punto, con un casco blanco, un metro amarillo y un cuaderno negro. Se llamaba Clemencia Galindo, era pequeña y hablaba como si cada palabra le costara plata.\nClemencia: Buenos días. Necesito los antecedentes de la casa: planos, escrituras, fotos viejas.\nHernando apareció en la puerta, con su mejor chaqueta.\nHernando: Hernando Pacheco, cliente desde 1984. Yo también soy un antecedente.\nClemencia: Puede quedarse, con una condición. No toca nada.\nHernando: Señora, yo manejé un taxi cuarenta años sin tocar a nadie.\nClemencia empezó por la pared de la puerta verde. Midió, escribió y volvió a medir.\nClemencia: Sesenta centímetros. Es adobe: tierra, paja y agua, secados al sol. Así se construía en Bogotá antes del cemento.\nVale: ¿Sesenta? Esa pared es más ancha que mi horno.\nClemencia dictaba en voz alta.\nClemencia: «Muros de adobe, los cuales tienen un espesor de sesenta centímetros, lo cual indica una construcción de los años veinte».\nSimón: ¡Lo cual! ¡Lo cual, parce!\nClemencia: ¿Y ese pájaro?\nVale: Simón. Es el único de la casa que habla como usted.\nEn el fondo del salón había una alfombra vieja. Clemencia la levantó con dos dedos. Debajo aparecieron baldosas rojas y negras, con flores pequeñas, todas enteras.\nClemencia: Baldosas originales. ¿Quién las cubrió?\nHernando: Rosa, en el 85. Yo me caí ahí con un tinto en la mano. Ella se rio una semana entera, y después compró la alfombra.\nHernando miró las flores del piso un rato largo, sin hacer ningún chiste.\nDesde la ventana se veía el cartel nuevo de Altamira: un edificio de vidrio que se elevaba doce pisos sobre la calle. Abajo decía: «Lanzamiento: marzo».\nYesid: Dicen que es una estructura ligera. De acero y vidrio.\nClemencia: Ligera para ellos. No para la casa de al lado. Y en una manzana en la cual solo se permiten tres pisos.\nPor último, Clemencia se subió a una silla y miró la viga grande con la luz del celular.\nClemencia: ¿Desde cuándo está esa grieta?\nYesid: Desde ayer, cuando descargaron el acero.\nClemencia: Entonces nadie se sienta debajo de esa viga. Ni clientes, ni pájaros, ni don Hernando.\nHernando: ¿Y por qué me nombra a mí de último?\nClemencia: Porque usted es el que más me preocupa.\nClemencia: Mañana traigo un sensor. Quiero medir lo que sienten estas paredes cuando trabajan las máquinas. Y quiero leer el informe sobre esta casa, el cual Altamira le mandó al Instituto hace dos semanas.\nTomás: ¿Qué informe?\nClemencia: Uno que dice que esta casa ya estaba en ruinas antes de la obra.",
+  "text": "La arquitecta del Instituto llegó a las siete en punto, con un casco blanco, un metro amarillo y un cuaderno negro. Se llamaba Clemencia Galindo, era pequeña y hablaba como si cada palabra le costara plata.\nClemencia: Buenos días. Necesito los antecedentes de la casa: planos, escrituras, fotos viejas.\nHernando apareció en la puerta, con su mejor chaqueta.\nHernando: Hernando Pacheco, cliente desde 1984. Yo también soy un antecedente.\nClemencia: Puede quedarse, con una condición. No toca nada.\nHernando: Señora, yo manejé un taxi cuarenta años sin tocar a nadie.\nClemencia empezó por la pared de la puerta verde. Midió, escribió y volvió a medir.\nClemencia: Sesenta centímetros. Es adobe: tierra, paja y agua, secados al sol. Así se construía en Bogotá antes del cemento.\nVale: ¿Sesenta? Esa pared es más ancha que mi horno.\nClemencia dictaba en voz alta.\nClemencia: «Muros de adobe, los cuales tienen un espesor de sesenta centímetros, lo cual indica una construcción de los años veinte».\nSimón: ¡Lo cual! ¡Lo cual, parce!\nClemencia: ¿Y ese pájaro?\nVale: Simón. Es el único de la casa que habla como usted.\nEn el fondo del salón había una alfombra vieja. Clemencia la levantó con dos dedos. Debajo aparecieron baldosas rojas y negras, con flores pequeñas, todas enteras.\nClemencia: Baldosas originales. ¿Quién las cubrió?\nHernando: Rosa, en el 85. Yo me caí ahí con un tinto en la mano. Ella se rio una semana entera, y después compró la alfombra.\nHernando miró las flores del piso un rato largo, sin hacer ningún chiste.\nDesde la ventana se veía el cartel nuevo de Altamira: un edificio de vidrio que se elevaba doce pisos sobre la calle. Abajo decía: «Lanzamiento: marzo».\nYesid: Dicen que es una estructura ligera. De acero y vidrio.\nClemencia: Ligera para ellos. No para la casa de al lado. Y en una manzana en la cual solo se permiten tres pisos.\nPor último, Clemencia se subió a una silla y miró la viga grande con la luz del celular.\nClemencia: ¿Desde cuándo está esa grieta?\nYesid: Desde ayer, cuando descargaron el acero.\nClemencia: Entonces nadie se sienta debajo de esa viga. Ni clientes, ni pájaros, ni don Hernando.\nHernando: ¿Y por qué me nombra a mí de último?\nClemencia: Porque usted es el que más me preocupa.\nHernando abrió la boca, pero no encontró ninguna respuesta.\nClemencia: Mañana traigo un sensor. Quiero medir lo que sienten estas paredes cuando trabajan las máquinas. Y quiero leer el informe sobre esta casa, el cual Altamira le mandó al Instituto hace dos semanas.\nTomás: ¿Qué informe?\nClemencia: Uno que dice que esta casa ya estaba en ruinas antes de la obra.",
   "gloss": [
     {
       "es": "adobe",
@@ -219,6 +219,7 @@
   ],
   "lexemes": [
     "l:abajo",
+    "l:abrir",
     "l:acero",
     "l:adobe",
     "l:agua",
@@ -235,6 +236,7 @@
     "l:año",
     "l:baldosa",
     "l:blanco",
+    "l:boca",
     "l:bueno",
     "l:caerse",
     "l:calle",
@@ -265,6 +267,7 @@
     "l:edificio",
     "l:elevar",
     "l:empezar",
+    "l:encontrar",
     "l:enterar",
     "l:entero",
     "l:escribir",
@@ -329,6 +332,7 @@
     "l:quién",
     "l:qué",
     "l:rato",
+    "l:respuesta",
     "l:reír",
     "l:rojo",
     "l:ruina",

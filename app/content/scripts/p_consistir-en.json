@@ -28,7 +28,7 @@
     },
     {
       "es": "El proyecto no consiste en vender el café.",
-      "en": "The project does not consist of selling the café."
+      "en": "The project isn't about selling the café."
     }
   ],
   "rule": "*Consistir en* says what something is made up of or involves. The word after *en* is a noun or an infinitive: *consiste en atender*, *consiste en un texto*.\n\nThe preposition is always *en*. English \"consist of\" tempts you to say *de*; don't.\n\nThe verb agrees with the thing: *consiste*, *consisten*.\n\nTo ask, use *¿En qué consiste…?*",
@@ -82,9 +82,9 @@
     {
       "es": "El proyecto no consiste en vender el café.",
       "options": [
-        "The project consists of selling the café.",
-        "The project does not consist of selling the café.",
-        "The café does not consist of a project."
+        "The project is about selling the café.",
+        "The project isn't about selling the café.",
+        "The café isn't part of the project."
       ],
       "answer": 1
     },
@@ -148,7 +148,7 @@
       "why": "Two tests make the verb *consisten*."
     },
     {
-      "prompt": "Make it negative: Type in Spanish: The project does not consist of selling the café.",
+      "prompt": "Type in Spanish, using *consistir en*: The project isn't about selling the café.",
       "answer": "El proyecto no consiste en vender el café.",
       "accept": [],
       "why": "*No* goes before the verb."

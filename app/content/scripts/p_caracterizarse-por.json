@@ -19,8 +19,8 @@
       "en": "The jury is made up of three judges."
     },
     {
-      "es": "El proyecto consiste en tres fases.",
-      "en": "The project consists of three phases."
+      "es": "El proyecto consiste en restaurar la fachada.",
+      "en": "The project involves restoring the façade."
     },
     {
       "es": "Don Hernando se caracteriza por llegar tarde.",
@@ -53,11 +53,11 @@
       "answer": 0
     },
     {
-      "es": "El proyecto consiste en tres fases.",
+      "es": "El proyecto consiste en restaurar la fachada.",
       "options": [
-        "The project is characterised by three phases.",
-        "The project is in its third phase.",
-        "The project consists of three phases."
+        "The project is known for restoring the façade.",
+        "The project restored the façade.",
+        "The project involves restoring the façade."
       ],
       "answer": 2
     },
@@ -131,8 +131,8 @@
       "why": "Parts after *se compone* come with *de*."
     },
     {
-      "prompt": "Type in Spanish: The project consists of three phases.",
-      "answer": "El proyecto consiste en tres fases.",
+      "prompt": "Type in Spanish: The project involves restoring the façade.",
+      "answer": "El proyecto consiste en restaurar la fachada.",
       "accept": [],
       "why": "*Consiste* takes *en*, not *de*."
     },
@@ -167,8 +167,8 @@
   ],
   "pitfalls": [
     {
-      "wrong": "El proyecto consiste de tres fases.",
-      "right": "El proyecto consiste en tres fases.",
+      "wrong": "El proyecto consiste de restaurar la fachada.",
+      "right": "El proyecto consiste en restaurar la fachada.",
       "why": "Almost. English \"consists of\" tempts you into *de*, but this verb takes *en*."
     },
     {

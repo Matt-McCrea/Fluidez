@@ -1,7 +1,7 @@
 {
   "node": "p:fabricado-con-contener",
   "hook": {
-    "line": "Vale checks a label before buying a table, and wants to know what it is made from and what a juice has inside. Spanish uses two different verbs for those two questions.",
+    "line": "Vale reads every label before she buys anything, from tables to juice: what is it made from, and what is in it? Spanish uses two different verbs for those two questions.",
     "es": "Esta mesa está fabricada con madera.",
     "en": "This table is made from wood."
   },
@@ -23,7 +23,7 @@
       "en": "The juice doesn't contain sugar."
     },
     {
-      "es": "El pastel está relleno de crema.",
+      "es": "La torta está rellena de crema.",
       "en": "The cake is filled with cream."
     },
     {
@@ -31,7 +31,7 @@
       "en": "What does this juice contain?"
     }
   ],
-  "rule": "Two verbs, two jobs.\n\nFor what an object is built from, use *estar fabricado con* plus the material: *está fabricada con madera*. *Fabricado* is an adjective, so it agrees: *fabricada*, *fabricados*, *fabricadas*.\n\nFor what a food or substance has inside, use *contener*: *contiene azúcar*.\n\nFor things stuffed with something, use *relleno de*: *relleno de crema*.\n\nEnglish uses \"made of\" for all of these, so choose the verb by the job.",
+  "rule": "Two verbs, two jobs.\n\nFor what an object is built from, use *estar fabricado con* plus the material: *está fabricada con madera*. *Fabricado* is an adjective, so it agrees: *fabricada*, *fabricados*, *fabricadas*.\n\nFor what a food or substance has inside, use *contener*: *contiene azúcar*.\n\nFor things stuffed with something, use *relleno de*: *rellena de crema*.\n\nEnglish uses \"made of\" for all of these, so choose the verb by the job.",
   "smallPrint": "Teachers call *fabricado con* a passive participle that describes a result, and *contener* a verb of content.",
   "readAndPick": [
     {
@@ -53,7 +53,7 @@
       "answer": 0
     },
     {
-      "es": "El pastel está relleno de crema.",
+      "es": "La torta está rellena de crema.",
       "options": [
         "The cake is covered with cream.",
         "The cake has no cream.",
@@ -91,9 +91,9 @@
     {
       "es": "El tinto no contiene leche.",
       "options": [
-        "The coffee contains milk.",
-        "The coffee has no milk.",
-        "The coffee is milk."
+        "The black coffee contains milk.",
+        "The black coffee has no milk.",
+        "The black coffee is milk."
       ],
       "answer": 1
     },
@@ -109,7 +109,7 @@
     {
       "es": "Esta sopa contiene papa y pollo.",
       "options": [
-        "This soup is made from a farm.",
+        "This soup has potato but no chicken.",
         "This soup has no potato.",
         "This soup contains potato and chicken."
       ],
@@ -137,12 +137,12 @@
     },
     {
       "prompt": "Say: The cake is filled with cream.",
-      "answer": "El pastel está relleno de crema.",
+      "answer": "La torta está rellena de crema.",
       "accept": [],
-      "why": "Filled with something is *relleno de*."
+      "why": "Filled with something is *relleno de*, and *rellena* matches *torta*."
     },
     {
-      "prompt": "Make it negative: *El tinto contiene leche.* The coffee doesn't contain milk.",
+      "prompt": "Make it negative: *El tinto contiene leche.* The black coffee doesn't contain milk.",
       "answer": "El tinto no contiene leche.",
       "accept": [],
       "why": "Put *no* before *contiene*."

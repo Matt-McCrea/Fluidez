@@ -31,7 +31,7 @@
       "en": "Tomás talked to the owner, which helped a lot."
     }
   ],
-  "rule": "To comment on a whole situation, finish the sentence, add a comma, then *lo que* and a verb. English just says \"which\".\n\n*Llovió toda la semana, lo que arruinó nuestros planes.*\n\nThe *lo* means \"the whole thing I just said\", not one noun in it. Two other tags do the same job:\n\n*lo cual*: more formal, mostly written.\n*cosa que*: casual, spoken.\n\nNever use *que* alone or *el que* here. Without the comma the meaning changes: *No llamó lo que me molestó* would mean he didn't call the thing that annoyed me.",
+  "rule": "To comment on a whole situation, finish the sentence, add a comma, then *lo que* and a verb. English just says \"which\".\n\n*Llovió toda la semana, lo que arruinó nuestros planes.*\n\nThe *lo* means \"the whole thing I just said\", not one noun in it. Two other tags do the same job:\n\n*lo cual*: more formal, mostly written.\n*cosa que*: casual, spoken.\n\nNever use *que* alone or *el que* here, and keep the comma: the comment is an add-on to a finished sentence.",
   "smallPrint": "Teachers call this a relative clause that refers back to a whole sentence (an *oración relativa* with a neuter antecedent).",
   "readAndPick": [
     {
@@ -45,16 +45,16 @@
     {
       "es": "Altamira compró otra casa, lo que preocupó a todos.",
       "options": [
-        "Altamira bought a house that worried everyone, the house itself.",
-        "Altamira bought another house, and that fact worried everyone."
+        "The house itself worried everyone.",
+        "The fact that he bought it worried everyone."
       ],
       "answer": 1
     },
     {
       "es": "Altamira compró otra casa que preocupó a todos.",
       "options": [
-        "Altamira bought a house that worried everyone, the house itself.",
-        "Altamira bought another house, and that fact worried everyone."
+        "The house itself worried everyone.",
+        "The fact that he bought it worried everyone."
       ],
       "answer": 0
     },
@@ -132,7 +132,7 @@
       "answer": "Hernando llegó tarde, lo que no es raro.",
       "accept": [
         "Hernando llegó tarde, lo cual no es raro.",
-        "Hernando llegó tarde, cosa que no es raro."
+        "Hernando llegó tarde, cosa que no es rara."
       ],
       "why": "The comment can be negative too: *lo que no es raro*."
     },
@@ -175,7 +175,7 @@
     {
       "wrong": "Llovió toda la semana lo que arruinó nuestros planes.",
       "right": "Llovió toda la semana, lo que arruinó nuestros planes.",
-      "why": "The comma is what makes it a comment; without it the meaning changes."
+      "why": "The comma is part of the pattern: the comment hangs off a finished sentence."
     }
   ],
   "personal": "Tell us about something that happened this week and how it went, ending with *…, lo que…* or *…, cosa que…*"

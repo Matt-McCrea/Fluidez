@@ -28,7 +28,7 @@
     },
     {
       "es": "Por no haber estudiado, no pasó el examen.",
-      "en": "For not having studied, he didn't pass the exam."
+      "en": "Because he hadn't studied, he didn't pass the exam."
     }
   ],
   "rule": "You already know *he firmado* (\"I have signed\"). To look back from inside a phrase, put *haber* in its base form and add the *-do* form: *haber firmado*, *haber venido*, *haber comido*.\n\nUse it after words that take the base form of a verb: *después de haber firmado*, *por haber venido*, *sin haber terminado*. For \"not\", *no* goes before *haber*: *por no haber llamado*.\n\nIt says the action was finished before the main verb. English often shortens this to \"after signing\", and Spanish can too (*después de firmar*), but *haber* makes \"already done\" explicit.",
@@ -75,7 +75,7 @@
       "options": [
         "After studying, he passed the exam.",
         "Because he studied, he didn't pass the exam.",
-        "For not having studied, he didn't pass the exam."
+        "Because he hadn't studied, he didn't pass the exam."
       ],
       "answer": 2
     },
@@ -143,7 +143,7 @@
       "why": "*Sin* is followed by the base form, so *sin haber terminado*."
     },
     {
-      "prompt": "Type in Spanish: For not having studied, he didn't pass the exam.",
+      "prompt": "Type in Spanish: Because he hadn't studied, he didn't pass the exam.",
       "answer": "Por no haber estudiado, no pasó el examen.",
       "accept": [
         "Por no haber estudiado, él no pasó el examen."
@@ -151,7 +151,7 @@
       "why": "*Por no haber estudiado* gives the reason, one step back in time."
     },
     {
-      "prompt": "Make it about Vale: *Después de haber comido, salimos a caminar.* Say: After having spoken with Vale, Tomás felt better.",
+      "prompt": "Type in Spanish: After having spoken with Vale, Tomás felt better.",
       "answer": "Después de haber hablado con Vale, Tomás se sintió mejor.",
       "accept": [],
       "why": "Same frame, new verb: *hablado* is the *-do* form of *hablar*."

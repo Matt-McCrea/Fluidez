@@ -155,9 +155,9 @@
       "why": "These comparisons are fixed: for slow, Spanish always picks the turtle."
     },
     {
-      "wrong": "Tomás está rojo como una tomate.",
-      "right": "Tomás está rojo como un tomate.",
-      "why": "The article matches the thing: *tomate* is masculine, so *un tomate*."
+      "wrong": "El apartamento parece como una caja.",
+      "right": "El apartamento parece una caja.",
+      "why": "Almost. English says \"looks like\", but *parece* already means that, so no *como*."
     }
   ],
   "personal": "Describe someone you know with a picture: *Mi amigo es… como un…* or *Mi casa parece un…*"

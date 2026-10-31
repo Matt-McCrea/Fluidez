@@ -11,8 +11,8 @@
       "en": "I bought some dark-blue shirts."
     },
     {
-      "es": "Lleva zapatos verde botella.",
-      "en": "She's wearing bottle-green shoes."
+      "es": "Vale lleva zapatos verde botella.",
+      "en": "Vale is wearing bottle-green shoes."
     },
     {
       "es": "Tenemos dos carros gris plata.",
@@ -53,11 +53,11 @@
       "answer": 1
     },
     {
-      "es": "Lleva zapatos verde botella.",
+      "es": "Vale lleva zapatos verde botella.",
       "options": [
-        "She's wearing red shoes.",
-        "She's wearing dark-blue shoes.",
-        "She's wearing bottle-green shoes."
+        "Vale is wearing red shoes.",
+        "Vale is wearing dark-blue shoes.",
+        "Vale is wearing bottle-green shoes."
       ],
       "answer": 2
     },
@@ -167,8 +167,8 @@
       "why": "Almost. When a shade word is added, both words stay fixed."
     },
     {
-      "wrong": "Lleva zapatos verdes botella.",
-      "right": "Lleva zapatos verde botella.",
+      "wrong": "Vale lleva zapatos verdes botella.",
+      "right": "Vale lleva zapatos verde botella.",
       "why": "Almost. *Verde botella* is one label and does not take an *-s*."
     },
     {

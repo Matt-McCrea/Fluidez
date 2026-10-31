@@ -1,7 +1,7 @@
 {
   "node": "p:a-lo-largo-de",
   "hook": {
-    "line": "Don Hernando is telling you where he drove in his taxi days and where the café sits on the street. Spanish has small frames for along, across and above.",
+    "line": "Don Hernando is telling you where he drove in his taxi days and where the café sits on the street. Spanish has small frames for along, on the other side and at the top.",
     "es": "Caminamos a lo largo de la playa.",
     "en": "We walked along the beach."
   },
@@ -31,7 +31,7 @@
       "en": "What is on the other side of the street?"
     }
   ],
-  "rule": "Four small frames, each followed by a place.\n\n*A lo largo de* follows something from end to end, in space or in time: *a lo largo de la playa*, *a lo largo del año*.\n\n*Al otro lado de* means on the other side of.\n\n*En lo alto de* means at the top of.\n\nWatch *de* plus *el*: it becomes *del*, as in *a lo largo del año*.\n\nEnglish uses \"along\", \"across\" and \"throughout\" for this. Spanish keeps the same frame each time.",
+  "rule": "Four small frames, each followed by a place.\n\n*A lo largo de* follows something from end to end, in space or in time: *a lo largo de la playa*, *a lo largo del año*.\n\n*Al otro lado de* means on the other side of.\n\n*En lo alto de* means at the top of.\n\nWatch *de* plus *el*: it becomes *del*, as in *a lo largo del año*.\n\nEnglish switches between \"along\" for places and \"throughout\" for time; Spanish uses *a lo largo de* for both.",
   "smallPrint": "Teachers call these prepositional phrases: several words that work together as one preposition.",
   "readAndPick": [
     {

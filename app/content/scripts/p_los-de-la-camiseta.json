@@ -19,8 +19,8 @@
       "en": "Which is your car?\nThe one on the corner."
     },
     {
-      "es": "Los del café abren a las siete.",
-      "en": "The ones from the café open at seven."
+      "es": "Los del segundo piso hacen mucho ruido.",
+      "en": "The ones on the second floor make a lot of noise."
     },
     {
       "es": "¿Las llaves de la casa?\nNo, las del carro.",
@@ -31,7 +31,7 @@
       "en": "Three of the guests didn't come."
     }
   ],
-  "rule": "English says \"the one\" or \"the ones\". Spanish simply drops the noun and keeps the article: *el*, *la*, *los*, *las* plus *de* plus a detail that tells you which: *los de la camiseta roja*.\n\nThe article matches the noun you left out: *la de la izquierda* (a feminine thing), *los de* (masculine plural). *De* plus *el* joins as *del*: *el del café*.\n\nWith a number: *tres de los invitados*, *dos de mis amigos*. Drop the noun only when the listener can tell what it is.",
+  "rule": "English says \"the one\" or \"the ones\". Spanish simply drops the noun and keeps the article: *el*, *la*, *los*, *las* plus *de* plus a detail that tells you which: *los de la camiseta roja*.\n\nThe article matches the noun you left out: *la de la izquierda* (a feminine thing), *los de* (masculine plural). *De* plus *el* joins as *del*: *los del segundo piso*.\n\nWith a number: *tres de los invitados*, *dos de mis amigos*. Drop the noun only when the listener can tell what it is.",
   "smallPrint": "Teachers call this a noun left out (ellipsis): the article is doing the job of a pronoun.",
   "readAndPick": [
     {
@@ -80,11 +80,11 @@
       "answer": 2
     },
     {
-      "es": "Los del café abren a las siete.",
+      "es": "Los del segundo piso hacen mucho ruido.",
       "options": [
-        "The one from the café opens at seven.",
-        "The ones from the café open at seven.",
-        "The café opens at seven."
+        "The one on the second floor makes a lot of noise.",
+        "The ones on the second floor make a lot of noise.",
+        "The second floor makes a lot of noise."
       ],
       "answer": 1
     },
@@ -148,8 +148,8 @@
       "why": "*La* agrees with the missing feminine noun."
     },
     {
-      "prompt": "Make it about the café: *Los de la casa abren a las siete.* Say: The ones from the café open at seven.",
-      "answer": "Los del café abren a las siete.",
+      "prompt": "Make it about the second floor: *Los de la casa hacen mucho ruido.* Say: The ones on the second floor make a lot of noise.",
+      "answer": "Los del segundo piso hacen mucho ruido.",
       "accept": [],
       "why": "*De* plus *el* always joins as *del*."
     },
@@ -167,8 +167,8 @@
       "why": "Almost. English needs \"one\"; Spanish needs nothing, just the article and *de*."
     },
     {
-      "wrong": "Los de el café abren a las siete.",
-      "right": "Los del café abren a las siete.",
+      "wrong": "Los de el segundo piso hacen mucho ruido.",
+      "right": "Los del segundo piso hacen mucho ruido.",
       "why": "Almost. *De* and *el* always join into *del*."
     },
     {

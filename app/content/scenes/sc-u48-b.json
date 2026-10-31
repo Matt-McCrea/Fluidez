@@ -3,11 +3,11 @@
   "unit": "u48",
   "title": "El que se apoyó",
   "spare": false,
-  "brief": "You're Tomás in the middle of the survey. Don Hernando has leaned on the cracked wall and the architect has told him off. Hernando is older, so use usted with him; Marisol too. Apologise, reassure him and explain the wall.",
+  "brief": "You're Tomás in the middle of the survey. Don Hernando has just leaned on a wall the architect told him not to touch, and she has told him off. Hernando is older, so use usted with him; Clemencia too. Apologise, reassure him and explain the wall.",
   "turns": [
     {
       "id": "t1",
-      "npc": "Hernando: ¿Qué hace la arquitecta con ese aparato, hijo?",
+      "npc": "Hernando: ¿Qué hace la arquitecta con ese aparato, mijo?",
       "npcEn": "Hernando: What is the architect doing with that device, son?",
       "intent": "Tell him she's measuring the crack, trying to find out when it started (use a gerund: midiendo, tratando).",
       "accept": [
@@ -28,8 +28,8 @@
     },
     {
       "id": "t2",
-      "npc": "Marisol: Su amigo estaba apoyado en el muro agrietado. Nadie me lo dijo.",
-      "npcEn": "Marisol: Your friend was leaning on the cracked wall. Nobody told me.",
+      "npc": "Clemencia: ¡Su amigo estaba apoyado en la pared del agujero! Esa pared no se toca.",
+      "npcEn": "Clemencia: Your friend was leaning on the wall with the hole! That wall is not to be touched.",
       "intent": "Apologise to her for not having warned him (use: haber + participle).",
       "accept": [
         "Perdón por no haberle avisado.",
@@ -49,9 +49,9 @@
     },
     {
       "id": "t3",
-      "npc": "Hernando: Qué vergüenza, Tomás. Sin querer, empujé la pared.",
-      "npcEn": "Hernando: How embarrassing, Tomás. I pushed the wall without meaning to.",
-      "intent": "Reassure him: say not to worry, the crack comes from the vibrations of the demolition. Use usted, not tú.",
+      "npc": "Hernando: ¡Qué vergüenza, Tomás! ¿Y si por mi culpa se cae la viga?",
+      "npcEn": "Hernando: How embarrassing, Tomás! What if the beam falls because of me?",
+      "intent": "Reassure him: tell him not to worry, the crack in the beam comes from the vibrations of the demolition. Use usted, not tú.",
       "accept": [
         "No se preocupe, don Hernando. La grieta viene de las vibraciones de la demolición.",
         "Tranquilo, don Hernando. Usted no tiene la culpa; son las vibraciones de la demolición.",
@@ -69,7 +69,8 @@
           "words": [
             "eres",
             "tienes",
-            "tú"
+            "tú",
+            "te preocupes"
           ],
           "label": "use usted with don Hernando"
         }
@@ -79,7 +80,7 @@
     },
     {
       "id": "t4",
-      "npc": "Marisol: ¿Alguien anotó las medidas de ayer?",
+      "npc": "Clemencia: ¿Alguien anotó las medidas de ayer?",
       "npcEn": "Marisol: Did anyone write down yesterday's measurements?",
       "intent": "Say you think you saved them on your phone (use: Creo haber...).",
       "accept": [
@@ -102,11 +103,11 @@
       "id": "t5",
       "npc": "Hernando: Prometo no volver a tocar nada. ¿Qué clase de pared es esta?",
       "npcEn": "Hernando: I promise not to touch anything again. What kind of wall is this?",
-      "intent": "Tell him the wall is adobe, which is resistant to cold but not to vibrations (use: resistente a).",
+      "intent": "Tell him, with a smile, the wall is adobe: resistant to cold and heat, but not to him (use: resistente a).",
       "accept": [
-        "Es de adobe, que es resistente al frío pero no a las vibraciones.",
-        "Es adobe, un material resistente al frío, pero no a las vibraciones.",
-        "La pared es de adobe. Es resistente al frío, aunque no a las vibraciones."
+        "Es de adobe, que es resistente al frío y al calor, pero no a usted.",
+        "Es una pared de adobe. Es resistente al frío, pero no a sus manos, don Hernando.",
+        "Adobe, don Hernando: resistente a cien años de lluvia, pero no a usted."
       ],
       "require": [
         {
@@ -122,7 +123,6 @@
   ],
   "requires": [
     "c:ayer-anoche",
-    "c:empuje-hale",
     "c:no-se",
     "c:no-te-preocupes",
     "c:perdon-disculpe",
@@ -134,7 +134,6 @@
     "g:commands-usted",
     "g:demonstratives",
     "g:direct-objects",
-    "g:double-pronouns",
     "g:estar-gerund",
     "g:estar-location-states",
     "g:estar-participle",
@@ -147,18 +146,19 @@
     "g:object-pronoun-position",
     "g:parecer-quedar",
     "g:por-para-1",
-    "g:prep-infinitive",
     "g:present-ar",
     "g:present-er-ir",
     "g:preterite-ar",
-    "g:preterite-irregular-strong",
     "g:preterite-ser-ir-hacer",
     "g:questions",
+    "g:reflexive-routine",
     "g:se-impersonal",
     "g:ser-identity",
+    "g:si-present",
     "g:stem-boot",
     "g:that-clauses",
     "l:adobe",
+    "l:agujero",
     "l:ahora",
     "l:amigo",
     "l:anotar",
@@ -167,7 +167,10 @@
     "l:arquitecto",
     "l:avisar",
     "l:ayer",
+    "l:año",
     "l:buscar",
+    "l:caerse",
+    "l:calor",
     "l:celular",
     "l:clase",
     "l:creer",
@@ -178,19 +181,19 @@
     "l:demolición",
     "l:disculpar",
     "l:empezar",
-    "l:empujar",
     "l:estar",
     "l:frío",
     "l:grieta",
     "l:guardar",
     "l:haber",
     "l:hacer",
-    "l:hijo",
     "l:ir",
     "l:lado",
-    "l:material",
+    "l:lluvia",
+    "l:mano",
     "l:medida",
     "l:medir",
+    "l:mijo",
     "l:muro",
     "l:obra",
     "l:origen",
@@ -199,7 +202,6 @@
     "l:perdón",
     "l:preocuparse",
     "l:prometer",
-    "l:querer",
     "l:qué",
     "l:resistente",
     "l:revisar",
@@ -225,7 +227,7 @@
     "p:indefinites-basic",
     "p:intentar-conseguir",
     "p:ir-a-venir-de-place",
-    "p:me-te-nos-objects",
+    "p:numbers-un-una",
     "p:por-culpa-de",
     "p:possessives-basic",
     "p:que-tipo-de",

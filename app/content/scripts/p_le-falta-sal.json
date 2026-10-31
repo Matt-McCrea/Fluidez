@@ -7,8 +7,8 @@
   },
   "examples": [
     {
-      "es": "La sopa está desabrida, le falta sal.",
-      "en": "The soup is bland, it needs salt."
+      "es": "La sopa está desabrida: le falta sal.",
+      "en": "The soup is bland: it needs salt."
     },
     {
       "es": "Tiene un toque agridulce.",
@@ -166,7 +166,7 @@
     {
       "wrong": "Esta salsa es muy picante.",
       "right": "Esta salsa está muy picante.",
-      "why": "Almost. Here you are describing what you taste right now, so *está*."
+      "why": "Almost. For what you taste right now, on this plate, Spanish prefers *está*."
     },
     {
       "wrong": "La sopa le falta sal.",

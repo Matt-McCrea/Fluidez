@@ -2,7 +2,7 @@
   "id": "ch158",
   "unit": "u48",
   "title": "Le falta sal",
-  "text": "El ingeniero de Altamira no dijo ni una palabra en toda la presentación. Se fue antes del final y dejó el cartel de Hernando en la silla, doblado en cuatro.\nA la mañana siguiente, a las ocho, Clemencia abrió la escalera debajo de la viga. A las ocho y cinco, las máquinas de al lado se detuvieron. Todas al mismo tiempo.\nYesid salió a mirar. Los del casco amarillo estaban sentados en el piso, tomando tinto. La máquina grande estaba parada, con la pala en el aire.\nYesid: Nadie trabaja. Les dieron la mañana libre.\nClemencia: Qué casualidad. El día en el cual subo, la obra descansa.\nClemencia: El sensor lleva tres días encendido, día y noche. Y una mañana sin máquinas no cierra ninguna grieta.\nSubió despacio, con el metro en la boca. Hernando se quedó abajo, con las manos en los bolsillos, como prometió.\nClemencia: Anoten. La viga está fabricada con una madera muy dura, la cual es resistente a la humedad. Pesa unos trescientos kilos. La grieta tiene forma de rayo y corre a lo largo de la viga: treinta y cuatro centímetros de largo, cuatro milímetros de ancho.\nTomás anotaba todo en el cuaderno de recetas de Rosa.\nClemencia: Abajo de la grieta la madera está sana. Lo cual significa que el daño viene de afuera, no de la edad.\nHernando se apoyó en la pared de la cocina, la del agujero, para ver mejor.\nClemencia: ¡Don Hernando! ¡Esa pared no!\nHernando saltó como un gato. Del agujero cayó un pedazo de pintura vieja, y detrás apareció un adobe entero, de color café oscuro. En el barro había una huella: el pie desnudo de una persona, muy pequeño.\nClemencia bajó de la escalera y la miró de cerca, sin tocarla.\nClemencia: Es normal. Antes la gente pisaba el barro de los adobes. A veces queda una huella.\nVale le tomó una foto y se la mandó a Gloria, sin escribir nada.\nHernando: Perdóneme, arquitecta. Era para ver la grieta.\nClemencia: Usted vio algo mejor. Pero no se apoya más en ninguna pared de esta casa, ¿estamos?\nA mediodía, Vale le sirvió un ajiaco. Clemencia lo probó con la misma cara con la cual miraba la viga.\nClemencia: Le falta sal.\nSimón: ¡Le falta sal! ¡Le falta sal, parce!\nVale: Ese pájaro hoy no come.\nA la una en punto, apenas Clemencia salió por la puerta verde, las máquinas volvieron a empezar. En la pantalla, la línea del sensor saltó otra vez.\nClemencia volvió a entrar y le tomó una foto a la pantalla.\nClemencia: Esta noche escribo el informe. Mañana a las nueve se lo leo.",
+  "text": "El ingeniero de Altamira no dijo ni una palabra en toda la presentación. Se fue antes del final y dejó el cartel de Hernando en la silla, doblado en cuatro.\nA la mañana siguiente, a las ocho, Clemencia abrió la escalera debajo de la viga. A las ocho y cinco, las máquinas de al lado se detuvieron. Todas al mismo tiempo.\nYesid salió a mirar. Los del casco amarillo estaban sentados en el piso, tomando tinto. La máquina grande estaba parada, con la pala en el aire.\nYesid: Nadie trabaja. Les dieron la mañana libre.\nClemencia: Qué casualidad. El único día en que subo, la obra descansa. Pero el sensor lleva tres días encendido, día y noche, y una mañana sin máquinas no cierra ninguna grieta.\nSubió despacio, con el metro en la boca. Hernando se quedó abajo, con las manos en los bolsillos, como prometió.\nClemencia: Anoten. La viga está fabricada con una madera muy dura, la cual es resistente a la humedad. Pesa unos trescientos kilos. La grieta tiene forma de rayo y corre a lo largo de la viga: treinta y cuatro centímetros de largo, cuatro milímetros de ancho.\nTomás anotaba todo en el cuaderno de recetas de Rosa.\nClemencia: Abajo de la grieta la madera está sana. Lo cual significa que el daño viene de afuera, no de la edad.\nHernando se apoyó en la pared de la cocina, la del agujero, para ver mejor.\nClemencia: ¡Don Hernando! ¡Esa pared no!\nHernando saltó como un gato. Del agujero cayó un pedazo de pintura vieja, y detrás apareció un adobe entero, de color café oscuro. En el barro había una huella: el pie desnudo de una persona, muy pequeño.\nClemencia bajó de la escalera y la miró de cerca, sin tocarla.\nClemencia: Es normal. Antes la gente pisaba el barro de los adobes. A veces queda una huella.\nVale le tomó una foto y se la mandó a Gloria, sin escribir nada.\nHernando: Perdóneme, arquitecta. Era para ver la grieta.\nClemencia: Usted vio algo mejor. Pero no se apoya más en ninguna pared de esta casa, ¿estamos?\nA mediodía, Vale le sirvió un ajiaco. Clemencia lo probó con la misma cara con la cual miraba la viga.\nClemencia: Le falta sal.\nSimón: ¡Le falta sal! ¡Le falta sal, parce!\nVale: Ese pájaro hoy no come.\nA la una en punto, apenas Clemencia salió por la puerta verde, las máquinas volvieron a empezar. En la pantalla, la línea del sensor saltó otra vez.\nClemencia volvió a entrar y le tomó una foto a la pantalla.\nClemencia: Esta noche escribo el informe. Mañana a las nueve se lo leo.",
   "gloss": [
     {
       "es": "viga",
@@ -53,8 +53,8 @@
       "en": "bare foot"
     },
     {
-      "es": "Y una mañana sin máquinas no cierra ninguna grieta.",
-      "en": "And one morning without machines doesn't close any crack."
+      "es": "una mañana sin máquinas no cierra ninguna grieta",
+      "en": "one morning without machines doesn't close any crack"
     }
   ],
   "questions": [
@@ -170,6 +170,7 @@
     "g:questions",
     "g:reflexive-routine",
     "g:relatives-formal",
+    "g:relatives-prepositions",
     "g:se-impersonal",
     "g:ser-identity",
     "g:stem-boot",
@@ -356,6 +357,7 @@
     "l:vez",
     "l:viejo",
     "l:viga",
-    "l:volver"
+    "l:volver",
+    "l:único"
   ]
 }

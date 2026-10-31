@@ -31,7 +31,7 @@
       "en": "This part of Bogotá is known as La Candelaria."
     }
   ],
-  "rule": "Four phrases for describing and classifying, all neutral-to-formal.\n\n*Se divide en…*: the parts it is split into.\n*Se compone de…* or *está formado por…*: what it is made of.\n*Se conoce como…*: what it is known as.\n*Se le llama… a…*: the name comes first, then *a* and the thing named: *Se le llama tinto al café negro.*\n\nThe small words are fixed: *dividir en*, *componerse de*, *formado por*. English \"into\" and \"of\" don't always match.",
+  "rule": "A handful of phrases for describing and classifying, all neutral-to-formal.\n\n*Se divide en…*: the parts it is split into.\n*Se compone de…* or *está formado por…*: what it is made of.\n*Se conoce como…*: what it is known as.\n*Se le llama… a…*: the name comes first, then *a* and the thing named: *Se le llama tinto al café negro.*\n\nThe small words are fixed: *dividir en*, *componerse de*, *formado por*. English \"into\" and \"of\" don't always match.",
   "smallPrint": "Teachers call *se divide* and *se compone* the pasiva refleja, the *se* passive for descriptions.",
   "readAndPick": [
     {
@@ -141,7 +141,9 @@
       "prompt": "Type in Spanish: Black coffee is called tinto in Colombia.",
       "answer": "Se le llama tinto al café negro en Colombia.",
       "accept": [
-        "Al café negro se le llama tinto en Colombia."
+        "Al café negro se le llama tinto en Colombia.",
+        "En Colombia, al café negro se le llama tinto.",
+        "En Colombia se le llama tinto al café negro."
       ],
       "why": "The name comes first, then *al* and the thing it names."
     },

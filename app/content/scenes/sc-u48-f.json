@@ -29,7 +29,7 @@
     {
       "id": "t2",
       "npc": "Profesora Salazar: ¿Qué diferencia hay con un edificio moderno?",
-      "npcEn": "Profesora Salazar: What difference is there from a modern building?",
+      "npcEn": "Profesora Salazar: How is it different from a modern building?",
       "intent": "Compare it: in comparison with a modern building, this one keeps the heat better (use: en comparación con).",
       "accept": [
         "En comparación con un edificio moderno, este conserva mejor el calor.",
@@ -55,7 +55,7 @@
       "accept": [
         "Las puertas son azul oscuro y las ventanas, verde oscuro.",
         "Son azul oscuro, y los marcos de las ventanas son verde oscuro.",
-        "Las puertas son azul oscuro."
+        "Azul oscuro, y las ventanas son verde oscuro."
       ],
       "require": [
         {
@@ -75,7 +75,7 @@
       "intent": "Say it is about six metres long, along the whole east wall (use: a lo largo de).",
       "accept": [
         "Mide unos seis metros a lo largo de todo el muro este.",
-        "Tiene seis metros de largo a lo largo del muro.",
+        "Tiene unos seis metros y va a lo largo del muro este.",
         "Unos seis metros, a lo largo de la pared del fondo."
       ],
       "require": [
@@ -91,7 +91,7 @@
     },
     {
       "id": "t5",
-      "npc": "Profesora Salazar: Muchas gracias, ha sido muy claro.",
+      "npc": "Profesora Salazar: Muchas gracias, fue muy claro.",
       "npcEn": "Profesora Salazar: Thank you very much, that was very clear.",
       "intent": "Thank her and say the students are welcome to come back.",
       "accept": [
@@ -126,8 +126,8 @@
     "g:double-pronouns",
     "g:gender-articles",
     "g:hay-vs-esta",
+    "g:ir-a-plans",
     "g:lo-adjective",
-    "g:perfecto-experience",
     "g:present-ar",
     "g:preterite-ser-ir-hacer",
     "g:questions",
@@ -154,6 +154,7 @@
     "l:estudiante",
     "l:fondo",
     "l:fresco",
+    "l:ir",
     "l:largo",
     "l:mantener",
     "l:marco",
@@ -193,6 +194,7 @@
     "p:frequency-scale",
     "p:gracias-a-por-culpa-de",
     "p:gracias-por",
+    "p:ir-a-venir-de-place",
     "p:me-te-nos-objects",
     "p:medir",
     "p:medir-pesar",

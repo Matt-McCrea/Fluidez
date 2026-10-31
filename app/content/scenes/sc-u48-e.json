@@ -3,33 +3,33 @@
   "unit": "u48",
   "title": "El cartel de la fachada",
   "spare": true,
-  "brief": "You're Tomás with Camila, a young designer, who is making the poster for the launch of the heritage campaign. She's your age, so use tú. Say what the poster consists of and what the building is like.",
+  "brief": "You're Tomás with Daniela, a young designer, who is making the poster for the launch of the heritage campaign. She's your age, so use tú. Say what the poster consists of and what the building is like.",
   "turns": [
     {
       "id": "t1",
-      "npc": "Camila: Hola, Tomás. Ya tengo el borrador del cartel para el lanzamiento. ¿Qué debe decir?",
-      "npcEn": "Camila: Hi, Tomás. I already have the draft of the poster for the launch. What should it say?",
-      "intent": "Say the poster should say the building is almost a hundred years old and is still standing.",
+      "npc": "Daniela: Hola, Tomás. Ya tengo el borrador del cartel para el lanzamiento. ¿Qué debe decir?",
+      "npcEn": "Daniela: Hi, Tomás. I already have the draft of the poster for the launch. What should it say?",
+      "intent": "Suggest a first line: built almost a hundred years ago, the building is still standing (start with a participle: Construido...).",
       "accept": [
-        "Debe decir que el edificio tiene casi cien años y sigue en pie.",
-        "Que el edificio tiene casi cien años y todavía está en pie.",
-        "El edificio, con cien años de historia, sigue en pie."
+        "Construido hace casi cien años, el edificio sigue en pie.",
+        "Debe decir: Construido hace casi cien años, el edificio sigue en pie.",
+        "Algo así: Construido en los años veinte, el edificio sigue en pie."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\bcien\\b",
+          "pattern": "\\bconstruid[oa]\\b",
           "flags": "iu",
-          "label": "mention the age"
+          "label": "start with a participle: Construido"
         }
       ],
-      "focus": "p:synonym-hypernym",
+      "focus": "g:participle-gerund-clauses",
       "next": "t2"
     },
     {
       "id": "t2",
-      "npc": "Camila: Y el texto, ¿cómo lo organizo?",
-      "npcEn": "Camila: And the text, how do I divide it?",
+      "npc": "Daniela: Y el texto, ¿cómo lo organizo?",
+      "npcEn": "Daniela: And the text, how do I organise it?",
       "intent": "Say the text divides into three parts (use: se divide en).",
       "accept": [
         "El texto se divide en tres partes: historia, materiales y futuro.",
@@ -49,8 +49,8 @@
     },
     {
       "id": "t3",
-      "npc": "Camila: ¿Y la campaña? ¿En qué consiste exactamente?",
-      "npcEn": "Camila: And the campaign? What exactly does it consist of?",
+      "npc": "Daniela: ¿Y la campaña? ¿En qué consiste exactamente?",
+      "npcEn": "Daniela: And the campaign? What exactly does it involve?",
       "intent": "Say it consists of a night of music and an exhibition about the building (use: consiste en).",
       "accept": [
         "Consiste en una noche de música y una exposición sobre el edificio.",
@@ -70,8 +70,8 @@
     },
     {
       "id": "t4",
-      "npc": "Camila: Hay gente que dice que la campaña no sirve. Lo que me molesta es que se rinden antes de intentarlo.",
-      "npcEn": "Camila: Some people say the campaign is useless. What bothers me is that they give up before trying.",
+      "npc": "Daniela: Hay gente que dice que la campaña no sirve. Lo que me molesta es que se rinden antes de intentarlo.",
+      "npcEn": "Daniela: Some people say the campaign is useless. What bothers me is that they give up before trying.",
       "intent": "Say that what matters to you is the history of the building (use: lo que).",
       "accept": [
         "Lo que me importa es la historia del edificio.",
@@ -91,11 +91,11 @@
     },
     {
       "id": "t5",
-      "npc": "Camila: Te mando el cartel esta noche. ¿Lo revisas?",
-      "npcEn": "Camila: I'll send you the poster tonight. Will you check it?",
+      "npc": "Daniela: Te mando el cartel esta noche. ¿Lo revisas?",
+      "npcEn": "Daniela: I'll send you the poster tonight. Will you check it?",
       "intent": "Say yes, and thank her.",
       "accept": [
-        "Claro que sí. Gracias, Camila.",
+        "Claro que sí. Gracias, Daniela.",
         "Sí, lo reviso esta noche. Muchas gracias.",
         "Por supuesto, y gracias por todo el trabajo."
       ],
@@ -121,11 +121,9 @@
     "c:no-sirve",
     "c:quiero",
     "c:tengo",
-    "c:tienes",
     "g:adverbs-mente",
     "g:cada-cualquier",
     "g:direct-objects",
-    "g:estar-location-states",
     "g:gender-articles",
     "g:gustar-full",
     "g:hay-vs-esta",
@@ -155,16 +153,18 @@
     "l:claro",
     "l:concierto",
     "l:consistir",
+    "l:construir",
     "l:cómo",
+    "l:daniel",
     "l:deber",
     "l:decir",
     "l:dividir",
     "l:edificio",
-    "l:estar",
     "l:exactamente",
     "l:exposición",
     "l:futuro",
     "l:gente",
+    "l:hacer",
     "l:historia",
     "l:importar",
     "l:intentar",
@@ -192,19 +192,18 @@
     "l:trabajo",
     "p:caracterizarse-por",
     "p:consistir-en",
+    "p:decadas-siglos",
     "p:demonstratives-basic",
     "p:gracias-por",
+    "p:indefinites-basic",
     "p:la-gente-singular",
     "p:lo-que-cosa-que",
-    "p:lugar-tiene",
     "p:me-te-nos-objects",
     "p:numbers-un-una",
     "p:para-inf",
     "p:para-mi",
     "p:prep-questions-basic",
     "p:repartir-entre",
-    "p:se-divide-en",
-    "p:tener-anos",
-    "p:ya-todavia-basic"
+    "p:se-divide-en"
   ]
 }

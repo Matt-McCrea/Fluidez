@@ -176,9 +176,9 @@
       "why": "Almost. *Parado* agrees with the cars, so it takes the plural ending."
     },
     {
-      "wrong": "La máquina estaba detuvo de repente.",
-      "right": "La máquina se detuvo de repente.",
-      "why": "Almost. Stopping at one moment is *se detuvo*, with no *estaba*."
+      "wrong": "Ella se paró junto a la puerta toda la tarde.",
+      "right": "Ella estuvo parada junto a la puerta toda la tarde.",
+      "why": "Almost. For a state that lasted, use *estar parado*; *se paró* is just the moment she stopped or stood up."
     }
   ],
   "personal": "Say something true about a place you know: what stopped there, or what is stopped there right now."

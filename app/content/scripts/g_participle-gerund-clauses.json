@@ -11,8 +11,8 @@
       "en": "Built in 1920, the building is still standing."
     },
     {
-      "es": "Siendo tan tarde, preferimos esperar.",
-      "en": "Since it's so late, we'd rather wait."
+      "es": "Siendo tan tarde, preferimos tomar un taxi.",
+      "en": "Since it's so late, we'd rather take a taxi."
     },
     {
       "es": "Terminado el trabajo, Tomás cerró el café.",
@@ -44,11 +44,11 @@
       "answer": 0
     },
     {
-      "es": "Siendo tan tarde, preferimos esperar.",
+      "es": "Siendo tan tarde, preferimos tomar un taxi.",
       "options": [
-        "Although it's late, we'd rather wait.",
-        "Since it's so late, we'd rather wait.",
-        "When it's late, we always wait."
+        "Although it's late, we'd rather take a taxi.",
+        "Since it's so late, we'd rather take a taxi.",
+        "When it's late, we always take a taxi."
       ],
       "answer": 1
     },
@@ -107,11 +107,11 @@
       "answer": 1
     },
     {
-      "es": "Conociendo a Don Hernando, va a llegar temprano.",
+      "es": "Conociendo a Don Hernando, va a llegar tarde.",
       "options": [
-        "Knowing Don Hernando, he'll arrive early.",
-        "Don Hernando knows him, so he arrived early.",
-        "Don Hernando will meet him early."
+        "Knowing Don Hernando, he'll arrive late.",
+        "Don Hernando knows him, so he arrived late.",
+        "Don Hernando will meet him late."
       ],
       "answer": 0
     }
@@ -124,8 +124,8 @@
       "why": "The participle agrees with *edificio*, which is masculine."
     },
     {
-      "prompt": "Type in Spanish: Since it's so late, we'd rather wait.",
-      "answer": "Siendo tan tarde, preferimos esperar.",
+      "prompt": "Type in Spanish: Since it's so late, we'd rather take a taxi.",
+      "answer": "Siendo tan tarde, preferimos tomar un taxi.",
       "accept": [],
       "why": "*Siendo* gives the reason in two words."
     },

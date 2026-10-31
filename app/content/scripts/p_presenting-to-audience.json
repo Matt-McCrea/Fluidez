@@ -3,7 +3,7 @@
   "hook": {
     "line": "Sooner or later you will stand up in front of a room: a meeting, a class, a neighbours' assembly. A few set phrases tell the audience where you are in your talk and keep you sounding calm.",
     "es": "Como pueden ver en la pantalla, las ventas bajaron en marzo.",
-    "en": "As you can see on the screen, sales fell in March."
+    "en": "As you all can see on the screen, sales fell in March."
   },
   "examples": [
     {
@@ -156,7 +156,10 @@
     {
       "prompt": "Type in Spanish: To finish, I'd like to thank you all.",
       "answer": "Para terminar, quisiera darles las gracias.",
-      "accept": [],
+      "accept": [
+        "Para terminar, quisiera agradecerles.",
+        "Para terminar, les quisiera dar las gracias."
+      ],
       "why": "*Quisiera* is the polite \"I'd like\" and *les* sticks onto *darles*."
     },
     {

@@ -11,7 +11,7 @@
       "en": "The pool is kidney-shaped."
     },
     {
-      "es": "El pastel tiene forma de corazón.",
+      "es": "La torta tiene forma de corazón.",
       "en": "The cake is heart-shaped."
     },
     {
@@ -23,8 +23,8 @@
       "en": "The lake has an irregular shape."
     },
     {
-      "es": "La plaza tiene forma de círculo.",
-      "en": "The square is circle-shaped."
+      "es": "El parque tiene forma de triángulo.",
+      "en": "The park is triangle-shaped."
     },
     {
       "es": "¿Qué forma tiene la mesa del café?",
@@ -35,7 +35,7 @@
   "smallPrint": "Teachers call this a descriptive phrase with *tener*: the shape is treated as something the object owns.",
   "readAndPick": [
     {
-      "es": "El pastel tiene forma de corazón.",
+      "es": "La torta tiene forma de corazón.",
       "options": [
         "The cake is star-shaped.",
         "The cake is round.",
@@ -107,19 +107,19 @@
       "answer": 2
     },
     {
-      "es": "La plaza tiene forma de círculo.",
+      "es": "El parque tiene forma de triángulo.",
       "options": [
-        "The square is rectangular.",
-        "The square is circle-shaped.",
-        "The square is irregular."
+        "The park is rectangular.",
+        "The park is triangle-shaped.",
+        "The park is irregular."
       ],
       "answer": 1
     }
   ],
   "yourTurn": [
     {
-      "prompt": "Pick and type the whole sentence: *El pastel tiene forma ___ corazón.* (*de* or *en*) The cake is heart-shaped.",
-      "answer": "El pastel tiene forma de corazón.",
+      "prompt": "Pick and type the whole sentence: *La torta tiene forma ___ corazón.* (*de* or *en*) The cake is heart-shaped.",
+      "answer": "La torta tiene forma de corazón.",
       "accept": [],
       "why": "Before a noun, the shape needs *de*."
     },
@@ -142,7 +142,7 @@
       "why": "Same frame: *tiene forma de* plus the noun."
     },
     {
-      "prompt": "Say: The window is round.",
+      "prompt": "Say it with *forma*: The window is round.",
       "answer": "La ventana tiene forma redonda.",
       "accept": [],
       "why": "*Redonda* is an adjective, so there is no *de*."
@@ -170,8 +170,8 @@
   ],
   "pitfalls": [
     {
-      "wrong": "La mesa es forma de círculo.",
-      "right": "La mesa tiene forma de círculo.",
+      "wrong": "La mesa es forma de corazón.",
+      "right": "La mesa tiene forma de corazón.",
       "why": "Almost. English says \"is\", but Spanish says the table *has* a shape, so use *tiene*."
     },
     {
@@ -180,8 +180,8 @@
       "why": "*De* is for nouns. An adjective like *redonda* goes straight after *forma*."
     },
     {
-      "wrong": "El pastel tiene forma corazón.",
-      "right": "El pastel tiene forma de corazón.",
+      "wrong": "La torta tiene forma corazón.",
+      "right": "La torta tiene forma de corazón.",
       "why": "A noun after *forma* needs *de*, like \"in the form of\"."
     }
   ],

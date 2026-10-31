@@ -27,7 +27,7 @@
       "en": "I'm sure I didn't leave my phone here. (a man speaking)"
     },
     {
-      "es": "Hernando asegura haber manejado un taxi cuarenta años.",
+      "es": "Hernando asegura haber manejado un taxi durante cuarenta años.",
       "en": "Hernando claims to have driven a taxi for forty years."
     }
   ],
@@ -71,7 +71,7 @@
       "answer": 2
     },
     {
-      "es": "Hernando asegura haber manejado un taxi cuarenta años.",
+      "es": "Hernando asegura haber manejado un taxi durante cuarenta años.",
       "options": [
         "Hernando claims to have driven a taxi for forty years.",
         "Hernando claims he will drive a taxi for forty years.",

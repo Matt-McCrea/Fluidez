@@ -11,7 +11,7 @@
       "en": "It's orange and large."
     },
     {
-      "es": "Tomás pintó las paredes verde claro.",
+      "es": "Tomás pintó las paredes de verde claro.",
       "en": "Tomás painted the walls light green."
     },
     {
@@ -62,7 +62,7 @@
       "answer": 0
     },
     {
-      "es": "Tomás pintó las paredes verde claro.",
+      "es": "Tomás pintó las paredes de verde claro.",
       "options": [
         "Tomás painted the wall dark green.",
         "Tomás painted the walls light green.",
@@ -82,7 +82,7 @@
     {
       "es": "La puerta es de color café.",
       "options": [
-        "The door is the colour of coffee.",
+        "The door is brown.",
         "The door is at the café.",
         "The door is dark red."
       ],

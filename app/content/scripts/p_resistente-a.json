@@ -151,7 +151,7 @@
       "why": "Same words as the statement, with question marks."
     },
     {
-      "prompt": "Make it negative and plural: *El metal es resistente al fuego.* The windows aren't fire-resistant.",
+      "prompt": "Make it negative and plural: *La ventana es resistente al fuego.* The windows aren't fire-resistant.",
       "answer": "Las ventanas no son resistentes al fuego.",
       "accept": [],
       "why": "The adjective turns plural with *ventanas*: *no son resistentes*."

@@ -12,8 +12,8 @@
       "intent": "Say it's a 1920s building with adobe walls that are sixty centimetres thick (use a relative: que, el cual).",
       "accept": [
         "Es un edificio de los años veinte, con paredes de adobe que miden sesenta centímetros.",
-        "Es un edificio antiguo, con un muro de adobe el cual mide sesenta centímetros.",
-        "Es una casa de 1925 con baldosas que son originales."
+        "Es un edificio de 1923. Las paredes, que son de adobe, miden sesenta centímetros.",
+        "Es una casa de los años veinte. Sus muros, los cuales son de adobe, tienen sesenta centímetros de grosor."
       ],
       "require": [
         {
@@ -57,9 +57,9 @@
       "id": "t3",
       "npc": "Mariana: ¿Te arrepientes de algo?",
       "npcEn": "Mariana: Do you regret anything?",
-      "intent": "Say you are sorry about not having called an architect sooner (use: haber + participle).",
+      "intent": "Say you regret not having done something sooner, like calling an architect (use: haber + participle).",
       "accept": [
-        "Me da pena no haber llamado antes a una arquitecta.",
+        "Me da rabia no haber llamado antes a una arquitecta.",
         "Me da vergüenza no haber pedido el informe antes.",
         "Me da pena no haber revisado la viga hace meses."
       ],
@@ -98,7 +98,7 @@
     {
       "id": "t5",
       "npc": "Mariana: Gracias, Tomás. Me voy corriendo.",
-      "npcEn": "Mariana: Thanks, Tomás. I'm off, in a rush.",
+      "npcEn": "Mariana: Thanks, Tomás. I have to rush off.",
       "intent": "Thank her and invite her for a coffee at the café one day.",
       "accept": [
         "Gracias a ti, Mariana. Pasa por el café un día y te invito a un tinto.",
@@ -127,6 +127,7 @@
     "c:gracias-de-nada",
     "c:me-regala",
     "c:que-significa",
+    "c:tienes",
     "c:voy-vas",
     "g:adjective-agreement",
     "g:commands-tu",
@@ -151,16 +152,13 @@
     "g:ser-identity",
     "g:stem-boot",
     "g:stem-e-i",
-    "g:that-clauses",
     "g:verb-infinitive",
     "l:adobe",
     "l:afectar",
     "l:antes",
-    "l:antiguo",
     "l:arquitecto",
     "l:arrepentirse",
     "l:año",
-    "l:baldosa",
     "l:café",
     "l:casa",
     "l:causar",
@@ -182,6 +180,7 @@
     "l:estar",
     "l:futuro",
     "l:grieta",
+    "l:grosor",
     "l:haber",
     "l:hacer",
     "l:informe",
@@ -193,7 +192,6 @@
     "l:mes",
     "l:muro",
     "l:obra",
-    "l:original",
     "l:pared",
     "l:pasar",
     "l:pedir",
@@ -202,9 +200,11 @@
     "l:prueba",
     "l:querer",
     "l:qué",
+    "l:rabia",
     "l:revisar",
     "l:ser",
     "l:significar",
+    "l:tener",
     "l:tinto",
     "l:venir",
     "l:vergüenza",
@@ -217,6 +217,8 @@
     "p:indefinites-basic",
     "p:me-da-miedo",
     "p:me-da-pena-que",
+    "p:me-da-rabia-me-indigna",
+    "p:me-da-rabia-que",
     "p:me-da-verguenza",
     "p:me-te-nos-objects",
     "p:medir",
@@ -228,7 +230,6 @@
     "p:possessives-basic",
     "p:provocar-ocasionar",
     "p:question-word-order",
-    "p:te-invito-a",
-    "p:viejo-antiguo-mayor"
+    "p:te-invito-a"
   ]
 }
