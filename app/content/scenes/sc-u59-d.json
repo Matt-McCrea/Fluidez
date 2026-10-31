@@ -1,18 +1,18 @@
 {
   "id": "sc-u59-d",
   "unit": "u59",
-  "title": "La casa de doña Gloria",
-  "brief": "You're Tomás arriving at Vale's family home in Medellín. Her mother, doña Gloria, is warm but older than you, so use usted with her. Greet her, say how long you're staying, and charm her over a meal.",
+  "title": "La casa de doña Beatriz",
+  "brief": "You're Tomás arriving at Vale's family home in Medellín. Her mother, doña Beatriz, is warm but older than you, so use usted with her. Greet her, say how long you're staying, and charm her over a meal.",
   "spare": true,
   "turns": [
     {
       "id": "t1",
-      "npc": "Doña Gloria: Pase, pase, mijo, que está en su casa. Usted debe de ser Tomás.",
-      "npcEn": "Doña Gloria: Come in, come in, son, make yourself at home. You must be Tomás.",
+      "npc": "Doña Beatriz: Pase, pase, mijo, que está en su casa. Usted debe de ser Tomás.",
+      "npcEn": "Doña Beatriz: Come in, come in, son, make yourself at home. You must be Tomás.",
       "intent": "Say yes, it's a pleasure, and apologise for arriving late (use: mil disculpas).",
       "accept": [
-        "Sí, mucho gusto, doña Gloria. Mil disculpas por llegar tarde.",
-        "Con mucho gusto. Mil disculpas por la demora, el bus se atrasó.",
+        "Sí, mucho gusto, doña Beatriz. Mil disculpas por llegar tarde.",
+        "Con mucho gusto. Mil disculpas por la demora, el vuelo se atrasó.",
         "Tomás, para servirle. Mil disculpas por llegar tan tarde."
       ],
       "require": [
@@ -28,12 +28,12 @@
     },
     {
       "id": "t2",
-      "npc": "Doña Gloria: Vale me llama a cada rato para hablarme de usted. ¿Cuánto tiempo se queda?",
-      "npcEn": "Doña Gloria: Vale calls me all the time to tell me about you. How long are you staying?",
+      "npc": "Doña Beatriz: Vale me llama a cada rato para hablarme de usted. ¿Cuánto tiempo se queda?",
+      "npcEn": "Doña Beatriz: Vale calls me all the time to tell me about you. How long are you staying?",
       "intent": "Say you're staying one week, and Vale also talks about her mother all the time (use: a cada rato).",
       "accept": [
         "Una semana. Vale también habla de usted a cada rato.",
-        "Me quedo una semana. Y Vale la nombra a cada rato.",
+        "Me quedo una semana. Y Vale también me habla de usted a cada rato.",
         "Una semana, si usted me aguanta. Vale habla de usted a cada rato."
       ],
       "require": [
@@ -57,11 +57,11 @@
     },
     {
       "id": "t3",
-      "npc": "Doña Gloria: Le preparé una bandeja grande. Coma, coma, que lo veo flaco.",
-      "npcEn": "Doña Gloria: I made you a big platter. Eat, eat, because you look thin to me.",
+      "npc": "Doña Beatriz: Le preparé una bandeja grande. Coma, coma, que lo veo flaco.",
+      "npcEn": "Doña Beatriz: I made you a big platter. Eat, eat, because you look thin to me.",
       "intent": "Say she shouldn't have gone to the trouble (use: no se hubiera molestado).",
       "accept": [
-        "No se hubiera molestado, doña Gloria. Todo se ve delicioso.",
+        "No se hubiera molestado, doña Beatriz. Todo se ve delicioso.",
         "Ay, no se hubiera molestado tanto. Huele muy rico.",
         "No se hubiera molestado, pero se lo agradezco mucho."
       ],
@@ -78,13 +78,13 @@
     },
     {
       "id": "t4",
-      "npc": "Doña Gloria: ¿Le sirvo más? Allá en Bogotá nadie come así, ¿verdad?",
-      "npcEn": "Doña Gloria: Shall I serve you more? Nobody eats like this in Bogotá, right?",
+      "npc": "Doña Beatriz: ¿Le sirvo más? Allá en Bogotá nadie come así, ¿verdad?",
+      "npcEn": "Doña Beatriz: Shall I serve you more? Nobody eats like this in Bogotá, right?",
       "intent": "Say yes please, you won't say no to a second helping, and it's better than at the café.",
       "accept": [
         "No le voy a decir que no. Está mejor que en el café.",
         "Sí, por favor. Esto está mejor que lo que hacemos en el café.",
-        "Claro que sí, doña Gloria, no le voy a decir que no."
+        "Claro que sí, doña Beatriz, no le voy a decir que no."
       ],
       "require": [
         {
@@ -101,13 +101,13 @@
     },
     {
       "id": "t5",
-      "npc": "Doña Gloria: Qué bueno. Esta noche Vale y sus primos lo llevan a bailar. ¿Se anima?",
-      "npcEn": "Doña Gloria: Wonderful. Tonight Vale and her cousins are taking you out dancing. Are you up for it?",
+      "npc": "Doña Beatriz: Qué bueno. Esta noche Vale y sus primos lo llevan a bailar. ¿Se anima?",
+      "npcEn": "Doña Beatriz: Wonderful. Tonight Vale and her cousins are taking you out dancing. Are you up for it?",
       "intent": "Say yes, you're up for it, though you're not a good dancer.",
       "accept": [
         "Me animo, aunque no soy buen bailarín.",
         "Sí, claro. Eso sí, bailo muy mal.",
-        "Con mucho gusto, doña Gloria, pero no sé bailar bien."
+        "Con mucho gusto, doña Beatriz, pero no sé bailar bien."
       ],
       "require": [
         {
@@ -177,7 +177,6 @@
     "l:bien",
     "l:buen",
     "l:bueno",
-    "l:bus",
     "l:café",
     "l:casa",
     "l:claro",
@@ -204,7 +203,6 @@
     "l:mijo",
     "l:molestar",
     "l:noche",
-    "l:nombrar",
     "l:oler",
     "l:pasar",
     "l:preparar",
@@ -221,6 +219,7 @@
     "l:tiempo",
     "l:ver",
     "l:verdad",
+    "l:vuelo",
     "p:aguantar-conservar-la-calma",
     "p:aqui-ahi-alla",
     "p:bien-bueno",

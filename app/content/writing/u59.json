@@ -355,7 +355,7 @@
         "n": 6
       }
     ],
-    "model": "Yesid, anoche me enteré por tu tía de que toda la familia llevaba una semana preparando mi bienvenida, y yo llegué en jeans y sin traer nada. Me hubieras dicho y habría comprado al menos unas flores para tu mamá. Podrías haberme avisado en el bus, o mandarme un mensaje desde el aeropuerto. Si me hubieras contado, no habría quedado tan mal delante de tantos primos. No te lo digo con rabia, que quede claro, porque la comida estuvo increíble y tu abuela es un encanto. Pero me dio pena. Tu papá me preguntó si en Toronto se saluda así, con las manos vacías, y no supe qué contestar. Por lo menos dime qué más tienen planeado para esta semana, porque no quiero volver a quedar mal. Dime también si debo llevar algún plato al almuerzo del domingo. Te prometo que esta vez me porto bien, y que llegaré a tiempo con algo en las manos.",
+    "model": "Yesid, anoche me enteré por tu tía de que toda la familia llevaba una semana preparando mi bienvenida, y yo llegué en jeans y sin traer nada. Me hubieras dicho y habría comprado al menos unas flores para tu mamá. Podrías haberme avisado en el avión, o mandarme un mensaje antes de aterrizar. Si me hubieras contado, no habría quedado tan mal delante de tantos primos. No te lo digo con rabia, que quede claro, porque la comida estuvo increíble y tu abuela es un encanto. Pero me dio pena. Tu papá me preguntó si en Toronto se saluda así, con las manos vacías, y no supe qué contestar. Por lo menos dime qué más tienen planeado para esta semana, porque no quiero volver a quedar mal. Dime también si debo llevar algún plato al almuerzo del domingo. Te prometo que esta vez me porto bien, y que llegaré a tiempo con algo en las manos.",
     "focus": "p:me-hubieras-dicho",
     "requires": [
       "c:ayer-anoche",
@@ -405,13 +405,14 @@
       "g:verb-infinitive",
       "g:yo-irregular",
       "l:abuela",
-      "l:aeropuerto",
       "l:almuerzo",
       "l:anoche",
+      "l:antes",
+      "l:aterrizar",
       "l:avisar",
+      "l:avión",
       "l:bien",
       "l:bienvenida",
-      "l:bus",
       "l:claro",
       "l:comida",
       "l:comprar",
@@ -495,7 +496,7 @@
   {
     "id": "w-u59-04",
     "unit": "u59",
-    "prompt": "It is late at night and you want to ask Don Hernando (71, someone you address as usted) for a favour about a driver for the trip to Boyacá. Write him a courteous message that first apologises for bothering him at that hour.",
+    "prompt": "It is late at night and you want to ask doña Gloria, an older friend from the café whom you address as usted, to recommend a driver for the trip to Boyacá: she still knows all of Hernando's old taxi friends. Write her a courteous message that first apologises for bothering her at that hour.",
     "minWords": 150,
     "maxWords": 250,
     "constraints": [
@@ -525,7 +526,7 @@
         "n": 6
       }
     ],
-    "model": "Don Hernando, disculpe que lo moleste tan tarde. Sé que usted se acuesta temprano y que no le gusta recibir mensajes de noche, pero me pasó algo y no sabía a quién más preguntarle. Disculpe también que no le haya avisado antes: pensé que lo resolvería solo. Resulta que el conductor que contraté para llevarnos a Tunja el sábado no contesta el teléfono, y en el pueblo me dijeron que usted conoce a todos los conductores de la ruta. ¿Podría recomendarme a alguien de confianza? No necesito nada lujoso, solo un carro seguro y una persona que sepa manejar bien por esas carreteras. Si usted prefiere llamar a un amigo suyo, le agradezco muchísimo que lo haga. Mil disculpas por la hora, y muchas gracias por su paciencia. Mañana temprano le llevo un tinto bien cargado, como a usted le gusta, y le cuento cómo me fue con el conductor. Que descanse.",
+    "model": "Doña Gloria, disculpe que la moleste tan tarde. Sé que usted se acuesta temprano y que no le gusta recibir mensajes de noche, pero me pasó algo y no sabía a quién más preguntarle. Disculpe también que no le haya avisado antes: pensé que lo resolvería solo. Resulta que el conductor que contraté para llevarnos a Tunja el sábado no contesta el teléfono, y Vale me dijo que usted todavía conoce a todos los taxistas de la época de don Hernando. ¿Podría recomendarme a alguien de confianza? No necesito nada lujoso, solo un carro seguro y una persona que sepa manejar bien por esas carreteras. Si usted prefiere llamar a un amigo suyo, le agradezco muchísimo que lo haga. Mil disculpas por la hora, y muchas gracias por su paciencia. Mañana temprano le llevo un tinto bien cargado, como a usted le gusta, y le cuento cómo me fue con el conductor. Que descanse.",
     "focus": "p:disculpa-que",
     "requires": [
       "c:bien-y-tu",
@@ -608,21 +609,21 @@
       "l:poder",
       "l:preferir",
       "l:preguntar",
-      "l:pueblo",
       "l:quién",
       "l:recibir",
       "l:recomendar",
       "l:resolver",
       "l:resultar",
-      "l:ruta",
       "l:saber",
       "l:seguro",
       "l:ser",
       "l:sábado",
       "l:tarde",
+      "l:taxista",
       "l:teléfono",
       "l:temprano",
       "l:tinto",
+      "l:época",
       "p:cargar-descargar",
       "p:days-el-lunes",
       "p:disculpa-que",
@@ -647,7 +648,8 @@
       "p:siento-llegar-tarde",
       "p:sobre-todo-solo",
       "p:te-importaria",
-      "p:te-lo-agradezco"
+      "p:te-lo-agradezco",
+      "p:ya-todavia-basic"
     ]
   },
   {
@@ -680,7 +682,7 @@
         "n": 6
       }
     ],
-    "model": "Mariana, ¿supiste lo de Altamira? Ayer le hicieron una oferta nueva al dueño del edificio de la esquina, y dicen que es casi el doble de lo anterior. Los vecinos están divididos. Yo coincido con Hernando en lo de no vender, pero entiendo a los que están cansados de arreglar techos y tuberías. Lo del café es otra historia, porque no es solo un negocio, es lo que dejó mi abuela. Anoche, en la reunión, Vale dijo algo que me quedó dando vueltas: que lo de la plata se arregla, pero lo del barrio no. Y la verdad es que tiene razón. ¿Qué piensas tú de lo del abogado que nos recomendó la cooperativa? No sé si vale la pena pagarle, o si es mejor intentarlo nosotros mismos. Si tienes tiempo esta semana, pasa por el café y lo hablamos con calma. Y si puedes escribir algo sobre todo esto, mucho mejor, porque necesitamos que más gente se entere de lo que está pasando aquí.",
+    "model": "Mariana, ¿supiste lo de Altamira? Ayer le hicieron una oferta nueva al dueño del edificio de la esquina, y dicen que es casi el doble de lo anterior. Los vecinos están divididos. Yo coincido con Gloria en lo de no vender, pero entiendo a los que están cansados de arreglar techos y tuberías. Lo del café es otra historia, porque no es solo un negocio, es lo que dejó mi abuela. Anoche, en la reunión, Vale dijo algo que me quedó dando vueltas: que lo de la plata se arregla, pero lo del barrio no. Y la verdad es que tiene razón. ¿Qué piensas tú de lo del abogado que nos recomendó la cooperativa? No sé si vale la pena pagarle, o si es mejor intentarlo nosotros mismos. Si tienes tiempo esta semana, pasa por el café y lo hablamos con calma. Y si puedes escribir algo sobre todo esto, mucho mejor, porque necesitamos que más gente se entere de lo que está pasando aquí.",
     "focus": "p:lo-de-noun",
     "requires": [
       "c:ayer-anoche",
@@ -1006,7 +1008,7 @@
         "type": "question"
       }
     ],
-    "model": "Hola, Santi. ¿Cuántas veces te tengo que decir que cierres la puerta de atrás? Ya van dos veces que Simón se escapa, y hoy lo encontró Hernando en la panadería de enfrente, repitiendo todo lo que oye en el café. Por última vez, la puerta se cierra con llave, no se deja entornada. Ya sé que es un pajarito simpático y que te da pena tenerlo encerrado, pero él no sabe volver solo a casa. Que te quede claro: si se pierde, tú vas a explicarle a Vale por qué su postre favorito de la mañana ya no tiene a quién cantarle. No me pongo bravo por gusto. Lo hago porque este trabajo es de todos, y porque me preocupa que un día se escape de verdad. Apenas llegues, lo primero es revisar la puerta. Después, lo que quieras. Y si te da hambre, hay arepas en la cocina, pero primero la puerta. Gracias por entenderlo, de verdad.",
+    "model": "Hola, Santi. ¿Cuántas veces te tengo que decir que cierres la puerta de atrás? Ya van dos veces que Simón se escapa, y hoy lo encontró Gloria en la panadería de enfrente, repitiendo todo lo que oye en el café. Por última vez, la puerta se cierra con llave, no se deja entornada. Ya sé que es un pajarito simpático y que te da pena tenerlo encerrado, pero él no sabe volver solo a casa. Que te quede claro: si se pierde, tú vas a explicarle a Vale por qué ya nadie saluda a los clientes por la mañana. No me pongo bravo por gusto. Lo hago porque este trabajo es de todos, y porque me preocupa que un día se escape de verdad. Apenas llegues, lo primero es revisar la puerta. Después, lo que quieras. Y si te da hambre, hay arepas en la cocina, pero primero la puerta. Gracias por entenderlo, de verdad.",
     "focus": "p:cuantas-veces-tengo-que",
     "requires": [
       "c:claro-listo",
@@ -1020,9 +1022,7 @@
       "c:porque",
       "c:tengo",
       "c:tengo-que",
-      "c:tienes",
       "c:voy-vas",
-      "c:ya-no",
       "g:cause-result",
       "g:diminutives",
       "g:direct-objects",
@@ -1061,10 +1061,10 @@
       "l:atrás",
       "l:bravo",
       "l:café",
-      "l:cantar",
       "l:casa",
       "l:cerrar",
       "l:claro",
+      "l:cliente",
       "l:cocina",
       "l:cuánto",
       "l:dar",
@@ -1077,7 +1077,6 @@
       "l:entender",
       "l:escape",
       "l:explicar",
-      "l:favorito",
       "l:gusto",
       "l:hacer",
       "l:hambre",
@@ -1091,16 +1090,15 @@
       "l:pena",
       "l:perderse",
       "l:ponerse",
-      "l:postre",
       "l:preocupar",
       "l:puerta",
       "l:quedar",
       "l:querer",
-      "l:quién",
       "l:qué",
       "l:repetir",
       "l:revisar",
       "l:saber",
+      "l:saludar",
       "l:ser",
       "l:simpático",
       "l:tener",
@@ -1116,8 +1114,8 @@
       "p:me-da-pena-que",
       "p:me-preocupa-que",
       "p:me-te-nos-objects",
+      "p:personal-a",
       "p:por-la-manana",
-      "p:possessives-basic",
       "p:que-subj-deseo",
       "p:que-tal-si",
       "p:quedar-participio",
@@ -1129,7 +1127,7 @@
   {
     "id": "w-u59-08",
     "unit": "u59",
-    "prompt": "Doña Elvira, Yesid's grandmother, whom you address as usted, has invited you to a family lunch that clashes with the council meeting about the café. Write to decline, politely and warmly, and propose another time.",
+    "prompt": "Doña Eulalia, Yesid's grandmother, whom you address as usted, has invited you to a family lunch that clashes with the council meeting about the café. Write to decline, politely and warmly, and propose another time.",
     "minWords": 150,
     "maxWords": 250,
     "constraints": [
@@ -1159,7 +1157,7 @@
         "n": 6
       }
     ],
-    "model": "Doña Elvira, le agradezco de corazón la invitación al almuerzo del domingo. Sintiéndolo mucho, no me es posible acompañarla ese día, porque la reunión con el consejo del barrio se fijó para la misma hora y mi presencia es indispensable. Me temo que no voy a poder cambiarla, ya que de ella depende en buena parte el futuro del café. Sé que usted preparó el sancocho pensando en nosotros, y me da mucha pena perdérmelo. Mil disculpas por avisarle con tan poco tiempo. Si usted me lo permite, me gustaría ir a verla el martes por la tarde, cuando ya pase la reunión, y llevarle algo de la pastelería de Vale. Así podríamos conversar con calma y usted me contaría esas historias del Carnaval de su juventud que Yesid cuenta tan bien. Le mando un abrazo muy fuerte y le pido que salude de mi parte a toda la familia. Espero que me perdone, y que sepa cuánto la quiero a usted y a toda su familia.",
+    "model": "Doña Eulalia, le agradezco de corazón la invitación al almuerzo del domingo. Sintiéndolo mucho, no me es posible acompañarla ese día, porque la reunión con el consejo del barrio se fijó para la misma hora y mi presencia es indispensable. Me temo que no voy a poder cambiarla, ya que de ella depende en buena parte el futuro del café. Sé que usted preparó el sancocho pensando en nosotros, y me da mucha pena perdérmelo. Mil disculpas por avisarle con tan poco tiempo. Si usted me lo permite, me gustaría ir a verla el martes por la tarde, cuando ya pase la reunión, y llevarle algo de la pastelería de Vale. Así podríamos conversar con calma y usted me contaría esas historias del Carnaval de su juventud que Yesid cuenta tan bien. Le mando un abrazo muy fuerte y le pido que salude de mi parte a toda la familia. Espero que me perdone, y que sepa cuánto la quiero a usted y a toda su familia.",
     "focus": "p:sintiendolo-mucho",
     "requires": [
       "c:bien-y-tu",
@@ -1316,7 +1314,7 @@
         "n": 6
       }
     ],
-    "model": "Vale, ya sé lo que vas a decirme, y te agradezco que te preocupes. Pero digas lo que digas, mañana salgo hacia Boyacá. Ya compré el tiquete del bus y le avisé a la familia de Yesid. Hagas lo que hagas, no vas a convencerme de quedarme, así que mejor ahórrate el esfuerzo. No voy a manejar solo de noche, te lo prometo: salimos a las seis de la mañana con Hernando, que conoce esa ruta con los ojos cerrados. Y no, no me voy a olvidar del abrigo. Necesito ir porque quiero oír cómo habla la gente allá, y no me parece justo que solo conozca la ciudad. Si algo sale mal, te llamo enseguida. Mientras tanto, cuida a Simón, que seguro va a extrañarnos. Cuando vuelva, te traigo un queso de esos que tanto te gustan. Y deja de mirarme así, que no es para tanto, y mejor ayúdame a empacar las cosas.",
+    "model": "Vale, ya sé lo que vas a decirme, y te agradezco que te preocupes. Pero digas lo que digas, mañana salgo hacia Boyacá. Ya compré el tiquete del bus y le avisé a la familia de Yesid. Hagas lo que hagas, no vas a convencerme de quedarme, así que mejor ahórrate el esfuerzo. No voy a manejar solo de noche, te lo prometo: salimos a las seis de la mañana con Gloria, que conoce esa ruta con los ojos cerrados. Y no, no me voy a olvidar del abrigo. Necesito ir porque quiero oír cómo habla la gente allá, y no me parece justo que solo conozca la ciudad. Si algo sale mal, te llamo enseguida. Mientras tanto, cuida a Simón, que seguro va a extrañarnos. Cuando vuelva, te traigo un queso de esos que tanto te gustan. Y deja de mirarme así, que no es para tanto, y mejor ayúdame a empacar las cosas.",
     "focus": "p:digas-lo-que-digas",
     "requires": [
       "c:compre-trabaje",
@@ -1619,7 +1617,7 @@
         "n": 6
       }
     ],
-    "model": "¡Parce, tienes que venir a Medellín! Hoy fui con la familia de Vale a la plaza de mercado y todo está regalado. Los mangos estaban a precio de huevo, y compré una bolsa enorme por casi nada. Las flores también están regaladísimas: me llevé un ramo gigante para la mamá de Vale y apenas me costó unos pesos. Lo malo es que el queso fresco de la vereda cuesta un platal, aunque la señora dice que vale cada peso, y la verdad es que tiene razón. Después comimos una bandeja paisa que no cabía en la mesa. Llegamos a la hora colombiana, o sea, una hora tarde, y cada vez que yo abría la boca alguien se reía de mi español bogotano. Su tío me enseñó a decir «pues» al final de cada frase, y ahora no puedo parar. Cuando vuelva te cuento mejor, porque mañana tenemos otro paseo. Mándame noticias del café y dile a Hernando que le traigo algo.",
+    "model": "¡Parce, tienes que venir a Medellín! Hoy fui con la familia de Vale a la plaza de mercado y todo está regalado. Los mangos estaban a precio de huevo, y compré una bolsa enorme por casi nada. Las flores también están regaladísimas: me llevé un ramo gigante para la mamá de Vale y apenas me costó unos pesos. Lo malo es que el queso fresco de la vereda cuesta un platal, aunque la señora dice que vale cada peso, y la verdad es que tiene razón. Después comimos una bandeja paisa que no cabía en la mesa. Llegamos a la hora colombiana, o sea, una hora tarde, y cada vez que yo abría la boca alguien se reía de mi español bogotano. Su tío me enseñó a decir «pues» al final de cada frase, y ahora no puedo parar. Cuando vuelva te cuento mejor, porque mañana tenemos otro paseo. Mándame noticias del café y dile a Gloria que le traigo algo.",
     "focus": "p:estar-regalado",
     "requires": [
       "c:al-final",

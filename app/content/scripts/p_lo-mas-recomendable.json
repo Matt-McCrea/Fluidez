@@ -31,7 +31,7 @@
       "en": "Will you take a piece of advice from me? (to a friend)"
     }
   ],
-  "rule": "Four gentle ways to advise:\n\n*Lo más recomendable es que* + the \"wish\" verb: *consultes*, *esperes*.\n*Lo único que puedo aconsejarte es que* + the same verb.\n*Siempre puedes* + an infinitive: *decirle*, *pedir*.\n*¿Me permites darte un consejo?* to ask first.\n\nEnglish says \"the best thing would be\", and Spanish does too, but the verb after *que* ends in *-es* for *tú* (*-ar* verbs) or *-as* (*-er* and *-ir* verbs): *tengas*, *consultes*. For *we* it is *consultemos*, for *ustedes* *consulten*.\n\nAsking first, with *¿Me permites…?*, makes the advice easier to hear.",
+  "rule": "Four gentle ways to advise:\n\n*Lo más recomendable es que* + the \"wish\" verb: *consultes*, *esperes*.\n*Lo único que puedo aconsejarte es que* + the same verb.\n*Siempre puedes* + an infinitive: *decirle*, *pedir*.\n*¿Me permites darte un consejo?* to ask first.\n\nEnglish says \"the best thing would be for you to…\". Spanish says *es que* and changes the verb after *que*: it ends in *-es* for *tú* (*-ar* verbs) or *-as* (*-er* and *-ir* verbs): *tengas*, *consultes*. For *we* it is *consultemos*, for *ustedes* *consulten*.\n\nAsking first, with *¿Me permites…?*, makes the advice easier to hear.",
   "smallPrint": "Teachers call the verb after *que* the present subjunctive, used here after an opinion.",
   "readAndPick": [
     {
@@ -143,7 +143,7 @@
       "why": "Asking first with *¿Me permites…?* cushions the advice."
     },
     {
-      "prompt": "Make it about we: The best thing would be for us to see a lawyer.",
+      "prompt": "Make it about us: The best thing would be for us to see a lawyer.",
       "answer": "Lo más recomendable es que consultemos a un abogado.",
       "accept": [],
       "why": "For *we* the wish ending is *-emos*: *consultemos*."

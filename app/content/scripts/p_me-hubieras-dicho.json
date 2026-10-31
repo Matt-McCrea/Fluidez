@@ -109,12 +109,12 @@
   ],
   "yourTurn": [
     {
-      "prompt": "Choose *hubieras* or *hubiste*. You should have told me and I'd have helped! (to a friend) Me ___ dicho y te ayudaba. Type the whole sentence with the exclamation marks.",
+      "prompt": "Choose *hubieras* or *habías*. You should have told me and I'd have helped! (to a friend) Me ___ dicho y te ayudaba. Type the whole sentence with the exclamation marks.",
       "answer": "¡Me hubieras dicho y te ayudaba!",
       "accept": [
         "Me hubieras dicho y te ayudaba."
       ],
-      "why": "The \"you should have\" reproach uses *hubieras*, not *hubiste*."
+      "why": "*Habías dicho* would mean you really did tell me. The reproach is about what you didn't do, so *hubieras*."
     },
     {
       "prompt": "You could have let me know. (to a friend)",
@@ -152,7 +152,10 @@
     {
       "prompt": "If you had told me, I'd have come. (to a friend)",
       "answer": "Si me hubieras dicho, habría venido.",
-      "accept": [],
+      "accept": [
+        "Si me hubieras dicho, hubiera venido.",
+        "Si me hubieras avisado, habría venido."
+      ],
       "why": "*Si* + *hubieras dicho* sets the missed chance, and *habría venido* is the result."
     },
     {
@@ -171,9 +174,9 @@
       "why": "Almost. A reproach about what did not happen needs *hubieras* + *dicho*."
     },
     {
-      "wrong": "¡Me has dicho y te ayudaba!",
+      "wrong": "¡Me habías dicho y te ayudaba!",
       "right": "¡Me hubieras dicho y te ayudaba!",
-      "why": "*Has dicho* says that you did tell me. The reproach is that you did not."
+      "why": "English \"had told\" pulls you to *habías dicho*, but that says you really did tell me. The reproach needs *hubieras*."
     },
     {
       "wrong": "Podrías haber avisado me.",

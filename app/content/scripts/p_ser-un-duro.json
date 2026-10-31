@@ -1,9 +1,9 @@
 {
   "node": "p:ser-un-duro",
   "hook": {
-    "line": "Don Hernando says Vale can outbake anyone in La Candelaria. In Colombia a person who is excellent at something is a *duro*, a hard one.",
-    "es": "Don Hernando es un duro para manejar.",
-    "en": "Don Hernando is a real pro at driving."
+    "line": "Vale's mother says nobody in Medellín makes desserts like her daughter. In Colombia a person who is excellent at something is a *duro*, a hard one.",
+    "es": "Vale es una dura para los postres.",
+    "en": "Vale is a real pro at desserts."
   },
   "examples": [
     {
@@ -15,8 +15,8 @@
       "en": "My brother is brilliant at soccer."
     },
     {
-      "es": "Don Hernando es un duro para manejar.",
-      "en": "Don Hernando is a real pro at driving."
+      "es": "Don Hernando era un duro para manejar.",
+      "en": "Don Hernando was a real pro at driving."
     },
     {
       "es": "Mariana es una dura para escribir.",
@@ -96,11 +96,11 @@
       "answer": 1
     },
     {
-      "es": "Don Hernando es un duro para manejar.",
+      "es": "Don Hernando era un duro para manejar.",
       "options": [
-        "Don Hernando is learning to drive.",
-        "Don Hernando is a real pro at driving.",
-        "Don Hernando is tough to drive with."
+        "Don Hernando was learning to drive.",
+        "Don Hernando was a real pro at driving.",
+        "Don Hernando was tough to drive with."
       ],
       "answer": 1
     }
@@ -127,10 +127,10 @@
       "why": "A man is *un duro*."
     },
     {
-      "prompt": "Type in Spanish: Don Hernando is a real pro at driving.",
-      "answer": "Don Hernando es un duro para manejar.",
+      "prompt": "Type in Spanish: Don Hernando was a real pro at driving.",
+      "answer": "Don Hernando era un duro para manejar.",
       "accept": [],
-      "why": "After *para* you can use a verb as well as a noun."
+      "why": "*Era* puts it in the past, and after *para* you can use a verb as well as a noun."
     },
     {
       "prompt": "Make it negative: *Tomás es un duro para las cuentas.* Say: Tomás is no whiz at sums.",

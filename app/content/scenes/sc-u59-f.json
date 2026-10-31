@@ -7,8 +7,8 @@
   "turns": [
     {
       "id": "t1",
-      "npc": "Dueño: Quiubo, parce, ¿buscas algo en especial? Tengo poesía y discos de vallenato.",
-      "npcEn": "Owner: Hey, mate, are you looking for something in particular? I have poetry and vallenato records.",
+      "npc": "Dueño: ¿Qué más, mi llave? ¿Buscas algo en especial? Tengo poesía y discos de vallenato.",
+      "npcEn": "Owner: What's up, buddy? Are you looking for something in particular? I have poetry and vallenato records.",
       "intent": "Say you'd like a book of poems by a Colombian poet, and ask what he recommends (use: lo más recomendable).",
       "accept": [
         "Quiero un libro de un poeta colombiano. ¿Qué es lo más recomendable?",
@@ -72,7 +72,7 @@
       "id": "t4",
       "npc": "Dueño: Si me hubieras dicho antes, te regalaba el bambuco también. Pero no importa, llévate esto.",
       "npcEn": "Owner: If you had told me before, I'd have given you the bambuco as well. But never mind, take this.",
-      "intent": "Joke that you should have told him earlier, next time you will (use: me hubieras dicho or lo hubiera dicho).",
+      "intent": "Admit you should have told him earlier, and say that next time you will.",
       "accept": [
         "Tenía que haberte dicho antes. La próxima vez te aviso.",
         "Es verdad, hubiera sido mejor decírtelo antes. La próxima vez vengo más temprano.",
@@ -100,7 +100,7 @@
       "intent": "Say thanks and goodbye, and that you'll come back.",
       "accept": [
         "Gracias por todo. Vuelvo pronto, hasta luego.",
-        "Mil gracias, parce. Volveré antes de irme, hasta luego.",
+        "Mil gracias, hermano. Volveré antes de irme, hasta luego.",
         "Muchas gracias. Nos vemos pronto, que te vaya bien."
       ],
       "require": [
@@ -128,9 +128,9 @@
     "c:me-parece-bien",
     "c:oye-mira",
     "c:que-bien",
+    "c:que-mas",
     "c:que-pena",
     "c:quiero",
-    "c:quiubo",
     "c:tengo",
     "g:adjective-agreement",
     "g:commands-tu",
@@ -192,17 +192,18 @@
     "l:genial",
     "l:gustar",
     "l:haber",
+    "l:hermano",
     "l:importar",
     "l:ir",
     "l:irse",
     "l:libro",
     "l:listo",
     "l:literatura",
+    "l:llave",
     "l:llevar",
     "l:llevarse",
     "l:mejor",
     "l:parar",
-    "l:parce",
     "l:parecer",
     "l:pena",
     "l:perfecto",
@@ -236,6 +237,7 @@
     "p:me-te-nos-objects",
     "p:para-inf",
     "p:para-inf-purpose",
+    "p:possessives-basic",
     "p:presentation-frame",
     "p:que-subj-deseo",
     "p:que-tal-si",

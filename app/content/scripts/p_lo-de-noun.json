@@ -1,7 +1,7 @@
 {
   "node": "p:lo-de-noun",
   "hook": {
-    "line": "In Colombia, nobody says \"did you hear about the thing with Pedro's café?\" in full. They say *lo de Pedro* and everybody knows. It is also how you ask about someone's life without sounding nosy. Tomás hears it from Don Hernando the second he walks in.",
+    "line": "In Colombia, nobody says \"did you hear about the thing with Pedro's café?\" in full. They say *lo de Pedro* and everybody knows. It is also how you ask about someone's life without sounding nosy. Tomás hears it from Mariana on the phone the second he lands in Barranquilla.",
     "es": "¿Supiste lo de Pedro?",
     "en": "Did you hear about Pedro? (to a friend)"
   },
@@ -98,11 +98,11 @@
       "answer": 1
     },
     {
-      "es": "Lo de Hernando me preocupa.",
+      "es": "Lo de Altamira me preocupa.",
       "options": [
-        "Hernando worries me.",
-        "I worry Hernando.",
-        "The Hernando business worries me."
+        "Altamira worries me.",
+        "I worry Altamira.",
+        "The Altamira business worries me."
       ],
       "answer": 2
     }

@@ -35,7 +35,7 @@
     {
       "id": "t2",
       "npc": "Doña Etelvina: Claro que sí. Son treinta mil pesos, pero para sumercé está regalado.",
-      "npcEn": "Doña Etelvina: Of course. It's thirty thousand pesos, but for you it's a gift.",
+      "npcEn": "Doña Etelvina: Of course. It's thirty thousand pesos, but for you it's practically free.",
       "intent": "Say thanks, that is very cheap, you'll take it (use: está regalado).",
       "accept": [
         "Gracias, señora. Está regalado, la tomo.",
@@ -78,10 +78,10 @@
       "id": "t4",
       "npc": "Doña Etelvina: Ah, de Canadá. Aquí todos decimos sumercé, no usted.",
       "npcEn": "Doña Etelvina: Ah, from Canada. Here we all say sumercé, not usted.",
-      "intent": "Ask her what sumercé means exactly, and whether it's like usted (use: ¿me sigue?, ¿es como...?).",
+      "intent": "Ask her what sumercé means exactly, and whether it's like usted. You can open with *disculpe que le pregunte*.",
       "accept": [
-        "¿Qué quiere decir sumercé? ¿Es como usted?",
-        "Disculpe que pregunte: ¿sumercé significa lo mismo que usted?",
+        "Disculpe que le pregunte, ¿qué quiere decir sumercé? ¿Es como usted?",
+        "Disculpe que le pregunte: ¿sumercé significa lo mismo que usted?",
         "¿Sumercé es una forma de decir usted?"
       ],
       "require": [
@@ -146,6 +146,7 @@
     "g:future-promises",
     "g:gender-articles",
     "g:hace-que-desde",
+    "g:indirect-objects",
     "g:parecer-quedar",
     "g:present-ar",
     "g:present-er-ir",

@@ -31,7 +31,7 @@
       "en": "Yes, but let me know when you arrive. (to a friend)"
     }
   ],
-  "rule": "To say yes with a condition, put the condition right after:\n\n*Sí, pero que* + what must (or must not) happen.\n*Listo, siempre que* + the condition.\n*Listo, mientras no* + what you don't want.\n\nEnglish says \"as long as\" or \"but make sure\". Spanish uses *que* and then a verb in its \"wish\" form: *se entere*, *estés*, *lleves*, *avises*. *-ar* verbs switch to *-e* endings, *-er* and *-ir* verbs to *-a*.\n\nA plain *es* or *estás* after *siempre que* would sound like a fact, not a condition.",
+  "rule": "To say yes with a condition, put the condition right after:\n\n*Sí, pero que* + what must (or must not) happen.\n*Listo, siempre que* + the condition.\n*Listo, mientras no* + what you don't want.\n\nEnglish says \"as long as\" or \"but make sure\". Spanish uses *que* and then a verb in its \"wish\" form: *se entere*, *estés*, *lleves*, *avises*. *-ar* verbs switch to *-e* endings, *-er* and *-ir* verbs to *-a* endings.\n\nA plain *es* or *estás* after *siempre que* would sound like a fact, not a condition.",
   "smallPrint": "Teachers call this the present subjunctive after a condition.",
   "readAndPick": [
     {
@@ -111,13 +111,17 @@
     {
       "prompt": "Choose *se entere* or *se entera*. Yes, but don't let your dad find out. Sí, pero que no ___ tu papá. Type the whole sentence.",
       "answer": "Sí, pero que no se entere tu papá.",
-      "accept": [],
+      "accept": [
+        "Sí, pero que tu papá no se entere."
+      ],
       "why": "After *sí, pero que* the verb takes its \"wish\" ending: *se entere*."
     },
     {
       "prompt": "Choose *estés* or *estás*. OK, as long as you're back before midnight (to a friend). Listo, siempre que ___ de vuelta antes de medianoche. Type the whole sentence.",
       "answer": "Listo, siempre que estés de vuelta antes de medianoche.",
-      "accept": [],
+      "accept": [
+        "Listo, siempre y cuando estés de vuelta antes de medianoche."
+      ],
       "why": "A condition after *siempre que* takes the wish ending: *estés*, not *estás*."
     },
     {
@@ -141,7 +145,7 @@
       "why": "*Mientras no* also sets a condition, and the verb after it takes the wish ending: *lleves*."
     },
     {
-      "prompt": "Make it about we: Fine, as long as we pay.",
+      "prompt": "Make it about us: Fine, as long as we pay.",
       "answer": "Está bien, siempre que paguemos nosotros.",
       "accept": [
         "Está bien, siempre y cuando paguemos nosotros.",

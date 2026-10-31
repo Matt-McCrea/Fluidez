@@ -54,7 +54,7 @@
       "intent": "Explain that you say usted to older people and tú to friends.",
       "accept": [
         "Con los mayores uso usted, y con mis amigos uso tú.",
-        "A don Hernando le digo usted, pero a ti te digo tú.",
+        "A doña Gloria le digo usted, pero a ti te digo tú.",
         "Les digo usted a los mayores y tú a los amigos."
       ],
       "require": [
@@ -76,13 +76,13 @@
     },
     {
       "id": "t4",
-      "npc": "Mariana: Hernando dice que eres todero. Pero también dijo que tienes manos de mantequilla, ¿o fue Vale?",
-      "npcEn": "Mariana: Hernando says you're a jack of all trades. But he also said you have butterfingers, or was it Vale?",
+      "npc": "Mariana: Gloria dice que eres todero. Pero también dijo que tienes manos de mantequilla, ¿o fue Vale?",
+      "npcEn": "Mariana: Gloria says you're a jack of all trades. But she also said you have butterfingers, or was it Vale?",
       "intent": "Laugh and say you are no jack of all trades: you drop everything, so it was probably both of them.",
       "accept": [
         "Ja, ja. Yo no soy todero, se me cae todo. Seguro dijeron los dos.",
         "No soy todero, tengo manos de mantequilla. Seguramente fueron los dos.",
-        "Ja, ja. Todero, no. Se me cae todo, así que fue Vale y fue Hernando."
+        "Ja, ja. Todero, no. Se me cae todo, así que fueron Vale y Gloria."
       ],
       "require": [
         {
@@ -99,7 +99,7 @@
       "id": "t5",
       "npc": "Mariana: Perfecto, ya tengo mi nota. ¿Te invito un tinto para celebrar?",
       "npcEn": "Mariana: Perfect, I have my piece. Shall I buy you a tinto to celebrate?",
-      "intent": "Accept, and thank her for the invitation (use: te animas style answer or no te voy a decir que no).",
+      "intent": "Accept warmly and thank her (try: no te voy a decir que no).",
       "accept": [
         "No te voy a decir que no. Gracias por invitarme.",
         "Claro que sí, gracias. Pero la próxima vez invito yo.",

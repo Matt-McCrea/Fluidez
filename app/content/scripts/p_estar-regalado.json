@@ -8,7 +8,7 @@
   "examples": [
     {
       "es": "Ese apartamento está regalado para la zona.",
-      "en": "That flat is a steal for the area."
+      "en": "That apartment is a steal for the area."
     },
     {
       "es": "Los mangos están a precio de huevo.",
@@ -37,9 +37,9 @@
     {
       "es": "Ese apartamento está regalado para la zona.",
       "options": [
-        "That flat is far too expensive for the area.",
-        "That flat is a steal for the area.",
-        "That flat was a gift from a neighbour."
+        "That apartment is far too expensive for the area.",
+        "That apartment is a steal for the area.",
+        "That apartment was a gift from a neighbour."
       ],
       "answer": 1
     },
@@ -112,7 +112,7 @@
       "why": "*Regalados* agrees with *los mangos*: plural, because the mangoes are plural."
     },
     {
-      "prompt": "Type in Spanish: That flat is a steal for the area.",
+      "prompt": "Type in Spanish: That apartment is a steal for the area.",
       "answer": "Ese apartamento está regalado para la zona.",
       "accept": [],
       "why": "*Estar regalado* says the price is a giveaway."

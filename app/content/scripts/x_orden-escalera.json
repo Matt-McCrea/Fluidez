@@ -6,24 +6,106 @@
     "en": "Would you be so kind as to turn the volume down? (formal)"
   },
   "examples": [
-    { "es": "Tú bajas el volumen.", "en": "You turn the volume down. (blunt order)" },
-    { "es": "Baja el volumen.", "en": "Turn the volume down. (to a friend)" },
-    { "es": "¿Me haces el favor de bajar el volumen?", "en": "Would you do me a favour and turn the volume down? (to a friend)" },
-    { "es": "¿Me hace el favor y baja el volumen?", "en": "Would you turn the volume down, please? (formal)" },
-    { "es": "¿Sería tan amable de bajar el volumen?", "en": "Would you be so kind as to turn the volume down? (formal)" },
-    { "es": "Tú te quedas aquí.", "en": "You stay here. (blunt order)" }
+    {
+      "es": "Tú bajas el volumen.",
+      "en": "You turn the volume down. (blunt order)"
+    },
+    {
+      "es": "Baja el volumen.",
+      "en": "Turn the volume down. (to a friend)"
+    },
+    {
+      "es": "¿Me haces el favor de bajar el volumen?",
+      "en": "Would you do me a favour and turn the volume down? (to a friend)"
+    },
+    {
+      "es": "¿Me hace el favor y baja el volumen?",
+      "en": "Would you turn the volume down, please? (formal)"
+    },
+    {
+      "es": "¿Sería tan amable de bajar el volumen?",
+      "en": "Would you be so kind as to turn the volume down? (formal)"
+    },
+    {
+      "es": "Tú te quedas aquí.",
+      "en": "You stay here. (blunt order)"
+    }
   ],
   "rule": "One request, five rungs, from bluntest to most ceremonious:\n\n1. *Tú bajas el volumen.* A plain statement used as an order. Parents, bosses, anger.\n2. *Baja el volumen.* The ordinary command, to a friend.\n3. *¿Me haces el favor de…?* A friendly favour.\n4. *¿Me hace el favor y…?* Polite, to someone you call *usted*.\n5. *¿Sería tan amable de…?* Ceremonious. Among friends it sounds like teasing.\n\nPick the rung by who is listening, not by how annoyed you are. Too low and you sound rude; too high and you sound cold or sarcastic.",
   "smallPrint": "Teachers call the top and bottom rungs the formal request and the present tense used as an imperative.",
   "readAndPick": [
-    { "es": "Tú te quedas aquí.", "options": ["You stay here. (a blunt order)", "Would you be so kind as to stay here? (a ceremonious request)", "You stayed here. (a statement about the past)"], "answer": 0 },
-    { "es": "¿Sería tan amable de ayudarme con esto?", "options": ["Help me with this. (a blunt order)", "Would you be so kind as to help me with this? (a ceremonious request)", "Are you kind enough to be helped with this?"], "answer": 1 },
-    { "es": "Harás lo que te diga.", "options": ["I'll do what you tell me.", "Would you do what I say, please?", "You'll do as I say. (a blunt order)"], "answer": 2 },
-    { "es": "¿Me haces el favor de esperar?", "options": ["Would you do me a favour and wait? (to a friend)", "Would you do me a favour and wait? (formal)", "I'll wait for you, as a favour."], "answer": 0 },
-    { "es": "¿Me hace el favor y baja el volumen?", "options": ["Would you turn the volume down, please? (formal)", "Turn the volume down, will you? (to a friend)", "I'll turn the volume down as a favour."], "answer": 0 },
-    { "es": "Baja el volumen.", "options": ["Would you be so kind as to turn the volume down?", "Turn the volume down. (to a friend)", "You turn the volume down. (blunt order)"], "answer": 1 },
-    { "es": "¿Serías tan amable de pasarme la sal?", "options": ["Pass me the salt. (blunt order)", "Would you do me a favour and pass the salt? (to a friend)", "Would you be so kind as to pass me the salt? (to a friend, a little ironic)"], "answer": 2 },
-    { "es": "Tú bajas el volumen.", "options": ["You turn the volume down. (blunt order)", "You turned the volume down.", "Would you turn the volume down, please? (formal)"], "answer": 0 }
+    {
+      "es": "Tú te quedas aquí.",
+      "options": [
+        "You stay here. (a blunt order)",
+        "Would you be so kind as to stay here? (a ceremonious request)",
+        "You stayed here. (a statement about the past)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Sería tan amable de ayudarme con esto?",
+      "options": [
+        "Help me with this. (a blunt order)",
+        "Would you be so kind as to help me with this? (a ceremonious request)",
+        "Are you kind enough to be helped with this?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Harás lo que te diga.",
+      "options": [
+        "I'll do what you tell me.",
+        "Would you do what I say, please?",
+        "You'll do as I say. (a blunt order)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Me haces el favor de esperar?",
+      "options": [
+        "Would you do me a favour and wait? (to a friend)",
+        "Would you do me a favour and wait? (formal)",
+        "I'll wait for you, as a favour."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Me hace el favor y baja el volumen?",
+      "options": [
+        "Would you turn the volume down, please? (formal)",
+        "Turn the volume down, will you? (to a friend)",
+        "I'll turn the volume down as a favour."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Baja el volumen.",
+      "options": [
+        "Would you be so kind as to turn the volume down?",
+        "Turn the volume down. (to a friend)",
+        "You turn the volume down. (blunt order)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Serías tan amable de pasarme la sal?",
+      "options": [
+        "Pass me the salt. (blunt order)",
+        "Would you do me a favour and pass the salt? (to a friend)",
+        "Would you be so kind as to pass me the salt? (to a friend, a little ironic)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tú bajas el volumen.",
+      "options": [
+        "You turn the volume down. (blunt order)",
+        "You turned the volume down.",
+        "Would you turn the volume down, please? (formal)"
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
     {
@@ -35,7 +117,9 @@
     {
       "prompt": "Your close friend is playing music too loud and you are calm. Choose *Baja el volumen* or *¿Sería tan amable de bajar el volumen?*, then type the whole sentence.",
       "answer": "Baja el volumen.",
-      "accept": ["Baja el volumen, por favor."],
+      "accept": [
+        "Baja el volumen, por favor."
+      ],
       "why": "With a friend the plain command is enough."
     },
     {
@@ -47,13 +131,17 @@
     {
       "prompt": "Type it in Spanish: Would you do me a favour and turn the volume down? (to a friend)",
       "answer": "¿Me haces el favor de bajar el volumen?",
-      "accept": ["¿Me haces el favor y bajas el volumen?"],
+      "accept": [
+        "¿Me haces el favor y bajas el volumen?"
+      ],
       "why": "A friendly favour uses *haces*, because the friend is *tú*."
     },
     {
       "prompt": "Make it ceremonious, to someone you call *usted*: *Baja el volumen* becomes: Would you be so kind as to turn the volume down?",
       "answer": "¿Sería tan amable de bajar el volumen?",
-      "accept": ["¿Me hace el favor y baja el volumen?"],
+      "accept": [
+        "¿Me hace el favor y baja el volumen?"
+      ],
       "why": "The top rung is *¿Sería tan amable de…?* plus an infinitive."
     },
     {
@@ -65,7 +153,9 @@
     {
       "prompt": "Type it in Spanish: Would you wait a moment, please? (formal, use *y*)",
       "answer": "¿Me hace el favor y espera un momento?",
-      "accept": ["¿Me hace el favor de esperar un momento?"],
+      "accept": [
+        "¿Me hace el favor de esperar un momento?"
+      ],
       "why": "The *usted* rung uses *hace* and the *usted* form, *espera*."
     }
   ],
@@ -76,7 +166,7 @@
       "why": "Almost. The bluntest rung is for kids and anger, not for someone you call *usted*."
     },
     {
-      "wrong": "¿Sería tan amable de pasarme la sal?",
+      "wrong": "¿Serías tan amable de pasarme la sal?",
       "right": "Pásame la sal, por favor.",
       "why": "Said to a friend at dinner, the top rung sounds like teasing."
     },

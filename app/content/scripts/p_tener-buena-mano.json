@@ -96,10 +96,10 @@
       "answer": 0
     },
     {
-      "es": "Don Hernando es la persona adecuada para la ruta.",
+      "es": "Yesid es la persona indicada para el viaje.",
       "options": [
-        "Don Hernando is the wrong person for the route.",
-        "Don Hernando is the right person for the route."
+        "Yesid is the wrong person for the trip.",
+        "Yesid is the right person for the trip."
       ],
       "answer": 1
     }
@@ -147,10 +147,10 @@
     },
     {
       "prompt": "Type in Spanish: You (a friend) are the right person for this job.",
-      "answer": "Eres la persona ideal para este trabajo.",
+      "answer": "Eres la persona indicada para este trabajo.",
       "accept": [
-        "Eres la persona indicada para este trabajo.",
-        "Tú eres la persona ideal para este trabajo."
+        "Eres la persona ideal para este trabajo.",
+        "Tú eres la persona indicada para este trabajo."
       ],
       "why": "*Ser la persona indicada* or *ideal* says someone is right for a job."
     }

@@ -6,24 +6,106 @@
     "en": "I'm afraid I won't be able to."
   },
   "examples": [
-    { "es": "Me temo que no voy a poder.", "en": "I'm afraid I won't be able to." },
-    { "es": "Me temo que no va a ser posible.", "en": "I'm afraid that won't be possible." },
-    { "es": "Sintiéndolo mucho, no puedo ir al concierto: tengo turno en el café.", "en": "Much as I regret it, I can't go to the concert: I'm on shift at the café." },
-    { "es": "Sintiéndolo mucho, me resulta imposible acompañarte ese día.", "en": "Much as I regret it, it's impossible for me to go with you that day." },
-    { "es": "Me temo que Vale no va a poder venir hoy.", "en": "I'm afraid Vale won't be able to come today." },
-    { "es": "Me resulta imposible aceptar la oferta de Altamira.", "en": "It's impossible for me to accept Altamira's offer." }
+    {
+      "es": "Me temo que no voy a poder.",
+      "en": "I'm afraid I won't be able to."
+    },
+    {
+      "es": "Me temo que no va a ser posible.",
+      "en": "I'm afraid that won't be possible."
+    },
+    {
+      "es": "Sintiéndolo mucho, no puedo ir al concierto: tengo turno en el café.",
+      "en": "Much as I regret it, I can't go to the concert: I'm on shift at the café."
+    },
+    {
+      "es": "Sintiéndolo mucho, me resulta imposible acompañarte ese día.",
+      "en": "Much as I regret it, it's impossible for me to go with you that day."
+    },
+    {
+      "es": "Me temo que Vale no va a poder venir hoy.",
+      "en": "I'm afraid Vale won't be able to come today."
+    },
+    {
+      "es": "Me resulta imposible aceptar la oferta de Altamira.",
+      "en": "It's impossible for me to accept Altamira's offer."
+    }
   ],
   "rule": "Three polite ways to refuse:\n\n*Me temo que* + a normal verb: \"I'm afraid that…\". *Me temo que no voy a poder.*\n*Sintiéndolo mucho,* + what you cannot do. It means \"much as I regret it\".\n*Me resulta imposible* + infinitive: \"it's impossible for me to…\".\n\n*Me temo* is not real fear. It is a cushion before bad news. *Sintiéndolo mucho* is a little formal, like a letter.\n\nGive the reason after the refusal (*tengo turno en el café*). A bare no still sounds cold, even with the polite frame.",
   "smallPrint": "Teachers call *sintiéndolo mucho* a gerund used as a concessive phrase.",
   "readAndPick": [
-    { "es": "Sintiéndolo mucho, no puedo ir al concierto: tengo turno en el café.", "options": ["Much as I regret it, I can't go to the concert: I'm on shift at the café.", "I'm so glad I can go to the concert: I'm on shift at the café.", "They regret that I can't go to the concert: I'm on shift at the café."], "answer": 0 },
-    { "es": "Me temo que no voy a poder.", "options": ["I'm afraid you won't be able to.", "I'm afraid I will be able to.", "I'm afraid I won't be able to."], "answer": 2 },
-    { "es": "Me temo que no va a ser posible.", "options": ["I'm sure that will be possible.", "I'm afraid that won't be possible.", "I'm afraid I'm not going."], "answer": 1 },
-    { "es": "Me temo que Vale no va a poder venir hoy.", "options": ["I'm afraid Vale won't be able to come today.", "Vale is afraid she won't come today.", "I'm afraid I can't come today, Vale."], "answer": 0 },
-    { "es": "Me resulta imposible aceptar la oferta de Altamira.", "options": ["Altamira finds it impossible to accept my offer.", "I accepted the impossible offer from Altamira.", "It's impossible for me to accept Altamira's offer."], "answer": 2 },
-    { "es": "Sintiéndolo mucho, me resulta imposible acompañarte ese día.", "options": ["Much as I regret it, it's impossible for me to go with him that day.", "Much as I regret it, it's impossible for me to go with you that day.", "Much as I regret it, it was impossible for me to go with you that day."], "answer": 1 },
-    { "es": "Me temo que ya no queda tinto.", "options": ["I'm afraid you don't want coffee.", "I'd love for some coffee to be left.", "I'm afraid there's no coffee left."], "answer": 2 },
-    { "es": "Me temo que no vamos a poder vender el café.", "options": ["I'm afraid we won't be able to sell the café.", "I'm afraid I won't be able to sell the café.", "I'm afraid they won't be able to sell the café."], "answer": 0 }
+    {
+      "es": "Sintiéndolo mucho, no puedo ir al concierto: tengo turno en el café.",
+      "options": [
+        "Much as I regret it, I can't go to the concert: I'm on shift at the café.",
+        "I'm so glad I can go to the concert: I'm on shift at the café.",
+        "They regret that I can't go to the concert: I'm on shift at the café."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me temo que no voy a poder.",
+      "options": [
+        "I'm afraid you won't be able to.",
+        "I'm afraid I will be able to.",
+        "I'm afraid I won't be able to."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Me temo que no va a ser posible.",
+      "options": [
+        "I'm sure that will be possible.",
+        "I'm afraid that won't be possible.",
+        "I'm afraid I'm not going."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me temo que Vale no va a poder venir hoy.",
+      "options": [
+        "I'm afraid Vale won't be able to come today.",
+        "Vale is afraid she won't come today.",
+        "I'm afraid I can't come today, Vale."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me resulta imposible aceptar la oferta de Altamira.",
+      "options": [
+        "Altamira finds it impossible to accept my offer.",
+        "I accepted the impossible offer from Altamira.",
+        "It's impossible for me to accept Altamira's offer."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Sintiéndolo mucho, me resulta imposible acompañarte ese día.",
+      "options": [
+        "Much as I regret it, it's impossible for me to go with him that day.",
+        "Much as I regret it, it's impossible for me to go with you that day.",
+        "Much as I regret it, it was impossible for me to go with you that day."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me temo que ya no queda tinto.",
+      "options": [
+        "I'm afraid you don't want coffee.",
+        "I'd love for some coffee to be left.",
+        "I'm afraid there's no coffee left."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Me temo que no vamos a poder abrir mañana.",
+      "options": [
+        "I'm afraid we won't be able to open tomorrow.",
+        "I'm afraid I won't be able to open tomorrow.",
+        "I'm afraid they won't be able to open tomorrow."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
     {

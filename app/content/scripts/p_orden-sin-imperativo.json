@@ -1,9 +1,9 @@
 {
   "node": "p:orden-sin-imperativo",
   "hook": {
-    "line": "Don Hernando has had enough of Tomás wandering off in the middle of a crisis. He does not say please. He just says what is going to happen.",
-    "es": "Tú te quedas aquí.",
-    "en": "You stay here."
+    "line": "Vale's mother does not want Tomás anywhere near her stove. She does not say please. She just says what is going to happen.",
+    "es": "Tú te sientas ahí.",
+    "en": "You sit over there."
   },
   "examples": [
     {

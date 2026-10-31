@@ -6,24 +6,106 @@
     "en": "How many times do I have to tell you not to give Simón bread?"
   },
   "examples": [
-    { "es": "¿Cuántas veces te tengo que decir que cierres la puerta?", "en": "How many times do I have to tell you to shut the door?" },
-    { "es": "¿Cuántas veces te tengo que decir que no le des pan a Simón?", "en": "How many times do I have to tell you not to give Simón bread?" },
-    { "es": "¿Cuántas veces les tengo que pedir que bajen la voz?", "en": "How many times do I have to ask you all to keep your voice down?" },
-    { "es": "Que te sientes, te dije.", "en": "Sit down, I said." },
-    { "es": "Que te calles, te dije.", "en": "Be quiet, I said." },
-    { "es": "Por última vez, apaga el televisor.", "en": "For the last time, turn off the TV." }
+    {
+      "es": "¿Cuántas veces te tengo que decir que cierres la puerta?",
+      "en": "How many times do I have to tell you to shut the door?"
+    },
+    {
+      "es": "¿Cuántas veces te tengo que decir que no le des pan a Simón?",
+      "en": "How many times do I have to tell you not to give Simón bread?"
+    },
+    {
+      "es": "¿Cuántas veces les tengo que pedir que bajen la voz?",
+      "en": "How many times do I have to ask you all to keep your voice down?"
+    },
+    {
+      "es": "Que te sientes, te dije.",
+      "en": "Sit down, I said."
+    },
+    {
+      "es": "Que te calles, te dije.",
+      "en": "Be quiet, I said."
+    },
+    {
+      "es": "Por última vez, apaga el televisor.",
+      "en": "For the last time, turn off the TV."
+    }
   ],
   "rule": "This is a complaint, not a question. The speaker expects no number.\n\n*¿Cuántas veces te tengo que decir que* + the order as a *que* form: *cierres*, *bajes*, *no le des*.\n\nThe order is a wish, so the verb after *que* changes its vowel (*cierras* becomes *cierres*). Use *les* for a group, *le* for someone you call *usted*.\n\nShorter and sharper: *Que te sientes, te dije.* The order comes first, with *que*, then *te dije* (\"I told you\").\n\nThe last resort: *Por última vez* and a plain command: *apaga el televisor*.",
   "smallPrint": "Teachers call the verb after *decir que* here the subjunctive of an indirect command.",
   "readAndPick": [
-    { "es": "¿Cuántas veces te tengo que decir que cierres la puerta?", "options": ["How many times do I have to tell you to shut the door?", "How many times have you told me you shut the door?", "How many times will you shut the door?"], "answer": 0 },
-    { "es": "¿Cuántas veces les tengo que pedir que bajen la voz?", "options": ["How many times do I have to ask him to keep his voice down?", "How many times do I have to ask you all to keep your voice down?", "How many times do I have to ask you to keep your voice down? (to one friend)"], "answer": 1 },
-    { "es": "Que te sientes, te dije.", "options": ["I sat down, you told me.", "He told me to sit down.", "Sit down, I said."], "answer": 2 },
-    { "es": "Por última vez, apaga el televisor.", "options": ["For the last time, turn off the TV.", "For the last time, I turned off the TV.", "The TV was turned off for the last time."], "answer": 0 },
-    { "es": "¿Cuántas veces le tengo que decir que no toque eso, señor?", "options": ["How many times do I have to tell you not to touch that, sir? (to a friend)", "How many times do I have to tell you not to touch that, sir? (formal)", "How many times do I have to tell him he touches that, sir?"], "answer": 1 },
-    { "es": "¿Cuántas veces te tengo que decir que no le des pan a Simón?", "options": ["How many times do I have to tell you that you gave Simón bread?", "How many times do I have to tell you to give Simón bread?", "How many times do I have to tell you not to give Simón bread?"], "answer": 2 },
-    { "es": "Que te calles, te dije.", "options": ["Be quiet, I said.", "You asked me to be quiet.", "I'm being quiet, you said."], "answer": 0 },
-    { "es": "Que no lo toques, te dije.", "options": ["You said you didn't touch it.", "Don't touch it, I said.", "Touch it, I said."], "answer": 1 }
+    {
+      "es": "¿Cuántas veces te tengo que decir que cierres la puerta?",
+      "options": [
+        "How many times do I have to tell you to shut the door?",
+        "How many times have you told me you shut the door?",
+        "How many times will you shut the door?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Cuántas veces les tengo que pedir que bajen la voz?",
+      "options": [
+        "How many times do I have to ask him to keep his voice down?",
+        "How many times do I have to ask you all to keep your voice down?",
+        "How many times do I have to ask you to keep your voice down? (to one friend)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Que te sientes, te dije.",
+      "options": [
+        "I sat down, you told me.",
+        "He told me to sit down.",
+        "Sit down, I said."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Por última vez, apaga el televisor.",
+      "options": [
+        "For the last time, turn off the TV.",
+        "For the last time, I turned off the TV.",
+        "The TV was turned off for the last time."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Cuántas veces le tengo que decir que no toque eso, señor?",
+      "options": [
+        "How many times do I have to tell you not to touch that, sir? (to a friend)",
+        "How many times do I have to tell you not to touch that, sir? (formal)",
+        "How many times do I have to tell him he touches that, sir?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Cuántas veces te tengo que decir que no le des pan a Simón?",
+      "options": [
+        "How many times do I have to tell you that you gave Simón bread?",
+        "How many times do I have to tell you to give Simón bread?",
+        "How many times do I have to tell you not to give Simón bread?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Que te calles, te dije.",
+      "options": [
+        "Be quiet, I said.",
+        "You asked me to be quiet.",
+        "I'm being quiet, you said."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Que no lo toques, te dije.",
+      "options": [
+        "You said you didn't touch it.",
+        "Don't touch it, I said.",
+        "Touch it, I said."
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
     {
@@ -47,7 +129,9 @@
     {
       "prompt": "Type it in Spanish: For the last time, turn off the TV. (to a friend)",
       "answer": "Por última vez, apaga el televisor.",
-      "accept": [],
+      "accept": [
+        "Por última vez, apaga la tele."
+      ],
       "why": "After *por última vez* comes a plain command."
     },
     {
