@@ -1,0 +1,446 @@
+{
+  "id": "ch191",
+  "unit": "u55",
+  "title": "Bajado en alta mar",
+  "text": "Yesid llegó el jueves en el bus de la noche, con una maleta, una nevera de icopor llena de pescado y una carpeta que olía a mar.\nYesid: El pescado es de mi mamá. La carpeta es de mi papá: los estatutos de la cooperativa de pescadores de Taganga.\nAntes de saludar, preguntó por la piscina. Jhon Fredy le contó que había una municipal cerca, con agua tibia y trampolín.\nYesid: ¿Y tú te tiras del trampolín?\nJhon Fredy: Yo apenas me tiro de la cama. Nunca aprendí a tirarme de cabeza.\nYesid: Mañana a las seis. Allá se entra por orden de llegada.\nA las diez llegó la doctora Uribe con un libro gordo y un termo, porque seguía sin confiar en el tinto ajeno.\nUribe: Una cooperativa necesita tres cosas: estatutos, asociados y el aporte de cada asociado. Todo lo otro es papeleo.\nHernando: ¿Y cuánto papeleo es todo lo otro?\nUribe: Primero, el decreto de las cooperativas, con ochenta artículos. Después, una resolución de la Superintendencia. Y al final, el reglamento interno, que lo escriben ustedes.\nYesid abrió la carpeta de su papá. Uribe levantó una ceja.\nUribe: Artículo nueve: «El que no cumpla con su aporte será bajado de la lancha en alta mar».\nHernando: Eso no es un estatuto. Eso es una amenaza.\nSimón: ¡En alta mar! ¡En alta mar, parce!\nYesid pasó las páginas hasta la última, donde estaba la firma de su papá, con la letra grande de quien aprendió a escribir tarde.\nYesid: Mi papá dejó la pesca dos años para cargar carbón en el puerto de Santa Marta. Volvía negro de carbón y de rabia, porque el jefe se quedaba con todo. Por eso creó la cooperativa: para no tener jefe nunca más.\nGloria le sirvió más tinto sin preguntar.\nPara agilizar el trámite, Uribe había traído otro modelo: los estatutos de una asociación de trabajadores del petróleo de Barrancabermeja.\nMariana: Tengo una propuesta para el artículo uno. «En modo alguno la cooperativa aceptará aportes de empresas de petróleo, de carbón ni de hoteles».\nHernando: Sobre todo de hoteles.\nUribe: Muy bonito, pero antes hay un problema. Tenemos conocimiento de que ustedes no son una asociación de amigos. Son una cooperativa, y la ley pide un quórum: la mitad más uno de los asociados. Sin quórum, ninguna decisión de la junta vale nada.\nHernando: En mi junta de vecinos, Simón contaba para el quórum.\nUribe: Los loros no pagan aporte, don Hernando.\nHernando: Este paga en chistes.\nGloria propuso el primer artículo del reglamento: «El loro no vota». Hernando propuso el segundo: «Los chistes no se votan». Los dos se aprobaron sin discusión.\nUribe cerró el libro.\nUribe: El decreto exige un mínimo de veinte asociados. ¿Cuántos son ustedes?\nTomás contó: él, Yesid, el tío, doña Eulalia, la mamá de Yesid, Hernando, Gloria y Jhon Fredy.\nTomás: Ocho. Nueve, si cuenta Vale desde Medellín.\nUribe: Les faltan once. Sin ellos, no hay resolución.\nHasta Simón se quedó callado.\nHernando fue a la puerta verde y la abrió de par en par. Afuera, escuchando, estaban la señora de la tienda, el zapatero, Wilson con el casco y dos estudiantes del segundo piso.\nHernando: Once, dice la doctora. En esta cuadra hay más de once personas que le deben un tinto a Rosa.\nEsa noche, Tomás escribió una lista con veinte nombres. Al lado de cada uno, Hernando escribió qué tinto tomaba.\nA las seis menos diez, Jhon Fredy estaba en la puerta de la piscina municipal, temblando de frío.\nYesid: Primero se aprende a caer. Después, a votar.",
+  "gloss": [
+    {
+      "es": "nevera de icopor",
+      "en": "polystyrene cool box"
+    },
+    {
+      "es": "tibia",
+      "en": "lukewarm"
+    },
+    {
+      "es": "trampolín",
+      "en": "diving board"
+    },
+    {
+      "es": "¿Y tú te tiras del trampolín?",
+      "en": "And do you dive off the board?"
+    },
+    {
+      "es": "Yo apenas me tiro de la cama",
+      "en": "I can barely throw myself out of bed"
+    },
+    {
+      "es": "tirarme de cabeza",
+      "en": "to dive in head first"
+    },
+    {
+      "es": "Allá se entra por orden de llegada",
+      "en": "There you get in by order of arrival"
+    },
+    {
+      "es": "termo",
+      "en": "flask"
+    },
+    {
+      "es": "tinto ajeno",
+      "en": "other people's coffee"
+    },
+    {
+      "es": "papeleo",
+      "en": "paperwork"
+    },
+    {
+      "es": "Superintendencia",
+      "en": "the government supervisory agency"
+    },
+    {
+      "es": "reglamento interno",
+      "en": "internal rules"
+    },
+    {
+      "es": "ceja",
+      "en": "eyebrow"
+    },
+    {
+      "es": "El que no cumpla con su aporte será bajado de la lancha en alta mar",
+      "en": "Whoever fails to pay their contribution will be put off the boat on the high seas"
+    },
+    {
+      "es": "lancha",
+      "en": "motorboat"
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "loros",
+      "en": "parrots"
+    },
+    {
+      "es": "Volvía negro de carbón y de rabia",
+      "en": "He came home black with coal and with anger"
+    },
+    {
+      "es": "Para agilizar el trámite",
+      "en": "To speed up the process"
+    },
+    {
+      "es": "En modo alguno",
+      "en": "In no way"
+    },
+    {
+      "es": "Tenemos conocimiento de que",
+      "en": "We are aware that"
+    },
+    {
+      "es": "la mitad más uno",
+      "en": "half plus one"
+    },
+    {
+      "es": "zapatero",
+      "en": "shoemaker"
+    },
+    {
+      "es": "de par en par",
+      "en": "wide open"
+    },
+    {
+      "es": "temblando",
+      "en": "shivering"
+    },
+    {
+      "es": "Primero se aprende a caer",
+      "en": "First you learn to fall"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does Yesid bring in his folder?",
+      "options": [
+        "Fish recipes",
+        "His father's statutes from the Taganga fishermen's cooperative",
+        "A letter from Altamira",
+        "Hernando's notebooks"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why did Yesid's father found a cooperative?",
+      "options": [
+        "To get rich",
+        "So he would never have a boss again, after working for one who kept everything",
+        "To buy a bigger boat",
+        "Because the law required it"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What problem does Uribe find at the end?",
+      "options": [
+        "The statutes are illegal",
+        "The law requires at least twenty members, and they only have eight or nine",
+        "The house is not protected",
+        "Hernando cannot be a member"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Qué artículo del reglamento propone Gloria?",
+      "options": [
+        "Los chistes no se votan",
+        "El loro no vota",
+        "Nadie toma tinto ajeno",
+        "El café abre a las seis"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "How does Hernando solve the problem of the missing members?",
+      "options": [
+        "He calls Altamira",
+        "He opens the green door to the neighbours, who were listening outside",
+        "He counts Simón twice",
+        "He asks Vale to find people in Medellín"
+      ],
+      "answer": 1
+    }
+  ],
+  "hook": "Tomás has a list of twenty names and a law that wants everything in writing. Tomorrow Jhon Fredy jumps into a pool for the first time, Tomás writes his most formal invitation yet, and someone on the list turns out to have talked already.",
+  "rereadQuestions": [
+    {
+      "q": "Why does Dr Uribe bring her own flask?",
+      "options": [
+        "She doesn't drink coffee",
+        "She still doesn't trust other people's coffee",
+        "The café was closed",
+        "She is cold"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Where does the second model statute come from?",
+      "options": [
+        "A fishermen's cooperative in Taganga",
+        "An association of oil workers in Barrancabermeja",
+        "A hotel in Cartagena",
+        "The mayor's office"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What did Hernando write next to each name on the list?",
+      "options": [
+        "Their phone number",
+        "Which coffee they drink",
+        "How much they can pay",
+        "Their address"
+      ],
+      "answer": 1
+    }
+  ],
+  "requires": [
+    "c:al-final",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:hay",
+    "c:no-se",
+    "c:porque",
+    "c:tengo",
+    "c:tienes",
+    "c:vale-spain",
+    "g:adjective-agreement",
+    "g:cada-cualquier",
+    "g:cause-result",
+    "g:comparatives-advanced",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indefinites",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:le-doubling",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:passive-se",
+    "g:passive-ser",
+    "g:pluperfect",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:relatives-prepositions",
+    "g:reported-past-basic",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-free-relatives",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "p:agilizar-tramites",
+    "p:aqui-ahi-alla",
+    "p:cargar-descargar",
+    "p:cerca-de",
+    "p:confiar-en-que",
+    "p:conocimiento-formal",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:don-dona-nombre",
+    "p:el-que-la-que",
+    "p:en-modo-alguno",
+    "p:focus-adverbs",
+    "p:frequency-scale",
+    "p:ir-a-venir-de-place",
+    "p:le-falta-sal",
+    "p:llevar-traer",
+    "p:los-de-la-camiseta",
+    "p:mas-de-number",
+    "p:me-contaron-que",
+    "p:oler-a-saber-a",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:por-la-manana",
+    "p:por-orden-de",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:quedar-faltar-sobrar",
+    "p:question-word-order",
+    "p:seguir-gerundio",
+    "p:senor-don-article",
+    "p:sobre-todo",
+    "p:sobre-todo-solo",
+    "p:telling-time",
+    "p:time-sequence-basic"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:aceptar",
+    "l:afuera",
+    "l:agilizar",
+    "l:agua",
+    "l:ajeno",
+    "l:allá",
+    "l:alto",
+    "l:amenazar",
+    "l:amigo",
+    "l:antes",
+    "l:apenas",
+    "l:aporte",
+    "l:aprender",
+    "l:aprobar",
+    "l:artículo",
+    "l:asociación",
+    "l:asociarse",
+    "l:año",
+    "l:bajar",
+    "l:bonito",
+    "l:bus",
+    "l:cabeza",
+    "l:caer",
+    "l:callado",
+    "l:cama",
+    "l:carbón",
+    "l:cargar",
+    "l:carpeta",
+    "l:casco",
+    "l:ceja",
+    "l:cerca",
+    "l:cerrar",
+    "l:chiste",
+    "l:confiar",
+    "l:conocimiento",
+    "l:contar",
+    "l:cooperativa",
+    "l:cosa",
+    "l:crear",
+    "l:cuadra",
+    "l:cumplir",
+    "l:cuánto",
+    "l:deber",
+    "l:decir",
+    "l:decisión",
+    "l:decreto",
+    "l:dejar",
+    "l:después",
+    "l:discusión",
+    "l:doctor",
+    "l:empresa",
+    "l:entrar",
+    "l:escribir",
+    "l:escuchar",
+    "l:estar",
+    "l:estatuto",
+    "l:estudiante",
+    "l:exigir",
+    "l:faltar",
+    "l:final",
+    "l:firma",
+    "l:frío",
+    "l:gordo",
+    "l:grande",
+    "l:hotel",
+    "l:interno",
+    "l:ir",
+    "l:jefe",
+    "l:jueves",
+    "l:junta",
+    "l:lado",
+    "l:lancha",
+    "l:letra",
+    "l:levantar",
+    "l:ley",
+    "l:libro",
+    "l:listo",
+    "l:llegada",
+    "l:llegar",
+    "l:llenar",
+    "l:loro",
+    "l:maleta",
+    "l:mamá",
+    "l:mar",
+    "l:mañana",
+    "l:mitad",
+    "l:modelo",
+    "l:modo",
+    "l:municipal",
+    "l:mínimo",
+    "l:necesitar",
+    "l:negro",
+    "l:nevera",
+    "l:noche",
+    "l:nombre",
+    "l:oler",
+    "l:orden",
+    "l:pagar",
+    "l:papá",
+    "l:par",
+    "l:parce",
+    "l:pasar",
+    "l:pedir",
+    "l:persona",
+    "l:pesca",
+    "l:pescado",
+    "l:pescador",
+    "l:petróleo",
+    "l:piscina",
+    "l:piso",
+    "l:preguntar",
+    "l:problema",
+    "l:proponer",
+    "l:propuesta",
+    "l:puerta",
+    "l:puerto",
+    "l:página",
+    "l:quedarse",
+    "l:qué",
+    "l:quórum",
+    "l:rabia",
+    "l:reglamento",
+    "l:resolución",
+    "l:saludar",
+    "l:seguir",
+    "l:ser",
+    "l:servir",
+    "l:señora",
+    "l:tarde",
+    "l:temblar",
+    "l:tener",
+    "l:termo",
+    "l:tibio",
+    "l:tienda",
+    "l:tinto",
+    "l:tirar",
+    "l:tirarse",
+    "l:tomar",
+    "l:trabajador",
+    "l:traer",
+    "l:trámite",
+    "l:tío",
+    "l:valer",
+    "l:vecino",
+    "l:verde",
+    "l:volver",
+    "l:votar",
+    "l:zapatero"
+  ]
+}

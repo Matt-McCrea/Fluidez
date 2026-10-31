@@ -1,0 +1,475 @@
+{
+  "id": "ch193",
+  "unit": "u55",
+  "title": "Un asociado, un voto",
+  "text": "Quince días después, a las siete y cuarto, Hernando contó las sillas por cuarta vez. Contando a las dos de la pantalla, había diecinueve asociados y una silla vacía.\nHernando: Diecinueve. Con diecinueve no hay cooperativa, mijo. Hay una fiesta.\nEn la pantalla estaban doña Eulalia, desde Taganga, y Vale, desde Medellín, con un delantal lleno de harina. Simón, por decisión de la junta provisional, estaba en su jaula, con una cobija encima.\nFaltaba don Libardo, el zapatero.\nA las siete y media se abrió la puerta verde. Don Libardo entró despacio, con un sobre y cara de no haber dormido.\nLibardo: Antes de firmar, tengo que decir algo. Hace una semana vino a mi taller un abogado de corbata rosada. Me ofreció cinco millones de pesos por no venir esta noche.\nNadie respiró.\nLibardo: Yo tengo sesenta y ocho años y un taller cuyo techo se moja cada vez que llueve. Cinco millones es mucha plata. Pero yo le arreglé los zapatos a doña Rosa durante treinta años, y nunca me dejó pagar el tinto.\nDejó el sobre encima de los estatutos.\nLibardo: Es la tarjeta del abogado. La plata no la recibí.\nGloria fue la primera en aplaudir. Después aplaudió todo el café, y debajo de la cobija Simón gritó algo que por suerte nadie entendió.\nHernando: Veinte. Ahora sí, doctora.\nLa doctora Uribe dio comienzo a la asamblea. Los primeros nueve se aprobaron rápido. En el décimo empezó la tormenta.\nUribe: Artículo diez: los votos. Hay dos propuestas. La de las familias propietarias: votos en proporción a lo que cada uno aporta. La de los vecinos: un asociado, un voto.\nEl tío se levantó y miró a don Libardo.\nTío: Hace quince días yo dije que nuestros votos tenían que valer más. Yo vendí la cédula de mi papá a la misma gente que hoy le ofreció plata a este señor. Él no la recibió. Si alguien en esta mesa vale más que otro, no soy yo. Retiro mi propuesta. Un asociado, un voto.\nDoña Eulalia se secó los ojos.\nEulalia: Joaquín habría dicho lo mismo, pero con más groserías.\nUribe: ¿Alguien se opone? Entonces el artículo diez se aprueba por consenso.\nDespués vinieron los aportes. Se decidió que las familias aportaban la casa, y los vecinos, cincuenta mil pesos al mes, a partes iguales. Las ganancias del pan, cuya receta seguía siendo de Rosa, se repartirían a partes iguales entre todos los asociados. Los tres cuartos de arriba serían vivienda para estudiantes, a un precio justo.\nLlegó la elección de la junta. Todos miraron a Hernando.\nHernando: ¿Yo, presidente? ¡Ni loco! Ya fui presidente de una junta, y firmé más papeles que en cuarenta años de taxi.\nVale: Que sea Gloria. Ella sabe dónde está todo, hasta la tiza.\nGloria se tapó la cara con las manos. Fue elegida con diecinueve votos y una abstención: la suya.\nGloria: Yo no sé hablar en público.\nHernando: Por eso, mija. Los que saben hablar en público ya nos vendieron la mitad de la ciudad.\nA las diez entró Jhon Fredy, con el pelo mojado y los ojos brillantes.\nJhon Fredy: ¡Me tiré de cabeza! ¡Del trampolín bajito, pero de cabeza!\nYesid: Y no de barriga.\nLe aplaudieron más que a los estatutos.\nA las once, los veinte asociados firmaron el acta. Tomás firmó de último, debajo de la firma grande de don Libardo.\nUribe: Mañana registro la cooperativa. Felicitaciones. Ya existen.\nEn la puerta, Libardo se dio vuelta.\nLibardo: El abogado me dijo otra cosa, don Tomás. Me dijo: «Cuando sean cooperativa, hablamos del muro».",
+  "gloss": [
+    {
+      "es": "Hay una fiesta",
+      "en": "There's a party"
+    },
+    {
+      "es": "delantal",
+      "en": "apron"
+    },
+    {
+      "es": "cobija",
+      "en": "blanket"
+    },
+    {
+      "es": "se tapó la cara con las manos",
+      "en": "covered her face with her hands"
+    },
+    {
+      "es": "trampolín bajito",
+      "en": "low diving board"
+    },
+    {
+      "es": "tiza",
+      "en": "chalk"
+    },
+    {
+      "es": "por decisión de la junta provisional",
+      "en": "by decision of the interim board"
+    },
+    {
+      "es": "zapatero",
+      "en": "shoemaker"
+    },
+    {
+      "es": "cara de no haber dormido",
+      "en": "the look of someone who hadn't slept"
+    },
+    {
+      "es": "taller",
+      "en": "workshop"
+    },
+    {
+      "es": "un taller cuyo techo se moja cada vez que llueve",
+      "en": "a workshop whose roof gets wet every time it rains"
+    },
+    {
+      "es": "zapatos",
+      "en": "shoes"
+    },
+    {
+      "es": "aplaudir",
+      "en": "to clap"
+    },
+    {
+      "es": "aplaudió",
+      "en": "clapped"
+    },
+    {
+      "es": "aplaudieron",
+      "en": "they clapped for him"
+    },
+    {
+      "es": "dio comienzo a la asamblea",
+      "en": "opened the meeting"
+    },
+    {
+      "es": "décimo",
+      "en": "tenth"
+    },
+    {
+      "es": "En el décimo empezó la tormenta",
+      "en": "At the tenth the storm broke"
+    },
+    {
+      "es": "en proporción a lo que cada uno aporta",
+      "en": "in proportion to what each one contributes"
+    },
+    {
+      "es": "Retiro mi propuesta",
+      "en": "I withdraw my proposal"
+    },
+    {
+      "es": "groserías",
+      "en": "swear words"
+    },
+    {
+      "es": "¿Alguien se opone?",
+      "en": "Does anyone object?"
+    },
+    {
+      "es": "se aprueba por consenso",
+      "en": "is approved by consensus"
+    },
+    {
+      "es": "a partes iguales",
+      "en": "in equal shares"
+    },
+    {
+      "es": "a un precio justo",
+      "en": "at a fair price"
+    },
+    {
+      "es": "¡Ni loco!",
+      "en": "No way"
+    },
+    {
+      "es": "abstención",
+      "en": "abstention"
+    },
+    {
+      "es": "ya nos vendieron la mitad de la ciudad",
+      "en": "have already sold off half the city"
+    },
+    {
+      "es": "¡Me tiré de cabeza! ¡Del trampolín bajito, pero de cabeza!",
+      "en": "I dived in head first. Off the low board, but head first"
+    },
+    {
+      "es": "barriga",
+      "en": "belly"
+    },
+    {
+      "es": "firmó de último",
+      "en": "signed last"
+    },
+    {
+      "es": "el acta",
+      "en": "the minutes"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why was Don Libardo late?",
+      "options": [
+        "He forgot the time",
+        "He came to confess that Altamira's lawyer offered him five million pesos not to come",
+        "His workshop flooded",
+        "He was at the pool"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why does the uncle withdraw his proposal?",
+      "options": [
+        "Uribe tells him it is illegal",
+        "Libardo's honesty shames him: he once sold his father's ID card to the same people",
+        "Eulalia orders him to",
+        "Vale convinces him by video"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "How are the café's profits from the bread divided?",
+      "options": [
+        "By how much each person paid",
+        "In equal shares among all the members",
+        "Half to each family",
+        "All to Gloria"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Quién es la nueva presidenta de la junta?",
+      "options": [
+        "Gloria",
+        "Vale",
+        "Mariana",
+        "Doña Eulalia"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Libardo remember at the door?",
+      "options": [
+        "He forgot his hat",
+        "The lawyer said: once you're a cooperative, we'll talk about the wall",
+        "He wants his money back",
+        "He forgot to vote"
+      ],
+      "answer": 1
+    }
+  ],
+  "hook": "The cooperative exists, with twenty members and one vote each. Tomorrow Altamira's lawyer comes to talk about the wall, and he thinks a protected house will have to pay for it.",
+  "rereadQuestions": [
+    {
+      "q": "Where was Simón during the meeting?",
+      "options": [
+        "On Hernando's shoulder",
+        "In his cage, under a blanket",
+        "In the patio tree",
+        "At the pool"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Who did Gloria not vote for?",
+      "options": [
+        "Herself",
+        "Hernando",
+        "Tomás",
+        "The uncle"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Whose signature is just above Tomás's on the minutes?",
+      "options": [
+        "Hernando's",
+        "Don Libardo's",
+        "Yesid's",
+        "Gloria's"
+      ],
+      "answer": 1
+    }
+  ],
+  "requires": [
+    "c:claro-listo",
+    "c:donde-esta",
+    "c:entonces-bueno",
+    "c:fui",
+    "c:hay",
+    "c:no-se",
+    "c:por-suerte",
+    "c:si-soy-yo",
+    "c:tengo",
+    "c:tengo-anos",
+    "c:tengo-que",
+    "c:vale-spain",
+    "g:adjective-agreement",
+    "g:cada-cualquier",
+    "g:cause-result",
+    "g:comparatives",
+    "g:conditional",
+    "g:conditional-perfect",
+    "g:cuyo-relatives",
+    "g:diminutives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:hace-ago",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:infinitive-perfect",
+    "g:le-doubling",
+    "g:passive-se",
+    "g:passive-ser",
+    "g:por-para-1",
+    "g:possessives",
+    "g:possessives-stressed",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:relatives-prepositions",
+    "g:reported-past-basic",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:subj-cuando-future",
+    "g:subj-irregulars",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:a-partes-iguales",
+    "p:cerca-de",
+    "p:contar-dos-sentidos",
+    "p:dar-comienzo-poner-fin",
+    "p:demonstratives-basic",
+    "p:dentro-de-vs-despues",
+    "p:don-dona-nombre",
+    "p:durar-durante",
+    "p:el-que-la-que",
+    "p:entonces-de-repente",
+    "p:felicitaciones-por",
+    "p:fracciones-de",
+    "p:frequency-scale",
+    "p:humedo-mojado",
+    "p:indefinites-basic",
+    "p:ir-venir",
+    "p:la-gente-singular",
+    "p:lavarse-las-manos",
+    "p:los-de-la-camiseta",
+    "p:me-te-nos-objects",
+    "p:ni-emphatic",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:por-consenso",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:que-subj-deseo",
+    "p:quedar-faltar-sobrar",
+    "p:rectificar-reparar",
+    "p:repartir-entre",
+    "p:saber-conocer",
+    "p:seguir-gerundio",
+    "p:senor-don-article",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:yo-ni-loco"
+  ],
+  "lexemes": [
+    "l:abogado",
+    "l:abrir",
+    "l:abstención",
+    "l:acta",
+    "l:ahora",
+    "l:antes",
+    "l:aplaudir",
+    "l:aportar",
+    "l:aporte",
+    "l:aprobar",
+    "l:arreglar",
+    "l:arriba",
+    "l:artículo",
+    "l:asamblea",
+    "l:asociarse",
+    "l:año",
+    "l:barriga",
+    "l:brillante",
+    "l:cabeza",
+    "l:café",
+    "l:cara",
+    "l:casa",
+    "l:ciudad",
+    "l:comenzar",
+    "l:consenso",
+    "l:contar",
+    "l:cooperativa",
+    "l:corbata",
+    "l:cosa",
+    "l:cuarto",
+    "l:cédula",
+    "l:dar",
+    "l:darse",
+    "l:debajo",
+    "l:decidir",
+    "l:decir",
+    "l:decisión",
+    "l:dejar",
+    "l:delantal",
+    "l:despacio",
+    "l:después",
+    "l:doctor",
+    "l:dormir",
+    "l:décimo",
+    "l:día",
+    "l:dónde",
+    "l:elección",
+    "l:elegir",
+    "l:empezar",
+    "l:encima",
+    "l:entender",
+    "l:entrar",
+    "l:estar",
+    "l:estatuto",
+    "l:estudiante",
+    "l:existir",
+    "l:faltar",
+    "l:familia",
+    "l:felicitaciones",
+    "l:fiesta",
+    "l:firma",
+    "l:firmar",
+    "l:ganancia",
+    "l:gente",
+    "l:grande",
+    "l:gritar",
+    "l:grosería",
+    "l:haber",
+    "l:hablar",
+    "l:hacer",
+    "l:harina",
+    "l:hoy",
+    "l:igual",
+    "l:jaula",
+    "l:junta",
+    "l:justo",
+    "l:levantarse",
+    "l:llegar",
+    "l:llenar",
+    "l:llover",
+    "l:loco",
+    "l:mano",
+    "l:mañana",
+    "l:mes",
+    "l:mesa",
+    "l:mija",
+    "l:mijo",
+    "l:mirar",
+    "l:mitad",
+    "l:mojado",
+    "l:muro",
+    "l:noche",
+    "l:ofrecer",
+    "l:ojo",
+    "l:oponerse",
+    "l:pagar",
+    "l:pan",
+    "l:pantalla",
+    "l:papel",
+    "l:papá",
+    "l:parte",
+    "l:pelo",
+    "l:peso",
+    "l:plata",
+    "l:precio",
+    "l:presidente",
+    "l:propietario",
+    "l:proporción",
+    "l:propuesta",
+    "l:provisional",
+    "l:puerta",
+    "l:público",
+    "l:receta",
+    "l:recibir",
+    "l:registrar",
+    "l:repartir",
+    "l:respirar",
+    "l:retirar",
+    "l:rosado",
+    "l:rápido",
+    "l:saber",
+    "l:secarse",
+    "l:seguir",
+    "l:semana",
+    "l:ser",
+    "l:señor",
+    "l:silla",
+    "l:sobre",
+    "l:suerte",
+    "l:taller",
+    "l:tapar",
+    "l:tarjeta",
+    "l:taxi",
+    "l:techo",
+    "l:tener",
+    "l:tinto",
+    "l:tirarse",
+    "l:tormenta",
+    "l:tío",
+    "l:vaciar",
+    "l:valer",
+    "l:vecino",
+    "l:vender",
+    "l:venir",
+    "l:verde",
+    "l:vez",
+    "l:vivienda",
+    "l:voto",
+    "l:vuelta",
+    "l:zapatero",
+    "l:zapatos"
+  ]
+}

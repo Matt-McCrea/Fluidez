@@ -1,0 +1,507 @@
+{
+  "id": "ch192",
+  "unit": "u55",
+  "title": "El suscrito",
+  "text": "Según el letrero, el agua de la piscina municipal estaba a veintiséis grados. Según Jhon Fredy, estaba a cinco.\nYesid: No pienses en el agua. Mira tus manos. Las manos llegan primero, y la cabeza las sigue.\nJhon Fredy se paró en el borde, apretó los ojos, apretó los dientes y cayó al agua de barriga, como un costal de papas. Un niño de ocho años le aplaudió desde el trampolín.\nJhon Fredy: ¡Ojalá nunca le hubiera dicho que sí, Yesid!\nJhon Fredy salió del agua rojo de vergüenza, pero sonriendo.\nJhon Fredy: En mi casa nunca hubo plata para piscina. Yo veía a los otros niños desde la reja.\nYesid: A mí me enseñó el mar, que tampoco cobra. Mañana a las seis, otra vez.\nA las nueve, en el café, la doctora Uribe explicó la siguiente regla: la asamblea se convoca con quince días de antelación, por escrito, y con el orden del día.\nTomás escribió el borrador de la convocatoria en una hora. Lo leyó, orgulloso.\nTomás: «El suscrito, Tomás Herrera, tiene el gusto de convocar a los vecinos de la calle Doce a la asamblea de constitución de la cooperativa. Orden del día: lectura de los estatutos, elección de la junta y fijación de los aportes. Se ruega puntualidad. No duden en buscarnos en el café si algo no les queda claro».\nHernando: Muy bonito. Yo no entendí si hay tinto.\nVale escribió desde Medellín: «Pon que hay pandebono. Así llegan puntuales sin rogarles».\nMariana: Le falta un sujeto, Tomás. «La fijación de los aportes». ¿Quién los fija? ¿Cuánto? Las cosas importantes siempre se esconden detrás de un sustantivo.\nPor la tarde, Tomás, Yesid y Hernando recorrieron la cuadra con la lista de veinte nombres. Doña Fanny, la de la tienda, firmó sin leer. El zapatero leyó todo dos veces y preguntó si podía pagar el aporte con zapatos.\nHernando: Con suelas, don Libardo. Que los zapatos ya los tiene Altamira apretándonos.\nLos estudiantes pidieron otra cosa.\nEstudiante: Pagamos un arriendo carísimo por un cuarto sin ventana. Si la cooperativa tiene cuartos arriba, ¿podrían ser vivienda para estudiantes?\nTomás no lo había pensado. Arriba había tres cuartos vacíos desde que Vale se fue.\nPero en el café, el tío no estuvo de acuerdo.\nTío: Las dos familias ponemos la casa. Los vecinos ponen un tinto. No es lo mismo. Nuestros votos tienen que valer más.\nGloria: Yo llevo treinta años poniendo más que un tinto en esta casa.\nLa discusión duró hasta las nueve. No hubo consenso. Uribe, que había visto peleas peores en asambleas de vivienda, propuso posponer la decisión para la asamblea.\nUribe: El consenso no se fuerza. Se cocina despacio, como el ajiaco.\nSimón: ¡Despacio! ¡Despacio, parce!\nA las diez se rompió un tubo de la cocina. Yesid se metió debajo del lavaplatos con una llave inglesa y apretó hasta que dejó de salir agua.\nYesid: Ahí está. Las casas viejas son como los tíos: hay que apretarlas con cariño.\nEl tío se rio por primera vez en todo el día.\nAntes de cerrar, el cartero dejó un sobre del bufete de Montoya.\n«El suscrito, apoderado de Hoteles Altamira, les ruega que le envíen con la debida antelación una copia de los estatutos de la futura cooperativa, por tratarse de un inmueble que comparte muro con el hotel».\nMariana: Cualquier persona puede pedir eso.\nUribe: Sí. Lo que me preocupa es cómo se enteró. La convocatoria todavía no ha salido de esta mesa.\nHernando miró la lista de veinte nombres, uno por uno.\nHernando: Alguien de la lista ya habló con él.",
+  "gloss": [
+    {
+      "es": "cayó al agua de barriga, como un costal de papas",
+      "en": "hit the water belly first, like a sack of potatoes"
+    },
+    {
+      "es": "aplaudió",
+      "en": "clapped"
+    },
+    {
+      "es": "¡Ojalá nunca le hubiera dicho que sí, Yesid!",
+      "en": "I wish I'd never said yes to you, Yesid"
+    },
+    {
+      "es": "la reja",
+      "en": "the railings"
+    },
+    {
+      "es": "con quince días de antelación",
+      "en": "fifteen days in advance"
+    },
+    {
+      "es": "el orden del día",
+      "en": "the agenda"
+    },
+    {
+      "es": "borrador",
+      "en": "draft"
+    },
+    {
+      "es": "convocatoria",
+      "en": "notice of meeting"
+    },
+    {
+      "es": "El suscrito",
+      "en": "The undersigned"
+    },
+    {
+      "es": "tiene el gusto de convocar",
+      "en": "is pleased to invite"
+    },
+    {
+      "es": "asamblea de constitución",
+      "en": "founding meeting"
+    },
+    {
+      "es": "fijación de los aportes",
+      "en": "setting of the contributions"
+    },
+    {
+      "es": "Se ruega puntualidad",
+      "en": "Punctuality is requested"
+    },
+    {
+      "es": "No duden en buscarnos en el café si algo no les queda claro",
+      "en": "Don't hesitate to come and find us at the café if anything is unclear"
+    },
+    {
+      "es": "Así llegan puntuales sin rogarles",
+      "en": "That way they'll arrive on time without being begged"
+    },
+    {
+      "es": "sustantivo",
+      "en": "noun"
+    },
+    {
+      "es": "zapatero",
+      "en": "shoemaker"
+    },
+    {
+      "es": "zapatos",
+      "en": "shoes"
+    },
+    {
+      "es": "Con suelas, don Libardo",
+      "en": "With soles, Don Libardo"
+    },
+    {
+      "es": "Que los zapatos ya los tiene Altamira apretándonos",
+      "en": "Altamira already has the shoes pinching us"
+    },
+    {
+      "es": "vivienda para estudiantes",
+      "en": "student housing"
+    },
+    {
+      "es": "posponer",
+      "en": "to postpone"
+    },
+    {
+      "es": "El consenso no se fuerza",
+      "en": "You can't force a consensus"
+    },
+    {
+      "es": "se rompió un tubo",
+      "en": "a pipe burst"
+    },
+    {
+      "es": "trampolín",
+      "en": "diving board"
+    },
+    {
+      "es": "lavaplatos",
+      "en": "sink"
+    },
+    {
+      "es": "llave inglesa",
+      "en": "wrench"
+    },
+    {
+      "es": "hay que apretarlas con cariño",
+      "en": "you have to tighten them with love"
+    },
+    {
+      "es": "cartero",
+      "en": "postman"
+    },
+    {
+      "es": "bufete",
+      "en": "law firm"
+    },
+    {
+      "es": "apoderado",
+      "en": "legal representative"
+    },
+    {
+      "es": "futura",
+      "en": "future"
+    },
+    {
+      "es": "por tratarse de un inmueble que comparte muro con el hotel",
+      "en": "as it is a property that shares a wall with the hotel"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does Mariana criticise in Tomás's draft?",
+      "options": [
+        "It is too short",
+        "Phrases like \"la fijación de los aportes\" hide who decides and how much",
+        "It has spelling mistakes",
+        "It doesn't mention the pastries"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What do the two students ask for?",
+      "options": [
+        "A discount on coffee",
+        "That the empty rooms upstairs become housing for students",
+        "To vote twice",
+        "Free pastries"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why is there no consensus?",
+      "options": [
+        "The uncle thinks the two families' votes should count for more than the neighbours'",
+        "Nobody wants Gloria in charge",
+        "The neighbours want to sell the house",
+        "Uribe refuses to help"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué hace Yesid cuando se revienta el tubo?",
+      "options": [
+        "Llama a un plomero",
+        "Lo aprieta con una llave inglesa",
+        "Cierra el café",
+        "Se va a la piscina"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What worries Dr Uribe about Montoya's letter?",
+      "options": [
+        "Its bad grammar",
+        "Altamira already knows about the cooperative, although the notice hasn't left the table",
+        "The price he offers",
+        "That he wants to join"
+      ],
+      "answer": 1
+    }
+  ],
+  "hook": "Fifteen days from now the founding meeting needs twenty signatures, and one of the twenty names has already spoken to Altamira's lawyer. Tomorrow the neighbours vote, and nobody knows whose chair will stay empty.",
+  "rereadQuestions": [
+    {
+      "q": "What did the sign at the pool say about the water?",
+      "options": [
+        "It was five degrees",
+        "It was twenty six degrees",
+        "It was closed",
+        "It was salt water"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "How did Yesid learn to swim?",
+      "options": [
+        "In the municipal pool",
+        "The sea taught him, and it doesn't charge either",
+        "His father paid for classes",
+        "He never learned"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does Don Libardo ask about the contribution?",
+      "options": [
+        "Whether he can pay it in shoes",
+        "Whether he can pay it next year",
+        "Whether it is tax free",
+        "Whether Simón pays too"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:claro-listo",
+    "c:con-el-ella",
+    "c:es-lo-mismo",
+    "c:estuvo",
+    "c:hay",
+    "c:hay-que",
+    "c:no-se",
+    "c:ojala",
+    "c:oye-mira",
+    "c:segun",
+    "c:tienes",
+    "c:todavia-no",
+    "g:adjective-agreement",
+    "g:cada-cualquier",
+    "g:commands-tu",
+    "g:comparatives",
+    "g:conditional",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:gustar-full",
+    "g:hace-que-desde",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:negative-commands",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:passive-se",
+    "g:perfecto-experience",
+    "g:pluperfect",
+    "g:pluperfect-subj",
+    "g:por-para-1",
+    "g:possessives",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-influence",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "p:adelantar-aplazar",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:con-sin",
+    "p:costar-pagar",
+    "p:dejar-de-inf",
+    "p:demonstratives-basic",
+    "p:detenerse-estar-parado",
+    "p:don-dona-nombre",
+    "p:durar-durante",
+    "p:el-agua-fria",
+    "p:el-orden-la-orden",
+    "p:el-suscrito",
+    "p:enterarse-de",
+    "p:estar-a",
+    "p:estar-a-grados",
+    "p:estar-de-acuerdo-con-en",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:le-ruego-que",
+    "p:lleno-libre",
+    "p:llevar-tiempo-gerundio",
+    "p:los-de-la-camiseta",
+    "p:masculine-plural-mixed",
+    "p:me-te-nos-objects",
+    "p:no-dude-en",
+    "p:ojala-hubiera",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:pensar-en",
+    "p:personal-a",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:quedar-faltar-sobrar",
+    "p:quedar-participio",
+    "p:request-ladder",
+    "p:se-ruega",
+    "p:se-trata-de",
+    "p:senor-don-article",
+    "p:street-names",
+    "p:te-importaria",
+    "p:telling-time",
+    "p:tener-el-gusto-de",
+    "p:time-sequence-basic",
+    "p:todos-los-dias",
+    "p:tratar-de",
+    "p:un-estudio-muestra-que",
+    "p:viejo-antiguo-mayor"
+  ],
+  "lexemes": [
+    "l:acuerdo",
+    "l:agua",
+    "l:ahí",
+    "l:ajiaco",
+    "l:antelación",
+    "l:antes",
+    "l:aplaudir",
+    "l:aporte",
+    "l:apretar",
+    "l:arriba",
+    "l:arriendo",
+    "l:asamblea",
+    "l:año",
+    "l:barriga",
+    "l:bonito",
+    "l:borde",
+    "l:borrador",
+    "l:bufete",
+    "l:buscar",
+    "l:cabeza",
+    "l:caer",
+    "l:café",
+    "l:calle",
+    "l:cariño",
+    "l:caro",
+    "l:cartero",
+    "l:casa",
+    "l:cerrar",
+    "l:claro",
+    "l:cobrar",
+    "l:cocina",
+    "l:cocinar",
+    "l:comer",
+    "l:compartir",
+    "l:consenso",
+    "l:constitución",
+    "l:convocar",
+    "l:convocatoria",
+    "l:cooperativa",
+    "l:copia",
+    "l:cosa",
+    "l:cuadra",
+    "l:cuarto",
+    "l:cuánto",
+    "l:cómo",
+    "l:debajo",
+    "l:deber",
+    "l:decir",
+    "l:decisión",
+    "l:dejar",
+    "l:despacio",
+    "l:detrás",
+    "l:diente",
+    "l:discusión",
+    "l:doctor",
+    "l:dudar",
+    "l:durar",
+    "l:día",
+    "l:elección",
+    "l:enseñar",
+    "l:entender",
+    "l:enterarse",
+    "l:enviar",
+    "l:esconder",
+    "l:escribir",
+    "l:estar",
+    "l:estatuto",
+    "l:estudiante",
+    "l:explicar",
+    "l:faltar",
+    "l:familia",
+    "l:fijar",
+    "l:firmar",
+    "l:forzar",
+    "l:futura",
+    "l:grado",
+    "l:gusto",
+    "l:hablar",
+    "l:hora",
+    "l:hotel",
+    "l:importante",
+    "l:inglés",
+    "l:inmueble",
+    "l:irse",
+    "l:junta",
+    "l:lavaplatos",
+    "l:lectura",
+    "l:leer",
+    "l:letrero",
+    "l:listo",
+    "l:llave",
+    "l:llegar",
+    "l:llevar",
+    "l:mano",
+    "l:mar",
+    "l:mañana",
+    "l:mesa",
+    "l:meterse",
+    "l:mirar",
+    "l:municipal",
+    "l:muro",
+    "l:niño",
+    "l:nombre",
+    "l:ojo",
+    "l:orden",
+    "l:orgulloso",
+    "l:pagar",
+    "l:pandebono",
+    "l:papa",
+    "l:parar",
+    "l:parce",
+    "l:pedir",
+    "l:pelea",
+    "l:pensar",
+    "l:peor",
+    "l:persona",
+    "l:piscina",
+    "l:plata",
+    "l:poder",
+    "l:poner",
+    "l:posponer",
+    "l:preguntar",
+    "l:preocupar",
+    "l:proponer",
+    "l:puntual",
+    "l:puntualidad",
+    "l:quedar",
+    "l:quién",
+    "l:recorrer",
+    "l:regla",
+    "l:reír",
+    "l:rogar",
+    "l:rojo",
+    "l:romperse",
+    "l:salir",
+    "l:seguir",
+    "l:ser",
+    "l:siempre",
+    "l:siguiente",
+    "l:sobre",
+    "l:sonreír",
+    "l:suelo",
+    "l:sujeto",
+    "l:suscribirse",
+    "l:sustantivo",
+    "l:tarde",
+    "l:tener",
+    "l:tienda",
+    "l:tinto",
+    "l:tratarse",
+    "l:tubo",
+    "l:tío",
+    "l:vacío",
+    "l:valer",
+    "l:vecino",
+    "l:ventana",
+    "l:ver",
+    "l:vergüenza",
+    "l:vez",
+    "l:viejo",
+    "l:vivienda",
+    "l:voto",
+    "l:zapatero",
+    "l:zapatos"
+  ]
+}
