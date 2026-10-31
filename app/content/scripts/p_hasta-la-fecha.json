@@ -12,7 +12,7 @@
     },
     {
       "es": "Hasta el momento no hay heridos.",
-      "en": "So far there are no casualties."
+      "en": "So far there are no injuries."
     },
     {
       "es": "De momento seguimos igual.",
@@ -65,8 +65,8 @@
       "es": "Hasta el momento no hay heridos.",
       "options": [
         "Nobody was injured at that moment.",
-        "So far there are no casualties.",
-        "There will be no casualties."
+        "So far there are no injuries.",
+        "There will be no injuries."
       ],
       "answer": 1
     },
@@ -91,7 +91,7 @@
     {
       "es": "¿Hay noticias hasta el momento?",
       "options": [
-        "Were there any news at that moment?",
+        "Was there any news at that moment?",
         "Will there be news?",
         "Is there any news so far?"
       ],
@@ -125,7 +125,7 @@
       "why": "\"So far\" looks back from today, so the *ha dicho* past fits."
     },
     {
-      "prompt": "Say: So far there are no casualties.",
+      "prompt": "Say: So far there are no injuries.",
       "answer": "Hasta el momento no hay heridos.",
       "accept": [
         "Hasta el momento, no hay heridos."
@@ -177,9 +177,9 @@
       "why": "Almost. English drops the article (\"to date\"), but Spanish keeps *la*."
     },
     {
-      "wrong": "En el momento seguimos igual.",
+      "wrong": "Para ahora seguimos igual.",
       "right": "De momento seguimos igual.",
-      "why": "Almost. For \"for now\", Spanish says *de momento*."
+      "why": "Almost. English says \"for now\", but Spanish does not use *para* here: say *de momento*."
     }
   ],
   "personal": "Think of something that has not happened yet in your life or your week. Say it: *Hasta la fecha no he…*."

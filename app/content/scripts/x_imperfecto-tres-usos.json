@@ -3,12 +3,12 @@
   "hook": {
     "line": "Spanish uses the imperfect for things that are not in the past at all: to show surprise, to be polite, and to check something you were told. Tomás has to work out which one he is hearing.",
     "es": "¿Tú no trabajabas hoy?",
-    "en": "Don't you work today? (to a friend)"
+    "en": "Weren't you working today? (to a friend)"
   },
   "examples": [
     {
       "es": "¿Tú no trabajabas hoy?",
-      "en": "Don't you work today? (to a friend)"
+      "en": "Weren't you working today? (to a friend)"
     },
     {
       "es": "Venía a preguntar si tenían una mesa para cuatro.",
@@ -16,7 +16,7 @@
     },
     {
       "es": "El café cerraba mañana, ¿no?",
-      "en": "The café closes tomorrow, doesn't it?"
+      "en": "The café was closing tomorrow, wasn't it?"
     },
     {
       "es": "Quería preguntarle algo, don Hernando.",
@@ -24,11 +24,11 @@
     },
     {
       "es": "¿No estabas en Cartagena esta semana?",
-      "en": "Aren't you in Cartagena this week? (to a friend)"
+      "en": "Weren't you supposed to be in Cartagena this week? (to a friend)"
     },
     {
       "es": "Mariana llegaba mañana, ¿no?",
-      "en": "Mariana arrives tomorrow, doesn't she?"
+      "en": "Mariana was arriving tomorrow, wasn't she?"
     }
   ],
   "rule": "All six sentences are about now or tomorrow, yet the verb looks past. The imperfect puts the idea a step away, and that step means three things.\n\nSurprise: you expected something else. *¿Tú no trabajabas hoy?* Usually a question with *no*.\nPoliteness: a softer request. *Venía a preguntar..., quería pedirle...*\nHearsay: you check what you were told. *Mariana llegaba mañana, ¿no?*\n\nTo tell them apart, look at the sentence. A *no* question that shows you expected something else is the first. A request starting with *venía a* or *quería* is the second. A statement with *¿no?* checking a fact is the third.",
@@ -38,7 +38,7 @@
       "es": "¿Tú no trabajabas hoy?",
       "options": [
         "Didn't you work yesterday? (to a friend)",
-        "Don't you work today? (to a friend)",
+        "Weren't you working today? (to a friend)",
         "You don't work today."
       ],
       "answer": 1
@@ -55,7 +55,7 @@
     {
       "es": "El café cerraba mañana, ¿no?",
       "options": [
-        "The café closes tomorrow, doesn't it?",
+        "The café was closing tomorrow, wasn't it?",
         "The café closed yesterday, didn't it?",
         "The café won't close tomorrow."
       ],
@@ -75,7 +75,7 @@
       "options": [
         "Weren't you in Cartagena last week? (to a friend)",
         "Aren't you going to Cartagena this week? (to a friend)",
-        "Aren't you in Cartagena this week? (to a friend)"
+        "Weren't you supposed to be in Cartagena this week? (to a friend)"
       ],
       "answer": 2
     },
@@ -83,7 +83,7 @@
       "es": "Mariana llegaba mañana, ¿no?",
       "options": [
         "Mariana arrived yesterday, didn't she?",
-        "Mariana arrives tomorrow, doesn't she?",
+        "Mariana was arriving tomorrow, wasn't she?",
         "Mariana won't arrive tomorrow."
       ],
       "answer": 1
@@ -102,7 +102,7 @@
       "options": [
         "Vale, didn't you cook yesterday?",
         "Vale, I cook today.",
-        "Vale, don't you cook today?"
+        "Vale, weren't you cooking today?"
       ],
       "answer": 2
     }
@@ -121,7 +121,7 @@
       "why": "*Venía a* is gentler than *vengo a*; it does not push."
     },
     {
-      "prompt": "Check what you were told: The café closes tomorrow, doesn't it?",
+      "prompt": "Check what you were told: The café was closing tomorrow, wasn't it?",
       "answer": "El café cerraba mañana, ¿no?",
       "accept": [],
       "why": "The imperfect plus *¿no?* checks a fact you were given."
@@ -135,13 +135,13 @@
       "why": "*Quería* makes a request softer than *quiero*."
     },
     {
-      "prompt": "Show surprise, to a friend: Aren't you in Cartagena this week?",
+      "prompt": "Show surprise, to a friend: Weren't you supposed to be in Cartagena this week?",
       "answer": "¿No estabas en Cartagena esta semana?",
       "accept": [],
       "why": "*Estabas* in a *no* question shows you expected something else."
     },
     {
-      "prompt": "Check what you were told: Mariana arrives tomorrow, doesn't she?",
+      "prompt": "Check what you were told: Mariana was arriving tomorrow, wasn't she?",
       "answer": "Mariana llegaba mañana, ¿no?",
       "accept": [],
       "why": "Same idea: the imperfect and *¿no?* check what you heard."

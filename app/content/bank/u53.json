@@ -960,19 +960,17 @@
   },
   {
     "id": "u53-0036",
-    "es": "Vale rectificó la receta porque el pan salió duro.",
-    "en": "Vale fixed the recipe because the bread came out hard.",
+    "es": "Vale rectificó: el pan no lleva maíz, lleva yuca.",
+    "en": "Vale corrected herself: the bread has no corn in it, it has cassava.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:porque",
-      "g:cause-result",
       "g:gender-articles",
-      "g:preterite-er-ir",
-      "l:duro",
+      "g:present-ar",
+      "l:llevar",
+      "l:maíz",
       "l:pan",
-      "l:receta",
-      "l:salir",
+      "l:yuca",
       "p:rectificar-reparar"
     ],
     "targets": [
@@ -1925,21 +1923,24 @@
   },
   {
     "id": "u53-0074",
-    "es": "Hernando dice que nunca vio algo sin precedentes como esto.",
-    "en": "Hernando says he never saw anything unprecedented like this.",
+    "es": "Hernando dice que lo de esta semana es algo sin precedentes.",
+    "en": "Hernando says this week's business is something without precedent.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:sin-precedentes",
-      "g:preterite-er-ir",
+      "g:ser-identity",
       "g:stem-e-i",
       "g:that-clauses",
       "l:decir",
       "l:precedente",
-      "l:ver",
+      "l:semana",
+      "l:ser",
       "p:demonstratives-basic",
-      "p:frequency-scale",
-      "p:indefinites-basic"
+      "p:indefinites-basic",
+      "p:lo-de",
+      "p:lo-de-noun",
+      "p:lo-de-topic"
     ],
     "targets": [
       "c:sin-precedentes",
@@ -2079,7 +2080,7 @@
   {
     "id": "u53-0080",
     "es": "Dos de los testigos están en paradero desconocido.",
-    "en": "Two of the witnesses are in an unknown whereabouts.",
+    "en": "The whereabouts of two of the witnesses are unknown.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2596,7 +2597,7 @@
   {
     "id": "u53-0098",
     "es": "Sin ánimo de ofender, creo que hicieron la vista gorda con Altamira.",
-    "en": "No offence meant, I think they turned a blind eye with Altamira.",
+    "en": "No offence meant, I think they turned a blind eye to Altamira.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3328,7 +3329,7 @@
   {
     "id": "u53-0124",
     "es": "Tiene toda la pinta de ser una trampa de Altamira.",
-    "en": "It has every look of being a trap by Altamira.",
+    "en": "It has every sign of being a trap set by Altamira.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3431,28 +3432,30 @@
   },
   {
     "id": "u53-0128",
-    "es": "Por lo visto, en apariencia todo estaba bien.",
-    "en": "Apparently, on the surface everything was fine.",
+    "es": "En apariencia todo estaba bien; por dentro, el techo se caía.",
+    "en": "On the surface everything was fine; inside, the roof was falling in.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
-      "g:direct-objects",
       "g:estar-location-states",
-      "g:hedging-distance",
+      "g:gender-articles",
+      "g:imperfect-habitual",
       "g:imperfect-states",
-      "g:stem-e-i",
+      "g:por-para-1",
+      "g:reflexive-routine",
       "l:apariencia",
       "l:bien",
+      "l:caerse",
+      "l:dentro",
       "l:estar",
-      "l:vestir",
+      "l:techo",
       "p:bien-bueno",
       "p:bien-mal-vs-bueno-malo",
-      "p:en-apariencia",
-      "p:segun-dicen"
+      "p:caerse-lastimarse",
+      "p:en-apariencia"
     ],
     "targets": [
-      "g:hedging-distance",
       "l:apariencia",
       "p:en-apariencia"
     ],
@@ -3463,20 +3466,21 @@
   },
   {
     "id": "u53-0129",
-    "es": "Tengo la impresión de que, en apariencia, ya se arregló todo.",
-    "en": "I have the impression that, on the surface, everything has been fixed.",
+    "es": "Tengo la impresión de que el arreglo fue solo en apariencia.",
+    "en": "I have the impression that the fix was only on the surface.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tengo",
       "g:gender-articles",
-      "g:preterite-ar",
-      "g:reflexive-routine",
+      "g:preterite-ser-ir-hacer",
+      "g:ser-identity",
       "g:that-clauses",
       "g:yo-irregular",
       "l:apariencia",
-      "l:arreglarse",
+      "l:arreglo",
       "l:impresión",
+      "l:ser",
       "l:tener",
       "p:en-apariencia",
       "p:tener-la-sensacion",
@@ -3964,25 +3968,21 @@
   },
   {
     "id": "u53-0147",
-    "es": "Nadie le mantuvo al tanto al senador, o eso dice.",
+    "es": "Nadie mantuvo al senador al tanto, o eso dice él.",
     "en": "Nobody kept the senator informed, or so he says.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:indirect-objects",
-      "g:le-doubling",
       "g:preterite-irregular-strong",
       "g:stem-e-i",
       "l:decir",
       "l:mantener",
       "l:senador",
-      "p:demonstratives-basic",
-      "p:ponerse-al-tanto"
+      "p:demonstratives-basic"
     ],
     "targets": [
-      "l:senador",
-      "p:ponerse-al-tanto"
+      "l:senador"
     ],
     "kind": "statement",
     "unit": "u53",
@@ -4350,7 +4350,7 @@
   {
     "id": "u53-0161",
     "es": "Pongo en duda que Altamira haya pagado esa deuda.",
-    "en": "I doubt that Altamira paid that debt.",
+    "en": "I question whether Altamira has paid that debt.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4470,30 +4470,23 @@
   },
   {
     "id": "u53-0165",
-    "es": "Me da la sensación de que, al parecer, todos sabían menos yo.",
-    "en": "I get the feeling that, apparently, everyone knew except me.",
+    "es": "Al parecer, todos lo sabían menos yo.",
+    "en": "Apparently, everyone knew except me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:me-regala",
+      "g:direct-objects",
       "g:gender-articles",
       "g:hedging-distance",
       "g:imperfect-habitual",
       "g:prep-infinitive",
-      "g:that-clauses",
-      "l:dar",
       "l:parecer",
       "l:saber",
-      "l:sensación",
-      "p:me-trae",
       "p:presuntamente-al-parecer",
-      "p:saber-conocer",
-      "p:tener-la-sensacion",
-      "p:tengo-la-impresion-de-que"
+      "p:saber-conocer"
     ],
     "targets": [
-      "g:hedging-distance",
-      "p:tener-la-sensacion"
+      "g:hedging-distance"
     ],
     "kind": "statement",
     "unit": "u53",
@@ -4888,7 +4881,7 @@
   {
     "id": "u53-0179",
     "es": "Tomás reprochó que nadie le hubiera avisado de la visita.",
-    "en": "Tomás reproached that nobody had told him about the visit.",
+    "en": "Tomás complained that nobody had told him about the visit.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6908,15 +6901,17 @@
   },
   {
     "id": "u53-0256",
-    "es": "Sin ánimo de contradecir, el martes yo no estaba.",
-    "en": "Not wanting to contradict, I wasn't there on Tuesday.",
+    "es": "Sin ánimo de contradecirla, el martes yo no estaba.",
+    "en": "With no wish to contradict you, I wasn't there on Tuesday. (formal, to a woman)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:animo",
+      "g:direct-objects",
       "g:estar-location-states",
       "g:gender-articles",
       "g:imperfect-states",
+      "g:object-pronoun-position",
       "l:contradecir",
       "l:estar",
       "l:martes",
@@ -7139,8 +7134,8 @@
   },
   {
     "id": "u53-0265",
-    "es": "No digo que no lo intente, pero lo veo difícil.",
-    "en": "I'm not saying he won't try, but I find it difficult.",
+    "es": "No digo que no lo intentes, pero lo veo difícil.",
+    "en": "I'm not saying don't try, but it looks hard to me. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8080,17 +8075,21 @@
   },
   {
     "id": "u53-0300",
-    "es": "El código criminal no menciona los rumores.",
-    "en": "The criminal code doesn't mention rumours.",
+    "es": "En el barrio nadie cree que Hernando tenga cara de criminal.",
+    "en": "Nobody in the neighbourhood thinks Hernando looks like a criminal.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:aqui-tiene",
       "g:gender-articles",
-      "g:present-ar",
+      "g:present-er-ir",
+      "g:that-clauses",
+      "l:barrio",
+      "l:cara",
+      "l:creer",
       "l:criminal",
-      "l:código",
-      "l:mencionar",
-      "l:rumor"
+      "l:tener",
+      "p:en-apariencia"
     ],
     "targets": [
       "l:criminal"
@@ -8248,18 +8247,20 @@
   },
   {
     "id": "u53-0307",
-    "es": "Mariana investiga la historia de las familias esclavas del barrio.",
-    "en": "Mariana is researching the history of the enslaved families of the neighbourhood.",
+    "es": "Mariana investiga la historia de los esclavos que vivieron en el barrio.",
+    "en": "Mariana is researching the history of the slaves who lived in the neighbourhood.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
+      "g:preterite-er-ir",
+      "g:relative-que",
       "l:barrio",
       "l:esclavo",
-      "l:familia",
       "l:historia",
-      "l:investigar"
+      "l:investigar",
+      "l:vivir"
     ],
     "targets": [
       "l:esclavo"
@@ -8891,7 +8892,7 @@
   {
     "id": "u53-0334",
     "es": "Se encuentra en paradero desconocido el dueño de la casa vecina.",
-    "en": "The owner of the neighbouring house is in an unknown whereabouts.",
+    "en": "The whereabouts of the owner of the house next door are unknown.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8919,7 +8920,7 @@
   {
     "id": "u53-0335",
     "es": "Desde el martes, Ernesto sigue en paradero desconocido.",
-    "en": "Since Tuesday, Ernesto remains in an unknown whereabouts.",
+    "en": "Since Tuesday, Ernesto's whereabouts have been unknown.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9321,8 +9322,8 @@
   },
   {
     "id": "u53-0350",
-    "es": "Mejor dicho, déjalo para después.",
-    "en": "Rather, leave it for later. (to a friend)",
+    "es": "Hazlo hoy; mejor dicho, déjalo para después.",
+    "en": "Do it today; or rather, leave it for later. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9333,6 +9334,8 @@
       "l:decir",
       "l:dejar",
       "l:después",
+      "l:hacer",
+      "l:hoy",
       "l:mejor",
       "p:o-sea-que",
       "p:para-inf",
@@ -9400,23 +9403,26 @@
   },
   {
     "id": "u53-0353",
-    "es": "Mi trabajo es contar, es decir, contar historias de gente real.",
-    "en": "My job is to count, that is, to tell stories about real people.",
+    "es": "Mi trabajo es escuchar, es decir, dejar que la gente cuente su historia.",
+    "en": "My job is to listen, that is, to let people tell their story.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:reformulation",
       "g:ser-identity",
+      "g:subj-influence",
+      "g:subj-wanting",
+      "g:that-clauses",
       "l:contar",
       "l:decir",
+      "l:dejar",
+      "l:escuchar",
       "l:gente",
       "l:historia",
-      "l:real",
       "l:ser",
       "l:trabajo",
-      "p:contar-dos-sentidos",
       "p:hay-varios-tipos",
-      "p:infinitive-instructions",
       "p:la-gente-singular",
       "p:possessives-basic"
     ],
@@ -9712,22 +9718,27 @@
   },
   {
     "id": "u53-0364",
-    "es": "Hoy no hay clientes, o sea, hoy nadie quiere el rumor.",
-    "en": "There are no customers today, I mean, today nobody wants the rumour.",
+    "es": "Hoy no hay clientes, o sea, el rumor ya nos está costando plata.",
+    "en": "There are no customers today, I mean, the rumour is already costing us money.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hay",
       "c:o-sea",
+      "g:estar-gerund",
+      "g:estar-location-states",
       "g:gender-articles",
       "g:hay-vs-esta",
       "g:reformulation",
-      "g:stem-boot",
       "l:cliente",
+      "l:costar",
+      "l:estar",
       "l:hoy",
-      "l:querer",
+      "l:plata",
       "l:rumor",
-      "l:ser"
+      "l:ser",
+      "p:costar-pagar",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:reformulation"
@@ -10292,21 +10303,20 @@
   },
   {
     "id": "u53-0385",
-    "es": "El hecho de que Hernando sostenga que vio al concejal me parece grave.",
-    "en": "The fact that Hernando maintains he saw the council member seems serious to me.",
+    "es": "Me parece grave que Hernando sostenga que vio al concejal.",
+    "en": "It seems serious to me that Hernando maintains he saw the council member.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:mood-choice-fine",
       "g:parecer-quedar",
       "g:present-er-ir",
       "g:preterite-er-ir",
+      "g:subj-value",
       "g:subj-wanting",
       "g:that-clauses",
       "l:concejal",
       "l:grave",
-      "l:hacer",
       "l:parecer",
       "l:sostener",
       "l:ver",
@@ -10315,7 +10325,6 @@
       "p:sostener-que"
     ],
     "targets": [
-      "g:mood-choice-fine",
       "p:sostener-que"
     ],
     "kind": "statement",
@@ -10325,26 +10334,24 @@
   },
   {
     "id": "u53-0386",
-    "es": "El hecho de que el abogado cambie su versión no lo hace inocente.",
-    "en": "The fact that the lawyer changes his version doesn't make him innocent.",
+    "es": "Que el abogado cambie de versión no lo hace inocente.",
+    "en": "The lawyer changing his version doesn't make him innocent.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
       "g:gender-articles",
-      "g:mood-choice-fine",
       "g:present-er-ir",
       "g:subj-wanting",
-      "g:that-clauses",
+      "g:subj-wishes",
       "l:abogado",
       "l:cambiar",
       "l:hacer",
       "l:inocente",
       "l:versión",
-      "p:possessives-basic"
+      "p:cambiar-de-por"
     ],
     "targets": [
-      "g:mood-choice-fine",
       "l:versión"
     ],
     "kind": "statement",
@@ -10354,27 +10361,25 @@
   },
   {
     "id": "u53-0387",
-    "es": "El hecho de que haya salido a la luz tan tarde despierta sospechas.",
-    "en": "The fact that it came to light so late arouses suspicion.",
+    "es": "Despierta sospechas que haya salido a la luz tan tarde.",
+    "en": "It arouses suspicion that it came to light so late.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
-      "g:mood-choice-fine",
       "g:present-ar",
       "g:subj-perfect",
       "g:that-clauses",
       "l:despierto",
-      "l:hacer",
       "l:luz",
       "l:salir",
       "l:sospechar",
       "l:tarde",
+      "p:juraria-que",
       "p:salir-a-la-luz"
     ],
     "targets": [
-      "g:mood-choice-fine",
       "p:salir-a-la-luz"
     ],
     "kind": "statement",
@@ -10384,16 +10389,16 @@
   },
   {
     "id": "u53-0388",
-    "es": "El hecho de que las autoridades hicieran la vista gorda indigna a todos.",
-    "en": "The fact that the authorities turned a blind eye outrages everyone.",
+    "es": "A todos nos indigna que las autoridades hicieran la vista gorda.",
+    "en": "It outrages all of us that the authorities turned a blind eye.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
       "g:imperfect-subj",
-      "g:mood-choice-fine",
       "g:present-ar",
+      "g:subj-past-triggers",
       "g:that-clauses",
       "l:autoridad",
       "l:gordo",
@@ -10401,10 +10406,10 @@
       "l:indignar",
       "l:vista",
       "p:hacer-la-vista-gorda",
-      "p:me-da-rabia-me-indigna"
+      "p:me-da-rabia-me-indigna",
+      "p:me-te-nos-objects"
     ],
     "targets": [
-      "g:mood-choice-fine",
       "p:hacer-la-vista-gorda"
     ],
     "kind": "statement",
@@ -10414,18 +10419,17 @@
   },
   {
     "id": "u53-0389",
-    "es": "El hecho de que Tomás dé por hecho que todo saldrá bien me asusta.",
-    "en": "The fact that Tomás takes for granted that all will go well scares me.",
+    "es": "Me asusta que Tomás dé por hecho que todo saldrá bien.",
+    "en": "It scares me that Tomás takes it for granted that everything will turn out fine.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
       "c:todo-saldra-bien",
-      "g:gender-articles",
       "g:gustar-full",
-      "g:mood-choice-fine",
       "g:por-para-1",
       "g:present-ar",
+      "g:subj-emotion",
       "g:subj-wanting",
       "g:that-clauses",
       "l:asustar",
@@ -10436,7 +10440,6 @@
       "p:dar-por-sentado"
     ],
     "targets": [
-      "g:mood-choice-fine",
       "p:dar-por-sentado"
     ],
     "kind": "statement",
@@ -10446,30 +10449,30 @@
   },
   {
     "id": "u53-0390",
-    "es": "El hecho de que el senador no esté al tanto de su propio contrato es raro.",
-    "en": "The fact that the senator is not up to date on his own contract is odd.",
+    "es": "Es raro que el senador no esté al tanto de su propio contrato.",
+    "en": "It's odd that the senator isn't up to speed on his own contract.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
       "g:gender-articles",
-      "g:mood-choice-fine",
       "g:ser-identity",
+      "g:subj-value",
       "g:subj-wanting",
       "g:that-clauses",
       "l:contrato",
       "l:estar",
-      "l:hacer",
       "l:propio",
       "l:raro",
       "l:senador",
       "l:ser",
       "p:estar-al-tanto-de",
+      "p:me-extrana-que",
+      "p:me-sorprende-que",
       "p:ponerse-al-tanto",
       "p:possessives-basic"
     ],
     "targets": [
-      "g:mood-choice-fine",
       "l:senador",
       "p:ponerse-al-tanto"
     ],
@@ -10480,25 +10483,23 @@
   },
   {
     "id": "u53-0391",
-    "es": "El hecho de que haya rumores sembró la duda en los clientes.",
-    "en": "The fact that there were rumours sowed doubt in the customers.",
+    "es": "Que hubiera rumores sembró la duda entre los clientes.",
+    "en": "The fact that there were rumours sowed doubt among the customers.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:mood-choice-fine",
+      "g:imperfect-subj",
       "g:preterite-ar",
-      "g:subj-irregulars",
-      "g:that-clauses",
+      "g:subj-wishes",
       "l:cliente",
       "l:duda",
-      "l:hacer",
       "l:rumor",
       "l:sembrar",
+      "p:que-subj-deseo",
       "p:sembrar-la-duda"
     ],
     "targets": [
-      "g:mood-choice-fine",
       "l:sembrar",
       "p:sembrar-la-duda"
     ],
@@ -10541,8 +10542,8 @@
   },
   {
     "id": "u53-0393",
-    "es": "El hecho de que ellos estén callados, al parecer, no es casualidad.",
-    "en": "The fact that they are quiet, apparently, is no coincidence.",
+    "es": "Al parecer, no es casualidad que ellos estén tan callados.",
+    "en": "Apparently, it's no coincidence that they are so quiet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10550,22 +10551,20 @@
       "g:estar-location-states",
       "g:gender-articles",
       "g:hedging-distance",
-      "g:mood-choice-fine",
       "g:prep-infinitive",
+      "g:relative-que",
       "g:ser-identity",
+      "g:subj-relative",
       "g:subj-wanting",
-      "g:that-clauses",
       "l:callado",
       "l:casualidad",
       "l:estar",
-      "l:hacer",
       "l:parecer",
       "l:ser",
       "p:presuntamente-al-parecer"
     ],
     "targets": [
-      "g:hedging-distance",
-      "g:mood-choice-fine"
+      "g:hedging-distance"
     ],
     "kind": "statement",
     "unit": "u53",
@@ -10607,27 +10606,25 @@
   },
   {
     "id": "u53-0395",
-    "es": "El hecho de que digan que no hay problema me hace sospechar.",
-    "en": "The fact that they say there is no problem makes me suspicious.",
+    "es": "Me hace sospechar que digan que no hay ningún problema.",
+    "en": "It makes me suspicious that they say there's no problem at all.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hay",
       "c:me-hace-una-rebajita",
-      "c:no-te-preocupes",
-      "g:gender-articles",
       "g:hay-vs-esta",
-      "g:mood-choice-fine",
+      "g:indefinites",
+      "g:negation-words",
       "g:subj-wanting",
       "g:that-clauses",
       "l:decir",
       "l:hacer",
       "l:problema",
-      "l:sospechar"
+      "l:sospechar",
+      "p:juraria-que"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que y otras cosas",
@@ -10750,26 +10747,22 @@
   },
   {
     "id": "u53-0400",
-    "es": "El hecho de que Vale sepa de pan ayuda mucho.",
-    "en": "The fact that Vale knows about bread helps a lot.",
+    "es": "Ayuda mucho que Vale sepa de pan.",
+    "en": "It helps a lot that Vale knows about bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:mood-choice-fine",
       "g:present-ar",
+      "g:subj-influence",
       "g:subj-irregulars",
       "g:that-clauses",
       "l:ayudar",
-      "l:hacer",
       "l:pan",
       "l:saber",
       "p:quantifiers-basic",
       "p:saber-conocer"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que y otras cosas",
@@ -10777,24 +10770,21 @@
   },
   {
     "id": "u53-0401",
-    "es": "El hecho de que vuelva Ernesto cambia el plan.",
-    "en": "The fact that Ernesto is coming back changes the plan.",
+    "es": "Que vuelva Ernesto cambia el plan.",
+    "en": "Ernesto coming back changes the plan.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:mood-choice-fine",
       "g:present-ar",
       "g:subj-wanting",
-      "g:that-clauses",
+      "g:subj-wishes",
       "l:cambiar",
-      "l:hacer",
       "l:plan",
-      "l:volver"
+      "l:volver",
+      "p:que-subj-deseo"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que y otras cosas",
@@ -10802,18 +10792,16 @@
   },
   {
     "id": "u53-0402",
-    "es": "El hecho de que no podamos pagar no es culpa de nadie.",
-    "en": "The fact that we can't pay is nobody's fault.",
+    "es": "No es culpa de nadie que no podamos pagar.",
+    "en": "It's nobody's fault that we can't pay.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:negation-words",
       "g:present-ar",
+      "g:relative-que",
       "g:ser-identity",
-      "g:that-clauses",
       "l:culpa",
-      "l:hacer",
       "l:pagar",
       "l:podar",
       "l:ser",
@@ -10827,18 +10815,16 @@
   },
   {
     "id": "u53-0403",
-    "es": "El hecho de que el senador pida perdón no cambia la sentencia.",
-    "en": "The fact that the senator apologises doesn't change the ruling.",
+    "es": "Aunque el senador pida perdón, la sentencia no cambia.",
+    "en": "Even if the senator apologises, the ruling doesn't change.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:mood-choice-fine",
       "g:present-ar",
+      "g:subj-concessive",
       "g:subj-wanting",
-      "g:that-clauses",
       "l:cambiar",
-      "l:hacer",
       "l:pedir",
       "l:perdón",
       "l:senador",
@@ -10846,7 +10832,6 @@
       "p:pedir-disculpas-por"
     ],
     "targets": [
-      "g:mood-choice-fine",
       "l:senador",
       "l:sentencia"
     ],
@@ -10857,17 +10842,17 @@
   },
   {
     "id": "u53-0404",
-    "es": "El hecho de que la gente lo crea lo hace más peligroso.",
-    "en": "The fact that people believe it makes it more dangerous.",
+    "es": "Que la gente lo crea lo hace más peligroso.",
+    "en": "People believing it makes it more dangerous.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
       "g:gender-articles",
-      "g:present-ar",
       "g:present-er-ir",
-      "g:that-clauses",
-      "l:crear",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:creer",
       "l:gente",
       "l:hacer",
       "l:peligroso",
@@ -10910,27 +10895,22 @@
   },
   {
     "id": "u53-0406",
-    "es": "El hecho de que lleguen cartas sin remitente me da mala espina.",
-    "en": "The fact that letters without a sender arrive gives me a bad feeling.",
+    "es": "Me da mala espina que lleguen cartas sin remitente.",
+    "en": "It gives me a bad feeling that letters arrive with no sender.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-regala",
-      "g:gender-articles",
-      "g:mood-choice-fine",
       "g:subj-wanting",
       "g:that-clauses",
       "l:carta",
       "l:dar",
-      "l:hacer",
       "l:llegar",
       "l:mala",
       "l:remitente",
       "p:con-sin"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que y otras cosas",
@@ -10938,29 +10918,26 @@
   },
   {
     "id": "u53-0407",
-    "es": "El hecho de que Simón no hable delante de extraños es una suerte.",
-    "en": "The fact that Simón doesn't talk in front of strangers is lucky.",
+    "es": "Es una suerte que Simón no hable delante de extraños.",
+    "en": "It's lucky that Simón doesn't talk in front of strangers.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
-      "g:mood-choice-fine",
       "g:ser-identity",
+      "g:subj-value",
       "g:subj-wanting",
       "g:that-clauses",
       "l:delante",
       "l:extraño",
       "l:hablar",
-      "l:hacer",
       "l:ser",
       "l:suerte",
       "p:cerca-de",
       "p:position-de"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que y otras cosas",
@@ -10968,27 +10945,24 @@
   },
   {
     "id": "u53-0408",
-    "es": "El hecho de que cobren tanto por un trámite tan simple es una vergüenza.",
-    "en": "The fact that they charge so much for such a simple procedure is a disgrace.",
+    "es": "Es una vergüenza que cobren tanto por un trámite tan simple.",
+    "en": "It's a disgrace that they charge so much for such a simple procedure.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:mood-choice-fine",
       "g:ser-identity",
+      "g:subj-value",
       "g:subj-wanting",
       "g:that-clauses",
       "l:cobrar",
-      "l:hacer",
       "l:ser",
       "l:simple",
       "l:trámite",
       "l:vergüenza",
       "p:costar-pagar"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que y otras cosas",
@@ -10996,29 +10970,28 @@
   },
   {
     "id": "u53-0409",
-    "es": "El hecho de que tengamos dudas no quiere decir que desconfiemos.",
-    "en": "The fact that we have doubts doesn't mean we distrust.",
+    "es": "Que tengamos dudas no quiere decir que desconfiemos de ustedes.",
+    "en": "Our having doubts doesn't mean we distrust you all.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:mood-choice-fine",
+      "g:prep-pronouns",
       "g:reported-requests",
       "g:stem-boot",
       "g:subj-wanting",
+      "g:subj-wishes",
       "g:that-clauses",
       "g:verb-infinitive",
       "l:decir",
       "l:desconfiar",
       "l:duda",
-      "l:hacer",
       "l:querer",
       "l:tener",
       "p:no-tengo-tan-claro",
+      "p:que-subj-deseo",
       "p:quieres-decir-que"
     ],
     "targets": [
-      "g:mood-choice-fine",
       "p:no-tengo-tan-claro"
     ],
     "kind": "statement",
@@ -11028,25 +11001,21 @@
   },
   {
     "id": "u53-0410",
-    "es": "El hecho de que nadie se haya presentado dice mucho.",
-    "en": "The fact that nobody has turned up says a lot.",
+    "es": "Dice mucho que nadie se haya presentado.",
+    "en": "It says a lot that nobody has turned up.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:mood-choice-fine",
+      "g:reported-requests",
       "g:se-impersonal",
       "g:stem-e-i",
       "g:subj-perfect",
       "g:that-clauses",
       "l:decir",
-      "l:hacer",
       "l:presentar",
       "p:quantifiers-basic"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que y otras cosas",
@@ -11054,24 +11023,23 @@
   },
   {
     "id": "u53-0411",
-    "es": "El hecho de que Tomás aprenda tan rápido sorprende a Vale.",
-    "en": "The fact that Tomás is learning so fast surprises Vale.",
+    "es": "A Vale le sorprende que Tomás aprenda tan rápido.",
+    "en": "It surprises Vale that Tomás is learning so fast.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:mood-choice-fine",
+      "g:gustar-full",
       "g:present-er-ir",
+      "g:subj-emotion",
       "g:subj-wanting",
       "g:that-clauses",
       "l:aprender",
-      "l:hacer",
       "l:rápido",
-      "l:sorprender"
+      "l:sorprender",
+      "p:me-extrana-que",
+      "p:me-sorprende-que"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que y otras cosas",
@@ -11079,26 +11047,29 @@
   },
   {
     "id": "u53-0412",
-    "es": "El hecho de que el testigo cambie de versión me preocupa.",
-    "en": "The fact that the witness changes his version worries me.",
+    "es": "Me preocupa que el testigo cambie de versión cada semana.",
+    "en": "It worries me that the witness changes his version every week.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:cada-cualquier",
       "g:gender-articles",
       "g:gustar-full",
-      "g:mood-choice-fine",
       "g:present-ar",
+      "g:subj-emotion",
       "g:subj-wanting",
       "g:that-clauses",
       "l:cambiar",
-      "l:hacer",
       "l:preocupar",
+      "l:semana",
       "l:testigo",
       "l:versión",
-      "p:cambiar-de-por"
+      "p:cambiar-de-por",
+      "p:me-preocupa-que",
+      "p:tengo-miedo-de-que",
+      "p:veces-al"
     ],
     "targets": [
-      "g:mood-choice-fine",
       "l:versión"
     ],
     "kind": "statement",
@@ -11160,26 +11131,22 @@
   },
   {
     "id": "u53-0415",
-    "es": "El hecho de que lo repitieran tantas veces me hizo dudar.",
-    "en": "The fact that they repeated it so many times made me doubt.",
+    "es": "Lo repitieron tantas veces que empecé a dudar.",
+    "en": "They repeated it so many times that I started to doubt.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
-      "g:gender-articles",
-      "g:imperfect-subj",
-      "g:mood-choice-fine",
-      "g:preterite-ser-ir-hacer",
-      "g:that-clauses",
+      "g:preterite-spelling-stem",
+      "g:relative-que",
+      "g:verb-infinitive",
       "l:dudar",
-      "l:hacer",
+      "l:empezar",
       "l:repetir",
       "l:vez",
-      "p:me-te-nos-objects"
+      "p:empezar-terminar"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que y otras cosas",
@@ -11187,28 +11154,25 @@
   },
   {
     "id": "u53-0416",
-    "es": "El hecho de que todos guarden silencio me parece una señal.",
-    "en": "The fact that everyone keeps silent seems to me a sign.",
+    "es": "Que todos guarden silencio me parece una señal.",
+    "en": "Everyone keeping quiet seems like a sign to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:mood-choice-fine",
       "g:parecer-quedar",
       "g:present-ar",
       "g:present-er-ir",
       "g:subj-wanting",
-      "g:that-clauses",
+      "g:subj-wishes",
       "l:guardar",
-      "l:hacer",
       "l:parecer",
       "l:señal",
       "l:silenciar",
-      "p:describe-with-images"
+      "p:describe-with-images",
+      "p:que-subj-me-parece"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que y otras cosas",
@@ -11216,18 +11180,17 @@
   },
   {
     "id": "u53-0417",
-    "es": "El hecho de que llegue la sentencia hoy nos pone nerviosos.",
-    "en": "The fact that the ruling arrives today makes us nervous.",
+    "es": "Nos pone nerviosos que la sentencia llegue hoy.",
+    "en": "It makes us nervous that the ruling arrives today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
-      "g:mood-choice-fine",
       "g:present-er-ir",
+      "g:subj-emotion",
       "g:subj-wanting",
       "g:that-clauses",
-      "l:hacer",
       "l:hoy",
       "l:llegar",
       "l:nervioso",
@@ -11238,7 +11201,6 @@
       "p:me-te-nos-objects"
     ],
     "targets": [
-      "g:mood-choice-fine",
       "l:sentencia"
     ],
     "kind": "statement",
@@ -11248,27 +11210,23 @@
   },
   {
     "id": "u53-0418",
-    "es": "El hecho de que sea domingo no detiene a los abogados.",
-    "en": "The fact that it's Sunday doesn't stop lawyers.",
+    "es": "Aunque sea domingo, los abogados no descansan.",
+    "en": "Even if it's Sunday, the lawyers don't rest.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:mood-choice-fine",
+      "g:present-ar",
       "g:ser-identity",
-      "g:stem-boot",
+      "g:subj-concessive",
       "g:subj-irregulars",
-      "g:that-clauses",
       "l:abogado",
-      "l:detener",
+      "l:descansar",
       "l:domingo",
-      "l:hacer",
       "l:ser",
       "p:days-el-lunes"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que y otras cosas",
@@ -11276,25 +11234,20 @@
   },
   {
     "id": "u53-0419",
-    "es": "El hecho de que ustedes no vinieran nos dejó solos.",
-    "en": "The fact that you all didn't come left us alone.",
+    "es": "Que ustedes no vinieran nos dejó solos.",
+    "en": "You all not coming left us on our own.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
-      "g:gender-articles",
       "g:imperfect-subj",
-      "g:mood-choice-fine",
       "g:preterite-ar",
-      "g:that-clauses",
+      "g:subj-wishes",
       "l:dejar",
-      "l:hacer",
       "l:venir",
       "p:me-te-nos-objects"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que y otras cosas",
@@ -11302,25 +11255,25 @@
   },
   {
     "id": "u53-0420",
-    "es": "El hecho de que el café cierre temprano espanta a los clientes.",
-    "en": "The fact that the café closes early scares off customers.",
+    "es": "A los clientes no les gusta que el café cierre temprano.",
+    "en": "The customers don't like the café closing early.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:mood-choice-fine",
+      "g:gustar-basic",
+      "g:gustar-full",
+      "g:present-ar",
+      "g:subj-emotion-intro",
       "g:subj-wanting",
       "g:that-clauses",
       "l:café",
       "l:cerrar",
       "l:cliente",
-      "l:espanta",
-      "l:hacer",
+      "l:gustar",
       "l:temprano"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que y otras cosas",
@@ -11380,27 +11333,25 @@
   },
   {
     "id": "u53-0423",
-    "es": "El hecho de que el senador tenga un pasaporte diplomático es un detalle importante.",
-    "en": "The fact that the senator has a diplomatic passport is an important detail.",
+    "es": "No es un detalle menor que el senador tenga un pasaporte diplomático.",
+    "en": "It's no small detail that the senator has a diplomatic passport.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:aqui-tiene",
+      "g:comparatives",
       "g:gender-articles",
-      "g:mood-choice-fine",
       "g:ser-identity",
-      "g:that-clauses",
+      "g:subj-relative",
       "l:detalle",
       "l:diplomático",
-      "l:hacer",
-      "l:importante",
+      "l:menor",
       "l:pasaporte",
       "l:senador",
       "l:ser",
       "l:tener"
     ],
     "targets": [
-      "g:mood-choice-fine",
       "l:diplomático",
       "l:senador"
     ],
@@ -11411,26 +11362,22 @@
   },
   {
     "id": "u53-0424",
-    "es": "El hecho de que la alcaldía no explique nada cansa a cualquiera.",
-    "en": "The fact that city hall explains nothing tires anyone out.",
+    "es": "Cansa a cualquiera que la alcaldía no explique nada.",
+    "en": "It wears anyone out that city hall explains nothing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
       "g:gender-articles",
-      "g:mood-choice-fine",
       "g:negation-words",
       "g:present-ar",
       "g:subj-wanting",
       "g:that-clauses",
       "l:alcaldía",
       "l:cansar",
-      "l:explicar",
-      "l:hacer"
+      "l:explicar"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que y otras cosas",
@@ -11438,25 +11385,22 @@
   },
   {
     "id": "u53-0425",
-    "es": "El hecho de que haya turistas ahora no salva el negocio.",
-    "en": "The fact that there are tourists now doesn't save the business.",
+    "es": "Que haya turistas ahora no salva el negocio.",
+    "en": "Having tourists now doesn't save the business.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:mood-choice-fine",
       "g:present-ar",
       "g:subj-irregulars",
-      "g:that-clauses",
+      "g:subj-wishes",
       "l:ahora",
-      "l:hacer",
       "l:negocio",
       "l:salvar",
-      "l:turista"
+      "l:turista",
+      "p:que-subj-deseo"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que y otras cosas",
@@ -11491,27 +11435,25 @@
   },
   {
     "id": "u53-0427",
-    "es": "El hecho de que Altamira ofrezca más cada mes es una táctica.",
-    "en": "The fact that Altamira offers more every month is a tactic.",
+    "es": "No es casualidad que Altamira ofrezca más cada mes: es una táctica.",
+    "en": "It's no coincidence that Altamira offers more every month: it's a tactic.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
       "g:gender-articles",
-      "g:mood-choice-fine",
+      "g:relative-que",
       "g:ser-identity",
+      "g:subj-relative",
       "g:subj-wanting",
-      "g:that-clauses",
-      "l:hacer",
+      "l:casualidad",
       "l:mes",
       "l:ofrecer",
       "l:ser",
       "l:táctica",
       "p:veces-al"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que y otras cosas",
@@ -11552,27 +11494,22 @@
   },
   {
     "id": "u53-0429",
-    "es": "El hecho de que me lo hayan prometido no lo convierte en contrato.",
-    "en": "The fact that they promised it to me doesn't make it a contract.",
+    "es": "Que me lo hayan prometido no lo convierte en contrato.",
+    "en": "Their having promised it to me doesn't make it a contract.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
       "g:double-pronouns",
-      "g:gender-articles",
-      "g:mood-choice-fine",
       "g:stem-boot",
       "g:subj-perfect",
-      "g:that-clauses",
+      "g:subj-wishes",
       "l:contrato",
       "l:convertir",
-      "l:hacer",
       "l:prometer",
       "p:me-te-nos-objects"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que y otras cosas",
@@ -11580,27 +11517,22 @@
   },
   {
     "id": "u53-0430",
-    "es": "El hecho de que usted lo vea tan claro me tranquiliza.",
-    "en": "The fact that you see it so clearly reassures me. (polite)",
+    "es": "Me tranquiliza que usted lo vea tan claro.",
+    "en": "It reassures me that you see it so clearly. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:claro-listo",
-      "g:direct-objects",
-      "g:gender-articles",
-      "g:mood-choice-fine",
+      "g:lo-adjective",
       "g:present-ar",
       "g:subj-wanting",
       "g:that-clauses",
       "l:claro",
-      "l:hacer",
       "l:tranquilizar",
-      "l:ver",
+      "l:vea",
       "p:me-te-nos-objects"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que y otras cosas",
@@ -11640,27 +11572,25 @@
   },
   {
     "id": "u53-0432",
-    "es": "El hecho de que se arregle el techo no cambia el precio del arriendo.",
-    "en": "The fact that the roof gets fixed doesn't change the rent.",
+    "es": "Aunque arreglen el techo, el arriendo va a seguir igual.",
+    "en": "Even if they fix the roof, the rent is going to stay the same.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:igual",
       "g:gender-articles",
-      "g:mood-choice-fine",
-      "g:present-ar",
-      "g:reflexive-routine",
+      "g:ir-a-plans",
+      "g:subj-concessive",
       "g:subj-wanting",
-      "g:that-clauses",
-      "l:arreglarse",
+      "l:arreglar",
       "l:arriendo",
-      "l:cambiar",
-      "l:hacer",
-      "l:precio",
+      "l:igual",
+      "l:ir",
+      "l:seguir",
       "l:techo",
       "p:rectificar-reparar"
     ],
     "targets": [
-      "g:mood-choice-fine",
       "p:rectificar-reparar"
     ],
     "kind": "statement",
@@ -11670,7 +11600,7 @@
   },
   {
     "id": "u53-0433",
-    "es": "El hecho de que lo hubiese pensado antes no cambia el resultado.",
+    "es": "El hecho de que lo hubiera pensado antes no cambia el resultado.",
     "en": "The fact that he had thought of it earlier doesn't change the result.",
     "accept": [],
     "acceptEn": [],
@@ -11719,25 +11649,22 @@
   },
   {
     "id": "u53-0435",
-    "es": "El hecho de que me observen no me molesta.",
-    "en": "The fact that they watch me doesn't bother me.",
+    "es": "No me molesta que me observen.",
+    "en": "It doesn't bother me that they watch me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:gustar-full",
-      "g:mood-choice-fine",
       "g:present-ar",
+      "g:subj-emotion-intro",
       "g:subj-wanting",
       "g:that-clauses",
-      "l:hacer",
       "l:molestar",
       "l:observar",
+      "p:me-encanta-que",
       "p:me-te-nos-objects"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que y otras cosas",
@@ -11745,27 +11672,27 @@
   },
   {
     "id": "u53-0436",
-    "es": "El hecho de que haya llovido todo el día ayudó a los vecinos.",
-    "en": "The fact that it rained all day helped the neighbours.",
+    "es": "A Vale le vino bien que lloviera todo el día: vendió todo el chocolate.",
+    "en": "It suited Vale that it rained all day: she sold all the hot chocolate.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:bien-y-tu",
       "g:gender-articles",
-      "g:mood-choice-fine",
-      "g:preterite-ar",
-      "g:subj-perfect",
+      "g:imperfect-subj",
+      "g:indirect-objects",
+      "g:preterite-er-ir",
+      "g:preterite-irregular-strong",
       "g:that-clauses",
-      "l:ayudar",
+      "l:bien",
+      "l:chocolate",
       "l:día",
-      "l:hacer",
       "l:llover",
-      "l:vecino",
-      "p:personal-a",
+      "l:vender",
+      "l:venir",
       "p:todos-los-dias"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que y otras cosas",
@@ -11828,17 +11755,15 @@
   },
   {
     "id": "u53-0439",
-    "es": "El hecho de que me llamen tanto a esta hora no es normal.",
-    "en": "The fact that they call me so much at this hour isn't normal.",
+    "es": "No es normal que me llamen tanto a esta hora.",
+    "en": "It isn't normal that they call me so much at this hour.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:mood-choice-fine",
       "g:ser-identity",
+      "g:subj-value",
       "g:subj-wanting",
       "g:that-clauses",
-      "l:hacer",
       "l:hora",
       "l:llamar",
       "l:normal",
@@ -11846,9 +11771,7 @@
       "p:demonstratives-basic",
       "p:me-te-nos-objects"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que y otras cosas",
@@ -11883,20 +11806,18 @@
   },
   {
     "id": "u53-0441",
-    "es": "El hecho de que hablen en voz baja me pone nervioso.",
-    "en": "The fact that they speak in low voices makes me nervous.",
+    "es": "Me pone nervioso que hablen en voz baja.",
+    "en": "It makes me nervous that they talk in low voices.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
-      "g:gender-articles",
-      "g:mood-choice-fine",
       "g:present-er-ir",
+      "g:subj-emotion",
       "g:subj-wanting",
       "g:that-clauses",
       "l:bajo",
       "l:hablar",
-      "l:hacer",
       "l:nervioso",
       "l:poner",
       "l:voz",
@@ -11905,9 +11826,7 @@
       "p:me-te-nos-objects",
       "p:ver-oir-bien-mal"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que y otras cosas",
@@ -12003,25 +11922,23 @@
   },
   {
     "id": "u53-0445",
-    "es": "El hecho de que el diplomático salga hoy deja todo en el aire.",
-    "en": "The fact that the diplomat leaves today leaves everything up in the air.",
+    "es": "Que el diplomático salga hoy del país deja todo en el aire.",
+    "en": "The diplomat leaving the country today leaves everything up in the air.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:mood-choice-fine",
       "g:present-ar",
       "g:subj-wanting",
-      "g:that-clauses",
+      "g:subj-wishes",
       "l:aire",
       "l:dejar",
       "l:diplomático",
-      "l:hacer",
       "l:hoy",
+      "l:país",
       "l:salir"
     ],
     "targets": [
-      "g:mood-choice-fine",
       "l:diplomático"
     ],
     "kind": "statement",
@@ -12031,28 +11948,22 @@
   },
   {
     "id": "u53-0446",
-    "es": "El hecho de que tengan abogados caros no los vuelve inocentes.",
-    "en": "The fact that they have expensive lawyers doesn't make them innocent.",
+    "es": "Tener abogados caros no los vuelve inocentes.",
+    "en": "Having expensive lawyers doesn't make them innocent.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:direct-objects",
-      "g:gender-articles",
-      "g:mood-choice-fine",
       "g:stem-boot",
-      "g:subj-wanting",
-      "g:that-clauses",
+      "g:verb-infinitive",
       "l:abogado",
       "l:caro",
-      "l:hacer",
       "l:inocente",
       "l:tener",
       "l:volver"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que y otras cosas",
@@ -12060,26 +11971,24 @@
   },
   {
     "id": "u53-0447",
-    "es": "El hecho de que el niño pregunte tanto me encanta.",
-    "en": "The fact that the boy asks so many questions delights me.",
+    "es": "Me encanta que el niño pregunte tanto.",
+    "en": "I love that the boy asks so many questions.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-encanta",
       "g:gender-articles",
       "g:gustar-full",
-      "g:mood-choice-fine",
+      "g:subj-emotion-intro",
       "g:subj-wanting",
       "g:that-clauses",
       "l:encantar",
-      "l:hacer",
       "l:niño",
       "l:preguntar",
+      "p:entusiasmar-fascinar",
       "p:preguntar-pedir"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que y otras cosas",
@@ -12161,7 +12070,7 @@
   {
     "id": "u53-0451",
     "es": "Hasta el momento no hay acusados, y los rumores crecen.",
-    "en": "So far there are no accused, and the rumours are growing.",
+    "en": "So far nobody has been charged, and the rumours are growing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13119,17 +13028,22 @@
   },
   {
     "id": "u53-0489",
-    "es": "Todos hablan, y en cualquier caso nadie actúa.",
-    "en": "Everyone talks, and in any case nobody acts.",
+    "es": "Todos hablan y nadie actúa. En cualquier caso, yo sí voy a hacer algo.",
+    "en": "Everyone talks and nobody acts. In any case, I am going to do something.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:voy-a",
       "g:cada-cualquier",
+      "g:ir-a-plans",
       "g:present-ar",
       "l:actuar",
-      "l:caso",
+      "l:casar",
       "l:hablar",
-      "p:en-cualquier-caso"
+      "l:hacer",
+      "l:ir",
+      "p:en-cualquier-caso",
+      "p:indefinites-basic"
     ],
     "targets": [
       "p:en-cualquier-caso"
@@ -13194,15 +13108,17 @@
   },
   {
     "id": "u53-0492",
-    "es": "No sé si funciona.\nAl fin y al cabo, perder no cuesta nada.",
+    "es": "No sé si funciona.\nAl fin y al cabo, intentarlo no cuesta nada.",
     "en": "I don't know if it works.\nAfter all, trying costs nothing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:no-se",
+      "g:direct-objects",
       "g:gender-articles",
       "g:indirect-questions",
       "g:negation-words",
+      "g:object-pronoun-position",
       "g:present-ar",
       "g:stem-boot",
       "g:yo-irregular",
@@ -13210,7 +13126,7 @@
       "l:costar",
       "l:fin",
       "l:funcionar",
-      "l:perder",
+      "l:intentar",
       "l:saber",
       "p:en-cualquier-caso"
     ],
@@ -13482,7 +13398,7 @@
   {
     "id": "u53-0502",
     "es": "Cuestiono que ese papel sea auténtico.",
-    "en": "I question that this paper is authentic.",
+    "en": "I question whether that paper is authentic.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13507,7 +13423,7 @@
   {
     "id": "u53-0503",
     "es": "Pongo en duda que la reunión sirva de algo.",
-    "en": "I doubt that the meeting will serve any purpose.",
+    "en": "I question whether the meeting will achieve anything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13668,31 +13584,26 @@
   },
   {
     "id": "u53-0509",
-    "es": "Para mí que cabe la posibilidad de que Hernando sepa algo.",
-    "en": "If you ask me, there's a chance Hernando knows something.",
+    "es": "Para mí que Hernando sabe algo y no lo quiere decir.",
+    "en": "If you ask me, Hernando knows something and doesn't want to say it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "g:direct-objects",
       "g:prep-pronouns",
       "g:present-er-ir",
-      "g:subj-irregulars",
-      "g:subj-value",
+      "g:stem-boot",
       "g:that-clauses",
-      "l:caber",
-      "l:posibilidad",
+      "g:verb-infinitive",
+      "l:decir",
+      "l:querer",
       "l:saber",
-      "p:cabe-la-posibilidad",
-      "p:caber",
       "p:indefinites-basic",
-      "p:medir-pesar-caber",
       "p:para-inf",
       "p:para-mi-que",
       "p:saber-conocer"
     ],
     "targets": [
-      "l:posibilidad",
-      "p:cabe-la-posibilidad",
       "p:para-mi-que"
     ],
     "kind": "statement",
@@ -14149,29 +14060,27 @@
   },
   {
     "id": "u53-0527",
-    "es": "Para mí que no cabe duda: fue Altamira.",
-    "en": "If you ask me, there's no doubt: it was Altamira.",
+    "es": "Para mí que fue Altamira, aunque no lo puedo probar.",
+    "en": "If you ask me, it was Altamira, though I can't prove it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:puedo",
+      "g:aunque-indicative",
+      "g:direct-objects",
       "g:prep-pronouns",
-      "g:present-er-ir",
       "g:preterite-ser-ir-hacer",
       "g:ser-identity",
+      "g:stem-boot",
       "g:that-clauses",
-      "l:caber",
-      "l:duda",
+      "g:verb-infinitive",
+      "l:poder",
+      "l:probarse",
       "l:ser",
-      "p:cabe-la-posibilidad",
-      "p:caber",
-      "p:medir-pesar-caber",
-      "p:no-me-cabe-duda",
       "p:para-inf",
       "p:para-mi-que"
     ],
     "targets": [
-      "p:cabe-la-posibilidad",
-      "p:no-me-cabe-duda",
       "p:para-mi-que"
     ],
     "kind": "statement",
@@ -15307,7 +15216,7 @@
   {
     "id": "u53-0568",
     "es": "Tiene toda la pinta de ser una oferta falsa.",
-    "en": "It has every look of being a fake offer.",
+    "en": "It has every sign of being a fake offer.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16558,17 +16467,19 @@
   },
   {
     "id": "u53-0616",
-    "es": "No des por seguro que ganamos.",
-    "en": "Don't take it as certain that we win. (to a friend)",
+    "es": "No des por seguro que vamos a ganar.",
+    "en": "Don't take it for granted that we're going to win. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:vamos-a",
+      "g:ir-a-plans",
       "g:negative-commands",
       "g:por-para-1",
-      "g:present-ar",
       "g:that-clauses",
       "l:dar",
       "l:ganar",
+      "l:ir",
       "l:seguro",
       "p:dar-por-sentado",
       "p:estar-seguro-de-que"
@@ -16584,7 +16495,7 @@
   {
     "id": "u53-0617",
     "es": "Ya dieron por hecho que el café cierra en diciembre.",
-    "en": "They already take it as fact that the café closes in December.",
+    "en": "They've already taken it as fact that the café closes in December.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17073,7 +16984,7 @@
   {
     "id": "u53-0636",
     "es": "Pongo en duda que haya habido una votación.",
-    "en": "I doubt there was ever a vote.",
+    "en": "I question whether there was ever a vote.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17201,7 +17112,7 @@
   {
     "id": "u53-0641",
     "es": "Nadie puso en duda lo que dijo Hernando.",
-    "en": "Nobody doubted what Hernando said.",
+    "en": "Nobody questioned what Hernando said.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18190,7 +18101,7 @@
   {
     "id": "u53-0676",
     "es": "Rectificó su postura cuando vio las pruebas.",
-    "en": "He changed his stance when he saw the evidence.",
+    "en": "He reversed his position when he saw the evidence.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18470,8 +18381,8 @@
   },
   {
     "id": "u53-0687",
-    "es": "Mejor dicho, necesitamos tiempo, no dinero.",
-    "en": "Rather, we need time, not money.",
+    "es": "Necesitamos dinero; mejor dicho, necesitamos tiempo.",
+    "en": "We need money; or rather, we need time.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18550,27 +18461,21 @@
   },
   {
     "id": "u53-0690",
-    "es": "Voy a decirlo de otra forma: o sea, no quiero ir.",
-    "en": "I'm going to say it another way: I mean, I don't want to go.",
+    "es": "Iría, pero estoy cansado; o sea, no voy.",
+    "en": "I'd go, but I'm tired; I mean, I'm not going.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:o-sea",
-      "c:quiero",
-      "c:voy-a",
-      "g:direct-objects",
+      "c:voy-vas",
+      "g:conditional",
+      "g:estar-location-states",
       "g:ir-a-plans",
-      "g:object-pronoun-position",
-      "g:present-ar",
       "g:reformulation",
-      "g:stem-boot",
-      "g:verb-infinitive",
-      "l:decir",
-      "l:formar",
+      "l:cansado",
+      "l:estar",
       "l:ir",
-      "l:querer",
-      "l:ser",
-      "p:otro-no-article"
+      "l:ser"
     ],
     "targets": [
       "g:reformulation"
@@ -18860,7 +18765,7 @@
   {
     "id": "u53-0701",
     "es": "¿Tienes entendido que Altamira ya compró la esquina?",
-    "en": "Do you understand that Altamira has already bought the corner? (to a friend)",
+    "en": "Have you heard that Altamira has already bought the corner? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18887,7 +18792,7 @@
   {
     "id": "u53-0702",
     "es": "¿Usted tiene entendido que la reunión se aplazó?",
-    "en": "Do you understand that the meeting was postponed? (polite)",
+    "en": "Have you heard that the meeting was postponed? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19201,8 +19106,8 @@
   },
   {
     "id": "u53-0715",
-    "es": "¿Hasta la fecha, ha respondido la entidad?",
-    "en": "To date, has the agency answered?",
+    "es": "¿La entidad ha respondido hasta la fecha?",
+    "en": "Has the agency answered to date?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19723,8 +19628,8 @@
   },
   {
     "id": "u53-0736",
-    "es": "¿Qué tiene en apariencia de especial ese contrato?",
-    "en": "What is special about that contract, on the surface?",
+    "es": "En apariencia, ¿qué tiene de especial ese contrato?",
+    "en": "On the surface, what is special about that contract?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19862,7 +19767,7 @@
   {
     "id": "u53-0741",
     "es": "¿No se descarta que haya más sorpresas?",
-    "en": "Isn't it ruled out that there will be more surprises?",
+    "en": "Are more surprises not ruled out?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20002,11 +19907,12 @@
   },
   {
     "id": "u53-0747",
-    "es": "¿Es innegable que el barrio cambió?",
-    "en": "Is it undeniable that the neighbourhood has changed?",
+    "es": "¿De verdad es innegable que el barrio cambió?",
+    "en": "Is it really undeniable that the neighbourhood has changed?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:en-serio",
       "g:gender-articles",
       "g:preterite-ar",
       "g:ser-identity",
@@ -20015,6 +19921,7 @@
       "l:cambiar",
       "l:innegable",
       "l:ser",
+      "l:verdad",
       "p:esta-claro-que",
       "p:no-me-cabe-duda"
     ],
@@ -20028,20 +19935,23 @@
   },
   {
     "id": "u53-0748",
-    "es": "¿Dices que me equivoqué, o solo que dudas?",
-    "en": "Are you saying I was wrong, or only that you doubt? (to a friend)",
+    "es": "¿Dices que me equivoqué, o solo que tienes dudas?",
+    "en": "Are you saying I was wrong, or only that you have doubts? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
+      "c:tienes",
       "g:preterite-spelling-stem",
       "g:reflexive-routine",
+      "g:stem-boot",
       "g:stem-e-i",
       "g:that-clauses",
       "l:decir",
-      "l:dudar",
+      "l:duda",
       "l:equivocarse",
-      "p:equivocarse"
+      "l:tener",
+      "p:equivocarse",
+      "p:no-tengo-tan-claro"
     ],
     "targets": [],
     "kind": "question",
@@ -20123,7 +20033,7 @@
   {
     "id": "u53-0752",
     "es": "¿Cuestionas que esa sea la causa?",
-    "en": "Do you question that this is the cause? (to a friend)",
+    "en": "Do you question whether that's the cause? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20198,27 +20108,18 @@
   },
   {
     "id": "u53-0755",
-    "es": "¿El tren salía a las seis, según me dijeron?",
-    "en": "The train was leaving at six, or so they told me?",
+    "es": "¿El tren salía a las seis, o a las siete?",
+    "en": "Was the train leaving at six, or at seven?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:segun",
       "g:gender-articles",
       "g:imperfect-habitual",
-      "g:pret-vs-imperfect",
-      "g:preterite-irregular-strong",
-      "l:decir",
       "l:salir",
       "l:tren",
-      "p:imperfecto-citativo",
-      "p:me-te-nos-objects",
-      "p:segun-dicen",
       "p:telling-time"
     ],
-    "targets": [
-      "p:imperfecto-citativo"
-    ],
+    "targets": [],
     "kind": "question",
     "unit": "u53",
     "theme": "preguntas sobre lo que se dice",
@@ -20226,11 +20127,12 @@
   },
   {
     "id": "u53-0756",
-    "es": "¿Al parecer, ustedes ya hablaron con el alcalde?",
-    "en": "Apparently, you all have already spoken with the mayor?",
+    "es": "Al parecer, ustedes ya hablaron con el alcalde, ¿no?",
+    "en": "Apparently you all have already spoken with the mayor, haven't you?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:gender-articles",
       "g:hedging-distance",
       "g:prep-infinitive",
@@ -20250,11 +20152,12 @@
   },
   {
     "id": "u53-0757",
-    "es": "¿Por lo visto, Tomás no piensa vender?",
-    "en": "Apparently, Tomás doesn't intend to sell?",
+    "es": "Por lo visto, Tomás no piensa vender, ¿cierto?",
+    "en": "Apparently Tomás doesn't intend to sell, right?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:direct-objects",
       "g:hedging-distance",
       "g:stem-boot",
@@ -20276,11 +20179,12 @@
   },
   {
     "id": "u53-0758",
-    "es": "¿Supuestamente, el pan llega a las cinco?",
-    "en": "Supposedly, the bread arrives at five?",
+    "es": "Supuestamente el pan llega a las cinco, ¿no?",
+    "en": "Supposedly the bread arrives at five, doesn't it?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:adverbs-mente",
       "g:gender-articles",
       "g:hedging-distance",
@@ -20301,7 +20205,7 @@
   {
     "id": "u53-0759",
     "es": "¿Es decir que nadie sabe quién manda aquí?",
-    "en": "That is, nobody knows who is in charge here?",
+    "en": "So, in other words, nobody knows who's in charge here?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20383,20 +20287,23 @@
   },
   {
     "id": "u53-0762",
-    "es": "¿Mejor dicho, ya no quieres ayudar?",
-    "en": "Rather, you no longer want to help? (to a friend)",
+    "es": "¿O sea que ya no quieres ayudar?",
+    "en": "So you don't want to help any more? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:o-sea",
       "c:ya-no",
       "g:reformulation",
       "g:stem-boot",
+      "g:that-clauses",
       "g:verb-infinitive",
       "l:ayudar",
-      "l:decir",
-      "l:mejor",
       "l:querer",
-      "p:o-sea-que"
+      "l:ser",
+      "p:entonces-quedamos",
+      "p:o-sea-que",
+      "p:quieres-decir-que"
     ],
     "targets": [
       "g:reformulation",
@@ -20487,7 +20394,7 @@
   {
     "id": "u53-0766",
     "es": "¿Hasta qué punto es innegable la influencia de Altamira?",
-    "en": "To what point is Altamira's influence undeniable?",
+    "en": "To what extent is Altamira's influence undeniable?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20646,8 +20553,8 @@
   },
   {
     "id": "u53-0772",
-    "es": "¿De ser así, quién paga la multa?",
-    "en": "If so, who pays the fine?",
+    "es": "Y de ser así, ¿quién paga la multa?",
+    "en": "And if so, who pays the fine?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20671,8 +20578,8 @@
   },
   {
     "id": "u53-0773",
-    "es": "¿De no ser así, qué hacemos?",
-    "en": "If not, what do we do?",
+    "es": "Y de no ser así, ¿qué hacemos?",
+    "en": "And if not, what do we do?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20775,22 +20682,22 @@
   },
   {
     "id": "u53-0777",
-    "es": "¿Había visto usted una crisis sin precedentes como esta?",
-    "en": "Had you ever seen an unprecedented crisis like this? (polite)",
+    "es": "¿Usted cree que esta crisis no tiene precedentes?",
+    "en": "Do you think this crisis is without precedent? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:sin-precedentes",
-      "g:gender-articles",
-      "g:pluperfect",
+      "c:tienes",
+      "g:present-er-ir",
+      "g:stem-boot",
+      "g:that-clauses",
+      "l:creer",
       "l:crisis",
       "l:precedente",
-      "l:ver",
-      "p:con-sin",
+      "l:tener",
       "p:demonstratives-basic"
     ],
     "targets": [
-      "c:sin-precedentes",
       "l:precedente"
     ],
     "kind": "question",
@@ -21591,20 +21498,22 @@
   },
   {
     "id": "u53-0811",
-    "es": "¿Cuál es la apariencia del plan y cuál es la realidad?",
-    "en": "What is the plan's appearance and what is its reality?",
+    "es": "¿El plan es bueno de verdad o solo en apariencia?",
+    "en": "Is the plan really good, or only on the surface?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:en-serio",
       "g:gender-articles",
-      "g:questions",
       "g:ser-identity",
       "l:apariencia",
-      "l:cuál",
+      "l:bueno",
       "l:plan",
-      "l:realidad",
       "l:ser",
-      "p:question-word-order"
+      "l:verdad",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:en-apariencia"
     ],
     "targets": [
       "l:apariencia"
@@ -22002,7 +21911,7 @@
   {
     "id": "u53-0828",
     "es": "¿Cuántos testigos hay en paradero desconocido?",
-    "en": "How many witnesses are in an unknown whereabouts?",
+    "en": "How many witnesses' whereabouts are unknown?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22813,21 +22722,22 @@
   },
   {
     "id": "u53-0858",
-    "es": "Pero Hernando no se confunde.\nNo digo que se confunda, digo que ya es de noche a las cinco.",
-    "en": "But Hernando doesn't get confused.\nI'm not saying he gets confused, I'm saying it's dark by five.",
+    "es": "Pero Hernando no se confunde.\nNo digo que se confunda, digo que a esa hora ya estaba oscuro.",
+    "en": "But Hernando doesn't get confused.\nI'm not saying he gets confused, I'm saying it was already dark at that hour.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:no-se",
-      "g:gender-articles",
-      "g:ser-identity",
+      "g:demonstratives",
+      "g:estar-location-states",
+      "g:imperfect-states",
       "g:that-clauses",
       "g:yo-irregular",
       "l:decir",
-      "l:noche",
-      "l:ser",
-      "p:es-de-noche-tarde",
-      "p:telling-time"
+      "l:estar",
+      "l:hora",
+      "l:oscuro",
+      "p:tiene-mucha-luz"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -23100,26 +23010,23 @@
   },
   {
     "id": "u53-0868",
-    "es": "Ayer dijo \"Altamira\". Lo oí.\nJuraría que dijo \"Altamira\" porque alguien lo repitió antes.",
-    "en": "Yesterday he said \"Altamira\". I heard him.\nI could swear he said \"Altamira\" because someone repeated it before.",
+    "es": "Simón dijo \"Altamira\" ayer.\nJuraría que se lo oyó a alguien en la radio.",
+    "en": "Simón said \"Altamira\" yesterday.\nI could swear he heard it from someone on the radio.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ayer-anoche",
-      "c:porque",
-      "g:cause-result",
       "g:conditional",
-      "g:direct-objects",
-      "g:preterite-er-ir",
+      "g:double-pronouns",
+      "g:gender-articles",
       "g:preterite-irregular-strong",
       "g:preterite-spelling-stem",
       "g:that-clauses",
-      "l:antes",
       "l:ayer",
       "l:decir",
       "l:jurar",
       "l:oír",
-      "l:repetir",
+      "l:radio",
       "p:indefinites-basic",
       "p:juraria-que",
       "p:pues-claro-que"
@@ -23545,22 +23452,24 @@
   },
   {
     "id": "u53-0883",
-    "es": "¿Qué hacemos con la carta?\nDe no ser así, la quemamos.",
-    "en": "What do we do with the letter?\nIf not, we burn it.",
+    "es": "¿Y si la carta es falsa?\nDe ser así, la llevamos a la policía.",
+    "en": "And if the letter is fake?\nIf so, we take it to the police.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:de-ser-asi",
+      "g:adjective-agreement",
       "g:direct-objects",
       "g:gender-articles",
       "g:present-ar",
-      "g:present-er-ir",
-      "g:questions",
+      "g:ser-identity",
+      "g:si-present",
       "l:carta",
-      "l:hacer",
-      "l:quemar",
-      "l:qué",
-      "l:ser"
+      "l:falso",
+      "l:llevar",
+      "l:policía",
+      "l:ser",
+      "p:personal-a"
     ],
     "targets": [
       "c:de-ser-asi"
@@ -23998,14 +23907,13 @@
   },
   {
     "id": "u53-0899",
-    "es": "¿Piensa vender?\nNo me cabe duda de que no.",
-    "en": "Does he intend to sell?\nI have no doubt that he doesn't.",
+    "es": "¿Piensa vender?\nNo me cabe duda: no vende.",
+    "en": "Does he intend to sell?\nI have no doubt: he isn't selling.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-er-ir",
       "g:stem-boot",
-      "g:that-clauses",
       "l:caber",
       "l:duda",
       "l:pensar",
@@ -24406,21 +24314,24 @@
   },
   {
     "id": "u53-0913",
-    "es": "Tomás, ¿por qué volviste de Toronto?\nMejor dicho, ¿por qué me quedé? Por Rosa.",
-    "en": "Tomás, why did you come back from Toronto?\nRather, why did I stay? Because of Rosa.",
+    "es": "Tomás, ¿por qué viniste a Bogotá?\nVine por la herencia; mejor dicho, me quedé por el café.",
+    "en": "Tomás, why did you come to Bogotá?\nI came for the inheritance; or rather, I stayed for the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:por-para-1",
       "g:preterite-ar",
-      "g:preterite-er-ir",
+      "g:preterite-irregular-strong",
       "g:reflexive-routine",
       "g:reformulation",
+      "l:café",
       "l:decir",
+      "l:herencia",
       "l:mejor",
       "l:quedarse",
       "l:qué",
-      "l:volver",
+      "l:venir",
       "p:o-sea-que",
       "p:prep-questions-basic"
     ],
@@ -24959,31 +24870,28 @@
   },
   {
     "id": "u53-0931",
-    "es": "¿Por qué te ríes?\nPorque el bobo de Altamira dijo que vive aquí.",
-    "en": "Why are you laughing? (to a friend)\nBecause silly old Altamira said he lives here.",
+    "es": "¿Por qué te ríes?\nPorque el bobo del abogado de Altamira se tomó el tinto de Hernando.",
+    "en": "Why are you laughing? (to a friend)\nBecause Altamira's idiot lawyer drank Hernando's coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:porque",
       "g:cause-result",
       "g:gender-articles",
-      "g:present-er-ir",
-      "g:preterite-irregular-strong",
+      "g:passive-se",
+      "g:preterite-ar",
       "g:stem-e-i",
-      "g:that-clauses",
-      "l:aquí",
-      "l:decir",
+      "l:abogado",
       "l:qué",
       "l:reír",
-      "l:vivir",
-      "p:aqui-ahi-alla",
-      "p:el-x-de-y",
+      "l:tinto",
+      "l:tomar",
+      "p:comerse-todo",
+      "p:dativo-aspectual",
       "p:me-te-nos-objects",
       "p:prep-questions-basic"
     ],
-    "targets": [
-      "p:el-x-de-y"
-    ],
+    "targets": [],
     "kind": "dialogue",
     "unit": "u53",
     "theme": "conversaciones en el café",
@@ -25103,8 +25011,8 @@
   },
   {
     "id": "u53-0936",
-    "es": "¿Cuánto ha pasado desde que llegaste?\nTengo la sensación de que años, pero fueron meses.",
-    "en": "How long has it been since you arrived? (to a friend)\nI have the feeling it's been years, but it was months.",
+    "es": "¿Cuánto ha pasado desde que llegaste?\nTengo la sensación de que pasaron años, pero solo fueron meses.",
+    "en": "How long has it been since you arrived? (to a friend)\nI have the feeling years have passed, but it was only months.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -25122,9 +25030,11 @@
       "l:llegar",
       "l:mes",
       "l:pasado",
+      "l:pasar",
       "l:sensación",
       "l:ser",
       "l:tener",
+      "p:sobre-todo-solo",
       "p:tener-la-sensacion",
       "p:tengo-la-impresion-de-que"
     ],
@@ -26150,7 +26060,7 @@
   {
     "id": "u53-0973",
     "es": "Será muy rico, pero no tiene modales.",
-    "en": "He may be very nice, but he has no manners.",
+    "en": "He may be very rich, but he has no manners.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26543,20 +26453,22 @@
   },
   {
     "id": "u53-0990",
-    "es": "Hernando dice que el concejal nunca tomó un taxi honesto.",
-    "en": "Hernando says the council member never took an honest taxi.",
+    "es": "Hernando dice que el concejal nunca le dio propina a un taxista.",
+    "en": "Hernando says the council member never tipped a taxi driver.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ar",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:preterite-irregular-strong",
       "g:stem-e-i",
       "g:that-clauses",
       "l:concejal",
+      "l:dar",
       "l:decir",
-      "l:honesto",
-      "l:taxi",
-      "l:tomar",
+      "l:propina",
+      "l:taxista",
       "p:frequency-scale"
     ],
     "targets": [],
@@ -27220,7 +27132,7 @@
   {
     "id": "u53-1018",
     "es": "¿Te acuerdas de lo que dijo Rosa?\nSí: cada quien tiene su versión, pero el café es uno solo.",
-    "en": "Do you remember what Rosa said? (to a friend)\nYes: everyone has their version, but the café is one.",
+    "en": "Do you remember what Rosa said? (to a friend)\nYes: everyone has their version, but there's only one café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27284,8 +27196,8 @@
   },
   {
     "id": "u53-1020",
-    "es": "¿Cómo se dice rumor en inglés?",
-    "en": "How do you say rumor in English?",
+    "es": "¿Cómo se dice \"rumor\" en inglés?",
+    "en": "How do you say \"rumor\" in English?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27803,7 +27715,7 @@
   {
     "id": "u53-1042",
     "es": "¿A quién le creemos, al abogado o a la vecina?",
-    "en": "Whom do we believe, the lawyer or the neighbour?",
+    "en": "Who do we believe, the lawyer or the neighbour?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27950,24 +27862,22 @@
   },
   {
     "id": "u53-1048",
-    "es": "El hecho de que Vale llegue temprano ayuda a todos.",
-    "en": "The fact that Vale arrives early helps everyone.",
+    "es": "A todos nos ayuda que Vale llegue temprano.",
+    "en": "It helps all of us that Vale arrives early.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:mood-choice-fine",
+      "g:present-ar",
+      "g:subj-influence",
       "g:subj-wanting",
       "g:that-clauses",
-      "l:ayuda",
-      "l:hacer",
+      "l:ayudar",
       "l:llegar",
       "l:temprano",
-      "p:llegar-a-tiempo"
+      "p:llegar-a-tiempo",
+      "p:me-te-nos-objects"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "últimos ajustes",
@@ -28004,27 +27914,25 @@
   },
   {
     "id": "u53-1050",
-    "es": "El hecho de que Hernando recuerde cada detalle asusta a los abogados.",
-    "en": "The fact that Hernando remembers every detail frightens the lawyers.",
+    "es": "A los abogados les asusta que Hernando recuerde cada detalle.",
+    "en": "It frightens the lawyers that Hernando remembers every detail.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
       "g:gender-articles",
-      "g:mood-choice-fine",
+      "g:gustar-full",
       "g:present-ar",
+      "g:subj-emotion",
       "g:subj-wanting",
       "g:that-clauses",
       "l:abogado",
       "l:asustar",
       "l:detalle",
-      "l:hacer",
       "l:recordar",
       "p:recordar-acordarse"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "últimos ajustes",
@@ -28032,28 +27940,24 @@
   },
   {
     "id": "u53-1051",
-    "es": "El hecho de que sea lunes no cambia la fecha de la audiencia.",
-    "en": "The fact that it's Monday doesn't change the hearing date.",
+    "es": "Aunque sea lunes, la audiencia sigue en pie.",
+    "en": "Even if it's Monday, the hearing is still on.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:mood-choice-fine",
-      "g:present-ar",
       "g:ser-identity",
+      "g:stem-e-i",
+      "g:subj-concessive",
       "g:subj-irregulars",
-      "g:that-clauses",
       "l:audiencia",
-      "l:cambiar",
-      "l:fecha",
-      "l:hacer",
       "l:lunes",
+      "l:pie",
+      "l:seguir",
       "l:ser",
       "p:days-el-lunes"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "últimos ajustes",
@@ -28061,27 +27965,23 @@
   },
   {
     "id": "u53-1052",
-    "es": "El hecho de que Mariana viaje a Miami dice que el caso es serio.",
-    "en": "The fact that Mariana is travelling to Miami says the case is serious.",
+    "es": "Si Mariana viaja a Miami, es porque el caso es serio.",
+    "en": "If Mariana is travelling to Miami, it's because the case is serious.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:porque",
+      "g:cause-result",
       "g:gender-articles",
-      "g:mood-choice-fine",
+      "g:present-ar",
       "g:ser-identity",
-      "g:stem-e-i",
-      "g:subj-wanting",
-      "g:that-clauses",
+      "g:si-present",
       "l:caso",
-      "l:decir",
-      "l:hacer",
       "l:ser",
       "l:serio",
       "l:viajar"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "últimos ajustes",
@@ -28089,28 +27989,25 @@
   },
   {
     "id": "u53-1053",
-    "es": "El hecho de que Tomás cocine tinto cada mañana tranquiliza a los clientes.",
-    "en": "The fact that Tomás makes black coffee every morning reassures the customers.",
+    "es": "A los clientes los tranquiliza que Tomás haga el tinto cada mañana.",
+    "en": "It reassures the customers that Tomás makes the black coffee every morning.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
+      "g:direct-objects",
       "g:gender-articles",
-      "g:mood-choice-fine",
       "g:present-ar",
       "g:subj-wanting",
       "g:that-clauses",
       "l:cliente",
-      "l:cocinar",
       "l:hacer",
       "l:mañana",
       "l:tinto",
       "l:tranquilizar",
       "p:veces-al"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "últimos ajustes",
@@ -28118,27 +28015,26 @@
   },
   {
     "id": "u53-1054",
-    "es": "El hecho de que alguien siembre dudas a propósito no sorprende a nadie.",
-    "en": "The fact that someone sows doubts on purpose surprises nobody.",
+    "es": "A nadie le sorprende que alguien siembre dudas a propósito.",
+    "en": "It surprises nobody that someone sows doubts on purpose.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:mood-choice-fine",
-      "g:negation-words",
+      "g:gustar-full",
       "g:present-er-ir",
+      "g:subj-emotion",
       "g:subj-wanting",
       "g:that-clauses",
       "l:duda",
-      "l:hacer",
       "l:propósito",
       "l:sembrar",
       "l:sorprender",
       "p:indefinites-basic",
+      "p:me-extrana-que",
+      "p:me-sorprende-que",
       "p:sembrar-la-duda"
     ],
     "targets": [
-      "g:mood-choice-fine",
       "l:sembrar",
       "p:sembrar-la-duda"
     ],
@@ -28849,8 +28745,8 @@
   },
   {
     "id": "u53-1081",
-    "es": "¿Es cierto que, al parecer, el café va a cerrar?",
-    "en": "Is it true that, apparently, the café is going to close?",
+    "es": "¿Es cierto lo que dicen? Al parecer, el café va a cerrar.",
+    "en": "Is what they're saying true? Apparently the café is going to close.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28858,14 +28754,15 @@
       "g:hedging-distance",
       "g:ir-a-plans",
       "g:prep-infinitive",
+      "g:relatives-donde-lo-que",
       "g:ser-identity",
-      "g:that-clauses",
+      "g:stem-e-i",
       "l:café",
       "l:cerrar",
+      "l:decir",
       "l:ir",
       "l:parecer",
       "l:ser",
-      "p:es-verdad-eso-de-que",
       "p:presuntamente-al-parecer"
     ],
     "targets": [
@@ -28905,7 +28802,7 @@
   {
     "id": "u53-1083",
     "es": "Supuestamente Altamira ya pagó la mitad del terreno.",
-    "en": "Supposedly Altamira already paid half for the land.",
+    "en": "Supposedly Altamira has already paid for half the land.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29171,7 +29068,7 @@
   },
   {
     "id": "u53-1093",
-    "es": "Supuestamente la transparencia era la prioridad de el nuevo alcalde.",
+    "es": "Supuestamente la transparencia era la prioridad del nuevo alcalde.",
     "en": "Supposedly transparency was the new mayor's priority.",
     "accept": [],
     "acceptEn": [],
@@ -30372,8 +30269,8 @@
   },
   {
     "id": "u53-1136",
-    "es": "Al parecer, hubo una impresión equivocada sobre el horario.",
-    "en": "Apparently, there was a mistaken impression about the schedule.",
+    "es": "Al parecer, todos tenían una impresión equivocada del horario.",
+    "en": "Apparently, everyone had the wrong impression of the schedule.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -30386,8 +30283,8 @@
       "l:horario",
       "l:impresión",
       "l:parecer",
+      "l:tener",
       "p:equivocarse",
-      "p:event-ser-en",
       "p:presuntamente-al-parecer"
     ],
     "targets": [
@@ -30815,8 +30712,8 @@
   },
   {
     "id": "u53-1152",
-    "es": "Por lo visto, la apariencia del barrio cambió en un año.",
-    "en": "By the look of it, the look of the neighbourhood changed in a year.",
+    "es": "Por lo visto, el barrio cambió mucho de apariencia en un año.",
+    "en": "Apparently, the neighbourhood changed a lot in appearance in a year.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -30830,6 +30727,7 @@
       "l:barrio",
       "l:cambiar",
       "l:vestir",
+      "p:quantifiers-basic",
       "p:segun-dicen"
     ],
     "targets": [
@@ -31095,22 +30993,22 @@
   },
   {
     "id": "u53-1163",
-    "es": "El café no es mío, o sea, es de Tomás desde hace un mes.",
-    "en": "The café isn't mine, I mean, it has been Tomás's for a month.",
+    "es": "El café no es mío, o sea, es de Tomás desde que murió Rosa.",
+    "en": "The café isn't mine, I mean, it has been Tomás's since Rosa died.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:o-sea",
       "g:gender-articles",
-      "g:hace-que-desde",
       "g:possessives-stressed",
+      "g:preterite-spelling-stem",
       "g:reformulation",
       "g:ser-identity",
       "l:café",
-      "l:hace",
-      "l:mes",
+      "l:morir",
       "l:ser",
-      "p:de-owner"
+      "p:de-owner",
+      "p:naci-en"
     ],
     "targets": [
       "g:reformulation"
@@ -31122,8 +31020,8 @@
   },
   {
     "id": "u53-1164",
-    "es": "Mejor dicho, no queremos pagarlo.",
-    "en": "Rather, we don't want to pay it.",
+    "es": "No podemos pagarlo; mejor dicho, no queremos.",
+    "en": "We can't pay it; or rather, we don't want to.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -31135,6 +31033,7 @@
       "l:decir",
       "l:mejor",
       "l:pagar",
+      "l:poder",
       "l:querer",
       "p:o-sea-que"
     ],
@@ -31639,13 +31538,14 @@
   },
   {
     "id": "u53-1182",
-    "es": "Mejor dicho, estoy cansada de esperar.",
-    "en": "Rather, I'm tired of waiting. (a woman speaking)",
+    "es": "Estoy un poco cansada; mejor dicho, muy cansada de esperar.",
+    "en": "I'm a bit tired; or rather, very tired of waiting. (a woman speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:estar-location-states",
+      "g:gender-articles",
       "g:reformulation",
       "l:cansado",
       "l:decir",
@@ -31653,7 +31553,9 @@
       "l:estar",
       "l:mejor",
       "p:estar-harto-de",
-      "p:o-sea-que"
+      "p:o-sea-que",
+      "p:poco-un-poco",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:reformulation",
@@ -31889,22 +31791,21 @@
   },
   {
     "id": "u53-1191",
-    "es": "Mejor dicho, ya no hay nada que reparar.",
-    "en": "Rather, there is nothing left to repair.",
+    "es": "Hay poco que reparar; mejor dicho, nada.",
+    "en": "There's little to repair; or rather, nothing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hay",
-      "c:no-hay-nada",
-      "c:ya-no",
       "g:hay-vs-esta",
-      "g:negation-words",
       "g:reformulation",
-      "g:relative-que",
+      "g:that-clauses",
       "l:decir",
       "l:mejor",
       "l:reparar",
       "p:o-sea-que",
+      "p:poco-un-poco",
+      "p:quantifiers-basic",
       "p:rectificar-reparar"
     ],
     "targets": [
@@ -31919,21 +31820,26 @@
   },
   {
     "id": "u53-1192",
-    "es": "Mejor dicho, olvídate del contrato.",
-    "en": "Rather, forget about the contract. (to a friend)",
+    "es": "Lee el contrato; mejor dicho, olvídate del contrato y llama al abogado.",
+    "en": "Read the contract; or rather, forget the contract and call the lawyer. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
       "g:commands-with-pronouns",
       "g:gender-articles",
+      "g:present-er-ir",
       "g:reformulation",
+      "l:abogado",
       "l:contrato",
       "l:decir",
+      "l:leer",
+      "l:llamar",
       "l:mejor",
       "l:olvidar",
       "p:me-te-nos-objects",
-      "p:o-sea-que"
+      "p:o-sea-que",
+      "p:personal-a"
     ],
     "targets": [
       "g:reformulation",
@@ -31946,19 +31852,20 @@
   },
   {
     "id": "u53-1193",
-    "es": "Mejor dicho, vengan todos mañana temprano.",
-    "en": "Rather, come tomorrow morning, all of you. (you all)",
+    "es": "Vengan a las diez; mejor dicho, vengan todos temprano.",
+    "en": "Come at ten; or rather, all of you come early. (you all)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:commands-usted",
+      "g:gender-articles",
       "g:reformulation",
       "l:decir",
-      "l:mañana",
       "l:mejor",
       "l:temprano",
       "l:venir",
-      "p:o-sea-que"
+      "p:o-sea-que",
+      "p:telling-time"
     ],
     "targets": [
       "g:reformulation",
@@ -32083,7 +31990,7 @@
   },
   {
     "id": "u53-1198",
-    "es": "Es decir, que nadie aceptó la responsabilidad.",
+    "es": "Es decir, nadie aceptó la responsabilidad.",
     "en": "That is, nobody accepted responsibility.",
     "accept": [],
     "acceptEn": [],
@@ -32092,7 +31999,6 @@
       "g:preterite-ar",
       "g:reformulation",
       "g:ser-identity",
-      "g:that-clauses",
       "l:aceptar",
       "l:decir",
       "l:responsabilidad",
@@ -32473,7 +32379,7 @@
   {
     "id": "u53-1212",
     "es": "En otras palabras, nos están pidiendo que no hablemos.",
-    "en": "In other words, they are asking us to not speak.",
+    "en": "In other words, they are asking us not to speak.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32732,21 +32638,26 @@
   },
   {
     "id": "u53-1222",
-    "es": "Vale hizo diez panes; o sea, casi no sobró nada.",
-    "en": "Vale made ten loaves, I mean, almost nothing was left over.",
+    "es": "Vale hizo cien panes y se vendieron todos; o sea, el rumor no nos afectó.",
+    "en": "Vale made a hundred loaves and they all sold; I mean, the rumour didn't hurt us.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:o-sea",
-      "g:negation-words",
+      "g:gender-articles",
+      "g:passive-se",
       "g:preterite-ar",
+      "g:preterite-er-ir",
       "g:preterite-ser-ir-hacer",
       "g:reformulation",
+      "l:afectar",
       "l:hacer",
       "l:pan",
+      "l:rumor",
       "l:ser",
-      "l:sobrar",
-      "p:quedar-faltar-sobrar"
+      "l:vender",
+      "p:me-te-nos-objects",
+      "p:numbers-un-una"
     ],
     "targets": [
       "g:reformulation"
@@ -32873,8 +32784,8 @@
   },
   {
     "id": "u53-1227",
-    "es": "La entidad dice que no sabía; o sea, que no leyó.",
-    "en": "The agency says it didn't know, I mean, that it didn't read.",
+    "es": "La entidad dice que no sabía; o sea, que nadie leyó la carta.",
+    "en": "The agency says it didn't know; I mean, that nobody read the letter.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32886,6 +32797,7 @@
       "g:reformulation",
       "g:stem-e-i",
       "g:that-clauses",
+      "l:carta",
       "l:decir",
       "l:entidad",
       "l:leer",
@@ -33237,14 +33149,16 @@
   },
   {
     "id": "u53-1240",
-    "es": "No me gustó cómo me miró.\nO sea que algo te dijo.",
-    "en": "I didn't like how he looked at me.\nSo he did say something to you.",
+    "es": "No me gustó cómo me miró.\nO sea que no te dijo nada, pero lo pensó.",
+    "en": "I didn't like how he looked at me.\nSo he didn't say anything to you, but he thought it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:o-sea",
+      "g:direct-objects",
       "g:gustar-basic",
       "g:indirect-questions",
+      "g:negation-words",
       "g:preterite-ar",
       "g:preterite-irregular-strong",
       "g:reformulation",
@@ -33253,9 +33167,9 @@
       "l:decir",
       "l:gustar",
       "l:mirar",
+      "l:pensar",
       "l:ser",
       "p:entonces-quedamos",
-      "p:indefinites-basic",
       "p:me-te-nos-objects",
       "p:o-sea-que",
       "p:quieres-decir-que"
@@ -33301,8 +33215,8 @@
   },
   {
     "id": "u53-1242",
-    "es": "¿Qué quiso decir con eso?\nEs decir, que no cuenten con él.",
-    "en": "What did he mean by that?\nThat is, don't count on him.",
+    "es": "¿Qué quiso decir con eso?\nEn otras palabras, que no cuenten con él.",
+    "en": "What did he mean by that?\nIn other words, not to count on him.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -33310,20 +33224,19 @@
       "g:preterite-irregular-strong",
       "g:questions",
       "g:reformulation",
-      "g:reported-requests",
-      "g:ser-identity",
+      "g:relative-que",
+      "g:subj-relative",
       "g:subj-wanting",
-      "g:that-clauses",
       "g:verb-infinitive",
       "l:contar",
       "l:decir",
+      "l:palabra",
       "l:querer",
       "l:qué",
-      "l:ser",
       "p:contar-con",
       "p:demonstratives-basic",
       "p:disponer-de",
-      "p:hay-varios-tipos"
+      "p:otro-no-article"
     ],
     "targets": [
       "g:reformulation"
@@ -33335,8 +33248,8 @@
   },
   {
     "id": "u53-1243",
-    "es": "¿Entonces sí o no?\nMejor dicho, quizás.",
-    "en": "So yes or no?\nRather, maybe.",
+    "es": "¿Entonces sí o no?\nSí. Mejor dicho, quizás.",
+    "en": "So yes or no?\nYes. Or rather, maybe.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -33359,25 +33272,26 @@
   },
   {
     "id": "u53-1244",
-    "es": "¿Cómo así que no hay pan?\nEs decir, se acabó.",
-    "en": "What do you mean there is no bread?\nThat is, it's finished.",
+    "es": "¿Cómo así que no hay pan?\nLo que oyes; o sea, se acabó.",
+    "en": "What do you mean there's no bread? (to a friend)\nExactly what you hear; I mean, it's gone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:como-asi",
       "c:hay",
+      "c:o-sea",
       "g:cause-result",
       "g:hay-vs-esta",
       "g:preterite-ar",
       "g:reformulation",
+      "g:relatives-donde-lo-que",
       "g:se-impersonal",
-      "g:ser-identity",
+      "g:yo-irregular",
       "l:acabar",
       "l:cómo",
-      "l:decir",
+      "l:oír",
       "l:pan",
-      "l:ser",
-      "p:hay-varios-tipos"
+      "l:ser"
     ],
     "targets": [
       "g:reformulation"
@@ -33444,24 +33358,29 @@
   },
   {
     "id": "u53-1247",
-    "es": "¿Dónde está la escritura?\nO sea, ¿tú la tenías?",
-    "en": "Where is the deed?\nI mean, did you have it? (to a friend)",
+    "es": "¿Dónde está la escritura?\n¿O sea que tú no la tienes?",
+    "en": "Where is the deed?\nSo you don't have it? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:donde-esta",
       "c:o-sea",
+      "c:tienes",
       "g:direct-objects",
       "g:estar-location-states",
       "g:gender-articles",
-      "g:imperfect-states",
       "g:reformulation",
+      "g:stem-boot",
+      "g:that-clauses",
       "l:dónde",
       "l:escritura",
       "l:estar",
       "l:ser",
       "l:tener",
-      "p:question-word-order"
+      "p:entonces-quedamos",
+      "p:o-sea-que",
+      "p:question-word-order",
+      "p:quieres-decir-que"
     ],
     "targets": [
       "g:reformulation",
@@ -33502,13 +33421,12 @@
   },
   {
     "id": "u53-1249",
-    "es": "Mejor dicho, hay un solo candidato: él.",
-    "en": "Rather, there is only one candidate: him.",
+    "es": "Hay dos candidatos; mejor dicho, hay uno solo: él.",
+    "en": "There are two candidates; or rather, there's only one: him.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hay",
-      "g:gender-articles",
       "g:hay-vs-esta",
       "g:reformulation",
       "l:candidato",
@@ -33670,14 +33588,18 @@
   },
   {
     "id": "u53-1255",
-    "es": "Mejor dicho, ni lo leyó.",
-    "en": "Rather, he did not even read it.",
+    "es": "Dijo que lo leyó; mejor dicho, ni lo abrió.",
+    "en": "He said he read it; or rather, he didn't even open it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
+      "g:preterite-er-ir",
+      "g:preterite-irregular-strong",
       "g:preterite-spelling-stem",
       "g:reformulation",
+      "g:that-clauses",
+      "l:abrir",
       "l:decir",
       "l:leer",
       "l:mejor",
@@ -34533,7 +34455,7 @@
   {
     "id": "u53-1286",
     "es": "¿Crees que viene?\nJuraría que sí.",
-    "en": "Do you think he's coming? (to a friend)\nI'd bet he is.",
+    "en": "Do you think he's coming? (to a friend)\nI could swear he is.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -34558,7 +34480,7 @@
   {
     "id": "u53-1287",
     "es": "¿Es ella?\nJuraría que sí, pero hace años que no la veo.",
-    "en": "Is that her?\nI'd say so, but I haven't seen her in years.",
+    "en": "Is that her?\nI could swear it is, but I haven't seen her in years.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -35141,7 +35063,7 @@
   {
     "id": "u53-1307",
     "es": "No, si yo no digo que sea mala, pero es muy larga.",
-    "en": "No, I'm not saying it's bad, it's just very long.",
+    "en": "No, I'm not saying it's bad, but it's very long.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -37240,7 +37162,7 @@
   {
     "id": "u53-1382",
     "es": "Cuestiono que la lluvia sea la causa del daño.",
-    "en": "I question that the rain is the cause of the damage.",
+    "en": "I question whether the rain is the cause of the damage.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -37424,7 +37346,7 @@
   {
     "id": "u53-1389",
     "es": "¿Crees que ganamos el caso?\nNo tengo tan claro que sea tan fácil.",
-    "en": "Do you think we win the case? (to a friend)\nI'm not so sure it's that easy.",
+    "en": "Do you think we'll win the case? (to a friend)\nI'm not so sure it's that easy.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -37742,16 +37664,17 @@
   },
   {
     "id": "u53-1401",
-    "es": "Para mí que hoy llueve toda la tarde.",
-    "en": "If you ask me, it rains all afternoon today.",
+    "es": "Para mí que hoy va a llover toda la tarde.",
+    "en": "If you ask me, it's going to rain all afternoon today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:ir-a-plans",
       "g:prep-pronouns",
-      "g:stem-boot",
       "g:that-clauses",
       "l:hoy",
+      "l:ir",
       "l:llover",
       "l:tarde",
       "p:para-inf",
@@ -41601,7 +41524,7 @@
   {
     "id": "u53-1548",
     "es": "Hasta el momento no hay heridos.",
-    "en": "So far there are no injured.",
+    "en": "So far there are no injuries.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -41623,7 +41546,7 @@
   {
     "id": "u53-1549",
     "es": "De momento seguimos igual.",
-    "en": "For the moment we remain the same.",
+    "en": "For now, we're carrying on as before.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -41883,19 +41806,17 @@
   },
   {
     "id": "u53-1560",
-    "es": "Hasta la fecha el rumor no ha tenido ninguna prueba.",
-    "en": "To date the rumour has had no proof.",
+    "es": "Hasta la fecha nadie ha presentado pruebas del rumor.",
+    "en": "To date nobody has presented any proof of the rumour.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:indefinites",
-      "g:negation-words",
       "g:perfecto-experience",
       "l:fecha",
+      "l:presentar",
       "l:prueba",
       "l:rumor",
-      "l:tener",
       "p:hasta-la-fecha"
     ],
     "targets": [
@@ -43419,7 +43340,7 @@
   {
     "id": "u53-1618",
     "es": "Si me permite la observación, falta un dato.",
-    "en": "If you'll allow me the observation, a piece of data is missing.",
+    "en": "If you'll allow me the observation, a figure is missing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -44760,7 +44681,7 @@
   {
     "id": "u53-1670",
     "es": "El concejal, presunto autor del fraude, fue detenido en Miami.",
-    "en": "The council member, alleged author of the fraud, was arrested in Miami.",
+    "en": "The council member, the alleged perpetrator of the fraud, was arrested in Miami.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -46048,15 +45969,16 @@
   },
   {
     "id": "u53-1724",
-    "es": "Menudo lío armó Simón con las llaves.",
-    "en": "What a mess Simón made with the keys.",
+    "es": "¡Qué lío armó Simón con las llaves!",
+    "en": "What a mess Simón made with the keys!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "l:llave",
       "l:lío",
-      "l:menudo"
+      "l:qué",
+      "p:exclamations-basic"
     ],
     "targets": [
       "l:lío"
@@ -47191,22 +47113,25 @@
   },
   {
     "id": "u53-1772",
-    "es": "El caso criminal avanza más rápido que el civil.",
-    "en": "The criminal case moves faster than the civil one.",
+    "es": "Al final, el concejal resultó ser un criminal con corbata.",
+    "en": "In the end, the council member turned out to be a criminal in a tie.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:comparatives",
+      "c:al-final",
       "g:gender-articles",
-      "g:present-ar",
-      "l:avanzar",
-      "l:caso",
-      "l:civil",
+      "g:preterite-ar",
+      "g:ser-identity",
+      "l:concejal",
+      "l:corbata",
       "l:criminal",
-      "l:rápido"
+      "l:final",
+      "l:resultar",
+      "l:ser",
+      "p:con-sin",
+      "p:resultar-ser"
     ],
     "targets": [
-      "l:civil",
       "l:criminal"
     ],
     "kind": "statement",
@@ -47309,17 +47234,20 @@
   },
   {
     "id": "u53-1777",
-    "es": "Los antepasados de Rosa fueron esclavos.",
-    "en": "Rosa's ancestors were slaves.",
+    "es": "Mariana encontró los nombres de esclavos que trabajaron en esta calle.",
+    "en": "Mariana found the names of slaves who worked on this street.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
-      "g:ser-identity",
-      "l:antepasado",
+      "g:preterite-ar",
+      "g:relative-que",
+      "l:calle",
+      "l:encontrar",
       "l:esclavo",
-      "l:ser"
+      "l:nombre",
+      "l:trabajar",
+      "p:demonstratives-basic"
     ],
     "targets": [
       "l:esclavo"
@@ -47442,16 +47370,16 @@
   },
   {
     "id": "u53-1783",
-    "es": "Tomás firmó la escritura del café esta mañana.",
-    "en": "Tomás signed the deed to the café this morning.",
+    "es": "Tomás leyó la escritura del café esta mañana.",
+    "en": "Tomás read the deed to the café this morning.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ar",
+      "g:preterite-spelling-stem",
       "l:café",
       "l:escritura",
-      "l:firmar",
+      "l:leer",
       "l:mañana",
       "p:demonstratives-basic"
     ],
@@ -48068,7 +47996,7 @@
   {
     "id": "u53-1810",
     "es": "Veo una sola posibilidad todavía.",
-    "en": "I see only one possibility so far.",
+    "en": "I still see only one possibility.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -48113,24 +48041,23 @@
   },
   {
     "id": "u53-1812",
-    "es": "El hecho de que no llamara me preocupa.",
-    "en": "The fact that he didn't call worries me.",
+    "es": "Me preocupa que no llamara.",
+    "en": "It worries me that he didn't call.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:gustar-full",
       "g:imperfect-subj",
-      "g:mood-choice-fine",
       "g:present-ar",
+      "g:subj-past-triggers",
       "g:that-clauses",
-      "l:hacer",
       "l:llamar",
-      "l:preocupar"
+      "l:preocupar",
+      "p:me-encanta-que",
+      "p:me-preocupa-que",
+      "p:tengo-miedo-de-que"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que, así es, no creas",
@@ -48138,26 +48065,21 @@
   },
   {
     "id": "u53-1813",
-    "es": "El hecho de que Tomás se quede me alegra.",
-    "en": "The fact that Tomás is staying makes me glad.",
+    "es": "Me alegra que Tomás se quede.",
+    "en": "I'm glad Tomás is staying.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:gustar-full",
-      "g:mood-choice-fine",
       "g:present-ar",
       "g:reflexive-routine",
+      "g:subj-emotion-intro",
       "g:subj-wanting",
       "g:that-clauses",
       "l:alegrar",
-      "l:hacer",
-      "l:quedarse",
-      "p:alegrarse-de-que"
+      "l:quedarse"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que, así es, no creas",
@@ -48221,24 +48143,20 @@
   },
   {
     "id": "u53-1816",
-    "es": "El hecho de que nadie respondiera sembró dudas.",
-    "en": "The fact that nobody answered sowed doubts.",
+    "es": "Que nadie respondiera sembró dudas.",
+    "en": "Nobody answering sowed doubts.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:imperfect-subj",
-      "g:mood-choice-fine",
       "g:preterite-ar",
-      "g:that-clauses",
+      "g:subj-wishes",
       "l:duda",
-      "l:hacer",
       "l:responder",
       "l:sembrar",
       "p:sembrar-la-duda"
     ],
     "targets": [
-      "g:mood-choice-fine",
       "l:sembrar",
       "p:sembrar-la-duda"
     ],
@@ -48279,27 +48197,24 @@
   },
   {
     "id": "u53-1818",
-    "es": "El hecho de que firmaras sin leer fue un error.",
-    "en": "The fact that you signed without reading was a mistake. (to a friend)",
+    "es": "Fue un error que firmaras sin leer.",
+    "en": "It was a mistake for you to sign without reading. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-subj",
-      "g:mood-choice-fine",
       "g:prep-infinitive",
       "g:preterite-ser-ir-hacer",
+      "g:relative-que",
       "g:ser-identity",
-      "g:that-clauses",
+      "g:subj-relative",
       "l:error",
       "l:firmar",
-      "l:hacer",
       "l:leer",
       "l:ser"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que, así es, no creas",
@@ -48307,26 +48222,23 @@
   },
   {
     "id": "u53-1819",
-    "es": "El hecho de que Hernando recuerde tanto me sorprende.",
-    "en": "The fact that Hernando remembers so much surprises me.",
+    "es": "Me sorprende la memoria de Hernando: se acuerda de todo.",
+    "en": "Hernando's memory surprises me: he remembers everything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:gustar-full",
-      "g:mood-choice-fine",
       "g:present-er-ir",
-      "g:subj-wanting",
-      "g:that-clauses",
-      "l:hacer",
-      "l:recordar",
+      "g:reflexive-routine",
+      "g:stem-boot",
+      "l:acordarse",
+      "l:memoria",
       "l:sorprender",
       "p:me-sorprende-que",
       "p:recordar-acordarse"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que, así es, no creas",
@@ -48334,19 +48246,18 @@
   },
   {
     "id": "u53-1820",
-    "es": "El hecho de que la reunión sea pública es una buena noticia.",
-    "en": "The fact that the meeting is public is good news.",
+    "es": "Es una buena noticia que la reunión sea pública.",
+    "en": "It's good news that the meeting is public.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
-      "g:mood-choice-fine",
+      "g:relative-que",
       "g:ser-identity",
       "g:subj-irregulars",
-      "g:that-clauses",
+      "g:subj-relative",
       "l:buena",
-      "l:hacer",
       "l:noticia",
       "l:público",
       "l:reunión",
@@ -48354,9 +48265,7 @@
       "p:bien-bueno",
       "p:bien-mal-vs-bueno-malo"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que, así es, no creas",
@@ -48364,28 +48273,25 @@
   },
   {
     "id": "u53-1821",
-    "es": "El hecho de que el concejal viajara justo ese día es sospechoso.",
-    "en": "The fact that the council member travelled on that very day is suspicious.",
+    "es": "Es sospechoso que el concejal viajara justo ese día.",
+    "en": "It's suspicious that the council member travelled on that very day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
       "g:gender-articles",
       "g:imperfect-subj",
-      "g:mood-choice-fine",
+      "g:relative-que",
       "g:ser-identity",
-      "g:that-clauses",
+      "g:subj-relative",
       "l:concejal",
       "l:día",
-      "l:hacer",
       "l:justo",
       "l:ser",
       "l:sospechoso",
       "l:viajar"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que, así es, no creas",
@@ -48393,27 +48299,22 @@
   },
   {
     "id": "u53-1822",
-    "es": "El hecho de que ustedes estén aquí significa mucho.",
-    "en": "The fact that you all are here means a lot.",
+    "es": "Significa mucho que ustedes estén aquí.",
+    "en": "It means a lot that you all are here.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
-      "g:gender-articles",
-      "g:mood-choice-fine",
       "g:present-ar",
       "g:subj-wanting",
       "g:that-clauses",
       "l:aquí",
       "l:estar",
-      "l:hacer",
       "l:significar",
       "p:aqui-ahi-alla",
       "p:quantifiers-basic"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que, así es, no creas",
@@ -48453,26 +48354,22 @@
   },
   {
     "id": "u53-1824",
-    "es": "El hecho de que me ofrezcan tanto dinero me da desconfianza.",
-    "en": "The fact that they offer me so much money makes me wary.",
+    "es": "Me da desconfianza que me ofrezcan tanta plata.",
+    "en": "It makes me wary that they offer me so much money.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-regala",
-      "g:gender-articles",
-      "g:mood-choice-fine",
+      "g:relative-que",
+      "g:subj-relative",
       "g:subj-wanting",
-      "g:that-clauses",
       "l:dar",
       "l:desconfianza",
-      "l:dinero",
-      "l:hacer",
       "l:ofrecer",
+      "l:plata",
       "p:me-te-nos-objects"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que, así es, no creas",
@@ -48480,27 +48377,25 @@
   },
   {
     "id": "u53-1825",
-    "es": "El hecho de que Mariana publique la nota me da miedo.",
-    "en": "The fact that Mariana is publishing the piece scares me.",
+    "es": "Me da miedo que Mariana publique la nota.",
+    "en": "It scares me that Mariana is publishing the piece.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-regala",
       "g:gender-articles",
-      "g:mood-choice-fine",
+      "g:subj-emotion",
       "g:subj-wanting",
       "g:that-clauses",
       "l:dar",
-      "l:hacer",
       "l:miedo",
       "l:nota",
       "l:publicar",
       "p:me-da-miedo",
-      "p:me-da-miedo-que"
+      "p:me-da-miedo-que",
+      "p:tengo-miedo-de-que"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que, así es, no creas",
@@ -48566,25 +48461,22 @@
   },
   {
     "id": "u53-1828",
-    "es": "El hecho de que cierren la calle afecta a todos los comercios.",
-    "en": "The fact that they are closing the street affects all the shops.",
+    "es": "Que cierren la calle afecta a todos los comercios.",
+    "en": "Their closing the street affects all the shops.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:mood-choice-fine",
       "g:present-ar",
       "g:subj-wanting",
-      "g:that-clauses",
+      "g:subj-wishes",
       "l:afectar",
       "l:calle",
       "l:cerrar",
       "l:comercio",
-      "l:hacer"
+      "p:que-subj-deseo"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que, así es, no creas",
@@ -48592,26 +48484,24 @@
   },
   {
     "id": "u53-1829",
-    "es": "El hecho de que la entidad guarde silencio dice mucho.",
-    "en": "The fact that the agency keeps quiet says a lot.",
+    "es": "Que la entidad guarde silencio ya es una forma de responder.",
+    "en": "The agency keeping quiet is already a way of answering.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:mood-choice-fine",
       "g:present-ar",
-      "g:stem-e-i",
+      "g:ser-identity",
       "g:subj-wanting",
-      "g:that-clauses",
-      "l:decir",
+      "g:subj-wishes",
       "l:entidad",
+      "l:formar",
       "l:guardar",
-      "l:hacer",
-      "l:silenciar",
-      "p:quantifiers-basic"
+      "l:responder",
+      "l:ser",
+      "l:silenciar"
     ],
     "targets": [
-      "g:mood-choice-fine",
       "l:entidad"
     ],
     "kind": "statement",
@@ -48648,25 +48538,23 @@
   },
   {
     "id": "u53-1831",
-    "es": "El hecho de que vengan los periodistas cambia la reunión.",
-    "en": "The fact that journalists are coming changes the meeting.",
+    "es": "Con periodistas en la sala, la reunión va a ser otra cosa.",
+    "en": "With journalists in the room, the meeting is going to be a different thing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:mood-choice-fine",
-      "g:present-ar",
-      "g:subj-wanting",
-      "g:that-clauses",
-      "l:cambiar",
-      "l:hacer",
+      "g:ir-a-plans",
+      "g:ser-identity",
+      "l:cosa",
+      "l:ir",
       "l:periodista",
       "l:reunión",
-      "l:venir"
+      "l:sala",
+      "l:ser",
+      "p:otro-no-article"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que, así es, no creas",
@@ -48674,25 +48562,25 @@
   },
   {
     "id": "u53-1832",
-    "es": "El hecho de que lo diga un vecino no lo hace verdad.",
-    "en": "The fact that a neighbour says it doesn't make it true.",
+    "es": "Que un vecino lo jure no basta para publicarlo.",
+    "en": "A neighbour swearing to it isn't enough to publish it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
       "g:gender-articles",
-      "g:mood-choice-fine",
-      "g:present-er-ir",
+      "g:object-pronoun-position",
+      "g:present-ar",
       "g:subj-wanting",
-      "g:that-clauses",
-      "l:decir",
-      "l:hacer",
+      "g:subj-wishes",
+      "l:bastar",
+      "l:jurar",
+      "l:publicar",
       "l:vecino",
-      "l:verdad"
+      "p:para-inf",
+      "p:para-inf-purpose"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que, así es, no creas",
@@ -48700,29 +48588,25 @@
   },
   {
     "id": "u53-1833",
-    "es": "El hecho de que llueva no es excusa para llegar tarde.",
-    "en": "The fact that it's raining is no excuse for arriving late.",
+    "es": "Que llueva no es excusa para llegar tarde.",
+    "en": "Rain is no excuse for arriving late.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:mood-choice-fine",
       "g:ser-identity",
       "g:subj-wanting",
-      "g:that-clauses",
+      "g:subj-wishes",
       "l:excusa",
-      "l:hacer",
       "l:llegar",
       "l:llover",
       "l:ser",
       "l:tarde",
       "p:llegar-a-tiempo",
       "p:para-inf",
-      "p:para-inf-purpose"
+      "p:para-inf-purpose",
+      "p:que-subj-deseo"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que, así es, no creas",
@@ -48760,26 +48644,26 @@
   },
   {
     "id": "u53-1835",
-    "es": "El hecho de que lo hubieran dicho antes no cambia nada.",
-    "en": "The fact that they had said it earlier changes nothing.",
+    "es": "Da igual que lo hubieran dicho antes: nadie los escuchó.",
+    "en": "It doesn't matter that they had said it before: nobody listened to them.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:igual",
       "g:direct-objects",
-      "g:gender-articles",
-      "g:mood-choice-fine",
-      "g:negation-words",
       "g:pluperfect-subj",
       "g:present-ar",
-      "g:that-clauses",
+      "g:preterite-ar",
+      "g:subj-relative",
+      "g:tanto-como",
       "l:antes",
-      "l:cambiar",
+      "l:dar",
       "l:decir",
-      "l:hacer"
+      "l:escuchar",
+      "l:igual",
+      "p:dar-igual"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que, así es, no creas",
@@ -48787,24 +48671,20 @@
   },
   {
     "id": "u53-1836",
-    "es": "El hecho de que haya rumores no prueba nada.",
-    "en": "The fact that there are rumours proves nothing.",
+    "es": "Que haya rumores no prueba nada.",
+    "en": "That there are rumours proves nothing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:mood-choice-fine",
       "g:negation-words",
       "g:stem-boot",
       "g:subj-irregulars",
-      "g:that-clauses",
-      "l:hacer",
+      "g:subj-wishes",
       "l:probar",
-      "l:rumor"
+      "l:rumor",
+      "p:que-subj-deseo"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que, así es, no creas",
@@ -48812,27 +48692,28 @@
   },
   {
     "id": "u53-1837",
-    "es": "El hecho de que el juez conozca a Altamira preocupa a los vecinos.",
-    "en": "The fact that the judge knows Altamira worries the neighbours.",
+    "es": "A los vecinos les preocupa que el juez conozca al dueño de Altamira.",
+    "en": "It worries the neighbours that the judge knows Altamira's owner.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:mood-choice-fine",
+      "g:gustar-full",
       "g:present-ar",
+      "g:subj-emotion",
       "g:subj-wanting",
       "g:that-clauses",
       "l:conocer",
-      "l:hacer",
+      "l:dueño",
       "l:juez",
       "l:preocupar",
       "l:vecino",
+      "p:me-preocupa-que",
       "p:personal-a",
-      "p:saber-conocer"
+      "p:saber-conocer",
+      "p:tengo-miedo-de-que"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que, así es, no creas",
@@ -48840,27 +48721,24 @@
   },
   {
     "id": "u53-1838",
-    "es": "El hecho de que Vale no quiera hablar del tema ya es una respuesta.",
-    "en": "The fact that Vale doesn't want to talk about it is already an answer.",
+    "es": "Que Vale no quiera hablar del tema me dice bastante.",
+    "en": "Vale not wanting to talk about it tells me quite a lot.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:mood-choice-fine",
-      "g:ser-identity",
+      "g:quantifiers",
+      "g:stem-e-i",
       "g:subj-wanting",
-      "g:that-clauses",
+      "g:subj-wishes",
       "g:verb-infinitive",
+      "l:decir",
       "l:hablar",
-      "l:hacer",
       "l:querer",
-      "l:respuesta",
-      "l:ser",
-      "l:tema"
+      "l:tema",
+      "p:me-te-nos-objects"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que, así es, no creas",
@@ -48868,25 +48746,23 @@
   },
   {
     "id": "u53-1839",
-    "es": "El hecho de que nos escuche el diplomático es un avance.",
-    "en": "The fact that the diplomat is listening to us is progress.",
+    "es": "Ya es un avance que el diplomático nos escuche.",
+    "en": "It's already progress that the diplomat is listening to us.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:mood-choice-fine",
+      "g:relative-que",
       "g:ser-identity",
+      "g:subj-relative",
       "g:subj-wanting",
-      "g:that-clauses",
       "l:avance",
       "l:diplomático",
       "l:escuchar",
-      "l:hacer",
       "l:ser",
       "p:me-te-nos-objects"
     ],
     "targets": [
-      "g:mood-choice-fine",
       "l:diplomático"
     ],
     "kind": "statement",
@@ -48896,24 +48772,19 @@
   },
   {
     "id": "u53-1840",
-    "es": "El hecho de que todos opinen no ayuda a decidir.",
-    "en": "The fact that everyone has an opinion doesn't help us decide.",
+    "es": "Que todos opinen no ayuda a decidir.",
+    "en": "Everyone giving an opinion doesn't help us decide.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:mood-choice-fine",
       "g:present-ar",
       "g:subj-wanting",
-      "g:that-clauses",
+      "g:subj-wishes",
       "l:ayudar",
       "l:decidir",
-      "l:hacer",
       "l:opinar"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que, así es, no creas",
@@ -48921,26 +48792,22 @@
   },
   {
     "id": "u53-1841",
-    "es": "El hecho de que cierre el banco me deja sin opciones.",
-    "en": "The fact that the bank is closing leaves me without options.",
+    "es": "Si cierra el banco, me quedo sin opciones.",
+    "en": "If the bank closes, I'm left without options.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:mood-choice-fine",
       "g:present-ar",
-      "g:subj-wanting",
-      "g:that-clauses",
+      "g:reflexive-routine",
+      "g:si-present",
+      "g:stem-boot",
       "l:banco",
       "l:cerrar",
-      "l:dejar",
-      "l:hacer",
       "l:opción",
-      "p:me-te-nos-objects"
+      "l:quedarse"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que, así es, no creas",
@@ -49004,29 +48871,23 @@
   },
   {
     "id": "u53-1844",
-    "es": "El hecho de que ellos se queden aquí es lo único bueno.",
-    "en": "The fact that they are staying here is the only good thing.",
+    "es": "Lo único bueno es que ellos se queden aquí.",
+    "en": "The only good thing is that they are staying here.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "c:es-que",
       "g:lo-adjective",
-      "g:mood-choice-fine",
       "g:reflexive-routine",
-      "g:ser-identity",
       "g:subj-wanting",
-      "g:that-clauses",
       "l:aquí",
       "l:bueno",
-      "l:hacer",
       "l:quedarse",
       "l:ser",
       "l:único",
       "p:aqui-ahi-alla"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que, así es, no creas",
@@ -49096,26 +48957,23 @@
   },
   {
     "id": "u53-1847",
-    "es": "El hecho de que me avise tan tarde me molesta.",
-    "en": "The fact that he lets me know so late annoys me.",
+    "es": "Me molesta que me avise tan tarde.",
+    "en": "It annoys me that he lets me know so late.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:gustar-full",
-      "g:mood-choice-fine",
       "g:present-ar",
+      "g:subj-emotion-intro",
       "g:subj-wanting",
       "g:that-clauses",
       "l:avisar",
-      "l:hacer",
       "l:molestar",
       "l:tarde",
+      "p:me-encanta-que",
       "p:me-te-nos-objects"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que, así es, no creas",
@@ -49153,28 +49011,25 @@
   },
   {
     "id": "u53-1849",
-    "es": "El hecho de que la noticia salga hoy puede cambiar la votación.",
-    "en": "The fact that the news comes out today may change the vote.",
+    "es": "Si la noticia sale hoy, puede cambiar la votación.",
+    "en": "If the news comes out today, it may change the vote.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:mood-choice-fine",
+      "g:present-er-ir",
+      "g:si-present",
       "g:stem-boot",
-      "g:subj-wanting",
-      "g:that-clauses",
       "g:verb-infinitive",
       "l:cambiar",
-      "l:hacer",
       "l:hoy",
       "l:noticia",
       "l:poder",
       "l:salir",
-      "l:votación"
+      "l:votación",
+      "p:request-ladder"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que, así es, no creas",
@@ -49182,28 +49037,25 @@
   },
   {
     "id": "u53-1850",
-    "es": "El hecho de que la alcaldía responda tan rápido me parece raro.",
-    "en": "The fact that city hall answers so quickly seems odd to me.",
+    "es": "Me parece raro que la alcaldía responda tan rápido.",
+    "en": "It seems odd to me that city hall answers so quickly.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:mood-choice-fine",
       "g:parecer-quedar",
       "g:present-er-ir",
+      "g:subj-value",
       "g:subj-wanting",
       "g:that-clauses",
       "l:alcaldía",
-      "l:hacer",
       "l:parecer",
       "l:raro",
       "l:responder",
       "l:rápido",
       "p:me-parece-bien-que"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que, así es, no creas",
@@ -49211,29 +49063,26 @@
   },
   {
     "id": "u53-1851",
-    "es": "El hecho de que el abogado ya no conteste no es buena señal.",
-    "en": "The fact that the lawyer no longer answers is not a good sign.",
+    "es": "No es buena señal que el abogado ya no conteste.",
+    "en": "It's not a good sign that the lawyer no longer answers.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ya-no",
       "g:gender-articles",
-      "g:mood-choice-fine",
+      "g:relative-que",
       "g:ser-identity",
+      "g:subj-relative",
       "g:subj-wanting",
-      "g:that-clauses",
       "l:abogado",
       "l:buena",
       "l:contestar",
-      "l:hacer",
       "l:ser",
       "l:señal",
       "p:bien-bueno",
       "p:bien-mal-vs-bueno-malo"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que, así es, no creas",
@@ -49302,26 +49151,23 @@
   },
   {
     "id": "u53-1854",
-    "es": "El hecho de que siga abierto el café es casi un milagro.",
-    "en": "The fact that the café is still open is almost a miracle.",
+    "es": "Es casi un milagro que el café siga abierto.",
+    "en": "It's almost a miracle that the café is still open.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:siga",
       "g:gender-articles",
-      "g:mood-choice-fine",
+      "g:relative-que",
       "g:ser-identity",
-      "g:that-clauses",
+      "g:subj-relative",
       "l:abrir",
       "l:café",
-      "l:hacer",
       "l:milagro",
       "l:seguir",
       "l:ser"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que, así es, no creas",
@@ -49329,24 +49175,20 @@
   },
   {
     "id": "u53-1855",
-    "es": "El hecho de que ellos digan que sí no me tranquiliza.",
-    "en": "The fact that they say yes doesn't reassure me.",
+    "es": "Que ellos digan que sí no me tranquiliza.",
+    "en": "Them saying yes doesn't reassure me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:mood-choice-fine",
       "g:present-ar",
       "g:subj-wanting",
+      "g:subj-wishes",
       "g:that-clauses",
       "l:decir",
-      "l:hacer",
       "l:tranquilizar",
       "p:me-te-nos-objects"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que, así es, no creas",
@@ -49354,27 +49196,27 @@
   },
   {
     "id": "u53-1856",
-    "es": "El hecho de que viniera tanta gente a la fiesta sorprendió a la prensa.",
-    "en": "The fact that so many people came to the party surprised the press.",
+    "es": "A la prensa le sorprendió que viniera tanta gente a la fiesta.",
+    "en": "It surprised the press that so many people came to the party.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:gustar-full",
       "g:imperfect-subj",
-      "g:mood-choice-fine",
       "g:preterite-er-ir",
+      "g:subj-past-triggers",
       "g:that-clauses",
       "l:fiesta",
       "l:gente",
-      "l:hacer",
       "l:prensa",
       "l:sorprender",
       "l:venir",
-      "p:la-gente-singular"
+      "p:la-gente-singular",
+      "p:me-extrana-que",
+      "p:me-sorprende-que"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que, así es, no creas",
@@ -49492,26 +49334,23 @@
   },
   {
     "id": "u53-1861",
-    "es": "El hecho de que se retrase el pago no es el problema.",
-    "en": "The fact that the payment is delayed is not the problem.",
+    "es": "El problema no es que se retrase el pago.",
+    "en": "The problem isn't that the payment is delayed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:es-que",
       "g:gender-articles",
-      "g:mood-choice-fine",
       "g:reflexive-routine",
-      "g:ser-identity",
+      "g:subj-perception-negated",
       "g:subj-wanting",
-      "g:that-clauses",
-      "l:hacer",
       "l:pago",
       "l:problema",
       "l:retrasarse",
-      "l:ser"
+      "l:ser",
+      "p:no-es-que-sino-que"
     ],
-    "targets": [
-      "g:mood-choice-fine"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u53",
     "theme": "el hecho de que, así es, no creas",
@@ -49627,22 +49466,24 @@
   },
   {
     "id": "u53-1866",
-    "es": "Nunca vi una protesta sin precedentes como la de ayer.",
-    "en": "I never saw an unprecedented protest like yesterday's.",
+    "es": "Lo de ayer fue una protesta sin precedentes.",
+    "en": "Yesterday was an unprecedented protest.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ayer-anoche",
       "c:sin-precedentes",
       "g:gender-articles",
-      "g:preterite-er-ir",
+      "g:preterite-ser-ir-hacer",
+      "g:ser-identity",
       "l:ayer",
       "l:precedente",
       "l:protesta",
-      "l:ver",
+      "l:ser",
       "p:con-sin",
-      "p:frequency-scale",
-      "p:los-de-la-camiseta"
+      "p:lo-de",
+      "p:lo-de-noun",
+      "p:lo-de-topic"
     ],
     "targets": [
       "c:sin-precedentes",
@@ -49682,19 +49523,22 @@
   },
   {
     "id": "u53-1868",
-    "es": "El paradero de Simón era la ventana de la cocina.",
-    "en": "Simón's whereabouts turned out to be the kitchen window.",
+    "es": "El paradero de la receta perdida de Rosa resultó ser un libro de poemas.",
+    "en": "The whereabouts of Rosa's lost recipe turned out to be a book of poems.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:era",
       "g:gender-articles",
-      "g:imperfect-states",
+      "g:preterite-ar",
       "g:ser-identity",
-      "l:cocina",
+      "l:libro",
       "l:paradero",
+      "l:perder",
+      "l:poema",
+      "l:receta",
+      "l:resultar",
       "l:ser",
-      "l:ventana"
+      "p:resultar-ser"
     ],
     "targets": [
       "l:paradero"
@@ -49729,7 +49573,7 @@
   {
     "id": "u53-1870",
     "es": "Los testigos siguen en paradero desconocido.",
-    "en": "The witnesses remain in an unknown whereabouts.",
+    "en": "The witnesses' whereabouts are still unknown.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -49752,8 +49596,8 @@
   },
   {
     "id": "u53-1871",
-    "es": "Averiguar el paradero de Altamira es imposible.",
-    "en": "Finding out Altamira's whereabouts is impossible.",
+    "es": "Averiguar el paradero del dueño de Altamira es imposible.",
+    "en": "Finding out the whereabouts of Altamira's owner is impossible.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -49761,6 +49605,7 @@
       "g:ser-identity",
       "g:verb-infinitive",
       "l:averiguar",
+      "l:dueño",
       "l:imposible",
       "l:paradero",
       "l:ser"
@@ -49881,20 +49726,22 @@
   },
   {
     "id": "u53-1876",
-    "es": "¿Usted es el dueño del café?\nAsí es, desde hace un mes.",
-    "en": "Are you the owner of the café? (polite)\nThat's right, for a month now.",
+    "es": "¿Usted es el dueño del café?\nAsí es, desde que murió mi abuela.",
+    "en": "Are you the owner of the café? (polite)\nThat's right, since my grandmother died.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:asi-es",
       "g:gender-articles",
-      "g:hace-que-desde",
+      "g:preterite-spelling-stem",
       "g:ser-identity",
+      "l:abuela",
       "l:café",
       "l:dueño",
-      "l:hace",
-      "l:mes",
-      "l:ser"
+      "l:morir",
+      "l:ser",
+      "p:naci-en",
+      "p:possessives-basic"
     ],
     "targets": [
       "c:asi-es"
@@ -50206,7 +50053,7 @@
   {
     "id": "u53-1889",
     "es": "Eso debe ser muy fácil.\nNo creas, tiene su truco.",
-    "en": "That must be very easy.\nDon't think so, there's a trick to it.",
+    "en": "That must be very easy.\nNot really, there's a trick to it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -50406,7 +50253,7 @@
   {
     "id": "u53-1896",
     "es": "Esa receta es complicadísima.\nNo creas, solo lleva tres cosas.",
-    "en": "That recipe is very complicated.\nDon't think so, it only has three ingredients.",
+    "en": "That recipe is very complicated.\nNot really, it only has three ingredients.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -50463,7 +50310,7 @@
   {
     "id": "u53-1898",
     "es": "Seguro que cobran carísimo en Miami.\nNo creas, es más barato que aquí.",
-    "en": "I bet it's very expensive in Miami.\nDon't think so, it's cheaper than here.",
+    "en": "I bet it's very expensive in Miami.\nNot really, it's cheaper than here.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -51429,7 +51276,7 @@
   {
     "id": "u53-1935",
     "es": "De ser así, ustedes tenían que decirlo antes.",
-    "en": "If so, you all had to say so earlier.",
+    "en": "If so, you all were supposed to say so earlier.",
     "accept": [],
     "acceptEn": [],
     "requires": [

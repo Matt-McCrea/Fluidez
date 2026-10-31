@@ -8,7 +8,7 @@
     {
       "id": "t1",
       "npc": "Mariana: Estoy cerrando mi nota sobre Altamira. ¿Qué se sabe, hasta hoy, del concejal?",
-      "npcEn": "Mariana: I'm finishing my piece on Altamira. What is known, up to today, about the councilman?",
+      "npcEn": "Mariana: I'm finishing my piece on Altamira. What is known so far about the councilman?",
       "intent": "Say that so far nothing has been proved (use: Hasta la fecha or hasta el momento).",
       "accept": [
         "Hasta la fecha no hay ninguna prueba.",
@@ -73,7 +73,7 @@
       "npcEn": "Mariana: They told me the councilman was leaving for Miami today, but I'm not sure.",
       "intent": "Check what you heard: so he was leaving today, right? (use the imperfect: salía).",
       "accept": [
-        "¿O sea que el concejal salía hoy, no?",
+        "¿O sea que el concejal salía hoy?",
         "Entonces el concejal salía hoy para Miami, ¿no?",
         "¿Salía hoy? ¿Quién te lo dijo?"
       ],
@@ -95,7 +95,7 @@
       "id": "t5",
       "npc": "Mariana: Cada uno cuenta una versión distinta. ¿Tú qué crees?",
       "npcEn": "Mariana: Everyone tells a different version. What do you think?",
-      "intent": "Give your opinion: if you ask yourself, everyone says what suits them (use: Para mí que and cada quien).",
+      "intent": "Give your opinion: if you ask me, everyone says what suits them (use: Para mí que and cada quien).",
       "accept": [
         "Para mí que cada quien cuenta lo que le conviene.",
         "Para mí que cada quien tiene su versión, y ninguna es la verdad completa.",

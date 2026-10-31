@@ -28,7 +28,7 @@
     },
     {
       "es": "El señor ese no contesta el celular.",
-      "en": "That man never answers his phone."
+      "en": "That man doesn't answer his phone."
     }
   ],
   "rule": "Build it as article, label, *de*, person: *el bobo de mi hermano*.\nThe label carries your verdict, and the article and label match the person: *la boba de Ana*, *los tontos de mis vecinos*.\n*La pobre de Ana* is pity, not scorn.\n\nTo sneer, put *ese* after the person word: *el tipo ese*, *la tipa esa*. Alone, *¿Y ese qué se cree?* says \"who does he think he is?\".\n\nEnglish says \"my idiot brother\" with no little word in between. Spanish needs the *de*. Use it for people who are not there.",
@@ -83,7 +83,7 @@
       "es": "El señor ese no contesta el celular.",
       "options": [
         "I don't answer that man's phone.",
-        "That man never answers his phone.",
+        "That man doesn't answer his phone.",
         "The man answered the phone."
       ],
       "answer": 1

@@ -100,9 +100,9 @@
     {
       "es": "Con todo respeto, no estoy de acuerdo.",
       "options": [
-        "With all respect, I agree.",
-        "With all respect, they disagree.",
-        "With all respect, I disagree."
+        "With all due respect, I agree.",
+        "With all due respect, they disagree.",
+        "With all due respect, I disagree."
       ],
       "answer": 2
     }

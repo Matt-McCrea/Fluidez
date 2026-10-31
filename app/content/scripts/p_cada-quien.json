@@ -160,9 +160,9 @@
       "why": "Almost. It feels plural in English, but *cada quien* takes a singular verb."
     },
     {
-      "wrong": "Todo quien tiene su versión.",
-      "right": "Cada quien tiene su versión.",
-      "why": "Almost. For \"each one on their own\", Spanish uses *cada*."
+      "wrong": "Todos tiene su versión.",
+      "right": "Todos tienen su versión.",
+      "why": "Almost. *Todos* is plural and takes *tienen*; only *cada quien* and *cada uno* take the singular."
     },
     {
       "wrong": "Cada uno se fue a su casa.",

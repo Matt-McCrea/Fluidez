@@ -6,38 +6,177 @@
     "en": "Vale was arriving from Medellín tomorrow, wasn't she?"
   },
   "examples": [
-    { "es": "Vale llegaba mañana de Medellín, ¿no?", "en": "Vale was arriving from Medellín tomorrow, wasn't she?" },
-    { "es": "El concierto era el sábado, según me dicen.", "en": "The concert is on Saturday, from what I'm told." },
-    { "es": "Hernando regresaba mañana de Cartagena, ¿no?", "en": "Hernando was coming back from Cartagena tomorrow, wasn't he?" },
-    { "es": "La asamblea empezaba a las seis esta noche, ¿no?", "en": "The meeting was starting at six tonight, wasn't it?" },
-    { "es": "El juicio empezaba el martes, según me dicen.", "en": "The trial starts on Tuesday, from what I'm told." },
-    { "es": "Tomás volvía a Canadá el próximo mes, ¿no?", "en": "Tomás was going back to Canada next month, wasn't he?" }
+    {
+      "es": "Vale llegaba mañana de Medellín, ¿no?",
+      "en": "Vale was arriving from Medellín tomorrow, wasn't she?"
+    },
+    {
+      "es": "El concierto era el sábado, según me dicen.",
+      "en": "The concert was on Saturday, from what I'm told."
+    },
+    {
+      "es": "Hernando regresaba mañana de Cartagena, ¿no?",
+      "en": "Hernando was coming back from Cartagena tomorrow, wasn't he?"
+    },
+    {
+      "es": "La asamblea empezaba a las seis esta noche, ¿no?",
+      "en": "The meeting was starting at six tonight, wasn't it?"
+    },
+    {
+      "es": "El juicio empezaba el martes, según me dicen.",
+      "en": "The trial was starting on Tuesday, from what I'm told."
+    },
+    {
+      "es": "Tomás volvía a Canadá el próximo mes, ¿no?",
+      "en": "Tomás was going back to Canada next month, wasn't he?"
+    }
   ],
   "rule": "Here the \"past\" verb is not about the past. *Vale llegaba mañana* is about tomorrow. Spanish uses the *-ía/-aba* form to pass on a plan or a piece of news you were told, without promising it is right.\n\nIt usually travels with a time word (*mañana*, *el sábado*, *el próximo mes*) and a check: *¿no?* or *según me dicen*.\n\nEnglish does the same with \"was arriving tomorrow, wasn't she?\".\n\nCareful: about your own plans it sounds evasive. Use it for other people's news.",
   "smallPrint": "Teachers call this the *imperfecto citativo*, the imperfect used to quote information you do not vouch for.",
   "readAndPick": [
-    { "es": "Vale llegaba mañana de Medellín, ¿no?", "options": ["Vale arrived from Medellín yesterday.", "Vale was arriving from Medellín tomorrow, wasn't she?", "Vale will definitely arrive from Medellín tomorrow."], "answer": 1 },
-    { "es": "El concierto era el sábado, según me dicen.", "options": ["The concert was last Saturday.", "The concert will be on Saturday, I promise.", "The concert is on Saturday, from what I'm told."], "answer": 2 },
-    { "es": "Hernando regresaba mañana de Cartagena, ¿no?", "options": ["Hernando was coming back from Cartagena tomorrow, wasn't he?", "Hernando came back from Cartagena yesterday.", "Hernando comes back from Cartagena every day."], "answer": 0 },
-    { "es": "Hernando regresó ayer de Cartagena.", "options": ["Hernando was coming back from Cartagena tomorrow, wasn't he?", "Hernando came back from Cartagena yesterday.", "Hernando comes back from Cartagena every day."], "answer": 1 },
-    { "es": "La asamblea empezaba a las seis esta noche, ¿no?", "options": ["The meeting started at six last night.", "The meeting begins at six, and I am sure of it.", "The meeting was starting at six tonight, wasn't it?"], "answer": 2 },
-    { "es": "Tomás volvía a Canadá el próximo mes, ¿no?", "options": ["Tomás was going back to Canada next month, wasn't he?", "Tomás went back to Canada last month.", "Tomás is sure he is going back to Canada."], "answer": 0 },
-    { "es": "El juicio empezaba el martes, según me dicen.", "options": ["The trial started last Tuesday.", "The trial starts on Tuesday, from what I'm told.", "The trial starts on Tuesday, and I will be there."], "answer": 1 },
-    { "es": "Los domingos el café cerraba temprano.", "options": ["On Sundays the café used to close early.", "The café is closing early on Sunday, they say.", "The café closes early tomorrow."], "answer": 0 }
+    {
+      "es": "Vale llegaba mañana de Medellín, ¿no?",
+      "options": [
+        "Vale arrived from Medellín yesterday.",
+        "Vale was arriving from Medellín tomorrow, wasn't she?",
+        "Vale will definitely arrive from Medellín tomorrow."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El concierto era el sábado, según me dicen.",
+      "options": [
+        "The concert was last Saturday.",
+        "The concert will be on Saturday, I promise.",
+        "The concert was on Saturday, from what I'm told."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Hernando regresaba mañana de Cartagena, ¿no?",
+      "options": [
+        "Hernando was coming back from Cartagena tomorrow, wasn't he?",
+        "Hernando came back from Cartagena yesterday.",
+        "Hernando comes back from Cartagena every day."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hernando regresó ayer de Cartagena.",
+      "options": [
+        "Hernando was coming back from Cartagena tomorrow, wasn't he?",
+        "Hernando came back from Cartagena yesterday.",
+        "Hernando comes back from Cartagena every day."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La asamblea empezaba a las seis esta noche, ¿no?",
+      "options": [
+        "The meeting started at six last night.",
+        "The meeting begins at six, and I am sure of it.",
+        "The meeting was starting at six tonight, wasn't it?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tomás volvía a Canadá el próximo mes, ¿no?",
+      "options": [
+        "Tomás was going back to Canada next month, wasn't he?",
+        "Tomás went back to Canada last month.",
+        "Tomás is sure he is going back to Canada."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El juicio empezaba el martes, según me dicen.",
+      "options": [
+        "The trial started last Tuesday.",
+        "The trial was starting on Tuesday, from what I'm told.",
+        "The trial starts on Tuesday, and I will be there."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Los domingos el café cerraba temprano.",
+      "options": [
+        "On Sundays the café used to close early.",
+        "The café is closing early on Sunday, they say.",
+        "The café closes early tomorrow."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick and type the whole sentence: *Vale ___ mañana de Medellín, ¿no?* (*llegaba* or *llegó*) Vale was arriving from Medellín tomorrow, wasn't she?", "answer": "Vale llegaba mañana de Medellín, ¿no?", "accept": [], "why": "*Llegó* is finished past and cannot sit next to *mañana*; the *-aba* form passes the news on." },
-    { "prompt": "Pick and type the whole sentence: *El concierto ___ el sábado, según me dicen.* (*fue* or *era*) The concert is on Saturday, from what I'm told.", "answer": "El concierto era el sábado, según me dicen.", "accept": ["Según me dicen, el concierto era el sábado."], "why": "*Según me dicen* shows you are repeating it, and *era* keeps your distance." },
-    { "prompt": "Say: Hernando was coming back from Cartagena tomorrow, wasn't he?", "answer": "Hernando regresaba mañana de Cartagena, ¿no?", "accept": ["Hernando regresaba de Cartagena mañana, ¿no?"], "why": "*Regresaba* plus *mañana* is news you are passing on, and *¿no?* asks the listener to confirm." },
-    { "prompt": "Say: Tomás was going back to Canada next month, wasn't he?", "answer": "Tomás volvía a Canadá el próximo mes, ¿no?", "accept": [], "why": "*Volvía* is the \"was going back\" form, and *el próximo mes* is the future time." },
-    { "prompt": "Say: The trial starts on Tuesday, from what I'm told.", "answer": "El juicio empezaba el martes, según me dicen.", "accept": ["Según me dicen, el juicio empezaba el martes."], "why": "*Empezaba* plus *según me dicen* is the classic way to pass on a date." },
-    { "prompt": "Turn this into reported news with a check: *La asamblea empieza a las seis esta noche.*", "answer": "La asamblea empezaba a las seis esta noche, ¿no?", "accept": ["¿La asamblea no empezaba a las seis esta noche?"], "why": "The *-aba* form with *¿no?* says \"that is what I heard, right?\"." },
-    { "prompt": "Ask a friend: Weren't you leaving tomorrow?", "answer": "¿Tú no salías mañana?", "accept": ["¿No salías mañana?"], "why": "You use the *tú* form *salías* to check a plan someone told you." }
+    {
+      "prompt": "Pick and type the whole sentence: *Vale ___ mañana de Medellín, ¿no?* (*llegaba* or *llegó*) Vale was arriving from Medellín tomorrow, wasn't she?",
+      "answer": "Vale llegaba mañana de Medellín, ¿no?",
+      "accept": [],
+      "why": "*Llegó* is finished past and cannot sit next to *mañana*; the *-aba* form passes the news on."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *El concierto ___ el sábado, según me dicen.* (*fue* or *era*) The concert was on Saturday, from what I'm told.",
+      "answer": "El concierto era el sábado, según me dicen.",
+      "accept": [
+        "Según me dicen, el concierto era el sábado."
+      ],
+      "why": "*Según me dicen* shows you are repeating it, and *era* keeps your distance."
+    },
+    {
+      "prompt": "Say: Hernando was coming back from Cartagena tomorrow, wasn't he?",
+      "answer": "Hernando regresaba mañana de Cartagena, ¿no?",
+      "accept": [
+        "Hernando regresaba de Cartagena mañana, ¿no?"
+      ],
+      "why": "*Regresaba* plus *mañana* is news you are passing on, and *¿no?* asks the listener to confirm."
+    },
+    {
+      "prompt": "Say: Tomás was going back to Canada next month, wasn't he?",
+      "answer": "Tomás volvía a Canadá el próximo mes, ¿no?",
+      "accept": [],
+      "why": "*Volvía* is the \"was going back\" form, and *el próximo mes* is the future time."
+    },
+    {
+      "prompt": "Say: The trial was starting on Tuesday, from what I'm told.",
+      "answer": "El juicio empezaba el martes, según me dicen.",
+      "accept": [
+        "Según me dicen, el juicio empezaba el martes."
+      ],
+      "why": "*Empezaba* plus *según me dicen* is the classic way to pass on a date."
+    },
+    {
+      "prompt": "Turn this into reported news with a check: *La asamblea empieza a las seis esta noche.*",
+      "answer": "La asamblea empezaba a las seis esta noche, ¿no?",
+      "accept": [
+        "¿La asamblea no empezaba a las seis esta noche?"
+      ],
+      "why": "The *-aba* form with *¿no?* says \"that is what I heard, right?\"."
+    },
+    {
+      "prompt": "Ask a friend: Weren't you leaving tomorrow?",
+      "answer": "¿Tú no salías mañana?",
+      "accept": [
+        "¿No salías mañana?"
+      ],
+      "why": "You use the *tú* form *salías* to check a plan someone told you."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Vale llegó mañana de Medellín, ¿no?", "right": "Vale llegaba mañana de Medellín, ¿no?", "why": "Almost. *Llegó* is a finished past, but *mañana* is the future; the *-aba* form is what carries reported news." },
-    { "wrong": "Yo llegaba mañana de Medellín.", "right": "Llego mañana de Medellín.", "why": "About your own plan, the *-aba* form sounds evasive, as if you don't know when you arrive." },
-    { "wrong": "Vale estaba llegando mañana de Medellín, ¿no?", "right": "Vale llegaba mañana de Medellín, ¿no?", "why": "Almost. English says \"was arriving\", but Spanish needs only the one word: *llegaba*." }
+    {
+      "wrong": "Vale llegó mañana de Medellín, ¿no?",
+      "right": "Vale llegaba mañana de Medellín, ¿no?",
+      "why": "Almost. *Llegó* is a finished past, but *mañana* is the future; the *-aba* form is what carries reported news."
+    },
+    {
+      "wrong": "Yo llegaba mañana de Medellín.",
+      "right": "Llego mañana de Medellín.",
+      "why": "About your own plan, the *-aba* form sounds evasive, as if you don't know when you arrive."
+    },
+    {
+      "wrong": "Vale estaba llegando mañana de Medellín, ¿no?",
+      "right": "Vale llegaba mañana de Medellín, ¿no?",
+      "why": "Almost. English says \"was arriving\", but Spanish needs only the one word: *llegaba*."
+    }
   ],
   "personal": "Think of a plan someone else told you about this week. Pass it on with the *-aba* or *-ía* form, a time word and *¿no?* or *según me dicen*."
 }

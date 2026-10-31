@@ -34,7 +34,7 @@
       "accept": [
         "No digo que la gente mienta, pero yo no me voy.",
         "No digo que sea mentira, pero no he comprado ningún pasaje.",
-        "No digo que nadie lo piense, pero yo me quedo aquí."
+        "No digo que se lo inventen, pero yo me quedo aquí."
       ],
       "require": [
         {
@@ -101,7 +101,7 @@
       "accept": [
         "No me cabe duda de que el barrio nos va a apoyar.",
         "No me cabe ninguna duda de que el barrio va a estar con nosotros.",
-        "Con todo respeto, no me cabe duda de que seguimos abiertos."
+        "Para serle sincero, no me cabe duda de que seguimos abiertos."
       ],
       "require": [
         {
@@ -117,7 +117,7 @@
     {
       "id": "t6",
       "npc": "Hernando: Así me gusta. Y ahora dígame, ¿me sirve un tinto?",
-      "npcEn": "Hernando: That's what I like to hear. Now tell me, will you pour me a coffee?",
+      "npcEn": "Hernando: That's what I like to hear. Now tell me, will you pour me a black coffee?",
       "intent": "Offer him the coffee on the house, politely.",
       "accept": [
         "Claro que sí, don Hernando. Este tinto va por la casa.",
@@ -161,6 +161,7 @@
     "g:hay-vs-esta",
     "g:imperfect-states",
     "g:indefinites",
+    "g:indirect-objects",
     "g:ir-a-plans",
     "g:negation-words",
     "g:object-pronoun-position",
@@ -217,6 +218,7 @@
     "l:gusto",
     "l:hacer",
     "l:hoy",
+    "l:inventar",
     "l:invitar",
     "l:ir",
     "l:irse",
@@ -238,10 +240,10 @@
     "l:prueba",
     "l:quedarse",
     "l:qué",
-    "l:respetar",
     "l:seguir",
     "l:ser",
     "l:servir",
+    "l:sincero",
     "l:tener",
     "l:tinto",
     "l:ver",
@@ -260,6 +262,8 @@
     "p:medir-pesar-caber",
     "p:no-digo-que-pero",
     "p:no-me-cabe-duda",
+    "p:para-inf",
+    "p:para-inf-purpose",
     "p:personal-a",
     "p:pues-claro-que",
     "p:senor-don-article",

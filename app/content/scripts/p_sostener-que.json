@@ -115,17 +115,15 @@
       "why": "Plain *que* follows the verb, with no *de*."
     },
     {
-      "prompt": "Pick and type the whole sentence: *Mariana ___ que tiene pruebas.* (*sostiene* or *sostene*) Mariana maintains that she has evidence.",
+      "prompt": "Pick and type the whole sentence: *Mariana ___ que tiene pruebas.* (*sostiene* or *sostienen*) Mariana maintains that she has evidence.",
       "answer": "Mariana sostiene que tiene pruebas.",
       "accept": [],
-      "why": "With *Mariana* the verb ends in *-iene*: *sostiene*."
+      "why": "Mariana is one person, so *sostiene*."
     },
     {
       "prompt": "Say: Don Hernando maintains that he saw the owner.",
       "answer": "Don Hernando sostiene que vio al dueño.",
-      "accept": [
-        "Don Hernando sostiene que vio al dueño."
-      ],
+      "accept": [],
       "why": "*Que* introduces the claim, and the claim keeps its own verb."
     },
     {
@@ -143,9 +141,7 @@
     {
       "prompt": "Change it to \"they\": *El dueño sostiene que el edificio es suyo.* (use *ellos*)",
       "answer": "Ellos sostienen que el edificio es suyo.",
-      "accept": [
-        "Ellos sostienen que el edificio es suyo."
-      ],
+      "accept": [],
       "why": "*Ellos* needs *sostienen*, ending in *-ienen*."
     },
     {

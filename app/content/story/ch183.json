@@ -127,10 +127,10 @@
   ],
   "questions": [
     {
-      "q": "Who was the old man Montoya lunched with at the hotel?",
+      "q": "Who was the old man at the hotel lunch?",
       "options": [
         "The judge in the Rengifo case",
-        "Montoya's father, a judge who retired years ago, on his birthday",
+        "Judge Montoya, the lawyer's father, retired for twenty years and celebrating his birthday",
         "A senator",
         "Bermúdez"
       ],
@@ -190,7 +190,7 @@
       "answer": 1
     },
     {
-      "q": "Who leads the investigation into Rengifo, according to the court's website?",
+      "q": "Which judge has the Rengifo case, according to the court's website?",
       "options": [
         "Judge Montoya",
         "Judge Amparo Salgar",

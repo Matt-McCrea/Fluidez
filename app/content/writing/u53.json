@@ -20,12 +20,10 @@
         "type": "avoidsAny",
         "words": [
           "es un hecho",
-          "estoy seguro",
-          "estoy segura",
-          "sé que",
-          "es verdad que"
+          "es verdad que",
+          "me consta"
         ],
-        "label": "don't vouch for it (no 'sé que', 'es verdad que')"
+        "label": "don't vouch for it (no 'es un hecho', 'me consta')"
       },
       {
         "type": "minSentences",
@@ -171,7 +169,7 @@
         "label": "at least 6 sentences"
       }
     ],
-    "model": "Vale, te escribo antes de que llegues porque pasó algo con Hernando. Esta mañana me soltó que ya no vendrá los martes, y cuando le pregunté por qué, me reprochó que nunca le hubiera contado lo de Altamira. Le aclaré que yo tampoco sabía mucho, pero no me creyó del todo. Después insinuó que tú estabas al tanto de todo desde hace semanas. No sé si lo dijo en serio o solo estaba enojado, así que no quise discutir. Se fue sin tomarse el tinto, lo cual en él es mala señal. Ojalá puedas hablar con él cuando venga el jueves, porque contigo se relaja más. Yo me encargo de las empanadas y de la caja. Perdón por el mensaje tan largo, pero prefiero que lo sepas por mí y no por Simón, que ya está repitiendo medio chisme. Por cierto, también me advirtió que no piensa firmar nada que venga de Altamira, aunque le ofrezcan una fortuna. Eso sí me pareció sincero, y creo que deberíamos agradecérselo con un pastel de los tuyos.",
+    "model": "Vale, te escribo antes de que llegues porque pasó algo con Hernando. Esta mañana me soltó que ya no vendría los martes, y cuando le pregunté por qué, me reprochó que nunca le hubiera contado lo de Altamira. Le aclaré que yo tampoco sabía mucho, pero no me creyó del todo. Después insinuó que tú estabas al tanto de todo desde hace semanas. No sé si lo dijo en serio o solo estaba enojado, así que no quise discutir. Se fue sin tomarse el tinto, lo cual en él es mala señal. Ojalá puedas hablar con él cuando venga el jueves, porque contigo se relaja más. Yo me encargo de las empanadas y de la caja. Perdón por el mensaje tan largo, pero prefiero que lo sepas por mí y no por Simón, que ya está repitiendo medio chisme. Por cierto, también me advirtió que no piensa firmar nada que venga de Altamira, aunque le ofrezcan una fortuna. Eso sí me pareció sincero, y creo que deberíamos agradecérselo con un pastel de los tuyos.",
     "focus": "p:verbo-que-interpreta",
     "requires": [
       "c:con-el-ella",
@@ -188,7 +186,6 @@
       "g:double-pronouns",
       "g:estar-gerund",
       "g:estar-location-states",
-      "g:future-promises",
       "g:gender-articles",
       "g:imperfect-habitual",
       "g:imperfect-states",
@@ -335,11 +332,10 @@
         "words": [
           "tienes",
           "puedes",
-          "eres",
           "quieres",
+          "tú ",
           "tu ",
-          "tus ",
-          "oye"
+          "tus "
         ],
         "label": "formal: no tú forms"
       },
@@ -633,9 +629,10 @@
         "words": [
           "tienes",
           "puedes",
-          "eres",
           "quieres",
-          "tu "
+          "tú ",
+          "tu ",
+          "tus "
         ],
         "label": "usted forms, not tú"
       },
@@ -801,8 +798,7 @@
         "type": "avoidsAny",
         "words": [
           "usted",
-          "ustedes",
-          "sé que",
+          "me consta",
           "es verdad que"
         ],
         "label": "friend register, and no vouching"
@@ -1128,10 +1124,12 @@
         "words": [
           "tienes",
           "puedes",
-          "eres",
-          "quieres"
+          "quieres",
+          "tú ",
+          "tu ",
+          "tus "
         ],
-        "label": "address the room as ustedes"
+        "label": "address the room as ustedes, not tú"
       },
       {
         "type": "minSentences",
@@ -1422,7 +1420,7 @@
   {
     "id": "w-u53-10",
     "unit": "u53",
-    "prompt": "Hernando mentioned a rumour about the café's reopening. Text him (use usted) to check what you heard, using the imperfect to quote a plan as reported speech, for example 'La reunión era el jueves, ¿no?'. Include at least two such checking questions.",
+    "prompt": "Don Hernando passed on some plans for this week's neighbours' meeting. Text him (use usted) to check what you heard, using the imperfect to quote a plan as reported speech, for example 'La reunión era el jueves, ¿no?'. Include at least two such checking questions.",
     "minWords": 150,
     "maxWords": 250,
     "constraints": [
@@ -1440,9 +1438,10 @@
         "words": [
           "tienes",
           "puedes",
-          "eres",
           "quieres",
-          "tu "
+          "tú ",
+          "tu ",
+          "tus "
         ],
         "label": "usted forms, not tú"
       },
@@ -1452,12 +1451,11 @@
         "label": "at least 6 sentences"
       }
     ],
-    "model": "Buenas tardes, don Hernando. Le escribo para confirmar un par de cosas que me contaron, porque no quiero equivocarme delante de los demás. La reunión con los vecinos era el jueves, ¿no? Y el abogado llegaba de Medellín en el primer vuelo de la mañana, ¿verdad? Estoy confundido con otra cosa. Tampoco tengo claro si la cita con la alcaldía era a las diez o a las once. Ayer alguien me dijo que el funcionario ya no trabajaba ahí, pero no sé quién lo dijo ni de dónde lo sacó. Usted siempre está mejor informado que yo, así que prefiero preguntarle antes de repetir algo falso. Si le parece bien, mañana lo espero en el café y lo hablamos con un tinto. Gracias por su paciencia, y perdone tantas preguntas. Es que en estos días todo el mundo dice algo distinto, y cada versión suena más convincente que la anterior, así que prefiero comprobar los datos con alguien de confianza.",
+    "model": "Buenas tardes, don Hernando. Le escribo para confirmar un par de cosas que me contaron, porque no quiero equivocarme delante de los demás. La reunión con los vecinos era el jueves, ¿no? Y el abogado llegaba de Medellín en el primer vuelo de la mañana, ¿verdad? Y otra duda: ¿la cita con la alcaldía era a las diez o a las once? Ayer alguien me dijo que el funcionario ya no trabajaba ahí, pero no sé quién lo dijo ni de dónde lo sacó. Usted siempre está mejor informado que yo, así que prefiero preguntarle antes de repetir algo falso. Si le parece bien, mañana lo espero en el café y lo hablamos con un tinto. Gracias por su paciencia, y perdone tantas preguntas. Es que en estos días todo el mundo dice algo distinto, y cada versión suena más convincente que la anterior, así que prefiero comprobar los datos con alguien de confianza.",
     "focus": "p:imperfecto-citativo",
     "requires": [
       "c:ayer-anoche",
       "c:bien-y-tu",
-      "c:claro-listo",
       "c:era",
       "c:es-que",
       "c:hola-buenos-dias",
@@ -1465,7 +1463,6 @@
       "c:no-se",
       "c:porque",
       "c:quiero",
-      "c:tengo",
       "c:ya-no",
       "g:cada-cualquier",
       "g:cause-result",
@@ -1507,11 +1504,9 @@
       "l:buena",
       "l:café",
       "l:cita",
-      "l:claro",
       "l:comprobar",
       "l:confianza",
       "l:confirmar",
-      "l:confundido",
       "l:contar",
       "l:convincente",
       "l:cosa",
@@ -1520,6 +1515,7 @@
       "l:delante",
       "l:demás",
       "l:distinto",
+      "l:duda",
       "l:día",
       "l:dónde",
       "l:equivocarse",
@@ -1552,7 +1548,6 @@
       "l:siempre",
       "l:sonar",
       "l:tarde",
-      "l:tener",
       "l:tinto",
       "l:trabajar",
       "l:vecino",
@@ -1585,7 +1580,6 @@
       "p:prefieres-x-o-y",
       "p:preguntar-pedir",
       "p:senor-don-article",
-      "p:tambien-tampoco",
       "p:te-parece-bien-que",
       "p:telling-time",
       "p:todos-los-dias"
@@ -1612,9 +1606,10 @@
         "words": [
           "tienes",
           "puedes",
-          "eres",
           "quieres",
-          "tu "
+          "tú ",
+          "tu ",
+          "tus "
         ],
         "label": "usted forms, not tú"
       },
@@ -1754,7 +1749,7 @@
   {
     "id": "w-u53-12",
     "unit": "u53",
-    "prompt": "Write a message to the whole group chat of café regulars about the rumour that Tomás is going back to Canada. Explain what you mean in other words (o sea que, mejor dicho, es decir), say what could happen with cabe la posibilidad de que, and finish with en cualquier caso. Informal, tú or nosotros.",
+    "prompt": "You're Tomás. Write a message to the café regulars' group chat about the rumour that you're going back to Canada. Explain what you mean in other words (o sea que, mejor dicho, es decir), say what could happen with cabe la posibilidad de que, and finish with en cualquier caso. Keep it friendly and address the group as ustedes.",
     "minWords": 150,
     "maxWords": 250,
     "constraints": [
@@ -1776,10 +1771,11 @@
       {
         "type": "avoidsAny",
         "words": [
-          "usted",
-          "ustedes"
+          "usted ",
+          "usted,",
+          "usted."
         ],
-        "label": "informal register"
+        "label": "talk to the group as friends, not as usted"
       }
     ],
     "model": "Hola a todos. Me llegó que por ahí dicen que me voy a Canadá, así que quiero aclarar algo. Me fui de Toronto para venir aquí, o sea que no pienso regresar a ningún lado. Cabe la posibilidad de que viaje unos días por cosas de familia, mejor dicho, por papeles de mi mamá, pero eso es todo. Sé que Altamira quiere comprar el edificio, es decir, que alguien tendría interés en que yo me rinda. No les voy a dar ese gusto. No digo que no haya problemas, pero estamos trabajando en ellos con un abogado. En cualquier caso, el café va a seguir abierto, y los espero con el tinto de siempre. Si oyen otra versión, pregunten antes de repetirla, y cualquier cosa me escriben directamente. Gracias por el cariño. Y si alguien quiere ayudar de verdad, que venga el sábado con ideas para organizar una fiesta de vecinos en la calle. Eso sí asusta a Altamira.",

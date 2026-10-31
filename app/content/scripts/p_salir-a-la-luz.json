@@ -145,9 +145,7 @@
     {
       "prompt": "Change it so the contracts came to light by themselves: *El periódico sacó a la luz los contratos.*",
       "answer": "Los contratos salieron a la luz.",
-      "accept": [
-        "Los contratos salieron a la luz."
-      ],
+      "accept": [],
       "why": "Now the contracts are the subject, so *salieron* matches *los contratos*."
     },
     {
@@ -161,7 +159,7 @@
     {
       "wrong": "La verdad salió a luz años después.",
       "right": "La verdad salió a la luz años después.",
-      "why": "Almost. You need *la*: without it *a luz* sounds like giving birth."
+      "why": "Almost. The phrase is *a la luz*, with *la*; plain *a luz* belongs to *dar a luz*, to give birth."
     },
     {
       "wrong": "Mariana salió a la luz el escándalo.",

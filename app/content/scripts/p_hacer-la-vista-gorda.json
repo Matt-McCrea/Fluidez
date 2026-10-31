@@ -145,10 +145,10 @@
       "why": "A plural subject needs *hicieron*, but *la vista gorda* stays singular."
     },
     {
-      "prompt": "Make it negative: *Don Hernando hace la vista gorda con todos.*",
-      "answer": "Don Hernando no hace la vista gorda con todos.",
+      "prompt": "Make it negative, so that he lets nobody off: *Don Hernando hace la vista gorda con todos.*",
+      "answer": "Don Hernando no hace la vista gorda con nadie.",
       "accept": [],
-      "why": "*No* goes in front of the verb."
+      "why": "With *no* in front of the verb, *todos* turns into *nadie*: Spanish keeps both negatives."
     }
   ],
   "pitfalls": [

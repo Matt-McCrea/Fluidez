@@ -82,18 +82,18 @@
       "id": "t4",
       "npc": "Funcionaria: Quince días hábiles, es decir, tres semanas.",
       "npcEn": "Official: Fifteen working days, that is, three weeks.",
-      "intent": "Say when you'll come back, then correct yourself: next week, or rather in three weeks (use: mejor dicho or es decir).",
+      "intent": "Say when you'll come back, then correct yourself: next week, or rather in three weeks (use: mejor dicho).",
       "accept": [
         "Vuelvo la próxima semana; mejor dicho, en tres semanas.",
         "Regreso el lunes. Mejor dicho, dentro de tres semanas.",
-        "Vengo mañana. Es decir, no, vengo en tres semanas."
+        "Vuelvo el lunes. Bueno, mejor dicho, en tres semanas."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\b(mejor dicho|es decir)\\b",
+          "pattern": "\\bmejor dicho\\b",
           "flags": "iu",
-          "label": "correct yourself: mejor dicho / es decir"
+          "label": "correct yourself: mejor dicho"
         }
       ],
       "focus": "g:reformulation",
@@ -123,6 +123,7 @@
   ],
   "requires": [
     "c:claro-listo",
+    "c:entonces-bueno",
     "c:gracias-de-nada",
     "c:hago-salgo-vengo",
     "c:hola-buenos-dias",
@@ -170,6 +171,7 @@
     "l:ayuda",
     "l:barrio",
     "l:buena",
+    "l:bueno",
     "l:casar",
     "l:celular",
     "l:correcto",
@@ -190,7 +192,6 @@
     "l:lado",
     "l:ley",
     "l:lunes",
-    "l:mañana",
     "l:mejor",
     "l:nombre",
     "l:oficina",
