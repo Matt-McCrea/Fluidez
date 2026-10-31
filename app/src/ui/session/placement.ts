@@ -171,7 +171,9 @@ function questionItem(s: BankSentence, unit: number, seed: string): ProbeItem | 
     id: `pl:${s.id}:qw`, kind: 'question', sentence: s.id, unit, ask: 'Which word fills the gap?', prompt: es(gapped), sub: en(s.en),
     options: options.map((o) => es(o.toLowerCase())), answer: options.indexOf(q.word),
   };
-  return /\d/.test(s.es) || /\d/.test(s.en) ? null : it;
+  // same fairness bar as form and choose items: a deciding word that looks like an English word in the
+  // translation ("cómo" next to "come") would let the learner guess without the grammar
+  return fairItem(it, s.es, s.en) ? it : null;
 }
 
 /** Every fair item one sentence can give (one per feature for 'form'). */
