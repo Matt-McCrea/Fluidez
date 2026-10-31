@@ -31,7 +31,7 @@
       "en": "I don't want to leave room for doubt."
     }
   ],
-  "rule": "*Dar lugar a* means to give rise to, or to lead to. The cause is the subject and the result comes after *a*: *la crisis dio lugar a una ola de protestas*.\n\nOnly *dar* changes: *dio lugar*, *dieron lugar*, *puede dar lugar*.\n\nAfter *a* comes a noun, never a clause. English can say \"led to people protesting\", but Spanish needs the noun: *dio lugar a protestas*. With *el*, *a* joins it: *dio lugar al conflicto*.",
+  "rule": "*Dar lugar a* means to give rise to, or to lead to. The cause is the subject and the result comes after *a*: *la crisis dio lugar a una ola de protestas*.\n\nOnly *dar* changes: *dio lugar*, *dieron lugar*, *puede dar lugar*.\n\nAfter *a* usually comes a noun: *dio lugar a protestas*. A whole clause is possible too (*dio lugar a que la gente protestara*), but in an essay the noun is shorter and cleaner. With *el*, *a* joins it: *dio lugar al conflicto*.",
   "smallPrint": "Teachers call this a support-verb phrase: *dar* carries little meaning on its own, and the noun *lugar* does the work.",
   "readAndPick": [
     {
@@ -135,9 +135,7 @@
     {
       "prompt": "Say: The error gave rise to the crisis.",
       "answer": "El error dio lugar a la crisis.",
-      "accept": [
-        "El error dio lugar a la crisis."
-      ],
+      "accept": [],
       "why": "*A* and *la* stay apart: *a la*."
     },
     {
@@ -157,9 +155,9 @@
   ],
   "pitfalls": [
     {
-      "wrong": "La crisis dio lugar a que hubiera protestas.",
-      "right": "La crisis dio lugar a una ola de protestas.",
-      "why": "Almost. In this pattern a noun follows *a*; a whole clause sounds off."
+      "wrong": "La protesta dio lugar en la plaza.",
+      "right": "La protesta tuvo lugar en la plaza.",
+      "why": "Almost. *Dar lugar a* is \"give rise to\"; for \"take place\", Spanish says *tener lugar*."
     },
     {
       "wrong": "La crisis dio lugar protestas.",

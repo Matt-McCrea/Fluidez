@@ -117,9 +117,7 @@
     {
       "prompt": "Type in Spanish: In the short term it's expensive, but in the long run it works out cheaper.",
       "answer": "A corto plazo es caro, pero a la larga sale más barato.",
-      "accept": [
-        "A corto plazo es caro, pero a la larga sale más barato."
-      ],
+      "accept": [],
       "why": "*A corto plazo* and *a la larga* set the near and far view side by side."
     },
     {

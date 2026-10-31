@@ -79,7 +79,7 @@
   {
     "id": "u56-0004",
     "es": "Hay que prevenir los accidentes, no lamentarlos.",
-    "en": "We have to prevent accidents, not mourn them.",
+    "en": "We have to prevent accidents, not regret them.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -588,21 +588,21 @@
   },
   {
     "id": "u56-0023",
-    "es": "Los vecinos quieren prevenir la compra de otra casa de la cuadra.",
-    "en": "The neighbours want to prevent the purchase of another house on the block.",
+    "es": "Los vecinos quieren prevenir los robos en la cuadra con más luces en la calle.",
+    "en": "The neighbours want to prevent break-ins on the block with more street lights.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:stem-boot",
       "g:verb-infinitive",
-      "l:casa",
-      "l:compra",
+      "l:calle",
       "l:cuadra",
+      "l:luz",
       "l:prevenir",
       "l:querer",
+      "l:robo",
       "l:vecino",
-      "p:otro-no-article",
       "p:prever-prevenir"
     ],
     "targets": [
@@ -1660,13 +1660,12 @@
   },
   {
     "id": "u56-0064",
-    "es": "Sin lugar a dudas, Hernando cuenta mejor las historias que cualquiera.",
-    "en": "Without a doubt, Hernando tells stories better than anyone.",
+    "es": "Hernando cuenta las historias mejor que nadie, sin lugar a dudas.",
+    "en": "Hernando tells stories better than anyone, without a doubt.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:sin-lugar-a-dudas",
-      "g:cada-cualquier",
       "g:comparatives",
       "g:gender-articles",
       "g:stem-boot",
@@ -1674,7 +1673,8 @@
       "l:duda",
       "l:historia",
       "l:lugar",
-      "l:mejor"
+      "l:mejor",
+      "p:contar-dos-sentidos"
     ],
     "targets": [
       "c:sin-lugar-a-dudas"
@@ -1741,7 +1741,7 @@
   {
     "id": "u56-0067",
     "es": "Es, sin lugar a dudas, una de las ciudades más ricas en historia.",
-    "en": "It is, without a doubt, one of the richest cities in history.",
+    "en": "It is, without a doubt, one of the cities richest in history.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1794,8 +1794,8 @@
   },
   {
     "id": "u56-0069",
-    "es": "Sin lugar a dudas, la mejor cura para el cansancio es dormir.",
-    "en": "Without a doubt, the best cure for tiredness is sleep.",
+    "es": "La mejor cura para el cansancio es dormir, sin lugar a dudas.",
+    "en": "The best cure for tiredness is sleep, without a doubt.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1851,22 +1851,19 @@
   },
   {
     "id": "u56-0071",
-    "es": "Sin lugar a dudas, Simón es el loro que más habla de toda Colombia.",
-    "en": "Without a doubt, Simón is the parrot that talks the most in all of Colombia.",
+    "es": "Simón es, sin lugar a dudas, el loro más hablador de toda Colombia.",
+    "en": "Simón is, without a doubt, the chattiest parrot in all of Colombia.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:que-mas",
       "c:sin-lugar-a-dudas",
       "g:gender-articles",
-      "g:present-ar",
       "g:ser-identity",
       "l:duda",
-      "l:hablar",
+      "l:hablador",
       "l:loro",
       "l:lugar",
-      "l:ser",
-      "p:el-que-la-que"
+      "l:ser"
     ],
     "targets": [
       "c:sin-lugar-a-dudas"
@@ -1878,23 +1875,26 @@
   },
   {
     "id": "u56-0072",
-    "es": "¿Es verdad, sin lugar a dudas, que el barrio va a cambiar?",
-    "en": "Is it true, without a doubt, that the neighbourhood is going to change?",
+    "es": "¿Tú crees que esto es, sin lugar a dudas, lo mejor para el barrio?",
+    "en": "Do you think this is, without a doubt, the best thing for the neighbourhood? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:sin-lugar-a-dudas",
+      "c:tu-crees",
       "g:gender-articles",
-      "g:ir-a-plans",
-      "g:relative-que",
+      "g:lo-adjective",
       "g:ser-identity",
+      "g:superlatives",
+      "g:that-clauses",
       "l:barrio",
-      "l:cambiar",
+      "l:creer",
       "l:duda",
-      "l:ir",
       "l:lugar",
+      "l:mejor",
       "l:ser",
-      "l:verdad"
+      "p:demonstratives-basic",
+      "p:para-inf"
     ],
     "targets": [
       "c:sin-lugar-a-dudas"
@@ -2008,19 +2008,21 @@
   },
   {
     "id": "u56-0077",
-    "es": "Sin lugar a dudas, los estudiantes del curso mejoraron mucho.",
-    "en": "Without a doubt, the students in the course improved a lot.",
+    "es": "Este año, sin lugar a dudas, los estudiantes del curso mejoraron mucho.",
+    "en": "This year, without a doubt, the students in the course improved a lot.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:sin-lugar-a-dudas",
       "g:gender-articles",
       "g:preterite-ar",
+      "l:año",
       "l:curso",
       "l:duda",
       "l:estudiante",
       "l:lugar",
       "l:mejorar",
+      "p:demonstratives-basic",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -2217,8 +2219,8 @@
   },
   {
     "id": "u56-0085",
-    "es": "Tarde o temprano, la tecnología nos cansa a todos.",
-    "en": "Sooner or later, technology wears us all out.",
+    "es": "La tecnología, tarde o temprano, nos cansa a todos.",
+    "en": "Technology, sooner or later, wears us all out.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2242,8 +2244,8 @@
   },
   {
     "id": "u56-0086",
-    "es": "Tarde o temprano se rompe todo lo que no se repara.",
-    "en": "Sooner or later, everything that isn't repaired breaks.",
+    "es": "Todo lo que no se repara se rompe tarde o temprano.",
+    "en": "Everything that isn't repaired breaks sooner or later.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2328,8 +2330,8 @@
   },
   {
     "id": "u56-0089",
-    "es": "Tarde o temprano, la memoria encuentra la manera de volver.",
-    "en": "Sooner or later, memory finds a way to return.",
+    "es": "La memoria encuentra la manera de volver, tarde o temprano.",
+    "en": "Memory finds a way to return, sooner or later.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2382,8 +2384,8 @@
   },
   {
     "id": "u56-0091",
-    "es": "Tarde o temprano, la gente aprende a cuidar lo que le importa.",
-    "en": "Sooner or later, people learn to look after what matters to them.",
+    "es": "La gente aprende tarde o temprano a cuidar lo que le importa.",
+    "en": "People learn sooner or later to look after what matters to them.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2437,8 +2439,8 @@
   },
   {
     "id": "u56-0093",
-    "es": "Si bien Tomás escribe despacio, sus ideas son claras.",
-    "en": "Although Tomás writes slowly, his ideas are clear.",
+    "es": "Tomás escribe despacio, si bien sus ideas son claras.",
+    "en": "Tomás writes slowly, though his ideas are clear.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2706,13 +2708,13 @@
   },
   {
     "id": "u56-0102",
-    "es": "Aun cuando no tengas razón, vale la pena escucharte.",
-    "en": "Even if you aren't right, it's worth listening to you. (to a friend)",
+    "es": "Vale la pena escucharte, aun cuando no tengas razón.",
+    "en": "It's worth listening to you, even if you aren't right. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:vale-la-pena",
       "g:concessive-advanced",
+      "g:gender-articles",
       "g:object-pronoun-position",
       "g:subj-cuando-future",
       "g:subj-wanting",
@@ -2720,9 +2722,9 @@
       "l:pena",
       "l:razón",
       "l:tener",
-      "l:valer",
       "p:me-te-nos-objects",
-      "p:tener-razon"
+      "p:tener-razon",
+      "p:valer-la-pena"
     ],
     "targets": [
       "g:concessive-advanced"
@@ -2765,8 +2767,8 @@
   },
   {
     "id": "u56-0104",
-    "es": "Si bien las cifras son malas, no hay que perder la esperanza.",
-    "en": "Although the figures are bad, we mustn't lose hope.",
+    "es": "Las cifras son malas, si bien no hay que perder la esperanza.",
+    "en": "The figures are bad, though we mustn't lose hope.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2849,8 +2851,8 @@
   },
   {
     "id": "u56-0107",
-    "es": "Aun cuando el precio se dispare, la gente seguirá viniendo al café.",
-    "en": "Even if the price shoots up, people will keep coming to the café.",
+    "es": "La gente seguirá viniendo al café aun cuando el precio se dispare.",
+    "en": "People will keep coming to the café even if the price shoots up.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2914,8 +2916,8 @@
   },
   {
     "id": "u56-0109",
-    "es": "Si bien el ensayo es corto, cada frase tiene un propósito.",
-    "en": "Although the essay is short, every sentence has a purpose.",
+    "es": "El ensayo es corto, si bien cada frase tiene un propósito.",
+    "en": "The essay is short, though every sentence has a purpose.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2945,8 +2947,8 @@
   },
   {
     "id": "u56-0110",
-    "es": "Aun cuando me lo pidas de rodillas, no voy a cambiar el final.",
-    "en": "Even if you beg me on your knees, I'm not going to change the ending.",
+    "es": "No voy a cambiar el final, aun cuando me lo pidas de rodillas.",
+    "en": "I'm not going to change the ending, even if you beg me on your knees.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3062,8 +3064,8 @@
   },
   {
     "id": "u56-0114",
-    "es": "Si bien la fórmula es sencilla, aplicarla exige mucha paciencia.",
-    "en": "Although the formula is simple, applying it takes a lot of patience.",
+    "es": "La fórmula es sencilla, si bien aplicarla exige mucha paciencia.",
+    "en": "The formula is simple, though applying it takes a lot of patience.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3218,14 +3220,15 @@
   },
   {
     "id": "u56-0119",
-    "es": "Aun cuando haya etiqueta en la ceremonia, nadie va a notar un error pequeño.",
-    "en": "Even if there is protocol at the ceremony, nobody will notice a small mistake.",
+    "es": "Aun cuando la ceremonia sea de etiqueta, nadie va a notar un error pequeño.",
+    "en": "Even if the ceremony is black-tie, nobody will notice a small mistake.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:concessive-advanced",
       "g:gender-articles",
       "g:ir-a-plans",
+      "g:ser-identity",
       "g:subj-cuando-future",
       "g:subj-irregulars",
       "l:ceremonia",
@@ -3233,7 +3236,8 @@
       "l:etiqueta",
       "l:ir",
       "l:notar",
-      "l:pequeño"
+      "l:pequeño",
+      "l:ser"
     ],
     "targets": [
       "g:concessive-advanced",
@@ -3279,8 +3283,8 @@
   },
   {
     "id": "u56-0121",
-    "es": "Aun cuando mi cuñada no esté de acuerdo, voy a firmar.",
-    "en": "Even if my sister-in-law doesn't agree, I'm going to sign.",
+    "es": "Voy a firmar aun cuando mi cuñada no esté de acuerdo.",
+    "en": "I'm going to sign even if my sister-in-law doesn't agree.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3309,24 +3313,23 @@
   },
   {
     "id": "u56-0122",
-    "es": "Si bien el sombrero de Hernando es viejo, nunca sale sin él.",
-    "en": "Although Hernando's hat is old, he never goes out without it.",
+    "es": "Hernando nunca sale sin su sombrero, si bien ya está viejo.",
+    "en": "Hernando never goes out without his hat, though it's old now.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
       "g:concessive-advanced",
-      "g:gender-articles",
-      "g:prep-pronouns",
+      "g:estar-location-states",
       "g:present-er-ir",
-      "g:ser-identity",
       "g:si-present",
       "l:bien",
+      "l:estar",
       "l:salir",
-      "l:ser",
       "l:sombrero",
       "l:viejo",
       "p:frequency-scale",
+      "p:possessives-basic",
       "p:viejo-antiguo-mayor"
     ],
     "targets": [
@@ -3484,8 +3487,8 @@
   },
   {
     "id": "u56-0128",
-    "es": "Si bien la historia es dolorosa, hay que contarla.",
-    "en": "Although the story is painful, it has to be told.",
+    "es": "La historia es dolorosa, si bien hay que contarla.",
+    "en": "The story is painful, though it has to be told.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3552,7 +3555,7 @@
   {
     "id": "u56-0130",
     "es": "Aun cuando el conflicto tiene su raíz en el pasado, se puede resolver.",
-    "en": "Even when the conflict has its roots in the past, it can be resolved.",
+    "en": "Even though the conflict has its roots in the past, it can be resolved.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3959,8 +3962,8 @@
   },
   {
     "id": "u56-0143",
-    "es": "Si bien la contraseña es larga, es fácil de recordar.",
-    "en": "Although the password is long, it's easy to remember.",
+    "es": "La contraseña es larga, si bien es fácil de recordar.",
+    "en": "The password is long, though it's easy to remember.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4053,8 +4056,8 @@
   },
   {
     "id": "u56-0146",
-    "es": "Aun cuando esté desesperado, Tomás no se queja delante de los clientes.",
-    "en": "Even when he is desperate, Tomás doesn't complain in front of the customers.",
+    "es": "Tomás no se queja delante de los clientes, aun cuando esté desesperado.",
+    "en": "Tomás doesn't complain in front of the customers, even when he is desperate.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4085,24 +4088,24 @@
   },
   {
     "id": "u56-0147",
-    "es": "Si bien el paraíso no existe, el café se parece mucho.",
-    "en": "Although paradise doesn't exist, the café comes very close.",
+    "es": "Si bien el paraíso no existe, el café se le parece bastante.",
+    "en": "Although paradise doesn't exist, the café comes pretty close.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
       "g:concessive-advanced",
       "g:gender-articles",
+      "g:indirect-objects",
       "g:present-er-ir",
+      "g:quantifiers",
       "g:reflexive-routine",
       "g:si-present",
       "l:bien",
       "l:café",
       "l:existir",
       "l:paraíso",
-      "l:parecerse",
-      "p:parecer-vs-parecerse",
-      "p:quantifiers-basic"
+      "l:parecerse"
     ],
     "targets": [
       "g:concessive-advanced",
@@ -4360,8 +4363,8 @@
   },
   {
     "id": "u56-0156",
-    "es": "Aun cuando hacer frente a la deuda sea duro, Vale prefiere pagar.",
-    "en": "Even if facing the debt is hard, Vale prefers to pay.",
+    "es": "Vale prefiere pagar, aun cuando hacer frente a la deuda sea duro.",
+    "en": "Vale prefers to pay, even if facing the debt is hard.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4487,22 +4490,26 @@
   },
   {
     "id": "u56-0160",
-    "es": "Aun cuando no lo creas, esto me da miedo.",
-    "en": "Even if you don't believe it, this scares me.",
+    "es": "Esto me da miedo, aun cuando todos me digan que no pasa nada.",
+    "en": "This scares me, even if everyone tells me it's nothing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-regala",
       "g:concessive-advanced",
-      "g:direct-objects",
+      "g:negation-words",
       "g:present-ar",
-      "l:crear",
+      "g:subj-cuando-future",
+      "g:subj-wanting",
+      "g:that-clauses",
       "l:dar",
+      "l:decir",
       "l:miedo",
-      "p:cuando-basic",
+      "l:pasar",
       "p:demonstratives-basic",
       "p:me-da-miedo",
-      "p:me-da-miedo-que"
+      "p:me-da-miedo-que",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:concessive-advanced"
@@ -4540,8 +4547,8 @@
   },
   {
     "id": "u56-0162",
-    "es": "Aun cuando sea tarde, te espero.",
-    "en": "Even if it's late, I'll wait for you.",
+    "es": "Te espero, aun cuando sea tarde.",
+    "en": "I'll wait for you, even if it's late.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4599,8 +4606,8 @@
   },
   {
     "id": "u56-0164",
-    "es": "Aun cuando Bogotá sea fría, tiene un calor propio.",
-    "en": "Even if Bogotá is cold, it has a warmth of its own.",
+    "es": "Bogotá tiene un calor propio, aun cuando sea fría.",
+    "en": "Bogotá has a warmth of its own, even if it is cold.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4686,7 +4693,7 @@
   {
     "id": "u56-0167",
     "es": "Si bien la ciudad crece sin parar, ¿quién decide hacia dónde?",
-    "en": "Although the city grows without stopping, who decides where to?",
+    "en": "Although the city grows nonstop, who decides which way?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4716,7 +4723,7 @@
   {
     "id": "u56-0168",
     "es": "Aun cuando el alcalde prometa mucho, ¿quién lo va a cumplir?",
-    "en": "Even if the mayor promises a lot, who will follow through?",
+    "en": "Even if the mayor promises a lot, who is going to follow through?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4883,23 +4890,24 @@
   },
   {
     "id": "u56-0174",
-    "es": "Aun cuando fuera temprano, la fila ya daba la vuelta a la esquina.",
+    "es": "Aun cuando era temprano, la fila ya daba la vuelta a la esquina.",
     "en": "Even though it was early, the line already went around the corner.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
       "g:concessive-advanced",
       "g:gender-articles",
       "g:imperfect-habitual",
-      "g:imperfect-subj",
+      "g:imperfect-states",
       "g:ser-identity",
-      "g:subj-future-in-past",
       "l:dar",
       "l:esquina",
       "l:fila",
       "l:ser",
       "l:temprano",
       "l:vuelta",
+      "p:cuando-basic",
       "p:es-de-noche-tarde"
     ],
     "targets": [
@@ -5003,8 +5011,8 @@
   },
   {
     "id": "u56-0178",
-    "es": "Aun cuando el final sea triste, el libro de Hernando vale la pena.",
-    "en": "Even if the ending is sad, Hernando's book is worth it.",
+    "es": "El libro de Hernando vale la pena, aun cuando el final sea triste.",
+    "en": "Hernando's book is worth it, even if the ending is sad.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5761,7 +5769,7 @@
   },
   {
     "id": "u56-0202",
-    "es": "No tenía contraseña la computadora; de ahí que cualquiera pudiera leer los archivos.",
+    "es": "La computadora no tenía contraseña; de ahí que cualquiera pudiera leer los archivos.",
     "en": "The computer had no password; hence anyone could read the files.",
     "accept": [],
     "acceptEn": [],
@@ -5994,7 +6002,7 @@
   {
     "id": "u56-0209",
     "es": "Está desesperado; de ahí que haya aceptado cualquier oferta.",
-    "en": "He's desperate; hence he has accepted any offer.",
+    "en": "He's desperate; hence he has accepted whatever offer came along.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7649,26 +7657,25 @@
   },
   {
     "id": "u56-0266",
-    "es": "Había poca luz en el ángulo de la sala; de ahí que la foto saliera oscura.",
-    "en": "There was little light in that corner of the room; hence the photo came out dark.",
+    "es": "La foto se tomó desde un ángulo muy bajo; de ahí que la casa parezca enorme.",
+    "en": "The photo was taken from a very low angle; hence the house looks huge.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:consecutive-advanced",
       "g:gender-articles",
-      "g:imperfect-states",
-      "g:imperfect-subj",
+      "g:preterite-ar",
+      "g:se-impersonal",
+      "g:subj-wanting",
       "g:that-clauses",
       "l:ahí",
+      "l:casa",
+      "l:enorme",
       "l:foto",
-      "l:luz",
-      "l:oscuro",
-      "l:sala",
-      "l:salir",
+      "l:parecer",
+      "l:tomar",
       "l:ángulo",
       "p:aqui-ahi-alla",
-      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -7902,7 +7909,7 @@
   {
     "id": "u56-0275",
     "es": "Algo de razón tiene, pero no toda.",
-    "en": "He has some point, but not all of it.",
+    "en": "He's partly right, but not entirely.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7923,21 +7930,26 @@
   },
   {
     "id": "u56-0276",
-    "es": "¿No te falta razón, o solo te gusta discutir?",
-    "en": "Are you not wrong, or do you just like arguing? (to a friend)",
+    "es": "¿Algo de razón tengo, o solo te gusta llevarme la contraria?",
+    "en": "Am I partly right, or do you just like contradicting me? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-gusta",
+      "c:tengo",
+      "g:adjective-agreement",
+      "g:gender-articles",
       "g:gustar-basic",
-      "g:parecer-quedar",
-      "g:present-ar",
-      "l:discutir",
-      "l:faltar",
+      "g:object-pronoun-position",
+      "g:yo-irregular",
+      "l:contrario",
       "l:gustar",
+      "l:llevar",
       "l:razón",
+      "l:tener",
+      "p:indefinites-basic",
+      "p:me-te-nos-objects",
       "p:no-te-falta-razon",
-      "p:quedar-faltar-sobrar",
       "p:sobre-todo-solo"
     ],
     "targets": [
@@ -8626,8 +8638,8 @@
   },
   {
     "id": "u56-0303",
-    "es": "Una cosa es tener teoría y otra muy distinta saber cocinar.",
-    "en": "Having theory is one thing and knowing how to cook is quite another.",
+    "es": "Una cosa es leer teoría y otra muy distinta saber cocinar.",
+    "en": "Reading theory is one thing and knowing how to cook is quite another.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8637,9 +8649,9 @@
       "l:cocinar",
       "l:cosa",
       "l:distinto",
+      "l:leer",
       "l:saber",
       "l:ser",
-      "l:tener",
       "l:teoría",
       "p:otro-no-article",
       "p:quantifiers-basic",
@@ -8711,8 +8723,8 @@
   },
   {
     "id": "u56-0306",
-    "es": "Una cosa es contar una historia y otra convencer a un jurado.",
-    "en": "Telling a story is one thing and convincing a jury is another.",
+    "es": "Para Mariana, una cosa es contar una historia y otra convencer a un jurado.",
+    "en": "For Mariana, telling a story is one thing and convincing a jury is another.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8726,6 +8738,7 @@
       "l:ser",
       "p:contar-dos-sentidos",
       "p:otro-no-article",
+      "p:para-inf",
       "p:una-cosa-es-otra"
     ],
     "targets": [
@@ -8822,16 +8835,19 @@
   },
   {
     "id": "u56-0310",
-    "es": "Una cosa es criticar y otra muy distinta destruir.",
-    "en": "Criticising is one thing and destroying is quite another.",
+    "es": "Como dice Vale, una cosa es criticar y otra muy distinta destruir.",
+    "en": "As Vale says, criticising is one thing and destroying is quite another.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
+      "g:cause-result",
       "g:gender-articles",
       "g:ser-identity",
+      "g:stem-e-i",
       "l:cosa",
       "l:criticar",
+      "l:decir",
       "l:destruir",
       "l:distinto",
       "l:ser",
@@ -9463,7 +9479,7 @@
   {
     "id": "u56-0332",
     "es": "Conviene precisar que el café no pertenece a nadie, sino a la esquina.",
-    "en": "It is worth specifying that the café belongs to nobody, only to the corner.",
+    "en": "It is worth specifying that the café belongs to nobody but the corner.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9492,15 +9508,18 @@
   },
   {
     "id": "u56-0333",
-    "es": "¿Todo apunta a que ganamos?",
+    "es": "¿Todo apunta a que vamos a ganar?",
     "en": "Does everything point to us winning?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:vamos-a",
+      "g:ir-a-plans",
       "g:present-ar",
       "g:that-clauses",
       "l:apuntar",
       "l:ganar",
+      "l:ir",
       "p:cabe-preguntarse"
     ],
     "targets": [
@@ -10368,7 +10387,7 @@
   },
   {
     "id": "u56-0366",
-    "es": "La deuda va en aumento al tiempo que baja la venta.",
+    "es": "La deuda va en aumento al tiempo que bajan las ventas.",
     "en": "The debt is on the rise while sales go down.",
     "accept": [],
     "acceptEn": [],
@@ -10666,21 +10685,18 @@
   },
   {
     "id": "u56-0376",
-    "es": "Si bien es cierto que el café pierde plata, no olvidemos que gana amigos.",
-    "en": "While it is true that the café loses money, let us not forget that it wins friends.",
+    "es": "Es cierto que el café pierde plata; ahora bien, no olvidemos que gana amigos.",
+    "en": "It's true that the café loses money; that said, let us not forget that it wins friends.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
-      "g:concessive-advanced",
       "g:gender-articles",
       "g:present-ar",
       "g:ser-identity",
-      "g:si-hypothetical",
-      "g:si-present",
       "g:stem-boot",
-      "g:subj-wanting",
       "g:that-clauses",
+      "l:ahora",
       "l:amigo",
       "l:bien",
       "l:café",
@@ -10689,10 +10705,12 @@
       "l:perder",
       "l:plata",
       "l:ser",
+      "p:ahora-bien-dicho-esto",
+      "p:es-verdad-eso-de-que",
+      "p:se-podria-objetar-que",
       "p:si-bien-no-olvidemos"
     ],
     "targets": [
-      "g:concessive-advanced",
       "p:si-bien-no-olvidemos"
     ],
     "kind": "statement",
@@ -10841,35 +10859,32 @@
   },
   {
     "id": "u56-0381",
-    "es": "Si bien es cierto que Vale cobra poco, no hay que olvidar que aprende cada día.",
-    "en": "While it is true that Vale earns little, we mustn't forget that she learns every day.",
+    "es": "Vale cobra poco, es verdad, pero no hay que olvidar que aprende cada día.",
+    "en": "Vale earns little, it's true, but we mustn't forget that she learns every day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
       "c:hay",
       "c:hay-que",
       "g:cada-cualquier",
-      "g:concessive-advanced",
       "g:present-ar",
       "g:present-er-ir",
       "g:ser-identity",
-      "g:si-present",
       "g:that-clauses",
       "g:verb-infinitive",
       "l:aprender",
-      "l:bien",
       "l:cobrar",
       "l:día",
       "l:olvidar",
       "l:ser",
+      "l:verdad",
       "p:poco-un-poco",
       "p:quantifiers-basic",
       "p:si-bien-no-olvidemos",
+      "p:tener-razon-pero",
       "p:veces-al"
     ],
     "targets": [
-      "g:concessive-advanced",
       "p:si-bien-no-olvidemos"
     ],
     "kind": "statement",
@@ -11104,31 +11119,27 @@
   },
   {
     "id": "u56-0388",
-    "es": "Si bien es cierto que el precio bajó, no olvidemos que la calidad también.",
-    "en": "While it is true that the price dropped, let us not forget that the quality did too.",
+    "es": "El precio bajó, sí; ahora bien, no olvidemos que la calidad también.",
+    "en": "The price dropped, yes; that said, let us not forget that the quality did too.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
-      "g:concessive-advanced",
       "g:gender-articles",
       "g:preterite-ar",
-      "g:ser-identity",
-      "g:si-hypothetical",
-      "g:si-present",
-      "g:subj-wanting",
       "g:that-clauses",
+      "l:ahora",
       "l:bajar",
       "l:bien",
       "l:calidad",
       "l:olvidar",
       "l:precio",
-      "l:ser",
+      "p:ahora-bien-dicho-esto",
+      "p:se-podria-objetar-que",
       "p:si-bien-no-olvidemos",
       "p:subir-subida"
     ],
     "targets": [
-      "g:concessive-advanced",
       "p:si-bien-no-olvidemos"
     ],
     "kind": "statement",
@@ -11253,32 +11264,23 @@
   },
   {
     "id": "u56-0392",
-    "es": "Si bien es cierto que la computadora ahorra tiempo, no olvidemos que también lo roba.",
-    "en": "While it is true that the computer saves time, let us not forget that it also steals it.",
+    "es": "La computadora ahorra tiempo, pero no olvidemos que también lo roba.",
+    "en": "The computer saves time, but let us not forget that it also steals it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
-      "g:concessive-advanced",
       "g:direct-objects",
       "g:gender-articles",
       "g:present-ar",
-      "g:ser-identity",
-      "g:si-hypothetical",
-      "g:si-present",
-      "g:subj-wanting",
       "g:that-clauses",
       "l:ahorrar",
-      "l:bien",
       "l:computadora",
       "l:olvidar",
       "l:robar",
-      "l:ser",
       "l:tiempo",
       "p:si-bien-no-olvidemos"
     ],
     "targets": [
-      "g:concessive-advanced",
       "p:si-bien-no-olvidemos"
     ],
     "kind": "statement",
@@ -11392,35 +11394,36 @@
   },
   {
     "id": "u56-0396",
-    "es": "Si bien es cierto que el invierno es duro, no olvidemos que trae los mejores tintos.",
-    "en": "While it is true that winter is harsh, let us not forget that it brings the best black coffees.",
+    "es": "El invierno es duro, nadie lo niega; ahora bien, no olvidemos que trae los mejores tintos.",
+    "en": "Winter is harsh, nobody denies it; that said, let us not forget that it brings the best black coffees.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
       "g:adjective-agreement",
-      "g:concessive-advanced",
+      "g:direct-objects",
       "g:gender-articles",
       "g:present-er-ir",
       "g:ser-identity",
-      "g:si-hypothetical",
-      "g:si-present",
-      "g:subj-wanting",
+      "g:stem-boot",
       "g:superlatives",
       "g:that-clauses",
+      "l:ahora",
       "l:bien",
       "l:duro",
       "l:invierno",
       "l:mejor",
+      "l:negar",
       "l:olvidar",
       "l:ser",
       "l:tinto",
       "l:traer",
+      "p:ahora-bien-dicho-esto",
       "p:llevar-traer",
+      "p:se-podria-objetar-que",
       "p:si-bien-no-olvidemos"
     ],
     "targets": [
-      "g:concessive-advanced",
       "p:si-bien-no-olvidemos"
     ],
     "kind": "statement",
@@ -11538,32 +11541,23 @@
   },
   {
     "id": "u56-0400",
-    "es": "Si bien es cierto que estoy cansado, no olvidemos que vamos ganando.",
-    "en": "While it is true that I'm tired, let's not forget that we're winning.",
+    "es": "Estoy cansado, sí, pero no olvidemos que vamos ganando.",
+    "en": "I'm tired, yes, but let's not forget that we're winning.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
-      "g:concessive-advanced",
       "g:estar-location-states",
       "g:gerund-ways",
       "g:ir-a-plans",
-      "g:ser-identity",
-      "g:si-hypothetical",
-      "g:si-present",
-      "g:subj-wanting",
       "g:that-clauses",
-      "l:bien",
       "l:cansado",
       "l:estar",
       "l:ganar",
       "l:ir",
       "l:olvidar",
-      "l:ser",
       "p:si-bien-no-olvidemos"
     ],
     "targets": [
-      "g:concessive-advanced",
       "p:si-bien-no-olvidemos"
     ],
     "kind": "dialogue",
@@ -11804,15 +11798,17 @@
   },
   {
     "id": "u56-0409",
-    "es": "¿No olvidamos que Altamira todavía no ha ganado?",
+    "es": "¿No estamos olvidando que Altamira todavía no ha ganado?",
     "en": "Aren't we forgetting that Altamira hasn't won yet?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:todavia-no",
+      "g:estar-gerund",
+      "g:estar-location-states",
       "g:perfecto-experience",
-      "g:present-ar",
       "g:that-clauses",
+      "l:estar",
       "l:ganar",
       "l:olvidar"
     ],
@@ -12433,7 +12429,7 @@
   },
   {
     "id": "u56-0432",
-    "es": "¿Y a su juicio, qué pasó con las cartas?",
+    "es": "Y, a su juicio, ¿qué pasó con las cartas?",
     "en": "And in your judgement, what happened to the letters? (formal)",
     "accept": [],
     "acceptEn": [],
@@ -13791,7 +13787,7 @@
   {
     "id": "u56-0483",
     "es": "Queda por saber qué pensaba Rosa de todo esto.",
-    "en": "It remains to be known what Rosa thought about all this.",
+    "en": "We have yet to find out what Rosa thought about all this.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14130,7 +14126,7 @@
   },
   {
     "id": "u56-0496",
-    "es": "¿De quién se compone el jurado?",
+    "es": "¿De quiénes se compone el jurado?",
     "en": "Who is the jury made up of?",
     "accept": [],
     "acceptEn": [],
@@ -14262,21 +14258,22 @@
   },
   {
     "id": "u56-0501",
-    "es": "El equipo se compone de un delantero, un portero y nueve defensas.",
-    "en": "The team is made up of a striker, a goalkeeper and nine defenders.",
+    "es": "El equipo de Hernando se compone de diez abuelos y un delantero de quince años.",
+    "en": "Hernando's team is made up of ten grandfathers and a fifteen-year-old striker.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
       "g:reflexive-routine",
+      "l:abuelos",
+      "l:año",
       "l:componerse",
-      "l:defensa",
       "l:delantero",
       "l:equipo",
-      "l:portero",
       "p:caracterizarse-por",
       "p:constar-de",
+      "p:masculine-plural-mixed",
       "p:se-divide-en",
       "p:se-entiende-por"
     ],
@@ -14370,24 +14367,31 @@
   },
   {
     "id": "u56-0505",
-    "es": "Se entiende por sobremesa el rato que sigue después de comer.",
-    "en": "After-dinner conversation is understood as the time that follows a meal.",
+    "es": "Se entiende por sobremesa el rato que uno se queda hablando en la mesa después de comer.",
+    "en": "Sobremesa is understood as the time one stays talking at the table after eating.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:gerund-ways",
       "g:por-para-1",
       "g:prep-infinitive",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:reflexive-routine",
       "g:relative-que",
       "g:se-impersonal",
       "g:stem-boot",
-      "g:stem-e-i",
       "l:comer",
       "l:después",
       "l:entender",
+      "l:hablar",
+      "l:mesa",
+      "l:quedarse",
       "l:rato",
-      "l:seguir",
       "l:sobremesa",
+      "l:unir",
+      "p:generic-tu-uno",
       "p:se-entiende-por",
       "p:time-sequence-basic"
     ],
@@ -15094,8 +15098,8 @@
   },
   {
     "id": "u56-0534",
-    "es": "El jurado declaró desierto el segundo premio.",
-    "en": "The jury declared the second prize void.",
+    "es": "El jurado declaró desierto el tercer premio.",
+    "en": "The jury declared the third prize void.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15431,18 +15435,20 @@
   },
   {
     "id": "u56-0549",
-    "es": "Lo declararon culpable de todo en la embajada.",
-    "en": "He was declared guilty of everything at the embassy.",
+    "es": "Lo declararon culpable sin escuchar su versión.",
+    "en": "They declared him guilty without hearing his side.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
-      "g:gender-articles",
+      "g:prep-infinitive",
       "g:preterite-ar",
       "l:culpable",
       "l:declarar",
-      "l:embajada",
-      "p:la-nombraron-directora"
+      "l:escuchar",
+      "l:versión",
+      "p:la-nombraron-directora",
+      "p:possessives-basic"
     ],
     "targets": [
       "p:la-nombraron-directora"
@@ -15542,15 +15548,16 @@
   },
   {
     "id": "u56-0554",
-    "es": "Tras su nombramiento como directora, Vale cambió el menú.",
-    "en": "After her appointment as director, Vale changed the menu.",
+    "es": "Tras su nombramiento como jefa de cocina, Vale cambió el menú.",
+    "en": "After her appointment as head chef, Vale changed the menu.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
       "l:cambiar",
-      "l:director",
+      "l:cocina",
+      "l:jefe",
       "l:menú",
       "l:nombramiento",
       "p:possessives-basic",
@@ -16069,8 +16076,8 @@
   },
   {
     "id": "u56-0575",
-    "es": "Para hacer frente a los gastos, Vale vendió su máquina de pasteles.",
-    "en": "To meet the expenses, Vale sold her pastry machine.",
+    "es": "Para hacer frente a los gastos, Vale vendió su horno viejo.",
+    "en": "To meet the expenses, Vale sold her old oven.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16079,14 +16086,15 @@
       "l:frente",
       "l:gasto",
       "l:hacer",
-      "l:máquina",
-      "l:pastel",
+      "l:horno",
       "l:vender",
+      "l:viejo",
       "p:hacer-frente-a",
       "p:para-inf",
       "p:para-inf-purpose",
       "p:posicion-precisa",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "p:hacer-frente-a"
@@ -16259,7 +16267,7 @@
   },
   {
     "id": "u56-0582",
-    "es": "Hernando restaba importancia a sus años de taxista, pero todos los admiraban.",
+    "es": "Hernando restaba importancia a sus años de taxista, pero todos lo admiraban.",
     "en": "Hernando played down his years as a taxi driver, but everyone admired him.",
     "accept": [],
     "acceptEn": [],
@@ -17955,17 +17963,17 @@
   },
   {
     "id": "u56-0645",
-    "es": "En cierta medida, Tomás escribió este ensayo para ganarse a sí mismo.",
-    "en": "To a certain extent, Tomás wrote this essay to win himself over.",
+    "es": "En cierta medida, Tomás escribió este ensayo para convencerse a sí mismo.",
+    "en": "To a certain extent, Tomás wrote this essay to convince himself.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:object-pronoun-position",
       "g:preterite-er-ir",
       "g:se-impersonal",
+      "l:convencer",
       "l:ensayo",
       "l:escribir",
-      "l:ganar",
       "l:medida",
       "p:demonstratives-basic",
       "p:en-gran-medida",
@@ -18230,8 +18238,8 @@
   },
   {
     "id": "u56-0655",
-    "es": "¿Por qué se dispararon los precios? Tiene su raíz en el dólar.",
-    "en": "Why did prices shoot up? It has its roots in the dollar.",
+    "es": "¿Por qué se dispararon los precios? Todo tiene su raíz en el dólar.",
+    "en": "Why did prices shoot up? It all has its roots in the dollar.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19053,27 +19061,25 @@
   },
   {
     "id": "u56-0680",
-    "es": "El plan surgió de buena fe; de ahí que muchos lo defiendan, y de ahí que otros desconfíen.",
-    "en": "The plan came out of good faith; hence many defend it, and hence others distrust it.",
+    "es": "El plan surgió de buena fe; de ahí que duela tanto que haya fracasado.",
+    "en": "The plan came out of good faith; hence it hurts so much that it failed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:consecutive-advanced",
-      "g:direct-objects",
       "g:gender-articles",
       "g:preterite-er-ir",
+      "g:subj-perfect",
       "g:subj-wanting",
       "g:that-clauses",
       "l:ahí",
       "l:buena",
-      "l:defender",
-      "l:desconfiar",
+      "l:doler",
       "l:fe",
+      "l:fracasar",
       "l:plan",
       "l:surgir",
       "p:aqui-ahi-alla",
-      "p:otro-no-article",
-      "p:quantifiers-basic",
       "p:surgir-de"
     ],
     "targets": [
@@ -19497,20 +19503,26 @@
   },
   {
     "id": "u56-0693",
-    "es": "Es propio de ti sonreír, así pues, sonríe.",
-    "en": "It's just like you to smile, so smile. (to a friend)",
+    "es": "Sonreír es muy propio de ti; así pues, sonríe para la foto.",
+    "en": "Smiling is very like you; so, smile for the photo. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:pues",
       "g:consecutive-advanced",
+      "g:gender-articles",
       "g:prep-pronouns",
       "g:ser-identity",
       "g:stem-e-i",
+      "g:verb-infinitive",
+      "l:foto",
       "l:propio",
       "l:ser",
       "l:sonreír",
-      "p:propio-de"
+      "p:es-adj-inf",
+      "p:para-inf",
+      "p:propio-de",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:consecutive-advanced",
@@ -20005,8 +20017,8 @@
   },
   {
     "id": "u56-0712",
-    "es": "¿Estás de acuerdo en algo, excepto en el plazo?",
-    "en": "Do you agree on anything, except the deadline? (to a friend)",
+    "es": "¿Estás de acuerdo en todo, excepto en el plazo?",
+    "en": "Do you agree on everything except the deadline? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20016,8 +20028,7 @@
       "l:estar",
       "l:plazo",
       "p:coincidir-en",
-      "p:estar-de-acuerdo-con-en",
-      "p:indefinites-basic"
+      "p:estar-de-acuerdo-con-en"
     ],
     "targets": [
       "p:coincidir-en"
@@ -20320,11 +20331,12 @@
   },
   {
     "id": "u56-0723",
-    "es": "Una cosa es escribir de prisa y otra muy distinta escribir sin pensar.",
-    "en": "Writing fast is one thing and writing without thinking is quite another.",
+    "es": "Ojo: una cosa es escribir rápido y otra muy distinta escribir sin pensar.",
+    "en": "Careful: writing fast is one thing and writing without thinking is quite another.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ojo",
       "g:adjective-agreement",
       "g:gender-articles",
       "g:prep-infinitive",
@@ -20332,8 +20344,9 @@
       "l:cosa",
       "l:distinto",
       "l:escribir",
+      "l:ojo",
       "l:pensar",
-      "l:prisa",
+      "l:rápido",
       "l:ser",
       "p:otro-no-article",
       "p:quantifiers-basic",
@@ -20349,8 +20362,8 @@
   },
   {
     "id": "u56-0724",
-    "es": "Una cosa es reformar una casa y otra muy distinta destruirla.",
-    "en": "Renovating a house is one thing and destroying it is quite another.",
+    "es": "En el barrio todos lo saben: una cosa es reformar una casa y otra muy distinta destruirla.",
+    "en": "Everyone in the neighbourhood knows it: renovating a house is one thing and destroying it is quite another.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20358,15 +20371,19 @@
       "g:direct-objects",
       "g:gender-articles",
       "g:object-pronoun-position",
+      "g:present-er-ir",
       "g:ser-identity",
+      "l:barrio",
       "l:casa",
       "l:cosa",
       "l:destruir",
       "l:distinto",
       "l:reformar",
+      "l:saber",
       "l:ser",
       "p:otro-no-article",
       "p:quantifiers-basic",
+      "p:saber-conocer",
       "p:una-cosa-es-otra"
     ],
     "targets": [
@@ -20612,7 +20629,7 @@
   {
     "id": "u56-0733",
     "es": "Algo de razón tiene Mariana: hay que ser más claros.",
-    "en": "Mariana has some point: we have to be clearer.",
+    "en": "Mariana is partly right: we have to be clearer.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20692,7 +20709,7 @@
   {
     "id": "u56-0736",
     "es": "No te falta razón, pero tampoco te sobra.",
-    "en": "You've got a point, but you don't have much of one. (to a friend)",
+    "en": "You've got a point, but only just. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20715,19 +20732,18 @@
   },
   {
     "id": "u56-0737",
-    "es": "¿De verdad no me falta razón?",
-    "en": "Am I really not wrong?",
+    "es": "¿Entonces sí tengo algo de razón?",
+    "en": "So I am partly right, then?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:en-serio",
-      "g:parecer-quedar",
-      "g:present-ar",
-      "l:faltar",
+      "c:entonces-bueno",
+      "c:tengo",
+      "g:yo-irregular",
       "l:razón",
-      "l:verdad",
-      "p:no-te-falta-razon",
-      "p:quedar-faltar-sobrar"
+      "l:tener",
+      "p:indefinites-basic",
+      "p:no-te-falta-razon"
     ],
     "targets": [
       "p:no-te-falta-razon"
@@ -20763,7 +20779,7 @@
   {
     "id": "u56-0739",
     "es": "Algo de razón tienen, pero no toda.",
-    "en": "They have some point, but not all of it.",
+    "en": "They're partly right, but not entirely.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21395,23 +21411,24 @@
   },
   {
     "id": "u56-0763",
-    "es": "La mala calidad del aire va en aumento, y falta oxígeno en las zonas bajas.",
-    "en": "Poor air quality is on the rise, and there is a lack of oxygen in the low-lying areas.",
+    "es": "La contaminación del aire va en aumento, y en el centro uno siente que falta oxígeno.",
+    "en": "Air pollution is on the rise, and downtown you feel there isn't enough oxygen.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ir-a-plans",
       "g:present-ar",
+      "g:stem-boot",
+      "g:that-clauses",
       "l:aire",
       "l:aumento",
-      "l:bajar",
-      "l:calidad",
+      "l:centro",
+      "l:contaminación",
       "l:faltar",
       "l:ir",
-      "l:mala",
       "l:oxígeno",
-      "l:zona",
+      "l:sentir",
       "p:ir-en-aumento",
       "p:quedar-faltar-sobrar"
     ],
@@ -22033,21 +22050,22 @@
   },
   {
     "id": "u56-0787",
-    "es": "Por etiqueta, uno no se quita el sombrero en la ceremonia.",
-    "en": "By etiquette, one doesn't take off one's hat at the ceremony.",
+    "es": "Por etiqueta, los hombres se quitan el sombrero al entrar a la iglesia.",
+    "en": "By etiquette, men take off their hats when they enter the church.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:no-se",
       "g:gender-articles",
       "g:por-para-1",
+      "g:prep-infinitive",
       "g:present-ar",
       "g:reflexive-routine",
-      "l:ceremonia",
+      "l:entrar",
       "l:etiqueta",
+      "l:hombre",
+      "l:iglesia",
       "l:quitarse",
       "l:sombrero",
-      "p:generic-tu-uno",
       "p:lavarse-las-manos"
     ],
     "targets": [
@@ -22117,8 +22135,8 @@
   },
   {
     "id": "u56-0790",
-    "es": "En la etiqueta decía que el tinto era de Huila.",
-    "en": "The label said the black coffee was from Huila.",
+    "es": "En la etiqueta decía que el café era del Huila.",
+    "en": "The label said the coffee was from Huila.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22128,10 +22146,10 @@
       "g:imperfect-states",
       "g:ser-identity",
       "g:that-clauses",
+      "l:café",
       "l:decir",
       "l:etiqueta",
-      "l:ser",
-      "l:tinto"
+      "l:ser"
     ],
     "targets": [
       "l:etiqueta"
@@ -23607,15 +23625,16 @@
   },
   {
     "id": "u56-0847",
-    "es": "El delantero falló dos goles en el último minuto.",
-    "en": "The striker missed two chances in the last minute.",
+    "es": "El delantero falló dos oportunidades claras en el último minuto.",
+    "en": "The striker missed two clear chances in the last minute.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "l:clara",
       "l:delantero",
-      "l:gol",
       "l:minuto",
+      "l:oportunidad",
       "p:a-ultima-hora"
     ],
     "targets": [
@@ -23628,8 +23647,8 @@
   },
   {
     "id": "u56-0848",
-    "es": "El delantero del equipo del barrio es el hijo de Hernando.",
-    "en": "The striker of the neighbourhood team is Hernando's son.",
+    "es": "El delantero del equipo del barrio es el hijo del panadero.",
+    "en": "The striker of the neighbourhood team is the baker's son.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23639,6 +23658,7 @@
       "l:delantero",
       "l:equipo",
       "l:hijo",
+      "l:panadero",
       "l:ser"
     ],
     "targets": [
@@ -23974,7 +23994,7 @@
   {
     "id": "u56-0860",
     "es": "Los precios se dispararon en la medida en que la gente compraba por miedo.",
-    "en": "Prices shot up insofar as people bought out of fear.",
+    "en": "Prices shot up as people bought out of fear.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24058,8 +24078,8 @@
   },
   {
     "id": "u56-0863",
-    "es": "¿Puedes venir mañana? Solo en la medida de lo posible.",
-    "en": "Can you come tomorrow? Only if possible. (to a friend)",
+    "es": "¿Puedes venir mañana?\nEn la medida de lo posible, sí.",
+    "en": "Can you come tomorrow? (to a friend)\nIf at all possible, yes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24073,8 +24093,7 @@
       "l:posible",
       "l:venir",
       "p:en-gran-medida",
-      "p:request-ladder",
-      "p:sobre-todo-solo"
+      "p:request-ladder"
     ],
     "targets": [
       "p:en-gran-medida"
@@ -24087,7 +24106,7 @@
   {
     "id": "u56-0864",
     "es": "La crisis va en aumento en la medida en que nadie la enfrenta.",
-    "en": "The crisis is growing insofar as nobody confronts it.",
+    "en": "The crisis grows to the extent that nobody confronts it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24395,24 +24414,24 @@
   },
   {
     "id": "u56-0875",
-    "es": "La ética de un periodista se mide en la medida en que acepta sus errores.",
-    "en": "A journalist's ethics are measured insofar as they accept their mistakes.",
+    "es": "La ética de un periodista se ve en la medida en que reconoce sus errores.",
+    "en": "A journalist's ethics show to the extent that they admit their mistakes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
+      "g:present-er-ir",
       "g:relatives-prepositions",
       "g:se-impersonal",
-      "g:stem-e-i",
-      "l:aceptar",
       "l:error",
       "l:medida",
-      "l:medir",
       "l:periodista",
+      "l:reconocer",
+      "l:ver",
       "l:ética",
       "p:en-la-medida-en-que",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:rectificar-reparar"
     ],
     "targets": [
       "l:ética",
@@ -24426,7 +24445,7 @@
   {
     "id": "u56-0876",
     "es": "Cada vez habrá más turistas en la medida en que el barrio se ponga de moda.",
-    "en": "There will be more and more tourists insofar as the neighbourhood becomes fashionable.",
+    "en": "There will be more and more tourists as the neighbourhood becomes fashionable.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24455,25 +24474,25 @@
   },
   {
     "id": "u56-0877",
-    "es": "Vale amplía el menú en la medida de lo posible, salvo excepciones.",
-    "en": "Vale extends the menu as far as possible, with some exceptions.",
+    "es": "Vale amplía el menú en la medida de lo posible, pero sin perder calidad.",
+    "en": "Vale expands the menu as far as possible, but without losing quality.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:lo-adjective",
+      "g:prep-infinitive",
       "g:present-ar",
       "l:ampliar",
-      "l:excepción",
+      "l:calidad",
       "l:medida",
       "l:menú",
+      "l:perder",
       "l:posible",
-      "p:en-gran-medida",
-      "p:por-lo-general"
+      "p:en-gran-medida"
     ],
     "targets": [
-      "p:en-gran-medida",
-      "p:por-lo-general"
+      "p:en-gran-medida"
     ],
     "kind": "statement",
     "unit": "u56",
@@ -24753,7 +24772,7 @@
   {
     "id": "u56-0888",
     "es": "Mariana saludó a la vez que apuntaba el nombre del vecino.",
-    "en": "Mariana greeted him while jotting down the neighbour's name.",
+    "en": "Mariana said hello while jotting down the neighbour's name.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -25182,29 +25201,26 @@
   },
   {
     "id": "u56-0903",
-    "es": "Prever los problemas es una cosa; prevenirlos, otra: no se hacen al mismo tiempo.",
-    "en": "Foreseeing problems is one thing; preventing them is another: they aren't done at the same time.",
+    "es": "Prever los problemas es una cosa; prevenirlos, otra muy distinta.",
+    "en": "Foreseeing problems is one thing; preventing them is quite another.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:no-se",
+      "g:adjective-agreement",
       "g:direct-objects",
       "g:gender-articles",
       "g:object-pronoun-position",
-      "g:present-er-ir",
       "g:ser-identity",
       "g:verb-infinitive",
-      "g:verbs-of-change",
       "l:cosa",
-      "l:hacerse",
+      "l:distinto",
       "l:prevenir",
       "l:prever",
       "l:problema",
       "l:ser",
-      "l:tiempo",
-      "p:a-la-vez",
       "p:otro-no-article",
-      "p:prever-prevenir"
+      "p:prever-prevenir",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:prevenir",
@@ -25246,7 +25262,7 @@
   {
     "id": "u56-0905",
     "es": "¿Quién iba a prever que el alquiler se dispararía otra vez?",
-    "en": "Who was going to foresee that rent would shoot up again?",
+    "en": "Who would have foreseen that rent would shoot up again?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -25444,19 +25460,20 @@
   },
   {
     "id": "u56-0912",
-    "es": "Vale prevé que el sábado venga mucha gente, y por eso compra más harina.",
-    "en": "Vale expects a lot of people on Saturday, and that's why she buys more flour.",
+    "es": "Vale prevé que el sábado vendrá mucha gente, y por eso pide más leche.",
+    "en": "Vale expects a lot of people on Saturday, and that's why she orders more milk.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:cause-result",
+      "g:future-promises",
       "g:gender-articles",
-      "g:present-ar",
       "g:present-er-ir",
+      "g:stem-e-i",
       "g:that-clauses",
-      "l:comprar",
       "l:gente",
-      "l:harina",
+      "l:leche",
+      "l:pedir",
       "l:prever",
       "l:sábado",
       "l:venir",
@@ -25614,19 +25631,19 @@
   },
   {
     "id": "u56-0918",
-    "es": "Los alquileres cayeron en picada cuando Altamira se retiró.",
-    "en": "Rents plummeted when Altamira pulled out.",
+    "es": "Los alquileres cayeron en picada cuando cerró la fábrica.",
+    "en": "Rents plummeted when the factory closed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
       "g:preterite-spelling-stem",
-      "g:reflexive-routine",
       "l:alquiler",
       "l:caer",
+      "l:cerrar",
+      "l:fábrica",
       "l:picar",
-      "l:retirarse",
       "p:cuando-basic",
       "p:ir-en-aumento"
     ],
@@ -26048,7 +26065,7 @@
   {
     "id": "u56-0931",
     "es": "Conviene no pasar por alto que la raíz del problema es antigua.",
-    "en": "It is worth not overlooking that the root of the problem is old.",
+    "en": "It is wise not to overlook that the root of the problem is an old one.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26964,7 +26981,7 @@
   },
   {
     "id": "u56-0960",
-    "es": "¿Por lo general, quién gana estos concursos?",
+    "es": "Por lo general, ¿quién gana estos concursos?",
     "en": "Generally, who wins these competitions?",
     "accept": [],
     "acceptEn": [],
@@ -27652,8 +27669,8 @@
   },
   {
     "id": "u56-0986",
-    "es": "Lo declararon ganador, pero él dijo que Mariana lo merecía más.",
-    "en": "He was declared winner, but he said Mariana deserved it more.",
+    "es": "Lo declararon ganador, pero él dijo que su rival lo merecía más.",
+    "en": "He was declared the winner, but he said his rival deserved it more.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27668,7 +27685,9 @@
       "l:declarar",
       "l:ganador",
       "l:merecer",
-      "p:la-nombraron-directora"
+      "l:rival",
+      "p:la-nombraron-directora",
+      "p:possessives-basic"
     ],
     "targets": [
       "p:la-nombraron-directora"
@@ -27680,8 +27699,8 @@
   },
   {
     "id": "u56-0987",
-    "es": "Nombraron a Mariana jefa de redacción en pleno escándalo.",
-    "en": "They named Mariana editor in chief in the middle of the scandal.",
+    "es": "Nombraron a Andrea jefa de redacción en pleno escándalo.",
+    "en": "They named Andrea editor in chief in the middle of the scandal.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28938,8 +28957,8 @@
   },
   {
     "id": "u56-1032",
-    "es": "¿De qué surgió la pelea? Coincidimos en que fue por tonterías.",
-    "en": "What did the fight come out of? We agree that it was over nonsense.",
+    "es": "¿Y de dónde surgió la pelea?\nCoincidimos en que fue por tonterías.",
+    "en": "And where did the fight come from?\nWe agree that it was over nonsense.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28947,18 +28966,17 @@
       "g:por-para-1",
       "g:preterite-er-ir",
       "g:preterite-ser-ir-hacer",
+      "g:questions",
       "g:ser-identity",
       "g:that-clauses",
       "l:coincidir",
+      "l:dónde",
       "l:pelea",
-      "l:qué",
       "l:ser",
       "l:surgir",
       "l:tontería",
       "p:coincidir-con-en",
-      "p:coincidir-en",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:coincidir-en"
     ],
     "targets": [
       "p:coincidir-en"
@@ -29141,22 +29159,21 @@
   },
   {
     "id": "u56-1039",
-    "es": "Yo surgí de un pueblo pequeño, pero ahora soy de aquí.",
-    "en": "I come from a small village, but now I'm from here.",
+    "es": "Esta receta surgió de un pueblo pequeño, pero ahora es de todos.",
+    "en": "This recipe came out of a small village, but now it belongs to everyone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:soy-de",
       "g:gender-articles",
       "g:preterite-er-ir",
       "g:ser-identity",
       "l:ahora",
-      "l:aquí",
       "l:pequeño",
       "l:pueblo",
+      "l:receta",
       "l:ser",
       "l:surgir",
-      "p:aqui-ahi-alla",
+      "p:demonstratives-basic",
       "p:surgir-de"
     ],
     "targets": [
@@ -29697,20 +29714,25 @@
   },
   {
     "id": "u56-1060",
-    "es": "Una cosa es tener razón y otra muy distinta tener paciencia.",
-    "en": "Being right is one thing and having patience is quite another.",
+    "es": "Hernando lo repite siempre: una cosa es tener razón y otra muy distinta tener paciencia.",
+    "en": "Hernando always says it: being right is one thing and having patience is quite another.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
+      "g:direct-objects",
       "g:gender-articles",
       "g:ser-identity",
+      "g:stem-e-i",
       "l:cosa",
       "l:distinto",
       "l:paciencia",
       "l:razón",
+      "l:repetir",
       "l:ser",
+      "l:siempre",
       "l:tener",
+      "p:frequency-scale",
       "p:otro-no-article",
       "p:quantifiers-basic",
       "p:tener-razon",
@@ -30321,30 +30343,26 @@
   },
   {
     "id": "u56-1080",
-    "es": "A continuación se presentarán las ideas de Rosa, que quedan por conocer.",
-    "en": "Next, Rosa's ideas, which remain to be discovered, will be presented.",
+    "es": "A continuación se presentarán las ideas de Rosa, tal como aparecen en sus cartas.",
+    "en": "Next, Rosa's ideas will be presented as they appear in her letters.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
       "g:gender-articles",
       "g:passive-se",
-      "g:por-para-1",
-      "g:present-ar",
-      "g:relative-que",
-      "l:conocer",
+      "g:present-er-ir",
+      "l:aparecer",
+      "l:carta",
       "l:continuación",
       "l:idea",
       "l:presentar",
-      "l:quedar",
       "p:el-presente-trabajo",
-      "p:presenting-to-audience",
-      "p:queda-por-resolver",
-      "p:saber-conocer"
+      "p:possessives-basic",
+      "p:presenting-to-audience"
     ],
     "targets": [
-      "p:el-presente-trabajo",
-      "p:queda-por-resolver"
+      "p:el-presente-trabajo"
     ],
     "kind": "statement",
     "unit": "u56",
@@ -30416,34 +30434,28 @@
   },
   {
     "id": "u56-1083",
-    "es": "En segundo lugar, se analizará qué queda por hacer frente a Altamira.",
-    "en": "Second, it will be analysed what remains to be done in the face of Altamira.",
+    "es": "En segundo lugar, se analizará cómo hacer frente a Altamira.",
+    "en": "Second, how to stand up to Altamira will be analysed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
       "g:indirect-questions",
-      "g:por-para-1",
-      "g:present-ar",
       "g:se-impersonal",
       "l:analizar",
+      "l:cómo",
       "l:frente",
       "l:hacer",
       "l:lugar",
-      "l:quedar",
-      "l:qué",
       "p:el-presente-trabajo",
       "p:hacer-frente-a",
       "p:ordinal-floor",
       "p:ordinals-primer-tercer",
       "p:posicion-precisa",
-      "p:presentation-frame",
-      "p:queda-por-resolver"
+      "p:presentation-frame"
     ],
     "targets": [
-      "p:el-presente-trabajo",
-      "p:hacer-frente-a",
-      "p:queda-por-resolver"
+      "p:el-presente-trabajo"
     ],
     "kind": "statement",
     "unit": "u56",
@@ -31311,7 +31323,7 @@
   {
     "id": "u56-1121",
     "es": "¿Cuándo es la entrega del ensayo?",
-    "en": "When is the handing in of the essay?",
+    "en": "When is the essay due?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -31509,8 +31521,8 @@
   },
   {
     "id": "u56-1129",
-    "es": "El debate consta de tres rondas, y la última queda por empezar.",
-    "en": "The debate consists of three rounds, and the last one remains to begin.",
+    "es": "El debate consta de tres rondas, y todavía queda por hacer la última.",
+    "en": "The debate consists of three rounds, and the last one is still to be held.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -31519,12 +31531,13 @@
       "g:present-ar",
       "l:constar",
       "l:debate",
-      "l:empezar",
+      "l:hacer",
       "l:quedar",
       "l:ronda",
       "p:constar-de",
       "p:queda-por-resolver",
-      "p:se-entiende-por"
+      "p:se-entiende-por",
+      "p:ya-todavia-basic"
     ],
     "targets": [
       "p:queda-por-resolver",
@@ -31883,7 +31896,7 @@
   {
     "id": "u56-1144",
     "es": "El agente hizo la vista gorda cuando vio las cajas sin papeles.",
-    "en": "The inspector turned a blind eye when he saw the boxes without papers.",
+    "en": "The officer turned a blind eye when he saw the boxes without papers.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -33705,25 +33718,25 @@
   },
   {
     "id": "u56-1206",
-    "es": "Se compone de tres capítulos, y por último se presentarán las conclusiones.",
-    "en": "It is made up of three chapters, and finally the conclusions will be presented.",
+    "es": "El presente trabajo se compone de tres capítulos; en el último se presentan las conclusiones.",
+    "en": "This paper is made up of three chapters; the conclusions are presented in the last one.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
       "g:gender-articles",
       "g:passive-se",
-      "g:por-para-1",
+      "g:present-ar",
       "g:present-er-ir",
       "g:reflexive-routine",
       "l:capítulo",
       "l:componerse",
       "l:conclusión",
       "l:presentar",
+      "l:presente",
+      "l:trabajo",
       "p:caracterizarse-por",
       "p:constar-de",
       "p:el-presente-trabajo",
-      "p:hay-varios-tipos",
       "p:se-divide-en",
       "p:se-entiende-por"
     ],
@@ -34029,21 +34042,19 @@
   },
   {
     "id": "u56-1218",
-    "es": "Las lluvias dieron lugar a un barro que nadie esperaba.",
-    "en": "The rains gave rise to a mud that nobody expected.",
+    "es": "Las lluvias dieron lugar a inundaciones en los barrios del sur.",
+    "en": "The rains gave rise to flooding in the southern neighbourhoods.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:imperfect-habitual",
-      "g:pret-vs-imperfect",
       "g:preterite-irregular-strong",
-      "g:relative-que",
-      "l:barro",
+      "l:barrio",
       "l:dar",
-      "l:esperar",
+      "l:inundación",
       "l:lluvia",
       "l:lugar",
+      "l:sur",
       "p:dar-lugar-a"
     ],
     "targets": [
@@ -34244,17 +34255,17 @@
   },
   {
     "id": "u56-1225",
-    "es": "Pensé que la propuesta surgió de buena fe, pero cabe preguntarse a quién beneficia.",
-    "en": "I thought the proposal came out of good faith, but one might ask who benefits.",
+    "es": "Pensé que la propuesta había surgido de buena fe, pero cabe preguntarse a quién beneficia.",
+    "en": "I thought the proposal had come out of good faith, but one might ask who benefits.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:indirect-questions",
       "g:object-pronoun-position",
+      "g:pluperfect",
       "g:present-er-ir",
       "g:preterite-ar",
-      "g:preterite-er-ir",
       "g:se-impersonal",
       "g:that-clauses",
       "l:beneficio",
@@ -34310,7 +34321,7 @@
   },
   {
     "id": "u56-1227",
-    "es": "La modestia es propia de las personas grandes.",
+    "es": "La modestia es propia de las grandes personas.",
     "en": "Modesty is typical of great people.",
     "accept": [],
     "acceptEn": [],

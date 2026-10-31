@@ -6,38 +6,167 @@
     "en": "The project came out of a conversation."
   },
   "examples": [
-    { "es": "El proyecto surgió de una conversación.", "en": "The project came out of a conversation." },
-    { "es": "Esta interpretación parte de un prejuicio.", "en": "This interpretation starts from a prejudice." },
-    { "es": "La Candelaria se remonta a la época colonial.", "en": "La Candelaria dates back to the colonial era." },
-    { "es": "El cacao es originario de América.", "en": "Cocoa is native to the Americas." },
-    { "es": "La idea de la panadería surgió de una conversación con Vale.", "en": "The idea for the bakery came out of a conversation with Vale." },
-    { "es": "La duda surgió de la falta de datos.", "en": "The doubt arose from a lack of data." }
+    {
+      "es": "El proyecto surgió de una conversación.",
+      "en": "The project came out of a conversation."
+    },
+    {
+      "es": "Esta interpretación parte de un prejuicio.",
+      "en": "This interpretation starts from a prejudice."
+    },
+    {
+      "es": "La Candelaria se remonta a la época colonial.",
+      "en": "La Candelaria dates back to the colonial era."
+    },
+    {
+      "es": "El cacao es originario de América.",
+      "en": "Cocoa is native to the Americas."
+    },
+    {
+      "es": "La idea de la panadería surgió de una conversación con Vale.",
+      "en": "The idea for the bakery came out of a conversation with Vale."
+    },
+    {
+      "es": "La duda surgió de la falta de datos.",
+      "en": "The doubt arose from a lack of data."
+    }
   ],
-  "rule": "Four ways to say where something comes from:\n*Surgir de*: something appears out of something else (*surgió de una conversación*).\n*Partir de*: an argument starts from an assumption.\n*Remontarse a*: something dates back to a time.\n*Ser originario de*: native to a place.\n\n*Surgir* has no agent: things surge, nobody surges them. To say who made it, use *crear* or *generar*. Note the small words: *de* for the source, *a* for the date.",
+  "rule": "Four ways to say where something comes from:\n*Surgir de*: something appears out of something else (*surgió de una conversación*).\n*Partir de*: an argument starts from an assumption.\n*Remontarse a*: something dates back to a time.\n*Ser originario de*: native to a place.\n\n*Surgir* has no agent: things simply arise, and nobody \"arises\" them. To say who made it, use *crear* or *generar*. Note the small words: *de* for the source, *a* for the date.",
   "smallPrint": "Teachers call this the vocabulary of origin. *Remontarse* is reflexive, so its endings come with *se*.",
   "readAndPick": [
-    { "es": "El proyecto surgió de una conversación.", "options": ["The project led to a conversation.", "The project came out of a conversation.", "The project ended a conversation."], "answer": 1 },
-    { "es": "La costumbre se remonta a la época colonial.", "options": ["The custom dates back to the colonial era.", "The custom will last until the colonial era.", "The custom was destroyed in the colonial era."], "answer": 0 },
-    { "es": "El cacao es originario de América.", "options": ["Cocoa is travelling to the Americas.", "Cocoa is sold in the Americas.", "Cocoa is native to the Americas."], "answer": 2 },
-    { "es": "Esta interpretación parte de un prejuicio.", "options": ["This interpretation starts from a prejudice.", "This interpretation leaves a prejudice behind.", "This interpretation causes a prejudice."], "answer": 0 },
-    { "es": "El problema surgió de un error.", "options": ["The problem caused an error.", "The problem arose from an error.", "The problem fixed an error."], "answer": 1 },
-    { "es": "Mi familia es originaria de Medellín.", "options": ["My family is moving to Medellín.", "My family is visiting Medellín.", "My family is originally from Medellín."], "answer": 2 },
-    { "es": "La duda surge de la falta de datos.", "options": ["The doubt comes from a lack of data.", "The doubt causes a lack of data.", "The doubt is missing data."], "answer": 0 },
-    { "es": "El barrio se remonta a la época colonial.", "options": ["The neighbourhood will return to the colonial era.", "The neighbourhood dates back to the colonial era.", "The neighbourhood was built after the colonial era."], "answer": 1 }
+    {
+      "es": "El proyecto surgió de una conversación.",
+      "options": [
+        "The project led to a conversation.",
+        "The project came out of a conversation.",
+        "The project ended a conversation."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La costumbre se remonta a la época colonial.",
+      "options": [
+        "The custom dates back to the colonial era.",
+        "The custom will last until the colonial era.",
+        "The custom was destroyed in the colonial era."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El cacao es originario de América.",
+      "options": [
+        "Cocoa is travelling to the Americas.",
+        "Cocoa is sold in the Americas.",
+        "Cocoa is native to the Americas."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Esta interpretación parte de un prejuicio.",
+      "options": [
+        "This interpretation starts from a prejudice.",
+        "This interpretation leaves a prejudice behind.",
+        "This interpretation causes a prejudice."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El problema surgió de un error.",
+      "options": [
+        "The problem caused an error.",
+        "The problem arose from an error.",
+        "The problem fixed an error."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mi familia es originaria de Medellín.",
+      "options": [
+        "My family is moving to Medellín.",
+        "My family is visiting Medellín.",
+        "My family is originally from Medellín."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La duda surge de la falta de datos.",
+      "options": [
+        "The doubt comes from a lack of data.",
+        "The doubt causes a lack of data.",
+        "The doubt is missing data."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El barrio se remonta a la época colonial.",
+      "options": [
+        "The neighbourhood will return to the colonial era.",
+        "The neighbourhood dates back to the colonial era.",
+        "The neighbourhood was built after the colonial era."
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick *de* or *por* and type the whole sentence: *El proyecto surgió ___ una conversación.*", "answer": "El proyecto surgió de una conversación.", "accept": [], "why": "The source of something that surges comes after *de*." },
-    { "prompt": "Type in Spanish: The idea for the bakery came out of a conversation with Vale.", "answer": "La idea de la panadería surgió de una conversación con Vale.", "accept": [], "why": "*Surgió de* + the source; nobody is the agent." },
-    { "prompt": "Type in Spanish: La Candelaria dates back to the colonial era.", "answer": "La Candelaria se remonta a la época colonial.", "accept": [], "why": "*Se remonta a* + a period of time." },
-    { "prompt": "Type in Spanish: Cocoa is native to the Americas.", "answer": "El cacao es originario de América.", "accept": [], "why": "*Ser originario de* + a place says where something is native to." },
-    { "prompt": "Type in Spanish: This interpretation starts from a prejudice.", "answer": "Esta interpretación parte de un prejuicio.", "accept": [], "why": "*Parte de* names the assumption an argument starts from." },
-    { "prompt": "Type in Spanish: The doubt arose from a lack of data.", "answer": "La duda surgió de la falta de datos.", "accept": [], "why": "Past tense *surgió*, then *de* + the source." },
-    { "prompt": "Type in Spanish: My family is originally from Cartagena.", "answer": "Mi familia es originaria de Cartagena.", "accept": [], "why": "*Familia* is feminine, so *originaria*." }
+    {
+      "prompt": "Pick *de* or *por* and type the whole sentence: *El proyecto surgió ___ una conversación.*",
+      "answer": "El proyecto surgió de una conversación.",
+      "accept": [],
+      "why": "The source of something that surges comes after *de*."
+    },
+    {
+      "prompt": "Type in Spanish: The idea for the bakery came out of a conversation with Vale.",
+      "answer": "La idea de la panadería surgió de una conversación con Vale.",
+      "accept": [],
+      "why": "*Surgió de* + the source; nobody is the agent."
+    },
+    {
+      "prompt": "Type in Spanish: La Candelaria dates back to the colonial era.",
+      "answer": "La Candelaria se remonta a la época colonial.",
+      "accept": [],
+      "why": "*Se remonta a* + a period of time."
+    },
+    {
+      "prompt": "Type in Spanish: Cocoa is native to the Americas.",
+      "answer": "El cacao es originario de América.",
+      "accept": [],
+      "why": "*Ser originario de* + a place says where something is native to."
+    },
+    {
+      "prompt": "Type in Spanish: This interpretation starts from a prejudice.",
+      "answer": "Esta interpretación parte de un prejuicio.",
+      "accept": [],
+      "why": "*Parte de* names the assumption an argument starts from."
+    },
+    {
+      "prompt": "Type in Spanish: The doubt arose from a lack of data.",
+      "answer": "La duda surgió de la falta de datos.",
+      "accept": [],
+      "why": "Past tense *surgió*, then *de* + the source."
+    },
+    {
+      "prompt": "Type in Spanish: My family is originally from Cartagena.",
+      "answer": "Mi familia es originaria de Cartagena.",
+      "accept": [],
+      "why": "*Familia* is feminine, so *originaria*."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Mi familia es originaria en Cartagena.", "right": "Mi familia es originaria de Cartagena.", "why": "Almost. The place of origin comes after *de*, not *en*." },
-    { "wrong": "El proyecto fue surgido de una conversación.", "right": "El proyecto surgió de una conversación.", "why": "Almost. *Surgir* has no passive: the project simply *surgió*." },
-    { "wrong": "La costumbre se remonta desde la época colonial.", "right": "La costumbre se remonta a la época colonial.", "why": "Almost. *Remontarse* points back *a* a time; English \"from\" does not carry over." }
+    {
+      "wrong": "Mi familia es originaria en Cartagena.",
+      "right": "Mi familia es originaria de Cartagena.",
+      "why": "Almost. The place of origin comes after *de*, not *en*."
+    },
+    {
+      "wrong": "El proyecto fue surgido de una conversación.",
+      "right": "El proyecto surgió de una conversación.",
+      "why": "Almost. *Surgir* has no passive: the project simply *surgió*."
+    },
+    {
+      "wrong": "La costumbre se remonta desde la época colonial.",
+      "right": "La costumbre se remonta a la época colonial.",
+      "why": "Almost. *Remontarse* points back *a* a time; English \"from\" does not carry over."
+    }
   ],
   "personal": "Say where something in your life comes from, such as a habit, a family tradition or an idea, using *surgió de*, *se remonta a* or *es originario de*."
 }

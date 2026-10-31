@@ -93,11 +93,11 @@
       "answer": 2
     },
     {
-      "es": "Vale hizo la vista gorda con el cliente.",
+      "es": "Vale hizo la vista gorda con el cliente que no pagó.",
       "options": [
-        "Vale turned a blind eye with the client.",
-        "Vale missed the client.",
-        "Vale overlooked the client."
+        "Vale turned a blind eye to the customer who didn't pay.",
+        "Vale didn't notice the customer who didn't pay.",
+        "Vale overlooked the customer who paid."
       ],
       "answer": 0
     },
@@ -143,12 +143,13 @@
       "why": "They did not notice or value it, so *pasar por alto*."
     },
     {
-      "prompt": "Say about Vale: She turned a blind eye with the client.",
-      "answer": "Vale hizo la vista gorda con el cliente.",
+      "prompt": "Say about Vale: She turned a blind eye to the customer who didn't pay.",
+      "answer": "Vale hizo la vista gorda con el cliente que no pagó.",
       "accept": [
-        "Vale hizo la vista gorda con la cliente."
+        "Vale hizo la vista gorda con la cliente que no pagó.",
+        "Vale hizo la vista gorda ante el cliente que no pagó."
       ],
-      "why": "*Con* says who she let off."
+      "why": "She saw it and let it go on purpose, so *hacer la vista gorda*."
     },
     {
       "prompt": "Make it a mistake with no blame: *Hizo la vista gorda ante el precio.* (use *pasó por alto*)",

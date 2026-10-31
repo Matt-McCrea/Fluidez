@@ -55,7 +55,7 @@
       "accept": [
         "Nadie previó la venta de la cuadra, pero todavía se puede prevenir la pérdida.",
         "Nadie previó la venta, pero aún podemos prevenir lo peor.",
-        "Nadie lo previó, pero hay que prevenir que se pierda todo."
+        "Nadie lo previó, pero todavía podemos prevenir más daños."
       ],
       "require": [
         {
@@ -81,8 +81,8 @@
       "intent": "Say it scares you a little, and at the same time it excites you (use: al tiempo que or a la vez que).",
       "accept": [
         "Me da miedo, al tiempo que me emociona.",
-        "Un poco, sí. Tengo miedo a la vez que muchas ganas.",
-        "Me asusta un poco, al tiempo que me hace mucha ilusión."
+        "Un poco, sí. Tengo miedo a la vez que tengo muchas ganas.",
+        "Me asusta un poco, a la vez que me da mucha emoción."
       ],
       "require": [
         {
@@ -123,9 +123,6 @@
     "c:claro-listo",
     "c:con-mucho-gusto",
     "c:gracias-de-nada",
-    "c:hay",
-    "c:hay-que",
-    "c:me-hace-una-rebajita",
     "c:me-regala",
     "c:mucho-gusto",
     "c:oiga-oye",
@@ -150,14 +147,12 @@
     "g:preterite-ar",
     "g:preterite-er-ir",
     "g:questions",
-    "g:reflexive-routine",
     "g:relative-que",
     "g:relatives-donde-lo-que",
     "g:se-impersonal",
     "g:ser-identity",
     "g:stem-boot",
     "g:stem-e-i",
-    "g:subj-wanting",
     "g:superlatives",
     "g:that-clauses",
     "g:verb-infinitive",
@@ -174,6 +169,7 @@
     "l:cocina",
     "l:cuadra",
     "l:dar",
+    "l:daño",
     "l:decir",
     "l:delante",
     "l:disfrazarse",
@@ -185,8 +181,6 @@
     "l:gente",
     "l:guardar",
     "l:gusto",
-    "l:hacer",
-    "l:ilusión",
     "l:ir",
     "l:leer",
     "l:llegar",
@@ -198,7 +192,6 @@
     "l:oír",
     "l:pasar",
     "l:peor",
-    "l:perderse",
     "l:poder",
     "l:precio",
     "l:prevenir",
@@ -243,6 +236,7 @@
     "p:quedar-faltar-sobrar",
     "p:se-puede-me-dejas",
     "p:telling-time",
+    "p:tener-ganas-de",
     "p:tener-hambre",
     "p:veces-al",
     "p:ver-oir-bien-mal",

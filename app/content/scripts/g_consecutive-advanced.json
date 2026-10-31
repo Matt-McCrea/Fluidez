@@ -127,7 +127,9 @@
     {
       "prompt": "Say: Consequently, the works are suspended.",
       "answer": "Por consiguiente, se suspende la obra.",
-      "accept": [],
+      "accept": [
+        "Por consiguiente, la obra se suspende."
+      ],
       "why": "*Por consiguiente* starts the sentence and takes a normal verb."
     },
     {

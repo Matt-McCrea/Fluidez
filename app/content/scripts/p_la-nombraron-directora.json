@@ -6,38 +6,171 @@
     "en": "They appointed her director."
   },
   "examples": [
-    { "es": "La nombraron directora.", "en": "They appointed her director." },
-    { "es": "Lo eligieron presidente de la junta.", "en": "They elected him chair of the board." },
-    { "es": "Nombraron a Vale jefa de cocina.", "en": "They appointed Vale head of the kitchen." },
-    { "es": "Declararon la zona en emergencia.", "en": "They declared the area in a state of emergency." },
-    { "es": "Eligieron a Hernando representante del barrio.", "en": "They elected Hernando representative of the neighbourhood." },
-    { "es": "La eligieron alcaldesa.", "en": "They elected her mayor." }
+    {
+      "es": "La nombraron directora.",
+      "en": "They appointed her director."
+    },
+    {
+      "es": "Lo eligieron presidente de la junta.",
+      "en": "They elected him chair of the board."
+    },
+    {
+      "es": "Nombraron a Vale jefa de cocina.",
+      "en": "They appointed Vale head of the kitchen."
+    },
+    {
+      "es": "Declararon la zona en emergencia.",
+      "en": "They declared the area in a state of emergency."
+    },
+    {
+      "es": "Eligieron a Hernando representante del barrio.",
+      "en": "They elected Hernando representative of the neighbourhood."
+    },
+    {
+      "es": "La eligieron alcaldesa.",
+      "en": "They elected her mayor."
+    }
   ],
   "rule": "*Nombrar*, *elegir* and *declarar* take the person as the object (*la*, *lo*, or *a* + name). Then the new role follows with **no article**: *la nombraron directora*, not *una directora*.\n\nThe role agrees with the person: *directora* for a woman, *director* for a man, *representantes* for several. The \"they\" is built into the verb ending (*nombraron*), so nobody is named as the appointer.",
   "smallPrint": "Teachers call the bare role a predicative complement. The same frame works for *considerar a alguien capaz*.",
   "readAndPick": [
-    { "es": "La nombraron directora.", "options": ["They appointed him director.", "They appointed her director.", "They appointed them directors."], "answer": 1 },
-    { "es": "Lo eligieron presidente de la junta.", "options": ["They elected him chair of the board.", "They elected her chair of the board.", "He elected them chair of the board."], "answer": 0 },
-    { "es": "Nombraron a Vale jefa de cocina.", "options": ["Vale appointed someone head of the kitchen.", "They appointed Vale head of the kitchen.", "They appointed Vale to a kitchen."], "answer": 1 },
-    { "es": "Declararon la zona en emergencia.", "options": ["The area declared an emergency.", "They declared the area in a state of emergency.", "They declared an emergency in the area."], "answer": 1 },
-    { "es": "Las eligieron representantes del barrio.", "options": ["They elected the women representatives of the neighbourhood.", "They elected the men representatives of the neighbourhood.", "They elected her representative of the neighbourhood."], "answer": 0 },
-    { "es": "La eligieron alcaldesa.", "options": ["They elected him mayor.", "They elected her mayor.", "They elected the mayor."], "answer": 1 },
-    { "es": "Lo declararon ganador.", "options": ["They declared her the winner.", "They declared the winner.", "They declared him the winner."], "answer": 2 },
-    { "es": "Eligieron a Hernando representante del barrio.", "options": ["Hernando elected a representative of the neighbourhood.", "They elected Hernando representative of the neighbourhood.", "They elected Hernando in the neighbourhood."], "answer": 1 }
+    {
+      "es": "La nombraron directora.",
+      "options": [
+        "They appointed him director.",
+        "They appointed her director.",
+        "They appointed them directors."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Lo eligieron presidente de la junta.",
+      "options": [
+        "They elected him chair of the board.",
+        "They elected her chair of the board.",
+        "He elected them chair of the board."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nombraron a Vale jefa de cocina.",
+      "options": [
+        "Vale appointed someone head of the kitchen.",
+        "They appointed Vale head of the kitchen.",
+        "They appointed Vale to a kitchen."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Declararon la zona en emergencia.",
+      "options": [
+        "The area declared an emergency.",
+        "They declared the area in a state of emergency.",
+        "They declared the area safe."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Las eligieron representantes del barrio.",
+      "options": [
+        "They elected the women representatives of the neighbourhood.",
+        "They elected the men representatives of the neighbourhood.",
+        "They elected her representative of the neighbourhood."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La eligieron alcaldesa.",
+      "options": [
+        "They elected him mayor.",
+        "They elected her mayor.",
+        "They elected the mayor."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Lo declararon ganador.",
+      "options": [
+        "They declared her the winner.",
+        "They declared the winner.",
+        "They declared him the winner."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Eligieron a Hernando representante del barrio.",
+      "options": [
+        "Hernando elected a representative of the neighbourhood.",
+        "They elected Hernando representative of the neighbourhood.",
+        "They elected Hernando in the neighbourhood."
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick *directora* or *una directora* and type the whole sentence: *La nombraron ___.*", "answer": "La nombraron directora.", "accept": [], "why": "A role after *nombrar* takes no article." },
-    { "prompt": "Type in Spanish: They elected him chair of the board.", "answer": "Lo eligieron presidente de la junta.", "accept": ["Lo eligieron presidente de la junta directiva."], "why": "*Lo* is the man, and *presidente* follows with no article." },
-    { "prompt": "Type in Spanish: They appointed Vale head of the kitchen.", "answer": "Nombraron a Vale jefa de cocina.", "accept": ["Nombraron a Vale jefa de la cocina."], "why": "A person as object takes *a*, and *jefa* agrees with Vale." },
-    { "prompt": "Type in Spanish: They declared the area in a state of emergency.", "answer": "Declararon la zona en emergencia.", "accept": [], "why": "*Declarar* + the thing + *en emergencia*." },
-    { "prompt": "Make it about a man: *La nombraron directora.* Say: They appointed him director.", "answer": "Lo nombraron director.", "accept": [], "why": "A man means *lo* and *director*: both change together." },
-    { "prompt": "Type in Spanish: They elected her mayor.", "answer": "La eligieron alcaldesa.", "accept": [], "why": "*La* is a woman, so the role is *alcaldesa*." },
-    { "prompt": "Type in Spanish: They elected Hernando representative of the neighbourhood.", "answer": "Eligieron a Hernando representante del barrio.", "accept": [], "why": "*A* marks the person, then the role follows without an article." }
+    {
+      "prompt": "Pick *directora* or *una directora* and type the whole sentence: *La nombraron ___.*",
+      "answer": "La nombraron directora.",
+      "accept": [],
+      "why": "A role after *nombrar* takes no article."
+    },
+    {
+      "prompt": "Type in Spanish: They elected him chair of the board.",
+      "answer": "Lo eligieron presidente de la junta.",
+      "accept": [
+        "Lo eligieron presidente de la junta directiva."
+      ],
+      "why": "*Lo* is the man, and *presidente* follows with no article."
+    },
+    {
+      "prompt": "Type in Spanish: They appointed Vale head of the kitchen.",
+      "answer": "Nombraron a Vale jefa de cocina.",
+      "accept": [
+        "Nombraron a Vale jefa de la cocina."
+      ],
+      "why": "A person as object takes *a*, and *jefa* agrees with Vale."
+    },
+    {
+      "prompt": "Type in Spanish: They declared the area in a state of emergency.",
+      "answer": "Declararon la zona en emergencia.",
+      "accept": [],
+      "why": "*Declarar* + the thing + *en emergencia*."
+    },
+    {
+      "prompt": "Make it about a man: *La nombraron directora.* Say: They appointed him director.",
+      "answer": "Lo nombraron director.",
+      "accept": [],
+      "why": "A man means *lo* and *director*: both change together."
+    },
+    {
+      "prompt": "Type in Spanish: They elected her mayor.",
+      "answer": "La eligieron alcaldesa.",
+      "accept": [],
+      "why": "*La* is a woman, so the role is *alcaldesa*."
+    },
+    {
+      "prompt": "Type in Spanish: They elected Hernando representative of the neighbourhood.",
+      "answer": "Eligieron a Hernando representante del barrio.",
+      "accept": [],
+      "why": "*A* marks the person, then the role follows without an article."
+    }
   ],
   "pitfalls": [
-    { "wrong": "La nombraron una directora.", "right": "La nombraron directora.", "why": "Almost. As in English \"appointed director\", the role takes no article." },
-    { "wrong": "La nombraron director.", "right": "La nombraron directora.", "why": "Almost. The role matches the person, and *la* is a woman." },
-    { "wrong": "Nombraron Vale jefa de cocina.", "right": "Nombraron a Vale jefa de cocina.", "why": "Almost. A named person as the object needs *a* in front." }
+    {
+      "wrong": "La nombraron una directora.",
+      "right": "La nombraron directora.",
+      "why": "Almost. As in English \"appointed director\", the role takes no article."
+    },
+    {
+      "wrong": "La nombraron director.",
+      "right": "La nombraron directora.",
+      "why": "Almost. The role matches the person, and *la* is a woman."
+    },
+    {
+      "wrong": "Nombraron Vale jefa de cocina.",
+      "right": "Nombraron a Vale jefa de cocina.",
+      "why": "Almost. A named person as the object needs *a* in front."
+    }
   ],
   "personal": "Imagine a group you belong to chose someone for a role, and say it with *eligieron* or *nombraron*."
 }

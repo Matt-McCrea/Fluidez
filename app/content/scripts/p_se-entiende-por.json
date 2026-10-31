@@ -6,38 +6,179 @@
     "en": "The process consists of three stages."
   },
   "examples": [
-    { "es": "Se entiende por economía informal el conjunto de actividades que no están reguladas por el Estado.", "en": "The informal economy is understood as the set of activities that are not regulated by the state." },
-    { "es": "El proceso consta de tres fases.", "en": "The process consists of three stages." },
-    { "es": "El jurado se compone de cinco miembros.", "en": "The jury is made up of five members." },
-    { "es": "Algunos animales hibernan; es el caso del oso.", "en": "Some animals hibernate; this is the case with the bear." },
-    { "es": "Se entiende por vivienda digna aquella que tiene agua y luz.", "en": "Decent housing is understood as housing that has water and electricity." },
-    { "es": "Esta encuesta consta de diez preguntas.", "en": "This survey consists of ten questions." }
+    {
+      "es": "Se entiende por economía informal el conjunto de actividades que no están reguladas por el Estado.",
+      "en": "The informal economy is understood as the set of activities that are not regulated by the state."
+    },
+    {
+      "es": "El proceso consta de tres fases.",
+      "en": "The process consists of three stages."
+    },
+    {
+      "es": "El jurado se compone de cinco miembros.",
+      "en": "The jury is made up of five members."
+    },
+    {
+      "es": "Algunos animales hibernan; es el caso del oso.",
+      "en": "Some animals hibernate; this is the case with the bear."
+    },
+    {
+      "es": "Se entiende por vivienda digna aquella que tiene agua y luz.",
+      "en": "Decent housing is understood as housing that has water and electricity."
+    },
+    {
+      "es": "Esta encuesta consta de diez preguntas.",
+      "en": "This survey consists of ten questions."
+    }
   ],
   "rule": "Four phrases for explaining:\n*Se entiende por* + term + definition: the term comes right after *por*.\n*Consta de* + the parts: what something consists of.\n*Se compone de* + the parts: what it is made up of.\n*Es el caso de* + example: the example that proves your point.\n\nBoth *constar* and *componerse* take *de* before the parts. Do not add *es* after *se entiende por*: the term simply follows.",
   "smallPrint": "Teachers call these the expository toolkit: defining, classifying and exemplifying. *Se entiende* is the impersonal *se* (\"it is understood\").",
   "readAndPick": [
-    { "es": "El proceso consta de tres fases.", "options": ["The process lasts three stages.", "The process consists of three stages.", "The process is the case of three stages."], "answer": 1 },
-    { "es": "Se entiende por vivienda digna aquella que tiene agua y luz.", "options": ["Decent housing is understood as one that has water and electricity.", "Decent housing is bought with water and electricity.", "Someone understands decent housing."], "answer": 0 },
-    { "es": "Es el caso del oso.", "options": ["The bear is the owner of it.", "The bear is the cause of it.", "That is the case with the bear."], "answer": 2 },
-    { "es": "El jurado se compone de cinco miembros.", "options": ["The jury is made up of three members.", "The jury is made up of five members.", "The jury has put together five members."], "answer": 1 },
-    { "es": "Esta encuesta consta de diez preguntas.", "options": ["This survey consists of ten questions.", "This survey answers ten questions.", "This survey consists of ten answers."], "answer": 0 },
-    { "es": "Se entiende por economía informal el conjunto de actividades no reguladas.", "options": ["Informal economy is regulated by a set of activities.", "A set of unregulated activities is understood as the informal economy.", "The informal economy is understood as a set of unregulated activities."], "answer": 2 },
-    { "es": "Algunos animales hibernan; es el caso del oso.", "options": ["Some animals hibernate; the bear is a case in point.", "Some animals hibernate; the bear is their case.", "Some animals hibernate because of the bear."], "answer": 0 },
-    { "es": "El café se compone de dos salas.", "options": ["The café is made up of two rooms.", "The café composes two rooms.", "The café is made up of one room."], "answer": 0 }
+    {
+      "es": "El proceso consta de tres fases.",
+      "options": [
+        "The process lasts three stages.",
+        "The process consists of three stages.",
+        "The process is the case of three stages."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Se entiende por vivienda digna aquella que tiene agua y luz.",
+      "options": [
+        "Decent housing is understood as one that has water and electricity.",
+        "Decent housing is bought with water and electricity.",
+        "Someone understands decent housing."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es el caso del oso.",
+      "options": [
+        "The bear is the owner of it.",
+        "The bear is the cause of it.",
+        "That is the case with the bear."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El jurado se compone de cinco miembros.",
+      "options": [
+        "The jury is made up of three members.",
+        "The jury is made up of five members.",
+        "The jury has put together five members."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Esta encuesta consta de diez preguntas.",
+      "options": [
+        "This survey consists of ten questions.",
+        "This survey answers ten questions.",
+        "This survey consists of ten answers."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se entiende por economía informal el conjunto de actividades no reguladas.",
+      "options": [
+        "Informal economy is regulated by a set of activities.",
+        "The informal economy is understood as a set of regulated activities.",
+        "The informal economy is understood as a set of unregulated activities."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Algunos animales hibernan; es el caso del oso.",
+      "options": [
+        "Some animals hibernate; the bear is a case in point.",
+        "Some animals hibernate; the bear is their case.",
+        "Some animals hibernate because of the bear."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El café se compone de dos salas.",
+      "options": [
+        "The café is made up of two rooms.",
+        "The café composes two rooms.",
+        "The café is made up of one room."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick *consta de* or *se entiende por* and type the whole sentence: *El proceso ___ tres fases.*", "answer": "El proceso consta de tres fases.", "accept": ["El proceso se compone de tres fases."], "why": "Listing parts calls for *consta de* (or *se compone de*)." },
-    { "prompt": "Type in Spanish: The jury is made up of five members.", "answer": "El jurado se compone de cinco miembros.", "accept": ["El jurado consta de cinco miembros."], "why": "*Se compone de* + the parts says what the jury is made of." },
-    { "prompt": "Type in Spanish: This survey consists of ten questions.", "answer": "Esta encuesta consta de diez preguntas.", "accept": ["Esta encuesta se compone de diez preguntas."], "why": "*Consta de* + the number of parts." },
-    { "prompt": "Type in Spanish: Decent housing is understood as housing that has water and electricity.", "answer": "Se entiende por vivienda digna aquella que tiene agua y luz.", "accept": ["Se entiende por vivienda digna la que tiene agua y luz."], "why": "The term follows *por* directly, with no *es*." },
-    { "prompt": "Type in Spanish: That is the case with the bear.", "answer": "Es el caso del oso.", "accept": [], "why": "*De* + *el* becomes *del*: *el caso del oso*." },
-    { "prompt": "Make it plural: *El proceso consta de una fase.* Say: The processes consist of three stages.", "answer": "Los procesos constan de tres fases.", "accept": ["Los procesos se componen de tres fases."], "why": "Several processes, so the verb is plural: *constan*." },
-    { "prompt": "Type in Spanish: The café is made up of two rooms.", "answer": "El café se compone de dos salas.", "accept": ["El café consta de dos salas."], "why": "Parts of a thing: *se compone de* + the parts." }
+    {
+      "prompt": "Pick *consta de* or *se entiende por* and type the whole sentence: *El proceso ___ tres fases.*",
+      "answer": "El proceso consta de tres fases.",
+      "accept": [
+        "El proceso se compone de tres fases."
+      ],
+      "why": "Listing parts calls for *consta de* (or *se compone de*)."
+    },
+    {
+      "prompt": "Type in Spanish: The jury is made up of five members.",
+      "answer": "El jurado se compone de cinco miembros.",
+      "accept": [
+        "El jurado consta de cinco miembros."
+      ],
+      "why": "*Se compone de* + the parts says what the jury is made of."
+    },
+    {
+      "prompt": "Type in Spanish: This survey consists of ten questions.",
+      "answer": "Esta encuesta consta de diez preguntas.",
+      "accept": [
+        "Esta encuesta se compone de diez preguntas."
+      ],
+      "why": "*Consta de* + the number of parts."
+    },
+    {
+      "prompt": "Type in Spanish: Decent housing is understood as housing that has water and electricity.",
+      "answer": "Se entiende por vivienda digna aquella que tiene agua y luz.",
+      "accept": [
+        "Se entiende por vivienda digna la que tiene agua y luz."
+      ],
+      "why": "The term follows *por* directly, with no *es*."
+    },
+    {
+      "prompt": "Type in Spanish: That is the case with the bear.",
+      "answer": "Es el caso del oso.",
+      "accept": [],
+      "why": "*De* + *el* becomes *del*: *el caso del oso*."
+    },
+    {
+      "prompt": "Make it plural: *El proceso consta de una fase.* Say: The processes consist of three stages.",
+      "answer": "Los procesos constan de tres fases.",
+      "accept": [
+        "Los procesos se componen de tres fases."
+      ],
+      "why": "Several processes, so the verb is plural: *constan*."
+    },
+    {
+      "prompt": "Type in Spanish: The café is made up of two rooms.",
+      "answer": "El café se compone de dos salas.",
+      "accept": [
+        "El café consta de dos salas."
+      ],
+      "why": "Parts of a thing: *se compone de* + the parts."
+    }
   ],
   "pitfalls": [
-    { "wrong": "El proceso consiste de tres fases.", "right": "El proceso consta de tres fases.", "why": "Almost. *Consistir* takes *en* and explains what something involves; for listing parts, use *constar de*." },
-    { "wrong": "Se entiende por economía informal es el conjunto de actividades.", "right": "Se entiende por economía informal el conjunto de actividades.", "why": "Almost. After *se entiende por*, the term goes straight into the definition without *es*." },
-    { "wrong": "El jurado se compone en cinco miembros.", "right": "El jurado se compone de cinco miembros.", "why": "Almost. *Componerse* takes *de*, not *en*, before the parts." }
+    {
+      "wrong": "El proceso consiste de tres fases.",
+      "right": "El proceso consta de tres fases.",
+      "why": "Almost. *Consistir* takes *en* and explains what something involves; for listing parts, use *constar de*."
+    },
+    {
+      "wrong": "Se entiende por economía informal es el conjunto de actividades.",
+      "right": "Se entiende por economía informal el conjunto de actividades.",
+      "why": "Almost. After *se entiende por*, the term goes straight into the definition without *es*."
+    },
+    {
+      "wrong": "El jurado se compone en cinco miembros.",
+      "right": "El jurado se compone de cinco miembros.",
+      "why": "Almost. *Componerse* takes *de*, not *en*, before the parts."
+    }
   ],
   "personal": "Define one word from your own work or hobbies, starting with *Se entiende por*."
 }

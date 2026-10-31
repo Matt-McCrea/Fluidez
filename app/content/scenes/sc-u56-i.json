@@ -105,7 +105,7 @@
       "intent": "Thank her and promise to pass on the greeting, as a friend.",
       "accept": [
         "Gracias a ti. Le doy tu saludo a Hernando hoy mismo.",
-        "Muchas gracias. Lo saludo de su parte.",
+        "Muchas gracias. Yo le doy el saludo.",
         "Gracias por invitarme, yo le paso el saludo."
       ],
       "require": [

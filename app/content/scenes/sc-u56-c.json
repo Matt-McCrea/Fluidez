@@ -2,7 +2,7 @@
   "id": "sc-u56-c",
   "unit": "u56",
   "title": "Ante el jurado",
-  "brief": "You're Tomás, reading your essay in public at the newspaper's hall. A member of the jury asks the questions and speaks formally, so use usted. Defend your argument with concessions and consequences.",
+  "brief": "You're Tomás, reading your essay in public at the library. A member of the jury asks the questions and speaks formally, so use usted. Defend your argument with concessions and consequences.",
   "spare": false,
   "turns": [
     {
@@ -13,7 +13,7 @@
       "accept": [
         "Una ciudad olvida muy rápido, de manera que repite sus errores.",
         "La ciudad olvida con rapidez; de ahí que repita sus errores.",
-        "Las ciudades olvidan pronto, por consiguiente repiten sus errores."
+        "Las ciudades olvidan pronto; por consiguiente, repiten sus errores."
       ],
       "require": [
         {
@@ -53,9 +53,9 @@
       "npcEn": "The neighbours on the street protested this week. Why did they do it?",
       "intent": "Say nobody asked them, hence the protest (use: de ahí que + subjunctive).",
       "accept": [
-        "Nadie les preguntó; de ahí que protesten.",
+        "Nadie les preguntó; de ahí que protestaran.",
         "Nadie preguntó a los vecinos, de ahí que hayan protestado.",
-        "No los escucharon, de ahí que protesten con tanta fuerza."
+        "No los escucharon, de ahí que protestaran con tanta fuerza."
       ],
       "require": [
         {
@@ -122,6 +122,7 @@
     "g:future-promises",
     "g:gender-articles",
     "g:gustar-full",
+    "g:imperfect-subj",
     "g:indefinites",
     "g:indirect-objects",
     "g:object-pronoun-position",

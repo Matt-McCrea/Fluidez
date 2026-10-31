@@ -152,7 +152,7 @@
       "answer": "¿Qué hace usted por lo general los domingos?",
       "accept": [
         "¿Qué hace por lo general los domingos?",
-        "¿Por lo general, qué hace usted los domingos?"
+        "Por lo general, ¿qué hace usted los domingos?"
       ],
       "why": "*Por lo general* can sit inside a question too, and *hace* is the *usted* form."
     },

@@ -98,7 +98,7 @@
       "answer": 2
     },
     {
-      "es": "Prevenimos el problema a tiempo.",
+      "es": "Previnimos el problema a tiempo.",
       "options": [
         "We foresaw the problem in time.",
         "We prevented the problem in time.",
@@ -169,9 +169,9 @@
       "why": "The saying is about acting early so there is nothing to cure, and that is *prevenir*."
     },
     {
-      "wrong": "Nadie ha previdido la crisis.",
-      "right": "Nadie ha previsto la crisis.",
-      "why": "*Prever* follows *ver*, so its participle is *previsto*, like *visto*."
+      "wrong": "Nadie había prevido la crisis.",
+      "right": "Nadie había previsto la crisis.",
+      "why": "Almost. *Prever* follows *ver*, so its participle is *previsto*, like *visto*."
     }
   ],
   "personal": "Think of something that went wrong for you and that you did not see coming. Say it with *prever*, for example: *No preví…* Then say one thing you do to prevent problems, with *prevenir*."

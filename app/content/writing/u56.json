@@ -22,7 +22,7 @@
         "label": "at least 6 sentences"
       }
     ],
-    "model": "Señor director: Le escribo a propósito del plan de ampliar la avenida del centro. La alcaldía prevé que el tráfico crezca un veinte por ciento en cinco años, y por eso propone derribar dos manzanas enteras. Nadie niega que haya que prever los problemas, pero prevenir los trancones no es lo mismo que construir más carriles. La experiencia demuestra que, cuando se abren calles nuevas, llegan más carros y el problema vuelve en pocos años. Los vecinos de La Candelaria lo previmos desde el principio, y nadie quiso escucharnos. Si de verdad queremos prevenir el desastre, necesitamos más transporte público, más árboles y menos prisa. Es cierto que nadie puede prever con exactitud lo que ocurrirá, pero sí podemos aprender de otras ciudades que ya cometieron este error. Le pido, pues, que publique esta carta y que invite a la alcaldía a explicar sus cifras en público, delante de quienes vivimos aquí. Hasta entonces, no creo que debamos firmar nada. Atentamente, Tomás",
+    "model": "Señor director: Le escribo a propósito del plan de ampliar la avenida del centro. La alcaldía prevé que el tráfico crecerá un veinte por ciento en cinco años, y por eso propone derribar dos manzanas enteras. Nadie niega que haya que prever los problemas, pero prevenir los trancones no es lo mismo que construir más carriles. La experiencia demuestra que, cuando se abren calles nuevas, llegan más carros y el problema vuelve en pocos años. Los vecinos de La Candelaria lo previmos desde el principio, y nadie quiso escucharnos. Si de verdad queremos prevenir el desastre, necesitamos más transporte público, más árboles y menos prisa. Es cierto que nadie puede prever con exactitud lo que ocurrirá, pero sí podemos aprender de otras ciudades que ya cometieron este error. Le pido, pues, que publique esta carta y que invite a la alcaldía a explicar sus cifras en público, delante de quienes vivimos aquí. Hasta entonces, no creo que debamos firmar nada. Atentamente, Tomás",
     "focus": "p:prever-prevenir",
     "requires": [
       "c:atentamente",
@@ -443,7 +443,7 @@
         "label": "at least 7 sentences"
       }
     ],
-    "model": "Vale: He pensado en lo que me dijiste anoche sobre la cooperativa y quiero responderte con calma. No te falta razón en lo del dinero: si entramos todos, cada decisión tardará el triple y no siempre habrá acuerdo. Tampoco te falta razón cuando dices que Altamira aprovechará cualquier división entre nosotros. Ahora bien, creo que estás pasando por alto una cosa. Solos no tenemos fuerza para negociar, ni con el banco ni con el propietario ni con la alcaldía. Juntos, en cambio, podemos pedir plazos más largos y comprar en conjunto. Sé que te preocupa perder tu cocina, y no pienso permitirlo: lo pondremos por escrito, con tu firma al lado de la mía. Para eso necesito que vengas a la reunión del sábado y que digas todo esto delante de los demás, igual que me lo dijiste a mí. Si después de oírnos sigues con dudas, lo hablamos otra vez. Un abrazo, Tomás",
+    "model": "Vale: Estuve pensando en lo que me dijiste anoche sobre la cooperativa y quiero responderte con calma. No te falta razón en lo del dinero: si entramos todos, cada decisión tardará el triple y no siempre habrá acuerdo. Tampoco te falta razón cuando dices que Altamira aprovechará cualquier división entre nosotros. Ahora bien, creo que estás pasando por alto una cosa. Solos no tenemos fuerza para negociar, ni con el banco ni con el propietario ni con la alcaldía. Juntos, en cambio, podemos pedir plazos más largos y comprar en conjunto. Sé que te preocupa perder tu cocina, y no pienso permitirlo: lo pondremos por escrito, con tu firma al lado de la mía. Para eso necesito que vengas a la reunión del sábado y que digas todo esto delante de los demás, igual que me lo dijiste a mí. Si después de oírnos sigues con dudas, lo hablamos otra vez. Un abrazo, Tomás",
     "focus": "p:no-te-falta-razon",
     "requires": [
       "c:ayer-anoche",
@@ -466,7 +466,6 @@
       "g:imperfect-states",
       "g:object-pronoun-position",
       "g:parecer-quedar",
-      "g:perfecto-experience",
       "g:por-para-1",
       "g:possessives-stressed",
       "g:prep-infinitive",
@@ -599,7 +598,7 @@
         "label": "usted, not tú"
       }
     ],
-    "model": "Estimado don Hernando: Le escribo para invitarlo a la lectura pública de los ensayos, que será el viernes a las seis en la biblioteca del barrio. Como sabe, mi texto habla de la memoria de la ciudad, y usted es, sin lugar a dudas, la persona que más calles recuerda en La Candelaria. Cuando le pregunté por el viejo tranvía, me contó cosas que no aparecen en ningún libro. Tarde o temprano esas historias se perderán si nadie las anota, y por eso las he incluido en mi ensayo, con su permiso. Me gustaría que me corrigiera si algún detalle no es exacto, porque prefiero equivocarme en privado que delante del público. Si no le queda cómodo ir, pasaré por el café con el texto para leérselo antes. Sería un honor contar con usted en la primera fila, y Vale ha prometido llevar pastel para después. Con todo mi cariño y mi respeto, Tomás",
+    "model": "Estimado don Hernando: Le escribo para invitarlo a la lectura pública de los ensayos, que será el sábado a las seis en la biblioteca del barrio. Como sabe, mi texto habla de la memoria de la ciudad, y usted es, sin lugar a dudas, la persona que más calles recuerda en La Candelaria. Cuando le pregunté por el viejo tranvía, me contó cosas que no aparecen en ningún libro. Tarde o temprano esas historias se perderán si nadie las anota, y por eso las he incluido en mi ensayo, con su permiso. Me gustaría que me corrigiera si algún detalle no es exacto, porque prefiero equivocarme en privado que delante del público. Si no le queda cómodo ir, pasaré por el café con el texto para leérselo antes. Sería un honor contar con usted en la primera fila, y Vale ha prometido llevar pastel para después. Con todo mi cariño y mi respeto, Tomás",
     "focus": "c:sin-lugar-a-dudas",
     "requires": [
       "c:bien-y-tu",
@@ -687,12 +686,12 @@
       "l:respeto",
       "l:saber",
       "l:ser",
+      "l:sábado",
       "l:tarde",
       "l:temprano",
       "l:texto",
       "l:tranvía",
       "l:viejo",
-      "l:viernes",
       "p:cerca-de",
       "p:contar-con",
       "p:cuando-basic",
@@ -1140,7 +1139,7 @@
   {
     "id": "w-u56-09",
     "unit": "u56",
-    "prompt": "An email to the competition coordinator, a woman you don't know (usted), explaining what you can commit to for the public reading on Friday. Set your conditions with en la medida en que, at least twice.",
+    "prompt": "An email to the competition coordinator, a woman you don't know (usted), explaining what you can commit to for the public reading on Saturday. Set your conditions with en la medida en que, at least twice.",
     "minWords": 150,
     "maxWords": 250,
     "constraints": [
@@ -1160,7 +1159,7 @@
         "label": "usted, not tú"
       }
     ],
-    "model": "Estimada señora: Gracias por informarme de que mi ensayo ha pasado a la ronda final. Le escribo para aclarar lo que puedo ofrecer para la lectura pública del viernes. Participaré en la medida en que mi horario en el café lo permita, y le adelanto que casi seguro podré estar desde las cinco. El texto es largo, así que lo leeré completo, aunque acepto que me pidan cortar un párrafo si el tiempo no alcanza. Agradezco la oferta de un micrófono; lo usaré en la medida en que sea necesario, porque en un salón tan grande mi voz no llegará al fondo. Si hace falta algún documento, enviaré mi cédula y una breve biografía, en la medida en que me los pidan con anticipación. Le ruego que me confirme el orden de las lecturas, ya que quisiera invitar a algunas personas del barrio para que escuchen a los finalistas. Quedo atento a su respuesta. Atentamente, Tomás",
+    "model": "Estimada señora: Gracias por informarme de que mi ensayo ha pasado a la ronda final. Le escribo para aclarar lo que puedo ofrecer para la lectura pública del sábado. Participaré en la medida en que mi horario en el café lo permita, y le adelanto que casi seguro podré estar desde las cinco. El texto es largo, así que lo leeré completo, aunque acepto que me pidan cortar un párrafo si el tiempo no alcanza. Agradezco la oferta de un micrófono; lo usaré en la medida en que sea necesario, porque en un salón tan grande mi voz no llegará al fondo. Si hace falta algún documento, enviaré mi cédula y una breve biografía, en la medida en que me los pidan con anticipación. Le ruego que me confirme el orden de las lecturas, ya que quisiera invitar a algunas personas del barrio para que escuchen a los finalistas. Quedo atento a su respuesta. Atentamente, Tomás",
     "focus": "p:en-la-medida-en-que",
     "requires": [
       "c:atentamente",
@@ -1255,10 +1254,10 @@
       "l:seguro",
       "l:ser",
       "l:señora",
+      "l:sábado",
       "l:texto",
       "l:tiempo",
       "l:usar",
-      "l:viernes",
       "l:voz",
       "p:con-antelacion",
       "p:el-orden-la-orden",
@@ -1306,7 +1305,7 @@
         "label": "si bien / aun cuando, not aunque"
       }
     ],
-    "model": "Vale: Sé que dices que a nadie le importa un concurso de ensayos, y quizá tengas razón. Si bien el premio es pequeño, el periódico lo anuncia en primera página. Aun cuando no gane nada, tendré que leer mi texto delante de cuatrocientas personas, y eso ya me asusta. Por mucho que lo piense, no consigo imaginar a mi abuela entre el público, pero sé que le habría gustado. Por muy nervioso que esté el viernes, voy a subir a ese escenario, porque escribí el ensayo para que alguien lo oyera. Tú, por mucho que lo niegues, eres la que más me ha animado desde que empecé. Si bien no te lo he dicho nunca, sin tus pasteles no habría tenido fuerzas para terminar la última versión. Aun cuando el jurado me ignore, habrá valido la pena. Así que ven conmigo, siéntate en la primera fila y, por favor, no me hagas reír mientras leo. Tomás",
+    "model": "Vale: Sé que dices que a nadie le importa un concurso de ensayos, y quizá tengas razón. Si bien el premio es pequeño, el periódico lo anuncia en primera página. Aun cuando no gane nada, tendré que leer mi texto delante de cuatrocientas personas, y eso ya me asusta. Por mucho que lo piense, no consigo imaginar a mi abuela entre el público, pero sé que le habría gustado. Por muy nervioso que esté el sábado, voy a subir a ese escenario, porque escribí el ensayo para que alguien lo oyera. Tú, por mucho que lo niegues, eres la que más me ha animado desde que empecé. Si bien no te lo he dicho nunca, sin tus pasteles no habría tenido fuerzas para terminar la última versión. Aun cuando el jurado me ignore, habrá valido la pena. Así que ven conmigo, siéntate en la primera fila y, por favor, no me hagas reír mientras leo. Tomás",
     "focus": "g:concessive-advanced",
     "requires": [
       "c:bien-y-tu",
@@ -1397,13 +1396,13 @@
       "l:sentarse",
       "l:ser",
       "l:subir",
+      "l:sábado",
       "l:tener",
       "l:terminar",
       "l:texto",
       "l:valer",
       "l:ver",
       "l:versión",
-      "l:viernes",
       "p:cerca-de",
       "p:days-el-lunes",
       "p:demonstratives-basic",

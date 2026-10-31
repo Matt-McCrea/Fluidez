@@ -151,9 +151,7 @@
     {
       "prompt": "Type in Spanish, asking a friend: Is it like you to complain so much?",
       "answer": "¿Es propio de ti quejarte tanto?",
-      "accept": [
-        "¿Es propio de ti quejarte tanto?"
-      ],
+      "accept": [],
       "why": "*De ti* names the person, so you ask whether it fits them."
     }
   ],

@@ -150,9 +150,7 @@
     {
       "prompt": "Make it limited: *Estoy de acuerdo.* Say: I agree, but only up to a point.",
       "answer": "Estoy de acuerdo, pero solo hasta cierto punto.",
-      "accept": [
-        "Estoy de acuerdo, pero solo hasta cierto punto."
-      ],
+      "accept": [],
       "why": "*Hasta cierto punto* turns a full agreement into a partial one."
     },
     {

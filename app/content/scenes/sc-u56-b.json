@@ -91,8 +91,8 @@
     },
     {
       "id": "t5",
-      "npc": "Hernando: Me ha convencido a medias, pero hablaré bien de su ensayo en la mesa de dominó. ¿Le sirvo otro tinto?",
-      "npcEn": "Hernando: You've half convinced me, but I will speak well of your essay at the domino table. Shall I pour you another coffee?",
+      "npc": "Hernando: Me convenció a medias, pero hablaré bien de su ensayo en la mesa de dominó. ¿Le sirvo otro tinto?",
+      "npcEn": "Hernando: You half convinced me, but I will speak well of your essay at the domino table. Shall I pour you another coffee?",
       "intent": "Thank him and accept, politely.",
       "accept": [
         "Sí, gracias, don Hernando. Esta vez invito yo.",
@@ -131,10 +131,10 @@
     "g:gerund-ways",
     "g:indirect-objects",
     "g:object-pronoun-position",
-    "g:perfecto-experience",
     "g:por-para-1",
     "g:present-ar",
     "g:present-er-ir",
+    "g:preterite-er-ir",
     "g:questions",
     "g:reflexive-routine",
     "g:relative-que",

@@ -34,7 +34,7 @@
       "accept": [
         "Coincido con ellos en que la ciudad tiene que crecer, pero no en que deba olvidar.",
         "Coincido en que hay que construir, pero no en que haya que olvidar.",
-        "En que la ciudad debe crecer coincido con ellos, pero no en que deba olvidar."
+        "Coincido con esa gente en que hay que avanzar, pero no en que haya que olvidar."
       ],
       "require": [
         {
@@ -126,6 +126,7 @@
     "c:tarde-o-temprano",
     "c:tienes",
     "g:adjective-agreement",
+    "g:demonstratives",
     "g:direct-objects",
     "g:gender-articles",
     "g:indirect-questions",
@@ -145,6 +146,7 @@
     "g:stem-boot",
     "g:subj-cuando-future",
     "g:subj-irregulars",
+    "g:subj-relative",
     "g:subj-wanting",
     "g:tener-que-hay-que",
     "g:that-clauses",
