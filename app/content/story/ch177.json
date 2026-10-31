@@ -1,0 +1,427 @@
+{
+  "id": "ch177",
+  "unit": "u52",
+  "title": "La oveja de Usme",
+  "text": "«Es diciembre de 1991, y en Usme llueve como si el cielo debiera plata. Un campesino me para en la carretera. Lleva una ruana, un sombrero y una oveja».\nAsí empezaba el capítulo dos. Hernando lo dictaba de pie, con las manos en el aire, como si todavía tuviera el timón.\nTomás: ¿Por qué en presente? Todo eso pasó hace treinta y cinco años.\nHernando: Porque si lo cuento en pasado, la oveja se muere. En presente, sigue viva.\nTomás lo pensó. Era la mejor explicación de gramática que había oído en su vida.\n«La oveja se llama Margarita y va para la catedral. Esa noche es la novena del pesebre, y el padre necesita una oveja de verdad. El campesino me paga con una gallina. La gallina, como siempre, no paga».\nTomás: ¿Otra gallina?\nHernando: En esa época, mijo, la gallina era una moneda.\nEn la Décima, Margarita se comió medio asiento de atrás. En la plaza de Bolívar se bajó sola, se metió en la catedral antes que el padre y se acostó en el pesebre, al lado del niño Dios.\nHernando: El padre dijo que era un milagro. Yo dije que era un asiento.\nSimón: ¡Manos a la obra! ¡Manos a la obra, parce!\nHernando: Exacto. Eso dijo el padre cuando la quiso sacar.\nA las once, Hernando se sentó despacio y se tocó la rodilla.\nHernando: Mijo, quería pedirle un favor.\nTomás: Dígame.\nHernando: El capítulo tres lo escribimos de día. De noche me pongo triste, y a mi edad la tristeza es mortal.\nTomás quiso decir algo gracioso, pero no le salió nada.\nAl otro día, en la cocina, sonaba la radio. Una voz muy contenta hablaba del nuevo hotel de Grupo Altamira: «Será el proyecto más exitoso de La Candelaria. Abre en enero, con terraza y vista a las montañas».\nGloria: Vista a las montañas. Y a nuestro patio.\nHernando: Será muy exitoso, pero ese hombre no tiene alma. En mis cuadernos hay ladrones con más alma.\nWilson, el de la máquina amarilla, pasó por un tinto y bajó la voz.\nWilson: Anoche vi una rata del tamaño de un gato en el sótano del hotel. Los ingenieros dicen que es mala suerte. Yo digo que es la única que trabaja de noche.\nA las tres llamó Vale. Tenía voz de no haber dormido.\nVale: Quería contarte algo antes de que lo leyeras en internet. Correa quiere registrar una marca. La marca se llama «Vale».\nTomás: ¿Con tu nombre?\nVale: Con mi nombre, mi letra y mi cara. Mañana firmo.\nTomás contó hasta cinco, como le enseñó Mariana.\nTomás: Será muy buen negocio, pero ese nombre es tuyo. Si firmas, que sea con abogado.\nVale: Ya tengo abogada. Es la prima de Mariana. Y no firmo nada que no lea dos veces.\nTomás: Entonces está en buenas manos. Las de la marca.\nVale se rio, y por un momento sonó como en la cocina del café.\nEsa noche Tomás leyó en voz alta el capítulo de Margarita. Gloria lloró de risa. Hernando escuchó con los ojos cerrados y, al final, sacó la servilleta del bolsillo.\nHernando: El tres ya tiene nombre.\nLo escribió en la línea en blanco: «Rosa baila».\nTomás: ¿Rosa bailaba?\nHernando: Una sola vez. En un teatro lleno, delante de todo el barrio, y yo en la primera fila.",
+  "gloss": [
+    {
+      "es": "como si el cielo debiera plata",
+      "en": "as if the sky owed money"
+    },
+    {
+      "es": "ruana",
+      "en": "ruana (a woollen Andean poncho)"
+    },
+    {
+      "es": "timón",
+      "en": "steering wheel"
+    },
+    {
+      "es": "presente",
+      "en": "present tense"
+    },
+    {
+      "es": "gramática",
+      "en": "grammar"
+    },
+    {
+      "es": "catedral",
+      "en": "cathedral"
+    },
+    {
+      "es": "pesebre",
+      "en": "nativity scene"
+    },
+    {
+      "es": "Esa noche es la novena del pesebre",
+      "en": "That night is the Christmas novena at the nativity scene"
+    },
+    {
+      "es": "En esa época, mijo, la gallina era una moneda",
+      "en": "Back then, son, a hen was a currency"
+    },
+    {
+      "es": "Mijo, quería pedirle un favor",
+      "en": "Son, I wanted to ask you a favour"
+    },
+    {
+      "es": "a mi edad la tristeza es mortal",
+      "en": "at my age, sadness is deadly"
+    },
+    {
+      "es": "Será el proyecto más exitoso de La Candelaria",
+      "en": "It will be the most successful project in La Candelaria"
+    },
+    {
+      "es": "Será muy exitoso, pero ese hombre no tiene alma",
+      "en": "It may well be very successful, but that man has no soul"
+    },
+    {
+      "es": "mala suerte",
+      "en": "bad luck"
+    },
+    {
+      "es": "Tenía voz de no haber dormido",
+      "en": "She sounded as if she hadn't slept"
+    },
+    {
+      "es": "Mañana firmo",
+      "en": "I'm signing tomorrow"
+    },
+    {
+      "es": "Será muy buen negocio",
+      "en": "It may well be a very good deal"
+    },
+    {
+      "es": "Entonces está en buenas manos",
+      "en": "Then it's in good hands"
+    },
+    {
+      "es": "servilleta",
+      "en": "paper napkin"
+    },
+    {
+      "es": "Rosa baila",
+      "en": "Rosa dances"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Hernando tell the sheep story in the present tense?",
+      "options": [
+        "He has forgotten the past forms",
+        "If he tells it in the past, the sheep dies; in the present it stays alive",
+        "Tomás asks him to",
+        "Begoña wants it that way"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What favour does Hernando ask Tomás?",
+      "options": [
+        "To lend him the Burra",
+        "To write chapter three by day, because at night he gets sad",
+        "To call his daughter",
+        "To leave the hen out of the book"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "When Hernando says \"Será muy exitoso, pero ese hombre no tiene alma\", what does \"será\" mean here?",
+      "options": [
+        "It will be successful next year",
+        "He admits it may be successful, but that is not his point",
+        "He is asking a question",
+        "He is sure the hotel will fail"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Dónde se acostó Margarita?",
+      "options": [
+        "En el pesebre de la catedral",
+        "En el asiento del taxi",
+        "En la cocina del café",
+        "En la terraza del hotel"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Correa want to register?",
+      "options": [
+        "A new oven",
+        "A brand called Vale, with her name and face",
+        "The café's name",
+        "A bakery in Bogotá"
+      ],
+      "answer": 1
+    }
+  ],
+  "hook": "The third chapter has a name now: Rosa dances. Tomorrow Hernando tells the one night Rosa danced in front of a full theatre, and he was sitting in the front row.",
+  "rereadQuestions": [
+    {
+      "q": "How did the farmer pay for the ride?",
+      "options": [
+        "With a hen",
+        "With a sheep",
+        "With nothing",
+        "With pesos"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who is Vale's lawyer?",
+      "options": [
+        "Mariana",
+        "Mariana's cousin",
+        "Correa's adviser",
+        "Lucía"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Where did Wilson see the rat?",
+      "options": [
+        "In the café's kitchen",
+        "In the hotel basement",
+        "In the Burra",
+        "In the cathedral"
+      ],
+      "answer": 1
+    }
+  ],
+  "requires": [
+    "c:al-final",
+    "c:ayer-anoche",
+    "c:en-esa-epoca",
+    "c:en-serio",
+    "c:entonces-bueno",
+    "c:era",
+    "c:hay",
+    "c:manos-a-la-obra",
+    "c:porque",
+    "c:se-llama",
+    "c:sera-otro-dia",
+    "c:tengo",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:como-si",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:hace-ago",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:infinitive-perfect",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:passive-se",
+    "g:pluperfect",
+    "g:por-para-1",
+    "g:possessives",
+    "g:possessives-stressed",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-spelling-stem",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:reported-past-basic",
+    "g:ser-identity",
+    "g:si-hypothetical",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-irregulars",
+    "g:subj-purpose-full",
+    "g:subj-relative",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:verbs-of-change",
+    "g:yo-irregular",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cerca-de",
+    "p:comerse-todo",
+    "p:contar-dos-sentidos",
+    "p:cuando-basic",
+    "p:dates-years",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:es-tiene-lleva",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:los-de-la-camiseta",
+    "p:me-te-nos-objects",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:postura",
+    "p:preguntar-pedir",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:que-subj-deseo",
+    "p:queria-cortesia",
+    "p:telling-time",
+    "p:ver-oir-bien-mal",
+    "p:ya-todavia-basic"
+  ],
+  "lexemes": [
+    "l:abogado",
+    "l:abrir",
+    "l:acostarse",
+    "l:aire",
+    "l:alma",
+    "l:alto",
+    "l:amarillo",
+    "l:anoche",
+    "l:antes",
+    "l:asiento",
+    "l:atrás",
+    "l:año",
+    "l:bailar",
+    "l:bajar",
+    "l:bajarse",
+    "l:barrio",
+    "l:blanco",
+    "l:bolsillo",
+    "l:buen",
+    "l:buena",
+    "l:café",
+    "l:campesino",
+    "l:capítulo",
+    "l:cara",
+    "l:carretera",
+    "l:catedral",
+    "l:cerrar",
+    "l:cielo",
+    "l:cocina",
+    "l:comer",
+    "l:contar",
+    "l:contento",
+    "l:correa",
+    "l:cuaderno",
+    "l:deber",
+    "l:decir",
+    "l:delante",
+    "l:despacio",
+    "l:diciembre",
+    "l:dictar",
+    "l:dormir",
+    "l:día",
+    "l:edad",
+    "l:empezar",
+    "l:enero",
+    "l:enseñar",
+    "l:escribir",
+    "l:escuchar",
+    "l:estar",
+    "l:exacto",
+    "l:exitoso",
+    "l:explicación",
+    "l:favor",
+    "l:fila",
+    "l:final",
+    "l:firmar",
+    "l:gallina",
+    "l:gato",
+    "l:gracioso",
+    "l:gramática",
+    "l:haber",
+    "l:hablar",
+    "l:hacer",
+    "l:hombre",
+    "l:hotel",
+    "l:ingeniero",
+    "l:internet",
+    "l:ir",
+    "l:lado",
+    "l:ladrón",
+    "l:leer",
+    "l:letra",
+    "l:llamar",
+    "l:llamarse",
+    "l:llenar",
+    "l:llevar",
+    "l:llorar",
+    "l:llover",
+    "l:línea",
+    "l:mala",
+    "l:mano",
+    "l:marca",
+    "l:mañana",
+    "l:mejor",
+    "l:meterse",
+    "l:mijo",
+    "l:milagro",
+    "l:momento",
+    "l:moneda",
+    "l:montaña",
+    "l:morirse",
+    "l:mortal",
+    "l:máquina",
+    "l:necesitar",
+    "l:negocio",
+    "l:niño",
+    "l:noche",
+    "l:nombre",
+    "l:novena",
+    "l:nuevo",
+    "l:obra",
+    "l:ojo",
+    "l:oveja",
+    "l:oír",
+    "l:padre",
+    "l:pagar",
+    "l:parar",
+    "l:parce",
+    "l:pasado",
+    "l:pasar",
+    "l:patio",
+    "l:pedir",
+    "l:pensar",
+    "l:pie",
+    "l:plata",
+    "l:plaza",
+    "l:ponerse",
+    "l:presente",
+    "l:prima",
+    "l:proyecto",
+    "l:querer",
+    "l:qué",
+    "l:radio",
+    "l:rata",
+    "l:registrar",
+    "l:reír",
+    "l:risa",
+    "l:rodilla",
+    "l:ruana",
+    "l:sacar",
+    "l:salir",
+    "l:seguir",
+    "l:sentarse",
+    "l:ser",
+    "l:servilleta",
+    "l:siempre",
+    "l:sombrero",
+    "l:sonar",
+    "l:suerte",
+    "l:sótano",
+    "l:tamaño",
+    "l:teatro",
+    "l:tener",
+    "l:terraza",
+    "l:timón",
+    "l:tinto",
+    "l:tocar",
+    "l:trabajar",
+    "l:triste",
+    "l:tristeza",
+    "l:ver",
+    "l:verdad",
+    "l:vestir",
+    "l:vez",
+    "l:vida",
+    "l:vivo",
+    "l:voz",
+    "l:época",
+    "l:único"
+  ]
+}
