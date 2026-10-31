@@ -1,0 +1,325 @@
+{
+  "id": "ch154",
+  "unit": "u47",
+  "title": "Número uno",
+  "text": "El celular de Mariana sonó toda la noche. A las seis ya no tenía batería, y a las ocho el episodio estaba de primero en Colombia, por encima de un programa de fútbol y otro de horóscopos.\nMariana: Número uno. En todo el país.\nHernando: ¡Lo que daría Rosa por ver esto!\nTomás no dijo nada. Leía los mensajes de los oyentes, uno por uno.\nTomás: Una señora de Pasto dice que lloró en el bus. Un señor de Cali dice que su abuela también le preguntaba si ya había comido.\nVale: ¡Lo bien que suena tu voz en el celular de otra gente!\nTomás: Y con lo nervioso que estaba. Once veces la grabé.\nVale: Ya sé. Las oí todas desde la cocina.\nA las diez llamó la emisora de Hernando. Querían emitir el episodio completo, a mediodía.\nHernando: ¿Mi emisora? ¿Esa emisora de boleros? Cuarenta años oyéndola en el taxi, y ahora va a emitir mi voz.\nHernando se sentó al lado del radio como si fuera a manejar.\nA mediodía empezó el programa. Cuando sonó la voz de Rosa en el radio, Gloria empezó a llorar y Jhon Fredy dejó de bailar.\nGloria: Ese loro es la joya del barrio.\nHernando: Este episodio es una joya. Con lo poco que habla Tomás, y mire lo bien que habla en el radio.\nDespués llamó una galería del centro. Querían hacer una exposición con los Simones que pintaban los niños del colegio.\nJhon Fredy: ¿Una exposición de verdad? ¿Con vino y gente seria?\nMariana: Con vino, gente seria y un loro.\nSimón, en su palo, se creía una estrella de cine.\nSimón: ¡Número uno! ¡Número uno, parce!\nPor la tarde, Wilson le mandó un mensaje a Gloria: «Mi hija oyó la voz cambiada y me reconoció igual. Dice que está orgullosa de mí».\nGloria lo leyó en voz alta, y nadie hizo ningún chiste.\nA las cinco, la obra de al lado se llenó de camiones. Traían barras de acero para el hotel, largas como buses.\nYesid: Tanto acero de golpe. Lo que tienen es prisa.\nMariana: Mientras el país nos oye, ellos construyen.\nDescargaron el acero hasta las siete. Con cada barra que caía, las tazas bailaban en la cocina.\nCon la última, el palo de Simón se cayó al piso. Simón voló hasta el hombro de Tomás, gritando.\nYesid miró hacia arriba. En la viga grande, encima del mostrador, había una grieta nueva.\nYesid: Esa grieta no estaba esta mañana.\nTomás pensó en el consejo de Montoya. Antes del quince.\nTomás: Mañana mismo llamamos al Instituto. Necesitamos un arquitecto.",
+  "gloss": [
+    {
+      "es": "horóscopos",
+      "en": "horoscopes"
+    },
+    {
+      "es": "boleros",
+      "en": "boleros (romantic Latin songs)"
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "viga",
+      "en": "beam"
+    },
+    {
+      "es": "mostrador",
+      "en": "counter"
+    },
+    {
+      "es": "grieta",
+      "en": "crack"
+    },
+    {
+      "es": "estaba de primero",
+      "en": "was in first place"
+    },
+    {
+      "es": "¡Lo que daría Rosa por ver esto!",
+      "en": "What Rosa would give to see this!"
+    },
+    {
+      "es": "como si fuera a manejar",
+      "en": "as if he were about to drive"
+    },
+    {
+      "es": "los Simones que pintaban los niños",
+      "en": "the Simóns the children painted"
+    },
+    {
+      "es": "Tanto acero de golpe.",
+      "en": "So much steel all at once."
+    },
+    {
+      "es": "Mañana mismo",
+      "en": "First thing tomorrow"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Where is the episode by eight in the morning?",
+      "options": [
+        "Number one in Colombia",
+        "Number one in Bogotá only",
+        "Taken down by Altamira",
+        "Still uploading"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why is Hernando so moved by the radio station's call?",
+      "options": [
+        "It's the station he listened to in his taxi for forty years",
+        "They offer him a job",
+        "They want to interview Simón",
+        "They play his favourite bolero"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does the steel delivery next door suggest, according to Yesid?",
+      "options": [
+        "Altamira is in a hurry",
+        "The hotel is finished",
+        "The work has stopped",
+        "Altamira is building a bridge"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué encuentra Yesid en la viga, encima del mostrador?",
+      "options": [
+        "Una grieta nueva",
+        "Una carta de Rosa",
+        "Un agujero viejo",
+        "Un micrófono escondido"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "Who wrote to Gloria, and what did he say?",
+      "options": [
+        "Wilson: his daughter recognised him and is proud of him",
+        "Montoya: he is sorry",
+        "Osorio: the paper wants the story",
+        "Chucho: he heard it in his taxi"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does the gallery want to exhibit?",
+      "options": [
+        "The children's paintings of Simón",
+        "Rosa's letters",
+        "Photos of the café",
+        "Hernando's taxi cap"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How many times does Vale say she heard Tomás record his line?",
+      "options": [
+        "All of them, from the kitchen",
+        "Only the last one",
+        "None",
+        "Twice"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "The episode is number one, but the steel next door has opened a crack in the big beam above the counter. Tomorrow an architect comes to measure the house, and she measures everything, including Hernando's patience.",
+  "requires": [
+    "c:bien-y-tu",
+    "c:en-serio",
+    "c:igual",
+    "c:oiga-oye",
+    "c:tienes",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:cada-cualquier",
+    "g:como-si",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indefinites",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:lo-adjective",
+    "g:lo-que-intensity",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:passive-se",
+    "g:pluperfect",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:caerse-lastimarse",
+    "p:cargar-descargar",
+    "p:cerca-de",
+    "p:cuando-basic",
+    "p:dejar-de-inf",
+    "p:demonstratives-basic",
+    "p:empezar-terminar",
+    "p:entonces-de-repente",
+    "p:estar-orgulloso-de",
+    "p:la-gente-singular",
+    "p:llevar-traer",
+    "p:los-garcia",
+    "p:me-te-nos-objects",
+    "p:orgulloso-admiracion",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:pensar-en",
+    "p:personal-a",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:todos-los-dias",
+    "p:ver-oir-bien-mal"
+  ],
+  "lexemes": [
+    "l:abuela",
+    "l:acero",
+    "l:ahora",
+    "l:alto",
+    "l:antes",
+    "l:arquitecto",
+    "l:arriba",
+    "l:año",
+    "l:bailar",
+    "l:barra",
+    "l:barrio",
+    "l:batería",
+    "l:bien",
+    "l:bolero",
+    "l:bus",
+    "l:caer",
+    "l:caerse",
+    "l:cambiar",
+    "l:camión",
+    "l:celular",
+    "l:centro",
+    "l:chiste",
+    "l:cine",
+    "l:cocina",
+    "l:colegio",
+    "l:comer",
+    "l:completar",
+    "l:consejo",
+    "l:construir",
+    "l:creer",
+    "l:dar",
+    "l:decir",
+    "l:dejar",
+    "l:descargar",
+    "l:después",
+    "l:emisora",
+    "l:emitir",
+    "l:empezar",
+    "l:encima",
+    "l:episodio",
+    "l:estar",
+    "l:estrella",
+    "l:exposición",
+    "l:fútbol",
+    "l:galería",
+    "l:gente",
+    "l:golpe",
+    "l:grabar",
+    "l:grande",
+    "l:grieta",
+    "l:gritar",
+    "l:hablar",
+    "l:hacer",
+    "l:hija",
+    "l:hombro",
+    "l:horóscopo",
+    "l:hotel",
+    "l:igual",
+    "l:ir",
+    "l:joya",
+    "l:lado",
+    "l:largo",
+    "l:leer",
+    "l:llamar",
+    "l:llenar",
+    "l:llorar",
+    "l:loro",
+    "l:mandar",
+    "l:manejar",
+    "l:mañana",
+    "l:mediodía",
+    "l:mensaje",
+    "l:mirar",
+    "l:mostrador",
+    "l:necesitar",
+    "l:nervioso",
+    "l:niño",
+    "l:noche",
+    "l:nuevo",
+    "l:número",
+    "l:obra",
+    "l:orgulloso",
+    "l:oyente",
+    "l:oír",
+    "l:palo",
+    "l:parce",
+    "l:país",
+    "l:pensar",
+    "l:pintar",
+    "l:piso",
+    "l:preguntar",
+    "l:prisa",
+    "l:programa",
+    "l:querer",
+    "l:radio",
+    "l:reconocer",
+    "l:saber",
+    "l:sentarse",
+    "l:ser",
+    "l:serio",
+    "l:señor",
+    "l:señora",
+    "l:sonar",
+    "l:tarde",
+    "l:taxi",
+    "l:taza",
+    "l:tener",
+    "l:traer",
+    "l:ver",
+    "l:verdad",
+    "l:vez",
+    "l:viga",
+    "l:vino",
+    "l:volar",
+    "l:voz"
+  ]
+}
