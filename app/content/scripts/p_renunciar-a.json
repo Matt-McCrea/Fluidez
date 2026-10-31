@@ -116,7 +116,9 @@
     {
       "prompt": "Say: I'm not giving up my holiday.",
       "answer": "No pienso renunciar a mis vacaciones.",
-      "accept": [],
+      "accept": [
+        "No voy a renunciar a mis vacaciones."
+      ],
       "why": "The infinitive *renunciar* follows *pienso*, then *a* plus the thing."
     },
     {

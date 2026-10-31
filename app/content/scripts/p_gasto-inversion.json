@@ -1,174 +1,176 @@
 {
- "node": "p:gasto-inversion",
- "hook": {
-  "line": "Tomás has to decide whether the new oven is a cost or an investment. In a letter, which word he picks changes how the reader hears it.",
-  "es": "No es un gasto, es una inversión.",
-  "en": "It's not an expense, it's an investment."
- },
- "examples": [
-  {
-   "es": "No es un gasto, es una inversión.",
-   "en": "It's not an expense, it's an investment."
+  "node": "p:gasto-inversion",
+  "hook": {
+    "line": "Tomás has to decide whether the new oven is a cost or an investment. In a letter, which word he picks changes how the reader hears it.",
+    "es": "No es un gasto, es una inversión.",
+    "en": "It's not an expense, it's an investment."
   },
-  {
-   "es": "Lo barato sale caro.",
-   "en": "Cheap things end up expensive."
-  },
-  {
-   "es": "La casa ha ganado mucho valor.",
-   "en": "The house has gained a lot of value."
-  },
-  {
-   "es": "El carro perdió valor muy rápido.",
-   "en": "The car lost value very quickly."
-  },
-  {
-   "es": "Este negocio no es rentable.",
-   "en": "This business isn't profitable."
-  },
-  {
-   "es": "Comprar un horno bueno es una inversión.",
-   "en": "Buying a good oven is an investment."
-  }
- ],
- "rule": "*Un gasto* is money that goes out. *Una inversión* is money you expect to bring something back, so calling a cost an investment is a persuasive move.\n\nValue moves with *ganar valor* (gain) and *perder valor* (lose), with no article: *perdió valor*.\n\n*Salir caro* or *salir barato* says how something turns out in the end: *Lo barato sale caro*. *Rentable* means profitable.\n\nEnglish uses verbs (\"it costs\", \"I invest\"). Spanish here often uses a noun after *ser*.",
- "smallPrint": "Teachers call *salir* here a verb of result: it reports how something turns out in the end.",
- "readAndPick": [
-  {
-   "es": "No es un gasto, es una inversión.",
-   "options": [
-    "It's not an investment, it's an expense.",
-    "It's not an expense, it's an investment.",
-    "It's an expense and an investment."
-   ],
-   "answer": 1
-  },
-  {
-   "es": "Lo barato sale caro.",
-   "options": [
-    "Cheap things end up expensive.",
-    "Expensive things end up cheap.",
-    "Cheap things are hard to find."
-   ],
-   "answer": 0
-  },
-  {
-   "es": "La casa ha ganado mucho valor.",
-   "options": [
-    "The house has lost a lot of value.",
-    "The house has gained a lot of value.",
-    "The house will gain a lot of value."
-   ],
-   "answer": 1
-  },
-  {
-   "es": "El carro perdió valor muy rápido.",
-   "options": [
-    "The car gained value quickly.",
-    "The car lost value slowly.",
-    "The car lost value very quickly."
-   ],
-   "answer": 2
-  },
-  {
-   "es": "Este negocio no es rentable.",
-   "options": [
-    "This business isn't profitable.",
-    "This business is profitable.",
-    "This business isn't mine."
-   ],
-   "answer": 0
-  },
-  {
-   "es": "Lo caro a veces sale barato.",
-   "options": [
-    "Expensive things are always cheap.",
-    "Cheap things sometimes end up expensive.",
-    "Expensive things sometimes end up cheap."
-   ],
-   "answer": 2
-  },
-  {
-   "es": "Esa casa ha perdido valor.",
-   "options": [
-    "That house has gained value.",
-    "That house has lost value.",
-    "That house will be worth more."
-   ],
-   "answer": 1
-  },
-  {
-   "es": "Es un gasto, no una inversión.",
-   "options": [
-    "It's an expense, not an investment.",
-    "It's an investment, not an expense.",
-    "It's neither an expense nor an investment."
-   ],
-   "answer": 0
-  }
- ],
- "yourTurn": [
-  {
-   "prompt": "Pick and type the whole sentence: *No es un ___, es una inversión.* (*gasto* or *valor*) It's not an expense, it's an investment.",
-   "answer": "No es un gasto, es una inversión.",
-   "accept": [],
-   "why": "*Gasto* is the word for money spent, set against *inversión*."
-  },
-  {
-   "prompt": "Pick and type the whole sentence: *El carro ___ valor muy rápido.* (*ganó* or *perdió*) The car lost value very quickly.",
-   "answer": "El carro perdió valor muy rápido.",
-   "accept": [],
-   "why": "*Perder valor* is to lose value, and it takes no article."
-  },
-  {
-   "prompt": "Say: Cheap things end up expensive.",
-   "answer": "Lo barato sale caro.",
-   "accept": [],
-   "why": "*Salir caro* says how it turns out in the end."
-  },
-  {
-   "prompt": "Say about a business: This business isn't profitable.",
-   "answer": "Este negocio no es rentable.",
-   "accept": [
-    "El negocio no es rentable."
-   ],
-   "why": "*Rentable* is profitable, and *no* goes before *es*."
-  },
-  {
-   "prompt": "Say: The house has gained a lot of value.",
-   "answer": "La casa ha ganado mucho valor.",
-   "accept": [],
-   "why": "*Ganar valor* is to gain value, and *mucho* comes before it."
-  },
-  {
-   "prompt": "Turn it around: *Lo barato sale caro.* (expensive things end up cheap)",
-   "answer": "Lo caro sale barato.",
-   "accept": [],
-   "why": "Swap *barato* and *caro*."
-  },
-  {
-   "prompt": "Say it gained value instead: *El carro perdió valor.*",
-   "answer": "El carro ganó valor.",
-   "accept": [],
-   "why": "*Ganar valor* is the opposite of *perder valor*."
-  }
- ],
- "pitfalls": [
-  {
-   "wrong": "Es una gasto.",
-   "right": "Es un gasto.",
-   "why": "*Gasto* is masculine, so *un*. *Inversión* is feminine, so *una*."
-  },
-  {
-   "wrong": "Lo barato es caro.",
-   "right": "Lo barato sale caro.",
-   "why": "*Salir* tells how it turns out in the end. *Es* just states it."
-  },
-  {
-   "wrong": "La casa ganó el valor.",
-   "right": "La casa ganó valor.",
-   "why": "There is no article, like \"gained weight\" in English."
-  }
- ],
- "personal": "Think of something you bought that turned out well or badly and say it: *Fue una inversión* or *Salió caro*."
+  "examples": [
+    {
+      "es": "No es un gasto, es una inversión.",
+      "en": "It's not an expense, it's an investment."
+    },
+    {
+      "es": "Lo barato sale caro.",
+      "en": "Cheap things end up expensive."
+    },
+    {
+      "es": "La casa ha ganado mucho valor.",
+      "en": "The house has gained a lot of value."
+    },
+    {
+      "es": "El carro perdió valor muy rápido.",
+      "en": "The car lost value very quickly."
+    },
+    {
+      "es": "Este negocio no es rentable.",
+      "en": "This business isn't profitable."
+    },
+    {
+      "es": "Comprar un horno bueno es una inversión.",
+      "en": "Buying a good oven is an investment."
+    }
+  ],
+  "rule": "*Un gasto* is money that goes out. *Una inversión* is money you expect to bring something back, so calling a cost an investment is a persuasive move.\n\nValue moves with *ganar valor* (gain) and *perder valor* (lose), with no article: *perdió valor*.\n\n*Salir caro* or *salir barato* says how something turns out in the end: *Lo barato sale caro*. *Rentable* means profitable.\n\nEnglish uses verbs (\"it costs\", \"I invest\"). Spanish here often uses a noun after *ser*.",
+  "smallPrint": "Teachers call *salir* here a verb of result: it reports how something turns out in the end.",
+  "readAndPick": [
+    {
+      "es": "No es un gasto, es una inversión.",
+      "options": [
+        "It's not an investment, it's an expense.",
+        "It's not an expense, it's an investment.",
+        "It's an expense and an investment."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Lo barato sale caro.",
+      "options": [
+        "Cheap things end up expensive.",
+        "Expensive things end up cheap.",
+        "Cheap things are hard to find."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La casa ha ganado mucho valor.",
+      "options": [
+        "The house has lost a lot of value.",
+        "The house has gained a lot of value.",
+        "The house will gain a lot of value."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El carro perdió valor muy rápido.",
+      "options": [
+        "The car gained value quickly.",
+        "The car lost value slowly.",
+        "The car lost value very quickly."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Este negocio no es rentable.",
+      "options": [
+        "This business isn't profitable.",
+        "This business is profitable.",
+        "This business isn't mine."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Lo caro a veces sale barato.",
+      "options": [
+        "Expensive things are always cheap.",
+        "Cheap things sometimes end up expensive.",
+        "Expensive things sometimes end up cheap."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Esa casa ha perdido valor.",
+      "options": [
+        "That house has gained value.",
+        "That house has lost value.",
+        "That house will be worth more."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es un gasto, no una inversión.",
+      "options": [
+        "It's an expense, not an investment.",
+        "It's an investment, not an expense.",
+        "It's neither an expense nor an investment."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *No es un ___, es una inversión.* (*gasto* or *valor*) It's not an expense, it's an investment.",
+      "answer": "No es un gasto, es una inversión.",
+      "accept": [],
+      "why": "*Gasto* is the word for money spent, set against *inversión*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *El carro ___ valor muy rápido.* (*ganó* or *perdió*) The car lost value very quickly.",
+      "answer": "El carro perdió valor muy rápido.",
+      "accept": [],
+      "why": "*Perder valor* is to lose value, and it takes no article."
+    },
+    {
+      "prompt": "Say: Cheap things end up expensive.",
+      "answer": "Lo barato sale caro.",
+      "accept": [],
+      "why": "*Salir caro* says how it turns out in the end."
+    },
+    {
+      "prompt": "Say about a business: This business isn't profitable.",
+      "answer": "Este negocio no es rentable.",
+      "accept": [
+        "El negocio no es rentable."
+      ],
+      "why": "*Rentable* is profitable, and *no* goes before *es*."
+    },
+    {
+      "prompt": "Say: The house has gained a lot of value.",
+      "answer": "La casa ha ganado mucho valor.",
+      "accept": [
+        "La casa ganó mucho valor."
+      ],
+      "why": "*Ganar valor* is to gain value, and *mucho* comes before it."
+    },
+    {
+      "prompt": "Turn it around: *Lo barato sale caro.* (expensive things end up cheap)",
+      "answer": "Lo caro sale barato.",
+      "accept": [],
+      "why": "Swap *barato* and *caro*."
+    },
+    {
+      "prompt": "Say it gained value instead: *El carro perdió valor.*",
+      "answer": "El carro ganó valor.",
+      "accept": [],
+      "why": "*Ganar valor* is the opposite of *perder valor*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Es una gasto.",
+      "right": "Es un gasto.",
+      "why": "*Gasto* is masculine, so *un*. *Inversión* is feminine, so *una*."
+    },
+    {
+      "wrong": "Lo barato es caro.",
+      "right": "Lo barato sale caro.",
+      "why": "*Salir* tells how it turns out in the end. *Es* just states it."
+    },
+    {
+      "wrong": "La casa ganó el valor.",
+      "right": "La casa ganó valor.",
+      "why": "There is no article, like \"gained weight\" in English."
+    }
+  ],
+  "personal": "Think of something you bought that turned out well or badly and say it: *Fue una inversión* or *Salió caro*."
 }

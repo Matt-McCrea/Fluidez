@@ -94,8 +94,8 @@
     },
     {
       "id": "t5",
-      "npc": "Lucía: Entiendo. Se la entregamos mañana. ¿Quiere el reembolso del envío?",
-      "npcEn": "Lucía: I understand. We'll deliver it to you tomorrow. Do you want the shipping refunded?",
+      "npc": "Lucía: Entiendo. Entonces le mando la máquina nueva mañana con otro repartidor. ¿Quiere el reembolso del envío?",
+      "npcEn": "Lucía: I understand. Then I will send you the new machine tomorrow with another delivery man. Do you want the shipping refunded?",
       "intent": "Say yes, and that you ask for the refund.",
       "accept": [
         "Sí, pido el reembolso del envío.",
@@ -105,9 +105,9 @@
       "require": [
         {
           "type": "regex",
-          "pattern": "\\bpido\\b",
+          "pattern": "\\b(pido|solicito)\\b",
           "flags": "iu",
-          "label": "ask for it: pido el reembolso"
+          "label": "ask for it: pido (or solicito) el reembolso"
         }
       ],
       "focus": "g:formal-letter-grammar",
@@ -131,6 +131,7 @@
   "requires": [
     "c:aqui-tiene",
     "c:claro-listo",
+    "c:entonces-bueno",
     "c:gracias-de-nada",
     "c:hola-buenos-dias",
     "c:lo-siento-pero-no-puedo",
@@ -140,6 +141,7 @@
     "c:puedo",
     "c:quiero",
     "c:tengo",
+    "g:adjective-agreement",
     "g:cause-result",
     "g:commands-tu",
     "g:commands-usted",
@@ -172,7 +174,6 @@
     "l:correo",
     "l:decir",
     "l:entender",
-    "l:entregar",
     "l:envío",
     "l:estar",
     "l:favor",
@@ -185,8 +186,10 @@
     "l:llegar",
     "l:lucía",
     "l:lunes",
+    "l:mandar",
     "l:mañana",
     "l:máquina",
+    "l:nuevo",
     "l:pasar",
     "l:pedido",
     "l:pedir",
@@ -218,6 +221,7 @@
     "p:me-te-nos-objects",
     "p:no-hasta",
     "p:ocurrir-producirse",
+    "p:otro-no-article",
     "p:position-de",
     "p:possessives-basic",
     "p:prep-questions-basic",

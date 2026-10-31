@@ -1,172 +1,172 @@
 {
- "node": "p:me-permito",
- "hook": {
-  "line": "Tomás's emails now sound like Vale's bank, and this is the reason: Colombian formal writing loves *me permito*, roughly \"I take the liberty of\".",
-  "es": "Me permito informarle que su solicitud fue aprobada.",
-  "en": "I hereby inform you that your application has been approved. (formal)"
- },
- "examples": [
-  {
-   "es": "Me permito informarle que su solicitud fue aprobada.",
-   "en": "I hereby inform you that your application has been approved. (formal)"
+  "node": "p:me-permito",
+  "hook": {
+    "line": "Tomás's emails now sound like Vale's bank, and this is the reason: Colombian formal writing loves *me permito*, roughly \"I take the liberty of\".",
+    "es": "Me permito informarle que su solicitud fue aprobada.",
+    "en": "I hereby inform you that your application has been approved. (formal)"
   },
-  {
-   "es": "En respuesta a su anuncio, me permito presentar mi candidatura al cargo de analista.",
-   "en": "In response to your advertisement, I take the liberty of applying for the post of analyst."
-  },
-  {
-   "es": "Nos permitimos invitarlos a la inauguración del café.",
-   "en": "We take the liberty of inviting you all to the opening of the café."
-  },
-  {
-   "es": "Me permito solicitar una cita con el alcalde.",
-   "en": "I take the liberty of requesting an appointment with the mayor."
-  },
-  {
-   "es": "Permítame presentarle a Vale, nuestra pastelera.",
-   "en": "Allow me to introduce Vale to you, our pastry chef. (formal)"
-  },
-  {
-   "es": "Me permito recordarle que la reunión es el lunes.",
-   "en": "I take the liberty of reminding you that the meeting is on Monday. (formal)"
-  }
- ],
- "rule": "*Me permito* + infinitive is the polite way to say what a letter is doing: informing, requesting, applying. Literally it is \"I allow myself to\", but it is ritual courtesy, not real permission.\n\nEnglish usually just says \"I am writing to inform you\". For a team or a business it becomes *nos permitimos*. The command *permítame* (\"allow me\") works the same way.\n\nUse it once, early, then go plain. Too many and the letter sounds like a bank: *Me permito informarle que…*",
- "smallPrint": "Teachers call this a courtesy formula: it softens the action rather than describing permission.",
- "readAndPick": [
-  {
-   "es": "Me permito informarle que su solicitud fue aprobada.",
-   "options": [
-    "You inform me that my application was approved.",
-    "They let me know my application was approved.",
-    "I hereby inform you that your application was approved."
-   ],
-   "answer": 2
-  },
-  {
-   "es": "Nos permitimos invitarlos a la inauguración.",
-   "options": [
-    "We take the liberty of inviting you all to the opening.",
-    "They take the liberty of inviting us to the opening.",
-    "I invite you to the opening."
-   ],
-   "answer": 0
-  },
-  {
-   "es": "Me permito escribirle de nuevo.",
-   "options": [
-    "You write to me again.",
-    "I take the liberty of writing to you again.",
-    "I allow you to write again."
-   ],
-   "answer": 1
-  },
-  {
-   "es": "Permítame presentarle a Vale.",
-   "options": [
-    "Vale allows me to introduce you.",
-    "Let me tell Vale.",
-    "Allow me to introduce Vale to you."
-   ],
-   "answer": 2
-  },
-  {
-   "es": "Me permito solicitar una cita.",
-   "options": [
-    "I take the liberty of requesting an appointment.",
-    "They requested an appointment from me.",
-    "I allow you to request an appointment."
-   ],
-   "answer": 0
-  },
-  {
-   "es": "Nos permitimos recordarle que la reunión es el lunes.",
-   "options": [
-    "We remind them that the meeting is on Monday.",
-    "We take the liberty of reminding you that the meeting is on Monday.",
-    "I take the liberty of reminding you that the meeting is on Monday."
-   ],
-   "answer": 1
-  },
-  {
-   "es": "Me permito presentar mi candidatura al cargo de analista.",
-   "options": [
-    "The analyst offers me the post.",
-    "I allow the analyst to apply.",
-    "I take the liberty of applying for the post of analyst."
-   ],
-   "answer": 2
-  },
-  {
-   "es": "Nos permitimos presentar una queja.",
-   "options": [
-    "We take the liberty of making a complaint.",
-    "I take the liberty of making a complaint.",
-    "They make a complaint to us."
-   ],
-   "answer": 0
-  }
- ],
- "yourTurn": [
-  {
-   "prompt": "Pick and type the whole sentence: *Me ___ informarle que su solicitud fue aprobada.* (*permito* or *permite*) I hereby inform you (formal) that your application was approved.",
-   "answer": "Me permito informarle que su solicitud fue aprobada.",
-   "accept": [],
-   "why": "It is *I* who takes the liberty, so *permito*."
-  },
-  {
-   "prompt": "Pick and type the whole sentence: *Nos ___ invitarlos a la inauguración.* (*permitimos* or *permito*) We take the liberty of inviting you all to the opening.",
-   "answer": "Nos permitimos invitarlos a la inauguración.",
-   "accept": [],
-   "why": "*We* goes with *nos permitimos*."
-  },
-  {
-   "prompt": "Say, in a letter: I take the liberty of requesting an appointment.",
-   "answer": "Me permito solicitar una cita.",
-   "accept": [],
-   "why": "*Me permito* + infinitive: *solicitar*."
-  },
-  {
-   "prompt": "Say, for your team: We take the liberty of reminding you (formal) that the meeting is on Monday.",
-   "answer": "Nos permitimos recordarle que la reunión es el lunes.",
-   "accept": [],
-   "why": "*Nos permitimos* + *recordarle* for one person you address as *usted*."
-  },
-  {
-   "prompt": "Say: Allow me to introduce Vale to you (formal).",
-   "answer": "Permítame presentarle a Vale.",
-   "accept": [],
-   "why": "*Permítame* is the polite command, and *a* goes before the person."
-  },
-  {
-   "prompt": "Make it about *we*: *Me permito informarle que su solicitud fue aprobada.*",
-   "answer": "Nos permitimos informarle que su solicitud fue aprobada.",
-   "accept": [],
-   "why": "*I* becomes *we*: *nos permitimos*."
-  },
-  {
-   "prompt": "Make it about *I*: *Nos permitimos solicitar una cita.*",
-   "answer": "Me permito solicitar una cita.",
-   "accept": [],
-   "why": "*We* becomes *I*: *me permito*."
-  }
- ],
- "pitfalls": [
-  {
-   "wrong": "Me permito a informarle que su solicitud fue aprobada.",
-   "right": "Me permito informarle que su solicitud fue aprobada.",
-   "why": "No *a* between *permito* and the infinitive."
-  },
-  {
-   "wrong": "Permito informarle que su solicitud fue aprobada.",
-   "right": "Me permito informarle que su solicitud fue aprobada.",
-   "why": "Without *me* it means \"I allow\", which is not the polite formula."
-  },
-  {
-   "wrong": "Me permito informarte que su solicitud fue aprobada.",
-   "right": "Me permito informarle que su solicitud fue aprobada.",
-   "why": "*Me permito* is formal, so it goes with *le* (*usted*), not *te*."
-  }
- ],
- "personal": "Write one polite sentence to someone, real or imagined, with *Me permito…*, perhaps to ask for something."
+  "examples": [
+    {
+      "es": "Me permito informarle que su solicitud fue aprobada.",
+      "en": "I hereby inform you that your application has been approved. (formal)"
+    },
+    {
+      "es": "En respuesta a su anuncio, me permito presentar mi candidatura al cargo de analista.",
+      "en": "In response to your advertisement, I take the liberty of applying for the post of analyst."
+    },
+    {
+      "es": "Nos permitimos invitarlos a la inauguración del café.",
+      "en": "We take the liberty of inviting you all to the opening of the café."
+    },
+    {
+      "es": "Me permito solicitar una cita con el alcalde.",
+      "en": "I take the liberty of requesting an appointment with the mayor."
+    },
+    {
+      "es": "Permítame presentarle a Vale, nuestra pastelera.",
+      "en": "Allow me to introduce Vale, our pastry chef, to you. (formal)"
+    },
+    {
+      "es": "Me permito recordarle que la reunión es el lunes.",
+      "en": "I take the liberty of reminding you that the meeting is on Monday. (formal)"
+    }
+  ],
+  "rule": "*Me permito* + infinitive is the polite way to say what a letter is doing: informing, requesting, applying. Literally it is \"I allow myself to\", but it is ritual courtesy, not real permission.\n\nEnglish usually just says \"I am writing to inform you\". For a team or a business it becomes *nos permitimos*. The command *permítame* (\"allow me\") works the same way.\n\nUse it once, early, then go plain. Too many and the letter sounds like a bank: *Me permito informarle que…*",
+  "smallPrint": "Teachers call this a courtesy formula: it softens the action rather than describing permission.",
+  "readAndPick": [
+    {
+      "es": "Me permito informarle que su solicitud fue aprobada.",
+      "options": [
+        "You inform me that my application was approved.",
+        "They let me know my application was approved.",
+        "I hereby inform you that your application was approved."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Nos permitimos invitarlos a la inauguración.",
+      "options": [
+        "We take the liberty of inviting you all to the opening.",
+        "They take the liberty of inviting us to the opening.",
+        "I invite you to the opening."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me permito escribirle de nuevo.",
+      "options": [
+        "You write to me again.",
+        "I take the liberty of writing to you again.",
+        "I allow you to write again."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Permítame presentarle a Vale.",
+      "options": [
+        "Vale allows me to introduce you.",
+        "Let me tell Vale.",
+        "Allow me to introduce Vale to you."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Me permito solicitar una cita.",
+      "options": [
+        "I take the liberty of requesting an appointment.",
+        "They requested an appointment from me.",
+        "I allow you to request an appointment."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nos permitimos recordarle que la reunión es el lunes.",
+      "options": [
+        "We remind them that the meeting is on Monday.",
+        "We take the liberty of reminding you that the meeting is on Monday.",
+        "I take the liberty of reminding you that the meeting is on Monday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me permito presentar mi candidatura al cargo de analista.",
+      "options": [
+        "The analyst offers me the post.",
+        "I allow the analyst to apply.",
+        "I take the liberty of applying for the post of analyst."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Nos permitimos presentar una queja.",
+      "options": [
+        "We take the liberty of making a complaint.",
+        "I take the liberty of making a complaint.",
+        "They make a complaint to us."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Me ___ informarle que su solicitud fue aprobada.* (*permito* or *permite*) I hereby inform you (formal) that your application was approved.",
+      "answer": "Me permito informarle que su solicitud fue aprobada.",
+      "accept": [],
+      "why": "It is *I* who takes the liberty, so *permito*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Nos ___ invitarlos a la inauguración.* (*permitimos* or *permito*) We take the liberty of inviting you all to the opening.",
+      "answer": "Nos permitimos invitarlos a la inauguración.",
+      "accept": [],
+      "why": "*We* goes with *nos permitimos*."
+    },
+    {
+      "prompt": "Say, in a letter: I take the liberty of requesting an appointment.",
+      "answer": "Me permito solicitar una cita.",
+      "accept": [],
+      "why": "*Me permito* + infinitive: *solicitar*."
+    },
+    {
+      "prompt": "Say, for your team: We take the liberty of reminding you (formal) that the meeting is on Monday.",
+      "answer": "Nos permitimos recordarle que la reunión es el lunes.",
+      "accept": [],
+      "why": "*Nos permitimos* + *recordarle* for one person you address as *usted*."
+    },
+    {
+      "prompt": "Say: Allow me to introduce Vale to you (formal).",
+      "answer": "Permítame presentarle a Vale.",
+      "accept": [],
+      "why": "*Permítame* is the polite command, and *a* goes before the person."
+    },
+    {
+      "prompt": "Make it about *we*: *Me permito informarle que su solicitud fue aprobada.*",
+      "answer": "Nos permitimos informarle que su solicitud fue aprobada.",
+      "accept": [],
+      "why": "*I* becomes *we*: *nos permitimos*."
+    },
+    {
+      "prompt": "Make it about *I*: *Nos permitimos solicitar una cita.*",
+      "answer": "Me permito solicitar una cita.",
+      "accept": [],
+      "why": "*We* becomes *I*: *me permito*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Me permito a informarle que su solicitud fue aprobada.",
+      "right": "Me permito informarle que su solicitud fue aprobada.",
+      "why": "No *a* between *permito* and the infinitive."
+    },
+    {
+      "wrong": "Permito informarle que su solicitud fue aprobada.",
+      "right": "Me permito informarle que su solicitud fue aprobada.",
+      "why": "Without *me* it means \"I allow\", which is not the polite formula."
+    },
+    {
+      "wrong": "Me permito informarte que su solicitud fue aprobada.",
+      "right": "Me permito informarle que su solicitud fue aprobada.",
+      "why": "*Me permito* is formal, so it goes with *le* (*usted*), not *te*."
+    }
+  ],
+  "personal": "Write one polite sentence to someone, real or imagined, with *Me permito…*, perhaps to ask for something."
 }

@@ -123,7 +123,9 @@
     {
       "prompt": "Say: I'm bad at cooking.",
       "answer": "Se me da mal cocinar.",
-      "accept": [],
+      "accept": [
+        "Cocinar se me da mal."
+      ],
       "why": "Swap *bien* for *mal*."
     },
     {
@@ -158,9 +160,9 @@
       "why": "Almost. An infinitive counts as one thing, so *da*."
     },
     {
-      "wrong": "Yo doy bien los números.",
-      "right": "Se me dan bien los números.",
-      "why": "Almost. The skill is the subject, so you need *se me dan*."
+      "wrong": "Me da bien cocinar.",
+      "right": "Se me da bien cocinar.",
+      "why": "Almost. The *se* is part of the phrase. Without it, *me da* just means \"gives me\"."
     },
     {
       "wrong": "Se me da bien los números.",

@@ -147,7 +147,9 @@
     {
       "prompt": "I ask you all to arrive on time.",
       "answer": "Les ruego que lleguen puntuales.",
-      "accept": [],
+      "accept": [
+        "Les ruego que lleguen a tiempo."
+      ],
       "why": "*Les ruego que* plus the subjunctive *lleguen*."
     }
   ],
@@ -163,9 +165,9 @@
       "why": "Almost. Spanish says *ruego que* with no *para*."
     },
     {
-      "wrong": "Los ruego que me disculpen.",
-      "right": "Les ruego que me disculpen.",
-      "why": "Almost. You ask *to* them, so the small word is *les*, not *los*."
+      "wrong": "Le ruego enviarme la factura.",
+      "right": "Le ruego que me envíe la factura.",
+      "why": "Almost. English says \"ask you to send\", but when someone else acts, Spanish needs *que* plus *envíe*."
     }
   ],
   "personal": "Think of someone you would have to write to very formally. Write one request to them: *Le ruego que…*."

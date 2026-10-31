@@ -1,172 +1,172 @@
 {
- "node": "p:entregar-recoger",
- "hook": {
-  "line": "Every transaction has two directions: someone hands something over and someone picks it up. Vale sends out cakes all week, and in Bogotá a delivery is a *domicilio*.",
-  "es": "Le entregamos el pedido a domicilio.",
-  "en": "We deliver your order to your door. (formal)"
- },
- "examples": [
-  {
-   "es": "Paso a recoger los documentos el viernes.",
-   "en": "I'll come by to pick up the documents on Friday."
+  "node": "p:entregar-recoger",
+  "hook": {
+    "line": "Every transaction has two directions: someone hands something over and someone picks it up. Vale sends out cakes all week, and in Bogotá a delivery is a *domicilio*.",
+    "es": "Le entregamos el pedido a domicilio.",
+    "en": "We deliver your (formal) order to your door."
   },
-  {
-   "es": "Le entregamos el pedido a domicilio.",
-   "en": "We deliver your order to your door. (formal)"
-  },
-  {
-   "es": "Recojo a los niños a las cuatro.",
-   "en": "I pick the children up at four."
-  },
-  {
-   "es": "Ya le entregué las llaves al dueño.",
-   "en": "I've already handed the keys over to the owner."
-  },
-  {
-   "es": "El domiciliario entregó el pedido a las ocho.",
-   "en": "The delivery rider handed over the order at eight."
-  },
-  {
-   "es": "Mariana recoge los documentos mañana.",
-   "en": "Mariana picks up the documents tomorrow."
-  }
- ],
- "rule": "*Entregar* is to hand over or deliver. The thing is the object, and who receives it comes with *le* or *a*: *Le entregué las llaves al dueño*.\n\n*Recoger* goes the other way: to pick up, for things (*los documentos*) or people (*a los niños*, with *a* before the person).\n\n*Paso a recoger* means \"I'll drop by to pick up\".\n\n*A domicilio* means to your door. In Colombia *un domicilio* is a delivery and *el domiciliario* is the rider.",
- "smallPrint": "Teachers call the *a* before *los niños* the personal *a*: it marks a person as the object.",
- "readAndPick": [
-  {
-   "es": "Paso a recoger los documentos el viernes.",
-   "options": [
-    "I'll deliver the documents on Friday.",
-    "I'll hand the documents to you on Friday.",
-    "I'll come by to pick up the documents on Friday."
-   ],
-   "answer": 2
-  },
-  {
-   "es": "Le entregamos el pedido a domicilio.",
-   "options": [
-    "We pick up your order at your door.",
-    "We deliver your order to your door.",
-    "We order from your door."
-   ],
-   "answer": 1
-  },
-  {
-   "es": "Recojo a los niños a las cuatro.",
-   "options": [
-    "I pick the children up at four.",
-    "I take the children home at four.",
-    "The children pick me up at four."
-   ],
-   "answer": 0
-  },
-  {
-   "es": "Ya le entregué las llaves al dueño.",
-   "options": [
-    "I already picked up the keys from the owner.",
-    "The owner already handed me the keys.",
-    "I already handed the keys over to the owner."
-   ],
-   "answer": 2
-  },
-  {
-   "es": "¿Dónde puedo recoger el pedido?",
-   "options": [
-    "Where can I deliver the order?",
-    "Where can I pick up the order?",
-    "Where can I place the order?"
-   ],
-   "answer": 1
-  },
-  {
-   "es": "El domiciliario entregó el pedido a las ocho.",
-   "options": [
-    "The rider handed over the order at eight.",
-    "The rider picked up the order at eight.",
-    "The rider will hand over the order at eight."
-   ],
-   "answer": 0
-  },
-  {
-   "es": "Vale recoge los pasteles hoy.",
-   "options": [
-    "Vale delivers the cakes today.",
-    "Vale bakes the cakes today.",
-    "Vale picks up the cakes today."
-   ],
-   "answer": 2
-  },
-  {
-   "es": "Hacemos entregas a domicilio.",
-   "options": [
-    "We make deliveries to your door.",
-    "We make deliveries in the shop.",
-    "We pick things up at your home."
-   ],
-   "answer": 0
-  }
- ],
- "yourTurn": [
-  {
-   "prompt": "Pick and type the whole sentence: *Paso a ___ los documentos el viernes.* (*recoger* or *entregar*) I'll come by to pick up the documents on Friday.",
-   "answer": "Paso a recoger los documentos el viernes.",
-   "accept": [],
-   "why": "You come by to collect them, so *recoger*."
-  },
-  {
-   "prompt": "Pick and type the whole sentence: *Le ___ el pedido a domicilio.* (*entregamos* or *recogemos*) We deliver your order to your door.",
-   "answer": "Le entregamos el pedido a domicilio.",
-   "accept": [],
-   "why": "Handing it over to the customer is *entregar*."
-  },
-  {
-   "prompt": "Say: I pick the children up at four.",
-   "answer": "Recojo a los niños a las cuatro.",
-   "accept": [],
-   "why": "*Recoger* takes *a* before people: *a los niños*."
-  },
-  {
-   "prompt": "Say: I've already handed the keys over to the owner.",
-   "answer": "Ya le entregué las llaves al dueño.",
-   "accept": [],
-   "why": "The person who receives it comes with *le* and *al*."
-  },
-  {
-   "prompt": "Say: The delivery rider handed over the order at eight.",
-   "answer": "El domiciliario entregó el pedido a las ocho.",
-   "accept": [],
-   "why": "*Entregó* is the *he* or *she* form in the past."
-  },
-  {
-   "prompt": "Make it about *we*: *Recojo a los niños a las cuatro.*",
-   "answer": "Recogemos a los niños a las cuatro.",
-   "accept": [],
-   "why": "*We* ends in *-emos*."
-  },
-  {
-   "prompt": "Turn it around so you hand it over: *Paso a recoger los documentos el viernes.*",
-   "answer": "Paso a entregar los documentos el viernes.",
-   "accept": [],
-   "why": "*Entregar* is the opposite direction of *recoger*."
-  }
- ],
- "pitfalls": [
-  {
-   "wrong": "Recojo los niños a las cuatro.",
-   "right": "Recojo a los niños a las cuatro.",
-   "why": "A person as the object needs *a*, so *a los niños*."
-  },
-  {
-   "wrong": "Ya entregué las llaves el dueño.",
-   "right": "Ya le entregué las llaves al dueño.",
-   "why": "Who receives it needs *a* (here *al*), and *le* often comes before the verb."
-  },
-  {
-   "wrong": "Paso recoger los documentos.",
-   "right": "Paso a recoger los documentos.",
-   "why": "*Pasar* needs *a* before the verb that says why you drop by."
-  }
- ],
- "personal": "Think of something you have to pick up or hand over this week and say it: *Tengo que recoger…* or *Voy a entregar…*"
+  "examples": [
+    {
+      "es": "Paso a recoger los documentos el viernes.",
+      "en": "I'll come by to pick up the documents on Friday."
+    },
+    {
+      "es": "Le entregamos el pedido a domicilio.",
+      "en": "We deliver your (formal) order to your door."
+    },
+    {
+      "es": "Recojo a los niños a las cuatro.",
+      "en": "I pick the children up at four."
+    },
+    {
+      "es": "Ya le entregué las llaves al dueño.",
+      "en": "I already handed the keys over to the owner."
+    },
+    {
+      "es": "El domiciliario entregó el pedido a las ocho.",
+      "en": "The delivery rider handed over the order at eight."
+    },
+    {
+      "es": "Mariana recoge los documentos mañana.",
+      "en": "Mariana picks up the documents tomorrow."
+    }
+  ],
+  "rule": "*Entregar* is to hand over or deliver. The thing is the object, and who receives it comes with *le* or *a*: *Le entregué las llaves al dueño*.\n\n*Recoger* goes the other way: to pick up, for things (*los documentos*) or people (*a los niños*, with *a* before the person).\n\n*Paso a recoger* means \"I'll drop by to pick up\".\n\n*A domicilio* means to your door. In Colombia *un domicilio* is a delivery and *el domiciliario* is the rider.",
+  "smallPrint": "Teachers call the *a* before *los niños* the personal *a*: it marks a person as the object.",
+  "readAndPick": [
+    {
+      "es": "Paso a recoger los documentos el viernes.",
+      "options": [
+        "I'll deliver the documents on Friday.",
+        "I'll hand the documents to you on Friday.",
+        "I'll come by to pick up the documents on Friday."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Le entregamos el pedido a domicilio.",
+      "options": [
+        "We pick up your order at your door.",
+        "We deliver your order to your door.",
+        "We order from your door."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Recojo a los niños a las cuatro.",
+      "options": [
+        "I pick the children up at four.",
+        "I take the children home at four.",
+        "The children pick me up at four."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Ya le entregué las llaves al dueño.",
+      "options": [
+        "I already picked up the keys from the owner.",
+        "The owner already handed me the keys.",
+        "I already handed the keys over to the owner."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Dónde puedo recoger el pedido?",
+      "options": [
+        "Where can I deliver the order?",
+        "Where can I pick up the order?",
+        "Where can I place the order?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El domiciliario entregó el pedido a las ocho.",
+      "options": [
+        "The rider handed over the order at eight.",
+        "The rider picked up the order at eight.",
+        "The rider will hand over the order at eight."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale recoge los pasteles hoy.",
+      "options": [
+        "Vale delivers the cakes today.",
+        "Vale bakes the cakes today.",
+        "Vale picks up the cakes today."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Hacemos entregas a domicilio.",
+      "options": [
+        "We make deliveries to your door.",
+        "We make deliveries in the shop.",
+        "We pick things up at your home."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Paso a ___ los documentos el viernes.* (*recoger* or *entregar*) I'll come by to pick up the documents on Friday.",
+      "answer": "Paso a recoger los documentos el viernes.",
+      "accept": [],
+      "why": "You come by to collect them, so *recoger*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Le ___ el pedido a domicilio.* (*entregamos* or *recogemos*) We deliver your order to your door.",
+      "answer": "Le entregamos el pedido a domicilio.",
+      "accept": [],
+      "why": "Handing it over to the customer is *entregar*."
+    },
+    {
+      "prompt": "Say: I pick the children up at four.",
+      "answer": "Recojo a los niños a las cuatro.",
+      "accept": [],
+      "why": "*Recoger* takes *a* before people: *a los niños*."
+    },
+    {
+      "prompt": "Say: I already handed the keys over to the owner.",
+      "answer": "Ya le entregué las llaves al dueño.",
+      "accept": [],
+      "why": "The person who receives it comes with *le* and *al*."
+    },
+    {
+      "prompt": "Say: The delivery rider handed over the order at eight.",
+      "answer": "El domiciliario entregó el pedido a las ocho.",
+      "accept": [],
+      "why": "*Entregó* is the *he* or *she* form in the past."
+    },
+    {
+      "prompt": "Make it about *we*: *Recojo a los niños a las cuatro.*",
+      "answer": "Recogemos a los niños a las cuatro.",
+      "accept": [],
+      "why": "*We* ends in *-emos*."
+    },
+    {
+      "prompt": "Turn it around so you hand it over: *Paso a recoger los documentos el viernes.*",
+      "answer": "Paso a entregar los documentos el viernes.",
+      "accept": [],
+      "why": "*Entregar* is the opposite direction of *recoger*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Recojo los niños a las cuatro.",
+      "right": "Recojo a los niños a las cuatro.",
+      "why": "A person as the object needs *a*, so *a los niños*."
+    },
+    {
+      "wrong": "Ya entregué las llaves para el dueño.",
+      "right": "Ya le entregué las llaves al dueño.",
+      "why": "English \"to\" tempts *para*, but the person who receives something takes *a* (here *al*), usually with *le* too."
+    },
+    {
+      "wrong": "Paso recoger los documentos.",
+      "right": "Paso a recoger los documentos.",
+      "why": "*Pasar* needs *a* before the verb that says why you drop by."
+    }
+  ],
+  "personal": "Think of something you have to pick up or hand over this week and say it: *Tengo que recoger…* or *Voy a entregar…*"
 }

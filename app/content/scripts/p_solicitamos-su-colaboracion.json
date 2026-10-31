@@ -31,7 +31,7 @@
       "en": "We ask for your help in not making noise after ten."
     }
   ],
-  "rule": "*Solicitamos su colaboración para…* is how an organisation asks for help: a bank, a school, a building manager.\n\n*Solicitamos* is \"we\" (the organisation). *Solicito* is \"I\", one person writing.\n*Su* means \"your\", formal.\n\nThen *para* and an infinitive says what you need: *para llenar el formulario*.\n\nIt is the official cousin of *¿me echas una mano?*, which is for friends.",
+  "rule": "*Solicitamos su colaboración para…* is how an organisation asks for help: a bank, a school, a building manager.\n\n*Solicitamos* is \"we\" (the organisation). *Solicito* is \"I\", one person writing.\n*Su* means \"your\", formal.\n\nThen *para* and an infinitive says what you need: *para llenar el formulario*.\n\nIt is the official cousin of *¿me ayudas?*, which is for friends.",
   "smallPrint": "Teachers call this an institutional register formula. *Colaboración* here just means \"help\", not \"collaboration\".",
   "readAndPick": [
     {
@@ -89,11 +89,11 @@
       "answer": 0
     },
     {
-      "es": "¿Me echas una mano con la encuesta?",
+      "es": "¿Me ayudas con la encuesta?",
       "options": [
         "We ask for your help with the survey.",
         "I ask for your help with the survey, as an official.",
-        "Can you give me a hand with the survey? (to a friend)"
+        "Can you help me with the survey? (to a friend)"
       ],
       "answer": 2
     },
@@ -164,8 +164,8 @@
     },
     {
       "wrong": "Vale, solicito su colaboración para mover la mesa.",
-      "right": "Vale, ¿me echas una mano con la mesa?",
-      "why": "Almost. That formula is stiff for a friend; use *¿me echas una mano?*."
+      "right": "Vale, ¿me ayudas con la mesa?",
+      "why": "Almost. That formula is far too stiff for a friend; just say *¿me ayudas?*."
     }
   ],
   "personal": "Imagine you run a building or a club and need people's help with one thing. Write the notice: *Solicitamos su colaboración para…*."

@@ -122,13 +122,17 @@
     {
       "prompt": "Say: We're interested in investing.",
       "answer": "Estamos interesados en invertir.",
-      "accept": [],
+      "accept": [
+        "Estamos interesadas en invertir."
+      ],
       "why": "After *en* an infinitive is fine, and *interesados* is plural."
     },
     {
       "prompt": "Say: They're interested in us taking part.",
       "answer": "Están interesados en que participemos.",
-      "accept": [],
+      "accept": [
+        "Están interesadas en que participemos."
+      ],
       "why": "A different person acts, so *que* plus *participemos*."
     },
     {
@@ -159,7 +163,7 @@
     {
       "wrong": "Soy interesada en el cargo.",
       "right": "Estoy interesada en el cargo.",
-      "why": "Almost. Being interested is a state, so *estar*."
+      "why": "Almost. Being interested is a state, so *estar*. *Ser interesado* means \"self-serving\"."
     },
     {
       "wrong": "Estamos interesados en que participamos.",

@@ -40,7 +40,7 @@
   {
     "id": "u49-0003",
     "es": "Estimados señores de Altamira:",
-    "en": "Dear Sirs of Altamira,",
+    "en": "Dear Sirs at Altamira,",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -59,13 +59,14 @@
   },
   {
     "id": "u49-0004",
-    "es": "Estimada abogada Uribe:",
-    "en": "Dear Ms Uribe,",
+    "es": "Estimada doctora Uribe:",
+    "en": "Dear Dr Uribe,",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
-      "l:abogado",
+      "g:present-ar",
+      "l:doctorar",
       "l:estimado",
       "p:estimado-colon"
     ],
@@ -118,7 +119,7 @@
   {
     "id": "u49-0007",
     "es": "Me dirijo a ustedes para presentar mi hoja de vida.",
-    "en": "I am writing to you to submit my CV.",
+    "en": "I am writing to you all to submit my CV.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -176,7 +177,7 @@
   {
     "id": "u49-0009",
     "es": "Les escribo con el fin de preguntar por el puesto de contador.",
-    "en": "I am writing to you in order to ask about the accountant position.",
+    "en": "I am writing to you all in order to ask about the accountant position.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -230,7 +231,7 @@
   {
     "id": "u49-0011",
     "es": "Les escribo para pedirles una entrevista.",
-    "en": "I am writing to ask you for an interview.",
+    "en": "I am writing to ask you all for an interview.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -256,20 +257,19 @@
   },
   {
     "id": "u49-0012",
-    "es": "Permítame presentar mi candidatura al cargo de gerente.",
-    "en": "Allow me to put myself forward for the post of manager. (formal)",
+    "es": "Me permito presentar mi candidatura al cargo de gerente.",
+    "en": "I take the liberty of putting myself forward for the post of manager.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:commands-usted",
-      "g:commands-with-pronouns",
       "g:gender-articles",
+      "g:present-er-ir",
       "l:candidatura",
       "l:cargo",
       "l:gerente",
       "l:permitir",
       "l:presentar",
-      "p:dejame-que-te-ayude",
+      "p:lo-mas-recomendable",
       "p:me-permito",
       "p:me-te-nos-objects",
       "p:permitir-inf",
@@ -314,16 +314,15 @@
   },
   {
     "id": "u49-0014",
-    "es": "Permítannos informarles que el cargo ya fue ocupado.",
-    "en": "Allow us to inform you that the post has already been filled.",
+    "es": "Nos permitimos informarles que el cargo ya fue ocupado.",
+    "en": "We hereby inform you all that the post has already been filled.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:commands-usted",
-      "g:commands-with-pronouns",
       "g:gender-articles",
       "g:indirect-objects",
       "g:object-pronoun-position",
+      "g:present-er-ir",
       "g:preterite-ser-ir-hacer",
       "g:ser-identity",
       "g:that-clauses",
@@ -332,7 +331,7 @@
       "l:ocupado",
       "l:permitir",
       "l:ser",
-      "p:dejame-que-te-ayude",
+      "p:lo-mas-recomendable",
       "p:me-permito",
       "p:me-te-nos-objects",
       "p:permitir-inf"
@@ -1161,8 +1160,8 @@
   },
   {
     "id": "u49-0046",
-    "es": "Se me da fatal escribir una carta sin errores.",
-    "en": "I am terrible at writing a letter without mistakes.",
+    "es": "Se me da muy mal escribir una carta sin errores.",
+    "en": "I am very bad at writing a letter without mistakes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1173,10 +1172,13 @@
       "l:darse",
       "l:error",
       "l:escribir",
-      "l:fatal",
+      "l:mal",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:con-sin",
       "p:darsele-bien",
-      "p:darsele-bien-mal"
+      "p:darsele-bien-mal",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "p:darsele-bien-mal"
@@ -1788,13 +1790,13 @@
   },
   {
     "id": "u49-0072",
-    "es": "Atentamente, Tomás Rosales.",
-    "en": "Yours sincerely, Tomás Rosales.",
+    "es": "Cordialmente, Valentina Ospina.",
+    "en": "Kind regards, Valentina Ospina.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:atentamente",
-      "l:atentamente"
+      "g:adverbs-mente",
+      "l:cordialmente"
     ],
     "targets": [],
     "kind": "statement",
@@ -2012,7 +2014,7 @@
   {
     "id": "u49-0081",
     "es": "Me dirijo a ustedes para presentar una queja formal.",
-    "en": "I am writing to you to make a formal complaint.",
+    "en": "I am writing to you all to make a formal complaint.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2130,7 +2132,7 @@
   {
     "id": "u49-0085",
     "es": "Les escribo para reclamar un reembolso.",
-    "en": "I am writing to you to claim a refund.",
+    "en": "I am writing to you all to claim a refund.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2157,7 +2159,7 @@
   {
     "id": "u49-0086",
     "es": "Les escribo con motivo de la demolición de la casa vecina.",
-    "en": "I am writing to you regarding the demolition of the house next door.",
+    "en": "I am writing to you all regarding the demolition of the house next door.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2472,18 +2474,18 @@
   },
   {
     "id": "u49-0098",
-    "es": "El horno quedó fuera de funcionamiento después de la lluvia.",
-    "en": "The oven was left out of action after the rain.",
+    "es": "El horno quedó fuera de servicio después de la lluvia.",
+    "en": "The oven was left out of order after the rain.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
       "l:después",
-      "l:funcionamiento",
       "l:horno",
       "l:lluvia",
       "l:quedar",
+      "l:servicio",
       "p:cerca-de",
       "p:fuera-de-servicio",
       "p:position-de",
@@ -2551,17 +2553,17 @@
   },
   {
     "id": "u49-0101",
-    "es": "Tengo la pantalla rota desde que me cayó el celular.",
-    "en": "My screen has been broken since my phone fell.",
+    "es": "Tengo la pantalla rota desde que se me cayó el celular.",
+    "en": "My screen has been broken since I dropped my phone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tengo",
       "g:gender-articles",
-      "g:parecer-quedar",
       "g:preterite-spelling-stem",
+      "g:se-accidental",
       "g:yo-irregular",
-      "l:caer",
+      "l:caerse",
       "l:celular",
       "l:pantalla",
       "l:romper",
@@ -2689,8 +2691,8 @@
   },
   {
     "id": "u49-0106",
-    "es": "Por todo lo anterior, exijo el dinero de vuelta.",
-    "en": "For all the above reasons, I demand my money back.",
+    "es": "Por todo lo anterior, exijo la devolución de mi dinero.",
+    "en": "For all the above reasons, I demand the return of my money.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2699,10 +2701,11 @@
       "g:por-para-1",
       "g:yo-irregular",
       "l:anterior",
+      "l:devolución",
       "l:dinero",
       "l:exigir",
-      "l:vuelta",
-      "p:por-todo-lo-anterior-solicito"
+      "p:por-todo-lo-anterior-solicito",
+      "p:possessives-basic"
     ],
     "targets": [
       "p:por-todo-lo-anterior-solicito"
@@ -2714,23 +2717,27 @@
   },
   {
     "id": "u49-0107",
-    "es": "Por todo lo anterior, exijo que arreglen la pared.",
-    "en": "For all the above reasons, I demand that they fix the wall.",
+    "es": "Por todo lo anterior, les pido que arreglen la pared esta semana.",
+    "en": "For all the above reasons, I ask you all to fix the wall this week.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:indirect-objects",
       "g:lo-adjective",
       "g:por-para-1",
+      "g:stem-e-i",
       "g:subj-influence",
       "g:subj-wanting",
       "g:that-clauses",
-      "g:yo-irregular",
       "l:anterior",
       "l:arreglar",
-      "l:exigir",
       "l:pared",
-      "p:por-todo-lo-anterior-solicito"
+      "l:pedir",
+      "l:semana",
+      "p:demonstratives-basic",
+      "p:por-todo-lo-anterior-solicito",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "p:por-todo-lo-anterior-solicito"
@@ -2770,8 +2777,8 @@
   },
   {
     "id": "u49-0109",
-    "es": "Por todo lo dicho, exigimos una respuesta antes del viernes.",
-    "en": "For all that has been said, we demand a reply before Friday.",
+    "es": "Por todo lo dicho, pedimos una reunión con el alcalde antes del viernes.",
+    "en": "For all that has been said, we ask for a meeting with the mayor before Friday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2779,10 +2786,11 @@
       "g:lo-adjective",
       "g:por-para-1",
       "g:present-er-ir",
+      "l:alcalde",
       "l:antes",
       "l:decir",
-      "l:exigir",
-      "l:respuesta",
+      "l:pedir",
+      "l:reunión",
       "l:viernes",
       "p:por-todo-lo-anterior-solicito"
     ],
@@ -2796,8 +2804,8 @@
   },
   {
     "id": "u49-0110",
-    "es": "Por todo lo mencionado, exijo un reembolso completo.",
-    "en": "For all the reasons mentioned, I demand a full refund.",
+    "es": "Por todo lo mencionado, reclamo un reembolso completo.",
+    "en": "For all the reasons mentioned, I claim a full refund.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2805,10 +2813,9 @@
       "g:lo-adjective",
       "g:por-para-1",
       "g:present-ar",
-      "g:yo-irregular",
       "l:completar",
-      "l:exigir",
       "l:mencionar",
+      "l:reclamo",
       "l:reembolso",
       "p:por-todo-lo-anterior-solicito"
     ],
@@ -2879,24 +2886,26 @@
   },
   {
     "id": "u49-0113",
-    "es": "Por todo lo anterior, exijo que me expliquen el cobro.",
-    "en": "For all the above reasons, I demand that you explain the charge to me.",
+    "es": "Por todo lo anterior, les pido que me expliquen el cobro.",
+    "en": "For all the above reasons, I ask you all to explain the charge to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:indirect-objects",
       "g:lo-adjective",
       "g:por-para-1",
+      "g:stem-e-i",
       "g:subj-influence",
       "g:subj-wanting",
       "g:that-clauses",
-      "g:yo-irregular",
       "l:anterior",
       "l:cobro",
-      "l:exigir",
       "l:explicar",
+      "l:pedir",
       "p:me-te-nos-objects",
-      "p:por-todo-lo-anterior-solicito"
+      "p:por-todo-lo-anterior-solicito",
+      "p:preguntar-pedir"
     ],
     "targets": [
       "l:cobro",
@@ -2934,15 +2943,15 @@
   },
   {
     "id": "u49-0115",
-    "es": "Por todo lo anterior, hemos decidido hablar con un abogado.",
-    "en": "For all the above reasons, we have decided to talk to a lawyer.",
+    "es": "Por todo lo anterior, decidimos hablar con un abogado.",
+    "en": "For all the above reasons, we decided to talk to a lawyer.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:lo-adjective",
-      "g:perfecto-experience",
       "g:por-para-1",
+      "g:present-er-ir",
       "l:abogado",
       "l:anterior",
       "l:decidir",
@@ -3128,7 +3137,7 @@
   {
     "id": "u49-0122",
     "es": "Les ruego que atiendan mi reclamo cuanto antes.",
-    "en": "I ask you to deal with my complaint as soon as possible.",
+    "en": "I ask you all to deal with my complaint as soon as possible.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3214,7 +3223,7 @@
   {
     "id": "u49-0125",
     "es": "Les ruego que no derriben la casa antes de la inspección.",
-    "en": "I ask you not to knock the house down before the inspection.",
+    "en": "I ask you all not to knock the house down before the inspection.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3242,7 +3251,7 @@
   {
     "id": "u49-0126",
     "es": "Les ruego que me indiquen a quién debo dirigirme.",
-    "en": "I ask you to tell me whom I should address myself to.",
+    "en": "I ask you all to tell me whom I should address.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3488,7 +3497,7 @@
   },
   {
     "id": "u49-0135",
-    "es": "Rogué que me devolvieran el dinero, pero no hubo caso.",
+    "es": "Rogué que me devolvieran el dinero, pero no hubo forma.",
     "en": "I begged them to give me my money back, but it was no use.",
     "accept": [],
     "acceptEn": [],
@@ -3496,12 +3505,13 @@
       "g:gender-articles",
       "g:imperfect-states",
       "g:imperfect-subj",
+      "g:present-ar",
       "g:preterite-spelling-stem",
       "g:subj-past-triggers",
       "g:that-clauses",
-      "l:caso",
       "l:devolver",
       "l:dinero",
+      "l:formar",
       "l:rogar",
       "p:le-ruego-que",
       "p:me-te-nos-objects"
@@ -3547,14 +3557,13 @@
   },
   {
     "id": "u49-0137",
-    "es": "Les ruego que sean breves.\nEs una carta de una página.",
-    "en": "I ask you to be brief.\nIt is a one page letter. (to several people)",
+    "es": "Les ruego que sean breves.\nTranquila, solo son dos puntos.",
+    "en": "I ask you all to be brief.\nDon't worry, there are only two points.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:claro-listo",
+      "c:tranquilo",
       "g:adjective-agreement",
-      "g:gender-articles",
       "g:indirect-objects",
       "g:ser-identity",
       "g:stem-boot",
@@ -3562,11 +3571,12 @@
       "g:subj-irregulars",
       "g:that-clauses",
       "l:breve",
-      "l:carta",
-      "l:página",
+      "l:punto",
       "l:rogar",
       "l:ser",
-      "p:le-ruego-que"
+      "l:tranquilo",
+      "p:le-ruego-que",
+      "p:sobre-todo-solo"
     ],
     "targets": [
       "l:breve",
@@ -3631,8 +3641,8 @@
   },
   {
     "id": "u49-0140",
-    "es": "Les pido un plazo breve para responder.",
-    "en": "I ask you for a short deadline to reply.",
+    "es": "Les pido unos minutos para una explicación breve.",
+    "en": "I ask you all for a few minutes for a brief explanation.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3640,11 +3650,10 @@
       "g:indirect-objects",
       "g:stem-e-i",
       "l:breve",
+      "l:explicación",
+      "l:minuto",
       "l:pedir",
-      "l:plazo",
-      "l:responder",
       "p:para-inf",
-      "p:para-inf-purpose",
       "p:preguntar-pedir"
     ],
     "targets": [
@@ -3829,7 +3838,7 @@
   {
     "id": "u49-0148",
     "es": "Adjunto les envío el recibo del pago.",
-    "en": "I attach the receipt for the payment.",
+    "en": "I attach the receipt for the payment, for you all.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5438,7 +5447,7 @@
   {
     "id": "u49-0212",
     "es": "A favor, la carta de Rosa es una prueba clara.",
-    "en": "In favour, Rosa's letter is clear proof.",
+    "en": "On the plus side, Rosa's letter is clear proof.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5673,27 +5682,24 @@
   },
   {
     "id": "u49-0221",
-    "es": "Las cosas baratas salen caras porque duran poco.",
-    "en": "Cheap things end up expensive because they do not last.",
+    "es": "Los zapatos baratos me salieron caros: se rompieron en un mes.",
+    "en": "The cheap shoes turned out expensive for me: they fell apart in a month.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:porque",
       "g:adjective-agreement",
-      "g:cause-result",
       "g:gender-articles",
-      "g:present-ar",
-      "g:present-er-ir",
+      "g:preterite-er-ir",
+      "g:reflexive-routine",
       "l:barato",
-      "l:cara",
-      "l:cosa",
-      "l:durar",
+      "l:caro",
+      "l:mes",
+      "l:romperse",
       "l:salir",
-      "p:durar-durante",
+      "l:zapatos",
       "p:en-oferta",
       "p:gasto-inversion",
-      "p:poco-un-poco",
-      "p:quantifiers-basic"
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "p:gasto-inversion"
@@ -6751,7 +6757,7 @@
   },
   {
     "id": "u49-0265",
-    "es": "La energía del barrio se fue durante tres horas.",
+    "es": "En el barrio se fue la energía durante tres horas.",
     "en": "The neighbourhood lost power for three hours.",
     "accept": [],
     "acceptEn": [],
@@ -7296,18 +7302,18 @@
   },
   {
     "id": "u49-0289",
-    "es": "¿De qué se trata la propuesta?",
+    "es": "¿De qué trata la propuesta?",
     "en": "What is the proposal about?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "g:reflexive-routine",
       "l:propuesta",
       "l:qué",
-      "l:tratarse",
-      "p:prep-questions-basic"
+      "l:tratar",
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "question",
@@ -7317,7 +7323,7 @@
   },
   {
     "id": "u49-0290",
-    "es": "¿De qué se trata el libro?\nDe un taxista que escribe cartas.",
+    "es": "¿De qué trata el libro?\nDe un taxista que escribe cartas.",
     "en": "What is the book about?\nA taxi driver who writes letters.",
     "accept": [],
     "acceptEn": [],
@@ -7325,15 +7331,15 @@
       "g:gender-articles",
       "g:present-ar",
       "g:present-er-ir",
-      "g:reflexive-routine",
       "g:relative-que",
       "l:carta",
       "l:escribir",
       "l:libro",
       "l:qué",
       "l:taxista",
-      "l:tratarse",
-      "p:prep-questions-basic"
+      "l:tratar",
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -7433,19 +7439,19 @@
   },
   {
     "id": "u49-0295",
-    "es": "Una carta formal consiste en ser clara y breve.",
-    "en": "A formal letter consists of being clear and brief.",
+    "es": "El secreto consiste en ser claro y breve.",
+    "en": "The secret lies in being clear and brief.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:claro-listo",
       "g:gender-articles",
       "g:present-er-ir",
       "g:ser-identity",
       "l:breve",
-      "l:carta",
-      "l:clara",
+      "l:claro",
       "l:consistir",
-      "l:formal",
+      "l:secreto",
       "l:ser",
       "p:caracterizarse-por",
       "p:consistir-en"
@@ -8959,16 +8965,19 @@
   },
   {
     "id": "u49-0365",
-    "es": "Cuidado con las cláusulas pequeñas.",
-    "en": "Watch out for the small clauses.",
+    "es": "Ojo con las cláusulas en letra pequeña.",
+    "en": "Watch out for the clauses in small print.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ojo",
       "g:adjective-agreement",
       "g:gender-articles",
       "l:cláusula",
-      "l:cuidar",
+      "l:letra",
+      "l:ojo",
       "l:pequeño",
+      "p:ojo-con-no-confies",
       "p:ten-cuidado-con"
     ],
     "targets": [
@@ -9674,16 +9683,17 @@
   },
   {
     "id": "u49-0395",
-    "es": "La fabricación del contrato tardó una semana, no tres días.",
-    "en": "Drawing up the contract took a week, not three days.",
+    "es": "La fabricación del horno nuevo tardó una semana, no tres días.",
+    "en": "Making the new oven took a week, not three days.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
-      "l:contrato",
       "l:día",
       "l:fabricación",
+      "l:horno",
+      "l:nuevo",
       "l:semana",
       "l:tardar",
       "p:tardar-en"
@@ -9766,8 +9776,8 @@
   },
   {
     "id": "u49-0399",
-    "es": "Mi padre no quiere la jubilación: quiere seguir trabajando.",
-    "en": "My father does not want retirement: he wants to keep working.",
+    "es": "Mi papá no quiere pensar en la jubilación: quiere seguir trabajando.",
+    "en": "My dad does not want to think about retirement: he wants to keep working.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9776,10 +9786,12 @@
       "g:stem-boot",
       "g:verb-infinitive",
       "l:jubilación",
-      "l:padre",
+      "l:papá",
+      "l:pensar",
       "l:querer",
       "l:seguir",
       "l:trabajar",
+      "p:pensar-en",
       "p:possessives-basic",
       "p:seguir-gerundio"
     ],
@@ -10234,8 +10246,8 @@
   },
   {
     "id": "u49-0419",
-    "es": "Mi trabajo es publicitario: escribo textos para tiendas de ropa.",
-    "en": "My job is in advertising: I write copy for clothes shops.",
+    "es": "Soy redactor publicitario: escribo textos para tiendas de ropa.",
+    "en": "I am an advertising copywriter: I write copy for clothes shops.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10243,13 +10255,12 @@
       "g:ser-identity",
       "l:escribir",
       "l:publicitario",
+      "l:redactor",
       "l:ropa",
       "l:ser",
       "l:texto",
       "l:tienda",
-      "l:trabajo",
-      "p:para-inf",
-      "p:possessives-basic"
+      "p:para-inf"
     ],
     "targets": [
       "l:publicitario"
@@ -10507,20 +10518,19 @@
   },
   {
     "id": "u49-0430",
-    "es": "Estudié para economista y ahora hago pasteles.",
-    "en": "I trained as an economist and now I make cakes.",
+    "es": "Soy economista, pero ahora hago pasteles.",
+    "en": "I am an economist, but now I make cakes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hago-salgo-vengo",
-      "g:preterite-ar",
+      "g:ser-identity",
       "g:yo-irregular",
       "l:ahora",
       "l:economista",
-      "l:estudiar",
       "l:hacer",
       "l:pastel",
-      "p:para-inf"
+      "l:ser"
     ],
     "targets": [
       "l:economista"
@@ -10532,18 +10542,19 @@
   },
   {
     "id": "u49-0431",
-    "es": "Ahora trabajo con teletrabajo tres días por semana.",
+    "es": "Ahora hago teletrabajo tres días por semana.",
     "en": "Now I work remotely three days a week.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hago-salgo-vengo",
       "g:por-para-1",
-      "g:present-ar",
+      "g:yo-irregular",
       "l:ahora",
       "l:día",
+      "l:hacer",
       "l:semana",
-      "l:teletrabajo",
-      "l:trabajar"
+      "l:teletrabajo"
     ],
     "targets": [
       "l:teletrabajo"
@@ -11557,8 +11568,8 @@
   },
   {
     "id": "u49-0469",
-    "es": "Estimado señor Cano:\nAdjunto les envío las fotos del edificio y una copia del permiso.",
-    "en": "Dear Mr Cano:\nI attach the photos of the building and a copy of the permit.",
+    "es": "Estimado señor Cano:\nAdjunto le envío las fotos del edificio y una copia del permiso.",
+    "en": "Dear Mr Cano:\nI attach the photos of the building and a copy of the permit. (formal)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11705,18 +11716,19 @@
   },
   {
     "id": "u49-0474",
-    "es": "Estimada abogada:\nEncontrará adjuntos los documentos que pidió.",
-    "en": "Dear Counsel:\nYou will find the documents you asked for attached. (formal)",
+    "es": "Estimada doctora Uribe:\nEncontrará adjuntos los documentos que pidió.",
+    "en": "Dear Dr Uribe:\nYou will find the documents you asked for attached. (formal)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:future-promises",
       "g:gender-articles",
+      "g:present-ar",
       "g:preterite-spelling-stem",
       "g:relative-que",
-      "l:abogado",
       "l:adjunto",
+      "l:doctorar",
       "l:documento",
       "l:encontrar",
       "l:estimado",
@@ -11735,18 +11747,17 @@
   },
   {
     "id": "u49-0475",
-    "es": "Estimados señores de Altamira:\nPermítanme informarles que la obra no tiene permiso.",
-    "en": "Dear Sirs of Altamira:\nAllow me to inform you that the building work has no permit.",
+    "es": "Estimados señores de Altamira:\nNos permitimos informarles que la obra no tiene permiso.",
+    "en": "Dear Sirs at Altamira:\nWe hereby inform you all that the building work has no permit.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
       "g:adjective-agreement",
-      "g:commands-usted",
-      "g:commands-with-pronouns",
       "g:gender-articles",
       "g:indirect-objects",
       "g:object-pronoun-position",
+      "g:present-er-ir",
       "g:stem-boot",
       "g:that-clauses",
       "l:estimado",
@@ -11756,8 +11767,8 @@
       "l:permitir",
       "l:señor",
       "l:tener",
-      "p:dejame-que-te-ayude",
       "p:estimado-colon",
+      "p:lo-mas-recomendable",
       "p:me-permito",
       "p:me-te-nos-objects",
       "p:permitir-inf"
@@ -12085,27 +12096,28 @@
   },
   {
     "id": "u49-0486",
-    "es": "Estimados señores:\nLes escribo porque el ascensor está fuera de servicio desde el lunes.",
-    "en": "Dear Sirs:\nI am writing to you because the lift has been out of order since Monday.",
+    "es": "Estimados señores:\nLes escribo porque el ascensor del edificio lleva dos semanas fuera de servicio.",
+    "en": "Dear Sirs:\nI am writing to you all because the building's lift has been out of order for two weeks.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:porque",
       "g:adjective-agreement",
       "g:cause-result",
-      "g:estar-location-states",
       "g:gender-articles",
+      "g:hace-que-desde",
       "g:indirect-objects",
+      "g:present-ar",
       "g:present-er-ir",
       "l:ascensor",
+      "l:edificio",
       "l:escribir",
-      "l:estar",
       "l:estimado",
-      "l:lunes",
+      "l:llevar",
+      "l:semana",
       "l:servicio",
       "l:señor",
       "p:cerca-de",
-      "p:days-el-lunes",
       "p:estimado-colon",
       "p:fuera-de-servicio",
       "p:le-escribo-para",
@@ -12265,8 +12277,8 @@
   },
   {
     "id": "u49-0492",
-    "es": "Permítame presentarle a mi socia, la señora Vale Ríos.",
-    "en": "Allow me to introduce you to my partner, Ms Vale Ríos. (formal)",
+    "es": "Permítame presentarle a mi socia, la señora Valentina Ospina.",
+    "en": "Allow me to introduce you to my partner, Ms Valentina Ospina. (formal)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12326,23 +12338,22 @@
   },
   {
     "id": "u49-0494",
-    "es": "Permítame decirle que su carta me gustó mucho.",
-    "en": "Allow me to tell you that I liked your letter very much. (formal)",
+    "es": "Me permito decirle que su carta me gustó mucho.",
+    "en": "I take the liberty of telling you that I liked your letter very much. (formal)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:commands-usted",
-      "g:commands-with-pronouns",
       "g:gustar-basic",
       "g:indirect-objects",
       "g:object-pronoun-position",
+      "g:present-er-ir",
       "g:preterite-ar",
       "g:that-clauses",
       "l:carta",
       "l:decir",
       "l:gustar",
       "l:permitir",
-      "p:dejame-que-te-ayude",
+      "p:lo-mas-recomendable",
       "p:me-permito",
       "p:me-te-nos-objects",
       "p:permitir-inf",
@@ -12387,16 +12398,15 @@
   },
   {
     "id": "u49-0496",
-    "es": "Permítame informarle que su solicitud fue aprobada.",
-    "en": "Allow me to inform you that your application has been approved. (formal)",
+    "es": "Me permito informarle que su solicitud fue aprobada.",
+    "en": "I hereby inform you that your application has been approved. (formal)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:commands-usted",
-      "g:commands-with-pronouns",
       "g:indirect-objects",
       "g:object-pronoun-position",
       "g:passive-ser",
+      "g:present-er-ir",
       "g:preterite-ser-ir-hacer",
       "g:that-clauses",
       "l:aprobar",
@@ -12404,7 +12414,7 @@
       "l:permitir",
       "l:ser",
       "l:solicitud",
-      "p:dejame-que-te-ayude",
+      "p:lo-mas-recomendable",
       "p:me-permito",
       "p:me-te-nos-objects",
       "p:permitir-inf",
@@ -12420,17 +12430,16 @@
   },
   {
     "id": "u49-0497",
-    "es": "Permítame recordarle que el plazo termina el lunes.",
-    "en": "Allow me to remind you that the deadline ends on Monday. (formal)",
+    "es": "Me permito recordarle que el plazo termina el lunes.",
+    "en": "I take the liberty of reminding you that the deadline ends on Monday. (formal)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:commands-usted",
-      "g:commands-with-pronouns",
       "g:gender-articles",
       "g:indirect-objects",
       "g:object-pronoun-position",
       "g:present-ar",
+      "g:present-er-ir",
       "g:that-clauses",
       "l:lunes",
       "l:permitir",
@@ -12438,7 +12447,7 @@
       "l:recordar",
       "l:terminar",
       "p:days-el-lunes",
-      "p:dejame-que-te-ayude",
+      "p:lo-mas-recomendable",
       "p:me-permito",
       "p:me-te-nos-objects",
       "p:permitir-inf",
@@ -12483,13 +12492,11 @@
   },
   {
     "id": "u49-0499",
-    "es": "Permítanme explicarles por qué escribimos esta carta.",
-    "en": "Allow me to explain to you why we are writing this letter. (to several people)",
+    "es": "Nos permitimos explicarles por qué escribimos esta carta.",
+    "en": "We take the liberty of explaining to you all why we are writing this letter.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:commands-usted",
-      "g:commands-with-pronouns",
       "g:indirect-objects",
       "g:indirect-questions",
       "g:object-pronoun-position",
@@ -12499,8 +12506,8 @@
       "l:explicar",
       "l:permitir",
       "l:qué",
-      "p:dejame-que-te-ayude",
       "p:demonstratives-basic",
+      "p:lo-mas-recomendable",
       "p:me-permito",
       "p:me-te-nos-objects",
       "p:permitir-inf",
@@ -12544,22 +12551,21 @@
   },
   {
     "id": "u49-0501",
-    "es": "Permítanme proponerles una reunión el martes.",
-    "en": "Allow me to propose a meeting on Tuesday. (to several people)",
+    "es": "Nos permitimos proponerles una reunión el martes.",
+    "en": "We take the liberty of proposing a meeting on Tuesday to you all.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:commands-usted",
-      "g:commands-with-pronouns",
       "g:gender-articles",
       "g:indirect-objects",
       "g:object-pronoun-position",
+      "g:present-er-ir",
       "l:martes",
       "l:permitir",
       "l:proponer",
       "l:reunión",
       "p:days-el-lunes",
-      "p:dejame-que-te-ayude",
+      "p:lo-mas-recomendable",
       "p:me-permito",
       "p:me-te-nos-objects",
       "p:permitir-inf"
@@ -12698,19 +12704,18 @@
   },
   {
     "id": "u49-0506",
-    "es": "Permítame sugerirle otra fecha.",
-    "en": "Allow me to suggest another date. (formal)",
+    "es": "Me permito sugerirle otra fecha.",
+    "en": "I take the liberty of suggesting another date to you. (formal)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:commands-usted",
-      "g:commands-with-pronouns",
       "g:indirect-objects",
       "g:object-pronoun-position",
+      "g:present-er-ir",
       "l:fecha",
       "l:permitir",
       "l:sugerir",
-      "p:dejame-que-te-ayude",
+      "p:lo-mas-recomendable",
       "p:me-permito",
       "p:me-te-nos-objects",
       "p:otro-no-article",
@@ -13049,19 +13054,18 @@
   },
   {
     "id": "u49-0518",
-    "es": "Permítame responder a su pregunta con una carta.",
-    "en": "Allow me to answer your question with a letter. (formal)",
+    "es": "Me permito responder a su pregunta con una carta.",
+    "en": "I take the liberty of answering your question with a letter. (formal)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:commands-usted",
-      "g:commands-with-pronouns",
       "g:gender-articles",
+      "g:present-er-ir",
       "l:carta",
       "l:permitir",
       "l:pregunta",
       "l:responder",
-      "p:dejame-que-te-ayude",
+      "p:lo-mas-recomendable",
       "p:me-permito",
       "p:me-te-nos-objects",
       "p:permitir-inf",
@@ -13103,21 +13107,20 @@
   },
   {
     "id": "u49-0520",
-    "es": "Permítame confirmarle la fecha de la reunión.",
-    "en": "Allow me to confirm the meeting date for you. (formal)",
+    "es": "Me permito confirmarle la fecha de la reunión.",
+    "en": "I hereby confirm the date of the meeting to you. (formal)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:commands-usted",
-      "g:commands-with-pronouns",
       "g:gender-articles",
       "g:indirect-objects",
       "g:object-pronoun-position",
+      "g:present-er-ir",
       "l:confirmar",
       "l:fecha",
       "l:permitir",
       "l:reunión",
-      "p:dejame-que-te-ayude",
+      "p:lo-mas-recomendable",
       "p:me-permito",
       "p:me-te-nos-objects",
       "p:permitir-inf"
@@ -13385,13 +13388,13 @@
   },
   {
     "id": "u49-0529",
-    "es": "Por todo lo expuesto, les ruego que consideren nuestra propuesta.",
-    "en": "For all that has been set out, I ask you to consider our proposal.",
+    "es": "Por estas razones, les ruego que consideren nuestra propuesta.",
+    "en": "For these reasons, I ask you all to consider our proposal.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:demonstratives",
       "g:indirect-objects",
-      "g:lo-adjective",
       "g:por-para-1",
       "g:possessives",
       "g:stem-boot",
@@ -13399,15 +13402,13 @@
       "g:subj-wanting",
       "g:that-clauses",
       "l:considerar",
-      "l:exponer",
       "l:propuesta",
+      "l:razón",
       "l:rogar",
-      "p:le-ruego-que",
-      "p:por-todo-lo-anterior-solicito"
+      "p:le-ruego-que"
     ],
     "targets": [
-      "p:le-ruego-que",
-      "p:por-todo-lo-anterior-solicito"
+      "p:le-ruego-que"
     ],
     "kind": "statement",
     "unit": "u49",
@@ -13482,14 +13483,13 @@
   },
   {
     "id": "u49-0532",
-    "es": "Por todo lo anterior, esperamos que la alcaldía actúe pronto.",
-    "en": "For all the above reasons, we hope that the mayor's office will act soon.",
+    "es": "En vista de lo anterior, esperamos que la alcaldía actúe pronto.",
+    "en": "In view of the above, we hope that the mayor's office will act soon.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:lo-adjective",
-      "g:por-para-1",
       "g:present-ar",
       "g:subj-wanting",
       "g:subj-wishes",
@@ -13499,11 +13499,9 @@
       "l:anterior",
       "l:esperar",
       "l:pronto",
-      "p:por-todo-lo-anterior-solicito"
+      "l:vista"
     ],
-    "targets": [
-      "p:por-todo-lo-anterior-solicito"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u49",
     "theme": "requests and demands",
@@ -13784,25 +13782,24 @@
   },
   {
     "id": "u49-0543",
-    "es": "Por todo lo anterior, Tomás decidió escribir una carta a la alcaldía.",
-    "en": "For all the above reasons, Tomás decided to write a letter to the mayor's office.",
+    "es": "Por todo eso, Tomás decidió escribirle una carta a la alcaldía.",
+    "en": "Because of all that, Tomás decided to write a letter to the mayor's office.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:lo-adjective",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:object-pronoun-position",
       "g:por-para-1",
       "g:preterite-er-ir",
       "l:alcaldía",
-      "l:anterior",
       "l:carta",
       "l:decidir",
       "l:escribir",
-      "p:por-todo-lo-anterior-solicito"
+      "p:demonstratives-basic"
     ],
-    "targets": [
-      "p:por-todo-lo-anterior-solicito"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u49",
     "theme": "requests and demands",
@@ -13810,27 +13807,22 @@
   },
   {
     "id": "u49-0544",
-    "es": "Por todo lo anterior, Vale prefiere esperar a la respuesta del juez.",
-    "en": "For all the above reasons, Vale prefers to wait for the judge's reply.",
+    "es": "Por eso Vale prefiere esperar la respuesta del juez.",
+    "en": "That is why Vale prefers to wait for the judge's reply.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:cause-result",
       "g:gender-articles",
-      "g:lo-adjective",
-      "g:por-para-1",
       "g:stem-boot",
-      "l:anterior",
       "l:esperar",
       "l:juez",
       "l:preferir",
       "l:respuesta",
-      "p:personal-a",
-      "p:por-todo-lo-anterior-solicito",
+      "p:demonstratives-basic",
       "p:prefieres-x-o-y"
     ],
-    "targets": [
-      "p:por-todo-lo-anterior-solicito"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u49",
     "theme": "requests and demands",
@@ -13838,15 +13830,15 @@
   },
   {
     "id": "u49-0545",
-    "es": "Por todo lo anterior, hemos pedido una reunión urgente.",
-    "en": "For all the above reasons, we have asked for an urgent meeting.",
+    "es": "Por todo lo anterior, pedimos una reunión urgente.",
+    "en": "For all the above reasons, we are asking for an urgent meeting.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:lo-adjective",
-      "g:perfecto-experience",
       "g:por-para-1",
+      "g:present-er-ir",
       "l:anterior",
       "l:pedir",
       "l:reunión",
@@ -14577,25 +14569,26 @@
   },
   {
     "id": "u49-0572",
-    "es": "Nuestros clientes nos piden colaboración y no quejas.",
-    "en": "Our customers ask us for help and not complaints.",
+    "es": "Los clientes nos ofrecieron su colaboración sin que se la pidiéramos.",
+    "en": "The customers offered us their help without our asking for it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:possessives",
-      "g:present-ar",
-      "g:stem-e-i",
+      "g:double-pronouns",
+      "g:gender-articles",
+      "g:imperfect-subj",
+      "g:preterite-er-ir",
+      "g:subj-purpose-full",
       "l:cliente",
       "l:colaboración",
+      "l:ofrecer",
       "l:pedir",
-      "l:quejar",
       "p:me-te-nos-objects",
-      "p:preguntar-pedir",
-      "p:solicitamos-su-colaboracion"
+      "p:possessives-basic",
+      "p:preguntar-pedir"
     ],
     "targets": [
-      "l:colaboración",
-      "p:solicitamos-su-colaboracion"
+      "l:colaboración"
     ],
     "kind": "statement",
     "unit": "u49",
@@ -14605,7 +14598,7 @@
   {
     "id": "u49-0573",
     "es": "Les ruego que lean esta carta con calma.",
-    "en": "I ask you to read this letter calmly.",
+    "en": "I ask you all to read this letter calmly.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14691,7 +14684,7 @@
   {
     "id": "u49-0576",
     "es": "Les ruego que lleguen a las nueve en punto.",
-    "en": "I ask you to arrive at nine sharp.",
+    "en": "I ask you all to arrive at nine sharp.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14774,7 +14767,7 @@
   {
     "id": "u49-0579",
     "es": "Les ruego que guarden silencio durante la lectura.",
-    "en": "I ask you to keep quiet during the reading.",
+    "en": "I ask you all to keep quiet during the reading.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14965,7 +14958,7 @@
   {
     "id": "u49-0586",
     "es": "Les rogaría que revisaran el documento antes de firmarlo.",
-    "en": "I would ask you to check the document before signing it.",
+    "en": "I would ask you all to check the document before signing it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15025,7 +15018,7 @@
   {
     "id": "u49-0588",
     "es": "Les rogaría que no escribieran el nombre de la abogada.",
-    "en": "I would ask you not to write the lawyer's name.",
+    "en": "I would ask you all not to write the lawyer's name.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15168,7 +15161,7 @@
   {
     "id": "u49-0593",
     "es": "Les ruego que me escuchen.\nEstamos escuchando, señor.",
-    "en": "I ask you to listen to me.\nWe are listening, sir.",
+    "en": "I ask you all to listen to me.\nWe are listening, sir.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15317,19 +15310,22 @@
   },
   {
     "id": "u49-0598",
-    "es": "A Vale se le da fatal hablar en público.",
-    "en": "Vale is terrible at public speaking.",
+    "es": "A Vale se le da muy mal hablar en público.",
+    "en": "Vale is very bad at public speaking.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
       "g:se-accidental",
       "l:darse",
-      "l:fatal",
       "l:hablar",
+      "l:mal",
       "l:público",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:darsele-bien",
-      "p:darsele-bien-mal"
+      "p:darsele-bien-mal",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "p:darsele-bien-mal"
@@ -15809,23 +15805,27 @@
   },
   {
     "id": "u49-0616",
-    "es": "Se me da fatal el baloncesto.\nA mí tampoco, pero vamos igual.",
-    "en": "I am terrible at basketball.\nSo am I, but we are going anyway.",
+    "es": "No se me da bien el baloncesto.\nA mí tampoco, pero vamos igual.",
+    "en": "I am not good at basketball.\nNeither am I, but we are going anyway.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:a-mi-tambien",
+      "c:bien-y-tu",
       "c:igual",
       "c:me-regala",
+      "c:no-se",
       "g:gender-articles",
       "g:ir-a-plans",
       "g:prep-pronouns",
       "g:se-accidental",
       "l:baloncesto",
+      "l:bien",
       "l:darse",
-      "l:fatal",
       "l:igual",
       "l:ir",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
       "p:darsele-bien",
       "p:darsele-bien-mal"
     ],
@@ -16517,7 +16517,7 @@
   {
     "id": "u49-0643",
     "es": "Estoy interesada en que me respondan por escrito.",
-    "en": "I want them to reply to me in writing. (a woman speaking)",
+    "en": "I am interested in them replying to me in writing. (a woman speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17129,23 +17129,23 @@
   },
   {
     "id": "u49-0666",
-    "es": "Mi carta de renuncia sonó como una carta de amor.\nPues lee otra vez los saludos.",
-    "en": "My resignation letter sounded like a love letter.\nWell, read the greetings again. (to a friend)",
+    "es": "Mi carta de renuncia sonó como una carta de amor.\nPues cambia el saludo: nada de «querido jefe».",
+    "en": "My resignation letter sounded like a love letter.\nThen change the greeting: no \"dear boss\". (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:pues",
       "g:gender-articles",
-      "g:present-er-ir",
+      "g:present-ar",
       "g:preterite-ar",
       "l:amor",
+      "l:cambiar",
       "l:carta",
-      "l:leer",
+      "l:jefe",
+      "l:querer",
       "l:renuncia",
       "l:saludo",
       "l:sonar",
-      "l:vez",
-      "p:otro-no-article",
       "p:possessives-basic",
       "p:renunciar-a"
     ],
@@ -17285,19 +17285,21 @@
   },
   {
     "id": "u49-0672",
-    "es": "Mi marido se dedica a la economía y yo a los pasteles.",
-    "en": "My husband works in economics and I work in cakes.",
+    "es": "Mi esposo es economista y yo me dedico a los pasteles.",
+    "en": "My husband is an economist and I make cakes for a living.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "g:se-impersonal",
+      "g:ser-identity",
       "l:dedicar",
-      "l:economía",
-      "l:marido",
+      "l:economista",
+      "l:esposo",
       "l:pastel",
+      "l:ser",
       "p:dedicarse-a",
+      "p:me-te-nos-objects",
       "p:possessives-basic"
     ],
     "targets": [
@@ -17515,18 +17517,21 @@
   },
   {
     "id": "u49-0681",
-    "es": "¿A qué se dedica Mariana?\nEs periodista y economista.",
-    "en": "What does Mariana do?\nShe is a journalist and an economist.",
+    "es": "¿A qué se dedica Mariana?\nEs periodista. La economista es su amiga Luz Dary.",
+    "en": "What does Mariana do?\nShe is a journalist. The economist is her friend Luz Dary.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:a-que-te-dedicas",
+      "g:gender-articles",
       "g:ser-identity",
+      "l:amiga",
       "l:dedicar",
       "l:economista",
       "l:periodista",
       "l:qué",
       "l:ser",
+      "p:possessives-basic",
       "p:ser-profession-no-article"
     ],
     "targets": [
@@ -17978,7 +17983,7 @@
   {
     "id": "u49-0700",
     "es": "Se lo adjunto en un segundo correo.",
-    "en": "I will attach it to you in a second email. (formal)",
+    "en": "I will send it to you as an attachment in a second email. (formal)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18227,8 +18232,8 @@
   },
   {
     "id": "u49-0710",
-    "es": "Entre sus cualidades destaca la paciencia.",
-    "en": "Among his qualities, patience stands out.",
+    "es": "La paciencia destaca entre sus cualidades.",
+    "en": "Patience stands out among his qualities.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18237,12 +18242,9 @@
       "l:cualidad",
       "l:destacar",
       "l:paciencia",
-      "p:entre-las-ventajas-destaca",
       "p:possessives-basic"
     ],
-    "targets": [
-      "p:entre-las-ventajas-destaca"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u49",
     "theme": "attachments, advantages and what is out of order",
@@ -18418,8 +18420,8 @@
   },
   {
     "id": "u49-0718",
-    "es": "Entre todos los pasteles destaca el de chocolate.",
-    "en": "Among all the cakes, the chocolate one stands out.",
+    "es": "El de chocolate destaca entre todos los pasteles.",
+    "en": "The chocolate one stands out among all the cakes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18428,12 +18430,9 @@
       "l:chocolate",
       "l:destacar",
       "l:pastel",
-      "p:entre-las-ventajas-destaca",
       "p:los-de-la-camiseta"
     ],
-    "targets": [
-      "p:entre-las-ventajas-destaca"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u49",
     "theme": "attachments, advantages and what is out of order",
@@ -18442,7 +18441,7 @@
   {
     "id": "u49-0719",
     "es": "Entre los vecinos destaca doña Elsa, que firmó primero.",
-    "en": "Among the neighbours, Doña Elsa stands out, who signed first.",
+    "en": "Among the neighbours, Doña Elsa, who signed first, stands out.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18536,8 +18535,8 @@
   },
   {
     "id": "u49-0723",
-    "es": "Entre mis amigos destaca Hernando por sus historias.",
-    "en": "Among my friends, Hernando stands out for his stories.",
+    "es": "Hernando destaca entre mis amigos por sus historias.",
+    "en": "Hernando stands out among my friends for his stories.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18546,12 +18545,9 @@
       "l:amigo",
       "l:destacar",
       "l:historia",
-      "p:entre-las-ventajas-destaca",
       "p:possessives-basic"
     ],
-    "targets": [
-      "p:entre-las-ventajas-destaca"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u49",
     "theme": "attachments, advantages and what is out of order",
@@ -19186,27 +19182,28 @@
   },
   {
     "id": "u49-0747",
-    "es": "Esta línea de transporte está dañada desde la lluvia y nadie sabe cuándo vuelve.",
+    "es": "Esta línea de transporte está fuera de servicio desde la lluvia y nadie sabe cuándo vuelve.",
     "en": "This transport line has been out of service since the rain and nobody knows when it is coming back.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:estar-location-states",
       "g:gender-articles",
       "g:indirect-questions",
       "g:present-er-ir",
       "g:stem-boot",
       "l:cuándo",
-      "l:dañado",
       "l:estar",
       "l:lluvia",
       "l:línea",
       "l:saber",
+      "l:servicio",
       "l:transporte",
       "l:volver",
+      "p:cerca-de",
       "p:demonstratives-basic",
       "p:fuera-de-servicio",
+      "p:position-de",
       "p:saber-conocer"
     ],
     "targets": [
@@ -19965,15 +19962,15 @@
   },
   {
     "id": "u49-0776",
-    "es": "No dispongo de la cédula en este momento.",
-    "en": "I do not have my ID with me at the moment.",
+    "es": "No dispongo de esa información en este momento.",
+    "en": "I do not have that information at the moment.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "g:demonstratives",
       "g:yo-irregular",
-      "l:cédula",
       "l:disponer",
+      "l:información",
       "l:momento",
       "p:demonstratives-basic",
       "p:disponer-de"
@@ -20390,7 +20387,7 @@
   {
     "id": "u49-0793",
     "es": "¿A quién debo dirigirme para presentar un reclamo?",
-    "en": "Whom should I address to make a complaint?",
+    "en": "Who should I contact to make a complaint?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21873,19 +21870,21 @@
   },
   {
     "id": "u49-0853",
-    "es": "¿A qué dirección me dirijo en la carta?",
-    "en": "Which address do I send the letter to?",
+    "es": "¿A quién dirijo la carta, al alcalde o a la secretaria?",
+    "en": "Who do I address the letter to, the mayor or the secretary?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:reflexive-routine",
       "g:yo-irregular",
+      "l:alcalde",
       "l:carta",
-      "l:dirección",
-      "l:dirigirse",
-      "l:qué",
-      "p:prep-questions-basic"
+      "l:dirigir",
+      "l:quién",
+      "l:secretaria",
+      "p:personal-a",
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [],
     "kind": "question",
@@ -22701,18 +22700,21 @@
   },
   {
     "id": "u49-0886",
-    "es": "¿Dónde encuentro adjunto el contrato?",
-    "en": "Where do I find the contract attached?",
+    "es": "¿En qué correo va adjunto el contrato?",
+    "en": "Which email is the contract attached to?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:adjunto",
       "g:gender-articles",
-      "g:questions",
+      "g:ir-a-plans",
       "l:adjuntar",
       "l:contrato",
-      "l:dónde",
-      "l:encuentro"
+      "l:correo",
+      "l:ir",
+      "l:qué",
+      "p:adjunto-envio",
+      "p:prep-questions-basic"
     ],
     "targets": [],
     "kind": "question",
@@ -22746,20 +22748,22 @@
   },
   {
     "id": "u49-0888",
-    "es": "¿Quién me envía adjuntas las fotos del edificio?",
-    "en": "Who is sending me the photos of the building attached?",
+    "es": "¿Me envías las fotos del edificio adjuntas, no dentro del correo?",
+    "en": "Can you send me the photos of the building as attachments, not inside the email? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "g:questions",
       "l:adjuntar",
+      "l:correo",
+      "l:dentro",
       "l:edificio",
       "l:enviar",
       "l:foto",
-      "l:quién",
-      "p:me-te-nos-objects"
+      "p:cerca-de",
+      "p:me-te-nos-objects",
+      "p:position-de"
     ],
     "targets": [],
     "kind": "question",
@@ -23181,21 +23185,20 @@
   },
   {
     "id": "u49-0906",
-    "es": "¿Se siente solitario aquí tan lejos de Toronto?",
-    "en": "Do you feel lonely here so far from Toronto? (formal)",
+    "es": "¿No le parece muy solitario el café a estas horas?",
+    "en": "Does the café not seem very lonely to you at this hour? (formal)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:reflexive-routine",
-      "g:stem-boot",
-      "l:aquí",
-      "l:lejos",
-      "l:sentirse",
+      "g:demonstratives",
+      "g:gender-articles",
+      "g:parecer-quedar",
+      "g:present-er-ir",
+      "l:café",
+      "l:hora",
+      "l:parecer",
       "l:solitario",
-      "p:aqui-ahi-alla",
-      "p:cerca-de",
-      "p:position-de",
-      "p:sentirse-mal"
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:solitario"
@@ -23352,19 +23355,19 @@
   },
   {
     "id": "u49-0913",
-    "es": "¿Cuál es el suministro de agua del edificio?",
-    "en": "What is the building's water supply?",
+    "es": "¿De dónde viene el suministro de agua del edificio?",
+    "en": "Where does the building's water supply come from?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:questions",
-      "g:ser-identity",
+      "g:stem-boot",
       "l:agua",
-      "l:cuál",
+      "l:dónde",
       "l:edificio",
-      "l:ser",
       "l:suministro",
+      "l:venir",
+      "p:prep-questions-basic",
       "p:question-word-order"
     ],
     "targets": [
@@ -23474,19 +23477,20 @@
   },
   {
     "id": "u49-0918",
-    "es": "¿Qué producción tiene la finca de Yesid?",
-    "en": "What output does Yesid's farm have?",
+    "es": "¿De cuánto es la producción de leche en la finca de Yesid?",
+    "en": "What is the milk output on Yesid's farm?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
+      "c:cuanto-cuesta",
       "g:gender-articles",
-      "g:questions",
-      "g:stem-boot",
+      "g:ser-identity",
+      "l:cuánto",
       "l:finca",
+      "l:leche",
       "l:producción",
-      "l:qué",
-      "l:tener"
+      "l:ser",
+      "p:prep-questions-basic"
     ],
     "targets": [
       "l:producción"
@@ -23596,18 +23600,20 @@
   },
   {
     "id": "u49-0923",
-    "es": "¿Cuándo es tu jubilación?",
-    "en": "When is your retirement? (to a friend)",
+    "es": "¿Cuánto te falta para la jubilación?",
+    "en": "How long until your retirement? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
+      "g:parecer-quedar",
+      "g:present-ar",
       "g:questions",
-      "g:ser-identity",
-      "l:cuándo",
+      "l:cuánto",
+      "l:faltar",
       "l:jubilación",
-      "l:ser",
-      "p:possessives-basic",
-      "p:question-word-order"
+      "p:para-inf",
+      "p:quedar-faltar-sobrar"
     ],
     "targets": [
       "l:jubilación"
@@ -23619,7 +23625,7 @@
   },
   {
     "id": "u49-0924",
-    "es": "¿Trabajas con teletrabajo o vas a la oficina?",
+    "es": "¿Haces teletrabajo o vas a la oficina?",
     "en": "Do you work remotely or go to the office? (to a friend)",
     "accept": [],
     "acceptEn": [],
@@ -23627,11 +23633,11 @@
       "c:voy-vas",
       "g:gender-articles",
       "g:ir-a-plans",
-      "g:present-ar",
+      "g:present-er-ir",
+      "l:hacer",
       "l:ir",
       "l:oficina",
       "l:teletrabajo",
-      "l:trabajar",
       "p:ir-a-venir-de-place"
     ],
     "targets": [
@@ -23767,19 +23773,18 @@
   },
   {
     "id": "u49-0930",
-    "es": "¿A quién distribuimos primero los folletos?",
-    "en": "Who do we hand the leaflets out to first?",
+    "es": "¿En qué calles distribuimos primero los folletos?",
+    "en": "Which streets do we hand the leaflets out in first?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
+      "l:calle",
       "l:distribuir",
       "l:folleto",
-      "l:quién",
-      "p:personal-a",
+      "l:qué",
       "p:prep-questions-basic",
-      "p:question-word-order",
       "p:time-sequence-basic"
     ],
     "targets": [
@@ -23793,13 +23798,13 @@
   },
   {
     "id": "u49-0931",
-    "es": "¿Quién ha escrito la cláusula quinta?",
+    "es": "¿Quién escribió la cláusula quinta?",
     "en": "Who wrote clause five?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:perfecto-experience",
+      "g:preterite-er-ir",
       "g:questions",
       "l:cláusula",
       "l:escribir",
@@ -24336,31 +24341,30 @@
   },
   {
     "id": "u49-0953",
-    "es": "Alcaldía, buenos días.\nBuenos días, me dirijo a ustedes por una carta que envié el lunes.",
-    "en": "Mayor's office, good morning.\nGood morning, I am calling you about a letter I sent on Monday.",
+    "es": "Alcaldía, buenos días.\nBuenos días. Me comunico con ustedes por una carta que envié el lunes.",
+    "en": "Mayor's office, good morning.\nGood morning. I am getting in touch with you about a letter I sent on Monday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hola-buenos-dias",
       "g:gender-articles",
       "g:por-para-1",
+      "g:prep-pronouns",
+      "g:present-ar",
       "g:preterite-ar",
       "g:reflexive-routine",
       "g:relative-que",
-      "g:yo-irregular",
       "l:alcaldía",
       "l:bueno",
       "l:carta",
-      "l:dirigirse",
+      "l:comunicarse",
       "l:día",
       "l:enviar",
       "l:lunes",
       "p:days-el-lunes",
-      "p:dirigirse-a"
+      "p:me-comunica-con"
     ],
-    "targets": [
-      "p:dirigirse-a"
-    ],
+    "targets": [],
     "kind": "dialogue",
     "unit": "u49",
     "theme": "Tomás, Vale and the letters",
@@ -24472,8 +24476,8 @@
   },
   {
     "id": "u49-0958",
-    "es": "Permítame presentarme. Soy Mariana Cruz.\nEncantado. Siéntese, por favor.",
-    "en": "Allow me to introduce myself. I am Mariana Cruz.\nPleased to meet you. Please sit down. (formal)",
+    "es": "Permítame presentarme. Soy Mariana Cifuentes.\nEncantado. Siéntese, por favor.",
+    "en": "Allow me to introduce myself. I am Mariana Cifuentes.\nPleased to meet you. Please sit down. (formal)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24849,8 +24853,8 @@
   },
   {
     "id": "u49-0970",
-    "es": "Les pedí su colaboración, pero se fueron.\nEs que tenían otra cita.",
-    "en": "I asked for your help, but you left.\nIt is because we had another appointment. (to several people)",
+    "es": "Les pedí su colaboración, pero se fueron.\nEs que teníamos otra cita.",
+    "en": "I asked for your help, but you left.\nThat is because we had another appointment. (to several people)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -25562,13 +25566,14 @@
   },
   {
     "id": "u49-0995",
-    "es": "¿Se te da bien el baloncesto?\nSe me da fatal, pero Hernando juega muy bien.",
-    "en": "Are you good at basketball?\nI am terrible, but Hernando plays very well. (to a friend)",
+    "es": "¿Se te da bien el baloncesto?\nNo, se me da mal, pero Hernando juega muy bien.",
+    "en": "Are you good at basketball?\nNo, I am bad at it, but Hernando plays very well. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
       "c:me-regala",
+      "c:no-se",
       "g:gender-articles",
       "g:present-ar",
       "g:se-accidental",
@@ -25576,8 +25581,8 @@
       "l:baloncesto",
       "l:bien",
       "l:darse",
-      "l:fatal",
       "l:jugar",
+      "l:mal",
       "p:bien-bueno",
       "p:bien-mal-vs-bueno-malo",
       "p:darsele-bien",
@@ -25629,8 +25634,8 @@
   },
   {
     "id": "u49-0997",
-    "es": "Se me da mal pedir ayuda.\nA todos, pero hay que hacerlo.",
-    "en": "I am bad at asking for help.\nEveryone is, but it has to be done.",
+    "es": "Se me da mal pedir ayuda.\nA todos se nos da mal, pero hay que hacerlo.",
+    "en": "I am bad at asking for help.\nWe are all bad at it, but it has to be done.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -25639,6 +25644,7 @@
       "c:me-regala",
       "g:direct-objects",
       "g:object-pronoun-position",
+      "g:present-ar",
       "g:se-accidental",
       "g:verb-infinitive",
       "l:ayuda",
@@ -26269,26 +26275,30 @@
   },
   {
     "id": "u49-1020",
-    "es": "¿Quién es tu aliado en la alcaldía?\nUna secretaria que no se llama Tomás.",
-    "en": "Who is your ally at the mayor's office?\nA secretary who is not called Tomás. (to a friend)",
+    "es": "¿Quién es tu aliado en la alcaldía?\nUna secretaria que toma tinto aquí todas las mañanas.",
+    "en": "Who is your ally at the mayor's office?\nA secretary who has a black coffee here every morning. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:no-se",
-      "c:se-llama",
       "g:gender-articles",
+      "g:present-ar",
       "g:questions",
-      "g:reflexive-routine",
       "g:relative-que",
       "g:ser-identity",
       "l:alcaldía",
       "l:aliado",
-      "l:llamarse",
+      "l:aquí",
+      "l:mañana",
       "l:quién",
       "l:secretaria",
       "l:ser",
+      "l:tinto",
+      "l:tomar",
+      "p:aqui-ahi-alla",
       "p:possessives-basic",
-      "p:question-word-order"
+      "p:question-word-order",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "l:aliado"
@@ -26300,15 +26310,18 @@
   },
   {
     "id": "u49-1021",
-    "es": "Mariana es nuestra mejor aliada.\nY Hernando, nuestro mejor aliado.",
-    "en": "Mariana is our best ally.\nAnd Hernando, our best ally.",
+    "es": "Mariana es nuestra mejor aliada.\n¿Y Hernando qué es, entonces?",
+    "en": "Mariana is our best ally.\nThen what is Hernando?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:entonces-bueno",
       "g:possessives",
+      "g:questions",
       "g:ser-identity",
       "l:aliado",
       "l:mejor",
+      "l:qué",
       "l:ser",
       "p:de-owner"
     ],
@@ -26322,26 +26335,27 @@
   },
   {
     "id": "u49-1022",
-    "es": "Me siento solitario desde que Rosa murió.\nAquí siempre tienes a alguien, Tomás.",
-    "en": "I have felt lonely since Rosa died.\nYou always have someone here, Tomás.",
+    "es": "El café está muy solitario desde que Rosa murió.\nAquí siempre hay alguien, Tomás.",
+    "en": "The café has been very lonely since Rosa died.\nThere is always someone here, Tomás.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
+      "c:hay",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:hay-vs-esta",
       "g:preterite-spelling-stem",
-      "g:reflexive-routine",
-      "g:stem-boot",
       "l:aquí",
+      "l:café",
+      "l:estar",
       "l:morir",
-      "l:sentirse",
       "l:siempre",
       "l:solitario",
-      "l:tener",
       "p:aqui-ahi-alla",
       "p:frequency-scale",
       "p:indefinites-basic",
       "p:naci-en",
-      "p:sentirse-mal"
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:solitario"
@@ -27364,21 +27378,21 @@
   },
   {
     "id": "u49-1061",
-    "es": "Anoche me sentí solitario en el café vacío.",
-    "en": "Last night I felt lonely in the empty café.",
+    "es": "Anoche el café vacío se veía muy solitario.",
+    "en": "Last night the empty café looked very lonely.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ayer-anoche",
       "g:gender-articles",
-      "g:preterite-er-ir",
-      "g:reflexive-routine",
+      "g:imperfect-habitual",
+      "g:se-impersonal",
       "l:anoche",
       "l:café",
-      "l:sentirse",
       "l:solitario",
       "l:vacío",
-      "p:sentirse-mal"
+      "l:ver",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:solitario"
@@ -27415,25 +27429,26 @@
   },
   {
     "id": "u49-1063",
-    "es": "Fue afortunado que nadie estuviera en la calle cuando cayó el muro.",
-    "en": "It was fortunate that nobody was in the street when the wall fell.",
+    "es": "Los vecinos fueron afortunados: nadie estaba en la calle cuando cayó el muro.",
+    "en": "The neighbours were lucky: nobody was in the street when the wall fell.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:estar-location-states",
       "g:gender-articles",
-      "g:imperfect-subj",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
       "g:preterite-ser-ir-hacer",
       "g:preterite-spelling-stem",
       "g:ser-identity",
-      "g:subj-past-triggers",
-      "g:that-clauses",
       "l:afortunado",
       "l:caer",
       "l:calle",
       "l:estar",
       "l:muro",
       "l:ser",
+      "l:vecino",
       "p:cuando-basic"
     ],
     "targets": [
@@ -27631,19 +27646,22 @@
   },
   {
     "id": "u49-1071",
-    "es": "Vale se dedicó a hacer pasteles en París antes de volver.",
-    "en": "Vale devoted herself to making cakes in Paris before coming back.",
+    "es": "Vale se dedicó a hacer pasteles en un hotel antes de venir al café.",
+    "en": "Vale devoted herself to making cakes at a hotel before coming to the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:prep-infinitive",
       "g:preterite-ar",
       "g:reflexive-routine",
       "l:antes",
+      "l:café",
       "l:dedicar",
       "l:hacer",
+      "l:hotel",
       "l:pastel",
-      "l:volver",
+      "l:venir",
       "p:dedicarse-a"
     ],
     "targets": [
@@ -27713,7 +27731,7 @@
   {
     "id": "u49-1074",
     "es": "Por no haber firmado a tiempo, perdimos el permiso.",
-    "en": "For not having signed on time, we lost the permit.",
+    "en": "Because we did not sign in time, we lost the permit.",
     "accept": [],
     "acceptEn": [],
     "requires": [

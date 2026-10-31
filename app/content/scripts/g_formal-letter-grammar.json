@@ -153,7 +153,9 @@
     {
       "prompt": "Say, you enclose your résumé for one person (formal).",
       "answer": "Adjunto le envío mi hoja de vida.",
-      "accept": [],
+      "accept": [
+        "Le envío adjunta mi hoja de vida."
+      ],
       "why": "*Adjunto le envío* is the stock phrase for attachments."
     }
   ],

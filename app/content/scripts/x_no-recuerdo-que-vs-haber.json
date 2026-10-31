@@ -1,7 +1,7 @@
 {
   "node": "x:no-recuerdo-que-vs-haber",
   "hook": {
-    "line": "At the café, Don Hernando insists you promised him a free tinto. You do not remember it, but who exactly is doing the forgetting? Spanish uses a different shape depending on whose action it was.",
+    "line": "Don Hernando swears you promised him a free tinto. You don't remember promising it, and you don't remember Vale promising it either. Spanish builds those two sentences differently, depending on whose action it was.",
     "es": "No recuerdo haber dicho eso.",
     "en": "I don't remember saying that."
   },
@@ -123,19 +123,25 @@
     {
       "prompt": "Say: I don't remember saying that.",
       "answer": "No recuerdo haber dicho eso.",
-      "accept": [],
+      "accept": [
+        "No me acuerdo de haber dicho eso."
+      ],
       "why": "Same person remembering and doing: *haber* plus *dicho*."
     },
     {
       "prompt": "Say: I don't remember him saying that.",
       "answer": "No recuerdo que él dijera eso.",
-      "accept": [],
+      "accept": [
+        "No me acuerdo de que él dijera eso."
+      ],
       "why": "A different person did it, so *que* plus *dijera*."
     },
     {
       "prompt": "Say: Do you (informal) remember calling Mariana?",
       "answer": "¿Recuerdas haber llamado a Mariana?",
-      "accept": [],
+      "accept": [
+        "¿Te acuerdas de haber llamado a Mariana?"
+      ],
       "why": "You are asking about the listener's own action, so the infinitive."
     },
     {
@@ -147,7 +153,9 @@
     {
       "prompt": "Say: I don't remember them telling us anything.",
       "answer": "No recuerdo que nos dijeran nada.",
-      "accept": [],
+      "accept": [
+        "No me acuerdo de que nos dijeran nada."
+      ],
       "why": "*Ellos* is the other subject, so *que* plus the plural *dijeran*."
     }
   ],

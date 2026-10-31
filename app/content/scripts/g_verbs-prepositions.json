@@ -15,8 +15,8 @@
       "en": "It depends on you."
     },
     {
-      "es": "Se trata de un error.",
-      "en": "It is about a mistake."
+      "es": "Se trata de la casa de mi abuela.",
+      "en": "It's about my grandmother's house."
     },
     {
       "es": "Consiste en tres partes.",
@@ -35,7 +35,7 @@
       "en": "I trust Vale."
     }
   ],
-  "rule": "Some verbs come with a small word that belongs to them. You learn the pair, not the verb alone:\n\n*contar con* (count on): *Contamos con su apoyo.*\n*depender de* (depend on): *Depende de ti.*\n*tratarse de* (be about): *Se trata de un error.*\n*consistir en* (consist of): *Consiste en tres partes.*\n*soñar con*, *acordarse de* and *confiar en* work the same way.\n\nDo not copy the English small word. English says *depend on*, *consist of*, *dream about*; Spanish says *de*, *en*, *con*, and they often do not match.\n\nThe small word stays when a pronoun follows: *Depende de ti*, *Cuento contigo* (*con* + *ti*).",
+  "rule": "Some verbs come with a small word that belongs to them. You learn the pair, not the verb alone:\n\n*contar con* (count on): *Contamos con su apoyo.*\n*depender de* (depend on): *Depende de ti.*\n*tratarse de* (be about): *Se trata de la casa de mi abuela.*\n*consistir en* (consist of): *Consiste en tres partes.*\n*soñar con*, *acordarse de* and *confiar en* work the same way.\n\nDo not copy the English small word. English says *depend on*, *consist of*, *dream about*; Spanish says *de*, *en*, *con*, and they often do not match.\n\nThe small word stays when a pronoun follows: *Depende de ti*, *Cuento contigo* (*con* + *ti*).",
   "smallPrint": "Teachers call these verbs with a prepositional complement (*régimen preposicional*). *Tratarse de* is only used as *se trata de*.",
   "readAndPick": [
     {
@@ -57,11 +57,11 @@
       "answer": 1
     },
     {
-      "es": "Se trata de un error.",
+      "es": "Se trata de la casa de mi abuela.",
       "options": [
-        "He treats the mistake.",
-        "It was a mistake.",
-        "It is about a mistake."
+        "He treats my grandmother's house.",
+        "It was my grandmother's house.",
+        "It's about my grandmother's house."
       ],
       "answer": 2
     },
@@ -131,8 +131,8 @@
       "why": "*Consistir* takes *en*, not *of*."
     },
     {
-      "prompt": "It is about a mistake.",
-      "answer": "Se trata de un error.",
+      "prompt": "It's about my grandmother's house.",
+      "answer": "Se trata de la casa de mi abuela.",
       "accept": [],
       "why": "*Se trata de* says what something is about."
     },
@@ -167,14 +167,14 @@
       "why": "Almost. English says \"of\", but Spanish pairs *consistir* with *en*."
     },
     {
-      "wrong": "Se trata sobre un error.",
-      "right": "Se trata de un error.",
+      "wrong": "Se trata sobre la casa de mi abuela.",
+      "right": "Se trata de la casa de mi abuela.",
       "why": "Almost. *Tratarse* takes *de*, not *sobre*."
     },
     {
-      "wrong": "Cuento a su apoyo.",
+      "wrong": "Cuento en su apoyo.",
       "right": "Cuento con su apoyo.",
-      "why": "Almost. To count on someone, Spanish uses *con*."
+      "why": "Almost. English says \"count on\", but Spanish pairs *contar* with *con*."
     }
   ],
   "personal": "Say something true about what you count on or what your day depends on: *Cuento con…* or *Mi día depende de…*."
