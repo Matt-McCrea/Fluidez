@@ -6,38 +6,167 @@
     "en": "Vale is a sweetheart of a person."
   },
   "examples": [
-    { "es": "Vale es un amor de persona.", "en": "Vale is a sweetheart of a person." },
-    { "es": "Fue un desastre de reunión.", "en": "It was a disaster of a meeting." },
-    { "es": "¡Qué belleza de casa!", "en": "What a beautiful house!" },
-    { "es": "Don Hernando es un tesoro de vecino.", "en": "Don Hernando is a treasure of a neighbour." },
-    { "es": "Fue una pesadilla de viaje.", "en": "It was a nightmare of a trip." },
-    { "es": "¡Qué maravilla de café!", "en": "What a wonderful café!" }
+    {
+      "es": "Vale es un amor de persona.",
+      "en": "Vale is a sweetheart of a person."
+    },
+    {
+      "es": "Fue un desastre de reunión.",
+      "en": "It was a disaster of a meeting."
+    },
+    {
+      "es": "¡Qué belleza de casa!",
+      "en": "What a beautiful house!"
+    },
+    {
+      "es": "Don Hernando era un tesoro de vecino.",
+      "en": "Don Hernando was a treasure of a neighbour."
+    },
+    {
+      "es": "Fue una pesadilla de viaje.",
+      "en": "It was a nightmare of a trip."
+    },
+    {
+      "es": "¡Qué maravilla de café!",
+      "en": "What a wonderful café!"
+    }
   ],
   "rule": "English says \"a disaster of a meeting\" and Spanish says *un desastre de reunión*. The pattern is:\n\n*un / una* + a strong noun for your verdict + *de* + the thing you are judging\n\nThe thing after *de* has no article: *un amor de persona*, never *un amor de la persona*. English needs the second \"a\", Spanish drops it.\n\n*Un / una* matches the verdict noun, not the thing. That is why it is *un amor de persona* (*amor* is masculine, even though *persona* is feminine) and *una belleza de casa*.\n\nAfter *¡Qué…!* the *un* disappears too: *¡Qué belleza de casa!*\n\nCommon verdict nouns: *amor, tesoro, desastre, pesadilla, belleza, maravilla, horror*.",
   "smallPrint": "Teachers call this a qualitative or evaluative construction: the first noun is the speaker's judgement and the second is what is being judged.",
   "readAndPick": [
-    { "es": "Fue un desastre de reunión.", "options": ["It was a disaster of a meeting.", "It was a disaster at the meeting.", "It was a meeting about a disaster."], "answer": 0 },
-    { "es": "¡Qué belleza de casa!", "options": ["What a beautiful house!", "What a beauty it is to be home!", "What a house for a beauty!"], "answer": 0 },
-    { "es": "Vale es un amor de persona.", "options": ["Vale loves people.", "Vale is a sweetheart of a person.", "Vale is in love with a person."], "answer": 1 },
-    { "es": "Fue una pesadilla de viaje.", "options": ["He had a nightmare on the trip.", "The trip was a nightmare of a dream.", "It was a nightmare of a trip."], "answer": 2 },
-    { "es": "Don Hernando es un tesoro de vecino.", "options": ["Don Hernando is a treasure of a neighbour.", "Don Hernando has a neighbour with a treasure.", "Don Hernando buried a treasure next door."], "answer": 0 },
-    { "es": "¡Qué maravilla de café!", "options": ["What a wonder to go to a café!", "What a wonderful café!", "What a café for wonders!"], "answer": 1 },
-    { "es": "Mi jefe es una pesadilla de persona.", "options": ["My boss has a nightmare about people.", "My boss is a person who dreams.", "My boss is a nightmare of a person."], "answer": 2 },
-    { "es": "Eres un tesoro de amigo.", "options": ["You are a treasure of a friend.", "You are a friend who owns a treasure.", "You are looking for a friend's treasure."], "answer": 0 }
+    {
+      "es": "Fue un desastre de reunión.",
+      "options": [
+        "It was a disaster of a meeting.",
+        "It was a disaster at the meeting.",
+        "It was a meeting about a disaster."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Qué belleza de casa!",
+      "options": [
+        "What a beautiful house!",
+        "What a beauty it is to be home!",
+        "What a house for a beauty!"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale es un amor de persona.",
+      "options": [
+        "Vale loves people.",
+        "Vale is a sweetheart of a person.",
+        "Vale is in love with a person."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Fue una pesadilla de viaje.",
+      "options": [
+        "He had a nightmare on the trip.",
+        "The trip was a nightmare of a dream.",
+        "It was a nightmare of a trip."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Don Hernando era un tesoro de vecino.",
+      "options": [
+        "Don Hernando was a treasure of a neighbour.",
+        "Don Hernando had a neighbour with a treasure.",
+        "Don Hernando buried a treasure next door."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Qué maravilla de café!",
+      "options": [
+        "What a wonder to go to a café!",
+        "What a wonderful café!",
+        "What a café for wonders!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mi jefe es una pesadilla de persona.",
+      "options": [
+        "My boss has a nightmare about people.",
+        "My boss is a person who dreams.",
+        "My boss is a nightmare of a person."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Eres un tesoro de amigo.",
+      "options": [
+        "You are a treasure of a friend.",
+        "You are a friend who owns a treasure.",
+        "You are looking for a friend's treasure."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick *un* or *una* and type the sentence: *Fue ___ pesadilla de viaje.*", "answer": "Fue una pesadilla de viaje.", "accept": [], "why": "*Pesadilla* is feminine, and the article agrees with it." },
-    { "prompt": "Type in Spanish: It was a disaster of a meeting.", "answer": "Fue un desastre de reunión.", "accept": [], "why": "Verdict noun first, then *de*, then the thing with no article." },
-    { "prompt": "Type in Spanish: What a beautiful house!", "answer": "¡Qué belleza de casa!", "accept": [], "why": "After *¡Qué…!* there is no *un* or *una*." },
-    { "prompt": "Type in Spanish: Don Hernando is a treasure of a neighbour.", "answer": "Don Hernando es un tesoro de vecino.", "accept": [], "why": "*Tesoro* is masculine, so *un*, and *vecino* takes no article." },
-    { "prompt": "Type in Spanish: Vale is a sweetheart of a person.", "answer": "Vale es un amor de persona.", "accept": [], "why": "*Un* matches *amor*, not *persona*." },
-    { "prompt": "Turn this into an exclamation: *Es un café maravilloso.* Say: What a wonderful café!", "answer": "¡Qué maravilla de café!", "accept": [], "why": "The verdict becomes the noun *maravilla*, then *de café*." },
-    { "prompt": "Type in Spanish: My boss is a nightmare of a person.", "answer": "Mi jefe es una pesadilla de persona.", "accept": [], "why": "*Pesadilla* is feminine, so *una*, even though *jefe* is a man." }
+    {
+      "prompt": "Pick *un* or *una* and type the sentence: *Fue ___ pesadilla de viaje.*",
+      "answer": "Fue una pesadilla de viaje.",
+      "accept": [],
+      "why": "*Pesadilla* is feminine, and the article agrees with it."
+    },
+    {
+      "prompt": "Type in Spanish: It was a disaster of a meeting.",
+      "answer": "Fue un desastre de reunión.",
+      "accept": [],
+      "why": "Verdict noun first, then *de*, then the thing with no article."
+    },
+    {
+      "prompt": "Type in Spanish: What a beautiful house!",
+      "answer": "¡Qué belleza de casa!",
+      "accept": [],
+      "why": "After *¡Qué…!* there is no *un* or *una*."
+    },
+    {
+      "prompt": "Type in Spanish: Don Hernando was a treasure of a neighbour.",
+      "answer": "Don Hernando era un tesoro de vecino.",
+      "accept": [],
+      "why": "*Tesoro* is masculine, so *un*, and *vecino* takes no article. *Era*, because he is gone."
+    },
+    {
+      "prompt": "Type in Spanish: Vale is a sweetheart of a person.",
+      "answer": "Vale es un amor de persona.",
+      "accept": [],
+      "why": "*Un* matches *amor*, not *persona*."
+    },
+    {
+      "prompt": "Turn this into an exclamation: *Es un café maravilloso.* Say: What a wonderful café!",
+      "answer": "¡Qué maravilla de café!",
+      "accept": [],
+      "why": "The verdict becomes the noun *maravilla*, then *de café*."
+    },
+    {
+      "prompt": "Type in Spanish: My boss is a nightmare of a person.",
+      "answer": "Mi jefe es una pesadilla de persona.",
+      "accept": [],
+      "why": "*Pesadilla* is feminine, so *una*, even though *jefe* is a man."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Vale es un amor de la persona.", "right": "Vale es un amor de persona.", "why": "Almost. The thing after *de* takes no article." },
-    { "wrong": "Vale es una amor de persona.", "right": "Vale es un amor de persona.", "why": "Almost. *Un* matches *amor*, which is masculine, not *persona*." },
-    { "wrong": "¡Qué una belleza de casa!", "right": "¡Qué belleza de casa!", "why": "Almost. After *¡Qué…!* Spanish drops *un* and *una*." }
+    {
+      "wrong": "Vale es un amor de la persona.",
+      "right": "Vale es un amor de persona.",
+      "why": "Almost. The thing after *de* takes no article."
+    },
+    {
+      "wrong": "Vale es una amor de persona.",
+      "right": "Vale es un amor de persona.",
+      "why": "Almost. *Un* matches *amor*, which is masculine, not *persona*."
+    },
+    {
+      "wrong": "¡Qué una belleza de casa!",
+      "right": "¡Qué belleza de casa!",
+      "why": "Almost. After *¡Qué…!* Spanish drops *un* and *una*."
+    }
   ],
   "personal": "Think of someone you know and finish *Es un / una … de persona* with a verdict noun, or describe your last trip with *Fue un / una … de viaje*."
 }

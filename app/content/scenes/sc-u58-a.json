@@ -11,14 +11,14 @@
       "npcEn": "Photographer: Hello, Tomás? I'm on Seventh Avenue and I can't see the café anywhere. Where exactly is it?",
       "intent": "Tell him you're two blocks from where he is, level with 12th Street (use: a ... cuadras de, a la altura de).",
       "accept": [
-        "Estamos a dos cuadras de ti, a la altura de la calle 12.",
-        "Queda a tres cuadras de donde estás, a la altura de la calle 12.",
+        "Estamos a dos cuadras de donde estás, a la altura de la calle 12.",
+        "El café queda a dos cuadras, a la altura de la calle 12.",
         "Sigue derecho: el café está a la altura de la calle 12, a dos cuadras de la carrera séptima."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\ba \\S+ cuadras\\b",
+          "pattern": "\\ba (\\S+ ){1,2}cuadras?\\b",
           "flags": "iu",
           "label": "use: a ... cuadras"
         },
@@ -34,13 +34,13 @@
     },
     {
       "id": "t2",
-      "npc": "Fotógrafo: Ya lo veo. ¡Qué fachada! Oye, ¿qué es lo primero que van a hacer con la viga agrietada?",
-      "npcEn": "Photographer: I can see it now. What a facade! Tell me, what's the first thing you'll do about the cracked beam?",
-      "intent": "Say that the engineers will replace the beam as soon as they arrive (use: nada más llegar).",
+      "npc": "Fotógrafo: Ya lo veo. ¡Qué fachada! Oye, ¿qué fue lo primero que hicieron cuando empezó la obra?",
+      "npcEn": "Photographer: I can see it now. What a facade! Tell me, what was the first thing you did when the work started?",
+      "intent": "Say that as soon as the workers arrived, they took down the old beam (use: nada más llegar).",
       "accept": [
-        "Nada más llegar los ingenieros, cambiarán la viga.",
-        "Los ingenieros van a cambiar la viga nada más llegar, el lunes.",
-        "La viga se cambia nada más llegar el equipo."
+        "Nada más llegar los obreros, bajaron la viga vieja.",
+        "Los obreros bajaron la viga vieja nada más llegar, el lunes.",
+        "Nada más llegar, los obreros empezaron a bajar la viga vieja."
       ],
       "require": [
         {
@@ -139,10 +139,12 @@
     "g:prep-infinitive",
     "g:prep-pronouns",
     "g:present-ar",
+    "g:preterite-ar",
+    "g:preterite-ser-ir-hacer",
     "g:questions",
     "g:reflexive-routine",
+    "g:relative-que",
     "g:relatives-donde-lo-que",
-    "g:se-impersonal",
     "g:ser-identity",
     "g:stem-boot",
     "g:stem-e-i",
@@ -151,7 +153,7 @@
     "g:subj-purpose-full",
     "g:subj-wanting",
     "g:temporal-advanced",
-    "g:that-clauses",
+    "g:verb-infinitive",
     "g:yo-irregular",
     "l:acuerdo",
     "l:alegrarse",
@@ -161,6 +163,7 @@
     "l:aspecto",
     "l:avanzar",
     "l:ayuda",
+    "l:bajar",
     "l:café",
     "l:calle",
     "l:cambiar",
@@ -171,7 +174,7 @@
     "l:dirección",
     "l:dudar",
     "l:dónde",
-    "l:equipo",
+    "l:empezar",
     "l:estar",
     "l:exactamente",
     "l:fachada",
@@ -182,7 +185,6 @@
     "l:hacer",
     "l:idea",
     "l:imagen",
-    "l:ingeniero",
     "l:ir",
     "l:irse",
     "l:lado",
@@ -193,6 +195,7 @@
     "l:medida",
     "l:necesitar",
     "l:obra",
+    "l:obrero",
     "l:opinar",
     "l:oír",
     "l:parecer",
@@ -215,11 +218,14 @@
     "l:tomar",
     "l:vecino",
     "l:ver",
+    "l:viejo",
     "l:viga",
     "p:a-cuadras-de",
     "p:a-la-altura-de",
+    "p:cuando-basic",
     "p:days-el-lunes",
     "p:directions-cuadras",
+    "p:empezar-terminar",
     "p:estar-a",
     "p:estar-de-acuerdo-con-en",
     "p:exclamations-basic",
@@ -241,6 +247,7 @@
     "p:sobre-todo",
     "p:sobre-todo-solo",
     "p:street-names",
-    "p:time-sequence-basic"
+    "p:time-sequence-basic",
+    "p:viejo-antiguo-mayor"
   ]
 }

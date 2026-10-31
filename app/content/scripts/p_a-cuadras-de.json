@@ -174,7 +174,7 @@
     },
     {
       "wrong": "Vivo a dos manzanas de aquí.",
-      "right": "Vivo a una cuadra de aquí.",
+      "right": "Vivo a dos cuadras de aquí.",
       "why": "Almost. For distance Colombians count *cuadras*; a *manzana* is the whole block as an area."
     }
   ],

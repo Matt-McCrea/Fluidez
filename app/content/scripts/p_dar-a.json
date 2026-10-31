@@ -31,7 +31,7 @@
       "en": "My room looked onto the street, and it was noisy."
     }
   ],
-  "rule": "To say which way a place faces, use *dar a* + the place: *La ventana da a la calle.*\n\nThe subject is the thing (window, terrace, room), not a person. It \"gives onto\" the street. It agrees as usual: *da* for one, *dan* for several.\n\n*A* + *el* becomes *al*: *da al parque*. With *la*, *un* and *una* it stays *a*: *da a la calle*, *da a un patio*.\n\nAlso with directions: *El balcón da al norte.* Do not use *mirar a* or *estar en* for this.",
+  "rule": "To say which way a place faces, use *dar a* + the place: *La ventana da a la calle.*\n\nThe subject is the thing (window, terrace, room), not a person. It \"gives onto\" the street. It agrees as usual: *da* for one, *dan* for several.\n\n*A* + *el* becomes *al*: *da al parque*. With *la*, *un* and *una* it stays *a*: *da a la calle*, *da a un patio*.\n\nAlso with directions: *El balcón da al norte.* You may also hear *mirar a* (*la casa mira al mar*), but *dar a* is the everyday choice. Never *estar en*: that puts the room inside the street.",
   "smallPrint": "Teachers call this an idiomatic use of *dar* (to give), meaning \"to face, to open onto\".",
   "readAndPick": [
     {
@@ -155,9 +155,9 @@
   ],
   "pitfalls": [
     {
-      "wrong": "La ventana mira la calle.",
-      "right": "La ventana da a la calle.",
-      "why": "Almost. A window does not look; it gives onto the street."
+      "wrong": "La terraza mira sobre el parque.",
+      "right": "La terraza da al parque.",
+      "why": "Almost. English \"looks over\" tempts *mira sobre*, but Spanish says the terrace *da al* park."
     },
     {
       "wrong": "La ventana da en la calle.",

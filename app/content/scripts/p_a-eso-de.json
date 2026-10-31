@@ -6,38 +6,167 @@
     "en": "We arrived at about nine."
   },
   "examples": [
-    { "es": "Llegamos a eso de las nueve.", "en": "We arrived at about nine." },
-    { "es": "A finales de mes no queda plata.", "en": "By the end of the month there's no money left." },
-    { "es": "Nos mudamos a principios de año.", "en": "We moved at the beginning of the year." },
-    { "es": "La obra termina a mediados de marzo.", "en": "The building work finishes in mid-March." },
-    { "es": "Vale abre el café a eso de las siete.", "en": "Vale opens the café at about seven." },
-    { "es": "Altamira vuelve a principios de mes.", "en": "Altamira comes back at the beginning of the month." }
+    {
+      "es": "Llegamos a eso de las nueve.",
+      "en": "We arrived at about nine."
+    },
+    {
+      "es": "A finales de mes no queda plata.",
+      "en": "By the end of the month there's no money left."
+    },
+    {
+      "es": "Nos mudamos a principios de año.",
+      "en": "We moved at the beginning of the year."
+    },
+    {
+      "es": "La obra termina a mediados de marzo.",
+      "en": "The building work finishes in mid-March."
+    },
+    {
+      "es": "Vale abre el café a eso de las siete.",
+      "en": "Vale opens the café at about seven."
+    },
+    {
+      "es": "La gente de Altamira vuelve a principios de mes.",
+      "en": "The Altamira people come back at the beginning of the month."
+    }
   ],
   "rule": "To say \"about\" a clock time, use *a eso de* before the hour: *a eso de las nueve*. It is not exact, and that is the point.\n\nTo point at part of a month or a year, use *a* plus a word for where you are in it, then *de*:\n\n*a principios de* = at the beginning of\n*a mediados de* = in the middle of\n*a finales de* = at the end of\n\nAfter *de* comes the month or period: *a principios de año*, *a mediados de marzo*, *a finales de mes*.\n\nEnglish uses \"around\", \"early\", \"mid\" and \"late\", all in different spots. Spanish keeps one shape: *a ... de*.",
   "smallPrint": "Teachers call these approximating adverbial phrases. *A eso de* means \"around\"; *a principios, mediados, finales de* locate a moment inside a period.",
   "readAndPick": [
-    { "es": "Llegamos a eso de las nueve.", "options": ["We arrived at exactly nine.", "We arrived at about nine.", "We arrived after nine."], "answer": 1 },
-    { "es": "A finales de mes no queda plata.", "options": ["At the start of the month there's no money left.", "In the middle of the month there's no money left.", "By the end of the month there's no money left."], "answer": 2 },
-    { "es": "Nos mudamos a principios de año.", "options": ["We moved at the beginning of the year.", "We moved at the end of the year.", "We moved in the middle of the year."], "answer": 0 },
-    { "es": "La obra termina a mediados de marzo.", "options": ["The work finishes at the start of March.", "The work finishes in mid-March.", "The work finishes at the end of March."], "answer": 1 },
-    { "es": "Vale abre el café a eso de las siete.", "options": ["Vale opens the café at seven sharp.", "Vale opens the café at about seven."], "answer": 1 },
-    { "es": "Altamira vuelve a principios de mes.", "options": ["Altamira comes back at the end of the month.", "Altamira comes back in the middle of the month.", "Altamira comes back at the beginning of the month."], "answer": 2 },
-    { "es": "Nos vemos a eso de las tres.", "options": ["We see each other at about three.", "We see each other at exactly three.", "We saw each other at three."], "answer": 0 },
-    { "es": "Termino a finales de año.", "options": ["I finish at the beginning of the year.", "I finish at the end of the year.", "I finish in the middle of the year."], "answer": 1 }
+    {
+      "es": "Llegamos a eso de las nueve.",
+      "options": [
+        "We arrived at exactly nine.",
+        "We arrived at about nine.",
+        "We arrived after nine."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A finales de mes no queda plata.",
+      "options": [
+        "At the start of the month there's no money left.",
+        "In the middle of the month there's no money left.",
+        "By the end of the month there's no money left."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Nos mudamos a principios de año.",
+      "options": [
+        "We moved at the beginning of the year.",
+        "We moved at the end of the year.",
+        "We moved in the middle of the year."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La obra termina a mediados de marzo.",
+      "options": [
+        "The work finishes at the start of March.",
+        "The work finishes in mid-March.",
+        "The work finishes at the end of March."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale abre el café a eso de las siete.",
+      "options": [
+        "Vale opens the café at seven sharp.",
+        "Vale opens the café at about seven.",
+        "Vale closes the café at about seven."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La gente de Altamira vuelve a principios de mes.",
+      "options": [
+        "The Altamira people come back at the end of the month.",
+        "The Altamira people come back in the middle of the month.",
+        "The Altamira people come back at the beginning of the month."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Nos vemos a eso de las tres.",
+      "options": [
+        "See you at about three.",
+        "See you at exactly three.",
+        "We saw each other at three."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Termino a finales de año.",
+      "options": [
+        "I finish at the beginning of the year.",
+        "I finish at the end of the year.",
+        "I finish in the middle of the year."
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick the right phrase and type the whole sentence: *Llegamos ___ las nueve.* (a eso de or en)", "answer": "Llegamos a eso de las nueve.", "accept": [], "why": "*A eso de* is the \"about\" before a clock time." },
-    { "prompt": "Type in Spanish: By the end of the month there's no money left.", "answer": "A finales de mes no queda plata.", "accept": [], "why": "*A finales de* plus the period gives \"by the end of\"." },
-    { "prompt": "Type in Spanish: We moved at the beginning of the year.", "answer": "Nos mudamos a principios de año.", "accept": [], "why": "*A principios de* means \"at the beginning of\"." },
-    { "prompt": "Type in Spanish: The building work finishes in mid-March.", "answer": "La obra termina a mediados de marzo.", "accept": [], "why": "*A mediados de* means \"in the middle of\"." },
-    { "prompt": "Type in Spanish: Vale opens the café at about seven.", "answer": "Vale abre el café a eso de las siete.", "accept": [], "why": "*A eso de las* plus the hour keeps the time approximate." },
-    { "prompt": "Make it about the start: *Altamira vuelve a finales de mes.* Say: Altamira comes back at the beginning of the month.", "answer": "Altamira vuelve a principios de mes.", "accept": [], "why": "Swap *finales* for *principios* to move to the start." },
-    { "prompt": "Type in Spanish: We see each other at about three.", "answer": "Nos vemos a eso de las tres.", "accept": [], "why": "Same *a eso de las* frame, new hour." }
+    {
+      "prompt": "Pick the right phrase and type the whole sentence: *Llegamos ___ las nueve.* (a eso de or en)",
+      "answer": "Llegamos a eso de las nueve.",
+      "accept": [],
+      "why": "*A eso de* is the \"about\" before a clock time."
+    },
+    {
+      "prompt": "Type in Spanish: By the end of the month there's no money left.",
+      "answer": "A finales de mes no queda plata.",
+      "accept": [],
+      "why": "*A finales de* plus the period gives \"by the end of\"."
+    },
+    {
+      "prompt": "Type in Spanish: We moved at the beginning of the year.",
+      "answer": "Nos mudamos a principios de año.",
+      "accept": [],
+      "why": "*A principios de* means \"at the beginning of\"."
+    },
+    {
+      "prompt": "Type in Spanish: The building work finishes in mid-March.",
+      "answer": "La obra termina a mediados de marzo.",
+      "accept": [],
+      "why": "*A mediados de* means \"in the middle of\"."
+    },
+    {
+      "prompt": "Type in Spanish: Vale opens the café at about seven.",
+      "answer": "Vale abre el café a eso de las siete.",
+      "accept": [],
+      "why": "*A eso de las* plus the hour keeps the time approximate."
+    },
+    {
+      "prompt": "Make it about the start: *La gente de Altamira vuelve a finales de mes.* Say: The Altamira people come back at the beginning of the month.",
+      "answer": "La gente de Altamira vuelve a principios de mes.",
+      "accept": [],
+      "why": "Swap *finales* for *principios* to move to the start."
+    },
+    {
+      "prompt": "Type in Spanish: See you at about three.",
+      "answer": "Nos vemos a eso de las tres.",
+      "accept": [],
+      "why": "Same *a eso de las* frame, new hour."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Llegamos alrededor las nueve.", "right": "Llegamos a eso de las nueve.", "why": "Almost. The everyday way to say \"around\" a time is *a eso de*." },
-    { "wrong": "Nos mudamos a principios del año.", "right": "Nos mudamos a principios de año.", "why": "Almost. After *a principios de* you don't need an article: *de año*." },
-    { "wrong": "Llegamos a eso de nueve.", "right": "Llegamos a eso de las nueve.", "why": "Almost. Clock times keep their *las*: *las nueve*." }
+    {
+      "wrong": "Llegamos alrededor las nueve.",
+      "right": "Llegamos alrededor de las nueve.",
+      "why": "Almost. *Alrededor* needs *de* before the time, just like *a eso de*."
+    },
+    {
+      "wrong": "Nos mudamos a principios del año.",
+      "right": "Nos mudamos a principios de año.",
+      "why": "Almost. After *a principios de* you don't need an article: *de año*."
+    },
+    {
+      "wrong": "Llegamos a eso de nueve.",
+      "right": "Llegamos a eso de las nueve.",
+      "why": "Almost. Clock times keep their *las*: *las nueve*."
+    }
   ],
   "personal": "Say roughly when something happens in your week or year, with *a eso de las* or *a principios de*."
 }

@@ -28,7 +28,7 @@
     },
     {
       "es": "Lo primero que llamó la atención fue el olor a café.",
-      "en": "The first thing that caught my attention was the smell of coffee."
+      "en": "The first thing that stood out was the smell of coffee."
     }
   ],
   "rule": "Start a description with an anchor, then give details, moving from outside to inside.\n\n*Lo primero que llama la atención es...* is \"the first thing that strikes you is...\". It uses *lo*, not \"the first thing\" word for word. Change *llama* to *llamó* for a past scene.\n\n*A primera vista* is \"at first sight\", often followed by a *but*.\n\n*Visto desde afuera / adentro / la calle / arriba* is \"seen from...\". No \"it\" is needed: the thing described follows.\n\nThe verb after is *parece*: *parece abandonado*, never *se parece*.",

@@ -23,8 +23,8 @@
       "en": "The higher we climb, the colder it gets."
     },
     {
-      "es": "Mariana escribe al tiempo que escucha a Don Hernando.",
-      "en": "Mariana writes while she listens to Don Hernando."
+      "es": "Mariana escribe al tiempo que escucha a Vale.",
+      "en": "Mariana writes while she listens to Vale."
     },
     {
       "es": "A medida que pasaban los meses, Tomás entendía mejor el café.",
@@ -75,11 +75,11 @@
       "answer": 1
     },
     {
-      "es": "Mariana escribe al tiempo que escucha a Don Hernando.",
+      "es": "Mariana escribe al tiempo que escucha a Vale.",
       "options": [
-        "Mariana writes and then listens to Don Hernando.",
-        "The more Mariana writes, the more Don Hernando listens.",
-        "Mariana writes while she listens to Don Hernando."
+        "Mariana writes and then listens to Vale.",
+        "The more Mariana writes, the more Vale listens.",
+        "Mariana writes while she listens to Vale."
       ],
       "answer": 2
     },
@@ -134,10 +134,10 @@
       "why": "Two actions at the very same moment, with no gradual change, so *al tiempo que*."
     },
     {
-      "prompt": "Type in Spanish: \"Mariana writes while she listens to Don Hernando.\"",
-      "answer": "Mariana escribe al tiempo que escucha a Don Hernando.",
+      "prompt": "Type in Spanish: \"Mariana writes while she listens to Vale.\"",
+      "answer": "Mariana escribe al tiempo que escucha a Vale.",
       "accept": [
-        "Mariana escribe al tiempo que escucha a Don Hernando."
+        "Mariana escribe mientras escucha a Vale."
       ],
       "why": "Two things at once, so *al tiempo que* joins them."
     },

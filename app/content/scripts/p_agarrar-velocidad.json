@@ -1,7 +1,7 @@
 {
   "node": "p:agarrar-velocidad",
   "hook": {
-    "line": "Don Hernando drove a taxi for forty years, and he has strong views on how a bus should take a hill. Spanish has one phrase for speeding up and another for going flat out.",
+    "line": "Don Hernando drove a taxi for forty years, and he always had strong views on how a bus should take a hill. Spanish has one phrase for speeding up and another for going flat out.",
     "es": "El bus agarró velocidad en la bajada.",
     "en": "The bus picked up speed on the way down."
   },

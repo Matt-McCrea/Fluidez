@@ -173,9 +173,9 @@
       "why": "Almost. *Mayoría* is a feminine noun, so it takes *la*."
     },
     {
-      "wrong": "Un grupo de turistas llegó y estaban cansados.",
-      "right": "Un grupo de turistas llegó y estaba cansado.",
-      "why": "Almost. If you pick the singular verb, keep it singular all the way through the sentence."
+      "wrong": "La mayoría de la gente quieren café.",
+      "right": "La mayoría de la gente quiere café.",
+      "why": "Almost. With *la gente* after *de*, nothing in the phrase is plural, so the verb stays singular."
     }
   ],
   "personal": "Tell me what most of your friends or neighbours do, starting with *La mayoría de* and picking a singular or plural verb."

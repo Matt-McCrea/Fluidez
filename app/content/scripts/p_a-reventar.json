@@ -11,7 +11,7 @@
       "en": "The stadium was packed to bursting."
     },
     {
-      "es": "El bus iba hasta el tope.",
+      "es": "El bus iba lleno hasta el tope.",
       "en": "The bus was packed."
     },
     {
@@ -31,7 +31,7 @@
       "en": "My phone is crammed with photos."
     }
   ],
-  "rule": "To say something is completely full, use *lleno a reventar*: full until it bursts.\n\nIt works for places, containers and crowds: *El café estaba lleno a reventar.*\n\nTwo more ways to say it:\n*hasta el tope* (to the top): *El bus iba hasta el tope.*\n*repleto de* (crammed with): *La nevera está repleta de comida.*\n\n*Lleno* agrees with what it describes: *llena a reventar* for *la maleta*. *A reventar* itself never changes.\n\nEnglish says \"packed\" or \"jam-packed\". The Spanish picture is bursting.",
+  "rule": "To say something is completely full, use *lleno a reventar*: full until it bursts.\n\nIt works for places, containers and crowds: *El café estaba lleno a reventar.*\n\nTwo more ways to say it:\n*lleno hasta el tope* (full to the top): *El bus iba lleno hasta el tope.*\n*repleto de* (crammed with): *La nevera está repleta de comida.*\n\n*Lleno* agrees with what it describes: *llena a reventar* for *la maleta*. *A reventar* itself never changes.\n\nEnglish says \"packed\" or \"jam-packed\". The Spanish picture is bursting.",
   "smallPrint": "Teachers call this an intensifying phrase (*locución intensificadora*). *Reventar* means to burst.",
   "readAndPick": [
     {
@@ -44,7 +44,7 @@
       "answer": 1
     },
     {
-      "es": "El bus iba hasta el tope.",
+      "es": "El bus iba lleno hasta el tope.",
       "options": [
         "The bus went to the top of the hill.",
         "The bus was nearly empty.",
@@ -98,7 +98,7 @@
       "answer": 2
     },
     {
-      "es": "El vaso está lleno a reventar, no le eches más.",
+      "es": "El vaso está lleno hasta el tope, no le eches más.",
       "options": [
         "The glass is full to the brim, don't add more.",
         "The glass is empty, add more.",
@@ -128,9 +128,9 @@
     },
     {
       "prompt": "Type in Spanish: \"The bus was packed.\" Use *hasta el tope*.",
-      "answer": "El bus iba hasta el tope.",
+      "answer": "El bus iba lleno hasta el tope.",
       "accept": [
-        "El bus iba lleno hasta el tope."
+        "El bus iba hasta el tope."
       ],
       "why": "*Hasta el tope* is the \"to the top\" way to say it."
     },

@@ -15,7 +15,7 @@
       "en": "The plane left bound for Lima."
     },
     {
-      "es": "Tomás anduvo por la Candelaria sin rumbo fijo.",
+      "es": "Tomás anduvo por La Candelaria sin rumbo fijo.",
       "en": "Tomás wandered around La Candelaria with no fixed direction."
     },
     {
@@ -71,7 +71,7 @@
       "answer": 2
     },
     {
-      "es": "Tomás anduvo por la Candelaria sin rumbo fijo.",
+      "es": "Tomás anduvo por La Candelaria sin rumbo fijo.",
       "options": [
         "Tomás walked to La Candelaria for the café.",
         "Tomás wandered around La Candelaria with no fixed direction.",
@@ -115,8 +115,8 @@
       "why": "We know where we are going, so *con rumbo a* + the place."
     },
     {
-      "prompt": "Choose *con rumbo a* or *sin rumbo fijo*: Tomás anduvo por la Candelaria ___. Type the whole sentence.",
-      "answer": "Tomás anduvo por la Candelaria sin rumbo fijo.",
+      "prompt": "Choose *con rumbo a* or *sin rumbo fijo*: Tomás anduvo por La Candelaria ___. Type the whole sentence.",
+      "answer": "Tomás anduvo por La Candelaria sin rumbo fijo.",
       "accept": [],
       "why": "He is wandering with no destination, so *sin rumbo fijo*."
     },

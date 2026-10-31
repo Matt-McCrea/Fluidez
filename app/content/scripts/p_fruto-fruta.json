@@ -31,7 +31,7 @@
       "en": "The plant's fruits are small and red."
     }
   ],
-  "rule": "*La fruta* is the fruit you eat, as a general thing: *Compré fruta*. It is feminine and usually has no plural.\n\n*El fruto* is the result of effort: *el fruto de muchos años de trabajo*. It is also the botanical fruit of a plant (*los frutos de la planta*).\n\nA few other pairs work like this. *La leña* is firewood in general; *el leño* is one log. It is a short list to recognise, not a rule to apply to every word.\n\nIf you mix them up people understand, but *fruto* for lunch sounds odd.",
+  "rule": "*La fruta* is the fruit you eat, as a general thing: *Compré fruta*. It is feminine, and like English \"fruit\" it usually stays singular (*las frutas* is for different kinds).\n\n*El fruto* is the result of effort: *el fruto de muchos años de trabajo*. It is also the botanical fruit of a plant (*los frutos de la planta*).\n\nA few other pairs work like this. *La leña* is firewood in general; *el leño* is one log. It is a short list to recognise, not a rule to apply to every word.\n\nIf you mix them up people understand, but *fruto* for lunch sounds odd.",
   "smallPrint": "Teachers call these nouns whose gender changes the meaning: *la fruta / el fruto*, *la leña / el leño*.",
   "readAndPick": [
     {
@@ -135,9 +135,7 @@
     {
       "prompt": "Type in Spanish: \"The café is the result of Rosa's work.\"",
       "answer": "El café es el fruto del trabajo de Rosa.",
-      "accept": [
-        "El café es el fruto del trabajo de Rosa."
-      ],
+      "accept": [],
       "why": "A result of work is *fruto*, and *de* + *el* becomes *del*."
     },
     {

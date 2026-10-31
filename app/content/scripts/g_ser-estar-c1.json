@@ -1,7 +1,7 @@
 {
   "node": "g:ser-estar-c1",
   "hook": {
-    "line": "Don Hernando has just told Tomás about his nephew, and Tomás almost says the wrong thing. Spanish has small phrases that make *ser* and *estar* say much more.",
+    "line": "Vale has just told Tomás about her cousin, and Tomás almost says the wrong thing. Spanish has small phrases that make *ser* and *estar* say much more.",
     "es": "Ahora está de mesero en Cartagena.",
     "en": "He's working as a waiter in Cartagena now."
   },
@@ -15,7 +15,7 @@
       "en": "The table is made of wood."
     },
     {
-      "es": "Está para llover.",
+      "es": "Está por llover.",
       "en": "It's about to rain."
     },
     {
@@ -31,8 +31,8 @@
       "en": "The bill is still to be paid."
     }
   ],
-  "rule": "You know *ser* for what something is and *estar* for how or where. Four small frames sharpen them:\n\n*estar de* + job: working as something for now. *Está de mesero* means he's waiting tables at the moment. *Es mesero* means that is his profession.\n\n*ser de* + material: what it is made of. *El anillo es de oro.*\n\n*estar para* + noun or verb: about to happen, or in the mood for it. *Está para llover. No estoy para bromas.*\n\n*estar por* + verb: still to be done. *Eso está por verse.*",
-  "smallPrint": "Teachers call *estar de* a temporary role, and *estar para* and *estar por* the \"purpose\" and \"pending\" uses of those prepositions.",
+  "rule": "You know *ser* for what something is and *estar* for how or where. Four small frames sharpen them:\n\n*estar de* + job: working as something for now. *Está de mesero* means he's waiting tables at the moment. *Es mesero* means that is his profession.\n\n*ser de* + material: what it is made of. *El anillo es de oro.*\n\n*estar por* + verb: about to happen, or still to be done. *Está por llover. Eso está por verse.*\n\n*estar para* + noun: in the mood for it. *No estoy para bromas.*",
+  "smallPrint": "Teachers call *estar de* a temporary role. *Estar por* + infinitive is the Latin American way to say \"about to\"; Spain often says *estar para* or *estar a punto de*.",
   "readAndPick": [
     {
       "es": "Ahora está de mesero en Cartagena.",
@@ -53,7 +53,7 @@
       "answer": 0
     },
     {
-      "es": "Está para llover.",
+      "es": "Está por llover.",
       "options": [
         "It rained a lot.",
         "It is raining all week.",
@@ -64,7 +64,7 @@
     {
       "es": "Eso está por verse.",
       "options": [
-        "That is about to be seen.",
+        "That has already been seen.",
         "That remains to be seen.",
         "That cannot be seen."
       ],
@@ -128,9 +128,12 @@
     },
     {
       "prompt": "Type in Spanish: It's about to rain.",
-      "answer": "Está para llover.",
-      "accept": [],
-      "why": "*Estar para* says something is about to happen."
+      "answer": "Está por llover.",
+      "accept": [
+        "Está a punto de llover.",
+        "Está para llover."
+      ],
+      "why": "*Estar por* + a verb says something is about to happen."
     },
     {
       "prompt": "Type in Spanish: I'm not in the mood for jokes today.",
@@ -142,7 +145,9 @@
       "prompt": "Say it about Vale: *Ahora está de mesero en Cartagena.*",
       "answer": "Ahora Vale está de mesera en Cartagena.",
       "accept": [
-        "Ahora ella está de mesera en Cartagena."
+        "Ahora ella está de mesera en Cartagena.",
+        "Vale ahora está de mesera en Cartagena.",
+        "Vale está de mesera en Cartagena ahora."
       ],
       "why": "The job word agrees with a woman, so *mesera*."
     },
@@ -167,7 +172,7 @@
     {
       "wrong": "Eso está para verse.",
       "right": "Eso está por verse.",
-      "why": "Almost. *Por* is for what is still pending; *para* is for what is about to happen."
+      "why": "Almost. What is still to come takes *por*; *para* is for your mood."
     },
     {
       "wrong": "No estoy por bromas hoy.",

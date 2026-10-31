@@ -175,8 +175,8 @@
   },
   {
     "id": "u58-0008",
-    "es": "A medida que arreglaban la máquina de música, el café se llenaba de canciones.",
-    "en": "As they fixed the music machine, the café filled with songs.",
+    "es": "A medida que arreglaban la rocola, el café se llenaba de canciones.",
+    "en": "As they fixed the jukebox, the café filled with songs.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -188,9 +188,7 @@
       "l:café",
       "l:canción",
       "l:llenar",
-      "l:medida",
-      "l:máquina",
-      "l:música"
+      "l:medida"
     ],
     "targets": [
       "g:temporal-advanced"
@@ -251,8 +249,8 @@
   },
   {
     "id": "u58-0011",
-    "es": "Nada más ver el techo, Vale se quedó callada.",
-    "en": "As soon as she saw the ceiling, Vale went quiet.",
+    "es": "Vale se quedó callada nada más ver el techo.",
+    "en": "Vale went quiet as soon as she saw the ceiling.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -276,8 +274,8 @@
   },
   {
     "id": "u58-0012",
-    "es": "A medida que subía la humedad, la madera se abría.",
-    "en": "As the humidity rose, the wood opened up.",
+    "es": "La madera se abría a medida que subía la humedad.",
+    "en": "The wood opened up as the humidity rose.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -350,8 +348,8 @@
   },
   {
     "id": "u58-0015",
-    "es": "Nada más cerrar la puerta, Simón empezó a gritar.",
-    "en": "As soon as I shut the door, Simón started to shout.",
+    "es": "Simón empezó a gritar nada más cerrar la puerta.",
+    "en": "Simón started to shout as soon as the door shut.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -574,8 +572,8 @@
   },
   {
     "id": "u58-0024",
-    "es": "A medida que Vale probaba los postres, anotaba cambios.",
-    "en": "As Vale tasted the desserts, she noted down changes.",
+    "es": "Vale anotaba cambios a medida que probaba los postres.",
+    "en": "Vale noted down changes as she tasted the desserts.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -671,11 +669,12 @@
   },
   {
     "id": "u58-0028",
-    "es": "A medida que llegaban los vecinos, había menos sillas.",
-    "en": "As the neighbours arrived, there were fewer chairs.",
+    "es": "Había menos sillas a medida que llegaban los vecinos.",
+    "en": "There were fewer chairs as the neighbours arrived.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:comparatives",
       "g:gender-articles",
       "g:imperfect-habitual",
       "g:imperfect-states",
@@ -695,15 +694,17 @@
   },
   {
     "id": "u58-0029",
-    "es": "Nada más contestar el teléfono, reconocí su voz.",
-    "en": "As soon as I picked up the phone, I recognised her voice.",
+    "es": "Reconocí su voz nada más contestar el teléfono.",
+    "en": "I recognised her voice as soon as I picked up the phone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:present-ar",
       "g:preterite-er-ir",
       "g:temporal-advanced",
       "l:contestar",
+      "l:nadar",
       "l:reconocer",
       "l:teléfono",
       "l:voz",
@@ -920,17 +921,19 @@
   },
   {
     "id": "u58-0038",
-    "es": "A medida que aprendía, Tomás hablaba con menos miedo.",
-    "en": "As he learned, Tomás spoke with less fear.",
+    "es": "Tomás hablaba con menos miedo a medida que aprendía.",
+    "en": "Tomás spoke with less fear as he learned.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:comparatives",
       "g:imperfect-habitual",
       "g:temporal-advanced",
       "l:aprender",
       "l:hablar",
       "l:medida",
-      "l:miedo"
+      "l:miedo",
+      "p:miedo-a"
     ],
     "targets": [
       "g:temporal-advanced"
@@ -942,18 +945,20 @@
   },
   {
     "id": "u58-0039",
-    "es": "Nada más pisar la calle, nos cayó el agua.",
-    "en": "As soon as we stepped into the street, the rain came down on us.",
+    "es": "Nos cayó el agua nada más pisar la calle.",
+    "en": "The rain came down on us as soon as we stepped into the street.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:parecer-quedar",
+      "g:present-ar",
       "g:preterite-spelling-stem",
       "g:temporal-advanced",
       "l:agua",
       "l:caer",
       "l:calle",
+      "l:nadar",
       "l:pisar",
       "p:el-agua-fria"
     ],
@@ -967,8 +972,8 @@
   },
   {
     "id": "u58-0040",
-    "es": "A medida que avanzaba el invierno, las noches eran más largas.",
-    "en": "As winter went on, the nights got longer.",
+    "es": "En Toronto, a medida que avanzaba el invierno, las noches eran más largas.",
+    "en": "In Toronto, as winter went on, the nights got longer.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1165,8 +1170,8 @@
   },
   {
     "id": "u58-0048",
-    "es": "A medida que se enfriaba el café, perdía el aroma.",
-    "en": "As the coffee cooled, it lost its aroma.",
+    "es": "El café perdía el aroma a medida que se enfriaba.",
+    "en": "The coffee lost its aroma as it cooled.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1339,19 +1344,19 @@
   },
   {
     "id": "u58-0055",
-    "es": "A medida que se fue apagando la tarde, encendieron las lámparas.",
-    "en": "As the afternoon faded, they turned on the lamps.",
+    "es": "Encendieron las lámparas a medida que se apagaba la tarde.",
+    "en": "They turned on the lamps as the afternoon faded.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:gerund-ways",
+      "g:imperfect-habitual",
+      "g:pret-vs-imperfect",
       "g:preterite-er-ir",
-      "g:preterite-ser-ir-hacer",
+      "g:reflexive-routine",
       "g:temporal-advanced",
-      "l:apagar",
+      "l:apagarse",
       "l:encender",
-      "l:irse",
       "l:lámpara",
       "l:medida",
       "l:tarde"
@@ -1390,11 +1395,12 @@
   },
   {
     "id": "u58-0057",
-    "es": "A medida que crecía la fila, Vale sacaba más pan.",
-    "en": "As the line grew, Vale brought out more bread.",
+    "es": "Vale sacaba más pan a medida que crecía la fila.",
+    "en": "Vale brought out more bread as the line grew.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:comparatives",
       "g:gender-articles",
       "g:imperfect-habitual",
       "g:temporal-advanced",
@@ -1414,8 +1420,8 @@
   },
   {
     "id": "u58-0058",
-    "es": "Nada más ver la hora, salí corriendo.",
-    "en": "As soon as I saw the time, I ran out.",
+    "es": "Salí corriendo nada más ver la hora.",
+    "en": "I ran out as soon as I saw the time.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1615,7 +1621,7 @@
   {
     "id": "u58-0066",
     "es": "Nada más caer la tarde, empieza el frío.",
-    "en": "As soon as the afternoon ends, the cold starts.",
+    "en": "As soon as evening falls, the cold sets in.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1736,11 +1742,12 @@
   },
   {
     "id": "u58-0071",
-    "es": "A medida que hablábamos, yo entendía mejor.",
-    "en": "As we talked, I understood better.",
+    "es": "Yo entendía mejor a medida que hablábamos.",
+    "en": "I understood better as we talked.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:comparatives",
       "g:imperfect-habitual",
       "g:temporal-advanced",
       "l:entender",
@@ -1808,8 +1815,8 @@
   },
   {
     "id": "u58-0074",
-    "es": "Nada más subir al bus, me dormí.",
-    "en": "As soon as I got on the bus, I fell asleep.",
+    "es": "Me dormí nada más subir al bus.",
+    "en": "I fell asleep as soon as I got on the bus.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1831,28 +1838,25 @@
   },
   {
     "id": "u58-0075",
-    "es": "A medida que se acerque el invierno, compraremos más leña.",
-    "en": "As winter approaches, we'll buy more firewood.",
+    "es": "A medida que lleguen los pedidos, contrataremos más gente.",
+    "en": "As the orders come in, we'll hire more people.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
       "g:gender-articles",
-      "g:reflexive-routine",
       "g:subj-cuando-future",
       "g:subj-wanting",
       "g:temporal-advanced",
-      "l:acercarse",
-      "l:comprar",
-      "l:invierno",
-      "l:leña",
+      "l:contratar",
+      "l:gente",
+      "l:llegar",
       "l:medida",
-      "p:acercarse-alejarse",
-      "p:fruto-fruta"
+      "l:pedido",
+      "p:la-gente-singular"
     ],
     "targets": [
-      "g:temporal-advanced",
-      "p:fruto-fruta"
+      "g:temporal-advanced"
     ],
     "kind": "statement",
     "unit": "u58",
@@ -1987,11 +1991,12 @@
   },
   {
     "id": "u58-0081",
-    "es": "A medida que nos conocíamos, nos reíamos más.",
-    "en": "As we got to know each other, we laughed more.",
+    "es": "Nos reíamos más a medida que nos conocíamos.",
+    "en": "We laughed more as we got to know each other.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:comparatives",
       "g:imperfect-habitual",
       "g:temporal-advanced",
       "l:conocer",
@@ -2115,8 +2120,8 @@
   },
   {
     "id": "u58-0086",
-    "es": "Nada más entregar la llave, me sentí liviano.",
-    "en": "As soon as I handed over the key, I felt light.",
+    "es": "Me sentí liviano nada más entregar la llave.",
+    "en": "I felt light as soon as I handed over the key.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2318,8 +2323,8 @@
   },
   {
     "id": "u58-0094",
-    "es": "Nada más llegar la primavera, la plaza se llena de flores.",
-    "en": "As soon as spring arrives, the square fills with flowers.",
+    "es": "Nada más llegar diciembre, la plaza se llena de luces.",
+    "en": "As soon as December arrives, the square fills with lights.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2327,11 +2332,11 @@
       "g:present-ar",
       "g:se-impersonal",
       "g:temporal-advanced",
-      "l:flor",
+      "l:diciembre",
       "l:llegar",
       "l:llenar",
-      "l:plaza",
-      "l:primavera"
+      "l:luz",
+      "l:plaza"
     ],
     "targets": [
       "g:temporal-advanced"
@@ -2343,8 +2348,8 @@
   },
   {
     "id": "u58-0095",
-    "es": "A medida que lo explicaba, Tomás se animaba.",
-    "en": "As he explained it, Tomás got more animated.",
+    "es": "Tomás se animaba a medida que lo explicaba.",
+    "en": "Tomás got more animated as he explained it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2784,27 +2789,27 @@
   },
   {
     "id": "u58-0113",
-    "es": "Cuanto más se acerca el invierno, más temprano oscurece.",
-    "en": "The closer winter gets, the earlier it gets dark.",
+    "es": "Cuanto más alto vuela el avión, más pequeña se ve la cordillera.",
+    "en": "The higher the plane flies, the smaller the mountain range looks.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:comparative-advanced-c1",
       "g:gender-articles",
-      "g:present-ar",
       "g:present-er-ir",
-      "g:reflexive-routine",
-      "l:acercarse",
+      "g:se-impersonal",
+      "g:stem-boot",
+      "l:alto",
+      "l:avión",
+      "l:cordillera",
       "l:cuanto",
-      "l:invierno",
-      "l:oscurecer",
-      "l:temprano",
-      "p:acercarse-alejarse",
-      "p:encarecer-abaratar"
+      "l:pequeño",
+      "l:ver",
+      "l:volar"
     ],
     "targets": [
-      "g:comparative-advanced-c1",
-      "p:encarecer-abaratar"
+      "g:comparative-advanced-c1"
     ],
     "kind": "statement",
     "unit": "u58",
@@ -2813,7 +2818,7 @@
   },
   {
     "id": "u58-0114",
-    "es": "Cuanto menos tiempo tengamos, más rápido tenemos que trabajar.",
+    "es": "Cuanto menos tiempo tenemos, más rápido tenemos que trabajar.",
     "en": "The less time we have, the faster we have to work.",
     "accept": [],
     "acceptEn": [],
@@ -2821,12 +2826,10 @@
       "c:tienes",
       "g:comparative-advanced-c1",
       "g:comparatives",
-      "g:subj-wanting",
       "g:verb-infinitive",
       "l:cuanto",
       "l:rápido",
       "l:tener",
-      "l:tengamos",
       "l:tiempo",
       "l:trabajar"
     ],
@@ -3152,23 +3155,20 @@
   },
   {
     "id": "u58-0127",
-    "es": "Cuanto menos lo esperábamos, más cerca estaba el final de la obra.",
-    "en": "The less we expected it, the closer the end of the work was.",
+    "es": "Cuanto más avanzaba la obra, menos polvo había en las mesas.",
+    "en": "The further the work went, the less dust there was on the tables.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparative-advanced-c1",
-      "g:direct-objects",
-      "g:estar-location-states",
       "g:gender-articles",
       "g:imperfect-habitual",
       "g:imperfect-states",
-      "l:cerca",
+      "l:avanzar",
       "l:cuanto",
-      "l:esperar",
-      "l:estar",
-      "l:final",
-      "l:obra"
+      "l:mesa",
+      "l:obra",
+      "l:polvo"
     ],
     "targets": [
       "g:comparative-advanced-c1"
@@ -3501,15 +3501,15 @@
   },
   {
     "id": "u58-0140",
-    "es": "Cuanto más cuenta Hernando la misma anécdota, más larga se vuelve.",
-    "en": "The more Hernando tells the same story, the longer it gets.",
+    "es": "Cuanto más contaba Hernando la misma anécdota, más larga se volvía.",
+    "en": "The more Hernando told the same story, the longer it got.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:comparative-advanced-c1",
       "g:gender-articles",
-      "g:stem-boot",
+      "g:imperfect-habitual",
       "g:verbs-of-change",
       "l:anécdota",
       "l:contar",
@@ -4290,18 +4290,17 @@
   },
   {
     "id": "u58-0171",
-    "es": "Cuanto menos camino quede, más rápido caminamos.",
+    "es": "Cuanto menos camino queda, más rápido caminamos.",
     "en": "The less road is left, the faster we walk.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparative-advanced-c1",
       "g:present-ar",
-      "g:subj-wanting",
       "l:caminar",
       "l:camino",
       "l:cuanto",
-      "l:quede",
+      "l:quedar",
       "l:rápido"
     ],
     "targets": [
@@ -4696,7 +4695,7 @@
   },
   {
     "id": "u58-0187",
-    "es": "Cuanto más viejo es el vino, más caro cuesta.",
+    "es": "Cuanto más viejo es el vino, más cuesta.",
     "en": "The older the wine, the more it costs.",
     "accept": [],
     "acceptEn": [],
@@ -4705,7 +4704,6 @@
       "g:gender-articles",
       "g:ser-identity",
       "g:stem-boot",
-      "l:caro",
       "l:costar",
       "l:cuanto",
       "l:ser",
@@ -4830,8 +4828,8 @@
   },
   {
     "id": "u58-0192",
-    "es": "¿Dónde queda? A dos cuadras de aquí.",
-    "en": "Where is it? Two blocks from here.",
+    "es": "¿Dónde queda?\nA dos cuadras de aquí.",
+    "en": "Where is it?\nTwo blocks from here.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4856,8 +4854,8 @@
   },
   {
     "id": "u58-0193",
-    "es": "El carro iba a toda velocidad cuando Tomás dio marcha atrás.",
-    "en": "The car was going at full speed when Tomás put it in reverse.",
+    "es": "El camión iba despacio y dio marcha atrás para entrar al patio.",
+    "en": "The truck was going slowly and reversed to get into the courtyard.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4866,20 +4864,20 @@
       "g:pret-vs-imperfect",
       "g:preterite-irregular-strong",
       "l:atrás",
-      "l:carro",
+      "l:camión",
       "l:dar",
+      "l:despacio",
+      "l:entrar",
       "l:ir",
       "l:marcha",
-      "l:velocidad",
-      "p:agarrar-velocidad",
-      "p:cuando-basic",
+      "l:patio",
       "p:dar-marcha-atras",
       "p:ir-a-velocidad",
-      "p:ir-a-venir-de-place"
+      "p:para-inf",
+      "p:para-inf-purpose"
     ],
     "targets": [
       "l:marcha",
-      "p:agarrar-velocidad",
       "p:dar-marcha-atras"
     ],
     "kind": "statement",
@@ -5431,16 +5429,17 @@
   },
   {
     "id": "u58-0215",
-    "es": "Quedé sin rumbo cuando cerraron la fábrica.",
+    "es": "Me quedé sin rumbo cuando cerraron la fábrica.",
     "en": "I was left without direction when they closed the factory.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
+      "g:reflexive-routine",
       "l:cerrar",
       "l:fábrica",
-      "l:quedar",
+      "l:quedarse",
       "l:rumbo",
       "p:cuando-basic",
       "p:sin-rumbo-fijo"
@@ -5560,20 +5559,22 @@
   },
   {
     "id": "u58-0220",
-    "es": "Cuanto más dudaba, más marcha atrás quería dar.",
+    "es": "Cuanto más dudaba, más ganas tenía de dar marcha atrás.",
     "en": "The more he doubted, the more he wanted to back out.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparative-advanced-c1",
       "g:imperfect-habitual",
-      "g:verb-infinitive",
+      "g:imperfect-states",
       "l:atrás",
       "l:cuanto",
       "l:dar",
       "l:dudar",
+      "l:ganas",
       "l:marcha",
-      "l:querer"
+      "l:tener",
+      "p:dar-marcha-atras"
     ],
     "targets": [
       "g:comparative-advanced-c1",
@@ -5712,15 +5713,15 @@
   },
   {
     "id": "u58-0226",
-    "es": "Hernando conoce un atajo que no sale en ningún mapa.",
-    "en": "Hernando knows a shortcut that isn't on any map.",
+    "es": "Hernando conocía un atajo que no salía en ningún mapa.",
+    "en": "Hernando knew a shortcut that wasn't on any map.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:imperfect-habitual",
       "g:indefinites",
       "g:negation-words",
-      "g:present-er-ir",
       "g:relative-que",
       "l:atajo",
       "l:conocer",
@@ -6328,18 +6329,23 @@
   },
   {
     "id": "u58-0250",
-    "es": "Mi cumpleaños está a la vuelta de la esquina.",
-    "en": "My birthday is just around the corner.",
+    "es": "Las vacaciones están a la vuelta de la esquina y todavía no tengo plan.",
+    "en": "The holidays are just around the corner and I still don't have a plan.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:a-la-vuelta-de-la-esquina",
+      "c:tengo",
+      "c:todavia-no",
       "g:estar-location-states",
-      "l:cumpleaños",
+      "g:gender-articles",
+      "g:yo-irregular",
       "l:esquina",
       "l:estar",
-      "l:vuelta",
-      "p:possessives-basic"
+      "l:plan",
+      "l:tener",
+      "l:vacación",
+      "l:vuelta"
     ],
     "targets": [
       "c:a-la-vuelta-de-la-esquina"
@@ -6520,20 +6526,18 @@
   },
   {
     "id": "u58-0258",
-    "es": "Hernando está a punto de llegar, de un momento a otro lo vemos entrar.",
-    "en": "Hernando is about to arrive, any minute now we'll see him walk in.",
+    "es": "Vale ya viene: de un momento a otro la vemos entrar.",
+    "en": "Vale is on her way: any minute now we'll see her walk in.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:de-un-momento-a-otro",
       "g:direct-objects",
-      "g:estar-location-states",
       "g:present-er-ir",
+      "g:stem-boot",
       "l:entrar",
-      "l:estar",
-      "l:llegar",
       "l:momento",
-      "l:punto",
+      "l:venir",
       "l:ver",
       "p:la-vi-salir"
     ],
@@ -6574,8 +6578,8 @@
   },
   {
     "id": "u58-0260",
-    "es": "¿Cuándo llega el repuesto? De un momento a otro, dicen.",
-    "en": "When does the spare part arrive? Any minute now, they say.",
+    "es": "¿Cuándo llega el repuesto?\nDe un momento a otro, dicen.",
+    "en": "When does the spare part arrive?\nAny minute now, they say.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6594,7 +6598,7 @@
     "targets": [
       "c:de-un-momento-a-otro"
     ],
-    "kind": "question",
+    "kind": "dialogue",
     "unit": "u58",
     "theme": "roads, detours and directions",
     "source": "gen"
@@ -6703,14 +6707,14 @@
   },
   {
     "id": "u58-0265",
-    "es": "La obra va en marcha, aunque con retrasos.",
+    "es": "La obra está en marcha, aunque con retrasos.",
     "en": "The work is under way, though with delays.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:estar-location-states",
       "g:gender-articles",
-      "g:ir-a-plans",
-      "l:ir",
+      "l:estar",
       "l:marcha",
       "l:obra",
       "l:retraso",
@@ -6750,18 +6754,18 @@
   },
   {
     "id": "u58-0267",
-    "es": "El tren perdió marcha al llegar a la curva.",
+    "es": "El tren redujo la marcha al llegar a la curva.",
     "en": "The train slowed down as it reached the bend.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:prep-infinitive",
-      "g:preterite-er-ir",
+      "g:preterite-irregular-strong",
       "l:curva",
       "l:llegar",
       "l:marcha",
-      "l:perder",
+      "l:reducir",
       "l:tren"
     ],
     "targets": [
@@ -7001,17 +7005,18 @@
   },
   {
     "id": "u58-0277",
-    "es": "Los obreros iban sin rumbo entre las piedras.",
-    "en": "The workers wandered aimlessly among the stones.",
+    "es": "Los turistas iban sin rumbo por las calles de La Candelaria.",
+    "en": "The tourists wandered aimlessly through the streets of La Candelaria.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-habitual",
+      "g:por-para-1",
+      "l:calle",
       "l:ir",
-      "l:obrero",
-      "l:piedra",
       "l:rumbo",
+      "l:turista",
       "p:sin-rumbo-fijo"
     ],
     "targets": [
@@ -7146,18 +7151,23 @@
   },
   {
     "id": "u58-0283",
-    "es": "Esta mañana hace un frío que cala los huesos.",
-    "en": "This morning it's bone-chillingly cold.",
+    "es": "Esta mañana el viento de los cerros trae un frío que cala los huesos.",
+    "en": "This morning the wind off the hills brings a bone-chilling cold.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:frio-que-cala-los-huesos",
+      "g:gender-articles",
+      "g:present-er-ir",
       "l:cala",
+      "l:cerro",
       "l:frío",
-      "l:hacer",
       "l:hueso",
       "l:mañana",
-      "p:demonstratives-basic"
+      "l:traer",
+      "l:viento",
+      "p:demonstratives-basic",
+      "p:llevar-traer"
     ],
     "targets": [
       "c:frio-que-cala-los-huesos"
@@ -7192,21 +7202,20 @@
   },
   {
     "id": "u58-0285",
-    "es": "Hacía un frío que cala los huesos y el tinto no alcanzaba.",
-    "en": "It was bone-chillingly cold and the black coffee wasn't enough.",
+    "es": "Hace un frío que cala los huesos y el tinto no alcanza.",
+    "en": "It's bone-chillingly cold and the black coffee isn't enough.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:frio-que-cala-los-huesos",
       "g:gender-articles",
-      "g:imperfect-habitual",
+      "g:present-ar",
       "l:alcanzar",
       "l:cala",
       "l:frío",
       "l:hacer",
       "l:hueso",
-      "l:tinto",
-      "p:hace-frio"
+      "l:tinto"
     ],
     "targets": [
       "c:frio-que-cala-los-huesos"
@@ -7240,20 +7249,23 @@
   },
   {
     "id": "u58-0287",
-    "es": "Nada más salir de Bogotá, notamos un frío que cala los huesos.",
-    "en": "As soon as we left Bogotá, we noticed a cold that chills you to the bone.",
+    "es": "En el páramo, nada más bajar del bus, se siente un frío que cala los huesos.",
+    "en": "On the moorland, as soon as you get off the bus, you feel a bone-chilling cold.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:frio-que-cala-los-huesos",
       "g:gender-articles",
-      "g:present-ar",
+      "g:reflexive-routine",
+      "g:stem-boot",
       "g:temporal-advanced",
+      "l:bajar",
+      "l:bus",
       "l:cala",
       "l:frío",
       "l:hueso",
-      "l:notar",
-      "l:salir"
+      "l:páramo",
+      "l:sentirse"
     ],
     "targets": [
       "c:frio-que-cala-los-huesos",
@@ -7266,24 +7278,20 @@
   },
   {
     "id": "u58-0288",
-    "es": "Cuanto más subíamos, más frío hacía; era un frío que cala los huesos.",
-    "en": "The higher we went, the colder it got; it was a bone-chilling cold.",
+    "es": "Cuanto más subimos, más frío hace: arriba hace un frío que cala los huesos.",
+    "en": "The higher we climb, the colder it gets: up top it's bone-chillingly cold.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:era",
       "c:frio-que-cala-los-huesos",
       "g:comparative-advanced-c1",
-      "g:gender-articles",
-      "g:imperfect-habitual",
-      "g:imperfect-states",
-      "g:ser-identity",
+      "g:present-er-ir",
+      "l:arriba",
       "l:cala",
       "l:cuanto",
       "l:frío",
       "l:hacer",
       "l:hueso",
-      "l:ser",
       "l:subir"
     ],
     "targets": [
@@ -7923,8 +7931,8 @@
   },
   {
     "id": "u58-0315",
-    "es": "Hernando, ¿usted subió alguna vez a un volcán?",
-    "en": "Hernando, did you ever climb a volcano? (polite)",
+    "es": "Doña Gloria, ¿usted subió alguna vez a un volcán?",
+    "en": "Doña Gloria, did you ever climb a volcano? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7933,7 +7941,9 @@
       "g:preterite-er-ir",
       "l:subir",
       "l:vez",
-      "l:volcán"
+      "l:volcán",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
     ],
     "targets": [
       "l:volcán"
@@ -8241,21 +8251,20 @@
   },
   {
     "id": "u58-0328",
-    "es": "A medida que dura la sequía, suben los precios.",
-    "en": "As the drought drags on, prices go up.",
+    "es": "A medida que sigue la sequía, suben los precios.",
+    "en": "As the drought goes on, prices go up.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
       "g:present-er-ir",
+      "g:stem-e-i",
       "g:temporal-advanced",
-      "l:durar",
       "l:medida",
       "l:precio",
+      "l:seguir",
       "l:sequía",
       "l:subir",
-      "p:durar-durante",
       "p:subir-subida"
     ],
     "targets": [
@@ -8291,7 +8300,7 @@
   },
   {
     "id": "u58-0330",
-    "es": "El mapa del relieve muestra cada montaña del departamento.",
+    "es": "El mapa de relieve muestra cada montaña del departamento.",
     "en": "The relief map shows every mountain in the department.",
     "accept": [],
     "acceptEn": [],
@@ -8338,15 +8347,15 @@
   },
   {
     "id": "u58-0332",
-    "es": "Las máquinas no pueden trabajar en un relieve tan duro.",
-    "en": "The machines can't work on such rough terrain.",
+    "es": "Las máquinas no pueden trabajar en un relieve tan difícil.",
+    "en": "The machines can't work on such difficult terrain.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:stem-boot",
       "g:verb-infinitive",
-      "l:duro",
+      "l:difícil",
       "l:máquina",
       "l:poder",
       "l:relieve",
@@ -8494,7 +8503,7 @@
   },
   {
     "id": "u58-0338",
-    "es": "El bus iba hasta el tope y nadie podía moverse.",
+    "es": "El bus iba lleno hasta el tope y nadie podía moverse.",
     "en": "The bus was jam-packed and nobody could move.",
     "accept": [],
     "acceptEn": [],
@@ -8506,6 +8515,7 @@
       "g:verb-infinitive",
       "l:bus",
       "l:ir",
+      "l:lleno",
       "l:mover",
       "l:poder",
       "l:tope",
@@ -8521,8 +8531,8 @@
   },
   {
     "id": "u58-0339",
-    "es": "El centro está lleno a reventar los sábados.",
-    "en": "The centre is packed to bursting on Saturdays.",
+    "es": "¿El centro siempre está lleno a reventar los sábados?",
+    "en": "Is the centre always packed to bursting on Saturdays?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8532,16 +8542,18 @@
       "l:estar",
       "l:lleno",
       "l:reventar",
+      "l:siempre",
       "l:sábado",
       "p:a-reventar",
       "p:days-el-lunes",
+      "p:frequency-scale",
       "p:lleno-libre"
     ],
     "targets": [
       "l:reventar",
       "p:a-reventar"
     ],
-    "kind": "dialogue",
+    "kind": "question",
     "unit": "u58",
     "theme": "landscape, weather and the land",
     "source": "gen"
@@ -8602,26 +8614,33 @@
   },
   {
     "id": "u58-0342",
-    "es": "La maleta quedó llena a reventar y no cerró.",
-    "en": "The suitcase ended up packed to bursting and wouldn't close.",
+    "es": "¿Por qué no cierra la maleta?\nPorque está llena a reventar.",
+    "en": "Why won't the suitcase close?\nBecause it's packed to bursting.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:porque",
       "g:adjective-agreement",
+      "g:cause-result",
+      "g:estar-location-states",
       "g:gender-articles",
-      "g:preterite-ar",
+      "g:stem-boot",
       "l:cerrar",
+      "l:estar",
       "l:lleno",
       "l:maleta",
-      "l:quedar",
+      "l:qué",
       "l:reventar",
-      "p:a-reventar"
+      "p:a-reventar",
+      "p:lleno-libre",
+      "p:por-que-no",
+      "p:prep-questions-basic"
     ],
     "targets": [
       "l:reventar",
       "p:a-reventar"
     ],
-    "kind": "statement",
+    "kind": "dialogue",
     "unit": "u58",
     "theme": "landscape, weather and the land",
     "source": "gen"
@@ -8736,25 +8755,21 @@
   },
   {
     "id": "u58-0347",
-    "es": "Me da una risa que me va a reventar con este cuento.",
-    "en": "This story makes me laugh so hard I'm going to burst.",
+    "es": "Con este cuento me voy a reventar de la risa.",
+    "en": "This story is going to make me burst out laughing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:me-regala",
+      "c:voy-a",
       "g:gender-articles",
       "g:ir-a-plans",
-      "g:relative-que",
       "l:cuento",
-      "l:dar",
-      "l:ir",
+      "l:irse",
       "l:reventar",
       "l:risa",
       "p:a-reventar",
       "p:demonstratives-basic",
-      "p:ir-a-venir-de-place",
-      "p:me-te-nos-objects",
-      "p:me-trae"
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "l:reventar",
@@ -8858,46 +8873,43 @@
   },
   {
     "id": "u58-0352",
-    "es": "El fruto de ese árbol se parece a una naranja.",
-    "en": "The fruit of that tree looks like an orange.",
+    "es": "¿El fruto de ese árbol se come?",
+    "en": "Can you eat the fruit of that tree?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:a-cuantas-cuotas",
       "g:demonstratives",
       "g:gender-articles",
       "g:present-er-ir",
-      "g:reflexive-routine",
+      "g:se-impersonal",
+      "l:comer",
       "l:fruto",
-      "l:naranja",
-      "l:parecerse",
       "l:árbol",
-      "p:fruto-fruta",
-      "p:parecer-vs-parecerse",
-      "p:parecerse-a"
+      "p:fruto-fruta"
     ],
     "targets": [
       "l:fruto",
       "p:fruto-fruta"
     ],
-    "kind": "statement",
+    "kind": "question",
     "unit": "u58",
     "theme": "landscape, weather and the land",
     "source": "gen"
   },
   {
     "id": "u58-0353",
-    "es": "Este jugo es fruto de una receta de Rosa.",
-    "en": "This juice comes from one of Rosa's recipes.",
+    "es": "Este café es el fruto de cuarenta años de trabajo de Rosa.",
+    "en": "This café is the fruit of Rosa's forty years of work.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:claro-listo",
+      "g:gender-articles",
       "g:ser-identity",
+      "l:año",
+      "l:café",
       "l:fruto",
-      "l:jugo",
-      "l:receta",
       "l:ser",
+      "l:trabajo",
       "p:demonstratives-basic",
       "p:fruto-fruta"
     ],
@@ -8964,8 +8976,8 @@
   },
   {
     "id": "u58-0356",
-    "es": "Trae leña para la chimenea, que está bajando el frío.",
-    "en": "Bring firewood for the fireplace, the cold is setting in. (to a friend)",
+    "es": "Trae leña para la chimenea, que está haciendo frío.",
+    "en": "Bring firewood for the fireplace, it's getting cold. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8974,13 +8986,14 @@
       "g:gender-articles",
       "g:present-er-ir",
       "g:relative-que",
-      "l:bajar",
       "l:chimenea",
       "l:estar",
       "l:frío",
+      "l:hacer",
       "l:leña",
       "l:traer",
       "p:fruto-fruta",
+      "p:hace-frio",
       "p:llevar-traer",
       "p:para-inf"
     ],
@@ -9020,13 +9033,15 @@
   },
   {
     "id": "u58-0358",
-    "es": "La leña está al lado del patio, bajo el techo.",
-    "en": "The firewood is next to the courtyard, under the roof.",
+    "es": "¿Dónde está la leña?\nAl lado del patio, bajo el techo.",
+    "en": "Where's the firewood?\nNext to the courtyard, under the roof.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:donde-esta",
       "g:estar-location-states",
       "g:gender-articles",
+      "l:dónde",
       "l:estar",
       "l:lado",
       "l:leña",
@@ -9034,37 +9049,39 @@
       "l:techo",
       "p:cerca-de",
       "p:fruto-fruta",
-      "p:position-de"
+      "p:position-de",
+      "p:question-word-order"
     ],
     "targets": [
       "p:fruto-fruta"
     ],
-    "kind": "statement",
+    "kind": "dialogue",
     "unit": "u58",
     "theme": "landscape, weather and the land",
     "source": "gen"
   },
   {
     "id": "u58-0359",
-    "es": "Los frutos del cafeto maduran entre octubre y diciembre.",
-    "en": "The fruits of the coffee plant ripen between October and December.",
+    "es": "¿Cuándo maduran los frutos del cafeto?",
+    "en": "When do the fruits of the coffee plant ripen?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
+      "g:questions",
       "l:cafeto",
-      "l:diciembre",
+      "l:cuándo",
       "l:fruto",
       "l:madurar",
-      "l:octubre",
-      "p:fruto-fruta"
+      "p:fruto-fruta",
+      "p:question-word-order"
     ],
     "targets": [
       "l:fruto",
       "p:fruto-fruta"
     ],
-    "kind": "statement",
+    "kind": "question",
     "unit": "u58",
     "theme": "landscape, weather and the land",
     "source": "gen"
@@ -9094,28 +9111,27 @@
   },
   {
     "id": "u58-0361",
-    "es": "Cuando llueve poco, los frutos salen más chicos.",
-    "en": "When it rains little, the fruit comes out smaller.",
+    "es": "¿Por qué salen tan chicos los frutos este año?",
+    "en": "Why is the fruit coming out so small this year?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
-      "g:stem-boot",
+      "l:año",
       "l:chico",
       "l:fruto",
-      "l:llover",
+      "l:qué",
       "l:salir",
-      "p:cuando-basic",
+      "p:demonstratives-basic",
       "p:fruto-fruta",
-      "p:poco-un-poco",
-      "p:quantifiers-basic"
+      "p:prep-questions-basic"
     ],
     "targets": [
       "l:fruto",
       "p:fruto-fruta"
     ],
-    "kind": "statement",
+    "kind": "question",
     "unit": "u58",
     "theme": "landscape, weather and the land",
     "source": "gen"
@@ -9144,21 +9160,19 @@
   },
   {
     "id": "u58-0363",
-    "es": "La niebla tenía tanta densidad que no se veía el bus.",
-    "en": "The fog was so dense you couldn't see the bus.",
+    "es": "Por la densidad de la niebla, no se veía el bus.",
+    "en": "Because the fog was so dense, you couldn't see the bus.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:no-se",
       "g:gender-articles",
       "g:imperfect-habitual",
-      "g:imperfect-states",
       "g:passive-se",
-      "g:relative-que",
+      "g:por-para-1",
       "l:bus",
       "l:densidad",
       "l:niebla",
-      "l:tener",
       "l:ver"
     ],
     "targets": [
@@ -9195,13 +9209,13 @@
   },
   {
     "id": "u58-0365",
-    "es": "La densidad de población del barrio ha subido mucho.",
-    "en": "The population density of the neighbourhood has gone up a lot.",
+    "es": "La densidad de población del barrio subió mucho.",
+    "en": "The population density of the neighbourhood went up a lot.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:perfecto-experience",
+      "g:preterite-er-ir",
       "l:barrio",
       "l:densidad",
       "l:población",
@@ -9270,15 +9284,18 @@
   },
   {
     "id": "u58-0368",
-    "es": "La transformación de la viga lleva semanas.",
-    "en": "The transformation of the beam is taking weeks.",
+    "es": "Convertir la viga en banco tomó dos semanas de transformación.",
+    "en": "Turning the beam into a bench took two weeks of transformation.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
-      "l:llevar",
+      "g:preterite-ar",
+      "g:verb-infinitive",
+      "l:banco",
+      "l:convertir",
       "l:semana",
+      "l:tomar",
       "l:transformación",
       "l:viga"
     ],
@@ -9507,13 +9524,13 @@
   },
   {
     "id": "u58-0378",
-    "es": "Hernando, a sus setenta y uno, sigue fuerte como un roble.",
-    "en": "Hernando, at seventy-one, is still as strong as an ox.",
+    "es": "Hernando, a sus setenta y uno, seguía fuerte como un roble.",
+    "en": "At seventy-one, Hernando was still as strong as an oak.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:stem-e-i",
+      "g:imperfect-habitual",
       "l:fuerte",
       "l:roble",
       "l:seguir",
@@ -9623,8 +9640,8 @@
   },
   {
     "id": "u58-0382",
-    "es": "La caja pesa como el plomo, pero está vacía.",
-    "en": "The box weighs as much as lead, but it's empty.",
+    "es": "La caja pesa como el plomo: está llena de libros.",
+    "en": "The box weighs as much as lead: it's full of books.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9634,9 +9651,10 @@
       "g:present-ar",
       "l:caja",
       "l:estar",
+      "l:libro",
+      "l:lleno",
       "l:pesar",
       "l:plomo",
-      "l:vacío",
       "p:lleno-libre",
       "p:medir-pesar",
       "p:pesar-pesarse"
@@ -9820,20 +9838,22 @@
   },
   {
     "id": "u58-0390",
-    "es": "La nieve del glaciar es blanca como la nieve de las postales.",
-    "en": "The glacier snow is white like the snow on postcards.",
+    "es": "Visto desde el avión, el glaciar parecía blanco como el papel.",
+    "en": "Seen from the plane, the glacier looked as white as paper.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:gender-articles",
-      "g:ser-identity",
+      "g:imperfect-habitual",
+      "g:stem-e-i",
+      "l:avión",
       "l:blanco",
       "l:glaciar",
-      "l:nieve",
-      "l:postal",
-      "l:ser",
-      "p:fuerte-como-un-roble"
+      "l:papel",
+      "l:parecer",
+      "l:vestir",
+      "p:fuerte-como-un-roble",
+      "p:parecer-vs-parecerse"
     ],
     "targets": [
       "l:glaciar",
@@ -10012,17 +10032,16 @@
   },
   {
     "id": "u58-0397",
-    "es": "Los niños duermen tranquilos, dormidos como un tronco.",
-    "en": "The children sleep peacefully, out like a log.",
+    "es": "El niño está dormido como un tronco.",
+    "en": "The child is out like a log.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
+      "g:estar-location-states",
       "g:gender-articles",
-      "g:stem-boot",
       "l:dormir",
+      "l:estar",
       "l:niño",
-      "l:tranquilo",
       "l:tronco",
       "p:describe-with-images",
       "p:fuerte-como-un-roble"
@@ -10068,8 +10087,8 @@
   },
   {
     "id": "u58-0399",
-    "es": "La noche estaba oscura como la noche más negra.",
-    "en": "The night was as dark as the darkest night.",
+    "es": "La calle estaba oscura como una cueva.",
+    "en": "The street was as dark as a cave.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10077,16 +10096,15 @@
       "g:estar-location-states",
       "g:gender-articles",
       "g:imperfect-states",
-      "g:superlatives",
+      "l:calle",
+      "l:cueva",
       "l:estar",
-      "l:negro",
-      "l:noche",
       "l:oscuro",
-      "p:fuerte-como-un-roble",
+      "p:describe-with-images",
       "p:tiene-mucha-luz"
     ],
     "targets": [
-      "p:fuerte-como-un-roble"
+      "p:describe-with-images"
     ],
     "kind": "statement",
     "unit": "u58",
@@ -10225,14 +10243,16 @@
   },
   {
     "id": "u58-0405",
-    "es": "Don Hernando es fuerte como un toro y no se deja ayudar.",
-    "en": "Don Hernando is as strong as a bull and won't let anyone help him.",
+    "es": "Don Hernando era fuerte como un toro y no se dejaba ayudar.",
+    "en": "Don Hernando was as strong as a bull and wouldn't let anyone help him.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
       "c:no-se",
       "g:gender-articles",
-      "g:present-ar",
+      "g:imperfect-habitual",
+      "g:imperfect-states",
       "g:reflexive-routine",
       "g:ser-identity",
       "l:ayudar",
@@ -10254,21 +10274,23 @@
   },
   {
     "id": "u58-0406",
-    "es": "No seas pesado como el plomo, escucha un momento.",
-    "en": "Don't be as heavy-going as lead, listen for a moment. (to a friend)",
+    "es": "Después del almuerzo me siento pesado como el plomo.",
+    "en": "After lunch I feel as heavy as lead.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:commands-tu",
       "g:gender-articles",
-      "g:negative-commands",
-      "g:ser-identity",
-      "l:escuchar",
-      "l:momento",
-      "l:pesado",
+      "g:reflexive-routine",
+      "g:stem-boot",
+      "l:almuerzo",
+      "l:después",
+      "l:pesar",
       "l:plomo",
-      "l:ser",
-      "p:fuerte-como-un-roble"
+      "l:sentirse",
+      "p:fuerte-como-un-roble",
+      "p:medir-pesar",
+      "p:sentirse-mal",
+      "p:time-sequence-basic"
     ],
     "targets": [
       "p:fuerte-como-un-roble"
@@ -10301,15 +10323,16 @@
   },
   {
     "id": "u58-0408",
-    "es": "Aunque tenga ochenta años, mi abuela sigue fuerte como un roble.",
-    "en": "Even though she's eighty, my grandmother is still as strong as an ox.",
+    "es": "Aunque tiene ochenta años, mi abuela sigue fuerte como un roble.",
+    "en": "Even though she's eighty, my grandmother is still as strong as an oak.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:aqui-tiene",
+      "c:tienes",
+      "g:aunque-indicative",
       "g:gender-articles",
+      "g:stem-boot",
       "g:stem-e-i",
-      "g:subj-concessive",
       "l:abuela",
       "l:año",
       "l:fuerte",
@@ -10363,8 +10386,8 @@
   },
   {
     "id": "u58-0410",
-    "es": "Ese hombre es atento como un lince cuando se trata de plata.",
-    "en": "That man is as sharp as a lynx when it comes to money.",
+    "es": "Cuando se trata de plata, ese hombre es rápido como un rayo.",
+    "en": "That man is as quick as lightning when it comes to money.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10373,20 +10396,18 @@
       "g:present-ar",
       "g:reflexive-routine",
       "g:ser-identity",
-      "l:atento",
       "l:hombre",
-      "l:lince",
       "l:plata",
+      "l:rayo",
+      "l:rápido",
       "l:ser",
       "l:tratarse",
       "p:cuando-basic",
-      "p:describe-with-images",
-      "p:fuerte-como-un-roble",
       "p:se-trata-de",
       "p:tratar-de"
     ],
     "targets": [
-      "p:fuerte-como-un-roble"
+      "p:se-trata-de"
     ],
     "kind": "statement",
     "unit": "u58",
@@ -10522,8 +10543,8 @@
   },
   {
     "id": "u58-0416",
-    "es": "¿Es suave al tacto o más bien áspera?",
-    "en": "Is it soft to the touch or rather rough?",
+    "es": "¿La tela es suave al tacto o más bien áspera?",
+    "en": "Is the fabric soft to the touch or rather rough?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10534,6 +10555,7 @@
       "l:ser",
       "l:suave",
       "l:tacto",
+      "l:tela",
       "l:áspero",
       "p:al-tacto"
     ],
@@ -10753,21 +10775,21 @@
   },
   {
     "id": "u58-0424",
-    "es": "Esta pared es húmeda al tacto, hay agua adentro.",
+    "es": "Esta pared está húmeda al tacto, hay agua adentro.",
     "en": "This wall is damp to the touch, there's water inside.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hay",
       "g:adjective-agreement",
+      "g:estar-location-states",
       "g:gender-articles",
       "g:hay-vs-esta",
-      "g:ser-identity",
       "l:adentro",
       "l:agua",
+      "l:estar",
       "l:húmedo",
       "l:pared",
-      "l:ser",
       "l:tacto",
       "p:al-tacto",
       "p:demonstratives-basic",
@@ -10864,18 +10886,18 @@
   },
   {
     "id": "u58-0428",
-    "es": "El hielo es duro, pero el cemento es áspero al tacto.",
-    "en": "Ice is hard, but cement is rough to the touch.",
+    "es": "El cemento es áspero al tacto; el vidrio, liso.",
+    "en": "Cement is rough to the touch; glass is smooth.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
       "l:cemento",
-      "l:duro",
-      "l:hielo",
+      "l:liso",
       "l:ser",
       "l:tacto",
+      "l:vidrio",
       "l:áspero",
       "p:al-tacto"
     ],
@@ -11031,14 +11053,16 @@
   },
   {
     "id": "u58-0434",
-    "es": "Cuanto más empinada es la cuesta, más rápido se cansa Hernando.",
-    "en": "The steeper the slope, the faster Hernando gets tired.",
+    "es": "Cuanto más empinada era la cuesta, más rápido se cansaba Hernando.",
+    "en": "The steeper the slope, the faster Hernando got tired.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
       "g:comparative-advanced-c1",
       "g:gender-articles",
-      "g:present-ar",
+      "g:imperfect-habitual",
+      "g:imperfect-states",
       "g:reflexive-routine",
       "g:ser-identity",
       "l:cansarse",
@@ -11060,24 +11084,23 @@
   },
   {
     "id": "u58-0435",
-    "es": "No camines por ahí, el piso está torcido.",
-    "en": "Don't walk over there, the floor is uneven. (to a friend)",
+    "es": "No te sientes en esa silla, que tiene una pata torcida.",
+    "en": "Don't sit on that chair, it has a bent leg. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
-      "g:estar-participle",
+      "c:tienes",
+      "g:demonstratives",
       "g:gender-articles",
-      "g:negative-commands",
-      "g:por-para-1",
-      "l:ahí",
-      "l:caminar",
-      "l:estar",
-      "l:piso",
+      "g:reflexive-routine",
+      "g:relative-que",
+      "g:stem-boot",
+      "l:pata",
+      "l:sentirse",
+      "l:silla",
+      "l:tener",
       "l:torcer",
-      "p:aqui-ahi-alla",
-      "p:inclinado-torcido",
-      "p:seguir-por"
+      "p:inclinado-torcido"
     ],
     "targets": [
       "l:torcer",
@@ -11090,22 +11113,25 @@
   },
   {
     "id": "u58-0436",
-    "es": "La viga está torcida desde hace años y nadie la miró.",
-    "en": "The beam has been warped for years and nobody looked at it.",
+    "es": "La viga estaba torcida desde hacía años y nadie se dio cuenta.",
+    "en": "The beam had been warped for years and nobody noticed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:direct-objects",
-      "g:estar-location-states",
       "g:estar-participle",
       "g:gender-articles",
-      "g:preterite-ar",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-irregular-strong",
+      "g:reflexive-routine",
       "l:año",
+      "l:cuenta",
+      "l:darse",
       "l:estar",
-      "l:hace",
-      "l:mirar",
+      "l:hacía",
       "l:torcer",
       "l:viga",
+      "p:darse-cuenta-de",
       "p:inclinado-torcido"
     ],
     "targets": [
@@ -11246,17 +11272,17 @@
   },
   {
     "id": "u58-0442",
-    "es": "El carro torció a la izquierda y desapareció.",
-    "en": "The car turned left and disappeared.",
+    "es": "El viento torció las ramas del árbol.",
+    "en": "The wind bent the branches of the tree.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-er-ir",
-      "l:carro",
-      "l:desaparecer",
-      "l:izquierda",
-      "l:torcer"
+      "l:rama",
+      "l:torcer",
+      "l:viento",
+      "l:árbol"
     ],
     "targets": [
       "l:torcer"
@@ -11314,15 +11340,15 @@
   },
   {
     "id": "u58-0445",
-    "es": "Inclinaron el techo para que el agua baje.",
-    "en": "They tilted the roof so the water runs down.",
+    "es": "Inclinaron el techo para que el agua bajara.",
+    "en": "They tilted the roof so the water would run down.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:imperfect-subj",
       "g:para-que",
       "g:preterite-ar",
-      "g:subj-wanting",
       "l:agua",
       "l:bajar",
       "l:inclinar",
@@ -11754,24 +11780,22 @@
   },
   {
     "id": "u58-0462",
-    "es": "Cuanto más cerca está la meta, más al alcance de la mano se siente.",
-    "en": "The closer the goal gets, the more within reach it feels.",
+    "es": "Cuanto más avanza la obra, más al alcance de la mano parece la reapertura.",
+    "en": "The further the work goes, the more within reach the reopening seems.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparative-advanced-c1",
-      "g:estar-location-states",
       "g:gender-articles",
-      "g:reflexive-routine",
-      "g:stem-boot",
-      "g:subj-wanting",
+      "g:present-ar",
+      "g:present-er-ir",
       "l:alcance",
-      "l:cerca",
+      "l:avanzar",
       "l:cuanto",
-      "l:estar",
       "l:mano",
-      "l:meta",
-      "l:sentirse",
+      "l:obra",
+      "l:parecer",
+      "l:reapertura",
       "p:al-alcance-de"
     ],
     "targets": [
@@ -12339,17 +12363,16 @@
   },
   {
     "id": "u58-0484",
-    "es": "A simple vista, Hernando parece un señor tranquilo, pero tiene carácter.",
-    "en": "At a glance Hernando seems a quiet gentleman, but he has character.",
+    "es": "A simple vista, Hernando parecía un señor tranquilo, pero tenía carácter.",
+    "en": "At a glance Hernando seemed a quiet gentleman, but he had character.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:a-simple-vista",
-      "c:tienes",
       "c:tranquilo",
       "g:gender-articles",
-      "g:present-er-ir",
-      "g:stem-boot",
+      "g:imperfect-habitual",
+      "g:imperfect-states",
       "l:carácter",
       "l:parecer",
       "l:señor",
@@ -12662,20 +12685,20 @@
   },
   {
     "id": "u58-0496",
-    "es": "A fines de octubre llega el frío de verdad a Bogotá.",
-    "en": "At the end of October the real cold arrives in Bogotá.",
+    "es": "A fines de octubre llueve todas las tardes en Bogotá.",
+    "en": "At the end of October it rains every afternoon in Bogotá.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:en-serio",
       "g:gender-articles",
-      "g:present-ar",
+      "g:stem-boot",
       "l:fin",
-      "l:frío",
-      "l:llegar",
+      "l:llover",
       "l:octubre",
-      "l:verdad",
-      "p:a-eso-de"
+      "l:tarde",
+      "p:a-eso-de",
+      "p:todos-los-dias",
+      "p:veces-al"
     ],
     "targets": [
       "p:a-eso-de"
@@ -12687,29 +12710,28 @@
   },
   {
     "id": "u58-0497",
-    "es": "Cuanto más se acerca el invierno, más cerca está el final de mes, a eso de las seis ya es de noche.",
-    "en": "The closer winter gets, the more it feels like month's end, by about six it's already dark.",
+    "es": "Cuanto más se acerca diciembre, más temprano oscurece en Toronto: a eso de las cinco ya es de noche.",
+    "en": "The closer December gets, the earlier it gets dark in Toronto: by about five it's already night.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparative-advanced-c1",
-      "g:estar-location-states",
       "g:gender-articles",
       "g:present-ar",
+      "g:present-er-ir",
       "g:reflexive-routine",
       "g:ser-identity",
       "l:acercarse",
-      "l:cerca",
       "l:cuanto",
-      "l:estar",
-      "l:final",
-      "l:invierno",
-      "l:mes",
+      "l:diciembre",
       "l:noche",
+      "l:oscurecer",
       "l:ser",
+      "l:temprano",
       "p:a-eso-de",
       "p:acercarse-alejarse",
       "p:demonstratives-basic",
+      "p:encarecer-abaratar",
       "p:es-de-noche-tarde",
       "p:hacia-las-nueve"
     ],
@@ -12724,23 +12746,30 @@
   },
   {
     "id": "u58-0498",
-    "es": "A medida que pasa el día, a eso de las cinco el café se llena.",
-    "en": "As the day goes by, at about five the café fills up.",
+    "es": "A medida que pasa el día, el café se va llenando, y a eso de las cinco no cabe nadie más.",
+    "en": "As the day goes on, the café fills up, and by about five there's no room for anyone else.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:gerund-ways",
+      "g:ir-a-plans",
+      "g:negation-words",
       "g:present-ar",
-      "g:se-impersonal",
+      "g:present-er-ir",
       "g:temporal-advanced",
+      "l:caber",
       "l:café",
       "l:día",
+      "l:irse",
       "l:llenar",
       "l:medida",
       "l:pasar",
       "p:a-eso-de",
+      "p:caber",
       "p:demonstratives-basic",
-      "p:hacia-las-nueve"
+      "p:hacia-las-nueve",
+      "p:medir-pesar-caber"
     ],
     "targets": [
       "g:temporal-advanced",
@@ -12776,19 +12805,16 @@
   },
   {
     "id": "u58-0500",
-    "es": "Las ofertas hicieron más baratos los pasajes de bus.",
-    "en": "The deals made bus fares cheaper.",
+    "es": "La oferta abarató los pasajes de bus.",
+    "en": "The deal made bus fares cheaper.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
-      "l:barato",
       "l:bus",
-      "l:hacer",
       "l:oferta",
-      "l:pasaje"
+      "l:pasaje",
+      "p:encarecer-abaratar"
     ],
     "targets": [],
     "kind": "statement",
@@ -13025,19 +13051,25 @@
   },
   {
     "id": "u58-0511",
-    "es": "Tomás es un diamante en bruto, dice Mariana, con mucha paciencia.",
-    "en": "Tomás is a diamond in the rough, says Mariana, with a lot of patience.",
+    "es": "Mariana dice que Tomás es un diamante en bruto, y que hay que tenerle paciencia.",
+    "en": "Mariana says Tomás is a diamond in the rough, and you have to be patient with him.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:diamante-en-bruto",
+      "c:hay",
+      "c:hay-que",
+      "g:indirect-objects",
+      "g:object-pronoun-position",
       "g:stem-e-i",
+      "g:that-clauses",
+      "g:verb-infinitive",
       "l:bruto",
       "l:decir",
       "l:diamante",
       "l:paciencia",
       "l:ser",
-      "p:quantifiers-basic"
+      "l:tener"
     ],
     "targets": [
       "c:diamante-en-bruto",
@@ -13775,8 +13807,8 @@
   },
   {
     "id": "u58-0539",
-    "es": "Mi prima salió a correr y regresó hecho una sopa.",
-    "en": "My cousin went out running and came back dripping. (a male cousin)",
+    "es": "Mi primo salió a correr y regresó hecho una sopa.",
+    "en": "My cousin went out running and came back dripping.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13785,7 +13817,7 @@
       "g:preterite-er-ir",
       "l:correr",
       "l:hacer",
-      "l:prima",
+      "l:primo",
       "l:regresar",
       "l:salir",
       "l:sopa",
@@ -13911,13 +13943,15 @@
   },
   {
     "id": "u58-0544",
-    "es": "Lo primero que llama la atención de Hernando es su voz.",
-    "en": "The first thing you notice about Hernando is his voice.",
+    "es": "Lo primero que llamaba la atención de Hernando era su voz.",
+    "en": "The first thing you noticed about Hernando was his voice.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
       "g:gender-articles",
-      "g:present-ar",
+      "g:imperfect-habitual",
+      "g:imperfect-states",
       "g:relative-que",
       "g:ser-identity",
       "l:atención",
@@ -13938,19 +13972,20 @@
   },
   {
     "id": "u58-0545",
-    "es": "Lo primero que llama la atención es que nadie habla fuerte.",
-    "en": "The first thing that strikes you is that nobody speaks loudly.",
+    "es": "¿Qué es lo primero que llama la atención del café?",
+    "en": "What's the first thing that strikes you about the café?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:es-que",
       "g:gender-articles",
       "g:present-ar",
-      "g:relative-que",
+      "g:questions",
+      "g:ser-identity",
+      "g:that-clauses",
       "l:atención",
-      "l:fuerte",
-      "l:hablar",
+      "l:café",
       "l:llamar",
+      "l:qué",
       "l:ser",
       "p:lo-primero-que",
       "p:time-sequence-basic"
@@ -13958,7 +13993,7 @@
     "targets": [
       "p:lo-primero-que"
     ],
-    "kind": "statement",
+    "kind": "question",
     "unit": "u58",
     "theme": "first impressions, jealousy, exclamations, lovely people, body reactions, never",
     "source": "gen"
@@ -14237,8 +14272,8 @@
   },
   {
     "id": "u58-0556",
-    "es": "Visto desde la calle, el techo parece más alto.",
-    "en": "Seen from the street, the ceiling looks higher.",
+    "es": "Visto desde la calle, ¿el techo no parece más alto?",
+    "en": "Seen from the street, doesn't the ceiling look higher?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14256,7 +14291,7 @@
     "targets": [
       "p:lo-primero-que"
     ],
-    "kind": "statement",
+    "kind": "question",
     "unit": "u58",
     "theme": "first impressions, jealousy, exclamations, lovely people, body reactions, never",
     "source": "gen"
@@ -14474,28 +14509,24 @@
   },
   {
     "id": "u58-0564",
-    "es": "Cuanto más lo miras, menos te importa lo primero que llama la atención.",
-    "en": "The more you look at it, the less the first thing that strikes you matters. (to a friend)",
+    "es": "Cuanto más conozco Bogotá, más me gustan sus montañas.",
+    "en": "The more I get to know Bogotá, the more I like its mountains.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparative-advanced-c1",
-      "g:comparatives",
-      "g:direct-objects",
-      "g:gender-articles",
-      "g:gustar-full",
+      "g:gustar-basic",
       "g:present-ar",
-      "l:atención",
+      "g:yo-irregular",
+      "l:conocer",
       "l:cuanto",
-      "l:importar",
-      "l:llamar",
-      "l:mirar",
-      "p:lo-primero-que",
-      "p:time-sequence-basic"
+      "l:gustar",
+      "l:montaña",
+      "p:possessives-basic",
+      "p:saber-conocer"
     ],
     "targets": [
-      "g:comparative-advanced-c1",
-      "p:lo-primero-que"
+      "g:comparative-advanced-c1"
     ],
     "kind": "statement",
     "unit": "u58",
@@ -14592,8 +14623,8 @@
   },
   {
     "id": "u58-0568",
-    "es": "Lo primero que llama la atención de la cartelera es la foto de la portada.",
-    "en": "The first thing that strikes you about the noticeboard is the cover photo.",
+    "es": "Lo primero que llama la atención del periódico es la foto de la portada.",
+    "en": "The first thing that strikes you about the newspaper is the cover photo.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14602,9 +14633,9 @@
       "g:relative-que",
       "g:ser-identity",
       "l:atención",
-      "l:cartelera",
       "l:foto",
       "l:llamar",
+      "l:periódico",
       "l:portada",
       "l:ser",
       "p:lo-primero-que",
@@ -14621,7 +14652,7 @@
   {
     "id": "u58-0569",
     "es": "Lo que más llama la atención en la plaza es la hora a la que se llena.",
-    "en": "What strikes you most in the square is how early it fills.",
+    "en": "What strikes you most in the square is the time it fills up.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14651,8 +14682,8 @@
   },
   {
     "id": "u58-0570",
-    "es": "A primera vista, el plan de Altamira parece generoso.",
-    "en": "At first sight, Altamira's plan seems generous.",
+    "es": "A primera vista, ¿el plan de Altamira no parece generoso?",
+    "en": "At first sight, doesn't Altamira's plan seem generous?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14670,7 +14701,7 @@
     "targets": [
       "p:lo-primero-que"
     ],
-    "kind": "statement",
+    "kind": "question",
     "unit": "u58",
     "theme": "first impressions, jealousy, exclamations, lovely people, body reactions, never",
     "source": "gen"
@@ -14701,19 +14732,19 @@
   },
   {
     "id": "u58-0572",
-    "es": "Tiene una cicatriz en la frente que le dio un golpe de niño.",
-    "en": "He has a scar on his forehead from a knock as a child.",
+    "es": "Tiene una cicatriz en la frente de un golpe que se dio de niño.",
+    "en": "He has a scar on his forehead from a knock he got as a child.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
       "g:gender-articles",
-      "g:indirect-objects",
       "g:preterite-irregular-strong",
+      "g:reflexive-routine",
       "g:relative-que",
       "g:stem-boot",
       "l:cicatriz",
-      "l:dar",
+      "l:darse",
       "l:frente",
       "l:golpe",
       "l:niño",
@@ -14879,13 +14910,13 @@
   },
   {
     "id": "u58-0579",
-    "es": "El cura del barrio toma tinto en la mesa de Hernando.",
-    "en": "The neighbourhood priest drinks black coffee at Hernando's table.",
+    "es": "El cura del barrio tomaba tinto en la mesa de Hernando.",
+    "en": "The neighbourhood priest used to drink black coffee at Hernando's table.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
+      "g:imperfect-habitual",
       "l:barrio",
       "l:cura",
       "l:mesa",
@@ -15298,7 +15329,7 @@
   {
     "id": "u58-0595",
     "es": "No me hagas escenas de celos, por favor.",
-    "en": "Don't make jealous scenes at me, please. (to a friend)",
+    "en": "Don't throw a jealous fit at me, please. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15346,7 +15377,7 @@
   {
     "id": "u58-0597",
     "es": "Mi hermana es muy celosa con sus juguetes.",
-    "en": "My sister is very jealous with her toys.",
+    "en": "My sister is very possessive of her toys.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15370,13 +15401,14 @@
   },
   {
     "id": "u58-0598",
-    "es": "¿Estás celoso de mi nuevo trabajo?",
-    "en": "Are you jealous of my new job? (to a man)",
+    "es": "¿Estás celoso de mi nuevo compañero de trabajo?",
+    "en": "Are you jealous of my new coworker? (to a man)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
       "l:celoso",
+      "l:compañero",
       "l:estar",
       "l:nuevo",
       "l:trabajo",
@@ -15393,18 +15425,22 @@
   },
   {
     "id": "u58-0599",
-    "es": "Mariana siente celos de la fama de su colega.",
-    "en": "Mariana feels jealous of her colleague's fame.",
+    "es": "Mi hermana siente celos cuando su novio habla con otras mujeres.",
+    "en": "My sister gets jealous when her boyfriend talks to other women.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "g:present-ar",
       "g:stem-boot",
       "l:celos",
-      "l:colega",
-      "l:fama",
+      "l:hablar",
+      "l:hermana",
+      "l:mujer",
+      "l:novio",
       "l:sentir",
+      "p:cuando-basic",
       "p:los-celos-los-restos",
+      "p:otro-no-article",
       "p:possessives-basic"
     ],
     "targets": [
@@ -15616,17 +15652,17 @@
   },
   {
     "id": "u58-0608",
-    "es": "Los restos del volcán llenaron el valle de ceniza.",
-    "en": "The remains of the eruption filled the valley with ash.",
+    "es": "Los restos de la casa quedaron bajo la ceniza del volcán.",
+    "en": "The remains of the house were left under the volcano's ash.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
+      "l:casa",
       "l:ceniza",
-      "l:llenar",
+      "l:quedar",
       "l:resto",
-      "l:valle",
       "l:volcán",
       "p:los-celos-los-restos"
     ],
@@ -15666,20 +15702,19 @@
   },
   {
     "id": "u58-0610",
-    "es": "Los celos de Hernando por el banco de Tomás eran un chiste del barrio.",
-    "en": "Hernando's jealousy about Tomás's bench was a neighbourhood joke.",
+    "es": "Los celos de Simón con el gato de la vecina son un chiste del barrio.",
+    "en": "Simón's jealousy of the neighbour's cat is a neighbourhood joke.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:imperfect-states",
-      "g:por-para-1",
       "g:ser-identity",
-      "l:banco",
       "l:barrio",
       "l:celos",
       "l:chiste",
+      "l:gato",
       "l:ser",
+      "l:vecino",
       "p:los-celos-los-restos"
     ],
     "targets": [
@@ -15692,22 +15727,17 @@
   },
   {
     "id": "u58-0611",
-    "es": "Sin darse cuenta, el celoso Simón escondió la llave de Vale.",
-    "en": "Without realising, the jealous Simón hid Vale's key.",
+    "es": "Por celos, Simón escondió la llave de Vale.",
+    "en": "Out of jealousy, Simón hid Vale's key.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:prep-infinitive",
+      "g:por-para-1",
       "g:preterite-er-ir",
-      "g:reflexive-routine",
-      "g:stem-boot",
-      "l:celoso",
-      "l:contar",
-      "l:darse",
+      "l:celos",
       "l:esconder",
       "l:llave",
-      "p:darse-cuenta-de",
       "p:los-celos-los-restos"
     ],
     "targets": [
@@ -15844,15 +15874,19 @@
   },
   {
     "id": "u58-0618",
-    "es": "¡Qué gente esta!",
-    "en": "What people these are!",
+    "es": "¡Qué gente esta! Nunca dice que no.",
+    "en": "What people these are! They never say no.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:decir",
       "l:gente",
       "l:qué",
       "p:demonstratives-basic",
       "p:exclamations-basic",
+      "p:frequency-scale",
       "p:la-gente-singular",
       "p:que-x-este"
     ],
@@ -15887,16 +15921,22 @@
   },
   {
     "id": "u58-0620",
-    "es": "¡Qué calle esta!",
-    "en": "What a street this is!",
+    "es": "¡Qué calle esta! Todo el día subiendo.",
+    "en": "What a street this is! Uphill all day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
+      "g:gerund-ways",
       "l:calle",
+      "l:día",
       "l:qué",
+      "l:subir",
       "p:demonstratives-basic",
       "p:exclamations-basic",
-      "p:que-x-este"
+      "p:que-x-este",
+      "p:siempre-gerundio",
+      "p:todos-los-dias"
     ],
     "targets": [
       "p:que-x-este"
@@ -15908,15 +15948,20 @@
   },
   {
     "id": "u58-0621",
-    "es": "¡Qué lluvia esta!",
-    "en": "What rain this is!",
+    "es": "¡Qué lluvia esta! No para desde ayer.",
+    "en": "What rain this is! It hasn't stopped since yesterday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
+      "g:present-ar",
+      "l:ayer",
       "l:lluvia",
+      "l:parar",
       "l:qué",
       "p:demonstratives-basic",
       "p:exclamations-basic",
+      "p:no-hasta",
       "p:que-x-este"
     ],
     "targets": [
@@ -15950,16 +15995,21 @@
   },
   {
     "id": "u58-0623",
-    "es": "¡Qué frío este!",
-    "en": "What cold this is!",
+    "es": "¡Qué frío este! Y apenas son las seis.",
+    "en": "What cold this is! And it's only six.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:apenas",
       "l:frío",
       "l:qué",
+      "l:ser",
       "p:demonstratives-basic",
       "p:exclamations-basic",
-      "p:que-x-este"
+      "p:que-x-este",
+      "p:telling-time"
     ],
     "targets": [
       "p:que-x-este"
@@ -16010,15 +16060,19 @@
   },
   {
     "id": "u58-0626",
-    "es": "¡Qué pájaro este!",
-    "en": "What a bird this is!",
+    "es": "¡Qué pájaro este! Ya aprendió otra grosería.",
+    "en": "What a bird this is! He's already learned another rude word.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:preterite-er-ir",
+      "l:aprender",
+      "l:grosería",
       "l:pájaro",
       "l:qué",
       "p:demonstratives-basic",
       "p:exclamations-basic",
+      "p:otro-no-article",
       "p:que-x-este"
     ],
     "targets": [
@@ -16052,15 +16106,22 @@
   },
   {
     "id": "u58-0628",
-    "es": "¡Qué viga esta!",
-    "en": "What a beam this is!",
+    "es": "¡Qué viga esta! Cien años aguantando el techo.",
+    "en": "What a beam this is! A hundred years holding up the roof.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
+      "g:gerund-ways",
+      "l:aguantar",
+      "l:año",
       "l:qué",
+      "l:techo",
       "l:viga",
+      "p:aguantar-conservar-la-calma",
       "p:demonstratives-basic",
       "p:exclamations-basic",
+      "p:numbers-un-una",
       "p:que-x-este"
     ],
     "targets": [
@@ -16115,12 +16176,19 @@
   },
   {
     "id": "u58-0631",
-    "es": "¡Qué gracia esta!",
-    "en": "How funny this is!",
+    "es": "¡Qué cosa esta! No entiendo cómo funciona.",
+    "en": "What a thing this is! I don't understand how it works.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "l:gracia",
+      "c:no-entiendo",
+      "g:indirect-questions",
+      "g:present-ar",
+      "g:stem-boot",
+      "l:cosa",
+      "l:cómo",
+      "l:entender",
+      "l:funcionar",
       "l:qué",
       "p:demonstratives-basic",
       "p:exclamations-basic",
@@ -16157,15 +16225,19 @@
   },
   {
     "id": "u58-0633",
-    "es": "¡Qué jugo este!",
-    "en": "What a juice this is!",
+    "es": "¡Qué jugo este! ¿De qué fruta es?",
+    "en": "What a juice this is! What fruit is it?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:ser-identity",
+      "l:fruta",
       "l:jugo",
       "l:qué",
+      "l:ser",
       "p:demonstratives-basic",
       "p:exclamations-basic",
+      "p:prep-questions-basic",
       "p:que-x-este"
     ],
     "targets": [
@@ -16199,12 +16271,15 @@
   },
   {
     "id": "u58-0635",
-    "es": "¡Qué banca esta!",
-    "en": "What a bench this is!",
+    "es": "¡Qué banco este! Ni se mueve.",
+    "en": "What a bench this is! It doesn't even budge.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "l:banca",
+      "g:se-impersonal",
+      "g:stem-boot",
+      "l:banco",
+      "l:mover",
       "l:qué",
       "p:demonstratives-basic",
       "p:exclamations-basic",
@@ -16220,15 +16295,21 @@
   },
   {
     "id": "u58-0636",
-    "es": "¡Qué sueño este!",
-    "en": "What a dream this is!",
+    "es": "¡Qué sueño este! No me quiero despertar.",
+    "en": "What a dream this is! I don't want to wake up.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:quiero",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:despertarse",
+      "l:querer",
       "l:qué",
       "l:sueño",
       "p:demonstratives-basic",
       "p:exclamations-basic",
+      "p:me-te-nos-objects",
       "p:que-x-este"
     ],
     "targets": [
@@ -16263,7 +16344,7 @@
   {
     "id": "u58-0638",
     "es": "¡Este muchacho! No aprende.",
-    "en": "This boy! He never learns.",
+    "en": "This boy! He just doesn't learn.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16414,13 +16495,15 @@
   },
   {
     "id": "u58-0645",
-    "es": "Este loro.",
-    "en": "This parrot.",
+    "es": "¡Este loro! Otra vez con lo mismo.",
+    "en": "This parrot! The same thing again.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "l:loro",
-      "p:demonstratives-basic"
+      "l:vez",
+      "p:demonstratives-basic",
+      "p:otro-no-article"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -16470,21 +16553,25 @@
   },
   {
     "id": "u58-0648",
-    "es": "Hernando es un amor de persona, aunque le gusta quejarse.",
-    "en": "Hernando is a lovely person, though he likes to complain.",
+    "es": "Hernando era un amor de persona, aunque le gustaba quejarse.",
+    "en": "Hernando was a lovely person, though he liked to complain.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:pan-de-dios",
+      "c:era",
       "g:aunque-indicative",
+      "g:gender-articles",
       "g:gustar-basic",
-      "g:present-ar",
+      "g:imperfect-habitual",
+      "g:imperfect-states",
       "g:reflexive-routine",
+      "g:ser-identity",
       "l:amor",
       "l:gustar",
       "l:persona",
       "l:quejarse",
       "l:ser",
+      "p:ser-un-noun",
       "p:un-amor-de-persona"
     ],
     "targets": [
@@ -16611,17 +16698,15 @@
   },
   {
     "id": "u58-0654",
-    "es": "Tengo un horror de jefe.",
-    "en": "I have a horrible boss.",
+    "es": "¡Qué horror de tráfico!",
+    "en": "What awful traffic!",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tengo",
-      "g:gender-articles",
-      "g:yo-irregular",
+      "c:que-bien",
       "l:horror",
-      "l:jefe",
-      "l:tener",
+      "l:qué",
+      "l:tráfico",
       "p:un-amor-de-persona"
     ],
     "targets": [
@@ -16685,7 +16770,7 @@
   {
     "id": "u58-0657",
     "es": "Qué pesadilla de trancón, tardé tres horas.",
-    "en": "What a nightmare of a traffic jam, I was three hours.",
+    "en": "What a nightmare of a traffic jam, it took me three hours.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -16859,19 +16944,23 @@
   },
   {
     "id": "u58-0664",
-    "es": "El nuevo mesero es un desastre de persona con las cuentas.",
-    "en": "The new waiter is a disaster of a person with the bills.",
+    "es": "El nuevo mesero es un desastre de mesero: se equivoca en todas las cuentas.",
+    "en": "The new waiter is a disaster of a waiter: he gets every bill wrong.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:present-ar",
+      "g:reflexive-routine",
       "g:ser-identity",
       "l:cuenta",
       "l:desastre",
+      "l:equivocarse",
       "l:mesero",
       "l:nuevo",
-      "l:persona",
       "l:ser",
+      "p:equivocarse",
+      "p:equivocarse-de",
       "p:un-amor-de-persona"
     ],
     "targets": [
@@ -17287,17 +17376,17 @@
   },
   {
     "id": "u58-0681",
-    "es": "Se nos humedecieron los ojos con el bolero.",
-    "en": "Our eyes grew moist with the bolero.",
+    "es": "Se nos humedecieron los ojos con el tango.",
+    "en": "Our eyes grew moist with the tango.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-er-ir",
       "g:se-accidental",
-      "l:bolero",
       "l:humedecer",
       "l:ojo",
+      "l:tango",
       "p:ojo-con-no-confies",
       "p:se-me-involuntary",
       "p:ten-cuidado-con"
@@ -17468,7 +17557,7 @@
   {
     "id": "u58-0688",
     "es": "Se me cayó la cara de vergüenza.",
-    "en": "My face fell with shame.",
+    "en": "I was mortified.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17826,20 +17915,24 @@
   },
   {
     "id": "u58-0702",
-    "es": "Hernando no sube a un avión ni aunque se lo regalen.",
-    "en": "Hernando won't board a plane even if they give it to him.",
+    "es": "Hernando no se subía a un avión ni aunque le regalaran el pasaje.",
+    "en": "Hernando wouldn't get on a plane even if they gave him the ticket.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:double-pronouns",
+      "c:no-se",
       "g:gender-articles",
-      "g:present-er-ir",
+      "g:imperfect-habitual",
+      "g:imperfect-subj",
+      "g:indirect-objects",
+      "g:reflexive-routine",
       "g:subj-concessive",
-      "g:subj-wanting",
       "l:avión",
+      "l:pasaje",
       "l:regalar",
-      "l:subir",
-      "p:ni-aunque"
+      "l:subirse",
+      "p:ni-aunque",
+      "p:subirse-bajarse"
     ],
     "targets": [
       "p:ni-aunque"
@@ -18014,19 +18107,19 @@
   },
   {
     "id": "u58-0709",
-    "es": "Tomás no cambia la baldosa ni aunque se la compren.",
-    "en": "Tomás won't change the tile even if they buy it from him.",
+    "es": "Tomás no vende la rocola ni aunque le paguen el doble.",
+    "en": "Tomás won't sell the jukebox, not even if they pay him double.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:double-pronouns",
       "g:gender-articles",
-      "g:present-ar",
+      "g:indirect-objects",
+      "g:present-er-ir",
       "g:subj-concessive",
       "g:subj-wanting",
-      "l:baldosa",
-      "l:cambiar",
-      "l:comprar",
+      "l:doble",
+      "l:pagar",
+      "l:vender",
       "p:ni-aunque"
     ],
     "targets": [
@@ -18065,8 +18158,8 @@
   },
   {
     "id": "u58-0711",
-    "es": "¿Irías a vivir a otra ciudad ni aunque te pagaran?",
-    "en": "Would you go and live in another city even if they paid you? (to a friend)",
+    "es": "¿Te irías a vivir a otra ciudad?\nYo no, ni aunque me pagaran.",
+    "en": "Would you move to another city?\nI wouldn't, not even if they paid me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18075,7 +18168,7 @@
       "g:ir-a-plans",
       "g:subj-concessive",
       "l:ciudad",
-      "l:ir",
+      "l:irse",
       "l:pagar",
       "l:vivir",
       "p:me-te-nos-objects",
@@ -18085,7 +18178,7 @@
     "targets": [
       "p:ni-aunque"
     ],
-    "kind": "question",
+    "kind": "dialogue",
     "unit": "u58",
     "theme": "first impressions, jealousy, exclamations, lovely people, body reactions, never",
     "source": "gen"
@@ -18225,18 +18318,21 @@
   },
   {
     "id": "u58-0717",
-    "es": "Ni aunque nevara en Bogotá abriría tarde.",
-    "en": "I wouldn't open late even if it snowed in Bogotá.",
+    "es": "Ni aunque nevara en Bogotá, Vale dejaría de abrir a las seis.",
+    "en": "Not even if it snowed in Bogotá would Vale stop opening at six.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
+      "g:gender-articles",
       "g:imperfect-subj",
       "g:subj-concessive",
       "l:abrir",
+      "l:dejar",
       "l:nevar",
-      "l:tarde",
-      "p:ni-aunque"
+      "p:dejar-de-inf",
+      "p:ni-aunque",
+      "p:telling-time"
     ],
     "targets": [
       "p:ni-aunque"
@@ -18333,22 +18429,20 @@
   },
   {
     "id": "u58-0722",
-    "es": "La mitad de las baldosas estaba rota y la otra mitad, torcida.",
-    "en": "Half of the tiles were broken and the other half warped.",
+    "es": "La mitad de las tablas estaban torcidas.",
+    "en": "Half of the boards were warped.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-participle",
       "g:gender-articles",
       "g:imperfect-states",
-      "l:baldosa",
       "l:estar",
       "l:mitad",
-      "l:romper",
+      "l:tabla",
       "l:torcer",
       "p:fracciones-de",
-      "p:inclinado-torcido",
-      "p:otro-no-article"
+      "p:inclinado-torcido"
     ],
     "targets": [
       "l:torcer",
@@ -18532,13 +18626,13 @@
   },
   {
     "id": "u58-0731",
-    "es": "Tanto Tomás como Hernando conocen la historia del café.",
-    "en": "Both Tomás and Hernando know the story of the café.",
+    "es": "Tanto Tomás como Hernando conocían la historia del café.",
+    "en": "Both Tomás and Hernando knew the story of the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-er-ir",
+      "g:imperfect-habitual",
       "g:tanto-como",
       "l:café",
       "l:conocer",
@@ -19033,12 +19127,14 @@
   },
   {
     "id": "u58-0753",
-    "es": "La mano de Hernando es grande y áspera.",
-    "en": "Hernando's hand is big and rough.",
+    "es": "La mano de Hernando era grande y áspera.",
+    "en": "Hernando's hand was big and rough.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
       "g:gender-articles",
+      "g:imperfect-states",
       "g:ser-identity",
       "l:grande",
       "l:mano",
@@ -19053,14 +19149,15 @@
   },
   {
     "id": "u58-0754",
-    "es": "El mapa del relieve está colgado en la pared.",
-    "en": "The relief map is hanging on the wall.",
+    "es": "El mapa de relieve de Colombia está colgado en la pared del colegio.",
+    "en": "The relief map of Colombia is hanging on the school wall.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
       "g:estar-participle",
       "g:gender-articles",
+      "l:colegio",
       "l:colgar",
       "l:estar",
       "l:mapa",
@@ -19165,18 +19262,19 @@
   },
   {
     "id": "u58-0759",
-    "es": "La moto de Hernando es vieja, pero funciona.",
-    "en": "Hernando's motorbike is old but works.",
+    "es": "El taxi de Hernando era viejo, pero funcionaba.",
+    "en": "Hernando's taxi was old, but it worked.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
+      "c:era",
       "g:gender-articles",
-      "g:present-ar",
+      "g:imperfect-habitual",
+      "g:imperfect-states",
       "g:ser-identity",
       "l:funcionar",
-      "l:moto",
       "l:ser",
+      "l:taxi",
       "l:viejo",
       "p:viejo-antiguo-mayor"
     ],
@@ -19209,14 +19307,14 @@
   },
   {
     "id": "u58-0761",
-    "es": "El mar y la mar son la misma agua, dice Hernando.",
-    "en": "El mar and la mar are the same water, says Hernando.",
+    "es": "El mar y la mar son la misma agua, decía Hernando.",
+    "en": "El mar and la mar are the same water, Hernando used to say.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:imperfect-habitual",
       "g:ser-identity",
-      "g:stem-e-i",
       "l:agua",
       "l:decir",
       "l:mar",
@@ -19349,16 +19447,17 @@
   },
   {
     "id": "u58-0767",
-    "es": "Esa monja es un amor de persona.",
-    "en": "That nun is a lovely person.",
+    "es": "Esa monja es un encanto de mujer.",
+    "en": "That nun is a charming woman.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:pan-de-dios",
       "g:demonstratives",
-      "l:amor",
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:encanto",
       "l:monja",
-      "l:persona",
+      "l:mujer",
       "l:ser",
       "p:un-amor-de-persona"
     ],
@@ -19373,16 +19472,14 @@
   },
   {
     "id": "u58-0768",
-    "es": "Los perdedores del torneo recibieron un aplauso igual.",
-    "en": "The losers of the tournament got an equal round of applause.",
+    "es": "Los perdedores del torneo recibieron el mismo aplauso.",
+    "en": "The losers of the tournament got the same applause.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:igual",
       "g:gender-articles",
       "g:preterite-er-ir",
       "l:aplauso",
-      "l:igual",
       "l:perdedor",
       "l:recibir",
       "l:torneo"
@@ -19647,22 +19744,20 @@
   },
   {
     "id": "u58-0779",
-    "es": "Los bloques de piedra estaban a media cuadra del patio.",
-    "en": "The stone blocks were half a block from the courtyard.",
+    "es": "Dejaron los bloques de piedra a media cuadra del café.",
+    "en": "They left the stone blocks half a block from the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
       "g:gender-articles",
-      "g:imperfect-states",
+      "g:preterite-ar",
       "l:bloque",
+      "l:café",
       "l:cuadra",
-      "l:estar",
-      "l:patio",
+      "l:dejar",
       "l:piedra",
       "p:a-cuadras-de",
-      "p:directions-cuadras",
-      "p:quedar-a-distancia"
+      "p:directions-cuadras"
     ],
     "targets": [
       "l:bloque",
@@ -19785,20 +19880,20 @@
   },
   {
     "id": "u58-0784",
-    "es": "Un conjunto de baldosas azules aparece debajo del piso.",
-    "en": "A set of blue tiles appears under the floor.",
+    "es": "Un conjunto de baldosas rojas apareció debajo de la alfombra.",
+    "en": "A set of red tiles turned up under the carpet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
-      "g:present-er-ir",
+      "g:preterite-er-ir",
+      "l:alfombra",
       "l:aparecer",
-      "l:azul",
       "l:baldosa",
       "l:conjunto",
       "l:debajo",
-      "l:piso",
+      "l:rojo",
       "p:cerca-de",
       "p:position-de"
     ],
@@ -19833,21 +19928,21 @@
   },
   {
     "id": "u58-0786",
-    "es": "¿Cuál es la mayoría, la de arriba o la de abajo?",
-    "en": "Which is the majority, the top one or the bottom one?",
+    "es": "¿Qué decidió la mayoría?\nQue sí, por poquito.",
+    "en": "What did the majority decide?\nYes, by a whisker.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:diminutives",
       "g:gender-articles",
+      "g:por-para-1",
+      "g:preterite-er-ir",
       "g:questions",
-      "g:ser-identity",
-      "l:abajo",
-      "l:arriba",
-      "l:cuál",
+      "l:decidir",
       "l:mayoría",
-      "l:ser",
-      "p:los-de-la-camiseta",
-      "p:question-word-order"
+      "l:poquito",
+      "l:qué",
+      "p:que-no-dice-que-si"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -20279,8 +20374,8 @@
   },
   {
     "id": "u58-0806",
-    "es": "Hernando está de pie desde las seis de la mañana.",
-    "en": "Hernando has been on his feet since six in the morning.",
+    "es": "Doña Gloria está de pie desde las seis de la mañana.",
+    "en": "Doña Gloria has been on her feet since six in the morning.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20290,7 +20385,8 @@
       "l:mañana",
       "l:pie",
       "p:por-la-manana",
-      "p:postura"
+      "p:postura",
+      "p:senor-don-article"
     ],
     "targets": [],
     "kind": "statement",
@@ -20397,18 +20493,18 @@
   },
   {
     "id": "u58-0811",
-    "es": "Está para llover desde esta mañana.",
+    "es": "Está por llover desde esta mañana.",
     "en": "It's been about to rain since this morning.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
+      "g:por-para-1",
       "l:estar",
       "l:llover",
       "l:mañana",
       "p:demonstratives-basic",
-      "p:para-inf",
-      "p:para-inf-purpose"
+      "p:estar-por"
     ],
     "targets": [],
     "kind": "statement",
@@ -20418,7 +20514,7 @@
   },
   {
     "id": "u58-0812",
-    "es": "Esas nubes dicen que está para llover de un momento a otro.",
+    "es": "Esas nubes dicen que está por llover de un momento a otro.",
     "en": "Those clouds say it's about to rain any minute now.",
     "accept": [],
     "acceptEn": [],
@@ -20426,6 +20522,7 @@
       "c:de-un-momento-a-otro",
       "g:demonstratives",
       "g:estar-location-states",
+      "g:por-para-1",
       "g:stem-e-i",
       "g:that-clauses",
       "l:decir",
@@ -20433,8 +20530,7 @@
       "l:llover",
       "l:momento",
       "l:nube",
-      "p:para-inf",
-      "p:para-inf-purpose"
+      "p:estar-por"
     ],
     "targets": [
       "c:de-un-momento-a-otro"
@@ -20446,19 +20542,21 @@
   },
   {
     "id": "u58-0813",
-    "es": "Hernando está para jubilarse, pero no quiere.",
-    "en": "Hernando is ready to retire, but doesn't want to.",
+    "es": "Mi tío está por jubilarse, pero no quiere.",
+    "en": "My uncle is about to retire, but he doesn't want to.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
+      "g:por-para-1",
       "g:reflexive-routine",
       "g:stem-boot",
       "l:estar",
       "l:jubilarse",
       "l:querer",
-      "p:para-inf",
-      "p:para-inf-purpose"
+      "l:tío",
+      "p:estar-por",
+      "p:possessives-basic"
     ],
     "targets": [],
     "kind": "statement",
@@ -20557,20 +20655,17 @@
   },
   {
     "id": "u58-0818",
-    "es": "Los techos nuevos están por llegar mañana.",
-    "en": "The new roof tiles are due to arrive tomorrow.",
+    "es": "Los obreros están por llegar.",
+    "en": "The workers are about to arrive.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:estar-location-states",
       "g:gender-articles",
       "g:por-para-1",
       "l:estar",
       "l:llegar",
-      "l:mañana",
-      "l:nuevo",
-      "l:techo",
+      "l:obrero",
       "p:estar-por"
     ],
     "targets": [],
@@ -20629,23 +20724,21 @@
   },
   {
     "id": "u58-0821",
-    "es": "Ese señor es aburrido, pero hoy está aburrido de verdad.",
-    "en": "That man is boring, but today he's really bored.",
+    "es": "Mi primo es divertido, pero hoy está aburrido.",
+    "en": "My cousin is fun, but today he's bored.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:en-serio",
-      "g:demonstratives",
       "g:estar-location-states",
       "g:ser-identity",
       "l:aburrido",
+      "l:divertido",
       "l:estar",
       "l:hoy",
+      "l:primo",
       "l:ser",
-      "l:señor",
-      "l:verdad",
       "p:aburrir-aburrirse",
-      "p:estar-harto-de"
+      "p:possessives-basic"
     ],
     "targets": [],
     "kind": "statement",
@@ -20780,18 +20873,20 @@
   },
   {
     "id": "u58-0827",
-    "es": "Mi vecino es muy callado, pero hoy está callado de más.",
+    "es": "Mi vecino es muy callado, pero hoy está demasiado callado.",
     "en": "My neighbour is very quiet, but today he's too quiet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
+      "g:quantifiers",
       "g:ser-identity",
       "l:callado",
       "l:estar",
       "l:hoy",
       "l:ser",
       "l:vecino",
+      "p:no-es-nada-adj",
       "p:possessives-basic",
       "p:quantifiers-basic"
     ],
@@ -20970,8 +21065,8 @@
   },
   {
     "id": "u58-0835",
-    "es": "¿Dónde es la fiesta? Es en el café.",
-    "en": "Where is the party? It's at the café.",
+    "es": "¿Dónde es la fiesta?\nEs en el café.",
+    "en": "Where is the party?\nIt's at the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21060,25 +21155,23 @@
   },
   {
     "id": "u58-0839",
-    "es": "La caja está llena de cartas viejas; es de mi abuela.",
-    "en": "The box is full of old letters; it's my grandmother's.",
+    "es": "Esa caja es de mi abuela y está llena de fotos.",
+    "en": "That box is my grandmother's and it's full of photos.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
+      "g:demonstratives",
       "g:estar-location-states",
-      "g:gender-articles",
       "g:ser-identity",
       "l:abuela",
       "l:caja",
-      "l:carta",
       "l:estar",
+      "l:foto",
       "l:lleno",
       "l:ser",
-      "l:viejo",
       "p:lleno-libre",
-      "p:possessives-basic",
-      "p:viejo-antiguo-mayor"
+      "p:possessives-basic"
     ],
     "targets": [],
     "kind": "statement",
@@ -21088,8 +21181,8 @@
   },
   {
     "id": "u58-0840",
-    "es": "Ese hombre es de Cali, pero ya está de paso por Bogotá.",
-    "en": "That man is from Cali, but he's just passing through Bogotá.",
+    "es": "Ese hombre es de Cali, pero está de paso por Bogotá.",
+    "en": "That man is from Cali, but he's passing through Bogotá.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21110,22 +21203,26 @@
   },
   {
     "id": "u58-0841",
-    "es": "La mesa está parada junto a la ventana.",
-    "en": "The table is standing by the window.",
+    "es": "El ascensor está parado otra vez; toca subir a pie.",
+    "en": "The lift is out of order again; we have to walk up.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
-      "g:estar-participle",
       "g:gender-articles",
+      "g:present-ar",
+      "l:ascensor",
       "l:estar",
-      "l:junto",
-      "l:mesa",
       "l:parar",
-      "l:ventana",
+      "l:pie",
+      "l:subir",
+      "l:tocar",
+      "l:vez",
       "p:detenerse-estar-parado",
-      "p:posicion-precisa",
-      "p:postura"
+      "p:no-queda-de-otra",
+      "p:otro-no-article",
+      "p:postura",
+      "p:transport-en"
     ],
     "targets": [],
     "kind": "statement",
@@ -21415,20 +21512,21 @@
   },
   {
     "id": "u58-0853",
-    "es": "Cuanto más ríe Hernando, más se alivia de la rodilla.",
-    "en": "The more Hernando laughs, the more relief he gets from his knee.",
+    "es": "Cuanto más camina mi abuelo, más se le alivia la rodilla.",
+    "en": "The more my grandfather walks, the better his knee feels.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparative-advanced-c1",
       "g:gender-articles",
       "g:present-ar",
-      "g:se-impersonal",
-      "g:stem-e-i",
+      "g:se-accidental",
+      "l:abuelo",
       "l:aliviar",
+      "l:caminar",
       "l:cuanto",
-      "l:reír",
-      "l:rodilla"
+      "l:rodilla",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:comparative-advanced-c1",
@@ -21509,14 +21607,15 @@
   },
   {
     "id": "u58-0857",
-    "es": "El torneo de dominó es el sábado a eso de las tres.",
-    "en": "The chess tournament is on Saturday at about three.",
+    "es": "El torneo es el sábado a eso de las tres, en el banco del café.",
+    "en": "The tournament is on Saturday at about three, on the café bench.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:dominó",
+      "l:banco",
+      "l:café",
       "l:ser",
       "l:sábado",
       "l:torneo",
@@ -21536,20 +21635,18 @@
   },
   {
     "id": "u58-0858",
-    "es": "Hernando ganó el torneo de dominó por segundo año.",
-    "en": "Hernando won the chess tournament for the second year.",
+    "es": "Hernando ganó el torneo del barrio dos años seguidos.",
+    "en": "Hernando won the neighbourhood tournament two years running.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
       "g:preterite-ar",
       "l:año",
-      "l:dominó",
+      "l:barrio",
       "l:ganar",
-      "l:torneo",
-      "p:ordinal-floor",
-      "p:ordinals-primer-tercer"
+      "l:seguir",
+      "l:torneo"
     ],
     "targets": [
       "l:torneo"
@@ -21561,8 +21658,8 @@
   },
   {
     "id": "u58-0859",
-    "es": "¿Quién ganó el torneo? Un conde de Cali, dicen.",
-    "en": "Who won the tournament? A count from Cali, they say.",
+    "es": "¿Quién ganó el torneo?\nUn conde de Cali, dicen.",
+    "en": "Who won the tournament?\nA count from Cali, they say.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21807,15 +21904,18 @@
   },
   {
     "id": "u58-0869",
-    "es": "Hernando es valiente, pero hoy está nervioso.",
-    "en": "Hernando is brave, but today he's nervous.",
+    "es": "Hernando era valiente, pero ese día estaba nervioso.",
+    "en": "Hernando was brave, but that day he was nervous.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
+      "g:demonstratives",
       "g:estar-location-states",
+      "g:imperfect-states",
       "g:ser-identity",
+      "l:día",
       "l:estar",
-      "l:hoy",
       "l:nervioso",
       "l:ser",
       "l:valiente"
@@ -21886,13 +21986,15 @@
   },
   {
     "id": "u58-0872",
-    "es": "El perro de Hernando es valiente, pero tiene miedo de las tormentas.",
-    "en": "Hernando's dog is brave, but afraid of storms.",
+    "es": "El perro de la vecina es valiente, pero les tiene miedo a las tormentas.",
+    "en": "The neighbour's dog is brave, but it's afraid of storms.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
       "g:gender-articles",
+      "g:indirect-objects",
+      "g:le-doubling",
       "g:ser-identity",
       "g:stem-boot",
       "l:miedo",
@@ -21901,7 +22003,9 @@
       "l:tener",
       "l:tormenta",
       "l:valiente",
+      "l:vecino",
       "p:me-da-miedo-que",
+      "p:miedo-a",
       "p:tener-hambre"
     ],
     "targets": [
@@ -22314,8 +22418,8 @@
   },
   {
     "id": "u58-0890",
-    "es": "La casa de Hernando da a una plaza con un árbol enorme.",
-    "en": "Hernando's house looks onto a square with an enormous tree.",
+    "es": "La casa de mi tía da a una plaza con un árbol enorme.",
+    "en": "My aunt's house looks onto a square with an enormous tree.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22326,8 +22430,10 @@
       "l:dar",
       "l:enorme",
       "l:plaza",
+      "l:tía",
       "l:árbol",
-      "p:dar-a"
+      "p:dar-a",
+      "p:possessives-basic"
     ],
     "targets": [
       "p:dar-a"
@@ -22597,19 +22703,19 @@
   },
   {
     "id": "u58-0901",
-    "es": "¿Cuánta velocidad tomó la moto en la bajada?",
-    "en": "How much speed did the motorbike pick up on the way down?",
+    "es": "¿A qué velocidad iba la moto en la bajada?",
+    "en": "How fast was the motorbike going on the way down?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ar",
-      "g:questions",
+      "g:imperfect-habitual",
       "l:bajar",
-      "l:cuánto",
+      "l:ir",
       "l:moto",
-      "l:tomar",
-      "l:velocidad"
+      "l:qué",
+      "l:velocidad",
+      "p:prep-questions-basic"
     ],
     "targets": [],
     "kind": "question",
@@ -22747,13 +22853,13 @@
   },
   {
     "id": "u58-0907",
-    "es": "El taxi de Hernando tomó velocidad en la bajada, como siempre.",
-    "en": "Hernando's taxi picked up speed on the way down, as always.",
+    "es": "El taxi de Hernando siempre tomaba velocidad en la bajada.",
+    "en": "Hernando's taxi always picked up speed on the way down.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ar",
+      "g:imperfect-habitual",
       "l:bajar",
       "l:siempre",
       "l:taxi",
@@ -23130,21 +23236,20 @@
   },
   {
     "id": "u58-0923",
-    "es": "El fruto de la sequía fue un año sin café.",
-    "en": "The fruit of the drought was a year without coffee.",
+    "es": "Después de la sequía, los árboles casi no dieron fruto.",
+    "en": "After the drought, the trees hardly bore any fruit.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
-      "g:ser-identity",
-      "l:año",
-      "l:café",
+      "g:preterite-irregular-strong",
+      "l:dar",
+      "l:después",
       "l:fruto",
       "l:sequía",
-      "l:ser",
-      "p:con-sin",
-      "p:fruto-fruta"
+      "l:árbol",
+      "p:fruto-fruta",
+      "p:time-sequence-basic"
     ],
     "targets": [
       "l:fruto",
@@ -23505,22 +23610,24 @@
   },
   {
     "id": "u58-0937",
-    "es": "¡Cuidado, vas a dar marcha atrás sobre el perro!",
-    "en": "Careful, you're going to reverse over the dog! (to a friend)",
+    "es": "¡Cuidado con el perro! Estás dando marcha atrás sin mirar.",
+    "en": "Watch out for the dog! You're reversing without looking. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:ojo",
-      "c:voy-vas",
+      "g:estar-gerund",
+      "g:estar-location-states",
       "g:gender-articles",
-      "g:ir-a-plans",
+      "g:prep-infinitive",
       "l:atrás",
-      "l:cuidado",
+      "l:cuidar",
       "l:dar",
-      "l:ir",
+      "l:estar",
       "l:marcha",
+      "l:mirar",
       "l:perro",
-      "p:dar-marcha-atras"
+      "p:dar-marcha-atras",
+      "p:ten-cuidado-con"
     ],
     "targets": [
       "l:marcha",
@@ -23977,18 +24084,21 @@
   },
   {
     "id": "u58-0954",
-    "es": "¿Hacia qué rumbo queda la terminal?",
-    "en": "In which direction is the terminal?",
+    "es": "¿Qué rumbo toma el bus después de la terminal?",
+    "en": "Which way does the bus go after the terminal?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:quedar",
+      "g:questions",
+      "l:bus",
+      "l:después",
       "l:qué",
       "l:rumbo",
       "l:terminal",
-      "p:prep-questions-basic"
+      "l:tomar",
+      "p:time-sequence-basic"
     ],
     "targets": [
       "l:rumbo"
@@ -24103,7 +24213,7 @@
   {
     "id": "u58-0959",
     "es": "¿A qué altura de la calle queda el café?",
-    "en": "How far along the street is the café?",
+    "en": "Whereabouts on the street is the café?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24230,8 +24340,8 @@
   },
   {
     "id": "u58-0964",
-    "es": "Hernando vive a la altura de la calle 20, junto a la tienda.",
-    "en": "Hernando lives by 20th Street, next to the shop.",
+    "es": "Mi tía vive a la altura de la calle 20, junto a la tienda.",
+    "en": "My aunt lives by 20th Street, next to the shop.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24242,9 +24352,11 @@
       "l:calle",
       "l:juntar",
       "l:tienda",
+      "l:tía",
       "l:vivir",
       "p:a-la-altura-de",
       "p:posicion-precisa",
+      "p:possessives-basic",
       "p:street-names"
     ],
     "targets": [
@@ -24686,18 +24798,21 @@
   },
   {
     "id": "u58-0981",
-    "es": "Los trenes van hasta el tope en las horas de oficina.",
-    "en": "The trains are jam-packed during office hours.",
+    "es": "Los buses van llenos hasta el tope en la hora pico.",
+    "en": "The buses are jam-packed at rush hour.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:ir-a-plans",
+      "g:present-ar",
+      "l:bus",
       "l:hora",
       "l:ir",
-      "l:oficina",
+      "l:lleno",
+      "l:picar",
       "l:tope",
-      "l:tren",
       "p:a-reventar"
     ],
     "targets": [
@@ -24731,7 +24846,7 @@
   },
   {
     "id": "u58-0983",
-    "es": "La cesta estaba llena hasta arriba de papayas.",
+    "es": "La canasta estaba llena hasta arriba de papayas.",
     "en": "The basket was filled to the top with papayas.",
     "accept": [],
     "acceptEn": [],
@@ -24741,7 +24856,7 @@
       "g:gender-articles",
       "g:imperfect-states",
       "l:arriba",
-      "l:cesta",
+      "l:canasta",
       "l:estar",
       "l:lleno",
       "l:papaya",
@@ -24885,25 +25000,22 @@
   },
   {
     "id": "u58-0989",
-    "es": "El hierro estaba al rojo vivo cuando el herrero lo sacó.",
-    "en": "The iron was red-hot when the blacksmith took it out.",
+    "es": "El herrero calentó la herradura hasta ponerla al rojo vivo.",
+    "en": "The blacksmith heated the horseshoe until it was red-hot.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:al-rojo-vivo",
       "g:direct-objects",
-      "g:estar-location-states",
       "g:gender-articles",
-      "g:imperfect-states",
-      "g:pret-vs-imperfect",
+      "g:object-pronoun-position",
       "g:preterite-ar",
-      "l:estar",
+      "l:calentar",
+      "l:herradura",
       "l:herrero",
-      "l:hierro",
+      "l:poner",
       "l:rojo",
-      "l:sacar",
-      "l:vivo",
-      "p:cuando-basic"
+      "l:vivo"
     ],
     "targets": [
       "c:al-rojo-vivo"
@@ -24915,19 +25027,24 @@
   },
   {
     "id": "u58-0990",
-    "es": "Hoy hace un frío que cala los huesos en la plaza.",
-    "en": "Today it's bone-chillingly cold in the square.",
+    "es": "Los turistas no saben que aquí hace un frío que cala los huesos.",
+    "en": "The tourists don't know it's bone-chillingly cold here.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:frio-que-cala-los-huesos",
       "g:gender-articles",
+      "g:present-er-ir",
+      "g:that-clauses",
+      "l:aquí",
       "l:cala",
       "l:frío",
       "l:hacer",
-      "l:hoy",
       "l:hueso",
-      "l:plaza"
+      "l:saber",
+      "l:turista",
+      "p:aqui-ahi-alla",
+      "p:saber-conocer"
     ],
     "targets": [
       "c:frio-que-cala-los-huesos"
@@ -24964,22 +25081,25 @@
   },
   {
     "id": "u58-0992",
-    "es": "Cuando salí al patio, noté un frío que cala los huesos.",
-    "en": "When I went out to the courtyard, I noticed a bone-chilling cold.",
+    "es": "Cuando salgo al patio por la mañana, siento un frío que cala los huesos.",
+    "en": "When I go out to the courtyard in the morning, I feel a bone-chilling cold.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:frio-que-cala-los-huesos",
+      "c:hago-salgo-vengo",
       "g:gender-articles",
-      "g:preterite-ar",
-      "g:preterite-er-ir",
+      "g:stem-boot",
+      "g:yo-irregular",
       "l:cala",
       "l:frío",
       "l:hueso",
-      "l:notar",
+      "l:mañana",
       "l:patio",
       "l:salir",
-      "p:cuando-basic"
+      "l:sentir",
+      "p:cuando-basic",
+      "p:por-la-manana"
     ],
     "targets": [
       "c:frio-que-cala-los-huesos"
@@ -25379,16 +25499,19 @@
   },
   {
     "id": "u58-1008",
-    "es": "Mantener lejos del alcance de los niños y de Simón.",
-    "en": "Keep out of the reach of children and Simón.",
+    "es": "Los dulces quedaron fuera del alcance de los niños, en el estante de arriba.",
+    "en": "The sweets ended up out of the children's reach, on the top shelf.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:preterite-ar",
       "l:alcance",
-      "l:lejos",
-      "l:mantener",
+      "l:arriba",
+      "l:dulce",
+      "l:estante",
       "l:niño",
+      "l:quedar",
       "p:al-alcance-de",
       "p:cerca-de",
       "p:position-de"
@@ -25544,20 +25667,17 @@
   },
   {
     "id": "u58-1015",
-    "es": "Esa mujer fortalece a todo el que la conoce.",
-    "en": "That woman strengthens everyone who knows her.",
+    "es": "Caminar por los cerros fortalece las piernas.",
+    "en": "Walking in the hills strengthens your legs.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:demonstratives",
-      "g:direct-objects",
       "g:gender-articles",
-      "g:present-er-ir",
-      "g:relatives-prepositions",
-      "l:conocer",
-      "l:mujer",
-      "p:encarecer-abaratar",
-      "p:saber-conocer"
+      "g:por-para-1",
+      "l:caminar",
+      "l:cerro",
+      "l:pierna",
+      "p:encarecer-abaratar"
     ],
     "targets": [
       "p:encarecer-abaratar"
@@ -25569,23 +25689,23 @@
   },
   {
     "id": "u58-1016",
-    "es": "Tiene celos del éxito de su socia, pero lo esconde.",
-    "en": "He is jealous of his partner's success, but he hides it.",
+    "es": "Tiene celos de la nueva socia, pero lo esconde.",
+    "en": "He's jealous of the new partner, but he hides it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
+      "g:adjective-agreement",
       "g:direct-objects",
       "g:gender-articles",
       "g:present-er-ir",
       "g:stem-boot",
       "l:celos",
       "l:esconder",
+      "l:nuevo",
       "l:socio",
       "l:tener",
-      "l:éxito",
-      "p:los-celos-los-restos",
-      "p:possessives-basic"
+      "p:los-celos-los-restos"
     ],
     "targets": [
       "p:los-celos-los-restos"
@@ -25673,8 +25793,8 @@
   },
   {
     "id": "u58-1020",
-    "es": "Fue un amor de viaje, tranquilo y sin sustos.",
-    "en": "It was a lovely trip, calm and without scares.",
+    "es": "Fue una maravilla de viaje, tranquilo y sin sustos.",
+    "en": "It was a wonderful trip, calm and without scares.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -25682,12 +25802,11 @@
       "g:gender-articles",
       "g:preterite-ser-ir-hacer",
       "g:ser-identity",
-      "l:amor",
+      "l:maravilla",
       "l:ser",
       "l:susto",
       "l:tranquilo",
       "l:viaje",
-      "p:ser-un-noun",
       "p:un-amor-de-persona"
     ],
     "targets": [
@@ -25779,8 +25898,8 @@
   },
   {
     "id": "u58-1024",
-    "es": "Ni aunque me costara la plata, dejaría de arreglar la viga.",
-    "en": "Even if it cost me the money, I wouldn't stop fixing the beam.",
+    "es": "Ni aunque me costara toda la plata, dejaría de arreglar el café.",
+    "en": "Even if it cost me all my money, I wouldn't stop fixing the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -25790,10 +25909,10 @@
       "g:imperfect-subj",
       "g:subj-concessive",
       "l:arreglar",
+      "l:café",
       "l:costar",
       "l:dejar",
       "l:plata",
-      "l:viga",
       "p:costar-pagar",
       "p:dejar-de-inf",
       "p:ni-aunque"
@@ -25889,27 +26008,30 @@
   },
   {
     "id": "u58-1028",
-    "es": "Lo primero que llama la atención es el tamaño de las ventanas.",
-    "en": "The first thing that strikes you is the size of the windows.",
+    "es": "Y en tu barrio, ¿qué es lo primero que llama la atención de los turistas?",
+    "en": "And in your neighbourhood, what's the first thing that catches tourists' attention? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "g:relative-que",
+      "g:questions",
       "g:ser-identity",
+      "g:that-clauses",
       "l:atención",
+      "l:barrio",
       "l:llamar",
+      "l:qué",
       "l:ser",
-      "l:tamaño",
-      "l:ventana",
+      "l:turista",
       "p:lo-primero-que",
+      "p:possessives-basic",
       "p:time-sequence-basic"
     ],
     "targets": [
       "p:lo-primero-que"
     ],
-    "kind": "dialogue",
+    "kind": "question",
     "unit": "u58",
     "theme": "top-up, mixed",
     "source": "gen"
@@ -26181,15 +26303,14 @@
   },
   {
     "id": "u58-1038",
-    "es": "A medida que lo cuenta, Hernando cambia la historia.",
-    "en": "As he tells it, Hernando changes the story.",
+    "es": "A medida que la contaba, Hernando cambiaba la historia.",
+    "en": "As he told it, Hernando kept changing the story.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
       "g:gender-articles",
-      "g:present-ar",
-      "g:stem-boot",
+      "g:imperfect-habitual",
       "g:temporal-advanced",
       "l:cambiar",
       "l:contar",
@@ -26804,19 +26925,20 @@
   },
   {
     "id": "u58-1061",
-    "es": "Hernando mide la distancia al ojo y casi nunca falla.",
-    "en": "Hernando judges distance by eye and almost never gets it wrong.",
+    "es": "Hernando medía las distancias al ojo y casi nunca fallaba.",
+    "en": "Hernando judged distances by eye and almost never got them wrong.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ojo",
+      "g:adjective-agreement",
       "g:direct-objects",
       "g:gender-articles",
+      "g:imperfect-habitual",
       "g:present-ar",
-      "g:stem-e-i",
       "l:distanciar",
       "l:fallar",
-      "l:medir",
+      "l:medio",
       "l:ojo",
       "p:a-ojo",
       "p:frequency-scale"
@@ -26903,13 +27025,13 @@
   },
   {
     "id": "u58-1065",
-    "es": "A eso de las tres, Hernando duerme una siesta en su mesa.",
-    "en": "At about three, Hernando naps at his table.",
+    "es": "A eso de las tres, Hernando dormía una siesta en su mesa.",
+    "en": "At about three, Hernando used to nap at his table.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:stem-boot",
+      "g:imperfect-habitual",
       "l:dormir",
       "l:mesa",
       "l:siesta",
@@ -27273,8 +27395,8 @@
   },
   {
     "id": "u58-1079",
-    "es": "Tomás inclinó el cuadro para ver si estaba derecho.",
-    "en": "Tomás tilted the picture to see if it was straight.",
+    "es": "Tomás inclinó la cabeza para ver si el cuadro estaba derecho.",
+    "en": "Tomás tilted his head to see if the picture was straight.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27284,6 +27406,7 @@
       "g:indirect-questions",
       "g:pret-vs-imperfect",
       "g:preterite-ar",
+      "l:cabeza",
       "l:cuadro",
       "l:derecho",
       "l:estar",
@@ -27302,7 +27425,7 @@
   },
   {
     "id": "u58-1080",
-    "es": "La estantería está inclinada hacia la pared.",
+    "es": "El estante está inclinado hacia la pared.",
     "en": "The shelf is leaning toward the wall.",
     "accept": [],
     "acceptEn": [],
@@ -27310,7 +27433,7 @@
       "g:estar-location-states",
       "g:estar-participle",
       "g:gender-articles",
-      "l:estantería",
+      "l:estante",
       "l:estar",
       "l:inclinar",
       "l:pared",
@@ -27327,19 +27450,16 @@
   },
   {
     "id": "u58-1081",
-    "es": "Las ofertas bajaron el precio del viaje a la costa.",
-    "en": "The deals lowered the price of the trip to the coast.",
+    "es": "La oferta abarató el viaje a la costa.",
+    "en": "The deal made the trip to the coast cheaper.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ar",
-      "l:bajar",
       "l:costa",
       "l:oferta",
-      "l:precio",
       "l:viaje",
-      "p:subir-subida"
+      "p:encarecer-abaratar"
     ],
     "targets": [],
     "kind": "statement",

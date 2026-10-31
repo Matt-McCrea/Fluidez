@@ -6,38 +6,169 @@
     "en": "I measured it by eye."
   },
   "examples": [
-    { "es": "Lo medí al ojo.", "en": "I measured it by eye." },
-    { "es": "Calculando por lo bajo, éramos cien.", "en": "At a conservative estimate, there were a hundred of us." },
-    { "es": "Había, como mucho, veinte personas.", "en": "There were twenty people at most." },
-    { "es": "Cuesta por lo menos un millón.", "en": "It costs at least a million." },
-    { "es": "Lo calculé al ojo.", "en": "I worked it out by eye." },
-    { "es": "Hay, como mucho, tres mesas libres.", "en": "There are three free tables at most." }
+    {
+      "es": "Lo medí al ojo.",
+      "en": "I measured it by eye."
+    },
+    {
+      "es": "Calculando por lo bajo, éramos cien.",
+      "en": "At a conservative estimate, there were a hundred of us."
+    },
+    {
+      "es": "Había, como mucho, veinte personas.",
+      "en": "There were twenty people at most."
+    },
+    {
+      "es": "Cuesta por lo menos un millón.",
+      "en": "It costs at least a million."
+    },
+    {
+      "es": "Lo calculé al ojo.",
+      "en": "I worked it out by eye."
+    },
+    {
+      "es": "Hay, como mucho, tres mesas libres.",
+      "en": "There are three free tables at most."
+    }
   ],
   "rule": "Four small phrases let you give a number without pretending to be exact.\n\n*al ojo* = by eye, with no tools: *lo medí al ojo*.\n\n*calculando por lo bajo* = on a low estimate. *Por lo alto* is the high one.\n\n*como mucho* = at most. It caps the number: *como mucho veinte*.\n\n*por lo menos* = at least. It sets a floor: *por lo menos un millón*.\n\nThey are not mistakes or vagueness. They tell the listener how far to trust the number, and native speakers use them all the time.",
   "smallPrint": "Teachers call these estimation markers. Some books write *a ojo*; in Latin America *al ojo* is the usual form.",
   "readAndPick": [
-    { "es": "Lo medí al ojo.", "options": ["I measured it with a tape.", "I measured it by eye.", "I measured it twice."], "answer": 1 },
-    { "es": "Calculando por lo bajo, éramos cien.", "options": ["At a conservative estimate, there were a hundred of us.", "At a high estimate, there were a hundred of us.", "There were exactly a hundred of us."], "answer": 0 },
-    { "es": "Había, como mucho, veinte personas.", "options": ["There were twenty people at least.", "There were twenty people at most.", "There were twenty people exactly."], "answer": 1 },
-    { "es": "Cuesta por lo menos un millón.", "options": ["It costs at most a million.", "It costs a million exactly.", "It costs at least a million."], "answer": 2 },
-    { "es": "Hay, como mucho, tres mesas libres.", "options": ["There are three free tables at least.", "There are three free tables at most."], "answer": 1 },
-    { "es": "Lo calculé al ojo.", "options": ["I worked it out by eye.", "I worked it out on paper.", "I will work it out by eye."], "answer": 0 },
-    { "es": "Calculando por lo alto, éramos cien.", "options": ["At a conservative estimate, there were a hundred of us.", "At a high estimate, there were a hundred of us."], "answer": 1 },
-    { "es": "Necesito por lo menos cinco sillas.", "options": ["I need five chairs at most.", "I need at least five chairs.", "I need exactly five chairs."], "answer": 1 }
+    {
+      "es": "Lo medí al ojo.",
+      "options": [
+        "I measured it with a tape.",
+        "I measured it by eye.",
+        "I measured it twice."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Calculando por lo bajo, éramos cien.",
+      "options": [
+        "At a conservative estimate, there were a hundred of us.",
+        "At a high estimate, there were a hundred of us.",
+        "There were exactly a hundred of us."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Había, como mucho, veinte personas.",
+      "options": [
+        "There were twenty people at least.",
+        "There were twenty people at most.",
+        "There were twenty people exactly."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cuesta por lo menos un millón.",
+      "options": [
+        "It costs at most a million.",
+        "It costs a million exactly.",
+        "It costs at least a million."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Hay, como mucho, tres mesas libres.",
+      "options": [
+        "There are three free tables at least.",
+        "There are three free tables at most."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Lo calculé al ojo.",
+      "options": [
+        "I worked it out by eye.",
+        "I worked it out on paper.",
+        "I will work it out by eye."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Calculando por lo alto, éramos cien.",
+      "options": [
+        "At a conservative estimate, there were a hundred of us.",
+        "At a high estimate, there were a hundred of us."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Necesito por lo menos cinco sillas.",
+      "options": [
+        "I need five chairs at most.",
+        "I need at least five chairs.",
+        "I need exactly five chairs."
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick the right phrase and type the whole sentence: *Lo medí ___.* (al ojo or al techo)", "answer": "Lo medí al ojo.", "accept": [], "why": "*Al ojo* is \"by eye\"." },
-    { "prompt": "Type in Spanish: There were twenty people at most.", "answer": "Había, como mucho, veinte personas.", "accept": ["Había como mucho veinte personas."], "why": "*Como mucho* puts a ceiling on the number." },
-    { "prompt": "Type in Spanish: It costs at least a million.", "answer": "Cuesta por lo menos un millón.", "accept": [], "why": "*Por lo menos* puts a floor under the number." },
-    { "prompt": "Type in Spanish: At a conservative estimate, there were a hundred of us.", "answer": "Calculando por lo bajo, éramos cien.", "accept": [], "why": "*Por lo bajo* is the cautious, low estimate." },
-    { "prompt": "Type in Spanish: There are three free tables at most.", "answer": "Hay, como mucho, tres mesas libres.", "accept": ["Hay como mucho tres mesas libres."], "why": "*Como mucho* sits right before the number it caps." },
-    { "prompt": "Make it a high estimate: *Calculando por lo bajo, éramos cien.* Say: At a high estimate, there were a hundred of us.", "answer": "Calculando por lo alto, éramos cien.", "accept": [], "why": "Swap *bajo* for *alto* to estimate high." },
-    { "prompt": "Type in Spanish: I need at least five chairs.", "answer": "Necesito por lo menos cinco sillas.", "accept": [], "why": "*Por lo menos* comes before the amount, as a floor." }
+    {
+      "prompt": "Pick the right phrase and type the whole sentence: *Lo medí ___.* (al ojo or con el ojo)",
+      "answer": "Lo medí al ojo.",
+      "accept": [],
+      "why": "*Al ojo* is \"by eye\"."
+    },
+    {
+      "prompt": "Type in Spanish: There were twenty people at most.",
+      "answer": "Había, como mucho, veinte personas.",
+      "accept": [
+        "Había como mucho veinte personas."
+      ],
+      "why": "*Como mucho* puts a ceiling on the number."
+    },
+    {
+      "prompt": "Type in Spanish: It costs at least a million.",
+      "answer": "Cuesta por lo menos un millón.",
+      "accept": [],
+      "why": "*Por lo menos* puts a floor under the number."
+    },
+    {
+      "prompt": "Type in Spanish: At a conservative estimate, there were a hundred of us.",
+      "answer": "Calculando por lo bajo, éramos cien.",
+      "accept": [],
+      "why": "*Por lo bajo* is the cautious, low estimate."
+    },
+    {
+      "prompt": "Type in Spanish: There are three free tables at most.",
+      "answer": "Hay, como mucho, tres mesas libres.",
+      "accept": [
+        "Hay como mucho tres mesas libres."
+      ],
+      "why": "*Como mucho* sits right before the number it caps."
+    },
+    {
+      "prompt": "Make it a high estimate: *Calculando por lo bajo, éramos cien.* Say: At a high estimate, there were a hundred of us.",
+      "answer": "Calculando por lo alto, éramos cien.",
+      "accept": [],
+      "why": "Swap *bajo* for *alto* to estimate high."
+    },
+    {
+      "prompt": "Type in Spanish: I need at least five chairs.",
+      "answer": "Necesito por lo menos cinco sillas.",
+      "accept": [],
+      "why": "*Por lo menos* comes before the amount, as a floor."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Lo medí con ojo.", "right": "Lo medí al ojo.", "why": "Almost. The set phrase is *al ojo*, not *con ojo*." },
-    { "wrong": "Cuesta al menos que un millón.", "right": "Cuesta por lo menos un millón.", "why": "Almost. No *que* after \"at least\": the number follows directly." },
-    { "wrong": "Había como máximo de veinte personas.", "right": "Había, como mucho, veinte personas.", "why": "Almost. No *de* between the phrase and the number." }
+    {
+      "wrong": "Lo medí con ojo.",
+      "right": "Lo medí al ojo.",
+      "why": "Almost. The set phrase is *al ojo*, not *con ojo*."
+    },
+    {
+      "wrong": "Lo medí por ojo.",
+      "right": "Lo medí al ojo.",
+      "why": "Almost. English \"by eye\" pulls you toward *por*, but the set phrase is *al ojo*."
+    },
+    {
+      "wrong": "Había como máximo de veinte personas.",
+      "right": "Había, como mucho, veinte personas.",
+      "why": "Almost. No *de* between the phrase and the number."
+    }
   ],
   "personal": "Estimate something near you, like the people in the room or the price of your phone, with *al ojo*, *como mucho* or *por lo menos*."
 }
