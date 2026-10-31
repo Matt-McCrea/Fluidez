@@ -1,0 +1,463 @@
+{
+  "id": "ch183",
+  "unit": "u53",
+  "title": "La torta del juez",
+  "text": "El mensaje nuevo llegó a las siete: «Por lo visto, la sentencia ya está escrita. Ayer el juez almorzó en el hotel con los abogados de Altamira. Cada quien saque sus conclusiones».\nGloria se puso pálida.\nHernando: Relájese, Gloria.\nGloria: No me pida que me relaje, don Hernando. Yo me relajo cuando me muera.\nMariana: Para mí que es Bermúdez otra vez. A ese señor le dieron cuerda en la alcaldía, y todavía no se le acaba. No es un criminal. Es algo peor: un profesional.\nEn la barra, Wilson dejó la taza.\nWilson: El almuerzo sí fue. Yo lo vi desde el andamio. El abogado de la corbata rosada y un señor mayor, de bastón. Los meseros le decían «señor juez».\nJhon Fredy: Para mí que eso lo arregla todo. Si le dicen señor juez, es juez.\nHernando: Usted es esclavo de ese celular, mijo.\nMariana: No tengo tan claro que un mesero sepa quién es juez.\nBuscó quién era el responsable del caso Rengifo. La página de una entidad estatal tardó cuatro minutos.\nMariana: Es una jueza, la doctora Amparo Salgar, famosa por sus sentencias contra funcionarios. Según el calendario del juzgado, la próxima audiencia es en febrero.\nWilson mostró su foto, de lejos y movida. Hernando soltó una carcajada.\nHernando: ¡Ese es el juez Montoya! El papá del de la corbata. Se jubiló hace veinte años. Le dicen «señor juez» hasta en la peluquería. Y mírele la mesa.\nDelante del viejo había una torta con velas.\nHernando: Cada quien almuerza con su papá cuando cumple años. Hasta los abogados de Altamira.\nSimón: ¡Señor juez! ¡Señor juez, parce!\nMariana: Así es un rumor bien hecho: todo es verdad, menos la relación entre las cosas.\nTomás no explicó nada. Escribió en el grupo, sin repetir nada: «Feliz cumpleaños al juez Montoya, jubilado. El caso Rengifo lo lleva la jueza Salgar, y su calendario es público». Y pegó la foto de la torta.\nDoña Teresa contestó con tres velitas. A las seis, el número sin foto salió del grupo. Nadie se hizo responsable de nada.\nWilson: Si en la obra se enteran de que la foto es mía, me echan. Yo no soy esclavo de nadie, pero tengo dos niños.\nTomás: Nadie lo va a saber. Se lo prometo.\nWilson: Usted es muy diplomático, don Tomás. Pero mi mamá decía que no hay igualdad entre el que tiene abogado y el que tiene casco.\nTomás le regaló dos pandebonos para los niños, de los quemados.\nPor la noche, Gloria propuso un tablero comunitario en la puerta: a un lado, lo que dice la gente; al otro, lo que se puede comprobar.\nGloria: Igualdad de condiciones. El rumor y la verdad, uno al lado del otro.\nEn la primera línea del tablero comunitario, Jhon Fredy escribió: «Dicen que el café cierra». Al lado, Tomás escribió: «Abrimos mañana a las seis».\nA las diez llamó Osorio, el editor de Mariana, hablando rápido.\nOsorio: Rengifo salía mañana de Miami a Panamá. Y hay una solicitud de cooperación con Estados Unidos desde el mes pasado. Es un caso criminal, con tres entidades estatales, no un chisme de barrio.\nMariana: ¿Cooperación de verdad, o según tu fuente?\nOsorio: Según mi fuente. El vuelo salía a las once. Hasta que no lo vea, para mí es un rumor más.\nHernando volvió a sentarse y le dio cuerda al reloj.\nHernando: Mañana a las once, mijo, nadie se relaja. Ni el pájaro.\nAfuera, en el tablero, alguien había escrito con letra de diplomático, muy redonda: «Dicen que Rengifo vuelve». Al lado, todavía no había nada.",
+  "gloss": [
+    {
+      "es": "la sentencia ya está escrita",
+      "en": "the ruling has already been written"
+    },
+    {
+      "es": "Cada quien saque sus conclusiones",
+      "en": "Everyone can draw their own conclusions"
+    },
+    {
+      "es": "pálida",
+      "en": "pale"
+    },
+    {
+      "es": "Relájese",
+      "en": "Relax"
+    },
+    {
+      "es": "A ese señor le dieron cuerda en la alcaldía, y todavía no se le acaba",
+      "en": "They wound that man up at the mayor's office, and he still hasn't run down"
+    },
+    {
+      "es": "andamio",
+      "en": "scaffolding"
+    },
+    {
+      "es": "Para mí que eso lo arregla todo",
+      "en": "If you ask me, that settles it"
+    },
+    {
+      "es": "Usted es esclavo de ese celular",
+      "en": "You're a slave to that phone"
+    },
+    {
+      "es": "No tengo tan claro que un mesero sepa quién es juez",
+      "en": "I'm not so sure a waiter knows who is a judge"
+    },
+    {
+      "es": "el responsable del caso",
+      "en": "the person in charge of the case"
+    },
+    {
+      "es": "entidad estatal",
+      "en": "state body"
+    },
+    {
+      "es": "jueza",
+      "en": "judge (a woman)"
+    },
+    {
+      "es": "Según el calendario del juzgado",
+      "en": "According to the court's calendar"
+    },
+    {
+      "es": "Se jubiló",
+      "en": "He retired"
+    },
+    {
+      "es": "peluquería",
+      "en": "hairdresser's"
+    },
+    {
+      "es": "todo es verdad, menos la relación entre las cosas",
+      "en": "everything is true, except the link between the things"
+    },
+    {
+      "es": "jubilado",
+      "en": "retired"
+    },
+    {
+      "es": "su calendario es público",
+      "en": "her calendar is public"
+    },
+    {
+      "es": "Nadie se hizo responsable de nada",
+      "en": "Nobody took responsibility for anything"
+    },
+    {
+      "es": "diplomático",
+      "en": "diplomatic"
+    },
+    {
+      "es": "no hay igualdad entre el que tiene abogado y el que tiene casco",
+      "en": "there's no equality between the man with a lawyer and the man with a hard hat"
+    },
+    {
+      "es": "tablero comunitario",
+      "en": "community board"
+    },
+    {
+      "es": "tablero",
+      "en": "board"
+    },
+    {
+      "es": "Igualdad de condiciones",
+      "en": "A level playing field"
+    },
+    {
+      "es": "Rengifo salía mañana de Miami a Panamá",
+      "en": "Rengifo is flying from Miami to Panama tomorrow, supposedly"
+    },
+    {
+      "es": "solicitud de cooperación",
+      "en": "request for cooperation"
+    },
+    {
+      "es": "Es un caso criminal",
+      "en": "It's a criminal case"
+    },
+    {
+      "es": "El vuelo salía a las once",
+      "en": "The flight is supposed to leave at eleven"
+    },
+    {
+      "es": "le dio cuerda al reloj",
+      "en": "wound his watch"
+    },
+    {
+      "es": "con letra de diplomático",
+      "en": "in a diplomat's handwriting"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Who was the old man Montoya lunched with at the hotel?",
+      "options": [
+        "The judge in the Rengifo case",
+        "Montoya's father, a judge who retired years ago, on his birthday",
+        "A senator",
+        "Bermúdez"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "How does Tomás answer the judge rumour?",
+      "options": [
+        "He repeats it and denies it",
+        "He posts the facts and the photo of the birthday cake, without repeating the rumour",
+        "He calls the police",
+        "He says nothing"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does Osorio's source say?",
+      "options": [
+        "Rengifo is already in prison",
+        "Rengifo is due to fly from Miami to Panama tomorrow, and there is a request for cooperation with the United States",
+        "Bermúdez has been arrested",
+        "The judge has been bribed"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Qué propone Gloria para la puerta del café?",
+      "options": [
+        "Un tablero comunitario con rumores y verdades",
+        "Un letrero de «cerrado»",
+        "Una foto de Rosa",
+        "Un timbre de marimba"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "According to Osorio's source, Rengifo flies out of Miami at eleven tomorrow. Tomorrow the whole café watches the clock, and the rumour on the board still needs an answer.",
+  "rereadQuestions": [
+    {
+      "q": "Why is Wilson worried?",
+      "options": [
+        "He might lose his job if they find out the photo is his",
+        "He owes Tomás money",
+        "His children are ill",
+        "He is afraid of Simón"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What was in front of the old judge in the photo?",
+      "options": [
+        "A file of papers",
+        "A cake with candles",
+        "A margarita",
+        "A newspaper"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Who leads the investigation into Rengifo, according to the court's website?",
+      "options": [
+        "Judge Montoya",
+        "Judge Amparo Salgar",
+        "Osorio",
+        "Doctor Uribe"
+      ],
+      "answer": 1
+    }
+  ],
+  "requires": [
+    "c:asi-es",
+    "c:ayer-anoche",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:en-serio",
+    "c:era",
+    "c:feliz-cumpleanos",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:la-verdad",
+    "c:no-se",
+    "c:se-puede",
+    "c:segun",
+    "c:tengo",
+    "c:tienes",
+    "c:todavia-no",
+    "g:adjective-agreement",
+    "g:cada-cualquier",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:estar-participle",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:hace-ago",
+    "g:hay-vs-esta",
+    "g:hedging-distance",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:negative-commands",
+    "g:pluperfect",
+    "g:por-para-1",
+    "g:possessives-stressed",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:relatives-prepositions",
+    "g:se-accidental",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-cuando-future",
+    "g:subj-free-relatives",
+    "g:subj-influence",
+    "g:subj-irregulars",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:verbs-of-change",
+    "g:yo-irregular",
+    "p:cada-quien",
+    "p:cerca-de",
+    "p:con-sin",
+    "p:cuando-basic",
+    "p:cumplir-anos",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:don-dona-nombre",
+    "p:enterarse-de",
+    "p:hasta-que-no",
+    "p:imperfecto-citativo",
+    "p:indefinites-basic",
+    "p:la-gente-singular",
+    "p:lo-que-cosa-que",
+    "p:mayor-menor",
+    "p:me-contaron-que",
+    "p:me-te-nos-objects",
+    "p:no-tengo-tan-claro",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:para-mi",
+    "p:para-mi-que",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:que-subj-deseo",
+    "p:saber-conocer",
+    "p:se-puede-me-dejas",
+    "p:segun-dicen",
+    "p:senor-don-article",
+    "p:tardar-en",
+    "p:telling-time",
+    "p:time-pasado-que-viene",
+    "p:un-estudio-muestra-que",
+    "p:viejo-antiguo-mayor",
+    "p:volver-a-inf"
+  ],
+  "lexemes": [
+    "l:abogado",
+    "l:abrir",
+    "l:acabar",
+    "l:afuera",
+    "l:alcaldía",
+    "l:almorzar",
+    "l:almuerzo",
+    "l:andamio",
+    "l:arreglar",
+    "l:audiencia",
+    "l:ayer",
+    "l:año",
+    "l:barra",
+    "l:barrio",
+    "l:bien",
+    "l:buscar",
+    "l:café",
+    "l:calendario",
+    "l:casco",
+    "l:caso",
+    "l:celular",
+    "l:cerrar",
+    "l:chisme",
+    "l:claro",
+    "l:comprobar",
+    "l:comunitario",
+    "l:conclusión",
+    "l:condición",
+    "l:contestar",
+    "l:cooperación",
+    "l:corbata",
+    "l:cosa",
+    "l:criminal",
+    "l:cuerda",
+    "l:cumpleaños",
+    "l:cumplir",
+    "l:dar",
+    "l:decir",
+    "l:dejar",
+    "l:delante",
+    "l:diplomático",
+    "l:doctor",
+    "l:echar",
+    "l:editor",
+    "l:enterarse",
+    "l:entidad",
+    "l:esclavo",
+    "l:escribir",
+    "l:estar",
+    "l:estatal",
+    "l:explicar",
+    "l:famoso",
+    "l:febrero",
+    "l:feliz",
+    "l:foto",
+    "l:fuente",
+    "l:funcionario",
+    "l:gente",
+    "l:grupo",
+    "l:hablar",
+    "l:había",
+    "l:hacer",
+    "l:hacerse",
+    "l:hotel",
+    "l:igualdad",
+    "l:ir",
+    "l:jubilarse",
+    "l:juez",
+    "l:juzgado",
+    "l:lado",
+    "l:lejos",
+    "l:letra",
+    "l:llamar",
+    "l:llegar",
+    "l:llevar",
+    "l:línea",
+    "l:mamá",
+    "l:mayor",
+    "l:mañana",
+    "l:mensaje",
+    "l:mes",
+    "l:mesa",
+    "l:mesero",
+    "l:mijo",
+    "l:minuto",
+    "l:mirar",
+    "l:morirse",
+    "l:mostrar",
+    "l:mover",
+    "l:niño",
+    "l:noche",
+    "l:nuevo",
+    "l:número",
+    "l:obra",
+    "l:pandebono",
+    "l:papá",
+    "l:parce",
+    "l:pasado",
+    "l:pedir",
+    "l:pegar",
+    "l:peluquería",
+    "l:peor",
+    "l:poder",
+    "l:ponerse",
+    "l:profesional",
+    "l:prometer",
+    "l:proponer",
+    "l:próximo",
+    "l:puerta",
+    "l:página",
+    "l:pájaro",
+    "l:pálido",
+    "l:público",
+    "l:quemar",
+    "l:quién",
+    "l:redondo",
+    "l:regalar",
+    "l:relación",
+    "l:relajarse",
+    "l:reloj",
+    "l:repetir",
+    "l:responsable",
+    "l:rosado",
+    "l:rumor",
+    "l:rápido",
+    "l:saber",
+    "l:sacar",
+    "l:salir",
+    "l:sentarse",
+    "l:sentencia",
+    "l:sepa",
+    "l:ser",
+    "l:señor",
+    "l:solicitud",
+    "l:soltar",
+    "l:tablero",
+    "l:tardar",
+    "l:taza",
+    "l:tener",
+    "l:torta",
+    "l:vela",
+    "l:velita",
+    "l:ver",
+    "l:verdad",
+    "l:vestir",
+    "l:vez",
+    "l:viejo",
+    "l:volver",
+    "l:vuelo"
+  ]
+}
