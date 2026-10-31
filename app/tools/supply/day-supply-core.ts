@@ -5,7 +5,7 @@
 // which is where the gate's legality check places a bank row).
 import type { BankSentence, Scene, WritingTask } from '../../src/content/schema';
 import type { Curriculum } from '../gate/load';
-import { implicitNodes } from '../../src/compiler/content';
+import { implicitNodes, isQuestionRow } from '../../src/compiler/content';
 
 type Implicit = ReturnType<typeof implicitNodes> & { listed: Map<string, number>; untaughtSet: Set<string> };
 const implicitCache = new WeakMap<Curriculum, Implicit>();
@@ -30,6 +30,7 @@ export const MIN = {
   unitByDrill: 40,          // usable rows per grammar node by its drill day
   firstDayRows: 12,         // bank prompt rule: rows legal by the node's first day
   firstDayQuestions: 6,     // ... of which questions
+  targeted: 12,             // bank rows (any legality) naming a grammar node in targets
 } as const;
 
 export interface NodeSupply {
@@ -58,12 +59,14 @@ export interface UnitNodeSupply {
   drillDay: number;
   session: number;
   usable: number;
+  /** rows in the whole bank with this node in targets, legal or not */
+  targeted: number;
   min: number;
   short: boolean;
 }
 export interface DaySupplyReport { days: DaySupply[]; unitNodes: UnitNodeSupply[]; untargetable: string[] }
 
-export const isQuestion = (b: BankSentence) => b.kind === 'question' || b.es.includes('¿');
+export const isQuestion = (b: BankSentence) => isQuestionRow(b);
 
 /** requires ⊆ taught by `session`; a taught chunk in the same row covers the grammar it unpacks. */
 export function usableAt(cur: Curriculum, b: BankSentence, session: number, dayAt?: Map<string, number>): boolean {
@@ -129,9 +132,9 @@ export function computeDaySupply(cur: Curriculum, rows: BankSentence[], opts: { 
       if (seen.has(n)) continue;
       seen.add(n);
       const all = byTarget.get(n) ?? [];
-      if (!all.length) continue;
+      if (!all.length) { unitNodes.push({ unit: u.id, node: n, drillDay: v.day, session: v.session, usable: 0, targeted: 0, min: MIN.unitByDrill, short: false }); continue; }
       const usable = all.filter((b) => usableAt(cur, b, v.session)).length;
-      unitNodes.push({ unit: u.id, node: n, drillDay: v.day, session: v.session, usable, min: MIN.unitByDrill, short: usable < MIN.unitByDrill });
+      unitNodes.push({ unit: u.id, node: n, drillDay: v.day, session: v.session, usable, targeted: all.length, min: MIN.unitByDrill, short: usable < MIN.unitByDrill });
     }
   }
   return { days, unitNodes, untargetable: [...untargetable].sort() };

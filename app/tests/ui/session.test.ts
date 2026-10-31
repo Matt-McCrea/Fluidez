@@ -321,3 +321,21 @@ describe('Home copy and the goal line', () => {
     expect(goalLine(undefined, u)).toBeUndefined();
   });
 });
+
+describe('empty warm-up copy', () => {
+  it('says nothing is due when the learner already knows things', async () => {
+    const w = await world();
+    const block = { kind: 'warmup', items: [] } as unknown as Block;
+    expect(blockHeading(block, w.bundle, { known: 5 }).lead).toBe('Nothing is due today. Straight in.');
+    expect(blockHeading(block, w.bundle).lead).toMatch(/Nothing to look back at yet/);
+  });
+});
+
+describe('sessionLabel on an output day without a scene', () => {
+  it('does not promise a real conversation', async () => {
+    const w = await world();
+    const plan = { type: 'output', unit: 'u01', converted: undefined, blocks: [{ kind: 'writing', part: 'core', deliberate: false, task: 'x', purpose: 'freer', minutes: 3 }] } as any;
+    expect(sessionLabel(plan, w.bundle)).toBe('Practice: writing it down');
+    expect(sessionLabel({ ...plan, blocks: [] }, w.bundle)).not.toMatch(/conversation/i);
+  });
+});

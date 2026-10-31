@@ -4,6 +4,7 @@
 import type {
   BankSentence, GraphNode, NodeId, Scene, StoryChapter, TeachingScript, Unit, WritingTask,
 } from '../content/schema';
+import { analyzeToken } from '../engine';
 import type { ChapterRef, ContentIndex, Course, SceneRef, ScriptRef, SentenceRef, TaskRef } from './types';
 
 /** Tagger output the schema does not carry yet (see the report's schema proposals). */
@@ -106,6 +107,33 @@ function push<K, V>(m: Map<K, V[]>, k: K, v: V) {
   if (a) a.push(v); else m.set(k, [v]);
 }
 
+const QWORD = /^¿\s*(qué|quién(es)?|cómo|cuándo|(a ?|de )?dónde|cuál(es)?|cuánt[oa]s?|por qué|para qué)(?![\p{L}])/iu;
+const LEAD_ADV = new Set(['ya', 'también', 'siempre', 'nunca', 'todavía', 'aún', 'entonces', 'y', 'pero', 'no', 'acaso']);
+const ASKING_PRONOUN = new Set(['tu', 'tú', 'usted', 'ustedes', 'te', 'le', 'les', 'se', 'hay']);
+
+/**
+ * Is this bank row a question put to the learner? A "¿" somewhere inside is not enough
+ * ("¿De Medellín? Vale también es de Medellín." is a reply): the first line, without a
+ * speaker label, must open with ¿, close with ?, and ask like a question (a question
+ * word, a leading verb, or a tú/usted style pronoun).
+ */
+export function isQuestionRow(s: Pick<BankSentence, 'es' | 'kind'>): boolean {
+  if (s.kind === 'statement') return false;
+  const first = (s.es.split(/\r?\n|\\n/).map((x) => x.trim()).find(Boolean) ?? '').replace(/^[^.?!¿¡:]{1,40}:\s+/, '');
+  // a first line that does not end in "?" is a reply, even when the row is labelled a question
+  // ("¿Nacionalidad? Canadiense." is a question and its answer on one line)
+  if (!/\?["”»)]*$/.test(first)) return false;
+  if (s.kind === 'question') return true;
+  if (!first.startsWith('¿')) return false;
+  if (QWORD.test(first)) return true;
+  const toks = first.replace(/^¿\s*/, '').split(/\s+/).map((t) => t.toLowerCase().replace(/[^\p{L}]/gu, '')).filter(Boolean);
+  if (toks.length < 2) return false;
+  let i = 0;
+  while (i < toks.length - 1 && LEAD_ADV.has(toks[i])) i++;
+  const t = toks[i];
+  return ASKING_PRONOUN.has(t) || analyzeToken(t).length > 0;
+}
+
 const READ_WPM = 70;        // A1-B1 reading speed in words/min for a graded text (heuristic)
 
 export function buildContentIndex(src: ContentSource, course: Course): ContentIndex {
@@ -131,7 +159,7 @@ export function buildContentIndex(src: ContentSource, course: Course): ContentIn
     if (sentences.has(s.id)) continue; // first wins; the gate rejects duplicate ids
     const targets = [...new Set(s.targets ?? [])];
     const requires = [...new Set([...targets, ...(s.requires ?? [])])];
-    sentences.set(s.id, { id: s.id, requires, targets, unit: s.unit, question: /[?¿]\s*$/.test(s.es.trim()) || s.es.includes('¿') });
+    sentences.set(s.id, { id: s.id, requires, targets, unit: s.unit, question: isQuestionRow(s) });
     for (const t of targets) push(byTarget, t, s.id);
     for (const r of requires) if (!targets.includes(r)) push(byRequire, r, s.id);
     if (s.unit) push(byUnit, s.unit, s.id);

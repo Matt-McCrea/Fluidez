@@ -129,7 +129,8 @@ export function needFor(opts: PersonalOpts): Need {
   const sources = [node.es ?? '', ...(node.forms ?? []).map((f) => f.es)];
   const addVerbs = (text: string, sample: boolean) => {
     for (const t of wordTokens(text)) {
-      const a = analyzeToken(t.norm).filter((x) => x.target !== false);
+      if (t.neutral) continue;
+      const a = analyzeToken(t.raw.toLowerCase()).filter((x) => x.target !== false && x.accentExact);
       for (const x of a) need.infs.add(x.inf.replace(/se$/, ''));
       if (sample && a.length && need.samples.length < 2 && !need.samples.includes(t.raw.toLowerCase())) need.samples.push(t.raw.toLowerCase());
     }

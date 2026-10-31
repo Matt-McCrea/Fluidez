@@ -24,7 +24,7 @@ function useOrdered<T>(items: readonly T[], build: (it: T) => Card, alt?: (it: T
 
 export function ReviewRun({ block, run, onDone }: BlockProps<WarmupBlock | LeechBlock>) {
   const { cards, order } = useOrdered(block.items, (it) => reviewCard(it, run.bundle), (it) => reviewCard(it, run.bundle, 'pickSpanish'));
-  const h = blockHeading(block, run.bundle);
+  const h = blockHeading(block, run.bundle, { known: run.learner.nodes().length });
   // the warm-up is never cut short (reviews left undone stay due); a leech run may be
   const cut = block.kind === 'leech';
   return (

@@ -1,7 +1,7 @@
 // Instant client-side search over small lists. Ranks exact matches first.
 import { deaccent } from '../../../engine';
 
-export interface Searchable { es: string[]; en: string[]; /** weaker text: labels, topic words */ extra?: string[] }
+export interface Searchable { /** the entry's own name: scored above everything */ title?: string | string[]; es: string[]; en: string[]; /** weaker text: labels, topic words */ extra?: string[] }
 
 export const norm = (s: string): string => deaccent((s ?? '').toLowerCase()).replace(/[¿?¡!.,;:()"]/g, ' ').replace(/\s+/g, ' ').trim();
 
@@ -29,13 +29,16 @@ function scoreText(q: string, texts: string[], exact: number, start: number, wor
 export function scoreEntry(query: string, e: Searchable): number {
   const q = norm(query);
   if (!q) return 1;
+  // a bare substring ("casa" inside "pasado") is a weak match unless the query is long enough to mean it
+  const sub = q.length >= 5;
   let s = Math.max(
-    scoreText(q, e.es, 100, 80, 60, 40),
-    scoreText(q, e.en, 95, 75, 55, 35),
+    scoreText(q, e.title === undefined ? [] : [e.title].flat(), 130, 105, 90, 70),
+    scoreText(q, e.es, 100, 80, 60, sub ? 40 : 20),
+    scoreText(q, e.en, 95, 75, 55, sub ? 35 : 20),
     scoreText(q, e.extra ?? [], 30, 25, 20, 10),
   );
   if (!s && q.includes(' ')) {
-    const all = norm([...e.es, ...e.en, ...(e.extra ?? [])].join(' '));
+    const all = norm([...(e.title === undefined ? [] : [e.title].flat()), ...e.es, ...e.en, ...(e.extra ?? [])].join(' '));
     if (q.split(' ').every((w) => all.includes(w))) s = 15;
   }
   return s;

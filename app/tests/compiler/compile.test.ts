@@ -9,6 +9,7 @@ import {
 } from '../../src/compiler';
 import { BankSentence, GraphNode, Scene, StoryChapter, TeachingScript, Unit, WritingTask } from '../../src/content/schema';
 import { Learner } from '../../src/learner';
+import { syntheticCorpus } from '../../tools/sim/synthetic';
 import { corpus } from './helpers';
 
 const T0 = new Date(2026, 0, 5, 19).getTime();
@@ -236,5 +237,64 @@ describe('the real course', () => {
     }
     if (shortages.length > SHORTAGES_TODAY) console.log(shortages.join('\n'));
     expect(shortages.length).toBeLessThanOrEqual(SHORTAGES_TODAY);
+  });
+});
+
+describe('drill days that the bank cannot fill', () => {
+  /** the first drill plan whose ruleRecall names `node`, from a corpus edited by `edit` */
+  function drillPlan(edit: (c: ReturnType<typeof syntheticCorpus>, node: string) => void) {
+    const c = syntheticCorpus({ maxUnits: 2 });
+    const node = c.units[0].days.find((d) => d.type === 'drill')!.focus[0];
+    edit(c, node);
+    const course = buildCourse(c.units, c.nodes);
+    const content = buildContentIndex(c.source, course);
+    let t = T0;
+    const L = Learner.fresh({ now: () => t });
+    let p = initialPath();
+    for (let d = 0; d < 14; d++) {
+      t = T0 + d * DAY;
+      const plan = compileSession({ learnerId: 'drill', learner: L, path: p, content, course, now: t });
+      if (plan.type === 'drill' && plan.blocks.some((b) => b.kind === 'ruleRecall' && b.node === node)) return { plan, node };
+      L.startSession(t);
+      for (const n of Object.values(plan.newNodes).flat()) L.introduce(n, { results: [true, true, true], at: t });
+      for (const r of servedRefs(plan)) L.ledger.markSeen(r.kind, r.id, { deliberate: r.deliberate, at: t });
+      p = advancePath(p, plan, true);
+    }
+    throw new Error('no drill plan found');
+  }
+
+  test('a node with a script and no bank rows is drilled from the script, as a deliberate re-serve', () => {
+    const { plan, node } = drillPlan((c, n) => { c.source.sentences = c.source.sentences.filter((s) => !(s.targets ?? []).includes(n) && !(s.requires ?? []).includes(n)); });
+    const teach = plan.blocks.find((b) => b.kind === 'teach' && b.reason === 'drill');
+    expect(teach && teach.kind === 'teach').toBe(true);
+    if (!teach || teach.kind !== 'teach') return;
+    expect(teach.node).toBe(node);
+    expect(teach.deliberate).toBe(true);
+    expect(teach.items.filter((i) => i.op === 'readAndPick').length).toBeGreaterThanOrEqual(1);
+    expect(teach.items.every((i) => i.scoring === 'exposure')).toBe(true);
+    expect(plan.diagnostics.some((d) => d.code === 'fallback' && d.node === node)).toBe(true);
+  });
+
+  test('a node with plenty of rows needs no fallback', () => {
+    const { plan } = drillPlan(() => undefined);
+    expect(plan.blocks.some((b) => b.kind === 'teach' && b.reason === 'drill')).toBe(false);
+  });
+
+  test('two questions in the pool give two respond items; the rest are translations', () => {
+    const { plan } = drillPlan((c, n) => {
+      // the two questions sit last in the file, so earlier blocks leave them for the communicative block
+      const mine = c.source.sentences.filter((s) => (s.targets ?? []).includes(n));
+      const qs = new Set(mine.slice(-2).map((s) => s.id));
+      c.source.sentences = c.source.sentences.filter((s) => (s.targets ?? []).includes(n) || !(s.requires ?? []).includes(n)).map((s) => {
+        if (!(s.targets ?? []).includes(n)) return s;
+        return qs.has(s.id) ? { ...s, es: `¿Dónde vives ${s.id}?`, kind: 'question' as const } : { ...s, es: `Vivo aquí ${s.id}.`, kind: 'statement' as const };
+      });
+    });
+    const comm = plan.blocks.find((b) => b.kind === 'communicative');
+    expect(comm && comm.kind === 'communicative').toBe(true);
+    if (!comm || comm.kind !== 'communicative') return;
+    expect(comm.items.filter((i) => i.op === 'respond')).toHaveLength(2);
+    expect(comm.items.filter((i) => i.op === 'translate').length).toBe(comm.items.length - 2);
+    expect(plan.diagnostics.some((d) => d.code === 'shortage' && d.what === 'question')).toBe(true);
   });
 });

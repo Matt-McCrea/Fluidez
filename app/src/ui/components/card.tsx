@@ -38,6 +38,11 @@ export function revealLines(hint: string | undefined, why: string): string[] {
   return [h, w].filter((x, i, a) => x && a.indexOf(x) === i);
 }
 
+/** "." unless the text already ends in sentence punctuation. */
+export function missPunct(text: string): string {
+  return /[.!?\u2026]\s*$/.test(text) ? '' : '.';
+}
+
 function Position({ pos }: { pos?: { n: number; of: number } }) {
   return pos ? <p class="pos" aria-live="off">{pos.n} of {pos.of}</p> : <p class="pos" aria-hidden="true">&nbsp;</p>;
 }
@@ -99,7 +104,7 @@ function McqView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extrac
         {done ? (
           right
             ? <p class="ok">Yes. {card.after ? <Txt t={card.after} /> : null}</p>
-            : <><p class="miss">{mcqResult(card, picked, took).lead} It's <Txt t={card.options[card.answer]} />.</p><p class="why"><Rich text={card.why} /></p></>
+            : <><p class="miss">{mcqResult(card, picked, took).lead} It's <Txt t={card.options[card.answer]} />{missPunct(card.options[card.answer].text)}</p><p class="why"><Rich text={card.why} /></p></>
         ) : null}
       </div>
       <div class="actions">

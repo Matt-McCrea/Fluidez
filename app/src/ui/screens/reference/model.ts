@@ -58,7 +58,7 @@ export function grammarEntries(bundle: Bundle, met: Set<string>): GrammarEntry[]
       priority: n.priority,
       week: weekOf(bundle, n.id),
       es: [n.es ?? '', ...(n.forms ?? []).map((f) => f.es)].filter(Boolean),
-      en: [n.title, n.en ?? '', ...(n.forms ?? []).map((f) => f.en)].filter(Boolean),
+      en: [n.en ?? '', ...(n.forms ?? []).map((f) => f.en)].filter(Boolean),
       extra: [...(label?.words ?? []), TOPIC_LABEL[topic]],
     });
   }
@@ -77,6 +77,8 @@ export interface WordEntry extends Searchable {
   gloss: string;
   strength: Strength;
   saved: boolean;
+  /** false for a word the course has not reached */
+  met?: boolean;
   gender?: string;
   pos?: string;
 }
@@ -105,6 +107,38 @@ export function wordEntries(bundle: Bundle, learner: LearnerView, saved: readonl
     out.push({ word: s.es, gloss: s.en, strength: 'new', saved: true, es: [s.es], en: [s.en] });
   }
   return out;
+}
+
+/** Lexemes the learner has not met yet, for the "Coming up" list. Built on demand (a query is present). */
+export function unmetWordEntries(bundle: Bundle, met: ReadonlySet<string>): WordEntry[] {
+  const out: WordEntry[] = [];
+  for (const n of bundle.course.nodes.values()) {
+    if (n.kind !== 'lexeme' || !n.es || met.has(n.id)) continue;
+    out.push({
+      id: n.id, word: n.es, gloss: n.en ?? n.title, strength: 'new', saved: false, met: false,
+      gender: n.gender, pos: n.pos, es: [n.es], en: [n.en ?? n.title],
+    });
+  }
+  return out.sort((a, b) => (bundle.node(a.id!)?.freqRank ?? 1e9) - (bundle.node(b.id!)?.freqRank ?? 1e9));
+}
+
+/** Up to n bank sentences that show a piece of grammar: seen ones first, then ones the learner can already read. */
+export function exampleSentences(bundle: Bundle, learner: ExampleLearner, id: NodeId, n = 3): string[] {
+  const ix = bundle.index;
+  const ids = [...new Set([...(ix.byTarget.get(id) ?? []), ...(ix.byRequire.get(id) ?? [])])];
+  const seen: string[] = [], ready: string[] = [];
+  for (const sid of ids) {
+    const ref = ix.sentences.get(sid);
+    if (!ref) continue;
+    if (learner.ledger.hasSeen('sentence', sid)) seen.push(sid);
+    else if (ref.requires.every((r) => learner.isIntroduced(r))) ready.push(sid);
+  }
+  return [...seen, ...ready].slice(0, n);
+}
+
+export interface ExampleLearner {
+  ledger: { hasSeen(kind: 'sentence', id: string): boolean };
+  isIntroduced(id: NodeId): boolean;
 }
 
 export { searchEntries };

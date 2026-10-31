@@ -313,6 +313,18 @@ function typeMeaning(key: string, esText: string, enFull: string, acceptEn: read
   };
 }
 
+const words = (t: string) => deaccent(t.toLowerCase()).split(/[^\p{L}\p{N}]+/u).filter(Boolean);
+
+/** "It uses <node>: <form>." where the form is one of the node's own forms that really occurs in the sentence. */
+function usesWhy(b: Bundle, node: NodeId, sentence: string): string {
+  const hay = ` ${words(sentence).join(' ')} `;
+  const forms = b.segments(node).map((x) => x.es).filter((f) => hay.includes(` ${words(f).join(' ')} `) && words(f).length)
+    .sort((a, c) => words(c).length - words(a).length);
+  // a title that already carries a colon ('Every noun is "el" or "la": the, a, ...') keeps only its head
+  const title = b.title(node).split(':')[0].trim();
+  return forms.length ? `It uses ${title}: ${forms[0]}.` : `It uses ${title}.`;
+}
+
 /**
  * A review. A receptive one is asked three ways, rotated per node and session
  * (`receptiveFormat`): type the English, pick the English (the wrong options
@@ -347,7 +359,7 @@ export function reviewCard(item: ReviewItem, b: Bundle, variant: 'meaning' | 'pi
   }
   const v = s ? productionView(s, preferFor(b, item.node)) : null;
   if (s && v) {
-    return sayCard(item.id, v, sentenceCheck(v.sentence), seg ? `It uses ${seg.es} (${lcFirst(seg.en)}).` : 'Here is how Spanish says it.');
+    return sayCard(item.id, v, sentenceCheck(v.sentence), usesWhy(b, item.node, v.sentence.es));
   }
   if (s) {
     // turns that do not line up: recognise the exchange instead
@@ -388,10 +400,10 @@ export function learnFormat(round: number, productive = true): LearnFormat {
  * English); round 1: pick the Spanish; then type it. Receptive-only items only
  * ever get recognition.
  */
-export function learnRetrieval(item: LearnItem, b: Bundle, round: number): Card {
+export function learnRetrieval(item: LearnItem, b: Bundle, round: number, n?: number): Card {
   const segs = b.segments(item.node);
-  const seg = segs[round % Math.max(1, segs.length)] ?? segs[0];
-  const key = `${item.id}#${round}`;
+  const seg = segs[(n ?? round) % Math.max(1, segs.length)] ?? segs[0];
+  const key = `${item.id}#${n ?? round}`;
   if (!seg) return { type: 'read', key, ask: 'Have another look', es: b.node(item.node)?.es ?? b.title(item.node), en: b.title(item.node), why: '' };
   const why = `"${seg.en}" is ${seg.es}`;
   // round 1 of a short word: "pick the Spanish" is nearly free, so type what it means
@@ -475,13 +487,20 @@ export function respondCheck(question: BankSentence, lexicon?: ReadonlySet<strin
   const want = asked ? form(asked.choice.inf, asked.choice.tense, 'yo') : null;
   const said = asked ? asked.toks[asked.verb].core : '';
   const lex = lexicon ?? addToLexicon(new Set<string>(), question.es);
-  const sample = want ? `${want[0].toUpperCase()}${want.slice(1)} …` : 'Mi respuesta es …';
+  const sample = want ? `${want[0].toUpperCase()}${want.slice(1)} …` : 'Tengo …';
   return (input: string): Check => {
     const words = input.trim().split(/\s+/).filter(Boolean);
     if (words.length < 2) return { pass: false, hint: 'Try a full sentence. Two or three words is plenty.', answer: sample };
     // most of it must be Spanish, whatever the question
     const share = checkPersonal(input, { lexicon: lex, noForm: true });
     if (!share.pass) return { pass: false, hint: share.hint, answer: sample };
+    const norm = words.map((w) => w.toLowerCase().replace(/[^\p{L}]/gu, '')).join(' ');
+    if (/^(s[ií]|no|no\s+(lo\s+)?s[eé])$/.test(norm)) return { pass: false, hint: `Fair enough, but give it a go: ${sample}`, answer: sample };
+    if (!asked) {
+      // a question about something else: the answer should still say something with a verb in it
+      const hasVerb = words.some((w) => { const t = w.toLowerCase().replace(/[^\p{L}]/gu, ''); return t !== 'sé' && analyzeToken(t).length > 0; });
+      if (!hasVerb) return { pass: false, hint: `Answer with a verb, like ${sample}.`, answer: sample };
+    }
     if (!want || !asked) return { pass: true, answer: input };
     const toks = words.map((w) => deaccent(w.toLowerCase().replace(/[^\p{L}]/gu, '')));
     if (tu) {
@@ -557,7 +576,7 @@ export function practiceCard(item: PracticeItem, b: Bundle, seed: number): Card 
           };
         }
       }
-      return meaningCard(item, s, b, 'Read and pick: what does it mean?');
+      return meaningCard(item, s, b, 'Read and pick. What does it mean?');
     }
     case 'choose': {
       const it = chooseItem(s, { seed: item.id });
@@ -627,7 +646,13 @@ export function recallCard(item: RecallItem, b: Bundle): Card {
 
 export function questionCard(key: string, q: { q: string; options?: string[]; answer: number | string }): Card {
   if (q.options?.length && typeof q.answer === 'number') {
-    return { type: 'mcq', key, ask: 'Quick question', prompt: auto(q.q), options: sameLang(q.options, q.answer), answer: q.answer, why: `The story says: ${q.options[q.answer]}.` };
+    // right answers sit on index 0 in most files: shuffle by key (stable per chapter and index), "I don't know" stays last
+    const right = q.options[q.answer];
+    const pin = /^(i don'?t know|no (lo )?s[eé]|not said|none of these)$/i;
+    const rest = q.options.filter((o) => !pin.test(o.trim()));
+    const pinned = q.options.filter((o) => pin.test(o.trim()));
+    const options = [...shuffle(rest, rng(key)), ...pinned];
+    return { type: 'mcq', key, ask: 'Quick question', prompt: auto(q.q), options: sameLang(options, options.indexOf(right)), answer: options.indexOf(right), why: `The story says: ${right}.` };
   }
   const right = String(q.answer);
   const lang: Lang = looksSpanish(right) ? 'es' : 'en';

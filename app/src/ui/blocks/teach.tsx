@@ -6,14 +6,13 @@ import { useEffect, useMemo, useState } from 'preact/hooks';
 import type { LearnBlock, PersonalBlock, RuleRecallBlock, TeachBlock } from '../../compiler';
 import type { TeachingScript } from '../../content/schema';
 import { checkPersonal } from '../../check/personal';
-import { LEARNING_STEPS_MAX } from '../../learner';
 import { AnswerField } from '../components/answer';
 import { CardRun, CardView, Continue } from '../components/card';
 import { Es, Heading, Paras, Rich, undash } from '../components/text';
 import { learnRetrieval, SAY, scriptCard, sentenceCheck, type Card } from '../session/cards';
-import { LearnQueue, teachOrder } from '../session/order';
+import { LEARN_ASKS_MAX, LearnQueue, teachOrder } from '../session/order';
 import { blockHeading } from '../session/labels';
-import { exampleGroups, nodeWords, restText, ruleLayers, spotFeedback, spotIt, splitVariants } from '../session/teachflow';
+import { exampleGroups, workWords, restText, ruleLayers, spotFeedback, spotIt, splitVariants } from '../session/teachflow';
 import { bundleLexicon } from '../session/scene';
 import type { BlockProps } from './types';
 
@@ -33,8 +32,8 @@ export function Learn({ block, run, onDone }: BlockProps<LearnBlock>) {
     return <><Heading {...h} /><p>All set. You've got these.</p><div class="actions"><Continue onClick={onDone} /></div></>;
   }
   const item = block.items[step.i];
-  const advance = (again = false) => {
-    q.next(again && !run.outOfTimeFor(block));
+  const advance = (again = false, missed = false) => {
+    q.next(again && !run.outOfTimeFor(block), missed);
     if (q.done) onDone(); else setTick((t) => t + 1);
   };
   if (step.kind === 'present') {
@@ -57,15 +56,15 @@ export function Learn({ block, run, onDone }: BlockProps<LearnBlock>) {
       </>
     );
   }
-  const card: Card = learnRetrieval(item, run.bundle, step.round);
+  const card: Card = learnRetrieval(item, run.bundle, step.round, step.n);
   return (
     <CardView
       key={`a${q.pos}`} card={card}
       onDone={(o) => {
         let done = true;
-        if (item.scoring === 'learning') done = run.learningStep(item.node, o, item.credit, item.productive);
+        if (item.scoring === 'learning') done = run.learningStep(item.node, o, item.credit, item.productive, 'learn', card.type === 'type');
         else run.score(item, o);
-        advance(!done && step.round + 1 < LEARNING_STEPS_MAX);
+        advance(!done && q.asks(step.i) + 1 < LEARN_ASKS_MAX, !o.correct);
       }}
     />
   );
@@ -137,7 +136,7 @@ function Variants({ segs, fallback, more }: { segs: Seg[]; fallback: string; mor
 /** Examples a few at a time, with a one-tap "spot it" between the groups. */
 function Examples({ script, node, onDone }: { script: TeachingScript; node?: { es?: string; forms?: Seg[] }; onDone: () => void }) {
   const groups = useMemo(() => exampleGroups(script.examples), [script]);
-  const nw = useMemo(() => nodeWords(node?.es, node?.forms), [node]);
+  const nw = useMemo(() => workWords(node ?? {}, script.examples), [node, script]);
   const [g, setG] = useState(0);
   const [picked, setPicked] = useState<number | null>(null);
   const group = groups[g] ?? [];

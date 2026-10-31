@@ -185,3 +185,10 @@ describe('authored writing tasks are self-consistent', () => {
     expect(checkWriting(t as unknown as { constraints: Constraint[] }, t.models![0], ctx).allPass).toBe(false);
   });
 });
+
+describe('writing checklist labels', () => {
+  it('labels every constraint before anything is typed', () => {
+    const r = checkWriting({ constraints: [{ type: 'minWords', n: 30 }] }, '');
+    expect(r.results[0].label).toContain('30');
+  });
+});

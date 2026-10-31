@@ -75,6 +75,8 @@ export class Freeplay {
   /** answered, and right on the first try */
   right = 0;
   answered = 0;
+  /** right on the second try */
+  retried = 0;
   /** cards lined up, when the mode knows (quick review, nodes) */
   readonly total?: number;
   /** set when a nodes drill has nothing to show because its examples are beyond reach */
@@ -127,6 +129,7 @@ export class Freeplay {
     if (!this.cur) return;
     this.answered += 1;
     if (o.correct && o.tries <= 1) this.right += 1;
+    else if (o.correct && o.tries === 2) this.retried += 1;
     this.cur.grade(o);
     this.cur = undefined;
   }

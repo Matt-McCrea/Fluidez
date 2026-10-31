@@ -149,7 +149,7 @@ export function servedRefs(plan: SessionPlan): ServedRef[] {
         for (const it of b.items) { add('item', it.id, false); add('sentence', it.example, false); }
         break;
       case 'teach':
-        for (const it of b.items) add('item', it.id, false);
+        for (const it of b.items) add('item', it.id, b.deliberate);   // a drill-day script re-serve is deliberate
         for (const s of b.examples) add('sentence', s, false);
         break;
       case 'structuredInput': case 'controlledOutput': case 'cuedProduction': case 'communicative':
@@ -878,7 +878,7 @@ class Compiler {
   /** A practice block on one node; returns undefined (and logs a shortage) when nothing gated and unseen is left. */
   private practice(
     kind: PracticeBlock['kind'], node: NodeId, n: number, ops: PracticeOp[], direction: 'receptive' | 'productive',
-    opts: { focus?: NodeId; firstScoring?: 'review' | 'exposure'; question?: boolean; push?: boolean; ladder?: boolean } = {},
+    opts: { focus?: NodeId; firstScoring?: 'review' | 'exposure'; question?: boolean; push?: boolean; ladder?: boolean; fallbackOp?: PracticeOp } = {},
   ): PracticeBlock | undefined {
     // rung-3 slots re-inflect a sentence already seen; with none, they fall back to transform on an unseen one
     const want = opts.ladder ? this.ladderOps(node, n) : undefined;
@@ -886,6 +886,7 @@ class Compiler {
     const seenQ = reSlots ? this.pickSentences(node, reSlots, { seen: true }) : [];
     const unseenN = n - seenQ.length;
     let sents = this.pickSentences(node, unseenN, { question: opts.question });
+    const nQ = sents.length;
     if (opts.question && sents.length < unseenN) sents = sents.concat(this.pickSentences(node, unseenN - sents.length));
     const laddered: PracticeOp[] | undefined = want ? [] : undefined;
     if (want) {
@@ -900,8 +901,9 @@ class Compiler {
       sents = picked;
     }
     if (sents.length < n) this.diag({ code: 'shortage', block: kind, node, what: 'sentence', wanted: n, got: sents.length, unit: this.unit?.id, message: `${kind}: ${sents.length}/${n} unseen gated sentences for ${node}` });
+    if (opts.question && nQ < unseenN) this.diag({ code: 'shortage', block: kind, node, what: 'question', wanted: unseenN, got: nQ, unit: this.unit?.id, message: `${kind}: ${nQ}/${unseenN} unseen gated questions for ${node}` });
     if (!sents.length) return undefined;
-    const items = sents.map((s, i) => this.practiceItem(laddered ? laddered[i] : ops[i % ops.length], node, s, direction, i === 0 ? (opts.firstScoring ?? 'exposure') : 'exposure'));
+    const items = sents.map((s, i) => this.practiceItem(laddered ? laddered[i] : opts.question && i >= nQ ? (opts.fallbackOp ?? ops[i % ops.length]) : ops[i % ops.length], node, s, direction, i === 0 ? (opts.firstScoring ?? 'exposure') : 'exposure'));
     const b: PracticeBlock = { kind, part: 'core', deliberate: false, focus: opts.focus, items, minutes: round1(items.reduce((a, it) => a + SECONDS[it.op], 0) / 60) };
     if (opts.push !== false) this.blocks.push(b);
     return b;
@@ -975,7 +977,8 @@ class Compiler {
   private drill(node: NodeId, day: Unit['days'][number] | undefined, advancing: boolean) {
     this.drilled = node;
     this.blocks.push({ kind: 'ruleRecall', part: 'core', deliberate: true, node, minutes: round1(SECONDS.ruleRecall / 60) });
-    this.practice('structuredInput', node, COUNTS.structuredInput, ['pick'], 'receptive', { focus: node, firstScoring: this.firstScoring(node, 'receptive') });
+    const si = this.practice('structuredInput', node, COUNTS.structuredInput, ['pick'], 'receptive', { focus: node, firstScoring: this.firstScoring(node, 'receptive') });
+    this.scriptFallback(node, 'readAndPick', COUNTS.structuredInput - (si?.items.length ?? 0));
 
     // Controlled output, interleaved: ~60% latest, ~40% older points + a known contrast.
     const total = COUNTS.controlledOutput;
@@ -1004,7 +1007,8 @@ class Compiler {
     if (items.length) {
       this.blocks.push({ kind: 'controlledOutput', part: 'core', deliberate: false, focus: node, contrast, items, minutes: round1(items.reduce((a, it) => a + SECONDS[it.op], 0) / 60) });
     }
-    this.practice('communicative', node, COUNTS.communicative, ['respond'], 'productive', { focus: node, question: true });
+    this.scriptFallback(node, 'yourTurn', total - items.length);
+    this.practice('communicative', node, COUNTS.communicative, ['respond'], 'productive', { focus: node, question: true, fallbackOp: 'translate' });
     const task = this.taskFor(node);
     if (task) this.blocks.push({ kind: 'writing', part: 'core', deliberate: false, task, purpose: 'freer', focus: node, minutes: this.content.tasks.get(task)!.minutes });
     else {
@@ -1014,6 +1018,26 @@ class Compiler {
     }
     // optional new words, only if the backlog allows (takeNew returns none when throttled)
     this.pushLearn(this.takeNew('drill', day, advancing, { focusNonGrammar: true }));
+  }
+
+  /**
+   * A drill day whose node has too few bank rows re-serves the node's script items instead of
+   * running short: those ids were ledgered on the introduce day, so the block is deliberate.
+   */
+  private scriptFallback(node: NodeId, part: 'readAndPick' | 'yourTurn', shortfall: number) {
+    const script = this.content.scripts.get(node);
+    if (!script || shortfall <= 0) return;
+    const have = part === 'readAndPick' ? script.readAndPick : script.yourTurn;
+    const n = Math.min(have, shortfall);
+    if (n <= 0) return;
+    const rp = part === 'readAndPick';
+    const code = rp ? 'rp' : 'yt';
+    const items: ScriptItem[] = Array.from({ length: n }, (_, i) => ({ op: part, id: `sc:${node}:${code}:${i}`, node, index: i, scoring: 'exposure' as const, credit: [node] }));
+    this.diag({ code: 'fallback', block: 'teach', node, unit: this.unit?.id, wanted: shortfall, got: n, message: `${node}: bank too thin for the drill, ${n} ${part} items from the script` });
+    this.blocks.push({
+      kind: 'teach', part: 'core', deliberate: true, node, nodeKind: kindOf(node, this.course.nodes), script: true, parts: [part], items, examples: [], reason: 'drill',
+      minutes: round1(items.reduce((a, it) => a + SECONDS[it.op], 0) / 60),
+    });
   }
 
   /** A contrast node whose sides are all known and that involves one of `nodes` (or any, if none involves them). */

@@ -4,7 +4,7 @@ import { describe, expect, test } from 'vitest';
 import { checkExact } from '../../src/check';
 import { wordHint } from '../../src/check/wordhint';
 import { matchTranslation } from '../../src/check/translate';
-import { revealLines, retryLead } from '../../src/ui/components/card';
+import { missPunct, revealLines, retryLead } from '../../src/ui/components/card';
 import { chunkCheck, gapWhy, lexemeWhy, verbFormWhy } from '../../src/ui/session/cards';
 
 describe('retryLead', () => {
@@ -81,5 +81,15 @@ describe('single-word hints', () => {
     expect(c('comémos')).toMatchObject({ pass: true, near: true });
     expect(c('zzzz').hint).toBeUndefined();
     expect(checkExact('comemos', ['comemos']).pass).toBe(true);
+  });
+});
+
+describe('missPunct', () => {
+  test('adds a period only when the text does not already end a sentence', () => {
+    expect(missPunct('Hi.')).toBe('');
+    expect(missPunct('Really?')).toBe('');
+    expect(missPunct('Wow!')).toBe('');
+    expect(missPunct('Well\u2026')).toBe('');
+    expect(missPunct('Hi')).toBe('.');
   });
 });

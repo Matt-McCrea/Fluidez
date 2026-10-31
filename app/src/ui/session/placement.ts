@@ -45,6 +45,7 @@ import { ALL_FEATURES, chooseItem, rng, shuffle, structuredInput } from '../../e
 import { LEARNED_STABILITY_DAYS, productivePolicy, type Direction, type Learner } from '../../learner';
 import type { Bundle } from '../data/bundle';
 import type { Txt } from './cards';
+import { isName } from './names';
 
 export type ProbeKind = 'form' | 'choose' | 'question';
 
@@ -96,14 +97,6 @@ const en = (text: string): Txt => ({ text, lang: 'en' });
 // ---------------------------------------------------------------- what makes an item fair
 
 const words = (s: string) => s.match(/[\p{L}]+/gu) ?? [];
-
-/** Capitalised and not at the start of a sentence: a name or a place. */
-function isName(word: string, sentence: string): boolean {
-  if (!/^\p{Lu}/u.test(word)) return false;
-  const at = sentence.indexOf(word);
-  const before = sentence.slice(0, Math.max(0, at)).trim();
-  return before !== '' && !/[.?!¿¡]$/.test(before);
-}
 
 /** A Spanish word that looks like a word in the English: café ~ coffee is fine, café ~ café is not. */
 export function isCognate(word: string, english: string): boolean {
@@ -176,6 +169,9 @@ function questionItem(s: BankSentence, unit: number, seed: string): ProbeItem | 
   return fairItem(it, s.es, s.en) ? it : null;
 }
 
+/** A second dialogue turn joined on to the first starts a new sentence: give it its capital back. */
+export const capitaliseTurns = (t: string): string => t.replace(/([.?!…])\s+(\p{Ll})/gu, (_, p: string, c: string) => `${p} ${c.toUpperCase()}`);
+
 /** Every fair item one sentence can give (one per feature for 'form'). */
 export function itemsFor(s: BankSentence, unit: number, seed: string): ProbeItem[] {
   const out: ProbeItem[] = [];
@@ -185,7 +181,7 @@ export function itemsFor(s: BankSentence, unit: number, seed: string): ProbeItem
     if (!it) continue;
     const item: ProbeItem = {
       id: `pl:${it.id}`, kind: 'form', sentence: s.id, unit, ask: 'Read them all, then pick one', prompt: en(it.question),
-      options: it.options.map(es), answer: it.answer,
+      options: it.options.map((o) => es(capitaliseTurns(o))), answer: it.answer,
     };
     if (fairItem(item, s.es, s.en)) out.push(item);
   }

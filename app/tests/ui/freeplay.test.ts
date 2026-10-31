@@ -63,6 +63,17 @@ describe('quick review', () => {
     const g = w.learner.events().filter((e) => e.op === 'quick').map((e) => e.grade);
     expect(g).toEqual([2, 1]);
     expect(fp.right).toBe(0);
+    expect(fp.retried).toBe(1);
+    expect(fp.answered).toBe(2);
+  });
+
+  it('a card shown but not answered is not counted', async () => {
+    const w = await seeded();
+    w.clock.t += 6 * DAY;
+    const fp = new Freeplay({ kind: 'quickReview' }, deps(w));
+    fp.next();
+    expect(fp.answered).toBe(0);
+    expect(fp.retried).toBe(0);
   });
 });
 

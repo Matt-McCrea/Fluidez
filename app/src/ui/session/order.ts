@@ -9,10 +9,12 @@
 //    block's cards so no more than a few in a row look alike.
 import type { Card } from './cards';
 
-export type LearnStep = { kind: 'present'; i: number } | { kind: 'ask'; i: number; round: number };
+export type LearnStep = { kind: 'present'; i: number } | { kind: 'ask'; i: number; round: number; n: number };
 
 /** How many other cards sit between two rounds of the same item. */
 export const RETRY_GAP = 3;
+/** Most times one item is asked in a block (matches LEARNING_STEPS_MAX in the learner). */
+export const LEARN_ASKS_MAX = 5;
 /** New items shown together before they are asked. */
 export const LEARN_GROUP = 3;
 
@@ -20,26 +22,39 @@ export class LearnQueue {
   steps: LearnStep[] = [];
   pos = 0;
   readonly presented = new Set<number>();
+  private readonly askCount = new Map<number, number>();
 
   constructor(readonly n: number) {
     for (let g = 0; g < n; g += LEARN_GROUP) {
       const idx = Array.from({ length: Math.min(LEARN_GROUP, n - g) }, (_, k) => g + k);
       idx.forEach((i) => this.steps.push({ kind: 'present', i }));
-      idx.forEach((i) => this.steps.push({ kind: 'ask', i, round: 0 }));
+      idx.forEach((i) => this.steps.push({ kind: 'ask', i, round: 0, n: 0 }));
     }
   }
 
   get current(): LearnStep | undefined { return this.steps[this.pos]; }
   get done(): boolean { return this.pos >= this.steps.length; }
 
-  /** Move past the current step; `again` = ask this item once more, a few cards later. */
-  next(again = false): void {
+  /** Times this item has been asked so far (counting the current ask once it is answered). */
+  asks(i: number): number { return this.askCount.get(i) ?? 0; }
+
+  /**
+   * Move past the current step; `again` = ask this item once more, a few cards
+   * later. A wrong answer (`missed`) steps the format down one (type back to
+   * pick the Spanish); a right-but-unfinished one steps it up. An item is
+   * never asked more than LEARN_ASKS_MAX times.
+   */
+  next(again = false, missed = false): void {
     const s = this.current;
     if (!s) return;
     if (s.kind === 'present') this.presented.add(s.i);
-    if (again && s.kind === 'ask') {
-      const at = Math.min(this.steps.length, this.pos + 1 + RETRY_GAP);
-      this.steps.splice(at, 0, { kind: 'ask', i: s.i, round: s.round + 1 });
+    if (s.kind === 'ask') {
+      const asked = Math.max(this.asks(s.i), s.n + 1);
+      this.askCount.set(s.i, asked);
+      if (again && asked < LEARN_ASKS_MAX) {
+        const at = Math.min(this.steps.length, this.pos + 1 + RETRY_GAP);
+        this.steps.splice(at, 0, { kind: 'ask', i: s.i, round: missed ? (s.round === 0 ? 1 : s.round - 1) : s.round + 1, n: asked });
+      }
     }
     this.pos++;
   }

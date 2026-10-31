@@ -3,7 +3,8 @@
 import { describe, expect, it } from 'vitest';
 import type { LearnBlock, RecapBlock, WarmupBlock } from '../../src/compiler';
 import { SessionRunner, compilePlan } from '../../src/ui/session/runner';
-import { LearnQueue, RETRY_GAP, interleave } from '../../src/ui/session/order';
+import { planRecap } from '../../src/ui/session/recap';
+import { LEARN_ASKS_MAX, LearnQueue, RETRY_GAP, interleave } from '../../src/ui/session/order';
 import { offerMore } from '../../src/ui/session/more';
 import { answer, runBlock, session, world, type Walk } from './driver';
 import { reviewCard } from '../../src/ui/session/cards';
@@ -103,6 +104,43 @@ describe('card order', () => {
     const back = q.steps.findIndex((s, i) => i > at && s.kind === 'ask' && s.i === 0);
     expect(back - at).toBe(RETRY_GAP + 1);
     expect(back).toBeLessThan(q.steps.length - 1);
+  });
+
+  it('a miss steps the format down; keys stay unique across re-asks', () => {
+    const q = new LearnQueue(1);
+    q.next(); // present
+    q.next(true); // round 0 right-but-unfinished: round 1
+    q.next(true); // round 1: round 2
+    expect(q.current).toMatchObject({ kind: 'ask', round: 2, n: 2 });
+    q.next(true, true); // missed at round 2
+    expect(q.current).toMatchObject({ kind: 'ask', round: 1, n: 3 });
+    const asks = q.steps.filter((s) => s.kind === 'ask') as { n: number }[];
+    expect(new Set(asks.map((s) => s.n)).size).toBe(asks.length);
+  });
+
+  it('a miss at round 2 comes back at round 1, three cards later', () => {
+    const q = new LearnQueue(6);
+    while (q.current?.kind === 'present') q.next();
+    q.next(true); q.next(true); q.next(true); // item 0 round 1 is not yet back; walk to a round-2 ask of item 0
+    const at = q.steps.findIndex((s, k) => k >= q.pos && s.kind === 'ask' && s.i === 0 && s.round === 1);
+    expect(at).toBeGreaterThanOrEqual(q.pos);
+    while (q.pos < at) q.next();
+    q.next(true); // item 0 round 1 -> queued round 2
+    const at2 = q.steps.findIndex((s, k) => k >= q.pos && s.kind === 'ask' && s.i === 0 && s.round === 2);
+    while (q.pos < at2) q.next();
+    const here = q.pos;
+    q.next(true, true);
+    const back = q.steps.findIndex((s, k) => k > here && s.kind === 'ask' && s.i === 0);
+    expect(back - here).toBe(RETRY_GAP + 1);
+    expect(q.steps[back]).toMatchObject({ round: 1 });
+  });
+
+  it('no more asks are inserted after LEARN_ASKS_MAX', () => {
+    const q = new LearnQueue(1);
+    q.next();
+    let n = 0;
+    while (!q.done) { n++; q.next(true, true); }
+    expect(n).toBe(LEARN_ASKS_MAX);
   });
 
   it('out of time: nothing new is presented; presented items keep one ask', () => {
@@ -245,5 +283,22 @@ describe('the offer follows the standing size', () => {
     expect(res.minimum).toBe(false);
     expect(res.extended).toBe(false);
     expect(res.standard).toBe(true);
+  });
+});
+
+describe('planRecap order', () => {
+  it('missed first, never typed next; a twice-typed node is dropped when capacity is 1', () => {
+    const item = (node: string) => ({ op: 'learn', id: `l:${node}`, node, credit: [node], scoring: 'learning', example: '', productive: true }) as never;
+    const learner = { hasCard: () => false } as never;
+    const bundle = { index: { byTarget: new Map(), byRequire: new Map(), sentences: new Map() } } as never;
+    const base = { learner, bundle, lapses: [], newItems: [item('a'), item('b'), item('c')], steps: new Map([['a', 3], ['b', 3], ['c', 3]]) };
+    const typedOk = new Map([['a', 2], ['b', 1]]);
+    const one = planRecap({ ...base, capacity: 1, misses: new Set(['c']), typedOk });
+    expect(one.map((r) => r.node)).toEqual(['c']);
+    expect(one[0].round).toBe(1);
+    const two = planRecap({ ...base, capacity: 2, misses: new Set(), typedOk: new Map([['a', 2]]) });
+    expect(two.map((r) => r.node)).toEqual(['b', 'c']);
+    const three = planRecap({ ...base, capacity: 3, misses: new Set(), typedOk: new Map([['a', 2]]) });
+    expect(three.map((r) => r.node)).toEqual(['b', 'c', 'a']);
   });
 });

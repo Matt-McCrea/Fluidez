@@ -2,6 +2,9 @@
 // examples in small groups with a one-tap "spot it" between them, the rule in
 // two layers (the trick, then the why), the present card one variant at a time.
 
+import { analyzeToken } from '../../engine';
+import { isName } from './names';
+
 export interface Pair { es: string; en: string }
 
 /** Groups of 2 or 3 pairs, in order, none lost (a lone pair stays alone). */
@@ -25,30 +28,41 @@ const words = (s: string) => s.match(/\p{L}+/gu) ?? [];
 const wc = (s: string) => s.trim().split(/\s+/).filter(Boolean).length;
 
 /** The most words a trick may hold. */
-export const TRICK_MAX = 30;
+export const TRICK_MAX = 45;
+/** A first paragraph that is a colon list of forms stays whole up to this many words. */
+export const TRICK_LIST_MAX = 65;
 
-/** The rule's first sentence (or two, if the first is under 8 words) and the rest. trick + rest === rule. */
+/**
+ * The rule's first paragraph when it is short enough (forms list and all),
+ * else its first sentence (or two, if the first is under 8 words) cut inside
+ * the limit. Never cut at a colon. trick + rest === rule.
+ */
 export function ruleLayers(rule: string): { trick: string; rest: string } {
-  // a sentence ends at . ! ? : before a space, or at a line break
-  const ends: number[] = [];
-  const re = /[.!?:](?=\s)|\n+/g;
-  let m: RegExpExecArray | null;
-  while ((m = re.exec(rule))) {
-    const e = m.index + (m[0].startsWith('\n') ? 0 : 1);
-    if (e > 0 && rule.slice(0, e).trim()) ends.push(e);
-  }
-  let cut = ends[0] ?? rule.length;
-  if (wc(rule.slice(0, cut)) < 8 && ends[1] !== undefined) cut = ends[1];
-  if (wc(rule.slice(0, cut)) > TRICK_MAX) {
-    const first = ends[0] ?? rule.length;
-    if (first < cut && wc(rule.slice(0, first)) <= TRICK_MAX) cut = first;
-    else {
-      // a long sentence: break at the last comma or semicolon inside the limit, else at the limit
-      const toks = [...rule.matchAll(/\S+/g)];
-      const limit = toks[TRICK_MAX - 1];
-      const hard = limit.index! + limit[0].length;
-      const soft = Math.max(rule.lastIndexOf(', ', hard), rule.lastIndexOf('; ', hard));
-      cut = soft > 0 && wc(rule.slice(0, soft + 1)) >= 8 ? soft + 1 : hard;
+  // the first paragraph; one that ends on a colon takes the paragraph under it
+  const breaks = [...rule.matchAll(/\n\s*\n/g)].map((m) => m.index!);
+  let paraEnd = breaks.shift() ?? rule.length;
+  while (rule.slice(0, paraEnd).trimEnd().endsWith(':') && paraEnd < rule.length) paraEnd = breaks.shift() ?? rule.length;
+  const para = rule.slice(0, paraEnd);
+  let cut: number;
+  if (wc(para) <= (para.includes(':') ? TRICK_LIST_MAX : TRICK_MAX)) cut = paraEnd;
+  else {
+    const ends: number[] = [];
+    const re = /[.!?](?=\s|$)|\n+/g;
+    let m: RegExpExecArray | null;
+    while ((m = re.exec(para))) {
+      const e = m.index + (m[0].startsWith('\n') ? 0 : 1);
+      if (e > 0 && para.slice(0, e).trim() && !para.slice(0, e).trimEnd().endsWith(':')) ends.push(e);
+    }
+    const toks = [...para.matchAll(/\S+/g)];
+    const limit = toks[TRICK_MAX - 1];
+    const hard = limit.index! + limit[0].length;
+    const fits = ends.filter((e) => e <= hard);
+    if (fits.length) {
+      // the last whole sentence that fits (this also takes a short first sentence plus the next)
+      cut = fits[fits.length - 1];
+    } else {
+      const soft = Math.max(para.lastIndexOf(', ', hard), para.lastIndexOf('; ', hard));
+      cut = soft > 0 && wc(para.slice(0, soft + 1)) >= 8 ? soft + 1 : hard;
     }
   }
   const trick = rule.slice(0, cut);
@@ -69,11 +83,43 @@ export interface SpotPick { prompt: string; options: string[]; answer: number }
 
 const norm = (w: string) => w.toLowerCase();
 
-/** Tokens of the node's Spanish (its `es` and every form), lowercase, unique. */
-export function nodeWords(es?: string, forms?: readonly Pair[]): string[] {
-  const seen = new Set<string>();
-  for (const t of [es ?? '', ...(forms ?? []).map((f) => f.es)]) for (const w of words(t)) seen.add(norm(w));
-  return [...seen];
+/**
+ * The node's own words as they turn up in its script: the forms' tokens when
+ * the node lists forms; else the verb forms the engine reads in the node and
+ * its examples (seen twice or more when any are); else, for nodes that are
+ * not about a verb (articles, questions), the words shared by two examples.
+ * Names (capitalised everywhere or mid-sentence) are never work words.
+ */
+export function workWords(node: { es?: string; forms?: readonly Pair[] }, examples: readonly Pair[]): string[] {
+  const isProper = (set: Set<string>, tok: string) => set.has(tok) && !STOP.has(tok) && !analyzeToken(tok).some((a) => a.accentExact);
+  const texts = [node.es ?? '', ...examples.map((e) => e.es)].filter(Boolean);
+  const lowerAll = new Set<string>(); // every occurrence capitalised
+  const everLower = new Set<string>();
+  const midCap = new Set<string>();
+  const count = new Map<string, number>();
+  for (const t of texts) {
+    for (const raw of words(t)) {
+      const w = norm(raw);
+      count.set(w, (count.get(w) ?? 0) + 1);
+      if (/^\p{Lu}/u.test(raw)) { if (isName(raw, t)) midCap.add(w); } else everLower.add(w);
+    }
+  }
+  for (const w of count.keys()) if (!everLower.has(w)) lowerAll.add(w);
+  const proper = (w: string) => midCap.has(w) || isProper(lowerAll, w);
+  if (node.forms?.length) {
+    const seen = new Set<string>();
+    for (const f of node.forms) for (const w of words(f.es)) if (!proper(norm(w))) seen.add(norm(w));
+    return [...seen];
+  }
+  const cands = [...count.keys()].filter((w) => !proper(w));
+  const verbs = cands.filter((w) => !STOP.has(w) && analyzeToken(w).some((a) => a.accentExact));
+  if (verbs.length) {
+    const twice = verbs.filter((w) => (count.get(w) ?? 0) >= 2);
+    return twice.length ? twice : verbs;
+  }
+  const exampleDocs = new Map<string, number>();
+  for (const e of examples) for (const w of new Set(words(e.es).map(norm))) exampleDocs.set(w, (exampleDocs.get(w) ?? 0) + 1);
+  return cands.filter((w) => (exampleDocs.get(w) ?? 0) >= 2);
 }
 
 /**
@@ -86,11 +132,15 @@ export function spotIt(group: readonly Pair[], node: readonly string[]): SpotPic
   const own = new Set(node);
   let answer = '';
   let best = 0;
-  for (const w of node) {
-    if (w.length < 2 || SMALL.has(w)) continue;
-    const n = per.filter((s) => s.has(w)).length;
-    if (n > best || (n === best && n > 0 && w.length > answer.length)) { best = n; answer = w; }
-  }
+  const choose = (skipSmall: boolean) => {
+    for (const w of node) {
+      if (w.length < 2 || (skipSmall && SMALL.has(w))) continue;
+      const n = per.filter((s) => s.has(w)).length;
+      if (n > best || (n === best && n > 0 && w.length > answer.length)) { best = n; answer = w; }
+    }
+  };
+  choose(true);
+  if (!answer) choose(false);
   if (!answer) return null;
   const distract: string[] = [];
   for (const p of group) {

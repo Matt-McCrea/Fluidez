@@ -113,3 +113,33 @@ describe('reference script loading', () => {
     expect(b.scripts.get(id)).toBeTruthy();
   }, 120_000);
 });
+
+describe('look up: titles, words coming up, grammar examples', () => {
+  it('a title match outranks a match only in a form', () => {
+    const byTitle = { n: 'title', title: 'The past', es: ['hablé'], en: [] as string[] };
+    const byForm = { n: 'form', title: 'Other', es: ['la pasta del pasado'], en: ['the past is gone'] };
+    expect(searchEntries([byForm, byTitle], 'the past').map((e) => e.n)[0]).toBe('title');
+    expect(scoreEntry('past', byTitle)).toBeGreaterThan(scoreEntry('past', byForm));
+  });
+  it('a short bare substring is a weak match', () => {
+    expect(scoreEntry('casa', { es: ['pasado'], en: ['xcasax'] })).toBeLessThanOrEqual(20);
+  });
+
+  it('finds casa under words (met or coming up) and gives grammar examples', async () => {
+    const { ContentLoader } = await import('../../src/ui/data/loader');
+    const { Learner, MemoryStore } = await import('../../src/learner');
+    const { exampleSentences, unmetWordEntries, wordEntries } = await import('../../src/ui/screens/reference/model');
+    const bundle = await new ContentLoader().load({ band: 'A1' });
+    const learner = await Learner.open(new MemoryStore(), { now: () => Date.now() });
+    const met = new Set<string>(learner.nodes());
+    const all = [...wordEntries(bundle, learner, []), ...unmetWordEntries(bundle, met)];
+    expect(searchEntries(all, 'casa').some((w) => w.id === 'l:casa')).toBe(true);
+    const id = 'g:ser-identity';
+    const ex = exampleSentences(bundle, learner, id);
+    expect(ex.length).toBeLessThanOrEqual(3);
+    for (const s of ex) {
+      const ref = bundle.index.sentences.get(s)!;
+      expect([...ref.targets, ...ref.requires]).toContain(id);
+    }
+  }, 120_000);
+});

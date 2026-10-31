@@ -99,3 +99,14 @@ describe('hints', () => {
     for (const [a, b] of cases) expect(diagnose(a, b).hint).not.toMatch(/[—–]/);
   });
 });
+
+describe('fragment hint', () => {
+  it('names the verb for junk input', () => {
+    const d = diagnose(['no', 'se'], ['vivo', 'en', 'una', 'casa', 'grande']);
+    expect(d.kind).toBe('fragment');
+    expect(d.hint).toContain('vivo');
+  });
+  it('leaves short answers on the old path', () => {
+    expect(diagnose(['no'], ['no', 'sé']).kind).not.toBe('fragment');
+  });
+});

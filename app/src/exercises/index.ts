@@ -52,7 +52,7 @@ export function checkItem(item: Item, response: string | number, opts: MatchOpti
     }
     case 'transform': {
       const r = matchTranslation(String(response), { es: item.answer, en: '', accept: item.accept }, opts);
-      return { pass: r.pass, near: r.near, hint: r.hint, ...(r.variant ? { variant: r.variant } : {}), answer: r.closest };
+      return { pass: r.pass, near: r.near, hint: r.hint, ...(r.variant ? { variant: r.variant } : {}), answer: r.pass ? item.answer : r.closest };
     }
     case 'translate': {
       if (item.dir === 'es-en') {
@@ -60,12 +60,12 @@ export function checkItem(item: Item, response: string | number, opts: MatchOpti
         return { pass: r.pass, near: r.near, hint: r.hint, answer: r.closest };
       }
       const r = matchTranslation(String(response), { es: item.answer, en: item.en, accept: item.accept }, opts);
-      return { pass: r.pass, near: r.near, hint: r.hint, ...(r.variant ? { variant: r.variant } : {}), answer: r.closest };
+      return { pass: r.pass, near: r.near, hint: r.hint, ...(r.variant ? { variant: r.variant } : {}), answer: r.pass ? item.answer : r.closest };
     }
     case 'recombine': {
       if (item.mode === 'recognition') return { pass: response === item.answer, answer: item.options![item.answer!] };
       const r = matchTranslation(String(response), { es: item.es, en: item.en ?? '', accept: item.accept }, opts);
-      return { pass: r.pass, near: r.near, hint: r.hint, ...(r.variant ? { variant: r.variant } : {}), answer: r.closest };
+      return { pass: r.pass, near: r.near, hint: r.hint, ...(r.variant ? { variant: r.variant } : {}), answer: r.pass ? item.es : r.closest };
     }
   }
 }

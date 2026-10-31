@@ -429,3 +429,65 @@ describe('(n) chapter length by band', () => {
     expect(by(run(60, true), 'length').map((f) => f.severity)).toEqual(['warning']);
   });
 });
+
+describe('(o) story answer balance', () => {
+  const ch = (answers: number[]) => ({
+    id: 'ch001', unit: 'u01', title: 't', text: Array.from({ length: 120 }, () => 'casa').join(' '), gloss: [], hook: 'h',
+    questions: answers.map((a, i) => ({ q: `q${i}`, options: ['x', 'y', 'z'], answer: a })),
+  });
+  const run = (answers: number[]) => {
+    const fx = makeFixture();
+    return by(runGate({ appDir: fx.app, paths: [fx.write('story/ch001.json', ch(answers))] }), 'balance');
+  };
+  test('six questions all answer 0 warn', () => {
+    const w = run([0, 0, 0, 0, 0, 0]);
+    expect(w.map((f) => f.severity)).toEqual(['warning']);
+    expect(w[0].problem).toContain('option 0 (6 of 6)');
+  });
+  test('balanced answers, and fewer than five questions, do not', () => {
+    expect(run([0, 1, 2, 1, 0, 2])).toEqual([]);
+    expect(run([0, 0, 0])).toEqual([]);
+  });
+});
+
+describe('(p) drill days need bank rows that target them', () => {
+  const rows = (n: number) => Array.from({ length: n }, (_, i) => bank(`u01-${i + 1}`, `Tomás habla español ${i}.`, 'u01', { requires: ['g:gender-articles'], targets: ['g:gender-articles'] }));
+  test('a grammar node targeted by 3 rows warns, and errors under strict', () => {
+    const fx = makeFixture();
+    const p = fx.write('bank/u01.json', rows(3));
+    const hit = (strict: boolean) => by(runGate({ appDir: fx.app, paths: [p], strict }), 'daySupply').filter((f) => /g:gender-articles: 3 bank rows target it \(minimum 12\)/.test(f.problem));
+    expect(hit(false).map((f) => f.severity)).toEqual(['warning']);
+    expect(hit(true).map((f) => f.severity)).toEqual(['error']);
+    expect(hit(false)[0].fix).toContain('load-topup.ts --node g:gender-articles');
+  });
+  test('12 rows do not', () => {
+    const fx = makeFixture();
+    const p = fx.write('bank/u01.json', rows(12));
+    expect(by(runGate({ appDir: fx.app, paths: [p] }), 'daySupply').some((f) => /g:gender-articles: \d+ bank rows target it/.test(f.problem))).toBe(false);
+  });
+});
+
+describe('(q) the schedule: a day\'s scene must fit what is taught by then', () => {
+  const scene = (requires: string[]) => ({
+    id: 'sc-u01-a', unit: 'u01', title: 'T', brief: 'b', spare: false, requires,
+    turns: [1, 2, 3].map((n) => ({ id: `t${n}`, npc: 'Hola.', npcEn: 'Hi.', intent: 'Greet.', accept: ['Hola.'], require: [], next: n < 3 ? `t${n + 1}` : null })),
+  });
+  const run = (requires: string[]) => {
+    const fx = makeFixture();
+    const unit = JSON.parse(readFileSync(`${fx.content}/units/u01.json`, 'utf8'));
+    unit.days[1].scene = 'sc-u01-a';          // day 2 (session 2)
+    fx.write('units/u01.json', unit);
+    return (strict: boolean) => by(runGate({ appDir: fx.app, strict, paths: [fx.write('scenes/sc-u01-a.json', scene(requires))] }), 'schedule', strict ? 'error' : 'warning');
+  };
+  // a warning until the 29 scenes queued for a rewrite have landed; --strict makes it an error
+  test('a scene on day 2 that needs a node taught on day 3 is a warning, an error under --strict', () => {
+    for (const strict of [false, true]) {
+      const e = run(['g:ser-identity', 'g:present-ar'])(strict);
+      expect(e).toHaveLength(1);
+      expect(e[0].problem).toContain('g:present-ar');
+    }
+  });
+  test('one that fits is not', () => {
+    expect(run(['g:ser-identity'])(true)).toEqual([]);
+  });
+});

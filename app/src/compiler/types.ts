@@ -326,6 +326,8 @@ export interface TeachBlock extends BlockBase {
   parts: ('hook' | 'examples' | 'rule' | 'readAndPick' | 'yourTurn' | 'pitfalls')[];
   items: ScriptItem[];
   examples: string[];
+  /** 'drill': the script's items re-served on a drill day because the bank has too few rows for the node */
+  reason?: 'drill';
 }
 
 /** Drill opener: recall the rule before seeing it, then a 20 s reminder. Deliberate. */
@@ -443,6 +445,7 @@ export type DiagnosticCode =
   | 'prereq'           // grammar introduced before a `requires` node (course order issue)
   | 'alreadySeen'      // the day's chapter/scene was already shown (skipped, not repeated)
   | 'coverage'         // a chapter or extra reading was weighed against retained (stable) words
+  | 'fallback'         // a drill block was filled from the node's script because the bank ran short
   | 'noReread'         // no chapter eligible for a deliberate re-read
   | 'pathDone';        // course finished: maintenance review
 
@@ -452,7 +455,7 @@ export interface Diagnostic {
   node?: NodeId;
   unit?: string;
   /** content kind for shortages */
-  what?: 'sentence' | 'chapter' | 'scene' | 'task' | 'script';
+  what?: 'sentence' | 'question' | 'chapter' | 'scene' | 'task' | 'script';
   wanted?: number;
   got?: number;
   /** reading coverage: required nodes, of which introduced-but-unstable (glossed), and not introduced (unglossed) */

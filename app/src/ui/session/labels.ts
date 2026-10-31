@@ -18,7 +18,7 @@ export function sessionLabel(plan: Pick<SessionPlan, 'type' | 'blocks' | 'unit' 
     case 'drill': return focus?.focus ? `Practice: ${lc(b.title(focus.focus))}` : 'Practice what you know';
     case 'input': return read ? `Story time: ${b.chapters.get(read.chapter)?.title ?? 'the next chapter'}` : 'New words, in a story';
     case 'patterns': return 'Patterns: more ways to say it';
-    case 'output': return scene ? `Real conversation: ${lc(b.scenes.get(scene.scene)?.title ?? 'a chat')}` : 'Real conversation';
+    case 'output': return scene ? `Real conversation: ${lc(b.scenes.get(scene.scene)?.title ?? 'a chat')}` : plan.blocks.some((x) => x.kind === 'writing') ? 'Practice: writing it down' : 'Practice what you know';
     case 'review': return 'Catch-up mix';
     case 'checkpoint': return 'Check-in: see how far you\'ve come';
     case 'minimum': return 'Quick warm-up';
@@ -40,14 +40,16 @@ export function lessonTypeWord(t: LessonType | 'minimum' | undefined): string {
 }
 
 /** A block's heading and one hand-off line. */
-export function blockHeading(block: Block, b: Bundle): { title: string; lead: string } {
+export function blockHeading(block: Block, b: Bundle, ctx?: { known?: number }): { title: string; lead: string } {
   switch (block.kind) {
     case 'warmup':
       return block.items.length
         ? { title: 'Quick warm-up', lead: 'A few things from the last few days. Just remember them.' }
-        : { title: 'Quick warm-up', lead: "Nothing to look back at yet, so let's go straight in." };
+        : { title: 'Quick warm-up', lead: (ctx?.known ?? 0) > 0 ? 'Nothing is due today. Straight in.' : "Nothing to look back at yet, so let's go straight in." };
     case 'learn': return { title: 'New words and phrases', lead: 'Read each one, then you\'ll use it a few times.' };
-    case 'teach': return { title: `New: ${lc(b.title(block.node))}`, lead: block.script ? '' : 'A few examples first.' };
+    case 'teach':
+      if (block.reason === 'drill') return { title: block.parts.includes('readAndPick') ? 'Read and pick' : 'Your turn', lead: 'From the lesson, once more.' };
+      return { title: `New: ${lc(b.title(block.node))}`, lead: block.script ? '' : 'A few examples first.' };
     case 'ruleRecall': return { title: 'Remember this?', lead: 'Try it before the reminder.' };
     case 'structuredInput': return { title: 'Read and pick', lead: 'Read carefully: the small words matter.' };
     case 'controlledOutput': if (block.remedial) return { title: 'Back to these', lead: 'A few you marked as shaky.' };

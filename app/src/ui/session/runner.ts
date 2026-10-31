@@ -96,6 +96,8 @@ export class SessionRunner {
   private readonly lapses: Lapse[] = [];
   /** in-lesson retrievals each new node has had */
   private readonly learnSteps = new Map<NodeId, number>();
+  private readonly learnMisses = new Set<NodeId>();
+  private readonly typedOk = new Map<NodeId, number>();
   /** the block on screen, and the cards answered or presented in each block (for the progress bar) */
   private current: Block | undefined;
   private readonly cardsDone = new Map<Block, number>();
@@ -248,10 +250,12 @@ export class SessionRunner {
   }
 
   /** One in-lesson retrieval. Returns true when the learner model says to stop asking. */
-  learningStep(node: NodeId, o: Outcome, credit: NodeId[] = [node], productive?: boolean, op = 'learn'): boolean {
+  learningStep(node: NodeId, o: Outcome, credit: NodeId[] = [node], productive?: boolean, op = 'learn', typed = false): boolean {
     if (!this.inScore) this.bump();
     this.present(node, productive);
     this.learnSteps.set(node, (this.learnSteps.get(node) ?? 0) + 1);
+    if (!o.correct) this.learnMisses.add(node);
+    else if (typed) this.typedOk.set(node, (this.typedOk.get(node) ?? 0) + 1);
     if (!this.learner.isLearning(node)) {
       this.learner.expose(credit, { at: this.now(), event: { op, grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms } });
       return true;
@@ -347,6 +351,7 @@ export class SessionRunner {
     const capacity = Math.min(block.capacity, Math.floor((left * 60) / secondsPerCard));
     block.items = capacity > 0 ? planRecap({
       learner: this.learner, bundle: this.bundle, capacity, lapses: this.lapses, newItems, steps: this.learnSteps,
+      misses: this.learnMisses, typedOk: this.typedOk,
     }) : [];
     block.minutes = Math.round((block.items.length * secondsPerCard) / 6) / 10;
     if (!block.items.length) { this.skip(block); return false; }

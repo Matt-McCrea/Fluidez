@@ -42,7 +42,7 @@ export function Writing({ block, run, ui, onDone }: BlockProps<WritingBlock>) {
   const before = useRef(lastWritingMark(ui.state.writing, block.task));
   const h = blockHeading(block, run.bundle);
   const constraints = (task?.constraints ?? []) as unknown as Constraint[];
-  const result = useMemo(() => (text.trim() ? checkWriting({ constraints }, text) : null), [text]);
+  const result = useMemo(() => checkWriting({ constraints }, text), [text]);
   if (!task) return <><Heading {...h} /><div class="actions"><Continue onClick={onDone} /></div></>;
   const n = text.trim().split(/\s+/).filter(Boolean).length;
   const tooShort = n < task.minWords;
@@ -71,7 +71,7 @@ export function Writing({ block, run, ui, onDone }: BlockProps<WritingBlock>) {
           <ul class="checklist" aria-label="Checklist">
             {constraints.map((c, k) => {
               const r = result?.results[k];
-              return <li key={k} class={r?.pass ? 'done' : ''}><span aria-hidden="true">{r?.pass ? '✓' : '○'}</span> <Rich text={r?.label ?? c.label ?? ''} />{r?.pass ? <span class="sr-only"> (done)</span> : null}</li>;
+              return <li key={k} class={r?.pass ? 'done' : ''}><span aria-hidden="true">{r?.pass ? '✓' : '○'}</span> <Rich text={r?.label ?? ''} />{r?.pass ? <span class="sr-only"> (done)</span> : null}</li>;
             })}
           </ul>
         ) : null}
@@ -79,7 +79,7 @@ export function Writing({ block, run, ui, onDone }: BlockProps<WritingBlock>) {
         <p class={`count${n > task.maxWords ? ' over' : ''}`} aria-live="polite">{n} words <span class="small">({task.minWords} to {task.maxWords})</span></p>
         {!submitted ? (
           <>
-            {!tooShort && constraints.length && missing > 0 ? <p class="hint" aria-live="polite">You can send it, but {missing} of {constraints.length} things on the list {missing === 1 ? 'is' : 'are'} still missing.</p> : null}
+            {!tooShort && constraints.length > 0 && missing > 0 ? <p class="hint" aria-live="polite">You can send it, but {missing} of {constraints.length} things on the list {missing === 1 ? 'is' : 'are'} still missing.</p> : null}
             <div class="actions"><button class="btn primary" data-primary disabled={tooShort} onClick={submit}>{tooShort ? `Write at least ${task.minWords} words` : 'Done, compare it'}</button></div>
           </>
         ) : (

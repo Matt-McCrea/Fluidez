@@ -6,7 +6,7 @@ import { answerForms, checkWriting, type Constraint } from '../../src/check';
 import { extractSpanish, type EsString } from './extract';
 import { clip, type Finding } from './findings';
 import type { Curriculum, Loaded } from './load';
-import { computeDaySupply, computeSceneSupply, computeWritingSupply } from '../supply/day-supply-core';
+import { computeDaySupply, computeSceneSupply, computeWritingSupply, MIN } from '../supply/day-supply-core';
 
 export interface RunState {
   /** tag once per distinct sentence per run */
@@ -350,6 +350,15 @@ export function checkStructure(st: RunState, f: Loaded): void {
       if (!q.options && typeof q.answer === 'number') push(`questions[${i}].answer`, 'a numeric answer needs options');
       if (typeof q.answer === 'string') typeable(st, f.rel, `questions[${i}].answer`, q.answer);
     });
+    const tally = new Map<number, number>();
+    let n = 0;
+    for (const q of [...c.questions, ...(c.rereadQuestions ?? [])]) {
+      if (typeof q.answer === 'number') { tally.set(q.answer, (tally.get(q.answer) ?? 0) + 1); n++; }
+    }
+    const top = [...tally.entries()].sort((a, b) => b[1] - a[1])[0];
+    if (n >= 5 && top && top[1] / n > 0.6) {
+      st.findings.push({ severity: 'warning', check: 'balance', file: f.rel, path: 'questions', problem: `answers lean on option ${top[0]} (${top[1]} of ${n})`, fix: 'vary which option is right' });
+    }
   }
   if (f.kind === 'scene') {
     const sc = f.data as Scene;
@@ -478,6 +487,7 @@ export type { EsString };
 export function daySupply(st: RunState, loaded: Loaded[], only: Set<string> | null): void {
   const cur = st.cur;
   if (!cur.units.length) return;
+  scheduleCheck(st, loaded, only);
   const rows = loaded.filter((f) => f.kind === 'bank' && f.ok).flatMap((f) => f.data as BankSentence[]);
   const withRows = new Set(rows.map((b) => b.unit).filter((u): u is string => !!u));
   const tasks = loaded.filter((f) => f.kind === 'writing' && f.ok).flatMap((f) => f.data as WritingTask[]);
@@ -514,11 +524,61 @@ export function daySupply(st: RunState, loaded: Loaded[], only: Set<string> | nu
     });
   }
   for (const n of rep.unitNodes) {
+    if (n.targeted < MIN.targeted) {
+      st.findings.push({
+        severity: st.strict ? 'error' : 'warning', check: 'daySupply', file: file(n.unit), path: `${n.unit} day ${n.drillDay}`,
+        problem: `${n.node}: ${n.targeted} bank rows target it (minimum ${MIN.targeted})`,
+        fix: `queue a top-up: npx tsx tools/burn/load-topup.ts --node ${n.node}`,
+      });
+    }
     if (!n.short) continue;
     st.findings.push({
       severity: 'warning', check: 'daySupply', file: file(n.unit), path: `${n.unit} day ${n.drillDay}`,
       problem: `${n.node}: ${n.usable} rows usable by its drill day ${n.drillDay} (session ${n.session}), needs ${n.min}`,
       fix: `add rows targeting ${n.node} legal by day ${n.drillDay}`,
     });
+  }
+}
+
+/* ---- the schedule: a day's scene, chapter or focused writing task must fit what is taught by then ---- */
+/** The compiler gates a scene out when it requires a non-word node taught after the day's session, and
+ *  the day then runs without it. Check every named scene and chapter, and every focused writing task at the
+ *  first day that teaches its focus. */
+export function scheduleCheck(st: RunState, loaded: Loaded[], only: Set<string> | null): void {
+  const cur = st.cur;
+  if (!cur.units.length) return;
+  const scenes = new Map(loaded.filter((f) => f.kind === 'scene' && f.ok).map((f) => [(f.data as Scene).id, { s: f.data as Scene, rel: f.rel }]));
+  const chapters = new Map(loaded.filter((f) => f.kind === 'story' && f.ok).map((f) => [(f.data as StoryChapter).id, { s: f.data as StoryChapter, rel: f.rel }]));
+  const tasks = loaded.filter((f) => f.kind === 'writing' && f.ok).flatMap((f) => (f.data as WritingTask[]).map((t) => ({ t, rel: f.rel })));
+  const late = (requires: string[], session: number) => requires.filter((r) => {
+    if (r.startsWith('l:')) return false;
+    const n = cur.nodes.get(r);
+    if (!n || n.kind === 'lexeme') return false;
+    const at = cur.taughtAt.get(r);
+    return at !== undefined && at > session;
+  });
+  for (const u of cur.units) {
+    if (only && !only.has(u.id)) continue;
+    u.days.forEach((d, i) => {
+      const session = cur.daySession.get(`${u.id}#${i}`)!;
+      const report = (kind: string, id: string, rel: string, bad: string[]) => st.findings.push({
+        severity: st.strict ? 'error' : 'warning', check: 'schedule', file: rel, path: `${u.id} day ${i + 1}`,
+        problem: `${kind} ${id} is set for ${u.id} day ${i + 1} (session ${session}) but requires ${bad.map((b) => `${b}@${cur.taughtAt.get(b)}`).join(', ')}, taught later`,
+        fix: `rewrite ${kind === 'scene' ? 'the scene' : kind === 'chapter' ? 'the chapter' : 'the task'} to use only what is taught by session ${session}, or move it to a later day`,
+      });
+      if (d.scene && scenes.has(d.scene)) { const x = scenes.get(d.scene)!; const bad = late(x.s.requires, session); if (bad.length) report('scene', d.scene, x.rel, bad); }
+      if (d.chapter && chapters.has(d.chapter)) { const x = chapters.get(d.chapter)!; const bad = late(x.s.requires ?? [], session); if (bad.length) report('chapter', d.chapter, x.rel, bad); }
+    });
+    for (const { t, rel } of tasks) {
+      if (t.unit !== u.id || !t.focus) continue;
+      const i = u.days.findIndex((d) => d.focus.includes(t.focus!));
+      if (i < 0) continue;
+      const bad = late(t.requires, cur.daySession.get(`${u.id}#${i}`)!);
+      if (bad.length) st.findings.push({
+        severity: st.strict ? 'error' : 'warning', check: 'schedule', file: rel, path: `${t.id}`,
+        problem: `task ${t.id} focuses ${t.focus} (first day ${i + 1}) but requires ${bad.join(', ')}, taught later`,
+        fix: 'rewrite the task to use only what is taught by its focus day',
+      });
+    }
   }
 }

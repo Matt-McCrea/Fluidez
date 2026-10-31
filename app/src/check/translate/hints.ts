@@ -11,7 +11,7 @@ import { ARTICLES, CLITICS, nounGender, PREPOSITIONS } from '../../exercises/spa
 
 export type HintKind =
   | 'accents' | 'verb-ending' | 'article' | 'agreement' | 'word-order' | 'missing-word' | 'extra-word'
-  | 'pronoun' | 'subject' | 'ser-estar' | 'por-para' | 'spelling' | 'attach' | 'wrong-word' | 'empty';
+  | 'pronoun' | 'subject' | 'ser-estar' | 'por-para' | 'spelling' | 'attach' | 'wrong-word' | 'empty' | 'fragment';
 
 export interface Diagnosis { kind: HintKind; hint: string; at: number }
 
@@ -127,6 +127,14 @@ const orderAt = (input: readonly string[], expected: readonly string[]) => Math.
 /** The first real mistake in `input` against `expected` (canonical tokens). */
 export function diagnose(input: readonly string[], expected: readonly string[]): Diagnosis {
   if (!input.length) return { kind: 'empty', hint: HINT_TEXT.empty, at: 0 };
+  // junk or a fragment ("no sé" for a whole sentence): say so honestly
+  if (expected.length >= 3 && input.length < expected.length / 2) {
+    const hits = input.filter((w) => expected.includes(w)).length;
+    if (hits < expected.length / 2) {
+      const verb = expected.find((w) => readings(w).length);
+      return { kind: 'fragment', at: 0, hint: verb ? `That's not the sentence yet. Start with the verb: ${verb}…` : 'Type the whole sentence.' };
+    }
+  }
   // the same words, or some of them, in another order: never blame a right word
   if (multisetWithin(input, expected) && (input.length === expected.length || !inOrder(input, expected))) {
     return { kind: 'word-order', hint: HINT_TEXT['word-order'], at: orderAt(input, expected) };

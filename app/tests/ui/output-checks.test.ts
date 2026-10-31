@@ -27,6 +27,13 @@ describe('checkPersonal', () => {
     expect(r.hint).toMatch(/Use \*[a-zé]+\*/i);
     expect(r.hint).toMatch(/\*(soy|eres|es|somos|son)\*/);
   });
+  it('a name is never the form asked for', () => {
+    const r = checkPersonal('Tomo café.', opts);
+    expect(r.pass).toBe(false);
+    expect(r.hint).toMatch(/\*(soy|eres)\*/);
+    expect(r.hint).not.toMatch(/tomás/i);
+    expect(checkPersonal('Soy de Lima.', opts).pass).toBe(true);
+  });
   it('Spanish with the form passes (any person of the verb)', () => {
     const r = checkPersonal('Soy Matt. Soy de Toronto.', opts);
     expect(r.pass).toBe(true);
@@ -140,5 +147,27 @@ describe('story comprehension', () => {
     const before = w.learner.events().length;
     expect(logComprehension(run, ch, ch.questions[0], { correct: false, tries: 2, ms: 1000 })).toEqual([]);
     expect(w.learner.events().length).toBe(before);
+  });
+});
+
+describe('respondCheck: a bare non-answer is not an answer', () => {
+  const b = fixtureBundle();
+  const lex = bundleLexicon(b);
+  it('"no sé" and "sí" fail with a nudge', () => {
+    const q = { ...b.sentence('u01-4')!, es: '¿Cuántos hermanos tienes?', en: 'How many siblings do you have?' };
+    const c = respondCheck(q as any, lex);
+    const r = c('no sé');
+    expect(r.pass).toBe(false);
+    expect(r.hint).toMatch(/give it a go/i);
+    expect(c('No lo sé.').pass).toBe(false);
+  });
+  it('a sentence with a verb passes a question that is not about tú or usted', () => {
+    const q = { ...b.sentence('u01-4')!, es: '¿Cuántos hermanos hay?', en: 'How many siblings are there?' };
+    expect(respondCheck(q as any, lex)('Tengo dos hermanos').pass).toBe(true);
+  });
+  it('words with no verb in them are told to use one', () => {
+    const q = { ...b.sentence('u01-4')!, es: '¿Cuántos hermanos hay?', en: 'How many siblings are there?' };
+    const r = respondCheck(q as any, lex)('Mis hermanos aquí');
+    if (!r.pass) expect(r.hint).toMatch(/Answer with a verb/);
   });
 });

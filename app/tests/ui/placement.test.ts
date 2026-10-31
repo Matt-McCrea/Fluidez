@@ -164,3 +164,12 @@ describe('seeding the skipped weeks', () => {
     });
   }
 });
+
+describe('dialogue rows in placement items', () => {
+  it('a second turn keeps its capital letter', async () => {
+    const { itemsFor, capitaliseTurns } = await import('../../src/ui/session/placement');
+    expect(capitaliseTurns('¿Qué pasó con el café? no hay, Tomás.')).toBe('¿Qué pasó con el café? No hay, Tomás.');
+    const s: any = { id: 'u04-x', es: '¿Qué pasó con el café?\nHoy no hay, Tomás.', en: 'What happened to the coffee?\nThere is none today, Tomás.', accept: [], acceptEn: [], requires: [], targets: [], kind: 'dialogue', unit: 'u04' };
+    for (const it of itemsFor(s, 4, 'a')) for (const o of it.options) expect(o.text).not.toMatch(/[?.!] \p{Ll}/u);
+  });
+});

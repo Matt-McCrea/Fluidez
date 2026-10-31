@@ -125,6 +125,7 @@ function Run({ spec, onDone, onExit }: { spec: PracticeSpec; onDone: () => void;
   const [over, setOver] = useState(!card);
   const [best, setBest] = useState<{ was: number; now: number } | null>(null);
   const finished = useRef(false);
+  const hadCard = useRef(!!card);
 
   useEffect(() => {
     if (over) return;
@@ -153,14 +154,14 @@ function Run({ spec, onDone, onExit }: { spec: PracticeSpec; onDone: () => void;
     const live = run.answered;
     return (
       <main class="screen" id="main">
-        <Heading title={live ? 'Done' : run.emptyReason ? 'Not yet' : 'Nothing to practise yet'} lead={spec.title} />
+        <Heading title={live ? 'Done' : hadCard.current ? 'Nothing answered yet' : run.emptyReason ? 'Not yet' : 'Nothing to practise yet'} lead={spec.title} />
         {live ? (
           <>
-            <p class="big-number" data-score>{run.right} <span>of {live} right first time</span></p>
+            <p class="big-number" data-score>{run.right} <span>of {live} right first time{run.retried ? `, ${run.retried} on the second try` : ''}</span></p>
             {best ? <p>{best.was ? `A new best. The one before was ${best.was}.` : 'That is your first score to beat.'}</p> : null}
             {spec.kind === 'quickReview' ? <p>Those reviews are on your schedule now.</p> : <p>This was practice only. Your review schedule is unchanged.</p>}
           </>
-        ) : <p>{run.emptyReason ?? 'Come back after a lesson or two.'}</p>}
+        ) : hadCard.current ? <p>Nothing answered yet.</p> : <p>{run.emptyReason ?? 'Come back after a lesson or two.'}</p>}
         <div class="actions">
           <Continue label="Done" onClick={onExit} />
           {spec.kind === 'nodes' ? null : <button class="btn quiet" onClick={onDone}>Pick something else</button>}

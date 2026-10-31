@@ -3,7 +3,7 @@
 // components use, either always right or always wrong.
 import type { Block, Item } from '../../src/compiler';
 import { checkWriting, type Constraint } from '../../src/check';
-import { LEARNING_STEPS_MAX, Learner, MemoryStore, type Tier } from '../../src/learner';
+import { Learner, MemoryStore, type Tier } from '../../src/learner';
 import { fixtureContent } from '../../src/ui/fixtures';
 import { Bundle } from '../../src/ui/data/bundle';
 import {
@@ -113,14 +113,14 @@ export function runBlock(b: Block, run: SessionRunner, mood: Mood, walk: Walk) {
           q.next();
           continue;
         }
-        const card = learnRetrieval(it, bundle, step.round);
+        const card = learnRetrieval(it, bundle, step.round, step.n);
         walk.cards.push(card);
         walk.screens.push(formatOf(card));
         const o = answer(card, mood);
         tick(card, o.tries);
         if (mood === 'right' && !o.correct) walk.failures.push(`learn ${card.key}: right answer did not pass`);
-        const done = run.learningStep(it.node, o, it.credit, it.productive);
-        q.next(!done && step.round + 1 < LEARNING_STEPS_MAX && !run.outOfTimeFor(b));
+        const done = run.learningStep(it.node, o, it.credit, it.productive, 'learn', card.type === 'type');
+        q.next(!done && !run.outOfTimeFor(b), !o.correct);
       }
       break;
     }

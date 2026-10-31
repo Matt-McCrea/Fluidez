@@ -7,7 +7,7 @@ import type { TenseKey } from '../../../engine';
 import type { PracticeSpec } from '../../session/practice-spec';
 import { Es, Heading, Paras, Rich, undash } from '../../components/text';
 import { useApp } from '../../context';
-import { groupByTopic, grammarEntries, searchEntries, STRENGTH_TEXT, wordEntries, type GrammarEntry, type WordEntry } from './model';
+import { exampleSentences, groupByTopic, grammarEntries, searchEntries, STRENGTH_TEXT, unmetWordEntries, wordEntries, type GrammarEntry, type WordEntry } from './model';
 import { cellsFor, findVerbs, shownPersons, type VerbMatch } from './verbs';
 import { TENSE_ORDER, TENSE_PLAIN, taughtTenses } from './tenses';
 
@@ -28,6 +28,9 @@ export function Reference({ onPractise }: { onPractise: (spec: PracticeSpec) => 
   const verbs = useMemo(() => findVerbs(q), [q]);
   const gHits = useMemo(() => searchEntries(grammar, q), [grammar, q]);
   const wHits = useMemo(() => searchEntries(words, q), [words, q]);
+  // words the course has not reached: only worked out once there is something to look up
+  const unmet = useMemo(() => (q.trim() ? unmetWordEntries(bundle, met) : []), [bundle, met, q.trim() !== '']);
+  const comingWords = useMemo(() => searchEntries(unmet, q), [unmet, q]);
   const counts = { verbs: verbs.length, grammar: gHits.length, words: wHits.length };
 
   const change = (v: string) => {
@@ -59,7 +62,7 @@ export function Reference({ onPractise }: { onPractise: (spec: PracticeSpec) => 
       </div>
       {section === 'verbs' ? <VerbsView q={q} verbs={verbs} tenses={tenses} onPractise={onPractise} onPick={change} /> : null}
       {section === 'grammar' ? <GrammarView q={q} hits={gHits} shown={shown} more={() => setShown(shown + PAGE)} onPractise={onPractise} /> : null}
-      {section === 'words' ? <WordsView q={q} hits={wHits} shown={shown} more={() => setShown(shown + PAGE)} onPractise={onPractise} /> : null}
+      {section === 'words' ? <WordsView q={q} hits={wHits} coming={comingWords} shown={shown} more={() => setShown(shown + PAGE)} onPractise={onPractise} /> : null}
     </main>
   );
 }
@@ -176,8 +179,9 @@ function GrammarView({ q, hits, shown, more, onPractise }: {
 }
 
 function GrammarItem({ e, onPractise }: { e: GrammarEntry; onPractise: (s: PracticeSpec) => void }) {
-  const { bundle } = useApp();
+  const { bundle, learner } = useApp();
   const [open, setOpen] = useState(false);
+  const examples = useMemo(() => (open ? exampleSentences(bundle, learner, e.id) : []), [open, e.id]);
   const [script, setScript] = useState<TeachingScript | undefined>(() => bundle.scripts.get(e.id));
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -194,6 +198,15 @@ function GrammarItem({ e, onPractise }: { e: GrammarEntry; onPractise: (s: Pract
       <summary>{undash(e.title)}</summary>
       {open ? <>
         {script ? <ScriptView script={script} /> : loading ? <p class="small" data-loading>Loading</p> : <Short id={e.id} />}
+        {examples.length ? (
+          <div class="from-bank">
+            <p class="small">From the bank</p>
+            {examples.map((id) => {
+              const s = bundle.sentence(id);
+              return s ? <div key={id} class="example"><Es block>{s.es}</Es><p class="en">{undash(s.en)}</p></div> : null;
+            })}
+          </div>
+        ) : null}
         <div class="actions">
           <button class="btn primary" onClick={() => onPractise({ kind: 'nodes', nodes: [e.id] })}>Practise this</button>
         </div>
@@ -236,10 +249,25 @@ function ScriptView({ script }: { script: TeachingScript }) {
 
 // ---------------------------------------------------------------- words
 
-function WordsView({ q, hits, shown, more, onPractise }: {
-  q: string; hits: WordEntry[]; shown: number; more: () => void; onPractise: (s: PracticeSpec) => void;
+function WordsView({ q, hits, coming, shown, more, onPractise }: {
+  q: string; hits: WordEntry[]; coming: WordEntry[]; shown: number; more: () => void; onPractise: (s: PracticeSpec) => void;
 }) {
-  if (!hits.length) return <p class="small">{q.trim() ? 'No word you have met matches that.' : 'Words you meet will collect here.'}</p>;
+  const later = coming.length ? (
+    <details class="later">
+      <summary>Coming up ({coming.length})</summary>
+      <ul class="coming">
+        {coming.slice(0, 20).map((w) => <li key={w.id}><Es>{w.word}</Es> <span class="word-gloss">{undash(w.gloss)}</span></li>)}
+      </ul>
+    </details>
+  ) : null;
+  if (!hits.length) {
+    return (
+      <section>
+        <p class="small">{q.trim() ? 'No word you have met matches that.' : 'Words you meet will collect here.'}</p>
+        {later}
+      </section>
+    );
+  }
   return (
     <section>
       <ul class="words">
@@ -256,6 +284,7 @@ function WordsView({ q, hits, shown, more, onPractise }: {
         ))}
       </ul>
       {hits.length > shown ? <button class="btn quiet" onClick={more}>Show more ({hits.length - shown})</button> : null}
+      {later}
     </section>
   );
 }

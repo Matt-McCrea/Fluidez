@@ -90,7 +90,8 @@ function verbGroup(ts: readonly string[]): [number, number] | null {
 
 /** Canonicalise one Spanish answer. */
 export function canon(text: string): Canon {
-  let ts = words(text);
+  // a figure keeps its place ('el 70 % prefiere' is not 'el prefiere')
+  let ts = words(text.replace(/\d+(?:[.,]\d+)*(?:\s*%)?/g, ' xnum '));
   let accentSlips = 0;
 
   // 1. multi-word adverbials become one token
@@ -129,7 +130,7 @@ export function canon(text: string): Canon {
     let pron: string | null = null;
     if (SUBJECT_PRONOUNS[w] !== undefined) pron = w;
     // "el come", "tu hablas": the pronoun without its accent, before a verb that agrees
-    else if ((w === 'el' || w === 'tu') && next && verbReadings(next).some((a) => a.person === (w === 'el' ? 'él/ella' : 'tú')) && !/^(trabajo|cocina|cena|camino|baile|estudio)$/.test(next)) {
+    else if ((w === 'el' || w === 'tu') && next && verbReadings(next).some((a) => a.person === (w === 'el' ? 'él/ella' : 'tú') && !/subj|imperativo|impneg/.test(a.tense)) && !/^(trabajo|cocina|cena|camino|baile|estudio|casa|cuenta|cambio|programa|paso|pago|canta|llama|firma|ayuda|compra|cobra|prueba|muestra|debate|guía|cura|vino|cable|homenaje|cupo|dominó)$/.test(next)) {
       pron = w === 'el' ? 'él' : 'tú';
       accentSlips++;
     }
