@@ -6,54 +6,104 @@
     "en": "I haven't slept well for three days."
   },
   "examples": [
-    { "es": "Llevo tres semanas sin fumar.", "en": "I haven't smoked for three weeks." },
-    { "es": "Tomás lleva dos días sin hablar con Vale.", "en": "Tomás hasn't talked to Vale for two days." },
-    { "es": "¿Cuánto llevas sin dormir?", "en": "How long have you gone without sleep?" },
-    { "es": "Llevábamos años sin vernos.", "en": "We hadn't seen each other for years." },
-    { "es": "Simón lleva una semana sin hablar.", "en": "Simón hasn't spoken for a week." },
-    { "es": "Llevaba un año sin ver a Rosa.", "en": "I hadn't seen Rosa for a year." }
+    {
+      "es": "Llevo tres semanas sin fumar.",
+      "en": "I haven't smoked for three weeks."
+    },
+    {
+      "es": "Tomás lleva dos días sin hablar con Vale.",
+      "en": "Tomás hasn't talked to Vale for two days."
+    },
+    {
+      "es": "¿Cuánto llevas sin dormir?",
+      "en": "How long have you gone without sleep? (to a friend)"
+    },
+    {
+      "es": "Llevábamos años sin vernos.",
+      "en": "We hadn't seen each other for years."
+    },
+    {
+      "es": "Simón lleva una semana sin hablar.",
+      "en": "Simón hasn't spoken for a week."
+    },
+    {
+      "es": "Llevaba un año sin ver a Rosa.",
+      "en": "I hadn't seen Rosa for a year."
+    }
   ],
   "rule": "To say how long you have gone without doing something, use *llevar* + the time + *sin* + the infinitive.\n\n*Llevo tres semanas sin fumar.*\n\nSpanish uses the present (*llevo*) where English says \"haven't... for\". Use *llevaba* or *llevábamos* when the time is in the past: \"hadn't... for\".\n\nAfter *sin*, the verb is always the infinitive, even when English says \"without smoking\". And there is no *no* in the sentence: *sin* already is the \"not\".\n\nTo ask: *¿Cuánto llevas sin...?*",
   "smallPrint": "Teachers call this a durative periphrasis with *llevar* (*perífrasis de llevar + sin + infinitivo*): it mirrors *llevar + gerund*, which says how long you have been doing something.",
   "readAndPick": [
     {
       "es": "Llevo tres semanas sin fumar.",
-      "options": ["I've smoked for three weeks.", "I haven't smoked for three weeks.", "I will stop smoking in three weeks."],
+      "options": [
+        "I've smoked for three weeks.",
+        "I haven't smoked for three weeks.",
+        "I will stop smoking in three weeks."
+      ],
       "answer": 1
     },
     {
       "es": "Llevábamos años sin vernos.",
-      "options": ["We haven't seen each other for years.", "We saw each other years ago.", "We hadn't seen each other for years."],
+      "options": [
+        "We haven't seen each other for years.",
+        "We saw each other years ago.",
+        "We hadn't seen each other for years."
+      ],
       "answer": 2
     },
     {
       "es": "¿Cuánto llevas sin dormir?",
-      "options": ["How long have you gone without sleep?", "How much do you sleep?", "How well did you sleep?"],
+      "options": [
+        "How long have you gone without sleep? (to a friend)",
+        "How much do you sleep?",
+        "How well did you sleep?"
+      ],
       "answer": 0
     },
     {
       "es": "Llevo dos horas hablando con Vale.",
-      "options": ["I haven't talked to Vale for two hours.", "I've been talking to Vale for two hours.", "I will talk to Vale in two hours."],
+      "options": [
+        "I haven't talked to Vale for two hours.",
+        "I've been talking to Vale for two hours.",
+        "I will talk to Vale in two hours."
+      ],
       "answer": 1
     },
     {
       "es": "Llevo dos horas sin hablar con Vale.",
-      "options": ["I haven't talked to Vale for two hours.", "I've been talking to Vale for two hours.", "I will talk to Vale in two hours."],
+      "options": [
+        "I haven't talked to Vale for two hours.",
+        "I've been talking to Vale for two hours.",
+        "I will talk to Vale in two hours."
+      ],
       "answer": 0
     },
     {
       "es": "Tomás lleva dos días sin hablar con Vale.",
-      "options": ["Tomás has talked to Vale for two days.", "Tomás hasn't talked to Vale for two days.", "Tomás talked to Vale two days ago."],
+      "options": [
+        "Tomás has talked to Vale for two days.",
+        "Tomás hasn't talked to Vale for two days.",
+        "Tomás talked to Vale two days ago."
+      ],
       "answer": 1
     },
     {
       "es": "Llevaba un año sin ver a Rosa.",
-      "options": ["I hadn't seen Rosa for a year.", "I haven't seen Rosa for a year.", "I didn't see Rosa a year ago."],
+      "options": [
+        "I hadn't seen Rosa for a year.",
+        "I haven't seen Rosa for a year.",
+        "I didn't see Rosa a year ago."
+      ],
       "answer": 0
     },
     {
       "es": "Simón lleva una semana sin hablar.",
-      "options": ["Simón talks all week.", "Simón will talk next week.", "Simón hasn't spoken for a week."],
+      "options": [
+        "Simón talks all week.",
+        "Simón will talk next week.",
+        "Simón hasn't spoken for a week."
+      ],
       "answer": 2
     }
   ],

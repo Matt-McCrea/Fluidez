@@ -3,24 +3,24 @@
   "unit": "u43",
   "title": "La carta sin sello",
   "spare": false,
-  "brief": "You're Tomás, in the café after closing with Don Hernando, who has found a letter Rosa never posted. He is older than you and courtly, so use usted. Say what seemed wrong, what you would have done, and listen kindly.",
+  "brief": "You're Tomás, in the café after closing with Don Hernando, who has been rereading the letter Rosa never posted in 2009. He is older than you and courtly, so use usted. Say what seemed wrong, what you would have done, and listen kindly.",
   "turns": [
     {
       "id": "t1",
-      "npc": "Hernando: Tomás, encontré en la caja de Rosa una carta para Joaquín. Nunca la mandó. Ojalá la hubiera mandado.",
-      "npcEn": "Hernando: Tomás, I found a letter to Joaquín in Rosa's box. She never sent it. If only she had sent it.",
+      "npc": "Hernando: Tomás, volví a leer la carta de 2009. Rosa la tuvo en la mano y nunca la mandó. Ojalá la hubiera mandado.",
+      "npcEn": "Hernando: Tomás, I read the 2009 letter again. Rosa had it in her hand and never sent it. If only she had sent it.",
       "intent": "Say that it seemed wrong to you that Rosa had never sent it.",
       "accept": [
         "Me pareció mal que Rosa no la hubiera mandado nunca.",
         "Sinceramente, me pareció mal que ella nunca la hubiera mandado.",
-        "Me pareció mal que no la hubiera mandado, Hernando."
+        "Me pareció muy mal que no la hubiera mandado, Hernando."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\bme pareció mal que\\b.*\\bhubier[ao]n?\\b",
+          "pattern": "\\bme pareció (muy |tan )?mal que\\b.*\\bhubier[ao]n?\\b",
           "flags": "iu",
-          "label": "start with: me pareció mal que + hubiera..."
+          "label": "say it seemed wrong: me pareció mal que + hubiera..."
         }
       ],
       "focus": "p:me-parecio-mal-que",
@@ -54,18 +54,18 @@
     },
     {
       "id": "t3",
-      "npc": "Hablaron una sola vez en treinta años, en la calle, y se despidieron sin decir nada.",
-      "npcEn": "They spoke just once in thirty years, in the street, and said goodbye without saying anything.",
-      "intent": "Say that you are very sorry that they had not talked earlier.",
+      "npc": "Cuarenta y siete cartas, Tomás, y ninguna salió de esa caja. Ellos nunca volvieron a hablar.",
+      "npcEn": "Forty-seven letters, Tomás, and not one left that box. They never spoke again.",
+      "intent": "Say that you are very sorry that they had never spoken again.",
       "accept": [
-        "Siento mucho que no hubieran hablado antes.",
-        "Siento mucho que Joaquín y ella no hubieran hablado antes.",
-        "Siento mucho que nunca hubieran hablado de eso antes."
+        "Siento mucho que nunca hubieran vuelto a hablar.",
+        "Siento mucho que Rosa y Joaquín no hubieran vuelto a hablar.",
+        "Siento mucho que no hubieran hablado nunca más."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\bsiento mucho que\\b.*\\bhubier[ao]n?\\b",
+          "pattern": "\\b(siento|lamento) mucho que\\b.*\\bhubier[ao]n?\\b",
           "flags": "iu",
           "label": "start with: siento mucho que + hubieran..."
         }
@@ -75,20 +75,20 @@
     },
     {
       "id": "t4",
-      "npc": "Y hay algo más. Yo vi a Joaquín esa tarde y no le dije nada. ¿Usted me habría dicho que hablara?",
-      "npcEn": "And there is something more. I saw Joaquín that afternoon and said nothing to him. Would you have told me to speak?",
-      "intent": "Say yes, you would have told him to speak to Joaquín.",
+      "npc": "Y hay algo más. Esa mañana de 2009, Rosa me dijo que no, y yo no insistí. ¿Usted habría insistido?",
+      "npcEn": "And there is something more. That morning in 2009, Rosa told me no, and I didn't insist. Would you have insisted?",
+      "intent": "Say yes, you would have insisted, and taken her to the post office.",
       "accept": [
-        "Sí, yo le habría dicho que hablara con Joaquín.",
-        "Claro que sí. Le habría dicho que hablara con él.",
-        "Sí, Hernando. Le habría dicho que hablara esa misma tarde."
+        "Sí, yo habría insistido y la habría llevado al correo.",
+        "Creo que sí. Yo habría insistido un poco más.",
+        "Sí, Hernando. Yo habría insistido, con mucho cariño."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\bhabría\\s+dicho\\b",
+          "pattern": "\\bhabría\\s+insistido\\b",
           "flags": "iu",
-          "label": "use habría dicho"
+          "label": "use habría insistido"
         },
         {
           "type": "avoidsPerson",
@@ -101,8 +101,8 @@
     },
     {
       "id": "t5",
-      "npc": "Gracias por escucharme, Tomás. Mañana mandamos la carta juntos. ¿Me regala un tinto mientras tanto?",
-      "npcEn": "Thank you for listening, Tomás. Tomorrow we send the letter together. Will you give me a coffee in the meantime?",
+      "npc": "Gracias por escucharme, Tomás. A Rosa le habría gustado esta conversación. ¿Me regala un tinto?",
+      "npcEn": "Thank you for listening, Tomás. Rosa would have liked this conversation. Could I have a black coffee?",
       "intent": "Say you'll gladly bring him a black coffee, and that the house is paying.",
       "accept": [
         "Con gusto, Hernando. Ya le traigo el tinto, invita la casa.",
@@ -129,21 +129,22 @@
   "requires": [
     "c:algo-mas",
     "c:claro-listo",
-    "c:con-el-ella",
     "c:con-mucho-gusto",
+    "c:creo-que",
     "c:hay",
     "c:me-regala",
     "c:mucho-gusto",
     "c:ojala",
-    "g:adjective-agreement",
     "g:adverbs-mente",
     "g:conditional-perfect",
     "g:demonstratives",
     "g:direct-objects",
     "g:gender-articles",
+    "g:gustar-basic",
+    "g:gustar-full",
     "g:hay-vs-esta",
     "g:imperfect-states",
-    "g:imperfect-subj",
+    "g:indefinites",
     "g:indirect-objects",
     "g:negation-words",
     "g:object-pronoun-position",
@@ -154,50 +155,47 @@
     "g:preterite-ar",
     "g:preterite-er-ir",
     "g:preterite-irregular-strong",
-    "g:preterite-spelling-stem",
-    "g:reflexive-routine",
-    "g:reported-commands-past",
     "g:stem-boot",
     "g:subj-past-triggers",
     "g:that-clauses",
     "g:yo-irregular",
     "l:ahora",
-    "l:antes",
-    "l:año",
     "l:caja",
-    "l:calle",
+    "l:cariño",
     "l:carta",
     "l:casa",
     "l:claro",
+    "l:conversación",
+    "l:correo",
+    "l:creer",
     "l:decir",
-    "l:despedirse",
     "l:día",
-    "l:encontrar",
     "l:enseguida",
     "l:escuchar",
+    "l:gustar",
     "l:gusto",
     "l:hablar",
+    "l:insistir",
     "l:invitar",
-    "l:juntos",
+    "l:leer",
+    "l:llevar",
     "l:lugar",
     "l:mal",
     "l:mandar",
+    "l:mano",
     "l:mañana",
     "l:miedo",
     "l:parecer",
     "l:pensar",
     "l:regalar",
     "l:respuesta",
+    "l:salir",
     "l:sentir",
     "l:sinceramente",
-    "l:tarde",
     "l:tener",
     "l:tinto",
     "l:traer",
-    "l:ver",
-    "l:vez",
-    "p:a-la-vez",
-    "p:container-de",
+    "l:volver",
     "p:demonstratives-basic",
     "p:frequency-scale",
     "p:gracias-por",
@@ -207,13 +205,14 @@
     "p:me-parecio-mal-que",
     "p:me-te-nos-objects",
     "p:ojala-hubiera",
-    "p:para-inf",
     "p:personal-a",
+    "p:poco-un-poco",
     "p:possessives-basic",
     "p:quantifiers-basic",
-    "p:se-reciproco",
     "p:sentir-lo-de",
     "p:siento-mucho-que",
-    "p:tener-hambre"
+    "p:te-habria-gustado-que",
+    "p:tener-hambre",
+    "p:volver-a-inf"
   ]
 }

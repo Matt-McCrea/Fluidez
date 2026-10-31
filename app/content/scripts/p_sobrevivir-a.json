@@ -144,10 +144,8 @@
     {
       "prompt": "Type in Spanish: Rosa survived a crisis at the café.",
       "answer": "Rosa sobrevivió a una crisis en el café.",
-      "accept": [
-        "Rosa sobrevivió a una crisis en el café."
-      ],
-      "why": "*Sobrevivió a* plus the crises, with the *a* kept."
+      "accept": [],
+      "why": "*Sobrevivió a* plus the crisis, with the *a* kept."
     },
     {
       "prompt": "Make it about *we*: *No aguanté más.*",
@@ -166,7 +164,7 @@
     {
       "wrong": "La empresa sobrevivió la crisis.",
       "right": "La empresa sobrevivió a la crisis.",
-      "why": "The *a* is the standard form: *sobrevivir a* something."
+      "why": "You will hear it without *a*, but *sobrevivir a* is the safe, standard form."
     },
     {
       "wrong": "La empresa sobrevivió de la crisis.",

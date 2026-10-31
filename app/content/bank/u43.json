@@ -493,7 +493,7 @@
   {
     "id": "u43-0022",
     "es": "Ojalá no hubieran cerrado la autopista.",
-    "en": "I wish they hadn't closed the motorway.",
+    "en": "I wish they hadn't closed the highway.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -587,22 +587,21 @@
   },
   {
     "id": "u43-0026",
-    "es": "Ojalá Simón no hubiera repetido eso delante del señor Altamira.",
-    "en": "I wish Simón hadn't repeated that in front of Mr. Altamira.",
+    "es": "Ojalá Simón no hubiera repetido eso delante del abogado de Altamira.",
+    "en": "I wish Simón hadn't repeated that in front of Altamira's lawyer.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ojala",
       "g:gender-articles",
       "g:pluperfect-subj",
+      "l:abogado",
       "l:delante",
       "l:repetir",
-      "l:señor",
       "p:cerca-de",
       "p:demonstratives-basic",
       "p:ojala-hubiera",
-      "p:position-de",
-      "p:senor-don-article"
+      "p:position-de"
     ],
     "targets": [
       "g:pluperfect-subj",
@@ -1239,17 +1238,17 @@
   },
   {
     "id": "u43-0053",
-    "es": "Ojalá lo hubiéramos hecho fácilmente.",
-    "en": "I wish we had done it easily.",
+    "es": "Ojalá todo se hubiera resuelto tan fácilmente.",
+    "en": "I wish everything had been solved so easily.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ojala",
       "g:adverbs-mente",
-      "g:direct-objects",
       "g:pluperfect-subj",
+      "g:se-impersonal",
       "l:fácilmente",
-      "l:hacer",
+      "l:resolver",
       "p:ojala-hubiera"
     ],
     "targets": [
@@ -1285,7 +1284,7 @@
   {
     "id": "u43-0055",
     "es": "Ojalá hubieran abierto otra caja.",
-    "en": "I wish they had opened another till.",
+    "en": "I wish they had opened another checkout.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1451,17 +1450,20 @@
   },
   {
     "id": "u43-0062",
-    "es": "No hubo nadie que hubiera dicho nada.",
-    "en": "There was nobody who had said anything.",
+    "es": "En toda la reunión no hubo nadie que hubiera leído el contrato.",
+    "en": "In the whole meeting there was nobody who had read the contract.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:imperfect-states",
       "g:negation-words",
       "g:pluperfect-subj",
       "g:relative-que",
       "g:subj-relative",
-      "l:decir"
+      "l:contrato",
+      "l:leer",
+      "l:reunión"
     ],
     "targets": [
       "g:pluperfect-subj"
@@ -1473,8 +1475,8 @@
   },
   {
     "id": "u43-0063",
-    "es": "Nadie había visto la carta, pero ojalá la hubieran visto antes.",
-    "en": "Nobody had seen the letter, but I wish they had seen it sooner.",
+    "es": "Nadie había visto la carta, y ojalá alguien la hubiera encontrado antes.",
+    "en": "Nobody had seen the letter, and I wish someone had found it sooner.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1485,7 +1487,9 @@
       "g:pluperfect-subj",
       "l:antes",
       "l:carta",
+      "l:encontrar",
       "l:ver",
+      "p:indefinites-basic",
       "p:ojala-hubiera"
     ],
     "targets": [
@@ -1714,17 +1718,21 @@
   },
   {
     "id": "u43-0073",
-    "es": "Quería que hubiera llegado ya.",
-    "en": "I wanted him to have arrived already.",
+    "es": "Me extrañó que todavía no hubiera llegado.",
+    "en": "I found it strange that he hadn't arrived yet.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:imperfect-habitual",
+      "c:todavia-no",
+      "g:gustar-full",
       "g:pluperfect-subj",
+      "g:preterite-ar",
       "g:subj-past-triggers",
       "g:that-clauses",
+      "l:extrañar",
       "l:llegar",
-      "l:querer"
+      "p:me-extrana-que",
+      "p:me-sorprende-que"
     ],
     "targets": [
       "g:pluperfect-subj"
@@ -2118,19 +2126,20 @@
   },
   {
     "id": "u43-0090",
-    "es": "Me gustó que hubieras llamado.",
-    "en": "I liked that you called. (to a friend)",
+    "es": "Me sorprendió que no hubieras llamado.",
+    "en": "I was surprised that you hadn't called. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gustar-basic",
+      "g:gustar-full",
       "g:pluperfect-subj",
-      "g:preterite-ar",
+      "g:preterite-er-ir",
       "g:subj-past-triggers",
       "g:that-clauses",
-      "l:gustar",
       "l:llamar",
-      "p:me-encanta-que"
+      "l:sorprender",
+      "p:me-extrana-que",
+      "p:me-sorprende-que"
     ],
     "targets": [
       "g:pluperfect-subj"
@@ -2189,23 +2198,28 @@
   },
   {
     "id": "u43-0093",
-    "es": "Sentí que me hubieran mentido.",
-    "en": "I was sorry that they had lied to me.",
+    "es": "Me dolió que me hubieran mentido.",
+    "en": "It hurt that they had lied to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gustar-full",
       "g:pluperfect-subj",
       "g:preterite-er-ir",
       "g:subj-past-triggers",
       "g:that-clauses",
+      "l:doler",
       "l:mentir",
-      "l:sentir",
-      "p:me-te-nos-objects",
-      "p:siento-mucho-que"
+      "p:doler",
+      "p:me-decepciono-que",
+      "p:me-duele",
+      "p:me-duele-que",
+      "p:me-encanta-que",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:pluperfect-subj",
-      "p:siento-mucho-que"
+      "p:me-decepciono-que"
     ],
     "kind": "statement",
     "unit": "u43",
@@ -2284,19 +2298,22 @@
   },
   {
     "id": "u43-0097",
-    "es": "Quería que alguien me hubiera avisado.",
-    "en": "I wanted someone to have warned me.",
+    "es": "A Tomás le pareció raro que nadie le hubiera avisado.",
+    "en": "Tomás thought it was strange that nobody had warned him.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:imperfect-habitual",
+      "g:gustar-full",
+      "g:indirect-objects",
+      "g:parecer-quedar",
       "g:pluperfect-subj",
+      "g:preterite-er-ir",
       "g:subj-past-triggers",
       "g:that-clauses",
       "l:avisar",
-      "l:querer",
-      "p:indefinites-basic",
-      "p:me-te-nos-objects"
+      "l:parecer",
+      "l:raro",
+      "p:me-parece-bien-que"
     ],
     "targets": [
       "g:pluperfect-subj"
@@ -2308,17 +2325,21 @@
   },
   {
     "id": "u43-0098",
-    "es": "Si se hubiera resuelto, yo habría pagado.",
-    "en": "If it had been resolved, I would have paid.",
+    "es": "Si el problema se hubiera resuelto, yo habría pagado la cuenta.",
+    "en": "If the problem had been solved, I would have paid the bill.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:la-cuenta",
       "g:conditional-perfect",
+      "g:gender-articles",
       "g:pluperfect-subj",
       "g:se-impersonal",
       "g:si-hypothetical",
       "g:si-past-unreal",
+      "l:cuenta",
       "l:pagar",
+      "l:problema",
       "l:resolver"
     ],
     "targets": [
@@ -2334,7 +2355,7 @@
   {
     "id": "u43-0099",
     "es": "Ojalá que no hubieran tocado nada.",
-    "en": "I hope they hadn't touched anything.",
+    "en": "I wish they hadn't touched anything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -2381,20 +2402,20 @@
   },
   {
     "id": "u43-0101",
-    "es": "Les pedí que no hubieran empezado sin mí.",
-    "en": "I asked them not to have started without me.",
+    "es": "Me molestó que hubieran empezado sin mí.",
+    "en": "It bothered me that they had started without me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:indirect-objects",
+      "g:gustar-full",
       "g:pluperfect-subj",
       "g:prep-pronouns",
-      "g:preterite-er-ir",
+      "g:preterite-ar",
       "g:subj-past-triggers",
       "g:that-clauses",
       "l:empezar",
-      "l:pedir",
-      "p:preguntar-pedir"
+      "l:molestar",
+      "p:me-encanta-que"
     ],
     "targets": [
       "g:pluperfect-subj"
@@ -2406,22 +2427,22 @@
   },
   {
     "id": "u43-0102",
-    "es": "No pensábamos que el temporal hubiera durado tres días.",
-    "en": "We didn't think the storm had lasted three days.",
+    "es": "Nadie creyó que el temporal hubiera durado una semana entera.",
+    "en": "Nobody believed the storm had lasted a whole week.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
-      "g:imperfect-habitual",
       "g:pluperfect-subj",
-      "g:subj-past-triggers",
+      "g:preterite-spelling-stem",
       "g:that-clauses",
+      "l:creer",
       "l:durar",
-      "l:día",
-      "l:pensar",
+      "l:entero",
+      "l:semana",
       "l:temporal",
-      "p:durar-durante",
-      "p:pensar-en"
+      "p:durar-durante"
     ],
     "targets": [
       "g:pluperfect-subj",
@@ -4056,7 +4077,7 @@
   {
     "id": "u43-0163",
     "es": "Si ellos no hubieran cerrado la autopista, habríamos llegado al mediodía.",
-    "en": "If they hadn't closed the motorway, we would have arrived at noon.",
+    "en": "If they hadn't closed the highway, we would have arrived at noon.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4389,22 +4410,23 @@
   },
   {
     "id": "u43-0175",
-    "es": "Si nos hubiéramos rendido, no habríamos llegado lejos.",
-    "en": "If we had given up, we wouldn't have gone far.",
+    "es": "Si nos hubiéramos rendido en enero, hoy no tendríamos café.",
+    "en": "If we had given up in January, we wouldn't have a café today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:conditional-perfect",
+      "g:conditional",
       "g:pluperfect-subj",
       "g:reflexive-routine",
       "g:si-hypothetical",
       "g:si-past-unreal",
-      "l:lejos",
-      "l:llegar",
-      "l:rendirse"
+      "l:café",
+      "l:enero",
+      "l:hoy",
+      "l:rendirse",
+      "l:tener"
     ],
     "targets": [
-      "g:conditional-perfect",
       "g:pluperfect-subj",
       "g:si-past-unreal"
     ],
@@ -4441,8 +4463,8 @@
   },
   {
     "id": "u43-0177",
-    "es": "Si no hubiéramos dejado las llaves, Simón no habría salido.",
-    "en": "If we hadn't left the keys, Simón wouldn't have gotten out.",
+    "es": "Si no hubiéramos dejado la jaula abierta, Simón no habría salido a la calle.",
+    "en": "If we hadn't left the cage open, Simón wouldn't have gotten out into the street.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4451,9 +4473,12 @@
       "g:pluperfect-subj",
       "g:si-hypothetical",
       "g:si-past-unreal",
+      "l:abrir",
+      "l:calle",
       "l:dejar",
-      "l:llave",
-      "l:salir"
+      "l:jaula",
+      "l:salir",
+      "p:encontrar-participle"
     ],
     "targets": [
       "g:conditional-perfect",
@@ -5120,19 +5145,20 @@
   },
   {
     "id": "u43-0202",
-    "es": "Podríamos haberlo hecho antes.",
-    "en": "We could have done it sooner.",
+    "es": "Deberíamos haberlo hecho antes.",
+    "en": "We should have done it sooner.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
       "g:direct-objects",
       "g:object-pronoun-position",
-      "g:verb-infinitive",
+      "g:tener-que-hay-que",
       "l:antes",
+      "l:deber",
       "l:haber",
       "l:hacer",
-      "l:poder",
+      "p:arrepentirse-de-haber",
       "p:no-deberias-haberlo-hecho",
       "p:podriamos-deberiamos",
       "p:podrias-haber"
@@ -5174,8 +5200,8 @@
   },
   {
     "id": "u43-0204",
-    "es": "Podría haberla llamado esa noche.",
-    "en": "I could have called her that night.",
+    "es": "Debería haberla llamado esa noche.",
+    "en": "I should have called her that night.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5183,15 +5209,15 @@
       "g:demonstratives",
       "g:direct-objects",
       "g:object-pronoun-position",
-      "g:verb-infinitive",
+      "g:tener-que-hay-que",
+      "l:deber",
       "l:haber",
       "l:llamar",
       "l:noche",
-      "l:poder",
+      "p:arrepentirse-de-haber",
       "p:no-deberias-haberlo-hecho",
       "p:podrias-haber",
-      "p:request-ladder",
-      "p:te-importaria"
+      "p:tendrias-que"
     ],
     "targets": [
       "p:no-deberias-haberlo-hecho"
@@ -5426,8 +5452,8 @@
   },
   {
     "id": "u43-0213",
-    "es": "Podríamos haberle pedido plata a Hernando.",
-    "en": "We could have asked Hernando for money.",
+    "es": "Tendríamos que haberle pedido plata a Hernando.",
+    "en": "We should have asked Hernando for money.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5439,10 +5465,9 @@
       "l:haber",
       "l:pedir",
       "l:plata",
-      "l:poder",
-      "p:no-deberias-haberlo-hecho",
-      "p:podriamos-deberiamos",
-      "p:podrias-haber"
+      "l:tener",
+      "p:arrepentirse-de-haber",
+      "p:no-deberias-haberlo-hecho"
     ],
     "targets": [
       "p:no-deberias-haberlo-hecho"
@@ -5481,7 +5506,7 @@
   {
     "id": "u43-0215",
     "es": "Podría haberme equivocado de calle.",
-    "en": "I could have gone wrong and taken the wrong street.",
+    "en": "I might have taken the wrong street.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5533,16 +5558,14 @@
   },
   {
     "id": "u43-0217",
-    "es": "Podríamos haberlo tomado por la autopista.",
-    "en": "We could have taken it by the motorway.",
+    "es": "Podríamos haber tomado la autopista.",
+    "en": "We could have taken the highway.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
-      "g:direct-objects",
       "g:gender-articles",
-      "g:object-pronoun-position",
-      "g:por-para-1",
+      "g:infinitive-perfect",
       "g:verb-infinitive",
       "l:autopista",
       "l:haber",
@@ -5550,8 +5573,7 @@
       "l:tomar",
       "p:no-deberias-haberlo-hecho",
       "p:podriamos-deberiamos",
-      "p:podrias-haber",
-      "p:seguir-por"
+      "p:podrias-haber"
     ],
     "targets": [
       "l:autopista",
@@ -5625,19 +5647,20 @@
   },
   {
     "id": "u43-0220",
-    "es": "Podríamos haberle dado otra oportunidad.",
-    "en": "We could have given him another chance.",
+    "es": "Deberíamos haberle dado otra oportunidad.",
+    "en": "We should have given him another chance.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
       "g:indirect-objects",
       "g:object-pronoun-position",
-      "g:verb-infinitive",
+      "g:tener-que-hay-que",
       "l:dar",
+      "l:deber",
       "l:haber",
       "l:oportunidad",
-      "l:poder",
+      "p:arrepentirse-de-haber",
       "p:no-deberias-haberlo-hecho",
       "p:otro-no-article",
       "p:podriamos-deberiamos",
@@ -5709,8 +5732,8 @@
   },
   {
     "id": "u43-0223",
-    "es": "Podría haberlas guardado en un lugar seguro.",
-    "en": "I could have kept them in a safe place.",
+    "es": "Usted debería haberlas guardado en un lugar seguro.",
+    "en": "You should have kept them in a safe place. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5718,16 +5741,16 @@
       "g:direct-objects",
       "g:gender-articles",
       "g:object-pronoun-position",
-      "g:verb-infinitive",
+      "g:tener-que-hay-que",
+      "l:deber",
       "l:guardar",
       "l:haber",
       "l:lugar",
-      "l:poder",
       "l:seguro",
+      "p:arrepentirse-de-haber",
       "p:no-deberias-haberlo-hecho",
       "p:podrias-haber",
-      "p:request-ladder",
-      "p:te-importaria"
+      "p:tendrias-que"
     ],
     "targets": [
       "p:no-deberias-haberlo-hecho"
@@ -5739,22 +5762,21 @@
   },
   {
     "id": "u43-0224",
-    "es": "Podríamos haberlo evitado hablando más despacio.",
-    "en": "We could have avoided it by speaking more slowly.",
+    "es": "Podríamos haberlo evitado con una llamada a tiempo.",
+    "en": "We could have avoided it with a phone call in time.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:mas-despacio",
       "g:conditional",
       "g:direct-objects",
-      "g:gerund-ways",
+      "g:gender-articles",
       "g:object-pronoun-position",
       "g:verb-infinitive",
-      "l:despacio",
       "l:evitar",
       "l:haber",
-      "l:hablar",
+      "l:llamada",
       "l:poder",
+      "l:tiempo",
       "p:no-deberias-haberlo-hecho",
       "p:podriamos-deberiamos",
       "p:podrias-haber"
@@ -5824,8 +5846,8 @@
   },
   {
     "id": "u43-0227",
-    "es": "Podríamos haberle ofrecido una alternativa.",
-    "en": "We could have offered him an alternative.",
+    "es": "¿No podrías haberle ofrecido una alternativa?",
+    "en": "Couldn't you have offered him an alternative? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5838,15 +5860,16 @@
       "l:haber",
       "l:ofrecer",
       "l:poder",
+      "p:me-hubieras-dicho",
       "p:no-deberias-haberlo-hecho",
-      "p:podriamos-deberiamos",
-      "p:podrias-haber"
+      "p:podrias-haber",
+      "p:tendrias-que"
     ],
     "targets": [
       "l:alternativa",
       "p:no-deberias-haberlo-hecho"
     ],
-    "kind": "statement",
+    "kind": "question",
     "unit": "u43",
     "theme": "podría haberlo hecho",
     "source": "gen"
@@ -5993,8 +6016,8 @@
   },
   {
     "id": "u43-0233",
-    "es": "Podríamos haberla esperado antes de la lluvia.",
-    "en": "We could have waited for her before the rain.",
+    "es": "Podríamos haberla esperado en la puerta.",
+    "en": "We could have waited for her at the door.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6003,11 +6026,10 @@
       "g:gender-articles",
       "g:object-pronoun-position",
       "g:verb-infinitive",
-      "l:antes",
       "l:esperar",
       "l:haber",
-      "l:lluvia",
       "l:poder",
+      "l:puerta",
       "p:no-deberias-haberlo-hecho",
       "p:podriamos-deberiamos",
       "p:podrias-haber"
@@ -6126,8 +6148,8 @@
   },
   {
     "id": "u43-0238",
-    "es": "Podríamos haberlo pensado mejor.",
-    "en": "We could have thought it through better.",
+    "es": "Tendrías que haberlo pensado mejor.",
+    "en": "You should have thought it through better. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6138,10 +6160,10 @@
       "l:haber",
       "l:mejor",
       "l:pensar",
-      "l:poder",
+      "l:tener",
+      "p:arrepentirse-de-haber",
       "p:no-deberias-haberlo-hecho",
-      "p:podriamos-deberiamos",
-      "p:podrias-haber"
+      "p:tendrias-que"
     ],
     "targets": [
       "p:no-deberias-haberlo-hecho"
@@ -6174,24 +6196,26 @@
   },
   {
     "id": "u43-0240",
-    "es": "Podríamos haberlo dicho de otra forma.",
-    "en": "We could have said it another way.",
+    "es": "No deberías haberlo dicho de esa forma.",
+    "en": "You shouldn't have said it like that. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
+      "g:demonstratives",
       "g:direct-objects",
       "g:object-pronoun-position",
       "g:present-ar",
-      "g:verb-infinitive",
+      "g:tener-que-hay-que",
+      "l:deber",
       "l:decir",
       "l:formar",
       "l:haber",
-      "l:poder",
+      "p:arrepentirse-de-haber",
+      "p:me-hubieras-dicho",
       "p:no-deberias-haberlo-hecho",
-      "p:otro-no-article",
-      "p:podriamos-deberiamos",
-      "p:podrias-haber"
+      "p:podrias-haber",
+      "p:tendrias-que"
     ],
     "targets": [
       "p:no-deberias-haberlo-hecho"
@@ -6430,14 +6454,15 @@
   },
   {
     "id": "u43-0250",
-    "es": "Habría sido una locura vender ahora.",
-    "en": "It would have been madness to sell now.",
+    "es": "Habría sido una locura vender ese año.",
+    "en": "It would have been madness to sell that year.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional-perfect",
+      "g:demonstratives",
       "g:gender-articles",
-      "l:ahora",
+      "l:año",
       "l:locura",
       "l:ser",
       "l:vender"
@@ -6580,7 +6605,7 @@
   {
     "id": "u43-0256",
     "es": "Habría sido mejor ir por la autopista.",
-    "en": "It would have been better to take the motorway.",
+    "en": "It would have been better to take the highway.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6704,9 +6729,7 @@
     "id": "u43-0261",
     "es": "¿Te habría gustado vivir en otra época?",
     "en": "Would you have liked to live in another era? (to a friend)",
-    "accept": [
-      "¿Te habría gustado vivir en otra época?"
-    ],
+    "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional-perfect",
@@ -6865,9 +6888,7 @@
     "id": "u43-0267",
     "es": "Me habría gustado ir contigo.",
     "en": "I would have liked to go with you. (to a friend)",
-    "accept": [
-      "Me habría gustado ir contigo."
-    ],
+    "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional-perfect",
@@ -6915,27 +6936,28 @@
   },
   {
     "id": "u43-0269",
-    "es": "A Vale le habría gustado que Tomás se quedara antes.",
-    "en": "Vale would have liked Tomás to stay sooner.",
-    "accept": [
-      "A Vale le habría gustado que Tomás se quedara antes."
-    ],
+    "es": "A Vale le habría gustado que Tomás le hubiera contado la verdad.",
+    "en": "Vale would have liked Tomás to have told her the truth.",
+    "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:la-verdad",
       "g:conditional-perfect",
       "g:gustar-basic",
       "g:gustar-full",
-      "g:imperfect-subj",
-      "g:reflexive-routine",
+      "g:indirect-objects",
+      "g:pluperfect-subj",
       "g:subj-past-triggers",
       "g:that-clauses",
-      "l:antes",
+      "l:contar",
       "l:gustar",
-      "l:quedarse",
+      "l:verdad",
+      "p:contar-dos-sentidos",
       "p:te-habria-gustado-que"
     ],
     "targets": [
       "g:conditional-perfect",
+      "g:pluperfect-subj",
       "p:te-habria-gustado-que"
     ],
     "kind": "statement",
@@ -7003,16 +7025,16 @@
   },
   {
     "id": "u43-0272",
-    "es": "Te habría gustado ver a Simón con el sombrero de Hernando.",
-    "en": "You would have liked to see Simón in Hernando's hat. (to a friend)",
+    "es": "Te habría gustado ver a Simón con la gorra de Hernando.",
+    "en": "You would have liked to see Simón in Hernando's cap. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional-perfect",
       "g:gender-articles",
       "g:gustar-basic",
+      "l:gorra",
       "l:gustar",
-      "l:sombrero",
       "l:ver",
       "p:personal-a",
       "p:te-habria-gustado-que"
@@ -7116,9 +7138,7 @@
     "id": "u43-0276",
     "es": "Nos habría gustado hablar con el capitán.",
     "en": "We would have liked to talk to the captain.",
-    "accept": [
-      "Nos habría gustado hablar con el capitán."
-    ],
+    "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional-perfect",
@@ -7321,16 +7341,18 @@
   },
   {
     "id": "u43-0285",
-    "es": "Hernando habría llorado, pero no lo dice.",
-    "en": "Hernando would have cried, but he won't say so.",
+    "es": "Con esa película, Hernando habría llorado toda la noche.",
+    "en": "Hernando would have cried all night at that film.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional-perfect",
-      "g:direct-objects",
-      "g:stem-e-i",
-      "l:decir",
-      "l:llorar"
+      "g:demonstratives",
+      "g:gender-articles",
+      "l:llorar",
+      "l:noche",
+      "l:película",
+      "p:todos-los-dias"
     ],
     "targets": [
       "g:conditional-perfect"
@@ -7449,7 +7471,7 @@
   {
     "id": "u43-0291",
     "es": "¿Habrían llegado a tiempo por la autopista?",
-    "en": "Would they have arrived on time by the motorway?",
+    "en": "Would they have arrived on time by the highway?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8159,24 +8181,25 @@
   },
   {
     "id": "u43-0319",
-    "es": "¡Qué lástima que se acabe el aceite!",
-    "en": "What a shame the oil is running out!",
+    "es": "¡Qué lástima que no quede aceite para los buñuelos!",
+    "en": "What a shame there's no oil left for the buñuelos!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:passive-se",
       "g:subj-value",
       "g:subj-wanting",
       "g:that-clauses",
-      "l:acabar",
       "l:aceite",
+      "l:buñuelo",
       "l:lástima",
+      "l:quedar",
       "l:qué",
       "p:caerse-lastimarse",
       "p:es-una-lastima-que",
       "p:exclamations-basic",
-      "p:me-da-pena-que"
+      "p:me-da-pena-que",
+      "p:para-inf"
     ],
     "targets": [
       "l:aceite",
@@ -8477,7 +8500,7 @@
   {
     "id": "u43-0330",
     "es": "Es una lástima que haya tanto tráfico en la autopista.",
-    "en": "It's a pity there is so much traffic on the motorway.",
+    "en": "It's a pity there is so much traffic on the highway.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9538,21 +9561,19 @@
   },
   {
     "id": "u43-0370",
-    "es": "Sentimos mucho que no hubieras sabido nada.",
-    "en": "We're so sorry you hadn't known anything. (to a friend)",
+    "es": "Sentimos mucho que nadie te hubiera dicho nada.",
+    "en": "We're so sorry nobody had told you anything. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:negation-words",
       "g:pluperfect-subj",
       "g:present-er-ir",
       "g:subj-past-triggers",
       "g:that-clauses",
-      "l:saber",
+      "l:decir",
       "l:sentir",
+      "p:me-te-nos-objects",
       "p:quantifiers-basic",
-      "p:saber-conocer",
-      "p:sentir-lo-de",
       "p:siento-mucho-que"
     ],
     "targets": [
@@ -9566,13 +9587,13 @@
   },
   {
     "id": "u43-0371",
-    "es": "Siento mucho que hubieran perdido a su perro.",
-    "en": "I'm so sorry they had lost their dog.",
+    "es": "Sentí mucho que hubieran perdido a su perro.",
+    "en": "I was so sorry they had lost their dog.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:pluperfect-subj",
-      "g:stem-boot",
+      "g:preterite-er-ir",
       "g:subj-past-triggers",
       "g:that-clauses",
       "l:perder",
@@ -9594,13 +9615,13 @@
   },
   {
     "id": "u43-0372",
-    "es": "Lamento que mi hermana no hubiera llegado a tiempo.",
-    "en": "I'm sorry my sister hadn't arrived on time.",
+    "es": "Lamenté que mi hermana no hubiera llegado a tiempo.",
+    "en": "I was sorry my sister hadn't arrived on time.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:pluperfect-subj",
-      "g:present-ar",
+      "g:preterite-ar",
       "g:subj-past-triggers",
       "g:that-clauses",
       "l:hermana",
@@ -9675,20 +9696,23 @@
   },
   {
     "id": "u43-0375",
-    "es": "Siento mucho que lo hubieran despedido.",
-    "en": "I'm so sorry they had fired him.",
+    "es": "Sentimos mucho que lo hubieran despedido después de veinte años.",
+    "en": "We were so sorry they had fired him after twenty years.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
       "g:pluperfect-subj",
-      "g:stem-boot",
+      "g:present-er-ir",
       "g:subj-past-triggers",
       "g:that-clauses",
+      "l:año",
       "l:despedir",
+      "l:después",
       "l:sentir",
       "p:quantifiers-basic",
-      "p:siento-mucho-que"
+      "p:siento-mucho-que",
+      "p:time-sequence-basic"
     ],
     "targets": [
       "g:pluperfect-subj",
@@ -9912,15 +9936,18 @@
   },
   {
     "id": "u43-0384",
-    "es": "Me decepcionó que Altamira fuera tan amable.",
-    "en": "It disappointed me that Altamira was so friendly.",
+    "es": "Me decepcionó que Altamira no respondiera nuestras preguntas.",
+    "en": "It disappointed me that Altamira didn't answer our questions.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:imperfect-subj",
+      "g:possessives",
       "g:preterite-ar",
       "g:that-clauses",
-      "l:amable",
       "l:decepcionar",
+      "l:pregunta",
+      "l:responder",
       "p:me-decepciono-que",
       "p:me-te-nos-objects"
     ],
@@ -10329,7 +10356,7 @@
   {
     "id": "u43-0399",
     "es": "Me decepcionó que fuera tan fácil derrotarlos.",
-    "en": "It was disappointing that it was so easy to beat them.",
+    "en": "It disappointed me that it was so easy to beat them.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10359,27 +10386,24 @@
   },
   {
     "id": "u43-0400",
-    "es": "Me dolió que el túnel siguiera cerrado.",
-    "en": "It hurt that the tunnel stayed closed.",
+    "es": "Me decepcionó que el túnel siguiera cerrado.",
+    "en": "It disappointed me that the tunnel was still closed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:gustar-full",
       "g:imperfect-subj",
-      "g:preterite-er-ir",
-      "g:subj-past-triggers",
+      "g:preterite-ar",
       "g:that-clauses",
       "l:cerrar",
-      "l:doler",
+      "l:decepcionar",
       "l:seguir",
       "l:túnel",
-      "p:doler",
       "p:me-decepciono-que",
-      "p:me-duele",
-      "p:me-duele-que"
+      "p:me-te-nos-objects"
     ],
     "targets": [
+      "l:decepcionar",
       "l:túnel",
       "p:me-decepciono-que"
     ],
@@ -10971,23 +10995,28 @@
   },
   {
     "id": "u43-0422",
-    "es": "Nos pareció bien que decidieran despacio.",
-    "en": "We thought it was good that they decided slowly.",
+    "es": "Nos pareció bien que se tomaran su tiempo para decidir.",
+    "en": "We thought it was good that they took their time to decide.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
       "g:imperfect-subj",
       "g:parecer-quedar",
+      "g:passive-se",
       "g:preterite-er-ir",
       "g:subj-past-triggers",
       "g:that-clauses",
       "l:bien",
       "l:decidir",
-      "l:despacio",
       "l:parecer",
+      "l:tiempo",
+      "l:tomar",
       "p:me-parece-bien-que",
-      "p:me-parecio-mal-que"
+      "p:me-parecio-mal-que",
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:possessives-basic"
     ],
     "targets": [
       "p:me-parecio-mal-que"
@@ -11140,18 +11169,22 @@
   },
   {
     "id": "u43-0428",
-    "es": "Me arrepiento de lo que dije.",
-    "en": "I regret what I said.",
+    "es": "Me arrepiento de lo que le dije a mi hermano.",
+    "en": "I regret what I said to my brother.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:indirect-objects",
+      "g:le-doubling",
       "g:preterite-irregular-strong",
       "g:reflexive-routine",
       "g:relatives-donde-lo-que",
       "g:stem-boot",
       "l:arrepentirse",
       "l:decir",
-      "p:arrepentirse-de"
+      "l:hermano",
+      "p:arrepentirse-de",
+      "p:possessives-basic"
     ],
     "targets": [
       "p:arrepentirse-de"
@@ -11324,17 +11357,20 @@
   },
   {
     "id": "u43-0436",
-    "es": "Ella se arrepiente de su carta.",
-    "en": "She regrets her letter.",
+    "es": "Ella se arrepiente de la carta que mandó.",
+    "en": "She regrets the letter she sent.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
       "g:reflexive-routine",
+      "g:relative-que",
       "g:stem-boot",
       "l:arrepentirse",
       "l:carta",
-      "p:arrepentirse-de",
-      "p:possessives-basic"
+      "l:mandar",
+      "p:arrepentirse-de"
     ],
     "targets": [
       "p:arrepentirse-de"
@@ -11452,16 +11488,19 @@
   },
   {
     "id": "u43-0442",
-    "es": "Se arrepentirán de esa firma.",
-    "en": "They will regret that signature.",
+    "es": "Algún día se arrepentirán de lo que firmaron.",
+    "en": "One day they'll regret what they signed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:demonstratives",
       "g:future-promises",
+      "g:indefinites",
+      "g:preterite-ar",
       "g:reflexive-routine",
+      "g:relatives-donde-lo-que",
       "l:arrepentirse",
-      "l:firma",
+      "l:día",
+      "l:firmar",
       "p:arrepentirse-de"
     ],
     "targets": [
@@ -11474,17 +11513,20 @@
   },
   {
     "id": "u43-0443",
-    "es": "Me arrepiento de aquel error.",
-    "en": "I regret that mistake.",
+    "es": "Todavía me arrepiento de aquel error con el horno.",
+    "en": "I still regret that mistake with the oven.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
+      "g:gender-articles",
       "g:reflexive-routine",
       "g:stem-boot",
       "l:arrepentirse",
       "l:error",
-      "p:arrepentirse-de"
+      "l:horno",
+      "p:arrepentirse-de",
+      "p:ya-todavia-basic"
     ],
     "targets": [
       "p:arrepentirse-de"
@@ -11543,19 +11585,23 @@
   },
   {
     "id": "u43-0446",
-    "es": "No me arrepiento de la verdad que dije.",
-    "en": "I don't regret the truth I told.",
+    "es": "No me arrepiento de nada de lo que le dije al juez.",
+    "en": "I don't regret anything I told the judge.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:la-verdad",
+      "c:gracias-de-nada",
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:negation-words",
       "g:preterite-irregular-strong",
       "g:reflexive-routine",
-      "g:relative-que",
+      "g:relatives-donde-lo-que",
       "g:stem-boot",
       "l:arrepentirse",
       "l:decir",
-      "l:verdad",
+      "l:juez",
       "p:arrepentirse-de"
     ],
     "targets": [
@@ -11770,17 +11816,19 @@
   },
   {
     "id": "u43-0456",
-    "es": "Con los años, Hernando se arrepintió de su orgullo.",
-    "en": "Over the years, Hernando regretted his pride.",
+    "es": "Con los años, Hernando se arrepintió de aquella discusión con su hermano.",
+    "en": "Over the years, Hernando regretted that argument with his brother.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:demonstratives",
       "g:gender-articles",
       "g:preterite-spelling-stem",
       "g:reflexive-routine",
       "l:arrepentirse",
       "l:año",
-      "l:orgullo",
+      "l:discusión",
+      "l:hermano",
       "p:arrepentirse-de",
       "p:possessives-basic"
     ],
@@ -11794,17 +11842,21 @@
   },
   {
     "id": "u43-0457",
-    "es": "No te arrepientas de tu valor.",
-    "en": "Don't regret your courage. (to a friend)",
+    "es": "No te arrepientas de lo que hiciste por ella.",
+    "en": "Don't regret what you did for her. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:que-hiciste",
       "g:negative-commands",
+      "g:por-para-1",
+      "g:prep-pronouns",
+      "g:preterite-ser-ir-hacer",
       "g:reflexive-routine",
+      "g:relatives-donde-lo-que",
       "l:arrepentirse",
-      "l:valor",
-      "p:arrepentirse-de",
-      "p:possessives-basic"
+      "l:hacer",
+      "p:arrepentirse-de"
     ],
     "targets": [
       "p:arrepentirse-de"
@@ -11839,17 +11891,22 @@
   },
   {
     "id": "u43-0459",
-    "es": "Nos arrepentimos de aquel precio.",
-    "en": "We regret that price.",
+    "es": "Nos arrepentimos de los precios tan bajos del primer mes.",
+    "en": "We regret the very low prices of the first month.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:demonstratives",
+      "g:adjective-agreement",
+      "g:gender-articles",
       "g:present-er-ir",
       "g:reflexive-routine",
       "l:arrepentirse",
+      "l:bajo",
+      "l:mes",
       "l:precio",
-      "p:arrepentirse-de"
+      "p:arrepentirse-de",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer"
     ],
     "targets": [
       "p:arrepentirse-de"
@@ -12282,21 +12339,18 @@
   },
   {
     "id": "u43-0478",
-    "es": "Vale se atrevió a servir su primer postre nuevo.",
-    "en": "Vale dared to serve her first new dessert.",
+    "es": "Vale se atrevió a cambiar la receta de Rosa.",
+    "en": "Vale dared to change Rosa's recipe.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:preterite-er-ir",
       "g:reflexive-routine",
       "l:atreverse",
-      "l:nuevo",
-      "l:postre",
-      "l:servir",
-      "p:decidirse-atreverse-a",
-      "p:ordinal-floor",
-      "p:ordinals-primer-tercer",
-      "p:possessives-basic"
+      "l:cambiar",
+      "l:receta",
+      "p:decidirse-atreverse-a"
     ],
     "targets": [
       "p:decidirse-atreverse-a"
@@ -12830,18 +12884,22 @@
   },
   {
     "id": "u43-0500",
-    "es": "Me decidí a probar el globo.",
-    "en": "I made up my mind to try the balloon.",
+    "es": "Por fin me decidí a subirme a un globo.",
+    "en": "I finally made up my mind to go up in a balloon.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:object-pronoun-position",
       "g:preterite-er-ir",
+      "g:reflexive-routine",
       "l:decidir",
+      "l:fin",
       "l:globo",
-      "l:probarse",
+      "l:subir",
       "p:decidirse-atreverse-a",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:subirse-bajarse"
     ],
     "targets": [
       "l:globo",
@@ -12927,21 +12985,24 @@
   },
   {
     "id": "u43-0504",
-    "es": "No toques ese pastel, ¿me oíste?",
-    "en": "Don't touch that cake, did you hear me? (to a friend)",
+    "es": "No te atrevas a tocar ese pastel.",
+    "en": "Don't you dare touch that cake. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
       "g:negative-commands",
-      "g:preterite-er-ir",
-      "l:oír",
+      "g:reflexive-routine",
+      "l:atreverse",
       "l:pastel",
       "l:tocar",
-      "p:me-te-nos-objects"
+      "p:decidirse-atreverse-a",
+      "p:no-tengas-miedo-de"
     ],
-    "targets": [],
-    "kind": "dialogue",
+    "targets": [
+      "p:decidirse-atreverse-a"
+    ],
+    "kind": "statement",
     "unit": "u43",
     "theme": "decidirse, atreverse",
     "source": "gen"
@@ -13558,19 +13619,21 @@
   },
   {
     "id": "u43-0530",
-    "es": "¡Tengo unas ganas de ver su cara!",
-    "en": "I'm dying to see his face!",
+    "es": "¡Qué ganas de verle la cara al juez!",
+    "en": "I can't wait to see the judge's face!",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tengo",
       "g:gender-articles",
-      "g:yo-irregular",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:object-pronoun-position",
       "l:cara",
       "l:ganas",
-      "l:tener",
+      "l:juez",
+      "l:qué",
       "l:ver",
-      "p:possessives-basic",
+      "p:exclamations-basic",
       "p:sonar-con-ganas",
       "p:tener-ganas-de"
     ],
@@ -13612,16 +13675,16 @@
   },
   {
     "id": "u43-0532",
-    "es": "Sueña con el día en que Joaquín vuelva.",
-    "en": "She dreams of the day Joaquín returns.",
+    "es": "Rosa soñaba con el día en que Joaquín volviera.",
+    "en": "Rosa dreamed of the day Joaquín would come back.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:imperfect-subj",
       "g:relatives-prepositions",
-      "g:stem-boot",
       "g:subj-relative",
-      "g:subj-wanting",
       "l:día",
       "l:soñar",
       "l:volver",
@@ -13863,24 +13926,21 @@
   },
   {
     "id": "u43-0542",
-    "es": "¡Tengo unas ganas de hablar con ella!",
-    "en": "I'm dying to talk to her!",
+    "es": "Tengo muchas ganas de hablar con ella.",
+    "en": "I really want to talk to her.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:con-el-ella",
       "c:tengo",
-      "g:gender-articles",
       "g:yo-irregular",
       "l:ganas",
       "l:hablar",
       "l:tener",
-      "p:sonar-con-ganas",
+      "p:quantifiers-basic",
       "p:tener-ganas-de"
     ],
-    "targets": [
-      "p:sonar-con-ganas"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u43",
     "theme": "soñar con, tener ganas",
@@ -13888,8 +13948,8 @@
   },
   {
     "id": "u43-0543",
-    "es": "Sueñas con volver a ver a tu familia.",
-    "en": "You dream of seeing your family again. (to a friend)",
+    "es": "¿Sueñas con volver a ver a tu familia?",
+    "en": "Do you dream of seeing your family again? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13908,7 +13968,7 @@
     "targets": [
       "p:sonar-con-ganas"
     ],
-    "kind": "statement",
+    "kind": "question",
     "unit": "u43",
     "theme": "soñar con, tener ganas",
     "source": "gen"
@@ -14840,8 +14900,8 @@
   },
   {
     "id": "u43-0579",
-    "es": "Joaquín tiene previsto escribirle a su hermana.",
-    "en": "Joaquín plans to write to his sister.",
+    "es": "Yesid tiene previsto escribirle a su tío.",
+    "en": "Yesid plans to write to his uncle.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14851,9 +14911,9 @@
       "g:object-pronoun-position",
       "g:stem-boot",
       "l:escribir",
-      "l:hermana",
       "l:prever",
       "l:tener",
+      "l:tío",
       "p:possessives-basic",
       "p:prever-prevenir",
       "p:tener-pensado-previsto"
@@ -16820,7 +16880,7 @@
   {
     "id": "u43-0656",
     "es": "Llevamos veinte minutos sin movernos en la autopista.",
-    "en": "We haven't moved for twenty minutes on the motorway.",
+    "en": "We haven't moved for twenty minutes on the highway.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17031,8 +17091,8 @@
   },
   {
     "id": "u43-0664",
-    "es": "Llevo cinco años sin cortarme el pelo así.",
-    "en": "I haven't had my hair cut like this in five years.",
+    "es": "Llevo cinco meses sin cortarme el pelo.",
+    "en": "I haven't had a haircut in five months.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17042,9 +17102,9 @@
       "g:prep-infinitive",
       "g:present-ar",
       "g:reflexive-routine",
-      "l:año",
       "l:cortar",
       "l:llevar",
+      "l:mes",
       "l:pelo",
       "p:lavarse-las-manos",
       "p:llevar-sin-inf",
@@ -17680,20 +17740,20 @@
   },
   {
     "id": "u43-0692",
-    "es": "Nunca confirmes a última hora.",
-    "en": "Never confirm at the last minute. (to a friend)",
+    "es": "Nunca dejes las reservas para última hora.",
+    "en": "Never leave bookings until the last minute. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:subj-wanting",
-      "l:confirmar",
+      "l:dejar",
       "l:hora",
-      "p:a-ultima-hora",
-      "p:frequency-scale"
+      "l:reserva",
+      "p:frequency-scale",
+      "p:para-inf"
     ],
-    "targets": [
-      "p:a-ultima-hora"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u43",
     "theme": "a última hora",
@@ -17771,7 +17831,7 @@
   {
     "id": "u43-0696",
     "es": "A primera hora hay menos tráfico en la autopista.",
-    "en": "First thing in the morning there is less traffic on the motorway.",
+    "en": "First thing in the morning there is less traffic on the highway.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18548,7 +18608,7 @@
   {
     "id": "u43-0728",
     "es": "¿A ti qué se te ocurre?",
-    "en": "What do you think of? (to a friend)",
+    "en": "What can you come up with? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18621,7 +18681,7 @@
   {
     "id": "u43-0731",
     "es": "¿Y si se nos ocurre otra opción?",
-    "en": "And if we think of another option?",
+    "en": "What if we think of another option?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19593,17 +19653,19 @@
   },
   {
     "id": "u43-0770",
-    "es": "Nos salió todo mal desde el principio.",
-    "en": "Everything went wrong for us from the start.",
+    "es": "Ese día nos salió todo al revés.",
+    "en": "That day everything went wrong for us.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:demonstratives",
       "g:gender-articles",
       "g:preterite-er-ir",
-      "l:mal",
-      "l:principio",
+      "l:día",
+      "l:revés",
       "l:salir",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:postura"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -19613,8 +19675,8 @@
   },
   {
     "id": "u43-0771",
-    "es": "Les salió mal la oferta.",
-    "en": "Their offer went badly.",
+    "es": "A Altamira le salió mal la oferta.",
+    "en": "Altamira's offer backfired.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20028,16 +20090,17 @@
   },
   {
     "id": "u43-0787",
-    "es": "El puente sobrevivió al terremoto.",
-    "en": "The bridge survived the earthquake.",
+    "es": "El puente resistió el terremoto.",
+    "en": "The bridge withstood the earthquake.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-er-ir",
       "l:puente",
-      "l:sobrevivir",
+      "l:resistir",
       "l:terremoto",
+      "p:resistente-a",
       "p:sobrevivir-a"
     ],
     "targets": [
@@ -20168,7 +20231,7 @@
   {
     "id": "u43-0793",
     "es": "Nadie sobrevivió al choque en la autopista.",
-    "en": "Nobody survived the crash on the motorway.",
+    "en": "Nobody survived the crash on the highway.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20235,18 +20298,22 @@
   },
   {
     "id": "u43-0796",
-    "es": "¿Sobrevivirá el café a la oferta de Altamira?",
+    "es": "¿El café va a sobrevivir a la oferta de Altamira?",
     "en": "Will the café survive Altamira's offer?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
       "g:gender-articles",
+      "g:ir-a-plans",
       "l:café",
+      "l:ir",
       "l:oferta",
-      "l:sobrevivir"
+      "l:sobrevivir",
+      "p:sobrevivir-a"
     ],
-    "targets": [],
+    "targets": [
+      "p:sobrevivir-a"
+    ],
     "kind": "question",
     "unit": "u43",
     "theme": "sobrevivir a",
@@ -20363,28 +20430,29 @@
   },
   {
     "id": "u43-0802",
-    "es": "Si el túnel se hubiera cerrado, nadie habría sobrevivido al accidente.",
-    "en": "If the tunnel had closed, nobody would have survived the accident.",
+    "es": "Si el carro no hubiera tenido cinturones, nadie habría sobrevivido al accidente.",
+    "en": "If the car hadn't had seatbelts, nobody would have survived the accident.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional-perfect",
       "g:gender-articles",
+      "g:negation-words",
       "g:pluperfect-subj",
-      "g:se-impersonal",
       "g:si-hypothetical",
       "g:si-past-unreal",
       "l:accidente",
-      "l:cerrar",
+      "l:carro",
+      "l:cinturón",
       "l:sobrevivir",
-      "l:túnel",
+      "l:tener",
       "p:sobrevivir-a"
     ],
     "targets": [
       "g:conditional-perfect",
       "g:pluperfect-subj",
       "g:si-past-unreal",
-      "l:túnel",
+      "l:cinturón",
       "p:sobrevivir-a"
     ],
     "kind": "statement",
@@ -20446,7 +20514,7 @@
   {
     "id": "u43-0805",
     "es": "Mariana sobrevivió a muchas amenazas por su trabajo.",
-    "en": "Mariana has survived many threats because of her work.",
+    "en": "Mariana survived many threats because of her work.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20706,8 +20774,8 @@
   },
   {
     "id": "u43-0816",
-    "es": "Hernando dice que sobrevivió a las bodas con un chiste.",
-    "en": "Hernando says he survived the weddings with a joke.",
+    "es": "Hernando dice que sobrevivió a cuarenta años de taxi gracias al tinto.",
+    "en": "Hernando says he survived forty years of driving a taxi thanks to black coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20715,10 +20783,11 @@
       "g:preterite-er-ir",
       "g:stem-e-i",
       "g:that-clauses",
-      "l:boda",
-      "l:chiste",
+      "l:año",
       "l:decir",
       "l:sobrevivir",
+      "l:taxi",
+      "l:tinto",
       "p:sobrevivir-a"
     ],
     "targets": [
@@ -21019,17 +21088,19 @@
   },
   {
     "id": "u43-0829",
-    "es": "Soy incapaz de dormir con ese ruido.",
-    "en": "I can't possibly sleep with that noise.",
+    "es": "No soy capaz de dormir con ese ruido.",
+    "en": "I can't sleep with that noise.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
       "g:ser-identity",
+      "l:capaz",
       "l:dormir",
-      "l:incapaz",
       "l:ruido",
       "l:ser",
+      "p:capaz-dispuesto-a",
+      "p:darsele-bien-mal",
       "p:ser-capaz-de"
     ],
     "targets": [
@@ -21042,16 +21113,18 @@
   },
   {
     "id": "u43-0830",
-    "es": "¿Eres incapaz de pedir perdón?",
-    "en": "Are you incapable of apologising? (to a friend)",
+    "es": "¿No eres capaz de pedir perdón?",
+    "en": "Can't you bring yourself to apologize? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:ser-identity",
-      "l:incapaz",
+      "l:capaz",
       "l:pedir",
       "l:perdón",
       "l:ser",
+      "p:capaz-dispuesto-a",
+      "p:darsele-bien-mal",
       "p:pedir-disculpas-por",
       "p:ser-capaz-de"
     ],
@@ -21089,8 +21162,8 @@
   },
   {
     "id": "u43-0832",
-    "es": "Fui incapaz de abrir la carta.",
-    "en": "I was unable to open the letter.",
+    "es": "No fui capaz de abrir la carta.",
+    "en": "I couldn't bring myself to open the letter.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21099,9 +21172,11 @@
       "g:preterite-ser-ir-hacer",
       "g:ser-identity",
       "l:abrir",
+      "l:capaz",
       "l:carta",
-      "l:incapaz",
       "l:ser",
+      "p:capaz-dispuesto-a",
+      "p:darsele-bien-mal",
       "p:ser-capaz-de"
     ],
     "targets": [
@@ -21140,18 +21215,22 @@
   },
   {
     "id": "u43-0834",
-    "es": "Somos incapaces de vender el café.",
-    "en": "We are incapable of selling the café.",
+    "es": "Nunca seríamos capaces de vender el café.",
+    "en": "We could never bring ourselves to sell the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
+      "g:conditional",
       "g:gender-articles",
       "g:ser-identity",
       "l:café",
-      "l:incapaz",
+      "l:capaz",
       "l:ser",
       "l:vender",
+      "p:capaz-dispuesto-a",
+      "p:darsele-bien-mal",
+      "p:frequency-scale",
       "p:ser-capaz-de"
     ],
     "targets": [
@@ -21288,17 +21367,19 @@
   },
   {
     "id": "u43-0840",
-    "es": "Soy incapaz de tirar esas cartas.",
-    "en": "I can't bring myself to throw out those letters.",
+    "es": "No soy capaz de quemar esas cartas.",
+    "en": "I can't bring myself to burn those letters.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
       "g:ser-identity",
+      "l:capaz",
       "l:carta",
-      "l:incapaz",
+      "l:quemar",
       "l:ser",
-      "l:tirar",
+      "p:capaz-dispuesto-a",
+      "p:darsele-bien-mal",
       "p:ser-capaz-de"
     ],
     "targets": [
@@ -21338,27 +21419,28 @@
   },
   {
     "id": "u43-0842",
-    "es": "Fui incapaz de decirle la verdad.",
-    "en": "I couldn't bring myself to tell him the truth.",
+    "es": "¿Fuiste capaz de decirle la verdad?",
+    "en": "Did you manage to tell him the truth? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:fui",
       "c:la-verdad",
       "g:indirect-objects",
       "g:object-pronoun-position",
       "g:preterite-ser-ir-hacer",
       "g:ser-identity",
+      "l:capaz",
       "l:decir",
-      "l:incapaz",
       "l:ser",
       "l:verdad",
+      "p:capaz-dispuesto-a",
+      "p:darsele-bien-mal",
       "p:ser-capaz-de"
     ],
     "targets": [
       "p:ser-capaz-de"
     ],
-    "kind": "statement",
+    "kind": "question",
     "unit": "u43",
     "theme": "incapaz de",
     "source": "gen"
@@ -21390,16 +21472,19 @@
   },
   {
     "id": "u43-0844",
-    "es": "Nadie es incapaz de aprender algo nuevo.",
-    "en": "Nobody is incapable of learning something new.",
+    "es": "Cualquiera es capaz de aprender algo nuevo.",
+    "en": "Anyone is capable of learning something new.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:cada-cualquier",
       "g:ser-identity",
       "l:aprender",
-      "l:incapaz",
+      "l:capaz",
       "l:nuevo",
       "l:ser",
+      "p:capaz-dispuesto-a",
+      "p:darsele-bien-mal",
       "p:indefinites-basic",
       "p:ser-capaz-de"
     ],
@@ -21465,18 +21550,20 @@
   },
   {
     "id": "u43-0847",
-    "es": "Joaquín era incapaz de volver a casa.",
-    "en": "Joaquín was unable to return home.",
+    "es": "Joaquín nunca fue capaz de volver a casa.",
+    "en": "Joaquín never managed to come back home.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:era",
-      "g:imperfect-states",
+      "g:preterite-ser-ir-hacer",
       "g:ser-identity",
+      "l:capaz",
       "l:casa",
-      "l:incapaz",
       "l:ser",
       "l:volver",
+      "p:capaz-dispuesto-a",
+      "p:darsele-bien-mal",
+      "p:frequency-scale",
       "p:ser-capaz-de"
     ],
     "targets": [
@@ -21515,18 +21602,22 @@
   },
   {
     "id": "u43-0849",
-    "es": "Seré incapaz de olvidarlo.",
-    "en": "I will be unable to forget it.",
+    "es": "No voy a ser capaz de olvidarlo.",
+    "en": "I won't be able to forget it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:voy-a",
       "g:direct-objects",
-      "g:future-promises",
+      "g:ir-a-plans",
       "g:object-pronoun-position",
       "g:ser-identity",
-      "l:incapaz",
+      "l:capaz",
+      "l:ir",
       "l:olvidar",
       "l:ser",
+      "p:capaz-dispuesto-a",
+      "p:darsele-bien-mal",
       "p:ser-capaz-de"
     ],
     "targets": [
@@ -21539,17 +21630,20 @@
   },
   {
     "id": "u43-0850",
-    "es": "¿Eres incapaz de guardar un secreto?",
-    "en": "Are you incapable of keeping a secret? (to a friend)",
+    "es": "¿Serías capaz de guardar un secreto?",
+    "en": "Would you be able to keep a secret? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:conditional",
       "g:gender-articles",
       "g:ser-identity",
+      "l:capaz",
       "l:guardar",
-      "l:incapaz",
       "l:secreto",
       "l:ser",
+      "p:capaz-dispuesto-a",
+      "p:darsele-bien-mal",
       "p:ser-capaz-de"
     ],
     "targets": [
@@ -21562,21 +21656,23 @@
   },
   {
     "id": "u43-0851",
-    "es": "El capitán era incapaz de cambiar de ruta.",
-    "en": "The captain was unable to change route.",
+    "es": "El capitán no fue capaz de cambiar de ruta a tiempo.",
+    "en": "The captain wasn't able to change course in time.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:era",
       "g:gender-articles",
-      "g:imperfect-states",
+      "g:preterite-ser-ir-hacer",
       "g:ser-identity",
       "l:cambiar",
+      "l:capaz",
       "l:capitán",
-      "l:incapaz",
       "l:ruta",
       "l:ser",
+      "l:tiempo",
       "p:cambiar-de-por",
+      "p:capaz-dispuesto-a",
+      "p:darsele-bien-mal",
       "p:ser-capaz-de"
     ],
     "targets": [
@@ -21666,7 +21762,7 @@
   },
   {
     "id": "u43-0855",
-    "es": "Cuando ve llorar a un niño, es incapaz de seguir.",
+    "es": "Cuando ve llorar a un niño, no es capaz de seguir.",
     "en": "When he sees a child cry, he can't go on.",
     "accept": [],
     "acceptEn": [],
@@ -21674,13 +21770,15 @@
       "g:gender-articles",
       "g:present-er-ir",
       "g:ser-identity",
-      "l:incapaz",
+      "l:capaz",
       "l:llorar",
       "l:niño",
       "l:seguir",
       "l:ser",
       "l:ver",
+      "p:capaz-dispuesto-a",
       "p:cuando-basic",
+      "p:darsele-bien-mal",
       "p:ser-capaz-de"
     ],
     "targets": [
@@ -21740,18 +21838,20 @@
   },
   {
     "id": "u43-0858",
-    "es": "Fui incapaz de ignorar su llamada.",
-    "en": "I was unable to ignore her call.",
+    "es": "No fui capaz de ignorar su llamada.",
+    "en": "I couldn't bring myself to ignore her call.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:fui",
       "g:preterite-ser-ir-hacer",
       "g:ser-identity",
+      "l:capaz",
       "l:ignorar",
-      "l:incapaz",
       "l:llamada",
       "l:ser",
+      "p:capaz-dispuesto-a",
+      "p:darsele-bien-mal",
       "p:possessives-basic",
       "p:ser-capaz-de"
     ],
@@ -21835,43 +21935,48 @@
   },
   {
     "id": "u43-0862",
-    "es": "La verdad es que somos incapaces de esperar.",
-    "en": "The truth is that we are incapable of waiting.",
+    "es": "¿Ustedes serían capaces de esperar un año más?",
+    "en": "Would you all be able to wait another year? (you all)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:es-que",
-      "c:la-verdad",
       "g:adjective-agreement",
+      "g:conditional",
+      "g:gender-articles",
       "g:ser-identity",
+      "l:año",
+      "l:capaz",
       "l:esperar",
-      "l:incapaz",
       "l:ser",
-      "l:verdad",
+      "p:capaz-dispuesto-a",
+      "p:darsele-bien-mal",
       "p:ser-capaz-de"
     ],
     "targets": [
       "p:ser-capaz-de"
     ],
-    "kind": "statement",
+    "kind": "question",
     "unit": "u43",
     "theme": "incapaz de",
     "source": "gen"
   },
   {
     "id": "u43-0863",
-    "es": "Eras incapaz de ver el problema.",
-    "en": "You were unable to see the problem. (to a friend)",
+    "es": "Fuiste capaz de ver el problema antes que todos.",
+    "en": "You managed to see the problem before everyone else. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:imperfect-states",
+      "g:preterite-ser-ir-hacer",
       "g:ser-identity",
-      "l:incapaz",
+      "l:antes",
+      "l:capaz",
       "l:problema",
       "l:ser",
       "l:ver",
+      "p:capaz-dispuesto-a",
+      "p:darsele-bien-mal",
       "p:ser-capaz-de"
     ],
     "targets": [
@@ -21936,8 +22041,8 @@
   },
   {
     "id": "u43-0866",
-    "es": "Con los años, Vale llegó, por fin, a ser socia del café.",
-    "en": "Over the years, Vale finally came to be a partner in the café.",
+    "es": "Con los años, Vale llegó a ser socia del café.",
+    "en": "Over the years, Vale came to be a partner in the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21946,10 +22051,11 @@
       "g:ser-identity",
       "l:año",
       "l:café",
-      "l:fin",
       "l:llegar",
       "l:ser",
-      "l:socio"
+      "l:socio",
+      "p:llegar-a-inf",
+      "p:llegar-a-ser"
     ],
     "targets": [],
     "kind": "statement",
@@ -21959,20 +22065,20 @@
   },
   {
     "id": "u43-0867",
-    "es": "Hernando, con los años, llegó casi a ser el mejor taxista de Bogotá.",
-    "en": "Hernando, over the years, almost came to be the best taxi driver in Bogotá.",
+    "es": "Hernando llegó a ser el taxista favorito de media Bogotá.",
+    "en": "Hernando became the favorite taxi driver of half of Bogotá.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
       "g:ser-identity",
-      "g:superlatives",
-      "l:año",
+      "l:favorito",
       "l:llegar",
-      "l:mejor",
       "l:ser",
-      "l:taxista"
+      "l:taxista",
+      "p:llegar-a-inf",
+      "p:llegar-a-ser"
     ],
     "targets": [],
     "kind": "statement",
@@ -21982,8 +22088,8 @@
   },
   {
     "id": "u43-0868",
-    "es": "Rosa llegó, con mucho esfuerzo, a ser una mujer respetada en el barrio.",
-    "en": "Rosa, with a lot of effort, became a respected woman in the neighbourhood.",
+    "es": "Con mucho esfuerzo, Rosa llegó a ser una mujer muy respetada en el barrio.",
+    "en": "With a lot of effort, Rosa became a highly respected woman in the neighborhood.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21996,6 +22102,8 @@
       "l:mujer",
       "l:respetar",
       "l:ser",
+      "p:llegar-a-inf",
+      "p:llegar-a-ser",
       "p:quantifiers-basic"
     ],
     "targets": [],
@@ -22048,12 +22156,11 @@
   },
   {
     "id": "u43-0871",
-    "es": "Probé tu pan de bono.\nNo está nada mal, ¿cierto?",
-    "en": "I tried your cheese bread.\nNot bad at all, is it?",
+    "es": "¿Probaste mi pan de bono?\nSí. No está nada mal.",
+    "en": "Did you try my cheese bread?\nYes. It's not bad at all.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:no-cierto",
       "c:no-esta-nada-mal",
       "g:preterite-ar",
       "l:bono",
@@ -23202,8 +23309,8 @@
   },
   {
     "id": "u43-0917",
-    "es": "¿Va a venir Joaquín?\nEso espero.",
-    "en": "Is Joaquín coming?\nI hope so.",
+    "es": "¿Va a venir Duarte?\nEso espero.",
+    "en": "Is Duarte coming?\nI hope so.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24593,7 +24700,7 @@
   {
     "id": "u43-0978",
     "es": "Mariana estará viendo la nota a estas horas.",
-    "en": "Mariana must be reading the message by now.",
+    "en": "Mariana must be reading the article by now.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24765,20 +24872,17 @@
   },
   {
     "id": "u43-0986",
-    "es": "Con mucha disposición, ayudaré en lo que necesiten.\nGracias.",
-    "en": "I'll gladly help with whatever you need.\nThanks.",
+    "es": "Aquí estoy, con toda la disposición.\n¡Mil gracias!",
+    "en": "I'm here, ready to help with anything.\nThanks so much!",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:gracias-de-nada",
-      "g:future-promises",
-      "g:relatives-donde-lo-que",
-      "g:subj-relative",
-      "g:subj-wanting",
-      "l:ayudar",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:aquí",
       "l:disposición",
-      "l:necesitar",
-      "p:quantifiers-basic"
+      "l:estar",
+      "p:aqui-ahi-alla"
     ],
     "targets": [
       "l:disposición"
@@ -24866,7 +24970,7 @@
   {
     "id": "u43-0990",
     "es": "Cuando cierran la autopista, la circulación en el centro se vuelve imposible.",
-    "en": "When they close the motorway, traffic in the centre becomes impossible.",
+    "en": "When they close the highway, traffic in the centre becomes impossible.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24920,18 +25024,17 @@
   },
   {
     "id": "u43-0992",
-    "es": "Habría sido mejor ir en bus por la circulación.",
-    "en": "It would have been better to go by bus because of the traffic.",
+    "es": "Con esa circulación, habría sido mejor ir a pie.",
+    "en": "With that traffic, it would have been better to walk.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional-perfect",
-      "g:gender-articles",
-      "g:por-para-1",
-      "l:bus",
+      "g:demonstratives",
       "l:circulación",
       "l:ir",
       "l:mejor",
+      "l:pie",
       "l:ser",
       "p:habria-sido-mejor",
       "p:transport-en"
@@ -24948,16 +25051,18 @@
   },
   {
     "id": "u43-0993",
-    "es": "Hay mucha circulación en la Séptima a esta hora.",
-    "en": "There is a lot of traffic on the Séptima at this hour.",
+    "es": "A esta hora la circulación en la Séptima es muy lenta.",
+    "en": "At this hour, traffic on the Séptima is very slow.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
+      "g:adjective-agreement",
       "g:gender-articles",
-      "g:hay-vs-esta",
+      "g:ser-identity",
       "l:circulación",
       "l:hora",
+      "l:lento",
+      "l:ser",
       "p:demonstratives-basic",
       "p:quantifiers-basic"
     ],
@@ -25417,19 +25522,25 @@
   },
   {
     "id": "u43-1013",
-    "es": "Vas a agarrar la bandeja con las dos manos.",
-    "en": "You're going to hold the tray with both hands. (to a friend)",
+    "es": "Tienes que agarrar bien la bandeja, que pesa mucho.",
+    "en": "You have to hold the tray tight, it's very heavy. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:voy-vas",
+      "c:bien-y-tu",
+      "c:tienes",
       "g:gender-articles",
-      "g:ir-a-plans",
+      "g:present-ar",
+      "g:relative-que",
+      "g:stem-boot",
       "l:agarrar",
       "l:bandeja",
-      "l:ir",
-      "l:mano",
-      "p:ir-a-venir-de-place"
+      "l:bien",
+      "l:pesar",
+      "l:tener",
+      "p:medir-pesar",
+      "p:pesar-pesarse",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:agarrar"
@@ -25731,17 +25842,16 @@
   },
   {
     "id": "u43-1025",
-    "es": "Los bienes de Joaquín están en otro país.",
-    "en": "Joaquín's property is in another country.",
+    "es": "Los bienes de Joaquín se quedaron en Taganga.",
+    "en": "Joaquín's property stayed in Taganga.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
       "g:gender-articles",
+      "g:preterite-ar",
+      "g:reflexive-routine",
       "l:bienes",
-      "l:estar",
-      "l:país",
-      "p:otro-no-article"
+      "l:quedarse"
     ],
     "targets": [
       "l:bienes"
@@ -25951,18 +26061,18 @@
   },
   {
     "id": "u43-1034",
-    "es": "Estas calles pueden conformar el corazón de La Candelaria.",
-    "en": "These streets can make up the heart of La Candelaria.",
+    "es": "Los vecinos del edificio decidieron conformar un comité.",
+    "en": "The neighbors in the building decided to form a committee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:demonstratives",
       "g:gender-articles",
-      "g:stem-boot",
-      "l:calle",
+      "g:preterite-er-ir",
+      "l:comité",
       "l:conformar",
-      "l:corazón",
-      "l:poder"
+      "l:decidir",
+      "l:edificio",
+      "l:vecino"
     ],
     "targets": [
       "l:conformar"
@@ -26279,17 +26389,16 @@
   },
   {
     "id": "u43-1047",
-    "es": "Hubo una pausa profunda en la sala.",
-    "en": "There was a deep pause in the room.",
+    "es": "Hubo un silencio profundo en la sala.",
+    "en": "There was a deep silence in the room.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:gender-articles",
       "g:imperfect-states",
-      "l:pausa",
       "l:profundo",
       "l:sala",
+      "l:silencio",
       "p:event-ser-en"
     ],
     "targets": [
@@ -26348,17 +26457,23 @@
   },
   {
     "id": "u43-1050",
-    "es": "Lo tengo en la punta de la lengua.",
-    "en": "I have it on the tip of my tongue.",
+    "es": "Tengo su nombre en la punta de la lengua, pero no me sale.",
+    "en": "I've got his name on the tip of my tongue, but it won't come.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:punta-de-la-lengua",
       "c:tengo",
+      "g:gender-articles",
+      "g:present-er-ir",
       "g:yo-irregular",
       "l:lengua",
+      "l:nombre",
       "l:punta",
-      "l:tener"
+      "l:salir",
+      "l:tener",
+      "p:me-te-nos-objects",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:punta"
@@ -26370,17 +26485,18 @@
   },
   {
     "id": "u43-1051",
-    "es": "En la punta de la calle hay una panadería.",
-    "en": "At the end of the street there is a bakery.",
+    "es": "Vale le sacó punta al lápiz.",
+    "en": "Vale sharpened the pencil.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hay",
       "g:gender-articles",
-      "g:hay-vs-esta",
-      "l:calle",
-      "l:panadería",
-      "l:punta"
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:preterite-ar",
+      "l:lápiz",
+      "l:punta",
+      "l:sacar"
     ],
     "targets": [
       "l:punta"
@@ -26832,7 +26948,7 @@
   {
     "id": "u43-1070",
     "es": "Me pareció feo que no te invitaran.",
-    "en": "I thought it was ugly that they didn't invite you. (to a friend)",
+    "en": "I thought it wasn't nice that they didn't invite you. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27156,26 +27272,26 @@
   },
   {
     "id": "u43-1083",
-    "es": "Ojalá no hubiera guardado mi tiempo solo para mí.",
-    "en": "I wish I hadn't kept my time just for myself.",
+    "es": "Fui muy egoísta con mi tiempo, y ahora me arrepiento.",
+    "en": "I was very selfish with my time, and now I regret it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:ojala",
-      "g:pluperfect-subj",
-      "g:prep-pronouns",
-      "g:subj-wanting",
-      "g:subj-wishes",
-      "l:guardar",
-      "l:parir",
+      "c:fui",
+      "g:preterite-ser-ir-hacer",
+      "g:reflexive-routine",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:ahora",
+      "l:arrepentirse",
+      "l:egoísta",
+      "l:ser",
       "l:tiempo",
-      "p:ojala-hubiera",
       "p:possessives-basic",
-      "p:sobre-todo-solo"
+      "p:quantifiers-basic"
     ],
     "targets": [
-      "g:pluperfect-subj",
-      "p:ojala-hubiera"
+      "l:egoísta"
     ],
     "kind": "statement",
     "unit": "u43",
@@ -27184,15 +27300,22 @@
   },
   {
     "id": "u43-1084",
-    "es": "Altamira es egoísta, pero no malo.",
-    "en": "Altamira is selfish, but not bad.",
+    "es": "Duarte no es mala persona; solo fue egoísta un tiempo.",
+    "en": "Duarte isn't a bad person; he was just selfish for a while.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
+      "g:preterite-ser-ir-hacer",
       "g:ser-identity",
       "l:egoísta",
-      "l:malo",
-      "l:ser"
+      "l:mala",
+      "l:persona",
+      "l:ser",
+      "l:tiempo",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:sobre-todo-solo"
     ],
     "targets": [
       "l:egoísta"
@@ -27346,8 +27469,8 @@
   },
   {
     "id": "u43-1091",
-    "es": "El aceite del horno estaba muy caliente.",
-    "en": "The oil in the oven was very hot.",
+    "es": "El aceite para los buñuelos estaba muy caliente.",
+    "en": "The oil for the buñuelos was very hot.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27355,9 +27478,10 @@
       "g:gender-articles",
       "g:imperfect-states",
       "l:aceite",
+      "l:buñuelo",
       "l:caliente",
       "l:estar",
-      "l:horno",
+      "p:para-inf",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -27545,19 +27669,24 @@
   },
   {
     "id": "u43-1099",
-    "es": "Hernando siempre le pedía a todos el cinturón en el taxi.",
-    "en": "Hernando always asked everyone for their seatbelt in the taxi.",
+    "es": "Hernando siempre les pedía a todos que se pusieran el cinturón.",
+    "en": "Hernando always asked everyone to put on their seatbelt.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-habitual",
+      "g:imperfect-subj",
       "g:indirect-objects",
+      "g:relative-que",
+      "g:subj-relative",
+      "g:verbs-of-change",
       "l:cinturón",
       "l:pedir",
+      "l:ponerse",
       "l:siempre",
-      "l:taxi",
       "p:frequency-scale",
+      "p:lavarse-las-manos",
       "p:preguntar-pedir"
     ],
     "targets": [
@@ -27661,17 +27790,17 @@
   },
   {
     "id": "u43-1104",
-    "es": "No quiero ignorar tus ideas, perdona.",
-    "en": "I don't want to ignore your ideas, sorry.",
+    "es": "Perdón, no quiero ignorar tus ideas.",
+    "en": "Sorry, I don't want to ignore your ideas. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:perdon-disculpe",
       "c:quiero",
-      "g:present-ar",
       "g:stem-boot",
       "l:idea",
       "l:ignorar",
-      "l:perdonar",
+      "l:perdón",
       "l:querer",
       "p:possessives-basic"
     ],
@@ -27735,22 +27864,21 @@
   },
   {
     "id": "u43-1107",
-    "es": "Ojalá no hubiera querido ignorar sus llamadas.",
-    "en": "I wish I hadn't wanted to ignore her calls.",
+    "es": "Ojalá le hubiera contestado sus llamadas.",
+    "en": "I wish I had answered her calls.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ojala",
+      "g:indirect-objects",
       "g:pluperfect-subj",
-      "l:ignorar",
+      "l:contestar",
       "l:llamada",
-      "l:querer",
       "p:ojala-hubiera",
       "p:possessives-basic"
     ],
     "targets": [
       "g:pluperfect-subj",
-      "l:ignorar",
       "p:ojala-hubiera"
     ],
     "kind": "statement",
@@ -28340,23 +28468,22 @@
   },
   {
     "id": "u43-1133",
-    "es": "Mi abuelo era un hombre quieto, de pocas palabras.",
-    "en": "My grandfather was a quiet man of few words.",
+    "es": "Con el agua quieta, el lago parecía un espejo.",
+    "en": "With the water still, the lake looked like a mirror.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:era",
+      "g:adjective-agreement",
       "g:gender-articles",
-      "g:imperfect-states",
-      "g:ser-identity",
-      "l:abuelo",
-      "l:hombre",
-      "l:palabra",
+      "g:imperfect-habitual",
+      "l:agua",
+      "l:espejo",
+      "l:lago",
+      "l:parecer",
       "l:quieto",
-      "l:ser",
-      "p:poco-un-poco",
-      "p:possessives-basic",
-      "p:quantifiers-basic"
+      "p:describe-with-images",
+      "p:el-agua-fria",
+      "p:parecer-vs-parecerse"
     ],
     "targets": [
       "l:quieto"
@@ -28471,12 +28598,11 @@
   },
   {
     "id": "u43-1138",
-    "es": "Habría sido mejor ir en taxi, ¿no?",
-    "en": "It would have been better to go by taxi, wouldn't it?",
+    "es": "¿No habría sido mejor ir en taxi?",
+    "en": "Wouldn't it have been better to go by taxi?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:no-cierto",
       "g:conditional-perfect",
       "l:ir",
       "l:mejor",
@@ -28489,7 +28615,7 @@
       "g:conditional-perfect",
       "p:habria-sido-mejor"
     ],
-    "kind": "dialogue",
+    "kind": "question",
     "unit": "u43",
     "theme": "habría sido mejor, me habría gustado",
     "source": "gen"
@@ -28524,18 +28650,21 @@
   },
   {
     "id": "u43-1140",
-    "es": "Habría sido mejor firmar antes de la tormenta.",
-    "en": "It would have been better to sign before the storm.",
+    "es": "Por la tormenta, habría sido mejor firmar otro día.",
+    "en": "Because of the storm, it would have been better to sign another day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:sera-otro-dia",
       "g:conditional-perfect",
       "g:gender-articles",
-      "l:antes",
+      "g:por-para-1",
+      "l:día",
       "l:firmar",
       "l:mejor",
       "l:ser",
       "l:tormenta",
+      "p:brindo-por",
       "p:habria-sido-mejor"
     ],
     "targets": [
@@ -28578,21 +28707,20 @@
   },
   {
     "id": "u43-1142",
-    "es": "Habría sido mejor esperar al lunes para decidir.",
-    "en": "It would have been better to wait until Monday to decide.",
+    "es": "Para algo así, habría sido mejor esperar al lunes.",
+    "en": "For something like that, it would have been better to wait until Monday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional-perfect",
       "g:gender-articles",
-      "l:decidir",
       "l:esperar",
       "l:lunes",
       "l:mejor",
       "l:ser",
       "p:habria-sido-mejor",
+      "p:indefinites-basic",
       "p:para-inf",
-      "p:para-inf-purpose",
       "p:personal-a"
     ],
     "targets": [
@@ -28662,19 +28790,21 @@
   },
   {
     "id": "u43-1145",
-    "es": "Habría sido mejor hablar con el abogado primero.",
-    "en": "It would have been better to talk to the lawyer first.",
+    "es": "Antes de firmar, habría sido mejor hablar con el abogado.",
+    "en": "Before signing, it would have been better to talk to the lawyer.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional-perfect",
       "g:gender-articles",
+      "g:prep-infinitive",
       "l:abogado",
+      "l:antes",
+      "l:firmar",
       "l:hablar",
       "l:mejor",
       "l:ser",
-      "p:habria-sido-mejor",
-      "p:time-sequence-basic"
+      "p:habria-sido-mejor"
     ],
     "targets": [
       "g:conditional-perfect",
@@ -28743,18 +28873,20 @@
   },
   {
     "id": "u43-1148",
-    "es": "Habría sido mejor aceptar la oferta de Toronto.",
-    "en": "It would have been better to accept the Toronto offer.",
+    "es": "Para la mamá de Tomás, habría sido mejor aceptar la oferta de Toronto.",
+    "en": "In the view of Tomás's mom, it would have been better to accept the Toronto offer.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional-perfect",
       "g:gender-articles",
       "l:aceptar",
+      "l:mamá",
       "l:mejor",
       "l:oferta",
       "l:ser",
-      "p:habria-sido-mejor"
+      "p:habria-sido-mejor",
+      "p:para-inf"
     ],
     "targets": [
       "g:conditional-perfect",
@@ -28797,18 +28929,20 @@
   },
   {
     "id": "u43-1150",
-    "es": "Habría sido mejor traer más aceite.",
-    "en": "It would have been better to bring more oil.",
+    "es": "Para tantos buñuelos, habría sido mejor traer más aceite.",
+    "en": "For so many buñuelos, it would have been better to bring more oil.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional-perfect",
       "l:aceite",
+      "l:buñuelo",
       "l:mejor",
       "l:ser",
       "l:traer",
       "p:habria-sido-mejor",
-      "p:llevar-traer"
+      "p:llevar-traer",
+      "p:para-inf"
     ],
     "targets": [
       "g:conditional-perfect",
@@ -28908,8 +29042,8 @@
   },
   {
     "id": "u43-1154",
-    "es": "Habría sido mejor pagar menos y esperar más.",
-    "en": "It would have been better to pay less and wait more.",
+    "es": "¿No habría sido mejor pagar menos y esperar más?",
+    "en": "Wouldn't it have been better to pay less and wait longer?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -28924,7 +29058,7 @@
       "g:conditional-perfect",
       "p:habria-sido-mejor"
     ],
-    "kind": "statement",
+    "kind": "question",
     "unit": "u43",
     "theme": "habría sido mejor, me habría gustado",
     "source": "gen"
@@ -28958,14 +29092,15 @@
   },
   {
     "id": "u43-1156",
-    "es": "Habría sido mejor un tinto sin azúcar.",
-    "en": "A coffee without sugar would have been better.",
+    "es": "Con tanto dulce, habría sido mejor un tinto sin azúcar.",
+    "en": "With so many sweet things, a coffee without sugar would have been better.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional-perfect",
       "g:gender-articles",
       "l:azúcar",
+      "l:dulce",
       "l:mejor",
       "l:ser",
       "l:tinto",
@@ -29010,17 +29145,19 @@
   },
   {
     "id": "u43-1158",
-    "es": "Habría sido mejor tener un plan B.",
-    "en": "It would have been better to have a plan B.",
+    "es": "La verdad, habría sido mejor tener un plan B.",
+    "en": "Honestly, it would have been better to have a plan B.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:la-verdad",
       "g:conditional-perfect",
       "g:gender-articles",
       "l:mejor",
       "l:plan",
       "l:ser",
       "l:tener",
+      "l:verdad",
       "p:habria-sido-mejor"
     ],
     "targets": [
@@ -29265,19 +29402,21 @@
   },
   {
     "id": "u43-1167",
-    "es": "Me pareció bien que habláramos despacio.",
-    "en": "I thought it was good that we spoke slowly.",
+    "es": "Me pareció bien que habláramos antes de decidir.",
+    "en": "I thought it was good that we talked before deciding.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
       "g:imperfect-subj",
       "g:parecer-quedar",
+      "g:prep-infinitive",
       "g:preterite-er-ir",
       "g:subj-past-triggers",
       "g:that-clauses",
+      "l:antes",
       "l:bien",
-      "l:despacio",
+      "l:decidir",
       "l:hablar",
       "l:parecer",
       "p:me-parece-bien-que",
@@ -29558,8 +29697,8 @@
   },
   {
     "id": "u43-1177",
-    "es": "Me pareció muy bien que Joaquín escribiera por fin.",
-    "en": "I thought it was very good that Joaquín finally wrote.",
+    "es": "Me pareció muy bien que Yesid viniera por fin a Bogotá.",
+    "en": "I thought it was very good that Yesid finally came to Bogotá.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -29570,9 +29709,9 @@
       "g:subj-past-triggers",
       "g:that-clauses",
       "l:bien",
-      "l:escribir",
       "l:fin",
       "l:parecer",
+      "l:venir",
       "p:me-parece-bien-que",
       "p:me-parecio-mal-que"
     ],
@@ -30442,7 +30581,7 @@
   {
     "id": "u43-1210",
     "es": "Es una lástima que Altamira siga con su plan.",
-    "en": "It's a pity Altamira is going ahead with his plan.",
+    "en": "It's a pity Altamira is going ahead with its plan.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -30529,21 +30668,22 @@
   },
   {
     "id": "u43-1213",
-    "es": "Es una lástima que nadie sepa dónde está Joaquín.",
-    "en": "It's a pity nobody knows where Joaquín is.",
+    "es": "Es una lástima que nadie sepa dónde quedó el pasaje de Joaquín.",
+    "en": "It's a shame nobody knows where Joaquín's ticket ended up.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:donde-esta",
-      "g:estar-location-states",
       "g:gender-articles",
+      "g:indirect-questions",
+      "g:preterite-ar",
       "g:ser-identity",
       "g:subj-irregulars",
       "g:subj-value",
       "g:that-clauses",
       "l:dónde",
-      "l:estar",
       "l:lástima",
+      "l:pasaje",
+      "l:quedar",
       "l:saber",
       "l:ser",
       "p:caerse-lastimarse",
@@ -30677,25 +30817,27 @@
   },
   {
     "id": "u43-1218",
-    "es": "¡Qué lástima que no nos hayamos visto antes!",
-    "en": "What a shame we hadn't seen each other before!",
+    "es": "¡Qué lástima que no nos hubiéramos conocido antes!",
+    "en": "What a shame we hadn't met sooner!",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:subj-perfect",
-      "g:subj-value",
+      "g:pluperfect-subj",
+      "g:subj-past-triggers",
       "g:that-clauses",
       "l:antes",
+      "l:conocer",
       "l:lástima",
       "l:qué",
-      "l:ver",
       "p:caerse-lastimarse",
       "p:es-una-lastima-que",
       "p:exclamations-basic",
       "p:me-da-pena-que",
-      "p:me-te-nos-objects"
+      "p:me-te-nos-objects",
+      "p:saber-conocer"
     ],
     "targets": [
+      "g:pluperfect-subj",
       "p:es-una-lastima-que"
     ],
     "kind": "statement",
@@ -30758,16 +30900,18 @@
   },
   {
     "id": "u43-1221",
-    "es": "Nos decepcionó que el hotel fuera tan grande.",
-    "en": "It disappointed us that the hotel was so big.",
+    "es": "Nos decepcionó que el hotel fuera tan feo por dentro.",
+    "en": "It disappointed us that the hotel was so ugly inside.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:por-para-1",
       "g:preterite-ar",
       "g:that-clauses",
       "l:decepcionar",
-      "l:grande",
+      "l:dentro",
+      "l:feo",
       "l:hotel",
       "p:me-decepciono-que",
       "p:me-te-nos-objects"
@@ -32252,17 +32396,20 @@
   },
   {
     "id": "u43-1278",
-    "es": "Me arrepiento de aquella cena.",
-    "en": "I regret that dinner.",
+    "es": "Todavía me arrepiento de aquella cena con el abogado de Altamira.",
+    "en": "I still regret that dinner with Altamira's lawyer.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
+      "g:gender-articles",
       "g:reflexive-routine",
       "g:stem-boot",
+      "l:abogado",
       "l:arrepentirse",
       "l:cena",
-      "p:arrepentirse-de"
+      "p:arrepentirse-de",
+      "p:ya-todavia-basic"
     ],
     "targets": [
       "p:arrepentirse-de"
@@ -32528,17 +32675,18 @@
   },
   {
     "id": "u43-1290",
-    "es": "Sobrevivió a un accidente de tres metros.",
-    "en": "He survived a three-metre accident.",
+    "es": "Sobrevivió a una caída de tres metros.",
+    "en": "He survived a three-meter fall.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "c:a-cuantas-cuotas",
       "g:preterite-er-ir",
-      "l:accidente",
+      "l:caída",
       "l:metro",
       "l:sobrevivir",
-      "p:sobrevivir-a"
+      "p:sobrevivir-a",
+      "p:subir-subida"
     ],
     "targets": [
       "p:sobrevivir-a"
@@ -32916,29 +33064,27 @@
   },
   {
     "id": "u43-1305",
-    "es": "Podría haberme llevado el bolso sin que nadie lo notara.",
-    "en": "I could have taken the bag without anybody noticing.",
+    "es": "Podrías haberme pedido el bolso prestado.",
+    "en": "You could have asked to borrow my bag. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
-      "g:direct-objects",
       "g:gender-articles",
-      "g:imperfect-subj",
       "g:object-pronoun-position",
-      "g:subj-purpose-full",
       "g:verb-infinitive",
       "l:bolso",
       "l:haber",
-      "l:llevar",
-      "l:notar",
+      "l:pedir",
       "l:poder",
-      "p:es-tiene-lleva",
+      "l:prestar",
+      "p:me-hubieras-dicho",
       "p:me-te-nos-objects",
       "p:no-deberias-haberlo-hecho",
       "p:podrias-haber",
       "p:request-ladder",
-      "p:te-importaria"
+      "p:te-importaria",
+      "p:tendrias-que"
     ],
     "targets": [
       "p:no-deberias-haberlo-hecho"
@@ -33079,16 +33225,18 @@
   },
   {
     "id": "u43-1311",
-    "es": "Bienvenida sea la ayuda de Mariana.",
-    "en": "Welcome be Mariana's help.",
+    "es": "La ayuda de Mariana siempre es bienvenida.",
+    "en": "Mariana's help is always welcome.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:subj-irregulars",
+      "g:ser-identity",
       "l:ayuda",
       "l:bienvenida",
-      "l:se"
+      "l:ser",
+      "l:siempre",
+      "p:frequency-scale"
     ],
     "targets": [],
     "kind": "statement",
@@ -33125,16 +33273,17 @@
   },
   {
     "id": "u43-1313",
-    "es": "Hernando es muy quieto cuando piensa.",
-    "en": "Hernando is very still when he thinks.",
+    "es": "Hernando se queda muy quieto cuando piensa.",
+    "en": "Hernando keeps very still when he thinks.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:ser-identity",
+      "g:present-ar",
+      "g:reflexive-routine",
       "g:stem-boot",
       "l:pensar",
+      "l:quedarse",
       "l:quieto",
-      "l:ser",
       "p:cuando-basic",
       "p:quantifiers-basic"
     ],
@@ -33284,13 +33433,14 @@
   },
   {
     "id": "u43-1320",
-    "es": "Nadie hizo todo lo posible esa noche.",
-    "en": "Nobody did everything possible that night.",
+    "es": "Esa noche, todos hicieron todo lo posible por Rosa.",
+    "en": "That night, everyone did everything they could for Rosa.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
       "g:lo-adjective",
+      "g:por-para-1",
       "g:preterite-ser-ir-hacer",
       "l:hacer",
       "l:noche",
@@ -33356,20 +33506,21 @@
   },
   {
     "id": "u43-1323",
-    "es": "Vamos a hacer todo lo posible por encontrar a Joaquín.",
-    "en": "We're going to do everything we can to find Joaquín.",
+    "es": "Vamos a hacer todo lo posible por encontrar el pasaje de Joaquín.",
+    "en": "We're going to do everything we can to find Joaquín's ticket.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hacer-todo-lo-posible",
       "c:vamos-a",
+      "g:gender-articles",
       "g:ir-a-plans",
       "g:por-para-1",
       "l:encontrar",
       "l:hacer",
       "l:ir",
-      "l:posible",
-      "p:personal-a"
+      "l:pasaje",
+      "l:posible"
     ],
     "targets": [
       "c:hacer-todo-lo-posible"
@@ -33407,19 +33558,18 @@
   },
   {
     "id": "u43-1325",
-    "es": "Puedo hacer todo lo posible, pero no prometo nada.",
-    "en": "I can do everything I can, but I promise nothing.",
+    "es": "Voy a hacer todo lo posible, pero no prometo nada.",
+    "en": "I'm going to do everything I can, but I'm not promising anything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hacer-todo-lo-posible",
-      "c:puedo",
+      "c:voy-a",
+      "g:ir-a-plans",
       "g:negation-words",
       "g:present-er-ir",
-      "g:stem-boot",
-      "g:verb-infinitive",
       "l:hacer",
-      "l:poder",
+      "l:ir",
       "l:posible",
       "l:prometer"
     ],
@@ -34010,18 +34160,24 @@
   },
   {
     "id": "u43-1349",
-    "es": "¿Sobrevivirá el barrio a la oferta de Altamira?",
-    "en": "Will the neighbourhood survive Altamira's offer?",
+    "es": "¿El barrio podrá sobrevivir a otro hotel de Altamira?",
+    "en": "Will the neighborhood be able to survive another Altamira hotel?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
       "g:gender-articles",
+      "g:verb-infinitive",
       "l:barrio",
-      "l:oferta",
-      "l:sobrevivir"
+      "l:hotel",
+      "l:poder",
+      "l:sobrevivir",
+      "p:otro-no-article",
+      "p:sobrevivir-a"
     ],
-    "targets": [],
+    "targets": [
+      "p:sobrevivir-a"
+    ],
     "kind": "question",
     "unit": "u43",
     "theme": "preguntas sobre lo que no fue",
@@ -34029,7 +34185,7 @@
   },
   {
     "id": "u43-1350",
-    "es": "¿Sobrevivió la carta al temporal?",
+    "es": "¿La carta sobrevivió al temporal?",
     "en": "Did the letter survive the storm?",
     "accept": [],
     "acceptEn": [],
@@ -34038,10 +34194,12 @@
       "g:preterite-er-ir",
       "l:carta",
       "l:sobrevivir",
-      "l:temporal"
+      "l:temporal",
+      "p:sobrevivir-a"
     ],
     "targets": [
-      "l:temporal"
+      "l:temporal",
+      "p:sobrevivir-a"
     ],
     "kind": "question",
     "unit": "u43",
@@ -34050,23 +34208,29 @@
   },
   {
     "id": "u43-1351",
-    "es": "¿Cómo sobrevivió Yesid a su primera semana de frío?",
-    "en": "How did Yesid survive his first week of cold?",
+    "es": "¿Cómo hizo Yesid para sobrevivir a su primera semana de frío?",
+    "en": "How did Yesid manage to survive his first week of cold?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:preterite-er-ir",
+      "g:preterite-ser-ir-hacer",
       "g:questions",
       "l:cómo",
       "l:frío",
+      "l:hacer",
       "l:semana",
       "l:sobrevivir",
       "p:ordinal-floor",
       "p:ordinals-primer-tercer",
+      "p:para-inf",
+      "p:para-inf-purpose",
       "p:possessives-basic",
-      "p:question-word-order"
+      "p:question-word-order",
+      "p:sobrevivir-a"
     ],
-    "targets": [],
+    "targets": [
+      "p:sobrevivir-a"
+    ],
     "kind": "question",
     "unit": "u43",
     "theme": "preguntas sobre lo que no fue",
@@ -34148,7 +34312,7 @@
   },
   {
     "id": "u43-1355",
-    "es": "¿Sobrevivió Tomás a su primera semana sin Vale?",
+    "es": "¿Tomás sobrevivió a su primera semana sin Vale?",
     "en": "Did Tomás survive his first week without Vale?",
     "accept": [],
     "acceptEn": [],
@@ -34158,9 +34322,12 @@
       "l:sobrevivir",
       "p:ordinal-floor",
       "p:ordinals-primer-tercer",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:sobrevivir-a"
     ],
-    "targets": [],
+    "targets": [
+      "p:sobrevivir-a"
+    ],
     "kind": "question",
     "unit": "u43",
     "theme": "preguntas sobre lo que no fue",
@@ -34168,16 +34335,18 @@
   },
   {
     "id": "u43-1356",
-    "es": "¿Sobrevivió el puente al temporal?",
-    "en": "Did the bridge survive the storm?",
+    "es": "¿Resistió el puente el temporal?",
+    "en": "Did the bridge withstand the storm?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-er-ir",
       "l:puente",
-      "l:sobrevivir",
-      "l:temporal"
+      "l:resistir",
+      "l:temporal",
+      "p:resistente-a",
+      "p:sobrevivir-a"
     ],
     "targets": [
       "l:temporal"
@@ -34189,19 +34358,25 @@
   },
   {
     "id": "u43-1357",
-    "es": "¿Cómo sobrevivió Hernando a tantos años sin Rosa?",
-    "en": "How did Hernando survive so many years without Rosa?",
+    "es": "¿Cómo hizo Hernando para sobrevivir a tantos años sin Rosa?",
+    "en": "How did Hernando manage to survive so many years without Rosa?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:preterite-er-ir",
+      "g:preterite-ser-ir-hacer",
       "g:questions",
       "l:año",
       "l:cómo",
+      "l:hacer",
       "l:sobrevivir",
-      "p:question-word-order"
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:question-word-order",
+      "p:sobrevivir-a"
     ],
-    "targets": [],
+    "targets": [
+      "p:sobrevivir-a"
+    ],
     "kind": "question",
     "unit": "u43",
     "theme": "preguntas sobre lo que no fue",
@@ -34209,7 +34384,7 @@
   },
   {
     "id": "u43-1358",
-    "es": "¿Sobrevivirá Tomás al invierno bogotano?",
+    "es": "¿Tomás sobrevivirá al invierno bogotano?",
     "en": "Will Tomás survive the Bogotá winter?",
     "accept": [],
     "acceptEn": [],
@@ -34218,9 +34393,12 @@
       "g:gender-articles",
       "l:bogotano",
       "l:invierno",
-      "l:sobrevivir"
+      "l:sobrevivir",
+      "p:sobrevivir-a"
     ],
-    "targets": [],
+    "targets": [
+      "p:sobrevivir-a"
+    ],
     "kind": "question",
     "unit": "u43",
     "theme": "preguntas sobre lo que no fue",

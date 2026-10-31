@@ -28,7 +28,7 @@
     },
     {
       "es": "¿Cómo la pasaron en Cartagena?",
-      "en": "How did you all have it in Cartagena? (you all)"
+      "en": "What kind of time did you all have in Cartagena? (you all)"
     }
   ],
   "rule": "*Pasar* is *to spend*. *La pasé bien* means *I spent it well*: *la* stands for the time itself (*la vida*, *la fiesta*, *la semana*), and it is always *la*, whatever the person.\n\n*La pasé*, *la pasaste*, *la pasó*, *la pasamos*, *la pasaron*\n\nAdd the verdict: *bien*, *mal*, *genial*, *horrible*, *delicioso* (very Colombian for a great time). *Muy* turns it up.\n\nIt reports a whole stretch of time, not one fact. It is casual, perfect with friends.",
@@ -79,8 +79,8 @@
     {
       "es": "¿Cómo la pasaron en Cartagena?",
       "options": [
-        "How did I have it in Cartagena?",
-        "How did you all have it in Cartagena? (you all)"
+        "What kind of time did I have in Cartagena?",
+        "What kind of time did you all have in Cartagena? (you all)"
       ],
       "answer": 1
     },
@@ -148,13 +148,13 @@
       "why": "*La pasaste* for one friend."
     },
     {
-      "prompt": "Say it about we: *La pasé horrible.*",
+      "prompt": "Change it to *we*: *La pasé horrible.*",
       "answer": "La pasamos horrible.",
       "accept": [],
       "why": "Only the verb changes: *pasé* becomes *pasamos*."
     },
     {
-      "prompt": "Ask your friends: How did you all have it? (you all)",
+      "prompt": "Ask your friends: What kind of time did you all have? (you all)",
       "answer": "¿Cómo la pasaron?",
       "accept": [],
       "why": "*La pasaron* for you all."
@@ -172,9 +172,9 @@
       "why": "*Lo pasé* is what people say in Spain; in Latin America it's *la pasé*."
     },
     {
-      "wrong": "La pasé bueno.",
-      "right": "La pasé bien.",
-      "why": "After the verb you need an adverb: *bien*, not *bueno*."
+      "wrong": "Tuve un buen tiempo en la fiesta.",
+      "right": "La pasé bien en la fiesta.",
+      "why": "English says *I had a good time*, but *tener un buen tiempo* isn't Spanish for it. Say *la pasé bien*."
     }
   ],
   "personal": "Think of your last weekend. Say how it went: *La pasé...* plus *bien*, *mal*, *genial* or *horrible*."

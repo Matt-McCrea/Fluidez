@@ -54,7 +54,7 @@
     },
     {
       "es": "la autopista era un parqueadero",
-      "en": "the motorway was a car park"
+      "en": "the highway was a parking lot"
     },
     {
       "es": "El bufete no retiró la demanda.",
@@ -107,7 +107,7 @@
   ],
   "questions": [
     {
-      "q": "What has blocked the motorway?",
+      "q": "What has blocked the highway?",
       "options": [
         "A giant advertising balloon for Altamira's hotel",
         "A broken down bus",

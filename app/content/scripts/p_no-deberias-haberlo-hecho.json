@@ -1,7 +1,7 @@
 {
   "node": "p:no-deberias-haberlo-hecho",
   "hook": {
-    "line": "Vale finds out Tomás showed Altamira the recipe notebook. She is not shouting. She is just very, very disappointed, and Spanish has a polite way to say so.",
+    "line": "A friend tells you he quit his job by text message, the night before payday. You're not shouting. You're just very, very disappointed, and Spanish has a polite way to say so.",
     "es": "No deberías haberlo hecho.",
     "en": "You shouldn't have done it."
   },
@@ -31,7 +31,7 @@
       "en": "You all could have waited a bit."
     }
   ],
-  "rule": "To say what someone should or could have done, take *deberías*, *podrías* or *tendrías que* and add *haber* + the participle: *deberías haber llamado*.\n\nOnly the first verb changes for the person. *Haber* never does. Pronouns stick onto *haber*: *haberlo*, *haberme*, *haberle*.\n\nCompare: *No deberías hacerlo* is advice about what's coming. *No deberías haberlo hecho* is too late. It is a gentle reproach, and the same words are what you say when someone gives you a present: \"you shouldn't have\".",
+  "rule": "To say what someone should or could have done, take *deberías*, *podrías* or *tendrías que* and add *haber* + the participle: *deberías haber llamado*.\n\nOnly the first verb changes for the person. *Haber* never does. Pronouns stick onto *haber*: *haberlo*, *haberme*, *haberle*. You will also hear them up front: *Me podrías haber avisado*.\n\nCompare: *No deberías hacerlo* is advice about what's coming. *No deberías haberlo hecho* is too late. It is a gentle reproach, and the same words are what you say when someone gives you a present: \"you shouldn't have\".",
   "smallPrint": "Teachers call this a modal verb in the conditional plus the perfect infinitive (*infinitivo compuesto*).",
   "readAndPick": [
     {
@@ -117,7 +117,9 @@
     {
       "prompt": "You (*tú*) could have let me know.",
       "answer": "Podrías haberme avisado.",
-      "accept": [],
+      "accept": [
+        "Me podrías haber avisado."
+      ],
       "why": "*Podrías* + *haber* + participle, and *me* sticks onto *haber*."
     },
     {
@@ -138,20 +140,25 @@
       "prompt": "You (*usted*) shouldn't have done it.",
       "answer": "No debería haberlo hecho.",
       "accept": [
-        "Usted no debería haberlo hecho."
+        "Usted no debería haberlo hecho.",
+        "No lo debería haber hecho."
       ],
       "why": "For *usted*, *debería* has no final *s*."
     },
     {
       "prompt": "Make it about the past: *Deberías llamarlo.* becomes \"You (*tú*) should have called him.\"",
       "answer": "Deberías haberlo llamado.",
-      "accept": [],
+      "accept": [
+        "Lo deberías haber llamado."
+      ],
       "why": "Add *haber* and move the pronoun onto it."
     },
     {
       "prompt": "You (*tú*) could have helped me.",
       "answer": "Podrías haberme ayudado.",
-      "accept": [],
+      "accept": [
+        "Me podrías haber ayudado."
+      ],
       "why": "*Podrías haberme* + participle."
     }
   ],
@@ -159,7 +166,7 @@
     {
       "wrong": "No deberías haber lo hecho.",
       "right": "No deberías haberlo hecho.",
-      "why": "Almost. The pronoun sticks onto *haber* as one word."
+      "why": "Almost. When the pronoun goes after *haber*, it joins it as one word."
     },
     {
       "wrong": "No deberías hecho eso.",

@@ -1,9 +1,9 @@
 {
   "node": "x:llevar-gerundio-sin",
   "hook": {
-    "line": "Everyone in the café wants to know how long things have been going on: how long you have lived here, how long since you last slept properly. Spanish asks it with one verb, *llevar*, and a small twist decides whether you are doing something or going without it.",
-    "es": "Llevo tres semanas sin dormir bien.",
-    "en": "I haven't slept well for three weeks."
+    "line": "Everyone in the café wants to know how long things have been going on: how long you have studied, how long since you last practised. Spanish asks it with one verb, *llevar*, and a small twist decides whether you are doing something or going without it.",
+    "es": "Llevo un año estudiando español y una semana sin practicar.",
+    "en": "I've been studying Spanish for a year, and I haven't practised for a week."
   },
   "examples": [
     {
@@ -168,9 +168,9 @@
       "why": "Almost. *Sin* is always followed by the infinitive, never a gerund."
     },
     {
-      "wrong": "Tengo un año estudiando español.",
+      "wrong": "Estoy estudiando español por un año.",
       "right": "Llevo un año estudiando español.",
-      "why": "Almost. For how long you have been doing something, Spanish uses *llevar*, not *tener*."
+      "why": "Almost. English *for a year* tempts *por un año*, but to count time up to now Spanish uses *llevar*."
     }
   ],
   "personal": "Think of something you do a lot and something you have given up. Say two true sentences: one with *Llevo… + gerund* and one with *Llevo… sin…*"

@@ -148,7 +148,7 @@
       "why": "*No* goes in front of everything, including *lo*."
     },
     {
-      "prompt": "Say it about they: *Ojalá hubiera llegado antes.*",
+      "prompt": "Change it to *they*: *Ojalá hubiera llegado antes.*",
       "answer": "Ojalá hubieran llegado antes.",
       "accept": [],
       "why": "*Hubieran* is the form for *they*; the participle doesn't change."
@@ -162,7 +162,7 @@
   ],
   "pitfalls": [
     {
-      "wrong": "Ojalá había sabido.",
+      "wrong": "Ojalá lo había sabido.",
       "right": "Ojalá lo hubiera sabido.",
       "why": "Almost. *Había* states a fact; a wish about the past needs *hubiera*."
     },

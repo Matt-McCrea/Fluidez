@@ -146,16 +146,16 @@
       "prompt": "Type in Spanish: It went badly for Hernando at the court.",
       "answer": "A Hernando le fue mal en el juzgado.",
       "accept": [
-        "A Hernando le salió mal en el juzgado.",
+        "Le fue mal a Hernando en el juzgado.",
         "En el juzgado le fue mal a Hernando."
       ],
       "why": "*Le* repeats Hernando, and *fue* with *mal* says how it went."
     },
     {
       "prompt": "Change it to *we*: *A Vale le salió mal el pastel.*",
-      "answer": "A nosotros nos salió mal el pastel.",
+      "answer": "Nos salió mal el pastel.",
       "accept": [
-        "Nos salió mal el pastel."
+        "A nosotros nos salió mal el pastel."
       ],
       "why": "Switch *le* to *nos*; the cake is still the subject, so *salió* stays."
     },
@@ -170,9 +170,9 @@
   ],
   "pitfalls": [
     {
-      "wrong": "Yo salí bien en la entrevista.",
-      "right": "Me salió bien la entrevista.",
-      "why": "Almost. *Yo salí bien* means you came out looking good, as in a photo; for how it went, the interview is the subject."
+      "wrong": "La entrevista fue bien para mí.",
+      "right": "Me fue bien en la entrevista.",
+      "why": "Almost. English says *went well for me*, but Spanish puts the person up front: *me fue bien*."
     },
     {
       "wrong": "Me salió bien las entrevistas.",

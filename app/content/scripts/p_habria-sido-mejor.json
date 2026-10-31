@@ -170,9 +170,9 @@
   ],
   "pitfalls": [
     {
-      "wrong": "Sería mejor que hubieras esperado.",
-      "right": "Habría sido mejor que hubieras esperado.",
-      "why": "Almost. When the judgment is about something that already happened, use *habría sido*, not *sería*."
+      "wrong": "Habría sido mejor a esperar.",
+      "right": "Habría sido mejor esperar.",
+      "why": "Almost. English says *better to wait*, but Spanish goes straight to the infinitive, with no little word."
     },
     {
       "wrong": "Habría sido mejor que esperas.",

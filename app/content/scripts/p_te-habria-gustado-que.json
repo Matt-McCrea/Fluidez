@@ -164,7 +164,11 @@
       "accept": [
         "¿Te hubiera gustado que te lo hubiera dicho antes?",
         "¿Te habría gustado que te lo hubiera contado antes?",
-        "¿Te hubiera gustado que te lo hubiera contado antes?"
+        "¿Te hubiera gustado que te lo hubiera contado antes?",
+        "¿Te habría gustado que te lo contara antes?",
+        "¿Te hubiera gustado que te lo contara antes?",
+        "¿Te habría gustado que te lo dijera antes?",
+        "¿Te hubiera gustado que te lo dijera antes?"
       ],
       "why": "A different person acts, so *que* + *hubiera* + participle."
     }

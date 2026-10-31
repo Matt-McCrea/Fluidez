@@ -98,7 +98,7 @@
       "answer": 2
     },
     {
-      "es": "Avisó en el último momento.",
+      "es": "Nos avisó en el último momento.",
       "options": [
         "He let us know first thing.",
         "He let us know at the last moment.",
@@ -117,7 +117,9 @@
     {
       "prompt": "We left first thing.",
       "answer": "Salimos a primera hora.",
-      "accept": [],
+      "accept": [
+        "Salimos a primera hora de la mañana."
+      ],
       "why": "*A primera hora* is the fixed phrase for first thing."
     },
     {
@@ -144,13 +146,20 @@
     {
       "prompt": "Say it about tomorrow: I'm leaving first thing.",
       "answer": "Mañana salgo a primera hora.",
-      "accept": [],
+      "accept": [
+        "Salgo mañana a primera hora.",
+        "Mañana me voy a primera hora.",
+        "Me voy mañana a primera hora."
+      ],
       "why": "The phrase stays the same; only the verb moves to the present."
     },
     {
       "prompt": "They always cancel at the last minute.",
       "answer": "Siempre cancelan a última hora.",
-      "accept": [],
+      "accept": [
+        "Siempre cancelan en el último minuto.",
+        "Siempre cancelan en el último momento."
+      ],
       "why": "The phrase works with any verb and any time."
     }
   ],

@@ -104,10 +104,10 @@
     {
       "es": "¡Qué lástima que no hubieras venido!",
       "options": [
-        "What a shame you didn't come! (to a friend)",
-        "What a shame you hadn't come! (to a friend)"
+        "What a shame you hadn't come! (to a friend)",
+        "What a shame you aren't coming! (to a friend)"
       ],
-      "answer": 1
+      "answer": 0
     }
   ],
   "yourTurn": [

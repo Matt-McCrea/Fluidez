@@ -3,7 +3,7 @@
   "hook": {
     "line": "Sometimes you tell a friend what to do next. Sometimes the thing is already done, and what you really mean is \"you should have\". Spanish marks that difference with one small extra word, and mixing it up changes your meaning completely.",
     "es": "Deberías haberme avisado.",
-    "en": "You should have told me. (to a friend)"
+    "en": "You should have let me know. (to a friend)"
   },
   "examples": [
     {
@@ -16,7 +16,7 @@
     },
     {
       "es": "Deberías haberme avisado.",
-      "en": "You should have told me. (to a friend)"
+      "en": "You should have let me know. (to a friend)"
     },
     {
       "es": "No deberías haberlo dicho.",
@@ -91,9 +91,9 @@
     {
       "es": "Deberías haberme avisado.",
       "options": [
-        "You should tell me.",
-        "You should have told me.",
-        "You told me."
+        "You should let me know.",
+        "You should have let me know.",
+        "You let me know."
       ],
       "answer": 1
     },
@@ -121,7 +121,7 @@
       "why": "It is already past, so use *haber* + participle."
     },
     {
-      "prompt": "Type in Spanish, to a friend: You should have told me.",
+      "prompt": "Type in Spanish, to a friend: You should have let me know.",
       "answer": "Deberías haberme avisado.",
       "accept": [],
       "why": "The pronoun *me* attaches to *haber*."
@@ -168,9 +168,9 @@
       "why": "Almost. After *haber*, use the participle *llamado*, and the pronoun goes on *haber*."
     },
     {
-      "wrong": "Debería haber ido, pero voy mañana.",
-      "right": "Debería haber ido.",
-      "why": "Almost. *Debería haber ido* is only about the past; a plan for tomorrow needs *debería ir*."
+      "wrong": "Debería haber ido mañana.",
+      "right": "Debería ir mañana.",
+      "why": "Almost. *Haber ido* only looks back; a plan for tomorrow takes the plain infinitive: *debería ir*."
     }
   ],
   "personal": "Think of something small you wish you had done differently. Say it with *Debería haber…*, then give a friend one piece of advice for tomorrow with *Deberías…*"
