@@ -1,6 +1,8 @@
-# Builds app/ from the rebuild branch and publishes it to GitHub Pages at
-# https://matt-mccrea.github.io/Fluidez/ so the course can be played on a phone.
-name: Publish to GitHub Pages
+# Builds app/ from the rebuild branch and publishes it to the separate repo
+# Matt-McCrea/fluidez-next, which serves it at
+# https://matt-mccrea.github.io/fluidez-next/ for playtesting.
+# The old app keeps https://matt-mccrea.github.io/Fluidez/ (Pages from main).
+name: Publish rebuild to fluidez-next
 
 on:
   push:
@@ -10,15 +12,13 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
+  group: fluidez-next
   cancel-in-progress: true
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -33,17 +33,13 @@ jobs:
       - run: npm ci
       - run: npm run build
         env:
-          BASE_PATH: /Fluidez/
-      - uses: actions/upload-pages-artifact@v3
+          BASE_PATH: /fluidez-next/
+      - run: touch dist/.nojekyll
+      - uses: peaceiris/actions-gh-pages@v4
         with:
-          path: app/dist
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          deploy_key: ${{ secrets.FLUIDEZ_NEXT_DEPLOY_KEY }}
+          external_repository: Matt-McCrea/fluidez-next
+          publish_branch: gh-pages
+          publish_dir: app/dist
+          force_orphan: true
+          commit_message: 'publish ${{ github.sha }}'
