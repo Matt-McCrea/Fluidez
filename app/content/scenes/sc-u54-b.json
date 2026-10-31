@@ -51,7 +51,7 @@
       "id": "t3",
       "npc": "Hernando: Admita que escribir chistes tiene su gracia.",
       "npcEn": "Hernando: Admit that writing jokes has its charm.",
-      "intent": "Agree: it has its own art (use: tiene su + noun).",
+      "intent": "Agree that it does, in your own words (use: tiene su + noun).",
       "accept": [
         "Sí, don Hernando, escribir chistes tiene su ciencia.",
         "El chiste tiene su gracia, pero los huéspedes no lo van a entender.",
@@ -70,8 +70,8 @@
     },
     {
       "id": "t4",
-      "npc": "Hernando: Vale dice que mis chistes son pesados.",
-      "npcEn": "Hernando: Vale says my jokes are heavy-handed.",
+      "npc": "Hernando: Vale dice que mis chistes son pesados. Y yo le dije que sus postres son peores.",
+      "npcEn": "Hernando: Vale says my jokes are heavy-handed. And I told her that her desserts are worse.",
       "intent": "Tease him: you really do love to argue (use: ¡Mira que...!).",
       "accept": [
         "¡Mira que le gusta discutir, don Hernando!",
@@ -98,13 +98,13 @@
     },
     {
       "id": "t5",
-      "npc": "Hernando: ¿Y a usted le importa de verdad lo que piense el hotel?",
-      "npcEn": "Hernando: And do you really care what the hotel thinks?",
-      "intent": "Answer your own question with emphasis: do you care? Of course you care (use: ¿Que si...?).",
+      "npc": "Hernando: ¿Y a usted le preocupa de verdad lo que piense el hotel?",
+      "npcEn": "Hernando: And are you really worried about what the hotel thinks?",
+      "intent": "Echo his question, then answer it with force: of course it worries you (use: ¿Que si...?).",
       "accept": [
-        "¿Que si me importa? ¡Pues claro que me importa!",
-        "¿Que si me importa, don Hernando? ¡Me importa mucho!",
-        "Don Hernando, ¿que si me importa? ¡Claro que sí!"
+        "¿Que si me preocupa? ¡Pues claro que me preocupa!",
+        "¿Que si me preocupa, don Hernando? ¡Muchísimo!",
+        "Don Hernando, ¿que si me preocupa? ¡Claro que sí!"
       ],
       "require": [
         {
@@ -141,7 +141,6 @@
     "c:gracias-de-nada",
     "c:hago-salgo-vengo",
     "c:hola-buenos-dias",
-    "c:me-importa-un-comino",
     "c:mucho-gusto",
     "c:oye-mira",
     "c:pues",
@@ -161,6 +160,7 @@
     "g:present-er-ir",
     "g:preterite-ar",
     "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
     "g:questions",
     "g:relatives-donde-lo-que",
     "g:ser-identity",
@@ -169,6 +169,7 @@
     "g:stem-e-i",
     "g:subj-free-relatives",
     "g:subj-wanting",
+    "g:superlatives",
     "g:that-clauses",
     "g:yo-irregular",
     "l:admitir",
@@ -205,8 +206,11 @@
     "l:mirar",
     "l:pasar",
     "l:pensar",
+    "l:peor",
     "l:pesado",
     "l:pizarra",
+    "l:postre",
+    "l:preocupar",
     "l:quedar",
     "l:ser",
     "l:temprano",
@@ -229,7 +233,6 @@
     "p:otro-no-article",
     "p:possessives-basic",
     "p:pues-claro-que",
-    "p:quantifiers-basic",
     "p:quedar-participio",
     "p:reporting-verbs-stance",
     "p:senor-don-article",

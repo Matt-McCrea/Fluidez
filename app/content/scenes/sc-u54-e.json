@@ -3,15 +3,15 @@
   "unit": "u54",
   "title": "El gerente de al lado",
   "spare": true,
-  "brief": "You're yourself, behind the counter. The manager of the hotel next door has come to complain, and he's a stranger, so use usted. Stay polite on the surface, let the irony do the work, and turn down his offer.",
+  "brief": "You're Tomás, behind the counter. The manager of the hotel next door has come to complain, and she's a stranger, so use usted. Stay polite on the surface, let the irony do the work, and turn down her offer.",
   "turns": [
     {
       "id": "t1",
-      "npc": "Gerente: Buenas tardes. Soy el gerente del hotel de al lado. ¿Podemos hablar de la pizarra?",
+      "npc": "Gerente: Buenas tardes. Soy la gerente del hotel de al lado. ¿Podemos hablar de la pizarra?",
       "npcEn": "Manager: Good afternoon. I'm the manager of the hotel next door. Can we talk about the chalkboard?",
       "intent": "Welcome him, remarking that at last a neighbour has come to say hello (use: para variar).",
       "accept": [
-        "Buenas tardes. Qué bien, para variar un vecino que viene a saludar.",
+        "Buenas tardes. Qué bien, para variar, alguien del hotel viene a saludar.",
         "Para variar, una visita del hotel. Buenas tardes, pase.",
         "Buenas tardes. Para variar, es usted quien viene a vernos."
       ],
@@ -30,7 +30,7 @@
       "id": "t2",
       "npc": "Gerente: Los chistes de su pizarra afectan la imagen de nuestro hotel.",
       "npcEn": "Manager: The jokes on your chalkboard affect our hotel's image.",
-      "intent": "Ask how it is that a big hotel worries about a café with four customers (use: ¿Cómo es que...? and cuatro gatos).",
+      "intent": "Ask how it is that a big hotel worries about a café with hardly any customers (use: ¿Cómo es que...? and cuatro gatos).",
       "accept": [
         "¿Cómo es que un hotel tan grande se preocupa por un café con cuatro gatos?",
         "¿Cómo es que le molestan cuatro gatos y una pizarra?",
@@ -85,9 +85,9 @@
       "npcEn": "Manager: I propose a deal: you take down the jokes and I give you a dinner.",
       "intent": "Refuse flatly (use: Ni pensarlo).",
       "accept": [
-        "Ni pensarlo, señor. Los chistes se quedan.",
+        "Ni pensarlo, señora. Los chistes se quedan.",
         "Ni pensarlo. Los chistes se quedan donde están.",
-        "Señor, ni pensarlo: no voy a quitar los chistes."
+        "Señora, ni pensarlo: no voy a quitar los chistes."
       ],
       "require": [
         {
@@ -107,7 +107,7 @@
       "intent": "Relent warmly: the coffee is on the house, but he must read today's joke first.",
       "accept": [
         "Con gusto, el tinto va por la casa. Pero primero lea el chiste de hoy.",
-        "Claro, señor. El tinto va por la casa, y mire el chiste de hoy.",
+        "Claro, señora. El tinto va por la casa, y mire el chiste de hoy.",
         "Siéntese, le preparo un tinto, pero lea el chiste primero."
       ],
       "require": [],
@@ -149,7 +149,6 @@
     "g:preterite-irregular-strong",
     "g:preterite-ser-ir-hacer",
     "g:reflexive-routine",
-    "g:relative-que",
     "g:relatives-donde-lo-que",
     "g:ser-identity",
     "g:stem-boot",
@@ -203,13 +202,12 @@
     "l:saludar",
     "l:sentarse",
     "l:ser",
-    "l:señor",
+    "l:señora",
     "l:tarde",
     "l:tinto",
     "l:tranquilo",
     "l:trato",
     "l:variar",
-    "l:vecino",
     "l:venir",
     "l:ver",
     "l:verdad",
@@ -218,6 +216,7 @@
     "p:como-es-que",
     "p:costar-pagar",
     "p:fijarse-reparar-en",
+    "p:indefinites-basic",
     "p:me-preocupa-que",
     "p:me-te-nos-objects",
     "p:ni-emphatic",

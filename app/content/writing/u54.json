@@ -2,7 +2,7 @@
   {
     "id": "w-u54-01",
     "unit": "u54",
-    "prompt": "Mariana, the journalist, wants to write about the staff at the new hotel next door and asks what they are like. Text her, describing at least two people by what they are in one noun, the way Spanish does (el gerente es un zorro). Keep it gossipy, between friends.",
+    "prompt": "Mariana, the journalist, wants to write about the staff at the new hotel next door and asks what they are like. Text her, describing at least two people by what they are in one noun, the way Spanish does (el portero es un zorro). Keep it gossipy, between friends.",
     "minWords": 150,
     "maxWords": 250,
     "constraints": [
@@ -24,7 +24,7 @@
         "label": "at least 6 sentences"
       }
     ],
-    "model": "Mariana, te cuento cómo es la gente del hotel nuevo, por si quieres escribir algo. El gerente es un zorro: sonríe, te saluda por tu nombre y mientras tanto ya sabe cuánto vale nuestro local. La chica de la barra, en cambio, es una fiera con las bebidas, pero no habla con nadie. Hernando dice que el vigilante es un santo, porque lleva tres noches escuchando la música de arriba sin quejarse. Yo, para variar, llegué tarde a la inauguración y me quedé en la puerta, así que casi todo me lo contaron. Vale cree que el dueño es un fantasma, porque nadie lo ha visto nunca. Personalmente, creo que es un cobarde y que por eso manda a otros a dar la cara. Si quieres, el viernes te presento a los que trabajan ahí. Ya verás que más de uno es un caso aparte. Eso sí, no cites mi nombre en el artículo, porque todavía tengo que verlos todos los días desde la ventana de la cocina y prefiero que sigan saludándome.",
+    "model": "Mariana, te cuento cómo es la gente del hotel nuevo, por si quieres escribir algo. La gerente es un lince: sonríe, te saluda por tu nombre y mientras tanto ya sabe cuánto vale nuestro local. La chica de la barra, en cambio, es una fiera con las bebidas, pero no habla con nadie. Hernando dice que el vigilante es un santo, porque lleva tres noches escuchando la música de arriba sin quejarse. Yo, para variar, llegué tarde a la inauguración y me quedé en la puerta, así que casi todo me lo contaron. Vale cree que el dueño es un fantasma, porque nadie lo ha visto nunca. Personalmente, creo que es un cobarde y que por eso manda a otros a dar la cara. Si quieres, el viernes te presento a los que trabajan ahí. Ya verás que más de uno es un caso aparte. Eso sí, no cites mi nombre en el artículo, porque todavía tengo que verlos todos los días desde la ventana de la cocina y prefiero que sigan saludándome.",
     "focus": "p:ser-un-noun",
     "requires": [
       "c:como-es",
@@ -97,6 +97,7 @@
       "l:hablar",
       "l:hotel",
       "l:inauguración",
+      "l:lince",
       "l:llegar",
       "l:llevar",
       "l:local",
@@ -127,7 +128,6 @@
       "l:ver",
       "l:viernes",
       "l:vigilante",
-      "l:zorro",
       "p:a-la-vez",
       "p:aqui-ahi-alla",
       "p:days-el-lunes",
@@ -326,7 +326,7 @@
         "label": "at least 6 sentences"
       }
     ],
-    "model": "Vale, mira lo que me dijo ese señor del hotel. Sí, claro, como vienen tantos turistas cada mañana a un café de barrio con cuatro mesas. Y como vienen tantos clientes nuevos, tenemos que contratar a dos personas más. ¿Tú crees que alguien que paga una habitación de doscientos dólares va a bajar a tomar un tinto con Hernando? Ni siquiera nos saludaron, y el gerente pasó tres veces por la puerta sin entrar. Por ahora, para que sepas, no voy a contratar a nadie. Prefiero que me ayudes a preparar los panes de mañana y que veamos qué pasa durante una semana. Si de verdad llegan, yo mismo te pago horas extra. ¿Te parece bien? Y si no llega ni un alma, al menos tendremos sitio para sentarnos. Piénsalo con calma esta noche y mañana me cuentas qué opinas, porque en esto la última palabra la tienes tú, que eres la que se levanta a las cinco.",
+    "model": "Vale, mira lo que me dijo esa señora del hotel. Sí, claro, como vienen tantos turistas cada mañana a un café de barrio con cuatro mesas. Y como vienen tantos clientes nuevos, tenemos que contratar a dos personas más. ¿Tú crees que alguien que paga una habitación de ochocientos mil pesos va a bajar a tomar un tinto con Hernando? Ni siquiera nos saludaron, y la gerente pasó tres veces por la puerta sin entrar. Por ahora, para que sepas, no voy a contratar a nadie. Prefiero que me ayudes a preparar los panes de mañana y que veamos qué pasa durante una semana. Si de verdad llegan, yo mismo te pago horas extra. ¿Te parece bien? Y si no llega ni un alma, al menos tendremos puesto para sentarnos. Piénsalo con calma esta noche y mañana me cuentas qué opinas, porque en esto la última palabra la tienes tú, que eres la que se levanta a las cinco.",
     "focus": "p:como-viene-tanto",
     "requires": [
       "c:bien-y-tu",
@@ -383,7 +383,6 @@
       "l:contratar",
       "l:creer",
       "l:decir",
-      "l:dólar",
       "l:entrar",
       "l:extra",
       "l:gerente",
@@ -406,18 +405,19 @@
       "l:pasar",
       "l:pensar",
       "l:persona",
+      "l:peso",
       "l:preferir",
       "l:preparar",
       "l:puerta",
+      "l:puesto",
       "l:qué",
       "l:saber",
       "l:saludar",
       "l:semana",
       "l:sentar",
       "l:ser",
-      "l:señor",
+      "l:señora",
       "l:siquiera",
-      "l:sitio",
       "l:tener",
       "l:tinto",
       "l:tomar",
@@ -436,7 +436,6 @@
       "p:me-parece-bien-que",
       "p:me-te-nos-objects",
       "p:ni-emphatic",
-      "p:numbers-un-una",
       "p:para-inf",
       "p:para-inf-purpose",
       "p:preferir-a",
@@ -449,7 +448,7 @@
   {
     "id": "w-u54-04",
     "unit": "u54",
-    "prompt": "A friend in Toronto asks what the first night of the hotel's rooftop bar was like. Write back an excited message that leaves the best parts unsaid: use at least two exclamations that trail off with tanto/tanta or unos/unas and let your friend imagine the rest (¡Había una gente!).",
+    "prompt": "A friend in Toronto asks what the first night of the hotel's rooftop bar was like. Write back an excited message that leaves the best parts unsaid: use at least two exclamations that trail off with tanto/tanta or unos/unas and let your friend imagine the rest (¡Había tanta gente!).",
     "minWords": 150,
     "maxWords": 250,
     "constraints": [
@@ -601,13 +600,15 @@
         "label": "at least 6 sentences"
       }
     ],
-    "model": "Primo, qué alegría que vengas en octubre. Eso sí, trae abrigo, porque no imaginas el frío que hace en las noches de La Candelaria. Tomás dice que cuando salió ayer a las seis se arrepintió al instante. Y no te fíes del sol de la mañana: el cielo cambia en media hora. Del tráfico mejor ni hablamos. Cuando fui al centro el sábado, la cantidad de carros que había en la carrera séptima era una locura, y tardé dos horas en llegar. Usa el transporte público y sal temprano. Si vienes un domingo, ten en cuenta la gente que sale a la ciclovía, porque no vas a poder cruzar la calle. Tráete zapatos cómodos y un paraguas. Cuando llegues, yo te recibo con un tinto bien caliente y te cuento todo lo demás. Avísame con tiempo qué día llegas, así te guardo la habitación pequeña del segundo piso, la que mira al patio y tiene la mejor luz de la casa.",
+    "model": "Primo, qué alegría que vengas en octubre. Eso sí, trae abrigo, porque no imaginas el frío que hace en las noches de La Candelaria. Tomás dice que cuando salió ayer a las seis se arrepintió al instante. Y no confíes en el sol de la mañana: el cielo cambia en media hora. Del tráfico mejor ni hablamos. Cuando fui al centro el sábado, la cantidad de carros que había en la carrera séptima era una locura, y tardé dos horas en llegar. Usa el transporte público y sal temprano. Si vienes un domingo, vas a ver la cantidad de gente que hay en la ciclovía. Trae zapatos cómodos y un paraguas. Cuando llegues, yo te recibo con un tinto bien caliente y te cuento todo lo demás. Avísame con tiempo qué día llegas, así te guardo la habitación pequeña del segundo piso, la que mira al patio y tiene la mejor luz de la casa.",
     "focus": "p:el-frio-que-hace",
     "requires": [
+      "c:a-ver",
       "c:ayer-anoche",
       "c:bien-y-tu",
       "c:era",
       "c:fui",
+      "c:hay",
       "c:oye-mira",
       "c:porque",
       "c:tienes",
@@ -617,6 +618,7 @@
       "g:commands-tu",
       "g:commands-with-pronouns",
       "g:gender-articles",
+      "g:hay-vs-esta",
       "g:imperfect-states",
       "g:indirect-questions",
       "g:ir-a-plans",
@@ -642,7 +644,6 @@
       "g:subj-wanting",
       "g:superlatives",
       "g:that-clauses",
-      "g:verb-infinitive",
       "l:abrigo",
       "l:alegría",
       "l:arrepentirse",
@@ -650,7 +651,6 @@
       "l:ayer",
       "l:bien",
       "l:calentar",
-      "l:calle",
       "l:cambiar",
       "l:cantidad",
       "l:carrera",
@@ -658,15 +658,13 @@
       "l:casa",
       "l:centro",
       "l:cielo",
+      "l:confiar",
       "l:contar",
-      "l:cruzar",
-      "l:cuenta",
       "l:cómodo",
       "l:decir",
       "l:demás",
       "l:domingo",
       "l:día",
-      "l:fiarse",
       "l:frío",
       "l:gente",
       "l:guardar",
@@ -689,7 +687,6 @@
       "l:patio",
       "l:pequeño",
       "l:piso",
-      "l:poder",
       "l:primo",
       "l:público",
       "l:qué",
@@ -709,24 +706,25 @@
       "l:tráfico",
       "l:usar",
       "l:venir",
+      "l:ver",
       "l:zapatos",
+      "p:confiar-en-que",
       "p:cuando-basic",
       "p:days-el-lunes",
       "p:demonstratives-basic",
       "p:el-frio-que-hace",
       "p:el-que-la-que",
-      "p:hay-que-tener-en-cuenta",
       "p:ir-a-venir-de-place",
       "p:la-gente-singular",
       "p:llevar-traer",
       "p:me-te-nos-objects",
+      "p:ojo-con-no-confies",
       "p:ordinal-floor",
       "p:ordinals-primer-tercer",
       "p:por-la-manana",
       "p:street-names",
       "p:tardar-en",
-      "p:telling-time",
-      "p:tener-en-cuenta"
+      "p:telling-time"
     ]
   },
   {
@@ -758,7 +756,7 @@
         "label": "at least 6 sentences"
       }
     ],
-    "model": "Estimado señor: Soy el dueño del café que queda justo debajo de su terraza y le escribo con la mayor cortesía, aunque confieso que son las tres de la mañana y no he dormido nada. Anoche sus parlantes sonaron hasta la una de la mañana, y mi loro, Simón, no lo tomó muy bien. Como siga con las pruebas de sonido a medianoche, tendré que llamar a la policía y también a mis abogados. Y como me entere de que usted ha vuelto a poner música los domingos, le prometo que le devolveré el favor con un concierto de ollas desde las cinco de la mañana. No tengo nada contra usted ni contra su trabajo, pero necesito dormir, y mis clientes también. Si quiere, venga a tomar un tinto y lo hablamos sin enojos. Estoy seguro de que podemos entendernos como vecinos. Reciba un saludo cordial y una invitación a bajar el volumen.",
+    "model": "Estimado señor: Soy el dueño del café que queda justo debajo de su terraza y le escribo con la mayor cortesía, aunque confieso que llevo tres noches sin dormir bien. Anoche sus parlantes sonaron hasta la una de la mañana, y mi loro, Simón, no lo tomó muy bien. Como siga con las pruebas de sonido a medianoche, tendré que llamar a la policía y también a mis abogados. Y como me entere de que usted vuelve a poner música los domingos, le prometo que le devolveré el favor con un concierto de ollas desde las cinco de la mañana. No tengo nada contra usted ni contra su trabajo, pero necesito dormir, y mis clientes también. Si quiere, venga a tomar un tinto y lo hablamos sin enojos. Estoy seguro de que podemos entendernos como buenos vecinos, sin abogados ni ollas. Reciba un saludo cordial y una invitación a bajar el volumen.",
     "focus": "p:como-me-entere",
     "requires": [
       "c:ayer-anoche",
@@ -767,6 +765,7 @@
       "c:siga",
       "c:tengo",
       "c:un-abrazo",
+      "g:adjective-agreement",
       "g:aunque-indicative",
       "g:commands-usted",
       "g:conditional-advanced",
@@ -774,10 +773,11 @@
       "g:estar-location-states",
       "g:future-promises",
       "g:gender-articles",
+      "g:hace-que-desde",
       "g:indirect-objects",
       "g:negation-words",
       "g:object-pronoun-position",
-      "g:perfecto-experience",
+      "g:prep-infinitive",
       "g:prep-pronouns",
       "g:present-ar",
       "g:present-er-ir",
@@ -797,6 +797,7 @@
       "l:anoche",
       "l:bajar",
       "l:bien",
+      "l:bueno",
       "l:café",
       "l:cliente",
       "l:concierto",
@@ -818,12 +819,14 @@
       "l:invitación",
       "l:justo",
       "l:llamar",
+      "l:llevar",
       "l:loro",
       "l:mayor",
       "l:mañana",
       "l:medianoche",
       "l:música",
       "l:necesitar",
+      "l:noche",
       "l:olla",
       "l:poder",
       "l:policía",
@@ -865,13 +868,14 @@
       "p:por-la-manana",
       "p:position-de",
       "p:possessives-basic",
-      "p:telling-time"
+      "p:telling-time",
+      "p:volver-a-inf"
     ]
   },
   {
     "id": "w-u54-07",
     "unit": "u54",
-    "prompt": "The hotel manager has sent a message proposing a \"collaboration\": your café would serve breakfast to his guests under the hotel's name. Decline firmly but politely (usted). Use ni for emphasis at least twice (ni pensarlo, ni siquiera, ni amarrado, ni una palabra).",
+    "prompt": "The hotel manager has sent a message proposing a \"collaboration\": your café would serve breakfast to her guests under the hotel's name. Decline firmly but politely (usted). Use ni for emphasis at least twice (ni pensarlo, ni siquiera, ni amarrado, ni una palabra).",
     "minWords": 150,
     "maxWords": 250,
     "constraints": [
@@ -895,7 +899,7 @@
         "label": "usted, not tú"
       }
     ],
-    "model": "Estimado señor: Recibí su mensaje y le agradezco su propuesta, pero mi respuesta es no. ¿Colaborar con ustedes? Ni pensarlo. Este café lleva más de cuarenta años en la misma esquina y no pienso ponerle otro nombre ni siquiera por un buen precio. Usted me ofrece un contrato que no firmaría ni amarrado, y le digo por qué: sus abogados no han dejado ni una palabra sobre lo que pasa si ustedes se van. No es que dude de su buena fe, pero prefiero seguir como estoy. Tampoco voy a servir un solo desayuno más allá de mi puerta. Si sus huéspedes quieren probar el pan de Vale, que bajen a la calle y hagan fila como todo el mundo. Se lo digo con respeto, con una sonrisa y sin ningún rencor. Quedo atento a cualquier otra cosa que no sea esa, y le deseo mucho éxito con su negocio. Cordialmente, Tomás.",
+    "model": "Estimada señora: Recibí su mensaje y le agradezco su propuesta, pero mi respuesta es no. ¿Colaborar con ustedes? Ni pensarlo. Este café lleva más de cuarenta años en la misma esquina y no pienso ponerle otro nombre ni siquiera por un buen precio. Usted me ofrece un contrato que no firmaría ni amarrado, y le digo por qué: sus abogados no han dejado ni una palabra sobre lo que pasa si ustedes se van. No es que dude de su buena fe, pero prefiero seguir como estoy. Tampoco voy a servir un solo desayuno más allá de mi puerta. Si sus huéspedes quieren probar el pan de Vale, que bajen a la calle y hagan fila como todo el mundo. Se lo digo con respeto, con una sonrisa y sin ningún rencor. Quedo atento a cualquier otra cosa que no sea esa, y le deseo mucho éxito con su negocio. Cordialmente, Tomás.",
     "focus": "p:ni-emphatic",
     "requires": [
       "c:es-que",
@@ -903,6 +907,7 @@
       "c:ni-amarrado",
       "c:quedo-atento",
       "c:voy-a",
+      "g:adjective-agreement",
       "g:adverbs-mente",
       "g:cada-cualquier",
       "g:comparatives-advanced",
@@ -989,7 +994,7 @@
       "l:seguir",
       "l:ser",
       "l:servir",
-      "l:señor",
+      "l:señora",
       "l:siquiera",
       "l:sonrisa",
       "l:éxito",
@@ -1019,7 +1024,7 @@
   {
     "id": "w-u54-08",
     "unit": "u54",
-    "prompt": "A customer asked in the shop who writes the jokes of the day on the café's chalkboard, and whether they are aimed at the hotel. In reality Hernando writes them, but you want to play dumb. Reply in a short note, in usted, claiming not to have the faintest idea (no tengo la menor idea, en mi vida he visto…), while winking that someone sure has a talent.",
+    "prompt": "A customer asked in the café who writes the jokes of the day on the café's chalkboard, and whether they are aimed at the hotel. In reality Hernando writes them, but you want to play dumb. Reply in a short note, in usted, claiming not to have the faintest idea (no tengo la menor idea, en mi vida he visto…), while winking that someone sure has a talent.",
     "minWords": 150,
     "maxWords": 250,
     "constraints": [
@@ -1048,7 +1053,7 @@
         "label": "at least 6 sentences"
       }
     ],
-    "model": "Buenas tardes. Usted me pregunta quién escribe los chistes de la pizarra, y le contesto con la verdad en la mano: no tengo la menor idea. Cuando abro el café, ya están ahí, escritos con una letra muy elegante. En mi vida he visto a nadie con tanta puntería. Ayer apareció uno sobre las habitaciones con vista al muro y, créame, yo no sabía nada. Ni siquiera me atrevería a sospechar de nadie. Si me pregunta si Hernando tiene algo que ver, le diré que no tengo la más remota sospecha. Él se sienta siempre en la misma mesa, pide un tinto y mira el techo con cara de ángel. Supongo que será algún cliente anónimo con mucho ingenio. Si usted lo descubre, avíseme, que le debo un café. Es cuestión de tiempo para que se sepa quién es. Mientras tanto, la próxima vez que venga, pida el pan con queso, que es cosa seria. Un saludo, y gracias por leernos.",
+    "model": "Buenas tardes. Usted me pregunta quién escribe los chistes de la pizarra, y le contesto con la verdad en la mano: no tengo la menor idea. Cuando abro el café, ya están ahí, escritos con una letra muy elegante. En mi vida he visto a nadie con tanta puntería. Ayer apareció uno sobre las habitaciones con vista al muro y, créame, yo no sabía nada. Ni siquiera me atrevería a sospechar de nadie. Si me pregunta si Hernando tiene algo que ver, le diré que no tengo ni la más remota idea. Él se sienta siempre en la misma mesa, pide un tinto y mira el techo con cara de ángel. Supongo que será algún cliente anónimo con mucho ingenio. Si usted lo descubre, avíseme, que le debo un café. Es cuestión de tiempo que se sepa quién es. Mientras tanto, la próxima vez que venga, pida el pan con queso, que es cosa seria. Un saludo, y gracias por leernos.",
     "focus": "p:la-menor-idea",
     "requires": [
       "c:ayer-anoche",
@@ -1073,7 +1078,6 @@
       "g:indirect-questions",
       "g:negation-words",
       "g:object-pronoun-position",
-      "g:para-que",
       "g:perfecto-experience",
       "g:present-ar",
       "g:present-er-ir",
@@ -1087,6 +1091,7 @@
       "g:stem-boot",
       "g:stem-e-i",
       "g:subj-irregulars",
+      "g:subj-relative",
       "g:superlatives",
       "g:that-clauses",
       "g:yo-irregular",
@@ -1627,7 +1632,7 @@
         "label": "at least 6 sentences"
       }
     ],
-    "model": "Querida abuela Rosa: ¡Quién lo hubiera dicho! Un año después de tu partida, el café sigue abierto, y no solo eso: ahora es famoso. Hernando escribe chistes en la pizarra, y la gente los fotografía. ¡Ojalá hubieras podido ver la cara del gerente del hotel cuando leyó el primero! Altamira abrió su bar, pero no se llevó a nuestros clientes, y la cuadra sigue siendo la que tú conociste. Vale ha cambiado la carta y ahora tenemos un pan que te habría encantado. ¡Si al menos me hubieras dejado un par de recetas más! Aunque creo que lo sabías: querías que yo me las arreglara solo. Simón repite tu nombre cada mañana, y yo no sé si es cariño o costumbre. Te extraño mucho, pero me alegra que me hayas dejado este lugar. Un beso grande, tu nieto Tomás. Aquí no nos falta nada, salvo tú, y a veces siento que tampoco faltas, porque te veo en cada esquina.",
+    "model": "Querida abuela Rosa: ¡Quién lo hubiera dicho! Un año después de tu partida, el café sigue abierto, y no solo eso: ahora es famoso. Hernando escribe chistes en la pizarra, y la gente los fotografía. ¡Ojalá hubieras podido ver la cara de la gerente del hotel cuando leyó el primero! Altamira abrió su bar, pero no se llevó a nuestros clientes, y la cuadra sigue siendo la que tú conociste. Vale ha cambiado la carta y ahora tenemos un pan que te habría encantado. ¡Si al menos me hubieras dejado un par de recetas más! Aunque creo que lo sabías: querías que yo me las arreglara solo. Simón repite tu nombre cada mañana, y yo no sé si es cariño o costumbre. Aquí no nos falta nada, salvo tú, y a veces siento que tampoco faltas, porque te veo en cada esquina. Te extraño mucho, pero me alegra que me hayas dejado este lugar. Un beso grande, tu nieto Tomás.",
     "focus": "g:wish-exclamatives",
     "requires": [
       "c:creo-que",

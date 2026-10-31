@@ -3,7 +3,7 @@
   "unit": "u54",
   "title": "El loro tiene ingenio",
   "spare": true,
-  "brief": "You're yourself, talking with Don Hernando, who is much older than you, so use usted. Simón the parrot has learned one of the jokes and repeated it to a hotel guest. Praise, tease and find the bright side.",
+  "brief": "You're Tomás, talking with Don Hernando, who is much older than you, so use usted. Simón the parrot has learned one of the jokes and repeated it to a hotel guest. Praise, tease and find the bright side.",
   "turns": [
     {
       "id": "t1",
@@ -61,9 +61,9 @@
       "npcEn": "Hernando: But the parrot is no slouch either: the guest laughed and gave him cookies.",
       "intent": "Find the bright side: at least a guest laughed (use: que ya es algo).",
       "accept": [
-        "Un huésped que se ríe, que ya es algo.",
-        "Bueno, que ya es algo: al menos Simón cobra en galletas.",
-        "Que ya es algo, don Hernando: alguien del hotel se rio."
+        "Al menos un huésped se rio, que ya es algo.",
+        "Simón ya cobra en galletas, que ya es algo.",
+        "Alguien del hotel se rio, don Hernando, que ya es algo."
       ],
       "require": [
         {
@@ -78,8 +78,8 @@
     },
     {
       "id": "t4",
-      "npc": "Hernando: Eso de que un loro le mama gallo a un hotel entero no me lo creo.",
-      "npcEn": "Hernando: This story about a parrot teasing a whole hotel I don't believe.",
+      "npc": "Hernando: Ahora dicen que Simón les mama gallo a los huéspedes a propósito.",
+      "npcEn": "Hernando: Now they say Simón teases the guests on purpose.",
       "intent": "Say Simón is not teasing them, he only repeats what he hears.",
       "accept": [
         "Simón no les mama gallo, solo repite lo que oye.",
@@ -99,13 +99,29 @@
       "id": "t5",
       "npc": "Hernando: Entonces mañana le enseño uno nuevo. ¿Me acompaña a tomar un tinto?",
       "npcEn": "Hernando: Then tomorrow I'll teach him a new one. Will you join me for a black coffee?",
-      "intent": "Accept and say you'll bring the bread.",
+      "intent": "Accept, and tease him: he really does love that parrot (use: ¡Mire que...!).",
       "accept": [
-        "Con gusto, don Hernando. Yo traigo el pan.",
-        "Claro que sí. Mañana yo traigo el pan.",
-        "Encantado, don Hernando. El pan lo traigo yo."
+        "Con gusto. ¡Mire que le gusta enseñarle cosas a ese loro!",
+        "Claro que sí. ¡Mire que le encanta ese loro, don Hernando!",
+        "Encantado, don Hernando. ¡Mire que es usted terco con ese loro!"
       ],
-      "require": [],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bmire que\\b",
+          "flags": "iu",
+          "label": "use: ¡Mire que...!"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "eres",
+            "te gusta",
+            "te encanta"
+          ],
+          "label": "use usted (mire, le), not tú"
+        }
+      ],
       "focus": "p:mira-que",
       "next": null
     }
@@ -116,7 +132,6 @@
     "c:entonces-bueno",
     "c:es-que",
     "c:hablar-por-los-codos",
-    "c:hago-salgo-vengo",
     "c:no-se",
     "c:no-se-queda-atras",
     "c:oiga-oye",
@@ -131,8 +146,11 @@
     "g:estar-gerund",
     "g:estar-location-states",
     "g:gender-articles",
+    "g:gustar-basic",
+    "g:gustar-full",
     "g:indirect-objects",
     "g:le-doubling",
+    "g:object-pronoun-position",
     "g:passive-se",
     "g:present-ar",
     "g:present-er-ir",
@@ -148,25 +166,26 @@
     "g:that-clauses",
     "g:yo-irregular",
     "l:acompañar",
+    "l:ahora",
     "l:aprender",
     "l:aquí",
     "l:atrás",
     "l:bromear",
-    "l:bueno",
     "l:chiste",
     "l:claro",
     "l:cobrar",
     "l:codo",
-    "l:creer",
+    "l:cosa",
     "l:dar",
     "l:decir",
     "l:encantado",
+    "l:encantar",
     "l:enseñar",
-    "l:entero",
     "l:escuchar",
     "l:estar",
     "l:galleta",
     "l:gallo",
+    "l:gustar",
     "l:gusto",
     "l:hablar",
     "l:hotel",
@@ -176,9 +195,10 @@
     "l:loro",
     "l:mamar",
     "l:mañana",
+    "l:mirar",
     "l:nuevo",
     "l:oír",
-    "l:pan",
+    "l:propósito",
     "l:quedarse",
     "l:repetir",
     "l:reír",
@@ -188,16 +208,12 @@
     "l:tener",
     "l:tinto",
     "l:tomar",
-    "l:traer",
     "p:aqui-ahi-alla",
     "p:dativo-aspectual",
-    "p:demonstratives-basic",
     "p:don-dona-nombre",
-    "p:es-verdad-eso-de-que",
-    "p:eso-de-que",
     "p:indefinites-basic",
-    "p:llevar-traer",
     "p:me-te-nos-objects",
+    "p:mira-que",
     "p:possessives-basic",
     "p:pues-claro-que",
     "p:saber-conocer",

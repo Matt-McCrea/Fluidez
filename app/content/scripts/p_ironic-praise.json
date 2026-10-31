@@ -87,9 +87,9 @@
     {
       "es": "Te aviso hoy que mañana empiezan las obras.\n¡Qué detalle avisarme con tanta anticipación!",
       "options": [
-        "How thoughtful of you to warn me so far in advance!",
-        "I'm very happy that you warned me early.",
-        "You warned me far too late, thanks a lot."
+        "The speaker is happy to have had so much notice.",
+        "The speaker is surprised the warning came so early.",
+        "The speaker is complaining that the warning came far too late."
       ],
       "answer": 2
     },
@@ -154,7 +154,8 @@
       "prompt": "Make it about two friends (you all): *Gracias por tu ayuda, no sé qué habría hecho sin ti.*",
       "answer": "Gracias por su ayuda, no sé qué habría hecho sin ustedes.",
       "accept": [
-        "Gracias por su ayuda. No sé qué habría hecho sin ustedes."
+        "Gracias por su ayuda. No sé qué habría hecho sin ustedes.",
+        "Gracias por la ayuda, no sé qué habría hecho sin ustedes."
       ],
       "why": "For several people, *su* and *ustedes*."
     }

@@ -1,7 +1,7 @@
 {
   "node": "p:como-me-entere",
   "hook": {
-    "line": "Don Hernando lent Tomás some money and wants it back. He does not shout: he starts a sentence and lets the silence finish it.",
+    "line": "Vale lent Tomás money for flour, and she wants it back. She does not shout: she starts a sentence and lets the silence finish it.",
     "es": "Como no me devuelvas la plata esta semana, se acabó.",
     "en": "If you don't pay me back this week, that's it."
   },
@@ -122,7 +122,9 @@
     {
       "prompt": "If she has forgotten the keys, we can't get in.",
       "answer": "Como se haya olvidado de las llaves, no entramos.",
-      "accept": [],
+      "accept": [
+        "Como se le hayan olvidado las llaves, no entramos."
+      ],
       "why": "*Se haya olvidado* is the looking ahead form of has forgotten."
     },
     {

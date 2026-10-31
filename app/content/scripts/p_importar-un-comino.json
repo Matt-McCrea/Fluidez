@@ -31,7 +31,7 @@
       "en": "I couldn't care less that Vale is late."
     }
   ],
-  "rule": "*Importar* works like *gustar*: the thing matters *to* someone, so you say *me importa*, *le importa*, *les importa*, and the thing comes after.\nAdd *un comino* (a cumin seed, something worthless) and it means \"I couldn't care less\". The meaning is already negative, so you don't need *no*: *Me importa un comino.* You can also say *un pepino* or, very Colombian, *un pito*.\nIt is for friends and gossip, not for formal letters. *Me importa mucho* says the opposite: it matters a lot.",
+  "rule": "*Importar* works like *gustar*: the thing matters *to* someone, so you say *me importa*, *le importa*, *les importa*, and the thing comes after.\nAdd *un comino* (a cumin seed, something worthless) and it means \"I couldn't care less\". The meaning is already negative, so you don't need *no*: *Me importa un comino.* You can also say *un pepino* or *un pito*.\nIt is for friends and gossip, not for formal letters. *Me importa mucho* says the opposite: it matters a lot.",
   "smallPrint": "Teachers call this a negative-polarity idiom: a tiny, worthless thing stands in for \"not at all\".",
   "readAndPick": [
     {
@@ -159,7 +159,7 @@
   ],
   "pitfalls": [
     {
-      "wrong": "Yo importo un comino lo que dice.",
+      "wrong": "Yo importo un comino lo que diga.",
       "right": "Me importa un comino lo que diga.",
       "why": "Almost. *Importar* works like *gustar*: the thing matters *to* you, so the small word is *me*."
     },

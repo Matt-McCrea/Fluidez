@@ -3,7 +3,7 @@
   "unit": "u54",
   "title": "Cien mil me gusta",
   "spare": true,
-  "brief": "You're yourself, with Vale, who is your age, so use tú. A photo of the chalkboard has gone viral, and she keeps showing you her phone. Answer with the wishes and exclamations Spanish uses for surprise, hope and regret.",
+  "brief": "You're Tomás, with Vale, who is your age, so use tú. A photo of the chalkboard has gone viral, and she keeps showing you her phone. Answer with the wishes and exclamations Spanish uses for surprise, hope and regret.",
   "turns": [
     {
       "id": "t1",
@@ -51,7 +51,7 @@
       "id": "t3",
       "npc": "Vale: ¿Sabías que esto iba a pasar?",
       "npcEn": "Vale: Did you know this was going to happen?",
-      "intent": "Insist that of course: you already told her (use: ¡Si ya te lo dije!).",
+      "intent": "Protest that you already told her so (use: ¡Si ya te lo dije!).",
       "accept": [
         "¡Si ya te lo dije!",
         "¡Pero si ya te lo dije, Vale!",

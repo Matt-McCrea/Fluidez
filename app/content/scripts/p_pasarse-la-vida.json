@@ -31,7 +31,7 @@
       "en": "Vale spent the morning making bread."
     }
   ],
-  "rule": "To say how someone fills their time, use *pasarse* plus a stretch of time plus the *-ando* / *-iendo* form: *me paso*, *te pasas*, *se pasa*, *nos pasamos*.\n*La vida* means \"all the time\" and is exaggeration. Smaller stretches: *el día*, *la tarde*, *la noche*, *la semana*.\nPresent is a habit or a complaint. The past (*me pasé*) is one stretch that is over.\nThe activity is the *-ando* / *-iendo* form: no *a*, no *en*, no infinitive.",
+  "rule": "To say how someone fills their time, use *pasarse* plus a stretch of time plus the *-ando* or *-iendo* form: *me paso*, *te pasas*, *se pasa*, *nos pasamos*.\n*La vida* means \"all the time\" and is exaggeration. Smaller stretches: *el día*, *la tarde*, *la noche*, *la semana*.\nPresent is a habit or a complaint. The past (*me pasé*) is one stretch that is over.\nThe activity is the *-ando* or *-iendo* form: no *a*, no *en*, no infinitive.",
   "smallPrint": "Teachers call *quejándose* and *durmiendo* gerunds. Here they say what fills the time.",
   "readAndPick": [
     {
@@ -109,7 +109,7 @@
       "accept": [
         "Se pasa la vida quejándose."
       ],
-      "why": "The activity after the time is the *-ando* / *-iendo* form."
+      "why": "The activity after the time is the *-ando* or *-iendo* form."
     },
     {
       "prompt": "Choose *durmiendo* or *dormir*, then type the whole sentence: Me pasé el día ___. (I spent the day sleeping.)",
@@ -141,7 +141,7 @@
       "prompt": "Make it about Vale: *Me paso la mañana haciendo pan.* becomes: Vale spends the morning making bread.",
       "answer": "Vale se pasa la mañana haciendo pan.",
       "accept": [],
-      "why": "Vale is *he* or *she*, so *se pasa*."
+      "why": "Vale is *she*, so *se pasa*."
     },
     {
       "prompt": "Make it past: *Se pasa la tarde leyendo.* becomes: He spent the afternoon reading.",
@@ -156,7 +156,7 @@
     {
       "wrong": "Se pasa la vida a quejarse.",
       "right": "Se pasa la vida quejándose.",
-      "why": "Almost. After *pasarse* the activity is the *-ando* / *-iendo* form: no *a*, no infinitive."
+      "why": "Almost. After *pasarse* the activity is the *-ando* or *-iendo* form: no *a*, no infinitive."
     },
     {
       "wrong": "Me paso el día durmiendo ayer.",

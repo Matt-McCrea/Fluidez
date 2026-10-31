@@ -6,38 +6,167 @@
     "en": "There's an art to driving in Bogotá."
   },
   "examples": [
-    { "es": "Esto tiene su truco.", "en": "There's a trick to this." },
-    { "es": "Manejar en Bogotá tiene su ciencia.", "en": "There's an art to driving in Bogotá." },
-    { "es": "El plan tiene sus riesgos.", "en": "The plan has its risks." },
-    { "es": "Vivir en La Candelaria tiene sus ventajas.", "en": "Living in La Candelaria has its advantages." },
-    { "es": "La idea tiene su gracia, pero no funciona.", "en": "The idea has a certain charm, but it doesn't work." },
-    { "es": "Tiene su gracia que Altamira hable de historia.", "en": "It's a bit funny that Altamira talks about history." }
+    {
+      "es": "Esto tiene su truco.",
+      "en": "There's a trick to this."
+    },
+    {
+      "es": "Manejar en Bogotá tiene su ciencia.",
+      "en": "There's an art to driving in Bogotá."
+    },
+    {
+      "es": "El plan tiene sus riesgos.",
+      "en": "The plan has its risks."
+    },
+    {
+      "es": "Vivir en La Candelaria tiene sus ventajas.",
+      "en": "Living in La Candelaria has its advantages."
+    },
+    {
+      "es": "La idea tiene su gracia, pero no funciona.",
+      "en": "The idea has a certain charm, but it doesn't work."
+    },
+    {
+      "es": "Tiene su gracia que Altamira hable de historia.",
+      "en": "It's a bit funny that Altamira talks about history."
+    }
   ],
   "rule": "Here *su* does not mean \"his\" or \"hers\". Nobody owns the trick. It means \"quite a bit of\": *Esto tiene su truco* says there is more to this than it looks.\n\nThe frame is *tener* plus *su* (or *sus* before a plural noun) plus a noun like *truco*, *ciencia*, *riesgo*, *ventaja*, *complicación*.\n\nThe tone is wry understatement. You rarely mean it is simple, and you rarely mean it is a disaster.\n\n*Tiene su gracia* is the classic: \"it's funny, in its way\", often when something is ironic. Add *que* and a new clause to say what is funny.",
   "smallPrint": "Teachers call this a possessive used for emphasis or quantification, not for ownership.",
   "readAndPick": [
-    { "es": "El plan tiene sus riesgos.", "options": ["The plan has no risks.", "The plan has quite a few risks.", "His plan is risky."], "answer": 1 },
-    { "es": "Esto tiene su truco.", "options": ["There's a trick to this.", "This is a trick.", "This has no trick."], "answer": 0 },
-    { "es": "Hablar con Hernando tiene su ciencia.", "options": ["Talking to Hernando is easy.", "Hernando talks to the scientist.", "There's an art to talking to Hernando."], "answer": 2 },
-    { "es": "Tiene su gracia que Altamira hable de historia.", "options": ["It's a bit funny that Altamira talks about history.", "Altamira has no sense of humour about history.", "It's not funny that Altamira talks about history."], "answer": 0 },
-    { "es": "La idea tiene su gracia, pero no funciona.", "options": ["The idea is funny, so it works.", "The idea has no charm, and it doesn't work.", "The idea has a certain charm, but it doesn't work."], "answer": 2 },
-    { "es": "Vivir en La Candelaria tiene sus ventajas.", "options": ["Living in La Candelaria has no advantages.", "Living in La Candelaria has its advantages.", "Living in La Candelaria is her advantage."], "answer": 1 },
-    { "es": "Esta receta tiene su complicación.", "options": ["This recipe is not complicated.", "This recipe is hers.", "This recipe is a little complicated, in its way."], "answer": 2 },
-    { "es": "El tráfico de Bogotá tiene su ciencia.", "options": ["There's an art to Bogotá traffic.", "Bogotá traffic is no problem.", "Bogotá traffic is a science."], "answer": 0 }
+    {
+      "es": "El plan tiene sus riesgos.",
+      "options": [
+        "The plan has no risks.",
+        "The plan has quite a few risks.",
+        "His plan is risky."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Esto tiene su truco.",
+      "options": [
+        "There's a trick to this.",
+        "This is a trick.",
+        "This has no trick."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hablar con Hernando tiene su ciencia.",
+      "options": [
+        "Talking to Hernando is easy.",
+        "Hernando talks to the scientist.",
+        "There's an art to talking to Hernando."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tiene su gracia que Altamira hable de historia.",
+      "options": [
+        "It's a bit funny that Altamira talks about history.",
+        "Altamira has no sense of humour about history.",
+        "It's not funny that Altamira talks about history."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La idea tiene su gracia, pero no funciona.",
+      "options": [
+        "The idea is funny, so it works.",
+        "The idea has no charm, and it doesn't work.",
+        "The idea has a certain charm, but it doesn't work."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Vivir en La Candelaria tiene sus ventajas.",
+      "options": [
+        "Living in La Candelaria has no advantages.",
+        "Living in La Candelaria has its advantages.",
+        "Living in La Candelaria is her advantage."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Esta receta tiene su complicación.",
+      "options": [
+        "This recipe is not complicated.",
+        "This recipe is hers.",
+        "This recipe is a little complicated, in its way."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El tráfico de Bogotá tiene su ciencia.",
+      "options": [
+        "There's an art to Bogotá traffic.",
+        "Bogotá traffic is no problem.",
+        "Bogotá traffic is studied by scientists."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick *su* or *sus* and type the whole sentence: *El plan tiene ___ riesgos.*", "answer": "El plan tiene sus riesgos.", "accept": [], "why": "*Riesgos* is plural, so the little word is *sus*." },
-    { "prompt": "Type in Spanish: There's a trick to this.", "answer": "Esto tiene su truco.", "accept": [], "why": "*Tiene su* plus a singular noun." },
-    { "prompt": "Type in Spanish: There's an art to driving in Bogotá.", "answer": "Manejar en Bogotá tiene su ciencia.", "accept": [], "why": "An infinitive can be the subject: *manejar* is the thing that has its art." },
-    { "prompt": "Type in Spanish: Living in La Candelaria has its advantages.", "answer": "Vivir en La Candelaria tiene sus ventajas.", "accept": [], "why": "*Ventajas* is plural, so *sus*." },
-    { "prompt": "Make it plural: *Esta receta tiene su complicación.* Say: This recipe has its complications.", "answer": "Esta receta tiene sus complicaciones.", "accept": [], "why": "Both the little word and the noun go plural: *sus complicaciones*." },
-    { "prompt": "Type in Spanish: It's a bit funny that Altamira talks about history.", "answer": "Tiene su gracia que Altamira hable de historia.", "accept": [], "why": "*Tiene su gracia que* is followed by a new clause." },
-    { "prompt": "Type in Spanish: The idea has a certain charm, but it doesn't work.", "answer": "La idea tiene su gracia, pero no funciona.", "accept": [], "why": "*Pero* adds the catch, as in English." }
+    {
+      "prompt": "Pick *su* or *sus* and type the whole sentence: *El plan tiene ___ riesgos.*",
+      "answer": "El plan tiene sus riesgos.",
+      "accept": [],
+      "why": "*Riesgos* is plural, so the little word is *sus*."
+    },
+    {
+      "prompt": "Type in Spanish: There's a trick to this.",
+      "answer": "Esto tiene su truco.",
+      "accept": [],
+      "why": "*Tiene su* plus a singular noun."
+    },
+    {
+      "prompt": "Type in Spanish: There's an art to driving in Bogotá.",
+      "answer": "Manejar en Bogotá tiene su ciencia.",
+      "accept": [],
+      "why": "An infinitive can be the subject: *manejar* is the thing that has its art."
+    },
+    {
+      "prompt": "Type in Spanish: Living in La Candelaria has its advantages.",
+      "answer": "Vivir en La Candelaria tiene sus ventajas.",
+      "accept": [],
+      "why": "*Ventajas* is plural, so *sus*."
+    },
+    {
+      "prompt": "Make it plural: *Esta receta tiene su complicación.* Say: This recipe has its complications.",
+      "answer": "Esta receta tiene sus complicaciones.",
+      "accept": [],
+      "why": "Both the little word and the noun go plural: *sus complicaciones*."
+    },
+    {
+      "prompt": "Type in Spanish: It's a bit funny that Altamira talks about history.",
+      "answer": "Tiene su gracia que Altamira hable de historia.",
+      "accept": [],
+      "why": "*Tiene su gracia que* is followed by a new clause."
+    },
+    {
+      "prompt": "Type in Spanish: The idea has a certain charm, but it doesn't work.",
+      "answer": "La idea tiene su gracia, pero no funciona.",
+      "accept": [],
+      "why": "*Pero* adds the catch, as in English."
+    }
   ],
   "pitfalls": [
-    { "wrong": "El plan tiene su riesgos.", "right": "El plan tiene sus riesgos.", "why": "Almost. The little word agrees with the noun that follows: plural *riesgos* needs *sus*." },
-    { "wrong": "Es su gracia que Altamira hable de historia.", "right": "Tiene su gracia que Altamira hable de historia.", "why": "Almost. The phrase is built on *tener*, not *ser*." },
-    { "wrong": "El plan tiene los riesgos.", "right": "El plan tiene sus riesgos.", "why": "Almost. *Los riesgos* is just \"the risks\"; *sus* adds the wry \"quite a few\"." }
+    {
+      "wrong": "El plan tiene su riesgos.",
+      "right": "El plan tiene sus riesgos.",
+      "why": "Almost. The little word agrees with the noun that follows: plural *riesgos* needs *sus*."
+    },
+    {
+      "wrong": "Es su gracia que Altamira hable de historia.",
+      "right": "Tiene su gracia que Altamira hable de historia.",
+      "why": "Almost. The phrase is built on *tener*, not *ser*."
+    },
+    {
+      "wrong": "El plan tiene los riesgos.",
+      "right": "El plan tiene sus riesgos.",
+      "why": "Almost. *Los riesgos* is just \"the risks\"; *sus* adds the wry \"quite a few\"."
+    }
   ],
   "personal": "Pick something in your life that looks easy but isn't, and say it with *tiene su…*."
 }

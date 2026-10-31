@@ -161,9 +161,9 @@
       "why": "Almost. Here *si* means \"but\" and has no accent; *sí* with an accent means \"yes\"."
     },
     {
-      "wrong": "¿Que si me gusta? ¡Gusto!",
-      "right": "¿Que si me gusta? ¡Me encanta!",
-      "why": "Almost. Give a strong answer: *me encanta* says more than a plain yes."
+      "wrong": "¿Cómo que no vengas? ¡Si lo prometiste!",
+      "right": "¿Cómo que no vienes? ¡Si lo prometiste!",
+      "why": "Almost. They told you a fact, so you echo it as they said it: *vienes*. The wish form is only for echoing an order."
     }
   ],
   "personal": "Think of something a friend might say that would annoy you. Write it, then answer with *¿Cómo que…?* and a *¡Si…!*"
