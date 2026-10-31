@@ -1,0 +1,328 @@
+{
+  "id": "ch159",
+  "unit": "u48",
+  "title": "Sin haber entrado",
+  "text": "Jhon Fredy llegó primero, con una corona dorada de papel que le sobró a la exposición de la galería. Se la puso a Simón en la cabeza.\nJhon Fredy: Para el número uno.\nSimón la tiró al piso en cuatro segundos.\nA las nueve en punto, Clemencia sacó sus hojas y leyó sin levantar la vista, con su voz de siempre.\nClemencia: «Informe técnico sobre la casa de la carrera Tercera con calle Doce. Construida hacia 1923, la casa es de adobe y madera, con muros de sesenta centímetros, los cuales se encuentran en perfecto estado».\nHernando: Eso último léalo otra vez, arquitecta. Despacio.\nClemencia: «Los cuales se encuentran en perfecto estado».\nHernando cerró los ojos, como cuando sonaba un bolero en el taxi.\nClemencia: «Después de haber medido las vibraciones durante tres días, se concluye lo siguiente: la grieta de la viga principal fue causada por la obra del solar vecino, la cual trabaja a un metro y veinte de la casa, y no a tres metros, como dicen los planos. Las vibraciones viajan por el suelo, el cual es blando en esta zona».\nMariana: Eso es. Eso es lo que necesitábamos.\nClemencia: Falta un párrafo. «El informe de Grupo Altamira fue copiado de otro documento. El ingeniero lo firmó sin haber entrado nunca en la casa».\nHernando: Como el cuento del lobo. El lobo sopló y sopló, y la casa de ladrillo no se cayó.\nClemencia: El lobo soplaba. Estas máquinas pesan más que un bus. Con respeto, don Hernando, el cuento no sirve.\nClemencia firmó las tres copias. Después, por primera vez en cuatro días, se sentó.\nClemencia: Mi abuela tenía una casa de adobe en Boyacá, en el campo. Cuando yo tenía doce años, la tumbaron para hacer una carretera. Nadie la midió. Nadie escribió nada.\nTomás: Y por eso usted lo mide todo.\nClemencia: Por eso.\nTomás le contó que en Toronto las casas son de madera y ladrillo, y que en invierno la nieve llega hasta las ventanas.\nHernando: Yo nunca he visto la nieve.\nTomás: Es como el frío de Bogotá, pero blanco y en el suelo.\nClemencia guardó sus hojas y le dio una copia a Tomás.\nClemencia: Con esto, el Instituto puede pedir que paren la obra. Pero mi informe es técnico. La queja la tienen que escribir ustedes, a la Alcaldía, en lenguaje formal.\nTomás: ¿Formal cómo?\nClemencia: Sin «parce». Sin chistes. Y sin pájaros.\nSimón: ¡Parce!\nHernando: Yo la escribo. Tengo una letra muy bonita.\nVale: Usted escribe como habla, don Hernando. Eso es justamente el problema.",
+  "gloss": [
+    {
+      "es": "dorada",
+      "en": "golden"
+    },
+    {
+      "es": "adobe",
+      "en": "adobe (sun-dried mud brick)"
+    },
+    {
+      "es": "bolero",
+      "en": "bolero (romantic Latin song)"
+    },
+    {
+      "es": "vibraciones",
+      "en": "vibrations"
+    },
+    {
+      "es": "grieta",
+      "en": "crack"
+    },
+    {
+      "es": "viga",
+      "en": "beam"
+    },
+    {
+      "es": "solar",
+      "en": "plot of land"
+    },
+    {
+      "es": "blando",
+      "en": "soft"
+    },
+    {
+      "es": "tumbaron",
+      "en": "they knocked down"
+    },
+    {
+      "es": "se concluye lo siguiente",
+      "en": "the following conclusion is drawn"
+    },
+    {
+      "es": "Eso último léalo otra vez",
+      "en": "Read that last bit again"
+    },
+    {
+      "es": "El lobo sopló y sopló",
+      "en": "The wolf huffed and puffed"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Hernando ask Clemencia to read one sentence again, slowly?",
+      "options": [
+        "It says Rosa's walls are in perfect condition",
+        "He did not hear it because of the machines",
+        "He wants to correct a date",
+        "He disagrees with it"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "According to the report, what caused the crack in the beam?",
+      "options": [
+        "The works on the plot next door, 1.2 metres from the house",
+        "The age of the wood",
+        "Hernando leaning on the wall",
+        "An earthquake in 1923"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Clemencia measure everything so carefully?",
+      "options": [
+        "Her grandmother's adobe house was knocked down and nobody measured or recorded it",
+        "The Institute pays her by the measurement",
+        "She does not trust Tomás",
+        "She wants to work for Altamira"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué tienen que escribir ahora Tomás y sus amigos?",
+      "options": [
+        "Una queja formal a la Alcaldía",
+        "Un cuento sobre un lobo",
+        "Un informe técnico",
+        "Una carta a Toronto"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What happens to the paper crown Jhon Fredy puts on Simón?",
+      "options": [
+        "Simón throws it on the floor in four seconds",
+        "Simón wears it all morning",
+        "Hernando keeps it",
+        "Clemencia measures it"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How does Clemencia answer Hernando's story of the wolf?",
+      "options": [
+        "The wolf only blew, but these machines weigh more than a bus",
+        "She laughs for the first time",
+        "She agrees that adobe is like brick",
+        "She says wolves don't exist"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Tomás say snow is like?",
+      "options": [
+        "Bogotá's cold, but white and on the ground",
+        "A cloud that falls",
+        "Flour on the floor",
+        "Cold rain"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "The report is signed, and it is exactly the evidence they needed. Now the neighbours have to write a formal complaint to the mayor's office, with no jokes, no parce and no parrots, and Hernando is already sharpening his pencil.",
+  "requires": [
+    "c:no-se",
+    "c:no-sirve",
+    "c:tengo",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:adverbs-mente",
+    "g:cause-result",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:comparatives",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:infinitive-perfect",
+    "g:le-doubling",
+    "g:lo-adjective",
+    "g:passive-ser",
+    "g:perfecto-experience",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:relatives-formal",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-influence",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:verbs-of-change",
+    "g:yo-irregular",
+    "p:caerse-lastimarse",
+    "p:cuando-basic",
+    "p:demonstratives-basic",
+    "p:don-dona-nombre",
+    "p:durar-durante",
+    "p:encontrarse-hallarse",
+    "p:estar-hecho-de",
+    "p:focus-adverbs",
+    "p:frequency-scale",
+    "p:me-contaron-que",
+    "p:medir-pesar",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:pesar-pesarse",
+    "p:possessives-basic",
+    "p:precisamente-concretamente",
+    "p:provocar-ocasionar",
+    "p:quantifiers-basic",
+    "p:quedar-faltar-sobrar",
+    "p:senor-don-article",
+    "p:ser-de-material",
+    "p:street-names",
+    "p:telling-time",
+    "p:tener-anos",
+    "p:time-sequence-basic"
+  ],
+  "lexemes": [
+    "l:abuela",
+    "l:adobe",
+    "l:arquitecto",
+    "l:año",
+    "l:blanco",
+    "l:blando",
+    "l:bolero",
+    "l:bonito",
+    "l:bus",
+    "l:cabeza",
+    "l:caerse",
+    "l:calle",
+    "l:campo",
+    "l:carrera",
+    "l:carretera",
+    "l:casa",
+    "l:causar",
+    "l:centímetro",
+    "l:cerrar",
+    "l:chiste",
+    "l:concluir",
+    "l:construir",
+    "l:contar",
+    "l:copia",
+    "l:copiar",
+    "l:corona",
+    "l:cuento",
+    "l:cómo",
+    "l:dar",
+    "l:decir",
+    "l:despacio",
+    "l:después",
+    "l:documento",
+    "l:dorada",
+    "l:día",
+    "l:encontrarse",
+    "l:entrar",
+    "l:escribir",
+    "l:estar",
+    "l:exposición",
+    "l:faltar",
+    "l:firmar",
+    "l:formal",
+    "l:frío",
+    "l:galería",
+    "l:grieta",
+    "l:guardar",
+    "l:haber",
+    "l:hablar",
+    "l:hacer",
+    "l:hoja",
+    "l:informar",
+    "l:informe",
+    "l:ingeniero",
+    "l:invierno",
+    "l:justamente",
+    "l:ladrillo",
+    "l:leer",
+    "l:lenguaje",
+    "l:letra",
+    "l:levantarse",
+    "l:llegar",
+    "l:lobo",
+    "l:madera",
+    "l:medir",
+    "l:metro",
+    "l:muro",
+    "l:máquina",
+    "l:necesitar",
+    "l:nieve",
+    "l:número",
+    "l:obra",
+    "l:ojo",
+    "l:papel",
+    "l:parar",
+    "l:parce",
+    "l:pedir",
+    "l:perfecto",
+    "l:pesar",
+    "l:piso",
+    "l:plano",
+    "l:poder",
+    "l:ponerse",
+    "l:principal",
+    "l:problema",
+    "l:punto",
+    "l:pájaro",
+    "l:párrafo",
+    "l:queja",
+    "l:respeto",
+    "l:sacar",
+    "l:segundo",
+    "l:sentarse",
+    "l:ser",
+    "l:servir",
+    "l:siempre",
+    "l:siguiente",
+    "l:sobrar",
+    "l:solar",
+    "l:sonar",
+    "l:soplar",
+    "l:suelo",
+    "l:taxi",
+    "l:tener",
+    "l:tirar",
+    "l:trabajar",
+    "l:tumbar",
+    "l:técnico",
+    "l:vecino",
+    "l:ventana",
+    "l:ver",
+    "l:vez",
+    "l:viajar",
+    "l:vibraciones",
+    "l:viga",
+    "l:vista",
+    "l:voz",
+    "l:zona"
+  ]
+}
