@@ -34,7 +34,7 @@
       "accept": [
         "Es de Hernando, un taxista retirado. Siempre he creído que su vida da para un libro.",
         "De un taxista retirado, Hernando. Siempre he pensado que su historia merece un libro.",
-        "De un amigo del café. Siempre he pensado que cuenta su vida mejor que cualquier escritor."
+        "Es de Hernando, un taxista de mi barrio. Siempre he pensado que cuenta su vida mejor que cualquier escritor."
       ],
       "require": [
         {
@@ -84,7 +84,7 @@
       "accept": [
         "Será un desconocido, pero conoce cada calle de la ciudad.",
         "Será desconocido, pero tiene cincuenta años de historias.",
-        "Será un taxista retirado, pero ha visto Bogotá cambiar."
+        "Será un desconocido, pero ha visto cambiar a Bogotá durante cincuenta años."
       ],
       "require": [
         {
@@ -159,13 +159,11 @@
     "g:yo-irregular",
     "l:agradecer",
     "l:alegrarse",
-    "l:amigo",
     "l:ayudar",
     "l:año",
     "l:barrio",
     "l:bien",
     "l:buena",
-    "l:café",
     "l:calle",
     "l:cambiar",
     "l:capítulo",
@@ -224,6 +222,7 @@
     "p:bien-mal-vs-bueno-malo",
     "p:days-el-lunes",
     "p:de-owner",
+    "p:durar-durante",
     "p:frequency-scale",
     "p:gracias-por",
     "p:la-gente-singular",
@@ -242,7 +241,6 @@
     "p:queria-cortesia",
     "p:question-word-order",
     "p:saber-conocer",
-    "p:ser-profession-no-article",
     "p:te-lo-agradezco",
     "p:tener-anos",
     "p:viejo-antiguo-mayor"

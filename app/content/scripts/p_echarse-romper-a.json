@@ -6,38 +6,182 @@
     "en": "When he saw her, he burst into tears."
   },
   "examples": [
-    { "es": "Cuando la vio, rompió a llorar.", "en": "When he saw her, he burst into tears." },
-    { "es": "Todos se echaron a reír.", "en": "Everyone burst out laughing." },
-    { "es": "Se echó a correr.", "en": "She broke into a run." },
-    { "es": "De repente rompió a llover.", "en": "Suddenly it started to pour." },
-    { "es": "Hernando se echó a reír cuando Tomás pidió un tinto con leche.", "en": "Hernando burst out laughing when Tomás ordered a black coffee with milk." },
-    { "es": "Al oír la noticia, me eché a temblar.", "en": "When I heard the news, I began to tremble." }
+    {
+      "es": "Cuando la vio, rompió a llorar.",
+      "en": "When he saw her, he burst into tears."
+    },
+    {
+      "es": "Todos se echaron a reír.",
+      "en": "Everyone burst out laughing."
+    },
+    {
+      "es": "Se echó a correr.",
+      "en": "She broke into a run."
+    },
+    {
+      "es": "De repente rompió a llover.",
+      "en": "Suddenly it started to pour."
+    },
+    {
+      "es": "Hernando se echó a reír cuando Tomás pidió un tinto con leche.",
+      "en": "Hernando burst out laughing when Tomás ordered a black coffee with milk."
+    },
+    {
+      "es": "Al oír la noticia, me eché a temblar.",
+      "en": "When I heard the news, I began to tremble."
+    }
   ],
   "rule": "To say something starts suddenly and with force, use a small set of verbs.\n\n*Echarse a* + *reír*, *llorar*, *correr*, *temblar*. It is reflexive: *me eché*, *se echó*, *se echaron*.\n\n*Romper a* + *llorar*, *reír*, *llover*. No *se*: *rompió a llorar*.\n\nBoth are mostly used in the past, in stories. They only work with these verbs. For an ordinary action, like working or cooking, use *ponerse a*: *se puso a trabajar*.",
   "smallPrint": "Teachers call this an inchoative periphrasis: a verb that marks the sudden beginning of an action.",
   "readAndPick": [
-    { "es": "Rompió a llorar.", "options": ["She tried to cry.", "She stopped crying.", "She burst into tears."], "answer": 2 },
-    { "es": "Todos se echaron a reír.", "options": ["Everyone burst out laughing.", "Everyone laughed at him.", "Everyone stopped laughing."], "answer": 0 },
-    { "es": "Se echó a correr.", "options": ["She stopped running.", "She broke into a run.", "She went out for her morning run."], "answer": 1 },
-    { "es": "De repente rompió a llover.", "options": ["It had been raining all day.", "It suddenly stopped raining.", "Suddenly it started to pour."], "answer": 2 },
-    { "es": "Me eché a temblar.", "options": ["I started trembling.", "I stopped shaking.", "I threw myself down."], "answer": 0 },
-    { "es": "Los niños se echaron a llorar.", "options": ["The children were tired of crying.", "The children burst into tears.", "The children threw themselves on the floor."], "answer": 1 },
-    { "es": "Rompió a reír sin poder parar.", "options": ["He stopped laughing and walked away.", "He tried to laugh and could not.", "He burst out laughing and could not stop."], "answer": 2 },
-    { "es": "Se echaron a correr hacia la puerta.", "options": ["They broke into a run toward the door.", "They threw themselves at the door.", "They ran away from the door."], "answer": 0 }
+    {
+      "es": "Rompió a llorar.",
+      "options": [
+        "She tried to cry.",
+        "She stopped crying.",
+        "She burst into tears."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Todos se echaron a reír.",
+      "options": [
+        "Everyone burst out laughing.",
+        "Everyone laughed at him.",
+        "Everyone stopped laughing."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Se echó a correr.",
+      "options": [
+        "She stopped running.",
+        "She broke into a run.",
+        "She went out for her morning run."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "De repente rompió a llover.",
+      "options": [
+        "It had been raining all day.",
+        "It suddenly stopped raining.",
+        "Suddenly it started to pour."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Me eché a temblar.",
+      "options": [
+        "I started trembling.",
+        "I stopped shaking.",
+        "I threw myself down."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Los niños se echaron a llorar.",
+      "options": [
+        "The children were tired of crying.",
+        "The children burst into tears.",
+        "The children threw themselves on the floor."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Rompió a reír sin poder parar.",
+      "options": [
+        "He stopped laughing and walked away.",
+        "He tried to laugh and could not.",
+        "He burst out laughing and could not stop."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Se echaron a correr hacia la puerta.",
+      "options": [
+        "They broke into a run toward the door.",
+        "They threw themselves at the door.",
+        "They ran away from the door."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Choose *rompió a* or *se echó a*: \"Suddenly it started to pour.\"", "answer": "De repente rompió a llover.", "accept": ["De repente, rompió a llover.", "Rompió a llover de repente."], "why": "Only *romper a* goes with *llover*; *echarse a* does not." },
-    { "prompt": "Say: \"The children burst into tears.\"", "answer": "Los niños se echaron a llorar.", "accept": ["Los niños rompieron a llorar."], "why": "*Echarse a* takes *se*; *romper a* does not, and both work with *llorar*." },
-    { "prompt": "Say: \"When Vale saw the letter, she burst into tears.\"", "answer": "Cuando Vale vio la carta, rompió a llorar.", "accept": ["Cuando Vale vio la carta, se echó a llorar."], "why": "The preterite *vio* and *rompió* tell the story as one sudden moment." },
-    { "prompt": "Say: \"He broke into a run.\"", "answer": "Se echó a correr.", "accept": ["Él se echó a correr."], "why": "Running goes with *echarse a*; *romper a correr* is not used." },
-    { "prompt": "Change to *we*: *Se echó a reír.*", "answer": "Nos echamos a reír.", "accept": ["Nosotros nos echamos a reír."], "why": "*Se* becomes *nos* and the verb takes the *nosotros* ending." },
-    { "prompt": "Change to *they*: *Rompió a llorar.*", "answer": "Rompieron a llorar.", "accept": ["Ellos rompieron a llorar."], "why": "Only *rompió* changes; *romper a* never takes *se*." },
-    { "prompt": "Say: \"I began to tremble.\"", "answer": "Me eché a temblar.", "accept": ["Yo me eché a temblar."], "why": "*Me* matches *yo*, and *temblar* stays in the infinitive." }
+    {
+      "prompt": "Choose *rompió a* or *se echó a*: \"Suddenly it started to pour.\"",
+      "answer": "De repente rompió a llover.",
+      "accept": [
+        "De repente, rompió a llover.",
+        "Rompió a llover de repente."
+      ],
+      "why": "Only *romper a* goes with *llover*; *echarse a* does not."
+    },
+    {
+      "prompt": "Say: \"The children burst into tears.\"",
+      "answer": "Los niños se echaron a llorar.",
+      "accept": [
+        "Los niños rompieron a llorar."
+      ],
+      "why": "*Echarse a* takes *se*; *romper a* does not, and both work with *llorar*."
+    },
+    {
+      "prompt": "Say: \"When Vale saw the letter, she burst into tears.\"",
+      "answer": "Cuando Vale vio la carta, rompió a llorar.",
+      "accept": [
+        "Cuando Vale vio la carta, se echó a llorar."
+      ],
+      "why": "The preterite *vio* and *rompió* tell the story as one sudden moment."
+    },
+    {
+      "prompt": "Say: \"He broke into a run.\"",
+      "answer": "Se echó a correr.",
+      "accept": [
+        "Él se echó a correr."
+      ],
+      "why": "Running goes with *echarse a*; *romper a correr* is not used."
+    },
+    {
+      "prompt": "Change to *we*: *Se echó a reír.*",
+      "answer": "Nos echamos a reír.",
+      "accept": [
+        "Nosotros nos echamos a reír."
+      ],
+      "why": "*Se* becomes *nos* and the verb takes the *nosotros* ending."
+    },
+    {
+      "prompt": "Change to *they*: *Rompió a llorar.*",
+      "answer": "Rompieron a llorar.",
+      "accept": [
+        "Ellos rompieron a llorar."
+      ],
+      "why": "Only *rompió* changes; *romper a* never takes *se*."
+    },
+    {
+      "prompt": "Say: \"I began to tremble.\"",
+      "answer": "Me eché a temblar.",
+      "accept": [
+        "Yo me eché a temblar."
+      ],
+      "why": "*Me* matches *yo*, and *temblar* stays in the infinitive."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Se echó a trabajar.", "right": "Se puso a trabajar.", "why": "*Echarse a* works only with a few verbs; for ordinary actions use *ponerse a*." },
-    { "wrong": "Echó a llorar.", "right": "Se echó a llorar.", "why": "*Echarse a* needs the *se*. It is the reflexive form." },
-    { "wrong": "Se rompió a llorar.", "right": "Rompió a llorar.", "why": "*Romper a* takes no *se*." }
+    {
+      "wrong": "Se echó a trabajar.",
+      "right": "Se puso a trabajar.",
+      "why": "*Echarse a* works only with a few verbs; for ordinary actions use *ponerse a*."
+    },
+    {
+      "wrong": "Se echó a reírse.",
+      "right": "Se echó a reír.",
+      "why": "The *se* goes once, on *echar*; the second verb stays plain: *reír*."
+    },
+    {
+      "wrong": "Se rompió a llorar.",
+      "right": "Rompió a llorar.",
+      "why": "*Romper a* takes no *se*."
+    }
   ],
   "personal": "Tell about a time you burst out laughing or crying, or ran off. Use *me eché a…* or *rompí a…*"
 }

@@ -173,8 +173,8 @@
       "why": "It is a memory from the past, so the verb is *había*."
     },
     {
-      "wrong": "En la época de el café abría a las cinco.",
-      "right": "En la época del café abría a las cinco.",
+      "wrong": "En tiempos de el abuelo de Vale no había carros.",
+      "right": "En tiempos del abuelo de Vale no había carros.",
       "why": "*De* plus *el* always joins into *del*."
     }
   ],

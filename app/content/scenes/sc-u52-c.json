@@ -51,7 +51,7 @@
       "npcEn": "Hernando: The fact that I didn't tell Rosa anything still weighs on me. What do you think?",
       "intent": "Answer starting from el hecho de que + subjunctive.",
       "accept": [
-        "El hecho de que no se lo dijera no cambia lo mucho que ella lo quería.",
+        "El hecho de que no se lo dijera no lo hace menos verdad.",
         "Creo que el hecho de que no hablara no significa que no la quisiera.",
         "El hecho de que se lo guardara no lo hace un mal hombre."
       ],
@@ -157,7 +157,6 @@
     "l:antes",
     "l:ayudar",
     "l:bien",
-    "l:cambiar",
     "l:caminar",
     "l:capítulo",
     "l:carro",
@@ -216,6 +215,7 @@
     "l:tomar",
     "l:triste",
     "l:valor",
+    "l:verdad",
     "l:vez",
     "p:bien-bueno",
     "p:bien-mal-vs-bueno-malo",
@@ -238,7 +238,6 @@
     "p:pesar-pesarse",
     "p:possessives-basic",
     "p:prep-questions-basic",
-    "p:quantifiers-basic",
     "p:que-opinas-de",
     "p:telling-time",
     "p:tener-razon",

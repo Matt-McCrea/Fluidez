@@ -3,7 +3,7 @@
   "unit": "u52",
   "title": "Perpetua",
   "spare": true,
-  "brief": "You're Tomás, talking with Gloria, a neighbour who isn't happy about being in Hernando's memoir. You don't know her well, so use usted. Listen, reassure her and settle on a solution.",
+  "brief": "You're Tomás, talking with Gloria, who isn't happy about being in Hernando's memoir. She's older than you and you've always used usted with her. Listen, reassure her and settle on a solution.",
   "turns": [
     {
       "id": "t1",
@@ -32,7 +32,7 @@
     {
       "id": "t2",
       "npc": "Gloria: Dice que en 1990 casi me choca un taxi. Eso fue por un pelo, pero no quiero que lo cuente con pelos y señales.",
-      "npcEn": "Gloria: He says that in 1990 a taxi almost hit me. That was by a hair, but I don't want him to tell it with every detail.",
+      "npcEn": "Gloria: He says that in 1990 a taxi almost hit me. That was a close shave, but I don't want him to tell it in every detail.",
       "intent": "Say you understand: it was by a hair, and there's no need to tell it with every detail.",
       "accept": [
         "Entiendo. Fue por un pelo, y no es necesario contarlo con pelos y señales.",
@@ -74,7 +74,7 @@
     {
       "id": "t4",
       "npc": "Gloria: Está bien. Pero que Hernando no use mi nombre.",
-      "npcEn": "Gloria: All right. But let Hernando not use my name.",
+      "npcEn": "Gloria: All right. But Hernando mustn't use my name.",
       "intent": "Agree and ask what name she wants you to use for her in the book (¿... quiere que ...?).",
       "accept": [
         "Hecho. ¿Qué nombre quiere que le pongamos?",

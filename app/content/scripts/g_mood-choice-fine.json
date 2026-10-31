@@ -41,7 +41,7 @@
     {
       "es": "Haz lo que te digan.",
       "options": [
-        "Do what Vale is telling you right now.",
+        "Do what they're telling you right now.",
         "Do what they told you.",
         "Do whatever they tell you."
       ],
@@ -186,9 +186,9 @@
       "why": "A finished action is a fact you can point to, so it takes the past indicative."
     },
     {
-      "wrong": "El hecho de que no llamo me preocupa.",
-      "right": "El hecho de que no llame me preocupa.",
-      "why": "After *el hecho de que* you are reacting to a fact, so the subjunctive is the usual choice."
+      "wrong": "Pide lo que quieres, yo invito.",
+      "right": "Pide lo que quieras, yo invito.",
+      "why": "\"Whatever you want\" is nothing chosen yet, so it takes the subjunctive: *quieras*."
     },
     {
       "wrong": "Como no viene, me fui.",

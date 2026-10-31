@@ -152,9 +152,7 @@
     {
       "prompt": "Say: Don Hernando is probably at the café, as always.",
       "answer": "Don Hernando estará en el café, como siempre.",
-      "accept": [
-        "Estará don Hernando en el café, como siempre."
-      ],
+      "accept": [],
       "why": "The future of *estar* is a guess about now."
     },
     {
@@ -173,9 +171,9 @@
       "why": "Almost. *Quise* says you wanted something and acted; for a polite opener, use *quería*."
     },
     {
-      "wrong": "Voy a ser muy caro, pero vale la pena.",
-      "right": "Será muy caro, pero vale la pena.",
-      "why": "\"May be\" is the future, not *ir a*."
+      "wrong": "Don Hernando será en el café.",
+      "right": "Don Hernando estará en el café.",
+      "why": "A guess still follows the usual rule: for where someone is, Spanish uses *estar*, so *estará*."
     },
     {
       "wrong": "Mañana viajaba a Cali.",

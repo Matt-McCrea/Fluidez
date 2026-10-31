@@ -6,38 +6,182 @@
     "en": "The Bogotazo broke out on April 9, 1948."
   },
   "examples": [
-    { "es": "La guerra estalló en 1899.", "en": "The war broke out in 1899." },
-    { "es": "El Bogotazo estalló el 9 de abril de 1948.", "en": "The Bogotazo broke out on April 9, 1948." },
-    { "es": "La crisis se desencadenó tras el anuncio del banco.", "en": "The crisis erupted after the bank's announcement." },
-    { "es": "El escándalo estalló cuando se publicaron los documentos.", "en": "The scandal broke when the documents were published." },
-    { "es": "El anuncio desencadenó una ola de protestas.", "en": "The announcement set off a wave of protests." },
-    { "es": "Todo se desencadenó cuando Tomás rechazó la oferta.", "en": "It all kicked off when Tomás turned down the offer." }
+    {
+      "es": "La guerra estalló en 1899.",
+      "en": "The war broke out in 1899."
+    },
+    {
+      "es": "El Bogotazo estalló el 9 de abril de 1948.",
+      "en": "The Bogotazo broke out on April 9, 1948."
+    },
+    {
+      "es": "La crisis se desencadenó tras el anuncio del banco.",
+      "en": "The crisis erupted after the bank's announcement."
+    },
+    {
+      "es": "El escándalo estalló cuando se publicaron los documentos.",
+      "en": "The scandal broke when the documents were published."
+    },
+    {
+      "es": "El anuncio desencadenó una ola de protestas.",
+      "en": "The announcement set off a wave of protests."
+    },
+    {
+      "es": "Todo se desencadenó cuando Tomás rechazó la oferta.",
+      "en": "It all kicked off when Tomás turned down the offer."
+    }
   ],
-  "rule": "Use *estallar* for a sudden, serious event that breaks out: a war, a scandal, a riot. It has no *se*: *estalló la guerra*.\n\n*Desencadenarse* is similar, with a chain-reaction feel: *la crisis se desencadenó tras el anuncio*. The same verb without *se* is transitive and means \"to set off\": *el anuncio desencadenó una ola de protestas*.\n\nBoth usually sit in the preterite, as the moment it happened. For a gradual start, use *empezar* or *surgir*. Do not use *explotar*, which is for bombs and tempers.",
+  "rule": "Use *estallar* for a sudden, serious event that breaks out: a war, a scandal, a riot. It has no *se*: *estalló la guerra*.\n\n*Desencadenarse* is similar, with a chain-reaction feel: *la crisis se desencadenó tras el anuncio*. Without *se*, the same verb takes an object and means \"to set off\": *el anuncio desencadenó una ola de protestas*.\n\nBoth usually sit in the preterite, as the moment it happened. For a gradual start, use *empezar* or *surgir*. Do not use *explotar*, which is for bombs and tempers.",
   "smallPrint": "Teachers call this the vocabulary of eventuality: verbs that name how a major event begins.",
   "readAndPick": [
-    { "es": "La guerra estalló en 1899.", "options": ["The war broke out in 1899.", "The war ended in 1899.", "The war was remembered in 1899."], "answer": 0 },
-    { "es": "La crisis se desencadenó tras el anuncio.", "options": ["The crisis ended after the announcement.", "The announcement was cancelled by the crisis.", "The crisis was set off after the announcement."], "answer": 2 },
-    { "es": "El anuncio desencadenó una ola de protestas.", "options": ["The protests set off the announcement.", "The announcement set off a wave of protests.", "The protests were held back by the announcement."], "answer": 1 },
-    { "es": "El escándalo estalló cuando se publicaron los documentos.", "options": ["The documents were published after the scandal ended.", "The scandal was forgotten when the documents came out.", "The scandal broke when the documents were published."], "answer": 2 },
-    { "es": "Estallaron las protestas en toda la ciudad.", "options": ["Protests broke out across the whole city.", "Protests ended in the whole city.", "The whole city banned protests."], "answer": 0 },
-    { "es": "No estalló ninguna guerra.", "options": ["The war was won by no one.", "No war broke out.", "No war ended."], "answer": 1 },
-    { "es": "¿Cuándo estalló la crisis?", "options": ["Why did the crisis end?", "When did the crisis end?", "When did the crisis break out?"], "answer": 2 },
-    { "es": "Aquella pelea desencadenó todo.", "options": ["That fight set everything off.", "Everything set off that fight.", "That fight ended everything."], "answer": 0 }
+    {
+      "es": "La guerra estalló en 1899.",
+      "options": [
+        "The war broke out in 1899.",
+        "The war ended in 1899.",
+        "The war was remembered in 1899."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La crisis se desencadenó tras el anuncio.",
+      "options": [
+        "The crisis ended after the announcement.",
+        "The announcement was cancelled by the crisis.",
+        "The crisis was set off after the announcement."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El anuncio desencadenó una ola de protestas.",
+      "options": [
+        "The protests set off the announcement.",
+        "The announcement set off a wave of protests.",
+        "The protests were held back by the announcement."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El escándalo estalló cuando se publicaron los documentos.",
+      "options": [
+        "The documents were published after the scandal ended.",
+        "The scandal was forgotten when the documents came out.",
+        "The scandal broke when the documents were published."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Estallaron las protestas en toda la ciudad.",
+      "options": [
+        "Protests broke out across the whole city.",
+        "Protests ended in the whole city.",
+        "The whole city banned protests."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No estalló ninguna guerra.",
+      "options": [
+        "The war was won by no one.",
+        "No war broke out.",
+        "No war ended."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Cuándo estalló la crisis?",
+      "options": [
+        "Why did the crisis end?",
+        "When did the crisis end?",
+        "When did the crisis break out?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Aquella pelea desencadenó todo.",
+      "options": [
+        "That fight set everything off.",
+        "Everything set off that fight.",
+        "That fight ended everything."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Choose *estalló* or *empezó*: \"The Bogotazo broke out in 1948.\"", "answer": "El Bogotazo estalló en 1948.", "accept": ["En 1948 estalló el Bogotazo."], "why": "A sudden, serious event breaks out: *estalló*." },
-    { "prompt": "Say: \"The scandal broke when they published the documents.\"", "answer": "El escándalo estalló cuando publicaron los documentos.", "accept": ["El escándalo estalló cuando se publicaron los documentos."], "why": "*Estalló* and the preterite *publicaron* tell two linked moments." },
-    { "prompt": "Say: \"The crisis erupted after the announcement.\"", "answer": "La crisis se desencadenó tras el anuncio.", "accept": ["La crisis se desencadenó después del anuncio."], "why": "*Se desencadenó* shows the crisis as a chain reaction after the announcement." },
-    { "prompt": "Say: \"The announcement set off a wave of protests.\"", "answer": "El anuncio desencadenó una ola de protestas.", "accept": ["El anuncio desencadenó protestas."], "why": "With no *se*, *desencadenó* has an object: what the announcement set off." },
-    { "prompt": "Make it plural: *Estalló una protesta en la plaza.*", "answer": "Estallaron unas protestas en la plaza.", "accept": ["Estallaron protestas en la plaza.", "Estallaron varias protestas en la plaza."], "why": "The verb agrees with the thing that breaks out, so *estalló* becomes *estallaron*." },
-    { "prompt": "Make it negative: *Estalló la guerra.*", "answer": "No estalló la guerra.", "accept": ["La guerra no estalló."], "why": "*No* goes before the verb, whichever order you choose." },
-    { "prompt": "Ask: \"When did the crisis break out?\"", "answer": "¿Cuándo estalló la crisis?", "accept": ["¿Cuándo se desencadenó la crisis?"], "why": "The question word comes first and the preterite asks about the moment." }
+    {
+      "prompt": "Choose *estalló* or *empezó*: \"The Bogotazo broke out in 1948.\"",
+      "answer": "El Bogotazo estalló en 1948.",
+      "accept": [
+        "En 1948 estalló el Bogotazo."
+      ],
+      "why": "A sudden, serious event breaks out: *estalló*."
+    },
+    {
+      "prompt": "Say: \"The scandal broke when they published the documents.\"",
+      "answer": "El escándalo estalló cuando publicaron los documentos.",
+      "accept": [
+        "El escándalo estalló cuando se publicaron los documentos."
+      ],
+      "why": "*Estalló* and the preterite *publicaron* tell two linked moments."
+    },
+    {
+      "prompt": "Say: \"The crisis erupted after the announcement.\"",
+      "answer": "La crisis se desencadenó tras el anuncio.",
+      "accept": [
+        "La crisis se desencadenó después del anuncio."
+      ],
+      "why": "*Se desencadenó* shows the crisis as a chain reaction after the announcement."
+    },
+    {
+      "prompt": "Say: \"The announcement set off a wave of protests.\"",
+      "answer": "El anuncio desencadenó una ola de protestas.",
+      "accept": [
+        "El anuncio desencadenó protestas."
+      ],
+      "why": "With no *se*, *desencadenó* has an object: what the announcement set off."
+    },
+    {
+      "prompt": "Make it plural: *Estalló una protesta en la plaza.*",
+      "answer": "Estallaron protestas en la plaza.",
+      "accept": [
+        "Estallaron unas protestas en la plaza.",
+        "Estallaron varias protestas en la plaza."
+      ],
+      "why": "The verb agrees with the thing that breaks out, so *estalló* becomes *estallaron*."
+    },
+    {
+      "prompt": "Make it negative: *Estalló la guerra.*",
+      "answer": "No estalló la guerra.",
+      "accept": [
+        "La guerra no estalló."
+      ],
+      "why": "*No* goes before the verb, whichever order you choose."
+    },
+    {
+      "prompt": "Ask: \"When did the crisis break out?\"",
+      "answer": "¿Cuándo estalló la crisis?",
+      "accept": [
+        "¿Cuándo se desencadenó la crisis?"
+      ],
+      "why": "The question word comes first and the preterite asks about the moment."
+    }
   ],
   "pitfalls": [
-    { "wrong": "La guerra explotó en 1899.", "right": "La guerra estalló en 1899.", "why": "*Explotar* is for bombs and tempers; wars and scandals *estallan*." },
-    { "wrong": "El escándalo se estalló.", "right": "El escándalo estalló.", "why": "*Estallar* takes no *se*; only *desencadenarse* does." },
-    { "wrong": "La amistad estalló poco a poco.", "right": "La amistad surgió poco a poco.", "why": "*Estallar* is only for sudden events; slow starts use *surgir* or *empezar*." }
+    {
+      "wrong": "La guerra explotó en 1899.",
+      "right": "La guerra estalló en 1899.",
+      "why": "*Explotar* is for bombs and tempers; wars and scandals *estallan*."
+    },
+    {
+      "wrong": "El escándalo se estalló.",
+      "right": "El escándalo estalló.",
+      "why": "*Estallar* takes no *se*; only *desencadenarse* does."
+    },
+    {
+      "wrong": "La amistad estalló poco a poco.",
+      "right": "La amistad surgió poco a poco.",
+      "why": "*Estallar* is only for sudden events; slow starts use *surgir* or *empezar*."
+    }
   ],
   "personal": "Think of a big event you remember, in your country or your family. Say how it broke out: *Estalló…* or *Se desencadenó…*"
 }

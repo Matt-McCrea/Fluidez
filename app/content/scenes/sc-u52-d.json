@@ -53,8 +53,8 @@
     },
     {
       "id": "t3",
-      "npc": "Hernando: Un hombre que quería ir al aeropuerto, y yo no sabía dónde quedaba.",
-      "npcEn": "Hernando: A man who wanted to go to the airport, and I didn't know where it was.",
+      "npc": "Hernando: Un señor mayor que quería ir al aeropuerto, y yo no sabía dónde quedaba.",
+      "npcEn": "Hernando: An older gentleman who wanted to go to the airport, and I didn't know where it was.",
       "intent": "Politely say you wanted to ask something more personal (quería preguntarle).",
       "accept": [
         "Quería preguntarle algo más personal, si me lo permite.",
@@ -101,7 +101,7 @@
       "npcEn": "Hernando: A thousand times. But there was always one more fare waiting for me, and that fare changed the day.",
       "intent": "Thank him and say this goes straight into the book.",
       "accept": [
-        "Gracias, Hernando. Eso va directo al libro.",
+        "Gracias, don Hernando. Eso va directo al libro.",
         "Muchas gracias. Eso tiene que quedar en el libro.",
         "Gracias por contármelo. Esto va al libro tal cual."
       ],
@@ -119,6 +119,7 @@
     "c:tienes",
     "c:ya-no",
     "g:commands-usted",
+    "g:comparatives",
     "g:demonstratives",
     "g:direct-objects",
     "g:double-pronouns",
@@ -169,10 +170,10 @@
     "l:estar",
     "l:grabar",
     "l:hacer",
-    "l:hombre",
     "l:ir",
     "l:libro",
     "l:manejar",
+    "l:mayor",
     "l:molestar",
     "l:pasajero",
     "l:pensar",
@@ -186,6 +187,7 @@
     "l:saber",
     "l:secreto",
     "l:ser",
+    "l:señor",
     "l:siempre",
     "l:subir",
     "l:taxi",
@@ -195,11 +197,13 @@
     "p:cuando-basic",
     "p:dejar-de-inf",
     "p:demonstratives-basic",
+    "p:don-dona-nombre",
     "p:empezar-terminar",
     "p:frequency-scale",
     "p:gracias-por",
     "p:indefinites-basic",
     "p:ir-a-venir-de-place",
+    "p:mayor-menor",
     "p:me-te-nos-objects",
     "p:ordinal-floor",
     "p:ordinals-primer-tercer",
@@ -214,6 +218,8 @@
     "p:question-word-order",
     "p:saber-conocer",
     "p:se-reciproco",
-    "p:time-sequence-basic"
+    "p:senor-don-article",
+    "p:time-sequence-basic",
+    "p:viejo-antiguo-mayor"
   ]
 }

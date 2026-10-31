@@ -31,7 +31,7 @@
       "en": "Now the name of the street comes to mind."
     }
   ],
-  "rule": "In Spanish, the thing does the bringing, and you are the one it happens to. It works like *gustar*.\n\n*(Me, te, le, nos) trae(n) recuerdos de…* means \"brings back memories of…\". The thing is the subject: *ese olor me trae*, *estas canciones me traen*.\n\n*Me viene a la memoria* means \"it comes to mind\". The thing remembered comes after: *me vino a la memoria su cara*.\n\nEnglish says \"I remember\" or \"it reminds me\". Spanish keeps you as the indirect object.",
+  "rule": "In Spanish, the thing does the bringing, and you are the one it happens to. It works like *gustar*.\n\n*(Me, te, le, nos) trae(n) recuerdos de…* means \"brings back memories of…\". The thing is the subject: *ese olor me trae*, *estas canciones me traen*.\n\n*Me viene a la memoria* means \"it comes to mind\". The thing remembered comes after: *me vino a la memoria su cara*.\n\nEnglish says \"I remember\" or \"it reminds me\". Spanish turns it around: the smell or the song does the bringing.",
   "smallPrint": "Teachers call this a gustar-type construction: the person is an indirect object and the thing is the subject.",
   "readAndPick": [
     {
@@ -123,9 +123,7 @@
     {
       "prompt": "Say: This song brings back a lot of memories for Don Hernando.",
       "answer": "Esta canción le trae muchos recuerdos a don Hernando.",
-      "accept": [
-        "Esta canción le trae muchos recuerdos a don Hernando."
-      ],
+      "accept": [],
       "why": "*Le* stands for Don Hernando, and *a don Hernando* names him."
     },
     {

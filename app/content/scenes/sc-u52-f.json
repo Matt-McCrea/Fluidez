@@ -57,7 +57,7 @@
       "id": "t3",
       "npc": "Hernando: Usted es cruel. Bueno, otra: si hubiera sabido desde el principio lo difícil que era el café, ¿lo habría aceptado?",
       "npcEn": "Hernando: You are cruel. Well, another one: if you had known from the start how hard the café was, would you have accepted it?",
-      "intent": "Answer honestly with habría: yes, you would have accepted it anyway.",
+      "intent": "Answer honestly with habría: would you have accepted it or not?",
       "accept": [
         "Sí, lo habría aceptado igual, aunque con más miedo.",
         "Lo habría aceptado, pero habría dormido menos.",

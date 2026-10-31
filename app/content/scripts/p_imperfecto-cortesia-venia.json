@@ -31,7 +31,7 @@
       "en": "I was calling to find out whether my package has arrived. (formal)"
     }
   ],
-  "rule": "When you walk up to someone and ask for something, the present tense (*Vengo a pedirle…*) can sound like a demand. The imperfect steps back a little: *Venía a…*, *Le escribía para…*, *Te llamaba para…*.\n\nIt still means now. Nothing happened in the past; the tense just makes you sound modest. English does it with *I was wondering if…*\n\nThe frame is *venía a* or *llamaba para* plus an infinitive, often followed by *ver si* and a second imperfect: *me podían atender*.\n\nUse it to ask, never to announce. A firm statement in the imperfect sounds unsure.",
+  "rule": "When you walk up to someone and ask for something, the present tense (*Vengo a pedirle…*) can sound like a demand. The imperfect steps back a little: *Venía a…*, *Le escribía para…*, *Te llamaba para…*.\n\nIt still means now. Nothing happened in the past; the tense just makes you sound modest. English does it with *I was wondering if…*\n\nThe frame is *venía a* or *llamaba para* plus an infinitive, often followed by *ver si* and a second imperfect: *me podían atender*.\n\nIt works best for asking. When you need to sound firm, the present is clearer: *Vengo a decirle que no voy a vender.*",
   "smallPrint": "Teachers call this the imperfect of courtesy: the imperfect used for a request in the present, to soften it.",
   "readAndPick": [
     {
@@ -160,9 +160,9 @@
       "why": "Almost. *Vine* says you came and that is over; the polite ask needs *venía*, which keeps the request open."
     },
     {
-      "wrong": "Venía a decirle que no voy a vender.",
-      "right": "Vengo a decirle que no voy a vender.",
-      "why": "When you are being firm, use the present. The imperfect would make you sound unsure."
+      "wrong": "Quería a pedirle un favor.",
+      "right": "Quería pedirle un favor.",
+      "why": "*Querer* takes the infinitive straight away; only *venir* needs the *a*."
     },
     {
       "wrong": "Le escribía a preguntar por mi solicitud.",

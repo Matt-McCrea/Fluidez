@@ -65,8 +65,8 @@
       "es": "Cada uno a lo suyo.",
       "options": [
         "Everyone mind their own business.",
-        "Everyone to my house.",
-        "Everyone together."
+        "Everyone mind my business.",
+        "Everyone mind our business."
       ],
       "answer": 0
     },
@@ -149,9 +149,7 @@
     {
       "prompt": "Make it about Vale: *Yo ya pasé lo mío.* becomes: Vale has already been through her share.",
       "answer": "Vale ya pasó lo suyo.",
-      "accept": [
-        "Vale ya pasó lo suyo."
-      ],
+      "accept": [],
       "why": "For Vale it is *suyo*, and the verb ends in *-ó*."
     }
   ],
