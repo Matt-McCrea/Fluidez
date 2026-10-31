@@ -1,0 +1,371 @@
+{
+  "id": "ch165",
+  "unit": "u50",
+  "title": "Me interesa usted",
+  "text": "Durante tres días, Vale dejó el celular apagado en el bolsillo del delantal, y a todo contestaba «lo que sea».\nEl jueves, a las seis, Simón voló al mostrador y habló con la voz de Vale, como quien lee.\nSimón: «No me interesa la casa. Me interesa usted. ¿Cuándo puede venir?»\nEn la puerta de la cocina, Vale se puso blanca.\nVale: Simón duerme en la cocina, y yo leo en voz alta cuando no puedo dormir. Se llama Esteban Correa. Tiene supermercados en Medellín y quiere una panadería con mis recetas y mi nombre. Él pone un local en Laureles y un horno nuevo. Yo pongo las manos.\nTomás: Es una maravilla.\nVale: Su asesor dice que en tres años la panadería puede escalar a cinco locales.\nTomás: Escalar. En Toronto todas las empresas querían escalar. Casi todas cerraron.\nVale lo miró, esperando otra cosa.\nTomás: Haz lo que quieras. Pon tu panadería donde quieras: en Medellín o en la luna.\nVale: No te pregunté dónde. Te pregunté qué piensas.\nTomás: Pienso que el viernes tenemos cuarenta pedidos de Pan de Rosa. Y que el plan de Luz Dary es tu pan.\nHasta Simón se quedó quieto.\nVale: Claro. Los pedidos.\nHernando llegó a las diez, con una venda en la mano.\nHernando: Me caí en la escalera de mi edificio. Ochenta y cuatro escalones, mijo. Yo no los subo: los escalo.\nHernando: El vecino del tercero me llevó al médico, aunque primero pensó que yo estaba borracho. La columna está muy bien para mi edad. Lo malo es que ese vecino tiene el teléfono de mi hija.\nSonó el celular. Era Lucía. Hernando lo dejó sonar.\nVale: Contéstele, don Hernando.\nHernando: No me da la gana. Ya sé lo que me va a decir: que me vaya a vivir con ella. Lo dice desde que murió Inés.\nDespués llegó un mensaje: «Papá, el domingo voy al café. Y no me cuelgue».\nPor la tarde, Vale le dio a Simón un mango.\nVale: Te perdono, Simón, pero lo de anoche que no se vuelva a repetir.\nSimón: ¡Que no se vuelva a repetir! ¡Que no se vuelva a repetir, parce!\nHernando se rio tanto que le dolió la mano.\nAl cerrar, Tomás encontró a Vale sentada en el piso de la cocina.\nVale: Tres noches sin dormir, Tomás, y no puedo más.\nTomás se sentó a su lado, sin saber qué decir.\nTomás: El que quiera irse, que se vaya. Yo no soy nadie para decir que no.\nVale: Tú eres alguien, Tomás. Por eso te lo pregunté a ti.\nVale: El señor Correa me espera el lunes en Medellín. Y todavía no le he dicho que no.",
+  "gloss": [
+    {
+      "es": "delantal",
+      "en": "apron"
+    },
+    {
+      "es": "a todo contestaba «lo que sea»",
+      "en": "she answered «whatever» to everything"
+    },
+    {
+      "es": "mostrador",
+      "en": "counter"
+    },
+    {
+      "es": "como quien lee",
+      "en": "like someone reading"
+    },
+    {
+      "es": "Laureles",
+      "en": "Laureles (a neighbourhood in Medellín)"
+    },
+    {
+      "es": "Yo pongo las manos",
+      "en": "I do the work (literally: I put in the hands)"
+    },
+    {
+      "es": "puede escalar a cinco locales",
+      "en": "can scale up to five shops"
+    },
+    {
+      "es": "Pon tu panadería donde quieras",
+      "en": "Put your bakery wherever you like"
+    },
+    {
+      "es": "venda",
+      "en": "bandage"
+    },
+    {
+      "es": "escalones",
+      "en": "steps"
+    },
+    {
+      "es": "Yo no los subo: los escalo",
+      "en": "I don't walk up them: I climb them"
+    },
+    {
+      "es": "La columna está muy bien para mi edad",
+      "en": "My spine is in very good shape for my age"
+    },
+    {
+      "es": "No me da la gana",
+      "en": "I don't feel like it (and I won't)"
+    },
+    {
+      "es": "Te perdono, Simón, pero lo de anoche que no se vuelva a repetir",
+      "en": "I forgive you, Simón, but don't let last night happen again"
+    },
+    {
+      "es": "El que quiera irse, que se vaya",
+      "en": "Whoever wants to leave can go"
+    },
+    {
+      "es": "Yo no soy nadie para decir que no",
+      "en": "It's not my place to say no"
+    }
+  ],
+  "questions": [
+    {
+      "q": "How does Tomás find out about the offer from Medellín?",
+      "options": [
+        "Simón repeats the message in Vale's voice",
+        "Vale tells him over breakfast",
+        "Mariana reads it in a newspaper",
+        "Esteban Correa calls the café"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is wrong with Tomás's first answer to Vale?",
+      "options": [
+        "He talks about the café's orders instead of saying what he thinks",
+        "He says he will move to Medellín too",
+        "He laughs at the investor",
+        "He refuses to read the offer"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why did Hernando's neighbour first think he was drunk?",
+      "options": [
+        "He found him sitting on the stairs late at night",
+        "Hernando was singing boleros",
+        "Hernando had a bottle in his hand",
+        "Hernando could not find his key"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué quiere Lucía, la hija de Hernando?",
+      "options": [
+        "Que su papá se vaya a vivir con ella",
+        "Que su papá venda el taxi",
+        "Que su papá deje de ir al café",
+        "Que su papá le preste plata"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Vale say at the end of the chapter?",
+      "options": [
+        "Correa expects her in Medellín on Monday, and she has not said no",
+        "She has already said no to Correa",
+        "She is going to open a bakery in Bogotá",
+        "She wants Tomás to come to Medellín with her"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "Why can Simón repeat the investor's message?",
+      "options": [
+        "He sleeps in the kitchen, and Vale reads aloud when she can't sleep",
+        "He saw the message on the phone",
+        "Tomás taught it to him",
+        "Mariana recorded it"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How many steps does Hernando have to climb to get home?",
+      "options": [
+        "Eighty four",
+        "Forty",
+        "Twelve",
+        "Seventy one"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Tomás say about companies in Toronto that wanted to scale up?",
+      "options": [
+        "Almost all of them closed",
+        "They all moved to Medellín",
+        "They all hired bakers",
+        "They all bought hotels"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Correa expects Vale in Medellín on Monday, and Lucía is coming to the café on Sunday. Tomorrow everybody has advice for Vale, Tomás has a terrible toothache, and someone arrives earlier than expected.",
+  "requires": [
+    "c:ayer-anoche",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:con-el-ella",
+    "c:era",
+    "c:es-que",
+    "c:me-da-igual",
+    "c:me-regala",
+    "c:no-me-da-la-gana",
+    "c:no-puedo-mas",
+    "c:no-se",
+    "c:puedo",
+    "c:que-no-se-vuelva-a-repetir",
+    "c:se-llama",
+    "c:tienes",
+    "c:todavia-no",
+    "c:voy-vas",
+    "g:adjective-agreement",
+    "g:aunque-indicative",
+    "g:cause-result",
+    "g:commands-tu",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:gustar-full",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:lo-adjective",
+    "g:negation-words",
+    "g:negative-commands",
+    "g:perfecto-experience",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:relatives-prepositions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-emotion",
+    "g:subj-free-relatives",
+    "g:subj-irregulars",
+    "g:subj-relative",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:verbs-of-change",
+    "g:yo-irregular",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:caerse-lastimarse",
+    "p:cuando-basic",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:detenerse-estar-parado",
+    "p:doler",
+    "p:don-dona-nombre",
+    "p:durar-durante",
+    "p:el-que-la-que",
+    "p:encontrar-participle",
+    "p:entonces-de-repente",
+    "p:indefinites-basic",
+    "p:ir-a-venir-de-place",
+    "p:lavarse-las-manos",
+    "p:lo-de",
+    "p:lo-de-topic",
+    "p:me-duele",
+    "p:me-te-nos-objects",
+    "p:naci-en",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:pensar-en",
+    "p:personal-a",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:que-subj-deseo",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:ver-oir-bien-mal"
+  ],
+  "lexemes": [
+    "l:alto",
+    "l:anoche",
+    "l:apagar",
+    "l:asesor",
+    "l:año",
+    "l:bien",
+    "l:blanco",
+    "l:bolsillo",
+    "l:borracho",
+    "l:caerse",
+    "l:café",
+    "l:casa",
+    "l:celular",
+    "l:cerrar",
+    "l:claro",
+    "l:cocina",
+    "l:colgar",
+    "l:columna",
+    "l:contestar",
+    "l:cosa",
+    "l:cuándo",
+    "l:dar",
+    "l:decir",
+    "l:dejar",
+    "l:delantal",
+    "l:después",
+    "l:doler",
+    "l:domingo",
+    "l:dormir",
+    "l:día",
+    "l:dónde",
+    "l:edad",
+    "l:edificio",
+    "l:empresa",
+    "l:encontrar",
+    "l:escalar",
+    "l:escalera",
+    "l:esperar",
+    "l:estar",
+    "l:ganar",
+    "l:hablar",
+    "l:hacer",
+    "l:hija",
+    "l:horno",
+    "l:interesar",
+    "l:ir",
+    "l:irse",
+    "l:jueves",
+    "l:lado",
+    "l:leer",
+    "l:llamarse",
+    "l:llegar",
+    "l:llevar",
+    "l:local",
+    "l:luna",
+    "l:lunes",
+    "l:malo",
+    "l:mango",
+    "l:mano",
+    "l:maravilla",
+    "l:mensaje",
+    "l:mijo",
+    "l:mirar",
+    "l:morir",
+    "l:mostrador",
+    "l:médico",
+    "l:noche",
+    "l:nombre",
+    "l:nuevo",
+    "l:pan",
+    "l:panadería",
+    "l:papá",
+    "l:parce",
+    "l:pedido",
+    "l:pensar",
+    "l:perdonar",
+    "l:piso",
+    "l:plan",
+    "l:poder",
+    "l:poner",
+    "l:ponerse",
+    "l:preguntar",
+    "l:puerta",
+    "l:quedarse",
+    "l:querer",
+    "l:quieto",
+    "l:qué",
+    "l:receta",
+    "l:repetir",
+    "l:reír",
+    "l:saber",
+    "l:sentar",
+    "l:sentarse",
+    "l:ser",
+    "l:señor",
+    "l:sonar",
+    "l:subir",
+    "l:supermercado",
+    "l:tarde",
+    "l:teléfono",
+    "l:tener",
+    "l:vecino",
+    "l:venda",
+    "l:venir",
+    "l:viernes",
+    "l:vivir",
+    "l:volar",
+    "l:volverse",
+    "l:voz"
+  ]
+}

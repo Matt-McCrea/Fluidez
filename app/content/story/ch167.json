@@ -1,0 +1,357 @@
+{
+  "id": "ch167",
+  "unit": "u50",
+  "title": "Ochenta y cuatro escalones",
+  "text": "La hija de Hernando subió los ochenta y cuatro escalones contándolos en voz alta. En el sesenta paró a respirar. Detrás subía Tomás, con Simón en el hombro: Hernando había pedido un testigo.\nArriba, Hernando tenía la puerta abierta y el tinto listo.\nHernando: ¿Ves? No es para tanto.\nLucía: Papá, tengo cuarenta y tres años y casi me muero. ¿Y el loro? En mi conjunto no se permiten mascotas.\nSimón: ¡Mascota no! ¡Mascota no, parce!\nTomás: Simón no es la mascota de nadie. Es socio del café.\nLucía: Pues que vaya los domingos, de visitante.\nHernando: Ahí está el problema. Allá yo también sería un visitante, con horario y llave prestada.\nLucía: Usted me prometió que se vendría a vivir con nosotros cuando dejara el taxi.\nHernando: Te dije que lo pensaría cuando llegara el momento. Y lo pensé. Ocho años lo pensé.\nLucía: ¡Siempre burlándose de todo!\nHernando: No me burlo, mija. Me defiendo.\nSu hija sacó del bolso unos planos.\nLucía: Mi esposo los hizo él mismo: rampa, barras en el baño, luz de noche. Pura ingeniería.\nHernando: Barras en el baño. Como en un hospital.\nLucía: Como en una casa donde alguien lo quiere.\nTomás se fue a la cocina a lavar una taza limpia.\nLucía: ¿Usted es capaz de decirme que no, después de todo esto?\nHernando: Soy capaz de eso y de más. Pase lo que pase, de aquí no me sacan. Hasta que no me saquen con los pies por delante, no me voy de mi cuarto piso.\nLucía: Cuando murió mi mamá, usted me dijo que me llamaría cuando necesitara algo. Nunca llamó. ¡Y se cayó en la escalera a las once de la noche, solo!\nHernando bajó la voz.\nHernando: No te llamé porque me dio vergüenza. Cuarenta años de taxista, y no soy capaz de subir mi propia escalera.\nLucía: ¿Es una venganza, papá, porque me fui a Chía y lo dejé solo con mi mamá enferma?\nHernando: ¿Venganza? Mija, ya no tengo energía para eso. Pero estoy dispuesto a llamarte todas las noches. A las nueve, como un reloj.\nLucía: No quiero una llamada a las nueve. Quiero a mi papá vivo.\nHernando: Vivo estoy. Y vivo aquí.\nElla tomó el bolso y los planos.\nLucía: Hasta que no se caiga otra vez, usted no va a entender.\nCerró de un portazo. El barco se movió dentro de la botella, encima de la nevera, pero no se cayó.\nSimón: ¡Pase lo que pase! ¡Pase lo que pase, parce!\nHernando: Ese pájaro, siempre opinando.\nSe quedó un rato mirando la puerta.\nHernando: Váyase, mijo. Usted también tiene una conversación pendiente. Y a usted sí lo están esperando.",
+  "gloss": [
+    {
+      "es": "Lucía",
+      "en": "Lucía (Hernando's daughter)"
+    },
+    {
+      "es": "escalones",
+      "en": "steps"
+    },
+    {
+      "es": "conjunto",
+      "en": "gated housing complex"
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "Pues que vaya los domingos, de visitante",
+      "en": "Well then he can come on Sundays, as a visitor"
+    },
+    {
+      "es": "con horario y llave prestada",
+      "en": "with set hours and a borrowed key"
+    },
+    {
+      "es": "rampa, barras en el baño, luz de noche",
+      "en": "a ramp, grab bars in the bathroom, a night light"
+    },
+    {
+      "es": "Hasta que no me saquen con los pies por delante",
+      "en": "Until they carry me out feet first"
+    },
+    {
+      "es": "porque me fui a Chía y lo dejé solo con mi mamá enferma",
+      "en": "because I moved to Chía and left you alone with Mum when she was ill"
+    },
+    {
+      "es": "Ya no tengo energía para eso",
+      "en": "I don't have the energy for that any more"
+    },
+    {
+      "es": "Vivo estoy. Y vivo aquí.",
+      "en": "I'm alive. And I live here."
+    },
+    {
+      "es": "Cerró de un portazo",
+      "en": "She slammed the door"
+    },
+    {
+      "es": "el barco se movió dentro de la botella",
+      "en": "the ship in the bottle shook"
+    },
+    {
+      "es": "Usted también tiene una conversación pendiente",
+      "en": "You have a conversation waiting too"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Hernando say he would also be a visitor in Chía?",
+      "options": [
+        "He would live by someone else's rules, with set hours and a borrowed key",
+        "He would only go there on Sundays",
+        "He would have to park in the visitors' spaces",
+        "Lucía's husband does not want him there"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando finally admit about his fall?",
+      "options": [
+        "He did not call Lucía because he was ashamed",
+        "He fell because he was drunk",
+        "He never fell at all",
+        "Tomás was with him"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Lucía wonder about her father's silence?",
+      "options": [
+        "Whether it is revenge for her moving to Chía when her mother was ill",
+        "Whether he has a new girlfriend",
+        "Whether he is selling the flat",
+        "Whether Vale told him not to call"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué ofrece Hernando a su hija?",
+      "options": [
+        "Llamarla todas las noches a las nueve",
+        "Irse a vivir con ella el lunes",
+        "Vender el taxi",
+        "Ir a Chía los domingos"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How does the conversation end?",
+      "options": [
+        "Lucía slams the door and leaves",
+        "Hernando agrees to move",
+        "Simón flies out of the window",
+        "Tomás convinces them both"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "At which step does Lucía stop to catch her breath?",
+      "options": [
+        "The sixtieth",
+        "The tenth",
+        "The eighty fourth",
+        "The fortieth"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who drew the plans for Hernando's room in Chía?",
+      "options": [
+        "Lucía's husband",
+        "Lucía",
+        "Tomás",
+        "An architect from the Institute"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Tomás do while father and daughter argue?",
+      "options": [
+        "He washes a cup that is already clean",
+        "He feeds Simón",
+        "He reads the plans",
+        "He calls Vale"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Lucía has slammed Hernando's door, and Hernando sends Tomás back to the café, where Vale is waiting. Tonight Tomás can finally talk, and that is exactly the problem.",
+  "requires": [
+    "c:fui",
+    "c:no-es-para-tanto",
+    "c:no-se",
+    "c:porque",
+    "c:pues",
+    "c:quiero",
+    "c:tengo",
+    "c:tengo-anos",
+    "c:tienes",
+    "c:voy-vas",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:passive-se",
+    "g:pluperfect",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:reported-backshift",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-cuando-future",
+    "g:subj-free-relatives",
+    "g:subj-future-in-past",
+    "g:subj-irregulars",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:caerse-lastimarse",
+    "p:capaz-dispuesto-a",
+    "p:cerca-de",
+    "p:cuando-basic",
+    "p:darsele-bien-mal",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:esta-prohibido",
+    "p:frequency-scale",
+    "p:hasta-que-no",
+    "p:indefinites-basic",
+    "p:ir-a-venir-de-place",
+    "p:me-da-miedo",
+    "p:me-te-nos-objects",
+    "p:naci-en",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:pase-lo-que-pase",
+    "p:personal-a",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:ser-capaz-de",
+    "p:siempre-gerundio",
+    "p:tambien-tampoco",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:todos-los-dias",
+    "p:veces-al",
+    "p:ver-oir-bien-mal"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:ahí",
+    "l:allá",
+    "l:alto",
+    "l:aquí",
+    "l:arriba",
+    "l:año",
+    "l:bajar",
+    "l:barco",
+    "l:barra",
+    "l:baño",
+    "l:bolso",
+    "l:botella",
+    "l:burlar",
+    "l:caerse",
+    "l:café",
+    "l:capaz",
+    "l:casa",
+    "l:cerrar",
+    "l:cocina",
+    "l:comer",
+    "l:conjunto",
+    "l:contar",
+    "l:conversación",
+    "l:dar",
+    "l:decir",
+    "l:defender",
+    "l:dejar",
+    "l:delante",
+    "l:dentro",
+    "l:después",
+    "l:detrás",
+    "l:disponer",
+    "l:domingo",
+    "l:encima",
+    "l:energía",
+    "l:enfermo",
+    "l:entender",
+    "l:escalera",
+    "l:esperar",
+    "l:esposo",
+    "l:estar",
+    "l:hacer",
+    "l:hija",
+    "l:hombro",
+    "l:horario",
+    "l:hospital",
+    "l:ingeniería",
+    "l:ir",
+    "l:irse",
+    "l:lavar",
+    "l:limpio",
+    "l:listo",
+    "l:llamada",
+    "l:llamar",
+    "l:llamarse",
+    "l:llave",
+    "l:llegar",
+    "l:loro",
+    "l:lucía",
+    "l:luz",
+    "l:mamá",
+    "l:mascota",
+    "l:mija",
+    "l:mijo",
+    "l:mirar",
+    "l:momento",
+    "l:morir",
+    "l:morirse",
+    "l:mover",
+    "l:necesitar",
+    "l:nevera",
+    "l:noche",
+    "l:opinar",
+    "l:papá",
+    "l:parar",
+    "l:parce",
+    "l:pasar",
+    "l:pedir",
+    "l:pendiente",
+    "l:pensar",
+    "l:permitir",
+    "l:pie",
+    "l:piso",
+    "l:plano",
+    "l:prestar",
+    "l:problema",
+    "l:prometer",
+    "l:propio",
+    "l:puerta",
+    "l:puro",
+    "l:pájaro",
+    "l:quedarse",
+    "l:querer",
+    "l:rato",
+    "l:reloj",
+    "l:respirar",
+    "l:sacar",
+    "l:ser",
+    "l:siempre",
+    "l:socio",
+    "l:subir",
+    "l:taxi",
+    "l:taxista",
+    "l:taza",
+    "l:tener",
+    "l:testigo",
+    "l:tinto",
+    "l:tomar",
+    "l:venganza",
+    "l:venir",
+    "l:ver",
+    "l:vergüenza",
+    "l:vez",
+    "l:visitante",
+    "l:vivir",
+    "l:vivo",
+    "l:voz"
+  ]
+}

@@ -1,0 +1,368 @@
+{
+  "id": "ch166",
+  "unit": "u50",
+  "title": "La muela del juicio",
+  "text": "La muela empezó a doler el sábado a las tres de la mañana. A las seis, Tomás tenía media cara hinchada.\nGloria: Es la muela del juicio, mijo. A los hombres el juicio les llega tarde.\nVale, sin decir nada, le puso arvejas congeladas en la cara.\nMariana: Tu señor Correa es serio. Su familia fabrica hornos; ahora quieren fabricar el pan. Pero ojo con el contrato. Si yo fuera tú, no firmaría nada sin un abogado.\nTomás: ¿Y a qué esperabas tú para decírmelo? ¿A tener el pasaje?\nVale: No me reproches nada. Tú tampoco me dices lo que piensas.\nTomás: No quiero reprochar nada, es solo una pregunta.\nVale: Con esa cara, hasta una pregunta suena a reproche.\nMariana: Diez años escribí sobre el conflicto armado, y nunca vi un conflicto con tantos reproches y tan pocas palabras.\nEntró una mujer de traje gris, preguntando por el señor Pacheco.\nGloria: Aquí no hay ningún Pacheco. No vendemos.\nSimón: ¡Altamira no! ¡Altamira no, parce!\nMujer: Soy Lucía, la hija. Vine un día antes, para que mi papá no tuviera tiempo de preparar chistes.\nGloria: ¡Ay, señora, qué pena! Fue un malentendido.\nLucía: Con mi papá, todo es un malentendido. Se cae en la escalera, y yo me entero por el vecino. Siempre me entero de último. Lo mejor sería que viniera a vivir con nosotros, a Chía. Ayúdenme.\nVale: Lo mejor sería que se lo dijera a él.\nLucía: Con mi papá no hay negociación. Uno le habla en serio y él contesta con un chiste.\nVale: A mí me pasa lo mismo.\nLucía: Cuando murió mi mamá tuvimos una pelea horrible: un año sin hablarnos. No quiero otra pelea. Pero todo tiene un límite, y mi límite es esa escalera.\nHernando entró y se quedó quieto.\nHernando: Llegaste un día antes.\nLucía: Y usted se cayó sin avisarme.\nGloria: Cálmense los dos, que hablando se entiende la gente.\nHernando: Estoy calmado.\nLucía: Esto no es una negociación, papá. No pienso ceder.\nHernando: Yo tampoco. Los dos salimos a tu mamá.\nLucía: No es por ofender, pero usted ya no tiene cuarenta años.\nHernando: No me ofende. Subo esa escalera todos los días. Mañana, en mi casa. Y subes tú también los ochenta y cuatro escalones.\nLucía: Alguien en esta familia tiene que ceder.\nPor la tarde, el dentista le sacó la muela a Tomás. Esa noche, con la boca todavía dormida, esperó a Vale en la cocina.\nTomás: Vale, yo no guero gue te...\nSimón: ¡No guero gue! ¡No guero gue, parce!\nVale se rio sin ganas y le tocó la cara.\nVale: Mañana me lo dices. No tengas miedo de decirlo mal. Lo malo es no decirlo.",
+  "gloss": [
+    {
+      "es": "hinchada",
+      "en": "swollen"
+    },
+    {
+      "es": "muela del juicio",
+      "en": "wisdom tooth (juicio also means good sense)"
+    },
+    {
+      "es": "A los hombres el juicio les llega tarde",
+      "en": "Good sense comes late to men"
+    },
+    {
+      "es": "arvejas congeladas",
+      "en": "frozen peas"
+    },
+    {
+      "es": "ahora quieren fabricar el pan",
+      "en": "now they want to make the bread too"
+    },
+    {
+      "es": "¿A tener el pasaje?",
+      "en": "Until you had the ticket"
+    },
+    {
+      "es": "Lucía",
+      "en": "Lucía (Hernando's daughter)"
+    },
+    {
+      "es": "Siempre me entero de último",
+      "en": "I'm always the last to find out"
+    },
+    {
+      "es": "escalones",
+      "en": "steps"
+    },
+    {
+      "es": "Cálmense",
+      "en": "Calm down (you two)"
+    },
+    {
+      "es": "Estoy calmado",
+      "en": "I'm calm"
+    },
+    {
+      "es": "Los dos salimos a tu mamá",
+      "en": "We both take after your mum"
+    },
+    {
+      "es": "No me ofende",
+      "en": "It doesn't offend me"
+    },
+    {
+      "es": "dentista",
+      "en": "dentist"
+    },
+    {
+      "es": "con la boca todavía dormida",
+      "en": "with his mouth still numb"
+    },
+    {
+      "es": "yo no guero gue te",
+      "en": "I don't want you to (said with a numb mouth)"
+    },
+    {
+      "es": "Lo malo es no decirlo",
+      "en": "The bad thing is not saying it"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does Mariana find out about Esteban Correa?",
+      "options": [
+        "He is a serious businessman whose family makes ovens",
+        "He works for Altamira",
+        "He has huge debts",
+        "He is a famous baker"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Gloria tell the woman in the grey suit that there is no Pacheco here?",
+      "options": [
+        "She thinks the woman has come from Altamira",
+        "She does not like Hernando's daughter",
+        "Hernando owes her money",
+        "The café is closed"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why did Lucía come a day early?",
+      "options": [
+        "So her father would have no time to prepare jokes",
+        "Because her bus was early",
+        "Because Vale invited her",
+        "To see the parrot"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué propone Hernando al final de la discusión?",
+      "options": [
+        "Hablar mañana en su casa, después de subir la escalera",
+        "Irse a vivir a Chía el lunes",
+        "Vender el apartamento",
+        "No volver a hablar del tema"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Tomás fail to tell Vale what he feels?",
+      "options": [
+        "His mouth is still numb from the dentist",
+        "Simón interrupts him before he starts",
+        "Vale has already left",
+        "He decides to write her a letter"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What does Vale put on Tomás's face?",
+      "options": [
+        "Frozen peas",
+        "A hot towel",
+        "A slice of mango",
+        "A napkin"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How long did Hernando and Lucía not speak after her mother died?",
+      "options": [
+        "About a year",
+        "A month",
+        "Ten years",
+        "A week"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who says «A mí me pasa lo mismo», and about what?",
+      "options": [
+        "Vale, about getting jokes when she talks seriously",
+        "Gloria, about the stairs",
+        "Mariana, about the investor",
+        "Tomás, about his tooth"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Tomorrow Lucía climbs the eighty four steps to her father's flat, and Tomás goes with them as a witness. Neither Hernando nor his daughter is willing to give in.",
+  "requires": [
+    "c:a-mi-me-pasa-lo-mismo",
+    "c:bien-y-tu",
+    "c:en-serio",
+    "c:hablando-se-entiende-la-gente",
+    "c:hay",
+    "c:ojo",
+    "c:que-pena",
+    "c:quiero",
+    "c:tienes",
+    "c:ya-no",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:estar-participle",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:gustar-full",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indefinites",
+    "g:indirect-objects",
+    "g:le-doubling",
+    "g:lo-adjective",
+    "g:negation-words",
+    "g:negative-commands",
+    "g:object-pronoun-position",
+    "g:para-que",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-hypothetical",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-relative",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "p:aqui-ahi-alla",
+    "p:caerse-lastimarse",
+    "p:cuando-basic",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:detenerse-estar-parado",
+    "p:empezar-terminar",
+    "p:enterarse-de",
+    "p:frequency-scale",
+    "p:generic-tu-uno",
+    "p:indefinites-basic",
+    "p:llegar-a-tiempo",
+    "p:lo-mejor-seria-que",
+    "p:me-da-miedo-que",
+    "p:me-te-nos-objects",
+    "p:miedo-a",
+    "p:naci-en",
+    "p:no-tengas-miedo-de",
+    "p:nos-vemos-a-las",
+    "p:ojo-con-no-confies",
+    "p:otro-no-article",
+    "p:para-inf-purpose",
+    "p:pensar-en",
+    "p:pensar-inf",
+    "p:personal-a",
+    "p:poco-un-poco",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:senor-don-article",
+    "p:sobre-todo-solo",
+    "p:tambien-tampoco",
+    "p:telling-time",
+    "p:ten-cuidado-con",
+    "p:tendrias-que",
+    "p:tener-anos",
+    "p:tener-hambre",
+    "p:todos-los-dias",
+    "p:veces-al",
+    "p:ya-todavia-basic"
+  ],
+  "lexemes": [
+    "l:abogado",
+    "l:ahora",
+    "l:antes",
+    "l:aquí",
+    "l:armado",
+    "l:avisar",
+    "l:ayudar",
+    "l:año",
+    "l:boca",
+    "l:caerse",
+    "l:calmar",
+    "l:cara",
+    "l:casa",
+    "l:ceder",
+    "l:chiste",
+    "l:cocina",
+    "l:conflicto",
+    "l:congelar",
+    "l:contestar",
+    "l:contrato",
+    "l:decir",
+    "l:dentista",
+    "l:doler",
+    "l:dormir",
+    "l:día",
+    "l:empezar",
+    "l:entender",
+    "l:enterarse",
+    "l:entrar",
+    "l:escalera",
+    "l:escribir",
+    "l:esperar",
+    "l:estar",
+    "l:fabricar",
+    "l:familia",
+    "l:firmar",
+    "l:ganas",
+    "l:gente",
+    "l:gris",
+    "l:hablar",
+    "l:hija",
+    "l:hinchado",
+    "l:hombre",
+    "l:horno",
+    "l:horrible",
+    "l:juicio",
+    "l:llegar",
+    "l:lucía",
+    "l:límite",
+    "l:mal",
+    "l:malentendido",
+    "l:malo",
+    "l:mamá",
+    "l:mañana",
+    "l:mejor",
+    "l:miedo",
+    "l:mijo",
+    "l:morir",
+    "l:muela",
+    "l:mujer",
+    "l:nadar",
+    "l:negociación",
+    "l:noche",
+    "l:ofende",
+    "l:ofender",
+    "l:ojo",
+    "l:palabra",
+    "l:pan",
+    "l:papá",
+    "l:parar",
+    "l:parce",
+    "l:pasaje",
+    "l:pasar",
+    "l:pelea",
+    "l:pena",
+    "l:pensar",
+    "l:poner",
+    "l:pregunta",
+    "l:preguntar",
+    "l:preparar",
+    "l:quedarse",
+    "l:querer",
+    "l:quieto",
+    "l:qué",
+    "l:reprochar",
+    "l:reproche",
+    "l:reír",
+    "l:sacar",
+    "l:salir",
+    "l:ser",
+    "l:serio",
+    "l:señor",
+    "l:señora",
+    "l:siempre",
+    "l:sonar",
+    "l:subir",
+    "l:sábado",
+    "l:tarde",
+    "l:tener",
+    "l:tiempo",
+    "l:tocar",
+    "l:traje",
+    "l:vecino",
+    "l:vender",
+    "l:venir",
+    "l:ver",
+    "l:vivir"
+  ]
+}
