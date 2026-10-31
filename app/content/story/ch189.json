@@ -1,0 +1,463 @@
+{
+  "id": "ch189",
+  "unit": "u54",
+  "title": "La caja de lata",
+  "text": "Esa mañana la pantalla del hotel solo decía «Bienvenidos», en letras doradas, sin chiste. A las ocho, Camila entró al café con una caja de cartón. Adentro había una planta y una taza del hotel.\nCamila: ¡Quién lo hubiera dicho! Once meses en ese hotel, y me echan por el único chiste bueno que escribí.\nSimón: ¡Quién lo hubiera dicho! ¡Quién lo hubiera dicho, parce!\nHernando se quitó el sombrero, que era como pedir perdón.\nHernando: ¡Ojalá nunca le hubiera dicho nada, mija!\nCamila: Ni lo diga. Fue el mejor día de todo mi trabajo. Mi jefe me dijo que mi función era retener clientes, no espantarlos.\nHernando: Aquí retenemos clientes desde hace cuarenta años, y sin pantalla.\nGloria le sirvió un tinto doble.\nCamila sacó una carpeta azul.\nCamila: Esto no me lo pidieron de vuelta. Es la lista de precios de la terraza.\nMariana leyó por encima del hombro de Tomás.\nMariana: «Habitación superior con vista al patio colonial: cargo adicional de ciento veinte mil pesos por noche».\nTomás: ¿Cobran un cargo adicional por mirar nuestra casa?\nCamila: Y está en el contrato con los huéspedes. Si la vista se acaba, tienen que devolver la plata.\nMariana: Altamira cobra por un patio que no es suyo. ¡Si lo hubiéramos sabido el día de la audiencia!\nHernando: El hotel es un barco enorme, mijo. Nosotros somos un bote. Pero en el bote todos reman, y nadie cobra por mirar el agua.\nA las once llegó Jhon Fredy, sin sonreír, cosa rara en él. Tenía en la mano un papel de la universidad.\nJhon Fredy: Tengo que pagar la matrícula antes del viernes. Me faltan ochocientos mil pesos. Mi mamá dice que lo deje para el otro semestre.\nTomás: ¿Qué quieres estudiar?\nJhon Fredy: Química. Quiero ser químico, don Tomás. No me pregunte por qué. Desde niño mezclo cosas.\nHernando fue al mostrador y sacó la caja de lata donde, desde la primera foto de la pizarra, los turistas dejaban plata «para el señor de los chistes».\nHernando: Cuéntela usted, que es el químico.\nJhon Fredy contó dos veces, con las manos temblorosas. Eran novecientos treinta mil pesos.\nJhon Fredy: Don Hernando, esto es suyo.\nHernando: Esto es de los chistes. Y los chistes, mijo, son de quien los necesita. Págueme con un diploma.\nJhon Fredy se puso a llorar, y después a reírse de que estaba llorando.\nJhon Fredy: ¡Si mi mamá lo viera! ¡Si al menos ella supiera que fue por un chiste!\nGloria: ¡Ojalá Rosa estuviera aquí! Le habría dado un pandebono y un regaño.\nPor la tarde, Hernando escribió en la pizarra, mirando hacia la terraza:\n«Señores huéspedes: si pagaron cargo adicional por esta vista, sonrían. Desde abajo también los estamos mirando, y gratis».\nCamila le tomó una foto, la primera que tomaba sin pensar en los números.\nPor la noche, Tomás llamó a Vale y le contó todo: la caja de cartón, el barco y el bote, la matrícula.\nVale: ¡Si yo hubiera estado ahí! Y yo aquí, haciendo pan en Medellín.\nTomás: Tú haces el pan que nosotros extrañamos. No es lo mismo.\nVale se quedó callada un momento.\nVale: Eso fue casi un chiste, Tomás. Y casi una declaración.\nA las nueve, el cartero dejó un sobre blanco, sin nada dorado. Lo enviaba el Instituto de Patrimonio. Tomás lo abrió con cuidado, como si pudiera morder.\n«El comité dará a conocer su decisión sobre el inmueble el lunes, a las diez, en audiencia pública».\nHernando: Hasta el lunes, no más chistes. Hay cosas que no se le cuentan a nadie antes de tiempo.",
+  "gloss": [
+    {
+      "es": "caja de cartón",
+      "en": "cardboard box"
+    },
+    {
+      "es": "¡Quién lo hubiera dicho!",
+      "en": "Who would have thought it"
+    },
+    {
+      "es": "se quitó el sombrero, que era como pedir perdón",
+      "en": "took off his hat, which was like saying sorry"
+    },
+    {
+      "es": "¡Ojalá nunca le hubiera dicho nada, mija!",
+      "en": "I wish I'd never said anything to you, dear"
+    },
+    {
+      "es": "Ni lo diga",
+      "en": "Don't even say it"
+    },
+    {
+      "es": "mi función era retener clientes, no espantarlos",
+      "en": "my job was to keep customers, not scare them off"
+    },
+    {
+      "es": "desde hace cuarenta años",
+      "en": "for forty years"
+    },
+    {
+      "es": "colonial",
+      "en": "colonial"
+    },
+    {
+      "es": "cargo adicional de ciento veinte mil pesos por noche",
+      "en": "an extra charge of a hundred and twenty thousand pesos a night"
+    },
+    {
+      "es": "Si la vista se acaba, tienen que devolver la plata",
+      "en": "If the view disappears, they have to give the money back"
+    },
+    {
+      "es": "¡Si lo hubiéramos sabido el día de la audiencia!",
+      "en": "If only we'd known on the day of the hearing"
+    },
+    {
+      "es": "Nosotros somos un bote",
+      "en": "We're a little boat"
+    },
+    {
+      "es": "nadie cobra por mirar el agua",
+      "en": "nobody charges for looking at the water"
+    },
+    {
+      "es": "Desde niño mezclo cosas",
+      "en": "I've been mixing things since I was a kid"
+    },
+    {
+      "es": "mostrador",
+      "en": "counter"
+    },
+    {
+      "es": "caja de lata",
+      "en": "tin box"
+    },
+    {
+      "es": "con las manos temblorosas",
+      "en": "with shaking hands"
+    },
+    {
+      "es": "Págueme con un diploma",
+      "en": "Pay me back with a diploma"
+    },
+    {
+      "es": "¡Si mi mamá lo viera!",
+      "en": "If only my mum could see this"
+    },
+    {
+      "es": "¡Si al menos ella supiera que fue por un chiste!",
+      "en": "If only she knew it was thanks to a joke"
+    },
+    {
+      "es": "¡Ojalá Rosa estuviera aquí!",
+      "en": "I wish Rosa were here"
+    },
+    {
+      "es": "un regaño",
+      "en": "a telling off"
+    },
+    {
+      "es": "¡Si yo hubiera estado ahí!",
+      "en": "If only I'd been there"
+    },
+    {
+      "es": "Eso fue casi un chiste, Tomás. Y casi una declaración",
+      "en": "That was almost a joke, Tomás. And almost a declaration"
+    },
+    {
+      "es": "cartero",
+      "en": "postman"
+    },
+    {
+      "es": "como si pudiera morder",
+      "en": "as if it might bite"
+    },
+    {
+      "es": "El comité dará a conocer su decisión sobre el inmueble",
+      "en": "The committee will announce its decision on the property"
+    },
+    {
+      "es": "Hay cosas que no se le cuentan a nadie antes de tiempo",
+      "en": "Some things you don't tell anyone before their time"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why was Camila fired?",
+      "options": [
+        "She stole a folder",
+        "For the joke against the hotel she put on the screen",
+        "She was late every day",
+        "She talked to Mariana"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does the folder from the hotel reveal?",
+      "options": [
+        "The hotel is bankrupt",
+        "Guests pay an extra charge for the view of the café's patio",
+        "Altamira is selling the hotel",
+        "The terrace is illegal"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Where does the money for Jhon Fredy's tuition come from?",
+      "options": [
+        "Tomás's savings",
+        "Tips that tourists left 'for the joke man' in a tin box",
+        "Altamira's cappuccino",
+        "A loan from Gloria"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "¿Qué quiere estudiar Jhon Fredy?",
+      "options": [
+        "Química",
+        "Periodismo",
+        "Cocina",
+        "Derecho"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "The heritage institute announces its decision on Monday at ten, in a public hearing. Until then Hernando has called off the jokes, and the whole house waits to find out whether it will still be standing to see the view.",
+  "rereadQuestions": [
+    {
+      "q": "What did the hotel screen say that morning?",
+      "options": [
+        "Another joke",
+        "Only 'Bienvenidos', with no joke",
+        "Camila's apology",
+        "Nothing, it was off"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "How much did the tin box hold?",
+      "options": [
+        "Eight hundred thousand pesos",
+        "Nine hundred and thirty thousand pesos",
+        "One hundred and twenty thousand pesos",
+        "Two million pesos"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does Hernando ask Jhon Fredy for in return?",
+      "options": [
+        "A diploma",
+        "A coffee",
+        "Nothing at all",
+        "A joke"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:era",
+    "c:es-lo-mismo",
+    "c:hasta-el-lunes",
+    "c:hay",
+    "c:no-se",
+    "c:ojala",
+    "c:quiero",
+    "c:tengo",
+    "c:tengo-que",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:como-si",
+    "g:comparatives",
+    "g:conditional-perfect",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:hace-que-desde",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-progressive",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:negation-words",
+    "g:negative-commands",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:pluperfect-subj",
+    "g:por-para-1",
+    "g:possessives",
+    "g:possessives-stressed",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:relatives-prepositions",
+    "g:reported-past-basic",
+    "g:reported-requests",
+    "g:se-accidental",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-hypothetical",
+    "g:si-past-unreal",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:verbs-of-change",
+    "g:wish-exclamatives",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cargar-descargar",
+    "p:cerca-de",
+    "p:container-de",
+    "p:contar-dos-sentidos",
+    "p:costar-pagar",
+    "p:days-el-lunes",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:describe-with-images",
+    "p:don-dona-nombre",
+    "p:el-agua-fria",
+    "p:exclamations-basic",
+    "p:frequency-scale",
+    "p:ir-a-venir-de-place",
+    "p:lavarse-las-manos",
+    "p:me-te-nos-objects",
+    "p:mirar-por-encima-del-hombro",
+    "p:numbers-un-una",
+    "p:ojala-hubiera",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:pedir-disculpas-por",
+    "p:pensar-en",
+    "p:personal-a",
+    "p:ponerse-a",
+    "p:ponerse-a-inf",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quedar-faltar-sobrar",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:sobre-todo-solo",
+    "p:telling-time",
+    "p:time-sequence-basic"
+  ],
+  "lexemes": [
+    "l:abajo",
+    "l:abrir",
+    "l:acabar",
+    "l:adentro",
+    "l:adicional",
+    "l:agua",
+    "l:ahí",
+    "l:antes",
+    "l:aquí",
+    "l:audiencia",
+    "l:azul",
+    "l:año",
+    "l:barco",
+    "l:blanco",
+    "l:bote",
+    "l:bueno",
+    "l:café",
+    "l:caja",
+    "l:callado",
+    "l:cargar",
+    "l:cargo",
+    "l:carpeta",
+    "l:cartero",
+    "l:cartón",
+    "l:casa",
+    "l:chiste",
+    "l:cliente",
+    "l:cobrar",
+    "l:colonial",
+    "l:comité",
+    "l:conocer",
+    "l:contar",
+    "l:contrato",
+    "l:cosa",
+    "l:coser",
+    "l:cuidado",
+    "l:dar",
+    "l:decir",
+    "l:decisión",
+    "l:declaración",
+    "l:dejar",
+    "l:después",
+    "l:devolver",
+    "l:diploma",
+    "l:doble",
+    "l:dorada",
+    "l:dorado",
+    "l:día",
+    "l:echar",
+    "l:encima",
+    "l:enorme",
+    "l:entrar",
+    "l:enviar",
+    "l:escribir",
+    "l:estar",
+    "l:estudiar",
+    "l:extrañar",
+    "l:faltar",
+    "l:foto",
+    "l:función",
+    "l:gratis",
+    "l:habitación",
+    "l:hace",
+    "l:hacer",
+    "l:hombro",
+    "l:hotel",
+    "l:huésped",
+    "l:inmueble",
+    "l:ir",
+    "l:jefe",
+    "l:lata",
+    "l:leer",
+    "l:letra",
+    "l:listo",
+    "l:llamar",
+    "l:llegar",
+    "l:llorar",
+    "l:lunes",
+    "l:mamá",
+    "l:mano",
+    "l:matrícula",
+    "l:mañana",
+    "l:mejor",
+    "l:mes",
+    "l:mezclar",
+    "l:mija",
+    "l:mijo",
+    "l:mirar",
+    "l:momento",
+    "l:morder",
+    "l:mostrador",
+    "l:necesitar",
+    "l:niño",
+    "l:noche",
+    "l:número",
+    "l:pagar",
+    "l:pan",
+    "l:pandebono",
+    "l:pantalla",
+    "l:papel",
+    "l:parce",
+    "l:patio",
+    "l:pedir",
+    "l:pensar",
+    "l:perdón",
+    "l:peso",
+    "l:pizarra",
+    "l:planta",
+    "l:plata",
+    "l:poder",
+    "l:ponerse",
+    "l:precio",
+    "l:preguntar",
+    "l:público",
+    "l:quedarse",
+    "l:querer",
+    "l:quitarse",
+    "l:quién",
+    "l:qué",
+    "l:química",
+    "l:químico",
+    "l:raro",
+    "l:retener",
+    "l:reír",
+    "l:saber",
+    "l:sacar",
+    "l:semestre",
+    "l:ser",
+    "l:servir",
+    "l:señor",
+    "l:sobre",
+    "l:sombrero",
+    "l:sonreír",
+    "l:superior",
+    "l:tarde",
+    "l:taza",
+    "l:tembloroso",
+    "l:tener",
+    "l:terraza",
+    "l:tiempo",
+    "l:tinto",
+    "l:tomar",
+    "l:trabajo",
+    "l:turista",
+    "l:universidad",
+    "l:ver",
+    "l:vez",
+    "l:viernes",
+    "l:vista",
+    "l:vuelta",
+    "l:único"
+  ]
+}
