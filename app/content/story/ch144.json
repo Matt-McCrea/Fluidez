@@ -1,0 +1,390 @@
+{
+  "id": "ch144",
+  "unit": "u45",
+  "title": "La versión en inglés",
+  "text": "A las seis en punto, las tazas empezaron a bailar en la repisa. Detrás de la pared de la cocina, una máquina enorme hacía huecos en la tierra.\nSimón imitó la máquina. Lo hacía mejor que la máquina.\nTomás ya tenía el comunicado de Altamira en inglés, para inversionistas.\nTomás: En español tiene tres frases. En inglés tiene once.\nHernando: Por fin ese inglés de Toronto es valioso.\nTomás hizo la traducción en voz alta.\nTomás: «Se espera que la segunda fase incluya la propiedad de la esquina. Se cree que la decisión del comité no es un obstáculo importante. La compañía prefiere ser discreta sobre las negociaciones con la familia».\nVale: ¿Negociaciones? ¿Con cuál familia? Aquí nadie ha negociado nada.\nMariana: Esa es la parte valiosa. En español dicen que van a terminar un hotel. En inglés dicen que la casa ya casi es suya.\nLa doctora Uribe leyó la traducción a las nueve.\nUribe: Esto no prueba nada ante un juez, pero el comité va a querer leerlo. Si se cae una teja, se mide, se fotografía y se manda al comité.\nA mediodía entró Gloria, con un muchacho de casco amarillo.\nGloria: Les presento a Wilson. Le alquilé el cuarto de atrás. Trabaja en la obra, pero es buena gente.\nWilson era discreto, pero con el segundo buñuelo empezó a hablar.\nWilson: En la obra dicen que el jefe quiere terminar en febrero. Se dice que hay un bono si terminamos antes. Uno no pregunta para qué tanta prisa. Uno trabaja.\nMariana: ¿Y qué se dice de esta casa?\nWilson: Que no va a durar mucho. Eso dicen. Yo no sé nada.\nSimón: ¡Yo no sé nada! ¡No sé nada, parce!\nVale: Terminar un hotel en tres meses sería un milagro.\nWilson: Con tanta plata, señora, los milagros se compran.\nAntes de irse, Wilson se quedó mirando los dibujos de los niños.\nWilson: Mi hija también dibuja loros. Vive en Ibagué. La veo dos veces al año.\nLe tomó una foto al dibujo con mucho cuidado, como si fuera un documento valioso.\nWilson: Ojalá no tumben esta casa.\nEn la puerta, se dio la vuelta.\nWilson: Ah, y dígale a su primo que el ingeniero le manda saludos.\nTomás: ¿Mi primo?\nWilson: El costeño de la chaqueta de pana. Ayer estuvo en la oficina de la obra, con el jefe. Pensé que trabajaba con ustedes.\nWilson se fue. Detrás de la pared, la máquina seguía.\nTomás: Habrá sido un error. Lo habrá confundido con otro.\nVale: ¿Con otro costeño con la chaqueta de su abuelo? Quién sabe, Tomás. Quién sabe.\nVale dejó la taza en la mesa, sin hacer ruido, y salió a la calle.",
+  "gloss": [
+    {
+      "es": "repisa",
+      "en": "shelf"
+    },
+    {
+      "es": "huecos",
+      "en": "holes"
+    },
+    {
+      "es": "imitó",
+      "en": "imitated"
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "loros",
+      "en": "parrots"
+    },
+    {
+      "es": "tumben",
+      "en": "knock down"
+    },
+    {
+      "es": "comunicado",
+      "en": "press release"
+    },
+    {
+      "es": "inversionistas",
+      "en": "investors"
+    },
+    {
+      "es": "negociaciones",
+      "en": "negotiations"
+    },
+    {
+      "es": "Se espera que",
+      "en": "It is expected that"
+    },
+    {
+      "es": "Se cree que",
+      "en": "It is believed that"
+    },
+    {
+      "es": "teja",
+      "en": "roof tile"
+    },
+    {
+      "es": "se mide, se fotografía y se manda al comité",
+      "en": "it gets measured, photographed and sent to the committee"
+    },
+    {
+      "es": "casco",
+      "en": "helmet"
+    },
+    {
+      "es": "bono",
+      "en": "bonus"
+    },
+    {
+      "es": "dibujos",
+      "en": "drawings"
+    },
+    {
+      "es": "dibuja",
+      "en": "draws"
+    },
+    {
+      "es": "dibujo",
+      "en": "drawing"
+    },
+    {
+      "es": "costeño",
+      "en": "man from the coast"
+    },
+    {
+      "es": "es buena gente",
+      "en": "he's a good guy"
+    },
+    {
+      "es": "pana",
+      "en": "corduroy"
+    },
+    {
+      "es": "Uno no pregunta para qué tanta prisa.",
+      "en": "You don't ask why the hurry."
+    },
+    {
+      "es": "los milagros se compran",
+      "en": "miracles can be bought"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does the English version of the statement suggest that the Spanish one hides?",
+      "options": [
+        "That Altamira expects the corner house to be part of the second phase",
+        "That the hotel will be cancelled",
+        "That Rengifo works for the café",
+        "That the hotel has no money"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Dr Uribe say they should do if a roof tile falls?",
+      "options": [
+        "Measure it, photograph it and send it to the committee",
+        "Fix it before anyone sees",
+        "Send the bill to Altamira",
+        "Ask Wilson to put it back"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Wilson take a photo of the children's drawing?",
+      "options": [
+        "His daughter also draws parrots, and he rarely sees her",
+        "He wants to sell it",
+        "His boss asked for it",
+        "It is evidence for Mariana"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué dice Wilson del primo antes de irse?",
+      "options": [
+        "Que el primo estuvo ayer en la oficina de la obra con el jefe",
+        "Que la obra termina mañana",
+        "Que Gloria le cobra mucho",
+        "Que no le gusta el tinto"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "How long is the statement in Spanish, and in English?",
+      "options": [
+        "Three sentences in Spanish, eleven in English",
+        "Eleven in Spanish, three in English",
+        "One page each",
+        "Five in both"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Where does Wilson's daughter live?",
+      "options": [
+        "In Ibagué",
+        "In Bogotá",
+        "On the coast",
+        "In Panama"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Vale do after Wilson leaves?",
+      "options": [
+        "She puts the cup down quietly and goes out into the street",
+        "She throws the cup",
+        "She calls Yesid",
+        "She laughs"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Wilson says Vale's cousin was in Altamira's site office yesterday, in his grandfather's corduroy jacket. Tomorrow Vale wants to hear it from Yesid himself.",
+  "requires": [
+    "c:ayer-anoche",
+    "c:buena-gente",
+    "c:era",
+    "c:estuvo",
+    "c:hay",
+    "c:no-hay-nada",
+    "c:no-se",
+    "c:ojala",
+    "c:quien-sabe",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:como-si",
+    "g:comparatives",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:future-perfect",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:passive-se",
+    "g:perfecto-experience",
+    "g:possessives-stressed",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cerca-de",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:durar-durante",
+    "p:empezar-terminar",
+    "p:generic-tu-uno",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:pensar-en",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:prefieres-x-o-y",
+    "p:preguntar-pedir",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:saludos-de-mi-parte",
+    "p:te-presento-a",
+    "p:telling-time",
+    "p:veces-al",
+    "p:ver-oir-bien-mal"
+  ],
+  "lexemes": [
+    "l:abuelo",
+    "l:alquilar",
+    "l:alto",
+    "l:amarillo",
+    "l:antes",
+    "l:aquí",
+    "l:atrás",
+    "l:ayer",
+    "l:año",
+    "l:bailar",
+    "l:bono",
+    "l:buena",
+    "l:buñuelo",
+    "l:caerse",
+    "l:calle",
+    "l:casa",
+    "l:casco",
+    "l:chaqueta",
+    "l:cocina",
+    "l:comité",
+    "l:compañía",
+    "l:comprar",
+    "l:comunicado",
+    "l:confundido",
+    "l:costeño",
+    "l:creer",
+    "l:cuidado",
+    "l:cuál",
+    "l:darse",
+    "l:decir",
+    "l:decisión",
+    "l:dejar",
+    "l:detrás",
+    "l:dibujar",
+    "l:dibujo",
+    "l:discreto",
+    "l:doctor",
+    "l:documento",
+    "l:durar",
+    "l:empezar",
+    "l:enorme",
+    "l:entrar",
+    "l:error",
+    "l:español",
+    "l:esperar",
+    "l:esquina",
+    "l:estar",
+    "l:familia",
+    "l:fase",
+    "l:febrero",
+    "l:fin",
+    "l:foto",
+    "l:fotografía",
+    "l:frase",
+    "l:gente",
+    "l:hablar",
+    "l:hacer",
+    "l:hija",
+    "l:hotel",
+    "l:hueco",
+    "l:imitar",
+    "l:importante",
+    "l:incluir",
+    "l:ingeniero",
+    "l:inglés",
+    "l:ir",
+    "l:irse",
+    "l:jefe",
+    "l:juez",
+    "l:leer",
+    "l:loro",
+    "l:mandar",
+    "l:mediodía",
+    "l:medir",
+    "l:mejor",
+    "l:mes",
+    "l:mesa",
+    "l:milagro",
+    "l:mirar",
+    "l:muchacho",
+    "l:máquina",
+    "l:negociación",
+    "l:negociar",
+    "l:niño",
+    "l:obra",
+    "l:obstáculo",
+    "l:oficina",
+    "l:pan",
+    "l:parce",
+    "l:pared",
+    "l:parte",
+    "l:pensar",
+    "l:plata",
+    "l:preferir",
+    "l:preguntar",
+    "l:presentar",
+    "l:primo",
+    "l:prisa",
+    "l:probar",
+    "l:propiedad",
+    "l:puerta",
+    "l:punto",
+    "l:quedarse",
+    "l:querer",
+    "l:quién",
+    "l:qué",
+    "l:ruido",
+    "l:saber",
+    "l:salir",
+    "l:saludo",
+    "l:seguir",
+    "l:ser",
+    "l:señora",
+    "l:taza",
+    "l:tener",
+    "l:terminar",
+    "l:tierra",
+    "l:tomar",
+    "l:trabajar",
+    "l:traducción",
+    "l:tumbar",
+    "l:valioso",
+    "l:ver",
+    "l:vez",
+    "l:vivir",
+    "l:voz",
+    "l:vuelta"
+  ]
+}

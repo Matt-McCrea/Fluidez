@@ -1,0 +1,352 @@
+{
+  "id": "ch141",
+  "unit": "u45",
+  "title": "Dos fuentes",
+  "text": "La sede del periódico tenía una fachada de piedra gris de 1950, y por dentro todo era vidrio y computadoras.\nMariana: Así es el periodismo ahora. La fachada es vieja, y los sueldos también.\nOsorio, el editor, escuchó toda la historia sin decir nada.\nOsorio: ¿Y la evidencia?\nMariana: Mi fuente dice que Rengifo recibió plata de Altamira.\nOsorio: Tu fuente dice. Una acusación de corrupción contra el hombre más rico de Bogotá no se publica con una sola fuente. Si nos equivocamos, el escándalo no es Rengifo. El escándalo somos nosotros.\nMariana: ¿Usted está al tanto de lo que pasó con las seis casas?\nOsorio: Saberlo no es periodismo. Confirmarlo, sí. Tráeme otra fuente, o esto se va al suplemento del domingo, al lado del horóscopo.\nEntró una practicante con una hoja.\nPracticante: Jefe, los del suplemento quieren una entrevista con el loro del café.\nMariana: No tengo ni idea de dónde voy a sacar otra fuente.\nTomás escribió «Rengifo» y «Altamira» en el buscador del celular. Salieron cuatrocientas noticias viejas, dos videos de Simón y una receta de ajiaco.\nTomás: El buscador no sabe nada que no sepamos nosotros.\nEntonces Tomás pensó en Duarte. Lo encontraron en una papelería del centro, con tinta en la camisa y la cara descansada.\nDuarte: Ahora duermo ocho horas. En once años de bufete, nunca.\nMariana: Duarte, ¿es verdad eso de que Altamira le pagó a Rengifo?\nDuarte: No puedo acusar a nadie de lo que no vi. Pero vi esto: en 2024 el bufete creó una empresa de fachada, Inversiones Bellavista. Sin oficina y sin empleados. Y desde esa cuenta se pagó un apartamento en Cartagena para la esposa de Rengifo.\nMariana: ¿Usted puede confirmar eso por escrito?\nDuarte: Tengo copias. Ya perdí la pensión, señorita. No me queda nada que perder.\nMariana: ¡¿De verdad que guardó copias todos estos años?!\nDuarte: Un abogado sin copias es un abogado sin futuro.\nA las seis volvieron a la sede. Osorio leyó los papeles dos veces.\nOsorio: Esto ya es evidencia. Pero una acusación así se escribe con cuidado. Aquí nadie revela nada que no pueda confirmar dos veces. La palabra «corrupción» la escribe un juez. Nosotros escribimos «presuntamente».\nEn el café, Hernando tenía puesta su emisora de siempre.\nRadio: Una emisora de Panamá revela que un exfuncionario colombiano llegó a la ciudad el jueves.\nSimón: ¡Quién sabe! ¡Quién sabe, Hernando!\nHernando: Ese pájaro nunca está al tanto de nada.\nVale le puso a Mariana un plato de ajiaco delante, sin preguntar.\nMariana: Mañana sale en primera página. Y mañana Altamira nos va a acusar de todo.\nEn la cocina, Yesid lavaba tazas, de espaldas a todos. Desde las cinco había roto dos.",
+  "gloss": [
+    {
+      "es": "exfuncionario",
+      "en": "former official"
+    },
+    {
+      "es": "vidrio",
+      "en": "glass"
+    },
+    {
+      "es": "horóscopo",
+      "en": "horoscope"
+    },
+    {
+      "es": "practicante",
+      "en": "intern"
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "noticias",
+      "en": "news stories"
+    },
+    {
+      "es": "papelería",
+      "en": "stationery shop"
+    },
+    {
+      "es": "tinta",
+      "en": "ink"
+    },
+    {
+      "es": "señorita",
+      "en": "miss"
+    },
+    {
+      "es": "presuntamente",
+      "en": "allegedly"
+    },
+    {
+      "es": "la escribe un juez",
+      "en": "a judge writes it"
+    },
+    {
+      "es": "una empresa de fachada",
+      "en": "a front company"
+    },
+    {
+      "es": "esto se va al suplemento del domingo",
+      "en": "this goes in the Sunday supplement"
+    },
+    {
+      "es": "No me queda nada que perder.",
+      "en": "I have nothing left to lose."
+    },
+    {
+      "es": "un abogado sin futuro",
+      "en": "a lawyer with no future"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why won't Osorio publish the story at first?",
+      "options": [
+        "Because Mariana has only one source",
+        "Because he is friends with Altamira",
+        "Because the newspaper is closing",
+        "Because he thinks Rengifo is innocent"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Duarte reveal?",
+      "options": [
+        "A front company created by the law firm paid for an apartment for Rengifo's wife",
+        "That he works for Altamira again",
+        "That Rengifo is in Miami",
+        "That Mariana's source is lying"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why will the paper write 'presuntamente' instead of 'corruption'?",
+      "options": [
+        "Because only a judge can call it corruption",
+        "Because it is shorter",
+        "Because Osorio is afraid of Simón",
+        "Because Duarte asked them to"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué quieren los del suplemento del domingo?",
+      "options": [
+        "Una entrevista con el loro",
+        "Una receta de ajiaco",
+        "Una foto de Osorio",
+        "El horóscopo de Mariana"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What does Tomás find when he types the two names into the search engine?",
+      "options": [
+        "Old news, two videos of Simón and a recipe for ajiaco",
+        "Rengifo's address",
+        "Nothing at all",
+        "Duarte's phone number"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What has changed for Duarte since he lost his pension?",
+      "options": [
+        "He sleeps eight hours a night",
+        "He has moved to Cartagena",
+        "He drives a taxi",
+        "He is a judge"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is Yesid doing at the end?",
+      "options": [
+        "Washing cups with his back to everyone, having broken two",
+        "Reading the newspaper",
+        "Listening to the radio with Hernando",
+        "Talking to Osorio"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Tomorrow Mariana's story is on the front page, written with great care. The internet will not be so careful.",
+  "requires": [
+    "c:en-serio",
+    "c:entonces-bueno",
+    "c:era",
+    "c:gracias-de-nada",
+    "c:ni-idea",
+    "c:no-se",
+    "c:puedo",
+    "c:quien-sabe",
+    "c:tengo",
+    "c:voy-a",
+    "g:adjective-agreement",
+    "g:adverbs-mente",
+    "g:commands-tu",
+    "g:commands-with-pronouns",
+    "g:demonstratives",
+    "g:diminutives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:passive-se",
+    "g:pluperfect",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-spelling-stem",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-irregulars",
+    "g:subj-relative",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:con-sin",
+    "p:container-de",
+    "p:dates-years",
+    "p:days-el-lunes",
+    "p:de-verdad-que",
+    "p:demonstratives-basic",
+    "p:equivocarse",
+    "p:es-verdad-eso-de-que",
+    "p:estar-al-tanto-de",
+    "p:frequency-scale",
+    "p:ir-a-venir-de-place",
+    "p:llevar-traer",
+    "p:me-te-nos-objects",
+    "p:numbers-un-una",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:pensar-en",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:postura",
+    "p:preguntar-pedir",
+    "p:quedar-faltar-sobrar",
+    "p:saber-conocer",
+    "p:telling-time",
+    "p:viejo-antiguo-mayor"
+  ],
+  "lexemes": [
+    "l:abogado",
+    "l:acusación",
+    "l:acusar",
+    "l:ahora",
+    "l:ajiaco",
+    "l:apartamento",
+    "l:aquí",
+    "l:año",
+    "l:bufete",
+    "l:buscador",
+    "l:café",
+    "l:camisa",
+    "l:cara",
+    "l:casa",
+    "l:celular",
+    "l:centro",
+    "l:ciudad",
+    "l:cocina",
+    "l:colombiano",
+    "l:computadora",
+    "l:confirmar",
+    "l:copia",
+    "l:corrupción",
+    "l:crear",
+    "l:cuenta",
+    "l:cuidado",
+    "l:decir",
+    "l:delante",
+    "l:dentro",
+    "l:descansar",
+    "l:domingo",
+    "l:dormir",
+    "l:dónde",
+    "l:editor",
+    "l:emisora",
+    "l:empleado",
+    "l:empresa",
+    "l:encontrar",
+    "l:entrar",
+    "l:entrevista",
+    "l:equivocarse",
+    "l:escribir",
+    "l:escribirse",
+    "l:escuchar",
+    "l:escándalo",
+    "l:espalda",
+    "l:esposa",
+    "l:estar",
+    "l:evidencia",
+    "l:fachada",
+    "l:fuente",
+    "l:futuro",
+    "l:gris",
+    "l:guardar",
+    "l:historia",
+    "l:hoja",
+    "l:hombre",
+    "l:hora",
+    "l:horóscopo",
+    "l:idea",
+    "l:ir",
+    "l:irse",
+    "l:jefe",
+    "l:jueves",
+    "l:juez",
+    "l:lado",
+    "l:lavar",
+    "l:leer",
+    "l:llegar",
+    "l:loro",
+    "l:mañana",
+    "l:noticias",
+    "l:oficina",
+    "l:pagar",
+    "l:palabra",
+    "l:papel",
+    "l:papelería",
+    "l:pasar",
+    "l:pensar",
+    "l:pensión",
+    "l:perder",
+    "l:periodismo",
+    "l:periódico",
+    "l:piedra",
+    "l:plata",
+    "l:plato",
+    "l:poder",
+    "l:poner",
+    "l:practicante",
+    "l:preguntar",
+    "l:presuntamente",
+    "l:publicar",
+    "l:página",
+    "l:pájaro",
+    "l:quedar",
+    "l:querer",
+    "l:quién",
+    "l:radio",
+    "l:receta",
+    "l:recibir",
+    "l:revelar",
+    "l:rico",
+    "l:romper",
+    "l:saber",
+    "l:sacar",
+    "l:salir",
+    "l:sede",
+    "l:ser",
+    "l:señorito",
+    "l:siempre",
+    "l:sueldo",
+    "l:suplemento",
+    "l:taza",
+    "l:tener",
+    "l:tinta",
+    "l:traer",
+    "l:ver",
+    "l:verdad",
+    "l:vez",
+    "l:video",
+    "l:vidrio",
+    "l:viejo",
+    "l:volver"
+  ]
+}

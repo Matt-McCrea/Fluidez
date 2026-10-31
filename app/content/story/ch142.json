@@ -1,0 +1,354 @@
+{
+  "id": "ch142",
+  "unit": "u45",
+  "title": "Habría",
+  "text": "A las seis y media, la cola salía del café y doblaba la esquina. Hernando la midió con sus pasos, como un ingeniero.\nHernando: Ochenta y cuatro pasos. Ni en el Mundial.\nEl titular de la primera página decía: «El exfuncionario Rengifo habría recibido 400 millones de una empresa ligada a Grupo Altamira».\nGloria: ¿Habría? ¿Los recibió o no los recibió?\nMariana: «Habría» significa que no lo digo yo. Lo dicen los papeles. Un juez, todavía no.\nHernando: «Según documentos de este diario, el exfuncionario estaría en Panamá desde el jueves. Cabe destacar que Grupo Altamira no respondió a las preguntas de este periódico».\nVale: Cabe destacar que Grupo Altamira nunca responde nada.\nEn internet, en cambio, nadie usaba el condicional. A las nueve, Rengifo ya estaba en Miami, en una isla privada y muerto, todo al mismo tiempo. Un video con cerca de un millón de visitas decía que Simón era el loro de Rengifo.\nSimón: ¡Ficción! ¡Pura ficción, parce!\nJhon Fredy entró con el celular en la mano.\nJhon Fredy: Vale, ¿es verdad lo del embarazo?\nVale: ¿Cuál embarazo?\nEra una foto de Vale y Tomás de la mano. Una cuenta de chismes decía: «La pastelera del café estaría embarazada. Según fuentes cercanas, el padre sería el heredero».\nTomás se puso rojo.\nVale: En esta casa solo crece la masa del pan.\nHernando: Lo más probable es que mañana digan que el papá soy yo.\nMariana: Yo mido cada palabra una semana, y un desconocido inventa un embarazo en cinco minutos.\nA mediodía, cerca de mil personas acudieron a la plaza de Bolívar. Un tercio llevaba fotos de Simón.\nA las seis de la tarde se fue la luz en toda la cuadra. El café quedó en la oscuridad. Vale puso en las mesas las velas que sobraron del cumpleaños de Rosa.\nHernando: En el 92, con el racionamiento, se iba la luz todas las tardes. Rosa abría igual. Decía que en la oscuridad la gente dice la verdad, porque nadie le ve la cara.\nTomás: ¿Y usted qué decía en la oscuridad?\nHernando: Nada. Yo era cobarde también con la luz apagada.\nNadie se rio, y Hernando lo agradeció.\nEntonces llamó Osorio.\nOsorio: La Fiscalía acaba de abrir una investigación contra Rengifo.\nMariana: ¿Y contra Altamira?\nOsorio: Habría que ver si la investigación llega hasta allá. Lo más probable es que Altamira diga que nunca conoció a Rengifo.\nVolvió la luz. Todo el café aplaudió, como si la luz también fuera una noticia.\nEn la puerta, Yesid miraba el celular. Cuando Vale pasó a su lado, lo guardó rápido en el bolsillo.\nVale: ¿Todo bien, primo?\nYesid: Todo bien. Es mucha gente, nada más.",
+  "gloss": [
+    {
+      "es": "titular",
+      "en": "headline"
+    },
+    {
+      "es": "exfuncionario",
+      "en": "former official"
+    },
+    {
+      "es": "Rengifo habría recibido 400 millones",
+      "en": "Rengifo allegedly received 400 million"
+    },
+    {
+      "es": "ligada a",
+      "en": "linked to"
+    },
+    {
+      "es": "estaría en Panamá",
+      "en": "is reportedly in Panama"
+    },
+    {
+      "es": "visitas",
+      "en": "views"
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "pastelera",
+      "en": "pastry chef"
+    },
+    {
+      "es": "embarazada",
+      "en": "pregnant"
+    },
+    {
+      "es": "estaría embarazada",
+      "en": "is said to be pregnant"
+    },
+    {
+      "es": "el padre sería el heredero",
+      "en": "the father is said to be the heir"
+    },
+    {
+      "es": "masa",
+      "en": "dough"
+    },
+    {
+      "es": "inventa",
+      "en": "makes up"
+    },
+    {
+      "es": "tercio",
+      "en": "a third"
+    },
+    {
+      "es": "racionamiento",
+      "en": "rationing"
+    },
+    {
+      "es": "cobarde",
+      "en": "coward"
+    },
+    {
+      "es": "aplaudió",
+      "en": "applauded"
+    },
+    {
+      "es": "Habría que ver si la investigación llega hasta allá.",
+      "en": "It remains to be seen whether the investigation gets that far."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does the newspaper headline say 'habría recibido' instead of 'recibió'?",
+      "options": [
+        "Because the claim comes from documents and no judge has ruled yet",
+        "Because Mariana made a spelling mistake",
+        "Because Rengifo returned the money",
+        "Because Osorio wanted it to sound more dramatic"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does the gossip account claim about Vale?",
+      "options": [
+        "That she is pregnant, and Tomás is the father",
+        "That she is leaving for Medellín",
+        "That she works for Altamira",
+        "That she is Rengifo's niece"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What did Rosa used to say about the dark?",
+      "options": [
+        "That in the dark people tell the truth because nobody can see their face",
+        "That it was good for business",
+        "That it scared the parrot",
+        "That it was the best time to bake"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué abre la Fiscalía?",
+      "options": [
+        "Una investigación contra Rengifo",
+        "Un café nuevo",
+        "Una cuenta en internet",
+        "La puerta verde"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "How does Hernando measure the queue?",
+      "options": [
+        "With his own steps, eighty four of them",
+        "With a tape measure",
+        "By counting people",
+        "He doesn't, Gloria does"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What did a third of the people in the Plaza de Bolívar carry?",
+      "options": [
+        "Photos of Simón",
+        "Candles",
+        "Newspapers",
+        "Photos of Rosa"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Yesid do when Vale walks past him?",
+      "options": [
+        "He quickly puts his phone in his pocket",
+        "He hugs her",
+        "He asks for a coffee",
+        "He leaves the café"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "The Fiscalía has opened an investigation, and Yesid is hiding his phone. Tomorrow Hernando discovers social media, and Altamira's press office sends out a short statement that changes the timetable.",
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:en-cambio",
+    "c:entonces-bueno",
+    "c:era",
+    "c:es-que",
+    "c:igual",
+    "c:la-verdad",
+    "c:porque",
+    "c:segun",
+    "c:si-soy-yo",
+    "c:todavia-no",
+    "g:acabar-de-ya-todavia",
+    "g:adjective-agreement",
+    "g:cada-cualquier",
+    "g:cause-result",
+    "g:como-si",
+    "g:conditional",
+    "g:conditional-perfect",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:negation-words",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:relative-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-e-i",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verbs-of-change",
+    "g:yo-irregular",
+    "p:a-la-vez",
+    "p:aqui-ahi-alla",
+    "p:cabe-destacar",
+    "p:caber",
+    "p:cerca-de",
+    "p:cuando-basic",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:entonces-de-repente",
+    "p:frequency-scale",
+    "p:habria-que",
+    "p:habria-que-ver-si",
+    "p:la-gente-singular",
+    "p:lo-de",
+    "p:lo-de-topic",
+    "p:lo-mas-probable-es-que",
+    "p:medir-pesar-caber",
+    "p:news-quantities",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:personal-a",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:que-opinas-de",
+    "p:quedar-faltar-sobrar",
+    "p:saber-conocer",
+    "p:sobre-todo-solo",
+    "p:te-lo-agradezco",
+    "p:telling-time",
+    "p:todos-los-dias",
+    "p:un-estudio-muestra-que",
+    "p:veces-al"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:acabar",
+    "l:acudir",
+    "l:agradecer",
+    "l:allá",
+    "l:apagar",
+    "l:aplaudir",
+    "l:bien",
+    "l:bolsillo",
+    "l:caber",
+    "l:café",
+    "l:cambio",
+    "l:cara",
+    "l:casa",
+    "l:celular",
+    "l:cerca",
+    "l:cercano",
+    "l:chisme",
+    "l:cobarde",
+    "l:cola",
+    "l:condicional",
+    "l:conocer",
+    "l:crecer",
+    "l:cuadra",
+    "l:cuenta",
+    "l:cumpleaños",
+    "l:cuál",
+    "l:decir",
+    "l:desconocido",
+    "l:destacar",
+    "l:diario",
+    "l:doblar",
+    "l:documento",
+    "l:embarazada",
+    "l:embarazo",
+    "l:empresa",
+    "l:entrar",
+    "l:esquina",
+    "l:estar",
+    "l:ficción",
+    "l:foto",
+    "l:fuente",
+    "l:gente",
+    "l:guardar",
+    "l:heredero",
+    "l:igual",
+    "l:ingeniero",
+    "l:internet",
+    "l:invento",
+    "l:investigación",
+    "l:irse",
+    "l:isla",
+    "l:jueves",
+    "l:juez",
+    "l:lado",
+    "l:ligar",
+    "l:llamar",
+    "l:llegar",
+    "l:llevar",
+    "l:loro",
+    "l:luz",
+    "l:mano",
+    "l:masa",
+    "l:mañana",
+    "l:mediodía",
+    "l:medir",
+    "l:mesa",
+    "l:minuto",
+    "l:mirar",
+    "l:morir",
+    "l:noticia",
+    "l:oscuridad",
+    "l:padre",
+    "l:palabra",
+    "l:pan",
+    "l:papel",
+    "l:papá",
+    "l:parce",
+    "l:pasar",
+    "l:paso",
+    "l:pastelera",
+    "l:periódico",
+    "l:persona",
+    "l:plaza",
+    "l:poner",
+    "l:ponerse",
+    "l:pregunta",
+    "l:primo",
+    "l:privado",
+    "l:probable",
+    "l:puerta",
+    "l:puro",
+    "l:página",
+    "l:quedar",
+    "l:qué",
+    "l:recibir",
+    "l:responder",
+    "l:reír",
+    "l:rojo",
+    "l:rápido",
+    "l:salir",
+    "l:semana",
+    "l:ser",
+    "l:significar",
+    "l:sobrar",
+    "l:tarde",
+    "l:tercio",
+    "l:tiempo",
+    "l:titularse",
+    "l:usar",
+    "l:vela",
+    "l:ver",
+    "l:verdad",
+    "l:video",
+    "l:visita",
+    "l:volver"
+  ]
+}

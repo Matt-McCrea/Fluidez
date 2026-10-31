@@ -1,0 +1,370 @@
+{
+  "id": "ch143",
+  "unit": "u45",
+  "title": "Cinco veces más",
+  "text": "A las siete de la mañana, Yesid le abrió a Hernando una cuenta en redes. Hernando escogió el nombre él solo: TaxistaDeRosa.\nHernando escribió con un solo dedo durante diecinueve minutos: «Buenos días. Soy Hernando. Tomo té porque la doctora no me deja tomar tinto».\nA las ocho tenía doce seguidores. A las nueve, la cifra se había duplicado. A mediodía tenía cinco veces más seguidores que el concejal del barrio.\nHernando: ¿Doce mil personas leen sobre mi té? ¿Este país no tiene otras noticias?\nMariana le leyó a Tomás las cifras de su segunda nota.\nMariana: «Desde la publicación, la tasa de ocupación de los hoteles de Grupo Altamira bajó un 18 %. El índice de confianza de sus inversionistas se redujo a la mitad». ¿Muy técnico?\nTomás: Un poco. La tasa de ocupación no llora. Pon a una persona.\nMariana: «Las visitas al café de la esquina se duplicaron en una semana».\nDespués, Hernando quiso hacer periodismo serio.\nHernando: «Según fuentes de la Burra, el exfuncionario Rengifo habría almorzado ayer un sancocho en Panamá. Y sin sal».\nMariana: Hernando, ¿cuál es su fuente?\nHernando: La sobrina de Chucho. Tiene una amiga en un restaurante de Panamá.\nMariana: Eso no es una fuente. Eso es una cadena de chismes.\nHernando: Por eso le puse «habría». Usted me enseñó.\nSimón: ¡Habría! ¡Habría sal, parce!\nA las tres, el sancocho tenía más lectores que la nota de Mariana.\nMariana: Diez años de periodismo, y me gana un sancocho sin sal.\nEntonces le llegó a Hernando un mensaje de una desconocida. Lo leyó despacio, con el celular lejos de la cara.\nHernando: «Mi papá fue taxista treinta años. Murió en marzo. Cuando lo leo a usted, lo oigo a él otra vez».\nHernando se quitó la gorra. Después contestó con un solo dedo: «Su papá habrá sido un buen hombre. Los taxistas buenos nunca se pierden».\nVale le apretó el hombro al pasar.\nA las cuatro, Yesid recibió una llamada. Se puso la chaqueta de su abuelo y salió sin decir nada.\nTomás: ¿Adónde habrá ido con tanta prisa?\nVale: Habrá ido a comprar algo.\nPero Vale no dejó de mirar la puerta.\nMariana: Escuchen. Es una noticia pequeña, de la oficina de prensa de Altamira. «Grupo Altamira informa que, para el 15 de marzo, la empresa habrá terminado la primera fase del hotel del lote vecino, antes de la decisión del Instituto de Patrimonio».\nTomás: ¿El lote vecino? Es la pared de nuestra cocina.\nMariana: Miren el verbo. «Habrá terminado». Nosotros usamos ese tiempo para adivinar. Ellos lo usan como si ya fuera un hecho.\nHernando: Entonces quieren que, cuando el comité decida, ya no quede nada que decidir.",
+  "gloss": [
+    {
+      "es": "noticias",
+      "en": "news"
+    },
+    {
+      "es": "exfuncionario",
+      "en": "former official"
+    },
+    {
+      "es": "buen",
+      "en": "good"
+    },
+    {
+      "es": "duplicado",
+      "en": "doubled"
+    },
+    {
+      "es": "duplicaron",
+      "en": "doubled"
+    },
+    {
+      "es": "la tasa de ocupación",
+      "en": "the occupancy rate"
+    },
+    {
+      "es": "el índice de confianza",
+      "en": "the confidence index"
+    },
+    {
+      "es": "inversionistas",
+      "en": "investors"
+    },
+    {
+      "es": "se redujo a la mitad",
+      "en": "was halved"
+    },
+    {
+      "es": "sancocho",
+      "en": "sancocho (a hearty Colombian soup)"
+    },
+    {
+      "es": "cadena de chismes",
+      "en": "chain of gossip"
+    },
+    {
+      "es": "quitó",
+      "en": "took off"
+    },
+    {
+      "es": "apretó",
+      "en": "squeezed"
+    },
+    {
+      "es": "pierden",
+      "en": "get lost"
+    },
+    {
+      "es": "verbo",
+      "en": "verb"
+    },
+    {
+      "es": "Su papá habrá sido un buen hombre.",
+      "en": "Your father must have been a good man."
+    },
+    {
+      "es": "la primera fase",
+      "en": "the first phase"
+    },
+    {
+      "es": "la empresa habrá terminado",
+      "en": "the company will have finished"
+    },
+    {
+      "es": "Nosotros usamos ese tiempo para adivinar.",
+      "en": "We use that tense to guess."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Hernando put 'habría' in his message about Rengifo's soup?",
+      "options": [
+        "Because his source is only a chain of gossip, as Mariana taught him",
+        "Because he wants to sound like a lawyer",
+        "Because Yesid told him to",
+        "Because he is sure it is true"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Tomás want Mariana to add to her article?",
+      "options": [
+        "A person, because an occupancy rate doesn't cry",
+        "More numbers",
+        "A photo of Altamira",
+        "Hernando's tea"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why is Altamira's small statement so important?",
+      "options": [
+        "The company says it will have finished the hotel next door before the committee decides",
+        "Altamira apologises to the neighbours",
+        "Altamira is selling its hotels",
+        "Rengifo has come back"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué hace Yesid a las cuatro?",
+      "options": [
+        "Recibe una llamada y sale rápido",
+        "Escribe en las redes",
+        "Ayuda a Vale en la cocina",
+        "Se va a dormir"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "How many times more followers than the local councillor does Hernando have by midday?",
+      "options": [
+        "Five times more",
+        "Twice as many",
+        "Ten times more",
+        "The same number"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who sent Hernando the message that made him take off his cap?",
+      "options": [
+        "A stranger whose father was a taxi driver",
+        "Chucho",
+        "Rosa's sister",
+        "Osorio"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who is Hernando's 'source' in Panama?",
+      "options": [
+        "Chucho's niece's friend, who works in a restaurant",
+        "Rengifo himself",
+        "Mariana's editor",
+        "A pilot"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "From six tomorrow morning the machines next door start digging, and Tomás finds Altamira's statement in English for investors. The English version says a lot more than the Spanish one.",
+  "requires": [
+    "c:a-cuantas-cuotas",
+    "c:ayer-anoche",
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:hola-buenos-dias",
+    "c:porque",
+    "c:segun",
+    "c:tienes",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:commands-tu",
+    "g:commands-usted",
+    "g:como-si",
+    "g:comparatives",
+    "g:conditional-perfect",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:future-perfect",
+    "g:gender-articles",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:pluperfect",
+    "g:possessives",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:subj-cuando-future",
+    "g:subj-wanting",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:verbs-of-change",
+    "g:yo-irregular",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cerca-de",
+    "p:con-sin",
+    "p:cuando-basic",
+    "p:dates-years",
+    "p:dejar-de-inf",
+    "p:demonstratives-basic",
+    "p:duplicarse",
+    "p:durar-durante",
+    "p:entonces-de-repente",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:indice-tasa",
+    "p:lavarse-las-manos",
+    "p:me-te-nos-objects",
+    "p:naci-en",
+    "p:news-quantities",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:personal-a",
+    "p:poco-un-poco",
+    "p:por-ciento",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:presuntamente-al-parecer",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:se-puede-me-dejas",
+    "p:ser-profession-no-article",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:un-estudio-muestra-que"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:abuelo",
+    "l:adivinar",
+    "l:adónde",
+    "l:almorzar",
+    "l:amiga",
+    "l:antes",
+    "l:apretar",
+    "l:ayer",
+    "l:año",
+    "l:bajar",
+    "l:barrio",
+    "l:buen",
+    "l:bueno",
+    "l:cadena",
+    "l:café",
+    "l:cara",
+    "l:celular",
+    "l:chaqueta",
+    "l:chisme",
+    "l:cifra",
+    "l:cocina",
+    "l:comité",
+    "l:comprar",
+    "l:concejal",
+    "l:confianza",
+    "l:contestar",
+    "l:cuenta",
+    "l:cuál",
+    "l:decidir",
+    "l:decir",
+    "l:decisión",
+    "l:dedo",
+    "l:dejar",
+    "l:desconocido",
+    "l:despacio",
+    "l:después",
+    "l:doctor",
+    "l:duplicarse",
+    "l:día",
+    "l:empresa",
+    "l:enseñar",
+    "l:escoger",
+    "l:escribir",
+    "l:escuchar",
+    "l:esquina",
+    "l:fase",
+    "l:fuente",
+    "l:ganar",
+    "l:gorra",
+    "l:hacer",
+    "l:hombre",
+    "l:hombro",
+    "l:hotel",
+    "l:informar",
+    "l:ir",
+    "l:lector",
+    "l:leer",
+    "l:lejos",
+    "l:llamada",
+    "l:llegar",
+    "l:llorar",
+    "l:lote",
+    "l:marzo",
+    "l:mañana",
+    "l:mediodía",
+    "l:mensaje",
+    "l:minuto",
+    "l:mirar",
+    "l:mitad",
+    "l:morir",
+    "l:nombre",
+    "l:nota",
+    "l:noticia",
+    "l:noticias",
+    "l:ocupación",
+    "l:oficina",
+    "l:oír",
+    "l:papá",
+    "l:parce",
+    "l:pared",
+    "l:pasar",
+    "l:país",
+    "l:pequeño",
+    "l:perderse",
+    "l:periodismo",
+    "l:persona",
+    "l:poner",
+    "l:ponerse",
+    "l:prensa",
+    "l:prisa",
+    "l:publicación",
+    "l:puerta",
+    "l:quedar",
+    "l:querer",
+    "l:quitarse",
+    "l:recibir",
+    "l:red",
+    "l:reducir",
+    "l:restaurante",
+    "l:sal",
+    "l:salir",
+    "l:sancocho",
+    "l:seguidor",
+    "l:semana",
+    "l:ser",
+    "l:serio",
+    "l:sobrina",
+    "l:tasa",
+    "l:taxista",
+    "l:tener",
+    "l:terminar",
+    "l:tiempo",
+    "l:tinto",
+    "l:tomar",
+    "l:té",
+    "l:técnico",
+    "l:usar",
+    "l:vecino",
+    "l:verbo",
+    "l:vez",
+    "l:visitar",
+    "l:índice"
+  ]
+}

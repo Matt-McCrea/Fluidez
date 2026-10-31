@@ -1,0 +1,376 @@
+{
+  "id": "ch140",
+  "unit": "u45",
+  "title": "Salidas internacionales",
+  "text": "A las cinco de la mañana, la Burra estaba parqueada debajo de un letrero de «Prohibido parquear», en el aeropuerto El Dorado. Yesid se había quedado en el café, porque le dolía la cabeza.\nMariana: Según mi fuente, Rengifo se fue del país anoche. Pero una fuente no es una noticia. Necesito saber en qué vuelo, y quién pagó.\nTomás: A esta hora ya habrá llegado a Panamá. O a Miami.\nMariana: O no habrá salido nunca, y mi fuente se habrá equivocado. Eso también pasa.\nAdentro, el piso brillaba tanto que Hernando caminaba como sobre hielo.\nEn el mostrador de la aerolínea, una señorita muy amable escuchó a Mariana y sonrió.\nSeñorita: Lo siento, señora. No puedo dar información sobre los pasajeros.\nDesde el celular de Tomás llegó una voz clarísima. Vale los llamaba por video desde el café, con Simón en el hombro.\nSimón: ¡Quién sabe! ¡Quién sabe, parce!\nLa señorita se rio por primera vez.\nSeñorita: ¿Es el loro que sale en la televisión? Mi mamá lo adora.\nTomás miró la puerta de Llegadas, enfrente.\nTomás: Hace un año salí por esa puerta, con una maleta y tres palabras de español.\nVale: Cuatro. También sabías decir «tinto».\nHernando fue a la fila de taxis y volvió con un señor bajito de bigote blanco.\nHernando: Les presento a Chucho. Aquí no sale un avión sin que Chucho se entere.\nChucho: Anoche, a las once, traje a un señor muy nervioso desde el norte. Me pagó con un billete de cien dólares y no quiso el cambio.\nMariana: ¿Cómo era?\nChucho: Gordito, con un reloj de oro. No me impresionó mucho. Pero dejó esto en el asiento de atrás.\nEra un periódico doblado, el del primer artículo de Mariana, de hace meses. Alguien había subrayado su nombre dos veces con tinta roja.\nHernando: Lo habrá leído cien veces, el pobre. Uno no subraya así el nombre de una persona que no le importa.\nMariana: Esto no es una prueba. No dice quién era, ni adónde fue.\nTomás: Pero dice que recientemente alguien pensó mucho en ti.\nA Mariana le temblaban las manos, pero le brillaban los ojos.\nMariana: Si mi fuente tiene razón, la caída de Rengifo va a ser también la caída de Altamira.\nHernando: Eso sería un final digno de una telenovela.\nMariana: Primero necesito un final digno de un periódico.\nHernando: ¿Y quién le habrá pagado el pasaje a ese señor?\nTomás: Quién sabe.\nMariana: Mañana voy a la sede del periódico. Si mi editor no me cree, nadie me va a creer.\nEn el café, la mesa de la ventana estaba vacía. Había una nota de Yesid: «Salí a caminar. No me esperen».",
+  "gloss": [
+    {
+      "es": "parqueada",
+      "en": "parked"
+    },
+    {
+      "es": "bajito",
+      "en": "short"
+    },
+    {
+      "es": "mostrador",
+      "en": "counter"
+    },
+    {
+      "es": "señorita",
+      "en": "young lady"
+    },
+    {
+      "es": "hielo",
+      "en": "ice"
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "Hace un año salí por esa puerta",
+      "en": "A year ago I came out through that door"
+    },
+    {
+      "es": "bigote",
+      "en": "moustache"
+    },
+    {
+      "es": "subrayado",
+      "en": "underlined"
+    },
+    {
+      "es": "subraya",
+      "en": "underlines"
+    },
+    {
+      "es": "tinta",
+      "en": "ink"
+    },
+    {
+      "es": "temblaban",
+      "en": "were shaking"
+    },
+    {
+      "es": "telenovela",
+      "en": "soap opera"
+    },
+    {
+      "es": "sede",
+      "en": "headquarters"
+    },
+    {
+      "es": "Ya habrá llegado a Panamá.",
+      "en": "He'll have reached Panama by now."
+    },
+    {
+      "es": "mi fuente se habrá equivocado",
+      "en": "my source must have got it wrong"
+    },
+    {
+      "es": "Aquí no sale un avión sin que Chucho se entere.",
+      "en": "Not a plane leaves here without Chucho finding out."
+    },
+    {
+      "es": "la caída de Rengifo",
+      "en": "Rengifo's downfall"
+    },
+    {
+      "es": "un final digno de una telenovela",
+      "en": "an ending worthy of a soap opera"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why are they at the airport at five in the morning?",
+      "options": [
+        "Mariana wants to check what her source said about Rengifo leaving the country",
+        "Tomás is flying back to Toronto",
+        "They are picking up Yesid's grandmother",
+        "Hernando wants to work as a taxi driver again"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What makes the airline clerk laugh?",
+      "options": [
+        "Simón shouting through Vale's video call",
+        "Hernando slipping on the floor",
+        "Mariana's question",
+        "Tomás's Spanish"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Chucho find in his taxi?",
+      "options": [
+        "A newspaper with Mariana's name underlined twice in red",
+        "A plane ticket to Panama",
+        "A hundred dollar bill",
+        "Rengifo's passport"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué dice Mariana del periódico?",
+      "options": [
+        "Que no es una prueba",
+        "Que es una prueba perfecta",
+        "Que es de Hernando",
+        "Que es de ayer"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "How did the nervous passenger pay Chucho?",
+      "options": [
+        "With a hundred dollar bill, and he didn't want the change",
+        "By card",
+        "He didn't pay",
+        "With pesos and a big tip in coins"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "According to Vale, how many words of Spanish did Tomás know when he arrived?",
+      "options": [
+        "Four, because he also knew 'tinto'",
+        "Three",
+        "None",
+        "Ten"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Where is Yesid when they get back?",
+      "options": [
+        "He has gone for a walk and left a note",
+        "Asleep upstairs",
+        "At the airport",
+        "In the kitchen with Vale"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Tomorrow Mariana takes her story to the newspaper's headquarters, and her editor will not publish an accusation with only one source. She has one day to find a second.",
+  "requires": [
+    "c:ayer-anoche",
+    "c:claro-listo",
+    "c:como-era",
+    "c:era",
+    "c:lo-siento-pero-no-puedo",
+    "c:muy-amable",
+    "c:porque",
+    "c:puedo",
+    "c:quien-sabe",
+    "c:segun",
+    "c:tienes",
+    "c:voy-a",
+    "g:adjective-agreement",
+    "g:adverbs-mente",
+    "g:cause-result",
+    "g:conditional",
+    "g:demonstratives",
+    "g:diminutives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:future-perfect",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:hace-ago",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:negative-commands",
+    "g:pluperfect",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-purpose-full",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:tanto-como",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:con-sin",
+    "p:demonstratives-basic",
+    "p:doler",
+    "p:el-que-la-que",
+    "p:enterarse-de",
+    "p:equivocarse",
+    "p:frequency-scale",
+    "p:generic-tu-uno",
+    "p:indefinites-basic",
+    "p:ir-a-venir-de-place",
+    "p:lleno-libre",
+    "p:llevar-traer",
+    "p:me-duele",
+    "p:me-te-nos-objects",
+    "p:numbers-un-una",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:pensar-en",
+    "p:personal-a",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:subir-subida",
+    "p:te-presento-a",
+    "p:telling-time",
+    "p:tener-razon",
+    "p:time-sequence-basic",
+    "p:un-estudio-muestra-que"
+  ],
+  "lexemes": [
+    "l:adentro",
+    "l:adorar",
+    "l:adónde",
+    "l:aerolínea",
+    "l:aeropuerto",
+    "l:amable",
+    "l:anoche",
+    "l:aquí",
+    "l:artículo",
+    "l:asiento",
+    "l:atrás",
+    "l:avión",
+    "l:año",
+    "l:bigote",
+    "l:billete",
+    "l:blanco",
+    "l:brillar",
+    "l:cabeza",
+    "l:café",
+    "l:cambio",
+    "l:caminar",
+    "l:caída",
+    "l:celular",
+    "l:claro",
+    "l:creer",
+    "l:cómo",
+    "l:dar",
+    "l:debajo",
+    "l:decir",
+    "l:dejar",
+    "l:digno",
+    "l:doblar",
+    "l:doler",
+    "l:dólar",
+    "l:editor",
+    "l:enterarse",
+    "l:equivocarse",
+    "l:escuchar",
+    "l:español",
+    "l:esperar",
+    "l:estar",
+    "l:fila",
+    "l:final",
+    "l:fuente",
+    "l:hace",
+    "l:hacer",
+    "l:hielo",
+    "l:hombro",
+    "l:hora",
+    "l:importar",
+    "l:impresionar",
+    "l:información",
+    "l:ir",
+    "l:irse",
+    "l:leer",
+    "l:letrero",
+    "l:llamar",
+    "l:llegar",
+    "l:loro",
+    "l:maleta",
+    "l:mamá",
+    "l:mano",
+    "l:mañana",
+    "l:mes",
+    "l:mesa",
+    "l:mirar",
+    "l:mostrador",
+    "l:necesitar",
+    "l:nervioso",
+    "l:nombre",
+    "l:norte",
+    "l:nota",
+    "l:noticia",
+    "l:ojo",
+    "l:oro",
+    "l:pagar",
+    "l:palabra",
+    "l:parce",
+    "l:pasaje",
+    "l:pasajero",
+    "l:pasar",
+    "l:país",
+    "l:pensar",
+    "l:periódico",
+    "l:persona",
+    "l:piso",
+    "l:pobre",
+    "l:poder",
+    "l:presentar",
+    "l:prueba",
+    "l:puerta",
+    "l:quedar",
+    "l:querer",
+    "l:quién",
+    "l:qué",
+    "l:razón",
+    "l:recientemente",
+    "l:reloj",
+    "l:reír",
+    "l:rojo",
+    "l:saber",
+    "l:salir",
+    "l:sede",
+    "l:sentir",
+    "l:ser",
+    "l:señor",
+    "l:señora",
+    "l:señorito",
+    "l:sonreír",
+    "l:subrayar",
+    "l:taxi",
+    "l:telenovela",
+    "l:televisión",
+    "l:temblar",
+    "l:tener",
+    "l:tinta",
+    "l:tinto",
+    "l:traer",
+    "l:vacío",
+    "l:ventana",
+    "l:vez",
+    "l:video",
+    "l:volver",
+    "l:voz",
+    "l:vuelo"
+  ]
+}
