@@ -108,7 +108,7 @@
       "why": "You did it yourself, so *haber* and no *que*."
     },
     {
-      "prompt": "Choose *que estés* or *estar*, then type the whole sentence: Siento ___ triste. (I'm sorry you're sad. to a friend)",
+      "prompt": "Choose *que estés* or *estar*, then type the whole sentence: Siento ___ triste. (I'm sorry you're sad. To a friend.)",
       "answer": "Siento que estés triste.",
       "accept": [],
       "why": "It's about the other person, so *que* and *estés*."

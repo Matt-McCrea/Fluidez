@@ -1,19 +1,19 @@
 {
   "id": "sc-u50-b",
   "unit": "u50",
-  "title": "Mudarse con Clara",
+  "title": "Mudarse a Chía",
   "spare": false,
-  "brief": "You're Don Hernando, on the phone with your daughter Clara, who wants you to move into her apartment. She calls you tú, and you answer her as her father. Stay firm, but don't let it end in shouting.",
+  "brief": "You're Don Hernando, on the phone with your daughter Lucía, who wants you to move into her house in Chía. Like many Colombians, she calls her father usted; you call her tú. Stay firm, but don't let it end in shouting.",
   "turns": [
     {
       "id": "t1",
-      "npc": "Clara: Papá, ya está decidido. Te vienes a vivir conmigo.",
-      "npcEn": "Clara: Dad, it's decided. You're coming to live with me.",
+      "npc": "Lucía: Papá, ya está decidido. Usted se viene a vivir con nosotros.",
+      "npcEn": "Lucía: Dad, it's decided. You're coming to live with us.",
       "intent": "Tell her that nobody has decided anything and that nobody should speak for you (use: Que + subjunctive).",
       "accept": [
         "Que nadie decida por mí.",
-        "Que no decidan por mí, Clara.",
-        "No está decidido nada. Que nadie hable por mí."
+        "Que no decidan por mí, Lucía.",
+        "No hay nada decidido. Que nadie hable por mí."
       ],
       "require": [
         {
@@ -28,11 +28,11 @@
     },
     {
       "id": "t2",
-      "npc": "Clara: ¡Papá, no puedes seguir solo! ¡Me da miedo que te pase algo!",
-      "npcEn": "Clara: Dad, you can't go on alone! I'm scared something will happen to you!",
+      "npc": "Lucía: ¡Papá, usted no puede seguir solo! ¡Me da miedo que le pase algo!",
+      "npcEn": "Lucía: Dad, you can't go on alone! I'm scared something will happen to you!",
       "intent": "Tell her to stop shouting (use: Que + subjunctive, the repeated order).",
       "accept": [
-        "¡Que no me grites, Clara!",
+        "¡Que no me grites, Lucía!",
         "Que me hables sin gritos, por favor.",
         "¡Que bajes la voz!"
       ],
@@ -49,12 +49,12 @@
     },
     {
       "id": "t3",
-      "npc": "Clara: Perdón. Es que los vecinos me dijeron que ayer hablabas a gritos con el televisor.",
-      "npcEn": "Clara: Sorry. It's just that the neighbours told me you were shouting at the television yesterday.",
+      "npc": "Lucía: Perdón. Es que el vecino me dijo que ayer usted hablaba a gritos con el televisor.",
+      "npcEn": "Lucía: Sorry. It's just that the neighbour told me you were shouting at the television yesterday.",
       "intent": "Say you're sorry you made her worry (use: Siento + haber + past participle).",
       "accept": [
         "Siento haberte preocupado.",
-        "Siento haberte asustado, Clara.",
+        "Siento haberte asustado, Lucía.",
         "Siento mucho haberte preocupado."
       ],
       "require": [
@@ -70,8 +70,8 @@
     },
     {
       "id": "t4",
-      "npc": "Clara: ¿Entonces vienes a vivir conmigo?",
-      "npcEn": "Clara: So are you coming to live with me?",
+      "npc": "Lucía: ¿Entonces se viene a vivir conmigo?",
+      "npcEn": "Lucía: So are you coming to live with me?",
       "intent": "Say you're sorry that she feels alone, but you won't leave your home (use: Siento que + subjunctive).",
       "accept": [
         "Siento que te sientas sola, pero no me voy de mi casa.",
@@ -91,8 +91,8 @@
     },
     {
       "id": "t5",
-      "npc": "Clara: Está bien. Pero el domingo vienes a almorzar a mi casa.",
-      "npcEn": "Clara: Fine. But on Sunday you're coming to lunch at my place.",
+      "npc": "Lucía: Está bien. Pero el domingo viene a almorzar a mi casa.",
+      "npcEn": "Lucía: Fine. But on Sunday you're coming to lunch at my place.",
       "intent": "Agree, and say you'll bring her something sweet from the café.",
       "accept": [
         "Está bien. Te llevaré algo dulce del café.",
@@ -110,7 +110,9 @@
     "c:con-mucho-gusto",
     "c:entonces-bueno",
     "c:es-que",
+    "c:hay",
     "c:me-regala",
+    "c:no-hay-nada",
     "c:perdon-disculpe",
     "c:por-favor",
     "c:voy-vas",
@@ -120,7 +122,9 @@
     "g:estar-participle",
     "g:future-promises",
     "g:gender-articles",
+    "g:hay-vs-esta",
     "g:imperfect-habitual",
+    "g:indirect-objects",
     "g:ir-a-plans",
     "g:negation-words",
     "g:object-pronoun-position",
@@ -131,6 +135,7 @@
     "g:preterite-irregular-strong",
     "g:reflexive-routine",
     "g:reported-past-basic",
+    "g:se-impersonal",
     "g:stem-boot",
     "g:subj-emotion",
     "g:subj-irregulars",
@@ -147,7 +152,6 @@
     "l:bien",
     "l:café",
     "l:casa",
-    "l:clara",
     "l:dar",
     "l:decidir",
     "l:decir",
@@ -164,6 +168,7 @@
     "l:ir",
     "l:irse",
     "l:llevar",
+    "l:lucía",
     "l:miedo",
     "l:papá",
     "l:pasar",

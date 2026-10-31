@@ -102,7 +102,7 @@
   ],
   "yourTurn": [
     {
-      "prompt": "You've asked twice. Choose *Ven* or *Que vengas*, then type: ¡___ aquí ahora mismo! (I said come here right now! to a friend)",
+      "prompt": "You've asked twice. Choose *Ven* or *Que vengas*, then type: ¡___ aquí ahora mismo! (I said come here right now! To a friend.)",
       "answer": "¡Que vengas aquí ahora mismo!",
       "accept": [],
       "why": "The repeated order starts with *que*."

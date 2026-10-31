@@ -6,39 +6,180 @@
     "en": "Whatever happens, I'm behind you."
   },
   "examples": [
-    { "es": "Pase lo que pase, te apoyo.", "en": "Whatever happens, I'm behind you." },
-    { "es": "Digan lo que digan, voy a ir.", "en": "Whatever they say, I'm going." },
-    { "es": "Cueste lo que cueste, vamos a defender el café.", "en": "Whatever it costs, we're going to defend the café." },
-    { "es": "Hagan lo que hagan, el café se queda.", "en": "Whatever they do, the café stays." },
-    { "es": "Sea como sea, hoy hablamos.", "en": "One way or another, we talk today." },
-    { "es": "Quieras o no, tenemos que hablar.", "en": "Whether you like it or not, we have to talk. (to a friend)" }
+    {
+      "es": "Pase lo que pase, te apoyo.",
+      "en": "Whatever happens, I'm behind you."
+    },
+    {
+      "es": "Digan lo que digan, voy a ir.",
+      "en": "Whatever they say, I'm going."
+    },
+    {
+      "es": "Cueste lo que cueste, vamos a defender el café.",
+      "en": "Whatever it costs, we're going to defend the café."
+    },
+    {
+      "es": "Hagan lo que hagan, el café se queda.",
+      "en": "Whatever they do, the café stays."
+    },
+    {
+      "es": "Sea como sea, hoy hablamos.",
+      "en": "One way or another, we're talking today."
+    },
+    {
+      "es": "Quieras o no, tenemos que hablar.",
+      "en": "Whether you like it or not, we have to talk. (to a friend)"
+    }
   ],
   "rule": "Say a verb, then *lo que*, then the same verb again, and you get \"whatever\": *pase lo que pase*, *digan lo que digan*.\n\nBoth verbs take the wish form (*pase*, not *pasa*), and they must be the same verb. You can't swap in a synonym for the second one.\n\nIt works with other little words too: *donde* (wherever), *como* (however). Some are set phrases you can learn whole: *cueste lo que cueste*, *sea como sea*, *quieras o no*.\n\nUse it for what will not change: *Pase lo que pase*, I'm here.",
   "smallPrint": "Teachers call this a concessive clause: the wish form, repeated, says 'no matter what'. The repeated verb is part of the pattern.",
   "readAndPick": [
-    { "es": "Pase lo que pase, te apoyo.", "options": ["Whatever happens, I'm behind you.", "If something happens, I'll back you later.", "What happened, I backed you."], "answer": 0 },
-    { "es": "Digan lo que digan, voy a ir.", "options": ["Whatever he says, I'm going.", "They said so, so I'm going.", "Whatever they say, I'm going."], "answer": 2 },
-    { "es": "Diga lo que diga Altamira, no vendo.", "options": ["Altamira said so, so I'm not selling.", "Whatever Altamira says, I'm not selling.", "Altamira says nothing, so I'm not selling."], "answer": 1 },
-    { "es": "Cueste lo que cueste, vamos a defender el café.", "options": ["Whatever it costs, we're going to defend the café.", "It cost a lot, so we defended the café.", "If it costs nothing, we'll defend the café."], "answer": 0 },
-    { "es": "Sea como sea, hoy hablamos.", "options": ["Even if it's a lot, we talked today.", "One way or another, we talk today.", "However it was, we talked today."], "answer": 1 },
-    { "es": "Quieras o no, tenemos que hablar.", "options": ["If you want, we have to talk. (to a friend)", "You wanted to, so we have to talk. (to a friend)", "Whether you like it or not, we have to talk. (to a friend)"], "answer": 2 },
-    { "es": "Hagan lo que hagan, el café se queda.", "options": ["Whatever they did, the café stayed.", "Whatever they do, the café stays.", "They do nothing, so the café stays."], "answer": 1 },
-    { "es": "Pase lo que pase, no voy a ceder.", "options": ["Whatever happens, I'm not going to give in.", "Nothing happened, so I'm not giving in.", "If something happens, I'll give in."], "answer": 0 },
-    { "es": "Lo que pasó, pasó.", "options": ["Whatever happens, I'm behind you.", "What happened, happened.", "Whatever happens, happens."], "answer": 1 }
+    {
+      "es": "Pase lo que pase, te apoyo.",
+      "options": [
+        "Whatever happens, I'm behind you.",
+        "If something happens, I'll back you later.",
+        "What happened, I backed you."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Digan lo que digan, voy a ir.",
+      "options": [
+        "Whatever he says, I'm going.",
+        "They said so, so I'm going.",
+        "Whatever they say, I'm going."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Diga lo que diga Altamira, no vendo.",
+      "options": [
+        "Altamira said so, so I'm not selling.",
+        "Whatever Altamira says, I'm not selling.",
+        "Altamira says nothing, so I'm not selling."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cueste lo que cueste, vamos a defender el café.",
+      "options": [
+        "Whatever it costs, we're going to defend the café.",
+        "It cost a lot, so we defended the café.",
+        "If it costs nothing, we'll defend the café."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Sea como sea, hoy hablamos.",
+      "options": [
+        "Even if it's a lot, we talked today.",
+        "One way or another, we're talking today.",
+        "However it was, we talked today."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Quieras o no, tenemos que hablar.",
+      "options": [
+        "If you want, we have to talk. (to a friend)",
+        "You wanted to, so we have to talk. (to a friend)",
+        "Whether you like it or not, we have to talk. (to a friend)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Hagan lo que hagan, el café se queda.",
+      "options": [
+        "Whatever they did, the café stayed.",
+        "Whatever they do, the café stays.",
+        "They do nothing, so the café stays."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Pase lo que pase, no voy a ceder.",
+      "options": [
+        "Whatever happens, I'm not going to give in.",
+        "Nothing happened, so I'm not giving in.",
+        "If something happens, I'll give in."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Lo que pasó, pasó.",
+      "options": [
+        "Whatever happens, I'm behind you.",
+        "What happened, happened.",
+        "Whatever happens, happens."
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick *pase* or *pasa* and type the whole sentence: *Pase lo que ___, te apoyo.*", "answer": "Pase lo que pase, te apoyo.", "accept": [], "why": "The second verb copies the first and also takes the wish form: *pase*." },
-    { "prompt": "Type in Spanish: Whatever they say, I'm going.", "answer": "Digan lo que digan, voy a ir.", "accept": ["Digan lo que digan, voy."], "why": "*Digan* twice, because *ellos* both times and the same verb." },
-    { "prompt": "Type in Spanish: Whatever it costs, we're going to defend the café.", "answer": "Cueste lo que cueste, vamos a defender el café.", "accept": [], "why": "A set phrase: *cueste lo que cueste* repeats *costar* in the wish form." },
-    { "prompt": "Type in Spanish: Whatever happens, I'm not going to give in.", "answer": "Pase lo que pase, no voy a ceder.", "accept": [], "why": "The repeated pair opens the sentence; the real promise follows after the comma." },
-    { "prompt": "Type in Spanish: Whatever happens, let me know. (to a friend)", "answer": "Pase lo que pase, avísame.", "accept": [], "why": "A command works fine after *pase lo que pase*, with *-me* tacked on the end." },
-    { "prompt": "Change who is speaking: *Digan lo que digan, voy a ir.* Say: Whatever Altamira says, I'm not selling.", "answer": "Diga lo que diga Altamira, no vendo.", "accept": ["Diga lo que diga Altamira, yo no vendo."], "why": "One person now, so *diga* twice instead of *digan*." },
-    { "prompt": "Type in Spanish: Whether you like it or not, we have to talk. (to a friend)", "answer": "Quieras o no, tenemos que hablar.", "accept": [], "why": "*Quieras o no* is a ready-made phrase for 'like it or not'." }
+    {
+      "prompt": "Pick *pase* or *pasa* and type the whole sentence: *Pase lo que ___, te apoyo.*",
+      "answer": "Pase lo que pase, te apoyo.",
+      "accept": [],
+      "why": "The second verb copies the first and also takes the wish form: *pase*."
+    },
+    {
+      "prompt": "Type in Spanish: Whatever they say, I'm going.",
+      "answer": "Digan lo que digan, voy a ir.",
+      "accept": [
+        "Digan lo que digan, voy."
+      ],
+      "why": "*Digan* twice, because *ellos* both times and the same verb."
+    },
+    {
+      "prompt": "Type in Spanish: Whatever it costs, we're going to defend the café.",
+      "answer": "Cueste lo que cueste, vamos a defender el café.",
+      "accept": [],
+      "why": "A set phrase: *cueste lo que cueste* repeats *costar* in the wish form."
+    },
+    {
+      "prompt": "Type in Spanish: Whatever happens, I'm not going to give in.",
+      "answer": "Pase lo que pase, no voy a ceder.",
+      "accept": [],
+      "why": "The repeated pair opens the sentence; the real promise follows after the comma."
+    },
+    {
+      "prompt": "Type in Spanish: Whatever happens, let me know. (to a friend)",
+      "answer": "Pase lo que pase, avísame.",
+      "accept": [],
+      "why": "A command works fine after *pase lo que pase*, with *-me* tacked on the end."
+    },
+    {
+      "prompt": "Make it one speaker: *Digan lo que digan, voy a ir.* Say: Whatever Altamira says, I'm not selling.",
+      "answer": "Diga lo que diga Altamira, no vendo.",
+      "accept": [
+        "Diga lo que diga Altamira, yo no vendo."
+      ],
+      "why": "One person now, so *diga* twice instead of *digan*."
+    },
+    {
+      "prompt": "Type in Spanish: Whether you like it or not, we have to talk. (to a friend)",
+      "answer": "Quieras o no, tenemos que hablar.",
+      "accept": [],
+      "why": "*Quieras o no* is a ready-made phrase for 'like it or not'."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Pasa lo que pasa, te apoyo.", "right": "Pase lo que pase, te apoyo.", "why": "Almost. Plain *pasa* describes what actually happens; the 'whatever' feeling needs the wish form, *pase*." },
-    { "wrong": "Pase lo que ocurra, te apoyo.", "right": "Pase lo que pase, te apoyo.", "why": "Say the same verb twice; swapping in a synonym breaks the pattern." },
-    { "wrong": "Pase lo que pase, te apoyaré lo que pase.", "right": "Pase lo que pase, te apoyo.", "why": "The repetition happens once, at the front; you don't need to say it again at the end." }
+    {
+      "wrong": "Pasa lo que pasa, te apoyo.",
+      "right": "Pase lo que pase, te apoyo.",
+      "why": "Almost. Plain *pasa* describes what actually happens; the 'whatever' feeling needs the wish form, *pase*."
+    },
+    {
+      "wrong": "Pase lo que ocurra, te apoyo.",
+      "right": "Pase lo que pase, te apoyo.",
+      "why": "Say the same verb twice; swapping in a synonym breaks the pattern."
+    },
+    {
+      "wrong": "Lo que pase, te apoyo.",
+      "right": "Pase lo que pase, te apoyo.",
+      "why": "English starts with \"whatever\", but Spanish needs the verb first and again at the end: *pase lo que pase*."
+    }
   ],
   "personal": "Finish the line with something true about you: *Pase lo que pase, ...* For example, *Pase lo que pase, voy a seguir con mi español.*"
 }

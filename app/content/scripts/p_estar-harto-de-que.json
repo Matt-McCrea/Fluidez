@@ -136,7 +136,10 @@
       "prompt": "Type in Spanish: Enough excuses!",
       "answer": "¡Ya basta de excusas!",
       "accept": [
-        "Basta ya de excusas."
+        "Ya basta de excusas.",
+        "¡Basta ya de excusas!",
+        "Basta ya de excusas.",
+        "¡Basta de excusas!"
       ],
       "why": "*Ya basta de* plus the thing you want stopped."
     },

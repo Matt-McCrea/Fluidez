@@ -6,39 +6,176 @@
     "en": "Always arriving late!"
   },
   "examples": [
-    { "es": "¡Siempre llegando tarde!", "en": "Always arriving late!" },
-    { "es": "¡Otra vez quejándote!", "en": "You're complaining again! (to a friend)" },
-    { "es": "¡Todo el día pegado al celular!", "en": "Glued to your phone all day!" },
-    { "es": "¡Siempre dejando todo para después!", "en": "Always putting everything off!" },
-    { "es": "¡Otra vez discutiendo por lo mismo!", "en": "Arguing over the same thing again!" },
-    { "es": "¡Siempre criticando mi café!", "en": "Always criticising my café!" }
+    {
+      "es": "¡Siempre llegando tarde!",
+      "en": "Always arriving late!"
+    },
+    {
+      "es": "¡Otra vez quejándote!",
+      "en": "You're complaining again! (to a friend)"
+    },
+    {
+      "es": "¡Todo el día pegado al celular!",
+      "en": "Glued to your phone all day!"
+    },
+    {
+      "es": "¡Siempre dejando todo para después!",
+      "en": "Always putting everything off!"
+    },
+    {
+      "es": "¡Otra vez discutiendo por lo mismo!",
+      "en": "Arguing over the same thing again!"
+    },
+    {
+      "es": "¡Siempre criticando mi café!",
+      "en": "Always criticising my café!"
+    }
   ],
   "rule": "Put *siempre*, *otra vez*, *todo el día* or *todo el tiempo* in front of an -ing form (*-ando*, *-iendo*) and you have a complaint, with no conjugated verb at all. English does it too (\"Always late!\"), but Spanish makes it the normal way to sigh.\n\nWho is doing it comes from the scene, or from a little word on the end: *quejándote* (you), *quejándome* (me), *quejándonos* (us).\n\nIt is sharp when said to someone's face. To soften it, use a real verb: *Perdón, pero es que siempre llegas tarde.*",
   "smallPrint": "Teachers call this a gerund used on its own as an exclamation. The *-ándote* ending is the gerund with a pronoun attached, which is why it carries a written accent.",
   "readAndPick": [
-    { "es": "¡Siempre llegando tarde!", "options": ["Always arriving late!", "He will always arrive late.", "I arrived late again."], "answer": 0 },
-    { "es": "¡Otra vez quejándote!", "options": ["I'm complaining again!", "He's complaining again!", "You're complaining again! (to a friend)"], "answer": 2 },
-    { "es": "¡Otra vez quejándome!", "options": ["You're complaining again! (to a friend)", "I'm complaining again!", "She's complaining again!"], "answer": 1 },
-    { "es": "¡Siempre quejándonos!", "options": ["Always complaining, you all!", "Always complaining, them!", "Always complaining, us!"], "answer": 2 },
-    { "es": "Siempre llegas tarde.", "options": ["Always arriving late!", "You always arrive late. (to a friend)", "You arrived late."], "answer": 1 },
-    { "es": "¡Siempre echándole la culpa a Vale!", "options": ["Always blaming Vale!", "Vale is always blaming me!", "Vale always blamed him!"], "answer": 0 },
-    { "es": "¡Todo el día pegado al celular!", "options": ["He'll be glued to the phone tomorrow!", "Glued to your phone all day!", "I left my phone at home all day."], "answer": 1 },
-    { "es": "¡Otra vez discutiendo por lo mismo!", "options": ["We argued about it once.", "Arguing over the same thing again!", "We never argue about it."], "answer": 1 },
-    { "es": "¡Siempre dejando todo para después!", "options": ["Always putting everything off!", "I'll leave everything for later.", "He left everything for later."], "answer": 0 }
+    {
+      "es": "¡Siempre llegando tarde!",
+      "options": [
+        "Always arriving late!",
+        "He will always arrive late.",
+        "I arrived late again."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Otra vez quejándote!",
+      "options": [
+        "I'm complaining again!",
+        "He's complaining again!",
+        "You're complaining again! (to a friend)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¡Otra vez quejándome!",
+      "options": [
+        "You're complaining again! (to a friend)",
+        "I'm complaining again!",
+        "She's complaining again!"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Siempre quejándonos!",
+      "options": [
+        "Always complaining, you all!",
+        "Always complaining, them!",
+        "Always complaining, us!"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Siempre llegas tarde.",
+      "options": [
+        "Always arriving late!",
+        "You always arrive late. (to a friend)",
+        "You arrived late."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Siempre echándole la culpa a Vale!",
+      "options": [
+        "Always blaming Vale!",
+        "Vale is always blaming me!",
+        "Vale always blamed him!"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¡Todo el día pegado al celular!",
+      "options": [
+        "He'll be glued to the phone tomorrow!",
+        "Glued to your phone all day!",
+        "I left my phone at home all day."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Otra vez discutiendo por lo mismo!",
+      "options": [
+        "We argued about it once.",
+        "Arguing over the same thing again!",
+        "We never argue about it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¡Siempre dejando todo para después!",
+      "options": [
+        "Always putting everything off!",
+        "I'll leave everything for later.",
+        "He left everything for later."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick *llegando* or *llegas* to make the outburst with no conjugated verb, and type the whole sentence: *¡Siempre ___ tarde!*", "answer": "¡Siempre llegando tarde!", "accept": [], "why": "The outburst uses the bare -ing form, *llegando*, with no *tú* verb." },
-    { "prompt": "Type in Spanish: You're complaining again! (to a friend)", "answer": "¡Otra vez quejándote!", "accept": [], "why": "*Otra vez* plus the -ing form, and *-te* on the end tells us it is you." },
-    { "prompt": "Type in Spanish: Always looking at the phone!", "answer": "¡Siempre mirando el celular!", "accept": [], "why": "*Siempre* plus *mirando*: no *estás*, no *está*, just the -ing form." },
-    { "prompt": "Type in Spanish: Always blaming Vale!", "answer": "¡Siempre echándole la culpa a Vale!", "accept": [], "why": "The little word *le* sticks to the end of *echando*, so it gains a written accent." },
-    { "prompt": "Make it about yourself: *¡Otra vez quejándote!* Say: I'm complaining again!", "answer": "¡Otra vez quejándome!", "accept": [], "why": "Swap *-te* for *-me* and the complaint turns on you." },
-    { "prompt": "Type in Spanish: Arguing over the same thing again!", "answer": "¡Otra vez discutiendo por lo mismo!", "accept": [], "why": "*Otra vez* works just like *siempre* in front of the -ing form." },
-    { "prompt": "Soften it for a real conversation: *¡Siempre llegando tarde!* Say, to a friend: Sorry, but the thing is you always arrive late.", "answer": "Perdón, pero es que siempre llegas tarde.", "accept": [], "why": "A real verb, *llegas*, plus *perdón, pero es que* is gentler than the bare outburst." }
+    {
+      "prompt": "Pick *llegando* or *llegas* to make the outburst with no conjugated verb, and type the whole sentence: *¡Siempre ___ tarde!*",
+      "answer": "¡Siempre llegando tarde!",
+      "accept": [],
+      "why": "The outburst uses the bare -ing form, *llegando*, with no *tú* verb."
+    },
+    {
+      "prompt": "Type in Spanish: You're complaining again! (to a friend)",
+      "answer": "¡Otra vez quejándote!",
+      "accept": [],
+      "why": "*Otra vez* plus the -ing form, and *-te* on the end tells us it is you."
+    },
+    {
+      "prompt": "Type in Spanish: Always looking at the phone!",
+      "answer": "¡Siempre mirando el celular!",
+      "accept": [],
+      "why": "*Siempre* plus *mirando*: no *estás*, no *está*, just the -ing form."
+    },
+    {
+      "prompt": "Type in Spanish: Always blaming Vale!",
+      "answer": "¡Siempre echándole la culpa a Vale!",
+      "accept": [],
+      "why": "The little word *le* sticks to the end of *echando*, so it gains a written accent."
+    },
+    {
+      "prompt": "Make it about yourself: *¡Otra vez quejándote!* Say: I'm complaining again!",
+      "answer": "¡Otra vez quejándome!",
+      "accept": [],
+      "why": "Swap *-te* for *-me* and the complaint turns on you."
+    },
+    {
+      "prompt": "Type in Spanish: Arguing over the same thing again!",
+      "answer": "¡Otra vez discutiendo por lo mismo!",
+      "accept": [],
+      "why": "*Otra vez* works just like *siempre* in front of the -ing form."
+    },
+    {
+      "prompt": "Soften it for a real conversation: *¡Siempre llegando tarde!* Say, to a friend: Sorry, but the thing is you always arrive late.",
+      "answer": "Perdón, pero es que siempre llegas tarde.",
+      "accept": [],
+      "why": "A real verb, *llegas*, plus *perdón, pero es que* is gentler than the bare outburst."
+    }
   ],
   "pitfalls": [
-    { "wrong": "¡Siempre llegar tarde!", "right": "¡Siempre llegando tarde!", "why": "Almost. English 'always to arrive' tempts the plain verb, but the outburst needs the -ing form, *llegando*." },
-    { "wrong": "¡Otra vez quejando!", "right": "¡Otra vez quejándote!", "why": "Almost. *Quejarse* needs its little word, *-te* for you or *-me* for me, so we know who is complaining." },
-    { "wrong": "¡Siempre estás llegando tarde!", "right": "¡Siempre llegando tarde!", "why": "That is correct Spanish, but this pattern drops *estás* entirely: the bare -ing form is what makes it an outburst." }
+    {
+      "wrong": "¡Siempre llegar tarde!",
+      "right": "¡Siempre llegando tarde!",
+      "why": "Almost. English 'always to arrive' tempts the plain verb, but the outburst needs the -ing form, *llegando*."
+    },
+    {
+      "wrong": "¡Otra vez quejando!",
+      "right": "¡Otra vez quejándote!",
+      "why": "Almost. *Quejarse* needs its little word, *-te* for you or *-me* for me, so we know who is complaining."
+    },
+    {
+      "wrong": "¡Siempre echandole la culpa a Vale!",
+      "right": "¡Siempre echándole la culpa a Vale!",
+      "why": "Almost. Once *le* sticks to *echando*, the stress needs a written accent: *echándole*."
+    }
   ],
   "personal": "Think of one thing you do again and again, then say it as a sigh at yourself: *¡Otra vez ...ndo!* Then say the gentle version you would use with a friend: *Perdón, pero es que siempre ...*"
 }

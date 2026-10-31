@@ -12,7 +12,7 @@
     },
     {
       "es": "Siento lo de tu papá.",
-      "en": "I'm sorry about your dad."
+      "en": "I'm sorry about your dad. (to a friend)"
     },
     {
       "es": "Lamento lo de ayer.",
@@ -175,9 +175,9 @@
       "why": "Almost. You need *lo* in front of *de*: it is what means \"that matter\"."
     },
     {
-      "wrong": "Lamento lo tu papá.",
-      "right": "Lamento lo de tu papá.",
-      "why": "Almost. Keep *de* between *lo* and the thing."
+      "wrong": "Lamento sobre lo de ayer.",
+      "right": "Lamento lo de ayer.",
+      "why": "Almost. English needs \"about\", but *lo de* already does that job: no *sobre*."
     }
   ],
   "personal": "Is there a day or an event you'd say *Lamento lo de…* about? Write it."

@@ -24,11 +24,11 @@
     },
     {
       "es": "Tengo miedo de que no vengas.",
-      "en": "I'm afraid you won't come."
+      "en": "I'm afraid you won't come. (to a friend)"
     },
     {
       "es": "Me preocupa que no tengas plata.",
-      "en": "I'm worried you don't have any money."
+      "en": "I'm worried you don't have any money. (to a friend)"
     }
   ],
   "rule": "When you fear what someone else might do, use *que* and a verb with a changed ending: *compre*, *venga*, *vengas*. Not the future, not the usual present.\n\nThree strengths:\n*Me preocupa que...* (worried)\n*Me da miedo que...* (scared)\n*Me da pánico que...* (terrified)\n\n*Tengo miedo de que...* is the same fear with *tener*.\n\nWhen the fear is about your own action, drop *que* and use the infinitive: *Tengo miedo de perderlo.*",

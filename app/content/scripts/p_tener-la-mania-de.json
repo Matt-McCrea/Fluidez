@@ -6,39 +6,178 @@
     "en": "You have this habit of checking your phone every five minutes. (to a friend)"
   },
   "examples": [
-    { "es": "Tienes la manía de revisar el celular cada cinco minutos.", "en": "You have this habit of checking your phone every five minutes. (to a friend)" },
-    { "es": "Tiene la costumbre de llegar tarde.", "en": "She's in the habit of arriving late." },
-    { "es": "Tiene el vicio de morderse las uñas.", "en": "He has the bad habit of biting his nails." },
-    { "es": "Don Hernando tiene la costumbre de leer el periódico en voz alta.", "en": "Don Hernando has the habit of reading the newspaper out loud." },
-    { "es": "Tengo la costumbre de levantarme temprano.", "en": "I'm in the habit of getting up early." },
-    { "es": "Simón tiene la manía de gritar cuando alguien abre la puerta.", "en": "Simón has the habit of screaming when someone opens the door." }
+    {
+      "es": "Tienes la manía de revisar el celular cada cinco minutos.",
+      "en": "You have this habit of checking your phone every five minutes. (to a friend)"
+    },
+    {
+      "es": "Tiene la costumbre de llegar tarde.",
+      "en": "She's in the habit of arriving late."
+    },
+    {
+      "es": "Tiene el vicio de morderse las uñas.",
+      "en": "He has the bad habit of biting his nails."
+    },
+    {
+      "es": "Don Hernando tiene la costumbre de leer el periódico en voz alta.",
+      "en": "Don Hernando has the habit of reading the newspaper out loud."
+    },
+    {
+      "es": "Tengo la costumbre de levantarme temprano.",
+      "en": "I'm in the habit of getting up early."
+    },
+    {
+      "es": "Simón tiene la manía de gritar cuando alguien abre la puerta.",
+      "en": "Simón has the habit of screaming when someone opens the door."
+    }
   ],
   "rule": "To name a habit, say you have it: *tener la costumbre de* plus a plain verb. Where English says \"in the habit of checking\", Spanish says *de revisar*.\n\nThe noun sets the colour:\n*la costumbre*: neutral, just a habit.\n*la manía*: a quirk, almost an obsession.\n*el vicio*: a bad habit.\n\nIn an argument, *tienes la manía de* sounds like an accusation. *Tengo la costumbre de* is safe for talking about yourself.",
   "smallPrint": "Teachers call this a light-verb construction: *tener* plus a noun plus *de* and an infinitive.",
   "readAndPick": [
-    { "es": "Tienes la manía de revisar el celular cada cinco minutos.", "options": ["I have the habit of checking my phone every five minutes.", "She has the habit of checking her phone every five minutes.", "You have this habit of checking your phone every five minutes. (to a friend)"], "answer": 2 },
-    { "es": "Tengo la costumbre de levantarme temprano.", "options": ["I'm in the habit of getting up early.", "You're in the habit of getting up early. (to a friend)", "She's in the habit of getting up early."], "answer": 0 },
-    { "es": "Tiene el vicio de morderse las uñas.", "options": ["He has a nice habit of cutting his nails.", "He has the bad habit of biting his nails.", "He has to bite his nails."], "answer": 1 },
-    { "es": "Don Hernando tiene la costumbre de leer el periódico en voz alta.", "options": ["Don Hernando has the habit of reading the newspaper out loud.", "Don Hernando has read the newspaper out loud.", "Don Hernando has to read the newspaper out loud."], "answer": 0 },
-    { "es": "Simón tiene la manía de gritar cuando alguien abre la puerta.", "options": ["Simón screamed when someone opened the door.", "Simón has the habit of screaming when someone opens the door.", "Simón wants to scream when someone opens the door."], "answer": 1 },
-    { "es": "Tenemos la costumbre de cenar juntos los domingos.", "options": ["They're in the habit of having dinner together on Sundays.", "I'm in the habit of having dinner together on Sundays.", "We're in the habit of having dinner together on Sundays."], "answer": 2 },
-    { "es": "Ya no tengo la costumbre de fumar.", "options": ["I'm no longer in the habit of smoking.", "I have never been in the habit of smoking.", "I'm not allowed to smoke."], "answer": 0 },
-    { "es": "¿Tienes la costumbre de tomar tinto por la noche?", "options": ["Did you drink black coffee last night? (to a friend)", "Do you have to drink black coffee at night? (to a friend)", "Are you in the habit of drinking black coffee at night? (to a friend)"], "answer": 2 },
-    { "es": "Tomás tiene la manía de contestar con otra pregunta.", "options": ["Tomás has the habit of answering with another question.", "Tomás asked another question.", "Tomás will answer another question."], "answer": 0 }
+    {
+      "es": "Tienes la manía de revisar el celular cada cinco minutos.",
+      "options": [
+        "I have the habit of checking my phone every five minutes.",
+        "She has the habit of checking her phone every five minutes.",
+        "You have this habit of checking your phone every five minutes. (to a friend)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tengo la costumbre de levantarme temprano.",
+      "options": [
+        "I'm in the habit of getting up early.",
+        "You're in the habit of getting up early. (to a friend)",
+        "She's in the habit of getting up early."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tiene el vicio de morderse las uñas.",
+      "options": [
+        "He has a nice habit of cutting his nails.",
+        "He has the bad habit of biting his nails.",
+        "He has to bite his nails."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Don Hernando tiene la costumbre de leer el periódico en voz alta.",
+      "options": [
+        "Don Hernando has the habit of reading the newspaper out loud.",
+        "Don Hernando has read the newspaper out loud.",
+        "Don Hernando has to read the newspaper out loud."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Simón tiene la manía de gritar cuando alguien abre la puerta.",
+      "options": [
+        "Simón screamed when someone opened the door.",
+        "Simón has the habit of screaming when someone opens the door.",
+        "Simón wants to scream when someone opens the door."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tenemos la costumbre de cenar juntos los domingos.",
+      "options": [
+        "They're in the habit of having dinner together on Sundays.",
+        "I'm in the habit of having dinner together on Sundays.",
+        "We're in the habit of having dinner together on Sundays."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Ya no tengo la costumbre de fumar.",
+      "options": [
+        "I'm no longer in the habit of smoking.",
+        "I have never been in the habit of smoking.",
+        "I'm not allowed to smoke."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Tienes la costumbre de tomar tinto por la noche?",
+      "options": [
+        "Did you drink black coffee last night? (to a friend)",
+        "Do you have to drink black coffee at night? (to a friend)",
+        "Are you in the habit of drinking black coffee at night? (to a friend)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tomás tiene la manía de contestar con otra pregunta.",
+      "options": [
+        "Tomás has the habit of answering with another question.",
+        "Tomás asked another question.",
+        "Tomás will answer another question."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick *tienes* or *tengo*: you are telling a friend about *their* habit. Type the whole sentence: *___ la manía de interrumpirme.*", "answer": "Tienes la manía de interrumpirme.", "accept": [], "why": "*Tienes* is 'you have'; *tengo* would make it your own habit." },
-    { "prompt": "Type in Spanish: I'm in the habit of getting up early.", "answer": "Tengo la costumbre de levantarme temprano.", "accept": [], "why": "*Tengo la costumbre de*, then a plain verb with no -ing form." },
-    { "prompt": "Type in Spanish: Don Hernando has the habit of reading the newspaper out loud.", "answer": "Don Hernando tiene la costumbre de leer el periódico en voz alta.", "accept": [], "why": "*Tiene* goes with Don Hernando, and *leer* stays plain after *de*." },
-    { "prompt": "Type in Spanish: She's in the habit of arriving late.", "answer": "Tiene la costumbre de llegar tarde.", "accept": ["Ella tiene la costumbre de llegar tarde."], "why": "*Tiene* covers 'she has', and *costumbre* keeps it neutral." },
-    { "prompt": "Make it 'no longer': *Tengo la costumbre de fumar.* Say: I'm no longer in the habit of smoking.", "answer": "Ya no tengo la costumbre de fumar.", "accept": [], "why": "*Ya no* means 'no longer', and it goes before *tengo*." },
-    { "prompt": "Make it about *we*: *Tengo la costumbre de cenar juntos los domingos.* Say: We're in the habit of having dinner together on Sundays.", "answer": "Tenemos la costumbre de cenar juntos los domingos.", "accept": [], "why": "Only *tengo* changes to *tenemos*; the rest stays the same." },
-    { "prompt": "Type in Spanish: Simón has the habit of screaming when someone opens the door.", "answer": "Simón tiene la manía de gritar cuando alguien abre la puerta.", "accept": [], "why": "*Manía* suits a quirky habit like Simón's." }
+    {
+      "prompt": "Pick *tienes* or *tengo*: you are telling a friend about *their* habit. Type the whole sentence: *___ la manía de interrumpirme.*",
+      "answer": "Tienes la manía de interrumpirme.",
+      "accept": [],
+      "why": "*Tienes* is 'you have'; *tengo* would make it your own habit."
+    },
+    {
+      "prompt": "Type in Spanish: I'm in the habit of getting up early.",
+      "answer": "Tengo la costumbre de levantarme temprano.",
+      "accept": [],
+      "why": "*Tengo la costumbre de*, then a plain verb with no -ing form."
+    },
+    {
+      "prompt": "Type in Spanish: Don Hernando has the habit of reading the newspaper out loud.",
+      "answer": "Don Hernando tiene la costumbre de leer el periódico en voz alta.",
+      "accept": [],
+      "why": "*Tiene* goes with Don Hernando, and *leer* stays plain after *de*."
+    },
+    {
+      "prompt": "Type in Spanish: She's in the habit of arriving late.",
+      "answer": "Tiene la costumbre de llegar tarde.",
+      "accept": [
+        "Ella tiene la costumbre de llegar tarde."
+      ],
+      "why": "*Tiene* covers 'she has', and *costumbre* keeps it neutral."
+    },
+    {
+      "prompt": "Make it 'no longer': *Tengo la costumbre de fumar.* Say: I'm no longer in the habit of smoking.",
+      "answer": "Ya no tengo la costumbre de fumar.",
+      "accept": [],
+      "why": "*Ya no* means 'no longer', and it goes before *tengo*."
+    },
+    {
+      "prompt": "Make it about *we*: *Tengo la costumbre de cenar juntos los domingos.* Say: We're in the habit of having dinner together on Sundays.",
+      "answer": "Tenemos la costumbre de cenar juntos los domingos.",
+      "accept": [],
+      "why": "Only *tengo* changes to *tenemos*; the rest stays the same."
+    },
+    {
+      "prompt": "Type in Spanish: Simón has the habit of screaming when someone opens the door.",
+      "answer": "Simón tiene la manía de gritar cuando alguien abre la puerta.",
+      "accept": [],
+      "why": "*Manía* suits a quirky habit like Simón's."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Tienes la manía de revisando el celular.", "right": "Tienes la manía de revisar el celular cada cinco minutos.", "why": "Almost. English says 'in the habit of checking', but Spanish uses the plain verb after *de*: *revisar*." },
-    { "wrong": "Tienes manía de revisar el celular.", "right": "Tienes la manía de revisar el celular cada cinco minutos.", "why": "Keep the little word *la*: *la manía*, *la costumbre*, and *el vicio* for the bad habit." },
-    { "wrong": "Tienes el vicio de llegar tarde.", "right": "Tienes la costumbre de llegar tarde.", "why": "The grammar is fine, but *vicio* is harsh; *costumbre* is neutral, so it keeps the conversation calmer." }
+    {
+      "wrong": "Tienes la manía de revisando el celular.",
+      "right": "Tienes la manía de revisar el celular.",
+      "why": "Almost. English says 'in the habit of checking', but Spanish uses the plain verb after *de*: *revisar*."
+    },
+    {
+      "wrong": "Tienes manía de revisar el celular.",
+      "right": "Tienes la manía de revisar el celular.",
+      "why": "Keep the little word *la*: *la manía*, *la costumbre*, and *el vicio* for the bad habit."
+    },
+    {
+      "wrong": "Estás en el hábito de llegar tarde.",
+      "right": "Tienes la costumbre de llegar tarde.",
+      "why": "English says \"you're in the habit\"; Spanish says you *have* it: *tienes la costumbre*."
+    }
   ],
   "personal": "Tell us one habit of yours: *Tengo la costumbre de ...* or, if it's a quirk, *Tengo la manía de ...*"
 }

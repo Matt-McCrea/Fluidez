@@ -52,7 +52,7 @@
       "intent": "Say you understand him perfectly, but it makes you angry when they treat the café like a number (use: Me da rabia que).",
       "accept": [
         "Lo entiendo perfectamente, pero me da rabia que traten el café como un número.",
-        "Le entiendo, pero me da rabia que lo traten como un número.",
+        "Lo entiendo, pero me da rabia que lo traten como un número.",
         "Me da rabia que traten mi café como un número, aunque lo entiendo."
       ],
       "require": [

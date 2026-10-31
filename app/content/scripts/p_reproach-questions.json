@@ -153,9 +153,9 @@
   ],
   "pitfalls": [
     {
-      "wrong": "¿Qué esperas para llamarla?",
+      "wrong": "¿Qué estás esperando por? Llámala.",
       "right": "¿A qué esperas para llamarla?",
-      "why": "Almost. Without *a* it asks what you are waiting for; with *a* it pushes you to act."
+      "why": "Almost. English puts \"for\" at the end; Spanish moves it to the front as *a* and joins the action with *para*."
     },
     {
       "wrong": "¿A qué esperas llamarla?",
@@ -166,6 +166,11 @@
       "wrong": "No entiendo como pudiste hablarme así.",
       "right": "No entiendo cómo pudiste hablarme así.",
       "why": "Here *cómo* means \"how\", so it keeps its accent."
+    },
+    {
+      "wrong": "Me cayó muy mal que no me invitaste.",
+      "right": "Me cayó muy mal que no me invitaras.",
+      "why": "After *me cayó mal que*, the verb takes the *-aras* ending, not the plain past *invitaste*."
     }
   ],
   "personal": "Think of something a friend keeps putting off, and nudge them: *¿A qué esperas para…?*"

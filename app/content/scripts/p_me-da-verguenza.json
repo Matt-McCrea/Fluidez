@@ -3,12 +3,12 @@
   "hook": {
     "line": "Tomás has to ask Vale for money again. The word you need isn't \"embarrassed\" but a thing that *gives* you shame.",
     "es": "Me da vergüenza pedirle plata otra vez.",
-    "en": "I'm embarrassed to ask him for money again."
+    "en": "I'm embarrassed to ask her for money again."
   },
   "examples": [
     {
       "es": "Me da vergüenza pedirle plata otra vez.",
-      "en": "I'm embarrassed to ask him for money again."
+      "en": "I'm embarrassed to ask her for money again."
     },
     {
       "es": "Me da vergüenza que me vean así.",
@@ -28,7 +28,7 @@
     },
     {
       "es": "¿Te da vergüenza hablar con ella?",
-      "en": "Are you embarrassed to talk to her?"
+      "en": "Are you embarrassed to talk to her? (to a friend)"
     }
   ],
   "rule": "Spanish doesn't say *I am embarrassed*. It says shame *gives* itself to you: *Me da vergüenza*. The person who feels it is *me*, *te*, *le*, *nos*, as with *gusta*.\n\nIf you do the thing yourself, add an infinitive: *Me da vergüenza hablar.*\nIf someone else does it, add *que* and a changed ending: *Me da vergüenza que me vean.*\n\nYou can say *Me da mucha vergüenza*. In Colombia and Mexico, *me da pena* means the same.\n\nNever say *estoy embarazada*: that means pregnant.",
@@ -94,8 +94,8 @@
     {
       "es": "Me da vergüenza pedirle plata otra vez.",
       "options": [
-        "I'm embarrassed to ask him for money again.",
-        "I'm embarrassed that he asks me for money again."
+        "I'm embarrassed to ask her for money again.",
+        "I'm embarrassed that she asks me for money again."
       ],
       "answer": 0
     }
