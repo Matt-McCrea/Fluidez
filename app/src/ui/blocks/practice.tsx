@@ -7,6 +7,7 @@ import { withRemediate } from '../../compiler';
 import { CardRun, CardView, Continue } from '../components/card';
 import { Heading } from '../components/text';
 import { practiceCard, recallCard, reviewCard, type Card } from '../session/cards';
+import { licensedTenses } from '../session/tenses';
 import { breakRuns, formatOf, interleave } from '../session/order';
 import { blockHeading } from '../session/labels';
 import { recapCard } from '../session/recap';
@@ -22,8 +23,8 @@ function useOrdered<T>(items: readonly T[], build: (it: T) => Card, alt?: (it: T
   }, [items]);
 }
 
-export function ReviewRun({ block, run, onDone }: BlockProps<WarmupBlock | LeechBlock>) {
-  const { cards, order } = useOrdered(block.items, (it) => reviewCard(it, run.bundle), (it) => reviewCard(it, run.bundle, 'pickSpanish'));
+export function ReviewRun({ block, run, onDone, resume }: BlockProps<WarmupBlock | LeechBlock>) {
+  const { cards, order } = useOrdered(block.items, (it) => reviewCard(it, run.bundle), (it) => reviewCard(it, run.bundle, it.direction === 'productive' ? 'cloze' : 'pickSpanish'));
   const h = blockHeading(block, run.bundle, { known: run.learner.nodes().length });
   // the warm-up is never cut short (reviews left undone stay due); a leech run may be
   const cut = block.kind === 'leech';
@@ -31,23 +32,23 @@ export function ReviewRun({ block, run, onDone }: BlockProps<WarmupBlock | Leech
     <>
       <Heading {...h} />
       <CardRun
-        cards={cards} onAnswer={(k, o) => run.score(block.items[order[k]], o)} onDone={onDone}
-        onShow={cut ? (k) => run.itemShown(block, order[k]) : undefined} stop={cut ? () => run.overBudget() : undefined}
+        cards={cards} onAnswer={(k, o) => run.score(block.items[order[k]], o)} onDone={onDone} start={resume?.card}
+        onShow={(k) => { run.setCursor({ card: k }); if (cut) run.itemShown(block, order[k]); }} stop={cut ? () => run.overBudget() : undefined}
       />
     </>
   );
 }
 
-export function PracticeRun({ block, run, ui, onDone }: BlockProps<PracticeBlock>) {
-  const { cards, order } = useOrdered(block.items, (it) => practiceCard(it, run.bundle, run.plan.seed));
+export function PracticeRun({ block, run, ui, onDone, resume }: BlockProps<PracticeBlock>) {
+  const { cards, order } = useOrdered(block.items, (it) => practiceCard(it, run.bundle, run.plan.seed, licensedTenses(run.learner.nodes(), (id) => run.bundle.node(id)?.tags)));
   const h = blockHeading(block, run.bundle);
   const read = block.kind === 'extraReading';
   return (
     <>
       <Heading {...h} />
       <CardRun
-        cards={cards}
-        onShow={(k) => run.itemShown(block, order[k])}
+        cards={cards} start={resume?.card}
+        onShow={(k) => { run.setCursor({ card: k }); run.itemShown(block, order[k]); }}
         stop={() => run.overBudget()}
         onAnswer={(k, o) => {
           const item = block.items[order[k]];
@@ -65,7 +66,7 @@ export function PracticeRun({ block, run, ui, onDone }: BlockProps<PracticeBlock
 }
 
 /** "Before you go": today's lapses, then today's new items, once more (filled by the runner when reached). */
-export function Recap({ block, run, onDone }: BlockProps<RecapBlock>) {
+export function Recap({ block, run, onDone, resume }: BlockProps<RecapBlock>) {
   const { cards, order } = useMemo(() => {
     const all = block.items.map((it) => recapCard(it, run.bundle));
     const order = interleave(all, formatOf);
@@ -75,7 +76,7 @@ export function Recap({ block, run, onDone }: BlockProps<RecapBlock>) {
   return (
     <>
       <Heading {...h} />
-      <CardRun cards={cards} onAnswer={(k, o) => run.scoreRecap(block.items[order[k]], o)} onDone={onDone} />
+      <CardRun cards={cards} start={resume?.card} onShow={(k) => run.setCursor({ card: k })} onAnswer={(k, o) => run.scoreRecap(block.items[order[k]], o)} onDone={onDone} />
     </>
   );
 }

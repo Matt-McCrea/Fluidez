@@ -1,0 +1,600 @@
+[
+  {
+    "id": "u23-t-que-vs-cual-0001",
+    "es": "¿Qué documentos necesito para el trámite?",
+    "en": "What documents do I need for the paperwork?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:questions",
+      "l:documento",
+      "l:necesitar",
+      "l:qué",
+      "l:trámite",
+      "p:para-inf"
+    ],
+    "targets": [
+      "g:que-vs-cual"
+    ],
+    "kind": "question",
+    "unit": "u23",
+    "theme": "banco y trámites",
+    "source": "gen"
+  },
+  {
+    "id": "u23-t-que-vs-cual-0002",
+    "es": "¿Cuál es tu número de cédula?",
+    "en": "What's your ID number? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:questions",
+      "g:ser-identity",
+      "l:cuál",
+      "l:cédula",
+      "l:número",
+      "l:ser",
+      "p:possessives-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:que-vs-cual"
+    ],
+    "kind": "question",
+    "unit": "u23",
+    "theme": "banco y trámites",
+    "source": "gen"
+  },
+  {
+    "id": "u23-t-que-vs-cual-0003",
+    "es": "¿Qué es un trámite?",
+    "en": "What's a paperwork procedure?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:questions",
+      "g:ser-identity",
+      "l:qué",
+      "l:ser",
+      "l:trámite"
+    ],
+    "targets": [
+      "g:que-vs-cual"
+    ],
+    "kind": "question",
+    "unit": "u23",
+    "theme": "banco y trámites",
+    "source": "gen"
+  },
+  {
+    "id": "u23-t-que-vs-cual-0004",
+    "es": "¿Cuál es su dirección?",
+    "en": "What's your address? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:questions",
+      "g:ser-identity",
+      "l:cuál",
+      "l:dirección",
+      "l:ser",
+      "p:possessives-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:que-vs-cual"
+    ],
+    "kind": "question",
+    "unit": "u23",
+    "theme": "banco y trámites",
+    "source": "gen"
+  },
+  {
+    "id": "u23-t-que-vs-cual-0005",
+    "es": "¿Qué quiere tomar?",
+    "en": "What would you like to drink? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:questions",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:querer",
+      "l:qué",
+      "l:tomar"
+    ],
+    "targets": [
+      "g:que-vs-cual"
+    ],
+    "kind": "question",
+    "unit": "u23",
+    "theme": "banco y trámites",
+    "source": "gen"
+  },
+  {
+    "id": "u23-t-que-vs-cual-0006",
+    "es": "¿Cuáles prefieres, los grandes o los pequeños?",
+    "en": "Which ones do you prefer, the big ones or the small ones? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:questions",
+      "g:stem-boot",
+      "l:cuál",
+      "l:grande",
+      "l:pequeño",
+      "l:preferir",
+      "p:prefieres-x-o-y"
+    ],
+    "targets": [
+      "g:que-vs-cual"
+    ],
+    "kind": "question",
+    "unit": "u23",
+    "theme": "banco y trámites",
+    "source": "gen"
+  },
+  {
+    "id": "u23-t-que-vs-cual-0007",
+    "es": "¿Qué problema tiene el celular?",
+    "en": "What problem does the phone have?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:gender-articles",
+      "g:questions",
+      "g:stem-boot",
+      "l:celular",
+      "l:problema",
+      "l:qué",
+      "l:tener"
+    ],
+    "targets": [
+      "g:que-vs-cual"
+    ],
+    "kind": "question",
+    "unit": "u23",
+    "theme": "banco y trámites",
+    "source": "gen"
+  },
+  {
+    "id": "u23-t-que-vs-cual-0008",
+    "es": "¿Cuáles quiere, señor?",
+    "en": "Which ones do you want, sir?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:questions",
+      "g:stem-boot",
+      "l:cuál",
+      "l:querer",
+      "l:señor"
+    ],
+    "targets": [
+      "g:que-vs-cual"
+    ],
+    "kind": "question",
+    "unit": "u23",
+    "theme": "banco y trámites",
+    "source": "gen"
+  },
+  {
+    "id": "u23-t-que-vs-cual-0009",
+    "es": "¿Qué papeles trae usted hoy?",
+    "en": "What papers are you bringing today? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "g:questions",
+      "l:hoy",
+      "l:papel",
+      "l:qué",
+      "l:traer",
+      "p:llevar-traer"
+    ],
+    "targets": [
+      "g:que-vs-cual"
+    ],
+    "kind": "question",
+    "unit": "u23",
+    "theme": "banco y trámites",
+    "source": "gen"
+  },
+  {
+    "id": "u23-t-que-vs-cual-0010",
+    "es": "¿Cuál es el problema con tu tarjeta?",
+    "en": "What's the problem with your card? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:questions",
+      "g:ser-identity",
+      "l:cuál",
+      "l:problema",
+      "l:ser",
+      "l:tarjeta",
+      "p:possessives-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:que-vs-cual"
+    ],
+    "kind": "question",
+    "unit": "u23",
+    "theme": "banco y trámites",
+    "source": "gen"
+  },
+  {
+    "id": "u23-t-que-vs-cual-0011",
+    "es": "¿Cuál es tu celular?",
+    "en": "Which one is your phone? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:questions",
+      "g:ser-identity",
+      "l:celular",
+      "l:cuál",
+      "l:ser",
+      "p:possessives-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:que-vs-cual"
+    ],
+    "kind": "question",
+    "unit": "u23",
+    "theme": "banco y trámites",
+    "source": "gen"
+  },
+  {
+    "id": "u23-t-que-vs-cual-0012",
+    "es": "¿Qué cuenta quiere abrir Hernando?",
+    "en": "What account does Hernando want to open?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:questions",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:abrir",
+      "l:cuenta",
+      "l:querer",
+      "l:qué"
+    ],
+    "targets": [
+      "g:que-vs-cual"
+    ],
+    "kind": "question",
+    "unit": "u23",
+    "theme": "banco y trámites",
+    "source": "gen"
+  },
+  {
+    "id": "u23-t-que-vs-cual-0013",
+    "es": "¿Cuáles son tus documentos?",
+    "en": "Which ones are your documents? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:questions",
+      "g:ser-identity",
+      "l:cuál",
+      "l:documento",
+      "l:ser",
+      "p:possessives-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:que-vs-cual"
+    ],
+    "kind": "question",
+    "unit": "u23",
+    "theme": "banco y trámites",
+    "source": "gen"
+  },
+  {
+    "id": "u23-t-que-vs-cual-0014",
+    "es": "¿Qué necesita, señora?\nQuería preguntar por mi cuenta.",
+    "en": "What do you need, ma'am?\nI wanted to ask about my account.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:queria-preguntar",
+      "g:por-para-1",
+      "g:present-ar",
+      "g:questions",
+      "l:cuenta",
+      "l:necesitar",
+      "l:preguntar",
+      "l:querer",
+      "l:qué",
+      "l:señora",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:que-vs-cual"
+    ],
+    "kind": "dialogue",
+    "unit": "u23",
+    "theme": "banco y trámites",
+    "source": "gen"
+  },
+  {
+    "id": "u23-t-que-vs-cual-0015",
+    "es": "¿Cuál es su nombre?\nMe llamo Camila.",
+    "en": "What's your name? (polite)\nMy name is Camila.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-llamo",
+      "g:questions",
+      "g:reflexive-routine",
+      "g:ser-identity",
+      "l:cuál",
+      "l:llamarse",
+      "l:nombre",
+      "l:ser",
+      "p:possessives-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:que-vs-cual"
+    ],
+    "kind": "dialogue",
+    "unit": "u23",
+    "theme": "banco y trámites",
+    "source": "gen"
+  },
+  {
+    "id": "u23-t-que-vs-cual-0016",
+    "es": "¿Cuál quieres?\nEl azul, por favor.",
+    "en": "Which one do you want? (to a friend)\nThe blue one, please.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:por-favor",
+      "g:gender-articles",
+      "g:questions",
+      "g:stem-boot",
+      "l:azul",
+      "l:cuál",
+      "l:favor",
+      "l:querer",
+      "p:el-azul",
+      "p:el-rojo-la-grande"
+    ],
+    "targets": [
+      "g:que-vs-cual"
+    ],
+    "kind": "dialogue",
+    "unit": "u23",
+    "theme": "banco y trámites",
+    "source": "gen"
+  },
+  {
+    "id": "u23-t-que-vs-cual-0017",
+    "es": "¿Qué es eso?\nEs un papel del banco.",
+    "en": "What is that?\nIt's a paper from the bank.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:que-es-esto",
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:banco",
+      "l:papel",
+      "l:qué",
+      "l:ser"
+    ],
+    "targets": [
+      "g:que-vs-cual"
+    ],
+    "kind": "dialogue",
+    "unit": "u23",
+    "theme": "banco y trámites",
+    "source": "gen"
+  },
+  {
+    "id": "u23-t-que-vs-cual-0018",
+    "es": "¿Cuál es el celular de Simón?",
+    "en": "Which one is Simón's phone?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:questions",
+      "g:ser-identity",
+      "l:celular",
+      "l:cuál",
+      "l:ser",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:que-vs-cual"
+    ],
+    "kind": "question",
+    "unit": "u23",
+    "theme": "banco y trámites",
+    "source": "gen"
+  },
+  {
+    "id": "u23-t-que-vs-cual-0019",
+    "es": "¿Qué número tiene tu cuenta?",
+    "en": "What number does your account have? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:questions",
+      "g:stem-boot",
+      "l:cuenta",
+      "l:número",
+      "l:qué",
+      "l:tener",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:que-vs-cual"
+    ],
+    "kind": "question",
+    "unit": "u23",
+    "theme": "banco y trámites",
+    "source": "gen"
+  },
+  {
+    "id": "u23-t-que-vs-cual-0020",
+    "es": "¿Cuál de las dos cuentas prefiere?",
+    "en": "Which of the two accounts do you prefer? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:questions",
+      "g:stem-boot",
+      "l:cuenta",
+      "l:cuál",
+      "l:preferir",
+      "p:prefieres-x-o-y"
+    ],
+    "targets": [
+      "g:que-vs-cual"
+    ],
+    "kind": "question",
+    "unit": "u23",
+    "theme": "banco y trámites",
+    "source": "gen"
+  },
+  {
+    "id": "u23-t-que-vs-cual-0021",
+    "es": "¿Qué tengo que hacer con este papel?",
+    "en": "What do I have to do with this paper?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:que-tengo-que-hacer",
+      "c:tengo",
+      "c:tengo-que",
+      "g:yo-irregular",
+      "l:hacer",
+      "l:papel",
+      "l:qué",
+      "l:tener",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:que-vs-cual"
+    ],
+    "kind": "question",
+    "unit": "u23",
+    "theme": "banco y trámites",
+    "source": "gen"
+  },
+  {
+    "id": "u23-t-que-vs-cual-0022",
+    "es": "¿Cuáles necesita?\nLos dos papeles, por favor.",
+    "en": "Which ones do you need?\nBoth papers, please.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:por-favor",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:questions",
+      "l:cuál",
+      "l:favor",
+      "l:necesitar",
+      "l:papel"
+    ],
+    "targets": [
+      "g:que-vs-cual"
+    ],
+    "kind": "dialogue",
+    "unit": "u23",
+    "theme": "banco y trámites",
+    "source": "gen"
+  },
+  {
+    "id": "u23-t-que-vs-cual-0023",
+    "es": "¿Qué es una tarjeta?",
+    "en": "What's a card?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:questions",
+      "g:ser-identity",
+      "l:qué",
+      "l:ser",
+      "l:tarjeta"
+    ],
+    "targets": [
+      "g:que-vs-cual"
+    ],
+    "kind": "question",
+    "unit": "u23",
+    "theme": "banco y trámites",
+    "source": "gen"
+  },
+  {
+    "id": "u23-t-que-vs-cual-0024",
+    "es": "Mariana pregunta: ¿cuál es el problema?",
+    "en": "Mariana asks: what's the problem?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:questions",
+      "g:ser-identity",
+      "l:cuál",
+      "l:preguntar",
+      "l:problema",
+      "l:ser",
+      "p:preguntar-pedir",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:que-vs-cual"
+    ],
+    "kind": "question",
+    "unit": "u23",
+    "theme": "banco y trámites",
+    "source": "gen"
+  },
+  {
+    "id": "u23-t-que-vs-cual-0025",
+    "es": "Mi celular no sirve. ¿Cuál es el problema?",
+    "en": "My phone doesn't work. What's the problem?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:no-sirve",
+      "g:gender-articles",
+      "g:questions",
+      "g:ser-identity",
+      "l:celular",
+      "l:cuál",
+      "l:problema",
+      "l:ser",
+      "l:servir",
+      "p:possessives-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:que-vs-cual"
+    ],
+    "kind": "question",
+    "unit": "u23",
+    "theme": "banco y trámites",
+    "source": "gen"
+  }
+]

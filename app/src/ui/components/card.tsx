@@ -151,6 +151,7 @@ function TypeView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extra
         {passed ? (
           <>
             <p class="ok">{tries > 1 ? 'Got it.' : 'Right.'}{result!.near ? ' Just watch the accents:' : ''} {result!.near || tries > 1 ? <Es>{result!.answer}</Es> : null}</p>
+            {result!.lenient && result!.hint ? <p class="why"><Rich text={result!.hint} /></p> : null}
             {result!.variant === 'peninsular' ? <p class="why">That's how they say it in Spain. In Latin America you'll hear <Es>{result!.answer}</Es>.</p> : null}
           </>
         ) : revealed ? (
@@ -165,7 +166,7 @@ function TypeView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extra
       </div>
       <div class="actions">
         {finished
-          ? <Continue label={next} onClick={() => onDone({ correct: passed, tries: Math.max(1, tries), ms: took, evidence: { input: value, answer: result?.answer } }, value)} />
+          ? <Continue label={next} onClick={() => onDone({ correct: passed, tries: Math.max(1, tries), ms: took, ...(result?.lenient ? { lenient: true } : {}), evidence: { input: value, answer: result?.answer } }, value)} />
           : (
             <>
               <button class="btn primary" data-primary disabled={!value.trim()} onClick={submit}>{retrying ? 'Try again' : 'Check'}</button>
@@ -197,11 +198,11 @@ function ReadView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extra
  * each card appears; `stop()` is asked before each next card (out of time:
  * the run ends there).
  */
-export function CardRun({ cards, onAnswer, onDone, onShow, stop }: {
+export function CardRun({ cards, onAnswer, onDone, onShow, stop, start }: {
   cards: Card[]; onAnswer: (i: number, o: Outcome, input?: string) => void; onDone: () => void;
-  onShow?: (i: number) => void; stop?: () => boolean;
+  onShow?: (i: number) => void; stop?: () => boolean; start?: number;
 }) {
-  const [i, setI] = useState(0);
+  const [i, setI] = useState(() => Math.max(0, Math.min(start ?? 0, Math.max(0, cards.length - 1))));
   useEffect(() => { if (i < cards.length) onShow?.(i); }, [i]);
   if (!cards.length) return <div class="actions"><Continue onClick={onDone} /></div>;
   const card = cards[Math.min(i, cards.length - 1)];

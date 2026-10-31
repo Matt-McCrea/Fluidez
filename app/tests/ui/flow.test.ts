@@ -12,6 +12,23 @@ import { reviewCard } from '../../src/ui/session/cards';
 const DAY = 86_400_000;
 const MIN = 60_000;
 
+describe('LearnQueue json', () => {
+  it('a queue rebuilt from its JSON carries on exactly as the original', () => {
+    const a = new LearnQueue(5);
+    for (let k = 0; k < 9; k++) a.next(k % 2 === 0, k % 3 === 0);
+    const b = LearnQueue.fromJSON(JSON.parse(JSON.stringify(a.toJSON())));
+    expect(b.pos).toBe(a.pos);
+    expect([...b.presented]).toEqual([...a.presented]);
+    for (let i = 0; i < 5; i++) expect(b.asks(i)).toBe(a.asks(i));
+    while (!a.done) {
+      expect(b.current).toEqual(a.current);
+      a.next(true, false);
+      b.next(true, false);
+    }
+    expect(b.done).toBe(true);
+  });
+});
+
 describe('I need to stop', () => {
   it('ends as a minimum session: the path stays, the streak counts, what was taught is kept', async () => {
     const w = await world();

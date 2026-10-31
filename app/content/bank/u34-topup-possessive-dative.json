@@ -1,0 +1,761 @@
+[
+  {
+    "id": "u34-t-possessive-dative-0001",
+    "es": "Me corté el dedo picando la cebolla.",
+    "en": "I cut my finger chopping the onion.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:gerund-ways",
+      "g:preterite-ar",
+      "g:reflexive-routine",
+      "l:cebolla",
+      "l:cortarse",
+      "l:dedo",
+      "l:picar",
+      "p:lavarse-las-manos"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "statement",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0002",
+    "es": "Le robaron la billetera en el bus.",
+    "en": "They stole his wallet on the bus.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:preterite-ar",
+      "l:billetera",
+      "l:bus",
+      "l:robar"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "statement",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0003",
+    "es": "Nos robaron el carro anoche.",
+    "en": "They stole our car last night.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ayer-anoche",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:anoche",
+      "l:carro",
+      "l:robar",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "statement",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0004",
+    "es": "Me lavo el pelo todos los días.",
+    "en": "I wash my hair every day.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "l:día",
+      "l:lavarse",
+      "l:pelo",
+      "p:lavarse-las-manos",
+      "p:todos-los-dias",
+      "p:veces-al"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "statement",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0005",
+    "es": "Mariana se lavó las manos en el baño del café.",
+    "en": "Mariana washed her hands in the café bathroom.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:reflexive-routine",
+      "l:baño",
+      "l:café",
+      "l:lavarse",
+      "l:mano",
+      "p:lavarse-las-manos"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "statement",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0006",
+    "es": "¿Te duele la cabeza desde el choque?",
+    "en": "Has your head hurt since the crash? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:gustar-full",
+      "g:stem-boot",
+      "l:cabeza",
+      "l:choque",
+      "l:doler",
+      "p:doler",
+      "p:me-duele"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "question",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0007",
+    "es": "¿Te lavas las manos antes de comer?",
+    "en": "Do you wash your hands before eating? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:prep-infinitive",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "l:antes",
+      "l:comer",
+      "l:lavarse",
+      "l:mano",
+      "p:lavarse-las-manos"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "question",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0008",
+    "es": "¿Le robaron el celular a Tomás?",
+    "en": "Did they steal Tomás's phone?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:preterite-ar",
+      "l:celular",
+      "l:robar"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "question",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0009",
+    "es": "¿Te cortaste el pelo?",
+    "en": "Did you cut your hair? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:reflexive-routine",
+      "l:cortarse",
+      "l:pelo",
+      "p:lavarse-las-manos"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "question",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0010",
+    "es": "¿Se lavó los dientes?",
+    "en": "Did he brush his teeth?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:reflexive-routine",
+      "l:diente",
+      "l:lavarse",
+      "p:lavarse-las-manos"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "question",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0011",
+    "es": "¿Les robaron el carro a ustedes?",
+    "en": "Did they steal your car? (you all)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:preterite-ar",
+      "l:carro",
+      "l:robar"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "question",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0012",
+    "es": "Les robaron la cartera a las señoras.",
+    "en": "They stole the women's purses.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:preterite-ar",
+      "l:cartera",
+      "l:robar",
+      "l:señora"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "statement",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0013",
+    "es": "Vale se quitó el casco después del choque.",
+    "en": "Vale took off her helmet after the crash.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:reflexive-routine",
+      "l:casco",
+      "l:choque",
+      "l:después",
+      "l:quitarse",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "statement",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0014",
+    "es": "Me rompí el brazo ayer.",
+    "en": "I broke my arm yesterday.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ayer-anoche",
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "g:reflexive-routine",
+      "l:ayer",
+      "l:brazo",
+      "l:romperse",
+      "p:lavarse-las-manos"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "statement",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0015",
+    "es": "Se rompió la pierna en el choque.",
+    "en": "He broke his leg in the crash.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "g:reflexive-routine",
+      "l:choque",
+      "l:pierna",
+      "l:romperse",
+      "p:lavarse-las-manos"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "statement",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0016",
+    "es": "¿Qué te pasó?\nMe corté la mano.",
+    "en": "What happened to you?\nI cut my hand.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:questions",
+      "g:reflexive-routine",
+      "l:cortarse",
+      "l:mano",
+      "l:pasar",
+      "l:qué",
+      "p:lavarse-las-manos",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "dialogue",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0017",
+    "es": "¿Te duele la espalda?\nSí, me duele mucho.",
+    "en": "Does your back hurt?\nYes, it hurts a lot.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:gustar-full",
+      "g:stem-boot",
+      "l:doler",
+      "l:espalda",
+      "p:doler",
+      "p:me-duele",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "dialogue",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0018",
+    "es": "¿Qué le pasó a Hernando?\nLe robaron el carro.",
+    "en": "What happened to Hernando?\nThey stole his car.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:preterite-ar",
+      "g:questions",
+      "l:carro",
+      "l:pasar",
+      "l:qué",
+      "l:robar"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "dialogue",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0019",
+    "es": "Nos robaron las maletas.\nQué mala suerte.",
+    "en": "They stole our suitcases.\nWhat bad luck.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:que-de-malas",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:mala",
+      "l:maleta",
+      "l:qué",
+      "l:robar",
+      "l:suerte",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "dialogue",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0020",
+    "es": "Me quité el casco y me lavé la cara.",
+    "en": "I took off my helmet and washed my face.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:reflexive-routine",
+      "l:cara",
+      "l:casco",
+      "l:lavarse",
+      "l:quitarse",
+      "p:lavarse-las-manos"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "statement",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0021",
+    "es": "Le duele el hombro desde el choque.",
+    "en": "His shoulder has hurt since the crash.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:gustar-full",
+      "g:stem-boot",
+      "l:choque",
+      "l:doler",
+      "l:hombro",
+      "p:doler",
+      "p:me-duele"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "statement",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0022",
+    "es": "Me duelen los pies después de caminar.",
+    "en": "My feet hurt after walking.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:gustar-full",
+      "g:prep-infinitive",
+      "g:stem-boot",
+      "l:caminar",
+      "l:después",
+      "l:doler",
+      "l:pie",
+      "p:doler",
+      "p:me-duele",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "statement",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0023",
+    "es": "Nos lavamos las manos en la clínica.",
+    "en": "We washed our hands at the clinic.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "l:clínica",
+      "l:lavarse",
+      "l:mano",
+      "p:lavarse-las-manos"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "statement",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0024",
+    "es": "Se me rompió el celular, pero me lavé las manos.",
+    "en": "My phone broke, but I washed my hands.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:preterite-er-ir",
+      "g:reflexive-routine",
+      "g:se-accidental",
+      "l:celular",
+      "l:lavarse",
+      "l:mano",
+      "l:romperse",
+      "p:lavarse-las-manos"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "statement",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0025",
+    "es": "Les cortaron el pelo a los niños.",
+    "en": "They cut the children's hair.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:preterite-ar",
+      "l:cortar",
+      "l:niño",
+      "l:pelo",
+      "p:lavarse-las-manos"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "statement",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0026",
+    "es": "Le lavé el carro a mi papá.",
+    "en": "I washed my dad's car.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:preterite-ar",
+      "l:carro",
+      "l:lavar",
+      "l:papá",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "statement",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0027",
+    "es": "Se cortó la mano con una botella.",
+    "en": "He cut his hand on a bottle.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:reflexive-routine",
+      "l:botella",
+      "l:cortarse",
+      "l:mano",
+      "p:lavarse-las-manos"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "statement",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0028",
+    "es": "Se quitaron los zapatos en la casa.",
+    "en": "They took off their shoes in the house.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:reflexive-routine",
+      "l:casa",
+      "l:quitarse",
+      "l:zapatos",
+      "p:lavarse-las-manos"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "statement",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0029",
+    "es": "Me robaron la billetera, pero no me pasó nada.",
+    "en": "They stole my wallet, but nothing happened to me.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:negation-words",
+      "g:preterite-ar",
+      "l:billetera",
+      "l:pasar",
+      "l:robar",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "statement",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0030",
+    "es": "¿Te cortaste la mano con la botella?",
+    "en": "Did you cut your hand on the bottle? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:reflexive-routine",
+      "l:botella",
+      "l:cortarse",
+      "l:mano",
+      "p:lavarse-las-manos"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "question",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0031",
+    "es": "¿Le duele la pierna a Hernando?",
+    "en": "Does Hernando's leg hurt?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:gustar-full",
+      "g:stem-boot",
+      "l:doler",
+      "l:pierna",
+      "p:doler",
+      "p:me-duele"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "question",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  },
+  {
+    "id": "u34-t-possessive-dative-0032",
+    "es": "¿Te robaron el celular alguna vez?",
+    "en": "Has anyone ever stolen your phone? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:indefinites",
+      "g:preterite-ar",
+      "l:celular",
+      "l:robar",
+      "l:vez",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:possessive-dative"
+    ],
+    "kind": "question",
+    "unit": "u34",
+    "theme": "cuerpo y cosas",
+    "source": "gen"
+  }
+]

@@ -1,0 +1,890 @@
+[
+  {
+    "id": "u30-t-se-meaning-change-0001",
+    "es": "Me voy a las siete.",
+    "en": "I'm leaving at seven.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:voy-a",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "l:irse",
+      "p:ir-a-venir-de-place",
+      "p:telling-time"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "statement",
+    "unit": "u30",
+    "theme": "irse y quedarse",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0002",
+    "es": "¿A qué hora te vas hoy?",
+    "en": "What time are you leaving today? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:a-que-hora",
+      "c:voy-vas",
+      "g:ir-a-plans",
+      "l:hora",
+      "l:hoy",
+      "l:irse",
+      "l:qué"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "question",
+    "unit": "u30",
+    "theme": "irse y quedarse",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0003",
+    "es": "Vale se fue del café temprano.",
+    "en": "Vale left the café early.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ser-ir-hacer",
+      "l:café",
+      "l:irse",
+      "l:temprano"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "statement",
+    "unit": "u30",
+    "theme": "irse y quedarse",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0004",
+    "es": "Nos quedamos en Bogotá este fin de semana.",
+    "en": "We're staying in Bogotá this weekend.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "g:reflexive-routine",
+      "l:fin",
+      "l:quedarse",
+      "l:semana",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "statement",
+    "unit": "u30",
+    "theme": "irse y quedarse",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0005",
+    "es": "¿Te quedas en casa esta noche?",
+    "en": "Are you staying home tonight? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "g:reflexive-routine",
+      "l:casa",
+      "l:noche",
+      "l:quedarse",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "question",
+    "unit": "u30",
+    "theme": "irse y quedarse",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0006",
+    "es": "Tomás se queda en Altamira hasta el viernes.",
+    "en": "Tomás is staying in Altamira until Friday.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "l:quedarse",
+      "l:viernes",
+      "p:days-el-lunes"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "statement",
+    "unit": "u30",
+    "theme": "irse y quedarse",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0007",
+    "es": "Ellos se fueron sin decir nada.",
+    "en": "They left without saying anything.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:prep-infinitive",
+      "g:preterite-ser-ir-hacer",
+      "l:decir",
+      "l:irse"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "statement",
+    "unit": "u30",
+    "theme": "irse y quedarse",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0008",
+    "es": "¿Se va usted hoy o mañana?",
+    "en": "Are you leaving today or tomorrow? (polite)",
+    "accept": [
+      "¿Usted se va hoy o mañana?",
+      "¿Se va hoy o mañana?"
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:ir-a-plans",
+      "l:hoy",
+      "l:irse",
+      "l:mañana"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "question",
+    "unit": "u30",
+    "theme": "irse y quedarse",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0009",
+    "es": "¿Te quedas o te vas?\nMe quedo un rato más.",
+    "en": "Are you staying or leaving?\nI'm staying a bit longer.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:voy-vas",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "l:irse",
+      "l:quedarse",
+      "l:rato"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "dialogue",
+    "unit": "u30",
+    "theme": "irse y quedarse",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0010",
+    "es": "¿Ya se fue Tomás?\nSí, se fue a las cinco.",
+    "en": "Has Tomás left yet?\nYes, he left at five.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ser-ir-hacer",
+      "l:irse",
+      "p:ir-a-venir-de-place",
+      "p:telling-time"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "dialogue",
+    "unit": "u30",
+    "theme": "irse y quedarse",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0011",
+    "es": "No me voy todavía.",
+    "en": "I'm not leaving yet.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:voy-vas",
+      "g:ir-a-plans",
+      "l:irse",
+      "p:ya-todavia-basic"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "statement",
+    "unit": "u30",
+    "theme": "irse y quedarse",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0012",
+    "es": "Mariana se quedó en la oficina toda la tarde.",
+    "en": "Mariana stayed at the office all afternoon.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:reflexive-routine",
+      "l:oficina",
+      "l:quedarse",
+      "l:tarde",
+      "p:todos-los-dias"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "statement",
+    "unit": "u30",
+    "theme": "irse y quedarse",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0013",
+    "es": "Anoche me dormí en el sofá.",
+    "en": "Last night I fell asleep on the sofa.",
+    "accept": [
+      "Me dormí en el sofá anoche."
+    ],
+    "acceptEn": [],
+    "requires": [
+      "c:ayer-anoche",
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "g:reflexive-routine",
+      "l:anoche",
+      "l:dormirse",
+      "l:sofá"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "statement",
+    "unit": "u30",
+    "theme": "dormir y dormirse",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0014",
+    "es": "Duermo siete horas todas las noches.",
+    "en": "I sleep seven hours every night.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:dormir",
+      "l:hora",
+      "l:noche",
+      "p:todos-los-dias",
+      "p:veces-al"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "statement",
+    "unit": "u30",
+    "theme": "dormir y dormirse",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0015",
+    "es": "¿A qué hora te duermes normalmente?",
+    "en": "What time do you normally fall asleep? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:a-que-hora",
+      "c:normalmente",
+      "g:adverbs-mente",
+      "g:reflexive-routine",
+      "g:stem-boot",
+      "l:dormirse",
+      "l:hora",
+      "l:normalmente",
+      "l:qué"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "question",
+    "unit": "u30",
+    "theme": "dormir y dormirse",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0016",
+    "es": "Tomás se durmió durante la reunión.",
+    "en": "Tomás fell asleep during the meeting.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-spelling-stem",
+      "g:reflexive-routine",
+      "l:dormirse",
+      "l:reunión",
+      "p:durar-durante"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "statement",
+    "unit": "u30",
+    "theme": "dormir y dormirse",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0017",
+    "es": "Vale no durmió bien anoche.",
+    "en": "Vale didn't sleep well last night.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ayer-anoche",
+      "c:bien-y-tu",
+      "g:preterite-spelling-stem",
+      "l:anoche",
+      "l:bien",
+      "l:dormir",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "statement",
+    "unit": "u30",
+    "theme": "dormir y dormirse",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0018",
+    "es": "¿Te dormiste en la película?",
+    "en": "Did you fall asleep during the movie? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "g:reflexive-routine",
+      "l:dormirse",
+      "l:película"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "question",
+    "unit": "u30",
+    "theme": "dormir y dormirse",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0019",
+    "es": "¿Dormiste bien?\nNo, me dormí muy tarde.",
+    "en": "Did you sleep well?\nNo, I fell asleep very late.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:bien-y-tu",
+      "g:preterite-er-ir",
+      "g:reflexive-routine",
+      "l:bien",
+      "l:dormir",
+      "l:dormirse",
+      "l:tarde",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "dialogue",
+    "unit": "u30",
+    "theme": "dormir y dormirse",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0020",
+    "es": "Siempre me duermo en el carro.",
+    "en": "I always fall asleep in the car.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:reflexive-routine",
+      "g:stem-boot",
+      "l:carro",
+      "l:dormirse",
+      "l:siempre",
+      "p:frequency-scale"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "statement",
+    "unit": "u30",
+    "theme": "dormir y dormirse",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0021",
+    "es": "Vale se parece a su mamá en la sonrisa.",
+    "en": "Vale looks like her mom in the smile.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:reflexive-routine",
+      "l:mamá",
+      "l:parecerse",
+      "l:sonrisa",
+      "p:parecer-vs-parecerse",
+      "p:parecerse-a",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "statement",
+    "unit": "u30",
+    "theme": "parecer y parecerse",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0022",
+    "es": "¿A quién se parece Simón?",
+    "en": "Who does Simón look like?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "g:reflexive-routine",
+      "l:parecerse",
+      "l:quién",
+      "p:parecer-vs-parecerse",
+      "p:parecerse-a",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "question",
+    "unit": "u30",
+    "theme": "parecer y parecerse",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0023",
+    "es": "Simón se parece a un loro de mi barrio.",
+    "en": "Simón looks like a parrot from my neighborhood.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:reflexive-routine",
+      "l:barrio",
+      "l:loro",
+      "l:parecerse",
+      "p:parecer-vs-parecerse",
+      "p:parecerse-a",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "statement",
+    "unit": "u30",
+    "theme": "parecer y parecerse",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0024",
+    "es": "Mi tío se parece a Hernando.",
+    "en": "My uncle looks like Hernando.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "g:reflexive-routine",
+      "l:parecerse",
+      "l:tío",
+      "p:parecer-vs-parecerse",
+      "p:parecerse-a",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "statement",
+    "unit": "u30",
+    "theme": "parecer y parecerse",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0025",
+    "es": "¿Se parece Vale a su papá?",
+    "en": "Does Vale look like her dad?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "g:reflexive-routine",
+      "l:papá",
+      "l:parecerse",
+      "p:parecer-vs-parecerse",
+      "p:parecerse-a",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "question",
+    "unit": "u30",
+    "theme": "parecer y parecerse",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0026",
+    "es": "Se parecen mucho.\nSí, son hermanos.",
+    "en": "They look very alike.\nYes, they're brothers.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "g:reflexive-routine",
+      "g:ser-identity",
+      "l:hermanos",
+      "l:parecerse",
+      "l:ser",
+      "p:parecer-vs-parecerse",
+      "p:parecerse-a",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "dialogue",
+    "unit": "u30",
+    "theme": "parecer y parecerse",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0027",
+    "es": "¿Te vas o te quedas?",
+    "en": "Are you leaving or staying? (to a friend)",
+    "accept": [
+      "¿Te quedas o te vas?"
+    ],
+    "acceptEn": [],
+    "requires": [
+      "c:voy-vas",
+      "g:ir-a-plans",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "l:irse",
+      "l:quedarse"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "question",
+    "unit": "u30",
+    "theme": "mezcla",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0028",
+    "es": "Hernando se durmió en el taxi.",
+    "en": "Hernando fell asleep in the taxi.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-spelling-stem",
+      "g:reflexive-routine",
+      "l:dormirse",
+      "l:taxi"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "statement",
+    "unit": "u30",
+    "theme": "mezcla",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0029",
+    "es": "¿Nos quedamos un rato más?",
+    "en": "Shall we stay a little longer?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "l:quedarse",
+      "l:rato"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "question",
+    "unit": "u30",
+    "theme": "mezcla",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0030",
+    "es": "Rosa y yo nos quedábamos siempre hasta tarde.",
+    "en": "Rosa and I always stayed until late.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "g:reflexive-routine",
+      "l:quedarse",
+      "l:siempre",
+      "l:tarde",
+      "p:frequency-scale"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "statement",
+    "unit": "u30",
+    "theme": "mezcla",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0031",
+    "es": "Se duerme en todas las reuniones.",
+    "en": "He falls asleep in every meeting.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:reflexive-routine",
+      "g:stem-boot",
+      "l:dormirse",
+      "l:reunión"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "statement",
+    "unit": "u30",
+    "theme": "mezcla",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0032",
+    "es": "Mariana se va de la oficina a las seis.",
+    "en": "Mariana leaves the office at six.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "l:irse",
+      "l:oficina",
+      "p:telling-time"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "statement",
+    "unit": "u30",
+    "theme": "más",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0033",
+    "es": "¿Por qué te vas tan temprano?",
+    "en": "Why are you leaving so early? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:voy-vas",
+      "g:ir-a-plans",
+      "l:irse",
+      "l:qué",
+      "l:temprano",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "question",
+    "unit": "u30",
+    "theme": "más",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0034",
+    "es": "¿Te duermes fácil por la noche?",
+    "en": "Do you fall asleep easily at night? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:reflexive-routine",
+      "g:stem-boot",
+      "l:dormirse",
+      "l:fácil",
+      "l:noche",
+      "p:por-la-manana"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "question",
+    "unit": "u30",
+    "theme": "más",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0035",
+    "es": "Mis papás se quedan en Medellín en diciembre.",
+    "en": "My parents stay in Medellín in December.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "g:reflexive-routine",
+      "l:diciembre",
+      "l:papá",
+      "l:quedarse",
+      "p:masculine-plural-mixed",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "statement",
+    "unit": "u30",
+    "theme": "más",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0036",
+    "es": "Yo me duermo muy rápido en el bus.",
+    "en": "I fall asleep very fast on the bus.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:reflexive-routine",
+      "g:stem-boot",
+      "l:bus",
+      "l:dormirse",
+      "l:rápido",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "statement",
+    "unit": "u30",
+    "theme": "más",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0037",
+    "es": "Perdón, me voy ya.\nTranquilo, nos vemos mañana.",
+    "en": "Sorry, I'm leaving now.\nNo problem, see you tomorrow.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:chao-nos-vemos",
+      "c:perdon-disculpe",
+      "c:tranquilo",
+      "c:voy-vas",
+      "g:ir-a-plans",
+      "l:irse",
+      "l:mañana",
+      "l:perdón",
+      "l:tranquilo",
+      "l:ver",
+      "p:nos-vemos-a-las"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "dialogue",
+    "unit": "u30",
+    "theme": "más",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0038",
+    "es": "¿Dónde te quedas en Cali?",
+    "en": "Where are you staying in Cali? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "g:questions",
+      "g:reflexive-routine",
+      "l:dónde",
+      "l:quedarse"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "question",
+    "unit": "u30",
+    "theme": "más",
+    "source": "gen"
+  },
+  {
+    "id": "u30-t-se-meaning-change-0039",
+    "es": "Anoche nos quedamos hasta las once en el café.",
+    "en": "Last night we stayed at the café until eleven.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ayer-anoche",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:reflexive-routine",
+      "l:anoche",
+      "l:café",
+      "l:quedarse"
+    ],
+    "targets": [
+      "g:se-meaning-change"
+    ],
+    "kind": "statement",
+    "unit": "u30",
+    "theme": "más",
+    "source": "gen"
+  }
+]

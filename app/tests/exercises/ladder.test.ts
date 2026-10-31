@@ -179,3 +179,26 @@ describe('the whole ladder', () => {
     for (const it of all) if (it.kind === 'transform') expect(it.answer.toLowerCase()).not.toBe(it.source.toLowerCase());
   });
 });
+
+describe('distractors only from taught tenses', () => {
+  const toronto = S('Soy de Toronto.', "I'm from Toronto.", 'toronto');
+
+  test('with only the present taught, a choose item shows present-tense forms only', () => {
+    const it = chooseItem(toronto, { seed: 'a', taught: ['presente'], maxDistractors: 3 });
+    expect(it).not.toBeNull();
+    const wrong = it!.options.filter((_, k) => k !== it!.answer);
+    expect(wrong.length).toBeGreaterThanOrEqual(2);
+    for (const o of wrong) expect(['eres', 'es', 'somos', 'son']).toContain(o);
+    for (const o of it!.options) expect(verbReadings(o).every((a) => a.tense === 'presente'), o).toBe(true);
+  });
+
+  test('without the option the old behaviour stays (other tenses may appear)', () => {
+    const all = new Set<string>();
+    for (let k = 0; k < 20; k++) for (const o of chooseItem(toronto, { seed: `s${k}`, maxDistractors: 3 })?.options ?? []) all.add(o);
+    expect([...all].some((o) => verbReadings(o).some((a) => a.tense !== 'presente'))).toBe(true);
+  });
+
+  test('an item with fewer than two distractors in the taught tenses is dropped', () => {
+    expect(chooseItem(S('Soy de Toronto.', "I'm from Toronto.", 'x'), { taught: [] })).toBeNull();
+  });
+});

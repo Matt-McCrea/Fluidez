@@ -1,0 +1,506 @@
+[
+  {
+    "id": "u01-t-sounds-letters-0001",
+    "es": "Me llamo Guillermo.",
+    "en": "My name is Guillermo.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-llamo",
+      "g:reflexive-routine",
+      "l:llamarse"
+    ],
+    "targets": [
+      "g:sounds-letters"
+    ],
+    "kind": "statement",
+    "unit": "u01",
+    "theme": "sounds and letters",
+    "source": "gen"
+  },
+  {
+    "id": "u01-t-sounds-letters-0002",
+    "es": "Me llamo Jorge.",
+    "en": "My name is Jorge.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-llamo",
+      "g:reflexive-routine",
+      "l:llamarse"
+    ],
+    "targets": [
+      "g:sounds-letters"
+    ],
+    "kind": "statement",
+    "unit": "u01",
+    "theme": "sounds and letters",
+    "source": "gen"
+  },
+  {
+    "id": "u01-t-sounds-letters-0003",
+    "es": "Soy de Medellín.",
+    "en": "I'm from Medellín.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:soy-de",
+      "g:ser-identity",
+      "l:ser"
+    ],
+    "targets": [
+      "g:sounds-letters"
+    ],
+    "kind": "statement",
+    "unit": "u01",
+    "theme": "sounds and letters",
+    "source": "gen"
+  },
+  {
+    "id": "u01-t-sounds-letters-0004",
+    "es": "Soy de Bogotá.",
+    "en": "I'm from Bogotá.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:soy-de",
+      "g:ser-identity",
+      "l:ser"
+    ],
+    "targets": [
+      "g:sounds-letters"
+    ],
+    "kind": "statement",
+    "unit": "u01",
+    "theme": "sounds and letters",
+    "source": "gen"
+  },
+  {
+    "id": "u01-t-sounds-letters-0005",
+    "es": "Soy de Cali.",
+    "en": "I'm from Cali.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:soy-de",
+      "g:ser-identity",
+      "l:ser"
+    ],
+    "targets": [
+      "g:sounds-letters"
+    ],
+    "kind": "statement",
+    "unit": "u01",
+    "theme": "sounds and letters",
+    "source": "gen"
+  },
+  {
+    "id": "u01-t-sounds-letters-0006",
+    "es": "Soy de Cartagena.",
+    "en": "I'm from Cartagena.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:soy-de",
+      "g:ser-identity",
+      "l:ser"
+    ],
+    "targets": [
+      "g:sounds-letters"
+    ],
+    "kind": "statement",
+    "unit": "u01",
+    "theme": "sounds and letters",
+    "source": "gen"
+  },
+  {
+    "id": "u01-t-sounds-letters-0007",
+    "es": "Mucho gusto, Jorge.",
+    "en": "Nice to meet you, Jorge.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:mucho-gusto",
+      "l:gusto"
+    ],
+    "targets": [
+      "g:sounds-letters"
+    ],
+    "kind": "statement",
+    "unit": "u01",
+    "theme": "sounds and letters",
+    "source": "gen"
+  },
+  {
+    "id": "u01-t-sounds-letters-0008",
+    "es": "Mucho gusto, Cecilia.",
+    "en": "Nice to meet you, Cecilia.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:mucho-gusto",
+      "l:gusto"
+    ],
+    "targets": [
+      "g:sounds-letters"
+    ],
+    "kind": "statement",
+    "unit": "u01",
+    "theme": "sounds and letters",
+    "source": "gen"
+  },
+  {
+    "id": "u01-t-sounds-letters-0009",
+    "es": "Soy Tomás Herrera.",
+    "en": "I'm Tomás Herrera.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:ser"
+    ],
+    "targets": [
+      "g:sounds-letters"
+    ],
+    "kind": "statement",
+    "unit": "u01",
+    "theme": "sounds and letters",
+    "source": "gen"
+  },
+  {
+    "id": "u01-t-sounds-letters-0010",
+    "es": "¿Cómo estás, Guillermo?",
+    "en": "How are you, Guillermo? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:como-estas",
+      "g:estar-location-states",
+      "l:cómo",
+      "l:estar"
+    ],
+    "targets": [
+      "g:sounds-letters"
+    ],
+    "kind": "question",
+    "unit": "u01",
+    "theme": "sounds and letters",
+    "source": "gen"
+  },
+  {
+    "id": "u01-t-sounds-letters-0011",
+    "es": "¿Cómo te llamas, Guillermo?",
+    "en": "What is your name, Guillermo? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-llamo",
+      "g:reflexive-routine",
+      "l:cómo",
+      "l:llamarse"
+    ],
+    "targets": [
+      "g:sounds-letters"
+    ],
+    "kind": "question",
+    "unit": "u01",
+    "theme": "sounds and letters",
+    "source": "gen"
+  },
+  {
+    "id": "u01-t-sounds-letters-0012",
+    "es": "¿De dónde eres?",
+    "en": "Where are you from? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:soy-de",
+      "g:ser-identity",
+      "l:dónde",
+      "l:ser"
+    ],
+    "targets": [
+      "g:sounds-letters"
+    ],
+    "kind": "question",
+    "unit": "u01",
+    "theme": "sounds and letters",
+    "source": "gen"
+  },
+  {
+    "id": "u01-t-sounds-letters-0013",
+    "es": "¿Eres de Barranquilla?",
+    "en": "Are you from Barranquilla? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:ser"
+    ],
+    "targets": [
+      "g:sounds-letters"
+    ],
+    "kind": "question",
+    "unit": "u01",
+    "theme": "sounds and letters",
+    "source": "gen"
+  },
+  {
+    "id": "u01-t-sounds-letters-0014",
+    "es": "¿Dónde está la calle Sesenta?",
+    "en": "Where is Sixty Street?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:donde-esta",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:calle",
+      "l:dónde",
+      "l:estar",
+      "p:question-word-order",
+      "p:street-names"
+    ],
+    "targets": [
+      "g:sounds-letters"
+    ],
+    "kind": "question",
+    "unit": "u01",
+    "theme": "sounds and letters",
+    "source": "gen"
+  },
+  {
+    "id": "u01-t-sounds-letters-0015",
+    "es": "¿Cuánto cuesta el jugo en Cartagena?",
+    "en": "How much does the juice cost in Cartagena?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:cuanto-cuesta",
+      "g:gender-articles",
+      "g:questions",
+      "l:costar",
+      "l:cuánto",
+      "l:jugo",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:sounds-letters"
+    ],
+    "kind": "question",
+    "unit": "u01",
+    "theme": "sounds and letters",
+    "source": "gen"
+  },
+  {
+    "id": "u01-t-sounds-letters-0016",
+    "es": "Más despacio, por favor, Jorge.",
+    "en": "Slower, please, Jorge.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:mas-despacio",
+      "c:por-favor",
+      "l:despacio",
+      "l:favor"
+    ],
+    "targets": [
+      "g:sounds-letters"
+    ],
+    "kind": "statement",
+    "unit": "u01",
+    "theme": "sounds and letters",
+    "source": "gen"
+  },
+  {
+    "id": "u01-t-sounds-letters-0017",
+    "es": "Quiero un jugo, por favor.",
+    "en": "I want a juice, please.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:por-favor",
+      "c:quiero",
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:favor",
+      "l:jugo",
+      "l:querer"
+    ],
+    "targets": [
+      "g:sounds-letters"
+    ],
+    "kind": "statement",
+    "unit": "u01",
+    "theme": "sounds and letters",
+    "source": "gen"
+  },
+  {
+    "id": "u01-t-sounds-letters-0018",
+    "es": "Tengo un año en Bogotá.",
+    "en": "I've been in Bogotá for a year.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tengo",
+      "g:gender-articles",
+      "g:yo-irregular",
+      "l:año",
+      "l:tener"
+    ],
+    "targets": [
+      "g:sounds-letters"
+    ],
+    "kind": "statement",
+    "unit": "u01",
+    "theme": "sounds and letters",
+    "source": "gen"
+  },
+  {
+    "id": "u01-t-sounds-letters-0019",
+    "es": "Tengo un carro rojo.",
+    "en": "I have a red car.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tengo",
+      "g:gender-articles",
+      "g:yo-irregular",
+      "l:carro",
+      "l:rojo",
+      "l:tener"
+    ],
+    "targets": [
+      "g:sounds-letters"
+    ],
+    "kind": "statement",
+    "unit": "u01",
+    "theme": "sounds and letters",
+    "source": "gen"
+  },
+  {
+    "id": "u01-t-sounds-letters-0020",
+    "es": "Me gustaría un jugo, Jorge, por favor.",
+    "en": "I would like a juice, Jorge, please.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-gustaria",
+      "c:por-favor",
+      "g:conditional",
+      "g:gender-articles",
+      "l:favor",
+      "l:gustar",
+      "l:jugo"
+    ],
+    "targets": [
+      "g:sounds-letters"
+    ],
+    "kind": "statement",
+    "unit": "u01",
+    "theme": "sounds and letters",
+    "source": "gen"
+  },
+  {
+    "id": "u01-t-sounds-letters-0021",
+    "es": "Perdón, soy de Cali.",
+    "en": "Sorry, I'm from Cali.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:perdon-disculpe",
+      "c:soy-de",
+      "g:ser-identity",
+      "l:perdón",
+      "l:ser"
+    ],
+    "targets": [
+      "g:sounds-letters"
+    ],
+    "kind": "statement",
+    "unit": "u01",
+    "theme": "sounds and letters",
+    "source": "gen"
+  },
+  {
+    "id": "u01-t-sounds-letters-0022",
+    "es": "Hola, soy Guillermo.",
+    "en": "Hi, I'm Guillermo.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:hola-buenos-dias",
+      "g:ser-identity",
+      "l:ser"
+    ],
+    "targets": [
+      "g:sounds-letters"
+    ],
+    "kind": "statement",
+    "unit": "u01",
+    "theme": "sounds and letters",
+    "source": "gen"
+  },
+  {
+    "id": "u01-t-sounds-letters-0023",
+    "es": "Gracias, Jorge.",
+    "en": "Thanks, Jorge.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:gracias-de-nada"
+    ],
+    "targets": [
+      "g:sounds-letters"
+    ],
+    "kind": "statement",
+    "unit": "u01",
+    "theme": "sounds and letters",
+    "source": "gen"
+  },
+  {
+    "id": "u01-t-sounds-letters-0024",
+    "es": "Hola, ¿cómo estás?\nBien, gracias.",
+    "en": "Hi, how are you?\nFine, thanks.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:bien-y-tu",
+      "c:como-estas",
+      "c:gracias-de-nada",
+      "c:hola-buenos-dias",
+      "g:estar-location-states",
+      "l:bien",
+      "l:cómo",
+      "l:estar"
+    ],
+    "targets": [
+      "g:sounds-letters"
+    ],
+    "kind": "dialogue",
+    "unit": "u01",
+    "theme": "sounds and letters",
+    "source": "gen"
+  },
+  {
+    "id": "u01-t-sounds-letters-0025",
+    "es": "Soy de Medellín.\nMucho gusto.",
+    "en": "I'm from Medellín.\nNice to meet you.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:mucho-gusto",
+      "c:soy-de",
+      "g:ser-identity",
+      "l:gusto",
+      "l:ser"
+    ],
+    "targets": [
+      "g:sounds-letters"
+    ],
+    "kind": "dialogue",
+    "unit": "u01",
+    "theme": "sounds and letters",
+    "source": "gen"
+  }
+]

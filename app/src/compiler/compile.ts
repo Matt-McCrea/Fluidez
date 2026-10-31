@@ -32,7 +32,7 @@ import {
   REVIEW_DAY_EXTRA_MINUTES, REVIEW_REUSE_DAYS, REVIEW_REUSE_REASON,
   SECONDS, SEVERE_FACTOR, THROTTLED_WARMUP_FACTOR, sessionMinutes, throttleMinutes, warmupMinutes,
 } from './budget';
-import { dayPos, knownSet, makeRng, sessionSeed, type Rng } from './content';
+import { admissible, dayPos, knownSet, unmetRequires, makeRng, sessionSeed, type Rng } from './content';
 import type {
   Block, ChapterRef, CloseBlock, CompileInput, Conversion, Diagnostic, LearnBlock, LearnItem, LearnerView,
   Mode, PathState, PracticeBlock, PracticeItem, PracticeOp, ReviewItem, ScriptItem, SentenceRef,
@@ -43,6 +43,8 @@ import { REMEDIATE_MAX_SERVED } from './remediate';
 
 const DAY_MS = 86_400_000;
 const LOG_MAX = 60;
+/** Most owed items an output day pulls forward for its scene (a unit's first scene can owe a dozen). */
+const REPAY_SCENE_MAX = 14;
 
 export function initialPath(): PathState {
   return { version: 2, unit: 0, day: 0, coreSessions: 0, owedNew: [], owedGrammar: [], pendingDrills: [], recentGrammar: [], remediate: [], log: [] };
@@ -547,15 +549,7 @@ class Compiler {
   // ---------------------------------------------------------------- content selection
 
   private gated(requires: readonly NodeId[]): boolean {
-    const has = (r: NodeId) => this.known.has(r) || this.sessionNew.has(r);
-    for (const r of requires) {
-      if (has(r)) continue;
-      // the tagger keeps a chunk's unpacked grammar in requires; a taught chunk
-      // in the same item covers it
-      const covered = requires.some((c) => c !== r && has(c) && this.course.nodes.get(c)?.unpacks === r);
-      if (!covered) return false;
-    }
-    return true;
+    return admissible(requires, (r) => this.known.has(r) || this.sessionNew.has(r), this.course.nodes);
   }
 
   /**
@@ -696,7 +690,7 @@ class Compiler {
    * Throttled sessions take none. Anything of an advancing day not taken
    * becomes owed, so cutting never loses an item.
    */
-  private takeNew(type: LessonType, day: Unit['days'][number] | undefined, advancing: boolean, opts: { focusNonGrammar?: boolean } = {}): LearnItem[] {
+  private takeNew(type: LessonType, day: Unit['days'][number] | undefined, advancing: boolean, opts: { focusNonGrammar?: boolean; force?: readonly NodeId[] } = {}): LearnItem[] {
     // Throttled: the warm-up's overrun comes out of new-item time, lexemes first, then chunks;
     // severe backlog, or a drill day's optional words under a backlog: none at all.
     // Days that teach nothing new of their own (or do not advance) only repay owed items.
@@ -722,7 +716,8 @@ class Compiler {
     const counts = { chunk: 0, lexeme: 0, pattern: 0, contrast: 0 };
     const caps = { chunk: chunkCap, lexeme: lexCap, pattern: patCap, contrast: conCap };
     const seen = new Set<NodeId>();
-    for (const id of [...this.owedNew, ...dayItems]) { // owed first: a cut item is never starved
+    const force = new Set(opts.force ?? []);
+    for (const id of [...force, ...this.owedNew, ...dayItems]) { // owed first: a cut item is never starved
       if (seen.has(id)) continue;
       seen.add(id);
       if (this.known.has(id) || this.sessionNew.has(id)) continue;
@@ -739,7 +734,8 @@ class Compiler {
           owed.push(id); continue;
         }
       }
-      if (counts[bucket] < caps[bucket] && taken.length < maxTotal) { counts[bucket]++; taken.push(id); this.sessionNew.add(id); }
+      if (force.has(id)) { taken.push(id); this.sessionNew.add(id); }
+      else if (counts[bucket] < caps[bucket] && taken.length < maxTotal) { counts[bucket]++; taken.push(id); this.sessionNew.add(id); }
       else owed.push(id);
     }
     if (owed.length && dayItems.length) this.diag({ code: 'deferred', message: `${owed.length} new item(s) owed to later sessions${this.throttled ? ' (throttled)' : ''}` });
@@ -1064,7 +1060,7 @@ class Compiler {
    */
   private waitingOnOwed(requires: readonly NodeId[]): boolean {
     const here = dayPos(this.course, this.path.unit, this.path.day);
-    const missing = requires.filter((r) => !this.known.has(r) && !this.sessionNew.has(r));
+    const missing = unmetRequires(requires, (r) => this.known.has(r) || this.sessionNew.has(r), this.course.nodes);
     return missing.length > 0 && missing.every((r) => (this.course.teachPos.get(r) ?? Infinity) <= here);
   }
 
@@ -1129,7 +1125,10 @@ class Compiler {
   private outputDay(day: Unit['days'][number], d: Decision) {
     this.warmupStd();
     // repay owed items first, so the scene/task they gate can be served today
-    this.pushLearn(this.takeNew('output', day, false));
+    const repay = this.repayFor(day.scene);
+    this.pushLearn(this.takeNew('output', day, false, { force: repay }));
+    const repaid = repay.filter((n) => this.sessionNew.has(n));
+    if (repaid.length) this.diag({ code: 'repaid', block: 'learn', message: `introduced ${repaid.join(', ')} ahead of the caps so the output scene can be served` });
     const scene = this.sceneFor(day.scene);
     const task = this.taskFor();
     if (scene) this.blocks.push({ kind: 'scene', part: 'core', deliberate: false, scene, purpose: 'output', minutes: this.content.scenes.get(scene)!.minutes });
@@ -1142,6 +1141,23 @@ class Compiler {
       this.remix();
       this.leech();
     }
+  }
+
+  /**
+   * The unit's own owed or scheduled items (chunks, lexemes, patterns) that are the only thing
+   * keeping an unseen scene from being admitted; at most REPAY_SCENE_MAX of them, else none.
+   */
+  private repayFor(sceneId: string | undefined): NodeId[] {
+    const sc = sceneId ? this.content.scenes.get(sceneId) : undefined;
+    if (!sc || this.severe || this.throttled || this.L.ledger.hasSeen('scene', sc.id)) return [];
+    const have = (r: NodeId) => this.known.has(r) || this.sessionNew.has(r);
+    const unmet = unmetRequires(sc.requires, have, this.course.nodes);
+    if (!unmet.length || unmet.length > REPAY_SCENE_MAX) return [];
+    const here = dayPos(this.course, this.path.unit, this.path.day);
+    const scheduled = new Set<NodeId>(this.owedNew);
+    for (const d of this.unit?.days ?? []) for (const n of [...d.chunks, ...d.lexemes, ...d.focus]) if ((this.course.teachPos.get(n) ?? Infinity) <= here) scheduled.add(n);
+    const ok = unmet.every((n) => ['chunk', 'lexeme', 'pattern'].includes(kindOf(n, this.course.nodes)) && scheduled.has(n));
+    return ok ? unmet : [];
   }
 
   /** No scene: deferred if an unseen scene of this unit only waits on owed items, else a shortage. */

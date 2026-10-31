@@ -122,17 +122,17 @@
       "id": "t6",
       "npc": "Primero, el recibo de luz. Tranquilo, caballero, eso le pasa a todo el mundo.",
       "npcEn": "First, the electricity bill. Don't worry, sir, that happens to everyone.",
-      "intent": "Thank her and say you'll have to come back another day.",
+      "intent": "Thank her and say you will have to come back tomorrow, then.",
       "accept": [
-        "Gracias. Me toca volver mañana, entonces.",
-        "Bueno, me toca volver mañana. Muchas gracias.",
-        "Muchas gracias, señora. Me toca volver otro día."
+        "Gracias. Toca volver mañana, entonces.",
+        "Bueno, toca volver mañana. Muchas gracias.",
+        "Muchas gracias, señora. Toca volver mañana."
       ],
       "require": [
         {
           "type": "containsWord",
           "word": "toca",
-          "label": "I'll have to: me toca volver"
+          "label": "I will have to: toca volver mañana"
         }
       ],
       "focus": "c:me-toca",
@@ -154,7 +154,6 @@
     "c:que-pena",
     "c:que-tengo-que-hacer",
     "c:queria-preguntar",
-    "c:sera-otro-dia",
     "c:tengo",
     "c:tengo-que",
     "c:tienes",
@@ -190,7 +189,6 @@
     "l:cuál",
     "l:demora",
     "l:documento",
-    "l:día",
     "l:esperar",
     "l:favor",
     "l:gente",
@@ -227,9 +225,7 @@
     "p:aqui-ahi-alla",
     "p:demonstratives-basic",
     "p:la-gente-singular",
-    "p:madrugar-trasnochar",
     "p:no-es-x-es-y",
-    "p:no-queda-de-otra",
     "p:para-inf",
     "p:possessives-basic",
     "p:quantifiers-basic",

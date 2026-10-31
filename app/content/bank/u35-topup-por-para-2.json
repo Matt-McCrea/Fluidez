@@ -1,0 +1,759 @@
+[
+  {
+    "id": "u35-t-por-para-2-0001",
+    "es": "¿Cuántas veces por semana haces ejercicio?",
+    "en": "How many times a week do you exercise? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:por-para-1",
+      "g:present-er-ir",
+      "g:questions",
+      "l:cuánto",
+      "l:ejercicio",
+      "l:hacer",
+      "l:semana",
+      "l:vez"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "question",
+    "unit": "u35",
+    "theme": "frequency and means",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0002",
+    "es": "¿Tomas agua por la mañana?",
+    "en": "Do you drink water in the morning? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:agua",
+      "l:mañana",
+      "l:tomar",
+      "p:por-la-manana"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "question",
+    "unit": "u35",
+    "theme": "frequency and means",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0003",
+    "es": "¿Hablas con tu familia por teléfono?",
+    "en": "Do you talk with your family on the phone? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:familia",
+      "l:hablar",
+      "l:teléfono",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "question",
+    "unit": "u35",
+    "theme": "frequency and means",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0004",
+    "es": "¿Cuántas horas por día trabajas?",
+    "en": "How many hours a day do you work? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "g:questions",
+      "l:cuánto",
+      "l:día",
+      "l:hora",
+      "l:trabajar",
+      "p:costar-pagar"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "question",
+    "unit": "u35",
+    "theme": "frequency and means",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0005",
+    "es": "Tomás habla con Vale tres veces por semana.",
+    "en": "Tomás talks with Vale three times a week.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:por-para-1",
+      "g:present-ar",
+      "l:hablar",
+      "l:semana",
+      "l:vez",
+      "p:veces-al"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "frequency and means",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0006",
+    "es": "Vale me manda la receta por correo.",
+    "en": "Vale sends me the prescription by mail.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:correo",
+      "l:mandar",
+      "l:receta",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "frequency and means",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0007",
+    "es": "Mi mamá toma café dos veces por día.",
+    "en": "My mom drinks coffee twice a day.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:café",
+      "l:día",
+      "l:mamá",
+      "l:tomar",
+      "l:vez",
+      "p:costar-pagar",
+      "p:possessives-basic",
+      "p:veces-al"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "frequency and means",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0008",
+    "es": "Hernando camina una hora por día.",
+    "en": "Hernando walks an hour a day.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:caminar",
+      "l:día",
+      "l:hora",
+      "p:costar-pagar"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "frequency and means",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0009",
+    "es": "Hablamos por celular casi todos los días.",
+    "en": "We talk on the cell phone almost every day.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:por-para-1",
+      "g:present-ar",
+      "l:celular",
+      "l:día",
+      "l:hablar",
+      "p:todos-los-dias",
+      "p:veces-al"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "frequency and means",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0010",
+    "es": "¿Cuántas veces por día tomo el jugo?\nTres veces por día.",
+    "en": "How many times a day do I drink the juice?\nThree times a day.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:questions",
+      "l:cuánto",
+      "l:día",
+      "l:jugo",
+      "l:tomar",
+      "l:vez",
+      "p:costar-pagar",
+      "p:veces-al"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "dialogue",
+    "unit": "u35",
+    "theme": "frequency and means",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0011",
+    "es": "Simón come tres veces por día.",
+    "en": "Simón eats three times a day.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "l:comer",
+      "l:día",
+      "l:vez",
+      "p:costar-pagar",
+      "p:veces-al"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "frequency and means",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0012",
+    "es": "Cambié la camioneta por un carro más pequeño.",
+    "en": "I exchanged the van for a smaller car.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:cambiar",
+      "l:camioneta",
+      "l:carro",
+      "l:pequeño",
+      "p:cambiar-de-por",
+      "p:costar-pagar"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "exchange",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0013",
+    "es": "¿Cambias el tinto por un jugo?",
+    "en": "Are you swapping the black coffee for a juice? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:cambiar",
+      "l:jugo",
+      "l:tinto",
+      "p:cambiar-de-por",
+      "p:costar-pagar"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "question",
+    "unit": "u35",
+    "theme": "exchange",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0014",
+    "es": "Vale cambió su camisa por otra.",
+    "en": "Vale exchanged her shirt for another one.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:preterite-ar",
+      "l:cambiar",
+      "l:camisa",
+      "p:costar-pagar",
+      "p:otro-no-article",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "exchange",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0015",
+    "es": "Quiero cambiar este libro por otro.",
+    "en": "I want to exchange this book for another one.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:por-un-lado",
+      "c:quiero",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:cambiar",
+      "l:libro",
+      "l:querer",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "exchange",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0016",
+    "es": "Cambié el pan por un jugo.",
+    "en": "I swapped the bread for a juice.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:cambiar",
+      "l:jugo",
+      "l:pan",
+      "p:cambiar-de-por",
+      "p:costar-pagar"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "exchange",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0017",
+    "es": "¿Puedo cambiar esta camisa por otra?\nClaro que sí.",
+    "en": "Can I exchange this shirt for another one?\nOf course.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:claro-listo",
+      "c:puedo",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:cambiar",
+      "l:camisa",
+      "l:claro",
+      "l:poder",
+      "p:costar-pagar",
+      "p:demonstratives-basic",
+      "p:otro-no-article"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "dialogue",
+    "unit": "u35",
+    "theme": "exchange",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0018",
+    "es": "Para mí, el café de Altamira es el mejor.",
+    "en": "For me, the café in Altamira is the best.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:prep-pronouns",
+      "g:ser-identity",
+      "g:superlatives",
+      "l:café",
+      "l:mejor",
+      "l:ser",
+      "p:para-inf",
+      "p:para-mi"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "opinion",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0019",
+    "es": "¿Y para ti, qué es lo más importante?",
+    "en": "And for you, what is the most important thing? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:prep-pronouns",
+      "g:questions",
+      "g:ser-identity",
+      "g:superlatives",
+      "l:importante",
+      "l:qué",
+      "l:ser",
+      "p:para-inf"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "question",
+    "unit": "u35",
+    "theme": "opinion",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0020",
+    "es": "Para Tomás, la salud es lo primero.",
+    "en": "For Tomás, health comes first.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:salud",
+      "l:ser",
+      "p:para-inf",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "opinion",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0021",
+    "es": "Para mí, la propuesta es obviamente muy buena.",
+    "en": "For me, the proposal is obviously good.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adverbs-mente",
+      "g:gender-articles",
+      "g:prep-pronouns",
+      "g:ser-identity",
+      "l:buena",
+      "l:obviamente",
+      "l:propuesta",
+      "l:ser",
+      "p:para-inf",
+      "p:para-mi",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "opinion",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0022",
+    "es": "¿Para usted es grave?",
+    "en": "For you, is it serious? (polite)",
+    "accept": [
+      "¿Es grave para usted?"
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:prep-pronouns",
+      "g:ser-identity",
+      "l:grave",
+      "l:ser",
+      "p:para-inf"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "question",
+    "unit": "u35",
+    "theme": "opinion",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0023",
+    "es": "¿Qué piensas del examen?\nPara mí, es muy difícil.",
+    "en": "What do you think of the exam?\nFor me, it's very difficult.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:prep-pronouns",
+      "g:questions",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:difícil",
+      "l:examen",
+      "l:pensar",
+      "l:qué",
+      "l:ser",
+      "p:para-inf",
+      "p:para-mi",
+      "p:pensar-en",
+      "p:quantifiers-basic",
+      "p:que-opinas-de"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "dialogue",
+    "unit": "u35",
+    "theme": "opinion",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0024",
+    "es": "Para Hernando, la moda es tonta.",
+    "en": "For Hernando, fashion is silly.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:moda",
+      "l:ser",
+      "l:tonto",
+      "p:para-inf"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "opinion",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0025",
+    "es": "Para ser martes, hay poca gente en el café.",
+    "en": "For a Tuesday, there are few people at the café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:hay",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "g:ser-identity",
+      "l:café",
+      "l:gente",
+      "l:martes",
+      "l:ser",
+      "p:days-el-lunes",
+      "p:la-gente-singular",
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:poco-un-poco",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "comparison",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0026",
+    "es": "Para ser un animal, Simón habla mucho.",
+    "en": "For an animal, Simón talks a lot.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:ser-identity",
+      "l:animal",
+      "l:hablar",
+      "l:ser",
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "comparison",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0027",
+    "es": "Para ser joven, Mariana trabaja mucho.",
+    "en": "For someone young, Mariana works a lot.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "g:ser-identity",
+      "l:joven",
+      "l:ser",
+      "l:trabajar",
+      "p:es-tiene-lleva",
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "comparison",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0028",
+    "es": "Para ser octubre, hace mucho calor.",
+    "en": "For October, it's very hot.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "g:ser-identity",
+      "l:calor",
+      "l:hacer",
+      "l:octubre",
+      "l:ser",
+      "p:hace-frio",
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "comparison",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0029",
+    "es": "¿Es caro para ser un café pequeño?",
+    "en": "Is it expensive for a small café?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:café",
+      "l:caro",
+      "l:pequeño",
+      "l:ser",
+      "p:para-inf",
+      "p:para-inf-purpose"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "question",
+    "unit": "u35",
+    "theme": "comparison",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0030",
+    "es": "Este jugo está muy rico.\nSí, para ser barato, está muy bueno.",
+    "en": "This juice is very tasty.\nYes, for a cheap one, it's very good.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:que-rico",
+      "g:estar-location-states",
+      "g:ser-identity",
+      "l:barato",
+      "l:bueno",
+      "l:estar",
+      "l:jugo",
+      "l:rico",
+      "l:ser",
+      "p:demonstratives-basic",
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "dialogue",
+    "unit": "u35",
+    "theme": "comparison",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-por-para-2-0031",
+    "es": "Para ser domingo, el tráfico está horrible.",
+    "en": "For a Sunday, the traffic is horrible.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:domingo",
+      "l:estar",
+      "l:horrible",
+      "l:ser",
+      "l:tráfico",
+      "p:days-el-lunes",
+      "p:para-inf",
+      "p:para-inf-purpose"
+    ],
+    "targets": [
+      "g:por-para-2"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "comparison",
+    "source": "gen"
+  }
+]

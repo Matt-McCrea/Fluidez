@@ -7,6 +7,8 @@
 // are skipped and card runs end early.
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import type { Block, Mode } from '../../compiler';
+import type { PracticeSpec } from '../session/practice-spec';
+import type { SavedSession } from '../store/ui';
 import { BlockView } from '../blocks';
 import { Close } from '../blocks/writing';
 import { Continue } from '../components/card';
@@ -15,14 +17,22 @@ import { useApp } from '../context';
 import { compilePlan, SessionRunner, softBlock, STOP_AFTER_MINUTES, truncatable } from '../session/runner';
 import { offerMore } from '../session/more';
 
-export function Session({ mode, onExit, onAnother, capMinutes }: { mode: Mode; onExit: () => void; onAnother: () => void; capMinutes?: number }) {
+export function Session({ mode, onExit, onAnother, capMinutes, resume, onPractise }: {
+  mode: Mode; onExit: () => void; onAnother: () => void; capMinutes?: number; resume?: SavedSession; onPractise?: (spec: PracticeSpec) => void;
+}) {
   const app = useApp();
   const runner = useMemo(() => {
+    if (resume) return SessionRunner.resume(app.learner, app.bundle, app.ui, resume, app.now);
     const plan = compilePlan(app.learner, app.bundle, app.ui, { mode, now: app.now() });
     return new SessionRunner(app.learner, app.bundle, app.ui, plan, app.now, { capMinutes: capMinutes ? Math.min(capMinutes, plan.budget.minutes) : undefined });
   }, []);
   const plan = runner.plan;
-  const [idx, setIdx] = useState(0);
+  const [idx, setIdx] = useState(resume ? Math.min(resume.block, plan.blocks.length - 1) : 0);
+  const idxRef = useRef(idx);
+  /** the saved cursor, handed to the saved block once and then dropped */
+  const resumeAt = useRef(resume ? { block: idx, cursor: resume.cursor } : undefined);
+  const settled = useRef(false);
+  const saveTimer = useRef<number | undefined>(undefined);
   const [leaving, setLeaving] = useState(false);
   const [more, setMore] = useState(false);
   const [finishing, setFinishing] = useState(false);
@@ -35,8 +45,38 @@ export function Session({ mode, onExit, onAnother, capMinutes }: { mode: Mode; o
   const advancing = useRef<number | null>(null);
   const block = plan.blocks[idx];
 
-  useEffect(() => { runner.start(); return runner.onProgress(() => setTick((n) => n + 1)); }, []);
+  /** write the resume point now (the session is still open) */
+  const persist = async () => {
+    window.clearTimeout(saveTimer.current);
+    if (settled.current || runner.finished) return;
+    const at = app.now();
+    const elapsedMs = runner.elapsed() * 60_000;
+    await app.ui.saveSession({
+      version: 1, learnerId: app.ui.state.learnerId, sessionIndex: app.learner.sessionIndex, mode: resume?.mode ?? mode, tier: plan.tier,
+      capMinutes: runner.capMinutes, startedAt: at - elapsedMs, elapsedMs, savedAt: at,
+      plan, block: idxRef.current, cursor: runner.cursor, runner: runner.snapshot(),
+    });
+  };
+  const scheduleSave = () => {
+    window.clearTimeout(saveTimer.current);
+    saveTimer.current = window.setTimeout(() => void persist(), 300);
+  };
   useEffect(() => {
+    runner.start();
+    const off = runner.onProgress(() => { setTick((n) => n + 1); scheduleSave(); });
+    const away = () => { if (document.visibilityState === 'hidden') void persist(); };
+    document.addEventListener('visibilitychange', away);
+    window.addEventListener('pagehide', away);
+    return () => {
+      off();
+      window.clearTimeout(saveTimer.current);
+      document.removeEventListener('visibilitychange', away);
+      window.removeEventListener('pagehide', away);
+    };
+  }, []);
+  useEffect(() => {
+    idxRef.current = idx;
+    scheduleSave();
     openedAt.current = app.now();
     if (block && block.kind !== 'close') {
       if (truncatable(block)) runner.enter(block);
@@ -53,6 +93,8 @@ export function Session({ mode, onExit, onAnother, capMinutes }: { mode: Mode; o
 
   const closeIdx = plan.blocks.findIndex((b) => b.kind === 'close');
   const toClose = async () => {
+    settled.current = true;
+    window.clearTimeout(saveTimer.current);
     setFinishing(true);
     await runner.finish();
     setMore(offerMore(app.learner, app.bundle, app.ui, app.now()));
@@ -78,6 +120,8 @@ export function Session({ mode, onExit, onAnother, capMinutes }: { mode: Mode; o
       // stop here: if only optional blocks are left the core is done and counts in full
       const left = rest(n);
       if (left.every(softBlock)) { left.forEach((b) => runner.skip(b)); await toClose(); return; }
+      settled.current = true;
+      window.clearTimeout(saveTimer.current);
       setFinishing(true);
       await runner.stop();
       setFinishing(false);
@@ -86,10 +130,13 @@ export function Session({ mode, onExit, onAnother, capMinutes }: { mode: Mode; o
       return;
     }
     if (n >= plan.blocks.length || plan.blocks[n].kind === 'close') { await toClose(); return; }
+    resumeAt.current = undefined;
+    idxRef.current = n;
+    runner.setCursor({});
     setIdx(n);
   };
 
-  const leave = async () => { await runner.abandon(); onExit(); };
+  const leave = async () => { await persist(); await runner.abandon({ keepSaved: true }); onExit(); };
   const elapsed = runner.elapsed();
   const left = block && block.kind !== 'close' ? Math.round(runner.minutesLeft(idx, openedAt.current)) : 0;
   const canStop = !runner.finished && !stopAsked && block && block.kind !== 'close' && elapsed >= STOP_AFTER_MINUTES;
@@ -119,9 +166,9 @@ export function Session({ mode, onExit, onAnother, capMinutes }: { mode: Mode; o
       </>
     );
   } else if (block.kind === 'close') {
-    body = <Close block={block} run={runner} ui={app.ui} onDone={onExit} more={more} onMore={onAnother} onHome={onExit} />;
+    body = <Close block={block} run={runner} ui={app.ui} onDone={onExit} more={more} onMore={onAnother} onHome={onExit} onPractise={onPractise} />;
   } else {
-    body = <BlockView key={idx} block={block as Exclude<Block, { kind: 'close' }>} run={runner} ui={app.ui} onDone={() => void next(idx)} />;
+    body = <BlockView key={idx} block={block as Exclude<Block, { kind: 'close' }>} run={runner} ui={app.ui} onDone={() => void next(idx)} resume={resumeAt.current?.block === idx ? resumeAt.current.cursor : undefined} />;
   }
 
   return (

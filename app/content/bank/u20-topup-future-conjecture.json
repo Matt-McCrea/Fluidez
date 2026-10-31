@@ -1,0 +1,764 @@
+[
+  {
+    "id": "u20-t-future-conjecture-0001",
+    "es": "¿Dónde estará Vale hoy?",
+    "en": "Where do you think Vale is today?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:future-promises",
+      "g:questions",
+      "l:dónde",
+      "l:estar",
+      "l:hoy",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "question",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0002",
+    "es": "¿Cuántos años tendrá Mariana?",
+    "en": "How old do you think Mariana is?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:future-promises",
+      "g:questions",
+      "l:año",
+      "l:cuánto",
+      "l:tener",
+      "p:tener-anos"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "question",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0003",
+    "es": "¿Dónde estarán los clientes de siempre?",
+    "en": "Where can the regular customers be?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:future-promises",
+      "g:gender-articles",
+      "g:questions",
+      "l:cliente",
+      "l:dónde",
+      "l:estar",
+      "l:siempre",
+      "p:frequency-scale",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "question",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0004",
+    "es": "¿Dónde estará mi celular?",
+    "en": "Where can my phone be?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:future-promises",
+      "g:questions",
+      "l:celular",
+      "l:dónde",
+      "l:estar",
+      "p:possessives-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "question",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0005",
+    "es": "¿Cuántas personas habrá en el parque?",
+    "en": "How many people do you think are in the park?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:questions",
+      "l:cuánto",
+      "l:parque",
+      "l:persona"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "question",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0006",
+    "es": "¿Tendrás hambre ahora?",
+    "en": "Are you probably hungry now? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:future-promises",
+      "l:ahora",
+      "l:hambre",
+      "l:tener",
+      "p:tener-hambre"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "question",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0007",
+    "es": "¿Estará cerca la panadería?",
+    "en": "Is the bakery probably nearby?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:future-promises",
+      "g:gender-articles",
+      "l:cerca",
+      "l:estar",
+      "l:panadería",
+      "p:cerca-de"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "question",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0008",
+    "es": "¿Dónde está Tomás?\nEstará cerca.",
+    "en": "Where is Tomás?\nHe's probably nearby.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:donde-esta",
+      "g:estar-location-states",
+      "g:future-promises",
+      "l:cerca",
+      "l:dónde",
+      "l:estar",
+      "p:cerca-de",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "dialogue",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0009",
+    "es": "¿Qué hora es?\nSerán las siete, más o menos.",
+    "en": "What time is it?\nIt must be about seven, more or less.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:mas-o-menos",
+      "c:que-hora-es",
+      "g:future-promises",
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:hora",
+      "l:qué",
+      "l:ser",
+      "p:telling-time"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "dialogue",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0010",
+    "es": "¿Cuántos años tiene Hernando?\nTendrá setenta años.",
+    "en": "How old is Hernando?\nHe must be seventy.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:future-promises",
+      "g:questions",
+      "g:stem-boot",
+      "l:año",
+      "l:cuánto",
+      "l:tener",
+      "p:tener-anos"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "dialogue",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0011",
+    "es": "¿Dónde estará Simón?\nNo sé, estará cerca.",
+    "en": "Where can Simón be?\nI don't know, he's probably nearby.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:no-se",
+      "g:estar-location-states",
+      "g:future-promises",
+      "g:questions",
+      "g:yo-irregular",
+      "l:cerca",
+      "l:dónde",
+      "l:estar",
+      "l:saber",
+      "p:cerca-de",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "dialogue",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0012",
+    "es": "Tomás tendrá sueño.",
+    "en": "Tomás must be sleepy.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:future-promises",
+      "l:sueño",
+      "l:tener",
+      "p:tener-hambre"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "statement",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0013",
+    "es": "Simón estará cerca.",
+    "en": "Simón is probably nearby.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:future-promises",
+      "l:cerca",
+      "l:estar",
+      "p:cerca-de"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "statement",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0014",
+    "es": "Simón tendrá hambre esta noche.",
+    "en": "Simón must be hungry tonight.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:future-promises",
+      "l:hambre",
+      "l:noche",
+      "l:tener",
+      "p:demonstratives-basic",
+      "p:tener-hambre"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "statement",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0015",
+    "es": "Serán las dos de la tarde.",
+    "en": "It must be about two in the afternoon.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:future-promises",
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:ser",
+      "l:tarde",
+      "p:por-la-manana",
+      "p:telling-time"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "statement",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0016",
+    "es": "Hernando tendrá unos ochenta años.",
+    "en": "Hernando must be about eighty.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:future-promises",
+      "g:gender-articles",
+      "l:año",
+      "l:tener",
+      "p:aproximar-cifras",
+      "p:tener-anos",
+      "p:unos-approx"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "statement",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0017",
+    "es": "Habrá mucha gente en el parque.",
+    "en": "There must be a lot of people in the park.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-states",
+      "l:gente",
+      "l:parque",
+      "p:la-gente-singular",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "statement",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0018",
+    "es": "Hará frío en Toronto.",
+    "en": "It must be cold in Toronto.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:future-promises",
+      "l:frío",
+      "l:hacer",
+      "p:hace-frio"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "statement",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0019",
+    "es": "Hará mucho calor en Cali hoy.",
+    "en": "It must be very hot in Cali today.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:future-promises",
+      "l:calor",
+      "l:hacer",
+      "l:hoy",
+      "p:hace-frio",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "statement",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0020",
+    "es": "Mariana sabrá dónde está Simón.",
+    "en": "Mariana probably knows where Simón is.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:donde-esta",
+      "g:estar-location-states",
+      "g:future-promises",
+      "l:dónde",
+      "l:estar",
+      "l:saber",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "statement",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0021",
+    "es": "Los vecinos sabrán algo.",
+    "en": "The neighbors probably know something.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:future-promises",
+      "g:gender-articles",
+      "l:saber",
+      "l:vecino",
+      "p:indefinites-basic",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "statement",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0022",
+    "es": "Ellos tendrán sueño.",
+    "en": "They must be sleepy.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:future-promises",
+      "l:sueño",
+      "l:tener",
+      "p:tener-hambre"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "statement",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0023",
+    "es": "Ustedes tendrán hambre.",
+    "en": "You all must be hungry.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:future-promises",
+      "l:hambre",
+      "l:tener",
+      "p:tener-hambre"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "statement",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0024",
+    "es": "Tú tendrás frío sin abrigo.",
+    "en": "You must be cold without a coat. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:future-promises",
+      "l:abrigo",
+      "l:frío",
+      "l:tener",
+      "p:con-sin",
+      "p:tener-hambre"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "statement",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0025",
+    "es": "Vale tendrá hambre.",
+    "en": "Vale must be hungry.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:future-promises",
+      "l:hambre",
+      "l:tener",
+      "p:tener-hambre"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "statement",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0026",
+    "es": "Habrá unas veinte personas en la fila.",
+    "en": "There must be about twenty people in the line.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-states",
+      "l:fila",
+      "l:persona",
+      "p:aproximar-cifras",
+      "p:unos-approx"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "statement",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0027",
+    "es": "Hernando tendrá unos setenta años.",
+    "en": "Hernando must be about seventy.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:future-promises",
+      "g:gender-articles",
+      "l:año",
+      "l:tener",
+      "p:aproximar-cifras",
+      "p:tener-anos",
+      "p:unos-approx"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "statement",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0028",
+    "es": "Tendremos sueño mañana.",
+    "en": "We will probably be sleepy tomorrow.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:future-promises",
+      "l:mañana",
+      "l:sueño",
+      "l:tener",
+      "p:tener-hambre"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "statement",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0029",
+    "es": "No tendrá hambre todavía.",
+    "en": "He probably isn't hungry yet.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:future-promises",
+      "l:hambre",
+      "l:tener",
+      "p:tener-hambre",
+      "p:ya-todavia-basic"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "statement",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0030",
+    "es": "Tomás no sabrá dónde está el café.",
+    "en": "Tomás probably doesn't know where the café is.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:donde-esta",
+      "g:estar-location-states",
+      "g:future-promises",
+      "g:gender-articles",
+      "l:café",
+      "l:dónde",
+      "l:estar",
+      "l:saber",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "statement",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0031",
+    "es": "Mariana tendrá unos treinta años.",
+    "en": "Mariana must be about thirty.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:future-promises",
+      "g:gender-articles",
+      "l:año",
+      "l:tener",
+      "p:aproximar-cifras",
+      "p:tener-anos",
+      "p:unos-approx"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "statement",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0032",
+    "es": "Tomás tendrá mucho frío.",
+    "en": "Tomás must be very cold.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:future-promises",
+      "l:frío",
+      "l:tener",
+      "p:quantifiers-basic",
+      "p:tener-hambre"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "statement",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0033",
+    "es": "Aquí hará frío en la noche.",
+    "en": "It must be cold here at night.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:future-promises",
+      "g:gender-articles",
+      "l:aquí",
+      "l:frío",
+      "l:hacer",
+      "l:noche",
+      "p:aqui-ahi-alla",
+      "p:hace-frio",
+      "p:por-la-manana"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "statement",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  },
+  {
+    "id": "u20-t-future-conjecture-0034",
+    "es": "Tendrá razón Vale.",
+    "en": "Vale is probably right.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:future-promises",
+      "l:razón",
+      "l:tener",
+      "p:tener-razon"
+    ],
+    "targets": [
+      "g:future-conjecture"
+    ],
+    "kind": "statement",
+    "unit": "u20",
+    "theme": "guessing at the café",
+    "source": "gen"
+  }
+]

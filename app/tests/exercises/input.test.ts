@@ -240,3 +240,23 @@ describe('features a sentence cannot carry return null, never a bad item', () =>
     expect(structuredInput(byId(id), f)).toBeNull();
   });
 });
+
+describe('read and pick stays inside the taught tenses', () => {
+  const eat = BankSentence.parse({ id: 'eat', es: 'Como pan.', en: 'I eat bread.' });
+  const toronto = BankSentence.parse({ id: 'tor', es: 'Soy de Toronto.', en: "I'm from Toronto." });
+
+  test('no tense minimal pair while only the present is taught', () => {
+    expect(structuredInput(eat, 'tense', { taught: ['presente'] })).toBeNull();
+    expect(structuredInput(eat, 'tense')).not.toBeNull();
+  });
+
+  test('a tense pair appears once a second tense is taught, and only uses taught tenses', () => {
+    const it = structuredInput(eat, 'tense', { taught: ['presente', 'preterito'], seed: 1 });
+    expect(it).not.toBeNull();
+    for (const o of it!.options) expect(o).not.toMatch(/comeré|comería/);
+  });
+
+  test('person items are unaffected by the limit', () => {
+    expect(structuredInput(toronto, 'person', { taught: ['presente'] })).not.toBeUndefined();
+  });
+});

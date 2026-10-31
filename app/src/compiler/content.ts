@@ -250,3 +250,25 @@ export function makeRng(seed: number): Rng {
 export function sessionSeed(learnerId: string, sessionIndex: number): number {
   return hash32(`${learnerId}#${sessionIndex}`);
 }
+
+/**
+ * The ids in `requires` that block admission. An id is satisfied when `has` says
+ * it is known, when it is a lexeme id that is not a graph node (a phantom: the
+ * tagger failed to lemmatise it, nothing can ever teach it), or when a satisfied
+ * chunk in the same list unpacks it. Pure: the compiler and the gate share it.
+ */
+export function unmetRequires(
+  requires: readonly NodeId[], has: (id: NodeId) => boolean, nodes: { has(id: NodeId): boolean; get(id: NodeId): { unpacks?: NodeId } | undefined },
+): NodeId[] {
+  return requires.filter((r) => {
+    if (has(r)) return false;
+    if (r.startsWith('l:') && !nodes.has(r)) return false;
+    return !requires.some((c) => c !== r && has(c) && nodes.get(c)?.unpacks === r);
+  });
+}
+
+export function admissible(
+  requires: readonly NodeId[], has: (id: NodeId) => boolean, nodes: { has(id: NodeId): boolean; get(id: NodeId): { unpacks?: NodeId } | undefined },
+): boolean {
+  return unmetRequires(requires, has, nodes).length === 0;
+}

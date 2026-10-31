@@ -1,0 +1,474 @@
+[
+  {
+    "id": "u15-t-ser-estar-adjectives-0001",
+    "es": "¿Estás cansado hoy?",
+    "en": "Are you tired today? (to a man)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "l:cansado",
+      "l:estar",
+      "l:hoy"
+    ],
+    "targets": [
+      "g:ser-estar-adjectives"
+    ],
+    "kind": "question",
+    "unit": "u15",
+    "theme": "ser or estar",
+    "source": "gen"
+  },
+  {
+    "id": "u15-t-ser-estar-adjectives-0002",
+    "es": "¿Tu hermano es tranquilo?",
+    "en": "Is your brother a calm person?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tranquilo",
+      "g:ser-identity",
+      "l:hermano",
+      "l:ser",
+      "l:tranquilo",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:ser-estar-adjectives"
+    ],
+    "kind": "question",
+    "unit": "u15",
+    "theme": "ser or estar",
+    "source": "gen"
+  },
+  {
+    "id": "u15-t-ser-estar-adjectives-0003",
+    "es": "¿Cómo está la sopa?",
+    "en": "How is the soup?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:como-estas",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:cómo",
+      "l:estar",
+      "l:sopa",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:ser-estar-adjectives"
+    ],
+    "kind": "question",
+    "unit": "u15",
+    "theme": "ser or estar",
+    "source": "gen"
+  },
+  {
+    "id": "u15-t-ser-estar-adjectives-0004",
+    "es": "¿Estás nervioso?",
+    "en": "Are you nervous? (to a man)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "l:estar",
+      "l:nervioso"
+    ],
+    "targets": [
+      "g:ser-estar-adjectives"
+    ],
+    "kind": "question",
+    "unit": "u15",
+    "theme": "ser or estar",
+    "source": "gen"
+  },
+  {
+    "id": "u15-t-ser-estar-adjectives-0005",
+    "es": "¿Tus papás son simpáticos?",
+    "en": "Are your parents nice?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:ser-identity",
+      "l:papá",
+      "l:ser",
+      "l:simpático",
+      "p:masculine-plural-mixed",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:ser-estar-adjectives"
+    ],
+    "kind": "question",
+    "unit": "u15",
+    "theme": "ser or estar",
+    "source": "gen"
+  },
+  {
+    "id": "u15-t-ser-estar-adjectives-0006",
+    "es": "¿Estás triste o cansada?",
+    "en": "Are you sad or tired? (to a woman)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "l:cansado",
+      "l:estar",
+      "l:triste"
+    ],
+    "targets": [
+      "g:ser-estar-adjectives"
+    ],
+    "kind": "question",
+    "unit": "u15",
+    "theme": "ser or estar",
+    "source": "gen"
+  },
+  {
+    "id": "u15-t-ser-estar-adjectives-0007",
+    "es": "¿Eres una persona nerviosa?",
+    "en": "Are you a nervous person?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:nervioso",
+      "l:persona",
+      "l:ser"
+    ],
+    "targets": [
+      "g:ser-estar-adjectives"
+    ],
+    "kind": "question",
+    "unit": "u15",
+    "theme": "ser or estar",
+    "source": "gen"
+  },
+  {
+    "id": "u15-t-ser-estar-adjectives-0008",
+    "es": "¿Está lista la cuenta?",
+    "en": "Is the bill ready?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:la-cuenta",
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "l:cuenta",
+      "l:estar",
+      "l:listo"
+    ],
+    "targets": [
+      "g:ser-estar-adjectives"
+    ],
+    "kind": "question",
+    "unit": "u15",
+    "theme": "ser or estar",
+    "source": "gen"
+  },
+  {
+    "id": "u15-t-ser-estar-adjectives-0009",
+    "es": "Rosa era muy lista.",
+    "en": "Rosa was very clever.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:era",
+      "g:adjective-agreement",
+      "g:imperfect-states",
+      "g:ser-identity",
+      "l:listo",
+      "l:ser",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:ser-estar-adjectives"
+    ],
+    "kind": "statement",
+    "unit": "u15",
+    "theme": "ser or estar",
+    "source": "gen"
+  },
+  {
+    "id": "u15-t-ser-estar-adjectives-0010",
+    "es": "Vale es muy seria, pero hoy está alegre.",
+    "en": "Vale is very serious, but today she's cheerful.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "g:ser-identity",
+      "l:alegre",
+      "l:estar",
+      "l:hoy",
+      "l:ser",
+      "l:serio",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:ser-estar-adjectives"
+    ],
+    "kind": "statement",
+    "unit": "u15",
+    "theme": "ser or estar",
+    "source": "gen"
+  },
+  {
+    "id": "u15-t-ser-estar-adjectives-0011",
+    "es": "El jugo está rico.",
+    "en": "The juice is delicious.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:estar",
+      "l:jugo",
+      "l:rico"
+    ],
+    "targets": [
+      "g:ser-estar-adjectives"
+    ],
+    "kind": "statement",
+    "unit": "u15",
+    "theme": "ser or estar",
+    "source": "gen"
+  },
+  {
+    "id": "u15-t-ser-estar-adjectives-0012",
+    "es": "Hernando es tranquilo, pero hoy está bravo.",
+    "en": "Hernando is calm, but today he's angry.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tranquilo",
+      "g:estar-location-states",
+      "g:ser-identity",
+      "l:bravo",
+      "l:estar",
+      "l:hoy",
+      "l:ser",
+      "l:tranquilo"
+    ],
+    "targets": [
+      "g:ser-estar-adjectives"
+    ],
+    "kind": "statement",
+    "unit": "u15",
+    "theme": "ser or estar",
+    "source": "gen"
+  },
+  {
+    "id": "u15-t-ser-estar-adjectives-0013",
+    "es": "Mi hermana está enferma y tiene fiebre.",
+    "en": "My sister is ill and has a fever.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "g:stem-boot",
+      "l:enfermo",
+      "l:estar",
+      "l:fiebre",
+      "l:hermana",
+      "l:tener",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:ser-estar-adjectives"
+    ],
+    "kind": "statement",
+    "unit": "u15",
+    "theme": "ser or estar",
+    "source": "gen"
+  },
+  {
+    "id": "u15-t-ser-estar-adjectives-0014",
+    "es": "La leche está mala hoy.",
+    "en": "The milk has gone off today.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:estar",
+      "l:hoy",
+      "l:leche",
+      "l:mala"
+    ],
+    "targets": [
+      "g:ser-estar-adjectives"
+    ],
+    "kind": "statement",
+    "unit": "u15",
+    "theme": "ser or estar",
+    "source": "gen"
+  },
+  {
+    "id": "u15-t-ser-estar-adjectives-0015",
+    "es": "Mariana está lista para salir.",
+    "en": "Mariana is ready to go out.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "l:estar",
+      "l:listo",
+      "l:salir",
+      "p:para-inf",
+      "p:para-inf-purpose"
+    ],
+    "targets": [
+      "g:ser-estar-adjectives"
+    ],
+    "kind": "statement",
+    "unit": "u15",
+    "theme": "ser or estar",
+    "source": "gen"
+  },
+  {
+    "id": "u15-t-ser-estar-adjectives-0016",
+    "es": "Simón es muy nervioso.",
+    "en": "Simón is a very nervous bird.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:nervioso",
+      "l:ser",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:ser-estar-adjectives"
+    ],
+    "kind": "statement",
+    "unit": "u15",
+    "theme": "ser or estar",
+    "source": "gen"
+  },
+  {
+    "id": "u15-t-ser-estar-adjectives-0017",
+    "es": "Hoy Tomás está muy cansado, pero Vale está tranquila.",
+    "en": "Today Tomás is very tired, but Vale is calm.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tranquilo",
+      "g:estar-location-states",
+      "l:cansado",
+      "l:estar",
+      "l:hoy",
+      "l:tranquilo",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:ser-estar-adjectives"
+    ],
+    "kind": "statement",
+    "unit": "u15",
+    "theme": "ser or estar",
+    "source": "gen"
+  },
+  {
+    "id": "u15-t-ser-estar-adjectives-0018",
+    "es": "¿Te pasa algo?\nEstoy nerviosa.",
+    "en": "Is something wrong?\nI'm nervous. (a woman speaking)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:te-pasa-algo",
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "l:estar",
+      "l:nervioso",
+      "l:pasar"
+    ],
+    "targets": [
+      "g:ser-estar-adjectives"
+    ],
+    "kind": "dialogue",
+    "unit": "u15",
+    "theme": "ser or estar",
+    "source": "gen"
+  },
+  {
+    "id": "u15-t-ser-estar-adjectives-0019",
+    "es": "¿Cómo está el café?\nEstá muy rico.",
+    "en": "How is the coffee?\nIt's really delicious.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:como-estas",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:café",
+      "l:cómo",
+      "l:estar",
+      "l:rico",
+      "p:quantifiers-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:ser-estar-adjectives"
+    ],
+    "kind": "dialogue",
+    "unit": "u15",
+    "theme": "ser or estar",
+    "source": "gen"
+  },
+  {
+    "id": "u15-t-ser-estar-adjectives-0020",
+    "es": "¿Está tranquila Vale?\nNo, hoy está brava.",
+    "en": "Is Vale calm?\nNo, today she's angry.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tranquilo",
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "l:bravo",
+      "l:estar",
+      "l:hoy",
+      "l:tranquilo"
+    ],
+    "targets": [
+      "g:ser-estar-adjectives"
+    ],
+    "kind": "dialogue",
+    "unit": "u15",
+    "theme": "ser or estar",
+    "source": "gen"
+  },
+  {
+    "id": "u15-t-ser-estar-adjectives-0021",
+    "es": "Mis amigos son muy simpáticos.",
+    "en": "My friends are very nice.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:ser-identity",
+      "l:amigo",
+      "l:ser",
+      "l:simpático",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:ser-estar-adjectives"
+    ],
+    "kind": "statement",
+    "unit": "u15",
+    "theme": "ser or estar",
+    "source": "gen"
+  }
+]

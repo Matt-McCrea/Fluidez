@@ -5,7 +5,7 @@ import { accentLint, dialectLint, splitSentences, tagSentence, lemmatize, lexEnt
 import { answerForms, checkWriting, type Constraint } from '../../src/check';
 import { extractSpanish, type EsString } from './extract';
 import { clip, type Finding } from './findings';
-import type { Curriculum, Loaded } from './load';
+import { lateRequires, type Curriculum, type Loaded } from './load';
 import { computeDaySupply, computeSceneSupply, computeWritingSupply, MIN } from '../supply/day-supply-core';
 
 export interface RunState {
@@ -254,7 +254,10 @@ export function checkBank(st: RunState, f: Loaded, fix: boolean): unknown[] | nu
       if (!want.includes(t)) {
         // targets are author intent: a pattern or contrast (matched heuristically, or never), or a
         // node no tagger feature maps to (g:sounds-letters), only warns
-        const sev = t.startsWith('p:') || t.startsWith('x:') || !producible(st, t) ? 'warning' : st.cur.graphIds.has(t) || !st.cur.graphIds.size ? 'error' : 'warning';
+        // a chunk the tagger matched in the sentence can swallow the target's own feature
+        // (c:ojala hides subj.ojala.past), so a row that contains a chunk only warns
+        const masked = want.some((x) => x.startsWith('c:'));
+        const sev = masked || t.startsWith('p:') || t.startsWith('x:') || !producible(st, t) ? 'warning' : st.cur.graphIds.has(t) || !st.cur.graphIds.size ? 'error' : 'warning';
         st.findings.push({ severity: sev, check: 'requires', file: f.rel, path: `[${i}].targets`, problem: `target ${t} is not in what "${clip(b.es, 50)}" actually contains (${want.filter((x) => !x.startsWith('l:')).join(' ') || 'no grammar nodes'})`, fix: 'rewrite the sentence so it uses the target, or fix targets' });
       }
     }
@@ -550,13 +553,7 @@ export function scheduleCheck(st: RunState, loaded: Loaded[], only: Set<string> 
   const scenes = new Map(loaded.filter((f) => f.kind === 'scene' && f.ok).map((f) => [(f.data as Scene).id, { s: f.data as Scene, rel: f.rel }]));
   const chapters = new Map(loaded.filter((f) => f.kind === 'story' && f.ok).map((f) => [(f.data as StoryChapter).id, { s: f.data as StoryChapter, rel: f.rel }]));
   const tasks = loaded.filter((f) => f.kind === 'writing' && f.ok).flatMap((f) => (f.data as WritingTask[]).map((t) => ({ t, rel: f.rel })));
-  const late = (requires: string[], session: number) => requires.filter((r) => {
-    if (r.startsWith('l:')) return false;
-    const n = cur.nodes.get(r);
-    if (!n || n.kind === 'lexeme') return false;
-    const at = cur.taughtAt.get(r);
-    return at !== undefined && at > session;
-  });
+  const late = (requires: string[], session: number) => lateRequires(cur, requires, session);
   for (const u of cur.units) {
     if (only && !only.has(u.id)) continue;
     u.days.forEach((d, i) => {
@@ -569,16 +566,18 @@ export function scheduleCheck(st: RunState, loaded: Loaded[], only: Set<string> 
       if (d.scene && scenes.has(d.scene)) { const x = scenes.get(d.scene)!; const bad = late(x.s.requires, session); if (bad.length) report('scene', d.scene, x.rel, bad); }
       if (d.chapter && chapters.has(d.chapter)) { const x = chapters.get(d.chapter)!; const bad = late(x.s.requires ?? [], session); if (bad.length) report('chapter', d.chapter, x.rel, bad); }
     });
-    for (const { t, rel } of tasks) {
-      if (t.unit !== u.id || !t.focus) continue;
-      const i = u.days.findIndex((d) => d.focus.includes(t.focus!));
-      if (i < 0) continue;
-      const bad = late(t.requires, cur.daySession.get(`${u.id}#${i}`)!);
-      if (bad.length) st.findings.push({
-        severity: st.strict ? 'error' : 'warning', check: 'schedule', file: rel, path: `${t.id}`,
-        problem: `task ${t.id} focuses ${t.focus} (first day ${i + 1}) but requires ${bad.join(', ')}, taught later`,
-        fix: 'rewrite the task to use only what is taught by its focus day',
-      });
-    }
+    // writing: a day that serves a task (output, drill, checkpoint) needs one admissible by its session
+    const mine = tasks.filter((x) => x.t.unit === u.id);
+    const dry: number[] = [];
+    if (mine.length) u.days.forEach((d, i) => {
+      if (!['output', 'drill', 'checkpoint'].includes(d.type)) return;
+      const session = cur.daySession.get(`${u.id}#${i}`)!;
+      if (!mine.some((x) => !late(x.t.requires, session).length)) dry.push(i + 1);
+    });
+    if (dry.length) st.findings.push({
+      severity: st.strict ? 'error' : 'warning', check: 'schedule', file: `content/units/${u.id}.json`, path: `${u.id} day ${dry.join(', ')}`,
+      problem: `no writing task of ${u.id} is admissible by the session of day ${dry.join(', ')} (${mine.length} task(s) in the unit)`,
+      fix: `add or rewrite a ${u.id} writing task that uses only what is taught by day ${dry[0]}`,
+    });
   }
 }

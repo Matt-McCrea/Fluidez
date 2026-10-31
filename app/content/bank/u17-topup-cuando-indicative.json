@@ -1,0 +1,1149 @@
+[
+  {
+    "id": "u17-t-cuando-indicative-0001",
+    "es": "Cuando era niño, vivía en Medellín.",
+    "en": "When I was a boy, I lived in Medellín.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:cuando-era-nino",
+      "c:era",
+      "g:imperfect-habitual",
+      "g:imperfect-states",
+      "l:niño",
+      "l:ser",
+      "l:vivir"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "childhood and memories",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0002",
+    "es": "¿Dónde vivías cuando eras niño?",
+    "en": "Where did you live when you were a boy? (to a man, informal)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "g:imperfect-states",
+      "g:questions",
+      "g:ser-identity",
+      "l:dónde",
+      "l:niño",
+      "l:ser",
+      "l:vivir",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "question",
+    "unit": "u17",
+    "theme": "childhood and memories",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0003",
+    "es": "Cuando éramos niñas, Vale y yo cantábamos en el carro.",
+    "en": "When we were girls, Vale and I sang in the car. (a woman speaking)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:imperfect-states",
+      "g:ser-identity",
+      "l:cantar",
+      "l:carro",
+      "l:niña",
+      "l:ser",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "childhood and memories",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0004",
+    "es": "¿Qué hacías cuando eras niña?",
+    "en": "What did you do when you were a girl? (to a woman, informal)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-states",
+      "g:questions",
+      "g:ser-identity",
+      "l:hacia",
+      "l:niña",
+      "l:qué",
+      "l:ser",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "question",
+    "unit": "u17",
+    "theme": "childhood and memories",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0005",
+    "es": "Cuando era niña, mi abuela hacía ajiaco los domingos.",
+    "en": "When I was a girl, my grandmother made ajiaco on Sundays. (a woman speaking)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:era",
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:imperfect-states",
+      "g:ser-identity",
+      "l:abuela",
+      "l:ajiaco",
+      "l:domingo",
+      "l:hacer",
+      "l:niña",
+      "l:ser",
+      "p:cuando-basic",
+      "p:days-el-lunes",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "childhood and memories",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0006",
+    "es": "Cuando mis padres llegaban, yo ya estaba dormido.",
+    "en": "When my parents arrived, I was already asleep. (a man speaking)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:imperfect-habitual",
+      "g:imperfect-states",
+      "l:dormir",
+      "l:estar",
+      "l:llegar",
+      "l:padres",
+      "p:cuando-basic",
+      "p:masculine-plural-mixed",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "childhood and memories",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0007",
+    "es": "¿Tus padres vivían contigo cuando eras niño?",
+    "en": "Did your parents live with you when you were a boy? (to a man, informal)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "g:imperfect-states",
+      "g:prep-pronouns",
+      "g:ser-identity",
+      "l:niño",
+      "l:padres",
+      "l:ser",
+      "l:vivir",
+      "p:cuando-basic",
+      "p:masculine-plural-mixed",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "question",
+    "unit": "u17",
+    "theme": "childhood and memories",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0008",
+    "es": "Cuando mi abuelo trabajaba, siempre cantaba.",
+    "en": "When my grandfather worked, he always sang.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "l:abuelo",
+      "l:cantar",
+      "l:siempre",
+      "l:trabajar",
+      "p:cuando-basic",
+      "p:frequency-scale",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "childhood and memories",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0009",
+    "es": "Siempre que mis padres venían, mi abuela cocinaba.",
+    "en": "Whenever my parents came, my grandmother cooked.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "l:abuela",
+      "l:cocinar",
+      "l:padres",
+      "l:siempre",
+      "l:venir",
+      "p:frequency-scale",
+      "p:masculine-plural-mixed",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "childhood and memories",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0010",
+    "es": "Cuando era joven, no tenía celular.",
+    "en": "When I was young, I didn't have a cell phone.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:era",
+      "g:imperfect-states",
+      "g:ser-identity",
+      "l:celular",
+      "l:joven",
+      "l:ser",
+      "l:tener",
+      "p:cuando-basic",
+      "p:es-tiene-lleva"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "childhood and memories",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0011",
+    "es": "¿Dónde vivías cuando eras niña?\nEn Cali, con mis padres.",
+    "en": "Where did you live when you were a girl? (to a woman, informal)\nIn Cali, with my parents.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "g:imperfect-states",
+      "g:questions",
+      "g:ser-identity",
+      "l:dónde",
+      "l:niña",
+      "l:padres",
+      "l:ser",
+      "l:vivir",
+      "p:cuando-basic",
+      "p:masculine-plural-mixed",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "dialogue",
+    "unit": "u17",
+    "theme": "childhood and memories",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0012",
+    "es": "Cuando llegué a Bogotá, no conocía a nadie.",
+    "en": "When I got to Bogotá, I didn't know anyone.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "g:negation-words",
+      "g:pret-vs-imperfect",
+      "g:preterite-spelling-stem",
+      "l:conocer",
+      "l:llegar",
+      "p:cuando-basic",
+      "p:personal-a",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "arrivals and moments",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0013",
+    "es": "Cuando llegamos, Vale ya estaba ahí.",
+    "en": "When we arrived, Vale was already there.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:imperfect-states",
+      "g:present-ar",
+      "l:ahí",
+      "l:estar",
+      "l:llegar",
+      "p:aqui-ahi-alla",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "arrivals and moments",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0014",
+    "es": "Cuando terminó el concierto, fuimos a comer.",
+    "en": "When the concert ended, we went to eat.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:preterite-ar",
+      "g:preterite-ser-ir-hacer",
+      "l:comer",
+      "l:concierto",
+      "l:ir",
+      "l:terminar",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "arrivals and moments",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0015",
+    "es": "¿Qué hiciste cuando llegaste a casa?",
+    "en": "What did you do when you got home? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:que-hiciste",
+      "g:preterite-ar",
+      "g:preterite-ser-ir-hacer",
+      "l:casa",
+      "l:hacer",
+      "l:llegar",
+      "l:qué",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "question",
+    "unit": "u17",
+    "theme": "arrivals and moments",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0016",
+    "es": "¿Qué hizo usted cuando terminó la función?",
+    "en": "What did you do when the show ended? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:preterite-ser-ir-hacer",
+      "g:questions",
+      "l:función",
+      "l:hacer",
+      "l:qué",
+      "l:terminar",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "question",
+    "unit": "u17",
+    "theme": "arrivals and moments",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0017",
+    "es": "Cuando Rosa murió, Hernando vendió el taxi.",
+    "en": "When Rosa died, Hernando sold the taxi.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "g:preterite-spelling-stem",
+      "l:morir",
+      "l:taxi",
+      "l:vender",
+      "p:cuando-basic",
+      "p:naci-en"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "arrivals and moments",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0018",
+    "es": "Cuando compré las boletas, Tomás estaba conmigo.",
+    "en": "When I bought the tickets, Tomás was with me.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:compre-trabaje",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:prep-pronouns",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "l:boleta",
+      "l:comprar",
+      "l:estar",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "arrivals and moments",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0019",
+    "es": "Cuando llamé a Tomás, estaba en el estadio.",
+    "en": "When I called Tomás, he was at the stadium.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "l:estadio",
+      "l:estar",
+      "l:llamar",
+      "p:cuando-basic",
+      "p:personal-a"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "arrivals and moments",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0020",
+    "es": "Cuando salí de la oficina, llovía.",
+    "en": "When I left the office, it was raining.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:pret-vs-imperfect",
+      "g:preterite-er-ir",
+      "l:llover",
+      "l:oficina",
+      "l:salir",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "arrivals and moments",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0021",
+    "es": "Mientras yo cocinaba, Hernando lavaba los platos.",
+    "en": "While I was cooking, Hernando was washing the dishes.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "l:cocinar",
+      "l:lavar",
+      "l:plato"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "while",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0022",
+    "es": "Mientras Mariana hablaba, yo miraba el celular.",
+    "en": "While Mariana was talking, I was looking at my phone.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "l:celular",
+      "l:hablar",
+      "l:mirar"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "while",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0023",
+    "es": "¿Qué hacías mientras Vale cantaba?",
+    "en": "What were you doing while Vale was singing? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "g:questions",
+      "l:cantar",
+      "l:hacia",
+      "l:qué"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "question",
+    "unit": "u17",
+    "theme": "while",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0024",
+    "es": "Mientras esperábamos, tomamos un tinto.",
+    "en": "While we were waiting, we had a coffee.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:present-ar",
+      "l:esperar",
+      "l:tinto",
+      "l:tomar"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "while",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0025",
+    "es": "Mientras mi abuela dormía, yo leía.",
+    "en": "While my grandmother slept, I was reading.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "l:abuela",
+      "l:dormir",
+      "l:leer",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "while",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0026",
+    "es": "Mientras trabajaba, Simón gritaba en la cocina.",
+    "en": "While I was working, Simón was screaming in the kitchen.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "l:cocina",
+      "l:gritar",
+      "l:trabajar"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "while",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0027",
+    "es": "¿Dónde estabas mientras yo llamaba?\nEstaba en el estadio.",
+    "en": "Where were you while I was calling? (to a friend)\nI was at the stadium.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:imperfect-states",
+      "g:questions",
+      "l:dónde",
+      "l:estadio",
+      "l:estar",
+      "l:llamar"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "dialogue",
+    "unit": "u17",
+    "theme": "while",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0028",
+    "es": "Siempre que llueve, vendemos más tinto.",
+    "en": "Whenever it rains, we sell more coffee.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "g:stem-boot",
+      "l:llover",
+      "l:siempre",
+      "l:tinto",
+      "l:vender",
+      "p:frequency-scale"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "whenever",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0029",
+    "es": "Siempre que llovía, mi abuela hacía chocolate.",
+    "en": "Whenever it rained, my grandmother made hot chocolate.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "l:abuela",
+      "l:chocolate",
+      "l:hacer",
+      "l:llover",
+      "l:siempre",
+      "p:frequency-scale",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "whenever",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0030",
+    "es": "¿Qué haces siempre que tienes tiempo?",
+    "en": "What do you do whenever you have time? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:present-er-ir",
+      "g:questions",
+      "g:stem-boot",
+      "l:hacer",
+      "l:qué",
+      "l:siempre",
+      "l:tener",
+      "l:tiempo",
+      "p:frequency-scale"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "question",
+    "unit": "u17",
+    "theme": "whenever",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0031",
+    "es": "Siempre que hay concierto, salimos tarde.",
+    "en": "Whenever there is a concert, we leave late.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:hay",
+      "g:hay-vs-esta",
+      "g:present-er-ir",
+      "l:concierto",
+      "l:salir",
+      "l:siempre",
+      "l:tarde",
+      "p:frequency-scale"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "whenever",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0032",
+    "es": "Cuando hay partido, Hernando no trabaja.",
+    "en": "When there is a game, Hernando doesn't work.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:hay",
+      "g:hay-vs-esta",
+      "g:present-ar",
+      "l:partido",
+      "l:trabajar"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "whenever",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0033",
+    "es": "Cuando llueve, no salgo de la casa.",
+    "en": "When it rains, I don't leave the house.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:hago-salgo-vengo",
+      "g:gender-articles",
+      "g:stem-boot",
+      "g:yo-irregular",
+      "l:casa",
+      "l:llover",
+      "l:salir",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "whenever",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0034",
+    "es": "¿Qué haces cuando no tienes ganas de salir?",
+    "en": "What do you do when you don't feel like going out? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:present-er-ir",
+      "g:questions",
+      "g:stem-boot",
+      "l:ganas",
+      "l:hacer",
+      "l:qué",
+      "l:salir",
+      "l:tener",
+      "p:cuando-basic",
+      "p:tener-ganas-de"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "question",
+    "unit": "u17",
+    "theme": "whenever",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0035",
+    "es": "Cuando tengo tiempo, voy al estadio.",
+    "en": "When I have time, I go to the stadium.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tengo",
+      "c:voy-vas",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:yo-irregular",
+      "l:estadio",
+      "l:ir",
+      "l:tener",
+      "l:tiempo",
+      "p:cuando-basic",
+      "p:ir-a-venir-de-place"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "whenever",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0036",
+    "es": "¿Cuándo llegaste a Colombia?",
+    "en": "When did you get to Colombia? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:preterite-ar",
+      "g:questions",
+      "l:cuándo",
+      "l:llegar"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "question",
+    "unit": "u17",
+    "theme": "more moments",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0037",
+    "es": "Cuando conocí a Vale, ella trabajaba en un café.",
+    "en": "When I met Vale, she worked at a café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:pret-vs-imperfect",
+      "g:preterite-er-ir",
+      "l:café",
+      "l:conocer",
+      "l:trabajar",
+      "p:cuando-basic",
+      "p:personal-a",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "more moments",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0038",
+    "es": "Cuando Tomás llegó, Mariana ya no estaba.",
+    "en": "When Tomás arrived, Mariana was no longer there.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ya-no",
+      "g:estar-location-states",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "l:estar",
+      "l:llegar",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "more moments",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0039",
+    "es": "¿Qué hacías cuando te llamé?",
+    "en": "What were you doing when I called you? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:preterite-ar",
+      "g:questions",
+      "l:hacia",
+      "l:llamar",
+      "l:qué",
+      "p:cuando-basic",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "question",
+    "unit": "u17",
+    "theme": "more moments",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0040",
+    "es": "Cuando vi el gol, grité.",
+    "en": "When I saw the goal, I shouted.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:preterite-er-ir",
+      "l:gol",
+      "l:gritar",
+      "l:ver",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "more moments",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0041",
+    "es": "Cuando era pequeño, mi papá me llevaba al estadio.",
+    "en": "When I was little, my dad took me to the stadium. (a man speaking)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:era",
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:imperfect-states",
+      "g:reflexive-routine",
+      "g:ser-identity",
+      "l:estadio",
+      "l:llevarse",
+      "l:papá",
+      "l:pequeño",
+      "l:ser",
+      "p:cuando-basic",
+      "p:personal-a",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "more moments",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0042",
+    "es": "Cuando vivíamos en Toronto, siempre hacía frío.",
+    "en": "When we lived in Toronto, it was always cold.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "l:frío",
+      "l:hacer",
+      "l:siempre",
+      "l:vivir",
+      "p:cuando-basic",
+      "p:frequency-scale",
+      "p:hace-frio"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "more moments",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0043",
+    "es": "Mientras Hernando manejaba, yo hablaba con Rosa.",
+    "en": "While Hernando was driving, I was talking with Rosa.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "l:hablar",
+      "l:manejar"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "more moments",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0044",
+    "es": "Siempre que Simón cantaba, todos escuchábamos.",
+    "en": "Whenever Simón sang, we all listened.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "l:cantar",
+      "l:escuchar",
+      "l:siempre",
+      "p:frequency-scale"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "more moments",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0045",
+    "es": "¿Qué hiciste cuando cancelaron la función?\nFui a casa y dormí.",
+    "en": "What did you do when they canceled the show? (to a friend)\nI went home and slept.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:fui",
+      "c:que-hiciste",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:preterite-er-ir",
+      "g:preterite-ser-ir-hacer",
+      "l:cancelar",
+      "l:casa",
+      "l:dormir",
+      "l:función",
+      "l:hacer",
+      "l:ir",
+      "l:qué",
+      "p:cuando-basic",
+      "p:ir-a-venir-de-place"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "dialogue",
+    "unit": "u17",
+    "theme": "more moments",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0046",
+    "es": "Cuando mi mamá llamaba, siempre estaba en el trabajo.",
+    "en": "When my mom called, I was always at work.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:imperfect-states",
+      "l:estar",
+      "l:llamar",
+      "l:mamá",
+      "l:siempre",
+      "l:trabajo",
+      "p:cuando-basic",
+      "p:frequency-scale",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "more moments",
+    "source": "gen"
+  },
+  {
+    "id": "u17-t-cuando-indicative-0047",
+    "es": "Siempre que podíamos, íbamos a la discoteca.",
+    "en": "Whenever we could, we went to the nightclub.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "l:discoteca",
+      "l:ir",
+      "l:poder",
+      "l:siempre",
+      "p:frequency-scale",
+      "p:ir-a-venir-de-place"
+    ],
+    "targets": [
+      "g:cuando-indicative"
+    ],
+    "kind": "statement",
+    "unit": "u17",
+    "theme": "more moments",
+    "source": "gen"
+  }
+]

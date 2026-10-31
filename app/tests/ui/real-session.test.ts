@@ -3,6 +3,7 @@
 // runs on for long, and session 1 teaches at most 8 new words and phrases.
 import { beforeAll, describe, expect, it } from 'vitest';
 import { budget } from '../../src/compiler';
+import { analyzeToken } from '../../src/engine';
 import { Learner, MemoryStore } from '../../src/learner';
 import type { Bundle } from '../../src/ui/data/bundle';
 import { ContentLoader } from '../../src/ui/data/loader';
@@ -54,6 +55,20 @@ describe('a fresh learner, sessions 1 to 3, real content', () => {
         // format variety
         const run = longestRun(r.walk.screens);
         expect(run.n, `${label}: ${run.n} × ${run.at} in a row`).toBeLessThanOrEqual(MAX_RUN);
+        if (k === 2) {
+          // day 2: only the present is taught, so no option may be a future or conditional form
+          for (const c of r.walk.cards) {
+            if (c.type !== 'mcq') continue;
+            for (const o of c.options) {
+              if (o.lang !== 'es') continue;
+              for (const w of o.text.match(/[\p{L}]+/gu) ?? []) {
+                const odd = analyzeToken(w).filter((x) => x.tense === 'futuro' || x.tense === 'condicional');
+                const plain = analyzeToken(w).some((x) => x.tense !== 'futuro' && x.tense !== 'condicional');
+                expect(odd.length && !plain ? w : '', `${label}: "${o.text}" in ${c.key}`).toBe('');
+              }
+            }
+          }
+        }
         if (k === 1) {
           const learnPool = r.plan.newNodes.chunks.length + r.plan.newNodes.lexemes.length + r.plan.newNodes.patterns.length + r.plan.newNodes.contrasts.length;
           expect(learnPool, label).toBeLessThanOrEqual(budget.EARLY_NEW_ITEMS_MAX);

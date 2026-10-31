@@ -1,0 +1,708 @@
+[
+  {
+    "id": "u26-t-time-sequence-0001",
+    "es": "Ese día Hernando estaba solo en el café.",
+    "en": "That day Hernando was alone in the café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "l:café",
+      "l:día",
+      "l:estar"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "statement",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0002",
+    "es": "Esa mañana llovía mucho en Altamira.",
+    "en": "That morning it was raining hard in Altamira.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:imperfect-habitual",
+      "l:llover",
+      "l:mañana",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "statement",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0003",
+    "es": "En ese momento entró un cliente.",
+    "en": "At that moment a customer came in.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:cliente",
+      "l:entrar",
+      "l:momento"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "statement",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0004",
+    "es": "Al principio nadie entendía nada.",
+    "en": "At first nobody understood anything.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "l:entender",
+      "l:principio"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "statement",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0005",
+    "es": "Primero desayuné y luego salí.",
+    "en": "First I had breakfast and then I went out.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:preterite-ar",
+      "g:preterite-er-ir",
+      "l:desayunar",
+      "l:salir",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "statement",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0006",
+    "es": "Esa noche Tomás no durmió.",
+    "en": "That night Tomás didn't sleep.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:preterite-spelling-stem",
+      "l:dormir",
+      "l:noche"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "statement",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0007",
+    "es": "Al final, Vale pagó el tinto.",
+    "en": "In the end, Vale paid for the coffee.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:al-final",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:final",
+      "l:pagar",
+      "l:tinto"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "statement",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0008",
+    "es": "Desde ese día, Simón no habló más.",
+    "en": "From that day on, Simón didn't speak anymore.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:preterite-ar",
+      "l:día",
+      "l:hablar"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "statement",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0009",
+    "es": "Primero llegó Rosa y después llegué yo.",
+    "en": "First Rosa arrived and then I arrived.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:preterite-ar",
+      "g:preterite-spelling-stem",
+      "l:después",
+      "l:llegar",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "statement",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0010",
+    "es": "Ese año hacía mucho calor.",
+    "en": "That year it was very hot.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:imperfect-habitual",
+      "l:año",
+      "l:calor",
+      "l:hacer",
+      "p:hace-frio",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "statement",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0011",
+    "es": "¿Y qué hiciste ese día?\nPrimero llamé a Vale.",
+    "en": "And what did you do that day?\nFirst I called Vale.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:que-hiciste",
+      "c:y-que-paso",
+      "g:demonstratives",
+      "g:preterite-ar",
+      "g:preterite-ser-ir-hacer",
+      "l:día",
+      "l:hacer",
+      "l:llamar",
+      "l:qué",
+      "p:personal-a",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "dialogue",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0012",
+    "es": "¿Qué pasó esa noche?\nAl principio nada, pero luego llegó el senador.",
+    "en": "What happened that night?\nAt first nothing, but then the senator arrived.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:preterite-ar",
+      "g:questions",
+      "l:llegar",
+      "l:nadar",
+      "l:noche",
+      "l:pasar",
+      "l:principio",
+      "l:qué",
+      "l:senador",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "dialogue",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0013",
+    "es": "¿Qué hiciste primero esta mañana?",
+    "en": "What did you do first this morning?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:que-hiciste",
+      "g:preterite-ser-ir-hacer",
+      "l:hacer",
+      "l:mañana",
+      "l:qué",
+      "p:demonstratives-basic",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "question",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0014",
+    "es": "¿Y entonces qué hiciste ese día?",
+    "en": "And then what did you do that day?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:entonces-bueno",
+      "c:que-hiciste",
+      "c:y-que-paso",
+      "g:demonstratives",
+      "g:preterite-ser-ir-hacer",
+      "l:día",
+      "l:hacer",
+      "l:qué"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "question",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0015",
+    "es": "¿Qué hiciste después del trabajo ayer?",
+    "en": "What did you do after work yesterday?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ayer-anoche",
+      "c:que-hiciste",
+      "g:gender-articles",
+      "g:preterite-ser-ir-hacer",
+      "l:ayer",
+      "l:después",
+      "l:hacer",
+      "l:qué",
+      "l:trabajo",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "question",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0016",
+    "es": "¿Qué hiciste al final de la semana?",
+    "en": "What did you do at the end of the week?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:que-hiciste",
+      "g:gender-articles",
+      "g:preterite-ser-ir-hacer",
+      "l:final",
+      "l:hacer",
+      "l:qué",
+      "l:semana",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "question",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0017",
+    "es": "¿Dónde estabas en ese momento?",
+    "en": "Where were you at that moment?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:estar-location-states",
+      "g:imperfect-states",
+      "g:questions",
+      "l:dónde",
+      "l:estar",
+      "l:momento"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "question",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0018",
+    "es": "¿Qué hiciste esa noche?",
+    "en": "What did you do that night?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:que-hiciste",
+      "g:demonstratives",
+      "g:preterite-ser-ir-hacer",
+      "l:hacer",
+      "l:noche",
+      "l:qué"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "question",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0019",
+    "es": "¿Qué querías hacer al principio?",
+    "en": "What did you want to do at first?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:questions",
+      "g:verb-infinitive",
+      "l:hacer",
+      "l:principio",
+      "l:querer",
+      "l:qué"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "question",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0020",
+    "es": "Ese día mi hermano salió temprano.",
+    "en": "That day my brother left early.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:preterite-er-ir",
+      "l:día",
+      "l:hermano",
+      "l:salir",
+      "l:temprano",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "statement",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0021",
+    "es": "Primero comí y después trabajé.",
+    "en": "First I ate and then I worked.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:comi",
+      "c:compre-trabaje",
+      "g:preterite-ar",
+      "g:preterite-er-ir",
+      "l:comer",
+      "l:después",
+      "l:trabajar",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "statement",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0022",
+    "es": "Tomás no dijo nada después.",
+    "en": "Tomás said nothing afterwards.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:negation-words",
+      "g:preterite-irregular-strong",
+      "l:decir",
+      "l:después",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "statement",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0023",
+    "es": "Esa tarde Mariana trabajó en el café.",
+    "en": "That afternoon Mariana worked at the café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:trabajo-en",
+      "g:demonstratives",
+      "g:gender-articles",
+      "l:café",
+      "l:tarde",
+      "l:trabajar"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "statement",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0024",
+    "es": "Al principio Tomás no hablaba español.",
+    "en": "At first Tomás didn't speak Spanish.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "l:español",
+      "l:hablar",
+      "l:principio"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "statement",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0025",
+    "es": "Primero Hernando tomó un tinto y después habló con Rosa.",
+    "en": "First Hernando had a coffee and then he talked with Rosa.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:después",
+      "l:hablar",
+      "l:tinto",
+      "l:tomar",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "statement",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0026",
+    "es": "¿Qué hiciste primero?\nPrimero compré pan y luego llegué al café.",
+    "en": "What did you do first?\nFirst I bought bread and then I got to the café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:compre-trabaje",
+      "c:que-hiciste",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:preterite-ser-ir-hacer",
+      "g:preterite-spelling-stem",
+      "l:café",
+      "l:comprar",
+      "l:hacer",
+      "l:llegar",
+      "l:pan",
+      "l:qué",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "dialogue",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0027",
+    "es": "¿Y después qué pasó?",
+    "en": "And what happened after that?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:preterite-ar",
+      "g:questions",
+      "l:después",
+      "l:pasar",
+      "l:qué",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "question",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0028",
+    "es": "Ese día Vale trabajó en el café con Hernando.",
+    "en": "That day Vale worked at the café with Hernando.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:trabajo-en",
+      "g:demonstratives",
+      "g:gender-articles",
+      "l:café",
+      "l:día",
+      "l:trabajar"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "statement",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0029",
+    "es": "Esa mañana Tomás llegó a Altamira.",
+    "en": "That morning Tomás arrived in Altamira.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:preterite-ar",
+      "l:llegar",
+      "l:mañana"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "statement",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0030",
+    "es": "En ese momento Simón habló.",
+    "en": "At that moment Simón spoke.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:preterite-ar",
+      "l:hablar",
+      "l:momento"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "statement",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  },
+  {
+    "id": "u26-t-time-sequence-0031",
+    "es": "Desde ese día, yo tomo el tinto sin azúcar.",
+    "en": "From that day on, I have my coffee without sugar.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:gender-articles",
+      "g:present-ar",
+      "l:azúcar",
+      "l:día",
+      "l:tinto",
+      "l:tomar",
+      "p:con-sin"
+    ],
+    "targets": [
+      "g:time-sequence"
+    ],
+    "kind": "statement",
+    "unit": "u26",
+    "theme": "Hernando's stories",
+    "source": "gen"
+  }
+]

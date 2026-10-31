@@ -7,7 +7,17 @@ import { Continue } from '../components/card';
 import { Heading, Txt, undash } from '../components/text';
 import { useApp } from '../context';
 import { applyPlacement, contentProbe, type ProbeSource } from '../session/placement';
+import type { Band } from '../../content/schema';
 import type { Goal } from '../store/ui';
+
+const LEVELS: Array<{ band: Band; label: string; note: string }> = [
+  { band: 'A1', label: 'Beginner', note: 'A few words' },
+  { band: 'A2', label: 'A bit', note: 'I can order and introduce myself' },
+  { band: 'B1', label: 'Intermediate', note: 'I can tell a story in the past' },
+  { band: 'B2', label: 'Advanced', note: 'I read and argue in Spanish' },
+];
+
+const BAND_ORDER: readonly string[] = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
 
 const GOALS: Array<{ goal: Goal; label: string; note: string }> = [
   { goal: 'travel', label: 'Travel', note: 'Getting around, ordering, meeting people on the way' },
@@ -18,7 +28,9 @@ const GOALS: Array<{ goal: Goal; label: string; note: string }> = [
 
 export function Onboarding({ onDone, probe }: { onDone: () => void; probe?: ProbeSource }) {
   const app = useApp();
-  const [step, setStep] = useState<'welcome' | 'goal' | 'start' | 'probe' | 'placed'>('welcome');
+  const [step, setStep] = useState<'welcome' | 'goal' | 'start' | 'howMuch' | 'probe' | 'placed'>('welcome');
+  const [from, setFrom] = useState<Band>('A1');
+  const [loading, setLoading] = useState(false);
   const [goal, setGoal] = useState<Goal | undefined>();
   const [placed, setPlaced] = useState(0);
 
@@ -30,6 +42,25 @@ export function Onboarding({ onDone, probe }: { onDone: () => void; probe?: Prob
     await app.learner.flush();
     onDone();
   };
+
+  /** Bring in the course content the check will climb through: one band below the claimed one, up to one above. */
+  const chooseLevel = async (band: Band) => {
+    setFrom(band);
+    setLoading(true);
+    try {
+      const at = BAND_ORDER.indexOf(band);
+      const units = app.bundle.course.units;
+      const inBands = (lo: number, hi: number) => units.map((u, i) => (BAND_ORDER.indexOf(u.band ?? 'A1') >= lo && BAND_ORDER.indexOf(u.band ?? 'A1') <= hi ? i : -1)).filter((i) => i >= 0);
+      const idx = inBands(Math.max(0, at - 1), at + 1);
+      if (idx.length) await app.bundle.ensureUnits({ from: idx[0], to: idx[idx.length - 1] });
+    } catch {
+      // offline: the check runs on what is already here
+    }
+    setLoading(false);
+    setStep('probe');
+  };
+
+  if (loading) return <main class="screen onboarding" id="main"><p data-loading>Loading</p></main>;
 
   switch (step) {
     case 'welcome':
@@ -65,12 +96,23 @@ export function Onboarding({ onDone, probe }: { onDone: () => void; probe?: Prob
           <Heading title="Have you learned any Spanish before?" />
           <div class="options">
             <button class="option" data-zero onClick={() => void finish(0)}><strong>No, I'm new to it</strong><br /><span class="small">Start with the first lesson.</span></button>
-            <button class="option" data-some onClick={() => setStep('probe')}><strong>Yes, some</strong><br /><span class="small">A short check, about three minutes, so you can skip what you already know.</span></button>
+            <button class="option" data-some onClick={() => setStep('howMuch')}><strong>Yes, some</strong><br /><span class="small">A short check, about three minutes, so you can skip what you already know.</span></button>
+          </div>
+        </main>
+      );
+    case 'howMuch':
+      return (
+        <main class="screen onboarding" id="main">
+          <Heading title="How much Spanish do you have?" lead="Pick the closest. The check will find your real level from there." />
+          <div class="options">
+            {LEVELS.map((l) => (
+              <button key={l.band} class="option" data-level={l.band} onClick={() => void chooseLevel(l.band)}><strong>{l.label}</strong><br /><span class="small">{l.note}</span></button>
+            ))}
           </div>
         </main>
       );
     case 'probe':
-      return <Probe source={probe ?? contentProbe(app.bundle, app.ui.state.learnerId)} onResult={(u) => { setPlaced(u); setStep('placed'); }} />;
+      return <Probe source={probe ?? contentProbe(app.bundle, app.ui.state.learnerId, { start: from })} onResult={(u) => { setPlaced(u); setStep('placed'); }} />;
     case 'placed': {
       const unit = app.bundle.course.units[placed];
       return (

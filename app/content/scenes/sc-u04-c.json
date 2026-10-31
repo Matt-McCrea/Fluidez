@@ -6,13 +6,13 @@
   "turns": [
     {
       "id": "t1",
-      "npc": "Buenos días, señor. ¿Esta es la máquina de café? ¿Qué pasó?",
-      "npcEn": "Good morning, sir. Is this the coffee machine? What happened?",
-      "intent": "Say the machine didn't work on Saturday at five past seven.",
+      "npc": "Buenos días, señor. ¿Esta es la máquina de café? ¿Cuándo fue el problema?",
+      "npcEn": "Good morning, sir. Is this the coffee machine? When was the problem?",
+      "intent": "Say it was on Saturday: the machine didn't work.",
       "accept": [
-        "La máquina no funcionó el sábado a las siete y cinco.",
-        "El sábado a las siete y cinco la máquina no funcionó.",
-        "No funcionó el sábado, a las siete y cinco."
+        "Fue el sábado. La máquina no funcionó.",
+        "El sábado la máquina no funcionó.",
+        "La máquina no funcionó el sábado temprano."
       ],
       "require": [
         {
@@ -31,13 +31,13 @@
     },
     {
       "id": "t2",
-      "npc": "¿El sábado? ¿Y usted qué hizo?",
-      "npcEn": "On Saturday? And what did you do?",
-      "intent": "Say Vale made tinto like Rosa, and Don Hernando called the taxi drivers.",
+      "npc": "¿El sábado? ¿Y qué hicieron ustedes?",
+      "npcEn": "On Saturday? And what did you all do?",
+      "intent": "Say Vale made tinto like Rosa, and you opened the café.",
       "accept": [
-        "Vale hizo tinto como Rosa y don Hernando llamó a los taxistas.",
-        "Don Hernando llamó a los taxistas, y Vale hizo tinto como Rosa.",
-        "Vale hizo tinto como Rosa. Y don Hernando llamó a los taxistas."
+        "Vale hizo tinto como Rosa, y yo abrí el café.",
+        "Abrí el café, y Vale hizo tinto como Rosa.",
+        "Vale hizo tinto como Rosa. Y yo abrí el café."
       ],
       "require": [
         {
@@ -49,10 +49,10 @@
         },
         {
           "type": "verbForm",
-          "inf": "llamar",
+          "inf": "abrir",
           "tense": "preterito",
-          "person": "él/ella",
-          "label": "Don Hernando called: llamó"
+          "person": "yo",
+          "label": "I opened: abrí"
         }
       ],
       "focus": "g:preterite-ser-ir-hacer",
@@ -60,8 +60,8 @@
     },
     {
       "id": "t3",
-      "npc": "¿Tinto sin máquina? ¿Y vendieron algo?",
-      "npcEn": "Tinto without a machine? And did you sell anything?",
+      "npc": "¿Tinto como Rosa? ¿Y vendieron algo?",
+      "npcEn": "Tinto like Rosa? And did you all sell anything?",
       "intent": "Say yes, the taxi drivers came and you all sold a lot of tinto.",
       "accept": [
         "Sí, llegaron los taxistas y vendimos mucho tinto.",
@@ -82,13 +82,13 @@
     },
     {
       "id": "t4",
-      "npc": "¡Uy! Esta máquina es de 1975. Una máquina nueva cuesta dos millones.",
-      "npcEn": "Wow! This machine is from 1975. A new machine costs two million.",
-      "intent": "Say that's expensive and ask if there's something cheaper.",
+      "npc": "¡Uy! Esta máquina no es nueva. Una máquina nueva cuesta dos millones.",
+      "npcEn": "Wow! This machine isn't new. A new machine costs two million.",
+      "intent": "Say that's expensive and ask him if he has something cheaper.",
       "accept": [
-        "¡Qué caro! ¿Hay algo más barato?",
-        "Es muy caro. ¿Hay algo más barato?",
-        "¿Dos millones? ¡Qué caro! ¿Hay algo más barato?"
+        "¡Qué caro! ¿Tiene algo más barato?",
+        "Es muy caro. ¿Usted tiene algo más barato?",
+        "¿Dos millones? ¡Qué caro! ¿Tiene algo más barato?"
       ],
       "require": [
         {
@@ -108,8 +108,8 @@
     },
     {
       "id": "t5",
-      "npc": "Sí: mi trabajo. Son cien mil pesos, y mañana funciona.",
-      "npcEn": "Yes: my work. It's a hundred thousand pesos, and tomorrow it works.",
+      "npc": "Sí: mi trabajo. Son ochenta mil pesos, y mañana funciona.",
+      "npcEn": "Yes: my work. It's eighty thousand pesos, and tomorrow it works.",
       "intent": "Agree, and thank him for the help.",
       "accept": [
         "Listo. Gracias por la ayuda.",
@@ -132,17 +132,18 @@
     "c:bien-y-tu",
     "c:claro-listo",
     "c:gracias-de-nada",
-    "c:hay",
     "c:hola-buenos-dias",
+    "c:tienes",
     "g:adjective-agreement",
     "g:gender-articles",
-    "g:hay-vs-esta",
     "g:present-ar",
     "g:preterite-ar",
     "g:preterite-er-ir",
     "g:preterite-ser-ir-hacer",
     "g:questions",
     "g:ser-identity",
+    "g:stem-boot",
+    "l:abrir",
     "l:ayuda",
     "l:barato",
     "l:bien",
@@ -151,38 +152,34 @@
     "l:caro",
     "l:claro",
     "l:cuesta",
+    "l:cuándo",
     "l:día",
     "l:funcionar",
     "l:hacer",
     "l:listo",
-    "l:llamar",
     "l:llegar",
     "l:mañana",
     "l:máquina",
     "l:nuevo",
-    "l:pasar",
     "l:peso",
+    "l:problema",
     "l:qué",
     "l:ser",
     "l:señor",
     "l:sábado",
     "l:taxista",
+    "l:temprano",
+    "l:tener",
     "l:tinto",
     "l:trabajo",
     "l:vender",
-    "p:con-sin",
     "p:days-el-lunes",
     "p:demonstratives-basic",
     "p:exclamations-basic",
     "p:gracias-por",
     "p:indefinites-basic",
-    "p:nos-vemos-a-las",
-    "p:numbers-un-una",
-    "p:ocurrir-producirse",
-    "p:personal-a",
     "p:possessives-basic",
     "p:quantifiers-basic",
-    "p:senor-don-article",
-    "p:telling-time"
+    "p:question-word-order"
   ]
 }

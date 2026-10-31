@@ -1,0 +1,838 @@
+[
+  {
+    "id": "u47-t-cleft-focus-0001",
+    "es": "Fue Tomás quien abrió la puerta del café.",
+    "en": "It was Tomás who opened the café door.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "g:preterite-ser-ir-hacer",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "l:abrir",
+      "l:café",
+      "l:puerta",
+      "l:ser"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0002",
+    "es": "Fueron Vale y Tomás quienes encontraron a Simón.",
+    "en": "It was Vale and Tomás who found Simón.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:preterite-ar",
+      "g:preterite-ser-ir-hacer",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "l:encontrar",
+      "l:ser",
+      "p:personal-a"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0003",
+    "es": "No fue Hernando quien llamó, fue Mariana.",
+    "en": "It wasn't Hernando who called, it was Mariana.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:preterite-ar",
+      "g:preterite-ser-ir-hacer",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "l:llamar",
+      "l:ser",
+      "p:no-es-x-es-y"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0004",
+    "es": "¿Fuiste tú quien pidió el jugo de mora?",
+    "en": "Was it you who ordered the blackberry juice? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ser-ir-hacer",
+      "g:preterite-spelling-stem",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "l:jugo",
+      "l:mora",
+      "l:pedir",
+      "l:ser",
+      "p:preguntar-pedir"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "question",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0005",
+    "es": "¿Fue Mariana quien escribió el guión?",
+    "en": "Was it Mariana who wrote the script?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "g:preterite-ser-ir-hacer",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "l:escribir",
+      "l:guión",
+      "l:ser"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "question",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0006",
+    "es": "¿Fue usted quien escribió esta carta?",
+    "en": "Was it you who wrote this letter? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:preterite-er-ir",
+      "g:preterite-ser-ir-hacer",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "l:carta",
+      "l:escribir",
+      "l:ser",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "question",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0007",
+    "es": "¿Fueron ustedes quienes llegaron primero?",
+    "en": "Was it you all who arrived first?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:preterite-ar",
+      "g:preterite-ser-ir-hacer",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "l:llegar",
+      "l:ser",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "question",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0008",
+    "es": "¿Es en el centro donde vives?",
+    "en": "Is it downtown that you live? (to a friend)",
+    "accept": [
+      "¿Es en el centro donde vive usted?"
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "l:centro",
+      "l:ser",
+      "l:vivir"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "question",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0009",
+    "es": "¿Fue ayer cuando llamó Tomás?",
+    "en": "Was it yesterday that Tomás called?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ayer-anoche",
+      "g:preterite-ar",
+      "g:preterite-ser-ir-hacer",
+      "g:ser-identity",
+      "l:ayer",
+      "l:llamar",
+      "l:ser",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "question",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0010",
+    "es": "¿Qué es lo que más necesitas ahora?",
+    "en": "What is it that you need most right now? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:que-mas",
+      "g:present-ar",
+      "g:questions",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "l:ahora",
+      "l:necesitar",
+      "l:qué",
+      "l:ser",
+      "p:lo-que-mas-me-gusta"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "question",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0011",
+    "es": "¿Lo que quieres es un tinto o un jugo?",
+    "en": "Is what you want a black coffee or a juice? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:jugo",
+      "l:querer",
+      "l:ser",
+      "l:tinto"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "question",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0012",
+    "es": "¿Fue en Medellín donde conociste a Vale?",
+    "en": "Was it in Medellín that you met Vale? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:preterite-er-ir",
+      "g:preterite-ser-ir-hacer",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "l:conocer",
+      "l:ser",
+      "p:personal-a",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "question",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0013",
+    "es": "Es en la terraza donde mejor se habla.",
+    "en": "It's on the terrace that people talk best.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:relatives-donde-lo-que",
+      "g:se-impersonal",
+      "g:ser-identity",
+      "l:hablar",
+      "l:mejor",
+      "l:ser",
+      "l:terraza"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0014",
+    "es": "Fue en la última mesa donde Hernando esperaba a Rosa.",
+    "en": "It was at the last table that Hernando waited for Rosa.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:pret-vs-imperfect",
+      "g:preterite-ser-ir-hacer",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "l:esperar",
+      "l:mesa",
+      "l:ser",
+      "p:personal-a"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0015",
+    "es": "Es aquí donde Simón duerme todas las noches.",
+    "en": "This is where Simón sleeps every night.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:aquí",
+      "l:dormir",
+      "l:noche",
+      "l:ser",
+      "p:aqui-ahi-alla",
+      "p:todos-los-dias",
+      "p:veces-al"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0016",
+    "es": "Fue en octubre cuando Hernando dejó el taxi.",
+    "en": "It was in October that Hernando left the taxi.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:preterite-ser-ir-hacer",
+      "g:ser-identity",
+      "l:dejar",
+      "l:octubre",
+      "l:ser",
+      "l:taxi",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0017",
+    "es": "Fue por la mañana cuando hablamos con Rosa.",
+    "en": "It was in the morning that we talked with Rosa.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:preterite-ser-ir-hacer",
+      "g:ser-identity",
+      "l:hablar",
+      "l:mañana",
+      "l:ser",
+      "p:cuando-basic",
+      "p:por-la-manana"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0018",
+    "es": "Lo que necesito es un buen guión.",
+    "en": "What I need is a good script.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "l:buen",
+      "l:guión",
+      "l:necesitar",
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0019",
+    "es": "Lo que no soporto es el ruido de la calle.",
+    "en": "What I can't stand is the noise of the street.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "l:calle",
+      "l:ruido",
+      "l:ser",
+      "l:soportar",
+      "p:no-soportar-que",
+      "p:no-soporto-que"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0020",
+    "es": "Lo que más me gusta es el otoño.",
+    "en": "What I like most is autumn.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-gusta",
+      "c:que-mas",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "l:gustar",
+      "l:otoño",
+      "l:ser",
+      "p:lo-que-mas-me-gusta"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0021",
+    "es": "Lo que quiere Vale es salvar el café.",
+    "en": "What Vale wants is to save the café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:café",
+      "l:querer",
+      "l:salvar",
+      "l:ser"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0022",
+    "es": "Lo que dijo Mariana no es verdad.",
+    "en": "What Mariana said isn't true.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:preterite-irregular-strong",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "l:decir",
+      "l:ser",
+      "l:verdad"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0023",
+    "es": "Lo que me preocupa es la entrevista de mañana.",
+    "en": "What worries me is tomorrow's interview.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:gustar-full",
+      "g:present-ar",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "l:entrevista",
+      "l:mañana",
+      "l:preocupar",
+      "l:ser"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0024",
+    "es": "Lo que no sé es dónde dejé la carta.",
+    "en": "What I don't know is where I left the letter.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:no-se",
+      "g:gender-articles",
+      "g:indirect-questions",
+      "g:preterite-ar",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "g:yo-irregular",
+      "l:carta",
+      "l:dejar",
+      "l:dónde",
+      "l:saber",
+      "l:ser"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0025",
+    "es": "¿Quién dejó abierta la puerta?\nFue Tomás quien la dejó abierta.",
+    "en": "Who left the door open?\nIt was Tomás who left it open.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:preterite-ser-ir-hacer",
+      "g:questions",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "l:abrir",
+      "l:dejar",
+      "l:puerta",
+      "l:quién",
+      "l:ser",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "dialogue",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0026",
+    "es": "¿Dónde empezó todo?\nFue en este café donde empezó todo.",
+    "en": "Where did it all begin?\nIt was in this café that it all began.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:preterite-ar",
+      "g:preterite-ser-ir-hacer",
+      "g:questions",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "l:café",
+      "l:dónde",
+      "l:empezar",
+      "l:ser",
+      "p:demonstratives-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "dialogue",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0027",
+    "es": "¿Qué quieres tomar?\nLo que quiero es un tinto.",
+    "en": "What do you want to drink? (to a friend)\nWhat I want is a black coffee.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:quiero",
+      "g:gender-articles",
+      "g:questions",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:querer",
+      "l:qué",
+      "l:ser",
+      "l:tinto",
+      "l:tomar"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "dialogue",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0028",
+    "es": "¿Fue Vale quien lo dijo?\nNo, fue Mariana quien lo dijo.",
+    "en": "Was it Vale who said it?\nNo, it was Mariana who said it.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:preterite-irregular-strong",
+      "g:preterite-ser-ir-hacer",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "l:decir",
+      "l:ser"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "dialogue",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0029",
+    "es": "¿Cuándo llegó la carta?\nFue el lunes cuando llegó.",
+    "en": "When did the letter arrive?\nIt was on Monday that it arrived.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:preterite-ser-ir-hacer",
+      "g:questions",
+      "g:ser-identity",
+      "l:carta",
+      "l:cuándo",
+      "l:llegar",
+      "l:lunes",
+      "l:ser",
+      "p:cuando-basic",
+      "p:days-el-lunes",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "dialogue",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0030",
+    "es": "¿Qué te preocupa?\nLo que me preocupa es mi voz en la radio.",
+    "en": "",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:gustar-full",
+      "g:present-ar",
+      "g:questions",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "l:preocupar",
+      "l:qué",
+      "l:radio",
+      "l:ser",
+      "l:voz",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "dialogue",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0031",
+    "es": "No fue en la cocina donde la encontré, fue en el patio.",
+    "en": "It wasn't in the kitchen that I found it, it was in the patio.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:preterite-ser-ir-hacer",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "l:cocina",
+      "l:encontrar",
+      "l:patio",
+      "l:ser"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0032",
+    "es": "Fueron los vecinos quienes escribieron primero.",
+    "en": "It was the neighbours who wrote first.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "g:preterite-ser-ir-hacer",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "l:escribir",
+      "l:ser",
+      "l:vecino",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-cleft-focus-0033",
+    "es": "¿Eres tú quien siempre cierra el café?",
+    "en": "Is it you who always closes the café? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:café",
+      "l:cerrar",
+      "l:ser",
+      "l:siempre",
+      "p:frequency-scale"
+    ],
+    "targets": [
+      "g:cleft-focus"
+    ],
+    "kind": "question",
+    "unit": "u47",
+    "theme": "cleft focus",
+    "source": "gen"
+  }
+]

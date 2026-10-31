@@ -1,0 +1,696 @@
+[
+  {
+    "id": "u41-t-ojala-past-0001",
+    "es": "Ojalá tuviera un carro más grande.",
+    "en": "I wish I had a bigger car.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ojala",
+      "g:gender-articles",
+      "g:imperfect-subj",
+      "l:carro",
+      "l:grande",
+      "l:tener"
+    ],
+    "targets": [
+      "g:ojala-past"
+    ],
+    "kind": "statement",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0002",
+    "es": "Ojalá Vale viviera más cerca.",
+    "en": "I wish Vale lived closer.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ojala",
+      "g:imperfect-subj",
+      "l:cerca",
+      "l:vivir",
+      "p:cerca-de"
+    ],
+    "targets": [
+      "g:ojala-past"
+    ],
+    "kind": "statement",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0003",
+    "es": "Ojalá hiciera menos calor hoy.",
+    "en": "I wish it were less hot today.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ojala",
+      "g:imperfect-subj",
+      "l:calor",
+      "l:hacer",
+      "l:hoy"
+    ],
+    "targets": [
+      "g:ojala-past"
+    ],
+    "kind": "statement",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0004",
+    "es": "Ojalá supiéramos cocinar como mi abuela.",
+    "en": "I wish we knew how to cook like my grandmother.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ojala",
+      "g:imperfect-subj",
+      "l:abuela",
+      "l:cocinar",
+      "l:saber",
+      "p:possessives-basic",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:ojala-past"
+    ],
+    "kind": "statement",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0005",
+    "es": "Ojalá Simón no hablara tanto.",
+    "en": "I wish Simón didn't talk so much.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ojala",
+      "g:imperfect-subj",
+      "l:hablar"
+    ],
+    "targets": [
+      "g:ojala-past"
+    ],
+    "kind": "statement",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0006",
+    "es": "Ojalá tuvieras más tiempo para mí.",
+    "en": "I wish you had more time for me. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ojala",
+      "g:imperfect-subj",
+      "g:prep-pronouns",
+      "l:tener",
+      "l:tiempo",
+      "p:para-inf"
+    ],
+    "targets": [
+      "g:ojala-past"
+    ],
+    "kind": "statement",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0007",
+    "es": "Ojalá me quedara más plata a fin de mes.",
+    "en": "I wish I had more money left at the end of the month.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ojala",
+      "g:imperfect-subj",
+      "g:reflexive-routine",
+      "l:fin",
+      "l:mes",
+      "l:plata",
+      "l:quedarse"
+    ],
+    "targets": [
+      "g:ojala-past"
+    ],
+    "kind": "statement",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0008",
+    "es": "Ojalá los vecinos fueran más amables.",
+    "en": "I wish the neighbors were nicer.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ojala",
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:imperfect-subj",
+      "g:ser-identity",
+      "l:amable",
+      "l:ser",
+      "l:vecino"
+    ],
+    "targets": [
+      "g:ojala-past"
+    ],
+    "kind": "statement",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0009",
+    "es": "Ojalá pudiera ir con ustedes.",
+    "en": "I wish I could go with you all.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ojala",
+      "g:imperfect-subj",
+      "g:prep-pronouns",
+      "g:verb-infinitive",
+      "l:ir",
+      "l:poder"
+    ],
+    "targets": [
+      "g:ojala-past"
+    ],
+    "kind": "statement",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0010",
+    "es": "Ojalá mi celular tuviera más batería.",
+    "en": "I wish my cell phone had more battery.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ojala",
+      "g:imperfect-subj",
+      "l:batería",
+      "l:celular",
+      "l:tener",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:ojala-past"
+    ],
+    "kind": "statement",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0011",
+    "es": "Ojalá Hernando manejara un taxi todavía.",
+    "en": "I wish Hernando still drove a taxi.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ojala",
+      "g:gender-articles",
+      "g:imperfect-subj",
+      "l:manejar",
+      "l:taxi",
+      "p:ya-todavia-basic"
+    ],
+    "targets": [
+      "g:ojala-past"
+    ],
+    "kind": "statement",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0012",
+    "es": "Ojalá no hubiera tanta gente en el café.",
+    "en": "I wish there weren't so many people in the café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ojala",
+      "g:gender-articles",
+      "g:imperfect-subj",
+      "l:café",
+      "l:gente",
+      "p:la-gente-singular"
+    ],
+    "targets": [
+      "g:ojala-past"
+    ],
+    "kind": "statement",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0013",
+    "es": "Ojalá fuera sábado.",
+    "en": "I wish it were Saturday.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ojala",
+      "g:imperfect-subj",
+      "g:ser-identity",
+      "l:ser",
+      "l:sábado",
+      "p:days-el-lunes"
+    ],
+    "targets": [
+      "g:ojala-past"
+    ],
+    "kind": "statement",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0014",
+    "es": "Ojalá mis padres vivieran en Bogotá.",
+    "en": "I wish my parents lived in Bogotá.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ojala",
+      "g:imperfect-subj",
+      "l:padres",
+      "l:vivir",
+      "p:masculine-plural-mixed",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:ojala-past"
+    ],
+    "kind": "statement",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0015",
+    "es": "Ojalá Tomás hablara más con Mariana.",
+    "en": "I wish Tomás talked more with Mariana.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ojala",
+      "g:imperfect-subj",
+      "l:hablar"
+    ],
+    "targets": [
+      "g:ojala-past"
+    ],
+    "kind": "statement",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0016",
+    "es": "Ojalá tuviéramos un jardín en el café.",
+    "en": "I wish we had a garden at the café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ojala",
+      "g:gender-articles",
+      "g:imperfect-subj",
+      "l:café",
+      "l:jardín",
+      "l:tener"
+    ],
+    "targets": [
+      "g:ojala-past"
+    ],
+    "kind": "statement",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0017",
+    "es": "Ojalá estuvieras cansado.",
+    "en": "I wish you were tired. (to a man)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ojala",
+      "g:estar-location-states",
+      "g:imperfect-subj",
+      "l:cansado",
+      "l:estar"
+    ],
+    "targets": [
+      "g:ojala-past"
+    ],
+    "kind": "statement",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0018",
+    "es": "Ojalá fuéramos más jóvenes.",
+    "en": "I wish we were younger.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ojala",
+      "g:adjective-agreement",
+      "g:imperfect-subj",
+      "g:ser-identity",
+      "l:joven",
+      "l:ser",
+      "p:es-tiene-lleva"
+    ],
+    "targets": [
+      "g:ojala-past"
+    ],
+    "kind": "statement",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0019",
+    "es": "Ojalá pudieras venir a la fiesta.",
+    "en": "I wish you could come to the party. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ojala",
+      "g:gender-articles",
+      "g:imperfect-subj",
+      "g:verb-infinitive",
+      "l:fiesta",
+      "l:poder",
+      "l:venir",
+      "p:ir-venir"
+    ],
+    "targets": [
+      "g:ojala-past"
+    ],
+    "kind": "statement",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0020",
+    "es": "Ojalá el invierno no durara tanto en Toronto.",
+    "en": "I wish winter didn't last so long in Toronto.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ojala",
+      "g:gender-articles",
+      "g:imperfect-subj",
+      "l:durar",
+      "l:invierno",
+      "p:durar-durante"
+    ],
+    "targets": [
+      "g:ojala-past"
+    ],
+    "kind": "statement",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0021",
+    "es": "¿Te gusta tu trabajo?\nOjalá tuviera más vacaciones.",
+    "en": "Do you like your job?\nI wish I had more vacation.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-gusta",
+      "c:ojala",
+      "g:gustar-basic",
+      "g:imperfect-subj",
+      "l:gustar",
+      "l:tener",
+      "l:trabajo",
+      "l:vacación",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:ojala-past"
+    ],
+    "kind": "dialogue",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0022",
+    "es": "¿Vale no viene?\nOjalá pudiera, pero trabaja hoy.",
+    "en": "Isn't Vale coming?\nI wish she could, but she works today.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ojala",
+      "g:imperfect-subj",
+      "g:present-ar",
+      "g:stem-boot",
+      "l:hoy",
+      "l:poder",
+      "l:trabajar",
+      "l:venir"
+    ],
+    "targets": [
+      "g:ojala-past"
+    ],
+    "kind": "dialogue",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0023",
+    "es": "Hoy hace frío.\nOjalá tuviéramos una cobija más.",
+    "en": "It's cold today.\nI wish we had one more blanket.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ojala",
+      "g:gender-articles",
+      "g:imperfect-subj",
+      "g:present-er-ir",
+      "l:frío",
+      "l:hacer",
+      "l:hoy",
+      "l:tener",
+      "p:hace-frio"
+    ],
+    "targets": [
+      "g:ojala-past"
+    ],
+    "kind": "dialogue",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0024",
+    "es": "¿Estás feliz con el local?\nOjalá fuera nuestro.",
+    "en": "Are you happy with the premises?\nI wish they were ours.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ojala",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:imperfect-subj",
+      "g:possessives",
+      "g:ser-identity",
+      "l:estar",
+      "l:feliz",
+      "l:local",
+      "l:ser",
+      "p:de-owner"
+    ],
+    "targets": [
+      "g:ojala-past"
+    ],
+    "kind": "dialogue",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0025",
+    "es": "Simón está en la calle.\nOjalá no supiera abrir la puerta.",
+    "en": "Simón is out on the street.\nI wish he didn't know how to open the door.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ojala",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:imperfect-subj",
+      "l:abrir",
+      "l:calle",
+      "l:estar",
+      "l:puerta",
+      "l:saber",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:ojala-past"
+    ],
+    "kind": "dialogue",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0026",
+    "es": "¿Qué harías si tuvieras más tiempo libre?",
+    "en": "What would you do if you had more free time?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:imperfect-subj",
+      "g:questions",
+      "g:si-hypothetical",
+      "l:hacer",
+      "l:libre",
+      "l:qué",
+      "l:tener",
+      "l:tiempo"
+    ],
+    "targets": [
+      "g:si-hypothetical"
+    ],
+    "kind": "question",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0027",
+    "es": "¿Qué cambiarías si pudieras?",
+    "en": "What would you change if you could?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:imperfect-subj",
+      "g:questions",
+      "g:si-hypothetical",
+      "l:cambiar",
+      "l:poder",
+      "l:qué"
+    ],
+    "targets": [
+      "g:si-hypothetical"
+    ],
+    "kind": "question",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0028",
+    "es": "¿Dónde vivirías si pudieras elegir?",
+    "en": "Where would you live if you could choose?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:imperfect-subj",
+      "g:questions",
+      "g:si-hypothetical",
+      "g:verb-infinitive",
+      "l:dónde",
+      "l:elegir",
+      "l:poder",
+      "l:vivir"
+    ],
+    "targets": [
+      "g:si-hypothetical"
+    ],
+    "kind": "question",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0029",
+    "es": "¿Qué le dirías a Rosa si estuviera aquí?",
+    "en": "What would you say to Rosa if she were here?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:estar-location-states",
+      "g:imperfect-subj",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:questions",
+      "g:si-hypothetical",
+      "l:aquí",
+      "l:decir",
+      "l:estar",
+      "l:qué",
+      "p:aqui-ahi-alla"
+    ],
+    "targets": [
+      "g:si-hypothetical"
+    ],
+    "kind": "question",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  },
+  {
+    "id": "u41-t-ojala-past-0030",
+    "es": "¿Qué tipo de trabajo tendrías si pudieras escoger?",
+    "en": "What kind of job would you have if you could choose?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:imperfect-subj",
+      "g:questions",
+      "g:si-hypothetical",
+      "g:verb-infinitive",
+      "l:escoger",
+      "l:poder",
+      "l:qué",
+      "l:tener",
+      "l:tipo",
+      "l:trabajo",
+      "p:que-tipo-de"
+    ],
+    "targets": [
+      "g:si-hypothetical"
+    ],
+    "kind": "question",
+    "unit": "u41",
+    "theme": "wishes",
+    "source": "gen"
+  }
+]

@@ -6,8 +6,9 @@ import { useApp } from '../context';
 import { backlogMinutes, delayedAccuracy7d, productionShareWeek, reviewBudgetMinutes, wordsThisWeek } from '../../learner/metrics';
 import { bandAt } from '../../compiler';
 import { streakStatus } from '../store/ui';
+import type { PracticeSpec } from '../session/practice-spec';
 
-export function Progress() {
+export function Progress(_props: { onPractise?: (spec: PracticeSpec) => void } = {}) {
   const { learner, ui, bundle, now } = useApp();
   const units = bundle.course.units;
   const done = units.slice(0, Math.min(ui.path.unit, units.length));

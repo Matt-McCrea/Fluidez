@@ -48,8 +48,8 @@
     },
     {
       "id": "t3",
-      "npc": "Bueno. Aquí no devolvemos plata, señor. Pero se lo puedo cambiar por otro.",
-      "npcEn": "Well. We don't give money back here, sir. But I can exchange it for another one for you.",
+      "npc": "Bueno. Aquí no devolvemos plata, señor. Pero se lo puedo cambiar.",
+      "npcEn": "Well. We don't give money back here, sir. But I can exchange it for you.",
       "intent": "Say OK, you want to exchange it for a smaller one.",
       "accept": [
         "Bueno, quiero cambiarlo por uno más pequeño.",
@@ -69,8 +69,8 @@
     },
     {
       "id": "t4",
-      "npc": "Mire este gris. Es de cuero y es más pequeño. Es un poco más caro, eso sí.",
-      "npcEn": "Look at this grey one. It's leather and it's smaller. It's a bit more expensive, mind you.",
+      "npc": "Mire este gris. Es un sillón de cuero y es más pequeño. Es un poco más caro, eso sí.",
+      "npcEn": "Look at this grey one. It's a leather armchair and it's smaller. It's a bit more expensive, mind you.",
       "intent": "Say you'll take it, and ask if he can bring it to you at the café tomorrow.",
       "accept": [
         "Me lo llevo. ¿Me lo puede llevar al café mañana?",
@@ -107,7 +107,7 @@
           "type": "regex",
           "pattern": "me parece",
           "flags": "i",
-          "label": "it seems to me: me parece perfecta"
+          "label": "it seems to me: me parece una gran idea"
         }
       ],
       "focus": "g:parecer-quedar",
@@ -115,8 +115,8 @@
     },
     {
       "id": "t6",
-      "npc": "¡Tiene razón! Entonces el sillón morado se va para mi casa. Que esté muy bien, joven.",
-      "npcEn": "You're right! So the purple armchair is going to my house. Take good care, young man.",
+      "npc": "¡Tiene razón! Entonces el sillón morado se va para mi casa. Hasta mañana, joven.",
+      "npcEn": "You're right! So the purple armchair is going to my house. See you tomorrow, young man.",
       "intent": "Tell him he's the best salesman in San Victorino, and thank him.",
       "accept": [
         "Usted es el mejor vendedor de San Victorino. Gracias.",
@@ -137,17 +137,16 @@
   ],
   "requires": [
     "c:bien-y-tu",
+    "c:chao-nos-vemos",
     "c:claro-listo",
     "c:entonces-bueno",
     "c:gracias-de-nada",
     "c:hola-buenos-dias",
     "c:me-lo-llevo",
     "c:oiga-oye",
-    "c:por-un-lado",
     "c:porque",
     "c:puedo",
     "c:que-bien",
-    "c:que-este-bien",
     "c:quiero",
     "c:tienes",
     "g:cause-result",
@@ -167,7 +166,6 @@
     "g:questions",
     "g:ser-identity",
     "g:stem-boot",
-    "g:subj-wishes",
     "g:superlatives",
     "g:that-clauses",
     "g:verb-infinitive",
@@ -227,7 +225,6 @@
     "p:cambiar-de-por",
     "p:costar-pagar",
     "p:demonstratives-basic",
-    "p:estar-hecho-de",
     "p:me-te-nos-objects",
     "p:para-inf",
     "p:personal-a",
@@ -235,7 +232,6 @@
     "p:possessives-basic",
     "p:quantifiers-basic",
     "p:request-ladder",
-    "p:ser-de-material",
     "p:tener-razon"
   ]
 }

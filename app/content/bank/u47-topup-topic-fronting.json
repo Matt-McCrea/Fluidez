@@ -1,0 +1,746 @@
+[
+  {
+    "id": "u47-t-topic-fronting-0001",
+    "es": "¿Las llaves las tiene Vale?",
+    "en": "Does Vale have the keys?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:llave",
+      "l:tener"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "question",
+    "unit": "u47",
+    "theme": "topic fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0002",
+    "es": "¿Y el pan, quién lo compra hoy?",
+    "en": "And the bread, who is buying it today?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:questions",
+      "l:comprar",
+      "l:hoy",
+      "l:pan",
+      "l:quién"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "question",
+    "unit": "u47",
+    "theme": "topic fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0003",
+    "es": "¿A Simón lo quieres mucho?",
+    "en": "Simón, do you like him a lot? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:stem-boot",
+      "l:querer",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "question",
+    "unit": "u47",
+    "theme": "topic fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0004",
+    "es": "¿Esa noticia la supiste ayer?",
+    "en": "That news, did you hear it yesterday? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ayer-anoche",
+      "g:demonstratives",
+      "g:direct-objects",
+      "g:preterite-irregular-strong",
+      "l:ayer",
+      "l:noticia",
+      "l:saber",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "question",
+    "unit": "u47",
+    "theme": "topic fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0005",
+    "es": "¿El café lo haces tú?",
+    "en": "The coffee, do you make it? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:café",
+      "l:hacer"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "question",
+    "unit": "u47",
+    "theme": "topic fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0006",
+    "es": "¿A Mariana la conoces bien?",
+    "en": "Mariana, do you know her well? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:bien-y-tu",
+      "g:direct-objects",
+      "g:present-er-ir",
+      "l:bien",
+      "l:conocer",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "question",
+    "unit": "u47",
+    "theme": "topic fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0007",
+    "es": "El pódcast lo grabó Tomás.",
+    "en": "Tomás recorded the podcast.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:grabar",
+      "l:pódcast"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "topic fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0008",
+    "es": "Los pasteles los hace Vale.",
+    "en": "As for the pastries, Vale makes them.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:hacer",
+      "l:pastel"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "topic fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0009",
+    "es": "A Hernando no lo vi ayer.",
+    "en": "Hernando, I didn't see him yesterday.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ayer-anoche",
+      "g:direct-objects",
+      "g:preterite-er-ir",
+      "l:ayer",
+      "l:ver"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "topic fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0010",
+    "es": "Esa noticia la supe por Rosa.",
+    "en": "I heard that news from Rosa.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:direct-objects",
+      "g:por-para-1",
+      "g:preterite-irregular-strong",
+      "l:noticia",
+      "l:saber",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "topic fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0011",
+    "es": "A Simón le di el pan.",
+    "en": "Simón, I gave him the bread.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:preterite-irregular-strong",
+      "l:dar",
+      "l:pan"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "topic fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0012",
+    "es": "Eso no lo dijo Vale.",
+    "en": "Vale didn't say that.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:preterite-irregular-strong",
+      "l:decir",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "topic fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0013",
+    "es": "La mesa la compró Vale.",
+    "en": "Vale bought the table.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:comprar",
+      "l:mesa"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "topic fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0014",
+    "es": "A Tomás no le dije nada.",
+    "en": "I didn't tell Tomás anything.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:indirect-objects",
+      "g:negation-words",
+      "g:preterite-irregular-strong",
+      "l:decir"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "topic fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0015",
+    "es": "Las llaves las perdí yo.",
+    "en": "I'm the one who lost the keys.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "l:llave",
+      "l:perder"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "topic fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0016",
+    "es": "El guión lo escribió Mariana.",
+    "en": "Mariana wrote the script.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "l:escribir",
+      "l:guión"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "topic fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0017",
+    "es": "A Vale la llamó Mariana ayer.",
+    "en": "Mariana called Vale yesterday.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ayer-anoche",
+      "g:direct-objects",
+      "g:preterite-ar",
+      "l:ayer",
+      "l:llamar"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "topic fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0018",
+    "es": "¿Quién tiene las llaves?\nLas llaves las tiene Tomás.",
+    "en": "Who has the keys?\nAs for the keys, Tomás has them.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:questions",
+      "g:stem-boot",
+      "l:llave",
+      "l:quién",
+      "l:tener",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "dialogue",
+    "unit": "u47",
+    "theme": "topic fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0019",
+    "es": "¿Y el micrófono?\nEl micrófono lo trajo Mariana.",
+    "en": "And the microphone?\nMariana brought the microphone.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:preterite-irregular-strong",
+      "l:micrófono",
+      "l:traer",
+      "p:llevar-traer"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "dialogue",
+    "unit": "u47",
+    "theme": "topic fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0020",
+    "es": "¿Ya hablaste con Vale?\nA Vale no la vi hoy.",
+    "en": "Did you talk to Vale yet?\nVale, I haven't seen her today.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:preterite-ar",
+      "g:preterite-er-ir",
+      "l:hablar",
+      "l:hoy",
+      "l:ver"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "dialogue",
+    "unit": "u47",
+    "theme": "topic fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0021",
+    "es": "¿El contrato lo firmaste tú?",
+    "en": "The contract, did you sign it? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:contrato",
+      "l:firmar"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "question",
+    "unit": "u47",
+    "theme": "more fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0022",
+    "es": "¿A quién le diste las llaves?",
+    "en": "Who did you give the keys to?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:preterite-irregular-strong",
+      "l:dar",
+      "l:llave",
+      "l:quién",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "question",
+    "unit": "u47",
+    "theme": "more fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0023",
+    "es": "¿Eso lo sabías tú?",
+    "en": "That, did you know it? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:imperfect-habitual",
+      "l:saber",
+      "p:demonstratives-basic",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "question",
+    "unit": "u47",
+    "theme": "more fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0024",
+    "es": "¿Los pasteles los compras o los haces?",
+    "en": "The pastries, do you buy them or make them? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:compra",
+      "l:hacer",
+      "l:pastel"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "question",
+    "unit": "u47",
+    "theme": "more fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0025",
+    "es": "La grabación la tiene Mariana.",
+    "en": "Mariana has the recording.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:grabación",
+      "l:tener"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "more fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0026",
+    "es": "A Mariana no la conozco.",
+    "en": "Mariana, I don't know her.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:yo-irregular",
+      "l:conocer",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "more fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0027",
+    "es": "Las mesas las trajo Hernando.",
+    "en": "Hernando brought the tables.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:preterite-irregular-strong",
+      "l:mesa",
+      "l:traer",
+      "p:llevar-traer"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "more fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0028",
+    "es": "El pan no lo compré yo.",
+    "en": "I'm not the one who bought the bread.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:compre-trabaje",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:comprar",
+      "l:pan"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "more fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0029",
+    "es": "Esa historia la conozco muy bien.",
+    "en": "That story, I know it very well.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:bien-y-tu",
+      "g:demonstratives",
+      "g:direct-objects",
+      "g:yo-irregular",
+      "l:bien",
+      "l:conocer",
+      "l:historia",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:hedge-knowledge",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "more fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0030",
+    "es": "A Rosa la recuerdo siempre.",
+    "en": "Rosa, I always remember her.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "l:recuerdo",
+      "l:siempre",
+      "p:frequency-scale"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "more fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0031",
+    "es": "Los guiones los escribe Tomás.",
+    "en": "Tomás writes the scripts.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:escribir",
+      "l:guión"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "more fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0032",
+    "es": "A Simón le trajo pan Vale.",
+    "en": "Vale brought Simón bread.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:indirect-objects",
+      "g:preterite-irregular-strong",
+      "l:pan",
+      "l:traer",
+      "p:llevar-traer"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "statement",
+    "unit": "u47",
+    "theme": "more fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0033",
+    "es": "¿Quién hace el café?\nEl café lo hago yo.",
+    "en": "Who makes the coffee?\nI'm the one who makes the coffee.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:hago-salgo-vengo",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:questions",
+      "g:yo-irregular",
+      "l:café",
+      "l:hacer",
+      "l:quién",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "dialogue",
+    "unit": "u47",
+    "theme": "more fronting",
+    "source": "gen"
+  },
+  {
+    "id": "u47-t-topic-fronting-0034",
+    "es": "¿Ya hablaste con Tomás?\nA Tomás le dije todo.",
+    "en": "Did you talk to Tomás yet?\nTomás, I told him everything.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:indirect-objects",
+      "g:preterite-ar",
+      "g:preterite-irregular-strong",
+      "l:decir",
+      "l:hablar"
+    ],
+    "targets": [
+      "g:topic-fronting"
+    ],
+    "kind": "dialogue",
+    "unit": "u47",
+    "theme": "more fronting",
+    "source": "gen"
+  }
+]

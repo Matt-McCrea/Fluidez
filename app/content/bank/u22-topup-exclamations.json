@@ -1,0 +1,557 @@
+[
+  {
+    "id": "u22-t-exclamations-0001",
+    "es": "¡Qué buena noticia, Tomás!",
+    "en": "What good news, Tomás!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "l:buena",
+      "l:noticia",
+      "l:qué",
+      "p:exclamations-basic"
+    ],
+    "targets": [
+      "g:exclamations"
+    ],
+    "kind": "statement",
+    "unit": "u22",
+    "theme": "reacting to news and parties",
+    "source": "gen"
+  },
+  {
+    "id": "u22-t-exclamations-0002",
+    "es": "¡Cuánta comida hay en la mesa!",
+    "en": "There is so much food on the table!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:hay",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "l:comida",
+      "l:cuánto",
+      "l:mesa",
+      "p:exclamations-basic"
+    ],
+    "targets": [
+      "g:exclamations"
+    ],
+    "kind": "statement",
+    "unit": "u22",
+    "theme": "reacting to news and parties",
+    "source": "gen"
+  },
+  {
+    "id": "u22-t-exclamations-0003",
+    "es": "¡Qué rica está la comida de Vale!",
+    "en": "Vale's food is so delicious!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:comida",
+      "l:estar",
+      "l:qué",
+      "l:rico",
+      "p:exclamations-basic"
+    ],
+    "targets": [
+      "g:exclamations"
+    ],
+    "kind": "statement",
+    "unit": "u22",
+    "theme": "reacting to news and parties",
+    "source": "gen"
+  },
+  {
+    "id": "u22-t-exclamations-0004",
+    "es": "¡Cuántas flores!",
+    "en": "So many flowers!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "l:cuánto",
+      "l:flor",
+      "p:exclamations-basic"
+    ],
+    "targets": [
+      "g:exclamations"
+    ],
+    "kind": "statement",
+    "unit": "u22",
+    "theme": "reacting to news and parties",
+    "source": "gen"
+  },
+  {
+    "id": "u22-t-exclamations-0005",
+    "es": "¡Qué bien baila Mariana!",
+    "en": "Mariana dances so well!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:bien-y-tu",
+      "c:que-bien",
+      "g:present-ar",
+      "l:bailar",
+      "l:bien",
+      "l:qué"
+    ],
+    "targets": [
+      "g:exclamations"
+    ],
+    "kind": "statement",
+    "unit": "u22",
+    "theme": "reacting to news and parties",
+    "source": "gen"
+  },
+  {
+    "id": "u22-t-exclamations-0006",
+    "es": "¡Qué lindo día para una fiesta!",
+    "en": "What a lovely day for a party!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "l:día",
+      "l:fiesta",
+      "l:lindo",
+      "l:qué",
+      "p:exclamations-basic",
+      "p:para-inf"
+    ],
+    "targets": [
+      "g:exclamations"
+    ],
+    "kind": "statement",
+    "unit": "u22",
+    "theme": "reacting to news and parties",
+    "source": "gen"
+  },
+  {
+    "id": "u22-t-exclamations-0007",
+    "es": "¡Cuántos años sin verte, Hernando!",
+    "en": "So many years without seeing you, Hernando! (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:object-pronoun-position",
+      "g:prep-infinitive",
+      "l:año",
+      "l:cuánto",
+      "l:ver",
+      "p:exclamations-basic",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:exclamations"
+    ],
+    "kind": "statement",
+    "unit": "u22",
+    "theme": "reacting to news and parties",
+    "source": "gen"
+  },
+  {
+    "id": "u22-t-exclamations-0008",
+    "es": "¡Qué rápido pasa la semana!",
+    "en": "The week goes by so fast!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:pasar",
+      "l:qué",
+      "l:rápido",
+      "l:semana",
+      "p:exclamations-basic"
+    ],
+    "targets": [
+      "g:exclamations"
+    ],
+    "kind": "statement",
+    "unit": "u22",
+    "theme": "reacting to news and parties",
+    "source": "gen"
+  },
+  {
+    "id": "u22-t-exclamations-0009",
+    "es": "¡Qué linda está la casa hoy!",
+    "en": "The house looks so lovely today!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:casa",
+      "l:estar",
+      "l:hoy",
+      "l:lindo",
+      "l:qué",
+      "p:exclamations-basic"
+    ],
+    "targets": [
+      "g:exclamations"
+    ],
+    "kind": "statement",
+    "unit": "u22",
+    "theme": "reacting to news and parties",
+    "source": "gen"
+  },
+  {
+    "id": "u22-t-exclamations-0010",
+    "es": "¡Cuánto trabajo tiene Rosa!",
+    "en": "Rosa has so much work!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:stem-boot",
+      "l:cuánto",
+      "l:tener",
+      "l:trabajo",
+      "p:exclamations-basic"
+    ],
+    "targets": [
+      "g:exclamations"
+    ],
+    "kind": "statement",
+    "unit": "u22",
+    "theme": "reacting to news and parties",
+    "source": "gen"
+  },
+  {
+    "id": "u22-t-exclamations-0011",
+    "es": "¡Qué bueno verlos a ustedes aquí!",
+    "en": "How good to see you all here!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:que-bien",
+      "g:direct-objects",
+      "g:object-pronoun-position",
+      "l:aquí",
+      "l:bueno",
+      "l:qué",
+      "l:ver",
+      "p:aqui-ahi-alla",
+      "p:personal-a"
+    ],
+    "targets": [
+      "g:exclamations"
+    ],
+    "kind": "statement",
+    "unit": "u22",
+    "theme": "reacting to news and parties",
+    "source": "gen"
+  },
+  {
+    "id": "u22-t-exclamations-0012",
+    "es": "¡Qué linda sorpresa, Simón!",
+    "en": "What a lovely surprise, Simón!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "l:lindo",
+      "l:qué",
+      "l:sorpresa",
+      "p:exclamations-basic"
+    ],
+    "targets": [
+      "g:exclamations"
+    ],
+    "kind": "statement",
+    "unit": "u22",
+    "theme": "reacting to news and parties",
+    "source": "gen"
+  },
+  {
+    "id": "u22-t-exclamations-0013",
+    "es": "¡Cuánta gente hay en el café!",
+    "en": "There are so many people in the café!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:hay",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "l:café",
+      "l:cuánto",
+      "l:gente",
+      "p:exclamations-basic",
+      "p:la-gente-singular"
+    ],
+    "targets": [
+      "g:exclamations"
+    ],
+    "kind": "statement",
+    "unit": "u22",
+    "theme": "reacting to news and parties",
+    "source": "gen"
+  },
+  {
+    "id": "u22-t-exclamations-0014",
+    "es": "¡Qué tarde llega Tomás!",
+    "en": "Tomás is arriving so late!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:llegar",
+      "l:qué",
+      "l:tarde",
+      "p:exclamations-basic"
+    ],
+    "targets": [
+      "g:exclamations"
+    ],
+    "kind": "statement",
+    "unit": "u22",
+    "theme": "reacting to news and parties",
+    "source": "gen"
+  },
+  {
+    "id": "u22-t-exclamations-0015",
+    "es": "¡Cuánto tiempo sin verte!\nQué bueno verte también.",
+    "en": "Long time no see! (to a friend)\nIt's good to see you too.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:cuanto-tiempo",
+      "c:que-bien",
+      "g:object-pronoun-position",
+      "g:prep-infinitive",
+      "l:bueno",
+      "l:cuánto",
+      "l:qué",
+      "l:tiempo",
+      "l:ver",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:exclamations"
+    ],
+    "kind": "dialogue",
+    "unit": "u22",
+    "theme": "reacting to news and parties",
+    "source": "gen"
+  },
+  {
+    "id": "u22-t-exclamations-0016",
+    "es": "¡Qué bonita sorpresa!\nGracias, Vale.",
+    "en": "What a lovely surprise!\nThank you, Vale.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:gracias-de-nada",
+      "g:adjective-agreement",
+      "l:bonito",
+      "l:qué",
+      "l:sorpresa",
+      "p:exclamations-basic"
+    ],
+    "targets": [
+      "g:exclamations"
+    ],
+    "kind": "dialogue",
+    "unit": "u22",
+    "theme": "reacting to news and parties",
+    "source": "gen"
+  },
+  {
+    "id": "u22-t-exclamations-0017",
+    "es": "¡Cuántos regalos!\nSon para ti.",
+    "en": "So many presents!\nThey are for you. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:prep-pronouns",
+      "g:ser-identity",
+      "l:cuánto",
+      "l:regalo",
+      "l:ser",
+      "p:exclamations-basic",
+      "p:para-inf"
+    ],
+    "targets": [
+      "g:exclamations"
+    ],
+    "kind": "dialogue",
+    "unit": "u22",
+    "theme": "reacting to news and parties",
+    "source": "gen"
+  },
+  {
+    "id": "u22-t-exclamations-0018",
+    "es": "¡Qué bien cocinas!\nGracias, me gusta mucho.",
+    "en": "You cook so well! (to a friend)\nThank you, I like it a lot.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:bien-y-tu",
+      "c:gracias-de-nada",
+      "c:me-gusta",
+      "c:que-bien",
+      "g:gustar-basic",
+      "g:present-ar",
+      "l:bien",
+      "l:cocinar",
+      "l:gustar",
+      "l:qué",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:exclamations"
+    ],
+    "kind": "dialogue",
+    "unit": "u22",
+    "theme": "reacting to news and parties",
+    "source": "gen"
+  },
+  {
+    "id": "u22-t-exclamations-0019",
+    "es": "¿Cuánta gente viene a tu cumpleaños?",
+    "en": "How many people are coming to your birthday?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:questions",
+      "g:stem-boot",
+      "l:cumpleaños",
+      "l:cuánto",
+      "l:gente",
+      "l:venir",
+      "p:ir-venir",
+      "p:la-gente-singular",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:exclamations"
+    ],
+    "kind": "question",
+    "unit": "u22",
+    "theme": "reacting to news and parties",
+    "source": "gen"
+  },
+  {
+    "id": "u22-t-exclamations-0020",
+    "es": "¿Cuántos regalos recibes en tu cumpleaños?",
+    "en": "How many presents do you get on your birthday?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "g:questions",
+      "l:cumpleaños",
+      "l:cuánto",
+      "l:recibir",
+      "l:regalo",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:exclamations"
+    ],
+    "kind": "question",
+    "unit": "u22",
+    "theme": "reacting to news and parties",
+    "source": "gen"
+  },
+  {
+    "id": "u22-t-exclamations-0021",
+    "es": "¿Qué día es tu cumpleaños?",
+    "en": "What day is your birthday?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:questions",
+      "g:ser-identity",
+      "l:cumpleaños",
+      "l:día",
+      "l:qué",
+      "l:ser",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:exclamations"
+    ],
+    "kind": "question",
+    "unit": "u22",
+    "theme": "reacting to news and parties",
+    "source": "gen"
+  },
+  {
+    "id": "u22-t-exclamations-0022",
+    "es": "¿Qué casa te parece más linda?",
+    "en": "Which house seems the loveliest to you?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:parecer-quedar",
+      "g:present-er-ir",
+      "g:questions",
+      "l:casa",
+      "l:lindo",
+      "l:parecer",
+      "l:qué"
+    ],
+    "targets": [
+      "g:exclamations"
+    ],
+    "kind": "question",
+    "unit": "u22",
+    "theme": "reacting to news and parties",
+    "source": "gen"
+  },
+  {
+    "id": "u22-t-exclamations-0023",
+    "es": "¿Cuánto tiempo vives en esta casa?",
+    "en": "How long have you lived in this house?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:cuanto-tiempo",
+      "g:present-er-ir",
+      "l:casa",
+      "l:cuánto",
+      "l:tiempo",
+      "l:vivir",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:exclamations"
+    ],
+    "kind": "question",
+    "unit": "u22",
+    "theme": "reacting to news and parties",
+    "source": "gen"
+  },
+  {
+    "id": "u22-t-exclamations-0024",
+    "es": "¿Cuántas flores quieres para la mesa?",
+    "en": "How many flowers do you want for the table?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:questions",
+      "g:stem-boot",
+      "l:cuánto",
+      "l:flor",
+      "l:mesa",
+      "l:querer",
+      "p:para-inf"
+    ],
+    "targets": [
+      "g:exclamations"
+    ],
+    "kind": "question",
+    "unit": "u22",
+    "theme": "reacting to news and parties",
+    "source": "gen"
+  }
+]

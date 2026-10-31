@@ -26,8 +26,8 @@
     },
     {
       "id": "t2",
-      "npc": "¿Por fin? ¡Muy bien! ¿Y dónde está Vale? Huele muy rico.",
-      "npcEn": "Finally? Very good! And where's Vale? It smells really good.",
+      "npc": "¿Por fin? ¡Muy bien! ¿Y dónde está Vale?",
+      "npcEn": "Finally? Very good! And where's Vale?",
       "intent": "Say she's making ajiaco in the kitchen.",
       "accept": [
         "Está haciendo ajiaco en la cocina.",
@@ -53,12 +53,12 @@
     },
     {
       "id": "t3",
-      "npc": "¡Ajiaco! Oye, ¿tú ya lo has probado?",
-      "npcEn": "Ajiaco! Hey, have you tried it yet?",
+      "npc": "¡Ajiaco! Tomás, ¿tú ya lo has probado?",
+      "npcEn": "Ajiaco! Tomás, have you tried it yet?",
       "intent": "Say yes, you tried it yesterday.",
       "accept": [
         "Sí, lo probé ayer.",
-        "Sí, ya lo probé ayer. ¡Qué rico!",
+        "Sí, ya lo probé ayer.",
         "Sí. Lo probé ayer, con Hernando."
       ],
       "require": [
@@ -158,9 +158,7 @@
     "c:hola-buenos-dias",
     "c:la-verdad",
     "c:ni-idea",
-    "c:oiga-oye",
     "c:que-pena",
-    "c:que-rico",
     "c:tengo",
     "g:direct-objects",
     "g:estar-gerund",
@@ -191,13 +189,10 @@
     "l:largo",
     "l:leer",
     "l:malo",
-    "l:oler",
-    "l:oír",
     "l:pena",
     "l:probar",
     "l:probarse",
     "l:qué",
-    "l:rico",
     "l:saber",
     "l:ser",
     "l:serio",
@@ -209,7 +204,6 @@
     "p:demonstratives-basic",
     "p:es-adj-inf",
     "p:exclamations-basic",
-    "p:oler-a-saber-a",
     "p:quantifiers-basic",
     "p:question-word-order",
     "p:saber-conocer",

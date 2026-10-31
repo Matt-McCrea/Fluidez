@@ -18,8 +18,8 @@ import type { BlockProps } from './types';
 
 // ---------------------------------------------------------------- learn
 
-export function Learn({ block, run, onDone }: BlockProps<LearnBlock>) {
-  const q = useMemo(() => new LearnQueue(block.items.length), [block]);
+export function Learn({ block, run, onDone, resume }: BlockProps<LearnBlock>) {
+  const q = useMemo(() => (resume?.learn && resume.learn.n === block.items.length ? LearnQueue.fromJSON(resume.learn) : new LearnQueue(block.items.length)), [block]);
   const [, setTick] = useState(0);
   const h = blockHeading(block, run.bundle);
   // out of time: nothing new is presented; what was presented gets one last ask
@@ -34,6 +34,7 @@ export function Learn({ block, run, onDone }: BlockProps<LearnBlock>) {
   const item = block.items[step.i];
   const advance = (again = false, missed = false) => {
     q.next(again && !run.outOfTimeFor(block), missed);
+    run.setCursor({ learn: q.toJSON() });
     if (q.done) onDone(); else setTick((t) => t + 1);
   };
   if (step.kind === 'present') {
@@ -74,7 +75,7 @@ export function Learn({ block, run, onDone }: BlockProps<LearnBlock>) {
 
 type Phase = TeachBlock['parts'][number];
 
-export function Teach({ block, run, onDone }: BlockProps<TeachBlock>) {
+export function Teach({ block, run, onDone, resume }: BlockProps<TeachBlock>) {
   const script = run.bundle.scripts.get(block.node);
   const h = blockHeading(block, run.bundle);
   useEffect(() => { run.present(block.node); }, []);
@@ -87,9 +88,9 @@ export function Teach({ block, run, onDone }: BlockProps<TeachBlock>) {
       return true;
     });
   }, [block]);
-  const [k, setK] = useState(0);
+  const [k, setK] = useState(() => Math.max(0, Math.min(resume?.phase ?? 0, phases.length - 1)));
   const phase = phases[k];
-  const next = () => (k + 1 >= phases.length ? onDone() : setK(k + 1));
+  const next = () => { if (k + 1 >= phases.length) onDone(); else { run.setCursor({ phase: k + 1 }); setK(k + 1); } };
   const node = run.bundle.node(block.node);
 
   if (!script || !block.script) {
@@ -108,7 +109,7 @@ export function Teach({ block, run, onDone }: BlockProps<TeachBlock>) {
   return (
     <>
       <Heading title={h.title} />
-      <TeachPhase key={phase} phase={phase} script={script} block={block} run={run} onDone={next} />
+      <TeachPhase key={phase} phase={phase} script={script} block={block} run={run} onDone={next} at={k} start={resume?.phase === k ? resume.card : undefined} />
     </>
   );
 }
@@ -200,7 +201,7 @@ function Pitfalls({ script, onDone }: { script: TeachingScript; onDone: () => vo
   );
 }
 
-function TeachPhase({ phase, script, block, run, onDone }: { phase: Phase; script: TeachingScript; block: TeachBlock; run: BlockProps['run']; onDone: () => void }) {
+function TeachPhase({ phase, script, block, run, onDone, at, start }: { phase: Phase; script: TeachingScript; block: TeachBlock; run: BlockProps['run']; onDone: () => void; at: number; start?: number }) {
   switch (phase) {
     case 'hook':
       return (
@@ -225,7 +226,7 @@ function TeachPhase({ phase, script, block, run, onDone }: { phase: Phase; scrip
       return (
         <>
           <p class="handoff">{phase === 'readAndPick' ? 'Read and pick. Look closely at the small words.' : "Now try writing it. There's some reading in between."}</p>
-          <CardRun cards={cards} onAnswer={(i, o) => run.score(items[i], o)} onDone={onDone} />
+          <CardRun cards={cards} start={start} onShow={(i) => run.setCursor({ phase: at, card: i })} onAnswer={(i, o) => run.score(items[i], o)} onDone={onDone} />
         </>
       );
     }

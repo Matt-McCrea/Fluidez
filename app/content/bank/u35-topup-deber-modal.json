@@ -1,0 +1,716 @@
+[
+  {
+    "id": "u35-t-deber-modal-0001",
+    "es": "¿Qué deberíamos hacer?",
+    "en": "What should we do?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:questions",
+      "g:tener-que-hay-que",
+      "l:deber",
+      "l:hacer",
+      "l:qué",
+      "p:podriamos-deberiamos"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "question",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0002",
+    "es": "¿Debería llamar al doctor?",
+    "en": "Should I call the doctor?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:tener-que-hay-que",
+      "l:deber",
+      "l:doctor",
+      "l:llamar",
+      "p:personal-a",
+      "p:tendrias-que"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "question",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0003",
+    "es": "¿Deberías dormir más en la semana?",
+    "en": "Should you sleep more during the week? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:tener-que-hay-que",
+      "l:deber",
+      "l:dormir",
+      "l:semana",
+      "p:tendrias-que"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "question",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0004",
+    "es": "¿Debo tomar la pastilla con agua?",
+    "en": "Do I have to take the pill with water?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:tener-que-hay-que",
+      "l:agua",
+      "l:deber",
+      "l:pastilla",
+      "l:tomar",
+      "p:con-sin"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "question",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0005",
+    "es": "¿Qué debería comer yo?",
+    "en": "What should I eat?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:questions",
+      "g:tener-que-hay-que",
+      "l:comer",
+      "l:deber",
+      "l:qué",
+      "p:tendrias-que"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "question",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0006",
+    "es": "¿Crees que debería ir al médico?",
+    "en": "Do you think I should go to the doctor?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:tener-que-hay-que",
+      "g:that-clauses",
+      "l:creer",
+      "l:deber",
+      "l:ir",
+      "l:médico",
+      "p:ir-a-venir-de-place",
+      "p:tendrias-que"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "question",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0007",
+    "es": "¿Debemos pedir una cita hoy?",
+    "en": "Do we have to make an appointment today?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:tener-que-hay-que",
+      "l:cita",
+      "l:deber",
+      "l:hoy",
+      "l:pedir"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "question",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0008",
+    "es": "Debes descansar.",
+    "en": "You must rest. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "g:tener-que-hay-que",
+      "l:deber",
+      "l:descansar"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0009",
+    "es": "Deberías ir al médico.",
+    "en": "You should see a doctor. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:tener-que-hay-que",
+      "l:deber",
+      "l:ir",
+      "l:médico",
+      "p:ir-a-venir-de-place",
+      "p:tendrias-que"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0010",
+    "es": "No deberías tomar tanto café.",
+    "en": "You shouldn't drink so much coffee. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:tener-que-hay-que",
+      "l:café",
+      "l:deber",
+      "l:tomar",
+      "p:tendrias-que"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0011",
+    "es": "Hernando debería dormir más.",
+    "en": "Hernando should sleep more.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:tener-que-hay-que",
+      "l:deber",
+      "l:dormir",
+      "p:tendrias-que"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0012",
+    "es": "Debes llamar a la EPS hoy.",
+    "en": "You must call the EPS today. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:tener-que-hay-que",
+      "l:deber",
+      "l:hoy",
+      "l:llamar",
+      "p:personal-a"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0013",
+    "es": "Deberíamos pedir una cita mañana.",
+    "en": "We should make an appointment tomorrow.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:tener-que-hay-que",
+      "l:cita",
+      "l:deber",
+      "l:mañana",
+      "l:pedir",
+      "p:podriamos-deberiamos"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0014",
+    "es": "No debes comer eso.",
+    "en": "You must not eat that. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "g:tener-que-hay-que",
+      "l:comer",
+      "l:deber",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0015",
+    "es": "Mariana debería comer menos azúcar.",
+    "en": "Mariana should eat less sugar.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:tener-que-hay-que",
+      "l:azúcar",
+      "l:comer",
+      "l:deber",
+      "p:tendrias-que"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0016",
+    "es": "Tomás debe de estar nervioso.",
+    "en": "Tomás must be nervous.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:present-er-ir",
+      "g:tener-que-hay-que",
+      "l:deber",
+      "l:estar",
+      "l:nervioso"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0017",
+    "es": "Debe de estar cansada.",
+    "en": "She must be tired.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "g:present-er-ir",
+      "g:tener-que-hay-que",
+      "l:cansado",
+      "l:deber",
+      "l:estar"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0018",
+    "es": "Mariana debe de estar en el consultorio.",
+    "en": "Mariana must be at the clinic.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:tener-que-hay-que",
+      "l:consultorio",
+      "l:deber",
+      "l:estar"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0019",
+    "es": "Debe de tener fiebre.",
+    "en": "He must have a fever.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "g:tener-que-hay-que",
+      "l:deber",
+      "l:fiebre",
+      "l:tener"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0020",
+    "es": "Simón debe de tener hambre.",
+    "en": "Simón must be hungry.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "g:tener-que-hay-que",
+      "l:deber",
+      "l:hambre",
+      "l:tener",
+      "p:tener-hambre"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0021",
+    "es": "Los niños deben de estar en casa.",
+    "en": "The kids must be at home.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:tener-que-hay-que",
+      "l:casa",
+      "l:deber",
+      "l:estar",
+      "l:niño"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0022",
+    "es": "¿Qué debo hacer?\nDeberías descansar.",
+    "en": "What should I do?\nYou should rest.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:present-er-ir",
+      "g:questions",
+      "g:tener-que-hay-que",
+      "l:deber",
+      "l:descansar",
+      "l:hacer",
+      "l:qué",
+      "p:tendrias-que"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "dialogue",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0023",
+    "es": "Tengo tos.\nDeberías tomar jarabe.",
+    "en": "I have a cough.\nYou should take some syrup.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tengo",
+      "g:conditional",
+      "g:tener-que-hay-que",
+      "g:yo-irregular",
+      "l:deber",
+      "l:jarabe",
+      "l:tener",
+      "l:tomar",
+      "l:tos",
+      "p:tendrias-que"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "dialogue",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0024",
+    "es": "Hernando debe de estar enfermo.\nSí, debería ir al médico.",
+    "en": "Hernando must be sick.\nYes, he should go to the doctor.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:tener-que-hay-que",
+      "l:deber",
+      "l:enfermo",
+      "l:estar",
+      "l:ir",
+      "l:médico",
+      "p:ir-a-venir-de-place",
+      "p:tendrias-que"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "dialogue",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0025",
+    "es": "Ustedes deberían descansar.\nTienes razón.",
+    "en": "You all should rest.\nYou are right.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:conditional",
+      "g:stem-boot",
+      "g:tener-que-hay-que",
+      "l:deber",
+      "l:descansar",
+      "l:razón",
+      "l:tener",
+      "p:tener-razon"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "dialogue",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0026",
+    "es": "Ustedes deberían tomar más agua.",
+    "en": "You all should drink more water.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:tener-que-hay-que",
+      "l:agua",
+      "l:deber",
+      "l:tomar"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0027",
+    "es": "Usted debería hablar con el doctor.",
+    "en": "You should talk to the doctor. (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:tener-que-hay-que",
+      "l:deber",
+      "l:doctor",
+      "l:hablar",
+      "p:tendrias-que"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0028",
+    "es": "Deberían llamar a Rosa hoy.",
+    "en": "They should call Rosa today.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:tener-que-hay-que",
+      "l:deber",
+      "l:hoy",
+      "l:llamar",
+      "p:personal-a"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0029",
+    "es": "No deberíamos trabajar hoy.",
+    "en": "We shouldn't work today.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:tener-que-hay-que",
+      "l:deber",
+      "l:hoy",
+      "l:trabajar",
+      "p:podriamos-deberiamos"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0030",
+    "es": "Ella no debe de saber nada.",
+    "en": "She must not know anything.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:negation-words",
+      "g:present-er-ir",
+      "g:tener-que-hay-que",
+      "l:deber",
+      "l:saber",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  },
+  {
+    "id": "u35-t-deber-modal-0031",
+    "es": "Tú debes de ser Vale.",
+    "en": "You must be Vale.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "g:ser-identity",
+      "g:tener-que-hay-que",
+      "l:deber",
+      "l:ser"
+    ],
+    "targets": [
+      "g:deber-modal"
+    ],
+    "kind": "statement",
+    "unit": "u35",
+    "theme": "health advice",
+    "source": "gen"
+  }
+]

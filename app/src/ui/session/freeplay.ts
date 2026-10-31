@@ -19,7 +19,7 @@ import type { Bundle } from '../data/bundle';
 import { practiceCard, reviewCard, verbFormWhy, type Card, type Check, type TypeCard } from './cards';
 import type { PracticeSpec } from './practice-spec';
 import { gradeOf, type Outcome } from './runner';
-import { PICKER_TENSES, tenseName, tensesOfNode } from './tenses';
+import { licensedTenses, PICKER_TENSES, tenseName, tensesOfNode } from './tenses';
 
 export const DEFAULT_MINUTES: Record<PracticeSpec['kind'], number> = { quickReview: 5, conjugate: 3, translate: 5, nodes: 3 };
 /** Items per node in a nodes drill. */
@@ -272,7 +272,7 @@ export class Freeplay {
     const op = this.opAt(node);
     const credit = [...new Set([node, ...(bundle.index.sentences.get(sentence)?.requires ?? [])])];
     const item: PracticeItem = { op, id: `train:${++this.seq}:${node}`, scoring: 'exposure', credit, node, sentence, direction: 'productive' };
-    const card = practiceCard(item, bundle, this.d.rng() * 1e9);
+    const card = practiceCard(item, bundle, this.d.rng() * 1e9, licensedTenses(learner.nodes(), (id) => bundle.node(id)?.tags));
     this.lastOp = op;
     this.cur = {
       grade: (o) => {
@@ -311,7 +311,7 @@ export class Freeplay {
       const node = ref.targets[0] ?? ref.requires[0];
       if (!node) continue;
       const item: PracticeItem = { op: 'translate', id: `grind:${++this.seq}:${sentence}`, scoring: 'exposure', credit: ref.requires, node, sentence, direction: 'productive' };
-      const card = practiceCard(item, bundle, this.d.rng() * 1e9);
+      const card = practiceCard(item, bundle, this.d.rng() * 1e9, licensedTenses(learner.nodes(), (id) => bundle.node(id)?.tags));
       this.lastOp = 'translate';
       this.cur = {
         grade: (o) => {

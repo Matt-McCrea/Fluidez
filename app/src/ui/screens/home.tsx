@@ -1,17 +1,17 @@
 // Home: today's session in plain words, this week's goal, the story so far.
-import { useMemo } from 'preact/hooks';
+import { useEffect, useMemo } from 'preact/hooks';
 import type { Mode } from '../../compiler';
 import { Bar, Heading, undash } from '../components/text';
 import { useApp } from '../context';
 import { sessionLabel } from '../session/labels';
-import { anotherAllowed, compilePlan, requestFullLesson } from '../session/runner';
+import { anotherAllowed, compilePlan, requestFullLesson, savedMinutesLeft } from '../session/runner';
 import { goalLine } from '../session/goal';
 import type { PracticeSpec } from '../session/practice-spec';
 import { verbsMet } from '../session/freeplay';
 import { weakSpots } from '../../learner/weak';
-import { streakStatus } from '../store/ui';
+import { isResumable, streakStatus, type SavedSession } from '../store/ui';
 
-export function Home({ onStart, onStory, onPractise }: { onStart: (mode: Mode) => void; onStory: () => void; onPractise: (spec?: PracticeSpec) => void }) {
+export function Home({ onStart, onStory, onPractise }: { onStart: (mode: Mode, resume?: SavedSession) => void; onStory: () => void; onPractise: (spec?: PracticeSpec) => void }) {
   const app = useApp();
   const { learner, ui, bundle } = app;
   const now = app.now();
@@ -19,9 +19,14 @@ export function Home({ onStart, onStory, onPractise }: { onStart: (mode: Mode) =
   const doneToday = ui.state.stats.lastDay === today && ui.state.stats.today > 0;
   const another = doneToday && anotherAllowed(learner, bundle, ui, now);
   const mode: Mode = doneToday ? 'another' : 'next';
+  // a half-finished session from the last few hours waits to be picked up
+  const saved = isResumable(ui.session, learner, now, ui.state.learnerId) ? ui.session : undefined;
+  useEffect(() => { if (ui.session && !saved) void ui.clearSession(); }, [saved, ui.session]);
   const plan = useMemo(() => {
+    if (saved) return undefined;
     try { return compilePlan(learner, bundle, ui, { mode, now }); } catch { return undefined; }
-  }, [ui.path, learner.sessionIndex, mode]);
+  }, [ui.path, learner.sessionIndex, mode, !!saved]);
+  const minutesLeft = saved ? Math.max(1, Math.round(savedMinutesLeft(saved))) : 0;
   const spots = useMemo(() => {
     try {
       return weakSpots(learner.events(), (id) => bundle.node(id), {
@@ -45,15 +50,22 @@ export function Home({ onStart, onStory, onPractise }: { onStart: (mode: Mode) =
 
       <section class="card today" aria-labelledby="today-title">
         <p class="ask" id="today-title">{doneToday ? 'Up next' : 'Today'}</p>
-        {plan ? <p class="big" data-label>{sessionLabel(plan, bundle)}</p> : <p class="big">Nothing to do yet</p>}
+        {saved ? <p class="big" data-label>{sessionLabel(saved.plan, bundle)}</p>
+          : plan ? <p class="big" data-label>{sessionLabel(plan, bundle)}</p> : <p class="big">Nothing to do yet</p>}
         {short ? <p data-short>A short one today</p> : null}
-        {plan ? <p class="small">About {Math.max(5, Math.round(plan.estimatedMinutes))} minutes</p> : null}
+        {saved ? <p class="small" data-left>About {minutesLeft} {minutesLeft === 1 ? 'minute' : 'minutes'} left</p>
+          : plan ? <p class="small">About {Math.max(5, Math.round(plan.estimatedMinutes))} minutes</p> : null}
         {goalNote && !short ? <p class="small" data-goal>{goalNote}</p> : null}
         <div class="actions">
-          {!doneToday ? <button class="btn primary" data-start onClick={() => onStart('next')}>Start</button>
+          {saved ? (
+            <>
+              <button class="btn primary" data-resume onClick={() => onStart(saved.mode, saved)}>Pick up where you left off</button>
+              <button class="btn link small" data-start-over onClick={() => void ui.clearSession()}>Start over</button>
+            </>
+          ) : !doneToday ? <button class="btn primary" data-start onClick={() => onStart('next')}>Start</button>
             : another ? <button class="btn primary" data-another onClick={() => onStart('another')}>Do another</button>
               : <p>That's plenty for today. Your reviews need a rest to work. See you tomorrow.</p>}
-          {short ? <button class="btn quiet" data-full onClick={() => { requestFullLesson(); onStart('next'); }}>Do the full lesson instead</button> : null}
+          {short && !saved ? <button class="btn quiet" data-full onClick={() => { requestFullLesson(); onStart('next'); }}>Do the full lesson instead</button> : null}
         </div>
       </section>
 

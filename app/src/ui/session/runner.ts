@@ -11,7 +11,7 @@ import {
 import type { NodeId } from '../../content/schema';
 import { Rating, type Direction, type Grade, type Learner, type Tier } from '../../learner';
 import type { Bundle } from '../data/bundle';
-import type { UiStore } from '../store/ui';
+import type { SavedSession, UiStore } from '../store/ui';
 import { planRecap, type Lapse } from './recap';
 import { SECONDS } from '../../compiler/budget';
 import { attributeGrades, type Evidence } from './attribute';
@@ -25,11 +25,14 @@ export interface Outcome {
   ms: number;
   /** what the card saw, for splitting a miss across a multi-target item (see attribute.ts) */
   evidence?: Evidence;
+  /** passed through an untaught synonym: grades as Hard */
+  lenient?: boolean;
 }
 
 /** First-try pass → Good; pass on the retry → Hard; shown the answer → Again. */
-export function gradeOf(o: Pick<Outcome, 'correct' | 'tries'>): Grade {
+export function gradeOf(o: Pick<Outcome, 'correct' | 'tries'> & { lenient?: boolean }): Grade {
   if (!o.correct) return Rating.Again;
+  if (o.lenient) return Rating.Hard;
   return o.tries <= 1 ? Rating.Good : Rating.Hard;
 }
 
@@ -38,6 +41,24 @@ const tries12 = (t: number): 1 | 2 => (t > 1 ? 2 : 1);
 const eventOp = (item: Item): string => (item.op === 'review' ? 'warmup' : item.op);
 
 export interface SceneRun { firstTry: number; turns: number; seconds: number }
+
+/** The runner's memory of a half-run session, as plain JSON (blocks are named by their index in plan.blocks). */
+export interface RunnerSnapshot {
+  entered: number[];
+  skipped: number[];
+  presented: NodeId[];
+  notPresented: NodeId[];
+  lapses: Lapse[];
+  learnSteps: [NodeId, number][];
+  learnMisses: NodeId[];
+  typedOk: [NodeId, number][];
+  cardsDone: [number, number][];
+  tally: { scored: number; correct: number; firstTry: number };
+  scenes: [string, SceneRun][];
+  reads: [string, number][];
+  marked: string[];
+  startedAt: number;
+}
 
 let fullLessonOnce = false;
 /** "Do the full lesson instead": the next session is the standard one, whatever the standing preference. Not a settings change. */
@@ -81,6 +102,12 @@ export function anotherAllowed(learner: Learner, bundle: Bundle, ui: UiStore, no
 
 const refKey = (r: ServedRef) => `${r.kind}\u0000${r.id}\u0000${r.deliberate ? 1 : 0}\u0000${r.reason ?? ''}`;
 
+/** Planned minutes still to come in a saved session: the open block and those after it, minus the ones skipped. */
+export function savedMinutesLeft(saved: SavedSession): number {
+  const skipped = new Set(saved.runner.skipped);
+  return saved.plan.blocks.reduce((a, b, i) => (i < saved.block || b.kind === 'close' || skipped.has(i) ? a : a + b.minutes), 0);
+}
+
 export class SessionRunner {
   private readonly marked = new Set<string>();
   private started = false;
@@ -122,6 +149,55 @@ export class SessionRunner {
   ) {
     fullLessonOnce = false;
     this.capMinutes = opts.capMinutes ?? plan.budget?.minutes ?? 20;
+  }
+
+  /** Where the open block is, reported by the block (card index, teach phase, learn queue) so a reload can come back to it. */
+  cursor: SavedSession['cursor'] = {};
+
+  setCursor(c: SavedSession['cursor']): void {
+    this.cursor = c;
+    this.listeners.forEach((f) => f());
+  }
+
+  /** Everything the runner holds that a reload would lose. */
+  snapshot(): RunnerSnapshot {
+    const idx = (b: Block) => this.plan.blocks.indexOf(b);
+    const blocks = (set: Iterable<Block>) => [...set].map(idx).filter((i) => i >= 0);
+    return structuredClone({
+      entered: blocks(this.entered), skipped: blocks(this.skipped),
+      presented: [...this.presented], notPresented: [...this.notPresented],
+      lapses: this.lapses, learnSteps: [...this.learnSteps], learnMisses: [...this.learnMisses], typedOk: [...this.typedOk],
+      cardsDone: [...this.cardsDone].map(([b, n]) => [idx(b), n] as [number, number]).filter(([i]) => i >= 0),
+      tally: this.tally, scenes: [...this.scenes], reads: [...this.reads], marked: [...this.marked], startedAt: this.startedAt,
+    });
+  }
+
+  /**
+   * Pick a saved session up again: same plan, same ledger marks, the clock set
+   * so the time already spent counts and the gap does not. Does not start a
+   * learner session (the saved one is still the learner's current one).
+   */
+  static resume(learner: Learner, bundle: Bundle, ui: UiStore, saved: SavedSession, now: () => number = Date.now): SessionRunner {
+    const run = new SessionRunner(learner, bundle, ui, saved.plan, now, { capMinutes: saved.capMinutes });
+    const s = saved.runner;
+    const at = (i: number) => saved.plan.blocks[i];
+    s.entered.forEach((i) => at(i) && run.entered.add(at(i)));
+    s.skipped.forEach((i) => at(i) && run.skipped.add(at(i)));
+    s.presented.forEach((n) => run.presented.add(n));
+    s.notPresented.forEach((n) => run.notPresented.add(n));
+    run.lapses.push(...s.lapses);
+    s.learnSteps.forEach(([n, c]) => run.learnSteps.set(n, c));
+    s.learnMisses.forEach((n) => run.learnMisses.add(n));
+    s.typedOk.forEach(([n, c]) => run.typedOk.set(n, c));
+    s.cardsDone.forEach(([i, c]) => at(i) && run.cardsDone.set(at(i), c));
+    Object.assign(run.tally, s.tally);
+    s.scenes.forEach(([k, v]) => run.scenes.set(k, v));
+    s.reads.forEach(([k, v]) => run.reads.set(k, v));
+    s.marked.forEach((k) => run.marked.add(k));
+    run.cursor = structuredClone(saved.cursor);
+    run.started = true;
+    run.startedAt = now() - saved.elapsedMs;
+    return run;
   }
 
   start(): number {
@@ -412,6 +488,7 @@ export class SessionRunner {
     const path = carryOwed(advancePath(this.ui.path, this.plan, true), [...this.notPresented]);
     this.finished = true;
     await this.ui.commitSession(this.learner, path, this.learner.day(this.now()));
+    await this.ui.clearSession();
     return path;
   }
 
@@ -431,11 +508,13 @@ export class SessionRunner {
     this.finished = true;
     this.stopped = true;
     await this.ui.commitSession(this.learner, path, this.learner.day(this.now()));
+    await this.ui.clearSession();
     return path;
   }
 
-  /** Leaving early: what was shown stays in the ledger; the path does not move. */
-  async abandon(): Promise<void> {
+  /** Leaving early: what was shown stays in the ledger; the path does not move. `keepSaved` leaves the resume point for the next Start. */
+  async abandon(opts: { keepSaved?: boolean } = {}): Promise<void> {
+    if (!opts.keepSaved) await this.ui.clearSession();
     await this.learner.flush();
   }
 }

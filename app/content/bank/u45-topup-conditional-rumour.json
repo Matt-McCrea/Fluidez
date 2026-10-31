@@ -1,0 +1,781 @@
+[
+  {
+    "id": "u45-t-conditional-rumour-0001",
+    "es": "Según el diario, la empresa habría pagado sobornos.",
+    "en": "According to the paper, the company allegedly paid bribes.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:segun",
+      "g:conditional-perfect",
+      "g:gender-articles",
+      "l:diario",
+      "l:empresa",
+      "l:pagar",
+      "l:soborno",
+      "p:un-estudio-muestra-que"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "the news",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0002",
+    "es": "El acusado estaría fuera del país.",
+    "en": "The accused is reportedly abroad.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:acusado",
+      "l:estar",
+      "l:país",
+      "p:cerca-de",
+      "p:position-de"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "the news",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0003",
+    "es": "Según la radio, el presidente viajaría mañana a Cartagena.",
+    "en": "According to the radio, the president is reportedly travelling to Cartagena tomorrow.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:segun",
+      "g:conditional",
+      "g:gender-articles",
+      "l:mañana",
+      "l:presidente",
+      "l:radio",
+      "l:viajar",
+      "p:un-estudio-muestra-que"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "the news",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0004",
+    "es": "La policía tendría pruebas.",
+    "en": "The police reportedly have evidence.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "l:policía",
+      "l:prueba",
+      "l:tener"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "the news",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0005",
+    "es": "¿Qué habría dicho el alcalde según el periódico?",
+    "en": "What did the mayor reportedly say, according to the newspaper?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:segun",
+      "g:conditional-perfect",
+      "g:gender-articles",
+      "g:questions",
+      "l:alcalde",
+      "l:decir",
+      "l:periódico",
+      "l:qué"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "question",
+    "unit": "u45",
+    "theme": "the news",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0006",
+    "es": "¿Quién habría revelado la noticia según la emisora?",
+    "en": "Who reportedly revealed the news, according to the radio station?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:segun",
+      "g:conditional-perfect",
+      "g:gender-articles",
+      "g:questions",
+      "l:emisora",
+      "l:noticia",
+      "l:quién",
+      "l:revelar",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "question",
+    "unit": "u45",
+    "theme": "the news",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0007",
+    "es": "¿Crees que el gerente habría confirmado la acusación?",
+    "en": "Do you think the manager reportedly confirmed the accusation?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional-perfect",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:that-clauses",
+      "l:acusación",
+      "l:confirmar",
+      "l:creer",
+      "l:gerente"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "question",
+    "unit": "u45",
+    "theme": "the news",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0008",
+    "es": "¿Es verdad que Altamira compró el edificio?\nSegún un vecino, lo habría comprado en mayo.",
+    "en": "Is it true that Altamira bought the building?\nAccording to a neighbour, it reportedly bought it in May.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:segun",
+      "g:conditional-perfect",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:ser-identity",
+      "g:that-clauses",
+      "l:comprar",
+      "l:edificio",
+      "l:mayo",
+      "l:ser",
+      "l:vecino",
+      "l:verdad",
+      "p:es-verdad-eso-de-que",
+      "p:un-estudio-muestra-que"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "dialogue",
+    "unit": "u45",
+    "theme": "the news",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0009",
+    "es": "¿Dónde está el senador?\nEstaría en Bogotá, según la emisora.",
+    "en": "Where is the senator?\nHe is reportedly in Bogotá, according to the radio station.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:donde-esta",
+      "c:segun",
+      "g:conditional",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:dónde",
+      "l:emisora",
+      "l:estar",
+      "l:senador",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "dialogue",
+    "unit": "u45",
+    "theme": "the news",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0010",
+    "es": "Según el periodista, Hernando habría salido antes de las ocho.",
+    "en": "According to the journalist, Hernando reportedly left before eight.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:segun",
+      "g:conditional-perfect",
+      "g:gender-articles",
+      "l:antes",
+      "l:periodista",
+      "l:salir",
+      "p:un-estudio-muestra-que"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "the news",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0011",
+    "es": "Según una vecina, el dueño vendería la sede.",
+    "en": "According to a neighbour, the owner is reportedly going to sell the headquarters.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:segun",
+      "g:conditional",
+      "g:gender-articles",
+      "l:dueño",
+      "l:sede",
+      "l:vecino",
+      "l:vender",
+      "p:un-estudio-muestra-que"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "the news",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0012",
+    "es": "El alcalde no habría firmado el contrato, según el diario.",
+    "en": "The mayor reportedly did not sign the contract, according to the paper.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:segun",
+      "g:conditional-perfect",
+      "g:gender-articles",
+      "l:alcalde",
+      "l:contrato",
+      "l:diario",
+      "l:firmar"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "the news",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0013",
+    "es": "Según el suplemento, el gerente estaría en Medellín.",
+    "en": "According to the supplement, the manager is reportedly in Medellín.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:segun",
+      "g:conditional",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:estar",
+      "l:gerente",
+      "l:suplemento",
+      "p:un-estudio-muestra-que"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "the news",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0014",
+    "es": "Según Vale, Tomás habría perdido el celular.",
+    "en": "According to Vale, Tomás reportedly lost his cell phone.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:segun",
+      "g:conditional-perfect",
+      "g:gender-articles",
+      "l:celular",
+      "l:perder"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "the news",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0015",
+    "es": "Simón habría mordido al vecino, según Rosa.",
+    "en": "Simón reportedly bit the neighbour, according to Rosa.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:segun",
+      "g:conditional-perfect",
+      "g:gender-articles",
+      "l:morder",
+      "l:vecino"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "the news",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0016",
+    "es": "¿Por qué cerraron la calle?\nHabría un escándalo en la sede, según la radio.",
+    "en": "Why did they close the street?\nThere was reportedly a scandal at the headquarters, according to the radio.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:segun",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:preterite-ar",
+      "l:calle",
+      "l:cerrar",
+      "l:escándalo",
+      "l:qué",
+      "l:radio",
+      "l:sede",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "dialogue",
+    "unit": "u45",
+    "theme": "the news",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0017",
+    "es": "¿Tú crees que la empresa habría pagado esa evidencia?",
+    "en": "Do you think the company reportedly paid for that evidence?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tu-crees",
+      "g:conditional-perfect",
+      "g:demonstratives",
+      "g:gender-articles",
+      "g:that-clauses",
+      "l:creer",
+      "l:empresa",
+      "l:evidencia",
+      "l:pagar"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "question",
+    "unit": "u45",
+    "theme": "the news",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0018",
+    "es": "Según la prensa, la corrupción habría llegado a la alcaldía.",
+    "en": "According to the press, corruption has reportedly reached the mayor's office.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:segun",
+      "g:conditional-perfect",
+      "g:gender-articles",
+      "l:alcaldía",
+      "l:corrupción",
+      "l:llegar",
+      "l:prensa",
+      "p:un-estudio-muestra-que"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "the news",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0019",
+    "es": "Según fuentes cercanas, el gerente tendría un plan.",
+    "en": "According to sources close to him, the manager reportedly has a plan.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:segun",
+      "g:adjective-agreement",
+      "g:conditional",
+      "g:gender-articles",
+      "l:cercano",
+      "l:fuente",
+      "l:gerente",
+      "l:plan",
+      "l:tener",
+      "p:presuntamente-al-parecer",
+      "p:un-estudio-muestra-que"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "the news",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0020",
+    "es": "Según el vecino, los dueños venderían el carro mañana.",
+    "en": "According to the neighbour, the owners are reportedly selling the car tomorrow.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:segun",
+      "g:conditional",
+      "g:gender-articles",
+      "l:carro",
+      "l:dueño",
+      "l:mañana",
+      "l:vecino",
+      "l:vender",
+      "p:un-estudio-muestra-que"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "the news",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0021",
+    "es": "¿Cuál habría sido la causa del incendio según el diario?",
+    "en": "What was reportedly the cause of the fire, according to the paper?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:segun",
+      "g:conditional-perfect",
+      "g:gender-articles",
+      "g:questions",
+      "l:causa",
+      "l:cuál",
+      "l:diario",
+      "l:incendio",
+      "l:ser",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "question",
+    "unit": "u45",
+    "theme": "the news",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0022",
+    "es": "¿Dónde estaría el acusado según la policía?",
+    "en": "Where is the accused reportedly, according to the police?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:segun",
+      "g:conditional",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:questions",
+      "l:acusado",
+      "l:dónde",
+      "l:estar",
+      "l:policía",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "question",
+    "unit": "u45",
+    "theme": "the news",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0023",
+    "es": "Según la vecina del tercer piso, Mariana habría vendido su carro.",
+    "en": "According to the neighbour on the third floor, Mariana reportedly sold her car.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:segun",
+      "g:conditional-perfect",
+      "g:gender-articles",
+      "l:carro",
+      "l:piso",
+      "l:vecino",
+      "l:vender",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer",
+      "p:possessives-basic",
+      "p:un-estudio-muestra-que"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "gossip at Altamira",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0024",
+    "es": "¿Y Hernando?\nSegún Simón, estaría durmiendo.",
+    "en": "And Hernando?\nAccording to Simón, he is reportedly sleeping.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:segun",
+      "g:conditional",
+      "g:estar-gerund",
+      "l:dormir",
+      "l:estar"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "dialogue",
+    "unit": "u45",
+    "theme": "gossip at Altamira",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0025",
+    "es": "Según la emisora, la caída del índice habría sorprendido al gerente.",
+    "en": "According to the radio station, the fall of the index reportedly surprised the manager.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:segun",
+      "g:conditional-perfect",
+      "g:gender-articles",
+      "l:caída",
+      "l:emisora",
+      "l:gerente",
+      "l:sorprender",
+      "l:índice",
+      "p:subir-subida",
+      "p:un-estudio-muestra-que"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "gossip at Altamira",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0026",
+    "es": "El periodista habría revelado el nombre de la empresa, pero nadie lo confirma.",
+    "en": "The journalist reportedly revealed the name of the company, but nobody confirms it.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional-perfect",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:present-ar",
+      "l:confirmar",
+      "l:empresa",
+      "l:nombre",
+      "l:periodista",
+      "l:revelar"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "gossip at Altamira",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0027",
+    "es": "¿Qué habría pasado en la sede, según tú?",
+    "en": "What reportedly happened at the headquarters, according to you?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:segun",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:questions",
+      "l:pasado",
+      "l:qué",
+      "l:sede",
+      "p:que-opinas-de"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "question",
+    "unit": "u45",
+    "theme": "gossip at Altamira",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0028",
+    "es": "¿Según quién estaría el acusado en Cartagena?",
+    "en": "According to whom is the accused reportedly in Cartagena?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:segun",
+      "g:conditional",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:acusado",
+      "l:estar",
+      "l:quién",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "question",
+    "unit": "u45",
+    "theme": "gossip at Altamira",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0029",
+    "es": "¿Tienen evidencia?\nLa policía tendría varios documentos, según el diario.",
+    "en": "Do they have evidence?\nThe prosecutor's office reportedly has several documents, according to the paper.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:segun",
+      "c:tienes",
+      "g:conditional",
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:diario",
+      "l:documento",
+      "l:evidencia",
+      "l:policía",
+      "l:tener"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "dialogue",
+    "unit": "u45",
+    "theme": "gossip at Altamira",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0030",
+    "es": "Los dos socios habrían hablado con el alcalde anoche.",
+    "en": "The two partners reportedly spoke with the mayor last night.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ayer-anoche",
+      "g:conditional-perfect",
+      "g:gender-articles",
+      "l:alcalde",
+      "l:anoche",
+      "l:hablar",
+      "l:socio"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "gossip at Altamira",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0031",
+    "es": "Según mi tía, Tomás se casaría en diciembre.",
+    "en": "According to my aunt, Tomás is reportedly getting married in December.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:segun",
+      "g:conditional",
+      "g:reflexive-routine",
+      "l:casarse",
+      "l:diciembre",
+      "l:tía",
+      "p:possessives-basic",
+      "p:un-estudio-muestra-que"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "gossip at Altamira",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-conditional-rumour-0032",
+    "es": "Vale no habría dicho nada, según Tomás.",
+    "en": "Vale reportedly said nothing, according to Tomás.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:segun",
+      "g:conditional-perfect",
+      "g:negation-words",
+      "l:decir"
+    ],
+    "targets": [
+      "g:conditional-rumour"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "gossip at Altamira",
+    "source": "gen"
+  }
+]

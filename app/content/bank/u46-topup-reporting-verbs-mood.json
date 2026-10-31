@@ -1,0 +1,987 @@
+[
+  {
+    "id": "u46-t-reporting-verbs-mood-0001",
+    "es": "Mi jefe me dijo que no llegara tarde.",
+    "en": "My boss told me not to be late.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-subj",
+      "g:preterite-irregular-strong",
+      "g:reported-commands-past",
+      "g:that-clauses",
+      "l:decir",
+      "l:jefe",
+      "l:llegar",
+      "l:tarde",
+      "p:llegar-a-tiempo",
+      "p:me-te-nos-objects",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "avisos y recordatorios",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0002",
+    "es": "Mi jefe me dijo que la oficina estaba cerrada.",
+    "en": "My boss told me that the office was closed.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-participle",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-irregular-strong",
+      "g:reported-past-basic",
+      "g:that-clauses",
+      "l:cerrar",
+      "l:decir",
+      "l:estar",
+      "l:jefe",
+      "l:oficina",
+      "p:me-te-nos-objects",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "avisos y recordatorios",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0003",
+    "es": "Vale insistió en que comiéramos algo.",
+    "en": "Vale insisted that we eat something.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-subj",
+      "g:preterite-er-ir",
+      "g:subj-past-triggers",
+      "g:that-clauses",
+      "l:comer",
+      "l:insistir",
+      "p:indefinites-basic"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "avisos y recordatorios",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0004",
+    "es": "Mariana me recordó que llamara a Tomás.",
+    "en": "Mariana reminded me to call Tomás.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-subj",
+      "g:preterite-ar",
+      "g:reported-commands-past",
+      "g:that-clauses",
+      "l:llamar",
+      "l:recordar",
+      "p:me-te-nos-objects",
+      "p:personal-a",
+      "p:recordar-acordarse"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "avisos y recordatorios",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0005",
+    "es": "Mariana me recordó que Tomás llegaba hoy.",
+    "en": "Mariana reminded me that Tomás was arriving today.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "g:that-clauses",
+      "l:hoy",
+      "l:llegar",
+      "l:recordar",
+      "p:me-te-nos-objects",
+      "p:recordar-acordarse"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "avisos y recordatorios",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0006",
+    "es": "Hernando me dijo que el carro estaba listo.",
+    "en": "Hernando told me the car was ready.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-irregular-strong",
+      "g:reported-past-basic",
+      "g:that-clauses",
+      "l:carro",
+      "l:decir",
+      "l:estar",
+      "l:listo",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "avisos y recordatorios",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0007",
+    "es": "Hernando me dijo que esperara afuera.",
+    "en": "Hernando told me to wait outside.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-subj",
+      "g:preterite-irregular-strong",
+      "g:reported-commands-past",
+      "g:that-clauses",
+      "l:afuera",
+      "l:decir",
+      "l:esperar",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "avisos y recordatorios",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0008",
+    "es": "Tomás insistió en que habláramos con Rosa.",
+    "en": "Tomás insisted that we talk to Rosa.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-subj",
+      "g:preterite-er-ir",
+      "g:subj-past-triggers",
+      "g:that-clauses",
+      "l:hablar",
+      "l:insistir"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "avisos y recordatorios",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0009",
+    "es": "El abogado insistió en que no firmáramos nada.",
+    "en": "The lawyer insisted that we not sign anything.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-subj",
+      "g:negation-words",
+      "g:preterite-er-ir",
+      "g:subj-past-triggers",
+      "g:that-clauses",
+      "l:abogado",
+      "l:firmar",
+      "l:insistir"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "avisos y recordatorios",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0010",
+    "es": "El abogado nos recordó que el contrato era largo.",
+    "en": "The lawyer reminded us that the contract was long.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:era",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "g:ser-identity",
+      "g:that-clauses",
+      "l:abogado",
+      "l:contrato",
+      "l:largo",
+      "l:recordar",
+      "l:ser",
+      "p:me-te-nos-objects",
+      "p:recordar-acordarse"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "avisos y recordatorios",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0011",
+    "es": "Ellos me recordaron que mañana no trabajábamos.",
+    "en": "They reminded me that we weren't working tomorrow.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "g:that-clauses",
+      "l:mañana",
+      "l:recordar",
+      "l:trabajar",
+      "p:me-te-nos-objects",
+      "p:recordar-acordarse"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "avisos y recordatorios",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0012",
+    "es": "Ellos me recordaron que trajera el celular.",
+    "en": "They reminded me to bring my cell phone.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-subj",
+      "g:preterite-ar",
+      "g:reported-commands-past",
+      "g:that-clauses",
+      "l:celular",
+      "l:recordar",
+      "l:traer",
+      "p:llevar-traer",
+      "p:me-te-nos-objects",
+      "p:recordar-acordarse"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "avisos y recordatorios",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0013",
+    "es": "¿Tu mamá te dijo que no salieras de noche?",
+    "en": "Did your mom tell you not to go out at night?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-subj",
+      "g:preterite-irregular-strong",
+      "g:reported-commands-past",
+      "g:that-clauses",
+      "l:decir",
+      "l:mamá",
+      "l:noche",
+      "l:salir",
+      "p:me-te-nos-objects",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "question",
+    "unit": "u46",
+    "theme": "avisos y recordatorios",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0014",
+    "es": "¿Alguien insistió en que cambiaras de trabajo?",
+    "en": "Did anyone insist that you change jobs?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-subj",
+      "g:preterite-er-ir",
+      "g:subj-past-triggers",
+      "g:that-clauses",
+      "l:cambiar",
+      "l:insistir",
+      "l:trabajo",
+      "p:cambiar-de-por",
+      "p:indefinites-basic"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "question",
+    "unit": "u46",
+    "theme": "avisos y recordatorios",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0015",
+    "es": "¿Qué te dijo tu mamá que hicieras?",
+    "en": "What did your mom tell you to do?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-subj",
+      "g:preterite-irregular-strong",
+      "g:questions",
+      "g:relative-que",
+      "g:subj-relative",
+      "l:decir",
+      "l:hacer",
+      "l:mamá",
+      "l:qué",
+      "p:me-te-nos-objects",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "question",
+    "unit": "u46",
+    "theme": "avisos y recordatorios",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0016",
+    "es": "¿Alguna vez te recordaron que pagaras algo a tiempo?",
+    "en": "Did anyone ever remind you to pay something on time?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-subj",
+      "g:indefinites",
+      "g:preterite-ar",
+      "g:reported-commands-past",
+      "g:that-clauses",
+      "l:pagar",
+      "l:recordar",
+      "l:tiempo",
+      "l:vez",
+      "p:indefinites-basic",
+      "p:me-te-nos-objects",
+      "p:recordar-acordarse"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "question",
+    "unit": "u46",
+    "theme": "avisos y recordatorios",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0017",
+    "es": "¿Quién te dijo que la reunión era hoy?",
+    "en": "Who told you the meeting was today?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:era",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-irregular-strong",
+      "g:questions",
+      "g:reported-past-basic",
+      "g:that-clauses",
+      "l:decir",
+      "l:hoy",
+      "l:quién",
+      "l:reunión",
+      "l:ser",
+      "p:event-ser-en",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "question",
+    "unit": "u46",
+    "theme": "avisos y recordatorios",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0018",
+    "es": "¿Qué te dijo Vale?\nMe dijo que no esperara.",
+    "en": "What did Vale tell you?\nShe told me not to wait.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-subj",
+      "g:preterite-irregular-strong",
+      "g:questions",
+      "g:reported-commands-past",
+      "g:that-clauses",
+      "l:decir",
+      "l:esperar",
+      "l:qué",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "dialogue",
+    "unit": "u46",
+    "theme": "avisos y recordatorios",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0019",
+    "es": "¿Por qué no fuiste?\nMe dijeron que había mucho tráfico.",
+    "en": "Why didn't you go?\nThey told me there was a lot of traffic.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-states",
+      "g:preterite-irregular-strong",
+      "g:preterite-ser-ir-hacer",
+      "g:reported-past-basic",
+      "g:ser-identity",
+      "g:that-clauses",
+      "l:decir",
+      "l:qué",
+      "l:ser",
+      "l:tráfico",
+      "p:me-te-nos-objects",
+      "p:por-que-no",
+      "p:prep-questions-basic",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "dialogue",
+    "unit": "u46",
+    "theme": "avisos y recordatorios",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0020",
+    "es": "¿Quién pagó?\nÉl insistió en que pagara yo.",
+    "en": "Who paid?\nHe insisted that I pay.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-subj",
+      "g:preterite-ar",
+      "g:preterite-er-ir",
+      "g:questions",
+      "g:subj-past-triggers",
+      "g:that-clauses",
+      "l:insistir",
+      "l:pagar",
+      "l:quién"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "dialogue",
+    "unit": "u46",
+    "theme": "avisos y recordatorios",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0021",
+    "es": "Ella insistió en que no saliéramos tan tarde.",
+    "en": "She insisted that we not go out so late.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-subj",
+      "g:preterite-er-ir",
+      "g:subj-past-triggers",
+      "g:that-clauses",
+      "l:insistir",
+      "l:salir",
+      "l:tarde"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "avisos y recordatorios",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0022",
+    "es": "Mi hermano me dijo que el jugo estaba caliente.",
+    "en": "My brother told me that the juice was warm.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-irregular-strong",
+      "g:reported-past-basic",
+      "g:that-clauses",
+      "l:caliente",
+      "l:decir",
+      "l:estar",
+      "l:hermano",
+      "l:jugo",
+      "p:me-te-nos-objects",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "avisos y recordatorios",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0023",
+    "es": "Simón me recordó que tenía hambre.",
+    "en": "Simón reminded me that he was hungry.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "g:that-clauses",
+      "l:hambre",
+      "l:recordar",
+      "l:tener",
+      "p:me-te-nos-objects",
+      "p:recordar-acordarse",
+      "p:tener-hambre"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "avisos y recordatorios",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0024",
+    "es": "Mi papá me dijo que cerrara la puerta.",
+    "en": "My dad told me to close the door.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-subj",
+      "g:preterite-irregular-strong",
+      "g:reported-commands-past",
+      "g:that-clauses",
+      "l:cerrar",
+      "l:decir",
+      "l:papá",
+      "l:puerta",
+      "p:me-te-nos-objects",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "avisos y recordatorios",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0025",
+    "es": "Mi papá me dijo que la puerta estaba cerrada.",
+    "en": "My dad told me the door was closed.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-participle",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-irregular-strong",
+      "g:reported-past-basic",
+      "g:that-clauses",
+      "l:cerrar",
+      "l:decir",
+      "l:estar",
+      "l:papá",
+      "l:puerta",
+      "p:me-te-nos-objects",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "avisos y recordatorios",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0026",
+    "es": "¿Tu jefe insiste en que trabajes los sábados?",
+    "en": "Does your boss insist that you work on Saturdays?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:subj-influence",
+      "g:subj-wanting",
+      "g:that-clauses",
+      "l:insistir",
+      "l:jefe",
+      "l:sábado",
+      "l:trabajar",
+      "p:days-el-lunes",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "question",
+    "unit": "u46",
+    "theme": "casa y trabajo",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0027",
+    "es": "¿Alguien te dijo que la tienda estaba abierta?",
+    "en": "Did anyone tell you the store was open?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-participle",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-irregular-strong",
+      "g:reported-past-basic",
+      "g:that-clauses",
+      "l:abrir",
+      "l:decir",
+      "l:estar",
+      "l:tienda",
+      "p:indefinites-basic",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "question",
+    "unit": "u46",
+    "theme": "casa y trabajo",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0028",
+    "es": "¿Qué te recordó tu amigo que compraras?",
+    "en": "What did your friend remind you to buy?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-subj",
+      "g:preterite-ar",
+      "g:questions",
+      "g:relative-que",
+      "g:subj-relative",
+      "l:amigo",
+      "l:comprar",
+      "l:qué",
+      "l:recordar",
+      "p:me-te-nos-objects",
+      "p:possessives-basic",
+      "p:recordar-acordarse"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "question",
+    "unit": "u46",
+    "theme": "casa y trabajo",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0029",
+    "es": "Nos dijeron que el tinto era gratis.",
+    "en": "They told us the black coffee was free.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:era",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-irregular-strong",
+      "g:reported-past-basic",
+      "g:ser-identity",
+      "g:that-clauses",
+      "l:decir",
+      "l:gratis",
+      "l:ser",
+      "l:tinto",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "casa y trabajo",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0030",
+    "es": "Nos dijeron que pidiéramos el tinto.",
+    "en": "They told us to order the black coffee.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-subj",
+      "g:preterite-irregular-strong",
+      "g:reported-commands-past",
+      "g:that-clauses",
+      "l:decir",
+      "l:pedir",
+      "l:tinto",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "casa y trabajo",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0031",
+    "es": "Rosa siempre insistía en que comiéramos juntos.",
+    "en": "Rosa always insisted that we eat together.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "g:imperfect-subj",
+      "g:subj-past-triggers",
+      "g:that-clauses",
+      "l:comer",
+      "l:insistir",
+      "l:juntos",
+      "l:siempre",
+      "p:frequency-scale"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "casa y trabajo",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0032",
+    "es": "Mi mamá me recordó que mi tía vivía en Cali.",
+    "en": "My mom reminded me that my aunt lived in Cali.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "g:that-clauses",
+      "l:mamá",
+      "l:recordar",
+      "l:tía",
+      "l:vivir",
+      "p:me-te-nos-objects",
+      "p:possessives-basic",
+      "p:recordar-acordarse"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "casa y trabajo",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0033",
+    "es": "El profesor nos dijo que estudiáramos más.",
+    "en": "The teacher told us to study more.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-subj",
+      "g:preterite-irregular-strong",
+      "g:reported-commands-past",
+      "g:that-clauses",
+      "l:decir",
+      "l:estudiar",
+      "l:profesor",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "casa y trabajo",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0034",
+    "es": "¿Qué hacemos?\nTomás dijo que lo esperáramos.",
+    "en": "What do we do?\nTomás said we should wait for him.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:imperfect-subj",
+      "g:present-er-ir",
+      "g:preterite-irregular-strong",
+      "g:questions",
+      "g:reported-commands-past",
+      "g:that-clauses",
+      "l:decir",
+      "l:esperar",
+      "l:hacer",
+      "l:qué"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "dialogue",
+    "unit": "u46",
+    "theme": "casa y trabajo",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0035",
+    "es": "¿Compraste el pan?\nMe recordaron que lo compré ayer.",
+    "en": "Did you buy the bread?\nThey reminded me that I bought it yesterday.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ayer-anoche",
+      "c:compre-trabaje",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:that-clauses",
+      "l:ayer",
+      "l:comprar",
+      "l:pan",
+      "l:recordar",
+      "p:me-te-nos-objects",
+      "p:recordar-acordarse"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "dialogue",
+    "unit": "u46",
+    "theme": "casa y trabajo",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0036",
+    "es": "Usted me dijo que pagara aquí, no allá.",
+    "en": "You told me to pay here, not over there. (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-subj",
+      "g:preterite-irregular-strong",
+      "g:reported-commands-past",
+      "g:that-clauses",
+      "l:allá",
+      "l:aquí",
+      "l:decir",
+      "l:pagar",
+      "p:aqui-ahi-alla",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "casa y trabajo",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reporting-verbs-mood-0037",
+    "es": "Insistí en que se quedaran en mi casa.",
+    "en": "I insisted that they stay at my house.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-subj",
+      "g:preterite-er-ir",
+      "g:reflexive-routine",
+      "g:subj-past-triggers",
+      "g:that-clauses",
+      "l:casa",
+      "l:insistir",
+      "l:quedarse",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:reporting-verbs-mood"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "casa y trabajo",
+    "source": "gen"
+  }
+]

@@ -1,0 +1,820 @@
+[
+  {
+    "id": "u27-t-written-register-a2-0001",
+    "es": "Estimado señor Rojas:",
+    "en": "Dear Mr Rojas,",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:cordial-saludo",
+      "l:estimado",
+      "l:señor"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "statement",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0002",
+    "es": "Querida abuela:",
+    "en": "Dear Grandma,",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "l:abuela",
+      "l:querer"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "statement",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0003",
+    "es": "Querido Simón:",
+    "en": "Dear Simón,",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:querido-querida",
+      "l:querer"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "statement",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0004",
+    "es": "Querida Vale:",
+    "en": "Dear Vale, (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:querido-querida",
+      "l:querer"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "statement",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0005",
+    "es": "Muchas gracias por su comentario.",
+    "en": "Thank you very much for your comment.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:gracias-de-nada",
+      "l:comentario",
+      "p:gracias-por",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "statement",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0006",
+    "es": "Quedamos atentos a su respuesta.",
+    "en": "We look forward to your reply.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:quedo-atento",
+      "l:atento",
+      "l:quedar",
+      "l:respuesta",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "statement",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0007",
+    "es": "Cordial saludo, señora Ruiz.",
+    "en": "Kind regards, Mrs Ruiz.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:cordial-saludo",
+      "l:cordial",
+      "l:saludar",
+      "l:señora",
+      "p:senor-don-article"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "statement",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0008",
+    "es": "Lo esperamos pronto en el café.",
+    "en": "We hope to see you at the café soon. (to a man, formal)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:present-ar",
+      "l:café",
+      "l:esperar",
+      "l:pronto"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "statement",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0009",
+    "es": "Gracias por su reseña.",
+    "en": "Thanks for your review. (formal)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "l:reseña",
+      "p:gracias-por",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "statement",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0010",
+    "es": "Gracias por su visita al café.",
+    "en": "Thank you for your visit to the café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "l:café",
+      "l:visita",
+      "p:gracias-por",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "statement",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0011",
+    "es": "¿Me podría enviar la información?",
+    "en": "Could you send me the information? (formal)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:verb-infinitive",
+      "l:enviar",
+      "l:información",
+      "l:poder",
+      "p:me-te-nos-objects",
+      "p:request-ladder",
+      "p:te-importaria"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "question",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0012",
+    "es": "¿Podría enviarme su dirección?",
+    "en": "Could you send me your address? (formal)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:object-pronoun-position",
+      "g:verb-infinitive",
+      "l:dirección",
+      "l:enviar",
+      "l:poder",
+      "p:me-te-nos-objects",
+      "p:possessives-basic",
+      "p:request-ladder",
+      "p:te-importaria"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "question",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0013",
+    "es": "¿Me podría decir a qué hora abren?",
+    "en": "Could you tell me what time you open? (formal)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:a-que-hora",
+      "g:conditional",
+      "g:verb-infinitive",
+      "l:abrir",
+      "l:decir",
+      "l:hora",
+      "l:poder",
+      "l:qué",
+      "p:me-te-nos-objects",
+      "p:request-ladder",
+      "p:te-importaria"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "question",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0014",
+    "es": "¿Me podría enviar el menú?",
+    "en": "Could you send me the menu? (formal)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:verb-infinitive",
+      "l:enviar",
+      "l:menú",
+      "l:poder",
+      "p:me-te-nos-objects",
+      "p:request-ladder",
+      "p:te-importaria"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "question",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0015",
+    "es": "¿Usted me podría ayudar con mi cuenta?",
+    "en": "Could you help me with my account? (formal)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:verb-infinitive",
+      "l:ayudar",
+      "l:cuenta",
+      "l:poder",
+      "p:me-te-nos-objects",
+      "p:possessives-basic",
+      "p:te-importaria"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "question",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0016",
+    "es": "¿Le puedo escribir mañana?",
+    "en": "Can I write to you tomorrow? (formal)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:en-que-le-puedo-servir",
+      "c:puedo",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:escribir",
+      "l:mañana",
+      "l:poder"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "question",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0017",
+    "es": "¿Escribe usted a sus clientes?",
+    "en": "Do you write to your customers? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "l:cliente",
+      "l:escribir",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "question",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0018",
+    "es": "¿Quedó usted atento a la respuesta?",
+    "en": "Did you wait for the reply? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:atento",
+      "l:quedar",
+      "l:respuesta"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "question",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0019",
+    "es": "¿Cómo saluda usted a un cliente en un correo?",
+    "en": "How do you greet a customer in an email? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:questions",
+      "l:cliente",
+      "l:correo",
+      "l:cómo",
+      "l:saludar",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "question",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0020",
+    "es": "Estimado señor Rojas:\nGracias por su comentario.",
+    "en": "Dear Mr Rojas,\nThank you for your comment.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:cordial-saludo",
+      "l:comentario",
+      "l:estimado",
+      "l:señor",
+      "p:gracias-por",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "dialogue",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0021",
+    "es": "Querida abuela:\nUn abrazo, Mariana",
+    "en": "Dear Grandma,\nHugs, Mariana",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:un-abrazo",
+      "l:abrazo",
+      "l:abuela",
+      "l:querer"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "dialogue",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0022",
+    "es": "¿Me podría enviar la información?\nClaro, gracias de antemano.",
+    "en": "Could you send me the information? (formal)\nOf course, thanks in advance.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:claro-listo",
+      "c:gracias-de-antemano",
+      "g:conditional",
+      "g:gender-articles",
+      "g:verb-infinitive",
+      "l:antemano",
+      "l:claro",
+      "l:enviar",
+      "l:información",
+      "l:poder",
+      "p:me-te-nos-objects",
+      "p:request-ladder",
+      "p:te-importaria"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "dialogue",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0023",
+    "es": "Gracias por su comentario, señor Gómez.",
+    "en": "Thank you for your comment, Mr Gómez.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "l:comentario",
+      "l:señor",
+      "p:gracias-por",
+      "p:possessives-basic",
+      "p:senor-don-article"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "statement",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0024",
+    "es": "Hernando le escribe a su amigo: Querido Simón:",
+    "en": "Hernando writes to his friend: Dear Simón,",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:querido-querida",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:present-er-ir",
+      "l:amigo",
+      "l:escribir",
+      "l:querer",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "statement",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0025",
+    "es": "Estimado señor Gómez:",
+    "en": "Dear Mr Gómez,",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:cordial-saludo",
+      "l:estimado",
+      "l:señor"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "statement",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0026",
+    "es": "¿Me podría enviar la cuenta?",
+    "en": "Could you send me the bill? (formal)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:la-cuenta",
+      "g:conditional",
+      "g:verb-infinitive",
+      "l:cuenta",
+      "l:enviar",
+      "l:poder",
+      "p:me-te-nos-objects",
+      "p:request-ladder",
+      "p:te-importaria"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "question",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0027",
+    "es": "Hernando escribe: Gracias por su comentario.",
+    "en": "Hernando writes: Thank you for your comment.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "l:comentario",
+      "l:escribir",
+      "p:gracias-por",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "statement",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0028",
+    "es": "Quedo atento a su visita al café de Altamira.",
+    "en": "I look forward to your visit to the Altamira café. (a man writing)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:quedo-atento",
+      "g:gender-articles",
+      "l:atento",
+      "l:café",
+      "l:quedar",
+      "l:visita",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "statement",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0029",
+    "es": "Quedo atenta a sus preguntas sobre el café.",
+    "en": "I look forward to your questions about the café. (a woman writing)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:quedo-atento",
+      "g:gender-articles",
+      "l:atento",
+      "l:café",
+      "l:pregunta",
+      "l:quedar",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "statement",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0030",
+    "es": "Quedamos atentos a las dudas de la señora Ruiz.",
+    "en": "We look forward to Mrs Ruiz's questions.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:quedo-atento",
+      "g:gender-articles",
+      "l:atento",
+      "l:duda",
+      "l:quedar",
+      "l:señora",
+      "p:senor-don-article"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "statement",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0031",
+    "es": "Gracias de antemano por la información, Mariana.",
+    "en": "Thanks in advance for the information, Mariana.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:gracias-de-antemano",
+      "g:gender-articles",
+      "g:por-para-1",
+      "l:antemano",
+      "l:información"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "statement",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0032",
+    "es": "Un abrazo fuerte, Hernando",
+    "en": "A big hug, Hernando",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:un-abrazo",
+      "l:abrazo",
+      "l:fuerte"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "statement",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0033",
+    "es": "Saludos desde Altamira, Vale",
+    "en": "Greetings from Altamira, Vale",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "l:saludo"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "statement",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0034",
+    "es": "Tomás escribe a una clienta: Muchas gracias por visitarnos.",
+    "en": "Tomás writes to a customer: Thank you very much for visiting us. (a woman)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:a-cuantas-cuotas",
+      "c:gracias-de-nada",
+      "g:object-pronoun-position",
+      "g:present-er-ir",
+      "l:cliente",
+      "l:escribir",
+      "l:visitar",
+      "p:gracias-por",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "statement",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0035",
+    "es": "¿Cómo termina usted un correo formal?",
+    "en": "How do you end a formal email? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:questions",
+      "l:correo",
+      "l:cómo",
+      "l:formal",
+      "l:terminar",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "question",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0036",
+    "es": "¿Escribe usted a su abuela con cordial saludo o con un abrazo?",
+    "en": "Do you write to your grandmother with a formal greeting or a hug? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:cordial-saludo",
+      "c:un-abrazo",
+      "g:present-er-ir",
+      "l:abrazo",
+      "l:abuela",
+      "l:cordial",
+      "l:escribir",
+      "l:saludo",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "question",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  },
+  {
+    "id": "u27-t-written-register-a2-0037",
+    "es": "¿Cómo abro el correo?\nCon Estimado señor Rojas:",
+    "en": "How do I open the email?\nWith Dear Mr Rojas,",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:questions",
+      "l:abrir",
+      "l:correo",
+      "l:cómo",
+      "l:señor",
+      "p:question-word-order",
+      "p:senor-don-article"
+    ],
+    "targets": [
+      "g:written-register-a2"
+    ],
+    "kind": "dialogue",
+    "unit": "u27",
+    "theme": "emails and reviews",
+    "source": "gen"
+  }
+]

@@ -1,0 +1,799 @@
+[
+  {
+    "id": "u42-t-register-ladder-0001",
+    "es": "Pásame el control, Tomás.",
+    "en": "Pass me the remote, Tomás. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:commands-tu",
+      "g:commands-with-pronouns",
+      "g:gender-articles",
+      "l:control",
+      "l:pasar",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "statement",
+    "unit": "u42",
+    "theme": "one favour, five rungs",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0002",
+    "es": "¿Me pasas el control, Tomás?",
+    "en": "Will you pass me the remote, Tomás? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:control",
+      "l:pasar",
+      "p:me-te-nos-objects",
+      "p:me-trae"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "question",
+    "unit": "u42",
+    "theme": "one favour, five rungs",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0003",
+    "es": "¿Me podría pasar el control, señor?",
+    "en": "Could you pass me the remote, sir? (formal)",
+    "accept": [
+      "¿Podría pasarme el control, señor?"
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:verb-infinitive",
+      "l:control",
+      "l:pasar",
+      "l:poder",
+      "l:señor",
+      "p:me-te-nos-objects",
+      "p:me-trae",
+      "p:request-ladder",
+      "p:te-importaria"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "question",
+    "unit": "u42",
+    "theme": "one favour, five rungs",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0004",
+    "es": "¿Será que me puede traer un vaso con hielo?",
+    "en": "Could you possibly bring me a glass with ice? (formal)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-puede-ayudar",
+      "g:future-promises",
+      "g:gender-articles",
+      "g:ser-identity",
+      "g:that-clauses",
+      "g:verb-infinitive",
+      "l:hielo",
+      "l:poder",
+      "l:ser",
+      "l:traer",
+      "l:vaso",
+      "p:con-sin",
+      "p:llevar-traer",
+      "p:request-ladder"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "question",
+    "unit": "u42",
+    "theme": "one favour, five rungs",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0005",
+    "es": "Préstame tu celular un momento.",
+    "en": "Lend me your phone for a moment. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:commands-tu",
+      "g:commands-with-pronouns",
+      "g:gender-articles",
+      "l:celular",
+      "l:momento",
+      "l:prestar",
+      "p:me-te-nos-objects",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "statement",
+    "unit": "u42",
+    "theme": "one favour, five rungs",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0006",
+    "es": "¿Me prestas tu celular, Rosa?",
+    "en": "Will you lend me your phone, Rosa? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:celular",
+      "l:prestar",
+      "p:me-te-nos-objects",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "question",
+    "unit": "u42",
+    "theme": "one favour, five rungs",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0007",
+    "es": "¿Me podría prestar su celular un momento?",
+    "en": "Could you lend me your phone for a moment? (formal)",
+    "accept": [
+      "¿Podría prestarme su celular un momento?"
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:verb-infinitive",
+      "l:celular",
+      "l:momento",
+      "l:poder",
+      "l:prestar",
+      "p:me-te-nos-objects",
+      "p:me-trae",
+      "p:possessives-basic",
+      "p:request-ladder",
+      "p:te-importaria"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "question",
+    "unit": "u42",
+    "theme": "one favour, five rungs",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0008",
+    "es": "¿Será que me puede prestar su celular un momento?",
+    "en": "Could you possibly lend me your phone for a moment? (formal)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-puede-ayudar",
+      "g:future-promises",
+      "g:gender-articles",
+      "g:ser-identity",
+      "g:that-clauses",
+      "g:verb-infinitive",
+      "l:celular",
+      "l:momento",
+      "l:poder",
+      "l:prestar",
+      "l:ser",
+      "p:possessives-basic",
+      "p:request-ladder"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "question",
+    "unit": "u42",
+    "theme": "one favour, five rungs",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0009",
+    "es": "Llámame mañana temprano, Mariana.",
+    "en": "Call me early tomorrow, Mariana. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:commands-tu",
+      "g:commands-with-pronouns",
+      "l:llamar",
+      "l:mañana",
+      "l:temprano",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "statement",
+    "unit": "u42",
+    "theme": "one favour, five rungs",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0010",
+    "es": "¿Me llamas esta noche, Vale?",
+    "en": "Will you call me tonight, Vale? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:llamar",
+      "l:noche",
+      "p:demonstratives-basic",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "question",
+    "unit": "u42",
+    "theme": "one favour, five rungs",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0011",
+    "es": "¿Me podría llamar esta noche, señora?",
+    "en": "Could you call me tonight, ma'am? (formal)",
+    "accept": [
+      "¿Podría llamarme esta noche, señora?"
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:verb-infinitive",
+      "l:llamar",
+      "l:noche",
+      "l:poder",
+      "l:señora",
+      "p:demonstratives-basic",
+      "p:me-te-nos-objects",
+      "p:request-ladder",
+      "p:te-importaria"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "question",
+    "unit": "u42",
+    "theme": "one favour, five rungs",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0012",
+    "es": "¿Será que me puede llamar esta noche?",
+    "en": "Could you possibly call me tonight? (formal)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-puede-ayudar",
+      "g:future-promises",
+      "g:ser-identity",
+      "g:that-clauses",
+      "g:verb-infinitive",
+      "l:llamar",
+      "l:noche",
+      "l:poder",
+      "l:ser",
+      "p:demonstratives-basic",
+      "p:request-ladder"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "question",
+    "unit": "u42",
+    "theme": "one favour, five rungs",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0013",
+    "es": "¿Me ayudas con el contrato, Hernando?",
+    "en": "Will you help me with the report, Hernando? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:ayudar",
+      "l:contrato",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "question",
+    "unit": "u42",
+    "theme": "office and Altamira",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0014",
+    "es": "¿Me podría ayudar con el contrato, doctor?",
+    "en": "Could you help me with the report, doctor? (formal)",
+    "accept": [
+      "¿Podría ayudarme con el contrato, doctor?"
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:verb-infinitive",
+      "l:ayudar",
+      "l:contrato",
+      "l:doctor",
+      "l:poder",
+      "p:me-te-nos-objects",
+      "p:request-ladder",
+      "p:te-importaria"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "question",
+    "unit": "u42",
+    "theme": "office and Altamira",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0015",
+    "es": "¿Será que me puede ayudar con el contrato?",
+    "en": "Could you possibly help me with the report? (formal)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-puede-ayudar",
+      "g:future-promises",
+      "g:gender-articles",
+      "g:ser-identity",
+      "g:that-clauses",
+      "g:verb-infinitive",
+      "l:ayudar",
+      "l:contrato",
+      "l:poder",
+      "l:ser",
+      "p:request-ladder"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "question",
+    "unit": "u42",
+    "theme": "office and Altamira",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0016",
+    "es": "Firma aquí, Simón.",
+    "en": "Sign here, Simón. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:aquí",
+      "l:firmar",
+      "p:aqui-ahi-alla"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "statement",
+    "unit": "u42",
+    "theme": "office and Altamira",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0017",
+    "es": "¿Me podría explicar este documento?",
+    "en": "Could you explain this document to me? (formal)",
+    "accept": [
+      "¿Podría explicarme este documento?"
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:verb-infinitive",
+      "l:documento",
+      "l:explicar",
+      "l:poder",
+      "p:demonstratives-basic",
+      "p:me-te-nos-objects",
+      "p:request-ladder",
+      "p:te-importaria"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "question",
+    "unit": "u42",
+    "theme": "office and Altamira",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0018",
+    "es": "¿Me explicas esto, Mariana?",
+    "en": "Will you explain this to me, Mariana? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:explicar",
+      "p:demonstratives-basic",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "question",
+    "unit": "u42",
+    "theme": "office and Altamira",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0019",
+    "es": "¿Será que me puede explicar este documento?",
+    "en": "Could you possibly explain this document to me? (formal)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-puede-ayudar",
+      "g:future-promises",
+      "g:ser-identity",
+      "g:that-clauses",
+      "g:verb-infinitive",
+      "l:documento",
+      "l:explicar",
+      "l:poder",
+      "l:ser",
+      "p:demonstratives-basic",
+      "p:request-ladder"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "question",
+    "unit": "u42",
+    "theme": "office and Altamira",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0020",
+    "es": "¿A quién le pides ayuda con una tarea difícil?",
+    "en": "Who do you ask for help with a hard task?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:stem-e-i",
+      "l:ayuda",
+      "l:difícil",
+      "l:pedir",
+      "l:quién",
+      "l:tarea",
+      "p:preguntar-pedir",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "question",
+    "unit": "u42",
+    "theme": "questions to the learner",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0021",
+    "es": "¿Cómo le pides a un amigo que te abra la puerta?",
+    "en": "How do you ask a friend to open the door for you?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:questions",
+      "g:relative-que",
+      "g:stem-e-i",
+      "g:subj-relative",
+      "g:subj-wanting",
+      "l:abrir",
+      "l:amigo",
+      "l:cómo",
+      "l:pedir",
+      "l:puerta",
+      "p:me-te-nos-objects",
+      "p:preguntar-pedir"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "question",
+    "unit": "u42",
+    "theme": "questions to the learner",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0022",
+    "es": "¿Cómo le pregunta usted la hora a un desconocido?",
+    "en": "How do you ask a stranger the time? (formal)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:present-ar",
+      "g:questions",
+      "l:cómo",
+      "l:desconocido",
+      "l:hora",
+      "l:preguntar",
+      "p:preguntar-pedir"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "question",
+    "unit": "u42",
+    "theme": "questions to the learner",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0023",
+    "es": "¿Qué le dices a tu hermano para pedirle un favor?",
+    "en": "What do you say to your brother to ask him a favor?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:object-pronoun-position",
+      "g:questions",
+      "g:stem-e-i",
+      "l:decir",
+      "l:favor",
+      "l:hermano",
+      "l:pedir",
+      "l:qué",
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:possessives-basic",
+      "p:preguntar-pedir"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "question",
+    "unit": "u42",
+    "theme": "questions to the learner",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0024",
+    "es": "¿Me abres la puerta, Tomás?\nClaro, ya voy.",
+    "en": "Will you open the door for me, Tomás? (to a friend)\nSure, I'm coming.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:claro-listo",
+      "c:voy-vas",
+      "c:ya-voy",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:present-er-ir",
+      "l:abrir",
+      "l:claro",
+      "l:ir",
+      "l:puerta",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "dialogue",
+    "unit": "u42",
+    "theme": "questions to the learner",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0025",
+    "es": "¿Me podría decir dónde queda el banco?\nClaro, por esa calle.",
+    "en": "Could you tell me where the bank is? (formal)\nSure, down that street.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:claro-listo",
+      "g:conditional",
+      "g:demonstratives",
+      "g:gender-articles",
+      "g:por-para-1",
+      "g:present-ar",
+      "g:questions",
+      "g:verb-infinitive",
+      "l:banco",
+      "l:calle",
+      "l:claro",
+      "l:decir",
+      "l:dónde",
+      "l:poder",
+      "l:quedar",
+      "p:me-te-nos-objects",
+      "p:quedar-cerca",
+      "p:request-ladder",
+      "p:te-importaria"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "dialogue",
+    "unit": "u42",
+    "theme": "questions to the learner",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0026",
+    "es": "Ayúdame con las maletas, Rosa.",
+    "en": "Help me with the suitcases, Rosa. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:commands-tu",
+      "g:commands-with-pronouns",
+      "g:gender-articles",
+      "l:ayudar",
+      "l:maleta",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "statement",
+    "unit": "u42",
+    "theme": "more rungs",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0027",
+    "es": "¿Me ayudas con las maletas, Vale?",
+    "en": "Will you help me with the suitcases, Vale? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:ayudar",
+      "l:maleta",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "question",
+    "unit": "u42",
+    "theme": "more rungs",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0028",
+    "es": "¿Me podría ayudar con las maletas, señor?",
+    "en": "Could you help me with the suitcases, sir? (formal)",
+    "accept": [
+      "¿Podría ayudarme con las maletas, señor?"
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:verb-infinitive",
+      "l:ayudar",
+      "l:maleta",
+      "l:poder",
+      "l:señor",
+      "p:me-te-nos-objects",
+      "p:request-ladder",
+      "p:te-importaria"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "question",
+    "unit": "u42",
+    "theme": "more rungs",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0029",
+    "es": "¿Será que me puede ayudar con las maletas?",
+    "en": "Could you possibly help me with the suitcases? (formal)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-puede-ayudar",
+      "g:future-promises",
+      "g:gender-articles",
+      "g:ser-identity",
+      "g:that-clauses",
+      "g:verb-infinitive",
+      "l:ayudar",
+      "l:maleta",
+      "l:poder",
+      "l:ser",
+      "p:request-ladder"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "question",
+    "unit": "u42",
+    "theme": "more rungs",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0030",
+    "es": "¿Me abres la ventana, Simón?",
+    "en": "Will you open the window for me, Simón? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:abrir",
+      "l:ventana",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "question",
+    "unit": "u42",
+    "theme": "more rungs",
+    "source": "gen"
+  },
+  {
+    "id": "u42-t-register-ladder-0031",
+    "es": "¿Será que me puede abrir la puerta?",
+    "en": "Could you possibly open the door for me? (formal)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-puede-ayudar",
+      "g:future-promises",
+      "g:gender-articles",
+      "g:ser-identity",
+      "g:that-clauses",
+      "g:verb-infinitive",
+      "l:abrir",
+      "l:poder",
+      "l:puerta",
+      "l:ser",
+      "p:request-ladder"
+    ],
+    "targets": [
+      "g:register-ladder"
+    ],
+    "kind": "question",
+    "unit": "u42",
+    "theme": "more rungs",
+    "source": "gen"
+  }
+]

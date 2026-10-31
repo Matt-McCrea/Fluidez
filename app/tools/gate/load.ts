@@ -8,6 +8,7 @@ import { BankSentence, GraphNode, Scene, StoryChapter, TeachingScript, Unit, Wri
 import { closedClass, registerLexemes, registerNames, type ChunkSpec, type PatternSpec, type TagOptions } from '../../src/engine/tagger';
 import { kindOf, type Kind } from './extract';
 import type { Finding } from './findings';
+import { unmetRequires } from '../../src/compiler/content';
 
 export interface Loaded {
   abs: string;
@@ -198,4 +199,20 @@ export function castNames(text: string): string[] {
 export function loadCurriculum(appDir: string, contentDir = join(appDir, 'content')): Curriculum {
   const files = listJson(contentDir).map((p) => loadFile(p, appDir, null));
   return buildCurriculum(files, contentDir, []);
+}
+
+/**
+ * The requires the compiler would refuse at `session`: the shared rule (src/compiler/content.ts
+ * `unmetRequires`) with the gate's notion of known: a lexeme node, or a node the schedule never
+ * teaches, is not held against an item; a taught chunk covers the grammar it unpacks; a lexeme
+ * id that is not a graph node (a tagger phantom) never blocks.
+ */
+export function lateRequires(cur: Curriculum, requires: readonly string[], session: number): string[] {
+  const has = (r: string) => {
+    const n = cur.nodes.get(r);
+    if (!n || n.kind === 'lexeme') return true;
+    const at = cur.taughtAt.get(r);
+    return at === undefined || at <= session;
+  };
+  return unmetRequires(requires, has, cur.nodes);
 }

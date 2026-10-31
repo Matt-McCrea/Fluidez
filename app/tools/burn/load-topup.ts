@@ -11,7 +11,7 @@
 import { readFileSync, readdirSync, existsSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { execFileSync } from 'node:child_process';
-import { loadCurriculum } from '../gate/load';
+import { loadCurriculum, lateRequires } from '../gate/load';
 
 const APP = '/Users/Matthew/Fluidez/app';
 const SCRATCH = '/tmp/fluidez-burn';
@@ -82,12 +82,7 @@ if (!scenesMode) {
     if (!d.scene || !existsSync(sceneFile(d.scene))) return;
     const S = cur.daySession.get(`${u.id}#${i}`)!;
     const sc = JSON.parse(readFileSync(sceneFile(d.scene), 'utf8')) as { requires?: string[] };
-    const bad = (sc.requires ?? []).filter((r) => {
-      if (r.startsWith('l:')) return false;
-      const n = cur.nodes.get(r);
-      if (!n || n.kind === 'lexeme') return false;
-      return (cur.taughtAt.get(r) ?? 0) > S;
-    });
+    const bad = lateRequires(cur, sc.requires ?? [], S);
     if (!bad.length) return;
     const id = `scene-fix-${d.scene}`;
     if (existing.has(id) || jobs.some((j) => j.id === id)) return;

@@ -65,11 +65,14 @@ export function checkMinimum({ plan, input }: Seen) {
 
 export function checkBudgets({ plan }: Seen) {
   expect(plan.newNodes.grammar.length).toBeLessThanOrEqual(1);
-  expect(plan.newNodes.chunks.length).toBeLessThanOrEqual(budget.CHUNK_CAP);
-  expect(plan.newNodes.contrasts.length).toBeLessThanOrEqual(budget.CONTRAST_CAP);
-  expect(plan.newNodes.patterns.length).toBeLessThanOrEqual(plan.type === 'patterns' ? budget.PATTERNS_DAY_CAP : budget.PATTERN_CAP);
-  const cap = plan.type === 'minimum' ? 0 : Math.max(budget.REPAY_CAP.lexeme, budget.LEXEME_CAP[plan.type]);
-  expect(plan.newNodes.lexemes.length).toBeLessThanOrEqual(cap);
+  // an output day may pull forward the owed items its scene needs, past the per-kind caps (diagnostic 'repaid')
+  if (!plan.diagnostics.some((d) => d.code === 'repaid')) {
+    expect(plan.newNodes.chunks.length).toBeLessThanOrEqual(budget.CHUNK_CAP);
+    expect(plan.newNodes.contrasts.length).toBeLessThanOrEqual(budget.CONTRAST_CAP);
+    expect(plan.newNodes.patterns.length).toBeLessThanOrEqual(plan.type === 'patterns' ? budget.PATTERNS_DAY_CAP : budget.PATTERN_CAP);
+    const cap = plan.type === 'minimum' ? 0 : Math.max(budget.REPAY_CAP.lexeme, budget.LEXEME_CAP[plan.type]);
+    expect(plan.newNodes.lexemes.length).toBeLessThanOrEqual(cap);
+  }
   if (plan.budget.severe) expect(Object.values(plan.newNodes).flat()).toEqual([]);
   if (plan.budget.throttled) {
     expect(plan.newNodes.patterns).toEqual([]);

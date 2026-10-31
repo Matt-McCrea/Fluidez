@@ -1,7 +1,7 @@
 // A headless learner for the session player: walks a plan block by block and
 // answers through the SAME card builders, checkers and runner calls the
 // components use, either always right or always wrong.
-import type { Block, Item } from '../../src/compiler';
+import type { Block, Item, ReviewItem } from '../../src/compiler';
 import { checkWriting, type Constraint } from '../../src/check';
 import { Learner, MemoryStore, type Tier } from '../../src/learner';
 import { fixtureContent } from '../../src/ui/fixtures';
@@ -12,6 +12,7 @@ import {
 import { SessionRunner, compilePlan, softBlock, truncatable } from '../../src/ui/session/runner';
 import { LearnQueue, breakRuns, formatOf, interleave, teachOrder } from '../../src/ui/session/order';
 import { recapCard } from '../../src/ui/session/recap';
+import { licensedTenses } from '../../src/ui/session/tenses';
 import { checkTurn, turnOrder } from '../../src/ui/session/scene';
 import { MemoryKV, UiStore } from '../../src/ui/store/ui';
 
@@ -96,7 +97,7 @@ export function runBlock(b: Block, run: SessionRunner, mood: Mood, walk: Walk) {
   };
   switch (b.kind) {
     case 'warmup': case 'leech':
-      runCards(b.items, (it) => reviewCard(it as never, bundle), b.kind === 'leech', (it) => reviewCard(it as never, bundle, 'pickSpanish'));
+      runCards(b.items, (it) => reviewCard(it as never, bundle), b.kind === 'leech', (it) => reviewCard(it as never, bundle, (it as ReviewItem).direction === 'productive' ? 'cloze' : 'pickSpanish'));
       break;
     case 'learn': {
       // the same queue the Learn component walks
@@ -140,7 +141,7 @@ export function runBlock(b: Block, run: SessionRunner, mood: Mood, walk: Walk) {
     }
     case 'structuredInput': case 'controlledOutput': case 'cuedProduction': case 'communicative':
     case 'remix': case 'readingCheck': case 'extraReading':
-      runCards(b.items, (it) => practiceCard(it as never, bundle, run.plan.seed), true);
+      runCards(b.items, (it) => practiceCard(it as never, bundle, run.plan.seed, licensedTenses(run.learner.nodes(), (id) => bundle.node(id)?.tags)), true);
       break;
     case 'recap':
       const rc = b.items.map((it) => recapCard(it, bundle));

@@ -1,0 +1,1001 @@
+[
+  {
+    "id": "u37-t-questions-prepositions-0001",
+    "es": "¿Con quién hablaste ayer?",
+    "en": "Who did you talk to yesterday? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ayer-anoche",
+      "g:preterite-ar",
+      "l:ayer",
+      "l:hablar",
+      "l:quién",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u37",
+    "theme": "preposition first",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0002",
+    "es": "¿Con quién habla Vale tanto por teléfono?",
+    "en": "Who is Vale always talking to on the phone?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:hablar",
+      "l:quién",
+      "l:teléfono",
+      "p:prep-questions-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u37",
+    "theme": "preposition first",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0003",
+    "es": "¿De qué hablan ustedes?",
+    "en": "What are you all talking about?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:hablar",
+      "l:qué",
+      "p:prep-questions-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u37",
+    "theme": "preposition first",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0004",
+    "es": "¿En qué piensa Hernando en el taxi?",
+    "en": "What does Hernando think about in the taxi?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:pensar",
+      "l:qué",
+      "l:taxi",
+      "p:pensar-en",
+      "p:prep-questions-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u37",
+    "theme": "preposition first",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0005",
+    "es": "¿Para quién es este tinto?",
+    "en": "Who is this black coffee for?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:quién",
+      "l:ser",
+      "l:tinto",
+      "p:demonstratives-basic",
+      "p:para-inf",
+      "p:prep-questions-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u37",
+    "theme": "preposition first",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0006",
+    "es": "¿Para qué sirve esto?",
+    "en": "What is this for?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:stem-e-i",
+      "l:qué",
+      "l:servir",
+      "p:demonstratives-basic",
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:prep-questions-basic",
+      "p:question-word-order",
+      "p:servir-para"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u37",
+    "theme": "preposition first",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0007",
+    "es": "¿A quién llamas?",
+    "en": "Who are you calling? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:llamar",
+      "l:quién",
+      "p:personal-a",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u37",
+    "theme": "preposition first",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0008",
+    "es": "¿A quién le escribe Tomás?",
+    "en": "Who is Tomás writing to?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:indirect-objects",
+      "g:present-er-ir",
+      "l:escribir",
+      "l:quién",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u37",
+    "theme": "preposition first",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0009",
+    "es": "¿De dónde viene ese ruido?",
+    "en": "Where is that noise coming from?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:stem-boot",
+      "l:dónde",
+      "l:ruido",
+      "l:venir",
+      "p:prep-questions-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u37",
+    "theme": "preposition first",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0010",
+    "es": "¿Con qué sueñas?",
+    "en": "What do you dream about? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:stem-boot",
+      "l:qué",
+      "l:soñar",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u37",
+    "theme": "preposition first",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0011",
+    "es": "¿De quién es esta bolsa?",
+    "en": "Whose bag is this?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:bolsa",
+      "l:quién",
+      "l:ser",
+      "p:de-owner",
+      "p:demonstratives-basic",
+      "p:prep-questions-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u37",
+    "theme": "preposition first",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0012",
+    "es": "¿Por quién preguntaba el señor?",
+    "en": "Who was the man asking about?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:por-para-1",
+      "l:preguntar",
+      "l:quién",
+      "l:señor",
+      "p:preguntar-pedir",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u37",
+    "theme": "preposition first",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0013",
+    "es": "¿A qué hora cierran?",
+    "en": "What time do they close?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:a-que-hora",
+      "g:stem-boot",
+      "l:cerrar",
+      "l:hora",
+      "l:qué"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u37",
+    "theme": "preposition first",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0014",
+    "es": "¿En qué trabaja usted?",
+    "en": "What do you work in? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:qué",
+      "l:trabajar",
+      "p:prep-questions-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u37",
+    "theme": "preposition first",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0015",
+    "es": "¿Con quién vive su hermano?",
+    "en": "Who does your brother live with? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "l:hermano",
+      "l:quién",
+      "l:vivir",
+      "p:possessives-basic",
+      "p:prep-questions-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u37",
+    "theme": "preposition first",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0016",
+    "es": "¿Para quién trabajas?",
+    "en": "Who do you work for? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:quién",
+      "l:trabajar",
+      "p:para-inf",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u37",
+    "theme": "preposition first",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0017",
+    "es": "¿De qué se trata?",
+    "en": "What is it about?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "g:reflexive-routine",
+      "l:qué",
+      "l:tratarse",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u37",
+    "theme": "preposition first",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0018",
+    "es": "¿Con quién hablabas?\nCon Mariana.",
+    "en": "Who were you talking to?\nWith Mariana.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "l:hablar",
+      "l:quién",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "dialogue",
+    "unit": "u37",
+    "theme": "preposition first",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0019",
+    "es": "¿A quién esperas?\nA Vale.",
+    "en": "Who are you waiting for?\nFor Vale.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:esperar",
+      "l:quién",
+      "p:personal-a",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "dialogue",
+    "unit": "u37",
+    "theme": "preposition first",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0020",
+    "es": "¿De qué hablaban?\nDel café.",
+    "en": "What were they talking about?\nAbout the café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "l:café",
+      "l:hablar",
+      "l:qué",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "dialogue",
+    "unit": "u37",
+    "theme": "preposition first",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0021",
+    "es": "¿Para quién es la llave?\nPara Hernando.",
+    "en": "Who is the key for?\nFor Hernando.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:llave",
+      "l:quién",
+      "l:ser",
+      "p:para-inf",
+      "p:prep-questions-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "dialogue",
+    "unit": "u37",
+    "theme": "preposition first",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0022",
+    "es": "Mariana no sabe con quién hablar.",
+    "en": "Mariana does not know who to talk to.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:indirect-questions",
+      "g:present-er-ir",
+      "l:hablar",
+      "l:quién",
+      "l:saber",
+      "p:no-se-que-hacer",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u37",
+    "theme": "preposition first",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0023",
+    "es": "No sé de quién es la caja.",
+    "en": "I do not know whose box it is.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:no-se",
+      "g:gender-articles",
+      "g:indirect-questions",
+      "g:ser-identity",
+      "g:yo-irregular",
+      "l:caja",
+      "l:quién",
+      "l:saber",
+      "l:ser",
+      "p:de-owner"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u37",
+    "theme": "preposition first",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0024",
+    "es": "Tomás pregunta para qué sirve la llave.",
+    "en": "Tomás asks what the key is for.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:indirect-questions",
+      "g:present-ar",
+      "g:stem-e-i",
+      "l:llave",
+      "l:preguntar",
+      "l:qué",
+      "l:servir",
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:preguntar-pedir",
+      "p:servir-para"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u37",
+    "theme": "preposition first",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0025",
+    "es": "No entiendo en qué piensa Hernando.",
+    "en": "I do not understand what Hernando is thinking about.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:no-entiendo",
+      "g:indirect-questions",
+      "g:stem-boot",
+      "l:entender",
+      "l:pensar",
+      "l:qué",
+      "p:pensar-en"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u37",
+    "theme": "preposition first",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0026",
+    "es": "¿Con quién quiere hablar usted?",
+    "en": "Who do you want to speak to? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:hablar",
+      "l:querer",
+      "l:quién",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u37",
+    "theme": "story and phone calls",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0027",
+    "es": "¿De parte de quién pregunta la señora?",
+    "en": "Who does the lady say is calling?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:de-parte-de-quien",
+      "g:gender-articles",
+      "g:present-ar",
+      "l:parte",
+      "l:preguntar",
+      "l:quién",
+      "l:señora",
+      "p:preguntar-pedir"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u37",
+    "theme": "story and phone calls",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0028",
+    "es": "¿A quién busca, señor?",
+    "en": "Who are you looking for, sir?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:buscar",
+      "l:quién",
+      "l:señor",
+      "p:personal-a",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u37",
+    "theme": "story and phone calls",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0029",
+    "es": "¿Para quién trabaja Mariana ahora?",
+    "en": "Who does Mariana work for now?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:ahora",
+      "l:quién",
+      "l:trabajar",
+      "p:para-inf",
+      "p:prep-questions-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u37",
+    "theme": "story and phone calls",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0030",
+    "es": "¿En qué piensa Simón todo el día?",
+    "en": "What does Simón think about all day?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:día",
+      "l:pensar",
+      "l:qué",
+      "p:pensar-en",
+      "p:prep-questions-basic",
+      "p:question-word-order",
+      "p:todos-los-dias"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u37",
+    "theme": "story and phone calls",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0031",
+    "es": "¿Con qué sueña Tomás?",
+    "en": "What does Tomás dream about?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:stem-boot",
+      "l:qué",
+      "l:soñar",
+      "p:prep-questions-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u37",
+    "theme": "story and phone calls",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0032",
+    "es": "¿De dónde llamas?",
+    "en": "Where are you calling from? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:dónde",
+      "l:llamar",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u37",
+    "theme": "story and phone calls",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0033",
+    "es": "¿A qué hora llegó Vale?",
+    "en": "What time did Vale arrive?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:a-que-hora",
+      "g:preterite-ar",
+      "l:hora",
+      "l:llegar",
+      "l:qué",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u37",
+    "theme": "story and phone calls",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0034",
+    "es": "¿De quién es el mensaje?",
+    "en": "Whose message is it?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:mensaje",
+      "l:quién",
+      "l:ser",
+      "p:de-owner",
+      "p:prep-questions-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u37",
+    "theme": "story and phone calls",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0035",
+    "es": "¿Sobre qué escribe Mariana?",
+    "en": "What is Mariana writing about?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "l:escribir",
+      "l:qué",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u37",
+    "theme": "story and phone calls",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0036",
+    "es": "¿Con quién estás?\nCon Tomás, en el café.",
+    "en": "Who are you with?\nWith Tomás, at the café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:café",
+      "l:estar",
+      "l:quién",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "dialogue",
+    "unit": "u37",
+    "theme": "story and phone calls",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0037",
+    "es": "¿De dónde llama?\nDe Barranquilla.",
+    "en": "Where is he calling from?\nFrom Barranquilla.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:dónde",
+      "l:llamar",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "dialogue",
+    "unit": "u37",
+    "theme": "story and phone calls",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0038",
+    "es": "¿Para qué lo quiere?\nPara el artículo.",
+    "en": "What does she want it for?\nFor the article.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:artículo",
+      "l:querer",
+      "l:qué",
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "dialogue",
+    "unit": "u37",
+    "theme": "story and phone calls",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0039",
+    "es": "¿En quién confías?\nEn Hernando.",
+    "en": "Who do you trust?\nHernando.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:confiar",
+      "l:quién",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "dialogue",
+    "unit": "u37",
+    "theme": "story and phone calls",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0040",
+    "es": "Hernando habla de su esposa, pero no dice con quién vive.",
+    "en": "Hernando talks about his wife, but he does not say who he lives with.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:indirect-questions",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:stem-e-i",
+      "l:decir",
+      "l:esposa",
+      "l:hablar",
+      "l:quién",
+      "l:vivir",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u37",
+    "theme": "story and phone calls",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0041",
+    "es": "Mariana no sabe a quién pedirle el número.",
+    "en": "Mariana does not know who to ask for the number.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:indirect-questions",
+      "g:object-pronoun-position",
+      "g:present-er-ir",
+      "l:número",
+      "l:pedir",
+      "l:quién",
+      "l:saber",
+      "p:no-se-que-hacer"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u37",
+    "theme": "story and phone calls",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0042",
+    "es": "Dime con quién hablaste.",
+    "en": "Tell me who you talked to. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:commands-tu",
+      "g:commands-with-pronouns",
+      "g:indirect-questions",
+      "g:preterite-ar",
+      "l:decir",
+      "l:hablar",
+      "l:quién",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u37",
+    "theme": "story and phone calls",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0043",
+    "es": "Vale pregunta a qué hora llega Tomás.",
+    "en": "Vale asks what time Tomás arrives.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:a-que-hora",
+      "g:present-ar",
+      "l:hora",
+      "l:llegar",
+      "l:preguntar",
+      "l:qué",
+      "p:preguntar-pedir"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u37",
+    "theme": "story and phone calls",
+    "source": "gen"
+  },
+  {
+    "id": "u37-t-questions-prepositions-0044",
+    "es": "Quiero saber de dónde vienes.",
+    "en": "I want to know where you come from. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:quiero",
+      "g:indirect-questions",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:dónde",
+      "l:querer",
+      "l:saber",
+      "l:venir",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:questions-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u37",
+    "theme": "story and phone calls",
+    "source": "gen"
+  }
+]

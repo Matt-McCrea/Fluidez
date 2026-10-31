@@ -21,14 +21,17 @@
 // its English (café, hotel, profesor).
 //
 // THE LADDER. Levels are the units that have at least MIN_ITEMS such items,
-// in course order. The check starts in the middle of A1 and is a 2-up/1-down
-// staircase: two right in a row at a level moves up one, a wrong answer (or
-// "I don't know") moves down one. It asks MAX_ITEMS items (12 to 15), and
-// stops early when someone misses four in a row at the bottom level: they are
-// starting from zero, and do not need to be told so six more times.
+// in course order. The check starts in the middle of A1, or at the first
+// level of the band the learner says they are at. Two right in a row move up
+// (two levels until the first miss, then one); a wrong answer (or "I don't
+// know") moves down one. It asks MAX_ITEMS items (a level still short of its
+// third answer gets up to three more), and stops early when someone misses
+// four in a row at the bottom level: they are starting from zero, and do not
+// need to be told so six more times.
 //
-// THE RESULT. A level is passed with at least 2 of 3 right (and at least two
-// asked). The learner starts at the unit after the highest level passed
+// THE RESULT. A level is passed with at least 2 of 3 right (and at least
+// two asked at A1, three above it, so a B1 or B2 placement rests on three
+// items from that band). The learner starts at the unit after the highest level passed
 // (unit 0 when none is).
 //
 // SEEDING. Placing at unit k makes the earlier units' nodes known, but not as
@@ -39,13 +42,15 @@
 // band's warm-up budget.
 import { initialPath, type PathState } from '../../compiler';
 import { BAND_WARMUP_MINUTES } from '../../compiler/budget';
-import type { BankSentence, NodeId } from '../../content/schema';
+import type { BankSentence, Band, NodeId } from '../../content/schema';
+import type { TenseKey } from '../../engine';
 import { deaccent } from '../../engine';
 import { ALL_FEATURES, chooseItem, rng, shuffle, structuredInput } from '../../exercises';
 import { LEARNED_STABILITY_DAYS, productivePolicy, type Direction, type Learner } from '../../learner';
 import type { Bundle } from '../data/bundle';
 import type { Txt } from './cards';
 import { isName } from './names';
+import { licensedTenses } from './tenses';
 
 export type ProbeKind = 'form' | 'choose' | 'question';
 
@@ -73,11 +78,21 @@ export interface Probe {
   result(): number;
 }
 
-export interface ProbeSource {
-  start(): Probe;
+export interface ProbeOptions {
+  /** the band the learner says they are at: the check starts at that band's first level */
+  start?: Band;
 }
 
-export const MAX_ITEMS = 14;
+export interface ProbeSource {
+  start(opts?: ProbeOptions): Probe;
+}
+
+export const MAX_ITEMS = 20;
+/** a level with fewer than this many answers may keep being asked past MAX_ITEMS, up to this many extra items */
+export const MIN_LEVEL_ASKED = 3;
+export const OVERTIME_ITEMS = 3;
+/** which feature a sentence's form item is for, when it offers more than one: the ones the old check rarely reached first */
+export const FEATURE_PRIORITY = ['copula', 'porpara', 'clitic', 'mood', 'gender', 'number', 'tense', 'person'];
 export const MIN_ITEMS = 4;
 /** misses in a row at the bottom level that end the check early */
 export const EARLY_STOP_MISSES = 4;
@@ -173,11 +188,11 @@ function questionItem(s: BankSentence, unit: number, seed: string): ProbeItem | 
 export const capitaliseTurns = (t: string): string => t.replace(/([.?!…])\s+(\p{Ll})/gu, (_, p: string, c: string) => `${p} ${c.toUpperCase()}`);
 
 /** Every fair item one sentence can give (one per feature for 'form'). */
-export function itemsFor(s: BankSentence, unit: number, seed: string): ProbeItem[] {
+export function itemsFor(s: BankSentence, unit: number, seed: string, taught?: readonly TenseKey[]): ProbeItem[] {
   const out: ProbeItem[] = [];
   const r = rng(`${seed}|${s.id}`);
   for (const f of shuffle([...ALL_FEATURES], r)) {
-    const it = structuredInput(s, f, { seed });
+    const it = structuredInput(s, f, { seed, taught });
     if (!it) continue;
     const item: ProbeItem = {
       id: `pl:${it.id}`, kind: 'form', sentence: s.id, unit, ask: 'Read them all, then pick one', prompt: en(it.question),
@@ -185,7 +200,7 @@ export function itemsFor(s: BankSentence, unit: number, seed: string): ProbeItem
     };
     if (fairItem(item, s.es, s.en)) out.push(item);
   }
-  const ch = chooseItem(s, { seed, maxDistractors: 2 });
+  const ch = chooseItem(s, { seed, maxDistractors: 2, taught });
   if (ch) {
     const item: ProbeItem = {
       id: `pl:${ch.id}`, kind: 'choose', sentence: s.id, unit, ask: 'Which form fits?', prompt: es(ch.gapped), sub: en(`${ch.en}  ${ch.cue}`),
@@ -198,33 +213,44 @@ export function itemsFor(s: BankSentence, unit: number, seed: string): ProbeItem
   return out;
 }
 
-interface Level { unit: number; items: ProbeItem[] }
+export interface Level { unit: number; items: ProbeItem[]; /** the grammar features its form items test */ features?: string[] }
 
 /** The ladder's levels: units with enough fair items, in course order, kinds interleaved. */
 export function probeLevels(b: Bundle, seed = 'placement'): Level[] {
   const levels: Level[] = [];
+  /** every grammar node met up to and including the unit being built: what its tense items may show */
+  const met: NodeId[] = [];
   b.course.units.forEach((u, i) => {
+    for (const d of u.days) met.push(...d.focus, ...d.chunks, ...d.lexemes);
+    const taught = licensedTenses(met, (id) => b.node(id)?.tags);
     const ids = b.index.byUnit.get(u.id) ?? [];
     const r = rng(`${seed}|${u.id}`);
     const byKind: Record<ProbeKind, ProbeItem[]> = { form: [], choose: [], question: [] };
-    const used = new Set<string>();
-    /** form items per feature: the rarest feature a sentence offers wins, so it is not all tense */
+    /** items taken per sentence: a sentence may give two form items (differing in feature) or one of any other kind */
+    const taken = new Map<string, { forms: number; other: boolean }>();
+    /** form items per feature: the least used feature a sentence offers wins, ties by FEATURE_PRIORITY */
     const features = new Map<string, number>();
     const featureOf = (it: ProbeItem) => (it.id.split('|')[2] ?? '').split(':')[0];
+    const rank = (f: string) => { const k = FEATURE_PRIORITY.indexOf(f); return k < 0 ? FEATURE_PRIORITY.length : k; };
     for (const id of shuffle([...ids], r)) {
       const s = b.sentences.get(id);
       if (!s) continue;
-      const all = itemsFor(s, i, seed);
-      const forms = all.filter((x) => x.kind === 'form').sort((x, y) => (features.get(featureOf(x)) ?? 0) - (features.get(featureOf(y)) ?? 0));
-      for (const it of [...forms.slice(0, 1), ...all.filter((x) => x.kind !== 'form')]) {
-        if (byKind[it.kind].length >= 12 || used.has(s.id)) continue;
+      const all = itemsFor(s, i, seed, taught);
+      const forms = all.filter((x) => x.kind === 'form').sort((x, y) => (features.get(featureOf(x)) ?? 0) - (features.get(featureOf(y)) ?? 0) || rank(featureOf(x)) - rank(featureOf(y)));
+      for (const it of [...forms.slice(0, 2), ...all.filter((x) => x.kind !== 'form')]) {
+        const t = taken.get(s.id) ?? { forms: 0, other: false };
+        if (byKind[it.kind].length >= 12) continue;
         if (it.kind === 'form') {
           const f = featureOf(it);
-          if ((features.get(f) ?? 0) >= 4) continue;
+          if (t.other || t.forms >= 2 || (features.get(f) ?? 0) >= 4) continue;
           features.set(f, (features.get(f) ?? 0) + 1);
+          t.forms++;
+        } else {
+          if (t.other || t.forms) continue;
+          t.other = true;
         }
+        taken.set(s.id, t);
         byKind[it.kind].push(it);
-        used.add(s.id);
       }
       if (byKind.form.length >= 12 && byKind.choose.length >= 12 && byKind.question.length >= 6) break;
     }
@@ -233,18 +259,31 @@ export function probeLevels(b: Bundle, seed = 'placement'): Level[] {
     for (let k = 0; items.length < byKind.form.length + byKind.choose.length + byKind.question.length; k++) {
       for (const kind of ['form', 'choose', 'question'] as ProbeKind[]) if (byKind[kind][k]) items.push(byKind[kind][k]);
     }
-    if (items.length >= MIN_ITEMS) levels.push({ unit: i, items });
+    if (items.length >= MIN_ITEMS) levels.push({ unit: i, items, features: [...new Set(byKind.form.map(featureOf))] });
   });
   return levels;
 }
 
+const BAND_ORDER: readonly string[] = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+
 /** The adaptive check over these levels. */
-export function ladder(levels: Level[], bands: (unit: number) => string | undefined, max = MAX_ITEMS): Probe {
+export function ladder(levels: Level[], bands: (unit: number) => string | undefined, max = MAX_ITEMS, opts: ProbeOptions = {}): Probe {
   const a1 = levels.map((l, k) => (bands(l.unit) === 'A1' ? k : -1)).filter((k) => k >= 0);
-  let p = a1.length ? a1[Math.floor((a1.length - 1) / 2)] : Math.floor((levels.length - 1) / 2);
+  const middle = a1.length ? a1[Math.floor((a1.length - 1) / 2)] : Math.floor((levels.length - 1) / 2);
+  /** the first level of the asked band, or of the nearest lower band that has one */
+  const startAt = (): number => {
+    if (!opts.start || opts.start === 'A1') return middle;
+    for (let b = BAND_ORDER.indexOf(opts.start); b >= 1; b--) {
+      const k = levels.findIndex((l) => bands(l.unit) === BAND_ORDER[b]);
+      if (k >= 0) return k;
+    }
+    return middle;
+  };
+  let p = startAt();
   const cursor = levels.map(() => 0);
   const stats = levels.map(() => ({ right: 0, total: 0 }));
   let streak = 0;
+  let missed = false;
   let missesAtBottom = 0;
   let asked = 0;
   let current: { item: ProbeItem; level: number } | undefined;
@@ -256,7 +295,8 @@ export function ladder(levels: Level[], bands: (unit: number) => string | undefi
     next() {
       if (over) return undefined;
       if (current) return current.item;
-      if (asked >= max) { over = true; return undefined; }
+      // past the limit only to give the level being decided its third answer, and never by more than OVERTIME_ITEMS
+      if (asked >= max && !(asked < max + OVERTIME_ITEMS && stats[p].total < MIN_LEVEL_ASKED && cursor[p] < levels[p].items.length)) { over = true; return undefined; }
       // this level's next item, or the nearest level that still has one
       for (let d = 0; d < levels.length; d++) {
         for (const k of d ? [p - d, p + d] : [p]) {
@@ -278,8 +318,10 @@ export function ladder(levels: Level[], bands: (unit: number) => string | undefi
         stats[k].right++;
         missesAtBottom = 0;
         streak++;
-        if (streak >= 2 && p < levels.length - 1) { p++; streak = 0; }
+        // until the first miss two right in a row climb two levels (the learner is far from their edge); after it, one
+        if (streak >= 2) { p += missed ? Math.min(1, levels.length - 1 - p) : Math.min(2, levels.length - 1 - p); streak = 0; }
       } else {
+        missed = true;
         streak = 0;
         if (p === 0) missesAtBottom++;
         p = Math.max(0, p - 1);
@@ -288,19 +330,19 @@ export function ladder(levels: Level[], bands: (unit: number) => string | undefi
     },
     result() {
       let best = -1;
-      stats.forEach((s, k) => { if (s.total >= 2 && s.right / s.total >= 2 / 3) best = k; });
+      stats.forEach((s, k) => { if (s.total >= (bands(levels[k].unit) === 'A1' ? 2 : 3) && s.right / s.total >= 2 / 3) best = k; });
       return best < 0 ? 0 : levels[best].unit + 1;
     },
   };
 }
 
-/** The default check: the course's own bank sentences. */
-export function contentProbe(b: Bundle, seed = 'placement'): ProbeSource {
+/** The default check: the course's own bank sentences. `defaults.start` is the band the learner says they are at. */
+export function contentProbe(b: Bundle, seed = 'placement', defaults: ProbeOptions = {}): ProbeSource {
   return {
-    start() {
+    start(opts: ProbeOptions = {}) {
       const levels = probeLevels(b, seed);
       const units = b.course.units.length;
-      const inner = ladder(levels, (u) => b.course.units[u]?.band);
+      const inner = ladder(levels, (u) => b.course.units[u]?.band, MAX_ITEMS, { ...defaults, ...opts });
       return {
         get max() { return inner.max; },
         get asked() { return inner.asked; },

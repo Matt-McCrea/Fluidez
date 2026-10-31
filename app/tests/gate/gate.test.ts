@@ -491,3 +491,40 @@ describe('(q) the schedule: a day\'s scene must fit what is taught by then', () 
     expect(run(['g:ser-identity'])(true)).toEqual([]);
   });
 });
+
+describe('(q2) the schedule follows the compiler: chunk cover, phantom lexemes, writing per day', () => {
+  const scene = (requires: string[]) => ({
+    id: 'sc-u01-a', unit: 'u01', title: 'T', brief: 'b', spare: false, requires,
+    turns: [1, 2, 3].map((n) => ({ id: `t${n}`, npc: 'Hola.', npcEn: 'Hi.', intent: 'Greet.', accept: ['Hola.'], require: [], next: n < 3 ? `t${n + 1}` : null })),
+  });
+  const runScene = (requires: string[], unpacks = false) => {
+    const fx = makeFixture({ lexemes: true });
+    const unit = JSON.parse(readFileSync(`${fx.content}/units/u01.json`, 'utf8'));
+    unit.days[1].scene = 'sc-u01-a';          // day 2 (session 2); g:present-ar is taught on day 3
+    fx.write('units/u01.json', unit);
+    if (unpacks) {
+      const chunks = JSON.parse(readFileSync(`${fx.content}/graph/chunks.json`, 'utf8'));
+      chunks[0].unpacks = 'g:present-ar';
+      fx.write('graph/chunks.json', chunks);
+    }
+    return by(runGate({ appDir: fx.app, strict: true, paths: [fx.write('scenes/sc-u01-a.json', scene(requires))] }), 'schedule', 'error');
+  };
+  test('late grammar covered by a taught chunk that unpacks it passes; uncovered it does not', () => {
+    expect(runScene(['g:ser-identity', 'c:quiero', 'g:present-ar'], true)).toEqual([]);
+    expect(runScene(['g:ser-identity', 'c:quiero', 'g:present-ar'], false)).toHaveLength(1);
+  });
+  test('a phantom lexeme (not a graph node) never blocks', () => {
+    expect(runScene(['g:ser-identity', 'l:buena', 'l:hace'])).toEqual([]);
+  });
+  test('writing: warns for a day with no admissible task, not otherwise', () => {
+    const fx = makeFixture();
+    const task = (id: string, requires: string[]) => ({ id, unit: 'u01', prompt: 'Write.', minWords: 3, maxWords: 20, constraints: [], model: 'Tomás habla español.', requires });
+    const p = fx.write('writing/u01.json', [task('w-u01-01', ['g:present-ar'])]);   // taught day 3 (session 3)
+    const w = by(runGate({ appDir: fx.app, paths: [p] }), 'schedule', 'warning').filter((f) => /no writing task/.test(f.problem));
+    expect(w).toHaveLength(1);
+    expect(w[0].problem).toContain('day 2');
+    expect(w[0].problem).not.toContain('day 4');
+    fx.write('writing/u01.json', [task('w-u01-01', ['g:present-ar']), task('w-u01-02', ['g:ser-identity'])]);
+    expect(by(runGate({ appDir: fx.app, paths: [p] }), 'schedule', 'warning').filter((f) => /no writing task/.test(f.problem))).toEqual([]);
+  });
+});

@@ -1,0 +1,854 @@
+[
+  {
+    "id": "u39-t-referring-back-0001",
+    "es": "Vale habló con Simón y con Mariana; esta dijo que no tiene tiempo.",
+    "en": "Vale spoke with Simón and with Mariana; the latter said she has no time.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:preterite-ar",
+      "g:preterite-irregular-strong",
+      "g:stem-boot",
+      "g:that-clauses",
+      "l:decir",
+      "l:hablar",
+      "l:tener",
+      "l:tiempo",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0002",
+    "es": "Tomás compró un carro y una bicicleta. Esta es azul y aquel es negro.",
+    "en": "Tomás bought a car and a bicycle. The latter is blue and the former is black.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:ser-identity",
+      "l:azul",
+      "l:bicicleta",
+      "l:carro",
+      "l:comprar",
+      "l:negro",
+      "l:ser",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0003",
+    "es": "Mi hermano y mi prima llegaron tarde; este trajo pan y aquella trajo jugo.",
+    "en": "My brother and my cousin arrived late; the latter brought bread and the former brought juice.",
+    "accept": [
+      "Mi hermano y mi prima llegaron tarde",
+      "este trajo pan y esta trajo jugo."
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:preterite-ar",
+      "g:preterite-irregular-strong",
+      "l:hermano",
+      "l:jugo",
+      "l:llegar",
+      "l:pan",
+      "l:prima",
+      "l:tarde",
+      "l:traer",
+      "p:demonstratives-basic",
+      "p:llegar-a-tiempo",
+      "p:llevar-traer",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0004",
+    "es": "Hernando conoció a Rosa en un taxi. Dicha noche cambió su vida.",
+    "en": "Hernando met Rosa in a taxi. That night in question changed his life.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:preterite-er-ir",
+      "l:cambiar",
+      "l:conocer",
+      "l:decir",
+      "l:noche",
+      "l:taxi",
+      "l:vida",
+      "p:personal-a",
+      "p:possessives-basic",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0005",
+    "es": "El gerente recibió una solicitud. Dicha solicitud llegó ayer.",
+    "en": "The manager received a request. The request in question arrived yesterday.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ayer-anoche",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:preterite-er-ir",
+      "l:ayer",
+      "l:decir",
+      "l:gerente",
+      "l:llegar",
+      "l:recibir",
+      "l:solicitud"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0006",
+    "es": "Escribí un ensayo sobre la amistad. Dicho ensayo salió el domingo.",
+    "en": "I wrote an essay about friendship. The essay in question came out on Sunday.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "l:amistad",
+      "l:decir",
+      "l:domingo",
+      "l:ensayo",
+      "l:escribir",
+      "l:salir",
+      "p:days-el-lunes"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0007",
+    "es": "El plazo termina el viernes. Lo anterior no cambia el plan del café.",
+    "en": "The deadline ends on Friday. The above does not change the plan for the café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:lo-adjective",
+      "g:present-ar",
+      "l:anterior",
+      "l:café",
+      "l:cambiar",
+      "l:plan",
+      "l:plazo",
+      "l:terminar",
+      "l:viernes",
+      "p:days-el-lunes"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0008",
+    "es": "Mariana y Tomás viven en el mismo barrio.",
+    "en": "Mariana and Tomás live in the same neighborhood.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:barrio",
+      "l:vivir"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0009",
+    "es": "Vale y yo trabajamos en la misma facultad.",
+    "en": "Vale and I work in the same faculty.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:facultad",
+      "l:trabajar"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0010",
+    "es": "¿Con quién hablaste, con Tomás o con Hernando?\nCon Hernando; este me dio la lección.",
+    "en": "Who did you talk to, Tomás or Hernando?\nWith Hernando; the latter gave me the lesson.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:preterite-irregular-strong",
+      "l:dar",
+      "l:hablar",
+      "l:lección",
+      "l:quién",
+      "p:demonstratives-basic",
+      "p:me-te-nos-objects",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "dialogue",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0011",
+    "es": "¿Ya leíste el resumen y el ensayo?\nSí, pero este es más largo.",
+    "en": "Did you already read the summary and the essay?\nYes, but the latter is longer.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "g:ser-identity",
+      "l:ensayo",
+      "l:largo",
+      "l:leer",
+      "l:resumen",
+      "l:ser",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "dialogue",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0012",
+    "es": "¿Tienes un carro y una bicicleta? ¿Cuál usas más?",
+    "en": "Do you have a car and a bicycle? Which one do you use more? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:questions",
+      "g:stem-boot",
+      "l:bicicleta",
+      "l:carro",
+      "l:cuál",
+      "l:tener",
+      "l:usar"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0013",
+    "es": "¿Vives en el mismo barrio que tu familia?",
+    "en": "Do you live in the same neighborhood as your family? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:barrio",
+      "l:familia",
+      "l:vivir",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "question",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0014",
+    "es": "¿Estudias en la misma academia que tus amigos?",
+    "en": "Do you study at the same academy as your friends? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:academia",
+      "l:amigo",
+      "l:estudiar",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "question",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0015",
+    "es": "¿Qué opinas de lo anterior?",
+    "en": "What do you think of the above? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:lo-adjective",
+      "g:present-ar",
+      "g:questions",
+      "l:anterior",
+      "l:opinar",
+      "l:qué",
+      "p:que-opinas-de"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "question",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0016",
+    "es": "¿Trabajas en el mismo lugar que tu hermano?",
+    "en": "Do you work in the same place as your brother? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:hermano",
+      "l:lugar",
+      "l:trabajar",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "question",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0017",
+    "es": "¿Tienes un jefe y un gerente? ¿Quién de ellos te ayuda más?",
+    "en": "Do you have a boss and a manager? Which of them helps you more? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:gender-articles",
+      "g:prep-pronouns",
+      "g:present-ar",
+      "g:questions",
+      "g:stem-boot",
+      "l:ayudar",
+      "l:gerente",
+      "l:jefe",
+      "l:quién",
+      "l:tener",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0018",
+    "es": "Mi madre y mi tía hablaron del plazo; esta dijo que es muy corto.",
+    "en": "My mother and my aunt talked about the deadline; the latter said it is too short.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:preterite-irregular-strong",
+      "g:ser-identity",
+      "g:that-clauses",
+      "l:corto",
+      "l:decir",
+      "l:hablar",
+      "l:madre",
+      "l:plazo",
+      "l:ser",
+      "l:tía",
+      "p:demonstratives-basic",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0019",
+    "es": "Simón y Vale están en la sala. Este habla y esta escucha.",
+    "en": "Simón and Vale are in the room. The latter talks and the former listens.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:present-ar",
+      "l:escuchar",
+      "l:estar",
+      "l:hablar",
+      "l:sala",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0020",
+    "es": "Tengo una lección y un resumen para el lunes. Dicho resumen es difícil de escribir.",
+    "en": "I have a lesson and a summary for Monday. The summary in question is hard to write.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tengo",
+      "g:gender-articles",
+      "g:ser-identity",
+      "g:yo-irregular",
+      "l:decir",
+      "l:difícil",
+      "l:escribir",
+      "l:lección",
+      "l:lunes",
+      "l:resumen",
+      "l:ser",
+      "l:tener",
+      "p:adj-de-inf",
+      "p:days-el-lunes",
+      "p:dificil-de-inf",
+      "p:para-inf"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0021",
+    "es": "Vale no tiene tiempo hoy, y lo anterior es un problema para el plazo.",
+    "en": "Vale has no time today, and the above is a problem for the deadline.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:gender-articles",
+      "g:lo-adjective",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:anterior",
+      "l:hoy",
+      "l:plazo",
+      "l:problema",
+      "l:ser",
+      "l:tener",
+      "l:tiempo",
+      "p:para-inf"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0022",
+    "es": "Agregué un párrafo a mi ensayo. Dicho párrafo es la conclusión.",
+    "en": "I added a paragraph to my essay. The paragraph in question is the conclusion.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-spelling-stem",
+      "g:ser-identity",
+      "l:agregar",
+      "l:conclusión",
+      "l:decir",
+      "l:ensayo",
+      "l:párrafo",
+      "l:ser",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0023",
+    "es": "Rosa y Hernando eran amigos. Este todavía viene al café.",
+    "en": "Rosa and Hernando were friends. The latter still comes to the café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:amigo",
+      "l:café",
+      "l:ser",
+      "l:venir",
+      "p:demonstratives-basic",
+      "p:ya-todavia-basic"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0024",
+    "es": "Tomás tiene una bicicleta y un carro. Este es nuevo.",
+    "en": "Tomás has a bicycle and a car. The latter is new.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:gender-articles",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:bicicleta",
+      "l:carro",
+      "l:nuevo",
+      "l:ser",
+      "l:tener",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0025",
+    "es": "El profesor y la estudiante hablaron; esta quería un certificado.",
+    "en": "The teacher and the student talked; the latter wanted a certificate.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "l:certificado",
+      "l:estudiante",
+      "l:hablar",
+      "l:profesor",
+      "l:querer",
+      "p:demonstratives-basic",
+      "p:queria-cortesia"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0026",
+    "es": "Mis amigos y yo estudiamos la misma lección.",
+    "en": "My friends and I study the same lesson.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:amigo",
+      "l:estudiar",
+      "l:lección",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0027",
+    "es": "¿Vamos al mismo café?\nSí, el mismo de siempre.",
+    "en": "Are we going to the same café?\nYes, the same as always.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "l:café",
+      "l:ir",
+      "l:siempre",
+      "p:frequency-scale",
+      "p:ir-a-venir-de-place"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "dialogue",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0028",
+    "es": "Hay una presentación y un estudio. Dicho estudio es de la facultad.",
+    "en": "There is a presentation and a study. The study in question is from the faculty.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:hay",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "g:ser-identity",
+      "l:decir",
+      "l:estudio",
+      "l:facultad",
+      "l:presentación",
+      "l:ser"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0029",
+    "es": "Vale tiene una hermana y un hermano. Esta vive en Cali y aquel vive en Bogotá.",
+    "en": "Vale has a sister and a brother. The latter lives in Cali and the former lives in Bogotá.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:demonstratives",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:stem-boot",
+      "l:hermana",
+      "l:hermano",
+      "l:tener",
+      "l:vivir",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0030",
+    "es": "Llegó una carta del banco. Dicha carta dice que el plazo termina hoy.",
+    "en": "A letter from the bank arrived. The letter in question says the deadline ends today.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:preterite-ar",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:banco",
+      "l:carta",
+      "l:decir",
+      "l:hoy",
+      "l:llegar",
+      "l:plazo",
+      "l:terminar"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0031",
+    "es": "Hoy no tengo tiempo.\nEntonces lo anterior cambia el plan.",
+    "en": "I have no time today.\nThen the above changes the plan.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:entonces-bueno",
+      "c:tengo",
+      "g:gender-articles",
+      "g:lo-adjective",
+      "g:present-ar",
+      "g:yo-irregular",
+      "l:anterior",
+      "l:cambiar",
+      "l:hoy",
+      "l:plan",
+      "l:tener",
+      "l:tiempo"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "dialogue",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0032",
+    "es": "Mariana trajo café y pan. Este estaba frío y aquel estaba caliente.",
+    "en": "Mariana brought coffee and bread. The latter was cold and the former was hot.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:estar-location-states",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-irregular-strong",
+      "l:café",
+      "l:caliente",
+      "l:estar",
+      "l:frío",
+      "l:pan",
+      "l:traer",
+      "p:demonstratives-basic",
+      "p:llevar-traer"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-referring-back-0033",
+    "es": "Los dos libros son de la misma familia, pero este es más viejo.",
+    "en": "Both books are by the same family, but the latter is older.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:familia",
+      "l:libro",
+      "l:ser",
+      "l:viejo",
+      "p:demonstratives-basic",
+      "p:viejo-antiguo-mayor"
+    ],
+    "targets": [
+      "g:referring-back"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "referring back",
+    "source": "gen"
+  }
+]

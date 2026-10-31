@@ -4,8 +4,9 @@ import { useState } from 'preact/hooks';
 import { Reader, wordCount } from '../blocks/read';
 import { Es, Heading, undash } from '../components/text';
 import { useApp } from '../context';
+import type { PracticeSpec } from '../session/practice-spec';
 
-export function Story() {
+export function Story(_props: { onPractise?: (spec: PracticeSpec) => void } = {}) {
   const app = useApp();
   const { learner, bundle, ui } = app;
   const [open, setOpen] = useState<string | null>(null);

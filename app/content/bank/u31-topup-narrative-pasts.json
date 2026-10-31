@@ -1,0 +1,815 @@
+[
+  {
+    "id": "u31-t-narrative-pasts-0001",
+    "es": "Era sábado y hacía mucho calor.",
+    "en": "It was Saturday and it was very hot.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:era",
+      "g:imperfect-habitual",
+      "g:imperfect-states",
+      "g:ser-identity",
+      "l:calor",
+      "l:hacer",
+      "l:ser",
+      "l:sábado",
+      "p:days-el-lunes",
+      "p:hace-frio",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0002",
+    "es": "Llovía cuando salimos del café.",
+    "en": "It was raining when we left the café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:present-er-ir",
+      "l:café",
+      "l:llover",
+      "l:salir",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0003",
+    "es": "Vale estaba leyendo cuando entró Hernando.",
+    "en": "Vale was reading when Hernando came in.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-progressive",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "l:entrar",
+      "l:estar",
+      "l:leer",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0004",
+    "es": "Entré, me senté y pedí un tinto.",
+    "en": "I came in, sat down and ordered a black coffee.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:preterite-er-ir",
+      "g:reflexive-routine",
+      "l:entrar",
+      "l:pedir",
+      "l:sentarse",
+      "l:tinto",
+      "p:preguntar-pedir"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0005",
+    "es": "Cuando llegamos, Rosa ya había cerrado la puerta.",
+    "en": "When we arrived, Rosa had already closed the door.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:pluperfect",
+      "g:present-ar",
+      "l:cerrar",
+      "l:llegar",
+      "l:puerta",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0006",
+    "es": "Era de noche y nadie hablaba.",
+    "en": "It was night and nobody was talking.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:era",
+      "g:imperfect-habitual",
+      "g:imperfect-states",
+      "g:ser-identity",
+      "l:hablar",
+      "l:noche",
+      "l:ser",
+      "p:es-de-noche-tarde"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0007",
+    "es": "Tomás abrió el cuaderno que Rosa había dejado en la mesa.",
+    "en": "Tomás opened the notebook that Rosa had left on the table.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:pluperfect",
+      "g:preterite-er-ir",
+      "g:relative-que",
+      "l:abrir",
+      "l:cuaderno",
+      "l:dejar",
+      "l:mesa"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0008",
+    "es": "Simón gritaba mientras Vale preparaba el desayuno.",
+    "en": "Simón was squawking while Vale was making breakfast.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "l:desayuno",
+      "l:gritar",
+      "l:preparar"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0009",
+    "es": "Hacía frío, así que Hernando se puso la chaqueta y salió.",
+    "en": "It was cold, so Hernando put on his jacket and went out.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:cause-result",
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:pret-vs-imperfect",
+      "g:preterite-er-ir",
+      "g:preterite-irregular-strong",
+      "g:verbs-of-change",
+      "l:chaqueta",
+      "l:frío",
+      "l:hacer",
+      "l:ponerse",
+      "l:salir",
+      "p:hace-frio",
+      "p:lavarse-las-manos"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0010",
+    "es": "Mariana estaba cansada porque no había dormido bien.",
+    "en": "Mariana was tired because she had not slept well.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:bien-y-tu",
+      "c:porque",
+      "g:adjective-agreement",
+      "g:cause-result",
+      "g:estar-location-states",
+      "g:imperfect-states",
+      "g:pluperfect",
+      "l:bien",
+      "l:cansado",
+      "l:dormir",
+      "l:estar"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0011",
+    "es": "Sonó el teléfono y Tomás contestó.",
+    "en": "The phone rang and Tomás answered.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:contestar",
+      "l:sonar",
+      "l:teléfono"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0012",
+    "es": "Cuando vi la foto, reconocí a Rosa.",
+    "en": "When I saw the photo, I recognized Rosa.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "l:foto",
+      "l:reconocer",
+      "l:ver",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0013",
+    "es": "Nosotros caminábamos con Vale cuando empezó a llover.",
+    "en": "We were walking with Vale when it started to rain.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "g:verb-infinitive",
+      "l:caminar",
+      "l:empezar",
+      "l:llover",
+      "p:cuando-basic",
+      "p:empezar-terminar"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0014",
+    "es": "Joaquín no llegó porque había perdido el bus.",
+    "en": "Joaquín did not arrive because he had missed the bus.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:porque",
+      "g:cause-result",
+      "g:gender-articles",
+      "g:pluperfect",
+      "g:preterite-ar",
+      "l:bus",
+      "l:llegar",
+      "l:perder"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0015",
+    "es": "Era un día normal hasta que llegó la carta.",
+    "en": "It was a normal day until the letter arrived.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:era",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "g:ser-identity",
+      "l:carta",
+      "l:día",
+      "l:llegar",
+      "l:normal",
+      "l:ser"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0016",
+    "es": "Ellos ya habían comido cuando llegué yo.",
+    "en": "They had already eaten when I arrived.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:pluperfect",
+      "g:preterite-spelling-stem",
+      "l:comer",
+      "l:llegar",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0017",
+    "es": "Hernando contaba sus historias y todos lo escuchaban.",
+    "en": "Hernando told his stories and everybody listened to him.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:imperfect-habitual",
+      "l:contar",
+      "l:escuchar",
+      "l:historia",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0018",
+    "es": "Vale abrió la ventana porque hacía calor.",
+    "en": "Vale opened the window because it was hot.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:porque",
+      "g:cause-result",
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:pret-vs-imperfect",
+      "g:preterite-er-ir",
+      "l:abrir",
+      "l:calor",
+      "l:hacer",
+      "l:ventana",
+      "p:hace-frio"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0019",
+    "es": "No encontré las llaves que había dejado en la cocina.",
+    "en": "I did not find the keys I had left in the kitchen.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:pluperfect",
+      "g:preterite-ar",
+      "g:relative-que",
+      "l:cocina",
+      "l:dejar",
+      "l:encontrar",
+      "l:llave"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0020",
+    "es": "Estaba cansado, pero me quedé a ayudar.",
+    "en": "I was tired, but I stayed to help.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "g:reflexive-routine",
+      "l:ayudar",
+      "l:cansado",
+      "l:estar",
+      "l:quedarse"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0021",
+    "es": "Yo estaba en casa cuando oí un ruido en la calle.",
+    "en": "I was at home when I heard a noise in the street.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-er-ir",
+      "l:calle",
+      "l:casa",
+      "l:estar",
+      "l:oír",
+      "l:ruido",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0022",
+    "es": "¿Dónde estabas anoche?\nEstaba en el café, pero ya habías salido.",
+    "en": "Where were you last night?\nI was at the café, but you had already left.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ayer-anoche",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:pluperfect",
+      "g:questions",
+      "l:anoche",
+      "l:café",
+      "l:dónde",
+      "l:estar",
+      "l:salir"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "dialogue",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0023",
+    "es": "¿Qué hacías?\nEstaba leyendo cuando sonó el teléfono.",
+    "en": "What were you doing?\nI was reading when the phone rang.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-progressive",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "g:questions",
+      "l:estar",
+      "l:hacia",
+      "l:leer",
+      "l:qué",
+      "l:sonar",
+      "l:teléfono",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "dialogue",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0024",
+    "es": "¿Por qué no contestaste?\nPorque ya me había dormido.",
+    "en": "Why didn't you answer?\nBecause I had already fallen asleep.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:porque",
+      "g:cause-result",
+      "g:pluperfect",
+      "g:preterite-ar",
+      "g:reflexive-routine",
+      "l:contestar",
+      "l:dormir",
+      "l:qué",
+      "p:por-que-no",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "dialogue",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0025",
+    "es": "¿Qué estabas haciendo cuando sonó el teléfono?",
+    "en": "What were you doing when the phone rang?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-progressive",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "g:questions",
+      "l:estar",
+      "l:hacer",
+      "l:qué",
+      "l:sonar",
+      "l:teléfono",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "question",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0026",
+    "es": "¿Cómo era el barrio donde creciste?",
+    "en": "What was the neighborhood where you grew up like?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:como-era",
+      "c:era",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-er-ir",
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "l:barrio",
+      "l:crecer",
+      "l:cómo",
+      "l:ser",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "question",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0027",
+    "es": "¿Qué tiempo hacía cuando saliste de tu casa hoy?",
+    "en": "What was the weather like when you left your house today?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "g:pret-vs-imperfect",
+      "g:preterite-er-ir",
+      "g:questions",
+      "l:casa",
+      "l:hacer",
+      "l:hoy",
+      "l:qué",
+      "l:salir",
+      "l:tiempo",
+      "p:cuando-basic",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "question",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0028",
+    "es": "¿Qué habías hecho antes de llegar a clase hoy?",
+    "en": "What had you done before getting to class today?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:pluperfect",
+      "g:prep-infinitive",
+      "g:questions",
+      "l:antes",
+      "l:clase",
+      "l:hacer",
+      "l:hoy",
+      "l:llegar",
+      "l:qué"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "question",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0029",
+    "es": "¿Qué hiciste anoche cuando llegaste a casa?",
+    "en": "What did you do last night when you got home?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ayer-anoche",
+      "c:que-hiciste",
+      "g:preterite-ar",
+      "g:preterite-ser-ir-hacer",
+      "l:anoche",
+      "l:casa",
+      "l:hacer",
+      "l:llegar",
+      "l:qué",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "question",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0030",
+    "es": "¿Ya habías cenado cuando se fue la luz?",
+    "en": "Had you already had dinner when the power went out?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:pluperfect",
+      "g:preterite-ser-ir-hacer",
+      "l:cenar",
+      "l:irse",
+      "l:luz",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "question",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0031",
+    "es": "¿Cuántos años tenías cuando empezaste a trabajar?",
+    "en": "How old were you when you started working?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "g:questions",
+      "g:verb-infinitive",
+      "l:año",
+      "l:cuánto",
+      "l:empezar",
+      "l:tener",
+      "l:trabajar",
+      "p:cuando-basic",
+      "p:empezar-terminar",
+      "p:tener-anos"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "question",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  },
+  {
+    "id": "u31-t-narrative-pasts-0032",
+    "es": "Tomás estaba nervioso, pero abrió la carta y empezó a leer.",
+    "en": "Tomás was nervous, but he opened the letter and started to read.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "g:preterite-er-ir",
+      "g:verb-infinitive",
+      "l:abrir",
+      "l:carta",
+      "l:empezar",
+      "l:estar",
+      "l:leer",
+      "l:nervioso",
+      "p:empezar-terminar"
+    ],
+    "targets": [
+      "g:narrative-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u31",
+    "theme": "telling a story",
+    "source": "gen"
+  }
+]

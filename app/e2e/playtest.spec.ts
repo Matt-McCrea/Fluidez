@@ -101,6 +101,7 @@ test('real content: the placement check', async ({ page }) => {
   await page.getByRole('radio', { name: 'Travel' }).click();
   await page.getByRole('button', { name: 'Next' }).click();
   await page.locator('[data-some]').click();
+  await page.locator('[data-level="A1"]').click();
   let asked = 0;
   for (; asked < 20 && await page.getByRole('heading', { name: 'Quick check' }).isVisible(); asked++) {
     await shot(`probe ${asked}`);

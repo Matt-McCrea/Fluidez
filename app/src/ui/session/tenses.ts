@@ -69,6 +69,13 @@ export function taughtTenses(nodeIds: Iterable<string>, tagsOf: (id: string) => 
   return TENSE_ORDER.filter((t) => met.has(t));
 }
 
+/** The tenses a generator may show a learner as a distractor: those taught, and always the present (the first thing anyone is taught). */
+export function licensedTenses(nodeIds: Iterable<string>, tagsOf?: (id: string) => readonly string[] | undefined): TenseKey[] {
+  const met = new Set<TenseKey>(taughtTenses(nodeIds, tagsOf));
+  met.add('presente');
+  return TENSE_ORDER.filter((t) => met.has(t));
+}
+
 /** The tenses the free-practice picker offers, in order. */
 export const PICKER_TENSES: readonly TenseKey[] = ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'perfecto', 'presubj'];
 

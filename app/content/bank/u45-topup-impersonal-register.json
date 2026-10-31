@@ -1,0 +1,791 @@
+[
+  {
+    "id": "u45-t-impersonal-register-0001",
+    "es": "Dicen que el dueño del hotel viajó a Panamá.",
+    "en": "They say the owner of the hotel travelled to Panama.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:decir",
+      "l:dueño",
+      "l:hotel",
+      "l:viajar",
+      "p:me-contaron-que"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0002",
+    "es": "Cuentan que Rosa escribió cartas todos los años.",
+    "en": "They say Rosa wrote letters every year.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "g:stem-boot",
+      "g:that-clauses",
+      "l:año",
+      "l:carta",
+      "l:contar",
+      "l:escribir",
+      "p:me-contaron-que",
+      "p:todos-los-dias",
+      "p:veces-al"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0003",
+    "es": "Se dice que Simón sabe contar hasta diez.",
+    "en": "It's said that Simón can count to ten.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "g:se-impersonal",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:contar",
+      "l:decir",
+      "l:saber",
+      "p:contar-dos-sentidos",
+      "p:me-contaron-que",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0004",
+    "es": "Se cree que la jueza no quiere hablar con los periodistas.",
+    "en": "It's believed that the judge doesn't want to talk to the journalists.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:se-impersonal",
+      "g:stem-boot",
+      "g:that-clauses",
+      "g:verb-infinitive",
+      "l:creer",
+      "l:hablar",
+      "l:juez",
+      "l:periodista",
+      "l:querer"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0005",
+    "es": "Se sabe que Altamira quiere comprar el café.",
+    "en": "It's known that Altamira wants to buy the café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:se-impersonal",
+      "g:stem-boot",
+      "g:that-clauses",
+      "g:verb-infinitive",
+      "l:café",
+      "l:comprar",
+      "l:querer",
+      "l:saber",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0006",
+    "es": "Dicen que Tomás habla español mejor que su papá.",
+    "en": "They say Tomás speaks Spanish better than his father.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:comparatives",
+      "g:present-ar",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:decir",
+      "l:español",
+      "l:hablar",
+      "l:mejor",
+      "l:papá",
+      "p:me-contaron-que",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0007",
+    "es": "La gente cree que el café va a cerrar pronto.",
+    "en": "People think the café is going to close soon.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:present-er-ir",
+      "g:that-clauses",
+      "l:café",
+      "l:cerrar",
+      "l:creer",
+      "l:gente",
+      "l:ir",
+      "l:pronto",
+      "p:la-gente-singular"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0008",
+    "es": "La gente dice que Hernando conoce todos los secretos del barrio.",
+    "en": "People say Hernando knows all the secrets of the neighbourhood.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:barrio",
+      "l:conocer",
+      "l:decir",
+      "l:gente",
+      "l:secreto",
+      "p:la-gente-singular",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0009",
+    "es": "Uno no puede creer todo lo que dicen en la radio.",
+    "en": "One can't believe everything they say on the radio.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:relatives-donde-lo-que",
+      "g:stem-boot",
+      "g:stem-e-i",
+      "g:verb-infinitive",
+      "l:creer",
+      "l:decir",
+      "l:poder",
+      "l:radio",
+      "p:generic-tu-uno"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0010",
+    "es": "Uno aprende mucho cuando escucha a los vecinos.",
+    "en": "You learn a lot when you listen to the neighbours.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:present-er-ir",
+      "l:aprender",
+      "l:escuchar",
+      "l:vecino",
+      "p:cuando-basic",
+      "p:generic-tu-uno",
+      "p:personal-a",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0011",
+    "es": "Se piensa que la carta es muy vieja.",
+    "en": "The letter is thought to be very old.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:se-impersonal",
+      "g:ser-identity",
+      "g:stem-boot",
+      "g:that-clauses",
+      "l:carta",
+      "l:pensar",
+      "l:ser",
+      "l:viejo",
+      "p:pensar-en",
+      "p:quantifiers-basic",
+      "p:viejo-antiguo-mayor"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0012",
+    "es": "Cuentan que el alcalde salió del país anoche.",
+    "en": "They say the mayor left the country last night.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ayer-anoche",
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "g:stem-boot",
+      "g:that-clauses",
+      "l:alcalde",
+      "l:anoche",
+      "l:contar",
+      "l:país",
+      "l:salir",
+      "p:me-contaron-que"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0013",
+    "es": "Dicen que la panadería nueva abre el lunes.",
+    "en": "They say the new bakery opens on Monday.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:abrir",
+      "l:decir",
+      "l:lunes",
+      "l:nuevo",
+      "l:panadería",
+      "p:days-el-lunes",
+      "p:me-contaron-que"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0014",
+    "es": "Se dice que Vale canta mejor que la cantante famosa.",
+    "en": "It's said that Vale sings better than the famous singer.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:comparatives",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:se-impersonal",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:cantante",
+      "l:cantar",
+      "l:decir",
+      "l:famoso",
+      "l:mejor",
+      "p:me-contaron-que"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0015",
+    "es": "¿Qué dicen en el barrio?\nDicen que Altamira compró otro edificio.",
+    "en": "What are they saying in the neighbourhood?\nThey say Altamira bought another building.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:questions",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:barrio",
+      "l:comprar",
+      "l:decir",
+      "l:edificio",
+      "l:qué",
+      "p:me-contaron-que",
+      "p:otro-no-article"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "dialogue",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0016",
+    "es": "¿Es verdad?\nSe dice que sí, pero nadie lo sabe.",
+    "en": "Is it true?\nIt's said so, but nobody knows.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:present-er-ir",
+      "g:se-impersonal",
+      "g:ser-identity",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:decir",
+      "l:saber",
+      "l:ser",
+      "l:verdad",
+      "p:me-contaron-que",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "dialogue",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0017",
+    "es": "Dicen que Simón ya sabe hablar.\nUno nunca sabe con ese loro.",
+    "en": "They say Simón can already talk.\nYou never know with that parrot.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:present-er-ir",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:decir",
+      "l:hablar",
+      "l:loro",
+      "l:saber",
+      "p:frequency-scale",
+      "p:generic-tu-uno",
+      "p:me-contaron-que",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "dialogue",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0018",
+    "es": "¿Qué dicen los vecinos del hotel nuevo?",
+    "en": "What do the neighbours say about the new hotel?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:questions",
+      "g:stem-e-i",
+      "l:decir",
+      "l:hotel",
+      "l:nuevo",
+      "l:qué",
+      "l:vecino"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "question",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0019",
+    "es": "¿Se sabe quién pagó la cuenta?",
+    "en": "Is it known who paid the bill?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:la-cuenta",
+      "g:present-er-ir",
+      "g:preterite-ar",
+      "g:questions",
+      "g:se-impersonal",
+      "l:cuenta",
+      "l:pagar",
+      "l:quién",
+      "l:saber",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "question",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0020",
+    "es": "¿Qué cree la gente de Altamira?",
+    "en": "What do people think of Altamira?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:questions",
+      "l:creer",
+      "l:gente",
+      "l:qué",
+      "p:la-gente-singular"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "question",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0021",
+    "es": "¿Usted cree todo lo que dicen en las noticias?",
+    "en": "Do you believe everything they say in the news? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:relatives-donde-lo-que",
+      "g:stem-e-i",
+      "l:creer",
+      "l:decir",
+      "l:noticias"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "question",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0022",
+    "es": "¿Qué se dice de su barrio en la ciudad?",
+    "en": "What's said about your neighbourhood in the city? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:questions",
+      "g:se-impersonal",
+      "g:stem-e-i",
+      "l:barrio",
+      "l:ciudad",
+      "l:decir",
+      "l:qué",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "question",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0023",
+    "es": "¿Qué piensa uno cuando no recibe respuesta?",
+    "en": "What does one think when one gets no answer?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "g:questions",
+      "g:stem-boot",
+      "l:pensar",
+      "l:qué",
+      "l:recibir",
+      "l:respuesta",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "question",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0024",
+    "es": "¿Se cree usted lo que cuentan los vecinos?",
+    "en": "Do you believe what the neighbours tell? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:relatives-donde-lo-que",
+      "g:se-impersonal",
+      "g:stem-boot",
+      "l:contar",
+      "l:creer",
+      "l:vecino"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "question",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0025",
+    "es": "Según Mariana, se sabe quién firmó el contrato.",
+    "en": "According to Mariana, it's known who signed the contract.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:segun",
+      "g:gender-articles",
+      "g:indirect-questions",
+      "g:present-er-ir",
+      "g:preterite-ar",
+      "g:se-impersonal",
+      "l:contrato",
+      "l:firmar",
+      "l:quién",
+      "l:saber",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0026",
+    "es": "Se cree que Mariana tiene una fuente en la alcaldía.",
+    "en": "It's believed that Mariana has a source at city hall.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:se-impersonal",
+      "g:stem-boot",
+      "g:that-clauses",
+      "l:alcaldía",
+      "l:creer",
+      "l:fuente",
+      "l:tener"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0027",
+    "es": "Cuentan que el café es más viejo que la iglesia.",
+    "en": "They say the café is older than the church.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:comparatives",
+      "g:gender-articles",
+      "g:ser-identity",
+      "g:stem-boot",
+      "g:that-clauses",
+      "l:café",
+      "l:contar",
+      "l:iglesia",
+      "l:ser",
+      "l:viejo",
+      "p:me-contaron-que",
+      "p:viejo-antiguo-mayor"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0028",
+    "es": "Uno no debe repetir lo que no sabe.",
+    "en": "One shouldn't repeat what one doesn't know.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "g:relatives-donde-lo-que",
+      "g:tener-que-hay-que",
+      "l:deber",
+      "l:repetir",
+      "l:saber",
+      "p:generic-tu-uno",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0029",
+    "es": "La gente piensa que el precio va a subir.",
+    "en": "People think the price is going to go up.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:stem-boot",
+      "g:that-clauses",
+      "l:gente",
+      "l:ir",
+      "l:pensar",
+      "l:precio",
+      "l:subir",
+      "p:la-gente-singular",
+      "p:pensar-en"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u45-t-impersonal-register-0030",
+    "es": "Se dice que mañana llega un periodista de Bogotá.",
+    "en": "It's said that a journalist arrives from Bogotá tomorrow.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:se-impersonal",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:decir",
+      "l:llegar",
+      "l:mañana",
+      "l:periodista",
+      "p:me-contaron-que"
+    ],
+    "targets": [
+      "g:impersonal-register"
+    ],
+    "kind": "statement",
+    "unit": "u45",
+    "theme": "rumors in the barrio",
+    "source": "gen"
+  }
+]

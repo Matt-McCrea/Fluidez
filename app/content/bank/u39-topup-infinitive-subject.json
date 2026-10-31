@@ -1,0 +1,748 @@
+[
+  {
+    "id": "u39-t-infinitive-subject-0001",
+    "es": "Cocinar para tantos clientes es cansado.",
+    "en": "Cooking for so many customers is tiring.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "g:verb-infinitive",
+      "l:cansado",
+      "l:cliente",
+      "l:cocinar",
+      "l:ser",
+      "p:es-adj-inf",
+      "p:para-inf"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0002",
+    "es": "Esperar en la fila me molesta.",
+    "en": "Waiting in line bothers me.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:gustar-full",
+      "g:present-ar",
+      "g:verb-infinitive",
+      "l:esperar",
+      "l:fila",
+      "l:molestar"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0003",
+    "es": "Vivir en Bogotá es una aventura.",
+    "en": "Living in Bogotá is an adventure.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "g:verb-infinitive",
+      "l:aventura",
+      "l:ser",
+      "l:vivir"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0004",
+    "es": "No saber la respuesta me da pena.",
+    "en": "Not knowing the answer embarrasses me.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-regala",
+      "g:gender-articles",
+      "l:dar",
+      "l:pena",
+      "l:respuesta",
+      "l:saber",
+      "p:me-da-miedo",
+      "p:me-da-pena-que",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0005",
+    "es": "A Hernando le encanta manejar su carro viejo.",
+    "en": "Hernando loves driving his old car.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gustar-full",
+      "g:present-ar",
+      "l:carro",
+      "l:encantar",
+      "l:manejar",
+      "l:viejo",
+      "p:possessives-basic",
+      "p:viejo-antiguo-mayor"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0006",
+    "es": "¿Te molesta esperar?",
+    "en": "Does waiting bother you? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gustar-full",
+      "g:present-ar",
+      "l:esperar",
+      "l:molestar"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "question",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0007",
+    "es": "Hablar español todos los días es útil.",
+    "en": "Speaking Spanish every day is useful.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "g:verb-infinitive",
+      "l:día",
+      "l:español",
+      "l:hablar",
+      "l:ser",
+      "l:útil",
+      "p:todos-los-dias",
+      "p:veces-al"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0008",
+    "es": "Caminar por el barrio es sano.",
+    "en": "Walking around the neighborhood is healthy.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:por-para-1",
+      "g:ser-identity",
+      "g:verb-infinitive",
+      "l:barrio",
+      "l:caminar",
+      "l:sano",
+      "l:ser",
+      "p:es-adj-inf"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0009",
+    "es": "Fumar no es sano.",
+    "en": "Smoking isn't healthy.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "g:verb-infinitive",
+      "l:fumar",
+      "l:sano",
+      "l:ser",
+      "p:es-adj-inf"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0010",
+    "es": "No fumar es mejor.",
+    "en": "Not smoking is better.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:fumar",
+      "l:mejor",
+      "l:ser"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0011",
+    "es": "¿Te gusta viajar?",
+    "en": "Do you like traveling? (to a friend)",
+    "accept": [
+      "¿Te encanta viajar?"
+    ],
+    "acceptEn": [],
+    "requires": [
+      "c:me-gusta",
+      "g:gustar-basic",
+      "l:gustar",
+      "l:viajar"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "question",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0012",
+    "es": "¿Qué te molesta más, esperar o caminar?",
+    "en": "What bothers you more, waiting or walking? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gustar-full",
+      "g:present-ar",
+      "g:questions",
+      "l:caminar",
+      "l:esperar",
+      "l:molestar",
+      "l:qué"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "question",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0013",
+    "es": "¿Es difícil aprender un idioma nuevo?",
+    "en": "Is learning a new language hard?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:aprender",
+      "l:difícil",
+      "l:idioma",
+      "l:nuevo",
+      "l:ser",
+      "p:es-adj-inf"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "question",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0014",
+    "es": "¿Le da pena hablar en público?",
+    "en": "Does speaking in public embarrass you? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:indirect-objects",
+      "g:present-ar",
+      "l:dar",
+      "l:hablar",
+      "l:pena",
+      "l:público",
+      "p:me-da-miedo",
+      "p:me-da-pena-que"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "question",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0015",
+    "es": "¿Vivir lejos del trabajo es un problema para usted?",
+    "en": "Is living far from work a problem for you? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:prep-pronouns",
+      "g:ser-identity",
+      "g:verb-infinitive",
+      "l:lejos",
+      "l:problema",
+      "l:ser",
+      "l:trabajo",
+      "l:vivir",
+      "p:cerca-de",
+      "p:para-inf",
+      "p:position-de"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "question",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0016",
+    "es": "Escribir cartas es mi manera de descansar.",
+    "en": "Writing letters is my way to relax.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "g:verb-infinitive",
+      "l:carta",
+      "l:descansar",
+      "l:escribir",
+      "l:manera",
+      "l:ser",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0017",
+    "es": "Vender el café sería un error.",
+    "en": "Selling the café would be a mistake.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:ser-identity",
+      "g:verb-infinitive",
+      "l:café",
+      "l:error",
+      "l:ser",
+      "l:vender"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0018",
+    "es": "Trabajar sin descanso no es bueno.",
+    "en": "Working without rest is not good.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "g:verb-infinitive",
+      "l:bueno",
+      "l:descanso",
+      "l:ser",
+      "l:trabajar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:es-adj-inf"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0019",
+    "es": "Leer antes de dormir me ayuda.",
+    "en": "Reading before sleeping helps me.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:prep-infinitive",
+      "g:present-ar",
+      "g:verb-infinitive",
+      "l:antes",
+      "l:ayudar",
+      "l:dormir",
+      "l:leer",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0020",
+    "es": "Trabajar todos los días es duro.",
+    "en": "Working every day is hard.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "g:verb-infinitive",
+      "l:duro",
+      "l:día",
+      "l:ser",
+      "l:trabajar",
+      "p:es-adj-inf",
+      "p:todos-los-dias",
+      "p:veces-al"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0021",
+    "es": "Nos encanta cocinar juntos.",
+    "en": "We love cooking together.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gustar-full",
+      "g:present-ar",
+      "l:cocinar",
+      "l:encantar",
+      "l:juntos"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0022",
+    "es": "A Vale le molesta llegar tarde.",
+    "en": "Arriving late bothers Vale.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gustar-full",
+      "g:present-ar",
+      "l:llegar",
+      "l:molestar",
+      "l:tarde",
+      "p:llegar-a-tiempo"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0023",
+    "es": "A Tomás le da miedo escribir su primer artículo.",
+    "en": "Writing his first article scares Tomás.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:indirect-objects",
+      "g:present-ar",
+      "l:artículo",
+      "l:dar",
+      "l:escribir",
+      "l:miedo",
+      "p:me-da-miedo",
+      "p:me-da-miedo-que",
+      "p:miedo-a",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0024",
+    "es": "¿Te gusta cocinar?\nMe encanta cocinar.",
+    "en": "Do you like cooking? (to a friend)\nI love cooking.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-encanta",
+      "c:me-gusta",
+      "g:gustar-basic",
+      "g:gustar-full",
+      "l:cocinar",
+      "l:encantar",
+      "l:gustar"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "dialogue",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0025",
+    "es": "¿Qué es difícil para ti?\nVivir lejos de mi familia.",
+    "en": "What is hard for you? (to a friend)\nLiving far from my family.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:prep-pronouns",
+      "g:questions",
+      "g:ser-identity",
+      "l:difícil",
+      "l:familia",
+      "l:lejos",
+      "l:qué",
+      "l:ser",
+      "l:vivir",
+      "p:cerca-de",
+      "p:para-inf",
+      "p:position-de",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "dialogue",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0026",
+    "es": "Esperar es aburrido.\nPara mí, no.",
+    "en": "Waiting is boring.\nNot for me.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:prep-pronouns",
+      "g:present-ar",
+      "g:ser-identity",
+      "g:verb-infinitive",
+      "l:aburrido",
+      "l:esperar",
+      "l:parar",
+      "l:ser",
+      "p:aburrir-aburrirse",
+      "p:es-adj-inf"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "dialogue",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0027",
+    "es": "¿Es caro vivir aquí?\nVivir en el centro, sí.",
+    "en": "Is living here expensive?\nLiving downtown, yes.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:aquí",
+      "l:caro",
+      "l:centro",
+      "l:ser",
+      "l:vivir",
+      "p:aqui-ahi-alla",
+      "p:es-adj-inf"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "dialogue",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0028",
+    "es": "Aprender a escuchar es lo más importante.",
+    "en": "Learning to listen is the most important thing.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "g:superlatives",
+      "g:verb-infinitive",
+      "l:aprender",
+      "l:escuchar",
+      "l:importante",
+      "l:ser"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0029",
+    "es": "Compartir un tinto con Rosa era un placer.",
+    "en": "Sharing a coffee with Rosa was a pleasure.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:era",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:ser-identity",
+      "g:verb-infinitive",
+      "l:compartir",
+      "l:placer",
+      "l:ser",
+      "l:tinto"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0030",
+    "es": "No dormir bien me pone de mal humor.",
+    "en": "Not sleeping well puts me in a bad mood.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:bien-y-tu",
+      "g:present-er-ir",
+      "l:bien",
+      "l:dormir",
+      "l:humor",
+      "l:mal",
+      "l:poner",
+      "p:me-pone-de-buen-genio",
+      "p:me-pone-nervioso",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  },
+  {
+    "id": "u39-t-infinitive-subject-0031",
+    "es": "Mirar a Simón es muy divertido.",
+    "en": "Watching Simón is a lot of fun.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "g:verb-infinitive",
+      "l:divertido",
+      "l:mirar",
+      "l:ser",
+      "p:es-adj-inf",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:infinitive-subject"
+    ],
+    "kind": "statement",
+    "unit": "u39",
+    "theme": "infinitive subject",
+    "source": "gen"
+  }
+]

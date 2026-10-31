@@ -1,0 +1,624 @@
+[
+  {
+    "id": "u19-t-article-uses-0001",
+    "es": "¿Te gusta el café por la mañana?",
+    "en": "Do you like coffee in the morning? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-gusta",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "l:café",
+      "l:gustar",
+      "l:mañana",
+      "p:por-la-manana"
+    ],
+    "targets": [
+      "g:article-uses"
+    ],
+    "kind": "question",
+    "unit": "u19",
+    "theme": "coffee and food",
+    "source": "gen"
+  },
+  {
+    "id": "u19-t-article-uses-0002",
+    "es": "¿Tomas café por la noche?",
+    "en": "Do you drink coffee at night? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:café",
+      "l:noche",
+      "l:tomar",
+      "p:por-la-manana"
+    ],
+    "targets": [
+      "g:article-uses"
+    ],
+    "kind": "question",
+    "unit": "u19",
+    "theme": "coffee and food",
+    "source": "gen"
+  },
+  {
+    "id": "u19-t-article-uses-0003",
+    "es": "¿Hay pan en la cocina?",
+    "en": "Is there any bread in the kitchen?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:hay",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "l:cocina",
+      "l:pan"
+    ],
+    "targets": [
+      "g:article-uses"
+    ],
+    "kind": "question",
+    "unit": "u19",
+    "theme": "coffee and food",
+    "source": "gen"
+  },
+  {
+    "id": "u19-t-article-uses-0004",
+    "es": "¿Compras pan en el café?",
+    "en": "Do you buy bread at the café? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:café",
+      "l:comprar",
+      "l:pan"
+    ],
+    "targets": [
+      "g:article-uses"
+    ],
+    "kind": "question",
+    "unit": "u19",
+    "theme": "coffee and food",
+    "source": "gen"
+  },
+  {
+    "id": "u19-t-article-uses-0005",
+    "es": "¿Te gustan los tintos del café?",
+    "en": "Do you like the black coffees at the café? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:present-ar",
+      "l:café",
+      "l:gustar",
+      "l:tinto"
+    ],
+    "targets": [
+      "g:article-uses"
+    ],
+    "kind": "question",
+    "unit": "u19",
+    "theme": "coffee and food",
+    "source": "gen"
+  },
+  {
+    "id": "u19-t-article-uses-0006",
+    "es": "¿Qué día trabajas en el café?",
+    "en": "What day do you work at the café? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:questions",
+      "l:café",
+      "l:día",
+      "l:qué",
+      "l:trabajar"
+    ],
+    "targets": [
+      "g:article-uses"
+    ],
+    "kind": "question",
+    "unit": "u19",
+    "theme": "coffee and food",
+    "source": "gen"
+  },
+  {
+    "id": "u19-t-article-uses-0007",
+    "es": "¿Los colombianos toman mucho café?",
+    "en": "Do Colombians drink a lot of coffee?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:present-ar",
+      "l:café",
+      "l:colombiano",
+      "l:tomar",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:article-uses"
+    ],
+    "kind": "question",
+    "unit": "u19",
+    "theme": "coffee and food",
+    "source": "gen"
+  },
+  {
+    "id": "u19-t-article-uses-0008",
+    "es": "Me gusta el jugo, pero no tomo jugo por la mañana.",
+    "en": "I like juice, but I don't drink juice in the morning.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-gusta",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:present-ar",
+      "l:gustar",
+      "l:jugo",
+      "l:mañana",
+      "l:tomar",
+      "p:por-la-manana"
+    ],
+    "targets": [
+      "g:article-uses"
+    ],
+    "kind": "statement",
+    "unit": "u19",
+    "theme": "coffee and food",
+    "source": "gen"
+  },
+  {
+    "id": "u19-t-article-uses-0009",
+    "es": "No tengo plata para el jugo de Mariana.",
+    "en": "I don't have any money for Mariana's juice.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tengo",
+      "g:gender-articles",
+      "g:yo-irregular",
+      "l:jugo",
+      "l:plata",
+      "l:tener",
+      "p:para-inf"
+    ],
+    "targets": [
+      "g:article-uses"
+    ],
+    "kind": "statement",
+    "unit": "u19",
+    "theme": "coffee and food",
+    "source": "gen"
+  },
+  {
+    "id": "u19-t-article-uses-0010",
+    "es": "Compré pan en el café.",
+    "en": "I bought some bread at the café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:compre-trabaje",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:café",
+      "l:comprar",
+      "l:pan"
+    ],
+    "targets": [
+      "g:article-uses"
+    ],
+    "kind": "statement",
+    "unit": "u19",
+    "theme": "coffee and food",
+    "source": "gen"
+  },
+  {
+    "id": "u19-t-article-uses-0011",
+    "es": "Compré el pan de Tomás.",
+    "en": "I bought Tomás's bread.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:compre-trabaje",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:comprar",
+      "l:pan"
+    ],
+    "targets": [
+      "g:article-uses"
+    ],
+    "kind": "statement",
+    "unit": "u19",
+    "theme": "coffee and food",
+    "source": "gen"
+  },
+  {
+    "id": "u19-t-article-uses-0012",
+    "es": "El café de Altamira es bueno.",
+    "en": "The coffee in Altamira is good.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:bueno",
+      "l:café",
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
+    ],
+    "targets": [
+      "g:article-uses"
+    ],
+    "kind": "statement",
+    "unit": "u19",
+    "theme": "coffee and food",
+    "source": "gen"
+  },
+  {
+    "id": "u19-t-article-uses-0013",
+    "es": "No hay jugo en la cocina.",
+    "en": "There is no juice in the kitchen.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:hay",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "l:cocina",
+      "l:jugo"
+    ],
+    "targets": [
+      "g:article-uses"
+    ],
+    "kind": "statement",
+    "unit": "u19",
+    "theme": "coffee and food",
+    "source": "gen"
+  },
+  {
+    "id": "u19-t-article-uses-0014",
+    "es": "Tomás toma agua por la noche.",
+    "en": "Tomás drinks water at night.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:agua",
+      "l:noche",
+      "l:tomar",
+      "p:por-la-manana"
+    ],
+    "targets": [
+      "g:article-uses"
+    ],
+    "kind": "statement",
+    "unit": "u19",
+    "theme": "coffee and food",
+    "source": "gen"
+  },
+  {
+    "id": "u19-t-article-uses-0015",
+    "es": "A Hernando le gusta el jugo por la mañana.",
+    "en": "Hernando likes juice in the morning.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:gustar-full",
+      "g:present-ar",
+      "l:gustar",
+      "l:jugo",
+      "l:mañana",
+      "p:por-la-manana"
+    ],
+    "targets": [
+      "g:article-uses"
+    ],
+    "kind": "statement",
+    "unit": "u19",
+    "theme": "coffee and food",
+    "source": "gen"
+  },
+  {
+    "id": "u19-t-article-uses-0016",
+    "es": "¿Hay café?\nSí, hay café.",
+    "en": "Is there any coffee?\nYes, there is coffee.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:hay",
+      "g:hay-vs-esta",
+      "l:café"
+    ],
+    "targets": [
+      "g:article-uses"
+    ],
+    "kind": "dialogue",
+    "unit": "u19",
+    "theme": "coffee and food",
+    "source": "gen"
+  },
+  {
+    "id": "u19-t-article-uses-0017",
+    "es": "¿Descansas los sábados con la familia?",
+    "en": "Do you rest on Saturdays with your family? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:descansar",
+      "l:familia",
+      "l:sábado",
+      "p:days-el-lunes"
+    ],
+    "targets": [
+      "g:article-uses"
+    ],
+    "kind": "question",
+    "unit": "u19",
+    "theme": "work and days",
+    "source": "gen"
+  },
+  {
+    "id": "u19-t-article-uses-0018",
+    "es": "¿Los domingos trabajas en el café?",
+    "en": "Do you work at the café on Sundays? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:café",
+      "l:domingo",
+      "l:trabajar",
+      "p:days-el-lunes"
+    ],
+    "targets": [
+      "g:article-uses"
+    ],
+    "kind": "question",
+    "unit": "u19",
+    "theme": "work and days",
+    "source": "gen"
+  },
+  {
+    "id": "u19-t-article-uses-0019",
+    "es": "¿Es importante el trabajo para ti?",
+    "en": "Is work important to you?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:prep-pronouns",
+      "g:ser-identity",
+      "l:importante",
+      "l:ser",
+      "l:trabajo",
+      "p:para-inf"
+    ],
+    "targets": [
+      "g:article-uses"
+    ],
+    "kind": "question",
+    "unit": "u19",
+    "theme": "work and days",
+    "source": "gen"
+  },
+  {
+    "id": "u19-t-article-uses-0020",
+    "es": "Los lunes trabajo en el café.",
+    "en": "On Mondays I work at the café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:trabajo-en",
+      "g:gender-articles",
+      "g:present-ar",
+      "l:café",
+      "l:lunes",
+      "l:trabajar",
+      "p:days-el-lunes"
+    ],
+    "targets": [
+      "g:article-uses"
+    ],
+    "kind": "statement",
+    "unit": "u19",
+    "theme": "work and days",
+    "source": "gen"
+  },
+  {
+    "id": "u19-t-article-uses-0021",
+    "es": "Mariana es periodista.",
+    "en": "Mariana is a journalist.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:periodista",
+      "l:ser",
+      "p:ser-profession-no-article"
+    ],
+    "targets": [
+      "g:article-uses"
+    ],
+    "kind": "statement",
+    "unit": "u19",
+    "theme": "work and days",
+    "source": "gen"
+  },
+  {
+    "id": "u19-t-article-uses-0022",
+    "es": "Hernando era taxista.",
+    "en": "Hernando was a taxi driver.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:era",
+      "g:imperfect-states",
+      "g:ser-identity",
+      "l:ser",
+      "l:taxista",
+      "p:ser-profession-no-article"
+    ],
+    "targets": [
+      "g:article-uses"
+    ],
+    "kind": "statement",
+    "unit": "u19",
+    "theme": "work and days",
+    "source": "gen"
+  },
+  {
+    "id": "u19-t-article-uses-0023",
+    "es": "Vale es mesera.",
+    "en": "Vale is a waitress.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:mesero",
+      "l:ser",
+      "p:ser-profession-no-article"
+    ],
+    "targets": [
+      "g:article-uses"
+    ],
+    "kind": "statement",
+    "unit": "u19",
+    "theme": "work and days",
+    "source": "gen"
+  },
+  {
+    "id": "u19-t-article-uses-0024",
+    "es": "La familia es más importante que el trabajo.",
+    "en": "Family is more important than work.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:comparatives",
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:familia",
+      "l:importante",
+      "l:ser",
+      "l:trabajo"
+    ],
+    "targets": [
+      "g:article-uses"
+    ],
+    "kind": "statement",
+    "unit": "u19",
+    "theme": "work and days",
+    "source": "gen"
+  },
+  {
+    "id": "u19-t-article-uses-0025",
+    "es": "El tiempo es importante.",
+    "en": "Time is important.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:importante",
+      "l:ser",
+      "l:tiempo"
+    ],
+    "targets": [
+      "g:article-uses"
+    ],
+    "kind": "statement",
+    "unit": "u19",
+    "theme": "work and days",
+    "source": "gen"
+  },
+  {
+    "id": "u19-t-article-uses-0026",
+    "es": "No tengo trabajo los domingos.",
+    "en": "I don't have work on Sundays.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tengo",
+      "g:gender-articles",
+      "g:yo-irregular",
+      "l:domingo",
+      "l:tener",
+      "l:trabajo",
+      "p:days-el-lunes"
+    ],
+    "targets": [
+      "g:article-uses"
+    ],
+    "kind": "statement",
+    "unit": "u19",
+    "theme": "work and days",
+    "source": "gen"
+  },
+  {
+    "id": "u19-t-article-uses-0027",
+    "es": "Los viernes no trabajo.",
+    "en": "On Fridays I don't work.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:trabajar",
+      "l:viernes",
+      "p:days-el-lunes"
+    ],
+    "targets": [
+      "g:article-uses"
+    ],
+    "kind": "statement",
+    "unit": "u19",
+    "theme": "work and days",
+    "source": "gen"
+  },
+  {
+    "id": "u19-t-article-uses-0028",
+    "es": "¿Qué haces los martes?\nTrabajo en el café.",
+    "en": "What do you do on Tuesdays?\nI work at the café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:trabajo-en",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:questions",
+      "l:café",
+      "l:hacer",
+      "l:martes",
+      "l:qué",
+      "l:trabajar",
+      "p:days-el-lunes"
+    ],
+    "targets": [
+      "g:article-uses"
+    ],
+    "kind": "dialogue",
+    "unit": "u19",
+    "theme": "work and days",
+    "source": "gen"
+  }
+]

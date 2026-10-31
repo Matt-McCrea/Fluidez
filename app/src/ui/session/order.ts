@@ -18,6 +18,14 @@ export const LEARN_ASKS_MAX = 5;
 /** New items shown together before they are asked. */
 export const LEARN_GROUP = 3;
 
+export interface LearnQueueJSON {
+  n: number;
+  steps: LearnStep[];
+  pos: number;
+  presented: number[];
+  asks: [number, number][];
+}
+
 export class LearnQueue {
   steps: LearnStep[] = [];
   pos = 0;
@@ -30,6 +38,19 @@ export class LearnQueue {
       idx.forEach((i) => this.steps.push({ kind: 'present', i }));
       idx.forEach((i) => this.steps.push({ kind: 'ask', i, round: 0, n: 0 }));
     }
+  }
+
+  toJSON(): LearnQueueJSON {
+    return { n: this.n, steps: this.steps.map((s) => ({ ...s })), pos: this.pos, presented: [...this.presented], asks: [...this.askCount] };
+  }
+
+  static fromJSON(j: LearnQueueJSON): LearnQueue {
+    const q = new LearnQueue(j.n);
+    q.steps = j.steps.map((s) => ({ ...s }));
+    q.pos = j.pos;
+    j.presented.forEach((i) => q.presented.add(i));
+    j.asks.forEach(([i, c]) => q.askCount.set(i, c));
+    return q;
   }
 
   get current(): LearnStep | undefined { return this.steps[this.pos]; }

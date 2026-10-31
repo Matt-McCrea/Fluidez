@@ -10,6 +10,7 @@ import { Bar, Es, Heading, Rich, undash } from '../components/text';
 import { blockHeading, lessonTypeWord } from '../session/labels';
 import { MORE_MIN_STREAK, MORE_MINUTES } from '../session/more';
 import { lastWeekCameBack } from '../../learner/metrics';
+import type { PracticeSpec } from '../session/practice-spec';
 import type { CanDoMark, RubricAnswer, WritingMark } from '../store/ui';
 import type { BlockProps } from './types';
 
@@ -148,7 +149,7 @@ export function SelfCheck({ block, run, ui, onDone }: BlockProps<SelfCheckBlock>
   );
 }
 
-export function Close({ block, run, more, onMore, onHome }: BlockProps<CloseBlock> & { more: boolean; onMore: () => void; onHome: () => void }) {
+export function Close({ block, run, more, onMore, onHome }: BlockProps<CloseBlock> & { more: boolean; onMore: () => void; onHome: () => void; onPractise?: (spec: PracticeSpec) => void }) {
   const unit = run.bundle.unit(block.unit);
   const hook = block.hookChapter ? run.bundle.chapters.get(block.hookChapter)?.hook : undefined;
   const t = run.tally;

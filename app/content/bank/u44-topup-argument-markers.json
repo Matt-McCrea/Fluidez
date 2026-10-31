@@ -1,0 +1,795 @@
+[
+  {
+    "id": "u44-t-argument-markers-0001",
+    "es": "Es cierto que el café es pequeño, pero siempre está lleno.",
+    "en": "It's true that the café is small, but it's always full.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:ser-identity",
+      "g:that-clauses",
+      "l:café",
+      "l:estar",
+      "l:lleno",
+      "l:pequeño",
+      "l:ser",
+      "l:siempre",
+      "p:es-verdad-eso-de-que",
+      "p:frequency-scale",
+      "p:lleno-libre"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "statement",
+    "unit": "u44",
+    "theme": "heritage hearing",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0002",
+    "es": "Es verdad que Altamira tiene dinero, pero no tiene razón.",
+    "en": "It's true that Altamira has money, but it's not right.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:ser-identity",
+      "g:stem-boot",
+      "g:that-clauses",
+      "l:dinero",
+      "l:razón",
+      "l:ser",
+      "l:tener",
+      "l:verdad",
+      "p:es-verdad-eso-de-que",
+      "p:tener-razon"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "statement",
+    "unit": "u44",
+    "theme": "heritage hearing",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0003",
+    "es": "De hecho, Tomás ya tiene las fotos del edificio.",
+    "en": "In fact, Tomás already has the photos of the building.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:edificio",
+      "l:foto",
+      "l:hacer",
+      "l:tener",
+      "p:actualmente"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "statement",
+    "unit": "u44",
+    "theme": "heritage hearing",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0004",
+    "es": "De hecho, Hernando conoce esa calle mejor que nadie.",
+    "en": "In fact, Hernando knows that street better than anyone.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:comparatives",
+      "g:demonstratives",
+      "g:present-er-ir",
+      "l:calle",
+      "l:conocer",
+      "l:hacer",
+      "l:mejor",
+      "p:actualmente",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "statement",
+    "unit": "u44",
+    "theme": "heritage hearing",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0005",
+    "es": "No solo guardamos las cartas de Rosa, sino también las fotos.",
+    "en": "We keep not only Rosa's letters but also the photos.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:pero-sino",
+      "g:present-ar",
+      "l:carta",
+      "l:foto",
+      "l:guardar",
+      "p:sobre-todo-solo"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "statement",
+    "unit": "u44",
+    "theme": "heritage hearing",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0006",
+    "es": "No solo viene Yesid a la audiencia, sino también los vecinos.",
+    "en": "Not only Yesid is coming to the hearing, but also the neighbors.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:pero-sino",
+      "g:stem-boot",
+      "l:audiencia",
+      "l:vecino",
+      "l:venir",
+      "p:sobre-todo-solo"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "statement",
+    "unit": "u44",
+    "theme": "heritage hearing",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0007",
+    "es": "Los abogados quieren vender; Tomás, en cambio, quiere quedarse.",
+    "en": "The lawyers want to sell; Tomás, on the other hand, wants to stay.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:en-cambio",
+      "g:gender-articles",
+      "g:reflexive-routine",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:abogado",
+      "l:cambio",
+      "l:quedarse",
+      "l:querer",
+      "l:vender"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "statement",
+    "unit": "u44",
+    "theme": "heritage hearing",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0008",
+    "es": "Vale prefiere esperar; Simón, en cambio, grita todo el día.",
+    "en": "Vale prefers to wait; Simón, on the other hand, screams all day.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:en-cambio",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:stem-boot",
+      "l:cambio",
+      "l:día",
+      "l:esperar",
+      "l:gritar",
+      "l:preferir",
+      "p:prefieres-x-o-y",
+      "p:todos-los-dias"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "statement",
+    "unit": "u44",
+    "theme": "heritage hearing",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0009",
+    "es": "¿Es seguro el edificio?\nEs cierto que es viejo, pero es seguro.",
+    "en": "Is the building safe?\nIt's true that it's old, but it's safe.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "g:that-clauses",
+      "l:edificio",
+      "l:seguro",
+      "l:ser",
+      "l:viejo",
+      "p:es-verdad-eso-de-que",
+      "p:viejo-antiguo-mayor"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "dialogue",
+    "unit": "u44",
+    "theme": "heritage hearing",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0010",
+    "es": "¿Los vecinos van a venir?\nDe hecho, ya están afuera.",
+    "en": "Are the neighbors going to come?\nIn fact, they're already outside.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "l:afuera",
+      "l:estar",
+      "l:hacer",
+      "l:ir",
+      "l:vecino",
+      "l:venir",
+      "p:actualmente"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "dialogue",
+    "unit": "u44",
+    "theme": "heritage hearing",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0011",
+    "es": "¿Solo vienen los abogados?\nNo, no solo ellos, sino también el alcalde.",
+    "en": "Are only the lawyers coming?\nNo, not only them, but also the mayor.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:pero-sino",
+      "g:stem-boot",
+      "l:abogado",
+      "l:alcalde",
+      "l:venir",
+      "p:sobre-todo-solo"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "dialogue",
+    "unit": "u44",
+    "theme": "heritage hearing",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0012",
+    "es": "Yo quiero esperar.\nYo, en cambio, quiero actuar ya.",
+    "en": "I want to wait.\nI, on the other hand, want to act now.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:en-cambio",
+      "c:quiero",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:actuar",
+      "l:cambio",
+      "l:esperar",
+      "l:querer"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "dialogue",
+    "unit": "u44",
+    "theme": "heritage hearing",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0013",
+    "es": "Es cierto que mi trabajo es difícil, pero me gusta.",
+    "en": "It's true that my job is hard, but I like it.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-gusta",
+      "g:gustar-basic",
+      "g:ser-identity",
+      "g:that-clauses",
+      "l:difícil",
+      "l:gustar",
+      "l:ser",
+      "l:trabajo",
+      "p:es-verdad-eso-de-que",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "statement",
+    "unit": "u44",
+    "theme": "opinions and daily life",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0014",
+    "es": "Es verdad que vivo lejos, pero el barrio es tranquilo.",
+    "en": "It's true that I live far away, but the neighborhood is quiet.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tranquilo",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:ser-identity",
+      "g:that-clauses",
+      "l:barrio",
+      "l:lejos",
+      "l:ser",
+      "l:tranquilo",
+      "l:verdad",
+      "l:vivir",
+      "p:cerca-de",
+      "p:es-verdad-eso-de-que"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "statement",
+    "unit": "u44",
+    "theme": "opinions and daily life",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0015",
+    "es": "No solo es una casa bonita, sino también muy limpia.",
+    "en": "It's not only a pretty house but also very clean.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:pero-sino",
+      "g:present-ar",
+      "g:ser-identity",
+      "l:bonito",
+      "l:casa",
+      "l:limpiar",
+      "l:ser",
+      "p:quantifiers-basic",
+      "p:sobre-todo-solo"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "statement",
+    "unit": "u44",
+    "theme": "opinions and daily life",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0016",
+    "es": "No solo trabajo en la mañana, sino también en la noche.",
+    "en": "I work not only in the morning but also at night.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:trabajo-en",
+      "g:gender-articles",
+      "g:pero-sino",
+      "g:present-ar",
+      "l:mañana",
+      "l:noche",
+      "l:trabajar",
+      "p:por-la-manana",
+      "p:sobre-todo-solo"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "statement",
+    "unit": "u44",
+    "theme": "opinions and daily life",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0017",
+    "es": "De hecho, mucha gente prefiere el campo a la ciudad.",
+    "en": "In fact, many people prefer the countryside to the city.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:campo",
+      "l:ciudad",
+      "l:gente",
+      "l:hacer",
+      "l:preferir",
+      "p:actualmente",
+      "p:gustar-mas-que",
+      "p:la-gente-singular",
+      "p:preferir-a",
+      "p:prefieres-x-o-y",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "statement",
+    "unit": "u44",
+    "theme": "opinions and daily life",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0018",
+    "es": "Mi hermano come en casa; yo, en cambio, como en la calle.",
+    "en": "My brother eats at home; I, on the other hand, eat out.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:en-cambio",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:calle",
+      "l:cambio",
+      "l:casa",
+      "l:comer",
+      "l:hermano",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "statement",
+    "unit": "u44",
+    "theme": "opinions and daily life",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0019",
+    "es": "Ellas hablan mucho; nosotros, en cambio, hablamos poco.",
+    "en": "They talk a lot; we, on the other hand, talk little.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:en-cambio",
+      "g:present-ar",
+      "l:cambio",
+      "l:hablar",
+      "p:poco-un-poco",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "statement",
+    "unit": "u44",
+    "theme": "opinions and daily life",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0020",
+    "es": "¿Te gusta la ciudad?\nEs cierto que es ruidosa, pero me encanta.",
+    "en": "Do you like the city?\nIt's true that it's noisy, but I love it.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-encanta",
+      "c:me-gusta",
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:gustar-full",
+      "g:ser-identity",
+      "g:that-clauses",
+      "l:ciudad",
+      "l:encantar",
+      "l:gustar",
+      "l:ruidoso",
+      "l:ser",
+      "p:es-verdad-eso-de-que"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "dialogue",
+    "unit": "u44",
+    "theme": "opinions and daily life",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0021",
+    "es": "¿Es barato el hotel?\nNo solo es barato, sino también limpio.",
+    "en": "Is the hotel cheap?\nIt's not only cheap but also clean.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:pero-sino",
+      "g:present-ar",
+      "g:ser-identity",
+      "l:barato",
+      "l:hotel",
+      "l:limpiar",
+      "l:ser",
+      "p:sobre-todo-solo"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "dialogue",
+    "unit": "u44",
+    "theme": "opinions and daily life",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0022",
+    "es": "¿Tú trabajas hoy?\nDe hecho, trabajo todo el día.",
+    "en": "Are you working today?\nIn fact, I'm working all day.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:día",
+      "l:hacer",
+      "l:hoy",
+      "l:trabajar",
+      "p:actualmente",
+      "p:todos-los-dias"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "dialogue",
+    "unit": "u44",
+    "theme": "opinions and daily life",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0023",
+    "es": "Mi hermano ama el cine.\nYo, en cambio, prefiero los libros.",
+    "en": "My brother loves movies.\nI, on the other hand, prefer books.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:en-cambio",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:stem-boot",
+      "l:amar",
+      "l:cambio",
+      "l:cine",
+      "l:hermano",
+      "l:libro",
+      "l:preferir",
+      "p:possessives-basic",
+      "p:prefieres-x-o-y"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "dialogue",
+    "unit": "u44",
+    "theme": "opinions and daily life",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0024",
+    "es": "¿Es cierto que tu barrio es ruidoso, pero seguro?",
+    "en": "Is it true that your neighborhood is noisy but safe? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "g:that-clauses",
+      "l:barrio",
+      "l:ruidoso",
+      "l:seguro",
+      "l:ser",
+      "p:es-verdad-eso-de-que",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "question",
+    "unit": "u44",
+    "theme": "opinions and daily life",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0025",
+    "es": "¿Tu casa no solo es grande, sino también barata?",
+    "en": "Is your house not only big but also cheap?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:pero-sino",
+      "g:ser-identity",
+      "l:barato",
+      "l:casa",
+      "l:grande",
+      "l:ser",
+      "p:possessives-basic",
+      "p:sobre-todo-solo"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "question",
+    "unit": "u44",
+    "theme": "opinions and daily life",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0026",
+    "es": "¿Es verdad que su trabajo es difícil, pero le gusta?",
+    "en": "Is it true that your job is hard but you like it? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gustar-basic",
+      "g:present-ar",
+      "g:ser-identity",
+      "g:that-clauses",
+      "l:difícil",
+      "l:gustar",
+      "l:ser",
+      "l:trabajo",
+      "l:verdad",
+      "p:es-verdad-eso-de-que",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "question",
+    "unit": "u44",
+    "theme": "opinions and daily life",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0027",
+    "es": "¿De hecho, usted ya conoce a todos sus vecinos?",
+    "en": "In fact, do you already know all your neighbors? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "l:conocer",
+      "l:hacer",
+      "l:vecino",
+      "p:actualmente",
+      "p:possessives-basic",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "question",
+    "unit": "u44",
+    "theme": "opinions and daily life",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0028",
+    "es": "¿No solo estudias español, sino también trabajas en español?",
+    "en": "Do you not only study Spanish but also work in Spanish? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:pero-sino",
+      "g:present-ar",
+      "l:español",
+      "l:estudiar",
+      "l:trabajar",
+      "p:sobre-todo-solo"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "question",
+    "unit": "u44",
+    "theme": "opinions and daily life",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0029",
+    "es": "¿Es cierto que tu familia vive lejos, pero te visita mucho?",
+    "en": "Is it true that your family lives far away but visits you a lot? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:ser-identity",
+      "g:that-clauses",
+      "l:familia",
+      "l:lejos",
+      "l:ser",
+      "l:visitar",
+      "l:vivir",
+      "p:cerca-de",
+      "p:es-verdad-eso-de-que",
+      "p:me-te-nos-objects",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "question",
+    "unit": "u44",
+    "theme": "opinions and daily life",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0030",
+    "es": "¿Tus vecinos no solo hablan mucho, sino también ayudan?",
+    "en": "Do your neighbors not only talk a lot but also help? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:pero-sino",
+      "g:present-ar",
+      "l:ayudar",
+      "l:hablar",
+      "l:vecino",
+      "p:possessives-basic",
+      "p:quantifiers-basic",
+      "p:sobre-todo-solo"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "question",
+    "unit": "u44",
+    "theme": "opinions and daily life",
+    "source": "gen"
+  },
+  {
+    "id": "u44-t-argument-markers-0031",
+    "es": "¿De hecho, tú prefieres la ciudad al campo?",
+    "en": "In fact, do you prefer the city to the countryside? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:campo",
+      "l:ciudad",
+      "l:hacer",
+      "l:preferir",
+      "p:actualmente",
+      "p:gustar-mas-que",
+      "p:preferir-a",
+      "p:prefieres-x-o-y"
+    ],
+    "targets": [
+      "g:argument-markers"
+    ],
+    "kind": "question",
+    "unit": "u44",
+    "theme": "opinions and daily life",
+    "source": "gen"
+  }
+]

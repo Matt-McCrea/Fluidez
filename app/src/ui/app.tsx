@@ -16,11 +16,11 @@ import { Session } from './screens/session';
 import { Settings } from './screens/settings';
 import { Story } from './screens/story';
 import type { PracticeSpec } from './session/practice-spec';
-import { UiStore } from './store/ui';
+import { UiStore, type SavedSession } from './store/ui';
 import { MORE_MINUTES } from './session/more';
 
 type Tab = 'home' | 'story' | 'reference' | 'progress' | 'settings';
-type Route = { tab: Tab } | { session: Mode; key: number; cap?: number } | { practice: PracticeSpec | undefined; key: number };
+type Route = { tab: Tab } | { session: Mode; key: number; cap?: number; resume?: SavedSession } | { practice: PracticeSpec | undefined; key: number };
 
 /** Each session start gets a fresh key, so "Do another" always mounts a new player. */
 let sessionSeq = 0;
@@ -90,6 +90,7 @@ export function App({ opts }: { opts?: BootOptions }) {
   if (error) return <main class="screen" id="main"><h1>Something went wrong</h1><p>{error}</p><button class="btn primary" onClick={() => location.reload()}>Try again</button></main>;
   if (!ctx) return <main class="screen loading" id="main" aria-busy="true"><p>Loading your Spanish</p></main>;
 
+  const toPractice = (spec: PracticeSpec) => setRoute({ practice: spec, key: ++sessionSeq });
   const goHome = () => { setRoute({ tab: 'home' }); void ctx.reloadBundle(); };
   let body;
   if (!ctx.ui.state.onboarded) {
@@ -97,7 +98,7 @@ export function App({ opts }: { opts?: BootOptions }) {
   } else if ('session' in route) {
     body = (
       <Session
-        key={route.key} mode={route.session} onExit={goHome} capMinutes={route.cap}
+        key={route.key} mode={route.session} onExit={goHome} capMinutes={route.cap} resume={route.resume} onPractise={toPractice}
         onAnother={() => setRoute({ session: 'another', key: ++sessionSeq, cap: MORE_MINUTES })}
       />
     );
@@ -107,10 +108,10 @@ export function App({ opts }: { opts?: BootOptions }) {
     const tab = route.tab;
     body = (
       <>
-        {tab === 'home' ? <Home onStart={(m) => setRoute({ session: m, key: ++sessionSeq })} onStory={() => setRoute({ tab: 'story' })} onPractise={(spec) => setRoute({ practice: spec, key: ++sessionSeq })} /> : null}
-        {tab === 'story' ? <Story /> : null}
-        {tab === 'reference' ? <Reference onPractise={(spec: PracticeSpec) => setRoute({ practice: spec, key: ++sessionSeq })} /> : null}
-        {tab === 'progress' ? <Progress /> : null}
+        {tab === 'home' ? <Home onStart={(m, resume) => setRoute({ session: m, key: ++sessionSeq, resume })} onStory={() => setRoute({ tab: 'story' })} onPractise={(spec) => setRoute({ practice: spec, key: ++sessionSeq })} /> : null}
+        {tab === 'story' ? <Story onPractise={toPractice} /> : null}
+        {tab === 'reference' ? <Reference onPractise={toPractice} /> : null}
+        {tab === 'progress' ? <Progress onPractise={toPractice} /> : null}
         {tab === 'settings' ? <Settings /> : null}
         <nav class="tabs" aria-label="Main">
           {(['home', 'story', 'reference', 'progress', 'settings'] as Tab[]).map((t) => (

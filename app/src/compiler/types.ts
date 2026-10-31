@@ -440,6 +440,7 @@ export type DiagnosticCode =
   | 'bareReview'       // a review had no unseen gated sentence left and is served bare
   | 'throttle'         // backlog throttle fired
   | 'spacing'          // a spacing rule forced the session type
+  | 'repaid'           // owed items introduced ahead of the caps so a scene could be served
   | 'deferred'         // a new node was owed to a later session (cap / throttle)
   | 'notReady'         // contrast/pattern whose prerequisites are not known yet
   | 'prereq'           // grammar introduced before a `requires` node (course order issue)

@@ -35,7 +35,12 @@ import {
 } from './spanish';
 import type { ChooseItem, TransformItem, TypeFormItem } from './types';
 
-export interface LadderOptions { seed?: number | string; maxDistractors?: number }
+export interface LadderOptions {
+  seed?: number | string;
+  maxDistractors?: number;
+  /** The tenses the learner has been taught: a distractor is never in a tense outside this list (default: all). */
+  taught?: readonly TenseKey[];
+}
 
 const LADDER_TENSES: readonly TenseKey[] = ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional'];
 const PUNCTUAL = /\b(ayer|anoche|anteayer|pasad[oa]|una vez|de repente|hace)\b/;
@@ -99,7 +104,7 @@ export interface GapAnalysis {
 }
 
 /** Can this sentence's verb be gapped with exactly one right answer? */
-export function analyseGap(s: BankSentence): GapAnalysis | null {
+export function analyseGap(s: BankSentence, taught?: readonly TenseKey[]): GapAnalysis | null {
   if (isMultiTurn(s)) return null;                       // one turn at a time: see gapTurn
   const c = parseClause(s.es, s.en);
   if (!c || c.participle >= 0) return null;
@@ -128,6 +133,7 @@ export function analyseGap(s: BankSentence): GapAnalysis | null {
   // distractors: other cells of the lemma that the item rules out
   const wrong = new Set<string>();
   for (const t of LADDER_TENSES) for (const p of PRODUCTION_PERSONS) {
+    if (taught && !taught.includes(t)) continue;      // never show a form the learner has not been taught
     const f = form(inf, t, p);
     if (f && !open.has(f) && !verbReadings(f).some((a) => tenses.includes(a.tense) && persons.includes(a.person as Person))) wrong.add(f);
   }
@@ -140,9 +146,9 @@ function gapped(c: Clause): string {
 
 /** The first turn of a row (the reply first) whose verb gaps fairly, with
  *  the turns before it as context. A one-turn row is its own turn. */
-export function gapTurn(row: BankSentence): { g: GapAnalysis; s: BankSentence; context: string } | null {
+export function gapTurn(row: BankSentence, taught?: readonly TenseKey[]): { g: GapAnalysis; s: BankSentence; context: string } | null {
   for (const v of turnViews(row)) {
-    const g = analyseGap(v.sentence);
+    const g = analyseGap(v.sentence, taught);
     if (g) return { g, s: v.sentence, context: v.context };
   }
   return null;
@@ -150,7 +156,7 @@ export function gapTurn(row: BankSentence): { g: GapAnalysis; s: BankSentence; c
 
 /** Ladder step 1: choose the form. */
 export function chooseItem(row: BankSentence, opts: LadderOptions = {}): ChooseItem | null {
-  const t = gapTurn(row);
+  const t = gapTurn(row, opts.taught);
   if (!t) return null;
   const { g, s, context } = t;
   const { inf, tense, person } = g.clause.choice;
@@ -159,7 +165,8 @@ export function chooseItem(row: BankSentence, opts: LadderOptions = {}): ChooseI
   const near = g.wrong.filter((f) => verbReadings(f).some((a) => a.tense === tense || a.person === person));
   const pool = near.length >= (opts.maxDistractors ?? 3) ? near : g.wrong;
   const ds = shuffle(pool, r).slice(0, opts.maxDistractors ?? 3);
-  if (!ds.length) return null;
+  // with a taught list the near misses are person-only until more tenses are licensed: two at least, or no item
+  if (ds.length < (opts.taught ? Math.min(2, opts.maxDistractors ?? 3) : 1)) return null;
   const { options, answer } = shuffled(g.answer, ds, r);
   return {
     id: itemId('ladder', s.id, `choose:${inf}:${tense}:${person}`), generator: 'ladder', sentenceId: s.id, nodes: [...s.targets],

@@ -1,0 +1,797 @@
+[
+  {
+    "id": "u46-t-reported-speech-full-0001",
+    "es": "Vale dijo que vendría al día siguiente.",
+    "en": "Vale said she would come the next day.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:preterite-irregular-strong",
+      "g:reported-backshift",
+      "g:that-clauses",
+      "l:decir",
+      "l:día",
+      "l:siguiente",
+      "l:venir",
+      "p:dentro-de-vs-despues",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0002",
+    "es": "Hernando contó que ya había salido del banco esa mañana.",
+    "en": "Hernando said he had already left the bank that morning.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:gender-articles",
+      "g:pluperfect",
+      "g:preterite-ar",
+      "g:reported-backshift",
+      "g:that-clauses",
+      "l:banco",
+      "l:contar",
+      "l:mañana",
+      "l:salir"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0003",
+    "es": "Mariana preguntó dónde estaba Simón.",
+    "en": "Mariana asked where Simón was.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:imperfect-states",
+      "g:indirect-questions",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "l:dónde",
+      "l:estar",
+      "l:preguntar",
+      "p:preguntar-pedir"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0004",
+    "es": "Tomás me preguntó si yo podía ir allá.",
+    "en": "Tomás asked me whether I could go there.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "g:indirect-questions",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "g:verb-infinitive",
+      "l:allá",
+      "l:ir",
+      "l:poder",
+      "l:preguntar",
+      "p:aqui-ahi-alla",
+      "p:me-te-nos-objects",
+      "p:preguntar-pedir"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0005",
+    "es": "Rosa dijo que no tenía tiempo ese día.",
+    "en": "Rosa said she didn't have time that day.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-irregular-strong",
+      "g:reported-past-basic",
+      "g:that-clauses",
+      "l:decir",
+      "l:día",
+      "l:tener",
+      "l:tiempo"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0006",
+    "es": "Simón dijo que llegaría el día anterior.",
+    "en": "Simón said he would arrive the day before.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:preterite-irregular-strong",
+      "g:reported-backshift",
+      "g:that-clauses",
+      "l:anterior",
+      "l:decir",
+      "l:día",
+      "l:llegar",
+      "p:dentro-de-vs-despues"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0007",
+    "es": "Vale dijo que lo haría esa semana.",
+    "en": "Vale said she would do it that week.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:demonstratives",
+      "g:direct-objects",
+      "g:preterite-irregular-strong",
+      "g:reported-backshift",
+      "g:that-clauses",
+      "l:decir",
+      "l:hacer",
+      "l:semana"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0008",
+    "es": "Hernando preguntó cuándo llegaban los clientes.",
+    "en": "Hernando asked when the customers were arriving.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:indirect-questions",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "l:cliente",
+      "l:cuándo",
+      "l:llegar",
+      "l:preguntar",
+      "p:preguntar-pedir"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0009",
+    "es": "Tomás explicó que había hablado con el abogado el día anterior.",
+    "en": "Tomás explained that he had spoken with the lawyer the day before.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:pluperfect",
+      "g:preterite-ar",
+      "g:reported-backshift",
+      "g:that-clauses",
+      "l:abogado",
+      "l:anterior",
+      "l:día",
+      "l:explicar",
+      "l:hablar",
+      "p:dentro-de-vs-despues"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0010",
+    "es": "Mariana dijo que estaría allí a las nueve.",
+    "en": "Mariana said she would be there at nine.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:preterite-irregular-strong",
+      "g:reported-backshift",
+      "g:that-clauses",
+      "l:allí",
+      "l:decir",
+      "l:estar",
+      "p:aqui-ahi-alla",
+      "p:telling-time"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0011",
+    "es": "Me dijeron que el café estaba cerrado ese día.",
+    "en": "They told me the café was closed that day.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-irregular-strong",
+      "g:reported-past-basic",
+      "g:that-clauses",
+      "l:café",
+      "l:cerrar",
+      "l:decir",
+      "l:día",
+      "l:estar",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0012",
+    "es": "Vale preguntó si había llegado el jugo.",
+    "en": "Vale asked whether the juice had arrived.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:indirect-questions",
+      "g:pluperfect",
+      "g:preterite-ar",
+      "l:jugo",
+      "l:llegar",
+      "l:preguntar",
+      "p:preguntar-pedir"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0013",
+    "es": "Los vecinos avisaron que se mudarían el mes siguiente.",
+    "en": "The neighbors announced that they would move the following month.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:reflexive-routine",
+      "g:reported-backshift",
+      "g:that-clauses",
+      "l:avisar",
+      "l:mes",
+      "l:mudarse",
+      "l:siguiente",
+      "l:vecino"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0014",
+    "es": "Hernando dijo que no conocía a nadie allí.",
+    "en": "Hernando said he didn't know anyone there.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "g:negation-words",
+      "g:pret-vs-imperfect",
+      "g:preterite-irregular-strong",
+      "g:reported-past-basic",
+      "g:that-clauses",
+      "l:allí",
+      "l:conocer",
+      "l:decir",
+      "p:aqui-ahi-alla",
+      "p:personal-a",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0015",
+    "es": "Tomás me preguntó qué quería comer esa noche.",
+    "en": "Tomás asked me what I wanted to eat that night.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:imperfect-habitual",
+      "g:indirect-questions",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "g:verb-infinitive",
+      "l:comer",
+      "l:noche",
+      "l:preguntar",
+      "l:querer",
+      "l:qué",
+      "p:me-te-nos-objects",
+      "p:preguntar-pedir"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0016",
+    "es": "Mariana dijo que ya había terminado el trabajo.",
+    "en": "Mariana said she had already finished the work.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:pluperfect",
+      "g:preterite-irregular-strong",
+      "g:reported-backshift",
+      "g:that-clauses",
+      "l:decir",
+      "l:terminar",
+      "l:trabajo"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0017",
+    "es": "Dijeron que el carro estaría listo al día siguiente.",
+    "en": "They said the car would be ready the next day.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:preterite-irregular-strong",
+      "g:reported-backshift",
+      "g:that-clauses",
+      "l:carro",
+      "l:decir",
+      "l:día",
+      "l:estar",
+      "l:listo",
+      "l:siguiente",
+      "p:dentro-de-vs-despues",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0018",
+    "es": "Vale me preguntó adónde iba yo ese día.",
+    "en": "Vale asked me where I was going that day.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:imperfect-habitual",
+      "g:indirect-questions",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "l:adónde",
+      "l:día",
+      "l:ir",
+      "l:preguntar",
+      "p:ir-a-venir-de-place",
+      "p:me-te-nos-objects",
+      "p:preguntar-pedir"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0019",
+    "es": "Simón dijo que no quería hablar de eso.",
+    "en": "Simón said he didn't want to talk about that.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "g:pret-vs-imperfect",
+      "g:preterite-irregular-strong",
+      "g:reported-past-basic",
+      "g:that-clauses",
+      "g:verb-infinitive",
+      "l:decir",
+      "l:hablar",
+      "l:querer",
+      "p:demonstratives-basic",
+      "p:queria-cortesia"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0020",
+    "es": "Hernando preguntó por qué no habíamos llamado antes.",
+    "en": "Hernando asked why we hadn't called before.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:indirect-questions",
+      "g:pluperfect",
+      "g:preterite-ar",
+      "l:antes",
+      "l:llamar",
+      "l:preguntar",
+      "l:qué",
+      "p:por-que-no",
+      "p:preguntar-pedir"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0021",
+    "es": "¿Vendrá Tomás?\nDijo que vendría al día siguiente.",
+    "en": "Will Tomás come?\nHe said he would come the next day.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:future-promises",
+      "g:gender-articles",
+      "g:preterite-irregular-strong",
+      "g:reported-backshift",
+      "g:that-clauses",
+      "l:decir",
+      "l:día",
+      "l:siguiente",
+      "l:venir",
+      "p:dentro-de-vs-despues",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "dialogue",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0022",
+    "es": "¿Qué te preguntó Vale?\nMe preguntó si tenía el celular.",
+    "en": "What did Vale ask you?\nShe asked me whether I had the cell phone.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:indirect-questions",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "g:questions",
+      "l:celular",
+      "l:preguntar",
+      "l:qué",
+      "l:tener",
+      "p:me-te-nos-objects",
+      "p:preguntar-pedir"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "dialogue",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0023",
+    "es": "¿Hernando comió con ustedes?\nDijo que ya había comido.",
+    "en": "Did Hernando eat with you all?\nHe said he had already eaten.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:pluperfect",
+      "g:prep-pronouns",
+      "g:preterite-er-ir",
+      "g:preterite-irregular-strong",
+      "g:reported-backshift",
+      "g:that-clauses",
+      "l:comer",
+      "l:decir"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "dialogue",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0024",
+    "es": "¿Qué te dijeron ayer en el trabajo?",
+    "en": "What did they tell you yesterday at work?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ayer-anoche",
+      "g:gender-articles",
+      "g:preterite-irregular-strong",
+      "g:questions",
+      "l:ayer",
+      "l:decir",
+      "l:qué",
+      "l:trabajo",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "question",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0025",
+    "es": "¿Qué te preguntó tu jefe la semana pasada?",
+    "en": "What did your boss ask you last week?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ayer-anoche",
+      "g:preterite-ar",
+      "g:questions",
+      "l:jefe",
+      "l:pasar",
+      "l:preguntar",
+      "l:qué",
+      "l:semana",
+      "p:me-te-nos-objects",
+      "p:possessives-basic",
+      "p:preguntar-pedir"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "question",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0026",
+    "es": "¿Quién te dijo que ya habían cerrado la oficina?",
+    "en": "Who told you they had already closed the office?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:pluperfect",
+      "g:preterite-irregular-strong",
+      "g:questions",
+      "g:reported-backshift",
+      "g:that-clauses",
+      "l:cerrar",
+      "l:decir",
+      "l:oficina",
+      "l:quién",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "question",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0027",
+    "es": "¿Qué dijiste que harías esa semana?",
+    "en": "What did you say you would do that week?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:demonstratives",
+      "g:preterite-irregular-strong",
+      "g:questions",
+      "g:reported-backshift",
+      "g:that-clauses",
+      "l:decir",
+      "l:hacer",
+      "l:qué",
+      "l:semana"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "question",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0028",
+    "es": "¿Te preguntaron dónde estabas ese día?",
+    "en": "Did they ask you where you were that day?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:estar-location-states",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "g:questions",
+      "l:día",
+      "l:dónde",
+      "l:estar",
+      "l:preguntar",
+      "p:me-te-nos-objects",
+      "p:preguntar-pedir"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "question",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0029",
+    "es": "Mariana dijo que aquí no había tinto.",
+    "en": "Mariana said there was no black coffee there.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-states",
+      "g:preterite-irregular-strong",
+      "g:reported-past-basic",
+      "g:that-clauses",
+      "l:aquí",
+      "l:decir",
+      "l:tinto",
+      "p:aqui-ahi-alla"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  },
+  {
+    "id": "u46-t-reported-speech-full-0030",
+    "es": "Me preguntó si yo ya había almorzado.",
+    "en": "He asked me whether I had already had lunch.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:indirect-questions",
+      "g:pluperfect",
+      "g:preterite-ar",
+      "l:almorzar",
+      "l:preguntar",
+      "p:me-te-nos-objects",
+      "p:preguntar-pedir"
+    ],
+    "targets": [
+      "g:reported-speech-full"
+    ],
+    "kind": "statement",
+    "unit": "u46",
+    "theme": "reported meetings",
+    "source": "gen"
+  }
+]

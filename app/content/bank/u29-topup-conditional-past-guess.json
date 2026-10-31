@@ -1,0 +1,1319 @@
+[
+  {
+    "id": "u29-t-conditional-past-guess-0001",
+    "es": "¿Cuántos años tendría Rosa cuando abrió el café?",
+    "en": "How old do you think Rosa was when she opened the café?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "g:questions",
+      "l:abrir",
+      "l:año",
+      "l:café",
+      "l:cuánto",
+      "l:tener",
+      "p:cuando-basic",
+      "p:tener-anos"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "question",
+    "unit": "u29",
+    "theme": "guessing about the past",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0002",
+    "es": "¿Qué hora sería cuando llegó Tomás?",
+    "en": "What time do you think it was when Tomás arrived?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:preterite-ar",
+      "g:questions",
+      "g:ser-identity",
+      "l:hora",
+      "l:llegar",
+      "l:qué",
+      "l:ser",
+      "p:cuando-basic",
+      "p:telling-time"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "question",
+    "unit": "u29",
+    "theme": "guessing about the past",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0003",
+    "es": "¿Dónde estaría Hernando esa noche?",
+    "en": "Where do you think Hernando was that night?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:demonstratives",
+      "g:estar-location-states",
+      "g:questions",
+      "l:dónde",
+      "l:estar",
+      "l:noche",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "question",
+    "unit": "u29",
+    "theme": "guessing about the past",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0004",
+    "es": "¿Por qué se iría Vale tan temprano?",
+    "en": "Why do you think Vale left so early?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "l:irse",
+      "l:qué",
+      "l:temprano",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "question",
+    "unit": "u29",
+    "theme": "guessing about the past",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0005",
+    "es": "¿Cuántas personas habría en la fiesta?",
+    "en": "How many people do you think there were at the party?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:questions",
+      "l:cuánto",
+      "l:fiesta",
+      "l:persona"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "question",
+    "unit": "u29",
+    "theme": "guessing about the past",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0006",
+    "es": "¿Dónde estaría Simón?\nEstaría en la cocina.",
+    "en": "Where could Simón have been?\nHe was probably in the kitchen.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:questions",
+      "l:cocina",
+      "l:dónde",
+      "l:estar",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "dialogue",
+    "unit": "u29",
+    "theme": "guessing about the past",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0007",
+    "es": "¿Qué hora era?\nSerían las diez.",
+    "en": "What time was it?\nIt must have been about ten.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:era",
+      "g:conditional",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:questions",
+      "g:ser-identity",
+      "l:hora",
+      "l:qué",
+      "l:ser",
+      "p:telling-time"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "dialogue",
+    "unit": "u29",
+    "theme": "guessing about the past",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0008",
+    "es": "¿Cuántos años tenía el hombre?\nTendría unos cuarenta.",
+    "en": "How old was the man?\nHe must have been about forty.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:questions",
+      "l:año",
+      "l:cuánto",
+      "l:hombre",
+      "l:tener",
+      "p:aproximar-cifras",
+      "p:tener-anos",
+      "p:unos-approx"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "dialogue",
+    "unit": "u29",
+    "theme": "guessing about the past",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0009",
+    "es": "Tendría unos veinte años cuando conoció a Rosa.",
+    "en": "He must have been about twenty when he met Rosa.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "l:año",
+      "l:conocer",
+      "l:tener",
+      "p:aproximar-cifras",
+      "p:cuando-basic",
+      "p:personal-a",
+      "p:saber-conocer",
+      "p:tener-anos",
+      "p:unos-approx"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "guessing about the past",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0010",
+    "es": "Serían las tres cuando salió Vale.",
+    "en": "It must have been about three when Vale left.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "g:ser-identity",
+      "l:salir",
+      "l:ser",
+      "p:cuando-basic",
+      "p:telling-time"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "guessing about the past",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0011",
+    "es": "Hernando estaría cansado después del trabajo.",
+    "en": "Hernando was probably tired after work.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:cansado",
+      "l:después",
+      "l:estar",
+      "l:trabajo",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "guessing about the past",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0012",
+    "es": "Habría unas treinta personas en el café.",
+    "en": "There must have been about thirty people in the café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-states",
+      "l:café",
+      "l:persona",
+      "p:aproximar-cifras",
+      "p:unos-approx"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "guessing about the past",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0013",
+    "es": "Tomás no sabría qué decir.",
+    "en": "Tomás probably didn't know what to say.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:indirect-questions",
+      "l:decir",
+      "l:qué",
+      "l:saber",
+      "p:no-se-que-hacer",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "guessing about the past",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0014",
+    "es": "Altamira tendría mucho dinero entonces.",
+    "en": "Altamira must have had a lot of money then.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:entonces-bueno",
+      "g:conditional",
+      "l:dinero",
+      "l:tener",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "guessing about the past",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0015",
+    "es": "Rosa estaría muy feliz ese día.",
+    "en": "Rosa was probably very happy that day.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:demonstratives",
+      "g:estar-location-states",
+      "l:día",
+      "l:estar",
+      "l:feliz",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "guessing about the past",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0016",
+    "es": "Ellos no tendrían tiempo para hablar.",
+    "en": "They probably didn't have time to talk.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "l:hablar",
+      "l:tener",
+      "l:tiempo",
+      "p:para-inf",
+      "p:para-inf-purpose"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "guessing about the past",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0017",
+    "es": "Mariana estaría en casa cuando llamaron.",
+    "en": "Mariana was probably at home when they called.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:estar-location-states",
+      "g:preterite-ar",
+      "l:casa",
+      "l:estar",
+      "l:llamar",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "guessing about the past",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0018",
+    "es": "Serían muchos los clientes esa mañana.",
+    "en": "There must have been a lot of customers that morning.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:demonstratives",
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:cliente",
+      "l:mañana",
+      "l:ser",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "guessing about the past",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0019",
+    "es": "¿Qué haría Simón solo en la casa?",
+    "en": "What do you think Simón did alone in the house?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:questions",
+      "l:casa",
+      "l:hacer",
+      "l:qué"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "question",
+    "unit": "u29",
+    "theme": "guessing about the past",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0020",
+    "es": "¿Cuánto costaría el carro de Hernando?",
+    "en": "How much do you think Hernando's car cost?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:questions",
+      "l:carro",
+      "l:costar",
+      "l:cuánto",
+      "p:costar-pagar",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "question",
+    "unit": "u29",
+    "theme": "guessing about the past",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0021",
+    "es": "¿Quién sería el hombre de la foto de Rosa?",
+    "en": "Who do you think the man in Rosa's photo was?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:questions",
+      "g:ser-identity",
+      "l:foto",
+      "l:hombre",
+      "l:quién",
+      "l:ser",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "question",
+    "unit": "u29",
+    "theme": "guessing in the cast's world",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0022",
+    "es": "¿Qué diría Altamira cuando llegó?",
+    "en": "What do you think Altamira said when he arrived?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:preterite-ar",
+      "g:questions",
+      "l:decir",
+      "l:llegar",
+      "l:qué",
+      "p:cuando-basic"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "question",
+    "unit": "u29",
+    "theme": "guessing in the cast's world",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0023",
+    "es": "¿Cómo estaría Vale después de la discusión?",
+    "en": "How do you think Vale was after the argument?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:questions",
+      "l:cómo",
+      "l:después",
+      "l:discusión",
+      "l:estar",
+      "p:question-word-order",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "question",
+    "unit": "u29",
+    "theme": "guessing in the cast's world",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0024",
+    "es": "¿Cuántos años tendría Simón cuando Rosa lo compró?",
+    "en": "How old do you think Simón was when Rosa bought him?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:direct-objects",
+      "g:preterite-ar",
+      "g:questions",
+      "l:año",
+      "l:comprar",
+      "l:cuánto",
+      "l:tener",
+      "p:cuando-basic",
+      "p:tener-anos"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "question",
+    "unit": "u29",
+    "theme": "guessing in the cast's world",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0025",
+    "es": "¿Dónde viviría Hernando antes del taxi?",
+    "en": "Where do you think Hernando lived before the taxi?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:questions",
+      "l:antes",
+      "l:dónde",
+      "l:taxi",
+      "l:vivir",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "question",
+    "unit": "u29",
+    "theme": "guessing in the cast's world",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0026",
+    "es": "¿Qué pensaría Tomás de todo esto?",
+    "en": "What do you think Tomás thought of all this?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:questions",
+      "l:pensar",
+      "l:qué",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "question",
+    "unit": "u29",
+    "theme": "guessing in the cast's world",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0027",
+    "es": "¿Quién abriría la puerta del café esa mañana?",
+    "en": "Who do you think opened the café door that morning?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:demonstratives",
+      "g:gender-articles",
+      "g:questions",
+      "l:abrir",
+      "l:café",
+      "l:mañana",
+      "l:puerta",
+      "l:quién",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "question",
+    "unit": "u29",
+    "theme": "guessing in the cast's world",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0028",
+    "es": "¿Cuánto tiempo estaría Rosa en el hospital?",
+    "en": "How long do you think Rosa was in the hospital?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:cuanto-tiempo",
+      "g:conditional",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:cuánto",
+      "l:estar",
+      "l:hospital",
+      "l:tiempo"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "question",
+    "unit": "u29",
+    "theme": "guessing in the cast's world",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0029",
+    "es": "¿Cuánta gente había?\nHabría unas cien personas.",
+    "en": "How many people were there?\nThere must have been about a hundred.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:questions",
+      "l:cuánto",
+      "l:gente",
+      "l:persona",
+      "p:aproximar-cifras",
+      "p:la-gente-singular",
+      "p:numbers-un-una",
+      "p:unos-approx"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "dialogue",
+    "unit": "u29",
+    "theme": "guessing in the cast's world",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0030",
+    "es": "¿Por qué no llamó Tomás?\nNo tendría el celular.",
+    "en": "Why didn't Tomás call?\nHe probably didn't have his phone.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:celular",
+      "l:llamar",
+      "l:qué",
+      "l:tener",
+      "p:por-que-no",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "dialogue",
+    "unit": "u29",
+    "theme": "guessing in the cast's world",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0031",
+    "es": "¿Dónde dormiría Simón?\nDormiría en la cocina.",
+    "en": "Where do you think Simón slept?\nHe probably slept in the kitchen.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:questions",
+      "l:cocina",
+      "l:dormir",
+      "l:dónde",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "dialogue",
+    "unit": "u29",
+    "theme": "guessing in the cast's world",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0032",
+    "es": "¿A qué hora llegó Mariana?\nSerían las ocho o las nueve.",
+    "en": "What time did Mariana arrive?\nIt must have been eight or nine.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:a-que-hora",
+      "g:conditional",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:ser-identity",
+      "l:hora",
+      "l:llegar",
+      "l:qué",
+      "l:ser",
+      "p:question-word-order",
+      "p:telling-time"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "dialogue",
+    "unit": "u29",
+    "theme": "guessing in the cast's world",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0033",
+    "es": "¿Y Hernando?\nEstaría trabajando en el taxi.",
+    "en": "And Hernando?\nHe was probably working in the taxi.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:estar-gerund",
+      "g:gender-articles",
+      "l:estar",
+      "l:taxi",
+      "l:trabajar"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "dialogue",
+    "unit": "u29",
+    "theme": "guessing in the cast's world",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0034",
+    "es": "Simón tendría hambre por eso gritaba.",
+    "en": "Simón was probably hungry, that's why he was shouting.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:cause-result",
+      "g:conditional",
+      "g:imperfect-habitual",
+      "l:gritar",
+      "l:hambre",
+      "l:tener",
+      "p:demonstratives-basic",
+      "p:tener-hambre"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "guessing in the cast's world",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0035",
+    "es": "Vale estaría triste después de la respuesta.",
+    "en": "Vale was probably sad after the answer.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:después",
+      "l:estar",
+      "l:respuesta",
+      "l:triste",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "guessing in the cast's world",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0036",
+    "es": "Altamira sabría algo del proyecto.",
+    "en": "Altamira probably knew something about the project.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "l:proyecto",
+      "l:saber",
+      "p:indefinites-basic",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "guessing in the cast's world",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0037",
+    "es": "Rosa tendría sus razones para no decir nada.",
+    "en": "Rosa must have had her reasons for not saying anything.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "l:decir",
+      "l:razón",
+      "l:tener",
+      "p:para-inf",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "guessing in the cast's world",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0038",
+    "es": "Habría mucho ruido en el café esa noche.",
+    "en": "There must have been a lot of noise in the café that night.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "l:café",
+      "l:noche",
+      "l:ruido",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "guessing in the cast's world",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0039",
+    "es": "Tomás y Vale estarían en la calle a esa hora.",
+    "en": "Tomás and Vale were probably in the street at that hour.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:demonstratives",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:calle",
+      "l:estar",
+      "l:hora"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "guessing in the cast's world",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0040",
+    "es": "Serían las seis de la mañana cuando sonó el teléfono.",
+    "en": "It must have been about six in the morning when the phone rang.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:ser-identity",
+      "l:mañana",
+      "l:ser",
+      "l:sonar",
+      "l:teléfono",
+      "p:cuando-basic",
+      "p:por-la-manana",
+      "p:telling-time"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "guessing in the cast's world",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0041",
+    "es": "Hernando tendría unos sesenta años cuando dejó el taxi.",
+    "en": "Hernando must have been about sixty when he left the taxi.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:año",
+      "l:dejar",
+      "l:taxi",
+      "l:tener",
+      "p:aproximar-cifras",
+      "p:cuando-basic",
+      "p:tener-anos",
+      "p:unos-approx"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "guessing in the cast's world",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0042",
+    "es": "Mariana tendría mucho tráfico en la calle.",
+    "en": "Mariana probably had a lot of traffic on the road.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "l:calle",
+      "l:tener",
+      "l:tráfico",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "guessing in the cast's world",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0043",
+    "es": "El jefe de Tomás haría la llamada desde la oficina.",
+    "en": "Tomás's boss probably made the call from the office.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "l:hacer",
+      "l:jefe",
+      "l:llamada",
+      "l:oficina"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "guessing in the cast's world",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0044",
+    "es": "La foto sería de una fiesta vieja.",
+    "en": "The photo must have been from an old party.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:claro-listo",
+      "g:adjective-agreement",
+      "g:conditional",
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:fiesta",
+      "l:foto",
+      "l:ser",
+      "l:viejo",
+      "p:viejo-antiguo-mayor"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "guessing in the cast's world",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0045",
+    "es": "¿Cuántos años tendría tu abuelo en esa foto?",
+    "en": "How old do you think your grandfather was in that photo? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:demonstratives",
+      "g:questions",
+      "l:abuelo",
+      "l:año",
+      "l:cuánto",
+      "l:foto",
+      "l:tener",
+      "p:possessives-basic",
+      "p:tener-anos"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "question",
+    "unit": "u29",
+    "theme": "yourself and everyday guesses",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0046",
+    "es": "¿Qué hora sería cuando te dormiste anoche?",
+    "en": "What time do you think it was when you fell asleep last night? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ayer-anoche",
+      "g:conditional",
+      "g:preterite-er-ir",
+      "g:questions",
+      "g:reflexive-routine",
+      "g:ser-identity",
+      "l:anoche",
+      "l:dormirse",
+      "l:hora",
+      "l:qué",
+      "l:ser",
+      "p:cuando-basic",
+      "p:telling-time"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "question",
+    "unit": "u29",
+    "theme": "yourself and everyday guesses",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0047",
+    "es": "¿Dónde estarías tú a las cinco ayer?",
+    "en": "Where do you think you were at five yesterday? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ayer-anoche",
+      "g:conditional",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:questions",
+      "l:ayer",
+      "l:dónde",
+      "l:estar",
+      "p:question-word-order",
+      "p:telling-time"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "question",
+    "unit": "u29",
+    "theme": "yourself and everyday guesses",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0048",
+    "es": "Yo tendría unos diez años cuando aprendí a nadar.",
+    "en": "I must have been about ten when I learned to swim.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "l:aprender",
+      "l:año",
+      "l:nadar",
+      "l:tener",
+      "p:aproximar-cifras",
+      "p:cuando-basic",
+      "p:tener-anos",
+      "p:unos-approx"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "yourself and everyday guesses",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0049",
+    "es": "Mi mamá estaría en el trabajo cuando llamé.",
+    "en": "My mom was probably at work when I called.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:estar",
+      "l:llamar",
+      "l:mamá",
+      "l:trabajo",
+      "p:cuando-basic",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "yourself and everyday guesses",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0050",
+    "es": "Ayer habría mucho tráfico por la lluvia.",
+    "en": "There must have been a lot of traffic yesterday because of the rain.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ayer-anoche",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:por-para-1",
+      "l:ayer",
+      "l:lluvia",
+      "l:tráfico",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "yourself and everyday guesses",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0051",
+    "es": "Llamaron a la puerta, sería mi hermano.",
+    "en": "Someone knocked at the door, it was probably my brother.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:ser-identity",
+      "l:hermano",
+      "l:llamar",
+      "l:puerta",
+      "l:ser",
+      "p:personal-a",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "yourself and everyday guesses",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0052",
+    "es": "El vecino estaría en casa con la música alta.",
+    "en": "The neighbor was probably at home with the music loud.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:conditional",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:alto",
+      "l:casa",
+      "l:estar",
+      "l:música",
+      "l:vecino"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "statement",
+    "unit": "u29",
+    "theme": "yourself and everyday guesses",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0053",
+    "es": "¿Dónde dejé las llaves?\nLas dejarías en el carro.",
+    "en": "Where did I leave my keys?\nYou probably left them in the car. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:questions",
+      "l:carro",
+      "l:dejar",
+      "l:dónde",
+      "l:llave",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "dialogue",
+    "unit": "u29",
+    "theme": "yourself and everyday guesses",
+    "source": "gen"
+  },
+  {
+    "id": "u29-t-conditional-past-guess-0054",
+    "es": "¿Por qué no vino Pedro?\nTendría mucho trabajo.",
+    "en": "Why didn't Pedro come?\nHe probably had a lot of work.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:preterite-irregular-strong",
+      "l:qué",
+      "l:tener",
+      "l:trabajo",
+      "l:venir",
+      "p:por-que-no",
+      "p:prep-questions-basic",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:conditional-past-guess"
+    ],
+    "kind": "dialogue",
+    "unit": "u29",
+    "theme": "yourself and everyday guesses",
+    "source": "gen"
+  }
+]

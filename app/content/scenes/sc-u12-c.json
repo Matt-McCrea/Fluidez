@@ -95,8 +95,8 @@
       "next": "t5"
     },
     {
-      "npc": "Pues Gloria dice que vio al hombre en la calle.",
-      "npcEn": "Well, Gloria says she saw the man in the street.",
+      "npc": "Gloria también dice que vio al hombre en la calle.",
+      "npcEn": "Gloria also says she saw the man in the street.",
       "intent": "Say you didn't know that, and ask what else she saw.",
       "accept": [
         "No sabía eso. ¿Qué más vio?",
@@ -121,8 +121,8 @@
       "next": "t6"
     },
     {
-      "npc": "Gloria no sabe más. Pero tú, ¿estás bien?",
-      "npcEn": "Gloria doesn't know any more. But you, are you OK?",
+      "npc": "Gloria no sabe más. Y tú, ¿cómo estás?",
+      "npcEn": "Gloria doesn't know any more. And you, how are you?",
       "intent": "Say you were scared that night, but now you're fine.",
       "accept": [
         "Esa noche estaba asustado, pero ahora estoy bien.",
@@ -143,12 +143,11 @@
   ],
   "requires": [
     "c:bien-y-tu",
+    "c:como-estas",
     "c:creo-que",
     "c:en-serio",
     "c:no-cierto",
-    "c:pues",
     "c:que-mas",
-    "c:te-pasa-algo",
     "g:demonstratives",
     "g:direct-objects",
     "g:estar-location-states",
@@ -173,6 +172,7 @@
     "l:calle",
     "l:creer",
     "l:cuaderno",
+    "l:cómo",
     "l:decir",
     "l:entrar",
     "l:estar",

@@ -3,11 +3,14 @@
 // the same IndexedDB object store as the learner ("state"); the profile and
 // the learner-facing tallies (sessions, words read/written, practice days,
 // saved words, can-do self-checks) live under "ui". Both are plain JSON.
-import { initialPath, type PathState } from '../../compiler';
-import { idbKV, type KV, type Learner } from '../../learner';
+import { initialPath, type Mode, type PathState, type SessionPlan } from '../../compiler';
+import { idbKV, type KV, type Learner, type Tier } from '../../learner';
+import type { LearnQueueJSON } from '../session/order';
+import type { RunnerSnapshot } from '../session/runner';
 
 export const PATH_KEY = 'path';
 export const UI_KEY = 'ui';
+export const SESSION_KEY = 'session';
 export const UI_VERSION = 2;
 export const PATH_VERSION = 2;
 
@@ -128,8 +131,37 @@ export function migratePath(raw: unknown): PathState {
   return { ...initialPath(), ...s };
 }
 
+/** Where a half-finished session stands: enough to open the same plan at the same card. Lives under its own key, outside UiState. */
+export interface SavedSession {
+  version: 1;
+  learnerId: string;
+  sessionIndex: number;
+  mode: Mode;
+  tier?: Tier;
+  capMinutes: number;
+  startedAt: number;
+  elapsedMs: number;
+  savedAt: number;
+  plan: SessionPlan;
+  block: number;
+  cursor: { card?: number; phase?: number; learn?: LearnQueueJSON };
+  runner: RunnerSnapshot;
+}
+
+/** A saved session is worth picking up on the same day, within a few hours, for this learner, if the learner has not moved on. */
+export const RESUME_WINDOW_MS = 3 * 3_600_000;
+export function isResumable(saved: SavedSession | undefined, learner: Pick<Learner, 'sessionIndex' | 'day'>, now: number, learnerId: string): saved is SavedSession {
+  if (!saved || saved.version !== 1) return false;
+  if (saved.learnerId !== learnerId) return false;
+  if (saved.sessionIndex !== learner.sessionIndex) return false;
+  if (learner.day(saved.savedAt) !== learner.day(now)) return false;
+  const age = now - saved.savedAt;
+  return age >= 0 && age < RESUME_WINDOW_MS;
+}
+
 export class UiStore {
   state: UiState = emptyUi();
+  session?: SavedSession;
   path: PathState = initialPath();
   private listeners = new Set<() => void>();
 
@@ -141,7 +173,8 @@ export class UiStore {
    * and the load throws, so a learner is never silently replaced by a new one.
    */
   async load(): Promise<this> {
-    const [ui, path] = await Promise.all([this.kv.get(UI_KEY), this.kv.get(PATH_KEY)]);
+    const [ui, path, session] = await Promise.all([this.kv.get(UI_KEY), this.kv.get(PATH_KEY), this.kv.get(SESSION_KEY)]);
+    this.session = session && typeof session === 'object' && (session as SavedSession).version === 1 ? (session as SavedSession) : undefined;
     if (ui === undefined || ui === null) {
       this.state = emptyUi();
       await this.kv.set(UI_KEY, this.state);
@@ -154,6 +187,18 @@ export class UiStore {
       if ((path as any).version !== PATH_VERSION) await this.kv.set(PATH_KEY, this.path);
     }
     return this;
+  }
+
+  async saveSession(s: SavedSession): Promise<void> {
+    this.session = s;
+    await this.kv.set(SESSION_KEY, s);
+  }
+
+  async clearSession(): Promise<void> {
+    if (!this.session) return;
+    this.session = undefined;
+    this.emit();
+    await this.kv.del(SESSION_KEY);
   }
 
   private async quarantine(key: string, raw: unknown): Promise<void> {
@@ -247,7 +292,8 @@ export class UiStore {
 
   /** Everything, gone: learner, path and UI state. */
   async reset(extraKeys: string[] = []): Promise<void> {
-    for (const k of [UI_KEY, PATH_KEY, ...extraKeys]) await this.kv.del(k);
+    for (const k of [UI_KEY, PATH_KEY, SESSION_KEY, ...extraKeys]) await this.kv.del(k);
+    this.session = undefined;
     this.state = emptyUi();
     this.path = initialPath();
     this.emit();

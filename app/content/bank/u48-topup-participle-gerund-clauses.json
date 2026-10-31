@@ -1,0 +1,779 @@
+[
+  {
+    "id": "u48-t-participle-gerund-clauses-0001",
+    "es": "Terminada la reunión, Hernando salió del café.",
+    "en": "Once the meeting was over, Hernando left the café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "l:café",
+      "l:reunión",
+      "l:salir",
+      "l:terminar"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "statement",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0002",
+    "es": "Cerrada la puerta, Simón se quedó callado.",
+    "en": "With the door closed, Simón fell silent.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:reflexive-routine",
+      "l:callado",
+      "l:cerrar",
+      "l:puerta",
+      "l:quedarse"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "statement",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0003",
+    "es": "Siendo muy tarde, Vale decidió quedarse en casa.",
+    "en": "Since it was very late, Vale decided to stay home.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gerund-ways",
+      "g:preterite-er-ir",
+      "g:reflexive-routine",
+      "g:ser-identity",
+      "l:casa",
+      "l:decidir",
+      "l:quedarse",
+      "l:ser",
+      "l:tarde",
+      "p:es-de-noche-tarde",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "statement",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0004",
+    "es": "Sabiendo que Tomás estaba cansado, Mariana cerró el café.",
+    "en": "Knowing that Tomás was tired, Mariana closed the café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:gerund-ways",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "g:that-clauses",
+      "l:café",
+      "l:cansado",
+      "l:cerrar",
+      "l:estar",
+      "l:saber",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "statement",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0005",
+    "es": "Escrito en 1990, el libro todavía se vende.",
+    "en": "Written in 1990, the book still sells.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:se-impersonal",
+      "l:escribir",
+      "l:libro",
+      "l:vender",
+      "p:dates-years",
+      "p:ya-todavia-basic"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "statement",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0006",
+    "es": "Construido con ladrillo, el edificio es muy resistente.",
+    "en": "Built with brick, the building is very sturdy.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:construir",
+      "l:edificio",
+      "l:ladrillo",
+      "l:resistente",
+      "l:ser",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "statement",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0007",
+    "es": "Escrito el informe, todos se fueron a casa.",
+    "en": "With the report written, everyone went home.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ser-ir-hacer",
+      "l:casa",
+      "l:escribir",
+      "l:informe",
+      "l:irse",
+      "p:ir-a-venir-de-place"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "statement",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0008",
+    "es": "Pensando en el futuro, Tomás no firmó el contrato.",
+    "en": "Thinking about the future, Tomás didn't sign the contract.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:gerund-ways",
+      "g:preterite-ar",
+      "l:contrato",
+      "l:firmar",
+      "l:futuro",
+      "l:pensar",
+      "p:pensar-en"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "statement",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0009",
+    "es": "Abierto desde 1950, el café tiene muchos clientes.",
+    "en": "Open since 1950, the café has many customers.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:abrir",
+      "l:café",
+      "l:cliente",
+      "l:tener",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "statement",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0010",
+    "es": "Hecho el trabajo, la empleada cerró el café.",
+    "en": "Once the work was done, the clerk closed the café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:café",
+      "l:cerrar",
+      "l:empleado",
+      "l:hacer",
+      "l:trabajo"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "statement",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0011",
+    "es": "Siendo ingeniera, Mariana entendió el cartel enseguida.",
+    "en": "Being an engineer, Mariana understood the sign right away.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:gerund-ways",
+      "g:preterite-er-ir",
+      "g:ser-identity",
+      "l:cartel",
+      "l:enseguida",
+      "l:entender",
+      "l:ingeniero",
+      "l:ser",
+      "p:ser-profession-no-article"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "statement",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0012",
+    "es": "Vista la situación, Vale prefirió esperar.",
+    "en": "Given the situation, Vale preferred to wait.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:commands-usted",
+      "g:gender-articles",
+      "g:preterite-spelling-stem",
+      "l:esperar",
+      "l:preferir",
+      "l:situación",
+      "l:vestir",
+      "p:prefieres-x-o-y"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "statement",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0013",
+    "es": "Terminado el proceso, el equipo descansó una semana.",
+    "en": "Once the process was finished, the team rested for a week.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:descansar",
+      "l:equipo",
+      "l:proceso",
+      "l:semana",
+      "l:terminar"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "statement",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0014",
+    "es": "Conociendo bien a Simón, Hernando no tuvo miedo.",
+    "en": "Knowing Simón well, Hernando wasn't afraid.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:bien-y-tu",
+      "g:gerund-ways",
+      "g:preterite-irregular-strong",
+      "l:bien",
+      "l:conocer",
+      "l:miedo",
+      "l:tener",
+      "p:saber-conocer",
+      "p:tener-hambre"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "statement",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0015",
+    "es": "Rescatados los campesinos, el pueblo celebró toda la noche.",
+    "en": "With the farmers rescued, the town celebrated all night.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:campesino",
+      "l:celebrar",
+      "l:noche",
+      "l:pueblo",
+      "p:todos-los-dias"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "statement",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0016",
+    "es": "Fabricado en metal, el escritorio pesa mucho.",
+    "en": "Made of metal, the desk weighs a lot.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:escritorio",
+      "l:fabricar",
+      "l:metal",
+      "l:pesar",
+      "p:medir-pesar",
+      "p:pesar-pesarse",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "statement",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0017",
+    "es": "Habiendo terminado el proceso, Tomás envió el informe.",
+    "en": "Having finished the process, Tomás sent the report.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:gerund-ways",
+      "g:preterite-ar",
+      "l:enviar",
+      "l:haber",
+      "l:informe",
+      "l:proceso",
+      "l:terminar"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "statement",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0018",
+    "es": "Perdida la llave, Rosa tuvo que llamar a Hernando.",
+    "en": "With the key lost, Rosa had to call Hernando.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-irregular-strong",
+      "g:verb-infinitive",
+      "l:llamar",
+      "l:llave",
+      "l:perder",
+      "l:tener",
+      "p:personal-a"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "statement",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0019",
+    "es": "Copiado el archivo, Vale cerró el computador.",
+    "en": "Once the file was copied, Vale shut the computer.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:archivo",
+      "l:cerrar",
+      "l:computador",
+      "l:copiar"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "statement",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0020",
+    "es": "No teniendo carro, Mariana fue en bus.",
+    "en": "Not having a car, Mariana went by bus.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gerund-ways",
+      "g:preterite-ser-ir-hacer",
+      "g:ser-identity",
+      "l:bus",
+      "l:carro",
+      "l:ser",
+      "l:tener",
+      "p:transport-en"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "statement",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0021",
+    "es": "Sincero con todos, Tomás nunca tuvo enemigos.",
+    "en": "Sincere with everyone, Tomás never had enemies.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:preterite-irregular-strong",
+      "l:enemigo",
+      "l:sincero",
+      "l:tener",
+      "p:frequency-scale"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "statement",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0022",
+    "es": "Terminado el día, Hernando volvió a su casa.",
+    "en": "With the day over, Hernando went back home.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "l:casa",
+      "l:día",
+      "l:terminar",
+      "l:volver",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "statement",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0023",
+    "es": "¿Qué haces cuando, terminado el trabajo, sigues cansado?",
+    "en": "What do you do when, with work finished, you're still tired?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:questions",
+      "g:stem-e-i",
+      "l:cansado",
+      "l:hacer",
+      "l:qué",
+      "l:seguir",
+      "l:terminar",
+      "l:trabajo"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "question",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0024",
+    "es": "¿Qué hace usted, terminada la jornada, para descansar?",
+    "en": "What do you do, once the workday is over, to rest? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:questions",
+      "l:descansar",
+      "l:hacer",
+      "l:jornada",
+      "l:qué",
+      "l:terminar",
+      "p:para-inf",
+      "p:para-inf-purpose"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "question",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0025",
+    "es": "¿Qué haces, abierto el café, antes de los clientes?",
+    "en": "What do you do, with the café open, before the customers?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:questions",
+      "l:abrir",
+      "l:antes",
+      "l:café",
+      "l:cliente",
+      "l:hacer",
+      "l:qué"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "question",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0026",
+    "es": "¿Cómo te sientes, sabiendo que hoy es el lanzamiento?",
+    "en": "How do you feel, knowing that today is the launch?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:gerund-ways",
+      "g:questions",
+      "g:reflexive-routine",
+      "g:ser-identity",
+      "g:stem-boot",
+      "g:that-clauses",
+      "l:cómo",
+      "l:hoy",
+      "l:lanzamiento",
+      "l:saber",
+      "l:sentirse",
+      "l:ser",
+      "p:saber-conocer",
+      "p:sentirse-mal"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "question",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0027",
+    "es": "¿Qué prefieres, siendo tan tarde: un taxi o el bus?",
+    "en": "What do you prefer, since it's so late: a taxi or the bus?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:gerund-ways",
+      "g:questions",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:bus",
+      "l:preferir",
+      "l:qué",
+      "l:ser",
+      "l:tarde",
+      "l:taxi",
+      "p:prefieres-x-o-y"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "question",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0028",
+    "es": "Terminado el café, ¿qué hacemos?\nSiendo tarde, vamos a casa.",
+    "en": "With the café finished, what do we do?\nSince it's late, let's go home.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:vamos-a",
+      "g:gender-articles",
+      "g:gerund-ways",
+      "g:ir-a-plans",
+      "g:present-er-ir",
+      "g:questions",
+      "g:ser-identity",
+      "l:café",
+      "l:casa",
+      "l:hacer",
+      "l:ir",
+      "l:qué",
+      "l:ser",
+      "l:tarde",
+      "l:terminar",
+      "p:es-de-noche-tarde",
+      "p:ir-a-venir-de-place"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "dialogue",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0029",
+    "es": "¿Por qué no firmó?\nSabiendo el riesgo, prefirió esperar.",
+    "en": "Why didn't he sign?\nKnowing the risk, he preferred to wait.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:gerund-ways",
+      "g:preterite-ar",
+      "g:preterite-spelling-stem",
+      "l:esperar",
+      "l:firmar",
+      "l:preferir",
+      "l:qué",
+      "l:riesgo",
+      "l:saber",
+      "p:por-que-no",
+      "p:prefieres-x-o-y",
+      "p:prep-questions-basic",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "dialogue",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0030",
+    "es": "¿Qué haces, terminada la clase, con tu tiempo libre?",
+    "en": "What do you do with your free time once class is over?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:questions",
+      "l:clase",
+      "l:hacer",
+      "l:libre",
+      "l:qué",
+      "l:terminar",
+      "l:tiempo",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "question",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  },
+  {
+    "id": "u48-t-participle-gerund-clauses-0031",
+    "es": "¿Qué piensas, viendo el cartel nuevo?",
+    "en": "What do you think, looking at the new sign?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:gerund-ways",
+      "g:questions",
+      "g:stem-boot",
+      "l:cartel",
+      "l:nuevo",
+      "l:pensar",
+      "l:qué",
+      "l:ver"
+    ],
+    "targets": [
+      "g:participle-gerund-clauses"
+    ],
+    "kind": "question",
+    "unit": "u48",
+    "theme": "participle and gerund openers",
+    "source": "gen"
+  }
+]

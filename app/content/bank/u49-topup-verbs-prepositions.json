@@ -1,0 +1,1079 @@
+[
+  {
+    "id": "u49-t-verbs-prepositions-0001",
+    "es": "Contamos con su apoyo para el proyecto.",
+    "en": "We count on your support for the project. (formal)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:apoyo",
+      "l:contar",
+      "l:proyecto",
+      "p:contar-con",
+      "p:disponer-de",
+      "p:para-inf",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters and work",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0002",
+    "es": "Todo depende del presupuesto.",
+    "en": "Everything depends on the budget.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:depende",
+      "g:gender-articles",
+      "l:depender",
+      "l:presupuesto"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters and work",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0003",
+    "es": "La carta se trata de un reembolso.",
+    "en": "The letter is about a refund.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "l:carta",
+      "l:reembolso",
+      "l:tratarse",
+      "p:se-trata-de",
+      "p:tratar-de"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters and work",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0004",
+    "es": "El curso consiste en tres partes.",
+    "en": "The course consists of three parts.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:consistir",
+      "l:curso",
+      "l:parte",
+      "p:caracterizarse-por",
+      "p:consistir-en"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters and work",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0005",
+    "es": "Confiamos en nuestros aliados.",
+    "en": "We trust our allies.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:possessives",
+      "g:present-ar",
+      "l:aliado",
+      "l:confiar",
+      "p:confiar-en-que"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters and work",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0006",
+    "es": "Mi trabajo consiste en revisar los pagos.",
+    "en": "My job consists of reviewing the payments.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:consistir",
+      "l:pago",
+      "l:revisar",
+      "l:trabajo",
+      "p:caracterizarse-por",
+      "p:consistir-en",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters and work",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0007",
+    "es": "Se trata de un error en la factura.",
+    "en": "It is about a mistake in the invoice.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "l:error",
+      "l:factura",
+      "l:tratarse",
+      "p:se-trata-de",
+      "p:tratar-de"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters and work",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0008",
+    "es": "No dependemos de un solo cliente.",
+    "en": "We do not depend on a single client.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:cliente",
+      "l:depender",
+      "p:depende-de",
+      "p:depender-de"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters and work",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0009",
+    "es": "¿Puedo contar con usted para mañana?",
+    "en": "Can I count on you for tomorrow? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:puedo",
+      "g:prep-pronouns",
+      "g:present-ar",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:contar",
+      "l:mañana",
+      "l:parar",
+      "l:poder",
+      "p:contar-con",
+      "p:disponer-de"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u49",
+    "theme": "formal letters and work",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0010",
+    "es": "¿De qué se trata la carta de Hernando?",
+    "en": "What is Hernando's letter about?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "l:carta",
+      "l:qué",
+      "l:tratarse",
+      "p:prep-questions-basic"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u49",
+    "theme": "formal letters and work",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0011",
+    "es": "¿De quién depende la decisión?",
+    "en": "Who does the decision depend on?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:depende",
+      "g:gender-articles",
+      "l:decisión",
+      "l:depender",
+      "l:quién",
+      "p:prep-questions-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u49",
+    "theme": "formal letters and work",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0012",
+    "es": "¿En qué consiste tu trabajo?",
+    "en": "What does your job consist of? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-er-ir",
+      "l:consistir",
+      "l:qué",
+      "l:trabajo",
+      "p:consistir-en",
+      "p:possessives-basic",
+      "p:prep-questions-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u49",
+    "theme": "formal letters and work",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0013",
+    "es": "Sueño con mi casa en Medellín.",
+    "en": "I dream about my house in Medellín.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:stem-boot",
+      "l:casa",
+      "l:soñar",
+      "p:possessives-basic",
+      "p:sonar-con",
+      "p:sonar-con-ganas"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "story and everyday life",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0014",
+    "es": "Me acuerdo de mi abuela Rosa.",
+    "en": "I remember my grandmother Rosa.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:reflexive-routine",
+      "g:stem-boot",
+      "l:abuela",
+      "l:acordarse",
+      "p:possessives-basic",
+      "p:recordar-acordarse"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "story and everyday life",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0015",
+    "es": "Tomás sueña con una casa grande.",
+    "en": "Tomás dreams about a big house.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:casa",
+      "l:grande",
+      "l:soñar",
+      "p:sonar-con",
+      "p:sonar-con-ganas"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "story and everyday life",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0016",
+    "es": "Vale confía en Hernando.",
+    "en": "Vale trusts Hernando.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:confiar",
+      "p:confiar-en-que"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "story and everyday life",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0017",
+    "es": "Hernando se acuerda de su taxi viejo.",
+    "en": "Hernando remembers his old taxi.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:reflexive-routine",
+      "g:stem-boot",
+      "l:acordarse",
+      "l:taxi",
+      "l:viejo",
+      "p:possessives-basic",
+      "p:recordar-acordarse",
+      "p:viejo-antiguo-mayor"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "story and everyday life",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0018",
+    "es": "¿Con quién sueñas tú?",
+    "en": "Who do you dream about? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:stem-boot",
+      "l:quién",
+      "l:soñar",
+      "p:prep-questions-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u49",
+    "theme": "story and everyday life",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0019",
+    "es": "¿Te acuerdas de tu primer carro?",
+    "en": "Do you remember your first car? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:reflexive-routine",
+      "g:stem-boot",
+      "l:acordarse",
+      "l:carro",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer",
+      "p:possessives-basic",
+      "p:recordar-acordarse"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u49",
+    "theme": "story and everyday life",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0020",
+    "es": "¿Confías en tus amigos?",
+    "en": "Do you trust your friends? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:amigo",
+      "l:confiar",
+      "p:confiar-en-que",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u49",
+    "theme": "story and everyday life",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0021",
+    "es": "¿Cuentas con tu familia?",
+    "en": "Do you count on your family? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:stem-boot",
+      "l:contar",
+      "l:familia",
+      "p:contar-con",
+      "p:disponer-de",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u49",
+    "theme": "story and everyday life",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0022",
+    "es": "¿De qué se trata el libro?\nSe trata de un loro.",
+    "en": "What is the book about?\nIt is about a parrot.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "l:libro",
+      "l:loro",
+      "l:qué",
+      "l:tratarse",
+      "p:prep-questions-basic",
+      "p:se-trata-de",
+      "p:tratar-de"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "dialogue",
+    "unit": "u49",
+    "theme": "story and everyday life",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0023",
+    "es": "¿Vienes mañana?\nDepende de ti.",
+    "en": "Are you coming tomorrow?\nIt depends on you.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:depende",
+      "g:prep-pronouns",
+      "g:stem-boot",
+      "l:depender",
+      "l:mañana",
+      "l:venir"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "dialogue",
+    "unit": "u49",
+    "theme": "story and everyday life",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0024",
+    "es": "¿Puedo contar contigo?\nClaro que sí.",
+    "en": "Can I count on you?\nOf course.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:claro-listo",
+      "c:puedo",
+      "g:prep-pronouns",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:claro",
+      "l:contar",
+      "l:poder",
+      "p:contar-con"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "dialogue",
+    "unit": "u49",
+    "theme": "story and everyday life",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0025",
+    "es": "¿Se acuerda de Rosa?\nSí, me acuerdo de ella.",
+    "en": "Do you remember Rosa? (polite)\nYes, I remember her.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:prep-pronouns",
+      "g:reflexive-routine",
+      "g:stem-boot",
+      "l:acordarse",
+      "p:recordar-acordarse"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "dialogue",
+    "unit": "u49",
+    "theme": "story and everyday life",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0026",
+    "es": "Simón no confía en el gato.",
+    "en": "Simón does not trust the cat.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:confiar",
+      "l:gato",
+      "p:confiar-en-que"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "story and everyday life",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0027",
+    "es": "Mariana depende de su trabajo.",
+    "en": "Mariana depends on her job.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:depende",
+      "l:depender",
+      "l:trabajo",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "story and everyday life",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0028",
+    "es": "El desayuno consiste en pan y café.",
+    "en": "Breakfast consists of bread and coffee.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:café",
+      "l:consistir",
+      "l:desayuno",
+      "l:pan",
+      "p:caracterizarse-por",
+      "p:consistir-en"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "story and everyday life",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0029",
+    "es": "Nuestra empresa cuenta con diez ingenieros.",
+    "en": "Our company counts on ten engineers.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:possessives",
+      "g:stem-boot",
+      "l:contar",
+      "l:empresa",
+      "l:ingeniero",
+      "p:contar-con",
+      "p:disponer-de"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "more verbs, more people",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0030",
+    "es": "El éxito depende de la colaboración.",
+    "en": "Success depends on collaboration.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:depende",
+      "g:gender-articles",
+      "l:colaboración",
+      "l:depender",
+      "l:éxito"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "more verbs, more people",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0031",
+    "es": "La reunión consiste en una presentación breve.",
+    "en": "The meeting consists of a short presentation.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:breve",
+      "l:consistir",
+      "l:presentación",
+      "l:reunión",
+      "p:caracterizarse-por",
+      "p:consistir-en"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "more verbs, more people",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0032",
+    "es": "Los candidatos sueñan con un buen puesto.",
+    "en": "The candidates dream about a good position.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:buen",
+      "l:candidato",
+      "l:puesto",
+      "l:soñar",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:sonar-con",
+      "p:sonar-con-ganas"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "more verbs, more people",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0033",
+    "es": "Nadie se acuerda del nombre del loro.",
+    "en": "Nobody remembers the parrot's name.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:reflexive-routine",
+      "g:stem-boot",
+      "l:acordarse",
+      "l:loro",
+      "l:nombre"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "more verbs, more people",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0034",
+    "es": "Confío en ti más que en nadie.",
+    "en": "I trust you more than anyone.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:comparatives",
+      "g:prep-pronouns",
+      "g:present-ar",
+      "l:confiar",
+      "p:confiar-en-que"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "more verbs, more people",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0035",
+    "es": "Cuento contigo para el domingo.",
+    "en": "I am counting on you for Sunday.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:cuenta-conmigo",
+      "g:gender-articles",
+      "l:contar",
+      "l:domingo",
+      "p:days-el-lunes",
+      "p:para-inf"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "more verbs, more people",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0036",
+    "es": "Rosa soñaba con un viaje a Cartagena.",
+    "en": "Rosa used to dream about a trip to Cartagena.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "l:soñar",
+      "l:viaje",
+      "p:sonar-con",
+      "p:sonar-con-ganas"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "more verbs, more people",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0037",
+    "es": "Se trata de una oportunidad única.",
+    "en": "It is about a unique opportunity.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:claro-listo",
+      "g:adjective-agreement",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "l:oportunidad",
+      "l:tratarse",
+      "l:único",
+      "p:se-trata-de",
+      "p:tratar-de"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "more verbs, more people",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0038",
+    "es": "Ellos no confían en el taxi nuevo.",
+    "en": "They do not trust the new taxi.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:confiar",
+      "l:nuevo",
+      "l:taxi",
+      "p:confiar-en-que"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "more verbs, more people",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0039",
+    "es": "¿Con quién cuenta usted en la oficina?",
+    "en": "Who do you count on at the office? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:contar",
+      "l:oficina",
+      "l:quién",
+      "p:prep-questions-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u49",
+    "theme": "more verbs, more people",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0040",
+    "es": "¿Depende el cobro del contrato?",
+    "en": "Does the payment depend on the contract?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:depende",
+      "g:gender-articles",
+      "l:cobro",
+      "l:contrato",
+      "l:depender"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u49",
+    "theme": "more verbs, more people",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0041",
+    "es": "¿Sueñas con otra ciudad?",
+    "en": "Do you dream about another city? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:stem-boot",
+      "l:ciudad",
+      "l:soñar",
+      "p:otro-no-article",
+      "p:sonar-con",
+      "p:sonar-con-ganas"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u49",
+    "theme": "more verbs, more people",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0042",
+    "es": "¿En quién confía Tomás?",
+    "en": "Who does Tomás trust?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:confiar",
+      "l:quién",
+      "p:prep-questions-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "question",
+    "unit": "u49",
+    "theme": "more verbs, more people",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0043",
+    "es": "¿Contamos con ustedes?\nSí, cuenten con nosotros.",
+    "en": "Can we count on you all?\nYes, count on us.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:commands-usted",
+      "g:prep-pronouns",
+      "g:present-ar",
+      "l:contar",
+      "p:contar-con",
+      "p:contar-dos-sentidos",
+      "p:disponer-de"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "dialogue",
+    "unit": "u49",
+    "theme": "more verbs, more people",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0044",
+    "es": "¿En qué consiste el folleto?\nEn una lista de precios.",
+    "en": "What does the brochure consist of?\nA list of prices.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:consistir",
+      "l:folleto",
+      "l:listo",
+      "l:precio",
+      "l:qué",
+      "p:consistir-en",
+      "p:prep-questions-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "dialogue",
+    "unit": "u49",
+    "theme": "more verbs, more people",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0045",
+    "es": "¿Todavía sueñas con Toronto?\nA veces sueño con la nieve.",
+    "en": "Do you still dream about Toronto? (to a friend)\nSometimes I dream about the snow.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:nieve",
+      "l:soñar",
+      "l:vez",
+      "p:frequency-scale",
+      "p:sonar-con",
+      "p:sonar-con-ganas",
+      "p:ya-todavia-basic"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "dialogue",
+    "unit": "u49",
+    "theme": "more verbs, more people",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0046",
+    "es": "¿Se puede pagar mañana?\nDepende del banco.",
+    "en": "Can I pay tomorrow?\nIt depends on the bank.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:depende",
+      "c:se-puede",
+      "g:gender-articles",
+      "g:verb-infinitive",
+      "l:banco",
+      "l:depender",
+      "l:mañana",
+      "l:pagar",
+      "l:poder",
+      "p:se-puede-me-dejas"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "dialogue",
+    "unit": "u49",
+    "theme": "more verbs, more people",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-verbs-prepositions-0047",
+    "es": "Tomás depende de su mamá para el viaje.",
+    "en": "Tomás depends on his mother for the trip.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:depende",
+      "g:gender-articles",
+      "l:depender",
+      "l:mamá",
+      "l:viaje",
+      "p:para-inf",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:verbs-prepositions"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "more verbs, more people",
+    "source": "gen"
+  }
+]

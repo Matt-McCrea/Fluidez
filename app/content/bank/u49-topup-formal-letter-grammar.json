@@ -1,0 +1,840 @@
+[
+  {
+    "id": "u49-t-formal-letter-grammar-0001",
+    "es": "Le agradecería que me atendiera el miércoles por la tarde.",
+    "en": "I would be grateful if you (formal) saw me on Wednesday afternoon.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:imperfect-subj",
+      "g:indirect-objects",
+      "g:subj-past-triggers",
+      "g:that-clauses",
+      "l:agradecer",
+      "l:atender",
+      "l:miércoles",
+      "l:tarde",
+      "p:days-el-lunes",
+      "p:le-agradeceria-que",
+      "p:me-te-nos-objects",
+      "p:por-la-manana"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0002",
+    "es": "Le agradecería que me confirmara la fecha de la entrega.",
+    "en": "I would be grateful if you (formal) confirmed the delivery date to me.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:imperfect-subj",
+      "g:indirect-objects",
+      "g:subj-past-triggers",
+      "g:that-clauses",
+      "l:agradecer",
+      "l:confirmar",
+      "l:entrega",
+      "l:fecha",
+      "p:le-agradeceria-que",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0003",
+    "es": "Le agradecería que me mandara la factura por correo.",
+    "en": "I would be grateful if you (formal) sent me the invoice by email.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:imperfect-subj",
+      "g:indirect-objects",
+      "g:subj-past-triggers",
+      "g:that-clauses",
+      "l:agradecer",
+      "l:correo",
+      "l:factura",
+      "l:mandar",
+      "p:le-agradeceria-que",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0004",
+    "es": "Le agradecería que me dijera quién me atenderá.",
+    "en": "I would be grateful if you (formal) told me who will see me.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:future-promises",
+      "g:imperfect-subj",
+      "g:indirect-objects",
+      "g:indirect-questions",
+      "g:subj-past-triggers",
+      "g:that-clauses",
+      "l:agradecer",
+      "l:atender",
+      "l:decir",
+      "l:quién",
+      "p:le-agradeceria-que",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0005",
+    "es": "Le agradecería que me devolviera el dinero esta semana.",
+    "en": "I would be grateful if you (formal) gave me my money back this week.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:imperfect-subj",
+      "g:indirect-objects",
+      "g:subj-past-triggers",
+      "g:that-clauses",
+      "l:agradecer",
+      "l:devolver",
+      "l:dinero",
+      "l:semana",
+      "p:demonstratives-basic",
+      "p:le-agradeceria-que",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0006",
+    "es": "Le agradecería que cambiara mi cita para el jueves.",
+    "en": "I would be grateful if you (formal) moved my appointment to Thursday.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:imperfect-subj",
+      "g:indirect-objects",
+      "g:subj-past-triggers",
+      "g:that-clauses",
+      "l:agradecer",
+      "l:cambiar",
+      "l:cita",
+      "l:jueves",
+      "p:days-el-lunes",
+      "p:le-agradeceria-que",
+      "p:para-inf",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0007",
+    "es": "Le agradecería que leyera mi carta con atención.",
+    "en": "I would be grateful if you (formal) read my letter carefully.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:imperfect-subj",
+      "g:indirect-objects",
+      "g:subj-past-triggers",
+      "g:that-clauses",
+      "l:agradecer",
+      "l:atención",
+      "l:carta",
+      "l:leer",
+      "p:con-sin",
+      "p:le-agradeceria-que",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0008",
+    "es": "Le agradecería que no me llamara después de las ocho.",
+    "en": "I would be grateful if you (formal) did not call me after eight.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:imperfect-subj",
+      "g:indirect-objects",
+      "g:reflexive-routine",
+      "g:subj-past-triggers",
+      "g:that-clauses",
+      "l:agradecer",
+      "l:después",
+      "l:llamarse",
+      "p:le-agradeceria-que",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0009",
+    "es": "Le agradecería que me explicara por qué el pedido llegó roto.",
+    "en": "I would be grateful if you (formal) explained to me why the order arrived broken.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:imperfect-subj",
+      "g:indirect-objects",
+      "g:indirect-questions",
+      "g:preterite-ar",
+      "g:subj-past-triggers",
+      "g:that-clauses",
+      "l:agradecer",
+      "l:explicar",
+      "l:llegar",
+      "l:pedido",
+      "l:qué",
+      "l:romper",
+      "p:encontrar-participle",
+      "p:le-agradeceria-que",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0010",
+    "es": "Les agradeceríamos que nos mandaran los precios del año.",
+    "en": "We would be grateful if you all sent us this year's prices.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:imperfect-subj",
+      "g:indirect-objects",
+      "g:subj-past-triggers",
+      "g:that-clauses",
+      "l:agradecer",
+      "l:año",
+      "l:mandar",
+      "l:precio",
+      "p:le-agradeceria-que",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0011",
+    "es": "Les agradecería que me dijeran dónde queda su oficina.",
+    "en": "I would be grateful if you all told me where your office is.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:imperfect-subj",
+      "g:indirect-objects",
+      "g:indirect-questions",
+      "g:present-ar",
+      "g:subj-past-triggers",
+      "g:that-clauses",
+      "l:agradecer",
+      "l:decir",
+      "l:dónde",
+      "l:oficina",
+      "l:quedar",
+      "p:le-agradeceria-que",
+      "p:me-te-nos-objects",
+      "p:possessives-basic",
+      "p:quedar-cerca"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0012",
+    "es": "Les agradeceríamos que contestaran nuestro mensaje hoy.",
+    "en": "We would be grateful if you all answered our message today.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:imperfect-subj",
+      "g:indirect-objects",
+      "g:possessives",
+      "g:subj-past-triggers",
+      "g:that-clauses",
+      "l:agradecer",
+      "l:contestar",
+      "l:hoy",
+      "l:mensaje",
+      "p:le-agradeceria-que"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0013",
+    "es": "Les agradecería que cambiaran el producto por uno nuevo.",
+    "en": "I would be grateful if you all exchanged the product for a new one.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:imperfect-subj",
+      "g:indirect-objects",
+      "g:subj-past-triggers",
+      "g:that-clauses",
+      "l:agradecer",
+      "l:cambiar",
+      "l:nuevo",
+      "l:producto",
+      "p:cambiar-de-por",
+      "p:costar-pagar",
+      "p:le-agradeceria-que"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0014",
+    "es": "Quedamos atentos a su decisión sobre el contrato.",
+    "en": "We look forward to your decision on the contract (men or a mixed group writing).",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:quedo-atento",
+      "g:gender-articles",
+      "l:atento",
+      "l:contrato",
+      "l:decisión",
+      "l:quedar",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0015",
+    "es": "Quedo atento a su llamada del lunes.",
+    "en": "I look forward to your call on Monday (a man writing).",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:quedo-atento",
+      "g:gender-articles",
+      "l:atento",
+      "l:llamada",
+      "l:lunes",
+      "l:quedar",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0016",
+    "es": "Quedo atenta a cualquier duda que tenga.",
+    "en": "I remain at your disposal for any question you may have (a woman writing).",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:aqui-tiene",
+      "c:quedo-atento",
+      "g:cada-cualquier",
+      "g:relative-que",
+      "g:subj-relative",
+      "l:atento",
+      "l:duda",
+      "l:quedar",
+      "l:tener"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0017",
+    "es": "Le agradezco mucho su atención.",
+    "en": "I thank you (formal) very much for your attention.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:indirect-objects",
+      "g:yo-irregular",
+      "l:agradecer",
+      "l:atención",
+      "p:possessives-basic",
+      "p:quantifiers-basic",
+      "p:te-lo-agradezco"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0018",
+    "es": "Les agradezco su amable respuesta.",
+    "en": "I thank you all for your kind reply.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:indirect-objects",
+      "g:yo-irregular",
+      "l:agradecer",
+      "l:amable",
+      "l:respuesta",
+      "p:possessives-basic",
+      "p:te-lo-agradezco"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0019",
+    "es": "¿Le agradecería a un cliente que le dijera la verdad?",
+    "en": "Would you be grateful if a customer told you the truth? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:la-verdad",
+      "g:conditional",
+      "g:gender-articles",
+      "g:imperfect-subj",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:relative-que",
+      "g:subj-relative",
+      "l:agradecer",
+      "l:cliente",
+      "l:decir",
+      "l:verdad",
+      "p:le-agradeceria-que"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "question",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0020",
+    "es": "¿Qué le agradecería usted a su jefe que hiciera por usted?",
+    "en": "What would you be grateful if your boss did for you? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:imperfect-subj",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:por-para-1",
+      "g:prep-pronouns",
+      "g:questions",
+      "g:relative-que",
+      "g:subj-relative",
+      "l:agradecer",
+      "l:hacer",
+      "l:jefe",
+      "l:qué",
+      "p:le-agradeceria-que",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "question",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0021",
+    "es": "¿Cómo termina usted una carta formal?",
+    "en": "How do you end a formal letter? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:questions",
+      "l:carta",
+      "l:cómo",
+      "l:formal",
+      "l:terminar",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "question",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0022",
+    "es": "¿Le agradecería a su vecino que no hiciera ruido?",
+    "en": "Would you be grateful if your neighbour did not make noise? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:imperfect-subj",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:relative-que",
+      "g:subj-relative",
+      "l:agradecer",
+      "l:hacer",
+      "l:ruido",
+      "l:vecino",
+      "p:le-agradeceria-que",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "question",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0023",
+    "es": "¿Cuándo le agradecería usted una respuesta?",
+    "en": "When would you be grateful for a reply? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:questions",
+      "l:agradecer",
+      "l:cuándo",
+      "l:respuesta",
+      "p:le-agradeceria-que"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "question",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0024",
+    "es": "¿Ya escribiste la carta?\nSí, y le agradezco a Vale su ayuda.",
+    "en": "Have you written the letter yet?\nYes, and I thank Vale for her help.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:preterite-er-ir",
+      "g:yo-irregular",
+      "l:agradecer",
+      "l:ayuda",
+      "l:carta",
+      "l:escribir",
+      "p:possessives-basic",
+      "p:te-lo-agradezco"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "dialogue",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0025",
+    "es": "¿Qué le pedimos al proveedor?\nLe agradeceríamos que nos respondiera hoy.",
+    "en": "What do we ask the supplier?\nWe would be grateful if you (formal) answered us today.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:gender-articles",
+      "g:imperfect-subj",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:present-er-ir",
+      "g:questions",
+      "g:subj-past-triggers",
+      "g:that-clauses",
+      "l:agradecer",
+      "l:hoy",
+      "l:pedir",
+      "l:proveedor",
+      "l:qué",
+      "l:responder",
+      "p:le-agradeceria-que",
+      "p:me-te-nos-objects",
+      "p:preguntar-pedir"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "dialogue",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0026",
+    "es": "¿Debo escribir tú o usted?\nUsted. Le agradecería que lo recordara siempre.",
+    "en": "Should I write tú or usted?\nUsted. I would be grateful if you always remembered it.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:direct-objects",
+      "g:imperfect-subj",
+      "g:indirect-objects",
+      "g:present-er-ir",
+      "g:subj-past-triggers",
+      "g:tener-que-hay-que",
+      "g:that-clauses",
+      "l:agradecer",
+      "l:deber",
+      "l:escribir",
+      "l:recordar",
+      "l:siempre",
+      "p:frequency-scale",
+      "p:le-agradeceria-que",
+      "p:recordar-acordarse"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "dialogue",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0027",
+    "es": "¿Cómo cierro el correo?\nQuedo atenta a su respuesta, y firma.",
+    "en": "How do I close the email?\nI look forward to your reply, and then sign (a woman speaking).",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:quedo-atento",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:questions",
+      "g:stem-boot",
+      "l:atento",
+      "l:cerrar",
+      "l:correo",
+      "l:cómo",
+      "l:firmar",
+      "l:quedar",
+      "l:respuesta",
+      "p:possessives-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "dialogue",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0028",
+    "es": "Simón no escribe cartas, pero Tomás le agradecería que aprendiera.",
+    "en": "Simón does not write letters, but Tomás would be grateful if he learned.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:imperfect-subj",
+      "g:indirect-objects",
+      "g:present-er-ir",
+      "g:subj-past-triggers",
+      "g:that-clauses",
+      "l:agradecer",
+      "l:aprender",
+      "l:carta",
+      "l:escribir",
+      "p:le-agradeceria-que"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0029",
+    "es": "Mariana dijo que les agradecería que revisaran la cuenta.",
+    "en": "Mariana said she would be grateful if you all checked the bill.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:la-cuenta",
+      "g:conditional",
+      "g:imperfect-subj",
+      "g:indirect-objects",
+      "g:preterite-irregular-strong",
+      "g:reported-backshift",
+      "g:subj-past-triggers",
+      "g:that-clauses",
+      "l:agradecer",
+      "l:cuenta",
+      "l:decir",
+      "l:revisar",
+      "p:le-agradeceria-que"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  },
+  {
+    "id": "u49-t-formal-letter-grammar-0030",
+    "es": "Hernando le agradecería a su hijo que le escribiera más.",
+    "en": "Hernando would be grateful if his son wrote to him more.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:conditional",
+      "g:imperfect-subj",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:relative-que",
+      "g:subj-relative",
+      "l:agradecer",
+      "l:escribir",
+      "l:hijo",
+      "p:le-agradeceria-que",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:formal-letter-grammar"
+    ],
+    "kind": "statement",
+    "unit": "u49",
+    "theme": "formal letters",
+    "source": "gen"
+  }
+]

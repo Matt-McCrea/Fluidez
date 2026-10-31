@@ -76,3 +76,23 @@ test('fixtures: onboarding → a week of lessons → reload → offline', async 
   await expect(page.getByText('Re-reading')).toBeVisible();
   await context.setOffline(false);
 });
+
+test('reloading mid-session offers to pick up where you left off', async ({ page }) => {
+  await page.clock.setFixedTime(T0);
+  await page.goto('/?fixtures=force');
+  await page.getByRole('button', { name: 'Get started' }).click();
+  await page.getByRole('radio', { name: 'Travel' }).click();
+  await page.getByRole('button', { name: 'Next' }).click();
+  await page.locator('[data-zero]').click();
+  await page.locator('[data-start]').click();
+  await expect(page.locator('.session-main h1, .session-main h2').first()).toBeVisible();
+  // move on to the second block, then let the debounced save land
+  await page.getByRole('button', { name: /^(Continue|Next|Got it|Show me)/ }).first().click();
+  await page.waitForTimeout(600);
+  const heading = (await page.locator('.session-main h1, .session-main h2').first().textContent())!.trim();
+  await page.reload();
+  await expect(page.getByRole('button', { name: 'Pick up where you left off' })).toBeVisible();
+  await expect(page.getByText(/About \d+ minutes? left/)).toBeVisible();
+  await page.getByRole('button', { name: 'Pick up where you left off' }).click();
+  await expect(page.locator('.session-main h1, .session-main h2').first()).toHaveText(heading);
+});

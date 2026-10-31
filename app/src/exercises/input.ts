@@ -30,6 +30,8 @@ export interface InputOptions {
   featureNodes?: Partial<Record<Feature, NodeId>>;
   /** Maximum distractors (default 2: three options). */
   maxDistractors?: number;
+  /** The tenses the learner has been taught: no contrast form is built in a tense outside this list (default: all). */
+  taught?: readonly TenseKey[];
 }
 
 export const ALL_FEATURES: readonly Feature[] = ['tense', 'person', 'mood', 'clitic', 'copula', 'porpara', 'number', 'gender'];
@@ -79,15 +81,17 @@ function tenseItem(s: BankSentence, opts: InputOptions): ReadAndPickItem | null 
   const c = parseClause(stripped, s.en);
   if (!c || c.choice.tense !== c0.choice.tense) return null;
   const tense = c.choice.tense;
+  if (opts.taught && !opts.taught.includes(tense)) return null;   // the sentence itself would show a tense not yet taught
   // ser/estar in the preterite (fue blanca, estuvo fría) is grammatical but
   // odd as a description; their past in a description is the imperfect.
   const past: TenseKey = /^(ser|estar)$/.test(c.choice.inf) ? 'imperfecto' : 'preterito';
   const pool: TenseKey[] = tense === 'imperfecto' || tense === 'preterito'
     ? (['presente', 'futuro'] as TenseKey[])
     : (['presente', past, 'futuro'] as TenseKey[]).filter((t) => t !== tense);
+  const allowed = opts.taught ? pool.filter((t) => opts.taught!.includes(t)) : pool;
   const correctForm = low(c.toks[c.verb]);
   const ds: string[] = [];
-  for (const t of pool) {
+  for (const t of allowed) {
     // the right form must not also be a reading of the distractor's tense
     if (verbReadings(correctForm).some((a) => a.tense === t && a.person === c.choice.person)) continue;
     const r = changeTense(c, t);
@@ -175,6 +179,7 @@ function moodItem(s: BankSentence, opts: InputOptions): ReadAndPickItem | null {
     if (!an.length || new Set(an.map((a) => a.tense)).size > 1) return null;
     const from = an[0].tense;
     const to: TenseKey = from === 'presente' ? 'presubj' : 'presente';
+    if (opts.taught && !opts.taught.includes(to)) return null;
     const others = new Set(an.map((a) => form(a.inf, to, a.person as Person)));
     if (others.size !== 1 || others.has(null)) return null;           // every reading must give one form
     const nf = [...others][0]!;

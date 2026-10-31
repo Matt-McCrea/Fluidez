@@ -2,7 +2,7 @@
   "id": "sc-u24-c",
   "unit": "u24",
   "title": "Lo que dice la cuadra",
-  "brief": "You're Tomás. Don Hernando arrives first thing, worried by something he heard on the block. Set him straight, give him your reasons for and against, and send him to his table happy. He's older than you, so use usted.",
+  "brief": "You're Tomás. Don Hernando arrives first thing, worried by something he heard on the block. Set him straight, give him your reasons, and send him to his table happy. He's older than you, so use usted.",
   "spare": false,
   "turns": [
     {
@@ -11,7 +11,7 @@
       "npcEn": "Morning, son. On the block they're saying you're all going to Chapinero. Is it true?",
       "intent": "Say not at all: you're staying here.",
       "accept": [
-        "¡Qué va, don Hernando! Nos quedamos aquí.",
+        "¡Qué va, señor! Nos quedamos aquí.",
         "¡Qué va! No nos vamos. Nos quedamos.",
         "Qué va. Nos quedamos en la esquina."
       ],
@@ -56,19 +56,13 @@
       "id": "t3",
       "npc": "¿Y Vale qué dice? La cocina de Chapinero es muy moderna.",
       "npcEn": "And what does Vale say? The kitchen in Chapinero is very modern.",
-      "intent": "Say that on the one hand the kitchen is modern, but on the other hand, it isn't yours but Altamira's.",
+      "intent": "Say yes, the kitchen is modern, but it isn't yours: it's Altamira's.",
       "accept": [
-        "Por un lado, la cocina es moderna. Por otro lado, no es nuestra, sino de Altamira.",
-        "Por un lado, es muy moderna. Por otro, no es de nosotros, sino de Altamira.",
-        "Por un lado, la cocina es moderna. Pero por otro lado, no es nuestra sino de Altamira."
+        "Sí, la cocina es moderna. Pero no es nuestra, sino de Altamira.",
+        "Es muy moderna, pero no es de nosotros, sino de Altamira.",
+        "Sí, es moderna, pero no es nuestra sino de Altamira."
       ],
       "require": [
-        {
-          "type": "regex",
-          "pattern": "por un lado",
-          "flags": "i",
-          "label": "on the one hand: por un lado..."
-        },
         {
           "type": "regex",
           "pattern": "\\bsino\\b",
@@ -76,7 +70,7 @@
           "label": "after a no, the correction takes sino, not pero"
         }
       ],
-      "focus": "c:por-un-lado",
+      "focus": "g:pero-sino",
       "next": "t4"
     },
     {
@@ -106,7 +100,7 @@
       "npcEn": "And more old men like me. But son, why didn't you tell me anything?",
       "intent": "Apologise, and say you all only decided last night.",
       "accept": [
-        "Qué pena, don Hernando. Decidimos anoche.",
+        "Qué pena, señor. Decidimos anoche.",
         "Perdón. Es que decidimos anoche.",
         "Qué pena con usted. Lo decidimos anoche."
       ],
@@ -129,7 +123,7 @@
       "intent": "Say perfect, and that the plan is to stay another forty years.",
       "accept": [
         "Perfecto. La idea es quedarnos cuarenta años más.",
-        "Listo, don Hernando. La idea es quedarnos aquí cuarenta años más.",
+        "Listo, señor. La idea es quedarnos aquí cuarenta años más.",
         "Perfecto. Su tinto va a estar listo. La idea es quedarnos cuarenta años más."
       ],
       "require": [
@@ -156,14 +150,12 @@
     "c:la-idea-es",
     "c:no-me-convence",
     "c:perdon-disculpe",
-    "c:por-un-lado",
     "c:que-pena",
     "c:que-va",
     "c:tienes",
     "g:adjective-agreement",
     "g:aunque-indicative",
     "g:direct-objects",
-    "g:discourse-structure",
     "g:estar-location-states",
     "g:gender-articles",
     "g:hay-vs-esta",
@@ -206,7 +198,6 @@
     "l:idea",
     "l:ir",
     "l:irse",
-    "l:lado",
     "l:listo",
     "l:luz",
     "l:mañana",
@@ -222,6 +213,7 @@
     "l:qué",
     "l:ruido",
     "l:ser",
+    "l:señor",
     "l:siempre",
     "l:tener",
     "l:tinto",
@@ -234,7 +226,6 @@
     "p:con-sin",
     "p:de-owner",
     "p:demonstratives-basic",
-    "p:don-dona-nombre",
     "p:frequency-scale",
     "p:me-te-nos-objects",
     "p:para-inf",
@@ -242,7 +233,6 @@
     "p:possessives-basic",
     "p:prep-questions-basic",
     "p:quantifiers-basic",
-    "p:senor-don-article",
     "p:telling-time",
     "p:tiene-mucha-luz",
     "p:viejo-antiguo-mayor"

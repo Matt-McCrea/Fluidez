@@ -23,6 +23,7 @@ for (let d = 1; d <= days; d++) {
   const p = r.plan;
   console.log(`\n\n=========== DAY ${d}: type=${p.type} est=${p.estimatedMinutes}min budget=${p.budget.minutes} played=${r.minutes.toFixed(1)}min blocks=${p.blocks.map((b) => b.kind).join(',')}`);
   console.log(`new nodes: ${JSON.stringify(p.newNodes)}`);
+  for (const d of (p as any).diagnostics ?? []) console.log(`diag [${d.code}] ${d.message ?? ''}`);
   let i = 0;
   for (const c of r.walk.cards) {
     i++;

@@ -1,7 +1,7 @@
 import { describe, expect, test, vi } from 'vitest';
 import { initialPath } from '../../src/compiler';
 import { IdbStore, Learner } from '../../src/learner';
-import { applyStreak, emptyUi, MemoryKV, PATH_KEY, streakStatus, UI_KEY, UiStore } from '../../src/ui/store/ui';
+import { applyStreak, emptyUi, isResumable, MemoryKV, PATH_KEY, SESSION_KEY, streakStatus, UI_KEY, UiStore, type SavedSession } from '../../src/ui/store/ui';
 
 describe('UiStore migrations', () => {
   test('a v1 ui document keeps its learnerId and comes out at v2', async () => {
@@ -138,5 +138,37 @@ describe('streak freezes', () => {
     await ui.update((s) => { s.stats.wordsRead += 40; s.stats.wordsWritten += 5; });
     const k = Object.keys(ui.state.weekly)[0];
     expect(ui.state.weekly[k]).toEqual({ read: 40, written: 5 });
+  });
+});
+
+describe('saved session', () => {
+  const saved = (over: Partial<SavedSession> = {}): SavedSession => ({
+    version: 1, learnerId: 'me', sessionIndex: 4, mode: 'next', capMinutes: 20, startedAt: 1000, elapsedMs: 5 * 60_000, savedAt: new Date(2026, 9, 1, 18).getTime(),
+    plan: { blocks: [] } as never, block: 2, cursor: { card: 3 }, runner: {} as never, ...over,
+  });
+  const learner = { sessionIndex: 4, day: (at?: number) => { const t = new Date(at ?? 0); return `${t.getFullYear()}-${t.getMonth()}-${t.getDate()}`; } };
+  const at = (h: number) => new Date(2026, 9, 1, h).getTime();
+
+  test('save, load and clear round trip, outside the ui document', async () => {
+    const kv = new MemoryKV();
+    const ui = await new UiStore(kv).load();
+    await ui.saveSession(saved());
+    expect((await kv.get(SESSION_KEY) as SavedSession).block).toBe(2);
+    expect((await kv.get(UI_KEY) as any).session).toBeUndefined();
+    const again = await new UiStore(kv).load();
+    expect(again.session?.cursor).toEqual({ card: 3 });
+    await again.clearSession();
+    expect(again.session).toBeUndefined();
+    expect(await kv.get(SESSION_KEY)).toBeUndefined();
+    expect((await new UiStore(kv).load()).session).toBeUndefined();
+  });
+
+  test('a fresh snapshot is resumable; a stale, foreign or moved-on one is not', () => {
+    expect(isResumable(saved(), learner, at(19), 'me')).toBe(true);
+    expect(isResumable(saved(), learner, at(22), 'me')).toBe(false);              // 4 h old
+    expect(isResumable(saved(), learner, at(19), 'someone-else')).toBe(false);    // another learner
+    expect(isResumable(saved({ sessionIndex: 3 }), learner, at(19), 'me')).toBe(false);
+    expect(isResumable(saved({ savedAt: at(23) - 86_400_000 }), learner, at(1) + 86_400_000, 'me')).toBe(false); // another day
+    expect(isResumable(undefined, learner, at(19), 'me')).toBe(false);
   });
 });

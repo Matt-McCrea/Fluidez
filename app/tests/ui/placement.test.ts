@@ -13,7 +13,13 @@ import {
 
 const DAY = 86_400_000;
 let b: Bundle;
-beforeAll(async () => { b = await new ContentLoader().load({ band: 'A1' }); }, 60_000);
+/** the bank through B2 and a band beyond: what a learner who says they are advanced is checked on */
+let upper: Bundle;
+beforeAll(async () => {
+  const loader = new ContentLoader();
+  b = await loader.load({ band: 'A1' });
+  upper = await new ContentLoader().load({ band: 'B2' });
+}, 120_000);
 
 const names = (s: string) => (s.match(/(?<![.?!¿¡]\s*|^)\b\p{Lu}\p{L}+/gu) ?? []).sort().join(',');
 
@@ -52,12 +58,12 @@ describe('placement items (real content)', () => {
     expect(fairItem(it(['Somos de Bogotá.', 'Soy de Bogotá.']), 'Somos de Bogotá.', "We're from Bogotá.")).toBe(true);
   });
 
-  it('a full run asks 12 to 15 items for someone in the middle, and places them', () => {
+  it('a full run asks 12 to 23 items for someone in the middle, and places them', () => {
     const p = contentProbe(b, 'learner-x').start();
     let n = 0;
     for (let it = p.next(); it; it = p.next()) { p.answer(it.unit === 0 || n % 3 === 0); n++; }
     expect(n).toBeGreaterThanOrEqual(Math.min(12, MAX_ITEMS));
-    expect(n).toBeLessThanOrEqual(15);
+    expect(n).toBeLessThanOrEqual(MAX_ITEMS + 3);
     expect(p.result()).toBeGreaterThanOrEqual(0);
   });
 });
@@ -74,7 +80,45 @@ describe('the ladder', () => {
     p.answer(true);
     expect(p.next()!.unit).toBe(1);
     p.answer(true);
-    expect(p.next()!.unit).toBe(2);
+    expect(p.next()!.unit).toBe(3);
+  });
+
+  it('climbs two levels per streak until the first miss, then one', () => {
+    const many = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((u) => level(u, 30));
+    const p = ladder(many, (u) => (u < 3 ? 'A1' : 'A2'));
+    const seen: number[] = [];
+    for (let i = 0; i < 6; i++) { seen.push(p.next()!.unit); p.answer(true); }
+    expect(seen).toEqual([1, 1, 3, 3, 5, 5]);
+    p.next(); p.answer(false);                 // the miss: down one
+    const after: number[] = [];
+    for (let i = 0; i < 4; i++) { after.push(p.next()!.unit); p.answer(true); }
+    expect(after).toEqual([6, 6, 7, 7]);       // up by one per streak from here on
+  });
+
+  it('starts at the first level of the band asked for, or the nearest lower band', () => {
+    const bands = (u: number) => (u < 2 ? 'A1' : u < 4 ? 'A2' : u < 6 ? 'B1' : 'B2');
+    const ten = [0, 1, 2, 3, 4, 5, 6, 7].map((u) => level(u));
+    expect(ladder(ten, bands, 20, { start: 'B1' }).next()!.unit).toBe(4);
+    expect(ladder(ten, bands, 20, { start: 'B2' }).next()!.unit).toBe(6);
+    const noB2 = ten.slice(0, 6);
+    expect(ladder(noB2, bands, 20, { start: 'B2' }).next()!.unit).toBe(4);
+  });
+
+  it('never asks more than MAX_ITEMS + 3, and a B2 result rests on three items from a B2 level', () => {
+    const bands = (u: number) => (u < 2 ? 'A1' : u < 4 ? 'A2' : u < 6 ? 'B1' : 'B2');
+    const lv = [0, 1, 2, 3, 4, 5, 6, 7].map((u) => level(u, 40));
+    const p = ladder(lv, bands, 20, { start: 'B2' });
+    const perUnit = new Map<number, number>();
+    let n = 0;
+    for (let it = p.next(); it; it = p.next()) { perUnit.set(it.unit, (perUnit.get(it.unit) ?? 0) + 1); p.answer(true); n++; }
+    expect(n).toBeLessThanOrEqual(23);
+    const placed = p.result() - 1;
+    expect(bands(placed)).toBe('B2');
+    expect(perUnit.get(placed) ?? 0).toBeGreaterThanOrEqual(3);
+    // two lucky answers at B1 are not enough to place there
+    const q = ladder(lv, bands, 20, { start: 'B1' });
+    q.next(); q.answer(true); q.next(); q.answer(true);
+    expect(q.result()).toBe(0);
   });
 
   it('steps down on a miss', () => {
@@ -171,5 +215,36 @@ describe('dialogue rows in placement items', () => {
     expect(capitaliseTurns('¿Qué pasó con el café? no hay, Tomás.')).toBe('¿Qué pasó con el café? No hay, Tomás.');
     const s: any = { id: 'u04-x', es: '¿Qué pasó con el café?\nHoy no hay, Tomás.', en: 'What happened to the coffee?\nThere is none today, Tomás.', accept: [], acceptEn: [], requires: [], targets: [], kind: 'dialogue', unit: 'u04' };
     for (const it of itemsFor(s, 4, 'a')) for (const o of it.options) expect(o.text).not.toMatch(/[?.!] \p{Ll}/u);
+  });
+});
+
+describe('placement for people who already know some Spanish (real content)', () => {
+  const bandOf = (u: number) => upper.course.units[u].band;
+
+  it('starting at B1, the first item comes from a B1 unit', () => {
+    const p = contentProbe(upper, 'learner-b1', { start: 'B1' }).start();
+    expect(bandOf(p.next()!.unit)).toBe('B1');
+  });
+
+  it('some level above u05 carries a ser/estar or por/para item', () => {
+    const levels = probeLevels(upper).filter((l) => l.unit > 5);
+    const forms = levels.flatMap((l) => l.items.filter((it) => it.kind === 'form').map((it) => (it.id.split('|')[2] ?? '').split(':')[0]));
+    expect(forms.some((f) => f === 'copula' || f === 'porpara'), [...new Set(forms)].join(',')).toBe(true);
+    expect(levels.some((l) => (l.features ?? []).length > 0)).toBe(true);
+  });
+
+  it('answering everything right from B2 lands at B2 or later, in at most 23 items', () => {
+    const p = contentProbe(upper, 'learner-b2', { start: 'B2' }).start();
+    let n = 0;
+    for (let it = p.next(); it; it = p.next()) { p.answer(true); n++; }
+    expect(n).toBeLessThanOrEqual(23);
+    expect(['B2', 'C1', 'C2']).toContain(bandOf(Math.max(0, p.result() - 1)));
+  });
+
+  it('a unit only shows tenses taught by then: no future or conditional forms in the first unit', () => {
+    const first = probeLevels(upper)[0];
+    for (const it of first.items) {
+      if (it.kind === 'form') expect(it.id, it.options.map((o) => o.text).join(' | ')).not.toMatch(/\|tense:/);
+    }
   });
 });

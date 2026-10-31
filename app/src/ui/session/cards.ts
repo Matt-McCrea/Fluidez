@@ -2,12 +2,12 @@
 // (item, content, seed): the same item always renders the same card, so a
 // reload mid-session shows the same question. Every card carries its own
 // checker and ONE plain-English reason for when the learner gets it wrong.
-import type { PracticeItem, RecallItem, ReviewItem, ScriptItem, LearnItem } from '../../compiler';
+import { reviewTargets, type PracticeItem, type RecallItem, type ReviewItem, type ScriptItem, type LearnItem } from '../../compiler';
 import type { BankSentence, NodeId, TeachingScript } from '../../content/schema';
 import { answerForms, checkExact } from '../../check';
 import { wordHint } from '../../check/wordhint';
-import { matchEnglish, matchTranslation } from '../../check/translate';
-import { analyzeToken, deaccent } from '../../engine';
+import { canon, matchEnglish, matchTranslation } from '../../check/translate';
+import { analyzeToken, deaccent, type TenseKey } from '../../engine';
 import { addToLexicon, checkPersonal } from '../../check/personal';
 import { bundleLexicon } from './scene';
 import { verbReadings } from '../../exercises/spanish';
@@ -15,6 +15,7 @@ import {
   ALL_FEATURES, checkItem, chooseItem, form, lexGapItem, parseClause, rng, shuffle, structuredInput,
   recombinations, transformItems, translationItems, typeFormItem, type Item as ExItem,
 } from '../../exercises';
+import { INTERCHANGEABLE } from '../../exercises/lexeme';
 import { fixBreaks, isMultiTurn, productionView, turnView, turnViews, type TurnView } from '../../exercises/dialogue';
 import { englishVariants } from './engvariants';
 import { hash32 } from '../../exercises/rng';
@@ -36,6 +37,8 @@ export interface Check {
   answer: string;
   /** matched only through a Peninsular form */
   variant?: 'peninsular';
+  /** passed through a synonym the course did not teach: counts, but as Hard */
+  lenient?: boolean;
 }
 
 interface CardBase {
@@ -161,10 +164,28 @@ function mcq(key: string, ask: string, prompt: Txt | undefined, right: Txt, wron
 
 // ---------------------------------------------------------------- checkers
 
+/** The learner's word when it is a different word of the SAME interchangeable set as the model's at the one place they differ. */
+function lenientSwap(input: string, r: { hintKind?: string; at?: number; closest: string }): string | undefined {
+  if ((r.hintKind !== 'wrong-word' && r.hintKind !== 'spelling') || r.at === undefined) return undefined;
+  // cheap first: some set must have a word in each text before the (costly) canonical forms are compared
+  const k0 = (w: string) => deaccent(w.toLowerCase());
+  const iw = new Set(words(input)), cw = new Set(words(r.closest));
+  if (!INTERCHANGEABLE.some((set) => set.some((x) => iw.has(k0(x))) && set.some((x) => cw.has(k0(x))))) return undefined;
+  const mine = canon(input).toks;
+  const model = canon(r.closest).toks;
+  const a = mine[r.at]?.t, c = model[r.at]?.t;
+  if (!a || !c || a === c || mine.length !== model.length) return undefined;
+  const k = (w: string) => deaccent(w.toLowerCase());
+  if (!INTERCHANGEABLE.some((set) => set.some((x) => k(x) === k(a)) && set.some((x) => k(x) === k(c)))) return undefined;
+  return mine[r.at].src ?? a;
+}
+
 /** A whole Spanish sentence, from English: the translation matcher. */
 export function sentenceCheck(s: Pick<BankSentence, 'es' | 'en' | 'accept'>) {
   return (input: string): Check => {
     const r = matchTranslation(input, { es: s.es, en: s.en, accept: s.accept });
+    const len = r.pass ? undefined : lenientSwap(input, r);
+    if (len) return { pass: true, lenient: true, hint: `We'd say ${r.closest}; ${len} works too.`, answer: s.es };
     return { pass: r.pass, near: r.near, hint: r.hint, hintKind: r.hintKind, answer: r.pass ? s.es : r.closest, variant: r.variant };
   };
 }
@@ -291,6 +312,22 @@ export function receptiveFormat(node: string, seedKey: string | number): Recepti
   return WHEEL[(((hash32(node) + step) % 20) + 20) % 20];
 }
 
+// ---------------------------------------------------------------- productive formats
+
+export type ProductiveFormat = 'translate' | 'cloze' | 'transform';
+
+/** 20 slots (8 translate, 8 cloze, 4 transform), no two neighbours alike, also round the end. */
+const PRODUCTIVE_WHEEL: ProductiveFormat[] = [
+  'translate', 'cloze', 'translate', 'cloze', 'translate', 'transform', 'cloze', 'translate', 'cloze', 'translate',
+  'transform', 'cloze', 'translate', 'cloze', 'translate', 'transform', 'cloze', 'translate', 'cloze', 'transform',
+];
+
+/** How a productive review of a node is asked: (node, session index or card key), like receptiveFormat. */
+export function productiveFormat(node: string, seedKey: string | number): ProductiveFormat {
+  const step = typeof seedKey === 'number' ? seedKey : hash32(seedKey);
+  return PRODUCTIVE_WHEEL[(((hash32(node) + step) % 20) + 20) % 20];
+}
+
 const en_ = (t: string): Txt => ({ text: t, lang: 'en' });
 const wordCount = (t: string) => t.split(/\s+/).filter(Boolean).length;
 /** English meanings to accept for a typed answer: the meaning, and it without its leading the/a/to. */
@@ -325,6 +362,77 @@ function usesWhy(b: Bundle, node: NodeId, sentence: string): string {
   return forms.length ? `It uses ${title}: ${forms[0]}.` : `It uses ${title}.`;
 }
 
+/** Does a typed-form gap's answer belong to the node being reviewed? */
+function answerBelongs(b: Bundle, node: NodeId, answer: string): boolean {
+  const a = norm(answer);
+  if (b.segments(node).some((x) => norm(x.es) === a || words(x.es).includes(a))) return true;
+  const own = new Set(words(b.node(node)?.es ?? '').map((w) => w.replace(/se$/, '')));
+  return analyzeToken(answer.toLowerCase()).some((r) => own.has(r.inf.replace(/se$/, '')));
+}
+
+/** The cloze or transform way of asking a productive review, or undefined when the sentence does not support it. */
+function productiveSideCard(item: ReviewItem, s: BankSentence, b: Bundle, f: 'cloze' | 'transform'): Card | undefined {
+  if (f === 'transform') {
+    const t = transformItems(s)[0];
+    if (!t) return undefined;
+    return {
+      type: 'type', key: item.id, ask: 'Change the sentence', prompt: es(t.source), sub: en(t.instruction), answerLang: 'es',
+      placeholder: 'Type it in Spanish', check: itemCheck(t), retry: true, why: `Here is the sentence ${t.instruction.replace(/^Say it/i, 'said').replace(/\.$/, '')}.`,
+    };
+  }
+  const tf = typeFormItem(s);
+  if (tf && answerBelongs(b, item.node, tf.answer)) {
+    return {
+      type: 'type', key: item.id, ask: 'Fill the gap', prompt: es(tf.gapped), sub: en(`${tf.en}  ${tf.cue}`), answerLang: 'es',
+      placeholder: 'The missing word', check: itemCheck(tf), retry: true, why: gapWhy(tf, `The English says "${tf.en}", so the gap is ${tf.answer}.`),
+    };
+  }
+  const nk = b.node(item.node)?.kind;
+  const lex = nk === 'lexeme' || nk === 'chunk' ? b.lexemeLike(item.node) : undefined;
+  const g = lex && lexGapItem(lex, s);
+  if (lex && g) return lexGapCard(item.id, lex, g);
+  return undefined;
+}
+
+function lexGapCard(key: string, lex: { es: string; en: string }, g: ReturnType<typeof lexGapItem> & object): TypeCard {
+  return {
+    type: 'type', key, ask: 'Fill the gap with the new word', prompt: es(g.gapped), sub: en(`${g.en}  ${g.cue}`), answerLang: 'es',
+    placeholder: 'The missing word', check: itemCheck(g, lex.en), retry: true, why: lexemeWhy(lex, g),
+  };
+}
+
+/**
+ * A new word asked in a sentence: the sentence with the word gapped, the
+ * English of the sentence and the cue. `exampleId` (the sentence the learner
+ * was just shown) goes first. No fair gap but a sentence that has the word:
+ * the gloss, with that sentence as a clue. Neither: the plain gloss.
+ */
+export function lexemeTypeCard(key: string, node: NodeId, b: Bundle, exampleId?: string): Card {
+  const lex = b.lexemeLike(node);
+  const seg = b.segments(node)[0];
+  const ids = [exampleId, ...(b.index.byTarget.get(node) ?? []), ...(b.index.byRequire.get(node) ?? [])]
+    .filter((x, i, a): x is string => !!x && a.indexOf(x) === i).slice(0, 20);
+  const sentences = ids.map((id) => b.sentence(id)).filter((x): x is BankSentence => !!x);
+  if (lex) {
+    for (const s of sentences) {
+      const g = lexGapItem(lex, s);
+      if (g) return lexGapCard(key, lex, g);
+    }
+  }
+  const gloss = (sub?: Txt): Card => ({
+    type: 'type', key, ask: SAY, prompt: en(seg?.en ?? lex?.en ?? ''), ...(sub ? { sub } : {}), answerLang: 'es', placeholder: 'Type it in Spanish',
+    check: chunkCheck([seg?.es ?? lex?.es ?? '', ...(seg?.accept ?? [])]), retry: true, why: `"${seg?.en}" is ${seg?.es}`,
+  });
+  const word = lex ? lex.es.replace(/^(el|la|los|las|un|una)\s+/i, '').trim() : '';
+  if (word) {
+    const re = new RegExp(`(^|[^\\p{L}])(${word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})(?![\\p{L}])`, 'iu');
+    for (const s of sentences) {
+      if (re.test(s.es) && !isMultiTurn(s)) return gloss(es('as in: ' + s.es.replace(re, '$1___')));
+    }
+  }
+  return gloss();
+}
+
 /**
  * A review. A receptive one is asked three ways, rotated per node and session
  * (`receptiveFormat`): type the English, pick the English (the wrong options
@@ -333,7 +441,7 @@ function usesWhy(b: Bundle, node: NodeId, sentence: string): string {
  * so a warm-up of receptive reviews is not one long run of the same look.
  * `session` (a number) makes a node's look change from one session to the next.
  */
-export function reviewCard(item: ReviewItem, b: Bundle, variant: 'meaning' | 'pickSpanish' = 'meaning', session?: number): Card {
+export function reviewCard(item: ReviewItem, b: Bundle, variant: 'meaning' | 'pickSpanish' | 'cloze' = 'meaning', session?: number): Card {
   const s = b.sentence(item.sentence);
   const seg = b.segments(item.node)[0];
   const title = b.title(item.node);
@@ -357,6 +465,11 @@ export function reviewCard(item: ReviewItem, b: Bundle, variant: 'meaning' | 'pi
     }
     return mcq(item.id, MEANS, es(s.es), en(s.en), otherEnglish(b, s.en, item.id, 2, s.unit).map(en), why);
   }
+  if (s && item.direction === 'productive' && reviewTargets(item).length === 1) {
+    const f = variant === 'cloze' ? 'cloze' : productiveFormat(item.node, session ?? item.id);
+    const c = f === 'translate' ? undefined : productiveSideCard(item, s, b, f);
+    if (c) return c;
+  }
   const v = s ? productionView(s, preferFor(b, item.node)) : null;
   if (s && v) {
     return sayCard(item.id, v, sentenceCheck(v.sentence), usesWhy(b, item.node, v.sentence.es));
@@ -368,6 +481,7 @@ export function reviewCard(item: ReviewItem, b: Bundle, variant: 'meaning' | 'pi
   }
   // bare card: no fresh sentence left for this node
   if (!seg) return { type: 'read', key: item.id, ask: 'Remember this one?', es: b.node(item.node)?.es ?? title, en: title, why: '' };
+  if (item.direction === 'productive' && b.node(item.node)?.kind === 'lexeme') return lexemeTypeCard(item.id, item.node, b);
   if (item.direction === 'receptive') {
     if (fmt === 'typeEn' && wordCount(seg.en) <= 6) return typeMeaning(item.id, seg.es, seg.en, [], `${seg.es} means "${seg.en}".`);
     if (fmt === 'pickEs') {
@@ -419,6 +533,7 @@ export function learnRetrieval(item: LearnItem, b: Bundle, round: number, n?: nu
       break;
     }
     case 'type':
+      if (b.node(item.node)?.kind === 'lexeme') return lexemeTypeCard(key, item.node, b, item.example);
       break;
   }
   return {
@@ -561,14 +676,15 @@ export function recombineCard(item: PracticeItem, s: BankSentence, b: Bundle, se
   };
 }
 
-export function practiceCard(item: PracticeItem, b: Bundle, seed: number): Card {
+/** `taught`: the learner's licensed tenses (licensedTenses); distractors and contrast forms stay inside it. Omitted: no limit. */
+export function practiceCard(item: PracticeItem, b: Bundle, seed: number, taught?: readonly TenseKey[]): Card {
   const s = b.sentence(item.sentence);
   if (!s) return { type: 'read', key: item.id, ask: 'Have a look', es: b.node(item.node)?.es ?? '', en: b.title(item.node), why: '' };
   const r = rng(`${seed}:${item.id}`);
   switch (item.op) {
     case 'pick': {
       for (const f of shuffle([...ALL_FEATURES], r)) {
-        const it = structuredInput(s, f, { seed: item.id });
+        const it = structuredInput(s, f, { seed: item.id, taught });
         if (it) {
           return {
             type: 'mcq', key: item.id, ask: 'Read and pick', prompt: en(it.question), options: it.options.map(es), answer: it.answer, why: it.why,
@@ -579,7 +695,7 @@ export function practiceCard(item: PracticeItem, b: Bundle, seed: number): Card 
       return meaningCard(item, s, b, 'Read and pick. What does it mean?');
     }
     case 'choose': {
-      const it = chooseItem(s, { seed: item.id });
+      const it = chooseItem(s, { seed: item.id, taught });
       if (it) {
         return {
           type: 'mcq', key: item.id, ask: 'Choose the right form', prompt: es(it.gapped), sub: en(`${it.en}  ${it.cue}`),
@@ -601,7 +717,7 @@ export function practiceCard(item: PracticeItem, b: Bundle, seed: number): Card 
       return translateCard(item, s, b);
     }
     case 'recombine':
-      return recombineCard(item, s, b, seed) ?? practiceCard({ ...item, op: 'transform' }, b, seed);
+      return recombineCard(item, s, b, seed) ?? practiceCard({ ...item, op: 'transform' }, b, seed, taught);
     case 'translate':
       return translateCard(item, s, b);
     case 'gap': {
