@@ -1,0 +1,399 @@
+{
+  "id": "ch131",
+  "unit": "u43",
+  "title": "El globo de la autopista",
+  "text": "«Buenos días, viajeros. Les habla el capitán Rojas, desde el helicóptero de la policía». En la Burra, durante el reporte de circulación, nadie podía hablar. Era la ley de Hernando.\nRadio: Un globo enorme de publicidad cayó sobre la autopista. La circulación está detenida. Les recomiendo buscar una alternativa.\nHernando: En cuarenta años de taxi vi de todo. Un globo, nunca.\nAtrás iba Yesid, con la chaqueta de su abuelo.\nHernando: Mijo, el cinturón.\nYesid: En el barco nadie usa cinturón.\nHernando: En el barco no hay buses. Póngaselo.\nMariana: Duarte sigue apagado. Es una lástima que no tengamos otra opción.\nHernando: La alternativa es mi túnel.\nRadio: Ese globo es de un hotel nuevo. Dice «Hotel Esquina Real».\nToda la Burra se rio.\nHernando: Hasta los globos de Altamira se caen.\nRadio: Les habla el capitán Rojas, el cazador de trancones.\nHernando: Ese cazador nunca encuentra nada. Desde un helicóptero es muy fácil.\nPor el túnel pasaron en diez minutos. Hernando manejaba como un capitán de barco.\nA las nueve menos diez llegaron al juzgado. El juez sustituto firmó en cinco minutos.\nAyudante: El resultado del laboratorio llega el jueves.\nPero Duarte no estaba. A las nueve y cuarto, tampoco.\nTomás: Me decepciona que no venga.\nMariana: Sin su correo, ese resultado no dice quién mandó poner esa huella.\nA las nueve y media entró Duarte, mojado, con un sobre debajo del brazo.\nDuarte: Perdón. Con ese globo, la autopista era un parqueadero.\nDuarte: El bufete no retiró la demanda. Si les doy esto, pierdo mi pensión. Quince años de trabajo.\nYesid se levantó. Duarte miró la chaqueta, y después la cara.\nYesid: Usted fue a Taganga hace dos años. Le compró la cédula de mi abuelo a mi tío.\nDuarte: En esa cédula, su abuelo tenía esa misma cara.\nDuarte miró el sobre un rato largo.\nDuarte: Tengo dos opciones: mi pensión, o poder dormir. A mi edad, uno escoge el resultado que puede mirar en el espejo.\nLe dio el sobre al ayudante del juez. Después se sentó en un banco del pasillo, como un viajero que perdió el último bus.\nDuarte: Adiós, pensión.\nTomás le llevó un tinto de la máquina. Era malísimo. Duarte se lo tomó todo.\nEn la Burra, Yesid se puso el cinturón sin que nadie se lo pidiera.\nHernando: ¿La pasó bien en el juzgado, mijo?\nYesid: La pasé muy mal hasta las nueve y media.\nHernando: ¿Y qué tienen pensado para esta noche?\nVale: Una fiesta para el primo. Y yo invito a Duarte.\nTomás: ¿A Duarte?\nVale: Nadie debería tomarse solo ese tinto.\nRadio: Atención, viajeros. El globo del Hotel Esquina Real ya no está en la autopista.",
+  "gloss": [
+    {
+      "es": "reporte de circulación",
+      "en": "traffic report"
+    },
+    {
+      "es": "Era la ley de Hernando.",
+      "en": "It was Hernando's rule."
+    },
+    {
+      "es": "globo de publicidad",
+      "en": "advertising balloon"
+    },
+    {
+      "es": "La circulación está detenida.",
+      "en": "Traffic is at a standstill."
+    },
+    {
+      "es": "Póngaselo.",
+      "en": "Put it on."
+    },
+    {
+      "es": "Duarte sigue apagado.",
+      "en": "Duarte's phone is still off."
+    },
+    {
+      "es": "Es una lástima que no tengamos otra opción.",
+      "en": "It's a shame we don't have another option."
+    },
+    {
+      "es": "Hasta los globos de Altamira se caen.",
+      "en": "Even Altamira's balloons fall down."
+    },
+    {
+      "es": "el cazador de trancones",
+      "en": "the traffic jam hunter"
+    },
+    {
+      "es": "juzgado",
+      "en": "court"
+    },
+    {
+      "es": "Me decepciona que no venga.",
+      "en": "I'm disappointed that he isn't coming."
+    },
+    {
+      "es": "quién mandó poner esa huella",
+      "en": "who ordered that fingerprint to be put there"
+    },
+    {
+      "es": "la autopista era un parqueadero",
+      "en": "the motorway was a car park"
+    },
+    {
+      "es": "El bufete no retiró la demanda.",
+      "en": "The law firm did not drop the lawsuit."
+    },
+    {
+      "es": "pierdo mi pensión",
+      "en": "I lose my pension"
+    },
+    {
+      "es": "o poder dormir",
+      "en": "or being able to sleep"
+    },
+    {
+      "es": "espejo",
+      "en": "mirror"
+    },
+    {
+      "es": "uno escoge el resultado que puede mirar en el espejo",
+      "en": "you choose the outcome you can look at in the mirror"
+    },
+    {
+      "es": "banco del pasillo",
+      "en": "bench in the corridor"
+    },
+    {
+      "es": "sin que nadie se lo pidiera",
+      "en": "without anyone asking him"
+    },
+    {
+      "es": "¿La pasó bien en el juzgado?",
+      "en": "Did you have a good time at the court?"
+    },
+    {
+      "es": "La pasé muy mal",
+      "en": "I had a really bad time"
+    },
+    {
+      "es": "¿Y qué tienen pensado para esta noche?",
+      "en": "And what have you got planned for tonight?"
+    },
+    {
+      "es": "Yo invito a Duarte.",
+      "en": "I'm inviting Duarte."
+    },
+    {
+      "es": "Nadie debería tomarse solo ese tinto.",
+      "en": "Nobody should have to drink that coffee alone."
+    }
+  ],
+  "questions": [
+    {
+      "q": "What has blocked the motorway?",
+      "options": [
+        "A giant advertising balloon for Altamira's hotel",
+        "A broken down bus",
+        "A police helicopter",
+        "A protest by taxi drivers"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How does Hernando beat the traffic?",
+      "options": [
+        "He takes his tunnel",
+        "He follows the helicopter",
+        "He drives on the pavement",
+        "He waits for the balloon to be moved"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why is it hard for Duarte to hand over the envelope?",
+      "options": [
+        "The law firm did not drop the lawsuit, so he will lose his pension",
+        "He is afraid of Yesid",
+        "The judge will not accept it",
+        "He wants money for it"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Por qué Duarte da el sobre al final?",
+      "options": [
+        "Porque quiere poder dormir",
+        "Porque el bufete retiró la demanda",
+        "Porque Tomás le paga",
+        "Porque el juez se lo ordena"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Vale invite Duarte to the party?",
+      "options": [
+        "Because nobody should drink that awful coffee alone",
+        "Because he is Yesid's uncle",
+        "Because Mariana wants to interview him",
+        "Because he paid for the party"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What does Yesid do on the way home that he refused to do that morning?",
+      "options": [
+        "He puts on his seatbelt without being asked",
+        "He talks during the traffic report",
+        "He drives the Burra",
+        "He takes off the jacket"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who is \"the traffic jam hunter\"?",
+      "options": [
+        "Captain Rojas, from the police helicopter",
+        "Hernando",
+        "Duarte",
+        "The judge"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "When will the lab result arrive?",
+      "options": [
+        "On Thursday",
+        "This evening",
+        "On Monday",
+        "In a month"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Tonight the café throws a party for Yesid, and for once nobody talks about Altamira. Then Tomás lends Yesid his laptop, and an email from Toronto opens on the screen.",
+  "requires": [
+    "c:bien-y-tu",
+    "c:era",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:perdon-disculpe",
+    "c:tengo",
+    "c:tienes",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:estar-participle",
+    "g:gender-articles",
+    "g:hace-ago",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-purpose-full",
+    "g:subj-value",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:tener-que-hay-que",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:verbs-of-change",
+    "g:yo-irregular",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:caerse-lastimarse",
+    "p:cerca-de",
+    "p:comerse-todo",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:durar-durante",
+    "p:entonces-de-repente",
+    "p:es-una-lastima-que",
+    "p:frequency-scale",
+    "p:generic-tu-uno",
+    "p:humedo-mojado",
+    "p:ir-a-venir-de-place",
+    "p:lavarse-las-manos",
+    "p:llevar-traer",
+    "p:me-decepciono-que",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:pasarla-bien",
+    "p:pasarla-bien-mal",
+    "p:permitir-inf",
+    "p:personal-a",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:telling-time",
+    "p:tendrias-que",
+    "p:tener-pensado-previsto",
+    "p:time-sequence-basic"
+  ],
+  "lexemes": [
+    "l:abuelo",
+    "l:alternativa",
+    "l:apagar",
+    "l:atención",
+    "l:atrás",
+    "l:autopista",
+    "l:ayudante",
+    "l:año",
+    "l:banco",
+    "l:barco",
+    "l:bien",
+    "l:brazo",
+    "l:bueno",
+    "l:bufete",
+    "l:bus",
+    "l:buscar",
+    "l:caer",
+    "l:caerse",
+    "l:capitán",
+    "l:cara",
+    "l:cazador",
+    "l:chaqueta",
+    "l:cinturón",
+    "l:circulación",
+    "l:comprar",
+    "l:correo",
+    "l:cédula",
+    "l:dar",
+    "l:debajo",
+    "l:deber",
+    "l:decepcionar",
+    "l:decir",
+    "l:demanda",
+    "l:después",
+    "l:detener",
+    "l:dormir",
+    "l:día",
+    "l:edad",
+    "l:encontrar",
+    "l:enorme",
+    "l:entrar",
+    "l:escoger",
+    "l:espejo",
+    "l:estar",
+    "l:fiesta",
+    "l:firmar",
+    "l:fácil",
+    "l:globo",
+    "l:hablar",
+    "l:hacer",
+    "l:helicóptero",
+    "l:hotel",
+    "l:huella",
+    "l:invitar",
+    "l:ir",
+    "l:jueves",
+    "l:juez",
+    "l:juzgado",
+    "l:laboratorio",
+    "l:largo",
+    "l:levantarse",
+    "l:ley",
+    "l:llegar",
+    "l:llevar",
+    "l:lástima",
+    "l:mal",
+    "l:malo",
+    "l:mandar",
+    "l:manejar",
+    "l:mijo",
+    "l:minuto",
+    "l:mirar",
+    "l:mojado",
+    "l:máquina",
+    "l:noche",
+    "l:nuevo",
+    "l:opción",
+    "l:parqueadero",
+    "l:pasar",
+    "l:pasillo",
+    "l:pedir",
+    "l:pensar",
+    "l:pensión",
+    "l:perder",
+    "l:perdón",
+    "l:poder",
+    "l:policía",
+    "l:poner",
+    "l:ponerse",
+    "l:primo",
+    "l:publicidad",
+    "l:quién",
+    "l:qué",
+    "l:radio",
+    "l:rato",
+    "l:recomendar",
+    "l:reporte",
+    "l:resultado",
+    "l:retirar",
+    "l:reír",
+    "l:seguir",
+    "l:sentarse",
+    "l:ser",
+    "l:sobre",
+    "l:sustituto",
+    "l:taxi",
+    "l:tener",
+    "l:tinto",
+    "l:tomar",
+    "l:trabajo",
+    "l:trancón",
+    "l:tío",
+    "l:túnel",
+    "l:usar",
+    "l:venir",
+    "l:ver",
+    "l:viajero"
+  ]
+}

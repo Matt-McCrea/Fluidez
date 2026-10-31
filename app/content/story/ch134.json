@@ -1,0 +1,372 @@
+{
+  "id": "ch134",
+  "unit": "u43",
+  "title": "Noventa y nueve coma ocho",
+  "text": "El informe del laboratorio tenía cuatro páginas, dos sellos y una sola frase importante: «Coincidencia del 99,8 por ciento».\nMariana lo leyó en voz alta en la mesa de la ventana. Nadie se movió. Hasta Simón estaba quieto en la planta.\nHernando: ¿Y el otro 0,2?\nTomás: Eso es un error normal, Hernando. En software vivíamos con errores más grandes.\nHernando: Por eso me gustan los taxis.\nLa huella del contrato era del muchacho del bufete, el nombre que Duarte había puesto en el sobre. Un practicante de veintitrés años. Le habían pagado trescientos mil pesos por poner el dedo.\nMariana: Si Altamira le hubiera pagado más, el muchacho habría huido del país. Pero Altamira siempre ha pagado poco.\nVale: Y Rosa nunca se iba a conformar.\nA las once llamó el doctor Benavides. La huelga había terminado, y él había vuelto al juzgado.\nBenavides: Señor Herrera, el juez suspendió el contrato esta mañana. Y le cuento algo más: si su escrito hubiera llegado un día después, el juez ya estaría de vacaciones.\nTomás: Le agradezco muchísimo, doctor.\nBenavides: Agradézcale al loro. Mi hija no me dejó en paz.\nSimón: ¡Le agradecería! ¡Le agradecería, parce!\nBenavides: Ahí está. Salúdemelo.\nVale sacó una torta del horno, aunque no era cumpleaños de nadie.\nHernando: Sin ese contrato, Altamira no tiene la otra mitad. La otra mitad está aquí, con chanclas.\nYesid se rio, pero se quedó mirando el informe.\nYesid: Si mi tío no hubiera vendido esa cédula, nada de esto habría pasado.\nTomás: Pero si no hubiera pasado, tú no estarías aquí.\nYesid: Mi tío vendió barato. Yo no sé si me voy a conformar.\nVale lo miró, pero él ya estaba hablando de otra cosa.\nPor la tarde, Yesid salió solo a caminar por la Séptima. Volvió a las seis, con las manos en los bolsillos de la chaqueta de su abuelo.\nMariana: ¿Dónde estabas?\nYesid: Caminando. Esta ciudad es más profunda de lo que parece.\nEsa noche, Mariana escribió la lista para el comité: el informe, las cartas, las fotos, Hernando, Yesid.\nTomás: Si hace un año me hubieran dicho que iba a pelear por un edificio en un comité, me habría reído.\nVale: Hace un año te reías de todo. Ahora solo te ríes de Hernando.\nHernando: Eso me parece justo.\nCuando todos se fueron, Yesid se quedó solo en la cocina. Sacó del bolsillo una tarjeta blanca, con letras de oro: «Grupo Altamira. Departamento de bienes inmobiliarios». Atrás alguien había escrito a mano: «Sábado, una de la tarde. Venga solo».\nYesid respiró profundo y guardó la tarjeta otra vez en la chaqueta de su abuelo.",
+  "gloss": [
+    {
+      "es": "informe",
+      "en": "report"
+    },
+    {
+      "es": "Coincidencia del 99,8 por ciento",
+      "en": "A 99.8 per cent match"
+    },
+    {
+      "es": "Hasta Simón estaba quieto en la planta.",
+      "en": "Even Simón was keeping still on the plant."
+    },
+    {
+      "es": "En software vivíamos con errores más grandes.",
+      "en": "In software we lived with bigger errors."
+    },
+    {
+      "es": "practicante",
+      "en": "intern"
+    },
+    {
+      "es": "por poner el dedo",
+      "en": "for putting his finger down"
+    },
+    {
+      "es": "Si Altamira le hubiera pagado más, el muchacho habría huido del país.",
+      "en": "If Altamira had paid him more, the young man would have fled the country."
+    },
+    {
+      "es": "Y Rosa nunca se iba a conformar.",
+      "en": "And Rosa was never going to settle for that."
+    },
+    {
+      "es": "el juez suspendió el contrato",
+      "en": "the judge suspended the contract"
+    },
+    {
+      "es": "si su escrito hubiera llegado un día después, el juez ya estaría de vacaciones",
+      "en": "if your written request had arrived a day later, the judge would be on holiday by now"
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "Mi hija no me dejó en paz.",
+      "en": "My daughter wouldn't leave me alone."
+    },
+    {
+      "es": "Salúdemelo.",
+      "en": "Say hello to him for me."
+    },
+    {
+      "es": "Si mi tío no hubiera vendido esa cédula, nada de esto habría pasado.",
+      "en": "If my uncle hadn't sold that ID card, none of this would have happened."
+    },
+    {
+      "es": "Mi tío vendió barato. Yo no sé si me voy a conformar.",
+      "en": "My uncle sold cheap. I don't know if I'm going to settle."
+    },
+    {
+      "es": "Esta ciudad es más profunda de lo que parece.",
+      "en": "This city is deeper than it looks."
+    },
+    {
+      "es": "me habría reído",
+      "en": "I would have laughed"
+    },
+    {
+      "es": "Eso me parece justo.",
+      "en": "That seems fair to me."
+    },
+    {
+      "es": "Departamento de bienes inmobiliarios",
+      "en": "Real Estate Assets Department"
+    },
+    {
+      "es": "Venga solo.",
+      "en": "Come alone."
+    },
+    {
+      "es": "respiró profundo",
+      "en": "took a deep breath"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does the lab report show?",
+      "options": [
+        "The fingerprint on the contract belongs to the young intern from the law firm",
+        "The fingerprint belongs to Duarte",
+        "The fingerprint is Joaquín's",
+        "The report cannot say anything"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Benavides tell Tomás to thank the parrot?",
+      "options": [
+        "His daughter, a fan of Simón, would not leave him alone",
+        "Simón found the contract",
+        "Simón called the court",
+        "The parrot signed the request"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué dice Yesid de su tío?",
+      "options": [
+        "Que vendió barato",
+        "Que es un hombre muy rico",
+        "Que va a venir a Bogotá",
+        "Que nunca vendió la cédula"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Yesid hide at the end?",
+      "options": [
+        "A card from Grupo Altamira inviting him to come alone on Saturday",
+        "The lab report",
+        "Rosa's last letter",
+        "His return bus ticket"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "How much was the intern paid to put his finger on the contract?",
+      "options": [
+        "Three hundred thousand pesos",
+        "Two million pesos",
+        "Nothing",
+        "Fifteen years of salary"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Vale do after Benavides's call?",
+      "options": [
+        "She takes a cake out of the oven",
+        "She calls her mother",
+        "She goes to the court",
+        "She leaves for Medellín"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Tomás say he would have done a year ago?",
+      "options": [
+        "Laughed if someone had told him he would fight for a building",
+        "Sold the café immediately",
+        "Gone to Taganga",
+        "Become a taxi driver"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "The hearing at the heritage institute is coming, and Mariana's list of evidence is ready. But on Saturday at one, Yesid has a lunch he has told nobody about.",
+  "requires": [
+    "c:algo-mas",
+    "c:era",
+    "c:no-se",
+    "c:tienes",
+    "c:voy-a",
+    "g:adjective-agreement",
+    "g:aunque-indicative",
+    "g:cause-result",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:comparatives",
+    "g:conditional",
+    "g:conditional-perfect",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:gustar-basic",
+    "g:hace-ago",
+    "g:imperfect-habitual",
+    "g:imperfect-progressive",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:parecer-quedar",
+    "g:perfecto-experience",
+    "g:pluperfect",
+    "g:pluperfect-subj",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-hypothetical",
+    "g:si-past-unreal",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:costar-pagar",
+    "p:cuando-basic",
+    "p:demonstratives-basic",
+    "p:dentro-de-vs-despues",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:ir-a-venir-de-place",
+    "p:lavarse-las-manos",
+    "p:le-agradeceria-que",
+    "p:me-parece-bien-que",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:por-ciento",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:seguir-por",
+    "p:senor-don-article",
+    "p:sobre-todo-solo",
+    "p:te-lo-agradezco",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:ver-oir-bien-mal"
+  ],
+  "lexemes": [
+    "l:abuelo",
+    "l:agradecer",
+    "l:ahora",
+    "l:ahí",
+    "l:alto",
+    "l:aquí",
+    "l:atrás",
+    "l:año",
+    "l:barato",
+    "l:bienes",
+    "l:blanco",
+    "l:bolsillo",
+    "l:bufete",
+    "l:caminar",
+    "l:carta",
+    "l:chaqueta",
+    "l:ciudad",
+    "l:cocina",
+    "l:coincidencia",
+    "l:comité",
+    "l:conformar",
+    "l:contar",
+    "l:contrato",
+    "l:cosa",
+    "l:cumpleaños",
+    "l:cédula",
+    "l:decir",
+    "l:dedo",
+    "l:dejar",
+    "l:departamento",
+    "l:después",
+    "l:doctor",
+    "l:día",
+    "l:dónde",
+    "l:edificio",
+    "l:error",
+    "l:escribir",
+    "l:estar",
+    "l:foto",
+    "l:frase",
+    "l:grande",
+    "l:guardar",
+    "l:gustar",
+    "l:hablar",
+    "l:hacer",
+    "l:hija",
+    "l:horno",
+    "l:huelga",
+    "l:huella",
+    "l:huir",
+    "l:importante",
+    "l:informe",
+    "l:inmobiliario",
+    "l:ir",
+    "l:irse",
+    "l:juez",
+    "l:justo",
+    "l:juzgado",
+    "l:laboratorio",
+    "l:leer",
+    "l:letra",
+    "l:listo",
+    "l:llamar",
+    "l:llegar",
+    "l:loro",
+    "l:mano",
+    "l:mañana",
+    "l:mesa",
+    "l:mirar",
+    "l:mitad",
+    "l:mover",
+    "l:muchacho",
+    "l:noche",
+    "l:nombre",
+    "l:normal",
+    "l:oro",
+    "l:pagar",
+    "l:parce",
+    "l:parecer",
+    "l:pasado",
+    "l:paz",
+    "l:país",
+    "l:pelearse",
+    "l:peso",
+    "l:planta",
+    "l:poner",
+    "l:practicante",
+    "l:profundo",
+    "l:página",
+    "l:quedarse",
+    "l:quieto",
+    "l:respirar",
+    "l:reír",
+    "l:saber",
+    "l:sacar",
+    "l:salir",
+    "l:saludar",
+    "l:sello",
+    "l:ser",
+    "l:señor",
+    "l:siempre",
+    "l:sobre",
+    "l:suspender",
+    "l:sábado",
+    "l:tarde",
+    "l:tarjeta",
+    "l:taxi",
+    "l:tener",
+    "l:terminar",
+    "l:torta",
+    "l:tío",
+    "l:vacación",
+    "l:vender",
+    "l:venir",
+    "l:ventana",
+    "l:vez",
+    "l:vivir",
+    "l:volver",
+    "l:voz"
+  ]
+}

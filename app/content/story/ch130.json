@@ -1,0 +1,416 @@
+{
+  "id": "ch130",
+  "unit": "u43",
+  "title": "La chaqueta de pana",
+  "text": "A las cinco y cuarto se abrieron las puertas del bus, y Yesid bajó en chanclas y camisa de flores.\nYesid: Hermano, ¿aquí siempre hace este frío? Ojalá alguien me hubiera avisado. Empaqué para la playa.\nHernando lo esperaba con una ruana gris. La doctora le había prohibido madrugar, pero había llegado a las cuatro.\nHernando: Póngase esto, mijo. Llevamos tres días de temporal.\nYesid: No está nada mal. ¿Es suya?\nHernando: Es de la Burra. Vive en el asiento de atrás.\nEn el café, Vale hacía buñuelos en aceite caliente.\nVale: ¿Cómo quieres el tinto, primo?\nYesid echó una cucharada de azúcar, después dos, después cinco.\nVale: Eso ya no es un tinto. Es un postre.\nSimón: ¡Ni modo, parce! ¡Ni modo!\nYesid: ¿Ese es el loro famoso? Es más pequeño que en internet.\nSimón le dio la espalda.\nYesid temblaba todavía. Vale entró en la cocina y salió con una chaqueta vieja de pana.\nVale: Era de tu abuelo. Cuando se fue, la dejó aquí, y Rosa la guardó cuarenta y ocho años.\nA Yesid le quedaba grande, y las mangas le cubrían las manos. Hernando se quitó la gorra, como en la notaría.\nTomás sacó la caja de las cartas.\nTomás: Hernando la llama «el tesoro». Cuarenta y siete cartas, y Rosa no mandó ninguna.\nYesid leyó la carta de 2009. Después buscó en el celular una foto del cuaderno azul.\nYesid: En 2008, el día del cumpleaños de Rosa, mi abuelo compró un pasaje a Bogotá. Nunca lo usó.\nHernando: Y en 2009 yo iba a llevar a Rosa al correo con esta carta. A las ocho yo estaba aquí, con la Burra. Rosa me sirvió un tinto y me dijo que no.\nYesid: Él tenía el pasaje, y ella tenía la carta. Si ella la hubiera mandado, mi abuelo habría venido.\nHernando: O habría tenido miedo otra vez. Los Herrera eran orgullosos hasta para pedir la sal.\nVale: Ojalá usted la hubiera llevado sin preguntarle.\nHernando: Mija, llevo diecisiete años con esa pregunta.\nSimón: ¿Qué le vamos a hacer, parce? ¿Qué le vamos a hacer?\nEsta vez nadie lo hizo callar. Hernando se rio, con los ojos mojados.\nHernando: Ese pájaro tiene razón. Lo que pasó, pasó. Ahora hay un Herrera de la costa en la mesa de la ventana.\nCon la chaqueta de su abuelo y la ruana de Hernando, Yesid parecía un general muy delgado.\nYesid: Tengo toda la disposición del mundo. ¿A qué hora vamos al juzgado el lunes?\nTomás: A las ocho. El juez firma a las nueve, y Duarte nos lleva el nombre del muchacho.\nEntonces entró Mariana.\nMariana: Tenemos un problema. Duarte tiene el celular apagado desde anoche.",
+  "gloss": [
+    {
+      "es": "chanclas",
+      "en": "flip-flops"
+    },
+    {
+      "es": "Ojalá alguien me hubiera avisado.",
+      "en": "I wish someone had warned me."
+    },
+    {
+      "es": "Empaqué para la playa.",
+      "en": "I packed for the beach."
+    },
+    {
+      "es": "ruana",
+      "en": "ruana (a thick wool poncho)"
+    },
+    {
+      "es": "madrugar",
+      "en": "to get up very early"
+    },
+    {
+      "es": "Llevamos tres días de temporal.",
+      "en": "We've had three days of stormy weather."
+    },
+    {
+      "es": "No está nada mal.",
+      "en": "It's not bad at all."
+    },
+    {
+      "es": "Vive en el asiento de atrás.",
+      "en": "It lives on the back seat."
+    },
+    {
+      "es": "cucharada",
+      "en": "spoonful"
+    },
+    {
+      "es": "Ni modo",
+      "en": "Oh well, nothing to be done"
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "Simón le dio la espalda.",
+      "en": "Simón turned his back on him."
+    },
+    {
+      "es": "temblaba",
+      "en": "was shivering"
+    },
+    {
+      "es": "pana",
+      "en": "corduroy"
+    },
+    {
+      "es": "las mangas le cubrían las manos",
+      "en": "the sleeves covered his hands"
+    },
+    {
+      "es": "se quitó la gorra",
+      "en": "took off his cap"
+    },
+    {
+      "es": "el tesoro",
+      "en": "the treasure"
+    },
+    {
+      "es": "Si ella la hubiera mandado, mi abuelo habría venido.",
+      "en": "If she had sent it, my grandfather would have come."
+    },
+    {
+      "es": "Los Herrera eran orgullosos hasta para pedir la sal.",
+      "en": "The Herreras were too proud even to ask for the salt."
+    },
+    {
+      "es": "Ojalá usted la hubiera llevado sin preguntarle.",
+      "en": "I wish you had taken her without asking her."
+    },
+    {
+      "es": "llevo diecisiete años con esa pregunta",
+      "en": "I've been asking myself that for seventeen years"
+    },
+    {
+      "es": "¿Qué le vamos a hacer?",
+      "en": "What can we do about it?"
+    },
+    {
+      "es": "nadie lo hizo callar",
+      "en": "nobody told him to be quiet"
+    },
+    {
+      "es": "Lo que pasó, pasó.",
+      "en": "What's done is done."
+    },
+    {
+      "es": "Tengo toda la disposición del mundo.",
+      "en": "I'm completely at your service."
+    },
+    {
+      "es": "juzgado",
+      "en": "court"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why is Yesid so cold when he arrives?",
+      "options": [
+        "He packed for the beach and nobody warned him about Bogotá",
+        "His bus had no heating",
+        "He lost his suitcase",
+        "He gave his jacket to Tomás"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Vale call Yesid's coffee a dessert?",
+      "options": [
+        "He puts five spoonfuls of sugar in it",
+        "He eats it with a buñuelo",
+        "He asks for milk and cream",
+        "He drinks it cold"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does the photo from the blue notebook reveal?",
+      "options": [
+        "In 2008 Joaquín bought a ticket to Bogotá and never used it",
+        "Joaquín wrote to Rosa every year",
+        "Joaquín visited Bogotá in 2009",
+        "Joaquín sold the café"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué piensa Hernando de la teoría de Yesid?",
+      "options": [
+        "Que Joaquín tal vez habría tenido miedo otra vez",
+        "Que Rosa nunca escribió la carta",
+        "Que Joaquín habría vendido el café",
+        "Que Yesid tiene toda la razón"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is the problem at the end?",
+      "options": [
+        "Duarte, who has the name they need, has switched off his phone",
+        "The judge has cancelled Monday",
+        "Mariana has lost the letter",
+        "Yesid wants to go home"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "Where does Hernando's ruana usually live?",
+      "options": [
+        "On the back seat of the Burra",
+        "Behind the kitchen door",
+        "In Rosa's wardrobe",
+        "At the bus station"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando do when Yesid puts on the jacket?",
+      "options": [
+        "He takes off his cap",
+        "He starts singing",
+        "He leaves the café",
+        "He takes a photo"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "At what time does the judge sign on Monday?",
+      "options": [
+        "At nine",
+        "At eight",
+        "At five",
+        "At noon"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "On Monday the whole café crosses Bogotá in the Burra to reach the court before nine, through the worst traffic in the city. And nobody knows whether Duarte will turn up.",
+  "requires": [
+    "c:a-que-hora",
+    "c:ayer-anoche",
+    "c:entonces-bueno",
+    "c:era",
+    "c:hay",
+    "c:ni-modo",
+    "c:no-esta-nada-mal",
+    "c:ojala",
+    "c:que-le-vamos-a-hacer",
+    "c:tengo",
+    "c:tienes",
+    "c:vamos-a",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:commands-usted",
+    "g:commands-with-pronouns",
+    "g:comparatives",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:hace-que-desde",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indefinites",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:passive-se",
+    "g:pluperfect",
+    "g:pluperfect-subj",
+    "g:possessives-stressed",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:ser-identity",
+    "g:si-hypothetical",
+    "g:stem-boot",
+    "g:that-clauses",
+    "g:verbs-of-change",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:container-de",
+    "p:cuando-basic",
+    "p:dates-years",
+    "p:days-el-lunes",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:entonces-de-repente",
+    "p:frequency-scale",
+    "p:humedo-mojado",
+    "p:indefinites-basic",
+    "p:ir-a-venir-de-place",
+    "p:lavarse-las-manos",
+    "p:llevar-traer",
+    "p:los-garcia",
+    "p:madrugar-trasnochar",
+    "p:me-te-nos-objects",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:personal-a",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:talla-numero",
+    "p:telling-time",
+    "p:tener-hambre",
+    "p:tener-razon",
+    "p:time-sequence-basic",
+    "p:viejo-antiguo-mayor",
+    "p:ya-todavia-basic"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:abuelo",
+    "l:aceite",
+    "l:ahora",
+    "l:anoche",
+    "l:apagar",
+    "l:aquí",
+    "l:asiento",
+    "l:atrás",
+    "l:avisar",
+    "l:azul",
+    "l:azúcar",
+    "l:año",
+    "l:bajar",
+    "l:bus",
+    "l:buscar",
+    "l:buñuelo",
+    "l:café",
+    "l:caja",
+    "l:caliente",
+    "l:callar",
+    "l:camisa",
+    "l:carta",
+    "l:celular",
+    "l:chaqueta",
+    "l:cocina",
+    "l:comprar",
+    "l:correo",
+    "l:costa",
+    "l:cuaderno",
+    "l:cubrir",
+    "l:cucharada",
+    "l:cumpleaños",
+    "l:cómo",
+    "l:dar",
+    "l:decir",
+    "l:dejar",
+    "l:delgado",
+    "l:después",
+    "l:disposición",
+    "l:doctor",
+    "l:día",
+    "l:echar",
+    "l:entrar",
+    "l:espalda",
+    "l:esperar",
+    "l:estar",
+    "l:famoso",
+    "l:firmar",
+    "l:flor",
+    "l:foto",
+    "l:frío",
+    "l:general",
+    "l:gorra",
+    "l:grande",
+    "l:gris",
+    "l:guardar",
+    "l:hacer",
+    "l:hermano",
+    "l:hora",
+    "l:internet",
+    "l:ir",
+    "l:irse",
+    "l:juez",
+    "l:juzgado",
+    "l:leer",
+    "l:llamar",
+    "l:llegar",
+    "l:llevar",
+    "l:loro",
+    "l:lunes",
+    "l:madrugar",
+    "l:mal",
+    "l:mandar",
+    "l:manga",
+    "l:mano",
+    "l:mesa",
+    "l:miedo",
+    "l:mija",
+    "l:mijo",
+    "l:modo",
+    "l:mojado",
+    "l:muchacho",
+    "l:mundo",
+    "l:nombre",
+    "l:notar",
+    "l:ojo",
+    "l:orgulloso",
+    "l:pan",
+    "l:parce",
+    "l:parecer",
+    "l:pasaje",
+    "l:pasar",
+    "l:pedir",
+    "l:pequeño",
+    "l:playa",
+    "l:ponerse",
+    "l:postre",
+    "l:pregunta",
+    "l:preguntar",
+    "l:primo",
+    "l:problema",
+    "l:prohibir",
+    "l:puerta",
+    "l:pájaro",
+    "l:quedar",
+    "l:querer",
+    "l:quitarse",
+    "l:qué",
+    "l:razón",
+    "l:reír",
+    "l:ruana",
+    "l:sacar",
+    "l:sal",
+    "l:salir",
+    "l:ser",
+    "l:servir",
+    "l:siempre",
+    "l:temblar",
+    "l:temporal",
+    "l:tener",
+    "l:tesoro",
+    "l:tinto",
+    "l:usar",
+    "l:venir",
+    "l:ventana",
+    "l:vez",
+    "l:viejo",
+    "l:vivir"
+  ]
+}

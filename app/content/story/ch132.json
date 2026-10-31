@@ -1,0 +1,406 @@
+{
+  "id": "ch132",
+  "unit": "u43",
+  "title": "El letrero feo",
+  "text": "Encima de la puerta de la cocina colgaba un letrero pintado a mano: «BIENVENIDO, PRIMO». Las letras bajaban hacia la derecha, como la calle.\nVale: Es feo, ya sé. Lo pinté a las dos de la mañana.\nYesid: Es el letrero más feo que he visto. Me encanta.\nDuarte llegó a las ocho, con corbata y una botella de vino barato. Se quedó en la puerta, sin atreverse a entrar.\nHernando: Siga, hombre. Aquí ya no muerde nadie. Bueno, el loro.\nSimón: ¡Bienvenido, parce! ¡Bienvenido!\nDuarte: ¿También me saluda a mí?\nHernando: Saluda a todo el mundo. No es muy sabio.\nDespués de la comida, Mariana propuso un juego.\nMariana: Cada uno cuenta qué habría pasado si una sola cosa hubiera sido diferente.\nHernando: Fácil. Si Rosa me hubiera dicho que sí en 1983, yo habría sido su abuelo, mijo. Y usted habría salido más guapo.\nTomás: Gracias, Hernando.\nDuarte: Si yo hubiera estudiado música, como quería mi mamá, nunca habría conocido a Altamira. Pero no me arrepiento de lo que hice hoy.\nYesid: Hace ocho años gané una beca en Bogotá. Si hubiera tenido plata para el pasaje, habría estudiado biología marina. Todavía sueño con eso.\nMariana: Todavía puedes.\nYesid: Con veintiséis años y una ruana prestada.\nVale: ¿Y tú, Tomás?\nTomás: Yo ya estoy donde quiero estar.\nHernando: Eso no vale. Eso es trampa.\nYesid quería enseñar fotos de Taganga en la pantalla grande, y Tomás le prestó su computadora. Entre las fotos del mar se abrió un correo de Toronto, en inglés. Todo el mundo lo leyó, porque las letras eran enormes.\n«Final reminder: your contract offer expires on Friday».\nMariana: ¿Un contrato?\nTomás cerró la computadora, pero era tarde.\nTomás: Me lo ofrecieron el mes pasado. La misma empresa de la entrevista. Ahora sí quieren un contrato.\nVale: ¿El mes pasado? ¿Un mes entero sin contestar?\nTomás: No me atreví a contestar. Ni que sí ni que no.\nHernando: Con ese sueldo, usted ya habría comprado un carro deportivo.\nNadie se rio.\nVale: ¿Y qué habrías hecho si Yesid no hubiera abierto esa computadora?\nTomás: No sé. No habría contestado hasta el viernes, creo.\nVale: Ignorar no es decidir, Tomás.\nVale se quitó el delantal, lo dobló despacio y lo puso sobre una mesa.\nVale: Me voy a dormir. Que la pasen bien.\nSimón: ¡Bienvenido, parce!\nLa puerta se cerró. El letrero feo se movió un poco con el aire.\nDuarte: Disculpen. Yo traje el vino equivocado a la noche equivocada.\nMariana: No, Duarte. Usted trajo el vino. La noche la trajo Toronto.\nYesid miró a Tomás.\nYesid: Hermano, mi abuelo esperó treinta años para decir una cosa. Usted tiene hasta el viernes.",
+  "gloss": [
+    {
+      "es": "letrero pintado a mano",
+      "en": "hand painted sign"
+    },
+    {
+      "es": "Las letras bajaban hacia la derecha, como la calle.",
+      "en": "The letters sloped down to the right, like the street."
+    },
+    {
+      "es": "sin atreverse a entrar",
+      "en": "without daring to come in"
+    },
+    {
+      "es": "Siga, hombre.",
+      "en": "Come in, man."
+    },
+    {
+      "es": "Aquí ya no muerde nadie.",
+      "en": "Nobody bites here any more."
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "No es muy sabio.",
+      "en": "He's not very wise."
+    },
+    {
+      "es": "Cada uno cuenta qué habría pasado si una sola cosa hubiera sido diferente.",
+      "en": "Everyone tells what would have happened if just one thing had been different."
+    },
+    {
+      "es": "Si Rosa me hubiera dicho que sí en 1983, yo habría sido su abuelo, mijo.",
+      "en": "If Rosa had said yes to me in 1983, I would have been your grandfather, son."
+    },
+    {
+      "es": "Y usted habría salido más guapo.",
+      "en": "And you would have turned out better looking."
+    },
+    {
+      "es": "no me arrepiento de lo que hice hoy",
+      "en": "I don't regret what I did today"
+    },
+    {
+      "es": "beca",
+      "en": "scholarship"
+    },
+    {
+      "es": "biología marina",
+      "en": "marine biology"
+    },
+    {
+      "es": "Todavía sueño con eso.",
+      "en": "I still dream about it."
+    },
+    {
+      "es": "una ruana prestada",
+      "en": "a borrowed poncho"
+    },
+    {
+      "es": "Eso no vale. Eso es trampa.",
+      "en": "That doesn't count. That's cheating."
+    },
+    {
+      "es": "Final reminder: your contract offer expires on Friday",
+      "en": "Final reminder: your contract offer expires on Friday"
+    },
+    {
+      "es": "¿Un mes entero sin contestar?",
+      "en": "A whole month without answering?"
+    },
+    {
+      "es": "Ni que sí ni que no.",
+      "en": "Neither yes nor no."
+    },
+    {
+      "es": "Con ese sueldo, usted ya habría comprado un carro deportivo.",
+      "en": "With that salary, you would already have bought a sports car."
+    },
+    {
+      "es": "¿Y qué habrías hecho si Yesid no hubiera abierto esa computadora?",
+      "en": "And what would you have done if Yesid hadn't opened that computer?"
+    },
+    {
+      "es": "Ignorar no es decidir",
+      "en": "Ignoring something is not deciding"
+    },
+    {
+      "es": "se quitó el delantal",
+      "en": "took off her apron"
+    },
+    {
+      "es": "Que la pasen bien.",
+      "en": "Have a good time, all of you."
+    },
+    {
+      "es": "el vino equivocado a la noche equivocada",
+      "en": "the wrong wine on the wrong night"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What is the game Mariana proposes?",
+      "options": [
+        "Everyone says what would have happened if one thing had been different",
+        "Everyone guesses who signed the contract",
+        "Everyone tells a joke about Altamira",
+        "Everyone sings a song from their region"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What would Yesid have done with money for the bus ticket eight years ago?",
+      "options": [
+        "Studied marine biology in Bogotá",
+        "Bought his own boat",
+        "Visited Rosa",
+        "Moved to Toronto"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why is Vale hurt?",
+      "options": [
+        "Tomás has had a job offer from Toronto for a month and said nothing",
+        "Tomás laughed at her sign",
+        "Duarte brought cheap wine",
+        "Hernando told everyone about 1983"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué le dice Vale a Tomás antes de irse?",
+      "options": [
+        "Que ignorar no es decidir",
+        "Que se vaya a Toronto",
+        "Que el letrero es feo",
+        "Que Duarte tiene razón"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "When did Vale paint the sign?",
+      "options": [
+        "At two in the morning",
+        "That afternoon",
+        "Last week",
+        "At eight, when Duarte arrived"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Duarte bring to the party?",
+      "options": [
+        "A bottle of cheap wine",
+        "A cake",
+        "Flowers for Vale",
+        "The envelope"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "When does the Toronto offer expire?",
+      "options": [
+        "On Friday",
+        "Tonight",
+        "Next month",
+        "On Monday"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Vale has gone home without a word, and Tomás has until Friday to answer Toronto. Tomorrow they have to talk, and Vale has some things to say that she has kept to herself for a long time.",
+  "requires": [
+    "c:bien-y-tu",
+    "c:creo-que",
+    "c:entonces-bueno",
+    "c:era",
+    "c:gracias-de-nada",
+    "c:me-encanta",
+    "c:no-se",
+    "c:porque",
+    "c:quiero",
+    "c:siga",
+    "c:tienes",
+    "c:voy-a",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:cada-cualquier",
+    "g:cause-result",
+    "g:commands-usted",
+    "g:comparatives",
+    "g:conditional-perfect",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:hace-ago",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:passive-se",
+    "g:perfecto-experience",
+    "g:pluperfect-subj",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-hypothetical",
+    "g:stem-boot",
+    "g:subj-wanting",
+    "g:subj-wishes",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:arrepentirse-de",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cerca-de",
+    "p:container-de",
+    "p:dates-years",
+    "p:days-el-lunes",
+    "p:decidirse-atreverse-a",
+    "p:demonstratives-basic",
+    "p:enterarse-de",
+    "p:equivocarse",
+    "p:frequency-scale",
+    "p:llevar-traer",
+    "p:me-te-nos-objects",
+    "p:no-es-nada-adj",
+    "p:no-hasta",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:pasarla-bien",
+    "p:pasarla-bien-mal",
+    "p:personal-a",
+    "p:poco-un-poco",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:que-subj-deseo",
+    "p:saber-conocer",
+    "p:saludos-de-mi-parte",
+    "p:sonar-con",
+    "p:sonar-con-ganas",
+    "p:telling-time",
+    "p:time-pasado-que-viene",
+    "p:time-sequence-basic",
+    "p:todos-los-dias",
+    "p:ya-todavia-basic"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:abuelo",
+    "l:ahora",
+    "l:aire",
+    "l:aquí",
+    "l:arrepentirse",
+    "l:atreverse",
+    "l:año",
+    "l:bajar",
+    "l:barato",
+    "l:beca",
+    "l:bien",
+    "l:bienvenido",
+    "l:biología",
+    "l:botella",
+    "l:bueno",
+    "l:calle",
+    "l:carro",
+    "l:cerrar",
+    "l:cocina",
+    "l:colgar",
+    "l:comida",
+    "l:comprar",
+    "l:computadora",
+    "l:conocer",
+    "l:contestar",
+    "l:contrato",
+    "l:corbata",
+    "l:correo",
+    "l:cosa",
+    "l:creer",
+    "l:cuenta",
+    "l:decidir",
+    "l:decir",
+    "l:delantal",
+    "l:deportivo",
+    "l:derecha",
+    "l:despacio",
+    "l:después",
+    "l:diferente",
+    "l:disculpar",
+    "l:doblar",
+    "l:dormir",
+    "l:empresa",
+    "l:encantar",
+    "l:encima",
+    "l:enorme",
+    "l:enseñar",
+    "l:enterar",
+    "l:entrar",
+    "l:entrevista",
+    "l:equivocado",
+    "l:esperar",
+    "l:estar",
+    "l:estudiar",
+    "l:feo",
+    "l:final",
+    "l:foto",
+    "l:fácil",
+    "l:ganar",
+    "l:grande",
+    "l:guapo",
+    "l:hacer",
+    "l:hermano",
+    "l:hombre",
+    "l:hoy",
+    "l:ignorar",
+    "l:inglés",
+    "l:irse",
+    "l:juego",
+    "l:leer",
+    "l:letra",
+    "l:letrero",
+    "l:llegar",
+    "l:loro",
+    "l:mamá",
+    "l:mano",
+    "l:mar",
+    "l:marino",
+    "l:mañana",
+    "l:mes",
+    "l:mesa",
+    "l:mijo",
+    "l:mirar",
+    "l:morder",
+    "l:mover",
+    "l:mundo",
+    "l:música",
+    "l:noche",
+    "l:ofrecer",
+    "l:on",
+    "l:pantalla",
+    "l:parce",
+    "l:pasado",
+    "l:pasaje",
+    "l:pasar",
+    "l:pintar",
+    "l:plata",
+    "l:poder",
+    "l:poner",
+    "l:prestar",
+    "l:proponer",
+    "l:puerta",
+    "l:quedarse",
+    "l:querer",
+    "l:quitarse",
+    "l:qué",
+    "l:reír",
+    "l:ruana",
+    "l:saber",
+    "l:sabio",
+    "l:salir",
+    "l:saludar",
+    "l:seguir",
+    "l:ser",
+    "l:soñar",
+    "l:sueldo",
+    "l:tarde",
+    "l:tener",
+    "l:traer",
+    "l:trampa",
+    "l:valer",
+    "l:ver",
+    "l:viernes",
+    "l:vino"
+  ]
+}

@@ -1,0 +1,399 @@
+{
+  "id": "ch133",
+  "unit": "u43",
+  "title": "Las palomas del Chorro",
+  "text": "Por primera vez en siete años, Vale no abrió el café a las cinco. A las seis, Tomás la encontró en la plaza del Chorro de Quevedo, dándoles buñuelos de ayer a las palomas.\nTomás: Esos buñuelos estaban buenos.\nVale: Por eso se los doy a ellas. Ellas no me esconden nada.\nUna paloma miró a Tomás como un juez.\nTomás: Siento mucho que te hayas enterado así, delante de todos.\nVale: No es eso. Me pareció mal que no me lo contaras. Un mes, Tomás. Todos los días me preguntabas cómo estaba, y todos los días tenías ese correo en el bolsillo.\nTomás: No fui capaz. Si lo decía en voz alta, se volvía verdad.\nVale: ¿Y querías ir?\nTomás: Una noche, sí. La noche de la piedra en la ventana. Pensé que en Toronto nadie me rompería la ventana.\nVale: Cuando Rosa se murió, yo casi me voy a Medellín. Tenía la maleta hecha. Me quedé por el café. Después, ya no me quedé por el café.\nTomás: ¿Por qué no me lo dijiste?\nVale: Por lo mismo que tú. Si lo decía, se volvía verdad.\nDetrás de la iglesia se oyó una voz conocida.\nSimón: ¡Le agradecería! ¡Le agradecería, parce!\nHernando y Yesid salieron de detrás de un árbol. Hernando tenía los binoculares, y Yesid tenía la jaula de Simón.\nHernando: La doctora me dijo que caminara. Y el loro también.\nYesid: Perdón, hermano. Le tapé el pico, pero habla igual.\nVale se rio por primera vez desde ayer.\nVale: ¿Cuánto tiempo llevan ahí?\nHernando: Desde la paloma. Siga, mijo, siga. Haga de cuenta que no estamos.\nTomás escribió el correo en inglés y le dio el celular a Vale.\nVale: No. Esto no lo mando yo. Si lo mando yo, siempre vas a pensar que te quedaste por mí.\nTomás lo mandó. Después respiró como si hubiera nadado debajo del agua.\nYesid: ¿Qué decía?\nTomás: Que gracias, pero ya tengo trabajo. Y jefa.\nVale: Socia, no jefa.\nHernando: Si usted se hubiera ido el mes pasado, ¿sabe dónde estaría este café? Altamira ya habría puesto el piano.\nYesid: Y yo seguiría en Taganga, sin conocer a nadie de esta familia.\nVale: Y yo habría derrotado a Altamira sola. Bueno, con Hernando.\nHernando: Y con el loro.\nVale le tomó la mano a Tomás. Esta vez no la soltó, aunque Hernando estaba mirando con binoculares.\nYesid: Esto no se soluciona fácilmente, ¿cierto?\nVale: Se soluciona con tiempo. Y con buñuelos frescos.\nEn el café los esperaba Mariana, con el celular en la mano y una cara rara.\nMariana: El laboratorio terminó antes. El resultado llega mañana. Y otra cosa: alguien de Altamira llamó preguntando por Yesid.",
+  "gloss": [
+    {
+      "es": "palomas",
+      "en": "pigeons"
+    },
+    {
+      "es": "paloma",
+      "en": "pigeon"
+    },
+    {
+      "es": "Ellas no me esconden nada.",
+      "en": "They don't hide anything from me."
+    },
+    {
+      "es": "Siento mucho que te hayas enterado así, delante de todos.",
+      "en": "I'm really sorry you found out like that, in front of everyone."
+    },
+    {
+      "es": "Me pareció mal que no me lo contaras.",
+      "en": "I thought it was wrong of you not to tell me."
+    },
+    {
+      "es": "No fui capaz.",
+      "en": "I couldn't bring myself to."
+    },
+    {
+      "es": "Si lo decía en voz alta, se volvía verdad.",
+      "en": "If I said it out loud, it would become true."
+    },
+    {
+      "es": "La noche de la piedra en la ventana.",
+      "en": "The night of the stone through the window."
+    },
+    {
+      "es": "yo casi me voy a Medellín",
+      "en": "I nearly went off to Medellín"
+    },
+    {
+      "es": "Tenía la maleta hecha.",
+      "en": "My suitcase was packed."
+    },
+    {
+      "es": "Por lo mismo que tú.",
+      "en": "For the same reason as you."
+    },
+    {
+      "es": "jaula",
+      "en": "cage"
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "Le tapé el pico, pero habla igual.",
+      "en": "I covered his beak, but he talks anyway."
+    },
+    {
+      "es": "Haga de cuenta que no estamos.",
+      "en": "Pretend we're not here."
+    },
+    {
+      "es": "Si lo mando yo, siempre vas a pensar que te quedaste por mí.",
+      "en": "If I send it, you'll always think you stayed because of me."
+    },
+    {
+      "es": "respiró como si hubiera nadado debajo del agua",
+      "en": "breathed as if he had been swimming underwater"
+    },
+    {
+      "es": "Socia, no jefa.",
+      "en": "Partner, not boss."
+    },
+    {
+      "es": "Altamira ya habría puesto el piano.",
+      "en": "Altamira would already have put the piano in."
+    },
+    {
+      "es": "Y yo habría derrotado a Altamira sola.",
+      "en": "And I would have beaten Altamira on my own."
+    },
+    {
+      "es": "Esta vez no la soltó",
+      "en": "This time she didn't let go of it"
+    },
+    {
+      "es": "Esto no se soluciona fácilmente, ¿cierto?",
+      "en": "This isn't easily fixed, is it?"
+    },
+    {
+      "es": "El laboratorio terminó antes.",
+      "en": "The lab finished early."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Where does Tomás find Vale?",
+      "options": [
+        "In a square nearby, feeding yesterday's buñuelos to the pigeons",
+        "At the bus station",
+        "At the court",
+        "In the café kitchen"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What hurt Vale most?",
+      "options": [
+        "That Tomás kept the email from her for a month",
+        "That Tomás wanted more money",
+        "That Tomás told Hernando first",
+        "That the job is in Toronto"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why won't Vale send the email for Tomás?",
+      "options": [
+        "She does not want him to think he stayed because of her",
+        "She cannot write in English",
+        "She wants him to go",
+        "Her phone has no signal"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Cómo descubren Tomás y Vale que Hernando y Yesid están escondidos?",
+      "options": [
+        "Porque Simón grita detrás de la iglesia",
+        "Porque Hernando tose",
+        "Porque Yesid los llama",
+        "Porque una paloma se va volando"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What news is Mariana waiting with?",
+      "options": [
+        "The lab result comes tomorrow, and someone from Altamira asked about Yesid",
+        "Duarte has left the country",
+        "The hearing is cancelled",
+        "Toronto has answered"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "When did Tomás feel like going back to Toronto?",
+      "options": [
+        "The night of the stone through the window",
+        "The day he arrived",
+        "The night of the radio",
+        "When Hernando got ill"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What did Vale nearly do when Rosa died?",
+      "options": [
+        "Go back to Medellín",
+        "Sell the café",
+        "Open her own bakery in Bogotá",
+        "Close the café for a month"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who is carrying the binoculars?",
+      "options": [
+        "Hernando",
+        "Yesid",
+        "Mariana",
+        "Vale"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Tomorrow the lab result arrives, a day early. And Altamira's people have started asking for Yesid, the only Herrera who has never been to the café before this week.",
+  "requires": [
+    "c:ayer-anoche",
+    "c:cuanto-tiempo",
+    "c:entonces-bueno",
+    "c:fui",
+    "c:igual",
+    "c:no-cierto",
+    "c:no-se",
+    "c:perdon-disculpe",
+    "c:siga",
+    "c:tengo",
+    "c:voy-a",
+    "c:voy-vas",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:adverbs-mente",
+    "g:aunque-indicative",
+    "g:cause-result",
+    "g:commands-usted",
+    "g:como-si",
+    "g:conditional",
+    "g:conditional-perfect",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gerund-ways",
+    "g:imperfect-habitual",
+    "g:imperfect-progressive",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:ir-a-plans",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:passive-se",
+    "g:pluperfect-subj",
+    "g:por-para-1",
+    "g:prep-infinitive",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:reported-commands-past",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-hypothetical",
+    "g:si-present",
+    "g:stem-boot",
+    "g:subj-emotion",
+    "g:subj-past-triggers",
+    "g:subj-perfect",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:verbs-of-change",
+    "g:yo-irregular",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:cuando-basic",
+    "p:demonstratives-basic",
+    "p:el-agua-fria",
+    "p:enterarse-de",
+    "p:entonces-de-repente",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:ir-a-venir-de-place",
+    "p:le-agradeceria-que",
+    "p:me-parece-bien-que",
+    "p:me-parecio-mal-que",
+    "p:me-te-nos-objects",
+    "p:naci-en",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:pensar-en",
+    "p:personal-a",
+    "p:position-de",
+    "p:preguntar-pedir",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:siento-mucho-que",
+    "p:telling-time",
+    "p:time-pasado-que-viene",
+    "p:time-sequence-basic",
+    "p:todos-los-dias",
+    "p:veces-al",
+    "p:ver-oir-bien-mal"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:agradecer",
+    "l:agua",
+    "l:ahí",
+    "l:alto",
+    "l:antes",
+    "l:ayer",
+    "l:año",
+    "l:bolsillo",
+    "l:bueno",
+    "l:buñuelo",
+    "l:café",
+    "l:caminar",
+    "l:capaz",
+    "l:cara",
+    "l:celular",
+    "l:conocer",
+    "l:contar",
+    "l:correo",
+    "l:cosa",
+    "l:cuenta",
+    "l:cuánto",
+    "l:cómo",
+    "l:dar",
+    "l:debajo",
+    "l:decir",
+    "l:delante",
+    "l:derrotar",
+    "l:después",
+    "l:detrás",
+    "l:doctor",
+    "l:día",
+    "l:dónde",
+    "l:encontrar",
+    "l:enterarse",
+    "l:esconder",
+    "l:escribir",
+    "l:esperar",
+    "l:estar",
+    "l:familia",
+    "l:fresco",
+    "l:fácilmente",
+    "l:hablar",
+    "l:hacer",
+    "l:hermano",
+    "l:iglesia",
+    "l:igual",
+    "l:inglés",
+    "l:ir",
+    "l:irse",
+    "l:jaula",
+    "l:jefe",
+    "l:juez",
+    "l:laboratorio",
+    "l:llamar",
+    "l:llegar",
+    "l:llevar",
+    "l:loro",
+    "l:mal",
+    "l:maleta",
+    "l:mandar",
+    "l:mano",
+    "l:mañana",
+    "l:mes",
+    "l:mijo",
+    "l:mirar",
+    "l:morirse",
+    "l:nadar",
+    "l:noche",
+    "l:oír",
+    "l:paloma",
+    "l:parce",
+    "l:parecer",
+    "l:pasado",
+    "l:pensar",
+    "l:perdón",
+    "l:piano",
+    "l:pico",
+    "l:piedra",
+    "l:plaza",
+    "l:poner",
+    "l:preguntar",
+    "l:quedarse",
+    "l:querer",
+    "l:qué",
+    "l:raro",
+    "l:respirar",
+    "l:resultado",
+    "l:reír",
+    "l:romperse",
+    "l:saber",
+    "l:salir",
+    "l:seguir",
+    "l:sentir",
+    "l:ser",
+    "l:siempre",
+    "l:socio",
+    "l:soltar",
+    "l:solucionar",
+    "l:tapar",
+    "l:tener",
+    "l:terminar",
+    "l:tiempo",
+    "l:tomar",
+    "l:trabajo",
+    "l:ventana",
+    "l:verdad",
+    "l:vez",
+    "l:volverse",
+    "l:voz",
+    "l:árbol"
+  ]
+}
