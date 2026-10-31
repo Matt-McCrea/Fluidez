@@ -1,0 +1,376 @@
+{
+  "id": "ch160",
+  "unit": "u49",
+  "title": "Cordialmente",
+  "text": "Hernando le sacó punta al lápiz tres veces y escribió despacio, con la lengua afuera. A las diez leyó su borrador en voz alta.\nHernando: «Señor alcalde: usted no me conoce, pero yo a usted sí. En el 98 lo llevé en mi taxi al aeropuerto, y no me dio propina».\nVale: Empezamos bien.\nTomás: Don Hernando, Clemencia dijo que sin chistes.\nHernando: Eso no es un chiste. Es un dato.\nTomás abrió la computadora. Llevaba dos noches leyendo cartas formales en internet, como antes leía manuales de programas.\nTomás: «Señor alcalde: Me dirijo a usted para presentar una queja formal sobre la obra de Grupo Altamira. Desde hace aproximadamente dos meses, las máquinas trabajan a un metro y veinte de nuestra pared, y no a tres metros, como exigen los planos».\nTomás: «Las vibraciones causaron una grieta en la viga principal, la cual habría que reemplazar si la obra continúa. Además, el suministro de agua del café se interrumpe casi todos los días, y el agua llega sucia».\nTomás: «Por lo anterior, le agradecería que ordenara la suspensión inmediata de la obra. Quedo atento a su pronta respuesta. Cordialmente, Tomás Herrera».\nVale: Tomás, tus correos ahora suenan como mi banco. «Le recordamos que su cuota vence el viernes. Cordialmente».\nTomás: Así se escribe en Colombia.\nVale: Ya sé. Por eso me da miedo.\nSimón: ¡Cordialmente! ¡Cordialmente, parce!\nHernando: Muy bonita, mijo. Pero en esta carta usted parece un cordero. Le pide permiso al lobo para que no se lo coma.\nMariana: Está bien escrita, pero es larga. Los funcionarios leen la primera línea y la última. Tiene que ser breve.\nTomás cortó tres párrafos. Dejó la grieta, el metro y veinte y el agua.\nHernando pidió el honor de firmar primero, con la letra más bonita de La Candelaria. Debajo de su nombre escribió: «Vecino de Rosa desde 1984».\nTomás: Eso no es formal, don Hernando.\nHernando: No. Pero es verdad.\nTomás lo dejó así. Después firmaron Vale, Yesid, Gloria, Jhon Fredy y diecinueve vecinos más.\nA las dos, en la Alcaldía, una señora le puso a la carta un sello y un número.\nSeñora: Tiempo de respuesta: quince días hábiles.\nTomás: ¿Quince días? La viga no tiene quince días.\nSeñora: La viga no, señor. Pero la Alcaldía sí.\nEn el café, Vale los esperaba con cordero y papas, el plato de los domingos de Rosa, aunque era martes.\nMariana: Hay otro camino. Si el Instituto recibe una solicitud de protección para la casa, la obra tiene que parar mientras la estudian.\nMariana sacó del bolso un formulario gordo, de cuarenta páginas.\nMariana: Lleno, firmado y sin un solo error.",
+  "gloss": [
+    {
+      "es": "le sacó punta al lápiz",
+      "en": "sharpened his pencil"
+    },
+    {
+      "es": "borrador",
+      "en": "draft"
+    },
+    {
+      "es": "propina",
+      "en": "tip"
+    },
+    {
+      "es": "Me dirijo a usted para presentar una queja formal",
+      "en": "I am writing to you to make a formal complaint"
+    },
+    {
+      "es": "Desde hace aproximadamente dos meses",
+      "en": "For approximately two months"
+    },
+    {
+      "es": "vibraciones",
+      "en": "vibrations"
+    },
+    {
+      "es": "grieta",
+      "en": "crack"
+    },
+    {
+      "es": "viga",
+      "en": "beam"
+    },
+    {
+      "es": "le agradecería que ordenara la suspensión inmediata de la obra",
+      "en": "I would be grateful if you would order the immediate suspension of the works"
+    },
+    {
+      "es": "Quedo atento a su pronta respuesta",
+      "en": "I look forward to your prompt reply"
+    },
+    {
+      "es": "Cordialmente",
+      "en": "Kind regards"
+    },
+    {
+      "es": "Le recordamos que su cuota vence el viernes",
+      "en": "We remind you that your instalment is due on Friday"
+    },
+    {
+      "es": "Así se escribe en Colombia",
+      "en": "That's how you write in Colombia"
+    },
+    {
+      "es": "cordero",
+      "en": "lamb"
+    },
+    {
+      "es": "quince días hábiles",
+      "en": "fifteen working days"
+    },
+    {
+      "es": "sello",
+      "en": "stamp"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Tomás leave Hernando's opening line out of the letter?",
+      "options": [
+        "It is a joke about a tip, and the complaint has to be formal",
+        "It has a spelling mistake",
+        "It is in English",
+        "Hernando asks him to"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Vale mean when she says Tomás's emails sound like her bank?",
+      "options": [
+        "They are polite, cold and full of formulas",
+        "They ask for money",
+        "They are full of mistakes",
+        "They are very funny"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Hernando say Tomás looks like a lamb in the letter?",
+      "options": [
+        "The letter asks the wolf very politely not to eat him",
+        "Tomás is wearing a white jumper",
+        "Vale is cooking lamb",
+        "Tomás is afraid of Altamira's lawyer"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué le dice la señora de la Alcaldía a Tomás?",
+      "options": [
+        "Que la respuesta tarda quince días hábiles",
+        "Que la carta es demasiado larga",
+        "Que la obra ya está suspendida",
+        "Que falta la firma de Hernando"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Mariana bring a forty page form?",
+      "options": [
+        "An application for protection to the Institute would stop the works while it is studied",
+        "The Alcaldía lost the letter",
+        "Hernando wants to apply for a taxi licence",
+        "Altamira sent it"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What does Hernando write under his signature?",
+      "options": [
+        "Rosa's neighbour since 1984",
+        "Retired taxi driver",
+        "Customer since 1998",
+        "Artistic director"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Which three things does Tomás keep after Mariana tells him to be brief?",
+      "options": [
+        "The crack, the metre twenty and the water",
+        "The tip, the wolf and the parrot",
+        "The lamb, the bank and the stamp",
+        "The plans, the hotel and the steel"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why is it strange that Vale serves lamb and potatoes?",
+      "options": [
+        "It was Rosa's Sunday dish, and it is Tuesday",
+        "Vale is a pastry chef, not a cook",
+        "Hernando does not eat meat",
+        "The water supply is cut"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "The complaint will take fifteen working days, and the beam may not have them. Tomorrow the café tackles a forty page application to the Institute, full of clauses, references and fees, and every owner of the house has to sign it.",
+  "requires": [
+    "c:ademas",
+    "c:bien-y-tu",
+    "c:era",
+    "c:hay",
+    "c:me-regala",
+    "c:no-se",
+    "c:quedo-atento",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:adverbs-mente",
+    "g:aunque-indicative",
+    "g:cause-result",
+    "g:conditional",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hace-que-desde",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:imperfect-subj",
+    "g:indirect-objects",
+    "g:le-doubling",
+    "g:lo-adjective",
+    "g:para-que",
+    "g:por-para-1",
+    "g:possessives",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-spelling-stem",
+    "g:reflexive-routine",
+    "g:relatives-formal",
+    "g:se-impersonal",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-past-triggers",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:aproximar-cifras",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cerca-de",
+    "p:comerse-todo",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:describe-with-images",
+    "p:don-dona-nombre",
+    "p:el-agua-fria",
+    "p:entonces-de-repente",
+    "p:le-agradeceria-que",
+    "p:me-da-miedo",
+    "p:me-da-miedo-que",
+    "p:me-te-nos-objects",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:provocar-ocasionar",
+    "p:quantifiers-basic",
+    "p:recordar-acordarse",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:todos-los-dias",
+    "p:unos-approx",
+    "p:veces-al",
+    "p:ver-oir-bien-mal"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:además",
+    "l:aeropuerto",
+    "l:afuera",
+    "l:agradecer",
+    "l:agua",
+    "l:ahora",
+    "l:alcalde",
+    "l:alto",
+    "l:anterior",
+    "l:antes",
+    "l:aproximadamente",
+    "l:atento",
+    "l:banco",
+    "l:bien",
+    "l:bolso",
+    "l:bonito",
+    "l:borrador",
+    "l:breve",
+    "l:café",
+    "l:camino",
+    "l:carta",
+    "l:casa",
+    "l:causar",
+    "l:chiste",
+    "l:comer",
+    "l:computadora",
+    "l:conocer",
+    "l:continuar",
+    "l:cordero",
+    "l:cordialmente",
+    "l:correo",
+    "l:cortar",
+    "l:cuota",
+    "l:dar",
+    "l:dato",
+    "l:debajo",
+    "l:decir",
+    "l:dejar",
+    "l:despacio",
+    "l:después",
+    "l:dirigirse",
+    "l:domingo",
+    "l:día",
+    "l:empezar",
+    "l:error",
+    "l:escribir",
+    "l:escribirse",
+    "l:esperar",
+    "l:estar",
+    "l:estudiar",
+    "l:exigir",
+    "l:firmar",
+    "l:formal",
+    "l:formulario",
+    "l:funcionario",
+    "l:gordo",
+    "l:grieta",
+    "l:hace",
+    "l:honor",
+    "l:hábil",
+    "l:inmediato",
+    "l:internet",
+    "l:interrumpir",
+    "l:largo",
+    "l:leer",
+    "l:lengua",
+    "l:letra",
+    "l:llegar",
+    "l:llenar",
+    "l:llevar",
+    "l:lobo",
+    "l:lápiz",
+    "l:línea",
+    "l:manual",
+    "l:martes",
+    "l:mes",
+    "l:metro",
+    "l:miedo",
+    "l:mijo",
+    "l:máquina",
+    "l:noche",
+    "l:nombre",
+    "l:número",
+    "l:obra",
+    "l:ordenar",
+    "l:papa",
+    "l:parar",
+    "l:parce",
+    "l:parecer",
+    "l:pared",
+    "l:pedir",
+    "l:permiso",
+    "l:plano",
+    "l:plato",
+    "l:poner",
+    "l:presentar",
+    "l:principal",
+    "l:programa",
+    "l:pronto",
+    "l:propina",
+    "l:protección",
+    "l:punta",
+    "l:página",
+    "l:párrafo",
+    "l:quedar",
+    "l:queja",
+    "l:recibir",
+    "l:recordar",
+    "l:reemplazar",
+    "l:respuesta",
+    "l:saber",
+    "l:sacar",
+    "l:sello",
+    "l:ser",
+    "l:señor",
+    "l:señora",
+    "l:solicitud",
+    "l:sonar",
+    "l:sucio",
+    "l:suministro",
+    "l:suspensión",
+    "l:taxi",
+    "l:tener",
+    "l:tiempo",
+    "l:trabajar",
+    "l:vecino",
+    "l:vencer",
+    "l:verdad",
+    "l:vez",
+    "l:vibraciones",
+    "l:viernes",
+    "l:viga",
+    "l:voz"
+  ]
+}

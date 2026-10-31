@@ -1,0 +1,338 @@
+{
+  "id": "ch161",
+  "unit": "u49",
+  "title": "Cláusula siete",
+  "text": "A las siete, Simón ya tenía en el pico la esquina de la página nueve del formulario.\nMariana leía en voz alta.\nMariana: «Organización que presenta la solicitud». Ustedes no son una organización.\nHernando: Desde hoy, sí. Junta de Vecinos de la Esquina. Presidente: Hernando Pacheco.\nMariana: Una organización con un presidente y un loro. Me sirve. «Página doce: dos cartas de referencia».\nTomás: La primera referencia es el informe de Clemencia. La segunda, la galería del centro.\nMariana: «El pago del estudio es de trescientos ochenta mil pesos. Este cobro no tiene reembolso».\nHernando: ¿Un cobro por pedir que no tumben una casa? ¿Y si dicen que no, tampoco hay reembolso?\nSimón: ¡Sin reembolso! ¡Sin reembolso, parce!\nGloria hizo el pago esa misma mañana, con la plata de la exposición.\nA mediodía se fue la luz. La obra de al lado había roto un cable, y el café se quedó sin energía. La computadora se apagó en la página veinte.\nVale: Y mi producción de pan, en el horno frío. Hoy no hay producción.\nTomás: A mí se me dan bien las computadoras, pero sin energía no soy nadie.\nHernando: A mí se me da mal la tecnología, pero el lápiz nunca se apaga.\nSiguieron a mano. Al lado de la puerta había un vidrio roto, otro regalo de la obra.\nMariana: «Valor social del inmueble. Describa en un párrafo por qué la casa es candidata a la protección».\nHernando: Esa la dicto yo. Escriba, mijo. «En el 92 hubo mucha pobreza en este barrio. Rosa no tenía riqueza, pero tenía una olla. Contra la pobreza, daba sopa. La riqueza de esta esquina siempre fue la gente».\nNadie cambió ni una palabra.\nMariana: Entre las ventajas de esta solicitud destaca una: la obra para mientras la estudian.\nMariana leyó la cláusula siete.\nMariana: «Todos los propietarios renuncian a su derecho a tumbar el inmueble. Sin la firma de todos, la casa no puede ser candidata».\nTomás: La mitad de la casa es de la familia de Joaquín.\nYesid: Mi abuela firma. Mi tío, no sé. Altamira sigue interesado en su parte, y mi tío está interesado en la plata.\nHernando: Esa cláusula es una trampa.\nTomás: Es una pregunta: ¿qué le podemos ofrecer a tu familia que valga más que la plata de Altamira?\nVale: Una casa que no sea de nadie. De todos.\nTomás: Una sociedad de las dos familias, donde todos son socios y nadie vende. Rosa y Joaquín, otra vez en la misma mesa.\nYesid: A mi abuela le gustaría. Pero nunca ha recibido una carta formal.\nTomás: Entonces le escribo la mejor carta de su vida.\nVale: Sin «cordialmente», por favor.",
+  "gloss": [
+    {
+      "es": "pico",
+      "en": "beak"
+    },
+    {
+      "es": "loro",
+      "en": "parrot"
+    },
+    {
+      "es": "Me sirve",
+      "en": "That works for me"
+    },
+    {
+      "es": "tumben",
+      "en": "they knock down"
+    },
+    {
+      "es": "Este cobro no tiene reembolso",
+      "en": "This fee is non-refundable"
+    },
+    {
+      "es": "se apagó",
+      "en": "switched off"
+    },
+    {
+      "es": "el lápiz nunca se apaga",
+      "en": "a pencil never switches off"
+    },
+    {
+      "es": "inmueble",
+      "en": "property (building)"
+    },
+    {
+      "es": "Junta de Vecinos",
+      "en": "Residents' Association"
+    },
+    {
+      "es": "cordialmente",
+      "en": "kind regards"
+    },
+    {
+      "es": "Rosa y Joaquín, otra vez en la misma mesa",
+      "en": "Rosa and Joaquín, at the same table again"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Hernando suddenly become a president?",
+      "options": [
+        "The form asks for an organization, so he invents a residents' association on the spot",
+        "The neighbours vote for him",
+        "Mariana appoints him to the Institute",
+        "He wins a radio competition"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why do they finish the form by hand?",
+      "options": [
+        "The works next door broke a cable and the café has no electricity",
+        "Simón ate the computer charger",
+        "The Institute does not accept typed forms",
+        "Tomás's computer was stolen"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does clause seven require?",
+      "options": [
+        "Every owner must sign and give up the right to demolish the house",
+        "The café must close during the study",
+        "Altamira must pay for the study",
+        "The parrot must leave the house"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué propone Tomás para la familia de Joaquín?",
+      "options": [
+        "Una sociedad de las dos familias, donde nadie vende",
+        "Venderle su parte a Altamira",
+        "Pagarle trescientos ochenta mil pesos",
+        "Escribirle a la Alcaldía"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is likely to happen next?",
+      "options": [
+        "Tomás writes a formal letter to Yesid's grandmother",
+        "Hernando resigns as president",
+        "Gloria asks for her money back",
+        "The Institute rejects the form"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "Which page of the form is missing a corner, and why?",
+      "options": [
+        "Page nine, because Simón has it in his beak",
+        "Page twelve, because Vale burnt it",
+        "Page twenty, because the computer switched off",
+        "Page seven, because Hernando tore it"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who pays the fee, and with what money?",
+      "options": [
+        "Gloria, with the money from the exhibition",
+        "Tomás, with his savings from Toronto",
+        "Hernando, with his taxi money",
+        "Mariana, with half her salary"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "According to Hernando's paragraph, what was the real wealth of the corner?",
+      "options": [
+        "The people",
+        "Rosa's pot of soup",
+        "The original tiles",
+        "The thick adobe walls"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Every owner has to sign, and half the house belongs to Joaquín's family, including an uncle who wants Altamira's money. Tomorrow Tomás writes a formal letter to doña Eulalia proposing that the two families own the house together, and he has to do it without sounding like a bank.",
+  "requires": [
+    "c:bien-y-tu",
+    "c:entonces-bueno",
+    "c:hay",
+    "c:me-regala",
+    "c:no-me-digas",
+    "c:no-se",
+    "c:por-favor",
+    "c:puede-ser",
+    "c:tienes",
+    "g:adjective-agreement",
+    "g:adverbs-mente",
+    "g:commands-usted",
+    "g:comparatives",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:gustar-full",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:indirect-questions",
+    "g:le-doubling",
+    "g:negation-words",
+    "g:perfecto-experience",
+    "g:pluperfect",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:relative-que",
+    "g:relatives-donde-lo-que",
+    "g:se-accidental",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:subj-influence",
+    "g:subj-irregulars",
+    "g:subj-relative",
+    "g:subj-wanting",
+    "g:superlatives",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cerca-de",
+    "p:darsele-bien",
+    "p:darsele-bien-mal",
+    "p:demonstratives-basic",
+    "p:entre-las-ventajas-destaca",
+    "p:fracciones-de",
+    "p:frequency-scale",
+    "p:interesado-en",
+    "p:la-gente-singular",
+    "p:me-te-nos-objects",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:que-tal-si",
+    "p:renunciar-a",
+    "p:tambien-tampoco",
+    "p:te-invito-a",
+    "p:telling-time",
+    "p:ver-oir-bien-mal"
+  ],
+  "lexemes": [
+    "l:abuela",
+    "l:alto",
+    "l:apagarse",
+    "l:barrio",
+    "l:bien",
+    "l:cable",
+    "l:café",
+    "l:cambiar",
+    "l:candidato",
+    "l:carta",
+    "l:casa",
+    "l:centro",
+    "l:cláusula",
+    "l:cobro",
+    "l:computadora",
+    "l:cordialmente",
+    "l:dar",
+    "l:darse",
+    "l:decir",
+    "l:derecho",
+    "l:describir",
+    "l:destacar",
+    "l:dictar",
+    "l:energía",
+    "l:escribir",
+    "l:esquina",
+    "l:estar",
+    "l:estudiar",
+    "l:estudio",
+    "l:exposición",
+    "l:familia",
+    "l:favor",
+    "l:firma",
+    "l:firmar",
+    "l:formal",
+    "l:formulario",
+    "l:frío",
+    "l:galería",
+    "l:gente",
+    "l:gustar",
+    "l:hacer",
+    "l:horno",
+    "l:hoy",
+    "l:informe",
+    "l:inmueble",
+    "l:interesado",
+    "l:irse",
+    "l:juntar",
+    "l:lado",
+    "l:leer",
+    "l:loro",
+    "l:luz",
+    "l:lápiz",
+    "l:mal",
+    "l:mano",
+    "l:mañana",
+    "l:mediodía",
+    "l:mejor",
+    "l:mesa",
+    "l:mijo",
+    "l:mitad",
+    "l:obra",
+    "l:ofrecer",
+    "l:olla",
+    "l:organización",
+    "l:pago",
+    "l:palabra",
+    "l:pan",
+    "l:parce",
+    "l:parte",
+    "l:pedir",
+    "l:peso",
+    "l:pico",
+    "l:plata",
+    "l:pobreza",
+    "l:poder",
+    "l:pregunta",
+    "l:presentar",
+    "l:presidente",
+    "l:producción",
+    "l:propietario",
+    "l:protección",
+    "l:puerta",
+    "l:página",
+    "l:párrafo",
+    "l:quedarse",
+    "l:qué",
+    "l:recibir",
+    "l:reembolso",
+    "l:referencia",
+    "l:regalo",
+    "l:renunciar",
+    "l:riqueza",
+    "l:romper",
+    "l:saber",
+    "l:seguir",
+    "l:ser",
+    "l:servir",
+    "l:siempre",
+    "l:social",
+    "l:sociedad",
+    "l:socio",
+    "l:solicitud",
+    "l:sopa",
+    "l:tecnología",
+    "l:tener",
+    "l:trampa",
+    "l:tumbar",
+    "l:tumbarse",
+    "l:tío",
+    "l:valer",
+    "l:valor",
+    "l:vender",
+    "l:ventaja",
+    "l:vez",
+    "l:vida",
+    "l:vidrio",
+    "l:voz"
+  ]
+}
