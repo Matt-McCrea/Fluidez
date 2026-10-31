@@ -13,7 +13,7 @@
       "accept": [
         "Yo también lo oí, pero Yesid dice que no vendió nada.",
         "Sí, me lo contaron, pero él asegura que no ha vendido nada.",
-        "Eso dicen, don Hernando, pero Yesid sostiene que no vendió su parte."
+        "Eso dicen, don Hernando, pero Yesid asegura que no vendió su parte."
       ],
       "require": [
         {
@@ -59,7 +59,7 @@
       "intent": "Say you didn't know, and ask who is saying that.",
       "accept": [
         "No lo sabía. ¿Quién dice eso?",
-        "No tenía idea. ¿Usted cree que es verdad?",
+        "No tenía idea. ¿Y eso quién lo dice?",
         "No lo sabía, don Hernando. ¿Y quién se lo contó a usted?"
       ],
       "require": [
@@ -83,14 +83,14 @@
       "accept": [
         "Tiene razón. No es que no le crea, sino que quiero pruebas.",
         "Claro, don Hernando. No es que dude de usted, sino que prefiero confirmarlo.",
-        "Sí, tiene razón. No es que me parezca imposible, sino que nadie lo comprobó."
+        "Sí, entiendo. No es que no le crea; es que necesito pruebas."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\bno es que\\b.*\\bsino que\\b",
+          "pattern": "\\bno es que\\b.*\\b(sino que|es que)\\b",
           "flags": "iu",
-          "label": "use no es que… sino que…"
+          "label": "use no es que… sino que… (or es que…)"
         }
       ],
       "focus": "p:no-es-que-sino-que",
@@ -151,15 +151,12 @@
     "g:preterite-er-ir",
     "g:preterite-irregular-strong",
     "g:questions",
-    "g:reflexive-routine",
     "g:relative-que",
     "g:relatives-donde-lo-que",
     "g:reported-commands-past",
     "g:reported-past-basic",
-    "g:ser-identity",
     "g:stem-boot",
     "g:stem-e-i",
-    "g:subj-irregulars",
     "g:subj-past-triggers",
     "g:subj-perception-negated",
     "g:subj-wanting",
@@ -175,7 +172,6 @@
     "l:asistir",
     "l:bueno",
     "l:claro",
-    "l:comprobar",
     "l:confirmar",
     "l:consejo",
     "l:contar",
@@ -194,14 +190,12 @@
     "l:gusto",
     "l:hombre",
     "l:idea",
-    "l:imposible",
     "l:ir",
     "l:joven",
     "l:necesitar",
     "l:olvidar",
     "l:oír",
     "l:palabra",
-    "l:parecerse",
     "l:parte",
     "l:plaza",
     "l:preferir",
@@ -214,14 +208,12 @@
     "l:saber",
     "l:ser",
     "l:servir",
-    "l:sostener",
     "l:tener",
     "l:tiempo",
     "l:tinto",
     "l:traer",
     "l:vender",
     "l:ver",
-    "l:verdad",
     "l:vez",
     "l:votar",
     "p:asistir-faltar",
@@ -244,7 +236,6 @@
     "p:segun-dicen",
     "p:senor-don-article",
     "p:sobre-todo-solo",
-    "p:sostener-que",
     "p:tambien-tampoco",
     "p:tener-razon",
     "p:un-estudio-muestra-que"

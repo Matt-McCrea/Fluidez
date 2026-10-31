@@ -27,7 +27,7 @@
       "en": "Speaking of Simón, who fed him?"
     }
   ],
-  "rule": "Three openers to change direction:\n\n*Por cierto,…* a new thought with no link to what was just said.\n*Hablando de…,* picks something out of what was just said and runs with it: *hablando de* + a noun.\n*Cambiando de tema,…* announces that you are moving on.\n\nThey are not interchangeable. If you say *hablando de* the link must be real, and if there is none, use *por cierto*. Each is followed by a comma.",
+  "rule": "Three openers to change direction:\n\n*Por cierto,…* (or *A propósito,…*) a new thought with no link to what was just said.\n*Hablando de…,* picks something out of what was just said and runs with it: *hablando de* + a noun.\n*Cambiando de tema,…* announces that you are moving on.\n\nThey are not interchangeable. If you say *hablando de* the link must be real, and if there is none, use *por cierto*. Each is followed by a comma.",
   "readAndPick": [
     {
       "es": "Por cierto, mañana no hay clase.",
@@ -150,9 +150,9 @@
       "why": "*Hablando de* promises a link. If the new thought has none, use *por cierto*."
     },
     {
-      "wrong": "Por cierto de viajes, ¿supiste lo de Ana?",
-      "right": "Hablando de viajes, ¿supiste lo de Ana?",
-      "why": "*Por cierto* stands alone. To link to a topic, use *hablando de*."
+      "wrong": "Por la manera, mañana no hay clase.",
+      "right": "Por cierto, mañana no hay clase.",
+      "why": "English \"by the way\" doesn't translate word for word. Spanish says *por cierto*."
     }
   ],
   "smallPrint": "Teachers call these *marcadores del discurso* (discourse markers).",

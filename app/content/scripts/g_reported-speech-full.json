@@ -1,7 +1,7 @@
 {
   "node": "g:reported-speech-full",
   "hook": {
-    "line": "Tomás was in the room when the Altamira man made his offer, but Mariana, the journalist, was not. She wants to know exactly what was said, and \"he said he'd come back tomorrow\" is only true if you also say which tomorrow.",
+    "line": "Tomás wasn't at Yesid's lunch with Altamira's lawyer, but now he has to tell Dr Uribe exactly what Yesid told him. \"He said he'd come back tomorrow\" only helps if you also say which tomorrow.",
     "es": "Dijo que vendría al día siguiente.",
     "en": "He said he would come the next day."
   },
@@ -140,7 +140,7 @@
       "why": "The question word stays and *está* steps back to *estaba*."
     },
     {
-      "prompt": "Report it: She said she would do it that week.",
+      "prompt": "She said: *\"Lo haré esta semana.\"* Report it a week later: She said she would do it that week.",
       "answer": "Dijo que lo haría esa semana.",
       "accept": [],
       "why": "*Haré* steps back to *haría*, and *esta semana* becomes *esa semana*."
@@ -179,12 +179,12 @@
     {
       "wrong": "Dijo que mañana vendría.",
       "right": "Dijo que al día siguiente vendría.",
-      "why": "His *mañana* was tomorrow from his day, not yours, so the retelling says *al día siguiente*."
+      "why": "Told days later, his *mañana* is no longer tomorrow, so the retelling says *al día siguiente*."
     },
     {
-      "wrong": "Dijo que ayer no tuvo tiempo.",
-      "right": "Dijo que el día anterior no había tenido tiempo.",
-      "why": "A past event stays behind the past report: *había tenido*, and *ayer* becomes *el día anterior*."
+      "wrong": "Me preguntó que yo podía ir allá.",
+      "right": "Me preguntó si yo podía ir allá.",
+      "why": "A yes/no question is reported with *si* (whether). *Que* alone turns it into a statement."
     },
     {
       "wrong": "Vale preguntó dónde está Simón.",

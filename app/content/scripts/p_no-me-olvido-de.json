@@ -60,7 +60,7 @@
     {
       "es": "Jamás olvidaré el día que llegué a Bogotá.",
       "options": [
-        "I never forgot the day I arrived.",
+        "I never forgot the day I arrived in Bogotá.",
         "I'll never forget the day I arrived in Bogotá."
       ],
       "answer": 1
@@ -116,7 +116,9 @@
     {
       "prompt": "A friend asks if you forgot the meeting. Reply: I haven't forgotten the Monday meeting.",
       "answer": "No me he olvidado de la reunión del lunes.",
-      "accept": [],
+      "accept": [
+        "No, no me he olvidado de la reunión del lunes."
+      ],
       "why": "*No me he olvidado de* + the thing."
     },
     {
@@ -160,9 +162,9 @@
       "why": "*Olvidar* without the *me* takes the thing directly, with no *de*."
     },
     {
-      "wrong": "Nunca me he olvidado de llamarte mañana.",
-      "right": "No me olvidaré de llamarte mañana.",
-      "why": "A promise about tomorrow needs the future, not the perfect."
+      "wrong": "No me he olvidado tu cumpleaños.",
+      "right": "No me he olvidado de tu cumpleaños.",
+      "why": "English \"forget\" takes nothing in between, but once the *me* is there, Spanish needs the *de*."
     }
   ],
   "smallPrint": "*Olvidar* takes the thing directly; *olvidarse de* is the pronominal version with *de*.",

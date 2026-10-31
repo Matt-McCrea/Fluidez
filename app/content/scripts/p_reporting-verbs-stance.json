@@ -6,39 +6,196 @@
     "en": "He admitted he had made a mistake."
   },
   "examples": [
-    { "es": "Reconoció que se había equivocado.", "en": "He admitted he had made a mistake." },
-    { "es": "Insinuó que yo había mentido.", "en": "He hinted that I had lied." },
-    { "es": "Sostuvo que era inocente.", "en": "She maintained that she was innocent." },
-    { "es": "El político aseguró que no sabía nada.", "en": "The politician insisted he knew nothing." },
-    { "es": "Mariana comentó que la votación fue injusta.", "en": "Mariana remarked that the vote was unfair." },
-    { "es": "El dueño declaró que no iba a vender.", "en": "The owner declared that he wasn't going to sell." }
+    {
+      "es": "Reconoció que se había equivocado.",
+      "en": "He admitted he had made a mistake."
+    },
+    {
+      "es": "Insinuó que yo había mentido.",
+      "en": "He hinted that I had lied."
+    },
+    {
+      "es": "Sostuvo que era inocente.",
+      "en": "She maintained that she was innocent."
+    },
+    {
+      "es": "El político aseguró que no sabía nada.",
+      "en": "The politician insisted he knew nothing."
+    },
+    {
+      "es": "Mariana comentó que la votación fue injusta.",
+      "en": "Mariana remarked that the vote was unfair."
+    },
+    {
+      "es": "El dueño declaró que no iba a vender.",
+      "en": "The owner declared that he wasn't going to sell."
+    }
   ],
   "rule": "*Dijo que* is neutral. A sharper verb tells us what the speaker was doing:\n\n*Reconoció / admitió que*: gave in.\n*Insinuó que*: hinted, never said it outright.\n*Sostuvo / aseguró / afirmó que*: held firm.\n*Comentó que*: remarked.\n*Soltó que*: blurted it out.\n\nPick the verb as English picks \"admitted\" over \"said\". Then comes *que* and a normal statement, with no *de* before it: *sostuvo que*, never *sostuvo de que*.",
   "smallPrint": "Teachers call these verbs of saying with a stance: the verb itself carries your judgement of the quote.",
   "readAndPick": [
-    { "es": "Reconoció que se había equivocado.", "options": ["He denied making a mistake.", "He admitted he had made a mistake.", "He boasted about a mistake."], "answer": 1 },
-    { "es": "Insinuó que yo había mentido.", "options": ["He hinted that I had lied.", "He swore that I had lied.", "He asked whether I had lied."], "answer": 0 },
-    { "es": "Sostuvo que era inocente.", "options": ["She hoped she was innocent.", "She admitted she wasn't innocent.", "She maintained that she was innocent."], "answer": 2 },
-    { "es": "El político aseguró que no sabía nada.", "options": ["The politician admitted he knew everything.", "The politician insisted he knew nothing.", "The politician asked what he should know."], "answer": 1 },
-    { "es": "Vale afirmó que la receta era suya.", "options": ["Vale firmly stated the recipe was hers.", "Vale doubted the recipe was hers.", "Vale asked whether the recipe was hers."], "answer": 0 },
-    { "es": "Mariana comentó que la votación fue injusta.", "options": ["Mariana shouted that the vote was unfair.", "Mariana swore the vote was unfair.", "Mariana remarked that the vote was unfair."], "answer": 2 },
-    { "es": "El funcionario admitió que el acta no estaba.", "options": ["The official admitted the minutes weren't there.", "The official insisted the minutes were there.", "The official hinted the minutes weren't there."], "answer": 0 },
-    { "es": "Hernando mencionó que Altamira ya llamó.", "options": ["Hernando denied that Altamira had called.", "Hernando mentioned that Altamira had already called.", "Hernando insisted that Altamira would call."], "answer": 1 },
-    { "es": "El dueño declaró que no iba a vender.", "options": ["The owner hinted he might sell.", "The owner admitted he was going to sell.", "The owner declared he wasn't going to sell."], "answer": 2 }
+    {
+      "es": "Reconoció que se había equivocado.",
+      "options": [
+        "He denied making a mistake.",
+        "He admitted he had made a mistake.",
+        "He boasted about a mistake."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Insinuó que yo había mentido.",
+      "options": [
+        "He hinted that I had lied.",
+        "He swore that I had lied.",
+        "He asked whether I had lied."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Sostuvo que era inocente.",
+      "options": [
+        "She hoped she was innocent.",
+        "She admitted she wasn't innocent.",
+        "She maintained that she was innocent."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El político aseguró que no sabía nada.",
+      "options": [
+        "The politician admitted he knew everything.",
+        "The politician insisted he knew nothing.",
+        "The politician asked what he should know."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale afirmó que la receta era suya.",
+      "options": [
+        "Vale firmly stated the recipe was hers.",
+        "Vale doubted the recipe was hers.",
+        "Vale asked whether the recipe was hers."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mariana comentó que la votación fue injusta.",
+      "options": [
+        "Mariana shouted that the vote was unfair.",
+        "Mariana swore the vote was unfair.",
+        "Mariana remarked that the vote was unfair."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El funcionario admitió que el acta no estaba.",
+      "options": [
+        "The official admitted the minutes weren't there.",
+        "The official insisted the minutes were there.",
+        "The official hinted the minutes weren't there."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hernando mencionó que Altamira ya llamó.",
+      "options": [
+        "Hernando denied that Altamira had called.",
+        "Hernando mentioned that Altamira had already called.",
+        "Hernando insisted that Altamira would call."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El dueño declaró que no iba a vender.",
+      "options": [
+        "The owner hinted he might sell.",
+        "The owner admitted he was going to sell.",
+        "The owner declared he wasn't going to sell."
+      ],
+      "answer": 2
+    }
   ],
   "yourTurn": [
-    { "prompt": "He admitted he had made a mistake. Choose *Reconoció* or *Insinuó*: ___ que se había equivocado.", "answer": "Reconoció que se había equivocado.", "accept": ["Reconoció que se había equivocado"], "why": "*Reconoció* is giving in; *insinuó* is only hinting." },
-    { "prompt": "Say: He hinted that I had lied.", "answer": "Insinuó que yo había mentido.", "accept": ["Insinuó que yo había mentido", "Insinuó que había mentido yo."], "why": "*Insinuó que* is the verb for saying something without quite saying it." },
-    { "prompt": "Say: She maintained that she was innocent.", "answer": "Sostuvo que era inocente.", "accept": ["Sostuvo que era inocente"], "why": "*Sostuvo que* holds a position firmly, with no *de* before *que*." },
-    { "prompt": "Say: The politician insisted he knew nothing.", "answer": "El político aseguró que no sabía nada.", "accept": ["El político aseguró que no sabía nada", "El político afirmó que no sabía nada."], "why": "*Aseguró* and *afirmó* both mean he stood by the claim." },
-    { "prompt": "Say: Vale firmly stated the recipe was hers.", "answer": "Vale afirmó que la receta era suya.", "accept": ["Vale afirmó que la receta era suya", "Vale aseguró que la receta era suya."], "why": "*Afirmó que* states something with confidence." },
-    { "prompt": "Make it a remark instead of an insistence: Mariana aseguró que la votación fue injusta.", "answer": "Mariana comentó que la votación fue injusta.", "accept": ["Mariana comentó que la votación fue injusta"], "why": "*Comentó* is lighter than *aseguró*: she just remarked on it." },
-    { "prompt": "Change \"said\" to \"admitted\": El funcionario dijo que el acta no estaba.", "answer": "El funcionario admitió que el acta no estaba.", "accept": ["El funcionario admitió que el acta no estaba", "El funcionario reconoció que el acta no estaba."], "why": "Swap *dijo* for a verb of giving in and the rest stays the same." }
+    {
+      "prompt": "He admitted he had made a mistake. Choose *Reconoció* or *Insinuó*: ___ que se había equivocado.",
+      "answer": "Reconoció que se había equivocado.",
+      "accept": [
+        "Reconoció que se había equivocado"
+      ],
+      "why": "*Reconoció* is giving in; *insinuó* is only hinting."
+    },
+    {
+      "prompt": "Say: He hinted that I had lied.",
+      "answer": "Insinuó que yo había mentido.",
+      "accept": [
+        "Insinuó que yo había mentido",
+        "Insinuó que había mentido yo."
+      ],
+      "why": "*Insinuó que* is the verb for saying something without quite saying it."
+    },
+    {
+      "prompt": "Say: She maintained that she was innocent.",
+      "answer": "Sostuvo que era inocente.",
+      "accept": [
+        "Sostuvo que era inocente"
+      ],
+      "why": "*Sostuvo que* holds a position firmly, with no *de* before *que*."
+    },
+    {
+      "prompt": "Say: The politician insisted he knew nothing.",
+      "answer": "El político aseguró que no sabía nada.",
+      "accept": [
+        "El político aseguró que no sabía nada",
+        "El político afirmó que no sabía nada.",
+        "El político sostuvo que no sabía nada.",
+        "El político insistió en que no sabía nada."
+      ],
+      "why": "*Aseguró* and *afirmó* both mean he stood by the claim."
+    },
+    {
+      "prompt": "Say: Vale firmly stated the recipe was hers.",
+      "answer": "Vale afirmó que la receta era suya.",
+      "accept": [
+        "Vale afirmó que la receta era suya",
+        "Vale aseguró que la receta era suya."
+      ],
+      "why": "*Afirmó que* states something with confidence."
+    },
+    {
+      "prompt": "Make it a remark instead of an insistence: Mariana aseguró que la votación fue injusta.",
+      "answer": "Mariana comentó que la votación fue injusta.",
+      "accept": [
+        "Mariana comentó que la votación fue injusta"
+      ],
+      "why": "*Comentó* is lighter than *aseguró*: she just remarked on it."
+    },
+    {
+      "prompt": "Change \"said\" to \"admitted\": El funcionario dijo que el acta no estaba.",
+      "answer": "El funcionario admitió que el acta no estaba.",
+      "accept": [
+        "El funcionario admitió que el acta no estaba",
+        "El funcionario reconoció que el acta no estaba."
+      ],
+      "why": "Swap *dijo* for a verb of giving in and the rest stays the same."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Sostuvo de que era inocente.", "right": "Sostuvo que era inocente.", "why": "Almost. Reporting verbs take *que* directly; there is no *de* before it." },
-    { "wrong": "Él dijo que reconoció que se había equivocado.", "right": "Reconoció que se había equivocado.", "why": "Almost. *Reconoció que* already means \"he said, admitting\", so you don't need *dijo que* as well." },
-    { "wrong": "Dijo que yo había mentido.", "right": "Insinuó que yo había mentido.", "why": "Almost. If he never said it outright, *dijo* is too strong; *insinuó* says he only hinted." }
+    {
+      "wrong": "Sostuvo de que era inocente.",
+      "right": "Sostuvo que era inocente.",
+      "why": "Almost. Reporting verbs take *que* directly; there is no *de* before it."
+    },
+    {
+      "wrong": "Él dijo que reconoció que se había equivocado.",
+      "right": "Reconoció que se había equivocado.",
+      "why": "Almost. *Reconoció que* already means \"he said, admitting\", so you don't need *dijo que* as well."
+    },
+    {
+      "wrong": "Dijo que yo había mentido.",
+      "right": "Insinuó que yo había mentido.",
+      "why": "Almost. If he never said it outright, *dijo* is too strong; *insinuó* says he only hinted."
+    }
   ],
   "personal": "Think of someone who admitted something, or insisted on something, this week. Write it with a sharper verb than *dijo*: *Mi amigo reconoció que…*"
 }

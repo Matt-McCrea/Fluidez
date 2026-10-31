@@ -33,8 +33,8 @@
       "intent": "Ask him straight out whether he denies that he accepted their money (use negar).",
       "accept": [
         "¿Niegas que aceptaras su dinero?",
-        "¿Niegas que te ofrecieran más plata?",
-        "¿Niegas que te reunieras con ellos a escondidas?"
+        "Entonces, ¿niegas que aceptaras la plata de Altamira?",
+        "¿Niegas que aceptaras su plata?"
       ],
       "require": [
         {
@@ -65,7 +65,7 @@
           "type": "regex",
           "pattern": "\\bno (recuerdo|me acuerdo)( de)? que\\b.*\\b\\w+(aras|eras|ieras)\\b",
           "flags": "iu",
-          "label": "no recuerdo que + imperfect subjunctive: hablaras, dijeras"
+          "label": "no recuerdo que + the -ra form: hablaras, dijeras"
         }
       ],
       "focus": "p:no-recuerdo-que-subj",
@@ -78,15 +78,15 @@
       "intent": "Say you didn't notice him hiding anything (no noté que + subjunctive).",
       "accept": [
         "No noté que escondieras nada, la verdad.",
-        "No vi que te pusieras raro.",
-        "Yo no noté que estuvieras nervioso."
+        "Yo no noté que me escondieras nada.",
+        "La verdad, no vi que escondieras nada."
       ],
       "require": [
         {
           "type": "regex",
           "pattern": "\\bno (noté|vi|oí|escuché|percibí)(?!\\p{L}).*\\w+(aras|eras|ieras)(?!\\p{L})",
           "flags": "iu",
-          "label": "no noté que + imperfect subjunctive: escondieras"
+          "label": "no noté que + the -ra form: escondieras"
         }
       ],
       "focus": "g:subj-perception-negated",
@@ -110,6 +110,7 @@
   "requires": [
     "c:bien-y-tu",
     "c:claro-listo",
+    "c:entonces-bueno",
     "c:es-que",
     "c:fui",
     "c:la-verdad",
@@ -155,7 +156,6 @@
     "g:subj-perception-negated",
     "g:subj-wanting",
     "g:that-clauses",
-    "g:verbs-of-change",
     "g:yo-irregular",
     "l:aceptar",
     "l:acordarse",
@@ -182,17 +182,14 @@
     "l:irse",
     "l:mejor",
     "l:negar",
-    "l:nervioso",
     "l:notar",
     "l:ofrecer",
     "l:palabra",
     "l:pedir",
     "l:pensar",
     "l:plata",
-    "l:ponerse",
     "l:preparar",
     "l:qué",
-    "l:raro",
     "l:recordar",
     "l:reunir",
     "l:reunirse",

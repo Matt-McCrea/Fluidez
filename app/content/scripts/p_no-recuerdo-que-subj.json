@@ -31,7 +31,7 @@
       "en": "I don't remember where I left the keys."
     }
   ],
-  "rule": "When you remember something, use the indicative: *recuerdo que dijo eso*.\n\nWhen you don't, the verb after *que* switches to the past subjunctive: *no recuerdo que dijera eso*. It says: I'm not vouching that this happened. It sounds polite and firm.\n\nEnglish says \"I don't remember him saying\". Spanish uses *que* and a full verb: *dijera*, *llamara*, *hablaran*, *prometieras*.\n\nWith *acordarse* add *de*: *no me acuerdo de que…*\n\nA question word is different: *no me acuerdo de dónde dejé las llaves*, plain indicative.",
+  "rule": "When you remember something, use an ordinary verb: *recuerdo que dijo eso*.\n\nWhen you don't, the verb after *que* switches to the past form ending in *-ra*: *no recuerdo que dijera eso*. It says: I'm not vouching that this happened. It sounds polite and firm.\n\nEnglish says \"I don't remember him saying\". Spanish uses *que* and a full verb: *dijera*, *llamara*, *hablaran*, *prometieras*.\n\nWith *acordarse*, add *de*: *no me acuerdo de que…*\n\nA question word is different: *no me acuerdo de dónde dejé las llaves*, with an ordinary verb.",
   "smallPrint": "Teachers call *dijera* the imperfect subjunctive. Here it works as a polite way to not confirm what someone else claims.",
   "readAndPick": [
     {
@@ -112,13 +112,13 @@
       "prompt": "Choose *dijo* or *dijera*: No recuerdo que ___ eso exactamente. Type the whole sentence.",
       "answer": "No recuerdo que dijera eso exactamente.",
       "accept": [],
-      "why": "When you don't remember it, the verb after *que* is in the subjunctive: *dijera*."
+      "why": "When you don't remember it, the verb after *que* takes the *-ra* form: *dijera*."
     },
     {
       "prompt": "Choose *llegaste* or *llegaras*: Me acuerdo de que ___ tarde. Type the whole sentence.",
       "answer": "Me acuerdo de que llegaste tarde.",
       "accept": [],
-      "why": "Remembering it means it happened, so the indicative: *llegaste*."
+      "why": "Remembering it means it happened, so an ordinary verb: *llegaste*."
     },
     {
       "prompt": "Type in Spanish: I don't recall Vale calling that night.",
@@ -126,7 +126,7 @@
       "accept": [
         "No me acuerdo de que Vale llamara esa noche."
       ],
-      "why": "The verb after *que* is *llamara*, the subjunctive."
+      "why": "The verb after *que* is *llamara*, the *-ra* form."
     },
     {
       "prompt": "Type in Spanish, to a friend: I don't remember you promising it to me.",
@@ -142,7 +142,7 @@
       "accept": [
         "No recuerdo dónde dejé las llaves."
       ],
-      "why": "After a question word, the verb stays in the plain indicative: *dejé*."
+      "why": "After a question word, the verb stays ordinary: *dejé*."
     },
     {
       "prompt": "Turn *Recuerdo que dijo eso.* into a doubt: say you don't remember it.",
@@ -150,7 +150,7 @@
       "accept": [
         "No me acuerdo de que dijera eso."
       ],
-      "why": "Not remembering moves the verb to the subjunctive: *dijera*."
+      "why": "Not remembering moves the verb to the *-ra* form: *dijera*."
     },
     {
       "prompt": "Type in Spanish: I don't recall anyone voting against.",
@@ -158,14 +158,14 @@
       "accept": [
         "No me acuerdo de que nadie votara en contra."
       ],
-      "why": "*Votara* is the subjunctive for one person, here *nadie*."
+      "why": "*Votara* is the *-ra* form for one person, here *nadie*."
     }
   ],
   "pitfalls": [
     {
       "wrong": "No recuerdo que dijo eso.",
       "right": "No recuerdo que dijera eso.",
-      "why": "Almost. When you are not vouching for it, the verb after *que* takes the subjunctive."
+      "why": "Almost. When you are not vouching for it, the verb after *que* takes the *-ra* form."
     },
     {
       "wrong": "No me acuerdo que me lo prometieras.",

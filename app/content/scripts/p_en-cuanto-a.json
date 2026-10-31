@@ -122,12 +122,14 @@
       "accept": [
         "Con respecto a su pregunta, la respuesta es sí."
       ],
-      "why": "*Respecto a* is the same idea, a touch more written."
+      "why": "*Respecto a* means regarding, and *su* keeps it formal."
     },
     {
       "prompt": "Say: As far as the timetable is concerned, there are no changes.",
       "answer": "Por lo que se refiere al horario, no hay cambios.",
-      "accept": [],
+      "accept": [
+        "En lo que se refiere al horario, no hay cambios."
+      ],
       "why": "*Por lo que se refiere a* + *el* gives *al*."
     },
     {
@@ -140,7 +142,8 @@
       "prompt": "Say: Regarding the timetable, we open at seven.",
       "answer": "Respecto al horario, abrimos a las siete.",
       "accept": [
-        "En cuanto al horario, abrimos a las siete."
+        "En cuanto al horario, abrimos a las siete.",
+        "Con respecto al horario, abrimos a las siete."
       ],
       "why": "*Respecto a* + *el* joins into *al*."
     }

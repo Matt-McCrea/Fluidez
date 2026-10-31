@@ -23,15 +23,15 @@
       "en": "Tomás denies that it's his fault."
     },
     {
-      "es": "Mariana reconoció que tenía razón.",
-      "en": "Mariana admitted that she was right."
+      "es": "Mariana reconoció que Tomás tenía razón.",
+      "en": "Mariana admitted that Tomás was right."
     },
     {
       "es": "¿Admites que fue tu culpa?",
       "en": "Do you admit that it was your fault?"
     }
   ],
-  "rule": "*Negar* means to deny. Say *negar que* and the verb after it goes into the subjunctive, because you are reporting something the person refuses to accept: *negó que fuera suyo*. When the person is the same, use a plain infinitive, with no *a* and no *de*: *negó saber la respuesta*.\n\n*Admitir*, *reconocer* and *confesar* do the opposite. They accept the fact, so the indicative follows: *confesó que había sido él*. *Confesar* hints that the person did not want to say it.\n\nPreview: *negó haberlo hecho* (denied having done it) is coming later. For now, learn it as a block.",
+  "rule": "*Negar* means to deny. After *negar que*, the verb takes the special form, because the person refuses to accept it: *niega que sea su culpa*, *negó que fuera suyo*. When people deny something about themselves, use the plain *-r* verb, with no *a* and no *de*: *negó saber la respuesta*.\n\n*Admitir*, *reconocer* and *confesar* do the opposite. They accept the fact, so an ordinary verb follows: *confesó que había sido él*. *Confesar* hints that the person did not want to say it.",
   "smallPrint": "Teachers say *negar* triggers the subjunctive because it denies a fact, while *admitir* and *reconocer* keep the indicative because they affirm one.",
   "readAndPick": [
     {
@@ -62,11 +62,11 @@
       "answer": 0
     },
     {
-      "es": "Mariana reconoció que tenía razón.",
+      "es": "Mariana reconoció que Tomás tenía razón.",
       "options": [
-        "Mariana denied that she was right.",
-        "Mariana admitted that she was right.",
-        "Mariana doubted that she was right."
+        "Mariana denied that Tomás was right.",
+        "Mariana admitted that Tomás was right.",
+        "Mariana doubted that Tomás was right."
       ],
       "answer": 1
     },
@@ -112,25 +112,25 @@
       "prompt": "Choose *fuera* or *era*: Tomás negó que el error ___ suyo. Type the whole sentence.",
       "answer": "Tomás negó que el error fuera suyo.",
       "accept": [],
-      "why": "After *negar que* Spanish uses the subjunctive: *fuera*."
+      "why": "After *negar que*, the verb takes the *-ra* form: *fuera*."
     },
     {
-      "prompt": "Choose *tenía* or *tuviera*: Mariana reconoció que ___ razón. Type the whole sentence.",
-      "answer": "Mariana reconoció que tenía razón.",
+      "prompt": "Choose *tenía* or *tuviera*: Mariana reconoció que Tomás ___ razón. Type the whole sentence.",
+      "answer": "Mariana reconoció que Tomás tenía razón.",
       "accept": [],
-      "why": "*Reconocer* accepts the fact, so the indicative follows: *tenía*."
+      "why": "*Reconocer* accepts the fact, so an ordinary verb follows: *tenía*."
     },
     {
       "prompt": "Type in Spanish: Tomás denies that it's his fault.",
       "answer": "Tomás niega que sea su culpa.",
       "accept": [],
-      "why": "*Niega que* is followed by the subjunctive: *sea*."
+      "why": "After *niega que*, the verb takes the special form: *sea*."
     },
     {
       "prompt": "Type in Spanish: Vale confessed that she hadn't slept.",
       "answer": "Vale confesó que no había dormido.",
       "accept": [],
-      "why": "*Confesó que* is followed by the indicative: *había dormido* is a fact she admits."
+      "why": "*Confesó que* accepts a fact, so an ordinary verb follows: *había dormido*."
     },
     {
       "prompt": "Type in Spanish: Hernando denied being the owner.",
@@ -147,25 +147,25 @@
         "Reconoció que era suyo.",
         "Confesó que era suyo."
       ],
-      "why": "Admitting accepts the fact, so the verb goes back to the indicative: *era*."
+      "why": "Admitting accepts the fact, so the verb goes back to an ordinary *era*."
     },
     {
       "prompt": "Type in Spanish, to a friend: Do you admit that it was your fault?",
       "answer": "¿Admites que fue tu culpa?",
       "accept": [],
-      "why": "*Admites* is the *tú* form, and the indicative *fue* follows."
+      "why": "*Admites* is the *tú* form, and an ordinary *fue* follows."
     }
   ],
   "pitfalls": [
     {
       "wrong": "Negó que era suyo.",
       "right": "Negó que fuera suyo.",
-      "why": "Almost. After *negar que*, the verb needs the subjunctive."
+      "why": "Almost. After *negar que*, the verb takes the *-ra* form."
     },
     {
       "wrong": "Confesó que hubiera sido él.",
       "right": "Confesó que había sido él.",
-      "why": "Almost. Confessing accepts the fact, so it takes the indicative, not the subjunctive."
+      "why": "Almost. Confessing accepts the fact, so an ordinary verb follows, not the *-ra* form."
     },
     {
       "wrong": "El funcionario negó a saber la respuesta.",

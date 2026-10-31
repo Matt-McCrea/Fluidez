@@ -3,17 +3,17 @@
   "unit": "u46",
   "title": "Palabra por palabra",
   "spare": false,
-  "brief": "You're on the phone with Tomás's lawyer, Licenciada Parra. She is formal, so use usted. She wants the whole conversation with Yesid reported accurately: who said what, and what you can only repeat without vouching for it.",
+  "brief": "You're on the phone with Tomás's lawyer, Dr Uribe. She is formal, so use usted. She wants the whole conversation with Yesid reported accurately: who said what, and what you can only repeat without vouching for it.",
   "turns": [
     {
       "id": "t1",
-      "npc": "Parra: Hola, Tomás. Necesito que me cuente exactamente qué le dijo Yesid sobre la oferta de Altamira.",
-      "npcEn": "Parra: Hello, Tomás. I need you to tell me exactly what Yesid told you about Altamira's offer.",
-      "intent": "Report that Yesid told you Altamira had offered him much more than his share is worth.",
+      "npc": "Uribe: Hola, Tomás. Necesito que me cuente exactamente qué le dijo Yesid sobre la oferta de Altamira.",
+      "npcEn": "Uribe: Hello, Tomás. I need you to tell me exactly what Yesid told you about Altamira's offer.",
+      "intent": "Report that Yesid told you Altamira had offered him much more than his share was worth.",
       "accept": [
-        "Me dijo que Altamira le había ofrecido mucho más de lo que vale su parte.",
+        "Me dijo que Altamira le había ofrecido mucho más de lo que valía su parte.",
         "Yesid me contó que Altamira le ofreció mucho más por su parte.",
-        "Me explicó que Altamira le había ofrecido bastante más de lo que vale su parte."
+        "Me explicó que Altamira le había ofrecido bastante más de lo que valía su parte."
       ],
       "require": [
         {
@@ -28,20 +28,20 @@
     },
     {
       "id": "t2",
-      "npc": "Parra: ¿Y le pidió algo a cambio?",
-      "npcEn": "Parra: And did he ask him for anything in return?",
-      "intent": "Say Yesid claims Altamira asked him not to say anything (pedir que + subjunctive), and that the café would close anyway.",
+      "npc": "Uribe: ¿Y le pidieron algo a cambio?",
+      "npcEn": "Uribe: And did they ask him for anything in return?",
+      "intent": "Say that, according to Yesid, they asked him to keep quiet, and told him the café would close anyway.",
       "accept": [
-        "Me dijo que le pidió que no dijera nada, y que el café iba a cerrar igual.",
-        "Asegura que Altamira le pidió que guardara el secreto y que el café cerraría igual.",
-        "Cuenta que le pidió que lo mantuviera en secreto y que el café iba a cerrar igual."
+        "Me dijo que le pidieron que no dijera nada, y que el café iba a cerrar igual.",
+        "Asegura que le pidieron que guardara el secreto y que el café cerraría igual.",
+        "Cuenta que le pidieron que lo mantuviera en secreto y que el café iba a cerrar igual."
       ],
       "require": [
         {
           "type": "regex",
           "pattern": "\\bpidi(ó|eron)\\s+que\\s+(\\w+\\s+){0,2}?\\w*(ara|era|iera|ase|ese|iese)(?!\\p{L})",
           "flags": "iu",
-          "label": "after pidió que, use the imperfect subjunctive: dijera, guardara"
+          "label": "after pidieron que, use the -ra form: dijera, guardara"
         }
       ],
       "focus": "g:reporting-verbs-mood",
@@ -49,13 +49,13 @@
     },
     {
       "id": "t3",
-      "npc": "Parra: Entiendo. ¿Y usted se lo cree?",
-      "npcEn": "Parra: I see. And do you believe him?",
+      "npc": "Uribe: Entiendo. ¿Y usted se lo cree?",
+      "npcEn": "Uribe: I see. And do you believe him?",
       "intent": "Keep your distance: say that, according to him, he turned the offer down, but you can't confirm it.",
       "accept": [
         "Según dice, rechazó la oferta, pero yo no puedo confirmarlo.",
         "Asegura que dijo que no, aunque no tengo cómo comprobarlo.",
-        "Él sostiene que rechazó la oferta, pero no puedo confirmar nada."
+        "Él afirma que rechazó la oferta, pero no puedo confirmar nada."
       ],
       "require": [
         {
@@ -74,8 +74,8 @@
     },
     {
       "id": "t4",
-      "npc": "Parra: Perdone, ¿quiere decir que usted estuvo en esa reunión con Altamira?",
-      "npcEn": "Parra: Excuse me, do you mean you were at that meeting with Altamira?",
+      "npc": "Uribe: Perdone, ¿quiere decir que usted estuvo en esa reunión con Altamira?",
+      "npcEn": "Uribe: Excuse me, do you mean you were at that meeting with Altamira?",
       "intent": "Correct her: you were not there, you only know what Vale and Yesid told you.",
       "accept": [
         "No, yo no estuve allí. Solo sé lo que me contaron Vale y Yesid.",
@@ -93,8 +93,8 @@
     },
     {
       "id": "t5",
-      "npc": "Parra: Bien. Antes de que se me olvide, ¿puede mandarme por escrito lo que le contó Yesid?",
-      "npcEn": "Parra: Good. Before I forget, can you send me in writing what Yesid told you?",
+      "npc": "Uribe: Bien. Antes de que se me olvide, ¿puede mandarme por escrito lo que le contó Yesid?",
+      "npcEn": "Uribe: Good. Before I forget, can you send me in writing what Yesid told you?",
       "intent": "Say yes, you will write down what Yesid said and send it tomorrow, and thank her.",
       "accept": [
         "Sí, le escribo todo lo que dijo Yesid y se lo mando mañana. Gracias.",
@@ -130,7 +130,6 @@
     "c:puedo",
     "c:segun",
     "c:tengo",
-    "c:vale-spain",
     "g:adverbs-mente",
     "g:aunque-indicative",
     "g:commands-usted",
@@ -168,6 +167,7 @@
     "g:that-clauses",
     "g:verb-infinitive",
     "g:yo-irregular",
+    "l:afirmar",
     "l:allí",
     "l:antes",
     "l:asegurar",
@@ -213,7 +213,6 @@
     "l:saber",
     "l:secreto",
     "l:ser",
-    "l:sostener",
     "l:tener",
     "l:valer",
     "p:aqui-ahi-alla",
@@ -230,7 +229,6 @@
     "p:request-ladder",
     "p:saber-conocer",
     "p:sobre-todo-solo",
-    "p:sostener-que",
     "p:un-estudio-muestra-que"
   ]
 }

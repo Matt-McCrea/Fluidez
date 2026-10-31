@@ -34,7 +34,7 @@
       "es": "Recuerdo muy bien su cara.",
       "options": [
         "I remember his face very well.",
-        "I remind him of his face."
+        "He remembers my face very well."
       ],
       "answer": 0
     },
@@ -49,7 +49,7 @@
     {
       "es": "Me acordé de que era su cumpleaños.",
       "options": [
-        "I remembered her birthday party.",
+        "I remember that it's her birthday.",
         "I remembered that it was her birthday."
       ],
       "answer": 1
@@ -89,7 +89,7 @@
     {
       "es": "Me acuerdo de que Rosa siempre cantaba.",
       "options": [
-        "I remember Rosa always singing to me.",
+        "Rosa remembers that I always sang.",
         "I remember that Rosa always sang."
       ],
       "answer": 1
@@ -133,7 +133,9 @@
     {
       "prompt": "Say: I remembered that it was her birthday.",
       "answer": "Me acordé de que era su cumpleaños.",
-      "accept": [],
+      "accept": [
+        "Recordé que era su cumpleaños."
+      ],
       "why": "A whole clause after *acordarse* needs *de que*."
     },
     {
@@ -157,7 +159,7 @@
     {
       "wrong": "Acordé de que era su cumpleaños.",
       "right": "Me acordé de que era su cumpleaños.",
-      "why": "Without *me*, it is a different verb. To remember, you need the *me/te/se*."
+      "why": "Without *me*, *acordar* means to agree on something. To remember, you need the *me/te/se*."
     }
   ],
   "personal": "Tell Don Hernando one thing you remember well, using *Me acuerdo de…* or *Recuerdo…*."

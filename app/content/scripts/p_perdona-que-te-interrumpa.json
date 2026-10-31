@@ -28,7 +28,7 @@
     }
   ],
   "rule": "The frame is *perdona que* + *te* + a special verb form, then *pero…*:\n\n*Perdona que te interrumpa* (to a friend)\n*Perdone que lo interrumpa* (formal, a man; *la* for a woman)\n*Perdonen que los interrumpa* (a group)\n\nThe verb after *que* ends in *-a* for *interrumpir* and *-e* for *molestar*: *interrumpa, moleste*. It is not the usual present (*interrumpo*).\n\nThe pronoun (*te, lo, la, los*) names the person you are interrupting.",
-  "smallPrint": "The special verb form is the subjunctive, used after expressions of feeling like sorry.",
+  "smallPrint": "The special verb form is the subjunctive, used after expressions of feeling like sorry. In Colombia you will also hear *qué pena interrumpirte*.",
   "readAndPick": [
     {
       "es": "Perdona que te interrumpa, pero ya es hora de irnos.",
@@ -82,7 +82,7 @@
       "es": "Perdona que te interrumpa, pero llegó el funcionario.",
       "options": [
         "Sorry to interrupt, but the official has arrived. (to a friend)",
-        "Sorry to interrupt, but the official is leaving. (to a friend)"
+        "Sorry to interrupt, but the official has arrived. (formal)"
       ],
       "answer": 0
     },
@@ -163,7 +163,7 @@
     {
       "wrong": "Perdona interrumpirte, pero ya es hora de irnos.",
       "right": "Perdona que te interrumpa, pero ya es hora de irnos.",
-      "why": "English \"sorry to interrupt\" uses an infinitive, but this Spanish frame wants *que* + the special verb."
+      "why": "English \"sorry to interrupt\" uses an infinitive. Spanish says *perdona que te interrumpa*, or *perdón por interrumpirte*."
     }
   ],
   "personal": "Imagine a friend is mid-story and you have to say something urgent. Write your opener with *Perdona que te interrumpa, pero…*."

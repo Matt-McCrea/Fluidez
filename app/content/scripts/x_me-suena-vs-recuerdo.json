@@ -3,43 +3,196 @@
   "hook": {
     "line": "Mariana shows a photo and asks whether you know the man. You half know him, but you can't say where from. Spanish has a different phrase for that fog.",
     "es": "Su cara me suena, pero no me acuerdo de dónde.",
-    "en": "Her face rings a bell, but I don't remember where from."
+    "en": "His face rings a bell, but I don't remember where from."
   },
   "examples": [
-    { "es": "Su cara me suena.", "en": "Her face rings a bell." },
-    { "es": "Me acuerdo perfectamente de su cara.", "en": "I remember her face perfectly." },
-    { "es": "Ese nombre me suena, pero no sé de dónde.", "en": "That name rings a bell, but I don't know where from." },
-    { "es": "Me acuerdo de ese nombre: es el del abogado.", "en": "I remember that name: it's the lawyer's." },
-    { "es": "¿Te suena el nombre Altamira?", "en": "Does the name Altamira ring a bell? (to a friend)" },
-    { "es": "¿Te acuerdas de la reunión?", "en": "Do you remember the meeting? (to a friend)" }
+    {
+      "es": "Su cara me suena.",
+      "en": "Her face rings a bell."
+    },
+    {
+      "es": "Me acuerdo perfectamente de su cara.",
+      "en": "I remember her face perfectly."
+    },
+    {
+      "es": "Ese nombre me suena, pero no sé de dónde.",
+      "en": "That name rings a bell, but I don't know where from."
+    },
+    {
+      "es": "Me acuerdo de ese nombre: es el del abogado.",
+      "en": "I remember that name: it's the lawyer's."
+    },
+    {
+      "es": "¿Te suena el nombre Altamira?",
+      "en": "Does the name Altamira ring a bell? (to a friend)"
+    },
+    {
+      "es": "¿Te acuerdas de la reunión?",
+      "en": "Do you remember the meeting? (to a friend)"
+    }
   ],
   "rule": "Spanish has two levels of memory.\n\n*Me suena* is the fog: it feels familiar, but you can't place it. The thing is the subject, so the verb agrees with it, and *me* says who it rings a bell for: *su cara me suena*, *esos nombres me suenan*, *¿te suena?*.\n\n*Me acuerdo de* is a real memory: you can bring it back. Here you are the subject, and *de* comes before the thing: *me acuerdo de su cara*. *Recordar* means the same, with no *me* and no *de*: *recuerdo su cara*.\n\nThey combine well: *Me suena, pero no me acuerdo.*",
   "smallPrint": "Teachers call *sonar* here an impressionistic memory verb, like *gustar*: the thing is the subject and the person is the indirect object.",
   "readAndPick": [
-    { "es": "Su cara me suena.", "options": ["I remember her face perfectly.", "Her face rings a bell.", "She remembers my face."], "answer": 1 },
-    { "es": "Me acuerdo perfectamente de su cara.", "options": ["Her face rings a bell.", "She remembers my face.", "I remember her face perfectly."], "answer": 2 },
-    { "es": "Ese nombre me suena, pero no sé de dónde.", "options": ["That name rings a bell, but I can't place it.", "I remember that name and where it's from.", "I don't know that name at all."], "answer": 0 },
-    { "es": "Me acuerdo de ese nombre: es el del abogado.", "options": ["That name rings a bell: it's the lawyer's.", "I forgot that name: it's the lawyer's.", "I remember that name: it's the lawyer's."], "answer": 2 },
-    { "es": "¿Te suena el nombre Altamira?", "options": ["Do you remember Altamira?", "Does the name Altamira ring a bell?", "Do you know Altamira?"], "answer": 1 },
-    { "es": "¿Te acuerdas de la reunión?", "options": ["Does the meeting ring a bell?", "Did you go to the meeting?", "Do you remember the meeting?"], "answer": 2 },
-    { "es": "Esos nombres me suenan.", "options": ["Those names ring a bell.", "I remember those names.", "Those names sound strange."], "answer": 0 },
-    { "es": "No me acuerdo de nada.", "options": ["Nothing rings a bell.", "I don't know anything.", "I don't remember anything."], "answer": 2 },
-    { "es": "Su voz me suena, pero no me acuerdo de dónde.", "options": ["Her voice rings a bell, but I don't remember where from.", "I remember her voice, but not where from.", "Her voice sounds strange, but I know where from."], "answer": 0 }
+    {
+      "es": "Su cara me suena.",
+      "options": [
+        "I remember her face perfectly.",
+        "Her face rings a bell.",
+        "She remembers my face."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me acuerdo perfectamente de su cara.",
+      "options": [
+        "Her face rings a bell.",
+        "She remembers my face.",
+        "I remember her face perfectly."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Ese nombre me suena, pero no sé de dónde.",
+      "options": [
+        "That name rings a bell, but I can't place it.",
+        "I remember that name and where it's from.",
+        "I don't know that name at all."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me acuerdo de ese nombre: es el del abogado.",
+      "options": [
+        "That name rings a bell: it's the lawyer's.",
+        "I forgot that name: it's the lawyer's.",
+        "I remember that name: it's the lawyer's."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Te suena el nombre Altamira?",
+      "options": [
+        "Do you remember Altamira?",
+        "Does the name Altamira ring a bell?",
+        "Do you know Altamira?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Te acuerdas de la reunión?",
+      "options": [
+        "Does the meeting ring a bell?",
+        "Did you go to the meeting?",
+        "Do you remember the meeting?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Esos nombres me suenan.",
+      "options": [
+        "Those names ring a bell.",
+        "I remember those names.",
+        "Those names sound strange."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "No me acuerdo de nada.",
+      "options": [
+        "Nothing rings a bell.",
+        "I don't know anything.",
+        "I don't remember anything."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Su voz me suena, pero no me acuerdo de dónde.",
+      "options": [
+        "Her voice rings a bell, but I don't remember where from.",
+        "I remember her voice, but not where from.",
+        "Her voice sounds strange, but I know where from."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick the right word and type the sentence (half-remembered): *Su cara me ___.* (suena / acuerdo)", "answer": "Su cara me suena.", "accept": ["Me suena su cara."], "why": "*Me suena* is for the foggy feeling." },
-    { "prompt": "Pick the right word and type the sentence (a clear memory): *Me ___ perfectamente de su cara.* (acuerdo / suena)", "answer": "Me acuerdo perfectamente de su cara.", "accept": [], "why": "A clear memory is *me acuerdo de*." },
-    { "prompt": "Type in Spanish: That name rings a bell.", "answer": "Ese nombre me suena.", "accept": ["Me suena ese nombre."], "why": "The name is the subject of *suena*." },
-    { "prompt": "Type in Spanish (to a friend): Does the name Altamira ring a bell?", "answer": "¿Te suena el nombre Altamira?", "accept": ["¿Te suena Altamira?"], "why": "*Te* says who it rings a bell for." },
-    { "prompt": "Type in Spanish (to a friend): Do you remember the meeting?", "answer": "¿Te acuerdas de la reunión?", "accept": ["¿Recuerdas la reunión?"], "why": "A real memory takes *te acuerdas de*, or just *recuerdas*." },
-    { "prompt": "Make it plural: *Ese nombre me suena.* Say: Those names ring a bell.", "answer": "Esos nombres me suenan.", "accept": ["Me suenan esos nombres."], "why": "The names are the subject, so *suena* becomes *suenan*." },
-    { "prompt": "Type in Spanish: Her voice rings a bell, but I don't remember where from.", "answer": "Su voz me suena, pero no me acuerdo de dónde.", "accept": ["Me suena su voz, pero no me acuerdo de dónde."], "why": "Foggy first with *me suena*, then the failed memory with *no me acuerdo*." }
+    {
+      "prompt": "Pick the right word and type the sentence (half-remembered): *Su cara me ___.* (suena / acuerdo)",
+      "answer": "Su cara me suena.",
+      "accept": [
+        "Me suena su cara."
+      ],
+      "why": "*Me suena* is for the foggy feeling."
+    },
+    {
+      "prompt": "Pick the right word and type the sentence (a clear memory): *Me ___ perfectamente de su cara.* (acuerdo / suena)",
+      "answer": "Me acuerdo perfectamente de su cara.",
+      "accept": [],
+      "why": "A clear memory is *me acuerdo de*."
+    },
+    {
+      "prompt": "Type in Spanish: That name rings a bell.",
+      "answer": "Ese nombre me suena.",
+      "accept": [
+        "Me suena ese nombre."
+      ],
+      "why": "The name is the subject of *suena*."
+    },
+    {
+      "prompt": "Type in Spanish (to a friend): Does the name Altamira ring a bell?",
+      "answer": "¿Te suena el nombre Altamira?",
+      "accept": [
+        "¿Te suena Altamira?"
+      ],
+      "why": "*Te* says who it rings a bell for."
+    },
+    {
+      "prompt": "Type in Spanish (to a friend): Do you remember the meeting?",
+      "answer": "¿Te acuerdas de la reunión?",
+      "accept": [
+        "¿Recuerdas la reunión?"
+      ],
+      "why": "A real memory takes *te acuerdas de*, or just *recuerdas*."
+    },
+    {
+      "prompt": "Make it plural: *Ese nombre me suena.* Say: Those names ring a bell.",
+      "answer": "Esos nombres me suenan.",
+      "accept": [
+        "Me suenan esos nombres."
+      ],
+      "why": "The names are the subject, so *suena* becomes *suenan*."
+    },
+    {
+      "prompt": "Type in Spanish: Her voice rings a bell, but I don't remember where from.",
+      "answer": "Su voz me suena, pero no me acuerdo de dónde.",
+      "accept": [
+        "Me suena su voz, pero no me acuerdo de dónde."
+      ],
+      "why": "Foggy first with *me suena*, then the failed memory with *no me acuerdo*."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Esos nombres me suena.", "right": "Esos nombres me suenan.", "why": "Almost. The names are the subject, so the verb is plural." },
-    { "wrong": "Me acuerdo su cara.", "right": "Me acuerdo de su cara.", "why": "Almost. *Acordarse* needs *de* before the thing." },
-    { "wrong": "Me recuerdo de su cara.", "right": "Me acuerdo de su cara.", "why": "Almost. *Acordarse* has the *me* and the *de*; *recordar* has neither: *recuerdo su cara*." },
-    { "wrong": "Su cara me suena perfectamente.", "right": "Me acuerdo perfectamente de su cara.", "why": "Almost. *Suena* is only for a half memory; a perfect one needs *me acuerdo*." }
+    {
+      "wrong": "Esos nombres me suena.",
+      "right": "Esos nombres me suenan.",
+      "why": "Almost. The names are the subject, so the verb is plural."
+    },
+    {
+      "wrong": "Me acuerdo su cara.",
+      "right": "Me acuerdo de su cara.",
+      "why": "Almost. *Acordarse* needs *de* before the thing."
+    },
+    {
+      "wrong": "Me recuerdo de su cara.",
+      "right": "Me acuerdo de su cara.",
+      "why": "Almost. *Acordarse* has the *me* and the *de*; *recordar* has neither: *recuerdo su cara*."
+    },
+    {
+      "wrong": "Su cara me suena perfectamente.",
+      "right": "Me acuerdo perfectamente de su cara.",
+      "why": "Almost. *Suena* is only for a half memory; a perfect one needs *me acuerdo*."
+    }
   ],
   "personal": "Think of a song, a face or a name that rings a bell. Say it with *Me suena…, pero no me acuerdo de…*."
 }

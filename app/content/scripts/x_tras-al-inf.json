@@ -6,39 +6,196 @@
     "en": "After signing, he left."
   },
   "examples": [
-    { "es": "Tras firmar, se fue.", "en": "After signing, he left." },
-    { "es": "Al firmar, se dio cuenta del error.", "en": "As he signed, he noticed the mistake." },
-    { "es": "Tras abrir la puerta, entré.", "en": "After opening the door, I went in." },
-    { "es": "Al abrir la puerta, vi a Simón.", "en": "On opening the door, I saw Simón." },
-    { "es": "Tras leer el acta, Mariana llamó a su jefe.", "en": "After reading the minutes, Mariana called her boss." },
-    { "es": "Al leer el acta, Mariana se rio.", "en": "As Mariana read the minutes, she laughed." }
+    {
+      "es": "Tras firmar, se fue.",
+      "en": "After signing, he left."
+    },
+    {
+      "es": "Al firmar, se dio cuenta del error.",
+      "en": "As he signed, he noticed the mistake."
+    },
+    {
+      "es": "Tras abrir la puerta, entré.",
+      "en": "After opening the door, I went in."
+    },
+    {
+      "es": "Al abrir la puerta, vi a Simón.",
+      "en": "On opening the door, I saw Simón."
+    },
+    {
+      "es": "Tras leer el acta, Mariana llamó a su jefe.",
+      "en": "After reading the minutes, Mariana called her boss."
+    },
+    {
+      "es": "Al leer el acta, Mariana se rio.",
+      "en": "As Mariana read the minutes, she laughed."
+    }
   ],
-  "rule": "Both go before an infinitive, and the person doing it is the same person as in the main verb. But they answer different questions.\n\n*Tras* + infinitive: after. The first thing is finished, then comes the next. *Tras firmar, se fue.*\n\n*Al* + infinitive: at that very moment. The two things touch, or the first sets off the second. *Al firmar, se dio cuenta del error.*\n\nThink \"after signing\" for *tras*, and \"on signing\" or \"as he signed\" for *al*. Never use an *-ando* form after either.",
+  "rule": "Both go before an infinitive, and the person doing it is usually the same person as in the main verb. But they answer different questions.\n\n*Tras* + infinitive: after. The first thing is finished, then comes the next. *Tras firmar, se fue.*\n\n*Al* + infinitive: at that very moment. The two things touch, or the first sets off the second. *Al firmar, se dio cuenta del error.*\n\nThink \"after signing\" for *tras*, and \"on signing\" or \"as he signed\" for *al*. Never use an *-ando* form after either.",
   "smallPrint": "Teachers call these prepositional time clauses: *tras* marks what comes before in sequence, and *al* marks coincidence.",
   "readAndPick": [
-    { "es": "Tras firmar, se fue.", "options": ["As he signed, he noticed the mistake.", "After signing, he left.", "Before signing, he left."], "answer": 1 },
-    { "es": "Al firmar, se dio cuenta del error.", "options": ["As he signed, he noticed the mistake.", "After signing, he fixed the mistake.", "He never signed."], "answer": 0 },
-    { "es": "Tras abrir la puerta, entré.", "options": ["As I opened the door, I went in.", "I couldn't open the door.", "After opening the door, I went in."], "answer": 2 },
-    { "es": "Al salir, vi a Hernando.", "options": ["After leaving, I called Hernando.", "As I left, I saw Hernando.", "Hernando saw me leave."], "answer": 1 },
-    { "es": "Tras la votación, todos se fueron.", "options": ["After the vote, everyone left.", "During the vote, everyone left.", "Everyone left before the vote."], "answer": 0 },
-    { "es": "Al oír la noticia, Vale no dijo nada.", "options": ["After telling the news, Vale said nothing.", "Vale said nothing about the news.", "On hearing the news, Vale said nothing."], "answer": 2 },
-    { "es": "Tras oír la noticia, Vale llamó a Tomás.", "options": ["After hearing the news, Vale called Tomás.", "As she heard the news, Vale was calling Tomás.", "Vale called Tomás to give him the news."], "answer": 0 },
-    { "es": "Al llegar, Vale ya estaba allí.", "options": ["After arriving, Vale left.", "On arriving, I found Vale already there.", "Vale arrived after me."], "answer": 1 },
-    { "es": "Tras llegar a casa, llamé a mi mamá.", "options": ["As I got home, I was calling my mum.", "My mum called me at home.", "After getting home, I called my mum."], "answer": 2 }
+    {
+      "es": "Tras firmar, se fue.",
+      "options": [
+        "As he signed, he noticed the mistake.",
+        "After signing, he left.",
+        "Before signing, he left."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Al firmar, se dio cuenta del error.",
+      "options": [
+        "As he signed, he noticed the mistake.",
+        "After signing, he fixed the mistake.",
+        "He never signed."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tras abrir la puerta, entré.",
+      "options": [
+        "As I opened the door, I went in.",
+        "I couldn't open the door.",
+        "After opening the door, I went in."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Al salir, vi a Hernando.",
+      "options": [
+        "After leaving, I called Hernando.",
+        "As I left, I saw Hernando.",
+        "Hernando saw me leave."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tras la votación, todos se fueron.",
+      "options": [
+        "After the vote, everyone left.",
+        "During the vote, everyone left.",
+        "Everyone left before the vote."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Al oír la noticia, Vale no dijo nada.",
+      "options": [
+        "After telling the news, Vale said nothing.",
+        "Vale said nothing about the news.",
+        "On hearing the news, Vale said nothing."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Tras oír la noticia, Vale llamó a Tomás.",
+      "options": [
+        "After hearing the news, Vale called Tomás.",
+        "As she heard the news, Vale was calling Tomás.",
+        "Vale called Tomás to give him the news."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Al llegar, vi que Vale ya estaba allí.",
+      "options": [
+        "After arriving, Vale left.",
+        "On arriving, I saw that Vale was already there.",
+        "Vale arrived after me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Tras llegar a casa, llamé a mi mamá.",
+      "options": [
+        "As I got home, I was calling my mum.",
+        "My mum called me at home.",
+        "After getting home, I called my mum."
+      ],
+      "answer": 2
+    }
   ],
   "yourTurn": [
-    { "prompt": "After signing the contract, Tomás felt bad. Choose *Tras* or *Al*: ___ firmar el contrato, Tomás se sintió mal.", "answer": "Tras firmar el contrato, Tomás se sintió mal.", "accept": ["Tras firmar el contrato, Tomás se sintió mal"], "why": "It says \"after\", so one thing finishes before the next: *tras*." },
-    { "prompt": "As she read the minutes, Mariana laughed. Choose *Tras* or *Al*: ___ leer el acta, Mariana se rio.", "answer": "Al leer el acta, Mariana se rio.", "accept": ["Al leer el acta, Mariana se rio"], "why": "The reading sets off the laugh at once, so it is *al*." },
-    { "prompt": "Say: After leaving the bank, I had a tinto.", "answer": "Tras salir del banco, tomé un tinto.", "accept": ["Tras salir del banco, tomé un tinto", "Tras salir del banco tomé un tinto."], "why": "*Tras* + infinitive gives the step before the next one." },
-    { "prompt": "Say: On opening the door, I saw Simón.", "answer": "Al abrir la puerta, vi a Simón.", "accept": ["Al abrir la puerta, vi a Simón", "Al abrir la puerta vi a Simón."], "why": "*Al* + infinitive: the sighting happens as the door opens." },
-    { "prompt": "Say: After the meeting ended, everyone had a tinto.", "answer": "Tras terminar la reunión, todos tomaron un tinto.", "accept": ["Tras terminar la reunión, todos tomaron un tinto", "Tras terminar la reunión todos tomaron un tinto."], "why": "The meeting is over first, so *tras*." },
-    { "prompt": "Change \"after\" to \"as\": Tras entrar, Tomás saludó a todos.", "answer": "Al entrar, Tomás saludó a todos.", "accept": ["Al entrar, Tomás saludó a todos", "Al entrar Tomás saludó a todos."], "why": "Swap *tras* for *al* and the greeting happens as he comes in." },
-    { "prompt": "Change \"as\" to \"after\": Al votar, Hernando miró a Tomás.", "answer": "Tras votar, Hernando miró a Tomás.", "accept": ["Tras votar, Hernando miró a Tomás", "Tras votar Hernando miró a Tomás."], "why": "Swap *al* for *tras* and the look comes once the voting is done." }
+    {
+      "prompt": "After signing the contract, Tomás felt bad. Choose *Tras* or *Al*: ___ firmar el contrato, Tomás se sintió mal.",
+      "answer": "Tras firmar el contrato, Tomás se sintió mal.",
+      "accept": [
+        "Tras firmar el contrato, Tomás se sintió mal"
+      ],
+      "why": "It says \"after\", so one thing finishes before the next: *tras*."
+    },
+    {
+      "prompt": "As she read the minutes, Mariana laughed. Choose *Tras* or *Al*: ___ leer el acta, Mariana se rio.",
+      "answer": "Al leer el acta, Mariana se rio.",
+      "accept": [
+        "Al leer el acta, Mariana se rio"
+      ],
+      "why": "The reading sets off the laugh at once, so it is *al*."
+    },
+    {
+      "prompt": "Say: After leaving the bank, I had a tinto.",
+      "answer": "Tras salir del banco, tomé un tinto.",
+      "accept": [
+        "Tras salir del banco, tomé un tinto",
+        "Tras salir del banco tomé un tinto."
+      ],
+      "why": "*Tras* + infinitive gives the step before the next one."
+    },
+    {
+      "prompt": "Say: On opening the door, I saw Simón.",
+      "answer": "Al abrir la puerta, vi a Simón.",
+      "accept": [
+        "Al abrir la puerta, vi a Simón",
+        "Al abrir la puerta vi a Simón."
+      ],
+      "why": "*Al* + infinitive: the sighting happens as the door opens."
+    },
+    {
+      "prompt": "Say: After the meeting ended, everyone had a tinto.",
+      "answer": "Tras terminar la reunión, todos tomaron un tinto.",
+      "accept": [
+        "Tras terminar la reunión, todos tomaron un tinto",
+        "Tras terminar la reunión todos tomaron un tinto.",
+        "Tras la reunión, todos tomaron un tinto."
+      ],
+      "why": "The meeting is over first, so *tras*."
+    },
+    {
+      "prompt": "Change \"after\" to \"as\": Tras entrar, Tomás saludó a todos.",
+      "answer": "Al entrar, Tomás saludó a todos.",
+      "accept": [
+        "Al entrar, Tomás saludó a todos",
+        "Al entrar Tomás saludó a todos."
+      ],
+      "why": "Swap *tras* for *al* and the greeting happens as he comes in."
+    },
+    {
+      "prompt": "Change \"as\" to \"after\": Al votar, Hernando miró a Tomás.",
+      "answer": "Tras votar, Hernando miró a Tomás.",
+      "accept": [
+        "Tras votar, Hernando miró a Tomás",
+        "Tras votar Hernando miró a Tomás."
+      ],
+      "why": "Swap *al* for *tras* and the look comes once the voting is done."
+    }
   ],
   "pitfalls": [
-    { "wrong": "Después firmar, se fue.", "right": "Tras firmar, se fue.", "why": "Almost. *Después* needs *de* before an infinitive (*después de firmar*); *tras* doesn't." },
-    { "wrong": "Al firmando, se dio cuenta del error.", "right": "Al firmar, se dio cuenta del error.", "why": "Almost. *Al* takes a plain infinitive, never an *-ando* form." },
-    { "wrong": "Al firmar, se fue.", "right": "Tras firmar, se fue.", "why": "Almost. *Al* means \"as he signed\"; for signing and then leaving, use *tras*." }
+    {
+      "wrong": "Después firmar, se fue.",
+      "right": "Tras firmar, se fue.",
+      "why": "Almost. *Después* needs *de* before an infinitive (*después de firmar*); *tras* doesn't."
+    },
+    {
+      "wrong": "Al firmando, se dio cuenta del error.",
+      "right": "Al firmar, se dio cuenta del error.",
+      "why": "Almost. *Al* takes a plain infinitive, never an *-ando* form."
+    },
+    {
+      "wrong": "Al firmar, se fue.",
+      "right": "Tras firmar, se fue.",
+      "why": "Almost. *Al* means \"as he signed\"; for signing and then leaving, use *tras*."
+    }
   ],
   "personal": "Think of your morning. Say one thing you do after another, and one thing you notice at a certain moment: *Tras…, …* and *Al…, …*"
 }
