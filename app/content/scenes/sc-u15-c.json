@@ -39,7 +39,7 @@
       "require": [
         {
           "type": "regex",
-          "pattern": "est[aá] mala",
+          "pattern": "(est[aá] (mala|dañada)|se dañ[oó])",
           "flags": "i",
           "label": "gone off: está mala"
         }

@@ -31,7 +31,7 @@
       "en": "Open since 1950, the café has many customers."
     }
   ],
-  "rule": "Instead of a full clause with *porque* or *cuando*, you can open the sentence with a participle (*-ado*, *-ido*) or a gerund (*-ando*, *-iendo*), then a comma, then the main clause.\n\nParticiple: something already done or a state. It agrees with its noun: *Construido en 1920*, *Cerrada la puerta*, *Terminado el trabajo*.\n\nGerund: a reason or a condition at the same time: *Siendo tarde…*, *Sabiendo que…*.\n\nThe opening part usually shares the subject of the main clause, or has its own noun right after it (*Terminado el trabajo*).\n\nNever use the gerund for something that happens afterwards.",
+  "rule": "Instead of a full clause with *porque* or *cuando*, you can open the sentence with a participle (*-ado*, *-ido*) or a gerund (*-ando*, *-iendo*), then a comma, then the main clause.\n\nParticiple: something already done or a state. It agrees with its noun: *Construido en 1920*, *Cerrada la puerta*, *Terminado el trabajo*.\n\nGerund: a reason or a condition at the same time: *Siendo tarde…*, *Sabiendo que…*.\n\nThe opening part usually shares the subject of the main clause, or has its own noun right after it (*Terminado el trabajo*).\n\nNever use the gerund for something that happens afterwards. And never use it to describe a noun, the way English does: \"the man wearing a hat\" is *el hombre que lleva un sombrero*, not *el hombre llevando un sombrero*.",
   "smallPrint": "Teachers call these participial and gerund clauses; with their own noun (*Terminado el trabajo*) they are called absolute constructions.",
   "readAndPick": [
     {
@@ -107,7 +107,7 @@
       "answer": 1
     },
     {
-      "es": "Conociendo a Don Hernando, va a llegar tarde.",
+      "es": "Conociendo a don Hernando, va a llegar tarde.",
       "options": [
         "Knowing Don Hernando, he'll arrive late.",
         "Don Hernando knows him, so he arrived late.",

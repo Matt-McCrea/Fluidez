@@ -7817,19 +7817,19 @@
   },
   {
     "id": "u07-0326",
-    "es": "Estoy aquí hace un rato.",
-    "en": "I've been here for a while.",
+    "es": "Vine aquí hace un rato.",
+    "en": "I came here a while ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
       "g:gender-articles",
       "g:hace-ago",
       "g:present-er-ir",
+      "g:preterite-irregular-strong",
       "l:aquí",
-      "l:estar",
       "l:hacer",
       "l:rato",
+      "l:venir",
       "p:aqui-ahi-alla"
     ],
     "targets": [
@@ -15633,23 +15633,23 @@
   },
   {
     "id": "u07-0655",
-    "es": "Estoy aquí hace un día y ya tengo problemas.",
-    "en": "I've been here for a day and I already have problems.",
+    "es": "Vine aquí hace un día y ya tengo problemas.",
+    "en": "I came here a day ago and I already have problems.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tengo",
-      "g:estar-location-states",
       "g:gender-articles",
       "g:hace-ago",
       "g:present-er-ir",
+      "g:preterite-irregular-strong",
       "g:yo-irregular",
       "l:aquí",
       "l:día",
-      "l:estar",
       "l:hacer",
       "l:problema",
       "l:tener",
+      "l:venir",
       "p:aqui-ahi-alla"
     ],
     "targets": [
@@ -16792,18 +16792,18 @@
   },
   {
     "id": "u07-0702",
-    "es": "Tomás vive aquí hace poco tiempo.",
-    "en": "Tomás has lived here for a short time.",
+    "es": "Tomás llegó aquí hace poco tiempo.",
+    "en": "Tomás got here a short time ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hace-rato",
       "g:hace-ago",
-      "g:present-er-ir",
+      "g:preterite-ar",
       "l:aquí",
       "l:hacer",
+      "l:llegar",
       "l:tiempo",
-      "l:vivir",
       "p:aqui-ahi-alla",
       "p:poco-un-poco"
     ],
@@ -25528,17 +25528,18 @@
   },
   {
     "id": "u07-1064",
-    "es": "Tomás vive acá hace dos semanas.",
-    "en": "Tomás has lived here for two weeks.",
+    "es": "Tomás llegó acá hace dos semanas.",
+    "en": "Tomás got here two weeks ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:hace-ago",
       "g:present-er-ir",
+      "g:preterite-ar",
       "l:acá",
       "l:hacer",
+      "l:llegar",
       "l:semana",
-      "l:vivir",
       "p:aqui-ahi-alla"
     ],
     "targets": [

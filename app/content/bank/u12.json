@@ -8411,7 +8411,7 @@
   {
     "id": "u12-0340",
     "es": "El reloj no funcionaba y llegamos tarde.",
-    "en": "The clock did not work and we arrived late.",
+    "en": "The clock wasn't working and we arrived late.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14702,7 +14702,7 @@
   {
     "id": "u12-0608",
     "es": "El hombre corrió a la calle oscura.",
-    "en": "The man ran out into the dark street.",
+    "en": "The man ran to the dark street.",
     "accept": [],
     "acceptEn": [],
     "requires": [

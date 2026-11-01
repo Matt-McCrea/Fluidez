@@ -36,7 +36,7 @@
     {
       "id": "t2",
       "npc": "En general, Bogotá mejora. Pero hay mucha inseguridad, sobre todo de noche.",
-      "npcEn": "In general, Bogotá is getting better. But there is a lot of insecurity, especially at night.",
+      "npcEn": "In general, Bogotá is getting better. But there is a lot of crime, especially at night.",
       "intent": "Say you agree, and that it's important he doesn't go out alone at night.",
       "accept": [
         "Sí, señor. Es importante que usted no salga solo de noche.",

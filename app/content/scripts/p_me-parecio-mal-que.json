@@ -31,7 +31,7 @@
       "en": "It really bothered me that they didn't call me."
     }
   ],
-  "rule": "To say how someone's action struck you, use *me pareció* + a judgement + *que* + a verb in the *-ra* form: *Me pareció muy mal que te fueras*.\n\nJudgements: *bien, mal, pésimo, genial, increíble*, with *muy* if you like. Who judges: *me, te, le, nos, les*.\n\nThe *-ra* verbs (*fueras, dijeras, avisaran*) follow because the judgement is in the past. English says \"that you left\"; Spanish uses the subjunctive, never the plain past. *Me cayó mal que…* is the same idea with more feeling.",
+  "rule": "To say how someone's action struck you, use *me pareció* + a judgement + *que* + a verb in the *-ra* form: *Me pareció muy mal que te fueras*.\n\nJudgements: *bien, mal, pésimo, genial, increíble*, with *muy* if you like. Who judges: *me, te, le, nos, les*.\n\nThe *-ra* verbs (*fueras, dijeras, avisaran*) follow because the judgement or the action is in the past: *Me parece mal que te fueras ayer* works too. English says \"that you left\"; Spanish uses the subjunctive, never the plain past. *Me cayó mal que…* is the same idea with more feeling.",
   "smallPrint": "Teachers call this the past subjunctive after expressions of evaluation.",
   "readAndPick": [
     {
@@ -165,9 +165,9 @@
       "why": "No *de* here: it is *mal que*."
     },
     {
-      "wrong": "Me parece mal que te fueras ayer.",
-      "right": "Me pareció mal que te fueras ayer.",
-      "why": "The judgement is about the past, so *pareció* matches *fueras*."
+      "wrong": "Me pareció mal que te vas.",
+      "right": "Me pareció mal que te fueras.",
+      "why": "Almost. After *me pareció mal que*, the verb takes the *-ra* form."
     }
   ],
   "personal": "Think of something a friend did. Say how it struck you. Start with *Me pareció…*"

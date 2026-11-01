@@ -91,7 +91,7 @@
     },
     {
       "id": "t5",
-      "npc": "Camila: Muchas gracias por su tiempo. Mañana le llamo para grabar.",
+      "npc": "Camila: Muchas gracias por su tiempo. Mañana lo llamo para grabar.",
       "npcEn": "Camila: Thank you very much for your time. Tomorrow I'll call you to record.",
       "intent": "Thank her and say goodbye until tomorrow (she is a stranger, so use usted).",
       "accept": [
@@ -137,7 +137,6 @@
     "g:future-promises",
     "g:gender-articles",
     "g:hay-vs-esta",
-    "g:indirect-objects",
     "g:lo-adjective",
     "g:negation-words",
     "g:present-ar",

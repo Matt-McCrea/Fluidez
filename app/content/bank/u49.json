@@ -5400,6 +5400,7 @@
     "acceptEn": [],
     "requires": [
       "c:tienes",
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:stem-boot",
       "l:año",
@@ -10665,7 +10666,7 @@
   },
   {
     "id": "u49-0436",
-    "es": "Para el teletrabajo solo necesito una computadora y internet.",
+    "es": "Para el teletrabajo solo necesito una computadora e internet.",
     "en": "For remote working I only need a computer and internet.",
     "accept": [],
     "acceptEn": [],

@@ -175,7 +175,7 @@
     {
       "wrong": "Quería que vengas.",
       "right": "Quería que vinieras.",
-      "why": "A past first verb needs the *-ra* form after it, even if the coming is still in the future."
+      "why": "After a past first verb, use the *-ra* form. In parts of Latin America you'll also hear *vengas* when the coming is still ahead, but *vinieras* is always right."
     },
     {
       "wrong": "Quiero que vinieras.",
@@ -190,7 +190,7 @@
     {
       "wrong": "Les pedí que no griten.",
       "right": "Les pedí que no gritaran.",
-      "why": "*Pedí* is past, so *gritaran* follows it."
+      "why": "*Pedí* is past, so use *gritaran*. In parts of Latin America you'll also hear *griten* when the request still stands."
     }
   ],
   "personal": "Type two sentences about one person: one about what they want now (*Mi mamá quiere que...*) and one about what they wanted when you were younger (*Mi mamá quería que...*)."

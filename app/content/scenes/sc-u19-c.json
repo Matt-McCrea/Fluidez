@@ -24,7 +24,7 @@
         },
         {
           "type": "regex",
-          "pattern": "de parte de qui[eé]n",
+          "pattern": "(de parte de qui[eé]n|qui[eé]n habla|con qui[eé]n hablo)",
           "flags": "i",
           "label": "who's calling: ¿de parte de quién?"
         }

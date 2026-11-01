@@ -15,7 +15,7 @@
       "en": "He overlooked the figure."
     },
     {
-      "es": "Don Hernando vio el error y hizo la vista gorda.",
+      "es": "Don Hernando vio el error e hizo la vista gorda.",
       "en": "Don Hernando saw the mistake and turned a blind eye."
     },
     {
@@ -39,7 +39,7 @@
   "smallPrint": "Teachers call this a near-synonym contrast: two expressions that overlap in English but differ in intent.",
   "readAndPick": [
     {
-      "es": "Don Hernando vio el error y hizo la vista gorda.",
+      "es": "Don Hernando vio el error e hizo la vista gorda.",
       "options": [
         "Don Hernando overlooked the mistake by accident.",
         "Don Hernando saw the mistake and turned a blind eye.",
@@ -119,7 +119,7 @@
       "why": "He did not see it, so there is nothing to pretend about."
     },
     {
-      "prompt": "Pick and type the whole sentence: *Don Hernando vio el error y ___.* (*pasó por alto* or *hizo la vista gorda*) Don Hernando saw the mistake and turned a blind eye.",
+      "prompt": "Pick and type the whole sentence: *Don Hernando vio el error ___.* (*y lo pasó por alto* or *e hizo la vista gorda*) Don Hernando saw the mistake and turned a blind eye.",
       "answer": "Don Hernando vio el error y hizo la vista gorda.",
       "accept": [],
       "why": "He saw it and chose to say nothing, which is a blind eye."

@@ -18509,23 +18509,19 @@
   },
   {
     "id": "u14-0740",
-    "es": "Mi abuela cayó en la calle, pero está bien.",
-    "en": "My grandmother fell in the street, but she's OK.",
+    "es": "La carta cayó al piso, pero nadie la vio.",
+    "en": "The letter fell to the floor, but nobody saw it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
-      "g:estar-location-states",
+      "g:direct-objects",
       "g:gender-articles",
+      "g:preterite-er-ir",
       "g:preterite-spelling-stem",
-      "l:abuela",
-      "l:bien",
       "l:caer",
-      "l:calle",
-      "l:estar",
-      "p:bien-bueno",
-      "p:bien-mal-vs-bueno-malo",
-      "p:possessives-basic"
+      "l:carta",
+      "l:piso",
+      "l:ver"
     ],
     "targets": [
       "l:caer"
@@ -19860,18 +19856,22 @@
   },
   {
     "id": "u14-0793",
-    "es": "Simón cayó de la silla y ahora no habla.",
-    "en": "Simón fell off the chair and now he isn't talking.",
+    "es": "La llave cayó al agua y ahora no podemos entrar.",
+    "en": "The key fell into the water and now we can't get in.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
+      "g:present-er-ir",
       "g:preterite-spelling-stem",
+      "g:verb-infinitive",
+      "l:agua",
       "l:ahora",
       "l:caer",
-      "l:hablar",
-      "l:silla"
+      "l:entrar",
+      "l:llave",
+      "l:poder",
+      "p:el-agua-fria"
     ],
     "targets": [
       "l:caer"

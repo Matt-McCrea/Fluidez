@@ -36,7 +36,7 @@
     { "prompt": "Type in Spanish: You said you would let me know when you knew something. (to a friend)", "answer": "Dijiste que me avisarías cuando supieras algo.", "accept": [], "why": "*Avisarías* is 'you would let me know' and *supieras* is *tú* in the past wish form." }
   ],
   "pitfalls": [
-    { "wrong": "Me dijo que me llamará cuando llegue.", "right": "Me dijo que me llamaría cuando llegara.", "why": "Almost. After *dijo que*, both parts step back: *llamaría* for 'would' and *llegara* for the time part." },
+    {"wrong": "Me dijo que me llamará cuando llegue. (he arrived last week)", "right": "Me dijo que me llamaría cuando llegara.", "why": "The arrival is already behind you, so both parts step back. If it is still ahead of you now, this sentence is fine."},
     { "wrong": "Me dijo que me llamaría cuando llegó.", "right": "Me dijo que me llamaría cuando llegara.", "why": "*Llegó* says the arrival already happened; here it was still ahead when he spoke, so it takes the wish form." },
     { "wrong": "Íbamos a esperar hasta que bajan los precios.", "right": "Íbamos a esperar hasta que bajaran los precios.", "why": "*Íbamos a* is a look back, so the time part needs the past wish form, *bajaran*." },
     { "wrong": "Dijo que me llamaría cuando llegaría.", "right": "Dijo que me llamaría cuando llegara.", "why": "English says 'would' twice, but Spanish uses the 'would' form once; the time part takes the *-ra* form." }

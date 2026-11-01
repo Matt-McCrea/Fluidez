@@ -27,7 +27,7 @@
       "en": "Hernando comes less and less."
     },
     {
-      "es": "Mientras más temprano llegas, mejor.",
+      "es": "Mientras más temprano llegues, mejor.",
       "en": "The earlier you arrive, the better. (to a friend)"
     },
     {
@@ -35,7 +35,7 @@
       "en": "It's more and more expensive."
     }
   ],
-  "rule": "Two tools for talking about change.\n\n*Cada vez más / menos*: more and more, less and less. English repeats the word; Spanish adds *cada vez*. It also sits in front of an adjective: *Cada vez es más caro.*\n\n*Mientras más..., más...*: the more..., the more... *Mientras más trabajo, menos duermo.* Both halves start with *más* or *menos*, with a comma in the middle. It can end with just *mejor* or *peor*: *Mientras más temprano llegas, mejor.*\n\nSpanish never adds \"the\" in these. In books and formal speech you will also see *cuanto más...* for the same idea.",
+  "rule": "Two tools for talking about change.\n\n*Cada vez más / menos*: more and more, less and less. English repeats the word; Spanish adds *cada vez*. It also sits in front of an adjective: *Cada vez es más caro.*\n\n*Mientras más..., más...*: the more..., the more... *Mientras más trabajo, menos duermo.* Both halves start with *más* or *menos*, with a comma in the middle. It can end with just *mejor* or *peor*: *Mientras más temprano llegas, mejor.* If it is still to come, use the form you know from *cuando*: *Mientras más temprano llegues, mejor.*\n\nSpanish never adds \"the\" in these. In books and formal speech you will also see *cuanto más...* for the same idea.",
   "smallPrint": "Teachers call *mientras más..., más...* a proportional comparison, and *cada vez más* a progressive one. In Colombia you will also hear *entre más...*: *Entre más trabajo, menos duermo.*",
   "readAndPick": [
     {
@@ -136,11 +136,13 @@
     },
     {
       "prompt": "Type in Spanish: The earlier you arrive, the better. (to a friend)",
-      "answer": "Mientras más temprano llegas, mejor.",
+      "answer": "Mientras más temprano llegues, mejor.",
       "accept": [
+        "Mientras más temprano llegas, mejor.",
+        "Entre más temprano llegues, mejor.",
         "Entre más temprano llegas, mejor."
       ],
-      "why": "The second half can be just *mejor*."
+      "why": "The arrival is still to come, so *llegues*, as after *cuando*. The second half can be just *mejor*."
     },
     {
       "prompt": "Type in Spanish: Hernando comes less and less.",

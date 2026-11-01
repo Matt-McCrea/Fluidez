@@ -114,7 +114,13 @@
         }
       ],
       "focus": "g:possessives",
-      "next": "t6"
+      "next": "t6",
+      "type": "containsAny",
+      "words": [
+        "su nombre",
+        "se llama"
+      ],
+      "label": "say you don't know his name"
     },
     {
       "id": "t6",

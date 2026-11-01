@@ -1,7 +1,7 @@
 {
   "node": "g:voseo-recognition",
   "hook": {
-    "line": "Sooner or later someone from Medellín says \"vos\" to you, and it sounds like a different language. It is the same language with a different second person. You only need to recognise it, never to say it. Vale does it all the time when she is happy or angry.",
+    "line": "Sooner or later someone from Medellín says \"vos\" to you, and it sounds like a different language. It is the same language with a different second person. You only need to recognise it, never to say it.",
     "es": "¿Vos qué querés?",
     "en": "What do you want? (to a friend, paisa)"
   },
@@ -31,7 +31,7 @@
       "en": "What are you doing? (to a friend, paisa)"
     }
   ],
-  "rule": "In Medellín and some other places, friends say *vos* instead of *tú*. It means exactly the same: \"you\", one friend.\n\n*Vos tenés* = *tú tienes*\n*Vos querés* = *tú quieres*\n*Vos sabés* = *tú sabes*\n*Vos sos* = *tú eres*\n\nThe verb ends in *-ás*, *-és* or *-ís*, stressed on the last vowel, and the middle of the verb doesn't change: *querés*, not *quierés*. Commands also put the stress at the end: *vení* (*ven*), *sentate* (*siéntate*). Some families also use *usted* with each other.\n\nYou will hear it all through Vale's story. Understand it, answer in *tú*, and nobody minds.",
+  "rule": "In Medellín and some other places, friends say *vos* instead of *tú*. It means exactly the same: \"you\", one friend.\n\n*Vos tenés* = *tú tienes*\n*Vos querés* = *tú quieres*\n*Vos sabés* = *tú sabes*\n*Vos sos* = *tú eres*\n\nThe verb ends in *-ás*, *-és* or *-ís*, stressed on the last vowel, and the middle of the verb doesn't change: *querés*, not *quierés*. Commands also put the stress at the end: *vení* (*ven*), *sentate* (*siéntate*). After a preposition it stays *vos* (*para vos*, *con vos*), and the object word stays *te*: *¿vos te acordás?* Some families also use *usted* with each other.\n\nWhen you hear it, understand it, answer in *tú*, and nobody minds.",
   "smallPrint": "Teachers call this *voseo*.",
   "readAndPick": [
     {
@@ -148,7 +148,7 @@
       "accept": [
         "Ven y siéntate."
       ],
-      "why": "The *tú* commands are *ven* and *siéntate*: the *d* disappears from *vení*."
+      "why": "The *tú* commands are *ven* and *siéntate*: *vení* loses its last vowel and *sentate* gets its *ie* back."
     },
     {
       "prompt": "Say it in *tú*: ¿Qué hacés? What are you doing? (to a friend)",

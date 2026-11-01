@@ -23144,7 +23144,7 @@
   {
     "id": "u04-1027",
     "es": "¿Vio usted a Hernando?\nSí, comió aquí.",
-    "en": "Did you see Hernando?\nYes, he ate here. (polite)",
+    "en": "Did you see Hernando? (polite)\nYes, he ate here.",
     "accept": [],
     "acceptEn": [],
     "requires": [

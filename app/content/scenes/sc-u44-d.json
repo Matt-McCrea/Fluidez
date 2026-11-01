@@ -41,7 +41,7 @@
       "npcEn": "Hernando: I ask you frankly: do you think we win?",
       "intent": "Say you see it as difficult, but not impossible (use: Lo veo difícil).",
       "accept": [
-        "Lo veo difícil, Don Hernando, pero no imposible.",
+        "Lo veo difícil, don Hernando, pero no imposible.",
         "Lo veo difícil, pero vale la pena intentarlo.",
         "Sinceramente, lo veo difícil."
       ],

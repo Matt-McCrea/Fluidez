@@ -31,7 +31,7 @@
       "en": "Why do you go red? (to a friend)"
     }
   ],
-  "rule": "Where English has one word, Spanish has four, and each says how the change happened:\n\n*Ponerse* + a word for a mood or colour: it hits you, then passes. *Me puse rojo. Se puso contento.*\n*Quedarse* + a word for a state: you end up that way and stay a while. *Se quedó callado.*\n*Volverse* + a word for character: a deeper change, slow and lasting. *Se volvió muy seria.*\n*Hacerse* + a job or status: you worked for it. *Quiere hacerse famosa.*\n\nThey are all reflexive, so *me, te, se, nos* come first. *Ponerse* is irregular: *me pongo*, *me puse*. Then the describing word agrees with the person: *callado*, *callada*, *callados*.",
+  "rule": "Where English has one word, Spanish has five, and each says how the change happened:\n\n*Ponerse* + a word for a mood, colour or look: a change you can see or feel, usually quick. *Me puse rojo. Se puso contento.*\n*Quedarse* + a word for a state: you end up that way and stay a while. *Se quedó callado.*\n*Volverse* + a word for character: a deeper change, slow and lasting. *Se volvió muy seria.*\n*Hacerse* + a job or status: you worked for it. *Quiere hacerse famosa.*\n*Convertirse en* + a noun: it turned into something else. *La casa se convirtió en un café.*\n\nThey are all reflexive, so *me, te, se, nos* come first. *Ponerse* is irregular: *me pongo*, *me puse*. Then the describing word agrees with the person: *callado*, *callada*, *callados*.",
   "smallPrint": "Teachers call these verbs of change, or becoming verbs. Each one takes a describing word or a noun straight after it.",
   "readAndPick": [
     {
@@ -147,7 +147,9 @@
       "prompt": "Say: Vale wants to become famous.",
       "answer": "Vale quiere hacerse famosa.",
       "accept": [
-        "Vale se quiere hacer famosa."
+        "Vale se quiere hacer famosa.",
+        "Vale quiere volverse famosa.",
+        "Vale se quiere volver famosa."
       ],
       "why": "Becoming something through effort uses *hacerse*."
     },
@@ -183,7 +185,7 @@
     {
       "wrong": "Se puso famoso.",
       "right": "Se hizo famoso.",
-      "why": "Fame is a status you reach over time, so *hacerse*; *ponerse* is only for quick moods and colours."
+      "why": "Fame is a status you reach over time, so *hacerse* or *volverse*; *ponerse* is for a change in how someone looks or feels."
     }
   ],
   "personal": "Think of a moment when you suddenly went red, fell silent or got very happy. Say what happened: *Me puse...* or *Me quedé...*."

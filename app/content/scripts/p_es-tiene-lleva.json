@@ -31,7 +31,7 @@
       "en": "What's your sister like?\nShe's tall and has short hair."
     }
   ],
-  "rule": "Spanish splits a description across three verbs.\n\n*Es* for what someone is, the lasting stuff: *es alto*, *es simpática*.\n*Tiene* for features they have: *tiene el pelo largo*, *tiene los ojos verdes*.\n*Lleva* for what they're wearing today: *lleva una camisa blanca*.\n\nTwo English habits to drop. Hair and eyes take *el* and *los*, not his or her: *tiene los ojos azules*. And the colour comes after the thing: *una chaqueta roja*.\n\nStart big (who they are), then zoom in.",
+  "rule": "Spanish splits a description across three verbs.\n\n*Es* for what someone is like: *es alto*, *es simpática*.\n*Tiene* for features they have: *tiene el pelo largo*, *tiene los ojos verdes*.\n*Lleva* for what they're wearing today: *lleva una camisa blanca*.\n\nTwo English habits to drop. Hair and eyes take *el* and *los*, not his or her: *tiene los ojos azules*. And the colour comes after the thing: *una chaqueta roja*.\n\nStart big (who they are), then zoom in.",
   "smallPrint": "*Llevar* also means to carry or to take; with clothes it means to wear. Describing a person with *ser*, *tener* and *llevar* is one of the first set pieces in any Spanish course.",
   "readAndPick": [
     {
@@ -122,7 +122,7 @@
       "accept": [
         "Él es alto y delgado."
       ],
-      "why": "What he is, the lasting stuff, takes *es*."
+      "why": "What he's like takes *es*."
     },
     {
       "prompt": "She has green eyes.",

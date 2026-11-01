@@ -14,7 +14,7 @@
     { "es": "Mariana, quien es periodista, vive en Chapinero.", "en": "Mariana, who is a journalist, lives in Chapinero." },
     { "es": "Fue Vale quien hizo el pan.", "en": "It was Vale who made the bread." }
   ],
-  "rule": "Three small words hang extra detail on a sentence.\n*donde*: where, after a place. *el café donde trabajo*, the café where I work.\n*lo que*: what, when it means the thing that. *Lo que necesito es tiempo.*\n*quien*: who, for people, after a comma or after a little word like *con*: *Mariana, quien es periodista*; *la persona con quien hablé*.\n\nThe trap is English what. In a question it's *qué*: *¿Qué necesitas?* In a statement, where it means the thing that, it's *lo que*: *No entiendo lo que dices.*\n\nWhere works the same way: the question *¿Dónde?* has an accent, the linking *donde* has none.\n\nEnglish can end on a little word: the person I spoke with. Spanish moves it to the front: *con quien hablé*.\n\nFor plain who right after a person, stay with *que*: *la persona que trabaja aquí*.",
+  "rule": "Three small words hang extra detail on a sentence.\n*donde*: where, after a place. *el café donde trabajo*, the café where I work.\n*lo que*: what, when it means the thing that. *Lo que necesito es tiempo.*\n*quien*: who, for people, after a little word like *con*: *la persona con quien hablé*. You'll also see it after a comma (*Mariana, quien es periodista*, though *que* works there too), and after *fue* or *es* when you point someone out: *Fue Vale quien hizo el pan*.\n\nThe trap is English what. In a question it's *qué*: *¿Qué necesitas?* In a statement, where it means the thing that, it's *lo que*: *No entiendo lo que dices.* After words like *no sé*, the question word stays, accent and all: *No sé qué hacer.*\n\nWhere works the same way: the question *¿Dónde?* has an accent, the linking *donde* has none.\n\nEnglish can end on a little word: the person I spoke with. Spanish moves it to the front: *con quien hablé*.\n\nFor plain who right after a person, stay with *que*: *la persona que trabaja aquí*.",
   "smallPrint": "Teachers call these relatives: *donde* is a relative adverb, *lo que* a neuter relative, *quien* the relative pronoun for people.",
   "readAndPick": [
     { "es": "Es el café donde trabajé.", "options": ["It's the café where I worked.", "It's the café where she worked."], "answer": 0 },
@@ -80,17 +80,17 @@
     {
       "wrong": "Es el lugar dónde trabajé.",
       "right": "Es el lugar donde trabajé.",
-      "why": "The accent is only for the question *¿Dónde?*"
+      "why": "The accent is only for questions, even ones tucked inside a sentence: *¿Dónde?*, *No sé dónde dejar el carro*. Here *donde* just links to *el lugar*."
     },
     {
       "wrong": "Es la persona quien trabaja aquí.",
       "right": "Es la persona que trabaja aquí.",
-      "why": "Right after a person, plain who is *que*; *quien* needs a comma or a word like *con* before it."
+      "why": "Right after a person, plain who is *que*. *Quien* comes after a comma, after a word like *con*, or in *fue Vale quien*."
     },
     {
-      "wrong": "No entiendo qué tú dices.",
-      "right": "No entiendo lo que dices.",
-      "why": "For the thing you're saying, use *lo que*, and the verb ending already says you."
+      "wrong": "No me gusta qué dices.",
+      "right": "No me gusta lo que dices.",
+      "why": "You mean the thing you're saying, so *lo que*. *Qué* stays only after words like *no sé*: *No sé qué hacer*."
     }
   ],
   "personal": "Name a place that matters to you and what happened there: *Es la ciudad donde…* Then say what you need this week: *Lo que necesito es…*"

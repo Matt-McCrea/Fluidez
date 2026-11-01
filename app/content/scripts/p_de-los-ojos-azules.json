@@ -143,7 +143,7 @@
   {
    "wrong": "La chica con los ojos azules es mi prima.",
    "right": "La chica de los ojos azules es mi prima.",
-   "why": "Close. To say which girl, Spanish uses *de*, not *con*."
+   "why": "Not wrong, but *de* is the natural way to pick someone out: *la chica de los ojos azules*."
   },
   {
    "wrong": "La chica de los ojos es mi prima.",

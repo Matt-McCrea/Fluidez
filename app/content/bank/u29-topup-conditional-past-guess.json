@@ -796,7 +796,7 @@
   },
   {
     "id": "u29-t-conditional-past-guess-0034",
-    "es": "Simón tendría hambre por eso gritaba.",
+    "es": "Simón tendría hambre, por eso gritaba.",
     "en": "Simón was probably hungry, that's why he was shouting.",
     "accept": [],
     "acceptEn": [],
@@ -1113,8 +1113,8 @@
   },
   {
     "id": "u29-t-conditional-past-guess-0047",
-    "es": "¿Dónde estarías tú a las cinco ayer?",
-    "en": "Where do you think you were at five yesterday? (to a friend)",
+    "es": "¿Dónde estaría Vale ayer a las cinco?",
+    "en": "Where do you think Vale was at five yesterday?",
     "accept": [],
     "acceptEn": [],
     "requires": [

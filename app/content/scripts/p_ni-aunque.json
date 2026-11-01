@@ -13,7 +13,7 @@
     { "es": "Ni aunque me regalaran el carro lo manejaría.", "en": "I wouldn't drive that car even if they gave it to me." },
     { "es": "No me voy ni aunque me echen.", "en": "I'm not leaving, not even if they throw me out." }
   ],
-  "rule": "*Ni aunque* means \"not even if\". You name the best offer and still say no.\n\nTwo moods, as in *si* sentences you already know:\n\nA real possibility: present subjunctive. *No vuelvo ni aunque me paguen.* The refusal is in the present.\n\nAn imaginary one: imperfect subjunctive, then the conditional. *Ni aunque me pagaran el doble volvería.* Here the reply is *volvería*, not *vuelvo*.\n\n*Ni siquiera si* does the same job: *ni siquiera si me pagaran el doble*.\n\nThe *ni* can start the sentence or sit in the middle. Either way it makes the refusal absolute.",
+  "rule": "*Ni aunque* means \"not even if\". You name the best offer and still say no.\n\nTwo cases, real and imaginary, as in *si* sentences you already know:\n\nA real possibility: present subjunctive. *No vuelvo ni aunque me paguen.* The refusal is in the present.\n\nAn imaginary one: imperfect subjunctive, then the conditional. *Ni aunque me pagaran el doble volvería.* Here the reply is *volvería*, not *vuelvo*.\n\n*Ni siquiera si* does the same job: *ni siquiera si me pagaran el doble*.\n\nThe *ni* can start the sentence or sit in the middle. Either way it makes the refusal absolute.",
   "smallPrint": "Teachers call this an emphatic concessive clause: *ni aunque* is a negative *aunque* with a subjunctive.",
   "readAndPick": [
     { "es": "No vuelvo ni aunque me paguen.", "options": ["I'm not going back, not even if they pay me.", "I'm not going back because they pay me.", "I'm not going back unless they pay me."], "answer": 0 },

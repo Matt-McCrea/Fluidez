@@ -35,7 +35,7 @@
       "en": "Vale and Mariana live in the same neighborhood."
     }
   ],
-  "rule": "Spanish likes to point back instead of repeating a name.\n\n*Este*, *esta* point to the last thing you named: 'the latter'. *Aquel*, *aquella* point to the one named before: 'the former'. They match the gender of what they point to, so Mariana is *esta* and Hernando is *este*.\n\n*Dicho*, *dicha* + noun means 'the one I just mentioned': *dicho artículo*, *dicha solicitud*. It replaces *el*, so never say *dicho el artículo*. It sounds formal, like writing.\n\n*El mismo*, *la misma*: the same one. The *el* or *la* stays.\n\n*Lo anterior* points back to a whole idea, not one noun. *Esto* and *eso* work too.\n\nEnglish does this with 'the latter' or just repeats the name. In chat you can repeat the name too. In a written text, these words make it flow.",
+  "rule": "Spanish likes to point back instead of repeating a name.\n\n*Este*, *esta* point to the last thing you named: 'the latter'. *Este último* and *esta última* do the same job and are the safer choice. *Aquel*, *aquella* point to the one named before: 'the former'. They match the gender of what they point to, so Mariana is *esta* and Hernando is *este*.\n\n*Dicho*, *dicha* + noun means 'the one I just mentioned': *dicho artículo*, *dicha solicitud*. It replaces *el*, so never say *dicho el artículo*. It sounds formal, like writing.\n\n*El mismo*, *la misma*: the same one. The *el* or *la* stays.\n\n*Lo anterior* points back to a whole idea, not one noun. *Esto* and *eso* work too.\n\nEnglish does this with 'the latter' or just repeats the name. In chat you can repeat the name too. In a written text, these words make it flow.",
   "smallPrint": "Teachers call this anaphora, a word that refers back to something already said. *Dicho* is used here as a referring adjective.",
   "readAndPick": [
     {
@@ -192,7 +192,7 @@
     {
       "wrong": "Tomás habló con Vale y con Mariana; la última dijo que no tiene tiempo.",
       "right": "Tomás habló con Vale y con Mariana; esta dijo que no tiene tiempo.",
-      "why": "Almost. Spanish does not say 'the last one' for 'the latter'; *esta* does the pointing."
+      "why": "Almost. On its own *la última* can sound loose. Say *esta última*, or just *esta*: both do the pointing."
     }
   ],
   "personal": "Name two people in one sentence, then point back at the second with *este* or *esta*. For example: *Hablé con mi hermano y con mi jefa; esta dijo que sí.*"

@@ -24,7 +24,7 @@
         },
         {
           "type": "regex",
-          "pattern": "\\bforma parte\\b",
+          "pattern": "\\b(forma|hace) parte\\b",
           "flags": "iu",
           "label": "the café is part of: forma parte de"
         }

@@ -31,7 +31,7 @@
       "en": "I don't know; I mean, I'm not sure."
     }
   ],
-  "rule": "These phrases all say: \"here comes the same idea, put another way\". What follows is never a new fact. It is the first fact, made clearer.\n\n*O sea* is the everyday one, for talking: it spells out what you meant.\n*Es decir* is a notch more careful: it makes something exact. It is at home in writing.\n*En otras palabras* puts it in plainer, often blunter terms.\n*Mejor dicho* is the odd one out: it corrects. \"Or rather\", and the new version replaces the old.\n\nPut a comma on each side, or a semicolon before.\n\nUse *o sea* in every sentence and you sound vague. Save it.",
+  "rule": "These phrases all say: \"here comes the same idea, put another way\". What follows is the first idea made clearer, or what it comes down to.\n\n*O sea* is the everyday one, for talking: it spells out what you meant.\n*Es decir* is a notch more careful: it makes something exact. It is at home in writing.\n*En otras palabras* puts it in plainer, often blunter terms.\n*Mejor dicho* is the odd one out: it corrects. \"Or rather\", and the new version replaces the old.\n\nPut a comma on each side, or a semicolon before.\n\nUse *o sea* in every sentence and you sound vague. Save it.",
   "smallPrint": "Teachers call these reformulation markers, or *reformuladores*: they tie a clause back to the one before it.",
   "readAndPick": [
     {
@@ -92,7 +92,7 @@
       "es": "Hernando viene todos los días; o sea, conoce el café mejor que nadie.",
       "options": [
         "Hernando comes every day; for example, he knows the café better than anyone.",
-        "Hernando comes every day; I mean, he knows the café better than anyone.",
+        "Hernando comes every day, so he knows the café better than anyone.",
         "Hernando comes every day, but he doesn't know the café."
       ],
       "answer": 1

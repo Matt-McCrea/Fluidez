@@ -39,7 +39,7 @@
       "en": "Do you need anything? (to a friend)"
     }
   ],
-  "rule": "You know *me gusta*. These four work the same way: the thing or person comes after, the verb agrees with it, and *me*, *te*, *le*, *nos*, *les* say who.\n\n*me parece*: what I think of something. *Me parece caro.* It seems expensive to me. *¿Qué te parece?* What do you think?\n*me queda*: how clothes fit. *Me queda grande.* It's too big for me. *Te queda bien.* It looks good on you.\n*me cae bien* or *mal*: whether you like a person. *Mariana me cae bien.* I like Mariana.\n*me hace falta*: what you need or miss. *Me hace falta dormir.* I need sleep.\n\nSeveral things, plural verb: *Me parecen caros. Te quedan bien. Me caen mal.*\n\n*Me cae bien* is for people. For food and things, stay with *me gusta*.",
+  "rule": "You know *me gusta*. These four work the same way: the thing or person comes after, the verb agrees with it, and *me*, *te*, *le*, *nos*, *les* say who.\n\n*me parece*: what I think of something. *Me parece caro.* It seems expensive to me. *¿Qué te parece?* What do you think?\n*me queda*: how clothes fit. *Me queda grande.* It's too big for me. *Te queda bien.* It looks good on you.\n*me cae bien* or *mal*: whether you like a person. *Mariana me cae bien.* I like Mariana.\n*me hace falta*: what you need or miss. *Me hace falta dormir.* I need sleep.\n\nSeveral things, plural verb: *Me parecen caros. Te quedan bien. Me caen mal.*\n\nFor people, use *me cae bien*: *me gusta* about a person usually means you find them attractive, and *Me gustas* says exactly that. With food, *me cae bien* means it agrees with your stomach: *Esta comida me cae mal*. To say you like food or things, stay with *me gusta*.",
   "smallPrint": "Teachers call these *gustar*-type verbs: the thing is the grammatical subject and the person is the indirect object. Without *me*, *parecer* simply means to seem: *Parece caro.*",
   "readAndPick": [
     {
@@ -148,7 +148,9 @@
       "prompt": "Say: It seems like a good idea to me.",
       "answer": "Me parece una buena idea.",
       "accept": [
-        "Me parece buena idea."
+        "Me parece buena idea.",
+        "Me parece que es una buena idea.",
+        "Me parece que es buena idea."
       ],
       "why": "*Me parece* plus the verdict. No *que* needed."
     },
@@ -193,7 +195,7 @@
     {
       "wrong": "Me cae bien el café.",
       "right": "Me gusta el café.",
-      "why": "*Me cae bien* is for people. For food and things, use *me gusta*."
+      "why": "*Me cae bien el café* says coffee agrees with your stomach. To say you like it, use *me gusta*."
     },
     {
       "wrong": "Me hace falta de dormir.",

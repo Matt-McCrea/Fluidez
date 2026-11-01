@@ -31,7 +31,7 @@
       "en": "He's a Colombian doctor."
     }
   ],
-  "rule": "In English a job needs \"a\": I'm a doctor. In Spanish, after *soy*, *eres*, *es*, *somos* or *son*, the job stands alone: *Soy médico. Es ingeniera. Son estudiantes.* The same goes for nationality: *Soy canadiense.*\n\n*Un* or *una* comes back only when you add something about the person, because then you're describing what kind: *Es un médico colombiano.*\n\nAnd *el* or *la* means \"the\" one you both know: *Soy el mesero* means \"I'm the waiter\", the one serving you, not just my job.\n\nJobs usually change for a woman: *ingeniero*, *ingeniera*; *mesero*, *mesera*. *Estudiante* stays the same.",
+  "rule": "In English a job needs \"a\": I'm a doctor. In Spanish, after *soy*, *eres*, *es*, *somos* or *son*, the job stands alone: *Soy médico. Es ingeniera. Son estudiantes.* The same goes for nationality: *Soy canadiense.*\n\n*Un* or *una* comes back when you add an opinion or a description of the person: *Es un médico muy bueno.* Saying what kind of job keeps it bare: *Soy profesor de español.*\n\nAnd *el* or *la* means \"the\" one you both know: *Soy el mesero* means \"I'm the waiter\", the one serving you, not just my job.\n\nJobs usually change for a woman: *ingeniero*, *ingeniera*; *mesero*, *mesera*. *Estudiante* stays the same.",
   "smallPrint": "Grammar books say a noun after *ser* that classifies someone (job, nationality, religion) goes without an article.",
   "readAndPick": [
     {
@@ -170,9 +170,9 @@
       "why": "No article, and the job changes for a woman."
     },
     {
-      "wrong": "Es médico colombiano.",
-      "right": "Es un médico colombiano.",
-      "why": "With something added about him, *un* comes back."
+      "wrong": "Es médico bueno.",
+      "right": "Es un médico bueno.",
+      "why": "With an opinion about him, *un* comes back."
     }
   ],
   "personal": "What do you do? Write it the Spanish way, with no *un* or *una*: *Soy…*"

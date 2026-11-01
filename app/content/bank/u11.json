@@ -4700,15 +4700,14 @@
   },
   {
     "id": "u11-0205",
-    "es": "La carta se trata de la casa.",
-    "en": "The letter is about the house.",
+    "es": "Se trata de la casa.",
+    "en": "It's about the house.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
       "g:reflexive-routine",
-      "l:carta",
       "l:casa",
       "l:tratarse",
       "p:se-trata-de",

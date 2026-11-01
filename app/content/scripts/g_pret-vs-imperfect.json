@@ -57,7 +57,7 @@
       "prompt": "Ask a friend: Where were you when the power went out?",
       "answer": "¿Dónde estabas cuando se fue la luz?",
       "accept": [],
-      "why": "Where she was is the scene (*estabas*); the power cut is the event (*se fue*)."
+      "why": "Where you were is the scene (*estabas*); the power cut is the event (*se fue*)."
     },
     {
       "prompt": "I opened the door and there was nobody there.",

@@ -31,7 +31,7 @@
    "en": "Vale rarely closes early."
   }
  ],
- "rule": "Normal order puts the subject first: *El barrio ha cambiado mucho.* For effect, move the key word to the front: *Mucho ha cambiado el barrio.*\n\nWhen you do, the subject usually drops behind the verb: *Poco queda del café*, not *Poco el café queda*. Keep the verb right after the front word.\n\nThe meaning stays the same; the feeling is stronger. It works best with words of amount or judgement: *mucho*, *poco*, *difícil*, *raras veces*.\n\nEnglish does this rarely (\"Much has changed\"). Use it in writing, speeches and reviews. In casual talk, normal order is fine.",
+ "rule": "Normal order puts the subject first with most verbs: *El barrio ha cambiado mucho.* With *llegar*, *quedar* and *faltar* it often comes after, when it is the news: *llegó Vale*. For effect, move the key word to the front: *Mucho ha cambiado el barrio.*\n\nWhen you do, the subject usually drops behind the verb: *Poco queda del café*, not *Poco el café queda*. Keep the verb right after the front word.\n\nThe meaning stays the same; the feeling is stronger. It works best with words of amount or judgement: *mucho*, *poco*, *difícil*, *raras veces*.\n\nEnglish does this rarely (\"Much has changed\"). Use it in writing, speeches and reviews. In casual talk, normal order is fine.",
  "smallPrint": "Teachers call this fronting for emphasis (a marked word order): the element placed first becomes the focus.",
  "readAndPick": [
   {
@@ -115,13 +115,13 @@
    "why": "*Mucho* at the front stresses \"a lot\"."
   },
   {
-   "prompt": "Type in Spanish: It's hard to say.",
+   "prompt": "Put the key word first: It's hard to say.",
    "answer": "Difícil es decirlo.",
    "accept": [],
    "why": "The key word *difícil* goes first, then *es*."
   },
   {
-   "prompt": "Type in Spanish: It hardly matters now.",
+   "prompt": "Put the key word first: It hardly matters now.",
    "answer": "Poco importa ya.",
    "accept": [],
    "why": "*Poco* up front already carries the feeling of \"hardly\"."
@@ -133,13 +133,13 @@
    "why": "Move *mucho* to the front, and the subject follows the verb."
   },
   {
-   "prompt": "Type in Spanish: Little is left of the original building.",
+   "prompt": "Put the key word first: Little is left of the original building.",
    "answer": "Poco queda del edificio original.",
    "accept": [],
    "why": "*Poco* leads and the thing left comes after the verb."
   },
   {
-   "prompt": "Type in Spanish: I've learned a lot here.",
+   "prompt": "Put the key word first: I've learned a lot here.",
    "answer": "Mucho he aprendido aquí.",
    "accept": [],
    "why": "Even with *he aprendido*, the front word comes first."

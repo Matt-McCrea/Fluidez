@@ -385,7 +385,7 @@
       },
       {
         "type": "regex",
-        "pattern": "\\baunque\\s+(?:\\w+\\s+){0,3}?(pierda|perdamos|digan|ganemos|gane|cierren|cierre|tengamos|pase|salga|salgamos|decidan|decida|vengan|venga|suban|baje|bajen|sea|sean)\\b",
+        "pattern": "\\baunque\\s+(?:\\w+\\s+){0,3}?(pierda|pierdan|pierdas|perdamos|ganemos|gane|ganen|cierren|cierre|tengamos|tenga|tengan|tengas|pase|pasen|salga|salgan|salgamos|decidan|decida|vengan|venga|vengas|suban|suba|baje|bajen|sea|sean|seas|seamos|digan|diga|digas|podamos|pueda|puedan|puedas|lleguemos|llegue|lleguen|ofrezcan|ofrezca|quieran|quiera|quieras|sepan|sepa|sepas|haya|hayan|hagan|haga|hagas|hagamos|logremos|logre|logren|consigamos|consiga|consigan|cueste|cuesten|demanden|demande|ataquen|ataque|amenacen|amenace)\\b",
         "label": "one aunque with a present subjunctive (a maybe)"
       }
     ],

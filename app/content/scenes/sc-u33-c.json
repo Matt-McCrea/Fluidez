@@ -74,7 +74,7 @@
     },
     {
       "id": "t4",
-      "npc": "Yo vivo en una pieza alquilada, hijo. Pero hablaré con el propietario. ¿Cuánta plata les queda al mes después del arriendo?",
+      "npc": "Yo vivo en una pieza arrendada, hijo. Pero hablaré con el propietario. ¿Cuánta plata les queda al mes después del arriendo?",
       "npcEn": "I live in a rented room, son. But I'll talk to the owner. How much money do you have left each month after the rent?",
       "intent": "Say you only have two hundred thousand pesos left each month.",
       "accept": [
@@ -152,7 +152,6 @@
     "g:that-clauses",
     "g:yo-irregular",
     "l:ahora",
-    "l:alquilar",
     "l:arriendo",
     "l:bien",
     "l:bueno",

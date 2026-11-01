@@ -111,8 +111,10 @@
     {
       "prompt": "Type the whole sentence, choosing *sea* or *es*: No dudo que el plan ___ bueno, pero es caro.",
       "answer": "No dudo que el plan sea bueno, pero es caro.",
-      "accept": [],
-      "why": "After *no dudo que* the verb takes its \"maybe\" form: *sea*."
+      "accept": [
+        "No dudo que el plan es bueno, pero es caro."
+      ],
+      "why": "Both work. *Sea* grants the point for the sake of argument, and *es* says you really are sure. Here you are granting it."
     },
     {
       "prompt": "Type the whole sentence, choosing *tienes* or *tengas*: Puede que ___ razón, pero yo lo veo distinto.",
@@ -165,9 +167,9 @@
       "why": "Almost. *Puede que* is \"maybe\", so the verb takes its \"maybe\" form: *tengas*, not *tienes*."
     },
     {
-      "wrong": "No dudo que el proyecto es bueno, pero es muy caro.",
+      "wrong": "No dudo el proyecto sea bueno, pero es muy caro.",
       "right": "No dudo que el proyecto sea bueno, pero es muy caro.",
-      "why": "Almost. You are granting the point, not swearing to it, so after *no dudo que* use *sea*."
+      "why": "Almost. English can drop *that*, but Spanish keeps *que*."
     }
   ],
   "personal": "Think of something a friend or family member believes that you only half agree with. Say it with *Puede que tengas razón, pero…* and finish the sentence with your own view."

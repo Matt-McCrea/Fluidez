@@ -35,7 +35,7 @@
       "en": "Despite everything, Tomás is staying at the café."
     }
   ],
-  "rule": "You already know *aunque*. These phrases do the same job, with different grammar.\n\n*A pesar de* + a noun: *A pesar de la lluvia, vinieron.*\n*A pesar de que* + a full clause: *A pesar de que llueve, salimos.* Keep the *de*, and keep the *que* before a verb.\n\n*Sin embargo* and *aun así* start a new sentence (or follow a semicolon). They answer what was just said: *Es caro; sin embargo, vale la pena.* *Aun así* adds a feeling of stubbornness: even so, I'm doing it.\n\nNever add *pero* next to any of them. Each one already carries the \"but\".\n\nThe verb after *a pesar de que* is the plain verb you already know, because you are stating a fact.",
+  "rule": "You already know *aunque*. These phrases do the same job, with different grammar.\n\n*A pesar de* + a noun: *A pesar de la lluvia, vinieron.*\n*A pesar de que* + a full clause: *A pesar de que llueve, salimos.* Keep the *de*, and keep the *que* before a conjugated verb. Before an infinitive there is no *que*: *A pesar de estar cansada, Vale terminó los panes.*\n\n*Sin embargo* and *aun así* start a new sentence (or follow a semicolon). They answer what was just said: *Es caro; sin embargo, vale la pena.* *Aun así* adds a feeling of stubbornness: even so, I'm doing it.\n\nDon't add *pero* in front of *sin embargo*, or after a clause that opens with *a pesar de*: the \"but\" is already there. *Pero aun así* is fine: *Estoy cansado, pero aun así voy.*\n\nThe verb after *a pesar de que* is the plain verb you already know, because you are stating a fact.",
   "smallPrint": "Teachers call these concessive connectors. They concede a fact, then carry on against it. *Sin embargo* is a little more formal than *aun así*.",
   "readAndPick": [
     {
@@ -158,9 +158,12 @@
         "Tomás trabaja a pesar de que está cansado.",
         "A pesar de que Tomás está cansado, está trabajando.",
         "A pesar de que está cansado, Tomás trabaja.",
-        "A pesar de que está cansado, Tomás está trabajando."
+        "A pesar de que está cansado, Tomás está trabajando.",
+        "A pesar de estar cansado, Tomás trabaja.",
+        "A pesar de estar cansado, Tomás está trabajando.",
+        "Tomás trabaja a pesar de estar cansado."
       ],
-      "why": "Before a verb, *a pesar de* needs *que*."
+      "why": "Before a conjugated verb, *a pesar de* needs *que*."
     },
     {
       "prompt": "Join the two sentences with *aun así*: *Estudié mucho. No pasé el examen.* (I studied a lot. I didn't pass the exam.)",
@@ -186,7 +189,7 @@
     {
       "wrong": "A pesar de llueve, salimos.",
       "right": "A pesar de que llueve, salimos.",
-      "why": "Almost. Before a verb you need *que*: *a pesar de que* + verb."
+      "why": "Almost. Before a conjugated verb you need *que*: *a pesar de que llueve*. Before an infinitive, no *que*: *a pesar de estar cansado*."
     },
     {
       "wrong": "Es caro, pero sin embargo vale la pena.",

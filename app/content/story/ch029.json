@@ -2,7 +2,7 @@
   "id": "ch029",
   "unit": "u11",
   "title": "Al otro lado",
-  "text": "Vale: ¿Quién es la mujer de las gafas?\nTomás: Es Mariana, la niña de los domingos. Ahora es periodista.\nVale: ¿Y es más simpática que yo?\nSimón: ¡Más simpática! ¡Más simpática!\nTomás: Bueno... es tan simpática como tú.\nVale: Mal, Tomás. Muy mal.\nMariana: Altamira ya tiene trece casas en la cuadra. Pero el café es más importante que las trece casas, porque está en la esquina. Altamira quiere un hotel en toda la cuadra, y sin la esquina, no hay hotel.\nMariana: Vale, esta almojábana es mejor que la de Rosa.\nVale: ¿Mejor? Nadie hace almojábanas como Rosa.\nMariana: Yo comí las almojábanas de Rosa todos los domingos de mi niñez. Esta es mejor.\nVale mira a Mariana un rato y sirve un tinto para ella.\nMariana: Pero el local es arrendado, ¿no? ¿Quién es el dueño?\nTomás: No sé. Está en el contrato, pero el contrato es largo y aburrido, y no lo terminé.\nHernando: Cuarenta y siete años de arriendo, y Rosa nunca dijo el nombre del dueño.\nMariana: Pues Altamira ya está buscando a esa persona.",
+  "text": "Vale: ¿Quién es la mujer de las gafas?\nTomás: Es Mariana, la niña de los domingos. Ahora es periodista.\nVale: ¿Y es más simpática que yo?\nSimón: ¡Más simpática! ¡Más simpática!\nTomás: Bueno... es tan simpática como tú.\nVale: Mal, Tomás. Muy mal.\nMariana: Altamira ya tiene trece casas en la cuadra. Pero el café es más importante que las trece casas, porque está en la esquina. Altamira quiere un hotel en toda la cuadra, y sin la esquina, no hay hotel.\nMariana: Vale, esta almojábana es mejor que la de Rosa.\nVale: ¿Mejor? Nadie hace almojábanas como Rosa.\nMariana: Yo comía las almojábanas de Rosa todos los domingos de mi niñez. Esta es mejor.\nVale mira a Mariana un rato y sirve un tinto para ella.\nMariana: Pero el local es arrendado, ¿no? ¿Quién es el dueño?\nTomás: No sé. Está en el contrato, pero el contrato es largo y aburrido, y no lo terminé.\nHernando: Cuarenta y siete años de arriendo, y Rosa nunca dijo el nombre del dueño.\nMariana: Pues Altamira ya está buscando a esa persona.",
   "gloss": [
     {
       "es": "Mal, Tomás. Muy mal.",
@@ -113,7 +113,6 @@
     }
   ],
   "requires": [
-    "c:comi",
     "c:entonces-bueno",
     "c:hay",
     "c:no-cierto",
@@ -128,10 +127,10 @@
     "g:estar-location-states",
     "g:gender-articles",
     "g:hay-vs-esta",
+    "g:imperfect-habitual",
     "g:prep-pronouns",
     "g:present-er-ir",
     "g:preterite-ar",
-    "g:preterite-er-ir",
     "g:preterite-irregular-strong",
     "g:questions",
     "g:ser-identity",

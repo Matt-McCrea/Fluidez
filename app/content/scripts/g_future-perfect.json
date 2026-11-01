@@ -35,7 +35,7 @@
       "en": "By Friday we'll have finished."
     }
   ],
-  "rule": "You already know how to guess about now: *Estará en casa* (he's probably home). To guess about something that already happened, add a second piece: the future of *haber* plus the *-ado* or *-ido* word.\n\n*habré*, *habrás*, *habrá*, *habremos*, *habrán* + *dormido*, *llegado*, *dejado*\n\n*Se ha dormido* is a fact: he has fallen asleep. *Se habrá dormido* is your guess: he must have fallen asleep. English says \"must have\", \"will have\" or \"can have\". Spanish just changes *ha* to *habrá*.\n\nThe ending word never changes (*habrán llegado*, never *llegados*), and nothing goes between the two pieces: *ya* sits before or after the pair, never inside it.\n\nThe same form also looks ahead to a deadline: *Para el viernes habremos terminado* (by Friday we'll have finished).",
+  "rule": "You already know how to guess about now: *Estará en casa* (he's probably home). To guess about something that already happened, add a second piece: the future of *haber* plus the *-ado* or *-ido* word.\n\n*habré*, *habrás*, *habrá*, *habremos*, *habrán* + *dormido*, *llegado*, *dejado*\n\n*Se ha dormido* is a fact: he has fallen asleep. *Se habrá dormido* is your guess: he must have fallen asleep. English says \"must have\", \"will have\" or \"could have\". Spanish just changes *ha* to *habrá*.\n\nThe ending word never changes (*habrán llegado*, never *llegados*), and nothing goes between the two pieces: *ya* sits before or after the pair, never inside it.\n\nThe same form also looks ahead to a deadline: *Para el viernes habremos terminado* (by Friday we'll have finished).",
   "smallPrint": "Teachers call this the future perfect (*futuro perfecto*): when it guesses about the past, it is the future perfect of probability.",
   "readAndPick": [
     {
@@ -68,7 +68,7 @@
       "es": "Llegarán pronto.",
       "options": [
         "They must have arrived.",
-        "They will probably arrive soon."
+        "They will arrive soon."
       ],
       "answer": 1
     },

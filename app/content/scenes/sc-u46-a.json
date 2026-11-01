@@ -49,7 +49,7 @@
     },
     {
       "id": "t3",
-      "npc": "Uribe: Entiendo. ¿Y usted se lo cree?",
+      "npc": "Uribe: Entiendo. ¿Y usted le cree?",
       "npcEn": "Uribe: I see. And do you believe him?",
       "intent": "Keep your distance: say that, according to him, he turned the offer down, but you can't confirm it.",
       "accept": [
@@ -60,7 +60,7 @@
       "require": [
         {
           "type": "regex",
-          "pattern": "\\b(según (dice|dicen)|asegura|sostiene|afirma|alega)\\b",
+          "pattern": "\\b(según (dice|dicen|él)|asegura|sostiene|afirma|alega)\\b",
           "flags": "iu",
           "label": "distance yourself: según dice, asegura que, sostiene que"
         },

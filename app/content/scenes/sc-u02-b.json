@@ -102,7 +102,10 @@
         }
       ],
       "focus": "g:present-er-ir",
-      "next": "t5"
+      "next": "t5",
+      "type": "regex",
+      "pattern": "\\b(once|11)\\b",
+      "label": "the street: calle once"
     },
     {
       "id": "t5",

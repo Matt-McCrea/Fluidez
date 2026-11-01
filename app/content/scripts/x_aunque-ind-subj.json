@@ -178,7 +178,7 @@
     {
       "wrong": "Aunque lloverá, saldré.",
       "right": "Aunque llueva, saldré.",
-      "why": "Almost. English says even if it will rain, but after *aunque* a possible event takes the present subjunctive, not a future."
+      "why": "Almost. English says even if it rains, with no will in it, and Spanish doesn't use the future here either: a possible event takes the present subjunctive."
     },
     {
       "wrong": "Aunque llueva ahora mismo, salgo.",

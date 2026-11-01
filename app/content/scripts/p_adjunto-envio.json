@@ -32,7 +32,7 @@
     }
   ],
   "rule": "To send a document with a formal message, put *adjunto* (attached) before the verb: *Adjunto les envío…* is \"I attach and send you…\".\n\n*Le* is one person you address as *usted*. *Les* is several people, or a company.\n\nTo point to the document, say *Encontrará adjunto…* (\"You will find… attached\"). Here *adjunto* behaves like an adjective, so it agrees: *adjunto, adjunta, adjuntos, adjuntas*.\n\nIn Colombia a CV is *la hoja de vida*.",
-  "smallPrint": "In *Adjunto les envío*, *adjunto* is a verb form: \"I attach\". After *encontrará* and *va*, it is an adjective, and agrees with what is attached.",
+  "smallPrint": "In *Adjunto les envío*, *adjunto* works like an adverb, so here it does not change: \"attached, I send you\". With no other verb, as in *Les adjunto mi hoja de vida*, it is the verb *adjuntar*: \"I attach\". After *encontrará* and *va*, it is an adjective, and agrees with what is attached.",
   "readAndPick": [
     {
       "es": "Adjunto les envío mi hoja de vida.",

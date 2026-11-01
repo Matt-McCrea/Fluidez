@@ -1049,7 +1049,7 @@
     "constraints": [
       {
         "type": "regex",
-        "pattern": "\\b(haya|hayan|hayas|hayamos) [a-záéíóú]+(ado|ido|to|cho|sto)\\b",
+        "pattern": "\\b(haya|hayan|hayas|hayamos) [a-záéíóú]+(ado|[ií]do|to|cho|sto)\\b",
         "label": "use haya + a past form: espero que haya dormido"
       },
       {

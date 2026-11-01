@@ -31,7 +31,7 @@
       "en": "She said she would do it that week."
     }
   ],
-  "rule": "When you retell a conversation after the fact, everything takes one step back, in time and in place. Spanish does it as faithfully as English.\n\nTenses step back:\n*vengo* → *venía* (I come → was coming)\n*vendré* → *vendría* (I'll come → would come)\n*hablé* → *había hablado* (I spoke → had spoken)\n\nTimes and places move too:\n*mañana* → *al día siguiente*\n*ayer* → *el día anterior*\n*hoy* → *ese día*\n*aquí* → *allí*\n\nQuestions keep their question word but lose the question marks: *Preguntó dónde estaba Simón.* A yes/no question takes *si*: *Preguntó si podía ir.*",
+  "rule": "When you retell a conversation after the fact, most things take one step back, in time and in place, just as in English. Two things can stop that. If what was said still holds right now, the verb can stay: *Dijo que Bogotá es fría*, or *Dijo que viene mañana* if tomorrow has not come yet. And a plain past often stays as it is: *Dijo que ya habló con ellos.*\n\nTenses step back:\n*vengo* → *venía* (I come → was coming)\n*vendré* → *vendría* (I'll come → would come)\n*hablé* → *había hablado* (I spoke → had spoken), or it can stay *hablé* when the order is clear\n\nTimes and places move too:\n*mañana* → *al día siguiente*\n*ayer* → *el día anterior*\n*hoy* → *ese día*\n*aquí* → *allí* or *allá*\n\nWho is speaking shifts too: *\"Tengo tu libro\"* becomes *Dijo que tenía mi libro*.\n\nQuestions keep their question word but lose the question marks: *Preguntó dónde estaba Simón.* A yes/no question takes *si*: *Preguntó si podía ir.*",
   "smallPrint": "Teachers call this *estilo indirecto* (reported speech), and the step back in tenses *concordancia de tiempos* (sequence of tenses).",
   "readAndPick": [
     {
@@ -123,13 +123,15 @@
       "accept": [
         "Vale dijo que venía al día siguiente."
       ],
-      "why": "A promise about the future steps back to *vendría*, and *mañana* becomes *al día siguiente*."
+      "why": "Both work here. *Venía* steps back from *vengo*, and *vendría* steps back from the future idea. For a promise, *vendría* is clearer. *Mañana* becomes *al día siguiente*."
     },
     {
       "prompt": "Hernando said: *\"Ya hablé con ellos.\"* Pick *hablé* or *había hablado* and type the whole sentence: *Hernando dijo que ya ___ con ellos.*",
       "answer": "Hernando dijo que ya había hablado con ellos.",
-      "accept": [],
-      "why": "Something that happened before the moment of speaking steps back to *había hablado*."
+      "accept": [
+        "Hernando dijo que ya habló con ellos."
+      ],
+      "why": "*Había hablado* is the careful choice for something before the moment of speaking. You will also hear *habló*."
     },
     {
       "prompt": "Tell Mariana: Vale asked where Simón was.",
@@ -187,9 +189,9 @@
       "why": "A yes/no question is reported with *si* (whether). *Que* alone turns it into a statement."
     },
     {
-      "wrong": "Vale preguntó dónde está Simón.",
+      "wrong": "Vale preguntó dónde está Simón. (last week, and he turned up long ago)",
       "right": "Vale preguntó dónde estaba Simón.",
-      "why": "English speakers often keep the present, but the question belongs to the past conversation, so it steps back too."
+      "why": "The question belongs to that past conversation, so it steps back. Keep *está* only if Simón is still missing right now."
     }
   ],
   "personal": "Think of something someone told you today. Retell it to a friend with *dijo que…* or *preguntó si…*, and let the time words move too."

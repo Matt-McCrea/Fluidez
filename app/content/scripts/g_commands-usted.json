@@ -35,7 +35,7 @@
    "en": "Come tomorrow. (you all)"
   }
  ],
- "rule": "For someone you call *usted*, the command swaps the vowel.\n*-ar* verbs take *e*: *toma* becomes *tome*, *espera* becomes *espere*.\n*-er* and *-ir* verbs take *a*: *come* becomes *coma*, *escribe* becomes *escriba*.\n\nThe trick for the odd verbs: start from the I form, drop the *o*, add the swapped vowel.\n*tengo*, *tenga*. *salgo*, *salga*. *vengo*, *venga*. *pongo*, *ponga*. *hago*, *haga*. *digo*, *diga*. *sigo*, *siga*.\nOne that breaks the trick: *ir* gives *vaya*.\n\nFor a group, add *n*: *tomen*, *vengan*, *sigan*. In Colombia that's the only plural, friends or strangers.\n\nAs with friends, no \"you\" in front. *Señor* or *señora* at either end makes it warmer.",
+ "rule": "For someone you call *usted*, the command swaps the vowel.\n*-ar* verbs take *e*: *toma* becomes *tome*, *espera* becomes *espere*. Spelling keeps the sound, as in *pagué*: *pague*, *busque*, *cruce*.\n*-er* and *-ir* verbs take *a*: *come* becomes *coma*, *escribe* becomes *escriba*.\n\nThe trick for the odd verbs: start from the I form, drop the *o*, add the swapped vowel.\n*tengo*, *tenga*. *salgo*, *salga*. *vengo*, *venga*. *pongo*, *ponga*. *hago*, *haga*. *digo*, *diga*. *sigo*, *siga*.\nOne that breaks the trick: *ir* gives *vaya*.\n\nFor a group, add *n*: *tomen*, *vengan*, *sigan*. In Colombia that's the only plural, friends or strangers.\n\nAs with friends, no \"you\" in front. *Señor* or *señora* at either end makes it warmer.",
  "smallPrint": "Teachers call this the *usted* and *ustedes* imperative. These forms come from the present subjunctive, which you'll meet properly later.",
  "readAndPick": [
   {

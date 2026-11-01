@@ -3,7 +3,7 @@
   "unit": "u47",
   "title": "El loro más famoso",
   "spare": false,
-  "brief": "You're Tomás. Don Hernando, the retired taxi driver, has just heard the podcast and comes in for his coffee. He's much older than you, so address him as usted (he calls you tú). Talk about how the parrot became famous.",
+  "brief": "You're Tomás. Don Hernando, the retired taxi driver, has just heard the podcast and comes in for his coffee. He's much older than you, so use usted; he uses usted with you too. Talk about how the parrot became famous.",
   "turns": [
     {
       "id": "t1",
@@ -36,7 +36,7 @@
     },
     {
       "id": "t2",
-      "npc": "Hernando: Me gustó muchísimo. Rosa estaría orgullosa de ti.",
+      "npc": "Hernando: Me gustó muchísimo. Rosa estaría orgullosa de usted.",
       "npcEn": "Hernando: I liked it enormously. Rosa would be proud of you.",
       "intent": "Say he doesn't know how happy that makes you (No sabe lo ... que ...).",
       "accept": [

@@ -365,7 +365,7 @@
       },
       {
         "type": "regex",
-        "pattern": "\\bpor la mañana\\b",
+        "pattern": "\\b(por|en) la mañana\\b",
         "label": "say in the morning: por la mañana"
       },
       {
@@ -655,7 +655,7 @@
       {
         "type": "regex",
         "pattern": "\\b(son|es) (tuyos|tuyo|míos|mío|suyos|suyo)",
-        "label": "say whose they are: son míos"
+        "label": "say it's hers: es tuyo"
       },
       {
         "type": "question",

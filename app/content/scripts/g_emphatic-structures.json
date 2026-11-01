@@ -13,7 +13,7 @@
     { "es": "¡Si Vale cocina mejor que todos!", "en": "But Vale cooks better than anyone!" },
     { "es": "¿Que si quiero más café? ¡Pues claro que quiero!", "en": "Do I want more coffee? Of course I do!" }
   ],
-  "rule": "Three small moves.\n\n1. *¡Si…!* at the start of a sentence is not \"if\". It means \"but, come on\", and you use it to protest or defend: *¡Si ya te lo dije!* The verb stays plain.\n2. *¿Que si…?* repeats the question you were asked, as \"Do I…?\", before you answer it with force: *¿Que si me gusta? ¡Me encanta!*\n3. *¡Pues claro que…!* is \"of course\", and the verb follows as usual: *¡Pues claro que voy!* For \"of course not\", put *no* right after *que*.\n\n*¡Qué va!* on its own means \"not at all\". It is always a no.",
+  "rule": "Three small moves.\n\n1. *¡Si…!* at the start of a sentence is not \"if\". It means \"but, come on\", and you use it to protest or defend: *¡Si ya te lo dije!* The verb stays plain.\n2. *¿Que si…?* repeats the question you were asked, as \"Do I…?\", before you answer it with force: *¿Que si me gusta? ¡Me encanta!*\n3. *¡Pues claro que…!* is \"of course\", and the verb follows as usual: *¡Pues claro que voy!* For \"of course not\", put *no* right after *que*.\n\n*¡Qué va!* rejects what was just said. After *¿Estás cansado?* it means \"not at all\". After *¿No te gustó?* it can open a yes: *¡Qué va, me encantó!*",
   "smallPrint": "Teachers call these emphatic structures: the *si* is the emphatic *si*, and *que si* is an echo question.",
   "readAndPick": [
     { "es": "¡Si ya te lo dije!", "options": ["But I already told you!", "If I told you already.", "I will tell you if you ask."], "answer": 0 },
@@ -38,7 +38,7 @@
     { "wrong": "¡Sí ya te lo dije!", "right": "¡Si ya te lo dije!", "why": "Almost. This *si* is not \"yes\", so it has no accent." },
     { "wrong": "¿Si me gusta? ¡Me encanta!", "right": "¿Que si me gusta? ¡Me encanta!", "why": "Almost. To repeat the question you were asked, Spanish needs *que* before *si*." },
     { "wrong": "¡Pues claro que fui!", "right": "¡Pues claro que voy!", "why": "Almost. For \"I'm going\", use the present, *voy*; *fui* means \"I went\"." },
-    { "wrong": "¿Que si me gusta? ¡Qué va, me encanta!", "right": "¿Que si me gusta? ¡Me encanta!", "why": "Almost. *Qué va* always means \"not at all\", so it can't go before a yes." }
+    { "wrong": "¿Que si me gusta? ¡Qué va, me encanta!", "right": "¿Que si me gusta? ¡Me encanta!", "why": "Almost. *Qué va* rejects what was just said, and here you are saying yes to it." }
   ],
   "personal": "Think of something people always ask you, and answer it with force: *¿Que si…?* then *¡Pues claro que…!*"
 }

@@ -35,7 +35,7 @@
       "en": "I need a room that has a window."
     }
   ],
-  "rule": "Ask one question: do I know this thing exists?\n\nYes, I can point at it: the ordinary ending.\n*Tengo un amigo que sabe de leyes.* He exists.\n*Busco el apartamento que tiene balcón.* I know which one.\n\nNo, I'm only describing what I want, or there may be none: the wish ending, the same one you know from *quiero que*.\n*Busco un apartamento que tenga balcón.* Any one that fits.\n*No conozco a nadie que sepa.* Nobody, so no real person to point at.\n\nEnglish uses the same verb both times (that has, who knows). Spanish changes the ending: *tiene* becomes *tenga*, *sabe* becomes *sepa*, *es* becomes *sea*.\n\nThe verb after *que* tells your listener whether the thing is real or only wished for.",
+  "rule": "Ask one question: do I know this thing exists?\n\nYes, I can point at it: the ordinary ending.\n*Tengo un amigo que sabe de leyes.* He exists.\n*Busco el apartamento que tiene balcón.* I know which one.\n\nNo, I'm only describing what I want, or there may be none: the wish ending, the same one you know from *quiero que*.\n*Busco un apartamento que tenga balcón.* Any one that fits.\n*No conozco a nadie que sepa.* Nobody, so no real person to point at.\n\nEnglish uses the same verb both times (that has, who knows). Spanish changes the ending: *tiene* becomes *tenga*, *sabe* becomes *sepa*, *es* becomes *sea*.\n\nThe verb after *que* tells your listener whether you know the thing exists.",
   "smallPrint": "Teachers call this a relative clause with an unspecified or non-existent antecedent: the subjunctive goes in the clause that describes it.",
   "readAndPick": [
     {
@@ -63,7 +63,7 @@
       "answer": 0
     },
     {
-      "es": "Busco a una abogada que sepa de arriendos.",
+      "es": "Busco una abogada que sepa de arriendos.",
       "options": [
         "I'm looking for a particular lawyer: I know she knows about rentals.",
         "I'm looking for any lawyer who knows about rentals, if there is one."
@@ -162,7 +162,7 @@
     {
       "wrong": "Busco un apartamento que tiene dos cuartos.",
       "right": "Busco un apartamento que tenga dos cuartos.",
-      "why": "Almost. You haven't found it yet, so the verb after *que* takes the wish ending: *tenga*."
+      "why": "Almost. If you haven't found it and any one will do, use the wish ending: *tenga*. *Que tiene* would mean you already have one in mind."
     },
     {
       "wrong": "No conozco a nadie que sabe de leyes.",
@@ -177,7 +177,7 @@
     {
       "wrong": "Busco el apartamento que tenga balcón.",
       "right": "Busco el apartamento que tiene balcón.",
-      "why": "Almost. *El apartamento* is one you already know about, so the verb is ordinary: *tiene*."
+      "why": "Almost. If you mean one particular apartment you know, the verb is ordinary: *tiene*."
     }
   ],
   "personal": "Say what you'd look for in a new place to live, real or not: start with *Busco un lugar que…* and finish with something that matters to you, like *tenga* a kitchen or *sea* quiet."

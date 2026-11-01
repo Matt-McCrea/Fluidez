@@ -15,8 +15,8 @@
     { "es": "Tomás está enfermo y tiene fiebre.", "en": "Tomás is ill and he has a fever." },
     { "es": "¿Te pasa algo? Estás muy seria.", "en": "Is something wrong? You're very serious. (to a woman friend)" }
   ],
-  "rule": "You already say *estoy cansado* for how you are right now. Now the same describing word can go with either verb, and the verb changes the message.\n\n*Es* + description: what someone or something is like, the way you'd describe them to a stranger. *Don Hernando es tranquilo.*\n*Está* + description: how they are right now, or how they seem today. *Hoy está nervioso.*\n\nEnglish uses is for both, so you have to ask yourself which one you mean.\n\nA few words change meaning completely:\n*es listo*: clever. *está listo*: ready.\n*es rico*: rich. *está rico*: delicious.\n*es malo*: bad. *está malo*: gone off, or ill.\n\nWith food, *está* is how it tastes today: *la sopa está rica*. With feelings (*cansado*, *triste*, *nervioso*), it's nearly always *está*.",
-  "smallPrint": "Teachers call this the difference between a characteristic (*ser*) and a state (*estar*).",
+  "rule": "You already say *estoy cansado* for how you are right now. Now the same describing word can go with either verb, and the verb changes the message.\n\n*Es* + description: what someone or something is like, the way you'd describe them to a stranger. *Don Hernando es tranquilo.*\n*Está* + description: how they are right now, or how they seem today. *Hoy está nervioso.*\n\nEnglish uses is for both, so you have to ask yourself which one you mean.\n\nA few words change meaning completely:\n*es listo*: clever. *está listo*: ready.\n*es rico*: rich. *está rico*: delicious.\n*es malo*: bad. *está malo*: gone off, or ill.\n*es aburrido*: boring. *está aburrido*: bored.\n\nWith food, *está* is how it tastes today: *la sopa está rica*. With feelings (*cansado*, *triste*, *nervioso*), it's nearly always *está*.",
+  "smallPrint": "Teachers call this the difference between a characteristic (*ser*) and a state (*estar*). A state need not be temporary: *está casada*, *está muerto*. Think portrait or snapshot, not permanent or temporary.",
   "readAndPick": [
     { "es": "Hernando es tranquilo.", "options": ["Hernando is a calm person.", "Hernando is calm right now."], "answer": 0 },
     { "es": "Hernando está tranquilo.", "options": ["Hernando is a calm person.", "Hernando is calm right now."], "answer": 1 },
@@ -39,7 +39,7 @@
     { "prompt": "Make it about Tomás and Vale: Tomás está cansado.", "answer": "Tomás y Vale están cansados.", "accept": [], "why": "Two people: *están*, and the ending goes plural, *cansados*." }
   ],
   "pitfalls": [
-    { "wrong": "Soy cansado.", "right": "Estoy cansado.", "why": "Almost. Tired is how you are right now, so *estoy*. *Soy cansado* sounds like tired is your personality." },
+    { "wrong": "Soy cansado.", "right": "Estoy cansado.", "why": "Almost. Tired is how you are right now, so *estoy*. *Soy cansado* would mean you're a tiring person." },
     { "wrong": "Mariana está inteligente.", "right": "Mariana es inteligente.", "why": "Being clever is what she's like, not a mood she's in today, so *es*." },
     { "wrong": "El pan es listo.", "right": "El pan está listo.", "why": "*Es listo* means clever. Bread is never clever, only ready: *está listo*." },
     { "wrong": "Tomás es enfermo.", "right": "Tomás está enfermo.", "why": "Being ill is a state he's in this week, so *está*." }

@@ -111,14 +111,15 @@
   },
   {
     "id": "u30-t-se-meaning-change-0006",
-    "es": "Tomás se queda en Altamira hasta el viernes.",
-    "en": "Tomás is staying in Altamira until Friday.",
+    "es": "Tomás se queda en casa hasta el viernes.",
+    "en": "Tomás is staying at home until Friday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
       "g:reflexive-routine",
+      "l:casa",
       "l:quedarse",
       "l:viernes",
       "p:days-el-lunes"

@@ -27,7 +27,7 @@
       "en": "Who called?\nNo idea."
     }
   ],
-  "rule": "*No tengo ni idea de* is \"I have no idea\" with a little extra push: *ni* means not even. After *de*, put a question word (*qué*, *dónde*, *quién*, *cuánto*) or a noun.\n\n*No tengo ni idea de qué hacer.*\n\nIt bends like *tener*: *no tienes ni idea*, *no tiene ni idea*, *no teníamos ni idea*.\n\nFor something you did not know was true, use *de que*. In the past, the next verb is usually in the \"-ra\" form: *No tenía ni idea de que estuvieras aquí.* Among friends, a bare *Ni idea* is a complete answer.",
+  "rule": "*No tengo ni idea de* is \"I have no idea\" with a little extra push: *ni* means not even. After *de*, put a question word (*qué*, *dónde*, *quién*, *cuánto*) or a noun.\n\n*No tengo ni idea de qué hacer.*\n\nIt bends like *tener*: *no tienes ni idea*, *no tiene ni idea*, *no teníamos ni idea*.\n\nFor something you did not know was true, use *de que*. In the past, the next verb can be the ordinary past or the \"-ra\" form, and both are natural: *No tenía ni idea de que estabas aquí*, *No tenía ni idea de que estuvieras aquí.* Among friends, a bare *Ni idea* is a complete answer.",
   "smallPrint": "Teachers call *ni idea* an emphatic negative expression of ignorance (*expresión de desconocimiento*).",
   "readAndPick": [
     {
@@ -170,9 +170,9 @@
       "why": "Spanish needs *no* before the verb as well as *ni*: two negatives, one meaning."
     },
     {
-      "wrong": "No tenía ni idea de que estás aquí.",
-      "right": "No tenía ni idea de que estuvieras aquí.",
-      "why": "After *no tenía ni idea de que*, Spanish uses the \"-ra\" form for something you did not expect."
+      "wrong": "No tenía ni idea que estabas aquí.",
+      "right": "No tenía ni idea de que estabas aquí.",
+      "why": "Keep the *de* before *que*."
     }
   ],
   "personal": "Say one thing you honestly have no idea about, with *No tengo ni idea de…*."

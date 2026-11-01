@@ -31,7 +31,7 @@
       "en": "The neighbourhood is very quiet."
     }
   ],
-  "rule": "Four ways to grade an adjective, from fact to complaint:\n*muy caro*: very expensive. Just a fact.\n*demasiado caro*: too expensive. More than you want, so it's always a complaint.\n*no es muy caro*: not very expensive. A soft verdict.\n*no es nada caro*: not expensive at all. Strong.\nEnglish puts *at all* at the end. Spanish puts *nada* right before the adjective and keeps *no* before the verb.\n*Demasiado* and *nada* never change. Only the adjective agrees: *demasiado caras*, *nada preocupada*.",
+  "rule": "Four ways to grade an adjective, from fact to complaint:\n*muy caro*: very expensive. Just a fact.\n*demasiado caro*: too expensive. More than you want, so it's usually a complaint.\n*no es muy caro*: not very expensive. A soft verdict.\n*no es nada caro*: not expensive at all. Strong.\nEnglish puts *at all* at the end. Spanish puts *nada* right before the adjective and keeps *no* before the verb.\n*Demasiado* and *nada* never change. Only the adjective agrees: *demasiado caras*, *nada preocupada*.",
   "smallPrint": "Teachers call *muy*, *demasiado* and *nada* in this spot degree words, or intensifiers. Here *demasiado* works as an adverb, which is why it never takes *-a* or *-s*.",
   "readAndPick": [
     {
@@ -164,7 +164,7 @@
     {
       "wrong": "La camisa es demasiado bonita.",
       "right": "La camisa es muy bonita.",
-      "why": "Careful. *Demasiado* is always a complaint, so this sounds like a problem. For praise, use *muy*."
+      "why": "Careful. *Demasiado* usually means too much, so this can sound like a problem. For praise, *muy* is the safe choice. You'll still hear people use *demasiado* as praise: *está demasiado rico*."
     },
     {
       "wrong": "No es fácil nada.",

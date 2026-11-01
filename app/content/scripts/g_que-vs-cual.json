@@ -35,7 +35,7 @@
       "en": "Which ones do you want, sir?"
     }
   ],
-  "rule": "Three simple cases cover almost everything.\n\nRight before a noun, use *qué*: *¿Qué documentos?*, *¿Qué color?* Here *qué* means both what and which.\n\nBefore *es* or *son*, ask yourself what you want back. A piece of information, like a number, a name, an address or the problem: *¿Cuál es…?* A definition, because you don't know the word: *¿Qué es…?* So *¿Cuál es tu dirección?* asks for the address, and *¿Qué es una dirección?* asks what an address is.\n\nWith a verb and no noun, *qué* is open (*¿Qué quieres?*, anything at all) and *cuál* picks from options you can see (*¿Cuál quieres?*, which one of these).\n\n*Cuál* has a plural, *cuáles*. *Qué* never changes. Both carry an accent in a question.",
+  "rule": "Three simple cases cover almost everything.\n\nRight before a noun, *qué* always works: *¿Qué documentos?*, *¿Qué color?* Here *qué* means both what and which. In Colombia you'll also hear *cuál* before a noun when picking from a few: *¿Cuál camisa?*\n\nBefore *es* or *son*, ask yourself what you want back. A piece of information, like a number, a name, an address or the problem: *¿Cuál es…?* A definition, because you don't know the word: *¿Qué es…?* So *¿Cuál es tu dirección?* asks for the address, and *¿Qué es una dirección?* asks what an address is.\n\nWith a verb and no noun, *qué* is open (*¿Qué quieres?*, anything at all) and *cuál* picks from options you can see (*¿Cuál quieres?*, which one of these).\n\n*Cuál* has a plural, *cuáles*. *Qué* never changes. Both carry an accent in a question.",
   "smallPrint": "Teachers call these interrogative pronouns. The big English trap is *¿Qué es tu nombre?*: Spanish hears it as asking what a name even is.",
   "readAndPick": [
     {
@@ -189,7 +189,7 @@
     {
       "wrong": "¿Cuál documentos necesito?",
       "right": "¿Qué documentos necesito?",
-      "why": "Right before a noun, Spanish uses *qué*, even when English could say which."
+      "why": "*Cuál* can't sit in front of a plural: it would have to be *cuáles*. Before a noun, *qué* is the safe choice: *¿Qué documentos necesito?*"
     },
     {
       "wrong": "¿Cuál prefieres, los rojos o los azules?",

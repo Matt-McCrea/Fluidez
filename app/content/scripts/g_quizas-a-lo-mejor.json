@@ -1,7 +1,7 @@
 {
   "node": "g:quizas-a-lo-mejor",
   "hook": {
-    "line": "Nobody at the café knows what Altamira will do next, so half of every conversation is *maybe*. Spanish has three ways to say it, and one of them is a trap: two take the wish form, one never does.",
+    "line": "Nobody at the café knows what Altamira will do next, so half of every conversation is *maybe*. Spanish has three ways to say it, and one of them is a trap: two can take the wish form, one almost never does.",
     "es": "A lo mejor Vale viene mañana.",
     "en": "Maybe Vale is coming tomorrow."
   },
@@ -167,7 +167,7 @@
     {
       "wrong": "A lo mejor tengas razón.",
       "right": "A lo mejor tienes razón.",
-      "why": "Almost. Same rule: with *a lo mejor* the plain verb is the only choice."
+      "why": "Almost. Same rule: with *a lo mejor*, use the plain verb."
     },
     {
       "wrong": "A lo mejor que Vale viene mañana.",

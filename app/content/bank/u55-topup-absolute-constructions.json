@@ -429,11 +429,12 @@
   },
   {
     "id": "u55-t-absolute-constructions-0019",
-    "es": "¿Qué piensas hacer, aprobado el plan?",
+    "es": "¿Qué piensas hacer una vez aprobado el plan?",
     "en": "What do you plan to do once the plan is approved? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:una-vez",
       "g:gender-articles",
       "g:questions",
       "g:stem-boot",
@@ -442,6 +443,7 @@
       "l:pensar",
       "l:plan",
       "l:qué",
+      "l:vez",
       "p:pensar-en",
       "p:pensar-inf"
     ],
@@ -455,7 +457,7 @@
   },
   {
     "id": "u55-t-absolute-constructions-0020",
-    "es": "¿Adónde vas, terminada la reunión?",
+    "es": "¿Adónde vas una vez terminada la reunión?",
     "en": "Where do you go once the meeting is over? (to a friend)",
     "accept": [],
     "acceptEn": [],
@@ -466,7 +468,9 @@
       "l:adónde",
       "l:ir",
       "l:reunión",
-      "l:terminar"
+      "l:terminar",
+      "l:vez",
+      "p:question-word-order"
     ],
     "targets": [
       "g:absolute-constructions"
@@ -478,11 +482,12 @@
   },
   {
     "id": "u55-t-absolute-constructions-0021",
-    "es": "¿Qué dice la cooperativa, firmados los estatutos?",
+    "es": "¿Qué dice la cooperativa una vez firmados los estatutos?",
     "en": "What does the cooperative say once the statutes are signed?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:una-vez",
       "g:gender-articles",
       "g:questions",
       "g:stem-e-i",
@@ -490,7 +495,8 @@
       "l:decir",
       "l:estatuto",
       "l:firmar",
-      "l:qué"
+      "l:qué",
+      "l:vez"
     ],
     "targets": [
       "g:absolute-constructions"

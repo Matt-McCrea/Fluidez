@@ -13,7 +13,7 @@
       },
       {
         "type": "regex",
-        "pattern": "\\bque\\s+(no\\s+)?\\w+(ara|iera|era)\\b",
+        "pattern": "\\bque\\s+(no\\s+)?((me|te|se|le|les|lo|la|los|las|nos)\\s+)*\\w+(ara|iera|era)(n|s)?\\b",
         "label": "after que, use the past subjunctive (llamara, cerrara)"
       },
       {
@@ -22,7 +22,7 @@
         "label": "at least four sentences"
       }
     ],
-    "model": "Mariana, Don Hernando salió temprano y me dejó una lista larga. Me pidió que le guardara el periódico y que le diera de comer a Simón a las diez. También me dijo que no cerrara la puerta con llave, porque volvía antes del mediodía. Le dije que sí, pero ahora Simón no deja de gritar y yo no sé qué hacer con él. Ven cuando puedas, que te necesito.",
+    "model": "Mariana, don Hernando salió temprano y me dejó una lista larga. Me pidió que le guardara el periódico y que le diera de comer a Simón a las diez. También me dijo que no cerrara la puerta con llave, porque volvía antes del mediodía. Le dije que sí, pero ahora Simón no deja de gritar y yo no sé qué hacer con él. Ven cuando puedas, que te necesito.",
     "focus": "g:reported-commands-past",
     "requires": [
       "c:con-el-ella",

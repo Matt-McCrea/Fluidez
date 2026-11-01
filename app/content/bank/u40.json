@@ -3107,17 +3107,19 @@
   },
   {
     "id": "u40-0115",
-    "es": "Si tuviera mejor humor, me reiría de todo esto.",
+    "es": "Si tuviera mejor sentido del humor, me reiría de todo esto.",
     "en": "If I had a better sense of humor, I would laugh at all this.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:conditional",
+      "g:gender-articles",
       "g:imperfect-subj",
       "g:si-hypothetical",
       "l:humor",
       "l:mejor",
       "l:reír",
+      "l:sentir",
       "l:tener",
       "p:demonstratives-basic",
       "p:me-te-nos-objects"

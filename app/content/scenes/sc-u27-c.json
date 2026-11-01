@@ -18,7 +18,7 @@
       "require": [
         {
           "type": "regex",
-          "pattern": "no fumar",
+          "pattern": "\\b(no|prohibido) fumar\\b",
           "flags": "i",
           "label": "a sign uses the plain verb: No fumar"
         }

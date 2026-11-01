@@ -35,7 +35,7 @@
       "en": "Hernando had better not find out."
     }
   ],
-  "rule": "Three ways to weigh things up.\n\n1. *Cuanto más… (menos)…* means \"the more… the more/less…\". Say *cuanto* + *más* or *menos* in the first half, then *más*, *menos*, *mejor* or *peor* in the second. The verbs stay normal: *Cuanto más practico, mejor hablo.*\n\n2. *Ni que* + a past subjunctive scoffs at an exaggeration: *¡Ni que fueras mi jefe!* It is like \"as if you were…\" and always points at something untrue.\n\n3. *Más vale que* + the present subjunctive gives strong advice: *Más vale que llegues temprano.*\n\nEnglish uses \"the… the…\"; Spanish repeats *más* or *menos* in both halves instead.",
+  "rule": "Three ways to weigh things up.\n\n1. *Cuanto más… (menos)…* means \"the more… the more/less…\". Say *cuanto* + *más* or *menos* in the first half, then *más*, *menos*, *mejor* or *peor* in the second. For habits and facts the verbs stay normal: *Cuanto más practico, mejor hablo.* For something still to come, the first verb takes the subjunctive: *Cuanto más practiques, mejor hablarás.* Before a noun, *cuanto* agrees with it: *cuanta más plata tengo, más gasto*.\n\n2. *Ni que* + a past subjunctive scoffs at an exaggeration: *¡Ni que fueras mi jefe!* It is like \"as if you were…\" and always points at something untrue.\n\n3. *Más vale que* + the present subjunctive gives strong advice: *Más vale que llegues temprano.*\n\nEnglish uses \"the… the…\"; Spanish repeats *más* or *menos* in both halves instead.",
   "smallPrint": "Teachers call the first one a proportional comparison. In the second and third, the verb after *que* is in the subjunctive.",
   "readAndPick": [
     {
@@ -136,7 +136,7 @@
     {
       "prompt": "The more I practise, the better I speak.",
       "answer": "Cuanto más practico, mejor hablo.",
-      "accept": [],
+      "accept": ["Mientras más practico, mejor hablo.", "Entre más practico, mejor hablo."],
       "why": "*Cuanto más…* and then *mejor* in the second half."
     },
     {
@@ -154,7 +154,7 @@
     {
       "prompt": "The more I think about it, the less I understand it.",
       "answer": "Cuanto más lo pienso, menos lo entiendo.",
-      "accept": [],
+      "accept": ["Mientras más lo pienso, menos lo entiendo.", "Entre más lo pienso, menos lo entiendo."],
       "why": "*Más* in the first half, *menos* in the second."
     },
     {

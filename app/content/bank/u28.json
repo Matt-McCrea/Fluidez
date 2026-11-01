@@ -5421,7 +5421,7 @@
   },
   {
     "id": "u28-0215",
-    "es": "Un vecino nos guió hasta la alcaldía.",
+    "es": "Un vecino nos guio hasta la alcaldía.",
     "en": "A neighbour guided us to city hall.",
     "accept": [],
     "acceptEn": [],
@@ -9968,9 +9968,14 @@
   {
     "id": "u28-0407",
     "es": "La inseguridad es el problema más grande del barrio.",
-    "en": "Insecurity is the biggest problem in the neighbourhood.",
-    "accept": [],
-    "acceptEn": [],
+    "en": "The lack of safety is the biggest problem in the neighbourhood.",
+    "accept": [
+      "La falta de seguridad es el problema más grande del barrio."
+    ],
+    "acceptEn": [
+      "Insecurity is the biggest problem in the neighbourhood.",
+      "Crime is the biggest problem in the neighbourhood."
+    ],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
@@ -9992,9 +9997,14 @@
   {
     "id": "u28-0408",
     "es": "La inseguridad nos preocupa a todos.",
-    "en": "Insecurity worries all of us.",
-    "accept": [],
-    "acceptEn": [],
+    "en": "The lack of safety worries all of us.",
+    "accept": [
+      "La falta de seguridad nos preocupa a todos."
+    ],
+    "acceptEn": [
+      "Insecurity worries all of us.",
+      "Crime worries all of us."
+    ],
     "requires": [
       "g:gender-articles",
       "g:gustar-full",
@@ -10013,9 +10023,14 @@
   {
     "id": "u28-0409",
     "es": "Por la inseguridad, cerramos temprano.",
-    "en": "Because of the insecurity, we close early.",
-    "accept": [],
-    "acceptEn": [],
+    "en": "Because of the lack of safety, we close early.",
+    "accept": [
+      "Por la falta de seguridad, cerramos temprano."
+    ],
+    "acceptEn": [
+      "Because of the insecurity, we close early.",
+      "Because of crime, we close early."
+    ],
     "requires": [
       "g:gender-articles",
       "g:por-para-1",
@@ -10036,9 +10051,15 @@
   {
     "id": "u28-0410",
     "es": "Hay inseguridad en esta zona de noche.",
-    "en": "There's insecurity in this area at night.",
-    "accept": [],
-    "acceptEn": [],
+    "en": "There's a lack of safety in this area at night.",
+    "accept": [
+      "Hay falta de seguridad en esta zona de noche."
+    ],
+    "acceptEn": [
+      "There's insecurity in this area at night.",
+      "There's crime in this area at night.",
+      "This area isn't safe at night."
+    ],
     "requires": [
       "c:hay",
       "g:hay-vs-esta",
@@ -10058,9 +10079,14 @@
   {
     "id": "u28-0411",
     "es": "Mucha gente habla de inseguridad.",
-    "en": "A lot of people talk about insecurity.",
-    "accept": [],
-    "acceptEn": [],
+    "en": "A lot of people talk about the lack of safety.",
+    "accept": [
+      "Mucha gente habla de la falta de seguridad."
+    ],
+    "acceptEn": [
+      "A lot of people talk about insecurity.",
+      "A lot of people talk about crime."
+    ],
     "requires": [
       "g:present-ar",
       "l:gente",
@@ -10080,9 +10106,14 @@
   {
     "id": "u28-0412",
     "es": "No creo que la inseguridad sea solo culpa de la policía.",
-    "en": "I don't think insecurity is only the police's fault.",
-    "accept": [],
-    "acceptEn": [],
+    "en": "I don't think the lack of safety is only the police's fault.",
+    "accept": [
+      "No creo que la falta de seguridad sea solo culpa de la policía."
+    ],
+    "acceptEn": [
+      "I don't think insecurity is only the police's fault.",
+      "I don't think crime is only the police's fault."
+    ],
     "requires": [
       "c:creo-que",
       "g:gender-articles",
@@ -24355,9 +24386,14 @@
   {
     "id": "u28-0961",
     "es": "¿Qué piensas de la inseguridad?",
-    "en": "What do you think of the insecurity? (to a friend)",
-    "accept": [],
-    "acceptEn": [],
+    "en": "What do you think of the lack of safety? (to a friend)",
+    "accept": [
+      "¿Qué piensas de la falta de seguridad?"
+    ],
+    "acceptEn": [
+      "What do you think of the insecurity?",
+      "What do you think about crime?"
+    ],
     "requires": [
       "g:gender-articles",
       "g:questions",
@@ -27566,9 +27602,14 @@
   {
     "id": "u28-1079",
     "es": "Diría que la inseguridad es el problema número uno.",
-    "en": "I'd say insecurity is problem number one.",
-    "accept": [],
-    "acceptEn": [],
+    "en": "I'd say the lack of safety is problem number one.",
+    "accept": [
+      "Diría que la falta de seguridad es el problema número uno."
+    ],
+    "acceptEn": [
+      "I'd say insecurity is problem number one.",
+      "I'd say crime is problem number one."
+    ],
     "requires": [
       "g:conditional",
       "g:gender-articles",

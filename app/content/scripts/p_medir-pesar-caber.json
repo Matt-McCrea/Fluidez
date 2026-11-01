@@ -13,7 +13,7 @@
     { "es": "¿Cabemos todos en el carro?", "en": "Do we all fit in the car?" },
     { "es": "Mi hermano pesa más de ochenta kilos.", "en": "My brother weighs more than eighty kilos." }
   ],
-  "rule": "Spanish has no *ser* for size or weight. It uses a verb for each question:\n*medir*: how big or tall (*mide*, *mido*)\n*pesar*: how heavy (*pesa*)\n*caber*: does it fit (*cabe*, *quepo*)\n\nAfter *medir* and *pesar* comes the amount: *mide dos metros*, *pesa veinte kilos*. Add *casi*, *más de* or *menos de* for 'almost', 'more than', 'less than'.\n\n*Caber* needs a place: *en el carro*, *por la puerta*. 'I fit' is *quepo*.",
+  "rule": "Spanish doesn't say *es dos metros*. It uses a verb for each question:\n*medir*: how big or tall (*mide*, *mido*)\n*pesar*: how heavy (*pesa*)\n*caber*: does it fit (*cabe*, *quepo*)\n\nAfter *medir* and *pesar* comes the amount: *mide dos metros*, *pesa veinte kilos*. Add *casi*, *más de* or *menos de* for 'almost', 'more than', 'less than'.\n\n*Caber* needs a place: *en el carro*, *por la puerta*. 'I fit' is *quepo*.",
   "smallPrint": "*Medir* changes its vowel (*mido*, *mides*, *mide*), and *caber* has an odd *yo* form (*quepo*).",
   "readAndPick": [
     { "es": "Mido casi dos metros.", "options": ["I'm almost two metres tall.", "He's almost two metres tall.", "You're almost two metres tall."], "answer": 0 },

@@ -198,7 +198,7 @@
         "label": "ask what time"
       }
     ],
-    "model": "Buenas tardes, Don Hernando: Hoy fui a su casa a las cuatro, pero cuando llegué usted ya había salido. Su vecina me dijo que había ido al parque con sus amigos. Necesito hablar con usted sobre las cartas de Rosa. ¿A qué hora puede recibirme esta semana? Muchas gracias por su tiempo.",
+    "model": "Buenas tardes, don Hernando: Hoy fui a su casa a las cuatro, pero cuando llegué usted ya había salido. Su vecina me dijo que había ido al parque con sus amigos. Necesito hablar con usted sobre las cartas de Rosa. ¿A qué hora puede recibirme esta semana? Muchas gracias por su tiempo.",
     "focus": "x:pluperfect-preterite",
     "requires": [
       "c:a-que-hora",

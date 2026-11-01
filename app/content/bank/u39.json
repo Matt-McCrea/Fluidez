@@ -7361,18 +7361,15 @@
   },
   {
     "id": "u39-0282",
-    "es": "Es raro oír a Simón sin hablar.",
-    "en": "It's unusual to hear Simón not talking.",
+    "es": "Es raro no oír a Simón.",
+    "en": "It's unusual not to hear Simón.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:prep-infinitive",
       "g:ser-identity",
-      "l:hablar",
       "l:oír",
       "l:raro",
-      "l:ser",
-      "p:es-adj-inf"
+      "l:ser"
     ],
     "targets": [],
     "kind": "statement",

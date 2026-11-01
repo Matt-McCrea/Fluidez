@@ -1117,21 +1117,22 @@
   },
   {
     "id": "u44-0044",
-    "es": "Aunque llegue tarde, Rosa siempre guardaba una mesa.",
+    "es": "Aunque alguien llegara tarde, Rosa siempre guardaba una mesa.",
     "en": "Even if someone arrived late, Rosa always kept a table.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-habitual",
+      "g:imperfect-subj",
       "g:subj-concessive",
-      "g:subj-wanting",
       "l:guardar",
       "l:llegar",
       "l:mesa",
       "l:siempre",
       "l:tarde",
       "p:frequency-scale",
+      "p:indefinites-basic",
       "p:llegar-a-tiempo"
     ],
     "targets": [
@@ -1307,7 +1308,7 @@
   },
   {
     "id": "u44-0051",
-    "es": "Por mucho que se queje, Don Hernando vuelve cada mañana.",
+    "es": "Por mucho que se queje, don Hernando vuelve cada mañana.",
     "en": "However much he complains, Don Hernando comes back every morning.",
     "accept": [],
     "acceptEn": [],
@@ -1337,9 +1338,14 @@
   {
     "id": "u44-0052",
     "es": "Aunque sea mi hermano, está equivocado.",
-    "en": "Even if he's my brother, he's wrong.",
-    "accept": [],
-    "acceptEn": [],
+    "en": "He may be my brother, but he's wrong.",
+    "accept": [
+      "Puede que sea mi hermano, pero está equivocado."
+    ],
+    "acceptEn": [
+      "Even if he's my brother, he's wrong.",
+      "Even though he's my brother, he's wrong."
+    ],
     "requires": [
       "g:estar-location-states",
       "g:ser-identity",
@@ -3046,7 +3052,7 @@
   },
   {
     "id": "u44-0119",
-    "es": "Llévate un abrigo en caso de que haga frío en la audiencia.",
+    "es": "Llévate un abrigo por si hace frío en la audiencia.",
     "en": "Take a coat in case it's cold at the hearing. (to a friend)",
     "accept": [],
     "acceptEn": [],
@@ -3054,12 +3060,12 @@
       "g:commands-tu",
       "g:commands-with-pronouns",
       "g:gender-articles",
+      "g:por-para-1",
+      "g:present-er-ir",
       "g:reflexive-routine",
-      "g:subj-conditions",
-      "g:subj-wanting",
+      "g:si-present",
       "l:abrigo",
       "l:audiencia",
-      "l:caso",
       "l:frío",
       "l:hacer",
       "l:llevarse",
@@ -3067,7 +3073,7 @@
       "p:hace-frio"
     ],
     "targets": [
-      "g:subj-conditions",
+      "g:si-present",
       "l:audiencia"
     ],
     "kind": "statement",
@@ -3311,24 +3317,24 @@
   },
   {
     "id": "u44-0129",
-    "es": "Guarda una copia de la carta en caso de que se pierda.",
+    "es": "Guarda una copia de la carta por si se pierde.",
     "en": "Keep a copy of the letter in case it gets lost. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:por-para-1",
       "g:present-ar",
       "g:reflexive-routine",
-      "g:subj-conditions",
-      "g:subj-wanting",
+      "g:si-present",
+      "g:stem-boot",
       "l:carta",
-      "l:caso",
       "l:copia",
       "l:guardar",
       "l:perderse"
     ],
     "targets": [
-      "g:subj-conditions"
+      "g:si-present"
     ],
     "kind": "statement",
     "unit": "u44",
@@ -3415,21 +3421,21 @@
   },
   {
     "id": "u44-0133",
-    "es": "Compra pan en caso de que venga Hernando.",
+    "es": "Compra pan por si viene Hernando.",
     "en": "Buy bread in case Hernando comes. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "g:subj-conditions",
-      "g:subj-wanting",
-      "l:caso",
+      "g:si-present",
+      "g:stem-boot",
       "l:comprar",
       "l:pan",
-      "l:venir"
+      "l:venir",
+      "p:costar-pagar"
     ],
     "targets": [
-      "g:subj-conditions"
+      "g:si-present"
     ],
     "kind": "statement",
     "unit": "u44",
@@ -3492,8 +3498,10 @@
   {
     "id": "u44-0136",
     "es": "Te aviso en caso de que haya novedades.",
-    "en": "I'll let you know in case there's any news.",
-    "accept": [],
+    "en": "I'll let you know if there's any news.",
+    "accept": [
+      "Te aviso si hay novedades."
+    ],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
@@ -3747,23 +3755,22 @@
   },
   {
     "id": "u44-0146",
-    "es": "Lleva el celular en caso de que te necesitemos.",
+    "es": "Lleva el celular por si te necesitamos.",
     "en": "Bring your phone in case we need you. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:por-para-1",
       "g:present-ar",
-      "g:subj-conditions",
-      "g:subj-wanting",
-      "l:caso",
+      "g:si-present",
       "l:celular",
       "l:llevar",
       "l:necesitar",
       "p:me-te-nos-objects"
     ],
     "targets": [
-      "g:subj-conditions"
+      "g:si-present"
     ],
     "kind": "statement",
     "unit": "u44",
@@ -3827,17 +3834,16 @@
   },
   {
     "id": "u44-0149",
-    "es": "Deja la puerta abierta en caso de que llegue alguien.",
+    "es": "Deja la puerta abierta por si llega alguien.",
     "en": "Leave the door open in case someone arrives. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:por-para-1",
       "g:present-ar",
-      "g:subj-conditions",
-      "g:subj-wanting",
+      "g:si-present",
       "l:abrir",
-      "l:caso",
       "l:dejar",
       "l:llegar",
       "l:puerta",
@@ -3845,7 +3851,7 @@
       "p:indefinites-basic"
     ],
     "targets": [
-      "g:subj-conditions"
+      "g:si-present"
     ],
     "kind": "statement",
     "unit": "u44",
@@ -4175,23 +4181,23 @@
   },
   {
     "id": "u44-0162",
-    "es": "Abre la caja en caso de que necesitemos las fotos.",
+    "es": "Abre la caja por si necesitamos las fotos.",
     "en": "Open the box in case we need the photos. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:por-para-1",
+      "g:present-ar",
       "g:present-er-ir",
-      "g:subj-conditions",
-      "g:subj-wanting",
+      "g:si-present",
       "l:abrir",
       "l:caja",
-      "l:caso",
       "l:foto",
       "l:necesitar"
     ],
     "targets": [
-      "g:subj-conditions"
+      "g:si-present"
     ],
     "kind": "statement",
     "unit": "u44",
@@ -4316,24 +4322,24 @@
   },
   {
     "id": "u44-0167",
-    "es": "Llevo los documentos en caso de que los pidan.",
+    "es": "Llevo los documentos por si los piden.",
     "en": "I'm taking the documents in case they ask for them.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
       "g:gender-articles",
+      "g:por-para-1",
       "g:present-ar",
-      "g:subj-conditions",
-      "g:subj-wanting",
-      "l:caso",
+      "g:si-present",
+      "g:stem-e-i",
       "l:documento",
       "l:llevar",
       "l:pedir",
       "p:preguntar-pedir"
     ],
     "targets": [
-      "g:subj-conditions"
+      "g:si-present"
     ],
     "kind": "statement",
     "unit": "u44",
@@ -4469,17 +4475,17 @@
   },
   {
     "id": "u44-0173",
-    "es": "Pedimos otro café en caso de que el primero llegue frío.",
+    "es": "Pedimos otro café por si el primero llega frío.",
     "en": "We order another coffee in case the first one arrives cold.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:por-para-1",
+      "g:present-ar",
       "g:present-er-ir",
-      "g:subj-conditions",
-      "g:subj-wanting",
+      "g:si-present",
       "l:café",
-      "l:caso",
       "l:frío",
       "l:llegar",
       "l:pedir",
@@ -4487,7 +4493,7 @@
       "p:time-sequence-basic"
     ],
     "targets": [
-      "g:subj-conditions"
+      "g:si-present"
     ],
     "kind": "statement",
     "unit": "u44",
@@ -4576,24 +4582,24 @@
   },
   {
     "id": "u44-0177",
-    "es": "Anota el número en caso de que se caiga la llamada.",
+    "es": "Anota el número por si se cae la llamada.",
     "en": "Write down the number in case the call drops. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:por-para-1",
       "g:present-ar",
+      "g:present-er-ir",
       "g:reflexive-routine",
-      "g:subj-conditions",
-      "g:subj-wanting",
+      "g:si-present",
       "l:anotar",
       "l:caerse",
-      "l:caso",
       "l:llamada",
       "l:número"
     ],
     "targets": [
-      "g:subj-conditions"
+      "g:si-present"
     ],
     "kind": "statement",
     "unit": "u44",
@@ -4709,23 +4715,23 @@
   },
   {
     "id": "u44-0182",
-    "es": "Lleva una linterna en caso de que se vaya la luz.",
+    "es": "Lleva una linterna por si se va la luz.",
     "en": "Bring a flashlight in case the power goes out. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:ir-a-plans",
+      "g:por-para-1",
       "g:present-ar",
-      "g:subj-conditions",
-      "g:subj-irregulars",
-      "l:caso",
+      "g:si-present",
       "l:irse",
       "l:linterna",
       "l:llevar",
       "l:luz"
     ],
     "targets": [
-      "g:subj-conditions"
+      "g:si-present"
     ],
     "kind": "statement",
     "unit": "u44",
@@ -7525,7 +7531,7 @@
   },
   {
     "id": "u44-0289",
-    "es": "Si Don Hernando hubiera manejado esa noche, habría salido un desastre.",
+    "es": "Si don Hernando hubiera manejado esa noche, habría salido un desastre.",
     "en": "If Don Hernando had driven that night, it would have been a disaster.",
     "accept": [],
     "acceptEn": [],
@@ -12102,7 +12108,7 @@
   },
   {
     "id": "u44-0458",
-    "es": "Que Don Hernando venga cada mañana es muy bonito.",
+    "es": "Que don Hernando venga cada mañana es muy bonito.",
     "en": "The fact that Don Hernando comes every morning is lovely.",
     "accept": [],
     "acceptEn": [],

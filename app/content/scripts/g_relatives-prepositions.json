@@ -14,7 +14,7 @@
     { "es": "Esta es la calle por la que pasa el bus.", "en": "This is the street the bus goes along." },
     { "es": "El café en el que trabajo es de Rosa.", "en": "The café I work in is Rosa's." }
   ],
-  "rule": "In English the little word can hang at the end: the friends I live *with*. In Spanish it always comes first, in front of the thing you're describing: *los amigos con los que vivo*.\n\nThe pattern is little word + *el / la / los / las* + *que*. The article matches the thing you're describing:\n*la casa en la que vivo*\n*los amigos con los que vivo*\n\nFor people you can use *quien* instead, which doesn't change for gender: *el hombre con quien hablé*, *la persona a quien escribí*.\n\n*A* plus *el* is *al*, *de* plus *el* is *del*: *el lugar al que voy*, *el parque del que te hablé*.\n\nFor a place, *donde* still works.",
+  "rule": "In English the little word can hang at the end: the friends I live *with*. In Spanish it always moves up, in front of *el que* or *quien*: *los amigos con los que vivo*.\n\nThe pattern is little word + *el / la / los / las* + *que*. The article matches the thing you're describing:\n*la casa en la que vivo*\n*los amigos con los que vivo*\n\nFor people you can use *quien* instead, which doesn't change for gender: *el hombre con quien hablé*, *la persona a quien escribí*.\n\n*A* plus *el* is *al*, *de* plus *el* is *del*: *el lugar al que voy*, *el parque del que te hablé*.\n\nFor a place, *donde* still works.",
   "smallPrint": "Teachers call this a relative clause with a preposition. Spanish never leaves the preposition stranded at the end.",
   "readAndPick": [
     { "es": "La casa en la que vivo es vieja.", "options": ["The house I live in is old.", "The houses I live in are old."], "answer": 0 },
@@ -85,7 +85,7 @@
     {
       "wrong": "El hombre con que hablé es el dueño.",
       "right": "El hombre con quien hablé es el dueño.",
-      "why": "After a preposition you need an article or *quien*, not a bare *que*."
+      "why": "With a person, a preposition needs an article or *quien*, not a bare *que*. With things and times, bare *que* is fine after *en*: *el día en que llegó*, *la forma en que habla*."
     }
   ],
   "personal": "Tell me about someone you work or study with, or a place you spend time in. Use *con quien* or *en el que* (or *la que*)."

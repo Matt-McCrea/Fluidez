@@ -6995,22 +6995,22 @@
   },
   {
     "id": "u35-0266",
-    "es": "Antes de operar no se debe comer nada.",
+    "es": "Antes de una operación no se debe comer nada.",
     "en": "Before an operation you shouldn't eat anything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:claro-listo",
       "c:no-se",
       "g:impersonal-obligation",
       "g:negation-words",
-      "g:prep-infinitive",
       "g:present-er-ir",
       "g:se-impersonal",
       "g:tener-que-hay-que",
       "l:antes",
       "l:comer",
       "l:deber",
-      "l:operar"
+      "l:operación"
     ],
     "targets": [
       "g:impersonal-obligation"

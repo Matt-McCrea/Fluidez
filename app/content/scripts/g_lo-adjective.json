@@ -36,7 +36,7 @@
   ],
   "pitfalls": [
     { "wrong": "La buena es que tenemos clientes.", "right": "Lo bueno es que tenemos clientes.", "why": "Almost. For an idea rather than a noun, Spanish uses *lo*, not *la* or *el*." },
-    { "wrong": "Lo buena es la espera.", "right": "Lo bueno es la espera.", "why": "Almost. After *lo* the adjective always stays in its basic masculine form." },
+    { "wrong": "Lo buena es la espera.", "right": "Lo bueno es la espera.", "why": "Almost. In this pattern, the adjective after *lo* stays in its basic masculine form." },
     { "wrong": "Lo malo es no hay parqueadero.", "right": "Lo malo es que no hay parqueadero.", "why": "Almost. A full clause after *es* needs *que*." }
   ],
   "personal": "Think about your last week. Say one thing that was good, using *Lo bueno es que* or *Lo mejor fue*."

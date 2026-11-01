@@ -35,7 +35,7 @@
       "en": "Tomás leaves before the lawyer arrives."
     }
   ],
-  "rule": "Three small phrases link what one person does to what another person does:\n*para que* so that\n*sin que* without\n*antes de que* before\n\nThe second action belongs to someone else, so its verb takes the wish form: *veas*, *note*, *salgas*, *llegue*. You met it with *cuando*. Look at the endings: *-ar* verbs switch to *-e*, the others to *-a*.\n\nWhen the same person does both things, drop *que* and use the plain verb: *Abro temprano para encontrar todo listo.* *Llámame antes de salir.*",
+  "rule": "Three small phrases link what one person does to what another person does:\n*para que* so that\n*sin que* without\n*antes de que* before\n\nThe second action belongs to someone else, so you need *que*. And it isn't a fact: it hasn't happened yet, or it doesn't happen at all. So its verb takes the wish form: *veas*, *note*, *salgas*, *llegue*. You met it with *cuando*. Look at the endings: *-ar* verbs switch to *-e*, the others to *-a*.\n\nWhen the same person does both things, drop *que* and use the infinitive: *Abro temprano para encontrar todo listo.* *Llámame antes de salir.*",
   "smallPrint": "Teachers call this the subjunctive after purpose and time conjunctions. It is the same wish form, now used for plans that involve someone else.",
   "readAndPick": [
     {
@@ -137,9 +137,11 @@
       "prompt": "Type in Spanish, to a friend: Call me before you leave.",
       "answer": "Llámame antes de que salgas.",
       "accept": [
-        "Llámame antes de que te vayas."
+        "Llámame antes de que te vayas.",
+        "Llámame antes que salgas.",
+        "Llámame antes que te vayas."
       ],
-      "why": "*Antes de que* needs the *de*, then the wish form *salgas*."
+      "why": "*Antes de que* is followed by the wish form: *salgas*."
     },
     {
       "prompt": "Type in Spanish: I open early so that Vale finds everything ready.",
@@ -163,7 +165,7 @@
       "accept": [
         "Yo abro temprano para encontrar todo listo."
       ],
-      "why": "When the same person does both things, *que* disappears and the verb stays plain."
+      "why": "When the same person does both things, *que* disappears and you use the infinitive."
     },
     {
       "prompt": "Type in Spanish: Nobody signs anything without Tomás reading it.",
@@ -181,9 +183,9 @@
       "why": "Almost. After *para que* the verb takes its wish form: *veas*, not *ves*."
     },
     {
-      "wrong": "Llámame antes que salgas.",
+      "wrong": "Llámame antes de salgas.",
       "right": "Llámame antes de que salgas.",
-      "why": "Almost. The phrase is *antes de que*, with the *de*."
+      "why": "Almost. When someone else does the second action, *antes de* needs *que*."
     },
     {
       "wrong": "Hernando entra sin nadie lo note.",
@@ -193,7 +195,7 @@
     {
       "wrong": "Abro temprano para que yo encuentre todo listo.",
       "right": "Abro temprano para encontrar todo listo.",
-      "why": "Almost. If you do both things yourself, skip *que* and use the plain verb."
+      "why": "Almost. If you do both things yourself, skip *que* and use the infinitive."
     }
   ],
   "personal": "Say one thing you do so that someone else can do something, or without someone noticing, using *para que* or *sin que*."

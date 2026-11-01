@@ -31,7 +31,7 @@
       "en": "I'm Tomás Herrera. (the rr is rolled, the last r is one quick tap)"
     }
   ],
-  "rule": "Five vowels, one sound each, every time: *a* as in \"father\", *e* as in \"bed\", *i* as in \"machine\", *o* as in \"or\", *u* as in \"rule\".\n\nThe surprises: *h* is silent. *j*, and *g* before *e* or *i*, are a breathy h. *ll* and *y* sound like the y in \"yes\". *ñ* is the ny in \"canyon\". *b* and *v* sound the same. *z*, and *c* before *e* or *i*, are a plain s in Latin America. One *r* is a quick tap; *rr*, or an *r* that starts a word, is rolled. In *que*, *qui*, *gue* and *gui* the *u* is silent.\n\nStress: a word ending in a vowel, *n* or *s* stresses the second-to-last syllable (*co-lom-BIA-no*). Any other ending stresses the last one (*us-TED*). A written mark overrides both: *Bogotá*, *Tomás*. The mark is part of the spelling, and the app will check it.",
+  "rule": "Five vowels, one sound each, every time: *a* as in \"father\", *e* as in \"bed\", *i* as in \"machine\", *o* as in \"or\", *u* as in \"rule\".\n\nThe surprises: *h* is silent. *j*, and *g* before *e* or *i*, are a breathy h. *ll* and *y* sound like the y in \"yes\", but *y* alone or at the end of a word is a vowel: *y* (and) is \"ee\", and *soy* rhymes with \"boy\". *ñ* is the ny in \"canyon\". *b* and *v* sound the same. *z*, and *c* before *e* or *i*, are a plain s in Latin America. One *r* is a quick tap; *rr*, or an *r* that starts a word, is rolled. In *que*, *qui*, *gue* and *gui* the *u* is silent.\n\nStress: a word ending in a vowel, *n* or *s* stresses the second-to-last syllable (*co-lom-BIA-no*). Any other ending stresses the last one (*us-TED*). A written mark overrides both: *Bogotá*, *Tomás*. The mark is part of the spelling, and the app will check it.",
   "smallPrint": "The written mark is called a tilde (*la tilde*). It also tells apart pairs like *tú* (you) and *tu* (your), *sí* (yes) and *si* (if).",
   "soundTip": "Spanish vowels never glide. English \"no\" ends in a little \"w\"; Spanish *no* is clipped short: \"noh\", not \"noh-oo\". Same with the e in *me*: \"meh\", never \"may\".",
   "readAndPick": [
@@ -199,7 +199,7 @@
     {
       "wrong": "Soy de Bogota.",
       "right": "Soy de Bogotá.",
-      "why": "Without the mark, a Spanish reader says BO-go-ta. The mark is part of the spelling, and the checker reads it like a Bogotano would."
+      "why": "Without the mark, a Spanish reader says bo-GO-ta, stress on the second-to-last syllable. The mark is part of the spelling, and the checker reads it like a Bogotano would."
     },
     {
       "wrong": "Me yamo Tomás.",

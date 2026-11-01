@@ -36,7 +36,7 @@
     }
   ],
   "rule": "English reports an order with an infinitive: \"told me *to go*\". Spanish uses *que* and a full verb, in the past form you already know: *me dijo que fuera*.\n\nThe pieces: who spoke + *dijo / pidió* (or *dije / pedí*) with *me, te, le, nos, les* + *que* + the *-ra* verb for the person who must act: *que llegara* (I), *que esperaran* (they), *que firmáramos* (we).\n\nCompare a plain fact: *Me dijo que venía*, he said he was coming. *Me dijo que viniera*, he told me to come.",
-  "smallPrint": "Teachers call this reported (indirect) commands: the order moves into the past, so the past subjunctive follows *dijo* or *pidió*.",
+  "smallPrint": "Teachers call this reported (indirect) commands: the order moves into the past, so the past subjunctive follows *dijo* or *pidió*. If the order still stands, you will also hear the present: *Me dijo que la llame mañana.*",
   "readAndPick": [
     {
       "es": "Me dijo que fuera a la reunión.",

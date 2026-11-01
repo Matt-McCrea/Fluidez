@@ -14,7 +14,7 @@
     { "es": "Trabajo ocho horas por día.", "en": "I work eight hours a day." },
     { "es": "Mando la receta por correo.", "en": "I send the prescription by mail." }
   ],
-  "rule": "You already know *para* as a goal or a deadline, and *por* as a reason, a route or a price. Here are the next uses.\n\n*por* is also:\n*how often*: *tres veces por día*, *una vez por semana*\n*the way you do it*: *por teléfono*, *por correo*\n*a swap*: *lo cambié por otro*, trading one thing for another\n\n*para* is also:\n*in my view*: *Para mí, es grave*\n*measured against what you'd expect*: *Para ser lunes, hay mucha gente*\n\nSo ask yourself: is it a rate, a means or an exchange? *por*. Is it an opinion, or a comparison with a standard? *para*.",
+  "rule": "You already know *para* as a goal or a deadline, and *por* as a reason, a route or a price. Here are the next uses.\n\n*por* is also:\n*how often*: *tres veces por día*, *una vez por semana*\n*the way you do it*: *por teléfono*, *por correo*\n*a swap*: *lo cambié por otro*, trading one thing for another\n*how long*, where English says for: *trabajé ahí por dos años*. Often Spanish needs no word at all: *estudié dos horas*. Not *para*.\n\n*para* is also:\n*in my view*: *Para mí, es grave*\n*measured against what you'd expect*: *Para ser lunes, hay mucha gente*\n\nSo ask yourself: is it a rate, a means or an exchange? *por*. Is it an opinion, or a comparison with a standard? *para*.",
   "smallPrint": "Teachers call this *para* the opinion or comparison use, and *por* here the frequency, means and exchange uses.",
   "readAndPick": [
     { "es": "Para mí, es grave.", "options": ["In my opinion, it's serious.", "Because of me, it's serious.", "It's serious, so I can pay."], "answer": 0 },
@@ -37,7 +37,7 @@
     { "prompt": "Make it a question for a friend: *Para mí, es importante.* Ask whether it's important to him.", "answer": "¿Y para ti, es importante?", "accept": ["¿Para ti es importante?", "¿Para ti, es importante?", "¿Y para ti es importante?"], "why": "*Para mí* becomes *para ti* when you ask your friend." }
   ],
   "pitfalls": [
-    { "wrong": "Lo tomas tres veces para día.", "right": "Lo tomas tres veces por día.", "why": "Almost. A rate such as \"three times a day\" is always *por*." },
+    { "wrong": "Lo tomas tres veces para día.", "right": "Lo tomas tres veces por día.", "why": "Almost. A rate never takes *para*. Use *por* or *al*: *tres veces por día*, *tres veces al día*." },
     { "wrong": "Por mí, es grave.", "right": "Para mí, es grave.", "why": "*Por mí* means \"for my sake\" or \"I don't mind\"; to give your opinion of something, say *para mí*." },
     { "wrong": "Lo cambié para otro.", "right": "Lo cambié por otro.", "why": "When you swap one thing for another, English says *for* but Spanish says *por*." },
     { "wrong": "Hablamos para teléfono.", "right": "Hablamos por teléfono.", "why": "The way you do something (phone, mail) is *por*." }

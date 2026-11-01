@@ -13,7 +13,7 @@
     { "es": "Me lavo el pelo con champú.", "en": "I wash my hair with shampoo." },
     { "es": "Me pruebo la chaqueta.", "en": "I try the jacket on." }
   ],
-  "rule": "English says whose hands: I wash *my* hands. Spanish has already said it with *me*, so the body part just takes *el*, *la*, *los* or *las*:\n\n*Me lavo las manos.* I wash my hands.\n*Se lava la cara.* She washes her face.\n\nClothes you put on work the same way: *Me pruebo la chaqueta*, I try my jacket on.\n\nAnd a small surprise: Spanish speakers wash their teeth. *Me lavo los dientes* is the everyday way to say I brush my teeth.",
+  "rule": "English says whose hands: I wash *my* hands. Spanish has already said it with *me*, so the body part just takes *el*, *la*, *los* or *las*:\n\n*Me lavo las manos.* I wash my hands.\n*Se lava la cara.* She washes her face.\n\nClothes you put on work the same way: *Me pruebo la chaqueta*, I try the jacket on.\n\nAnd a small surprise: Spanish speakers wash their teeth. *Me lavo los dientes* is the everyday way to say I brush my teeth.",
   "smallPrint": "The pattern is reflexive verb + *el*, *la*, *los*, *las* + body part or clothing. The pronoun marks the owner, so a possessive like *mis* is left out.",
   "readAndPick": [
     { "es": "Te lavas el pelo.", "options": ["I wash my hair.", "You wash your hair. (to a friend)", "He washes his hair."], "answer": 1 },

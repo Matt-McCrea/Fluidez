@@ -1,7 +1,7 @@
 {
   "node": "g:concessive-advanced",
   "hook": {
-    "line": "Tomás keeps getting offers from Altamira, and he keeps saying no. To argue well, in writing or out loud, you need ways to say \"even so\" and \"however much\" that sound like a writer, not like a teenager saying *aunque*.",
+    "line": "Tomás keeps getting offers from Altamira, and he keeps saying no. To argue well, in writing or out loud, you need ways to say \"even so\" and \"however much\" that go further than *aunque* alone.",
     "es": "Por mucho que Altamira ofrezca, Tomás no quiere vender.",
     "en": "However much Altamira offers, Tomás doesn't want to sell."
   },
@@ -13,8 +13,8 @@
     { "es": "Si bien Vale cocina muy bien, el café pierde dinero.", "en": "Although Vale cooks very well, the café is losing money." },
     { "es": "Por mucho que Altamira ofrezca, Tomás no quiere vender.", "en": "However much Altamira offers, Tomás doesn't want to sell." }
   ],
-  "rule": "You already know *aunque*. Writers have sharper tools.\n\n*Si bien* + plain verb: \"although\", for something you accept as true. *Si bien el plan es ambicioso, es viable.* No *pero* afterwards.\n\n*Aun cuando* + wish-form verb: \"even if\". *Aun cuando llueva, saldremos.* With a plain verb it means \"even though\".\n\n*Por mucho que* + wish-form verb: \"however much\". *Por mucho que insistas…*\n\n*Por muy* + adjective + *que* + wish-form verb: \"however…\". *Por muy rico que sea…*\n\nRemember: *mucho* goes with a verb, *muy* with an adjective.",
-  "smallPrint": "Teachers call these concessive connectors. *Por mucho que* and *por muy… que* take the subjunctive: the speaker grants any degree and the result stays the same.",
+  "rule": "You already know *aunque*. Writers have sharper tools.\n\n*Si bien* + plain verb: \"although\", for something you accept as true. *Si bien el plan es ambicioso, es viable.* No *pero* afterwards.\n\n*Aun cuando* + wish-form verb: \"even if\". *Aun cuando llueva, saldremos.* With a plain verb it means \"even though\".\n\n*Por mucho que* + wish-form verb: \"however much\". *Por mucho que insistas…*\n\n*Por muy* + adjective + *que* + wish-form verb: \"however…\". *Por muy rico que sea…*\n\nRemember: *mucho* goes with a verb, *muy* with an adjective or adverb. Before a noun, *mucho* agrees with it: *por mucha plata que tenga*.",
+  "smallPrint": "Teachers call these concessive connectors. *Por mucho que* and *por muy… que* usually take the subjunctive: the speaker grants any degree and the result stays the same. For a real past event the plain verb is normal too: *Por mucho que insistí, no me hizo caso.*",
   "readAndPick": [
     { "es": "Si bien el plan es ambicioso, es viable.", "options": ["If the plan is ambitious, it will be feasible.", "Although the plan is ambitious, it is feasible.", "Because the plan is ambitious, it is feasible."], "answer": 1 },
     { "es": "Por mucho que insistas, no voy a ir.", "options": ["If you insist, I'm going.", "Because you insist, I'm not going.", "However much you insist, I'm not going."], "answer": 2 },

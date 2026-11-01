@@ -86,7 +86,7 @@
       "require": [
         {
           "type": "regex",
-          "pattern": "\\bme alegro\\b",
+          "pattern": "\\bme alegr[oa]\\b",
           "flags": "i",
           "label": "I'm glad: me alegro"
         }

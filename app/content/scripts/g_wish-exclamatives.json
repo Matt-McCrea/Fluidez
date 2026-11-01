@@ -35,7 +35,7 @@
       "en": "I wish I'd been there!"
     }
   ],
-  "rule": "Spanish can drop the \"I wish\" and just exclaim the wish itself.\n\nFor the past, which can no longer change, use *hubiera* + the past participle after *si*, *ojalá* or *quién*: *¡Si lo hubiera sabido!*, *¡Quién hubiera estado ahí!*\n\nFor something you want now, use the plain wish form: *¡Si al menos llamara!* Adding *al menos* gives the sense \"at least\".\n\n*¡Quién lo hubiera dicho!* is a fixed way to say \"who would have thought it\", and it is about surprise, not regret.\n\nNo sentence follows. These exclamations stand alone, and the feeling carries the rest.",
+  "rule": "Spanish can drop the \"I wish\" and just exclaim the wish itself.\n\nFor the past, which can no longer change, use *hubiera* + the past participle after *si*, *ojalá* or *quién*: *¡Si lo hubiera sabido!*, *¡Quién hubiera estado ahí!*\n\nFor something you want now, use the *-ra* form: *¡Si al menos llamara!* Adding *al menos* gives the sense \"at least\".\n\n*¡Quién lo hubiera dicho!* is a fixed way to say \"who would have thought it\", and it is about surprise, not regret.\n\nNo sentence follows. These exclamations stand alone, and the feeling carries the rest.",
   "smallPrint": "Teachers call these exclamative wishes: the pluperfect subjunctive (*hubiera* + participle) for unreal past, the imperfect subjunctive (*llamara*) for unreal present.",
   "readAndPick": [
     {
@@ -122,7 +122,7 @@
       "prompt": "Pick and type the whole sentence: *¡Si al menos ___!* (*llamara* or *hubiera llamado*) Right now you want him to call: If only he'd call!",
       "answer": "¡Si al menos llamara!",
       "accept": [],
-      "why": "The wish is about now, so you need the plain wish form: *llamara*."
+      "why": "The wish is about now, so you need the *-ra* form: *llamara*."
     },
     {
       "prompt": "Say: Who would have thought it!",

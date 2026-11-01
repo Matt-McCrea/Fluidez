@@ -113,7 +113,7 @@
         },
         {
           "type": "regex",
-          "pattern": "\\bdespués de cenar\\b",
+          "pattern": "\\bdespués de (cenar|comer)\\b",
           "flags": "i",
           "label": "after dinner: después de cenar"
         }

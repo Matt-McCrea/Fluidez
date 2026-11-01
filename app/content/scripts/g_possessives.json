@@ -19,8 +19,8 @@
       "en": "Our tables are old."
     },
     {
-      "es": "Mis hermanas son morenas.",
-      "en": "My sisters have dark hair."
+      "es": "Mis hermanas son altas.",
+      "en": "My sisters are tall."
     },
     {
       "es": "Vale y su hermana hablan por teléfono.",
@@ -144,12 +144,10 @@
       "why": "One café, masculine: *nuestro*."
     },
     {
-      "prompt": "My sisters have dark hair.",
-      "answer": "Mis hermanas son morenas.",
-      "accept": [
-        "Mis hermanas tienen el pelo negro."
-      ],
-      "why": "More than one sister, so *mis*, and *morenas* matches them."
+      "prompt": "My sisters are tall.",
+      "answer": "Mis hermanas son altas.",
+      "accept": [],
+      "why": "More than one sister, so *mis*, and *altas* matches them."
     },
     {
       "prompt": "Ask Don Hernando, politely: Is this your coffee?",

@@ -15,7 +15,7 @@
     { "es": "¿Y don Hernando? Se lo voy a decir mañana.", "en": "And don Hernando? I'm going to tell him tomorrow." }
   ],
   "rule": "On its own, to him or to her is *le*, and to them is *les*: *le di la plata*. But put *le* or *les* right in front of *lo*, *la*, *los* or *las*, and Spanish swaps it for *se*: *se la di*. Never *le la*, never *le lo*. It's only a sound thing; the meaning doesn't change.\n\nSo this *se* covers a lot: to him, to her, to you (*usted*), to them, to you all. Usually the conversation makes it clear. When it doesn't, add who at the end: *se lo di a ella*, *se lo doy a usted*.\n\nOnly *le* and *les* change. *Me lo*, *te lo* and *nos lo* stay as they are.\n\nThe pair still moves together: *se lo voy a decir* or *voy a decírselo*.",
-  "smallPrint": "Teachers sometimes call this the false *se* (*se espurio*): it's just *le* or *les* in disguise, nothing to do with the *se* in *se llama*.",
+  "smallPrint": "Teachers sometimes call this the false *se* (*se espurio*): it's just *le* or *les* in disguise, nothing to do with the *se* in *se llama*. In Latin America you'll also hear *se los dije* for I told them: the plural slips onto *lo*. Understand it, but say *se lo dije*.",
   "readAndPick": [
     { "es": "Le di la plata.", "options": ["I gave him the money.", "I gave it to him."], "answer": 0 },
     { "es": "Se la di.", "options": ["I gave him the money.", "I gave it to him.", "He gave it to me."], "answer": 1 },

@@ -31,7 +31,7 @@
       "en": "It's more expensive than I thought."
     }
   ],
-  "rule": "Ask what comes after \"than\".\n\nA person, thing or number: *más que*.\n*Gana más que yo.* *Es más caro que el otro.*\n\nA verb with its own subject (a whole thought): *más de lo que*.\n*Gana más de lo que dice.* *Es más caro de lo que pensaba.*\n\nA quick test: can you add a verb in English? \"Than me\" is just a person, so *que yo*. \"Than he says\" has a verb, so *de lo que*.\n\nSame with *menos*.",
+  "rule": "Ask what comes after \"than\".\n\nA person or a thing: *más que*. (Before a number it's *más de*, as in *más de cien mil pesos*.)\n*Gana más que yo.* *Es más caro que el otro.*\n\nA verb with its own subject (a whole thought): *más de lo que*.\n*Gana más de lo que dice.* *Es más caro de lo que pensaba.*\n\nA quick test: can you add a verb in English? \"Than me\" is just a person, so *que yo*. \"Than he says\" has a verb, so *de lo que*.\n\nSame with *menos*.",
   "smallPrint": "Teachers call the first a comparison of nouns and the second a comparison with a clause.",
   "readAndPick": [
     {

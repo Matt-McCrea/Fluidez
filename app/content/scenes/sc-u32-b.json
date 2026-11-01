@@ -67,7 +67,7 @@
       "id": "t4",
       "npc": "Tengo un problema. El proveedor no trae el queso hasta el lunes, y la prueba es mañana.",
       "npcEn": "I have a problem. The supplier doesn't bring the cheese until Monday, and the test is tomorrow.",
-      "intent": "Suggest that she call another supplier today.",
+      "intent": "Suggest that she call another supplier today (use: te propongo que).",
       "accept": [
         "Te propongo que llames a otro proveedor hoy.",
         "Entonces te propongo que llames al proveedor de la plaza.",

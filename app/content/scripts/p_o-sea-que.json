@@ -31,7 +31,7 @@
       "en": "So you knew nothing? (to a stranger, formal)"
     }
   ],
-  "rule": "*O sea que* + a full sentence says: \"so what you mean is...\". You pull the conclusion out of what the other person said and put it on the table. With a question mark, or a closing *¿no?*, it asks them to confirm. Without one, it can sound pointed.\n\n*Mejor dicho* is a different job. It corrects yourself: the new words replace the old. *Es tímido; mejor dicho, es reservado.*\n\nBoth start a clause, with a comma after *mejor dicho*. Note the *que* in *o sea que*: no *que*, no conclusion.",
+  "rule": "*O sea que* + a full sentence says: \"so what you mean is...\". You pull the conclusion out of what the other person said and put it on the table. With a question mark, or a closing *¿no?*, it asks them to confirm. Without one, it can sound pointed.\n\n*Mejor dicho* is a different job. It corrects yourself: the new words replace the old. *Es tímido; mejor dicho, es reservado.*\n\nBoth start a clause, with a comma after *mejor dicho*. Note the *que*: it joins *o sea* to the sentence. Without it, use a comma: *o sea, Tomás se queda*.",
   "smallPrint": "Teachers call *o sea que* a consecutive reformulator, because it draws a consequence, and *mejor dicho* a rectifying one.",
   "readAndPick": [
     {
@@ -165,7 +165,7 @@
     {
       "wrong": "O sea Tomás se queda.",
       "right": "O sea que Tomás se queda.",
-      "why": "Almost. To draw a conclusion with a full sentence, *o sea* needs its *que*."
+      "why": "Almost. Join it with *que*, or put a comma after *o sea*."
     },
     {
       "wrong": "No es tímido; o sea que es reservado.",

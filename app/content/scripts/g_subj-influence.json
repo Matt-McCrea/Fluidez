@@ -31,7 +31,7 @@
       "en": "What do you recommend that I order? (to a friend)"
     }
   ],
-  "rule": "To tell someone what you advise or ask of them, use three pieces:\n\n*Te recomiendo* + *que* + a new verb form.\n\nThe person you are advising comes first (*te*, *le*, *les*, *me*). Then the advice verb: *recomiendo*, *pido*, *aconsejo*, *sugiero*. Then *que*. The verb after *que* is for the other person's action, and it changes its ending to the \"asking\" form.\n\nFor *-ar* verbs the ending switches to *-e*: *hablas* becomes *hables*. For *-er* and *-ir* verbs it switches to *-a*: *comes* becomes *comas*, *escribes* becomes *escribas*.\n\nEnglish says \"I recommend that you talk\" or just \"I'd talk to...\". Spanish always keeps *que* and the changed ending.",
+  "rule": "To tell someone what you advise or ask of them, use three pieces:\n\n*Te recomiendo* + *que* + the wish form you already know from *quiero que*.\n\nThe person you are advising comes first (*te*, *le*, *les*, *me*). Then the advice verb: *recomiendo*, *pido*, *aconsejo*, *sugiero*. Then *que*. The verb after *que* is for the other person's action, and it takes the wish form.\n\nFor *-ar* verbs the ending switches to *-e*: *hablas* becomes *hables*. For *-er* and *-ir* verbs it switches to *-a*: *comes* becomes *comas*, *escribes* becomes *escribas*.\n\nEnglish says \"I recommend that you talk\" or just \"I'd talk to...\". Spanish uses *que* and the wish form. With *recomendar*, *aconsejar* and *sugerir* you will also meet the infinitive: *Te recomiendo hablar con un abogado.* Both are right.",
   "smallPrint": "Teachers call this the subjunctive after verbs of influence: you are trying to influence what someone else does.",
   "readAndPick": [
     {
@@ -149,7 +149,8 @@
       "prompt": "Type in Spanish, to a friend: I recommend that you sleep more.",
       "answer": "Te recomiendo que duermas más.",
       "accept": [
-        "Yo te recomiendo que duermas más."
+        "Yo te recomiendo que duermas más.",
+        "Te recomiendo dormir más."
       ],
       "why": "*Dormir* changes in the middle (*duermes*) and the ending switches to *-as*."
     },

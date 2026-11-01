@@ -26,7 +26,15 @@
         }
       ],
       "focus": "p:unos-approx",
-      "next": "t2"
+      "next": "t2",
+      "type": "containsAny",
+      "words": [
+        "unas",
+        "más o menos",
+        "como",
+        "alrededor de"
+      ],
+      "label": "about twenty: unas veinte, como veinte"
     },
     {
       "id": "t2",
@@ -53,8 +61,8 @@
     },
     {
       "id": "t3",
-      "npc": "¿Y dónde está la harina? No veo.",
-      "npcEn": "And where's the flour? I can't see.",
+      "npc": "¿Y dónde está la harina? No está aquí.",
+      "npcEn": "And where's the flour? It's not here.",
       "intent": "Tell her the flour is in that cupboard, next to the fridge.",
       "accept": [
         "Está en ese armario, al lado de la nevera.",
@@ -158,7 +166,6 @@
     "g:questions",
     "g:ser-identity",
     "g:stem-boot",
-    "g:yo-irregular",
     "l:ahí",
     "l:amable",
     "l:aquí",
@@ -190,7 +197,6 @@
     "l:tinto",
     "l:trabajo",
     "l:turista",
-    "l:ver",
     "p:aproximar-cifras",
     "p:aqui-ahi-alla",
     "p:cerca-de",

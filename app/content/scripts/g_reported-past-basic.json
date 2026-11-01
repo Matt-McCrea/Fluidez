@@ -35,7 +35,7 @@
    "en": "What did she tell you? (to a friend)"
   }
  ],
- "rule": "You already pass on what someone says right now: *Vale dice que está cansada*. The verb stays as it was.\n\nWhen the saying happened in the past (*dijo que*), the verb after *que* shifts back, just like English is → was:\n*Estoy cansado.* → *Dijo que estaba cansado.*\n*No tengo hambre.* → *Dijo que no tenía hambre.*\n*Voy a llamar.* → *Dijo que iba a llamar.*\n\nSo the present becomes the form you use for describing the past (*estaba*, *tenía*, *vivía*), and *voy a* becomes *iba a*. Something already in the past stays put: *Joaquín se fue* → *Dijo que Joaquín se fue*.\n\nTwo rules from English to unlearn: *que* is never dropped, and the person told goes before the verb: *me dijo*, *le dije*, *nos dijo*.\n\nFor questions, *si* does the job of if: *Le pregunté si quería venir*.",
+ "rule": "You already pass on what someone says right now: *Vale dice que está cansada*. The verb stays as it was.\n\nWhen the saying happened in the past (*dijo que*), the verb after *que* shifts back, just like English is → was:\n*Estoy cansado.* → *Dijo que estaba cansado.*\n*No tengo hambre.* → *Dijo que no tenía hambre.*\n*Voy a llamar.* → *Dijo que iba a llamar.*\n\nSo the present becomes the form you use for describing the past (*estaba*, *tenía*, *vivía*), and *voy a* becomes *iba a*. If what they said is still true or still coming, you can keep the present: *Mariana dijo que va a llamar.* Something already in the past stays put: *Joaquín se fue* → *Dijo que Joaquín se fue*.\n\nTwo rules from English to unlearn: *que* is never dropped, and the person told goes before the verb: *me dijo*, *le dije*, *nos dijo*.\n\nFor questions, *si* does the job of if: *Le pregunté si quería venir*.",
  "smallPrint": "Teachers call this reported (or indirect) speech, and the shift of tense is the backshift.",
  "readAndPick": [
   {
@@ -173,9 +173,9 @@
    "why": "Almost. English can drop that; Spanish always keeps *que*."
   },
   {
-   "wrong": "Mariana dijo que va a llamar.",
-   "right": "Mariana dijo que iba a llamar.",
-   "why": "After *dijo que*, going to becomes *iba a*, the same shift English makes."
+    "wrong": "Mariana dijo que va a llamar, pero nunca llamó.",
+    "right": "Mariana dijo que iba a llamar, pero nunca llamó.",
+    "why": "Almost. She never called, so that plan is over: *iba a*. *Va a* only works if the call could still come."
   },
   {
    "wrong": "Dijo me que estaba cansado.",

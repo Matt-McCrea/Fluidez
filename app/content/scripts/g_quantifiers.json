@@ -33,7 +33,7 @@
     { "prompt": "Pick and type the whole sentence: *El cuarto es ___ pequeño.* (*bastante* or *bastantes*) The room is quite small.", "answer": "El cuarto es bastante pequeño.", "accept": [], "why": "Before a describing word nothing changes, so no *s*." },
     { "prompt": "Say: I work quite a lot.", "answer": "Trabajo bastante.", "accept": ["Yo trabajo bastante."], "why": "After a verb, *bastante* stays as it is." },
     { "prompt": "Say: I have too many things.", "answer": "Tengo demasiadas cosas.", "accept": ["Yo tengo demasiadas cosas."], "why": "*Cosas* is feminine and plural, so *demasiadas*." },
-    { "prompt": "Ask a friend: Do you have enough time?", "answer": "¿Tienes bastante tiempo?", "accept": ["¿Tú tienes bastante tiempo?"], "why": "Enough of a thing is *bastante*, and *tiempo* takes the plain form." },
+    { "prompt": "Ask a friend: Do you have enough time?", "answer": "¿Tienes bastante tiempo?", "accept": ["¿Tú tienes bastante tiempo?", "¿Tienes suficiente tiempo?", "¿Tienes tiempo suficiente?"], "why": "Enough of a thing is *bastante*, and *tiempo* takes the plain form." },
     { "prompt": "Turn the complaint up: *El café es muy caro.* Say it's too expensive.", "answer": "El café es demasiado caro.", "accept": [], "why": "More than you want is *demasiado*, and before a describing word it doesn't change." },
     { "prompt": "Make it about Hernando: *Hablo demasiado.*", "answer": "Hernando habla demasiado.", "accept": [], "why": "The verb changes for Hernando; *demasiado* after a verb stays the same." }
   ],

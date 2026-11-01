@@ -138,7 +138,7 @@
       "accept": [
         "Será que me puede llamar mañana"
       ],
-      "why": "*¿Será que…?* is the extra-courteous Colombian opener, followed by *usted* forms."
+      "why": "*¿Será que…?* is the gentle Colombian opener. It takes *usted* forms here because the request is formal. With a friend it goes with *tú*."
     },
     {
       "prompt": "Make it polite for a notary (formal, use *podría*): *Llámame mañana.*",
@@ -146,7 +146,7 @@
       "accept": [
         "¿Podría llamarme mañana?"
       ],
-      "why": "A command becomes a *podría* question as soon as you say *usted*."
+      "why": "To a notary you use *usted*, and a *podría* question is a polite way to ask. The plain command would be *Llámeme mañana*."
     },
     {
       "prompt": "Now the top rung for the judge's clerk: I would be grateful if you called me tomorrow. (formal, start with *Le agradecería que…*)",
@@ -173,8 +173,8 @@
     },
     {
       "wrong": "Pásame la sal, por favor, señor.",
-      "right": "¿Me podría pasar la sal?",
-      "why": "Almost. *Por favor* does not change the grammar, so a command to a stranger stays blunt."
+      "right": "Páseme la sal, por favor, señor.",
+      "why": "Almost. *Señor* calls for *usted*, so the command is *páseme*. To be gentler still, ask: *¿Me podría pasar la sal?*"
     },
     {
       "wrong": "¿Me podría pasar la sal, Yesid?",

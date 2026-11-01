@@ -13,7 +13,7 @@
     { "es": "De haber llegado antes, habríamos visto a Hernando.", "en": "Had we arrived earlier, we would have seen Hernando." },
     { "es": "Como no me avises, no sé a qué hora abrir.", "en": "If you don't let me know, I won't know what time to open. (to a friend)" }
   ],
-  "rule": "Four ways to set a condition without *si*.\n*De* + *haber* + *-ado/-ido* looks back: *de haberlo sabido*, \"had I known\". The result usually uses *habría*.\n*Como* + subjunctive is a warning: *como no llegues*. The result is plain: *nos vamos*. With an ordinary verb, *como* means \"since\": *Como no llegaste, nos fuimos.*\n*A no ser que* + subjunctive: \"unless\".\n*Con tal de que* + subjunctive: \"as long as\".\nThe subjunctive endings you already know (*llegues*, *llueva*, *devuelvas*) are the signal that the thing has not happened yet.",
+  "rule": "Four ways to set a condition without *si*.\n*De* + *haber* + *-ado/-ido* looks back: *de haberlo sabido*, \"had I known\". The result uses *habría* or *hubiera*.\nWith the dictionary form, *de* looks at now or next: *de ser así*, \"if so\".\n*Como* + subjunctive is a warning: *como no llegues*. The result is plain: *nos vamos*. With an ordinary verb, *como* means \"since\": *Como no llegaste, nos fuimos.*\n*A no ser que* + subjunctive: \"unless\".\n*Con tal de que* + subjunctive: \"as long as\".\nThe subjunctive endings you already know (*llegues*, *llueva*, *devuelvas*) are the signal that the thing has not happened yet.",
   "smallPrint": "Teachers call these conditional clauses without *si*: *de* + compound infinitive, *como* + subjunctive, and the connectors *a no ser que* and *con tal de que*.",
   "readAndPick": [
     {
@@ -90,7 +90,7 @@
     {
       "prompt": "Type it in Spanish: Had we arrived earlier, we would have seen Hernando.",
       "answer": "De haber llegado antes, habríamos visto a Hernando.",
-      "accept": ["De haber llegado antes habríamos visto a Hernando."],
+      "accept": ["De haber llegado antes habríamos visto a Hernando.", "De haber llegado antes, hubiéramos visto a Hernando."],
       "why": "*De haber* + *llegado* looks back, and *habríamos visto* gives the result."
     },
     {

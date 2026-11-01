@@ -45,7 +45,7 @@
       "require": [
         {
           "type": "regex",
-          "pattern": "\\bnada más\\b",
+          "pattern": "\\b(nada más|apenas|en cuanto|tan pronto como)\\b",
           "flags": "iu",
           "label": "use: nada más + infinitive"
         }

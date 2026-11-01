@@ -31,7 +31,7 @@
       "en": "So you don't have a ticket. (to a friend)"
     }
   ],
-  "rule": "Two ways to say so.\n\n*Entonces* opens a sentence to sum up or confirm a plan, often with *¿no?* at the end: *Entonces quedamos el sábado, ¿no?* On its own, *¿Entonces qué?* means so, what's the plan?\n\n*O sea que* comes after what was just said and draws the conclusion from it: *Tengo trabajo, o sea que no puedo.* It also works on what someone else said, often with a little surprise: *O sea que no vienes.*\n\nYou already know *así que*: same idea. The verbs after all three stay normal.\n\nOne trap: in the middle of a story, *entonces* sounds like so, as if one thing caused the next. For plain and then, use *y después*.",
+  "rule": "Two ways to say so.\n\n*Entonces* opens a sentence to sum up or confirm a plan, often with *¿no?* at the end: *Entonces quedamos el sábado, ¿no?* On its own, *¿Entonces qué?* means so, what's the plan?\n\n*O sea que* comes after what was just said and draws the conclusion from it: *Tengo trabajo, o sea que no puedo.* It also works on what someone else said, often with a little surprise: *O sea que no vienes.*\n\nYou already know *así que*: same idea. The verbs after all three stay normal.\n\nOne trap: in the middle of a story, *entonces* can sound like so, as if one thing caused the next. For a plain next step, *y después* is clearer.",
   "smallPrint": "Teachers call these consecutive connectors: words that introduce a result.",
   "readAndPick": [
     {
@@ -151,7 +151,7 @@
     {
       "wrong": "Comimos, entonces fuimos a bailar.",
       "right": "Comimos y después fuimos a bailar.",
-      "why": "Careful. *Entonces* here sounds like the eating caused the dancing. For one thing after another, say *y después*."
+      "why": "Not wrong, but *entonces* here can sound as if the eating caused the dancing. For a plain next step, *y después* is clearer."
     },
     {
       "wrong": "Tengo mucho trabajo, porque no puedo salir.",

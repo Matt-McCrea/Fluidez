@@ -156,7 +156,7 @@
     {
       "wrong": "Había un accidente en la Séptima.",
       "right": "Hubo un accidente en la Séptima.",
-      "why": "For one event that happened and is over, Spanish uses *hubo*."
+      "why": "*Había un accidente* sets a scene: it was already there when you passed. To report that it happened, use *hubo*."
     },
     {
       "wrong": "La fiesta está en mi casa.",

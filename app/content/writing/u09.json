@@ -332,12 +332,12 @@
     "constraints": [
       {
         "type": "regex",
-        "pattern": "\\b(una vez|(dos|tres|cuatro|cinco|seis|siete) veces) (a|por) la semana\\b",
+        "pattern": "\\b(una vez|(dos|tres|cuatro|cinco|seis|siete) veces) (a la|por la|por) semana\\b",
         "label": "say how many times a week"
       },
       {
         "type": "regex",
-        "pattern": "\\bpor la (mañana|tarde|noche)\\b",
+        "pattern": "\\b(por|en) las? (mañana|tarde|noche)s?\\b",
         "label": "say when: por la mañana, tarde or noche"
       }
     ],

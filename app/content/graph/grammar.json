@@ -300,7 +300,7 @@
   "priority": 22,
   "title": "Verbs that change inside: quiero, puedo, prefiero, duermo (the \"boot\" verbs)",
   "es": "¿Quieres un tinto? No puedo hoy. Prefiero el té. Duermo poco.",
-  "en": "Do you want a coffee? I can't today. I prefer tea. I sleep little.",
+  "en": "Do you want a coffee? I can't today. I prefer tea. I don't sleep much.",
   "requires": [
    "g:present-er-ir"
   ],
@@ -642,8 +642,8 @@
   "band": "A1",
   "priority": 53,
   "title": "How long ago: hace + time",
-  "es": "Llegué hace dos semanas. Mi abuela abrió el café hace cuarenta años.",
-  "en": "I arrived two weeks ago. My grandmother opened the café forty years ago.",
+  "es": "Llegué hace dos semanas. Mi abuela abrió el café hace cuarenta y ocho años.",
+  "en": "I arrived two weeks ago. My grandmother opened the café forty-eight years ago.",
   "requires": [
    "g:preterite-ar"
   ],
@@ -1319,7 +1319,7 @@
   "band": "A1",
   "priority": 117,
   "title": "Telling a stranger (or a group) what to do: siga, voltee, vengan",
-  "es": "Siga derecho dos cuadras. Tome la TransMilenio. Pasen, sigan.",
+  "es": "Siga derecho dos cuadras. Tome el TransMilenio. Pasen, sigan.",
   "en": "Go straight two blocks. Take the TransMilenio. Come in, come in.",
   "requires": [
    "g:commands-tu"
@@ -1434,8 +1434,8 @@
   "band": "A1",
   "priority": 130,
   "title": "Where the little words go: lo voy a comprar = voy a comprarlo",
-  "es": "Lo voy a pensar. = Voy a pensarlo. ¿Me estás escuchando?",
-  "en": "I'm going to think about it. Are you listening to me?",
+  "es": "Lo voy a pensar.",
+  "en": "Voy a pensarlo. ¿Me estás escuchando?",
   "requires": [
    "g:direct-objects",
    "g:indirect-objects",
@@ -2084,7 +2084,7 @@
   "kind": "grammar",
   "band": "A2",
   "priority": 206,
-  "title": "Reacting: ¡Qué bueno!, ¡Qué pena!, ¡Qué tan lindo!, ¡Cuánta gente!",
+  "title": "Reacting: ¡Qué bueno!, ¡Qué pena!, ¡Tan lindo!, ¡Cuánta gente!",
   "es": "¡Qué bueno verte! ¡Qué casa tan bonita! ¡Cuánto tiempo!",
   "en": "How good to see you! What a lovely house! Long time no see!",
   "requires": [
@@ -2414,7 +2414,7 @@
   "kind": "grammar",
   "band": "A2",
   "priority": 244,
-  "title": "By doing, while doing: aprendí leyendo, sigue lloviendo, va mejorando",
+  "title": "By doing, while doing: aprendí leyendo, llegó cantando, va mejorando",
   "es": "Aprendí español viendo novelas. Sigue lloviendo. El café va mejorando.",
   "en": "I learned Spanish by watching soaps. It's still raining. The café is getting better.",
   "requires": [
@@ -2886,7 +2886,7 @@
   "kind": "grammar",
   "band": "B1",
   "priority": 290,
-  "title": "When \"se\" changes the meaning: ir and irse, dormir and dormirse, quedar and quedarse",
+  "title": "When \"se\" changes the meaning: ir and irse, dormir and dormirse, parecer and parecerse",
   "es": "Me voy.",
   "en": "I'm off.",
   "forms": [
@@ -4876,8 +4876,8 @@
   "band": "B2",
   "priority": 497,
   "title": "Spain's \"today\" past: hoy he ido = hoy fui",
-  "es": "(España) Esta mañana he ido al médico. = (Colombia) Esta mañana fui al médico.",
-  "en": "This morning I went to the doctor.",
+  "es": "(España) Esta mañana he ido al médico.",
+  "en": "(Colombia) Esta mañana fui al médico.",
   "requires": [
    "g:perfecto-experience",
    "g:vosotros-recognition"
@@ -5318,7 +5318,7 @@
   "kind": "grammar",
   "band": "C1",
   "priority": 556,
-  "title": "Conditions with style: de haberlo sabido, como no llegues, a no ser que, siempre y cuando",
+  "title": "Conditions with style: de haberlo sabido, como no llegues, a no ser que, con tal de que",
   "es": "De haberlo sabido, no habría venido. Como no llegues a tiempo, nos vamos sin ti.",
   "en": "Had I known, I wouldn't have come. If you're not on time, we're leaving without you.",
   "requires": [

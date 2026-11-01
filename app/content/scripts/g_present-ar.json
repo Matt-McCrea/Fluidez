@@ -2,7 +2,7 @@
   "node": "g:present-ar",
   "hook": {
     "line": "Where you work, which languages you speak, what you buy: everyday life runs on verbs ending in *-ar*. Learn five endings once and they fit hundreds of verbs.",
-    "es": "Hablo inglés, y trabajo en un café en La Candelaria.",
+    "es": "Hablo inglés y trabajo en un café en La Candelaria.",
     "en": "I speak English, and I work in a café in La Candelaria."
   },
   "examples": [

@@ -183,7 +183,7 @@
         "label": "at least 5 sentences"
       }
     ],
-    "model": "Señor secretario: Le escribo en nombre del café de mi abuela, que tiene una cita con el juez el próximo jueves. Hasta hoy recibimos ninguna carta y no sabemos a qué hora debemos presentarnos. Le agradecería que me confirmara la hora y la sala por correo. También le agradecería que me indicara qué documentos debo llevar, porque no quiero equivocarme en un asunto tan serio. Si fuera necesario llevar algún papel antes de ese día, le agradecería que me dijera hasta cuándo puedo hacerlo. Entiendo que su trabajo es complicado y que recibe muchos mensajes, pero necesito esa información lo antes posible. Si es necesario, puedo pasar yo mismo por su oficina cualquier día de esta semana. Le agradezco mucho su atención. Atentamente, Tomás Herrera",
+    "model": "Señor secretario: Le escribo en nombre del café de mi abuela, que tiene una cita con el juez el próximo jueves. Hasta hoy no hemos recibido ninguna carta y no sabemos a qué hora debemos presentarnos. Le agradecería que me confirmara la hora y la sala por correo. También le agradecería que me indicara qué documentos debo llevar, porque no quiero equivocarme en un asunto tan serio. Si fuera necesario llevar algún papel antes de ese día, le agradecería que me dijera hasta cuándo puedo hacerlo. Entiendo que su trabajo es complicado y que recibe muchos mensajes, pero necesito esa información lo antes posible. Si es necesario, puedo pasar yo mismo por su oficina cualquier día de esta semana. Le agradezco mucho su atención. Atentamente, Tomás Herrera",
     "focus": "p:le-agradeceria-que",
     "requires": [
       "c:a-que-hora",
@@ -202,7 +202,9 @@
       "g:indefinites",
       "g:indirect-objects",
       "g:indirect-questions",
+      "g:negation-words",
       "g:object-pronoun-position",
+      "g:perfecto-experience",
       "g:por-para-1",
       "g:present-ar",
       "g:present-er-ir",

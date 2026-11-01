@@ -723,7 +723,7 @@
   },
   {
     "id": "u53-0026",
-    "es": "Arreglaron mi celular en una hora.",
+    "es": "Me arreglaron el celular en una hora.",
     "en": "They fixed my phone in an hour.",
     "accept": [],
     "acceptEn": [],
@@ -733,7 +733,7 @@
       "l:arreglar",
       "l:celular",
       "l:hora",
-      "p:possessives-basic",
+      "p:me-te-nos-objects",
       "p:rectificar-reparar"
     ],
     "targets": [
@@ -32670,7 +32670,7 @@
   {
     "id": "u53-1223",
     "es": "Llegué tarde; o sea, me perdí el discurso.",
-    "en": "I arrived late, I mean, I missed the speech.",
+    "en": "I arrived late, so I missed the speech.",
     "accept": [],
     "acceptEn": [],
     "requires": [

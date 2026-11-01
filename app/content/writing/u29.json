@@ -444,7 +444,7 @@
         "type": "question"
       }
     ],
-    "model": "Tomás, Don Hernando no vino hoy y es muy raro. ¿Estaría enfermo? Tendría una cita con el médico, o iría a visitar a su nieta. Serían las ocho cuando pasé por su calle y no vi luz en su ventana. ¿Tú sabes algo de él? Yo lo llamo esta noche, y tú pregúntales a los vecinos. Seguro que no es nada grave. Mañana por la tarde paso por su casa con pan, y lo saludo de tu parte.",
+    "model": "Tomás, don Hernando no vino hoy y es muy raro. ¿Estaría enfermo? Tendría una cita con el médico, o iría a visitar a su nieta. Serían las ocho cuando pasé por su calle y no vi luz en su ventana. ¿Tú sabes algo de él? Yo lo llamo esta noche, y tú pregúntales a los vecinos. Seguro que no es nada grave. Mañana por la tarde paso por su casa con pan, y lo saludo de tu parte.",
     "focus": "g:conditional-past-guess",
     "requires": [
       "c:bien-y-tu",

@@ -35,7 +35,7 @@
       "en": "I've had this phone for a year."
     }
   ],
-  "rule": "Ask one question: is it over, or is it still going?\n\nOver, a moment you count back to: past verb + *hace* + time. That's ago. *Llegué hace dos años.*\n\nStill going: present verb + *desde hace* + time, or *hace* + time + *que* + present. That's for, have been. *Vivo aquí desde hace dos años.* *Hace dos años que vivo aquí.*\n\nSo the verb and the little word travel together. Past goes with plain *hace*. Present goes with *desde hace*, or with *hace… que*.\n\nA handy pair: you arrive at a moment (*llegué hace…*), then you've been somewhere since (*estoy aquí desde hace…*). Same with buying and having, meeting and knowing: *conocí a Vale hace un año*, *conozco a Vale desde hace un año*.",
+  "rule": "Ask one question: is it over, or is it still going?\n\nOver, a moment you count back to: past verb + *hace* + time. That's ago. *Llegué hace dos años.*\n\nStill going: present verb + *desde hace* + time, or *hace* + time + *que* + present. That's for, have been. *Vivo aquí desde hace dos años.* *Hace dos años que vivo aquí.*\n\nSo the verb and the little word travel together. Past goes with *hace*. Present goes with *desde hace*, or with *hace… que*. A past verb can take *hace… que* too, and it still means ago: *Hace dos años que llegué* says the same as *Llegué hace dos años*.\n\nA handy pair: you arrive at a moment (*llegué hace…*), then you've been somewhere since (*estoy aquí desde hace…*). Same with buying and having, meeting and knowing: *conocí a Vale hace un año*, *conozco a Vale desde hace un año*.",
   "smallPrint": "Both come from the verb *hacer*. Grammar books describe the difference as pointing to a moment in the past against measuring a stretch that reaches up to now.",
   "readAndPick": [
     {
@@ -178,7 +178,7 @@
         "Llegué aquí hace dos años.",
         "Hace dos años llegué aquí."
       ],
-      "why": "Coming is a finished moment, so a past verb and plain *hace*, no *que*."
+      "why": "Coming is a finished moment, so a past verb with *hace*: *Vine aquí hace dos años.*"
     }
   ],
   "pitfalls": [

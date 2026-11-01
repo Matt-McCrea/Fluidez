@@ -35,7 +35,7 @@
       "en": "Where do you all live?"
     }
   ],
-  "rule": "In Spain, *you all* among friends is *vosotros*, not *ustedes*. It has its own verb endings:\n*habláis*, *coméis*, *vivís*\n*sois*, *estáis*, *tenéis*, *queréis*, *habéis*\n\nSo *vosotros sois* is *ustedes son*, and *¿Cómo estáis?* is *¿Cómo están?*. Look for the ending *-áis*, *-éis* or *-ís*.\n\nTwo more clues. *Os* is the object word, like *les*: *Os lo dije*. And a command to a group drops the final *r* and adds *d*: *venid*, *comed*, *id*.\n\nColombia uses *ustedes* and you keep doing that. Here you only need to recognise the Spain version when you read it or hear it.",
+  "rule": "In Spain, *you all* among friends is *vosotros*, not *ustedes*. It has its own verb endings:\n*habláis*, *coméis*, *vivís*\n*sois*, *estáis*, *tenéis*, *queréis*, *habéis*\n\nSo *vosotros sois* is *ustedes son*, and *¿Cómo estáis?* is *¿Cómo están?*. Look for the ending *-áis*, *-éis* or *-ís*. Past forms give it away too: *hablasteis*, *comisteis*, *hablabais*, *teníais*. And *vuestro*, *vuestra* mean \"your\" to a group of friends.\n\nTwo more clues. *Os* is the object word, like *les*: *Os lo dije*. And a command to a group drops the final *r* and adds *d*: *venid*, *comed*, *id*.\n\nColombia uses *ustedes* and you keep doing that. Here you only need to recognise the Spain version when you read it or hear it.",
   "smallPrint": "Teachers call this the *vosotros* form, the second person plural. *Vosotras* is the same thing for a group of women.",
   "soundTip": "The ending *-áis* sounds like the English word *eyes*, and the stress lands on it: *estáis* is roughly *es-TIES*.",
   "readAndPick": [
@@ -187,7 +187,7 @@
     {
       "wrong": "Vosotros comeis pan.",
       "right": "Vosotros coméis pan.",
-      "why": "The accent marks the stress on *é*, which sounds like *eyes*: *co-MEIS*."
+      "why": "The accent marks the stress on *é*, and *-éis* rhymes with English *ace*: *co-MEIS*."
     },
     {
       "wrong": "Os veo mañana, Mariana.",

@@ -14,7 +14,7 @@
     { "es": "Vale cocina mejor que yo.", "en": "Vale cooks better than me." },
     { "es": "Antes las calles eran más tranquilas.", "en": "The streets used to be quieter." }
   ],
-  "rule": "English adds -er (colder) or uses more (more expensive). Spanish always does it the second way: *más* plus the adjective, then *que*. *Más fría que* is colder than.\n*más … que*: more … than\n*menos … que*: less … than\n*tan … como*: as … as\nThe adjective still agrees: *Bogotá es más fría*, *las calles eran más tranquilas*.\nTwo words skip *más*: *mejor* (better) and *peor* (worse). Say *mejor*, not *más bueno*. You already know *mayor* and *menor* for older and younger.\nAfter *que* and *como*, use *yo* and *tú*: *más alto que yo*.",
+  "rule": "English adds -er (colder) or uses more (more expensive). Spanish always does it the second way: *más* plus the adjective, then *que*. *Más fría que* is colder than.\n*más … que*: more … than\n*menos … que*: less … than\n*tan … como*: as … as\nThe adjective still agrees: *Bogotá es más fría*, *las calles eran más tranquilas*.\nTwo words skip *más*: *mejor* (better) and *peor* (worse). Say *mejor*, not *más bueno*. And much better is *mucho mejor*, never *muy mejor*. You already know *mayor* and *menor* for older and younger.\nAfter *que* and *como*, use *yo* and *tú*: *más alto que yo*.",
   "smallPrint": "Teachers call these comparatives; *mejor* and *peor* are the irregular ones. With numbers Spanish says *más de*, which comes soon.",
   "readAndPick": [
     { "es": "Bogotá es más fría que Medellín.", "options": ["Bogotá is colder than Medellín.", "Medellín is colder than Bogotá.", "Bogotá is as cold as Medellín."], "answer": 0 },

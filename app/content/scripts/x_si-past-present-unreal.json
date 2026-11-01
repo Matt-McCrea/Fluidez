@@ -31,7 +31,7 @@
       "en": "If we'd had more time, we would have waited."
     }
   ],
-  "rule": "Ask one question: is the \"if\" about now, or about something already over?\n\nNow, or just imagined: *si tuviera* with the ending *-ría*.\n*Si tuviera plata, viajaría.*\n\nAlready over: *si hubiera tenido* with *habría* plus a participle.\n*Si hubiera tenido plata, habría viajado.*\n\nKeep the two halves in the same time. A word like *ayer* or *el año pasado* tells you to go to the second pair. You may also mix them on purpose: a past \"if\" with a result about today, as in *Si hubiera aceptado, hoy viviría en Toronto.*",
+  "rule": "Ask one question: is the \"if\" about now, or about something already over?\n\nNow, or just imagined: *si tuviera* with the ending *-ría*.\n*Si tuviera plata, viajaría.*\n\nAlready over: *si hubiera tenido* with *habría* plus a participle.\n*Si hubiera tenido plata, habría viajado.*\n\nThe two halves usually share a time. A word like *ayer* or *el año pasado* tells you to go to the second pair. You can also mix them on purpose. A past \"if\" with a result about today: *Si hubiera aceptado, hoy viviría en Toronto.* A lasting \"if\" with a result in the past: *Si fuera más paciente, no habría dicho eso.*",
   "smallPrint": "Teachers call the first pair the present unreal conditional (imperfect subjunctive + conditional), and the second the past unreal conditional (pluperfect subjunctive + conditional perfect).",
   "readAndPick": [
     {
@@ -178,9 +178,9 @@
   ],
   "pitfalls": [
     {
-      "wrong": "Si tuviera plata, habría viajado.",
-      "right": "Si tuviera plata, viajaría.",
-      "why": "Both halves need the same time frame: *tuviera* goes with *viajaría*."
+      "wrong": "Si tuviera plata el año pasado, habría viajado.",
+      "right": "Si hubiera tenido plata el año pasado, habría viajado.",
+      "why": "*El año pasado* is over, so the *si* half needs *hubiera tenido*. *Tuviera* only fits now or always, as in *Si fuera más paciente, no habría dicho eso.*"
     },
     {
       "wrong": "Si tuviera tiempo ayer, habría ido.",

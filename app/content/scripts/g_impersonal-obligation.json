@@ -13,7 +13,7 @@
     { "es": "No hay que tener miedo.", "en": "There's no need to be afraid." },
     { "es": "Uno tiene que comer bien.", "en": "You have to eat well." }
   ],
-  "rule": "When a rule or piece of advice is for anybody, you don't name a person. Three ways to start, and a fourth coming soon:\n\n*Hay que* + infinitive: you need to, one must. *Hay que tomar agua*.\n*Se debe* + infinitive: it should be done. *No se debe fumar aquí*.\n*Uno tiene que* + infinitive: you have to, as people do. *Uno tiene que comer bien*.\n*Conviene* + infinitive: it's a good idea. You will see it soon, and it works the same way.\n\nWatch the *no*. *No se debe fumar* says you shouldn't. *No hay que pagar* says there's no need to. Spanish uses *uno* for the general \"you\", where English also says \"one\" or \"you\".",
+  "rule": "When a rule or piece of advice is for anybody, you don't name a person. Three ways to start, and a fourth coming soon:\n\n*Hay que* + infinitive: you need to, one must. *Hay que tomar agua*.\n*Se debe* + infinitive: it should be done. *No se debe fumar aquí*.\n*Uno tiene que* + infinitive: you have to, as people do. *Uno tiene que comer bien*.\n*Conviene* + infinitive: it's a good idea. You will see it soon, and it works the same way.\n\nWatch the *no*. *No se debe fumar* says you shouldn't. *No hay que pagar* says there's no need to. With a warning it can also mean you mustn't: *No hay que perder la esperanza.* Context decides. With a warning it can also mean you mustn't: *No hay que perder la esperanza.* Context decides. With a warning it can also mean you mustn't: *No hay que perder la esperanza.* Context decides. Spanish uses *uno* for the general \"you\", where English also says \"one\" or \"you\".",
   "smallPrint": "Teachers call these impersonal constructions of obligation: no subject is named, so the rule applies to everyone.",
   "readAndPick": [
     { "es": "Hay que tomar mucha agua.", "options": ["I drink a lot of water.", "You need to drink a lot of water.", "They drink a lot of water."], "answer": 1 },
@@ -24,7 +24,7 @@
     { "es": "Uno tiene que comer bien.", "options": ["I have to eat well.", "You have to eat well, as anyone does.", "He has to eat well."], "answer": 1 },
     { "es": "No se debe comer tanta sal.", "options": ["You shouldn't eat so much salt.", "You don't need to eat so much salt.", "Nobody eats so much salt."], "answer": 0 },
     { "es": "Hay que comer menos sal.", "options": ["Salt is eaten less.", "One needs to eat less salt.", "I eat less salt."], "answer": 1 },
-    { "es": "No hay que tener miedo.", "options": ["You mustn't be afraid.", "There's no need to be afraid.", "Nobody is afraid."], "answer": 1 }
+    { "es": "No hay que tener miedo.", "options": ["You aren't afraid.", "There's no need to be afraid.", "Nobody is afraid."], "answer": 1 }
   ],
   "yourTurn": [
     { "prompt": "Choose the right form and type the whole sentence: *___ tomar mucha agua.* (*Hay que* or *Hay*) You need to drink lots of water.", "answer": "Hay que tomar mucha agua.", "accept": [], "why": "*Hay* needs *que* before the infinitive." },

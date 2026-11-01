@@ -692,16 +692,18 @@
   },
   {
     "id": "u44-t-argument-markers-0028",
-    "es": "¿No solo estudias español, sino también trabajas en español?",
+    "es": "¿No solo estudias español, sino que también trabajas en español?",
     "en": "Do you not only study Spanish but also work in Spanish? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:pero-sino",
       "g:present-ar",
+      "g:that-clauses",
       "l:español",
       "l:estudiar",
       "l:trabajar",
+      "p:no-es-que-sino-que",
       "p:sobre-todo-solo"
     ],
     "targets": [
@@ -744,16 +746,18 @@
   },
   {
     "id": "u44-t-argument-markers-0030",
-    "es": "¿Tus vecinos no solo hablan mucho, sino también ayudan?",
+    "es": "¿Tus vecinos no solo hablan mucho, sino que también ayudan?",
     "en": "Do your neighbors not only talk a lot but also help? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:pero-sino",
       "g:present-ar",
+      "g:that-clauses",
       "l:ayudar",
       "l:hablar",
       "l:vecino",
+      "p:no-es-que-sino-que",
       "p:possessives-basic",
       "p:quantifiers-basic",
       "p:sobre-todo-solo"

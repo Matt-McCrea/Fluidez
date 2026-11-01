@@ -36,7 +36,7 @@
   ],
   "pitfalls": [
     { "wrong": "La fiesta está en el café.", "right": "La fiesta es en el café.", "why": "Almost. A party takes place, so Spanish uses *es*." },
-    { "wrong": "¿Dónde está la reunión?", "right": "¿Dónde es la reunión?", "why": "You're asking where it happens, not where a thing sits: *es*." },
+    { "wrong": "¿Dónde está la reunión?", "right": "¿Dónde es la reunión?", "why": "You're asking where it happens, not where a thing sits: *es*. You'll hear *está* in casual speech, but *es* is always right." },
     { "wrong": "El café es en la 11.", "right": "El café está en la 11.", "why": "A café is a place that sits somewhere: *está*." }
   ],
   "personal": "Is there a class, a meeting or a dinner in your week? Say where it is with *es*, then say where that place is with *está*."

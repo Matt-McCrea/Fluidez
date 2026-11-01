@@ -35,7 +35,7 @@
       "en": "She left early, so she arrived on time."
     }
   ],
-  "rule": "Spanish has four formal ways to say \"so\" or \"hence\":\n*Así pues* and *por consiguiente* start a sentence and are followed by a normal verb: *así pues, la decisión es nuestra*.\n*De manera que* also takes a normal verb when you simply report what happened: *llegó tarde, de manera que perdió el vuelo*.\n*De ahí que* is the one to watch. It always takes the subjunctive, because you are not announcing the result as news, you are presenting it as the known consequence: *de ahí que la reunión se aplazara*, *de ahí que no pueda entrar*.\n\nIf the main sentence is in the past, the verb after *de ahí que* is the past subjunctive (*se aplazara*, *oyera*). If it is in the present, it is the present subjunctive (*pueda*).",
+  "rule": "Spanish has four formal ways to say \"so\" or \"hence\":\n*Así pues* and *por consiguiente* start a sentence and are followed by a normal verb: *así pues, la decisión es nuestra*.\n*De manera que* also takes a normal verb when you simply report what happened: *llegó tarde, de manera que perdió el vuelo*. With the subjunctive it names a goal, not a result: *habla despacio de manera que te entiendan* means \"speak slowly so that they understand you\".\n*De ahí que* is the one to watch. It always takes the subjunctive, because you are not announcing the result as news, you are presenting it as the known consequence: *de ahí que la reunión se aplazara*, *de ahí que no pueda entrar*.\n\nThe tense follows the result, not the first sentence. A result in the past takes the past subjunctive (*se aplazara*, *oyera*). A result that holds now takes the present subjunctive (*pueda*), even after a past cause: *la ciudad creció sin plan; de ahí que el tráfico sea una pesadilla*.",
   "smallPrint": "Teachers call these consecutive connectors, because they introduce a consequence. *De ahí que* is the only one here that forces the subjunctive.",
   "readAndPick": [
     {
@@ -136,7 +136,7 @@
       "prompt": "Say: I don't have the password; hence I can't get in.",
       "answer": "No tengo la contraseña; de ahí que no pueda entrar.",
       "accept": [],
-      "why": "The main verb is in the present, so *de ahí que* needs the present subjunctive *pueda*."
+      "why": "The result holds now, so *de ahí que* needs the present subjunctive *pueda*."
     },
     {
       "prompt": "Say: He arrived late, so he missed the flight.",
@@ -150,7 +150,7 @@
       "accept": [
         "La obra no tenía permiso, de ahí que el barrio protestara."
       ],
-      "why": "Past main verb, so the past subjunctive *protestara* follows *de ahí que*."
+      "why": "The result is in the past, so the past subjunctive *protestara* follows *de ahí que*."
     },
     {
       "prompt": "Start with *así pues*: *La decisión es nuestra.*",

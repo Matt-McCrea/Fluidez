@@ -39,7 +39,7 @@
       "en": "It's normal to be afraid."
     }
   ],
-  "rule": "Each of these lines gives a judgement: good, important, normal, fair, a shame. The judgement is the first part (*Es importante*, *Es una pena*, *Es normal*), then *que*, then what happens.\n\nThe verb after *que* takes the wish form, the same one you met with *quiero que* and *me alegra que*: *leas*, *cierren*, *grite*, *estén*.\n\nEnglish says *is*, *are*, *reads*. Spanish switches to the wish form because you are judging the thing, not reporting it.\n\nThe same pattern works for *Es mejor que esperemos* (it's better that we wait), *Es bueno que*, *Es necesario que* and *No es justo que*.\n\nIf you mean people in general, skip *que* and use the plain verb: *Es normal tener miedo.* *Es mejor llamar antes.*",
+  "rule": "Each of these lines gives a judgement: good, important, normal, fair, a shame. The judgement is the first part (*Es importante*, *Es una pena*, *Es normal*), then *que*, then what happens.\n\nThe verb after *que* takes the wish form, the same one you met with *quiero que* and *me alegra que*: *leas*, *cierren*, *grite*, *estén*.\n\nEnglish says *is*, *are*, *reads*. Spanish switches to the wish form because you are judging the thing, not reporting it.\n\nThe same pattern works for *Es mejor que esperemos* (it's better that we wait), *Es bueno que*, *Es necesario que* and *No es justo que*.\n\nIf you mean people in general, skip *que* and use the infinitive: *Es normal tener miedo.* *Es mejor llamar antes.*",
   "smallPrint": "Teachers call this the subjunctive after expressions of judgement (*subjuntivo con expresiones de valoración*). Facts such as *es verdad que* work differently, and you'll see why in the next drill.",
   "readAndPick": [
     {
@@ -149,7 +149,7 @@
       "prompt": "Type in Spanish: It's normal to be afraid.",
       "answer": "Es normal tener miedo.",
       "accept": [],
-      "why": "It's about people in general, so no *que*: just the plain verb."
+      "why": "It's about people in general, so no *que*: just the infinitive."
     },
     {
       "prompt": "Type in Spanish: It's a shame they're closing the park.",
@@ -191,7 +191,7 @@
     {
       "wrong": "Es normal que tener miedo.",
       "right": "Es normal tener miedo.",
-      "why": "When it is about people in general, use the plain verb and no *que*."
+      "why": "When it is about people in general, use the infinitive and no *que*."
     }
   ],
   "personal": "Say two true judgements about your own neighbourhood, one with *Es una pena que* and one with *Es importante que* (*Es una pena que el parque...*, *Es importante que los vecinos...*)."

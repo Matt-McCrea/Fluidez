@@ -31,8 +31,8 @@
       "en": "According to a neighbour, the owner is reportedly going to sell the building."
     }
   ],
-  "rule": "Say *La empresa pagó sobornos* and you stand behind it. Put the verb in the conditional and you only pass it on: \"that is what I am told\".\n\nFor now or later, use the simple conditional: *estaría*, *tendría*, *vendería*.\nFor the past, use the conditional perfect: *habría pagado*, *habría comprado*.\n\nThere is no \"if\" and no \"would\" here. English adds words like \"allegedly\" or \"reportedly\", while Spanish changes the verb. It lives in news and formal reports, and a *según...* often names the source.",
-  "smallPrint": "Teachers call this the conditional of rumour, or *condicional de rumor*, and in journalism it is a way of reporting without taking responsibility for the claim.",
+  "rule": "Say *La empresa pagó sobornos* and you stand behind it. Put the verb in the conditional and you only pass it on: \"that is what I am told\".\n\nFor now or later, use the simple conditional: *estaría*, *tendría*, *vendería*.\nFor the past, use the conditional perfect: *habría pagado*, *habría comprado*.\n\nThere is no \"if\" and no \"would\" here. English adds words like \"allegedly\" or \"reportedly\", while Spanish changes the verb. It lives in news and formal reports, and a *según...* often names the source.\n\nCareful: you have met this form before, for guessing about the past. *Tendría veinte años*: he was probably twenty. A named source or a news report points to the rumour. A story about the past points to the guess.",
+  "smallPrint": "Teachers call this the conditional of rumour, or *condicional de rumor*, and in journalism it is a way of reporting without taking responsibility for the claim. Many newspaper style guides discourage it, so learn to read it and be careful about writing it.",
   "readAndPick": [
     {
       "es": "Según el diario, la empresa habría pagado sobornos.",

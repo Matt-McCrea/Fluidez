@@ -28137,6 +28137,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:stem-boot",
       "l:casa",

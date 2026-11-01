@@ -548,8 +548,8 @@
   },
   {
     "id": "u34-t-possessive-dative-0024",
-    "es": "Se me rompió el celular, pero me lavé las manos.",
-    "en": "My phone broke, but I washed my hands.",
+    "es": "Se me rompió el celular y me corté la mano.",
+    "en": "My phone broke and I cut my hand.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -559,7 +559,7 @@
       "g:reflexive-routine",
       "g:se-accidental",
       "l:celular",
-      "l:lavarse",
+      "l:cortarse",
       "l:mano",
       "l:romperse",
       "p:lavarse-las-manos"

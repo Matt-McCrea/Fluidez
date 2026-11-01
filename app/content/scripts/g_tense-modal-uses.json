@@ -31,7 +31,7 @@
       "en": "Don Hernando is probably at the café, as always."
     }
   ],
-  "rule": "Spanish tenses do not always mean their clock time.\n\n*Imperfect to soften:* *quería pedirte un favor* is gentler than *quiero*. It is the \"I was wondering\" of Spanish. *Iba a…* says a plan that did not happen.\n\n*Future for a guess:* *será caro, pero…* means \"it may be expensive, but…\". *Estará en el café* means \"he's probably there\".\n\n*Present for history:* *en 1948 matan a Gaitán* makes the past vivid, like a news headline.\n\n*Present for plans:* *mañana viajo* is natural for a fixed plan.\n\nEnglish does the last one too.",
+  "rule": "Spanish tenses do not always mean their clock time.\n\n*Imperfect to soften:* *quería pedirte un favor* is gentler than *quiero*. It is the \"I was wondering\" of Spanish. *Iba a…* says a plan that did not happen.\n\n*Future for a guess:* *Estará en el café* means \"he's probably there\".\n\n*Future to concede:* *será caro, pero…* grants the point before you answer it: \"all right, it may be expensive, but…\". You are not guessing.\n\n*Present for history:* *en 1948 matan a Gaitán* makes the past vivid, like a news headline.\n\n*Present for plans:* *mañana viajo* is natural for a fixed plan.\n\nEnglish does the last one too.",
   "smallPrint": "Teachers call these the imperfect of courtesy, the future of conjecture and concession, the historic present and the present with future meaning.",
   "readAndPick": [
     {
@@ -46,7 +46,7 @@
     {
       "es": "Será muy caro, pero vale la pena.",
       "options": [
-        "It's going to be expensive, but it's worth it.",
+        "It isn't expensive, but it's worth it.",
         "It was expensive, but it was worth it.",
         "It may be expensive, but it's worth it."
       ],
@@ -121,13 +121,13 @@
       "prompt": "Pick and type the whole sentence: *___ pedirte un favor.* (*Quería* or *Quise*) I wanted to ask you a favour (gently).",
       "answer": "Quería pedirte un favor.",
       "accept": [],
-      "why": "The imperfect softens the request; the preterite would say it already happened."
+      "why": "The imperfect softens the request; *quise* would report an attempt in the past, not a request now."
     },
     {
       "prompt": "Pick and type the whole sentence: *___ muy caro, pero vale la pena.* (*Será* or *Es*) It may be very expensive, but it's worth it.",
       "answer": "Será muy caro, pero vale la pena.",
       "accept": [],
-      "why": "The future gives the guess \"may be\", then *pero* answers it."
+      "why": "The future grants the point, \"all right, it may be expensive\", then *pero* answers it."
     },
     {
       "prompt": "Say: Tomorrow I'm travelling to Cali.",
@@ -178,7 +178,7 @@
     {
       "wrong": "Mañana viajaba a Cali.",
       "right": "Mañana viajo a Cali.",
-      "why": "The imperfect is for the past; for a plan, use the present."
+      "why": "For a fixed plan, use the present. *Viajaba* would sound as if the plan has fallen through."
     }
   ],
   "personal": "Ask someone a small favour the polite way, with *Quería…*, or guess something about a friend with *Estará…*"

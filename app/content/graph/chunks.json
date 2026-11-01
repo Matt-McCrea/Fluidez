@@ -4695,16 +4695,16 @@
   "band": "A1",
   "priority": 118,
   "title": "Come in!: siga, siga, or pase, pase",
-  "es": "¡Siga, siga!",
-  "en": "Come in, come in!",
+  "es": "¡Pase!",
+  "en": "Come in!",
   "forms": [
-   {
-    "es": "¡Siga, siga!",
-    "en": "Come in, come in!"
-   },
    {
     "es": "¡Pase!",
     "en": "Come in!"
+   },
+   {
+    "es": "¡Siga, siga!",
+    "en": "Come in, come in!"
    },
    {
     "es": "¡Siga, por favor!",
@@ -4928,7 +4928,7 @@
     "en": "Dear Vale,"
    },
    {
-    "es": "Querido Andrés,",
+    "es": "Querido Andrés:",
     "en": "Dear Andrés,"
    },
    {
@@ -5566,13 +5566,13 @@
   "kind": "chunk",
   "band": "A2",
   "priority": 145,
-  "title": "Card or cash?: ¿tarjeta o efectivo?",
-  "es": "¿Puedo pagar con tarjeta?",
-  "en": "Can I pay by card?",
+  "title": "Cash or card?: ¿efectivo o tarjeta?",
+  "es": "¿Efectivo o tarjeta?",
+  "en": "Cash or card?",
   "forms": [
    {
-    "es": "¿Puedo pagar con tarjeta?",
-    "en": "Can I pay by card?"
+    "es": "¿Efectivo o tarjeta?",
+    "en": "Cash or card?"
    },
    {
     "es": "¿Efectivo o tarjeta?\nCon tarjeta, débito.",
@@ -6675,7 +6675,7 @@
   "priority": 187,
   "title": "Everything will be OK: todo va a salir bien",
   "es": "Tranquilo, todo va a salir bien. Todo saldrá bien.",
-  "en": "Don't worry, everything will be fine.",
+  "en": "Don't worry, everything's going to be fine. Everything will be fine.",
   "requires": [
    "g:future-promises"
   ],
@@ -8919,8 +8919,8 @@
   "band": "B1",
   "priority": 304,
   "title": "I need to ask you a favour: Tengo que pedirte un favor",
-  "es": "Tengo que pedirte un favor: ¿podrías cuidarme el perro este fin de semana?",
-  "en": "I need to ask you a favour: could you look after my dog this weekend?",
+  "es": "Tengo que pedirte un favor.",
+  "en": "I need to ask you a favour.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -9354,7 +9354,7 @@
   "priority": 355,
   "title": "That's all, thanks: Listo, eso sería todo",
   "es": "Listo, eso sería todo. Muchas gracias, muy amable.",
-  "en": "Great, that's everything. Thank you very much.",
+  "en": "Great, that's everything. Thank you very much, that's very kind.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -9733,7 +9733,7 @@
   "priority": 394,
   "title": "Count on me: cuenta conmigo",
   "es": "Si necesitas algo, cuenta conmigo. Cuento contigo.",
-  "en": "If you need anything, count on me.",
+  "en": "If you need anything, count on me. I'm counting on you.",
   "requires": [],
   "contrasts": [],
   "unpacks": "g:verbs-prepositions",
@@ -9887,7 +9887,7 @@
   "priority": 405,
   "title": "Overwhelming thanks: no sé cómo agradecértelo",
   "es": "No sé cómo agradecértelo, de verdad.",
-  "en": "I don't know how to thank you.",
+  "en": "I don't know how to thank you, really.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -10008,7 +10008,7 @@
   "priority": 406,
   "title": "Fingers crossed: crucemos los dedos",
   "es": "Crucemos los dedos para que salga bien.",
-  "en": "Let's keep our fingers crossed.",
+  "en": "Let's keep our fingers crossed that it goes well.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -10033,7 +10033,7 @@
   "priority": 406,
   "title": "Formal good wishes: le deseo lo mejor",
   "es": "Le deseo lo mejor en esta nueva etapa.",
-  "en": "I wish you all the best.",
+  "en": "I wish you all the best in this new chapter. (formal)",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -10185,8 +10185,8 @@
   "band": "B2",
   "priority": 414,
   "title": "What can you do: ¿qué le vamos a hacer?",
-  "es": "Perdimos el bus. ¿Qué le vamos a hacer?",
-  "en": "What can you do?",
+  "es": "¿Qué le vamos a hacer?",
+  "en": "We missed the bus. What can you do?",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -10290,7 +10290,7 @@
   "priority": 424,
   "title": "In the short and long term: a corto plazo, a largo plazo",
   "es": "A corto plazo no hay solución, pero a largo plazo sí. Es una inversión a largo plazo.",
-  "en": "In the short term there's no solution, but in the long term there is.",
+  "en": "In the short term there's no solution, but in the long term there is. It's a long-term investment. It's a long-term investment.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -10335,8 +10335,8 @@
   "band": "B2",
   "priority": 424,
   "title": "I'm absolutely sure: lo tengo clarísimo",
-  "es": "Lo tengo clarísimo: no voy a cambiar de opinión.",
-  "en": "I'm absolutely clear on that.",
+  "es": "Lo tengo clarísimo. No voy a cambiar de opinión.",
+  "en": "I'm absolutely clear on that. I'm not going to change my mind.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -10415,7 +10415,7 @@
   "priority": 425,
   "title": "No doubt about it: sin duda alguna",
   "es": "Sin duda alguna, es la mejor opción.",
-  "en": "Without a doubt.",
+  "en": "Without a doubt, it's the best option.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -10563,8 +10563,8 @@
   "band": "B2",
   "priority": 444,
   "title": "Before I forget: antes de que se me olvide",
-  "es": "Antes de que se me olvide: el viernes no hay clase.",
-  "en": "Before I forget: there's no class on Friday.",
+  "es": "Antes de que se me olvide, el viernes no hay clase.",
+  "en": "Before I forget, there's no class on Friday.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -10681,7 +10681,7 @@
   "priority": 454,
   "title": "Checking they've got time: ¿tienes un minutico?",
   "es": "¿Tienes un minutico? Es que quería contarte una cosa.",
-  "en": "Have you got a minute?",
+  "en": "Have you got a minute? It's just that I wanted to tell you something. It's just that I wanted to tell you something.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -10778,7 +10778,7 @@
   "priority": 455,
   "title": "Frozen with surprise: me quedé de piedra",
   "es": "Me quedé de piedra cuando me dieron la noticia.",
-  "en": "I was stunned.",
+  "en": "I was stunned when they gave me the news.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -10835,7 +10835,7 @@
   "priority": 484,
   "title": "At breaking point: ¡no puedo más!",
   "es": "¡No puedo más! ¡No lo aguanto más!",
-  "en": "I can't take any more!",
+  "en": "I can't take any more! I can't stand it any more! I can't stand it any more!",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -10945,7 +10945,7 @@
   "priority": 485,
   "title": "Reassurance: todo tiene solución",
   "es": "Tranquilo, todo tiene solución.",
-  "en": "There's a way out of everything.",
+  "en": "Don't worry, there's a way out of everything. (to a man)",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -10970,7 +10970,7 @@
   "priority": 485,
   "title": "It's over now: ya pasó",
   "es": "Tranquila, ya pasó.",
-  "en": "It's over now.",
+  "en": "It's all right, it's over now. (to a woman)",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -11000,7 +11000,7 @@
   "priority": 486,
   "title": "Same here: a mí me pasa lo mismo",
   "es": "A mí me pasa lo mismo, no te preocupes.",
-  "en": "Same thing happens to me.",
+  "en": "The same thing happens to me, don't worry.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -11074,7 +11074,7 @@
   "priority": 494,
   "title": "Spain's '¡qué rollo!' = ¡qué pereza!",
   "es": "¡Qué rollo de película!",
-  "en": "How boring!",
+  "en": "What a boring film!",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -11616,7 +11616,7 @@
   "band": "C1",
   "priority": 516,
   "title": "Lo tengo en la punta de la lengua.",
-  "es": "¿Cómo se llamaba ese actor? Lo tengo en la punta de la lengua.",
+  "es": "Lo tengo en la punta de la lengua.",
   "en": "It's on the tip of my tongue.",
   "requires": [],
   "contrasts": [],
@@ -12186,7 +12186,7 @@
   "priority": 528,
   "title": "Eso vale su platica.",
   "es": "Me gusta, pero vale su platica.",
-  "en": "It costs a pretty penny.",
+  "en": "I like it, but it costs a pretty penny.",
   "requires": [
    "g:diminutives"
   ],
@@ -12502,7 +12502,7 @@
   "priority": 556,
   "title": "Mi más sentido pésame.",
   "es": "Quisiera expresarle mi más sentido pésame.",
-  "en": "My deepest condolences.",
+  "en": "I'd like to express my deepest condolences to you. (formal)",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -12522,7 +12522,7 @@
   "band": "C1",
   "priority": 556,
   "title": "¡Qué embarrada!",
-  "es": "¿Se canceló el viaje? ¡Qué embarrada!",
+  "es": "¡Qué embarrada!",
   "en": "What a bummer!",
   "requires": [],
   "contrasts": [],
@@ -12846,7 +12846,7 @@
   "priority": 565,
   "title": "Just around the corner: a la vuelta de la esquina",
   "es": "La tienda está a la vuelta de la esquina. Diciembre está a la vuelta de la esquina.",
-  "en": "just around the corner (place or time)",
+  "en": "The shop is just around the corner. December is just around the corner.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -13201,8 +13201,8 @@
   "band": "C1",
   "priority": 574,
   "title": "Handyman: es todero",
-  "es": "Mi papá es todero: arregla de todo.",
-  "en": "My dad's a real handyman: he fixes everything.",
+  "es": "Mi papá es todero. Arregla de todo.",
+  "en": "My dad's a real handyman. He fixes everything.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -13392,7 +13392,7 @@
   "band": "C1",
   "priority": 577,
   "title": "No te hubieras molestado.",
-  "es": "¡Qué detalle! No te hubieras molestado.",
+  "es": "No te hubieras molestado.",
   "en": "You shouldn't have.",
   "requires": [
    "g:pluperfect-subj"
@@ -13414,8 +13414,8 @@
   "band": "C1",
   "priority": 577,
   "title": "¿Qué es de tu vida?",
-  "es": "¡Hola! ¿Qué es de tu vida? ¡Cuánto tiempo!",
-  "en": "What have you been up to all this time?",
+  "es": "¿Qué es de tu vida?",
+  "en": "What have you been up to?",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -13435,7 +13435,7 @@
   "priority": 578,
   "title": "Allá tú.",
   "es": "Allá tú, pero abrígate, que hace frío.",
-  "en": "That's up to you.",
+  "en": "That's up to you, but wrap up warm, it's cold.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -13475,7 +13475,7 @@
   "priority": 578,
   "title": "Mil disculpas.",
   "es": "Mil disculpas por la demora.",
-  "en": "I'm so sorry.",
+  "en": "I'm so sorry for the delay.",
   "requires": [],
   "contrasts": [],
   "serves": [
@@ -13494,7 +13494,7 @@
   "band": "C1",
   "priority": 578,
   "title": "No te voy a decir que no.",
-  "es": "¿Un tinto? No te voy a decir que no.",
+  "es": "No te voy a decir que no.",
   "en": "I won't say no.",
   "requires": [],
   "contrasts": [],
@@ -13535,7 +13535,7 @@
   "priority": 579,
   "title": "Bueno, te dejo.",
   "es": "Bueno, te dejo, que me están llamando por la otra línea.",
-  "en": "Right, I'll let you go.",
+  "en": "Right, I'll let you go, someone's calling me on the other line.",
   "requires": [],
   "contrasts": [],
   "serves": [

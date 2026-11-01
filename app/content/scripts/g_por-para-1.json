@@ -85,7 +85,7 @@
     {
       "wrong": "Cuesta treinta mil para persona.",
       "right": "Cuesta treinta mil por persona.",
-      "why": "Per is always *por*: *por persona*, *por noche*."
+      "why": "Per is *por*, not *para*: *por persona*, *por noche*. For how often, Spanish usually says *al*: *dos veces al día*."
     },
     {
       "wrong": "Salimos por Medellín el viernes.",

@@ -31,7 +31,7 @@
       "en": "I have a friend whose parents live in Toronto."
     }
   ],
-  "rule": "*Cuyo* means \"whose\". It joins two ideas: *una mujer* + *su hijo trabaja en la Alcaldía* becomes *una mujer cuyo hijo trabaja en la Alcaldía*.\n\nTwo things differ from English:\n*Cuyo* agrees with the thing owned, not the owner: *cuyo hijo*, *cuyos hijos*, *cuya casa*, *cuyas casas*.\nNo *el*, *la* or *su* follows it: *cuyos dueños*, never *cuyos los dueños*.\n\nIt belongs to writing and formal speech. In chat people use two sentences: *Conozco a una mujer. Su hijo trabaja en la Alcaldía.* You need *cuyo* to read the formal kind.",
+  "rule": "*Cuyo* means \"whose\". It joins two ideas: *una mujer* + *su hijo trabaja en la Alcaldía* becomes *una mujer cuyo hijo trabaja en la Alcaldía*.\n\nTwo things differ from English:\n*Cuyo* agrees with the thing owned, not the owner: *cuyo hijo*, *cuyos hijos*, *cuya casa*, *cuyas casas*.\nNo *el*, *la* or *su* follows it: *cuyos dueños*, never *cuyos los dueños*.\n\nIt belongs to writing and formal speech. In chat people use two sentences: *Conozco a una mujer. Su hijo trabaja en la Alcaldía.* You need *cuyo* to read the formal kind, where a preposition often goes in front of it: *un proyecto de cuyo éxito depende todo el barrio* (a project on whose success the whole neighbourhood depends).",
   "smallPrint": "Teachers call *cuyo* a possessive relative. It is an adjective, which is why it agrees like one.",
   "readAndPick": [
     {
@@ -114,7 +114,7 @@
       "why": "*Dueños* is plural, so *cuyo* becomes *cuyos*."
     },
     {
-      "prompt": "Pick *cuya* or *cuyas* and type the whole sentence: *Es una tienda ___ empleadas son todas mujeres.*",
+      "prompt": "Pick *cuya* or *cuyas* and type the whole sentence: *Es una tienda ___ empleadas son todas de Cali.*",
       "answer": "Es una tienda cuyas empleadas son todas de Cali.",
       "why": "*Empleadas* is feminine and plural, so *cuyas*, whatever the shop is."
     },

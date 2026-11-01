@@ -35,7 +35,7 @@
       "en": "When the film finished, we went to eat."
     }
   ],
-  "rule": "You already use *cuando* with the present for routines. With the past, English when hides two meanings, and Spanish splits them.\n\nA stretch of time or an old habit takes the describing past: *Cuando era niño, vivía en Toronto.*\nOne moment takes the event past: *Cuando llegué a Bogotá...*\n\n*Mientras* means while: two things going on at the same time. Both sides usually take the describing past: *Mientras yo cocinaba, él lavaba.*\n\n*Siempre que* means whenever, every time. Use the same tense on both sides: present for habits now (*siempre que llueve, vendemos más*), describing past for old habits (*siempre que venían, hacía ajiaco*).\n\nNo accent on any of them unless you're asking a question: *¿Cuándo llegaste?*",
+  "rule": "You already use *cuando* with the present for routines. With the past, English when hides two meanings, and Spanish splits them.\n\nIt isn't about how long something lasted. It's about how you tell it.\nWhat sets the scene, or an old habit, takes the describing past: *Cuando era niño, vivía en Toronto.*\nAn event that moves the story on takes the event past: *Cuando llegué a Bogotá...*\nEven a long stretch can be an event, if you wrap it up as one finished thing: *Hernando fue taxista cuarenta años.*\n\n*Mientras* means while. The *mientras* side sets the scene, so it usually takes the describing past: *Mientras yo cocinaba...* The other side depends on what you're telling: something else going on (*él lavaba*), or something that happened in the middle of it (*sonó el celular*).\n\n*Siempre que* means whenever, every time. So does *cada vez que*. Use the same tense on both sides: present for habits now (*siempre que llueve, vendemos más*), describing past for old habits (*siempre que venían, hacía ajiaco*).\n\n*Cuando* only takes an accent in a question, even one tucked inside a sentence: *¿Cuándo llegaste?* *No sé cuándo ir.*",
   "smallPrint": "Teachers call these time clauses. For something that hasn't happened yet (when I arrive tomorrow), *cuando* needs a different verb form, which comes later.",
   "readAndPick": [
     {
@@ -112,7 +112,7 @@
       "prompt": "Pick *era* or *fui* and type the whole sentence: *Cuando ___ niño, vivía en Toronto.*",
       "answer": "Cuando era niño, vivía en Toronto.",
       "accept": [],
-      "why": "Being a kid is a whole stretch of time, so the describing past: *era*."
+      "why": "*Cuando era niño* sets the scene for the rest, so the describing past: *era*."
     },
     {
       "prompt": "Pick *cocinaba* or *cociné* and type the whole sentence: *Mientras yo ___, Hernando lavaba los platos.*",
@@ -167,12 +167,12 @@
     {
       "wrong": "Cuando fui niño, vivía en Toronto.",
       "right": "Cuando era niño, vivía en Toronto.",
-      "why": "Almost. Childhood isn't one moment, it's a whole stretch, so *era*."
+      "why": "Almost. *Cuando era niño* sets the scene, so *era*. It isn't about length: *Hernando fue taxista cuarenta años* wraps forty years up as one finished thing."
     },
     {
       "wrong": "Mientras cociné, Hernando lavó los platos.",
       "right": "Mientras yo cocinaba, Hernando lavaba los platos.",
-      "why": "*Mientras* sets two things side by side as they were going on, so the describing past."
+      "why": "*Mientras* sets the scene, so here it wants the describing past: *cocinaba*. The other side can be either: *Mientras yo cocinaba, sonó el celular.*"
     },
     {
       "wrong": "Cuándo llegué a Bogotá, no conocía a nadie.",

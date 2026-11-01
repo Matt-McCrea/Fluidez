@@ -11,7 +11,7 @@
       "npcEn": "Hernando: Good evening, Tomás. Did you all get there safely? Simón asks about you all, he shouts your names all day.",
       "intent": "Say yes, you arrived well, and ask how Simón is.",
       "accept": [
-        "Sí, llegamos bien, Don Hernando. ¿Cómo está Simón?",
+        "Sí, llegamos bien, don Hernando. ¿Cómo está Simón?",
         "Buenas noches, Don Hernando. Llegamos bien. ¿Y cómo está Simón?",
         "Todo bien, gracias. ¿Cómo está Simón con usted?"
       ],

@@ -178,7 +178,7 @@
     {
       "wrong": "Tomás abrió la caja que encontró y vio una carta.",
       "right": "Tomás abrió la caja que había encontrado y vio una carta.",
-      "why": "He found the box before he opened it, so the earlier event takes *había*."
+      "why": "He found the box before he opened it. *Había encontrado* makes that order clear."
     }
   ],
   "personal": "Tell a short story from last weekend in three sentences: one that sets the scene (*Era…* or *Hacía…*), one event, and one thing that had already happened (*Ya había…*)."
