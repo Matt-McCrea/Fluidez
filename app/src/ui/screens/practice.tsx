@@ -157,19 +157,21 @@ function Run({ spec, onDone, onExit, onSwitch }: { spec: PracticeSpec; onDone: (
     if (finished.current) return;
     finished.current = true;
     setOver(true);
-    if (spec.kind === 'conjugate' || spec.kind === 'translate') {
-      const key = bestKey(spec);
-      const was = ui.state.bests[key] ?? 0;
-      if (run.right > was) {
-        setBest({ was, now: run.right });
-        await ui.update((s) => { s.bests[key] = run.right; });
+    try {
+      if (spec.kind === 'conjugate' || spec.kind === 'translate') {
+        const key = bestKey(spec);
+        const was = ui.state.bests[key] ?? 0;
+        if (run.right > was) {
+          setBest({ was, now: run.right });
+          await ui.update((s) => { s.bests[key] = run.right; });
+        }
       }
-    }
-    if (spec.kind === 'checkpoint' && run.answered) {
-      const byUnit = Object.fromEntries(run.byUnit);
-      await ui.update((s) => { s.checkpoints = [...s.checkpoints, { at: now(), byUnit }]; });
-    }
-    await learner.flush();
+      if (spec.kind === 'checkpoint' && run.answered) {
+        const byUnit = Object.fromEntries(run.byUnit);
+        await ui.update((s) => { s.checkpoints = [...s.checkpoints, { at: now(), byUnit }]; });
+      }
+      await learner.flush();
+    } catch { /* the store refused: the result stands, and saving is retried */ }
     app.refresh();
   };
   useEffect(() => { if (over && !finished.current) void finish(); }, [over]);

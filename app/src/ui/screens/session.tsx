@@ -37,6 +37,8 @@ export function Session({ mode, onExit, onAnother, capMinutes, resume, onPractis
   const [leaving, setLeaving] = useState(false);
   const [more, setMore] = useState(false);
   const [finishing, setFinishing] = useState(false);
+  /** the close was not saved: what the store said, and how to try again */
+  const [saveFailed, setSaveFailed] = useState<{ message: string; retry: () => void } | null>(null);
   const [stopAsked, setStopAsked] = useState(false);
   const [stopped, setStopped] = useState(false);
   const [, setTick] = useState(0);
@@ -93,16 +95,25 @@ export function Session({ mode, onExit, onAnother, capMinutes, resume, onPractis
   }, []);
 
   const closeIdx = plan.blocks.findIndex((b) => b.kind === 'close');
-  const toClose = async () => {
+  /** End the session with `end`. A refused save leaves the lesson open with a way to try again, never a screen stuck on "Saving…". */
+  const closeWith = async (end: () => Promise<unknown>, done: () => void) => {
     settled.current = true;
     window.clearTimeout(saveTimer.current);
+    setSaveFailed(null);
     setFinishing(true);
-    await runner.finish();
+    try { await end(); } catch (e) {
+      setFinishing(false);
+      setSaveFailed({ message: (e as Error).message || String(e), retry: () => void closeWith(end, done) });
+      return;
+    }
+    done();
+  };
+  const toClose = () => closeWith(() => runner.finish(), () => {
     setMore(offerMore(app.learner, app.bundle, app.ui, app.now()));
     setFinishing(false);
     app.refresh();
     setIdx(closeIdx >= 0 ? closeIdx : plan.blocks.length);
-  };
+  });
 
   const next = async (from: number) => {
     if (advancing.current === from || from !== idx) return;
@@ -121,13 +132,7 @@ export function Session({ mode, onExit, onAnother, capMinutes, resume, onPractis
       // stop here: if only optional blocks are left the core is done and counts in full
       const left = rest(n);
       if (left.every(softBlock)) { left.forEach((b) => runner.skip(b)); await toClose(); return; }
-      settled.current = true;
-      window.clearTimeout(saveTimer.current);
-      setFinishing(true);
-      await runner.stop();
-      setFinishing(false);
-      setStopped(true);
-      app.refresh();
+      await closeWith(() => runner.stop(), () => { setFinishing(false); setStopped(true); app.refresh(); });
       return;
     }
     if (n >= plan.blocks.length || plan.blocks[n].kind === 'close') { await toClose(); return; }
@@ -137,7 +142,11 @@ export function Session({ mode, onExit, onAnother, capMinutes, resume, onPractis
     setIdx(n);
   };
 
-  const leave = async () => { await persist(); await runner.abandon({ keepSaved: true }); onExit(); };
+  const leave = async () => {
+    // a store that refuses the resume point must not keep the learner in the lesson; the shell says saving has stopped
+    try { await persist(); await runner.abandon({ keepSaved: true }); } catch { /* leave anyway */ }
+    onExit();
+  };
   const elapsed = runner.elapsed();
   const left = block && block.kind !== 'close' ? Math.round(runner.minutesLeft(idx, openedAt.current)) : 0;
   const canStop = !runner.finished && !stopAsked && block && block.kind !== 'close' && elapsed >= STOP_AFTER_MINUTES;
@@ -159,6 +168,14 @@ export function Session({ mode, onExit, onAnother, capMinutes, resume, onPractis
     );
   } else if (finishing) {
     body = <p class="small" aria-live="polite">Saving…</p>;
+  } else if (saveFailed) {
+    body = (
+      <>
+        <Heading title="That didn't save" />
+        <section class="card"><p data-save-failed>{saveFailed.message}</p></section>
+        <div class="actions"><Continue label="Try again" onClick={saveFailed.retry} /></div>
+      </>
+    );
   } else if (!block) {
     body = (
       <>

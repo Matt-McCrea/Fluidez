@@ -544,9 +544,7 @@ export class SessionRunner {
       if (this.learner.isLearning(n)) this.learner.completeIntroduction(n, { at: this.now() });
     }
     const path = carryOwed(advancePath(this.ui.path, this.plan, true), [...this.notPresented]);
-    this.finished = true;
-    await this.ui.commitSession(this.learner, path, this.learner.day(this.now()), this.quick ? { quick: true } : undefined);
-    await this.ui.clearSession();
+    await this.commitClose(path);
     return path;
   }
 
@@ -566,11 +564,28 @@ export class SessionRunner {
     }
     const g = this.plan.newNodes.grammar.find((n) => this.presented.has(n));
     const path = stoppedPath(this.ui.path, this.plan, g);
-    this.finished = true;
-    this.stopped = true;
-    await this.ui.commitSession(this.learner, path, this.learner.day(this.now()), this.quick ? { quick: true } : undefined);
-    await this.ui.clearSession();
+    await this.commitClose(path, true);
     return path;
+  }
+
+  /**
+   * Save the close and only then call the session finished. `commitSession`
+   * changes the UI documents in memory before it writes them, so when the write
+   * is refused they are put back: the call rejects, the resume point stays, and
+   * trying again counts the session once.
+   */
+  private async commitClose(path: PathState, stopped = false): Promise<void> {
+    const before = { state: this.ui.state, path: this.ui.path };
+    try {
+      await this.ui.commitSession(this.learner, path, this.learner.day(this.now()), this.quick ? { quick: true } : undefined);
+    } catch (e) {
+      this.ui.state = before.state;
+      this.ui.path = before.path;
+      throw e;
+    }
+    this.finished = true;
+    this.stopped = stopped;
+    await this.ui.clearSession();
   }
 
   /**
