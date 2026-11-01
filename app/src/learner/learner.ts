@@ -501,10 +501,13 @@ export class Learner {
     if (this.state.nodes[id]) return;
     const diff = this.scheduler.next(toCard(newCard(spec.at)), new Date(spec.at), Rating.Good).card.difficulty;
     const make = (c: { stability: number; dueAt: number }): CardJSON => {
-      const days = Math.max(1, Math.round(c.stability));
+      // last reviewed one stability before it falls due, but never after now: a card
+      // spread to fall due later than that was last reviewed at placement, and FSRS
+      // refuses a review at a moment before the last one
+      const last = Math.min(spec.at, c.dueAt - Math.max(1, Math.round(c.stability)) * DAY_MS);
       return {
-        due: c.dueAt, stability: c.stability, difficulty: diff, scheduled_days: days, learning_steps: 0,
-        reps: 3, lapses: 0, state: State.Review, last_review: c.dueAt - days * DAY_MS, baseStability: c.stability,
+        due: c.dueAt, stability: c.stability, difficulty: diff, scheduled_days: Math.max(1, Math.round((c.dueAt - last) / DAY_MS)), learning_steps: 0,
+        reps: 3, lapses: 0, state: State.Review, last_review: last, baseStability: c.stability,
       };
     };
     const learned = Math.max(spec.receptive?.stability ?? 0, spec.productiveCard?.stability ?? 0) >= LEARNED_STABILITY_DAYS;
