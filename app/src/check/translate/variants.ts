@@ -17,8 +17,8 @@ import type { Person } from '../../engine';
 import { conjugateBareCells } from '../../engine/conjugate';
 import { changePerson } from '../../exercises/reinflect';
 import {
-  DETERMINERS, EXPERIENCER, detGender, enSubject, enWords, enYou, finiteCandidates, gerundOf, isFunctionWord, low, otherGender, parseClause, render, replaceCore,
-  toToks, verbReadings, type Clause, type Tok,
+  DETERMINERS, EXPERIENCER, compoundParticiple, detGender, enSubject, enWords, enYou, finiteCandidates, gerundOf, isFunctionWord, isInfinitive, low,
+  otherGender, parseClause, render, replaceCore, toToks, verbReadings, type Clause, type Tok,
 } from '../../exercises/spanish';
 
 export type Register = 'tú' | 'usted' | 'ustedes' | 'vosotros';
@@ -31,6 +31,8 @@ export interface Variant {
   register?: Register;
   /** The author's own form (sentence.es), as opposed to a derived one. */
   model?: boolean;
+  /** Set when the variant swaps one form of the card for another that is right too: a pass that says so. */
+  note?: string;
 }
 
 /** Latin American word → Peninsular word. Nouns carry the Peninsular gender
@@ -320,6 +322,85 @@ export function genderVariants(es: string, en: string): string[] {
   return [speaker, listener, both].filter((x): x is Tok[] => !!x).map(render);
 }
 
+// ---- -ra and -se, habría and hubiera -----------------------------------------------
+
+/** What opens a subordinate clause: the imperfect subjunctive after it is not a polite or a conditional main verb. */
+const SUBORDINATOR = /^(si|que|ojalá|aunque|como|cuando|donde|quien|quienes|mientras)$/;
+
+/** Does a subordinator sit in the same clause, just before token `i`? A comma ends the clause. */
+function subordinate(ts: readonly Tok[], i: number): boolean {
+  for (let k = i - 1; k >= Math.max(0, i - 4); k--) {
+    if (/[,;:.!?]/.test(ts[k].post)) return false;
+    if (SUBORDINATOR.test(low(ts[k]))) return true;
+  }
+  return false;
+}
+
+/** "comer fuera", "fuera de casa": the adverb is spelled like the -ra form of ser and ir. */
+function adverbFuera(ts: readonly Tok[], i: number): boolean {
+  if (low(ts[i]) !== 'fuera') return false;
+  const prev = low(ts[i - 1]);
+  return low(ts[i + 1]) === 'de' || !!ts[i].post || isInfinitive(prev) || (!!prev && verbReadings(prev).length > 0);
+}
+
+/** Every non-empty subset (up to three swaps) of replacements, rendered. */
+function swapSubsets(ts: Tok[], swaps: ReadonlyArray<readonly [number, string]>): string[] {
+  const out = new Set<string>();
+  const n = Math.min(swaps.length, 3);
+  for (let mask = 1; mask < 1 << n; mask++) {
+    let t = ts;
+    for (let k = 0; k < n; k++) if (mask & (1 << k)) t = replaceCore(t, swaps[k][0], swaps[k][1]);
+    out.add(render(t));
+  }
+  return [...out];
+}
+
+const habForm = (tense: 'condicional' | 'impsubj' | 'impsubjse', person: string): string | undefined => {
+  const v = verbByInf('haber');
+  return v ? conjugateBareCells(v, tense)[PERSONS.indexOf(person as Person)]?.form : undefined;
+};
+
+/** hablara and hablase are one tense. The -se form replaces a -ra form only in a subordinate clause (quisiera and
+ *  pudiera standing for a conditional do not take -se) or on haber (hubiera and hubiese are both result-clause
+ *  forms); the -ra form replaces any -se form. */
+export function subjunctiveVariants(es: string): string[] {
+  const ts = toToks(es);
+  const swaps: Array<readonly [number, string]> = [];
+  ts.forEach((tok, i) => {
+    if (adverbFuera(ts, i)) return;
+    const forms = new Set<string>();
+    for (const a of verbReadings(low(tok))) {
+      if (a.tense !== 'impsubj' && a.tense !== 'impsubjse') continue;
+      if (a.tense === 'impsubj' && a.inf !== 'haber' && !subordinate(ts, i)) continue;
+      const v = verbByInf(a.inf.replace(/se$/, ''));
+      const cell = v && conjugateBareCells(v, a.tense === 'impsubj' ? 'impsubjse' : 'impsubj')[PERSONS.indexOf(a.person as Person)];
+      if (cell && cell.form !== low(tok)) forms.add(cell.form);
+    }
+    for (const f of forms) swaps.push([i, f]);
+  });
+  return swaps.length ? swapSubsets(ts, swaps) : [];
+}
+
+/** In the result clause of a past unreal condition, habría llegado and hubiera llegado are the same thing. The
+ *  si clause keeps its hubiera. A pass through this swap says which form the card taught. */
+export function resultClauseVariants(es: string): string[] {
+  const ts = toToks(es);
+  const swaps: Array<readonly [number, string]> = [];
+  ts.forEach((tok, i) => {
+    if (compoundParticiple(ts, i) < 0 || subordinate(ts, i)) return;
+    for (const a of verbReadings(low(tok))) {
+      if (a.inf !== 'haber') continue;
+      const to = a.tense === 'condicional' ? 'impsubj' : a.tense === 'impsubj' || a.tense === 'impsubjse' ? 'condicional' : null;
+      const form = to && habForm(to, a.person);
+      if (form && form !== low(tok)) { swaps.push([i, form]); break; }
+    }
+  });
+  return swaps.length ? swapSubsets(ts, swaps) : [];
+}
+
+/** habría and hubiera are both right in the result clause; the card teaches one. */
+const RESULT_CLAUSE_NOTE = 'Habría and hubiera both work in the result clause.';
+
 export interface ExpandOptions {
   /** Other Spanish the course accepts for this English (other bank sentences
    *  with the same English: the acceptFor idea from js/gameitems.js). */
@@ -344,6 +425,8 @@ export function expandAccepted(s: { es: string; en: string; accept?: readonly st
   base.forEach((es, i) => add({ es, ...(i === 0 ? { model: true } : {}) }));
   for (const es of base) for (const v of registerVariants(es, s.en)) add(v);
   for (const v of out.slice()) for (const g of genderVariants(v.es, s.en)) add({ ...v, es: g, model: false });
+  for (const v of out.slice()) for (const r of resultClauseVariants(v.es)) add({ ...v, es: r, model: false, note: RESULT_CLAUSE_NOTE });
+  for (const v of out.slice()) for (const r of subjunctiveVariants(v.es)) add({ ...v, es: r, model: false });
   for (const es of opts.peninsular ?? []) add({ es, variant: 'peninsular' });
   for (const v of out.slice()) {
     for (const p of peninsularVariants(v.es, opts.peninsularWords)) add({ es: p, variant: 'peninsular', ...(v.register ? { register: v.register } : {}) });

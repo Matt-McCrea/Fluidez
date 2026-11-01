@@ -31,6 +31,8 @@ export interface TranslationResult {
   hintKind?: HintKind;
   /** Matched only through a Peninsular form. */
   variant?: 'peninsular';
+  /** Matched through a swap the card did not teach but Spanish allows: a pass that says so. */
+  note?: string;
   /** The register of "you" the learner used, when the sentence has one. */
   register?: Register;
   /** The accepted form closest to the input: the one to show on reveal. */
@@ -161,7 +163,7 @@ export function matchTranslation(input: string, sentence: SentenceLike, opts: Ma
       if (slip) { nearHit ??= { v }; continue; }
       return {
         pass: true, closest: v.es,
-        ...(v.variant ? { variant: v.variant } : {}), ...(v.register ? { register: v.register } : {}),
+        ...(v.variant ? { variant: v.variant } : {}), ...(v.register ? { register: v.register } : {}), ...(v.note ? { note: v.note } : {}),
       };
     }
     if (sameToks && !pronOk && pronOkLoose && advOk) { nearHit ??= { v }; continue; }
