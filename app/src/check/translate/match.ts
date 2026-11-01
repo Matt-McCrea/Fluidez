@@ -76,6 +76,11 @@ function experiencerSlip(ci: Canon, en: string): boolean {
   return ci.experiencer.some((x) => x.mismatch || (x.like && carried.has(x.pron) && EN_LIKES.test(enWords(en).join(' '))));
 }
 
+/** Where the same tokens hide two spellings of one figure ("doscientos" for "doscientas"), or -1. */
+function figureSlip(ci: Canon, cv: Canon): number {
+  return ci.toks.findIndex((t, i) => !!t.form && !!cv.toks[i]?.form && t.form !== cv.toks[i].form);
+}
+
 /** Subject pronouns the learner may write for this accepted form. */
 function pronounsAllowed(v: Variant, cv: Canon, en: string): Set<string> {
   const ok = new Set(cv.pronouns);
@@ -147,6 +152,7 @@ export function matchTranslation(input: string, sentence: SentenceLike, opts: Ma
   let nearHit: { v: Variant } | null = null;
   let subjectHit: { v: Variant } | null = null;
   let orderHit: { v: Variant } | null = null;
+  let figureHit: { v: Variant; at: number } | null = null;
 
   for (const { v, cv } of cvs) {
     if (slip) break;
@@ -158,6 +164,8 @@ export function matchTranslation(input: string, sentence: SentenceLike, opts: Ma
     const pronOkLoose = ci.pronouns.every((p) => [...allowed].some((q) => deaccent(q) === deaccent(p)));
     const advOk = advsOk(ci, cv);
     const advLoose = deaccent(advKey(ci)) === deaccent(advKey(cv));
+    const figure = sameToks ? figureSlip(ci, cv) : -1;
+    if (figure >= 0) { figureHit ??= { v, at: figure }; continue; }
     if (sameToks && pronOk && advOk) {
       const slip = ci.accentSlips > 0 || encliticAccentSlip(ci, cv);
       if (slip) { nearHit ??= { v }; continue; }
@@ -180,6 +188,7 @@ export function matchTranslation(input: string, sentence: SentenceLike, opts: Ma
   }
   if (subjectHit) return { pass: false, hint: HINT_TEXT.subject, hintKind: 'subject', closest: subjectHit.v.es };
   if (orderHit) return { pass: false, hint: HINT_TEXT['word-order'], hintKind: 'word-order', closest: orderHit.v.es };
+  if (figureHit) return { pass: false, hint: HINT_TEXT.agreement, hintKind: 'agreement', closest: figureHit.v.es, at: figureHit.at };
 
   // closest accepted form, by token distance with adverbials and pronouns in place
   const flat = (c: Canon) => {

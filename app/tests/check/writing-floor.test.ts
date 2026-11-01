@@ -217,3 +217,10 @@ describe('the authored models still clear their own checklists', () => {
     expect(failed).toEqual([]);
   });
 });
+
+test('a task of counts alone is not passed by text below the floor', () => {
+  const r = checkWriting({ constraints: [{ type: 'minWords', n: 5 }] }, 'I went to the beach with my family and we ate fish.');
+  expect(r.results[0].pass).toBe(true);
+  expect(r.floor.ok).toBe(false);
+  expect(r.allPass).toBe(false);
+});

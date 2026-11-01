@@ -76,8 +76,8 @@ describe('habría and hubiera in the result clause', () => {
   });
 
   test('the variants keep the si clause as it is', () => {
-    expect(resultClauseVariants('Si hubiera sabido, habría venido.')).toEqual(['Si hubiera sabido, hubiera venido.']);
-    expect(resultClauseVariants('Si hubiera sabido, no habría venido.')).toEqual(['Si hubiera sabido, no hubiera venido.']);
+    expect(resultClauseVariants('Si hubiera sabido, habría venido.', 'If I had known, I would have come.')).toEqual(['Si hubiera sabido, hubiera venido.']);
+    expect(resultClauseVariants('Si hubiera sabido, no habría venido.', "If I had known, I wouldn't have come.")).toEqual(['Si hubiera sabido, no hubiera venido.']);
   });
 
   test('every form of the model is still the first in the list', () => {

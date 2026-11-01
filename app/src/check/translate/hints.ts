@@ -134,6 +134,7 @@ function formsOf(w: string): Form[] {
 type VerbDiff = 'person' | 'agree' | 'tense' | 'ending' | 'mood' | 'aspect' | 'to-inf' | 'to-finite' | 'to-ger' | 'to-part';
 const AGREE_VERBS = new Set([...EXPERIENCER].filter((v) => v !== 'quedar'));
 const SHAPE_TO = { finite: 'to-finite', inf: 'to-inf', ger: 'to-ger', part: 'to-part' } as const;
+const THIRD = new Set(['él/ella', 'ellos']);
 
 /** How two tenses of one person differ. */
 function tenseDiff(a: TenseKey, b: TenseKey): 'mood' | 'aspect' | 'tense' | 'ending' {
@@ -150,7 +151,9 @@ function verbDiff(typed: string, want: string): VerbDiff | null {
   const pairs = tb.flatMap((x) => ta.filter((y) => y.lemma === x.lemma).map((y) => [y, x] as const));
   const fin = pairs.filter(([y, x]) => y.kind === 'finite' && x.kind === 'finite');
   if (fin.length) {
-    if (fin.some(([y, x]) => y.tense === x.tense && y.person !== x.person)) return fin.some(([, x]) => AGREE_VERBS.has(x.lemma)) ? 'agree' : 'person';
+    const who = fin.filter(([y, x]) => y.tense === x.tense && y.person !== x.person);
+    // "agree" is one thing liked or more than one; me parezco and me parece are who
+    if (who.length) return who.some(([y, x]) => AGREE_VERBS.has(x.lemma) && THIRD.has(y.person!) && THIRD.has(x.person!)) ? 'agree' : 'person';
     const kinds = fin.filter(([y, x]) => y.person === x.person).map(([y, x]) => tenseDiff(y.tense!, x.tense!));
     return (['mood', 'aspect', 'tense'] as const).find((k) => kinds.includes(k)) ?? 'ending';
   }
@@ -193,7 +196,10 @@ export function relationHint(a: string, b: string, o: RelationOptions = {}): { k
   if (ARTICLES.has(a) && ARTICLES.has(b) && o.nextTyped === o.next) return { kind: 'article', hint: articleHint(a, b, o.next) };
   if (CLITICS.has(a) && CLITICS.has(b)) return { kind: 'pronoun', hint: HINT_TEXT.pronoun };
   if (/^(por|para)$/.test(a) && /^(por|para)$/.test(b)) return { kind: 'por-para', hint: HINT_TEXT['por-para'] };
-  if ((POSSESSIVES.has(a) && POSSESSIVES.has(b)) || (DEMONSTRATIVES.has(a) && DEMONSTRATIVES.has(b))) return { kind: 'agreement', hint: HINT_TEXT.agreement };
+  if ((POSSESSIVES.has(a) && POSSESSIVES.has(b)) || (DEMONSTRATIVES.has(a) && DEMONSTRATIVES.has(b))) {
+    // mi and mis, esta and este are one word that must agree; mi and tu, ese and este are two words
+    return stem(a).slice(0, 5) === stem(b).slice(0, 5) ? { kind: 'agreement', hint: HINT_TEXT.agreement } : { kind: 'wrong-word', hint: wrongWord(a) };
+  }
   const d = verbDiff(a, b);
   if (d) {
     // "Si tendría tiempo": after si the would and will forms are not used

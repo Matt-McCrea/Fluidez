@@ -322,9 +322,9 @@ export function enSubject(en: string): EnSubject | null {
 export function enYou(en: string): 'none' | 'open' | 'singular' | 'plural' | 'formal' | 'informal' {
   const l = en.toLowerCase();
   if (!/\byou(r|rs|rself|rselves)?\b/.test(l)) return 'none';
-  if (/\(formal\)|\(polite\)|\bsir\b|\bmadam\b|\bma'am\b/.test(l)) return 'formal';
-  if (/\(informal\)|\(to a friend\)/.test(l)) return 'informal';
-  if (/\byou all\b|\byou guys\b|\byourselves\b|\(plural\)|\bboth of you\b/.test(l)) return 'plural';
+  if (/\([^)]*\b(formal|polite)\b[^)]*\)|\bsir\b|\bmadam\b|\bma'am\b/.test(l)) return 'formal';
+  if (/\([^)]*\b(informal|to a friend)\b[^)]*\)/.test(l)) return 'informal';
+  if (/\byou all\b|\byou guys\b|\byourselves\b|\bboth of you\b|\byou both\b|\([^)]*\b(plural|to a group|to several people)\b[^)]*\)/.test(l)) return 'plural';
   if (/\byourself\b/.test(l)) return 'singular';
   return 'open';
 }
@@ -532,9 +532,10 @@ export function otherGender(w: string): string | null {
   const sg = pl ? singularize(w) : w;
   let out: string | null = null;
   if (/o$/.test(sg)) out = sg.slice(0, -1) + 'a';
-  else if (/a$/.test(sg) && !/ista$/.test(sg)) out = sg.slice(0, -1) + 'o';
+  else if (GENDER_FEM_FROM.has(sg)) out = GENDER_FEM_FROM.get(sg)!;
+  else if (/(d|t)ora$/.test(sg)) out = sg.slice(0, -1);
+  else if (/a$/.test(sg) && !/[ií]sta$/.test(sg)) out = sg.slice(0, -1) + 'o';
   else if (/(or|ón|ín|án|és)$/.test(sg) && !/(mejor|peor|mayor|menor|anterior|posterior|exterior|interior|superior|inferior)$/.test(sg)) out = respell(stripStressAccents(sg) + 'a', 1);
-  else if (/(ora|ona|ina|ana|esa)$/.test(sg) && GENDER_FEM_FROM.has(sg)) out = GENDER_FEM_FROM.get(sg)!;
   if (!out) return null;
   return pl ? pluralize(out) : out;
 }
