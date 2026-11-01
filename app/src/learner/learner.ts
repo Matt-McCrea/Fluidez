@@ -7,11 +7,11 @@
 // coalesced save to the LearnerStore; `flush()` awaits the pending save.
 import type { Card, FSRS } from 'ts-fsrs';
 import type { NodeId } from '../content/schema';
-import { compact, emptyLog, type EventLog, type ReviewEvent } from './events';
+import { compact, emptyLog, readEvents, type EventLog, type ReviewEvent } from './events';
 import { Ledger } from './ledger';
 import { fromCard, makeScheduler, newCard, Rating, State, toCard, type Grade } from './scheduler';
 import {
-  dayKey, DIRECTIONS, emptyState, migrate,
+  dayKey, DIRECTIONS, emptyState, migrate, StoredDocumentError, STATE_VERSION,
   type CardJSON, type Direction, type LearnerState, type NodeRecord, type Settings,
 } from './state';
 import type { LearnerStore } from './store';
@@ -144,6 +144,12 @@ export type SaveExtra = { path?: unknown; ui?: unknown };
 
 const SAVE_ATTEMPTS = 3;
 
+/** The version a stored document says it is; a document with none is v0. */
+const versionOf = (raw: unknown): number => {
+  const v = (raw as { version?: unknown } | null)?.version;
+  return typeof v === 'number' ? v : 0;
+};
+
 export class Learner {
   private state: LearnerState;
   private scheduler: FSRS;
@@ -174,22 +180,58 @@ export class Learner {
     this.ledger = new Ledger(() => this.state, () => this.touch(), this.now);
   }
 
-  /** Load (and migrate) the learner from a store, or start fresh. */
+  /**
+   * Load (and migrate) the learner from a store, or start fresh. A document a
+   * newer build wrote is never worked around or written over: this throws a
+   * StoredDocumentError. A damaged state falls back to the store's one-step
+   * backup (the damaged copy is kept beside it); a damaged event log is kept
+   * aside and the learner opens with an empty one. Before the first migration
+   * of a version, the document is copied once, as it was.
+   */
   static async open(store: LearnerStore, opts: LearnerOptions = {}): Promise<Learner> {
-    const raw = await store.load();
-    const state = raw === undefined ? emptyState((opts.now ?? Date.now)()) : migrate(raw);
-    const l = new Learner(state, store, opts);
+    const read = await Learner.readState(store);
+    const state = read?.state ?? emptyState((opts.now ?? Date.now)());
     const rawLog = await store.loadEvents?.();
-    if (rawLog && typeof rawLog === 'object' && Array.isArray((rawLog as any).events)) {
-      const lg = rawLog as EventLog;
-      l.log = compact({ events: lg.events, summary: lg.summary ?? { upTo: 0, counts: {} } }, 365, l.now());
+    let log: EventLog | undefined;
+    if (rawLog !== undefined) {
+      try { log = readEvents(rawLog); } catch (e) {
+        if (!(e instanceof StoredDocumentError) || e.fault === 'newer') throw e;
+        console.warn(`fluidez: the review log could not be read (${e.detail}); starting an empty one`);
+        await store.quarantine?.('events', rawLog);
+      }
     }
-    if (raw === undefined || (raw as any).version !== state.version) {
+    if (read && read.version < STATE_VERSION) {
+      try { await store.keepVersion?.('state', read.version, read.raw); } catch (e) { console.warn('fluidez: could not keep a copy of the state before migrating it', e); }
+    }
+    const l = new Learner(state, store, opts);
+    if (log) l.log = compact(log, 365, l.now());
+    if (!read || read.healed || read.version !== state.version) {
       l.touch();
       // a refused write must not keep a readable learner out: it stays dirty and is retried
       try { await l.flush(); } catch (e) { if (!(e instanceof SaveFailedError)) throw e; }
     }
     return l;
+  }
+
+  /**
+   * The stored state, migrated, with the version it was stored at; undefined if
+   * there is none. A newer document throws. A damaged one is kept beside the
+   * store's one-step backup and the backup is read instead (`healed`: the
+   * caller must write it back); with no usable backup the damage is thrown.
+   */
+  private static async readState(store: LearnerStore): Promise<{ raw: unknown; state: LearnerState; version: number; healed: boolean } | undefined> {
+    const raw = await store.load();
+    if (raw === undefined) return undefined;
+    try { return { raw, state: migrate(raw), version: versionOf(raw), healed: false }; } catch (e) {
+      if (!(e instanceof StoredDocumentError) || e.fault === 'newer') throw e;
+      await store.quarantine?.('state', raw);
+      const prev = await store.loadPrevious?.();
+      if (prev === undefined) throw e;
+      console.warn(`fluidez: the saved state could not be read (${e.detail}); using the copy from before the last save`);
+      try { return { raw: prev, state: migrate(prev), version: versionOf(prev), healed: true }; } catch (e2) {
+        throw e2 instanceof StoredDocumentError && e2.fault === 'newer' ? e2 : e;
+      }
+    }
   }
 
   /** A learner with no store (unit tests, simulator). */

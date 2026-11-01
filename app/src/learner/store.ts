@@ -1,6 +1,6 @@
 // Persistence for the learner. The whole LearnerState is one versioned JSON
 // document under one key; Learner.open() migrates whatever it loads.
-import { createStore, del, get, set, setMany } from 'idb-keyval';
+import { createStore, del, get, keys, set, setMany } from 'idb-keyval';
 import type { EventLog } from './events';
 import type { LearnerState } from './state';
 
@@ -14,7 +14,16 @@ export interface LearnerStore {
   saveEvents?(log: EventLog): Promise<void>;
   /** Write every provided document in ONE transaction: all land or none do. */
   saveAll?(docs: SaveAll): Promise<void>;
+  /** The state's one-step backup (the document before the last save), unmigrated, or undefined. */
+  loadPrevious?(): Promise<unknown | undefined>;
+  /** Keep a copy of a document that could not be read, beside it. Best effort: never throws. */
+  quarantine?(doc: StoredDoc, raw: unknown): Promise<void>;
+  /** Keep a copy of a document as it was at `version`, before it is migrated. Written once: a copy already there is kept. */
+  keepVersion?(doc: StoredDoc, version: number, raw: unknown): Promise<void>;
 }
+
+/** The documents the learner store owns; the UI store keeps `path` and `ui` itself. */
+export type StoredDoc = 'state' | 'events';
 
 /** The documents a session save may carry. `path` and `ui` are owned by the UI store. */
 export interface SaveAll { state?: LearnerState; events?: EventLog; path?: unknown; ui?: unknown }
@@ -22,10 +31,18 @@ export interface SaveAll { state?: LearnerState; events?: EventLog; path?: unkno
 /** For tests and the simulator. Stores a structured clone, like IndexedDB does. */
 export class MemoryStore implements LearnerStore {
   private doc: unknown | undefined;
+  private previous: unknown | undefined;
   saves = 0;
   constructor(initial?: unknown) { this.doc = initial === undefined ? undefined : structuredClone(initial); }
   async load() { return this.doc === undefined ? undefined : structuredClone(this.doc); }
-  async save(state: LearnerState) { this.doc = structuredClone(state); this.saves += 1; }
+  async save(state: LearnerState) { this.previous = this.doc; this.doc = structuredClone(state); this.saves += 1; }
+  async loadPrevious() { return this.previous === undefined ? undefined : structuredClone(this.previous); }
+  /** Copies kept beside the documents, by name (`state.quarantine`, `state.v1`). */
+  readonly kept = new Map<string, unknown>();
+  async quarantine(doc: StoredDoc, raw: unknown) { this.kept.set(`${doc}.quarantine`, structuredClone(raw)); }
+  async keepVersion(doc: StoredDoc, version: number, raw: unknown) {
+    if (!this.kept.has(`${doc}.v${version}`)) this.kept.set(`${doc}.v${version}`, structuredClone(raw));
+  }
   private evs: unknown | undefined;
   eventSaves = 0;
   async loadEvents() { return this.evs === undefined ? undefined : structuredClone(this.evs); }
@@ -38,12 +55,12 @@ export class MemoryStore implements LearnerStore {
     const events = d.events && structuredClone(d.events);
     const path = d.path !== undefined ? structuredClone(d.path) : undefined;
     const ui = d.ui !== undefined ? structuredClone(d.ui) : undefined;
-    if (state) { this.doc = state; this.saves += 1; }
+    if (state) { this.previous = this.doc; this.doc = state; this.saves += 1; }
     if (events) { this.evs = events; this.eventSaves += 1; }
     if (path !== undefined) this.extras.set('path', path);
     if (ui !== undefined) this.extras.set('ui', ui);
   }
-  async clear() { this.doc = undefined; this.evs = undefined; this.extras.clear(); }
+  async clear() { this.doc = undefined; this.previous = undefined; this.evs = undefined; this.extras.clear(); this.kept.clear(); }
   /** What a JSON export of the stored document would contain. */
   snapshot(): unknown { return this.doc === undefined ? undefined : JSON.parse(JSON.stringify(this.doc)); }
 }
@@ -55,6 +72,8 @@ export interface KV {
   del(key: string): Promise<void>;
   /** Atomic multi-key write (one transaction). Absent: callers fall back to sequential sets. */
   setMany?(entries: [string, unknown][]): Promise<void>;
+  /** Every key held. Absent: callers only know the keys they name. */
+  keys?(): Promise<string[]>;
 }
 
 export const IDB_DB = 'fluidez';
@@ -66,7 +85,7 @@ export const IDB_UI_KEY = 'ui';
 
 export function idbKV(db = IDB_DB, objectStore = IDB_OBJECT_STORE): KV {
   const s = createStore(db, objectStore);
-  return { get: (k) => get(k, s), set: (k, v) => set(k, v, s), del: (k) => del(k, s), setMany: (e) => setMany(e, s) };
+  return { get: (k) => get(k, s), set: (k, v) => set(k, v, s), del: (k) => del(k, s), setMany: (e) => setMany(e, s), keys: async () => (await keys(s)).map(String) };
 }
 
 /** The browser store. Keeps the previous document under `state.prev` as a one-step backup. */
@@ -76,7 +95,16 @@ export class IdbStore implements LearnerStore {
   async saveEvents(log: EventLog) { await this.kv.set(this.eventsKey, log); }
   async load() {
     const doc = await this.kv.get(this.key);
-    return doc ?? (await this.kv.get(`${this.key}.prev`)) ?? undefined;
+    return doc ?? (await this.loadPrevious());
+  }
+  async loadPrevious() { return (await this.kv.get(`${this.key}.prev`)) ?? undefined; }
+  private nameOf(doc: StoredDoc) { return doc === 'state' ? this.key : this.eventsKey; }
+  async quarantine(doc: StoredDoc, raw: unknown) {
+    try { await this.kv.set(`${this.nameOf(doc)}.quarantine`, raw); } catch { /* best effort */ }
+  }
+  async keepVersion(doc: StoredDoc, version: number, raw: unknown) {
+    const name = `${this.nameOf(doc)}.v${version}`;
+    if ((await this.kv.get(name)) === undefined) await this.kv.set(name, raw);
   }
   async save(state: LearnerState) {
     const prev = await this.kv.get(this.key);
@@ -98,5 +126,9 @@ export class IdbStore implements LearnerStore {
     if (this.kv.setMany) await this.kv.setMany(entries);
     else for (const [k, v] of entries) await this.kv.set(k, v);
   }
-  async clear() { await this.kv.del(this.key); await this.kv.del(`${this.key}.prev`); await this.kv.del(this.eventsKey); }
+  /** Everything the store holds, copies included: a reset that promises to delete progress must not keep a snapshot of it. */
+  async clear() {
+    const copies = ((await this.kv.keys?.()) ?? []).filter((k) => [this.key, this.eventsKey].some((n) => k.startsWith(`${n}.`)));
+    for (const k of [this.key, `${this.key}.prev`, this.eventsKey, ...copies]) await this.kv.del(k);
+  }
 }
