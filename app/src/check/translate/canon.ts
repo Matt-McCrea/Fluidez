@@ -70,6 +70,7 @@ const MOVABLE_ONE = new Set(['ya', 'también', 'siempre', 'hoy', 'ayer', 'mañan
 const MOVABLE_MULTI: readonly string[][] = [
   ['a', 'veces'], ['todos', 'los', 'días'], ['todas', 'las', 'semanas'], ['esta', 'noche'], ['esta', 'mañana'], ['esta', 'tarde'],
   ['el', 'fin', 'de', 'semana'], ['la', 'semana', 'pasada'], ['el', 'año', 'pasado'], ['por', 'la', 'mañana'], ['por', 'la', 'tarde'], ['por', 'la', 'noche'],
+  ['en', 'la', 'mañana'], ['en', 'la', 'tarde'], ['en', 'la', 'noche'],
 ];
 
 /** Any exact reading, the non-target varieties included: "Vosotros habláis"
