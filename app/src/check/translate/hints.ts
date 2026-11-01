@@ -11,7 +11,7 @@ import { ARTICLES, CLITICS, nounGender, PREPOSITIONS } from '../../exercises/spa
 
 export type HintKind =
   | 'accents' | 'verb-ending' | 'article' | 'agreement' | 'word-order' | 'missing-word' | 'extra-word'
-  | 'pronoun' | 'subject' | 'ser-estar' | 'por-para' | 'spelling' | 'attach' | 'wrong-word' | 'empty' | 'fragment';
+  | 'pronoun' | 'subject' | 'ser-estar' | 'por-para' | 'spelling' | 'attach' | 'wrong-word' | 'empty' | 'fragment' | 'experiencer';
 
 export interface Diagnosis { kind: HintKind; hint: string; at: number }
 
@@ -27,6 +27,7 @@ export const HINT_TEXT = {
   'por-para': 'Por or para? Check that little word.',
   spelling: 'Check the spelling.',
   attach: 'In a command, the pronoun joins the end of the verb.',
+  experiencer: 'With verbs like gustar, the little word (me, te, le) already says who it is for. Leave the pronoun out, or start it with "a".',
   empty: 'Type your answer in Spanish.',
 } as const;
 

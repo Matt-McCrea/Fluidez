@@ -19,6 +19,8 @@
  *    esta noche…): sentence-initial, just before the verb group, just after
  *    it, or sentence-final. Never inside a noun phrase, never after a
  *    preposition ("el pan de ayer" keeps its ayer).
+ *  - the pronoun in front of gustar and its kin: "A mí me gusta" = "Me gusta"
+ *    (recorded like a subject pronoun, so "A él" still fails for "She likes");
  *  - the subject of a yes/no question (questionOrders, used by match.ts as
  *    accepted variants): "¿Simón habla inglés?" = "¿Habla Simón inglés?" =
  *    "¿Habla inglés Simón?". After a question word the verb comes first:
@@ -27,9 +29,10 @@
  * is reported as `near`, not as a pass).
  * ========================================================================== */
 import { analyzeToken, deaccent } from '../../engine';
+import type { Analysis, Person } from '../../engine';
 import { CLIMBING } from '../../exercises/reinflect';
 import {
-  CLITICS, DETERMINERS, PREPOSITIONS, SUBJECT_PRONOUNS, gerundOf, isInfinitive, participleOf, splitEnclitic, toToks, verbReadings, words,
+  CLITICS, DETERMINERS, EXPERIENCER, PREPOSITIONS, SUBJECT_PRONOUNS, gerundOf, isInfinitive, participleOf, splitEnclitic, toToks, verbReadings, words,
   type Tok,
 } from '../../exercises/spanish';
 
@@ -40,10 +43,23 @@ export interface CanonTok {
   src?: string;
 }
 
+/** A subject pronoun written in front of gustar and its kin ("Yo me gusta",
+ *  "Ella le gusta el café"). It is dropped like any subject pronoun, but with
+ *  these verbs it can be a mistake the dropping would hide. */
+export interface ExperiencerSlip {
+  pron: string;
+  /** Its person cannot be the subject of that verb: "yo me gusta". */
+  mismatch: boolean;
+  /** The verb is one where English makes the person the subject (like, love). */
+  like: boolean;
+}
+
 export interface Canon {
   toks: CanonTok[];
   /** Subject pronouns removed, as written (accents kept). */
   pronouns: string[];
+  /** Pronouns dropped in front of gustar and its kin, to be judged against the English. */
+  experiencer: ExperiencerSlip[];
   /** Movable adverbials removed, with the slot each sat in. */
   advs: Array<{ t: string; slot: number; legal: boolean }>;
   /** Accent slips found while canonicalising ("el come" for "él come"). */
@@ -113,25 +129,31 @@ const ONE = /^(un|uno|una)$/;
 
 /** The words and figures of a text, in order. A figure is ONE token, spelled
  *  in digits however it was written ("5", "cinco", "1.000", "mil" all agree),
- *  so a figure keeps its place ('el 70 % prefiere' is not 'el prefiere'). */
-function figures(text: string): { toks: string[]; slips: number } {
+ *  so a figure keeps its place ('el 70 % prefiere' is not 'el prefiere').
+ *  `stops` lists the tokens a sentence ends on ("¿Debo hablar yo?\nNo me parece"). */
+function figures(text: string): { toks: string[]; stops: Set<number>; slips: number } {
   const raw: string[] = [];
-  let last = 0;
-  for (const m of text.matchAll(/\d+(?:[.,]\d+)*(?:\s*%)?/g)) {
-    raw.push(...words(text.slice(last, m.index)));
-    const d = m[0].replace(/\s*%$/, '');
-    raw.push(/^\d{1,3}([.,]\d{3})+$/.test(d) ? d.replace(/[.,]/g, '') : d.replace(',', '.'));
-    if (m[0].endsWith('%')) raw.push('por', 'ciento');
-    last = m.index! + m[0].length;
-  }
-  raw.push(...words(text.slice(last)));
+  const rawStops = new Set<number>();
+  const lower = text.toLowerCase();
+  const found = [...lower.matchAll(/\d+(?:[.,]\d+)*(?:\s*%)?|[a-záéíóúñü]+/g)];
+  found.forEach((m, k) => {
+    if (/^\d/.test(m[0])) {
+      const d = m[0].replace(/\s*%$/, '');
+      raw.push(/^\d{1,3}([.,]\d{3})+$/.test(d) ? d.replace(/[.,]/g, '') : d.replace(',', '.'));
+      if (m[0].endsWith('%')) raw.push('por', 'ciento');
+    } else raw.push(m[0]);
+    const gap = lower.slice(m.index! + m[0].length, found[k + 1]?.index ?? lower.length);
+    if (/[.?!;:\n…¿¡]/.test(gap)) rawStops.add(raw.length - 1);
+  });
 
   const toks: string[] = [];
+  const stops = new Set<number>();
   let slips = 0;
   for (let i = 0; i < raw.length;) {
     let total = 0, cur = 0, prev: Place | null = null, n = 0, viaY = false;
     let j = i;
     for (; j < raw.length; j++) {
+      if (j > i && rawStops.has(j - 1)) break;
       const w = raw[j];
       const plain = NUMBER_WORDS_PLAIN[w];
       const nw = NUMBER_WORDS[plain ?? w];
@@ -155,11 +177,37 @@ function figures(text: string): { toks: string[]; slips: number } {
       if (plain) slips++;
       prev = place; n++;
     }
-    if (!n) { toks.push(raw[i]); i++; continue; }
-    toks.push(String(total + cur));
-    i = j;
+    const end = n ? j : i + 1;
+    toks.push(n ? String(total + cur) : raw[i]);
+    if (rawStops.has(end - 1)) stops.add(toks.length - 1);
+    i = end;
   }
-  return { toks, slips };
+  return { toks, stops, slips };
+}
+
+// ---- gustar and its kin: the person is the clitic -----------------------------
+
+/** The persons a clitic names when the subject is that same person (me gusto, te quedas). */
+const OWN_CLITIC: Readonly<Record<string, readonly Person[]>> = {
+  me: ['yo'], te: ['tú'], nos: ['nosotros'], os: ['vosotros'], se: ['él/ella', 'ellos'],
+};
+/** Verbs where English makes the person the subject: "I like", "I love", "I care". */
+const LIKE_VERBS = new Set(['gustar', 'encantar', 'fascinar', 'interesar', 'importar']);
+/** What follows "a" in "a mí me gusta", as the subject pronoun it stands for. */
+const A_PRONOUN: Readonly<Record<string, string>> = {
+  'mí': 'yo', ti: 'tú', 'él': 'él', ella: 'ella', usted: 'usted', nosotros: 'nosotros', nosotras: 'nosotras', ellos: 'ellos', ellas: 'ellas', ustedes: 'ustedes',
+};
+
+/** What follows ts[i] is [no] clitic + a verb read as gustar and kin, in the
+ *  same sentence: the clitic and those readings. */
+function experiencerFrame(ts: readonly CanonTok[], i: number, stops: ReadonlySet<CanonTok>): { clitic: string; readings: Analysis[] } | null {
+  let k = i + 1;
+  if (stops.has(ts[i])) return null;
+  if (ts[k]?.t === 'no') { if (stops.has(ts[k])) return null; k++; }
+  const clitic = ts[k]?.t, verb = ts[k + 1]?.t;
+  if (!clitic || !verb || stops.has(ts[k]) || !(OWN_CLITIC[clitic] || /^(le|les)$/.test(clitic))) return null;
+  const readings = verbReadings(verb).filter((a) => a.tense !== 'imperativo' && EXPERIENCER.has(a.inf.replace(/se$/, '')));
+  return readings.length ? { clitic, readings } : null;
 }
 
 /** Canonicalise one Spanish answer. */
@@ -170,14 +218,18 @@ export function canon(text: string): Canon {
 
   // 1. multi-word adverbials become one token
   const joined: string[] = [];
+  const joinedStops = new Set<number>();
   for (let i = 0; i < ts.length; i++) {
     const m = MOVABLE_MULTI.find((p) => p.every((w, k) => ts[i + k] === w));
     if (m && !(i > 0 && /^(de|desde|hasta|para)$/.test(ts[i - 1]))) { joined.push(m.join('_')); i += m.length - 1; } else joined.push(ts[i]);
+    if (fig.stops.has(i)) joinedStops.add(joined.length - 1);
   }
   ts = joined;
 
   // 2. climbing clitics move in front of the finite verb
   const out: CanonTok[] = ts.map((t) => ({ t }));
+  /** The tokens a sentence ends on: gustar and kin do not reach across one. */
+  const stops = new Set<CanonTok>(out.filter((_, i) => joinedStops.has(i)));
   for (let i = 0; i < out.length; i++) {
     const sp = splitEnclitic(out[i].t);
     if (!sp) continue;
@@ -190,13 +242,25 @@ export function canon(text: string): Canon {
     const takes = gov.some((a) => /^(estar|seguir)$/.test(a.inf)) ? 'ger' : 'inf';
     if (sp.kind !== takes) continue;
     const src = out[i].t;
+    const was = out[i];
     out[i] = { t: sp.base, src };
+    if (stops.has(was)) stops.add(out[i]);
     out.splice(j, 0, ...sp.clitics.map((c) => ({ t: c })));
     i += sp.clitics.length;
   }
 
-  // 3. subject pronouns come out (before or right after a finite verb)
+  // 2b. "a mí me gusta": the pronoun in front of gustar and its kin is optional
   const pronouns: string[] = [];
+  for (let i = 1; i + 1 < out.length; i++) {
+    const to = A_PRONOUN[out[i].t];
+    if (!to || out[i - 1].t !== 'a' || !experiencerFrame(out, i, stops)) continue;
+    out.splice(i - 1, 2);
+    pronouns.push(to);
+    i--;
+  }
+
+  // 3. subject pronouns come out (before or right after a finite verb)
+  const experiencer: ExperiencerSlip[] = [];
   const kept: CanonTok[] = [];
   for (let i = 0; i < out.length; i++) {
     const w = out[i].t;
@@ -211,7 +275,19 @@ export function canon(text: string): Canon {
     if (pron && !(prev && (PREPOSITIONS.has(prev) || /^(que|como|más|menos|y|o|ni)$/.test(prev)))) {
       const nextIsVerbish = next && (isFinite(next) || CLITICS.has(next) || next === 'no' || MOVABLE_ONE.has(next) || next.includes('_'));
       const prevIsVerb = prev && isFinite(prev);
-      if (nextIsVerbish || prevIsVerb) { pronouns.push(pron); continue; }
+      if (nextIsVerbish || prevIsVerb) {
+        pronouns.push(pron);
+        const frame = prevIsVerb ? null : experiencerFrame(out, i, stops);
+        if (frame) {
+          const person = SUBJECT_PRONOUNS[pron];
+          const agrees = frame.readings.some((a) => a.person === person);
+          // me gusto, te quedas: the same person twice is the verb turned on itself, not a mistake
+          if (!(agrees && OWN_CLITIC[frame.clitic]?.includes(person))) {
+            experiencer.push({ pron, mismatch: !agrees, like: frame.readings.some((a) => LIKE_VERBS.has(a.inf.replace(/se$/, ''))) });
+          }
+        }
+        continue;
+      }
     }
     kept.push(out[i]);
   }
@@ -230,7 +306,7 @@ export function canon(text: string): Canon {
   const legal = new Set([0, rest.length]);
   if (vg) { legal.add(vg[0]); legal.add(vg[1]); }
   for (const a of advs) a.legal = legal.has(a.slot);
-  return { toks: rest, pronouns, advs, accentSlips };
+  return { toks: rest, pronouns, experiencer, advs, accentSlips };
 }
 
 export const key = (c: Canon) => c.toks.map((t) => t.t).join(' ');
