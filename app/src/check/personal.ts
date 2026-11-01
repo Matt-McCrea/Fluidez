@@ -26,7 +26,7 @@ const CLOSED = `a al algo alguien algun alguna algunas alguno algunos ante antes
 const CLOSED_SET = new Set(CLOSED.map(deaccent));
 
 // English words that are never Spanish. Words both languages own (a, no, me, he, son, pan, sin...) are not here.
-const ENGLISH = new Set(`the i am is are was were be been being my your his her its our their you we they it and of to in from with for on at by this that these those what where when who why how not do does did have has had will would can could should an or but if so as about into than then there here very just also too some any all each every more most much many one two three which while because name live work like love want need go going she eat drink speak very good bad today tomorrow yesterday really only still even well hello hi thanks thank please yes`.split(/\s+/));
+const ENGLISH = new Set(`the i am is are was were be been being my your his her its our their you we they it and of to in from with for on at by this that these those what where when who why how not do does did have had will would can could should an or but if so as about into than then there here very just also too some any all each every more most much many one two three which while because name live work like love want need go going she eat drink speak very good bad today tomorrow yesterday really only still even well hello hi thanks thank please yes`.split(/\s+/));
 
 export interface Token { raw: string; norm: string; neutral: boolean }
 
@@ -70,6 +70,14 @@ export function isSpanishToken(t: Token, lexicon?: ReadonlySet<string>): boolean
   if (lexicon?.has(t.norm)) return true;
   if (t.norm.length < 2) return false;
   return analyzeToken(t.norm).length > 0;
+}
+
+/** Share of the (non-name) tokens that are common English words; 0 for none. No lexicon is needed to see that
+ *  a text is English: the, my, with, and, went. */
+export function englishShare(text: string): number {
+  const toks = wordTokens(text).filter((t) => !t.neutral);
+  if (!toks.length) return 0;
+  return toks.filter((t) => ENGLISH.has(t.norm)).length / toks.length;
 }
 
 /** Share of the (non-name) tokens that are Spanish; 0 for none. */
