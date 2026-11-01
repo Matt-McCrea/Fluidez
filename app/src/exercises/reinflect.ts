@@ -13,8 +13,9 @@
 import { attachEnclitic, PERSONS, verbByInf } from '../engine';
 import type { Person, TenseKey } from '../engine';
 import { conjugateBareCells } from '../engine/conjugate';
+import { FREQUENCY } from './licence';
 import {
-  ARTICLES, CLITICS, DEMONSTRATIVES, EXPERIENCER, POLARITY, POSSESSIVES, PREPOSITIONS, REFLEXIVE, SUBJECT_PRONOUNS, TIME_WORDS,
+  ARTICLES, CLITICS, DEMONSTRATIVES, DETERMINERS, EXPERIENCER, POLARITY, POSSESSIVES, PREPOSITIONS, REFLEXIVE, SUBJECT_PRONOUNS, TIME_WORDS,
   cliticFor, enSubject, gerundOf, insertTok, isFunctionWord, isInfinitive, isPluralWord, low, nounGender,
   parseClause, pluralize, removeToks, render, replaceCore, singularize, splitEnclitic, timeSpans, verbReadings,
   type Clause, type Tok,
@@ -26,7 +27,16 @@ export { EXPERIENCER };
 const WEATHER = new Set(['llover', 'nevar', 'tronar', 'amanecer', 'anochecer']);
 const COPULAS = new Set(['ser', 'estar', 'sentirse', 'quedarse', 'ponerse']);
 /** Verbs that never take a direct object noun phrase. */
-const NO_DOBJ = new Set(['ser', 'estar', 'haber', 'parecer', 'llamarse', 'ir', 'irse', 'venir', 'salir', 'llegar', 'vivir', 'quedar', 'quedarse', 'sentirse', 'volver', 'regresar', 'entrar', 'caminar', 'correr', 'viajar', 'trabajar', ...EXPERIENCER]);
+/** Verbs whose noun phrase after them is their direct object, never their subject (empieza la reunión, cambió el barrio) or a time (cocina los domingos). */
+const TRANSITIVE = new Set([
+  'ver', 'mirar', 'oír', 'escuchar', 'leer', 'escribir', 'abrir', 'cerrar', 'comprar', 'vender', 'pagar', 'cobrar', 'tener', 'llevar', 'traer', 'dar', 'mandar', 'enviar',
+  'regalar', 'prestar', 'devolver', 'pedir', 'buscar', 'encontrar', 'perder', 'dejar', 'poner', 'quitar', 'tomar', 'comer', 'beber', 'preparar', 'cocinar', 'hacer', 'usar',
+  'necesitar', 'querer', 'preferir', 'conocer', 'entender', 'saber', 'aceptar', 'firmar', 'revisar', 'llenar', 'lavar', 'limpiar', 'repetir', 'mostrar', 'recomendar', 'publicar',
+  'olvidar', 'guardar', 'probar', 'romper', 'visitar', 'llamar', 'esperar', 'levantar', 'cubrir', 'apagar', 'contestar', 'cortar', 'recoger', 'arreglar', 'cargar', 'esconder',
+  'invitar', 'ayudar', 'comprender', 'sentir', 'ganar', 'decir', 'contar', 'explicar', 'cuidar', 'extrañar', 'cruzar',
+]);
+/** Nouns that say when, not what: "los domingos", "el lunes", "la semana". */
+const WHEN_NOUNS = new Set(['lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'sábados', 'domingo', 'domingos', 'semana', 'semanas', 'mes', 'meses', 'año', 'años', 'día', 'días', 'noche', 'noches', 'tarde', 'tardes', 'mañana', 'mañanas', 'rato', 'vez', 'veces', 'hora', 'horas', 'momento', 'fin']);
 /** Verbs that let an infinitive's pronoun climb (lo quiero ver = quiero verlo). */
 export const CLIMBING = new Set(['querer', 'poder', 'deber', 'ir', 'tener', 'saber', 'empezar', 'comenzar', 'acabar', 'volver', 'estar', 'seguir', 'necesitar', 'pensar', 'soler', 'intentar', 'tratar', 'preferir', 'esperar']);
 
@@ -88,6 +98,26 @@ function pronounSubject(c: Clause, en?: string): boolean {
   return en ? !!enSubject(en) : false;
 }
 
+const CAPITAL = /^\p{Lu}/u;
+/** insertTok for a word that may open a question: the ¿ (or quote) before the verb moves to the new word, so "¿van a vender" is "¿la van a vender", not "la ¿van a vender". */
+function insertBefore(ts: readonly Tok[], at: number, core: string): Tok[] {
+  const out = insertTok(ts, at, core);
+  if (at > 0 && out[at + 1]) { out[at].pre = out[at + 1].pre; out[at + 1].pre = ''; }
+  return out;
+}
+/** A question with a name on the end or the front: ¿De dónde eres, Vale? */
+function addressesByName(c: Clause): boolean {
+  const n = c.toks.length;
+  if (n < 2 || !/[?]/.test(c.toks[n - 1].post)) return false;
+  const last = CAPITAL.test(c.toks[n - 1].core) && /,$/.test(c.toks[n - 2].post);
+  const first = c.verb > 0 && CAPITAL.test(c.toks[0].core) && c.toks[0].post === ',' && !isFunctionWord(low(c.toks[0]));
+  return last || first;
+}
+/** Two names joined by y (Ana y Pedro): the sentence is about two people whatever the person of the verb. */
+function joinsNames(c: Clause): boolean {
+  return c.toks.some((t, i) => i > 0 && CAPITAL.test(t.core) && low(c.toks[i + 1]) === 'y' && CAPITAL.test(c.toks[i + 2]?.core ?? ''));
+}
+
 /** Predicate words after a copula that agree in number with the subject. */
 function agreePredicate(ts: Tok[], from: number, plural: boolean): Tok[] | null {
   let out = ts;
@@ -101,6 +131,7 @@ function agreePredicate(ts: Tok[], from: number, plural: boolean): Tok[] | null 
     const l = low(out[j]);
     if (!l) break;
     if (ARTICLES.has(l) || DEMONSTRATIVES.has(l) || POSSESSIVES.has(l)) return null;    // es un libro: no plural subject fits
+    if (/^\p{Lu}/u.test(out[j].core)) return null;                                      // Tomás Herrera is a name, not a noun to pluralise
     if (PREPOSITIONS.has(l) || /^(bien|mal|mejor|peor|aquí|allí|allá|ahí|así|lejos|cerca|que|en|de)$/.test(l) || /ndo$/.test(l) || TIME_WORDS.has(l)) break;
     if (isFunctionWord(l) && l !== 'y') break;
     if (l === 'y') { j++; continue; }
@@ -123,6 +154,10 @@ export function changePerson(c: Clause, to: Person, opts: { en?: string; pronoun
   const lexInf = c.participle >= 0 ? (verbReadings(low(c.toks[c.participle])).length ? null : inf) : inf;
   if (EXPERIENCER.has(inf.replace(/se$/, '')) || WEATHER.has(inf) || lexInf === null) return null;
   if (!pronounSubject(c, opts.en)) return null;
+  // se on its own is impersonal, passive or reciprocal here (se dice, se puede): it has no person to change
+  if (!c.reflexive && c.proclitics.length === 1 && low(c.toks[c.proclitics[0]]) === 'se') return null;
+  // a question to someone by name, and names joined by y: "¿Soy yo, Tomás?", "Yo soy Ana y Pedro"
+  if (addressesByName(c) || joinsNames(c)) return null;
   const nf = form(inf, tense, to);
   if (!nf) return null;
   let ts = replaceCore(c.toks, c.verb, nf);
@@ -171,7 +206,7 @@ export function changePerson(c: Clause, to: Person, opts: { en?: string; pronoun
     if (mode === 'drop') ts = removeToks(ts, c.subject, c.subject + 1);
     else ts = replaceCore(ts, c.subject, pronounFor(to, low(c.toks[c.subject])));
   } else if (mode === 'add') {
-    ts = insertTok(ts, c.groupStart, pronounFor(to));
+    ts = insertBefore(ts, c.groupStart, pronounFor(to));
   }
   return { es: render(ts), toks: ts, accept: [] };
 }
@@ -189,27 +224,49 @@ export function changeTense(c: Clause, to: TenseKey, opts: { stripTime?: boolean
   let ts = replaceCore(c.toks, c.verb, nf);
   const spans = timeSpans(ts);
   if (spans.length) {
-    if (!opts.stripTime) return null;
+    if (!opts.stripTime || leavesHanging(ts, spans)) return null;
     for (const [a, b] of spans.slice().reverse()) ts = removeToks(ts, a, b);
     if (!ts.some((t) => t.core)) return null;
+    ts = closeUp(ts);
   }
   return { es: render(ts), toks: ts, accept: [] };
 }
 
-/** Remove time words: the structured-input form where only the verb tells you when. */
-export function stripTimeWords(ts: readonly Tok[]): Tok[] {
-  let out = ts.slice();
-  for (const [a, b] of timeSpans(out).slice().reverse()) out = removeToks(out, a, b);
+/** Cutting "mañana" out of "toda la mañana" leaves "toda la": a time word that follows an article, a demonstrative or a preposition is the end of a longer phrase, and taking it out leaves a word hanging. */
+function leavesHanging(ts: readonly Tok[], spans: ReadonlyArray<[number, number]>): boolean {
+  return spans.some(([a]) => a > 0 && (DETERMINERS.has(low(ts[a - 1])) || PREPOSITIONS.has(low(ts[a - 1]))) && !/[,;:]/.test(ts[a - 1].post));
+}
+
+/** A time phrase cut off the end takes its comma with it: "la esquina, los sábados." is "la esquina.", not "la esquina,.". */
+function closeUp(ts: Tok[]): Tok[] {
+  const out = ts.map((t) => ({ ...t }));
+  const last = out[out.length - 1];
+  last.post = last.post.replace(/[,;:]+(?=[.!?…»”"]+$)/, '');
   return out;
 }
+
+/** Remove time words: the structured-input form where only the verb tells you when. Nothing is left when taking them out would leave a word hanging. */
+export function stripTimeWords(ts: readonly Tok[]): Tok[] {
+  let out = ts.slice();
+  const spans = timeSpans(out);
+  if (leavesHanging(out, spans)) return [];
+  for (const [a, b] of spans.slice().reverse()) out = removeToks(out, a, b);
+  return out.length ? closeUp(out) : out;
+}
+
+const QUESTION_WORD = /^(qué|dónde|cuándo|cómo|quién|quiénes|cuál|cuáles|cuánto|cuánta|cuántos|cuántas)$/;
+const NEGATIVE_FORCE = /(^|\s)(poco|poca|pocos|pocas|apenas|difícilmente|escasamente)(\s|$)/;
 
 /** Negate: como > no como, lo veo > no lo veo. Refuses polarity words
  *  (también, ya, algo, siempre…) and sentences already negative. */
 export function negate(c: Clause): Rewritten | null {
   if (c.neg >= 0) return null;
   if (/^(qué|dónde|cuándo|cómo|quién|quiénes|cuál|cuáles|cuánto|cuánta|cuántos|cuántas|por)$/.test(low(c.toks[0]))) return null; // ¿Dónde no vives?
+  if (c.toks.slice(0, c.verb).some((t) => QUESTION_WORD.test(low(t)))) return null;                                            // ¿En qué calle no vive…?
   if (c.toks.some((t) => POLARITY.has(low(t)))) return null;
-  const ts = insertTok(c.toks, c.groupStart, 'no');
+  // poco, apenas, rara vez already say "not": "Poco no me sirvió" is the double negative Spanish does not use
+  if (NEGATIVE_FORCE.test(c.toks.map(low).join(' ')) || FREQUENCY.test(c.toks.map(low).join(' '))) return null;
+  const ts = insertBefore(c.toks, c.groupStart, 'no');
   return { es: render(ts), toks: ts, accept: [] };
 }
 
@@ -237,17 +294,20 @@ export function pronominalise(c: Clause, lexicon?: Readonly<Record<string, 'm' |
   const comp = c.complement >= 0 ? low(c.toks[c.complement]) : '';
   if (comp && !isInfinitive(comp) && !gerundOf(comp)) return null;                   // already has enclitics
   const head = comp ? (isInfinitive(comp) ? comp : gerundOf(comp)!) : c.choice.inf;
-  if (NO_DOBJ.has(head) || (comp && !CLIMBING.has(c.choice.inf.replace(/se$/, '')))) return null;
+  if (!TRANSITIVE.has(head) || (comp && !CLIMBING.has(c.choice.inf.replace(/se$/, '')))) return null;
+  // a question word or an exclamation in front: the noun phrase after the verb is usually its subject (¿Cuándo empieza la reunión?, ¡Cómo cambió el barrio!)
+  if (c.toks.some((t) => /[¿¡]/.test(t.pre)) && c.toks.slice(0, c.verb).some((t) => /^(qué|quién|quiénes|cuál|cuáles|cuánto|cuánta|cuántos|cuántas|cómo)$/.test(low(t)) || /¡/.test(c.toks[0].pre))) return null;
   if (c.reflexive && !comp) return null;
   const j = (c.complement >= 0 ? c.complement : c.participle >= 0 ? c.participle : c.verb) + 1;
   const det = low(c.toks[j]);
   if (!DEFINITE.test(det) || low(c.toks[j - 1]) === 'a') return null;
+  if (/[,;:]$/.test(c.toks[j - 1].post)) return null;                                // "…, la verdad.": a remark, not an object
   const noun = low(c.toks[j + 1]);
-  if (!noun || isFunctionWord(noun) || verbReadings(noun).length && !/[aeo]s?$/.test(noun)) return null;
+  if (!noun || isFunctionWord(noun) || WHEN_NOUNS.has(noun) || verbReadings(noun).length && !/[aeo]s?$/.test(noun)) return null;
   let end = j + 2;
   // one adjective may follow, if the noun has no comma after it
   const adj = low(c.toks[end]);
-  if (adj && !c.toks[j + 1].post && !isFunctionWord(adj) && !TIME_WORDS.has(adj) && !PREPOSITIONS.has(adj)) end++;
+  if (adj && !c.toks[j + 1].post && !isFunctionWord(adj) && !TIME_WORDS.has(adj) && !PREPOSITIONS.has(adj) && !/^(todos|todas|mucho|mucha|muchos|muchas|poco|más|menos|también)$/.test(adj)) end++;
   // the NP must end the sentence, or be followed only by time words
   const spans = timeSpans(c.toks);
   let k = end;
@@ -269,16 +329,17 @@ export function pronominalise(c: Clause, lexicon?: Readonly<Record<string, 'm' |
     // enclitic on the infinitive / gerund, proclitic before the finite verb as an alternative
     const encl = attachEnclitic(comp, clitic);
     const tsEncl = replaceCore(ts, c.complement, encl);
-    if (!c.proclitics.length) accept.push(render(insertTok(ts, c.verb, clitic)));
+    if (!c.proclitics.length) accept.push(render(insertBefore(ts, c.verb, clitic)));
     ts = tsEncl;
   } else {
     if (c.proclitics.length > 1) return null;
+    if (c.proclitics.length === 1 && low(ts[c.proclitics[0]]) === 'se' && !c.reflexive) return null;   // se vende el carro: the noun phrase is the subject
     if (c.proclitics.length === 1) {
       const p = low(ts[c.proclitics[0]]);
       if (p === 'le' || p === 'les') ts = replaceCore(ts, c.proclitics[0], 'se');
       else if (!/^(me|te|nos|se)$/.test(p)) return null;
     }
-    ts = insertTok(ts, c.verb, clitic);
+    ts = insertBefore(ts, c.verb, clitic);
   }
   return { es: render(ts), toks: ts, accept, np, clitic, gender, plural };
 }

@@ -27,19 +27,22 @@ import { PERSONS, PRODUCTION_PERSONS, verbByInf } from '../engine';
 import type { Person, TenseKey } from '../engine';
 import { conjugateBareCells } from '../engine/conjugate';
 import { isMultiTurn, turnViews, withContext } from './dialogue';
+import { FREQUENCY, opening, opensClean, refusal, tenseOf } from './licence';
 import { itemId, rng, shuffle, shuffled } from './rng';
 import { changePerson, changeTense, form, negate, pronominalise } from './reinflect';
 import {
-  SUBJECT_PRONOUNS, enSubject, enWords, insertTok, low, parseClause, render, replaceCore, sentenceKey,
-  timeSpans, verbReadings, type Clause,
+  SUBJECT_PRONOUNS, enSubject, enWords, low, parseClause, render, replaceCore, sentenceKey,
+  timeSpans, verbReadings, type Clause, type Tok,
 } from './spanish';
 import type { ChooseItem, TransformItem, TypeFormItem } from './types';
 
 export interface LadderOptions {
   seed?: number | string;
   maxDistractors?: number;
-  /** The tenses the learner has been taught: a distractor is never in a tense outside this list (default: all). */
+  /** The tenses the learner has been taught: a distractor or a transform is never in a tense outside this list (default: all). */
   taught?: readonly TenseKey[];
+  /** The names in the bank (licence.ts namesOf): a sentence that opens on a capital word that is neither one of these nor a plain word is not given a time word. */
+  names?: ReadonlySet<string>;
 }
 
 const LADDER_TENSES: readonly TenseKey[] = ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional'];
@@ -187,7 +190,7 @@ export function typeFormItem(row: BankSentence): TypeFormItem | null {
 }
 
 /** States: their past is "how it used to be" (imperfect), never "yesterday". */
-const STATIVE = new Set(['ser', 'estar', 'tener', 'saber', 'conocer', 'querer', 'poder', 'necesitar', 'vivir', 'creer', 'existir', 'haber', 'deber', 'parecer']);
+const STATIVE = new Set(['ser', 'estar', 'tener', 'saber', 'conocer', 'querer', 'poder', 'necesitar', 'vivir', 'creer', 'existir', 'haber', 'deber', 'parecer', 'llamarse']);
 
 const PERSON_INSTRUCTION: Readonly<Record<Person, string>> = {
   yo: 'Say it about yourself (yo).', 'tú': 'Say it to a friend (tú).', 'él/ella': 'Say it about one other person (él / ella).',
@@ -203,47 +206,63 @@ function transform(s: BankSentence, key: string, instruction: string, op: Transf
 }
 
 /** Ladder step 3: every transform the sentence supports (for a dialogue
- *  row, of the first turn, reply first, that supports any). */
-export function transformItems(row: BankSentence): TransformItem[] {
+ *  row, of the first turn, reply first, that supports any). With `taught`
+ *  no transform asks for a tense outside the list. */
+export function transformItems(row: BankSentence, opts: Pick<LadderOptions, 'taught' | 'names'> = {}): TransformItem[] {
   for (const v of turnViews(row)) {
-    const out = transformsOf(v.sentence);
+    const out = transformsOf(v.sentence, opts);
     if (out.length) return out;
   }
   return [];
 }
 
-function transformsOf(s: BankSentence): TransformItem[] {
+/** A time word in front of a clause. The clause's own first word loses its capital when it only had one for opening the sentence. */
+function opened(toks: readonly Tok[], word: string, lower: boolean): string {
+  const out = toks.map((t) => ({ ...t }));
+  const first = out[0];
+  const lead: Tok = { pre: first.pre, core: word, post: '' };
+  first.pre = '';
+  if (lower) first.core = first.core[0].toLowerCase() + first.core.slice(1);
+  return render([lead, ...out]);
+}
+
+function transformsOf(s: BankSentence, { taught, names }: Pick<LadderOptions, 'taught' | 'names'>): TransformItem[] {
   const c = parseClause(s.es, s.en);
-  if (!c) return [];
+  // only a clause the engine has understood completely, in a tense the learner has met (licence.ts)
+  if (!c || refusal(c, s.en) || (taught && !taught.includes(tenseOf(c)))) return [];
+  const taughtIn = (t: TenseKey) => !taught || taught.includes(t);
+  const lead = opening(c, names);
   const out: Array<TransformItem | null> = [];
   for (const p of PRODUCTION_PERSONS) {
     if (p === c.choice.person) continue;
     const r = changePerson(c, p, { en: s.en });
     if (r) out.push(transform(s, `person:${p}`, PERSON_INSTRUCTION[p], { op: 'person', to: p }, r.es, []));
   }
-  // Tense transforms: not on questions ("¿Ayer dónde viviste?") and, for
-  // states (tener, ser, saber…), only to "how it used to be" — "Ayer tuve dos
-  // hermanos" is grammatical and nonsense.
-  if (!timeSpans(c.toks).length && c.participle < 0 && !/[?]/.test(s.es)) {
+  // Tense transforms: not on questions ("¿Ayer dónde viviste?"), not behind a
+  // greeting or a remark ("Antes Perdón, era de Cali"), not beside a word for
+  // how often ("Ayer raras veces…") and, for states (tener, ser, saber…), only
+  // to "how it used to be" — "Ayer tuve dos hermanos" is grammatical and
+  // nonsense.
+  if (lead && !timeSpans(c.toks).length && c.participle < 0 && !/[?¡]/.test(s.es) && opensClean(c) && !FREQUENCY.test(s.es)) {
     const copula = STATIVE.has(c.choice.inf);
+    const lower = lead === 'lower';
     if (c.choice.tense === 'presente') {
       const pastTense: TenseKey = copula ? 'imperfecto' : 'preterito';
       const word = copula ? 'Antes' : 'Ayer';
-      const past = changeTense(c, pastTense);
+      const past = taughtIn(pastTense) ? changeTense(c, pastTense) : null;
       if (past) {
-        const ans = render(insertTok(past.toks, 0, word));
-        out.push(transform(s, `tense:${pastTense}`, copula ? 'Say it was like this before: start with "Antes".' : 'Say it happened yesterday: start with "Ayer".', { op: 'tense', to: pastTense }, ans, []));
+        out.push(transform(s, `tense:${pastTense}`, copula ? 'Say it was like this before: start with "Antes".' : 'Say it happened yesterday: start with "Ayer".', { op: 'tense', to: pastTense }, opened(past.toks, word, lower), []));
       }
-      const fut = copula ? null : changeTense(c, 'futuro');
+      // "voy a ir" has no future of its own
+      const fut = copula || !taughtIn('futuro') || (c.choice.inf === 'ir' && c.complement >= 0) ? null : changeTense(c, 'futuro');
       if (fut) {
-        const ans = render(insertTok(fut.toks, 0, 'Mañana'));
-        const accept = [render(insertTok(c.toks, 0, 'Mañana'))];
+        const accept = [opened(c.toks, 'Mañana', lower)];
         const ir = form('ir', 'presente', c.choice.person);
         if (ir && !c.reflexive && c.complement < 0) {
           const t2 = replaceCore(c.toks, c.verb, `${ir} a ${c.choice.inf}`);
-          accept.push(render(insertTok(t2, 0, 'Mañana')));
+          accept.push(opened(t2, 'Mañana', lower));
         }
-        out.push(transform(s, 'tense:futuro', 'Say it will happen: start with "Mañana".', { op: 'tense', to: 'futuro' }, ans, accept));
+        out.push(transform(s, 'tense:futuro', 'Say it will happen: start with "Mañana".', { op: 'tense', to: 'futuro' }, opened(fut.toks, 'Mañana', lower), accept));
       }
     }
   }
@@ -261,6 +280,6 @@ export function ladder(s: BankSentence, opts: LadderOptions = {}): Array<ChooseI
   if (ch) out.push(ch);
   const ty = typeFormItem(s);
   if (ty) out.push(ty);
-  out.push(...transformItems(s));
+  out.push(...transformItems(s, opts));
   return out;
 }

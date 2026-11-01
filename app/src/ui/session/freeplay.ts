@@ -234,7 +234,7 @@ export class Freeplay {
     const novel = !!sentence && !learner.ledger.hasSeen('sentence', sentence);
     const id = `quick:${++this.seq}:${node}:${dir}`;
     const item: ReviewItem = { op: 'review', id, scoring: 'review', credit: [node], node, targets: [node], direction: dir, sentence, novel };
-    const card = reviewCard(item, bundle);
+    const card = reviewCard(item, bundle, 'meaning', undefined, licensedTenses(learner.nodes(), (id) => bundle.node(id)?.tags));
     this.lastOp = 'quick';
     this.cur = {
       grade: (o) => {

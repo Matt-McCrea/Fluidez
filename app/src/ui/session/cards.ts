@@ -17,11 +17,14 @@ import {
 } from '../../exercises';
 import { bankIndex } from '../../exercises/bank-index';
 import { INTERCHANGEABLE } from '../../exercises/lexeme';
-import { fixBreaks, isMultiTurn, productionView, turnView, turnViews, type TurnView } from '../../exercises/dialogue';
+import { namesOf } from '../../exercises/licence';
+import { recombineTurn } from '../../exercises/recombine';
+import { fixBreaks, isMultiTurn, productionView, turnView, type TurnView } from '../../exercises/dialogue';
 import { englishVariants } from './engvariants';
 import { hash32 } from '../../exercises/rng';
 import type { Feature, RecombineItem } from '../../exercises/types';
 import { looksSpanish, type Bundle } from '../data/bundle';
+import { licensedTenses } from './tenses';
 
 export type Lang = 'es' | 'en';
 export interface Txt { text: string; lang: Lang }
@@ -384,10 +387,29 @@ function answerBelongs(b: Bundle, node: NodeId, answer: string): boolean {
   return analyzeToken(answer.toLowerCase()).some((r) => own.has(r.inf.replace(/se$/, '')));
 }
 
+/** The tenses taught by the end of a unit: the card of a learner whose own list is not to hand is limited to these (the present, when the unit is not known). */
+const unitTaught = new WeakMap<Bundle, Map<string, TenseKey[]>>();
+function taughtAt(b: Bundle, unit: string | undefined): TenseKey[] {
+  let m = unitTaught.get(b);
+  if (!m) unitTaught.set(b, m = new Map());
+  const key = unit ?? '';
+  let t = m.get(key);
+  if (!t) {
+    const at = unit === undefined ? undefined : b.course.unitIndex.get(unit);
+    const end = at === undefined ? 0 : b.course.unitStart[at + 1] ?? Infinity;
+    const met = [...b.course.teachPos].filter(([, pos]) => pos < end).map(([id]) => id);
+    m.set(key, t = licensedTenses(met, (id) => b.node(id)?.tags));
+  }
+  return t;
+}
+
+/** What a transform may ask of this sentence: the tenses taught (the learner's own list, else the unit's) and the names in the bank. */
+const transformsFor = (s: BankSentence, b: Bundle, taught?: readonly TenseKey[]) => transformItems(s, { taught: taught ?? taughtAt(b, s.unit), names: namesOf(b.bank) });
+
 /** The cloze or transform way of asking a productive review, or undefined when the sentence does not support it. */
-function productiveSideCard(item: ReviewItem, s: BankSentence, b: Bundle, f: 'cloze' | 'transform'): Card | undefined {
+function productiveSideCard(item: ReviewItem, s: BankSentence, b: Bundle, f: 'cloze' | 'transform', taught?: readonly TenseKey[]): Card | undefined {
   if (f === 'transform') {
-    const t = transformItems(s)[0];
+    const t = transformsFor(s, b, taught)[0];
     if (!t) return undefined;
     return {
       type: 'type', key: item.id, ask: 'Change the sentence', prompt: es(t.source), sub: en(t.instruction), answerLang: 'es',
@@ -455,7 +477,7 @@ export function lexemeTypeCard(key: string, node: NodeId, b: Bundle, exampleId?:
  * so a warm-up of receptive reviews is not one long run of the same look.
  * `session` (a number) makes a node's look change from one session to the next.
  */
-export function reviewCard(item: ReviewItem, b: Bundle, variant: 'meaning' | 'pickSpanish' | 'cloze' = 'meaning', session?: number): Card {
+export function reviewCard(item: ReviewItem, b: Bundle, variant: 'meaning' | 'pickSpanish' | 'cloze' = 'meaning', session?: number, taught?: readonly TenseKey[]): Card {
   const s = b.sentence(item.sentence);
   const seg = b.segments(item.node)[0];
   const title = b.title(item.node);
@@ -481,7 +503,8 @@ export function reviewCard(item: ReviewItem, b: Bundle, variant: 'meaning' | 'pi
   }
   if (s && item.direction === 'productive' && reviewTargets(item).length === 1) {
     const f = variant === 'cloze' ? 'cloze' : productiveFormat(item.node, session ?? item.id);
-    const c = f === 'translate' ? undefined : productiveSideCard(item, s, b, f);
+    // a transform the sentence does not allow falls back to a gap before it falls back to a translation
+    const c = f === 'translate' ? undefined : productiveSideCard(item, s, b, f, taught) ?? (f === 'transform' ? productiveSideCard(item, s, b, 'cloze', taught) : undefined);
     if (c) return c;
   }
   const v = s ? productionView(s, preferFor(b, item.node)) : null;
@@ -663,17 +686,16 @@ function recombineAsk(key: string): { ask: string; what: string } {
  * by the card key: person-plus-negation first, then the object pronoun, then
  * the plain production variants. With no variant, an ordinary transform.
  */
-export function recombineCard(item: PracticeItem, s: BankSentence, b: Bundle, seed: number): Card | undefined {
+export function recombineCard(item: PracticeItem, s: BankSentence, b: Bundle, seed: number, taught?: readonly TenseKey[]): Card | undefined {
   const r = rng(`${seed}:${item.id}:recombine`);
-  const all = recombinations(s, { seed: item.id, bank: b.bank });
+  const all = recombinations(s, { seed: item.id, bank: b.bank, taught: taught ?? taughtAt(b, s.unit) });
   const rank = (x: RecombineItem) => (x.mode === 'production' ? (x.id.endsWith('+negate') ? 0 : 2) : x.transform.op === 'pronoun' ? 1 : 4);
   const items = all.filter((x) => x.mode === 'production' || x.options?.length);
   if (!items.length) return undefined;
   const best = Math.min(...items.map(rank));
   const pool = items.filter((x) => rank(x) === best);
   const it = pool[Math.floor(r() * pool.length)];
-  const view = turnViews(s).find((v) => parseClause(v.sentence.es, v.sentence.en));
-  const known = view?.sentence ?? s;
+  const known = recombineTurn(s)?.sentence ?? s;
   const key = it.id.split('|')[2] ?? '';
   if (it.mode === 'recognition') {
     const opts = it.options!;
@@ -721,7 +743,7 @@ export function practiceCard(item: PracticeItem, b: Bundle, seed: number, taught
     case 'type':
       return typeFormCard(item, s) ?? translateCard(item, s, b);
     case 'transform': {
-      const it = transformItems(s)[0];
+      const it = transformsFor(s, b, taught)[0];
       if (it) {
         return {
           type: 'type', key: item.id, ask: it.instruction, prompt: es(it.source), answerLang: 'es', placeholder: 'Rewrite it',
@@ -731,7 +753,7 @@ export function practiceCard(item: PracticeItem, b: Bundle, seed: number, taught
       return translateCard(item, s, b);
     }
     case 'recombine':
-      return recombineCard(item, s, b, seed) ?? practiceCard({ ...item, op: 'transform' }, b, seed, taught);
+      return recombineCard(item, s, b, seed, taught) ?? practiceCard({ ...item, op: 'transform' }, b, seed, taught);
     case 'translate':
       return translateCard(item, s, b);
     case 'gap': {
