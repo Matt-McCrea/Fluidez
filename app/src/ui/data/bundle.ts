@@ -31,6 +31,11 @@ export class Bundle {
   readonly bank: BankSentence[];
   /** lemma (lower case, no article) -> lexeme node, for tap-to-gloss */
   private readonly lemmas = new Map<string, GraphNode>();
+  /** the same, for the words that have plurals (nouns, adjectives, determiners, pronouns), and by spelling without accents */
+  private readonly pluralizing = new Map<string, GraphNode>();
+  private readonly pluralizingPlain = new Map<string, GraphNode>();
+  /** the words that have a masculine singular to read feminines and plurals back to (adjectives, determiners, numbers, pronouns) */
+  private readonly agreeing = new Map<string, GraphNode>();
 
   private more?: ContentExtender;
   private readonly noScript = new Set<NodeId>();
@@ -48,7 +53,13 @@ export class Bundle {
       if (n.kind !== 'lexeme' || !n.es) continue;
       for (const form of n.es.split(/[/;,]/)) {
         const k = stripArticle(form).toLowerCase();
-        if (k && !this.lemmas.has(k)) this.lemmas.set(k, n);
+        if (!k) continue;
+        if (!this.lemmas.has(k)) this.lemmas.set(k, n);
+        if (HAS_PLURAL.has(n.pos ?? 'noun')) {
+          if (!this.pluralizing.has(k)) this.pluralizing.set(k, n);
+          if (!this.pluralizingPlain.has(deaccent(k))) this.pluralizingPlain.set(deaccent(k), n);
+        }
+        if ((AGREES.has(n.pos ?? '') || (n.pos === 'noun' && n.gender === 'm' && PERSON_ENDING.test(k))) && !this.agreeing.has(k)) this.agreeing.set(k, n);
       }
     }
   }
@@ -71,6 +82,7 @@ export class Bundle {
     if (changed) {
       this.index = buildContentIndex(src, this.course);
       this.byEs = undefined;
+      this.names = undefined;
     }
     return changed;
   }
@@ -136,30 +148,133 @@ export class Bundle {
     return { id, es: n.es.split(/\s+\/\s+/)[0], en: n.en.split(/\s+\/\s+/)[0], ...(n.peninsular ? { peninsular: n.peninsular } : {}) };
   }
 
-  /** The English for a tapped Spanish word: chapter gloss first, then the lexeme graph. */
-  gloss(word: string, chapter?: StoryChapter): Gloss | undefined {
+  /**
+   * The note for a tapped Spanish word. `at` says where it was tapped; a chapter's note on a phrase
+   * is shown only when that phrase covers the word tapped, there and then. A name is a name before
+   * it is anything else.
+   */
+  gloss(word: string, chapter?: StoryChapter, at?: TapAt): Gloss | undefined {
     const w = normWord(word);
     if (!w) return undefined;
-    if (chapter) {
-      let phrase: { es: string; en: string } | undefined;
-      for (const g of chapter.gloss) {
-        const toks = g.es.split(/\s+/).map(normWord);
-        if (toks.length === 1 && toks[0] === w) return g;
-        if (!phrase && toks.includes(w)) phrase = g;
-      }
-      if (phrase) return phrase;
-    }
-    const lex = this.lemmas.get(w) ?? this.lemmas.get(w.replace(/s$/, '')) ?? this.lemmas.get(w.replace(/es$/, ''));
+    const phrase = chapter && at ? phraseAt(chapter, at) : undefined;
+    const own = this.wordGloss(word, w, chapter);
+    if (!phrase) return own;
+    return own && !own.name ? { ...own, phrase } : phrase;
+  }
+
+  /** What the word means on its own: the chapter's note on it, a name, a little word, the word list, a verb form. */
+  private wordGloss(word: string, w: string, chapter?: StoryChapter): Gloss | undefined {
+    const mine = chapter?.gloss.find((g) => { const t = wordsOfNote(g); return t.length === 1 && t[0] === w; });
+    if (mine) return mine;
+    if (this.isName(word)) return { es: word, en: 'a name', name: true };
+    const small = this.smallWord(w, word);
+    if (small) return small;
+    const lex = this.lemmas.get(w) ?? this.plural(w);
     if (lex?.en) return { es: lex.es ?? word, en: lex.en };
     const viaVerb = this.verbGloss(word, w);
     if (viaVerb) return viaVerb;
     // a sentence-bank chunk or node whose Spanish is exactly this word
-    for (const n of this.course.nodes.values()) {
-      if (n.kind === 'cando' || !n.es) continue;
-      if (this.segments(n.id).some((s) => normWord(s.es) === w)) return { es: word, en: this.segments(n.id).find((s) => normWord(s.es) === w)!.en };
-    }
-    return this.looseLemma(w, word);
+    const exact = this.exactEn(w);
+    if (exact) return { es: word, en: exact };
+    return this.agreement(w, word);
   }
+
+  /** The contractions and the other forms of the articles: the word list has no headword for them. */
+  private smallWord(w: string, word: string): Gloss | undefined {
+    const s = SMALL_WORDS[w];
+    if (!s) return undefined;
+    const head = s.of ? this.lemmas.get(s.of) : undefined;
+    const en = s.en ?? head?.en;
+    if (!en) return undefined;
+    return s.of ? { es: head?.es ?? s.of, en, form: word, ...(s.how ? { how: s.how } : {}) } : { es: word, en };
+  }
+
+  /** The word list's noun, adjective, determiner or number that a plural is the plural of. An accent may move (jóvenes, habitaciones). */
+  private plural(w: string): GraphNode | undefined {
+    for (const s of singulars(w)) {
+      // the accent moves only where the plural adds -es to a consonant (jóvenes, habitaciones); estés is not a plural of este
+      const n = this.pluralizing.get(s) ?? (w.endsWith('es') && s === w.slice(0, -2) ? this.pluralizingPlain.get(deaccent(s)) : undefined);
+      if (n) return n;
+    }
+    return undefined;
+  }
+
+  /**
+   * A feminine or plural of an adjective, determiner, number or pronoun, read back to its masculine
+   * singular (alta, otras, mía). Only the ending moves: a noun is never read as another noun, so
+   * Cuba is not a bucket and la is not lo.
+   */
+  private agreement(w: string, word: string): Gloss | undefined {
+    const lex = this.agreeingBase(w);
+    return lex?.en ? { es: lex.es ?? word, en: lex.en, form: word } : undefined;
+  }
+
+  private agreeingBase(w: string): GraphNode | undefined {
+    for (const s of [w, ...singulars(w)]) {
+      const stem = s.slice(0, -1);
+      const bases = s.endsWith('a')
+        ? [`${stem}o`, `${stem}e`, ...(s.endsWith('ora') ? [`${s.slice(0, -3)}or`] : []), ...(s.endsWith('esa') ? [`${s.slice(0, -3)}és`] : []),
+          ...(s.endsWith('ona') ? [`${s.slice(0, -3)}ón`] : []), ...(s.endsWith('ana') ? [`${s.slice(0, -3)}án`] : [])]
+        : s.endsWith('o') ? [`${stem}e`] : [];
+      for (const base of bases) {
+        const n = this.agreeing.get(base);
+        if (n) return n;
+      }
+    }
+    return undefined;
+  }
+
+  /**
+   * The story's names: words it capitalises in the middle of a sentence. A word the list also knows
+   * (gloria, rosa) is a name only where the story shows a person: someone speaks as it, or it
+   * follows don or doña, and it is hardly ever written small. A speaker's label alone is a role.
+   */
+  private cast(): ReadonlySet<string> {
+    if (this.names) return this.names;
+    const capital = new Map<string, number>();
+    const small = new Map<string, number>();
+    const person = new Set<string>();
+    for (const ch of this.chapters.values()) {
+      for (const line of ch.text.split('\n')) {
+        const speaker = line.match(SPEAKER)?.[0].length ?? 0;
+        for (const m of line.matchAll(/\p{L}+/gu)) {
+          const k = m[0].toLowerCase();
+          if (m[0] === k) { small.set(k, (small.get(k) ?? 0) + 1); continue; }
+          if (m[0].length < 2 || !isCapitalised(m[0])) continue;
+          const before = line.slice(0, m.index!);
+          if (m.index! < speaker) person.add(k);
+          else if (!startsSentence(before)) {
+            capital.set(k, (capital.get(k) ?? 0) + 1);
+            if (TITLES.has(before.match(/(\p{L}+)\s*$/u)?.[1].toLowerCase() ?? '')) person.add(k);
+          }
+        }
+      }
+    }
+    const names = new Set<string>();
+    for (const [k, n] of capital) {
+      const ordinary = this.lemmas.has(k) || k in SMALL_WORDS || !!this.plural(k) || !!this.agreeingBase(k);
+      if (!ordinary || (person.has(k) && (small.get(k) ?? 0) < n)) names.add(k);
+    }
+    return (this.names = names);
+  }
+  private names?: Set<string>;
+
+  private isName(word: string): boolean {
+    return isCapitalised(word) && this.cast().has(word.toLowerCase());
+  }
+
+  /** A node of the graph, a chunk say, whose Spanish is exactly this word. */
+  private exactEn(w: string): string | undefined {
+    if (!this.exact) {
+      this.exact = new Map();
+      for (const n of this.course.nodes.values()) {
+        if (n.kind === 'cando' || !n.es) continue;
+        for (const s of this.segments(n.id)) { const k = normWord(s.es); if (k && !this.exact.has(k)) this.exact.set(k, s.en); }
+      }
+    }
+    return this.exact.get(w);
+  }
+  private exact?: Map<string, string>;
 
   /** An inflected verb (clitics included) read back to its infinitive's lexeme. */
   private verbGloss(word: string, w: string): Gloss | undefined {
@@ -175,22 +290,6 @@ export class Bundle {
     return undefined;
   }
 
-  /** Last resorts: ignore accents, then feminine and plural endings back to the -o word. */
-  private looseLemma(w: string, word: string): Gloss | undefined {
-    if (!this.plain) {
-      this.plain = new Map();
-      for (const [k, n] of this.lemmas) { const d = deaccent(k); if (!this.plain.has(d)) this.plain.set(d, n); }
-    }
-    const d = deaccent(w);
-    const cands = [d, d.replace(/(os|as|a|es|s)$/, 'o'), d.replace(/as$/, 'a'), d.replace(/(es|s)$/, ''), d.replace(/(a|as|es)$/, 'e')];
-    for (const c of cands) {
-      const lex = c ? this.plain.get(c) : undefined;
-      if (lex?.en) return { es: lex.es ?? word, en: lex.en, form: word };
-    }
-    return undefined;
-  }
-  private plain?: Map<string, GraphNode>;
-
   /** The bank's English for a sentence of Spanish, matched exactly after trimming. */
   englishOf(es: string): string | undefined {
     if (!this.byEs) {
@@ -202,8 +301,93 @@ export class Bundle {
   private byEs?: Map<string, string>;
 }
 
-/** A tapped word's note. `form` and `how` are set when the word is a form of `es`. */
-export interface Gloss { es: string; en: string; form?: string; how?: string }
+/** Where a word was tapped: the line of the chapter it sits in, and which of that line's words it is (counting from 0). */
+export interface TapAt { line: string; index: number }
+
+/**
+ * A tapped word's note. `form` and `how` are set when the word is a form of `es`. `phrase` is the
+ * chapter's note on a phrase the word sits in, shown after the word's own; when the word has no
+ * note of its own, the phrase is the note. `name` marks the name of a person or a place.
+ */
+export interface Gloss { es: string; en: string; form?: string; how?: string; phrase?: { es: string; en: string }; name?: true }
+
+/** Parts of speech that have plurals, and that have feminine forms to read back to a masculine. */
+const HAS_PLURAL = new Set(['noun', 'adj', 'det', 'num', 'pron']);
+const AGREES = new Set(['adj', 'det', 'num', 'pron']);
+/** Masculine nouns that name a person by their ending (cliente, vendedor, abogado, vecino): their feminine is read back to them. */
+const PERSON_ENDING = /(dor|tor|sor|ente|efe|ario|ado|ino|ico|ecto|acho)$|^socio$/;
+
+/**
+ * Little words the word list has no headword for: the contractions, the other forms of the
+ * articles and demonstratives, the short forms before a noun, and hay. `of` is the headword they
+ * come from; the English is the headword's unless given.
+ */
+export const SMALL_WORDS: Readonly<Record<string, { of?: string; en?: string; how?: string }>> = {
+  la: { of: 'el', en: 'the', how: 'feminine' },
+  los: { of: 'el', en: 'the', how: 'plural' },
+  las: { of: 'el', en: 'the', how: 'feminine plural' },
+  una: { of: 'un', en: 'a, an', how: 'feminine' },
+  unos: { of: 'un', en: 'some', how: 'plural' },
+  unas: { of: 'un', en: 'some', how: 'feminine plural' },
+  del: { en: 'of the, from the (de + el)' },
+  al: { en: 'to the, at the (a + el)' },
+  hay: { of: 'haber', en: 'there is, there are' },
+  esta: { of: 'este', how: 'feminine' }, estas: { of: 'este', how: 'feminine plural' }, estos: { of: 'este', how: 'plural' },
+  esa: { of: 'ese', how: 'feminine' }, esas: { of: 'ese', how: 'feminine plural' }, esos: { of: 'ese', how: 'plural' },
+  aquella: { of: 'aquel', how: 'feminine' }, aquellas: { of: 'aquel', how: 'feminine plural' }, aquellos: { of: 'aquel', how: 'plural' },
+  primer: { of: 'primero', how: 'before a masculine noun' },
+  tercer: { of: 'tercero', how: 'before a masculine noun' },
+  algún: { of: 'alguno', how: 'before a masculine noun' },
+  ningún: { of: 'ninguno', how: 'before a masculine noun' },
+  cualquier: { of: 'cualquiera', how: 'before a noun' },
+  ciento: { of: 'cien', how: 'in numbers like ciento diez' },
+  e: { of: 'y', how: 'before a word that starts with i' },
+  quizás: { of: 'quizá' },
+  uy: { en: 'oh, oops, wow' },
+};
+
+/** The words of a line or a note, lower case and in order. */
+const wordsOf = (s: string): string[] => (s.match(/\p{L}+/gu) ?? []).map(normWord);
+const noteWords = new WeakMap<object, string[]>();
+const wordsOfNote = (g: { es: string }): string[] => {
+  let t = noteWords.get(g);
+  if (!t) noteWords.set(g, t = wordsOf(g.es));
+  return t;
+};
+
+/** The chapter's note on the tightest phrase that covers the word tapped, in the place it was tapped. */
+function phraseAt(chapter: StoryChapter, at: TapAt): { es: string; en: string } | undefined {
+  const line = wordsOf(at.line);
+  let best: { es: string; en: string } | undefined;
+  let bestLen = Infinity;
+  for (const g of chapter.gloss) {
+    const p = wordsOfNote(g);
+    if (p.length < 2 || p.length >= bestLen) continue;
+    for (let s = Math.max(0, at.index - p.length + 1); s <= at.index && s + p.length <= line.length; s++) {
+      if (p.every((x, j) => line[s + j] === x)) { best = g; bestLen = p.length; break; }
+    }
+  }
+  return best;
+}
+
+/** What a plural could be the plural of: luces > luz, canciones > canción, casas > casa. */
+function singulars(w: string): string[] {
+  const out: string[] = [];
+  if (w.endsWith('ces')) out.push(`${w.slice(0, -3)}z`);
+  if (w.endsWith('es')) out.push(w.slice(0, -2));
+  if (w.endsWith('s')) out.push(w.slice(0, -1));
+  return out;
+}
+
+/** Words before a first name: don Hernando, doña Gloria. */
+const TITLES: ReadonlySet<string> = new Set(['don', 'doña', 'señor', 'señora', 'señorita', 'tío', 'tía', 'doctor', 'doctora', 'profesor', 'profesora', 'inspector', 'abuelo', 'abuela']);
+
+/** A line that opens with the name of who speaks: "Vale:", "Jhon Fredy:". */
+const SPEAKER = /^\p{Lu}\p{L}*(?:\s+\p{Lu}\p{L}*)*(?=:)/u;
+/** A capital letter that is not shouting (HUELGA): the word starts with one. */
+const isCapitalised = (t: string): boolean => t !== t.toLowerCase() && !(t.length > 1 && t === t.toUpperCase());
+/** Is the next word the first of a sentence? `before` is the line up to it. */
+const startsSentence = (before: string): boolean => { const b = before.trimEnd(); return !b || /[.!?…:¿¡«"“(]$/.test(b); };
 
 const PERSON_WORDS: Readonly<Record<string, string>> = {
   yo: 'I', 'tú': 'you', 'él/ella': 'he or she', nosotros: 'we', ellos: 'they', vos: 'you', vosotros: 'you all',

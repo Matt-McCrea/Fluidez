@@ -9,7 +9,7 @@ import { Rating } from '../../learner';
 import type { Outcome, SessionRunner } from '../session/runner';
 import { CardRun, Continue } from '../components/card';
 import { Es, Heading, fmtSeconds, lines, undash } from '../components/text';
-import type { Bundle } from '../data/bundle';
+import type { Bundle, TapAt } from '../data/bundle';
 import { questionCard } from '../session/cards';
 import { sentencesOf, splitBeats } from '../session/beats';
 import { blockHeading } from '../session/labels';
@@ -35,19 +35,19 @@ export function logComprehension(run: SessionRunner, chapter: StoryChapter, q: Q
   return ids;
 }
 
-type Sel = { word: string; es: string; en?: string; form?: string; how?: string };
+type Sel = { at: TapAt; word: string; es: string; en?: string; form?: string; how?: string; phrase?: { es: string; en: string }; name?: boolean };
 
 /** Tap-to-gloss state shared by the whole-chapter reader and the beat reader. */
 function useGloss(chapter: StoryChapter, bundle: Bundle, ui: UiStore) {
   const [sel, setSel] = useState<Sel | null>(null);
   const [, setTick] = useState(0);
   const isSaved = (es: string) => ui.state.saved.some((s) => s.es.toLowerCase() === es.toLowerCase());
-  const tap = (word: string) => {
-    const g = bundle.gloss(word, chapter);
-    setSel({ word, es: g?.es ?? word, en: g?.en, form: g?.form, how: g?.how });
+  const tap = (word: string, at: TapAt) => {
+    const g = bundle.gloss(word, chapter, at);
+    setSel({ at, word, es: g?.es ?? word, en: g?.en, form: g?.form, how: g?.how, phrase: g?.phrase, name: g?.name });
   };
   const save = async () => {
-    if (!sel?.en || isSaved(sel.es)) return;
+    if (!sel?.en || sel.name || isSaved(sel.es)) return;
     await ui.update((s) => { s.saved.push({ es: sel.es, en: sel.en!, at: Date.now(), chapter: chapter.id }); });
     setTick((n) => n + 1);
   };
@@ -60,8 +60,9 @@ function useGloss(chapter: StoryChapter, bundle: Bundle, ui: UiStore) {
               ? <><Es><strong>{undash(sel.form)}</strong></Es> <span class="small">from</span> <Es>{undash(sel.es)}</Es>, <span class="en">{undash(sel.en)}</span>{sel.how ? <span class="small"> ({sel.how})</span> : null}</>
               : <><Es><strong>{undash(sel.es)}</strong></Es> {sel.en ? <span class="en">{undash(sel.en)}</span> : <span class="small">No note for this word yet. Guess from the sentence.</span>}</>}
           </p>
+          {sel.phrase ? <p class="small">In this phrase: <Es>{undash(sel.phrase.es)}</Es>, <span class="en">{undash(sel.phrase.en)}</span></p> : null}
           <div class="gloss-actions">
-            {sel.en ? <button class="btn quiet" disabled={isSaved(sel.es)} onClick={save}>{isSaved(sel.es) ? 'Saved' : 'Save word'}</button> : null}
+            {sel.en && !sel.name ? <button class="btn quiet" disabled={isSaved(sel.es)} onClick={save}>{isSaved(sel.es) ? 'Saved' : 'Save word'}</button> : null}
             <button class="btn quiet" onClick={() => setSel(null)} aria-label="Close the note">Close</button>
           </div>
         </div>
@@ -72,32 +73,39 @@ function useGloss(chapter: StoryChapter, bundle: Bundle, ui: UiStore) {
 }
 
 /** Paragraphs of tappable words; a small EN control after a sentence the bank can translate. */
-function Passage({ text, label, bundle, selWord, tap, showEn }: {
-  text: string; label: string; bundle: Bundle; selWord?: string; tap: (w: string) => void; showEn: boolean;
+function Passage({ text, label, bundle, selAt, tap, showEn }: {
+  text: string; label: string; bundle: Bundle; selAt?: TapAt; tap: (w: string, at: TapAt) => void; showEn: boolean;
 }) {
   const [open, setOpen] = useState<Set<string>>(() => new Set());
   const paras = useMemo(() => text.split(/\n+/).filter((l) => l.trim()).flatMap(lines), [text]);
   const toggle = (k: string) => setOpen((o) => { const n = new Set(o); if (!n.delete(k)) n.add(k); return n; });
   return (
     <article class="story es" lang="es" aria-label={label}>
-      {paras.map((p, i) => (
-        <p key={i}>
-          {sentencesOf(p).map((sent, si) => {
-            const en = showEn ? bundle.englishOf(sent) : undefined;
-            const k = `${i}:${si}`;
-            return (
-              <span key={si}>
-                {si ? ' ' : ''}
-                {sent.split(/(\p{L}+)/u).map((tok, j) => (/^\p{L}+$/u.test(tok)
-                  ? <button key={j} type="button" class={`w${selWord === tok ? ' on' : ''}`} onClick={() => tap(tok)}>{tok}</button>
-                  : <span key={j}>{tok}</span>))}
-                {en ? <> <button type="button" class="en-toggle" aria-expanded={open.has(k)} aria-label="Show English for this sentence" onClick={() => toggle(k)}>EN</button></> : null}
-                {en && open.has(k) ? <span class="en-line small" lang="en"> {undash(en)}</span> : null}
-              </span>
-            );
-          })}
-        </p>
-      ))}
+      {paras.map((p, i) => {
+        let before = 0; // words of this paragraph ahead of the sentence, so a tap knows its place in the line
+        return (
+          <p key={i}>
+            {sentencesOf(p).map((sent, si) => {
+              const en = showEn ? bundle.englishOf(sent) : undefined;
+              const k = `${i}:${si}`;
+              const first = before;
+              before += wordCount(sent);
+              return (
+                <span key={si}>
+                  {si ? ' ' : ''}
+                  {sent.split(/(\p{L}+)/u).map((tok, j) => {
+                    if (!/^\p{L}+$/u.test(tok)) return <span key={j}>{tok}</span>;
+                    const at = { line: p, index: first + (j - 1) / 2 };
+                    return <button key={j} type="button" class={`w${selAt && selAt.line === p && selAt.index === at.index ? ' on' : ''}`} onClick={() => tap(tok, at)}>{tok}</button>;
+                  })}
+                  {en ? <> <button type="button" class="en-toggle" aria-expanded={open.has(k)} aria-label="Show English for this sentence" onClick={() => toggle(k)}>EN</button></> : null}
+                  {en && open.has(k) ? <span class="en-line small" lang="en"> {undash(en)}</span> : null}
+                </span>
+              );
+            })}
+          </p>
+        );
+      })}
     </article>
   );
 }
@@ -116,7 +124,7 @@ export function Reader({ chapter, bundle, ui, onFinish, finishLabel = "I've read
   return (
     <div class="reader">
       {clock ? <div class="timer" role="timer" aria-label="Reading time">{fmtSeconds(secs)}</div> : null}
-      <Passage text={chapter.text} label={chapter.title} bundle={bundle} selWord={g.sel?.word} tap={g.tap} showEn={!clock} />
+      <Passage text={chapter.text} label={chapter.title} bundle={bundle} selAt={g.sel?.at} tap={g.tap} showEn={!clock} />
       {g.panel}
       <div class="actions"><Continue focus={false} label={finishLabel} onClick={() => onFinish(Math.round((performance.now() - start.current) / 1000))} /></div>
     </div>
@@ -152,7 +160,7 @@ function BeatReader({ chapter, questions, bundle, ui, keyPrefix, onQuestion, onF
   return (
     <div class="reader">
       {beats.length > 1 ? <p class="small" aria-label={`Part ${ix + 1} of ${beats.length}`}>Part {ix + 1} of {beats.length}</p> : null}
-      <Passage key={ix} text={beat.text} label={chapter.title} bundle={bundle} selWord={g.sel?.word} tap={g.tap} showEn />
+      <Passage key={ix} text={beat.text} label={chapter.title} bundle={bundle} selAt={g.sel?.at} tap={g.tap} showEn />
       {g.panel}
       <div class="actions"><Continue focus={false} label={label} onClick={done} /></div>
     </div>
