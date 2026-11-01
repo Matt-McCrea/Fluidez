@@ -210,6 +210,16 @@ function experiencerFrame(ts: readonly CanonTok[], i: number, stops: ReadonlySet
   return readings.length ? { clitic, readings } : null;
 }
 
+/** A verb of that person typed without its accent ("sabias", "comio"): a
+ *  reading only if no accented form of any verb spells the token as typed.
+ *  For él that is the -ía and -ió endings alone: "el jugo" (jugó) and "el
+ *  centro" (centró) are nouns. */
+function accentlessVerb(w: string, person: Person): boolean {
+  if (person !== 'tú' && !/i[ao]$/.test(w)) return false;
+  const rs = analyzeToken(w).filter((a) => a.target && !a.clitics);
+  return !rs.some((a) => a.accentExact) && rs.some((a) => a.person === person && !/subj|imperativo|impneg/.test(a.tense));
+}
+
 /** Canonicalise one Spanish answer. */
 export function canon(text: string): Canon {
   const fig = figures(text);
@@ -267,13 +277,20 @@ export function canon(text: string): Canon {
     const prev = out[i - 1]?.t, next = out[i + 1]?.t;
     let pron: string | null = null;
     if (SUBJECT_PRONOUNS[w] !== undefined) pron = w;
+    let loose = false;
     // "el come", "tu hablas": the pronoun without its accent, before a verb that agrees
-    else if ((w === 'el' || w === 'tu') && next && verbReadings(next).some((a) => a.person === (w === 'el' ? 'él/ella' : 'tú') && !/subj|imperativo|impneg/.test(a.tense)) && !/^(trabajo|cocina|cena|camino|baile|estudio|casa|cuenta|cambio|programa|paso|pago|canta|llama|firma|ayuda|compra|cobra|prueba|muestra|debate|guía|cura|vino|cable|homenaje|cupo|dominó)$/.test(next)) {
-      pron = w === 'el' ? 'él' : 'tú';
-      accentSlips++;
+    // (or one that lost its own accent too: "tu sabias")
+    if ((w === 'el' || w === 'tu') && next && !/^(trabajo|cocina|cena|camino|baile|estudio|casa|cuenta|cambio|programa|paso|pago|canta|llama|firma|ayuda|compra|cobra|prueba|muestra|debate|guía|cura|vino|cable|homenaje|cupo|dominó)$/.test(next)) {
+      const person = w === 'el' ? 'él/ella' : 'tú';
+      const exact = verbReadings(next).some((a) => a.person === person && !/subj|imperativo|impneg/.test(a.tense));
+      loose = !exact && accentlessVerb(next, person);
+      if (exact || loose) {
+        pron = w === 'el' ? 'él' : 'tú';
+        accentSlips++;
+      }
     }
     if (pron && !(prev && (PREPOSITIONS.has(prev) || /^(que|como|más|menos|y|o|ni)$/.test(prev)))) {
-      const nextIsVerbish = next && (isFinite(next) || CLITICS.has(next) || next === 'no' || MOVABLE_ONE.has(next) || next.includes('_'));
+      const nextIsVerbish = next && (loose || isFinite(next) || CLITICS.has(next) || next === 'no' || MOVABLE_ONE.has(next) || next.includes('_'));
       const prevIsVerb = prev && isFinite(prev);
       if (nextIsVerbish || prevIsVerb) {
         pronouns.push(pron);

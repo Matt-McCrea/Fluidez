@@ -77,11 +77,11 @@ describe('hints', () => {
   test('wrong word only when the word is not in the answer at all', () => {
     const d = diagnose(['bebo', 'pescado'], ['como', 'pescado']);
     expect(d.kind).toBe('wrong-word');
-    expect(d.hint).toBe('"bebo" isn\'t the word here, check the meaning.');
+    expect(d.hint).toBe('We had a different word where you wrote "bebo".');
   });
   test('through the matcher too', () => {
     const r = matchTranslation('Bebo pescado.', S('Como pescado.', 'I eat fish.'));
-    expect(r.hint).toBe('"bebo" isn\'t the word here, check the meaning.');
+    expect(r.hint).toBe('We had a different word where you wrote "bebo".');
     const o = matchTranslation('¿Qué Vale quiere?', S('¿Qué quiere Vale?', 'What does Vale want?'));
     expect(o.hint).toBe(HINT_TEXT['word-order']);
   });
@@ -101,10 +101,11 @@ describe('hints', () => {
 });
 
 describe('fragment hint', () => {
-  it('names the verb for junk input', () => {
+  it('says it is not the whole sentence, and never names a word of it', () => {
     const d = diagnose(['no', 'se'], ['vivo', 'en', 'una', 'casa', 'grande']);
     expect(d.kind).toBe('fragment');
-    expect(d.hint).toContain('vivo');
+    expect(d.hint).not.toContain('vivo');
+    expect(d.hint).not.toMatch(/start with/i);
   });
   it('leaves short answers on the old path', () => {
     expect(diagnose(['no'], ['no', 'sé']).kind).not.toBe('fragment');

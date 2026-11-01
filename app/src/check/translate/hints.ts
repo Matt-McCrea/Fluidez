@@ -5,13 +5,26 @@
  * The hint names the KIND of mistake and never gives the answer away: "Check
  * the verb ending: who is doing it?", not "it's comemos". The learner gets
  * one self-correction attempt with it (attempt.ts) before the answer shows.
+ *
+ * A hint says only what the difference proves. Two forms of one verb are
+ * named for how they differ (who, when, mood, aspect, the dictionary form), a
+ * swap inside a closed set is named for the set (ser or estar, por or para,
+ * an article), and a difference that is none of those is located, not
+ * explained: a word is "extra" or "missing" only when that is the whole
+ * difference, and no word is ever "not the word here".
  * ========================================================================== */
-import { analyzeToken, deaccent } from '../../engine';
-import { ARTICLES, CLITICS, nounGender, PREPOSITIONS } from '../../exercises/spanish';
+import { analyzeToken, deaccent, TENSES } from '../../engine';
+import type { TenseKey } from '../../engine';
+import {
+  ARTICLES, CLITICS, DEMONSTRATIVES, EXPERIENCER, gerundOf, isInfinitive, nounGender, participleOf, POSSESSIVES, PREPOSITIONS,
+} from '../../exercises/spanish';
 
 export type HintKind =
   | 'accents' | 'verb-ending' | 'article' | 'agreement' | 'word-order' | 'missing-word' | 'extra-word'
-  | 'pronoun' | 'subject' | 'ser-estar' | 'por-para' | 'spelling' | 'attach' | 'wrong-word' | 'empty' | 'fragment' | 'experiencer';
+  | 'pronoun' | 'subject' | 'ser-estar' | 'por-para' | 'spelling' | 'attach' | 'wrong-word' | 'empty' | 'fragment'
+  | 'experiencer' | 'experiencer-agree' | 'mood' | 'aspect' | 'nonfinite' | 'contraction' | 'number' | 'differs';
+/** What a gap with one typed word can say: the sentence kinds, plus who and when on their own. */
+export type GapKind = HintKind | 'person' | 'tense';
 
 export interface Diagnosis { kind: HintKind; hint: string; at: number }
 
@@ -23,13 +36,31 @@ export const HINT_TEXT = {
   'missing-word': 'A word is missing.',
   pronoun: 'Check the pronoun (lo, la, le…): who or what does it stand for?',
   subject: 'Check the subject: who is it about?',
-  'ser-estar': 'Ser or estar? Is it what something is, or how it is right now?',
+  'ser-estar': 'Ser or estar? Think again about which one fits.',
   'por-para': 'Por or para? Check that little word.',
   spelling: 'Check the spelling.',
   attach: 'In a command, the pronoun joins the end of the verb.',
-  experiencer: 'With verbs like gustar, the little word (me, te, le) already says who it is for. Leave the pronoun out, or start it with "a".',
   empty: 'Type your answer in Spanish.',
+  fragment: "That's not the whole sentence yet. Say all of it.",
+  experiencer: 'With verbs like gustar, the little word (me, te, le) already says who it is for. Leave the pronoun out, or start it with "a".',
+  'experiencer-agree': 'With gustar, the verb agrees with the thing you like: one or more than one?',
+  mood: "Right verb. Is someone saying it's so, or is it only held up as an idea?",
+  aspect: 'Both are in the past. Was it going on, or did it happen?',
+  contraction: '"A el" and "de el" join into one word in Spanish.',
+  number: 'Check the number against the English.',
 } as const;
+
+/** The same verb in a shape the spot does not take. */
+export const NONFINITE_TEXT = {
+  'to-inf': 'Right verb, but this spot wants its dictionary form.',
+  'to-finite': 'Right verb, but here it needs an ending that says who is doing it.',
+  'to-ger': 'Right verb, but this spot wants the -ando or -iendo form.',
+  'to-part': 'Right verb, but this spot wants the -ado or -ido form.',
+} as const;
+
+const GERUND_ESTAR = 'A verb ending in -ando or -iendo goes with estar, not ser.';
+const wrongWord = (a: string) => `We had a different word where you wrote "${a}".`;
+const lookAgain = (a: string) => `Look again at "${a}" and the words around it.`;
 
 const SMALL = new Set([...ARTICLES, ...PREPOSITIONS, ...CLITICS, 'que', 'no', 'y', 'o', 'se']);
 
@@ -77,31 +108,131 @@ export function distance(a: readonly string[], b: readonly string[]): number {
 const readings = (w: string) => analyzeToken(w).filter((a) => !a.clitics);
 const GENDER_WORD = { m: 'masculine', f: 'feminine' } as const;
 const stem = (w: string) => deaccent(w).replace(/(os|as|es|o|a|e|s)$/, '');
+const lemma = (inf: string) => inf.replace(/se$/, '');
 
-function classifySub(a: string, b: string, next: string | undefined, at: number): Diagnosis {
-  if (ARTICLES.has(a) && ARTICLES.has(b)) {
-    const ga = nounGender('x', a), gb = nounGender('x', b);
-    const pa = /s$/.test(a), pb = /s$/.test(b);
-    if (ga && gb && ga !== gb && next) return { kind: 'article', hint: `Check the article: ${next} is ${GENDER_WORD[gb]}.`, at };
-    if (pa !== pb && next) return { kind: 'article', hint: `Check the article: one ${next.replace(/s$/, '')} or more than one?`, at };
-    return { kind: 'article', hint: 'Check the article: "the" (el, la) or "a" (un, una)?', at };
+// ---- one verb, two shapes ------------------------------------------------------------
+
+const GROUP = new Map(TENSES.map((t) => [t.key, t.group]));
+const BASE = new Map(TENSES.map((t) => [t.key, t.variantOf ?? t.key]));
+
+interface Form { lemma: string; kind: 'finite' | 'inf' | 'ger' | 'part'; tense?: TenseKey; person?: string }
+
+/** Every way a token reads as a form of a verb the course teaches. */
+function formsOf(w: string): Form[] {
+  // a command is read as one only when nothing else fits: llueve is not also "llueva, usted"
+  const all = readings(w).filter((a) => a.target !== false);
+  const plain = all.filter((a) => a.tense !== 'imperativo' && a.tense !== 'impneg');
+  const out: Form[] = (plain.length ? plain : all).map((a) => ({ lemma: lemma(a.inf), kind: 'finite', tense: a.tense, person: a.person }));
+  if (isInfinitive(w)) out.push({ lemma: lemma(w), kind: 'inf' });
+  const g = gerundOf(w);
+  if (g) out.push({ lemma: lemma(g), kind: 'ger' });
+  const p = participleOf(w);
+  if (p) out.push({ lemma: lemma(p), kind: 'part' });
+  return out;
+}
+
+type VerbDiff = 'person' | 'agree' | 'tense' | 'ending' | 'mood' | 'aspect' | 'to-inf' | 'to-finite' | 'to-ger' | 'to-part';
+const AGREE_VERBS = new Set([...EXPERIENCER].filter((v) => v !== 'quedar'));
+const SHAPE_TO = { finite: 'to-finite', inf: 'to-inf', ger: 'to-ger', part: 'to-part' } as const;
+
+/** How two tenses of one person differ. */
+function tenseDiff(a: TenseKey, b: TenseKey): 'mood' | 'aspect' | 'tense' | 'ending' {
+  const ga = GROUP.get(a), gb = GROUP.get(b);
+  if (BASE.get(a) === BASE.get(b) || ga === 'imperative' || gb === 'imperative') return 'ending';
+  if ((ga === 'subjunctive') !== (gb === 'subjunctive')) return 'mood';
+  if ((a === 'preterito' && b === 'imperfecto') || (a === 'imperfecto' && b === 'preterito')) return 'aspect';
+  return 'tense';
+}
+
+/** How the typed token differs from the wanted one when both are the same verb. */
+function verbDiff(typed: string, want: string): VerbDiff | null {
+  const ta = formsOf(typed), tb = formsOf(want);
+  const pairs = tb.flatMap((x) => ta.filter((y) => y.lemma === x.lemma).map((y) => [y, x] as const));
+  const fin = pairs.filter(([y, x]) => y.kind === 'finite' && x.kind === 'finite');
+  if (fin.length) {
+    if (fin.some(([y, x]) => y.tense === x.tense && y.person !== x.person)) return fin.some(([, x]) => AGREE_VERBS.has(x.lemma)) ? 'agree' : 'person';
+    const kinds = fin.filter(([y, x]) => y.person === x.person).map(([y, x]) => tenseDiff(y.tense!, x.tense!));
+    return (['mood', 'aspect', 'tense'] as const).find((k) => kinds.includes(k)) ?? 'ending';
   }
-  if (CLITICS.has(a) && CLITICS.has(b)) return { kind: 'pronoun', hint: HINT_TEXT.pronoun, at };
-  if (/^(por|para)$/.test(a) && /^(por|para)$/.test(b)) return { kind: 'por-para', hint: HINT_TEXT['por-para'], at };
-  const ra = readings(a), rb = readings(b);
-  if (ra.length && rb.length) {
-    const infA = new Set(ra.map((x) => x.inf.replace(/se$/, '')));
-    const same = rb.filter((x) => infA.has(x.inf.replace(/se$/, '')));
-    if (same.length) {
-      const sameTense = same.some((x) => ra.some((y) => y.tense === x.tense));
-      return { kind: 'verb-ending', hint: sameTense ? 'Check the verb ending: who is doing it?' : 'Check the verb ending: when does it happen?', at };
-    }
-    const cop = (r: typeof ra) => r.some((x) => x.inf === 'ser') ? 'ser' : r.some((x) => x.inf === 'estar') ? 'estar' : null;
-    if (cop(ra) && cop(rb) && cop(ra) !== cop(rb)) return { kind: 'ser-estar', hint: HINT_TEXT['ser-estar'], at };
+  const shape = pairs.find(([y, x]) => y.kind !== x.kind);
+  return shape ? SHAPE_TO[shape[1].kind] : null;
+}
+
+const copula = (w: string) => {
+  const r = readings(w);
+  return r.some((x) => x.inf === 'ser') ? 'ser' : r.some((x) => x.inf === 'estar') ? 'estar' : null;
+};
+
+const DEFINITE = new Set(['el', 'la', 'los', 'las']);
+
+function articleHint(a: string, b: string, noun: string | undefined): string {
+  if (DEFINITE.has(a) !== DEFINITE.has(b)) return 'Check the article: "the" (el, la) or "a" (un, una)?';
+  const ga = nounGender('x', a), gb = nounGender('x', b);
+  const gender = !!ga && !!gb && ga !== gb, number = /s$/.test(a) !== /s$/.test(b);
+  if (gender && !number) return noun ? `Check the article: ${noun} is ${GENDER_WORD[gb!]}.` : 'Check the article: masculine or feminine?';
+  if (number && !gender) return noun ? `Check the article: one ${noun.replace(/s$/, '')} or more than one?` : 'Check the article: one or more than one?';
+  return 'Check the article: it has to match the noun.';
+}
+
+export interface RelationOptions {
+  /** The word after the wanted one, when there is one (a gap has none). */
+  next?: string;
+  /** The typed word after the article, when there is one. */
+  nextTyped?: string;
+  /** The words typed just before this one. */
+  before?: readonly string[];
+  /** One word in a gap: "who" and "when" stand alone, not as an ending. */
+  gap?: boolean;
+}
+
+/** What two different words have to do with each other, when they are a pair
+ *  the course teaches apart: one verb in two shapes, ser and estar, por and
+ *  para, two articles, two pronouns. Null when they are just two words. */
+export function relationHint(a: string, b: string, o: RelationOptions = {}): { kind: GapKind; hint: string } | null {
+  // an article is blamed only when the noun after it is the same: "el éxito" for "la salida" is the noun
+  if (ARTICLES.has(a) && ARTICLES.has(b) && o.nextTyped === o.next) return { kind: 'article', hint: articleHint(a, b, o.next) };
+  if (CLITICS.has(a) && CLITICS.has(b)) return { kind: 'pronoun', hint: HINT_TEXT.pronoun };
+  if (/^(por|para)$/.test(a) && /^(por|para)$/.test(b)) return { kind: 'por-para', hint: HINT_TEXT['por-para'] };
+  if ((POSSESSIVES.has(a) && POSSESSIVES.has(b)) || (DEMONSTRATIVES.has(a) && DEMONSTRATIVES.has(b))) return { kind: 'agreement', hint: HINT_TEXT.agreement };
+  const d = verbDiff(a, b);
+  if (d) {
+    // "Si tendría tiempo": after si the would and will forms are not used
+    const would = (d === 'tense' || d === 'mood') && o.before?.slice(-3).includes('si')
+      ? formsOf(a).find((f) => f.kind === 'finite' && (f.tense === 'condicional' || f.tense === 'futuro')) : undefined;
+    if (would) return { kind: 'mood', hint: `After "si", this verb does not take the ${would.tense === 'condicional' ? 'would' : 'will'} form.` };
+    if (d === 'person') return o.gap ? { kind: 'person', hint: 'Right verb, but who is doing it?' } : { kind: 'verb-ending', hint: 'Check the verb ending: who is doing it?' };
+    if (d === 'tense') return o.gap ? { kind: 'tense', hint: 'Right verb, but when does it happen?' } : { kind: 'verb-ending', hint: 'Check the verb ending: when does it happen?' };
+    if (d === 'ending') return { kind: 'verb-ending', hint: HINT_TEXT['verb-ending'] };
+    if (d === 'agree') return { kind: 'experiencer-agree', hint: HINT_TEXT['experiencer-agree'] };
+    if (d === 'mood' || d === 'aspect') return { kind: d, hint: HINT_TEXT[d] };
+    return { kind: 'nonfinite', hint: NONFINITE_TEXT[d] };
   }
-  if (!ra.length && !rb.length && stem(a) === stem(b) && stem(a).length >= 3) return { kind: 'agreement', hint: HINT_TEXT.agreement, at };
-  if (b.length >= 4 && levenshtein(deaccent(a), deaccent(b)) <= 2) return { kind: 'spelling', hint: HINT_TEXT.spelling, at };
-  return { kind: 'wrong-word', hint: `"${a}" isn't the word here, check the meaning.`, at };
+  const ca = copula(a), cb = copula(b);
+  if (ca && cb && ca !== cb) {
+    const gerund = cb === 'estar' && !!o.next && formsOf(o.next).some((f) => f.kind === 'ger');
+    return { kind: 'ser-estar', hint: gerund ? GERUND_ESTAR : HINT_TEXT['ser-estar'] };
+  }
+  return null;
+}
+
+/** A word is a typo of another only if it is not itself a word of the same
+ *  kind: "tomo" for "como" is a different verb, "pescdo" for "pescado" is a slip. */
+export function isTypo(typed: string, want: string): boolean {
+  const x = deaccent(typed), y = deaccent(want);
+  if (y.length < 4 || x === y) return false;
+  const known = (w: string) => SMALL.has(w) || readings(w).some((a) => a.target !== false);
+  if (known(typed) && known(want)) return false;
+  return levenshtein(x, y) <= (y.length >= 7 ? 2 : 1);
+}
+
+function classifySub(input: readonly string[], i: number, expected: readonly string[], j: number, single: boolean): Diagnosis {
+  const a = input[i], b = expected[j], at = j;
+  if (/^\d/.test(a) && /^\d/.test(b)) return { kind: 'number', hint: HINT_TEXT.number, at };
+  const rel = relationHint(a, b, { next: expected[j + 1], nextTyped: input[i + 1], before: input.slice(Math.max(0, i - 3), i) });
+  if (rel) return { kind: rel.kind as HintKind, hint: rel.hint, at };
+  if (!readings(a).length && !readings(b).length && stem(a) === stem(b) && stem(a).length >= 3) return { kind: 'agreement', hint: HINT_TEXT.agreement, at };
+  if (isTypo(a, b)) return { kind: 'spelling', hint: HINT_TEXT.spelling, at };
+  return single ? { kind: 'wrong-word', hint: wrongWord(a), at } : { kind: 'differs', hint: lookAgain(a), at };
 }
 
 /** Every token of `sub` is in `sup`, counted with repeats. */
@@ -124,6 +255,7 @@ function inOrder(sub: readonly string[], sup: readonly string[]): boolean {
 }
 
 const orderAt = (input: readonly string[], expected: readonly string[]) => Math.max(0, input.findIndex((w, i) => w !== expected[i]));
+const count = (xs: readonly string[], w: string) => xs.filter((x) => x === w).length;
 
 /** The first real mistake in `input` against `expected` (canonical tokens). */
 export function diagnose(input: readonly string[], expected: readonly string[]): Diagnosis {
@@ -131,10 +263,7 @@ export function diagnose(input: readonly string[], expected: readonly string[]):
   // junk or a fragment ("no sé" for a whole sentence): say so honestly
   if (expected.length >= 3 && input.length < expected.length / 2) {
     const hits = input.filter((w) => expected.includes(w)).length;
-    if (hits < expected.length / 2) {
-      const verb = expected.find((w) => readings(w).length);
-      return { kind: 'fragment', at: 0, hint: verb ? `That's not the sentence yet. Start with the verb: ${verb}…` : 'Type the whole sentence.' };
-    }
+    if (hits < expected.length / 2) return { kind: 'fragment', hint: HINT_TEXT.fragment, at: 0 };
   }
   // the same words, or some of them, in another order: never blame a right word
   if (multisetWithin(input, expected) && (input.length === expected.length || !inOrder(input, expected))) {
@@ -146,23 +275,34 @@ export function diagnose(input: readonly string[], expected: readonly string[]):
     const j = expected.findIndex((e) => deaccent(e) === glued);
     if (j >= 0 && CLITICS.has(input[i + 1])) return { kind: 'attach', hint: HINT_TEXT.attach, at: j };
   }
+  // "a el" for "al", "de el" for "del"
+  for (let i = 0; i + 1 < input.length; i++) {
+    const joined = input[i + 1] === 'el' ? (input[i] === 'a' ? 'al' : input[i] === 'de' ? 'del' : null) : null;
+    if (joined && count(expected, joined) > count(input, joined)) return { kind: 'contraction', hint: HINT_TEXT.contraction, at: expected.indexOf(joined) };
+  }
   const ops = align(input, expected);
-  const real = ops.find((o) => o.op !== 'eq' && !(o.op === 'sub' && deaccent(o.a!) === deaccent(o.b!)));
-  if (!real) {
+  const edits = ops.filter((o) => o.op !== 'eq' && !(o.op === 'sub' && deaccent(o.a!) === deaccent(o.b!)));
+  if (!edits.length) {
     const acc = ops.find((o) => o.op === 'sub');
     return { kind: 'accents', hint: HINT_TEXT.accents, at: acc?.j ?? 0 };
   }
-  // a word that moved: the same token deleted here and inserted elsewhere
-  const dels = ops.filter((o) => o.op === 'del').map((o) => o.b);
-  const inss = ops.filter((o) => o.op === 'ins').map((o) => o.a);
-  if (real.op !== 'sub' && dels.some((d) => inss.includes(d))) return { kind: 'word-order', hint: HINT_TEXT['word-order'], at: real.j };
-  if (real.op === 'del') {
-    return { kind: 'missing-word', hint: SMALL.has(real.b!) ? 'A small word is missing.' : HINT_TEXT['missing-word'], at: real.j };
+  const first = edits[0];
+  const dels = edits.filter((o) => o.op === 'del'), inss = edits.filter((o) => o.op === 'ins');
+  // a word that moved: what was taken out here is put back in elsewhere, and nothing else differs
+  if (!edits.some((o) => o.op === 'sub') && dels.length === inss.length && multisetWithin(dels.map((o) => o.b!), inss.map((o) => o.a!))) {
+    return { kind: 'word-order', hint: HINT_TEXT['word-order'], at: first.j };
   }
-  if (real.op === 'ins') return { kind: 'extra-word', hint: `There's an extra word: "${real.a}".`, at: real.j };
-  const dg = classifySub(real.a!, real.b!, expected[real.j + 1], real.j);
-  // a word the right version has, only somewhere else: the order is the mistake
-  const count = (xs: readonly string[], w: string) => xs.filter((x) => x === w).length;
-  if (dg.kind === 'wrong-word' && count(expected, real.a!) >= count(input, real.a!)) return { kind: 'word-order', hint: HINT_TEXT['word-order'], at: real.j };
-  return dg;
+  // missing or extra: only when that is the whole difference
+  if (!inss.length && !edits.some((o) => o.op === 'sub')) {
+    return { kind: 'missing-word', hint: SMALL.has(first.b!) ? 'A small word is missing.' : HINT_TEXT['missing-word'], at: first.j };
+  }
+  if (!dels.length && !edits.some((o) => o.op === 'sub')) return { kind: 'extra-word', hint: `There's an extra word: "${first.a}".`, at: first.j };
+  if (first.op === 'sub') {
+    const dg = classifySub(input, first.i, expected, first.j, edits.length === 1);
+    // a word the right version has, only somewhere else: the order is the mistake
+    if (dg.kind === 'wrong-word' && count(expected, first.a!) >= count(input, first.a!)) return { kind: 'word-order', hint: HINT_TEXT['word-order'], at: first.j };
+    return dg;
+  }
+  // an insertion or a deletion among other differences: point at the place, do not explain it
+  return { kind: 'differs', hint: lookAgain(first.op === 'ins' ? first.a! : input[first.i] ?? input[first.i - 1]), at: first.j };
 }
