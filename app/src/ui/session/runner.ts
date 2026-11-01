@@ -11,7 +11,7 @@ import {
 import type { NodeId } from '../../content/schema';
 import { Rating, type Direction, type Grade, type Learner, type Tier } from '../../learner';
 import type { Bundle } from '../data/bundle';
-import type { SavedSession, UiStore } from '../store/ui';
+import { isResumable, type SavedSession, type UiStore } from '../store/ui';
 import { planRecap, type Lapse } from './recap';
 import { SECONDS } from '../../compiler/budget';
 import { attributeGrades, type Evidence } from './attribute';
@@ -71,10 +71,26 @@ export function requestFullLesson(): void { fullLessonOnce = true; }
  * minutes come from the compiler's budget for the band and tier.
  */
 export function compilePlan(learner: Learner, bundle: Bundle, ui: UiStore, opts: { mode?: Mode; now?: number; tier?: Tier } = {}): SessionPlan {
+  const now = opts.now ?? Date.now();
+  // a lesson nobody can pick up again is over: what it had begun goes to the scheduler before the next one is planned
+  if (!isResumable(ui.session, learner, now, ui.state.learnerId)) sweepIntroductions(learner, now);
   return compileSession({
     learnerId: ui.state.learnerId, learner, path: ui.path, course: bundle.course, content: bundle.index,
-    now: opts.now ?? Date.now(), tier: opts.tier ?? (fullLessonOnce ? 'standard' : learner.settings.tier), mode: opts.mode ?? 'next',
+    now, tier: opts.tier ?? (fullLessonOnce ? 'standard' : learner.settings.tier), mode: opts.mode ?? 'next',
   });
+}
+
+/**
+ * Hand every node still in its lesson to the scheduler, rated from the steps
+ * it had. A node is only in its lesson between its first answer and its last,
+ * so after a lesson left behind this is the half that was practised; the half
+ * that was only shown never got a record (see `SessionRunner.present`).
+ * Returns the nodes it handed over.
+ */
+export function sweepIntroductions(learner: Learner, at: number): NodeId[] {
+  const open = learner.nodes().filter((id) => learner.isLearning(id));
+  for (const id of open) learner.completeIntroduction(id, { at });
+  return open;
 }
 
 /** Blocks that can go when time is up: nothing here moves the course on. */
@@ -118,6 +134,8 @@ export class SessionRunner {
   private readonly skipped = new Set<Block>();
   /** nodes whose presentation has been shown */
   private readonly presented = new Set<NodeId>();
+  /** the production flag a node was presented with, for when its record is made */
+  private readonly productive = new Map<NodeId, boolean>();
   /** learn items never presented (time ran out): owed to the next session */
   private readonly notPresented = new Set<NodeId>();
   /** reviews missed this session, in order (the "Before you go" block re-asks them) */
@@ -322,16 +340,27 @@ export class SessionRunner {
   // ---------------------------------------------------------------- learner model
 
   /**
-   * Make sure a node being taught has a record (and its in-lesson learning
-   * state). Receptive-only nodes (plan.receptiveOnly, or a learn item's
-   * `productive: false`) never get a production card.
+   * A node's presentation is on screen. Showing it creates no record: a lesson
+   * the learner leaves before answering anything must come round again whole,
+   * and a record with no card would make the compiler take it for known. The
+   * record comes with the first answer (`begin`), or when the lesson closes.
    */
   present(node: NodeId, productive?: boolean): void {
     if (this.current?.kind === 'learn' && !this.presented.has(node)) { this.presented.add(node); this.bump(); }
     this.presented.add(node);
     this.notPresented.delete(node);
+    if (productive !== undefined) this.productive.set(node, productive);
+  }
+
+  /**
+   * Make sure a node being taught has a record (and its in-lesson learning
+   * state). Receptive-only nodes (plan.receptiveOnly, or a learn item's
+   * `productive: false`) never get a production card.
+   */
+  private begin(node: NodeId, productive?: boolean): void {
     if (this.learner.isIntroduced(node)) return;
-    const p = productive ?? !(this.plan.receptiveOnly ?? []).includes(node);
+    const p = productive ?? this.productive.get(node) ?? this.plan.blocks.flatMap((b) => (b.kind === 'learn' ? b.items : [])).find((it) => it.node === node)?.productive
+      ?? !(this.plan.receptiveOnly ?? []).includes(node);
     this.learner.introduce(node, { at: this.now(), productive: p });
   }
 
@@ -339,6 +368,7 @@ export class SessionRunner {
   learningStep(node: NodeId, o: Outcome, credit: NodeId[] = [node], productive?: boolean, op = 'learn', typed = false): boolean {
     if (!this.inScore) this.bump();
     this.present(node, productive);
+    this.begin(node, productive);
     this.learnSteps.set(node, (this.learnSteps.get(node) ?? 0) + 1);
     if (!o.correct) { this.learnMisses.add(node); this.noteMiss(node, op); }
     else if (typed) this.typedOk.set(node, (this.typedOk.get(node) ?? 0) + 1);
@@ -378,6 +408,7 @@ export class SessionRunner {
     this.tally.scored++;
     if (o.correct) this.tally.correct++;
     if (o.correct && o.tries <= 1) this.tally.firstTry++;
+    if (item.scoring === 'learning') this.begin(item.node, item.op === 'learn' ? item.productive : undefined);
     this.stepLadder(item, o);
     const at = this.now();
     switch (item.scoring) {
@@ -503,6 +534,7 @@ export class SessionRunner {
     for (const n of Object.values(this.plan.newNodes).flat()) {
       if (this.notPresented.has(n)) continue;
       this.present(n);
+      this.begin(n);
       if (this.learner.isLearning(n)) this.learner.completeIntroduction(n, { at: this.now() });
     }
     const path = carryOwed(advancePath(this.ui.path, this.plan, true), [...this.notPresented]);
@@ -522,7 +554,10 @@ export class SessionRunner {
     if (this.finished) return this.ui.path;
     this.start();
     const taught = Object.values(this.plan.newNodes).flat().filter((n) => this.presented.has(n));
-    for (const n of taught) if (this.learner.isLearning(n)) this.learner.completeIntroduction(n, { at: this.now() });
+    for (const n of taught) {
+      this.begin(n);
+      if (this.learner.isLearning(n)) this.learner.completeIntroduction(n, { at: this.now() });
+    }
     const g = this.plan.newNodes.grammar.find((n) => this.presented.has(n));
     const path = stoppedPath(this.ui.path, this.plan, g);
     this.finished = true;
@@ -532,9 +567,17 @@ export class SessionRunner {
     return path;
   }
 
-  /** Leaving early: what was shown stays in the ledger; the path does not move. `keepSaved` leaves the resume point for the next Start. */
+  /**
+   * Leaving early: what was shown stays in the ledger; the path does not move.
+   * `keepSaved` leaves the resume point for the next Start. Without it nothing
+   * can resume, so what the lesson had begun goes to the scheduler now; with it,
+   * the next plan does that once the resume window has gone (`compilePlan`).
+   */
   async abandon(opts: { keepSaved?: boolean } = {}): Promise<void> {
-    if (!opts.keepSaved) await this.ui.clearSession();
+    if (!opts.keepSaved) {
+      await this.ui.clearSession();
+      sweepIntroductions(this.learner, this.now());
+    }
     await this.learner.flush();
   }
 }

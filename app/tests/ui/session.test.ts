@@ -67,9 +67,12 @@ describe('scoring wiring (item.scoring)', () => {
     const plan = { sessionIndex: 1, seed: 1, blocks: [], receptiveOnly: ['l:pan'], newNodes: { grammar: [], patterns: [], chunks: [], lexemes: ['l:pan', 'l:agua'], contrasts: [] } } as any;
     const run = new SessionRunner(w.learner, w.bundle, w.ui, plan, w.now);
     const spy = vi.spyOn(w.learner, 'introduce');
+    const first = { correct: true, tries: 1, ms: 1000 };
     run.present('l:pan');
-    run.present('l:agua');
-    run.present('l:tinto', false); // a learn item's own flag wins
+    expect(spy).not.toHaveBeenCalled(); // shown is not introduced: the record comes with the first answer
+    run.learningStep('l:pan', first);
+    run.learningStep('l:agua', first);
+    run.learningStep('l:tinto', first, ['l:tinto'], false); // a learn item's own flag wins
     expect(spy.mock.calls.map((c) => [c[0], c[1]?.productive])).toEqual([['l:pan', false], ['l:agua', true], ['l:tinto', false]]);
   });
 
