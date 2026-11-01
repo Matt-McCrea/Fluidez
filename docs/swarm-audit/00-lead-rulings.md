@@ -27,6 +27,8 @@ The course teaches this instead, combining the contrastive and linguist proposal
 
 None of this has been tested on a learner. It is the best-reasoned proposal, not a proven one.
 
+The news idea survives in one place only: at u52, as a lens on real mood choices such as *aunque*, for a learner who already has the model. It is not the core test and never appears before that.
+
 **R2. Naming.** "Subjunctive" from `u21 d1`, in the rule body and not in the hook or day title. "The ordinary form" for the indicative in lessons, "indicative" once in small print and in look-up. "The dictionary form" for the infinitive. "Wish form" and "plain verb" retire. "The -ra form" stays as a nickname. No "statement form". The sweep is by hand per script, never find-and-replace, because "wish" often carries the reason. **This is an exception to the voice rule in `tools/burn/brief.md`, so it lands as its own commit and the owner can revert it.**
 
 **R3. Ser and estar.** Refuse "permanent and temporary", and drop "portrait or snapshot" as an image, since a snapshot is a moment and *está muerto* is not one. Use the comparison test: than others, or than usual; then, did something happen?
@@ -39,7 +41,9 @@ None of this has been tested on a learner. It is the best-reasoned proposal, not
 
 **R7. Word formation** is recognition only. Spanish derivation is lexically arbitrary, and production drills would teach *llegación*.
 
-**R8. Se.** Five sorts, not seven labels, placed at u36 after `g:passive-se`, translated both ways, never labelled by the learner. Add the missing job: it just happened.
+**R8. Se.** Five sorts, not seven labels, using the contrastive review's list (section 3.6), placed at u36 after `g:passive-se`, translated both ways, never labelled by the learner. Add the missing job: it just happened.
+
+**R8a. Rulings beat verified text.** Where a verified replacement still carries wording a ruling retired (LC-034's "portrait or snapshot" and CX-038's "Not *para*"), the ruling wins and the text is rewritten. On `p:perfecto-still-live`, the linguist's placement stands over the LC-028 verifier: first Patterns day after session 221, once stable day keys exist.
 
 ## 2. Rulings on practice and scoring
 
