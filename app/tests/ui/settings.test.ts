@@ -28,6 +28,18 @@ describe('the screen', () => {
   });
 });
 
+// Before: only Settings showed this, so a learner in a lesson, which is where the
+// writes are, was never told. The close screen sat on "Saving…" with no reason given.
+describe('when saving has stopped', () => {
+  const shell = readFileSync(new URL('../../src/ui/app.tsx', import.meta.url), 'utf8');
+
+  test('the app shell says so above every screen, and the line clears when a write lands', () => {
+    expect(shell).toMatch(/learner\.onSaveProblem\(refresh\)/);
+    expect(shell).toMatch(/ctx\.learner\.saveProblem \?[^\n]*role="status"/);
+    expect(shell.indexOf('data-save-problem')).toBeLessThan(shell.lastIndexOf('{body}'));
+  });
+});
+
 describe('what a learner is told before a backup replaces their progress', () => {
   const made = new Date(2026, 10, 1, 9).getTime();
 

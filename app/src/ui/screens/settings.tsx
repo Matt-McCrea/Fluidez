@@ -1,7 +1,7 @@
 // Settings: how hard reviews push, a backup file to keep and restore, and a
 // reset. The length of the day is not here: learners do not choose it ("I need
 // to stop" in the session covers the odd short day).
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { useRef, useState } from 'preact/hooks';
 import { Heading } from '../components/text';
 import { SaveFailedError } from '../../learner';
 import { BackupError, downloadBackup, provenBackup, readBackup, restoreBackup, type BackupSummary, type ReadBackup } from '../../learner/backup';
@@ -35,7 +35,6 @@ export function Settings() {
   const [pending, setPending] = useState<ReadBackup | null>(null);
   const [busy, setBusy] = useState(false);
   const picker = useRef<HTMLInputElement>(null);
-  useEffect(() => learner.onSaveProblem(() => force((n) => n + 1)), [learner]);
   const s = learner.settings;
   const set = async (patch: Parameters<typeof learner.setSettings>[0]) => {
     learner.setSettings(patch);
@@ -89,7 +88,6 @@ export function Settings() {
   return (
     <main class="screen" id="main">
       <Heading title="Settings" />
-      {learner.saveProblem ? <section class="card danger" role="status"><p>{learner.saveProblem}</p></section> : null}
       <fieldset class="choices">
         <legend>How much to review</legend>
         {RETENTION.map((r) => (

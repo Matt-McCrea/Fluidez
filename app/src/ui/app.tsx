@@ -75,6 +75,7 @@ export function App({ opts }: { opts?: BootOptions }) {
         },
       };
       c.ui.subscribe(refresh);
+      c.learner.onSaveProblem(refresh);
       setCtx(c);
     } catch (e) {
       setError((e as Error).message || String(e));
@@ -133,6 +134,7 @@ export function App({ opts }: { opts?: BootOptions }) {
           A new version is ready. <button class="btn link" onClick={() => window.dispatchEvent(new CustomEvent('fluidez:apply-update'))}>Update</button>
         </div>
       ) : null}
+      {ctx.learner.saveProblem ? <div class="update" role="status" data-save-problem>{ctx.learner.saveProblem}</div> : null}
       {body}
     </Ctx.Provider>
   );
