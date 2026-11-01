@@ -1,7 +1,27 @@
 // Settings. There is no DOM in this test run, so the screen itself is driven in
 // a browser (e2e); what can be pinned here is the words and the wiring.
+import { readFileSync } from 'node:fs';
 import { describe, expect, test } from 'vitest';
 import { describeBackup } from '../../src/ui/screens/settings';
+
+describe('the screen', () => {
+  // A source scan, because there is no DOM here: it fails on the file that offered the choice.
+  const src = readFileSync(new URL('../../src/ui/screens/settings.tsx', import.meta.url), 'utf8');
+
+  test('does not let a learner choose how long the day is', () => {
+    expect(src).not.toMatch(/How much each day/);
+    expect(src).not.toMatch(/name="tier"/);
+    expect(src).not.toMatch(/Just the essentials|The regular lesson/);
+    expect(src).not.toMatch(/setSettings\(\{\s*tier|set\(\{\s*tier/);
+  });
+
+  test('still offers how much to review, a backup and a reset', () => {
+    expect(src).toMatch(/How much to review/);
+    expect(src).toMatch(/Save a backup/);
+    expect(src).toMatch(/Restore a backup/);
+    expect(src).toMatch(/Reset progress/);
+  });
+});
 
 describe('what a learner is told before a backup replaces their progress', () => {
   const made = new Date(2026, 10, 1, 9).getTime();

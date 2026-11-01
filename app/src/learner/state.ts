@@ -74,7 +74,11 @@ export interface TimingStats { count: number; totalMs: number }
 export type Tier = 'minimum' | 'standard' | 'extended';
 
 export interface Settings {
-  /** the standing daily lesson size; session minutes come from this and the band (compiler/budget.ts) */
+  /**
+   * The lesson size the compiler is asked for; session minutes come from this and the band
+   * (compiler/budget.ts). Not a learner's choice: a stored value is read back as 'standard' (see migrate),
+   * and only a session that asks for less (the five minute one) passes another.
+   */
   tier: Tier;
   retention: number;          // FSRS target retention
   maximumInterval: number;    // days; caps maintenance gaps
@@ -182,6 +186,9 @@ export function migrate(raw: unknown): LearnerState {
     const base = emptyState(s.createdAt ?? Date.now());
     s.settings = { ...base.settings, ...(s.settings ?? {}) };
     delete s.settings.minutes; // retired: session minutes come from band and tier
+    // retired as a choice: learners do not pick the length of the day. A tier an earlier build saved from
+    // its Settings screen stays in the document but is ignored, so nobody is held to a short day with no way back.
+    s.settings.tier = DEFAULT_SETTINGS.tier;
     s.nodes ??= {};
     s.ledger = { ...base.ledger, ...(s.ledger ?? {}) };
     s.session = { ...base.session, ...(s.session ?? {}) };

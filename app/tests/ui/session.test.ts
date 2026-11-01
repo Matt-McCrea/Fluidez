@@ -303,13 +303,11 @@ describe('the daily size is a standing preference', () => {
 });
 
 describe('Home copy and the goal line', () => {
-  it('the minimum tier line and the full-lesson offer are on Home; settings name the three sizes', async () => {
+  it('the minimum tier line and the full-lesson offer are on Home', async () => {
     const { readFileSync } = await import('node:fs');
     const home = readFileSync(new URL('../../src/ui/screens/home.tsx', import.meta.url), 'utf8');
     expect(home).toContain('A short one today');
     expect(home).toContain('Do the full lesson instead');
-    const set = readFileSync(new URL('../../src/ui/screens/settings.tsx', import.meta.url), 'utf8');
-    for (const t of ['Just the essentials', 'The regular lesson', 'plus extra reading']) expect(set).toContain(t);
   });
 
   it('the goal shows only when the unit fits it', async () => {
