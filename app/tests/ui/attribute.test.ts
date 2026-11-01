@@ -66,3 +66,36 @@ describe('attributeGrades', () => {
     expect(Object.values(attributeGrades(T3, true, Rating.Hard, undefined, nodes).grades)).toEqual([Rating.Hard, Rating.Hard, Rating.Hard]);
   });
 });
+
+describe('every hint kind that names one word lands on one node', () => {
+  const N = new Map(
+    [
+      mk('g:subj-present', 'grammar', 'Quiero que vayas.', ['Que tengas suerte.', 'Ojalá comas.']),
+      mk('g:preterite-er-ir', 'grammar', 'Comí pan.', ['Bebió agua.', 'Vivimos allí.']),
+      mk('g:imperfect', 'grammar', 'Comía pan.', ['Bebía agua.', 'Vivíamos allí.']),
+      mk('l:gato', 'lexeme', 'el gato'),
+    ].map((n) => [n.id, n]),
+  );
+  const look = (id: string) => N.get(id);
+  it('mood: the subjunctive takes the miss and a bystander is only exposed', () => {
+    const r = attributeGrades(['g:subj-present', 'g:preterite-er-ir'], false, A, { input: 'Quiero que vas', answer: 'Quiero que vayas' }, look);
+    expect(r.grades).toEqual({ 'g:subj-present': A });
+    expect(r.expose).toEqual(['g:preterite-er-ir']);
+  });
+  it('aspect: one past takes the miss, the word typed right is Good, a bystander is only exposed', () => {
+    const r = attributeGrades(['g:preterite-er-ir', 'l:gato', 'g:subj-present'], false, A, { input: 'El gato comía ayer', answer: 'El gato comió ayer' }, look);
+    expect(r.grades).toEqual({ 'g:preterite-er-ir': A, 'l:gato': Rating.Good });
+    expect(r.expose).toEqual(['g:subj-present']);
+  });
+  it('differs: with more than one wrong word the first still lands on its node', () => {
+    const r = attributeGrades(['l:gato', 'g:subj-present'], false, A, { input: 'Mi perro come pan grande', answer: 'Mi gato come carne grande' }, look);
+    expect(r.grades).toEqual({ 'l:gato': A });
+    expect(r.expose).toEqual(['g:subj-present']);
+  });
+  it('nonfinite: the verb in the wrong shape lands on the verb', () => {
+    const M = new Map([mk('l:comer', 'lexeme', 'comer'), mk('g:subj-present', 'grammar', 'Quiero que vayas.')].map((n) => [n.id, n]));
+    const r = attributeGrades(['l:comer', 'g:subj-present'], false, A, { input: 'Quiero como pan', answer: 'Quiero comer pan' }, (id) => M.get(id));
+    expect(r.grades).toEqual({ 'l:comer': A });
+    expect(r.expose).toEqual(['g:subj-present']);
+  });
+});

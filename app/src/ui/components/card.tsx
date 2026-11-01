@@ -17,7 +17,7 @@ export interface CardViewProps {
 }
 
 /** Hint kinds that name one located slip: the learner is close. */
-const LOCATED = new Set(['accents', 'article', 'verb-ending', 'wrong-word', 'agreement', 'pronoun', 'por-para', 'ser-estar', 'spelling', 'person', 'tense']);
+const LOCATED = new Set(['accents', 'article', 'verb-ending', 'wrong-word', 'agreement', 'pronoun', 'por-para', 'ser-estar', 'spelling', 'person', 'tense', 'mood', 'aspect', 'nonfinite', 'contraction', 'number', 'experiencer-agree']);
 
 /** "Almost." only when it is true: an accent slip, or a hint that names one
  *  located slip (an article, an ending, one wrong word, a missing small word).
