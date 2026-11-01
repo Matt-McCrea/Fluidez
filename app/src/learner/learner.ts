@@ -127,7 +127,22 @@ export interface LearnerOptions {
   now?: () => number;
   /** Debounce for saves; 0 = save after every mutation (still coalesced). */
   saveDelayMs?: number;
+  /** The pause after a refused write; doubles with each one in a row, up to thirty times this. */
+  saveRetryMs?: number;
 }
+
+/** What a learner is told when the store keeps refusing writes. */
+export const SAVE_PROBLEM = 'Couldn\'t save just now. Keep this page open and we\'ll keep trying.';
+
+/** `flush()` or `commit()` gave up: the store refused the write every time it was tried. The work is still in memory and is retried. */
+export class SaveFailedError extends Error {
+  constructor(cause?: unknown) { super(SAVE_PROBLEM, { cause }); this.name = 'SaveFailedError'; }
+}
+
+/** The documents a session commit writes beside the learner (the UI store's). */
+export type SaveExtra = { path?: unknown; ui?: unknown };
+
+const SAVE_ATTEMPTS = 3;
 
 export class Learner {
   private state: LearnerState;
@@ -135,9 +150,17 @@ export class Learner {
   /** same parameters, maximum interval = the maintenance cap (learned cards) */
   private maintenanceScheduler: FSRS;
   private readonly now: () => number;
+  /** every write runs on this chain, and no job on it rejects, so one refused write cannot end saving */
   private saving: Promise<void> = Promise.resolve();
   private dirty = false;
   private saveQueued = false;
+  private failures = 0;
+  private cause: unknown;
+  private retryTimer: ReturnType<typeof setTimeout> | undefined;
+  private carried: (() => SaveExtra) | undefined;
+  private problem: string | undefined;
+  private readonly watchers = new Set<() => void>();
+  private readonly retryMs: number;
   readonly ledger: Ledger;
   private log: EventLog = emptyLog();
   private eventsDirty = false;
@@ -145,6 +168,7 @@ export class Learner {
   private constructor(state: LearnerState, private readonly store: LearnerStore | null, opts: LearnerOptions) {
     this.state = state;
     this.now = opts.now ?? Date.now;
+    this.retryMs = opts.saveRetryMs ?? 500;
     this.scheduler = makeScheduler(state.settings, state.weights);
     this.maintenanceScheduler = this.makeMaintenance();
     this.ledger = new Ledger(() => this.state, () => this.touch(), this.now);
@@ -160,7 +184,11 @@ export class Learner {
       const lg = rawLog as EventLog;
       l.log = compact({ events: lg.events, summary: lg.summary ?? { upTo: 0, counts: {} } }, 365, l.now());
     }
-    if (raw === undefined || (raw as any).version !== state.version) { l.touch(); await l.flush(); }
+    if (raw === undefined || (raw as any).version !== state.version) {
+      l.touch();
+      // a refused write must not keep a readable learner out: it stays dirty and is retried
+      try { await l.flush(); } catch (e) { if (!(e instanceof SaveFailedError)) throw e; }
+    }
     return l;
   }
 
@@ -180,35 +208,120 @@ export class Learner {
 
   private touch(): void {
     this.dirty = true;
-    if (!this.store || this.saveQueued) return;
+    // while the store is being given a pause, the retry timer owns the next attempt
+    if (!this.store || this.saveQueued || this.retryTimer !== undefined) return;
     this.saveQueued = true;
-    this.saving = this.saving.then(async () => {
+    void this.queue(async () => {
       this.saveQueued = false;
-      if (!this.dirty) return;
-      this.dirty = false;
-      await this.store!.save(structuredClone(this.state));
-      if (this.eventsDirty && this.store!.saveEvents) {
-        this.eventsDirty = false;
-        await this.store!.saveEvents(structuredClone(this.log));
-      }
+      if (this.dirty && this.retryTimer === undefined && !(await this.write())) this.backOff();
     });
   }
 
+  /** Run `job` after every write already queued. A job here must not reject. */
+  private queue<T>(job: () => Promise<T>): Promise<T> {
+    const run = this.saving.then(job);
+    this.saving = run.then(() => {}, () => {});
+    return run;
+  }
+
   /**
-   * Flush, then write the learner state, the event log and `extra` (the path
-   * and ui documents) in one store transaction when the store supports it
-   * (otherwise state first, then the extras through `fallback`).
+   * One attempt to write what is dirty, and `extra` (or what an earlier refused
+   * commit left to carry) beside it in one transaction. Says whether it landed;
+   * a refusal keeps everything dirty so the next attempt writes it again.
    */
-  async commit(extra: { path?: unknown; ui?: unknown }, fallback?: () => Promise<void>): Promise<void> {
-    if (!this.store) { await fallback?.(); return; }
-    await this.saving;
-    if (!this.store.saveAll) { await this.flush(); await fallback?.(); return; }
+  private async write(extra?: SaveExtra): Promise<boolean> {
+    const store = this.store!;
+    const hadEvents = this.eventsDirty;
+    if (!extra && !this.carried && !this.dirty) return true;
     this.dirty = false;
-    const events = this.eventsDirty ? structuredClone(this.log) : undefined;
     this.eventsDirty = false;
-    const write = this.saving.then(() => this.store!.saveAll!({ state: structuredClone(this.state), events, ...extra }));
-    this.saving = write.catch(() => {});
-    try { await write; } catch (e) { this.dirty = true; if (events) this.eventsDirty = true; throw e; }
+    try {
+      const extras = extra ?? this.carried?.();
+      const state = structuredClone(this.state);
+      const events = hadEvents ? structuredClone(this.log) : undefined;
+      if (extras && store.saveAll) await store.saveAll({ state, events, ...extras });
+      else {
+        await store.save(state);
+        if (events && store.saveEvents) await store.saveEvents(events);
+      }
+      if (extras) this.carried = undefined;
+    } catch (e) {
+      this.dirty = true;
+      if (hadEvents) this.eventsDirty = true;
+      this.failures += 1;
+      this.cause = e;
+      if (this.failures >= 2) this.announce(SAVE_PROBLEM);
+      return false;
+    }
+    this.failures = 0;
+    this.clearTimer();
+    this.announce(undefined);
+    if (this.dirty) this.touch();
+    return true;
+  }
+
+  private backOff(): void {
+    if (this.retryTimer !== undefined) return;
+    const wait = Math.min(30, 2 ** Math.max(0, this.failures - 1)) * this.retryMs;
+    const t: any = setTimeout(() => { this.retryTimer = undefined; if (this.dirty) this.touch(); }, wait);
+    t.unref?.();
+    this.retryTimer = t;
+  }
+
+  private clearTimer(): void {
+    if (this.retryTimer !== undefined) clearTimeout(this.retryTimer);
+    this.retryTimer = undefined;
+  }
+
+  /** Try `attempt` until it lands, pausing between tries; after the last, the work stays queued for the timer and this rejects. */
+  private async insist(attempt: () => Promise<boolean>): Promise<void> {
+    for (let i = 0; ; i++) {
+      this.clearTimer();
+      if (await this.queue(attempt)) return;
+      if (i >= SAVE_ATTEMPTS - 1) break;
+      await new Promise<void>((r) => setTimeout(r, this.retryMs * 2 ** i));
+    }
+    this.announce(SAVE_PROBLEM);
+    this.backOff();
+    throw new SaveFailedError(this.cause);
+  }
+
+  /** Why saving has stopped working, in words for the learner, or undefined while it is fine. Set after two refused writes in a row. */
+  get saveProblem(): string | undefined { return this.problem; }
+
+  /** Called when `saveProblem` appears or clears. Returns the way to stop listening. */
+  onSaveProblem(fn: () => void): () => void {
+    this.watchers.add(fn);
+    return () => this.watchers.delete(fn);
+  }
+
+  private announce(problem: string | undefined): void {
+    if (problem === this.problem) return;
+    this.problem = problem;
+    for (const w of this.watchers) w();
+  }
+
+  /**
+   * Write the learner state, the event log and `extra` (the path and ui
+   * documents) in one store transaction when the store supports it (otherwise
+   * the state first, then the extras through `fallback`). A refused write is
+   * tried again after a pause; if the store still refuses, this rejects with a
+   * SaveFailedError and the learner stays dirty for the next flush.
+   */
+  async commit(extra: SaveExtra, fallback?: () => Promise<void>): Promise<void> {
+    if (!this.store) { await fallback?.(); return; }
+    if (!this.store.saveAll) { await this.flush(); await fallback?.(); return; }
+    await this.insist(() => this.write(extra));
+  }
+
+  /**
+   * After a commit was refused: the next write carries the documents `extra`
+   * returns, asked for afresh each time so a retry never writes an old copy.
+   */
+  carry(extra: () => SaveExtra): void {
+    this.carried = extra;
+    this.dirty = true;
+    this.touch();
   }
 
   /** The backing store, if any (the UI store checks whether it shares its key-value store). */
@@ -226,11 +339,14 @@ export class Learner {
     this.dirty = true;
   }
 
-  /** Resolves once everything mutated so far has been written. */
+  /**
+   * Resolves once everything mutated so far has been written. A refused write
+   * is tried again after a pause; if the store still refuses, this rejects
+   * with a SaveFailedError, the work stays in memory and the timer keeps trying.
+   */
   async flush(): Promise<void> {
     if (!this.store) return;
-    if (this.dirty && !this.saveQueued) this.touch();
-    await this.saving;
+    await this.insist(() => this.write());
   }
 
   // ---------------------------------------------------------------- settings / session

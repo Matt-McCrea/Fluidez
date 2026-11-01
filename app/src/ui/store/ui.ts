@@ -259,8 +259,13 @@ export class UiStore {
     this.state = next;
     this.emit();
     const shared = (learner.backing as { kv?: KV } | null)?.kv === this.kv;
-    if (shared) await learner.commit({ path: this.path, ui: this.state });
-    else {
+    if (shared) {
+      try { await learner.commit({ path: this.path, ui: this.state }); } catch (e) {
+        // refused: the learner's retry writes our documents too, as they are by then
+        learner.carry(() => ({ path: this.path, ui: this.state }));
+        throw e;
+      }
+    } else {
       await this.writeBoth();
       await learner.flush();
     }
