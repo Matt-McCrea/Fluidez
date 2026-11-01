@@ -20,6 +20,14 @@ export interface LearnerStore {
   quarantine?(doc: StoredDoc, raw: unknown): Promise<void>;
   /** Keep a copy of a document as it was at `version`, before it is migrated. Written once: a copy already there is kept. */
   keepVersion?(doc: StoredDoc, version: number, raw: unknown): Promise<void>;
+  /** The documents under `keys` as stored, unmigrated; a key with no document is left out. What a backup is made from. */
+  exportAll?(keys: readonly string[]): Promise<Record<string, unknown>>;
+  /**
+   * Replace the documents under `keys` with `docs` (a key with no document in
+   * `docs` is removed), in one transaction where the store has one. Each
+   * document it replaces is first copied to `<name><keep>`.
+   */
+  replaceAll?(keys: readonly string[], docs: Record<string, unknown>, keep: string): Promise<void>;
 }
 
 /** The documents the learner store owns; the UI store keeps `path` and `ui` itself. */
@@ -61,6 +69,23 @@ export class MemoryStore implements LearnerStore {
     if (ui !== undefined) this.extras.set('ui', ui);
   }
   async clear() { this.doc = undefined; this.previous = undefined; this.evs = undefined; this.extras.clear(); this.kept.clear(); }
+  async exportAll(keys: readonly string[]) {
+    const out: Record<string, unknown> = {};
+    for (const k of keys) {
+      const v = k === 'state' ? this.doc : k === 'events' ? this.evs : this.extras.get(k);
+      if (v !== undefined) out[k] = structuredClone(v);
+    }
+    return out;
+  }
+  async replaceAll(keys: readonly string[], docs: Record<string, unknown>, keep: string) {
+    const staged = Object.fromEntries(Object.entries(docs).map(([k, v]) => [k, structuredClone(v)]));
+    const now = await this.exportAll(keys);
+    for (const [k, v] of Object.entries(now)) this.kept.set(`${k}${keep}`, v);
+    this.previous = this.doc;
+    this.doc = staged.state;
+    this.evs = staged.events;
+    for (const k of keys) if (k !== 'state' && k !== 'events') { if (staged[k] === undefined) this.extras.delete(k); else this.extras.set(k, staged[k]); }
+  }
   /** What a JSON export of the stored document would contain. */
   snapshot(): unknown { return this.doc === undefined ? undefined : JSON.parse(JSON.stringify(this.doc)); }
 }
@@ -125,6 +150,28 @@ export class IdbStore implements LearnerStore {
     if (!entries.length) return;
     if (this.kv.setMany) await this.kv.setMany(entries);
     else for (const [k, v] of entries) await this.kv.set(k, v);
+  }
+  /** Where a key's document lives: `state` and `events` under this store's own keys, anything else under its own name. */
+  private nameFor(key: string) { return key === 'state' ? this.key : key === 'events' ? this.eventsKey : key; }
+  async exportAll(keys: readonly string[]) {
+    const out: Record<string, unknown> = {};
+    for (const k of keys) { const v = await this.kv.get(this.nameFor(k)); if (v !== undefined) out[k] = v; }
+    return out;
+  }
+  async replaceAll(keys: readonly string[], docs: Record<string, unknown>, keep: string) {
+    const entries: [string, unknown][] = [];
+    const gone: string[] = [];
+    for (const k of keys) {
+      const name = this.nameFor(k);
+      const was = await this.kv.get(name);
+      if (was !== undefined) entries.push([`${name}${keep}`, was]);
+      if (k === 'state' && was !== undefined) entries.push([`${name}.prev`, was]);
+      if (docs[k] !== undefined) entries.push([name, docs[k]]);
+      else gone.push(name);
+    }
+    if (this.kv.setMany) await this.kv.setMany(entries);
+    else for (const [k, v] of entries) await this.kv.set(k, v);
+    for (const name of gone) await this.kv.del(name);
   }
   /** Everything the store holds, copies included: a reset that promises to delete progress must not keep a snapshot of it. */
   async clear() {

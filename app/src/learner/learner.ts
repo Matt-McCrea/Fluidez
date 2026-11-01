@@ -167,6 +167,7 @@ export class Learner {
   private problem: string | undefined;
   private readonly watchers = new Set<() => void>();
   private readonly retryMs: number;
+  private halted = false;
   readonly ledger: Ledger;
   private log: EventLog = emptyLog();
   private eventsDirty = false;
@@ -251,7 +252,7 @@ export class Learner {
   private touch(): void {
     this.dirty = true;
     // while the store is being given a pause, the retry timer owns the next attempt
-    if (!this.store || this.saveQueued || this.retryTimer !== undefined) return;
+    if (!this.store || this.halted || this.saveQueued || this.retryTimer !== undefined) return;
     this.saveQueued = true;
     void this.queue(async () => {
       this.saveQueued = false;
@@ -352,6 +353,7 @@ export class Learner {
    */
   async commit(extra: SaveExtra, fallback?: () => Promise<void>): Promise<void> {
     if (!this.store) { await fallback?.(); return; }
+    if (this.halted) return;
     if (!this.store.saveAll) { await this.flush(); await fallback?.(); return; }
     await this.insist(() => this.write(extra));
   }
@@ -364,6 +366,16 @@ export class Learner {
     this.carried = extra;
     this.dirty = true;
     this.touch();
+  }
+
+  /**
+   * Stop writing for good. A restore replaced the stored documents underneath
+   * this learner and the page reloads next: nothing still held in memory may be
+   * saved over them.
+   */
+  halt(): void {
+    this.halted = true;
+    this.clearTimer();
   }
 
   /** The backing store, if any (the UI store checks whether it shares its key-value store). */
@@ -387,7 +399,7 @@ export class Learner {
    * with a SaveFailedError, the work stays in memory and the timer keeps trying.
    */
   async flush(): Promise<void> {
-    if (!this.store) return;
+    if (!this.store || this.halted) return;
     await this.insist(() => this.write());
   }
 

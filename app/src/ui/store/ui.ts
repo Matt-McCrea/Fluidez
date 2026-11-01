@@ -5,6 +5,7 @@
 // saved words, can-do self-checks) live under "ui". Both are plain JSON.
 import { initialPath, type Mode, type PathState, type SessionPlan } from '../../compiler';
 import { idbKV, StoredDocumentError, type KV, type Learner, type Tier } from '../../learner';
+import { LEARNER_READERS, type BackupReaders } from '../../learner/backup';
 import type { LearnQueueJSON } from '../session/order';
 import type { RunnerSnapshot } from '../session/runner';
 
@@ -156,6 +157,13 @@ export function migratePath(raw: unknown): PathState {
   if (bad) throw new StoredDocumentError('unreadable', 'path', `${bad} is the wrong shape`);
   return path;
 }
+
+/**
+ * The documents a backup carries: the learner's and the UI's, each with the
+ * reader that opens it the way boot does. The allowlist is these keys. A new
+ * document (attempts, writing, games) is one more entry here.
+ */
+export const BACKUP_READERS: BackupReaders = { ...LEARNER_READERS, [PATH_KEY]: migratePath, [UI_KEY]: migrateUi };
 
 /** Where a half-finished session stands: enough to open the same plan at the same card. Lives under its own key, outside UiState. */
 export interface SavedSession {
@@ -336,7 +344,7 @@ export class UiStore {
   /** Everything, gone: learner, path and UI state. */
   async reset(extraKeys: string[] = []): Promise<void> {
     // the copies kept beside the documents (quarantine, version snapshots) go too: this promises everything is deleted
-    const copies = ((await this.kv.keys?.()) ?? []).filter((k) => [UI_KEY, PATH_KEY].some((n) => k.startsWith(`${n}.`)));
+    const copies = ((await this.kv.keys?.()) ?? []).filter((k) => [UI_KEY, PATH_KEY, SESSION_KEY].some((n) => k.startsWith(`${n}.`)));
     for (const k of [UI_KEY, PATH_KEY, SESSION_KEY, ...extraKeys, ...copies]) await this.kv.del(k);
     this.session = undefined;
     this.state = emptyUi();
