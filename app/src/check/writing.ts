@@ -160,7 +160,8 @@ export function usesForm(tokens: readonly string[], entry: string): boolean {
   return false;
 }
 
-const sentencesOf = (text: string) => text.split(/[.!?…\n]+/).filter((x) => /\p{L}/u.test(x));
+const HAS_LETTER = /\p{L}/u;
+const sentencesOf = (text: string) => text.split(/[.!?…\n]+/).filter((x) => HAS_LETTER.test(x));
 /** Without the course's words, a noun the app has never seen looks like English, so only English itself counts. */
 const ENGLISH_SHARE_MAX = 0.2;
 const COUNTS = new Set<Constraint['type']>(['minWords', 'maxWords', 'minSentences']);
@@ -429,7 +430,7 @@ export function evaluate(c: Constraint, analysis: SentenceAnalysis, rawText: str
       break;
     }
     case 'minSentences': {
-      const n = (rawText.match(/[^.!?…]*[.!?…]+/g) ?? []).filter((x) => /\p{L}/u.test(x)).length;
+      const n = (rawText.match(/[^.!?…]*[.!?…]+/g) ?? []).filter((x) => HAS_LETTER.test(x)).length;
       label = label || ('at least <b>' + c.n + '</b> sentences');
       pass = n >= c.n;
       if (!pass) detail = n + ' so far';
