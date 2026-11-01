@@ -49,8 +49,8 @@
     },
     {
       "id": "t3",
-      "npc": "Don Arturo, el señor de la tienda de al lado, dice que el hotel es una gran idea para el barrio. ¿Tú qué piensas de eso?",
-      "npcEn": "Don Arturo, the man from the shop next door, says the hotel is a great idea for the neighbourhood. What do you think of that?",
+      "npc": "El señor de la tienda de al lado dice que el hotel es una gran idea para el barrio. ¿Tú qué piensas de eso?",
+      "npcEn": "The man from the shop next door says the hotel is a great idea for the neighbourhood. What do you think of that?",
       "intent": "Say you don't think so, and that it's a pity the old corner will disappear.",
       "accept": [
         "No creo. Es una pena que desaparezca la esquina.",
@@ -75,11 +75,11 @@
     },
     {
       "id": "t4",
-      "npc": "Pues yo llevé veinte empanadas a la reunión. ¿Sabes quién se las comió? Don Arturo.",
-      "npcEn": "Well, I took twenty empanadas to the meeting. Do you know who ate them? Don Arturo.",
+      "npc": "Pues yo llevé veinte empanadas a la reunión. ¿Sabes quién las comió? El señor de la tienda.",
+      "npcEn": "Well, I took twenty empanadas to the meeting. Do you know who ate them? The man from the shop.",
       "intent": "Say you don't think he's a bad person, but you find it funny.",
       "accept": [
-        "No creo que don Arturo sea malo, pero lo encuentro muy gracioso.",
+        "No creo que ese señor sea malo, pero lo encuentro muy gracioso.",
         "Lo encuentro muy gracioso. No creo que él sea tan malo.",
         "No creo que sea mala persona, pero lo encuentro gracioso."
       ],
@@ -135,8 +135,8 @@
     "c:pues",
     "c:que-mas",
     "g:adjective-agreement",
+    "g:demonstratives",
     "g:direct-objects",
-    "g:double-pronouns",
     "g:gender-articles",
     "g:gustar-basic",
     "g:imperfect-habitual",
@@ -218,9 +218,7 @@
     "l:viejo",
     "p:bien-bueno",
     "p:bien-mal-vs-bueno-malo",
-    "p:comerse-todo",
     "p:demonstratives-basic",
-    "p:don-dona-nombre",
     "p:encontrar-ver-adj",
     "p:la-gente-singular",
     "p:lo-que-mas-me-gusta",
@@ -235,7 +233,6 @@
     "p:que-opinas-de",
     "p:question-word-order",
     "p:saber-conocer",
-    "p:senor-don-article",
     "p:todos-los-dias",
     "p:viejo-antiguo-mayor"
   ]

@@ -1,0 +1,747 @@
+[
+  {
+    "id": "u54-t-emphatic-structures-0001",
+    "es": "¡Pues claro que me gusta mi trabajo!",
+    "en": "Of course I like my job!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:claro-listo",
+      "c:me-gusta",
+      "c:pues",
+      "g:gustar-basic",
+      "g:that-clauses",
+      "l:claro",
+      "l:gustar",
+      "l:trabajo",
+      "p:possessives-basic",
+      "p:pues-claro-que"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "statement",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  },
+  {
+    "id": "u54-t-emphatic-structures-0002",
+    "es": "¡Pues claro que hablo con Simón todos los días!",
+    "en": "Of course I talk to Simón every day!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:claro-listo",
+      "c:pues",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:that-clauses",
+      "l:claro",
+      "l:día",
+      "l:hablar",
+      "p:pues-claro-que",
+      "p:todos-los-dias",
+      "p:veces-al"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "statement",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  },
+  {
+    "id": "u54-t-emphatic-structures-0003",
+    "es": "¡Si yo te lo dije ayer!",
+    "en": "But I told you yesterday! (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ayer-anoche",
+      "g:direct-objects",
+      "g:double-pronouns",
+      "g:preterite-irregular-strong",
+      "l:ayer",
+      "l:decir",
+      "p:me-te-nos-objects",
+      "p:si-yo-no-fui"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "statement",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  },
+  {
+    "id": "u54-t-emphatic-structures-0004",
+    "es": "¡Si Tomás nunca llega tarde!",
+    "en": "But Tomás is never late!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "g:si-present",
+      "l:llegar",
+      "l:tarde",
+      "p:frequency-scale",
+      "p:llegar-a-tiempo"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "statement",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  },
+  {
+    "id": "u54-t-emphatic-structures-0005",
+    "es": "¡Pues claro que quiero otro tinto!",
+    "en": "Of course I want another black coffee!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:claro-listo",
+      "c:pues",
+      "c:quiero",
+      "g:stem-boot",
+      "g:that-clauses",
+      "l:claro",
+      "l:querer",
+      "l:tinto",
+      "p:otro-no-article",
+      "p:pues-claro-que"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "statement",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  },
+  {
+    "id": "u54-t-emphatic-structures-0006",
+    "es": "¡Pues claro que estoy contento!",
+    "en": "Of course I'm happy! (a man speaking)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:claro-listo",
+      "c:pues",
+      "g:estar-location-states",
+      "g:that-clauses",
+      "l:claro",
+      "l:contento",
+      "l:estar",
+      "p:pues-claro-que"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "statement",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  },
+  {
+    "id": "u54-t-emphatic-structures-0007",
+    "es": "¡Pues claro que no voy!",
+    "en": "Of course I'm not going!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:claro-listo",
+      "c:pues",
+      "c:voy-vas",
+      "g:ir-a-plans",
+      "g:that-clauses",
+      "l:claro",
+      "l:ir",
+      "p:pues-claro-que"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "statement",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  },
+  {
+    "id": "u54-t-emphatic-structures-0008",
+    "es": "¡Pues claro que no tengo miedo!",
+    "en": "Of course I'm not scared!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:claro-listo",
+      "c:pues",
+      "c:tengo",
+      "g:that-clauses",
+      "g:yo-irregular",
+      "l:claro",
+      "l:miedo",
+      "l:tener",
+      "p:pues-claro-que",
+      "p:tener-hambre"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "statement",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  },
+  {
+    "id": "u54-t-emphatic-structures-0009",
+    "es": "¡Pues claro que Vale es amable!",
+    "en": "Of course Vale is kind!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:claro-listo",
+      "c:pues",
+      "g:ser-identity",
+      "g:that-clauses",
+      "l:amable",
+      "l:claro",
+      "l:ser",
+      "p:pues-claro-que"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "statement",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  },
+  {
+    "id": "u54-t-emphatic-structures-0010",
+    "es": "¡Si ya está listo el café!",
+    "en": "But the coffee is already ready!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:si-present",
+      "l:café",
+      "l:estar",
+      "l:listo"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "statement",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  },
+  {
+    "id": "u54-t-emphatic-structures-0011",
+    "es": "¡Si no tengo tiempo!",
+    "en": "But I don't have time!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tengo",
+      "g:si-present",
+      "g:yo-irregular",
+      "l:tener",
+      "l:tiempo"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "statement",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  },
+  {
+    "id": "u54-t-emphatic-structures-0012",
+    "es": "¡Pues claro que me acuerdo de tu café!",
+    "en": "Of course I remember your coffee! (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:claro-listo",
+      "c:pues",
+      "g:reflexive-routine",
+      "g:stem-boot",
+      "g:that-clauses",
+      "l:acordarse",
+      "l:café",
+      "l:claro",
+      "p:possessives-basic",
+      "p:pues-claro-que",
+      "p:recordar-acordarse"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "statement",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  },
+  {
+    "id": "u54-t-emphatic-structures-0013",
+    "es": "¡Si es muy fácil!",
+    "en": "But it's very easy!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "g:si-present",
+      "l:fácil",
+      "l:ser",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "statement",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  },
+  {
+    "id": "u54-t-emphatic-structures-0014",
+    "es": "¡Pues claro que sé cocinar!",
+    "en": "Of course I can cook!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:claro-listo",
+      "c:pues",
+      "g:that-clauses",
+      "g:yo-irregular",
+      "l:claro",
+      "l:cocinar",
+      "l:saber",
+      "p:pues-claro-que",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "statement",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  },
+  {
+    "id": "u54-t-emphatic-structures-0015",
+    "es": "¡Si mi mamá me lo dijo mil veces!",
+    "en": "But my mom told me a thousand times!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:double-pronouns",
+      "g:preterite-irregular-strong",
+      "l:decir",
+      "l:mamá",
+      "l:vez",
+      "p:me-te-nos-objects",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "statement",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  },
+  {
+    "id": "u54-t-emphatic-structures-0016",
+    "es": "¡Pues claro que lo sé!",
+    "en": "Of course I know it!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:claro-listo",
+      "c:pues",
+      "g:direct-objects",
+      "g:that-clauses",
+      "g:yo-irregular",
+      "l:claro",
+      "l:saber",
+      "p:pues-claro-que",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "statement",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  },
+  {
+    "id": "u54-t-emphatic-structures-0017",
+    "es": "¡Si tú eres el que llegó tarde!",
+    "en": "But you're the one who arrived late! (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:relatives-prepositions",
+      "g:ser-identity",
+      "g:si-present",
+      "l:llegar",
+      "l:ser",
+      "l:tarde",
+      "p:el-que-la-que",
+      "p:llegar-a-tiempo"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "statement",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  },
+  {
+    "id": "u54-t-emphatic-structures-0018",
+    "es": "¡Qué va! Yo no tengo prisa.",
+    "en": "Not at all! I'm not in a hurry.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:que-va",
+      "c:tengo",
+      "g:yo-irregular",
+      "l:ir",
+      "l:prisa",
+      "l:qué",
+      "l:tener",
+      "p:tener-hambre"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "statement",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  },
+  {
+    "id": "u54-t-emphatic-structures-0019",
+    "es": "¿Vienes a la fiesta?\n¡Pues claro que voy!",
+    "en": "Are you coming to the party? (to a friend)\nOf course I'm going!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:claro-listo",
+      "c:pues",
+      "c:voy-vas",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:stem-boot",
+      "g:that-clauses",
+      "l:claro",
+      "l:fiesta",
+      "l:ir",
+      "l:venir",
+      "p:ir-venir",
+      "p:pues-claro-que"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "dialogue",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  },
+  {
+    "id": "u54-t-emphatic-structures-0020",
+    "es": "¿Te molesta el ruido?\n¡Qué va!",
+    "en": "Does the noise bother you? (to a friend)\nNot at all!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:que-va",
+      "g:gender-articles",
+      "g:gustar-full",
+      "g:present-ar",
+      "l:ir",
+      "l:molestar",
+      "l:qué",
+      "l:ruido"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "dialogue",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  },
+  {
+    "id": "u54-t-emphatic-structures-0021",
+    "es": "¿Ya hablaste con Hernando?\n¡Si hablé con él anoche!",
+    "en": "Have you talked to Hernando yet? (to a friend)\nBut I talked to him last night!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ayer-anoche",
+      "c:con-el-ella",
+      "g:preterite-ar",
+      "l:anoche",
+      "l:hablar"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "dialogue",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  },
+  {
+    "id": "u54-t-emphatic-structures-0022",
+    "es": "¿Le gusta el café a Simón?\n¡Pues claro que le gusta!",
+    "en": "Does Simón like coffee?\nOf course he does!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:claro-listo",
+      "c:pues",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:present-ar",
+      "g:that-clauses",
+      "l:café",
+      "l:claro",
+      "l:gustar",
+      "p:pues-claro-que"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "dialogue",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  },
+  {
+    "id": "u54-t-emphatic-structures-0023",
+    "es": "¿Puedes ayudarme?\n¡Pues claro que puedo!",
+    "en": "Can you help me? (to a friend)\nOf course I can!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:claro-listo",
+      "c:puedo",
+      "c:pues",
+      "g:object-pronoun-position",
+      "g:stem-boot",
+      "g:that-clauses",
+      "g:verb-infinitive",
+      "l:ayudar",
+      "l:claro",
+      "l:poder",
+      "p:me-te-nos-objects",
+      "p:pues-claro-que",
+      "p:request-ladder"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "dialogue",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  },
+  {
+    "id": "u54-t-emphatic-structures-0024",
+    "es": "Dicen que Vale no cocina bien.\n¡Si cocina mejor que nadie!",
+    "en": "They say Vale doesn't cook well.\nBut she cooks better than anyone!",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:bien-y-tu",
+      "g:comparatives",
+      "g:present-ar",
+      "g:si-present",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:bien",
+      "l:cocinar",
+      "l:decir",
+      "l:mejor",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:me-contaron-que"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "dialogue",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  },
+  {
+    "id": "u54-t-emphatic-structures-0025",
+    "es": "¿Estás cansada?\n¡Qué va! Estoy muy bien.",
+    "en": "Are you tired? (to a woman)\nNot at all! I'm very well.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:bien-y-tu",
+      "c:que-va",
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "l:bien",
+      "l:cansado",
+      "l:estar",
+      "l:ir",
+      "l:qué",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "dialogue",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  },
+  {
+    "id": "u54-t-emphatic-structures-0026",
+    "es": "¿Qué dices cuando te preguntan algo muy obvio y quieres responder con fuerza?",
+    "en": "What do you say when someone asks you something very obvious and you want to answer with feeling?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "g:questions",
+      "g:stem-boot",
+      "g:stem-e-i",
+      "g:verb-infinitive",
+      "l:decir",
+      "l:fuerza",
+      "l:obvio",
+      "l:preguntar",
+      "l:querer",
+      "l:qué",
+      "l:responder",
+      "p:cuando-basic",
+      "p:indefinites-basic",
+      "p:me-te-nos-objects",
+      "p:preguntar-pedir",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "question",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  },
+  {
+    "id": "u54-t-emphatic-structures-0027",
+    "es": "¿Qué le contestas a alguien que te pregunta si te gusta el café?",
+    "en": "What do you answer someone who asks you if you like coffee?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:me-gusta",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:indirect-objects",
+      "g:indirect-questions",
+      "g:present-ar",
+      "g:questions",
+      "g:relative-que",
+      "l:café",
+      "l:contestar",
+      "l:gustar",
+      "l:preguntar",
+      "l:qué",
+      "p:indefinites-basic",
+      "p:me-te-nos-objects",
+      "p:preguntar-pedir"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "question",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  },
+  {
+    "id": "u54-t-emphatic-structures-0028",
+    "es": "¿Qué respondes si te preguntan si quieres más café?",
+    "en": "What do you answer if someone asks you if you want more coffee?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:si-quieres",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:questions",
+      "g:si-present",
+      "l:café",
+      "l:preguntar",
+      "l:querer",
+      "l:qué",
+      "l:responder",
+      "p:me-te-nos-objects",
+      "p:preguntar-pedir"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "question",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  },
+  {
+    "id": "u54-t-emphatic-structures-0029",
+    "es": "¿Pues claro que sabes quién es Vale, no?",
+    "en": "Of course you know who Vale is, don't you? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:claro-listo",
+      "c:no-cierto",
+      "c:pues",
+      "g:present-er-ir",
+      "g:questions",
+      "g:ser-identity",
+      "g:that-clauses",
+      "l:claro",
+      "l:quién",
+      "l:saber",
+      "l:ser",
+      "p:pues-claro-que",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:emphatic-structures"
+    ],
+    "kind": "question",
+    "unit": "u54",
+    "theme": "saying it with force",
+    "source": "gen"
+  }
+]

@@ -1,0 +1,1007 @@
+[
+  {
+    "id": "u60-t-word-order-style-0001",
+    "es": "Mucho ha cambiado el café desde que llegó Simón.",
+    "en": "The café has changed a lot since Simón arrived.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:perfecto-experience",
+      "g:preterite-ar",
+      "l:café",
+      "l:cambiar",
+      "l:llegar",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "statement",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0002",
+    "es": "Poco importa ya quién ganó anoche.",
+    "en": "Who won last night hardly matters now.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ayer-anoche",
+      "g:indirect-questions",
+      "g:present-ar",
+      "g:preterite-ar",
+      "l:anoche",
+      "l:ganar",
+      "l:importar",
+      "l:quién",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "statement",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0003",
+    "es": "Difícil es olvidar esa tertulia.",
+    "en": "It is hard to forget that discussion.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:ser-identity",
+      "l:difícil",
+      "l:olvidar",
+      "l:ser",
+      "l:tertulia"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "statement",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0004",
+    "es": "Poco queda de la vieja fortaleza.",
+    "en": "Little is left of the old fortress.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:present-ar",
+      "l:fortaleza",
+      "l:quedar",
+      "l:viejo",
+      "p:quantifiers-basic",
+      "p:viejo-antiguo-mayor"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "statement",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0005",
+    "es": "Mucho he aprendido de Vale en este barrio.",
+    "en": "I have learned a lot from Vale in this neighbourhood.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:perfecto-experience",
+      "l:aprender",
+      "l:barrio",
+      "p:demonstratives-basic",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "statement",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0006",
+    "es": "Raras veces cierra Hernando el café temprano.",
+    "en": "Hernando rarely closes the café early.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:café",
+      "l:cerrar",
+      "l:raro",
+      "l:temprano",
+      "l:vez"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "statement",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0007",
+    "es": "Mucho ha cambiado Tomás desde que vive en Medellín.",
+    "en": "Tomás has changed a lot since he has lived in Medellín.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:perfecto-experience",
+      "g:present-er-ir",
+      "l:cambiar",
+      "l:vivir",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "statement",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0008",
+    "es": "Difícil es decir que no a una amiga.",
+    "en": "It is hard to say no to a friend.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:a-cuantas-cuotas",
+      "g:reformulation",
+      "g:ser-identity",
+      "g:that-clauses",
+      "l:amiga",
+      "l:decir",
+      "l:difícil",
+      "l:ser",
+      "p:hay-varios-tipos"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "statement",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0009",
+    "es": "Poco sabe el artista de lo que piensa la crítica.",
+    "en": "The artist knows little of what the critics think.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:relatives-donde-lo-que",
+      "g:stem-boot",
+      "l:artista",
+      "l:crítica",
+      "l:pensar",
+      "l:saber",
+      "p:quantifiers-basic",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "statement",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0010",
+    "es": "Mucho ha mejorado el café en esta versión.",
+    "en": "The café has improved a lot in this version.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:perfecto-experience",
+      "l:café",
+      "l:mejorar",
+      "l:versión",
+      "p:demonstratives-basic",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "statement",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0011",
+    "es": "Poco ha durado la alegría de la sala.",
+    "en": "The joy in the room has lasted only a short time.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:perfecto-experience",
+      "l:alegría",
+      "l:durar",
+      "l:sala",
+      "p:durar-durante",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "statement",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0012",
+    "es": "Difícil es creer lo que dice Simón.",
+    "en": "It is hard to believe what Simón says.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:relatives-donde-lo-que",
+      "g:ser-identity",
+      "g:stem-e-i",
+      "l:creer",
+      "l:decir",
+      "l:difícil",
+      "l:ser"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "statement",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0013",
+    "es": "Mucho ha cambiado la ciudad en diez años.",
+    "en": "The city has changed a lot in ten years.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:perfecto-experience",
+      "l:año",
+      "l:cambiar",
+      "l:ciudad",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "statement",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0014",
+    "es": "Poco dijo el artista en la entrevista.",
+    "en": "The artist said little in the interview.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-irregular-strong",
+      "l:artista",
+      "l:decir",
+      "l:entrevista",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "statement",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0015",
+    "es": "Raras veces habla Mariana de su familia.",
+    "en": "Mariana rarely talks about her family.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:present-ar",
+      "l:familia",
+      "l:hablar",
+      "l:raro",
+      "l:vez",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "statement",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0016",
+    "es": "Poco importa el traje si la voz es buena.",
+    "en": "The suit hardly matters if the voice is good.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:ser-identity",
+      "g:si-present",
+      "l:buena",
+      "l:importar",
+      "l:ser",
+      "l:traje",
+      "l:voz",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "statement",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0017",
+    "es": "Difícil es explicar ese final.",
+    "en": "It is hard to explain that ending.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:ser-identity",
+      "l:difícil",
+      "l:explicar",
+      "l:final",
+      "l:ser"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "statement",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0018",
+    "es": "¿Cómo está el barrio?\nMucho ha cambiado, la verdad.",
+    "en": "How is the neighbourhood?\nIt has changed a lot, really.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:como-estas",
+      "c:la-verdad",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:perfecto-experience",
+      "l:barrio",
+      "l:cambiar",
+      "l:cómo",
+      "l:estar",
+      "l:verdad",
+      "p:quantifiers-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "dialogue",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0019",
+    "es": "¿Te gustó la obra?\nPoco me gustó, sinceramente.",
+    "en": "Did you like the play? (to a friend)\nI hardly liked it, honestly.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adverbs-mente",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:preterite-ar",
+      "l:gustar",
+      "l:obra",
+      "l:sinceramente",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "dialogue",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0020",
+    "es": "¿Quedó algo del edificio?\nPoco queda ya.",
+    "en": "Is anything left of the building?\nLittle is left now.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:preterite-ar",
+      "l:edificio",
+      "l:quedar",
+      "p:indefinites-basic",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "dialogue",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0021",
+    "es": "¿Puedes decírselo a Rosa?\nDifícil es decirlo.",
+    "en": "Can you tell Rosa? (to a friend)\nIt is hard to say.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:double-pronouns",
+      "g:object-pronoun-position",
+      "g:ser-identity",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:decir",
+      "l:difícil",
+      "l:poder",
+      "l:ser",
+      "p:hay-varios-tipos",
+      "p:request-ladder"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "dialogue",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0022",
+    "es": "¿Mucho has cambiado tú en estos años?",
+    "en": "Have you changed a lot in these years? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:perfecto-experience",
+      "l:año",
+      "l:cambiar",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "question",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0023",
+    "es": "¿Poco o mucho has aprendido este año?",
+    "en": "Have you learned little or a lot this year? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:perfecto-experience",
+      "l:aprender",
+      "l:año",
+      "p:demonstratives-basic",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "question",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0024",
+    "es": "¿Difícil es para ti decir que no?",
+    "en": "Is it hard for you to say no? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:prep-pronouns",
+      "g:ser-identity",
+      "g:that-clauses",
+      "l:decir",
+      "l:difícil",
+      "l:ser",
+      "p:para-inf"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "question",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0025",
+    "es": "¿Raras veces cocinas tú en casa?",
+    "en": "Do you rarely cook at home? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:present-ar",
+      "l:casa",
+      "l:cocinar",
+      "l:raro",
+      "l:vez"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "question",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0026",
+    "es": "¿Mucho ha cambiado tu barrio en los últimos años?",
+    "en": "Has your neighbourhood changed a lot in recent years?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:perfecto-experience",
+      "l:año",
+      "l:barrio",
+      "l:cambiar",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "question",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0027",
+    "es": "¿Poco importa el dinero para ti?",
+    "en": "Does money matter little to you? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:prep-pronouns",
+      "g:present-ar",
+      "l:dinero",
+      "l:importar",
+      "p:para-inf",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "question",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0028",
+    "es": "Mucho hemos hablado de ese tema esta semana.",
+    "en": "We have talked a lot about that subject this week.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:perfecto-experience",
+      "l:hablar",
+      "l:semana",
+      "l:tema",
+      "p:demonstratives-basic",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "statement",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0029",
+    "es": "Poco comen los loros en la noche.",
+    "en": "Parrots eat little at night.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:comer",
+      "l:loro",
+      "l:noche",
+      "p:por-la-manana",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "statement",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0030",
+    "es": "Mucho prometió el director y poco cumplió.",
+    "en": "The director promised a lot and delivered little.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "l:cumplir",
+      "l:director",
+      "l:prometer",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "statement",
+    "unit": "u60",
+    "theme": "reviews and plans",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0031",
+    "es": "Poco gana Hernando con ese trabajo.",
+    "en": "Hernando earns little from that job.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:present-ar",
+      "l:ganar",
+      "l:trabajo",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "statement",
+    "unit": "u60",
+    "theme": "reviews and plans",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0032",
+    "es": "Raras veces llama Tomás a su mamá.",
+    "en": "Tomás rarely calls his mom.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:present-ar",
+      "l:llamar",
+      "l:mamá",
+      "l:raro",
+      "l:vez",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "statement",
+    "unit": "u60",
+    "theme": "reviews and plans",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0033",
+    "es": "Difícil es encontrar un buen tinto a esta hora.",
+    "en": "It is hard to find a good black coffee at this hour.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:buen",
+      "l:difícil",
+      "l:encontrar",
+      "l:hora",
+      "l:ser",
+      "l:tinto",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "statement",
+    "unit": "u60",
+    "theme": "reviews and plans",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0034",
+    "es": "Mucho esperaba yo de esa película.",
+    "en": "I expected a lot from that movie.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:imperfect-habitual",
+      "l:esperar",
+      "l:película",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "statement",
+    "unit": "u60",
+    "theme": "reviews and plans",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0035",
+    "es": "Poco tiempo tiene Vale para descansar.",
+    "en": "Vale has little time to rest.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:stem-boot",
+      "l:descansar",
+      "l:tener",
+      "l:tiempo",
+      "p:para-inf",
+      "p:para-inf-purpose",
+      "p:poco-un-poco",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "statement",
+    "unit": "u60",
+    "theme": "reviews and plans",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0036",
+    "es": "Mucho necesita este barrio, y pocos lo ven.",
+    "en": "This neighbourhood needs a lot, and few people see it.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:present-ar",
+      "g:present-er-ir",
+      "l:barrio",
+      "l:necesitar",
+      "l:ver",
+      "p:demonstratives-basic",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "statement",
+    "unit": "u60",
+    "theme": "reviews and plans",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0037",
+    "es": "Difícil es vivir sin Rosa en el café.",
+    "en": "It is hard to live without Rosa in the café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:café",
+      "l:difícil",
+      "l:ser",
+      "l:vivir"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "statement",
+    "unit": "u60",
+    "theme": "reviews and plans",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0038",
+    "es": "Raras veces pierde Mariana la calma.",
+    "en": "Mariana rarely loses her calm.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:direct-objects",
+      "g:present-ar",
+      "g:stem-boot",
+      "l:calmar",
+      "l:perder",
+      "l:raro",
+      "l:vez"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "statement",
+    "unit": "u60",
+    "theme": "reviews and plans",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0039",
+    "es": "¿Te sirvió el consejo?\nPoco me sirvió, la verdad.",
+    "en": "Did the advice help you? (to a friend)\nIt helped me little, really.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:la-verdad",
+      "g:gender-articles",
+      "g:preterite-spelling-stem",
+      "l:consejo",
+      "l:servir",
+      "l:verdad",
+      "p:me-te-nos-objects",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "dialogue",
+    "unit": "u60",
+    "theme": "reviews and plans",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0040",
+    "es": "¿Y el concierto?\nMucho prometía, pero poco ofreció.",
+    "en": "And the concert?\nIt promised a lot, but offered little.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:pret-vs-imperfect",
+      "g:preterite-er-ir",
+      "l:concierto",
+      "l:ofrecer",
+      "l:prometer",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "dialogue",
+    "unit": "u60",
+    "theme": "reviews and plans",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0041",
+    "es": "¿Mucho trabajas tú los fines de semana?",
+    "en": "Do you work a lot on weekends? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:fin",
+      "l:semana",
+      "l:trabajar",
+      "p:days-el-lunes",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "question",
+    "unit": "u60",
+    "theme": "reviews and plans",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0042",
+    "es": "¿Poco duermes cuando tienes mucho trabajo?",
+    "en": "Do you sleep little when you have a lot of work? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:tienes",
+      "g:stem-boot",
+      "l:dormir",
+      "l:tener",
+      "l:trabajo",
+      "p:cuando-basic",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "question",
+    "unit": "u60",
+    "theme": "reviews and plans",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0043",
+    "es": "¿Difícil es para usted hablar en público?",
+    "en": "Is it hard for you to speak in public? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:prep-pronouns",
+      "g:ser-identity",
+      "l:difícil",
+      "l:hablar",
+      "l:público",
+      "l:ser",
+      "p:para-inf"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "question",
+    "unit": "u60",
+    "theme": "reviews and plans",
+    "source": "gen"
+  }
+]

@@ -59,20 +59,20 @@
     },
     {
       "id": "t3",
-      "npc": "Marta: ¿Es por lo del contrato de la casa de doña Rosa?",
-      "npcEn": "Marta: Is it about the contract for Doña Rosa's house?",
+      "npc": "Marta: ¿Es por lo del contrato de doña Rosa?",
+      "npcEn": "Marta: Is it about the matter of Doña Rosa's contract?",
       "intent": "Say yes, it's about that matter (lo de…), and that Rosa was your grandmother.",
       "accept": [
         "Sí, es por lo del contrato. Doña Rosa era mi abuela.",
-        "Sí, señorita, es por lo de la casa de mi abuela Rosa.",
-        "Así es, por lo de la casa. Mi abuela era doña Rosa."
+        "Sí, señorita, es por lo del contrato de mi abuela Rosa.",
+        "Sí, claro, por lo del contrato. Mi abuela era doña Rosa."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\blo del?\\b",
+          "pattern": "\\blo del\\b",
           "flags": "iu",
-          "label": "refer to the matter with: lo de... / lo del..."
+          "label": "refer to the matter with: lo del..."
         },
         {
           "type": "containsWord",
@@ -133,8 +133,8 @@
   ],
   "requires": [
     "c:alo",
-    "c:asi-es",
     "c:bien-y-tu",
+    "c:claro-listo",
     "c:con-el-ella",
     "c:con-mucho-gusto",
     "c:en-que-le-puedo-servir",
@@ -183,7 +183,7 @@
     "l:bien",
     "l:buena",
     "l:bueno",
-    "l:casa",
+    "l:claro",
     "l:comunicar",
     "l:contrato",
     "l:decir",
@@ -221,7 +221,6 @@
     "p:le-agradeceria-que",
     "p:lo-antes-posible",
     "p:lo-de",
-    "p:lo-de-noun",
     "p:lo-de-topic",
     "p:lo-que-pasa-es-que",
     "p:me-comunica-con",

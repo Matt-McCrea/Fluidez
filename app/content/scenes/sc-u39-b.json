@@ -30,18 +30,18 @@
       "id": "t2",
       "npc": "Vale: Falta orden. ¿Qué dices primero y qué dices después?",
       "npcEn": "Vale: It needs some order. What do you say first and what do you say after?",
-      "intent": "Say that firstly you talk about the history and then about the neighbours.",
+      "intent": "Say that first you talk about the history and then about the neighbours.",
       "accept": [
-        "En primer lugar hablo de la historia y después de los vecinos.",
+        "Primero hablo de la historia y después de los vecinos.",
         "Primero hablo de la historia; después, de los vecinos.",
-        "En primer lugar, la historia. Después, los vecinos."
+        "Primero, la historia. Después, los vecinos."
       ],
       "require": [
         {
           "type": "regex",
           "pattern": "\\b(en primer lugar|primero)\\b",
           "flags": "iu",
-          "label": "order it: en primer lugar ... después"
+          "label": "order it: primero ... después"
         }
       ],
       "focus": "g:discourse-structure",
@@ -80,9 +80,9 @@
       "npcEn": "Vale: Perfect. But you write \"the premises\" twelve times. What do you do?",
       "intent": "Say you will write 'dicho local' (the premises in question) instead of repeating it.",
       "accept": [
-        "Voy a escribir dicho local.",
+        "Escribo dicho local.",
         "Puedo poner dicho local en vez de repetir.",
-        "Entonces escribo dicho local."
+        "Entonces pongo dicho local."
       ],
       "require": [
         {
@@ -122,7 +122,6 @@
     "c:gracias-de-nada",
     "c:por-un-lado",
     "c:puedo",
-    "c:voy-a",
     "c:voy-vas",
     "g:discourse-structure",
     "g:gender-articles",
@@ -139,6 +138,7 @@
     "g:stem-boot",
     "g:stem-e-i",
     "g:verb-infinitive",
+    "g:yo-irregular",
     "l:ayudar",
     "l:bonito",
     "l:café",
@@ -165,7 +165,6 @@
     "l:lado",
     "l:leer",
     "l:local",
-    "l:lugar",
     "l:orden",
     "l:perfecto",
     "l:poder",
@@ -189,13 +188,11 @@
     "p:ordinals-primer-tercer",
     "p:possessives-basic",
     "p:prep-questions-basic",
-    "p:presentation-frame",
     "p:quantifiers-basic",
     "p:quedar-faltar-sobrar",
     "p:se-trata-de",
     "p:time-sequence-basic",
     "p:tratar-de",
-    "p:viejo-antiguo-mayor",
-    "p:voy-a-defender-que"
+    "p:viejo-antiguo-mayor"
   ]
 }

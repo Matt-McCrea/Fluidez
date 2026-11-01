@@ -142,3 +142,17 @@ export interface ExampleLearner {
 }
 
 export { searchEntries };
+
+/** Lexeme nodes that the saved words map to (article stripped), without repeats. */
+export function savedWordNodes(saved: readonly SavedWord[], bundle: Bundle): NodeId[] {
+  const byEs = new Map<string, NodeId>();
+  for (const n of bundle.course.nodes.values()) {
+    if (n.kind === 'lexeme' && n.es) byEs.set(stripArticle(n.es).toLowerCase(), n.id);
+  }
+  const out: NodeId[] = [];
+  for (const w of saved) {
+    const id = byEs.get(stripArticle(w.es).toLowerCase());
+    if (id && !out.includes(id)) out.push(id);
+  }
+  return out;
+}

@@ -3,7 +3,7 @@ import { useEffect, useMemo } from 'preact/hooks';
 import type { Mode } from '../../compiler';
 import { Bar, Heading, undash } from '../components/text';
 import { useApp } from '../context';
-import { sessionLabel } from '../session/labels';
+import { sessionLabel, weekMap } from '../session/labels';
 import { anotherAllowed, compilePlan, requestFullLesson, savedMinutesLeft } from '../session/runner';
 import { goalLine } from '../session/goal';
 import type { PracticeSpec } from '../session/practice-spec';
@@ -11,12 +11,18 @@ import { verbsMet } from '../session/freeplay';
 import { weakSpots } from '../../learner/weak';
 import { isResumable, streakStatus, type SavedSession } from '../store/ui';
 
-export function Home({ onStart, onStory, onPractise }: { onStart: (mode: Mode, resume?: SavedSession) => void; onStory: () => void; onPractise: (spec?: PracticeSpec) => void }) {
+/** "Only five minutes?": the minimum tier under a five minute cap. */
+export interface QuickStart { tier: 'minimum'; cap: number; quick: true }
+
+export function Home({ onStart, onStory, onWeak, onPractise, onLook }: { onWeak?: () => void; onLook?: (node: string) => void; onStart: (mode: Mode, o?: SavedSession | QuickStart) => void; onStory: () => void; onPractise: (spec?: PracticeSpec) => void }) {
   const app = useApp();
   const { learner, ui, bundle } = app;
   const now = app.now();
   const today = learner.day(now);
   const doneToday = ui.state.stats.lastDay === today && ui.state.stats.today > 0;
+  const quickDone = ui.state.stats.quickToday === today && !doneToday;
+  // five minutes is a warm-up plus a sprint: pointless before anything has been learned
+  const hasReviews = app.learner.nodes().length > 0;
   const another = doneToday && anotherAllowed(learner, bundle, ui, now);
   const mode: Mode = doneToday ? 'another' : 'next';
   // a half-finished session from the last few hours waits to be picked up
@@ -41,6 +47,10 @@ export function Home({ onStart, onStory, onPractise }: { onStart: (mode: Mode, r
   const short = learner.settings.tier === 'minimum';
   const goalNote = goalLine(ui.state.goal, unit);
   const { days, keptWithDayOff } = streakStatus(ui.state, today);
+  const map = useMemo(() => (unit ? weekMap(unit.days, ui.path.day, bundle) : []), [unit, ui.path.day]);
+  const prev = unit && ui.path.day > 0 ? unit.days[ui.path.day - 1] : undefined;
+  const yesterdayNode = prev?.type === 'introduce' ? prev.focus.find((f) => f.startsWith('g:')) : undefined;
+  const yesterday = yesterdayNode ? { node: yesterdayNode, title: bundle.title(yesterdayNode) } : undefined;
   const finished = ui.path.unit >= bundle.course.units.length;
 
   return (
@@ -66,7 +76,9 @@ export function Home({ onStart, onStory, onPractise }: { onStart: (mode: Mode, r
             : another ? <button class="btn primary" data-another onClick={() => onStart('another')}>Do another</button>
               : <p>That's plenty for today. Your reviews need a rest to work. See you tomorrow.</p>}
           {short && !saved ? <button class="btn quiet" data-full onClick={() => { requestFullLesson(); onStart('next'); }}>Do the full lesson instead</button> : null}
+          {!doneToday && !saved && !short && hasReviews ? <button class="btn link small" data-five onClick={() => onStart('next', { tier: 'minimum', cap: 5, quick: true })}>Only five minutes?</button> : null}
         </div>
+        {quickDone && !saved ? <p class="small" data-quick-done>Five minutes done. The full lesson is still here when you have time.</p> : null}
       </section>
 
       <section class="card" aria-labelledby="practise-title">
@@ -88,6 +100,7 @@ export function Home({ onStart, onStory, onPractise }: { onStart: (mode: Mode, r
               <button class="btn quiet" data-train onClick={() => onPractise(s.spec)}>Train it</button>
             </div>
           ))}
+          {onWeak ? <button class="btn link" onClick={onWeak}>See all</button> : null}
         </section>
       ) : null}
 
@@ -97,6 +110,15 @@ export function Home({ onStart, onStory, onPractise }: { onStart: (mode: Mode, r
           <p>{undash(unit.canDo)}</p>
           <Bar value={ui.path.day} of={unit.days.length} label="Progress through this week" />
           <p class="small">{ui.path.day} of {unit.days.length} lessons</p>
+          <ol class="weekmap" aria-label="The days this week">
+            {map.map((d, i) => (
+              <li key={i} data-day={d.state}>
+                {d.state === 'done' ? '\u2713 ' : ''}{d.state === 'today' ? <strong>{d.word} (today)</strong> : d.word}
+                {d.title && d.state !== 'done' ? <span class="small">: {undash(d.title)}</span> : null}
+              </li>
+            ))}
+          </ol>
+          {yesterday && onLook ? <button class="btn link small" data-yesterday onClick={() => onLook(yesterday.node)}>{doneToday ? "Today's lesson" : "Yesterday's lesson"}: {undash(yesterday.title)}</button> : null}
         </section>
       ) : finished ? <section class="card"><p>You've finished the course. Reviews keep it all fresh.</p></section> : null}
 

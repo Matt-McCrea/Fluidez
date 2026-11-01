@@ -137,54 +137,62 @@
   ],
   "yourTurn": [
     {
-      "prompt": "Type in Spanish: I'm from Medellín. (The city's name stresses its last syllable, so it needs its mark.)",
+      "prompt": "Type this with its accent mark, where the stress falls: *Soy de Bogota.*",
+      "answer": "Soy de Bogotá.",
+      "accept": [
+        "Soy de Bogotá"
+      ],
+      "why": "*Bogotá* ends in a vowel but is stressed on the last syllable, so the *á* needs its mark."
+    },
+    {
+      "prompt": "Type this with its accent mark: *Soy de Medellin.* (It sounds like \"meh-deh-YEEN\".)",
       "answer": "Soy de Medellín.",
       "accept": [],
       "why": "*Medellín* ends in *n*, so it would normally stress DE. The mark on *í* moves the stress to the end."
     },
     {
-      "prompt": "Type in Spanish: I'm from Bogotá.",
-      "answer": "Soy de Bogotá.",
-      "accept": [],
-      "why": "*Bogotá* ends in a vowel but is stressed on the last syllable, so the *á* needs its mark."
-    },
-    {
-      "prompt": "Type in Spanish: My name's Tomás.",
+      "prompt": "Type this with its accent mark: *Me llamo Tomas.*",
       "answer": "Me llamo Tomás.",
       "accept": [
         "Soy Tomás."
       ],
-      "why": "*llamo* is spelled with *ll* (said like \"y\"), and *Tomás* ends in *s* but stresses the last syllable, so it takes a mark."
+      "why": "*Tomás* ends in *s*, which would stress TO. The mark moves the stress to the last syllable."
     },
     {
-      "prompt": "Type in Spanish: Slower, please.",
+      "prompt": "Which letter spells the sound in \"canyon\"? Type the whole sentence: *Me llamo Toño* or *Me llamo Tono*?",
+      "answer": "Me llamo Toño.",
+      "accept": [
+        "Soy Toño."
+      ],
+      "why": "The *ñ* is the ny in \"canyon\". Plain *n* would make it *TOH-noh*."
+    },
+    {
+      "prompt": "Which spelling is the one with the silent letter? Type the greeting that says \"OH-lah\": *Ola* or *Hola*?",
+      "answer": "Hola.",
+      "accept": [
+        "Hola"
+      ],
+      "why": "The *h* is silent, so *Hola* is said \"OH-lah\". It is the spelling to type."
+    },
+    {
+      "prompt": "Type the sentence that a respelling describes: \"soy deh meh-deh-YEEN\".",
+      "answer": "Soy de Medellín.",
+      "accept": [],
+      "why": "The stress is on the last syllable, so the word needs its *í* mark."
+    },
+    {
+      "prompt": "Type the word that a respelling describes: \"HOR-heh\" (a name).",
+      "answer": "Jorge.",
+      "accept": [
+        "Jorge"
+      ],
+      "why": "The breathy h sound is spelled *j* here, and *ge* is also breathy, so it is *Jorge*."
+    },
+    {
+      "prompt": "Type the sentence: \"Slower, please\", with the accent mark that stress needs on the first word.",
       "answer": "Más despacio, por favor.",
       "accept": [],
-      "why": "*Más* (more) carries a mark. *Despacio* has none: it ends in a vowel and stresses PA, as expected."
-    },
-    {
-      "prompt": "Type in Spanish: Nice to meet you, Simón.",
-      "answer": "Mucho gusto, Simón.",
-      "accept": [],
-      "why": "*Simón* ends in *n* but stresses the last syllable, so it needs the mark."
-    },
-    {
-      "prompt": "Type in Spanish, with both question marks: How are you? (to a friend)",
-      "answer": "¿Cómo estás?",
-      "accept": [],
-      "why": "Questions open with *¿*. *Cómo* takes a mark when it asks, and *estás* stresses its last syllable."
-    },
-    {
-      "prompt": "Type in Spanish: Thank you very much.",
-      "answer": "Muchas gracias.",
-      "accept": [],
-      "why": "In Latin America the *c* of *gracias* is a plain s: GRAH-syahs."
-    },
-    {
-      "prompt": "Type in Spanish: I don't understand.",
-      "answer": "No entiendo.",
-      "accept": [],
-      "why": "No accents here: *entiendo* ends in a vowel and stresses TIEN, as the rule predicts."
+      "why": "*Más* carries a mark. *Despacio* needs none: it ends in a vowel and stresses PA."
     }
   ],
   "pitfalls": [
@@ -209,5 +217,5 @@
       "why": "\"More\" is *más*, with a mark."
     }
   ],
-  "personal": "Type your own name and your city the Spanish way: *Me llamo… Soy de…* Then say it out loud once. Where would a Bogotano put the stress?"
+  "personal": "Type your own name and your city the Spanish way: *Me llamo… Soy de…* Add any accent marks they need. Where would a Bogotano put the stress?"
 }

@@ -230,3 +230,25 @@ describe('practise this, on real content', () => {
     expect(fp.emptyReason).toMatch(/^The examples for this use things you have not met yet\. It comes up in week \d+\.$/);
   }, 60_000);
 });
+
+describe('checkpoint', () => {
+  it('mixes finished units, ops, and tallies per unit', async () => {
+    const bundle = await new ContentLoader().load({ band: 'A1' });
+    const t = 1_700_000_000_000;
+    const learner = await Learner.open(new MemoryStore(), { now: () => t });
+    applyPlacement(learner, bundle, 2, t);
+    const fp = new Freeplay({ kind: 'checkpoint' }, { learner, bundle, now: () => t, rng: rng('cp'), finished: 2 });
+    expect(fp.total).toBeGreaterThan(0);
+    expect(fp.total).toBeLessThanOrEqual(20);
+    const ops = new Set<string>();
+    let n = 0;
+    let c;
+    while ((c = fp.next())) { ops.add(fp.lastOp!); fp.answer({ correct: n % 3 !== 0, tries: 1, ms: 1000 }); n++; }
+    expect(n).toBe(fp.total);
+    expect(ops.size).toBeGreaterThan(1);
+    expect([...fp.byUnit.keys()].sort()).toEqual(bundle.course.units.slice(0, 2).map((u) => u.id));
+    expect([...fp.byUnit.values()].reduce((a, r) => a + r.total, 0)).toBe(fp.answered);
+    expect(fp.missed.size).toBeGreaterThan(0);
+    expect(learner.events().some((e) => e.op === 'checkpoint')).toBe(true);
+  }, 60_000);
+});

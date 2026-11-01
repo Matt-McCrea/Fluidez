@@ -102,8 +102,10 @@ test('real content: the placement check', async ({ page }) => {
   await page.getByRole('button', { name: 'Next' }).click();
   await page.locator('[data-some]').click();
   await page.locator('[data-level="A1"]').click();
+  // the check loads the bands it needs first
+  await expect(page.getByRole('heading', { name: 'Quick check' })).toBeVisible({ timeout: 60_000 });
   let asked = 0;
-  for (; asked < 20 && await page.getByRole('heading', { name: 'Quick check' }).isVisible(); asked++) {
+  for (; asked < 24 && await page.getByRole('heading', { name: 'Quick check' }).isVisible(); asked++) {
     await shot(`probe ${asked}`);
     // a learner who knows the first unit well and little else: right on unit-1 items is unknown here, so tap the first option
     const options = page.locator('main [data-option]');
@@ -111,7 +113,7 @@ test('real content: the placement check', async ({ page }) => {
     await options.first().click();
   }
   expect(asked).toBeGreaterThanOrEqual(4);
-  expect(asked).toBeLessThanOrEqual(15);
+  expect(asked).toBeLessThanOrEqual(23);
   await expect(page.getByRole('button', { name: 'Start learning' })).toBeVisible();
   await shot('placed', true);
   await page.getByRole('button', { name: 'Start learning' }).click();

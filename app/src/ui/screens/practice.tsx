@@ -16,7 +16,7 @@ const clock = (s: number) => `${Math.floor(Math.max(0, s) / 60)}:${String(Math.m
 export function Practice({ spec, onDone }: { spec?: PracticeSpec; onDone: () => void }) {
   const [chosen, setChosen] = useState<PracticeSpec | undefined>(spec);
   if (!chosen) return <Pickers onPick={setChosen} onDone={onDone} />;
-  return <Ready spec={chosen} onDone={spec ? onDone : () => setChosen(undefined)} onExit={onDone} />;
+  return <Ready key={`${chosen.kind}:${chosen.title ?? ''}`} spec={chosen} onSwitch={setChosen} onDone={spec ? onDone : () => setChosen(undefined)} onExit={onDone} />;
 }
 
 /** Content the run needs: units up to the learner's current one (or the one asked for). */
@@ -31,7 +31,7 @@ async function ensureFor(spec: PracticeSpec, app: ReturnType<typeof useApp>): Pr
   }
 }
 
-function Ready({ spec, onDone, onExit }: { spec: PracticeSpec; onDone: () => void; onExit: () => void }) {
+function Ready({ spec, onDone, onExit, onSwitch }: { spec: PracticeSpec; onDone: () => void; onExit: () => void; onSwitch: (s: PracticeSpec) => void }) {
   const app = useApp();
   const [ready, setReady] = useState(spec.kind === 'conjugate');
   useEffect(() => {
@@ -40,7 +40,7 @@ function Ready({ spec, onDone, onExit }: { spec: PracticeSpec; onDone: () => voi
     return () => { live = false; };
   }, []);
   if (!ready) return <main class="screen" id="main"><p data-loading>Loading</p></main>;
-  return <Run spec={spec} onDone={onDone} onExit={onExit} />;
+  return <Run spec={spec} onDone={onDone} onExit={onExit} onSwitch={onSwitch} />;
 }
 
 // ---------------------------------------------------------------- pickers
@@ -113,10 +113,30 @@ function Pickers({ onPick, onDone }: { onPick: (s: PracticeSpec) => void; onDone
 
 // ---------------------------------------------------------------- a run
 
-function Run({ spec, onDone, onExit }: { spec: PracticeSpec; onDone: () => void; onExit: () => void }) {
+/** The verdict for a share of right-first-time answers. */
+export function checkVerdict(share: number): string {
+  return share >= 0.8 ? 'Solid' : share >= 0.55 ? 'Mostly there' : 'Worth a review';
+}
+
+function CheckpointResult({ run }: { run: Freeplay }) {
+  const { bundle } = useApp();
+  const units = bundle.course.units;
+  const rows = [...run.byUnit].map(([id, r]) => ({ id, r, at: units.findIndex((u) => u.id === id) }));
+  rows.sort((a, b) => a.at - b.at);
+  return (
+    <>
+      <p class="ask" data-verdict>{checkVerdict(run.answered ? run.right / run.answered : 0)}</p>
+      <ul class="cando" data-by-unit>
+        {rows.map(({ id, r, at }) => <li key={id}>Week {at + 1}, {undash(units[at]?.title ?? id)}: {r.right} of {r.total}</li>)}
+      </ul>
+    </>
+  );
+}
+
+function Run({ spec, onDone, onExit, onSwitch }: { spec: PracticeSpec; onDone: () => void; onExit: () => void; onSwitch: (s: PracticeSpec) => void }) {
   const app = useApp();
   const { learner, bundle, ui, now } = app;
-  const run = useMemo(() => new Freeplay(spec, { learner, bundle, now, rng: rng(`free:${learner.sessionIndex}:${now()}`) }), []);
+  const run = useMemo(() => new Freeplay(spec, { learner, bundle, now, finished: ui.path.unit, rng: rng(`free:${learner.sessionIndex}:${now()}`) }), []);
   const total = run.minutes * 60 || DEFAULT_MINUTES[spec.kind] * 60;
   const startedAt = useRef(now());
   const [left, setLeft] = useState(total);
@@ -145,6 +165,10 @@ function Run({ spec, onDone, onExit }: { spec: PracticeSpec; onDone: () => void;
         await ui.update((s) => { s.bests[key] = run.right; });
       }
     }
+    if (spec.kind === 'checkpoint' && run.answered) {
+      const byUnit = Object.fromEntries(run.byUnit);
+      await ui.update((s) => { s.checkpoints = [...s.checkpoints, { at: now(), byUnit }]; });
+    }
     await learner.flush();
     app.refresh();
   };
@@ -159,12 +183,16 @@ function Run({ spec, onDone, onExit }: { spec: PracticeSpec; onDone: () => void;
           <>
             <p class="big-number" data-score>{run.right} <span>of {live} right first time{run.retried ? `, ${run.retried} on the second try` : ''}</span></p>
             {best ? <p>{best.was ? `A new best. The one before was ${best.was}.` : 'That is your first score to beat.'}</p> : null}
+            {spec.kind === 'checkpoint' ? <CheckpointResult run={run} /> : null}
             {spec.kind === 'quickReview' ? <p>Those reviews are on your schedule now.</p> : <p>This was practice only. Your review schedule is unchanged.</p>}
           </>
         ) : hadCard.current ? <p>Nothing answered yet.</p> : <p>{run.emptyReason ?? 'Come back after a lesson or two.'}</p>}
         <div class="actions">
           <Continue label="Done" onClick={onExit} />
-          {spec.kind === 'nodes' ? null : <button class="btn quiet" onClick={onDone}>Pick something else</button>}
+          {spec.kind === 'checkpoint' && run.missed.size ? (
+            <button class="btn primary" data-weak onClick={() => onSwitch({ kind: 'nodes', nodes: [...run.missed].slice(0, 6), title: 'From the check' })}>Practise the weak ones</button>
+          ) : null}
+          {spec.kind === 'nodes' || spec.kind === 'checkpoint' ? null : <button class="btn quiet" onClick={onDone}>Pick something else</button>}
         </div>
       </main>
     );

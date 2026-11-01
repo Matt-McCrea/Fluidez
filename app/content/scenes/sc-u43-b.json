@@ -7,8 +7,8 @@
   "turns": [
     {
       "id": "t1",
-      "npc": "Vale: Mariana me contó lo de Toronto. Si tú hubieras firmado el contrato, ¿dónde estarías ahora?",
-      "npcEn": "Vale: Mariana told me about Toronto. If you had signed the contract, where would you be now?",
+      "npc": "Vale: Mariana me contó que no aceptaste el trabajo. Si tú hubieras firmado el contrato, ¿dónde estarías ahora?",
+      "npcEn": "Vale: Mariana told me you didn't accept the job. If you had signed the contract, where would you be now?",
       "intent": "Say that if you had accepted, you would be in Toronto.",
       "accept": [
         "Si hubiera aceptado, estaría en Toronto.",
@@ -131,6 +131,7 @@
     "c:claro-listo",
     "c:creo-que",
     "c:hago-salgo-vengo",
+    "c:me-conto-que",
     "c:me-encanta",
     "c:oye-mira",
     "c:voy-vas",
@@ -213,9 +214,6 @@
     "p:demonstratives-basic",
     "p:indefinites-basic",
     "p:ir-a-venir-de-place",
-    "p:lo-de",
-    "p:lo-de-noun",
-    "p:lo-de-topic",
     "p:me-te-nos-objects",
     "p:para-inf",
     "p:para-inf-purpose",

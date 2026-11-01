@@ -4,7 +4,7 @@
 import { useEffect, useState } from 'preact/hooks';
 import type { Mode } from '../compiler';
 import { IdbStore, idbKV, Learner, type LearnerStore } from '../learner';
-import type { KV } from '../learner';
+import type { KV, Tier } from '../learner';
 import { ContentLoader, loadBundle } from './data/loader';
 import { Ctx, type AppCtx } from './context';
 import { Home } from './screens/home';
@@ -15,12 +15,13 @@ import { Reference } from './screens/reference';
 import { Session } from './screens/session';
 import { Settings } from './screens/settings';
 import { Story } from './screens/story';
+import { Weak } from './screens/weak';
 import type { PracticeSpec } from './session/practice-spec';
 import { UiStore, type SavedSession } from './store/ui';
 import { MORE_MINUTES } from './session/more';
 
-type Tab = 'home' | 'story' | 'reference' | 'progress' | 'settings';
-type Route = { tab: Tab } | { session: Mode; key: number; cap?: number; resume?: SavedSession } | { practice: PracticeSpec | undefined; key: number };
+type Tab = 'home' | 'story' | 'reference' | 'progress' | 'settings' | 'weak';
+type Route = { tab: Tab; open?: string } | { session: Mode; key: number; cap?: number; resume?: SavedSession; tier?: Tier; quick?: boolean } | { practice: PracticeSpec | undefined; key: number };
 
 /** Each session start gets a fresh key, so "Do another" always mounts a new player. */
 let sessionSeq = 0;
@@ -98,7 +99,7 @@ export function App({ opts }: { opts?: BootOptions }) {
   } else if ('session' in route) {
     body = (
       <Session
-        key={route.key} mode={route.session} onExit={goHome} capMinutes={route.cap} resume={route.resume} onPractise={toPractice}
+        key={route.key} mode={route.session} onExit={goHome} capMinutes={route.cap} tier={route.tier} quick={route.quick} resume={route.resume} onPractise={toPractice}
         onAnother={() => setRoute({ session: 'another', key: ++sessionSeq, cap: MORE_MINUTES })}
       />
     );
@@ -108,13 +109,14 @@ export function App({ opts }: { opts?: BootOptions }) {
     const tab = route.tab;
     body = (
       <>
-        {tab === 'home' ? <Home onStart={(m, resume) => setRoute({ session: m, key: ++sessionSeq, resume })} onStory={() => setRoute({ tab: 'story' })} onPractise={(spec) => setRoute({ practice: spec, key: ++sessionSeq })} /> : null}
+        {tab === 'home' ? <Home onStart={(m, o) => setRoute({ session: m, key: ++sessionSeq, ...(o && 'plan' in o ? { resume: o } : o) })} onLook={(open) => setRoute({ tab: 'reference', open })} onStory={() => setRoute({ tab: 'story' })} onWeak={() => setRoute({ tab: 'weak' })} onPractise={(spec) => setRoute({ practice: spec, key: ++sessionSeq })} /> : null}
         {tab === 'story' ? <Story onPractise={toPractice} /> : null}
-        {tab === 'reference' ? <Reference onPractise={toPractice} /> : null}
+        {tab === 'reference' ? <Reference onPractise={toPractice} open={route.open} /> : null}
         {tab === 'progress' ? <Progress onPractise={toPractice} /> : null}
         {tab === 'settings' ? <Settings /> : null}
+        {tab === 'weak' ? <Weak onPractise={toPractice} onBack={goHome} /> : null}
         <nav class="tabs" aria-label="Main">
-          {(['home', 'story', 'reference', 'progress', 'settings'] as Tab[]).map((t) => (
+          {(['home', 'story', 'reference', 'progress', 'settings'] as Exclude<Tab, 'weak'>[]).map((t) => (
             <button key={t} class={`tab${tab === t ? ' on' : ''}`} aria-current={tab === t ? 'page' : undefined} onClick={() => setRoute({ tab: t })}>
               {{ home: 'Home', story: 'Story', reference: 'Look up', progress: 'Progress', settings: 'Settings' }[t]}
             </button>

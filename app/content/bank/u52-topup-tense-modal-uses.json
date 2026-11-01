@@ -1,0 +1,854 @@
+[
+  {
+    "id": "u52-t-tense-modal-uses-0001",
+    "es": "Quería pedirte un favor, Tomás.",
+    "en": "I wanted to ask you a favour, Tomás. (softened, \"I was wondering\")",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:object-pronoun-position",
+      "g:verb-infinitive",
+      "l:favor",
+      "l:pedir",
+      "l:querer",
+      "p:me-te-nos-objects",
+      "p:preguntar-pedir",
+      "p:queria-cortesia"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "statement",
+    "unit": "u52",
+    "theme": "cortesía, conjetura, planes",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0002",
+    "es": "¿Querías hablar conmigo mañana?",
+    "en": "Did you want to talk with me tomorrow? (softened)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "g:prep-pronouns",
+      "g:verb-infinitive",
+      "l:hablar",
+      "l:mañana",
+      "l:querer"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "question",
+    "unit": "u52",
+    "theme": "cortesía, conjetura, planes",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0003",
+    "es": "Quería preguntarte algo sobre Simón.",
+    "en": "I was wondering if I could ask you something about Simón.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "g:object-pronoun-position",
+      "g:verb-infinitive",
+      "l:preguntar",
+      "l:querer",
+      "p:indefinites-basic",
+      "p:me-te-nos-objects",
+      "p:preguntar-pedir",
+      "p:queria-cortesia"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "statement",
+    "unit": "u52",
+    "theme": "cortesía, conjetura, planes",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0004",
+    "es": "Quería pedirle un favor a Rosa.",
+    "en": "I wanted to ask Rosa a favour.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:object-pronoun-position",
+      "g:verb-infinitive",
+      "l:favor",
+      "l:pedir",
+      "l:querer",
+      "p:preguntar-pedir",
+      "p:queria-cortesia"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "statement",
+    "unit": "u52",
+    "theme": "cortesía, conjetura, planes",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0005",
+    "es": "¿Podías ayudarme con el carro?",
+    "en": "Could you help me with the car? (to a friend, softened)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:object-pronoun-position",
+      "g:verb-infinitive",
+      "l:ayudar",
+      "l:carro",
+      "l:poder",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "question",
+    "unit": "u52",
+    "theme": "cortesía, conjetura, planes",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0006",
+    "es": "Será muy caro, pero vale la pena.",
+    "en": "It may be very expensive, but it's worth it.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:vale-la-pena",
+      "g:future-promises",
+      "g:ser-identity",
+      "l:caro",
+      "l:pena",
+      "l:ser",
+      "l:valer",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "statement",
+    "unit": "u52",
+    "theme": "cortesía, conjetura, planes",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0007",
+    "es": "Don Hernando estará en el café.",
+    "en": "Don Hernando is probably at the café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:future-promises",
+      "g:gender-articles",
+      "l:café",
+      "l:estar",
+      "p:senor-don-article"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "statement",
+    "unit": "u52",
+    "theme": "cortesía, conjetura, planes",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0008",
+    "es": "¿Dónde estará Vale ahora?",
+    "en": "Where can Vale be now? (wondering)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:future-promises",
+      "g:questions",
+      "l:ahora",
+      "l:dónde",
+      "l:estar",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "question",
+    "unit": "u52",
+    "theme": "cortesía, conjetura, planes",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0009",
+    "es": "¿Qué hora será en Toronto?",
+    "en": "What time can it be in Toronto? (wondering)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:future-promises",
+      "g:questions",
+      "g:ser-identity",
+      "l:hora",
+      "l:qué",
+      "l:ser",
+      "p:telling-time"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "question",
+    "unit": "u52",
+    "theme": "cortesía, conjetura, planes",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0010",
+    "es": "Tomás tendrá sueño, porque viajó toda la noche.",
+    "en": "Tomás is probably sleepy, because he travelled all night.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:porque",
+      "g:cause-result",
+      "g:future-promises",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:noche",
+      "l:sueño",
+      "l:tener",
+      "l:viajar",
+      "p:tener-hambre",
+      "p:todos-los-dias"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "statement",
+    "unit": "u52",
+    "theme": "cortesía, conjetura, planes",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0011",
+    "es": "Mañana viajo a Cali.",
+    "en": "I'm travelling to Cali tomorrow.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:mañana",
+      "l:viajar"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "statement",
+    "unit": "u52",
+    "theme": "cortesía, conjetura, planes",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0012",
+    "es": "Esta noche llamo a Mariana.",
+    "en": "I'm calling Mariana tonight.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:llamar",
+      "l:noche",
+      "p:demonstratives-basic",
+      "p:personal-a"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "statement",
+    "unit": "u52",
+    "theme": "cortesía, conjetura, planes",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0013",
+    "es": "¿Viajas a Medellín mañana?",
+    "en": "Are you travelling to Medellín tomorrow?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:mañana",
+      "l:viajar"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "question",
+    "unit": "u52",
+    "theme": "cortesía, conjetura, planes",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0014",
+    "es": "¿Qué haces mañana por la tarde?",
+    "en": "What are you doing tomorrow afternoon?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:questions",
+      "l:hacer",
+      "l:mañana",
+      "l:qué",
+      "l:tarde",
+      "p:por-la-manana"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "question",
+    "unit": "u52",
+    "theme": "cortesía, conjetura, planes",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0015",
+    "es": "Iba a llamarte, pero se me olvidó.",
+    "en": "I was going to call you, but I forgot.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "g:ir-a-plans",
+      "g:object-pronoun-position",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "g:se-accidental",
+      "l:ir",
+      "l:llamar",
+      "l:olvidar",
+      "p:me-te-nos-objects",
+      "p:pensaba-pero"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "statement",
+    "unit": "u52",
+    "theme": "cortesía, conjetura, planes",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0016",
+    "es": "Iba a comprar jugo, pero no había.",
+    "en": "I was going to buy juice, but there wasn't any.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "g:imperfect-states",
+      "g:ir-a-plans",
+      "l:comprar",
+      "l:ir",
+      "l:jugo",
+      "p:pensaba-pero"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "statement",
+    "unit": "u52",
+    "theme": "cortesía, conjetura, planes",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0017",
+    "es": "En 1948 matan a Gaitán.",
+    "en": "In 1948 Gaitán is killed.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "l:matar",
+      "p:dates-years"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "statement",
+    "unit": "u52",
+    "theme": "cortesía, conjetura, planes",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0018",
+    "es": "¿Dónde está Hernando?\nEstará en el café, como siempre.",
+    "en": "Where is Hernando?\nHe's probably at the café, as always.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:donde-esta",
+      "g:estar-location-states",
+      "g:future-promises",
+      "g:gender-articles",
+      "l:café",
+      "l:dónde",
+      "l:estar",
+      "l:siempre",
+      "p:frequency-scale",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "dialogue",
+    "unit": "u52",
+    "theme": "cortesía, conjetura, planes",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0019",
+    "es": "¿Vienes mañana?\nSí, mañana voy a Altamira.",
+    "en": "Are you coming tomorrow?\nYes, tomorrow I'm going to Altamira.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:voy-a",
+      "g:ir-a-plans",
+      "g:stem-boot",
+      "l:ir",
+      "l:mañana",
+      "l:venir",
+      "p:ir-a-venir-de-place"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "dialogue",
+    "unit": "u52",
+    "theme": "cortesía, conjetura, planes",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0020",
+    "es": "¿Iba a venir Vale con nosotros?",
+    "en": "Was Vale going to come with us?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "g:ir-a-plans",
+      "g:prep-pronouns",
+      "l:ir",
+      "l:venir"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "question",
+    "unit": "u52",
+    "theme": "cortesía, conjetura, planes",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0021",
+    "es": "Los ladrones entran en el café y se llevan la caja.",
+    "en": "The thieves go into the café and take the cash box.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "l:café",
+      "l:caja",
+      "l:entrar",
+      "l:ladrón",
+      "l:llevarse",
+      "p:se-reciproco"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "statement",
+    "unit": "u52",
+    "theme": "cortesía, conjetura, planes",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0022",
+    "es": "¿Qué querías pedirme?",
+    "en": "What did you want to ask me? (softened, to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "g:object-pronoun-position",
+      "g:questions",
+      "g:verb-infinitive",
+      "l:pedir",
+      "l:querer",
+      "l:qué",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "question",
+    "unit": "u52",
+    "theme": "más usos",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0023",
+    "es": "¿Cuándo viajas a Bogotá?",
+    "en": "When are you travelling to Bogotá?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "g:questions",
+      "l:cuándo",
+      "l:viajar"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "question",
+    "unit": "u52",
+    "theme": "más usos",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0024",
+    "es": "¿Dónde estará el celular de Rosa?",
+    "en": "Where can Rosa's cell phone be? (wondering)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:future-promises",
+      "g:gender-articles",
+      "g:questions",
+      "l:celular",
+      "l:dónde",
+      "l:estar",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "question",
+    "unit": "u52",
+    "theme": "más usos",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0025",
+    "es": "¿Cuántos años tendrá el loro de Hernando?",
+    "en": "How old can Hernando's parrot be? (wondering)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:future-promises",
+      "g:gender-articles",
+      "g:questions",
+      "l:año",
+      "l:cuánto",
+      "l:loro",
+      "l:tener",
+      "p:tener-anos"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "question",
+    "unit": "u52",
+    "theme": "más usos",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0026",
+    "es": "Mariana estará cansada, pero viene.",
+    "en": "Mariana is probably tired, but she's coming.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "g:future-promises",
+      "g:stem-boot",
+      "l:cansado",
+      "l:estar",
+      "l:venir"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "statement",
+    "unit": "u52",
+    "theme": "más usos",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0027",
+    "es": "Será difícil, pero lo vamos a intentar.",
+    "en": "It may be hard, but we're going to try.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:vamos-a",
+      "g:direct-objects",
+      "g:future-promises",
+      "g:ir-a-plans",
+      "g:ser-identity",
+      "l:difícil",
+      "l:intentar",
+      "l:ir",
+      "l:ser"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "statement",
+    "unit": "u52",
+    "theme": "más usos",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0028",
+    "es": "Quería comprar un jugo, si hay.",
+    "en": "I wanted to buy a juice, if there is any. (softened)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:hay",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "g:imperfect-habitual",
+      "g:si-present",
+      "g:verb-infinitive",
+      "l:comprar",
+      "l:jugo",
+      "l:querer"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "statement",
+    "unit": "u52",
+    "theme": "más usos",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0029",
+    "es": "Iba a salir, pero empezó a llover.",
+    "en": "I was going to go out, but it started to rain.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:imperfect-habitual",
+      "g:ir-a-plans",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "g:verb-infinitive",
+      "l:empezar",
+      "l:ir",
+      "l:llover",
+      "l:salir",
+      "p:empezar-terminar",
+      "p:pensaba-pero"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "statement",
+    "unit": "u52",
+    "theme": "más usos",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0030",
+    "es": "Nosotros llegamos a Cali el lunes.",
+    "en": "We arrive in Cali on Monday.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:llegar",
+      "l:lunes",
+      "p:days-el-lunes"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "statement",
+    "unit": "u52",
+    "theme": "más usos",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0031",
+    "es": "¿Quería algo más?\nSí, quería un tinto, por favor.",
+    "en": "Did you want anything else?\nYes, I wanted a black coffee, please.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:algo-mas",
+      "c:por-favor",
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "l:favor",
+      "l:querer",
+      "l:tinto",
+      "p:queria-cortesia"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "dialogue",
+    "unit": "u52",
+    "theme": "más usos",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0032",
+    "es": "¿Qué hora es, Tomás?\nSerán las ocho, más o menos.",
+    "en": "What time is it, Tomás?\nIt's probably around eight.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:mas-o-menos",
+      "c:que-hora-es",
+      "g:future-promises",
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:hora",
+      "l:qué",
+      "l:ser",
+      "p:telling-time"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "dialogue",
+    "unit": "u52",
+    "theme": "más usos",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0033",
+    "es": "En 1948 la ciudad se llena de humo.",
+    "en": "In 1948 the city fills with smoke.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:se-impersonal",
+      "l:ciudad",
+      "l:humo",
+      "l:llenar",
+      "p:dates-years"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "statement",
+    "unit": "u52",
+    "theme": "más usos",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0034",
+    "es": "Anoche iba a dormir temprano, pero llegó Vale.",
+    "en": "Last night I was going to sleep early, but Vale arrived.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ayer-anoche",
+      "g:imperfect-habitual",
+      "g:ir-a-plans",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "l:anoche",
+      "l:dormir",
+      "l:ir",
+      "l:llegar",
+      "l:temprano",
+      "p:pensaba-pero"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "statement",
+    "unit": "u52",
+    "theme": "más usos",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0035",
+    "es": "Hernando será viejo, pero maneja muy bien.",
+    "en": "Hernando may be old, but he drives very well.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:bien-y-tu",
+      "g:future-promises",
+      "g:present-ar",
+      "g:ser-identity",
+      "l:bien",
+      "l:manejar",
+      "l:ser",
+      "l:viejo",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:hedge-knowledge",
+      "p:viejo-antiguo-mayor"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "statement",
+    "unit": "u52",
+    "theme": "más usos",
+    "source": "gen"
+  },
+  {
+    "id": "u52-t-tense-modal-uses-0036",
+    "es": "Mañana trabajo en el café hasta las seis.",
+    "en": "Tomorrow I work at the café until six.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:trabajo-en",
+      "g:gender-articles",
+      "g:present-ar",
+      "l:café",
+      "l:mañana",
+      "l:trabajar"
+    ],
+    "targets": [
+      "g:tense-modal-uses"
+    ],
+    "kind": "statement",
+    "unit": "u52",
+    "theme": "más usos",
+    "source": "gen"
+  }
+]

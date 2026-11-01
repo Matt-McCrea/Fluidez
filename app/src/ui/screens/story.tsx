@@ -4,9 +4,10 @@ import { useState } from 'preact/hooks';
 import { Reader, wordCount } from '../blocks/read';
 import { Es, Heading, undash } from '../components/text';
 import { useApp } from '../context';
+import { savedWordNodes } from './reference/model';
 import type { PracticeSpec } from '../session/practice-spec';
 
-export function Story(_props: { onPractise?: (spec: PracticeSpec) => void } = {}) {
+export function Story({ onPractise }: { onPractise?: (spec: PracticeSpec) => void } = {}) {
   const app = useApp();
   const { learner, bundle, ui } = app;
   const [open, setOpen] = useState<string | null>(null);
@@ -40,11 +41,18 @@ export function Story(_props: { onPractise?: (spec: PracticeSpec) => void } = {}
         <ol class="chapters">
           {unlocked.map((c, i) => {
             const full = bundle.chapters.get(c.id);
+            const reads = learner.ledger.views('chapter', c.id).length;
+            const secs = ui.state.readSeconds[c.id];
+            const facts = [
+              full ? `${wordCount(full.text)} words` : '',
+              secs ? `first read ${Math.floor(secs / 60)}:${String(Math.round(secs % 60)).padStart(2, '0')}` : '',
+              reads > 1 ? `read ${reads} times` : '',
+            ].filter(Boolean).join(' · ');
             return (
               <li key={c.id}>
                 <button class="row" onClick={() => setOpen(c.id)}>
                   <span class="num">{i + 1}</span>
-                  <span>{undash(full?.title ?? c.id)}</span>
+                  <span>{undash(full?.title ?? c.id)}{facts ? <><br /><span class="small">{facts}</span></> : null}</span>
                   <span class="small">{learner.ledger.views('chapter', c.id).length > 1 ? 'Read again' : 'Read'}</span>
                 </button>
               </li>
@@ -64,6 +72,16 @@ export function Story(_props: { onPractise?: (spec: PracticeSpec) => void } = {}
           ))}
         </ul>
       ) : <p class="small">Tap a word while you read, then "Save word".</p>}
+      {(() => {
+        let nodes: string[] = [];
+        try { nodes = savedWordNodes(ui.state.saved, bundle); } catch { /* none */ }
+        return (
+          <div class="actions">
+            <button class="btn quiet" disabled={!nodes.length} onClick={() => onPractise?.({ kind: 'nodes', nodes: nodes.slice(0, 12), title: 'Saved words' })}>Practise saved words</button>
+            {!nodes.length ? <span class="small">Save a few words while you read</span> : null}
+          </div>
+        );
+      })()}
     </main>
   );
 }

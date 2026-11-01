@@ -197,7 +197,7 @@ export async function session(w: Awaited<ReturnType<typeof world>>, mood: Mood =
   const t0 = w.clock.t;
   for (const b of plan.blocks) {
     if (b.kind === 'close') break;
-    if (softBlock(b) && run.overBudget()) { run.skip(b); continue; }
+    if (run.skippable(b) && run.overBudget()) { run.skip(b); continue; }
     if (b.kind === 'recap' && !run.openRecap(b)) continue;
     if (truncatable(b)) run.enter(b); else run.blockShown(b);
     runBlock(b, run, mood, walk);

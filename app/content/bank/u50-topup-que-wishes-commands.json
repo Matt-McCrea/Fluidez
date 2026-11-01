@@ -1,0 +1,1094 @@
+[
+  {
+    "id": "u50-t-que-wishes-commands-0001",
+    "es": "¿Quién quiere que entre primero?",
+    "en": "Who wants him to go in first?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:questions",
+      "g:stem-boot",
+      "g:that-clauses",
+      "l:querer",
+      "l:quién",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "question",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0002",
+    "es": "¿Que lo haga él o lo hago yo?",
+    "en": "Should he do it, or shall I?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:hago-salgo-vengo",
+      "g:direct-objects",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "g:yo-irregular",
+      "l:hacer",
+      "p:que-subj-deseo"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "question",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0003",
+    "es": "¿Que pase la siguiente señora?",
+    "en": "Shall I send the next lady in?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:pasar",
+      "l:señora",
+      "l:siguiente",
+      "p:que-subj-deseo"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "question",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0004",
+    "es": "¿Quiere que Vale lo haga hoy?",
+    "en": "Do you want Vale to do it today? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:stem-boot",
+      "g:subj-wanting",
+      "g:that-clauses",
+      "l:hacer",
+      "l:hoy",
+      "l:querer"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "question",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0005",
+    "es": "Que lo pague Altamira.",
+    "en": "Let Altamira pay for it.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:pagar",
+      "p:que-subj-deseo"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "statement",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0006",
+    "es": "Que no entre nadie.",
+    "en": "Don't let anyone in.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:negation-words",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:entrar"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "statement",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0007",
+    "es": "Que lo haga él.",
+    "en": "Let him do it.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:hacer",
+      "p:que-subj-deseo"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "statement",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0008",
+    "es": "Que Tomás lo haga mañana.",
+    "en": "Have Tomás do it tomorrow.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:hacer",
+      "l:mañana"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "statement",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0009",
+    "es": "Que lo hagan ellos.",
+    "en": "Let them do it.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:hacer",
+      "p:que-subj-deseo"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "statement",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0010",
+    "es": "Que no vuelva a pasar lo del viernes.",
+    "en": "Make sure what happened on Friday doesn't happen again.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:pasar",
+      "l:viernes",
+      "l:volver",
+      "p:lo-de",
+      "p:lo-de-topic",
+      "p:volver-a-inf"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "statement",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0011",
+    "es": "Que pasen.",
+    "en": "Show them in.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:pasar",
+      "p:que-subj-deseo"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "statement",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0012",
+    "es": "Que espere un momento.",
+    "en": "Have him wait a moment.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:un-momentico",
+      "g:subj-wishes",
+      "l:esperar",
+      "l:momento",
+      "p:que-subj-deseo"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "statement",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0013",
+    "es": "Que se vaya.",
+    "en": "Let him go.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:subj-irregulars",
+      "g:subj-wishes",
+      "l:irse",
+      "p:que-subj-deseo"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "statement",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0014",
+    "es": "Que no se repita.",
+    "en": "Make sure it isn't repeated.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:no-se",
+      "g:se-impersonal",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:repetir",
+      "p:que-subj-repeated-order"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "statement",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0015",
+    "es": "El abogado ya llegó.\nQue entre.",
+    "en": "The lawyer is here.\nShow him in.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:abogado",
+      "l:entrar",
+      "l:llegar",
+      "p:que-subj-deseo",
+      "p:que-subj-repeated-order"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "dialogue",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0016",
+    "es": "¿Quién paga la cuenta?\nQue la pague Hernando.",
+    "en": "Who pays the bill?\nLet Hernando pay it.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:la-cuenta",
+      "g:direct-objects",
+      "g:present-ar",
+      "g:questions",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:cuenta",
+      "l:pagar",
+      "l:quién",
+      "p:que-subj-deseo",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "dialogue",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0017",
+    "es": "Rosa no quiere hablar.\nQue no hable, entonces.",
+    "en": "Rosa doesn't want to talk.\nThen let her not talk.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:entonces-bueno",
+      "g:stem-boot",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "g:verb-infinitive",
+      "l:hablar",
+      "l:querer",
+      "p:que-subj-repeated-order"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "dialogue",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0018",
+    "es": "Simón no para de gritar.\nQue grite, no importa.",
+    "en": "Simón won't stop screaming.\nLet him scream, it doesn't matter.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:present-ar",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:gritar",
+      "l:importar",
+      "l:parar",
+      "p:que-subj-deseo",
+      "p:que-subj-repeated-order"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "dialogue",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0019",
+    "es": "Los clientes están esperando.\nQue pasen a la mesa.",
+    "en": "The customers are waiting.\nHave them come to the table.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-gerund",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:cliente",
+      "l:esperar",
+      "l:estar",
+      "l:mesa",
+      "l:pasar",
+      "p:que-subj-deseo"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "dialogue",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0020",
+    "es": "Mariana no contesta.\nQue lo intente otra vez.",
+    "en": "Mariana isn't answering.\nHave her try again.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:present-ar",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:contestar",
+      "l:intentar",
+      "l:vez",
+      "p:otro-no-article",
+      "p:que-subj-deseo"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "dialogue",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0021",
+    "es": "Que Mariana decida.",
+    "en": "Let Mariana decide.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:decidir"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "statement",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0022",
+    "es": "Que no se quede nadie solo.",
+    "en": "Don't let anyone stay alone.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:no-se",
+      "g:negation-words",
+      "g:reflexive-routine",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:quedarse"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "statement",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0023",
+    "es": "Que lo escriban ellas.",
+    "en": "Let them write it. (women)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:escribir",
+      "p:que-subj-deseo"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "statement",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0024",
+    "es": "Que lo diga Vale.",
+    "en": "Let Vale say it.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:decir",
+      "p:que-subj-deseo"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "statement",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0025",
+    "es": "Que nadie le diga nada a Simón.",
+    "en": "Don't let anyone tell Simón anything.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:decir"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "statement",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0026",
+    "es": "Que ella venga si quiere.",
+    "en": "Let her come if she wants.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:si-present",
+      "g:stem-boot",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:querer",
+      "l:venir"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "statement",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0027",
+    "es": "Que llame el que quiera.",
+    "en": "Let whoever wants to call.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:relatives-prepositions",
+      "g:subj-free-relatives",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:llamar",
+      "l:querer",
+      "p:que-subj-deseo"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "statement",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0028",
+    "es": "¿Que lo firme usted o que lo firme ella?",
+    "en": "Should you sign it, or should she? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "g:that-clauses",
+      "l:firmar",
+      "p:que-subj-deseo"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "question",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0029",
+    "es": "¿Que se siente Hernando aquí?",
+    "en": "Should Hernando sit here?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:reflexive-routine",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:aquí",
+      "l:sentarse",
+      "p:aqui-ahi-alla",
+      "p:que-subj-deseo"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "question",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0030",
+    "es": "¿Qué quiere que haga yo?",
+    "en": "What do you want me to do? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:questions",
+      "g:stem-boot",
+      "g:subj-wanting",
+      "g:that-clauses",
+      "l:hacer",
+      "l:querer",
+      "l:qué"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "question",
+    "unit": "u50",
+    "theme": "orders through someone else",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0031",
+    "es": "Que se lo lleve Tomás.",
+    "en": "Let Tomás take it away.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:reflexive-routine",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:llevarse"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "statement",
+    "unit": "u50",
+    "theme": "more",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0032",
+    "es": "Que no lo toque nadie.",
+    "en": "Don't let anyone touch it.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:negation-words",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:tocar"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "statement",
+    "unit": "u50",
+    "theme": "more",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0033",
+    "es": "Que cierre ella el café hoy.",
+    "en": "Have her close the café today.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:café",
+      "l:cerrar",
+      "l:hoy",
+      "p:que-subj-deseo"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "statement",
+    "unit": "u50",
+    "theme": "more",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0034",
+    "es": "Que se queden ustedes aquí.",
+    "en": "Have you all stay here.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:reflexive-routine",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:aquí",
+      "l:quedarse",
+      "p:aqui-ahi-alla",
+      "p:que-subj-deseo"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "statement",
+    "unit": "u50",
+    "theme": "more",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0035",
+    "es": "Que el abogado espere afuera.",
+    "en": "Have the lawyer wait outside.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:abogado",
+      "l:afuera",
+      "l:esperar"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "statement",
+    "unit": "u50",
+    "theme": "more",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0036",
+    "es": "Que no se enteren los vecinos.",
+    "en": "Don't let the neighbors find out.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:no-se",
+      "g:gender-articles",
+      "g:reflexive-routine",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:enterarse",
+      "l:vecino",
+      "p:enterarse-de"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "statement",
+    "unit": "u50",
+    "theme": "more",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0037",
+    "es": "Que Hernando vuelva mañana.",
+    "en": "Have Hernando come back tomorrow.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:mañana",
+      "l:volver"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "statement",
+    "unit": "u50",
+    "theme": "more",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0038",
+    "es": "Que se vaya Simón a su jaula.",
+    "en": "Let Simón go to his cage.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:subj-irregulars",
+      "g:subj-wishes",
+      "l:irse",
+      "l:jaula",
+      "p:possessives-basic",
+      "p:que-subj-deseo"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "statement",
+    "unit": "u50",
+    "theme": "more",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0039",
+    "es": "Que no llegue tarde otra vez.",
+    "en": "Make sure he doesn't arrive late again.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:llegar",
+      "l:tarde",
+      "l:vez",
+      "p:llegar-a-tiempo",
+      "p:otro-no-article"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "statement",
+    "unit": "u50",
+    "theme": "more",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0040",
+    "es": "¿Que lo llame Mariana o lo llamo yo?",
+    "en": "Should Mariana call him, or shall I?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:present-ar",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:llamar",
+      "p:que-subj-deseo"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "question",
+    "unit": "u50",
+    "theme": "more",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0041",
+    "es": "¿Quiere que Tomás cierre hoy?",
+    "en": "Do you want Tomás to close today? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:stem-boot",
+      "g:subj-wanting",
+      "g:that-clauses",
+      "l:cerrar",
+      "l:hoy",
+      "l:querer"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "question",
+    "unit": "u50",
+    "theme": "more",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0042",
+    "es": "¿Quién quiere que se quede con Simón?",
+    "en": "Who do you want to stay with Simón? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:questions",
+      "g:reflexive-routine",
+      "g:stem-boot",
+      "g:subj-wanting",
+      "g:that-clauses",
+      "l:quedarse",
+      "l:querer",
+      "l:quién"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "question",
+    "unit": "u50",
+    "theme": "more",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0043",
+    "es": "¿Que se vayan ellos primero?",
+    "en": "Should they leave first?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:subj-irregulars",
+      "g:subj-wishes",
+      "l:irse",
+      "p:que-subj-deseo",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "question",
+    "unit": "u50",
+    "theme": "more",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0044",
+    "es": "¿Qué quiere que le diga a Vale?",
+    "en": "What do you want me to tell Vale? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:questions",
+      "g:stem-boot",
+      "g:subj-wanting",
+      "g:that-clauses",
+      "l:decir",
+      "l:querer",
+      "l:qué"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "question",
+    "unit": "u50",
+    "theme": "more",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0045",
+    "es": "Hernando no quiere pagar.\nQue pague otro.",
+    "en": "Hernando doesn't want to pay.\nLet someone else pay.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:stem-boot",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "g:verb-infinitive",
+      "l:pagar",
+      "l:querer",
+      "p:otro-no-article",
+      "p:que-subj-deseo"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "dialogue",
+    "unit": "u50",
+    "theme": "more",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0046",
+    "es": "Ya está lista la mesa.\nQue se sienten.",
+    "en": "The table is ready.\nHave them sit down.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:reflexive-routine",
+      "g:subj-irregulars",
+      "g:subj-wishes",
+      "l:estar",
+      "l:listo",
+      "l:mesa",
+      "l:sentarse",
+      "p:que-subj-deseo",
+      "p:que-subj-repeated-order"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "dialogue",
+    "unit": "u50",
+    "theme": "more",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0047",
+    "es": "Tomás quiere hablar con usted.\nQue pase.",
+    "en": "Tomás wants to talk to you.\nLet him come in.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:prep-pronouns",
+      "g:stem-boot",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "g:verb-infinitive",
+      "l:hablar",
+      "l:pasar",
+      "l:querer",
+      "p:que-subj-deseo"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "dialogue",
+    "unit": "u50",
+    "theme": "more",
+    "source": "gen"
+  },
+  {
+    "id": "u50-t-que-wishes-commands-0048",
+    "es": "Mariana no sabe qué hacer.\nQue lo piense con calma.",
+    "en": "Mariana doesn't know what to do.\nLet her think it over calmly.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:indirect-questions",
+      "g:present-er-ir",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:calma",
+      "l:hacer",
+      "l:pensar",
+      "l:qué",
+      "l:saber",
+      "p:no-se-que-hacer",
+      "p:que-subj-deseo",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:que-wishes-commands"
+    ],
+    "kind": "dialogue",
+    "unit": "u50",
+    "theme": "more",
+    "source": "gen"
+  }
+]

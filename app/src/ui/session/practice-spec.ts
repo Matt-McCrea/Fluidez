@@ -9,4 +9,5 @@ export type PracticeSpec =
   | { kind: 'quickReview'; minutes?: number; title?: string }
   | { kind: 'conjugate'; verbs: string[]; tenses: string[]; minutes?: number; title?: string }
   | { kind: 'translate'; nodes?: NodeId[]; unit?: string; minutes?: number; title?: string }
+  | { kind: 'checkpoint'; minutes?: number; title?: string }
   | { kind: 'nodes'; nodes: NodeId[]; minutes?: number; title?: string };

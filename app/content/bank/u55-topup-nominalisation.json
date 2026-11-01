@@ -1,0 +1,685 @@
+[
+  {
+    "id": "u55-t-nominalisation-0001",
+    "es": "Tras la firma del contrato, Tomás habló con Vale.",
+    "en": "After the contract was signed, Tomás spoke with Vale.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:contrato",
+      "l:firma",
+      "l:hablar",
+      "p:tras-inf"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0002",
+    "es": "La llegada de Yesid cambió el café.",
+    "en": "Yesid's arrival changed the café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:café",
+      "l:cambiar",
+      "l:llegada"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0003",
+    "es": "La venta del local preocupa a Hernando.",
+    "en": "The sale of the premises worries Hernando.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "l:local",
+      "l:preocupa",
+      "l:venta"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0004",
+    "es": "La apertura de la tienda es a las diez.",
+    "en": "The opening of the shop is at ten.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:apertura",
+      "l:ser",
+      "l:tienda",
+      "p:telling-time"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0005",
+    "es": "Con la llegada de la nueva dueña, el barrio cambió.",
+    "en": "With the arrival of the new owner, the neighbourhood changed.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:barrio",
+      "l:cambiar",
+      "l:dueño",
+      "l:llegada",
+      "l:nuevo"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0006",
+    "es": "Tras el cierre del banco, fuimos a casa.",
+    "en": "After the bank closed, we went home.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ser-ir-hacer",
+      "l:banco",
+      "l:casa",
+      "l:cierre",
+      "l:ir",
+      "p:ir-a-venir-de-place",
+      "p:tras-inf"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0007",
+    "es": "La entrega de los papeles es mañana.",
+    "en": "The delivery of the papers is tomorrow.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:entrega",
+      "l:mañana",
+      "l:papel",
+      "l:ser"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0008",
+    "es": "La compra del carro fue un error.",
+    "en": "The purchase of the car was a mistake.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ser-ir-hacer",
+      "g:ser-identity",
+      "l:carro",
+      "l:compra",
+      "l:error",
+      "l:ser"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0009",
+    "es": "Después de la reunión, Rosa llamó a Simón.",
+    "en": "After the meeting, Rosa called Simón.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:después",
+      "l:llamar",
+      "l:reunión",
+      "p:personal-a",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0010",
+    "es": "La salida de Hernando sorprendió a todos.",
+    "en": "Hernando's departure surprised everyone.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "l:salida",
+      "l:sorprender"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0011",
+    "es": "Tras la muerte de Rosa, Simón no habló por una semana.",
+    "en": "After Rosa's death, Simón did not speak for a week.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:por-para-1",
+      "g:preterite-ar",
+      "l:hablar",
+      "l:muerte",
+      "l:semana",
+      "p:tras-inf"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0012",
+    "es": "El cierre del local fue una sorpresa para Vale.",
+    "en": "The closure of the premises was a surprise for Vale.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "l:cierre",
+      "l:fue",
+      "l:local",
+      "l:sorpresa",
+      "p:para-inf"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0013",
+    "es": "La firma del contrato es el viernes.",
+    "en": "The signing of the contract is on Friday.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:contrato",
+      "l:firma",
+      "l:ser",
+      "l:viernes",
+      "p:days-el-lunes"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0014",
+    "es": "Con la venta del edificio, Hernando se fue de Altamira.",
+    "en": "With the sale of the building, Hernando left Altamira.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ser-ir-hacer",
+      "l:edificio",
+      "l:irse",
+      "l:venta"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0015",
+    "es": "La construcción del edificio duró dos años.",
+    "en": "The construction of the building took two years.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:año",
+      "l:construcción",
+      "l:durar",
+      "l:edificio",
+      "p:durar-durante"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0016",
+    "es": "¿Cuándo es la entrega?\nLa entrega es el lunes.",
+    "en": "When is the delivery?\nThe delivery is on Monday.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:questions",
+      "g:ser-identity",
+      "l:cuándo",
+      "l:entrega",
+      "l:lunes",
+      "l:ser",
+      "p:days-el-lunes",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "dialogue",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0017",
+    "es": "¿Y la apertura?\nEs a las ocho.",
+    "en": "And the opening?\nIt is at eight.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:apertura",
+      "l:ser",
+      "p:telling-time"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "dialogue",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0018",
+    "es": "¿Cuándo es la apertura del café?",
+    "en": "When is the opening of the café?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:questions",
+      "g:ser-identity",
+      "l:apertura",
+      "l:café",
+      "l:cuándo",
+      "l:ser",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "question",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0019",
+    "es": "¿Cuándo fue la llegada de su familia a la ciudad?",
+    "en": "When did your family arrive in the city? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ser-ir-hacer",
+      "g:questions",
+      "g:ser-identity",
+      "l:ciudad",
+      "l:cuándo",
+      "l:familia",
+      "l:llegada",
+      "l:ser",
+      "p:possessives-basic",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "question",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0020",
+    "es": "¿Qué pasó tras el cierre del local?",
+    "en": "What happened after the premises closed?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:questions",
+      "l:cierre",
+      "l:local",
+      "l:pasar",
+      "l:qué",
+      "p:tras-inf"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "question",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0021",
+    "es": "¿Cuándo es la firma del contrato?",
+    "en": "When is the signing of the contract?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:questions",
+      "g:ser-identity",
+      "l:contrato",
+      "l:cuándo",
+      "l:firma",
+      "l:ser",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "question",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0022",
+    "es": "¿Le preocupa la venta del edificio?",
+    "en": "Does the sale of the building worry you? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:gustar-full",
+      "g:present-ar",
+      "l:edificio",
+      "l:preocupar",
+      "l:venta",
+      "p:me-preocupa-que"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "question",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0023",
+    "es": "¿Recuerda la llegada de Yesid?",
+    "en": "Do you remember Yesid's arrival? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:llegada",
+      "l:recordar",
+      "p:recordar-acordarse"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "question",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0024",
+    "es": "¿Cuándo es la entrega de los documentos?",
+    "en": "When is the delivery of the documents?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:questions",
+      "g:ser-identity",
+      "l:cuándo",
+      "l:documento",
+      "l:entrega",
+      "l:ser",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "question",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0025",
+    "es": "La toma de decisiones es lenta en esta ciudad.",
+    "en": "Decision-making is slow in this city.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:direct-objects",
+      "g:present-ar",
+      "g:ser-identity",
+      "l:ciudad",
+      "l:decisión",
+      "l:lento",
+      "l:ser",
+      "l:tomar",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0026",
+    "es": "Con la compra del edificio, el barrio cambió.",
+    "en": "With the purchase of the building, the neighbourhood changed.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:barrio",
+      "l:cambiar",
+      "l:compra",
+      "l:edificio"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0027",
+    "es": "Tras la reunión, el café cerró.",
+    "en": "After the meeting, the café closed.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:café",
+      "l:cerrar",
+      "l:reunión",
+      "p:tras-inf"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0028",
+    "es": "La salida de Tomás fue triste para Vale.",
+    "en": "Tomás's departure was sad for Vale.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ser-ir-hacer",
+      "g:ser-identity",
+      "l:salida",
+      "l:ser",
+      "l:triste",
+      "p:para-inf"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0029",
+    "es": "La apertura del banco es a las nueve.",
+    "en": "The opening of the bank is at nine.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:apertura",
+      "l:banco",
+      "l:ser",
+      "p:telling-time"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-nominalisation-0030",
+    "es": "La llegada del jefe cambió el día.",
+    "en": "The boss's arrival changed the day.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:cambiar",
+      "l:día",
+      "l:jefe",
+      "l:llegada"
+    ],
+    "targets": [
+      "g:nominalisation"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "noticias del barrio",
+    "source": "gen"
+  }
+]

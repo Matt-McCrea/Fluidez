@@ -14,11 +14,11 @@ import { TENSE_ORDER, TENSE_PLAIN, taughtTenses } from './tenses';
 type Section = 'verbs' | 'grammar' | 'words';
 const PAGE = 50;
 
-export function Reference({ onPractise }: { onPractise: (spec: PracticeSpec) => void }) {
+export function Reference({ onPractise, open }: { onPractise: (spec: PracticeSpec) => void; open?: string }) {
   const { learner, bundle, ui } = useApp();
   const [q, setQ] = useState('');
   const [section, setSection] = useState<Section>('grammar');
-  const [shown, setShown] = useState(PAGE);
+  const [shown, setShown] = useState(open ? 100_000 : PAGE);
 
   const met = useMemo(() => new Set<string>(learner.nodes()), [learner.nodes().length]);
   const grammar = useMemo(() => grammarEntries(bundle, met), [bundle, met]);
@@ -61,7 +61,7 @@ export function Reference({ onPractise }: { onPractise: (spec: PracticeSpec) => 
         ))}
       </div>
       {section === 'verbs' ? <VerbsView q={q} verbs={verbs} tenses={tenses} onPractise={onPractise} onPick={change} /> : null}
-      {section === 'grammar' ? <GrammarView q={q} hits={gHits} shown={shown} more={() => setShown(shown + PAGE)} onPractise={onPractise} /> : null}
+      {section === 'grammar' ? <GrammarView q={q} hits={gHits} shown={shown} more={() => setShown(shown + PAGE)} onPractise={onPractise} open={open} /> : null}
       {section === 'words' ? <WordsView q={q} hits={wHits} coming={comingWords} shown={shown} more={() => setShown(shown + PAGE)} onPractise={onPractise} /> : null}
     </main>
   );
@@ -146,8 +146,8 @@ function TenseTable({ inf, tense, hits }: { inf: string; tense: TenseKey; hits: 
 
 // ---------------------------------------------------------------- grammar
 
-function GrammarView({ q, hits, shown, more, onPractise }: {
-  q: string; hits: GrammarEntry[]; shown: number; more: () => void; onPractise: (s: PracticeSpec) => void;
+function GrammarView({ q, hits, shown, more, onPractise, open }: {
+  open?: string; q: string; hits: GrammarEntry[]; shown: number; more: () => void; onPractise: (s: PracticeSpec) => void;
 }) {
   const met = hits.filter((e) => e.met);
   const coming = hits.filter((e) => !e.met);
@@ -161,7 +161,7 @@ function GrammarView({ q, hits, shown, more, onPractise }: {
       {groups.map((g) => (
         <div key={g.topic} class="topic">
           <h3 class="topic-head">{g.label}</h3>
-          {g.entries.map((e) => <GrammarItem key={e.id} e={e} onPractise={onPractise} />)}
+          {g.entries.map((e) => <GrammarItem key={e.id} e={e} onPractise={onPractise} open={e.id === open} />)}
         </div>
       ))}
       {met.length > shown ? <button class="btn quiet" onClick={more}>Show more ({met.length - shown})</button> : null}
@@ -178,9 +178,9 @@ function GrammarView({ q, hits, shown, more, onPractise }: {
   );
 }
 
-function GrammarItem({ e, onPractise }: { e: GrammarEntry; onPractise: (s: PracticeSpec) => void }) {
+function GrammarItem({ e, onPractise, open: openFirst }: { e: GrammarEntry; onPractise: (s: PracticeSpec) => void; open?: boolean }) {
   const { bundle, learner } = useApp();
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(!!openFirst);
   const examples = useMemo(() => (open ? exampleSentences(bundle, learner, e.id) : []), [open, e.id]);
   const [script, setScript] = useState<TeachingScript | undefined>(() => bundle.scripts.get(e.id));
   const [loading, setLoading] = useState(false);
@@ -194,7 +194,7 @@ function GrammarItem({ e, onPractise }: { e: GrammarEntry; onPractise: (s: Pract
     return () => { live = false; };
   }, [open, e.id]);
   return (
-    <details class="entry" onToggle={(ev) => setOpen((ev.target as HTMLDetailsElement).open)}>
+    <details class="entry" open={openFirst || undefined} onToggle={(ev) => setOpen((ev.target as HTMLDetailsElement).open)}>
       <summary>{undash(e.title)}</summary>
       {open ? <>
         {script ? <ScriptView script={script} /> : loading ? <p class="small" data-loading>Loading</p> : <Short id={e.id} />}

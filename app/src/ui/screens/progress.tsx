@@ -8,7 +8,7 @@ import { bandAt } from '../../compiler';
 import { streakStatus } from '../store/ui';
 import type { PracticeSpec } from '../session/practice-spec';
 
-export function Progress(_props: { onPractise?: (spec: PracticeSpec) => void } = {}) {
+export function Progress({ onPractise }: { onPractise?: (spec: PracticeSpec) => void } = {}) {
   const { learner, ui, bundle, now } = useApp();
   const units = bundle.course.units;
   const done = units.slice(0, Math.min(ui.path.unit, units.length));
@@ -31,6 +31,12 @@ export function Progress(_props: { onPractise?: (spec: PracticeSpec) => void } =
   const wait = backlogMinutes(learner, at);
   const budget = reviewBudgetMinutes(band);
   const week = wordsThisWeek(ui.state.weekly, today);
+  const last = ui.state.checkpoints.at(-1);
+  const lastShare = last ? (() => {
+    const rows = Object.values(last.byUnit);
+    const total = rows.reduce((n, r) => n + r.total, 0);
+    return total ? rows.reduce((n, r) => n + r.right, 0) / total : undefined;
+  })() : undefined;
   const pct = (v: number) => `${Math.round(v * 100)}%`;
   const num = (n: number) => n.toLocaleString('en-US');
   const waitText = wait < 1 ? 'nothing yet' : `about ${Math.round(wait)} ${Math.round(wait) === 1 ? 'minute' : 'minutes'}`;
@@ -44,6 +50,16 @@ export function Progress(_props: { onPractise?: (spec: PracticeSpec) => void } =
         <p data-produced>Spanish you produced this week: {made.n >= 10 && made.value !== undefined ? `${pct(made.value)} of practice` : 'Not enough yet'}</p>
         <p data-waiting>Waiting for you: {waitText}{wait >= 1 ? (wait <= budget ? ', under today\'s budget' : ', more than today\'s budget') : ''}</p>
         <p data-week-words>This week: {num(week.read)} words read, {num(week.written)} written</p>
+      </section>
+      <section class="card" data-checkpoint>
+        <p class="ask">Check what has stuck</p>
+        <p>{last && lastShare !== undefined
+          ? `Last check, ${new Date(last.at).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}: ${pct(lastShare)} right first time.`
+          : 'A mixed check on the weeks you have finished, to see what you still have.'}</p>
+        <div class="actions">
+          <button class="btn primary" data-take-check disabled={!done.length || !onPractise} onClick={() => onPractise?.({ kind: 'checkpoint' })}>Take a check (about 10 minutes)</button>
+        </div>
+        {done.length ? null : <p class="small">Finish your first week first</p>}
       </section>
       <section class="card">
         <p class="ask">You can now…</p>

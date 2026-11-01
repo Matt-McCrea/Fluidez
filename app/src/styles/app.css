@@ -304,3 +304,19 @@ textarea.field { resize: vertical; line-height: 1.5; }
 .trick { font-size: 1.25rem; line-height: 1.4; }
 .spot { margin: 14px 0 4px; }
 .spot .options { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0; }
+
+/* desktop: the tab bar becomes a left rail and reading screens get a wider column */
+@media (min-width: 900px) {
+  #app { max-width: 720px; }
+  #app:has(.tabs) { margin-left: max(200px, calc((100% - 720px) / 2)); margin-right: auto; }
+  .tabs {
+    top: 0; bottom: 0; left: 0; transform: none; width: 180px; max-width: none;
+    grid-template-columns: 1fr; grid-auto-rows: 52px; align-content: start;
+    border-top: 0; border-right: 1px solid var(--line);
+    padding: calc(var(--pad) + env(safe-area-inset-top)) 0 0;
+  }
+  .tab { min-height: 52px; text-align: left; padding: 0 20px; font-size: 1rem; }
+  .tab.on { box-shadow: inset 3px 0 0 var(--accent); }
+  .screen { padding-bottom: 48px; }
+  .card { max-width: 560px; }
+}

@@ -56,42 +56,42 @@
       "id": "t3",
       "npc": "Mariana: Hay que poner una fecha, o no van a contestar.",
       "npcEn": "Mariana: We have to put a date, or they won't answer.",
-      "intent": "Close the argument by saying that, for all the above reasons, you request an answer within fifteen days (use: Por todo lo anterior, solicito...).",
+      "intent": "Close the argument by saying that, for all the above reasons, you ask them to answer within fifteen days (use: Por todo lo anterior, les ruego que...).",
       "accept": [
-        "Por todo lo anterior, solicito una respuesta en un plazo de quince días.",
-        "Por todo lo anterior, solicito la suspensión de la demolición en un plazo de quince días.",
-        "Por todo lo anterior, solicito que me respondan en quince días."
+        "Por todo lo anterior, les ruego que me respondan en quince días.",
+        "Por todo lo anterior, les ruego que respondan en un plazo de quince días.",
+        "Por todo lo anterior, les ruego que suspendan la demolición en quince días."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\bpor todo lo anterior,? solicito\\b",
+          "pattern": "\\bpor todo lo anterior,? les ruego que\\b",
           "flags": "iu",
-          "label": "close with: por todo lo anterior, solicito..."
+          "label": "close with: por todo lo anterior, les ruego que..."
         }
       ],
-      "focus": "p:por-todo-lo-anterior-solicito",
+      "focus": "p:le-ruego-que",
       "next": "t4"
     },
     {
       "id": "t4",
-      "npc": "Mariana: ¿Y qué les pedimos a los funcionarios, además del plazo?",
-      "npcEn": "Mariana: And what do we ask the officials for, besides the deadline?",
-      "intent": "Say you ask for their help in protecting the building (use: Solicitamos su colaboración para...).",
+      "npc": "Mariana: ¿Y qué les decimos a los funcionarios, además del plazo?",
+      "npcEn": "Mariana: And what do we tell the officials, besides the deadline?",
+      "intent": "Say you ask for their help to protect the building (use: Les pedimos su ayuda para...).",
       "accept": [
-        "Solicitamos su colaboración para proteger el edificio.",
-        "Solicitamos su colaboración para salvar el café y el barrio.",
-        "Solicitamos su colaboración para que el edificio no se pierda."
+        "Les pedimos su ayuda para proteger el edificio.",
+        "Les pedimos su ayuda para salvar el café y el barrio.",
+        "Les pedimos su ayuda para que el edificio no se pierda."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\bsolicitamos su colaboración\\b",
+          "pattern": "\\bles pedimos su ayuda\\b",
           "flags": "iu",
-          "label": "use: solicitamos su colaboración..."
+          "label": "use: les pedimos su ayuda..."
         }
       ],
-      "focus": "p:solicitamos-su-colaboracion",
+      "focus": "p:preguntar-pedir",
       "next": "t5"
     },
     {
@@ -176,9 +176,9 @@
     "l:café",
     "l:carta",
     "l:claro",
-    "l:colaboración",
     "l:contestar",
     "l:cómo",
+    "l:decir",
     "l:demolición",
     "l:detener",
     "l:dirigirse",
@@ -215,14 +215,11 @@
     "l:querer",
     "l:qué",
     "l:responder",
-    "l:respuesta",
     "l:revisar",
     "l:rogar",
     "l:salvar",
     "l:señor",
-    "l:solicitar",
     "l:suspender",
-    "l:suspensión",
     "l:tinto",
     "l:vecino",
     "p:adjunto-envio",
@@ -237,8 +234,6 @@
     "p:por-todo-lo-anterior-solicito",
     "p:possessives-basic",
     "p:preguntar-pedir",
-    "p:solicitamos-su-colaboracion",
-    "p:solicitar",
     "p:te-invito-a"
   ]
 }

@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import type { GraphNode } from '../../src/content/schema';
 import { Rating, type ReviewEvent } from '../../src/learner';
-import { weakSpots } from '../../src/learner/weak';
+import { recentMisses, weakSpots } from '../../src/learner/weak';
 import { taughtTenses, tensesOfNode } from '../../src/ui/session/tenses';
 
 const NOW = Date.UTC(2026, 9, 29);
@@ -53,5 +53,26 @@ describe('shared tense module', () => {
     expect(tensesOfNode({ id: 'g:subj-wanting' })).toEqual(['presubj']);
     expect(tensesOfNode({ id: 'g:pluperfect-subj' })).toEqual(['pluscsubj']);
     expect(taughtTenses(['g:present-ar', 'g:future-promises'])).toEqual(['presente', 'futuro']);
+  });
+});
+
+describe('weakSpots max and recentMisses', () => {
+  it('max raises the number of spots returned', () => {
+    const events = [
+      ...run(6, (i) => ev('p:ir-a', 'type', i < 4)),
+      ...run(5, () => ev('g:preterite-ar', 'translate', true)),
+    ];
+    expect(weakSpots(events, look, { now: NOW })).toHaveLength(2);
+    expect(weakSpots(events, look, { now: NOW, max: 1 })).toHaveLength(1);
+  });
+  it('recentMisses returns newest misses first, limited to n, using the spot rule', () => {
+    const events = [
+      ev('p:ir-a', 'type', true, 5), ev('p:ir-a', 'type', false, 0), ev('p:ir-a', 'type', true, 1),
+      ev('g:preterite-ar', 'translate', true, 3), ev('l:casa', 'translate', true, 0), ev('p:ir-a', 'type', true, 30),
+    ];
+    const all = recentMisses(events, look, { now: NOW });
+    expect(all.map((m) => m.at)).toEqual([NOW - DAY, NOW - 3 * DAY, NOW - 5 * DAY]);
+    expect(all[0]).toMatchObject({ node: 'p:ir-a', label: 'Going to', op: 'type' });
+    expect(recentMisses(events, look, { now: NOW, n: 2 })).toHaveLength(2);
   });
 });

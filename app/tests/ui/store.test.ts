@@ -4,18 +4,30 @@ import { IdbStore, Learner } from '../../src/learner';
 import { applyStreak, emptyUi, isResumable, MemoryKV, PATH_KEY, SESSION_KEY, streakStatus, UI_KEY, UiStore, type SavedSession } from '../../src/ui/store/ui';
 
 describe('UiStore migrations', () => {
-  test('a v1 ui document keeps its learnerId and comes out at v2', async () => {
+  test('a v1 ui document keeps its learnerId and comes out at v3', async () => {
     const kv = new MemoryKV();
     const old: any = { ...emptyUi('learner-abc'), version: 1, onboarded: true, goal: 'work' };
     await kv.set(UI_KEY, old);
     await kv.set(PATH_KEY, { ...initialPath(), version: 1, coreSessions: 3 });
     const ui = await new UiStore(kv).load();
     expect(ui.state.learnerId).toBe('learner-abc');
-    expect(ui.state.version).toBe(2);
+    expect(ui.state.version).toBe(3);
     expect(ui.state.goal).toBe('work');
     expect(ui.path.version).toBe(2);
     expect(ui.path.coreSessions).toBe(3);
-    expect((await kv.get(UI_KEY) as any).version).toBe(2);
+    expect((await kv.get(UI_KEY) as any).version).toBe(3);
+  });
+
+  test('a v2 ui document gains an empty checkpoints list and keeps its other fields', async () => {
+    const kv = new MemoryKV();
+    const { checkpoints, ...rest } = emptyUi('l2') as any;
+    await kv.set(UI_KEY, { ...rest, version: 2, goal: 'travel', saved: [{ es: 'hola', en: 'hi', at: 1 }] });
+    const ui = await new UiStore(kv).load();
+    expect(ui.state.version).toBe(3);
+    expect(ui.state.checkpoints).toEqual([]);
+    expect(ui.state.goal).toBe('travel');
+    expect(ui.state.saved).toHaveLength(1);
+    expect(ui.state.learnerId).toBe('l2');
   });
 
   test('an unversioned ui document keeps its learnerId', async () => {

@@ -1,0 +1,800 @@
+[
+  {
+    "id": "u58-t-agreement-tricky-0001",
+    "es": "La mayoría de los invitados llegó tarde.",
+    "en": "Most of the guests arrived late.",
+    "accept": [
+      "La mayoría de los invitados llegaron tarde."
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:invitado",
+      "l:llegar",
+      "l:mayoría",
+      "l:tarde",
+      "p:la-mayoria-de",
+      "p:llegar-a-tiempo"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0002",
+    "es": "Un grupo de estudiantes salió temprano.",
+    "en": "A group of students left early.",
+    "accept": [
+      "Un grupo de estudiantes salieron temprano."
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "l:estudiante",
+      "l:grupo",
+      "l:salir",
+      "l:temprano"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0003",
+    "es": "La gente del barrio quiere más parques.",
+    "en": "The people in the neighbourhood want more parks.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:barrio",
+      "l:gente",
+      "l:parque",
+      "l:querer",
+      "p:la-gente-singular"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0004",
+    "es": "La mitad de los clientes pidió jugo de mora.",
+    "en": "Half of the customers asked for blackberry juice.",
+    "accept": [
+      "La mitad de los clientes pidieron jugo de mora."
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-spelling-stem",
+      "l:cliente",
+      "l:jugo",
+      "l:mitad",
+      "l:mora",
+      "l:pedir",
+      "p:fracciones-de"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0005",
+    "es": "La mayoría de mis amigos vive en Medellín.",
+    "en": "Most of my friends live in Medellín.",
+    "accept": [
+      "La mayoría de mis amigos viven en Medellín."
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:amigo",
+      "l:mayoría",
+      "l:vivir",
+      "p:la-mayoria-de",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0006",
+    "es": "Un grupo de turistas visitó el museo.",
+    "en": "A group of tourists visited the museum.",
+    "accept": [
+      "Un grupo de turistas visitaron el museo."
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:grupo",
+      "l:museo",
+      "l:turista",
+      "l:visitar"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0007",
+    "es": "La gente no sabe nada del proyecto.",
+    "en": "People know nothing about the project.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:negation-words",
+      "g:present-er-ir",
+      "l:gente",
+      "l:proyecto",
+      "l:saber",
+      "p:la-gente-singular",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0008",
+    "es": "La mitad de los vecinos se quedó en casa.",
+    "en": "Half of the neighbours stayed home.",
+    "accept": [
+      "La mitad de los vecinos se quedaron en casa."
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:reflexive-routine",
+      "l:casa",
+      "l:mitad",
+      "l:quedarse",
+      "l:vecino",
+      "p:fracciones-de"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0009",
+    "es": "La mayoría de los trabajadores prefirió esperar.",
+    "en": "Most of the workers preferred to wait.",
+    "accept": [
+      "La mayoría de los trabajadores prefirieron esperar."
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:preterite-spelling-stem",
+      "l:esperar",
+      "l:mayoría",
+      "l:preferir",
+      "l:trabajador",
+      "p:la-mayoria-de",
+      "p:prefieres-x-o-y"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0010",
+    "es": "La gente habla mucho cuando hace calor.",
+    "en": "People talk a lot when it is hot.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:present-er-ir",
+      "l:calor",
+      "l:gente",
+      "l:hablar",
+      "l:hacer",
+      "p:cuando-basic",
+      "p:hace-frio",
+      "p:la-gente-singular",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0011",
+    "es": "Un grupo de vecinos organizó la fiesta.",
+    "en": "A group of neighbours organised the party.",
+    "accept": [
+      "Un grupo de vecinos organizaron la fiesta."
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:fiesta",
+      "l:grupo",
+      "l:organizar",
+      "l:vecino"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0012",
+    "es": "La mayoría de las tiendas cerró a las ocho.",
+    "en": "Most of the shops closed at eight.",
+    "accept": [
+      "La mayoría de las tiendas cerraron a las ocho."
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:cerrar",
+      "l:mayoría",
+      "l:tienda",
+      "p:la-mayoria-de",
+      "p:telling-time"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0013",
+    "es": "La mitad de los músicos llegó con Tomás.",
+    "en": "Half of the musicians arrived with Tomás.",
+    "accept": [
+      "La mitad de los músicos llegaron con Tomás."
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:llegar",
+      "l:mitad",
+      "l:músico",
+      "p:fracciones-de"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0014",
+    "es": "La gente de Altamira conoce a Simón.",
+    "en": "The people of Altamira know Simón.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:conocer",
+      "l:gente",
+      "p:la-gente-singular",
+      "p:personal-a",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0015",
+    "es": "¿La mayoría de tus amigos vive aquí?",
+    "en": "Do most of your friends live here? (to a friend)",
+    "accept": [
+      "¿La mayoría de tus amigos viven aquí?"
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:amigo",
+      "l:aquí",
+      "l:mayoría",
+      "l:vivir",
+      "p:aqui-ahi-alla",
+      "p:la-mayoria-de",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "question",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0016",
+    "es": "¿La gente de tu ciudad es amable?",
+    "en": "Are the people in your city friendly?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:amable",
+      "l:ciudad",
+      "l:gente",
+      "l:ser",
+      "p:la-gente-singular",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "question",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0017",
+    "es": "¿Un grupo de amigos te espera hoy?",
+    "en": "Is a group of friends waiting for you today?",
+    "accept": [
+      "¿Un grupo de amigos te esperan hoy?"
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:amigo",
+      "l:esperar",
+      "l:grupo",
+      "l:hoy",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "question",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0018",
+    "es": "¿La mitad de tu familia vive lejos?",
+    "en": "Does half of your family live far away?",
+    "accept": [
+      "¿La mitad de tu familia viven lejos?"
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:familia",
+      "l:lejos",
+      "l:mitad",
+      "l:vivir",
+      "p:cerca-de",
+      "p:fracciones-de",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "question",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0019",
+    "es": "¿Qué piensa la gente de tu barrio?",
+    "en": "What do the people in your neighbourhood think?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:questions",
+      "g:stem-boot",
+      "l:barrio",
+      "l:gente",
+      "l:pensar",
+      "l:qué",
+      "p:la-gente-singular",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "question",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0020",
+    "es": "¿La mayoría de tus vecinos trabaja de noche?",
+    "en": "Do most of your neighbours work at night?",
+    "accept": [
+      "¿La mayoría de tus vecinos trabajan de noche?"
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:mayoría",
+      "l:noche",
+      "l:trabajar",
+      "l:vecino",
+      "p:la-mayoria-de",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "question",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0021",
+    "es": "¿Quién votó?\nLa mayoría votó que sí.",
+    "en": "Who voted?\nMost voted yes.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:questions",
+      "g:that-clauses",
+      "l:mayoría",
+      "l:quién",
+      "l:votar"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "dialogue",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0022",
+    "es": "¿Y los clientes?\nLa mayoría pidió jugo.",
+    "en": "And the customers?\nMost asked for juice.",
+    "accept": [
+      "¿Y los clientes?\nLa mayoría pidieron jugo."
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-spelling-stem",
+      "l:cliente",
+      "l:jugo",
+      "l:mayoría",
+      "l:pedir"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "dialogue",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0023",
+    "es": "¿Dónde está el grupo?\nUn grupo de turistas llegó al hotel.",
+    "en": "Where is the group?\nA group of tourists arrived at the hotel.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:donde-esta",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:dónde",
+      "l:estar",
+      "l:grupo",
+      "l:hotel",
+      "l:llegar",
+      "l:turista",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "dialogue",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0024",
+    "es": "¿Y la gente?\nLa gente sigue en la calle.",
+    "en": "And the people?\nThe people are still in the street.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:stem-e-i",
+      "l:calle",
+      "l:gente",
+      "l:seguir",
+      "p:la-gente-singular"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "dialogue",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0025",
+    "es": "¿Quién se fue?\nLa mitad de ellos se fue.",
+    "en": "Who left?\nHalf of them left.",
+    "accept": [
+      "¿Quién se fue?\nLa mitad de ellos se fueron."
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:prep-pronouns",
+      "g:preterite-ser-ir-hacer",
+      "g:questions",
+      "l:irse",
+      "l:mitad",
+      "l:quién",
+      "p:de-owner",
+      "p:fracciones-de"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "dialogue",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0026",
+    "es": "La mayoría de los carros no pasó por aquí.",
+    "en": "Most of the cars did not come through here.",
+    "accept": [
+      "La mayoría de los carros no pasaron por aquí."
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:aquí",
+      "l:carro",
+      "l:mayoría",
+      "l:pasar",
+      "p:aqui-ahi-alla",
+      "p:la-mayoria-de"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0027",
+    "es": "Un grupo de niños jugó en la calle.",
+    "en": "A group of children played in the street.",
+    "accept": [
+      "Un grupo de niños jugaron en la calle."
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:calle",
+      "l:grupo",
+      "l:jugar",
+      "l:niño"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0028",
+    "es": "La gente espera el bus en la esquina.",
+    "en": "People wait for the bus on the corner.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:bus",
+      "l:esperar",
+      "l:esquina",
+      "l:gente",
+      "p:la-gente-singular"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0029",
+    "es": "La mitad de la gente no quiso salir.",
+    "en": "Half of the people did not want to leave.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-irregular-strong",
+      "g:verb-infinitive",
+      "l:gente",
+      "l:mitad",
+      "l:querer",
+      "l:salir",
+      "p:fracciones-de",
+      "p:la-gente-singular"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0030",
+    "es": "Hernando dice que la gente cambia poco.",
+    "en": "Hernando says people change little.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:cambiar",
+      "l:decir",
+      "l:gente",
+      "p:la-gente-singular",
+      "p:poco-un-poco",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0031",
+    "es": "La mayoría de los vecinos de Vale cree lo mismo.",
+    "en": "Most of Vale's neighbours believe the same.",
+    "accept": [
+      "La mayoría de los vecinos de Vale creen lo mismo."
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:creer",
+      "l:mayoría",
+      "l:vecino",
+      "p:la-mayoria-de"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-agreement-tricky-0032",
+    "es": "Un grupo de músicos toca en el café hoy.",
+    "en": "A group of musicians plays at the café today.",
+    "accept": [
+      "Un grupo de músicos tocan en el café hoy."
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:café",
+      "l:grupo",
+      "l:hoy",
+      "l:músico",
+      "l:tocar"
+    ],
+    "targets": [
+      "g:agreement-tricky"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "neighbours and groups",
+    "source": "gen"
+  }
+]

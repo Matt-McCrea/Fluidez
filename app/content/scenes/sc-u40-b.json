@@ -51,11 +51,11 @@
       "id": "t3",
       "npc": "Vale: Qué dramático eres. Mariana quiere ir en barco a Taganga hoy, pero dicen que hay olas grandes. Tú decides.",
       "npcEn": "Vale: How dramatic you are. Mariana wants to go to Taganga by boat today, but they say there are big waves. You decide.",
-      "intent": "Say that if you were her, you wouldn't go today.",
+      "intent": "Say that if you had to decide, you wouldn't go today.",
       "accept": [
-        "Si fuera ella, no iría hoy.",
-        "Si yo fuera Mariana, no iría hoy con estas olas.",
-        "No iría hoy si fuera ella, con tantas olas."
+        "Si tuviera que decidir, no iría hoy.",
+        "Si yo decidiera, no iría hoy con estas olas.",
+        "No iría hoy si tuviera que decidir, con tantas olas."
       ],
       "require": [
         {
@@ -226,7 +226,6 @@
     "p:hace-frio",
     "p:humedo-mojado",
     "p:ir-venir",
-    "p:lo-mejor-seria-que",
     "p:me-te-nos-objects",
     "p:por-la-manana",
     "p:quantifiers-basic",

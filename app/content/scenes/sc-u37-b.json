@@ -3,7 +3,7 @@
   "unit": "u37",
   "title": "Noticias de la costa",
   "spare": false,
-  "brief": "You're Tomás at the café. Don Hernando has news and he's older than you, so use usted. Show interest, ask what it's about, pass a request along and ask one careful question.",
+  "brief": "You're Tomás at the café. Hernando has news and he's older than you, so use usted. Show interest, ask what it's about, pass a request along and ask one careful question.",
   "turns": [
     {
       "id": "t1",
@@ -11,7 +11,7 @@
       "npcEn": "Tomás, I have news from the coast.",
       "intent": "Show interest and ask what it is about.",
       "accept": [
-        "¿De qué se trata, don Hernando?",
+        "¿De qué se trata, señor?",
         "¿Noticias? ¿De qué se trata?",
         "Cuénteme. ¿De qué se trata?"
       ],
@@ -101,7 +101,7 @@
       "npcEn": "I don't know, but I'll ask him tomorrow. Shall I pour you a coffee?",
       "intent": "Accept the coffee and thank him.",
       "accept": [
-        "Sí, gracias, don Hernando. Un tinto me cae bien.",
+        "Sí, gracias, señor. Un tinto me cae bien.",
         "Claro que sí, muchas gracias.",
         "Con gusto, gracias. Me hace falta uno."
       ],
@@ -201,7 +201,6 @@
     "p:bien-mal-vs-bueno-malo",
     "p:cerca-de",
     "p:contar-dos-sentidos",
-    "p:don-dona-nombre",
     "p:me-te-nos-objects",
     "p:personal-a",
     "p:por-casualidad",
@@ -211,7 +210,6 @@
     "p:prep-questions-basic",
     "p:quedar-cerca",
     "p:request-ladder",
-    "p:saber-conocer",
-    "p:senor-don-article"
+    "p:saber-conocer"
   ]
 }

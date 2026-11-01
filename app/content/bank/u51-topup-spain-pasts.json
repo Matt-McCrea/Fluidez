@@ -1,0 +1,648 @@
+[
+  {
+    "id": "u51-t-spain-pasts-0001",
+    "es": "¿Has desayunado hoy?",
+    "en": "Have you had breakfast today? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:perfecto-experience",
+      "l:desayunar",
+      "l:hoy"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "question",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0002",
+    "es": "¿Has hablado con Vale esta mañana?",
+    "en": "Have you talked to Vale this morning? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:perfecto-experience",
+      "l:hablar",
+      "l:mañana",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "question",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0003",
+    "es": "¿Ya han llegado los demás?",
+    "en": "Have the others already arrived?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:perfecto-experience",
+      "l:demás",
+      "l:llegar"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "question",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0004",
+    "es": "¿Has estado en Madrid este año?",
+    "en": "Have you been in Madrid this year? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:has-estado",
+      "g:perfecto-experience",
+      "l:año",
+      "l:estar",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "question",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0005",
+    "es": "¿Qué has hecho hoy?",
+    "en": "What have you done today? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:perfecto-experience",
+      "g:questions",
+      "l:hacer",
+      "l:hoy",
+      "l:qué"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "question",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0006",
+    "es": "¿Has dormido bien esta noche?",
+    "en": "Did you sleep well last night? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:bien-y-tu",
+      "g:perfecto-experience",
+      "l:bien",
+      "l:dormir",
+      "l:noche",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "question",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0007",
+    "es": "Hoy he desayunado en casa.",
+    "en": "I had breakfast at home today.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:perfecto-experience",
+      "l:casa",
+      "l:desayunar",
+      "l:hoy"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0008",
+    "es": "Esta mañana he ido al médico.",
+    "en": "I went to the doctor this morning.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:perfecto-experience",
+      "l:ir",
+      "l:mañana",
+      "l:médico",
+      "p:demonstratives-basic",
+      "p:ir-a-venir-de-place"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0009",
+    "es": "Hoy no he comido nada.",
+    "en": "I didn't eat anything today.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:negation-words",
+      "g:perfecto-experience",
+      "l:comer",
+      "l:hoy"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0010",
+    "es": "Esta tarde han llamado de la oficina.",
+    "en": "The office called this afternoon.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:perfecto-experience",
+      "l:llamar",
+      "l:oficina",
+      "l:tarde",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0011",
+    "es": "Hoy hemos abierto tarde.",
+    "en": "We opened late today.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:perfecto-experience",
+      "l:abrir",
+      "l:hoy",
+      "l:tarde"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0012",
+    "es": "Hoy he llegado temprano.",
+    "en": "I arrived early today.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:perfecto-experience",
+      "l:hoy",
+      "l:llegar",
+      "l:temprano",
+      "p:llegar-a-tiempo"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0013",
+    "es": "Esta noche he dormido fatal.",
+    "en": "I slept badly last night.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:perfecto-experience",
+      "l:dormir",
+      "l:fatal",
+      "l:noche",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0014",
+    "es": "Este año he viajado mucho.",
+    "en": "I have traveled a lot this year.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:perfecto-experience",
+      "l:año",
+      "l:viajar",
+      "p:demonstratives-basic",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0015",
+    "es": "Tomás ha vuelto a Toronto esta semana.",
+    "en": "Tomás went back to Toronto this week.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:perfecto-experience",
+      "l:semana",
+      "l:volver",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0016",
+    "es": "Hoy he trabajado mucho.",
+    "en": "I worked a lot today.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:perfecto-experience",
+      "l:hoy",
+      "l:trabajar",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0017",
+    "es": "Esta mañana he tomado un café en la plaza.",
+    "en": "I had a coffee in the square this morning.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:perfecto-experience",
+      "l:café",
+      "l:mañana",
+      "l:plaza",
+      "l:tomar",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0018",
+    "es": "Hoy Vale ha hablado con Simón.",
+    "en": "Vale talked to Simón today.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:perfecto-experience",
+      "l:hablar",
+      "l:hoy"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0019",
+    "es": "Esta semana hemos vendido todo el pan.",
+    "en": "We sold all the bread this week.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:perfecto-experience",
+      "l:pan",
+      "l:semana",
+      "l:vender",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0020",
+    "es": "Hoy no he visto a Hernando.",
+    "en": "I haven't seen Hernando today.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:perfecto-experience",
+      "l:hoy",
+      "l:ver",
+      "p:personal-a"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0021",
+    "es": "Esta mañana has llegado tarde.",
+    "en": "You arrived late this morning. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:perfecto-experience",
+      "l:llegar",
+      "l:mañana",
+      "l:tarde",
+      "p:demonstratives-basic",
+      "p:llegar-a-tiempo"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0022",
+    "es": "Hoy han cerrado la tienda temprano.",
+    "en": "They closed the shop early today.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:perfecto-experience",
+      "l:cerrar",
+      "l:hoy",
+      "l:temprano",
+      "l:tienda"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0023",
+    "es": "Ayer fui al mercado.",
+    "en": "I went to the market yesterday.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:ayer-anoche",
+      "c:fui",
+      "g:gender-articles",
+      "g:preterite-ser-ir-hacer",
+      "l:ayer",
+      "l:ir",
+      "l:mercado",
+      "p:ir-a-venir-de-place"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0024",
+    "es": "¿Has comido ya?\nHoy no he comido nada.",
+    "en": "Have you eaten yet? (to a friend)\nI haven't eaten anything today.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:negation-words",
+      "g:perfecto-experience",
+      "l:comer",
+      "l:hoy"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "dialogue",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0025",
+    "es": "¿Has visto a Vale hoy?\nSí, esta mañana he hablado con ella.",
+    "en": "Have you seen Vale today? (to a friend)\nYes, I talked to her this morning.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:con-el-ella",
+      "g:perfecto-experience",
+      "l:hablar",
+      "l:hoy",
+      "l:mañana",
+      "l:ver",
+      "p:demonstratives-basic",
+      "p:personal-a"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "dialogue",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0026",
+    "es": "¿Qué tal el día?\nHoy he trabajado mucho.",
+    "en": "How is the day going?\nI worked a lot today.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:perfecto-experience",
+      "g:questions",
+      "l:día",
+      "l:hoy",
+      "l:qué",
+      "l:trabajar",
+      "p:quantifiers-basic",
+      "p:te-parece-bien-que"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "dialogue",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0027",
+    "es": "¿Dónde has estado esta mañana?\nHe ido al médico.",
+    "en": "Where have you been this morning? (to a friend)\nI went to the doctor.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:has-estado",
+      "g:gender-articles",
+      "g:perfecto-experience",
+      "g:questions",
+      "l:dónde",
+      "l:estar",
+      "l:ir",
+      "l:mañana",
+      "l:médico",
+      "p:demonstratives-basic",
+      "p:ir-a-venir-de-place",
+      "p:question-word-order"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "dialogue",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0028",
+    "es": "Este año hemos viajado a Cartagena dos veces.",
+    "en": "This year we have traveled to Cartagena twice.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:perfecto-experience",
+      "l:año",
+      "l:vez",
+      "l:viajar",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0029",
+    "es": "Hoy ha llegado un paquete para Rosa.",
+    "en": "A package arrived for Rosa today.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:perfecto-experience",
+      "l:hoy",
+      "l:llegar",
+      "l:paquete",
+      "p:para-inf"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  },
+  {
+    "id": "u51-t-spain-pasts-0030",
+    "es": "Esta tarde he salido temprano de la oficina.",
+    "en": "I left the office early this afternoon.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:perfecto-experience",
+      "l:oficina",
+      "l:salir",
+      "l:tarde",
+      "l:temprano",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:spain-pasts"
+    ],
+    "kind": "statement",
+    "unit": "u51",
+    "theme": "Spain today",
+    "source": "gen"
+  }
+]

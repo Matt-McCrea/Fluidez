@@ -30,18 +30,18 @@
       "id": "t2",
       "npc": "Bien. Ahora tu primera razón. ¿Por qué importa el café?",
       "npcEn": "Good. Now your first reason. Why does the café matter?",
-      "intent": "Say that, first of all, the café is part of the neighbourhood.",
+      "intent": "Say that, first of all (start with Primero), the café is part of the neighbourhood.",
       "accept": [
         "Primero, el café forma parte del barrio.",
         "Primero, el café forma parte de La Candelaria, mi barrio.",
-        "En primer lugar, el café forma parte del barrio."
+        "Primero, el café es parte del barrio."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\b(en primer lugar|primero)\\b",
+          "pattern": "\\bprimero\\b",
           "flags": "iu",
-          "label": "start with: en primer lugar, or primero"
+          "label": "start with: primero"
         }
       ],
       "focus": "g:discourse-structure",
@@ -93,19 +93,13 @@
       "id": "t5",
       "npc": "Muy bien. ¿Y cómo terminas?",
       "npcEn": "Very good. And how do you finish?",
-      "intent": "Close the talk: to finish, thank the committee for their attention.",
+      "intent": "Close the talk by thanking the committee for their attention.",
       "accept": [
-        "Para terminar, muchas gracias por su atención.",
-        "En conclusión, el café es de todos. Gracias por su atención.",
-        "En resumen, el café forma parte de nuestro barrio. Muchas gracias por su atención."
+        "Muchas gracias por su atención.",
+        "Gracias por su atención. El café es de todos.",
+        "Y nada más. Muchas gracias por su atención."
       ],
       "require": [
-        {
-          "type": "regex",
-          "pattern": "\\b(para terminar|para concluir|en conclusión|en resumen)\\b",
-          "flags": "iu",
-          "label": "signal the close: para terminar, en resumen"
-        },
         {
           "type": "regex",
           "pattern": "gracias por su atención",
@@ -113,7 +107,7 @@
           "label": "thank them: gracias por su atención"
         }
       ],
-      "focus": "p:para-terminar",
+      "focus": "c:gracias-por-su-atencion",
       "next": null
     }
   ],
@@ -130,12 +124,10 @@
     "g:commands-tu",
     "g:commands-with-pronouns",
     "g:demonstratives",
-    "g:discourse-structure",
     "g:gender-articles",
     "g:indirect-objects",
     "g:ir-a-plans",
     "g:le-doubling",
-    "g:possessives",
     "g:present-ar",
     "g:preterite-er-ir",
     "g:questions",
@@ -153,7 +145,6 @@
     "l:café",
     "l:casa",
     "l:comité",
-    "l:conclusión",
     "l:cómo",
     "l:día",
     "l:empezar",
@@ -166,20 +157,16 @@
     "l:importar",
     "l:ir",
     "l:leer",
-    "l:lugar",
     "l:mantener",
     "l:mañana",
     "l:parte",
     "l:qué",
     "l:razón",
-    "l:resumen",
     "l:ser",
     "l:terminar",
     "l:vecino",
     "l:vender",
     "l:ver",
-    "p:a-lo-largo-de-esta-charla",
-    "p:al-final-en-resumen",
     "p:dates-years",
     "p:demonstratives-basic",
     "p:es-adj-inf",
@@ -189,16 +176,12 @@
     "p:ordinal-floor",
     "p:ordinals-primer-tercer",
     "p:para-inf",
-    "p:para-inf-purpose",
-    "p:para-terminar",
     "p:possessives-basic",
     "p:prep-questions-basic",
     "p:presentation-frame",
-    "p:presenting-to-audience",
     "p:quantifiers-basic",
     "p:telling-time",
     "p:time-sequence-basic",
-    "p:veces-al",
-    "p:voy-a-defender-que"
+    "p:veces-al"
   ]
 }

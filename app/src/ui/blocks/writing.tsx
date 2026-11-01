@@ -149,7 +149,7 @@ export function SelfCheck({ block, run, ui, onDone }: BlockProps<SelfCheckBlock>
   );
 }
 
-export function Close({ block, run, more, onMore, onHome }: BlockProps<CloseBlock> & { more: boolean; onMore: () => void; onHome: () => void; onPractise?: (spec: PracticeSpec) => void }) {
+export function Close({ block, run, more, onMore, onHome, onPractise }: BlockProps<CloseBlock> & { more: boolean; onMore: () => void; onHome: () => void; onPractise?: (spec: PracticeSpec) => void }) {
   const unit = run.bundle.unit(block.unit);
   const hook = block.hookChapter ? run.bundle.chapters.get(block.hookChapter)?.hook : undefined;
   const t = run.tally;
@@ -170,6 +170,15 @@ export function Close({ block, run, more, onMore, onHome }: BlockProps<CloseBloc
         {back.of > 0 ? <p class="small" data-came-back>From last week, {back.came} of {back.of} came back.</p> : null}
         {hook ? <p class="hook">{undash(hook)}</p> : block.next ? <p class="hook">Next time: {lessonTypeWord(block.next)}.</p> : null}
       </section>
+      {run.misses.length ? (
+        <section class="card" aria-labelledby="misses-title" data-misses>
+          <p class="ask" id="misses-title">What tripped you today</p>
+          {run.misses.slice(0, 8).map((m) => (
+            <p key={m.node} class="small" data-miss>{undash(run.bundle.title(m.node))}{m.sentence ? <>: <Es>{m.sentence}</Es></> : null}</p>
+          ))}
+          {onPractise ? <button class="btn quiet" data-practise-misses onClick={() => onPractise({ kind: 'nodes', nodes: [...new Set(run.misses.map((m) => m.node))].slice(0, 6), title: 'From today' })}>Practise these now</button> : null}
+        </section>
+      ) : null}
       {offer ? (
         <section class="card more" aria-labelledby="more-title">
           <p class="ask" id="more-title">Got {MORE_MINUTES} more minutes?</p>

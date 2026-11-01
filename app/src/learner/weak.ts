@@ -18,11 +18,15 @@ export interface WeakSpot {
   attempts: number;
   rate: number;
   nodes: NodeId[];
+  /** When the learner last attempted it (ms). */
+  last: number;
   spec: PracticeSpec;
 }
 
 export interface WeakOpts {
   days?: number;
+  /** How many spots to return (default 3, the Home card). */
+  max?: number;
   minAttempts?: number;
   now?: number;
   /** Verbs the learner has met, most recent first (infinitives). */
@@ -33,17 +37,17 @@ export interface WeakOpts {
 
 const DAY_MS = 86_400_000;
 const FREE_FORM = new Set(['translate', 'respond', 'scene', 'recap']);
-const FORM = new Set(['warmup', 'pick', 'choose', 'type', 'transform', 'recombine', 'grind', 'train', 'quick']);
+const FORM = new Set(['warmup', 'pick', 'choose', 'type', 'transform', 'recombine', 'grind', 'train', 'quick', 'checkpoint']);
 const GRAMMAR_KINDS = new Set(['grammar', 'pattern', 'contrast']);
 const TENSE_RATE = 0.4;
 const NODE_RATE = 0.5;
-const MAX_SPOTS = 3;
+const DEFAULT_MAX_SPOTS = 3;
 const MAX_VERBS = 8;
 
 type Nodes = ((id: NodeId) => GraphNode | undefined) | ReadonlyMap<NodeId, GraphNode>;
-interface Tally { attempts: number; misses: number; nodes: Set<NodeId>; missed: ReviewEvent[] }
+interface Tally { attempts: number; misses: number; nodes: Set<NodeId>; missed: ReviewEvent[]; last: number }
 
-const tally = (): Tally => ({ attempts: 0, misses: 0, nodes: new Set(), missed: [] });
+const tally = (): Tally => ({ attempts: 0, misses: 0, nodes: new Set(), missed: [], last: 0 });
 
 export function weakSpots(events: readonly ReviewEvent[], nodes: Nodes, opts: WeakOpts = {}): WeakSpot[] {
   const days = opts.days ?? 14;
@@ -55,7 +59,7 @@ export function weakSpots(events: readonly ReviewEvent[], nodes: Nodes, opts: We
   const byNode = new Map<NodeId, Tally>();
   const add = <K>(m: Map<K, Tally>, k: K, e: ReviewEvent, miss: boolean, id: NodeId) => {
     const t = m.get(k) ?? tally();
-    t.attempts += 1; t.nodes.add(id);
+    t.attempts += 1; t.nodes.add(id); t.last = Math.max(t.last, e.at);
     if (miss) { t.misses += 1; t.missed.push(e); }
     m.set(k, t);
   };
@@ -100,7 +104,7 @@ export function weakSpots(events: readonly ReviewEvent[], nodes: Nodes, opts: We
     const verbs = verbsFor(t);
     const label = tenseShort(tense);
     spots.push({
-      kind: 'tense', key: tense, label, misses: t.misses, attempts: t.attempts, rate, nodes: nodeIds,
+      kind: 'tense', key: tense, label, misses: t.misses, attempts: t.attempts, rate, nodes: nodeIds, last: t.last,
       spec: verbs.length
         ? { kind: 'conjugate', verbs, tenses: [tense], title: `${label}: a workout` }
         : { kind: 'nodes', nodes: nodeIds.slice(0, 3), title: `${label}: a workout` },
@@ -111,9 +115,38 @@ export function weakSpots(events: readonly ReviewEvent[], nodes: Nodes, opts: We
     if (t.attempts < minAttempts || rate < NODE_RATE) continue;
     const label = look(id)?.title ?? id;
     spots.push({
-      kind: 'node', key: id, label, misses: t.misses, attempts: t.attempts, rate, nodes: [id],
+      kind: 'node', key: id, label, misses: t.misses, attempts: t.attempts, rate, nodes: [id], last: t.last,
       spec: { kind: 'nodes', nodes: [id], title: `${label}: a workout` },
     });
   }
-  return spots.sort((a, b) => b.misses * b.rate - a.misses * a.rate).slice(0, MAX_SPOTS);
+  return spots.sort((a, b) => b.misses * b.rate - a.misses * a.rate).slice(0, opts.max ?? DEFAULT_MAX_SPOTS);
+}
+
+export interface RecentMiss {
+  node: NodeId;
+  label: string;
+  sentence?: string;
+  op: string;
+  at: number;
+}
+
+/** The last n misses, newest first, by the same rule the spots use. */
+export function recentMisses(
+  events: readonly ReviewEvent[], nodes: Nodes,
+  opts: { now?: number; days?: number; n?: number } = {},
+): RecentMiss[] {
+  const since = (opts.now ?? Date.now()) - (opts.days ?? 14) * DAY_MS;
+  const look = (id: NodeId) => (typeof nodes === 'function' ? nodes(id) : nodes.get(id));
+  const out: RecentMiss[] = [];
+  for (const e of events) {
+    if (e.at < since) continue;
+    const free = FREE_FORM.has(e.op);
+    if (!free && !FORM.has(e.op)) continue;
+    if (!(e.grade === Rating.Again || e.tries === 2)) continue;
+    const n = look(e.node);
+    if (!n) continue;
+    if (free && !GRAMMAR_KINDS.has(n.kind)) continue;
+    out.push({ node: e.node, label: n.title ?? e.node, sentence: e.sentence, op: e.op, at: e.at });
+  }
+  return out.sort((a, b) => b.at - a.at).slice(0, opts.n ?? 15);
 }

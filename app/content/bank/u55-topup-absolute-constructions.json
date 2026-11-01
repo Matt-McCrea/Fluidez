@@ -1,0 +1,725 @@
+[
+  {
+    "id": "u55-t-absolute-constructions-0001",
+    "es": "Una vez aprobado el presupuesto, empezamos las obras.",
+    "en": "Once the budget is approved, we start the work.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:una-vez",
+      "g:gender-articles",
+      "g:present-ar",
+      "l:aprobar",
+      "l:empezar",
+      "l:obra",
+      "l:presupuesto",
+      "l:vez"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0002",
+    "es": "Terminada la reunión, Tomás se fue a casa.",
+    "en": "Once the meeting was over, Tomás went home.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ser-ir-hacer",
+      "l:casa",
+      "l:irse",
+      "l:reunión",
+      "l:terminar",
+      "p:ir-a-venir-de-place"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0003",
+    "es": "Firmados los estatutos, la cooperativa existe.",
+    "en": "Once the statutes are signed, the cooperative exists.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:cooperativa",
+      "l:estatuto",
+      "l:existir",
+      "l:firmar"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0004",
+    "es": "Hecho el pago, le enviaremos el recibo.",
+    "en": "Once the payment is made, we will send you the receipt. (formal)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:future-promises",
+      "g:gender-articles",
+      "g:indirect-objects",
+      "l:enviar",
+      "l:hacer",
+      "l:pago",
+      "l:recibo"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0005",
+    "es": "Cerrada la votación, contamos los votos.",
+    "en": "Once the vote was closed, we counted the votes.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:cerrar",
+      "l:contar",
+      "l:votación",
+      "l:voto",
+      "p:contar-dos-sentidos"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0006",
+    "es": "Resuelto el problema, abrimos otra vez.",
+    "en": "Once the problem was solved, we opened again.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:abrir",
+      "l:problema",
+      "l:resolver",
+      "l:vez",
+      "p:otro-no-article"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0007",
+    "es": "Aprobada la propuesta, Vale llamó a los vecinos.",
+    "en": "Once the proposal was approved, Vale called the neighbors.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:aprobar",
+      "l:llamar",
+      "l:propuesta",
+      "l:vecino",
+      "p:personal-a"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0008",
+    "es": "Una vez firmada la escritura, el edificio es nuestro.",
+    "en": "Once the deed is signed, the building is ours.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:una-vez",
+      "g:gender-articles",
+      "g:possessives",
+      "g:ser-identity",
+      "l:edificio",
+      "l:escritura",
+      "l:firmar",
+      "l:ser",
+      "l:vez",
+      "p:de-owner"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0009",
+    "es": "Leídas las cartas, Hernando no dijo nada.",
+    "en": "Once the letters were read, Hernando said nothing.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:negation-words",
+      "g:preterite-irregular-strong",
+      "l:carta",
+      "l:decir",
+      "l:leer"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0010",
+    "es": "Dicho esto, pasemos al siguiente punto.",
+    "en": "That said, let's move on to the next point.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "l:decir",
+      "l:pasar",
+      "l:punto",
+      "l:siguiente",
+      "p:ahora-bien-dicho-esto",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0011",
+    "es": "Terminado el café, salimos del barrio.",
+    "en": "Once the coffee was finished, we left the neighborhood.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:barrio",
+      "l:café",
+      "l:salir",
+      "l:terminar"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0012",
+    "es": "Una vez entregados los papeles, ya no hay nada más que hacer.",
+    "en": "Once the papers are handed in, there is nothing more to do.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:hay",
+      "c:no-hay-nada",
+      "c:una-vez",
+      "c:ya-no",
+      "g:comparatives",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "g:negation-words",
+      "l:entregar",
+      "l:hacer",
+      "l:papel",
+      "l:vez",
+      "p:entregar-recoger"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0013",
+    "es": "Cerrada la ventana, Simón dejó de hablar.",
+    "en": "Once the window was closed, Simón stopped talking.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:cerrar",
+      "l:dejar",
+      "l:hablar",
+      "l:ventana",
+      "p:dejar-de-inf"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0014",
+    "es": "Aceptada la oferta, la familia firmó el contrato.",
+    "en": "Once the offer was accepted, the family signed the contract.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:aceptar",
+      "l:contrato",
+      "l:familia",
+      "l:firmar",
+      "l:oferta"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0015",
+    "es": "Sacadas las cuentas, el costo es muy alto.",
+    "en": "Once the accounts are worked out, the cost is very high.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:alto",
+      "l:costo",
+      "l:cuenta",
+      "l:sacar",
+      "l:ser",
+      "p:es-tiene-lleva",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0016",
+    "es": "Una vez reunidos todos los vecinos, comenzó la asamblea.",
+    "en": "Once all the neighbors were gathered, the assembly began.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:una-vez",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:asamblea",
+      "l:comenzar",
+      "l:reunir",
+      "l:vecino",
+      "l:vez"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0017",
+    "es": "¿Qué haces una vez terminado el trabajo?",
+    "en": "What do you do once work is finished? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:una-vez",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:questions",
+      "l:hacer",
+      "l:qué",
+      "l:terminar",
+      "l:trabajo",
+      "l:vez"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "question",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0018",
+    "es": "¿Qué hace usted una vez cerrado el café?",
+    "en": "What do you do once the café is closed? (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:una-vez",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:questions",
+      "l:café",
+      "l:cerrar",
+      "l:hacer",
+      "l:qué",
+      "l:vez"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "question",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0019",
+    "es": "¿Qué piensas hacer, aprobado el plan?",
+    "en": "What do you plan to do once the plan is approved? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:questions",
+      "g:stem-boot",
+      "l:aprobar",
+      "l:hacer",
+      "l:pensar",
+      "l:plan",
+      "l:qué",
+      "p:pensar-en",
+      "p:pensar-inf"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "question",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0020",
+    "es": "¿Adónde vas, terminada la reunión?",
+    "en": "Where do you go once the meeting is over? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:voy-vas",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "l:adónde",
+      "l:ir",
+      "l:reunión",
+      "l:terminar"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "question",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0021",
+    "es": "¿Qué dice la cooperativa, firmados los estatutos?",
+    "en": "What does the cooperative say once the statutes are signed?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:questions",
+      "g:stem-e-i",
+      "l:cooperativa",
+      "l:decir",
+      "l:estatuto",
+      "l:firmar",
+      "l:qué"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "question",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0022",
+    "es": "¿Ya firmaron el contrato?\nSí, firmado el contrato, empezamos.",
+    "en": "Did they already sign the contract?\nYes, once the contract is signed, we start.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "l:contrato",
+      "l:empezar",
+      "l:firmar"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "dialogue",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0023",
+    "es": "¿Y ahora?\nHecho el pago, esperamos la respuesta.",
+    "en": "And now?\nOnce the payment is made, we wait for the answer.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "l:ahora",
+      "l:esperar",
+      "l:hacer",
+      "l:pago",
+      "l:respuesta"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "dialogue",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0024",
+    "es": "¿Qué pasó en la asamblea?\nCerrada la votación, todos se fueron.",
+    "en": "What happened at the assembly?\nOnce the vote was closed, everyone left.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:preterite-ser-ir-hacer",
+      "g:questions",
+      "l:asamblea",
+      "l:cerrar",
+      "l:irse",
+      "l:pasar",
+      "l:qué",
+      "l:votación"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "dialogue",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0025",
+    "es": "Vencido el plazo, no se acepta ninguna solicitud.",
+    "en": "Once the deadline has passed, no application is accepted.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:no-se",
+      "g:gender-articles",
+      "g:indefinites",
+      "g:negation-words",
+      "g:present-ar",
+      "g:se-impersonal",
+      "l:aceptar",
+      "l:plazo",
+      "l:solicitud",
+      "l:vencer",
+      "p:vencer-plazo"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0026",
+    "es": "Una vez publicada la lista, los vecinos van a revisarla.",
+    "en": "Once the list is published, the neighbors will check it.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:una-vez",
+      "g:adjective-agreement",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:object-pronoun-position",
+      "l:ir",
+      "l:listo",
+      "l:publicar",
+      "l:revisar",
+      "l:vecino",
+      "l:vez"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0027",
+    "es": "Escritos los estatutos, falta firmarlos.",
+    "en": "Once the statutes are written, they still need to be signed.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:object-pronoun-position",
+      "g:present-ar",
+      "l:escribir",
+      "l:estatuto",
+      "l:faltar",
+      "l:firmar",
+      "p:quedar-faltar-sobrar"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0028",
+    "es": "Dada la situación, es mejor esperar.",
+    "en": "Given the situation, it is better to wait.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:dar",
+      "l:esperar",
+      "l:mejor",
+      "l:ser",
+      "l:situación"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0029",
+    "es": "Perdida la llave, Yesid tuvo que llamar a Vale.",
+    "en": "Once the key was lost, Yesid had to call Vale.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:preterite-irregular-strong",
+      "g:verb-infinitive",
+      "l:llamar",
+      "l:llave",
+      "l:perder",
+      "l:tener",
+      "p:personal-a"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  },
+  {
+    "id": "u55-t-absolute-constructions-0030",
+    "es": "Una vez abierta la cuenta, usted puede pagar.",
+    "en": "Once the account is open, you can pay. (polite)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:la-cuenta",
+      "c:una-vez",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:abrir",
+      "l:cuenta",
+      "l:pagar",
+      "l:poder",
+      "l:vez"
+    ],
+    "targets": [
+      "g:absolute-constructions"
+    ],
+    "kind": "statement",
+    "unit": "u55",
+    "theme": "absolute constructions",
+    "source": "gen"
+  }
+]

@@ -7,6 +7,7 @@
 // are skipped and card runs end early.
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import type { Block, Mode } from '../../compiler';
+import type { Tier } from '../../learner';
 import type { PracticeSpec } from '../session/practice-spec';
 import type { SavedSession } from '../store/ui';
 import { BlockView } from '../blocks';
@@ -17,14 +18,14 @@ import { useApp } from '../context';
 import { compilePlan, SessionRunner, softBlock, STOP_AFTER_MINUTES, truncatable } from '../session/runner';
 import { offerMore } from '../session/more';
 
-export function Session({ mode, onExit, onAnother, capMinutes, resume, onPractise }: {
-  mode: Mode; onExit: () => void; onAnother: () => void; capMinutes?: number; resume?: SavedSession; onPractise?: (spec: PracticeSpec) => void;
+export function Session({ mode, onExit, onAnother, capMinutes, resume, onPractise, tier, quick }: {
+  mode: Mode; tier?: Tier; quick?: boolean; onExit: () => void; onAnother: () => void; capMinutes?: number; resume?: SavedSession; onPractise?: (spec: PracticeSpec) => void;
 }) {
   const app = useApp();
   const runner = useMemo(() => {
     if (resume) return SessionRunner.resume(app.learner, app.bundle, app.ui, resume, app.now);
-    const plan = compilePlan(app.learner, app.bundle, app.ui, { mode, now: app.now() });
-    return new SessionRunner(app.learner, app.bundle, app.ui, plan, app.now, { capMinutes: capMinutes ? Math.min(capMinutes, plan.budget.minutes) : undefined });
+    const plan = compilePlan(app.learner, app.bundle, app.ui, { mode, now: app.now(), tier });
+    return new SessionRunner(app.learner, app.bundle, app.ui, plan, app.now, { capMinutes: capMinutes ? Math.min(capMinutes, plan.budget.minutes) : undefined, quick });
   }, []);
   const plan = runner.plan;
   const [idx, setIdx] = useState(resume ? Math.min(resume.block, plan.blocks.length - 1) : 0);
@@ -111,7 +112,7 @@ export function Session({ mode, onExit, onAnother, capMinutes, resume, onPractis
     const rest = (k: number) => plan.blocks.slice(k).filter((b) => b.kind !== 'close');
     while (n < plan.blocks.length && plan.blocks[n].kind !== 'close') {
       const b = plan.blocks[n];
-      if (softBlock(b) && runner.overBudget()) runner.skip(b);
+      if (runner.skippable(b) && runner.overBudget()) runner.skip(b);
       else if (b.kind === 'recap' && !stopAsked && !runner.openRecap(b)) { /* nothing to ask: skipped silently */ }
       else break;
       n++;

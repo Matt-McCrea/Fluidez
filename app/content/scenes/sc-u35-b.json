@@ -56,28 +56,27 @@
       "id": "t3",
       "npc": "El doctor lo va a ver ahora. Una sola persona puede pasar con él.",
       "npcEn": "The doctor will see him now. Only one person can go in with him.",
-      "intent": "Politely ask if she minds if you go in with him.",
+      "intent": "Politely ask if you can go in with him (use usted).",
       "accept": [
-        "¿Le importa si entro yo?",
-        "Perdón, ¿le importa si paso yo con él?",
-        "¿Le importa si lo acompaño yo?"
+        "¿Puedo pasar yo con él?",
+        "Perdón, ¿me deja entrar con él?",
+        "¿Se puede entrar con él? Yo soy su amigo."
       ],
       "require": [
         {
-          "type": "regex",
-          "pattern": "\\bimporta si\\b",
-          "flags": "i",
-          "label": "do you mind if: le importa si"
+          "type": "question",
+          "label": "ask a question"
         },
         {
           "type": "avoidsAny",
           "words": [
-            "te importa"
+            "puedes",
+            "me dejas"
           ],
-          "label": "use usted: le importa"
+          "label": "use usted: me deja, not me dejas"
         }
       ],
-      "focus": "p:te-importa-si",
+      "focus": "p:se-puede-me-dejas",
       "next": "t4"
     },
     {
@@ -163,6 +162,7 @@
     "c:hola-buenos-dias",
     "c:muy-amable",
     "c:perdon-disculpe",
+    "c:puedo",
     "c:se-puede",
     "c:tengo",
     "c:tienes",
@@ -170,8 +170,6 @@
     "g:direct-objects",
     "g:estar-location-states",
     "g:gender-articles",
-    "g:gustar-full",
-    "g:indirect-questions",
     "g:ir-a-plans",
     "g:present-ar",
     "g:present-er-ir",
@@ -184,7 +182,6 @@
     "g:tener-que-hay-que",
     "g:verb-infinitive",
     "g:yo-irregular",
-    "l:acompañar",
     "l:ahora",
     "l:amable",
     "l:amigo",
@@ -208,7 +205,6 @@
     "l:estar",
     "l:fatal",
     "l:hoy",
-    "l:importar",
     "l:ir",
     "l:mal",
     "l:marearse",
@@ -239,6 +235,7 @@
     "p:gracias-por",
     "p:indefinites-basic",
     "p:llevar-traer",
+    "p:me-te-nos-objects",
     "p:para-inf",
     "p:possessives-basic",
     "p:prep-questions-basic",
@@ -246,7 +243,6 @@
     "p:question-word-order",
     "p:se-puede-me-dejas",
     "p:sentirse-mal",
-    "p:te-importa-si",
     "p:telling-time"
   ]
 }

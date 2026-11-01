@@ -11,7 +11,7 @@
       "npcEn": "Good evening, Tomás. We're about to start. Are you going to speak tonight?",
       "intent": "Say yes, and say it's important that the neighbours speak tonight.",
       "accept": [
-        "Buenas noches, doña Gloria. Sí, voy a hablar. Es importante que hablemos esta noche.",
+        "Buenas noches, señora. Sí, voy a hablar. Es importante que hablemos esta noche.",
         "Sí, señora. Es importante que todos los vecinos hablen hoy.",
         "Sí. Es importante que los vecinos opinen esta noche."
       ],
@@ -216,14 +216,12 @@
     "p:bien-bueno",
     "p:bien-mal-vs-bueno-malo",
     "p:demonstratives-basic",
-    "p:don-dona-nombre",
     "p:indefinites-basic",
     "p:numbers-un-una",
     "p:para-inf",
     "p:para-inf-purpose",
     "p:possessives-basic",
     "p:que-opinas-de",
-    "p:senor-don-article",
     "p:tener-anos"
   ]
 }

@@ -9,63 +9,63 @@
       "id": "t1",
       "npc": "Mariana: Es para mi artículo. ¿Estás de acuerdo con el plan de Altamira?",
       "npcEn": "Mariana: This is for my article. Do you agree with Altamira's plan?",
-      "intent": "Say that in general you agree with the plan, but you have doubts (use: En líneas generales).",
+      "intent": "Say that you agree with them that the neighbourhood needs investment (use: Estoy de acuerdo con ellos en que).",
       "accept": [
-        "En líneas generales, estoy de acuerdo, pero tengo dudas sobre el plazo.",
-        "En líneas generales estoy de acuerdo con ellos en que el barrio necesita inversión.",
-        "Estoy de acuerdo en líneas generales, pero tengo mis dudas."
+        "Sí, estoy de acuerdo con ellos en que el barrio necesita inversión.",
+        "Estoy de acuerdo con Altamira en que el barrio necesita inversión.",
+        "Claro, estoy de acuerdo con ellos en que hace falta inversión."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\ben l[ií]neas generales\\b",
+          "pattern": "\\bestoy de acuerdo con \\w+ en que\\b",
           "flags": "iu",
-          "label": "say: en líneas generales"
+          "label": "say: estoy de acuerdo con ... en que"
         }
       ],
-      "focus": "p:en-lineas-generales",
+      "focus": "p:estar-de-acuerdo-con-en",
       "next": "t2"
     },
     {
       "id": "t2",
       "npc": "Mariana: En los planos, el proyecto se ve precioso.",
       "npcEn": "Mariana: On the plans, the project looks beautiful.",
-      "intent": "Say that at first sight it looks like a good idea, but it has problems (use: A primera vista).",
+      "intent": "Say that it looks like a good idea, but it has problems (use: Aunque + indicative).",
       "accept": [
-        "A primera vista parece una buena idea, pero tiene problemas.",
-        "A primera vista es precioso, pero el barrio no está en los planos.",
-        "Sí, a primera vista parece muy bueno, pero tiene un problema grande."
+        "Aunque parece una buena idea, tiene problemas.",
+        "Aunque es precioso, el barrio no está en los planos.",
+        "Sí, aunque parece muy bueno, tiene un problema grande."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\ba primera vista\\b",
+          "pattern": "\\baunque\\b",
           "flags": "iu",
-          "label": "say: a primera vista"
+          "label": "say: aunque"
         }
       ],
-      "focus": "p:a-primera-vista",
+      "focus": "g:concession-despite",
       "next": "t3"
     },
     {
       "id": "t3",
       "npc": "Mariana: ¿Y por qué dudas tanto de ellos?",
       "npcEn": "Mariana: And why do you doubt them so much?",
-      "intent": "Say you have the impression that they are hiding something (use: Tengo la impresión de que).",
+      "intent": "Say you think they are hiding something (use: Creo que + indicative).",
       "accept": [
-        "Tengo la impresión de que ocultan algo.",
-        "Tengo la impresión de que Altamira oculta algo.",
-        "Tengo la impresión de que ellos ocultan la verdad sobre el edificio."
+        "Creo que ocultan algo.",
+        "Creo que Altamira oculta algo.",
+        "Creo que ellos ocultan la verdad sobre el edificio."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\btengo la impresi[oó]n de que\\b",
+          "pattern": "\\bcreo que\\b",
           "flags": "iu",
-          "label": "say: tengo la impresión de que"
+          "label": "say: creo que"
         }
       ],
-      "focus": "p:tengo-la-impresion-de-que",
+      "focus": "g:that-clauses",
       "next": "t4"
     },
     {
@@ -134,6 +134,7 @@
     "c:bien-y-tu",
     "c:claro-listo",
     "c:con-mucho-gusto",
+    "c:creo-que",
     "c:desde-luego",
     "c:estoy-de-acuerdo",
     "c:gracias-de-nada",
@@ -143,6 +144,7 @@
     "c:tienes",
     "c:vale-la-pena",
     "g:adjective-agreement",
+    "g:aunque-indicative",
     "g:concession-despite",
     "g:conditional",
     "g:direct-objects",
@@ -187,18 +189,17 @@
     "l:escribir",
     "l:escuchar",
     "l:estar",
-    "l:general",
+    "l:falta",
     "l:grande",
     "l:gusto",
+    "l:hacer",
     "l:historia",
     "l:idea",
     "l:importar",
-    "l:impresión",
     "l:inversión",
     "l:invitar",
     "l:ir",
     "l:lector",
-    "l:línea",
     "l:necesitar",
     "l:objetar",
     "l:ocultar",
@@ -209,7 +210,6 @@
     "l:perfecto",
     "l:plan",
     "l:plano",
-    "l:plazo",
     "l:poder",
     "l:precioso",
     "l:problema",
@@ -224,34 +224,23 @@
     "l:ver",
     "l:verdad",
     "l:viejo",
-    "l:vista",
-    "p:a-grandes-rasgos",
-    "p:a-primera-vista",
     "p:ahora-bien-dicho-esto",
     "p:bien-bueno",
     "p:bien-mal-vs-bueno-malo",
     "p:concede-pero",
-    "p:en-lineas-generales",
     "p:estar-convencido-de",
     "p:estar-de-acuerdo-con-en",
     "p:estar-seguro-de-que",
     "p:gracias-por",
     "p:indefinites-basic",
-    "p:lo-primero-que",
     "p:me-te-nos-objects",
     "p:no-estoy-seguro-de-que",
-    "p:no-tengo-tan-claro",
-    "p:ordinal-floor",
-    "p:ordinals-primer-tercer",
     "p:para-inf",
     "p:personal-a",
     "p:possessives-basic",
     "p:quantifiers-basic",
     "p:se-podria-objetar-que",
     "p:te-invito-a",
-    "p:tener-la-sensacion",
-    "p:tener-razon-pero",
-    "p:tengo-la-impresion-de-que",
     "p:viejo-antiguo-mayor"
   ]
 }

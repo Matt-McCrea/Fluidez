@@ -11,7 +11,7 @@ import type { RunnerSnapshot } from '../session/runner';
 export const PATH_KEY = 'path';
 export const UI_KEY = 'ui';
 export const SESSION_KEY = 'session';
-export const UI_VERSION = 2;
+export const UI_VERSION = 3;
 export const PATH_VERSION = 2;
 
 export type Goal = 'travel' | 'work' | 'people' | 'me';
@@ -23,8 +23,11 @@ export type RubricAnswer = 'yes' | 'mostly' | 'notyet';
 /** The learner's own marks on one finished writing task. */
 export interface WritingMark { at: number; rubric: RubricAnswer[]; words: number; met: number; of: number }
 
+/** One finished checkpoint: when, and right-first-time per finished unit. */
+export interface CheckpointResult { at: number; byUnit: Record<string, { right: number; total: number }> }
+
 export interface UiState {
-  version: 2;
+  version: 3;
   learnerId: string;
   onboarded: boolean;
   goal?: Goal;
@@ -41,6 +44,8 @@ export interface UiState {
     /** day key of the last finished session, and how many finished that day */
     lastDay?: string;
     today: number;
+    /** day key of the last "only five minutes" session: it keeps the streak but not the day's lesson */
+    quickToday?: string;
   };
   saved: SavedWord[];
   canDos: CanDoMark[];
@@ -52,6 +57,8 @@ export interface UiState {
   bests: Record<string, number>;
   /** words read and written per local day, the last 14 days kept (the week's totals come from here) */
   weekly: Record<string, { read: number; written: number }>;
+  /** results of the any-time checkpoint, oldest first */
+  checkpoints: CheckpointResult[];
   /** days off the streak can absorb; one is earned per 7 days in a row, at most 2 held */
   freezes: number;
   /** day key a freeze was last used (the day of the session that followed the missed day) */
@@ -70,7 +77,7 @@ export function emptyUi(learnerId = newId()): UiState {
     version: UI_VERSION, learnerId, onboarded: false,
     stats: { sessions: 0, wordsRead: 0, wordsWritten: 0, days: [], today: 0 },
     saved: [], canDos: [], readSeconds: {}, writing: {}, bests: {},
-    weekly: {}, freezes: 1, frozenDays: [], streakRun: 0,
+    weekly: {}, checkpoints: [], freezes: 1, frozenDays: [], streakRun: 0,
   };
 }
 
@@ -99,6 +106,8 @@ export const UI_MIGRATIONS: Record<number, (s: any) => any> = {
   0: (s) => ({ ...s, version: 1 }),
   // 1 -> 2: no-op, introduces the mechanism.
   1: (s) => ({ ...s, version: 2 }),
+  // 2 -> 3: checkpoint results.
+  2: (s) => ({ ...s, version: 3, checkpoints: [] }),
 };
 export const PATH_MIGRATIONS: Record<number, (s: any) => any> = {
   0: (s) => ({ ...s, version: 1 }),
@@ -237,13 +246,16 @@ export class UiStore {
    * state with its event log, in one transaction when the learner store shares
    * this KV (the browser), otherwise path and ui in one write and then the learner.
    */
-  async commitSession(learner: Learner, path: PathState, day: string): Promise<void> {
+  async commitSession(learner: Learner, path: PathState, day: string, opts: { quick?: boolean } = {}): Promise<void> {
     this.path = structuredClone(path);
     const next = structuredClone(this.state);
     applyStreak(next, day);
     next.stats.sessions += 1;
-    next.stats.today = next.stats.lastDay === day ? next.stats.today + 1 : 1;
-    next.stats.lastDay = day;
+    if (opts.quick) next.stats.quickToday = day;
+    else {
+      next.stats.today = next.stats.lastDay === day ? next.stats.today + 1 : 1;
+      next.stats.lastDay = day;
+    }
     this.state = next;
     this.emit();
     const shared = (learner.backing as { kv?: KV } | null)?.kv === this.kv;

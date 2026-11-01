@@ -21,13 +21,16 @@ import type { PracticeSpec } from './practice-spec';
 import { gradeOf, type Outcome } from './runner';
 import { licensedTenses, PICKER_TENSES, tenseName, tensesOfNode } from './tenses';
 
-export const DEFAULT_MINUTES: Record<PracticeSpec['kind'], number> = { quickReview: 5, conjugate: 3, translate: 5, nodes: 3 };
+export const DEFAULT_MINUTES: Record<PracticeSpec['kind'], number> = { quickReview: 5, conjugate: 3, translate: 5, nodes: 3, checkpoint: 10 }
+/** Most items in a checkpoint. */
+export const CHECKPOINT_MAX = 20;;
 /** Items per node in a nodes drill. */
 export const ITEMS_PER_NODE = 3;
 /** Most cards a quick review lines up. */
 const QUICK_MAX = 60;
 
-export interface FreeplayDeps { learner: Learner; bundle: Bundle; rng: Rng; now: () => number }
+/** `finished`: how many units the learner has finished (a checkpoint covers those). */
+export interface FreeplayDeps { learner: Learner; bundle: Bundle; rng: Rng; now: () => number; finished?: number }
 
 // ---------------------------------------------------------------- plain names
 
@@ -83,6 +86,10 @@ export class Freeplay {
   emptyReason?: string;
   /** the op of the card just shown (a PracticeOp for sentence modes) */
   lastOp?: string;
+  /** checkpoint only: right first time and answered, per unit id */
+  readonly byUnit = new Map<string, { right: number; total: number }>();
+  /** checkpoint only: nodes answered wrong or only on the second try */
+  readonly missed = new Set<NodeId>();
 
   private readonly d: FreeplayDeps;
   private seq = 0;
@@ -102,10 +109,11 @@ export class Freeplay {
     switch (spec.kind) {
       case 'quickReview': this.queue = this.planQuick(); break;
       case 'nodes': this.queue = this.planNodes(spec.nodes); break;
+      case 'checkpoint': this.queue = this.planCheckpoint(); break;
       case 'translate': this.pool = this.planTranslate(spec); break;
       case 'conjugate': this.verbs = spec.verbs.map((v) => verbByInf(v)).filter((v): v is Verb => !!v); break;
     }
-    if (spec.kind === 'quickReview' || spec.kind === 'nodes') this.total = this.queue.length;
+    if (spec.kind === 'quickReview' || spec.kind === 'nodes' || spec.kind === 'checkpoint') this.total = this.queue.length;
   }
 
   /** The next card, or undefined when nothing is left. The caller stops on the clock. */
@@ -114,6 +122,7 @@ export class Freeplay {
     switch (this.spec.kind) {
       case 'quickReview':
       case 'nodes':
+      case 'checkpoint':
         while (this.queue.length) {
           const c = this.queue.shift()!();
           if (c) return c;
@@ -281,6 +290,65 @@ export class Freeplay {
         });
         this.markSeen(sentence);
         learner.stepRung(node, !o.correct ? 'miss' : o.tries <= 1 ? 'pass' : 'retry');
+      },
+    };
+    return card;
+  }
+
+  // ------------------------------------------------------------ checkpoint
+
+  /**
+   * A cumulative check over finished units: per unit, the grammar and pattern
+   * nodes it taught that the learner knows, a seen sentence for each, dealt
+   * round-robin across units (up to CHECKPOINT_MAX), ops rotating through
+   * recombine, transform and translate. Exposure only, no rung step.
+   */
+  private planCheckpoint(): Array<() => Card | undefined> {
+    const { learner, bundle, rng } = this.d;
+    const units = bundle.course.units.slice(0, this.d.finished ?? 0);
+    const used = new Set<string>();
+    const lanes: Array<Array<{ unit: string; node: NodeId; sentence: string }>> = [];
+    for (const u of units) {
+      const nodes = shuffle([...new Set(u.days.flatMap((d) => d.focus))].filter((n) => /^[gp]:/.test(n) && learner.isIntroduced(n)), rng);
+      const lane: Array<{ unit: string; node: NodeId; sentence: string }> = [];
+      for (const node of nodes) {
+        const ids = this.tiersFor(node)[0].filter((id) => !used.has(id));
+        // seen sentences first: this is about what stuck
+        const seen = ids.filter((id) => learner.ledger.hasSeen('sentence', id));
+        const sentence = [...shuffle(seen, rng), ...shuffle(ids.filter((id) => !seen.includes(id)), rng)][0];
+        if (!sentence) continue;
+        used.add(sentence);
+        lane.push({ unit: u.id, node, sentence });
+      }
+      if (lane.length) lanes.push(lane);
+    }
+    const picked: Array<{ unit: string; node: NodeId; sentence: string }> = [];
+    for (let r = 0; picked.length < CHECKPOINT_MAX && lanes.some((l) => l.length > r); r++) {
+      for (const l of lanes) if (l[r] && picked.length < CHECKPOINT_MAX) picked.push(l[r]);
+    }
+    const ops = ['recombine', 'transform', 'translate'] as const;
+    return picked.map((p, i) => () => this.checkpointCard(p.unit, p.node, p.sentence, ops[i % ops.length]));
+  }
+
+  private checkpointCard(unit: string, node: NodeId, sentence: string, op: 'recombine' | 'transform' | 'translate'): Card {
+    const { learner, bundle } = this.d;
+    const novel = !learner.ledger.hasSeen('sentence', sentence);
+    const credit = [...new Set([node, ...(bundle.index.sentences.get(sentence)?.requires ?? [])])];
+    const item: PracticeItem = { op, id: `check:${++this.seq}:${node}`, scoring: 'exposure', credit, node, sentence, direction: 'productive' };
+    const card = practiceCard(item, bundle, this.d.rng() * 1e9, licensedTenses(learner.nodes(), (id) => bundle.node(id)?.tags));
+    this.lastOp = op;
+    this.cur = {
+      grade: (o) => {
+        const first = o.correct && o.tries <= 1;
+        const row = this.byUnit.get(unit) ?? { right: 0, total: 0 };
+        row.total += 1;
+        if (first) row.right += 1;
+        this.byUnit.set(unit, row);
+        if (!first) this.missed.add(node);
+        learner.expose(credit.filter((n) => learner.isIntroduced(n)), {
+          at: this.d.now(), event: { op: 'checkpoint', direction: 'productive', grade: gradeOf(o), tries: this.tries(o), ms: o.ms, sentence, novel },
+        });
+        this.markSeen(sentence);
       },
     };
     return card;

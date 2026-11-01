@@ -25,6 +25,28 @@ export function sessionLabel(plan: Pick<SessionPlan, 'type' | 'blocks' | 'unit' 
   }
 }
 
+/** A unit day in plain words, for the week map on Home. */
+export function dayWord(type: LessonType): string {
+  switch (type) {
+    case 'introduce': return 'Teach';
+    case 'drill': return 'Practise';
+    case 'input': return 'Story';
+    case 'patterns': return 'Patterns';
+    case 'output': return 'Conversation';
+    case 'review': return 'Catch-up';
+    case 'checkpoint': return 'Check-in';
+  }
+}
+
+/** The week laid out day by day: done, today or still to come, with the grammar point under a teach day. */
+export function weekMap(days: { type: LessonType; focus: string[] }[], current: number, b: Pick<Bundle, 'title'>): { word: string; state: 'done' | 'today' | 'later'; title?: string }[] {
+  return days.map((d, i) => ({
+    word: dayWord(d.type),
+    state: i < current ? 'done' : i === current ? 'today' : 'later',
+    title: d.type === 'introduce' && d.focus[0]?.startsWith('g:') ? lc(b.title(d.focus[0])) : undefined,
+  }));
+}
+
 export function lessonTypeWord(t: LessonType | 'minimum' | undefined): string {
   switch (t) {
     case 'introduce': return 'something new';

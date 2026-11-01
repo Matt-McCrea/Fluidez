@@ -11,8 +11,8 @@
       "npcEn": "Young Tomás, I saw there was a light on. Are you still working at this hour?",
       "intent": "Say yes, you're still working on the list, and ask him with usted to give you a hand.",
       "accept": [
-        "Sí, don Hernando. Sigo con la lista. ¿Me echa una mano?",
-        "Sí, estoy terminando la lista. ¿Me echa una mano, don Hernando?",
+        "Sí, sigo con la lista. ¿Me echa una mano?",
+        "Sí, estoy terminando la lista. ¿Me echa una mano?",
         "Sí. Hay mucho que hacer. ¿Me echa una mano con la lista?"
       ],
       "require": [
@@ -76,7 +76,7 @@
       "intent": "Say no, it ends in November, and you must find Joaquín before it ends.",
       "accept": [
         "No, termina en noviembre. Tenemos que encontrar a Joaquín antes de que termine.",
-        "No, don Hernando. Hay que encontrarlo antes de que termine el contrato.",
+        "No, hay que encontrarlo antes de que termine el contrato.",
         "No, es en noviembre. Debemos hablar con su familia antes de que termine."
       ],
       "require": [
@@ -98,9 +98,9 @@
       "npcEn": "That's what we're here for, young man. And now, would you give me a coffee?",
       "intent": "Say of course, thank him, and tell him the coffee is for him, using usted.",
       "accept": [
-        "Claro, don Hernando. Gracias por todo. El tinto es para usted.",
-        "Por supuesto. Muchas gracias, don Hernando.",
-        "Claro que sí. Gracias por su ayuda, don Hernando."
+        "Claro. Gracias por todo. El tinto es para usted.",
+        "Por supuesto. Muchas gracias.",
+        "Claro que sí. Gracias por su ayuda."
       ],
       "require": [
         {
@@ -204,7 +204,6 @@
     "l:viernes",
     "p:days-el-lunes",
     "p:demonstratives-basic",
-    "p:don-dona-nombre",
     "p:gracias-por",
     "p:indefinites-basic",
     "p:me-te-nos-objects",
@@ -214,7 +213,6 @@
     "p:preguntar-pedir",
     "p:quantifiers-basic",
     "p:saber-conocer",
-    "p:senor-don-article",
     "p:time-sequence-basic",
     "p:ya-todavia-basic"
   ]

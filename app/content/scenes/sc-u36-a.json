@@ -47,8 +47,8 @@
     },
     {
       "id": "t3",
-      "npc": "Vale: Lo que vendo yo es la mitad del dinero que entra. Pero ojo con los gastos.",
-      "npcEn": "Vale: What I sell is half of the money that comes in. But watch the expenses.",
+      "npc": "Vale: Lo que vendo yo es la mitad del dinero que entra. Pero hay que pensar en los gastos.",
+      "npcEn": "Vale: What I sell is half of the money that comes in. But we have to think about the expenses.",
       "intent": "Say that the expenses are higher than the sales, so there is no profit (use a connector).",
       "accept": [
         "Los gastos son más altos que las ventas, por lo tanto no hay ganancia.",
@@ -95,31 +95,30 @@
       "id": "t5",
       "npc": "Vale: Entonces hay que pensar algo. Gracias por quedarte hasta tarde.",
       "npcEn": "Vale: Then we have to think of something. Thanks for staying late.",
-      "intent": "Thank her and say you count on her.",
+      "intent": "Thank her for her help (use gracias por).",
       "accept": [
-        "Gracias a ti. Cuento contigo.",
-        "Cuento contigo, Vale. Gracias por todo.",
-        "Gracias, Vale. Cuento contigo para lo que sigue."
+        "Gracias por tu ayuda, Vale.",
+        "Gracias por todo, Vale. Hasta luego.",
+        "Gracias por la ayuda. Hasta luego."
       ],
       "require": [
         {
-          "type": "containsWord",
-          "word": "contigo",
-          "label": "count on her: cuento contigo"
+          "type": "containsAny",
+          "words": [
+            "gracias por"
+          ],
+          "label": "thank her: gracias por"
         }
       ],
-      "focus": "p:contar-con",
+      "focus": "p:gracias-por",
       "next": null
     }
   ],
   "requires": [
     "c:creo-que",
-    "c:cuenta-conmigo",
     "c:entonces-bueno",
-    "c:gracias-de-nada",
     "c:hay",
     "c:hay-que",
-    "c:ojo",
     "c:oye-mira",
     "c:puedo",
     "g:adjective-agreement",
@@ -134,7 +133,6 @@
     "g:object-pronoun-position",
     "g:parecer-quedar",
     "g:passive-se",
-    "g:prep-pronouns",
     "g:present-ar",
     "g:present-er-ir",
     "g:pret-vs-imperfect",
@@ -146,18 +144,17 @@
     "g:se-impersonal",
     "g:ser-identity",
     "g:stem-boot",
-    "g:stem-e-i",
     "g:superlatives",
     "g:that-clauses",
     "g:verb-infinitive",
     "l:abogado",
     "l:alcanzar",
     "l:alto",
+    "l:ayuda",
     "l:año",
     "l:caja",
     "l:cerrar",
     "l:cifra",
-    "l:contar",
     "l:cosa",
     "l:costar",
     "l:creer",
@@ -177,7 +174,6 @@
     "l:mirar",
     "l:mitad",
     "l:modo",
-    "l:ojo",
     "l:pasado",
     "l:pasar",
     "l:pensar",
@@ -186,7 +182,6 @@
     "l:qué",
     "l:reseña",
     "l:salir",
-    "l:seguir",
     "l:ser",
     "l:tarde",
     "l:vender",
@@ -194,17 +189,15 @@
     "p:demonstratives-basic",
     "p:es-tiene-lleva",
     "p:fracciones-de",
-    "p:gracias-a-por-culpa-de",
     "p:gracias-por",
     "p:indefinites-basic",
     "p:mas-de-lo-que",
     "p:mayor-menor",
-    "p:ojo-con-no-confies",
-    "p:para-inf",
-    "p:por-culpa-de",
+    "p:pensar-en",
+    "p:possessives-basic",
     "p:quantifiers-basic",
-    "p:ten-cuidado-con",
     "p:time-pasado-que-viene",
+    "p:time-sequence-basic",
     "p:viejo-antiguo-mayor"
   ]
 }

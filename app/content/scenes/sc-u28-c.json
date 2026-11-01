@@ -30,29 +30,22 @@
       "id": "t2",
       "npc": "Claro. Primero, ¿qué piensas del plan de Altamira? La gente del barrio opina cosas muy distintas.",
       "npcEn": "Of course. First, what do you think of Altamira's plan? People in the neighbourhood have very different opinions.",
-      "intent": "Say that in general you think it's a bad idea, especially for the old businesses.",
+      "intent": "Say that you think it's a bad idea, because of the old businesses.",
       "accept": [
-        "En general, me parece una mala idea, sobre todo para los negocios viejos.",
-        "En general, creo que es un error, sobre todo para el café.",
-        "En general no estoy a favor, sobre todo por los negocios pequeños."
+        "Me parece una mala idea, porque los negocios viejos van a sufrir.",
+        "Creo que es un error, porque el café es viejo.",
+        "No estoy a favor, porque los negocios pequeños no tienen futuro."
       ],
       "require": [
         {
           "type": "containsAny",
           "words": [
-            "en general"
+            "porque"
           ],
-          "label": "say en general"
-        },
-        {
-          "type": "containsAny",
-          "words": [
-            "sobre todo"
-          ],
-          "label": "add sobre todo"
+          "label": "give a reason with porque"
         }
       ],
-      "focus": "p:sobre-todo",
+      "focus": "c:porque",
       "next": "t3"
     },
     {
@@ -150,6 +143,7 @@
     "g:imperfect-habitual",
     "g:imperfect-states",
     "g:indirect-objects",
+    "g:ir-a-plans",
     "g:lo-adjective",
     "g:parecer-quedar",
     "g:por-para-1",
@@ -206,8 +200,8 @@
     "l:favor",
     "l:foto",
     "l:frase",
+    "l:futuro",
     "l:fácil",
-    "l:general",
     "l:gente",
     "l:hablar",
     "l:hotel",
@@ -215,6 +209,7 @@
     "l:importante",
     "l:inseguridad",
     "l:interesante",
+    "l:ir",
     "l:lado",
     "l:levantarse",
     "l:mala",
@@ -241,6 +236,7 @@
     "l:ser",
     "l:señor",
     "l:solución",
+    "l:sufrir",
     "l:suponer",
     "l:sábado",
     "l:tener",
@@ -255,9 +251,7 @@
     "p:bien-mal-vs-bueno-malo",
     "p:cerca-de",
     "p:days-el-lunes",
-    "p:en-general",
     "p:estar-a-favor-de",
-    "p:focus-adverbs",
     "p:la-gente-singular",
     "p:llevar-traer",
     "p:me-te-nos-objects",
@@ -266,13 +260,10 @@
     "p:para-inf",
     "p:pensar-en",
     "p:por-la-manana",
-    "p:por-lo-general",
     "p:position-de",
     "p:possessives-basic",
     "p:quantifiers-basic",
     "p:que-opinas-de",
-    "p:sobre-todo",
-    "p:sobre-todo-solo",
     "p:time-sequence-basic",
     "p:viejo-antiguo-mayor",
     "p:yo-diria-que"

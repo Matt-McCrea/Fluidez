@@ -11,9 +11,9 @@
       "npcEn": "Hernando: Today we start with the taxi. What do we start with, with what always happened or with what happened once?",
       "intent": "Choose what always happened and describe his usual morning, using the imperfect.",
       "accept": [
-        "Con lo de siempre. Todas las mañanas usted salía a las cinco y recogía a los primeros clientes.",
+        "Con lo que pasaba siempre. Todas las mañanas usted salía a las cinco y recogía a los primeros clientes.",
         "Con lo que pasaba siempre: usted tomaba un tinto en la esquina y empezaba a manejar.",
-        "Empecemos con lo de siempre. Cada mañana usted lavaba el carro antes de salir."
+        "Empecemos con lo que pasaba siempre. Cada mañana usted lavaba el carro antes de salir."
       ],
       "require": [
         {
@@ -226,9 +226,6 @@
     "p:estar-seguro-de-que",
     "p:frequency-scale",
     "p:gracias-por",
-    "p:lo-de",
-    "p:lo-de-noun",
-    "p:lo-de-topic",
     "p:me-duele",
     "p:me-te-nos-objects",
     "p:ordinal-floor",

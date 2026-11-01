@@ -9,18 +9,18 @@
       "id": "t1",
       "npc": "Hernando: Joven, mire esto en el periódico. Dice que el hotel de Altamira estará listo antes de la decisión.",
       "npcEn": "Hernando: Young man, look at this in the newspaper. It says Altamira's hotel will be ready before the decision.",
-      "intent": "Ask whether it is true that the hotel will be ready before the decision (use: ¿Es verdad eso de que…?).",
+      "intent": "Ask whether it is true that the hotel will be ready before the decision (use: ¿Es verdad que…?).",
       "accept": [
-        "¿Es verdad eso de que el hotel estará listo antes de la decisión?",
-        "Don Hernando, ¿es verdad eso de que terminarán el hotel antes de la decisión?",
-        "¿Es cierto eso de que el hotel estará listo tan pronto?"
+        "¿Es verdad que el hotel estará listo antes de la decisión?",
+        "Don Hernando, ¿es verdad que terminarán el hotel antes de la decisión?",
+        "¿Es cierto que el hotel estará listo tan pronto?"
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\bes (verdad|cierto) eso de que\\b",
+          "pattern": "\\bes (verdad|cierto) que\\b",
           "flags": "iu",
-          "label": "check the claim: ¿es verdad eso de que…?"
+          "label": "check the claim: ¿es verdad que…?"
         },
         {
           "type": "question"
@@ -54,18 +54,18 @@
       "id": "t3",
       "npc": "Hernando: ¿Y usted cómo lo sabe?",
       "npcEn": "Hernando: And how do you know?",
-      "intent": "Say that someone told you the building work is going badly (use: Me contaron que).",
+      "intent": "Say that someone told you the building work is going badly (use: Me contó un… que).",
       "accept": [
-        "Me contaron que los obreros llevan una semana sin cemento.",
-        "Me contaron que la obra va muy lenta.",
-        "Me contaron que casi no hay obreros en la obra."
+        "Me contó un obrero que llevan una semana sin cemento.",
+        "Un vecino me contó que la obra va muy lenta.",
+        "Me contó un amigo que casi no hay obreros en la obra."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\bme contaron que\\b",
+          "pattern": "\\bme cont[oó] .*\\bque\\b|\\bcont[oó] que\\b",
           "flags": "iu",
-          "label": "say who told you: me contaron que…"
+          "label": "say who told you: me contó… que…"
         }
       ],
       "focus": "p:me-contaron-que",
@@ -77,9 +77,9 @@
       "npcEn": "Hernando: So Altamira is promising too much. And what do we do in the meantime?",
       "intent": "Say you stay open as long as there is no decision (use: Mientras no + subjunctive).",
       "accept": [
-        "Mientras no haya una decisión, nos quedamos aquí.",
+        "Mientras la ciudad no decida, nos quedamos aquí.",
         "Mientras la ciudad no decida, el café sigue abierto.",
-        "Seguimos aquí mientras no haya una respuesta oficial."
+        "Seguimos abiertos mientras el alcalde no responda."
       ],
       "require": [
         {
@@ -123,6 +123,7 @@
     "c:entonces-bueno",
     "c:gracias-de-nada",
     "c:hay",
+    "c:me-conto-que",
     "c:me-gusta",
     "g:adjective-agreement",
     "g:direct-objects",
@@ -141,16 +142,18 @@
     "g:quantifiers",
     "g:questions",
     "g:reflexive-routine",
+    "g:relative-que",
     "g:se-impersonal",
     "g:ser-identity",
     "g:stem-e-i",
     "g:subj-cuando-future",
-    "g:subj-irregulars",
     "g:subj-wanting",
     "g:that-clauses",
     "g:yo-irregular",
     "l:abrir",
     "l:agradecer",
+    "l:alcalde",
+    "l:amigo",
     "l:antes",
     "l:aquí",
     "l:barrio",
@@ -180,13 +183,12 @@
     "l:mirar",
     "l:obra",
     "l:obrero",
-    "l:oficial",
     "l:periódico",
     "l:prometer",
     "l:pronto",
     "l:quedarse",
     "l:qué",
-    "l:respuesta",
+    "l:responder",
     "l:saber",
     "l:seguir",
     "l:semana",
@@ -195,6 +197,7 @@
     "l:tiempo",
     "l:tinto",
     "l:truco",
+    "l:vecino",
     "l:verdad",
     "p:a-la-vez",
     "p:aqui-ahi-alla",
@@ -202,7 +205,6 @@
     "p:demonstratives-basic",
     "p:don-dona-nombre",
     "p:es-verdad-eso-de-que",
-    "p:eso-de-que",
     "p:llevar-tiempo-gerundio",
     "p:me-contaron-que",
     "p:me-te-nos-objects",
@@ -210,8 +212,6 @@
     "p:quantifiers-basic",
     "p:saber-conocer",
     "p:senor-don-article",
-    "p:si-pero-que",
-    "p:te-lo-agradezco",
-    "p:tengo-entendido-que"
+    "p:te-lo-agradezco"
   ]
 }

@@ -57,6 +57,7 @@ export interface RunnerSnapshot {
   scenes: [string, SceneRun][];
   reads: [string, number][];
   marked: string[];
+  misses?: { node: NodeId; sentence?: string; op: string }[];
   startedAt: number;
 }
 
@@ -79,7 +80,7 @@ export function compilePlan(learner: Learner, bundle: Bundle, ui: UiStore, opts:
 /** Blocks that can go when time is up: nothing here moves the course on. */
 export function softBlock(b: Block): boolean {
   return b.kind === 'personal' || b.kind === 'extraReading' || b.kind === 'leech' || b.kind === 'sceneRerun'
-    || b.kind === 'recap' || (b.kind === 'reread' && b.purpose === 'fluency');
+    || b.kind === 'recap' || (b.kind === 'reread' && (b.purpose === 'fluency' || b.purpose === 'minimum'));
 }
 
 /** Blocks whose cards may be cut short when time is up (each card's content is ledgered as it is shown). */
@@ -135,19 +136,24 @@ export class SessionRunner {
   stopped = false;
   /** hard cap on the session, minutes (default: the plan's budget) */
   capMinutes: number;
+  /** "Only five minutes?": the day is kept for the streak but the full lesson is still offered */
+  readonly quick: boolean;
   /** what the first run of a scene scored, for the timed rerun's comparison */
   readonly scenes = new Map<string, SceneRun>();
   /** seconds the first read of a chapter took in this session */
   readonly reads = new Map<string, number>();
   /** log of what was scored (tests and the close screen's tally) */
   readonly tally = { scored: 0, correct: 0, firstTry: 0 };
+  /** what went wrong today, one row per node, for the close screen */
+  readonly misses: { node: NodeId; sentence?: string; op: string }[] = [];
 
   constructor(
     readonly learner: Learner, readonly bundle: Bundle, readonly ui: UiStore, readonly plan: SessionPlan,
     private readonly now: () => number = Date.now,
-    opts: { capMinutes?: number } = {},
+    opts: { capMinutes?: number; quick?: boolean } = {},
   ) {
     fullLessonOnce = false;
+    this.quick = !!opts.quick;
     this.capMinutes = opts.capMinutes ?? plan.budget?.minutes ?? 20;
   }
 
@@ -168,7 +174,7 @@ export class SessionRunner {
       presented: [...this.presented], notPresented: [...this.notPresented],
       lapses: this.lapses, learnSteps: [...this.learnSteps], learnMisses: [...this.learnMisses], typedOk: [...this.typedOk],
       cardsDone: [...this.cardsDone].map(([b, n]) => [idx(b), n] as [number, number]).filter(([i]) => i >= 0),
-      tally: this.tally, scenes: [...this.scenes], reads: [...this.reads], marked: [...this.marked], startedAt: this.startedAt,
+      tally: this.tally, misses: this.misses, scenes: [...this.scenes], reads: [...this.reads], marked: [...this.marked], startedAt: this.startedAt,
     });
   }
 
@@ -178,7 +184,7 @@ export class SessionRunner {
    * learner session (the saved one is still the learner's current one).
    */
   static resume(learner: Learner, bundle: Bundle, ui: UiStore, saved: SavedSession, now: () => number = Date.now): SessionRunner {
-    const run = new SessionRunner(learner, bundle, ui, saved.plan, now, { capMinutes: saved.capMinutes });
+    const run = new SessionRunner(learner, bundle, ui, saved.plan, now, { capMinutes: saved.capMinutes, quick: saved.plan.tier === 'minimum' && saved.capMinutes <= 5 });
     const s = saved.runner;
     const at = (i: number) => saved.plan.blocks[i];
     s.entered.forEach((i) => at(i) && run.entered.add(at(i)));
@@ -191,6 +197,7 @@ export class SessionRunner {
     s.typedOk.forEach(([n, c]) => run.typedOk.set(n, c));
     s.cardsDone.forEach(([i, c]) => at(i) && run.cardsDone.set(at(i), c));
     Object.assign(run.tally, s.tally);
+    if (s.misses) run.misses.push(...s.misses);
     s.scenes.forEach(([k, v]) => run.scenes.set(k, v));
     s.reads.forEach(([k, v]) => run.reads.set(k, v));
     s.marked.forEach((k) => run.marked.add(k));
@@ -208,6 +215,9 @@ export class SessionRunner {
   }
 
   // ---------------------------------------------------------------- time
+
+  /** A soft block that may be dropped for time: never the recap while something was missed. */
+  skippable(b: Block): boolean { return softBlock(b) && !(b.kind === 'recap' && this.lapses.length > 0); }
 
   /** Minutes since the session started. */
   elapsed(): number { return this.started ? Math.max(0, (this.now() - this.startedAt) / 60_000) : 0; }
@@ -330,7 +340,7 @@ export class SessionRunner {
     if (!this.inScore) this.bump();
     this.present(node, productive);
     this.learnSteps.set(node, (this.learnSteps.get(node) ?? 0) + 1);
-    if (!o.correct) this.learnMisses.add(node);
+    if (!o.correct) { this.learnMisses.add(node); this.noteMiss(node, op); }
     else if (typed) this.typedOk.set(node, (this.typedOk.get(node) ?? 0) + 1);
     if (!this.learner.isLearning(node)) {
       this.learner.expose(credit, { at: this.now(), event: { op, grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms } });
@@ -354,8 +364,17 @@ export class SessionRunner {
     try { this.scoreItem(item, o); } finally { this.inScore = false; }
   }
 
+  private noteMiss(node: NodeId, op: string, sentence?: string): void {
+    if (this.misses.length >= 12 || this.misses.some((m) => m.node === node)) return;
+    this.misses.push({ node, sentence, op });
+  }
+
   private scoreItem(item: Item, o: Outcome): void {
     this.noteLapse(item, o);
+    if (!o.correct) {
+      const sid = 'sentence' in item ? item.sentence : undefined;
+      this.noteMiss(item.node, eventOp(item), sid ? this.bundle.sentence(sid)?.es : undefined);
+    }
     this.tally.scored++;
     if (o.correct) this.tally.correct++;
     if (o.correct && o.tries <= 1) this.tally.firstTry++;
@@ -424,7 +443,8 @@ export class SessionRunner {
     // push the close past the cap.
     const secondsPerCard = Math.max(SECONDS.recap, this.learner.secondsPerReview());
     const left = Math.max(0, this.capMinutes - this.elapsed());
-    const capacity = Math.min(block.capacity, Math.floor((left * 60) / secondsPerCard));
+    // over budget, a short recap of what was missed still beats none: those misses are tomorrow's lapses otherwise
+    const capacity = Math.max(Math.min(block.capacity, Math.floor((left * 60) / secondsPerCard)), Math.min(3, this.lapses.length));
     block.items = capacity > 0 ? planRecap({
       learner: this.learner, bundle: this.bundle, capacity, lapses: this.lapses, newItems, steps: this.learnSteps,
       misses: this.learnMisses, typedOk: this.typedOk,
@@ -487,7 +507,7 @@ export class SessionRunner {
     }
     const path = carryOwed(advancePath(this.ui.path, this.plan, true), [...this.notPresented]);
     this.finished = true;
-    await this.ui.commitSession(this.learner, path, this.learner.day(this.now()));
+    await this.ui.commitSession(this.learner, path, this.learner.day(this.now()), this.quick ? { quick: true } : undefined);
     await this.ui.clearSession();
     return path;
   }
@@ -507,7 +527,7 @@ export class SessionRunner {
     const path = stoppedPath(this.ui.path, this.plan, g);
     this.finished = true;
     this.stopped = true;
-    await this.ui.commitSession(this.learner, path, this.learner.day(this.now()));
+    await this.ui.commitSession(this.learner, path, this.learner.day(this.now()), this.quick ? { quick: true } : undefined);
     await this.ui.clearSession();
     return path;
   }

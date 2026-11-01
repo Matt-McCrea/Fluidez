@@ -14,7 +14,7 @@ function play(w: World, run: SessionRunner, from: number, to: number, walk: Walk
   for (let i = from; i < Math.min(to, blocks.length); i++) {
     const b = blocks[i];
     if (b.kind === 'close') break;
-    if (softBlock(b) && run.overBudget()) { run.skip(b); continue; }
+    if (run.skippable(b) && run.overBudget()) { run.skip(b); continue; }
     if (b.kind === 'recap' && !run.openRecap(b)) continue;
     if (truncatable(b)) run.enter(b); else run.blockShown(b);
     runBlock(b, run, 'right', walk);

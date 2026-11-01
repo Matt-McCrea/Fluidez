@@ -1,0 +1,706 @@
+[
+  {
+    "id": "u58-t-ser-estar-c1-0001",
+    "es": "¿Estás de mesero o de dueño en el café?",
+    "en": "Are you working as a waiter or as the owner at the café? (to a friend, a man)",
+    "accept": [
+      "¿Estás de dueño o de mesero en el café?"
+    ],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:café",
+      "l:dueño",
+      "l:estar",
+      "l:mesero"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "question",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0002",
+    "es": "¿De qué material es tu mesa?",
+    "en": "What is your table made of? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:material",
+      "l:mesa",
+      "l:qué",
+      "l:ser",
+      "p:possessives-basic",
+      "p:prep-questions-basic",
+      "p:ser-de-material"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "question",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0003",
+    "es": "¿Estás para bromas hoy?",
+    "en": "Are you in the mood for jokes today? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "l:broma",
+      "l:estar",
+      "l:hoy",
+      "p:para-inf"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "question",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0004",
+    "es": "¿Quién está de jefe esta semana?",
+    "en": "Who is acting as boss this week?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:questions",
+      "l:estar",
+      "l:jefe",
+      "l:quién",
+      "l:semana",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "question",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0005",
+    "es": "¿Qué cosas están por pasar esta semana?",
+    "en": "What things are about to happen this week?",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:por-para-1",
+      "g:questions",
+      "l:cosa",
+      "l:estar",
+      "l:pasar",
+      "l:qué",
+      "l:semana",
+      "p:demonstratives-basic",
+      "p:estar-por"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "question",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0006",
+    "es": "¿Tu casa es de madera o de cemento?",
+    "en": "Is your house made of wood or of cement? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:casa",
+      "l:cemento",
+      "l:madera",
+      "l:ser",
+      "p:estar-hecho-de",
+      "p:possessives-basic",
+      "p:ser-de-material"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "question",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0007",
+    "es": "¿Estás de vacaciones esta semana?",
+    "en": "Are you on vacation this week? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "l:estar",
+      "l:semana",
+      "l:vacación",
+      "p:demonstratives-basic"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "question",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0008",
+    "es": "¿Estás para salir hoy?",
+    "en": "Are you in the mood to go out today? (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "l:estar",
+      "l:hoy",
+      "l:salir",
+      "p:para-inf",
+      "p:para-inf-purpose"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "question",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0009",
+    "es": "Mi hermano está de profesor en Cali este año.",
+    "en": "My brother is working as a teacher in Cali this year.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "l:año",
+      "l:estar",
+      "l:hermano",
+      "l:profesor",
+      "p:demonstratives-basic",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0010",
+    "es": "Simón está de vigilante en la puerta del café.",
+    "en": "Simón is acting as the guard at the café door.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:café",
+      "l:estar",
+      "l:puerta",
+      "l:vigilante"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0011",
+    "es": "Esa silla es de plástico, pero la mesa es de madera.",
+    "en": "That chair is made of plastic, but the table is made of wood.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:madera",
+      "l:mesa",
+      "l:plástico",
+      "l:ser",
+      "l:silla",
+      "p:estar-hecho-de",
+      "p:ser-de-material"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0012",
+    "es": "Mi anillo es de plata, no de oro.",
+    "en": "My ring is made of silver, not gold.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:anillo",
+      "l:oro",
+      "l:plata",
+      "l:ser",
+      "p:estar-hecho-de",
+      "p:possessives-basic",
+      "p:ser-de-material"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0013",
+    "es": "Hoy no estoy para fiestas, estoy muy cansado.",
+    "en": "I'm not in the mood for parties today, I'm very tired. (a man speaking)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "l:cansado",
+      "l:estar",
+      "l:fiesta",
+      "l:hoy",
+      "p:no-estar-para",
+      "p:para-inf",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0014",
+    "es": "Vale está de mesera en Cartagena por unos meses.",
+    "en": "Vale is working as a waitress in Cartagena for a few months.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:por-para-1",
+      "l:estar",
+      "l:mes",
+      "l:mesero"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0015",
+    "es": "La sopa está por servir.",
+    "en": "The soup is about to be served.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:por-para-1",
+      "l:estar",
+      "l:servir",
+      "l:sopa",
+      "p:estar-por"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0016",
+    "es": "Está por llover, mejor llevo el paraguas.",
+    "en": "It's about to rain, I'd better take the umbrella.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:por-para-1",
+      "g:present-ar",
+      "l:estar",
+      "l:llevar",
+      "l:llover",
+      "l:mejor",
+      "l:paraguas",
+      "p:estar-por"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0017",
+    "es": "Tomás está por cerrar el café.",
+    "en": "Tomás is about to close the café.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:por-para-1",
+      "l:café",
+      "l:cerrar",
+      "l:estar",
+      "p:estar-por"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0018",
+    "es": "Ese trabajo está por terminar.",
+    "en": "That job is about to be finished.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:estar-location-states",
+      "g:por-para-1",
+      "l:estar",
+      "l:terminar",
+      "l:trabajo",
+      "p:estar-por"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0019",
+    "es": "La puerta del café es de vidrio.",
+    "en": "The café door is made of glass.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:café",
+      "l:puerta",
+      "l:ser",
+      "l:vidrio",
+      "p:estar-hecho-de",
+      "p:ser-de-material"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0020",
+    "es": "Hernando fue taxista, pero ahora está de mesero.",
+    "en": "Hernando was a taxi driver, but now he's working as a waiter.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:preterite-ser-ir-hacer",
+      "g:ser-identity",
+      "l:ahora",
+      "l:estar",
+      "l:mesero",
+      "l:ser",
+      "l:taxista",
+      "p:ser-profession-no-article"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0021",
+    "es": "Hernando no está para consejos después de ese torneo.",
+    "en": "Hernando is not in the mood for advice after that tournament.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:demonstratives",
+      "g:estar-location-states",
+      "l:consejo",
+      "l:después",
+      "l:estar",
+      "l:torneo",
+      "p:para-inf",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0022",
+    "es": "Esta mesa está por limpiar.",
+    "en": "This table is still to be cleaned.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:por-para-1",
+      "l:estar",
+      "l:limpiar",
+      "l:mesa",
+      "p:demonstratives-basic",
+      "p:estar-por"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0023",
+    "es": "La decisión está por tomar.",
+    "en": "The decision is still to be made.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:por-para-1",
+      "l:decisión",
+      "l:estar",
+      "l:tomar",
+      "p:estar-por"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0024",
+    "es": "Que Tomás vuelva a Toronto está por verse.",
+    "en": "Whether Tomás goes back to Toronto remains to be seen.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:object-pronoun-position",
+      "g:por-para-1",
+      "g:se-impersonal",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "l:estar",
+      "l:ver",
+      "l:volver",
+      "p:estar-por"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0025",
+    "es": "¿Es de plata?\nSí, es de plata.",
+    "en": "Is it made of silver?\nYes, it's made of silver.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "l:plata",
+      "l:ser",
+      "p:estar-hecho-de",
+      "p:ser-de-material"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "dialogue",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0026",
+    "es": "¿Y tu hermano?\nEstá de cocinero en Bogotá.",
+    "en": "And your brother?\nHe's working as a cook in Bogotá.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "l:cocinero",
+      "l:estar",
+      "l:hermano",
+      "p:possessives-basic"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "dialogue",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0027",
+    "es": "¿Quién paga?\nLa cuenta está por pagar.",
+    "en": "Who's paying?\nThe bill is still to be paid.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:la-cuenta",
+      "g:estar-location-states",
+      "g:por-para-1",
+      "g:present-ar",
+      "g:questions",
+      "l:cuenta",
+      "l:estar",
+      "l:pagar",
+      "l:quién",
+      "p:estar-por"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "dialogue",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0028",
+    "es": "¿Vamos a bailar?\nNo estoy para fiestas.",
+    "en": "Shall we go dancing?\nI'm not in the mood for parties.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:vamos-a",
+      "g:estar-location-states",
+      "g:ir-a-plans",
+      "l:bailar",
+      "l:estar",
+      "l:fiesta",
+      "l:ir",
+      "p:no-estar-para",
+      "p:para-inf"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "dialogue",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0029",
+    "es": "¿Va a llover?\nSí, está por llover.",
+    "en": "Is it going to rain?\nYes, it's about to rain.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:ir-a-plans",
+      "g:por-para-1",
+      "l:estar",
+      "l:ir",
+      "l:llover",
+      "p:estar-por"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "dialogue",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0030",
+    "es": "¿Ya llegó Rosa?\nEstá por llegar.",
+    "en": "Has Rosa arrived yet?\nShe's about to arrive.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:por-para-1",
+      "g:preterite-ar",
+      "l:estar",
+      "l:llegar",
+      "p:estar-por"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "dialogue",
+    "unit": "u58",
+    "theme": "ser y estar en los bordes",
+    "source": "gen"
+  }
+]
