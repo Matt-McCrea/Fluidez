@@ -136,9 +136,12 @@ export class Freeplay {
   /** Record the outcome of the card `next()` just returned. */
   answer(o: Outcome): void {
     if (!this.cur) return;
-    this.answered += 1;
-    if (o.correct && o.tries <= 1) this.right += 1;
-    else if (o.correct && o.tries === 2) this.retried += 1;
+    // a card that asked for no answer is not an answer: nothing for the score
+    if (!o.exposure) {
+      this.answered += 1;
+      if (o.correct && o.tries <= 1) this.right += 1;
+      else if (o.correct && o.tries === 2) this.retried += 1;
+    }
     this.cur.grade(o);
     this.cur = undefined;
   }
@@ -238,6 +241,8 @@ export class Freeplay {
     this.lastOp = 'quick';
     this.cur = {
       grade: (o) => {
+        // a bare read card: shown, not asked, so the card stays as it was
+        if (o.exposure) { learner.expose([node], { at: this.d.now() }); return; }
         const grade = gradeOf(o);
         const opts = { at: this.d.now(), ms: o.ms, op: 'quick', tries: this.tries(o), sentence, novel };
         if (!learner.hasCard(node, dir)) return;

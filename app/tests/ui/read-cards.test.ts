@@ -9,6 +9,7 @@ import type { Bundle } from '../../src/ui/data/bundle';
 import { ContentLoader } from '../../src/ui/data/loader';
 import { readOutcome } from '../../src/ui/components/card';
 import { reviewCard } from '../../src/ui/session/cards';
+import { Freeplay } from '../../src/ui/session/freeplay';
 import { SessionRunner } from '../../src/ui/session/runner';
 import { MemoryKV, UiStore } from '../../src/ui/store/ui';
 
@@ -80,6 +81,24 @@ describe('a read-only card is an exposure, never a grade', () => {
     const before = w.learner.card('g:ser-identity', 'receptive');
     w.run.scoreRecap({ id: 'recap:g:ser-identity:receptive', kind: 'lapsed', node: 'g:ser-identity', direction: 'receptive', credit: ['g:ser-identity'] }, readOutcome(900));
     expect(w.learner.card('g:ser-identity', 'receptive')).toEqual(before);
+  });
+
+  it('a read card in Quick review leaves the due card as it was and is not an answer', async () => {
+    const node = [...bundle.course.nodes.values()].find((n) => n.kind === 'contrast' && !bundle.segments(n.id).length && !bundle.index.byTarget.get(n.id)?.length && !bundle.index.byRequire.get(n.id)?.length);
+    expect(node, 'some A1 node has nothing to ask at all').toBeTruthy();
+    const w = await world();
+    w.learner.introduce(node!.id, { results: [true, true, true] });
+    w.clock.t += 30 * DAY;
+    const fp = new Freeplay({ kind: 'quickReview' }, { learner: w.learner, bundle, rng: () => 0.5, now: w.now });
+    const card = fp.next()!;
+    expect(card.type).toBe('read');
+    const before = { card: w.learner.card(node!.id, 'receptive'), events: w.learner.events().length, exposures: w.learner.node(node!.id)!.exposures };
+    fp.answer(readOutcome(900));
+    expect(w.learner.card(node!.id, 'receptive'), 'no Good on a card nobody answered').toEqual(before.card);
+    expect(w.learner.events().length).toBe(before.events);
+    expect(w.learner.node(node!.id)!.exposures).toBe(before.exposures + 1);
+    expect(fp.answered, 'the score counts answers').toBe(0);
+    expect(fp.right).toBe(0);
   });
 
   it('a read card in the learn pool is not a retrieval: no step is counted for the node', async () => {
