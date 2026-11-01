@@ -15466,7 +15466,7 @@
     "requires": [
       "c:porque",
       "g:cause-result",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:preterite-ar",
       "g:ser-identity",
@@ -15489,7 +15489,7 @@
     "acceptEn": [],
     "requires": [
       "g:comparatives",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:present-ar",
       "l:año",
       "l:caminar",
@@ -15510,7 +15510,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:ser-identity",
       "g:superlatives",
@@ -15623,7 +15623,7 @@
     "acceptEn": [],
     "requires": [
       "c:mas-o-menos",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:ser-identity",
       "l:ser",
@@ -15665,7 +15665,7 @@
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "l:estar",
       "l:siempre",
@@ -27982,7 +27982,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:imperfect-states",
       "g:ser-identity",
@@ -28234,7 +28234,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:stem-boot",
       "l:año",

@@ -24015,7 +24015,7 @@
     "acceptEn": [],
     "requires": [
       "c:me-puede-ayudar",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:ser-identity",
       "g:that-clauses",
       "g:verb-infinitive",
@@ -24110,7 +24110,7 @@
     "acceptEn": [],
     "requires": [
       "c:puedo",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:ser-identity",
       "g:stem-boot",
       "g:that-clauses",
@@ -24157,7 +24157,7 @@
     "acceptEn": [],
     "requires": [
       "c:tienes",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:ser-identity",
       "g:stem-boot",
       "g:that-clauses",
@@ -24218,7 +24218,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:present-er-ir",
       "g:ser-identity",
       "g:that-clauses",
@@ -24243,7 +24243,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:ser-identity",
       "l:ser",
@@ -24265,7 +24265,7 @@
     "acceptEn": [],
     "requires": [
       "c:mas-o-menos",
-      "g:future-promises",
+      "g:future-conjecture",
       "l:año",
       "l:tener",
       "p:tener-anos"
@@ -24284,7 +24284,7 @@
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "l:dormir",
       "l:estar",
       "p:ya-todavia-basic"
@@ -24303,7 +24303,7 @@
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:preterite-er-ir",
       "g:questions",
       "g:ser-identity",
@@ -24328,7 +24328,7 @@
     "acceptEn": [],
     "requires": [
       "c:mas-o-menos",
-      "g:imperfect-states",
+      "g:future-conjecture",
       "l:afuera",
       "l:persona"
     ],
@@ -24370,7 +24370,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:preterite-ar",
       "g:ser-identity",
       "g:that-clauses",
@@ -24391,7 +24391,7 @@
     "acceptEn": [],
     "requires": [
       "c:me-imagino",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:that-clauses",
       "l:frío",
       "l:imaginarse",
@@ -24459,7 +24459,7 @@
     "acceptEn": [],
     "requires": [
       "g:conditional",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:ser-identity",
       "g:that-clauses",
@@ -24485,7 +24485,7 @@
     "acceptEn": [],
     "requires": [
       "c:me-imagino",
-      "g:imperfect-states",
+      "g:future-conjecture",
       "g:that-clauses",
       "l:cambio",
       "l:imaginarse"
@@ -24546,7 +24546,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:present-er-ir",
       "g:ser-identity",
@@ -24643,7 +24643,7 @@
     "acceptEn": [],
     "requires": [
       "g:estar-gerund",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "l:bus",
       "l:esperar",
@@ -24686,7 +24686,7 @@
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "l:estar",
       "l:finca"
@@ -24706,7 +24706,7 @@
     "requires": [
       "g:demonstratives",
       "g:estar-gerund",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "l:estar",
       "l:hora",
@@ -24749,7 +24749,7 @@
     "requires": [
       "c:donde-esta",
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "l:dónde",
       "l:estar",
@@ -24770,7 +24770,7 @@
     "acceptEn": [],
     "requires": [
       "c:mas-o-menos",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:ser-identity",
       "l:ser",
@@ -24790,7 +24790,7 @@
     "acceptEn": [],
     "requires": [
       "g:estar-gerund",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "l:dormir",
       "l:estar",

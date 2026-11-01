@@ -20493,7 +20493,7 @@
     "acceptEn": [],
     "requires": [
       "c:es-que",
-      "g:imperfect-states",
+      "g:future-promises",
       "g:lo-adjective",
       "l:gente",
       "l:mañana",

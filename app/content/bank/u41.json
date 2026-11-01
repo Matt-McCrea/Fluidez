@@ -6598,7 +6598,7 @@
     "acceptEn": [],
     "requires": [
       "c:ojala",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:imperfect-subj",
       "g:ser-identity",
       "l:fácil",

@@ -22624,8 +22624,8 @@
     "acceptEn": [],
     "requires": [
       "c:tienes",
+      "g:future-conjecture",
       "g:gender-articles",
-      "g:imperfect-states",
       "g:that-clauses",
       "l:asamblea",
       "l:conocimiento",
@@ -23793,8 +23793,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:future-promises",
       "g:gender-articles",
-      "g:imperfect-states",
       "g:relative-que",
       "g:se-impersonal",
       "g:si-present",

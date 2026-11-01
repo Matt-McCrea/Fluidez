@@ -3471,8 +3471,8 @@
     "acceptEn": [],
     "requires": [
       "c:ya-no",
+      "g:future-promises",
       "g:gender-articles",
-      "g:imperfect-states",
       "g:subj-cuando-future",
       "g:subj-wanting",
       "l:decidir",

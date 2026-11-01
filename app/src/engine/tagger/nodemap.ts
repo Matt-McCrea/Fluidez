@@ -51,6 +51,7 @@ export const DEFAULT_NODE_MAP: Readonly<Record<string, NodeId | null>> = {
   'tense.imperfecto': 'g:imperfect-habitual',
   'tense.imperfecto.state': 'g:imperfect-states',
   'tense.futuro': 'g:future-promises',
+  'tense.futuro.conjecture': 'g:future-conjecture',   // guessing about now: ¿Dónde estará? Serán las tres.
   'tense.condicional': 'g:conditional',
   // ---- compounds ----
   'tense.perfecto': 'g:perfecto-experience',
@@ -228,6 +229,8 @@ export const DEFAULT_NODE_MAP: Readonly<Record<string, NodeId | null>> = {
   // ---- time, haber ----
   'hay': 'g:hay-vs-esta',
   'hay.tense': 'g:imperfect-states',
+  'hay.futuro': 'g:future-promises',                  // habrá sol mañana
+  'hay.futuro.conjecture': 'g:future-conjecture',     // ¿habrá alguien a esta hora?
   'time.hace': 'g:hace-ago',
   'time.hace-que': 'g:hace-que-desde',
   // ---- non-finite ----

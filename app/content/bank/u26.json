@@ -10959,8 +10959,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:future-promises",
       "g:gender-articles",
-      "g:imperfect-states",
       "l:dentro",
       "l:día",
       "l:noticias",

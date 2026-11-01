@@ -7,7 +7,7 @@
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:questions",
       "l:dónde",
       "l:estar",
@@ -16,7 +16,7 @@
       "p:question-word-order"
     ],
     "targets": [
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "question",
     "unit": "u20",
@@ -31,12 +31,12 @@
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "l:estar",
       "p:senor-don-article"
     ],
     "targets": [
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "statement",
     "unit": "u20",
@@ -52,7 +52,7 @@
     "requires": [
       "c:no-se",
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:questions",
       "g:yo-irregular",
@@ -63,7 +63,7 @@
       "p:question-word-order"
     ],
     "targets": [
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "dialogue",
     "unit": "u20",
@@ -125,6 +125,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:future-conjecture",
       "g:future-promises",
       "l:buscar",
       "l:comida",
@@ -148,14 +149,14 @@
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "l:atrás",
       "l:calle",
       "l:estar"
     ],
     "targets": [
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "statement",
     "unit": "u20",
@@ -170,7 +171,7 @@
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:stem-e-i",
       "g:that-clauses",
@@ -180,7 +181,7 @@
       "l:gato"
     ],
     "targets": [
-      "g:future-promises",
+      "g:future-conjecture",
       "l:gato"
     ],
     "kind": "statement",
@@ -313,7 +314,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:present-er-ir",
       "l:saber",
       "l:siempre",
@@ -322,7 +323,7 @@
       "p:saber-conocer"
     ],
     "targets": [
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "statement",
     "unit": "u20",
@@ -337,14 +338,14 @@
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "l:casa",
       "l:estar",
       "l:hora",
       "p:demonstratives-basic"
     ],
     "targets": [
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "statement",
     "unit": "u20",
@@ -358,7 +359,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:ser-identity",
       "l:ser",
@@ -367,7 +368,7 @@
       "p:telling-time"
     ],
     "targets": [
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "statement",
     "unit": "u20",
@@ -383,7 +384,7 @@
     "requires": [
       "c:mas-o-menos",
       "c:que-hora-es",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:ser-identity",
       "l:hora",
@@ -392,7 +393,7 @@
       "p:telling-time"
     ],
     "targets": [
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "dialogue",
     "unit": "u20",
@@ -406,7 +407,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:present-ar",
       "g:ser-identity",
@@ -415,7 +416,7 @@
       "p:telling-time"
     ],
     "targets": [
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "statement",
     "unit": "u20",
@@ -430,7 +431,7 @@
     "acceptEn": [],
     "requires": [
       "c:trabajo-en",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "l:panadería",
       "l:tener",
@@ -438,7 +439,7 @@
       "p:quantifiers-basic"
     ],
     "targets": [
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "statement",
     "unit": "u20",
@@ -453,14 +454,14 @@
     "acceptEn": [],
     "requires": [
       "g:estar-gerund",
-      "g:future-promises",
+      "g:future-conjecture",
       "l:artículo",
       "l:escribir",
       "l:estar",
       "p:possessives-basic"
     ],
     "targets": [
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "statement",
     "unit": "u20",
@@ -474,7 +475,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "l:abrigo",
       "l:frío",
       "l:tener",
@@ -482,7 +483,7 @@
       "p:tener-hambre"
     ],
     "targets": [
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "statement",
     "unit": "u20",
@@ -496,7 +497,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:questions",
       "l:año",
       "l:cuánto",
@@ -504,7 +505,7 @@
       "p:tener-anos"
     ],
     "targets": [
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "question",
     "unit": "u20",
@@ -518,13 +519,13 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "l:año",
       "l:tener",
       "p:tener-anos"
     ],
     "targets": [
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "statement",
     "unit": "u20",
@@ -540,7 +541,7 @@
     "requires": [
       "g:adjective-agreement",
       "g:demonstratives",
-      "g:future-promises",
+      "g:future-conjecture",
       "l:caja",
       "l:cosa",
       "l:tener",
@@ -548,7 +549,7 @@
       "p:viejo-antiguo-mayor"
     ],
     "targets": [
-      "g:future-promises",
+      "g:future-conjecture",
       "l:caja"
     ],
     "kind": "statement",
@@ -565,7 +566,7 @@
     "requires": [
       "c:donde-esta",
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "l:dónde",
       "l:estar",
@@ -574,7 +575,7 @@
       "p:saber-conocer"
     ],
     "targets": [
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "statement",
     "unit": "u20",
@@ -590,7 +591,7 @@
     "requires": [
       "c:donde-esta",
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "l:cocina",
       "l:dónde",
@@ -598,7 +599,7 @@
       "p:question-word-order"
     ],
     "targets": [
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "dialogue",
     "unit": "u20",
@@ -635,7 +636,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:present-ar",
       "g:questions",
       "g:ser-identity",
@@ -647,7 +648,7 @@
       "p:personal-a"
     ],
     "targets": [
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "dialogue",
     "unit": "u20",
@@ -686,8 +687,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:future-promises",
       "g:gender-articles",
-      "g:imperfect-states",
       "l:gente",
       "l:plaza",
       "l:tarde",
@@ -708,8 +709,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:future-conjecture",
       "g:gender-articles",
-      "g:imperfect-states",
       "l:hora",
       "l:oficina",
       "p:demonstratives-basic",
@@ -728,8 +729,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:future-conjecture",
       "g:gender-articles",
-      "g:imperfect-states",
       "g:negation-words",
       "l:edificio"
     ],
@@ -1556,7 +1557,7 @@
     "acceptEn": [],
     "requires": [
       "c:puede-ser",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:present-ar",
       "g:ser-identity",
       "l:hora",
@@ -1570,7 +1571,7 @@
     ],
     "targets": [
       "c:puede-ser",
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "dialogue",
     "unit": "u20",
@@ -1668,7 +1669,7 @@
     "acceptEn": [],
     "requires": [
       "c:puede-ser",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:por-para-1",
       "g:ser-identity",
@@ -1678,7 +1679,7 @@
     ],
     "targets": [
       "c:puede-ser",
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "dialogue",
     "unit": "u20",
@@ -2257,8 +2258,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:future-promises",
       "g:gender-articles",
-      "g:imperfect-states",
       "l:mañana",
       "l:sol",
       "l:zona"
@@ -3101,8 +3102,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:future-conjecture",
       "g:gender-articles",
-      "g:imperfect-states",
       "g:questions",
       "g:stem-e-i",
       "l:decir",
@@ -3129,6 +3130,7 @@
     "requires": [
       "c:creo-que",
       "g:estar-location-states",
+      "g:future-conjecture",
       "g:future-promises",
       "g:gender-articles",
       "g:questions",
@@ -3569,8 +3571,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:future-promises",
       "g:gender-articles",
-      "g:imperfect-states",
       "l:mañana",
       "l:sur",
       "l:viento"
@@ -3640,7 +3642,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:imperfect-states",
+      "g:future-promises",
       "l:fuerte",
       "l:lluvia",
       "l:noche",
@@ -3780,8 +3782,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:future-promises",
       "g:gender-articles",
-      "g:imperfect-states",
       "l:granizo",
       "l:mañana",
       "l:tarde",
@@ -4083,7 +4085,7 @@
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
-      "g:imperfect-states",
+      "g:future-promises",
       "l:lleno",
       "l:luna",
       "l:mañana"
@@ -4380,8 +4382,8 @@
     "acceptEn": [],
     "requires": [
       "c:a-lo-mejor",
+      "g:future-promises",
       "g:gender-articles",
-      "g:imperfect-states",
       "g:quizas-a-lo-mejor",
       "l:domingo",
       "l:mejor",
@@ -7723,8 +7725,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:future-promises",
       "g:gender-articles",
-      "g:imperfect-states",
       "l:año",
       "l:obra",
       "l:ruido",
@@ -11108,7 +11110,7 @@
     "requires": [
       "c:puede-ser",
       "c:voy-a",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:ir-a-plans",
       "g:ser-identity",
       "l:ir",
@@ -11118,7 +11120,7 @@
     ],
     "targets": [
       "c:puede-ser",
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "dialogue",
     "unit": "u20",
@@ -11276,7 +11278,7 @@
     "acceptEn": [],
     "requires": [
       "c:te-lo-prometo",
-      "g:imperfect-states",
+      "g:future-promises",
       "l:mañana",
       "l:pan",
       "l:prometer"
@@ -11917,7 +11919,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:imperfect-states",
+      "g:future-promises",
       "l:tarde",
       "l:trueno",
       "p:demonstratives-basic"
@@ -14278,7 +14280,7 @@
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:questions",
       "l:dónde",
       "l:estar",
@@ -14287,7 +14289,7 @@
       "p:question-word-order"
     ],
     "targets": [
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "question",
     "unit": "u20",
@@ -14302,7 +14304,7 @@
     "acceptEn": [],
     "requires": [
       "g:estar-gerund",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:questions",
       "l:ahora",
       "l:estar",
@@ -14310,7 +14312,7 @@
       "l:qué"
     ],
     "targets": [
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "question",
     "unit": "u20",
@@ -14325,7 +14327,7 @@
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:questions",
       "g:ser-identity",
@@ -14336,7 +14338,7 @@
       "p:question-word-order"
     ],
     "targets": [
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "question",
     "unit": "u20",
@@ -14350,7 +14352,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:questions",
       "l:costar",
       "l:cuánto",
@@ -14360,7 +14362,7 @@
       "p:question-word-order"
     ],
     "targets": [
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "question",
     "unit": "u20",
@@ -14398,14 +14400,14 @@
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "l:abrir",
       "l:banco",
       "l:estar"
     ],
     "targets": [
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "question",
     "unit": "u20",
@@ -14419,13 +14421,13 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "l:llave",
       "l:tener"
     ],
     "targets": [
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "question",
     "unit": "u20",
@@ -14459,7 +14461,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:questions",
       "g:reflexive-routine",
@@ -14469,7 +14471,7 @@
       "l:socio"
     ],
     "targets": [
-      "g:future-promises",
+      "g:future-conjecture",
       "l:socio"
     ],
     "kind": "question",
@@ -14509,14 +14511,14 @@
     "requires": [
       "c:donde-esta",
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "l:dónde",
       "l:estar",
       "l:saber",
       "p:saber-conocer"
     ],
     "targets": [
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "question",
     "unit": "u20",
@@ -14530,8 +14532,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:future-conjecture",
       "g:gender-articles",
-      "g:imperfect-states",
       "l:hoy",
       "l:plaza",
       "l:turista"
@@ -14570,7 +14572,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:questions",
       "l:año",
       "l:cuánto",
@@ -14578,7 +14580,7 @@
       "p:tener-anos"
     ],
     "targets": [
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "question",
     "unit": "u20",
@@ -14657,8 +14659,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:future-promises",
       "g:gender-articles",
-      "g:imperfect-states",
       "l:domingo",
       "l:sol",
       "p:days-el-lunes"
@@ -15019,13 +15021,14 @@
   },
   {
     "id": "u20-0650",
-    "es": "¿Tendrás tiempo para hablar?",
-    "en": "Will you have time to talk? (to a friend)",
+    "es": "¿Tendrás tiempo mañana para hablar?",
+    "en": "Will you have time tomorrow to talk? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
       "l:hablar",
+      "l:mañana",
       "l:tener",
       "l:tiempo",
       "p:para-inf",
@@ -15235,8 +15238,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:future-conjecture",
       "g:gender-articles",
-      "g:imperfect-states",
       "g:questions",
       "l:cuánto",
       "l:fiesta",
@@ -15671,7 +15674,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:relatives-donde-lo-que",
       "g:ser-identity",
@@ -15682,7 +15685,7 @@
       "l:verdad"
     ],
     "targets": [
-      "g:future-promises",
+      "g:future-conjecture",
       "l:pronóstico"
     ],
     "kind": "question",
@@ -16472,7 +16475,7 @@
     "requires": [
       "c:donde-esta",
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "l:abogado",
       "l:dónde",
@@ -16480,7 +16483,7 @@
       "p:question-word-order"
     ],
     "targets": [
-      "g:future-promises",
+      "g:future-conjecture",
       "l:abogado"
     ],
     "kind": "dialogue",
@@ -16496,7 +16499,7 @@
     "acceptEn": [],
     "requires": [
       "c:que-hora-es",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:ser-identity",
       "l:hora",
@@ -16505,7 +16508,7 @@
       "p:telling-time"
     ],
     "targets": [
-      "g:future-promises"
+      "g:future-conjecture"
     ],
     "kind": "dialogue",
     "unit": "u20",
@@ -16622,7 +16625,7 @@
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:preterite-ar",
       "g:questions",
@@ -16634,7 +16637,7 @@
       "p:question-word-order"
     ],
     "targets": [
-      "g:future-promises",
+      "g:future-conjecture",
       "l:caja",
       "l:plano"
     ],
@@ -16650,6 +16653,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:future-conjecture",
       "g:future-promises",
       "g:gender-articles",
       "g:questions",
@@ -18034,7 +18038,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:imperfect-states",
+      "g:future-conjecture",
       "g:questions",
       "l:cliente",
       "l:cuánto",
@@ -18679,7 +18683,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "l:frío",
       "l:hacer",
@@ -18688,7 +18692,7 @@
       "p:quantifiers-basic"
     ],
     "targets": [
-      "g:future-promises",
+      "g:future-conjecture",
       "l:páramo"
     ],
     "kind": "dialogue",

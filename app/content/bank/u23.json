@@ -1794,7 +1794,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:preterite-spelling-stem",
       "g:questions",
       "g:ser-identity",
@@ -9536,7 +9536,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:indefinites",
       "l:fiesta",

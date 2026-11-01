@@ -1864,7 +1864,7 @@
     "acceptEn": [],
     "requires": [
       "g:comparative-advanced-c1",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:gustar-full",
       "g:present-ar",
@@ -12038,8 +12038,8 @@
     "requires": [
       "g:consecutive-advanced",
       "g:estar-location-states",
+      "g:future-conjecture",
       "g:gender-articles",
-      "g:imperfect-states",
       "g:por-para-1",
       "l:café",
       "l:consiguiente",
@@ -12587,8 +12587,8 @@
     "requires": [
       "g:adjective-agreement",
       "g:consecutive-advanced",
+      "g:future-conjecture",
       "g:gender-articles",
-      "g:imperfect-states",
       "g:por-para-1",
       "g:stem-boot",
       "g:that-clauses",

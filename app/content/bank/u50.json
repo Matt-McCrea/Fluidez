@@ -12333,7 +12333,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:imperfect-states",
+      "g:future-conjecture",
       "g:indirect-objects",
       "g:stem-boot",
       "g:that-clauses",
@@ -37682,8 +37682,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:future-promises",
       "g:gender-articles",
-      "g:imperfect-states",
       "g:present-ar",
       "g:si-present",
       "l:comprar",
@@ -44543,7 +44543,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:por-para-1",
       "g:questions",

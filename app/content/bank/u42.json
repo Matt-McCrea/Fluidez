@@ -23928,8 +23928,8 @@
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
+      "g:future-promises",
       "g:gender-articles",
-      "g:imperfect-states",
       "g:imperfect-subj",
       "g:indirect-questions",
       "g:softening",
@@ -33282,7 +33282,7 @@
     "acceptEn": [],
     "requires": [
       "c:me-puede-ayudar",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:ser-identity",
       "g:that-clauses",
@@ -33405,7 +33405,7 @@
     "acceptEn": [],
     "requires": [
       "g:conditional",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:ser-identity",
       "g:that-clauses",
@@ -33527,7 +33527,7 @@
     "acceptEn": [],
     "requires": [
       "c:me-puede-ayudar",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:ser-identity",
       "g:that-clauses",
@@ -33655,7 +33655,7 @@
     "requires": [
       "g:adjective-agreement",
       "g:conditional",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:ser-identity",
       "g:superlatives",
@@ -33771,7 +33771,7 @@
     "acceptEn": [],
     "requires": [
       "c:me-puede-ayudar",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:ser-identity",
       "g:that-clauses",
       "g:verb-infinitive",

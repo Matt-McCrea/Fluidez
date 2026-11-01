@@ -2069,7 +2069,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:object-pronoun-position",
       "g:questions",
@@ -23814,7 +23814,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:imperfect-states",
+      "g:future-promises",
       "g:that-clauses",
       "l:ensayo",
       "l:mañana",
@@ -31109,7 +31109,7 @@
       "g:adjective-agreement",
       "g:cause-result",
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:present-ar",
       "g:ser-identity",

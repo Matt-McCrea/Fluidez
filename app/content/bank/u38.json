@@ -11169,8 +11169,8 @@
     "acceptEn": [],
     "requires": [
       "g:causal-advanced",
+      "g:future-promises",
       "g:gender-articles",
-      "g:imperfect-states",
       "g:indirect-questions",
       "g:present-er-ir",
       "l:clase",
@@ -11803,7 +11803,7 @@
     "requires": [
       "c:me-gustaria",
       "g:conditional",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:indirect-questions",
       "l:consecuencia",
       "l:gustar",
@@ -15742,7 +15742,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:questions",
       "l:dónde",
@@ -25194,7 +25194,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:passive-ser",
       "l:aprobar",

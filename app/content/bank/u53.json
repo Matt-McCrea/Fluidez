@@ -12506,7 +12506,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:imperfect-states",
+      "g:future-conjecture",
       "g:stem-boot",
       "l:mantener",
       "l:postura",
@@ -15003,7 +15003,7 @@
     "requires": [
       "g:aunque-indicative",
       "g:direct-objects",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:present-ar",
       "g:present-er-ir",
@@ -20862,7 +20862,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:imperfect-states",
+      "g:future-promises",
       "l:cuenta",
       "l:rendición",
       "l:vez",
@@ -23970,7 +23970,7 @@
     "requires": [
       "g:conditional",
       "g:direct-objects",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:por-para-1",
       "g:present-ar",
@@ -26088,7 +26088,7 @@
     "acceptEn": [],
     "requires": [
       "c:todavia-no",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:negation-words",
       "g:present-ar",
@@ -26172,7 +26172,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:present-ar",
       "l:año",
@@ -26312,7 +26312,7 @@
     "requires": [
       "c:mas-o-menos",
       "c:que-hora-es",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:ser-identity",
       "l:hora",
@@ -26335,7 +26335,7 @@
     "requires": [
       "c:donde-esta",
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:gerund-ways",
       "l:comprar",
@@ -33191,7 +33191,7 @@
     "acceptEn": [],
     "requires": [
       "c:o-sea",
-      "g:imperfect-states",
+      "g:future-conjecture",
       "g:reformulation",
       "g:stem-boot",
       "g:that-clauses",

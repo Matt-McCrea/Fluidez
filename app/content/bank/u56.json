@@ -291,7 +291,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:present-er-ir",
       "g:that-clauses",
@@ -2201,7 +2201,7 @@
     "requires": [
       "c:tarde-o-temprano",
       "g:demonstratives",
-      "g:imperfect-states",
+      "g:future-conjecture",
       "g:that-clauses",
       "l:hacer",
       "l:tarde",
@@ -9567,8 +9567,8 @@
     "acceptEn": [],
     "requires": [
       "c:tarde-o-temprano",
+      "g:future-conjecture",
       "g:gender-articles",
-      "g:imperfect-states",
       "g:present-ar",
       "g:that-clauses",
       "l:acuerdo",
@@ -16741,8 +16741,8 @@
     "acceptEn": [],
     "requires": [
       "c:tarde-o-temprano",
+      "g:future-conjecture",
       "g:gender-articles",
-      "g:imperfect-states",
       "g:that-clauses",
       "l:afrontar",
       "l:problema",
@@ -17918,6 +17918,7 @@
     "requires": [
       "g:adjective-agreement",
       "g:aunque-indicative",
+      "g:future-conjecture",
       "g:future-promises",
       "g:gender-articles",
       "l:ahorrar",
@@ -24450,8 +24451,8 @@
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
+      "g:future-conjecture",
       "g:gender-articles",
-      "g:imperfect-states",
       "g:relatives-prepositions",
       "g:subj-relative",
       "g:subj-wanting",
@@ -32679,8 +32680,8 @@
     "acceptEn": [],
     "requires": [
       "c:tarde-o-temprano",
+      "g:future-conjecture",
       "g:gender-articles",
-      "g:imperfect-states",
       "g:that-clauses",
       "l:cambiar",
       "l:raíz",

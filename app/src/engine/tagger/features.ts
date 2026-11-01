@@ -431,6 +431,46 @@ function refineTrigger(key: string, tense: string, words: Word[], t: Trigger): s
   return k;
 }
 
+/* ---- future of conjecture --------------------------------------------------
+ * "¿Dónde estará Simón? Serán las tres. Tendrá unos sesenta años." The future
+ * tense guessing about the present (g:future-conjecture) rather than promising
+ * or predicting (g:future-promises). A guess is a stative verb in the future
+ * with no forward-looking time cue in its sentence: estar, tener (not tener
+ * que), saber, existential haber, costar/valer, weather hacer, and ser when it
+ * tells the time or opens the clause ("Será Hernando", "¿Quién será?").
+ * Authored targets stay the authority; this only decides which node the form
+ * requires. */
+const CONJ_STATIVE = S('estar tener saber haber costar valer conocer llamarse');
+const WEATHER_NOUN = S('frío calor sol viento fresco grados tiempo');
+const SER_GUESS_NEXT = S('el la los las por que él ella ellos ellas usted ustedes verdad eso esto ese esa este esta aquel aquella');
+const HOUR_WORD = S('una dos tres cuatro cinco seis siete ocho nueve diez once doce');
+const SER_Q = S('quién quiénes qué cuál cuáles');
+const FUTURE_CUE = new RegExp(String.raw`\b(?:mañana|luego|después|pronto|próxim[oa]s?|que viene|entrante|dentro de|algún día|nunca|jamás|hasta|antes de|cuando|cuándo|si|tod[oa] (?:el|la)|est[ae] (?:noche|tarde|semana|verano|invierno|año|mes|fin de semana|vez)|el (?:lunes|martes|miércoles|jueves|viernes|sábado|domingo)|en (?:enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|\d+|un|una|unos|unas|dos|tres|cinco|diez|veinte|media|pocos|poco))\b`);
+
+function isConjecture(words: Word[], i: number, lemma: string, person = ''): boolean {
+  const bare = bareOf(lemma);
+  // a first-person future is a plan or a promise, not a guess: estaré en casa, no tendré todo listo
+  if (person === 'yo' || person === 'nosotros') return false;
+  if (FUTURE_CUE.test(sentenceText(words, i).toLowerCase())) return false;
+  const nx = words[i + 1]?.w;
+  if (bare === 'tener' && nx === 'que') return false;
+  if (CONJ_STATIVE.has(bare) || CONJ_STATIVE.has(lemma)) return true;
+  if (bare === 'hacer') return [1, 2].some((k) => WEATHER_NOUN.has(words[i + k]?.w ?? ''));
+  if (bare !== 'ser') return false;
+  if ((nx === 'las' || nx === 'la') && HOUR_WORD.has(words[i + 2]?.w ?? '')) return true;
+  if (nx === 'como' && (words[i + 2]?.w === 'las' || words[i + 2]?.w === 'la')) return true;
+  // ser opening the clause, or right after a question word: ¿Será Simón? Será Hernando. ¿Quién será?
+  // (but not an opening prediction: Será un día soleado.)
+  const [ss] = sentenceBounds(words, i);
+  let j = i - 1;
+  while (j >= ss && words[j].punct) j--;
+  const opener = j < ss || (SER_Q.has(words[j].w) && (() => { let k = j - 1; while (k >= ss && words[k].punct) k--; return k < ss; })());
+  if (!opener) return false;
+  const next = words[i + 1];
+  if (!next || next.punct) return true;
+  return insideQuestion(words, i) || SER_GUESS_NEXT.has(next.w) || /^[A-ZÁÉÍÓÚÑ]/.test(next.text);
+}
+
 /* ---- the verb pass -------------------------------------------------------- */
 const INDIC: TenseKey[] = ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional'];
 const SUBJ: TenseKey[] = ['presubj', 'impsubj', 'impsubjse', 'futsubj'];
@@ -562,11 +602,12 @@ function verbPass(ctx: FeatureCtx): void {
       }
       const a = rs.find((x) => bareOf(x.inf) === bareOf(w.lemma)) ?? rs[0];
       if (w.lemma === 'haber') { // existential había / hubo / habrá
-        add(ctx, 'hay.tense', i, i, { lemma: 'haber' });
+        add(ctx, t === 'futuro' ? (isConjecture(words, i, 'haber') ? 'hay.futuro.conjecture' : 'hay.futuro') : 'hay.tense', i, i, { lemma: 'haber' });
         continue;
       }
       const cls = formClass(w.lemma, t, a.person, a.form);
-      add(ctx, `tense.${t}.${cls}`, i, i, { lemma: w.lemma });
+      const conj = t === 'futuro' && isConjecture(words, i, w.lemma, a.person);
+      add(ctx, `tense.${t}${conj ? '.conjecture' : ''}.${cls}`, i, i, { lemma: w.lemma });
       if (bareOf(w.lemma) === 'haber' || w.lemma === 'haber') continue;
       // cuando + indicative (habitual / past): informative
       const [ss] = sentenceBounds(words, i);

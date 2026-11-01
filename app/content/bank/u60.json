@@ -4809,8 +4809,8 @@
     "acceptEn": [],
     "requires": [
       "c:claro-listo",
+      "g:future-conjecture",
       "g:gender-articles",
-      "g:imperfect-states",
       "g:preterite-ser-ir-hacer",
       "g:ser-identity",
       "g:superlatives",
@@ -34023,7 +34023,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:ser-identity",
       "l:acierto",

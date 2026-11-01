@@ -5469,7 +5469,7 @@
       "c:imaginate",
       "g:adjective-agreement",
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:lo-adjective",
       "g:lo-que-intensity",
@@ -12926,7 +12926,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:present-ar",
       "l:edificio",
@@ -18042,7 +18042,7 @@
     "acceptEn": [],
     "requires": [
       "g:adverbs-mente",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:prep-pronouns",
       "l:barrio",
       "l:conocer",
@@ -35808,7 +35808,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:prep-pronouns",
       "g:present-er-ir",
@@ -35876,7 +35876,7 @@
     "requires": [
       "c:voy-a",
       "g:cause-result",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:indirect-objects",
       "g:indirect-questions",

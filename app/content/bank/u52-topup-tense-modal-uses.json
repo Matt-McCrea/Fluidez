@@ -155,7 +155,7 @@
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "l:café",
       "l:estar",
@@ -177,7 +177,7 @@
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:questions",
       "l:ahora",
       "l:dónde",
@@ -403,7 +403,7 @@
     "requires": [
       "c:donde-esta",
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "l:café",
       "l:dónde",
@@ -541,7 +541,7 @@
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:questions",
       "l:celular",
@@ -564,7 +564,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:questions",
       "l:año",
@@ -590,7 +590,7 @@
     "requires": [
       "g:adjective-agreement",
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:stem-boot",
       "l:cansado",
       "l:estar",
@@ -735,7 +735,7 @@
     "requires": [
       "c:mas-o-menos",
       "c:que-hora-es",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:ser-identity",
       "l:hora",

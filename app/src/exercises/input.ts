@@ -97,7 +97,11 @@ function tenseItem(s: BankSentence, opts: InputOptions): ReadAndPickItem | null 
     const r = changeTense(c, t);
     if (r) ds.push(r.es);
   }
-  return make(s, 'tense', tense, stripped, ds, TENSE_Q[tense]!, `"${c.toks[c.verb].core}" ${TENSE_WHY[tense]}.`, opts);
+  // the future of conjecture is a guess about now, not something to come: Serán las dos.
+  const guess = tense === 'futuro' && s.targets.includes('g:future-conjecture');
+  const q = guess ? 'Which one is a guess about right now?' : TENSE_Q[tense]!;
+  const why = guess ? `"${c.toks[c.verb].core}" is a guess about now, not a plan.` : `"${c.toks[c.verb].core}" ${TENSE_WHY[tense]}.`;
+  return make(s, 'tense', tense, stripped, ds, q, why, opts);
 }
 
 // ---- person --------------------------------------------------------------------

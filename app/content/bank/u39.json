@@ -18809,7 +18809,7 @@
     "acceptEn": [],
     "requires": [
       "c:creo-que",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:relatives-donde-lo-que",
       "g:ser-identity",
       "g:stem-e-i",

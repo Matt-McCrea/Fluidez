@@ -29378,7 +29378,7 @@
       "c:creo-que",
       "c:puede-que-me-equivoque",
       "g:adjective-agreement",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:ser-identity",
       "g:that-clauses",
@@ -38062,7 +38062,7 @@
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "l:hora",
       "l:lucha",

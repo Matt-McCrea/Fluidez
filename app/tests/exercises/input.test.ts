@@ -60,6 +60,15 @@ describe('tense', () => {
     for (const o of it.options) expect(o).not.toMatch(/ayer/i);
     expect(it.question).toMatch(/already happened/);
   });
+  test('the future of conjecture is asked as a guess about now, not as the future', () => {
+    const guess = BankSentence.parse({ id: 'x-guess', es: 'Serán las dos de la tarde.', en: 'It must be about two in the afternoon.', targets: ['g:future-conjecture'] });
+    const it = structuredInput(guess, 'tense', { maxDistractors: 3 })!;
+    expect(right(it)).toBe('Serán las dos de la tarde.');
+    expect(it.question).toMatch(/guess about right now/);
+    expect(it.why).toMatch(/guess about now/);
+    const plain = structuredInput(S('Mañana lloverá en Bogotá.', 'Tomorrow it will rain in Bogotá.'), 'tense')!;
+    expect(plain.question).toMatch(/will happen/);
+  });
   test('distractors are engine forms of the same verb', () => {
     const it = structuredInput(byId('u01-1'), 'tense', { maxDistractors: 3 })!;
     expect(new Set(it.options)).toEqual(new Set(['Como pescado.', 'Comí pescado.', 'Comeré pescado.']));

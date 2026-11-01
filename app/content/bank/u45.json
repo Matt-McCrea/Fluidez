@@ -404,8 +404,8 @@
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
+      "g:future-conjecture",
       "g:gender-articles",
-      "g:imperfect-states",
       "g:se-impersonal",
       "l:carretera",
       "l:carro",
@@ -476,7 +476,7 @@
     "requires": [
       "g:adjective-agreement",
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:preterite-ar",
       "g:verb-infinitive",
@@ -500,8 +500,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:future-conjecture",
       "g:gender-articles",
-      "g:imperfect-states",
       "g:preterite-er-ir",
       "l:hora",
       "l:pasado",
@@ -563,7 +563,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:imperfect-states",
+      "g:future-conjecture",
       "g:passive-se",
       "l:confundido",
       "l:dirección"
@@ -626,8 +626,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:future-conjecture",
       "g:gender-articles",
-      "g:imperfect-states",
       "g:questions",
       "l:concejal",
       "l:pasado",
@@ -1272,8 +1272,8 @@
     "requires": [
       "c:a-cuantas-cuotas",
       "g:estar-participle",
+      "g:future-conjecture",
       "g:future-perfect",
-      "g:future-promises",
       "g:gender-articles",
       "l:cerrar",
       "l:estar",
@@ -1374,6 +1374,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:future-conjecture",
       "g:future-promises",
       "g:gender-articles",
       "g:questions",
@@ -1423,7 +1424,7 @@
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:questions",
       "l:año",
       "l:cuánto",
@@ -1445,7 +1446,7 @@
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:questions",
       "l:ahora",
       "l:dónde",
@@ -1466,7 +1467,7 @@
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:questions",
       "g:ser-identity",
       "l:mujer",
@@ -1488,7 +1489,7 @@
     "acceptEn": [],
     "requires": [
       "g:estar-participle",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "l:abrir",
       "l:estar",
@@ -1527,7 +1528,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "l:año",
       "l:tener",
       "p:tener-anos"
@@ -1546,7 +1547,7 @@
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "l:centro",
       "l:estar",
@@ -1566,7 +1567,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "l:costar",
       "p:costar-pagar"
@@ -1603,8 +1604,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:future-conjecture",
       "g:gender-articles",
-      "g:imperfect-states",
       "l:persona",
       "l:sala",
       "p:aproximar-cifras",
@@ -1627,7 +1628,7 @@
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "l:dueño",
       "l:estar",
@@ -1648,7 +1649,7 @@
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:object-pronoun-position",
       "l:buena",
@@ -1674,7 +1675,7 @@
     "acceptEn": [],
     "requires": [
       "g:estar-gerund",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "l:afuera",
       "l:cliente",
@@ -6039,7 +6040,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:imperfect-states",
+      "g:future-promises",
       "g:ser-identity",
       "g:that-clauses",
       "l:mañana",
@@ -7331,7 +7332,7 @@
     "acceptEn": [],
     "requires": [
       "c:es-que",
-      "g:imperfect-states",
+      "g:future-promises",
       "g:superlatives",
       "l:mañana",
       "l:pan",
@@ -8306,7 +8307,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "l:habitación",
       "l:hotel",
@@ -11499,7 +11500,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:imperfect-states",
+      "g:future-conjecture",
       "g:subj-cuando-future",
       "g:subj-irregulars",
       "l:periodista",
@@ -12408,8 +12409,8 @@
     "acceptEn": [],
     "requires": [
       "c:creo-que",
+      "g:future-promises",
       "g:gender-articles",
-      "g:imperfect-states",
       "g:that-clauses",
       "l:audiencia",
       "l:creer",
@@ -12667,7 +12668,7 @@
     "acceptEn": [],
     "requires": [
       "c:quien-sabe",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:preterite-ar",
       "g:ser-identity",
@@ -12722,7 +12723,7 @@
     "requires": [
       "c:quien-sabe",
       "c:ya-veremos",
-      "g:imperfect-states",
+      "g:future-conjecture",
       "l:oferta",
       "l:quién",
       "l:saber",
@@ -15905,8 +15906,8 @@
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
+      "g:future-promises",
       "g:gender-articles",
-      "g:imperfect-states",
       "g:stem-e-i",
       "g:that-clauses",
       "l:decir",
@@ -19520,7 +19521,7 @@
     "acceptEn": [],
     "requires": [
       "c:ni-idea",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:preterite-ar",
       "g:relatives-donde-lo-que",
       "l:firmar",
@@ -20578,7 +20579,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:ser-identity",
       "g:that-clauses",
@@ -21517,7 +21518,7 @@
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:imperfect-states",
       "g:object-pronoun-position",
@@ -23245,7 +23246,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:preterite-ar",
       "g:that-clauses",
@@ -23987,7 +23988,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "l:cerca",
       "l:habitación",
@@ -26687,8 +26688,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:future-conjecture",
       "g:gender-articles",
-      "g:imperfect-states",
       "g:subj-cuando-future",
       "g:subj-wanting",
       "l:existir",
@@ -27232,7 +27233,7 @@
     "acceptEn": [],
     "requires": [
       "g:comparatives-advanced",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:that-clauses",
       "l:costar",
@@ -27614,7 +27615,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:stem-e-i",
       "g:that-clauses",
@@ -28263,8 +28264,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:future-promises",
       "g:gender-articles",
-      "g:imperfect-states",
       "g:se-impersonal",
       "g:stem-e-i",
       "g:that-clauses",
@@ -29438,7 +29439,7 @@
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:stem-boot",
       "l:entender",
       "l:razón",

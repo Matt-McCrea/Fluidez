@@ -80,7 +80,7 @@
     "acceptEn": [],
     "requires": [
       "c:me-puede-ayudar",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:ser-identity",
       "g:that-clauses",
@@ -185,7 +185,7 @@
     "acceptEn": [],
     "requires": [
       "c:me-puede-ayudar",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:ser-identity",
       "g:that-clauses",
@@ -361,7 +361,7 @@
     "acceptEn": [],
     "requires": [
       "c:me-puede-ayudar",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:ser-identity",
       "g:that-clauses",
@@ -455,7 +455,7 @@
     "acceptEn": [],
     "requires": [
       "c:me-puede-ayudar",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:ser-identity",
       "g:that-clauses",
       "g:verb-infinitive",
@@ -729,7 +729,7 @@
     "acceptEn": [],
     "requires": [
       "c:me-puede-ayudar",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:ser-identity",
       "g:that-clauses",
@@ -777,7 +777,7 @@
     "acceptEn": [],
     "requires": [
       "c:me-puede-ayudar",
-      "g:future-promises",
+      "g:future-conjecture",
       "g:gender-articles",
       "g:ser-identity",
       "g:that-clauses",
