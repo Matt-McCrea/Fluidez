@@ -1,0 +1,36 @@
+# Typecheck, tests, content gate and build for the TypeScript app in app/, on
+# every push to `next` and on every pull request. Deployment lives in the
+# fluidez-next repo and is not touched here.
+name: CI
+
+on:
+  push:
+    branches: [next]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  app:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run gate
+      - run: npm run build
