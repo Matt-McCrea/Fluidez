@@ -11,7 +11,7 @@ import { compact, emptyLog, readEvents, type EventLog, type ReviewEvent } from '
 import { Ledger } from './ledger';
 import { fromCard, makeScheduler, newCard, Rating, State, toCard, type Grade } from './scheduler';
 import {
-  dayKey, DIRECTIONS, emptyState, migrate, StoredDocumentError, STATE_VERSION,
+  dayKey, DIRECTIONS, emptyState, migrate, salvage, StoredDocumentError, STATE_VERSION,
   type CardJSON, type Direction, type LearnerState, type NodeRecord, type Settings,
 } from './state';
 import type { LearnerStore } from './store';
@@ -185,9 +185,10 @@ export class Learner {
    * Load (and migrate) the learner from a store, or start fresh. A document a
    * newer build wrote is never worked around or written over: this throws a
    * StoredDocumentError. A damaged state falls back to the store's one-step
-   * backup (the damaged copy is kept beside it); a damaged event log is kept
-   * aside and the learner opens with an empty one. Before the first migration
-   * of a version, the document is copied once, as it was.
+   * backup, or failing that keeps all it can read (`salvage`), with the damaged
+   * copy kept beside it; a damaged event log is kept aside and the learner opens
+   * with an empty one. Before the first migration of a version, the document is
+   * copied once, as it was.
    */
   static async open(store: LearnerStore, opts: LearnerOptions = {}): Promise<Learner> {
     const read = await Learner.readState(store);
@@ -222,7 +223,9 @@ export class Learner {
    * The stored state, migrated, with the version it was stored at; undefined if
    * there is none. A newer document throws. A damaged one is kept beside the
    * store's one-step backup and the backup is read instead (`healed`: the
-   * caller must write it back); with no usable backup the damage is thrown.
+   * caller must write it back). With no clean backup, the damage is usually in
+   * both (a bad value stays in every later save), so whatever can be read is
+   * kept; only a document with nothing to salvage is thrown.
    */
   private static async readState(store: LearnerStore): Promise<{ raw: unknown; state: LearnerState; version: number; healed: boolean } | undefined> {
     const raw = await store.load();
@@ -231,11 +234,24 @@ export class Learner {
       if (!(e instanceof StoredDocumentError) || e.fault === 'newer') throw e;
       await store.quarantine?.('state', raw);
       const prev = await store.loadPrevious?.();
-      if (prev === undefined) throw e;
-      console.warn(`fluidez: the saved state could not be read (${e.detail}); using the copy from before the last save`);
-      try { return { raw: prev, state: migrate(prev), version: versionOf(prev), healed: true }; } catch (e2) {
-        throw e2 instanceof StoredDocumentError && e2.fault === 'newer' ? e2 : e;
+      if (prev !== undefined) {
+        try {
+          const state = migrate(prev);
+          console.warn(`fluidez: the saved state could not be read (${e.detail}); using the copy from before the last save`);
+          return { raw: prev, state, version: versionOf(prev), healed: true };
+        } catch (e2) {
+          if (e2 instanceof StoredDocumentError && e2.fault === 'newer') throw e2;
+        }
       }
+      for (const doc of [raw, prev]) {
+        if (doc === undefined) continue;
+        try {
+          const state = salvage(doc);
+          console.warn(`fluidez: the saved state could not be read (${e.detail}); keeping everything but the damaged cards`);
+          return { raw: doc, state, version: versionOf(doc), healed: true };
+        } catch { /* nothing to keep in this one */ }
+      }
+      throw e;
     }
   }
 

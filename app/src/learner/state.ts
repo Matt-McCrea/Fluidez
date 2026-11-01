@@ -3,6 +3,7 @@
 // survives JSON, structuredClone and IndexedDB unchanged. The Learner class
 // (learner.ts) is the only code that mutates it; LearnerStore persists it.
 import type { NodeId } from '../content/schema';
+import { newCard } from './scheduler';
 
 export const STATE_VERSION = 2;
 
@@ -145,20 +146,25 @@ export class StoredDocumentError extends Error {
 
 const isObject = (x: unknown): x is Record<string, unknown> => !!x && typeof x === 'object' && !Array.isArray(x);
 
-/** The first thing wrong with a migrated state that would break the code that reads it, or undefined. A small hand-written guard, not a schema. */
-function stateProblem(s: any): string | undefined {
+/** The first thing wrong with what holds a migrated state together, or undefined. Nothing can be read without these. */
+function containerProblem(s: any): string | undefined {
   if (!isObject(s.settings)) return 'settings is not an object';
   if (!isObject(s.nodes)) return 'nodes is not an object';
   if (!isObject(s.ledger) || LEDGER_KINDS.some((k) => !isObject(s.ledger[k]))) return 'ledger is not a table per kind';
   if (!isObject(s.session) || typeof s.session.index !== 'number') return 'session has no index';
   if (!isObject(s.timing) || DIRECTIONS.some((d) => !isObject(s.timing[d]))) return 'timing is not a total per direction';
+  return undefined;
+}
+
+const cardDamaged = (c: unknown): boolean => !isObject(c) || !Number.isFinite(c.due) || !Number.isFinite(c.stability) || !Number.isFinite(c.state);
+
+/** The first thing wrong with a migrated state that would break the code that reads it, or undefined. A small hand-written guard, not a schema. */
+function stateProblem(s: any): string | undefined {
+  const problem = containerProblem(s);
+  if (problem) return problem;
   for (const [id, r] of Object.entries<any>(s.nodes)) {
     if (!isObject(r)) return `node ${id} is not an object`;
-    for (const d of DIRECTIONS) {
-      const c = r[d];
-      if (c === undefined) continue;
-      if (!isObject(c) || !Number.isFinite(c.due) || !Number.isFinite(c.stability) || !Number.isFinite(c.state)) return `node ${id} has a damaged ${d} card`;
-    }
+    for (const d of DIRECTIONS) if (r[d] !== undefined && cardDamaged(r[d])) return `node ${id} has a damaged ${d} card`;
   }
   return undefined;
 }
@@ -169,6 +175,36 @@ function stateProblem(s: any): string | undefined {
  * write over it), `unreadable` when it is not a state at all.
  */
 export function migrate(raw: unknown): LearnerState {
+  const s = upgrade(raw);
+  const problem = stateProblem(s);
+  if (problem) throw new StoredDocumentError('unreadable', 'state', problem);
+  return s;
+}
+
+/**
+ * The last resort, when a state is damaged and no clean copy is left. A value a
+ * bug wrote into one card is in every save after it, the one-step backup too,
+ * and one card must not cost a learner the rest. A damaged card starts again as
+ * a new card, a node that is not a node is dropped, and everything else is kept.
+ * Throws as `migrate` does when what holds the document together is gone. The
+ * caller must keep the damaged document aside first.
+ */
+export function salvage(raw: unknown): LearnerState {
+  const s = upgrade(raw);
+  const problem = containerProblem(s);
+  if (problem) throw new StoredDocumentError('unreadable', 'state', problem);
+  for (const [id, r] of Object.entries<any>(s.nodes)) {
+    if (!isObject(r)) { delete s.nodes[id]; continue; }
+    for (const d of DIRECTIONS) {
+      if (r[d] === undefined || !cardDamaged(r[d])) continue;
+      const suspended = (r[d] as { suspended?: unknown } | null)?.suspended === true;
+      r[d] = { ...newCard(Number.isFinite(r.introducedAt) ? r.introducedAt as number : Date.now()), ...(suspended ? { suspended } : {}) };
+    }
+  }
+  return s;
+}
+
+function upgrade(raw: unknown): any {
   if (!isObject(raw)) throw new StoredDocumentError('unreadable', 'state', 'not an object');
   let s: any = structuredClone(raw);
   let v: number = typeof s.version === 'number' ? s.version : 0;
@@ -197,9 +233,7 @@ export function migrate(raw: unknown): LearnerState {
   } catch (e) {
     throw new StoredDocumentError('unreadable', 'state', (e as Error).message);
   }
-  const problem = stateProblem(s);
-  if (problem) throw new StoredDocumentError('unreadable', 'state', problem);
-  return s as LearnerState;
+  return s;
 }
 
 /** Local calendar day, shifted so that 01:00 still counts as "yesterday". */

@@ -6,10 +6,11 @@
 import { afterEach, describe, expect, test, vi } from 'vitest';
 import { initialPath } from '../../src/compiler';
 import {
-  EVENTS_VERSION, IdbStore, Learner, MemoryStore, NEWER_DOCUMENT, STATE_VERSION, StoredDocumentError, UNREADABLE_DOCUMENT,
+  EVENTS_VERSION, IdbStore, Learner, MemoryStore, migrate, NEWER_DOCUMENT, Rating, State, STATE_VERSION, StoredDocumentError, UNREADABLE_DOCUMENT,
   type LearnerState,
 } from '../../src/learner';
-import { emptyUi, MemoryKV, PATH_KEY, UI_KEY, UiStore } from '../../src/ui/store/ui';
+import { provenBackup } from '../../src/learner/backup';
+import { BACKUP_READERS, emptyUi, MemoryKV, migratePath, migrateUi, PATH_KEY, UI_KEY, UI_VERSION, UiStore } from '../../src/ui/store/ui';
 import { clock } from './helpers';
 
 afterEach(() => { vi.restoreAllMocks(); });
@@ -131,16 +132,163 @@ describe('a state that is damaged', () => {
     }
   });
 
-  test('damaged ui and path documents are unreadable, and kept aside', async () => {
+});
+
+// Before: a bad value in one card was in the state and in its one-step backup
+// (a value a bug writes stays in every later save), so boot refused the whole
+// learner, for good: no fallback, no Start over, and a backup of it would be
+// refused too. Each of these documents opened before the guard was added.
+describe('damage that reached every copy', () => {
+  const twoCards = () => {
+    const L = Learner.fresh({ now: clock().now });
+    L.introduce('l:bad', { results: [true, true, true] });
+    L.introduce('l:good', { results: [true, true, true] });
+    L.startSession();
+    return L.toJSON();
+  };
+  const spoiled = () => { const s = twoCards(); s.nodes['l:bad'].receptive!.stability = Number.NaN; return s; };
+  const kvWith = async (state: unknown, prev?: unknown) => {
     const kv = new MemoryKV();
-    await kv.set(UI_KEY, { ...emptyUi('mine'), saved: 'nope' });
+    await kv.set('state', state);
+    if (prev !== undefined) await kv.set('state.prev', prev);
+    return kv;
+  };
+
+  test('costs the damaged card, not the learner', async () => {
+    vi.spyOn(console, 'warn').mockImplementation(() => {});
+    const kv = await kvWith(spoiled(), spoiled());
+    const L = await Learner.open(new IdbStore(kv));
+    expect(L.sessionIndex).toBe(1);
+    expect(L.nodes().sort()).toEqual(['l:bad', 'l:good']);
+    expect(L.card('l:good', 'receptive')).toEqual(twoCards().nodes['l:good'].receptive);
+    expect(L.card('l:bad', 'receptive')).toMatchObject({ state: State.New, reps: 0, stability: 0 });
+  });
+
+  test('the card that started again can be reviewed', async () => {
+    vi.spyOn(console, 'warn').mockImplementation(() => {});
+    const L = await Learner.open(new IdbStore(await kvWith(spoiled(), spoiled())));
+    const at = Date.now();
+    expect(L.due(at).map((d) => d.node)).toContain('l:bad');
+    expect(L.review('l:bad', 'receptive', Rating.Good, { at }).stability).toBeGreaterThan(0);
+  });
+
+  test('the damaged document is kept aside, and the store is clean afterwards', async () => {
+    vi.spyOn(console, 'warn').mockImplementation(() => {});
+    const kv = await kvWith(spoiled(), spoiled());
+    await Learner.open(new IdbStore(kv));
+    expect((kv.data.get('state.quarantine') as LearnerState).nodes['l:bad'].receptive!.stability).toBeNaN();
+    expect(() => migrate(kv.data.get('state'))).not.toThrow();
+  });
+
+  test('a clean copy is still preferred: the card is worth more than the last save', async () => {
+    vi.spyOn(console, 'warn').mockImplementation(() => {});
+    const L = await Learner.open(new IdbStore(await kvWith(spoiled(), twoCards())));
+    expect(L.card('l:bad', 'receptive')!.state).toBe(State.Review);
+  });
+
+  test('a damaged state with a salvageable copy beside it opens from the copy', async () => {
+    vi.spyOn(console, 'warn').mockImplementation(() => {});
+    const L = await Learner.open(new IdbStore(await kvWith({ ...state(), nodes: 'gone' }, spoiled())));
+    expect(L.nodes().sort()).toEqual(['l:bad', 'l:good']);
+  });
+
+  test('a suspended card stays suspended, a null card starts again, and something that is not a node goes', async () => {
+    vi.spyOn(console, 'warn').mockImplementation(() => {});
+    const s = spoiled() as any;
+    s.nodes['l:bad'].receptive.suspended = true;
+    s.nodes['l:good'].productive = null;
+    s.nodes['l:junk'] = 'not a node';
+    const L = await Learner.open(new IdbStore(await kvWith(s)));
+    expect(L.isSuspended('l:bad', 'receptive')).toBe(true);
+    expect(L.card('l:good', 'productive')!.state).toBe(State.New);
+    expect(L.nodes()).not.toContain('l:junk');
+  });
+
+  test('a newer copy beside a damaged state is still refused, and written over by nothing', async () => {
+    const kv = await kvWith(spoiled(), { ...state(), version: STATE_VERSION + 1 });
+    expect((await fault(Learner.open(new IdbStore(kv)))).fault).toBe('newer');
+    expect((kv.data.get('state') as LearnerState).nodes['l:bad'].receptive!.stability).toBeNaN();
+  });
+
+  test('what is left can be backed up, so the learner is never stranded with a file that will not restore', async () => {
+    vi.spyOn(console, 'warn').mockImplementation(() => {});
+    const kv = await kvWith(spoiled(), spoiled());
+    const store = new IdbStore(kv);
+    await Learner.open(store);
+    await new UiStore(kv).load();
+    await expect(provenBackup(store, BACKUP_READERS)).resolves.toBeTruthy();
+  });
+});
+
+describe('damaged ui and path documents', () => {
+  test('a list or table that is the wrong shape starts empty, the rest is kept, and the damaged copy is aside', async () => {
+    vi.spyOn(console, 'warn').mockImplementation(() => {});
+    const kv = new MemoryKV();
+    const base = emptyUi('mine');
+    const damaged = { ...base, onboarded: true, saved: 'nope', bests: null, canDos: [{ unit: 'u1', canDo: 'x', feel: 'yes', at: 1 }], stats: { ...base.stats, sessions: 40, days: 'nope' } };
+    await kv.set(UI_KEY, damaged);
+    const ui = await new UiStore(kv).load();
+    expect(ui.state).toMatchObject({ learnerId: 'mine', onboarded: true, saved: [], bests: {}, canDos: damaged.canDos, stats: { sessions: 40, days: [] } });
+    expect(await kv.get(`${UI_KEY}.quarantine`)).toEqual(damaged);
+    expect(() => migrateUi(kv.data.get(UI_KEY))).not.toThrow();
+  });
+
+  test('a path keeps its position when a list in it is damaged', async () => {
+    const kv = new MemoryKV();
+    const damaged = { ...initialPath(), unit: 7, day: 2, coreSessions: 90, log: 'nope' };
+    await kv.set(PATH_KEY, damaged);
+    const ui = await new UiStore(kv).load();
+    expect(ui.path).toMatchObject({ unit: 7, day: 2, coreSessions: 90, log: [] });
+    expect(await kv.get(`${PATH_KEY}.quarantine`)).toEqual(damaged);
+    expect(() => migratePath(kv.data.get(PATH_KEY))).not.toThrow();
+  });
+
+  test('a path with no position is refused: a learner is told, not silently sent back to the start', async () => {
+    const kv = new MemoryKV();
+    const damaged = { ...initialPath(), unit: 'nope' };
+    await kv.set(PATH_KEY, damaged);
     const e = await fault(new UiStore(kv).load());
     expect(e.fault).toBe('unreadable');
     expect(e.message).toBe(UNREADABLE_DOCUMENT);
-    expect((await kv.get(`${UI_KEY}.quarantine`) as { learnerId: string }).learnerId).toBe('mine');
-    const kv2 = new MemoryKV();
-    await kv2.set(PATH_KEY, { ...initialPath(), log: 'nope' });
-    expect((await fault(new UiStore(kv2).load())).fault).toBe('unreadable');
+    expect(kv.data.get(PATH_KEY)).toEqual(damaged);
+    expect(await kv.get(`${PATH_KEY}.quarantine`)).toEqual(damaged);
+  });
+
+  test('something that is not a ui document is refused, not taken for a new learner', async () => {
+    const kv = new MemoryKV();
+    await kv.set(UI_KEY, 'nope');
+    expect((await fault(new UiStore(kv).load())).fault).toBe('unreadable');
+    expect(kv.data.get(UI_KEY)).toBe('nope');
+    expect(await kv.get(`${UI_KEY}.quarantine`)).toBe('nope');
+  });
+});
+
+describe('a store that refuses the writes boot makes', () => {
+  class Refusing extends MemoryKV {
+    refuse = false;
+    override async set(k: string, v: unknown) { if (this.refuse) throw new Error('quota'); await super.set(k, v); }
+  }
+
+  test('does not keep a readable learner out: the ui store opens, and the next save writes the migrated document', async () => {
+    vi.spyOn(console, 'warn').mockImplementation(() => {});
+    const kv = new Refusing();
+    await kv.set(UI_KEY, { ...emptyUi('mine'), version: UI_VERSION - 1 });
+    kv.refuse = true;
+    const ui = await new UiStore(kv).load();
+    expect(ui.state).toMatchObject({ learnerId: 'mine', version: UI_VERSION });
+    kv.refuse = false;
+    await ui.update((s) => { s.onboarded = true; });
+    expect((kv.data.get(UI_KEY) as { version: number }).version).toBe(UI_VERSION);
+  });
+
+  test('a repair of the path that is refused does not stop the boot either', async () => {
+    vi.spyOn(console, 'warn').mockImplementation(() => {});
+    const kv = new Refusing();
+    await kv.set(PATH_KEY, { ...initialPath(), log: [{ learnerSession: 9, type: 'review', advanced: true }] });
+    const ui = await new UiStore(kv).load();
+    kv.refuse = true;
+    await expect(ui.reconcile(1)).resolves.toBe(true);
+    expect(ui.path.log).toEqual([]);
   });
 });
 
