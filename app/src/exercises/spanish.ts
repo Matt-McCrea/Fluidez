@@ -242,10 +242,10 @@ export function splitEnclitic(word: string): { base: string; clitics: string[]; 
     return null;
   };
   for (const c1 of CLITICS) {
-    if (!w.endsWith(c1) || w.length <= c1.length + 2) continue;
+    if (!w.endsWith(c1) || w.length < c1.length + 2) continue;
     const b1 = w.slice(0, -c1.length);
     for (const c2 of CLITICS) {
-      if (!b1.endsWith(c2) || b1.length <= c2.length + 2) continue;
+      if (!b1.endsWith(c2) || b1.length < c2.length + 2) continue;
       const r = tryBase(b1.slice(0, -c2.length), [c2, c1]);
       if (r) return r;
     }
