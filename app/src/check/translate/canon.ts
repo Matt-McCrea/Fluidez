@@ -88,11 +88,85 @@ function verbGroup(ts: readonly string[]): [number, number] | null {
   return [a, b];
 }
 
+// ---- figures: digits and number words are one token -----------------------------
+
+type Place = 'u' | 't' | 'd' | 'h' | 'm' | 'M';
+/** Number words by place: units, teens and twenties, tens, hundreds, mil, millón. */
+const NUMBER_WORDS: Readonly<Record<string, [Place, number]>> = {
+  cero: ['u', 0], dos: ['u', 2], tres: ['u', 3], cuatro: ['u', 4], cinco: ['u', 5], seis: ['u', 6], siete: ['u', 7], ocho: ['u', 8], nueve: ['u', 9],
+  diez: ['t', 10], once: ['t', 11], doce: ['t', 12], trece: ['t', 13], catorce: ['t', 14], quince: ['t', 15], dieciséis: ['t', 16], diecisiete: ['t', 17],
+  dieciocho: ['t', 18], diecinueve: ['t', 19], veinte: ['t', 20], veintiuno: ['t', 21], veintiún: ['t', 21], veintiuna: ['t', 21], veintidós: ['t', 22],
+  veintitrés: ['t', 23], veinticuatro: ['t', 24], veinticinco: ['t', 25], veintiséis: ['t', 26], veintisiete: ['t', 27], veintiocho: ['t', 28],
+  veintinueve: ['t', 29],
+  treinta: ['d', 30], cuarenta: ['d', 40], cincuenta: ['d', 50], sesenta: ['d', 60], setenta: ['d', 70], ochenta: ['d', 80], noventa: ['d', 90],
+  cien: ['h', 100], ciento: ['h', 100], doscientos: ['h', 200], doscientas: ['h', 200], trescientos: ['h', 300], trescientas: ['h', 300],
+  cuatrocientos: ['h', 400], cuatrocientas: ['h', 400], quinientos: ['h', 500], quinientas: ['h', 500], seiscientos: ['h', 600], seiscientas: ['h', 600],
+  setecientos: ['h', 700], setecientas: ['h', 700], ochocientos: ['h', 800], ochocientas: ['h', 800], novecientos: ['h', 900], novecientas: ['h', 900],
+  mil: ['m', 1000], millón: ['M', 1e6], millones: ['M', 1e6],
+};
+/** The four number words an English keyboard types without their accent. */
+const NUMBER_WORDS_PLAIN: Readonly<Record<string, string>> = { dieciseis: 'dieciséis', veintidos: 'veintidós', veintitres: 'veintitrés', veintiseis: 'veintiséis' };
+/** What may follow what inside one number: "dos mil veinte", "treinta y cinco". */
+const NUMBER_NEXT: Readonly<Record<Place, string>> = { h: 'utdmM', d: 'mM', u: 'mM', t: 'mM', m: 'hutdM', M: 'hutdm' };
+/** un / uno / una are a number only inside one: "treinta y un", "ciento una", "un millón". */
+const ONE = /^(un|uno|una)$/;
+
+/** The words and figures of a text, in order. A figure is ONE token, spelled
+ *  in digits however it was written ("5", "cinco", "1.000", "mil" all agree),
+ *  so a figure keeps its place ('el 70 % prefiere' is not 'el prefiere'). */
+function figures(text: string): { toks: string[]; slips: number } {
+  const raw: string[] = [];
+  let last = 0;
+  for (const m of text.matchAll(/\d+(?:[.,]\d+)*(?:\s*%)?/g)) {
+    raw.push(...words(text.slice(last, m.index)));
+    const d = m[0].replace(/\s*%$/, '');
+    raw.push(/^\d{1,3}([.,]\d{3})+$/.test(d) ? d.replace(/[.,]/g, '') : d.replace(',', '.'));
+    if (m[0].endsWith('%')) raw.push('por', 'ciento');
+    last = m.index! + m[0].length;
+  }
+  raw.push(...words(text.slice(last)));
+
+  const toks: string[] = [];
+  let slips = 0;
+  for (let i = 0; i < raw.length;) {
+    let total = 0, cur = 0, prev: Place | null = null, n = 0, viaY = false;
+    let j = i;
+    for (; j < raw.length; j++) {
+      const w = raw[j];
+      const plain = NUMBER_WORDS_PLAIN[w];
+      const nw = NUMBER_WORDS[plain ?? w];
+      if (/^\d/.test(w)) {
+        if (prev) break;
+        cur = Number(w); prev = 'u'; n++;
+        // only a multiplier may follow a figure written in digits
+        if (!/^(mil|millón|millones)$/.test(raw[j + 1] ?? '')) { j++; break; }
+        continue;
+      }
+      let place: Place, value: number;
+      if (nw) [place, value] = nw;
+      else if (ONE.test(w) && (prev ? 'hdmM'.includes(prev) : raw[j + 1] === 'millón')) { place = 'u'; value = 1; }
+      else if (w === 'y' && prev === 'd' && !viaY && (NUMBER_WORDS[raw[j + 1]]?.[0] === 'u' || ONE.test(raw[j + 1] ?? ''))) { viaY = true; continue; }
+      else break;
+      if (prev && !(viaY ? place === 'u' : NUMBER_NEXT[prev].includes(place))) break;
+      viaY = false;
+      if (place === 'm') { total += (cur || 1) * 1000; cur = 0; }
+      else if (place === 'M') { total = (total + cur || 1) * 1e6; cur = 0; }
+      else cur += value;
+      if (plain) slips++;
+      prev = place; n++;
+    }
+    if (!n) { toks.push(raw[i]); i++; continue; }
+    toks.push(String(total + cur));
+    i = j;
+  }
+  return { toks, slips };
+}
+
 /** Canonicalise one Spanish answer. */
 export function canon(text: string): Canon {
-  // a figure keeps its place ('el 70 % prefiere' is not 'el prefiere')
-  let ts = words(text.replace(/\d+(?:[.,]\d+)*(?:\s*%)?/g, ' xnum '));
-  let accentSlips = 0;
+  const fig = figures(text);
+  let ts = fig.toks;
+  let accentSlips = fig.slips;
 
   // 1. multi-word adverbials become one token
   const joined: string[] = [];
