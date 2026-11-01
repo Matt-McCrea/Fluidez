@@ -17,7 +17,8 @@ import type { Person } from '../../engine';
 import { conjugateBareCells } from '../../engine/conjugate';
 import { changePerson } from '../../exercises/reinflect';
 import {
-  EXPERIENCER, detGender, enYou, low, otherGender, parseClause, render, replaceCore, toToks, verbReadings, type Tok,
+  DETERMINERS, EXPERIENCER, detGender, enSubject, enWords, enYou, finiteCandidates, gerundOf, isFunctionWord, low, otherGender, parseClause, render, replaceCore,
+  toToks, verbReadings, type Clause, type Tok,
 } from '../../exercises/spanish';
 
 export type Register = 'tú' | 'usted' | 'ustedes' | 'vosotros';
@@ -141,21 +142,51 @@ function vosotrosFrom(es: string, en: string): string | null {
   return render(ts);
 }
 
+/** Dative clitic for each "you" with gustar and kin: te gusta, le gusta, les gusta. */
+const DATIVE_YOU: Readonly<Record<'tú' | 'usted' | 'ustedes', string>> = { tú: 'te', usted: 'le', ustedes: 'les' };
+
+/** "¿Le gusta el café?" for "Do you like coffee?": with gustar and kin the
+ *  clitic is the "you", and the model's usted is as good as tú or ustedes. */
+function dativeYou(ts: Tok[], enYouSubject: string | null | undefined, wants: ReadonlyArray<'tú' | 'usted' | 'ustedes'>): Variant[] {
+  if (enYouSubject !== 'you' && enYouSubject !== 'you all') return [];
+  if (ts.some((t) => /^(usted|ustedes|ti)$/.test(low(t)))) return [];
+  const at = ts.findIndex((t, i) => /^les?$/.test(low(t)) && ts.slice(i + 1, i + 3).some((x) => verbReadings(low(x)).some((a) => EXPERIENCER.has(a.inf))));
+  if (at < 0) return [];
+  const own = low(ts[at]) === 'le' ? 'usted' : 'ustedes';
+  return wants.filter((to) => to !== own).map((to) => ({ es: render(replaceCore(ts, at, DATIVE_YOU[to])), register: to }));
+}
+
+/** Is the one verb of a Spanish clause with no subject the English "you"? Not with a se ("se escribe" is not
+ *  a usted) and not when the English has another subject after "you" ("what do you mean they closed"). */
+function bareYouClause(c: Clause, en: string): boolean {
+  const you = enSubject(en);
+  if (c.subject >= 0 || !you || (you.pronoun !== 'you' && you.pronoun !== 'you all')) return false;
+  if (c.proclitics.some((i) => low(c.toks[i]) === 'se')) return false;
+  return !enWords(en).slice(you.index + 1).some((w) => /^(they|he|she|we|i|it|there)$/.test(w));
+}
+
 /** Every register variant of a model answer the English allows. */
 export function registerVariants(es: string, en: string): Variant[] {
   const mode = enYou(en);
   if (mode === 'none') return [];
   const out: Variant[] = [];
   const c = parseClause(es, en);
-  const wants: Array<'tú' | 'usted' | 'ustedes'> =
-    mode === 'formal' ? ['usted'] : mode === 'informal' ? ['tú'] : mode === 'plural' ? ['ustedes'] : mode === 'singular' ? ['tú', 'usted'] : ['tú', 'usted', 'ustedes'];
-  const subjectYou = c && (c.choice.person === 'tú' || (c.subject >= 0 && /^(usted|ustedes)$/.test(low(c.toks[c.subject]))));
+  // "you" is the English subject and the Spanish names no subject: a bare él/ella verb is usted, a bare ellos verb ustedes
+  const enYouSubject = enSubject(en)?.pronoun;
+  const bareYou = !!c && bareYouClause(c, en);
+  const subjectYou = c && (c.choice.person === 'tú' || (c.subject >= 0 && /^(usted|ustedes)$/.test(low(c.toks[c.subject]))) ||
+    (bareYou && (c.choice.person === 'él/ella' || c.choice.person === 'ellos')));
   const fromReg: Register | null = !c ? null
     : c.choice.person === 'tú' ? 'tú'
     : c.subject >= 0 && low(c.toks[c.subject]) === 'usted' ? 'usted'
     : c.subject >= 0 && low(c.toks[c.subject]) === 'ustedes' ? 'ustedes'
     : mode === 'plural' && c.choice.person === 'ellos' ? 'ustedes'
+    : bareYou && c.choice.person === 'él/ella' ? 'usted'
+    : bareYou && c.choice.person === 'ellos' ? 'ustedes'
     : null;
+  // a register tag pins the register, but never turns "you all" into one person
+  const wants: Array<'tú' | 'usted' | 'ustedes'> =
+    mode === 'formal' ? [fromReg === 'ustedes' ? 'ustedes' : 'usted'] : mode === 'informal' ? ['tú'] : mode === 'plural' ? ['ustedes'] : mode === 'singular' ? ['tú', 'usted'] : ['tú', 'usted', 'ustedes'];
   if (c && subjectYou && fromReg) {
     for (const to of wants) {
       if (to === fromReg) continue;
@@ -176,6 +207,8 @@ export function registerVariants(es: string, en: string): Variant[] {
   } else {
     // "you" is not the subject: te quiero, es para ti
     const ts = toToks(es);
+    const dative = dativeYou(ts, enYouSubject, wants);
+    if (dative.length) return dative;
     if (!ts.some((t) => /^(te|ti|contigo|tu|tus|tuyos?|tuyas?)$/.test(low(t)))) return [];
     if (c?.reflexive && c.choice.person === 'tú') return [];
     // with gustar & co. "te" is an indirect object: only le / les
@@ -193,38 +226,98 @@ export function registerVariants(es: string, en: string): Variant[] {
 
 // ---- the speaker's / listener's gender ------------------------------------------
 
-const EN_GENDERED = /\b(he|she|him|her|his|hers|himself|herself|boy|girl|man|woman|men|women|mother|father|son|daughter|brother|sister|husband|wife|boyfriend|girlfriend|mr|mrs|ms|sir|madam)\b/i;
+const EN_GENDERED = /\b(he|she|him|her|his|hers|himself|herself|boy|girl|guys|girls|ladies|gentlemen|man|woman|men|women|mother|father|son|daughter|brother|sister|husband|wife|boyfriend|girlfriend|mr|mrs|ms|sir|madam)\b/i;
 const COPULA_LIKE = /^(ser|estar|sentirse|quedarse|ponerse)$/;
+/** Words between the verb and the adjective that do not agree with it. */
+const INTENSIFIER = /^(muy|tan|bastante|poco|algo|más|menos|demasiado|súper|super|realmente|totalmente|completamente|casi)$/;
+/** Verbs whose object "te" is also who the adjective after them describes: te veo cansada, te dejo sola. */
+const LISTENER_VERBS = new Set(['dejar', 'ver', 'encontrar', 'notar']);
 
-/** "Estoy cansado" for "I'm tired": the English does not say who is
- *  speaking, so "Estoy cansada" is just as right. Only for yo / tú /
- *  nosotros / ustedes with a predicate adjective, and only when the English
- *  carries no gender of its own. */
+/** Words that end like an adjective after a copula and are not one: adverbs,
+ *  conjunctions and the determiners and numbers that open a noun phrase. */
+const NOT_PREDICATE = /^(cuando|como|donde|mientras|nada|todo|toda|todos|todas|mucho|mucha|muchos|muchas|tanto|tanta|tantos|tantas|otro|otra|otros|otras|mismo|misma|mismos|mismas|varios|varias|ambos|ambas|cierto|cierta|propio|propia|luego|entonces|ahora|tarde|temprano|pues|sino|aunque|porque)$/;
+/** What may follow an adjective that ends the predicate: the end, a mark, or a small word. */
+const AFTER_PREDICATE = /^(cuando|donde|porque|aunque|mientras|pues|sino|como|ni)$/;
+
+/** The other-gender form of the adjective at `j`, or null if the word there is not clearly one. */
+function adjectiveAt(ts: readonly Tok[], j: number): string | null {
+  const w = low(ts[j]);
+  const next = ts[j + 1];
+  if (w.length < 4 || NOT_PREDICATE.test(w) || isFunctionWord(w) || verbReadings(w).length || gerundOf(w)) return null;
+  if (j > 0 && /^[A-ZÁÉÍÓÚÑ]/.test(ts[j].core)) return null;                        // a name
+  if (/^sol[oa]s?$/.test(w) && next && !ts[j].post && DETERMINERS.has(low(next))) return null;   // "solo los dos" is only
+  // the predicate ends here: "Estoy cansado para salir", not "nos quedamos otra noche"
+  if (next && !ts[j].post && !isFunctionWord(low(next)) && !AFTER_PREDICATE.test(low(next))) return null;
+  return otherGender(w);
+}
+
+/** The adjectives from `from` on in the other gender, or null when none changes. */
+function flipPredicate(ts: Tok[], from: number): Tok[] | null {
+  let out = ts;
+  let j = from;
+  while (j < out.length && (INTENSIFIER.test(low(out[j])) || (low(out[j]) === 'un' && low(out[j + 1]) === 'poco'))) j++;
+  for (;;) {
+    const og = adjectiveAt(out, j);
+    if (!og) break;
+    out = replaceCore(out, j, og);
+    // "orgulloso y contento"
+    if (out[j].post || !/^(y|e)$/.test(low(out[j + 1]))) break;
+    j += 2;
+    while (j < out.length && INTENSIFIER.test(low(out[j]))) j++;
+  }
+  return out === ts ? null : out;
+}
+
+/** Every first-person (or you, we) clause that says how the speaker is, in the other gender. */
+function flipSpeaker(es: string, en: string, ts: Tok[]): Tok[] | null {
+  const cands = finiteCandidates(ts);
+  let out = ts;
+  cands.forEach((cand, n) => {
+    // the English subject says who the FIRST verb is about; a later clause is read from its own ending alone
+    const c = parseClause(es, n === 0 ? en : undefined, { allowMany: true, index: cand.index, reflexiveExperiencer: true });
+    if (!c || !COPULA_LIKE.test(c.choice.inf)) return;
+    const p = c.choice.person;
+    const named = c.subject >= 0 && /^(usted|ustedes)$/.test(low(ts[c.subject]));
+    // a bare él/ella or ellos verb is "you" only when "you" is the English subject and no other verb competes
+    const bareYou = cands.length === 1 && bareYouClause(c, en) && (p === 'él/ella' || p === 'ellos');
+    if (!(p === 'yo' || p === 'tú' || p === 'nosotros' || named || bareYou)) return;
+    const next = flipPredicate(out, (c.participle >= 0 ? c.participle : c.verb) + 1);
+    if (!next) return;
+    out = next;
+    if (c.subject >= 0) {
+      const sw: Record<string, string> = { nosotros: 'nosotras', nosotras: 'nosotros' };
+      const pr = low(out[c.subject]);
+      if (sw[pr]) out = replaceCore(out, c.subject, sw[pr]);
+    }
+  });
+  return out === ts ? null : out;
+}
+
+/** "Te voy a dejar sola": the adjective describes who is being spoken to. */
+function flipListener(en: string, ts: Tok[]): Tok[] | null {
+  // a name in the sentence ("Te veo preocupada, Mariana") may tell the gender
+  if (!/\byou\b/i.test(en) || ts.some((t, i) => i > 0 && /^[A-ZÁÉÍÓÚÑ]/.test(t.core))) return null;
+  let out = ts;
+  ts.forEach((t, k) => {
+    if (low(t) !== 'te') return;
+    const v = ts.findIndex((x, j) => j > k && j <= k + 4 && (LISTENER_VERBS.has(low(x)) || verbReadings(low(x)).some((a) => LISTENER_VERBS.has(a.inf))));
+    const next = v < 0 ? null : flipPredicate(out, v + 1);
+    if (next) out = next;
+  });
+  return out === ts ? null : out;
+}
+
+/** "Estoy cansada" for "I'm tired": the English does not say who is speaking
+ *  (or who is spoken to), so either gender is right. Every clause of the
+ *  sentence that says how I, we or you are counts, whatever verb comes first.
+ *  Only when the English carries no gender of its own. */
 export function genderVariants(es: string, en: string): string[] {
   if (EN_GENDERED.test(en)) return [];
-  const c = parseClause(es, en);
-  if (!c || !COPULA_LIKE.test(c.choice.inf)) return [];
-  const p = c.choice.person;
-  const ustedes = c.subject >= 0 && /^(usted|ustedes)$/.test(low(c.toks[c.subject]));
-  if (!(p === 'yo' || p === 'tú' || p === 'nosotros' || ustedes || (/\byou\b/i.test(en) && (p === 'él/ella' || p === 'ellos')))) return [];
-  let ts = c.toks;
-  let changed = false;
-  for (let j = (c.participle >= 0 ? c.participle : c.verb) + 1; j < ts.length; j++) {
-    const w = low(ts[j]);
-    if (/^(muy|tan|bastante|un|poco|algo|más|menos)$/.test(w)) continue;
-    const og = otherGender(w);
-    if (!og || verbReadings(w).length) break;
-    ts = replaceCore(ts, j, og);
-    changed = true;
-    if (ts[j].post) break;
-  }
-  if (!changed) return [];
-  if (c.subject >= 0) {
-    const sw: Record<string, string> = { nosotros: 'nosotras', nosotras: 'nosotros' };
-    const pr = low(ts[c.subject]);
-    if (sw[pr]) ts = replaceCore(ts, c.subject, sw[pr]);
-  }
-  return [render(ts)];
+  const ts = toToks(es);
+  const speaker = flipSpeaker(es, en, ts);
+  const listener = flipListener(en, ts);
+  const both = speaker && flipListener(en, speaker);
+  return [speaker, listener, both].filter((x): x is Tok[] => !!x).map(render);
 }
 
 export interface ExpandOptions {

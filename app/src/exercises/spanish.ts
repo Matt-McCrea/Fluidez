@@ -316,11 +316,13 @@ export function enSubject(en: string): EnSubject | null {
   return null;
 }
 
-/** Does the English say "you" to one person, several, or leave it open? */
+/** Does the English say "you" to one person, several, or leave it open? The
+ *  bank tags usted rows "(polite)" or "(formal)" and tú rows "(informal)" or
+ *  "(to a friend)": a tag is a register the learner is held to. */
 export function enYou(en: string): 'none' | 'open' | 'singular' | 'plural' | 'formal' | 'informal' {
   const l = en.toLowerCase();
   if (!/\byou(r|rs|rself|rselves)?\b/.test(l)) return 'none';
-  if (/\(formal\)|\bsir\b|\bmadam\b|\bma'am\b/.test(l)) return 'formal';
+  if (/\(formal\)|\(polite\)|\bsir\b|\bmadam\b|\bma'am\b/.test(l)) return 'formal';
   if (/\(informal\)|\(to a friend\)/.test(l)) return 'informal';
   if (/\byou all\b|\byou guys\b|\byourselves\b|\(plural\)|\bboth of you\b/.test(l)) return 'plural';
   if (/\byourself\b/.test(l)) return 'singular';
@@ -395,7 +397,7 @@ function byEnglish(an: Analysis[], en: string): Analysis[] {
  *  person and tense where one Spanish form has several (comía: yo or él;
  *  hablamos: present or preterite). Null if the sentence has no single finite
  *  verb or the reading stays ambiguous. */
-export function parseClause(es: string, en?: string, opts: { allowMany?: boolean; index?: number } = {}): Clause | null {
+export function parseClause(es: string, en?: string, opts: { allowMany?: boolean; index?: number; reflexiveExperiencer?: boolean } = {}): Clause | null {
   const ts = toToks(es);
   let cands = finiteCandidates(ts);
   if (opts.index != null) cands = cands.filter((c) => c.index === opts.index);
@@ -404,7 +406,9 @@ export function parseClause(es: string, en?: string, opts: { allowMany?: boolean
   const cand = cands[0];
   const i = cand.index;
   let an = cand.analyses.filter((a) => a.tense !== 'imperativo');
-  if (!an.length || an.some((a) => EXPERIENCER.has(a.inf))) return null;
+  // me quedé is quedarse, not the quedar of "me queda bien": the caller can ask to read it as the reflexive
+  const experiencer = an.some((a) => EXPERIENCER.has(a.inf));
+  if (!an.length || (experiencer && !opts.reflexiveExperiencer)) return null;
 
   // the verb group to the left: [no] [clitic]* verb
   let k = i - 1;
@@ -430,6 +434,7 @@ export function parseClause(es: string, en?: string, opts: { allowMany?: boolean
   const lastClitic = proclitics.length ? low(ts[proclitics[proclitics.length - 1]]) : '';
   const reflexAn = an.filter((a) => /se$/.test(a.inf) && REFLEXIVE[a.person as Person] === lastClitic);
   const reflexive = reflexAn.length > 0;
+  if (experiencer && !reflexive) return null;
   an = reflexive ? reflexAn : (an.some((a) => !/se$/.test(a.inf)) ? an.filter((a) => !/se$/.test(a.inf)) : an);
 
   if (en) an = byEnglish(an, en);
