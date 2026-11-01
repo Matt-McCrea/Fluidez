@@ -285,7 +285,7 @@ export function Personal({ block, run, onDone }: BlockProps<PersonalBlock>) {
     <>
       <Heading {...h} />
       <section class="card">
-        <p class="ask">{script?.personal ?? 'Write one true sentence about you, using what you learned today.'}</p>
+        <p class="ask"><Rich text={script?.personal ?? 'Write one true sentence about you, using what you learned today.'} /></p>
         <AnswerField value={value} onChange={setValue} onSubmit={submit} label="Your sentence" placeholder="Your sentence, in Spanish" lang="es" disabled={!!sent} autoFocus />
         <div class="feedback" aria-live="polite">
           {sent === 'pass'
