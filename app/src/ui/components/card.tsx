@@ -43,6 +43,12 @@ export function missPunct(text: string): string {
   return /[.!?\u2026]\s*$/.test(text) ? '' : '.';
 }
 
+/** Whether a check can go ahead: something is typed and, on a retry, it is not the text that was just refused (that would only spend the second attempt). */
+export function canCheck(value: string, refused?: string): boolean {
+  const v = value.trim();
+  return !!v && v !== (refused ?? '').trim();
+}
+
 function Position({ pos }: { pos?: { n: number; of: number } }) {
   return pos ? <p class="pos" aria-live="off">{pos.n} of {pos.of}</p> : <p class="pos" aria-hidden="true">&nbsp;</p>;
 }
@@ -124,9 +130,10 @@ function TypeView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extra
   const passed = !!result?.pass;
   const finished = passed || revealed;
   const retrying = !finished && tries === 1 && !!result;
+  const ready = canCheck(value, retrying ? first : undefined);
 
   const submit = () => {
-    if (finished || !value.trim()) return;
+    if (finished || !ready) return;
     const r = card.check(value);
     const n = tries + 1;
     setTries(n);
@@ -169,7 +176,7 @@ function TypeView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extra
           ? <Continue label={next} onClick={() => onDone({ correct: passed, tries: Math.max(1, tries), ms: took, ...(result?.lenient ? { lenient: true } : {}), evidence: { input: value, answer: result?.answer } }, value)} />
           : (
             <>
-              <button class="btn primary" data-primary disabled={!value.trim()} onClick={submit}>{retrying ? 'Try again' : 'Check'}</button>
+              <button class="btn primary" data-primary disabled={!ready} onClick={submit}>{retrying ? 'Try again' : 'Check'}</button>
               <button class="btn quiet" data-giveup onClick={giveUp}>Show me</button>
             </>
           )}
