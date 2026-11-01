@@ -64,6 +64,16 @@ describe('a read-only card is an exposure, never a grade', () => {
     expect(w.run.tally.scored).toBe(1);
   });
 
+  it('a "Read it" card is exposure, and the close screen does not count it as an answer right first time', async () => {
+    const w = await world();
+    w.learner.introduce('g:ser-identity', { results: [true, true, true] });
+    const before = w.learner.node('g:ser-identity')!.exposures;
+    const item = { op: 'read', id: 'pr:u01-1', node: 'g:ser-identity', sentence: 'u01-1', direction: 'receptive', scoring: 'exposure', credit: ['g:ser-identity'] } as any;
+    w.run.score(item, readOutcome(1200));
+    expect(w.learner.node('g:ser-identity')!.exposures).toBe(before + 1);
+    expect(w.run.tally).toEqual({ scored: 0, correct: 0, firstTry: 0 });
+  });
+
   it('a read card in "Before you go" does not relearn a lapsed card either', async () => {
     const w = await world();
     w.learner.introduce('g:ser-identity', { results: [true, true, true] });

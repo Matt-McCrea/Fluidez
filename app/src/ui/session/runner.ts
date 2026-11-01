@@ -410,9 +410,11 @@ export class SessionRunner {
       const sid = 'sentence' in item ? item.sentence : undefined;
       this.noteMiss(item.node, eventOp(item), sid ? this.bundle.sentence(sid)?.es : undefined);
     }
-    this.tally.scored++;
-    if (o.correct) this.tally.correct++;
-    if (o.correct && o.tries <= 1) this.tally.firstTry++;
+    if (!o.exposure) {
+      this.tally.scored++;
+      if (o.correct) this.tally.correct++;
+      if (o.correct && o.tries <= 1) this.tally.firstTry++;
+    }
     if (item.scoring === 'learning') this.begin(item.node, item.op === 'learn' ? item.productive : undefined);
     this.stepLadder(item, o);
     const at = this.now();
