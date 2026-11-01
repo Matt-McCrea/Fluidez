@@ -4,7 +4,7 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
 import { Heading } from '../components/text';
 import { SaveFailedError } from '../../learner';
-import { BackupError, downloadBackup, makeBackup, readBackup, restoreBackup, type BackupSummary, type ReadBackup } from '../../learner/backup';
+import { BackupError, downloadBackup, provenBackup, readBackup, restoreBackup, type BackupSummary, type ReadBackup } from '../../learner/backup';
 import { useApp } from '../context';
 import { BACKUP_READERS, SESSION_KEY } from '../store/ui';
 
@@ -52,7 +52,7 @@ export function Settings() {
     setNote(null);
     try {
       await learner.flush();
-      const name = downloadBackup(await makeBackup(app.learnerStore, BACKUP_READERS, app.now()));
+      const name = downloadBackup(await provenBackup(app.learnerStore, BACKUP_READERS, app.now()));
       setNote({ text: `Made ${name}. Check your downloads, and keep the file somewhere safe.` });
     } catch (e) { setNote(fail(e, 'Couldn\'t make a backup just now.')); }
     setBusy(false);

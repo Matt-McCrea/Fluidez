@@ -42,6 +42,7 @@ export interface BackupSummary { madeAt: number; sessions: number }
 export const NOT_A_BACKUP = 'That file isn\'t a Fluidez backup.';
 export const BACKUP_NEWER = 'This backup was made by a newer version of Fluidez than this one. Update the app first, then restore it. Nothing has been changed.';
 export const BACKUP_UNREADABLE = 'This backup can\'t be read, so nothing has been changed.';
+export const BACKUP_NOT_MADE = 'Couldn\'t make a backup that could be restored. Your progress on this device hasn\'t been changed.';
 export const BACKUP_EMPTY = 'There\'s no progress to back up yet.';
 export const BACKUP_UNSUPPORTED = 'This device can\'t make or restore backups.';
 
@@ -70,6 +71,20 @@ export async function makeBackup(store: LearnerStore, readers: BackupReaders, no
 }
 
 export const backupText = (file: BackupFile): string => JSON.stringify(file);
+
+/**
+ * Make a backup and prove it can be restored: its text goes through the same
+ * dry run a restore does, before anyone is told it is safe to keep. `makeBackup`
+ * alone is what a screen uses when nothing else can be saved, so it hands over
+ * whatever is there.
+ */
+export async function provenBackup(store: LearnerStore, readers: BackupReaders, now = Date.now()): Promise<BackupFile> {
+  const file = await makeBackup(store, readers, now);
+  try { readBackup(backupText(file), readers); } catch (e) {
+    throw new BackupError('unreadable', BACKUP_NOT_MADE, e instanceof BackupError ? e.detail : (e as Error).message);
+  }
+  return file;
+}
 
 /** `fluidez-backup-2026-11-01.json`, by the local date it was made. */
 export function backupFileName(madeAt: number): string {

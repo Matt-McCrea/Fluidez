@@ -7,8 +7,8 @@ import { fileURLToPath } from 'node:url';
 import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest';
 import { initialPath } from '../../src/compiler';
 import {
-  BACKUP_FORMAT, BACKUP_NEWER, BACKUP_UNREADABLE, backupFileName, backupText, BackupError, makeBackup, NOT_A_BACKUP, PRE_RESTORE,
-  readBackup, restoreBackup, type BackupFile, type BackupReaders,
+  BACKUP_FORMAT, BACKUP_NEWER, BACKUP_NOT_MADE, BACKUP_UNREADABLE, backupFileName, backupText, BackupError, makeBackup, NOT_A_BACKUP, PRE_RESTORE,
+  provenBackup, readBackup, restoreBackup, type BackupFile, type BackupReaders,
 } from '../../src/learner/backup';
 import { IdbStore, Learner, MemoryStore, STATE_VERSION, type LearnerState } from '../../src/learner';
 import { BACKUP_READERS, emptyUi, MemoryKV, SESSION_KEY, UiStore } from '../../src/ui/store/ui';
@@ -75,6 +75,47 @@ describe.each(NAMES)('golden learner %s', (name) => {
     await restoreBackup(new IdbStore(fresh), readBackup(backupText(file), BACKUP_READERS), BACKUP_READERS);
     expect(fresh.data.get('ui')).toEqual(g.kv.ui);
     expect(look(await boot(fresh, g.madeAt))).toEqual(look(await boot(kvOf(g), g.madeAt)));
+  });
+});
+
+// Before: boot put a damaged event log aside and carried on, but left it in the
+// store until the next review, and makeBackup copied it from there. The learner
+// was told the file was safe to keep, and only found out at the restore, on the
+// day they needed it, that "This backup can't be read".
+describe('a backup is only handed over if it can be restored', () => {
+  const g = golden('head-early');
+
+  test('a learner whose event log was damaged gets a backup that restores, with no review in between', async () => {
+    vi.spyOn(console, 'warn').mockImplementation(() => {});
+    const kv = kvOf(g);
+    kv.data.set('events', 'rubbish');
+    const a = await boot(kv, g.madeAt);
+    expect(kv.data.get('events.quarantine')).toBe('rubbish');
+    const text = backupText(await provenBackup(a.store, BACKUP_READERS, g.madeAt));
+    const fresh = new MemoryKV();
+    await restoreBackup(new IdbStore(fresh), readBackup(text, BACKUP_READERS), BACKUP_READERS);
+    expect(look(await boot(fresh, g.madeAt)).state.nodes).toEqual(a.learner.toJSON().nodes);
+  });
+
+  test('a store holding something that could not be restored says so instead of making the file', async () => {
+    const kv = kvOf(g);
+    kv.data.set('events', 'rubbish');
+    const e = await provenBackup(new IdbStore(kv), BACKUP_READERS, g.madeAt).catch((x) => x);
+    expect(e).toBeInstanceOf(BackupError);
+    expect(e.message).toBe(BACKUP_NOT_MADE);
+    expect(e.message).not.toMatch(/[–—]| - /);
+    expect(e.detail).toMatch(/events/);
+  });
+
+  test('makeBackup itself still hands over whatever is there, for a screen with nothing else to offer', async () => {
+    const kv = kvOf(g);
+    kv.data.set('events', 'rubbish');
+    expect((await makeBackup(new IdbStore(kv), BACKUP_READERS, g.madeAt)).documents.events).toBe('rubbish');
+  });
+
+  test('nothing new is needed for a healthy learner: the same file comes out', async () => {
+    const a = await boot(kvOf(g), g.madeAt);
+    expect(await provenBackup(a.store, BACKUP_READERS, g.madeAt)).toEqual(await makeBackup(a.store, BACKUP_READERS, g.madeAt));
   });
 });
 

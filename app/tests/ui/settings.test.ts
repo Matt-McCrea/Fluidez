@@ -21,6 +21,11 @@ describe('the screen', () => {
     expect(src).toMatch(/Restore a backup/);
     expect(src).toMatch(/Reset progress/);
   });
+
+  test('only hands over a backup that has been proved to restore', () => {
+    expect(src).toMatch(/provenBackup\(/);
+    expect(src).not.toMatch(/makeBackup\(/);
+  });
 });
 
 describe('what a learner is told before a backup replaces their progress', () => {

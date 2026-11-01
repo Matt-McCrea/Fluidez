@@ -194,11 +194,13 @@ export class Learner {
     const state = read?.state ?? emptyState((opts.now ?? Date.now)());
     const rawLog = await store.loadEvents?.();
     let log: EventLog | undefined;
+    let logDamaged = false;
     if (rawLog !== undefined) {
       try { log = readEvents(rawLog); } catch (e) {
         if (!(e instanceof StoredDocumentError) || e.fault === 'newer') throw e;
         console.warn(`fluidez: the review log could not be read (${e.detail}); starting an empty one`);
         await store.quarantine?.('events', rawLog);
+        logDamaged = true;
       }
     }
     if (read && read.version < STATE_VERSION) {
@@ -206,7 +208,9 @@ export class Learner {
     }
     const l = new Learner(state, store, opts);
     if (log) l.log = compact(log, 365, l.now());
-    if (!read || read.healed || read.version !== state.version) {
+    // the empty log takes the damaged one's place in the store: a backup is made of what is stored
+    if (logDamaged) l.eventsDirty = true;
+    if (!read || read.healed || logDamaged || read.version !== state.version) {
       l.touch();
       // a refused write must not keep a readable learner out: it stays dirty and is retried
       try { await l.flush(); } catch (e) { if (!(e instanceof SaveFailedError)) throw e; }

@@ -167,6 +167,8 @@ describe('an event log', () => {
     const L = await Learner.open(store);
     expect(L.events()).toEqual([]);
     expect(store.kept.get('events.quarantine')).toBe('rubbish');
+    // and it takes the damaged one's place, so nothing downstream copies the damage
+    expect(await store.loadEvents()).toMatchObject({ events: [] });
   });
 });
 
