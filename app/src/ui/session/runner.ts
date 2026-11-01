@@ -27,6 +27,8 @@ export interface Outcome {
   evidence?: Evidence;
   /** passed through an untaught synonym: grades as Hard */
   lenient?: boolean;
+  /** the card asked for no answer (a read card): it was shown, so it can be exposure but never a grade */
+  exposure?: boolean;
 }
 
 /** First-try pass → Good; pass on the retry → Hard; shown the answer → Again. */
@@ -368,6 +370,7 @@ export class SessionRunner {
   learningStep(node: NodeId, o: Outcome, credit: NodeId[] = [node], productive?: boolean, op = 'learn', typed = false): boolean {
     if (!this.inScore) this.bump();
     this.present(node, productive);
+    if (o.exposure) return true; // shown, not asked: not a retrieval to count, nor one to ask again
     this.begin(node, productive);
     this.learnSteps.set(node, (this.learnSteps.get(node) ?? 0) + 1);
     if (!o.correct) { this.learnMisses.add(node); this.noteMiss(node, op); }
@@ -400,6 +403,8 @@ export class SessionRunner {
   }
 
   private scoreItem(item: Item, o: Outcome): void {
+    // a card that asked for no answer cannot grade one: where a grade was due, the card stays as it was
+    if (o.exposure && (item.scoring === 'review' || item.scoring === 'learning')) { this.learner.expose(item.credit, { at: this.now() }); return; }
     this.noteLapse(item, o);
     if (!o.correct) {
       const sid = 'sentence' in item ? item.sentence : undefined;
@@ -492,6 +497,7 @@ export class SessionRunner {
    */
   scoreRecap(item: RecapItem, o: Outcome): void {
     this.bump();
+    if (o.exposure) { this.learner.expose(item.credit, { at: this.now() }); return; }
     this.tally.scored++;
     if (o.correct) this.tally.correct++;
     if (o.correct && o.tries <= 1) this.tally.firstTry++;

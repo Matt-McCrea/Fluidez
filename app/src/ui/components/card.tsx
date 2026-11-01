@@ -178,6 +178,11 @@ function TypeView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extra
   );
 }
 
+/** What a read card reports: it asked for no answer, so it is an exposure and never a grade. */
+export function readOutcome(ms: number): Outcome {
+  return { correct: true, tries: 1, ms, exposure: true };
+}
+
 function ReadView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extract<Card, { type: 'read' }>; ms: () => number }) {
   const [show, setShow] = useState(false);
   return (
@@ -188,7 +193,7 @@ function ReadView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extra
       <div class="feedback">
         {show ? <p class="en"><Rich text={card.en} /></p> : <button class="btn link" onClick={() => setShow(true)}>Show English</button>}
       </div>
-      <div class="actions"><Continue label={next ?? 'Next'} onClick={() => onDone({ correct: true, tries: 1, ms: ms() })} /></div>
+      <div class="actions"><Continue label={next ?? 'Next'} onClick={() => onDone(readOutcome(ms()))} /></div>
     </section>
   );
 }
