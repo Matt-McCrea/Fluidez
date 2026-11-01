@@ -528,8 +528,11 @@ export function daySupply(st: RunState, loaded: Loaded[], only: Set<string> | nu
   }
   for (const n of rep.unitNodes) {
     if (n.targeted < MIN.targeted) {
+      // every grammar node has its top-up rows now (wave 3): in a band marked complete
+      // (content/units/_complete.json) a thin node is an error; elsewhere it warns unless --strict
+      const band = st.cur.units.find((u) => u.id === n.unit)?.band;
       st.findings.push({
-        severity: st.strict ? 'error' : 'warning', check: 'daySupply', file: file(n.unit), path: `${n.unit} day ${n.drillDay}`,
+        severity: st.strict || (band && st.cur.completeBands.has(band)) ? 'error' : 'warning', check: 'daySupply', file: file(n.unit), path: `${n.unit} day ${n.drillDay}`,
         problem: `${n.node}: ${n.targeted} bank rows target it (minimum ${MIN.targeted})`,
         fix: `queue a top-up: npx tsx tools/burn/load-topup.ts --node ${n.node}`,
       });
