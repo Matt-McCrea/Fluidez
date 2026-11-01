@@ -150,6 +150,80 @@ describe('the ladder', () => {
   });
 });
 
+describe('the ladder places a strong learner where they got to', () => {
+  const level = (unit: number, n = 30) => ({ unit, items: Array.from({ length: n }, (_, k) => ({ id: `${unit}:${k}`, kind: 'form', sentence: '', unit, ask: '', prompt: { text: '', lang: 'en' }, options: [], answer: 0 } as ProbeItem)) });
+  /** the course's own shape: 14 A1 weeks, 13 A2, 14 B1, 10 B2, 9 C1 */
+  const bandOf = (u: number) => (u < 14 ? 'A1' : u < 27 ? 'A2' : u < 41 ? 'B1' : u < 51 ? 'B2' : 'C1');
+  const course = Array.from({ length: 60 }, (_, u) => level(u));
+  const starts = [undefined, 'A1', 'A2', 'B1', 'B2', 'C1'] as const;
+  /** one run: `answer(n, unit)` says whether the nth item, from this unit, is answered right */
+  const play = (start: (typeof starts)[number], answer: (n: number, unit: number) => boolean) => {
+    const p = ladder(course, bandOf, MAX_ITEMS, { start });
+    const asked: number[] = [];
+    for (let it = p.next(); it; it = p.next()) { p.answer(answer(asked.length, it.unit)); asked.push(it.unit); }
+    return { result: p.result(), asked };
+  };
+
+  for (const start of starts) {
+    it(`rated ${start ?? 'nothing'}: answering everything right never starts at week 1, and not below the last level reached`, () => {
+      const { result, asked } = play(start, () => true);
+      expect(result).toBeGreaterThan(0);
+      expect(result - 1).toBeGreaterThanOrEqual(Math.max(...asked));
+    });
+
+    it(`rated ${start ?? 'nothing'}: one miss anywhere never starts at week 1 and never beats a perfect run`, () => {
+      const perfect = play(start, () => true).result;
+      for (let miss = 0; miss < MAX_ITEMS + 3; miss++) {
+        const { result } = play(start, (n) => n !== miss);
+        expect(result, `miss at ${miss}`).toBeGreaterThan(0);
+        expect(result, `miss at ${miss}`).toBeLessThanOrEqual(perfect);
+      }
+    });
+
+    it(`rated ${start ?? 'nothing'}: knowing more never places a learner earlier`, () => {
+      // someone who knows every level up to T, for each T, and the same with one level they miss
+      let before = 0;
+      for (let T = -1; T < 60; T++) {
+        const r = play(start, (_, u) => u <= T).result;
+        expect(r, `knows up to ${T}`).toBeGreaterThanOrEqual(before);
+        before = r;
+        for (let hole = 0; hole <= T; hole += 7) expect(play(start, (_, u) => u <= T && u !== hole).result, `knows up to ${T} but not ${hole}`).toBeLessThanOrEqual(r);
+      }
+      // and any set of levels they know, with one more level added
+      let seed = 7;
+      const rnd = () => { seed = (seed * 1103515245 + 12345) & 0x7fffffff; return seed / 0x7fffffff; };
+      for (let k = 0; k < 120; k++) {
+        const knows = Array.from({ length: 60 }, () => rnd() < 0.6);
+        const base = play(start, (_, u) => knows[u]);
+        for (let u = 0; u < 60; u += 5) {
+          if (knows[u]) continue;
+          const more = knows.slice(); more[u] = true;
+          expect(play(start, (_, x) => more[x]).result, `set ${k}, adding level ${u}`).toBeGreaterThanOrEqual(base.result);
+        }
+      }
+    });
+  }
+
+  it('a learner who misses everything is still started at the beginning', () => {
+    for (const start of starts) expect(play(start, () => false).result).toBe(0);
+  });
+});
+
+describe('placement on the real check, from each thing a learner can say they are', () => {
+  const bandOf = (u: number) => upper.course.units[u]?.band;
+  const order = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+  let levels: ReturnType<typeof probeLevels>;
+  beforeAll(() => { levels = probeLevels(upper, 'learner-perfect'); }, 120_000);
+  for (const start of ['A1', 'A2', 'B1', 'B2'] as const) {
+    it(`rated ${start}: answering everything right does not start at week 1 or in a band below it`, () => {
+      const p = ladder(levels, bandOf, MAX_ITEMS, { start });
+      for (let it = p.next(); it; it = p.next()) p.answer(true);
+      expect(p.result()).toBeGreaterThan(0);
+      expect(order.indexOf(bandOf(Math.max(0, p.result() - 1))!)).toBeGreaterThanOrEqual(order.indexOf(start));
+    });
+  }
+});
+
 describe('seeding the skipped weeks', () => {
   const T0 = new Date(2026, 9, 1, 18).getTime();
   const place = async (unit: number) => {
