@@ -5,15 +5,23 @@
  * ========================================================================== */
 import type { BankSentence } from '../content/schema';
 import { normEnglish } from '../check/translate/english';
+import { bankIndex } from './bank-index';
 import { productionView } from './dialogue';
 import { itemId } from './rng';
 import type { TranslateItem } from './types';
 
+/** The bank by the English a row can be answered with (its own and each acceptEn, normalised), in bank order. */
+const byEnglish = bankIndex(() => new Map<string, BankSentence[]>(), (m, s) => {
+  for (const k of new Set([normEnglish(s.en), ...(s.acceptEn ?? []).map((e) => normEnglish(e))])) {
+    const rows = m.get(k);
+    if (rows) rows.push(s); else m.set(k, [s]);
+  }
+});
+
 /** Other Spanish the bank pairs with the same English: all of it is right
  *  (the acceptFor idea from js/gameitems.js). */
 export function corpusAlternatives(bank: readonly BankSentence[], s: BankSentence): string[] {
-  const k = normEnglish(s.en);
-  return bank.filter((b) => b.id !== s.id && !/\n/.test(b.es) && (normEnglish(b.en) === k || b.acceptEn.some((e) => normEnglish(e) === k))).map((b) => b.es);
+  return (byEnglish(bank).get(normEnglish(s.en)) ?? []).filter((b) => b.id !== s.id && !/\n/.test(b.es)).map((b) => b.es);
 }
 
 export interface TranslationOptions {

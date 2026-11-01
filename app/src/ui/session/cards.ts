@@ -15,6 +15,7 @@ import {
   ALL_FEATURES, checkItem, chooseItem, form, lexGapItem, parseClause, rng, shuffle, structuredInput,
   recombinations, transformItems, translationItems, typeFormItem, type Item as ExItem,
 } from '../../exercises';
+import { bankIndex } from '../../exercises/bank-index';
 import { INTERCHANGEABLE } from '../../exercises/lexeme';
 import { fixBreaks, isMultiTurn, productionView, turnView, turnViews, type TurnView } from '../../exercises/dialogue';
 import { englishVariants } from './engvariants';
@@ -83,26 +84,39 @@ const norm = (s: string) => deaccent(s.toLowerCase()).replace(/[^\p{L}\p{N}\s]/g
 
 // ---------------------------------------------------------------- distractors
 
-/** Up to n other English sentences from the bank, stable for (key), never equal to the right one. */
-function otherEnglish(b: Bundle, right: string, key: string, n = 2, unit?: string): string[] {
-  const r = rng(key);
+/** The bank once per bundle, for distractors: every row with the text it is compared by, and the rows of each unit (both in bank order). */
+interface Row { s: BankSentence; en: string; es: string }
+const bankRows = bankIndex(() => ({ all: [] as Row[], unit: new Map<string, Row[]>() }), (pool, s) => {
+  const row = { s, en: norm(s.en), es: norm(s.es) };
+  pool.all.push(row);
+  if (!s.unit) return;
+  const rows = pool.unit.get(s.unit);
+  if (rows) rows.push(row); else pool.unit.set(s.unit, [row]);
+});
+
+/** The sentences a distractor is drawn from: those of the unit when there are n of them, else the whole bank; never equal to `right` on `side`. */
+function distractorPool(b: Bundle, side: 'en' | 'es', right: string, n: number, unit?: string): BankSentence[] {
+  const rows = bankRows(b.bank);
   const k = norm(right);
-  const pool = b.bank.filter((s) => norm(s.en) !== k);
-  const near = unit ? pool.filter((s) => s.unit === unit) : [];
-  const picked = shuffle(near.length >= n ? near : pool, r).map((s) => s.en);
+  const differs = (r: Row) => r[side] !== k;
+  const near = unit ? (rows.unit.get(unit) ?? []).filter(differs) : [];
+  return (near.length >= n ? near : rows.all.filter(differs)).map((r) => r.s);
+}
+
+/** Up to n other English sentences from the bank, stable for (key), never equal to the right one. */
+export function otherEnglish(b: Bundle, right: string, key: string, n = 2, unit?: string): string[] {
+  const r = rng(key);
+  const picked = shuffle(distractorPool(b, 'en', right, n, unit), r).map((s) => s.en);
   const out: string[] = [];
   for (const p of picked) { if (!out.some((o) => norm(o) === norm(p))) out.push(p); if (out.length >= n) break; }
   return out;
 }
 
 /** Up to n other Spanish sentences from the bank (same unit when it can), never equal to the right one. */
-function otherSpanish(b: Bundle, right: string, key: string, n = 2, unit?: string): string[] {
+export function otherSpanish(b: Bundle, right: string, key: string, n = 2, unit?: string): string[] {
   const r = rng(`${key}:es`);
-  const k = norm(right);
-  const pool = b.bank.filter((s) => norm(s.es) !== k);
-  const near = unit ? pool.filter((s) => s.unit === unit) : [];
   const out: string[] = [];
-  for (const p of shuffle(near.length >= n ? near : pool, r).map((s) => s.es)) {
+  for (const p of shuffle(distractorPool(b, 'es', right, n, unit), r).map((s) => s.es)) {
     if (!out.some((o) => norm(o) === norm(p))) out.push(p);
     if (out.length >= n) break;
   }
