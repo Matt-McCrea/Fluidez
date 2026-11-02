@@ -3,6 +3,7 @@
 // session, so a half-memory plus elimination is not enough to pass.
 import { beforeAll, describe, expect, it } from 'vitest';
 import type { ReviewItem } from '../../src/compiler';
+import { isMultiTurn, turnViews } from '../../src/exercises/dialogue';
 import type { Bundle } from '../../src/ui/data/bundle';
 import { ContentLoader } from '../../src/ui/data/loader';
 import { receptiveFormat, reviewCard, type Card } from '../../src/ui/session/cards';
@@ -55,7 +56,9 @@ describe('receptive review variety', () => {
     for (const { it, card } of cards()) {
       if (card.type !== 'type' || card.answerLang !== 'en') continue;
       n++;
-      const s = b.sentence(it.sentence)!;
+      const row = b.sentence(it.sentence)!;
+      // an exchange with no neighbours to choose among has one turn typed, the one on the card
+      const s = isMultiTurn(row) ? turnViews(row).map((v) => v.sentence).find((v) => v.es === card.prompt?.text)! : row;
       expect(card.check(s.en).pass, s.en).toBe(true);
       for (const a of s.acceptEn ?? []) expect(card.check(a).pass, a).toBe(true);
       expect(card.check('zzz qqq').pass).toBe(false);

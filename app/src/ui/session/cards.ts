@@ -21,7 +21,7 @@ import { askedOfYou } from '../../exercises/addressee';
 import { namesOf, placesOf } from '../../exercises/licence';
 import { givesAwayByLength, givesAwayByTag, nearest } from '../../exercises/neighbours';
 import { recombineTurn } from '../../exercises/recombine';
-import { fixBreaks, isMultiTurn, productionView, turnView, type TurnView } from '../../exercises/dialogue';
+import { fixBreaks, isMultiTurn, productionView, turnView, turnViews, type TurnView } from '../../exercises/dialogue';
 import { englishVariants } from './engvariants';
 import { hash32 } from '../../exercises/rng';
 import type { Feature, RecombineItem, TransformItem } from '../../exercises/types';
@@ -178,7 +178,8 @@ function neighbourNodes(b: Bundle, node: NodeId, seg: Segment, key: string, side
     extra: (id) => {
       const at = b.course.teachPos.get(id) ?? Infinity;
       // taught long before or after: further away; taught after: not yet met, further still
-      return Math.min(Math.abs(at - here), 200) / 400 + (at > here ? 0.25 : 0) + (b.node(id)?.band === me.band ? 0 : 0.2);
+      // (two nodes the course does not place are no distance apart: Infinity - Infinity would make the sort's order the engine's own)
+      return Math.min(at === here ? 0 : Math.abs(at - here), 200) / 400 + (at > here ? 0.25 : 0) + (b.node(id)?.band === me.band ? 0 : 0.2);
     },
   });
   return picked.map((id) => b.segments(id)[0][side]);
@@ -394,9 +395,9 @@ function typeMeaning(key: string, esText: string, enFull: string, acceptEn: read
   };
 }
 
-/** The meaning of a sentence, typed; of an exchange, its reply, since nobody is asked to type two people talking (the other cards never do). Undefined for an exchange whose turns do not line up. */
+/** The meaning of a sentence, typed; of an exchange, its fullest turn, since nobody is asked to type two people talking (the other cards never do) and "T, i, n, t, o." says nothing alone. Undefined for an exchange whose turns do not line up. */
 function typedMeaning(key: string, s: BankSentence, why: string): TypeCard | undefined {
-  const turn = productionView(s)?.sentence;
+  const turn = turnViews(s).map((v) => v.sentence).reduce<BankSentence | undefined>((a, v) => (!a || wordCount(v.es) > wordCount(a.es) ? v : a), undefined);
   return turn && typeMeaning(key, turn.es, turn.en, turn.acceptEn ?? [], why);
 }
 
