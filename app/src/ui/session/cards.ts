@@ -19,7 +19,7 @@ import { bankIndex } from '../../exercises/bank-index';
 import { INTERCHANGEABLE } from '../../exercises/lexeme';
 import { askedOfYou } from '../../exercises/addressee';
 import { namesOf, placesOf } from '../../exercises/licence';
-import { nearest } from '../../exercises/neighbours';
+import { givesAwayByLength, nearest } from '../../exercises/neighbours';
 import { recombineTurn } from '../../exercises/recombine';
 import { fixBreaks, isMultiTurn, productionView, turnView, type TurnView } from '../../exercises/dialogue';
 import { englishVariants } from './engvariants';
@@ -390,9 +390,9 @@ function typeMeaning(key: string, esText: string, enFull: string, acceptEn: read
 }
 
 /** What a sentence means, asked as a choice among near neighbours. Fewer than two of them and it is typed, since a choice of two with nothing alike to pick from is a free pass; an exchange of several turns cannot be typed, so it keeps its one. */
-function meaningChoice(key: string, s: BankSentence, b: Bundle, why: string, ask = MEANS): Card {
+function meaningChoice(key: string, s: BankSentence, b: Bundle, why: string): Card {
   const wrong = otherEnglish(b, s, key, 2);
-  return wrong.length >= 2 || (wrong.length && isMultiTurn(s)) ? mcq(key, ask, es(s.es), en(s.en), wrong.map(en), why) : typeMeaning(key, s.es, s.en, s.acceptEn ?? [], why);
+  return wrong.length >= 2 || (wrong.length && isMultiTurn(s)) ? mcq(key, MEANS, es(s.es), en(s.en), wrong.map(en), why) : typeMeaning(key, s.es, s.en, s.acceptEn ?? [], why);
 }
 
 /** What a word or phrase means, the same way. */
@@ -678,9 +678,9 @@ export function scriptCard(item: ScriptItem, script: TeachingScript): Card | und
 
 // ---------------------------------------------------------------- practice on bank sentences
 
-function meaningCard(item: PracticeItem, s: BankSentence, b: Bundle, ask = 'What does this mean?'): Card {
+function meaningCard(item: PracticeItem, s: BankSentence, b: Bundle): Card {
   const seg = b.segments(item.node)[0];
-  return meaningChoice(item.id, s, b, seg ? `${seg.es} means "${seg.en}".` : `It means "${s.en}".`, ask);
+  return meaningChoice(item.id, s, b, seg ? `${seg.es} means "${seg.en}".` : `It means "${s.en}".`);
 }
 
 function translateCard(item: PracticeItem, s: BankSentence, b: Bundle): Card {
@@ -781,6 +781,24 @@ export function recombineCard(item: PracticeItem, s: BankSentence, b: Bundle, se
   };
 }
 
+/**
+ * Read and pick, for a sentence that cannot carry a minimal pair of its own (no tense or person of it re-inflects safely). A meaning
+ * question among other sentences proves nothing about the form, and one known word answers it. So, in order: a read-and-pick the node's
+ * script wrote for exactly its point, one that does not give itself away by its length and not always the same one; else the sentence asked
+ * for typing, which the form cannot be dodged in.
+ */
+function pickFallback(item: PracticeItem, s: BankSentence, b: Bundle): Card {
+  const script = b.scripts.get(item.node);
+  if (script?.readAndPick.length) {
+    const fair = script.readAndPick.flatMap((rp, i) => (givesAwayByLength(rp.options, rp.answer) ? [] : [i]));
+    const pool = fair.length ? fair : script.readAndPick.map((_, i) => i);
+    const index = pool[hash32(item.id) % pool.length];
+    const card = scriptCard({ op: 'readAndPick', id: item.id, node: item.node, index, scoring: item.scoring, credit: item.credit }, script);
+    if (card) return card;
+  }
+  return typeFormCard(item, s) ?? translateCard(item, s, b);
+}
+
 /** `taught`: the learner's licensed tenses (licensedTenses); distractors and contrast forms stay inside it. Omitted: no limit. */
 export function practiceCard(item: PracticeItem, b: Bundle, seed: number, taught?: readonly TenseKey[]): Card {
   const s = b.sentence(item.sentence);
@@ -797,7 +815,7 @@ export function practiceCard(item: PracticeItem, b: Bundle, seed: number, taught
           };
         }
       }
-      return meaningCard(item, s, b, 'Read and pick. What does it mean?');
+      return pickFallback(item, s, b);
     }
     case 'choose': {
       const it = chooseItem(s, { seed: item.id, taught });

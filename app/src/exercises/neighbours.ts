@@ -201,3 +201,11 @@ export function nearest<T>(right: Pair, pool: Iterable<T>, o: Near<T>): T[] {
   }
   return out.map((x) => x.c);
 }
+
+// ---------------------------------------------------------------- length
+
+/** Is the right option the longest by itself, by more than a couple of letters: the one thing a reader who reads nothing can see. */
+export function givesAwayByLength(options: readonly string[], answer: number): boolean {
+  const right = options[answer]?.length ?? 0;
+  return options.every((o, i) => i === answer || right > o.length + 2);
+}
