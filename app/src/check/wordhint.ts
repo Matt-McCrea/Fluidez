@@ -7,9 +7,17 @@
  * estar, por and para, the shapes of one verb) are checked before spelling.
  * ========================================================================== */
 import { isTypo, relationHint, type GapKind } from './translate/hints';
+import { gapTrap, type GapContext } from './traps';
 
 export type WordHintKind = GapKind | 'other-word';
-export interface WordHint { kind: WordHintKind; hint: string }
+export interface WordHint {
+  kind: WordHintKind;
+  hint: string;
+  /** The trap rule that named the cause, on an Assert alone (check/traps). */
+  rule?: string;
+  /** The hint asks and does not claim: the typed word may be right. */
+  ask?: boolean;
+}
 
 export const WORD_HINT = {
   person: 'Right verb, but who is doing it?',
@@ -22,7 +30,15 @@ const clean = (s: string) => s.toLowerCase().replace(/[.,;:!?¡¿"“”]/g, '')
 /** A hint for a wrong typed word or chunk that is not just an accent slip, or
  *  undefined when nothing specific can be said. `want` is the English of the
  *  word the gap asks for; give it only for a gap (a chunk has no single word to name). */
-export function wordHint(input: string, answers: readonly string[], want?: string): WordHint | undefined {
+export function wordHint(input: string, answers: readonly string[], want?: string, ctx: Partial<GapContext> = {}): WordHint | undefined {
+  const plain = plainHint(input, answers, want);
+  if (!plain) return undefined;
+  // a mood is asserted only after an opener from the closed list, an aspect only with the English to lock it (check/traps)
+  const t = gapTrap(plain, { ...ctx, answer: ctx.answer ?? answers[0] ?? '' });
+  return t ? { kind: t.kind as WordHint['kind'], hint: t.hint, ...(t.rule ? { rule: t.rule } : {}), ...(t.tier === 'ask' ? { ask: true } : {}) } : plain;
+}
+
+function plainHint(input: string, answers: readonly string[], want?: string): WordHint | undefined {
   const typed = clean(input);
   if (!typed || !answers.length) return undefined;
   const oneWord = !/\s/.test(typed);

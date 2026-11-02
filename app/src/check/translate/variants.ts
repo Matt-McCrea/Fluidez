@@ -23,7 +23,7 @@ import {
 import { clauseOrderVariants, movedPhraseVariants } from './reorder';
 import { changed, type Swap } from './swaps';
 import { agreeWithNoun, synonymVariants } from './synonyms';
-import { futureVariants, perfectoVariants } from './tense-swaps';
+import { copulaVariants, futureVariants, perfectoVariants } from './tense-swaps';
 
 export type Register = 'tú' | 'usted' | 'ustedes' | 'vosotros';
 
@@ -37,6 +37,8 @@ export interface Variant {
   model?: boolean;
   /** What this form changed in the card's own sentence. A pass through a swap that touches what the card teaches says so (R13). */
   swaps?: Swap[];
+  /** The Note rule this form belongs to (check/traps): right Spanish that carries a point, and says it on the pass. */
+  trap?: string;
 }
 
 /** Latin American word → Peninsular word. Nouns carry the Peninsular gender
@@ -507,7 +509,7 @@ export function expandAccepted(s: { es: string; en: string; accept?: readonly st
     const ts = toToks(v.es);
     for (const r of clauseOrderVariants(v.es, ts)) add(grown(v, r, 'clause-order'));
     for (const r of movedPhraseVariants(v.es, ts)) add(grown(v, r, 'moved-phrase'));
-    for (const x of [...futureVariants(v.es, s.en), ...perfectoVariants(v.es, s.en), ...synonymVariants(v.es, s.en)]) add({ ...v, es: x.es, model: false, swaps: [...(v.swaps ?? []), x.swap] });
+    for (const x of [...futureVariants(v.es, s.en), ...perfectoVariants(v.es, s.en), ...synonymVariants(v.es, s.en), ...copulaVariants(v.es)]) add({ ...v, es: x.es, model: false, swaps: [...(v.swaps ?? []), x.swap] });
   }
   for (const es of opts.peninsular ?? []) add({ es, variant: 'peninsular' });
   for (const v of out.slice()) {

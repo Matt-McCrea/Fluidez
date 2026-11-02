@@ -84,15 +84,15 @@ const WRONG: Wrong[] = [
   { es: 'Me gusta el café.', en: 'I like coffee.', input: 'Yo me gusta el café.', kind: 'experiencer', hint: /gustar/ },
   { es: 'A ella le gusta el café.', en: 'She likes coffee.', input: 'Ella le gusta el café.', kind: 'experiencer', hint: /gustar/ },
   // ser for estar, and the closed pair the course teaches apart
-  { es: 'Estoy aburrido.', en: "I'm bored.", input: 'Soy aburrido.', kind: 'ser-estar', hint: /Ser or estar/ },
+  { es: 'Estoy aburrido.', en: "I'm bored.", input: 'Soy aburrido.', kind: 'ser-estar', hint: /changes meaning with ser and estar/ },
   // the mood, not the ending
-  { es: 'Quiero que vengas.', en: 'I want you to come.', input: 'Quiero que vienes.', kind: 'mood', hint: /only held up as an idea/ },
+  { es: 'Quiero que vengas.', en: 'I want you to come.', input: 'Quiero que vienes.', kind: 'mood', hint: /holds an idea up/ },
   // not the verb, not the spelling: a different word, said as that
   { es: 'Tengo treinta años.', en: "I'm thirty years old.", input: 'Soy treinta.', kind: 'differs' },
-  { es: 'Tengo treinta años.', en: "I'm thirty years old.", input: 'Soy treinta años.', kind: 'wrong-word', hint: /"soy"/ },
+  { es: 'Tengo treinta años.', en: "I'm thirty years old.", input: 'Soy treinta años.', kind: 'wrong-word', hint: /tener/ },
   { es: 'Fui a la tienda a comprar leche.', en: 'I went to the store to buy milk.', input: 'Fui a la tienda por comprar leche.', kind: 'wrong-word', hint: /"por"/ },
   // an extra word, and nothing else wrong
-  { es: 'Estoy buscando mi llave.', en: "I'm looking for my key.", input: 'Estoy buscando para mi llave.', kind: 'extra-word', hint: /"para"/ },
+  { es: 'Estoy buscando mi llave.', en: "I'm looking for my key.", input: 'Estoy buscando para mi llave.', kind: 'extra-word', hint: /already means "look for"/ },
 ];
 
 describe('wrong answers fail, for the reason that is true', () => {

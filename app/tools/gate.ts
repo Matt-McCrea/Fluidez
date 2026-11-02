@@ -52,6 +52,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { checkBank, checkComputed, checkDashes, checkStrings, checkStructure, readingCoverage, chapterLength, daySupply, type RunState } from './gate/checks';
 import { checkContinuity, idsOfLoaded, readLegacyPath, readMigrationFiles, readShippedIds, unpackShipped } from './gate/continuity';
 import { checkLibrary } from './build/library';
+import { checkPitfalls } from './build/pitfalls';
 import { collectItems, frameOveruse, nearDuplicates, loadQuotas, supply } from './gate/corpus';
 import { render, type Finding } from './gate/findings';
 import { buildCurriculum, listJson, loadFile, resolveTargets, type Loaded } from './gate/load';
@@ -142,7 +143,7 @@ export function runGate(o: GateOptions = {}): GateResult {
   }
 
   // the chapter metadata the app ships is what the story files say (a course with no library is not checked)
-  if (whole) findings.push(...checkLibrary(contentDir));
+  if (whole) findings.push(...checkLibrary(contentDir), ...checkPitfalls(contentDir));
 
   if (st.unmapped.size) {
     const list = [...st.unmapped.entries()].sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k}×${v}`).join(', ');

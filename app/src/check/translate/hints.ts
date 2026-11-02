@@ -23,7 +23,7 @@ import {
 export type HintKind =
   | 'accents' | 'verb-ending' | 'article' | 'agreement' | 'word-order' | 'missing-word' | 'extra-word'
   | 'pronoun' | 'subject' | 'ser-estar' | 'por-para' | 'spelling' | 'attach' | 'wrong-word' | 'empty' | 'fragment'
-  | 'experiencer' | 'experiencer-agree' | 'mood' | 'aspect' | 'nonfinite' | 'contraction' | 'number' | 'differs';
+  | 'experiencer' | 'experiencer-agree' | 'mood' | 'aspect' | 'nonfinite' | 'contraction' | 'number' | 'differs' | 'pitfall';
 /** What a gap with one typed word can say: the sentence kinds, plus who and when on their own. */
 export type GapKind = HintKind | 'person' | 'tense';
 
@@ -75,7 +75,7 @@ export function levenshtein(a: string, b: string): number {
   return d[m][n];
 }
 
-type Op = { op: 'eq' | 'sub' | 'ins' | 'del'; a?: string; b?: string; i: number; j: number };
+export type Op = { op: 'eq' | 'sub' | 'ins' | 'del'; a?: string; b?: string; i: number; j: number };
 
 /** Token alignment, input (a) against expected (b). Accent-only pairs cost
  *  almost nothing, so they align with each other. */
@@ -120,8 +120,10 @@ interface Form { lemma: string; kind: 'finite' | 'inf' | 'ger' | 'part'; tense?:
 
 /** Every way a token reads as a form of a verb the course teaches. */
 function formsOf(w: string): Form[] {
+  // a form with its accents as written is that form: llegué is the preterite, not also the "llegue" it would be without the accent
+  const written = readings(w).filter((a) => a.accentExact);
   // a command is read as one only when nothing else fits: llueve is not also "llueva, usted"
-  const all = readings(w).filter((a) => a.target !== false);
+  const all = (written.length ? written : readings(w)).filter((a) => a.target !== false);
   const plain = all.filter((a) => a.tense !== 'imperativo' && a.tense !== 'impneg');
   const out: Form[] = (plain.length ? plain : all).map((a) => ({ lemma: lemma(a.inf), kind: 'finite', tense: a.tense, person: a.person }));
   if (isInfinitive(w)) out.push({ lemma: lemma(w), kind: 'inf' });

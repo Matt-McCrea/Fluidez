@@ -44,8 +44,10 @@ export interface Check {
   variant?: 'peninsular';
   /** passed through a synonym the course did not teach: counts, but as Hard */
   lenient?: boolean;
-  /** the trap rule that named the slip, when one did (see src/check/traps) */
+  /** the trap rule that named the slip, when one did: an Assert, and nothing else (see src/check/traps) */
   rule?: string;
+  /** the hint asks and does not claim an error: the answer may be right (an Ask, see src/check/traps) */
+  ask?: boolean;
   /** passed through a swap the card did not teach but Spanish allows: said on the pass screen */
   note?: string;
 }
@@ -213,7 +215,7 @@ export function sentenceCheck(s: Pick<BankSentence, 'es' | 'en' | 'accept'>, nod
     const r = matchTranslation(input, { es: s.es, en: s.en, accept: s.accept }, node ? { ...SENTENCE_ACCENTS, targets: [node] } : SENTENCE_ACCENTS);
     const len = r.pass ? undefined : lenientSwap(input, r);
     if (len) return { pass: true, lenient: true, hint: `We'd say ${r.closest}; ${len} works too.`, answer: s.es };
-    return { pass: r.pass, near: r.pass && r.note ? undefined : r.near, hint: r.hint, hintKind: r.hintKind, answer: r.pass ? s.es : r.closest, variant: r.variant, note: r.note };
+    return { pass: r.pass, near: r.pass && r.note ? undefined : r.near, hint: r.hint, hintKind: r.hintKind, answer: r.pass ? s.es : r.closest, variant: r.variant, note: r.note, ...(r.rule ? { rule: r.rule } : {}), ...(r.ask ? { ask: true } : {}) };
   };
 }
 
@@ -233,14 +235,16 @@ export function chunkCheck(answers: string[]) {
 /** A typed gap (a verb form or a lexeme): the exercise's own check, plus a
  *  hint about the word itself when the miss is not an accent slip. `want` is
  *  the English the gap asks for (lexeme gaps only). */
-function itemCheck(item: ExItem, want?: string, node?: NodeId) {
+export function itemCheck(item: ExItem, want?: string, node?: NodeId) {
   return (input: string): Check => {
     const r = checkItem(item, input, node ? { ...SENTENCE_ACCENTS, targets: [node] } : SENTENCE_ACCENTS);
     if (!r.pass && !r.near && !r.hint && (item.kind === 'typeForm' || item.kind === 'lexGap')) {
-      const w = wordHint(input, [item.answer, ...item.accept], item.kind === 'lexGap' ? want : undefined);
-      if (w) return { pass: false, hint: w.hint, hintKind: w.kind, answer: r.answer };
+      // the gap's sentence and its English are what a lone word cannot see: they decide whether a mood or an aspect is asserted or asked
+      const before = item.gapped.split('___')[0].toLowerCase().split(/[^\p{L}]+/u).filter(Boolean);
+      const w = wordHint(input, [item.answer, ...item.accept], item.kind === 'lexGap' ? want : undefined, { before, en: item.en, answer: item.answer });
+      if (w) return { pass: false, hint: w.hint, hintKind: w.kind, answer: r.answer, ...(w.rule ? { rule: w.rule } : {}), ...(w.ask ? { ask: true } : {}) };
     }
-    return { pass: r.pass, near: r.pass && r.note ? undefined : r.near, hint: r.hint, hintKind: r.hintKind, answer: r.answer, variant: r.variant, note: r.note };
+    return { pass: r.pass, near: r.pass && r.note ? undefined : r.near, hint: r.hint, hintKind: r.hintKind, answer: r.answer, variant: r.variant, note: r.note, ...(r.rule ? { rule: r.rule } : {}), ...(r.ask ? { ask: true } : {}) };
   };
 }
 

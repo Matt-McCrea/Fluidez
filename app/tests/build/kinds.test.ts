@@ -25,7 +25,8 @@ describe('the content kinds registry', () => {
   });
 
   it('is the list the loader has a glob for, kind for kind', () => {
-    const globbed = Object.keys(CONTENT_FILES).filter((k) => k !== 'history' && k !== 'library').sort();
+    // history, the library and the pitfalls are derived and imported on their own, from folders that begin with an underscore
+    const globbed = Object.keys(CONTENT_FILES).filter((k) => k !== 'history' && k !== 'library' && k !== 'pitfalls').sort();
     expect(globbed).toEqual([...contentDirs()].sort());
   });
 

@@ -19,6 +19,7 @@ import {
 import { Library, type LibraryChapter } from '../../content/library';
 import { readContentHistory, type ContentHistory } from '../../content/migrations';
 import { isCoreFile, lackKey, type ContentDir } from '../../content/kinds';
+import { registerPitfalls, type PitfallFile } from '../../check/traps/pitfalls';
 import { Bundle } from './bundle';
 
 export type FileLoader = () => Promise<unknown>;
@@ -30,6 +31,8 @@ export interface ContentFiles extends Record<ContentDir, FileMap> {
   history?: { migrations: Record<string, unknown>; legacy?: unknown };
   /** the chapter metadata (src/content/library.ts), imported on its own: no content glob covers an underscore folder; absent = the story is only what is loaded */
   library?: Record<string, unknown>;
+  /** the wrong sentences of the lessons (src/check/traps/pitfalls.ts), fetched once alongside the course and handed to the checker; absent = no pitfalls */
+  pitfalls?: FileMap;
 }
 
 /** The kinds of content file that load lazily, window by window. */
@@ -45,6 +48,7 @@ export const CONTENT_FILES: ContentFiles = {
   scenes: import.meta.glob(['/content/scenes/**/*.json', '!**/_*'], { import: 'default', eager: false }),
   writing: import.meta.glob(['/content/writing/**/*.json', '!**/_*'], { import: 'default', eager: false }),
   library: import.meta.glob('/content/_library/library.json', { import: 'default', eager: true }),
+  pitfalls: import.meta.glob('/content/_pitfalls/pitfalls.json', { import: 'default', eager: false }),
   history: {
     migrations: import.meta.glob('/content/_migrations/*.json', { import: 'default', eager: true }),
     legacy: Object.values(import.meta.glob('/content/_shipped/path.json', { import: 'default', eager: true }))[0],
@@ -166,6 +170,9 @@ export class ContentLoader {
       const seen = new Set<string>();
       this.nodes = graphPaths.flatMap((p, i) => parseAll([graphRaw[i]], GraphNode, this.problems, p))
         .filter((n) => (seen.has(n.id) ? false : (seen.add(n.id), true)));
+      // the lessons' wrong sentences come in beside the course, not in front of it: a miss is minutes away, and a course without them speaks no pitfall
+      const pitfalls = Object.values(this.files.pitfalls ?? {})[0];
+      if (pitfalls) void pitfalls().then((file) => registerPitfalls(file as PitfallFile), () => undefined);
     }
     return { units: this.units, nodes: this.nodes };
   }

@@ -19,6 +19,7 @@ export type SwapKind =
   | 'future-ir-a'      // pagaré and voy a pagar
   | 'pret-perfecto'    // comí and he comido
   | 'cond-ra'          // querría and quisiera, podría and pudiera, debería and debiera
+  | 'copula'           // es feliz and está feliz: an adjective that takes either
   | 'result-clause'    // habría llegado and hubiera llegado
   | 'ra-se'            // hablara and hablase
   | 'peninsular'       // coche for carro
@@ -42,6 +43,7 @@ const FAMILY: Readonly<Record<SwapKind, RegExp | null>> = {
   'future-ir-a': /(^|[:-])(future|ir-a)(-|$)/,
   'pret-perfecto': /(^|[:-])(preterite|perfecto|pret|narrative-pasts|spain-pasts)(-|$)/,
   'cond-ra': /(^|[:-])(conditional|softening|imperfect-subj|deber-modal|tense-modal-uses)(-|$)/,
+  copula: /(^|[:-])(ser|estar)(-|$)/,
   'result-clause': /(conditional-perfect|si-past-unreal|conditional-advanced|pluperfect-subj)/,
   synonym: null,
   'ra-se': null,

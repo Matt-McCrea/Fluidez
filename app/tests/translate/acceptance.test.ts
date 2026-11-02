@@ -53,7 +53,7 @@ describe('wrong answers: no false accepts', () => {
   const all = WRONG.flatMap((w) => w.bad.map((input) => ({ tag: w.tag, es: w.es, en: w.en, accept: w.accept, input })));
 
   test('the battery is the contrastive review\'s, less the answers that are right', () => {
-    expect(all.length).toBe(264);
+    expect(all.length).toBe(263);
   });
 
   test.each(all.map((a) => [a.tag, a.es, a.input, a] as const))('%s: "%s" is not "%s"', (_t, _e, _i, a) => {
@@ -90,6 +90,6 @@ describe('a call costs milliseconds', () => {
     for (const a of PARAPHRASES) check(a);
     for (const w of WRONG) for (const input of w.bad) check({ es: w.es, en: w.en, accept: w.accept, input });
     const ms = performance.now() - t0;
-    expect(ms, `${ms.toFixed(0)} ms for ${PARAPHRASES.length + 264} answers`).toBeLessThan(4000);
+    expect(ms, `${ms.toFixed(0)} ms for ${PARAPHRASES.length + 263} answers`).toBeLessThan(4000);
   });
 });

@@ -269,7 +269,7 @@ describe('hints: one plain-English reason, located at the first difference', () 
     ['u04-9', 'El mesa es grande.', 'article', /mesa is feminine/],
     ['u01-5', 'Ella trabaja en una banco.', 'article', /banco is masculine/],
     ['u06-5', 'Busco la llaves.', 'article', /more than one/],
-    ['u01-6', 'Soy cansado.', 'ser-estar', /Ser or estar/],
+    ['u01-6', 'Soy cansado.', 'ser-estar', /changes meaning with ser and estar/],
     ['u03-1', 'La sopa es fría.', 'ser-estar'],
     ['u03-6', 'Este regalo es por ti.', 'por-para'],
     ['u03-5', 'Trabajo para mi familia.', 'por-para'],

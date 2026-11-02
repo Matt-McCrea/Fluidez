@@ -15,7 +15,8 @@
  * time on it ("ayer comí") is not a perfecto. When the English does not rule
  * the swap in, there is none.
  * ========================================================================== */
-import { participle, verbByInf } from '../../engine';
+import { PERSONS, participle, verbByInf } from '../../engine';
+import type { Person } from '../../engine';
 import { form, goingTo } from '../../exercises/reinflect';
 import {
   enWords, finiteCandidates, insertTok, low, parseClause, participleOf, render, replaceCore, splitEnclitic, toToks, verbReadings,
@@ -141,7 +142,7 @@ function sameEvent(toks: readonly Tok[], en: string, verb: number, toPerfecto: b
 }
 
 /** The participle of a verb the engine knows, as it is spelled. */
-function participleFor(inf: string): string | null {
+export function participleFor(inf: string): string | null {
   const v = verbByInf(inf) ?? verbByInf(bareInf(inf)) ?? verbByInf(`${inf}se`);
   try { return v ? participle(v) : null; } catch { return null; }
 }
@@ -183,5 +184,30 @@ export function perfectoVariants(es: string, en: string): Swapped[] {
     if (toPerfecto && sameEvent(toks, en, c.verb, true)) out.push({ es: toPerfecto, swap: { kind: 'pret-perfecto', ...changed(es, toPerfecto) } });
     if (toPreterite && sameEvent(toks, en, c.verb, false)) out.push({ es: toPreterite, swap: { kind: 'pret-perfecto', ...changed(es, toPreterite) } });
   }
+  return out;
+}
+
+// ---- ser and estar with an adjective that takes either ------------------------------------------------------------
+
+/** Adjectives that take both: es feliz is how she is, está feliz how she seems today. Seguro is not here (safe, sure), nor joven. */
+const OPEN_ADJECTIVE = /^(feliz|felices|casad[oa]s?|solter[oa]s?|tranquil[oa]s?)$/;
+const INTENSIFIER = /^(muy|tan|bastante|demasiado|realmente|súper)$/;
+
+/** "Es feliz" and "Está feliz": the other copula, for an adjective that takes either. Rejecting the one the card did not use is the error. */
+export function copulaVariants(es: string): Swapped[] {
+  const ts = toToks(es);
+  const out: Swapped[] = [];
+  ts.forEach((tok, i) => {
+    const readings = verbReadings(low(tok)).filter((r) => (r.inf === 'ser' || r.inf === 'estar') && ['presente', 'imperfecto', 'futuro'].includes(r.tense));
+    if (!readings.length) return;
+    const k = INTENSIFIER.test(low(ts[i + 1])) ? i + 2 : i + 1;
+    if (!OPEN_ADJECTIVE.test(low(ts[k]))) return;
+    const made = new Set<string>();
+    for (const r of readings) {
+      const f = PERSONS.includes(r.person as Person) ? form(r.inf === 'ser' ? 'estar' : 'ser', r.tense, r.person as Person) : null;
+      if (f && f !== low(tok)) made.add(render(replaceCore(ts, i, f)));
+    }
+    for (const to of made) out.push({ es: to, swap: { kind: 'copula', ...changed(es, to) } });
+  });
   return out;
 }

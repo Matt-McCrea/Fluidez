@@ -27,8 +27,10 @@ const LOCATED = new Set(['accents', 'article', 'verb-ending', 'wrong-word', 'agr
 /** "Almost." only when it is true: an accent slip, or a hint that names one
  *  located slip (an article, an ending, one wrong word, a missing small word).
  *  Everything else is "Not yet." */
-export function retryLead(check: Pick<Check, 'near' | 'hint' | 'hintKind'>): string {
+export function retryLead(check: Pick<Check, 'near' | 'hint' | 'hintKind'> & { ask?: boolean }): string {
   if (check.near) return 'Almost.';
+  // an Ask does not say it is wrong, so it does not say it is close
+  if (check.ask) return 'Not sure.';
   const k = check.hintKind;
   if (k && LOCATED.has(k)) return 'Almost.';
   if (k === 'missing-word' && check.hint === 'A small word is missing.') return 'Almost.';

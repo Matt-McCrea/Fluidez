@@ -16,6 +16,7 @@ import { CLITICS, enSubject, enWords, EXPERIENCER, verbReadings } from '../../ex
 import { advKey, canon, key, keyDeaccent, questionOrders, type Canon } from './canon';
 import { accentSlips, forgiven, mendSlips } from './accents';
 import { diagnose, distance, HINT_TEXT, type HintKind } from './hints';
+import { diagnose as trap, noteVariants, ruleOf } from '../traps';
 import { swapNote, type Swap } from './swaps';
 import { expandAccepted, type ExpandOptions, type Register, type Variant } from './variants';
 
@@ -39,6 +40,10 @@ export interface TranslationResult {
   note?: string;
   /** What the form that matched swapped in the card's own sentence (empty for the sentence itself). */
   swaps?: Swap[];
+  /** The trap rule that named the cause of the miss (check/traps): set on an Assert and on nothing else. */
+  rule?: string;
+  /** The hint asks and does not claim: the answer may be right (an Ask). */
+  ask?: boolean;
   /** The register of "you" the learner used, when the sentence has one. */
   register?: Register;
   /** The accepted form closest to the input: the one to show on reveal. */
@@ -149,6 +154,15 @@ export function matchTranslation(input: string, sentence: SentenceLike, opts: Ma
       expanded.push({ ...v, es, model: false });
     }
   }
+  // right Spanish that carries a point (está en for an event, the passive with ser): a pass with the point said
+  for (const v of expanded.slice()) {
+    if (v.swaps) continue;
+    for (const n of noteVariants(v.es)) {
+      if (seen.has(n.es)) continue;
+      seen.add(n.es);
+      expanded.push({ es: n.es, model: false, trap: n.rule });
+    }
+  }
   const variants = expanded.sort((a, b) => (a.variant ? 1 : 0) - (b.variant ? 1 : 0));
   const model = variants[0]?.es ?? sentence.es;
   const ci = canon(input);
@@ -178,7 +192,7 @@ export function matchTranslation(input: string, sentence: SentenceLike, opts: Ma
     if (sameToks && pronOk && advOk) {
       const slip = ci.accentSlips > 0 || encliticAccentSlip(ci, cv);
       if (slip) { nearHit ??= { v }; continue; }
-      const note = swapNote(v.swaps, opts.targets);
+      const note = [swapNote(v.swaps, opts.targets), v.trap ? ruleOf(v.trap)?.text : undefined].filter(Boolean).join(' ') || undefined;
       return {
         pass: true, closest: v.es,
         ...(v.variant ? { variant: v.variant } : {}), ...(v.register ? { register: v.register } : {}), ...(note ? { note } : {}), ...(v.swaps?.length ? { swaps: v.swaps } : {}),
@@ -226,7 +240,7 @@ export function matchTranslation(input: string, sentence: SentenceLike, opts: Ma
     if (d < bestD) { best = x; bestD = d; }
   }
   if (slip) {
-    return { pass: false, hint: HINT_TEXT.experiencer, hintKind: 'experiencer', closest: best.v.es, at: Math.max(0, ci.toks.findIndex((t) => CLITICS.has(t.t))) };
+    return { pass: false, hint: HINT_TEXT.experiencer, hintKind: 'experiencer', rule: 'exp-subject', closest: best.v.es, at: Math.max(0, ci.toks.findIndex((t) => CLITICS.has(t.t))) };
   }
   // canon finds a verb and a movable adverbial by their accents, so a slip on one (queria, tambien) hides the
   // sentence's shape from it and nothing above matched
@@ -237,6 +251,12 @@ export function matchTranslation(input: string, sentence: SentenceLike, opts: Ma
       if (right) return right;
     }
   }
-  const dg = diagnose(fi, flat(best.cv));
-  return { pass: false, hint: dg.hint, hintKind: dg.kind, closest: best.v.es, at: dg.at, ...(dg.kind === 'accents' ? { near: true } : {}) };
+  const fm = flat(best.cv);
+  const dg = diagnose(fi, fm);
+  // what the miss is called, and whether to say it: an Assert names a cause, an Ask does not claim one (check/traps)
+  const t = trap({ a: fi, b: fm, input, en: sentence.en, dg, nodes: opts.targets });
+  return {
+    pass: false, hint: t.hint, hintKind: t.kind, closest: best.v.es, at: t.at, ...(dg.kind === 'accents' ? { near: true } : {}),
+    ...(t.rule ? { rule: t.rule } : {}), ...(t.tier === 'ask' ? { ask: true } : {}),
+  };
 }

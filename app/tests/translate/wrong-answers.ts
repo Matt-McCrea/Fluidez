@@ -1,6 +1,7 @@
 // The contrastive review's battery of typical wrong answers: what an English speaker types, each against the sentence it
 // should have been. None may pass (0 false accepts), and none may be told something untrue. Used by the acceptance
 // test for the first and by the trap tests for the second. `accept` is the author's own list for that sentence.
+// La fiesta está en mi casa is not here either: the owner's default (O9) is a pass with a note.
 // The review listed 15 answers as wrong that are Spanish (Podía nadar, Vivo aquí hace dos años, Las personas están
 // contentas, Mi cabeza me duele): they are left out, since a negative that is right would block the accept list.
 export interface Wrong { tag: string; en: string; es: string; accept?: string[]; bad: string[] }
@@ -17,7 +18,6 @@ export const WRONG: Wrong[] = [
   { tag: 'weather', en: 'It\'s cold today.', es: 'Hoy hace frío.', accept: ['Hace frío hoy.'], bad: ['Hoy es frío.', 'Hoy está frío.', 'Hoy tiene frío.'] },
   { tag: 'weather', en: 'It\'s raining.', es: 'Está lloviendo.', accept: ['Llueve.'], bad: ['Es lloviendo.', 'Es lluvia.', 'Ello llueve.'] },
   { tag: 'ser/estar loc', en: 'The café is in La Candelaria.', es: 'El café está en La Candelaria.', bad: ['El café es en La Candelaria.'] },
-  { tag: 'ser/estar event', en: 'The party is at my place.', es: 'La fiesta es en mi casa.', bad: ['La fiesta está en mi casa.'] },
   { tag: 'article job', en: 'I\'m a teacher.', es: 'Soy profesor.', accept: ['Soy profesora.'], bad: ['Soy un profesor.', 'Estoy profesor.'] },
   { tag: 'gustar', en: 'I like coffee.', es: 'Me gusta el café.', bad: ['Yo gusto el café.', 'Yo gusto café.', 'Gusto el café.', 'Me gusta café.', 'Me gustan el café.', 'A mí gusta el café.', 'Yo me gusta el café.', 'Yo gusta el café.'] },
   { tag: 'gustar', en: 'I like dogs.', es: 'Me gustan los perros.', bad: ['Me gusta los perros.', 'Me gustan perros.', 'Yo gusto los perros.'] },

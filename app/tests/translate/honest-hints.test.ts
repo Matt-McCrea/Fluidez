@@ -19,7 +19,6 @@ describe('verb swaps are named for what they are', () => {
   test.each<Row>([
     ['Estoy aburrido.', "I'm bored.", 'Soy aburrido.'],
     ['El café está en La Candelaria.', 'The café is in La Candelaria.', 'El café es en La Candelaria.'],
-    ['La fiesta es en mi casa.', 'The party is at my place.', 'La fiesta está en mi casa.'],
   ])('ser or estar: %s / "%s"', (es, en, input) => {
     const r = hintFor(es, en, input);
     expect(r.hintKind).toBe('ser-estar');

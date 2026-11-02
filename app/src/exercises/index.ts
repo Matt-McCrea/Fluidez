@@ -36,9 +36,16 @@ export interface ItemCheck {
   variant?: 'peninsular';
   /** Passed through a swap the item did not teach but Spanish allows, or an accent slip that is only spelling. */
   note?: string;
+  /** The trap rule that named the cause of the miss, on an Assert alone (check/traps). */
+  rule?: string;
+  /** The hint asks and does not claim: the answer may be right. */
+  ask?: boolean;
   /** What to show as the answer. */
   answer: string;
 }
+
+/** What the traps made of a miss, as the fields a check carries. */
+const trapFields = (r: { rule?: string; ask?: boolean }) => ({ ...(r.rule ? { rule: r.rule } : {}), ...(r.ask ? { ask: true as const } : {}) });
 
 /** A typed gap that is right but for its accents, under `accents: 'lenient'`: right, with a note, unless the accent is the word. */
 function gapSlip(response: string, answers: readonly string[], near: boolean, opts: MatchOptions, answer: string): ItemCheck | undefined {
@@ -66,7 +73,7 @@ export function checkItem(item: Item, response: string | number, opts: MatchOpti
     }
     case 'transform': {
       const r = matchTranslation(String(response), { es: item.answer, en: '', accept: item.accept }, opts);
-      return { pass: r.pass, near: r.near, hint: r.hint, ...(r.hintKind ? { hintKind: r.hintKind } : {}), ...(r.variant ? { variant: r.variant } : {}), ...(r.note ? { note: r.note } : {}), answer: r.pass ? item.answer : r.closest };
+      return { pass: r.pass, near: r.near, hint: r.hint, ...(r.hintKind ? { hintKind: r.hintKind } : {}), ...(r.variant ? { variant: r.variant } : {}), ...(r.note ? { note: r.note } : {}), ...trapFields(r), answer: r.pass ? item.answer : r.closest };
     }
     case 'translate': {
       if (item.dir === 'es-en') {
@@ -74,12 +81,12 @@ export function checkItem(item: Item, response: string | number, opts: MatchOpti
         return { pass: r.pass, near: r.near, hint: r.hint, ...(r.hintKind ? { hintKind: r.hintKind } : {}), answer: r.closest };
       }
       const r = matchTranslation(String(response), { es: item.answer, en: item.en, accept: item.accept }, opts);
-      return { pass: r.pass, near: r.near, hint: r.hint, ...(r.hintKind ? { hintKind: r.hintKind } : {}), ...(r.variant ? { variant: r.variant } : {}), ...(r.note ? { note: r.note } : {}), answer: r.pass ? item.answer : r.closest };
+      return { pass: r.pass, near: r.near, hint: r.hint, ...(r.hintKind ? { hintKind: r.hintKind } : {}), ...(r.variant ? { variant: r.variant } : {}), ...(r.note ? { note: r.note } : {}), ...trapFields(r), answer: r.pass ? item.answer : r.closest };
     }
     case 'recombine': {
       if (item.mode === 'recognition') return { pass: response === item.answer, answer: item.options![item.answer!] };
       const r = matchTranslation(String(response), { es: item.es, en: item.en ?? '', accept: item.accept }, opts);
-      return { pass: r.pass, near: r.near, hint: r.hint, ...(r.hintKind ? { hintKind: r.hintKind } : {}), ...(r.variant ? { variant: r.variant } : {}), ...(r.note ? { note: r.note } : {}), answer: r.pass ? item.es : r.closest };
+      return { pass: r.pass, near: r.near, hint: r.hint, ...(r.hintKind ? { hintKind: r.hintKind } : {}), ...(r.variant ? { variant: r.variant } : {}), ...(r.note ? { note: r.note } : {}), ...trapFields(r), answer: r.pass ? item.es : r.closest };
     }
   }
 }
