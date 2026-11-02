@@ -568,7 +568,7 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
     session(d, tier, 'next');
     if (tier !== 'minimum' && r.next() < profile.doubleP) {
       t += 45 * 60_000;
-      if (canDoAnother({ learner: L, path, course, content, now: t, tier, learnerId })) session(d, tier, 'another');
+      if (canDoAnother({ learner: L, path, course, content, now: t, tier, learnerId, ...(opts.placement ? { placedAt: opts.placement } : {}) })) session(d, tier, 'another');
     }
   }
 

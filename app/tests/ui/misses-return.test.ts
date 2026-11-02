@@ -2,6 +2,8 @@
 // session, in a short run at the start, in another fresh one. Free-form misses (talk about you) are signal only and queue nothing.
 import { describe, expect, it } from 'vitest';
 import type { Item, PracticeItem, ReviewItem } from '../../src/compiler';
+import type { Bundle } from '../../src/ui/data/bundle';
+import { blockHeading } from '../../src/ui/session/labels';
 import { compilePlan } from '../../src/ui/session/runner';
 import { missRetest } from '../../src/ui/session/attempt';
 import { planRecap } from '../../src/ui/session/recap';
@@ -30,6 +32,14 @@ describe('the attempt seam names a miss that comes back', () => {
     expect(missRetest(practice('comprehend'), { correct: false })).toBeUndefined();
     expect(missRetest({ ...practice('type'), sentence: undefined } as unknown as Item, { correct: false })).toBeUndefined();
     void ({} as ReviewItem);
+  });
+});
+
+describe('the run over misses says what it is', () => {
+  it('the learner marked nothing: the heading does not say they did', () => {
+    const lead = (remedial: boolean | 'miss') => blockHeading({ kind: 'controlledOutput', part: 'core', deliberate: false, remedial, items: [], minutes: 1 }, {} as Bundle).lead;
+    expect(lead(true)).toContain('marked');
+    expect(lead('miss')).not.toContain('marked');
   });
 });
 

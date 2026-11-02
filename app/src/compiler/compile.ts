@@ -4,11 +4,14 @@
 //
 // Rules enforced here (each has a property test in tests/compiler):
 //  - the warm-up (SRS) block is in every plan, first; minimum tier = warm-up +
-//    re-read + timed recall, no new items, does not advance the path
+//    the next slice of the day (a few of its words, its chapter), or a re-read +
+//    timed recall; it advances the path only by finishing an input day
 //  - ≤ 1 grammar introduction per session, never in consecutive core sessions,
 //    and each introduction is drilled within DRILL_WITHIN core sessions
 //  - chunks have their own 3–5 budget; lexemes have a per-lesson-type cap
 //  - contrasts only once both sides are known
+//  - a recognition-only node (voseo, vosotros, the -se forms, ...) is read, never
+//    asked for: no typed card on it, nor on any other node in a row that needs it
 //  - content gate: everything served has requires ⊆ known ∪ introduced-this-session
 //    (a known chunk satisfies itself; it stands in for the grammar it unpacks only
 //    when the same item also requires that chunk, i.e. the grammar sits inside it).
@@ -103,7 +106,7 @@ export function stoppedPath(path: PathState, plan: SessionPlan, taughtGrammar?: 
 }
 
 /** Whether "do another" should be offered now: not minimum, course not finished, and no backlog over budget. */
-export function canDoAnother(input: Pick<CompileInput, 'learner' | 'path' | 'course' | 'now' | 'tier'> & { content?: CompileInput['content']; learnerId?: string }): boolean {
+export function canDoAnother(input: Pick<CompileInput, 'learner' | 'path' | 'course' | 'now' | 'tier' | 'placedAt'> & { content?: CompileInput['content']; learnerId?: string }): boolean {
   const tier = input.tier ?? input.learner.settings.tier;
   if (tier === 'minimum') return false;
   if (input.path.unit >= input.course.units.length) return false;
@@ -111,7 +114,7 @@ export function canDoAnother(input: Pick<CompileInput, 'learner' | 'path' | 'cou
   // will see, so "another" is offered exactly when it would not be throttled.
   // Without it: every due card costed as a single review (an upper bound).
   const dueMin = input.content
-    ? new Compiler({ learnerId: input.learnerId ?? '', learner: input.learner, path: input.path, course: input.course, content: input.content, now: input.now, tier, mode: 'another' }).dueReviewMinutes()
+    ? new Compiler({ learnerId: input.learnerId ?? '', learner: input.learner, path: input.path, course: input.course, content: input.content, now: input.now, tier, mode: 'another', placedAt: input.placedAt }).dueReviewMinutes()
     : input.learner.due(input.now).length * input.learner.secondsPerReview() / 60;
   return dueMin <= throttleMinutes(tier, bandAt(input.course, input.path));
 }
@@ -313,7 +316,8 @@ class Compiler {
     const d = this.decide(day);
     const c = this.path.coreSessions + 1;
 
-    const remedial = this.backToThese(); // built first so its sentences are not taken by the day's blocks (its nodes are marked served if it stays)
+    // built first so its sentences are not taken by the day's blocks (its nodes are marked served if it stays); a return is a warm-up and the story, so the marks wait for the next session
+    const remedial = d.converted?.reason === 'reentry' ? undefined : this.backToThese();
     switch (d.type) {
       case 'introduce': this.introduce(day!, d); break;
       case 'drill': this.warmupStd(); this.drill(d.drillNode!, day, d.advances); break;
@@ -611,6 +615,7 @@ class Compiler {
             reused = true;
           }
           const s = this.content.sentences.get(id)!;
+          if (card.direction === 'productive' && s.readOnly) continue;
           if (!this.gated(s.requires)) continue;
           scanned++;
           const extras: NodeId[] = [];
@@ -692,9 +697,10 @@ class Compiler {
   /**
    * Up to n UNSEEN, GATED sentences containing `node`, never one already used
    * in this plan. Sentences written for the node (targets) come first; the
-   * RNG only orders candidates within each group.
+   * RNG only orders candidates within each group. `typed`: the learner will be
+   * asked for the Spanish, so a row that needs a recognition-only node is out.
    */
-  private pickSentences(node: NodeId, n: number, opts: { question?: boolean; unit?: string; seen?: boolean; avoid?: ReadonlySet<string> } = {}): SentenceRef[] {
+  private pickSentences(node: NodeId, n: number, opts: { question?: boolean; unit?: string; seen?: boolean; avoid?: ReadonlySet<string>; typed?: boolean } = {}): SentenceRef[] {
     if (n <= 0) return [];
     const want = Math.max(n * 2, n + 4);
     const groups: SentenceRef[][] = [];
@@ -707,6 +713,7 @@ class Compiler {
           if (this.usedSentences.has(id) || opts.avoid?.has(id) || this.L.ledger.hasSeen('sentence', id) !== !!opts.seen) continue;
           const s = this.content.sentences.get(id)!;
           if (opts.question && !s.own) continue;
+          if (opts.typed && s.readOnly) continue;
           if (!this.gated(s.requires)) continue;
           g.push(s);
         }
@@ -1013,7 +1020,8 @@ class Compiler {
       if (ch) this.pushRead(ch);
       else if (day.chapter) this.chapterProblem(blocked ?? day.chapter, reason!);
     }
-    if (g && this.content.scripts.has(g)) this.blocks.push({ kind: 'personal', part: 'core', deliberate: false, node: g, minutes: round1(SECONDS.personal / 60) });
+    // a point the learner only recognises is not said about themselves, any more than it is drilled that way
+    if (g && this.content.scripts.has(g) && this.producible(g)) this.blocks.push({ kind: 'personal', part: 'core', deliberate: false, node: g, minutes: round1(SECONDS.personal / 60) });
   }
 
   /**
@@ -1053,11 +1061,12 @@ class Compiler {
     // rung-3 slots re-inflect a sentence already seen; with none, they fall back to transform on an unseen one
     const want = opts.ladder ? this.ladderOps(node, n) : undefined;
     const reSlots = want ? want.filter((o) => o === 'recombine').length : 0;
-    const seenQ = reSlots ? this.pickSentences(node, reSlots, { seen: true }) : [];
+    const typed = direction === 'productive';
+    const seenQ = reSlots ? this.pickSentences(node, reSlots, { seen: true, typed }) : [];
     const unseenN = n - seenQ.length;
-    let sents = this.pickSentences(node, unseenN, { question: opts.question });
+    let sents = this.pickSentences(node, unseenN, { question: opts.question, typed });
     const nQ = sents.length;
-    if (opts.question && sents.length < unseenN) sents = sents.concat(this.pickSentences(node, unseenN - sents.length));
+    if (opts.question && sents.length < unseenN) sents = sents.concat(this.pickSentences(node, unseenN - sents.length, { typed }));
     const laddered: PracticeOp[] | undefined = want ? [] : undefined;
     if (want) {
       const pool = [...sents];
@@ -1141,11 +1150,11 @@ class Compiler {
     const items: PracticeItem[] = [];
     for (let i = 0; items.length < (afterCheck ? 6 : 3) && i < 18; i++) {
       const src = nodes[i % nodes.length];
-      const [s] = this.pickSentences(src, 1, { avoid: this.planned });
+      const [s] = this.pickSentences(src, 1, { avoid: this.planned, typed: true });
       if (s) items.push(this.practiceItem(this.ladderOp(src, items.length), src, s, 'productive', 'exposure'));
     }
     if (!items.length) return undefined;
-    const b: PracticeBlock = { kind: 'controlledOutput', part: 'core', deliberate: false, remedial: true, focus: nodes[0], items, minutes: round1(items.reduce((a, it) => a + SECONDS[it.op], 0) / 60) };
+    const b: PracticeBlock = { kind: 'controlledOutput', part: 'core', deliberate: false, remedial: afterCheck ? true : 'miss', focus: nodes[0], items, minutes: round1(items.reduce((a, it) => a + SECONDS[it.op], 0) / 60) };
     return { block: b, nodes, fromMiss: !afterCheck };
   }
 
@@ -1177,7 +1186,7 @@ class Compiler {
     let need = produce ? total - nLatest : 0;
     for (let i = 0; need > 0 && oldSources.length && i < total * 2; i++) {
       const src = oldSources[i % oldSources.length];
-      const [s] = this.pickSentences(src, 1);
+      const [s] = this.pickSentences(src, 1, { typed: true });
       if (s) { olderItems.push(this.practiceItem(this.ladderOp(src, olderItems.length), src, s, 'productive', 'exposure')); need--; }
     }
     // the latest node's items keep their rung order; older points are dropped in among them
@@ -1242,8 +1251,8 @@ class Compiler {
     if (!taught(node)) return this.teach(node, 'full', { reason: 'contrast', introduced: true })[0] as TeachBlock;
     const script = this.content.scripts.get(node)!;
     const items: ScriptItem[] = [
-      ...this.rotation(node, script.readAndPick, CONTRAST_RETURN.readAndPick).map((i) => this.scriptItem(node, 'readAndPick', i)),
-      ...this.rotation(node, script.yourTurn, CONTRAST_RETURN.yourTurn).map((i) => this.scriptItem(node, 'yourTurn', i)),
+      ...this.rotation(node, 'readAndPick', script.readAndPick, CONTRAST_RETURN.readAndPick).map((i) => this.scriptItem(node, 'readAndPick', i)),
+      ...this.rotation(node, 'yourTurn', script.yourTurn, CONTRAST_RETURN.yourTurn).map((i) => this.scriptItem(node, 'yourTurn', i)),
     ];
     if (!items.length) return undefined;
     this.diag({ code: 'fallback', block: 'teach', node, unit: this.unit?.id, message: `${node}: ${items.length} items from its script, a different few each session` });
@@ -1253,11 +1262,18 @@ class Compiler {
     };
   }
 
-  /** `k` of a script's `count` items, from a place that moves on by `k` every session (and starts elsewhere for each node), so no two sessions serve the same ones until the script has gone round. */
-  private rotation(node: NodeId, count: number, k: number): number[] {
-    const n = Math.min(k, count);
-    const start = (hash32(node) + this.sessionIndex * n) % Math.max(1, count);
-    return Array.from({ length: n }, (_, j) => (start + j) % count);
+  /**
+   * `k` of a script's `count` items: the ones the ledger showed longest ago, so a return is never the last return's until the script has
+   * gone round. (Review days fall a fixed number of sessions apart, so a place that only moved on with the session number kept landing
+   * on the same items.) Ties, as on a first return, go from a place that starts elsewhere for each node and moves on with the session.
+   */
+  private rotation(node: NodeId, part: 'readAndPick' | 'yourTurn', count: number, k: number): number[] {
+    const start = (hash32(node) + this.sessionIndex * Math.min(k, count)) % Math.max(1, count);
+    return Array.from({ length: count }, (_, j) => (start + j) % count)
+      .map((i) => ({ i, at: this.L.ledger.lastSeen('item', this.scriptItem(node, part, i).id)?.getTime() ?? 0 }))
+      .sort((a, b) => a.at - b.at)
+      .slice(0, k)
+      .map((x) => x.i);
   }
 
   private scriptItem(node: NodeId, part: 'readAndPick' | 'yourTurn', index: number): ScriptItem {
@@ -1320,7 +1336,7 @@ class Compiler {
     const items: PracticeItem[] = [];
     for (const it of learn) {
       if (items.length >= COUNTS.cuedMax) break;
-      const [s] = this.pickSentences(it.node, COUNTS.cuedPerLexeme);
+      const [s] = this.pickSentences(it.node, COUNTS.cuedPerLexeme, { typed: true });
       if (s) items.push(this.practiceItem(items.length % 2 ? 'translate' : 'gap', it.node, s, 'productive', 'exposure'));
     }
     if (items.length) this.blocks.push({ kind: 'cuedProduction', part: 'core', deliberate: false, items, minutes: round1(items.reduce((a, x) => a + SECONDS[x.op], 0) / 60) });
@@ -1454,6 +1470,8 @@ class Compiler {
    */
   private returnDay() {
     const budget = throttleMinutes(this.tier, this.band);
+    // the debt is planned most at risk first, which here would be the most forgotten: a return starts on what is likeliest still to be there
+    this.debtGroups.reverse();
     this.warmup(budget, budget, false, { cards: REENTRY.cards });
     const { ch } = this.chapterFor(undefined, false, true);
     if (ch) this.pushRead(ch);
@@ -1473,7 +1491,7 @@ class Compiler {
     const ops: PracticeOp[] = ['choose', 'type', 'transform', 'translate'];
     for (let i = 0; items.length < COUNTS.remix && i < COUNTS.remix * 3; i++) {
       const src = sources[i % sources.length];
-      const [s] = this.pickSentences(src, 1);
+      const [s] = this.pickSentences(src, 1, { typed: true });
       if (s) items.push(this.practiceItem(this.ladderOp(src, items.length), src, s, 'productive', 'exposure'));
     }
     if (items.length < COUNTS.remix) this.diag({ code: 'shortage', block: 'remix', what: 'sentence', wanted: COUNTS.remix, got: items.length, unit: this.unit?.id, message: `remix: ${items.length}/${COUNTS.remix} items` });
@@ -1521,9 +1539,9 @@ class Compiler {
     const items: ReviewItem[] = [];
     for (const { node } of scored) {
       if (items.length >= COUNTS.leech) break;
-      const [s] = this.pickSentences(node, 1);
-      if (!s) continue; // a leech without a fresh context waits; never a seen sentence
       const dir = this.L.hasCard(node, 'productive') ? 'productive' : 'receptive';
+      const [s] = this.pickSentences(node, 1, { typed: dir === 'productive' });
+      if (!s) continue; // a leech without a fresh context waits; never a seen sentence
       items.push({ op: 'review', id: `lr:${s.id}`, node, targets: [node], direction: dir, sentence: s.id, novel: true, scoring: 'exposure', credit: creditOf(node, s) });
     }
     if (items.length) this.blocks.push({ kind: 'leech', part: 'core', deliberate: false, items, minutes: round1(items.length * this.spr * 2 / 60) });
@@ -1620,8 +1638,8 @@ class Compiler {
    */
   private shortSlice(day: Unit['days'][number]): { done: boolean } | undefined {
     if (!['introduce', 'input', 'patterns', 'drill'].includes(day.type) || this.lackedBy(day).length) return undefined;
-    // what the warm-up has left of the session's minutes: no more is taken than fits
-    const left = MINIMUM_MINUTES - this.blocks.reduce((a, b) => a + b.minutes, 0) - SECONDS.close / 60;
+    // what the warm-up has left of the session's minutes ("Only five minutes?" has five): no more is taken than fits
+    const left = Math.min(MINIMUM_MINUTES, this.input.capMinutes ?? MINIMUM_MINUTES) - this.blocks.reduce((a, b) => a + b.minutes, 0) - SECONDS.close / 60;
     const room = Math.min(SHORT_NEW_ITEMS, Math.floor((left * 60 + 1e-9) / SECONDS.learn));
     const owedBefore = [...this.owedNew];
     const learn = room > 0 ? this.takeNew(day.type, day, true, { focusNonGrammar: true, max: room, kinds: ['chunk', 'lexeme'] }) : [];

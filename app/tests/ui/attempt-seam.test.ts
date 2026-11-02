@@ -8,7 +8,8 @@
 // the lesson on day 1, the five-minute session's slice, respond items only for questions asked of the learner, recognition-only points
 // receptive, misses that come back in the recap and at the start of the next session). Nothing in how an answer is graded moved: the
 // same calls (gradeOf, reviewSentence, seen, climb) are made on different cards, and a miss in practice is now re-asked in the recap as
-// an exposure.
+// an exposure. Later the same day: a return serves the cards likeliest still to be there and no run over misses, so the irregular learner, the one
+// who goes away, is dealt different cards; the same calls again.
 import { readdirSync, readFileSync, statSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { describe, expect, it } from 'vitest';
@@ -20,7 +21,7 @@ const EXPECTED = {
   dealt: { events: 181, eventDigest: 'afc58cb780e9652212aedbcd75f5c408cf6fc78a505eb4f7e72667531419c8b5', memoryDigest: '3d00e603453c232c812c53d3b88ef2fff4a45bdedc141f4e4249c7e92ddaa563' },
   freeplay: { events: 270, eventDigest: '722842906e49e87ce41fa78d56e628d47bbe7d357190d62f69e73d0e4aaac697', memoryDigest: '0ee3ad9b3bbe7b99d46d153a6c5436e0934128113173a3642058ac48e9391169' },
   average: { events: 5136, eventDigest: '88f5d23a032aa46c1563d6e3c46147af2576e00a01f0b6524752eb6d51cae4fb', memoryDigest: 'b50dce4ccdf3a3cfe0cc6ea284fe642b8c93f915d62a84593c49bac64f43b3af' },
-  irregular: { events: 3070, eventDigest: 'a12080ddb744d2b96569ae1444a81f2d903c245e835f12efbb1a14ad74588d26', memoryDigest: 'e0627700f03087f8cc3ae2588992da03ef7809fdf7b780f21e5556fa9e5d4901' },
+  irregular: { events: 2942, eventDigest: '42ff7dd74cb3f650c7290ecac9dd2728bc42c064d043cc97d9c6c6ea353c23f9', memoryDigest: 'f93b6353877abd12db535244be9b0dcefa1da32564bdd69239bbf50e415b80f4' },
 };
 
 describe('grading is identical through the attempt seam', () => {

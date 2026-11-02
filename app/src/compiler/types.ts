@@ -84,6 +84,8 @@ export interface SentenceRef {
   question: boolean;
   /** a question put to one person and nobody else named in it (exercises/addressee.ts): one a learner can answer for themselves */
   own?: boolean;
+  /** needs a node the learner only recognises (voseo, vosotros, the -se forms, the future subjunctive, learner/policy.ts): read, and never asked for in Spanish, whatever node the card is about */
+  readOnly?: boolean;
 }
 
 /**
@@ -145,6 +147,8 @@ export interface CompileInput {
    * (absent = 0). The story begins at their unit: the chapters before it are not a backlog to read.
    */
   placedAt?: number;
+  /** A cap on the session in minutes, when it is shorter than the tier's ("Only five minutes?"): a short session takes no slice that would not fit it. */
+  capMinutes?: number;
 }
 
 // ------------------------------------------------------------------ path state
@@ -374,8 +378,8 @@ export interface TeachBlock extends BlockBase {
 export interface RuleRecallBlock extends BlockBase { kind: 'ruleRecall'; node: NodeId }
 
 export interface PracticeBlock extends BlockBase {
-  /** a short run over shaky nodes, placed after the warm-up the session after a checkpoint */
-  remedial?: boolean;
+  /** a short run placed after the warm-up: over what the learner marked shaky, the session after a checkpoint (true), or over what they missed in practice last time ('miss') */
+  remedial?: boolean | 'miss';
   kind: 'structuredInput' | 'controlledOutput' | 'cuedProduction' | 'communicative' | 'remix' | 'readingCheck' | 'extraReading';
   /** the latest point being practised, when there is one */
   focus?: NodeId;

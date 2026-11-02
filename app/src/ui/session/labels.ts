@@ -80,7 +80,7 @@ export function blockHeading(block: Block, b: Bundle, ctx?: { known?: number }):
       return { title: `New: ${lc(b.title(block.node))}`, lead: block.script ? '' : 'A few examples first.' };
     case 'ruleRecall': return { title: 'Remember this?', lead: 'Try it before the reminder.' };
     case 'structuredInput': return { title: 'Read and pick', lead: 'Read carefully: the small words matter.' };
-    case 'controlledOutput': if (block.remedial) return { title: 'Back to these', lead: 'A few you marked as shaky.' };
+    case 'controlledOutput': if (block.remedial) return { title: 'Back to these', lead: block.remedial === 'miss' ? 'A few that slipped last time.' : 'A few you marked as shaky.' };
       return { title: 'Your turn', lead: 'First choose, then type, then change it around.' };
     case 'cuedProduction': return { title: 'Use the new words', lead: 'The words from the story, in new sentences.' };
     case 'communicative': return { title: 'Talk about you', lead: 'Real questions. Answer them for yourself.' };

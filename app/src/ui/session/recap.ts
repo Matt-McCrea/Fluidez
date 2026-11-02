@@ -30,14 +30,14 @@ export interface RecapInput {
   typedOk?: ReadonlyMap<NodeId, number>;
 }
 
-/** A different gated, unseen bank sentence for the node, else the one it was last asked in. */
-function otherSentence(i: RecapInput, node: NodeId, was?: string): { sentence?: string; reused?: boolean } {
+/** A different gated, unseen bank sentence for the node (one the learner may be asked to say, on a productive card), else the one it was last asked in. */
+function otherSentence(i: RecapInput, node: NodeId, direction: Direction, was?: string): { sentence?: string; reused?: boolean } {
   const { learner, bundle } = i;
   const ids = [...(bundle.index.byTarget.get(node) ?? []), ...(bundle.index.byRequire.get(node) ?? [])];
   for (const id of ids) {
     if (id === was || learner.ledger.hasSeen('sentence', id)) continue;
     const ref = bundle.index.sentences.get(id);
-    if (!ref || ref.question) continue;
+    if (!ref || ref.question || (direction === 'productive' && ref.readOnly)) continue;
     if (ref.requires.every((r) => learner.isIntroduced(r))) return { sentence: id };
   }
   return was ? { sentence: was, reused: true } : {};
@@ -50,13 +50,13 @@ export function planRecap(i: RecapInput): RecapItem[] {
     if (out.length >= i.capacity) break;
     if (seen.has(l.node) || !i.learner.hasCard(l.node, l.direction)) continue;
     seen.add(l.node);
-    out.push({ id: `recap:${l.node}:${l.direction}`, kind: 'lapsed', node: l.node, direction: l.direction, ...otherSentence(i, l.node, l.sentence), credit: [l.node] });
+    out.push({ id: `recap:${l.node}:${l.direction}`, kind: 'lapsed', node: l.node, direction: l.direction, ...otherSentence(i, l.node, l.direction, l.sentence), credit: [l.node] });
   }
   // a practice item missed today: its target again, in a sentence not seen (none left: not in the one it has just been shown the answer to)
   for (const r of i.retests ?? []) {
     if (out.length >= i.capacity) break;
     if (seen.has(r.node)) continue;
-    const other = otherSentence(i, r.node, r.sentence);
+    const other = otherSentence(i, r.node, r.direction, r.sentence);
     if (!other.sentence || other.reused) continue;
     seen.add(r.node);
     out.push({ id: `recap:${r.node}:${r.direction}:miss`, kind: 'miss', node: r.node, direction: r.direction, sentence: other.sentence, credit: [r.node] });

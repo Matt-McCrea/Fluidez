@@ -54,7 +54,7 @@ export function requestFullLesson(): void { fullLessonOnce = true; }
  * or a pending "full lesson instead" says otherwise for this one session. The
  * minutes come from the compiler's budget for the band and tier.
  */
-export function compilePlan(learner: Learner, bundle: Bundle, ui: UiStore, opts: { mode?: Mode; now?: number; tier?: Tier } = {}): SessionPlan {
+export function compilePlan(learner: Learner, bundle: Bundle, ui: UiStore, opts: { mode?: Mode; now?: number; tier?: Tier; capMinutes?: number } = {}): SessionPlan {
   const now = opts.now ?? Date.now();
   // a lesson nobody can pick up again is over: what it had begun goes to the scheduler before the next one is planned
   if (!isResumable(ui.session, learner, now, ui.state.learnerId)) sweepIntroductions(learner, now);
@@ -62,6 +62,7 @@ export function compilePlan(learner: Learner, bundle: Bundle, ui: UiStore, opts:
     learnerId: ui.state.learnerId, learner, path: ui.path, course: bundle.course, content: bundle.index,
     now, tier: opts.tier ?? (fullLessonOnce ? 'standard' : learner.settings.tier), mode: opts.mode ?? 'next',
     ...(ui.state.placedAt ? { placedAt: ui.state.placedAt } : {}),
+    ...(opts.capMinutes ? { capMinutes: opts.capMinutes } : {}),
   });
 }
 
@@ -99,7 +100,7 @@ export function truncatable(b: Block): boolean {
 export const STOP_AFTER_MINUTES = 10;
 
 export function anotherAllowed(learner: Learner, bundle: Bundle, ui: UiStore, now = Date.now()): boolean {
-  return canDoAnother({ learner, path: ui.path, course: bundle.course, content: bundle.index, learnerId: ui.state.learnerId, now, tier: learner.settings.tier });
+  return canDoAnother({ learner, path: ui.path, course: bundle.course, content: bundle.index, learnerId: ui.state.learnerId, now, tier: learner.settings.tier, ...(ui.state.placedAt ? { placedAt: ui.state.placedAt } : {}) });
 }
 
 const refKey = (r: ServedRef) => `${r.kind}\u0000${r.id}\u0000${r.deliberate ? 1 : 0}\u0000${r.reason ?? ''}`;

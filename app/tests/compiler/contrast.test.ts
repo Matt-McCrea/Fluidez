@@ -104,7 +104,8 @@ describe('F1: a review day goes back to a contrast it lists', () => {
     const ids: string[][] = [];
     for (let k = 0; k < 6; k++) {
       next();
-      const b = teaches(plan()).find((t) => t.node === x);
+      const p = plan();
+      const b = teaches(p).find((t) => t.node === x);
       expect(b?.reason).toBe('return');
       expect(b?.deliberate).toBe(true);
       expect(b?.parts).toEqual(['readAndPick', 'yourTurn']);
@@ -112,6 +113,8 @@ describe('F1: a review day goes back to a contrast it lists', () => {
       expect(b?.items.filter((i) => i.op === 'yourTurn')).toHaveLength(3);
       expect(b?.items.every((i) => i.scoring === 'exposure' && i.index < (i.op === 'readAndPick' ? script.readAndPick : script.yourTurn))).toBe(true);
       ids.push(b!.items.map((i) => i.id));
+      // as the runner does: what was shown is in the ledger
+      for (const r of servedRefs(p)) L.ledger.markSeen(r.kind, r.id, { deliberate: r.deliberate, at: at() });
     }
     for (let k = 1; k < ids.length; k++) expect(ids[k].filter((id) => ids[k - 1].includes(id)), `session ${k} repeats the one before`).toEqual([]);
     // the script goes round: every one of its items has come back by then
@@ -138,6 +141,37 @@ describe('F1: a review day goes back to a contrast it lists', () => {
     });
     expect(walked).toBeGreaterThan(100);
     expect(back.size).toBeGreaterThan(0);
+  });
+});
+
+describe('a return to a contrast is not the last return', () => {
+  test('review days a fixed even number of sessions apart still go round the whole script', () => {
+    const { course, content } = corpus({ seed: 2 });
+    const x = [...course.nodes.values()].find((n) => n.kind === 'contrast')!;
+    const at = course.units.findIndex((u) => u.days.some((d) => d.type === 'review'));
+    const unit = course.units[at];
+    const dayIdx = unit.days.findIndex((d) => d.type === 'review');
+    unit.days[dayIdx].focus = [x.id];
+    const script = { ...content.scripts.get(x.id)!, readAndPick: 8, yourTurn: 7 };
+    content.scripts.set(x.id, script);
+    let t = T0;
+    const L = Learner.fresh({ now: () => t });
+    L.seedKnown(x.id, { at: T0, productive: true, receptive: { stability: 300, dueAt: T0 + 400 * DAY }, productiveCard: { stability: 300, dueAt: T0 + 400 * DAY } });
+    L.ledger.markSeen('item', `sc:${x.id}:rp:0`, { deliberate: false, at: T0 });
+    const path = { ...initialPath(), unit: at, day: dayIdx };
+    const sets: number[][] = [];
+    for (let k = 0; k < 4; k++) {
+      t = T0 + (k + 1) * 8 * DAY;
+      // eight sessions go by between one review day and the next: an even number, as on the real course
+      for (let s = 0; s < 8; s++) L.startSession(t);
+      const p = compileSession({ learnerId: 'back', learner: L, path, course, content, now: t });
+      const back = teaches(p).find((b) => b.reason === 'return')!;
+      expect(back, 'a return').toBeDefined();
+      sets.push(back.items.filter((i) => i.op === 'readAndPick').map((i) => i.index));
+      for (const r of servedRefs(p)) L.ledger.markSeen(r.kind, r.id, { deliberate: r.deliberate, at: t });
+    }
+    for (let k = 1; k < sets.length; k++) expect(sets[k].filter((i) => sets[k - 1].includes(i)), `return ${k} repeats return ${k - 1}`).toEqual([]);
+    expect(new Set(sets.flat()).size).toBe(8);
   });
 });
 

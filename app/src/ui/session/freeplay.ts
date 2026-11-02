@@ -157,15 +157,17 @@ export class Freeplay {
    *   0 every requirement is known
    *   1 the only unknown ones are other nodes of the same spec (`allow`)
    *   2 the unknown ones are all words or chunks (glossable)
+   * `reading`: for a card that only asks for the meaning.
    */
-  private tiersFor(node: NodeId, allow: ReadonlySet<NodeId> = new Set()): string[][] {
+  private tiersFor(node: NodeId, allow: ReadonlySet<NodeId> = new Set(), reading = false): string[][] {
     const ix = this.d.bundle.index;
     const known = this.known();
     const ids = [...new Set([...(ix.byTarget.get(node) ?? []), ...(ix.byRequire.get(node) ?? [])])];
     const tiers: string[][] = [[], [], []];
     for (const id of ids) {
       const ref = ix.sentences.get(id);
-      if (!ref) continue;
+      // a row that needs a recognition-only node is read, never asked for
+      if (!ref || (ref.readOnly && !reading)) continue;
       const unknown = ref.requires.filter((r) => !known.has(r));
       if (!unknown.length) tiers[0].push(id);
       else if (unknown.every((r) => allow.has(r))) tiers[1].push(id);
@@ -175,7 +177,7 @@ export class Freeplay {
   }
 
   /** Sentences legal right now for a node. */
-  private sentencesFor(node: NodeId): string[] { return this.tiersFor(node)[0]; }
+  private sentencesFor(node: NodeId, reading = false): string[] { return this.tiersFor(node, undefined, reading)[0]; }
 
   /**
    * Why a node has nothing to practise: the week its examples come up, which
@@ -261,7 +263,7 @@ export class Freeplay {
 
   private quickCard(node: NodeId, dir: Direction): Card {
     const { learner, bundle } = this.d;
-    const pool = this.sentencesFor(node);
+    const pool = this.sentencesFor(node, dir === 'receptive');
     const fresh = pool.filter((id) => !learner.ledger.hasSeen('sentence', id) && !bundle.index.sentences.get(id)?.question);
     const sentence = this.unseenFirst(fresh.length ? fresh : pool)[0];
     const novel = !!sentence && !learner.ledger.hasSeen('sentence', sentence);
@@ -398,7 +400,7 @@ export class Freeplay {
     else if (spec.unit) ids = ix.byUnit.get(spec.unit) ?? [];
     else ids = [...ix.sentences.keys()];
     const known = this.known();
-    const gated = [...new Set(ids)].filter((id) => ix.sentences.get(id)?.requires.every((r) => known.has(r)));
+    const gated = [...new Set(ids)].filter((id) => { const ref = ix.sentences.get(id); return !!ref && !ref.readOnly && ref.requires.every((r) => known.has(r)); });
     return this.unseenFirst(gated);
   }
 

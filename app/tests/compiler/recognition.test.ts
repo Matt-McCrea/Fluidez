@@ -2,6 +2,7 @@
 // by typing (LC1-004, LC1-005): no production card, and no drill block that asks the learner to say it.
 import { describe, expect, test } from 'vitest';
 import { advancePath, buildContentIndex, buildCourse, compileSession, initialPath, servedRefs, type PathState, type SessionPlan } from '../../src/compiler';
+import type { BankSentence, GraphNode, Unit } from '../../src/content/schema';
 import { Learner } from '../../src/learner';
 import { syntheticCorpus } from '../../tools/sim/synthetic';
 
@@ -65,5 +66,52 @@ describe('a recognition-only grammar point', () => {
     for (const p of plans) for (const b of p.blocks) {
       if (b.kind === 'remix' || (b.kind === 'controlledOutput' && b.remedial)) for (const it of b.items) expect(it.node, `${b.kind} on ${g}`).not.toBe(g);
     }
+  });
+});
+
+describe('a row that needs a recognition-only form, whichever node a card is about', () => {
+  const node = (id: string, kind: GraphNode['kind'], extra: Partial<GraphNode> = {}) =>
+    ({ id, kind, band: 'A1', priority: 0, title: id, requires: [], contrasts: [], serves: [], pcic: [], placement: 'pcic', sources: [], variety: 'neutral', ...extra }) as GraphNode;
+  const row = (id: string, requires: string[]) => ({ id, es: `frase ${id}.`, en: id, accept: [], acceptEn: [], requires, lexemes: [], targets: requires.slice(0, 1), unit: 'u01', source: 'gen' }) as BankSentence;
+
+  /** A learner who has l:a and the -se forms, both due, and two rows for l:a: the only unseen one but for `plain` is in the -se form. */
+  function due(plain: boolean) {
+    const g = 'g:se-form-recognition';
+    const units: Unit[] = [{ id: 'u01', band: 'A1', title: 'u', theme: 't', canDo: 'c', storyArc: 'a', days: [{ type: 'review', focus: [], chunks: [], lexemes: [] }] } as Unit];
+    const course = buildCourse(units, [node('l:a', 'lexeme'), node(g, 'grammar')]);
+    const content = buildContentIndex({ sentences: [row('s-se', ['l:a', g]), ...(plain ? [row('s-plain', ['l:a'])] : [])], chapters: [], scenes: [], writing: [], scripts: [] }, course);
+    let t = T0;
+    const L = Learner.fresh({ now: () => t });
+    L.seedKnown('l:a', { at: T0, productive: true, receptive: { stability: 3, dueAt: T0 + DAY }, productiveCard: { stability: 3, dueAt: T0 + DAY } });
+    L.seedKnown(g, { at: T0, productive: false, receptive: { stability: 30, dueAt: T0 + 90 * DAY } });
+    t = T0 + DAY + 3_600_000;
+    return { content, plan: compileSession({ learnerId: 'rec', learner: L, path: initialPath(), course, content, now: t }) };
+  }
+  const warmItem = (p: SessionPlan) => { const w = p.blocks[0]; if (w.kind !== 'warmup') throw new Error('warm-up first'); return w.items.find((i) => i.node === 'l:a')!; };
+
+  test('the index marks it, and only it', () => {
+    const { content } = due(true);
+    expect(content.sentences.get('s-se')!.readOnly).toBe(true);
+    expect(content.sentences.get('s-plain')!.readOnly).toBeUndefined();
+  });
+
+  test('a productive review of another node takes another row', () => {
+    const it = warmItem(due(true).plan);
+    expect(it.direction).toBe('productive');
+    expect(it.sentence).toBe('s-plain');
+  });
+
+  test('with no other row it goes without a sentence: the learner is not asked to type a form the course does not want said', () => {
+    const it = warmItem(due(false).plan);
+    expect(it.direction).toBe('productive');
+    expect(it.sentence).toBeUndefined();
+  });
+});
+
+describe('the day a recognition-only point is taught', () => {
+  test('no "say something true": it is not said about yourself, any more than it is drilled that way', () => {
+    const intro = (recognition: boolean) => { const { g, plans } = walkIt(recognition); return plans.find((p) => p.newNodes.grammar.includes(g))!.blocks.map((b) => b.kind); };
+    expect(intro(true)).not.toContain('personal');
+    expect(intro(false)).toContain('personal');
   });
 });

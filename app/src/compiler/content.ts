@@ -8,6 +8,7 @@ import { analyzeToken } from '../engine';
 import { askedOfYou } from '../exercises/addressee';
 import { isMultiTurn, turnView } from '../exercises/dialogue';
 import { namesOf, placesOf } from '../exercises/licence';
+import { recognitionOnly } from '../learner/policy';
 import type { LibraryChapter } from '../content/library';
 import type { ChapterRef, ContentIndex, Course, PathState, SceneRef, ScriptRef, SentenceRef, StoryRef, TaskRef } from './types';
 
@@ -191,7 +192,9 @@ export function buildContentIndex(src: ContentSource, course: Course): ContentIn
     const question = isQuestionRow(s);
     // the question a card puts to the learner: a dialogue's first turn, else the row (cards.ts, 'respond')
     const asked = question ? (isMultiTurn(s) ? turnView(s, 0)?.sentence.es : s.es) : undefined;
-    sentences.set(s.id, { id: s.id, requires, targets, unit: s.unit, question, ...(asked && askedOfYou(asked, names, places) ? { own: true } : {}) });
+    // a row that needs a recognition-only node is one to read, whichever node a card puts it to work for (LC1-004, LC1-005)
+    const readOnly = requires.some((r) => { const n = course.nodes.get(r); return !!n && recognitionOnly(n); });
+    sentences.set(s.id, { id: s.id, requires, targets, unit: s.unit, question, ...(asked && askedOfYou(asked, names, places) ? { own: true } : {}), ...(readOnly ? { readOnly } : {}) });
     for (const t of targets) push(byTarget, t, s.id);
     for (const r of requires) if (!targets.includes(r)) push(byRequire, r, s.id);
     if (s.unit) push(byUnit, s.unit, s.id);

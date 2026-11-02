@@ -55,6 +55,24 @@ describe('the five-minute session does not serve the same few cards', () => {
   });
 });
 
+describe('"Only five minutes?" keeps to five', () => {
+  test('a slice is only taken when it fits the cap: a warm-up that fills it leaves no new words the session could not reach', () => {
+    const s = setup();
+    // a warm-up of about four minutes
+    for (let i = 0; i < 24; i++) s.L.seedKnown(`l:due${i}`, { at: T0 - 9 * DAY, productive: false, receptive: { stability: 3, dueAt: T0 - 3_600_000 } });
+    const day = s.course.units[0].days.findIndex((d) => d.type === 'input');
+    const path = { ...initialPath(), coreSessions: budget.EARLY_SESSIONS, day };
+    const learnt = (p: SessionPlan) => Object.values(p.newNodes).flat().length;
+    const ten = s.plan({ path });
+    expect(ten.blocks[0].minutes).toBeGreaterThan(3);
+    expect(learnt(ten)).toBeGreaterThan(0);
+    const five = s.plan({ path, capMinutes: 5 });
+    expect(five.blocks[0].minutes).toBe(ten.blocks[0].minutes);
+    expect(learnt(five)).toBeLessThan(learnt(ten));
+    expect(five.blocks.filter((b) => b.kind === 'learn' || b.kind === 'read').reduce((a, b) => a + b.minutes, 0) + five.blocks[0].minutes + 0.5).toBeLessThanOrEqual(5.05);
+  });
+});
+
 describe('short days add up to a lesson', () => {
   const inputDay = (c: ReturnType<typeof corpus>) => c.course.units[0].days.findIndex((d) => d.type === 'input');
 

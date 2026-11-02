@@ -1,7 +1,7 @@
 // The debt policy (L1, R18): old debt is paid at a capped rate and never throttles teaching, no card is touched, and a
 // learner who comes back after days away is given a short warm-up and the next beat of the story.
 import { describe, expect, test } from 'vitest';
-import { advancePath, budget, compileSession, initialPath, type CompileInput, type PathState, type SessionPlan, type WarmupBlock } from '../../src/compiler';
+import { advancePath, budget, canDoAnother, compileSession, initialPath, reviewTargets, withMiss, type CompileInput, type PathState, type SessionPlan, type WarmupBlock } from '../../src/compiler';
 import { Learner, SEEDED_REPS } from '../../src/learner';
 import type { Bundle } from '../../src/ui/data/bundle';
 import { applyPlacement } from '../../src/ui/session/placement';
@@ -255,6 +255,29 @@ describe('the first session back after days away', () => {
     expect(p.blocks.some((b) => b.kind === 'ruleRecall' && b.node === withDrill.pendingDrills[0].node)).toBe(true);
   });
 
+  test('a return is the warm-up and the story, however much was missed last time: the run over misses waits for the session after', () => {
+    const { plan, path0, L } = returner(21);
+    const node = L.nodes().find((n) => n.startsWith('g:'))!;
+    const missed = { ...path0, remediate: withMiss([], node, T0) };
+    const p = plan({ path: missed });
+    expect(p.converted?.reason).toBe('reentry');
+    expect(p.blocks.some((b) => b.kind === 'controlledOutput')).toBe(false);
+    // the mark is still there for the next session
+    expect(p.pathAfter.remediate.find((e) => e.node === node)?.served ?? 0).toBe(0);
+  });
+
+  test('a return starts on what is likeliest still to be there, not on the most forgotten', () => {
+    const { plan, L } = returner(40);
+    const p = plan();
+    const now = p.pathAfter.log.length ? T0 + 53 * DAY : T0;
+    const r = (n: string, d: 'receptive' | 'productive') => L.retrievability(n, d, now) ?? 0;
+    const served = warm(p).items.flatMap((it) => reviewTargets(it).map((n) => r(n, it.direction)));
+    const all = L.due(now).map((c) => c.r);
+    const mean = (xs: number[]) => xs.reduce((a, b) => a + b, 0) / xs.length;
+    expect(all.length).toBeGreaterThan(served.length);
+    expect(mean(served)).toBeGreaterThan(mean(all));
+  });
+
   test('six days away is not a return; seven is', () => {
     expect(returner(5).plan().reentry).toBeUndefined();
     expect(returner(7).plan().reentry).toEqual({ days: 7 });
@@ -288,6 +311,24 @@ describe('the first session back after days away', () => {
     const { course, content } = corpus({ seed: 2 });
     const L = Learner.fresh({ now: () => T0 });
     expect(compileSession({ learnerId: 'new', learner: L, path: initialPath(), course, content, now: T0 + 400 * DAY }).reentry).toBeUndefined();
+  });
+});
+
+describe('"Do another" weighs what the session would weigh', () => {
+  test('a placed learner\'s seeded cards are debt there too, so a batch of them falling due does not take the offer away', () => {
+    const { course, content } = corpus({ seed: 1 });
+    const placedAt = 3;
+    const skipped = course.units.slice(0, placedAt).flatMap((u) => u.days.flatMap((d) => [...d.chunks, ...d.lexemes]));
+    expect(skipped.length).toBeGreaterThan(60);
+    const t = T0 + 10 * DAY;
+    const L = Learner.fresh({ now: () => t });
+    // as placement leaves them: not reviewed since, and just fallen due (hours, not days, so only the seeding makes them debt)
+    for (const n of skipped) L.seedKnown(n, { at: T0, productive: false, receptive: { stability: 10, dueAt: t - 6 * HOUR } });
+    const input = { learner: L, path: { ...initialPath(), unit: placedAt }, course, content, now: t, tier: 'standard' as const, learnerId: 'placed' };
+    expect(compileSession({ ...input, placedAt }).budget.throttled).toBe(false);
+    expect(canDoAnother({ ...input, placedAt })).toBe(true);
+    // weighed as if nobody had placed them, which is what the offer used to do
+    expect(canDoAnother(input)).toBe(false);
   });
 });
 

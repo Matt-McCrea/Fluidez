@@ -1,6 +1,6 @@
 # Fluidez 2: simulator summary
 
-Generated 2026-11-02T08:04:22.344Z by `npm run simulate -- --real --days 365 --tiers standard` (seed 1).
+Generated 2026-11-02T09:02:09.958Z by `npm run simulate -- --real --days 365 --tiers standard` (seed 1).
 Modes: `--real` runs the app's own `ContentLoader` over the real A1 and A2 content (real sentences, scripts, chapters; no quotas.json write); `--synthetic` generates a corpus on the real unit map and graph; `--placement uNN` adds 30-day runs of a learner placed at that unit through the app's `applyPlacement`.
 Model: grades follow the runner (`gradeOf`: first-try pass Good, retry pass Hard, miss Again; never Easy). A failed first draw is retried at P + (1 - P) x retryGain. Multi-target warm-up items are answered once, graded uniformly, and passed through `attributeGrades` (no card evidence in the simulator, so uniform). The recap block uses the runner's capacity rule and `planRecap`; lapsed re-asks are real reviews (op `recap`), new items exposure. Each choose/type/transform/recombine outcome steps the ladder (`stepRung`). Optional blocks are skipped and card runs cut when the plan's minutes are spent. Not modelled: "I don't know" (a miss either way), and the attribution evidence.
 Corpus: the real content through the app's ContentLoader (`--real`: bands A1 and A2 only; sentences, scripts, chapters, scenes and writing tasks as the app loads them); 27 units, 6149 nodes, 28377 sentences.
@@ -27,6 +27,7 @@ Multi-item reviews: ≤ 3 due nodes per sentence, cost 1.4× a single review. Re
 - 2026-11-02 debt policy (R18): due cards more than a day overdue, or seeded by placement and not reviewed since, are debt: they no longer throttle, and are paid out of the warm-up budget the fresh cards leave, at most 20 cards a session (40 on a review day). A learner away 7 or more days gets a 10-card warm-up and the next chapter, and the day waits. Real A1 and A2, 365 days, seeds 1/2/3, policy off then on. Longest run of sessions without anything new: fast 1/2/1 to 1/1/1, average 2/2/3 to 1/1/1, forgetful 3/3/3 to 1/2/1, irregular 3/2/2 to 2/1/2, returner (away 21 days) 4/4/3 to 2/2/2, lapsed (away 60) 4/3/3 to 1/3/2, placed at u20 1/2/2 to 1/1/2, the same at 30 s a card 7/7/5 to 2/1/3. Two of 24 runs still reach 3: both a throttle on fresh cards (not debt), one with the day under it a scheduled review. Sessions throttled: average 22/25/27% to 6/2/4%, forgetful 40/38/40% to 9/10/6%, slow placed 58/61/54% to 26/33/26%. First-try recall within 1.6 points for every profile but forgetful (to 80.7 to 82.2 from 81.9 to 83.4) and the slow placed one (84.0 to 85.4 from 87.3 to 87.9). Cards due at the end of a year, forgetful seed 3: 214, 101 of them a week late (58 and none with the policy off). With 3 days instead of 1 the longest run stayed at 3 or 4 (seed 1). Tried and kept: 20 cards a session (12 left forgetful at 78.7).
 - 2026-11-02 B2 and C1 minutes 28/30 to 45/52 (F16: a standing decision, and 28/30 contradicted it), warm-up 9/9 to 14/14. Real content through C1, placed at u45 (B2) and u58 (C1), 15 s a card, 120 days, seeds 1/2/3 (the u45 runs): 28/30 with warm-up 9: nodes introduced 503/511/494, owed at the end 148/95/118, sessions over their minutes 30%; 45/52 with warm-up 9: 660/610/631 introduced, owed 1/2/2, none over; 45/52 with warm-up 14: 611/570/707 introduced, owed 1/2/6, none over. The minutes buy the new items (+22 to +29%) and empty the owed queue. The larger warm-up lowers the share of B2 sessions the throttle converts (19/14/14% to 8/5/11%) but not the number of items introduced (634 against 629 on average), since the debt policy has already taken the throttle off most of them. Kept, as M8 asked; the plans use 33 of 47 minutes, because their content is capped by items, not minutes, until topic lessons exist (F16, L4).
 - 2026-11-02 the story (L7, F13, L6): a chapter or a scene no longer waits for chunks, lexemes and patterns the unit has scheduled by today and the learner is owed (R26; they are glossed); a grammar point or a word the unit has not reached still gates it. A day with no chapter to read is not called a story day on Home, and on day 1 the first chapter comes after the new phrases and before the lesson (minute 14 to minute 8). Real A1 and A2, 365 days, seeds 1/2/3, before then after: share of core sessions that read a first chapter or play a scene, fast 42/41/41% to 43/43/43, average 40/41/41 to 43/43/43, forgetful 38/37/37 to 43/43/43, irregular 34/37/35 to 40/42/40, returner 37/37/36 to 42/43/43, lapsed 37/36/36 to 43/42/43, placed 42/46/43 to 44/45/40; the longest run without anything new, same seeds: forgetful 1/2/1 to 1/1/1, irregular 2/1/2 to 1/1/1, lapsed 1/3/2 to 1/2/1, returner 2/2/2 to 3/1/1 (a throttle on fresh cards, 3 days running). The 70% L7 asks for is not reached: chapters still come only on the days the unit lists them, and the serialised daily beat is not built.
+- 2026-11-02 the debt sweep again at the end of the day, with the story, five-minute, recognition and miss changes in (real A1 and A2, 365 days, seeds 1/2/3, policy off against now): longest run without anything new fast 1/2/1 to 1/1/1, average 2/2/3 to 1/1/1, forgetful 3/3/3 to 1/1/1, irregular 3/2/2 to 2/1/2, returner 4/4/3 to 1/1/1, lapsed 4/3/3 to 3/1/1, placed 1/2/2 to 1/1/1, slow placed (30 s a card) 7/7/5 to 2/2/2: 23 of 24 runs at 2 or fewer, one at 3 (lapsed, seed 1, a throttle on fresh cards). First-try recall is down by 1.7 points at most for every profile except the lapsed one (2.0 at most: 89.4/89.4/88.5 to 88.4/87.4/88.3) and the slow placed one (2.9 to 4.2: 87.9/87.3/87.8 to 85.0/83.1/84.0); it is up for average.
 
 ## Targets
 
@@ -37,7 +38,7 @@ Targets: average-profile A1 ≤ ~140 calendar days, fast ≤ ~112; B2 throttle c
 | fast | standard | 117 | ✗ > 112 | - | - |
 | average | standard | 153 | ✗ > 140 | - | - |
 | forgetful | standard | 168 | - | - | - |
-| irregular | standard | 277 | - | - | - |
+| irregular | standard | 230 | - | - | - |
 
 **Where the A1 days go** (A1 path = 133 unit days; a day advances only on a completed non-minimum, non-converted session):
 
@@ -46,7 +47,7 @@ Targets: average-profile A1 ≤ ~140 calendar days, fast ≤ ~112; B2 throttle c
 | fast | standard | 117 | 111 | 140 | 29 | 7 | 0 | 0 | 1.14 | 117 | 127 |
 | average | standard | 153 | 136 | 146 | 10 | 13 | 0 | 0 | 0.87 | 153 | 121 |
 | forgetful | standard | 168 | 144 | 152 | 8 | 16 | 2 | 0 | 0.80 | 164 | - |
-| irregular | standard | 277 | 174 | 192 | 18 | 55 | 0 | 4 | 0.48 | 277 | - |
+| irregular | standard | 230 | 157 | 173 | 16 | 38 | 0 | 2 | 0.58 | 230 | - |
 
 `A1 days at 0 throttle` = (A1 path days) ÷ (advancing sessions per calendar day, had the throttle conversions advanced). `A1 path days for the target` = what the A1 unit map would have to shrink to for this profile to meet its target (average ≤ 140, fast ≤ 112) at its attendance.
 
@@ -71,8 +72,8 @@ Targets: average-profile A1 ≤ ~140 calendar days, fast ≤ ~112; B2 throttle c
 | forgetful | standard | B1 | - | - | - | 0 | 0.0 | 0.0 | 0.00 | 0.0 | 0.0 | 0.0 | - | - |
 | forgetful | standard | B2 | - | - | - | 0 | 0.0 | 0.0 | 0.00 | 0.0 | 0.0 | 0.0 | - | - |
 | forgetful | standard | C1 | - | - | - | 0 | 0.0 | 0.0 | 0.00 | 0.0 | 0.0 | 0.0 | - | - |
-| irregular | standard | A1 | 0 | 276 | 277 | 192 | 17.0 | 15.9 | 0.41 | 1.6 | 0.0 | 28.6 | 5/735 (0.7%) | 30/79 (38.0%) |
-| irregular | standard | A2 | 277 | - | - | 52 | 18.4 | 17.5 | 0.45 | 1.9 | 0.0 | 26.9 | 0/27 (0.0%) | - |
+| irregular | standard | A1 | 0 | 229 | 230 | 173 | 18.1 | 17.0 | 0.41 | 0.6 | 0.0 | 22.0 | 1/718 (0.1%) | 29/77 (37.7%) |
+| irregular | standard | A2 | 230 | - | - | 65 | 16.7 | 15.8 | 0.41 | 3.1 | 0.0 | 36.9 | 0/50 (0.0%) | - |
 | irregular | standard | B1 | - | - | - | 0 | 0.0 | 0.0 | 0.00 | 0.0 | 0.0 | 0.0 | - | - |
 | irregular | standard | B2 | - | - | - | 0 | 0.0 | 0.0 | 0.00 | 0.0 | 0.0 | 0.0 | - | - |
 | irregular | standard | C1 | - | - | - | 0 | 0.0 | 0.0 | 0.00 | 0.0 | 0.0 | 0.0 | - | - |
@@ -97,13 +98,13 @@ Measured from the learner's event log (`src/learner/events.ts`). The simulated a
 | forgetful | standard | A2 | 1796 | 81.2 | 96.5 | 88.8 | 81.3 / 96.4 (1174) | 100.0 (9) | 53.7 | 98.9 | 2/44 |  |
 | forgetful | standard | B1 | 4 | 100.0 | 100.0 | 89.4 | 100.0 / 100.0 (2) | - | 50.0 | - | - |  |
 | forgetful | standard | all | 9652 | 81.6 | 96.5 | 88.9 | 82.2 / 96.9 (6590) | 100.0 (97) | 55.4 | 98.2 | 8/82 |  |
-| irregular | standard | A1 | 6015 | 86.9 | 98.6 | 87.6 | 86.7 / 98.4 (4240) | 100.0 (61) | 57.4 | 98.5 | 3/38 |  |
-| irregular | standard | A2 | 370 | 83.8 | 97.3 | 84.2 | 80.5 / 97.0 (231) | 100.0 (1) | 55.4 | 98.6 | 0/12 |  |
-| irregular | standard | all | 6385 | 86.8 | 98.5 | 87.5 | 86.4 / 98.3 (4471) | 100.0 (62) | 57.3 | 98.5 | 3/50 |  |
+| irregular | standard | A1 | 6022 | 87.7 | 98.8 | 88.2 | 88.5 / 98.9 (4216) | 100.0 (98) | 57.7 | 98.1 | 5/38 |  |
+| irregular | standard | A2 | 422 | 87.2 | 97.9 | 84.1 | 86.9 / 98.0 (297) | 100.0 (7) | 59.5 | 97.9 | 3/13 |  |
+| irregular | standard | all | 6444 | 87.7 | 98.7 | 88.0 | 88.4 / 98.8 (4513) | 100.0 (105) | 57.8 | 98.0 | 8/51 |  |
 
-Event grades per run (again / hard / good / easy): fast/standard 474/2062/38212/0; average/standard 977/2155/32490/0; forgetful/standard 1617/2976/26034/0; irregular/standard 624/1328/17628/0.
+Event grades per run (again / hard / good / easy): fast/standard 474/2062/38212/0; average/standard 977/2155/32490/0; forgetful/standard 1617/2976/26034/0; irregular/standard 623/1490/17955/0.
 
-Events by op: fast/standard recap 1031, warmup 12752, recombine 96; average/standard recap 723, warmup 10578, recombine 96; forgetful/standard recap 455, warmup 10279, recombine 97; irregular/standard recap 315, warmup 6356, recombine 62. Recap blocks: fast 253 run (44 lapsed, 981 new re-asked), 135 empty; average 190 run (53 lapsed, 658 new re-asked), 128 empty; forgetful 136 run (122 lapsed, 325 new re-asked), 146 empty; irregular 97 run (38 lapsed, 269 new re-asked), 78 empty. Time cap: fast 20 sessions cut (24 blocks or runs); average 50 sessions cut (60 blocks or runs); forgetful 69 sessions cut (92 blocks or runs); irregular 36 sessions cut (54 blocks or runs).
+Events by op: fast/standard recap 1031, warmup 12752, recombine 96; average/standard recap 723, warmup 10578, recombine 96; forgetful/standard recap 455, warmup 10279, recombine 97; irregular/standard recap 292, warmup 6490, recombine 105. Recap blocks: fast 253 run (44 lapsed, 981 new re-asked), 135 empty; average 190 run (53 lapsed, 658 new re-asked), 128 empty; forgetful 136 run (122 lapsed, 325 new re-asked), 146 empty; irregular 89 run (24 lapsed, 264 new re-asked), 87 empty. Time cap: fast 20 sessions cut (24 blocks or runs); average 50 sessions cut (60 blocks or runs); forgetful 69 sessions cut (92 blocks or runs); irregular 30 sessions cut (37 blocks or runs).
 
 ## Repeats, reviews and supply per run
 
@@ -111,10 +112,10 @@ Events by op: fast/standard recap 1031, warmup 12752, recombine 96; average/stan
 
 | profile | tier | sessions | course done | unit reached | UNINTENDED REPEATS | item rep.60d % | (deliberate) | fresh sents | reused ctx | review items | multi % | targets/item | bare | script | shortages | recv-only | suspended | learned | owed | due at end | (a week late) |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| fast | standard | 409 | 223 | 27 | 0 | 0.00 | 117 | 12777 | 621 | 11292 | 11.3 | 1.12 | 1989 | 351 | 191 | 177 | 1416 | 1584 | 0 | 13 | 0 |
-| average | standard | 352 | 297 | 27 | 0 | 0.00 | 132 | 10783 | 396 | 9297 | 12.7 | 1.14 | 1769 | 348 | 154 | 144 | 1041 | 1156 | 256 | 12 | 0 |
-| forgetful | standard | 324 | 346 | 27 | 0 | 0.00 | 186 | 8767 | 354 | 8214 | 14.2 | 1.15 | 2117 | 410 | 149 | 93 | 806 | 884 | 608 | 26 | 0 |
-| irregular | standard | 244 | - | 17 | 0 | 0.00 | 71 | 6034 | 201 | 5208 | 18.5 | 1.21 | 1124 | 185 | 71 | 86 | 640 | 707 | 210 | 223 | 144 |
+| fast | standard | 409 | 223 | 27 | 0 | 0.00 | 113 | 12777 | 621 | 11292 | 11.3 | 1.12 | 1989 | 351 | 191 | 177 | 1416 | 1584 | 0 | 13 | 0 |
+| average | standard | 352 | 297 | 27 | 0 | 0.00 | 138 | 10783 | 396 | 9297 | 12.7 | 1.14 | 1769 | 348 | 154 | 144 | 1041 | 1156 | 256 | 12 | 0 |
+| forgetful | standard | 324 | 346 | 27 | 0 | 0.00 | 179 | 8767 | 354 | 8214 | 14.2 | 1.15 | 2117 | 410 | 149 | 93 | 806 | 884 | 608 | 26 | 0 |
+| irregular | standard | 238 | - | 17 | 0 | 0.00 | 71 | 6091 | 203 | 5321 | 17.5 | 1.20 | 1177 | 218 | 74 | 82 | 693 | 768 | 261 | 213 | 158 |
 
 ## Sentences consumed per node (fresh), worst run
 
@@ -130,8 +131,8 @@ Events by op: fast/standard recap 1031, warmup 12752, recombine 96; average/stan
 | band | units | bank sentences | of which review ctx | chapters | scenes | writing tasks |
 |---|---|---|---|---|---|---|
 | A1 | 14 | 19755 | 13320 | 38 | 48 | 75 |
-| A2 | 13 | 19587 | 12531 | 44 | 48 | 90 |
-| **all** | 27 | **39342** | 25851 | 82 | 96 | 165 |
+| A2 | 13 | 19587 | 12531 | 44 | 48 | 84 |
+| **all** | 27 | **39342** | 25851 | 82 | 96 | 159 |
 
 ## Quotas per unit (3 × p95 demand across 4 runs; * = extrapolated)
 
@@ -152,7 +153,7 @@ Events by op: fast/standard recap 1031, warmup 12752, recombine 96; average/stan
 | u13 | 1518 | 1044 | 3 | 3 | 3 | 506/3/1/1 | 506 | 12 |
 | u14 | 1416 | 900 | 3 | 3 | 3 | 472/3/1/1 | 472 | 0 |
 | u15 | 1266 | 855 | 3 | 3 | 3 | 422/3/1/1 | 422 | 12 |
-| u16 | 1431 | 1014 | 3 | 6 | 12 | 477/3/2/4 | 477 | 7 |
+| u16 | 1431 | 1014 | 3 | 6 | 6 | 477/3/2/2 | 477 | 7 |
 | u17 | 1389 | 900 | 3 | 3 | 3 | 463/3/1/1 | 463 | 5 |
 | u18 | 1524 | 1014 | 4 | 3 | 3 | 508/4/1/1 | 508 | 2 |
 | u19 | 1413 | 957 | 3 | 3 | 9 | 471/3/1/3 | 471 | 3 |

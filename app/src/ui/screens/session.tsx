@@ -24,7 +24,7 @@ export function Session({ mode, onExit, onAnother, capMinutes, resume, onPractis
   const app = useApp();
   const runner = useMemo(() => {
     if (resume) return SessionRunner.resume(app.learner, app.bundle, app.ui, resume, app.now);
-    const plan = compilePlan(app.learner, app.bundle, app.ui, { mode, now: app.now(), tier });
+    const plan = compilePlan(app.learner, app.bundle, app.ui, { mode, now: app.now(), tier, capMinutes });
     return new SessionRunner(app.learner, app.bundle, app.ui, plan, app.now, { capMinutes: capMinutes ? Math.min(capMinutes, plan.budget.minutes) : undefined, quick });
   }, []);
   const plan = runner.plan;
