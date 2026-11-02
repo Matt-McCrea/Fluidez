@@ -133,7 +133,7 @@ export function Home({ onStart, onStory, onWeak, onPractise, onLook }: { onWeak?
   const spots = useMemo(() => {
     try {
       return weakSpots(learner.events(), (id) => bundle.node(id), {
-        now, metVerbs: verbsMet(learner), sentenceEs: (id) => bundle.sentence(id)?.es,
+        now, metVerbs: verbsMet(learner), sentenceEs: (id) => bundle.sentence(id)?.es, introduced: (id) => learner.isIntroduced(id),
       });
     } catch { return []; }
   }, [learner.sessionIndex, ui.path]);

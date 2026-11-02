@@ -33,6 +33,11 @@ export interface WeakOpts {
   metVerbs?: readonly string[];
   /** Spanish text of a bank sentence id, to find the verbs in a missed sentence. */
   sentenceEs?: (id: string) => string | undefined;
+  /**
+   * Whether the learner has been taught a node. A spot whose nodes name a contrast the learner has is trained on that contrast's
+   * own items, where the decision is, and not on forms or on sentences that gap any verb. Absent: no spot is sent to a contrast.
+   */
+  introduced?: (id: NodeId) => boolean;
 }
 
 const DAY_MS = 86_400_000;
@@ -97,6 +102,9 @@ export function weakSpots(events: readonly ReviewEvent[], nodes: Nodes, opts: We
     return out.slice(0, MAX_VERBS);
   };
 
+  // the contrasts a node is one side of, among those the learner has been taught
+  const contrastsOf = (id: NodeId): NodeId[] => (look(id)?.contrasts ?? []).filter((x) => x.startsWith('x:') && look(x)?.kind === 'contrast' && !!opts.introduced?.(x));
+
   const spots: WeakSpot[] = [];
   for (const [tense, t] of byTense) {
     const rate = t.misses / t.attempts;
@@ -104,20 +112,29 @@ export function weakSpots(events: readonly ReviewEvent[], nodes: Nodes, opts: We
     const nodeIds = [...t.nodes];
     const verbs = verbsFor(t);
     const label = tenseShort(tense);
+    // misses on the point that sets two tenses against each other are not misses of a form: the form is right, the choice is not
+    const between = [...new Set(t.missed.flatMap((e) => contrastsOf(e.node)))];
+    const onChoice = t.missed.filter((e) => contrastsOf(e.node).length).length;
+    const toContrast = between.length && onChoice * 2 >= t.misses ? between.slice(0, 2) : undefined;
     spots.push({
-      kind: 'tense', key: tense, label, misses: t.misses, attempts: t.attempts, rate, nodes: nodeIds, last: t.last,
-      spec: verbs.length
-        ? { kind: 'conjugate', verbs, tenses: [tense], title: `${label}: a workout` }
-        : { kind: 'nodes', nodes: nodeIds.slice(0, 3), title: `${label}: a workout` },
+      kind: 'tense', key: tense, label, misses: t.misses, attempts: t.attempts, rate, nodes: toContrast ?? nodeIds, last: t.last,
+      spec: toContrast
+        ? { kind: 'nodes', nodes: toContrast, title: `${look(toContrast[0])?.title ?? label}: a workout` }
+        : verbs.length
+          ? { kind: 'conjugate', verbs, tenses: [tense], title: `${label}: a workout` }
+          : { kind: 'nodes', nodes: nodeIds.slice(0, 3), title: `${label}: a workout` },
     });
   }
   for (const [id, t] of byNode) {
     const rate = t.misses / t.attempts;
     if (t.attempts < minAttempts || rate < NODE_RATE) continue;
     const label = look(id)?.title ?? id;
+    const between = contrastsOf(id).slice(0, 2);
     spots.push({
-      kind: 'node', key: id, label, misses: t.misses, attempts: t.attempts, rate, nodes: [id], last: t.last,
-      spec: { kind: 'nodes', nodes: [id], title: `${label}: a workout` },
+      kind: 'node', key: id, label, misses: t.misses, attempts: t.attempts, rate, nodes: between.length ? between : [id], last: t.last,
+      spec: between.length
+        ? { kind: 'nodes', nodes: between, title: `${look(between[0])?.title ?? label}: a workout` }
+        : { kind: 'nodes', nodes: [id], title: `${label}: a workout` },
     });
   }
   return spots.sort((a, b) => b.misses * b.rate - a.misses * a.rate).slice(0, opts.max ?? DEFAULT_MAX_SPOTS);

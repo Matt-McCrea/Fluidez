@@ -35,7 +35,7 @@ export function Weak({ onPractise, onBack }: { onPractise: (spec: PracticeSpec) 
       const look = (id: string) => bundle.node(id);
       return {
         spots: weakSpots(learner.events(), look, {
-          now, max: 12, metVerbs: verbsMet(learner), sentenceEs: (id) => bundle.sentence(id)?.es,
+          now, max: 12, metVerbs: verbsMet(learner), sentenceEs: (id) => bundle.sentence(id)?.es, introduced: (id) => learner.isIntroduced(id),
         }),
         misses: distinctMisses(recentMisses(learner.events(), look, { now, n: 60 })).slice(0, 15),
       };

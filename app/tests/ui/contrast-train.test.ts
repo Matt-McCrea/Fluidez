@@ -5,6 +5,7 @@
 import { beforeAll, describe, expect, it } from 'vitest';
 import { rng } from '../../src/exercises/rng';
 import { Learner, MemoryStore } from '../../src/learner';
+import { weakSpots } from '../../src/learner/weak';
 import type { Bundle } from '../../src/ui/data/bundle';
 import { ContentLoader } from '../../src/ui/data/loader';
 import type { Card } from '../../src/ui/session/cards';
@@ -119,6 +120,23 @@ describe('Train it on a contrast the learner has reached', () => {
     expect(bundle.contrastItems(x).length).toBeLessThan(CONTRAST_RUN);
     const cards = play(run(await learnerAt(unitOf(x) + 1), [x]));
     expect(cards.length).toBe(CONTRAST_RUN);
+    expect(cards.every((c) => c.type !== 'read')).toBe(true);
+  }, 120_000);
+});
+
+describe('a contrast that trips the learner comes back as a weak spot, and its Train it works', () => {
+  it('misses in Train it and in the warm-up are a spot on the contrast, and the spot\'s workout is the contrast\'s items', async () => {
+    const x = 'x:ser-estar-adj';
+    const learner = await learnerAt(unitOf(x) + 1);
+    for (let r = 0; r < 2; r++) {
+      const fp = run(learner, [x], `miss${r}`);
+      for (let c = fp.next(); c; c = fp.next()) fp.answer({ correct: false, tries: 2, ms: 900 });
+    }
+    const spots = weakSpots(learner.events(), (id) => bundle.node(id), { now: T, introduced: (id) => learner.isIntroduced(id) });
+    expect(spots.map((s) => s.key)).toEqual([x]);
+    expect(spots[0].misses).toBe(spots[0].attempts);
+    const cards = play(new Freeplay(spots[0].spec as never, { learner, bundle, now: () => T, rng: rng('again') }));
+    expect(cards.length).toBeGreaterThanOrEqual(CONTRAST_RUN);
     expect(cards.every((c) => c.type !== 'read')).toBe(true);
   }, 120_000);
 });
