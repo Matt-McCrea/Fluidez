@@ -8,7 +8,7 @@ import { idbKV, StoredDocumentError, type KV, type Learner, type Tier } from '..
 import { LEARNER_READERS, type BackupReaders } from '../../learner/backup';
 import type { LearnQueueJSON } from '../session/order';
 import type { RunnerSnapshot } from '../session/runner';
-import { Keep, readWriting, WRITING_KEY } from './keep';
+import { HISTORY_KEY, Keep, readHistory, readWriting, WRITING_KEY } from './keep';
 
 export const PATH_KEY = 'path';
 export const UI_KEY = 'ui';
@@ -199,7 +199,7 @@ export function salvagePath(raw: unknown): PathState {
  * reader that opens it the way boot does. The allowlist is these keys. A new
  * document (games) is one more entry here.
  */
-export const BACKUP_READERS: BackupReaders = { ...LEARNER_READERS, [PATH_KEY]: migratePath, [UI_KEY]: migrateUi, [WRITING_KEY]: readWriting };
+export const BACKUP_READERS: BackupReaders = { ...LEARNER_READERS, [PATH_KEY]: migratePath, [UI_KEY]: migrateUi, [WRITING_KEY]: readWriting, [HISTORY_KEY]: readHistory };
 
 /** Where a half-finished session stands: enough to open the same plan at the same card. Lives under its own key, outside UiState. */
 export interface SavedSession {
@@ -408,7 +408,7 @@ export class UiStore {
   /** Everything, gone: learner, path and UI state. */
   async reset(extraKeys: string[] = []): Promise<void> {
     // the copies kept beside the documents (quarantine, version snapshots) go too: this promises everything is deleted
-    const own = [UI_KEY, PATH_KEY, SESSION_KEY, WRITING_KEY];
+    const own = [UI_KEY, PATH_KEY, SESSION_KEY, WRITING_KEY, HISTORY_KEY];
     const copies = ((await this.kv.keys?.()) ?? []).filter((k) => own.some((n) => k.startsWith(`${n}.`)));
     for (const k of [...own, ...extraKeys, ...copies]) await this.kv.del(k);
     this.session = undefined;

@@ -44,8 +44,11 @@ type Sel = { at: TapAt; word: string; es: string; en?: string; form?: string; ho
 function useGloss(chapter: StoryChapter, bundle: Bundle, ui: UiStore) {
   const [sel, setSel] = useState<Sel | null>(null);
   const [, setTick] = useState(0);
+  /** words tapped for their meaning, for the reads kept in the history */
+  const taps = useRef(0);
   const isSaved = (es: string) => ui.state.saved.some((s) => s.es.toLowerCase() === es.toLowerCase());
   const tap = (word: string, at: TapAt) => {
+    taps.current += 1;
     const g = bundle.gloss(word, chapter, at);
     setSel({ at, word, es: g?.es ?? word, en: g?.en, form: g?.form, how: g?.how, phrase: g?.phrase, name: g?.name });
   };
@@ -72,7 +75,7 @@ function useGloss(chapter: StoryChapter, bundle: Bundle, ui: UiStore) {
       ) : <p class="small">Tap any word to see what it means.</p>}
     </div>
   );
-  return { sel, tap, panel, clear: () => setSel(null) };
+  return { sel, tap, panel, clear: () => setSel(null), taps: () => taps.current };
 }
 
 /** Paragraphs of tappable words; a small EN control after a sentence the bank can translate. */
@@ -114,7 +117,7 @@ function Passage({ text, label, bundle, selAt, tap, showEn }: {
 }
 
 export function Reader({ chapter, bundle, ui, onFinish, finishLabel = "I've read it", clock }: {
-  chapter: StoryChapter; bundle: Bundle; ui: UiStore; onFinish: (seconds: number) => void; finishLabel?: string; clock?: boolean;
+  chapter: StoryChapter; bundle: Bundle; ui: UiStore; onFinish: (seconds: number, taps: number) => void; finishLabel?: string; clock?: boolean;
 }) {
   const [secs, setSecs] = useState(0);
   const start = useRef(performance.now());
@@ -129,7 +132,7 @@ export function Reader({ chapter, bundle, ui, onFinish, finishLabel = "I've read
       {clock ? <div class="timer" role="timer" aria-label="Reading time">{fmtSeconds(secs)}</div> : null}
       <Passage text={chapter.text} label={chapter.title} bundle={bundle} selAt={g.sel?.at} tap={g.tap} showEn={!clock} />
       {g.panel}
-      <div class="actions"><Continue focus={false} label={finishLabel} onClick={() => onFinish(Math.round((performance.now() - start.current) / 1000))} /></div>
+      <div class="actions"><Continue focus={false} label={finishLabel} onClick={() => onFinish(Math.round((performance.now() - start.current) / 1000), g.taps())} /></div>
     </div>
   );
 }
@@ -137,7 +140,7 @@ export function Reader({ chapter, bundle, ui, onFinish, finishLabel = "I've read
 /** A first read, one beat at a time: the text, then the questions it answers. */
 function BeatReader({ chapter, questions, bundle, ui, keyPrefix, onQuestion, onFinish }: {
   chapter: StoryChapter; questions: Question[]; bundle: Bundle; ui: UiStore; keyPrefix: string;
-  onQuestion: (i: number, o: Outcome) => void; onFinish: (readSeconds: number) => void;
+  onQuestion: (i: number, o: Outcome) => void; onFinish: (readSeconds: number, taps: number) => void;
 }) {
   const beats = useMemo(() => splitBeats(chapter.text, questions), [chapter, questions]);
   const [ix, setIx] = useState(0);
@@ -148,7 +151,7 @@ function BeatReader({ chapter, questions, bundle, ui, keyPrefix, onQuestion, onF
   const beat = beats[ix];
   const last = ix === beats.length - 1;
   const advance = () => {
-    if (last) { onFinish(Math.round(readMs.current / 1000)); return; }
+    if (last) { onFinish(Math.round(readMs.current / 1000), g.taps()); return; }
     setAsking(false); setIx(ix + 1); shown.current = performance.now(); g.clear();
   };
   if (asking) {
@@ -182,11 +185,12 @@ export function ReadChapter({ block, run, ui, onDone }: BlockProps<ReadBlock | R
   const questions = !reread ? chapter.questions
     : block.purpose === 'fluency' ? [] : (chapter.rereadQuestions.length ? chapter.rereadQuestions : chapter.questions);
 
-  const finishReading = (secs: number, thenAsk = true) => {
+  const finishReading = (secs: number, taps: number, thenAsk = true) => {
     setTook(secs);
     const ref = run.bundle.index.chapterById.get(chapter.id);
     run.expose([...(ref?.requires ?? []), ...chapter.lexemes]);
     void run.addWords(wordCount(chapter.text), 0);
+    void ui.keep.addRead({ at: Date.now(), chapter: chapter.id, words: wordCount(chapter.text), seconds: secs, taps, first: !reread });
     if (!reread) {
       run.reads.set(chapter.id, secs);
       void ui.update((s) => { s.readSeconds[chapter.id] = secs; });
@@ -202,7 +206,7 @@ export function ReadChapter({ block, run, ui, onDone }: BlockProps<ReadBlock | R
         <BeatReader
           chapter={chapter} questions={questions} bundle={run.bundle} ui={ui} keyPrefix={`${block.kind}:${chapter.id}`}
           onQuestion={(i, o) => { if (o.correct) setRight((n) => n + 1); logComprehension(run, chapter, questions[i], o); }}
-          onFinish={(secs) => finishReading(secs, false)}
+          onFinish={(secs, taps) => finishReading(secs, taps, false)}
         />
       </>
     );
@@ -212,7 +216,7 @@ export function ReadChapter({ block, run, ui, onDone }: BlockProps<ReadBlock | R
       <>
         <Heading title={reread ? `${h.title}: ${chapter.title}` : h.title} lead={h.lead} />
         {reread ? <p class="tag">Re-reading</p> : null}
-        <Reader chapter={chapter} bundle={run.bundle} ui={ui} onFinish={finishReading} clock={reread && block.timed} />
+        <Reader chapter={chapter} bundle={run.bundle} ui={ui} onFinish={(secs, taps) => finishReading(secs, taps)} clock={reread && block.timed} />
       </>
     );
   }

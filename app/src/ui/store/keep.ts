@@ -8,6 +8,7 @@
 // alone, a damaged one is put aside and started again, and a store that
 // refuses a write is reported on the console and carried on from.
 import { StoredDocumentError, type KV } from '../../learner';
+import type { ProgressNumbers } from '../session/numbers';
 import type { RubricAnswer } from './ui';
 
 export const WRITING_KEY = 'writing';
@@ -57,6 +58,47 @@ export function readWriting(raw: unknown): SavedWriting {
   return { version: WRITING_VERSION, entries };
 }
 
+// ---------------------------------------------------------------- reads and months
+
+export const HISTORY_KEY = 'history';
+export const HISTORY_VERSION = 1;
+/** Newest reads kept: a course has about a thousand, so this is every read of one with room to spare. */
+export const READS_CAP = 3000;
+
+/** One read of a chapter, in a lesson or from the Story screen. */
+export interface ReadRow {
+  at: number;
+  chapter: string;
+  words: number;
+  /** seconds from opening it to saying it was read (for a first read, the time spent on the text, not on its questions) */
+  seconds: number;
+  /** words tapped for their meaning */
+  taps: number;
+  /** the first time the learner read it, or a reread */
+  first: boolean;
+}
+
+/** The numbers Progress showed in a month, as of the last session of it. */
+export interface MonthRow extends ProgressNumbers { /** `YYYY-MM`, in the learner's own days */ month: string; at: number }
+
+export interface History { version: number; reads: ReadRow[]; months: MonthRow[] }
+export const emptyHistory = (): History => ({ version: HISTORY_VERSION, reads: [], months: [] });
+
+const usableRead = (r: unknown): r is ReadRow =>
+  isObject(r) && Number.isFinite(r.at) && typeof r.chapter === 'string' && Number.isFinite(r.words) && Number.isFinite(r.seconds);
+const usableMonth = (m: unknown): m is MonthRow => isObject(m) && typeof m.month === 'string' && Number.isFinite(m.at);
+
+/** Open a stored history the way boot opens the others (see `readWriting`). */
+export function readHistory(raw: unknown): History {
+  if (!isObject(raw) || !Array.isArray(raw.reads) || !Array.isArray(raw.months)) throw new StoredDocumentError('unreadable', HISTORY_KEY, 'not a history document');
+  const version = typeof raw.version === 'number' ? raw.version : 1;
+  if (version > HISTORY_VERSION) throw new StoredDocumentError('newer', HISTORY_KEY, `v${version} is newer than this build (v${HISTORY_VERSION})`);
+  const reads = raw.reads.filter(usableRead);
+  const months = raw.months.filter(usableMonth);
+  if (reads.length < raw.reads.length || months.length < raw.months.length) console.warn('fluidez: dropped damaged rows from the history');
+  return { version: HISTORY_VERSION, reads: reads.slice(-READS_CAP), months };
+}
+
 export class Keep {
   /** every change runs on this chain, and no job on it rejects, so one refused write cannot end keeping */
   private chain: Promise<void> = Promise.resolve();
@@ -91,6 +133,27 @@ export class Keep {
       if (i >= 0) doc.entries[i] = { ...doc.entries[i], ...entry, at: doc.entries[i].at };
       else doc.entries.push(entry);
       await this.kv.set(WRITING_KEY, doc);
+    });
+  }
+
+  /** Keep one read of a chapter. */
+  addRead(row: ReadRow): Promise<void> {
+    return this.run('a read', async () => {
+      const doc = await this.open(HISTORY_KEY, readHistory, emptyHistory);
+      doc.reads.push(row);
+      if (doc.reads.length > READS_CAP) doc.reads.splice(0, doc.reads.length - READS_CAP);
+      await this.kv.set(HISTORY_KEY, doc);
+    });
+  }
+
+  /** Keep the month's numbers. One row a month: the next session of the same month replaces it, so the last session of a month leaves that month's. */
+  snapshotMonth(month: string, at: number, numbers: ProgressNumbers): Promise<void> {
+    return this.run('the month\'s numbers', async () => {
+      const doc = await this.open(HISTORY_KEY, readHistory, emptyHistory);
+      const row: MonthRow = { ...numbers, month, at };
+      const i = doc.months.findIndex((m) => m.month === month);
+      if (i >= 0) doc.months[i] = row; else doc.months.push(row);
+      await this.kv.set(HISTORY_KEY, doc);
     });
   }
 

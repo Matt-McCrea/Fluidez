@@ -23,7 +23,8 @@ export function Story({ onPractise }: { onPractise?: (spec: PracticeSpec) => voi
         <p class="tag">Re-reading</p>
         <Reader
           chapter={chapter} bundle={bundle} ui={ui} finishLabel="Done"
-          onFinish={async () => {
+          onFinish={async (seconds, taps) => {
+            void ui.keep.addRead({ at: app.now(), chapter: chapter.id, words: wordCount(chapter.text), seconds, taps, first: false });
             learner.ledger.markSeen('chapter', chapter.id, { deliberate: true, at: app.now() });
             // both are tried and neither is waited on to succeed: a store that refuses them must not keep the learner on the chapter
             await Promise.allSettled([ui.update((s) => { s.stats.wordsRead += wordCount(chapter.text); }), learner.flush()]);

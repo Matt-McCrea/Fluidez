@@ -16,6 +16,7 @@ import { planRecap, type Lapse } from './recap';
 import { SECONDS } from '../../compiler/budget';
 import { attributeGrades } from './attribute';
 import { climb, eventOp, gradeOf, lessonStep, logAnswer, reviewNode, reviewSentence, seen, seenAbout, slipOf, tries12, type Answered, type Outcome } from './attempt';
+import { progressNumbers } from './numbers';
 import { LearnQueue } from './order';
 
 // An outcome and its grade are the seam's (attempt.ts); the runner is where everyone already imports them from.
@@ -575,6 +576,18 @@ export class SessionRunner {
     this.finished = true;
     this.stopped = stopped;
     await this.ui.clearSession();
+    this.keepMonth();
+  }
+
+  /**
+   * Keep this month's numbers, as Progress would show them now: the last session of a month leaves that
+   * month's. Capture must never cost a close, so whatever goes wrong here is reported and left behind.
+   */
+  private keepMonth(): void {
+    try {
+      const at = this.now();
+      void this.ui.keep.snapshotMonth(this.learner.day(at).slice(0, 7), at, progressNumbers({ learner: this.learner, ui: this.ui, bundle: this.bundle, now: at }));
+    } catch (e) { console.warn('fluidez: could not work out the month\'s numbers', e); }
   }
 
   /**
