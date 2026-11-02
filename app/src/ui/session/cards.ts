@@ -452,7 +452,17 @@ function usesWhy(b: Bundle, node: NodeId, sentence: string): string {
     .sort((a, c) => words(c).length - words(a).length);
   // a title that already carries a colon ('Every noun is "el" or "la": the, a, ...') keeps only its head
   const title = b.title(node).split(':')[0].trim();
-  return forms.length ? `It uses ${title}: ${stopped(forms[0])}` : `It uses ${stopped(title)}`;
+  return forms.length ? `It uses ${plain(title)}: ${stopped(forms[0])}` : `It uses ${stopped(plain(title))}`;
+}
+
+/** A node title read mid-sentence: its capital goes, unless the word is a name or a language. */
+const plain = (t: string) => (/^[A-Z][a-z]/.test(t) && !/^(Spanish|English|Colombia|Colombian)\b/.test(t) ? t[0].toLowerCase() + t.slice(1) : t);
+
+/** "<es> means <en>" only when that phrase is in the sentence on screen; otherwise the line is about the sentence. */
+function meansWhy(seg: { es: string; en: string } | undefined, s: { es: string; en: string }, tail = ''): string {
+  const hay = ` ${words(s.es).join(' ')} `;
+  if (seg && words(seg.es).length && hay.includes(` ${words(seg.es).join(' ')} `)) return `${seg.es} means "${seg.en}".${tail}`;
+  return `${stopped(s.es)} means "${s.en}".`;
 }
 
 /** Does a typed-form gap's answer belong to the node being reviewed? */
@@ -578,19 +588,19 @@ export function reviewCard(item: ReviewItem, b: Bundle, variant: 'meaning' | 'pi
     ? (variant === 'pickSpanish' ? 'pickEs' : receptiveFormat(item.node, session ?? item.id))
     : 'pickFeature';
   if (s && item.direction === 'receptive') {
-    const why = seg ? `${seg.es} means "${seg.en}". The rest of the sentence gives the context.` : `This is about: ${title.toLowerCase()}.`;
+    const why = seg ? meansWhy(seg, s, ' The rest of the sentence gives the context.') : `This is about: ${title.toLowerCase()}.`;
     if (fmt === 'typeEn' && !isMultiTurn(s) && wordCount(s.en) <= 14) return typeMeaning(item.id, s.es, s.en, s.acceptEn ?? [], why);
     if (fmt === 'pickEs' && !isMultiTurn(s)) {
       const wrong = otherSpanish(b, s, item.id, 3);
       const use = wrong.length >= 3 ? wrong : wrong.length >= 2 ? wrong.slice(0, 2) : [];
-      if (use.length) return mcq(item.id, 'Which one says this?', en(s.en), es(s.es), use.map(es), seg ? `${seg.es} means "${seg.en}".` : `It's ${s.es}`);
+      if (use.length) return mcq(item.id, 'Which one says this?', en(s.en), es(s.es), use.map(es), seg ? meansWhy(seg, s) : `It's ${s.es}`);
     }
     const vars = isMultiTurn(s) ? null : englishVariants(s, item.id);
     if (vars) return mcq(item.id, MEANS, es(s.es), en(s.en), vars.map(en), why);
     if (fmt === 'pickFeature' && !isMultiTurn(s)) {
       // nothing re-inflects: ask it the other way round, with four options when there are
       const alt = otherSpanish(b, s, item.id, 3);
-      if (alt.length >= 3) return mcq(item.id, 'Which one says this?', en(s.en), es(s.es), alt.map(es), seg ? `${seg.es} means "${seg.en}".` : `It's ${s.es}`);
+      if (alt.length >= 3) return mcq(item.id, 'Which one says this?', en(s.en), es(s.es), alt.map(es), seg ? meansWhy(seg, s) : `It's ${s.es}`);
     }
     return meaningChoice(item.id, s, b, why);
   }
@@ -606,7 +616,7 @@ export function reviewCard(item: ReviewItem, b: Bundle, variant: 'meaning' | 'pi
   }
   if (s) {
     // turns that do not line up: recognise the exchange instead
-    return meaningChoice(item.id, s, b, seg ? `${seg.es} means "${seg.en}". The rest gives the context.` : `This is about: ${title.toLowerCase()}.`);
+    return meaningChoice(item.id, s, b, seg ? meansWhy(seg, s, ' The rest gives the context.') : `This is about: ${title.toLowerCase()}.`);
   }
   // bare card: no fresh sentence left for this node
   if (!seg) return { type: 'read', key: item.id, ask: 'Have another look', es: b.node(item.node)?.es ?? title, en: title, why: '' };
@@ -733,7 +743,7 @@ export function scriptCard(item: ScriptItem, script: TeachingScript): Card | und
 
 function meaningCard(item: PracticeItem, s: BankSentence, b: Bundle): Card {
   const seg = b.segments(item.node)[0];
-  return meaningChoice(item.id, s, b, seg ? `${seg.es} means "${seg.en}".` : `It means "${s.en}".`);
+  return meaningChoice(item.id, s, b, seg ? meansWhy(seg, s) : `It means "${s.en}".`);
 }
 
 function translateCard(item: PracticeItem, s: BankSentence, b: Bundle): Card {
@@ -867,7 +877,7 @@ function pickFallback(item: PracticeItem, s: BankSentence, b: Bundle, seed: numb
   }
   if (b.index.sentences.get(s.id)?.readOnly) {
     const seg = b.segments(item.node)[0];
-    return typedMeaning(item.id, s, seg ? `${seg.es} means "${seg.en}".` : `It means "${s.en}".`) ?? { type: 'read', key: item.id, ask: 'Read it', es: s.es, en: s.en, why: '' };
+    return typedMeaning(item.id, s, seg ? meansWhy(seg, s) : `It means "${s.en}".`) ?? { type: 'read', key: item.id, ask: 'Read it', es: s.es, en: s.en, why: '' };
   }
   return typeFormCard(item, s) ?? translateCard(item, s, b);
 }

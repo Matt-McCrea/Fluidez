@@ -38,7 +38,7 @@ describe('review "why" names the form in the sentence', () => {
       if (card.type !== 'type' || !/^It uses /.test(card.why ?? '')) continue;
       checked++;
       const answer = words(card.check('\u0000').answer);
-      const head = `It uses ${b.title(node).split(':')[0].trim()}`;
+      const head = `It uses ${b.title(node).split(':')[0].trim().replace(/^([A-Z])([a-z])/, (_, f, r) => (/^(Spanish|English|Colombia)/.test(b.title(node)) ? f : f.toLowerCase()) + r)}`;
       expect(card.why!.startsWith(head), card.why).toBe(true);
       const form = card.why!.slice(head.length);
       if (form === '' || /^[.?!…]+$/.test(form)) continue;   // no form quoted: the title, stopped once
@@ -64,5 +64,17 @@ describe('every ask starts with a capital letter', () => {
       }
     }
     expect(bad.slice(0, 10)).toEqual([]);
+  });
+});
+
+describe('reason lines are about the sentence on screen', () => {
+  it('a receptive reason quotes a phrase only when the sentence has it, and never starts a mid-sentence title with a capital', { timeout: 60_000 }, () => {
+    for (const { node, id } of sample(300)) {
+      const card = reviewCard(review(node, id, 'receptive'), b) as { why?: string; es?: string; prompt?: unknown };
+      const why = card.why ?? '';
+      expect(why, why).not.toMatch(/^It uses [A-Z][a-z]+ [a-z]/);
+      const m = /^(.+?) means "/.exec(why);
+      if (m && card.es) expect(` ${words(card.es)} `, why).toContain(` ${words(m[1])} `);
+    }
   });
 });

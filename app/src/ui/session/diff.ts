@@ -58,5 +58,8 @@ export function wordDiff(typed: string, right: string): WordDiff {
       out.right.push({ text: b[o.j].text, mark: 'off' });
     }
   }
+  // answers that share almost nothing: marking every word is noise, so the right version is shown plain
+  const eq = ops.filter((o) => o.op === 'eq').length;
+  if (!out.same && !out.right.some((p) => p.mark === 'accent') && eq / Math.max(a.length, b.length, 1) < 0.25) out.right = out.right.map((p) => ({ text: p.text }));
   return out;
 }

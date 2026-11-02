@@ -86,3 +86,11 @@ describe('DiffText', () => {
     expect(shown(DiffText({ pieces: wordDiff('llamare', 'llamaré').right }))).toBe('[llamaré|diff accent]');
   });
 });
+
+describe('answers that share almost nothing', () => {
+  it('leave the right version plain', () => {
+    const d = wordDiff('Me gusta el café', 'Tengo que irme ahora mismo');
+    expect(marked(d.right)).toEqual([]);
+    expect(d.same).toBe(false);
+  });
+});
