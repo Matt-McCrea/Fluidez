@@ -176,6 +176,9 @@ textarea.field { resize: vertical; line-height: 1.5; }
 .miss { color: var(--miss); font-weight: 600; }
 .hint { color: var(--hint); background: var(--hint-soft); padding: 8px 12px; border-radius: 10px; }
 .why { color: var(--ink); }
+/* the typed answer against the right version: a word that differs is marked, an accent apart from a word */
+mark.diff { background: var(--hint-soft); color: inherit; border-radius: 4px; padding: 0 2px; text-decoration: underline wavy var(--miss); text-underline-offset: 3px; }
+mark.diff.accent { text-decoration-style: dotted; text-decoration-color: var(--hint); }
 
 /* progress */
 .bar { height: 8px; background: var(--line); border-radius: 999px; overflow: hidden; flex: 1; }

@@ -1,8 +1,10 @@
 // One question on screen. Multiple choice: tap, see right/wrong with the
 // reason. Typed: one self-correction attempt with a hint, then the right
 // version and one plain reason. Read: read, peek at the English, move on.
+import { Fragment } from 'preact';
 import { useEffect, useRef, useState } from 'preact/hooks';
 import type { Card, Check, TypeCard } from '../session/cards';
+import { wordDiff, type DiffPiece } from '../session/diff';
 import { formatOf } from '../session/order';
 import type { Outcome } from '../session/attempt';
 import { AnswerField } from './answer';
@@ -44,6 +46,11 @@ export function revealLines(hint: string | undefined, why: string): string[] {
 /** The lines under a right answer: why a lenient pass counted, and the swap a pass went through. */
 export function passLines(r: Pick<Check, 'lenient' | 'hint' | 'note'>): string[] {
   return [r.lenient ? r.hint : undefined, r.note].filter((x): x is string => !!x);
+}
+
+/** The words of a diff as the learner wrote them or as they should be, with the ones that differ marked. */
+export function DiffText({ pieces }: { pieces: DiffPiece[] }) {
+  return <>{pieces.map((p, i) => <Fragment key={i}>{i ? ' ' : null}{p.mark ? <mark class={`diff ${p.mark}`}>{p.text}</mark> : p.text}</Fragment>)}</>;
 }
 
 /**
@@ -193,6 +200,9 @@ function TypeView({ card, onDone, next, pos, ms, ...p }: CardViewProps & { card:
   const finished = passed || revealed;
   const retrying = !finished && tries === 1 && !!result;
   const ready = canCheck(value, retrying ? first : undefined);
+  // the typed text against the right version, word by word, on every miss that has a text to compare (L8)
+  const right = revealed && !passed ? result?.answer ?? '' : '';
+  const diff = right && value.trim() && !/[\n*]/.test(right) ? wordDiff(value, right) : null;
   const canClaim = revealed && !passed && !claimed && claimOffered({ card, allowed: p.claim, typed: value, result });
 
   const submit = () => {
@@ -226,9 +236,12 @@ function TypeView({ card, onDone, next, pos, ms, ...p }: CardViewProps & { card:
           </>
         ) : revealed ? (
           <>
-            <p class="miss">Here's the right version: <Txt t={{ text: result?.answer ?? '', lang: card.answerLang }} /></p>
+            <p class="miss">Here's the right version: {diff && !diff.same
+              ? <span class={card.answerLang === 'es' ? 'es' : 'en'} lang={card.answerLang}><DiffText pieces={diff.right} /></span>
+              : <Txt t={{ text: result?.answer ?? '', lang: card.answerLang }} />}</p>
+            {diff && !diff.same ? <p class="small">You wrote: <span lang={card.answerLang}><DiffText pieces={diff.typed} /></span></p> : null}
+            {first && first !== value ? <p class="small">Your first try was <span lang={card.answerLang}>{first}</span></p> : null}
             {revealLines(result?.hint, card.why).map((l) => <p class="why" key={l}><Rich text={l} /></p>)}
-            {first && first !== value ? <p class="small">You wrote: <span lang={card.answerLang}>{first}</span>, then <span lang={card.answerLang}>{value}</span></p> : null}
             {claimed ? <p class="why">Okay, noted. This one comes back in a new sentence.</p> : null}
             {canClaim ? <p><button class="btn link" data-claim onClick={() => setClaimed(true)}>Mine says the same thing</button></p> : null}
           </>
